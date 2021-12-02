@@ -1,19 +1,22 @@
-const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
+const {
+  MessageType,
+  Mimetype
+} = require(`@adiwajshing/baileys`);
 const config = require(`../../Últrðñ/config`);
 module.exports = {
   name: `help`,
   commandType: `info`,
   description: `Get the command list and info on modules`,
   ƈʏɮօʀɢʍօʀɛ: `This module is used to get info on other modules and their triggers.`,
-  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments, commandHandler) {
+  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments, UltronSitrep) {
     var PreÚltrðñReg = new RegExp(config.ULTRONIX, `g`);
     var PreÚltrðñ = /\/\^\[(.)+\]\/\g/g.exec(PreÚltrðñReg)[1];
     ӄʀǟӄɨռʐ
       .sendMessage(
-        Últrðñ.chatId,
-        { url: `https://i.postimg.cc/KcNwHtZt/ltr.png` },
-        MessageType.image,
-        {
+        Últrðñ.chatId, {
+          url: `https://i.postimg.cc/KcNwHtZt/ltr.png`
+        },
+        MessageType.image, {
           mimetype: Mimetype.png,
           caption: `*🎮Últrðñ 𝐇𝐞𝐥𝐩 𝐌𝐞𝐧𝐮*⧴ ᴜꜱᴇ ᴡʜᴀᴛꜱᴀᴘᴘ ᴛʜᴇ ᴀᴅᴠᴀɴᴄᴇ ᴡᴀʏ!
 
@@ -104,7 +107,10 @@ module.exports = {
 *${PreÚltrðñ}tentacles* = I'm sorry but, why do they look like intestines?
 *${PreÚltrðñ}thighs* = The top part of your legs, very hot, isn't it?
 *${PreÚltrðñ}uniform* = Military, Konbini, Work, Nurse Uniforms, etc!~ Sexy~
-*${PreÚltrðñ}yuri* = Girls on Girls, and Girl's only!`,
+*${PreÚltrðñ}yuri* = Girls on Girls, and Girl's only!
+
+𝐖𝐨𝐫𝐤 𝐈𝐧 𝐏𝐫𝐨𝐠𝐫𝐞𝐬𝐬:
+https://github.com/Krakinz/Ultron.git`,
         }
       )
       .catch((cᴇʀʀᴏʀ) =>
