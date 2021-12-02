@@ -75,6 +75,7 @@ This module is used to get info on other modules and their triggers.`,
 
 
 *••••••••••••••••➛  🧀𝗙𝘂𝗻* 
+*${UltronSitreper.ULTRONIX}google* = Search anything on google
 *${UltronSitreper.ULTRONIX}carbon* = Convert text/code to a carbon image
 *${UltronSitreper.ULTRONIX}pfp* = Get display picture
 *${UltronSitreper.ULTRONIX}github* = Find Github Profile

@@ -6,6 +6,7 @@ const {
   Mimetype
 } = require(`@adiwajshing/baileys`);
 const UltronSitreper = require(`../../Últrðñ/UltronSitreper`);
+const getVideoId = require('get-video-id');
 const yts = require(`yt-search`);
 // ===============================================================================
 // 🎮Últrðñ™ 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..
@@ -14,23 +15,25 @@ module.exports = {
   name: `yts`,
   description: `Get recommendations and links from Youtube`,
   ƈʏɮօʀɢʍօʀɛ: `
-Get the first 10 recommendations from YouTube with their authorname, timestamp and link. Mention the keywords that are required to be searched along with the command.`,
+Get the first 10 recommendations from YouTube with their authorname, timestamp and link. Mention the FetchedLinks that are required to be searched along with the command.`,
   async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
     try {
-      const keyword = await yts(arguments.join(` `));
-      const videos = keyword.videos.slice(0, 10);
-      var topRequests = ``;
-      videos.forEach(function (links) {
-        topRequests =
-          topRequests +
-          `*Title:* _${links.title}_ 
-*Duration:* _${links.timestamp}_
-*Author:* _${links.author.name}_
-*Youtube Link:* _${links.url}_
-\n\n`;
+      const FetchedLink = await yts(arguments.join(` `));
+      const videos = FetchedLink.videos.slice(0, 5);
+      var Fetched = ``;
+      videos.forEach(function (youfound) {
+        const {
+          id
+        } = getVideoId(youfound.url);
+        Fetched =
+          Fetched +
+          `*🥳𝐓𝐢𝐭𝐥𝐞↬* ${youfound.title}
+*👀𝐕𝐢𝐞𝐰𝐬↬* ${youfound.views}
+*🕐𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧↬* ${youfound.timestamp}
+*📜𝐀𝐮𝐭𝐡𝐨𝐫↬* ${youfound.author.name}
+*📥𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐫↬* https://www.youtubepp.com/watch?v=${id}\n\n`;
       });
-
-      if (topRequests === ``) {
+      if (Fetched === ``) {
         ӄʀǟӄɨռʐ
           .sendMessage(
             Últrðñ.chatId,
@@ -50,6 +53,7 @@ Get the first 10 recommendations from YouTube with their authorname, timestamp a
           );
         return;
       }
+      const c = arguments.join(` `)
       ӄʀǟӄɨռʐ
         .sendMessage(
           Últrðñ.chatId, {
@@ -57,7 +61,8 @@ Get the first 10 recommendations from YouTube with their authorname, timestamp a
           },
           MessageType.image, {
             mimetype: Mimetype.png,
-            caption: topRequests,
+            caption: `ᴛʜᴇꜱᴇ ᴀʀᴇ ᴛʜᴇ *ꜰɪʀꜱᴛ-5* ᴍᴏꜱᴛ ᴍᴀᴛᴄʜɪɴɢ ꜱᴇᴀʀᴄʜ ʀᴇꜱᴜʟᴛꜱ ꜰᴏʀ:
+*🔎: ${c.toUpperCase()}*\n\n` + Fetched,
           }).catch((cᴇʀʀᴏʀ) =>
           ӄʀǟӄɨռʐ.sendMessage(
             Últrðñ.chatId,
