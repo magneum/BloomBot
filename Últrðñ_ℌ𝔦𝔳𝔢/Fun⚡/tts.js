@@ -4,8 +4,8 @@ const googleTTS = require(`google-tts-api`);
 module.exports = {
   name: `tts`,
   description: `Text To Speech.`,
-  ƈʏɮօʀɢʍօʀɛ: `Use  *${config.PREFIX}tts <text>*  or  *${config.PREFIX}tts <text> | <language_code>*  to convert text to speech.
-You can also reply to a text message with syntax  *${config.PREFIX}tr <language>*  to translate text.`,
+  ƈʏɮօʀɢʍօʀɛ: `Use  *${config.ULTRONIX}tts <text>*  or  *${config.ULTRONIX}tts <text> | <language_code>*  to convert text to speech.
+You can also reply to a text message with syntax  *${config.ULTRONIX}tr <language>*  to translate text.`,
   async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
     await ӄʀǟӄɨռʐ.sendMessage(
       Últrðñ.chatId,
@@ -24,7 +24,7 @@ You can also reply to a text message with syntax  *${config.PREFIX}tr <language>
     if (text === ``) {
       await ӄʀǟӄɨռʐ.sendMessage(
         Últrðñ.chatId,
-        `No input was detected. Please use *${config.PREFIX}help tts* for info on how to use this module.`,
+        `No input was detected. Please use *${config.ULTRONIX}help tts* for info on how to use this module.`,
         MessageType.text
       );
     }

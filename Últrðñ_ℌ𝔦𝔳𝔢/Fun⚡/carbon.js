@@ -6,10 +6,10 @@ module.exports = {
   description: `Convert text/code to a carbon image.`,
   ƈʏɮօʀɢʍօʀɛ: `This module can be used to convert text/code into carbon images.
 Example Usage,
-*${config.PREFIX}carbon <text>* 
-*${config.PREFIX}carbon*  and reply to a text message.
-Use the -t flag after  *${config.PREFIX}carbon*  to get the list of themes availble.
-In order to specify the theme, use  *${config.PREFIX}carbon <text> -t <theme>* .`,
+*${config.ULTRONIX}carbon <text>* 
+*${config.ULTRONIX}carbon*  and reply to a text message.
+Use the -t flag after  *${config.ULTRONIX}carbon*  to get the list of themes availble.
+In order to specify the theme, use  *${config.ULTRONIX}carbon <text> -t <theme>* .`,
   async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
     try {
       let themes = [
@@ -49,9 +49,9 @@ In order to specify the theme, use  *${config.PREFIX}carbon <text> -t <theme>* .
             Últrðñ.chatId,
             `*☢️Últrðñ*\n\nNo input provided.
 Please use the command  
-*${config.PREFIX}carbon <text> -t <theme>*  
+*${config.ULTRONIX}carbon <text> -t <theme>*  
 or reply to a text message with  
-*${config.PREFIX}carbon*  to carbonize the text.
+*${config.ULTRONIX}carbon*  to carbonize the text.
 
 *----> 𝐓𝐇𝐄𝐌𝐄𝐒 <----*
 _3024 night_  *|*  _a11y dark_  
@@ -136,7 +136,7 @@ _yeti_  *|*  _zenburn_`,
                 .sendMessage(
                   Últrðñ.chatId,
                   `*☢️Últrðñ*\n\nNo input provided.
-Please use the command  *${config.PREFIX}carbon <text>*  or reply to a text message with  *${config.PREFIX}carbon*  to carbonize the text.`,
+Please use the command  *${config.ULTRONIX}carbon <text>*  or reply to a text message with  *${config.ULTRONIX}carbon*  to carbonize the text.`,
                   MessageType.text
                 )
                 .catch((cᴇʀʀᴏʀ) =>
@@ -164,7 +164,7 @@ Please use the command  *${config.PREFIX}carbon <text>*  or reply to a text mess
               .sendMessage(
                 Últrðñ.chatId,
                 `*☢️Últrðñ*\n\nPlease enter a valid theme.
-Do note that theme names are  *case sensitive*${config.PREFIX}`,
+Do note that theme names are  *case sensitive*${config.ULTRONIX}`,
                 MessageType.text
               )
               .catch((cᴇʀʀᴏʀ) =>

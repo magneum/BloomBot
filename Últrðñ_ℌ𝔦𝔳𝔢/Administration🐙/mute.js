@@ -10,7 +10,7 @@ module.exports = {
         ӄʀǟӄɨռʐ
           .sendMessage(
             Últrðñ.chatId,
-            `*${config.PREFIX}mute*  command is only applicable in a group chat.`,
+            `*${config.ULTRONIX}mute*  command is only applicable in a group chat.`,
             MessageType.text
           )
           .catch((cᴇʀʀᴏʀ) =>
@@ -76,7 +76,7 @@ module.exports = {
         ӄʀǟӄɨռʐ
           .sendMessage(
             Últrðñ.chatId,
-            `Chat permissions changed to  *admin only*${config.PREFIX}`,
+            `Chat permissions changed to  *admin only*${config.ULTRONIX}`,
             MessageType.text
           )
           .catch((cᴇʀʀᴏʀ) =>
@@ -98,7 +98,7 @@ module.exports = {
         ӄʀǟӄɨռʐ
           .sendMessage(
             Últrðñ.chatId,
-            `Please mention how long you want to mute the chat. For example,\n*${config.PREFIX}mute 10 s*  to mute for 10 seconds.`,
+            `Please mention how long you want to mute the chat. For example,\n*${config.ULTRONIX}mute 10 s*  to mute for 10 seconds.`,
             MessageType.text
           )
           .catch((cᴇʀʀᴏʀ) =>
@@ -186,7 +186,7 @@ module.exports = {
         ӄʀǟӄɨռʐ
           .sendMessage(
             Últrðñ.chatId,
-            `Chat permissions changed to  *all group members*${config.PREFIX}`,
+            `Chat permissions changed to  *all group members*${config.ULTRONIX}`,
             MessageType.text
           )
           .catch((cᴇʀʀᴏʀ) =>

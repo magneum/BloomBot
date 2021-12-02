@@ -3,7 +3,7 @@ const config = require(`../../Últrðñ/config`);
 module.exports = {
   name: `tagall`,
   description: `Module to tag evryone in a group.`,
-  ƈʏɮօʀɢʍօʀɛ: `Use this module to tag everyone in the group by either replying to a message or simply using  *${config.PREFIX}tagall*  command.`,
+  ƈʏɮօʀɢʍօʀɛ: `Use this module to tag everyone in the group by either replying to a message or simply using  *${config.ULTRONIX}tagall*  command.`,
   async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
     try {
       if (!Últrðñ.isGroup) {

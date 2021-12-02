@@ -6,7 +6,7 @@ module.exports = {
   ƈʏɮօʀɢʍօʀɛ: `Use this module to promote a member to admin. You can enter the person's mobile number as per the format below. Valid Syntaxes -
 1. XXXXXXXXXX
 2. YYXXXXXXXXXX ()
-For example- *${config.PREFIX}promote 9861212121*`,
+For example- *${config.ULTRONIX}promote 9861212121*`,
   async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
     try {
       if (!Últrðñ.isGroup) {

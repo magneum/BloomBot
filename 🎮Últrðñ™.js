@@ -5,7 +5,7 @@ const config = require(`./Últrðñ/config`);
 const ÚltrðñSudo = [`block`, `unblock`];
 const Users = require(`./Últrðñ/user`);
 const wa = require(`./ƈʏӄօռ/helper`);
-const Cyborgsql = config.DATABASE;
+const Cyborgsql = config.POSTQL;
 const Kolor = require(`chalk`);
 const fs = require(`fs`);
 var ӄʀǟӄɨռʐ = ᴋʀᴀᴋɪɴᴢᴋᴏɴ.WhatsApp;
@@ -13,7 +13,7 @@ async function CyborgRunner() {
   ӄʀǟӄɨռʐ.logger.level = `error`;
   var commandHandler = new Map();
   try {
-    var session = ᴋʀᴀᴋɪɴᴢᴋᴏɴ.restoreSession(config.STRING_SESSION);
+    var session = ᴋʀᴀᴋɪɴᴢᴋᴏɴ.restoreSession(config.ULTRON);
     ӄʀǟӄɨռʐ.loadAuthInfo(session);
   } catch (cᴇʀʀᴏʀ) {
     if (
@@ -26,13 +26,11 @@ async function CyborgRunner() {
           `Incorrect Session String. Please authenticate again!`
         )
       );
-      console.debug(`[DEBUG] ` + cᴇʀʀᴏʀ);
-      fs.writeFileSync(`./Últrðñ.env`, `STRING_SESSION=```);
+      fs.writeFileSync(`./Últrðñ.env`, `ULTRON=```);
       process.exit(0);
     } else {
       console.log(
         Kolor.redBright.bold(`SOMETHING WENT WRONG.\n`),
-        Kolor.redBright.bold(`[DEBUG] ` + cᴇʀʀᴏʀ)
       );
       process.exit(0);
     }
@@ -162,7 +160,7 @@ async function CyborgRunner() {
       `yuri`,
     ];
     if (Últrðñ.isCmd && !Últrðñ.fromMe && !Últrðñ.isSenderSUDO) {
-      if (config.WORK_TYPE === `public`) {
+      if (config.PRIVACY === `public`) {
         if (
           ÚltrðñRights.indexOf(Últrðñ.commandName) >= 0 &&
           !Últrðñ.isSenderGroupAdmin
@@ -219,7 +217,7 @@ If you are keen to use my features, you can deploy Últrðñ on your own account
             );
           }
         }
-      } else if (config.WORK_TYPE === `private` && !Últrðñ.isSenderSUDO) {
+      } else if (config.PRIVACY === `private` && !Últrðñ.isSenderSUDO) {
         console.log(
           Kolor.redBright.bold(`⧪ɪɴꜰᴏ💡⬰  commmand `),
           Kolor.greenBright.bold(`${Últrðñ.commandName}`),

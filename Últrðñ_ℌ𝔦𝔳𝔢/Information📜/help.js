@@ -6,7 +6,7 @@ module.exports = {
   description: `Get the command list and info on modules`,
   ƈʏɮօʀɢʍօʀɛ: `This module is used to get info on other modules and their triggers.`,
   async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments, commandHandler) {
-    var PreÚltrðñReg = new RegExp(config.PREFIX, `g`);
+    var PreÚltrðñReg = new RegExp(config.ULTRONIX, `g`);
     var PreÚltrðñ = /\/\^\[(.)+\]\/\g/g.exec(PreÚltrðñReg)[1];
     ӄʀǟӄɨռʐ
       .sendMessage(

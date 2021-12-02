@@ -10,7 +10,7 @@ module.exports = {
         ӄʀǟӄɨռʐ
           .sendMessage(
             Últrðñ.chatId,
-            `*${config.PREFIX}unmute*  command is only applicable for a group chat.`,
+            `*${config.ULTRONIX}unmute*  command is only applicable for a group chat.`,
             MessageType.text
           )
           .catch((cᴇʀʀᴏʀ) =>
@@ -60,7 +60,7 @@ module.exports = {
       ӄʀǟӄɨռʐ
         .sendMessage(
           Últrðñ.chatId,
-          `Chat permissions changed to  *all group members*${config.PREFIX}`,
+          `Chat permissions changed to  *all group members*${config.ULTRONIX}`,
           MessageType.text
         )
         .catch((cᴇʀʀᴏʀ) =>

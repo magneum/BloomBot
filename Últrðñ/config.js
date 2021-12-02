@@ -1,57 +1,37 @@
 const fs = require("fs");
-const { DataTypes, Sequelize } = require("sequelize");
+const { Sequelize } = require("sequelize");
 if (fs.existsSync("Últrðñ.env")) {
   require("dotenv").config({ path: "./Últrðñ.env" });
 } else {
   require("dotenv");
 }
-const convertToLogLevel = (value) => {
-  var log = false;
-  if (typeof value === "string") {
-    if (value.toLowerCase() === "true") {
-      log = console.log;
-    }
-  }
-  return log;
-};
-process.env.DATABASE_URL =
-  process.env.DATABASE_URL === undefined
-    ? "./Últrðñ.db"
-    : process.env.DATABASE_URL;
-process.env.DEBUG = process.env.DEBUG === undefined ? false : process.env.DEBUG;
+process.env.SQLL =
+  process.env.SQLL === undefined ? "./Últrðñ.db" : process.env.SQLL;
 
 const env = {
-  STRING_SESSION:
-    process.env.STRING_SESSION === undefined ? "" : process.env.STRING_SESSION,
+  ULTRON: process.env.ULTRON === undefined ? "" : process.env.ULTRON,
   HEROKU: process.env.HEROKU === undefined ? false : true,
-  PREFIX: process.env.PREFIX === undefined ? "^[.?!]" : process.env.PREFIX,
-  COUNTRY_CODE:
-    process.env.COUNTRY_CODE === undefined ? "91" : process.env.COUNTRY_CODE,
-  OCR_API_KEY:
-    process.env.OCR_API_KEY === undefined
-      ? "9ffb44def388957"
-      : process.env.OCR_API_KEY,
-  WEATHER_API_KEY:
+  ULTRONIX:
+    process.env.ULTRONIX === undefined ? "^[.?!]" : process.env.ULTRONIX,
+  CCD: process.env.CCD === undefined ? "91" : process.env.CCD,
+  OCR: process.env.OCR === undefined ? "9ffb44def388957" : process.env.OCR,
+  WAPI:
     process.env.CURRENT_WEATHER_API_KEY === undefined
       ? "6729ac2b2e2bb5c686ff427a2f06df92"
       : process.env.CURRENT_WEATHER_API_KEY,
-  DATABASE_URL: process.env.DATABASE_URL,
-  DEBUG: process.env.DEBUG,
-  DATABASE:
-    process.env.DATABASE_URL === "./Últrðñ.db"
+  SQLL: process.env.SQLL,
+  POSTQL:
+    process.env.SQLL === "./Últrðñ.db"
       ? new Sequelize({
           dialect: "sqlite",
-          storage: process.env.DATABASE_URL,
-          logging: convertToLogLevel(process.env.DEBUG),
+          storage: process.env.SQLL,
         })
-      : new Sequelize(process.env.DATABASE_URL, {
+      : new Sequelize(process.env.SQLL, {
           dialect: "postgres",
           protocol: "postgres",
-          logging: convertToLogLevel(process.env.DEBUG),
           dialectOptions: { ssl: { require: true, rejectUnauthorized: false } },
         }),
-  WORK_TYPE:
-    process.env.WORK_TYPE === undefined ? "private" : process.env.WORK_TYPE,
+  PRIVACY: process.env.PRIVACY === undefined ? "private" : process.env.PRIVACY,
   SUDO: process.env.SUDO === undefined ? "" : process.env.SUDO,
 };
 

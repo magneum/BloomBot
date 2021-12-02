@@ -7,7 +7,7 @@ module.exports = {
 1. XXXXXXXXXX
 2. YYXXXXXXXXXX ()
 For example -
-*${config.PREFIX}add 9861212121*`,
+*${config.ULTRONIX}add 9861212121*`,
   async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
     try {
       if (!Últrðñ.isGroup) {
@@ -60,7 +60,7 @@ For example -
         ӄʀǟӄɨռʐ
           .sendMessage(
             Últrðñ.chatId,
-            `Enter the number you want to add.\n\nFor instance,  *${config.PREFIX}add <NUMBER>* .`,
+            `Enter the number you want to add.\n\nFor instance,  *${config.ULTRONIX}add <NUMBER>* .`,
             MessageType.text
           )
           .catch((cᴇʀʀᴏʀ) =>
@@ -84,7 +84,7 @@ For example -
         ӄʀǟӄɨռʐ
           .sendMessage(
             Últrðñ.chatId,
-            `Valid formats -\n    1. XXXXXXXXXX\n    2. YYXXXXXXXXXX\n\nFor example-\n*${config.PREFIX}add 9861212121*\n*${config.PREFIX}add 919861212121*`,
+            `Valid formats -\n    1. XXXXXXXXXX\n    2. YYXXXXXXXXXX\n\nFor example-\n*${config.ULTRONIX}add 9861212121*\n*${config.ULTRONIX}add 919861212121*`,
             MessageType.text
           )
           .catch((cᴇʀʀᴏʀ) =>

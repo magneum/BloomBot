@@ -1,6 +1,6 @@
 const { DataTypes } = require(`sequelize`);
 const config = require("./config");
-const sequelize = config.DATABASE;
+const sequelize = config.POSTQL;
 const User = sequelize.define(
   "User",
   {

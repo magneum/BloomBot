@@ -4,7 +4,7 @@ const got = require(`got`);
 module.exports = {
   name: `github`,
   description: `Find Github Profile`,
-  ƈʏɮօʀɢʍօʀɛ: `Get the github profile by command  *${config.PREFIX}github <user>*  or replying  *${config.PREFIX}github* .`,
+  ƈʏɮօʀɢʍօʀɛ: `Get the github profile by command  *${config.ULTRONIX}github <user>*  or replying  *${config.ULTRONIX}github* .`,
   async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
     var fetching = await ӄʀǟӄɨռʐ.sendMessage(
       Últrðñ.chatId,

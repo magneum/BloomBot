@@ -4,7 +4,7 @@ const got = require(`got`);
 module.exports = {
   name: `neko`,
   description: `Copy your text to nekobin`,
-  ƈʏɮօʀɢʍօʀɛ: `Use this module to paste your text to a pastebin (NEKOBIN). Enter text with the command  *${config.PREFIX}neko* .`,
+  ƈʏɮօʀɢʍօʀɛ: `Use this module to paste your text to a pastebin (NEKOBIN). Enter text with the command  *${config.ULTRONIX}neko* .`,
   async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
     try {
       if (arguments.length === 0 && !Últrðñ.isReply) {

@@ -3,7 +3,7 @@ var ƈʏɮօʀɢƈʟǟ = require("./Últrðñƈʟǟ");
 const Kolor = require("chalk");
 exports.resolve = function (messageInstance, ӄʀǟӄɨռʐ, groupMetadata) {
   var Últrðñ = new ƈʏɮօʀɢƈʟǟ();
-  var prefix = config.PREFIX + "\\w+";
+  var prefix = config.ULTRONIX + "\\w+";
   var prefixRegex = new RegExp(prefix, "g");
   var SUDOstring = config.SUDO;
   try {

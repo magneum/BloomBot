@@ -4,7 +4,7 @@ const config = require(`../../Últrðñ/config`);
 module.exports = {
   name: `tr`,
   description: `Language Translator`,
-  ƈʏɮօʀɢʍօʀɛ: `Use  *${config.PREFIX}tr <text> | <language>*  to translate text to the specified language. You can also reply to a text message with syntax  *${config.PREFIX}tr <language>*  to translate text.
+  ƈʏɮօʀɢʍօʀɛ: `Use  *${config.ULTRONIX}tr <text> | <language>*  to translate text to the specified language. You can also reply to a text message with syntax  *${config.ULTRONIX}tr <language>*  to translate text.
 If you do not specify a language, it defaults to <English class=''></English>`,
   async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
     const processing = await ӄʀǟӄɨռʐ
@@ -34,7 +34,7 @@ If you do not specify a language, it defaults to <English class=''></English>`,
         await ӄʀǟӄɨռʐ
           .sendMessage(
             Últrðñ.chatId,
-            `Use  *${config.PREFIX}tr <text> | <language>*  to translate text to the specified language. You can also reply to a text message with syntax  *${config.PREFIX}tr <language>*  to translate text.\nIf you do not specify a language, it defaults to <English class=''></English>`,
+            `Use  *${config.ULTRONIX}tr <text> | <language>*  to translate text to the specified language. You can also reply to a text message with syntax  *${config.ULTRONIX}tr <language>*  to translate text.\nIf you do not specify a language, it defaults to <English class=''></English>`,
             MessageType.text
           )
           .catch((cᴇʀʀᴏʀ) =>

@@ -4,7 +4,7 @@ const config = require(`../../Últrðñ/config`);
 module.exports = {
   name: `read`,
   description: `Optical Character Recognition`,
-  ƈʏɮօʀɢʍօʀɛ: `Use this module to obtain text from an image by  *${config.PREFIX}space*  command.`,
+  ƈʏɮօʀɢʍօʀɛ: `Use this module to obtain text from an image by  *${config.ULTRONIX}space*  command.`,
   async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
     try {
       const processing = await ӄʀǟӄɨռʐ.sendMessage(
@@ -24,7 +24,7 @@ module.exports = {
         );
         try {
           const text = await ocrSpace(filePath, {
-            apiKey: config.OCR_API_KEY,
+            apiKey: config.OCR,
           });
           var Msg = text.ParsedResults[0].ParsedText;
           if (Msg === ``) {
@@ -58,7 +58,7 @@ module.exports = {
         );
         try {
           const text = await ocrSpace(filePath, {
-            apiKey: config.OCR_API_KEY,
+            apiKey: config.OCR,
           });
           var Msg = text.ParsedResults[0].ParsedText;
           if (Msg === ``) {

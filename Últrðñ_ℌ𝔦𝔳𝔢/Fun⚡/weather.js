@@ -1,6 +1,6 @@
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const config = require(`../../Últrðñ/config`);
-const apiKey = config.WEATHER_API_KEY;
+const apiKey = config.WAPI;
 const https = require(`https`);
 module.exports = {
   name: `weather`,

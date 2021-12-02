@@ -10,7 +10,7 @@ module.exports = {
         .sendMessage(
           Últrðñ.chatId,
           `🐞 Últrðñ has been integrated successfully. 🐞
-Use the   *${config.PREFIX}help*   command to get a list of plugins that will make your WhatsApp experience much easier.`,
+Use the   *${config.ULTRONIX}help*   command to get a list of plugins that will make your WhatsApp experience much easier.`,
           MessageType.text
         )
         .catch((cᴇʀʀᴏʀ) =>

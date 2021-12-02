@@ -4,7 +4,7 @@ const got = require(`got`);
 module.exports = {
   name: `lyrics`,
   description: `Module to find lyrics of song`,
-  ƈʏɮօʀɢʍօʀɛ: `Use this module to find the lyrics of a song by using  *${config.PREFIX}lyrics*  command.`,
+  ƈʏɮօʀɢʍօʀɛ: `Use this module to find the lyrics of a song by using  *${config.ULTRONIX}lyrics*  command.`,
   async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
     try {
       var song = ``;

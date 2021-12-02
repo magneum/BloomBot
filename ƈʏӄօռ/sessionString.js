@@ -8,7 +8,7 @@ exports.WhatsApp = conn;
 exports.saveSession = async () => {
   if (
     (!fs.existsSync("./config.env") && config.HEROKU == false) ||
-    config.STRING_SESSION == ""
+    config.ULTRON == ""
   ) {
     conn.browserDescription = ["Últrðñ", "Chrome", "1.0"];
     conn.logger.level = "error";
@@ -26,7 +26,7 @@ exports.saveSession = async () => {
       stringSession
     );
     if (config.HEROKU === false) {
-      fs.writeFileSync("./config.env", `STRING_SESSION="${stringSession}"`);
+      fs.writeFileSync("./config.env", `ULTRON="${stringSession}"`);
     }
     process.exit(0);
   }

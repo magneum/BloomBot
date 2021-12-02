@@ -10,7 +10,7 @@ module.exports = {
         ӄʀǟӄɨռʐ
           .sendMessage(
             Últrðñ.chatId,
-            `*${config.PREFIX}admins*  command is only applicable for group chats.`,
+            `*${config.ULTRONIX}admins*  command is only applicable for group chats.`,
             MessageType.text
           )
           .catch((cᴇʀʀᴏʀ) =>
