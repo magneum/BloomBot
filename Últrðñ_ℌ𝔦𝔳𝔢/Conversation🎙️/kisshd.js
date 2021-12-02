@@ -18,7 +18,8 @@ const fs = require(`fs`);
 module.exports = {
   name: `kisshd`,
   description: `I know you like anime kiss`,
-  ƈʏɮօʀɢʍօʀɛ: `I know you like anime kiss`,
+  ƈʏɮօʀɢʍօʀɛ: `
+I know you like anime kiss`,
   async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
     let image = await API.sfw.kiss();
     if (image.image === undefined) {

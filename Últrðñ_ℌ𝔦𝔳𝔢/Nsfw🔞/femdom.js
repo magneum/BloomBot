@@ -13,7 +13,8 @@ const akaneko = require(`akaneko`);
 module.exports = {
   name: `femdom`,
   description: `	Female Domination?`,
-  ƈʏɮօʀɢʍօʀɛ: `	Female Domination?`,
+  ƈʏɮօʀɢʍօʀɛ: `
+	Female Domination?`,
   async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
     try {
       await ӄʀǟӄɨռʐ.sendMessage(

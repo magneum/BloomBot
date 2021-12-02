@@ -13,7 +13,8 @@ const malScraper = require(`mal-scraper`);
 module.exports = {
   name: `anime`,
   description: `Search Anime`,
-  ƈʏɮօʀɢʍօʀɛ: `Get Anime Informations From MyAnimeList`,
+  ƈʏɮօʀɢʍօʀɛ: `
+Get Anime Informations From MyAnimeList`,
   async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
     if (arguments.length === 0) {
       await ӄʀǟӄɨռʐ.sendMessage(

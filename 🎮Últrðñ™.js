@@ -72,6 +72,22 @@ async function CyborgRunner() {
     // ===============================================================================
     // 🎮Últrðñ™ 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..
     // ===============================================================================
+    console.log(Kolor.yellowBright.bold(`|  Últrðñ  |=================`));
+    console.log(UltronSitreper.ULTRON);
+    console.log(Kolor.yellowBright.bold(`|  Últrðñ  |=================`));
+    console.log(UltronSitreper.HEROKU);
+    console.log(Kolor.yellowBright.bold(`|  Últrðñ  |=================`));
+    console.log(UltronSitreper.ULTRONIX);
+    console.log(Kolor.yellowBright.bold(`|  Últrðñ  |=================`));
+    console.log(UltronSitreper.CCD);
+    console.log(Kolor.yellowBright.bold(`|  Últrðñ  |=================`));
+    console.log(UltronSitreper.OCR);
+    console.log(Kolor.yellowBright.bold(`|  Últrðñ  |=================`));
+    console.log(UltronSitreper.WAPI);
+    console.log(Kolor.yellowBright.bold(`|  Últrðñ  |=================`));
+    console.log(UltronSitreper.PRIVACY);
+    console.log(Kolor.yellowBright.bold(`|  Últrðñ  |=================`));
+    console.log(UltronSitreper.SUDO);
     console.log(
       Kolor.yellowBright.bold(`=================😈    |  Últrðñ  |    😈=================`),
       Kolor.redBright.bold(`

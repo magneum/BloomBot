@@ -18,7 +18,8 @@ const fs = require(`fs`);
 module.exports = {
   name: `cuddlehd`,
   description: `I know you like anime cuddle`,
-  ƈʏɮօʀɢʍօʀɛ: `I know you like anime cuddle`,
+  ƈʏɮօʀɢʍօʀɛ: `
+I know you like anime cuddle`,
   async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
     let image = await API.sfw.cuddle();
     if (image.image === undefined) {

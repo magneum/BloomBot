@@ -11,7 +11,8 @@ const UltronSitreper = require(`../../Últrðñ/UltronSitreper`);
 module.exports = {
   name: `unblock`,
   description: `Unblock contact`,
-  ƈʏɮօʀɢʍօʀɛ: `Remove number from the blocklist.`,
+  ƈʏɮօʀɢʍօʀɛ: `
+Remove number from the blocklist.`,
   async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
     try {
       if (!Últrðñ.isReply && typeof arguments[0] == `undefined`) {

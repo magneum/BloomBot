@@ -11,10 +11,10 @@ const UltronSitreper = require(`../../Últrðñ/UltronSitreper`);
 // ===============================================================================
 module.exports = {
   name: `help`,
-  commandType: `info`,
   description: `Get the command list and info on modules`,
-  ƈʏɮօʀɢʍօʀɛ: `This module is used to get info on other modules and their triggers.`,
-  async handle(ӄʀǟӄɨռʐ, Últrðñ) {
+  ƈʏɮօʀɢʍօʀɛ: `
+This module is used to get info on other modules and their triggers.`,
+  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
     ӄʀǟӄɨռʐ
       .sendMessage(
         Últrðñ.chatId, {
@@ -36,9 +36,9 @@ module.exports = {
 
 
 *••••••••••••••••➛  🎼𝗠𝘂𝘀𝗶𝗰* 
-*${UltronSitreper.ULTRONIX}song* = Download songs
+*${UltronSitreper.ULTRONIX}ytdl* = Download songs
 *${UltronSitreper.ULTRONIX}lyrics* = Module to find lyrics of song
-*${UltronSitreper.ULTRONIX}yt* = Get recommendations and links from Youtube
+*${UltronSitreper.ULTRONIX}yts* = Get recommendations and links from Youtube
 
 
 *••••••••••••••••➛  🎙️𝗖𝗼𝗻𝘃𝗲𝗿𝘀𝗮𝘁𝗶𝗼𝗻*

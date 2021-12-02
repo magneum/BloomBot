@@ -13,7 +13,8 @@ const anime = require("anime-actions");
 module.exports = {
   name: `animewallpaper`,
   description: `	I know you like anime wallpaper`,
-  ƈʏɮօʀɢʍօʀɛ: `	I know you like anime wallpaper`,
+  ƈʏɮօʀɢʍօʀɛ: `
+	I know you like anime wallpaper`,
   async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
     try {
       await ӄʀǟӄɨռʐ.sendMessage(

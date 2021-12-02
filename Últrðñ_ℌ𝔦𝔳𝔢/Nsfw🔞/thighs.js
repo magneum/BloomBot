@@ -13,7 +13,8 @@ const akaneko = require(`akaneko`);
 module.exports = {
   name: `thighs`,
   description: `	The top part of your legs, very hot, isn't it?`,
-  ƈʏɮօʀɢʍօʀɛ: `	The top part of your legs, very hot, isn't it?`,
+  ƈʏɮօʀɢʍօʀɛ: `
+	The top part of your legs, very hot, isn't it?`,
   async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
     try {
       await ӄʀǟӄɨռʐ.sendMessage(

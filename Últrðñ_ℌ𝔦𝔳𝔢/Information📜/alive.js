@@ -11,7 +11,8 @@ const UltronSitreper = require(`../../Últrðñ/UltronSitreper`);
 module.exports = {
   name: `alive`,
   description: `Check if bot is online.`,
-  ƈʏɮօʀɢʍօʀɛ: `This module can be used to check if the bot is currently online or not.`,
+  ƈʏɮօʀɢʍօʀɛ: `
+This module can be used to check if the bot is currently online or not.`,
   async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
     try {
       ӄʀǟӄɨռʐ

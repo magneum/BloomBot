@@ -12,7 +12,8 @@ const UltronSitreper = require(`../../Últrðñ/UltronSitreper`);
 module.exports = {
   name: `unmute`,
   description: `Unmute group chat`,
-  ƈʏɮօʀɢʍօʀɛ: `Unmute non-admin members of a group`,
+  ƈʏɮօʀɢʍօʀɛ: `
+Unmute non-admin members of a group`,
   async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
     try {
       if (!Últrðñ.isGroup) {

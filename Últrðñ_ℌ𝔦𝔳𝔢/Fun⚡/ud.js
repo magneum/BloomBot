@@ -13,7 +13,8 @@ module.exports = {
   name: `ud`,
   commandType: `fun`,
   description: `Urban Dictionary`,
-  ƈʏɮօʀɢʍօʀɛ: `Use this module to find the meaning of a word in Urban Dictionary. Enter  *${UltronSitreper.ULTRONIX}ud*  command.`,
+  ƈʏɮօʀɢʍօʀɛ: `
+Use this module to find the meaning of a word in Urban Dictionary. Enter  *${UltronSitreper.ULTRONIX}ud*  command.`,
   async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
     const processing = await ӄʀǟӄɨռʐ
       .sendMessage(

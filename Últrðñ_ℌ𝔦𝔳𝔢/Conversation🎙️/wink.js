@@ -18,7 +18,8 @@ const fs = require(`fs`);
 module.exports = {
   name: `wink`,
   description: `I know you like anime wink`,
-  ƈʏɮօʀɢʍօʀɛ: `I know you like anime wink`,
+  ƈʏɮօʀɢʍօʀɛ: `
+I know you like anime wink`,
   async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
     const {
       image

@@ -15,7 +15,8 @@ const fs = require(`fs`);
 module.exports = {
   name: `kill`,
   description: `I know you like anime kill`,
-  ƈʏɮօʀɢʍօʀɛ: `I know you like anime kill`,
+  ƈʏɮօʀɢʍօʀɛ: `
+I know you like anime kill`,
   async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
     let { image } = await API.sfw.kill();
     if (image === undefined) {

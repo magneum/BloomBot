@@ -12,7 +12,8 @@ const UltronSitreper = require(`../../Últrðñ/UltronSitreper`);
 module.exports = {
   name: `tr`,
   description: `Language Translator`,
-  ƈʏɮօʀɢʍօʀɛ: `Use  *${UltronSitreper.ULTRONIX}tr <text> | <language>*  to translate text to the specified language. You can also reply to a text message with syntax  *${UltronSitreper.ULTRONIX}tr <language>*  to translate text.
+  ƈʏɮօʀɢʍօʀɛ: `
+Use  *${UltronSitreper.ULTRONIX}tr <text> | <language>*  to translate text to the specified language. You can also reply to a text message with syntax  *${UltronSitreper.ULTRONIX}tr <language>*  to translate text.
 If you do not specify a language, it defaults to <English class=''></English>`,
   async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
     const processing = await ӄʀǟӄɨռʐ

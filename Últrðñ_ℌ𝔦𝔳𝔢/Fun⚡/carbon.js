@@ -13,7 +13,8 @@ const UltronSitreper = require(`../../Últrðñ/UltronSitreper`);
 module.exports = {
   name: `carbon`,
   description: `Convert text/code to a carbon image.`,
-  ƈʏɮօʀɢʍօʀɛ: `This module can be used to convert text/code into carbon images.
+  ƈʏɮօʀɢʍօʀɛ: `
+This module can be used to convert text/code into carbon images.
 Example Usage,
 *${UltronSitreper.ULTRONIX}carbon <text>* 
 *${UltronSitreper.ULTRONIX}carbon*  and reply to a text message.

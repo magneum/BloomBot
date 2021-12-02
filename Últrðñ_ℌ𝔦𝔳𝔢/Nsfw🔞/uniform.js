@@ -13,7 +13,8 @@ const akaneko = require(`akaneko`);
 module.exports = {
   name: `uniform`,
   description: `	Military, Konbini, Work, Nurse Uniforms, etc!~ Sexy~`,
-  ƈʏɮօʀɢʍօʀɛ: `	Military, Konbini, Work, Nurse Uniforms, etc!~ Sexy~`,
+  ƈʏɮօʀɢʍօʀɛ: `
+	Military, Konbini, Work, Nurse Uniforms, etc!~ Sexy~`,
   async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
     try {
       await ӄʀǟӄɨռʐ.sendMessage(

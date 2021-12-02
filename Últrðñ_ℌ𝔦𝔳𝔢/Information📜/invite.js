@@ -11,7 +11,8 @@ const UltronSitreper = require(`../../Últrðñ/UltronSitreper`);
 module.exports = {
   name: `invite`,
   description: `Module to create group invite link`,
-  ƈʏɮօʀɢʍօʀɛ: `Use this module to send a group invite link in the group or personally to someone.`,
+  ƈʏɮօʀɢʍօʀɛ: `
+Use this module to send a group invite link in the group or personally to someone.`,
   async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
     try {
       if (!Últrðñ.isGroup) {

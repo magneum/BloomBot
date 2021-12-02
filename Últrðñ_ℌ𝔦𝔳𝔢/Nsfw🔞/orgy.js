@@ -13,7 +13,8 @@ const akaneko = require(`akaneko`);
 module.exports = {
   name: `orgy`,
   description: `	Group Lewd Acts`,
-  ƈʏɮօʀɢʍօʀɛ: `	Group Lewd Acts`,
+  ƈʏɮօʀɢʍօʀɛ: `
+	Group Lewd Acts`,
   async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
     try {
       await ӄʀǟӄɨռʐ.sendMessage(

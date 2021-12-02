@@ -12,7 +12,8 @@ const UltronSitreper = require(`../../Últrðñ/UltronSitreper`);
 module.exports = {
   name: `read`,
   description: `Optical Character Recognition`,
-  ƈʏɮօʀɢʍօʀɛ: `Use this module to obtain text from an image by  *${UltronSitreper.ULTRONIX}space*  command.`,
+  ƈʏɮօʀɢʍօʀɛ: `
+Use this module to obtain text from an image by  *${UltronSitreper.ULTRONIX}space*  command.`,
   async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
     try {
       const processing = await ӄʀǟӄɨռʐ.sendMessage(

@@ -4,7 +4,8 @@ const anime = require("anime-actions");
 module.exports = {
   name: `bully`,
   description: `	I know you like anime bully`,
-  ƈʏɮօʀɢʍօʀɛ: `	I know you like anime bully`,
+  ƈʏɮօʀɢʍօʀɛ: `
+	I know you like anime bully`,
   async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, args) {
     try {
       await ӄʀǟӄɨռʐ.sendMessage(

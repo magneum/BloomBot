@@ -13,7 +13,8 @@ const akaneko = require(`akaneko`);
 module.exports = {
   name: `bdsm`,
   description: `	If you don't know what it is, search it up`,
-  ƈʏɮօʀɢʍօʀɛ: `	If you don't know what it is, search it up`,
+  ƈʏɮօʀɢʍօʀɛ: `
+	If you don't know what it is, search it up`,
   async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
     try {
       await ӄʀǟӄɨռʐ.sendMessage(

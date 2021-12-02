@@ -13,7 +13,8 @@ const akaneko = require(`akaneko`);
 module.exports = {
   name: `masturbation`,
   description: `Solo Queue in CSGO!Lol`,
-  ƈʏɮօʀɢʍօʀɛ: `Solo Queue in CSGO!Lol`,
+  ƈʏɮօʀɢʍօʀɛ: `
+Solo Queue in CSGO!Lol`,
   async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
     try {
       await ӄʀǟӄɨռʐ.sendMessage(

@@ -12,7 +12,8 @@ const UltronSitreper = require(`../../Últrðñ/UltronSitreper`);
 module.exports = {
   name: `meme`,
   description: `meme.DESCRIPTION`,
-  ƈʏɮօʀɢʍօʀɛ: `meme.EXTENDED_DESCRIPTION`,
+  ƈʏɮօʀɢʍօʀɛ: `
+meme.EXTENDED_DESCRIPTION`,
   async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
     try {
       var num = Math.floor(Math.random() * (500 - 1) + 1);

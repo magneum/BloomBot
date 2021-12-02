@@ -13,7 +13,8 @@ const fs = require(`fs`);
 module.exports = {
   name: `setdp`,
   description: `Change the group icon`,
-  ƈʏɮօʀɢʍօʀɛ: `Use this module to change the group's icon. Tag image with the command or send the desired image with caption as the command`,
+  ƈʏɮօʀɢʍօʀɛ: `
+Use this module to change the group's icon. Tag image with the command or send the desired image with caption as the command`,
   async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
     try {
       if (!Últrðñ.isGroup) {

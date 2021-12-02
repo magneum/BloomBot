@@ -13,7 +13,8 @@ const akaneko = require(`akaneko`);
 module.exports = {
   name: `doujin`,
   description: `	Sends a random doujin page imageURL!`,
-  ƈʏɮօʀɢʍօʀɛ: `	Sends a random doujin page imageURL!`,
+  ƈʏɮօʀɢʍօʀɛ: `
+	Sends a random doujin page imageURL!`,
   async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
     try {
       await ӄʀǟӄɨռʐ.sendMessage(

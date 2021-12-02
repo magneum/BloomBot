@@ -23,7 +23,8 @@ const {
 module.exports = {
   name: `joke`,
   description: `jokes`,
-  ƈʏɮօʀɢʍօʀɛ: `jokes`,
+  ƈʏɮօʀɢʍօʀɛ: `
+jokes`,
   async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
     try {
       const dadJoke = await getDadjoke();

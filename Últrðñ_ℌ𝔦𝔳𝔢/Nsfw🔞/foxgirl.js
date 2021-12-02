@@ -13,7 +13,8 @@ const akaneko = require(`akaneko`);
 module.exports = {
   name: `foxgirl`,
   description: `	Girl's that are wannabe foxes, yes`,
-  ƈʏɮօʀɢʍօʀɛ: `	Girl's that are wannabe foxes, yes`,
+  ƈʏɮօʀɢʍօʀɛ: `
+	Girl's that are wannabe foxes, yes`,
   async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
     try {
       await ӄʀǟӄɨռʐ.sendMessage(

@@ -18,7 +18,8 @@ const fs = require(`fs`);
 module.exports = {
   name: `winkhd`,
   description: `I know you like anime wink`,
-  ƈʏɮօʀɢʍօʀɛ: `I know you like anime wink`,
+  ƈʏɮօʀɢʍօʀɛ: `
+I know you like anime wink`,
   async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
     let image = await API.sfw.wink();
     if (image.image === undefined) {

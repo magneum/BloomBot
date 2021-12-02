@@ -18,7 +18,8 @@ const fs = require(`fs`);
 module.exports = {
   name: `pathd`,
   description: `I know you like anime pat`,
-  ƈʏɮօʀɢʍօʀɛ: `I know you like anime pat`,
+  ƈʏɮօʀɢʍօʀɛ: `
+I know you like anime pat`,
   async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
     let image = await API.sfw.pat();
     if (image.image === undefined) {

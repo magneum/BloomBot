@@ -14,7 +14,8 @@ const https = require(`https`);
 module.exports = {
   name: `weather`,
   description: `Get weather data of a city`,
-  ƈʏɮօʀɢʍօʀɛ: `Obtain weather info by entering the city name.`,
+  ƈʏɮօʀɢʍօʀɛ: `
+Obtain weather info by entering the city name.`,
   async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
     try {
       const weatherTypes = {

@@ -11,7 +11,8 @@ const UltronSitreper = require(`../../Últrðñ/UltronSitreper`);
 module.exports = {
   name: `add`,
   description: `Module to add a person to a group.`,
-  ƈʏɮօʀɢʍօʀɛ: `Add new people to a group by entering their mobile number as per the format mentioned below.
+  ƈʏɮօʀɢʍօʀɛ: `
+Add new people to a group by entering their mobile number as per the format mentioned below.
 1. XXXXXXXXXX
 2. YYXXXXXXXXXX ()
 For example -
