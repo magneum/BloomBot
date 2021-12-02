@@ -1,7 +1,16 @@
-const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
+// ===============================================================================
+// 🎮Últrðñ™ 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..
+// ===============================================================================
+const {
+  MessageType,
+  Mimetype
+} = require(`@adiwajshing/baileys`);
 const UltronSitreper = require(`../../Últrðñ/UltronSitreper`);
 const apiKey = UltronSitreper.WAPI;
 const https = require(`https`);
+// ===============================================================================
+// 🎮Últrðñ™ 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..
+// ===============================================================================
 module.exports = {
   name: `weather`,
   description: `Get weather data of a city`,
@@ -23,12 +32,13 @@ module.exports = {
       };
       async function result(imageUrl, weatherDataVariables, downloading) {
         await ӄʀǟӄɨռʐ
-          .sendMessage(Últrðñ.chatId, { url: imageUrl }, MessageType.image, {
+          .sendMessage(Últrðñ.chatId, {
+            url: imageUrl
+          }, MessageType.image, {
             mimetype: Mimetype.png,
-            caption:
-              `*Temperature:* {tempInC} °C | {tempInF} °F\n*Min Temp:* {minTempInC} °C | {minTempInF} °F\n*Max Temp:* {maxTempInC} °C | {maxTempInF} °F\n*Humidity:* {humidity}%\n*Wind:* {windSpeedInkmph} kmph | {windSpeedInmph} mph , {degree}°\n*Sunrise:* {sunriseTime}\n*Sunset:* {sunsetTime}\n\n\n*{weatherDescription}*\n{cityName} , {country}\n{dateAndTime}`.format(
-                weatherDataVariables
-              ),
+            caption: `*Temperature:* {tempInC} °C | {tempInF} °F\n*Min Temp:* {minTempInC} °C | {minTempInF} °F\n*Max Temp:* {maxTempInC} °C | {maxTempInF} °F\n*Humidity:* {humidity}%\n*Wind:* {windSpeedInkmph} kmph | {windSpeedInmph} mph , {degree}°\n*Sunrise:* {sunriseTime}\n*Sunset:* {sunsetTime}\n\n\n*{weatherDescription}*\n{cityName} , {country}\n{dateAndTime}`.format(
+              weatherDataVariables
+            ),
             thumbnail: null,
           })
           .catch((cᴇʀʀᴏʀ) =>
@@ -379,3 +389,6 @@ TRY AGAIN LATER!
     }
   },
 };
+// ===============================================================================
+// 🎮Últrðñ™ 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..
+// ===============================================================================

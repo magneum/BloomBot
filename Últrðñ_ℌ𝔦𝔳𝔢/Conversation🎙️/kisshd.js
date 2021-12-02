@@ -1,4 +1,10 @@
-const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
+// ===============================================================================
+// 🎮Últrðñ™ 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..
+// ===============================================================================
+const {
+  MessageType,
+  Mimetype
+} = require(`@adiwajshing/baileys`);
 const Anime_Images = require(`anime-images-api`);
 const UltronSitreper = require(`../../Últrðñ/UltronSitreper`);
 const download = require(`download-file`);
@@ -6,6 +12,9 @@ const ffmpeg = require(`fluent-ffmpeg`);
 const Kolor = require(`chalk`);
 const API = new Anime_Images();
 const fs = require(`fs`);
+// ===============================================================================
+// 🎮Últrðñ™ 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..
+// ===============================================================================
 module.exports = {
   name: `kisshd`,
   description: `I know you like anime kiss`,
@@ -14,10 +23,10 @@ module.exports = {
     let image = await API.sfw.kiss();
     if (image.image === undefined) {
       return await ӄʀǟӄɨռʐ.sendMessage(
-        Últrðñ.chatId,
-        { url: `https://i.postimg.cc/KcNwHtZt/ltr.png` },
-        MessageType.image,
-        {
+        Últrðñ.chatId, {
+          url: `https://i.postimg.cc/KcNwHtZt/ltr.png`
+        },
+        MessageType.image, {
           mimetype: Mimetype.png,
           caption: `Seems Like No Image Was Found.\nPlease Try Again Later!`,
         }
@@ -25,8 +34,7 @@ module.exports = {
     } else {
       console.log(image.image);
       download(
-        image.image,
-        {
+        image.image, {
           directory: `./ᴛᴇᴍᴘ/`,
           filename: `kiss-${chat.key.id}.gif`,
         },
@@ -80,10 +88,10 @@ setsar=1`
                 );
               await ӄʀǟӄɨռʐ
                 .sendMessage(
-                  Últrðñ.chatId,
-                  { url: image.image },
-                  MessageType.video,
-                  {
+                  Últrðñ.chatId, {
+                    url: image.image
+                  },
+                  MessageType.video, {
                     mimetype: Mimetype.gif,
                     caption: `⚡Here Is Your HD Download Link:\n📎 ${image.url}`,
                   }
@@ -122,3 +130,6 @@ setsar=1`
     }
   },
 };
+// ===============================================================================
+// 🎮Últrðñ™ 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..
+// ===============================================================================

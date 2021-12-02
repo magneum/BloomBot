@@ -1,5 +1,14 @@
-const { GroupSettingChange, MessageType } = require(`@adiwajshing/baileys`);
+// ===============================================================================
+// 🎮Últrðñ™ 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..
+// ===============================================================================
+const {
+  GroupSettingChange,
+  MessageType
+} = require(`@adiwajshing/baileys`);
 const UltronSitreper = require(`../../Últrðñ/UltronSitreper`);
+// ===============================================================================
+// 🎮Últrðñ™ 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..
+// ===============================================================================
 module.exports = {
   name: `mute`,
   description: `Mute group chat for a specified time.`,
@@ -130,7 +139,7 @@ module.exports = {
         duration = arguments[0] * 60 * 60 * 1000;
         type = `seconds`;
       } else {
-        duration = arguments[0] * 60 * 1000; // default to minutes
+        duration = arguments[0] * 60 * 1000;
       }
 
       ӄʀǟӄɨռʐ.groupSettingChange(
@@ -142,10 +151,10 @@ module.exports = {
         .sendMessage(
           Últrðñ.chatId,
           `Chat permissions changed to  *admin only*  for ` +
-            arguments[0] +
-            ` ` +
-            type +
-            `.`,
+          arguments[0] +
+          ` ` +
+          type +
+          `.`,
           MessageType.text
         )
         .catch((cᴇʀʀᴏʀ) =>
@@ -220,3 +229,6 @@ module.exports = {
     }
   },
 };
+// ===============================================================================
+// 🎮Últrðñ™ 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..
+// ===============================================================================

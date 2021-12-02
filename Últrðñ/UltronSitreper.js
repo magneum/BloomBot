@@ -1,3 +1,6 @@
+// ===============================================================================
+// 🎮Últrðñ™ 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..
+// ===============================================================================
 const fs = require("fs");
 const {
   Sequelize
@@ -9,8 +12,9 @@ if (fs.existsSync("Últrðñ.env")) {
 } else {
   require("dotenv");
 }
-process.env.SQLL = process.env.SQLL === undefined ? "./Últrðñ.db" : process.env.SQLL;
-
+// ===============================================================================
+// 🎮Últrðñ™ 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..
+// ===============================================================================
 const env = {
   ULTRON: process.env.ULTRON === undefined ? "" : process.env.ULTRON,
   HEROKU: process.env.HEROKU === undefined ? false : true,
@@ -18,7 +22,7 @@ const env = {
   CCD: process.env.CCD === undefined ? "91" : process.env.CCD,
   OCR: process.env.OCR === undefined ? "9ffb44def388957" : process.env.OCR,
   WAPI: process.env.CURRENT_WEATHER_API_KEY === undefined ? "6729ac2b2e2bb5c686ff427a2f06df92" : process.env.CURRENT_WEATHER_API_KEY,
-  SQLL: process.env.SQLL,
+  SQLL: process.env.SQLL = process.env.SQLL === undefined ? "./Últrðñ.db" : process.env.SQLL,
   POSTQL: process.env.SQLL === "./Últrðñ.db" ?
     new Sequelize({
       dialect: "sqlite",
@@ -36,5 +40,7 @@ const env = {
   PRIVACY: process.env.PRIVACY === undefined ? "private" : process.env.PRIVACY,
   SUDO: process.env.SUDO === undefined ? "" : process.env.SUDO,
 };
-
 module.exports = env;
+// ===============================================================================
+// 🎮Últrðñ™ 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..
+// ===============================================================================
