@@ -3,6 +3,7 @@ const {
   Mimetype
 } = require(`@adiwajshing/baileys`);
 const UltronSitreper = require(`../../Últrðñ/UltronSitreper`);
+// ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
   name: `meme`,
   description: `meme.DESCRIPTION`,

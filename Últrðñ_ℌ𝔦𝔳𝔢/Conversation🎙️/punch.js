@@ -12,6 +12,7 @@ const ffmpeg = require(`fluent-ffmpeg`);
 const Kolor = require(`chalk`);
 const API = new Anime_Images();
 const fs = require(`fs`);
+// ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
   name: `punch`,
   description: `I know you like anime punch`,

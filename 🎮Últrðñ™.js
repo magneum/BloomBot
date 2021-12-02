@@ -148,7 +148,7 @@ ______/ |__/    ___/  |__/        ______/ |__/  |__/`),
     var Últrðñ = wa.resolve(chat, ӄʀǟӄɨռʐ, groupMetadata);
     const ÚltrðñRights = [
       `add`, `demote`, `invite`, `mute`, `promote`, `remove`, `unmute`,
-      `welcome`, `disappear`, `goodbye`, `setdp`, `tagall`,
+      `welcome`, `disappear`, `goodbye`, `setdp`, `tagall`, `spam`,
       // Below are NSFW Commands!
       `ass`, `bdsm`, `blowjob`, `cum`, `doujin`, `feet`, `femdom`, `foxgirl`, `glasses`, `hentai`, `maid`,
       `masturbation`, `netorare`, `orgy`, `panties`, `pussy`, `school`, `tentacles`, `thighs`, `uniform`, `yuri`,
