@@ -70,8 +70,8 @@ async function CyborgRunner() {
     // ===============================================================================
     // 🎮Últrðñ™ 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..
     // ===============================================================================
-    console.log(Kolor.yellowBright.bold(`----------------------------------------|  Últrðñ  |`));
-    console.log(UltronSitreper.ULTRON);
+    // console.log(Kolor.yellowBright.bold(`----------------------------------------|  Últrðñ  |`));
+    // console.log(UltronSitreper.ULTRON);
     console.log(Kolor.yellowBright.bold(`----------------------------------------|  Últrðñ  |`));
     console.log(UltronSitreper.IMDB);
     console.log(Kolor.yellowBright.bold(`----------------------------------------|  Últrðñ  |`));
@@ -245,7 +245,8 @@ If you are keen to use my features, you can deploy Últrðñ on your own account
             mimetype: Mimetype.png,
             caption: `*⚠️𝗜𝗻𝘃𝗮𝗹𝗶𝗱 Últrðñ 𝗖𝗼𝗺𝗺𝗮𝗻𝗱*
 
-𝘗𝘭𝘦𝘢𝘴𝘦 𝘶𝘴𝘦 *${Ultronf}help!*`,
+*No such command found.*
+Please Use *${Ultronf}help to get the list of available commands*`,
           }
         );
       } else if (command && Últrðñ.commandName == `help`) {
@@ -255,11 +256,7 @@ If you are keen to use my features, you can deploy Últrðñ on your own account
           return console.log(Kolor.redBright.bold(`⧪ᴇʀʀᴏʀ❌⬰ `, cᴇʀʀᴏʀ));
         }
       }
-      try {
-        command.handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments).catch((cᴇʀʀᴏʀ) => console.log(`⧪ᴇʀʀᴏʀ❌⬰ ` + cᴇʀʀᴏʀ));
-      } catch (cᴇʀʀᴏʀ) {
-        console.log(Kolor.redBright.bold(`⧪ᴇʀʀᴏʀ❌⬰ `, cᴇʀʀᴏʀ));
-      }
+      command.handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments)
     }
   });
 }
