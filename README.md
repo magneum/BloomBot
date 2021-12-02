@@ -2,14 +2,11 @@
 
 # 『 *🎮Últrðñ™*-V1 』
 *> ʏᴏᴜʀ ᴀꜱꜱɪꜱꜱᴛᴀɴᴛ ꜰᴏʀ ᴍᴀᴋɪɴɢ ʙᴏʀɪɴɢ ᴡʜᴀᴛꜱᴀᴘᴘ ᴀ ʙᴇᴛᴛᴇʀ ᴀᴅᴠᴀɴᴄᴇ ᴀᴘᴘ!*
+*Stable Version from Version 4*
 
 <p align="center">
-  <img src="[images/BotsApp_Logo.png](https://github.com/Krakinz/Ultron/blob/KrakinzLab/%C3%9Altr%C3%B0%C3%B1/%C3%9Altr%C3%B0%C3%B1.png)" height="400px"/>
+  <img src="https://github.com/Krakinz/Ultron/blob/KrakinzLab/%C3%9Altr%C3%B0%C3%B1/%C3%9Altr%C3%B0%C3%B1.png" height="400px"/>
 </p>
-
-
-# Stable Version from Version 4
-<p align="centre"><img  width="80%" height="80%" img src="" /></p>
 
 # ❓ WΉY MΛDΣ ƬΉIS BӨƬ?
 
