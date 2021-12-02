@@ -54,10 +54,13 @@ In order to specify the theme, use  *${UltronSitreper.ULTRONIX}carbon <text> -t 
       ];
       var code = ``;
       if (arguments[0] == null && !Últrðñ.isReply) {
-        await ӄʀǟӄɨռʐ
-          .sendMessage(
-            Últrðñ.chatId,
-            `*☢️Últrðñ*\n\nNo input provided.
+        await ӄʀǟӄɨռʐ.sendMessage(
+          Últrðñ.chatId, {
+            url: `https://i.postimg.cc/MGkpdxHT/ltr-Args.png`
+          },
+          MessageType.image, {
+            mimetype: Mimetype.jpeg,
+            caption: `*☢️Últrðñ*\n\nNo input provided.
 Please use the command  
 *${UltronSitreper.ULTRONIX}carbon <text> -t <theme>*  
 or reply to a text message with  
@@ -79,19 +82,18 @@ _solarized (light)_
 _synthwave '84_  *|*  _twilight_
 _verminal_  *|*  _vscode_  
 _yeti_  *|*  _zenburn_`,
-            MessageType.text
-          )
-          .catch((cᴇʀʀᴏʀ) =>
-            ӄʀǟӄɨռʐ.sendMessage(
-              Últrðñ.chatId,
-              `*🎮Últrðñ™* 𝐝𝐢𝐝𝐧'𝐭 𝐰𝐨𝐫𝐤 𝐚𝐬 𝐞𝐱𝐩𝐞𝐜𝐭𝐞𝐝❗
+          }
+        ).catch((cᴇʀʀᴏʀ) =>
+          ӄʀǟӄɨռʐ.sendMessage(
+            Últrðñ.chatId,
+            `*🎮Últrðñ™* 𝐝𝐢𝐝𝐧'𝐭 𝐰𝐨𝐫𝐤 𝐚𝐬 𝐞𝐱𝐩𝐞𝐜𝐭𝐞𝐝❗
 
 💡𝗛𝗲𝗿𝗲 𝗶𝘀 𝗮 𝘀𝗺𝗮𝗹𝗹 𝗲𝗿𝗿𝗼𝗿 𝗿𝗲𝗽𝗼𝗿𝘁 𝗮𝗻𝗱 𝘁𝗼 𝗹𝗼𝗴 𝘁𝗵𝗲 𝗿𝗲𝗽𝗼𝗿𝘁 𝘂𝘀𝗲 ${UltronSitreper.ULTRONIX}𝗿𝗲𝗽𝗼𝗿𝘁
 ⚠️𝗘𝗿𝗿𝗼𝗿
 • ${cᴇʀʀᴏʀ}`,
-              MessageType.text
-            )
-          );
+            MessageType.text
+          )
+        );
         return;
       } else if (Últrðñ.isReply && !Últrðñ.replyMessage) {
         await ӄʀǟӄɨռʐ

@@ -1,6 +1,7 @@
 // ===============================================================================
 // 🎮Últrðñ™ 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..
 // ===============================================================================
+const imdb = require("imdb-api");
 const {
     MessageType,
     Mimetype
@@ -10,8 +11,8 @@ const UltronSitreper = require(`../../Últrðñ/UltronSitreper`);
 // 🎮Últrðñ™ 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..
 // ===============================================================================
 module.exports = {
-    name: `google`,
-    description: `Search anything on google`,
+    name: `imdb`,
+    description: `Search anything on IMDB`,
     ƈʏɮօʀɢʍօʀɛ: `
 google`,
     async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
@@ -35,21 +36,36 @@ google`,
             );
             return;
         }
-        try {
-            await ӄʀǟӄɨռʐ.sendMessage(
-                Últrðñ.chatId, {
-                    url: `https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/2000px-Google_%22G%22_Logo.svg.png`,
-                },
-                MessageType.image, {
-                    mimetype: Mimetype.jpeg,
-                    caption: `
-*🌍𝗚𝗼𝗼𝗴𝗹𝗲𝗱:* ${arguments.join(` `)}
-*💡𝗥𝗲𝘀𝘂𝗹𝘁:* https://google.com/search?q=${arguments.join(`+`)}`
-                }
-            )
-        } catch (err) {
-            console.log(err);
-        }
+        const imob = new imdb.Client({
+            apiKey: UltronSitreper.IMDB
+        });
+        let movie = await imob.get({
+            name: arguments.join(" ")
+        })
+        const Litol = `*💡𝐓𝐢𝐭𝐥𝐞➛*  ${movie.title.toUpperCase()}
+*🕜𝐓𝐢𝐦𝐞➛*  ${movie.runtime}
+*📚𝐆𝐞𝐧𝐫𝐞𝐬➛*  ${movie.genres}
+*😎𝐀𝐜𝐭𝐨𝐫𝐬➛*  ${movie.actors}
+*🙋🏽𝐕𝐨𝐭𝐞𝐬➛*  ${movie.votes}
+*⭐𝐑𝐚𝐭𝐢𝐧𝐠➛*  ${movie.rating}
+*🔩𝐓𝐲𝐩𝐞➛*  ${movie.type}
+*🌐𝐂𝐨𝐮𝐧𝐭𝐫𝐲➛*  ${movie.country}
+*🎥𝐃𝐢𝐫𝐞𝐜𝐭𝐨𝐫➛*  ${movie.director}
+*✒️𝐖𝐫𝐢𝐭𝐞𝐫➛*  ${movie.writer}
+*📜𝐒𝐞𝐫𝐢𝐞𝐬➛*  ${movie.series}
+
+*🔗𝐈𝐦𝐝𝐛𝐮𝐫𝐥➛*  ${movie.imdburl}
+*❓𝐏𝐥𝐨𝐭➛*  ${movie.plot}`
+        console.log(Litol);
+        await ӄʀǟӄɨռʐ.sendMessage(
+            Últrðñ.chatId, {
+                url: movie.poster,
+            },
+            MessageType.image, {
+                mimetype: Mimetype.jpeg,
+                caption: Litol
+            }
+        )
     },
 };
 // ===============================================================================

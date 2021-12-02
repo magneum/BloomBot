@@ -56,24 +56,24 @@ Mute non-admin members of a group. You can even specify the duration using s, m 
           );
         return;
       }
-      if (!arguments[0]) {
-        ӄʀǟӄɨռʐ
-          .groupSettingChange(
-            Últrðñ.chatId,
-            GroupSettingChange.messageSend,
-            true
-          )
-          .catch((cᴇʀʀᴏʀ) =>
-            ӄʀǟӄɨռʐ.sendMessage(
-              Últrðñ.chatId,
-              `*🎮Últrðñ™* 𝐝𝐢𝐝𝐧'𝐭 𝐰𝐨𝐫𝐤 𝐚𝐬 𝐞𝐱𝐩𝐞𝐜𝐭𝐞𝐝❗
+      if (arguments.length === 0) {
+        await ӄʀǟӄɨռʐ.sendMessage(
+          Últrðñ.chatId,
+          "❌",
+          MessageType.text
+        );
+        await ӄʀǟӄɨռʐ.sendMessage(
+          Últrðñ.chatId, {
+            url: `https://i.postimg.cc/MGkpdxHT/ltr-Args.png`
+          },
+          MessageType.image, {
+            mimetype: Mimetype.jpeg,
+            caption: `*⚠️Seems like someone forgot to give Movie/Series name!*
 
-💡𝗛𝗲𝗿𝗲 𝗶𝘀 𝗮 𝘀𝗺𝗮𝗹𝗹 𝗲𝗿𝗿𝗼𝗿 𝗿𝗲𝗽𝗼𝗿𝘁 𝗮𝗻𝗱 𝘁𝗼 𝗹𝗼𝗴 𝘁𝗵𝗲 𝗿𝗲𝗽𝗼𝗿𝘁 𝘂𝘀𝗲 ${UltronSitreper.ULTRONIX}𝗿𝗲𝗽𝗼𝗿𝘁
-⚠️𝗘𝗿𝗿𝗼𝗿
-• ${cᴇʀʀᴏʀ}`,
-              MessageType.text
-            )
-          );
+*Usage Example*
+.imdb <movie/series>`,
+          }
+        );
         ӄʀǟӄɨռʐ
           .sendMessage(
             Últrðñ.chatId,

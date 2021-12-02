@@ -26,9 +26,7 @@ Get Anime Informations From MyAnimeList`,
     }
     const name = arguments.join(` `);
     malScraper.getInfoFromName(name).then(async (data) => {
-      const AnimeInfos = `_ᴘᴏᴡᴇʀᴇᴅ ʙʏ_*🐙ӄʀǟӄɨռʐʟǟɮ*
-
-💡𝐓𝐢𝐭𝐥𝐞: *${data.title}*
+      const AnimeInfos = `💡𝐓𝐢𝐭𝐥𝐞: *${data.title}*
 🧀𝗣𝗿𝗲𝗺𝗶𝗲𝗿𝗲𝗱: _${data.premiered}_
 😈𝗕𝗿𝗼𝗮𝗱𝗰𝗮𝘀𝘁: _${data.broadcast}_
 ❓𝗚𝗲𝗻𝗿𝗲𝘀: _${data.genres}_

@@ -18,6 +18,7 @@ if (fs.existsSync("Últrðñ.env")) {
 const env = {
   ULTRON: process.env.ULTRON === undefined ? "" : process.env.ULTRON,
   HEROKU: process.env.HEROKU === undefined ? false : true,
+  IMDB: process.env.IMDB === undefined ? "5e36f0db" : process.env.IMDB,
   ULTRONIX: "^[.]",
   CCD: process.env.CCD === undefined ? "91" : process.env.CCD,
   OCR: process.env.OCR === undefined ? "9ffb44def388957" : process.env.OCR,

@@ -20,11 +20,23 @@ Use this module to find the lyrics of a song by using  *${UltronSitreper.ULTRONI
       var song = ``;
       if (Últrðñ.isReply) {
         song = Últrðñ.replyMessage;
-      } else if (arguments.length == 0) {
-        ӄʀǟӄɨռʐ.sendMessage(
+      } else if (arguments.length === 0) {
+        await ӄʀǟӄɨռʐ.sendMessage(
           Últrðñ.chatId,
-          `Please enter the song name.`,
+          "❌",
           MessageType.text
+        );
+        await ӄʀǟӄɨռʐ.sendMessage(
+          Últrðñ.chatId, {
+            url: `https://i.postimg.cc/MGkpdxHT/ltr-Args.png`
+          },
+          MessageType.image, {
+            mimetype: Mimetype.jpeg,
+            caption: `*⚠️Seems like someone forgot to give Movie/Series name!*
+
+*Usage Example*
+.imdb <movie/series>`,
+          }
         );
         return;
       } else {

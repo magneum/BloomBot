@@ -17,26 +17,26 @@ Use this module to paste your text to a pastebin (NEKOBIN). Enter text with the 
   async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
     try {
       if (arguments.length === 0 && !Últrðñ.isReply) {
-        await ӄʀǟӄɨռʐ
-          .sendMessage(
-            Últrðñ.chatId,
-            `Please enter a text message along with the command.`,
-            MessageType.text
-          )
-          .catch((cᴇʀʀᴏʀ) =>
-            ӄʀǟӄɨռʐ.sendMessage(
-              Últrðñ.chatId,
-              `*🎮Últrðñ™* 𝐝𝐢𝐝𝐧'𝐭 𝐰𝐨𝐫𝐤 𝐚𝐬 𝐞𝐱𝐩𝐞𝐜𝐭𝐞𝐝❗
+        await ӄʀǟӄɨռʐ.sendMessage(
+          Últrðñ.chatId,
+          "❌",
+          MessageType.text
+        );
+        await ӄʀǟӄɨռʐ.sendMessage(
+          Últrðñ.chatId, {
+            url: `https://i.postimg.cc/MGkpdxHT/ltr-Args.png`
+          },
+          MessageType.image, {
+            mimetype: Mimetype.jpeg,
+            caption: `*⚠️Seems like someone forgot to give Movie/Series name!*
 
-💡𝗛𝗲𝗿𝗲 𝗶𝘀 𝗮 𝘀𝗺𝗮𝗹𝗹 𝗲𝗿𝗿𝗼𝗿 𝗿𝗲𝗽𝗼𝗿𝘁 𝗮𝗻𝗱 𝘁𝗼 𝗹𝗼𝗴 𝘁𝗵𝗲 𝗿𝗲𝗽𝗼𝗿𝘁 𝘂𝘀𝗲 ${UltronSitreper.ULTRONIX}𝗿𝗲𝗽𝗼𝗿𝘁
-⚠️𝗘𝗿𝗿𝗼𝗿
-• ${cᴇʀʀᴏʀ}`,
-              MessageType.text
-            )
-          );
+*Usage Example*
+.imdb <movie/series>`,
+          }
+        );
         return;
       }
-      const processing = await ӄʀǟӄɨռʐ
+      await ӄʀǟӄɨռʐ
         .sendMessage(
           Últrðñ.chatId,
           `Pasting text to nekobin. Please wait...`,

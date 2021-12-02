@@ -28,8 +28,6 @@ async function CyborgRunner() {
   } catch (cᴇʀʀᴏʀ) {
     if (cᴇʀʀᴏʀ instanceof TypeError || cᴇʀʀᴏʀ.message === `given authInfo is null` || cᴇʀʀᴏʀ instanceof SyntaxError) {
       console.log(Kolor.redBright.bold(`Incorrect Session String. Please authenticate again!`));
-      fs.writeFileSync(`./Últrðñ.env`, `ULTRON=`
-        ``);
       process.exit(0);
     } else {
       console.log(Kolor.redBright.bold(`SOMETHING WENT WRONG.\n`));
@@ -74,6 +72,8 @@ async function CyborgRunner() {
     // ===============================================================================
     console.log(Kolor.yellowBright.bold(`----------------------------------------|  Últrðñ  |`));
     console.log(UltronSitreper.ULTRON);
+    console.log(Kolor.yellowBright.bold(`----------------------------------------|  Últrðñ  |`));
+    console.log(UltronSitreper.IMDB);
     console.log(Kolor.yellowBright.bold(`----------------------------------------|  Últrðñ  |`));
     console.log(UltronSitreper.HEROKU);
     console.log(Kolor.yellowBright.bold(`----------------------------------------|  Últrðñ  |`));

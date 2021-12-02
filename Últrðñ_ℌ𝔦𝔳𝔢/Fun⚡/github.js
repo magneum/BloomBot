@@ -16,21 +16,28 @@ module.exports = {
   ƈʏɮօʀɢʍօʀɛ: `
 Get the github profile by command  *${UltronSitreper.ULTRONIX}github <user>*  or replying  *${UltronSitreper.ULTRONIX}github* .`,
   async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
-    var fetching = await ӄʀǟӄɨռʐ.sendMessage(
-      Últrðñ.chatId,
-      `Fetching user details from GitHub. Please wait...`,
-      MessageType.text
-    );
     try {
       let user_name = ``;
       if (Últrðñ.isReply) {
         user_name = Últrðñ.replyMessage;
       } else {
-        if (arguments.length == 0) {
-          ӄʀǟӄɨռʐ.sendMessage(
+        if (arguments.length === 0) {
+          await ӄʀǟӄɨռʐ.sendMessage(
             Últrðñ.chatId,
-            `Please enter the username.`,
+            "❌",
             MessageType.text
+          );
+          await ӄʀǟӄɨռʐ.sendMessage(
+            Últrðñ.chatId, {
+              url: `https://i.postimg.cc/MGkpdxHT/ltr-Args.png`
+            },
+            MessageType.image, {
+              mimetype: Mimetype.jpeg,
+              caption: `*⚠️Seems like someone forgot to give Movie/Series name!*
+
+*Usage Example*
+.imdb <movie/series>`,
+            }
           );
           return;
         }

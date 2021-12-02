@@ -16,11 +16,6 @@ module.exports = {
 Use this module to obtain text from an image by  *${UltronSitreper.ULTRONIX}space*  command.`,
   async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
     try {
-      const processing = await ӄʀǟӄɨռʐ.sendMessage(
-        Últrðñ.chatId,
-        `Processing. Please wait...`,
-        MessageType.text
-      );
       if (Últrðñ.isImage) {
         var replyChatObject = {
           message: chat.message,

@@ -18,6 +18,26 @@ module.exports = {
 Get the first 10 recommendations from YouTube with their authorname, timestamp and link. Mention the FetchedLinks that are required to be searched along with the command.`,
   async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
     try {
+      if (arguments.length === 0) {
+        await ӄʀǟӄɨռʐ.sendMessage(
+          Últrðñ.chatId,
+          "❌",
+          MessageType.text
+        );
+        await ӄʀǟӄɨռʐ.sendMessage(
+          Últrðñ.chatId, {
+            url: `https://i.postimg.cc/MGkpdxHT/ltr-Args.png`
+          },
+          MessageType.image, {
+            mimetype: Mimetype.jpeg,
+            caption: `*⚠️Seems like someone forgot to give Movie/Series name!*
+
+*Usage Example*
+.imdb <movie/series>`,
+          }
+        );
+        return;
+      }
       const FetchedLink = await yts(arguments.join(` `));
       const videos = FetchedLink.videos.slice(0, 5);
       var Fetched = ``;

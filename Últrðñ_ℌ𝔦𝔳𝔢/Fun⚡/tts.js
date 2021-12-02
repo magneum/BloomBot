@@ -31,12 +31,25 @@ You can also reply to a text message with syntax  *${UltronSitreper.ULTRONIX}tr 
       }
       text += arguments[i] + ` `;
     }
-    if (text === ``) {
+    if (arguments.length === 0) {
       await ӄʀǟӄɨռʐ.sendMessage(
         Últrðñ.chatId,
-        `No input was detected. Please use *${UltronSitreper.ULTRONIX}help tts* for info on how to use this module.`,
+        "❌",
         MessageType.text
       );
+      await ӄʀǟӄɨռʐ.sendMessage(
+        Últrðñ.chatId, {
+          url: `https://i.postimg.cc/MGkpdxHT/ltr-Args.png`
+        },
+        MessageType.image, {
+          mimetype: Mimetype.jpeg,
+          caption: `*⚠️Seems like someone forgot to give Movie/Series name!*
+
+*Usage Example*
+.imdb <movie/series>`,
+        }
+      );
+      return;
     }
     if (text.length > 200) {
       await ӄʀǟӄɨռʐ.sendMessage(

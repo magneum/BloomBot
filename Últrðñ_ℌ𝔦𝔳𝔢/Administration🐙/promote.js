@@ -54,14 +54,22 @@ For example- *${UltronSitreper.ULTRONIX}promote 9861212121*`,
             if (arguments[0][0] === `@` || arguments[0][0] === `+`) {
               JoinIDNum = arguments[0].substring(1, arguments[0].length + 1);
             } else {
-              ӄʀǟӄɨռʐ.sendMessage(
+              await ӄʀǟӄɨռʐ.sendMessage(
                 Últrðñ.chatId,
-                `*Enter valid contact number.* 
-Approved Syntax:
-1. XXXXXXXXXX
-2. Tag the person
-3. +(YYY)XXXXXXXXXX _(YY- Country Code, without zeros)_`,
+                "❌",
                 MessageType.text
+              );
+              await ӄʀǟӄɨռʐ.sendMessage(
+                Últrðñ.chatId, {
+                  url: `https://i.postimg.cc/MGkpdxHT/ltr-Args.png`
+                },
+                MessageType.image, {
+                  mimetype: Mimetype.jpeg,
+                  caption: `*⚠️Seems like someone forgot to give Movie/Series name!*
+      
+      *Usage Example*
+      .imdb <movie/series>`,
+                }
               );
               return;
             }
@@ -70,14 +78,22 @@ Approved Syntax:
           }
 
           if (JoinIDNum.length < 8 || JoinIDNum.length > 13) {
-            ӄʀǟӄɨռʐ.sendMessage(
+            await ӄʀǟӄɨռʐ.sendMessage(
               Últrðñ.chatId,
-              `*Enter valid contact number.* 
-Approved Syntax:
-1. XXXXXXXXXX
-2. Tag the person
-3. +(YYY)XXXXXXXXXX _(YY- Country Code, without zeros)_`,
+              "❌",
               MessageType.text
+            );
+            await ӄʀǟӄɨռʐ.sendMessage(
+              Últrðñ.chatId, {
+                url: `https://i.postimg.cc/MGkpdxHT/ltr-Args.png`
+              },
+              MessageType.image, {
+                mimetype: Mimetype.jpeg,
+                caption: `*⚠️Seems like someone forgot to give Movie/Series name!*
+    
+    *Usage Example*
+    .imdb <movie/series>`,
+              }
             );
             return;
           } else if (JoinIDNum.length === 10) {

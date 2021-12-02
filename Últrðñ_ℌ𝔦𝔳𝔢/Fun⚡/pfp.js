@@ -15,11 +15,6 @@ module.exports = {
   ƈʏɮօʀɢʍօʀɛ: `
 Get the profile picture of the group in a group conversation or the profile picture of Últrðñ itself in personal chat.`,
   async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
-    const processing = await ӄʀǟӄɨռʐ.sendMessage(
-      Últrðñ.chatId,
-      `Getting display picture...`,
-      MessageType.text
-    );
     try {
       let url = await ӄʀǟӄɨռʐ.getProfilePicture(Últrðñ.chatId);
       await ӄʀǟӄɨռʐ.sendMessage(
