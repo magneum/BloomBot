@@ -14,7 +14,7 @@ module.exports = {
   commandType: `info`,
   description: `Get the command list and info on modules`,
   ƈʏɮօʀɢʍօʀɛ: `This module is used to get info on other modules and their triggers.`,
-  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments, UltronSitrep) {
+  async handle(ӄʀǟӄɨռʐ, Últrðñ) {
     var PreÚltrðñReg = new RegExp(UltronSitreper.ULTRONIX, `g`);
     var PreÚltrðñ = /\/\^\[(.)+\]\/\g/g.exec(PreÚltrðñReg)[1];
     ӄʀǟӄɨռʐ
