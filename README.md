@@ -29,9 +29,9 @@ After 🎮Últrðñ™-Version4
 
 # 𝕴𝖓𝖘𝖕𝖎𝖗𝖆𝖙𝖎𝖔𝖓
 ```
-)¤•• ʙᴀɪʟᴇʏꜱ ᴡʜᴀᴛꜱᴀᴘᴘ ʟɪʙʀᴀʀʏ
-)¤•• ᴡʜᴀᴛꜱᴀᴘᴘ ᴡᴇʙ ᴀᴘɪ
-)¤•• ᴘʀɪɴᴄᴇ-ᴍᴇɴᴅɪʀᴀᴛᴛᴀ ꜱᴄ
+)¤•• ʙᴀɪʟᴇʏꜱ ᴡʜᴀᴛꜱᴀᴘᴘ ʟɪʙʀᴀʀʏ [https://github.com/adiwajshing/Baileys]
+)¤•• ᴡʜᴀᴛꜱᴀᴘᴘ ᴡᴇʙ ᴀᴘɪ [https://github.com/pedroslopez/whatsapp-web.js/]
+)¤•• ᴘʀɪɴᴄᴇ-ᴍᴇɴᴅɪʀᴀᴛᴛᴀ ꜱᴄ [https://github.com/BotsAppOfficial/BotsApp]
 )¤•• ᴛᴇʟᴇɢʀᴀᴍ,ᴅɪꜱᴄᴏʀᴅ ʙᴏᴛꜱ ᴏꜰ ᴍʏ ᴏᴡɴ ʟᴍᴀᴏ
 ```
 
