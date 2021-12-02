@@ -7,11 +7,11 @@ const {
 } = require(`@adiwajshing/baileys`);
 const ᴋʀᴀᴋɪɴᴢᴋᴏɴ = require(`./ƈʏӄօռ/sessionString`);
 const Welcmr = require(`./Últrðñ/wlcmr`);
-const config = require(`./Últrðñ/config`);
+const UltronSitreper = require(`./Últrðñ/UltronSitreper`);
 const ÚltrðñSudo = [`block`, `unblock`];
 const Users = require(`./Últrðñ/user`);
 const wa = require(`./ƈʏӄօռ/helper`);
-const Cyborgsql = config.POSTQL;
+const Cyborgsql = UltronSitreper.POSTQL;
 const Kolor = require(`chalk`);
 const fs = require(`fs`);
 console.clear();
@@ -23,7 +23,7 @@ async function CyborgRunner() {
   ӄʀǟӄɨռʐ.logger.level = `error`;
   var UltronSitrep = new Map();
   try {
-    var session = ᴋʀᴀᴋɪɴᴢᴋᴏɴ.restoreSession(config.ULTRON);
+    var session = ᴋʀᴀᴋɪɴᴢᴋᴏɴ.restoreSession(UltronSitreper.ULTRON);
     ӄʀǟӄɨռʐ.loadAuthInfo(session);
   } catch (cᴇʀʀᴏʀ) {
     if (cᴇʀʀᴏʀ instanceof TypeError || cᴇʀʀᴏʀ.message === `given authInfo is null` || cᴇʀʀᴏʀ instanceof SyntaxError) {
@@ -138,7 +138,7 @@ ______/ |__/    ___/  |__/        ______/ |__/  |__/`),
       `masturbation`, `netorare`, `orgy`, `panties`, `pussy`, `school`, `tentacles`, `thighs`, `uniform`, `yuri`,
     ];
     if (Últrðñ.isCmd && !Últrðñ.fromMe && !Últrðñ.isSenderSUDO) {
-      if (config.PRIVACY === `public`) {
+      if (UltronSitreper.PRIVACY === `public`) {
         if (ÚltrðñRights.indexOf(Últrðñ.commandName) >= 0 && !Últrðñ.isSenderGroupAdmin) {
           console.log(
             Kolor.redBright.bold(`⧪ɪɴꜰᴏ💡⬰  ÚltrðñRights `),
@@ -178,7 +178,7 @@ If you are keen to use my features, you can deploy Últrðñ on your own account
             );
           }
         }
-      } else if (config.PRIVACY === `private` && !Últrðñ.isSenderSUDO) {
+      } else if (UltronSitreper.PRIVACY === `private` && !Últrðñ.isSenderSUDO) {
         console.log(
           Kolor.redBright.bold(`⧪ɪɴꜰᴏ💡⬰  commmand `),
           Kolor.greenBright.bold(`${Últrðñ.commandName}`),

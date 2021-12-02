@@ -1,10 +1,10 @@
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
-const config = require(`../../Últrðñ/config`);
+const UltronSitreper = require(`../../Últrðñ/UltronSitreper`);
 const got = require(`got`);
 module.exports = {
   name: `github`,
   description: `Find Github Profile`,
-  ƈʏɮօʀɢʍօʀɛ: `Get the github profile by command  *${config.ULTRONIX}github <user>*  or replying  *${config.ULTRONIX}github* .`,
+  ƈʏɮօʀɢʍօʀɛ: `Get the github profile by command  *${UltronSitreper.ULTRONIX}github <user>*  or replying  *${UltronSitreper.ULTRONIX}github* .`,
   async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
     var fetching = await ӄʀǟӄɨռʐ.sendMessage(
       Últrðñ.chatId,

@@ -1,6 +1,6 @@
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
-const config = require(`../../Últrðñ/config`);
-const apiKey = config.WAPI;
+const UltronSitreper = require(`../../Últrðñ/UltronSitreper`);
+const apiKey = UltronSitreper.WAPI;
 const https = require(`https`);
 module.exports = {
   name: `weather`,

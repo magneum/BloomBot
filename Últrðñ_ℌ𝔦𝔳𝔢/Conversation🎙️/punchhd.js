@@ -1,6 +1,6 @@
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const Anime_Images = require(`anime-images-api`);
-const config = require(`../../Últrðñ/config`);
+const UltronSitreper = require(`../../Últrðñ/UltronSitreper`);
 const download = require(`download-file`);
 const ffmpeg = require(`fluent-ffmpeg`);
 const Kolor = require(`chalk`);

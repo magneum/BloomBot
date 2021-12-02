@@ -1,5 +1,5 @@
 const { MessageType } = require(`@adiwajshing/baileys`);
-const config = require(`../../Últrðñ/config`);
+const UltronSitreper = require(`../../Últrðñ/UltronSitreper`);
 const ffmpeg = require(`fluent-ffmpeg`);
 const fs = require(`fs`);
 module.exports = {

@@ -1,5 +1,5 @@
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
-const config = require(`../../Últrðñ/config`);
+const UltronSitreper = require(`../../Últrðñ/UltronSitreper`);
 module.exports = {
   name: `pfp`,
   description: `Get display picture`,

@@ -1,5 +1,5 @@
 const { MessageType } = require(`@adiwajshing/baileys`);
-const config = require(`../../Últrðñ/config`);
+const UltronSitreper = require(`../../Últrðñ/UltronSitreper`);
 const yts = require(`yt-search`);
 module.exports = {
   name: `yt`,

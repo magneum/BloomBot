@@ -1,5 +1,5 @@
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
-const config = require(`../../Últrðñ/config`);
+const UltronSitreper = require(`../../Últrðñ/UltronSitreper`);
 const akaneko = require(`akaneko`);
 module.exports = {
   name: `femdom`,

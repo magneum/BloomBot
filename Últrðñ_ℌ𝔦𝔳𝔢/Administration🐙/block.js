@@ -1,5 +1,5 @@
 const { MessageType } = require(`@adiwajshing/baileys`);
-const config = require(`../../Últrðñ/config`);
+const UltronSitreper = require(`../../Últrðñ/UltronSitreper`);
 module.exports = {
   name: `block`,
   description: `Block contact`,
@@ -21,7 +21,7 @@ module.exports = {
       } else {
         contact = async (arguments, ӄʀǟӄɨռʐ, Últrðñ) => {
           var JoinIDNum = ``;
-          var countryCode = config.COUNTRY_CODE;
+          var countryCode = UltronSitreper.COUNTRY_CODE;
           if (isNaN(arguments[0]) || arguments[0][0] === `+`) {
             if (arguments[0][0] === `@` || arguments[0][0] === `+`) {
               JoinIDNum = arguments[0].substring(1, arguments[0].length + 1);

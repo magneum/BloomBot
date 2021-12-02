@@ -1,5 +1,5 @@
 const { GroupSettingChange, MessageType } = require(`@adiwajshing/baileys`);
-const config = require(`../../Últrðñ/config`);
+const UltronSitreper = require(`../../Últrðñ/UltronSitreper`);
 module.exports = {
   name: `unmute`,
   description: `Unmute group chat`,
@@ -10,7 +10,7 @@ module.exports = {
         ӄʀǟӄɨռʐ
           .sendMessage(
             Últrðñ.chatId,
-            `*${config.ULTRONIX}unmute*  command is only applicable for a group chat.`,
+            `*${UltronSitreper.ULTRONIX}unmute*  command is only applicable for a group chat.`,
             MessageType.text
           )
           .catch((cᴇʀʀᴏʀ) =>
@@ -60,7 +60,7 @@ module.exports = {
       ӄʀǟӄɨռʐ
         .sendMessage(
           Últrðñ.chatId,
-          `Chat permissions changed to  *all group members*${config.ULTRONIX}`,
+          `Chat permissions changed to  *all group members*${UltronSitreper.ULTRONIX}`,
           MessageType.text
         )
         .catch((cᴇʀʀᴏʀ) =>

@@ -1,9 +1,9 @@
 const { MessageType } = require(`@adiwajshing/baileys`);
-const config = require(`../../Últrðñ/config`);
+const UltronSitreper = require(`../../Últrðñ/UltronSitreper`);
 module.exports = {
   name: `remove`,
   description: `Module to remove a person from a group.`,
-  ƈʏɮօʀɢʍօʀɛ: `Use this module to remove people from a group by tagging them  *${config.ULTRONIX}remove @<person-to-remove>*  or replying to them  *${config.ULTRONIX}remove*${config.ULTRONIX}`,
+  ƈʏɮօʀɢʍօʀɛ: `Use this module to remove people from a group by tagging them  *${UltronSitreper.ULTRONIX}remove @<person-to-remove>*  or replying to them  *${UltronSitreper.ULTRONIX}remove*${UltronSitreper.ULTRONIX}`,
   async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
     try {
       if (!Últrðñ.isGroup) {
@@ -166,7 +166,7 @@ module.exports = {
         ӄʀǟӄɨռʐ
           .sendMessage(
             Últrðñ.chatId,
-            `Reply to the person you want to remove or tag them.\n\nFor instance,  *${config.ULTRONIX}remove @<person-to-remove>*  or reply using  *${config.ULTRONIX}remove*${config.ULTRONIX}`,
+            `Reply to the person you want to remove or tag them.\n\nFor instance,  *${UltronSitreper.ULTRONIX}remove @<person-to-remove>*  or reply using  *${UltronSitreper.ULTRONIX}remove*${UltronSitreper.ULTRONIX}`,
             MessageType.text
           )
           .catch((cᴇʀʀᴏʀ) =>
@@ -191,7 +191,7 @@ module.exports = {
           ӄʀǟӄɨռʐ
             .sendMessage(
               Últrðñ.chatId,
-              `Reply to the person you want to remove or tag them.\n\nFor instance,  *${config.ULTRONIX}remove @<person-to-remove>*  or reply using  *${config.ULTRONIX}remove*${config.ULTRONIX}`,
+              `Reply to the person you want to remove or tag them.\n\nFor instance,  *${UltronSitreper.ULTRONIX}remove @<person-to-remove>*  or reply using  *${UltronSitreper.ULTRONIX}remove*${UltronSitreper.ULTRONIX}`,
               MessageType.text
             )
             .catch((cᴇʀʀᴏʀ) =>
@@ -280,7 +280,7 @@ module.exports = {
       ӄʀǟӄɨռʐ
         .sendMessage(
           Últrðñ.chatId,
-          `Reply to the person you want to remove or tag them.\n\nFor instance,  *${config.ULTRONIX}remove @<person-to-remove>*  or reply using  *${config.ULTRONIX}remove*${config.ULTRONIX}`,
+          `Reply to the person you want to remove or tag them.\n\nFor instance,  *${UltronSitreper.ULTRONIX}remove @<person-to-remove>*  or reply using  *${UltronSitreper.ULTRONIX}remove*${UltronSitreper.ULTRONIX}`,
           MessageType.text
         )
         .catch((cᴇʀʀᴏʀ) =>

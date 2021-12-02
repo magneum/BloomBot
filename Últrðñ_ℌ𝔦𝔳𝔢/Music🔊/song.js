@@ -1,5 +1,5 @@
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
-const config = require(`../../Últrðñ/config`);
+const UltronSitreper = require(`../../Últrðñ/UltronSitreper`);
 const ffmpeg = require(`fluent-ffmpeg`);
 const ytdl = require(`ytdl-core`);
 const yts = require(`yt-search`);

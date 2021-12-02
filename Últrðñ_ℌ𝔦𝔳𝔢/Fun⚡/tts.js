@@ -1,11 +1,11 @@
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
-const config = require(`../../Últrðñ/config`);
+const UltronSitreper = require(`../../Últrðñ/UltronSitreper`);
 const googleTTS = require(`google-tts-api`);
 module.exports = {
   name: `tts`,
   description: `Text To Speech.`,
-  ƈʏɮօʀɢʍօʀɛ: `Use  *${config.ULTRONIX}tts <text>*  or  *${config.ULTRONIX}tts <text> | <language_code>*  to convert text to speech.
-You can also reply to a text message with syntax  *${config.ULTRONIX}tr <language>*  to translate text.`,
+  ƈʏɮօʀɢʍօʀɛ: `Use  *${UltronSitreper.ULTRONIX}tts <text>*  or  *${UltronSitreper.ULTRONIX}tts <text> | <language_code>*  to convert text to speech.
+You can also reply to a text message with syntax  *${UltronSitreper.ULTRONIX}tr <language>*  to translate text.`,
   async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
     await ӄʀǟӄɨռʐ.sendMessage(
       Últrðñ.chatId,
@@ -24,7 +24,7 @@ You can also reply to a text message with syntax  *${config.ULTRONIX}tr <languag
     if (text === ``) {
       await ӄʀǟӄɨռʐ.sendMessage(
         Últrðñ.chatId,
-        `No input was detected. Please use *${config.ULTRONIX}help tts* for info on how to use this module.`,
+        `No input was detected. Please use *${UltronSitreper.ULTRONIX}help tts* for info on how to use this module.`,
         MessageType.text
       );
     }

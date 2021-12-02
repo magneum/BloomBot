@@ -1,9 +1,9 @@
 const { MessageType } = require(`@adiwajshing/baileys`);
-const config = require(`../../Últrðñ/config`);
+const UltronSitreper = require(`../../Últrðñ/UltronSitreper`);
 module.exports = {
   name: `demote`,
   description: `Demote a person from admin`,
-  ƈʏɮօʀɢʍօʀɛ: `Use this module to demote a person from admin by entering the person's mobile number. Valid Syntaxes -\n    1. XXXXXXXXXX\n    2. YYXXXXXXXXXX ()\n\nFor example -\n*${config.ULTRONIX}demote 9861212121*`,
+  ƈʏɮօʀɢʍօʀɛ: `Use this module to demote a person from admin by entering the person's mobile number. Valid Syntaxes -\n    1. XXXXXXXXXX\n    2. YYXXXXXXXXXX ()\n\nFor example -\n*${UltronSitreper.ULTRONIX}demote 9861212121*`,
   async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
     try {
       if (!Últrðñ.isGroup) {
@@ -37,7 +37,7 @@ module.exports = {
       } else {
         var contact = async (arguments, ӄʀǟӄɨռʐ, Últrðñ) => {
           var JoinIDNum = ``;
-          var countryCode = config.COUNTRY_CODE;
+          var countryCode = UltronSitreper.COUNTRY_CODE;
           if (isNaN(arguments[0]) || arguments[0][0] === `+`) {
             if (arguments[0][0] === `@` || arguments[0][0] === `+`) {
               JoinIDNum = arguments[0].substring(1, arguments[0].length + 1);

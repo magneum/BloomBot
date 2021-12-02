@@ -1,5 +1,5 @@
 const { MessageType } = require(`@adiwajshing/baileys`);
-const config = require(`../../Últrðñ/config`);
+const UltronSitreper = require(`../../Últrðñ/UltronSitreper`);
 module.exports = {
   name: `alive`,
   description: `Check if bot is online.`,
@@ -10,7 +10,7 @@ module.exports = {
         .sendMessage(
           Últrðñ.chatId,
           `🐞 Últrðñ has been integrated successfully. 🐞
-Use the   *${config.ULTRONIX}help*   command to get a list of plugins that will make your WhatsApp experience much easier.`,
+Use the   *${UltronSitreper.ULTRONIX}help*   command to get a list of plugins that will make your WhatsApp experience much easier.`,
           MessageType.text
         )
         .catch((cᴇʀʀᴏʀ) =>

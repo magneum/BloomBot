@@ -1,10 +1,10 @@
 const { MessageType } = require(`@adiwajshing/baileys`);
 const ocrSpace = require(`ocr-space-api-wrapper`);
-const config = require(`../../Últrðñ/config`);
+const UltronSitreper = require(`../../Últrðñ/UltronSitreper`);
 module.exports = {
   name: `read`,
   description: `Optical Character Recognition`,
-  ƈʏɮօʀɢʍօʀɛ: `Use this module to obtain text from an image by  *${config.ULTRONIX}space*  command.`,
+  ƈʏɮօʀɢʍօʀɛ: `Use this module to obtain text from an image by  *${UltronSitreper.ULTRONIX}space*  command.`,
   async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
     try {
       const processing = await ӄʀǟӄɨռʐ.sendMessage(
@@ -24,7 +24,7 @@ module.exports = {
         );
         try {
           const text = await ocrSpace(filePath, {
-            apiKey: config.OCR,
+            apiKey: UltronSitreper.OCR,
           });
           var Msg = text.ParsedResults[0].ParsedText;
           if (Msg === ``) {
@@ -58,7 +58,7 @@ module.exports = {
         );
         try {
           const text = await ocrSpace(filePath, {
-            apiKey: config.OCR,
+            apiKey: UltronSitreper.OCR,
           });
           var Msg = text.ParsedResults[0].ParsedText;
           if (Msg === ``) {

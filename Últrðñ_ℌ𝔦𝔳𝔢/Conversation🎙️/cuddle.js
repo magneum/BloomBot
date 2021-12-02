@@ -1,6 +1,9 @@
-const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
+const {
+  MessageType,
+  Mimetype
+} = require(`@adiwajshing/baileys`);
 const Anime_Images = require(`anime-images-api`);
-const config = require(`../../Últrðñ/config`);
+const UltronSitreper = require(`../../Últrðñ/UltronSitreper`);
 const download = require(`download-file`);
 const ffmpeg = require(`fluent-ffmpeg`);
 const Kolor = require(`chalk`);
@@ -11,13 +14,15 @@ module.exports = {
   description: `I know you like anime cuddle`,
   ƈʏɮօʀɢʍօʀɛ: `I know you like anime cuddle`,
   async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
-    let { image } = await API.sfw.cuddle();
+    let {
+      image
+    } = await API.sfw.cuddle();
     if (image === undefined) {
       return await ӄʀǟӄɨռʐ.sendMessage(
-        Últrðñ.chatId,
-        { url: `https://i.postimg.cc/KcNwHtZt/ltr.png` },
-        MessageType.image,
-        {
+        Últrðñ.chatId, {
+          url: `https://i.postimg.cc/KcNwHtZt/ltr.png`
+        },
+        MessageType.image, {
           mimetype: Mimetype.png,
           caption: `Seems Like No Image Was Found.\nPlease Try Again Later!`,
         }
@@ -25,8 +30,7 @@ module.exports = {
     } else {
       console.log(image);
       download(
-        image,
-        {
+        image, {
           directory: `./ᴛᴇᴍᴘ/`,
           filename: `cuddle-${chat.key.id}.gif`,
         },

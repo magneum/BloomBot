@@ -1,5 +1,5 @@
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
-const config = require(`../../Últrðñ/config`);
+const UltronSitreper = require(`../../Últrðñ/UltronSitreper`);
 const anime = require("anime-actions");
 module.exports = {
   name: `highfive`,

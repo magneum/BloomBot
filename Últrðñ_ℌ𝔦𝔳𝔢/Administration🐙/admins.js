@@ -1,5 +1,5 @@
 const { MessageType } = require(`@adiwajshing/baileys`);
-const config = require(`../../Últrðñ/config`);
+const UltronSitreper = require(`../../Últrðñ/UltronSitreper`);
 module.exports = {
   name: `admins`,
   description: `Tag admins`,
@@ -10,7 +10,7 @@ module.exports = {
         ӄʀǟӄɨռʐ
           .sendMessage(
             Últrðñ.chatId,
-            `*${config.ULTRONIX}admins*  command is only applicable for group chats.`,
+            `*${UltronSitreper.ULTRONIX}admins*  command is only applicable for group chats.`,
             MessageType.text
           )
           .catch((cᴇʀʀᴏʀ) =>

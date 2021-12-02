@@ -1,5 +1,8 @@
-const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
-const config = require(`../../Últrðñ/config`);
+const {
+  MessageType,
+  Mimetype
+} = require(`@adiwajshing/baileys`);
+const UltronSitreper = require(`../../Últrðñ/UltronSitreper`);
 const malScraper = require(`mal-scraper`);
 module.exports = {
   name: `anime`,
@@ -42,10 +45,13 @@ module.exports = {
 🎯𝗜𝗱: _${data.id}_
 📥𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱: _${data.url}_`;
       await ӄʀǟӄɨռʐ.sendMessage(
-        Últrðñ.chatId,
-        { url: data.picture },
-        MessageType.image,
-        { mimetype: Mimetype.jpeg, caption: AnimeInfos }
+        Últrðñ.chatId, {
+          url: data.picture
+        },
+        MessageType.image, {
+          mimetype: Mimetype.jpeg,
+          caption: AnimeInfos
+        }
       );
     });
   },

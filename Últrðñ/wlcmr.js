@@ -1,5 +1,5 @@
 const { DataTypes } = require(`sequelize`);
-const config = require("./config");
+const config = require("./UltronSitreper");
 const sequelize = config.POSTQL;
 const Greeting = sequelize.define(
   "Greeting",

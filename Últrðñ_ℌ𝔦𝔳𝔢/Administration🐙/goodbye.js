@@ -1,10 +1,10 @@
 const { MessageType } = require(`@adiwajshing/baileys`);
 const Greetings = require(`../../Últrðñ/wlcmr`);
-const config = require(`../../Últrðñ/config`);
+const UltronSitreper = require(`../../Últrðñ/UltronSitreper`);
 module.exports = {
   name: `goodbye`,
   description: `A goodbye message for group chat whenever someone leaves.`,
-  ƈʏɮօʀɢʍօʀɛ: `A goodbye message will be sent when any member leaves the group. It can be an image, video, gif with caption or just a text message.\n\nUse this module to either set, update or delete the existing message.\n\nThe goodbye option can be disabled but saved using the  *${config.ULTRONIX}goodbye  off*  command. In order to delete the existing message, use  *${config.ULTRONIX}goodbye  delete*${config.ULTRONIX}  Do note, the goodbye option is still enabled after you use the delete option.`,
+  ƈʏɮօʀɢʍօʀɛ: `A goodbye message will be sent when any member leaves the group. It can be an image, video, gif with caption or just a text message.\n\nUse this module to either set, update or delete the existing message.\n\nThe goodbye option can be disabled but saved using the  *${UltronSitreper.ULTRONIX}goodbye  off*  command. In order to delete the existing message, use  *${UltronSitreper.ULTRONIX}goodbye  delete*${UltronSitreper.ULTRONIX}  Do note, the goodbye option is still enabled after you use the delete option.`,
   async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
     try {
       if (!Últrðñ.isGroup) {

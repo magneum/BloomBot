@@ -1,10 +1,10 @@
 const translate = require(`@vitalets/google-translate-api`);
 const { MessageType } = require(`@adiwajshing/baileys`);
-const config = require(`../../Últrðñ/config`);
+const UltronSitreper = require(`../../Últrðñ/UltronSitreper`);
 module.exports = {
   name: `tr`,
   description: `Language Translator`,
-  ƈʏɮօʀɢʍօʀɛ: `Use  *${config.ULTRONIX}tr <text> | <language>*  to translate text to the specified language. You can also reply to a text message with syntax  *${config.ULTRONIX}tr <language>*  to translate text.
+  ƈʏɮօʀɢʍօʀɛ: `Use  *${UltronSitreper.ULTRONIX}tr <text> | <language>*  to translate text to the specified language. You can also reply to a text message with syntax  *${UltronSitreper.ULTRONIX}tr <language>*  to translate text.
 If you do not specify a language, it defaults to <English class=''></English>`,
   async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
     const processing = await ӄʀǟӄɨռʐ
@@ -34,7 +34,7 @@ If you do not specify a language, it defaults to <English class=''></English>`,
         await ӄʀǟӄɨռʐ
           .sendMessage(
             Últrðñ.chatId,
-            `Use  *${config.ULTRONIX}tr <text> | <language>*  to translate text to the specified language. You can also reply to a text message with syntax  *${config.ULTRONIX}tr <language>*  to translate text.\nIf you do not specify a language, it defaults to <English class=''></English>`,
+            `Use  *${UltronSitreper.ULTRONIX}tr <text> | <language>*  to translate text to the specified language. You can also reply to a text message with syntax  *${UltronSitreper.ULTRONIX}tr <language>*  to translate text.\nIf you do not specify a language, it defaults to <English class=''></English>`,
             MessageType.text
           )
           .catch((cᴇʀʀᴏʀ) =>

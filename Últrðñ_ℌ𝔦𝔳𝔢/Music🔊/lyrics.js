@@ -1,10 +1,10 @@
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
-const config = require(`../../Últrðñ/config`);
+const UltronSitreper = require(`../../Últrðñ/UltronSitreper`);
 const got = require(`got`);
 module.exports = {
   name: `lyrics`,
   description: `Module to find lyrics of song`,
-  ƈʏɮօʀɢʍօʀɛ: `Use this module to find the lyrics of a song by using  *${config.ULTRONIX}lyrics*  command.`,
+  ƈʏɮօʀɢʍօʀɛ: `Use this module to find the lyrics of a song by using  *${UltronSitreper.ULTRONIX}lyrics*  command.`,
   async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
     try {
       var song = ``;

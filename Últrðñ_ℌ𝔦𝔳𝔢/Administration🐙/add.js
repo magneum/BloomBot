@@ -1,5 +1,5 @@
 const { MessageType } = require(`@adiwajshing/baileys`);
-const config = require(`../../Últrðñ/config`);
+const UltronSitreper = require(`../../Últrðñ/UltronSitreper`);
 module.exports = {
   name: `add`,
   description: `Module to add a person to a group.`,
@@ -7,7 +7,7 @@ module.exports = {
 1. XXXXXXXXXX
 2. YYXXXXXXXXXX ()
 For example -
-*${config.ULTRONIX}add 9861212121*`,
+*${UltronSitreper.ULTRONIX}add 9861212121*`,
   async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
     try {
       if (!Últrðñ.isGroup) {
@@ -60,7 +60,7 @@ For example -
         ӄʀǟӄɨռʐ
           .sendMessage(
             Últrðñ.chatId,
-            `Enter the number you want to add.\n\nFor instance,  *${config.ULTRONIX}add <NUMBER>* .`,
+            `Enter the number you want to add.\n\nFor instance,  *${UltronSitreper.ULTRONIX}add <NUMBER>* .`,
             MessageType.text
           )
           .catch((cᴇʀʀᴏʀ) =>
@@ -84,7 +84,7 @@ For example -
         ӄʀǟӄɨռʐ
           .sendMessage(
             Últrðñ.chatId,
-            `Valid formats -\n    1. XXXXXXXXXX\n    2. YYXXXXXXXXXX\n\nFor example-\n*${config.ULTRONIX}add 9861212121*\n*${config.ULTRONIX}add 919861212121*`,
+            `Valid formats -\n    1. XXXXXXXXXX\n    2. YYXXXXXXXXXX\n\nFor example-\n*${UltronSitreper.ULTRONIX}add 9861212121*\n*${UltronSitreper.ULTRONIX}add 919861212121*`,
             MessageType.text
           )
           .catch((cᴇʀʀᴏʀ) =>

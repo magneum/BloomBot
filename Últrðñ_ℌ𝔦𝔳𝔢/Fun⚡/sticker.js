@@ -1,5 +1,5 @@
 const { MessageType, MimetypeMap } = require(`@adiwajshing/baileys`);
-const config = require(`../../Últrðñ/config`);
+const UltronSitreper = require(`../../Últrðñ/UltronSitreper`);
 const ffmpeg = require(`fluent-ffmpeg`);
 const { JSDOM } = require(`jsdom`);
 const { window } = new JSDOM();
@@ -7,7 +7,7 @@ const fs = require(`fs`);
 module.exports = {
   name: `sticker`,
   description: `Module to convert image to sticker`,
-  ƈʏɮօʀɢʍօʀɛ: `Use this module to convert any image from your chat to a sticker. Reply to an image message with the command  *${config.ULTRONIX}sticker*  to convert and send that image as a sticker.`,
+  ƈʏɮօʀɢʍօʀɛ: `Use this module to convert any image from your chat to a sticker. Reply to an image message with the command  *${UltronSitreper.ULTRONIX}sticker*  to convert and send that image as a sticker.`,
   async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
     try {
       const convertToSticker = async (imageId, replyChat) => {
