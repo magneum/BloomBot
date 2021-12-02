@@ -1,6 +1,6 @@
 [![Open Source Love svg3](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)<img align="centre" src="https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg" alt="Krakinz"/><img align="centre" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"/>
 
-# 『 *🎮Últrðñ™*-V1 』
+# 『 *🎮Últrðñ™-Version1* 』
 *> ʏᴏᴜʀ ᴀꜱꜱɪꜱꜱᴛᴀɴᴛ ꜰᴏʀ ᴍᴀᴋɪɴɢ ʙᴏʀɪɴɢ ᴡʜᴀᴛꜱᴀᴘᴘ ᴀ ʙᴇᴛᴛᴇʀ ᴀᴅᴠᴀɴᴄᴇ ᴀᴘᴘ!*
 *Stable Version from Version 4*
 
@@ -8,7 +8,7 @@
   <img src="https://github.com/Krakinz/Ultron/blob/KrakinzLab/%C3%9Altr%C3%B0%C3%B1/%C3%9Altr%C3%B0%C3%B1.png" height="400px"/>
 </p>
 
-# ❓ WΉY MΛDΣ ƬΉIS BӨƬ?
+# ❓ 𝖂𝖍𝖞 𝕸𝖆𝖉𝖊 𝕿𝖍𝖎𝖘 𝕭𝖔𝖙?
 
 ```sh
 💻 𝗪𝗵𝗮𝘁 𝗖𝗮𝗻 𝗕𝗼𝘁 𝗗𝗼???
@@ -35,14 +35,14 @@ After 🎮Últrðñ™*-Version4
 ```
 
 
-# [License](LICENSE)
+# [𝕷𝖎𝖈𝖊𝖓𝖘𝖊](LICENSE)
 
 ```sh
 Apache License
 Version 2.0, January 2004
 http://www.apache.org/licenses
-—••÷[🎮*Últrðñ*]÷••—
-Discord Music Bot
+—••÷[🎮Últrðñ]÷••—
+𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵
 has been licensed under Apache License
 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
 ```
