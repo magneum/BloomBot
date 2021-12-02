@@ -18,7 +18,7 @@ if (fs.existsSync("Últrðñ.env")) {
 const env = {
   ULTRON: process.env.ULTRON === undefined ? "" : process.env.ULTRON,
   HEROKU: process.env.HEROKU === undefined ? false : true,
-  ULTRONIX: process.env.ULTRONIX === undefined ? "^[.?!]" : process.env.ULTRONIX,
+  ULTRONIX: "^[.]",
   CCD: process.env.CCD === undefined ? "91" : process.env.CCD,
   OCR: process.env.OCR === undefined ? "9ffb44def388957" : process.env.OCR,
   WAPI: process.env.CURRENT_WEATHER_API_KEY === undefined ? "6729ac2b2e2bb5c686ff427a2f06df92" : process.env.CURRENT_WEATHER_API_KEY,

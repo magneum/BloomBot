@@ -72,21 +72,21 @@ async function CyborgRunner() {
     // ===============================================================================
     // 🎮Últrðñ™ 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..
     // ===============================================================================
-    console.log(Kolor.yellowBright.bold(`|  Últrðñ  |=================`));
+    console.log(Kolor.yellowBright.bold(`----------------------------------------|  Últrðñ  |`));
     console.log(UltronSitreper.ULTRON);
-    console.log(Kolor.yellowBright.bold(`|  Últrðñ  |=================`));
+    console.log(Kolor.yellowBright.bold(`----------------------------------------|  Últrðñ  |`));
     console.log(UltronSitreper.HEROKU);
-    console.log(Kolor.yellowBright.bold(`|  Últrðñ  |=================`));
+    console.log(Kolor.yellowBright.bold(`----------------------------------------|  Últrðñ  |`));
     console.log(UltronSitreper.ULTRONIX);
-    console.log(Kolor.yellowBright.bold(`|  Últrðñ  |=================`));
+    console.log(Kolor.yellowBright.bold(`----------------------------------------|  Últrðñ  |`));
     console.log(UltronSitreper.CCD);
-    console.log(Kolor.yellowBright.bold(`|  Últrðñ  |=================`));
+    console.log(Kolor.yellowBright.bold(`----------------------------------------|  Últrðñ  |`));
     console.log(UltronSitreper.OCR);
-    console.log(Kolor.yellowBright.bold(`|  Últrðñ  |=================`));
+    console.log(Kolor.yellowBright.bold(`----------------------------------------|  Últrðñ  |`));
     console.log(UltronSitreper.WAPI);
-    console.log(Kolor.yellowBright.bold(`|  Últrðñ  |=================`));
+    console.log(Kolor.yellowBright.bold(`----------------------------------------|  Últrðñ  |`));
     console.log(UltronSitreper.PRIVACY);
-    console.log(Kolor.yellowBright.bold(`|  Últrðñ  |=================`));
+    console.log(Kolor.yellowBright.bold(`----------------------------------------|  Últrðñ  |`));
     console.log(UltronSitreper.SUDO);
     console.log(
       Kolor.yellowBright.bold(`=================😈    |  Últrðñ  |    😈=================`),
@@ -234,8 +234,20 @@ If you are keen to use my features, you can deploy Últrðñ on your own account
       console.log(Kolor.redBright.bold(`⧪ɪɴꜰᴏ💡⬰  ${Últrðñ.commandName.toUpperCase()} command executed.`));
       const command = UltronSitrep.get(Últrðñ.commandName);
       var arguments = Últrðñ.body.trim().split(/\s+/).slice(1);
+      var UltronRegex = new RegExp(UltronSitreper.ULTRONIX, "g");
+      var Ultronf = /\/\^\[(.*)+\]\/\g/g.exec(UltronRegex)[1];
       if (!command) {
-        return;
+        return ӄʀǟӄɨռʐ.sendMessage(
+          Últrðñ.chatId, {
+            url: `https://i.postimg.cc/Gt46wxDL/ltr-Invalid.png`,
+          },
+          MessageType.image, {
+            mimetype: Mimetype.png,
+            caption: `*⚠️𝗜𝗻𝘃𝗮𝗹𝗶𝗱 Últrðñ 𝗖𝗼𝗺𝗺𝗮𝗻𝗱*
+
+𝘗𝘭𝘦𝘢𝘴𝘦 𝘶𝘴𝘦 *${Ultronf}help!*`,
+          }
+        );
       } else if (command && Últrðñ.commandName == `help`) {
         try {
           return command.handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments, UltronSitrep);

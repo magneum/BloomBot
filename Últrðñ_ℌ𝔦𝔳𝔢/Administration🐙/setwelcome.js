@@ -10,7 +10,7 @@ const UltronSitreper = require(`../../Últrðñ/UltronSitreper`);
 // 🎮Últrðñ™ 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..
 // ===============================================================================
 module.exports = {
-  name: `welcome`,
+  name: `setwelcome`,
   description: `Welcome new members to the group with a custom message.`,
   ƈʏɮօʀɢʍօʀɛ: `
 New members of a group chat will be welcomed with a message. It can be an image, video, gif with caption or just a text message.

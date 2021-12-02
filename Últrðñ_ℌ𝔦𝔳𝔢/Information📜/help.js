@@ -11,10 +11,12 @@ const UltronSitreper = require(`../../Últrðñ/UltronSitreper`);
 // ===============================================================================
 module.exports = {
   name: `help`,
-  description: `Get the command list and info on modules`,
+  description: `ɢᴇᴛ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅ ʟɪꜱᴛ ᴀɴᴅ ɪɴꜰᴏ ᴏɴ ᴍᴏᴅᴜʟᴇꜱ`,
   ƈʏɮօʀɢʍօʀɛ: `
 This module is used to get info on other modules and their triggers.`,
   async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
+    var UltronRegex = new RegExp(UltronSitreper.ULTRONIX, "g");
+    var Ultronf = /\/\^\[(.*)+\]\/\g/g.exec(UltronRegex)[1];
     ӄʀǟӄɨռʐ
       .sendMessage(
         Últrðñ.chatId, {
@@ -22,100 +24,103 @@ This module is used to get info on other modules and their triggers.`,
         },
         MessageType.image, {
           mimetype: Mimetype.png,
-          caption: `*🎮Últrðñ 𝐇𝐞𝐥𝐩 𝐌𝐞𝐧𝐮*⧴ ᴜꜱᴇ ᴡʜᴀᴛꜱᴀᴘᴘ ᴛʜᴇ ᴀᴅᴠᴀɴᴄᴇ ᴡᴀʏ!
+          caption: `*|🎮|  Últrðñ™  |🎮|*
+𝙐𝙨𝙚 𝙒𝙝𝙖𝙩𝙨𝙖𝙥𝙥 𝙏𝙝𝙚 𝘼𝙙𝙫𝙖𝙣𝙘𝙚 𝙒𝙖𝙮!
 
 *••••••••••••••••➛  ❓𝗜𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻*
-*${UltronSitreper.ULTRONIX}help* = Get the command list and info on modules 
-*${UltronSitreper.ULTRONIX}invite* = Module to create group invite link
-*${UltronSitreper.ULTRONIX}alive* = Check if bot is online
+*${Ultronf}help -* ɢᴇᴛ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅ ʟɪꜱᴛ ᴀɴᴅ ɪɴꜰᴏ ᴏɴ ᴍᴏᴅᴜʟᴇꜱ
+*${Ultronf}invite -* ᴍᴏᴅᴜʟᴇ ᴛᴏ ᴄʀᴇᴀᴛᴇ ɢʀᴏᴜᴘ ɪɴᴠɪᴛᴇ ʟɪɴᴋ
+*${Ultronf}alive -* ᴄʜᴇᴄᴋ ɪꜰ ʙᴏᴛ ɪꜱ ᴏɴʟɪɴᴇ ᴀɴᴅ ᴡᴏʀᴋɪɴɢ ꜰɪɴᴇ
 
 
 *••••••••••••••••➛  🤩𝗔𝗻𝗶𝗺𝗲*
-*${UltronSitreper.ULTRONIX}anime* = Search Anime
+*${Ultronf}anime -* ꜱᴇᴀʀᴄʜ ᴀɴɪᴍᴇ
 *more coming!*
 
 
 *••••••••••••••••➛  🎼𝗠𝘂𝘀𝗶𝗰* 
-*${UltronSitreper.ULTRONIX}ytdl* = Download songs
-*${UltronSitreper.ULTRONIX}lyrics* = Module to find lyrics of song
-*${UltronSitreper.ULTRONIX}yts* = Get recommendations and links from Youtube
+*${Ultronf}ytdl -* ᴅᴏᴡɴʟᴏᴀᴅ ꜱᴏɴɢꜱ ᴅɪʀᴇᴄᴛ ꜰʀᴏᴍ ʏᴏᴜᴛᴜʙᴇ
+*${Ultronf}lyrics -* ꜰɪɴᴅ ʟʏʀɪᴄꜱ ᴏꜰ ꜱᴏɴɢꜱ
+*${Ultronf}yts -* ɢᴇᴛ ʀᴇᴄᴏᴍᴍᴇɴᴅᴀᴛɪᴏɴꜱ ᴀɴᴅ ʟɪɴᴋꜱ ꜰʀᴏᴍ ʏᴏᴜᴛᴜʙᴇ
 
 
 *••••••••••••••••➛  🎙️𝗖𝗼𝗻𝘃𝗲𝗿𝘀𝗮𝘁𝗶𝗼𝗻*
-*${UltronSitreper.ULTRONIX}cuddle* = Get an Anime-cuddle Sticker
-*${UltronSitreper.ULTRONIX}cuddlehd* = Sticker with HD-cuddle Download Link
-*${UltronSitreper.ULTRONIX}hug* = Get an Anime-hug Sticker
-*${UltronSitreper.ULTRONIX}hughd* = Sticker with HD-hug Download Link
-*${UltronSitreper.ULTRONIX}kill* = Get an Anime-kill Sticker
-*${UltronSitreper.ULTRONIX}killhd* = Sticker with HD-kill Download Link
-*${UltronSitreper.ULTRONIX}pat* = Get an Anime-pat Sticker
-*${UltronSitreper.ULTRONIX}pathd* = Sticker with HD-pat Download Link
-*${UltronSitreper.ULTRONIX}punch* = Get an Anime-punch Sticker
-*${UltronSitreper.ULTRONIX}punchhd* = Sticker with HD-punch Download Link
-*${UltronSitreper.ULTRONIX}slap* = Get an Anime-slap Sticker  
-*${UltronSitreper.ULTRONIX}slaphd* = Sticker with HD-slap Download Link
-*${UltronSitreper.ULTRONIX}wink* = Get an Anime-wink Sticker  
-*${UltronSitreper.ULTRONIX}winkhd* = Sticker with HD-wink Download Link
+*${Ultronf}cuddle -* ɢᴇᴛ ᴀɴ ᴀɴɪᴍᴇ-ᴄᴜᴅᴅʟᴇ ꜱᴛɪᴄᴋᴇʀ
+*${Ultronf}cuddlehd -* ꜱᴛɪᴄᴋᴇʀ ᴡɪᴛʜ ʜᴅ-ᴄᴜᴅᴅʟᴇ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ
+*${Ultronf}hug -* ɢᴇᴛ ᴀɴ ᴀɴɪᴍᴇ-ʜᴜɢ ꜱᴛɪᴄᴋᴇʀ
+*${Ultronf}hughd -* ꜱᴛɪᴄᴋᴇʀ ᴡɪᴛʜ ʜᴅ-ʜᴜɢ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ
+*${Ultronf}kill -* ɢᴇᴛ ᴀɴ ᴀɴɪᴍᴇ-ᴋɪʟʟ ꜱᴛɪᴄᴋᴇʀ
+*${Ultronf}killhd -* ꜱᴛɪᴄᴋᴇʀ ᴡɪᴛʜ ʜᴅ-ᴋɪʟʟ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ
+*${Ultronf}pat -* ɢᴇᴛ ᴀɴ ᴀɴɪᴍᴇ-ᴘᴀᴛ ꜱᴛɪᴄᴋᴇʀ
+*${Ultronf}pathd -* ꜱᴛɪᴄᴋᴇʀ ᴡɪᴛʜ ʜᴅ-ᴘᴀᴛ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ
+*${Ultronf}punch -* ɢᴇᴛ ᴀɴ ᴀɴɪᴍᴇ-ᴘᴜɴᴄʜ ꜱᴛɪᴄᴋᴇʀ
+*${Ultronf}punchhd -* ꜱᴛɪᴄᴋᴇʀ ᴡɪᴛʜ ʜᴅ-ᴘᴜɴᴄʜ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ
+*${Ultronf}slap -* ɢᴇᴛ ᴀɴ ᴀɴɪᴍᴇ-ꜱʟᴀᴘ ꜱᴛɪᴄᴋᴇʀ
+*${Ultronf}slaphd -* ꜱᴛɪᴄᴋᴇʀ ᴡɪᴛʜ ʜᴅ-ꜱʟᴀᴘ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ
+*${Ultronf}wink -* ɢᴇᴛ ᴀɴ ᴀɴɪᴍᴇ-ᴡɪɴᴋ ꜱᴛɪᴄᴋᴇʀ
+*${Ultronf}winkhd -* ꜱᴛɪᴄᴋᴇʀ ᴡɪᴛʜ ʜᴅ-ᴡɪɴᴋ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ
+
+
+*••••••••••••••••➛  🔐𝗣𝗲𝗿𝘀𝗼𝗻𝗮𝗹* 
+*${Ultronf}block -* ʙʟᴏᴄᴋ ᴄᴏɴᴛᴀᴄᴛ
+*${Ultronf}unblock -* ᴜɴʙʟᴏᴄᴋ ᴄᴏɴᴛᴀᴄᴛ
 
 
 *••••••••••••••••➛  👑𝗔𝗱𝗺𝗶𝗻𝗶𝘀𝘁𝗿𝗮𝘁𝗶𝗼𝗻* _(only groups)
-*${UltronSitreper.ULTRONIX}add* = Module to add a person to a group
-*${UltronSitreper.ULTRONIX}admins* = Tag admins
-*${UltronSitreper.ULTRONIX}block* = Block contact
-*${UltronSitreper.ULTRONIX}demote* = Demote a person from admin
-*${UltronSitreper.ULTRONIX}disappear* = Toggle disappearing messages
-*${UltronSitreper.ULTRONIX}goodbye* = A goodbye message for group chat whenever someone leaves
-*${UltronSitreper.ULTRONIX}mute* = Mute group chat for a specified time
-*${UltronSitreper.ULTRONIX}promote* = Promote a member to admin
-*${UltronSitreper.ULTRONIX}remove* = Module to remove a person from a group
-*${UltronSitreper.ULTRONIX}setdp* = Change the group icon
-*${UltronSitreper.ULTRONIX}unblock* = Unblock contact
-*${UltronSitreper.ULTRONIX}unmute* = Unmute group chat
-*${UltronSitreper.ULTRONIX}welcome* = Welcome new members to the group with a custom message
+*${Ultronf}add -* ᴀᴅᴅ ᴀ ᴘᴇʀꜱᴏɴ ᴛᴏ ᴀ ɢʀᴏᴜᴘ
+*${Ultronf}admins -* ᴛᴀɢ ᴀʟʟ ᴀᴅᴍɪɴꜱ ɪɴ ᴀ ɢʀᴏᴜᴘ
+*${Ultronf}demote -* ᴅᴇᴍᴏᴛᴇ ᴀ ᴘᴇʀꜱᴏɴ ꜰʀᴏᴍ ᴀᴅᴍɪɴ ɪɴ ɢʀᴏᴜᴘ
+*${Ultronf}disappear -* ᴛᴏɢɢʟᴇ ᴅɪꜱᴀᴘᴘᴇᴀʀɪɴɢ ᴍᴇꜱꜱᴀɢᴇꜱ ɪɴ ɢʀᴏᴜᴘ
+*${Ultronf}goodbye -* ᴀ ɢᴏᴏᴅʙʏᴇ ᴍᴇꜱꜱᴀɢᴇ ꜰᴏʀ ɢʀᴏᴜᴘ ᴄʜᴀᴛ ᴡʜᴇɴᴇᴠᴇʀ ꜱᴏᴍᴇᴏɴᴇ ʟᴇᴀᴠᴇꜱ
+*${Ultronf}mute -* ᴍᴜᴛᴇ ɢʀᴏᴜᴘ ᴄʜᴀᴛ ꜰᴏʀ ᴀ ꜱᴘᴇᴄɪꜰɪᴇᴅ ᴛɪᴍᴇ
+*${Ultronf}promote -* ᴘʀᴏᴍᴏᴛᴇ ᴀ ᴍᴇᴍʙᴇʀ ᴛᴏ ᴀᴅᴍɪɴ ɪɴ ɢʀᴏᴜᴘ
+*${Ultronf}remove -* ʀᴇᴍᴏᴠᴇ ᴀ ᴘᴇʀꜱᴏɴ ꜰʀᴏᴍ ᴀ ɢʀᴏᴜᴘ
+*${Ultronf}groupdp -* ᴄʜᴀɴɢᴇ ᴛʜᴇ ɢʀᴏᴜᴘ ɪᴄᴏɴ
+*${Ultronf}unmute -* ᴜɴᴍᴜᴛᴇ ɢʀᴏᴜᴘ ᴄʜᴀᴛ
+*${Ultronf}welcome -* ᴡᴇʟᴄᴏᴍᴇ ɴᴇᴡ ᴍᴇᴍʙᴇʀꜱ ᴛᴏ ᴛʜᴇ ɢʀᴏᴜᴘ ᴡɪᴛʜ ᴀ ᴄᴜꜱᴛᴏᴍ ᴍᴇꜱꜱᴀɢᴇ
 
 
 *••••••••••••••••➛  🧀𝗙𝘂𝗻* 
-*${UltronSitreper.ULTRONIX}google* = Search anything on google
-*${UltronSitreper.ULTRONIX}carbon* = Convert text/code to a carbon image
-*${UltronSitreper.ULTRONIX}pfp* = Get display picture
-*${UltronSitreper.ULTRONIX}github* = Find Github Profile
-*${UltronSitreper.ULTRONIX}neko* = Copy your text to nekobin
-*${UltronSitreper.ULTRONIX}joke* = Get Random Jokes
-*${UltronSitreper.ULTRONIX}meme* = Get Random Memes
-*${UltronSitreper.ULTRONIX}read* = Optical Character Recognition
-*${UltronSitreper.ULTRONIX}sticker* = Module to convert image to sticker
-*${UltronSitreper.ULTRONIX}tagall* = Module to tag evryone in a group
-*${UltronSitreper.ULTRONIX}translate* = Language Translator
-*${UltronSitreper.ULTRONIX}tts* = Text To Speech
-*${UltronSitreper.ULTRONIX}weather* = Get weather data of a city
-*${UltronSitreper.ULTRONIX}ud* = Urban Dictionary
+*${Ultronf}google -* ꜱᴇᴀʀᴄʜ ᴀɴʏᴛʜɪɴɢ ᴏɴ ɢᴏᴏɢʟᴇ
+*${Ultronf}carbon -* ᴄᴏɴᴠᴇʀᴛ ᴛᴇxᴛ ᴏʀ ᴄᴏᴅᴇ ᴛᴏ ᴀ ᴄᴀʀʙᴏɴ ɪᴍᴀɢᴇ
+*${Ultronf}pfp -* ɢᴇᴛ ᴅɪꜱᴘʟᴀʏ ᴘɪᴄᴛᴜʀᴇ ᴏꜰ ᴜꜱᴇʀ ɪɴ ᴀ ɢʀᴏᴜᴘ
+*${Ultronf}github -* ꜰɪɴᴅ ᴀɴʏ ɢɪᴛʜᴜʙ ᴘʀᴏꜰɪʟᴇ
+*${Ultronf}neko -* ᴄᴏᴘʏ ʏᴏᴜʀ ᴛᴇxᴛ ᴛᴏ ɴᴇᴋᴏʙɪɴ.ᴄᴏᴍ
+*${Ultronf}joke -* ɢᴇᴛ ʀᴀɴᴅᴏᴍ ᴊᴏᴋᴇꜱ
+*${Ultronf}meme -* ɢᴇᴛ ʀᴀɴᴅᴏᴍ ᴍᴇᴍᴇꜱ
+*${Ultronf}read -* ᴏᴘᴛɪᴄᴀʟ ᴄʜᴀʀᴀᴄᴛᴇʀ ʀᴇᴄᴏɢɴɪᴛɪᴏɴ
+*${Ultronf}sticker -* ᴄᴏɴᴠᴇʀᴛ ɪᴍᴀɢᴇ ᴛᴏ ꜱᴛɪᴄᴋᴇʀ
+*${Ultronf}tagall -* ᴛᴀɢ ᴇᴠʀʏᴏɴᴇ ɪɴ ᴀ ɢʀᴏᴜᴘ
+*${Ultronf}translate -* ʟᴀɴɢᴜᴀɢᴇ ᴛʀᴀɴꜱʟᴀᴛᴏʀ
+*${Ultronf}tts -* ᴛᴇxᴛ ᴛᴏ ꜱᴘᴇᴇᴄʜ
+*${Ultronf}weather -* ɢᴇᴛ ᴡᴇᴀᴛʜᴇʀ ᴅᴀᴛᴀ ᴏꜰ ᴀ ᴘʟᴀᴄᴇꜱ
+*${Ultronf}ud -* ᴜʀʙᴀɴ ᴅɪᴄᴛɪᴏɴᴀʀʏ ꜰᴏʀ ᴄʀᴀᴢʏ ᴘᴇᴇᴘꜱ
 
 
 *••••••••••••••••➛  🔞𝗡𝗦𝗙𝗪* (private & group-admins!)
-*${UltronSitreper.ULTRONIX}ass* = I know you like anime ass~
-*${UltronSitreper.ULTRONIX}bdsm* = If you don't know what it is, search it up
-*${UltronSitreper.ULTRONIX}blowjob* = Basically an image of a girl sucking on a sharp blade!
-*${UltronSitreper.ULTRONIX}cum* = Basically sticky white stuff that is usually milked from sharpies
-*${UltronSitreper.ULTRONIX}doujin* = Sends a random doujin page imageURL!
-*${UltronSitreper.ULTRONIX}feet* = So you like smelly feet huh?
-*${UltronSitreper.ULTRONIX}femdom* = Female Domination?
-*${UltronSitreper.ULTRONIX}foxgirl* = Girl's that are wannabe foxes, yes
-*${UltronSitreper.ULTRONIX}glasses* = Girls that wear glasses
-*${UltronSitreper.ULTRONIX}hentai* = Sends a random vanilla hentai imageURL~
-*${UltronSitreper.ULTRONIX}maid* = Maids, Maid Uniforms, etc, you know what maids are :3
-*${UltronSitreper.ULTRONIX}masturbation* = Solo Queue in CSGO! Lol
-*${UltronSitreper.ULTRONIX}netorare* = Wow, I won't even question your fetishes
-*${UltronSitreper.ULTRONIX}orgy* = Group Lewd Acts
-*${UltronSitreper.ULTRONIX}panties* = I mean... just why? You like underwear?
-*${UltronSitreper.ULTRONIX}pussy* = The genitals of a female, or a cat, you give the meaning
-*${UltronSitreper.ULTRONIX}school* = School Uniforms!~ Yatta~!
-*${UltronSitreper.ULTRONIX}tentacles* = I'm sorry but, why do they look like intestines?
-*${UltronSitreper.ULTRONIX}thighs* = The top part of your legs, very hot, isn't it?
-*${UltronSitreper.ULTRONIX}uniform* = Military, Konbini, Work, Nurse Uniforms, etc!~ Sexy~
-*${UltronSitreper.ULTRONIX}yuri* = Girls on Girls, and Girl's only!
+*${Ultronf}ass -* ɪ ᴋɴᴏᴡ ʏᴏᴜ ʟɪᴋᴇ ᴀɴɪᴍᴇ ᴀꜱꜱ~
+*${Ultronf}bdsm -* ɪꜰ ʏᴏᴜ ᴅᴏɴ'ᴛ ᴋɴᴏᴡ ᴡʜᴀᴛ ɪᴛ ɪꜱ, ꜱᴇᴀʀᴄʜ ɪᴛ ᴜᴘ
+*${Ultronf}blowjob -* ʙᴀꜱɪᴄᴀʟʟʏ ᴀɴ ɪᴍᴀɢᴇ ᴏꜰ ᴀ ɢɪʀʟ ꜱᴜᴄᴋɪɴɢ ᴏɴ ᴀ ꜱʜᴀʀᴘ ʙʟᴀᴅᴇ!
+*${Ultronf}cum -* ʙᴀꜱɪᴄᴀʟʟʏ ꜱᴛɪᴄᴋʏ ᴡʜɪᴛᴇ ꜱᴛᴜꜰꜰ ᴛʜᴀᴛ ɪꜱ ᴜꜱᴜᴀʟʟʏ ᴍɪʟᴋᴇᴅ ꜰʀᴏᴍ ꜱʜᴀʀᴘɪᴇꜱ
+*${Ultronf}doujin -* ꜱᴇɴᴅꜱ ᴀ ʀᴀɴᴅᴏᴍ ᴅᴏᴜᴊɪɴ ᴘᴀɢᴇ ɪᴍᴀɢᴇ!
+*${Ultronf}feet -* ꜱᴏ ʏᴏᴜ ʟɪᴋᴇ ꜱᴍᴇʟʟʏ ꜰᴇᴇᴛ ʜᴜʜ?
+*${Ultronf}femdom -* ꜰᴇᴍᴀʟᴇ ᴅᴏᴍɪɴᴀᴛɪᴏɴ?
+*${Ultronf}foxgirl -* ɢɪʀʟ'ꜱ ᴛʜᴀᴛ ᴀʀᴇ ᴡᴀɴɴᴀʙᴇ ꜰᴏxᴇꜱ, ʏᴇꜱ
+*${Ultronf}glasses -* ɢɪʀʟꜱ ᴛʜᴀᴛ ᴡᴇᴀʀ ɢʟᴀꜱꜱᴇꜱ
+*${Ultronf}hentai -* ꜱᴇɴᴅꜱ ᴀ ʀᴀɴᴅᴏᴍ ᴠᴀɴɪʟʟᴀ ʜᴇɴᴛᴀɪ ɪᴍᴀɢᴇ~
+*${Ultronf}maid -* ᴍᴀɪᴅꜱ, ᴍᴀɪᴅ ᴜɴɪꜰᴏʀᴍꜱ, ᴇᴛᴄ, ʏᴏᴜ ᴋɴᴏᴡ ᴡʜᴀᴛ ᴍᴀɪᴅꜱ ᴀʀᴇ
+*${Ultronf}masturbation -* ꜱᴏʟᴏ Qᴜᴇᴜᴇ ɪɴ ᴄꜱɢᴏ! ʟᴏʟ
+*${Ultronf}netorare -* ᴡᴏᴡ, ɪ ᴡᴏɴ'ᴛ ᴇᴠᴇɴ Qᴜᴇꜱᴛɪᴏɴ ʏᴏᴜʀ ꜰᴇᴛɪꜱʜᴇꜱ
+*${Ultronf}orgy -* ɢʀᴏᴜᴘ ʟᴇᴡᴅ ᴀᴄᴛꜱ
+*${Ultronf}panties -* ɪ ᴍᴇᴀɴ... ᴊᴜꜱᴛ ᴡʜʏ? ʏᴏᴜ ʟɪᴋᴇ ᴜɴᴅᴇʀᴡᴇᴀʀ?
+*${Ultronf}pussy -* ᴛʜᴇ ɢᴇɴɪᴛᴀʟꜱ ᴏꜰ ᴀ ꜰᴇᴍᴀʟᴇ, ᴏʀ ᴀ ᴄᴀᴛ, ʏᴏᴜ ɢɪᴠᴇ ᴛʜᴇ ᴍᴇᴀɴɪɴɢ
+*${Ultronf}school -* ꜱᴄʜᴏᴏʟ ᴜɴɪꜰᴏʀᴍꜱ!~ ʏᴀᴛᴛᴀ~!
+*${Ultronf}tentacles -* ɪ'ᴍ ꜱᴏʀʀʏ ʙᴜᴛ, ᴡʜʏ ᴅᴏ ᴛʜᴇʏ ʟᴏᴏᴋ ʟɪᴋᴇ ɪɴᴛᴇꜱᴛɪɴᴇꜱ?
+*${Ultronf}thighs -* ᴛʜᴇ ᴛᴏᴘ ᴘᴀʀᴛ ᴏꜰ ʏᴏᴜʀ ʟᴇɢꜱ, ᴠᴇʀʏ ʜᴏᴛ, ɪꜱɴ'ᴛ ɪᴛ?
+*${Ultronf}uniform -* ᴍɪʟɪᴛᴀʀʏ, ᴋᴏɴʙɪɴɪ, ᴡᴏʀᴋ, ɴᴜʀꜱᴇ ᴜɴɪꜰᴏʀᴍꜱ, ᴇᴛᴄ!~ ꜱᴇxʏ~
+*${Ultronf}yuri -* ɢɪʀʟꜱ ᴏɴ ɢɪʀʟꜱ, ᴀɴᴅ ɢɪʀʟ'ꜱ ᴏɴʟʏ!
 
-𝐖𝐨𝐫𝐤 𝐈𝐧 𝐏𝐫𝐨𝐠𝐫𝐞𝐬𝐬:
-https://github.com/Krakinz/Ultron.git`,
+*𝐆𝐢𝐭𝐇𝐮𝐛🧀https://github.com/Krakinz*`,
         }
       )
       .catch((cᴇʀʀᴏʀ) =>
@@ -123,7 +128,7 @@ https://github.com/Krakinz/Ultron.git`,
           Últrðñ.chatId,
           `*🎮Últrðñ™* 𝐝𝐢𝐝𝐧'𝐭 𝐰𝐨𝐫𝐤 𝐚𝐬 𝐞𝐱𝐩𝐞𝐜𝐭𝐞𝐝❗
 
-💡𝗛𝗲𝗿𝗲 𝗶𝘀 𝗮 𝘀𝗺𝗮𝗹𝗹 𝗲𝗿𝗿𝗼𝗿 𝗿𝗲𝗽𝗼𝗿𝘁 𝗮𝗻𝗱 𝘁𝗼 𝗹𝗼𝗴 𝘁𝗵𝗲 𝗿𝗲𝗽𝗼𝗿𝘁 𝘂𝘀𝗲 ${UltronSitreper.ULTRONIX}𝗿𝗲𝗽𝗼𝗿𝘁
+💡𝗛𝗲𝗿𝗲 𝗶𝘀 𝗮 𝘀𝗺𝗮𝗹𝗹 𝗲𝗿𝗿𝗼𝗿 𝗿𝗲𝗽𝗼𝗿𝘁 𝗮𝗻𝗱 𝘁𝗼 𝗹𝗼𝗴 𝘁𝗵𝗲 𝗿𝗲𝗽𝗼𝗿𝘁 𝘂𝘀𝗲 ${Ultronf}𝗿𝗲𝗽𝗼𝗿𝘁
 ⚠️𝗘𝗿𝗿𝗼𝗿
 • ${cᴇʀʀᴏʀ}`,
           MessageType.text
