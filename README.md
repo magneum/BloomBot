@@ -22,7 +22,9 @@
 # Inspiration
 * Baileys Library
 * Prince-Mendiratta
-* 
+* Telegram,Discord codes of my own lmao
+
+
 # [License](LICENSE)
 
 ```sh
