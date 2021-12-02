@@ -2,9 +2,6 @@
 
 # 『 *🎮Últrðñ™* ] 』
 
-- [![Generic badge](https://img.shields.io/badge/👑XeTron™-yellow.svg)](https://discord.com/api/oauth2/authorize?client_id=897486855233216562&permissions=8&scope=bot%20applications.commands)
-- 𝙳𝚒𝚛𝚎𝚌𝚝𝚕𝚢 𝚞𝚜𝚎 𝚃𝚑𝚎 𝙱𝚘𝚝 𝚒𝚗 Discord
-
 <p align="centre"><img  width="80%" height="80%" img src="https://github.com/Krakinz/Ultron/blob/KrakinzLab/%C3%9Altr%C3%B0%C3%B1/%C3%9Altr%C3%B0%C3%B1.png" /></p>
 
 # ❓ WΉY MΛDΣ ƬΉIS BӨƬ?
