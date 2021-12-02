@@ -25,9 +25,9 @@ After 🎮Últrðñ™*-Version4
 
 # 𝕴𝖓𝖘𝖕𝖎𝖗𝖆𝖙𝖎𝖔𝖓
 ```
-* Baileys Whatsapp Library
-* Prince-Mendiratta sc
-* Telegram,Discord bots of my own lmao
+)¤•• ʙᴀɪʟᴇʏꜱ ᴡʜᴀᴛꜱᴀᴘᴘ ʟɪʙʀᴀʀʏ
+)¤•• ᴘʀɪɴᴄᴇ-ᴍᴇɴᴅɪʀᴀᴛᴛᴀ ꜱᴄ
+)¤•• ᴛᴇʟᴇɢʀᴀᴍ,ᴅɪꜱᴄᴏʀᴅ ʙᴏᴛꜱ ᴏꜰ ᴍʏ ᴏᴡɴ ʟᴍᴀᴏ
 ```
 
 
