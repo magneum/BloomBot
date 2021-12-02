@@ -219,18 +219,7 @@ If you are keen to use my features, you can deploy Últrðñ on your own account
       const command = UltronSitrep.get(Últrðñ.commandName);
       var arguments = Últrðñ.body.trim().split(/\s+/).slice(1);
       if (!command) {
-        return ӄʀǟӄɨռʐ.sendMessage(
-          Últrðñ.chatId, {
-            url: `https://i.postimg.cc/KcNwHtZt/ltr.png`,
-          },
-          MessageType.image, {
-            mimetype: Mimetype.png,
-            caption: `_*Invalid Últrðñ Command!*_
-
-*Use  any of these prefix .?!*
-*like:* _?help_`,
-          }
-        );
+        return;
       } else if (command && Últrðñ.commandName == `help`) {
         try {
           return command.handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments, UltronSitrep);
