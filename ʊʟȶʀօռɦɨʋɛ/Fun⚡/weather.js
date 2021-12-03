@@ -1,10 +1,7 @@
 // ===============================================================================
 // 🎮ʊʟȶʀօռ™ 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..
 // ===============================================================================
-const {
-  MessageType,
-  Mimetype
-} = require(`@adiwajshing/baileys`);
+const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const UltronSitreper = require(`../../ʊʟȶʀօռ/UltronSitreper`);
 const apiKey = UltronSitreper.WAPI;
 const https = require(`https`);
@@ -31,15 +28,21 @@ Obtain weather info by entering the city name.`,
       };
       async function result(imageUrl, weatherDataVariables, downloading) {
         await υℓтяσηℓιєηт
-          .sendMessage(ʊʟȶʀօռ.chatId, {
-            url: imageUrl
-          }, MessageType.image, {
-            mimetype: Mimetype.png,
-            caption: `*Temperature:* {tempInC} °C | {tempInF} °F\n*Min Temp:* {minTempInC} °C | {minTempInF} °F\n*Max Temp:* {maxTempInC} °C | {maxTempInF} °F\n*Humidity:* {humidity}%\n*Wind:* {windSpeedInkmph} kmph | {windSpeedInmph} mph , {degree}°\n*Sunrise:* {sunriseTime}\n*Sunset:* {sunsetTime}\n\n\n*{weatherDescription}*\n{cityName} , {country}\n{dateAndTime}`.format(
-              weatherDataVariables
-            ),
-            thumbnail: null,
-          })
+          .sendMessage(
+            ʊʟȶʀօռ.chatId,
+            {
+              url: imageUrl,
+            },
+            MessageType.image,
+            {
+              mimetype: Mimetype.png,
+              caption:
+                `*Temperature:* {tempInC} °C | {tempInF} °F\n*Min Temp:* {minTempInC} °C | {minTempInF} °F\n*Max Temp:* {maxTempInC} °C | {maxTempInF} °F\n*Humidity:* {humidity}%\n*Wind:* {windSpeedInkmph} kmph | {windSpeedInmph} mph , {degree}°\n*Sunrise:* {sunriseTime}\n*Sunset:* {sunsetTime}\n\n\n*{weatherDescription}*\n{cityName} , {country}\n{dateAndTime}`.format(
+                  weatherDataVariables
+                ),
+              thumbnail: null,
+            }
+          )
           .catch((cᴇʀʀᴏʀ) =>
             υℓтяσηℓιєηт.sendMessage(
               ʊʟȶʀօռ.chatId,
@@ -53,16 +56,14 @@ Obtain weather info by entering the city name.`,
           );
       }
       if (Arc.length === 0 || Arc.length < 1) {
+        await υℓтяσηℓιєηт.sendMessage(ʊʟȶʀօռ.chatId, "❌", MessageType.text);
         await υℓтяσηℓιєηт.sendMessage(
           ʊʟȶʀօռ.chatId,
-          "❌",
-          MessageType.text
-        );
-        await υℓтяσηℓιєηт.sendMessage(
-          ʊʟȶʀօռ.chatId, {
-            url: `https://i.postimg.cc/MGkpdxHT/ltr-Args.png`
+          {
+            url: `https://i.postimg.cc/MGkpdxHT/ltr-Args.png`,
           },
-          MessageType.image, {
+          MessageType.image,
+          {
             mimetype: Mimetype.jpeg,
             caption: `*⚠️Seems like someone forgot to give Movie/Series name!*
 

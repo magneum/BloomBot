@@ -1,9 +1,7 @@
 // ===============================================================================
 // 🎮ʊʟȶʀօռ™ 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..
 // ===============================================================================
-const {
-  MessageType
-} = require(`@adiwajshing/baileys`);
+const { MessageType } = require(`@adiwajshing/baileys`);
 const Greetings = require(`../../ʊʟȶʀօռ/wlcmr`);
 const UltronSitreper = require(`../../ʊʟȶʀօռ/UltronSitreper`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
@@ -39,7 +37,11 @@ A goodbye message will be sent when any member leaves the group. It can be an im
               `Greetings are enabled: True \nCurrently greeting new members with:`,
               MessageType.text
             );
-            υℓтяσηℓιєηт.sendMessage(ʊʟȶʀօռ.chatId, Msg.message, MessageType.text);
+            υℓтяσηℓιєηт.sendMessage(
+              ʊʟȶʀօռ.chatId,
+              Msg.message,
+              MessageType.text
+            );
             return;
           }
 

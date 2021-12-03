@@ -1,10 +1,7 @@
 // ===============================================================================
 // 🎮ʊʟȶʀօռ™ 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..
 // ===============================================================================
-const {
-  GroupSettingChange,
-  MessageType
-} = require(`@adiwajshing/baileys`);
+const { GroupSettingChange, MessageType } = require(`@adiwajshing/baileys`);
 const UltronSitreper = require(`../../ʊʟȶʀօռ/UltronSitreper`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
@@ -55,16 +52,14 @@ Mute non-admin members of a group. You can even specify the duration using s, m 
         return;
       }
       if (Arc.length === 0) {
+        await υℓтяσηℓιєηт.sendMessage(ʊʟȶʀօռ.chatId, "❌", MessageType.text);
         await υℓтяσηℓιєηт.sendMessage(
           ʊʟȶʀօռ.chatId,
-          "❌",
-          MessageType.text
-        );
-        await υℓтяσηℓιєηт.sendMessage(
-          ʊʟȶʀօռ.chatId, {
-            url: `https://i.postimg.cc/MGkpdxHT/ltr-Args.png`
+          {
+            url: `https://i.postimg.cc/MGkpdxHT/ltr-Args.png`,
           },
-          MessageType.image, {
+          MessageType.image,
+          {
             mimetype: Mimetype.jpeg,
             caption: `*⚠️Seems like someone forgot to give Movie/Series name!*
 
@@ -135,10 +130,10 @@ Mute non-admin members of a group. You can even specify the duration using s, m 
         .sendMessage(
           ʊʟȶʀօռ.chatId,
           `Chat permissions changed to  *admin only*  for ` +
-          Arc[0] +
-          ` ` +
-          type +
-          `.`,
+            Arc[0] +
+            ` ` +
+            type +
+            `.`,
           MessageType.text
         )
         .catch((cᴇʀʀᴏʀ) =>

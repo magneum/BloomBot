@@ -1,12 +1,9 @@
 // ===============================================================================
 // 🎮ʊʟȶʀօռ™ 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..
 // ===============================================================================
-const {
-  MessageType,
-  Mimetype
-} = require(`@adiwajshing/baileys`);
+const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const UltronSitreper = require(`../../ʊʟȶʀօռ/UltronSitreper`);
-const getVideoId = require('get-video-id');
+const getVideoId = require("get-video-id");
 const yts = require(`yt-search`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
@@ -17,16 +14,14 @@ Get the first 10 recommendations from YouTube with their authorname, timestamp a
   async handle(υℓтяσηℓιєηт, chat, ʊʟȶʀօռ, Arc) {
     try {
       if (Arc.length === 0) {
+        await υℓтяσηℓιєηт.sendMessage(ʊʟȶʀօռ.chatId, "❌", MessageType.text);
         await υℓтяσηℓιєηт.sendMessage(
           ʊʟȶʀօռ.chatId,
-          "❌",
-          MessageType.text
-        );
-        await υℓтяσηℓιєηт.sendMessage(
-          ʊʟȶʀօռ.chatId, {
-            url: `https://i.postimg.cc/MGkpdxHT/ltr-Args.png`
+          {
+            url: `https://i.postimg.cc/MGkpdxHT/ltr-Args.png`,
           },
-          MessageType.image, {
+          MessageType.image,
+          {
             mimetype: Mimetype.jpeg,
             caption: `*⚠️Seems like someone forgot to give Movie/Series name!*
 
@@ -40,9 +35,7 @@ Get the first 10 recommendations from YouTube with their authorname, timestamp a
       const videos = FetchedLink.videos.slice(0, 5);
       var Fetched = ``;
       videos.forEach(function (youfound) {
-        const {
-          id
-        } = getVideoId(youfound.url);
+        const { id } = getVideoId(youfound.url);
         Fetched =
           Fetched +
           `*🥳𝐓𝐢𝐭𝐥𝐞↬* ${youfound.title}
@@ -71,17 +64,22 @@ Get the first 10 recommendations from YouTube with their authorname, timestamp a
           );
         return;
       }
-      const c = Arc.join(` `)
+      const c = Arc.join(` `);
       υℓтяσηℓιєηт
         .sendMessage(
-          ʊʟȶʀօռ.chatId, {
-            url: `https://i.postimg.cc/D0N0BK4y/yts.png`
+          ʊʟȶʀօռ.chatId,
+          {
+            url: `https://i.postimg.cc/D0N0BK4y/yts.png`,
           },
-          MessageType.image, {
+          MessageType.image,
+          {
             mimetype: Mimetype.png,
-            caption: `ᴛʜᴇꜱᴇ ᴀʀᴇ ᴛʜᴇ *ꜰɪʀꜱᴛ-5* ᴍᴏꜱᴛ ᴍᴀᴛᴄʜɪɴɢ ꜱᴇᴀʀᴄʜ ʀᴇꜱᴜʟᴛꜱ ꜰᴏʀ:
+            caption:
+              `ᴛʜᴇꜱᴇ ᴀʀᴇ ᴛʜᴇ *ꜰɪʀꜱᴛ-5* ᴍᴏꜱᴛ ᴍᴀᴛᴄʜɪɴɢ ꜱᴇᴀʀᴄʜ ʀᴇꜱᴜʟᴛꜱ ꜰᴏʀ:
 *🔎: ${c.toUpperCase()}*\n\n` + Fetched,
-          }).catch((cᴇʀʀᴏʀ) =>
+          }
+        )
+        .catch((cᴇʀʀᴏʀ) =>
           υℓтяσηℓιєηт.sendMessage(
             ʊʟȶʀօռ.chatId,
             `*🎮ʊʟȶʀօռ™* 𝐝𝐢𝐝𝐧'𝐭 𝐰𝐨𝐫𝐤 𝐚𝐬 𝐞𝐱𝐩𝐞𝐜𝐭𝐞𝐝❗

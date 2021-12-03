@@ -1,9 +1,7 @@
 // ===============================================================================
 // 🎮ʊʟȶʀօռ™ 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..
 // ===============================================================================
-const {
-  WAConnection
-} = require("@adiwajshing/baileys");
+const { WAConnection } = require("@adiwajshing/baileys");
 const UltronSitreper = require("../ʊʟȶʀօռ/UltronSitreper");
 const conn = new WAConnection();
 const chalk = require("chalk");
@@ -15,7 +13,8 @@ const fs = require("fs");
 exports.WhatsApp = conn;
 exports.saveSession = async () => {
   if (
-    (!fs.existsSync("./UltronSitreper.env") && UltronSitreper.HEROKU == false) ||
+    (!fs.existsSync("./UltronSitreper.env") &&
+      UltronSitreper.HEROKU == false) ||
     UltronSitreper.ULTRON == ""
   ) {
     conn.browserDescription = ["ʊʟȶʀօռ", "Chrome", "1.0"];

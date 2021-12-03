@@ -1,7 +1,4 @@
-const {
-  MessageType,
-  Mimetype
-} = require(`@adiwajshing/baileys`);
+const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const UltronSitreper = require(`../../ʊʟȶʀօռ/UltronSitreper`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
@@ -14,21 +11,25 @@ meme.EXTENDED_DESCRIPTION`,
       var num = Math.floor(Math.random() * (500 - 1) + 1);
       try {
         await υℓтяσηℓιєηт.sendMessage(
-          ʊʟȶʀօռ.chatId, {
-            url: `https://ctk-api.herokuapp.com/meme/${num}`
+          ʊʟȶʀօռ.chatId,
+          {
+            url: `https://ctk-api.herokuapp.com/meme/${num}`,
           },
-          MessageType.image, {
-            mimetype: Mimetype.jpeg
+          MessageType.image,
+          {
+            mimetype: Mimetype.jpeg,
           }
         );
       } catch (e) {
         console.log(e);
         await υℓтяσηℓιєηт.sendMessage(
-          ʊʟȶʀօռ.chatId, {
-            url: `https://ctk-api.herokuapp.com/meme/${num}`
+          ʊʟȶʀօռ.chatId,
+          {
+            url: `https://ctk-api.herokuapp.com/meme/${num}`,
           },
-          MessageType.image, {
-            mimetype: Mimetype.png
+          MessageType.image,
+          {
+            mimetype: Mimetype.png,
           }
         );
       }

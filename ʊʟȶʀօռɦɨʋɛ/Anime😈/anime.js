@@ -1,10 +1,7 @@
 // ===============================================================================
 // 🎮ʊʟȶʀօռ™ 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..
 // ===============================================================================
-const {
-  MessageType,
-  Mimetype
-} = require(`@adiwajshing/baileys`);
+const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const UltronSitreper = require(`../../ʊʟȶʀօռ/UltronSitreper`);
 const malScraper = require(`mal-scraper`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
@@ -48,12 +45,14 @@ Get Anime Informations From MyAnimeList`,
 🎯𝗜𝗱: _${data.id}_
 📥𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱: _${data.url}_`;
       await υℓтяσηℓιєηт.sendMessage(
-        ʊʟȶʀօռ.chatId, {
-          url: data.picture
+        ʊʟȶʀօռ.chatId,
+        {
+          url: data.picture,
         },
-        MessageType.image, {
+        MessageType.image,
+        {
           mimetype: Mimetype.jpeg,
-          caption: AnimeInfos
+          caption: AnimeInfos,
         }
       );
     });

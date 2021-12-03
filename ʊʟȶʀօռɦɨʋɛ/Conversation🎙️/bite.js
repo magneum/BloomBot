@@ -1,7 +1,4 @@
-const {
-  MessageType,
-  Mimetype
-} = require(`@adiwajshing/baileys`);
+const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const UltronSitreper = require(`../../ʊʟȶʀօռ/UltronSitreper`);
 const anime = require("anime-actions");
 module.exports = {
@@ -12,10 +9,12 @@ I know you like anime bite`,
   async handle(υℓтяσηℓιєηт, chat, ʊʟȶʀօռ, args) {
     try {
       await υℓтяσηℓιєηт.sendMessage(
-        ʊʟȶʀօռ.chatId, {
+        ʊʟȶʀօռ.chatId,
+        {
           url: await anime.bite(),
         },
-        MessageType.image, {
+        MessageType.image,
+        {
           mimetype: Mimetype.jpeg,
           caption: `*☢️ƈʏɮօʀɢ ⧴ ᴜꜱᴇ ᴡʜᴀᴛꜱᴀᴘᴘ ᴛʜᴇ ᴀᴅᴠᴀɴᴄᴇ ᴡᴀʏ!*
 

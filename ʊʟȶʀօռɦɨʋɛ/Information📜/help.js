@@ -33,6 +33,7 @@ This module is used to get info on other modules and their triggers.`,
 
 *••••••••••••••••➛  🤩𝗔𝗻𝗶𝗺𝗲*
 *${Ultronf}anime -* ꜱᴇᴀʀᴄʜ ᴀɴɪᴍᴇ
+*${Ultronf}animewallpaper -* ᴅᴏᴡɴʟᴏᴀᴅ ʜᴅ ᴀɴɪᴍᴇ-ᴡᴀʟʟᴘᴀᴘᴇʀꜱ
 *more coming!*
 
 

@@ -1,9 +1,7 @@
 // ===============================================================================
 // 🎮ʊʟȶʀօռ™ 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..
 // ===============================================================================
-const {
-  MessageType
-} = require(`@adiwajshing/baileys`);
+const { MessageType } = require(`@adiwajshing/baileys`);
 const UltronSitreper = require(`../../ʊʟȶʀօռ/UltronSitreper`);
 const ud = require(`urban-dictionary`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
@@ -19,16 +17,14 @@ Use this module to find the meaning of a word in Urban Dictionary. Enter  *${Ult
       if (!(ʊʟȶʀօռ.replyMessage === ``)) {
         text = ʊʟȶʀօռ.replyMessage;
       } else if (Arc.length === 0) {
+        await υℓтяσηℓιєηт.sendMessage(ʊʟȶʀօռ.chatId, "❌", MessageType.text);
         await υℓтяσηℓιєηт.sendMessage(
           ʊʟȶʀօռ.chatId,
-          "❌",
-          MessageType.text
-        );
-        await υℓтяσηℓιєηт.sendMessage(
-          ʊʟȶʀօռ.chatId, {
-            url: `https://i.postimg.cc/MGkpdxHT/ltr-Args.png`
+          {
+            url: `https://i.postimg.cc/MGkpdxHT/ltr-Args.png`,
           },
-          MessageType.image, {
+          MessageType.image,
+          {
             mimetype: Mimetype.jpeg,
             caption: `*⚠️Seems like someone forgot to give Movie/Series name!*
 
@@ -44,9 +40,9 @@ Use this module to find the meaning of a word in Urban Dictionary. Enter  *${Ult
       let Response = await ud.define(text);
       let result = Response.reduce(function (prev, current) {
         return prev.thumbs_up + prev.thumbs_down >
-          current.thumbs_up + current.thumbs_down ?
-          prev :
-          current;
+          current.thumbs_up + current.thumbs_down
+          ? prev
+          : current;
       });
 
       result.definition = result.definition.replace(/\[/g, `_`);
