@@ -3,6 +3,7 @@
 // ===============================================================================
 const translate = require(`@vitalets/google-translate-api`);
 const { MessageType } = require(`@adiwajshing/baileys`);
+const ℓιєηт = require("../../ʊʟȶʀօռ/catch");
 const UltronSitreper = require(`../../ʊʟȶʀօռ/UltronSitreper`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
@@ -18,36 +19,32 @@ If you do not specify a language, it defaults to <English class=''></English>`,
         `Translating. Please wait...`,
         MessageType.text
       )
-      .catch((cᴇʀʀᴏʀ) =>
-        υℓтяσηℓιєηт.sendMessage(
-          ʊʟȶʀօռ.chatId,
-          `*🎮ʊʟȶʀօռ™* 𝐝𝐢𝐝𝐧'𝐭 𝐰𝐨𝐫𝐤 𝐚𝐬 𝐞𝐱𝐩𝐞𝐜𝐭𝐞𝐝❗
-
-💡𝗛𝗲𝗿𝗲 𝗶𝘀 𝗮 𝘀𝗺𝗮𝗹𝗹 𝗲𝗿𝗿𝗼𝗿 𝗿𝗲𝗽𝗼𝗿𝘁 𝗮𝗻𝗱 𝘁𝗼 𝗹𝗼𝗴 𝘁𝗵𝗲 𝗿𝗲𝗽𝗼𝗿𝘁 𝘂𝘀𝗲 ${UltronSitreper.ULTRONIX}𝗿𝗲𝗽𝗼𝗿𝘁
-⚠️𝗘𝗿𝗿𝗼𝗿
-• ${cᴇʀʀᴏʀ}`,
-          MessageType.text
-        )
-      );
+      .catch((cᴇʀʀᴏʀ) => {
+        ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
+      });
     try {
       var text = ``;
       var language = ``;
       if (Arc.length === 0) {
         await υℓтяσηℓιєηт.sendMessage(ʊʟȶʀօռ.chatId, "❌", MessageType.text);
-        await υℓтяσηℓιєηт.sendMessage(
-          ʊʟȶʀօռ.chatId,
-          {
-            url: `https://i.postimg.cc/MGkpdxHT/ltr-Args.png`,
-          },
-          MessageType.image,
-          {
-            mimetype: Mimetype.jpeg,
-            caption: `*⚠️Seems like someone forgot to give Movie/Series name!*
+        await υℓтяσηℓιєηт
+          .sendMessage(
+            ʊʟȶʀօռ.chatId,
+            {
+              url: `https://i.postimg.cc/MGkpdxHT/ltr-Args.png`,
+            },
+            MessageType.image,
+            {
+              mimetype: Mimetype.jpeg,
+              caption: `*⚠️Seems like someone forgot to give Movie/Series name!*
 
 *Usage Example*
 .imdb <movie/series>`,
-          }
-        );
+            }
+          )
+          .catch((cᴇʀʀᴏʀ) => {
+            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
+          });
         return;
       }
       if (!ʊʟȶʀօռ.isReply) {
@@ -78,17 +75,9 @@ If you do not specify a language, it defaults to <English class=''></English>`,
             `Please reply to a text message.`,
             MessageType.text
           )
-          .catch((cᴇʀʀᴏʀ) =>
-            υℓтяσηℓιєηт.sendMessage(
-              ʊʟȶʀօռ.chatId,
-              `*🎮ʊʟȶʀօռ™* 𝐝𝐢𝐝𝐧'𝐭 𝐰𝐨𝐫𝐤 𝐚𝐬 𝐞𝐱𝐩𝐞𝐜𝐭𝐞𝐝❗
-
-💡𝗛𝗲𝗿𝗲 𝗶𝘀 𝗮 𝘀𝗺𝗮𝗹𝗹 𝗲𝗿𝗿𝗼𝗿 𝗿𝗲𝗽𝗼𝗿𝘁 𝗮𝗻𝗱 𝘁𝗼 𝗹𝗼𝗴 𝘁𝗵𝗲 𝗿𝗲𝗽𝗼𝗿𝘁 𝘂𝘀𝗲 ${UltronSitreper.ULTRONIX}𝗿𝗲𝗽𝗼𝗿𝘁
-⚠️𝗘𝗿𝗿𝗼𝗿
-• ${cᴇʀʀᴏʀ}`,
-              MessageType.text
-            )
-          );
+          .catch((cᴇʀʀᴏʀ) => {
+            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
+          });
       }
       if (text.length > 4000) {
         await υℓтяσηℓιєηт
@@ -99,17 +88,9 @@ If you do not specify a language, it defaults to <English class=''></English>`,
             ),
             MessageType.text
           )
-          .catch((cᴇʀʀᴏʀ) =>
-            υℓтяσηℓιєηт.sendMessage(
-              ʊʟȶʀօռ.chatId,
-              `*🎮ʊʟȶʀօռ™* 𝐝𝐢𝐝𝐧'𝐭 𝐰𝐨𝐫𝐤 𝐚𝐬 𝐞𝐱𝐩𝐞𝐜𝐭𝐞𝐝❗
-
-💡𝗛𝗲𝗿𝗲 𝗶𝘀 𝗮 𝘀𝗺𝗮𝗹𝗹 𝗲𝗿𝗿𝗼𝗿 𝗿𝗲𝗽𝗼𝗿𝘁 𝗮𝗻𝗱 𝘁𝗼 𝗹𝗼𝗴 𝘁𝗵𝗲 𝗿𝗲𝗽𝗼𝗿𝘁 𝘂𝘀𝗲 ${UltronSitreper.ULTRONIX}𝗿𝗲𝗽𝗼𝗿𝘁
-⚠️𝗘𝗿𝗿𝗼𝗿
-• ${cᴇʀʀᴏʀ}`,
-              MessageType.text
-            )
-          );
+          .catch((cᴇʀʀᴏʀ) => {
+            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
+          });
       }
       await translate(text, {
         to: language,
@@ -126,18 +107,7 @@ If you do not specify a language, it defaults to <English class=''></English>`,
           );
         })
         .catch((cᴇʀʀᴏʀ) => {
-          υℓтяσηℓιєηт.sendMessage(
-            ʊʟȶʀօռ.chatId,
-            `ꜱᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ ᴡʀᴏɴɢ.ʜᴇʀᴇ ᴀʀᴇ ꜱᴏᴍᴇ ʟᴏɢꜱ ꜱɪɴᴄᴇ ᴡʜᴇɴ ᴛʜᴇ ʙᴏᴛ ᴡᴀꜱ ɴᴏᴛ ʀᴇꜱᴘᴏɴᴅɪɴɢ ᴀꜱ ᴇxᴘᴇᴄᴛᴇᴅ.
-WRONG LANGUAGE!
-⚠️𝗘𝗿𝗿𝗼𝗿
-• ${cᴇʀʀᴏʀ}
-
-
-💡𝗖𝗼𝗺𝗺𝗮𝗻𝗱 • ${ʊʟȶʀօռ.moduleName}
-🎮𝗜𝘁 𝘄𝗮𝘀 𝗣𝗠? • ${ʊʟȶʀօռ.isPm}`,
-            MessageType.text
-          );
+          ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
         });
     } catch (cᴇʀʀᴏʀ) {
       υℓтяσηℓιєηт.sendMessage(

@@ -1,6 +1,7 @@
 // ===============================================================================
 // 🎮ʊʟȶʀօռ™ 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..
 // ===============================================================================
+const ℓιєηт = require("../../ʊʟȶʀօռ/catch");
 const { MessageType } = require(`@adiwajshing/baileys`);
 const UltronSitreper = require(`../../ʊʟȶʀօռ/UltronSitreper`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
@@ -12,11 +13,15 @@ Add the number to blocklist. You can reply to the person in group / pm or use .b
   async handle(υℓтяσηℓιєηт, chat, ʊʟȶʀօռ, Arc) {
     try {
       if (!ʊʟȶʀօռ.isReply && typeof Arc[0] == `undefined`) {
-        υℓтяσηℓιєηт.sendMessage(
-          ʊʟȶʀօռ.chatId,
-          `Tag a message or enter a number to proceed.`,
-          MessageType.text
-        );
+        υℓтяσηℓιєηт
+          .sendMessage(
+            ʊʟȶʀօռ.chatId,
+            `Tag a message or enter a number to proceed.`,
+            MessageType.text
+          )
+          .catch((cᴇʀʀᴏʀ) => {
+            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
+          });
         return;
       }
       const reply = chat.message.extendedTextMessage;
@@ -31,15 +36,19 @@ Add the number to blocklist. You can reply to the person in group / pm or use .b
             if (Arc[0][0] === `@` || Arc[0][0] === `+`) {
               JoinIDNum = Arc[0].substring(1, Arc[0].length + 1);
             } else {
-              υℓтяσηℓιєηт.sendMessage(
-                ʊʟȶʀօռ.chatId,
-                `*Enter valid contact number.* 
+              υℓтяσηℓιєηт
+                .sendMessage(
+                  ʊʟȶʀօռ.chatId,
+                  `*Enter valid contact number.* 
 Approved Syntax:
 1. XXXXXXXXXX
 2. Tag the person
 3. +(YYY)XXXXXXXXXX _(YY- Country Code, without zeros)_`,
-                MessageType.text
-              );
+                  MessageType.text
+                )
+                .catch((cᴇʀʀᴏʀ) => {
+                  ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
+                });
               return;
             }
           } else {
@@ -47,15 +56,19 @@ Approved Syntax:
           }
 
           if (JoinIDNum.length < 8 || JoinIDNum.length > 13) {
-            υℓтяσηℓιєηт.sendMessage(
-              ʊʟȶʀօռ.chatId,
-              `*Enter valid contact number.* 
+            υℓтяσηℓιєηт
+              .sendMessage(
+                ʊʟȶʀօռ.chatId,
+                `*Enter valid contact number.* 
 Approved Syntax:
 1. XXXXXXXXXX
 2. Tag the person
 3. +(YYY)XXXXXXXXXX _(YY- Country Code, without zeros)_`,
-              MessageType.text
-            );
+                MessageType.text
+              )
+              .catch((cᴇʀʀᴏʀ) => {
+                ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
+              });
             return;
           } else if (JoinIDNum.length === 10) {
             JoinIDNum = countryCode + JoinIDNum;
@@ -69,29 +82,41 @@ Approved Syntax:
       }
 
       if (contact === ʊʟȶʀօռ.owner.split(`@`)[0]) {
-        υℓтяσηℓιєηт.sendMessage(
-          ʊʟȶʀօռ.chatId,
-          `Bot can not block itself`,
-          MessageType.text
-        );
+        υℓтяσηℓιєηт
+          .sendMessage(
+            ʊʟȶʀօռ.chatId,
+            `Bot can not block itself`,
+            MessageType.text
+          )
+          .catch((cᴇʀʀᴏʀ) => {
+            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
+          });
         return;
       }
 
       if (contact === ``) {
-        υℓтяσηℓιєηт.sendMessage(
-          ʊʟȶʀօռ.chatId,
-          `Tag a message or enter a number to proceed.`,
-          MessageType.text
-        );
+        υℓтяσηℓιєηт
+          .sendMessage(
+            ʊʟȶʀօռ.chatId,
+            `Tag a message or enter a number to proceed.`,
+            MessageType.text
+          )
+          .catch((cᴇʀʀᴏʀ) => {
+            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
+          });
         return;
       }
       var JID = contact + `@s.whatsapp.net`;
       υℓтяσηℓιєηт.blockUser(JID, `add`);
-      υℓтяσηℓιєηт.sendMessage(
-        ʊʟȶʀօռ.chatId,
-        `*` + contact + ` blocked successfully.*`,
-        MessageType.text
-      );
+      υℓтяσηℓιєηт
+        .sendMessage(
+          ʊʟȶʀօռ.chatId,
+          `*` + contact + ` blocked successfully.*`,
+          MessageType.text
+        )
+        .catch((cᴇʀʀᴏʀ) => {
+          ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
+        });
     } catch (cᴇʀʀᴏʀ) {
       υℓтяσηℓιєηт.sendMessage(
         ʊʟȶʀօռ.chatId,

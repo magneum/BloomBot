@@ -3,6 +3,7 @@
 // ===============================================================================
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const UltronSitreper = require(`../../ʊʟȶʀօռ/UltronSitreper`);
+const ℓιєηт = require("../../ʊʟȶʀօռ/catch");
 const {
   getDadjoke,
   getPunchLine,
@@ -24,7 +25,11 @@ jokes`,
     try {
       const dadJoke = await getDadjoke();
       console.log(dadJoke);
-      await υℓтяσηℓιєηт.sendMessage(ʊʟȶʀօռ.chatId, dadJoke, MessageType.text);
+      await υℓтяσηℓιєηт
+        .sendMessage(ʊʟȶʀօռ.chatId, dadJoke, MessageType.text)
+        .catch((cᴇʀʀᴏʀ) => {
+          ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
+        });
     } catch (err) {
       console.log(err);
     }

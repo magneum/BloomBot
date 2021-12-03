@@ -3,6 +3,7 @@
 // ===============================================================================
 const { MessageType } = require(`@adiwajshing/baileys`);
 const Greetings = require(`../../ʊʟȶʀօռ/wlcmr`);
+const ℓιєηт = require("../../ʊʟȶʀօռ/catch");
 const UltronSitreper = require(`../../ʊʟȶʀօռ/UltronSitreper`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
@@ -21,17 +22,9 @@ The welcome option can be disabled but saved using the   *${UltronSitreper.ULTRO
             `This module is only applicable in a group chat.`,
             MessageType.text
           )
-          .catch((cᴇʀʀᴏʀ) =>
-            υℓтяσηℓιєηт.sendMessage(
-              ʊʟȶʀօռ.chatId,
-              `*🎮ʊʟȶʀօռ™* 𝐝𝐢𝐝𝐧'𝐭 𝐰𝐨𝐫𝐤 𝐚𝐬 𝐞𝐱𝐩𝐞𝐜𝐭𝐞𝐝❗
-
-💡𝗛𝗲𝗿𝗲 𝗶𝘀 𝗮 𝘀𝗺𝗮𝗹𝗹 𝗲𝗿𝗿𝗼𝗿 𝗿𝗲𝗽𝗼𝗿𝘁 𝗮𝗻𝗱 𝘁𝗼 𝗹𝗼𝗴 𝘁𝗵𝗲 𝗿𝗲𝗽𝗼𝗿𝘁 𝘂𝘀𝗲 ${UltronSitreper.ULTRONIX}𝗿𝗲𝗽𝗼𝗿𝘁
-⚠️𝗘𝗿𝗿𝗼𝗿
-• ${cᴇʀʀᴏʀ}`,
-              MessageType.text
-            )
-          );
+          .catch((cᴇʀʀᴏʀ) => {
+            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
+          });
         return;
       }
       var Msg = await Greetings.getMessage(ʊʟȶʀօռ.chatId, `welcome`);
@@ -45,17 +38,9 @@ The welcome option can be disabled but saved using the   *${UltronSitreper.ULTRO
                 `Set a welcome message first.`,
                 MessageType.text
               )
-              .catch((cᴇʀʀᴏʀ) =>
-                υℓтяσηℓιєηт.sendMessage(
-                  ʊʟȶʀօռ.chatId,
-                  `*🎮ʊʟȶʀօռ™* 𝐝𝐢𝐝𝐧'𝐭 𝐰𝐨𝐫𝐤 𝐚𝐬 𝐞𝐱𝐩𝐞𝐜𝐭𝐞𝐝❗
-
-💡𝗛𝗲𝗿𝗲 𝗶𝘀 𝗮 𝘀𝗺𝗮𝗹𝗹 𝗲𝗿𝗿𝗼𝗿 𝗿𝗲𝗽𝗼𝗿𝘁 𝗮𝗻𝗱 𝘁𝗼 𝗹𝗼𝗴 𝘁𝗵𝗲 𝗿𝗲𝗽𝗼𝗿𝘁 𝘂𝘀𝗲 ${UltronSitreper.ULTRONIX}𝗿𝗲𝗽𝗼𝗿𝘁
-⚠️𝗘𝗿𝗿𝗼𝗿
-• ${cᴇʀʀᴏʀ}`,
-                  MessageType.text
-                )
-              );
+              .catch((cᴇʀʀᴏʀ) => {
+                ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
+              });
             return;
           } else if (enabled === `OFF`) {
             υℓтяσηℓιєηт
@@ -64,30 +49,14 @@ The welcome option can be disabled but saved using the   *${UltronSitreper.ULTRO
                 `Greetings are enabled: False \nCurrently greeting new members with:`,
                 MessageType.text
               )
-              .catch((cᴇʀʀᴏʀ) =>
-                υℓтяσηℓιєηт.sendMessage(
-                  ʊʟȶʀօռ.chatId,
-                  `*🎮ʊʟȶʀօռ™* 𝐝𝐢𝐝𝐧'𝐭 𝐰𝐨𝐫𝐤 𝐚𝐬 𝐞𝐱𝐩𝐞𝐜𝐭𝐞𝐝❗
-
-💡𝗛𝗲𝗿𝗲 𝗶𝘀 𝗮 𝘀𝗺𝗮𝗹𝗹 𝗲𝗿𝗿𝗼𝗿 𝗿𝗲𝗽𝗼𝗿𝘁 𝗮𝗻𝗱 𝘁𝗼 𝗹𝗼𝗴 𝘁𝗵𝗲 𝗿𝗲𝗽𝗼𝗿𝘁 𝘂𝘀𝗲 ${UltronSitreper.ULTRONIX}𝗿𝗲𝗽𝗼𝗿𝘁
-⚠️𝗘𝗿𝗿𝗼𝗿
-• ${cᴇʀʀᴏʀ}`,
-                  MessageType.text
-                )
-              );
+              .catch((cᴇʀʀᴏʀ) => {
+                ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
+              });
             υℓтяσηℓιєηт
               .sendMessage(ʊʟȶʀօռ.chatId, Msg.message, MessageType.text)
-              .catch((cᴇʀʀᴏʀ) =>
-                υℓтяσηℓιєηт.sendMessage(
-                  ʊʟȶʀօռ.chatId,
-                  `*🎮ʊʟȶʀօռ™* 𝐝𝐢𝐝𝐧'𝐭 𝐰𝐨𝐫𝐤 𝐚𝐬 𝐞𝐱𝐩𝐞𝐜𝐭𝐞𝐝❗
-
-💡𝗛𝗲𝗿𝗲 𝗶𝘀 𝗮 𝘀𝗺𝗮𝗹𝗹 𝗲𝗿𝗿𝗼𝗿 𝗿𝗲𝗽𝗼𝗿𝘁 𝗮𝗻𝗱 𝘁𝗼 𝗹𝗼𝗴 𝘁𝗵𝗲 𝗿𝗲𝗽𝗼𝗿𝘁 𝘂𝘀𝗲 ${UltronSitreper.ULTRONIX}𝗿𝗲𝗽𝗼𝗿𝘁
-⚠️𝗘𝗿𝗿𝗼𝗿
-• ${cᴇʀʀᴏʀ}`,
-                  MessageType.text
-                )
-              );
+              .catch((cᴇʀʀᴏʀ) => {
+                ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
+              });
             return;
           }
 
@@ -97,30 +66,14 @@ The welcome option can be disabled but saved using the   *${UltronSitreper.ULTRO
               `Greetings are enabled: True \nCurrently greeting new members with:`,
               MessageType.text
             )
-            .catch((cᴇʀʀᴏʀ) =>
-              υℓтяσηℓιєηт.sendMessage(
-                ʊʟȶʀօռ.chatId,
-                `*🎮ʊʟȶʀօռ™* 𝐝𝐢𝐝𝐧'𝐭 𝐰𝐨𝐫𝐤 𝐚𝐬 𝐞𝐱𝐩𝐞𝐜𝐭𝐞𝐝❗
-
-💡𝗛𝗲𝗿𝗲 𝗶𝘀 𝗮 𝘀𝗺𝗮𝗹𝗹 𝗲𝗿𝗿𝗼𝗿 𝗿𝗲𝗽𝗼𝗿𝘁 𝗮𝗻𝗱 𝘁𝗼 𝗹𝗼𝗴 𝘁𝗵𝗲 𝗿𝗲𝗽𝗼𝗿𝘁 𝘂𝘀𝗲 ${UltronSitreper.ULTRONIX}𝗿𝗲𝗽𝗼𝗿𝘁
-⚠️𝗘𝗿𝗿𝗼𝗿
-• ${cᴇʀʀᴏʀ}`,
-                MessageType.text
-              )
-            );
+            .catch((cᴇʀʀᴏʀ) => {
+              ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
+            });
           υℓтяσηℓιєηт
             .sendMessage(ʊʟȶʀօռ.chatId, Msg.message, MessageType.text)
-            .catch((cᴇʀʀᴏʀ) =>
-              υℓтяσηℓιєηт.sendMessage(
-                ʊʟȶʀօռ.chatId,
-                `*🎮ʊʟȶʀօռ™* 𝐝𝐢𝐝𝐧'𝐭 𝐰𝐨𝐫𝐤 𝐚𝐬 𝐞𝐱𝐩𝐞𝐜𝐭𝐞𝐝❗
-
-💡𝗛𝗲𝗿𝗲 𝗶𝘀 𝗮 𝘀𝗺𝗮𝗹𝗹 𝗲𝗿𝗿𝗼𝗿 𝗿𝗲𝗽𝗼𝗿𝘁 𝗮𝗻𝗱 𝘁𝗼 𝗹𝗼𝗴 𝘁𝗵𝗲 𝗿𝗲𝗽𝗼𝗿𝘁 𝘂𝘀𝗲 ${UltronSitreper.ULTRONIX}𝗿𝗲𝗽𝗼𝗿𝘁
-⚠️𝗘𝗿𝗿𝗼𝗿
-• ${cᴇʀʀᴏʀ}`,
-                MessageType.text
-              )
-            );
+            .catch((cᴇʀʀᴏʀ) => {
+              ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
+            });
         } catch (cᴇʀʀᴏʀ) {
           throw cᴇʀʀᴏʀ;
         }
@@ -135,17 +88,9 @@ The welcome option can be disabled but saved using the   *${UltronSitreper.ULTRO
                 `Welcome message has been disabled.`,
                 MessageType.text
               )
-              .catch((cᴇʀʀᴏʀ) =>
-                υℓтяσηℓιєηт.sendMessage(
-                  ʊʟȶʀօռ.chatId,
-                  `*🎮ʊʟȶʀօռ™* 𝐝𝐢𝐝𝐧'𝐭 𝐰𝐨𝐫𝐤 𝐚𝐬 𝐞𝐱𝐩𝐞𝐜𝐭𝐞𝐝❗
-
-💡𝗛𝗲𝗿𝗲 𝗶𝘀 𝗮 𝘀𝗺𝗮𝗹𝗹 𝗲𝗿𝗿𝗼𝗿 𝗿𝗲𝗽𝗼𝗿𝘁 𝗮𝗻𝗱 𝘁𝗼 𝗹𝗼𝗴 𝘁𝗵𝗲 𝗿𝗲𝗽𝗼𝗿𝘁 𝘂𝘀𝗲 ${UltronSitreper.ULTRONIX}𝗿𝗲𝗽𝗼𝗿𝘁
-⚠️𝗘𝗿𝗿𝗼𝗿
-• ${cᴇʀʀᴏʀ}`,
-                  MessageType.text
-                )
-              );
+              .catch((cᴇʀʀᴏʀ) => {
+                ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
+              });
             return;
           }
           if (Arc[0] === `ON` || Arc[0] === `on` || Arc[0] === `On`) {
@@ -157,18 +102,9 @@ The welcome option can be disabled but saved using the   *${UltronSitreper.ULTRO
                 `Welcome message has been enabled.`,
                 MessageType.text
               )
-              .catch((cᴇʀʀᴏʀ) =>
-                υℓтяσηℓιєηт.sendMessage(
-                  ʊʟȶʀօռ.chatId,
-                  `*🎮ʊʟȶʀօռ™* 𝐝𝐢𝐝𝐧'𝐭 𝐰𝐨𝐫𝐤 𝐚𝐬 𝐞𝐱𝐩𝐞𝐜𝐭𝐞𝐝❗
-
-💡𝗛𝗲𝗿𝗲 𝗶𝘀 𝗮 𝘀𝗺𝗮𝗹𝗹 𝗲𝗿𝗿𝗼𝗿 𝗿𝗲𝗽𝗼𝗿𝘁 𝗮𝗻𝗱 𝘁𝗼 𝗹𝗼𝗴 𝘁𝗵𝗲 𝗿𝗲𝗽𝗼𝗿𝘁 𝘂𝘀𝗲 ${UltronSitreper.ULTRONIX}𝗿𝗲𝗽𝗼𝗿𝘁
-⚠️𝗘𝗿𝗿𝗼𝗿
-• ${cᴇʀʀᴏʀ}`,
-                  MessageType.text
-                )
-              );
-
+              .catch((cᴇʀʀᴏʀ) => {
+                ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
+              });
             return;
           }
           if (Arc[0] === `delete`) {
@@ -180,17 +116,9 @@ The welcome option can be disabled but saved using the   *${UltronSitreper.ULTRO
                   `Set a welcome message first.`,
                   MessageType.text
                 )
-                .catch((cᴇʀʀᴏʀ) =>
-                  υℓтяσηℓιєηт.sendMessage(
-                    ʊʟȶʀօռ.chatId,
-                    `*🎮ʊʟȶʀօռ™* 𝐝𝐢𝐝𝐧'𝐭 𝐰𝐨𝐫𝐤 𝐚𝐬 𝐞𝐱𝐩𝐞𝐜𝐭𝐞𝐝❗
-
-💡𝗛𝗲𝗿𝗲 𝗶𝘀 𝗮 𝘀𝗺𝗮𝗹𝗹 𝗲𝗿𝗿𝗼𝗿 𝗿𝗲𝗽𝗼𝗿𝘁 𝗮𝗻𝗱 𝘁𝗼 𝗹𝗼𝗴 𝘁𝗵𝗲 𝗿𝗲𝗽𝗼𝗿𝘁 𝘂𝘀𝗲 ${UltronSitreper.ULTRONIX}𝗿𝗲𝗽𝗼𝗿𝘁
-⚠️𝗘𝗿𝗿𝗼𝗿
-• ${cᴇʀʀᴏʀ}`,
-                    MessageType.text
-                  )
-                );
+                .catch((cᴇʀʀᴏʀ) => {
+                  ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
+                });
               return;
             }
 
@@ -200,18 +128,9 @@ The welcome option can be disabled but saved using the   *${UltronSitreper.ULTRO
                 `Welcome message deleted.`,
                 MessageType.text
               )
-              .catch((cᴇʀʀᴏʀ) =>
-                υℓтяσηℓιєηт.sendMessage(
-                  ʊʟȶʀօռ.chatId,
-                  `*🎮ʊʟȶʀօռ™* 𝐝𝐢𝐝𝐧'𝐭 𝐰𝐨𝐫𝐤 𝐚𝐬 𝐞𝐱𝐩𝐞𝐜𝐭𝐞𝐝❗
-
-💡𝗛𝗲𝗿𝗲 𝗶𝘀 𝗮 𝘀𝗺𝗮𝗹𝗹 𝗲𝗿𝗿𝗼𝗿 𝗿𝗲𝗽𝗼𝗿𝘁 𝗮𝗻𝗱 𝘁𝗼 𝗹𝗼𝗴 𝘁𝗵𝗲 𝗿𝗲𝗽𝗼𝗿𝘁 𝘂𝘀𝗲 ${UltronSitreper.ULTRONIX}𝗿𝗲𝗽𝗼𝗿𝘁
-⚠️𝗘𝗿𝗿𝗼𝗿
-• ${cᴇʀʀᴏʀ}`,
-                  MessageType.text
-                )
-              );
-
+              .catch((cᴇʀʀᴏʀ) => {
+                ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
+              });
             return;
           }
           text = ʊʟȶʀօռ.body.replace(
@@ -226,18 +145,9 @@ The welcome option can be disabled but saved using the   *${UltronSitreper.ULTRO
                 `Welcome message updated and enabled.`,
                 MessageType.text
               )
-              .catch((cᴇʀʀᴏʀ) =>
-                υℓтяσηℓιєηт.sendMessage(
-                  ʊʟȶʀօռ.chatId,
-                  `*🎮ʊʟȶʀօռ™* 𝐝𝐢𝐝𝐧'𝐭 𝐰𝐨𝐫𝐤 𝐚𝐬 𝐞𝐱𝐩𝐞𝐜𝐭𝐞𝐝❗
-
-💡𝗛𝗲𝗿𝗲 𝗶𝘀 𝗮 𝘀𝗺𝗮𝗹𝗹 𝗲𝗿𝗿𝗼𝗿 𝗿𝗲𝗽𝗼𝗿𝘁 𝗮𝗻𝗱 𝘁𝗼 𝗹𝗼𝗴 𝘁𝗵𝗲 𝗿𝗲𝗽𝗼𝗿𝘁 𝘂𝘀𝗲 ${UltronSitreper.ULTRONIX}𝗿𝗲𝗽𝗼𝗿𝘁
-⚠️𝗘𝗿𝗿𝗼𝗿
-• ${cᴇʀʀᴏʀ}`,
-                  MessageType.text
-                )
-              );
-
+              .catch((cᴇʀʀᴏʀ) => {
+                ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
+              });
             return;
           } else {
             await Greetings.deleteMessage(ʊʟȶʀօռ.chatId, `welcome`);
@@ -248,18 +158,9 @@ The welcome option can be disabled but saved using the   *${UltronSitreper.ULTRO
                 `Welcome message updated and enabled.`,
                 MessageType.text
               )
-              .catch((cᴇʀʀᴏʀ) =>
-                υℓтяσηℓιєηт.sendMessage(
-                  ʊʟȶʀօռ.chatId,
-                  `*🎮ʊʟȶʀօռ™* 𝐝𝐢𝐝𝐧'𝐭 𝐰𝐨𝐫𝐤 𝐚𝐬 𝐞𝐱𝐩𝐞𝐜𝐭𝐞𝐝❗
-
-💡𝗛𝗲𝗿𝗲 𝗶𝘀 𝗮 𝘀𝗺𝗮𝗹𝗹 𝗲𝗿𝗿𝗼𝗿 𝗿𝗲𝗽𝗼𝗿𝘁 𝗮𝗻𝗱 𝘁𝗼 𝗹𝗼𝗴 𝘁𝗵𝗲 𝗿𝗲𝗽𝗼𝗿𝘁 𝘂𝘀𝗲 ${UltronSitreper.ULTRONIX}𝗿𝗲𝗽𝗼𝗿𝘁
-⚠️𝗘𝗿𝗿𝗼𝗿
-• ${cᴇʀʀᴏʀ}`,
-                  MessageType.text
-                )
-              );
-
+              .catch((cᴇʀʀᴏʀ) => {
+                ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
+              });
             return;
           }
         } catch (cᴇʀʀᴏʀ) {

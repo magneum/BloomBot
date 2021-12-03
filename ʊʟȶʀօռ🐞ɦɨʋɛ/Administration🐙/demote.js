@@ -1,6 +1,7 @@
 // ===============================================================================
 // 🎮ʊʟȶʀօռ™ 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..
 // ===============================================================================
+const ℓιєηт = require("../../ʊʟȶʀօռ/catch");
 const { MessageType } = require(`@adiwajshing/baileys`);
 const UltronSitreper = require(`../../ʊʟȶʀօռ/UltronSitreper`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
@@ -12,27 +13,39 @@ Use this module to demote a person from admin by entering the person's mobile nu
   async handle(υℓтяσηℓιєηт, chat, ʊʟȶʀօռ, Arc) {
     try {
       if (!ʊʟȶʀօռ.isGroup) {
-        υℓтяσηℓιєηт.sendMessage(
-          ʊʟȶʀօռ.chatId,
-          `This module is only applicable for group chats.`,
-          MessageType.text
-        );
+        υℓтяσηℓιєηт
+          .sendMessage(
+            ʊʟȶʀօռ.chatId,
+            `This module is only applicable for group chats.`,
+            MessageType.text
+          )
+          .catch((cᴇʀʀᴏʀ) => {
+            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
+          });
         return;
       }
       if (!ʊʟȶʀօռ.isBotGroupAdmin) {
-        υℓтяσηℓιєηт.sendMessage(
-          ʊʟȶʀօռ.chatId,
-          `Sorry, dont have the permission to do so since I am not an admin.`,
-          MessageType.text
-        );
+        υℓтяσηℓιєηт
+          .sendMessage(
+            ʊʟȶʀօռ.chatId,
+            `Sorry, dont have the permission to do so since I am not an admin.`,
+            MessageType.text
+          )
+          .catch((cᴇʀʀᴏʀ) => {
+            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
+          });
         return;
       }
       if (!ʊʟȶʀօռ.isReply && typeof Arc[0] == `undefined`) {
-        υℓтяσηℓιєηт.sendMessage(
-          ʊʟȶʀօռ.chatId,
-          `Reply/tag/enter contact number of the person to be demoted.`,
-          MessageType.text
-        );
+        υℓтяσηℓιєηт
+          .sendMessage(
+            ʊʟȶʀօռ.chatId,
+            `Reply/tag/enter contact number of the person to be demoted.`,
+            MessageType.text
+          )
+          .catch((cᴇʀʀᴏʀ) => {
+            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
+          });
         return;
       }
 
@@ -47,15 +60,19 @@ Use this module to demote a person from admin by entering the person's mobile nu
             if (Arc[0][0] === `@` || Arc[0][0] === `+`) {
               JoinIDNum = Arc[0].substring(1, Arc[0].length + 1);
             } else {
-              υℓтяσηℓιєηт.sendMessage(
-                ʊʟȶʀօռ.chatId,
-                `*Enter valid contact number.* 
+              υℓтяσηℓιєηт
+                .sendMessage(
+                  ʊʟȶʀօռ.chatId,
+                  `*Enter valid contact number.* 
 Approved Syntax:
 1. XXXXXXXXXX
 2. Tag the person
 3. +(YYY)XXXXXXXXXX _(YY- Country Code, without zeros)_`,
-                MessageType.text
-              );
+                  MessageType.text
+                )
+                .catch((cᴇʀʀᴏʀ) => {
+                  ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
+                });
               return;
             }
           } else {
@@ -63,15 +80,19 @@ Approved Syntax:
           }
 
           if (JoinIDNum.length < 8 || JoinIDNum.length > 13) {
-            υℓтяσηℓιєηт.sendMessage(
-              ʊʟȶʀօռ.chatId,
-              `*Enter valid contact number.* 
+            υℓтяσηℓιєηт
+              .sendMessage(
+                ʊʟȶʀօռ.chatId,
+                `*Enter valid contact number.* 
 Approved Syntax:
 1. XXXXXXXXXX
 2. Tag the person
 3. +(YYY)XXXXXXXXXX _(YY- Country Code, without zeros)_`,
-              MessageType.text
-            );
+                MessageType.text
+              )
+              .catch((cᴇʀʀᴏʀ) => {
+                ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
+              });
             return;
           } else if (JoinIDNum.length === 10) {
             JoinIDNum = countryCode + JoinIDNum;
@@ -107,11 +128,15 @@ Approved Syntax:
       }
 
       if (contact === owner) {
-        υℓтяσηℓιєηт.sendMessage(
-          ʊʟȶʀօռ.chatId,
-          `*` + contact + ` is the owner of the group*`,
-          MessageType.text
-        );
+        υℓтяσηℓιєηт
+          .sendMessage(
+            ʊʟȶʀօռ.chatId,
+            `*` + contact + ` is the owner of the group*`,
+            MessageType.text
+          )
+          .catch((cᴇʀʀᴏʀ) => {
+            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
+          });
         return;
       }
 
@@ -119,18 +144,26 @@ Approved Syntax:
         if (admin == true) {
           const arr = [contact + `@s.whatsapp.net`];
           υℓтяσηℓιєηт.groupDemoteAdmin(ʊʟȶʀօռ.chatId, arr);
-          υℓтяσηℓιєηт.sendMessage(
-            ʊʟȶʀօռ.chatId,
-            `*` + contact + ` is demoted from admin*`,
-            MessageType.text
-          );
+          υℓтяσηℓιєηт
+            .sendMessage(
+              ʊʟȶʀօռ.chatId,
+              `*` + contact + ` is demoted from admin*`,
+              MessageType.text
+            )
+            .catch((cᴇʀʀᴏʀ) => {
+              ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
+            });
           return;
         } else {
-          υℓтяσηℓιєηт.sendMessage(
-            ʊʟȶʀօռ.chatId,
-            `*` + contact + ` was not an admin*`,
-            MessageType.text
-          );
+          υℓтяσηℓιєηт
+            .sendMessage(
+              ʊʟȶʀօռ.chatId,
+              `*` + contact + ` was not an admin*`,
+              MessageType.text
+            )
+            .catch((cᴇʀʀᴏʀ) => {
+              ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
+            });
           return;
         }
       }
@@ -139,11 +172,11 @@ Approved Syntax:
           return;
         }
 
-        υℓтяσηℓιєηт.sendMessage(
-          ʊʟȶʀօռ.chatId,
-          `Person not found.`,
-          MessageType.text
-        );
+        υℓтяσηℓιєηт
+          .sendMessage(ʊʟȶʀօռ.chatId, `Person not found.`, MessageType.text)
+          .catch((cᴇʀʀᴏʀ) => {
+            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
+          });
         return;
       }
       return;

@@ -3,6 +3,7 @@
 // ===============================================================================
 const { MessageType } = require(`@adiwajshing/baileys`);
 const ocrSpace = require(`ocr-space-api-wrapper`);
+const ℓιєηт = require("../../ʊʟȶʀօռ/catch");
 const UltronSitreper = require(`../../ʊʟȶʀօռ/UltronSitreper`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
@@ -28,13 +29,21 @@ Use this module to obtain text from an image by  *${UltronSitreper.ULTRONIX}spac
           });
           var Msg = text.ParsedResults[0].ParsedText;
           if (Msg === ``) {
-            υℓтяσηℓιєηт.sendMessage(
-              ʊʟȶʀօռ.chatId,
-              `Couldn't find text in the image`,
-              MessageType.text
-            );
+            υℓтяσηℓιєηт
+              .sendMessage(
+                ʊʟȶʀօռ.chatId,
+                `Couldn't find text in the image`,
+                MessageType.text
+              )
+              .catch((cᴇʀʀᴏʀ) => {
+                ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
+              });
           }
-          υℓтяσηℓιєηт.sendMessage(ʊʟȶʀօռ.chatId, Msg, MessageType.text);
+          υℓтяσηℓιєηт
+            .sendMessage(ʊʟȶʀօռ.chatId, Msg, MessageType.text)
+            .catch((cᴇʀʀᴏʀ) => {
+              ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
+            });
         } catch (cᴇʀʀᴏʀ) {
           throw cᴇʀʀᴏʀ;
         }
@@ -62,13 +71,21 @@ Use this module to obtain text from an image by  *${UltronSitreper.ULTRONIX}spac
           });
           var Msg = text.ParsedResults[0].ParsedText;
           if (Msg === ``) {
-            υℓтяσηℓιєηт.sendMessage(
-              ʊʟȶʀօռ.chatId,
-              `Couldn't find text in the image`,
-              MessageType.text
-            );
+            υℓтяσηℓιєηт
+              .sendMessage(
+                ʊʟȶʀօռ.chatId,
+                `Couldn't find text in the image`,
+                MessageType.text
+              )
+              .catch((cᴇʀʀᴏʀ) => {
+                ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
+              });
           }
-          υℓтяσηℓιєηт.sendMessage(ʊʟȶʀօռ.chatId, Msg, MessageType.text);
+          υℓтяσηℓιєηт
+            .sendMessage(ʊʟȶʀօռ.chatId, Msg, MessageType.text)
+            .catch((cᴇʀʀᴏʀ) => {
+              ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
+            });
         } catch (cᴇʀʀᴏʀ) {
           throw cᴇʀʀᴏʀ;
         }
@@ -81,18 +98,26 @@ Use this module to obtain text from an image by  *${UltronSitreper.ULTRONIX}spac
           };
       }
       setTimeout(async () => {
-        await υℓтяσηℓιєηт.sendMessage(
+        await υℓтяσηℓιєηт
+          .sendMessage(
+            ʊʟȶʀօռ.chatId,
+            `Please tag a valid message.`,
+            MessageType.text
+          )
+          .catch((cᴇʀʀᴏʀ) => {
+            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
+          });
+        return;
+      }, 300000);
+      await υℓтяσηℓιєηт
+        .sendMessage(
           ʊʟȶʀօռ.chatId,
           `Please tag a valid message.`,
           MessageType.text
-        );
-        return;
-      }, 300000);
-      await υℓтяσηℓιєηт.sendMessage(
-        ʊʟȶʀօռ.chatId,
-        `Please tag a valid message.`,
-        MessageType.text
-      );
+        )
+        .catch((cᴇʀʀᴏʀ) => {
+          ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
+        });
     } catch (CYΣЯЯ) {
       υℓтяσηℓιєηт.sendMessage(
         ʊʟȶʀօռ.chatId,

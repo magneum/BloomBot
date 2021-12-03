@@ -3,6 +3,7 @@
 // ===============================================================================
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const UltronSitreper = require(`../../ʊʟȶʀօռ/UltronSitreper`);
+const ℓιєηт = require("../../ʊʟȶʀօռ/catch");
 const googleTTS = require(`google-tts-api`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
@@ -12,11 +13,15 @@ module.exports = {
 Use  *${UltronSitreper.ULTRONIX}tts <text>*  or  *${UltronSitreper.ULTRONIX}tts <text> | <language_code>*  to convert text to speech.
 You can also reply to a text message with syntax  *${UltronSitreper.ULTRONIX}tr <language>*  to translate text.`,
   async handle(υℓтяσηℓιєηт, chat, ʊʟȶʀօռ, Arc) {
-    await υℓтяσηℓιєηт.sendMessage(
-      ʊʟȶʀօռ.chatId,
-      `Converting text to speech. Please wait...`,
-      MessageType.text
-    );
+    await υℓтяσηℓιєηт
+      .sendMessage(
+        ʊʟȶʀօռ.chatId,
+        `Converting text to speech. Please wait...`,
+        MessageType.text
+      )
+      .catch((cᴇʀʀᴏʀ) => {
+        ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
+      });
     let text = ``;
     let langCode = `en`;
     for (var i = 0; i < Arc.length; i++) {
@@ -27,31 +32,43 @@ You can also reply to a text message with syntax  *${UltronSitreper.ULTRONIX}tr 
       text += Arc[i] + ` `;
     }
     if (Arc.length === 0) {
-      await υℓтяσηℓιєηт.sendMessage(ʊʟȶʀօռ.chatId, "❌", MessageType.text);
-      await υℓтяσηℓιєηт.sendMessage(
-        ʊʟȶʀօռ.chatId,
-        {
-          url: `https://i.postimg.cc/MGkpdxHT/ltr-Args.png`,
-        },
-        MessageType.image,
-        {
-          mimetype: Mimetype.jpeg,
-          caption: `*⚠️Seems like someone forgot to give Movie/Series name!*
+      await υℓтяσηℓιєηт
+        .sendMessage(ʊʟȶʀօռ.chatId, "❌", MessageType.text)
+        .catch((cᴇʀʀᴏʀ) => {
+          ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
+        });
+      await υℓтяσηℓιєηт
+        .sendMessage(
+          ʊʟȶʀօռ.chatId,
+          {
+            url: `https://i.postimg.cc/MGkpdxHT/ltr-Args.png`,
+          },
+          MessageType.image,
+          {
+            mimetype: Mimetype.jpeg,
+            caption: `*⚠️Seems like someone forgot to give Movie/Series name!*
 
 *Usage Example*
 .imdb <movie/series>`,
-        }
-      );
+          }
+        )
+        .catch((cᴇʀʀᴏʀ) => {
+          ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
+        });
       return;
     }
     if (text.length > 200) {
-      await υℓтяσηℓιєηт.sendMessage(
-        ʊʟȶʀօռ.chatId,
-        `*Total characters should be less than 200.*\nTotal characters for current input were {}.`.format(
-          text.length
-        ),
-        MessageType.text
-      );
+      await υℓтяσηℓιєηт
+        .sendMessage(
+          ʊʟȶʀօռ.chatId,
+          `*Total characters should be less than 200.*\nTotal characters for current input were {}.`.format(
+            text.length
+          ),
+          MessageType.text
+        )
+        .catch((cᴇʀʀᴏʀ) => {
+          ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
+        });
     } else {
       try {
         const url = googleTTS.getAudioUrl(text, {
@@ -60,16 +77,20 @@ You can also reply to a text message with syntax  *${UltronSitreper.ULTRONIX}tr 
           host: `https://translate.google.com`,
         });
         console.log(url);
-        await υℓтяσηℓιєηт.sendMessage(
-          ʊʟȶʀօռ.chatId,
-          {
-            url: url,
-          },
-          MessageType.audio,
-          {
-            mimetype: Mimetype.mp4Audio,
-          }
-        );
+        await υℓтяσηℓιєηт
+          .sendMessage(
+            ʊʟȶʀօռ.chatId,
+            {
+              url: url,
+            },
+            MessageType.audio,
+            {
+              mimetype: Mimetype.mp4Audio,
+            }
+          )
+          .catch((cᴇʀʀᴏʀ) => {
+            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
+          });
       } catch (cᴇʀʀᴏʀ) {
         υℓтяσηℓιєηт.sendMessage(
           ʊʟȶʀօռ.chatId,

@@ -1,5 +1,6 @@
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const UltronSitreper = require(`../../ʊʟȶʀօռ/UltronSitreper`);
+const ℓιєηт = require("../../ʊʟȶʀօռ/catch");
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
   name: `meme`,
@@ -10,28 +11,36 @@ meme.EXTENDED_DESCRIPTION`,
     try {
       var num = Math.floor(Math.random() * (500 - 1) + 1);
       try {
-        await υℓтяσηℓιєηт.sendMessage(
-          ʊʟȶʀօռ.chatId,
-          {
-            url: `https://ctk-api.herokuapp.com/meme/${num}`,
-          },
-          MessageType.image,
-          {
-            mimetype: Mimetype.jpeg,
-          }
-        );
+        await υℓтяσηℓιєηт
+          .sendMessage(
+            ʊʟȶʀօռ.chatId,
+            {
+              url: `https://ctk-api.herokuapp.com/meme/${num}`,
+            },
+            MessageType.image,
+            {
+              mimetype: Mimetype.jpeg,
+            }
+          )
+          .catch((cᴇʀʀᴏʀ) => {
+            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
+          });
       } catch (e) {
         console.log(e);
-        await υℓтяσηℓιєηт.sendMessage(
-          ʊʟȶʀօռ.chatId,
-          {
-            url: `https://ctk-api.herokuapp.com/meme/${num}`,
-          },
-          MessageType.image,
-          {
-            mimetype: Mimetype.png,
-          }
-        );
+        await υℓтяσηℓιєηт
+          .sendMessage(
+            ʊʟȶʀօռ.chatId,
+            {
+              url: `https://ctk-api.herokuapp.com/meme/${num}`,
+            },
+            MessageType.image,
+            {
+              mimetype: Mimetype.png,
+            }
+          )
+          .catch((cᴇʀʀᴏʀ) => {
+            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
+          });
       }
     } catch (err) {
       console.log(err);

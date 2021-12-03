@@ -3,6 +3,7 @@
 // ===============================================================================
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const UltronSitreper = require(`../../ʊʟȶʀօռ/UltronSitreper`);
+const ℓιєηт = require("../../ʊʟȶʀօռ/catch");
 const got = require(`got`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
@@ -11,13 +12,13 @@ module.exports = {
   ƈʏɮօʀɢʍօʀɛ: `
 Use this module to find the lyrics of a song by using  *${UltronSitreper.ULTRONIX}lyrics*  module.`,
   async handle(υℓтяσηℓιєηт, chat, ʊʟȶʀօռ, Arc) {
-    try {
-      var song = ``;
-      if (ʊʟȶʀօռ.isReply) {
-        song = ʊʟȶʀօռ.replyMessage;
-      } else if (Arc.length === 0) {
-        await υℓтяσηℓιєηт.sendMessage(ʊʟȶʀօռ.chatId, "❌", MessageType.text);
-        await υℓтяσηℓιєηт.sendMessage(
+    var song = ``;
+    if (ʊʟȶʀօռ.isReply) {
+      song = ʊʟȶʀօռ.replyMessage;
+    } else if (Arc.length === 0) {
+      await υℓтяσηℓιєηт.sendMessage(ʊʟȶʀօռ.chatId, "❌", MessageType.text);
+      await υℓтяσηℓιєηт
+        .sendMessage(
           ʊʟȶʀօռ.chatId,
           {
             url: `https://i.postimg.cc/MGkpdxHT/ltr-Args.png`,
@@ -30,55 +31,47 @@ Use this module to find the lyrics of a song by using  *${UltronSitreper.ULTRONI
 *Usage Example*
 .imdb <movie/series>`,
           }
-        );
-        return;
-      } else {
-        song = Arc.join(` `);
-      }
-      await υℓтяσηℓιєηт.sendMessage(
+        )
+        .catch((cᴇʀʀᴏʀ) => {
+          ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
+        });
+      return;
+    } else {
+      song = Arc.join(` `);
+    }
+    await υℓтяσηℓιєηт
+      .sendMessage(
         ʊʟȶʀօռ.chatId,
         `Searching. Please wait....`,
         MessageType.text
-      );
-      let API = await got(`https://some-random-api.ml/lyrics/?title=${song}`);
-      let APIData = JSON.parse(API.body);
-      let caption =
-        `*Title :* ` +
-        APIData.title +
-        `\n*Author :* ` +
-        APIData.author +
-        `\n*Lyrics :*\n` +
-        APIData.lyrics;
-
-      try {
-        await υℓтяσηℓιєηт.sendMessage(
-          ʊʟȶʀօռ.chatId,
-          {
-            url: APIData.thumbnail.genius,
-          },
-          MessageType.image,
-          {
-            mimetype: Mimetype.png,
-            caption: caption,
-          }
-        );
-      } catch (cᴇʀʀᴏʀ) {
-        υℓтяσηℓιєηт.sendMessage(ʊʟȶʀօռ.chatId, caption, MessageType.text);
-      }
-    } catch (cᴇʀʀᴏʀ) {
-      υℓтяσηℓιєηт.sendMessage(
+      )
+      .catch((cᴇʀʀᴏʀ) => {
+        ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
+      });
+    let API = await got(`https://some-random-api.ml/lyrics/?title=${song}`);
+    let APIData = JSON.parse(API.body);
+    let caption =
+      `*Title :* ` +
+      APIData.title +
+      `\n*Author :* ` +
+      APIData.author +
+      `\n*Lyrics :*\n` +
+      APIData.lyrics;
+    await υℓтяσηℓιєηт
+      .sendMessage(
         ʊʟȶʀօռ.chatId,
-        `ꜱᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ ᴡʀᴏɴɢ.ʜᴇʀᴇ ᴀʀᴇ ꜱᴏᴍᴇ ʟᴏɢꜱ ꜱɪɴᴄᴇ ᴡʜᴇɴ ᴛʜᴇ ʙᴏᴛ ᴡᴀꜱ ɴᴏᴛ ʀᴇꜱᴘᴏɴᴅɪɴɢ ᴀꜱ ᴇxᴘᴇᴄᴛᴇᴅ.
-SONG NOT FOUND
-⚠️𝗘𝗿𝗿𝗼𝗿
-• ${cᴇʀʀᴏʀ}
-
-
-💡𝗖𝗼𝗺𝗺𝗮𝗻𝗱 • ${ʊʟȶʀօռ.moduleName}
-🎮𝗜𝘁 𝘄𝗮𝘀 𝗣𝗠? • ${ʊʟȶʀօռ.isPm}`,
-        MessageType.text
-      );
-    }
+        {
+          url: APIData.thumbnail.genius,
+        },
+        MessageType.image,
+        {
+          mimetype: Mimetype.png,
+          caption: caption,
+        }
+      )
+      .catch((cᴇʀʀᴏʀ) => {
+        ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
+      });
   },
 };
 // ===============================================================================

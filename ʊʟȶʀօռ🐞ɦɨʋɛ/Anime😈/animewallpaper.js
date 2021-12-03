@@ -3,6 +3,7 @@
 // ===============================================================================
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const UltronSitreper = require(`../../ʊʟȶʀօռ/UltronSitreper`);
+const ℓιєηт = require("../../ʊʟȶʀօռ/catch");
 const anime = require("anime-actions");
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
@@ -11,8 +12,8 @@ module.exports = {
   ƈʏɮօʀɢʍօʀɛ: `
 	I know you like anime wallpaper`,
   async handle(υℓтяσηℓιєηт, chat, ʊʟȶʀօռ, Arc) {
-    try {
-      await υℓтяσηℓιєηт.sendMessage(
+    await υℓтяσηℓιєηт
+      .sendMessage(
         ʊʟȶʀօռ.chatId,
         {
           url: await anime.wallpaper(),
@@ -22,10 +23,10 @@ module.exports = {
           mimetype: Mimetype.jpeg,
           caption: `_ᴘᴏᴡᴇʀᴇᴅ ʙʏ_\n*🐙KЯПZΛPP♙*`,
         }
-      );
-    } catch (err) {
-      console.log(err);
-    }
+      )
+      .catch((cᴇʀʀᴏʀ) => {
+        ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
+      });
   },
 };
 // ===============================================================================

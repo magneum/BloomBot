@@ -3,6 +3,7 @@
 // ===============================================================================
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const UltronSitreper = require(`../../ʊʟȶʀօռ/UltronSitreper`);
+const ℓιєηт = require("../../ʊʟȶʀօռ/catch");
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
   name: "spam",
@@ -11,33 +12,41 @@ module.exports = {
   async handle(υℓтяσηℓιєηт, chat, ʊʟȶʀօռ, Arc) {
     let count = Number(Arc.shift());
     if (isNaN(count)) {
-      await υℓтяσηℓιєηт.sendMessage(
-        ʊʟȶʀօռ.chatId,
-        `Invalid count`,
-        MessageType.text
-      );
+      await υℓтяσηℓιєηт
+        .sendMessage(ʊʟȶʀօռ.chatId, `Invalid count`, MessageType.text)
+        .catch((cᴇʀʀᴏʀ) => {
+          ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
+        });
       return 0;
     }
     if (count > 0) {
       count = parseInt(count);
     } else {
-      await υℓтяσηℓιєηт.sendMessage(
-        ʊʟȶʀօռ.chatId,
-        `Count can't be zero.`,
-        MessageType.text
-      );
+      await υℓтяσηℓιєηт
+        .sendMessage(ʊʟȶʀօռ.chatId, `Count can't be zero.`, MessageType.text)
+        .catch((cᴇʀʀᴏʀ) => {
+          ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
+        });
       return 0;
     }
     if (Arc.length) {
       let text = Arc.join(" ");
       for (let i = 0; i < count; i++)
-        await υℓтяσηℓιєηт.sendMessage(ʊʟȶʀօռ.chatId, text, MessageType.text);
+        await υℓтяσηℓιєηт
+          .sendMessage(ʊʟȶʀօռ.chatId, text, MessageType.text)
+          .catch((cᴇʀʀᴏʀ) => {
+            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
+          });
     } else {
-      await υℓтяσηℓιєηт.sendMessage(
-        ʊʟȶʀօռ.chatId,
-        `No text found for spamming!!! Please read !help spam.`,
-        MessageType.text
-      );
+      await υℓтяσηℓιєηт
+        .sendMessage(
+          ʊʟȶʀօռ.chatId,
+          `No text found for spamming!!! Please read !help spam.`,
+          MessageType.text
+        )
+        .catch((cᴇʀʀᴏʀ) => {
+          ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
+        });
     }
   },
 };

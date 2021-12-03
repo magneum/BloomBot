@@ -3,6 +3,7 @@
 // ===============================================================================
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const UltronSitreper = require(`../../ʊʟȶʀօռ/UltronSitreper`);
+const ℓιєηт = require("../../ʊʟȶʀօռ/catch");
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
   name: `pfp`,
@@ -12,18 +13,22 @@ Get the profile picture of the group in a group conversation or the profile pict
   async handle(υℓтяσηℓιєηт, chat, ʊʟȶʀօռ, Arc) {
     try {
       let url = await υℓтяσηℓιєηт.getProfilePicture(ʊʟȶʀօռ.chatId);
-      await υℓтяσηℓιєηт.sendMessage(
-        ʊʟȶʀօռ.chatId,
-        {
-          url: url,
-        },
-        MessageType.image,
-        {
-          mimetype: Mimetype.png,
-          caption: `Here is the display image. Procured by ʊʟȶʀօռ.`,
-          thumbnail: null,
-        }
-      );
+      await υℓтяσηℓιєηт
+        .sendMessage(
+          ʊʟȶʀօռ.chatId,
+          {
+            url: url,
+          },
+          MessageType.image,
+          {
+            mimetype: Mimetype.png,
+            caption: `Here is the display image. Procured by ʊʟȶʀօռ.`,
+            thumbnail: null,
+          }
+        )
+        .catch((cᴇʀʀᴏʀ) => {
+          ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
+        });
     } catch (cᴇʀʀᴏʀ) {
       if (cᴇʀʀᴏʀ.status == 404) {
         υℓтяσηℓιєηт.sendMessage(

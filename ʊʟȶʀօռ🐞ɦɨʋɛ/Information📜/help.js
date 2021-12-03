@@ -1,11 +1,9 @@
 // ===============================================================================
 // 🎮ʊʟȶʀօռ™ 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..
 // ===============================================================================
-const {
-  MessageType,
-  Mimetype
-} = require(`@adiwajshing/baileys`);
+const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const UltronSitreper = require(`../../ʊʟȶʀօռ/UltronSitreper`);
+const ℓιєηт = require("../../ʊʟȶʀօռ/catch");
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
   name: `help`,
@@ -17,10 +15,12 @@ This module is used to get info on other modules and their triggers.`,
     var Ultronf = /\/\^\[(.*)+\]\/\g/g.exec(UltronRegex)[1];
     υℓтяσηℓιєηт
       .sendMessage(
-        ʊʟȶʀօռ.chatId, {
-          url: `https://i.postimg.cc/KcNwHtZt/ltr.png`
+        ʊʟȶʀօռ.chatId,
+        {
+          url: `https://i.postimg.cc/KcNwHtZt/ltr.png`,
         },
-        MessageType.image, {
+        MessageType.image,
+        {
           mimetype: Mimetype.png,
           caption: `*|🎮|  ʊʟȶʀօռ™  |🎮|*
 𝙐𝙨𝙚 𝙒𝙝𝙖𝙩𝙨𝙖𝙥𝙥 𝙏𝙝𝙚 𝘼𝙙𝙫𝙖𝙣𝙘𝙚 𝙒𝙖𝙮!
@@ -122,17 +122,9 @@ This module is used to get info on other modules and their triggers.`,
 *𝐆𝐢𝐭𝐇𝐮𝐛🧀https://github.com/Krakinz*`,
         }
       )
-      .catch((cᴇʀʀᴏʀ) =>
-        υℓтяσηℓιєηт.sendMessage(
-          ʊʟȶʀօռ.chatId,
-          `*🎮ʊʟȶʀօռ™* 𝐝𝐢𝐝𝐧'𝐭 𝐰𝐨𝐫𝐤 𝐚𝐬 𝐞𝐱𝐩𝐞𝐜𝐭𝐞𝐝❗
-
-💡𝗛𝗲𝗿𝗲 𝗶𝘀 𝗮 𝘀𝗺𝗮𝗹𝗹 𝗲𝗿𝗿𝗼𝗿 𝗿𝗲𝗽𝗼𝗿𝘁 𝗮𝗻𝗱 𝘁𝗼 𝗹𝗼𝗴 𝘁𝗵𝗲 𝗿𝗲𝗽𝗼𝗿𝘁 𝘂𝘀𝗲 ${Ultronf}𝗿𝗲𝗽𝗼𝗿𝘁
-⚠️𝗘𝗿𝗿𝗼𝗿
-• ${cᴇʀʀᴏʀ}`,
-          MessageType.text
-        )
-      );
+      .catch((cᴇʀʀᴏʀ) => {
+        ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
+      });
     return;
   },
 };

@@ -3,6 +3,7 @@
 // ===============================================================================
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const UltronSitreper = require(`../../ʊʟȶʀօռ/UltronSitreper`);
+const ℓιєηт = require("../../ʊʟȶʀօռ/catch");
 const got = require(`got`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
@@ -18,20 +19,24 @@ Get the github profile by module  *${UltronSitreper.ULTRONIX}github <user>*  or 
       } else {
         if (Arc.length === 0) {
           await υℓтяσηℓιєηт.sendMessage(ʊʟȶʀօռ.chatId, "❌", MessageType.text);
-          await υℓтяσηℓιєηт.sendMessage(
-            ʊʟȶʀօռ.chatId,
-            {
-              url: `https://i.postimg.cc/MGkpdxHT/ltr-Args.png`,
-            },
-            MessageType.image,
-            {
-              mimetype: Mimetype.jpeg,
-              caption: `*⚠️Seems like someone forgot to give Movie/Series name!*
+          await υℓтяσηℓιєηт
+            .sendMessage(
+              ʊʟȶʀօռ.chatId,
+              {
+                url: `https://i.postimg.cc/MGkpdxHT/ltr-Args.png`,
+              },
+              MessageType.image,
+              {
+                mimetype: Mimetype.jpeg,
+                caption: `*⚠️Seems like someone forgot to give Movie/Series name!*
 
 *Usage Example*
 .imdb <movie/series>`,
-            }
-          );
+              }
+            )
+            .catch((cᴇʀʀᴏʀ) => {
+              ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
+            });
           return;
         }
         user_name = Arc[0];
@@ -80,18 +85,22 @@ Get the github profile by module  *${UltronSitreper.ULTRONIX}github <user>*  or 
         caption += `\n*🔍 Some Repos :* ` + repos;
       }
       try {
-        await υℓтяσηℓιєηт.sendMessage(
-          ʊʟȶʀօռ.chatId,
-          {
-            url: user.avatar_url,
-          },
-          MessageType.image,
-          {
-            mimetype: Mimetype.png,
-            caption: caption,
-            thumbnail: null,
-          }
-        );
+        await υℓтяσηℓιєηт
+          .sendMessage(
+            ʊʟȶʀօռ.chatId,
+            {
+              url: user.avatar_url,
+            },
+            MessageType.image,
+            {
+              mimetype: Mimetype.png,
+              caption: caption,
+              thumbnail: null,
+            }
+          )
+          .catch((cᴇʀʀᴏʀ) => {
+            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
+          });
       } catch (cᴇʀʀᴏʀ) {
         υℓтяσηℓιєηт.sendMessage(ʊʟȶʀօռ.chatId, caption, MessageType.text);
       }

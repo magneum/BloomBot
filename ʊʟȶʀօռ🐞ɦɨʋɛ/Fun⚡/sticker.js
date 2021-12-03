@@ -3,6 +3,7 @@
 // ===============================================================================
 const { MessageType, MimetypeMap } = require(`@adiwajshing/baileys`);
 const UltronSitreper = require(`../../ʊʟȶʀօռ/UltronSitreper`);
+const ℓιєηт = require("../../ʊʟȶʀօռ/catch");
 const ffmpeg = require(`fluent-ffmpeg`);
 const fs = require(`fs`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
@@ -20,37 +21,14 @@ Use this module to convert any image from your chat to a sticker. Reply to an im
             `Your sticker is downloading. Please wait...`,
             MessageType.text
           )
-          .catch((CYΣЯЯ) =>
-            υℓтяσηℓιєηт.sendMessage(
-              ʊʟȶʀօռ.chatId,
-              `ꜱᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ ᴡʀᴏɴɢ.ʜᴇʀᴇ ᴀʀᴇ ꜱᴏᴍᴇ ʟᴏɢꜱ ꜱɪɴᴄᴇ ᴡʜᴇɴ ᴛʜᴇ ʙᴏᴛ ᴡᴀꜱ ɴᴏᴛ ʀᴇꜱᴘᴏɴᴅɪɴɢ ᴀꜱ ᴇxᴘᴇᴄᴛᴇᴅ.
-
-⚠️𝗘𝗿𝗿𝗼𝗿
-• ${CYΣЯЯ}
-
-
-💡𝗖𝗼𝗺𝗺𝗮𝗻𝗱 • ${ʊʟȶʀօռ.moduleName}
-🎮𝗜𝘁 𝘄𝗮𝘀 𝗣𝗠? • ${ʊʟȶʀօռ.isPm}`,
-              MessageType.text
-            )
-          );
+          .catch((cᴇʀʀᴏʀ) => {
+            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
+          });
         const filePath = await υℓтяσηℓιєηт
           .downloadAndSaveMediaMessage(replyChat, `./ᴛᴇᴍᴘ/ct-` + imageId)
-          .catch((CYΣЯЯ) =>
-            υℓтяσηℓιєηт.sendMessage(
-              ʊʟȶʀօռ.chatId,
-              `ꜱᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ ᴡʀᴏɴɢ.ʜᴇʀᴇ ᴀʀᴇ ꜱᴏᴍᴇ ʟᴏɢꜱ ꜱɪɴᴄᴇ ᴡʜᴇɴ ᴛʜᴇ ʙᴏᴛ ᴡᴀꜱ ɴᴏᴛ ʀᴇꜱᴘᴏɴᴅɪɴɢ ᴀꜱ ᴇxᴘᴇᴄᴛᴇᴅ.
-
-⚠️𝗘𝗿𝗿𝗼𝗿
-• ${CYΣЯЯ}
-
-
-💡𝗖𝗼𝗺𝗺𝗮𝗻𝗱 • ${ʊʟȶʀօռ.moduleName}
-🎮𝗜𝘁 𝘄𝗮𝘀 𝗣𝗠? • ${ʊʟȶʀօռ.isPm}`,
-              MessageType.text
-            )
-          );
-
+          .catch((cᴇʀʀᴏʀ) => {
+            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
+          });
         const stickerPath = `./ᴛᴇᴍᴘ/st-` + imageId + `.webp`;
         if (ʊʟȶʀօռ.type === `image` || ʊʟȶʀօռ.isReplyImage) {
           ffmpeg(filePath)
@@ -66,20 +44,9 @@ Use this module to convert any image from your chat to a sticker. Reply to an im
                   fs.readFileSync(stickerPath),
                   MessageType.sticker
                 )
-                .catch((CYΣЯЯ) =>
-                  υℓтяσηℓιєηт.sendMessage(
-                    ʊʟȶʀօռ.chatId,
-                    `ꜱᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ ᴡʀᴏɴɢ.ʜᴇʀᴇ ᴀʀᴇ ꜱᴏᴍᴇ ʟᴏɢꜱ ꜱɪɴᴄᴇ ᴡʜᴇɴ ᴛʜᴇ ʙᴏᴛ ᴡᴀꜱ ɴᴏᴛ ʀᴇꜱᴘᴏɴᴅɪɴɢ ᴀꜱ ᴇxᴘᴇᴄᴛᴇᴅ.
-
-⚠️𝗘𝗿𝗿𝗼𝗿
-• ${CYΣЯЯ}
-
-
-💡𝗖𝗼𝗺𝗺𝗮𝗻𝗱 • ${ʊʟȶʀօռ.moduleName}
-🎮𝗜𝘁 𝘄𝗮𝘀 𝗣𝗠? • ${ʊʟȶʀօռ.isPm}`,
-                    MessageType.text
-                  )
-                );
+                .catch((cᴇʀʀᴏʀ) => {
+                  ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
+                });
               fs.unlink(filePath, (cᴇʀʀᴏʀ) => {
                 if (cᴇʀʀᴏʀ) {
                   console.log(cᴇʀʀᴏʀ);
@@ -135,20 +102,9 @@ Use this module to convert any image from your chat to a sticker. Reply to an im
                 fs.readFileSync(stickerPath),
                 MessageType.sticker
               )
-              .catch((CYΣЯЯ) =>
-                υℓтяσηℓιєηт.sendMessage(
-                  ʊʟȶʀօռ.chatId,
-                  `ꜱᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ ᴡʀᴏɴɢ.ʜᴇʀᴇ ᴀʀᴇ ꜱᴏᴍᴇ ʟᴏɢꜱ ꜱɪɴᴄᴇ ᴡʜᴇɴ ᴛʜᴇ ʙᴏᴛ ᴡᴀꜱ ɴᴏᴛ ʀᴇꜱᴘᴏɴᴅɪɴɢ ᴀꜱ ᴇxᴘᴇᴄᴛᴇᴅ.
-
-⚠️𝗘𝗿𝗿𝗼𝗿
-• ${CYΣЯЯ}
-
-
-💡𝗖𝗼𝗺𝗺𝗮𝗻𝗱 • ${ʊʟȶʀօռ.moduleName}
-🎮𝗜𝘁 𝘄𝗮𝘀 𝗣𝗠? • ${ʊʟȶʀօռ.isPm}`,
-                  MessageType.text
-                )
-              );
+              .catch((cᴇʀʀᴏʀ) => {
+                ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
+              });
             fs.unlink(filePath, (cᴇʀʀᴏʀ) => {
               if (cᴇʀʀᴏʀ) {
                 console.log(cᴇʀʀᴏʀ);
@@ -203,20 +159,9 @@ Use this module to convert any image from your chat to a sticker. Reply to an im
             `Please tag a valid image/video/gif message to convert to sticker.`,
             MessageType.text
           )
-          .catch((CYΣЯЯ) =>
-            υℓтяσηℓιєηт.sendMessage(
-              ʊʟȶʀօռ.chatId,
-              `ꜱᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ ᴡʀᴏɴɢ.ʜᴇʀᴇ ᴀʀᴇ ꜱᴏᴍᴇ ʟᴏɢꜱ ꜱɪɴᴄᴇ ᴡʜᴇɴ ᴛʜᴇ ʙᴏᴛ ᴡᴀꜱ ɴᴏᴛ ʀᴇꜱᴘᴏɴᴅɪɴɢ ᴀꜱ ᴇxᴘᴇᴄᴛᴇᴅ.
-
-⚠️𝗘𝗿𝗿𝗼𝗿
-• ${CYΣЯЯ}
-
-
-💡𝗖𝗼𝗺𝗺𝗮𝗻𝗱 • ${ʊʟȶʀօռ.moduleName}
-🎮𝗜𝘁 𝘄𝗮𝘀 𝗣𝗠? • ${ʊʟȶʀօռ.isPm}`,
-              MessageType.text
-            )
-          );
+          .catch((cᴇʀʀᴏʀ) => {
+            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
+          });
       }
       return;
     } catch (CYΣЯЯ) {

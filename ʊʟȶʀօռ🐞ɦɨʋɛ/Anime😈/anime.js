@@ -3,6 +3,7 @@
 // ===============================================================================
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const UltronSitreper = require(`../../ʊʟȶʀօռ/UltronSitreper`);
+const ℓιєηт = require("../../ʊʟȶʀօռ/catch");
 const malScraper = require(`mal-scraper`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
@@ -12,11 +13,11 @@ module.exports = {
 Get Anime Informations From MyAnimeList`,
   async handle(υℓтяσηℓιєηт, chat, ʊʟȶʀօռ, Arc) {
     if (Arc.length === 0) {
-      await υℓтяσηℓιєηт.sendMessage(
-        ʊʟȶʀօռ.chatId,
-        `Enter Anime Name`,
-        MessageType.text
-      );
+      await υℓтяσηℓιєηт
+        .sendMessage(ʊʟȶʀօռ.chatId, `Enter Anime Name`, MessageType.text)
+        .catch((cᴇʀʀᴏʀ) => {
+          ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
+        });
       return;
     }
     const name = Arc.join(` `);
@@ -44,17 +45,21 @@ Get Anime Informations From MyAnimeList`,
 🕸️𝗦𝘁𝗮𝘁𝘂𝘀: _${data.status}_
 🎯𝗜𝗱: _${data.id}_
 📥𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱: _${data.url}_`;
-      await υℓтяσηℓιєηт.sendMessage(
-        ʊʟȶʀօռ.chatId,
-        {
-          url: data.picture,
-        },
-        MessageType.image,
-        {
-          mimetype: Mimetype.jpeg,
-          caption: AnimeInfos,
-        }
-      );
+      await υℓтяσηℓιєηт
+        .sendMessage(
+          ʊʟȶʀօռ.chatId,
+          {
+            url: data.picture,
+          },
+          MessageType.image,
+          {
+            mimetype: Mimetype.jpeg,
+            caption: AnimeInfos,
+          }
+        )
+        .catch((cᴇʀʀᴏʀ) => {
+          ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
+        });
     });
   },
 };

@@ -1,6 +1,7 @@
 // ===============================================================================
 // 🎮ʊʟȶʀօռ™ 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..
 // ===============================================================================
+const ℓιєηт = require("../../ʊʟȶʀօռ/catch");
 const { MessageType } = require(`@adiwajshing/baileys`);
 const UltronSitreper = require(`../../ʊʟȶʀօռ/UltronSitreper`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
@@ -15,31 +16,42 @@ For example- *${UltronSitreper.ULTRONIX}promote 9861212121*`,
   async handle(υℓтяσηℓιєηт, chat, ʊʟȶʀօռ, Arc) {
     try {
       if (!ʊʟȶʀօռ.isGroup) {
-        υℓтяσηℓιєηт.sendMessage(
-          ʊʟȶʀօռ.chatId,
-          `This module is only applicable in a group chat.`,
-          MessageType.text
-        );
+        υℓтяσηℓιєηт
+          .sendMessage(
+            ʊʟȶʀօռ.chatId,
+            `This module is only applicable in a group chat.`,
+            MessageType.text
+          )
+          .catch((cᴇʀʀᴏʀ) => {
+            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
+          });
         return;
       }
       if (!ʊʟȶʀօռ.isBotGroupAdmin) {
-        υℓтяσηℓιєηт.sendMessage(
-          ʊʟȶʀօռ.chatId,
-          `Sorry, dont have the permission to do so since I am not an admin.`,
-          MessageType.text
-        );
+        υℓтяσηℓιєηт
+          .sendMessage(
+            ʊʟȶʀօռ.chatId,
+            `Sorry, dont have the permission to do so since I am not an admin.`,
+            MessageType.text
+          )
+          .catch((cᴇʀʀᴏʀ) => {
+            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
+          });
         return;
       }
       if (!ʊʟȶʀօռ.isReply && typeof Arc[0] == `undefined`) {
-        υℓтяσηℓιєηт.sendMessage(
-          ʊʟȶʀօռ.chatId,
-          `Reply/tag/enter contact number of the person to be promoted.`,
-          MessageType.text
-        );
+        υℓтяσηℓιєηт
+          .sendMessage(
+            ʊʟȶʀօռ.chatId,
+            `Reply/tag/enter contact number of the person to be promoted.`,
+            MessageType.text
+          )
+          .catch((cᴇʀʀᴏʀ) => {
+            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
+          });
         return;
       }
       const reply = chat.message.extendedTextMessage;
-
       if (ʊʟȶʀօռ.isReply) {
         var contact = reply.contextInfo.participant.split(`@`)[0];
       } else {
@@ -50,12 +62,43 @@ For example- *${UltronSitreper.ULTRONIX}promote 9861212121*`,
             if (Arc[0][0] === `@` || Arc[0][0] === `+`) {
               JoinIDNum = Arc[0].substring(1, Arc[0].length + 1);
             } else {
-              await υℓтяσηℓιєηт.sendMessage(
-                ʊʟȶʀօռ.chatId,
-                "❌",
-                MessageType.text
-              );
-              await υℓтяσηℓιєηт.sendMessage(
+              await υℓтяσηℓιєηт
+                .sendMessage(ʊʟȶʀօռ.chatId, "❌", MessageType.text)
+                .catch((cᴇʀʀᴏʀ) => {
+                  ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
+                });
+              await υℓтяσηℓιєηт
+                .sendMessage(
+                  ʊʟȶʀօռ.chatId,
+                  {
+                    url: `https://i.postimg.cc/MGkpdxHT/ltr-Args.png`,
+                  },
+                  MessageType.image,
+                  {
+                    mimetype: Mimetype.jpeg,
+                    caption: `*⚠️Seems like someone forgot to give Movie/Series name!*
+
+*Usage Example*
+.imdb <movie/series>`,
+                  }
+                )
+                .catch((cᴇʀʀᴏʀ) => {
+                  ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
+                });
+              return;
+            }
+          } else {
+            JoinIDNum = Arc[0];
+          }
+
+          if (JoinIDNum.length < 8 || JoinIDNum.length > 13) {
+            await υℓтяσηℓιєηт
+              .sendMessage(ʊʟȶʀօռ.chatId, "❌", MessageType.text)
+              .catch((cᴇʀʀᴏʀ) => {
+                ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
+              });
+            await υℓтяσηℓιєηт
+              .sendMessage(
                 ʊʟȶʀօռ.chatId,
                 {
                   url: `https://i.postimg.cc/MGkpdxHT/ltr-Args.png`,
@@ -64,37 +107,14 @@ For example- *${UltronSitreper.ULTRONIX}promote 9861212121*`,
                 {
                   mimetype: Mimetype.jpeg,
                   caption: `*⚠️Seems like someone forgot to give Movie/Series name!*
-      
-      *Usage Example*
-      .imdb <movie/series>`,
-                }
-              );
-              return;
-            }
-          } else {
-            JoinIDNum = Arc[0];
-          }
 
-          if (JoinIDNum.length < 8 || JoinIDNum.length > 13) {
-            await υℓтяσηℓιєηт.sendMessage(
-              ʊʟȶʀօռ.chatId,
-              "❌",
-              MessageType.text
-            );
-            await υℓтяσηℓιєηт.sendMessage(
-              ʊʟȶʀօռ.chatId,
-              {
-                url: `https://i.postimg.cc/MGkpdxHT/ltr-Args.png`,
-              },
-              MessageType.image,
-              {
-                mimetype: Mimetype.jpeg,
-                caption: `*⚠️Seems like someone forgot to give Movie/Series name!*
-    
-    *Usage Example*
-    .imdb <movie/series>`,
-              }
-            );
+*Usage Example*
+.imdb <movie/series>`,
+                }
+              )
+              .catch((cᴇʀʀᴏʀ) => {
+                ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
+              });
             return;
           } else if (JoinIDNum.length === 10) {
             JoinIDNum = countryCode + JoinIDNum;
@@ -132,17 +152,25 @@ For example- *${UltronSitreper.ULTRONIX}promote 9861212121*`,
         if (!admin == true) {
           const arr = [contact + `@s.whatsapp.net`];
           υℓтяσηℓιєηт.groupMakeAdmin(ʊʟȶʀօռ.chatId, arr);
-          υℓтяσηℓιєηт.sendMessage(
-            ʊʟȶʀօռ.chatId,
-            `*` + contact + ` promoted to admin*`,
-            MessageType.text
-          );
+          υℓтяσηℓιєηт
+            .sendMessage(
+              ʊʟȶʀօռ.chatId,
+              `*` + contact + ` promoted to admin*`,
+              MessageType.text
+            )
+            .catch((cᴇʀʀᴏʀ) => {
+              ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
+            });
         } else {
-          υℓтяσηℓιєηт.sendMessage(
-            ʊʟȶʀօռ.chatId,
-            `*` + contact + ` is already an admin*`,
-            MessageType.text
-          );
+          υℓтяσηℓιєηт
+            .sendMessage(
+              ʊʟȶʀօռ.chatId,
+              `*` + contact + ` is already an admin*`,
+              MessageType.text
+            )
+            .catch((cᴇʀʀᴏʀ) => {
+              ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
+            });
         }
       }
       if (!isMember) {
@@ -150,11 +178,15 @@ For example- *${UltronSitreper.ULTRONIX}promote 9861212121*`,
           return;
         }
 
-        υℓтяσηℓιєηт.sendMessage(
-          ʊʟȶʀօռ.chatId,
-          `Person is not in the group.`,
-          MessageType.text
-        );
+        υℓтяσηℓιєηт
+          .sendMessage(
+            ʊʟȶʀօռ.chatId,
+            `Person is not in the group.`,
+            MessageType.text
+          )
+          .catch((cᴇʀʀᴏʀ) => {
+            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
+          });
         return;
       }
     } catch (cᴇʀʀᴏʀ) {
