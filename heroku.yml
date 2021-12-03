@@ -2,4 +2,4 @@ build:
   docker:
     worker: Dockerfile
 run:
-   worker: node 🎮ʊʟȶʀօռ™.js
+   worker: node ⚡ʊʟȶʀօռ⚡™.js
