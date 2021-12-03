@@ -1,5 +1,0 @@
-build:
-  docker:
-    worker: Dockerfile
-run:
-   worker: node 🎮ʊʟȶʀօռ™.js
