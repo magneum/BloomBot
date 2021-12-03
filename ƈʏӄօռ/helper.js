@@ -1,14 +1,14 @@
 // ===============================================================================
-// 🎮Últrðñ™ 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..
+// 🎮ʊʟȶʀօռ™ 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..
 // ===============================================================================
-const UltronSitreper = require("../Últrðñ/UltronSitreper");
-var ƈʏɮօʀɢƈʟǟ = require("./Últrðñƈʟǟ");
+const UltronSitreper = require("../ʊʟȶʀօռ/UltronSitreper");
+var ƈʏɮօʀɢƈʟǟ = require("./ʊʟȶʀօռƈʟǟ");
 const Kolor = require("chalk");
 // ===============================================================================
-// 🎮Últrðñ™ 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..
+// 🎮ʊʟȶʀօռ™ 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..
 // ===============================================================================
-exports.resolve = function (messageInstance, ӄʀǟӄɨռʐ, groupMetadata) {
-  var Últrðñ = new ƈʏɮօʀɢƈʟǟ();
+exports.resolve = function (messageInstance, υℓтяσηℓιєηт, groupMetadata) {
+  var ʊʟȶʀօռ = new ƈʏɮօʀɢƈʟǟ();
   var prefix = UltronSitreper.ULTRONIX + "\\w+";
   var prefixRegex = new RegExp(prefix, "g");
   var SUDOstring = UltronSitreper.SUDO;
@@ -17,125 +17,125 @@ exports.resolve = function (messageInstance, ӄʀǟӄɨռʐ, groupMetadata) {
   } catch (CYΣЯЯ) {
     console.log(Kolor.redBright("[ERROR] Something went wrong. ", CYΣЯЯ));
   }
-  Últrðñ.chatId = messageInstance.key.remoteJid || "";
-  Últrðñ.fromMe = messageInstance.key.fromMe;
-  Últrðñ.owner = ӄʀǟӄɨռʐ.user.jid || "";
-  Últrðñ.mimeType = messageInstance.message ?
+  ʊʟȶʀօռ.chatId = messageInstance.key.remoteJid || "";
+  ʊʟȶʀօռ.fromMe = messageInstance.key.fromMe;
+  ʊʟȶʀօռ.owner = υℓтяσηℓιєηт.user.jid || "";
+  ʊʟȶʀօռ.mimeType = messageInstance.message ?
     Object.keys(messageInstance.message)[0] :
     null;
-  Últrðñ.type =
-    Últrðñ.mimeType === "imageMessage" ?
+  ʊʟȶʀօռ.type =
+    ʊʟȶʀօռ.mimeType === "imageMessage" ?
     "image" :
-    Últrðñ.mimeType === "videoMessage" ?
+    ʊʟȶʀօռ.mimeType === "videoMessage" ?
     "video" :
-    Últrðñ.mimeType === "conversation" ||
-    Últrðñ.mimeType == "extendedTextMessage" ?
+    ʊʟȶʀօռ.mimeType === "conversation" ||
+    ʊʟȶʀօռ.mimeType == "extendedTextMessage" ?
     "text" :
-    Últrðñ.mimeType === "audioMessage" ?
+    ʊʟȶʀօռ.mimeType === "audioMessage" ?
     "audio" :
-    Últrðñ.mimeType === "stickerMessage" ?
+    ʊʟȶʀօռ.mimeType === "stickerMessage" ?
     "sticker" :
     "";
-  Últrðñ.isReply =
-    Últrðñ.mimeType === "extendedTextMessage" &&
+  ʊʟȶʀօռ.isReply =
+    ʊʟȶʀօռ.mimeType === "extendedTextMessage" &&
     messageInstance.message.extendedTextMessage.hasOwnProperty("contextInfo") &&
     messageInstance.message.extendedTextMessage.contextInfo.hasOwnProperty(
       "stanzaId"
     );
-  Últrðñ.replyMessageId =
-    Últrðñ.isReply && messageInstance.message.extendedTextMessage.contextInfo ?
+  ʊʟȶʀօռ.replyMessageId =
+    ʊʟȶʀօռ.isReply && messageInstance.message.extendedTextMessage.contextInfo ?
     messageInstance.message.extendedTextMessage.contextInfo.stanzaId :
     "";
-  Últrðñ.replyMessage =
-    Últrðñ.isReply && messageInstance.message.extendedTextMessage.contextInfo ?
+  ʊʟȶʀօռ.replyMessage =
+    ʊʟȶʀօռ.isReply && messageInstance.message.extendedTextMessage.contextInfo ?
     messageInstance.message.extendedTextMessage.contextInfo.quotedMessage
     .conversation :
     "";
-  Últrðñ.replyParticipant =
-    Últrðñ.isReply && messageInstance.message.extendedTextMessage.contextInfo ?
+  ʊʟȶʀօռ.replyParticipant =
+    ʊʟȶʀօռ.isReply && messageInstance.message.extendedTextMessage.contextInfo ?
     messageInstance.message.extendedTextMessage.contextInfo.participant :
     "";
-  Últrðñ.body =
-    Últrðñ.mimeType === "conversation" ?
+  ʊʟȶʀօռ.body =
+    ʊʟȶʀօռ.mimeType === "conversation" ?
     messageInstance.message.conversation :
-    Últrðñ.mimeType == "imageMessage" ?
+    ʊʟȶʀօռ.mimeType == "imageMessage" ?
     messageInstance.message.imageMessage.caption :
-    Últrðñ.mimeType == "videoMessage" ?
+    ʊʟȶʀօռ.mimeType == "videoMessage" ?
     messageInstance.message.videoMessage.caption :
-    Últrðñ.mimeType == "extendedTextMessage" ?
+    ʊʟȶʀօռ.mimeType == "extendedTextMessage" ?
     messageInstance.message.extendedTextMessage.text :
-    Últrðñ.mimeType == "buttonsResponseMessage" ?
+    ʊʟȶʀօռ.mimeType == "buttonsResponseMessage" ?
     messageInstance.message.buttonsResponseMessage.selectedDisplayText :
     "";
-  Últrðñ.isCmd = prefixRegex.test(Últrðñ.body);
-  Últrðñ.commandName = Últrðñ.isCmd ?
-    Últrðñ.body.slice(1).trim().split(/ +/).shift().toLowerCase() :
+  ʊʟȶʀօռ.isCmd = prefixRegex.test(ʊʟȶʀօռ.body);
+  ʊʟȶʀօռ.commandName = ʊʟȶʀօռ.isCmd ?
+    ʊʟȶʀօռ.body.slice(1).trim().split(/ +/).shift().toLowerCase() :
     "";
-  Últrðñ.isImage = Últrðñ.type === "image";
-  Últrðñ.isReplyImage = Últrðñ.isReply ?
+  ʊʟȶʀօռ.isImage = ʊʟȶʀօռ.type === "image";
+  ʊʟȶʀօռ.isReplyImage = ʊʟȶʀօռ.isReply ?
     jsonMessage.indexOf("imageMessage") !== -1 :
     false;
-  Últrðñ.imageCaption = Últrðñ.isImage ?
+  ʊʟȶʀօռ.imageCaption = ʊʟȶʀօռ.isImage ?
     messageInstance.message.imageMessage.caption :
     "";
-  Últrðñ.isGIF =
-    Últrðñ.type === "video" && messageInstance.message.videoMessage.gifPlayback;
-  Últrðñ.isReplyGIF = Últrðñ.isReply ?
+  ʊʟȶʀօռ.isGIF =
+    ʊʟȶʀօռ.type === "video" && messageInstance.message.videoMessage.gifPlayback;
+  ʊʟȶʀօռ.isReplyGIF = ʊʟȶʀօռ.isReply ?
     jsonMessage.indexOf("videoMessage") !== -1 &&
     messageInstance.message.extendedTextMessage.contextInfo.quotedMessage
     .videoMessage.gifPlayback :
     false;
-  Últrðñ.isSticker = Últrðñ.type === "sticker";
-  Últrðñ.isReplySticker = Últrðñ.isReply ?
+  ʊʟȶʀօռ.isSticker = ʊʟȶʀօռ.type === "sticker";
+  ʊʟȶʀօռ.isReplySticker = ʊʟȶʀօռ.isReply ?
     jsonMessage.indexOf("stickerMessage") !== -1 :
     false;
-  Últrðñ.isReplyAnimatedSticker = Últrðñ.isReplySticker ?
+  ʊʟȶʀօռ.isReplyAnimatedSticker = ʊʟȶʀօռ.isReplySticker ?
     messageInstance.message.extendedTextMessage.contextInfo.quotedMessage
     .stickerMessage.isAnimated :
     false;
-  Últrðñ.isVideo =
-    Últrðñ.type === "video" &&
+  ʊʟȶʀօռ.isVideo =
+    ʊʟȶʀօռ.type === "video" &&
     !messageInstance.message.videoMessage.gifPlayback;
-  Últrðñ.isReplyVideo = Últrðñ.isReply ?
+  ʊʟȶʀօռ.isReplyVideo = ʊʟȶʀօռ.isReply ?
     jsonMessage.indexOf("videoMessage") !== -1 &&
     !messageInstance.message.extendedTextMessage.contextInfo.quotedMessage
     .videoMessage.gifPlayback :
     false;
-  Últrðñ.isAudio = Últrðñ.type === "audio";
-  Últrðñ.isReplyAudio = Últrðñ.isReply ?
+  ʊʟȶʀօռ.isAudio = ʊʟȶʀօռ.type === "audio";
+  ʊʟȶʀօռ.isReplyAudio = ʊʟȶʀօռ.isReply ?
     jsonMessage.indexOf("audioMessage") !== -1 :
     false;
-  Últrðñ.logGroup = ӄʀǟӄɨռʐ.user.jid || "";
-  Últrðñ.isGroup = Últrðñ.chatId.endsWith("@g.us");
-  Últrðñ.isPm = !Últrðñ.isGroup;
-  Últrðñ.sender =
-    Últrðñ.isGroup && messageInstance.message && Últrðñ.fromMe ?
-    Últrðñ.owner :
-    Últrðñ.isGroup && messageInstance.message ?
+  ʊʟȶʀօռ.logGroup = υℓтяσηℓιєηт.user.jid || "";
+  ʊʟȶʀօռ.isGroup = ʊʟȶʀօռ.chatId.endsWith("@g.us");
+  ʊʟȶʀօռ.isPm = !ʊʟȶʀօռ.isGroup;
+  ʊʟȶʀօռ.sender =
+    ʊʟȶʀօռ.isGroup && messageInstance.message && ʊʟȶʀօռ.fromMe ?
+    ʊʟȶʀօռ.owner :
+    ʊʟȶʀօռ.isGroup && messageInstance.message ?
     messageInstance.participant :
-    !Últrðñ.isGroup ?
-    Últrðñ.chatId :
+    !ʊʟȶʀօռ.isGroup ?
+    ʊʟȶʀօռ.chatId :
     "";
-  Últrðñ.groupName = Últrðñ.isGroup ? groupMetadata.subject : "";
-  Últrðñ.groupMembers = Últrðñ.isGroup ? groupMetadata.participants : "";
-  Últrðñ.groupAdmins = Últrðñ.isGroup ?
-    getGroupAdmins(Últrðñ.groupMembers) :
+  ʊʟȶʀօռ.groupName = ʊʟȶʀօռ.isGroup ? groupMetadata.subject : "";
+  ʊʟȶʀօռ.groupMembers = ʊʟȶʀօռ.isGroup ? groupMetadata.participants : "";
+  ʊʟȶʀօռ.groupAdmins = ʊʟȶʀօռ.isGroup ?
+    getGroupAdmins(ʊʟȶʀօռ.groupMembers) :
     "";
-  Últrðñ.groupId = Últrðñ.isGroup ? groupMetadata.id : "";
-  Últrðñ.isSenderSUDO = SUDOstring.includes(
-    Últrðñ.sender.substring(0, Últrðñ.sender.indexOf("@"))
+  ʊʟȶʀօռ.groupId = ʊʟȶʀօռ.isGroup ? groupMetadata.id : "";
+  ʊʟȶʀօռ.isSenderSUDO = SUDOstring.includes(
+    ʊʟȶʀօռ.sender.substring(0, ʊʟȶʀօռ.sender.indexOf("@"))
   );
-  Últrðñ.isBotGroupAdmin = Últrðñ.isGroup ?
-    Últrðñ.groupAdmins.includes(Últrðñ.owner) :
+  ʊʟȶʀօռ.isBotGroupAdmin = ʊʟȶʀօռ.isGroup ?
+    ʊʟȶʀօռ.groupAdmins.includes(ʊʟȶʀօռ.owner) :
     false;
-  Últrðñ.isSenderGroupAdmin = Últrðñ.isGroup ?
-    Últrðñ.groupAdmins.includes(Últrðñ.sender) :
+  ʊʟȶʀօռ.isSenderGroupAdmin = ʊʟȶʀօռ.isGroup ?
+    ʊʟȶʀօռ.groupAdmins.includes(ʊʟȶʀօռ.sender) :
     false;
 
-  return Últrðñ;
+  return ʊʟȶʀօռ;
 };
 // ===============================================================================
-// 🎮Últrðñ™ 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..
+// 🎮ʊʟȶʀօռ™ 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..
 // ===============================================================================
 function getGroupAdmins(participants) {
   var admins = [];
@@ -145,5 +145,5 @@ function getGroupAdmins(participants) {
   return admins;
 }
 // ===============================================================================
-// 🎮Últrðñ™ 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..
+// 🎮ʊʟȶʀօռ™ 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..
 // ===============================================================================

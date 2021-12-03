@@ -1,6 +1,6 @@
 [![Open Source Love svg3](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)<img align="centre" src="https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg" alt="Krakinz"/><img align="centre" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"/>
 
-# 『 *🎮Últrðñ™-Version2* 』
+# 『 *🎮ʊʟȶʀօռ™-Version2* 』
 *> ʏᴏᴜʀ ᴀꜱꜱɪꜱꜱᴛᴀɴᴛ ꜰᴏʀ ᴍᴀᴋɪɴɢ ʙᴏʀɪɴɢ ᴡʜᴀᴛꜱᴀᴘᴘ ᴀ ʙᴇᴛᴛᴇʀ ᴀᴅᴠᴀɴᴄᴇ ᴀᴘᴘ!*
 *Stable Version from Version 4*
 
@@ -13,17 +13,17 @@
 ```sh
 💻 𝗪𝗵𝗮𝘁 𝗖𝗮𝗻 𝗕𝗼𝘁 𝗗𝗼???
 
-🎮Últrðñ
+🎮ʊʟȶʀօռ
 * 💡𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..
-* Últrðñ is written in JavaScript and is by far the most advance Whatsapp Userbot.
-* Use Últrðñ in both public-groups and private
+* ʊʟȶʀօռ is written in JavaScript and is by far the most advance Whatsapp Userbot.
+* Use ʊʟȶʀօռ in both public-groups and private
 * So many commands that will blow up the every-day use of boring whatsapp.
 ```
 
 
 # 𝕯𝖊𝖕𝖑𝖔𝖞𝖒𝖊𝖓𝖙
 ```
-After 🎮Últrðñ™-Version4
+After 🎮ʊʟȶʀօռ™-Version4
 ```
 
 
@@ -42,7 +42,7 @@ After 🎮Últrðñ™-Version4
 Apache License
 Version 2.0, January 2004
 http://www.apache.org/licenses
-—••÷[🎮Últrðñ]÷••—
+—••÷[🎮ʊʟȶʀօռ]÷••—
 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵
 has been licensed under Apache License
 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
