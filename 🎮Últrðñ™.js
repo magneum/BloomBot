@@ -15,6 +15,19 @@ const Cyborgsql = UltronSitreper.POSTQL;
 const Kolor = require(`chalk`);
 const fs = require(`fs`);
 console.clear();
+var randomMC = require('random-material-color');
+var rg = require('random-greetings');
+const {
+  registerFont,
+  createCanvas,
+  loadImage
+} = require(`canvas`);
+registerFont(`./Últrðñ/Honeycomb-Round.otf`, {
+  family: `Honeycomb`,
+});
+registerFont(`./Últrðñ/LobsterTwo-Bold.ttf`, {
+  family: `Lobster`,
+});
 // ===============================================================================
 // 🎮Últrðñ™ 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..
 // ===============================================================================
@@ -70,8 +83,6 @@ async function CyborgRunner() {
     // ===============================================================================
     // 🎮Últrðñ™ 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..
     // ===============================================================================
-    // console.log(Kolor.yellowBright.bold(`----------------------------------------|  Últrðñ  |`));
-    // console.log(UltronSitreper.ULTRON);
     console.log(Kolor.yellowBright.bold(`----------------------------------------|  Últrðñ  |`));
     console.log(UltronSitreper.IMDB);
     console.log(Kolor.yellowBright.bold(`----------------------------------------|  Últrðñ  |`));
@@ -117,19 +128,75 @@ ______/ |__/    ___/  |__/        ______/ |__/  |__/`),
         if (enable === false || enable === `OFF`) {
           return;
         }
-        var Msg = await Welcmr.getMessage(groupId, `welcome`);
-        ӄʀǟӄɨռʐ.sendMessage(groupId, Msg.message, MessageType.text);
+        var greets = [
+          `{username}\n just joined the server - glhf!`,
+          `{username}\n just joined. Everyone, look busy!`,
+          `{username}\n just joined. Can I get a heal?`,
+          `{username}\n joined your party.`,
+          `{username}\n joined. You must construct additional pylons.`,
+          `Ermagherd. {username}\n is here.`,
+          `Welcome, {username}\n. Stay awhile and listen.`,
+          `Welcome, {username}\n. We were expecting you ( ͡° ͜ʖ ͡°)`,
+          `Welcome, {username}\n. We hope you brought pizza.`,
+          `Welcome {username}\n. Leave your weapons by the door.`,
+          `A wild {username}\n appeared.`,
+          `Swoooosh. {username}\n just landed.`,
+          `Brace yourselves. {username}\n just joined the server.`,
+          `{username}\n just joined. Hide your bananas.`,
+          `{username}\n just arrived. Seems OP - please nerf.`,
+          `{username}\n just slid into the server.`,
+          `A {username}\n has spawned in the server.`,
+          `Big {username}\n showed up!`,
+          `Where’s {username}\n? In the server!`,
+          `{username}\n hopped into the server. Kangaroo!!`,
+          `{username}\n just showed up. Hold my beer.`,
+        ];
+        var Fetched = await Welcmr.getMessage(groupId, `welcome`);
+        const width = 1280;
+        const height = 720;
+        const canvas = createCanvas(width, height);
+        const context = canvas.getContext(`2d`);
+        context.fillStyle = `#555555`;
+        context.fillRect(0, 0, width, height);
+        context.font = `bold 50pt Lobster`;
+        context.textAlign = `center`;
+        context.textBaseline = `top`;
+        const text = greets[Math.floor(Math.random() * aryy.length)];
+        const textWidth = context.measureText(text).width;
+        context.fillRect(600 - textWidth / 2 - 10, 170 - 5, textWidth + 20, 120);
+        const text2 = Fetched.message;
+        context.fillStyle = randomMC.getColor();
+        context.fillText(text, 600, 170);
+        context.fillStyle = `#fff`;
+        context.font = `bold 30pt Honeycomb`;
+        context.fillText(text2, 600, 530);
+        const myimg = loadImage(`./Últrðñ/Últrðñ-Welcmr.png`)
+        await myimg.then(() => {
+          const buffer = canvas.toBuffer(`image/png`);
+          fs.writeFileSync(`./Últrðñ/Últrðñ-Welcmr.png`, buffer);
+          ӄʀǟӄɨռʐ.sendMessage(
+            Últrðñ.chatId, {
+              url: `./Últrðñ/Últrðñ-Welcmr.png`
+            },
+            MessageType.image, {
+              mimetype: Mimetype.png,
+              caption: `
+➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
+*🖥️PostSql➛* ${Fetched.message}`
+            }
+          );
+        });
         return;
       } else if (update.action === `remove`) {
         var enable = await Welcmr.checkSettings(groupId, `goodbye`);
         if (enable === false || enable === `OFF`) {
           return;
         }
-        var Msg = await Welcmr.getMessage(groupId, `goodbye`);
-        return ӄʀǟӄɨռʐ.sendMessage(groupId, Msg.message, MessageType.text);
+        var Fetched = await Welcmr.getMessage(groupId, `goodbye`);
+        return ӄʀǟӄɨռʐ.sendMessage(groupId, Fetched.message, MessageType.text);
       }
     } catch (cᴇʀʀᴏʀ) {
-      console.log(`Greeting message are off`);
+      console.log(`Greeting messages are off`);
     }
   });
   // ===============================================================================
