@@ -13,8 +13,8 @@ module.exports = {
   description: `Search Anime`,
   ƈʏɮօʀɢʍօʀɛ: `
 Get Anime Informations From MyAnimeList`,
-  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
-    if (arguments.length === 0) {
+  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, Arc) {
+    if (Arc.length === 0) {
       await ӄʀǟӄɨռʐ.sendMessage(
         Últrðñ.chatId,
         `Enter Anime Name`,
@@ -22,7 +22,7 @@ Get Anime Informations From MyAnimeList`,
       );
       return;
     }
-    const name = arguments.join(` `);
+    const name = Arc.join(` `);
     malScraper.getInfoFromName(name).then(async (data) => {
       const AnimeInfos = `💡𝐓𝐢𝐭𝐥𝐞: *${data.title}*
 🧀𝗣𝗿𝗲𝗺𝗶𝗲𝗿𝗲𝗱: _${data.premiered}_

@@ -12,7 +12,7 @@ module.exports = {
   description: `ɢᴇᴛ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅ ʟɪꜱᴛ ᴀɴᴅ ɪɴꜰᴏ ᴏɴ ᴍᴏᴅᴜʟᴇꜱ`,
   ƈʏɮօʀɢʍօʀɛ: `
 This module is used to get info on other modules and their triggers.`,
-  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
+  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, Arc) {
     var UltronRegex = new RegExp(UltronSitreper.ULTRONIX, "g");
     var Ultronf = /\/\^\[(.*)+\]\/\g/g.exec(UltronRegex)[1];
     ӄʀǟӄɨռʐ

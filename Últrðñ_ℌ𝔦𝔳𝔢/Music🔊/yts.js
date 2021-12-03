@@ -14,9 +14,9 @@ module.exports = {
   description: `Get recommendations and links from Youtube`,
   ƈʏɮօʀɢʍօʀɛ: `
 Get the first 10 recommendations from YouTube with their authorname, timestamp and link. Mention the FetchedLinks that are required to be searched along with the command.`,
-  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
+  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, Arc) {
     try {
-      if (arguments.length === 0) {
+      if (Arc.length === 0) {
         await ӄʀǟӄɨռʐ.sendMessage(
           Últrðñ.chatId,
           "❌",
@@ -36,7 +36,7 @@ Get the first 10 recommendations from YouTube with their authorname, timestamp a
         );
         return;
       }
-      const FetchedLink = await yts(arguments.join(` `));
+      const FetchedLink = await yts(Arc.join(` `));
       const videos = FetchedLink.videos.slice(0, 5);
       var Fetched = ``;
       videos.forEach(function (youfound) {
@@ -71,7 +71,7 @@ Get the first 10 recommendations from YouTube with their authorname, timestamp a
           );
         return;
       }
-      const c = arguments.join(` `)
+      const c = Arc.join(` `)
       ӄʀǟӄɨռʐ
         .sendMessage(
           Últrðñ.chatId, {

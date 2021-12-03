@@ -12,7 +12,7 @@ module.exports = {
   description: `A goodbye message for group chat whenever someone leaves.`,
   ƈʏɮօʀɢʍօʀɛ: `
 A goodbye message will be sent when any member leaves the group. It can be an image, video, gif with caption or just a text message.\n\nUse this module to either set, update or delete the existing message.\n\nThe goodbye option can be disabled but saved using the  *${UltronSitreper.ULTRONIX}goodbye  off*  command. In order to delete the existing message, use  *${UltronSitreper.ULTRONIX}goodbye  delete*${UltronSitreper.ULTRONIX}  Do note, the goodbye option is still enabled after you use the delete option.`,
-  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
+  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, Arc) {
     try {
       if (!Últrðñ.isGroup) {
         ӄʀǟӄɨռʐ.sendMessage(
@@ -22,7 +22,7 @@ A goodbye message will be sent when any member leaves the group. It can be an im
         );
         return;
       }
-      if (arguments.length == 0) {
+      if (Arc.length == 0) {
         var enabled = await Greetings.checkSettings(Últrðñ.chatId, `goodbye`);
         var Msg = await Greetings.getMessage(Últrðñ.chatId, `goodbye`);
         try {
@@ -54,7 +54,7 @@ A goodbye message will be sent when any member leaves the group. It can be an im
         }
       } else {
         try {
-          if (arguments[0] === `OFF` || arguments[0] === `off` || arguments[0] === `Off`) {
+          if (Arc[0] === `OFF` || Arc[0] === `off` || Arc[0] === `Off`) {
             switched = `OFF`;
             await Greetings.changeSettings(Últrðñ.chatId, switched);
             ӄʀǟӄɨռʐ.sendMessage(
@@ -64,7 +64,7 @@ A goodbye message will be sent when any member leaves the group. It can be an im
             );
             return;
           }
-          if (arguments[0] === `ON` || arguments[0] === `on` || arguments[0] === `On`) {
+          if (Arc[0] === `ON` || Arc[0] === `on` || Arc[0] === `On`) {
             switched = `ON`;
             await Greetings.changeSettings(Últrðñ.chatId, switched);
             ӄʀǟӄɨռʐ.sendMessage(
@@ -74,7 +74,7 @@ A goodbye message will be sent when any member leaves the group. It can be an im
             );
             return;
           }
-          if (arguments[0] === `delete`) {
+          if (Arc[0] === `delete`) {
             var Msg = await Greetings.deleteMessage(Últrðñ.chatId, `goodbye`);
             if (Msg === false || Msg === undefined) {
               ӄʀǟӄɨռʐ.sendMessage(

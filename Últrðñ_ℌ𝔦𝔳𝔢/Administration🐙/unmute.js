@@ -12,7 +12,7 @@ module.exports = {
   description: `Unmute group chat`,
   ƈʏɮօʀɢʍօʀɛ: `
 Unmute non-admin members of a group`,
-  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
+  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, Arc) {
     try {
       if (!Últrðñ.isGroup) {
         ӄʀǟӄɨռʐ

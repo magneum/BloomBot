@@ -13,12 +13,12 @@ module.exports = {
   description: `Urban Dictionary`,
   ƈʏɮօʀɢʍօʀɛ: `
 Use this module to find the meaning of a word in Urban Dictionary. Enter  *${UltronSitreper.ULTRONIX}ud*  command.`,
-  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
+  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, Arc) {
     try {
       var text = ``;
       if (!(Últrðñ.replyMessage === ``)) {
         text = Últrðñ.replyMessage;
-      } else if (arguments.length === 0) {
+      } else if (Arc.length === 0) {
         await ӄʀǟӄɨռʐ.sendMessage(
           Últrðñ.chatId,
           "❌",
@@ -38,7 +38,7 @@ Use this module to find the meaning of a word in Urban Dictionary. Enter  *${Ult
         );
         return;
       } else {
-        text = arguments.join(` `);
+        text = Arc.join(` `);
       }
 
       let Response = await ud.define(text);

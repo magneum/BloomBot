@@ -13,7 +13,7 @@ module.exports = {
   description: `	The genitals of a female, or a cat, you give the meaning.`,
   ƈʏɮօʀɢʍօʀɛ: `
 	The genitals of a female, or a cat, you give the meaning.`,
-  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
+  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, Arc) {
     try {
       await ӄʀǟӄɨռʐ.sendMessage(
         Últrðñ.chatId, {

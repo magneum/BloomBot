@@ -14,7 +14,7 @@ module.exports = {
   description: `Get weather data of a city`,
   ƈʏɮօʀɢʍօʀɛ: `
 Obtain weather info by entering the city name.`,
-  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
+  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, Arc) {
     try {
       const weatherTypes = {
         sunny: `sunny`,
@@ -52,7 +52,7 @@ Obtain weather info by entering the city name.`,
             )
           );
       }
-      if (arguments.length === 0 || arguments.length < 1) {
+      if (Arc.length === 0 || Arc.length < 1) {
         await ӄʀǟӄɨռʐ.sendMessage(
           Últrðñ.chatId,
           "❌",
@@ -72,8 +72,8 @@ Obtain weather info by entering the city name.`,
         );
         return;
       } else if (
-        arguments[arguments.length - 1] === `tom` ||
-        arguments[arguments.length - 1] === `tomorrow`
+        Arc[Arc.length - 1] === `tom` ||
+        Arc[Arc.length - 1] === `tomorrow`
       ) {
         var downloading = await ӄʀǟӄɨռʐ
           .sendMessage(
@@ -92,8 +92,8 @@ Obtain weather info by entering the city name.`,
               MessageType.text
             )
           );
-        arguments[arguments.length - 1] = ``;
-        var cityName = arguments.join(` `);
+        Arc[Arc.length - 1] = ``;
+        var cityName = Arc.join(` `);
         const unit = `metric`;
 
         const url =
@@ -242,7 +242,7 @@ TRY LATER!
               MessageType.text
             )
           );
-        var cityName = arguments.join(` `);
+        var cityName = Arc.join(` `);
         const unit = `metric`;
 
         const url =

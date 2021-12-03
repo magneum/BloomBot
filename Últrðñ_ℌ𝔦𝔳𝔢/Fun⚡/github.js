@@ -13,13 +13,13 @@ module.exports = {
   description: `Find Github Profile`,
   ƈʏɮօʀɢʍօʀɛ: `
 Get the github profile by command  *${UltronSitreper.ULTRONIX}github <user>*  or replying  *${UltronSitreper.ULTRONIX}github* .`,
-  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
+  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, Arc) {
     try {
       let user_name = ``;
       if (Últrðñ.isReply) {
         user_name = Últrðñ.replyMessage;
       } else {
-        if (arguments.length === 0) {
+        if (Arc.length === 0) {
           await ӄʀǟӄɨռʐ.sendMessage(
             Últrðñ.chatId,
             "❌",
@@ -39,7 +39,7 @@ Get the github profile by command  *${UltronSitreper.ULTRONIX}github <user>*  or
           );
           return;
         }
-        user_name = arguments[0];
+        user_name = Arc[0];
       }
       let userResponse = await got(`https://api.github.com/users/` + user_name);
       let user = JSON.parse(userResponse.body);

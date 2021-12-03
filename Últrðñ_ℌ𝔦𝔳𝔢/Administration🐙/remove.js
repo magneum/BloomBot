@@ -11,7 +11,7 @@ module.exports = {
   description: `Module to remove a person from a group.`,
   ƈʏɮօʀɢʍօʀɛ: `
 Use this module to remove people from a group by tagging them  *${UltronSitreper.ULTRONIX}remove @<person-to-remove>*  or replying to them  *${UltronSitreper.ULTRONIX}remove*${UltronSitreper.ULTRONIX}`,
-  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
+  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, Arc) {
     try {
       if (!Últrðñ.isGroup) {
         ӄʀǟӄɨռʐ
@@ -151,7 +151,7 @@ Use this module to remove people from a group by tagging them  *${UltronSitreper
         }
         return;
       }
-      if (!arguments[0]) {
+      if (!Arc[0]) {
         ӄʀǟӄɨռʐ
           .sendMessage(
             Últrðñ.chatId,
@@ -171,8 +171,8 @@ Use this module to remove people from a group by tagging them  *${UltronSitreper
           );
         return;
       }
-      if (arguments[0][0] == `@`) {
-        const number = arguments[0].substring(1);
+      if (Arc[0][0] == `@`) {
+        const number = Arc[0].substring(1);
         if (isNaN(number)) {
           ӄʀǟӄɨռʐ
             .sendMessage(

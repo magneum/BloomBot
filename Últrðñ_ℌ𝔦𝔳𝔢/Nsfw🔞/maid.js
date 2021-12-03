@@ -10,7 +10,7 @@ module.exports = {
   description: `	Maids, Maid Uniforms, etc, you know what maids are :3`,
   ƈʏɮօʀɢʍօʀɛ: `
 	Maids, Maid Uniforms, etc, you know what maids are :3`,
-  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
+  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, Arc) {
     try {
       await ӄʀǟӄɨռʐ.sendMessage(
         Últrðñ.chatId,

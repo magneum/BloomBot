@@ -13,12 +13,12 @@ module.exports = {
   description: `Module to find lyrics of song`,
   ƈʏɮօʀɢʍօʀɛ: `
 Use this module to find the lyrics of a song by using  *${UltronSitreper.ULTRONIX}lyrics*  command.`,
-  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
+  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, Arc) {
     try {
       var song = ``;
       if (Últrðñ.isReply) {
         song = Últrðñ.replyMessage;
-      } else if (arguments.length === 0) {
+      } else if (Arc.length === 0) {
         await ӄʀǟӄɨռʐ.sendMessage(
           Últrðñ.chatId,
           "❌",
@@ -38,7 +38,7 @@ Use this module to find the lyrics of a song by using  *${UltronSitreper.ULTRONI
         );
         return;
       } else {
-        song = arguments.join(` `);
+        song = Arc.join(` `);
       }
       await ӄʀǟӄɨռʐ.sendMessage(
         Últrðñ.chatId,

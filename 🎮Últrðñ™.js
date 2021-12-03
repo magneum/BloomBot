@@ -131,27 +131,26 @@ ______/ |__/    ___/  |__/        ______/ |__/  |__/`),
           return;
         }
         var greets = [
-          `${parID}\n just joined the server - glhf!`,
-          `${parID}\n just joined. Everyone, look busy!`,
-          `${parID}\n just joined. Can I get a heal?`,
-          `${parID}\n joined your party.`,
-          `${parID}\n joined. You must construct additional pylons.`,
-          `Ermagherd. ${parID}\n is here.`,
-          `Welcome, ${parID}\n. Stay awhile and listen.`,
-          `Welcome, ${parID}\n. We were expecting you ( ͡° ͜ʖ ͡°)`,
-          `Welcome, ${parID}\n. We hope you brought pizza.`,
-          `Welcome ${parID}\n. Leave your weapons by the door.`,
-          `A wild ${parID}\n appeared.`,
-          `Swoooosh. ${parID}\n just landed.`,
-          `Brace yourselves. ${parID}\n just joined the server.`,
-          `${parID}\n just joined. Hide your bananas.`,
-          `${parID}\n just arrived. Seems OP - please nerf.`,
-          `${parID}\n just slid into the server.`,
-          `A ${parID}\n has spawned in the server.`,
-          `Big ${parID}\n showed up!`,
-          `Where’s ${parID}\n? In the server!`,
-          `${parID}\n hopped into the server. Kangaroo!!`,
-          `${parID}\n just showed up. Hold my beer.`,
+          `ID➛ ${parID}\nJust joined the server - glhf!`,
+          `ID➛ ${parID}\nJust joined. Everyone, look busy!`,
+          `ID➛ ${parID}\nJust joined. Can I get a heal?`,
+          `ID➛ ${parID}\nJoined your party.`,
+          `ID➛ ${parID}\nJoined. You must construct additional pylons.`,
+          `ID➛ ${parID}\nIs here.`,
+          `ID➛ ${parID}\nWelcome, Stay awhile and listen.`,
+          `ID➛ ${parID}\nWelcome, We were expecting you ( ͡° ͜ʖ ͡°)`,
+          `ID➛ ${parID}\nWelcome, We hope you brought pizza.`,
+          `ID➛ ${parID}\nWelcome Leave your weapons by the door.`,
+          `ID➛ ${parID}\nJust Appeared.`,
+          `ID➛ ${parID}\nSwoooosh. Just landed.`,
+          `ID➛ ${parID}\nBrace yourselves. Just joined the server.`,
+          `ID➛ ${parID}\nJust joined. Hide your bananas.`,
+          `ID➛ ${parID}\nJust arrived. Seems OP - please nerf.`,
+          `ID➛ ${parID}\nJust slid into the server.`,
+          `ID➛ ${parID}\nHas spawned in the server.`,
+          `ID➛ ${parID}\nShowed up!`,
+          `ID➛ ${parID}\nHopped into the server. Kangaroo!!`,
+          `ID➛ ${parID}\nJust showed up. Hold my beer.`,
         ];
         var Fetched = await Welcmr.getMessage(groupId, `welcome`);
         const width = 1280;
@@ -195,27 +194,27 @@ ______/ |__/    ___/  |__/        ______/ |__/  |__/`),
           return;
         }
         var greets = [
-          `${parID}\n just joined the server - glhf!`,
-          `${parID}\n just joined. Everyone, look busy!`,
-          `${parID}\n just joined. Can I get a heal?`,
-          `${parID}\n joined your party.`,
-          `${parID}\n joined. You must construct additional pylons.`,
-          `Ermagherd. ${parID}\n is here.`,
-          `Welcome, ${parID}\n. Stay awhile and listen.`,
-          `Welcome, ${parID}\n. We were expecting you ( ͡° ͜ʖ ͡°)`,
-          `Welcome, ${parID}\n. We hope you brought pizza.`,
-          `Welcome ${parID}\n. Leave your weapons by the door.`,
-          `A wild ${parID}\n appeared.`,
-          `Swoooosh. ${parID}\n just landed.`,
-          `Brace yourselves. ${parID}\n just joined the server.`,
-          `${parID}\n just joined. Hide your bananas.`,
-          `${parID}\n just arrived. Seems OP - please nerf.`,
-          `${parID}\n just slid into the server.`,
-          `A ${parID}\n has spawned in the server.`,
-          `Big ${parID}\n showed up!`,
-          `Where’s ${parID}\n? In the server!`,
-          `${parID}\n hopped into the server. Kangaroo!!`,
-          `${parID}\n just showed up. Hold my beer.`,
+          `ID➛ ${parID}\nJust joined the server - glhf!`,
+          `ID➛ ${parID}\nJust joined. Everyone, look busy!`,
+          `ID➛ ${parID}\nJust joined. Can I get a heal?`,
+          `ID➛ ${parID}\nJoined your party.`,
+          `ID➛ ${parID}\nJoined. You must construct additional pylons.`,
+          `ID➛ ${parID}\nIs here.`,
+          `ID➛ ${parID}\nWelcome, Stay awhile and listen.`,
+          `ID➛ ${parID}\nWelcome, We were expecting you ( ͡° ͜ʖ ͡°)`,
+          `ID➛ ${parID}\nWelcome, We hope you brought pizza.`,
+          `ID➛ ${parID}\nWelcome Leave your weapons by the door.`,
+          `ID➛ ${parID}\nJust Appeared.`,
+          `ID➛ ${parID}\nSwoooosh. Just landed.`,
+          `ID➛ ${parID}\nBrace yourselves. Just joined the server.`,
+          `ID➛ ${parID}\nJust joined. Hide your bananas.`,
+          `ID➛ ${parID}\nJust arrived. Seems OP - please nerf.`,
+          `ID➛ ${parID}\nJust slid into the server.`,
+          `ID➛ ${parID}\nHas spawned in the server.`,
+          `ID➛ ${parID}\nShowed up!`,
+          `Where’s ID➛ ${parID}\n? In the server!`,
+          `ID➛ ${parID}\nHopped into the server. Kangaroo!!`,
+          `ID➛ ${parID}\nJust showed up. Hold my beer.`,
         ];
         var Fetched = await Welcmr.getMessage(groupId, `goodbye`);
         const width = 1280;
@@ -363,31 +362,30 @@ If you are keen to use my features, you can deploy Últrðñ on your own account
     if (Últrðñ.isCmd) {
       console.log(Kolor.redBright.bold(`⧪ɪɴꜰᴏ💡⬰  ${Últrðñ.commandName.toUpperCase()} command executed.`));
       const command = UltronSitrep.get(Últrðñ.commandName);
-      var arguments = Últrðñ.body.trim().split(/\s+/).slice(1);
+      var Arc = Últrðñ.body.trim().split(/\s+/).slice(1);
       var UltronRegex = new RegExp(UltronSitreper.ULTRONIX, "g");
       var Ultronf = /\/\^\[(.*)+\]\/\g/g.exec(UltronRegex)[1];
       if (!command) {
-        return
-        //         return ӄʀǟӄɨռʐ.sendMessage(
-        //           Últrðñ.chatId, {
-        //             url: `https://i.postimg.cc/Gt46wxDL/ltr-Invalid.png`,
-        //           },
-        //           MessageType.image, {
-        //             mimetype: Mimetype.png,
-        //             caption: `*⚠️𝗜𝗻𝘃𝗮𝗹𝗶𝗱 Últrðñ 𝗖𝗼𝗺𝗺𝗮𝗻𝗱*
+        return ӄʀǟӄɨռʐ.sendMessage(
+          Últrðñ.chatId, {
+            url: `https://i.postimg.cc/Gt46wxDL/ltr-Invalid.png`,
+          },
+          MessageType.image, {
+            mimetype: Mimetype.png,
+            caption: `*⚠️𝗜𝗻𝘃𝗮𝗹𝗶𝗱 Últrðñ 𝗖𝗼𝗺𝗺𝗮𝗻𝗱*
 
-        // *No such command found.*
-        // Please Use *${Ultronf}help to get the list of available commands*`,
-        //           }
-        //         );
+        *No such command found.*
+        Please Use *${Ultronf}help to get the list of available commands*`,
+          }
+        );
       } else if (command && Últrðñ.commandName == `help`) {
         try {
-          return command.handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments, UltronSitrep);
+          return command.handle(ӄʀǟӄɨռʐ, chat, Últrðñ, Arc, UltronSitrep);
         } catch (cᴇʀʀᴏʀ) {
           return console.log(Kolor.redBright.bold(`⧪ᴇʀʀᴏʀ❌⬰ `, cᴇʀʀᴏʀ));
         }
       }
-      command.handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments)
+      command.handle(ӄʀǟӄɨռʐ, chat, Últrðñ, Arc)
     }
   });
 }

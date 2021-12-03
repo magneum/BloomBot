@@ -11,14 +11,14 @@ module.exports = {
   name: `welcheck`,
   description: `...`,
   ƈʏɮօʀɢʍօʀɛ: `....`,
-  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
+  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, Arc) {
     try {
       if (!Últrðñ.isGroup) {
         ӄʀǟӄɨռʐ.sendMessage(Últrðñ.chatId, `This command is only applicable in a group chat.`, MessageType.text)
         return;
       }
       var Msg = await Greetings.getMessage(Últrðñ.chatId, `welcome`);
-      if (arguments.length == 0) {
+      if (Arc.length == 0) {
         var enabled = await Greetings.checkSettings(Últrðñ.chatId, `welcome`);
         try {
           if (enabled === false || enabled === undefined) {
@@ -37,19 +37,19 @@ module.exports = {
         }
       } else {
         try {
-          if (arguments[0] === `OFF` || arguments[0] === `off` || arguments[0] === `Off`) {
+          if (Arc[0] === `OFF` || Arc[0] === `off` || Arc[0] === `Off`) {
             switched = `OFF`;
             await Greetings.changeSettings(Últrðñ.chatId, switched);
             ӄʀǟӄɨռʐ.sendMessage(Últrðñ.chatId, `Welcome message has been disabled.`, MessageType.text)
             return;
           }
-          if (arguments[0] === `ON` || arguments[0] === `on` || arguments[0] === `On`) {
+          if (Arc[0] === `ON` || Arc[0] === `on` || Arc[0] === `On`) {
             switched = `ON`;
             await Greetings.changeSettings(Últrðñ.chatId, switched);
             ӄʀǟӄɨռʐ.sendMessage(Últrðñ.chatId, `Welcome message has been enabled.`, MessageType.text)
             return;
           }
-          if (arguments[0] === `delete`) {
+          if (Arc[0] === `delete`) {
             var Msg = await Greetings.deleteMessage(Últrðñ.chatId, `welcome`);
             if (Msg === false || Msg === undefined) {
               ӄʀǟӄɨռʐ.sendMessage(Últrðñ.chatId, `Set a welcome message first.`, MessageType.text)

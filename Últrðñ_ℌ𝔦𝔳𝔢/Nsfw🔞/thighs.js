@@ -13,7 +13,7 @@ module.exports = {
   description: `	The top part of your legs, very hot, isn't it?`,
   ƈʏɮօʀɢʍօʀɛ: `
 	The top part of your legs, very hot, isn't it?`,
-  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
+  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, Arc) {
     try {
       await ӄʀǟӄɨռʐ.sendMessage(
         Últrðñ.chatId, {

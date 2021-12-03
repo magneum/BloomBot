@@ -14,7 +14,7 @@ Use this module to promote a member to admin. You can enter the person's mobile 
 1. XXXXXXXXXX
 2. YYXXXXXXXXXX ()
 For example- *${UltronSitreper.ULTRONIX}promote 9861212121*`,
-  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
+  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, Arc) {
     try {
       if (!Últrðñ.isGroup) {
         ӄʀǟӄɨռʐ.sendMessage(
@@ -32,7 +32,7 @@ For example- *${UltronSitreper.ULTRONIX}promote 9861212121*`,
         );
         return;
       }
-      if (!Últrðñ.isReply && typeof arguments[0] == `undefined`) {
+      if (!Últrðñ.isReply && typeof Arc[0] == `undefined`) {
         ӄʀǟӄɨռʐ.sendMessage(
           Últrðñ.chatId,
           `Reply/tag/enter contact number of the person to be promoted.`,
@@ -45,12 +45,12 @@ For example- *${UltronSitreper.ULTRONIX}promote 9861212121*`,
       if (Últrðñ.isReply) {
         var contact = reply.contextInfo.participant.split(`@`)[0];
       } else {
-        var contact = async (arguments, ӄʀǟӄɨռʐ, Últrðñ) => {
+        var contact = async (Arc, ӄʀǟӄɨռʐ, Últrðñ) => {
           var JoinIDNum = ``;
           var countryCode = UltronSitreper.COUNTRY_CODE;
-          if (isNaN(arguments[0]) || arguments[0][0] === `+`) {
-            if (arguments[0][0] === `@` || arguments[0][0] === `+`) {
-              JoinIDNum = arguments[0].substring(1, arguments[0].length + 1);
+          if (isNaN(Arc[0]) || Arc[0][0] === `+`) {
+            if (Arc[0][0] === `@` || Arc[0][0] === `+`) {
+              JoinIDNum = Arc[0].substring(1, Arc[0].length + 1);
             } else {
               await ӄʀǟӄɨռʐ.sendMessage(
                 Últrðñ.chatId,
@@ -72,7 +72,7 @@ For example- *${UltronSitreper.ULTRONIX}promote 9861212121*`,
               return;
             }
           } else {
-            JoinIDNum = arguments[0];
+            JoinIDNum = Arc[0];
           }
 
           if (JoinIDNum.length < 8 || JoinIDNum.length > 13) {

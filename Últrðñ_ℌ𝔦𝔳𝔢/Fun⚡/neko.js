@@ -12,9 +12,9 @@ module.exports = {
   description: `Copy your text to nekobin`,
   ƈʏɮօʀɢʍօʀɛ: `
 Use this module to paste your text to a pastebin (NEKOBIN). Enter text with the command  *${UltronSitreper.ULTRONIX}neko* .`,
-  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
+  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, Arc) {
     try {
-      if (arguments.length === 0 && !Últrðñ.isReply) {
+      if (Arc.length === 0 && !Últrðñ.isReply) {
         await ӄʀǟӄɨռʐ.sendMessage(
           Últrðñ.chatId,
           "❌",

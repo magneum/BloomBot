@@ -13,7 +13,7 @@ module.exports = {
   description: `	Military, Konbini, Work, Nurse Uniforms, etc!~ Sexy~`,
   ƈʏɮօʀɢʍօʀɛ: `
 	Military, Konbini, Work, Nurse Uniforms, etc!~ Sexy~`,
-  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
+  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, Arc) {
     try {
       await ӄʀǟӄɨռʐ.sendMessage(
         Últrðñ.chatId, {

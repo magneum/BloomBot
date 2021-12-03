@@ -18,7 +18,7 @@ module.exports = {
   description: `I know you like anime hug`,
   ƈʏɮօʀɢʍօʀɛ: `
 I know you like anime hug`,
-  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
+  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, Arc) {
     let {
       image
     } = await API.sfw.hug();

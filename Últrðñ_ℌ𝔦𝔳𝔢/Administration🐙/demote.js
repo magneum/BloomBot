@@ -11,7 +11,7 @@ module.exports = {
   description: `Demote a person from admin`,
   ƈʏɮօʀɢʍօʀɛ: `
 Use this module to demote a person from admin by entering the person's mobile number. Valid Syntaxes -\n    1. XXXXXXXXXX\n    2. YYXXXXXXXXXX ()\n\nFor example -\n*${UltronSitreper.ULTRONIX}demote 9861212121*`,
-  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
+  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, Arc) {
     try {
       if (!Últrðñ.isGroup) {
         ӄʀǟӄɨռʐ.sendMessage(
@@ -29,7 +29,7 @@ Use this module to demote a person from admin by entering the person's mobile nu
         );
         return;
       }
-      if (!Últrðñ.isReply && typeof arguments[0] == `undefined`) {
+      if (!Últrðñ.isReply && typeof Arc[0] == `undefined`) {
         ӄʀǟӄɨռʐ.sendMessage(
           Últrðñ.chatId,
           `Reply/tag/enter contact number of the person to be demoted.`,
@@ -42,12 +42,12 @@ Use this module to demote a person from admin by entering the person's mobile nu
       if (Últrðñ.isReply) {
         var contact = reply.contextInfo.participant.split(`@`)[0];
       } else {
-        var contact = async (arguments, ӄʀǟӄɨռʐ, Últrðñ) => {
+        var contact = async (Arc, ӄʀǟӄɨռʐ, Últrðñ) => {
           var JoinIDNum = ``;
           var countryCode = UltronSitreper.COUNTRY_CODE;
-          if (isNaN(arguments[0]) || arguments[0][0] === `+`) {
-            if (arguments[0][0] === `@` || arguments[0][0] === `+`) {
-              JoinIDNum = arguments[0].substring(1, arguments[0].length + 1);
+          if (isNaN(Arc[0]) || Arc[0][0] === `+`) {
+            if (Arc[0][0] === `@` || Arc[0][0] === `+`) {
+              JoinIDNum = Arc[0].substring(1, Arc[0].length + 1);
             } else {
               ӄʀǟӄɨռʐ.sendMessage(
                 Últrðñ.chatId,
@@ -61,7 +61,7 @@ Approved Syntax:
               return;
             }
           } else {
-            JoinIDNum = arguments[0];
+            JoinIDNum = Arc[0];
           }
 
           if (JoinIDNum.length < 8 || JoinIDNum.length > 13) {

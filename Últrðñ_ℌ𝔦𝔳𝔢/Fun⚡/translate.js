@@ -13,7 +13,7 @@ module.exports = {
   ƈʏɮօʀɢʍօʀɛ: `
 Use  *${UltronSitreper.ULTRONIX}tr <text> | <language>*  to translate text to the specified language. You can also reply to a text message with syntax  *${UltronSitreper.ULTRONIX}tr <language>*  to translate text.
 If you do not specify a language, it defaults to <English class=''></English>`,
-  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
+  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, Arc) {
     const processing = await ӄʀǟӄɨռʐ
       .sendMessage(
         Últrðñ.chatId,
@@ -34,7 +34,7 @@ If you do not specify a language, it defaults to <English class=''></English>`,
     try {
       var text = ``;
       var language = ``;
-      if (arguments.length === 0) {
+      if (Arc.length === 0) {
         await ӄʀǟӄɨռʐ.sendMessage(
           Últrðñ.chatId,
           "❌",
@@ -74,7 +74,7 @@ If you do not specify a language, it defaults to <English class=''></English>`,
         }
       } else if (Últrðñ.replyMessage) {
         text = Últrðñ.replyMessage;
-        language = arguments[0];
+        language = Arc[0];
       } else {
         await ӄʀǟӄɨռʐ
           .sendMessage(

@@ -13,7 +13,7 @@ module.exports = {
   description: `	Sends a random vanilla hentai imageURL~`,
   ƈʏɮօʀɢʍօʀɛ: `
 	Sends a random vanilla hentai imageURL~`,
-  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
+  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, Arc) {
     try {
       await ӄʀǟӄɨռʐ.sendMessage(
         Últrðñ.chatId, {

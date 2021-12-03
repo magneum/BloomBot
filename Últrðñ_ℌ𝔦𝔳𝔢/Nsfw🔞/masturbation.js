@@ -13,7 +13,7 @@ module.exports = {
   description: `Solo Queue in CSGO!Lol`,
   ƈʏɮօʀɢʍօʀɛ: `
 Solo Queue in CSGO!Lol`,
-  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
+  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, Arc) {
     try {
       await ӄʀǟӄɨռʐ.sendMessage(
         Últrðñ.chatId, {

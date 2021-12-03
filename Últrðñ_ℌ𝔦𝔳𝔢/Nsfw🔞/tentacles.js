@@ -13,7 +13,7 @@ module.exports = {
   description: `	I'm sorry but, why do they look like intestines?`,
   ƈʏɮօʀɢʍօʀɛ: `
 	I'm sorry but, why do they look like intestines?`,
-  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
+  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, Arc) {
     try {
       await ӄʀǟӄɨռʐ.sendMessage(
         Últrðñ.chatId, {

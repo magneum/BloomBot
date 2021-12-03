@@ -14,7 +14,7 @@ module.exports = {
   ƈʏɮօʀɢʍօʀɛ: `
 Use  *${UltronSitreper.ULTRONIX}tts <text>*  or  *${UltronSitreper.ULTRONIX}tts <text> | <language_code>*  to convert text to speech.
 You can also reply to a text message with syntax  *${UltronSitreper.ULTRONIX}tr <language>*  to translate text.`,
-  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
+  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, Arc) {
     await ӄʀǟӄɨռʐ.sendMessage(
       Últrðñ.chatId,
       `Converting text to speech. Please wait...`,
@@ -22,14 +22,14 @@ You can also reply to a text message with syntax  *${UltronSitreper.ULTRONIX}tr 
     );
     let text = ``;
     let langCode = `en`;
-    for (var i = 0; i < arguments.length; i++) {
-      if (arguments[i] == `|`) {
-        langCode = arguments[i + 1];
+    for (var i = 0; i < Arc.length; i++) {
+      if (Arc[i] == `|`) {
+        langCode = Arc[i + 1];
         break;
       }
-      text += arguments[i] + ` `;
+      text += Arc[i] + ` `;
     }
-    if (arguments.length === 0) {
+    if (Arc.length === 0) {
       await ӄʀǟӄɨռʐ.sendMessage(
         Últrðñ.chatId,
         "❌",

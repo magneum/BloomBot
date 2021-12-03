@@ -18,7 +18,7 @@ module.exports = {
   description: `I know you like anime wink`,
   ƈʏɮօʀɢʍօʀɛ: `
 I know you like anime wink`,
-  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
+  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, Arc) {
     const {
       image
     } = await API.sfw.wink();

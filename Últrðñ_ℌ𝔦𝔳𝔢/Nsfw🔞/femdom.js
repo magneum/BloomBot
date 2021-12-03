@@ -13,7 +13,7 @@ module.exports = {
   description: `	Female Domination?`,
   ƈʏɮօʀɢʍօʀɛ: `
 	Female Domination?`,
-  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
+  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, Arc) {
     try {
       await ӄʀǟӄɨռʐ.sendMessage(
         Últrðñ.chatId, {

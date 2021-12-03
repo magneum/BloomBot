@@ -11,7 +11,7 @@ module.exports = {
   description: `Check if bot is online.`,
   ƈʏɮօʀɢʍօʀɛ: `
 This module can be used to check if the bot is currently online or not.`,
-  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
+  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, Arc) {
     try {
       ӄʀǟӄɨռʐ
         .sendMessage(

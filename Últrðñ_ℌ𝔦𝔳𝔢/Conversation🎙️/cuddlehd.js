@@ -18,7 +18,7 @@ module.exports = {
   description: `I know you like anime cuddle`,
   ƈʏɮօʀɢʍօʀɛ: `
 I know you like anime cuddle`,
-  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
+  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, Arc) {
     let image = await API.sfw.cuddle();
     if (image.image === undefined) {
       return await ӄʀǟӄɨռʐ.sendMessage(

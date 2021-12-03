@@ -13,7 +13,7 @@ module.exports = {
   description: `	Girl's that are wannabe foxes, yes`,
   ƈʏɮօʀɢʍօʀɛ: `
 	Girl's that are wannabe foxes, yes`,
-  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
+  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, Arc) {
     try {
       await ӄʀǟӄɨռʐ.sendMessage(
         Últrðñ.chatId, {

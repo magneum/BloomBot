@@ -13,7 +13,7 @@ module.exports = {
   description: `	Basically sticky white stuff that is usually milked from sharpies.`,
   ƈʏɮօʀɢʍօʀɛ: `
 	Basically sticky white stuff that is usually milked from sharpies.`,
-  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
+  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, Arc) {
     try {
       await ӄʀǟӄɨռʐ.sendMessage(
         Últrðñ.chatId, {

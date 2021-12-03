@@ -15,7 +15,7 @@ Add new people to a group by entering their mobile number as per the format ment
 2. YYXXXXXXXXXX ()
 For example -
 *${UltronSitreper.ULTRONIX}add 9861212121*`,
-  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
+  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, Arc) {
     try {
       if (!Últrðñ.isGroup) {
         ӄʀǟӄɨռʐ
@@ -57,7 +57,7 @@ For example -
           );
         return;
       }
-      if (arguments.length === 0) {
+      if (Arc.length === 0) {
         await ӄʀǟӄɨռʐ.sendMessage(
           Últrðñ.chatId,
           "❌",
@@ -78,7 +78,7 @@ For example -
         return;
       }
       let number;
-      if (isNaN(arguments[0]) || arguments[0][0] === `+` || arguments[0].length < 10) {
+      if (isNaN(Arc[0]) || Arc[0][0] === `+` || Arc[0].length < 10) {
         ӄʀǟӄɨռʐ
           .sendMessage(
             Últrðñ.chatId,
@@ -98,10 +98,10 @@ For example -
           );
         return;
       }
-      if (arguments[0].length == 10 && !isNaN(arguments[0])) {
-        number = `91` + arguments[0];
+      if (Arc[0].length == 10 && !isNaN(Arc[0])) {
+        number = `91` + Arc[0];
       } else {
-        number = arguments[0];
+        number = Arc[0];
       }
       const exists = await ӄʀǟӄɨռʐ.isOnWhatsApp(number + `@s.whatsapp.net`);
       if (!exists) {

@@ -12,8 +12,8 @@ module.exports = {
     description: `Search anything on google`,
     ƈʏɮօʀɢʍօʀɛ: `
 google`,
-    async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
-        if (arguments.length === 0) {
+    async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, Arc) {
+        if (Arc.length === 0) {
             await ӄʀǟӄɨռʐ.sendMessage(
                 Últrðñ.chatId,
                 "❌",
@@ -41,8 +41,8 @@ google`,
                 MessageType.image, {
                     mimetype: Mimetype.jpeg,
                     caption: `
-*🌍𝗚𝗼𝗼𝗴𝗹𝗲𝗱:* ${arguments.join(` `)}
-*💡𝗥𝗲𝘀𝘂𝗹𝘁:* https://google.com/search?q=${arguments.join(`+`)}`
+*🌍𝗚𝗼𝗼𝗴𝗹𝗲𝗱:* ${Arc.join(` `)}
+*💡𝗥𝗲𝘀𝘂𝗹𝘁:* https://google.com/search?q=${Arc.join(`+`)}`
                 }
             )
         } catch (err) {

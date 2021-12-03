@@ -13,7 +13,7 @@ module.exports = {
   description: `	Sends a random doujin page imageURL!`,
   ƈʏɮօʀɢʍօʀɛ: `
 	Sends a random doujin page imageURL!`,
-  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
+  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, Arc) {
     try {
       await ӄʀǟӄɨռʐ.sendMessage(
         Últrðñ.chatId, {

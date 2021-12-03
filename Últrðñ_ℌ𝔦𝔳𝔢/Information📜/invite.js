@@ -11,7 +11,7 @@ module.exports = {
   description: `Module to create group invite link`,
   ƈʏɮօʀɢʍօʀɛ: `
 Use this module to send a group invite link in the group or personally to someone.`,
-  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
+  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, Arc) {
     try {
       if (!Últrðñ.isGroup) {
         ӄʀǟӄɨռʐ

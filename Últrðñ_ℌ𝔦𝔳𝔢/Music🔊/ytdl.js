@@ -16,9 +16,9 @@ module.exports = {
   description: `Download songs`,
   ƈʏɮօʀɢʍօʀɛ: `
 Use this module to download audio of your choice either by specifying a YouTube link or the name of the song.`,
-  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
+  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, Arc) {
     try {
-      if (arguments.length === 0) {
+      if (Arc.length === 0) {
         await ӄʀǟӄɨռʐ.sendMessage(
           Últrðñ.chatId,
           "❌",
@@ -58,13 +58,13 @@ Use this module to download audio of your choice either by specifying a YouTube 
 
       // Task starts here
       var Id = ` `;
-      if (arguments[0].includes(`youtu`)) {
-        Id = arguments[0];
+      if (Arc[0].includes(`youtu`)) {
+        Id = Arc[0];
         try {
-          if (arguments[0].includes(`watch?v=`)) {
-            var songId = arguments[0].split(`watch?v=`)[1];
+          if (Arc[0].includes(`watch?v=`)) {
+            var songId = Arc[0].split(`watch?v=`)[1];
           } else {
-            var songId = arguments[0].split(`/`)[3];
+            var songId = Arc[0].split(`/`)[3];
           }
           await yts({
             videoId: songId
@@ -73,7 +73,7 @@ Use this module to download audio of your choice either by specifying a YouTube 
           throw cᴇʀʀᴏʀ;
         }
       } else {
-        var song = await yts(arguments.join(` `));
+        var song = await yts(Arc.join(` `));
         song = song.all;
         if (song.length < 1) {
           ӄʀǟӄɨռʐ

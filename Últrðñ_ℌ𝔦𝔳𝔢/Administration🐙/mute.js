@@ -12,7 +12,7 @@ module.exports = {
   description: `Mute group chat for a specified time.`,
   ƈʏɮօʀɢʍօʀɛ: `
 Mute non-admin members of a group. You can even specify the duration using s, m or h.\n\nFor example:\n .mute 15 m   will change chat permissions to admin-only for 15 minutes.`,
-  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
+  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, Arc) {
     try {
       if (!Últrðñ.isGroup) {
         ӄʀǟӄɨռʐ
@@ -54,7 +54,7 @@ Mute non-admin members of a group. You can even specify the duration using s, m 
           );
         return;
       }
-      if (arguments.length === 0) {
+      if (Arc.length === 0) {
         await ӄʀǟӄɨռʐ.sendMessage(
           Últrðñ.chatId,
           "❌",
@@ -90,7 +90,7 @@ Mute non-admin members of a group. You can even specify the duration using s, m 
             )
           );
         return;
-      } else if (isNaN(arguments[0])) {
+      } else if (isNaN(Arc[0])) {
         ӄʀǟӄɨռʐ
           .sendMessage(
             Últrðñ.chatId,
@@ -113,17 +113,17 @@ Mute non-admin members of a group. You can even specify the duration using s, m 
 
       var duration;
       var type = `minutes`;
-      if (arguments[1] === `s`) {
-        duration = arguments[0] * 1000;
+      if (Arc[1] === `s`) {
+        duration = Arc[0] * 1000;
         type = `seconds`;
-      } else if (arguments[1] === `m`) {
-        duration = arguments[0] * 60 * 1000;
+      } else if (Arc[1] === `m`) {
+        duration = Arc[0] * 60 * 1000;
         type = `seconds`;
-      } else if (arguments[1] === `h`) {
-        duration = arguments[0] * 60 * 60 * 1000;
+      } else if (Arc[1] === `h`) {
+        duration = Arc[0] * 60 * 60 * 1000;
         type = `seconds`;
       } else {
-        duration = arguments[0] * 60 * 1000;
+        duration = Arc[0] * 60 * 1000;
       }
 
       ӄʀǟӄɨռʐ.groupSettingChange(
@@ -135,7 +135,7 @@ Mute non-admin members of a group. You can even specify the duration using s, m 
         .sendMessage(
           Últrðñ.chatId,
           `Chat permissions changed to  *admin only*  for ` +
-          arguments[0] +
+          Arc[0] +
           ` ` +
           type +
           `.`,

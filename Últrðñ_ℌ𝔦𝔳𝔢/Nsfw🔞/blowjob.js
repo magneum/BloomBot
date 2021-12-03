@@ -13,7 +13,7 @@ module.exports = {
   description: `	Basically an image of a girl sucking on a sharp blade!`,
   ƈʏɮօʀɢʍօʀɛ: `
 	Basically an image of a girl sucking on a sharp blade!`,
-  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
+  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, Arc) {
     try {
       await ӄʀǟӄɨռʐ.sendMessage(
         Últrðñ.chatId, {

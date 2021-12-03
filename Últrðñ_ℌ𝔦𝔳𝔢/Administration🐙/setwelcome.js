@@ -14,7 +14,7 @@ module.exports = {
 New members of a group chat will be welcomed with a message. It can be an image, video, gif with caption or just a text message.
 Use this module to either set, update or delete the existing message.
 The welcome option can be disabled but saved using the   *${UltronSitreper.ULTRONIX}welcome  off*  command. In order to delete the existing message, use  *${UltronSitreper.ULTRONIX}welcome  delete*${UltronSitreper.ULTRONIX}  Do note, the welcome option is still enabled after you use the delete option.`,
-  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
+  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, Arc) {
     try {
       if (!Últrðñ.isGroup) {
         ӄʀǟӄɨռʐ
@@ -37,7 +37,7 @@ The welcome option can be disabled but saved using the   *${UltronSitreper.ULTRO
         return;
       }
       var Msg = await Greetings.getMessage(Últrðñ.chatId, `welcome`);
-      if (arguments.length == 0) {
+      if (Arc.length == 0) {
         var enabled = await Greetings.checkSettings(Últrðñ.chatId, `welcome`);
         try {
           if (enabled === false || enabled === undefined) {
@@ -128,7 +128,7 @@ The welcome option can be disabled but saved using the   *${UltronSitreper.ULTRO
         }
       } else {
         try {
-          if (arguments[0] === `OFF` || arguments[0] === `off` || arguments[0] === `Off`) {
+          if (Arc[0] === `OFF` || Arc[0] === `off` || Arc[0] === `Off`) {
             switched = `OFF`;
             await Greetings.changeSettings(Últrðñ.chatId, switched);
             ӄʀǟӄɨռʐ
@@ -150,7 +150,7 @@ The welcome option can be disabled but saved using the   *${UltronSitreper.ULTRO
               );
             return;
           }
-          if (arguments[0] === `ON` || arguments[0] === `on` || arguments[0] === `On`) {
+          if (Arc[0] === `ON` || Arc[0] === `on` || Arc[0] === `On`) {
             switched = `ON`;
             await Greetings.changeSettings(Últrðñ.chatId, switched);
             ӄʀǟӄɨռʐ
@@ -173,7 +173,7 @@ The welcome option can be disabled but saved using the   *${UltronSitreper.ULTRO
 
             return;
           }
-          if (arguments[0] === `delete`) {
+          if (Arc[0] === `delete`) {
             var Msg = await Greetings.deleteMessage(Últrðñ.chatId, `welcome`);
             if (Msg === false || Msg === undefined) {
               ӄʀǟӄɨռʐ

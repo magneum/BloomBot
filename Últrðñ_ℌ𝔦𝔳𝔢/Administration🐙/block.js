@@ -11,9 +11,9 @@ module.exports = {
   description: `Block contact`,
   ƈʏɮօʀɢʍօʀɛ: `
 Add the number to blocklist. You can reply to the person in group / pm or use .block <number>.`,
-  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
+  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, Arc) {
     try {
-      if (!Últrðñ.isReply && typeof arguments[0] == `undefined`) {
+      if (!Últrðñ.isReply && typeof Arc[0] == `undefined`) {
         ӄʀǟӄɨռʐ.sendMessage(
           Últrðñ.chatId,
           `Tag a message or enter a number to proceed.`,
@@ -23,15 +23,15 @@ Add the number to blocklist. You can reply to the person in group / pm or use .b
       }
       const reply = chat.message.extendedTextMessage;
       var contact = ``;
-      if (!arguments.length > 0) {
+      if (!Arc.length > 0) {
         contact = reply.contextInfo.participant.split(`@`)[0];
       } else {
-        contact = async (arguments, ӄʀǟӄɨռʐ, Últrðñ) => {
+        contact = async (Arc, ӄʀǟӄɨռʐ, Últrðñ) => {
           var JoinIDNum = ``;
           var countryCode = UltronSitreper.COUNTRY_CODE;
-          if (isNaN(arguments[0]) || arguments[0][0] === `+`) {
-            if (arguments[0][0] === `@` || arguments[0][0] === `+`) {
-              JoinIDNum = arguments[0].substring(1, arguments[0].length + 1);
+          if (isNaN(Arc[0]) || Arc[0][0] === `+`) {
+            if (Arc[0][0] === `@` || Arc[0][0] === `+`) {
+              JoinIDNum = Arc[0].substring(1, Arc[0].length + 1);
             } else {
               ӄʀǟӄɨռʐ.sendMessage(
                 Últrðñ.chatId,
@@ -45,7 +45,7 @@ Approved Syntax:
               return;
             }
           } else {
-            JoinIDNum = arguments[0];
+            JoinIDNum = Arc[0];
           }
 
           if (JoinIDNum.length < 8 || JoinIDNum.length > 13) {

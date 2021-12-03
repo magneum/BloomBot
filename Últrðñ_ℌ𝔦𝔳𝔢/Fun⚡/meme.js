@@ -9,7 +9,7 @@ module.exports = {
   description: `meme.DESCRIPTION`,
   ƈʏɮօʀɢʍօʀɛ: `
 meme.EXTENDED_DESCRIPTION`,
-  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
+  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, Arc) {
     try {
       var num = Math.floor(Math.random() * (500 - 1) + 1);
       try {

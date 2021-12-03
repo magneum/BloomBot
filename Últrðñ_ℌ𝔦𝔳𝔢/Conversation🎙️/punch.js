@@ -18,7 +18,7 @@ module.exports = {
   description: `I know you like anime punch`,
   ƈʏɮօʀɢʍօʀɛ: `
 I know you like anime punch`,
-  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
+  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, Arc) {
     let {
       image
     } = await API.sfw.punch();

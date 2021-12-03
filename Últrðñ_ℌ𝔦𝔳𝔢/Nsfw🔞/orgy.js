@@ -13,7 +13,7 @@ module.exports = {
   description: `	Group Lewd Acts`,
   ƈʏɮօʀɢʍօʀɛ: `
 	Group Lewd Acts`,
-  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
+  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, Arc) {
     try {
       await ӄʀǟӄɨռʐ.sendMessage(
         Últrðñ.chatId, {

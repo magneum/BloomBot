@@ -13,7 +13,7 @@ module.exports = {
   description: `	I know you like anime wallpaper`,
   ƈʏɮօʀɢʍօʀɛ: `
 	I know you like anime wallpaper`,
-  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
+  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, Arc) {
     try {
       await ӄʀǟӄɨռʐ.sendMessage(
         Últrðñ.chatId, {

@@ -12,7 +12,7 @@ module.exports = {
   description: `Optical Character Recognition`,
   ƈʏɮօʀɢʍօʀɛ: `
 Use this module to obtain text from an image by  *${UltronSitreper.ULTRONIX}space*  command.`,
-  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
+  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, Arc) {
     try {
       if (Últrðñ.isImage) {
         var replyChatObject = {

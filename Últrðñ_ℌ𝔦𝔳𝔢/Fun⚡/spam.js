@@ -11,8 +11,8 @@ module.exports = {
     name: 'spam',
     description: 'spams a certain message for given number of times',
     ƈʏɮօʀɢʍօʀɛ: `*Spam*\n\nSpam Messages. \n\n*!spam [count text]*\nOR\nreply *!spam [count]* to any message`,
-    async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
-        let count = Number(arguments.shift());
+    async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, Arc) {
+        let count = Number(Arc.shift());
         if (isNaN(count)) {
             await ӄʀǟӄɨռʐ.sendMessage(Últrðñ.chatId, `Invalid count`, MessageType.text);
             return 0;
@@ -23,8 +23,8 @@ module.exports = {
             await ӄʀǟӄɨռʐ.sendMessage(Últrðñ.chatId, `Count can't be zero.`, MessageType.text);
             return 0;
         }
-        if (arguments.length) {
-            let text = arguments.join(' ');
+        if (Arc.length) {
+            let text = Arc.join(' ');
             for (let i = 0; i < count; i++)
                 await ӄʀǟӄɨռʐ.sendMessage(
                     Últrðñ.chatId,

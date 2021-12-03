@@ -12,7 +12,7 @@ module.exports = {
   description: `Get display picture`,
   ƈʏɮօʀɢʍօʀɛ: `
 Get the profile picture of the group in a group conversation or the profile picture of Últrðñ itself in personal chat.`,
-  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
+  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, Arc) {
     try {
       let url = await ӄʀǟӄɨռʐ.getProfilePicture(Últrðñ.chatId);
       await ӄʀǟӄɨռʐ.sendMessage(

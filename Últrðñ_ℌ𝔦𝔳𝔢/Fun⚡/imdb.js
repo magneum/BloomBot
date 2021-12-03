@@ -13,8 +13,8 @@ module.exports = {
     description: `Search anything on IMDB`,
     ƈʏɮօʀɢʍօʀɛ: `
 google`,
-    async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
-        if (arguments.length === 0) {
+    async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, Arc) {
+        if (Arc.length === 0) {
             await ӄʀǟӄɨռʐ.sendMessage(
                 Últrðñ.chatId,
                 "❌",
@@ -38,7 +38,7 @@ google`,
             apiKey: UltronSitreper.IMDB
         });
         let movie = await imob.get({
-            name: arguments.join(" ")
+            name: Arc.join(" ")
         })
         const Litol = `*💡𝐓𝐢𝐭𝐥𝐞➛*  ${movie.title.toUpperCase()}
 *🕜𝐓𝐢𝐦𝐞➛*  ${movie.runtime}

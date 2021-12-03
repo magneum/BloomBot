@@ -23,7 +23,7 @@ module.exports = {
   description: `jokes`,
   ƈʏɮօʀɢʍօʀɛ: `
 jokes`,
-  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
+  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, Arc) {
     try {
       const dadJoke = await getDadjoke();
       console.log(dadJoke);

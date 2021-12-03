@@ -22,7 +22,7 @@ module.exports = {
     name: `gen`,
     description: `alarm dev`,
     ƈʏɮօʀɢʍօʀɛ: `alarm dev`,
-    async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
+    async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, Arc) {
         var aryy = [
             `{username}\n just joined the server - glhf!`,
             `{username}\n just joined. Everyone, look busy!`,

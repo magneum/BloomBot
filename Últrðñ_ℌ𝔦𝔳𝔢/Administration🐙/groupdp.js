@@ -13,7 +13,7 @@ module.exports = {
   description: `Change the group icon`,
   ƈʏɮօʀɢʍօʀɛ: `
 Use this module to change the group's icon. Tag image with the command or send the desired image with caption as the command`,
-  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
+  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, Arc) {
     try {
       if (!Últrðñ.isGroup) {
         await ӄʀǟӄɨռʐ

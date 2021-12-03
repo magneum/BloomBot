@@ -18,7 +18,7 @@ Example Usage,
 *${UltronSitreper.ULTRONIX}carbon*  and reply to a text message.
 Use the -t flag after  *${UltronSitreper.ULTRONIX}carbon*  to get the list of themes availble.
 In order to specify the theme, use  *${UltronSitreper.ULTRONIX}carbon <text> -t <theme>* .`,
-  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments) {
+  async handle(ӄʀǟӄɨռʐ, chat, Últrðñ, Arc) {
     try {
       let themes = [
         `3024 night`,
@@ -51,7 +51,7 @@ In order to specify the theme, use  *${UltronSitreper.ULTRONIX}carbon <text> -t 
         `zenburn`,
       ];
       var code = ``;
-      if (arguments[0] == null && !Últrðñ.isReply) {
+      if (Arc[0] == null && !Últrðñ.isReply) {
         await ӄʀǟӄɨռʐ.sendMessage(
           Últrðñ.chatId, {
             url: `https://i.postimg.cc/MGkpdxHT/ltr-Args.png`
