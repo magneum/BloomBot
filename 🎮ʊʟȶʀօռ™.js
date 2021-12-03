@@ -7,13 +7,13 @@ registerFont(`./ʊʟȶʀօռ/LobsterTwo-Bold.ttf`, { family: `Lobster` });
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const UltronSitreper = require(`./ʊʟȶʀօռ/UltronSitreper`);
 const ᴋʀᴀᴋɪɴᴢᴋᴏɴ = require(`./ƈʏӄօռ/sessionString`);
-var randomMC = require("random-material-color");
+var randomMC = require(`random-material-color`);
 const ʊʟȶʀօռǟքք = require(`./ƈʏӄօռ/helper`);
 const Welcmr = require(`./ʊʟȶʀօռ/wlcmr`);
 const ʊʟȶʀօռsql = UltronSitreper.POSTQL;
 const ʊʟȶʀօռSudo = [`block`, `unblock`];
 const Users = require(`./ʊʟȶʀօռ/user`);
-var rg = require("random-greetings");
+var rg = require(`random-greetings`);
 const Kolor = require(`chalk`);
 const fs = require(`fs`);
 console.clear();
@@ -106,7 +106,7 @@ async function ʊʟȶʀօռRunner() {
   await υℓтяσηℓιєηт.connect();
   υℓтяσηℓιєηт.on(`group-participants-update`, async (update) => {
     console.log(
-      `------------------- GROUP PARTICIPANT UPDATE -------------------`
+      `=================😈    |  ɢʀᴏᴜᴘ ᴘᴀʀᴛɪᴄɪᴘᴀɴᴛ ᴜᴘᴅᴀᴛᴇ  |    😈=================`
     );
     console.log(update.participants);
     console.log(update.action);
@@ -188,7 +188,7 @@ async function ʊʟȶʀօռRunner() {
         if (enable === false || enable === `OFF`) {
           return;
         }
-        υℓтяσηℓιєηт.sendMessage(groupId, "GooDbye", MessageType.text);
+        υℓтяσηℓιєηт.sendMessage(groupId, `GooDbye`, MessageType.text);
       }
     } catch (cᴇʀʀᴏʀ) {
       console.log(cᴇʀʀᴏʀ);
@@ -210,7 +210,7 @@ async function ʊʟȶʀօռRunner() {
       ? await υℓтяσηℓιєηт.groupMetadata(sender)
       : ``;
     var ʊʟȶʀօռ = ʊʟȶʀօռǟքք.resolve(chat, υℓтяσηℓιєηт, groupMetadata);
-    const ʊʟȶʀօռRights = [
+    const adminmodls = [
       `add`,
       `demote`,
       `invite`,
@@ -250,11 +250,11 @@ async function ʊʟȶʀօռRunner() {
     if (ʊʟȶʀօռ.isCmd && !ʊʟȶʀօռ.fromMe && !ʊʟȶʀօռ.isSenderSUDO) {
       if (UltronSitreper.PRIVACY === `public`) {
         if (
-          ʊʟȶʀօռRights.indexOf(ʊʟȶʀօռ.moduleName) >= 0 &&
+          adminmodls.indexOf(ʊʟȶʀօռ.moduleName) >= 0 &&
           !ʊʟȶʀօռ.isSenderGroupAdmin
         ) {
           console.log(
-            Kolor.redBright.bold(`💡⬰  ʊʟȶʀօռRights `),
+            Kolor.redBright.bold(`💡⬰  adminmodls `),
             Kolor.greenBright.bold(`${ʊʟȶʀօռ.moduleName}`),
             Kolor.redBright.bold(`not executed in public Work Type.`)
           );
@@ -354,7 +354,7 @@ If you are keen to use my features, you can deploy ʊʟȶʀօռ on your own acco
       );
       const module = UltronSitrep.get(ʊʟȶʀօռ.moduleName);
       var Arc = ʊʟȶʀօռ.body.trim().split(/\s+/).slice(1);
-      var UltronRegex = new RegExp(UltronSitreper.ULTRONIX, "g");
+      var UltronRegex = new RegExp(UltronSitreper.ULTRONIX, `g`);
       var Ultronf = /\/\^\[(.*)+\]\/\g/g.exec(UltronRegex)[1];
       if (!module) {
         return υℓтяσηℓιєηт.sendMessage(
