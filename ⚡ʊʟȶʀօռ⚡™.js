@@ -64,13 +64,13 @@ async function ʊʟȶʀօռRunner() {
     await ʊʟȶʀօռsql.sync();
     console.clear();
     console.log(Kolor.yellowBright.bold(`💡⬰  𝘐𝘯𝘴𝘵𝘢𝘭𝘭𝘪𝘯𝘨 𝘗𝘭𝘶𝘨𝘪𝘯𝘴...✅`));
-    const Folders = fs.readdirSync(`./ʊʟȶʀօռɦɨʋɛ`);
+    const Folders = fs.readdirSync(`./ʊʟȶʀօռ🐞ɦɨʋɛ`);
     for (const folder of Folders) {
       const moduleFiles = fs
-        .readdirSync(`./ʊʟȶʀօռɦɨʋɛ/${folder}`)
+        .readdirSync(`./ʊʟȶʀօռ🐞ɦɨʋɛ/${folder}`)
         .filter((file) => file.endsWith(`.js`));
       for (const file of moduleFiles) {
-        const module = require(`./ʊʟȶʀօռɦɨʋɛ/${folder}/${file}`);
+        const module = require(`./ʊʟȶʀօռ🐞ɦɨʋɛ/${folder}/${file}`);
         UltronSitrep.set(module.name, module);
         console.log(
           Kolor.yellowBright.bold(`💡⬰  `),
@@ -87,8 +87,6 @@ async function ʊʟȶʀօռRunner() {
         `=================😈    |  ʊʟȶʀօռ  |    😈=================`
       ),
       Kolor.redBright.bold(`
-🎮ʊʟȶʀօռ™ 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 
-𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤.. 
 ██╗   ██╗██╗  ████████╗██████╗  ██████╗ ███╗   ██╗
 ██║   ██║██║  ╚══██╔══╝██╔══██╗██╔═══██╗████╗  ██║
 ██║   ██║██║     ██║   ██████╔╝██║   ██║██╔██╗ ██║
@@ -96,7 +94,8 @@ async function ʊʟȶʀօռRunner() {
 ╚██████╔╝███████╗██║   ██║  ██║╚██████╔╝██║ ╚████║
 ╚═════╝ ╚══════╝╚═╝   ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝`),
       Kolor.yellowBright.bold(
-        `\n=================😈    |  ʊʟȶʀօռ  |    😈=================`
+        `\n=================😈    |  ʊʟȶʀօռ  |    😈=================
+🎮ʊʟȶʀօռ™ 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..`
       )
     );
   });
