@@ -120,8 +120,10 @@ ______/ |__/    ___/  |__/        ______/ |__/  |__/`),
     console.log(`------------------- GROUP PARTICIPANT UPDATE -------------------`);
     console.log(update.participants);
     console.log(update.action);
+    console.log(update.actor);
     console.log(update.jid);
     var groupId = update.jid;
+    var parID = update.participants;
     try {
       if (update.action === `add`) {
         var enable = await Welcmr.checkSettings(groupId, `welcome`);
@@ -129,27 +131,27 @@ ______/ |__/    ___/  |__/        ______/ |__/  |__/`),
           return;
         }
         var greets = [
-          `{username}\n just joined the server - glhf!`,
-          `{username}\n just joined. Everyone, look busy!`,
-          `{username}\n just joined. Can I get a heal?`,
-          `{username}\n joined your party.`,
-          `{username}\n joined. You must construct additional pylons.`,
-          `Ermagherd. {username}\n is here.`,
-          `Welcome, {username}\n. Stay awhile and listen.`,
-          `Welcome, {username}\n. We were expecting you ( ͡° ͜ʖ ͡°)`,
-          `Welcome, {username}\n. We hope you brought pizza.`,
-          `Welcome {username}\n. Leave your weapons by the door.`,
-          `A wild {username}\n appeared.`,
-          `Swoooosh. {username}\n just landed.`,
-          `Brace yourselves. {username}\n just joined the server.`,
-          `{username}\n just joined. Hide your bananas.`,
-          `{username}\n just arrived. Seems OP - please nerf.`,
-          `{username}\n just slid into the server.`,
-          `A {username}\n has spawned in the server.`,
-          `Big {username}\n showed up!`,
-          `Where’s {username}\n? In the server!`,
-          `{username}\n hopped into the server. Kangaroo!!`,
-          `{username}\n just showed up. Hold my beer.`,
+          `${parID}\n just joined the server - glhf!`,
+          `${parID}\n just joined. Everyone, look busy!`,
+          `${parID}\n just joined. Can I get a heal?`,
+          `${parID}\n joined your party.`,
+          `${parID}\n joined. You must construct additional pylons.`,
+          `Ermagherd. ${parID}\n is here.`,
+          `Welcome, ${parID}\n. Stay awhile and listen.`,
+          `Welcome, ${parID}\n. We were expecting you ( ͡° ͜ʖ ͡°)`,
+          `Welcome, ${parID}\n. We hope you brought pizza.`,
+          `Welcome ${parID}\n. Leave your weapons by the door.`,
+          `A wild ${parID}\n appeared.`,
+          `Swoooosh. ${parID}\n just landed.`,
+          `Brace yourselves. ${parID}\n just joined the server.`,
+          `${parID}\n just joined. Hide your bananas.`,
+          `${parID}\n just arrived. Seems OP - please nerf.`,
+          `${parID}\n just slid into the server.`,
+          `A ${parID}\n has spawned in the server.`,
+          `Big ${parID}\n showed up!`,
+          `Where’s ${parID}\n? In the server!`,
+          `${parID}\n hopped into the server. Kangaroo!!`,
+          `${parID}\n just showed up. Hold my beer.`,
         ];
         var Fetched = await Welcmr.getMessage(groupId, `welcome`);
         const width = 1280;
@@ -161,7 +163,7 @@ ______/ |__/    ___/  |__/        ______/ |__/  |__/`),
         context.font = `bold 50pt Lobster`;
         context.textAlign = `center`;
         context.textBaseline = `top`;
-        const text = greets[Math.floor(Math.random() * aryy.length)];
+        const text = greets[Math.floor(Math.random() * greets.length)];
         const textWidth = context.measureText(text).width;
         context.fillRect(600 - textWidth / 2 - 10, 170 - 5, textWidth + 20, 120);
         const text2 = Fetched.message;
@@ -175,7 +177,7 @@ ______/ |__/    ___/  |__/        ______/ |__/  |__/`),
           const buffer = canvas.toBuffer(`image/png`);
           fs.writeFileSync(`./Últrðñ/Últrðñ-Welcmr.png`, buffer);
           ӄʀǟӄɨռʐ.sendMessage(
-            Últrðñ.chatId, {
+            groupId, {
               url: `./Últrðñ/Últrðñ-Welcmr.png`
             },
             MessageType.image, {
@@ -192,11 +194,72 @@ ______/ |__/    ___/  |__/        ______/ |__/  |__/`),
         if (enable === false || enable === `OFF`) {
           return;
         }
+        var greets = [
+          `${parID}\n just joined the server - glhf!`,
+          `${parID}\n just joined. Everyone, look busy!`,
+          `${parID}\n just joined. Can I get a heal?`,
+          `${parID}\n joined your party.`,
+          `${parID}\n joined. You must construct additional pylons.`,
+          `Ermagherd. ${parID}\n is here.`,
+          `Welcome, ${parID}\n. Stay awhile and listen.`,
+          `Welcome, ${parID}\n. We were expecting you ( ͡° ͜ʖ ͡°)`,
+          `Welcome, ${parID}\n. We hope you brought pizza.`,
+          `Welcome ${parID}\n. Leave your weapons by the door.`,
+          `A wild ${parID}\n appeared.`,
+          `Swoooosh. ${parID}\n just landed.`,
+          `Brace yourselves. ${parID}\n just joined the server.`,
+          `${parID}\n just joined. Hide your bananas.`,
+          `${parID}\n just arrived. Seems OP - please nerf.`,
+          `${parID}\n just slid into the server.`,
+          `A ${parID}\n has spawned in the server.`,
+          `Big ${parID}\n showed up!`,
+          `Where’s ${parID}\n? In the server!`,
+          `${parID}\n hopped into the server. Kangaroo!!`,
+          `${parID}\n just showed up. Hold my beer.`,
+        ];
         var Fetched = await Welcmr.getMessage(groupId, `goodbye`);
-        return ӄʀǟӄɨռʐ.sendMessage(groupId, Fetched.message, MessageType.text);
+        const width = 1280;
+        const height = 720;
+        const canvas = createCanvas(width, height);
+        const context = canvas.getContext(`2d`);
+        context.fillStyle = `#555555`;
+        context.fillRect(0, 0, width, height);
+        context.font = `bold 50pt Lobster`;
+        context.textAlign = `center`;
+        context.textBaseline = `top`;
+        const text = greets[Math.floor(Math.random() * greets.length)];
+        const textWidth = context.measureText(text).width;
+        context.fillRect(600 - textWidth / 2 - 10, 170 - 5, textWidth + 20, 120);
+        const text2 = Fetched.message;
+        context.fillStyle = randomMC.getColor();
+        context.fillText(text, 600, 170);
+        context.fillStyle = `#fff`;
+        context.font = `bold 30pt Honeycomb`;
+        context.fillText(text2, 600, 530);
+        const myimg = loadImage(`./Últrðñ/Últrðñ-Welcmr.png`)
+        await myimg.then(() => {
+          const buffer = canvas.toBuffer(`image/png`);
+          fs.writeFileSync(`./Últrðñ/Últrðñ-Welcmr.png`, buffer);
+          ӄʀǟӄɨռʐ.sendMessage(
+            groupId, {
+              url: `./Últrðñ/Últrðñ-Welcmr.png`
+            },
+            MessageType.image, {
+              mimetype: Mimetype.png,
+              caption: `
+➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
+*🖥️PostSql➛* ${Fetched.message}`
+            }
+          );
+        });
       }
+      ӄʀǟӄɨռʐ.sendMessage(
+        groupId,
+        "on (event: 'group-participants-update', listener: (update: {jid: string, participants: string[], actor?: string, action: WAParticipantAction}) => void): this",
+        MessageType.text
+      );
     } catch (cᴇʀʀᴏʀ) {
-      console.log(`Greeting messages are off`);
+      console.log(cᴇʀʀᴏʀ);
     }
   });
   // ===============================================================================
