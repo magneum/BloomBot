@@ -15,7 +15,7 @@ This module can be used to check if the bot is currently online or not.`,
         .sendMessage(
           ʊʟȶʀօռ.chatId,
           `🐞 ʊʟȶʀօռ has been integrated successfully. 🐞
-Use the   *${UltronSitreper.ULTRONIX}help*   command to get a list of plugins that will make your WhatsApp experience much easier.`,
+Use the   *${UltronSitreper.ULTRONIX}help*   module to get a list of plugins that will make your WhatsApp experience much easier.`,
           MessageType.text
         )
         .catch((cᴇʀʀᴏʀ) =>

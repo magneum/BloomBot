@@ -15,7 +15,7 @@ Use this module to send a group invite link in the group or personally to someon
         υℓтяσηℓιєηт
           .sendMessage(
             ʊʟȶʀօռ.chatId,
-            `Command only applicable in a group chat.`,
+            `module only applicable in a group chat.`,
             MessageType.text
           )
           .catch((cᴇʀʀᴏʀ) =>

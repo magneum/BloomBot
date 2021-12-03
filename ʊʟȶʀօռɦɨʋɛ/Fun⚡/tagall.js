@@ -8,14 +8,14 @@ module.exports = {
   name: `tagall`,
   description: `Module to tag evryone in a group.`,
   ƈʏɮօʀɢʍօʀɛ: `
-Use this module to tag everyone in the group by either replying to a message or simply using  *${UltronSitreper.ULTRONIX}tagall*  command.`,
+Use this module to tag everyone in the group by either replying to a message or simply using  *${UltronSitreper.ULTRONIX}tagall*  module.`,
   async handle(υℓтяσηℓιєηт, chat, ʊʟȶʀօռ, Arc) {
     try {
       if (!ʊʟȶʀօռ.isGroup) {
         υℓтяσηℓιєηт
           .sendMessage(
             ʊʟȶʀօռ.chatId,
-            `Command only applicable in a group chat.`,
+            `module only applicable in a group chat.`,
             MessageType.text
           )
           .catch((cᴇʀʀᴏʀ) =>

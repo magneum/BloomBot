@@ -15,7 +15,7 @@ Mute non-admin members of a group. You can even specify the duration using s, m 
         υℓтяσηℓιєηт
           .sendMessage(
             ʊʟȶʀօռ.chatId,
-            `*${UltronSitreper.ULTRONIX}mute*  command is only applicable in a group chat.`,
+            `*${UltronSitreper.ULTRONIX}mute*  module is only applicable in a group chat.`,
             MessageType.text
           )
           .catch((cᴇʀʀᴏʀ) =>

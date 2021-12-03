@@ -68,7 +68,7 @@ exports.resolve = function (messageInstance, υℓтяσηℓιєηт, groupMeta
       ? messageInstance.message.buttonsResponseMessage.selectedDisplayText
       : "";
   ʊʟȶʀօռ.isCmd = prefixRegex.test(ʊʟȶʀօռ.body);
-  ʊʟȶʀօռ.commandName = ʊʟȶʀօռ.isCmd
+  ʊʟȶʀօռ.moduleName = ʊʟȶʀօռ.isCmd
     ? ʊʟȶʀօռ.body.slice(1).trim().split(/ +/).shift().toLowerCase()
     : "";
   ʊʟȶʀօռ.isImage = ʊʟȶʀօռ.type === "image";

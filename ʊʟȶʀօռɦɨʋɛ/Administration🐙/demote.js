@@ -14,7 +14,7 @@ Use this module to demote a person from admin by entering the person's mobile nu
       if (!ʊʟȶʀօռ.isGroup) {
         υℓтяσηℓιєηт.sendMessage(
           ʊʟȶʀօռ.chatId,
-          `This command is only applicable for group chats.`,
+          `This module is only applicable for group chats.`,
           MessageType.text
         );
         return;

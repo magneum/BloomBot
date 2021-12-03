@@ -10,7 +10,7 @@ module.exports = {
   name: `sticker`,
   description: `Module to convert image to sticker`,
   ƈʏɮօʀɢʍօʀɛ: `
-Use this module to convert any image from your chat to a sticker. Reply to an image message with the command  *${UltronSitreper.ULTRONIX}sticker*  to convert and send that image as a sticker.`,
+Use this module to convert any image from your chat to a sticker. Reply to an image message with the module  *${UltronSitreper.ULTRONIX}sticker*  to convert and send that image as a sticker.`,
   async handle(υℓтяσηℓιєηт, chat, ʊʟȶʀօռ, Arc) {
     try {
       const convertToSticker = async (imageId, replyChat) => {
@@ -29,7 +29,7 @@ Use this module to convert any image from your chat to a sticker. Reply to an im
 • ${CYΣЯЯ}
 
 
-💡𝗖𝗼𝗺𝗺𝗮𝗻𝗱 • ${ʊʟȶʀօռ.commandName}
+💡𝗖𝗼𝗺𝗺𝗮𝗻𝗱 • ${ʊʟȶʀօռ.moduleName}
 🎮𝗜𝘁 𝘄𝗮𝘀 𝗣𝗠? • ${ʊʟȶʀօռ.isPm}`,
               MessageType.text
             )
@@ -45,7 +45,7 @@ Use this module to convert any image from your chat to a sticker. Reply to an im
 • ${CYΣЯЯ}
 
 
-💡𝗖𝗼𝗺𝗺𝗮𝗻𝗱 • ${ʊʟȶʀօռ.commandName}
+💡𝗖𝗼𝗺𝗺𝗮𝗻𝗱 • ${ʊʟȶʀօռ.moduleName}
 🎮𝗜𝘁 𝘄𝗮𝘀 𝗣𝗠? • ${ʊʟȶʀօռ.isPm}`,
               MessageType.text
             )
@@ -75,7 +75,7 @@ Use this module to convert any image from your chat to a sticker. Reply to an im
 • ${CYΣЯЯ}
 
 
-💡𝗖𝗼𝗺𝗺𝗮𝗻𝗱 • ${ʊʟȶʀօռ.commandName}
+💡𝗖𝗼𝗺𝗺𝗮𝗻𝗱 • ${ʊʟȶʀօռ.moduleName}
 🎮𝗜𝘁 𝘄𝗮𝘀 𝗣𝗠? • ${ʊʟȶʀօռ.isPm}`,
                     MessageType.text
                   )
@@ -104,7 +104,7 @@ Use this module to convert any image from your chat to a sticker. Reply to an im
 • ${CYΣЯЯ}
 
 
-💡𝗖𝗼𝗺𝗺𝗮𝗻𝗱 • ${ʊʟȶʀօռ.commandName}
+💡𝗖𝗼𝗺𝗺𝗮𝗻𝗱 • ${ʊʟȶʀօռ.moduleName}
 🎮𝗜𝘁 𝘄𝗮𝘀 𝗣𝗠? • ${ʊʟȶʀօռ.isPm}`,
                 MessageType.text
               );
@@ -144,7 +144,7 @@ Use this module to convert any image from your chat to a sticker. Reply to an im
 • ${CYΣЯЯ}
 
 
-💡𝗖𝗼𝗺𝗺𝗮𝗻𝗱 • ${ʊʟȶʀօռ.commandName}
+💡𝗖𝗼𝗺𝗺𝗮𝗻𝗱 • ${ʊʟȶʀօռ.moduleName}
 🎮𝗜𝘁 𝘄𝗮𝘀 𝗣𝗠? • ${ʊʟȶʀօռ.isPm}`,
                   MessageType.text
                 )
@@ -173,7 +173,7 @@ Use this module to convert any image from your chat to a sticker. Reply to an im
 • ${CYΣЯЯ}
 
 
-💡𝗖𝗼𝗺𝗺𝗮𝗻𝗱 • ${ʊʟȶʀօռ.commandName}
+💡𝗖𝗼𝗺𝗺𝗮𝗻𝗱 • ${ʊʟȶʀօռ.moduleName}
 🎮𝗜𝘁 𝘄𝗮𝘀 𝗣𝗠? • ${ʊʟȶʀօռ.isPm}`,
               MessageType.text
             );
@@ -212,7 +212,7 @@ Use this module to convert any image from your chat to a sticker. Reply to an im
 • ${CYΣЯЯ}
 
 
-💡𝗖𝗼𝗺𝗺𝗮𝗻𝗱 • ${ʊʟȶʀօռ.commandName}
+💡𝗖𝗼𝗺𝗺𝗮𝗻𝗱 • ${ʊʟȶʀօռ.moduleName}
 🎮𝗜𝘁 𝘄𝗮𝘀 𝗣𝗠? • ${ʊʟȶʀօռ.isPm}`,
               MessageType.text
             )
@@ -228,7 +228,7 @@ ENTER VALID FILE!
 • ${CYΣЯЯ}
 
 
-💡𝗖𝗼𝗺𝗺𝗮𝗻𝗱 • ${ʊʟȶʀօռ.commandName}
+💡𝗖𝗼𝗺𝗺𝗮𝗻𝗱 • ${ʊʟȶʀօռ.moduleName}
 🎮𝗜𝘁 𝘄𝗮𝘀 𝗣𝗠? • ${ʊʟȶʀօռ.isPm}`,
         MessageType.text
       );

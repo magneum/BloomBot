@@ -19,7 +19,7 @@ module.exports = {
         υℓтяσηℓιєηт
           .sendMessage(
             ʊʟȶʀօռ.chatId,
-            `Command only applicable in a group chat.`,
+            `module only applicable in a group chat.`,
             MessageType.text
           )
           .catch((cᴇʀʀᴏʀ) =>
@@ -181,7 +181,7 @@ module.exports = {
   • ${cᴇʀʀᴏʀ}
   
   
-  💡𝗖𝗼𝗺𝗺𝗮𝗻𝗱 • ${ʊʟȶʀօռ.commandName}
+  💡𝗖𝗼𝗺𝗺𝗮𝗻𝗱 • ${ʊʟȶʀօռ.moduleName}
   🎮𝗜𝘁 𝘄𝗮𝘀 𝗣𝗠? • ${ʊʟȶʀօռ.isPm}`,
             MessageType.text
           )

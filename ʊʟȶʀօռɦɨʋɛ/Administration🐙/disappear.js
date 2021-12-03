@@ -8,7 +8,7 @@ module.exports = {
   name: `disappear`,
   description: `Toggle disappearing messages`,
   ƈʏɮօʀɢʍօʀɛ: `
-Toggle disappearing messages by using command *${UltronSitreper.ULTRONIX}dissapear* .`,
+Toggle disappearing messages by using module *${UltronSitreper.ULTRONIX}dissapear* .`,
   async handle(υℓтяσηℓιєηт, chat, ʊʟȶʀօռ, Arc) {
     try {
       var time = 7 * 24 * 60 * 60;
@@ -16,7 +16,7 @@ Toggle disappearing messages by using command *${UltronSitreper.ULTRONIX}dissape
         υℓтяσηℓιєηт
           .sendMessage(
             ʊʟȶʀօռ.chatId,
-            `Command only applicable in a group chat.`,
+            `module only applicable in a group chat.`,
             MessageType.text
           )
           .catch((cᴇʀʀᴏʀ) =>

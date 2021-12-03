@@ -7,10 +7,10 @@ const ud = require(`urban-dictionary`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
   name: `ud`,
-  commandType: `fun`,
+  moduleType: `fun`,
   description: `Urban Dictionary`,
   ƈʏɮօʀɢʍօʀɛ: `
-Use this module to find the meaning of a word in Urban Dictionary. Enter  *${UltronSitreper.ULTRONIX}ud*  command.`,
+Use this module to find the meaning of a word in Urban Dictionary. Enter  *${UltronSitreper.ULTRONIX}ud*  module.`,
   async handle(υℓтяσηℓιєηт, chat, ʊʟȶʀօռ, Arc) {
     try {
       var text = ``;

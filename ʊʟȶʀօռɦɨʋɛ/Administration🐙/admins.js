@@ -15,7 +15,7 @@ Tag admins of a group (either as a reply to another message or a direct tag).`,
         υℓтяσηℓιєηт
           .sendMessage(
             ʊʟȶʀօռ.chatId,
-            `*${UltronSitreper.ULTRONIX}admins*  command is only applicable for group chats.`,
+            `*${UltronSitreper.ULTRONIX}admins*  module is only applicable for group chats.`,
             MessageType.text
           )
           .catch((cᴇʀʀᴏʀ) =>

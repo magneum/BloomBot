@@ -10,7 +10,7 @@ module.exports = {
   name: `yts`,
   description: `Get recommendations and links from Youtube`,
   ƈʏɮօʀɢʍօʀɛ: `
-Get the first 10 recommendations from YouTube with their authorname, timestamp and link. Mention the FetchedLinks that are required to be searched along with the command.`,
+Get the first 10 recommendations from YouTube with their authorname, timestamp and link. Mention the FetchedLinks that are required to be searched along with the module.`,
   async handle(υℓтяσηℓιєηт, chat, ʊʟȶʀօռ, Arc) {
     try {
       if (Arc.length === 0) {
@@ -99,7 +99,7 @@ NO VIDEOS FOUND!
 • ${cᴇʀʀᴏʀ}
 
 
-💡𝗖𝗼𝗺𝗺𝗮𝗻𝗱 • ${ʊʟȶʀօռ.commandName}
+💡𝗖𝗼𝗺𝗺𝗮𝗻𝗱 • ${ʊʟȶʀօռ.moduleName}
 🎮𝗜𝘁 𝘄𝗮𝘀 𝗣𝗠? • ${ʊʟȶʀօռ.isPm}`,
         MessageType.text
       );

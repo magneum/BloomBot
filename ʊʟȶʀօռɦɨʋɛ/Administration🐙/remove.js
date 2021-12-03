@@ -15,7 +15,7 @@ Use this module to remove people from a group by tagging them  *${UltronSitreper
         υℓтяσηℓιєηт
           .sendMessage(
             ʊʟȶʀօռ.chatId,
-            `Command only applicable in a group chat.`,
+            `module only applicable in a group chat.`,
             MessageType.text
           )
           .catch((cᴇʀʀᴏʀ) =>

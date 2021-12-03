@@ -8,7 +8,7 @@ class ʊʟȶʀօռ {
     isReply,
     body,
     isCmd,
-    commandName,
+    moduleName,
     chatId,
     fromMe,
     owner,
@@ -68,7 +68,7 @@ class ʊʟȶʀօռ {
     this.isSenderGroupAdmin = isSenderGroupAdmin;
     this.isSenderSUDO = isSenderSUDO;
     this.isCmd = isCmd;
-    this.commandName = commandName;
+    this.moduleName = moduleName;
     this.logGroup = logGroup;
     this.groupName = groupName;
     this.groupMembers = groupMembers;

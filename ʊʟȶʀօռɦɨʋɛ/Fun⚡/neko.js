@@ -9,7 +9,7 @@ module.exports = {
   name: `neko`,
   description: `Copy your text to nekobin`,
   ƈʏɮօʀɢʍօʀɛ: `
-Use this module to paste your text to a pastebin (NEKOBIN). Enter text with the command  *${UltronSitreper.ULTRONIX}neko* .`,
+Use this module to paste your text to a pastebin (NEKOBIN). Enter text with the module  *${UltronSitreper.ULTRONIX}neko* .`,
   async handle(υℓтяσηℓιєηт, chat, ʊʟȶʀօռ, Arc) {
     try {
       if (Arc.length === 0 && !ʊʟȶʀօռ.isReply) {
@@ -50,14 +50,14 @@ Use this module to paste your text to a pastebin (NEKOBIN). Enter text with the 
       if (!ʊʟȶʀօռ.isReply) {
         var json = {
           content: ʊʟȶʀօռ.body.replace(
-            ʊʟȶʀօռ.body[0] + ʊʟȶʀօռ.commandName + ` `,
+            ʊʟȶʀօռ.body[0] + ʊʟȶʀօռ.moduleName + ` `,
             ``
           ),
         };
       } else {
         var json = {
           content: ʊʟȶʀօռ.replyMessage.replace(
-            ʊʟȶʀօռ.body[0] + ʊʟȶʀօռ.commandName + ` `,
+            ʊʟȶʀօռ.body[0] + ʊʟȶʀօռ.moduleName + ` `,
             ``
           ),
         };

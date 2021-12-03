@@ -9,7 +9,7 @@ module.exports = {
   name: `read`,
   description: `Optical Character Recognition`,
   ƈʏɮօʀɢʍօʀɛ: `
-Use this module to obtain text from an image by  *${UltronSitreper.ULTRONIX}space*  command.`,
+Use this module to obtain text from an image by  *${UltronSitreper.ULTRONIX}space*  module.`,
   async handle(υℓтяσηℓιєηт, chat, ʊʟȶʀօռ, Arc) {
     try {
       if (ʊʟȶʀօռ.isImage) {
@@ -101,7 +101,7 @@ Use this module to obtain text from an image by  *${UltronSitreper.ULTRONIX}spac
 ⚠️𝗘𝗿𝗿𝗼𝗿
 • ${CYΣЯЯ}
 
-💡𝗖𝗼𝗺𝗺𝗮𝗻𝗱 • ${ʊʟȶʀօռ.commandName}
+💡𝗖𝗼𝗺𝗺𝗮𝗻𝗱 • ${ʊʟȶʀօռ.moduleName}
 🎮𝗜𝘁 𝘄𝗮𝘀 𝗣𝗠? • ${ʊʟȶʀօռ.isPm}`,
         MessageType.text
       );

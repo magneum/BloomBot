@@ -9,7 +9,7 @@ module.exports = {
   name: `github`,
   description: `Find Github Profile`,
   ƈʏɮօʀɢʍօʀɛ: `
-Get the github profile by command  *${UltronSitreper.ULTRONIX}github <user>*  or replying  *${UltronSitreper.ULTRONIX}github* .`,
+Get the github profile by module  *${UltronSitreper.ULTRONIX}github <user>*  or replying  *${UltronSitreper.ULTRONIX}github* .`,
   async handle(υℓтяσηℓιєηт, chat, ʊʟȶʀօռ, Arc) {
     try {
       let user_name = ``;
@@ -104,7 +104,7 @@ ACCOUNT NOT FOUND
 • ${cᴇʀʀᴏʀ}
 
 
-💡𝗖𝗼𝗺𝗺𝗮𝗻𝗱 • ${ʊʟȶʀօռ.commandName}
+💡𝗖𝗼𝗺𝗺𝗮𝗻𝗱 • ${ʊʟȶʀօռ.moduleName}
 🎮𝗜𝘁 𝘄𝗮𝘀 𝗣𝗠? • ${ʊʟȶʀօռ.isPm}`,
         MessageType.text
       );

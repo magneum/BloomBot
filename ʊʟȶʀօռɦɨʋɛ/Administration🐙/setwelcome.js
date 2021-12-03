@@ -11,14 +11,14 @@ module.exports = {
   ƈʏɮօʀɢʍօʀɛ: `
 New members of a group chat will be welcomed with a message. It can be an image, video, gif with caption or just a text message.
 Use this module to either set, update or delete the existing message.
-The welcome option can be disabled but saved using the   *${UltronSitreper.ULTRONIX}welcome  off*  command. In order to delete the existing message, use  *${UltronSitreper.ULTRONIX}welcome  delete*${UltronSitreper.ULTRONIX}  Do note, the welcome option is still enabled after you use the delete option.`,
+The welcome option can be disabled but saved using the   *${UltronSitreper.ULTRONIX}welcome  off*  module. In order to delete the existing message, use  *${UltronSitreper.ULTRONIX}welcome  delete*${UltronSitreper.ULTRONIX}  Do note, the welcome option is still enabled after you use the delete option.`,
   async handle(υℓтяσηℓιєηт, chat, ʊʟȶʀօռ, Arc) {
     try {
       if (!ʊʟȶʀօռ.isGroup) {
         υℓтяσηℓιєηт
           .sendMessage(
             ʊʟȶʀօռ.chatId,
-            `This command is only applicable in a group chat.`,
+            `This module is only applicable in a group chat.`,
             MessageType.text
           )
           .catch((cᴇʀʀᴏʀ) =>
@@ -215,7 +215,7 @@ The welcome option can be disabled but saved using the   *${UltronSitreper.ULTRO
             return;
           }
           text = ʊʟȶʀօռ.body.replace(
-            ʊʟȶʀօռ.body[0] + ʊʟȶʀօռ.commandName + ` `,
+            ʊʟȶʀօռ.body[0] + ʊʟȶʀօռ.moduleName + ` `,
             ``
           );
           if (Msg === false || Msg === undefined) {

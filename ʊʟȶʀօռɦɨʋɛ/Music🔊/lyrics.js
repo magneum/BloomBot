@@ -9,7 +9,7 @@ module.exports = {
   name: `lyrics`,
   description: `Module to find lyrics of song`,
   ƈʏɮօʀɢʍօʀɛ: `
-Use this module to find the lyrics of a song by using  *${UltronSitreper.ULTRONIX}lyrics*  command.`,
+Use this module to find the lyrics of a song by using  *${UltronSitreper.ULTRONIX}lyrics*  module.`,
   async handle(υℓтяσηℓιєηт, chat, ʊʟȶʀօռ, Arc) {
     try {
       var song = ``;
@@ -74,7 +74,7 @@ SONG NOT FOUND
 • ${cᴇʀʀᴏʀ}
 
 
-💡𝗖𝗼𝗺𝗺𝗮𝗻𝗱 • ${ʊʟȶʀօռ.commandName}
+💡𝗖𝗼𝗺𝗺𝗮𝗻𝗱 • ${ʊʟȶʀօռ.moduleName}
 🎮𝗜𝘁 𝘄𝗮𝘀 𝗣𝗠? • ${ʊʟȶʀօռ.isPm}`,
         MessageType.text
       );

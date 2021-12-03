@@ -53,7 +53,7 @@ If you do not specify a language, it defaults to <English class=''></English>`,
       if (!ʊʟȶʀօռ.isReply) {
         try {
           var body = ʊʟȶʀօռ.body.split(`|`);
-          text = body[0].replace(ʊʟȶʀօռ.body[0] + ʊʟȶʀօռ.commandName + ` `, ``);
+          text = body[0].replace(ʊʟȶʀօռ.body[0] + ʊʟȶʀօռ.moduleName + ` `, ``);
           var i = 0;
           while (body[1].split(` `)[i] == ``) {
             i++;
@@ -62,7 +62,7 @@ If you do not specify a language, it defaults to <English class=''></English>`,
         } catch (cᴇʀʀᴏʀ) {
           if (cᴇʀʀᴏʀ instanceof TypeError) {
             text = ʊʟȶʀօռ.body.replace(
-              ʊʟȶʀօռ.body[0] + ʊʟȶʀօռ.commandName + ` `,
+              ʊʟȶʀօռ.body[0] + ʊʟȶʀօռ.moduleName + ` `,
               ``
             );
             language = `English`;
@@ -134,7 +134,7 @@ WRONG LANGUAGE!
 • ${cᴇʀʀᴏʀ}
 
 
-💡𝗖𝗼𝗺𝗺𝗮𝗻𝗱 • ${ʊʟȶʀօռ.commandName}
+💡𝗖𝗼𝗺𝗺𝗮𝗻𝗱 • ${ʊʟȶʀօռ.moduleName}
 🎮𝗜𝘁 𝘄𝗮𝘀 𝗣𝗠? • ${ʊʟȶʀօռ.isPm}`,
             MessageType.text
           );

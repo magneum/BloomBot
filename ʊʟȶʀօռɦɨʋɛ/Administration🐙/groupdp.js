@@ -10,14 +10,14 @@ module.exports = {
   name: `groupdp`,
   description: `Change the group icon`,
   ƈʏɮօʀɢʍօʀɛ: `
-Use this module to change the group's icon. Tag image with the command or send the desired image with caption as the command`,
+Use this module to change the group's icon. Tag image with the module or send the desired image with caption as the module`,
   async handle(υℓтяσηℓιєηт, chat, ʊʟȶʀօռ, Arc) {
     try {
       if (!ʊʟȶʀօռ.isGroup) {
         await υℓтяσηℓιєηт
           .sendMessage(
             ʊʟȶʀօռ.chatId,
-            `This command is only applicable in a group chat.`,
+            `This module is only applicable in a group chat.`,
             MessageType.text
           )
           .catch((cᴇʀʀᴏʀ) =>

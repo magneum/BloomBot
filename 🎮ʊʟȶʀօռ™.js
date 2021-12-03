@@ -66,16 +66,16 @@ async function ʊʟȶʀօռRunner() {
     console.log(Kolor.yellowBright.bold(`💡⬰  𝘐𝘯𝘴𝘵𝘢𝘭𝘭𝘪𝘯𝘨 𝘗𝘭𝘶𝘨𝘪𝘯𝘴...✅`));
     const Folders = fs.readdirSync(`./ʊʟȶʀօռɦɨʋɛ`);
     for (const folder of Folders) {
-      const commandFiles = fs
+      const moduleFiles = fs
         .readdirSync(`./ʊʟȶʀօռɦɨʋɛ/${folder}`)
         .filter((file) => file.endsWith(`.js`));
-      for (const file of commandFiles) {
-        const command = require(`./ʊʟȶʀօռɦɨʋɛ/${folder}/${file}`);
-        UltronSitrep.set(command.name, command);
+      for (const file of moduleFiles) {
+        const module = require(`./ʊʟȶʀօռɦɨʋɛ/${folder}/${file}`);
+        UltronSitrep.set(module.name, module);
         console.log(
           Kolor.yellowBright.bold(`💡⬰  `),
-          Kolor.greenBright.bold(command.name.toUpperCase()),
-          Kolor.whiteBright.bold(command.description.toLowerCase())
+          Kolor.greenBright.bold(module.name.toUpperCase()),
+          Kolor.whiteBright.bold(module.description.toLowerCase())
         );
       }
     }
@@ -323,7 +323,7 @@ ______/ |__/    ___/  |__/        ______/ |__/  |__/`),
       `setdp`,
       `tagall`,
       `spam`,
-      // Below are NSFW Commands!
+      // Below are NSFW modules!
       `ass`,
       `bdsm`,
       `blowjob`,
@@ -349,26 +349,26 @@ ______/ |__/    ___/  |__/        ______/ |__/  |__/`),
     if (ʊʟȶʀօռ.isCmd && !ʊʟȶʀօռ.fromMe && !ʊʟȶʀօռ.isSenderSUDO) {
       if (UltronSitreper.PRIVACY === `public`) {
         if (
-          ʊʟȶʀօռRights.indexOf(ʊʟȶʀօռ.commandName) >= 0 &&
+          ʊʟȶʀօռRights.indexOf(ʊʟȶʀօռ.moduleName) >= 0 &&
           !ʊʟȶʀօռ.isSenderGroupAdmin
         ) {
           console.log(
             Kolor.redBright.bold(`💡⬰  ʊʟȶʀօռRights `),
-            Kolor.greenBright.bold(`${ʊʟȶʀօռ.commandName}`),
+            Kolor.greenBright.bold(`${ʊʟȶʀօռ.moduleName}`),
             Kolor.redBright.bold(`not executed in public Work Type.`)
           );
           return υℓтяσηℓιєηт.sendMessage(
             ʊʟȶʀօռ.chatId,
-            `You need to be an admin to execute this command.`,
+            `You need to be an admin to execute this module.`,
             MessageType.text
           );
         } else if (
-          ʊʟȶʀօռSudo.indexOf(ʊʟȶʀօռ.commandName) >= 0 &&
+          ʊʟȶʀօռSudo.indexOf(ʊʟȶʀօռ.moduleName) >= 0 &&
           !ʊʟȶʀօռ.isSenderSUDO
         ) {
           console.log(
             Kolor.redBright.bold(`💡⬰  sudo commmand `),
-            Kolor.greenBright.bold(`${ʊʟȶʀօռ.commandName}`),
+            Kolor.greenBright.bold(`${ʊʟȶʀօռ.moduleName}`),
             Kolor.redBright.bold(`not executed in public Work Type.`)
           );
           var messageSent = await Users.getUser(ʊʟȶʀօռ.chatId);
@@ -383,12 +383,12 @@ ______/ |__/    ___/  |__/        ______/ |__/  |__/`),
             return υℓтяσηℓιєηт.sendMessage(
               ʊʟȶʀօռ.chatId,
               `ʊʟȶʀօռ is Alive!.
-I guess you were trying to use my commands in *${ʊʟȶʀօռ.groupName}*. However, the bot is currently in ${worktype} mode. This enables only the owner and sudo users to use the command *${commandName}* .
+I guess you were trying to use my modules in *${ʊʟȶʀօռ.groupName}*. However, the bot is currently in ${worktype} mode. This enables only the owner and sudo users to use the module *${moduleName}* .
 If you are keen to use my features, you can deploy ʊʟȶʀօռ on your own account without much effort, in less than 5 minutes! Check out the links given below.`,
               {
                 worktype: `public`,
                 groupName: ʊʟȶʀօռ.groupName ? ʊʟȶʀօռ.groupName : `private chat`,
-                commandName: ʊʟȶʀօռ.commandName,
+                moduleName: ʊʟȶʀօռ.moduleName,
               },
               MessageType.text,
               {
@@ -406,7 +406,7 @@ If you are keen to use my features, you can deploy ʊʟȶʀօռ on your own acco
       } else if (UltronSitreper.PRIVACY === `private` && !ʊʟȶʀօռ.isSenderSUDO) {
         console.log(
           Kolor.redBright.bold(`💡⬰  commmand `),
-          Kolor.greenBright.bold(`${ʊʟȶʀօռ.commandName}`),
+          Kolor.greenBright.bold(`${ʊʟȶʀօռ.moduleName}`),
           Kolor.redBright.bold(`not executed in private Work Type.`)
         );
         var messageSent = await Users.getUser(ʊʟȶʀօռ.chatId);
@@ -421,12 +421,12 @@ If you are keen to use my features, you can deploy ʊʟȶʀօռ on your own acco
           return υℓтяσηℓιєηт.sendMessage(
             ʊʟȶʀօռ.chatId,
             `ʊʟȶʀօռ is Alive!.
-I guess you were trying to use my commands in *${ʊʟȶʀօռ.groupName}*. However, the bot is currently in ${worktype} mode. This enables only the owner and sudo users to use the command *${commandName}* .
+I guess you were trying to use my modules in *${ʊʟȶʀօռ.groupName}*. However, the bot is currently in ${worktype} mode. This enables only the owner and sudo users to use the module *${moduleName}* .
 If you are keen to use my features, you can deploy ʊʟȶʀօռ on your own account without much effort, in less than 5 minutes! Check out the links given below.`,
             {
               worktype: `private`,
               groupName: ʊʟȶʀօռ.groupName ? ʊʟȶʀօռ.groupName : `private chat`,
-              commandName: ʊʟȶʀօռ.commandName,
+              moduleName: ʊʟȶʀօռ.moduleName,
             },
             MessageType.text,
             {
@@ -447,15 +447,15 @@ If you are keen to use my features, you can deploy ʊʟȶʀօռ on your own acco
     // ===============================================================================
     if (ʊʟȶʀօռ.isCmd) {
       console.log(
-        Kolor.redBright.bold(
-          `💡⬰  ${ʊʟȶʀօռ.commandName.toUpperCase()} command executed.`
+        Kolor.greenBright.bold(
+          `💡⬰  ${ʊʟȶʀօռ.moduleName.toUpperCase()} module executed.`
         )
       );
-      const command = UltronSitrep.get(ʊʟȶʀօռ.commandName);
+      const module = UltronSitrep.get(ʊʟȶʀօռ.moduleName);
       var Arc = ʊʟȶʀօռ.body.trim().split(/\s+/).slice(1);
       var UltronRegex = new RegExp(UltronSitreper.ULTRONIX, "g");
       var Ultronf = /\/\^\[(.*)+\]\/\g/g.exec(UltronRegex)[1];
-      if (!command) {
+      if (!module) {
         return υℓтяσηℓιєηт.sendMessage(
           ʊʟȶʀօռ.chatId,
           {
@@ -466,18 +466,18 @@ If you are keen to use my features, you can deploy ʊʟȶʀօռ on your own acco
             mimetype: Mimetype.png,
             caption: `*⚠️𝗜𝗻𝘃𝗮𝗹𝗶𝗱 ʊʟȶʀօռ 𝗖𝗼𝗺𝗺𝗮𝗻𝗱*
 
-        *No such command found.*
-        Please Use *${Ultronf}help to get the list of available commands*`,
+        *No such module found.*
+        Please Use *${Ultronf}help to get the list of available modules*`,
           }
         );
-      } else if (command && ʊʟȶʀօռ.commandName == `help`) {
+      } else if (module && ʊʟȶʀօռ.moduleName == `help`) {
         try {
-          return command.handle(υℓтяσηℓιєηт, chat, ʊʟȶʀօռ, Arc, UltronSitrep);
+          return module.handle(υℓтяσηℓιєηт, chat, ʊʟȶʀօռ, Arc, UltronSitrep);
         } catch (cᴇʀʀᴏʀ) {
           return console.log(Kolor.redBright.bold(`❌⬰ `, cᴇʀʀᴏʀ));
         }
       }
-      command.handle(υℓтяσηℓιєηт, chat, ʊʟȶʀօռ, Arc);
+      module.handle(υℓтяσηℓιєηт, chat, ʊʟȶʀօռ, Arc);
     }
   });
 }

@@ -15,7 +15,7 @@ Unmute non-admin members of a group`,
         υℓтяσηℓιєηт
           .sendMessage(
             ʊʟȶʀօռ.chatId,
-            `*${UltronSitreper.ULTRONIX}unmute*  command is only applicable for a group chat.`,
+            `*${UltronSitreper.ULTRONIX}unmute*  module is only applicable for a group chat.`,
             MessageType.text
           )
           .catch((cᴇʀʀᴏʀ) =>

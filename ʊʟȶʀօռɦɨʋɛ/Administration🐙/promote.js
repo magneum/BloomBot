@@ -17,7 +17,7 @@ For example- *${UltronSitreper.ULTRONIX}promote 9861212121*`,
       if (!ʊʟȶʀօռ.isGroup) {
         υℓтяσηℓιєηт.sendMessage(
           ʊʟȶʀօռ.chatId,
-          `This command is only applicable in a group chat.`,
+          `This module is only applicable in a group chat.`,
           MessageType.text
         );
         return;

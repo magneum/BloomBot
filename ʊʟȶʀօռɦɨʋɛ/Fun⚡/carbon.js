@@ -59,7 +59,7 @@ In order to specify the theme, use  *${UltronSitreper.ULTRONIX}carbon <text> -t 
             {
               mimetype: Mimetype.jpeg,
               caption: `*☢️ʊʟȶʀօռ*\n\nNo input provided.
-Please use the command  
+Please use the module  
 *${UltronSitreper.ULTRONIX}carbon <text> -t <theme>*  
 or reply to a text message with  
 *${UltronSitreper.ULTRONIX}carbon*  to carbonize the text.
@@ -119,7 +119,7 @@ _yeti_  *|*  _zenburn_`,
       } else {
         try {
           var text = ʊʟȶʀօռ.body.replace(
-            ʊʟȶʀօռ.body[0] + ʊʟȶʀօռ.commandName + ` `,
+            ʊʟȶʀօռ.body[0] + ʊʟȶʀօռ.moduleName + ` `,
             ``
           );
           if (text[0] === `-` && text[1] === `t`) {
@@ -141,7 +141,7 @@ _yeti_  *|*  _zenburn_`,
                 .sendMessage(
                   ʊʟȶʀօռ.chatId,
                   `*☢️ʊʟȶʀօռ*\n\nNo input provided.
-Please use the command  *${UltronSitreper.ULTRONIX}carbon <text>*  or reply to a text message with  *${UltronSitreper.ULTRONIX}carbon*  to carbonize the text.`,
+Please use the module  *${UltronSitreper.ULTRONIX}carbon <text>*  or reply to a text message with  *${UltronSitreper.ULTRONIX}carbon*  to carbonize the text.`,
                   MessageType.text
                 )
                 .catch((cᴇʀʀᴏʀ) =>
@@ -159,7 +159,7 @@ Please use the command  *${UltronSitreper.ULTRONIX}carbon <text>*  or reply to a
             }
           }
           var body = ʊʟȶʀօռ.body.split(`-t`);
-          code = body[0].replace(ʊʟȶʀօռ.body[0] + ʊʟȶʀօռ.commandName + ` `, ``);
+          code = body[0].replace(ʊʟȶʀօռ.body[0] + ʊʟȶʀօռ.moduleName + ` `, ``);
           themeInput = body[1].substring(1);
           if (!themes.includes(themeInput)) {
             await υℓтяσηℓιєηт
@@ -185,7 +185,7 @@ Do note that theme names are  *case sensitive*${UltronSitreper.ULTRONIX}`,
         } catch (cᴇʀʀᴏʀ) {
           if (cᴇʀʀᴏʀ instanceof TypeError) {
             code = ʊʟȶʀօռ.body.replace(
-              ʊʟȶʀօռ.body[0] + ʊʟȶʀօռ.commandName + ` `,
+              ʊʟȶʀօռ.body[0] + ʊʟȶʀօռ.moduleName + ` `,
               ``
             );
             themeInput = themes[Math.floor(Math.random() * themes.length)];
