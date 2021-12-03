@@ -8,12 +8,12 @@ const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const UltronSitreper = require(`./ʊʟȶʀօռ/UltronSitreper`);
 const ᴋʀᴀᴋɪɴᴢᴋᴏɴ = require(`./ƈʏӄօռ/sessionString`);
 var randomMC = require("random-material-color");
+const ʊʟȶʀօռǟքք = require(`./ƈʏӄօռ/helper`);
 const Welcmr = require(`./ʊʟȶʀօռ/wlcmr`);
+const ʊʟȶʀօռsql = UltronSitreper.POSTQL;
 const ʊʟȶʀօռSudo = [`block`, `unblock`];
 const Users = require(`./ʊʟȶʀօռ/user`);
 var rg = require("random-greetings");
-const wa = require(`./ƈʏӄօռ/helper`);
-const ʊʟȶʀօռsql = UltronSitreper.POSTQL;
 const Kolor = require(`chalk`);
 const fs = require(`fs`);
 console.clear();
@@ -83,50 +83,18 @@ async function ʊʟȶʀօռRunner() {
     // 🎮ʊʟȶʀօռ™ 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..
     // ===============================================================================
     console.log(
-      Kolor.yellowBright.bold(`⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰|  ʊʟȶʀօռ  |`)
-    );
-    console.log(UltronSitreper.IMDB);
-    console.log(
-      Kolor.yellowBright.bold(`⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰|  ʊʟȶʀօռ  |`)
-    );
-    console.log(UltronSitreper.HEROKU);
-    console.log(
-      Kolor.yellowBright.bold(`⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰|  ʊʟȶʀօռ  |`)
-    );
-    console.log(UltronSitreper.ULTRONIX);
-    console.log(
-      Kolor.yellowBright.bold(`⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰|  ʊʟȶʀօռ  |`)
-    );
-    console.log(UltronSitreper.CCD);
-    console.log(
-      Kolor.yellowBright.bold(`⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰|  ʊʟȶʀօռ  |`)
-    );
-    console.log(UltronSitreper.OCR);
-    console.log(
-      Kolor.yellowBright.bold(`⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰|  ʊʟȶʀօռ  |`)
-    );
-    console.log(UltronSitreper.WAPI);
-    console.log(
-      Kolor.yellowBright.bold(`⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰|  ʊʟȶʀօռ  |`)
-    );
-    console.log(UltronSitreper.PRIVACY);
-    console.log(
-      Kolor.yellowBright.bold(`⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰⬰|  ʊʟȶʀօռ  |`)
-    );
-    console.log(UltronSitreper.SUDO);
-    console.log(
       Kolor.yellowBright.bold(
         `=================😈    |  ʊʟȶʀօռ  |    😈=================`
       ),
       Kolor.redBright.bold(`
-/$$   /$$ /$$   /$$                                  
-| $$  | $$| $$  | $$                                  
-| $$  | $$| $$ /$$$$$$    /$$$$$$   /$$$$$$  /$$$$$$$ 
-| $$  | $$| $$|_  $$_/   /$$__  $$ /$$__  $$| $$__  $$
-| $$  | $$| $$  | $$    | $$   __/| $$    $$| $$    $$
-| $$  | $$| $$  | $$ /$$| $$      | $$  | $$| $$  | $$
-|  $$$$$$/| $$  |  $$$$/| $$      |  $$$$$$/| $$  | $$
-______/ |__/    ___/  |__/        ______/ |__/  |__/`),
+🎮ʊʟȶʀօռ™ 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 
+𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤.. 
+██╗   ██╗██╗  ████████╗██████╗  ██████╗ ███╗   ██╗
+██║   ██║██║  ╚══██╔══╝██╔══██╗██╔═══██╗████╗  ██║
+██║   ██║██║     ██║   ██████╔╝██║   ██║██╔██╗ ██║
+██║   ██║██║     ██║   ██╔══██╗██║   ██║██║╚██╗██║
+╚██████╔╝███████╗██║   ██║  ██║╚██████╔╝██║ ╚████║
+╚═════╝ ╚══════╝╚═╝   ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝`),
       Kolor.yellowBright.bold(
         `\n=================😈    |  ʊʟȶʀօռ  |    😈=================`
       )
@@ -192,11 +160,11 @@ ______/ |__/    ___/  |__/        ______/ |__/  |__/`),
           textWidth + 20,
           120
         );
-        const text2 = Fetched.message;
+        const text2 = rg.greet();
         context.fillStyle = randomMC.getColor();
         context.fillText(text, 600, 170);
         context.fillStyle = `#fff`;
-        context.font = `bold 30pt Honeycomb`;
+        context.font = `bold 40pt Honeycomb`;
         context.fillText(text2, 600, 530);
         const myimg = loadImage(`./ʊʟȶʀօռ/ʊʟȶʀօռ-Welcmr.png`);
         await myimg.then(() => {
@@ -220,75 +188,8 @@ ______/ |__/    ___/  |__/        ______/ |__/  |__/`),
         if (enable === false || enable === `OFF`) {
           return;
         }
-        var greets = [
-          `ID➛ ${parID}\nJust joined the server - glhf!`,
-          `ID➛ ${parID}\nJust joined. Everyone, look busy!`,
-          `ID➛ ${parID}\nJust joined. Can I get a heal?`,
-          `ID➛ ${parID}\nJoined your party.`,
-          `ID➛ ${parID}\nJoined. You must construct additional pylons.`,
-          `ID➛ ${parID}\nIs here.`,
-          `ID➛ ${parID}\nWelcome, Stay awhile and listen.`,
-          `ID➛ ${parID}\nWelcome, We were expecting you ( ͡° ͜ʖ ͡°)`,
-          `ID➛ ${parID}\nWelcome, We hope you brought pizza.`,
-          `ID➛ ${parID}\nWelcome Leave your weapons by the door.`,
-          `ID➛ ${parID}\nJust Appeared.`,
-          `ID➛ ${parID}\nSwoooosh. Just landed.`,
-          `ID➛ ${parID}\nBrace yourselves. Just joined the server.`,
-          `ID➛ ${parID}\nJust joined. Hide your bananas.`,
-          `ID➛ ${parID}\nJust arrived. Seems OP - please nerf.`,
-          `ID➛ ${parID}\nJust slid into the server.`,
-          `ID➛ ${parID}\nHas spawned in the server.`,
-          `ID➛ ${parID}\nShowed up!`,
-          `Where’s ID➛ ${parID}\n? In the server!`,
-          `ID➛ ${parID}\nHopped into the server. Kangaroo!!`,
-          `ID➛ ${parID}\nJust showed up. Hold my beer.`,
-        ];
-        var Fetched = await Welcmr.getMessage(groupId, `goodbye`);
-        const width = 1280;
-        const height = 720;
-        const canvas = createCanvas(width, height);
-        const context = canvas.getContext(`2d`);
-        context.fillStyle = `#555555`;
-        context.fillRect(0, 0, width, height);
-        context.font = `bold 50pt Lobster`;
-        context.textAlign = `center`;
-        context.textBaseline = `top`;
-        const text = greets[Math.floor(Math.random() * greets.length)];
-        const textWidth = context.measureText(text).width;
-        context.fillRect(
-          600 - textWidth / 2 - 10,
-          170 - 5,
-          textWidth + 20,
-          120
-        );
-        const text2 = Fetched.message;
-        context.fillStyle = randomMC.getColor();
-        context.fillText(text, 600, 170);
-        context.fillStyle = `#fff`;
-        context.font = `bold 30pt Honeycomb`;
-        context.fillText(text2, 600, 530);
-        const myimg = loadImage(`./ʊʟȶʀօռ/ʊʟȶʀօռ-Welcmr.png`);
-        await myimg.then(() => {
-          const buffer = canvas.toBuffer(`image/png`);
-          fs.writeFileSync(`./ʊʟȶʀօռ/ʊʟȶʀօռ-Welcmr.png`, buffer);
-          υℓтяσηℓιєηт.sendMessage(
-            groupId,
-            {
-              url: `./ʊʟȶʀօռ/ʊʟȶʀօռ-Welcmr.png`,
-            },
-            MessageType.image,
-            {
-              mimetype: Mimetype.png,
-              caption: `➛* ${Fetched.message}`,
-            }
-          );
-        });
+        υℓтяσηℓιєηт.sendMessage(groupId, "GooDbye", MessageType.text);
       }
-      υℓтяσηℓιєηт.sendMessage(
-        groupId,
-        "on (event: 'group-participants-update', listener: (update: {jid: string, participants: string[], actor?: string, action: WAParticipantAction}) => void): this",
-        MessageType.text
-      );
     } catch (cᴇʀʀᴏʀ) {
       console.log(cᴇʀʀᴏʀ);
     }
@@ -308,7 +209,7 @@ ______/ |__/    ___/  |__/        ______/ |__/  |__/`),
     const groupMetadata = sender.endsWith(`@g.us`)
       ? await υℓтяσηℓιєηт.groupMetadata(sender)
       : ``;
-    var ʊʟȶʀօռ = wa.resolve(chat, υℓтяσηℓιєηт, groupMetadata);
+    var ʊʟȶʀօռ = ʊʟȶʀօռǟքք.resolve(chat, υℓтяσηℓιєηт, groupMetadata);
     const ʊʟȶʀօռRights = [
       `add`,
       `demote`,
