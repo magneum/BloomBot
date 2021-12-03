@@ -5,7 +5,7 @@
 *Stable Version from Version 4*
 
 <p align="center">
-  <img src="https://github.com/Krakinz/Ultron/blob/KrakinzLab/%C3%9Altr%C3%B0%C3%B1/%C3%9Altr%C3%B0%C3%B1.png" height="400px"/>
+  <img src="https://i.postimg.cc/KcNwHtZt/ltr.png" height="400px"/>
 </p>
 
 # ❓ 𝖂𝖍𝖞 𝕸𝖆𝖉𝖊 𝕿𝖍𝖎𝖘 𝕭𝖔𝖙?
