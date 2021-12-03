@@ -237,18 +237,19 @@ If you are keen to use my features, you can deploy Últrðñ on your own account
       var UltronRegex = new RegExp(UltronSitreper.ULTRONIX, "g");
       var Ultronf = /\/\^\[(.*)+\]\/\g/g.exec(UltronRegex)[1];
       if (!command) {
-        return ӄʀǟӄɨռʐ.sendMessage(
-          Últrðñ.chatId, {
-            url: `https://i.postimg.cc/Gt46wxDL/ltr-Invalid.png`,
-          },
-          MessageType.image, {
-            mimetype: Mimetype.png,
-            caption: `*⚠️𝗜𝗻𝘃𝗮𝗹𝗶𝗱 Últrðñ 𝗖𝗼𝗺𝗺𝗮𝗻𝗱*
+        return
+        //         return ӄʀǟӄɨռʐ.sendMessage(
+        //           Últrðñ.chatId, {
+        //             url: `https://i.postimg.cc/Gt46wxDL/ltr-Invalid.png`,
+        //           },
+        //           MessageType.image, {
+        //             mimetype: Mimetype.png,
+        //             caption: `*⚠️𝗜𝗻𝘃𝗮𝗹𝗶𝗱 Últrðñ 𝗖𝗼𝗺𝗺𝗮𝗻𝗱*
 
-*No such command found.*
-Please Use *${Ultronf}help to get the list of available commands*`,
-          }
-        );
+        // *No such command found.*
+        // Please Use *${Ultronf}help to get the list of available commands*`,
+        //           }
+        //         );
       } else if (command && Últrðñ.commandName == `help`) {
         try {
           return command.handle(ӄʀǟӄɨռʐ, chat, Últrðñ, arguments, UltronSitrep);
