@@ -14,7 +14,7 @@ module.exports = {
         .sendMessage(
           ᴜʟᴛʀᴏɴ.chatId,
           {
-            url: `https://i.postimg.cc/6qBBKLj8/error.png`,
+            url: `https://i.postimg.cc/yxsh4dMV/error.png`,
           },
           MessageType.image,
           {
@@ -29,7 +29,7 @@ Only My Owner Can use that command!`,
         .sendMessage(
           ᴜʟᴛʀᴏɴ.chatId,
           {
-            url: `https://i.postimg.cc/LXXS56kT/reboot.png`,
+            url: `https://i.postimg.cc/L8NbydZY/update.png`,
           },
           MessageType.image,
           {
