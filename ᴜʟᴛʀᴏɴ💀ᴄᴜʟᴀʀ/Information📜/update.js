@@ -10,7 +10,10 @@ module.exports = {
   description: `This module can be used to check if the bot is currently online or not.`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     await υℓтяσηℓιєηт
-      .sendMessage(ᴜʟᴛʀᴏɴ.chatId, ``, MessageType.text)
+      .sendMessage(ᴜʟᴛʀᴏɴ.chatId, `
+❗𝐍𝐎𝐓𝐈𝐅𝐈𝐂𝐀𝐓𝐈𝐎𝐍❗
+ʏᴏᴜʀ ᴜʟᴛʀᴏɴ ʙᴏᴛ ɪꜱ ɴᴏᴡ ᴜᴘᴅᴀᴛɪɴɢ...
+ᴘʟᴇᴀꜱᴇ ᴡᴀɪᴛ ꜰᴏʀ 30-60ꜱᴇᴄ`, MessageType.text)
       .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴜʟᴛʀᴏɴ));
     heroku
       .delete("/apps/" + UltronSitreper.HEROKU_BOT_NAME + "/dynos/" + "worker")
