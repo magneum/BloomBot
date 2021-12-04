@@ -6,7 +6,7 @@ registerFont(`./ʊʟȶʀօռ/Honeycomb-Round.otf`, { family: `Honeycomb` });
 registerFont(`./ʊʟȶʀօռ/LobsterTwo-Bold.ttf`, { family: `Lobster` });
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const UltronSitreper = require(`./ʊʟȶʀօռ/UltronSitreper`);
-const ᴋʀᴀᴋɪɴᴢᴋᴏɴ = require(`./ʊʟȶʀօռ/sessionString`);
+const ʊʟȶʀօռֆʏռօք = require(`./ʊʟȶʀօռ/sessionString`);
 var randomMC = require(`random-material-color`);
 const ɠɠʊʟȶʀօռ = require(`./ʊʟȶʀօռ/ɠɠʊʟȶʀօռ`);
 const ʊʟȶʀօռǟքք = require(`./ʊʟȶʀօռ/helper`);
@@ -20,12 +20,12 @@ console.clear();
 // ===============================================================================
 // 🎮ʊʟȶʀօռ™ 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..
 // ===============================================================================
-var υℓтяσηℓιєηт = ᴋʀᴀᴋɪɴᴢᴋᴏɴ.WhatsApp;
+var υℓтяσηℓιєηт = ʊʟȶʀօռֆʏռօք.WhatsApp;
 async function ʊʟȶʀօռRunner() {
   υℓтяσηℓιєηт.logger.level = `error`;
   var UltronSitrep = new Map();
   try {
-    var session = ᴋʀᴀᴋɪɴᴢᴋᴏɴ.restoreSession(UltronSitreper.ULTRON);
+    var session = ʊʟȶʀօռֆʏռօք.restoreSession(UltronSitreper.ULTRON);
     υℓтяσηℓιєηт.loadAuthInfo(session);
   } catch (cᴇʀʀᴏʀ) {
     if (
