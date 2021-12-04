@@ -23,9 +23,9 @@ Use this module to convert any image from your chat to a sticker. Reply to an im
           )
           .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴜʟᴛʀᴏɴ));
         const filePath = await υℓтяσηℓιєηт
-          .downloadAndSaveMediaMessage(replyChat, `./ᴛᴇᴍᴘ/ct-` + imageId)
+          .downloadAndSaveMediaMessage(replyChat, `./ᴜʟᴛʀᴏɴ/ᴛᴇᴍᴘ/ct-` + imageId)
           .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴜʟᴛʀᴏɴ));
-        const stickerPath = `./ᴛᴇᴍᴘ/st-` + imageId + `.webp`;
+        const stickerPath = `./ᴜʟᴛʀᴏɴ/ᴛᴇᴍᴘ/st-` + imageId + `.webp`;
         if (ᴜʟᴛʀᴏɴ.type === `image` || ᴜʟᴛʀᴏɴ.isReplyImage) {
           ffmpeg(filePath)
             .outputOptions([`-y`, `-vcodec libwebp`])

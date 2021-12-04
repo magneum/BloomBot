@@ -80,7 +80,7 @@ Use this module to download audio of your choice either by specifying a YouTube 
       ffmpeg(stream)
         .audioBitrate(320)
         .toFormat(`ipod`)
-        .saveToFile(`./ᴛᴇᴍᴘ/${chat.key.id}.mp3`)
+        .saveToFile(`./ᴜʟᴛʀᴏɴ/ᴛᴇᴍᴘ/${chat.key.id}.mp3`)
         .on(`end`, async () => {
           await υℓтяσηℓιєηт
             .sendMessage(ᴜʟᴛʀᴏɴ.chatId, `Uploading song...`, MessageType.text)
@@ -90,7 +90,7 @@ Use this module to download audio of your choice either by specifying a YouTube 
           await υℓтяσηℓιєηт
             .sendMessage(
               ᴜʟᴛʀᴏɴ.chatId,
-              fs.readFileSync(`./ᴛᴇᴍᴘ/${chat.key.id}.mp3`),
+              fs.readFileSync(`./ᴜʟᴛʀᴏɴ/ᴛᴇᴍᴘ/${chat.key.id}.mp3`),
               MessageType.audio,
               {
                 mimetype: Mimetype.mp4Audio,
@@ -99,7 +99,7 @@ Use this module to download audio of your choice either by specifying a YouTube 
             .catch((cᴇʀʀᴏʀ) => {
               ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴜʟᴛʀᴏɴ));
             });
-          fs.unlink(`./ᴛᴇᴍᴘ/${chat.key.id}.mp3`, (cᴇʀʀᴏʀ) => {
+          fs.unlink(`./ᴜʟᴛʀᴏɴ/ᴛᴇᴍᴘ/${chat.key.id}.mp3`, (cᴇʀʀᴏʀ) => {
             if (cᴇʀʀᴏʀ) console.log(cᴇʀʀᴏʀ);
             else {
               console.log("Deleted!");

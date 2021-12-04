@@ -18,7 +18,7 @@ Use this module to obtain text from an image by  *${UltronSitreper.ULTRONIX}spac
           message: chat.message,
         };
         var imageId = chat.key.id;
-        const fileName = `./ᴛᴇᴍᴘ/img-` + imageId;
+        const fileName = `./ᴜʟᴛʀᴏɴ/ᴛᴇᴍᴘ/img-` + imageId;
         const filePath = await υℓтяσηℓιєηт.downloadAndSaveMediaMessage(
           replyChatObject,
           fileName
@@ -60,7 +60,7 @@ Use this module to obtain text from an image by  *${UltronSitreper.ULTRONIX}spac
           message: chat.message.extendedTextMessage.contextInfo.quotedMessage,
         };
         var imageId = chat.message.extendedTextMessage.contextInfo.stanzaId;
-        const fileName = `./ᴛᴇᴍᴘ/img-` + imageId;
+        const fileName = `./ᴜʟᴛʀᴏɴ/ᴛᴇᴍᴘ/img-` + imageId;
         const filePath = await υℓтяσηℓιєηт.downloadAndSaveMediaMessage(
           replyChatObject,
           fileName
