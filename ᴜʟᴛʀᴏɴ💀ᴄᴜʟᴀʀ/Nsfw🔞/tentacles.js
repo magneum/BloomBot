@@ -19,7 +19,7 @@ module.exports = {
         MessageType.image,
         {
           mimetype: Mimetype.jpeg,
-          caption: `_ᴘᴏᴡᴇʀᴇᴅ ʙʏ_\n*🐙KЯПZΛPP♙*`,
+          caption: `_ᴘᴏᴡᴇʀᴇᴅ ʙʏ_\n*⚡𝐔𝐋𝐓𝐑𝐎𝐍™*`,
         }
       );
     } catch (err) {
