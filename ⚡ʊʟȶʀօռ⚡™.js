@@ -165,14 +165,14 @@ async function ʊʟȶʀօռRunner() {
         context.fillStyle = `#fff`;
         context.font = `bold 40pt Honeycomb`;
         context.fillText(text2, 600, 530);
-        const myimg = loadImage(`./ʊʟȶʀօռ/ʊʟȶʀօռ-Welcmr.png`);
+        const myimg = loadImage(`./ʊʟȶʀօռ/ʊʟȶʀօռɠɠ.png`);
         await myimg.then(() => {
           const buffer = canvas.toBuffer(`image/png`);
-          fs.writeFileSync(`./ʊʟȶʀօռ/ʊʟȶʀօռ-Welcmr.png`, buffer);
+          fs.writeFileSync(`./ʊʟȶʀօռ/ʊʟȶʀօռɠɠ.png`, buffer);
           υℓтяσηℓιєηт.sendMessage(
             groupId,
             {
-              url: `./ʊʟȶʀօռ/ʊʟȶʀօռ-Welcmr.png`,
+              url: `./ʊʟȶʀօռ/ʊʟȶʀօռɠɠ.png`,
             },
             MessageType.image,
             {
