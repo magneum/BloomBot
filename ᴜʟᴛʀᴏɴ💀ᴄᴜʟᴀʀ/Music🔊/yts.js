@@ -13,8 +13,7 @@ module.exports = {
   description: `Get the first 10 recommendations from YouTube with their authorname, timestamp and link. Mention the FetchedLinks that are required to be searched along with the module.`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     if (Arc.length === 0) {
-      await υℓтяσηℓιєηт.sendMessage(ᴜʟᴛʀᴏɴ.chatId, "❌", MessageType.text);
-      await υℓтяσηℓιєηт
+      return await υℓтяσηℓιєηт
         .sendMessage(
           ᴜʟᴛʀᴏɴ.chatId,
           {
@@ -23,14 +22,18 @@ module.exports = {
           MessageType.image,
           {
             mimetype: Mimetype.jpeg,
-            caption: `*⚠️Seems like someone forgot to give Movie/Series name!*
+            caption: `*⚠️Seems like someone forgot to give song-name!*
 
 *Usage Example*
-.imdb <movie/series>`,
+${UltronSitreper.ULTRONIX}yts <song-name>
+
+*NOTE:*
+You Can Get download audio by using ${UltronSitreper.ULTRONIX}ytdl <song-url>`,
           }
         )
-        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴜʟᴛʀᴏɴ));
-      return;
+        .catch((cᴇʀʀᴏʀ) => {
+          ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴜʟᴛʀᴏɴ));
+        });
     }
     const FetchedLink = await yts(Arc.join(` `));
     const videos = FetchedLink.videos.slice(0, 5);

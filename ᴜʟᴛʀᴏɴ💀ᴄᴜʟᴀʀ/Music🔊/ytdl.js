@@ -15,8 +15,7 @@ module.exports = {
   description: `Use this module to download audio of your choice either by specifying a YouTube link or the name of the song.`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     if (Arc.length === 0) {
-      await υℓтяσηℓιєηт.sendMessage(ᴜʟᴛʀᴏɴ.chatId, "❌", MessageType.text);
-      await υℓтяσηℓιєηт
+      return await υℓтяσηℓιєηт
         .sendMessage(
           ᴜʟᴛʀᴏɴ.chatId,
           {
@@ -25,16 +24,18 @@ module.exports = {
           MessageType.image,
           {
             mimetype: Mimetype.jpeg,
-            caption: `*⚠️Seems like someone forgot to give Movie/Series name!*
+            caption: `*⚠️Seems like someone forgot to give URL!*
 
 *Usage Example*
-.imdb <movie/series>`,
+${UltronSitreper.ULTRONIX}ytdl <URL>
+
+*NOTE:*
+You Can Get URL by using ${UltronSitreper.ULTRONIX}yts <song-name>`,
           }
         )
         .catch((cᴇʀʀᴏʀ) => {
           ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴜʟᴛʀᴏɴ));
         });
-      return;
     }
     await υℓтяσηℓιєηт
       .sendMessage(ᴜʟᴛʀᴏɴ.chatId, `Downloading your song...`, MessageType.text)
@@ -106,7 +107,7 @@ module.exports = {
           });
         });
     } catch (cᴇʀʀᴏʀ) {
-      throw cᴇʀʀᴏʀ;
+      await ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴜʟᴛʀᴏɴ));
     }
   },
 };

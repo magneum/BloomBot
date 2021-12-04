@@ -13,10 +13,24 @@ ${UltronSitreper.ULTRONIX}spam <count> <text>*`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     let count = Number(Arc.shift());
     if (isNaN(count)) {
-      await υℓтяσηℓιєηт
-        .sendMessage(ᴜʟᴛʀᴏɴ.chatId, `Invalid count`, MessageType.text)
-        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴜʟᴛʀᴏɴ));
-      return 0;
+      return await υℓтяσηℓιєηт
+        .sendMessage(
+          ᴜʟᴛʀᴏɴ.chatId,
+          {
+            url: `https://i.postimg.cc/MGkpdxHT/ltr-Args.png`,
+          },
+          MessageType.image,
+          {
+            mimetype: Mimetype.jpeg,
+            caption: `*⚠️Seems like someone forgot to give count and text!*
+
+*Usage Example*
+${UltronSitreper.ULTRONIX}spam <count> <text>`,
+          }
+        )
+        .catch((cᴇʀʀᴏʀ) => {
+          ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴜʟᴛʀᴏɴ));
+        });
     }
     if (count > 0) {
       count = parseInt(count);

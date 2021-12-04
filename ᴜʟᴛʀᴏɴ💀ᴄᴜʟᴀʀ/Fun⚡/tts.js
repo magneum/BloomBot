@@ -13,27 +13,8 @@ module.exports = {
   ᴜʟᴛʀᴏɴʍօʀɛ: `Use  *${UltronSitreper.ULTRONIX}tts <text>*  or  *${UltronSitreper.ULTRONIX}tts <text> | <language_code>*  to convert text to speech.
 You can also reply to a text message with syntax  *${UltronSitreper.ULTRONIX}tr <language>*  to translate text.`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
-    await υℓтяσηℓιєηт
-      .sendMessage(
-        ᴜʟᴛʀᴏɴ.chatId,
-        `Converting text to speech. Please wait...`,
-        MessageType.text
-      )
-      .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴜʟᴛʀᴏɴ));
-    let text = ``;
-    let langCode = `en`;
-    for (var i = 0; i < Arc.length; i++) {
-      if (Arc[i] == `|`) {
-        langCode = Arc[i + 1];
-        break;
-      }
-      text += Arc[i] + ` `;
-    }
     if (Arc.length === 0) {
-      await υℓтяσηℓιєηт
-        .sendMessage(ᴜʟᴛʀᴏɴ.chatId, "❌", MessageType.text)
-        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴜʟᴛʀᴏɴ));
-      await υℓтяσηℓιєηт
+      return await υℓтяσηℓιєηт
         .sendMessage(
           ᴜʟᴛʀᴏɴ.chatId,
           {
@@ -42,14 +23,26 @@ You can also reply to a text message with syntax  *${UltronSitreper.ULTRONIX}tr 
           MessageType.image,
           {
             mimetype: Mimetype.jpeg,
-            caption: `*⚠️Seems like someone forgot to give Movie/Series name!*
+            caption: `*⚠️Seems like someone forgot to give text or language!*
 
 *Usage Example*
-.imdb <movie/series>`,
+*${UltronSitreper.ULTRONIX}tts <text>*
+*With language code:*
+*${UltronSitreper.ULTRONIX}tts <text> = <language_code>*`,
           }
         )
-        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴜʟᴛʀᴏɴ));
-      return;
+        .catch((cᴇʀʀᴏʀ) => {
+          ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴜʟᴛʀᴏɴ));
+        });
+    }
+    let text = ``;
+    let langCode = `en`;
+    for (var i = 0; i < Arc.length; i++) {
+      if (Arc[i] == `=`) {
+        langCode = Arc[i + 1];
+        break;
+      }
+      text += Arc[i] + ` `;
     }
     if (text.length > 200) {
       await υℓтяσηℓιєηт

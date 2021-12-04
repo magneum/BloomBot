@@ -12,10 +12,24 @@ module.exports = {
   description: `Get Anime Informations From MyAnimeList`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     if (Arc.length === 0) {
-      await υℓтяσηℓιєηт
-        .sendMessage(ᴜʟᴛʀᴏɴ.chatId, `Enter Anime Name`, MessageType.text)
-        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴜʟᴛʀᴏɴ));
-      return;
+      return await υℓтяσηℓιєηт
+        .sendMessage(
+          ᴜʟᴛʀᴏɴ.chatId,
+          {
+            url: `https://i.postimg.cc/MGkpdxHT/ltr-Args.png`,
+          },
+          MessageType.image,
+          {
+            mimetype: Mimetype.jpeg,
+            caption: `*⚠️Seems like someone forgot to give Anime name!*
+
+*Usage Example*
+${UltronSitreper.ULTRONIX} <anime name>`,
+          }
+        )
+        .catch((cᴇʀʀᴏʀ) => {
+          ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴜʟᴛʀᴏɴ));
+        });
     }
     const name = Arc.join(` `);
     malScraper.getInfoFromName(name).then(async (data) => {

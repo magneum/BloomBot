@@ -47,8 +47,7 @@ module.exports = {
           .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴜʟᴛʀᴏɴ));
       }
       if (Arc.length === 0 || Arc.length < 1) {
-        await υℓтяσηℓιєηт.sendMessage(ᴜʟᴛʀᴏɴ.chatId, "❌", MessageType.text);
-        await υℓтяσηℓιєηт
+        return await υℓтяσηℓιєηт
           .sendMessage(
             ᴜʟᴛʀᴏɴ.chatId,
             {
@@ -57,14 +56,15 @@ module.exports = {
             MessageType.image,
             {
               mimetype: Mimetype.jpeg,
-              caption: `*⚠️Seems like someone forgot to give Movie/Series name!*
+              caption: `*⚠️Seems like someone forgot to give text or language!*
 
 *Usage Example*
-.imdb <movie/series>`,
+*${UltronSitreper.ULTRONIX}weather <city>`,
             }
           )
-          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴜʟᴛʀᴏɴ));
-        return;
+          .catch((cᴇʀʀᴏʀ) => {
+            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴜʟᴛʀᴏɴ));
+          });
       } else if (
         Arc[Arc.length - 1] === `tom` ||
         Arc[Arc.length - 1] === `tomorrow`

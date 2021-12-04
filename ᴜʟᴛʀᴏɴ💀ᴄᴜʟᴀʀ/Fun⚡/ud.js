@@ -17,8 +17,7 @@ module.exports = {
       if (!(ᴜʟᴛʀᴏɴ.replyMessage === ``)) {
         text = ᴜʟᴛʀᴏɴ.replyMessage;
       } else if (Arc.length === 0) {
-        await υℓтяσηℓιєηт.sendMessage(ᴜʟᴛʀᴏɴ.chatId, "❌", MessageType.text);
-        await υℓтяσηℓιєηт
+        return await υℓтяσηℓιєηт
           .sendMessage(
             ᴜʟᴛʀᴏɴ.chatId,
             {
@@ -27,14 +26,15 @@ module.exports = {
             MessageType.image,
             {
               mimetype: Mimetype.jpeg,
-              caption: `*⚠️Seems like someone forgot to give Movie/Series name!*
+              caption: `*⚠️Seems like someone forgot to give text!*
 
 *Usage Example*
-.imdb <movie/series>`,
+*${UltronSitreper.ULTRONIX}ud <text>`,
             }
           )
-          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴜʟᴛʀᴏɴ));
-        return;
+          .catch((cᴇʀʀᴏʀ) => {
+            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴜʟᴛʀᴏɴ));
+          });
       } else {
         text = Arc.join(` `);
       }

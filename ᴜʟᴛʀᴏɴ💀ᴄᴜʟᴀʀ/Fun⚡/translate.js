@@ -10,22 +10,15 @@ module.exports = {
   name: `tr`,
   commandType: "Fun⚡",
   description: `Language Translator`,
-  ᴜʟᴛʀᴏɴʍօʀɛ: `Use  *${UltronSitreper.ULTRONIX}tr <text> | <language>*  to translate text to the specified language. You can also reply to a text message with syntax  *${UltronSitreper.ULTRONIX}tr <language>*  to translate text.
+  ᴜʟᴛʀᴏɴʍօʀɛ: `Use  *${UltronSitreper.ULTRONIX}tr <text> = <language>*  to translate text to the specified language. 
+You can also reply to a text message with syntax  *${UltronSitreper.ULTRONIX}tr <language>*  to translate text.
 If you do not specify a language, it defaults to <English class=''></English>`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
-    const processing = await υℓтяσηℓιєηт
-      .sendMessage(
-        ᴜʟᴛʀᴏɴ.chatId,
-        `Translating. Please wait...`,
-        MessageType.text
-      )
-      .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴜʟᴛʀᴏɴ));
     try {
       var text = ``;
       var language = ``;
       if (Arc.length === 0) {
-        await υℓтяσηℓιєηт.sendMessage(ᴜʟᴛʀᴏɴ.chatId, "❌", MessageType.text);
-        await υℓтяσηℓιєηт
+        return await υℓтяσηℓιєηт
           .sendMessage(
             ᴜʟᴛʀᴏɴ.chatId,
             {
@@ -34,18 +27,19 @@ If you do not specify a language, it defaults to <English class=''></English>`,
             MessageType.image,
             {
               mimetype: Mimetype.jpeg,
-              caption: `*⚠️Seems like someone forgot to give Movie/Series name!*
+              caption: `*⚠️Seems like someone forgot to give text or language!*
 
 *Usage Example*
-.imdb <movie/series>`,
+*${UltronSitreper.ULTRONIX}tr <text> = <language>*`,
             }
           )
-          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴜʟᴛʀᴏɴ));
-        return;
+          .catch((cᴇʀʀᴏʀ) => {
+            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴜʟᴛʀᴏɴ));
+          });
       }
       if (!ᴜʟᴛʀᴏɴ.isReply) {
         try {
-          var body = ᴜʟᴛʀᴏɴ.body.split(`|`);
+          var body = ᴜʟᴛʀᴏɴ.body.split(`=`);
           text = body[0].replace(ᴜʟᴛʀᴏɴ.body[0] + ᴜʟᴛʀᴏɴ.moduleName + ` `, ``);
           var i = 0;
           while (body[1].split(` `)[i] == ``) {

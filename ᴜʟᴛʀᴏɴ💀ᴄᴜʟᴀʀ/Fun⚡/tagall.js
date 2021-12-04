@@ -13,14 +13,21 @@ module.exports = {
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     try {
       if (!ᴜʟᴛʀᴏɴ.isGroup) {
-        υℓтяσηℓιєηт
+        return await υℓтяσηℓιєηт
           .sendMessage(
             ᴜʟᴛʀᴏɴ.chatId,
-            `module only applicable in a group chat.`,
-            MessageType.text
+            {
+              url: `https://i.postimg.cc/MGkpdxHT/ltr-Args.png`,
+            },
+            MessageType.image,
+            {
+              mimetype: Mimetype.jpeg,
+              caption: `*⚠️ONLY IN GROUPS!*`,
+            }
           )
-          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴜʟᴛʀᴏɴ));
-        return;
+          .catch((cᴇʀʀᴏʀ) => {
+            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴜʟᴛʀᴏɴ));
+          });
       }
       let members = [];
       for (var i = 0; i < ᴜʟᴛʀᴏɴ.groupMembers.length; i++) {

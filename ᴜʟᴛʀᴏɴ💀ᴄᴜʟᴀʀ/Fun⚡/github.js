@@ -18,8 +18,7 @@ or replying  *${UltronSitreper.ULTRONIX}github* .`,
         user_name = ᴜʟᴛʀᴏɴ.replyMessage;
       } else {
         if (Arc.length === 0) {
-          await υℓтяσηℓιєηт.sendMessage(ᴜʟᴛʀᴏɴ.chatId, "❌", MessageType.text);
-          await υℓтяσηℓιєηт
+          return await υℓтяσηℓιєηт
             .sendMessage(
               ᴜʟᴛʀᴏɴ.chatId,
               {
@@ -28,16 +27,15 @@ or replying  *${UltronSitreper.ULTRONIX}github* .`,
               MessageType.image,
               {
                 mimetype: Mimetype.jpeg,
-                caption: `*⚠️Seems like someone forgot to give Movie/Series name!*
-
-*Usage Example*
-.imdb <movie/series>`,
+                caption: `*⚠️Seems like someone forgot to give Github Account name!*
+  
+  *Usage Example*
+  ${UltronSitreper.ULTRONIX}github <account name>`,
               }
             )
             .catch((cᴇʀʀᴏʀ) => {
               ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴜʟᴛʀᴏɴ));
             });
-          return;
         }
         user_name = Arc[0];
       }

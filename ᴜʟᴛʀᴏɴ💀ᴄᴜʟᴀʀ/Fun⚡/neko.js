@@ -15,7 +15,7 @@ Enter text with the module  *${UltronSitreper.ULTRONIX}neko* .`,
     try {
       if (Arc.length === 0 && !ᴜʟᴛʀᴏɴ.isReply) {
         await υℓтяσηℓιєηт.sendMessage(ᴜʟᴛʀᴏɴ.chatId, "❌", MessageType.text);
-        await υℓтяσηℓιєηт
+        return await υℓтяσηℓιєηт
           .sendMessage(
             ᴜʟᴛʀᴏɴ.chatId,
             {
@@ -24,14 +24,17 @@ Enter text with the module  *${UltronSitreper.ULTRONIX}neko* .`,
             MessageType.image,
             {
               mimetype: Mimetype.jpeg,
-              caption: `*⚠️Seems like someone forgot to give Movie/Series name!*
+              caption: `*⚠️Seems like someone forgot to give text!*
 
 *Usage Example*
-.imdb <movie/series>`,
+${UltronSitreper.ULTRONIX}neko <text>
+or reply to the text with ${UltronSitreper.ULTRONIX}neko
+`,
             }
           )
-          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴜʟᴛʀᴏɴ));
-        return;
+          .catch((cᴇʀʀᴏʀ) => {
+            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴜʟᴛʀᴏɴ));
+          });
       }
       await υℓтяσηℓιєηт
         .sendMessage(
