@@ -6,7 +6,7 @@ registerFont(`./ʊʟȶʀօռ/Honeycomb-Round.otf`, { family: `Honeycomb` });
 registerFont(`./ʊʟȶʀօռ/LobsterTwo-Bold.ttf`, { family: `Lobster` });
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const UltronSitreper = require(`./ʊʟȶʀօռ/UltronSitreper`);
-const ʊʟȶʀօռֆʏռօք = require(`./ʊʟȶʀօռ/sessionString`);
+const ʊʟȶʀօռֆʏռօք = require(`./ʊʟȶʀօռ/UltronCOrex`);
 var randomMC = require(`random-material-color`);
 const ɠɠʊʟȶʀօռ = require(`./ʊʟȶʀօռ/ɠɠʊʟȶʀօռ`);
 const ʊʟȶʀօռǟքք = require(`./ʊʟȶʀօռ/helper`);
