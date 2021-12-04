@@ -1,6 +1,6 @@
 const Heroku = require("heroku-client");
 const ℓιєηт = require("../../ᴜʟᴛʀᴏɴ/catch");
-const { MessageType } = require(`@adiwajshing/baileys`);
+const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const UltronSitreper = require(`../../ᴜʟᴛʀᴏɴ/UltronSitreper`);
 var heroku = new Heroku({ token: UltronSitreper.HEROKU_API });
 
