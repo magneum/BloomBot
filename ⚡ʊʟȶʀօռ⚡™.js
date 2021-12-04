@@ -25,7 +25,7 @@ async function ʊʟȶʀօռRunner() {
   υℓтяσηℓιєηт.logger.level = `error`;
   var UltronSitrep = new Map();
   try {
-    var session = ʊʟȶʀօռֆʏռօք.restoreSession(UltronSitreper.ULTRON);
+    var session = ʊʟȶʀօռֆʏռօք.ultronreignite(UltronSitreper.ULTRON);
     υℓтяσηℓιєηт.loadAuthInfo(session);
   } catch (cᴇʀʀᴏʀ) {
     if (

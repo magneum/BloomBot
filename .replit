@@ -1,0 +1,3 @@
+language = "JavaScript"
+entrypoint = "UltronSession/qr.js"
+run = "npm install chalk @adiwajshing/baileys && node qr.js"
