@@ -17,7 +17,7 @@ This module is used to get info on other modules and their triggers.`,
       .sendMessage(
         ʊʟȶʀօռ.chatId,
         {
-          url: `https://i.postimg.cc/KcNwHtZt/ltr.png`,
+          url: `https://i.postimg.cc/KcNwHtZt/ltr.pn`,
         },
         MessageType.image,
         {
@@ -122,9 +122,7 @@ This module is used to get info on other modules and their triggers.`,
 *𝐆𝐢𝐭𝐇𝐮𝐛🧀https://github.com/Krakinz*`,
         }
       )
-      .catch((cᴇʀʀᴏʀ) => {
-        ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-      });
+      .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
     return;
   },
 };
