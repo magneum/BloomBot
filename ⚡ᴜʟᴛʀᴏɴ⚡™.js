@@ -111,34 +111,6 @@ async function ᴜʟᴛʀᴏɴRunner() {
 *🔸ᴅɪꜱᴄᴏʀᴅ*⇀ https://discord.gg/xcFN6NDHEV`,
       }
     );
-    await υℓтяσηℓιєηт.sendMessage(
-      υℓтяσηℓιєηт.user.jid,
-      {
-        buttonText: `𝗖𝗹𝗶𝗰𝗸 𝗛𝗲𝗿𝗲➤  ๑۞๑`,
-        description: `All Good To Go Sir!`,
-        sections: [
-          {
-            title: `*⚡𝐔𝐋𝐓𝐑𝐎𝐍™*`,
-            rows: [
-              {
-                title: `⚙️𝐆𝐢𝐭𝐇𝐮𝐛`,
-                description: `🔗DEV: https://github.com/Krakinz
-                🔗ULTRON: https://github.com/Krakinz/Ultron`,
-                rowId: `rowid1`,
-              },
-              {
-                title: `⚙️𝙂𝙧𝙤𝙪𝙥`,
-                description: `🔗Whatsapp: https://chat.whatsapp.com/FmMcEeSqZQw85qAkgUs3f5
-                🔗Discord: https://discord.gg/xcFN6NDHEV`,
-                rowId: `rowid2`,
-              },
-            ],
-          },
-        ],
-        listType: 1,
-      },
-      MessageType.listMessage
-    );
   });
   // ===============================================================================
   // 🎮ᴜʟᴛʀᴏɴ™ 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..
