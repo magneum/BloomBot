@@ -82,6 +82,27 @@ async function ᴜʟᴛʀᴏɴRunner() {
     // ===============================================================================
     // 🎮ᴜʟᴛʀᴏɴ™ 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..
     // ===============================================================================
+    υℓтяσηℓιєηт.sendMessage(
+      υℓтяσηℓιєηт.user.jid,
+      {
+        url: `https://i.postimg.cc/KcNwHtZt/ltr.png`,
+      },
+      MessageType.image,
+      {
+        mimetype: Mimetype.png,
+        caption: `*⚡ᴜʟᴛʀᴏɴ⚡™*
+*𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..*
+
+⚙️𝐆𝐢𝐭𝐇𝐮𝐛🧀
+🔗DEV: https://github.com/Krakinz
+🔗ULTRON: https://github.com/Krakinz/Ultron
+
+
+⚙️𝙂𝙧𝙤𝙪𝙥
+🔗Whatsapp: https://chat.whatsapp.com/FmMcEeSqZQw85qAkgUs3f5
+🔗Discord: https://discord.gg/xcFN6NDHEV`,
+      }
+    );
     console.log(
       Kolor.yellowBright.bold(
         `=================😈    |  ᴜʟᴛʀᴏɴ  |    😈=================`
@@ -108,7 +129,6 @@ async function ᴜʟᴛʀᴏɴRunner() {
       `=================😈    |  ɢʀᴏᴜᴘ ᴘᴀʀᴛɪᴄɪᴘᴀɴᴛ ᴜᴘᴅᴀᴛᴇ  |    😈=================`
     );
     console.log(update.participants);
-    console.log(update.action);
     console.log(update.actor);
     console.log(update.jid);
     var groupId = update.jid;
@@ -223,7 +243,6 @@ async function ᴜʟᴛʀᴏɴRunner() {
       `setdp`,
       `tagall`,
       `spam`,
-      // Below are NSFW modules!
       `ass`,
       `bdsm`,
       `blowjob`,
@@ -366,8 +385,8 @@ If you are keen to use my features, you can deploy ᴜʟᴛʀᴏɴ on your own a
             mimetype: Mimetype.png,
             caption: `*⚠️𝗜𝗻𝘃𝗮𝗹𝗶𝗱 ᴜʟᴛʀᴏɴ 𝗖𝗼𝗺𝗺𝗮𝗻𝗱*
 
-        *No such module found.*
-        Please Use *${Ultronf}help to get the list of available modules*`,
+*No such module found.*
+Please Use *${Ultronf}help to get the list of available modules*`,
           }
         );
       } else if (module && ᴜʟᴛʀᴏɴ.moduleName == `help`) {

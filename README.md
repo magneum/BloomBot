@@ -23,6 +23,16 @@
 ```
 Bot is still under development...by December 15/2021
 Heroku Deployment will be added
+
+
+FUTURE:
+Be-Advised - This is Version-4 ᴜʟᴛʀᴏɴ
+Everyday a new update will be posted.
+Please If you deploy the bot then make sure to update your bot.
+
+TO UPDATE:
+1- Just Re-Deploy the bot using same process
+2- Bot updated!
 ```
 
 

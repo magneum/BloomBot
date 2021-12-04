@@ -12,7 +12,14 @@ exports.catch = async (error, υℓтяσηℓιєηт, ᴜʟᴛʀᴏɴ) => {
     MessageType.image,
     {
       mimetype: Mimetype.png,
-      caption: `⚡𝐔𝐥𝐭𝐫𝐨𝐧™⚡ 𝐝𝐢𝐝𝐧'𝐭 𝐰𝐨𝐫𝐤 𝐚𝐬 𝐞𝐱𝐩𝐞𝐜𝐭𝐞𝐝❗\n\n⚠️𝗘𝗿𝗿𝗼𝗿\n${error}`,
+      caption: `⚡𝐔𝐥𝐭𝐫𝐨𝐧™⚡ 𝐝𝐢𝐝𝐧'𝐭 𝐰𝐨𝐫𝐤 𝐚𝐬 𝐞𝐱𝐩𝐞𝐜𝐭𝐞𝐝❗
+      
+⚙️𝙐𝙥𝙙𝙖𝙩𝙚 𝙂𝙧𝙤𝙪𝙥
+🔗Whatsapp: https://chat.whatsapp.com/FmMcEeSqZQw85qAkgUs3f5
+🔗Discord: https://discord.gg/xcFN6NDHEV
+      
+⚠️𝗘𝗿𝗿𝗼𝗿
+${error}`,
     }
   );
   await υℓтяσηℓιєηт.sendMessage(
@@ -23,7 +30,14 @@ exports.catch = async (error, υℓтяσηℓιєηт, ᴜʟᴛʀᴏɴ) => {
     MessageType.image,
     {
       mimetype: Mimetype.png,
-      caption: `⚡𝐔𝐥𝐭𝐫𝐨𝐧™⚡ 𝐝𝐢𝐝𝐧'𝐭 𝐰𝐨𝐫𝐤 𝐚𝐬 𝐞𝐱𝐩𝐞𝐜𝐭𝐞𝐝❗\n\n⚠️𝗘𝗿𝗿𝗼𝗿\n${error}`,
+      caption: `⚡𝐔𝐥𝐭𝐫𝐨𝐧™⚡ 𝐝𝐢𝐝𝐧'𝐭 𝐰𝐨𝐫𝐤 𝐚𝐬 𝐞𝐱𝐩𝐞𝐜𝐭𝐞𝐝❗
+
+⚙️𝙐𝙥𝙙𝙖𝙩𝙚 𝙂𝙧𝙤𝙪𝙥
+🔗Whatsapp: https://chat.whatsapp.com/FmMcEeSqZQw85qAkgUs3f5
+🔗Discord: https://discord.gg/xcFN6NDHEV
+      
+⚠️𝗘𝗿𝗿𝗼𝗿
+${error}`,
     }
   );
 };
