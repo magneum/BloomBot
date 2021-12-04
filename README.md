@@ -21,7 +21,7 @@
 
 # 𝕯𝖊𝖕𝖑𝖔𝖞𝖒𝖊𝖓𝖙
 ```
-Bot is still under development...by december 15/2021
+Bot is still under development...by December 15/2021
 Heroku Deployment will be added
 ```
 
