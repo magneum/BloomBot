@@ -8,6 +8,19 @@ const ffmpeg = require(`fluent-ffmpeg`);
 const ytdl = require(`ytdl-core`);
 const yts = require(`yt-search`);
 const fs = require(`fs`);
+const Regex = {
+  VideoID: /^[a-zA-Z0-9-_]{11}$/,
+  VideoURL:
+    /^((?:https?:)?\/\/)?((?:www|m)\.)?((?:youtube\.com|youtu.be))(\/(?:[\w\-]+\?v=|embed\/|v\/)?)([\w\-]+)(\S+)?$/,
+  PlaylistID: /(PL|UU|LL|RD)[a-zA-Z0-9-_]{16,41}/,
+  PlaylistURL:
+    /https?:\/\/(www.)?youtube.com\/playlist\?list=((PL|UU|LL|RD)[a-zA-Z0-9-_]{16,41})/,
+  SCTrack:
+    /^https?:\/\/(soundcloud\.com|snd\.sc)\/([A-Za-z0-9_-]+)\/([A-Za-z0-9_-]+)\/?$/,
+  SCPlaylist:
+    /^https?:\/\/(soundcloud\.com|snd\.sc)\/([A-Za-z0-9_-]+)\/sets\/([A-Za-z0-9_-]+)\/?$/,
+  Spotify: /^(spotify:|https:\/\/[a-z]+\.spotify\.com\/)/,
+};
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
   name: `ytdl`,
@@ -25,6 +38,29 @@ module.exports = {
           {
             mimetype: Mimetype.jpeg,
             caption: `*⚠️Seems like someone forgot to give URL!*
+
+*Usage Example*
+${UltronSitreper.ULTRONIX}ytdl <URL>
+
+*NOTE:*
+You Can Get URL by using ${UltronSitreper.ULTRONIX}yts <song-name>`,
+          }
+        )
+        .catch((cᴇʀʀᴏʀ) => {
+          ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴜʟᴛʀᴏɴ));
+        });
+    }
+    if (Regex.PlaylistURL.test(Arc[0])) {
+      return await υℓтяσηℓιєηт
+        .sendMessage(
+          ᴜʟᴛʀᴏɴ.chatId,
+          {
+            url: `https://i.postimg.cc/MGkpdxHT/ltr-Args.png`,
+          },
+          MessageType.image,
+          {
+            mimetype: Mimetype.jpeg,
+            caption: `*⚠️Seems like ${Arc[0]} is not YouTube URL!*
 
 *Usage Example*
 ${UltronSitreper.ULTRONIX}ytdl <URL>
