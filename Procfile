@@ -1,1 +1,1 @@
- worker = node ⚡ᴜʟᴛʀᴏɴ⚡™.js
+ worker: node ⚡ᴜʟᴛʀᴏɴ⚡™.js
