@@ -8,11 +8,11 @@ const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const UltronSitreper = require(`./ʊʟȶʀօռ/UltronSitreper`);
 const ᴋʀᴀᴋɪɴᴢᴋᴏɴ = require(`./ƈʏӄօռ/sessionString`);
 var randomMC = require(`random-material-color`);
+const ɠɠʊʟȶʀօռ = require(`./ʊʟȶʀօռ/ɠɠʊʟȶʀօռ`);
 const ʊʟȶʀօռǟքք = require(`./ƈʏӄօռ/helper`);
-const Welcmr = require(`./ʊʟȶʀօռ/wlcmr`);
+const clientult = require(`./ʊʟȶʀօռ/ɠɠʊ`);
 const ʊʟȶʀօռsql = UltronSitreper.POSTQL;
 const ʊʟȶʀօռSudo = [`block`, `unblock`];
-const Users = require(`./ʊʟȶʀօռ/user`);
 var rg = require(`random-greetings`);
 const Kolor = require(`chalk`);
 const fs = require(`fs`);
@@ -115,7 +115,7 @@ async function ʊʟȶʀօռRunner() {
     var parID = update.participants;
     try {
       if (update.action === `add`) {
-        var enable = await Welcmr.checkSettings(groupId, `welcome`);
+        var enable = await ɠɠʊʟȶʀօռ.checkSettings(groupId, `welcome`);
         if (enable === false || enable === `OFF`) {
           return;
         }
@@ -141,7 +141,7 @@ async function ʊʟȶʀօռRunner() {
           `ID➛ ${parID}\nHopped into the server. Kangaroo!!`,
           `ID➛ ${parID}\nJust showed up. Hold my beer.`,
         ];
-        var Fetched = await Welcmr.getMessage(groupId, `welcome`);
+        var Fetched = await ɠɠʊʟȶʀօռ.getMessage(groupId, `welcome`);
         const width = 1280;
         const height = 720;
         const canvas = createCanvas(width, height);
@@ -183,7 +183,7 @@ async function ʊʟȶʀօռRunner() {
         });
         return;
       } else if (update.action === `remove`) {
-        var enable = await Welcmr.checkSettings(groupId, `goodbye`);
+        var enable = await ɠɠʊʟȶʀօռ.checkSettings(groupId, `goodbye`);
         if (enable === false || enable === `OFF`) {
           return;
         }
@@ -271,7 +271,7 @@ async function ʊʟȶʀօռRunner() {
             Kolor.greenBright.bold(`${ʊʟȶʀօռ.moduleName}`),
             Kolor.redBright.bold(`not executed in public Work Type.`)
           );
-          var messageSent = await Users.getUser(ʊʟȶʀօռ.chatId);
+          var messageSent = await clientult.getUser(ʊʟȶʀօռ.chatId);
           if (messageSent) {
             return console.log(
               Kolor.blue(
@@ -279,11 +279,11 @@ async function ʊʟȶʀօռRunner() {
               )
             );
           } else {
-            await Users.addUser(ʊʟȶʀօռ.chatId);
+            await clientult.addUser(ʊʟȶʀօռ.chatId);
             return υℓтяσηℓιєηт.sendMessage(
               ʊʟȶʀօռ.chatId,
               `ʊʟȶʀօռ is Alive!.
-I guess you were trying to use my modules in *${ʊʟȶʀօռ.groupName}*. However, the bot is currently in ${worktype} mode. This enables only the owner and sudo users to use the module *${moduleName}* .
+I guess you were trying to use my modules in *${ʊʟȶʀօռ.groupName}*. However, the bot is currently in ${worktype} mode. This enables only the owner and sudo clientult to use the module *${moduleName}* .
 If you are keen to use my features, you can deploy ʊʟȶʀօռ on your own account without much effort, in less than 5 minutes! Check out the links given below.`,
               {
                 worktype: `public`,
@@ -309,7 +309,7 @@ If you are keen to use my features, you can deploy ʊʟȶʀօռ on your own acco
           Kolor.greenBright.bold(`${ʊʟȶʀօռ.moduleName}`),
           Kolor.redBright.bold(`not executed in private Work Type.`)
         );
-        var messageSent = await Users.getUser(ʊʟȶʀօռ.chatId);
+        var messageSent = await clientult.getUser(ʊʟȶʀօռ.chatId);
         if (messageSent) {
           return console.log(
             Kolor.blue(
@@ -317,11 +317,11 @@ If you are keen to use my features, you can deploy ʊʟȶʀօռ on your own acco
             )
           );
         } else {
-          await Users.addUser(ʊʟȶʀօռ.chatId);
+          await clientult.addUser(ʊʟȶʀօռ.chatId);
           return υℓтяσηℓιєηт.sendMessage(
             ʊʟȶʀօռ.chatId,
             `ʊʟȶʀօռ is Alive!.
-I guess you were trying to use my modules in *${ʊʟȶʀօռ.groupName}*. However, the bot is currently in ${worktype} mode. This enables only the owner and sudo users to use the module *${moduleName}* .
+I guess you were trying to use my modules in *${ʊʟȶʀօռ.groupName}*. However, the bot is currently in ${worktype} mode. This enables only the owner and sudo clientult to use the module *${moduleName}* .
 If you are keen to use my features, you can deploy ʊʟȶʀօռ on your own account without much effort, in less than 5 minutes! Check out the links given below.`,
             {
               worktype: `private`,
