@@ -9,8 +9,7 @@ const got = require(`got`);
 module.exports = {
   name: `lyrics`,
   commandType: "Music🔊",
-  description: `Module to find lyrics of song`,
-  ᴜʟᴛʀᴏɴʍօʀɛ: `Use this module to find the lyrics of a song by using  *${UltronSitreper.ULTRONIX}lyrics*  module.`,
+  description: `Use this module to find the lyrics of a song by using  *${UltronSitreper.ULTRONIX}lyrics*  module.`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     var song = ``;
     if (ᴜʟᴛʀᴏɴ.isReply) {
@@ -43,7 +42,7 @@ module.exports = {
         `Searching. Please wait....`,
         MessageType.text
       )
-.catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴜʟᴛʀᴏɴ));
+      .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴜʟᴛʀᴏɴ));
     let API = await got(`https://some-random-api.ml/lyrics/?title=${song}`);
     let APIData = JSON.parse(API.body);
     let caption =
@@ -65,7 +64,7 @@ module.exports = {
           caption: caption,
         }
       )
-.catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴜʟᴛʀᴏɴ));
+      .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴜʟᴛʀᴏɴ));
   },
 };
 // ===============================================================================

@@ -74,7 +74,7 @@ async function ᴜʟᴛʀᴏɴRunner() {
         UltronSitrep.set(module.name, module);
         console.log(
           Kolor.yellowBright.bold(`💡⬰  `),
-          Kolor.greenBright.bold(module.name.toUpperCase()),
+          Kolor.greenBright.bold(module.name),
           Kolor.whiteBright.bold(module.description.toLowerCase())
         );
       }

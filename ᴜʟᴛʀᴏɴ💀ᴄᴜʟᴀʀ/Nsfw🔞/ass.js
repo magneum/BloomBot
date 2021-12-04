@@ -9,7 +9,6 @@ module.exports = {
   name: `ass`,
   commandType: "Nsfw🔞",
   description: `	I know you like anime ass~ uwu`,
-  ᴜʟᴛʀᴏɴʍօʀɛ: `	I know you like anime ass~ uwu`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     try {
       await υℓтяσηℓιєηт.sendMessage(

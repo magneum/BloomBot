@@ -10,8 +10,7 @@ const yts = require(`yt-search`);
 module.exports = {
   name: `yts`,
   commandType: "Music🔊",
-  description: `Get recommendations and links from Youtube`,
-  ᴜʟᴛʀᴏɴʍօʀɛ: `Get the first 10 recommendations from YouTube with their authorname, timestamp and link. Mention the FetchedLinks that are required to be searched along with the module.`,
+  description: `Get the first 10 recommendations from YouTube with their authorname, timestamp and link. Mention the FetchedLinks that are required to be searched along with the module.`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     if (Arc.length === 0) {
       await υℓтяσηℓιєηт.sendMessage(ᴜʟᴛʀᴏɴ.chatId, "❌", MessageType.text);

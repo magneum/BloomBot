@@ -17,7 +17,6 @@ module.exports = {
   name: `wink`,
   commandType: "Conversation🎙️",
   description: `I know you like anime wink`,
-  ᴜʟᴛʀᴏɴʍօʀɛ: `I know you like anime wink`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     const {
       image

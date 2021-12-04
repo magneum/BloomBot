@@ -8,8 +8,7 @@ const ℓιєηт = require("../../ᴜʟᴛʀᴏɴ/catch");
 module.exports = {
   name: `pfp`,
   commandType: "Fun⚡",
-  description: `Get display picture`,
-  ᴜʟᴛʀᴏɴʍօʀɛ: `Get the profile picture of the group in a group conversation or the profile picture of ᴜʟᴛʀᴏɴ itself in personal chat.`,
+  description: `Get the profile picture of the group in a group conversation or the profile picture of ᴜʟᴛʀᴏɴ itself in personal chat.`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     try {
       let url = await υℓтяσηℓιєηт.getProfilePicture(ᴜʟᴛʀᴏɴ.chatId);

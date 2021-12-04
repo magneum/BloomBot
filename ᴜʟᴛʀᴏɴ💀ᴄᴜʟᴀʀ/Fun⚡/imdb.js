@@ -9,8 +9,7 @@ const UltronSitreper = require(`../../ᴜʟᴛʀᴏɴ/UltronSitreper`);
 module.exports = {
   name: `imdb`,
   commandType: "Fun⚡",
-  description: `Search anything on IMDB`,
-  ᴜʟᴛʀᴏɴʍօʀɛ: `google`,
+  description: `This module was built to find any IMDB movie/series.`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     if (Arc.length === 0) {
       await υℓтяσηℓιєηт.sendMessage(ᴜʟᴛʀᴏɴ.chatId, "❌", MessageType.text);

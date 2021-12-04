@@ -8,8 +8,8 @@ const ℓιєηт = require("../../ᴜʟᴛʀᴏɴ/catch");
 module.exports = {
   name: "spam",
   commandType: "Fun⚡",
-  description: "spams a certain message for given number of times",
-  ᴜʟᴛʀᴏɴʍօʀɛ: `*Spam*\n\nSpam Messages. \n\n*!spam [count text]*\nOR\nreply *!spam [count]* to any message`,
+  description: `Spam Messages.
+${UltronSitreper.ULTRONIX}spam <count> <text>*`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     let count = Number(Arc.shift());
     if (isNaN(count)) {

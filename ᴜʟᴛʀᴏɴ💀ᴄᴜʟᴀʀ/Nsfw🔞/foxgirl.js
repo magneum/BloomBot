@@ -9,7 +9,6 @@ module.exports = {
   name: `foxgirl`,
   commandType: "Nsfw🔞",
   description: `	Girl's that are wannabe foxes, yes`,
-  ᴜʟᴛʀᴏɴʍօʀɛ: `	Girl's that are wannabe foxes, yes`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     try {
       await υℓтяσηℓιєηт.sendMessage(

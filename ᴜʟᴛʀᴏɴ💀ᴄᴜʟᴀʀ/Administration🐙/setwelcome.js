@@ -9,10 +9,12 @@ const UltronSitreper = require(`../../ᴜʟᴛʀᴏɴ/UltronSitreper`);
 module.exports = {
   name: `setwelcome`,
   commandType: "Administration🐙",
-  description: `Welcome new members to the group with a custom message.`,
-  ᴜʟᴛʀᴏɴʍօʀɛ: `New members of a group chat will be welcomed with a message. It can be an image, video, gif with caption or just a text message.
+  description: `New members of a group chat will be welcomed with a message. 
+It can be an image, video, gif with caption or just a text message.
 Use this module to either set, update or delete the existing message.
-The welcome option can be disabled but saved using the   *${UltronSitreper.ULTRONIX}welcome  off*  module. In order to delete the existing message, use  *${UltronSitreper.ULTRONIX}welcome  delete*${UltronSitreper.ULTRONIX}  Do note, the welcome option is still enabled after you use the delete option.`,
+The welcome option can be disabled but saved using the   *${UltronSitreper.ULTRONIX}welcome  off*  module. 
+In order to delete the existing message, use  *${UltronSitreper.ULTRONIX}welcome  delete*${UltronSitreper.ULTRONIX} .
+Do note, the welcome option is still enabled after you use the delete option.`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     try {
       if (!ᴜʟᴛʀᴏɴ.isGroup) {

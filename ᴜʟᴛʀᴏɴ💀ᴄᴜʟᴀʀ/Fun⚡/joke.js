@@ -19,8 +19,7 @@ const {
 module.exports = {
   name: `joke`,
   commandType: "Fun⚡",
-  description: `jokes`,
-  ᴜʟᴛʀᴏɴʍօʀɛ: `jokes`,
+  description: `Get any random Dad-Jokes`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     try {
       const dadJoke = await getDadjoke();

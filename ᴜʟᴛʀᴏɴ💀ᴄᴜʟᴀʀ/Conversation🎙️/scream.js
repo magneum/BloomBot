@@ -5,7 +5,6 @@ module.exports = {
   name: `scream`,
   commandType: "Conversation🎙️",
   description: `I know you like anime scream`,
-  ᴜʟᴛʀᴏɴʍօʀɛ: `I know you like anime scream`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, args) {
     try {
       await υℓтяσηℓιєηт.sendMessage(

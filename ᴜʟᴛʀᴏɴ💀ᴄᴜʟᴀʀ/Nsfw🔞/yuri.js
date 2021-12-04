@@ -9,7 +9,6 @@ module.exports = {
   name: `yuri`,
   commandType: "Nsfw🔞",
   description: `	Girls on Girls, and Girl's only!<3`,
-  ᴜʟᴛʀᴏɴʍօʀɛ: `	Girls on Girls, and Girl's only!<3`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     try {
       await υℓтяσηℓιєηт.sendMessage(

@@ -9,8 +9,7 @@ const UltronSitreper = require(`../../ᴜʟᴛʀᴏɴ/UltronSitreper`);
 module.exports = {
   name: `read`,
   commandType: "Fun⚡",
-  description: `Optical Character Recognition`,
-  ᴜʟᴛʀᴏɴʍօʀɛ: `Use this module to obtain text from an image by  *${UltronSitreper.ULTRONIX}space*  module.`,
+  description: `Use this module to obtain text from an image by  *${UltronSitreper.ULTRONIX}space*  module.`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     try {
       if (ᴜʟᴛʀᴏɴ.isImage) {

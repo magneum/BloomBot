@@ -9,7 +9,6 @@ module.exports = {
   name: `thighs`,
   commandType: "Nsfw🔞",
   description: `	The top part of your legs, very hot, isn't it?`,
-  ᴜʟᴛʀᴏɴʍօʀɛ: `	The top part of your legs, very hot, isn't it?`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     try {
       await υℓтяσηℓιєηт.sendMessage(

@@ -9,7 +9,6 @@ module.exports = {
   name: `maid`,
   commandType: "Nsfw🔞",
   description: `	Maids, Maid Uniforms, etc, you know what maids are :3`,
-  ᴜʟᴛʀᴏɴʍօʀɛ: `	Maids, Maid Uniforms, etc, you know what maids are :3`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     try {
       await υℓтяσηℓιєηт.sendMessage(

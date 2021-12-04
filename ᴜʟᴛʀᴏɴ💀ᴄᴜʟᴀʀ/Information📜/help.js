@@ -9,12 +9,14 @@ module.exports = {
   name: `help`,
   commandType: "Information📜",
   description: `ɢᴇᴛ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅ ʟɪꜱᴛ ᴀɴᴅ ɪɴꜰᴏ ᴏɴ ᴍᴏᴅᴜʟᴇꜱ`,
-  ᴜʟᴛʀᴏɴʍօʀɛ: `This module is used to get info on other modules and their triggers.`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc, UltronSitrep) {
     var UltronRegex = new RegExp(UltronSitreper.ULTRONIX, "g");
     var Ultronf = /\/\^\[(.*)+\]\/\g/g.exec(UltronRegex)[1];
     const ULTHELP = `*|🎮|  ᴜʟᴛʀᴏɴ™  |🎮|*
 𝙐𝙨𝙚 𝙒𝙝𝙖𝙩𝙨𝙖𝙥𝙥 𝙏𝙝𝙚 𝘼𝙙𝙫𝙖𝙣𝙘𝙚 𝙒𝙖𝙮!
+*𝐆𝐢𝐭𝐇𝐮𝐛🧀https://github.com/Krakinz*
+
+_⚠️Bot Not Ready Yet_
 
 *••••••••••••••••➛  ❓𝗜𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻*
 *${Ultronf}help -* ɢᴇᴛ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅ ʟɪꜱᴛ ᴀɴᴅ ɪɴꜰᴏ ᴏɴ ᴍᴏᴅᴜʟᴇꜱ
@@ -108,9 +110,7 @@ module.exports = {
 *${Ultronf}tentacles -* ɪ'ᴍ ꜱᴏʀʀʏ ʙᴜᴛ, ᴡʜʏ ᴅᴏ ᴛʜᴇʏ ʟᴏᴏᴋ ʟɪᴋᴇ ɪɴᴛᴇꜱᴛɪɴᴇꜱ?
 *${Ultronf}thighs -* ᴛʜᴇ ᴛᴏᴘ ᴘᴀʀᴛ ᴏꜰ ʏᴏᴜʀ ʟᴇɢꜱ, ᴠᴇʀʏ ʜᴏᴛ, ɪꜱɴ'ᴛ ɪᴛ?
 *${Ultronf}uniform -* ᴍɪʟɪᴛᴀʀʏ, ᴋᴏɴʙɪɴɪ, ᴡᴏʀᴋ, ɴᴜʀꜱᴇ ᴜɴɪꜰᴏʀᴍꜱ, ᴇᴛᴄ!~ ꜱᴇxʏ~
-*${Ultronf}yuri -* ɢɪʀʟꜱ ᴏɴ ɢɪʀʟꜱ, ᴀɴᴅ ɢɪʀʟ'ꜱ ᴏɴʟʏ!
-
-*𝐆𝐢𝐭𝐇𝐮𝐛🧀https://github.com/Krakinz*`;
+*${Ultronf}yuri -* ɢɪʀʟꜱ ᴏɴ ɢɪʀʟꜱ, ᴀɴᴅ ɢɪʀʟ'ꜱ ᴏɴʟʏ!`;
     // ===============================================================================
     // 🎮ᴜʟᴛʀᴏɴ™ 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..
     // ===============================================================================
@@ -146,14 +146,7 @@ module.exports = {
 ⤤ *${
         (module.description,
         module.description === undefined ? "Null" : module.description)
-      }*
-
-⤥ 📜𝐄𝐱𝐭𝐫𝐚 𝐈𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧 
-⤤ ${
-        (module.ᴜʟᴛʀᴏɴʍօʀɛ,
-        module.ᴜʟᴛʀᴏɴʍօʀɛ === undefined ? "Null" : module.ᴜʟᴛʀᴏɴʍօʀɛ)
-      }
-`;
+      }*`;
       return υℓтяσηℓιєηт
         .sendMessage(
           ᴜʟᴛʀᴏɴ.chatId,

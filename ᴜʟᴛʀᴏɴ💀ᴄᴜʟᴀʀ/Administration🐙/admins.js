@@ -8,8 +8,7 @@ const UltronSitreper = require(`../../ᴜʟᴛʀᴏɴ/UltronSitreper`);
 module.exports = {
   name: `admins`,
   commandType: "Administration🐙",
-  description: `Tag admins`,
-  ᴜʟᴛʀᴏɴʍօʀɛ: `Tag admins of a group (either as a reply to another message or a direct tag).`,
+  description: `Tag admins of a group (either as a reply to another message or a direct tag).`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     try {
       if (!ᴜʟᴛʀᴏɴ.isGroup) {

@@ -17,7 +17,6 @@ module.exports = {
   name: `slaphd`,
   commandType: "Conversation🎙️",
   description: `I know you like anime slap`,
-  ᴜʟᴛʀᴏɴʍօʀɛ: `I know you like anime slap`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     let image = await API.sfw.slap();
     if (image.image === undefined) {

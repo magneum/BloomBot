@@ -9,7 +9,6 @@ module.exports = {
   name: `femdom`,
   commandType: "Nsfw🔞",
   description: `	Female Domination?`,
-  ᴜʟᴛʀᴏɴʍօʀɛ: `	Female Domination?`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     try {
       await υℓтяσηℓιєηт.sendMessage(

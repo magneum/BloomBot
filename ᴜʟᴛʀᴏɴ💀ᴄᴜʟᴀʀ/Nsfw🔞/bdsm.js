@@ -9,7 +9,6 @@ module.exports = {
   name: `bdsm`,
   commandType: "Nsfw🔞",
   description: `	If you don't know what it is, search it up`,
-  ᴜʟᴛʀᴏɴʍօʀɛ: `	If you don't know what it is, search it up`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     try {
       await υℓтяσηℓιєηт.sendMessage(

@@ -8,8 +8,7 @@ const UltronSitreper = require(`../../ᴜʟᴛʀᴏɴ/UltronSitreper`);
 module.exports = {
   name: `disappear`,
   commandType: "Administration🐙",
-  description: `Toggle disappearing messages`,
-  ᴜʟᴛʀᴏɴʍօʀɛ: `Toggle disappearing messages by using module *${UltronSitreper.ULTRONIX}dissapear* .`,
+  description: `Toggle disappearing messages by using module *${UltronSitreper.ULTRONIX}dissapear* .`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     try {
       var time = 7 * 24 * 60 * 60;

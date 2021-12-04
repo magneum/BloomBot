@@ -14,7 +14,6 @@ module.exports = {
   name: `kill`,
   commandType: "Conversation🎙️",
   description: `I know you like anime kill`,
-  ᴜʟᴛʀᴏɴʍօʀɛ: `I know you like anime kill`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     let { image } = await API.sfw.kill();
     if (image === undefined) {

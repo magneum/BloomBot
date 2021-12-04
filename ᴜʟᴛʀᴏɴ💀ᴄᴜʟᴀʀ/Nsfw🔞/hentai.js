@@ -8,8 +8,7 @@ const akaneko = require(`akaneko`);
 module.exports = {
   name: `hentai`,
   commandType: "Nsfw🔞",
-  description: `	Sends a random vanilla hentai imageURL~`,
-  ᴜʟᴛʀᴏɴʍօʀɛ: `	Sends a random vanilla hentai imageURL~`,
+  description: `	Sends a random vanilla hentai image~`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     try {
       await υℓтяσηℓιєηт.sendMessage(

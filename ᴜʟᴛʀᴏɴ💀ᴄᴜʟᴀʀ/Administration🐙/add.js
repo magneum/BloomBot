@@ -8,13 +8,13 @@ const UltronSitreper = require(`../../ᴜʟᴛʀᴏɴ/UltronSitreper`);
 module.exports = {
   name: `add`,
   commandType: "Administration🐙",
-  description: `Module to add a person to a group.`,
-  ᴜʟᴛʀᴏɴʍօʀɛ: `
+  description: `Module to add a person to a group.
 Add new people to a group by entering their mobile number as per the format mentioned below.
 1. XXXXXXXXXX
 2. YYXXXXXXXXXX ()
 For example -
-*${UltronSitreper.ULTRONIX}add 9861212121*`,
+*${UltronSitreper.ULTRONIX}add 9861212121*
+`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     try {
       if (!ᴜʟᴛʀᴏɴ.isGroup) {

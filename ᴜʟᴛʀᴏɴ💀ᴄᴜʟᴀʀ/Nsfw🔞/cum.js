@@ -9,7 +9,6 @@ module.exports = {
   name: `cum`,
   commandType: "Nsfw🔞",
   description: `	Basically sticky white stuff that is usually milked from sharpies.`,
-  ᴜʟᴛʀᴏɴʍօʀɛ: `	Basically sticky white stuff that is usually milked from sharpies.`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     try {
       await υℓтяσηℓιєηт.sendMessage(

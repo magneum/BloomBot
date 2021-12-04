@@ -17,7 +17,6 @@ module.exports = {
   name: `kisshd`,
   commandType: "Conversation🎙️",
   description: `I know you like anime kiss`,
-  ᴜʟᴛʀᴏɴʍօʀɛ: `I know you like anime kiss`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     let image = await API.sfw.kiss();
     if (image.image === undefined) {
