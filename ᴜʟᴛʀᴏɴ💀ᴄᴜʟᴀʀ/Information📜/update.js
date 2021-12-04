@@ -13,7 +13,7 @@ module.exports = {
       .sendMessage(
         ᴜʟᴛʀᴏɴ.chatId,
         {
-          url: `../../ᴜʟᴛʀᴏɴ/ᴜʟᴛʀᴏɴ-reboot.png`,
+          url: `https://i.postimg.cc/LXXS56kT/reboot.png`,
         },
         MessageType.image,
         {
