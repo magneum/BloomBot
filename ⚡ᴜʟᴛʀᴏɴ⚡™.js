@@ -25,6 +25,17 @@ var υℓтяσηℓιєηт = ᴜʟᴛʀᴏɴֆʏռօք.WhatsApp;
 async function ᴜʟᴛʀᴏɴRunner() {
   υℓтяσηℓιєηт.logger.level = `error`;
   var UltronSitrep = new Map();
+  if (
+    UltronSitreper.HEROKU_API === "Null" ||
+    UltronSitreper.HEROKU_BOT_NAME === "Null"
+  ) {
+    console.log(
+      Kolor.yellowBright.bold(
+        `❌⬰ seems like heroku vars are invalid.\nPlease check and retry.`
+      )
+    );
+    process.exit(0);
+  }
   console.log(Kolor.yellowBright.bold(`[INFO] Checking for updates...`));
   await gitPull();
   try {
@@ -123,9 +134,6 @@ async function ᴜʟᴛʀᴏɴRunner() {
     console.log(
       `=================😈    |  ɢʀᴏᴜᴘ ᴘᴀʀᴛɪᴄɪᴘᴀɴᴛ ᴜᴘᴅᴀᴛᴇ  |    😈=================`
     );
-    console.log(update.participants);
-    console.log(update.actor);
-    console.log(update.jid);
     var groupId = update.jid;
     var parID = update.participants;
     try {

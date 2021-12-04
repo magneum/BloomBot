@@ -3,7 +3,7 @@
     "main": "⚡ᴜʟᴛʀᴏɴ⚡™.js",
     "engines": {
         "node": ">=17.x"
-      },
+    },
     "dependencies": {
         "@adiwajshing/baileys": "github:adiwajshing/baileys",
         "@ffmpeg-installer/ffmpeg": "^1.1.0",
@@ -15,6 +15,7 @@
         "ascii-table": "^0.0.9",
         "canvas": "^2.8.0",
         "chalk": "^4.1.1",
+        "co": "^4.6.0",
         "dotenv": "^10.0.0",
         "download-file": "^0.1.5",
         "fluent-ffmpeg": "^2.1.2",
@@ -24,6 +25,7 @@
         "google-search-results-nodejs": "^2.0.1",
         "google-tts-api": "^2.0.2",
         "got": "^11.8.2",
+        "heroku-client": "^3.1.0",
         "i": "^0.3.7",
         "imdb-api": "^4.4.1",
         "jsdom": "^17.0.0",

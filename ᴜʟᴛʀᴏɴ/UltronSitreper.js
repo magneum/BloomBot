@@ -15,7 +15,12 @@ if (fs.existsSync(`ᴜʟᴛʀᴏɴ.env`)) {
 // ===============================================================================
 const env = {
   ULTRON: process.env.ULTRON === undefined ? `` : process.env.ULTRON,
-  HEROKU: process.env.HEROKU === undefined ? false : true,
+  HEROKU_API:
+    process.env.HEROKU_API === undefined ? "Null" : process.env.HEROKU_API,
+  HEROKU_BOT_NAME:
+    process.env.HEROKU_BOT_NAME === undefined
+      ? "Null"
+      : process.env.HEROKU_BOT_NAME,
   IMDB: process.env.IMDB === undefined ? `5e36f0db` : process.env.IMDB,
   ULTRONIX:
     process.env.ULTRONIX === undefined ? `^[!]` : `^[${process.env.ULTRONIX}]`,
