@@ -8,7 +8,7 @@ const akaneko = require(`akaneko`);
 module.exports = {
   name: `uniform`,
   description: `	Military, Konbini, Work, Nurse Uniforms, etc!~ Sexy~`,
-  ƈʏɮօʀɢʍօʀɛ: `
+  ᴜʟᴛʀᴏɴʍօʀɛ: `
 	Military, Konbini, Work, Nurse Uniforms, etc!~ Sexy~`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     try {

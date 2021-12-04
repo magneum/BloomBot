@@ -9,7 +9,7 @@ const googleTTS = require(`google-tts-api`);
 module.exports = {
   name: `tts`,
   description: `Text To Speech.`,
-  ƈʏɮօʀɢʍօʀɛ: `
+  ᴜʟᴛʀᴏɴʍօʀɛ: `
 Use  *${UltronSitreper.ULTRONIX}tts <text>*  or  *${UltronSitreper.ULTRONIX}tts <text> | <language_code>*  to convert text to speech.
 You can also reply to a text message with syntax  *${UltronSitreper.ULTRONIX}tr <language>*  to translate text.`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {

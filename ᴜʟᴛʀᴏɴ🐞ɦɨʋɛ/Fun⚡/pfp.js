@@ -8,7 +8,7 @@ const ℓιєηт = require("../../ᴜʟᴛʀᴏɴ/catch");
 module.exports = {
   name: `pfp`,
   description: `Get display picture`,
-  ƈʏɮօʀɢʍօʀɛ: `
+  ᴜʟᴛʀᴏɴʍօʀɛ: `
 Get the profile picture of the group in a group conversation or the profile picture of ᴜʟᴛʀᴏɴ itself in personal chat.`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     try {

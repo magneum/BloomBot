@@ -8,7 +8,7 @@ const akaneko = require(`akaneko`);
 module.exports = {
   name: `cum`,
   description: `	Basically sticky white stuff that is usually milked from sharpies.`,
-  ƈʏɮօʀɢʍօʀɛ: `
+  ᴜʟᴛʀᴏɴʍօʀɛ: `
 	Basically sticky white stuff that is usually milked from sharpies.`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     try {

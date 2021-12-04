@@ -8,7 +8,7 @@ const akaneko = require(`akaneko`);
 module.exports = {
   name: `glasses`,
   description: `	Girls that wear glasses, uwu~`,
-  ƈʏɮօʀɢʍօʀɛ: `
+  ᴜʟᴛʀᴏɴʍօʀɛ: `
 	Girls that wear glasses, uwu~`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     try {

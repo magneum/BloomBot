@@ -8,7 +8,7 @@ const akaneko = require(`akaneko`);
 module.exports = {
   name: `panties`,
   description: `I mean... just why? You like underwear?`,
-  ƈʏɮօʀɢʍօʀɛ: `
+  ᴜʟᴛʀᴏɴʍօʀɛ: `
 I mean... just why? You like underwear?`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     try {

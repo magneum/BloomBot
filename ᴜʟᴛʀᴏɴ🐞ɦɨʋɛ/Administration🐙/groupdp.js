@@ -10,7 +10,7 @@ const fs = require(`fs`);
 module.exports = {
   name: `groupdp`,
   description: `Change the group icon`,
-  ƈʏɮօʀɢʍօʀɛ: `
+  ᴜʟᴛʀᴏɴʍօʀɛ: `
 Use this module to change the group's icon. Tag image with the module or send the desired image with caption as the module`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     try {

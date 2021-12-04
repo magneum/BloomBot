@@ -8,7 +8,7 @@ const akaneko = require(`akaneko`);
 module.exports = {
   name: `maid`,
   description: `	Maids, Maid Uniforms, etc, you know what maids are :3`,
-  ƈʏɮօʀɢʍօʀɛ: `
+  ᴜʟᴛʀᴏɴʍօʀɛ: `
 	Maids, Maid Uniforms, etc, you know what maids are :3`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     try {

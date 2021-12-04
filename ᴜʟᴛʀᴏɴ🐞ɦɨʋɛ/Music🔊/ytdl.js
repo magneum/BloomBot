@@ -12,7 +12,7 @@ const fs = require(`fs`);
 module.exports = {
   name: `ytdl`,
   description: `Download songs`,
-  ƈʏɮօʀɢʍօʀɛ: `
+  ᴜʟᴛʀᴏɴʍօʀɛ: `
 Use this module to download audio of your choice either by specifying a YouTube link or the name of the song.`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     if (Arc.length === 0) {

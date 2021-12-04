@@ -9,7 +9,7 @@ const got = require(`got`);
 module.exports = {
   name: `neko`,
   description: `Copy your text to nekobin`,
-  ƈʏɮօʀɢʍօʀɛ: `
+  ᴜʟᴛʀᴏɴʍօʀɛ: `
 Use this module to paste your text to a pastebin (NEKOBIN). Enter text with the module  *${UltronSitreper.ULTRONIX}neko* .`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     try {

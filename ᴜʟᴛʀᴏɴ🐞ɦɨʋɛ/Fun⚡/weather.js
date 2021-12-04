@@ -10,7 +10,7 @@ const https = require(`https`);
 module.exports = {
   name: `weather`,
   description: `Get weather data of a city`,
-  ƈʏɮօʀɢʍօʀɛ: `
+  ᴜʟᴛʀᴏɴʍօʀɛ: `
 Obtain weather info by entering the city name.`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     try {

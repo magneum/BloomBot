@@ -16,7 +16,7 @@ const fs = require(`fs`);
 module.exports = {
   name: `slaphd`,
   description: `I know you like anime slap`,
-  ƈʏɮօʀɢʍօʀɛ: `
+  ᴜʟᴛʀᴏɴʍօʀɛ: `
 I know you like anime slap`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     let image = await API.sfw.slap();

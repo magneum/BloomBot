@@ -4,7 +4,7 @@ const anime = require("anime-actions");
 module.exports = {
   name: `cry`,
   description: `	I know you like anime cry`,
-  ƈʏɮօʀɢʍօʀɛ: `
+  ᴜʟᴛʀᴏɴʍօʀɛ: `
 
 	I know you like anime cry`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, args) {
@@ -17,7 +17,7 @@ module.exports = {
         MessageType.image,
         {
           mimetype: Mimetype.jpeg,
-          caption: `*☢️ƈʏɮօʀɢ ⧴ ᴜꜱᴇ ᴡʜᴀᴛꜱᴀᴘᴘ ᴛʜᴇ ᴀᴅᴠᴀɴᴄᴇ ᴡᴀʏ!*
+          caption: `*☢️ᴜʟᴛʀᴏɴ ⧴ ᴜꜱᴇ ᴡʜᴀᴛꜱᴀᴘᴘ ᴛʜᴇ ᴀᴅᴠᴀɴᴄᴇ ᴡᴀʏ!*
 
 Genre: Anime-Conversation
 NSFW: No`,

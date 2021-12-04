@@ -9,7 +9,7 @@ const got = require(`got`);
 module.exports = {
   name: `lyrics`,
   description: `Module to find lyrics of song`,
-  ƈʏɮօʀɢʍօʀɛ: `
+  ᴜʟᴛʀᴏɴʍօʀɛ: `
 Use this module to find the lyrics of a song by using  *${UltronSitreper.ULTRONIX}lyrics*  module.`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     var song = ``;

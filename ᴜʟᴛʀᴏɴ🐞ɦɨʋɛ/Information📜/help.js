@@ -8,7 +8,7 @@ const ℓιєηт = require("../../ᴜʟᴛʀᴏɴ/catch");
 module.exports = {
   name: `help`,
   description: `ɢᴇᴛ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅ ʟɪꜱᴛ ᴀɴᴅ ɪɴꜰᴏ ᴏɴ ᴍᴏᴅᴜʟᴇꜱ`,
-  ƈʏɮօʀɢʍօʀɛ: `
+  ᴜʟᴛʀᴏɴʍօʀɛ: `
 This module is used to get info on other modules and their triggers.`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     var UltronRegex = new RegExp(UltronSitreper.ULTRONIX, "g");

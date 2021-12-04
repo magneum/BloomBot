@@ -8,7 +8,7 @@ const ℓιєηт = require("../../ᴜʟᴛʀᴏɴ/catch");
 module.exports = {
   name: `unmute`,
   description: `Unmute group chat`,
-  ƈʏɮօʀɢʍօʀɛ: `
+  ᴜʟᴛʀᴏɴʍօʀɛ: `
 Unmute non-admin members of a group`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     try {

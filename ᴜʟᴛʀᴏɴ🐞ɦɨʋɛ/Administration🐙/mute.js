@@ -8,7 +8,7 @@ const ℓιєηт = require("../../ᴜʟᴛʀᴏɴ/catch");
 module.exports = {
   name: `mute`,
   description: `Mute group chat for a specified time.`,
-  ƈʏɮօʀɢʍօʀɛ: `
+  ᴜʟᴛʀᴏɴʍօʀɛ: `
 Mute non-admin members of a group. You can even specify the duration using s, m or h.\n\nFor example:\n .mute 15 m   will change chat permissions to admin-only for 15 minutes.`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     try {

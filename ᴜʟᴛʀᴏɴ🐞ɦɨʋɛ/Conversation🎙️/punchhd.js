@@ -16,7 +16,7 @@ const fs = require(`fs`);
 module.exports = {
   name: `punchhd`,
   description: `I know you like anime punch`,
-  ƈʏɮօʀɢʍօʀɛ: `
+  ᴜʟᴛʀᴏɴʍօʀɛ: `
 I know you like anime punch`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     let image = await API.sfw.punch();

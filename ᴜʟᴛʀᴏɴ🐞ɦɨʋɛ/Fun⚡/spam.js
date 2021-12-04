@@ -8,7 +8,7 @@ const ℓιєηт = require("../../ᴜʟᴛʀᴏɴ/catch");
 module.exports = {
   name: "spam",
   description: "spams a certain message for given number of times",
-  ƈʏɮօʀɢʍօʀɛ: `*Spam*\n\nSpam Messages. \n\n*!spam [count text]*\nOR\nreply *!spam [count]* to any message`,
+  ᴜʟᴛʀᴏɴʍօʀɛ: `*Spam*\n\nSpam Messages. \n\n*!spam [count text]*\nOR\nreply *!spam [count]* to any message`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     let count = Number(Arc.shift());
     if (isNaN(count)) {

@@ -16,7 +16,7 @@ const fs = require(`fs`);
 module.exports = {
   name: `cuddle`,
   description: `I know you like anime cuddle`,
-  ƈʏɮօʀɢʍօʀɛ: `
+  ᴜʟᴛʀᴏɴʍօʀɛ: `
 I know you like anime cuddle`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     let {

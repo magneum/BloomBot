@@ -13,7 +13,7 @@ const fs = require(`fs`);
 module.exports = {
   name: `kill`,
   description: `I know you like anime kill`,
-  ƈʏɮօʀɢʍօʀɛ: `
+  ᴜʟᴛʀᴏɴʍօʀɛ: `
 I know you like anime kill`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     let { image } = await API.sfw.kill();
