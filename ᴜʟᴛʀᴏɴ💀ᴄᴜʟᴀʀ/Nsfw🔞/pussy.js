@@ -7,6 +7,7 @@ const akaneko = require(`akaneko`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
   name: `pussy`,
+  commandType: "Nsfw🔞",
   description: `	The genitals of a female, or a cat, you give the meaning.`,
   ᴜʟᴛʀᴏɴʍօʀɛ: `
 	The genitals of a female, or a cat, you give the meaning.`,

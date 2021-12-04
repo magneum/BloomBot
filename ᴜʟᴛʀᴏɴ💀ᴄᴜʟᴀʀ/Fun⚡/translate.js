@@ -8,6 +8,7 @@ const UltronSitreper = require(`../../ᴜʟᴛʀᴏɴ/UltronSitreper`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
   name: `tr`,
+  commandType: "Fun⚡",
   description: `Language Translator`,
   ᴜʟᴛʀᴏɴʍօʀɛ: `
 Use  *${UltronSitreper.ULTRONIX}tr <text> | <language>*  to translate text to the specified language. You can also reply to a text message with syntax  *${UltronSitreper.ULTRONIX}tr <language>*  to translate text.

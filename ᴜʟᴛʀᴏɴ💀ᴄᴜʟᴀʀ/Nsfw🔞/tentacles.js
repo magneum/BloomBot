@@ -7,6 +7,7 @@ const akaneko = require(`akaneko`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
   name: `tentacles`,
+  commandType: "Nsfw🔞",
   description: `	I'm sorry but, why do they look like intestines?`,
   ᴜʟᴛʀᴏɴʍօʀɛ: `
 	I'm sorry but, why do they look like intestines?`,

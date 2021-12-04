@@ -7,6 +7,7 @@ const akaneko = require(`akaneko`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
   name: `cum`,
+  commandType: "Nsfw🔞",
   description: `	Basically sticky white stuff that is usually milked from sharpies.`,
   ᴜʟᴛʀᴏɴʍօʀɛ: `
 	Basically sticky white stuff that is usually milked from sharpies.`,

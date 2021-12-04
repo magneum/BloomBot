@@ -7,6 +7,7 @@ const akaneko = require(`akaneko`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
   name: `doujin`,
+  commandType: "Nsfw🔞",
   description: `	Sends a random doujin page imageURL!`,
   ᴜʟᴛʀᴏɴʍօʀɛ: `
 	Sends a random doujin page imageURL!`,

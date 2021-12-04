@@ -7,6 +7,7 @@ const akaneko = require(`akaneko`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
   name: `femdom`,
+  commandType: "Nsfw🔞",
   description: `	Female Domination?`,
   ᴜʟᴛʀᴏɴʍօʀɛ: `
 	Female Domination?`,

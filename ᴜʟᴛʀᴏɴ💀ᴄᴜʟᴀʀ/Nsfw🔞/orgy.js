@@ -7,6 +7,7 @@ const akaneko = require(`akaneko`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
   name: `orgy`,
+  commandType: "Nsfw🔞",
   description: `	Group Lewd Acts`,
   ᴜʟᴛʀᴏɴʍօʀɛ: `
 	Group Lewd Acts`,

@@ -7,6 +7,7 @@ const UltronSitreper = require(`../../ᴜʟᴛʀᴏɴ/UltronSitreper`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
   name: `disappear`,
+  commandType: "Administration🐙",
   description: `Toggle disappearing messages`,
   ᴜʟᴛʀᴏɴʍօʀɛ: `
 Toggle disappearing messages by using module *${UltronSitreper.ULTRONIX}dissapear* .`,

@@ -8,6 +8,7 @@ const got = require(`got`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
   name: `neko`,
+  commandType: "Fun⚡",
   description: `Copy your text to nekobin`,
   ᴜʟᴛʀᴏɴʍօʀɛ: `
 Use this module to paste your text to a pastebin (NEKOBIN). Enter text with the module  *${UltronSitreper.ULTRONIX}neko* .`,

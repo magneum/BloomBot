@@ -8,6 +8,7 @@ const malScraper = require(`mal-scraper`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
   name: `anime`,
+  commandType: "Anime😈",
   description: `Search Anime`,
   ᴜʟᴛʀᴏɴʍօʀɛ: `
 Get Anime Informations From MyAnimeList`,

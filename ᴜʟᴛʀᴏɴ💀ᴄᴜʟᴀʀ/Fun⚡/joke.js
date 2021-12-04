@@ -18,6 +18,7 @@ const {
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
   name: `joke`,
+  commandType: "Fun⚡",
   description: `jokes`,
   ᴜʟᴛʀᴏɴʍօʀɛ: `
 jokes`,

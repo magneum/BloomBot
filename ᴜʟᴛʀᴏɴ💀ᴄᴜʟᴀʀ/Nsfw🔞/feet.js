@@ -7,6 +7,7 @@ const akaneko = require(`akaneko`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
   name: `feet`,
+  commandType: "Nsfw🔞",
   description: `	So you like smelly feet huh?`,
   ᴜʟᴛʀᴏɴʍօʀɛ: `
 	So you like smelly feet huh?`,

@@ -7,6 +7,7 @@ const ℓιєηт = require("../../ᴜʟᴛʀᴏɴ/catch");
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
   name: `help`,
+  commandType: "Information📜",
   description: `ɢᴇᴛ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅ ʟɪꜱᴛ ᴀɴᴅ ɪɴꜰᴏ ᴏɴ ᴍᴏᴅᴜʟᴇꜱ`,
   ᴜʟᴛʀᴏɴʍօʀɛ: `
 This module is used to get info on other modules and their triggers.`,

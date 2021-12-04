@@ -7,6 +7,7 @@ const akaneko = require(`akaneko`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
   name: `netorare`,
+  commandType: "Nsfw🔞",
   description: `Wow, I won't even question your fetishes.`,
   ᴜʟᴛʀᴏɴʍօʀɛ: `
 Wow, I won't even question your fetishes.`,

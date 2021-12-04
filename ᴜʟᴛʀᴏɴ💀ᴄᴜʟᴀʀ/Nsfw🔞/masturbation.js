@@ -7,6 +7,7 @@ const akaneko = require(`akaneko`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
   name: `masturbation`,
+  commandType: "Nsfw🔞",
   description: `Solo Queue in CSGO!Lol`,
   ᴜʟᴛʀᴏɴʍօʀɛ: `
 Solo Queue in CSGO!Lol`,

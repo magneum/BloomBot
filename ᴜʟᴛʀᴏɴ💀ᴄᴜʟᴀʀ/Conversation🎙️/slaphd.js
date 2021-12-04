@@ -15,6 +15,7 @@ const fs = require(`fs`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
   name: `slaphd`,
+  commandType: "Conversation🎙️",
   description: `I know you like anime slap`,
   ᴜʟᴛʀᴏɴʍօʀɛ: `
 I know you like anime slap`,

@@ -4,6 +4,7 @@ const ℓιєηт = require("../../ᴜʟᴛʀᴏɴ/catch");
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
   name: `meme`,
+  commandType: "Fun⚡",
   description: `meme.DESCRIPTION`,
   ᴜʟᴛʀᴏɴʍօʀɛ: `
 meme.EXTENDED_DESCRIPTION`,

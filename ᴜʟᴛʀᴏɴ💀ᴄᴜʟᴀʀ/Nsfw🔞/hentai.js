@@ -7,6 +7,7 @@ const akaneko = require(`akaneko`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
   name: `hentai`,
+  commandType: "Nsfw🔞",
   description: `	Sends a random vanilla hentai imageURL~`,
   ᴜʟᴛʀᴏɴʍօʀɛ: `
 	Sends a random vanilla hentai imageURL~`,

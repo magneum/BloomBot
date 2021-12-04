@@ -7,6 +7,7 @@ const akaneko = require(`akaneko`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
   name: `glasses`,
+  commandType: "Nsfw🔞",
   description: `	Girls that wear glasses, uwu~`,
   ᴜʟᴛʀᴏɴʍօʀɛ: `
 	Girls that wear glasses, uwu~`,

@@ -15,6 +15,7 @@ const fs = require(`fs`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
   name: `kiss`,
+  commandType: "Conversation🎙️",
   description: `I know you like anime kiss`,
   ᴜʟᴛʀᴏɴʍօʀɛ: `
 I know you like anime kiss`,

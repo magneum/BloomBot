@@ -7,6 +7,7 @@ const akaneko = require(`akaneko`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
   name: `maid`,
+  commandType: "Nsfw🔞",
   description: `	Maids, Maid Uniforms, etc, you know what maids are :3`,
   ᴜʟᴛʀᴏɴʍօʀɛ: `
 	Maids, Maid Uniforms, etc, you know what maids are :3`,

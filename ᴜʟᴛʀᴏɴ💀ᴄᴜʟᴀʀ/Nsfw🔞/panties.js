@@ -7,6 +7,7 @@ const akaneko = require(`akaneko`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
   name: `panties`,
+  commandType: "Nsfw🔞",
   description: `I mean... just why? You like underwear?`,
   ᴜʟᴛʀᴏɴʍօʀɛ: `
 I mean... just why? You like underwear?`,

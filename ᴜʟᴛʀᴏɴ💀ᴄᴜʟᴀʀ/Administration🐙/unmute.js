@@ -7,6 +7,7 @@ const ℓιєηт = require("../../ᴜʟᴛʀᴏɴ/catch");
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
   name: `unmute`,
+  commandType: "Administration🐙",
   description: `Unmute group chat`,
   ᴜʟᴛʀᴏɴʍօʀɛ: `
 Unmute non-admin members of a group`,

@@ -15,6 +15,7 @@ const fs = require(`fs`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
   name: `killhd`,
+  commandType: "Conversation🎙️",
   description: `I know you like anime kill`,
   ᴜʟᴛʀᴏɴʍօʀɛ: `
 I know you like anime kill`,

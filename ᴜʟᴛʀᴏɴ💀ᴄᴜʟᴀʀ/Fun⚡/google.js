@@ -7,6 +7,7 @@ const ℓιєηт = require("../../ᴜʟᴛʀᴏɴ/catch");
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
   name: `google`,
+  commandType: "Fun⚡",
   description: `Search anything on google`,
   ᴜʟᴛʀᴏɴʍօʀɛ: `
 google`,

@@ -7,6 +7,7 @@ const UltronSitreper = require(`../../ᴜʟᴛʀᴏɴ/UltronSitreper`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
   name: `alive`,
+  commandType: "Information📜",
   description: `Check if bot is online.`,
   ᴜʟᴛʀᴏɴʍօʀɛ: `
 This module can be used to check if the bot is currently online or not.`,

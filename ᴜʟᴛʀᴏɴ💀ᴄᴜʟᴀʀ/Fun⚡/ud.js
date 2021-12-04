@@ -8,7 +8,7 @@ const ud = require(`urban-dictionary`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
   name: `ud`,
-  moduleType: `fun`,
+  commandType: "Fun⚡",
   description: `Urban Dictionary`,
   ᴜʟᴛʀᴏɴʍօʀɛ: `
 Use this module to find the meaning of a word in Urban Dictionary. Enter  *${UltronSitreper.ULTRONIX}ud*  module.`,

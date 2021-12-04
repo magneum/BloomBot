@@ -7,6 +7,7 @@ const UltronSitreper = require(`../../ᴜʟᴛʀᴏɴ/UltronSitreper`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
   name: `unblock`,
+  commandType: "Administration🐙",
   description: `Unblock contact`,
   ᴜʟᴛʀᴏɴʍօʀɛ: `
 Remove number from the blocklist.`,

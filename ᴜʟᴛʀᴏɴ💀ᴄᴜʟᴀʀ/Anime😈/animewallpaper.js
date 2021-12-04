@@ -8,6 +8,7 @@ const anime = require("anime-actions");
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
   name: `animewallpaper`,
+  commandType: "Anime😈",
   description: `	I know you like anime wallpaper`,
   ᴜʟᴛʀᴏɴʍօʀɛ: `
 	I know you like anime wallpaper`,

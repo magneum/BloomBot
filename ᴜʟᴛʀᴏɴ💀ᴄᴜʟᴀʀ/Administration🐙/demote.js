@@ -7,6 +7,7 @@ const UltronSitreper = require(`../../ᴜʟᴛʀᴏɴ/UltronSitreper`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
   name: `demote`,
+  commandType: "Administration🐙",
   description: `Demote a person from admin`,
   ᴜʟᴛʀᴏɴʍօʀɛ: `
 Use this module to demote a person from admin by entering the person's mobile number. Valid Syntaxes -\n    1. XXXXXXXXXX\n    2. YYXXXXXXXXXX ()\n\nFor example -\n*${UltronSitreper.ULTRONIX}demote 9861212121*`,

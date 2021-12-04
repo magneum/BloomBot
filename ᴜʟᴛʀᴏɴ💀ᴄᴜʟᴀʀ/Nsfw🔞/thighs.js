@@ -7,6 +7,7 @@ const akaneko = require(`akaneko`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
   name: `thighs`,
+  commandType: "Nsfw🔞",
   description: `	The top part of your legs, very hot, isn't it?`,
   ᴜʟᴛʀᴏɴʍօʀɛ: `
 	The top part of your legs, very hot, isn't it?`,

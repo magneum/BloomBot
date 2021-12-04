@@ -7,6 +7,7 @@ const akaneko = require(`akaneko`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
   name: `yuri`,
+  commandType: "Nsfw🔞",
   description: `	Girls on Girls, and Girl's only!<3`,
   ᴜʟᴛʀᴏɴʍօʀɛ: `
 	Girls on Girls, and Girl's only!<3`,

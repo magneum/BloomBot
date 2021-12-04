@@ -8,6 +8,7 @@ const UltronSitreper = require(`../../ᴜʟᴛʀᴏɴ/UltronSitreper`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
   name: `imdb`,
+  commandType: "Fun⚡",
   description: `Search anything on IMDB`,
   ᴜʟᴛʀᴏɴʍօʀɛ: `
 google`,

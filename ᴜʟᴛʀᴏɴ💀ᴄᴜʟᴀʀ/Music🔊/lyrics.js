@@ -8,6 +8,7 @@ const got = require(`got`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
   name: `lyrics`,
+  commandType: "Music🔊",
   description: `Module to find lyrics of song`,
   ᴜʟᴛʀᴏɴʍօʀɛ: `
 Use this module to find the lyrics of a song by using  *${UltronSitreper.ULTRONIX}lyrics*  module.`,

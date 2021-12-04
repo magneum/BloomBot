@@ -9,6 +9,7 @@ const https = require(`https`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
   name: `weather`,
+  commandType: "Fun⚡",
   description: `Get weather data of a city`,
   ᴜʟᴛʀᴏɴʍօʀɛ: `
 Obtain weather info by entering the city name.`,

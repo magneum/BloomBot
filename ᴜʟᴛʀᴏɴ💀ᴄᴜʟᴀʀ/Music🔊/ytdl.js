@@ -11,6 +11,7 @@ const fs = require(`fs`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
   name: `ytdl`,
+  commandType: "Music🔊",
   description: `Download songs`,
   ᴜʟᴛʀᴏɴʍօʀɛ: `
 Use this module to download audio of your choice either by specifying a YouTube link or the name of the song.`,

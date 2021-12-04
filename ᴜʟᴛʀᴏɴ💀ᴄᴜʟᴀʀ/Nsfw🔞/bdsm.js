@@ -7,6 +7,7 @@ const akaneko = require(`akaneko`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
   name: `bdsm`,
+  commandType: "Nsfw🔞",
   description: `	If you don't know what it is, search it up`,
   ᴜʟᴛʀᴏɴʍօʀɛ: `
 	If you don't know what it is, search it up`,

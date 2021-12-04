@@ -9,6 +9,7 @@ const fs = require(`fs`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
   name: `sticker`,
+  commandType: "Fun⚡",
   description: `Module to convert image to sticker`,
   ᴜʟᴛʀᴏɴʍօʀɛ: `
 Use this module to convert any image from your chat to a sticker. Reply to an image message with the module  *${UltronSitreper.ULTRONIX}sticker*  to convert and send that image as a sticker.`,

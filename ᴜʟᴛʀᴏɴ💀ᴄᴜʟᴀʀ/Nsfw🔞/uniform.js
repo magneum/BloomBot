@@ -7,6 +7,7 @@ const akaneko = require(`akaneko`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
   name: `uniform`,
+  commandType: "Nsfw🔞",
   description: `	Military, Konbini, Work, Nurse Uniforms, etc!~ Sexy~`,
   ᴜʟᴛʀᴏɴʍօʀɛ: `
 	Military, Konbini, Work, Nurse Uniforms, etc!~ Sexy~`,

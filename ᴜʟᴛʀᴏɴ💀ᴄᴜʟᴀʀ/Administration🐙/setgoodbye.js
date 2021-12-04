@@ -8,6 +8,7 @@ const UltronSitreper = require(`../../ᴜʟᴛʀᴏɴ/UltronSitreper`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
   name: `setgoodbye`,
+  commandType: "Administration🐙",
   description: `A goodbye message for group chat whenever someone leaves.`,
   ᴜʟᴛʀᴏɴʍօʀɛ: `
 A goodbye message will be sent when any member leaves the group. It can be an image, video, gif with caption or just a text message.\n\nUse this module to either set, update or delete the existing message.\n\nThe goodbye option can be disabled but saved using the  *${UltronSitreper.ULTRONIX}goodbye  off*  module. In order to delete the existing message, use  *${UltronSitreper.ULTRONIX}goodbye  delete*${UltronSitreper.ULTRONIX}  Do note, the goodbye option is still enabled after you use the delete option.`,

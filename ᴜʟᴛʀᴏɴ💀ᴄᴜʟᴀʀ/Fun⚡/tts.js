@@ -8,6 +8,7 @@ const googleTTS = require(`google-tts-api`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
   name: `tts`,
+  commandType: "Fun⚡",
   description: `Text To Speech.`,
   ᴜʟᴛʀᴏɴʍօʀɛ: `
 Use  *${UltronSitreper.ULTRONIX}tts <text>*  or  *${UltronSitreper.ULTRONIX}tts <text> | <language_code>*  to convert text to speech.

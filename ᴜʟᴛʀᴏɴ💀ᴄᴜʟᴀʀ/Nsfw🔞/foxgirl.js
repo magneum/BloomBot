@@ -7,6 +7,7 @@ const akaneko = require(`akaneko`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
   name: `foxgirl`,
+  commandType: "Nsfw🔞",
   description: `	Girl's that are wannabe foxes, yes`,
   ᴜʟᴛʀᴏɴʍօʀɛ: `
 	Girl's that are wannabe foxes, yes`,

@@ -7,6 +7,7 @@ const akaneko = require(`akaneko`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
   name: `ass`,
+  commandType: "Nsfw🔞",
   description: `	I know you like anime ass~ uwu`,
   ᴜʟᴛʀᴏɴʍօʀɛ: `
 	I know you like anime ass~ uwu`,

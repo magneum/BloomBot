@@ -3,6 +3,7 @@ const UltronSitreper = require(`../../ᴜʟᴛʀᴏɴ/UltronSitreper`);
 const anime = require("anime-actions");
 module.exports = {
   name: `wave`,
+  commandType: "Conversation🎙️",
   description: `	I know you like anime wave`,
   ᴜʟᴛʀᴏɴʍօʀɛ: `
 	I know you like anime wave`,

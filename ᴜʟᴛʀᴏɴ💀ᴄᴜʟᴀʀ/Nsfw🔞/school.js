@@ -7,6 +7,7 @@ const akaneko = require(`akaneko`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
   name: `school`,
+  commandType: "Nsfw🔞",
   description: `School Uniforms!~ Yatta~!`,
   ᴜʟᴛʀᴏɴʍօʀɛ: `
 School Uniforms!~ Yatta~!`,

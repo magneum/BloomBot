@@ -7,6 +7,7 @@ const UltronSitreper = require(`../../ᴜʟᴛʀᴏɴ/UltronSitreper`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
   name: `remove`,
+  commandType: "Administration🐙",
   description: `Module to remove a person from a group.`,
   ᴜʟᴛʀᴏɴʍօʀɛ: `
 Use this module to remove people from a group by tagging them  *${UltronSitreper.ULTRONIX}remove @<person-to-remove>*  or replying to them  *${UltronSitreper.ULTRONIX}remove*${UltronSitreper.ULTRONIX}`,
