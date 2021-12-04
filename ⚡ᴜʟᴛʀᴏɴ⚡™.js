@@ -88,10 +88,9 @@ async function ᴜʟᴛʀᴏɴRunner() {
 ██║   ██║██║     ██║   ██████╔╝██║   ██║██╔██╗ ██║
 ██║   ██║██║     ██║   ██╔══██╗██║   ██║██║╚██╗██║
 ╚██████╔╝███████╗██║   ██║  ██║╚██████╔╝██║ ╚████║
-╚═════╝ ╚══════╝╚═╝   ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝`),
+  ╚═════╝ ╚══════╝╚═╝   ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝`),
       Kolor.yellowBright.bold(
-        `\n=================😈    |  ᴜʟᴛʀᴏɴ  |    😈=================
-🎮ᴜʟᴛʀᴏɴ™ 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..`
+        `\n=================😈    |  ᴜʟᴛʀᴏɴ  |    😈=================`
       )
     );
     await υℓтяσηℓιєηт.sendMessage(
@@ -102,29 +101,36 @@ async function ᴜʟᴛʀᴏɴRunner() {
       MessageType.image,
       {
         mimetype: Mimetype.png,
-        caption: `*⚡𝐔𝐋𝐓𝐑𝐎𝐍™*\n𝐑𝐞𝐚𝐝 𝐁𝐞𝐥𝐨𝐰👇🏽`,
+        caption: `*⚡𝐔𝐋𝐓𝐑𝐎𝐍™ 𝗶𝘀 𝗥𝗲𝗮𝗱𝘆!*
+💡𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..
+
+
+𝗙𝗼𝗿 𝗺𝗼𝗿𝗲 𝗶𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻 𝗿𝗲𝗴𝗮𝗿𝗱𝗶𝗻𝗴 𝗕𝗼𝘁 𝗙𝗼𝗹𝗹𝗼𝘄 𝘁𝗵𝗲𝘀𝗲❣️𝗜𝗺𝗽-𝗟𝗶𝗻𝗸𝘀:
+*🔸ᴡʜᴀᴛꜱᴀᴘᴘ*⇀ https://chat.whatsapp.com/FmMcEeSqZQw85qAkgUs3f5
+*🔸ɢɪᴛʜᴜʙ*⇀ https://github.com/Krakinz
+*🔸ᴅɪꜱᴄᴏʀᴅ*⇀ https://discord.gg/xcFN6NDHEV`,
       }
     );
     await υℓтяσηℓιєηт.sendMessage(
       υℓтяσηℓιєηт.user.jid,
       {
-        buttonText: "𝗖𝗹𝗶𝗰𝗸 𝗛𝗲𝗿𝗲➤  ๑۞๑",
-        description: "All Good To Go Sir!",
+        buttonText: `𝗖𝗹𝗶𝗰𝗸 𝗛𝗲𝗿𝗲➤  ๑۞๑`,
+        description: `All Good To Go Sir!`,
         sections: [
           {
-            title: "*⚡𝐔𝐋𝐓𝐑𝐎𝐍™*",
+            title: `*⚡𝐔𝐋𝐓𝐑𝐎𝐍™*`,
             rows: [
               {
-                title: "⚙️𝐆𝐢𝐭𝐇𝐮𝐛",
+                title: `⚙️𝐆𝐢𝐭𝐇𝐮𝐛`,
                 description: `🔗DEV: https://github.com/Krakinz
                 🔗ULTRON: https://github.com/Krakinz/Ultron`,
-                rowId: "rowid1",
+                rowId: `rowid1`,
               },
               {
-                title: "⚙️𝙂𝙧𝙤𝙪𝙥",
+                title: `⚙️𝙂𝙧𝙤𝙪𝙥`,
                 description: `🔗Whatsapp: https://chat.whatsapp.com/FmMcEeSqZQw85qAkgUs3f5
                 🔗Discord: https://discord.gg/xcFN6NDHEV`,
-                rowId: "rowid2",
+                rowId: `rowid2`,
               },
             ],
           },
