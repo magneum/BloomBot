@@ -115,7 +115,7 @@ module.exports = {
           MessageType.image,
           {
             mimetype: Mimetype.png,
-            caption: "⚡ᴜʟᴛʀᴏɴ⚡™\n𝐑𝐞𝐚𝐝 𝐁𝐞𝐥𝐨𝐰👇🏽‍",
+            caption: "*⚡𝐔𝐋𝐓𝐑𝐎𝐍™*\n𝐑𝐞𝐚𝐝 𝐁𝐞𝐥𝐨𝐰👇🏽‍",
           }
         )
         .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴜʟᴛʀᴏɴ));

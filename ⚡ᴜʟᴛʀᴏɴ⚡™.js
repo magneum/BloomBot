@@ -82,7 +82,7 @@ async function ᴜʟᴛʀᴏɴRunner() {
     // ===============================================================================
     // 🎮ᴜʟᴛʀᴏɴ™ 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..
     // ===============================================================================
-    υℓтяσηℓιєηт.sendMessage(
+    await υℓтяσηℓιєηт.sendMessage(
       υℓтяσηℓιєηт.user.jid,
       {
         url: `https://i.postimg.cc/KcNwHtZt/ltr.png`,
@@ -90,18 +90,36 @@ async function ᴜʟᴛʀᴏɴRunner() {
       MessageType.image,
       {
         mimetype: Mimetype.png,
-        caption: `*⚡ᴜʟᴛʀᴏɴ⚡™*
-*𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..*
-
-⚙️𝐆𝐢𝐭𝐇𝐮𝐛🧀
-🔗DEV: https://github.com/Krakinz
-🔗ULTRON: https://github.com/Krakinz/Ultron
-
-
-⚙️𝙂𝙧𝙤𝙪𝙥
-🔗Whatsapp: https://chat.whatsapp.com/FmMcEeSqZQw85qAkgUs3f5
-🔗Discord: https://discord.gg/xcFN6NDHEV`,
+        caption: `*⚡𝐔𝐋𝐓𝐑𝐎𝐍™*\n𝐑𝐞𝐚𝐝 𝐁𝐞𝐥𝐨𝐰👇🏽`,
       }
+    );
+    await υℓтяσηℓιєηт.sendMessage(
+      υℓтяσηℓιєηт.user.jid,
+      {
+        buttonText: "𝗖𝗹𝗶𝗰𝗸 𝗛𝗲𝗿𝗲➤  ๑۞๑",
+        description: "All Good To Go Sir!",
+        sections: [
+          {
+            title: "*⚡𝐔𝐋𝐓𝐑𝐎𝐍™*",
+            rows: [
+              {
+                title: "⚙️𝐆𝐢𝐭𝐇𝐮𝐛",
+                description: `🔗DEV: https://github.com/Krakinz
+                🔗ULTRON: https://github.com/Krakinz/Ultron`,
+                rowId: "rowid1",
+              },
+              {
+                title: "⚙️𝙂𝙧𝙤𝙪𝙥",
+                description: `🔗Whatsapp: https://chat.whatsapp.com/FmMcEeSqZQw85qAkgUs3f5
+                🔗Discord: https://discord.gg/xcFN6NDHEV`,
+                rowId: "rowid2",
+              },
+            ],
+          },
+        ],
+        listType: 1,
+      },
+      MessageType.listMessage
     );
     console.log(
       Kolor.yellowBright.bold(
@@ -242,28 +260,6 @@ async function ᴜʟᴛʀᴏɴRunner() {
       `goodbye`,
       `setdp`,
       `tagall`,
-      `spam`,
-      `ass`,
-      `bdsm`,
-      `blowjob`,
-      `cum`,
-      `doujin`,
-      `feet`,
-      `femdom`,
-      `foxgirl`,
-      `glasses`,
-      `hentai`,
-      `maid`,
-      `masturbation`,
-      `netorare`,
-      `orgy`,
-      `panties`,
-      `pussy`,
-      `school`,
-      `tentacles`,
-      `thighs`,
-      `uniform`,
-      `yuri`,
     ];
     if (ᴜʟᴛʀᴏɴ.isCmd && !ᴜʟᴛʀᴏɴ.fromMe && !ᴜʟᴛʀᴏɴ.isSenderSUDO) {
       if (UltronSitreper.PRIVACY === `public`) {
