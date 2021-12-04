@@ -25,17 +25,17 @@ const env = {
     process.env.CURRENT_WEATHER_API_KEY === undefined
       ? `6729ac2b2e2bb5c686ff427a2f06df92`
       : process.env.CURRENT_WEATHER_API_KEY,
-  SQLL: (process.env.DATABASE_URL =
+  DATABASE_URL: (process.env.DATABASE_URL =
     process.env.DATABASE_URL === undefined
       ? `./ᴜʟᴛʀᴏɴ.db`
       : process.env.DATABASE_URL),
   POSTQL:
-    process.env.SQLL === `./ᴜʟᴛʀᴏɴ.db`
+    process.env.DATABASE_URL === `./ᴜʟᴛʀᴏɴ.db`
       ? new Sequelize({
           dialect: `sqlite`,
-          storage: process.env.SQLL,
+          storage: process.env.DATABASE_URL,
         })
-      : new Sequelize(process.env.SQLL, {
+      : new Sequelize(process.env.DATABASE_URL, {
           dialect: `postgres`,
           protocol: `postgres`,
           dialectOptions: {
