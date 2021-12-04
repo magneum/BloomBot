@@ -184,7 +184,7 @@ async function ᴜʟᴛʀᴏɴRunner() {
         const height = 720;
         const canvas = createCanvas(width, height);
         const context = canvas.getContext(`2d`);
-        context.fillStyle = `#555555`;
+        context.fillStyle = `#252525`;
         context.fillRect(0, 0, width, height);
         context.font = `bold 50pt Lobster`;
         context.textAlign = `center`;
@@ -215,7 +215,7 @@ async function ᴜʟᴛʀᴏɴRunner() {
             MessageType.image,
             {
               mimetype: Mimetype.png,
-              caption: `➛* ${Fetched.message}`,
+              caption: `\n${Fetched.message}`,
             }
           );
         });
