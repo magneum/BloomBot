@@ -18,12 +18,24 @@
 * So many commands that will blow up the every-day use of boring whatsapp.
 ```
 
+# 📜 𝕻𝖗𝖊𝖗𝖊𝖖𝖚𝖎𝖘𝖎𝖙𝖊𝖘
+```sh
+𝐈𝐟 𝐮𝐬𝐢𝐧𝐠 𝐇𝐞𝐫𝐨𝐤𝐮:
+        ULTRON: Put Your Ultron Session Code.
+        ULTRONIX: Put Any Preferred PREFIX
+        CCD: Put Your Country Code
+        OCR: Put your Optical Character Recognition API key
+        WAPI: Put your API key for weather  
+```
+
 
 # 𝕯𝖊𝖕𝖑𝖔𝖞𝖒𝖊𝖓𝖙
-```
-Bot is still under development...by December 15/2021
-Heroku Deployment will be added
-```
+- ꜰɪʀꜱᴛ ꜰᴏʀᴋ ᴀɴᴅ ꜱᴛᴀʀ ᴛʜᴇ ʀᴇᴘᴏ
+- 
+- [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Krakinz/Ultron.git) 𝘌𝘯𝘢𝘣𝘭𝘦 𝘵𝘩𝘦 𝘥𝘺𝘯𝘰 𝘪𝘯 𝘩𝘦𝘳𝘰𝘬𝘶 𝘪𝘧 𝘶 𝘥𝘦𝘱𝘭𝘰𝘺𝘦𝘥 𝘶𝘳 𝘣𝘰𝘵 𝘪𝘯 𝘏𝘦𝘳𝘰𝘬𝘶
+
+- [![Generic badge](https://img.shields.io/badge/Replit_ULTRON_Session-blue.svg)](https://replit.com/@Krakinzkon/Ultron)
+
 
 
 # 𝕴𝖓𝖘𝖕𝖎𝖗𝖆𝖙𝖎𝖔𝖓

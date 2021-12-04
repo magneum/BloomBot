@@ -25,8 +25,10 @@ const env = {
     process.env.CURRENT_WEATHER_API_KEY === undefined
       ? `6729ac2b2e2bb5c686ff427a2f06df92`
       : process.env.CURRENT_WEATHER_API_KEY,
-  SQLL: (process.env.SQLL =
-    process.env.SQLL === undefined ? `./ᴜʟᴛʀᴏɴ.db` : process.env.SQLL),
+  SQLL: (process.env.DATABASE_URL =
+    process.env.DATABASE_URL === undefined
+      ? `./ᴜʟᴛʀᴏɴ.db`
+      : process.env.DATABASE_URL),
   POSTQL:
     process.env.SQLL === `./ᴜʟᴛʀᴏɴ.db`
       ? new Sequelize({
@@ -43,7 +45,7 @@ const env = {
             },
           },
         }),
-  PRIVACY: process.env.PRIVACY === undefined ? `private` : process.env.PRIVACY,
+  PRIVACY: process.env.PRIVACY === undefined ? `public` : process.env.PRIVACY,
   SUDO: process.env.SUDO === undefined ? `` : process.env.SUDO,
 };
 module.exports = env;
