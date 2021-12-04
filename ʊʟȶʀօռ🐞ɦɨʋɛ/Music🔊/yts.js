@@ -30,9 +30,7 @@ Get the first 10 recommendations from YouTube with their authorname, timestamp a
 .imdb <movie/series>`,
           }
         )
-        .catch((cᴇʀʀᴏʀ) => {
-          ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-        });
+        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
       return;
     }
     const FetchedLink = await yts(Arc.join(` `));
@@ -55,9 +53,7 @@ Get the first 10 recommendations from YouTube with their authorname, timestamp a
           `No videos could be found.`,
           MessageType.text
         )
-        .catch((cᴇʀʀᴏʀ) => {
-          ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-        });
+        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
       return;
     }
     const c = Arc.join(` `);
@@ -75,9 +71,7 @@ Get the first 10 recommendations from YouTube with their authorname, timestamp a
 *🔎: ${c.toUpperCase()}*\n\n` + Fetched,
         }
       )
-      .catch((cᴇʀʀᴏʀ) => {
-        ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-      });
+      .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
   },
 };
 // ===============================================================================

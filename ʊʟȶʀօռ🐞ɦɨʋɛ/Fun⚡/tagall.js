@@ -19,9 +19,7 @@ Use this module to tag everyone in the group by either replying to a message or 
             `module only applicable in a group chat.`,
             MessageType.text
           )
-          .catch((cᴇʀʀᴏʀ) => {
-            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-          });
+          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
         return;
       }
       let members = [];
@@ -40,9 +38,7 @@ Use this module to tag everyone in the group by either replying to a message or 
               mentionedJid: members,
             },
           })
-          .catch((cᴇʀʀᴏʀ) => {
-            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-          });
+          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
         return;
       }
       if (Arc.length) {
@@ -52,9 +48,7 @@ Use this module to tag everyone in the group by either replying to a message or 
               mentionedJid: members,
             },
           })
-          .catch((cᴇʀʀᴏʀ) => {
-            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-          });
+          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
         return;
       }
 
@@ -64,9 +58,7 @@ Use this module to tag everyone in the group by either replying to a message or 
             mentionedJid: members,
           },
         })
-        .catch((cᴇʀʀᴏʀ) => {
-          ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-        });
+        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
     } catch (cᴇʀʀᴏʀ) {
       υℓтяσηℓιєηт.sendMessage(
         ʊʟȶʀօռ.chatId,

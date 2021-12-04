@@ -27,9 +27,7 @@ jokes`,
       console.log(dadJoke);
       await υℓтяσηℓιєηт
         .sendMessage(ʊʟȶʀօռ.chatId, dadJoke, MessageType.text)
-        .catch((cᴇʀʀᴏʀ) => {
-          ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-        });
+        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
     } catch (err) {
       console.log(err);
     }

@@ -18,9 +18,7 @@ Use this module to send a group invite link in the group or personally to someon
           `module only applicable in a group chat.`,
           MessageType.text
         )
-        .catch((cᴇʀʀᴏʀ) => {
-          ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-        });
+        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
       return;
     }
     if (!ʊʟȶʀօռ.isBotGroupAdmin) {
@@ -30,9 +28,7 @@ Use this module to send a group invite link in the group or personally to someon
           `Sorry, don't have permission to do so since I am not an admin.`,
           MessageType.text
         )
-        .catch((cᴇʀʀᴏʀ) => {
-          ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-        });
+        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
       return;
     }
     const code = await υℓтяσηℓιєηт.groupInviteCode(ʊʟȶʀօռ.chatId);
@@ -43,18 +39,14 @@ Use this module to send a group invite link in the group or personally to someon
           `https://chat.whatsapp.com/` + code,
           MessageType.text
         )
-        .catch((cᴇʀʀᴏʀ) => {
-          ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-        });
+        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
       υℓтяσηℓιєηт
         .sendMessage(
           ʊʟȶʀօռ.chatId,
           `Invite link sent in DM, please check.`,
           MessageType.text
         )
-        .catch((cᴇʀʀᴏʀ) => {
-          ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-        });
+        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
       return;
     }
     υℓтяσηℓιєηт
@@ -63,9 +55,7 @@ Use this module to send a group invite link in the group or personally to someon
         `https://chat.whatsapp.com/` + code,
         MessageType.text
       )
-      .catch((cᴇʀʀᴏʀ) => {
-        ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-      });
+      .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
     return;
   },
 };

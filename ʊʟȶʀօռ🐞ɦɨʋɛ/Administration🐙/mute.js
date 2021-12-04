@@ -19,9 +19,7 @@ Mute non-admin members of a group. You can even specify the duration using s, m 
             `*${UltronSitreper.ULTRONIX}mute*  module is only applicable in a group chat.`,
             MessageType.text
           )
-          .catch((cᴇʀʀᴏʀ) => {
-            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-          });
+          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
         return;
       }
       if (!ʊʟȶʀօռ.isBotGroupAdmin) {
@@ -31,9 +29,7 @@ Mute non-admin members of a group. You can even specify the duration using s, m 
             `Sorry, dont have the permission to do so since I am not an admin.`,
             MessageType.text
           )
-          .catch((cᴇʀʀᴏʀ) => {
-            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-          });
+          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
         return;
       }
       if (Arc.length === 0) {
@@ -53,18 +49,14 @@ Mute non-admin members of a group. You can even specify the duration using s, m 
 .imdb <movie/series>`,
             }
           )
-          .catch((cᴇʀʀᴏʀ) => {
-            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-          });
+          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
         υℓтяσηℓιєηт
           .sendMessage(
             ʊʟȶʀօռ.chatId,
             `Chat permissions changed to  *admin only*${UltronSitreper.ULTRONIX}`,
             MessageType.text
           )
-          .catch((cᴇʀʀᴏʀ) => {
-            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-          });
+          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
         return;
       } else if (isNaN(Arc[0])) {
         υℓтяσηℓιєηт
@@ -73,9 +65,7 @@ Mute non-admin members of a group. You can even specify the duration using s, m 
             `Please mention how long you want to mute the chat. For example,\n*${UltronSitreper.ULTRONIX}mute 10 s*  to mute for 10 seconds.`,
             MessageType.text
           )
-          .catch((cᴇʀʀᴏʀ) => {
-            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-          });
+          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
         return;
       }
 
@@ -96,9 +86,7 @@ Mute non-admin members of a group. You can even specify the duration using s, m 
 
       υℓтяσηℓιєηт
         .groupSettingChange(ʊʟȶʀօռ.chatId, GroupSettingChange.messageSend, true)
-        .catch((cᴇʀʀᴏʀ) => {
-          ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-        });
+        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
       υℓтяσηℓιєηт
         .sendMessage(
           ʊʟȶʀօռ.chatId,
@@ -109,9 +97,7 @@ Mute non-admin members of a group. You can even specify the duration using s, m 
             `.`,
           MessageType.text
         )
-        .catch((cᴇʀʀᴏʀ) => {
-          ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-        });
+        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
       setTimeout(() => {
         υℓтяσηℓιєηт
           .groupSettingChange(
@@ -119,18 +105,14 @@ Mute non-admin members of a group. You can even specify the duration using s, m 
             GroupSettingChange.messageSend,
             false
           )
-          .catch((cᴇʀʀᴏʀ) => {
-            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-          });
+          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
         υℓтяσηℓιєηт
           .sendMessage(
             ʊʟȶʀօռ.chatId,
             `Chat permissions changed to  *all group members*${UltronSitreper.ULTRONIX}`,
             MessageType.text
           )
-          .catch((cᴇʀʀᴏʀ) => {
-            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-          });
+          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
       }, duration);
     } catch (cᴇʀʀᴏʀ) {
       await υℓтяσηℓιєηт.sendMessage(

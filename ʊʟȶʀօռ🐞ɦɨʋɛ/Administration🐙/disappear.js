@@ -20,9 +20,7 @@ Toggle disappearing messages by using module *${UltronSitreper.ULTRONIX}dissapea
             `module only applicable in a group chat.`,
             MessageType.text
           )
-          .catch((cᴇʀʀᴏʀ) => {
-            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-          });
+          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
         return;
       }
       if (ʊʟȶʀօռ.isGroup) {
@@ -48,9 +46,7 @@ Toggle disappearing messages by using module *${UltronSitreper.ULTRONIX}dissapea
       }
       await υℓтяσηℓιєηт
         .toggleDisappearingMessages(ʊʟȶʀօռ.chatId, time)
-        .catch((cᴇʀʀᴏʀ) => {
-          ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-        });
+        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
       return;
     } catch (cᴇʀʀᴏʀ) {
       await υℓтяσηℓιєηт.sendMessage(

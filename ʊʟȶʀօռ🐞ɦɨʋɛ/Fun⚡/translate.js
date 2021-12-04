@@ -19,9 +19,7 @@ If you do not specify a language, it defaults to <English class=''></English>`,
         `Translating. Please wait...`,
         MessageType.text
       )
-      .catch((cᴇʀʀᴏʀ) => {
-        ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-      });
+      .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
     try {
       var text = ``;
       var language = ``;
@@ -42,9 +40,7 @@ If you do not specify a language, it defaults to <English class=''></English>`,
 .imdb <movie/series>`,
             }
           )
-          .catch((cᴇʀʀᴏʀ) => {
-            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-          });
+          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
         return;
       }
       if (!ʊʟȶʀօռ.isReply) {
@@ -75,9 +71,7 @@ If you do not specify a language, it defaults to <English class=''></English>`,
             `Please reply to a text message.`,
             MessageType.text
           )
-          .catch((cᴇʀʀᴏʀ) => {
-            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-          });
+          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
       }
       if (text.length > 4000) {
         await υℓтяσηℓιєηт
@@ -88,9 +82,7 @@ If you do not specify a language, it defaults to <English class=''></English>`,
             ),
             MessageType.text
           )
-          .catch((cᴇʀʀᴏʀ) => {
-            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-          });
+          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
       }
       await translate(text, {
         to: language,
@@ -106,9 +98,7 @@ If you do not specify a language, it defaults to <English class=''></English>`,
             MessageType.text
           );
         })
-        .catch((cᴇʀʀᴏʀ) => {
-          ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-        });
+        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
     } catch (cᴇʀʀᴏʀ) {
       υℓтяσηℓιєηт.sendMessage(
         ʊʟȶʀօռ.chatId,

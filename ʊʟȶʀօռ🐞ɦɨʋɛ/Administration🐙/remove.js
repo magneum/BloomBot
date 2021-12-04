@@ -19,9 +19,7 @@ Use this module to remove people from a group by tagging them  *${UltronSitreper
             `module only applicable in a group chat.`,
             MessageType.text
           )
-          .catch((cᴇʀʀᴏʀ) => {
-            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-          });
+          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
         return;
       }
       if (!ʊʟȶʀօռ.isBotGroupAdmin) {
@@ -31,9 +29,7 @@ Use this module to remove people from a group by tagging them  *${UltronSitreper
             `Sorry, don't have permission to do so since I am not an admin.`,
             MessageType.text
           )
-          .catch((cᴇʀʀᴏʀ) => {
-            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-          });
+          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
         return;
       }
       let owner = ʊʟȶʀօռ.chatId.split(`-`)[0];
@@ -109,9 +105,7 @@ Use this module to remove people from a group by tagging them  *${UltronSitreper
             `Reply to the person you want to remove or tag them.\n\nFor instance,  *${UltronSitreper.ULTRONIX}remove @<person-to-remove>*  or reply using  *${UltronSitreper.ULTRONIX}remove*${UltronSitreper.ULTRONIX}`,
             MessageType.text
           )
-          .catch((cᴇʀʀᴏʀ) => {
-            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-          });
+          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
         return;
       }
       if (Arc[0][0] == `@`) {
@@ -168,9 +162,7 @@ Use this module to remove people from a group by tagging them  *${UltronSitreper
           `Reply to the person you want to remove or tag them.\n\nFor instance,  *${UltronSitreper.ULTRONIX}remove @<person-to-remove>*  or reply using  *${UltronSitreper.ULTRONIX}remove*${UltronSitreper.ULTRONIX}`,
           MessageType.text
         )
-        .catch((cᴇʀʀᴏʀ) => {
-          ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-        });
+        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
     } catch (cᴇʀʀᴏʀ) {
       await υℓтяσηℓιєηт.sendMessage(
         ʊʟȶʀօռ.chatId,

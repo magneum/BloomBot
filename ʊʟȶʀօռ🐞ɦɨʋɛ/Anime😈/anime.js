@@ -15,9 +15,7 @@ Get Anime Informations From MyAnimeList`,
     if (Arc.length === 0) {
       await υℓтяσηℓιєηт
         .sendMessage(ʊʟȶʀօռ.chatId, `Enter Anime Name`, MessageType.text)
-        .catch((cᴇʀʀᴏʀ) => {
-          ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-        });
+        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
       return;
     }
     const name = Arc.join(` `);
@@ -57,9 +55,7 @@ Get Anime Informations From MyAnimeList`,
             caption: AnimeInfos,
           }
         )
-        .catch((cᴇʀʀᴏʀ) => {
-          ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-        });
+        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
     });
   },
 };

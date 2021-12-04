@@ -39,9 +39,7 @@ Use this module to download audio of your choice either by specifying a YouTube 
     }
     await υℓтяσηℓιєηт
       .sendMessage(ʊʟȶʀօռ.chatId, `Downloading your song...`, MessageType.text)
-      .catch((cᴇʀʀᴏʀ) => {
-        ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-      });
+      .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
 
     // Task starts here
     var Id = ` `;
@@ -69,9 +67,7 @@ Use this module to download audio of your choice either by specifying a YouTube 
             `Could not find the song you entered. Check whether the link or keyword entered is correct.`,
             MessageType.text
           )
-          .catch((cᴇʀʀᴏʀ) => {
-            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-          });
+          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
         return;
       }
       Id = song[0].url;

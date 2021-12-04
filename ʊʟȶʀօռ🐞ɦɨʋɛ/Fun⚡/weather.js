@@ -44,9 +44,7 @@ Obtain weather info by entering the city name.`,
               thumbnail: null,
             }
           )
-          .catch((cᴇʀʀᴏʀ) => {
-            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-          });
+          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
       }
       if (Arc.length === 0 || Arc.length < 1) {
         await υℓтяσηℓιєηт.sendMessage(ʊʟȶʀօռ.chatId, "❌", MessageType.text);
@@ -65,9 +63,7 @@ Obtain weather info by entering the city name.`,
 .imdb <movie/series>`,
             }
           )
-          .catch((cᴇʀʀᴏʀ) => {
-            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-          });
+          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
         return;
       } else if (
         Arc[Arc.length - 1] === `tom` ||
@@ -79,9 +75,7 @@ Obtain weather info by entering the city name.`,
             `Processing data. Please wait...`,
             MessageType.text
           )
-          .catch((cᴇʀʀᴏʀ) => {
-            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-          });
+          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
         Arc[Arc.length - 1] = ``;
         var cityName = Arc.join(` `);
         const unit = `metric`;
@@ -225,9 +219,7 @@ TRY LATER!
             `Processing data. Please wait...`,
             MessageType.text
           )
-          .catch((cᴇʀʀᴏʀ) => {
-            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-          });
+          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
         var cityName = Arc.join(` `);
         const unit = `metric`;
 

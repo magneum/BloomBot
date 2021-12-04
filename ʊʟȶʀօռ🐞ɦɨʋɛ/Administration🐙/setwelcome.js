@@ -22,9 +22,7 @@ The welcome option can be disabled but saved using the   *${UltronSitreper.ULTRO
             `This module is only applicable in a group chat.`,
             MessageType.text
           )
-          .catch((cᴇʀʀᴏʀ) => {
-            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-          });
+          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
         return;
       }
       var Msg = await Greetings.getMessage(ʊʟȶʀօռ.chatId, `welcome`);

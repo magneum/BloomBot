@@ -30,9 +30,7 @@ Use this module to paste your text to a pastebin (NEKOBIN). Enter text with the 
 .imdb <movie/series>`,
             }
           )
-          .catch((cᴇʀʀᴏʀ) => {
-            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-          });
+          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
         return;
       }
       await υℓтяσηℓιєηт
@@ -41,9 +39,7 @@ Use this module to paste your text to a pastebin (NEKOBIN). Enter text with the 
           `Pasting text to nekobin. Please wait...`,
           MessageType.text
         )
-        .catch((cᴇʀʀᴏʀ) => {
-          ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-        });
+        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
       if (!ʊʟȶʀօռ.isReply) {
         var json = {
           content: ʊʟȶʀօռ.body.replace(
@@ -66,9 +62,7 @@ Use this module to paste your text to a pastebin (NEKOBIN). Enter text with the 
       neko_url = `https://nekobin.com/` + json.result.key;
       υℓтяσηℓιєηт
         .sendMessage(ʊʟȶʀօռ.chatId, neko_url, MessageType.text)
-        .catch((cᴇʀʀᴏʀ) => {
-          ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-        });
+        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
     } catch (cᴇʀʀᴏʀ) {
       if (json.result == undefined) {
         υℓтяσηℓιєηт.sendMessage(

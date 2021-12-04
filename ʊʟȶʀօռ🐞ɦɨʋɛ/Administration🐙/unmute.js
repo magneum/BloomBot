@@ -19,9 +19,7 @@ Unmute non-admin members of a group`,
             `*${UltronSitreper.ULTRONIX}unmute*  module is only applicable for a group chat.`,
             MessageType.text
           )
-          .catch((cᴇʀʀᴏʀ) => {
-            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-          });
+          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
         return;
       }
       if (!ʊʟȶʀօռ.isBotGroupAdmin) {
@@ -31,9 +29,7 @@ Unmute non-admin members of a group`,
             `Sorry, dont have the permissions to do so since I am not an admin.`,
             MessageType.text
           )
-          .catch((cᴇʀʀᴏʀ) => {
-            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-          });
+          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
         return;
       }
       υℓтяσηℓιєηт
@@ -42,18 +38,14 @@ Unmute non-admin members of a group`,
           GroupSettingChange.messageSend,
           false
         )
-        .catch((cᴇʀʀᴏʀ) => {
-          ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-        });
+        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
       υℓтяσηℓιєηт
         .sendMessage(
           ʊʟȶʀօռ.chatId,
           `Chat permissions changed to  *all group members*${UltronSitreper.ULTRONIX}`,
           MessageType.text
         )
-        .catch((cᴇʀʀᴏʀ) => {
-          ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-        });
+        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
     } catch (cᴇʀʀᴏʀ) {
       await υℓтяσηℓιєηт.sendMessage(
         ʊʟȶʀօռ.chatId,

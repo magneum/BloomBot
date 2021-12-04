@@ -21,9 +21,7 @@ Use this module to change the group's icon. Tag image with the module or send th
             `This module is only applicable in a group chat.`,
             MessageType.text
           )
-          .catch((cᴇʀʀᴏʀ) => {
-            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-          });
+          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
         return;
       }
       if (!ʊʟȶʀօռ.isImage && !ʊʟȶʀօռ.isReplyImage) {
@@ -33,9 +31,7 @@ Use this module to change the group's icon. Tag image with the module or send th
             `Please reply or caption the image you want to make the group icon.`,
             MessageType.text
           )
-          .catch((cᴇʀʀᴏʀ) => {
-            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-          });
+          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
         return;
       }
       var update = await υℓтяσηℓιєηт
@@ -44,9 +40,7 @@ Use this module to change the group's icon. Tag image with the module or send th
           `Chnaging icon/group image...`,
           MessageType.text
         )
-        .catch((cᴇʀʀᴏʀ) => {
-          ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-        });
+        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
       var imageId = chat.key.id;
       const fileName = `./ᴛᴇᴍᴘ/change_pic` + imageId;
       if (ʊʟȶʀօռ.isImage) {
@@ -57,9 +51,7 @@ Use this module to change the group's icon. Tag image with the module or send th
             },
             fileName
           )
-          .catch((cᴇʀʀᴏʀ) => {
-            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-          });
+          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
       } else {
         var filePath = await υℓтяσηℓιєηт
           .downloadAndSaveMediaMessage(
@@ -69,9 +61,7 @@ Use this module to change the group's icon. Tag image with the module or send th
             },
             fileName
           )
-          .catch((cᴇʀʀᴏʀ) => {
-            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-          });
+          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
       }
 
       const imagePath = `./ᴛᴇᴍᴘ/image-` + imageId + `.png`;

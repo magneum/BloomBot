@@ -18,9 +18,7 @@ This module can be used to check if the bot is currently online or not.`,
 Use the   *${UltronSitreper.ULTRONIX}help*   module to get a list of plugins that will make your WhatsApp experience much easier.`,
         MessageType.text
       )
-      .catch((cᴇʀʀᴏʀ) => {
-        ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-      });
+      .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
   },
 };
 // ===============================================================================

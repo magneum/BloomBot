@@ -19,9 +19,7 @@ Use this module to demote a person from admin by entering the person's mobile nu
             `This module is only applicable for group chats.`,
             MessageType.text
           )
-          .catch((cᴇʀʀᴏʀ) => {
-            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-          });
+          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
         return;
       }
       if (!ʊʟȶʀօռ.isBotGroupAdmin) {
@@ -31,9 +29,7 @@ Use this module to demote a person from admin by entering the person's mobile nu
             `Sorry, dont have the permission to do so since I am not an admin.`,
             MessageType.text
           )
-          .catch((cᴇʀʀᴏʀ) => {
-            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-          });
+          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
         return;
       }
       if (!ʊʟȶʀօռ.isReply && typeof Arc[0] == `undefined`) {
@@ -43,9 +39,7 @@ Use this module to demote a person from admin by entering the person's mobile nu
             `Reply/tag/enter contact number of the person to be demoted.`,
             MessageType.text
           )
-          .catch((cᴇʀʀᴏʀ) => {
-            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-          });
+          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
         return;
       }
 
@@ -134,9 +128,7 @@ Approved Syntax:
             `*` + contact + ` is the owner of the group*`,
             MessageType.text
           )
-          .catch((cᴇʀʀᴏʀ) => {
-            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-          });
+          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
         return;
       }
 
@@ -174,9 +166,7 @@ Approved Syntax:
 
         υℓтяσηℓιєηт
           .sendMessage(ʊʟȶʀօռ.chatId, `Person not found.`, MessageType.text)
-          .catch((cᴇʀʀᴏʀ) => {
-            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-          });
+          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
         return;
       }
       return;

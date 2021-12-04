@@ -98,9 +98,7 @@ Get the github profile by module  *${UltronSitreper.ULTRONIX}github <user>*  or 
               thumbnail: null,
             }
           )
-          .catch((cᴇʀʀᴏʀ) => {
-            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-          });
+          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
       } catch (cᴇʀʀᴏʀ) {
         υℓтяσηℓιєηт.sendMessage(ʊʟȶʀօռ.chatId, caption, MessageType.text);
       }

@@ -21,14 +21,10 @@ Use this module to convert any image from your chat to a sticker. Reply to an im
             `Your sticker is downloading. Please wait...`,
             MessageType.text
           )
-          .catch((cᴇʀʀᴏʀ) => {
-            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-          });
+          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
         const filePath = await υℓтяσηℓιєηт
           .downloadAndSaveMediaMessage(replyChat, `./ᴛᴇᴍᴘ/ct-` + imageId)
-          .catch((cᴇʀʀᴏʀ) => {
-            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-          });
+          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
         const stickerPath = `./ᴛᴇᴍᴘ/st-` + imageId + `.webp`;
         if (ʊʟȶʀօռ.type === `image` || ʊʟȶʀօռ.isReplyImage) {
           ffmpeg(filePath)
@@ -159,9 +155,7 @@ Use this module to convert any image from your chat to a sticker. Reply to an im
             `Please tag a valid image/video/gif message to convert to sticker.`,
             MessageType.text
           )
-          .catch((cᴇʀʀᴏʀ) => {
-            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-          });
+          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
       }
       return;
     } catch (CYΣЯЯ) {

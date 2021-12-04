@@ -19,9 +19,7 @@ You can also reply to a text message with syntax  *${UltronSitreper.ULTRONIX}tr 
         `Converting text to speech. Please wait...`,
         MessageType.text
       )
-      .catch((cᴇʀʀᴏʀ) => {
-        ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-      });
+      .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
     let text = ``;
     let langCode = `en`;
     for (var i = 0; i < Arc.length; i++) {
@@ -34,9 +32,7 @@ You can also reply to a text message with syntax  *${UltronSitreper.ULTRONIX}tr 
     if (Arc.length === 0) {
       await υℓтяσηℓιєηт
         .sendMessage(ʊʟȶʀօռ.chatId, "❌", MessageType.text)
-        .catch((cᴇʀʀᴏʀ) => {
-          ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-        });
+        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
       await υℓтяσηℓιєηт
         .sendMessage(
           ʊʟȶʀօռ.chatId,
@@ -52,9 +48,7 @@ You can also reply to a text message with syntax  *${UltronSitreper.ULTRONIX}tr 
 .imdb <movie/series>`,
           }
         )
-        .catch((cᴇʀʀᴏʀ) => {
-          ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-        });
+        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
       return;
     }
     if (text.length > 200) {
@@ -66,9 +60,7 @@ You can also reply to a text message with syntax  *${UltronSitreper.ULTRONIX}tr 
           ),
           MessageType.text
         )
-        .catch((cᴇʀʀᴏʀ) => {
-          ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-        });
+        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
     } else {
       try {
         const url = googleTTS.getAudioUrl(text, {
@@ -88,9 +80,7 @@ You can also reply to a text message with syntax  *${UltronSitreper.ULTRONIX}tr 
               mimetype: Mimetype.mp4Audio,
             }
           )
-          .catch((cᴇʀʀᴏʀ) => {
-            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-          });
+          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
       } catch (cᴇʀʀᴏʀ) {
         υℓтяσηℓιєηт.sendMessage(
           ʊʟȶʀօռ.chatId,

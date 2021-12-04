@@ -22,9 +22,7 @@ meme.EXTENDED_DESCRIPTION`,
               mimetype: Mimetype.jpeg,
             }
           )
-          .catch((cᴇʀʀᴏʀ) => {
-            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-          });
+          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
       } catch (e) {
         console.log(e);
         await υℓтяσηℓιєηт
@@ -38,9 +36,7 @@ meme.EXTENDED_DESCRIPTION`,
               mimetype: Mimetype.png,
             }
           )
-          .catch((cᴇʀʀᴏʀ) => {
-            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-          });
+          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
       }
     } catch (err) {
       console.log(err);

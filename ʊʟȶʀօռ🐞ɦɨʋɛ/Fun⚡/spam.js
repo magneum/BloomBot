@@ -14,9 +14,7 @@ module.exports = {
     if (isNaN(count)) {
       await υℓтяσηℓιєηт
         .sendMessage(ʊʟȶʀօռ.chatId, `Invalid count`, MessageType.text)
-        .catch((cᴇʀʀᴏʀ) => {
-          ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-        });
+        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
       return 0;
     }
     if (count > 0) {
@@ -24,9 +22,7 @@ module.exports = {
     } else {
       await υℓтяσηℓιєηт
         .sendMessage(ʊʟȶʀօռ.chatId, `Count can't be zero.`, MessageType.text)
-        .catch((cᴇʀʀᴏʀ) => {
-          ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-        });
+        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
       return 0;
     }
     if (Arc.length) {
@@ -34,9 +30,7 @@ module.exports = {
       for (let i = 0; i < count; i++)
         await υℓтяσηℓιєηт
           .sendMessage(ʊʟȶʀօռ.chatId, text, MessageType.text)
-          .catch((cᴇʀʀᴏʀ) => {
-            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-          });
+          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
     } else {
       await υℓтяσηℓιєηт
         .sendMessage(
@@ -44,9 +38,7 @@ module.exports = {
           `No text found for spamming!!! Please read !help spam.`,
           MessageType.text
         )
-        .catch((cᴇʀʀᴏʀ) => {
-          ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-        });
+        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
     }
   },
 };

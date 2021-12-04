@@ -22,9 +22,7 @@ For example- *${UltronSitreper.ULTRONIX}promote 9861212121*`,
             `This module is only applicable in a group chat.`,
             MessageType.text
           )
-          .catch((cᴇʀʀᴏʀ) => {
-            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-          });
+          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
         return;
       }
       if (!ʊʟȶʀօռ.isBotGroupAdmin) {
@@ -34,9 +32,7 @@ For example- *${UltronSitreper.ULTRONIX}promote 9861212121*`,
             `Sorry, dont have the permission to do so since I am not an admin.`,
             MessageType.text
           )
-          .catch((cᴇʀʀᴏʀ) => {
-            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-          });
+          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
         return;
       }
       if (!ʊʟȶʀօռ.isReply && typeof Arc[0] == `undefined`) {
@@ -46,9 +42,7 @@ For example- *${UltronSitreper.ULTRONIX}promote 9861212121*`,
             `Reply/tag/enter contact number of the person to be promoted.`,
             MessageType.text
           )
-          .catch((cᴇʀʀᴏʀ) => {
-            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-          });
+          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
         return;
       }
       const reply = chat.message.extendedTextMessage;
@@ -184,9 +178,7 @@ For example- *${UltronSitreper.ULTRONIX}promote 9861212121*`,
             `Person is not in the group.`,
             MessageType.text
           )
-          .catch((cᴇʀʀᴏʀ) => {
-            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-          });
+          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
         return;
       }
     } catch (cᴇʀʀᴏʀ) {

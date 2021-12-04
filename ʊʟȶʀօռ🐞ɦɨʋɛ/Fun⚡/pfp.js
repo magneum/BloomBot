@@ -26,9 +26,7 @@ Get the profile picture of the group in a group conversation or the profile pict
             thumbnail: null,
           }
         )
-        .catch((cᴇʀʀᴏʀ) => {
-          ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-        });
+        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
     } catch (cᴇʀʀᴏʀ) {
       if (cᴇʀʀᴏʀ.status == 404) {
         υℓтяσηℓιєηт.sendMessage(

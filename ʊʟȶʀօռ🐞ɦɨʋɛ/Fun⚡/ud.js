@@ -34,9 +34,7 @@ Use this module to find the meaning of a word in Urban Dictionary. Enter  *${Ult
 .imdb <movie/series>`,
             }
           )
-          .catch((cᴇʀʀᴏʀ) => {
-            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-          });
+          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
         return;
       } else {
         text = Arc.join(` `);
@@ -68,9 +66,7 @@ Use this module to find the meaning of a word in Urban Dictionary. Enter  *${Ult
         result.thumbs_down;
       await υℓтяσηℓιєηт
         .sendMessage(ʊʟȶʀօռ.chatId, msg, MessageType.text)
-        .catch((cᴇʀʀᴏʀ) => {
-          ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-        });
+        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
     } catch (cᴇʀʀᴏʀ) {
       υℓтяσηℓιєηт.sendMessage(
         ʊʟȶʀօռ.chatId,

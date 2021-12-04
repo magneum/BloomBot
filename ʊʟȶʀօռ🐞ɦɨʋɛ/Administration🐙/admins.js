@@ -19,9 +19,7 @@ Tag admins of a group (either as a reply to another message or a direct tag).`,
             `*${UltronSitreper.ULTRONIX}admins*  module is only applicable for group chats.`,
             MessageType.text
           )
-          .catch((cᴇʀʀᴏʀ) => {
-            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-          });
+          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
         return;
       }
 
@@ -38,9 +36,7 @@ Tag admins of a group (either as a reply to another message or a direct tag).`,
               mentionedJid: ʊʟȶʀօռ.groupAdmins,
             },
           })
-          .catch((cᴇʀʀᴏʀ) => {
-            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-          });
+          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
         return;
       }
 
@@ -55,9 +51,7 @@ Tag admins of a group (either as a reply to another message or a direct tag).`,
             mentionedJid: ʊʟȶʀօռ.groupAdmins,
           },
         })
-        .catch((cᴇʀʀᴏʀ) => {
-          ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-        });
+        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
     } catch (cᴇʀʀᴏʀ) {
       await υℓтяσηℓιєηт.sendMessage(
         ʊʟȶʀօռ.chatId,

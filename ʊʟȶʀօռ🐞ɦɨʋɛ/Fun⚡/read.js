@@ -104,9 +104,7 @@ Use this module to obtain text from an image by  *${UltronSitreper.ULTRONIX}spac
             `Please tag a valid message.`,
             MessageType.text
           )
-          .catch((cᴇʀʀᴏʀ) => {
-            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-          });
+          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
         return;
       }, 300000);
       await υℓтяσηℓιєηт
@@ -115,9 +113,7 @@ Use this module to obtain text from an image by  *${UltronSitreper.ULTRONIX}spac
           `Please tag a valid message.`,
           MessageType.text
         )
-        .catch((cᴇʀʀᴏʀ) => {
-          ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-        });
+        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
     } catch (CYΣЯЯ) {
       υℓтяσηℓιєηт.sendMessage(
         ʊʟȶʀօռ.chatId,

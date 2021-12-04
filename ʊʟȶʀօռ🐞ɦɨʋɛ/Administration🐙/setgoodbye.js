@@ -16,9 +16,7 @@ A goodbye message will be sent when any member leaves the group. It can be an im
       if (!ʊʟȶʀօռ.isGroup) {
         υℓтяσηℓιєηт
           .sendMessage(ʊʟȶʀօռ.chatId, `This is not a group`, MessageType.text)
-          .catch((cᴇʀʀᴏʀ) => {
-            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-          });
+          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
         return;
       }
       if (Arc.length == 0) {

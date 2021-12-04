@@ -32,9 +32,7 @@ Use this module to find the lyrics of a song by using  *${UltronSitreper.ULTRONI
 .imdb <movie/series>`,
           }
         )
-        .catch((cᴇʀʀᴏʀ) => {
-          ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-        });
+        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
       return;
     } else {
       song = Arc.join(` `);
@@ -45,9 +43,7 @@ Use this module to find the lyrics of a song by using  *${UltronSitreper.ULTRONI
         `Searching. Please wait....`,
         MessageType.text
       )
-      .catch((cᴇʀʀᴏʀ) => {
-        ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-      });
+.catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
     let API = await got(`https://some-random-api.ml/lyrics/?title=${song}`);
     let APIData = JSON.parse(API.body);
     let caption =
@@ -69,9 +65,7 @@ Use this module to find the lyrics of a song by using  *${UltronSitreper.ULTRONI
           caption: caption,
         }
       )
-      .catch((cᴇʀʀᴏʀ) => {
-        ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-      });
+.catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
   },
 };
 // ===============================================================================

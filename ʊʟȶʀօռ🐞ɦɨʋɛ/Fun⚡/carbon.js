@@ -83,9 +83,7 @@ _verminal_  *|*  _vscode_
 _yeti_  *|*  _zenburn_`,
             }
           )
-          .catch((cᴇʀʀᴏʀ) => {
-            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-          });
+          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
         return;
       } else if (ʊʟȶʀօռ.isReply && !ʊʟȶʀօռ.replyMessage) {
         await υℓтяσηℓιєηт
@@ -94,9 +92,7 @@ _yeti_  *|*  _zenburn_`,
             `*☢️ʊʟȶʀօռ*\n\nThe replied message should be text.`,
             MessageType.text
           )
-          .catch((cᴇʀʀᴏʀ) => {
-            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-          });
+          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
         return;
       } else if (ʊʟȶʀօռ.isReply) {
         code = ʊʟȶʀօռ.replyMessage;
@@ -168,9 +164,7 @@ Do note that theme names are  *case sensitive*${UltronSitreper.ULTRONIX}`,
             `*☢️ʊʟȶʀօռ*\n\nConverting your text into a code snippet. Please wait...`,
             MessageType.text
           )
-          .catch((cᴇʀʀᴏʀ) => {
-            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-          });
+          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
         const carbon = new Carbon.createCarbon()
           .setCode(code)
           .setPrettify(true)
@@ -183,9 +177,7 @@ Do note that theme names are  *case sensitive*${UltronSitreper.ULTRONIX}`,
 *<< Here's your carbon image! >>*
 Colour Scheme: {}`.format(themeInput),
           })
-          .catch((cᴇʀʀᴏʀ) => {
-            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ʊʟȶʀօռ));
-          });
+          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ʊʟȶʀօռ));
       } catch (cᴇʀʀᴏʀ) {
         throw cᴇʀʀᴏʀ;
       }
