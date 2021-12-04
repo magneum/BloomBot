@@ -12,14 +12,18 @@ exports.catch = async (error, υℓтяσηℓιєηт, ᴜʟᴛʀᴏɴ) => {
     MessageType.image,
     {
       mimetype: Mimetype.png,
-      caption: `⚡𝐔𝐥𝐭𝐫𝐨𝐧™⚡ 𝐝𝐢𝐝𝐧'𝐭 𝐰𝐨𝐫𝐤 𝐚𝐬 𝐞𝐱𝐩𝐞𝐜𝐭𝐞𝐝❗
+      caption: `⚡𝐔𝐥𝐭𝐫𝐨𝐧™⚡ ᴅɪᴅ ɴᴏᴛ ᴡᴏʀᴋ ᴀꜱ ᴇxᴘᴇᴄᴛᴇᴅ❗
+
+⚠️𝗘𝗿𝗿𝗼𝗿: 
+➛ ${error}
+
       
-⚙️𝙐𝙥𝙙𝙖𝙩𝙚 𝙂𝙧𝙤𝙪𝙥
-🔗Whatsapp: https://chat.whatsapp.com/FmMcEeSqZQw85qAkgUs3f5
-🔗Discord: https://discord.gg/xcFN6NDHEV
-      
-⚠️𝗘𝗿𝗿𝗼𝗿
-${error}`,
+*↱   🐞RΣPӨЯƬ   ↰*
+_🔸ᴡʜᴀᴛꜱᴀᴘᴘ_
+⇀ https://chat.whatsapp.com/FmMcEeSqZQw85qAkgUs3f5
+
+_🔸ᴅɪꜱᴄᴏʀᴅ_
+⇀ https://discord.gg/xcFN6NDHEV`,
     }
   );
   await υℓтяσηℓιєηт.sendMessage(
@@ -30,14 +34,18 @@ ${error}`,
     MessageType.image,
     {
       mimetype: Mimetype.png,
-      caption: `⚡𝐔𝐥𝐭𝐫𝐨𝐧™⚡ 𝐝𝐢𝐝𝐧'𝐭 𝐰𝐨𝐫𝐤 𝐚𝐬 𝐞𝐱𝐩𝐞𝐜𝐭𝐞𝐝❗
+      caption: `⚡𝐔𝐥𝐭𝐫𝐨𝐧™⚡ ᴅɪᴅ ɴᴏᴛ ᴡᴏʀᴋ ᴀꜱ ᴇxᴘᴇᴄᴛᴇᴅ❗
 
-⚙️𝙐𝙥𝙙𝙖𝙩𝙚 𝙂𝙧𝙤𝙪𝙥
-🔗Whatsapp: https://chat.whatsapp.com/FmMcEeSqZQw85qAkgUs3f5
-🔗Discord: https://discord.gg/xcFN6NDHEV
+⚠️𝗘𝗿𝗿𝗼𝗿: 
+➛ ${error}
+
       
-⚠️𝗘𝗿𝗿𝗼𝗿
-${error}`,
+*↱   🐞RΣPӨЯƬ   ↰*
+_🔸ᴡʜᴀᴛꜱᴀᴘᴘ_
+⇀ https://chat.whatsapp.com/FmMcEeSqZQw85qAkgUs3f5
+
+_🔸ᴅɪꜱᴄᴏʀᴅ_
+⇀ https://discord.gg/xcFN6NDHEV`,
     }
   );
 };
