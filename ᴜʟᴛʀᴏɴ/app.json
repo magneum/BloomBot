@@ -1,0 +1,41 @@
+{
+    "logo": "https://i.postimg.cc/KcNwHtZt/ltr.png",
+    "name": "⚡ᴜʟᴛʀᴏɴ⚡™",
+    "repository": "https://github.com/Krakinz/Ultron.git",
+    "description": "𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..",
+    "env": {
+        "ULTRON": {
+            "description": "Put Your Ultron Session Code.",
+            "required": true,
+            "value": "get it from https://replit.com/@Krakinzkon/Ultron"
+        },
+        "ULTRONIX": {
+            "description": "Put Any Preferred PREFIX",
+            "required": true,
+            "value": "."
+        },
+        "CCD": {
+            "description": "Put Your Country Code",
+            "required": true,
+            "value": "91"
+        },
+        "OCR": {
+            "description": "Put your Optical Character Recognition API key",
+            "required": true,
+            "value": "get it from https://ocr.space/"
+        },
+        "WAPI": {
+            "description": "Put your API key for weather",
+            "required": true,
+            "value": "get it from https://openweathermap.org/"
+        }
+    },
+    "addons": [
+        {
+            "plan": "heroku-postgresql",
+            "options": {
+                "version": "13"
+            }
+        }
+    ]
+}
