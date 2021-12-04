@@ -8,7 +8,7 @@ const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const UltronSitreper = require(`./ᴜʟᴛʀᴏɴ/UltronSitreper`);
 const ᴜʟᴛʀᴏɴֆʏռօք = require(`./ᴜʟᴛʀᴏɴ/UltronCOrex`);
 var randomMC = require(`random-material-color`);
-const gitPull = require("./ᴜʟᴛʀᴏɴ/ᴜʟᴛʀᴏɴauto");
+const gitPull = require(`./ᴜʟᴛʀᴏɴ/ᴜʟᴛʀᴏɴɢɪᴛ`);
 const ɠɠᴜʟᴛʀᴏɴ = require(`./ᴜʟᴛʀᴏɴ/ɠɠᴜʟᴛʀᴏɴ`);
 const ᴜʟᴛʀᴏɴǟքք = require(`./ᴜʟᴛʀᴏɴ/helper`);
 const clientult = require(`./ᴜʟᴛʀᴏɴ/ɠɠʊ`);
@@ -25,7 +25,7 @@ var υℓтяσηℓιєηт = ᴜʟᴛʀᴏɴֆʏռօք.WhatsApp;
 async function ᴜʟᴛʀᴏɴRunner() {
   υℓтяσηℓιєηт.logger.level = `error`;
   var UltronSitrep = new Map();
-  console.log(Kolor.yellowBright.bold("[INFO] Checking for updates..."));
+  console.log(Kolor.yellowBright.bold(`[INFO] Checking for updates...`));
   await gitPull();
   try {
     var session = ᴜʟᴛʀᴏɴֆʏռօք.ultronreignite(UltronSitreper.ULTRON);
