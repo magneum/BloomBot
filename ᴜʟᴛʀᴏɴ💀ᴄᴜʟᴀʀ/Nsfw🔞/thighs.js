@@ -16,7 +16,7 @@ module.exports = {
         .sendMessage(
           ᴜʟᴛʀᴏɴ.logGroup,
           {
-            url: `../../ᴜʟᴛʀᴏɴ/ᴜʟᴛʀᴏɴ-error.png`,
+            url: `https://i.postimg.cc/yxsh4dMV/error.png`,
           },
           MessageType.image,
           {
