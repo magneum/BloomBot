@@ -51,7 +51,7 @@ const env = {
           },
         }),
   PRIVACY: process.env.PRIVACY === undefined ? `public` : process.env.PRIVACY,
-  SUDO: process.env.SUDO === undefined ? `` : process.env.SUDO,
+  SUDO: process.env.KING === undefined ? `` : process.env.KING,
 };
 module.exports = env;
 // ===============================================================================
