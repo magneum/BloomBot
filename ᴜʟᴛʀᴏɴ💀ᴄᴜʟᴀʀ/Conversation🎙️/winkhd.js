@@ -17,8 +17,7 @@ module.exports = {
   name: `winkhd`,
   commandType: "Conversation🎙️",
   description: `I know you like anime wink`,
-  ᴜʟᴛʀᴏɴʍօʀɛ: `
-I know you like anime wink`,
+  ᴜʟᴛʀᴏɴʍօʀɛ: `I know you like anime wink`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     let image = await API.sfw.wink();
     if (image.image === undefined) {

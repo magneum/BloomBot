@@ -9,8 +9,7 @@ module.exports = {
   name: `blowjob`,
   commandType: "Nsfw🔞",
   description: `	Basically an image of a girl sucking on a sharp blade!`,
-  ᴜʟᴛʀᴏɴʍօʀɛ: `
-	Basically an image of a girl sucking on a sharp blade!`,
+  ᴜʟᴛʀᴏɴʍօʀɛ: `	Basically an image of a girl sucking on a sharp blade!`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     try {
       await υℓтяσηℓιєηт.sendMessage(

@@ -9,21 +9,11 @@ module.exports = {
   name: `help`,
   commandType: "Information📜",
   description: `ɢᴇᴛ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅ ʟɪꜱᴛ ᴀɴᴅ ɪɴꜰᴏ ᴏɴ ᴍᴏᴅᴜʟᴇꜱ`,
-  ᴜʟᴛʀᴏɴʍօʀɛ: `
-This module is used to get info on other modules and their triggers.`,
-  async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
+  ᴜʟᴛʀᴏɴʍօʀɛ: `This module is used to get info on other modules and their triggers.`,
+  async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc, UltronSitrep) {
     var UltronRegex = new RegExp(UltronSitreper.ULTRONIX, "g");
     var Ultronf = /\/\^\[(.*)+\]\/\g/g.exec(UltronRegex)[1];
-    υℓтяσηℓιєηт
-      .sendMessage(
-        ᴜʟᴛʀᴏɴ.chatId,
-        {
-          url: `https://i.postimg.cc/KcNwHtZt/ltr.pn`,
-        },
-        MessageType.image,
-        {
-          mimetype: Mimetype.png,
-          caption: `*|🎮|  ᴜʟᴛʀᴏɴ™  |🎮|*
+    const ULTHELP = `*|🎮|  ᴜʟᴛʀᴏɴ™  |🎮|*
 𝙐𝙨𝙚 𝙒𝙝𝙖𝙩𝙨𝙖𝙥𝙥 𝙏𝙝𝙚 𝘼𝙙𝙫𝙖𝙣𝙘𝙚 𝙒𝙖𝙮!
 
 *••••••••••••••••➛  ❓𝗜𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻*
@@ -120,11 +110,64 @@ This module is used to get info on other modules and their triggers.`,
 *${Ultronf}uniform -* ᴍɪʟɪᴛᴀʀʏ, ᴋᴏɴʙɪɴɪ, ᴡᴏʀᴋ, ɴᴜʀꜱᴇ ᴜɴɪꜰᴏʀᴍꜱ, ᴇᴛᴄ!~ ꜱᴇxʏ~
 *${Ultronf}yuri -* ɢɪʀʟꜱ ᴏɴ ɢɪʀʟꜱ, ᴀɴᴅ ɢɪʀʟ'ꜱ ᴏɴʟʏ!
 
-*𝐆𝐢𝐭𝐇𝐮𝐛🧀https://github.com/Krakinz*`,
-        }
-      )
-      .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴜʟᴛʀᴏɴ));
-    return;
+*𝐆𝐢𝐭𝐇𝐮𝐛🧀https://github.com/Krakinz*`;
+    // ===============================================================================
+    // 🎮ᴜʟᴛʀᴏɴ™ 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..
+    // ===============================================================================
+    if (!Arc[0]) {
+      return υℓтяσηℓιєηт
+        .sendMessage(
+          ᴜʟᴛʀᴏɴ.chatId,
+          {
+            url: `https://i.postimg.cc/KcNwHtZt/ltr.png`,
+          },
+          MessageType.image,
+          {
+            mimetype: Mimetype.png,
+            caption: ULTHELP,
+          }
+        )
+        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴜʟᴛʀᴏɴ));
+    }
+    var ᴜʟᴛʀᴏɴʍօ = "⤥ 💡𝐂𝐨𝐦𝐦𝐚𝐧𝐝\n";
+    var module = UltronSitrep.get(Arc[0]);
+    if (module) {
+      ᴜʟᴛʀᴏɴʍօ += `⤤ *${
+        (Ultronf, module.name === undefined ? "Null" : module.name)
+      }*
+
+⤥ 🧀𝐂𝐚𝐭𝐞𝐠𝐨𝐫𝐲 
+⤤ *${
+        (module.commandType,
+        module.commandType === undefined ? "Null" : module.commandType)
+      }*
+
+⤥ 🖊️𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧 
+⤤ *${
+        (module.description,
+        module.description === undefined ? "Null" : module.description)
+      }*
+
+⤥ 📜𝐄𝐱𝐭𝐫𝐚 𝐈𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧 
+⤤ ${
+        (module.ᴜʟᴛʀᴏɴʍօʀɛ,
+        module.ᴜʟᴛʀᴏɴʍօʀɛ === undefined ? "Null" : module.ᴜʟᴛʀᴏɴʍօʀɛ)
+      }
+`;
+      return υℓтяσηℓιєηт
+        .sendMessage(
+          ᴜʟᴛʀᴏɴ.chatId,
+          {
+            url: `https://i.postimg.cc/KcNwHtZt/ltr.png`,
+          },
+          MessageType.image,
+          {
+            mimetype: Mimetype.png,
+            caption: ᴜʟᴛʀᴏɴʍօ,
+          }
+        )
+        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴜʟᴛʀᴏɴ));
+    }
   },
 };
 // ===============================================================================

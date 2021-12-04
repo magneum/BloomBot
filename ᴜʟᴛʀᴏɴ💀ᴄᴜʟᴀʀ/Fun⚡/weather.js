@@ -11,8 +11,7 @@ module.exports = {
   name: `weather`,
   commandType: "Fun⚡",
   description: `Get weather data of a city`,
-  ᴜʟᴛʀᴏɴʍօʀɛ: `
-Obtain weather info by entering the city name.`,
+  ᴜʟᴛʀᴏɴʍօʀɛ: `Obtain weather info by entering the city name.`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     try {
       const weatherTypes = {

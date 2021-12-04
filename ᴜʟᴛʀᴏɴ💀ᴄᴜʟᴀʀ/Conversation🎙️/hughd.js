@@ -17,8 +17,7 @@ module.exports = {
   name: `hughd`,
   commandType: "Conversation🎙️",
   description: `I know you like anime hug`,
-  ᴜʟᴛʀᴏɴʍօʀɛ: `
-I know you like anime hug`,
+  ᴜʟᴛʀᴏɴʍօʀɛ: `I know you like anime hug`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     let image = await API.sfw.hug();
     if (image.image === undefined) {

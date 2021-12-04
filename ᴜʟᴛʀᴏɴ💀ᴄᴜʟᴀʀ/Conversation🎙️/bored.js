@@ -5,8 +5,7 @@ module.exports = {
   name: `bored`,
   commandType: "Conversation🎙️",
   description: `	I know you like anime bored`,
-  ᴜʟᴛʀᴏɴʍօʀɛ: `
-	I know you like anime bored`,
+  ᴜʟᴛʀᴏɴʍօʀɛ: `	I know you like anime bored`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, args) {
     try {
       await υℓтяσηℓιєηт.sendMessage(

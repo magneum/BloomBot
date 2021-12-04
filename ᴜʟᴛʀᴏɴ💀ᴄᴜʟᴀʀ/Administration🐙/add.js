@@ -10,11 +10,11 @@ module.exports = {
   commandType: "Administration🐙",
   description: `Module to add a person to a group.`,
   ᴜʟᴛʀᴏɴʍօʀɛ: `
-  Add new people to a group by entering their mobile number as per the format mentioned below.
-  1. XXXXXXXXXX
-  2. YYXXXXXXXXXX ()
-  For example -
-  *${UltronSitreper.ULTRONIX}add 9861212121*`,
+Add new people to a group by entering their mobile number as per the format mentioned below.
+1. XXXXXXXXXX
+2. YYXXXXXXXXXX ()
+For example -
+*${UltronSitreper.ULTRONIX}add 9861212121*`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     try {
       if (!ᴜʟᴛʀᴏɴ.isGroup) {
@@ -48,9 +48,9 @@ module.exports = {
           {
             mimetype: Mimetype.jpeg,
             caption: `*⚠️Seems like someone forgot to give Movie/Series name!*
-  
-  *Usage Example*
-  .imdb <movie/series>`,
+
+*Usage Example*
+.imdb <movie/series>`,
           }
         );
         return;
@@ -118,13 +118,13 @@ module.exports = {
           .sendMessage(
             ᴜʟᴛʀᴏɴ.chatId,
             `ꜱᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ ᴡʀᴏɴɢ.ʜᴇʀᴇ ᴀʀᴇ ꜱᴏᴍᴇ ʟᴏɢꜱ ꜱɪɴᴄᴇ ᴡʜᴇɴ ᴛʜᴇ ʙᴏᴛ ᴡᴀꜱ ɴᴏᴛ ʀᴇꜱᴘᴏɴᴅɪɴɢ ᴀꜱ ᴇxᴘᴇᴄᴛᴇᴅ.
-  VERIFY NUMBER \  NOT IN WHATSAPP!
-  ⚠️𝗘𝗿𝗿𝗼𝗿
-  • ${cᴇʀʀᴏʀ}
-  
-  
-  💡𝗖𝗼𝗺𝗺𝗮𝗻𝗱 • ${ᴜʟᴛʀᴏɴ.moduleName}
-  🎮𝗜𝘁 𝘄𝗮𝘀 𝗣𝗠? • ${ᴜʟᴛʀᴏɴ.isPm}`,
+VERIFY NUMBER \  NOT IN WHATSAPP!
+⚠️𝗘𝗿𝗿𝗼𝗿
+• ${cᴇʀʀᴏʀ}
+
+
+💡𝗖𝗼𝗺𝗺𝗮𝗻𝗱 • ${ᴜʟᴛʀᴏɴ.moduleName}
+🎮𝗜𝘁 𝘄𝗮𝘀 𝗣𝗠? • ${ᴜʟᴛʀᴏɴ.isPm}`,
             MessageType.text
           )
           .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴜʟᴛʀᴏɴ));
@@ -132,10 +132,10 @@ module.exports = {
       υℓтяσηℓιєηт.sendMessage(
         ᴜʟᴛʀᴏɴ.chatId,
         `*🎮ᴜʟᴛʀᴏɴ™* 𝐝𝐢𝐝𝐧'𝐭 𝐰𝐨𝐫𝐤 𝐚𝐬 𝐞𝐱𝐩𝐞𝐜𝐭𝐞𝐝❗
-  
-  💡𝗛𝗲𝗿𝗲 𝗶𝘀 𝗮 𝘀𝗺𝗮𝗹𝗹 𝗲𝗿𝗿𝗼𝗿 𝗿𝗲𝗽𝗼𝗿𝘁 𝗮𝗻𝗱 𝘁𝗼 𝗹𝗼𝗴 𝘁𝗵𝗲 𝗿𝗲𝗽𝗼𝗿𝘁 𝘂𝘀𝗲 ${UltronSitreper.ULTRONIX}𝗿𝗲𝗽𝗼𝗿𝘁
-  ⚠️𝗘𝗿𝗿𝗼𝗿
-  • ${cᴇʀʀᴏʀ}`,
+
+💡𝗛𝗲𝗿𝗲 𝗶𝘀 𝗮 𝘀𝗺𝗮𝗹𝗹 𝗲𝗿𝗿𝗼𝗿 𝗿𝗲𝗽𝗼𝗿𝘁 𝗮𝗻𝗱 𝘁𝗼 𝗹𝗼𝗴 𝘁𝗵𝗲 𝗿𝗲𝗽𝗼𝗿𝘁 𝘂𝘀𝗲 ${UltronSitreper.ULTRONIX}𝗿𝗲𝗽𝗼𝗿𝘁
+⚠️𝗘𝗿𝗿𝗼𝗿
+• ${cᴇʀʀᴏʀ}`,
         MessageType.text
       );
     }

@@ -9,8 +9,7 @@ module.exports = {
   name: `hentai`,
   commandType: "Nsfw🔞",
   description: `	Sends a random vanilla hentai imageURL~`,
-  ᴜʟᴛʀᴏɴʍօʀɛ: `
-	Sends a random vanilla hentai imageURL~`,
+  ᴜʟᴛʀᴏɴʍօʀɛ: `	Sends a random vanilla hentai imageURL~`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     try {
       await υℓтяσηℓιєηт.sendMessage(

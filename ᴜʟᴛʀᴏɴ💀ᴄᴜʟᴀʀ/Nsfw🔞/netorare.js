@@ -9,8 +9,7 @@ module.exports = {
   name: `netorare`,
   commandType: "Nsfw🔞",
   description: `Wow, I won't even question your fetishes.`,
-  ᴜʟᴛʀᴏɴʍօʀɛ: `
-Wow, I won't even question your fetishes.`,
+  ᴜʟᴛʀᴏɴʍօʀɛ: `Wow, I won't even question your fetishes.`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     try {
       await υℓтяσηℓιєηт.sendMessage(

@@ -10,8 +10,7 @@ module.exports = {
   name: `github`,
   commandType: "Fun⚡",
   description: `Find Github Profile`,
-  ᴜʟᴛʀᴏɴʍօʀɛ: `
-Get the github profile by module  *${UltronSitreper.ULTRONIX}github <user>*  or replying  *${UltronSitreper.ULTRONIX}github* .`,
+  ᴜʟᴛʀᴏɴʍօʀɛ: `Get the github profile by module  *${UltronSitreper.ULTRONIX}github <user>*  or replying  *${UltronSitreper.ULTRONIX}github* .`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     try {
       let user_name = ``;

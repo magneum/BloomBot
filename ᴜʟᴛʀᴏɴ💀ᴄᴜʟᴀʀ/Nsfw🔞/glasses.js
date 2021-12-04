@@ -9,8 +9,7 @@ module.exports = {
   name: `glasses`,
   commandType: "Nsfw🔞",
   description: `	Girls that wear glasses, uwu~`,
-  ᴜʟᴛʀᴏɴʍօʀɛ: `
-	Girls that wear glasses, uwu~`,
+  ᴜʟᴛʀᴏɴʍօʀɛ: `	Girls that wear glasses, uwu~`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     try {
       await υℓтяσηℓιєηт.sendMessage(

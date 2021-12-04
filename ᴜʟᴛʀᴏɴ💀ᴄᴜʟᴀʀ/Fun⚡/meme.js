@@ -6,8 +6,7 @@ module.exports = {
   name: `meme`,
   commandType: "Fun⚡",
   description: `meme.DESCRIPTION`,
-  ᴜʟᴛʀᴏɴʍօʀɛ: `
-meme.EXTENDED_DESCRIPTION`,
+  ᴜʟᴛʀᴏɴʍօʀɛ: `meme.EXTENDED_DESCRIPTION`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     try {
       var num = Math.floor(Math.random() * (500 - 1) + 1);

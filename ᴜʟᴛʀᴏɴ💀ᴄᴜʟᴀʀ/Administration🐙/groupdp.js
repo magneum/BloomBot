@@ -11,8 +11,7 @@ module.exports = {
   name: `groupdp`,
   commandType: "Administration🐙",
   description: `Change the group icon`,
-  ᴜʟᴛʀᴏɴʍօʀɛ: `
-Use this module to change the group's icon. Tag image with the module or send the desired image with caption as the module`,
+  ᴜʟᴛʀᴏɴʍօʀɛ: `Use this module to change the group's icon. Tag image with the module or send the desired image with caption as the module`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     try {
       if (!ᴜʟᴛʀᴏɴ.isGroup) {

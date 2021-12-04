@@ -9,8 +9,7 @@ module.exports = {
   name: `unblock`,
   commandType: "Administration🐙",
   description: `Unblock contact`,
-  ᴜʟᴛʀᴏɴʍօʀɛ: `
-Remove number from the blocklist.`,
+  ᴜʟᴛʀᴏɴʍօʀɛ: `Remove number from the blocklist.`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     try {
       if (!ᴜʟᴛʀᴏɴ.isReply && typeof Arc[0] == `undefined`) {

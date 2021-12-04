@@ -20,8 +20,7 @@ module.exports = {
   name: `joke`,
   commandType: "Fun⚡",
   description: `jokes`,
-  ᴜʟᴛʀᴏɴʍօʀɛ: `
-jokes`,
+  ᴜʟᴛʀᴏɴʍօʀɛ: `jokes`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     try {
       const dadJoke = await getDadjoke();

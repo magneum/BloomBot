@@ -9,8 +9,7 @@ module.exports = {
   name: `doujin`,
   commandType: "Nsfw🔞",
   description: `	Sends a random doujin page imageURL!`,
-  ᴜʟᴛʀᴏɴʍօʀɛ: `
-	Sends a random doujin page imageURL!`,
+  ᴜʟᴛʀᴏɴʍօʀɛ: `	Sends a random doujin page imageURL!`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     try {
       await υℓтяσηℓιєηт.sendMessage(

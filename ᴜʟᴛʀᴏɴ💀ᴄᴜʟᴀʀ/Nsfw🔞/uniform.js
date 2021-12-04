@@ -9,8 +9,7 @@ module.exports = {
   name: `uniform`,
   commandType: "Nsfw🔞",
   description: `	Military, Konbini, Work, Nurse Uniforms, etc!~ Sexy~`,
-  ᴜʟᴛʀᴏɴʍօʀɛ: `
-	Military, Konbini, Work, Nurse Uniforms, etc!~ Sexy~`,
+  ᴜʟᴛʀᴏɴʍօʀɛ: `	Military, Konbini, Work, Nurse Uniforms, etc!~ Sexy~`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     try {
       await υℓтяσηℓιєηт.sendMessage(

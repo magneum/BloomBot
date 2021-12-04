@@ -11,8 +11,7 @@ module.exports = {
   name: `sticker`,
   commandType: "Fun⚡",
   description: `Module to convert image to sticker`,
-  ᴜʟᴛʀᴏɴʍօʀɛ: `
-Use this module to convert any image from your chat to a sticker. Reply to an image message with the module  *${UltronSitreper.ULTRONIX}sticker*  to convert and send that image as a sticker.`,
+  ᴜʟᴛʀᴏɴʍօʀɛ: `Use this module to convert any image from your chat to a sticker. Reply to an image message with the module  *${UltronSitreper.ULTRONIX}sticker*  to convert and send that image as a sticker.`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     try {
       const convertToSticker = async (imageId, replyChat) => {

@@ -10,8 +10,7 @@ module.exports = {
   name: `read`,
   commandType: "Fun⚡",
   description: `Optical Character Recognition`,
-  ᴜʟᴛʀᴏɴʍօʀɛ: `
-Use this module to obtain text from an image by  *${UltronSitreper.ULTRONIX}space*  module.`,
+  ᴜʟᴛʀᴏɴʍօʀɛ: `Use this module to obtain text from an image by  *${UltronSitreper.ULTRONIX}space*  module.`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     try {
       if (ᴜʟᴛʀᴏɴ.isImage) {

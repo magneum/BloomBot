@@ -17,8 +17,7 @@ module.exports = {
   name: `punch`,
   commandType: "Conversation🎙️",
   description: `I know you like anime punch`,
-  ᴜʟᴛʀᴏɴʍօʀɛ: `
-I know you like anime punch`,
+  ᴜʟᴛʀᴏɴʍօʀɛ: `I know you like anime punch`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     let {
       image

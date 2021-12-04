@@ -10,8 +10,7 @@ module.exports = {
   name: `imdb`,
   commandType: "Fun⚡",
   description: `Search anything on IMDB`,
-  ᴜʟᴛʀᴏɴʍօʀɛ: `
-google`,
+  ᴜʟᴛʀᴏɴʍօʀɛ: `google`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     if (Arc.length === 0) {
       await υℓтяσηℓιєηт.sendMessage(ᴜʟᴛʀᴏɴ.chatId, "❌", MessageType.text);

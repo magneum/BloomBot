@@ -9,8 +9,7 @@ module.exports = {
   name: `block`,
   commandType: "Administration🐙",
   description: `Block contact`,
-  ᴜʟᴛʀᴏɴʍօʀɛ: `
-Add the number to blocklist. You can reply to the person in group / pm or use .block <number>.`,
+  ᴜʟᴛʀᴏɴʍօʀɛ: `Add the number to blocklist. You can reply to the person in group / pm or use .block <number>.`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     try {
       if (!ᴜʟᴛʀᴏɴ.isReply && typeof Arc[0] == `undefined`) {

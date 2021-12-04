@@ -9,8 +9,7 @@ module.exports = {
   name: `masturbation`,
   commandType: "Nsfw🔞",
   description: `Solo Queue in CSGO!Lol`,
-  ᴜʟᴛʀᴏɴʍօʀɛ: `
-Solo Queue in CSGO!Lol`,
+  ᴜʟᴛʀᴏɴʍօʀɛ: `Solo Queue in CSGO!Lol`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     try {
       await υℓтяσηℓιєηт.sendMessage(

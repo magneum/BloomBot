@@ -9,8 +9,7 @@ module.exports = {
   name: `school`,
   commandType: "Nsfw🔞",
   description: `School Uniforms!~ Yatta~!`,
-  ᴜʟᴛʀᴏɴʍօʀɛ: `
-School Uniforms!~ Yatta~!`,
+  ᴜʟᴛʀᴏɴʍօʀɛ: `School Uniforms!~ Yatta~!`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     try {
       await υℓтяσηℓιєηт.sendMessage(

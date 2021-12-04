@@ -9,8 +9,7 @@ module.exports = {
   name: `unmute`,
   commandType: "Administration🐙",
   description: `Unmute group chat`,
-  ᴜʟᴛʀᴏɴʍօʀɛ: `
-Unmute non-admin members of a group`,
+  ᴜʟᴛʀᴏɴʍօʀɛ: `Unmute non-admin members of a group`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     try {
       if (!ᴜʟᴛʀᴏɴ.isGroup) {

@@ -9,8 +9,7 @@ module.exports = {
   name: `feet`,
   commandType: "Nsfw🔞",
   description: `	So you like smelly feet huh?`,
-  ᴜʟᴛʀᴏɴʍօʀɛ: `
-	So you like smelly feet huh?`,
+  ᴜʟᴛʀᴏɴʍօʀɛ: `	So you like smelly feet huh?`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     try {
       await υℓтяσηℓιєηт.sendMessage(

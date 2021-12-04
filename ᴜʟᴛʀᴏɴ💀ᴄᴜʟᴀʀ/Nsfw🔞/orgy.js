@@ -9,8 +9,7 @@ module.exports = {
   name: `orgy`,
   commandType: "Nsfw🔞",
   description: `	Group Lewd Acts`,
-  ᴜʟᴛʀᴏɴʍօʀɛ: `
-	Group Lewd Acts`,
+  ᴜʟᴛʀᴏɴʍօʀɛ: `	Group Lewd Acts`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     try {
       await υℓтяσηℓιєηт.sendMessage(

@@ -10,8 +10,7 @@ module.exports = {
   name: `ud`,
   commandType: "Fun⚡",
   description: `Urban Dictionary`,
-  ᴜʟᴛʀᴏɴʍօʀɛ: `
-Use this module to find the meaning of a word in Urban Dictionary. Enter  *${UltronSitreper.ULTRONIX}ud*  module.`,
+  ᴜʟᴛʀᴏɴʍօʀɛ: `Use this module to find the meaning of a word in Urban Dictionary. Enter  *${UltronSitreper.ULTRONIX}ud*  module.`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     try {
       var text = ``;

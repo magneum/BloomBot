@@ -9,8 +9,7 @@ module.exports = {
   name: `tentacles`,
   commandType: "Nsfw🔞",
   description: `	I'm sorry but, why do they look like intestines?`,
-  ᴜʟᴛʀᴏɴʍօʀɛ: `
-	I'm sorry but, why do they look like intestines?`,
+  ᴜʟᴛʀᴏɴʍօʀɛ: `	I'm sorry but, why do they look like intestines?`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     try {
       await υℓтяσηℓιєηт.sendMessage(

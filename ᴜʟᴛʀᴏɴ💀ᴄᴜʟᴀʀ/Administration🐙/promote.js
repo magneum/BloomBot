@@ -9,8 +9,7 @@ module.exports = {
   name: `promote`,
   commandType: "Administration🐙",
   description: `Promote a member to admin`,
-  ᴜʟᴛʀᴏɴʍօʀɛ: `
-Use this module to promote a member to admin. You can enter the person's mobile number as per the format below. Valid Syntaxes -
+  ᴜʟᴛʀᴏɴʍօʀɛ: `Use this module to promote a member to admin. You can enter the person's mobile number as per the format below. Valid Syntaxes -
 1. XXXXXXXXXX
 2. YYXXXXXXXXXX ()
 For example- *${UltronSitreper.ULTRONIX}promote 9861212121*`,
