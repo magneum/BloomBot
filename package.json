@@ -1,6 +1,9 @@
 {
     "name": "ultron",
     "main": "⚡ᴜʟᴛʀᴏɴ⚡™.js",
+    "engines": {
+        "node": ">=17.x"
+      },
     "dependencies": {
         "@adiwajshing/baileys": "github:adiwajshing/baileys",
         "@ffmpeg-installer/ffmpeg": "^1.1.0",
