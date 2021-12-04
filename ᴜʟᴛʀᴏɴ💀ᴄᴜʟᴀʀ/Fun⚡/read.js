@@ -17,7 +17,7 @@ module.exports = {
           message: chat.message,
         };
         var imageId = chat.key.id;
-        const fileName = `./ᴜʟᴛʀᴏɴ/ᴛᴇᴍᴘ/img-` + imageId;
+        const fileName = `./ᴛᴇᴍᴘ/img-` + imageId;
         const filePath = await υℓтяσηℓιєηт.downloadAndSaveMediaMessage(
           replyChatObject,
           fileName
@@ -59,7 +59,7 @@ module.exports = {
           message: chat.message.extendedTextMessage.contextInfo.quotedMessage,
         };
         var imageId = chat.message.extendedTextMessage.contextInfo.stanzaId;
-        const fileName = `./ᴜʟᴛʀᴏɴ/ᴛᴇᴍᴘ/img-` + imageId;
+        const fileName = `./ᴛᴇᴍᴘ/img-` + imageId;
         const filePath = await υℓтяσηℓιєηт.downloadAndSaveMediaMessage(
           replyChatObject,
           fileName

@@ -35,7 +35,7 @@ module.exports = {
       console.log(image);
       download(
         image, {
-          directory: `./ᴜʟᴛʀᴏɴ/ᴛᴇᴍᴘ/`,
+          directory: `./ᴛᴇᴍᴘ/`,
           filename: `slap-${chat.key.id}.gif`,
         },
         function (err) {
@@ -43,8 +43,8 @@ module.exports = {
           if (err) {
             return console.log(err);
           } else console.log(`Download Done...`);
-          const FP = `./ᴜʟᴛʀᴏɴ/ᴛᴇᴍᴘ/slap-${chat.key.id}.gif`;
-          const SP = `./ᴜʟᴛʀᴏɴ/ᴛᴇᴍᴘ/slap-${chat.key.id}.webp`;
+          const FP = `./ᴛᴇᴍᴘ/slap-${chat.key.id}.gif`;
+          const SP = `./ᴛᴇᴍᴘ/slap-${chat.key.id}.webp`;
           ffmpeg(FP)
             .duration(8)
             .outputOptions([

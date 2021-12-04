@@ -79,7 +79,7 @@ module.exports = {
       ffmpeg(stream)
         .audioBitrate(320)
         .toFormat(`ipod`)
-        .saveToFile(`./ᴜʟᴛʀᴏɴ/ᴛᴇᴍᴘ/${chat.key.id}.mp3`)
+        .saveToFile(`./ᴛᴇᴍᴘ/${chat.key.id}.mp3`)
         .on(`end`, async () => {
           await υℓтяσηℓιєηт
             .sendMessage(ᴜʟᴛʀᴏɴ.chatId, `Uploading song...`, MessageType.text)
@@ -89,7 +89,7 @@ module.exports = {
           await υℓтяσηℓιєηт
             .sendMessage(
               ᴜʟᴛʀᴏɴ.chatId,
-              fs.readFileSync(`./ᴜʟᴛʀᴏɴ/ᴛᴇᴍᴘ/${chat.key.id}.mp3`),
+              fs.readFileSync(`./ᴛᴇᴍᴘ/${chat.key.id}.mp3`),
               MessageType.audio,
               {
                 mimetype: Mimetype.mp4Audio,
@@ -98,7 +98,7 @@ module.exports = {
             .catch((cᴇʀʀᴏʀ) => {
               ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴜʟᴛʀᴏɴ));
             });
-          fs.unlink(`./ᴜʟᴛʀᴏɴ/ᴛᴇᴍᴘ/${chat.key.id}.mp3`, (cᴇʀʀᴏʀ) => {
+          fs.unlink(`./ᴛᴇᴍᴘ/${chat.key.id}.mp3`, (cᴇʀʀᴏʀ) => {
             if (cᴇʀʀᴏʀ) console.log(cᴇʀʀᴏʀ);
             else {
               console.log("Deleted!");

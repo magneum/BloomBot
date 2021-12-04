@@ -23,9 +23,9 @@ module.exports = {
           )
           .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴜʟᴛʀᴏɴ));
         const filePath = await υℓтяσηℓιєηт
-          .downloadAndSaveMediaMessage(replyChat, `./ᴜʟᴛʀᴏɴ/ᴛᴇᴍᴘ/ct-` + imageId)
+          .downloadAndSaveMediaMessage(replyChat, `./ᴛᴇᴍᴘ/ct-` + imageId)
           .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴜʟᴛʀᴏɴ));
-        const stickerPath = `./ᴜʟᴛʀᴏɴ/ᴛᴇᴍᴘ/st-` + imageId + `.webp`;
+        const stickerPath = `./ᴛᴇᴍᴘ/st-` + imageId + `.webp`;
         if (ᴜʟᴛʀᴏɴ.type === `image` || ᴜʟᴛʀᴏɴ.isReplyImage) {
           ffmpeg(filePath)
             .outputOptions([`-y`, `-vcodec libwebp`])
