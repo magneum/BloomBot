@@ -112,7 +112,7 @@ async function ᴜʟᴛʀᴏɴRunner() {
     await υℓтяσηℓιєηт.sendMessage(
       υℓтяσηℓιєηт.user.jid,
       {
-        url: `./ᴜʟᴛʀᴏɴ/ᴜʟᴛʀᴏɴ.png`,
+        url: `https://i.postimg.cc/1575vG7S/image.png`,
       },
       MessageType.image,
       {
