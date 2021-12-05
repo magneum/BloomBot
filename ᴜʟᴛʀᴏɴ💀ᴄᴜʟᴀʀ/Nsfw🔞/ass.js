@@ -14,7 +14,7 @@ module.exports = {
     if (ᴜʟᴛʀᴏɴ.isGroup && !ᴜʟᴛʀᴏɴ.isBotGroupAdmin) {
       return await υℓтяσηℓιєηт
         .sendMessage(
-          ᴜʟᴛʀᴏɴ.logGroup,
+          ᴜʟᴛʀᴏɴ.chatId,
           {
             url: `https://i.postimg.cc/yxsh4dMV/error.png`,
           },
