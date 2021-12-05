@@ -11,7 +11,7 @@ module.exports = {
   commandType: "Nsfw🔞",
   description: `ɪ ᴋɴᴏᴡ ʏᴏᴜ ʟɪᴋᴇ ᴀɴɪᴍᴇ ᴀꜱꜱ~`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
-    if (!ᴜʟᴛʀᴏɴ.isBotGroupAdmin) {
+    if (!ᴜʟᴛʀᴏɴ.isGroup && !ᴜʟᴛʀᴏɴ.isBotGroupAdmin) {
       return await υℓтяσηℓιєηт
         .sendMessage(
           ᴜʟᴛʀᴏɴ.logGroup,
@@ -33,43 +33,19 @@ module.exports = {
         .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴜʟᴛʀᴏɴ));
     }
 
-    if (!ᴜʟᴛʀᴏɴ.isGroup && ᴜʟᴛʀᴏɴ.fromMe) {
-      return await υℓтяσηℓιєηт
-        .sendMessage(
-          ᴜʟᴛʀᴏɴ.chatId,
-          {
-            url: await akaneko.nsfw.ass(),
-          },
-          MessageType.image,
-          {
-            mimetype: Mimetype.jpeg,
-            caption: `_ᴘᴏᴡᴇʀᴇᴅ ʙʏ_\n*⚡𝐔𝐋𝐓𝐑𝐎𝐍™*`,
-          }
-        )
-        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴜʟᴛʀᴏɴ));
-    }
-
-    if (!ᴜʟᴛʀᴏɴ.isGroup && !ᴜʟᴛʀᴏɴ.fromMe) {
-      return await υℓтяσηℓιєηт
-        .sendMessage(
-          ᴜʟᴛʀᴏɴ.logGroup,
-          {
-            url: `https://i.postimg.cc/yxsh4dMV/error.png`,
-          },
-          MessageType.image,
-          {
-            mimetype: Mimetype.png,
-            caption: `
-⚠️𝗘𝗿𝗿𝗼𝗿: 
-➛ ʜᴇʏ ᴛʜᴇʀᴇ ɴɪʙʙᴀ!💩
-
-ʏᴏᴜ ᴅᴏɴ'ᴛ ꜱᴇᴇᴍ ᴛᴏ ʙᴇ ᴀᴅᴍɪɴ..
-ʏᴏᴜ ᴄᴀɴɴᴏᴛ ᴜꜱᴇ ᴀɴʏ ɴꜱꜰᴡ ᴄᴏᴍᴍᴀɴᴅꜱ ʜᴇʀᴇ..
-`,
-          }
-        )
-        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴜʟᴛʀᴏɴ));
-    }
+    return await υℓтяσηℓιєηт
+      .sendMessage(
+        ᴜʟᴛʀᴏɴ.chatId,
+        {
+          url: await akaneko.nsfw.ass(),
+        },
+        MessageType.image,
+        {
+          mimetype: Mimetype.jpeg,
+          caption: `_ᴘᴏᴡᴇʀᴇᴅ ʙʏ_\n*⚡𝐔𝐋𝐓𝐑𝐎𝐍™*`,
+        }
+      )
+      .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴜʟᴛʀᴏɴ));
   },
 };
 // ===============================================================================
