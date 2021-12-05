@@ -11,7 +11,7 @@ module.exports = {
   commandType: "Nsfw🔞",
   description: `ʙᴀꜱɪᴄᴀʟʟʏ ꜱᴛɪᴄᴋʏ ᴡʜɪᴛᴇ ꜱᴛᴜꜰꜰ ᴛʜᴀᴛ ɪꜱ ᴜꜱᴜᴀʟʟʏ ᴍɪʟᴋᴇᴅ ꜰʀᴏᴍ ꜱʜᴀʀᴘɪᴇꜱ`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
-    if (ᴜʟᴛʀᴏɴ.isGroup && !ᴜʟᴛʀᴏɴ.isBotGroupAdmin) {
+    if (ᴜʟᴛʀᴏɴ.isGroup && !ᴜʟᴛʀᴏɴ.isSenderGroupAdmin) {
       return await υℓтяσηℓιєηт
         .sendMessage(
           ᴜʟᴛʀᴏɴ.chatId,

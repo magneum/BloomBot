@@ -169,12 +169,12 @@ async function ᴜʟᴛʀᴏɴRunner() {
     var groupId = update.jid;
     try {
       if (update.action === `add`) {
-        var enable = await ɠɠᴜʟᴛʀᴏɴ.checkSettings(groupId, `welcome`);
+        var enable = await ɠɠᴜʟᴛʀᴏɴ.checkSettings(groupId, `setwelcome`);
         if (enable === false || enable === `OFF`) {
           return;
         }
 
-        var Fetched = await ɠɠᴜʟᴛʀᴏɴ.getMessage(groupId, `welcome`);
+        var Fetched = await ɠɠᴜʟᴛʀᴏɴ.getMessage(groupId, `setwelcome`);
         try {
           ppimg = await υℓтяσηℓιєηт.getProfilePicture(
             `${num.split("@")[0]}@c.us`
@@ -215,7 +215,7 @@ ${Fetched.message}`,
         );
         return;
       } else if (update.action === `remove`) {
-        var enable = await ɠɠᴜʟᴛʀᴏɴ.checkSettings(groupId, `goodbye`);
+        var enable = await ɠɠᴜʟᴛʀᴏɴ.checkSettings(groupId, `setgoodbye`);
         if (enable === false || enable === `OFF`) {
           return;
         }
@@ -238,7 +238,7 @@ ${Fetched.message}`,
           "Congratulations, ! You're officially free of this mess.",
           "You're leaving, ? Yare Yare Daze.",
         ];
-        var Fetched = await ɠɠᴜʟᴛʀᴏɴ.getMessage(groupId, `goodbye`);
+        var Fetched = await ɠɠᴜʟᴛʀᴏɴ.getMessage(groupId, `setgoodbye`);
         const width = 1280;
         const height = 720;
         const canvas = createCanvas(width, height);
@@ -314,9 +314,9 @@ ${Fetched.message}`,
       `promote`,
       `remove`,
       `unmute`,
-      `welcome`,
+      `setwelcome`,
       `disappear`,
-      `goodbye`,
+      `setgoodbye`,
       `setdp`,
       `tagall`,
     ];

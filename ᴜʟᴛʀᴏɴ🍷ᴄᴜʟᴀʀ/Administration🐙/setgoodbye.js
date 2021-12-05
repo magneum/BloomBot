@@ -9,7 +9,7 @@ const ꜱɪɢɴ = require(`../../ᴜʟᴛʀᴏɴ/ꜱɪɢɴ`);
 module.exports = {
   name: `setgoodbye`,
   commandType: "Administration🐙",
-  description: `A goodbye message will be sent when any member leaves the group. It can be an image, video, gif with caption or just a text message.\n\nUse this module to either set, update or delete the existing message.\n\nThe goodbye option can be disabled but saved using the  *${ꜱɪɢɴ.ULTRONIX}goodbye  off*  module. In order to delete the existing message, use  *${ꜱɪɢɴ.ULTRONIX}goodbye  delete*${ꜱɪɢɴ.ULTRONIX}  Do note, the goodbye option is still enabled after you use the delete option.`,
+  description: `A setgoodbye message will be sent when any member leaves the group. It can be an image, video, gif with caption or just a text message.\n\nUse this module to either set, update or delete the existing message.\n\nThe setgoodbye option can be disabled but saved using the  *${ꜱɪɢɴ.ULTRONIX}setgoodbye  off*  module. In order to delete the existing message, use  *${ꜱɪɢɴ.ULTRONIX}setgoodbye  delete*${ꜱɪɢɴ.ULTRONIX}  Do note, the setgoodbye option is still enabled after you use the delete option.`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     try {
       if (!ᴜʟᴛʀᴏɴ.isGroup) {
@@ -19,14 +19,14 @@ module.exports = {
         return;
       }
       if (Arc.length == 0) {
-        var enabled = await Greetings.checkSettings(ᴜʟᴛʀᴏɴ.chatId, `goodbye`);
-        var Msg = await Greetings.getMessage(ᴜʟᴛʀᴏɴ.chatId, `goodbye`);
+        var enabled = await Greetings.checkSettings(ᴜʟᴛʀᴏɴ.chatId, `setgoodbye`);
+        var Msg = await Greetings.getMessage(ᴜʟᴛʀᴏɴ.chatId, `setgoodbye`);
         try {
           if (enabled === false || enabled === undefined) {
             υℓтяσηℓιєηт
               .sendMessage(
                 ᴜʟᴛʀᴏɴ.chatId,
-                `Set a goodbye message first.`,
+                `Set a setgoodbye message first.`,
                 MessageType.text
               )
               .catch((cᴇʀʀᴏʀ) => {
@@ -95,12 +95,12 @@ module.exports = {
             return;
           }
           if (Arc[0] === `delete`) {
-            var Msg = await Greetings.deleteMessage(ᴜʟᴛʀᴏɴ.chatId, `goodbye`);
+            var Msg = await Greetings.deleteMessage(ᴜʟᴛʀᴏɴ.chatId, `setgoodbye`);
             if (Msg === false || Msg === undefined) {
               υℓтяσηℓιєηт
                 .sendMessage(
                   ᴜʟᴛʀᴏɴ.chatId,
-                  `Set a goodbye message first.`,
+                  `Set a setgoodbye message first.`,
                   MessageType.text
                 )
                 .catch((cᴇʀʀᴏʀ) => {
@@ -124,7 +124,7 @@ module.exports = {
             ``
           );
 
-          var Msg = await Greetings.getMessage(ᴜʟᴛʀᴏɴ.chatId, `goodbye`);
+          var Msg = await Greetings.getMessage(ᴜʟᴛʀᴏɴ.chatId, `setgoodbye`);
           if (Msg === false || Msg === undefined) {
             await Greetings.setGoodbye(ᴜʟᴛʀᴏɴ.chatId, text);
             await υℓтяσηℓιєηт
@@ -139,7 +139,7 @@ module.exports = {
 
             return;
           } else {
-            await Greetings.deleteMessage(ᴜʟᴛʀᴏɴ.chatId, `goodbye`);
+            await Greetings.deleteMessage(ᴜʟᴛʀᴏɴ.chatId, `setgoodbye`);
             await Greetings.setGoodbye(ᴜʟᴛʀᴏɴ.chatId, text);
             await υℓтяσηℓιєηт
               .sendMessage(

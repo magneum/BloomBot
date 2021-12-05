@@ -12,9 +12,9 @@ module.exports = {
   description: `New members of a group chat will be welcomed with a message. 
 It can be an image, video, gif with caption or just a text message.
 Use this module to either set, update or delete the existing message.
-The welcome option can be disabled but saved using the   *${ꜱɪɢɴ.ULTRONIX}welcome  off*  module. 
-In order to delete the existing message, use  *${ꜱɪɢɴ.ULTRONIX}welcome  delete*${ꜱɪɢɴ.ULTRONIX} .
-Do note, the welcome option is still enabled after you use the delete option.`,
+The setwelcome option can be disabled but saved using the   *${ꜱɪɢɴ.ULTRONIX}setwelcome  off*  module. 
+In order to delete the existing message, use  *${ꜱɪɢɴ.ULTRONIX}setwelcome  delete*${ꜱɪɢɴ.ULTRONIX} .
+Do note, the setwelcome option is still enabled after you use the delete option.`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     try {
       if (!ᴜʟᴛʀᴏɴ.isGroup) {
@@ -27,15 +27,15 @@ Do note, the welcome option is still enabled after you use the delete option.`,
           .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴜʟᴛʀᴏɴ));
         return;
       }
-      var Msg = await Greetings.getMessage(ᴜʟᴛʀᴏɴ.chatId, `welcome`);
+      var Msg = await Greetings.getMessage(ᴜʟᴛʀᴏɴ.chatId, `setwelcome`);
       if (Arc.length == 0) {
-        var enabled = await Greetings.checkSettings(ᴜʟᴛʀᴏɴ.chatId, `welcome`);
+        var enabled = await Greetings.checkSettings(ᴜʟᴛʀᴏɴ.chatId, `setwelcome`);
         try {
           if (enabled === false || enabled === undefined) {
             υℓтяσηℓιєηт
               .sendMessage(
                 ᴜʟᴛʀᴏɴ.chatId,
-                `Set a welcome message first.`,
+                `Set a setwelcome message first.`,
                 MessageType.text
               )
               .catch((cᴇʀʀᴏʀ) => {
@@ -108,12 +108,12 @@ Do note, the welcome option is still enabled after you use the delete option.`,
             return;
           }
           if (Arc[0] === `delete`) {
-            var Msg = await Greetings.deleteMessage(ᴜʟᴛʀᴏɴ.chatId, `welcome`);
+            var Msg = await Greetings.deleteMessage(ᴜʟᴛʀᴏɴ.chatId, `setwelcome`);
             if (Msg === false || Msg === undefined) {
               υℓтяσηℓιєηт
                 .sendMessage(
                   ᴜʟᴛʀᴏɴ.chatId,
-                  `Set a welcome message first.`,
+                  `Set a setwelcome message first.`,
                   MessageType.text
                 )
                 .catch((cᴇʀʀᴏʀ) => {
@@ -150,7 +150,7 @@ Do note, the welcome option is still enabled after you use the delete option.`,
               });
             return;
           } else {
-            await Greetings.deleteMessage(ᴜʟᴛʀᴏɴ.chatId, `welcome`);
+            await Greetings.deleteMessage(ᴜʟᴛʀᴏɴ.chatId, `setwelcome`);
             await Greetings.setWelcome(ᴜʟᴛʀᴏɴ.chatId, text);
             await υℓтяσηℓιєηт
               .sendMessage(
