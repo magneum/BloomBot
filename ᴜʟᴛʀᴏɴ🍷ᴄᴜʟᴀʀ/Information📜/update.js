@@ -29,7 +29,7 @@ Only My Owner Can use that command!`,
         .sendMessage(
           ᴜʟᴛʀᴏɴ.chatId,
           {
-            url: `https://i.postimg.cc/L8NbydZY/update.png`,
+            url: `https://i.postimg.cc/T3m1hyQX/update.png`,
           },
           MessageType.image,
           {
