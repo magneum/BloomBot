@@ -2,8 +2,12 @@
 // 🎮ᴜʟᴛʀᴏɴ™ 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..
 // ===============================================================================
 const { registerFont, createCanvas, loadImage } = require(`canvas`);
-registerFont(`./ᴜʟᴛʀᴏɴ/Honeycomb-Round.otf`, { family: `Honeycomb` });
-registerFont(`./ᴜʟᴛʀᴏɴ/LobsterTwo-Bold.ttf`, { family: `Lobster` });
+registerFont(`./ᴜʟᴛʀᴏɴ/Honeycomb-Round.otf`, {
+  family: `Honeycomb`,
+});
+registerFont(`./ᴜʟᴛʀᴏɴ/LobsterTwo-Bold.ttf`, {
+  family: `Lobster`,
+});
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const UltronSitreper = require(`./ᴜʟᴛʀᴏɴ/UltronSitreper`);
 const ᴜʟᴛʀᴏɴֆʏռօք = require(`./ᴜʟᴛʀᴏɴ/UltronCOrex`);
@@ -102,7 +106,7 @@ async function ᴜʟᴛʀᴏɴRunner() {
 ██║   ██║██║     ██║   ██████╔╝██║   ██║██╔██╗ ██║
 ██║   ██║██║     ██║   ██╔══██╗██║   ██║██║╚██╗██║
 ╚██████╔╝███████╗██║   ██║  ██║╚██████╔╝██║ ╚████║
-  ╚═════╝ ╚══════╝╚═╝   ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝`),
+╚═════╝ ╚══════╝╚═╝   ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝`),
       Kolor.yellowBright.bold(
         `\n=================😈    |  ᴜʟᴛʀᴏɴ  |    😈=================`
       )
@@ -167,46 +171,89 @@ async function ᴜʟᴛʀᴏɴRunner() {
           `ID➛ ${parID}\nHopped into the server. Kangaroo!!`,
           `ID➛ ${parID}\nJust showed up. Hold my beer.`,
         ];
-        var Fetched = await ɠɠᴜʟᴛʀᴏɴ.getMessage(groupId, `welcome`);
-        const width = 1280;
-        const height = 720;
-        const canvas = createCanvas(width, height);
-        const context = canvas.getContext(`2d`);
-        context.fillStyle = `#252525`;
-        context.fillRect(0, 0, width, height);
-        context.font = `bold 50pt Lobster`;
-        context.textAlign = `center`;
-        context.textBaseline = `top`;
-        const text = greets[Math.floor(Math.random() * greets.length)];
-        const textWidth = context.measureText(text).width;
-        context.fillRect(
-          600 - textWidth / 2 - 10,
-          170 - 5,
-          textWidth + 20,
-          120
+        mem = update.participants[0];
+        const num = update.participants[0];
+        const mdata = await υℓтяσηℓιєηт.groupMetadata(update.jid);
+        const memeg = mdata.participants.length;
+        const thu = await υℓтяσηℓιєηт.getStatus(
+          update.participants[0],
+          MessageType.text
         );
-        const text2 = rg.greet();
-        context.fillStyle = randomMC.getColor();
-        context.fillText(text, 600, 170);
-        context.fillStyle = `#fff`;
-        context.font = `bold 40pt Honeycomb`;
-        context.fillText(text2, 600, 530);
-        const myimg = loadImage(`./ᴜʟᴛʀᴏɴ/ᴜʟᴛʀᴏɴɠɠ.png`);
-        await myimg.then(() => {
-          const buffer = canvas.toBuffer(`image/png`);
-          fs.writeFileSync(`./ᴜʟᴛʀᴏɴ/ᴜʟᴛʀᴏɴɠɠ.png`, buffer);
-          υℓтяσηℓιєηт.sendMessage(
-            groupId,
-            {
-              url: `./ᴜʟᴛʀᴏɴ/ᴜʟᴛʀᴏɴɠɠ.png`,
-            },
-            MessageType.image,
-            {
-              mimetype: Mimetype.png,
-              caption: `\n${Fetched.message}`,
-            }
-          );
-        });
+        var Fetched = await ɠɠᴜʟᴛʀᴏɴ.getMessage(groupId, `welcome`);
+        const download = require(`download-file`);
+        const ppimg = await υℓтяσηℓιєηт.getProfilePicture(
+          `${num.split("@")[0]}@c.us`
+        );
+        download(
+          ppimg,
+          {
+            directory: "./ᴛᴇᴍᴘ/",
+            filename: "ppimg.jpg",
+          },
+          function (err) {
+            if (err) throw err;
+            console.log(ppimg);
+            return υℓтяσηℓιєηт.sendMessage(
+              groupId,
+              {
+                url: "./ᴛᴇᴍᴘ/ppimg.jpg",
+              },
+              MessageType.image,
+              {
+                mimetype: Mimetype.png,
+                caption: `|  ɢʀᴏᴜᴘ ᴘᴀʀᴛɪᴄɪᴘᴀɴᴛ ᴜᴘᴅᴀᴛᴇ  | 
+    
+*Num:* @${num.split("@")[0]}
+*Bio*: *${thu.status}*
+*Member Count: ${memeg}*
+*Group Name*: *${mdata.subject}*
+
+===============================
+${Fetched}`,
+              }
+            );
+          }
+        );
+        // var Fetched = await ɠɠᴜʟᴛʀᴏɴ.getMessage(groupId, `welcome`);
+        // const width = 1280;
+        // const height = 720;
+        // const canvas = createCanvas(width, height);
+        // const context = canvas.getContext(`2d`);
+        // context.fillStyle = `#252525`;
+        // context.fillRect(0, 0, width, height);
+        // context.font = `bold 50pt Lobster`;
+        // context.textAlign = `center`;
+        // context.textBaseline = `top`;
+        // const text = greets[Math.floor(Math.random() * greets.length)];
+        // const textWidth = context.measureText(text).width;
+        // context.fillRect(
+        //   600 - textWidth / 2 - 10,
+        //   170 - 5,
+        //   textWidth + 20,
+        //   120
+        // );
+        // const text2 = rg.greet();
+        // context.fillStyle = randomMC.getColor();
+        // context.fillText(text, 600, 170);
+        // context.fillStyle = `#fff`;
+        // context.font = `bold 40pt Honeycomb`;
+        // context.fillText(text2, 600, 530);
+        // const myimg = loadImage(`./ᴜʟᴛʀᴏɴ/ᴜʟᴛʀᴏɴɠɠ.png`);
+        // await myimg.then(() => {
+        //   const buffer = canvas.toBuffer(`image/png`);
+        //   fs.writeFileSync(`./ᴜʟᴛʀᴏɴ/ᴜʟᴛʀᴏɴɠɠ.png`, buffer);
+        //   υℓтяσηℓιєηт.sendMessage(
+        //     groupId,
+        //     {
+        //       url: `./ᴜʟᴛʀᴏɴ/ᴜʟᴛʀᴏɴɠɠ.png`,
+        //     },
+        //     MessageType.image,
+        //     {
+        //       mimetype: Mimetype.png,
+        //       caption: `\n${Fetched.message}`,
+        //     }
+        //   );
+        // });
         return;
       } else if (update.action === `remove`) {
         var enable = await ɠɠᴜʟᴛʀᴏɴ.checkSettings(groupId, `goodbye`);
