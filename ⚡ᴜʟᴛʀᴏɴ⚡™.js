@@ -206,13 +206,13 @@ async function ᴜʟᴛʀᴏɴRunner() {
               MessageType.image, {
                 mimetype: Mimetype.png,
                 caption: `@${num.split("@")[0]}\n${weltext}
-꧁•⊹٭---------------٭⊹•꧂
+*꧁•⊹٭---------------٭⊹•꧂*
 
-❣️𝗕𝗜𝗢➛ ${thu.status}
-🎊𝗚𝗥𝗢𝗨𝗣➛ ${mdata.subject}
-🗄️𝗠𝗘𝗠𝗕𝗘𝗥-𝗖𝗢𝗨𝗡𝗧➛  ${memeg}
+❣️𝗕𝗜𝗢➛ _${thu.status}_
+🎊𝗚𝗥𝗢𝗨𝗣➛ _${mdata.subject}_
+🗄️𝗠𝗘𝗠𝗕𝗘𝗥-𝗖𝗢𝗨𝗡𝗧➛  _${memeg}_
 
-꧁•⊹٭---------------٭⊹•꧂
+*꧁•⊹٭---------------٭⊹•꧂*
 ${Fetched.message}`,
               }
             );
@@ -409,7 +409,7 @@ If you are keen to use my features, you can deploy ᴜʟᴛʀᴏɴ on your own a
       if (!module) {
         return υℓтяσηℓιєηт.sendMessage(
           ᴜʟᴛʀᴏɴ.chatId, {
-            url: `https://i.postimg.cc/Gt46wxDL/ltr-Invalid.png`,
+            url: `https://i.postimg.cc/3RLJz2r2/Invalid.png`,
           },
           MessageType.image, {
             mimetype: Mimetype.png,

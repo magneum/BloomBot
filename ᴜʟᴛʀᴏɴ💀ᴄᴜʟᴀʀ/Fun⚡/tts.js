@@ -18,7 +18,7 @@ You can also reply to a text message with syntax  *${UltronSitreper.ULTRONIX}tr 
         .sendMessage(
           ᴜʟᴛʀᴏɴ.chatId,
           {
-            url: `https://i.postimg.cc/MGkpdxHT/ltr-Args.png`,
+            url: `https://i.postimg.cc/5tb40s6w/Args.png`,
           },
           MessageType.image,
           {

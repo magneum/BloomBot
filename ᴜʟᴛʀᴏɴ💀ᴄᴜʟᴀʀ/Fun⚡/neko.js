@@ -19,7 +19,7 @@ Enter text with the module  *${UltronSitreper.ULTRONIX}neko* .`,
           .sendMessage(
             ᴜʟᴛʀᴏɴ.chatId,
             {
-              url: `https://i.postimg.cc/MGkpdxHT/ltr-Args.png`,
+              url: `https://i.postimg.cc/5tb40s6w/Args.png`,
             },
             MessageType.image,
             {

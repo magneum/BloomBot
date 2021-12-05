@@ -32,7 +32,7 @@ module.exports = {
         .sendMessage(
           ᴜʟᴛʀᴏɴ.chatId,
           {
-            url: `https://i.postimg.cc/MGkpdxHT/ltr-Args.png`,
+            url: `https://i.postimg.cc/5tb40s6w/Args.png`,
           },
           MessageType.image,
           {
@@ -55,7 +55,7 @@ You Can Get URL by using ${UltronSitreper.ULTRONIX}yts <song-name>`,
         .sendMessage(
           ᴜʟᴛʀᴏɴ.chatId,
           {
-            url: `https://i.postimg.cc/MGkpdxHT/ltr-Args.png`,
+            url: `https://i.postimg.cc/5tb40s6w/Args.png`,
           },
           MessageType.image,
           {

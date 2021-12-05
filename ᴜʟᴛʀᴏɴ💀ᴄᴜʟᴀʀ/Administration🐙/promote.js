@@ -64,7 +64,7 @@ For example- *${UltronSitreper.ULTRONIX}promote 9861212121*`,
                 .sendMessage(
                   ᴜʟᴛʀᴏɴ.chatId,
                   {
-                    url: `https://i.postimg.cc/MGkpdxHT/ltr-Args.png`,
+                    url: `https://i.postimg.cc/5tb40s6w/Args.png`,
                   },
                   MessageType.image,
                   {
@@ -94,7 +94,7 @@ For example- *${UltronSitreper.ULTRONIX}promote 9861212121*`,
               .sendMessage(
                 ᴜʟᴛʀᴏɴ.chatId,
                 {
-                  url: `https://i.postimg.cc/MGkpdxHT/ltr-Args.png`,
+                  url: `https://i.postimg.cc/5tb40s6w/Args.png`,
                 },
                 MessageType.image,
                 {
