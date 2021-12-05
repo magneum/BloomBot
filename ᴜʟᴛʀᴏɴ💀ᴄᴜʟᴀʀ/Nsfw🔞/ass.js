@@ -11,7 +11,7 @@ module.exports = {
   commandType: "Nsfw🔞",
   description: `ɪ ᴋɴᴏᴡ ʏᴏᴜ ʟɪᴋᴇ ᴀɴɪᴍᴇ ᴀꜱꜱ~`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
-    if (!ᴜʟᴛʀᴏɴ.isGroup && !ᴜʟᴛʀᴏɴ.isBotGroupAdmin) {
+    if (ᴜʟᴛʀᴏɴ.isGroup && !ᴜʟᴛʀᴏɴ.isBotGroupAdmin) {
       return await υℓтяσηℓιєηт
         .sendMessage(
           ᴜʟᴛʀᴏɴ.logGroup,
@@ -31,21 +31,21 @@ module.exports = {
           }
         )
         .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴜʟᴛʀᴏɴ));
+    } else {
+      return await υℓтяσηℓιєηт
+        .sendMessage(
+          ᴜʟᴛʀᴏɴ.chatId,
+          {
+            url: await akaneko.nsfw.ass(),
+          },
+          MessageType.image,
+          {
+            mimetype: Mimetype.jpeg,
+            caption: `_ᴘᴏᴡᴇʀᴇᴅ ʙʏ_\n*⚡𝐔𝐋𝐓𝐑𝐎𝐍™*`,
+          }
+        )
+        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴜʟᴛʀᴏɴ));
     }
-
-    return await υℓтяσηℓιєηт
-      .sendMessage(
-        ᴜʟᴛʀᴏɴ.chatId,
-        {
-          url: await akaneko.nsfw.ass(),
-        },
-        MessageType.image,
-        {
-          mimetype: Mimetype.jpeg,
-          caption: `_ᴘᴏᴡᴇʀᴇᴅ ʙʏ_\n*⚡𝐔𝐋𝐓𝐑𝐎𝐍™*`,
-        }
-      )
-      .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴜʟᴛʀᴏɴ));
   },
 };
 // ===============================================================================
