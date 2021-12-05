@@ -90,13 +90,13 @@ async function ᴜʟᴛʀᴏɴRunner() {
     await ᴜʟᴛʀᴏɴsql.sync();
     console.clear();
     console.log(Kolor.yellowBright.bold(`💡⬰  𝘐𝘯𝘴𝘵𝘢𝘭𝘭𝘪𝘯𝘨 𝘗𝘭𝘶𝘨𝘪𝘯𝘴...✅`));
-    const Folders = fs.readdirSync(`./ᴜʟᴛʀᴏɴ💀ᴄᴜʟᴀʀ`);
+    const Folders = fs.readdirSync(`./ᴜʟᴛʀᴏɴ🍷ᴄᴜʟᴀʀ`);
     for (const folder of Folders) {
       const moduleFiles = fs
-        .readdirSync(`./ᴜʟᴛʀᴏɴ💀ᴄᴜʟᴀʀ/${folder}`)
+        .readdirSync(`./ᴜʟᴛʀᴏɴ🍷ᴄᴜʟᴀʀ/${folder}`)
         .filter((file) => file.endsWith(`.js`));
       for (const file of moduleFiles) {
-        const module = require(`./ᴜʟᴛʀᴏɴ💀ᴄᴜʟᴀʀ/${folder}/${file}`);
+        const module = require(`./ᴜʟᴛʀᴏɴ🍷ᴄᴜʟᴀʀ/${folder}/${file}`);
         UltronSitrep.set(module.name, module);
         console.log(
           Kolor.yellowBright.bold(`💡⬰  `),
