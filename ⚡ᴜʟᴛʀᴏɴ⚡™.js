@@ -202,11 +202,11 @@ async function ᴜʟᴛʀᴏɴRunner() {
               {
                 mimetype: Mimetype.png,
                 caption: `|  ɢʀᴏᴜᴘ ᴘᴀʀᴛɪᴄɪᴘᴀɴᴛ ᴜᴘᴅᴀᴛᴇ  | 
-    
-*🐣 @${num.split("@")[0]} ${greets[Math.floor(Math.random() * greets.length)]}*
-*❣️Bio*: *${thu.status}*
-*🗄️Member Count: ${memeg}*
-*🎊Group*: *${mdata.subject}*
+*${greets[Math.floor(Math.random() * greets.length)]}*
+*🐣ID:* @${num.split("@")[0]}
+*❣️Bio*: ${thu.status}
+*🎊Group*: ${mdata.subject}
+*🗄️Member-Count:* ${memeg}
 
 ===============================
 ${Fetched.message}`,
