@@ -19,4 +19,4 @@ error - https://i.postimg.cc/T27psvhB/error.png
 update - https://i.postimg.cc/T3m1hyQX/update.png
 invalid - https://i.postimg.cc/3RLJz2r2/Invalid.png
 arc - https://i.postimg.cc/5tb40s6w/Args.png
-main - https://i.postimg.cc/t4dTJKfX/image.png
+main - https://i.postimg.cc/5yphDmkW/image.png

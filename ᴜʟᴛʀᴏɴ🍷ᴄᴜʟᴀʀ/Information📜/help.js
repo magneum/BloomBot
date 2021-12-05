@@ -114,7 +114,7 @@ module.exports = {
         .sendMessage(
           ᴜʟᴛʀᴏɴ.chatId,
           {
-            url: `https://i.postimg.cc/t4dTJKfX/image.png`,
+            url: `https://i.postimg.cc/5yphDmkW/image.png`,
           },
           MessageType.image,
           {
@@ -284,7 +284,7 @@ _⚠️Bot Not Ready Yet_`,
         .sendMessage(
           ᴜʟᴛʀᴏɴ.chatId,
           {
-            url: `https://i.postimg.cc/t4dTJKfX/image.png`,
+            url: `https://i.postimg.cc/5yphDmkW/image.png`,
           },
           MessageType.image,
           {
