@@ -136,44 +136,44 @@ async function ᴜʟᴛʀᴏɴRunner() {
   // ===============================================================================
   await υℓтяσηℓιєηт.connect();
   υℓтяσηℓιєηт.on(`group-participants-update`, async (update) => {
+    var greets = [
+      `*_ᴊᴜꜱᴛ ᴊᴏɪɴᴇᴅ ᴛʜᴇ ꜱᴇʀᴠᴇʀ - ɢʟʜꜰ!_*`,
+      `*_ᴊᴜꜱᴛ ᴊᴏɪɴᴇᴅ. ᴇᴠᴇʀʏᴏɴᴇ, ʟᴏᴏᴋ ʙᴜꜱʏ!_*`,
+      `*_ᴊᴜꜱᴛ ᴊᴏɪɴᴇᴅ. ᴄᴀɴ ɪ ɢᴇᴛ ᴀ ʜᴇᴀʟ?_*`,
+      `*_ᴊᴏɪɴᴇᴅ ʏᴏᴜʀ ᴘᴀʀᴛʏ._*`,
+      `*_ᴊᴏɪɴᴇᴅ. ʏᴏᴜ ᴍᴜꜱᴛ ᴄᴏɴꜱᴛʀᴜᴄᴛ ᴀᴅᴅɪᴛɪᴏɴᴀʟ ᴘʏʟᴏɴꜱ._*`,
+      `*_ᴡᴇʟᴄᴏᴍᴇ, ꜱᴛᴀʏ ᴀᴡʜɪʟᴇ ᴀɴᴅ ʟɪꜱᴛᴇɴ._*`,
+      `*_ᴡᴇʟᴄᴏᴍᴇ, ᴡᴇ ᴡᴇʀᴇ ᴇxᴘᴇᴄᴛɪɴɢ ʏᴏᴜ._*`,
+      `*_ᴡᴇʟᴄᴏᴍᴇ, ᴡᴇ ʜᴏᴘᴇ ʏᴏᴜ ʙʀᴏᴜɢʜᴛ ᴘɪᴢᴢᴀ._*`,
+      `*_ᴡᴇʟᴄᴏᴍᴇ ʟᴇᴀᴠᴇ ʏᴏᴜʀ ᴡᴇᴀᴘᴏɴꜱ ʙʏ ᴛʜᴇ ᴅᴏᴏʀ._*`,
+      `*_ᴊᴜꜱᴛ ᴀᴘᴘᴇᴀʀᴇᴅ._*`,
+      `*_ꜱᴡᴏᴏᴏᴏꜱʜ. ᴊᴜꜱᴛ ʟᴀɴᴅᴇᴅ._*`,
+      `*_ʙʀᴀᴄᴇ ʏᴏᴜʀꜱᴇʟᴠᴇꜱ. ᴊᴜꜱᴛ ᴊᴏɪɴᴇᴅ ᴛʜᴇ ꜱᴇʀᴠᴇʀ._*`,
+      `*_ᴊᴜꜱᴛ ᴊᴏɪɴᴇᴅ. ʜɪᴅᴇ ʏᴏᴜʀ ʙᴀɴᴀɴᴀꜱ._*`,
+      `*_ᴊᴜꜱᴛ ᴀʀʀɪᴠᴇᴅ. ꜱᴇᴇᴍꜱ ᴏᴘ - ᴘʟᴇᴀꜱᴇ ɴᴇʀꜰ._*`,
+      `*_ᴊᴜꜱᴛ ꜱʟɪᴅ ɪɴᴛᴏ ᴛʜᴇ ꜱᴇʀᴠᴇʀ._*`,
+      `*_ʜᴀꜱ ꜱᴘᴀᴡɴᴇᴅ ɪɴ ᴛʜᴇ ꜱᴇʀᴠᴇʀ._*`,
+      `*_ʜᴏᴘᴘᴇᴅ ɪɴᴛᴏ ᴛʜᴇ ꜱᴇʀᴠᴇʀ. ᴋᴀɴɢᴀʀᴏᴏ!!_*`,
+      `*_ᴊᴜꜱᴛ ꜱʜᴏᴡᴇᴅ ᴜᴘ. ʜᴏʟᴅ ᴍʏ ʙᴇᴇʀ._*`,
+    ];
+    const num = update.participants[0];
+    const mdata = await υℓтяσηℓιєηт.groupMetadata(update.jid);
+    const memeg = mdata.participants.length;
+    const thu = await υℓтяσηℓιєηт.getStatus(
+      update.participants[0],
+      MessageType.text
+    );
     console.log(
       `=================😈    |  ɢʀᴏᴜᴘ ᴘᴀʀᴛɪᴄɪᴘᴀɴᴛ ᴜᴘᴅᴀᴛᴇ  |    😈=================`
     );
     var groupId = update.jid;
-    var parID = update.participants;
     try {
       if (update.action === `add`) {
         var enable = await ɠɠᴜʟᴛʀᴏɴ.checkSettings(groupId, `welcome`);
         if (enable === false || enable === `OFF`) {
           return;
         }
-        var greets = [
-          `*_ᴊᴜꜱᴛ ᴊᴏɪɴᴇᴅ ᴛʜᴇ ꜱᴇʀᴠᴇʀ - ɢʟʜꜰ!_*`,
-          `*_ᴊᴜꜱᴛ ᴊᴏɪɴᴇᴅ. ᴇᴠᴇʀʏᴏɴᴇ, ʟᴏᴏᴋ ʙᴜꜱʏ!_*`,
-          `*_ᴊᴜꜱᴛ ᴊᴏɪɴᴇᴅ. ᴄᴀɴ ɪ ɢᴇᴛ ᴀ ʜᴇᴀʟ?_*`,
-          `*_ᴊᴏɪɴᴇᴅ ʏᴏᴜʀ ᴘᴀʀᴛʏ._*`,
-          `*_ᴊᴏɪɴᴇᴅ. ʏᴏᴜ ᴍᴜꜱᴛ ᴄᴏɴꜱᴛʀᴜᴄᴛ ᴀᴅᴅɪᴛɪᴏɴᴀʟ ᴘʏʟᴏɴꜱ._*`,
-          `*_ᴡᴇʟᴄᴏᴍᴇ, ꜱᴛᴀʏ ᴀᴡʜɪʟᴇ ᴀɴᴅ ʟɪꜱᴛᴇɴ._*`,
-          `*_ᴡᴇʟᴄᴏᴍᴇ, ᴡᴇ ᴡᴇʀᴇ ᴇxᴘᴇᴄᴛɪɴɢ ʏᴏᴜ._*`,
-          `*_ᴡᴇʟᴄᴏᴍᴇ, ᴡᴇ ʜᴏᴘᴇ ʏᴏᴜ ʙʀᴏᴜɢʜᴛ ᴘɪᴢᴢᴀ._*`,
-          `*_ᴡᴇʟᴄᴏᴍᴇ ʟᴇᴀᴠᴇ ʏᴏᴜʀ ᴡᴇᴀᴘᴏɴꜱ ʙʏ ᴛʜᴇ ᴅᴏᴏʀ._*`,
-          `*_ᴊᴜꜱᴛ ᴀᴘᴘᴇᴀʀᴇᴅ._*`,
-          `*_ꜱᴡᴏᴏᴏᴏꜱʜ. ᴊᴜꜱᴛ ʟᴀɴᴅᴇᴅ._*`,
-          `*_ʙʀᴀᴄᴇ ʏᴏᴜʀꜱᴇʟᴠᴇꜱ. ᴊᴜꜱᴛ ᴊᴏɪɴᴇᴅ ᴛʜᴇ ꜱᴇʀᴠᴇʀ._*`,
-          `*_ᴊᴜꜱᴛ ᴊᴏɪɴᴇᴅ. ʜɪᴅᴇ ʏᴏᴜʀ ʙᴀɴᴀɴᴀꜱ._*`,
-          `*_ᴊᴜꜱᴛ ᴀʀʀɪᴠᴇᴅ. ꜱᴇᴇᴍꜱ ᴏᴘ - ᴘʟᴇᴀꜱᴇ ɴᴇʀꜰ._*`,
-          `*_ᴊᴜꜱᴛ ꜱʟɪᴅ ɪɴᴛᴏ ᴛʜᴇ ꜱᴇʀᴠᴇʀ._*`,
-          `*_ʜᴀꜱ ꜱᴘᴀᴡɴᴇᴅ ɪɴ ᴛʜᴇ ꜱᴇʀᴠᴇʀ._*`,
-          `*_ʜᴏᴘᴘᴇᴅ ɪɴᴛᴏ ᴛʜᴇ ꜱᴇʀᴠᴇʀ. ᴋᴀɴɢᴀʀᴏᴏ!!_*`,
-          `*_ᴊᴜꜱᴛ ꜱʜᴏᴡᴇᴅ ᴜᴘ. ʜᴏʟᴅ ᴍʏ ʙᴇᴇʀ._*`,
-        ];
-        const num = update.participants[0];
-        const mdata = await υℓтяσηℓιєηт.groupMetadata(update.jid);
-        const memeg = mdata.participants.length;
-        const thu = await υℓтяσηℓιєηт.getStatus(
-          update.participants[0],
-          MessageType.text
-        );
+
         var Fetched = await ɠɠᴜʟᴛʀᴏɴ.getMessage(groupId, `welcome`);
         try {
           ppimg = await υℓтяσηℓιєηт.getProfilePicture(
@@ -205,7 +205,7 @@ async function ᴜʟᴛʀᴏɴRunner() {
 
 ❣️𝗕𝗜𝗢➛ _${thu.status}_
 🎊𝗚𝗥𝗢𝗨𝗣➛ _${mdata.subject}_
-🗄️𝗠𝗘𝗠𝗕𝗘𝗥-𝗖𝗢𝗨𝗡𝗧➛  _${memeg}_
+🗄️𝗪𝗲 𝗔𝗿𝗲 𝗡𝗼𝘄➛  _${memeg}_ 𝗠𝗲𝗺𝗯𝗲𝗿𝘀
 
 *꧁•⊹٭---------------٭⊹•꧂*
 ${Fetched.message}`,
@@ -213,54 +213,78 @@ ${Fetched.message}`,
             );
           }
         );
-
-        // var Fetched = await ɠɠᴜʟᴛʀᴏɴ.getMessage(groupId, `welcome`);
-        // const width = 1280;
-        // const height = 720;
-        // const canvas = createCanvas(width, height);
-        // const context = canvas.getContext(`2d`);
-        // context.fillStyle = `#252525`;
-        // context.fillRect(0, 0, width, height);
-        // context.font = `bold 50pt Lobster`;
-        // context.textAlign = `center`;
-        // context.textBaseline = `top`;
-        // const text = greets[Math.floor(Math.random() * greets.length)];
-        // const textWidth = context.measureText(text).width;
-        // context.fillRect(
-        //   600 - textWidth / 2 - 10,
-        //   170 - 5,
-        //   textWidth + 20,
-        //   120
-        // );
-        // const text2 = rg.greet();
-        // context.fillStyle = randomMC.getColor();
-        // context.fillText(text, 600, 170);
-        // context.fillStyle = `#fff`;
-        // context.font = `bold 40pt Honeycomb`;
-        // context.fillText(text2, 600, 530);
-        // const myimg = loadImage(`./ᴜʟᴛʀᴏɴ/ᴜʟᴛʀᴏɴɠɠ.png`);
-        // await myimg.then(() => {
-        //   const buffer = canvas.toBuffer(`image/png`);
-        //   fs.writeFileSync(`./ᴜʟᴛʀᴏɴ/ᴜʟᴛʀᴏɴɠɠ.png`, buffer);
-        //   υℓтяσηℓιєηт.sendMessage(
-        //     groupId,
-        //     {
-        //       url: `./ᴜʟᴛʀᴏɴ/ᴜʟᴛʀᴏɴɠɠ.png`,
-        //     },
-        //     MessageType.image,
-        //     {
-        //       mimetype: Mimetype.png,
-        //       caption: `\n${Fetched.message}`,
-        //     }
-        //   );
-        // });
         return;
       } else if (update.action === `remove`) {
         var enable = await ɠɠᴜʟᴛʀᴏɴ.checkSettings(groupId, `goodbye`);
         if (enable === false || enable === `OFF`) {
           return;
         }
-        υℓтяσηℓιєηт.sendMessage(groupId, `GooDbye`, MessageType.text);
+        var byes = [
+          "will be missed.",
+          "just went offline.",
+          "has left the lobby.",
+          "has left the clan.",
+          "has left the game.",
+          "has fled the area.",
+          "Nice knowing ya, !",
+          "It was a fun time .",
+          "We hope to see you again soon",
+          "I donut want to say goodbye",
+          "Goodbye ! Guess who's gonna miss you :')",
+          "Goodbye ! It's gonna be lonely without ya.",
+          "Please don't leave me alone in this place, !",
+          "Good luck finding better shit-posters than us, !",
+          "You know we're gonna miss you . Right? Right? Right?",
+          "Congratulations, ! You're officially free of this mess.",
+          "You're leaving, ? Yare Yare Daze.",
+        ];
+        var Fetched = await ɠɠᴜʟᴛʀᴏɴ.getMessage(groupId, `goodbye`);
+        const width = 1280;
+        const height = 720;
+        const canvas = createCanvas(width, height);
+        const context = canvas.getContext(`2d`);
+        context.fillStyle = `#252525`;
+        context.fillRect(0, 0, width, height);
+        context.font = `bold 60pt Lobster`;
+        context.textAlign = `center`;
+        context.textBaseline = `top`;
+        const text = `@${num.split("@")[0]}\n${
+          byes[Math.floor(Math.random() * byes.length)]
+        }`;
+        const textWidth = context.measureText(text).width;
+        context.fillRect(
+          600 - textWidth / 2 - 10,
+          170 - 5,
+          textWidth + 20,
+          120
+        );
+        const text2 = rg.greet();
+        context.fillStyle = randomMC.getColor();
+        context.fillText(text, 600, 170);
+        context.fillStyle = `#fff`;
+        context.font = `bold 50pt Honeycomb`;
+        context.fillText(text2, 600, 530);
+        const myimg = loadImage(`./ᴜʟᴛʀᴏɴ/ᴜʟᴛʀᴏɴɠb.png`);
+        await myimg.then(() => {
+          const buffer = canvas.toBuffer(`image/png`);
+          fs.writeFileSync(`./ᴜʟᴛʀᴏɴ/ᴜʟᴛʀᴏɴɠɠ.png`, buffer);
+          υℓтяσηℓιєηт.sendMessage(
+            groupId,
+            {
+              url: `./ᴜʟᴛʀᴏɴ/ᴜʟᴛʀᴏɴɠb.png`,
+            },
+            MessageType.image,
+            {
+              mimetype: Mimetype.png,
+              caption: `*꧁•⊹٭---------------٭⊹•꧂*
+
+🗄️𝗪𝗲 𝗔𝗿𝗲 𝗡𝗼𝘄➛  _${memeg}_ 𝗠𝗲𝗺𝗯𝗲𝗿𝘀
+
+*꧁•⊹٭---------------٭⊹•꧂*
+${Fetched.message}`,
+            }
+          );
+        });
       }
     } catch (cᴇʀʀᴏʀ) {
       console.log(cᴇʀʀᴏʀ);
