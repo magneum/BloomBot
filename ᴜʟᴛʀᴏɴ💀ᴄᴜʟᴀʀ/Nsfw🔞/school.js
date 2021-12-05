@@ -11,8 +11,7 @@ module.exports = {
   commandType: "Nsfw🔞",
   description: `ꜱᴄʜᴏᴏʟ ᴜɴɪꜰᴏʀᴍꜱ!~ ʏᴀᴛᴛᴀ~!`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
-    if (ᴜʟᴛʀᴏɴ.isGroup && !ᴜʟᴛʀᴏɴ.isBotGroupAdmin) {
-      // Group But Non-Admin
+    if (!ᴜʟᴛʀᴏɴ.isBotGroupAdmin) {
       return await υℓтяσηℓιєηт
         .sendMessage(
           ᴜʟᴛʀᴏɴ.logGroup,
@@ -26,14 +25,15 @@ module.exports = {
 ⚠️𝗘𝗿𝗿𝗼𝗿: 
 ➛ ʜᴇʏ ᴛʜᴇʀᴇ ɴɪʙʙᴀ!💩
 
-ʏᴏᴜ ᴅᴏɴ'ᴛ ꜱᴇᴇᴍ ᴛᴏ ʙᴇ ᴀᴅᴍɪɴ ᴏꜰ ᴛʜɪꜱ ᴜꜱᴇʀ..
+ʏᴏᴜ ᴅᴏɴ'ᴛ ꜱᴇᴇᴍ ᴛᴏ ʙᴇ ᴀᴅᴍɪɴ..
 ʏᴏᴜ ᴄᴀɴɴᴏᴛ ᴜꜱᴇ ᴀɴʏ ɴꜱꜰᴡ ᴄᴏᴍᴍᴀɴᴅꜱ ʜᴇʀᴇ..
 `,
           }
         )
         .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴜʟᴛʀᴏɴ));
-    } else if (ᴜʟᴛʀᴏɴ.fromMe && !ᴜʟᴛʀᴏɴ.isGroup) {
-      // From me and Private
+    }
+
+    if (!ᴜʟᴛʀᴏɴ.isGroup && ᴜʟᴛʀᴏɴ.fromMe) {
       return await υℓтяσηℓιєηт
         .sendMessage(
           ᴜʟᴛʀᴏɴ.chatId,
@@ -47,8 +47,9 @@ module.exports = {
           }
         )
         .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴜʟᴛʀᴏɴ));
-    } else if (!ᴜʟᴛʀᴏɴ.fromMe && !ᴜʟᴛʀᴏɴ.isGroup) {
-      // From me and Private
+    }
+
+    if (!ᴜʟᴛʀᴏɴ.isGroup && !ᴜʟᴛʀᴏɴ.fromMe) {
       return await υℓтяσηℓιєηт
         .sendMessage(
           ᴜʟᴛʀᴏɴ.logGroup,
@@ -62,24 +63,9 @@ module.exports = {
 ⚠️𝗘𝗿𝗿𝗼𝗿: 
 ➛ ʜᴇʏ ᴛʜᴇʀᴇ ɴɪʙʙᴀ!💩
 
-ʏᴏᴜ ᴅᴏɴ'ᴛ ꜱᴇᴇᴍ ᴛᴏ ʙᴇ ᴀᴅᴍɪɴ ᴏꜰ ᴛʜɪꜱ ᴜꜱᴇʀ..
+ʏᴏᴜ ᴅᴏɴ'ᴛ ꜱᴇᴇᴍ ᴛᴏ ʙᴇ ᴀᴅᴍɪɴ..
 ʏᴏᴜ ᴄᴀɴɴᴏᴛ ᴜꜱᴇ ᴀɴʏ ɴꜱꜰᴡ ᴄᴏᴍᴍᴀɴᴅꜱ ʜᴇʀᴇ..
 `,
-          }
-        )
-        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴜʟᴛʀᴏɴ));
-    } else if (ᴜʟᴛʀᴏɴ.isGroup && ᴜʟᴛʀᴏɴ.isBotGroupAdmin) {
-      // Group and Admin
-      return await υℓтяσηℓιєηт
-        .sendMessage(
-          ᴜʟᴛʀᴏɴ.chatId,
-          {
-            url: await akaneko.nsfw.school(),
-          },
-          MessageType.image,
-          {
-            mimetype: Mimetype.jpeg,
-            caption: `_ᴘᴏᴡᴇʀᴇᴅ ʙʏ_\n*⚡𝐔𝐋𝐓𝐑𝐎𝐍™*`,
           }
         )
         .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴜʟᴛʀᴏɴ));
