@@ -2,15 +2,15 @@
 // 🎮ᴜʟᴛʀᴏɴ™ 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..
 // ===============================================================================
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
-const UltronSitreper = require(`../../ᴜʟᴛʀᴏɴ/UltronSitreper`);
+const ꜱɪɢɴ = require(`../../ᴜʟᴛʀᴏɴ/ꜱɪɢɴ`);
 const ℓιєηт = require("../../ᴜʟᴛʀᴏɴ/catch");
 const got = require(`got`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
   name: `github`,
   commandType: "Fun⚡",
-  description: `Get the github profile by module  *${UltronSitreper.ULTRONIX}github <user>*  
-or replying  *${UltronSitreper.ULTRONIX}github* .`,
+  description: `Get the github profile by module  *${ꜱɪɢɴ.ULTRONIX}github <user>*  
+or replying  *${ꜱɪɢɴ.ULTRONIX}github* .`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     try {
       let user_name = ``;
@@ -30,7 +30,7 @@ or replying  *${UltronSitreper.ULTRONIX}github* .`,
                 caption: `*⚠️Seems like someone forgot to give Github Account name!*
   
   *Usage Example*
-  ${UltronSitreper.ULTRONIX}github <account name>`,
+  ${ꜱɪɢɴ.ULTRONIX}github <account name>`,
               }
             )
             .catch((cᴇʀʀᴏʀ) => {

@@ -2,7 +2,7 @@
 // 🎮ᴜʟᴛʀᴏɴ™ 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..
 // ===============================================================================
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
-const UltronSitreper = require(`../../ᴜʟᴛʀᴏɴ/UltronSitreper`);
+const ꜱɪɢɴ = require(`../../ᴜʟᴛʀᴏɴ/ꜱɪɢɴ`);
 const ℓιєηт = require("../../ᴜʟᴛʀᴏɴ/catch");
 const ffmpeg = require(`fluent-ffmpeg`);
 const ytdl = require(`ytdl-core`);
@@ -40,10 +40,10 @@ module.exports = {
             caption: `*⚠️Seems like someone forgot to give URL!*
 
 *Usage Example*
-${UltronSitreper.ULTRONIX}ytdl <URL>
+${ꜱɪɢɴ.ULTRONIX}ytdl <URL>
 
 *NOTE:*
-You Can Get URL by using ${UltronSitreper.ULTRONIX}yts <song-name>`,
+You Can Get URL by using ${ꜱɪɢɴ.ULTRONIX}yts <song-name>`,
           }
         )
         .catch((cᴇʀʀᴏʀ) => {
@@ -63,10 +63,10 @@ You Can Get URL by using ${UltronSitreper.ULTRONIX}yts <song-name>`,
             caption: `*⚠️Seems like ${Arc[0]} is not YouTube URL!*
 
 *Usage Example*
-${UltronSitreper.ULTRONIX}ytdl <URL>
+${ꜱɪɢɴ.ULTRONIX}ytdl <URL>
 
 *NOTE:*
-You Can Get URL by using ${UltronSitreper.ULTRONIX}yts <song-name>`,
+You Can Get URL by using ${ꜱɪɢɴ.ULTRONIX}yts <song-name>`,
           }
         )
         .catch((cᴇʀʀᴏʀ) => {

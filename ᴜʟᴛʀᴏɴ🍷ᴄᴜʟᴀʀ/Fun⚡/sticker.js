@@ -2,7 +2,7 @@
 // 🎮ᴜʟᴛʀᴏɴ™ 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..
 // ===============================================================================
 const { MessageType, MimetypeMap } = require(`@adiwajshing/baileys`);
-const UltronSitreper = require(`../../ᴜʟᴛʀᴏɴ/UltronSitreper`);
+const ꜱɪɢɴ = require(`../../ᴜʟᴛʀᴏɴ/ꜱɪɢɴ`);
 const ℓιєηт = require("../../ᴜʟᴛʀᴏɴ/catch");
 const ffmpeg = require(`fluent-ffmpeg`);
 const fs = require(`fs`);
@@ -11,7 +11,7 @@ module.exports = {
   name: `sticker`,
   commandType: "Fun⚡",
   description: `Module to convert image to sticker`,
-  ᴜʟᴛʀᴏɴʍօʀɛ: `Use this module to convert any image from your chat to a sticker. Reply to an image message with the module  *${UltronSitreper.ULTRONIX}sticker*  to convert and send that image as a sticker.`,
+  ᴜʟᴛʀᴏɴʍօʀɛ: `Use this module to convert any image from your chat to a sticker. Reply to an image message with the module  *${ꜱɪɢɴ.ULTRONIX}sticker*  to convert and send that image as a sticker.`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     try {
       const convertToSticker = async (imageId, replyChat) => {

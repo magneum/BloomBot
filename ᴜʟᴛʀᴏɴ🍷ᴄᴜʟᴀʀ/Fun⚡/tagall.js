@@ -3,13 +3,13 @@
 // ===============================================================================
 const ℓιєηт = require("../../ᴜʟᴛʀᴏɴ/catch");
 const { MessageType } = require(`@adiwajshing/baileys`);
-const UltronSitreper = require(`../../ᴜʟᴛʀᴏɴ/UltronSitreper`);
+const ꜱɪɢɴ = require(`../../ᴜʟᴛʀᴏɴ/ꜱɪɢɴ`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
   name: `tagall`,
   commandType: "Fun⚡",
   description: `Module to tag evryone in a group.`,
-  ᴜʟᴛʀᴏɴʍօʀɛ: `Use this module to tag everyone in the group by either replying to a message or simply using  *${UltronSitreper.ULTRONIX}tagall*  module.`,
+  ᴜʟᴛʀᴏɴʍօʀɛ: `Use this module to tag everyone in the group by either replying to a message or simply using  *${ꜱɪɢɴ.ULTRONIX}tagall*  module.`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     try {
       if (!ᴜʟᴛʀᴏɴ.isGroup) {
@@ -71,7 +71,7 @@ module.exports = {
         ᴜʟᴛʀᴏɴ.chatId,
         `*🎮ᴜʟᴛʀᴏɴ™* 𝐝𝐢𝐝𝐧'𝐭 𝐰𝐨𝐫𝐤 𝐚𝐬 𝐞𝐱𝐩𝐞𝐜𝐭𝐞𝐝❗
 
-💡𝗛𝗲𝗿𝗲 𝗶𝘀 𝗮 𝘀𝗺𝗮𝗹𝗹 𝗲𝗿𝗿𝗼𝗿 𝗿𝗲𝗽𝗼𝗿𝘁 𝗮𝗻𝗱 𝘁𝗼 𝗹𝗼𝗴 𝘁𝗵𝗲 𝗿𝗲𝗽𝗼𝗿𝘁 𝘂𝘀𝗲 ${UltronSitreper.ULTRONIX}𝗿𝗲𝗽𝗼𝗿𝘁
+💡𝗛𝗲𝗿𝗲 𝗶𝘀 𝗮 𝘀𝗺𝗮𝗹𝗹 𝗲𝗿𝗿𝗼𝗿 𝗿𝗲𝗽𝗼𝗿𝘁 𝗮𝗻𝗱 𝘁𝗼 𝗹𝗼𝗴 𝘁𝗵𝗲 𝗿𝗲𝗽𝗼𝗿𝘁 𝘂𝘀𝗲 ${ꜱɪɢɴ.ULTRONIX}𝗿𝗲𝗽𝗼𝗿𝘁
 ⚠️𝗘𝗿𝗿𝗼𝗿
 • ${cᴇʀʀᴏʀ}`,
         MessageType.text

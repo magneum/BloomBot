@@ -3,14 +3,14 @@
 // ===============================================================================
 const ℓιєηт = require("../../ᴜʟᴛʀᴏɴ/catch");
 const { MessageType } = require(`@adiwajshing/baileys`);
-const UltronSitreper = require(`../../ᴜʟᴛʀᴏɴ/UltronSitreper`);
+const ꜱɪɢɴ = require(`../../ᴜʟᴛʀᴏɴ/ꜱɪɢɴ`);
 const got = require(`got`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
   name: `neko`,
   commandType: "Fun⚡",
   description: `Use this module to paste your text to a pastebin (NEKOBIN).
-Enter text with the module  *${UltronSitreper.ULTRONIX}neko* .`,
+Enter text with the module  *${ꜱɪɢɴ.ULTRONIX}neko* .`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     try {
       if (Arc.length === 0 && !ᴜʟᴛʀᴏɴ.isReply) {
@@ -27,8 +27,8 @@ Enter text with the module  *${UltronSitreper.ULTRONIX}neko* .`,
               caption: `*⚠️Seems like someone forgot to give text!*
 
 *Usage Example*
-${UltronSitreper.ULTRONIX}neko <text>
-or reply to the text with ${UltronSitreper.ULTRONIX}neko
+${ꜱɪɢɴ.ULTRONIX}neko <text>
+or reply to the text with ${ꜱɪɢɴ.ULTRONIX}neko
 `,
             }
           )
@@ -72,7 +72,7 @@ or reply to the text with ${UltronSitreper.ULTRONIX}neko
           ᴜʟᴛʀᴏɴ.chatId,
           `*🎮ᴜʟᴛʀᴏɴ™* 𝐝𝐢𝐝𝐧'𝐭 𝐰𝐨𝐫𝐤 𝐚𝐬 𝐞𝐱𝐩𝐞𝐜𝐭𝐞𝐝❗
 
-💡𝗛𝗲𝗿𝗲 𝗶𝘀 𝗮 𝘀𝗺𝗮𝗹𝗹 𝗲𝗿𝗿𝗼𝗿 𝗿𝗲𝗽𝗼𝗿𝘁 𝗮𝗻𝗱 𝘁𝗼 𝗹𝗼𝗴 𝘁𝗵𝗲 𝗿𝗲𝗽𝗼𝗿𝘁 𝘂𝘀𝗲 ${UltronSitreper.ULTRONIX}𝗿𝗲𝗽𝗼𝗿𝘁
+💡𝗛𝗲𝗿𝗲 𝗶𝘀 𝗮 𝘀𝗺𝗮𝗹𝗹 𝗲𝗿𝗿𝗼𝗿 𝗿𝗲𝗽𝗼𝗿𝘁 𝗮𝗻𝗱 𝘁𝗼 𝗹𝗼𝗴 𝘁𝗵𝗲 𝗿𝗲𝗽𝗼𝗿𝘁 𝘂𝘀𝗲 ${ꜱɪɢɴ.ULTRONIX}𝗿𝗲𝗽𝗼𝗿𝘁
 ⚠️𝗘𝗿𝗿𝗼𝗿
 • ${cᴇʀʀᴏʀ}`,
           MessageType.text
@@ -82,7 +82,7 @@ or reply to the text with ${UltronSitreper.ULTRONIX}neko
           ᴜʟᴛʀᴏɴ.chatId,
           `*🎮ᴜʟᴛʀᴏɴ™* 𝐝𝐢𝐝𝐧'𝐭 𝐰𝐨𝐫𝐤 𝐚𝐬 𝐞𝐱𝐩𝐞𝐜𝐭𝐞𝐝❗
 
-💡𝗛𝗲𝗿𝗲 𝗶𝘀 𝗮 𝘀𝗺𝗮𝗹𝗹 𝗲𝗿𝗿𝗼𝗿 𝗿𝗲𝗽𝗼𝗿𝘁 𝗮𝗻𝗱 𝘁𝗼 𝗹𝗼𝗴 𝘁𝗵𝗲 𝗿𝗲𝗽𝗼𝗿𝘁 𝘂𝘀𝗲 ${UltronSitreper.ULTRONIX}𝗿𝗲𝗽𝗼𝗿𝘁
+💡𝗛𝗲𝗿𝗲 𝗶𝘀 𝗮 𝘀𝗺𝗮𝗹𝗹 𝗲𝗿𝗿𝗼𝗿 𝗿𝗲𝗽𝗼𝗿𝘁 𝗮𝗻𝗱 𝘁𝗼 𝗹𝗼𝗴 𝘁𝗵𝗲 𝗿𝗲𝗽𝗼𝗿𝘁 𝘂𝘀𝗲 ${ꜱɪɢɴ.ULTRONIX}𝗿𝗲𝗽𝗼𝗿𝘁
 ⚠️𝗘𝗿𝗿𝗼𝗿
 • ${cᴇʀʀᴏʀ}`,
           MessageType.text

@@ -4,17 +4,17 @@
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const Carbon = require(`unofficial-carbon-now`);
 const ℓιєηт = require("../../ᴜʟᴛʀᴏɴ/catch");
-const UltronSitreper = require(`../../ᴜʟᴛʀᴏɴ/UltronSitreper`);
+const ꜱɪɢɴ = require(`../../ᴜʟᴛʀᴏɴ/ꜱɪɢɴ`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
   name: `carbon`,
   commandType: "Fun⚡",
   description: `This module can be used to convert text/code into carbon images.
 Example Usage,
-*${UltronSitreper.ULTRONIX}carbon <text>* 
-*${UltronSitreper.ULTRONIX}carbon*  and reply to a text message.
-Use the -t flag after  *${UltronSitreper.ULTRONIX}carbon*  to get the list of themes availble.
-In order to specify the theme, use  *${UltronSitreper.ULTRONIX}carbon <text> -t <theme>* .`,
+*${ꜱɪɢɴ.ULTRONIX}carbon <text>* 
+*${ꜱɪɢɴ.ULTRONIX}carbon*  and reply to a text message.
+Use the -t flag after  *${ꜱɪɢɴ.ULTRONIX}carbon*  to get the list of themes availble.
+In order to specify the theme, use  *${ꜱɪɢɴ.ULTRONIX}carbon <text> -t <theme>* .`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     try {
       let themes = [
@@ -60,9 +60,9 @@ In order to specify the theme, use  *${UltronSitreper.ULTRONIX}carbon <text> -t 
               mimetype: Mimetype.jpeg,
               caption: `*☢️ᴜʟᴛʀᴏɴ*\n\nNo input provided.
 Please use the module  
-*${UltronSitreper.ULTRONIX}carbon <text> -t <theme>*  
+*${ꜱɪɢɴ.ULTRONIX}carbon <text> -t <theme>*  
 or reply to a text message with  
-*${UltronSitreper.ULTRONIX}carbon*  to carbonize the text.
+*${ꜱɪɢɴ.ULTRONIX}carbon*  to carbonize the text.
 
 *----> 𝐓𝐇𝐄𝐌𝐄𝐒 <----*
 _3024 night_  *|*  _a11y dark_  
@@ -121,7 +121,7 @@ _yeti_  *|*  _zenburn_`,
                 .sendMessage(
                   ᴜʟᴛʀᴏɴ.chatId,
                   `*☢️ᴜʟᴛʀᴏɴ*\n\nNo input provided.
-Please use the module  *${UltronSitreper.ULTRONIX}carbon <text>*  or reply to a text message with  *${UltronSitreper.ULTRONIX}carbon*  to carbonize the text.`,
+Please use the module  *${ꜱɪɢɴ.ULTRONIX}carbon <text>*  or reply to a text message with  *${ꜱɪɢɴ.ULTRONIX}carbon*  to carbonize the text.`,
                   MessageType.text
                 )
                 .catch((cᴇʀʀᴏʀ) => {
@@ -138,7 +138,7 @@ Please use the module  *${UltronSitreper.ULTRONIX}carbon <text>*  or reply to a 
               .sendMessage(
                 ᴜʟᴛʀᴏɴ.chatId,
                 `*☢️ᴜʟᴛʀᴏɴ*\n\nPlease enter a valid theme.
-Do note that theme names are  *case sensitive*${UltronSitreper.ULTRONIX}`,
+Do note that theme names are  *case sensitive*${ꜱɪɢɴ.ULTRONIX}`,
                 MessageType.text
               )
               .catch((cᴇʀʀᴏʀ) => {
@@ -185,7 +185,7 @@ Colour Scheme: {}`.format(themeInput),
         ᴜʟᴛʀᴏɴ.chatId,
         `*🎮ᴜʟᴛʀᴏɴ™* 𝐝𝐢𝐝𝐧'𝐭 𝐰𝐨𝐫𝐤 𝐚𝐬 𝐞𝐱𝐩𝐞𝐜𝐭𝐞𝐝❗
 
-💡𝗛𝗲𝗿𝗲 𝗶𝘀 𝗮 𝘀𝗺𝗮𝗹𝗹 𝗲𝗿𝗿𝗼𝗿 𝗿𝗲𝗽𝗼𝗿𝘁 𝗮𝗻𝗱 𝘁𝗼 𝗹𝗼𝗴 𝘁𝗵𝗲 𝗿𝗲𝗽𝗼𝗿𝘁 𝘂𝘀𝗲 ${UltronSitreper.ULTRONIX}𝗿𝗲𝗽𝗼𝗿𝘁
+💡𝗛𝗲𝗿𝗲 𝗶𝘀 𝗮 𝘀𝗺𝗮𝗹𝗹 𝗲𝗿𝗿𝗼𝗿 𝗿𝗲𝗽𝗼𝗿𝘁 𝗮𝗻𝗱 𝘁𝗼 𝗹𝗼𝗴 𝘁𝗵𝗲 𝗿𝗲𝗽𝗼𝗿𝘁 𝘂𝘀𝗲 ${ꜱɪɢɴ.ULTRONIX}𝗿𝗲𝗽𝗼𝗿𝘁
 ⚠️𝗘𝗿𝗿𝗼𝗿
 • ${cᴇʀʀᴏʀ}`,
         MessageType.text

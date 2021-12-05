@@ -3,14 +3,14 @@
 // ===============================================================================
 const ℓιєηт = require("../../ᴜʟᴛʀᴏɴ/catch");
 const { MessageType } = require(`@adiwajshing/baileys`);
-const UltronSitreper = require(`../../ᴜʟᴛʀᴏɴ/UltronSitreper`);
+const ꜱɪɢɴ = require(`../../ᴜʟᴛʀᴏɴ/ꜱɪɢɴ`);
 const ud = require(`urban-dictionary`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
   name: `ud`,
   commandType: "Fun⚡",
   description: `Urban Dictionary`,
-  ᴜʟᴛʀᴏɴʍօʀɛ: `Use this module to find the meaning of a word in Urban Dictionary. Enter  *${UltronSitreper.ULTRONIX}ud*  module.`,
+  ᴜʟᴛʀᴏɴʍօʀɛ: `Use this module to find the meaning of a word in Urban Dictionary. Enter  *${ꜱɪɢɴ.ULTRONIX}ud*  module.`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     try {
       var text = ``;
@@ -29,7 +29,7 @@ module.exports = {
               caption: `*⚠️Seems like someone forgot to give text!*
 
 *Usage Example*
-*${UltronSitreper.ULTRONIX}ud <text>`,
+*${ꜱɪɢɴ.ULTRONIX}ud <text>`,
             }
           )
           .catch((cᴇʀʀᴏʀ) => {
@@ -71,7 +71,7 @@ module.exports = {
         ᴜʟᴛʀᴏɴ.chatId,
         `*🎮ᴜʟᴛʀᴏɴ™* 𝐝𝐢𝐝𝐧'𝐭 𝐰𝐨𝐫𝐤 𝐚𝐬 𝐞𝐱𝐩𝐞𝐜𝐭𝐞𝐝❗
 
-💡𝗛𝗲𝗿𝗲 𝗶𝘀 𝗮 𝘀𝗺𝗮𝗹𝗹 𝗲𝗿𝗿𝗼𝗿 𝗿𝗲𝗽𝗼𝗿𝘁 𝗮𝗻𝗱 𝘁𝗼 𝗹𝗼𝗴 𝘁𝗵𝗲 𝗿𝗲𝗽𝗼𝗿𝘁 𝘂𝘀𝗲 ${UltronSitreper.ULTRONIX}𝗿𝗲𝗽𝗼𝗿𝘁
+💡𝗛𝗲𝗿𝗲 𝗶𝘀 𝗮 𝘀𝗺𝗮𝗹𝗹 𝗲𝗿𝗿𝗼𝗿 𝗿𝗲𝗽𝗼𝗿𝘁 𝗮𝗻𝗱 𝘁𝗼 𝗹𝗼𝗴 𝘁𝗵𝗲 𝗿𝗲𝗽𝗼𝗿𝘁 𝘂𝘀𝗲 ${ꜱɪɢɴ.ULTRONIX}𝗿𝗲𝗽𝗼𝗿𝘁
 ⚠️𝗘𝗿𝗿𝗼𝗿
 • ${cᴇʀʀᴏʀ}`,
         MessageType.text

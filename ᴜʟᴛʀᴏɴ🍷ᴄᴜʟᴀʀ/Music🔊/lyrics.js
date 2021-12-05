@@ -2,14 +2,14 @@
 // 🎮ᴜʟᴛʀᴏɴ™ 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..
 // ===============================================================================
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
-const UltronSitreper = require(`../../ᴜʟᴛʀᴏɴ/UltronSitreper`);
+const ꜱɪɢɴ = require(`../../ᴜʟᴛʀᴏɴ/ꜱɪɢɴ`);
 const ℓιєηт = require("../../ᴜʟᴛʀᴏɴ/catch");
 const got = require(`got`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
   name: `lyrics`,
   commandType: "Music🔊",
-  description: `Use this module to find the lyrics of a song by using  *${UltronSitreper.ULTRONIX}lyrics*  module.`,
+  description: `Use this module to find the lyrics of a song by using  *${ꜱɪɢɴ.ULTRONIX}lyrics*  module.`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     var song = ``;
     if (ᴜʟᴛʀᴏɴ.isReply) {
@@ -27,7 +27,7 @@ module.exports = {
             caption: `*⚠️Seems like someone forgot to give song name!*
 
 *Usage Example*
-${UltronSitreper.ULTRONIX}lyrics <song-name>`,
+${ꜱɪɢɴ.ULTRONIX}lyrics <song-name>`,
           }
         )
         .catch((cᴇʀʀᴏʀ) => {

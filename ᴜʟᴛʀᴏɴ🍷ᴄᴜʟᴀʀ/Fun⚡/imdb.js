@@ -4,7 +4,7 @@
 const imdb = require("imdb-api");
 const ℓιєηт = require("../../ᴜʟᴛʀᴏɴ/catch");
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
-const UltronSitreper = require(`../../ᴜʟᴛʀᴏɴ/UltronSitreper`);
+const ꜱɪɢɴ = require(`../../ᴜʟᴛʀᴏɴ/ꜱɪɢɴ`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
   name: `imdb`,
@@ -32,7 +32,7 @@ module.exports = {
       return;
     }
     const imob = new imdb.Client({
-      apiKey: UltronSitreper.IMDB,
+      apiKey: ꜱɪɢɴ.IMDB,
     });
     let movie = await imob.get({
       name: Arc.join(" "),

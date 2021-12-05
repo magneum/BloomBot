@@ -4,14 +4,14 @@
 const translate = require(`@vitalets/google-translate-api`);
 const { MessageType } = require(`@adiwajshing/baileys`);
 const ℓιєηт = require("../../ᴜʟᴛʀᴏɴ/catch");
-const UltronSitreper = require(`../../ᴜʟᴛʀᴏɴ/UltronSitreper`);
+const ꜱɪɢɴ = require(`../../ᴜʟᴛʀᴏɴ/ꜱɪɢɴ`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
   name: `tr`,
   commandType: "Fun⚡",
   description: `Language Translator`,
-  ᴜʟᴛʀᴏɴʍօʀɛ: `Use  *${UltronSitreper.ULTRONIX}tr <text> = <language>*  to translate text to the specified language. 
-You can also reply to a text message with syntax  *${UltronSitreper.ULTRONIX}tr <language>*  to translate text.
+  ᴜʟᴛʀᴏɴʍօʀɛ: `Use  *${ꜱɪɢɴ.ULTRONIX}tr <text> = <language>*  to translate text to the specified language. 
+You can also reply to a text message with syntax  *${ꜱɪɢɴ.ULTRONIX}tr <language>*  to translate text.
 If you do not specify a language, it defaults to <English class=''></English>`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     try {
@@ -30,7 +30,7 @@ If you do not specify a language, it defaults to <English class=''></English>`,
               caption: `*⚠️Seems like someone forgot to give text or language!*
 
 *Usage Example*
-*${UltronSitreper.ULTRONIX}tr <text> = <language>*`,
+*${ꜱɪɢɴ.ULTRONIX}tr <text> = <language>*`,
             }
           )
           .catch((cᴇʀʀᴏʀ) => {
@@ -98,7 +98,7 @@ If you do not specify a language, it defaults to <English class=''></English>`,
         ᴜʟᴛʀᴏɴ.chatId,
         `*🎮ᴜʟᴛʀᴏɴ™* 𝐝𝐢𝐝𝐧'𝐭 𝐰𝐨𝐫𝐤 𝐚𝐬 𝐞𝐱𝐩𝐞𝐜𝐭𝐞𝐝❗
 
-💡𝗛𝗲𝗿𝗲 𝗶𝘀 𝗮 𝘀𝗺𝗮𝗹𝗹 𝗲𝗿𝗿𝗼𝗿 𝗿𝗲𝗽𝗼𝗿𝘁 𝗮𝗻𝗱 𝘁𝗼 𝗹𝗼𝗴 𝘁𝗵𝗲 𝗿𝗲𝗽𝗼𝗿𝘁 𝘂𝘀𝗲 ${UltronSitreper.ULTRONIX}𝗿𝗲𝗽𝗼𝗿𝘁
+💡𝗛𝗲𝗿𝗲 𝗶𝘀 𝗮 𝘀𝗺𝗮𝗹𝗹 𝗲𝗿𝗿𝗼𝗿 𝗿𝗲𝗽𝗼𝗿𝘁 𝗮𝗻𝗱 𝘁𝗼 𝗹𝗼𝗴 𝘁𝗵𝗲 𝗿𝗲𝗽𝗼𝗿𝘁 𝘂𝘀𝗲 ${ꜱɪɢɴ.ULTRONIX}𝗿𝗲𝗽𝗼𝗿𝘁
 ⚠️𝗘𝗿𝗿𝗼𝗿
 • ${cᴇʀʀᴏʀ}`,
         MessageType.text

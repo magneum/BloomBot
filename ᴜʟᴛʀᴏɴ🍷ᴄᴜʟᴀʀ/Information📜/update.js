@@ -1,8 +1,8 @@
 const Heroku = require("heroku-client");
 const ℓιєηт = require("../../ᴜʟᴛʀᴏɴ/catch");
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
-const UltronSitreper = require(`../../ᴜʟᴛʀᴏɴ/UltronSitreper`);
-var heroku = new Heroku({ token: UltronSitreper.HEROKU_API });
+const ꜱɪɢɴ = require(`../../ᴜʟᴛʀᴏɴ/ꜱɪɢɴ`);
+var heroku = new Heroku({ token: ꜱɪɢɴ.HEROKU_API });
 
 module.exports = {
   name: `update`,
@@ -46,7 +46,7 @@ Only My Owner Can use that command!`,
         .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴜʟᴛʀᴏɴ));
       heroku
         .delete(
-          "/apps/" + UltronSitreper.HEROKU_BOT_NAME + "/dynos/" + "worker"
+          "/apps/" + ꜱɪɢɴ.HEROKU_BOT_NAME + "/dynos/" + "worker"
         )
         .then((x) => console.log(x));
     }

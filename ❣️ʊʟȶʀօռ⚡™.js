@@ -1,22 +1,15 @@
 // ===============================================================================
 // 🎮ᴜʟᴛʀᴏɴ™ 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..
 // ===============================================================================
-const {
-  registerFont,
-  createCanvas,
-  loadImage
-} = require(`canvas`);
+const { registerFont, createCanvas, loadImage } = require(`canvas`);
 registerFont(`./ᴜʟᴛʀᴏɴ/Honeycomb-Round.otf`, {
   family: `Honeycomb`,
 });
 registerFont(`./ᴜʟᴛʀᴏɴ/LobsterTwo-Bold.ttf`, {
   family: `Lobster`,
 });
-const {
-  MessageType,
-  Mimetype
-} = require(`@adiwajshing/baileys`);
-const UltronSitreper = require(`./ᴜʟᴛʀᴏɴ/UltronSitreper`);
+const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
+const ꜱɪɢɴ = require(`./ᴜʟᴛʀᴏɴ/ꜱɪɢɴ`);
 const ᴜʟᴛʀᴏɴֆʏռօք = require(`./ᴜʟᴛʀᴏɴ/UltronCOrex`);
 var randomMC = require(`random-material-color`);
 const gitPull = require(`./ᴜʟᴛʀᴏɴ/ᴜʟᴛʀᴏɴɢɪᴛ`);
@@ -24,7 +17,7 @@ const ɠɠᴜʟᴛʀᴏɴ = require(`./ᴜʟᴛʀᴏɴ/ɠɠᴜʟᴛʀᴏɴ`);
 const ᴜʟᴛʀᴏɴǟքք = require(`./ᴜʟᴛʀᴏɴ/helper`);
 const clientult = require(`./ᴜʟᴛʀᴏɴ/ɠɠʊ`);
 const download = require(`download-file`);
-const ᴜʟᴛʀᴏɴsql = UltronSitreper.POSTQL;
+const ᴜʟᴛʀᴏɴsql = ꜱɪɢɴ.POSTQL;
 const ᴜʟᴛʀᴏɴSudo = [`block`, `unblock`];
 var rg = require(`random-greetings`);
 const Kolor = require(`chalk`);
@@ -37,10 +30,7 @@ var υℓтяσηℓιєηт = ᴜʟᴛʀᴏɴֆʏռօք.WhatsApp;
 async function ᴜʟᴛʀᴏɴRunner() {
   υℓтяσηℓιєηт.logger.level = `error`;
   var UltronSitrep = new Map();
-  if (
-    UltronSitreper.HEROKU_API === "Null" ||
-    UltronSitreper.HEROKU_BOT_NAME === "Null"
-  ) {
+  if (ꜱɪɢɴ.HEROKU_API === "Null" || ꜱɪɢɴ.HEROKU_BOT_NAME === "Null") {
     console.log(
       Kolor.yellowBright.bold(
         `❌⬰ seems like heroku vars are invalid.\nPlease check and retry.`
@@ -51,7 +41,7 @@ async function ᴜʟᴛʀᴏɴRunner() {
   console.log(Kolor.yellowBright.bold(`[INFO] Checking for updates...`));
   await gitPull();
   try {
-    var session = ᴜʟᴛʀᴏɴֆʏռօք.ultronreignite(UltronSitreper.ULTRON);
+    var session = ᴜʟᴛʀᴏɴֆʏռօք.ultronreignite(ꜱɪɢɴ.ULTRON);
     υℓтяσηℓιєηт.loadAuthInfo(session);
   } catch (cᴇʀʀᴏʀ) {
     if (
@@ -120,10 +110,12 @@ async function ᴜʟᴛʀᴏɴRunner() {
       )
     );
     await υℓтяσηℓιєηт.sendMessage(
-      υℓтяσηℓιєηт.user.jid, {
+      υℓтяσηℓιєηт.user.jid,
+      {
         url: `./ᴜʟᴛʀᴏɴ/ᴜʟᴛʀᴏɴ.png`,
       },
-      MessageType.image, {
+      MessageType.image,
+      {
         mimetype: Mimetype.png,
         caption: `*_⚡𝐔𝐋𝐓𝐑𝐎𝐍™ 𝗶𝘀 𝗥𝗲𝗮𝗱𝘆!*
 💡𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 
@@ -192,18 +184,21 @@ async function ᴜʟᴛʀᴏɴRunner() {
             "https://i.postimg.cc/bJmWSkFL/depositphotos-39258143-stock-illustration-businessman-avatar-profile-picture.jpg";
         }
         download(
-          ppimg, {
+          ppimg,
+          {
             directory: "./ᴛᴇᴍᴘ/",
             filename: "ppimg.jpg",
           },
           function (err) {
             if (err) throw err;
-            const weltext = greets[Math.floor(Math.random() * greets.length)]
+            const weltext = greets[Math.floor(Math.random() * greets.length)];
             return υℓтяσηℓιєηт.sendMessage(
-              groupId, {
+              groupId,
+              {
                 url: "./ᴛᴇᴍᴘ/ppimg.jpg",
               },
-              MessageType.image, {
+              MessageType.image,
+              {
                 mimetype: Mimetype.png,
                 caption: `@${num.split("@")[0]}\n${weltext}
 *꧁•⊹٭---------------٭⊹•꧂*
@@ -283,9 +278,9 @@ ${Fetched.message}`,
     }
     chat = chat.messages.all()[0];
     var sender = chat.key.remoteJid;
-    const groupMetadata = sender.endsWith(`@g.us`) ?
-      await υℓтяσηℓιєηт.groupMetadata(sender) :
-      ``;
+    const groupMetadata = sender.endsWith(`@g.us`)
+      ? await υℓтяσηℓιєηт.groupMetadata(sender)
+      : ``;
     var ᴜʟᴛʀᴏɴ = ᴜʟᴛʀᴏɴǟքք.resolve(chat, υℓтяσηℓιєηт, groupMetadata);
     const adminmodls = [
       `add`,
@@ -302,7 +297,7 @@ ${Fetched.message}`,
       `tagall`,
     ];
     if (ᴜʟᴛʀᴏɴ.isCmd && !ᴜʟᴛʀᴏɴ.fromMe && !ᴜʟᴛʀᴏɴ.isSenderSUDO) {
-      if (UltronSitreper.PRIVACY === `public`) {
+      if (ꜱɪɢɴ.PRIVACY === `public`) {
         if (
           adminmodls.indexOf(ᴜʟᴛʀᴏɴ.moduleName) >= 0 &&
           !ᴜʟᴛʀᴏɴ.isSenderGroupAdmin
@@ -339,12 +334,14 @@ ${Fetched.message}`,
               ᴜʟᴛʀᴏɴ.chatId,
               `ᴜʟᴛʀᴏɴ is Alive!.
 I guess you were trying to use my modules in *${ᴜʟᴛʀᴏɴ.groupName}*. However, the bot is currently in ${worktype} mode. This enables only the owner and sudo clientult to use the module *${moduleName}* .
-If you are keen to use my features, you can deploy ᴜʟᴛʀᴏɴ on your own account without much effort, in less than 5 minutes! Check out the links given below.`, {
+If you are keen to use my features, you can deploy ᴜʟᴛʀᴏɴ on your own account without much effort, in less than 5 minutes! Check out the links given below.`,
+              {
                 worktype: `public`,
                 groupName: ᴜʟᴛʀᴏɴ.groupName ? ᴜʟᴛʀᴏɴ.groupName : `private chat`,
                 moduleName: ᴜʟᴛʀᴏɴ.moduleName,
               },
-              MessageType.text, {
+              MessageType.text,
+              {
                 contextInfo: {
                   stanzaId: chat.key.id,
                   participant: ᴜʟᴛʀᴏɴ.sender,
@@ -356,7 +353,7 @@ If you are keen to use my features, you can deploy ᴜʟᴛʀᴏɴ on your own a
             );
           }
         }
-      } else if (UltronSitreper.PRIVACY === `private` && !ᴜʟᴛʀᴏɴ.isSenderSUDO) {
+      } else if (ꜱɪɢɴ.PRIVACY === `private` && !ᴜʟᴛʀᴏɴ.isSenderSUDO) {
         console.log(
           Kolor.redBright.bold(`💡⬰  commmand `),
           Kolor.greenBright.bold(`${ᴜʟᴛʀᴏɴ.moduleName}`),
@@ -375,12 +372,14 @@ If you are keen to use my features, you can deploy ᴜʟᴛʀᴏɴ on your own a
             ᴜʟᴛʀᴏɴ.chatId,
             `ᴜʟᴛʀᴏɴ is Alive!.
 I guess you were trying to use my modules in *${ᴜʟᴛʀᴏɴ.groupName}*. However, the bot is currently in ${worktype} mode. This enables only the owner and sudo clientult to use the module *${moduleName}* .
-If you are keen to use my features, you can deploy ᴜʟᴛʀᴏɴ on your own account without much effort, in less than 5 minutes! Check out the links given below.`, {
+If you are keen to use my features, you can deploy ᴜʟᴛʀᴏɴ on your own account without much effort, in less than 5 minutes! Check out the links given below.`,
+            {
               worktype: `private`,
               groupName: ᴜʟᴛʀᴏɴ.groupName ? ᴜʟᴛʀᴏɴ.groupName : `private chat`,
               moduleName: ᴜʟᴛʀᴏɴ.moduleName,
             },
-            MessageType.text, {
+            MessageType.text,
+            {
               contextInfo: {
                 stanzaId: chat.key.id,
                 participant: ᴜʟᴛʀᴏɴ.sender,
@@ -404,14 +403,16 @@ If you are keen to use my features, you can deploy ᴜʟᴛʀᴏɴ on your own a
       );
       const module = UltronSitrep.get(ᴜʟᴛʀᴏɴ.moduleName);
       var Arc = ᴜʟᴛʀᴏɴ.body.trim().split(/\s+/).slice(1);
-      var UltronRegex = new RegExp(UltronSitreper.ULTRONIX, `g`);
+      var UltronRegex = new RegExp(ꜱɪɢɴ.ULTRONIX, `g`);
       var Ultronf = /\/\^\[(.*)+\]\/\g/g.exec(UltronRegex)[1];
       if (!module) {
         return υℓтяσηℓιєηт.sendMessage(
-          ᴜʟᴛʀᴏɴ.chatId, {
+          ᴜʟᴛʀᴏɴ.chatId,
+          {
             url: `https://i.postimg.cc/3RLJz2r2/Invalid.png`,
           },
-          MessageType.image, {
+          MessageType.image,
+          {
             mimetype: Mimetype.png,
             caption: `*_⚠️𝗜𝗻𝘃𝗮𝗹𝗶𝗱 ᴜʟᴛʀᴏɴ 𝗖𝗼𝗺𝗺𝗮𝗻𝗱*
 
