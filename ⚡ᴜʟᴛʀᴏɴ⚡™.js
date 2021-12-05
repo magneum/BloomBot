@@ -1,14 +1,21 @@
 // ===============================================================================
 // 🎮ᴜʟᴛʀᴏɴ™ 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..
 // ===============================================================================
-const { registerFont, createCanvas, loadImage } = require(`canvas`);
+const {
+  registerFont,
+  createCanvas,
+  loadImage
+} = require(`canvas`);
 registerFont(`./ᴜʟᴛʀᴏɴ/Honeycomb-Round.otf`, {
   family: `Honeycomb`,
 });
 registerFont(`./ᴜʟᴛʀᴏɴ/LobsterTwo-Bold.ttf`, {
   family: `Lobster`,
 });
-const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
+const {
+  MessageType,
+  Mimetype
+} = require(`@adiwajshing/baileys`);
 const UltronSitreper = require(`./ᴜʟᴛʀᴏɴ/UltronSitreper`);
 const ᴜʟᴛʀᴏɴֆʏռօք = require(`./ᴜʟᴛʀᴏɴ/UltronCOrex`);
 var randomMC = require(`random-material-color`);
@@ -16,6 +23,7 @@ const gitPull = require(`./ᴜʟᴛʀᴏɴ/ᴜʟᴛʀᴏɴɢɪᴛ`);
 const ɠɠᴜʟᴛʀᴏɴ = require(`./ᴜʟᴛʀᴏɴ/ɠɠᴜʟᴛʀᴏɴ`);
 const ᴜʟᴛʀᴏɴǟքք = require(`./ᴜʟᴛʀᴏɴ/helper`);
 const clientult = require(`./ᴜʟᴛʀᴏɴ/ɠɠʊ`);
+const download = require(`download-file`);
 const ᴜʟᴛʀᴏɴsql = UltronSitreper.POSTQL;
 const ᴜʟᴛʀᴏɴSudo = [`block`, `unblock`];
 var rg = require(`random-greetings`);
@@ -112,14 +120,12 @@ async function ᴜʟᴛʀᴏɴRunner() {
       )
     );
     await υℓтяσηℓιєηт.sendMessage(
-      υℓтяσηℓιєηт.user.jid,
-      {
+      υℓтяσηℓιєηт.user.jid, {
         url: `./ᴜʟᴛʀᴏɴ/ᴜʟᴛʀᴏɴ.png`,
       },
-      MessageType.image,
-      {
+      MessageType.image, {
         mimetype: Mimetype.png,
-        caption: `*⚡𝐔𝐋𝐓𝐑𝐎𝐍™ 𝗶𝘀 𝗥𝗲𝗮𝗱𝘆!*
+        caption: `*_⚡𝐔𝐋𝐓𝐑𝐎𝐍™ 𝗶𝘀 𝗥𝗲𝗮𝗱𝘆!*
 💡𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 
 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..
 
@@ -150,28 +156,25 @@ async function ᴜʟᴛʀᴏɴRunner() {
           return;
         }
         var greets = [
-          `ID➛ ${parID}\nJust joined the server - glhf!`,
-          `ID➛ ${parID}\nJust joined. Everyone, look busy!`,
-          `ID➛ ${parID}\nJust joined. Can I get a heal?`,
-          `ID➛ ${parID}\nJoined your party.`,
-          `ID➛ ${parID}\nJoined. You must construct additional pylons.`,
-          `ID➛ ${parID}\nIs here.`,
-          `ID➛ ${parID}\nWelcome, Stay awhile and listen.`,
-          `ID➛ ${parID}\nWelcome, We were expecting you ( ͡° ͜ʖ ͡°)`,
-          `ID➛ ${parID}\nWelcome, We hope you brought pizza.`,
-          `ID➛ ${parID}\nWelcome Leave your weapons by the door.`,
-          `ID➛ ${parID}\nJust Appeared.`,
-          `ID➛ ${parID}\nSwoooosh. Just landed.`,
-          `ID➛ ${parID}\nBrace yourselves. Just joined the server.`,
-          `ID➛ ${parID}\nJust joined. Hide your bananas.`,
-          `ID➛ ${parID}\nJust arrived. Seems OP - please nerf.`,
-          `ID➛ ${parID}\nJust slid into the server.`,
-          `ID➛ ${parID}\nHas spawned in the server.`,
-          `ID➛ ${parID}\nShowed up!`,
-          `ID➛ ${parID}\nHopped into the server. Kangaroo!!`,
-          `ID➛ ${parID}\nJust showed up. Hold my beer.`,
+          `*_ᴊᴜꜱᴛ ᴊᴏɪɴᴇᴅ ᴛʜᴇ ꜱᴇʀᴠᴇʀ - ɢʟʜꜰ!_*`,
+          `*_ᴊᴜꜱᴛ ᴊᴏɪɴᴇᴅ. ᴇᴠᴇʀʏᴏɴᴇ, ʟᴏᴏᴋ ʙᴜꜱʏ!_*`,
+          `*_ᴊᴜꜱᴛ ᴊᴏɪɴᴇᴅ. ᴄᴀɴ ɪ ɢᴇᴛ ᴀ ʜᴇᴀʟ?_*`,
+          `*_ᴊᴏɪɴᴇᴅ ʏᴏᴜʀ ᴘᴀʀᴛʏ._*`,
+          `*_ᴊᴏɪɴᴇᴅ. ʏᴏᴜ ᴍᴜꜱᴛ ᴄᴏɴꜱᴛʀᴜᴄᴛ ᴀᴅᴅɪᴛɪᴏɴᴀʟ ᴘʏʟᴏɴꜱ._*`,
+          `*_ᴡᴇʟᴄᴏᴍᴇ, ꜱᴛᴀʏ ᴀᴡʜɪʟᴇ ᴀɴᴅ ʟɪꜱᴛᴇɴ._*`,
+          `*_ᴡᴇʟᴄᴏᴍᴇ, ᴡᴇ ᴡᴇʀᴇ ᴇxᴘᴇᴄᴛɪɴɢ ʏᴏᴜ._*`,
+          `*_ᴡᴇʟᴄᴏᴍᴇ, ᴡᴇ ʜᴏᴘᴇ ʏᴏᴜ ʙʀᴏᴜɢʜᴛ ᴘɪᴢᴢᴀ._*`,
+          `*_ᴡᴇʟᴄᴏᴍᴇ ʟᴇᴀᴠᴇ ʏᴏᴜʀ ᴡᴇᴀᴘᴏɴꜱ ʙʏ ᴛʜᴇ ᴅᴏᴏʀ._*`,
+          `*_ᴊᴜꜱᴛ ᴀᴘᴘᴇᴀʀᴇᴅ._*`,
+          `*_ꜱᴡᴏᴏᴏᴏꜱʜ. ᴊᴜꜱᴛ ʟᴀɴᴅᴇᴅ._*`,
+          `*_ʙʀᴀᴄᴇ ʏᴏᴜʀꜱᴇʟᴠᴇꜱ. ᴊᴜꜱᴛ ᴊᴏɪɴᴇᴅ ᴛʜᴇ ꜱᴇʀᴠᴇʀ._*`,
+          `*_ᴊᴜꜱᴛ ᴊᴏɪɴᴇᴅ. ʜɪᴅᴇ ʏᴏᴜʀ ʙᴀɴᴀɴᴀꜱ._*`,
+          `*_ᴊᴜꜱᴛ ᴀʀʀɪᴠᴇᴅ. ꜱᴇᴇᴍꜱ ᴏᴘ - ᴘʟᴇᴀꜱᴇ ɴᴇʀꜰ._*`,
+          `*_ᴊᴜꜱᴛ ꜱʟɪᴅ ɪɴᴛᴏ ᴛʜᴇ ꜱᴇʀᴠᴇʀ._*`,
+          `*_ʜᴀꜱ ꜱᴘᴀᴡɴᴇᴅ ɪɴ ᴛʜᴇ ꜱᴇʀᴠᴇʀ._*`,
+          `*_ʜᴏᴘᴘᴇᴅ ɪɴᴛᴏ ᴛʜᴇ ꜱᴇʀᴠᴇʀ. ᴋᴀɴɢᴀʀᴏᴏ!!_*`,
+          `*_ᴊᴜꜱᴛ ꜱʜᴏᴡᴇᴅ ᴜᴘ. ʜᴏʟᴅ ᴍʏ ʙᴇᴇʀ._*`,
         ];
-        mem = update.participants[0];
         const num = update.participants[0];
         const mdata = await υℓтяσηℓιєηт.groupMetadata(update.jid);
         const memeg = mdata.participants.length;
@@ -180,40 +183,42 @@ async function ᴜʟᴛʀᴏɴRunner() {
           MessageType.text
         );
         var Fetched = await ɠɠᴜʟᴛʀᴏɴ.getMessage(groupId, `welcome`);
-        const download = require(`download-file`);
-        const ppimg = await υℓтяσηℓιєηт.getProfilePicture(
-          `${num.split("@")[0]}@c.us`
-        );
+        try {
+          ppimg = await υℓтяσηℓιєηт.getProfilePicture(
+            `${num.split("@")[0]}@c.us`
+          );
+        } catch {
+          ppimg =
+            "https://i.postimg.cc/bJmWSkFL/depositphotos-39258143-stock-illustration-businessman-avatar-profile-picture.jpg";
+        }
         download(
-          ppimg,
-          {
+          ppimg, {
             directory: "./ᴛᴇᴍᴘ/",
             filename: "ppimg.jpg",
           },
           function (err) {
             if (err) throw err;
-            console.log(ppimg);
+            const weltext = greets[Math.floor(Math.random() * greets.length)]
             return υℓтяσηℓιєηт.sendMessage(
-              groupId,
-              {
+              groupId, {
                 url: "./ᴛᴇᴍᴘ/ppimg.jpg",
               },
-              MessageType.image,
-              {
+              MessageType.image, {
                 mimetype: Mimetype.png,
-                caption: `|  ɢʀᴏᴜᴘ ᴘᴀʀᴛɪᴄɪᴘᴀɴᴛ ᴜᴘᴅᴀᴛᴇ  | 
-*${greets[Math.floor(Math.random() * greets.length)]}*
-*🐣ID:* @${num.split("@")[0]}
-*❣️Bio*: ${thu.status}
-*🎊Group*: ${mdata.subject}
-*🗄️Member-Count:* ${memeg}
+                caption: `@${num.split("@")[0]}\n${weltext}
+꧁•⊹٭---------------٭⊹•꧂
 
-===============================
+❣️𝗕𝗜𝗢➛ ${thu.status}
+🎊𝗚𝗥𝗢𝗨𝗣➛ ${mdata.subject}
+🗄️𝗠𝗘𝗠𝗕𝗘𝗥-𝗖𝗢𝗨𝗡𝗧➛  ${memeg}
+
+꧁•⊹٭---------------٭⊹•꧂
 ${Fetched.message}`,
               }
             );
           }
         );
+
         // var Fetched = await ɠɠᴜʟᴛʀᴏɴ.getMessage(groupId, `welcome`);
         // const width = 1280;
         // const height = 720;
@@ -278,9 +283,9 @@ ${Fetched.message}`,
     }
     chat = chat.messages.all()[0];
     var sender = chat.key.remoteJid;
-    const groupMetadata = sender.endsWith(`@g.us`)
-      ? await υℓтяσηℓιєηт.groupMetadata(sender)
-      : ``;
+    const groupMetadata = sender.endsWith(`@g.us`) ?
+      await υℓтяσηℓιєηт.groupMetadata(sender) :
+      ``;
     var ᴜʟᴛʀᴏɴ = ᴜʟᴛʀᴏɴǟքք.resolve(chat, υℓтяσηℓιєηт, groupMetadata);
     const adminmodls = [
       `add`,
@@ -334,14 +339,12 @@ ${Fetched.message}`,
               ᴜʟᴛʀᴏɴ.chatId,
               `ᴜʟᴛʀᴏɴ is Alive!.
 I guess you were trying to use my modules in *${ᴜʟᴛʀᴏɴ.groupName}*. However, the bot is currently in ${worktype} mode. This enables only the owner and sudo clientult to use the module *${moduleName}* .
-If you are keen to use my features, you can deploy ᴜʟᴛʀᴏɴ on your own account without much effort, in less than 5 minutes! Check out the links given below.`,
-              {
+If you are keen to use my features, you can deploy ᴜʟᴛʀᴏɴ on your own account without much effort, in less than 5 minutes! Check out the links given below.`, {
                 worktype: `public`,
                 groupName: ᴜʟᴛʀᴏɴ.groupName ? ᴜʟᴛʀᴏɴ.groupName : `private chat`,
                 moduleName: ᴜʟᴛʀᴏɴ.moduleName,
               },
-              MessageType.text,
-              {
+              MessageType.text, {
                 contextInfo: {
                   stanzaId: chat.key.id,
                   participant: ᴜʟᴛʀᴏɴ.sender,
@@ -372,14 +375,12 @@ If you are keen to use my features, you can deploy ᴜʟᴛʀᴏɴ on your own a
             ᴜʟᴛʀᴏɴ.chatId,
             `ᴜʟᴛʀᴏɴ is Alive!.
 I guess you were trying to use my modules in *${ᴜʟᴛʀᴏɴ.groupName}*. However, the bot is currently in ${worktype} mode. This enables only the owner and sudo clientult to use the module *${moduleName}* .
-If you are keen to use my features, you can deploy ᴜʟᴛʀᴏɴ on your own account without much effort, in less than 5 minutes! Check out the links given below.`,
-            {
+If you are keen to use my features, you can deploy ᴜʟᴛʀᴏɴ on your own account without much effort, in less than 5 minutes! Check out the links given below.`, {
               worktype: `private`,
               groupName: ᴜʟᴛʀᴏɴ.groupName ? ᴜʟᴛʀᴏɴ.groupName : `private chat`,
               moduleName: ᴜʟᴛʀᴏɴ.moduleName,
             },
-            MessageType.text,
-            {
+            MessageType.text, {
               contextInfo: {
                 stanzaId: chat.key.id,
                 participant: ᴜʟᴛʀᴏɴ.sender,
@@ -407,17 +408,15 @@ If you are keen to use my features, you can deploy ᴜʟᴛʀᴏɴ on your own a
       var Ultronf = /\/\^\[(.*)+\]\/\g/g.exec(UltronRegex)[1];
       if (!module) {
         return υℓтяσηℓιєηт.sendMessage(
-          ᴜʟᴛʀᴏɴ.chatId,
-          {
+          ᴜʟᴛʀᴏɴ.chatId, {
             url: `https://i.postimg.cc/Gt46wxDL/ltr-Invalid.png`,
           },
-          MessageType.image,
-          {
+          MessageType.image, {
             mimetype: Mimetype.png,
-            caption: `*⚠️𝗜𝗻𝘃𝗮𝗹𝗶𝗱 ᴜʟᴛʀᴏɴ 𝗖𝗼𝗺𝗺𝗮𝗻𝗱*
+            caption: `*_⚠️𝗜𝗻𝘃𝗮𝗹𝗶𝗱 ᴜʟᴛʀᴏɴ 𝗖𝗼𝗺𝗺𝗮𝗻𝗱*
 
 *No such module found.*
-Please Use *${Ultronf}help to get the list of available modules*`,
+Please Use *${Ultronf}help to get the list of available modules_*`,
           }
         );
       } else if (module && ᴜʟᴛʀᴏɴ.moduleName == `help`) {
