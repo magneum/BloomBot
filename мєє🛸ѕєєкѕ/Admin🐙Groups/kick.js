@@ -6,9 +6,9 @@ const { MessageType } = require(`@adiwajshing/baileys`);
 const ꜱɪɢɴ = require(`../../ᴍᴇᴇ6/ꜱɪɢɴ`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
-  name: `remove`,
-  commandType: "Administration🐙",
-  description: `Use this command to remove people from a group by tagging them  *${ꜱɪɢɴ.Mee6IX}remove @<person-to-remove>*  or replying to them  *${ꜱɪɢɴ.Mee6IX}remove*${ꜱɪɢɴ.Mee6IX}`,
+  name: `kick`,
+  commandType: "Admin🐙Groups",
+  description: `Use this command to kick people from a group by tagging them  *${ꜱɪɢɴ.Mee6IX}kick @<person-to-kick>*  or replying to them  *${ꜱɪɢɴ.Mee6IX}kick*${ꜱɪɢɴ.Mee6IX}`,
   async handle(υℓтяσηℓιєηт, chat, ᴍᴇᴇ6, Arc) {
     try {
       if (!ᴍᴇᴇ6.isGroup) {
@@ -51,7 +51,7 @@ module.exports = {
           υℓтяσηℓιєηт
             .sendMessage(
               ᴍᴇᴇ6.chatId,
-              `Why man, why?! Why would you use my powers to remove myself from the group?!🥺\n*Request Rejected.* 😤`,
+              `Why man, why?! Why would you use my powers to kick myself from the group?!🥺\n*Request Rejected.* 😤`,
               MessageType.text
             )
             .catch((cᴇʀʀᴏʀ) => {
@@ -101,7 +101,7 @@ module.exports = {
         υℓтяσηℓιєηт
           .sendMessage(
             ᴍᴇᴇ6.chatId,
-            `Reply to the person you want to remove or tag them.\n\nFor instance,  *${ꜱɪɢɴ.Mee6IX}remove @<person-to-remove>*  or reply using  *${ꜱɪɢɴ.Mee6IX}remove*${ꜱɪɢɴ.Mee6IX}`,
+            `Reply to the person you want to kick or tag them.\n\nFor instance,  *${ꜱɪɢɴ.Mee6IX}kick @<person-to-kick>*  or reply using  *${ꜱɪɢɴ.Mee6IX}kick*${ꜱɪɢɴ.Mee6IX}`,
             MessageType.text
           )
           .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
@@ -113,7 +113,7 @@ module.exports = {
           υℓтяσηℓιєηт
             .sendMessage(
               ᴍᴇᴇ6.chatId,
-              `Reply to the person you want to remove or tag them.\n\nFor instance,  *${ꜱɪɢɴ.Mee6IX}remove @<person-to-remove>*  or reply using  *${ꜱɪɢɴ.Mee6IX}remove*${ꜱɪɢɴ.Mee6IX}`,
+              `Reply to the person you want to kick or tag them.\n\nFor instance,  *${ꜱɪɢɴ.Mee6IX}kick @<person-to-kick>*  or reply using  *${ꜱɪɢɴ.Mee6IX}kick*${ꜱɪɢɴ.Mee6IX}`,
               MessageType.text
             )
             .catch((cᴇʀʀᴏʀ) => {
@@ -126,7 +126,7 @@ module.exports = {
           υℓтяσηℓιєηт
             .sendMessage(
               ᴍᴇᴇ6.chatId,
-              `Why man, why?! Why would you use my powers to remove myself from the group?!🥺\n*Request Rejected.* 😤`,
+              `Why man, why?! Why would you use my powers to kick myself from the group?!🥺\n*Request Rejected.* 😤`,
               MessageType.text
             )
             .catch((cᴇʀʀᴏʀ) => {
@@ -158,7 +158,7 @@ module.exports = {
       υℓтяσηℓιєηт
         .sendMessage(
           ᴍᴇᴇ6.chatId,
-          `Reply to the person you want to remove or tag them.\n\nFor instance,  *${ꜱɪɢɴ.Mee6IX}remove @<person-to-remove>*  or reply using  *${ꜱɪɢɴ.Mee6IX}remove*${ꜱɪɢɴ.Mee6IX}`,
+          `Reply to the person you want to kick or tag them.\n\nFor instance,  *${ꜱɪɢɴ.Mee6IX}kick @<person-to-kick>*  or reply using  *${ꜱɪɢɴ.Mee6IX}kick*${ꜱɪɢɴ.Mee6IX}`,
           MessageType.text
         )
         .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));

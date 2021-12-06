@@ -8,7 +8,7 @@ const ꜱɪɢɴ = require(`../../ᴍᴇᴇ6/ꜱɪɢɴ`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
   name: `setgoodbye`,
-  commandType: "Administration🐙",
+  commandType: "Admin🐙Groups",
   description: `A setgoodbye message will be sent when any member leaves the group. It can be an image, video, gif with caption or just a text message.\n\nUse this command to either set, update or delete the existing message.\n\nThe setgoodbye option can be disabled but saved using the  *${ꜱɪɢɴ.Mee6IX}setgoodbye  off*  command. In order to delete the existing message, use  *${ꜱɪɢɴ.Mee6IX}setgoodbye  delete*${ꜱɪɢɴ.Mee6IX}  Do note, the setgoodbye option is still enabled after you use the delete option.`,
   async handle(υℓтяσηℓιєηт, chat, ᴍᴇᴇ6, Arc) {
     try {

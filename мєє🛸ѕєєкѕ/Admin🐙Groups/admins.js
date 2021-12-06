@@ -6,47 +6,51 @@ const { MessageType } = require(`@adiwajshing/baileys`);
 const ꜱɪɢɴ = require(`../../ᴍᴇᴇ6/ꜱɪɢɴ`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
-  name: `disappear`,
-  commandType: "Administration🐙",
-  description: `Toggle disappearing messages by using command *${ꜱɪɢɴ.Mee6IX}dissapear* .`,
+  name: `admins`,
+  commandType: "Admin🐙Groups",
+  description: `Tag admins of a group (either as a reply to another message or a direct tag).`,
   async handle(υℓтяσηℓιєηт, chat, ᴍᴇᴇ6, Arc) {
     try {
-      var time = 7 * 24 * 60 * 60;
-      if (ᴍᴇᴇ6.isPm) {
+      if (!ᴍᴇᴇ6.isGroup) {
         υℓтяσηℓιєηт
           .sendMessage(
             ᴍᴇᴇ6.chatId,
-            `command only applicable in a group chat.`,
+            `*${ꜱɪɢɴ.Mee6IX}admins*  command is only applicable for group chats.`,
             MessageType.text
           )
           .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
         return;
       }
-      if (ᴍᴇᴇ6.isGroup) {
-        if (chat.message.extendedTextMessage == null) {
-          await υℓтяσηℓιєηт
-            .toggleDisappearingMessages(ᴍᴇᴇ6.chatId, time)
-            .catch((cᴇʀʀᴏʀ) => {
-              ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴍᴇᴇ6));
-            });
-        } else {
-          await υℓтяσηℓιєηт
-            .toggleDisappearingMessages(ᴍᴇᴇ6.chatId, 0)
-            .catch((cᴇʀʀᴏʀ) => {
-              ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴍᴇᴇ6));
-            });
-        }
+
+      var message = ``;
+      for (let admin of ᴍᴇᴇ6.groupAdmins) {
+        let number = admin.split(`@`)[0];
+        message += `@${number} `;
+      }
+
+      if (!ᴍᴇᴇ6.isReply) {
+        υℓтяσηℓιєηт
+          .sendMessage(ᴍᴇᴇ6.chatId, message, MessageType.text, {
+            contextInfo: {
+              mentionedJid: ᴍᴇᴇ6.groupAdmins,
+            },
+          })
+          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
         return;
       }
-      if (chat.message.extendedTextMessage.contextInfo.expiration == 0) {
-        var time = 7 * 24 * 60 * 60;
-      } else {
-        var time = 0;
-      }
-      await υℓтяσηℓιєηт
-        .toggleDisappearingMessages(ᴍᴇᴇ6.chatId, time)
+
+      υℓтяσηℓιєηт
+        .sendMessage(ᴍᴇᴇ6.chatId, message, MessageType.text, {
+          contextInfo: {
+            stanzaId: ᴍᴇᴇ6.replyMessageId,
+            participant: ᴍᴇᴇ6.replyParticipant,
+            quotedMessage: {
+              conversation: ᴍᴇᴇ6.replyMessage,
+            },
+            mentionedJid: ᴍᴇᴇ6.groupAdmins,
+          },
+        })
         .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
-      return;
     } catch (cᴇʀʀᴏʀ) {
       await υℓтяσηℓιєηт.sendMessage(
         ᴍᴇᴇ6.chatId,

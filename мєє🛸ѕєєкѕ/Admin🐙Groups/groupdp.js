@@ -9,7 +9,7 @@ const fs = require(`fs`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
   name: `groupdp`,
-  commandType: "Administration🐙",
+  commandType: "Admin🐙Groups",
   description: `Use this command to change the group's icon.
 Tag image with the command or send the desired image with caption as the command`,
   async handle(υℓтяσηℓιєηт, chat, ᴍᴇᴇ6, Arc) {

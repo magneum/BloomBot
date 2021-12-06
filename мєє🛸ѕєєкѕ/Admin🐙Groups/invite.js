@@ -7,7 +7,7 @@ const ꜱɪɢɴ = require(`../../ᴍᴇᴇ6/ꜱɪɢɴ`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
   name: `invite`,
-  commandType: "Information📜",
+  commandType: "Admin🐙Groups",
   description: `Use this command to send a group invite link in the group or personally to someone.`,
   async handle(υℓтяσηℓιєηт, chat, ᴍᴇᴇ6, Arc) {
     if (!ᴍᴇᴇ6.isGroup) {

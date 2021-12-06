@@ -7,7 +7,7 @@ const ꜱɪɢɴ = require(`../../ᴍᴇᴇ6/ꜱɪɢɴ`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
   name: `promote`,
-  commandType: "Administration🐙",
+  commandType: "Admin🐙Groups",
   description: `Use this command to promote a member to admin. You can enter the person's mobile number as per the format below. Valid Syntaxes -
 1. XXXXXXXXXX
 2. YYXXXXXXXXXX ()

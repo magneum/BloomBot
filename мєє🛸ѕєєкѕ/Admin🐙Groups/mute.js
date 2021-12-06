@@ -7,7 +7,7 @@ const ℓιєηт = require("../../ᴍᴇᴇ6/catch");
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
   name: `mute`,
-  commandType: "Administration🐙",
+  commandType: "Admin🐙Groups",
   description: `Mute non-admin members of a group. 
 You can even specify the duration using s, m or h.
 For example:

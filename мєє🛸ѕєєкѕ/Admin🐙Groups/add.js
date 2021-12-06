@@ -7,7 +7,7 @@ const ꜱɪɢɴ = require(`../../ᴍᴇᴇ6/ꜱɪɢɴ`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
   name: `add`,
-  commandType: "Administration🐙",
+  commandType: "Admin🐙Groups",
   description: `command to add a person to a group.
 Add new people to a group by entering their mobile number as per the format mentioned below.
 1. XXXXXXXXXX

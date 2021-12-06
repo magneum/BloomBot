@@ -6,7 +6,7 @@ var heroku = new Heroku({ token: ꜱɪɢɴ.HEROKU_API });
 
 module.exports = {
   name: `update`,
-  commandType: "Information📜",
+  commandType: "Mee6💻System",
   description: `This command can be used to update the bot`,
   async handle(υℓтяσηℓιєηт, chat, ᴍᴇᴇ6, Arc) {
     if (!ᴍᴇᴇ6.fromMe) {

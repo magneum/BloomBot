@@ -7,7 +7,7 @@ const ℓιєηт = require("../../ᴍᴇᴇ6/catch");
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
   name: `unmute`,
-  commandType: "Administration🐙",
+  commandType: "Admin🐙Groups",
   description: `Unmute non-admin members of a group`,
   async handle(υℓтяσηℓιєηт, chat, ᴍᴇᴇ6, Arc) {
     try {

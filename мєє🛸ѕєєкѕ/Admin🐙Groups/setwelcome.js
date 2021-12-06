@@ -8,7 +8,7 @@ const ꜱɪɢɴ = require(`../../ᴍᴇᴇ6/ꜱɪɢɴ`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
   name: `setwelcome`,
-  commandType: "Administration🐙",
+  commandType: "Admin🐙Groups",
   description: `New members of a group chat will be welcomed with a message. 
 It can be an image, video, gif with caption or just a text message.
 Use this command to either set, update or delete the existing message.

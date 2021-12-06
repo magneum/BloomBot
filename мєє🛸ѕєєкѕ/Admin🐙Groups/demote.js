@@ -7,7 +7,7 @@ const ꜱɪɢɴ = require(`../../ᴍᴇᴇ6/ꜱɪɢɴ`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
   name: `demote`,
-  commandType: "Administration🐙",
+  commandType: "Admin🐙Groups",
   description: `Use this command to demote a person from admin by entering the person's mobile number. Valid Syntaxes -
 1. XXXXXXXXXX
 2. YYXXXXXXXXXX ()
