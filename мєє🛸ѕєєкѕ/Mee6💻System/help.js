@@ -14,6 +14,12 @@ module.exports = {
     var Mee6Regex = new RegExp(ꜱɪɢɴ.Mee6IX, "g");
     var Mee6f = /\/\^\[(.*)+\]\/\g/g.exec(Mee6Regex)[1];
     const ULTHELP = `
+🔸ɢɪᴛʜᴜʙ: ⬡${Mee6f}repo
+🔸ᴡʜᴀᴛꜱᴀᴘᴘ⇀ https://chat.whatsapp.com/FmMcEeSqZQw85qAkgUs3f5
+🔸ᴅɪꜱᴄᴏʀᴅ⇀ https://discord.gg/xcFN6NDHEV
+⬣
+⬣
+⬣
 *⧪➛  𝗠𝗲𝗲𝟲💻𝗦𝘆𝘀𝘁𝗲𝗺*
 *⬡${Mee6f}help*  ɢᴇᴛ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅ ʟɪꜱᴛ ᴀɴᴅ ɪɴꜰᴏ ᴏɴ ᴍᴏᴅᴜʟᴇꜱ
 *⬡${Mee6f}ping*  ᴄʜᴇᴄᴋ ᴍᴇᴇ6 ʀᴇꜱᴘᴏɴꜱᴇ ᴛɪᴍᴇ
