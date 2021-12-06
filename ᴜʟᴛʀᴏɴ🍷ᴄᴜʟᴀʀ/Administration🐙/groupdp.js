@@ -7,18 +7,18 @@ const ℓιєηт = require("../../ᴜʟᴛʀᴏɴ/catch");
 const ffmpeg = require(`fluent-ffmpeg`);
 const fs = require(`fs`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
-module.exports = {
+command.exports = {
   name: `groupdp`,
   commandType: "Administration🐙",
-  description: `Use this module to change the group's icon.
-Tag image with the module or send the desired image with caption as the module`,
+  description: `Use this command to change the group's icon.
+Tag image with the command or send the desired image with caption as the command`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     try {
       if (!ᴜʟᴛʀᴏɴ.isGroup) {
         await υℓтяσηℓιєηт
           .sendMessage(
             ᴜʟᴛʀᴏɴ.chatId,
-            `This module is only applicable in a group chat.`,
+            `This command is only applicable in a group chat.`,
             MessageType.text
           )
           .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴜʟᴛʀᴏɴ));

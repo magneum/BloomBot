@@ -1,4 +1,4 @@
-module.exports = (number) => {
+command.exports = (number) => {
   let num = Number(number);
   let out;
   if (Math.abs(num) < 999) {

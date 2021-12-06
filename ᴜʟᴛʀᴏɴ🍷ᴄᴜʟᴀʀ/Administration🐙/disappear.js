@@ -5,10 +5,10 @@ const ℓιєηт = require("../../ᴜʟᴛʀᴏɴ/catch");
 const { MessageType } = require(`@adiwajshing/baileys`);
 const ꜱɪɢɴ = require(`../../ᴜʟᴛʀᴏɴ/ꜱɪɢɴ`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
-module.exports = {
+command.exports = {
   name: `disappear`,
   commandType: "Administration🐙",
-  description: `Toggle disappearing messages by using module *${ꜱɪɢɴ.ULTRONIX}dissapear* .`,
+  description: `Toggle disappearing messages by using command *${ꜱɪɢɴ.ULTRONIX}dissapear* .`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     try {
       var time = 7 * 24 * 60 * 60;
@@ -16,7 +16,7 @@ module.exports = {
         υℓтяσηℓιєηт
           .sendMessage(
             ᴜʟᴛʀᴏɴ.chatId,
-            `module only applicable in a group chat.`,
+            `command only applicable in a group chat.`,
             MessageType.text
           )
           .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴜʟᴛʀᴏɴ));

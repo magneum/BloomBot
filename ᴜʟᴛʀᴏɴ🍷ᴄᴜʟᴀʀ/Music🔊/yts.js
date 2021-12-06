@@ -7,10 +7,10 @@ const ℓιєηт = require("../../ᴜʟᴛʀᴏɴ/catch");
 const getVideoId = require("get-video-id");
 const yts = require(`yt-search`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
-module.exports = {
+command.exports = {
   name: `yts`,
   commandType: "Music🔊",
-  description: `Get the first 10 recommendations from YouTube with their authorname, timestamp and link. Mention the FetchedLinks that are required to be searched along with the module.`,
+  description: `Get the first 10 recommendations from YouTube with their authorname, timestamp and link. Mention the FetchedLinks that are required to be searched along with the command.`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     if (Arc.length === 0) {
       return await υℓтяσηℓιєηт

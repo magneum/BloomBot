@@ -5,7 +5,7 @@ const { GroupSettingChange, MessageType } = require(`@adiwajshing/baileys`);
 const ꜱɪɢɴ = require(`../../ᴜʟᴛʀᴏɴ/ꜱɪɢɴ`);
 const ℓιєηт = require("../../ᴜʟᴛʀᴏɴ/catch");
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
-module.exports = {
+command.exports = {
   name: `mute`,
   commandType: "Administration🐙",
   description: `Mute non-admin members of a group. 
@@ -19,7 +19,7 @@ will change chat permissions to admin-only for 15 minutes.`,
         υℓтяσηℓιєηт
           .sendMessage(
             ᴜʟᴛʀᴏɴ.chatId,
-            `*${ꜱɪɢɴ.ULTRONIX}mute*  module is only applicable in a group chat.`,
+            `*${ꜱɪɢɴ.ULTRONIX}mute*  command is only applicable in a group chat.`,
             MessageType.text
           )
           .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴜʟᴛʀᴏɴ));
@@ -94,10 +94,10 @@ will change chat permissions to admin-only for 15 minutes.`,
         .sendMessage(
           ᴜʟᴛʀᴏɴ.chatId,
           `Chat permissions changed to  *admin only*  for ` +
-            Arc[0] +
-            ` ` +
-            type +
-            `.`,
+          Arc[0] +
+          ` ` +
+          type +
+          `.`,
           MessageType.text
         )
         .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴜʟᴛʀᴏɴ));

@@ -6,10 +6,10 @@ const ꜱɪɢɴ = require(`../../ᴜʟᴛʀᴏɴ/ꜱɪɢɴ`);
 const ℓιєηт = require("../../ᴜʟᴛʀᴏɴ/catch");
 const got = require(`got`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
-module.exports = {
+command.exports = {
   name: `lyrics`,
   commandType: "Music🔊",
-  description: `Use this module to find the lyrics of a song by using  *${ꜱɪɢɴ.ULTRONIX}lyrics*  module.`,
+  description: `Use this command to find the lyrics of a song by using  *${ꜱɪɢɴ.ULTRONIX}lyrics*  command.`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     var song = ``;
     if (ᴜʟᴛʀᴏɴ.isReply) {

@@ -6,10 +6,10 @@ const Carbon = require(`unofficial-carbon-now`);
 const ℓιєηт = require("../../ᴜʟᴛʀᴏɴ/catch");
 const ꜱɪɢɴ = require(`../../ᴜʟᴛʀᴏɴ/ꜱɪɢɴ`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
-module.exports = {
+command.exports = {
   name: `carbon`,
   commandType: "Fun⚡",
-  description: `This module can be used to convert text/code into carbon images.
+  description: `This command can be used to convert text/code into carbon images.
 Example Usage,
 *${ꜱɪɢɴ.ULTRONIX}carbon <text>* 
 *${ꜱɪɢɴ.ULTRONIX}carbon*  and reply to a text message.
@@ -59,7 +59,7 @@ In order to specify the theme, use  *${ꜱɪɢɴ.ULTRONIX}carbon <text> -t <them
             {
               mimetype: Mimetype.jpeg,
               caption: `*☢️ᴜʟᴛʀᴏɴ*\n\nNo input provided.
-Please use the module  
+Please use the command  
 *${ꜱɪɢɴ.ULTRONIX}carbon <text> -t <theme>*  
 or reply to a text message with  
 *${ꜱɪɢɴ.ULTRONIX}carbon*  to carbonize the text.
@@ -99,7 +99,7 @@ _yeti_  *|*  _zenburn_`,
       } else {
         try {
           var text = ᴜʟᴛʀᴏɴ.body.replace(
-            ᴜʟᴛʀᴏɴ.body[0] + ᴜʟᴛʀᴏɴ.moduleName + ` `,
+            ᴜʟᴛʀᴏɴ.body[0] + ᴜʟᴛʀᴏɴ.commandName + ` `,
             ``
           );
           if (text[0] === `-` && text[1] === `t`) {
@@ -121,7 +121,7 @@ _yeti_  *|*  _zenburn_`,
                 .sendMessage(
                   ᴜʟᴛʀᴏɴ.chatId,
                   `*☢️ᴜʟᴛʀᴏɴ*\n\nNo input provided.
-Please use the module  *${ꜱɪɢɴ.ULTRONIX}carbon <text>*  or reply to a text message with  *${ꜱɪɢɴ.ULTRONIX}carbon*  to carbonize the text.`,
+Please use the command  *${ꜱɪɢɴ.ULTRONIX}carbon <text>*  or reply to a text message with  *${ꜱɪɢɴ.ULTRONIX}carbon*  to carbonize the text.`,
                   MessageType.text
                 )
                 .catch((cᴇʀʀᴏʀ) => {
@@ -131,7 +131,7 @@ Please use the module  *${ꜱɪɢɴ.ULTRONIX}carbon <text>*  or reply to a text 
             }
           }
           var body = ᴜʟᴛʀᴏɴ.body.split(`-t`);
-          code = body[0].replace(ᴜʟᴛʀᴏɴ.body[0] + ᴜʟᴛʀᴏɴ.moduleName + ` `, ``);
+          code = body[0].replace(ᴜʟᴛʀᴏɴ.body[0] + ᴜʟᴛʀᴏɴ.commandName + ` `, ``);
           themeInput = body[1].substring(1);
           if (!themes.includes(themeInput)) {
             await υℓтяσηℓιєηт
@@ -149,7 +149,7 @@ Do note that theme names are  *case sensitive*${ꜱɪɢɴ.ULTRONIX}`,
         } catch (cᴇʀʀᴏʀ) {
           if (cᴇʀʀᴏʀ instanceof TypeError) {
             code = ᴜʟᴛʀᴏɴ.body.replace(
-              ᴜʟᴛʀᴏɴ.body[0] + ᴜʟᴛʀᴏɴ.moduleName + ` `,
+              ᴜʟᴛʀᴏɴ.body[0] + ᴜʟᴛʀᴏɴ.commandName + ` `,
               ``
             );
             themeInput = themes[Math.floor(Math.random() * themes.length)];

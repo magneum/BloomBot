@@ -7,11 +7,11 @@ const ℓιєηт = require("../../ᴜʟᴛʀᴏɴ/catch");
 const ffmpeg = require(`fluent-ffmpeg`);
 const fs = require(`fs`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
-module.exports = {
+command.exports = {
   name: `sticker`,
   commandType: "Fun⚡",
-  description: `Module to convert image to sticker`,
-  ᴜʟᴛʀᴏɴʍօʀɛ: `Use this module to convert any image from your chat to a sticker. Reply to an image message with the module  *${ꜱɪɢɴ.ULTRONIX}sticker*  to convert and send that image as a sticker.`,
+  description: `command to convert image to sticker`,
+  ᴜʟᴛʀᴏɴʍօʀɛ: `Use this command to convert any image from your chat to a sticker. Reply to an image message with the command  *${ꜱɪɢɴ.ULTRONIX}sticker*  to convert and send that image as a sticker.`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     try {
       const convertToSticker = async (imageId, replyChat) => {
@@ -67,7 +67,7 @@ module.exports = {
 • ${CYΣЯЯ}
 
 
-💡𝗖𝗼𝗺𝗺𝗮𝗻𝗱 • ${ᴜʟᴛʀᴏɴ.moduleName}
+💡𝗖𝗼𝗺𝗺𝗮𝗻𝗱 • ${ᴜʟᴛʀᴏɴ.commandName}
 🎮𝗜𝘁 𝘄𝗮𝘀 𝗣𝗠? • ${ᴜʟᴛʀᴏɴ.isPm}`,
                 MessageType.text
               );
@@ -125,7 +125,7 @@ module.exports = {
 • ${CYΣЯЯ}
 
 
-💡𝗖𝗼𝗺𝗺𝗮𝗻𝗱 • ${ᴜʟᴛʀᴏɴ.moduleName}
+💡𝗖𝗼𝗺𝗺𝗮𝗻𝗱 • ${ᴜʟᴛʀᴏɴ.commandName}
 🎮𝗜𝘁 𝘄𝗮𝘀 𝗣𝗠? • ${ᴜʟᴛʀᴏɴ.isPm}`,
               MessageType.text
             );
@@ -167,7 +167,7 @@ ENTER VALID FILE!
 • ${CYΣЯЯ}
 
 
-💡𝗖𝗼𝗺𝗺𝗮𝗻𝗱 • ${ᴜʟᴛʀᴏɴ.moduleName}
+💡𝗖𝗼𝗺𝗺𝗮𝗻𝗱 • ${ᴜʟᴛʀᴏɴ.commandName}
 🎮𝗜𝘁 𝘄𝗮𝘀 𝗣𝗠? • ${ᴜʟᴛʀᴏɴ.isPm}`,
         MessageType.text
       );

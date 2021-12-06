@@ -6,10 +6,10 @@ const ꜱɪɢɴ = require(`../../ᴜʟᴛʀᴏɴ/ꜱɪɢɴ`);
 const ℓιєηт = require("../../ᴜʟᴛʀᴏɴ/catch");
 const got = require(`got`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
-module.exports = {
+command.exports = {
   name: `github`,
   commandType: "Fun⚡",
-  description: `Get the github profile by module  *${ꜱɪɢɴ.ULTRONIX}github <user>*  
+  description: `Get the github profile by command  *${ꜱɪɢɴ.ULTRONIX}github <user>*  
 or replying  *${ꜱɪɢɴ.ULTRONIX}github* .`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     try {
@@ -109,7 +109,7 @@ ACCOUNT NOT FOUND
 • ${cᴇʀʀᴏʀ}
 
 
-💡𝗖𝗼𝗺𝗺𝗮𝗻𝗱 • ${ᴜʟᴛʀᴏɴ.moduleName}
+💡𝗖𝗼𝗺𝗺𝗮𝗻𝗱 • ${ᴜʟᴛʀᴏɴ.commandName}
 🎮𝗜𝘁 𝘄𝗮𝘀 𝗣𝗠? • ${ᴜʟᴛʀᴏɴ.isPm}`,
         MessageType.text
       );

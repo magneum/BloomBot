@@ -6,13 +6,13 @@ const Greetings = require(`../../ᴜʟᴛʀᴏɴ/ɠɠᴜʟᴛʀᴏɴ`);
 const ℓιєηт = require("../../ᴜʟᴛʀᴏɴ/catch");
 const ꜱɪɢɴ = require(`../../ᴜʟᴛʀᴏɴ/ꜱɪɢɴ`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
-module.exports = {
+command.exports = {
   name: `setwelcome`,
   commandType: "Administration🐙",
   description: `New members of a group chat will be welcomed with a message. 
 It can be an image, video, gif with caption or just a text message.
-Use this module to either set, update or delete the existing message.
-The setwelcome option can be disabled but saved using the   *${ꜱɪɢɴ.ULTRONIX}setwelcome  off*  module. 
+Use this command to either set, update or delete the existing message.
+The setwelcome option can be disabled but saved using the   *${ꜱɪɢɴ.ULTRONIX}setwelcome  off*  command. 
 In order to delete the existing message, use  *${ꜱɪɢɴ.ULTRONIX}setwelcome  delete*${ꜱɪɢɴ.ULTRONIX} .
 Do note, the setwelcome option is still enabled after you use the delete option.`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
@@ -21,7 +21,7 @@ Do note, the setwelcome option is still enabled after you use the delete option.
         υℓтяσηℓιєηт
           .sendMessage(
             ᴜʟᴛʀᴏɴ.chatId,
-            `This module is only applicable in a group chat.`,
+            `This command is only applicable in a group chat.`,
             MessageType.text
           )
           .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴜʟᴛʀᴏɴ));
@@ -134,7 +134,7 @@ Do note, the setwelcome option is still enabled after you use the delete option.
             return;
           }
           text = ᴜʟᴛʀᴏɴ.body.replace(
-            ᴜʟᴛʀᴏɴ.body[0] + ᴜʟᴛʀᴏɴ.moduleName + ` `,
+            ᴜʟᴛʀᴏɴ.body[0] + ᴜʟᴛʀᴏɴ.commandName + ` `,
             ``
           );
           if (Msg === false || Msg === undefined) {

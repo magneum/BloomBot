@@ -6,11 +6,11 @@ const { MessageType } = require(`@adiwajshing/baileys`);
 const ꜱɪɢɴ = require(`../../ᴜʟᴛʀᴏɴ/ꜱɪɢɴ`);
 const got = require(`got`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
-module.exports = {
+command.exports = {
   name: `neko`,
   commandType: "Fun⚡",
-  description: `Use this module to paste your text to a pastebin (NEKOBIN).
-Enter text with the module  *${ꜱɪɢɴ.ULTRONIX}neko* .`,
+  description: `Use this command to paste your text to a pastebin (NEKOBIN).
+Enter text with the command  *${ꜱɪɢɴ.ULTRONIX}neko* .`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     try {
       if (Arc.length === 0 && !ᴜʟᴛʀᴏɴ.isReply) {
@@ -46,14 +46,14 @@ or reply to the text with ${ꜱɪɢɴ.ULTRONIX}neko
       if (!ᴜʟᴛʀᴏɴ.isReply) {
         var json = {
           content: ᴜʟᴛʀᴏɴ.body.replace(
-            ᴜʟᴛʀᴏɴ.body[0] + ᴜʟᴛʀᴏɴ.moduleName + ` `,
+            ᴜʟᴛʀᴏɴ.body[0] + ᴜʟᴛʀᴏɴ.commandName + ` `,
             ``
           ),
         };
       } else {
         var json = {
           content: ᴜʟᴛʀᴏɴ.replyMessage.replace(
-            ᴜʟᴛʀᴏɴ.body[0] + ᴜʟᴛʀᴏɴ.moduleName + ` `,
+            ᴜʟᴛʀᴏɴ.body[0] + ᴜʟᴛʀᴏɴ.commandName + ` `,
             ``
           ),
         };

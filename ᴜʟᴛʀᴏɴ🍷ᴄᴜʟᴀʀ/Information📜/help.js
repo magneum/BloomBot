@@ -5,7 +5,7 @@ const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const ꜱɪɢɴ = require(`../../ᴜʟᴛʀᴏɴ/ꜱɪɢɴ`);
 const ℓιєηт = require("../../ᴜʟᴛʀᴏɴ/catch");
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
-module.exports = {
+command.exports = {
   name: `help`,
   commandType: "Information📜",
   description: `ɢᴇᴛ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅ ʟɪꜱᴛ ᴀɴᴅ ɪɴꜰᴏ ᴏɴ ᴍᴏᴅᴜʟᴇꜱ`,
@@ -263,22 +263,22 @@ _⚠️Bot Not Ready Yet_`,
       );
     }
     var ᴜʟᴛʀᴏɴʍօ = "⤥ 💡𝐂𝐨𝐦𝐦𝐚𝐧𝐝\n";
-    var module = UltronSitrep.get(Arc[0]);
-    if (module) {
+    var command = UltronSitrep.get(Arc[0]);
+    if (command) {
       ᴜʟᴛʀᴏɴʍօ += `⤤ *${
-        (Ultronf, module.name === undefined ? "Null" : module.name)
+        (Ultronf, command.name === undefined ? "Null" : command.name)
       }*
 
 ⤥ 🧀𝐂𝐚𝐭𝐞𝐠𝐨𝐫𝐲 
 ⤤ *${
-        (module.commandType,
-        module.commandType === undefined ? "Null" : module.commandType)
+        (command.commandType,
+        command.commandType === undefined ? "Null" : command.commandType)
       }*
 
 ⤥ 🖊️𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧 
 ⤤ *${
-        (module.description,
-        module.description === undefined ? "Null" : module.description)
+        (command.description,
+        command.description === undefined ? "Null" : command.description)
       }*`;
       return υℓтяσηℓιєηт
         .sendMessage(

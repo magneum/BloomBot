@@ -6,10 +6,10 @@ const Greetings = require(`../../ᴜʟᴛʀᴏɴ/ɠɠᴜʟᴛʀᴏɴ`);
 const ℓιєηт = require("../../ᴜʟᴛʀᴏɴ/catch");
 const ꜱɪɢɴ = require(`../../ᴜʟᴛʀᴏɴ/ꜱɪɢɴ`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
-module.exports = {
+command.exports = {
   name: `setgoodbye`,
   commandType: "Administration🐙",
-  description: `A setgoodbye message will be sent when any member leaves the group. It can be an image, video, gif with caption or just a text message.\n\nUse this module to either set, update or delete the existing message.\n\nThe setgoodbye option can be disabled but saved using the  *${ꜱɪɢɴ.ULTRONIX}setgoodbye  off*  module. In order to delete the existing message, use  *${ꜱɪɢɴ.ULTRONIX}setgoodbye  delete*${ꜱɪɢɴ.ULTRONIX}  Do note, the setgoodbye option is still enabled after you use the delete option.`,
+  description: `A setgoodbye message will be sent when any member leaves the group. It can be an image, video, gif with caption or just a text message.\n\nUse this command to either set, update or delete the existing message.\n\nThe setgoodbye option can be disabled but saved using the  *${ꜱɪɢɴ.ULTRONIX}setgoodbye  off*  command. In order to delete the existing message, use  *${ꜱɪɢɴ.ULTRONIX}setgoodbye  delete*${ꜱɪɢɴ.ULTRONIX}  Do note, the setgoodbye option is still enabled after you use the delete option.`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     try {
       if (!ᴜʟᴛʀᴏɴ.isGroup) {
@@ -120,7 +120,7 @@ module.exports = {
             return;
           }
           text = ᴜʟᴛʀᴏɴ.body.replace(
-            ᴜʟᴛʀᴏɴ.body[0] + ᴜʟᴛʀᴏɴ.moduleName + ` `,
+            ᴜʟᴛʀᴏɴ.body[0] + ᴜʟᴛʀᴏɴ.commandName + ` `,
             ``
           );
 

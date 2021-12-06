@@ -5,10 +5,10 @@ const ℓιєηт = require("../../ᴜʟᴛʀᴏɴ/catch");
 const { MessageType } = require(`@adiwajshing/baileys`);
 const ꜱɪɢɴ = require(`../../ᴜʟᴛʀᴏɴ/ꜱɪɢɴ`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
-module.exports = {
+command.exports = {
   name: `demote`,
   commandType: "Administration🐙",
-  description: `Use this module to demote a person from admin by entering the person's mobile number. Valid Syntaxes -
+  description: `Use this command to demote a person from admin by entering the person's mobile number. Valid Syntaxes -
 1. XXXXXXXXXX
 2. YYXXXXXXXXXX ()
 For example -*${ꜱɪɢɴ.ULTRONIX}demote 9861212121*`,
@@ -18,7 +18,7 @@ For example -*${ꜱɪɢɴ.ULTRONIX}demote 9861212121*`,
         υℓтяσηℓιєηт
           .sendMessage(
             ᴜʟᴛʀᴏɴ.chatId,
-            `This module is only applicable for group chats.`,
+            `This command is only applicable for group chats.`,
             MessageType.text
           )
           .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴜʟᴛʀᴏɴ));

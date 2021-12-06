@@ -5,10 +5,10 @@ const ℓιєηт = require("../../ᴜʟᴛʀᴏɴ/catch");
 const { MessageType } = require(`@adiwajshing/baileys`);
 const ꜱɪɢɴ = require(`../../ᴜʟᴛʀᴏɴ/ꜱɪɢɴ`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
-module.exports = {
+command.exports = {
   name: `promote`,
   commandType: "Administration🐙",
-  description: `Use this module to promote a member to admin. You can enter the person's mobile number as per the format below. Valid Syntaxes -
+  description: `Use this command to promote a member to admin. You can enter the person's mobile number as per the format below. Valid Syntaxes -
 1. XXXXXXXXXX
 2. YYXXXXXXXXXX ()
 For example- *${ꜱɪɢɴ.ULTRONIX}promote 9861212121*`,
@@ -18,7 +18,7 @@ For example- *${ꜱɪɢɴ.ULTRONIX}promote 9861212121*`,
         υℓтяσηℓιєηт
           .sendMessage(
             ᴜʟᴛʀᴏɴ.chatId,
-            `This module is only applicable in a group chat.`,
+            `This command is only applicable in a group chat.`,
             MessageType.text
           )
           .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴜʟᴛʀᴏɴ));

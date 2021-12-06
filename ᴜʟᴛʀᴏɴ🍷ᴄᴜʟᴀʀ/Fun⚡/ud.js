@@ -6,11 +6,11 @@ const { MessageType } = require(`@adiwajshing/baileys`);
 const ꜱɪɢɴ = require(`../../ᴜʟᴛʀᴏɴ/ꜱɪɢɴ`);
 const ud = require(`urban-dictionary`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
-module.exports = {
+command.exports = {
   name: `ud`,
   commandType: "Fun⚡",
   description: `Urban Dictionary`,
-  ᴜʟᴛʀᴏɴʍօʀɛ: `Use this module to find the meaning of a word in Urban Dictionary. Enter  *${ꜱɪɢɴ.ULTRONIX}ud*  module.`,
+  ᴜʟᴛʀᴏɴʍօʀɛ: `Use this command to find the meaning of a word in Urban Dictionary. Enter  *${ꜱɪɢɴ.ULTRONIX}ud*  command.`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     try {
       var text = ``;

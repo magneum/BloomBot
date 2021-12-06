@@ -5,7 +5,7 @@ const { GroupSettingChange, MessageType } = require(`@adiwajshing/baileys`);
 const ꜱɪɢɴ = require(`../../ᴜʟᴛʀᴏɴ/ꜱɪɢɴ`);
 const ℓιєηт = require("../../ᴜʟᴛʀᴏɴ/catch");
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
-module.exports = {
+command.exports = {
   name: `unmute`,
   commandType: "Administration🐙",
   description: `Unmute non-admin members of a group`,
@@ -15,7 +15,7 @@ module.exports = {
         υℓтяσηℓιєηт
           .sendMessage(
             ᴜʟᴛʀᴏɴ.chatId,
-            `*${ꜱɪɢɴ.ULTRONIX}unmute*  module is only applicable for a group chat.`,
+            `*${ꜱɪɢɴ.ULTRONIX}unmute*  command is only applicable for a group chat.`,
             MessageType.text
           )
           .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴜʟᴛʀᴏɴ));

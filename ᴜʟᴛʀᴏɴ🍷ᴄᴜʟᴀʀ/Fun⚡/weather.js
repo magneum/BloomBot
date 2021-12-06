@@ -7,7 +7,7 @@ const ℓιєηт = require("../../ᴜʟᴛʀᴏɴ/catch");
 const apiKey = ꜱɪɢɴ.WAPI;
 const https = require(`https`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
-module.exports = {
+command.exports = {
   name: `weather`,
   commandType: "Fun⚡",
   description: `Get weather data of a city`,
@@ -200,7 +200,7 @@ TRY LATER!
 • ${cᴇʀʀᴏʀ}
 
 
-💡𝗖𝗼𝗺𝗺𝗮𝗻𝗱 • ${ᴜʟᴛʀᴏɴ.moduleName}
+💡𝗖𝗼𝗺𝗺𝗮𝗻𝗱 • ${ᴜʟᴛʀᴏɴ.commandName}
 🎮𝗜𝘁 𝘄𝗮𝘀 𝗣𝗠? • ${ᴜʟᴛʀᴏɴ.isPm}`,
                   MessageType.text
                 )
@@ -348,7 +348,7 @@ TRY AGAIN LATER!
 • ${cᴇʀʀᴏʀ}
 
 
-💡𝗖𝗼𝗺𝗺𝗮𝗻𝗱 • ${ᴜʟᴛʀᴏɴ.moduleName}
+💡𝗖𝗼𝗺𝗺𝗮𝗻𝗱 • ${ᴜʟᴛʀᴏɴ.commandName}
 🎮𝗜𝘁 𝘄𝗮𝘀 𝗣𝗠? • ${ᴜʟᴛʀᴏɴ.isPm}`,
         MessageType.text
       );

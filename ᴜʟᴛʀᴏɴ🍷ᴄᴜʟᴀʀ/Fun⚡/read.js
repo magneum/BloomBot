@@ -6,10 +6,10 @@ const ocrSpace = require(`ocr-space-api-wrapper`);
 const ℓιєηт = require("../../ᴜʟᴛʀᴏɴ/catch");
 const ꜱɪɢɴ = require(`../../ᴜʟᴛʀᴏɴ/ꜱɪɢɴ`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
-module.exports = {
+command.exports = {
   name: `read`,
   commandType: "Fun⚡",
-  description: `Use this module to obtain text from an image by  *${ꜱɪɢɴ.ULTRONIX}space*  module.`,
+  description: `Use this command to obtain text from an image by  *${ꜱɪɢɴ.ULTRONIX}space*  command.`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     try {
       if (ᴜʟᴛʀᴏɴ.isImage) {
@@ -121,7 +121,7 @@ module.exports = {
 ⚠️𝗘𝗿𝗿𝗼𝗿
 • ${CYΣЯЯ}
 
-💡𝗖𝗼𝗺𝗺𝗮𝗻𝗱 • ${ᴜʟᴛʀᴏɴ.moduleName}
+💡𝗖𝗼𝗺𝗺𝗮𝗻𝗱 • ${ᴜʟᴛʀᴏɴ.commandName}
 🎮𝗜𝘁 𝘄𝗮𝘀 𝗣𝗠? • ${ᴜʟᴛʀᴏɴ.isPm}`,
         MessageType.text
       );

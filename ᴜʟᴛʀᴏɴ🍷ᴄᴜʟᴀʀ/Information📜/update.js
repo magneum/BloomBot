@@ -4,10 +4,10 @@ const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const ꜱɪɢɴ = require(`../../ᴜʟᴛʀᴏɴ/ꜱɪɢɴ`);
 var heroku = new Heroku({ token: ꜱɪɢɴ.HEROKU_API });
 
-module.exports = {
+command.exports = {
   name: `update`,
   commandType: "Information📜",
-  description: `This module can be used to update the bot`,
+  description: `This command can be used to update the bot`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     if (!ᴜʟᴛʀᴏɴ.fromMe) {
       return await υℓтяσηℓιєηт

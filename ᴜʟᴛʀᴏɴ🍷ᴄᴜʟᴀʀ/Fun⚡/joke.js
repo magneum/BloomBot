@@ -16,7 +16,7 @@ const {
   getFact,
 } = require(`random-jokes`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
-module.exports = {
+command.exports = {
   name: `joke`,
   commandType: "Fun⚡",
   description: `Get any random Jokes`,

@@ -6,7 +6,7 @@ const { MessageType } = require(`@adiwajshing/baileys`);
 const ℓιєηт = require("../../ᴜʟᴛʀᴏɴ/catch");
 const ꜱɪɢɴ = require(`../../ᴜʟᴛʀᴏɴ/ꜱɪɢɴ`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
-module.exports = {
+command.exports = {
   name: `tr`,
   commandType: "Fun⚡",
   description: `Language Translator`,
@@ -40,7 +40,7 @@ If you do not specify a language, it defaults to <English class=''></English>`,
       if (!ᴜʟᴛʀᴏɴ.isReply) {
         try {
           var body = ᴜʟᴛʀᴏɴ.body.split(`=`);
-          text = body[0].replace(ᴜʟᴛʀᴏɴ.body[0] + ᴜʟᴛʀᴏɴ.moduleName + ` `, ``);
+          text = body[0].replace(ᴜʟᴛʀᴏɴ.body[0] + ᴜʟᴛʀᴏɴ.commandName + ` `, ``);
           var i = 0;
           while (body[1].split(` `)[i] == ``) {
             i++;
@@ -49,7 +49,7 @@ If you do not specify a language, it defaults to <English class=''></English>`,
         } catch (cᴇʀʀᴏʀ) {
           if (cᴇʀʀᴏʀ instanceof TypeError) {
             text = ᴜʟᴛʀᴏɴ.body.replace(
-              ᴜʟᴛʀᴏɴ.body[0] + ᴜʟᴛʀᴏɴ.moduleName + ` `,
+              ᴜʟᴛʀᴏɴ.body[0] + ᴜʟᴛʀᴏɴ.commandName + ` `,
               ``
             );
             language = `English`;

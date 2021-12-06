@@ -6,10 +6,10 @@ const ℓιєηт = require("../../ᴜʟᴛʀᴏɴ/catch");
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const ꜱɪɢɴ = require(`../../ᴜʟᴛʀᴏɴ/ꜱɪɢɴ`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
-module.exports = {
+command.exports = {
   name: `imdb`,
   commandType: "Fun⚡",
-  description: `This module was built to find any IMDB movie/series.`,
+  description: `This command was built to find any IMDB movie/series.`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     if (Arc.length === 0) {
       await υℓтяσηℓιєηт.sendMessage(ᴜʟᴛʀᴏɴ.chatId, "❌", MessageType.text);

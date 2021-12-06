@@ -5,17 +5,17 @@ const ℓιєηт = require("../../ᴜʟᴛʀᴏɴ/catch");
 const { MessageType } = require(`@adiwajshing/baileys`);
 const ꜱɪɢɴ = require(`../../ᴜʟᴛʀᴏɴ/ꜱɪɢɴ`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
-module.exports = {
+command.exports = {
   name: `remove`,
   commandType: "Administration🐙",
-  description: `Use this module to remove people from a group by tagging them  *${ꜱɪɢɴ.ULTRONIX}remove @<person-to-remove>*  or replying to them  *${ꜱɪɢɴ.ULTRONIX}remove*${ꜱɪɢɴ.ULTRONIX}`,
+  description: `Use this command to remove people from a group by tagging them  *${ꜱɪɢɴ.ULTRONIX}remove @<person-to-remove>*  or replying to them  *${ꜱɪɢɴ.ULTRONIX}remove*${ꜱɪɢɴ.ULTRONIX}`,
   async handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc) {
     try {
       if (!ᴜʟᴛʀᴏɴ.isGroup) {
         υℓтяσηℓιєηт
           .sendMessage(
             ᴜʟᴛʀᴏɴ.chatId,
-            `module only applicable in a group chat.`,
+            `command only applicable in a group chat.`,
             MessageType.text
           )
           .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴜʟᴛʀᴏɴ));
