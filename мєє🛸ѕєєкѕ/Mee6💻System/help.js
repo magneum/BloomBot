@@ -6,8 +6,6 @@ const ℓιєηт = require("../../ᴍᴇᴇ6/catch");
 const speed = require("performance-now");
 const ꜱɪɢɴ = require(`../../ᴍᴇᴇ6/ꜱɪɢɴ`);
 const os = require("os");
-const fs = require("fs");
-// ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
 module.exports = {
   name: `help`,
   commandType: "Mee6💻System",
@@ -31,8 +29,8 @@ module.exports = {
 ⬣
 ⬣
 *⧪➛  🎼𝗠𝘂𝘀𝗶𝗰* 
-*⬡${Mee6f}ytdl*  ᴅᴏᴡɴʟᴏᴀᴅ ꜱᴏɴɢꜱ ᴅɪʀᴇᴄᴛ ꜰʀᴏᴍ ʏᴏᴜᴛᴜʙᴇ
 *⬡${Mee6f}lyrics*  ꜰɪɴᴅ ʟʏʀɪᴄꜱ ᴏꜰ ꜱᴏɴɢꜱ
+*⬡${Mee6f}ytdl*  ᴅᴏᴡɴʟᴏᴀᴅ ꜱᴏɴɢꜱ ᴅɪʀᴇᴄᴛ ꜰʀᴏᴍ ʏᴏᴜᴛᴜʙᴇ
 *⬡${Mee6f}yts*  ɢᴇᴛ ʀᴇᴄᴏᴍᴍᴇɴᴅᴀᴛɪᴏɴꜱ ᴀɴᴅ ʟɪɴᴋꜱ ꜰʀᴏᴍ ʏᴏᴜᴛᴜʙᴇ
 ⬣
 ⬣
@@ -43,7 +41,6 @@ module.exports = {
 *⬡${Mee6f}pat*  ɢᴇᴛ ᴀɴ ᴀɴɪᴍᴇ-ᴘᴀᴛ ꜱᴛɪᴄᴋᴇʀ
 *⬡${Mee6f}slap*  ɢᴇᴛ ᴀɴ ᴀɴɪᴍᴇ-ꜱʟᴀᴘ ꜱᴛɪᴄᴋᴇʀ
 *⬡${Mee6f}wink*  ɢᴇᴛ ᴀɴ ᴀɴɪᴍᴇ-ᴡɪɴᴋ ꜱᴛɪᴄᴋᴇʀ
-••➛    ••➛    ••➛    ••➛    ••➛    ••➛
 *⬡${Mee6f}yes*  ɢᴇᴛ ᴀɴ ᴀɴɪᴍᴇ-ʏᴇꜱ ɪᴍᴀɢᴇ
 *⬡${Mee6f}bite*  ɢᴇᴛ ᴀɴ ᴀɴɪᴍᴇ-ʙɪᴛᴇ ɪᴍᴀɢᴇ
 *⬡${Mee6f}blush*  ɢᴇᴛ ᴀɴ ᴀɴɪᴍᴇ-ʙʟᴜꜱʜ ɪᴍᴀɢᴇ
@@ -115,27 +112,20 @@ module.exports = {
 *⬡${Mee6f}thighs*  ᴛʜᴇ ᴛᴏᴘ ᴘᴀʀᴛ ᴏꜰ ʏᴏᴜʀ ʟᴇɢꜱ, ᴠᴇʀʏ ʜᴏᴛ, ɪꜱɴ'ᴛ ɪᴛ?
 *⬡${Mee6f}uniform*  ᴍɪʟɪᴛᴀʀʏ, ᴋᴏɴʙɪɴɪ, ᴡᴏʀᴋ, ɴᴜʀꜱᴇ ᴜɴɪꜰᴏʀᴍꜱ, ᴇᴛᴄ!~ ꜱᴇxʏ~
 *⬡${Mee6f}yuri*  ɢɪʀʟꜱ ᴏɴ ɢɪʀʟꜱ, ᴀɴᴅ ɢɪʀʟ'ꜱ ᴏɴʟʏ!
-
-
-
+⬣
+⬣
+⬣
 ⬣⬣⬣⬣⬣⬣⬣⬣⬣⬣⬣⬣⬣⬣
 *⧪➛Coming Soon!*
 
-⬡uglycheck
-⬡gaycheck
-⬡lesbiancheck
-⬡handsomecheck
-⬡beautycheck
-⬡time
-⬡rate
-⬡
-⬡
-⬡
-⬡
-
-
-
-
+⬡${Mee6f}antilink
+⬡${Mee6f}uglycheck
+⬡${Mee6f}gaycheck
+⬡${Mee6f}lesbiancheck
+⬡${Mee6f}handsomecheck
+⬡${Mee6f}beautycheck
+⬡${Mee6f}time
+⬡${Mee6f}rate
 `;
     // ===============================================================================
     // 🎮ᴍᴇᴇ6™ 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..

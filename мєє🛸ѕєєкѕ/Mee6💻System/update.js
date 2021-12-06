@@ -3,7 +3,6 @@ const ℓιєηт = require("../../ᴍᴇᴇ6/catch");
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const ꜱɪɢɴ = require(`../../ᴍᴇᴇ6/ꜱɪɢɴ`);
 var heroku = new Heroku({ token: ꜱɪɢɴ.HEROKU_API });
-
 module.exports = {
   name: `update`,
   commandType: "Mee6💻System",

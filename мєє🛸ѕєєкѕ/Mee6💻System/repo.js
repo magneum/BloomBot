@@ -3,41 +3,46 @@
 // ===============================================================================
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const ℓιєηт = require("../../ᴍᴇᴇ6/catch");
+const speed = require("performance-now");
 const ꜱɪɢɴ = require(`../../ᴍᴇᴇ6/ꜱɪɢɴ`);
 module.exports = {
-  name: `uptime`,
+  name: `repo`,
   commandType: "Mee6💻System",
-  description: `ᴄʜᴇᴄᴋ ᴍᴇᴇ6 ᴜᴘᴛɪᴍᴇ`,
+  description: `ᴄʜᴇᴄᴋ ᴍᴇᴇ6 ʀᴇᴘᴏ`,
   async handle(υℓтяσηℓιєηт, chat, ᴍᴇᴇ6, Arc, Mee6Sitrep) {
-    const runtime = function (seconds) {
-      seconds = Number(seconds);
-      var d = Math.floor(seconds / (3600 * 24));
-      var h = Math.floor((seconds % (3600 * 24)) / 3600);
-      var m = Math.floor((seconds % 3600) / 60);
-      var s = Math.floor(seconds % 60);
-      var dDisplay = d > 0 ? d + (d == 1 ? " day, " : " Day, ") : "";
-      var hDisplay = h > 0 ? h + (h == 1 ? " hour, " : " Hour, ") : "";
-      var mDisplay = m > 0 ? m + (m == 1 ? " minute, " : " Minute, ") : "";
-      var sDisplay = s > 0 ? s + (s == 1 ? " second" : " Second") : "";
-      return dDisplay + hDisplay + mDisplay + sDisplay;
-    };
-    uptime = process.uptime();
+    timestampe = speed();
+    latensie = speed() - timestampe;
     await υℓтяσηℓιєηт
       .sendMessage(
         ᴍᴇᴇ6.chatId,
         {
-          url: ꜱɪɢɴ.MEE,
+          url: "https://i.postimg.cc/5yQVrzBn/Capture.png",
         },
         MessageType.image,
         {
           mimetype: Mimetype.png,
           caption: `*⚡𝐌𝐞𝐞𝟔™* | 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 |
 ⬡=======================⬡
-
-*This 𝐌𝐞𝐞𝟔's Is Running Since:*
-⚰️𝐔𝐩𝐓𝐢𝐦𝐞: ${runtime(process.uptime())}
-
-⬡=======================⬡`,
+⧪➛ 𝗛𝗲𝗿𝗲 𝗜𝘀 𝗠𝗲𝗲𝟲 𝗥𝗲𝗽𝗼𝘀𝗶𝘁𝗼𝗿𝘆 _(Please Read the README)_
+ʟɪɴᴋ: https://github.com/Krakinz/Mee6
+⬣
+⬣
+⬣
+⬡=======================⬡
+⧪➛ 𝗝𝗼𝗶𝗻 𝗦𝘂𝗽𝗽𝗼𝗿𝘁 𝗚𝗿𝗼𝘂𝗽 *↱   🐞RΣPӨЯƬ   ↰*
+_🔸ᴡʜᴀᴛꜱᴀᴘᴘ_
+⇀ https://chat.whatsapp.com/FmMcEeSqZQw85qAkgUs3f5
+_🔸ᴅɪꜱᴄᴏʀᴅ_
+⇀ https://discord.gg/xcFN6NDHEV
+⬣
+⬣
+⬣
+⬡=======================⬡
+⧪➛ ❓𝗪𝗵𝘆 𝗠𝗮𝗱𝗲 𝗠𝗲𝗲𝟲
+🔸 ᴀᴅᴠᴀɴᴄᴇᴅ ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ 80+ ᴄᴏᴍᴍᴀɴᴅꜱ ꜰᴏʀ ʙᴏᴛʜ ᴘʀɪᴠᴀᴛᴇ ᴀɴᴅ ɢʀᴏᴜᴘ-ᴜꜱᴀɢᴇ
+🔸 ᴍᴇᴇ6 is written in JavaScript and is by far the most advance Whatsapp Userbot.
+🔸 Use ᴍᴇᴇ6 in both public-groups and private
+🔸 So many commands that will blow up the every-day use of boring whatsapp.`,
         }
       )
       .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
