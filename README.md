@@ -13,10 +13,10 @@
 💻 𝗪𝗵𝗮𝘁 𝗖𝗮𝗻 𝗕𝗼𝘁 𝗗𝗼???
 
 🎮ᴜʟᴛʀᴏɴ
-* 💡𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..
-* ᴜʟᴛʀᴏɴ is written in JavaScript and is by far the most advance Whatsapp Userbot.
-* Use ᴜʟᴛʀᴏɴ in both public-groups and private
-* So many commands that will blow up the every-day use of boring whatsapp.
+🔸 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..
+🔸 ᴜʟᴛʀᴏɴ is written in JavaScript and is by far the most advance Whatsapp Userbot.
+🔸 Use ᴜʟᴛʀᴏɴ in both public-groups and private
+🔸 So many commands that will blow up the every-day use of boring whatsapp.
 ```
 
 # 𝕯𝖊𝖕𝖑𝖔𝖞𝖒𝖊𝖓𝖙
