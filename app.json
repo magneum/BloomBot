@@ -1,14 +1,14 @@
 {
-    "logo": "https://i.postimg.cc/qv48Nzqy/Ultron.png",
-    "name": "⚡ULTƦON⚡™",
-    "repository": "https://github.com/Krakinz/Ultron.git",
+    "logo": "https://i.postimg.cc/qv48Nzqy/Mee6.png",
+    "name": "⚡ᴍᴇᴇ6⚡™",
+    "repository": "https://github.com/Krakinz/Mee6.git",
     "stack": "container",
     "description": "ᴀᴅᴠᴀɴᴄᴇᴅ ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ 80+ ᴄᴏᴍᴍᴀɴᴅꜱ ꜰᴏʀ ʙᴏᴛʜ ᴘʀɪᴠᴀᴛᴇ ᴀɴᴅ ɢʀᴏᴜᴘ-ᴜꜱᴀɢᴇ",
     "env": {
-        "ULTRON": {
-            "description": "Put Your Ultron Session Code.",
+        "Mee6": {
+            "description": "Put Your Mee6 Session Code.",
             "required": true,
-            "value": "get it from https://replit.com/@Krakinzkon/Ultron"
+            "value": "get it from https://replit.com/@Krakinzkon/Mee6"
         },
         "HEROKU_API": {
             "description": "Put Your Heroku Api Code..",

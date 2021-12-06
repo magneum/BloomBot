@@ -1,6 +1,6 @@
 [![Open Source Love svg3](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)<img align="centre" src="https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg" alt="Krakinz"/><img align="centre" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"/>
 
-# 『 🎮ULTƦON™ 』
+# 『 🎮ᴍᴇᴇ6™ 』
 *ʏᴏᴜʀ ᴀꜱꜱɪꜱꜱᴛᴀɴᴛ ꜰᴏʀ ᴍᴀᴋɪɴɢ ʙᴏʀɪɴɢ ᴡʜᴀᴛꜱᴀᴘᴘ ᴀ ʙᴇᴛᴛᴇʀ ᴀᴅᴠᴀɴᴄᴇ ᴀᴘᴘ!*
 
 <p align="center">
@@ -12,10 +12,10 @@
 ```sh
 💻 𝗪𝗵𝗮𝘁 𝗖𝗮𝗻 𝗕𝗼𝘁 𝗗𝗼???
 
-🎮ULTƦON
+🎮ᴍᴇᴇ6
 🔸 ᴀᴅᴠᴀɴᴄᴇᴅ ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ 80+ ᴄᴏᴍᴍᴀɴᴅꜱ ꜰᴏʀ ʙᴏᴛʜ ᴘʀɪᴠᴀᴛᴇ ᴀɴᴅ ɢʀᴏᴜᴘ-ᴜꜱᴀɢᴇ
-🔸 ULTƦON is written in JavaScript and is by far the most advance Whatsapp Userbot.
-🔸 Use ULTƦON in both public-groups and private
+🔸 ᴍᴇᴇ6 is written in JavaScript and is by far the most advance Whatsapp Userbot.
+🔸 Use ᴍᴇᴇ6 in both public-groups and private
 🔸 So many commands that will blow up the every-day use of boring whatsapp.
 ```
 
@@ -27,10 +27,10 @@
 - Get Your Heroku-Api Key From [Heroku API Key](https://dashboard.heroku.com/account)
 
 ⇢↱   𝗦𝘁𝗲𝗽 𝟮   ↰⇠
-- Get Your Ultron SessionCode from [![Generic badge](https://img.shields.io/badge/Replit_ULTRON_Session-blue.svg)](https://replit.com/@Krakinzkon/Ultron)
+- Get Your Mee6 SessionCode from [![Generic badge](https://img.shields.io/badge/Mee6_Session-blue.svg)](https://replit.com/@Krakinzkon/Mee6)
 - Get Your Optical Character Recognition API key from [![Generic badge](https://img.shields.io/badge/OCR-orange.svg)](https://ocr.space/)
 - Get Your API key for Weather from [![Generic badge](https://img.shields.io/badge/Open_Weather_Map-purple.svg)](https://openweathermap.org/)
-- Head Over To [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Krakinz/Ultron.git) 
+- Head Over To [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Krakinz/Mee6.git) 
 
 ⇢↱   𝗦𝘁𝗲𝗽 𝟯   ↰⇠
 - Put All The Informations In the Box given in heroku (env vars)
@@ -64,7 +64,7 @@
 Apache License
 Version 2.0, January 2004
 http://www.apache.org/licenses
-—••÷[🎮ULTƦON]÷••—
+—••÷[🎮ᴍᴇᴇ6]÷••—
 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵
 has been licensed under Apache License
 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
