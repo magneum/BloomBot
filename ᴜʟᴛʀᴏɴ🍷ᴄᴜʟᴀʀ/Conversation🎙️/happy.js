@@ -6,7 +6,7 @@ const ꜱɪɢɴ = require(`../../ᴜʟᴛʀᴏɴ/ꜱɪɢɴ`);
 const ℓιєηт = require("../../ᴜʟᴛʀᴏɴ/catch");
 const anime = require("anime-actions");
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
-command.exports = {
+module.exports = {
   name: `happy`,
   commandType: "Conversation🎙️",
   description: `	I know you like anime happy`,

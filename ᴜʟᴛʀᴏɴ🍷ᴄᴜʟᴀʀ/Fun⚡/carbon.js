@@ -6,7 +6,7 @@ const Carbon = require(`unofficial-carbon-now`);
 const ℓιєηт = require("../../ᴜʟᴛʀᴏɴ/catch");
 const ꜱɪɢɴ = require(`../../ᴜʟᴛʀᴏɴ/ꜱɪɢɴ`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
-command.exports = {
+module.exports = {
   name: `carbon`,
   commandType: "Fun⚡",
   description: `This command can be used to convert text/code into carbon images.

@@ -5,7 +5,7 @@ const ℓιєηт = require("../../ᴜʟᴛʀᴏɴ/catch");
 const { MessageType } = require(`@adiwajshing/baileys`);
 const ꜱɪɢɴ = require(`../../ᴜʟᴛʀᴏɴ/ꜱɪɢɴ`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
-command.exports = {
+module.exports = {
   name: `admins`,
   commandType: "Administration🐙",
   description: `Tag admins of a group (either as a reply to another message or a direct tag).`,

@@ -5,7 +5,7 @@ const ℓιєηт = require("../../ᴜʟᴛʀᴏɴ/catch");
 const { MessageType } = require(`@adiwajshing/baileys`);
 const ꜱɪɢɴ = require(`../../ᴜʟᴛʀᴏɴ/ꜱɪɢɴ`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
-command.exports = {
+module.exports = {
   name: `disappear`,
   commandType: "Administration🐙",
   description: `Toggle disappearing messages by using command *${ꜱɪɢɴ.ULTRONIX}dissapear* .`,

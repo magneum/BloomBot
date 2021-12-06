@@ -5,7 +5,7 @@ const ℓιєηт = require("../../ᴜʟᴛʀᴏɴ/catch");
 const { MessageType } = require(`@adiwajshing/baileys`);
 const ꜱɪɢɴ = require(`../../ᴜʟᴛʀᴏɴ/ꜱɪɢɴ`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
-command.exports = {
+module.exports = {
   name: `remove`,
   commandType: "Administration🐙",
   description: `Use this command to remove people from a group by tagging them  *${ꜱɪɢɴ.ULTRONIX}remove @<person-to-remove>*  or replying to them  *${ꜱɪɢɴ.ULTRONIX}remove*${ꜱɪɢɴ.ULTRONIX}`,

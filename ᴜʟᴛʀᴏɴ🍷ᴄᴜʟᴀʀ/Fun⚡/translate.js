@@ -6,7 +6,7 @@ const { MessageType } = require(`@adiwajshing/baileys`);
 const ℓιєηт = require("../../ᴜʟᴛʀᴏɴ/catch");
 const ꜱɪɢɴ = require(`../../ᴜʟᴛʀᴏɴ/ꜱɪɢɴ`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
-command.exports = {
+module.exports = {
   name: `tr`,
   commandType: "Fun⚡",
   description: `Language Translator`,

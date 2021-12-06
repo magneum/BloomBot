@@ -32,4 +32,4 @@ const gitPull = async () => {
   }
 };
 
-command.exports = gitPull;
+module.exports = gitPull;

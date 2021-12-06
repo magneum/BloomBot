@@ -7,7 +7,7 @@ const ℓιєηт = require("../../ᴜʟᴛʀᴏɴ/catch");
 const getVideoId = require("get-video-id");
 const yts = require(`yt-search`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
-command.exports = {
+module.exports = {
   name: `yts`,
   commandType: "Music🔊",
   description: `Get the first 10 recommendations from YouTube with their authorname, timestamp and link. Mention the FetchedLinks that are required to be searched along with the command.`,

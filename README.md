@@ -31,10 +31,30 @@
 
 
 # 𝕯𝖊𝖕𝖑𝖔𝖞𝖒𝖊𝖓𝖙
+
 - ꜰɪʀꜱᴛ ꜰᴏʀᴋ ᴀɴᴅ ꜱᴛᴀʀ ᴛʜᴇ ʀᴇᴘᴏ
-- 𝘌𝘯𝘢𝘣𝘭𝘦 𝘵𝘩𝘦 𝘥𝘺𝘯𝘰 𝘪𝘯 𝘩𝘦𝘳𝘰𝘬𝘶 (𝘪𝘧 𝘶 𝘥𝘦𝘱𝘭𝘰𝘺𝘦𝘥 𝘶𝘳 𝘣𝘰𝘵 𝘪𝘯 𝘏𝘦𝘳𝘰𝘬𝘶) 👇🏽‍
-- [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Krakinz/Ultron.git) 
-- [![Generic badge](https://img.shields.io/badge/Replit_ULTRON_Session-blue.svg)](https://replit.com/@Krakinzkon/Ultron)
+
+* 𝐒𝐭𝐞𝐩𝟏 
+- Make Heroku Account If You Don't Have already.
+- Link to [Heroku](https://dashboard.heroku.com/apps)
+
+* 𝗦𝘁𝗲𝗽𝟮
+- Get Your Ultron SessionCode from [![Generic badge](https://img.shields.io/badge/Replit_ULTRON_Session-blue.svg)](https://replit.com/@Krakinzkon/Ultron)
+- Get Your Optical Character Recognition API key from [![Generic badge](https://img.shields.io/badge/OCR-orange.svg)](https://ocr.space/)
+- Get Your API key for Weather from [![Generic badge](https://img.shields.io/badge/Open-Weather-Map-purple.svg)](https://openweathermap.org/)
+- Head Over To [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Krakinz/Ultron.git) 
+
+* 𝗦𝘁𝗲𝗽𝟯
+- Put All The Informations In the Box given in heroku (env vars)
+- Click deploy and wait for deployment to get done (takes 10-15mins)
+- After Deployment is done a new button appears "Manage Apps"
+- Click on it and turn on dyno
+- Click on logs in the top right corner of the page
+- If all went right then check your whatsapp for confirmation
+
+
+- 𝘌𝘯𝘢𝘣𝘭𝘦 𝘵𝘩𝘦 𝘥𝘺𝘯𝘰 𝘪𝘯 𝘩𝘦𝘳𝘰𝘬𝘶 (𝘪𝘧 𝘶 𝘥𝘦𝘱𝘭𝘰𝘺𝘦𝘥 𝘶𝘳 𝘣𝘰𝘵 𝘪𝘯 𝘏𝘦𝘳𝘰𝘬𝘶)
+
 
 
 

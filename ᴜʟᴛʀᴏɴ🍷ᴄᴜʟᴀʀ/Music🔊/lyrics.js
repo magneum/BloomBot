@@ -6,7 +6,7 @@ const ꜱɪɢɴ = require(`../../ᴜʟᴛʀᴏɴ/ꜱɪɢɴ`);
 const ℓιєηт = require("../../ᴜʟᴛʀᴏɴ/catch");
 const got = require(`got`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
-command.exports = {
+module.exports = {
   name: `lyrics`,
   commandType: "Music🔊",
   description: `Use this command to find the lyrics of a song by using  *${ꜱɪɢɴ.ULTRONIX}lyrics*  command.`,

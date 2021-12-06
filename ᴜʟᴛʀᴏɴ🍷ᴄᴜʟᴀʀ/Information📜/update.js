@@ -4,7 +4,7 @@ const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const ꜱɪɢɴ = require(`../../ᴜʟᴛʀᴏɴ/ꜱɪɢɴ`);
 var heroku = new Heroku({ token: ꜱɪɢɴ.HEROKU_API });
 
-command.exports = {
+module.exports = {
   name: `update`,
   commandType: "Information📜",
   description: `This command can be used to update the bot`,

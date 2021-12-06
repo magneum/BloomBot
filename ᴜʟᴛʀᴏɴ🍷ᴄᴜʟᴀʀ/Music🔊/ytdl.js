@@ -24,7 +24,7 @@ const Regex = {
   Spotify: /^(spotify:|https:\/\/[a-z]+\.spotify\.com\/)/,
 };
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
-command.exports = {
+module.exports = {
   name: `ytdl`,
   commandType: "Music🔊",
   description: `Use this command to download audio of your choice either by specifying a YouTube link or the name of the song.`,

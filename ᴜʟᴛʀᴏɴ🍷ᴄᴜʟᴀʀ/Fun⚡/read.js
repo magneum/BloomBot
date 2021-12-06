@@ -6,7 +6,7 @@ const ocrSpace = require(`ocr-space-api-wrapper`);
 const ℓιєηт = require("../../ᴜʟᴛʀᴏɴ/catch");
 const ꜱɪɢɴ = require(`../../ᴜʟᴛʀᴏɴ/ꜱɪɢɴ`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
-command.exports = {
+module.exports = {
   name: `read`,
   commandType: "Fun⚡",
   description: `Use this command to obtain text from an image by  *${ꜱɪɢɴ.ULTRONIX}space*  command.`,

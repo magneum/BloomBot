@@ -13,7 +13,7 @@ const Kolor = require(`chalk`);
 const API = new Anime_Images();
 const fs = require(`fs`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
-command.exports = {
+module.exports = {
   name: `kiss`,
   commandType: "Conversation🎙️",
   description: `I know you like anime kiss`,

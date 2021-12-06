@@ -6,7 +6,7 @@ const Greetings = require(`../../ᴜʟᴛʀᴏɴ/ɠɠᴜʟᴛʀᴏɴ`);
 const ℓιєηт = require("../../ᴜʟᴛʀᴏɴ/catch");
 const ꜱɪɢɴ = require(`../../ᴜʟᴛʀᴏɴ/ꜱɪɢɴ`);
 // ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
-command.exports = {
+module.exports = {
   name: `setwelcome`,
   commandType: "Administration🐙",
   description: `New members of a group chat will be welcomed with a message. 
