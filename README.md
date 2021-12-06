@@ -19,17 +19,6 @@
 * So many commands that will blow up the every-day use of boring whatsapp.
 ```
 
-# 📜 𝕻𝖗𝖊𝖗𝖊𝖖𝖚𝖎𝖘𝖎𝖙𝖊𝖘
-```sh
-𝐈𝐟 𝐮𝐬𝐢𝐧𝐠 𝐇𝐞𝐫𝐨𝐤𝐮:
-        ULTRON: Put Your Ultron Session Code.
-        ULTRONIX: Put Any Preferred PREFIX
-        CCD: Put Your Country Code
-        OCR: Put your Optical Character Recognition API key
-        WAPI: Put your API key for weather  
-```
-
-
 # 𝕯𝖊𝖕𝖑𝖔𝖞𝖒𝖊𝖓𝖙
 ⇢↱   𝐒𝐭𝐞𝐩 𝟏    ↰⇠
 - ꜰɪʀꜱᴛ ꜰᴏʀᴋ ᴀɴᴅ ꜱᴛᴀʀ ᴛʜᴇ ʀᴇᴘᴏ
