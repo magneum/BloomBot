@@ -22,7 +22,7 @@ const env = {
       ? "Null"
       : process.env.HEROKU_BOT_NAME,
   IMDB: `5e36f0db`,
-  Mee6IX: `^[!]`,
+  Mee6IX: `^[.!]`,
   CCD: process.env.CCD === undefined ? `91` : process.env.CCD,
   OCR: `9ffb44def388957`,
   WAPI: `6729ac2b2e2bb5c686ff427a2f06df92`,

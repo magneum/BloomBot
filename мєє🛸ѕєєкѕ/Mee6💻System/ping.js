@@ -23,12 +23,12 @@ module.exports = {
         {
           mimetype: Mimetype.png,
           caption: `*⚡𝐌𝐞𝐞𝟔™* | 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 |
-    ⬡===============================⬡
+⬡=======================⬡
 
-    *𝐌𝐞𝐞𝟔's Server Response Time Is:*
-    🛰️𝐏𝐢𝐧𝐠: _${latensie.toFixed(2)}s_
+*𝐌𝐞𝐞𝟔's Server Response Time Is:*
+🛰️𝐏𝐢𝐧𝐠: _${latensie.toFixed(2)}s_
 
-    ⬡===============================⬡`,
+⬡=======================⬡`,
         }
       )
       .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
