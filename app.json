@@ -1,0 +1,47 @@
+{
+    "logo": "https://i.postimg.cc/qv48Nzqy/Ultron.png",
+    "name": "⚡ULTƦON⚡™",
+    "repository": "https://github.com/Krakinz/Ultron.git",
+    "stack": "container",
+    "description": "ᴀᴅᴠᴀɴᴄᴇᴅ ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ 80+ ᴄᴏᴍᴍᴀɴᴅꜱ ꜰᴏʀ ʙᴏᴛʜ ᴘʀɪᴠᴀᴛᴇ ᴀɴᴅ ɢʀᴏᴜᴘ-ᴜꜱᴀɢᴇ",
+    "env": {
+        "ULTRON": {
+            "description": "Put Your Ultron Session Code.",
+            "required": true,
+            "value": "get it from https://replit.com/@Krakinzkon/Ultron"
+        },
+        "HEROKU_API": {
+            "description": "Put Your Heroku Api Code..",
+            "required": true,
+            "value": "get it from hhttps://dashboard.heroku.com/account"
+        },
+        "HEROKU_BOT_NAME": {
+            "description": "Put Your App name",
+            "required": true,
+            "value": "App name you gave in the top most box.."
+        },
+        "CCD": {
+            "description": "Put Your Country Code",
+            "required": true,
+            "value": "91"
+        },
+        "OCR": {
+            "description": "Put your Optical Character Recognition API key",
+            "required": true,
+            "value": "get it from https://ocr.space/"
+        },
+        "WAPI": {
+            "description": "Put your API key for weather",
+            "required": true,
+            "value": "get it from https://openweathermap.org/"
+        }
+    },
+    "addons": [
+        {
+            "plan": "heroku-postgresql",
+            "options": {
+                "version": "13"
+            }
+        }
+    ]
+}
