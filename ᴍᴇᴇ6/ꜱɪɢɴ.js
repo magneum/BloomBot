@@ -21,14 +21,11 @@ const env = {
     process.env.HEROKU_BOT_NAME === undefined
       ? "Null"
       : process.env.HEROKU_BOT_NAME,
-  IMDB: process.env.IMDB === undefined ? `5e36f0db` : process.env.IMDB,
+  IMDB: `5e36f0db`,
   Mee6IX: `^[!]`,
   CCD: process.env.CCD === undefined ? `91` : process.env.CCD,
-  OCR: process.env.OCR === undefined ? `9ffb44def388957` : process.env.OCR,
-  WAPI:
-    process.env.CURRENT_WEATHER_API_KEY === undefined
-      ? `6729ac2b2e2bb5c686ff427a2f06df92`
-      : process.env.CURRENT_WEATHER_API_KEY,
+  OCR: `9ffb44def388957`,
+  WAPI: `6729ac2b2e2bb5c686ff427a2f06df92`,
   DATABASE_URL: (process.env.DATABASE_URL =
     process.env.DATABASE_URL === undefined
       ? `./ᴍᴇᴇ6.db`
@@ -49,6 +46,11 @@ const env = {
             },
           },
         }),
+  ERROR: "https://i.postimg.cc/mkdqGhr5/Mee6-Error.png",
+  MEE: "https://i.postimg.cc/d0yKmR0t/Mee6.png",
+  INVL: "https://i.postimg.cc/v8p25RV9/Mee6-Invalid.png",
+  ARC: "https://i.postimg.cc/Nf3D2RZx/Mee6-Args.png",
+  UPT: "https://i.postimg.cc/2S5W6ySx/Mee6-Update.png",
   PRIVACY: process.env.PRIVACY === undefined ? `public` : process.env.PRIVACY,
   SUDO: process.env.KING === undefined ? `` : process.env.KING,
 };

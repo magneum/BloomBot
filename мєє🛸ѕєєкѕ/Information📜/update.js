@@ -14,7 +14,7 @@ module.exports = {
         .sendMessage(
           ᴍᴇᴇ6.chatId,
           {
-            url: `https://i.postimg.cc/mkdqGhr5/Mee6-Error.png`,
+            url: ꜱɪɢɴ.ERROR,
           },
           MessageType.image,
           {
@@ -29,7 +29,7 @@ Only My Owner Can use that command!`,
         .sendMessage(
           ᴍᴇᴇ6.chatId,
           {
-            url: `https://i.postimg.cc/2S5W6ySx/Mee6-Update.png`,
+            url: ꜱɪɢɴ.UPT,
           },
           MessageType.image,
           {
@@ -45,9 +45,7 @@ Only My Owner Can use that command!`,
         )
         .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
       heroku
-        .delete(
-          "/apps/" + ꜱɪɢɴ.HEROKU_BOT_NAME + "/dynos/" + "worker"
-        )
+        .delete("/apps/" + ꜱɪɢɴ.HEROKU_BOT_NAME + "/dynos/" + "worker")
         .then((x) => console.log(x));
     }
   },

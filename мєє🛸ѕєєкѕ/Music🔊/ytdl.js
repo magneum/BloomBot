@@ -34,7 +34,7 @@ module.exports = {
         .sendMessage(
           ᴍᴇᴇ6.chatId,
           {
-            url: `https://i.postimg.cc/Nf3D2RZx/Mee6-Args.png`,
+            url: ꜱɪɢɴ.ARC,
           },
           MessageType.image,
           {
@@ -57,7 +57,7 @@ You Can Get URL by using ${ꜱɪɢɴ.Mee6IX}yts <song-name>`,
         .sendMessage(
           ᴍᴇᴇ6.chatId,
           {
-            url: `https://i.postimg.cc/Nf3D2RZx/Mee6-Args.png`,
+            url: ꜱɪɢɴ.ARC,
           },
           MessageType.image,
           {

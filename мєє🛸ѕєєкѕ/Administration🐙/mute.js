@@ -41,7 +41,7 @@ will change chat permissions to admin-only for 15 minutes.`,
           .sendMessage(
             ᴍᴇᴇ6.chatId,
             {
-              url: `https://i.postimg.cc/Nf3D2RZx/Mee6-Args.png`,
+              url: ꜱɪɢɴ.ARC,
             },
             MessageType.image,
             {

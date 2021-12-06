@@ -18,7 +18,7 @@ You can also reply to a text message with syntax  *${ꜱɪɢɴ.Mee6IX}tr <langua
         .sendMessage(
           ᴍᴇᴇ6.chatId,
           {
-            url: `https://i.postimg.cc/Nf3D2RZx/Mee6-Args.png`,
+            url: ꜱɪɢɴ.ARC,
           },
           MessageType.image,
           {

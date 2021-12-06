@@ -19,7 +19,7 @@ Enter text with the command  *${ꜱɪɢɴ.Mee6IX}neko* .`,
           .sendMessage(
             ᴍᴇᴇ6.chatId,
             {
-              url: `https://i.postimg.cc/Nf3D2RZx/Mee6-Args.png`,
+              url: ꜱɪɢɴ.ARC,
             },
             MessageType.image,
             {

@@ -64,7 +64,7 @@ For example- *${ꜱɪɢɴ.Mee6IX}promote 9861212121*`,
                 .sendMessage(
                   ᴍᴇᴇ6.chatId,
                   {
-                    url: `https://i.postimg.cc/Nf3D2RZx/Mee6-Args.png`,
+                    url: ꜱɪɢɴ.ARC,
                   },
                   MessageType.image,
                   {
@@ -94,7 +94,7 @@ For example- *${ꜱɪɢɴ.Mee6IX}promote 9861212121*`,
               .sendMessage(
                 ᴍᴇᴇ6.chatId,
                 {
-                  url: `https://i.postimg.cc/Nf3D2RZx/Mee6-Args.png`,
+                  url: ꜱɪɢɴ.ARC,
                 },
                 MessageType.image,
                 {

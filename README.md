@@ -28,8 +28,6 @@
 
 ⇢↱   𝗦𝘁𝗲𝗽 𝟮   ↰⇠
 - Get Your Mee6 SessionCode from [![Generic badge](https://img.shields.io/badge/Mee6_Session-blue.svg)](https://replit.com/@Krakinzkon/Mee6)
-- Get Your Optical Character Recognition API key from [![Generic badge](https://img.shields.io/badge/OCR-orange.svg)](https://ocr.space/)
-- Get Your API key for Weather from [![Generic badge](https://img.shields.io/badge/Open_Weather_Map-purple.svg)](https://openweathermap.org/)
 - Head Over To [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Krakinz/Mee6.git) 
 
 ⇢↱   𝗦𝘁𝗲𝗽 𝟯   ↰⇠

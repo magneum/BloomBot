@@ -16,7 +16,7 @@ module.exports = {
         .sendMessage(
           ᴍᴇᴇ6.chatId,
           {
-            url: `https://i.postimg.cc/mkdqGhr5/Mee6-Error.png`,
+            url: ꜱɪɢɴ.ERROR,
           },
           MessageType.image,
           {

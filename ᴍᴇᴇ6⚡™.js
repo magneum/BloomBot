@@ -13,7 +13,6 @@ const ᴍᴇᴇ6ֆʏռօք = require(`./ᴍᴇᴇ6/ᴍᴇᴇ6ᴢᴇɴ`);
 const ℓιєηт = require("./ᴍᴇᴇ6/catch");
 const vers = require(`./package.json`);
 const clientult = require(`./ᴍᴇᴇ6/ɠɠʊ`);
-const Matellic = require(`random-material-color`);
 const gitPull = require(`./ᴍᴇᴇ6/ᴍᴇᴇ6ɢɪᴛ`);
 const ɠɠᴍᴇᴇ6 = require(`./ᴍᴇᴇ6/ɠɠᴍᴇᴇ6`);
 const ᴍᴇᴇ6Sudo = [`block`, `unblock`];
@@ -259,45 +258,6 @@ ${Fetched.message}`,
           return;
         }
         var Fetched = await ɠɠᴍᴇᴇ6.getMessage(GroupID, `setgoodbye`);
-        const width = 1280;
-        const height = 720;
-        const canvas = createCanvas(width, height);
-        const context = canvas.getContext(`2d`);
-        context.fillStyle = `#252525`;
-        context.fillRect(0, 0, width, height);
-        context.font = `bold 60pt Lobster`;
-        context.textAlign = `center`;
-        context.textBaseline = `top`;
-        const BYETEXT = `@${MemNum.split(`@`)[0]}`;
-        const BYETW = context.measureText(BYETEXT).width;
-        context.fillRect(600 - BYETW / 2 - 10, 170 - 5, BYETW + 20, 120);
-        const Text_Rand_Bye = `${
-          Text__Bye[Math.floor(Math.random() * Text__Bye.length)]
-        }`;
-        context.fillStyle = Matellic.getColor();
-        context.fillText(BYETEXT, 600, 170);
-        context.fillStyle = `#fff`;
-        context.font = `bold 50pt Honeycomb`;
-        context.fillText(Text_Rand_Bye, 600, 530);
-        const myimg = loadImage(`./ᴍᴇᴇ6/ᴍᴇᴇ6ɠb.png`);
-        await myimg.then(() => {
-          const buffer = canvas.toBuffer(`image/png`);
-          fs.writeFileSync(`./ᴍᴇᴇ6/ᴍᴇᴇ6ɠɠ.png`, buffer);
-          υℓтяσηℓιєηт.sendMessage(
-            GroupID,
-            {
-              url: `./ᴍᴇᴇ6/ᴍᴇᴇ6ɠb.png`,
-            },
-            MessageType.image,
-            {
-              mimetype: Mimetype.png,
-              caption: `🗄️𝗪𝗲 𝗔𝗿𝗲 𝗡𝗼𝘄➛  _${GroupMemG}_ 𝗠𝗲𝗺𝗯𝗲𝗿𝘀
-
-*•⊹٭---------------٭⊹•*
-${Fetched.message}`,
-            }
-          );
-        });
       }
     } catch (cᴇʀʀᴏʀ) {
       console.log(cᴇʀʀᴏʀ);
@@ -393,7 +353,7 @@ If you are keen to use my features, you can deploy ᴍᴇᴇ6 on your own accoun
           .sendMessage(
             ᴍᴇᴇ6.chatId,
             {
-              url: `https://i.postimg.cc/v8p25RV9/Mee6-Invali.png`,
+              url: ꜱɪɢɴ.INVL,
             },
             MessageType.image,
             {

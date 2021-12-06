@@ -24,16 +24,6 @@
             "description": "Put Your Country Code",
             "required": true,
             "value": "91"
-        },
-        "OCR": {
-            "description": "Put your Optical Character Recognition API key",
-            "required": true,
-            "value": "get it from https://ocr.space/"
-        },
-        "WAPI": {
-            "description": "Put your API key for weather",
-            "required": true,
-            "value": "get it from https://openweathermap.org/"
         }
     },
     "addons": [

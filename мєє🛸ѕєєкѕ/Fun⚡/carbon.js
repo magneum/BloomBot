@@ -53,7 +53,7 @@ In order to specify the theme, use  *${ꜱɪɢɴ.Mee6IX}carbon <text> -t <theme>
           .sendMessage(
             ᴍᴇᴇ6.chatId,
             {
-              url: `https://i.postimg.cc/Nf3D2RZx/Mee6-Args.png`,
+              url: ꜱɪɢɴ.ARC,
             },
             MessageType.image,
             {
