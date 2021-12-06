@@ -7,7 +7,7 @@ exports.catch = async (error, υℓтяσηℓιєηт, ᴍᴇᴇ6) => {
   await υℓтяσηℓιєηт.sendMessage(
     ᴍᴇᴇ6.logGroup,
     {
-      url: `./ᴍᴇᴇ6/ᴍᴇᴇ6-error.png`,
+      url: "https://i.postimg.cc/mkdqGhr5/Mee6-Error.png",
     },
     MessageType.image,
     {
@@ -29,7 +29,7 @@ _🔸ᴅɪꜱᴄᴏʀᴅ_
   await υℓтяσηℓιєηт.sendMessage(
     ᴍᴇᴇ6.chatId,
     {
-      url: `./ᴍᴇᴇ6/ᴍᴇᴇ6-error.png`,
+      url: "https://i.postimg.cc/mkdqGhr5/Mee6-Error.png",
     },
     MessageType.image,
     {
