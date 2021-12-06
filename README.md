@@ -31,10 +31,8 @@
 
 
 # 𝕯𝖊𝖕𝖑𝖔𝖞𝖒𝖊𝖓𝖙
-
-- ꜰɪʀꜱᴛ ꜰᴏʀᴋ ᴀɴᴅ ꜱᴛᴀʀ ᴛʜᴇ ʀᴇᴘᴏ
-
 * 𝐒𝐭𝐞𝐩𝟏 
+- ꜰɪʀꜱᴛ ꜰᴏʀᴋ ᴀɴᴅ ꜱᴛᴀʀ ᴛʜᴇ ʀᴇᴘᴏ
 - Make Heroku Account If You Don't Have already.
 - Link to [Heroku](https://dashboard.heroku.com/apps)
 
@@ -48,12 +46,15 @@
 - Put All The Informations In the Box given in heroku (env vars)
 - Click deploy and wait for deployment to get done (takes 10-15mins)
 - After Deployment is done a new button appears "Manage Apps"
-- Click on it and turn on dyno
+- Click on it and 𝘌𝘯𝘢𝘣𝘭𝘦 𝘵𝘩𝘦 𝘥𝘺𝘯𝘰 𝘪𝘯 𝘩𝘦𝘳𝘰𝘬𝘶
 - Click on logs in the top right corner of the page
 - If all went right then check your whatsapp for confirmation
 
+* 𝗦𝘁𝗲𝗽𝟰
+- If anything went wrong Please ↱   🐞RΣPӨЯƬ   ↰
+🔸ᴡʜᴀᴛꜱᴀᴘᴘ⇀ https://chat.whatsapp.com/FmMcEeSqZQw85qAkgUs3f5
+🔸ᴅɪꜱᴄᴏʀᴅ⇀ https://discord.gg/xcFN6NDHEV
 
-- 𝘌𝘯𝘢𝘣𝘭𝘦 𝘵𝘩𝘦 𝘥𝘺𝘯𝘰 𝘪𝘯 𝘩𝘦𝘳𝘰𝘬𝘶 (𝘪𝘧 𝘶 𝘥𝘦𝘱𝘭𝘰𝘺𝘦𝘥 𝘶𝘳 𝘣𝘰𝘵 𝘪𝘯 𝘏𝘦𝘳𝘰𝘬𝘶)
 
 
 
