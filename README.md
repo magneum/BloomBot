@@ -1,5 +1,8 @@
 [![Open Source Love svg3](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)<img align="centre" src="https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg" alt="Krakinz"/><img align="centre" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"/>
 
+𝗣𝗹𝗲𝗮𝘀𝗲 𝗪𝗮𝗶𝘁 𝗙𝗼𝗿 𝗦𝘁𝗮𝗯𝗹𝗲 𝗩𝗲𝗿𝘀𝗶𝗼𝗻
+𝗗𝗮𝘁𝗲: 𝟭𝟬-𝗗𝗲𝘃-𝟮𝟬𝟮𝟭
+
 # 『 🎮ᴜʟᴛʀᴏɴ™ 』
 *ʏᴏᴜʀ ᴀꜱꜱɪꜱꜱᴛᴀɴᴛ ꜰᴏʀ ᴍᴀᴋɪɴɢ ʙᴏʀɪɴɢ ᴡʜᴀᴛꜱᴀᴘᴘ ᴀ ʙᴇᴛᴛᴇʀ ᴀᴅᴠᴀɴᴄᴇ ᴀᴘᴘ!*
 
