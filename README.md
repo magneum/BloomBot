@@ -31,18 +31,18 @@
 
 
 # 𝕯𝖊𝖕𝖑𝖔𝖞𝖒𝖊𝖓𝖙
-* 𝐒𝐭𝐞𝐩𝟏 
+⇢↱   𝐒𝐭𝐞𝐩 𝟏    ↰⇠
 - ꜰɪʀꜱᴛ ꜰᴏʀᴋ ᴀɴᴅ ꜱᴛᴀʀ ᴛʜᴇ ʀᴇᴘᴏ
 - Make Heroku Account If You Don't Have already.
 - Link to [Heroku](https://dashboard.heroku.com/apps)
 
-* 𝗦𝘁𝗲𝗽𝟮
+⇢↱   𝗦𝘁𝗲𝗽 𝟮   ↰⇠
 - Get Your Ultron SessionCode from [![Generic badge](https://img.shields.io/badge/Replit_ULTRON_Session-blue.svg)](https://replit.com/@Krakinzkon/Ultron)
 - Get Your Optical Character Recognition API key from [![Generic badge](https://img.shields.io/badge/OCR-orange.svg)](https://ocr.space/)
 - Get Your API key for Weather from [![Generic badge](https://img.shields.io/badge/Open-Weather-Map-purple.svg)](https://openweathermap.org/)
 - Head Over To [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Krakinz/Ultron.git) 
 
-* 𝗦𝘁𝗲𝗽𝟯
+⇢↱   𝗦𝘁𝗲𝗽 𝟯   ↰⇠
 - Put All The Informations In the Box given in heroku (env vars)
 - Click deploy and wait for deployment to get done (takes 10-15mins)
 - After Deployment is done a new button appears "Manage Apps"
@@ -50,8 +50,8 @@
 - Click on logs in the top right corner of the page
 - If all went right then check your whatsapp for confirmation
 
-* 𝗦𝘁𝗲𝗽𝟰
-- If anything went wrong Please ↱   🐞RΣPӨЯƬ   ↰
+⇢↱   𝗦𝘁𝗲𝗽 𝟰   ↰⇠
+- If anything went wrong Please 🐞RΣPӨЯƬ
 🔸ᴡʜᴀᴛꜱᴀᴘᴘ⇀ https://chat.whatsapp.com/FmMcEeSqZQw85qAkgUs3f5
 🔸ᴅɪꜱᴄᴏʀᴅ⇀ https://discord.gg/xcFN6NDHEV
 
