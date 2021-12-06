@@ -39,7 +39,7 @@
 ⇢↱   𝗦𝘁𝗲𝗽 𝟮   ↰⇠
 - Get Your Ultron SessionCode from [![Generic badge](https://img.shields.io/badge/Replit_ULTRON_Session-blue.svg)](https://replit.com/@Krakinzkon/Ultron)
 - Get Your Optical Character Recognition API key from [![Generic badge](https://img.shields.io/badge/OCR-orange.svg)](https://ocr.space/)
-- Get Your API key for Weather from [![Generic badge](https://img.shields.io/badge/Open-Weather-Map-purple.svg)](https://openweathermap.org/)
+- Get Your API key for Weather from [![Generic badge](https://img.shields.io/badge/Open_Weather_Map-purple.svg)](https://openweathermap.org/)
 - Head Over To [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Krakinz/Ultron.git) 
 
 ⇢↱   𝗦𝘁𝗲𝗽 𝟯   ↰⇠
