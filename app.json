@@ -10,11 +10,6 @@
             "required": true,
             "value": "get it from https://replit.com/@Krakinzkon/Ultron"
         },
-        "KING": {
-            "description": "Put Your Phone number",
-            "required": true,
-            "value": "needed"
-        },
         "HEROKU_API": {
             "description": "Put Your Heroku Api Code..",
             "required": true,

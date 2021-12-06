@@ -11,7 +11,6 @@ exports.resolve = function (messageInstance, υℓтяσηℓιєηт, groupMeta
   var ᴜʟᴛʀᴏɴ = new ƈʏɮօʀɢƈʟǟ();
   var prefix = ꜱɪɢɴ.ULTRONIX + "\\w+";
   var prefixRegex = new RegExp(prefix, "g");
-  var SUDOstring = ꜱɪɢɴ.SUDO;
   try {
     var jsonMessage = JSON.stringify(messageInstance);
   } catch (CYΣЯЯ) {
@@ -122,9 +121,6 @@ exports.resolve = function (messageInstance, υℓтяσηℓιєηт, groupMeta
     ? getGroupAdmins(ᴜʟᴛʀᴏɴ.groupMembers)
     : "";
   ᴜʟᴛʀᴏɴ.groupId = ᴜʟᴛʀᴏɴ.isGroup ? groupMetadata.id : "";
-  ᴜʟᴛʀᴏɴ.isSenderSUDO = SUDOstring.includes(
-    ᴜʟᴛʀᴏɴ.sender.substring(0, ᴜʟᴛʀᴏɴ.sender.indexOf("@"))
-  );
   ᴜʟᴛʀᴏɴ.isBotGroupAdmin = ᴜʟᴛʀᴏɴ.isGroup
     ? ᴜʟᴛʀᴏɴ.groupAdmins.includes(ᴜʟᴛʀᴏɴ.owner)
     : false;

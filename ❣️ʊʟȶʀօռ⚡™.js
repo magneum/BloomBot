@@ -9,15 +9,13 @@ registerFont(`./ᴜʟᴛʀᴏɴ/LobsterTwo-Bold.ttf`, {
   family: `Lobster`,
 });
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
-const ꜱɪɢɴ = require(`./ᴜʟᴛʀᴏɴ/ꜱɪɢɴ`);
 const ᴜʟᴛʀᴏɴֆʏռօք = require(`./ᴜʟᴛʀᴏɴ/UltronCOrex`);
 const Matellic = require(`random-material-color`);
 const gitPull = require(`./ᴜʟᴛʀᴏɴ/ᴜʟᴛʀᴏɴɢɪᴛ`);
 const ɠɠᴜʟᴛʀᴏɴ = require(`./ᴜʟᴛʀᴏɴ/ɠɠᴜʟᴛʀᴏɴ`);
 const ᴜʟᴛʀᴏɴǟքք = require(`./ᴜʟᴛʀᴏɴ/helper`);
-const clientult = require(`./ᴜʟᴛʀᴏɴ/ɠɠʊ`);
 const download = require(`download-file`);
-const ᴜʟᴛʀᴏɴSudo = [`block`, `unblock`];
+const ꜱɪɢɴ = require(`./ᴜʟᴛʀᴏɴ/ꜱɪɢɴ`);
 const Kolor = require(`chalk`);
 const ᴜʟᴛʀᴏɴsql = ꜱɪɢɴ.POSTQL;
 const fs = require(`fs`);
@@ -43,30 +41,29 @@ var Text_Rand_Welcome = [
   `*ᴊᴜꜱᴛ ꜱʜᴏᴡᴇᴅ ᴜᴘ. ʜᴏʟᴅ ᴍʏ ʙᴇᴇʀ.*`,
 ];
 var Text__Bye = [
-  `ᴡɪʟʟ ʙᴇ ᴍɪꜱꜱᴇᴅ.`,
-  `ᴊᴜꜱᴛ ᴡᴇɴᴛ ᴏꜰꜰʟɪɴᴇ.`,
-  `ʜᴀꜱ ʟᴇꜰᴛ ᴛʜᴇ ʟᴏʙʙʏ.`,
-  `ʜᴀꜱ ʟᴇꜰᴛ ᴛʜᴇ ᴄʟᴀɴ.`,
-  `ʜᴀꜱ ʟᴇꜰᴛ ᴛʜᴇ ɢᴀᴍᴇ.`,
-  `ʜᴀꜱ ꜰʟᴇᴅ ᴛʜᴇ ᴀʀᴇᴀ.`,
-  `ɴɪᴄᴇ ᴋɴᴏᴡɪɴɢ ʏᴀ!`,
-  `ɪᴛ ᴡᴀꜱ ᴀ ꜰᴜɴ ᴛɪᴍᴇ.`,
-  `ɪ ᴅᴏɴᴜᴛ ᴡᴀɴᴛ ᴛᴏ ꜱᴀʏ ɢᴏᴏᴅʙʏᴇ.`,
-  `ᴡᴇ ʜᴏᴘᴇ ᴛᴏ ꜱᴇᴇ ʏᴏᴜ ᴀɢᴀɪɴ ꜱᴏᴏɴ.`,
-  `ʏᴏᴜ'ʀᴇ ʟᴇᴀᴠɪɴɢ, ? ʏᴀʀᴇ ʏᴀʀᴇ ᴅᴀᴢᴇ.`,
-  `ɢᴏᴏᴅʙʏᴇ ! ɢᴜᴇꜱꜱ ᴡʜᴏ'ꜱ ɢᴏɴɴᴀ ᴍɪꜱꜱ ʏᴏᴜ :')`,
-  `ɢᴏᴏᴅʙʏᴇ ! ɪᴛ'ꜱ ɢᴏɴɴᴀ ʙᴇ ʟᴏɴᴇʟʏ ᴡɪᴛʜᴏᴜᴛ ʏᴀ.`,
-  `ᴘʟᴇᴀꜱᴇ ᴅᴏɴ'ᴛ ʟᴇᴀᴠᴇ ᴍᴇ ᴀʟᴏɴᴇ ɪɴ ᴛʜɪꜱ ᴘʟᴀᴄᴇ!`,
-  `ɢᴏᴏᴅ ʟᴜᴄᴋ ꜰɪɴᴅɪɴɢ ʙᴇᴛᴛᴇʀ ꜱʜɪᴛ-ᴘᴏꜱᴛᴇʀꜱ ᴛʜᴀɴ ᴜꜱ!`,
-  `ʏᴏᴜ ᴋɴᴏᴡ ᴡᴇ'ʀᴇ ɢᴏɴɴᴀ ᴍɪꜱꜱ ʏᴏᴜ . ʀɪɢʜᴛ? ʀɪɢʜᴛ? ʀɪɢʜᴛ?`,
-  `ᴄᴏɴɢʀᴀᴛᴜʟᴀᴛɪᴏɴꜱ, ! ʏᴏᴜ'ʀᴇ ᴏꜰꜰɪᴄɪᴀʟʟʏ ꜰʀᴇᴇ ᴏꜰ ᴛʜɪꜱ ᴍᴇꜱꜱ.`,
+  `*ᴡɪʟʟ ʙᴇ ᴍɪꜱꜱᴇᴅ.*`,
+  `*ᴊᴜꜱᴛ ᴡᴇɴᴛ ᴏꜰꜰʟɪɴᴇ.*`,
+  `*ʜᴀꜱ ʟᴇꜰᴛ ᴛʜᴇ ʟᴏʙʙʏ.*`,
+  `*ʜᴀꜱ ʟᴇꜰᴛ ᴛʜᴇ ᴄʟᴀɴ.*`,
+  `*ʜᴀꜱ ʟᴇꜰᴛ ᴛʜᴇ ɢᴀᴍᴇ.*`,
+  `*ʜᴀꜱ ꜰʟᴇᴅ ᴛʜᴇ ᴀʀᴇᴀ.*`,
+  `*ɴɪᴄᴇ ᴋɴᴏᴡɪɴɢ ʏᴀ!*`,
+  `*ɪᴛ ᴡᴀꜱ ᴀ ꜰᴜɴ ᴛɪᴍᴇ.*`,
+  `*ɪ ᴅᴏɴᴜᴛ ᴡᴀɴᴛ ᴛᴏ ꜱᴀʏ ɢᴏᴏᴅʙʏᴇ.*`,
+  `*ᴡᴇ ʜᴏᴘᴇ ᴛᴏ ꜱᴇᴇ ʏᴏᴜ ᴀɢᴀɪɴ ꜱᴏᴏɴ.*`,
+  `*ʏᴏᴜ'ʀᴇ ʟᴇᴀᴠɪɴɢ, ? ʏᴀʀᴇ ʏᴀʀᴇ ᴅᴀᴢᴇ.*`,
+  `*ɢᴏᴏᴅʙʏᴇ ! ɢᴜᴇꜱꜱ ᴡʜᴏ'ꜱ ɢᴏɴɴᴀ ᴍɪꜱꜱ ʏᴏᴜ :')*`,
+  `*ɢᴏᴏᴅʙʏᴇ ! ɪᴛ'ꜱ ɢᴏɴɴᴀ ʙᴇ ʟᴏɴᴇʟʏ ᴡɪᴛʜᴏᴜᴛ ʏᴀ.*`,
+  `*ᴘʟᴇᴀꜱᴇ ᴅᴏɴ'ᴛ ʟᴇᴀᴠᴇ ᴍᴇ ᴀʟᴏɴᴇ ɪɴ ᴛʜɪꜱ ᴘʟᴀᴄᴇ!*`,
+  `*ɢᴏᴏᴅ ʟᴜᴄᴋ ꜰɪɴᴅɪɴɢ ʙᴇᴛᴛᴇʀ ꜱʜɪᴛ-ᴘᴏꜱᴛᴇʀꜱ ᴛʜᴀɴ ᴜꜱ!*`,
+  `*ʏᴏᴜ ᴋɴᴏᴡ ᴡᴇ'ʀᴇ ɢᴏɴɴᴀ ᴍɪꜱꜱ ʏᴏᴜ . ʀɪɢʜᴛ? ʀɪɢʜᴛ? ʀɪɢʜᴛ?*`,
+  `*ᴄᴏɴɢʀᴀᴛᴜʟᴀᴛɪᴏɴꜱ, ! ʏᴏᴜ'ʀᴇ ᴏꜰꜰɪᴄɪᴀʟʟʏ ꜰʀᴇᴇ ᴏꜰ ᴛʜɪꜱ ᴍᴇꜱꜱ.*`,
 ];
 // ===============================================================================
 // 🎮ᴜʟᴛʀᴏɴ™ 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..
 // ===============================================================================
 var υℓтяσηℓιєηт = ᴜʟᴛʀᴏɴֆʏռօք.WhatsApp;
-async function ᴜʟᴛʀᴏɴRunner() {
-  // υℓтяσηℓιєηт.logger.level = `error`;
+async function ᴜʟᴛʀᴏɴs() {
   var UltronSitrep = new Map();
   if (ꜱɪɢɴ.HEROKU_API === `Null` || ꜱɪɢɴ.HEROKU_BOT_NAME === `Null`) {
     console.log(
@@ -76,6 +73,9 @@ async function ᴜʟᴛʀᴏɴRunner() {
     );
     process.exit(0);
   }
+  console.log(
+    Kolor.yellow(`=================😈    |  ᴜʟᴛʀᴏɴ  |    😈=================`)
+  );
   console.log(Kolor.yellow(`[INFO] Checking for updates...`));
   await gitPull();
   try {
@@ -100,21 +100,35 @@ async function ᴜʟᴛʀᴏɴRunner() {
   // 🎮ᴜʟᴛʀᴏɴ™ 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..
   // ===============================================================================
   υℓтяσηℓιєηт.on(`connecting`, async () => {
+    console.log(
+      Kolor.yellow(`=================😈    |  ᴜʟᴛʀᴏɴ  |    😈=================`)
+    );
     console.log(Kolor.yellow(`💡⬰  𝘊𝘰𝘯𝘯𝘦𝘤𝘵𝘪𝘯𝘨 𝘵𝘰 𝘞𝘩𝘢𝘵𝘴𝘈𝘱𝘱...🤖`));
   });
   // ===============================================================================
   // 🎮ᴜʟᴛʀᴏɴ™ 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..
   // ===============================================================================
   υℓтяσηℓιєηт.on(`open`, async () => {
+    console.log(
+      Kolor.yellow(`=================😈    |  ᴜʟᴛʀᴏɴ  |    😈=================`)
+    );
     console.log(Kolor.yellow(`💡⬰  𝘊𝘰𝘯𝘯𝘦𝘤𝘵𝘪𝘯𝘨 𝘵𝘰 𝘋𝘢𝘵𝘢𝘣𝘢𝘴𝘦...✅`));
     try {
       await ᴜʟᴛʀᴏɴsql.authenticate();
     } catch (error) {
       console.error(`❌⬰ Unable to connect to the database:`, error);
     }
+    console.log(
+      Kolor.yellow(`=================😈    |  ᴜʟᴛʀᴏɴ  |    😈=================`)
+    );
     console.log(Kolor.yellow(`💡⬰  𝘚𝘺𝘯𝘤𝘪𝘯𝘨 𝘋𝘢𝘵𝘢 𝘸𝘪𝘵𝘩 𝘏𝘰𝘴𝘵...✅`));
     await ᴜʟᴛʀᴏɴsql.sync();
     console.clear();
+    console.log(
+      Kolor.yellow(
+        `\n\n\n\n\n\n=================😈    |  ᴜʟᴛʀᴏɴ  |    😈=================`
+      )
+    );
     console.log(Kolor.yellow(`💡⬰  𝘐𝘯𝘴𝘵𝘢𝘭𝘭𝘪𝘯𝘨 𝘗𝘭𝘶𝘨𝘪𝘯𝘴...✅`));
     const Folders = fs.readdirSync(`./ᴜʟᴛʀᴏɴ🍷ᴄᴜʟᴀʀ`);
     for (const folder of Folders) {
@@ -124,23 +138,25 @@ async function ᴜʟᴛʀᴏɴRunner() {
       for (const file of commandFiles) {
         const command = require(`./ᴜʟᴛʀᴏɴ🍷ᴄᴜʟᴀʀ/${folder}/${file}`);
         UltronSitrep.set(command.name, command);
-        console.log(Kolor.yellow(`💡⬰  `), Kolor.green(command.name));
+        console.log(
+          Kolor.yellow(`💡⬰  `),
+          Kolor.green(command.name.toUpperCase())
+        );
       }
     }
     console.log(
-      Kolor.yellow(
-        `=================😈    |  ᴜʟᴛʀᴏɴ  |    😈=================`
+      Kolor.green(
+        `\n\n\n=================😈    |  ᴜʟᴛʀᴏɴ  |    😈=================`
       ),
-      Kolor.red(`
-██╗   ██╗██╗  ████████╗██████╗  ██████╗ ███╗   ██╗
-██║   ██║██║  ╚══██╔══╝██╔══██╗██╔═══██╗████╗  ██║
-██║   ██║██║     ██║   ██████╔╝██║   ██║██╔██╗ ██║
-██║   ██║██║     ██║   ██╔══██╗██║   ██║██║╚██╗██║
-╚██████╔╝███████╗██║   ██║  ██║╚██████╔╝██║ ╚████║
-╚═════╝ ╚══════╝╚═╝   ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝`),
-      Kolor.yellow(
-        `\n=================😈    |  ᴜʟᴛʀᴏɴ  |    😈=================`
-      )
+      Kolor.blue(`
+===|██╗   ██╗██╗  ████████╗██████╗  ██████╗ ███╗   ██╗
+===|██║   ██║██║  ╚══██╔══╝██╔══██╗██╔═══██╗████╗  ██║
+===|██║   ██║██║     ██║   ██████╔╝██║   ██║██╔██╗ ██║
+===|██║   ██║██║     ██║   ██╔══██╗██║   ██║██║╚██╗██║
+===|╚██████╔╝███████╗██║   ██║  ██║╚██████╔╝██║ ╚████║
+===|╚═════╝ ╚══════╝╚═╝   ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝
+`),
+      Kolor.green(`=================😈    |  ᴜʟᴛʀᴏɴ  |    😈=================`)
     );
     await υℓтяσηℓιєηт.sendMessage(
       υℓтяσηℓιєηт.user.jid,
@@ -158,7 +174,7 @@ async function ᴜʟᴛʀᴏɴRunner() {
 *🔸ᴠʟʙᴛ-4.89*
 
 𝗙𝗼𝗿 𝗺𝗼𝗿𝗲 𝗶𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻 𝗿𝗲𝗴𝗮𝗿𝗱𝗶𝗻𝗴 𝗕𝗼𝘁 𝗙𝗼𝗹𝗹𝗼𝘄 𝘁𝗵𝗲𝘀𝗲❣️𝗜𝗺𝗽-𝗟𝗶𝗻𝗸𝘀:
-*🔸ᴡʜᴀᴛꜱᴀᴘᴘ*⇀ https://chat.whatsapp.com/FmMcEeSqZQw85qAkgUs3f5
+*🔸ᴡʜᴀᴛꜱᴀᴘᴘ*⇀ https://chat.whatsapp.com/FmMcEeSqZQw85qAkgUs3f5 (RΣPӨЯƬ)
 *🔸ɢɪᴛʜᴜʙ*⇀ https://github.com/Krakinz
 *🔸ᴅɪꜱᴄᴏʀᴅ*⇀ https://discord.gg/xcFN6NDHEV`,
       }
@@ -317,39 +333,6 @@ ${Fetched.message}`,
           `You need to be an admin to execute this command.`,
           MessageType.text
         );
-      } else if (ᴜʟᴛʀᴏɴSudo.indexOf(ᴜʟᴛʀᴏɴ.commandName) >= 0) {
-        var messageSent = await clientult.getUser(ᴜʟᴛʀᴏɴ.chatId);
-        if (messageSent) {
-          return console.log(
-            Kolor.blue(
-              `💡⬰  Promo message had already been sent to ` + ᴜʟᴛʀᴏɴ.chatId
-            )
-          );
-        } else {
-          await clientult.addUser(ᴜʟᴛʀᴏɴ.chatId);
-          return υℓтяσηℓιєηт.sendMessage(
-            ᴜʟᴛʀᴏɴ.chatId,
-            `ᴜʟᴛʀᴏɴ is Alive!.
-I guess you were trying to use my commands in *${ᴜʟᴛʀᴏɴ.groupName}*. However, the bot is currently in ${worktype} mode. 
-This enables only the owner and sudo clientult to use the command *${commandName}* .
-If you are keen to use my features, you can deploy ᴜʟᴛʀᴏɴ on your own account without much effort, in less than 5 minutes! Check out the links given below.`,
-            {
-              worktype: `public`,
-              groupName: ᴜʟᴛʀᴏɴ.groupName ? ᴜʟᴛʀᴏɴ.groupName : `private chat`,
-              commandName: ᴜʟᴛʀᴏɴ.commandName,
-            },
-            MessageType.text,
-            {
-              contextInfo: {
-                stanzaId: chat.key.id,
-                participant: ᴜʟᴛʀᴏɴ.sender,
-                quotedMessage: {
-                  conversation: ᴜʟᴛʀᴏɴ.body,
-                },
-              },
-            }
-          );
-        }
       }
     }
     // ===============================================================================
@@ -391,9 +374,7 @@ Please Use *${Ultronf}help to get the list of available commands*`,
     }
   });
 }
-ᴜʟᴛʀᴏɴRunner().catch((cᴇʀʀᴏʀ) =>
-  console.log(Kolor.red(`❌⬰`), Kolor.red(cᴇʀʀᴏʀ))
-);
+ᴜʟᴛʀᴏɴs().catch((cᴇʀʀᴏʀ) => console.log(Kolor.red(`❌⬰`), Kolor.red(cᴇʀʀᴏʀ)));
 // ===============================================================================
 // 🎮ᴜʟᴛʀᴏɴ™ 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..
 // ===============================================================================

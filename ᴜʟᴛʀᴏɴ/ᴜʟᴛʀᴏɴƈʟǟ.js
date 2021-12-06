@@ -22,7 +22,6 @@ class ᴜʟᴛʀᴏɴ {
     groupId,
     isBotGroupAdmin,
     isSenderGroupAdmin,
-    isSenderSUDO,
     replyMessageId,
     replyMessage,
     replyParticipant,
@@ -66,7 +65,6 @@ class ᴜʟᴛʀᴏɴ {
     this.isAudio = isAudio;
     this.isReplyAudio = isReplyAudio;
     this.isSenderGroupAdmin = isSenderGroupAdmin;
-    this.isSenderSUDO = isSenderSUDO;
     this.isCmd = isCmd;
     this.commandName = commandName;
     this.logGroup = logGroup;
