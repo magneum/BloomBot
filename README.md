@@ -52,8 +52,8 @@
 
 ⇢↱   𝗦𝘁𝗲𝗽 𝟰   ↰⇠
 - If anything went wrong Please 🐞RΣPӨЯƬ
-🔸ᴡʜᴀᴛꜱᴀᴘᴘ⇀ https://chat.whatsapp.com/FmMcEeSqZQw85qAkgUs3f5
-🔸ᴅɪꜱᴄᴏʀᴅ⇀ https://discord.gg/xcFN6NDHEV
+🔸[ᴡʜᴀᴛꜱᴀᴘᴘ](https://chat.whatsapp.com/FmMcEeSqZQw85qAkgUs3f5)
+🔸[ᴅɪꜱᴄᴏʀᴅ](https://discord.gg/xcFN6NDHEV)
 
 
 
