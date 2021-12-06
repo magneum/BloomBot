@@ -24,6 +24,7 @@
 - ꜰɪʀꜱᴛ ꜰᴏʀᴋ ᴀɴᴅ ꜱᴛᴀʀ ᴛʜᴇ ʀᴇᴘᴏ
 - Make Heroku Account If You Don't Have already.
 - Link to [Heroku](https://dashboard.heroku.com/apps)
+- Get Your Heroku-Api Key From [Heroku API Key](https://dashboard.heroku.com/account)
 
 ⇢↱   𝗦𝘁𝗲𝗽 𝟮   ↰⇠
 - Get Your Ultron SessionCode from [![Generic badge](https://img.shields.io/badge/Replit_ULTRON_Session-blue.svg)](https://replit.com/@Krakinzkon/Ultron)

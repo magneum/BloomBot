@@ -2,44 +2,82 @@
 // 🎮ᴜʟᴛʀᴏɴ™ 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..
 // ===============================================================================
 const { registerFont, createCanvas, loadImage } = require(`canvas`);
-// registerFont(`./ᴜʟᴛʀᴏɴ/Honeycomb-Round.otf`, {
-//   family: `Honeycomb`,
-// });
-// registerFont(`./ᴜʟᴛʀᴏɴ/LobsterTwo-Bold.ttf`, {
-//   family: `Lobster`,
-// });
+registerFont(`./ᴜʟᴛʀᴏɴ/Honeycomb-Round.otf`, {
+  family: `Honeycomb`,
+});
+registerFont(`./ᴜʟᴛʀᴏɴ/LobsterTwo-Bold.ttf`, {
+  family: `Lobster`,
+});
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const ꜱɪɢɴ = require(`./ᴜʟᴛʀᴏɴ/ꜱɪɢɴ`);
 const ᴜʟᴛʀᴏɴֆʏռօք = require(`./ᴜʟᴛʀᴏɴ/UltronCOrex`);
-var randomMC = require(`random-material-color`);
+const Matellic = require(`random-material-color`);
 const gitPull = require(`./ᴜʟᴛʀᴏɴ/ᴜʟᴛʀᴏɴɢɪᴛ`);
 const ɠɠᴜʟᴛʀᴏɴ = require(`./ᴜʟᴛʀᴏɴ/ɠɠᴜʟᴛʀᴏɴ`);
 const ᴜʟᴛʀᴏɴǟքք = require(`./ᴜʟᴛʀᴏɴ/helper`);
 const clientult = require(`./ᴜʟᴛʀᴏɴ/ɠɠʊ`);
 const download = require(`download-file`);
-const ᴜʟᴛʀᴏɴsql = ꜱɪɢɴ.POSTQL;
 const ᴜʟᴛʀᴏɴSudo = [`block`, `unblock`];
-var rg = require(`random-greetings`);
 const Kolor = require(`chalk`);
+const ᴜʟᴛʀᴏɴsql = ꜱɪɢɴ.POSTQL;
 const fs = require(`fs`);
 console.clear();
+var Text_Rand_Welcome = [
+  `*ᴊᴜꜱᴛ ᴊᴏɪɴᴇᴅ ᴛʜᴇ ꜱᴇʀᴠᴇʀ - ɢʟʜꜰ!*`,
+  `*ᴊᴜꜱᴛ ᴊᴏɪɴᴇᴅ. ᴇᴠᴇʀʏᴏɴᴇ, ʟᴏᴏᴋ ʙᴜꜱʏ!*`,
+  `*ᴊᴜꜱᴛ ᴊᴏɪɴᴇᴅ. ᴄᴀɴ ɪ ɢᴇᴛ ᴀ ʜᴇᴀʟ?*`,
+  `*ᴊᴏɪɴᴇᴅ ʏᴏᴜʀ ᴘᴀʀᴛʏ.*`,
+  `*ᴊᴏɪɴᴇᴅ. ʏᴏᴜ ᴍᴜꜱᴛ ᴄᴏɴꜱᴛʀᴜᴄᴛ ᴀᴅᴅɪᴛɪᴏɴᴀʟ ᴘʏʟᴏɴꜱ.*`,
+  `*ᴡᴇʟᴄᴏᴍᴇ, ꜱᴛᴀʏ ᴀᴡʜɪʟᴇ ᴀɴᴅ ʟɪꜱᴛᴇɴ.*`,
+  `*ᴡᴇʟᴄᴏᴍᴇ, ᴡᴇ ᴡᴇʀᴇ ᴇxᴘᴇᴄᴛɪɴɢ ʏᴏᴜ.*`,
+  `*ᴡᴇʟᴄᴏᴍᴇ, ᴡᴇ ʜᴏᴘᴇ ʏᴏᴜ ʙʀᴏᴜɢʜᴛ ᴘɪᴢᴢᴀ.*`,
+  `*ᴡᴇʟᴄᴏᴍᴇ ʟᴇᴀᴠᴇ ʏᴏᴜʀ ᴡᴇᴀᴘᴏɴꜱ ʙʏ ᴛʜᴇ ᴅᴏᴏʀ.*`,
+  `*ᴊᴜꜱᴛ ᴀᴘᴘᴇᴀʀᴇᴅ.*`,
+  `*ꜱᴡᴏᴏᴏᴏꜱʜ. ᴊᴜꜱᴛ ʟᴀɴᴅᴇᴅ.*`,
+  `*ʙʀᴀᴄᴇ ʏᴏᴜʀꜱᴇʟᴠᴇꜱ. ᴊᴜꜱᴛ ᴊᴏɪɴᴇᴅ ᴛʜᴇ ꜱᴇʀᴠᴇʀ.*`,
+  `*ᴊᴜꜱᴛ ᴊᴏɪɴᴇᴅ. ʜɪᴅᴇ ʏᴏᴜʀ ʙᴀɴᴀɴᴀꜱ.*`,
+  `*ᴊᴜꜱᴛ ᴀʀʀɪᴠᴇᴅ. ꜱᴇᴇᴍꜱ ᴏᴘ - ᴘʟᴇᴀꜱᴇ ɴᴇʀꜰ.*`,
+  `*ᴊᴜꜱᴛ ꜱʟɪᴅ ɪɴᴛᴏ ᴛʜᴇ ꜱᴇʀᴠᴇʀ.*`,
+  `*ʜᴀꜱ ꜱᴘᴀᴡɴᴇᴅ ɪɴ ᴛʜᴇ ꜱᴇʀᴠᴇʀ.*`,
+  `*ʜᴏᴘᴘᴇᴅ ɪɴᴛᴏ ᴛʜᴇ ꜱᴇʀᴠᴇʀ. ᴋᴀɴɢᴀʀᴏᴏ!!*`,
+  `*ᴊᴜꜱᴛ ꜱʜᴏᴡᴇᴅ ᴜᴘ. ʜᴏʟᴅ ᴍʏ ʙᴇᴇʀ.*`,
+];
+var Text__Bye = [
+  `ᴡɪʟʟ ʙᴇ ᴍɪꜱꜱᴇᴅ.`,
+  `ᴊᴜꜱᴛ ᴡᴇɴᴛ ᴏꜰꜰʟɪɴᴇ.`,
+  `ʜᴀꜱ ʟᴇꜰᴛ ᴛʜᴇ ʟᴏʙʙʏ.`,
+  `ʜᴀꜱ ʟᴇꜰᴛ ᴛʜᴇ ᴄʟᴀɴ.`,
+  `ʜᴀꜱ ʟᴇꜰᴛ ᴛʜᴇ ɢᴀᴍᴇ.`,
+  `ʜᴀꜱ ꜰʟᴇᴅ ᴛʜᴇ ᴀʀᴇᴀ.`,
+  `ɴɪᴄᴇ ᴋɴᴏᴡɪɴɢ ʏᴀ!`,
+  `ɪᴛ ᴡᴀꜱ ᴀ ꜰᴜɴ ᴛɪᴍᴇ.`,
+  `ɪ ᴅᴏɴᴜᴛ ᴡᴀɴᴛ ᴛᴏ ꜱᴀʏ ɢᴏᴏᴅʙʏᴇ.`,
+  `ᴡᴇ ʜᴏᴘᴇ ᴛᴏ ꜱᴇᴇ ʏᴏᴜ ᴀɢᴀɪɴ ꜱᴏᴏɴ.`,
+  `ʏᴏᴜ'ʀᴇ ʟᴇᴀᴠɪɴɢ, ? ʏᴀʀᴇ ʏᴀʀᴇ ᴅᴀᴢᴇ.`,
+  `ɢᴏᴏᴅʙʏᴇ ! ɢᴜᴇꜱꜱ ᴡʜᴏ'ꜱ ɢᴏɴɴᴀ ᴍɪꜱꜱ ʏᴏᴜ :')`,
+  `ɢᴏᴏᴅʙʏᴇ ! ɪᴛ'ꜱ ɢᴏɴɴᴀ ʙᴇ ʟᴏɴᴇʟʏ ᴡɪᴛʜᴏᴜᴛ ʏᴀ.`,
+  `ᴘʟᴇᴀꜱᴇ ᴅᴏɴ'ᴛ ʟᴇᴀᴠᴇ ᴍᴇ ᴀʟᴏɴᴇ ɪɴ ᴛʜɪꜱ ᴘʟᴀᴄᴇ!`,
+  `ɢᴏᴏᴅ ʟᴜᴄᴋ ꜰɪɴᴅɪɴɢ ʙᴇᴛᴛᴇʀ ꜱʜɪᴛ-ᴘᴏꜱᴛᴇʀꜱ ᴛʜᴀɴ ᴜꜱ!`,
+  `ʏᴏᴜ ᴋɴᴏᴡ ᴡᴇ'ʀᴇ ɢᴏɴɴᴀ ᴍɪꜱꜱ ʏᴏᴜ . ʀɪɢʜᴛ? ʀɪɢʜᴛ? ʀɪɢʜᴛ?`,
+  `ᴄᴏɴɢʀᴀᴛᴜʟᴀᴛɪᴏɴꜱ, ! ʏᴏᴜ'ʀᴇ ᴏꜰꜰɪᴄɪᴀʟʟʏ ꜰʀᴇᴇ ᴏꜰ ᴛʜɪꜱ ᴍᴇꜱꜱ.`,
+];
 // ===============================================================================
 // 🎮ᴜʟᴛʀᴏɴ™ 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..
 // ===============================================================================
 var υℓтяσηℓιєηт = ᴜʟᴛʀᴏɴֆʏռօք.WhatsApp;
 async function ᴜʟᴛʀᴏɴRunner() {
-  υℓтяσηℓιєηт.logger.level = `error`;
+  // υℓтяσηℓιєηт.logger.level = `error`;
   var UltronSitrep = new Map();
   if (ꜱɪɢɴ.HEROKU_API === `Null` || ꜱɪɢɴ.HEROKU_BOT_NAME === `Null`) {
     console.log(
-      Kolor.yellowBright.bold(
+      Kolor.yellow(
         `❌⬰ seems like heroku vars are invalid.\nPlease check and retry.`
       )
     );
     process.exit(0);
   }
-  console.log(Kolor.yellowBright.bold(`[INFO] Checking for updates...`));
-  // await gitPull();
+  console.log(Kolor.yellow(`[INFO] Checking for updates...`));
+  await gitPull();
   try {
     var session = ᴜʟᴛʀᴏɴֆʏռօք.ultronreignite(ꜱɪɢɴ.ULTRON);
     υℓтяσηℓιєηт.loadAuthInfo(session);
@@ -50,13 +88,11 @@ async function ᴜʟᴛʀᴏɴRunner() {
       cᴇʀʀᴏʀ instanceof SyntaxError
     ) {
       console.log(
-        Kolor.redBright.bold(
-          `Incorrect Session String. Please authenticate again!`
-        )
+        Kolor.red(`Incorrect Session String. Please authenticate again!`)
       );
       process.exit(0);
     } else {
-      console.log(Kolor.redBright.bold(`SOMETHING WENT WRONG.\n`));
+      console.log(Kolor.red(`SOMETHING WENT WRONG.\n`));
       process.exit(0);
     }
   }
@@ -64,22 +100,22 @@ async function ᴜʟᴛʀᴏɴRunner() {
   // 🎮ᴜʟᴛʀᴏɴ™ 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..
   // ===============================================================================
   υℓтяσηℓιєηт.on(`connecting`, async () => {
-    console.log(Kolor.yellowBright.bold(`💡⬰  𝘊𝘰𝘯𝘯𝘦𝘤𝘵𝘪𝘯𝘨 𝘵𝘰 𝘞𝘩𝘢𝘵𝘴𝘈𝘱𝘱...🤖`));
+    console.log(Kolor.yellow(`💡⬰  𝘊𝘰𝘯𝘯𝘦𝘤𝘵𝘪𝘯𝘨 𝘵𝘰 𝘞𝘩𝘢𝘵𝘴𝘈𝘱𝘱...🤖`));
   });
   // ===============================================================================
   // 🎮ᴜʟᴛʀᴏɴ™ 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..
   // ===============================================================================
   υℓтяσηℓιєηт.on(`open`, async () => {
-    console.log(Kolor.yellowBright.bold(`💡⬰  𝘊𝘰𝘯𝘯𝘦𝘤𝘵𝘪𝘯𝘨 𝘵𝘰 𝘋𝘢𝘵𝘢𝘣𝘢𝘴𝘦...✅`));
+    console.log(Kolor.yellow(`💡⬰  𝘊𝘰𝘯𝘯𝘦𝘤𝘵𝘪𝘯𝘨 𝘵𝘰 𝘋𝘢𝘵𝘢𝘣𝘢𝘴𝘦...✅`));
     try {
       await ᴜʟᴛʀᴏɴsql.authenticate();
     } catch (error) {
       console.error(`❌⬰ Unable to connect to the database:`, error);
     }
-    console.log(Kolor.yellowBright.bold(`💡⬰  𝘚𝘺𝘯𝘤𝘪𝘯𝘨 𝘋𝘢𝘵𝘢 𝘸𝘪𝘵𝘩 𝘏𝘰𝘴𝘵...✅`));
+    console.log(Kolor.yellow(`💡⬰  𝘚𝘺𝘯𝘤𝘪𝘯𝘨 𝘋𝘢𝘵𝘢 𝘸𝘪𝘵𝘩 𝘏𝘰𝘴𝘵...✅`));
     await ᴜʟᴛʀᴏɴsql.sync();
     console.clear();
-    console.log(Kolor.yellowBright.bold(`💡⬰  𝘐𝘯𝘴𝘵𝘢𝘭𝘭𝘪𝘯𝘨 𝘗𝘭𝘶𝘨𝘪𝘯𝘴...✅`));
+    console.log(Kolor.yellow(`💡⬰  𝘐𝘯𝘴𝘵𝘢𝘭𝘭𝘪𝘯𝘨 𝘗𝘭𝘶𝘨𝘪𝘯𝘴...✅`));
     const Folders = fs.readdirSync(`./ᴜʟᴛʀᴏɴ🍷ᴄᴜʟᴀʀ`);
     for (const folder of Folders) {
       const commandFiles = fs
@@ -88,24 +124,21 @@ async function ᴜʟᴛʀᴏɴRunner() {
       for (const file of commandFiles) {
         const command = require(`./ᴜʟᴛʀᴏɴ🍷ᴄᴜʟᴀʀ/${folder}/${file}`);
         UltronSitrep.set(command.name, command);
-        console.log(
-          Kolor.yellowBright.bold(`💡⬰  `),
-          Kolor.greenBright.bold(command.name)
-        );
+        console.log(Kolor.yellow(`💡⬰  `), Kolor.green(command.name));
       }
     }
     console.log(
-      Kolor.yellowBright.bold(
+      Kolor.yellow(
         `=================😈    |  ᴜʟᴛʀᴏɴ  |    😈=================`
       ),
-      Kolor.redBright.bold(`
+      Kolor.red(`
 ██╗   ██╗██╗  ████████╗██████╗  ██████╗ ███╗   ██╗
 ██║   ██║██║  ╚══██╔══╝██╔══██╗██╔═══██╗████╗  ██║
 ██║   ██║██║     ██║   ██████╔╝██║   ██║██╔██╗ ██║
 ██║   ██║██║     ██║   ██╔══██╗██║   ██║██║╚██╗██║
 ╚██████╔╝███████╗██║   ██║  ██║╚██████╔╝██║ ╚████║
 ╚═════╝ ╚══════╝╚═╝   ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝`),
-      Kolor.yellowBright.bold(
+      Kolor.yellow(
         `\n=================😈    |  ᴜʟᴛʀᴏɴ  |    😈=================`
       )
     );
@@ -117,7 +150,7 @@ async function ᴜʟᴛʀᴏɴRunner() {
       MessageType.image,
       {
         mimetype: Mimetype.png,
-        caption: `*_⚡𝐔𝐋𝐓𝐑𝐎𝐍™ 𝗶𝘀 𝗥𝗲𝗮𝗱𝘆!*
+        caption: `*⚡𝐔𝐋𝐓𝐑𝐎𝐍™ 𝗶𝘀 𝗥𝗲𝗮𝗱𝘆!*
 💡𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 
 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..
 
@@ -136,26 +169,6 @@ async function ᴜʟᴛʀᴏɴRunner() {
   // ===============================================================================
   await υℓтяσηℓιєηт.connect();
   υℓтяσηℓιєηт.on(`group-participants-update`, async (update) => {
-    var greets = [
-      `*_ᴊᴜꜱᴛ ᴊᴏɪɴᴇᴅ ᴛʜᴇ ꜱᴇʀᴠᴇʀ - ɢʟʜꜰ!_*`,
-      `*_ᴊᴜꜱᴛ ᴊᴏɪɴᴇᴅ. ᴇᴠᴇʀʏᴏɴᴇ, ʟᴏᴏᴋ ʙᴜꜱʏ!_*`,
-      `*_ᴊᴜꜱᴛ ᴊᴏɪɴᴇᴅ. ᴄᴀɴ ɪ ɢᴇᴛ ᴀ ʜᴇᴀʟ?_*`,
-      `*_ᴊᴏɪɴᴇᴅ ʏᴏᴜʀ ᴘᴀʀᴛʏ._*`,
-      `*_ᴊᴏɪɴᴇᴅ. ʏᴏᴜ ᴍᴜꜱᴛ ᴄᴏɴꜱᴛʀᴜᴄᴛ ᴀᴅᴅɪᴛɪᴏɴᴀʟ ᴘʏʟᴏɴꜱ._*`,
-      `*_ᴡᴇʟᴄᴏᴍᴇ, ꜱᴛᴀʏ ᴀᴡʜɪʟᴇ ᴀɴᴅ ʟɪꜱᴛᴇɴ._*`,
-      `*_ᴡᴇʟᴄᴏᴍᴇ, ᴡᴇ ᴡᴇʀᴇ ᴇxᴘᴇᴄᴛɪɴɢ ʏᴏᴜ._*`,
-      `*_ᴡᴇʟᴄᴏᴍᴇ, ᴡᴇ ʜᴏᴘᴇ ʏᴏᴜ ʙʀᴏᴜɢʜᴛ ᴘɪᴢᴢᴀ._*`,
-      `*_ᴡᴇʟᴄᴏᴍᴇ ʟᴇᴀᴠᴇ ʏᴏᴜʀ ᴡᴇᴀᴘᴏɴꜱ ʙʏ ᴛʜᴇ ᴅᴏᴏʀ._*`,
-      `*_ᴊᴜꜱᴛ ᴀᴘᴘᴇᴀʀᴇᴅ._*`,
-      `*_ꜱᴡᴏᴏᴏᴏꜱʜ. ᴊᴜꜱᴛ ʟᴀɴᴅᴇᴅ._*`,
-      `*_ʙʀᴀᴄᴇ ʏᴏᴜʀꜱᴇʟᴠᴇꜱ. ᴊᴜꜱᴛ ᴊᴏɪɴᴇᴅ ᴛʜᴇ ꜱᴇʀᴠᴇʀ._*`,
-      `*_ᴊᴜꜱᴛ ᴊᴏɪɴᴇᴅ. ʜɪᴅᴇ ʏᴏᴜʀ ʙᴀɴᴀɴᴀꜱ._*`,
-      `*_ᴊᴜꜱᴛ ᴀʀʀɪᴠᴇᴅ. ꜱᴇᴇᴍꜱ ᴏᴘ - ᴘʟᴇᴀꜱᴇ ɴᴇʀꜰ._*`,
-      `*_ᴊᴜꜱᴛ ꜱʟɪᴅ ɪɴᴛᴏ ᴛʜᴇ ꜱᴇʀᴠᴇʀ._*`,
-      `*_ʜᴀꜱ ꜱᴘᴀᴡɴᴇᴅ ɪɴ ᴛʜᴇ ꜱᴇʀᴠᴇʀ._*`,
-      `*_ʜᴏᴘᴘᴇᴅ ɪɴᴛᴏ ᴛʜᴇ ꜱᴇʀᴠᴇʀ. ᴋᴀɴɢᴀʀᴏᴏ!!_*`,
-      `*_ᴊᴜꜱᴛ ꜱʜᴏᴡᴇᴅ ᴜᴘ. ʜᴏʟᴅ ᴍʏ ʙᴇᴇʀ._*`,
-    ];
     const MemNum = update.participants[0];
     const GroupMemData = await υℓтяσηℓιєηт.groupMetadata(update.jid);
     const GroupMemG = GroupMemData.participants.length;
@@ -190,7 +203,10 @@ async function ᴜʟᴛʀᴏɴRunner() {
           },
           function (err) {
             if (err) throw err;
-            const weltext = greets[Math.floor(Math.random() * greets.length)];
+            const weltext =
+              Text_Rand_Welcome[
+                Math.floor(Math.random() * Text_Rand_Welcome.length)
+              ];
             return υℓтяσηℓιєηт.sendMessage(
               GroupID,
               {
@@ -199,14 +215,13 @@ async function ᴜʟᴛʀᴏɴRunner() {
               MessageType.image,
               {
                 mimetype: Mimetype.png,
-                caption: `@${MemNum.split(`@`)[0]}\n${weltext}
-*•⊹٭---------------٭⊹•*
+                caption: `
+@${MemNum.split(`@`)[0]}
+${weltext}
 
 ❣️𝗕𝗜𝗢➛ _${GroupMemBio.status}_
 🎊𝗚𝗥𝗢𝗨𝗣➛ _${GroupMemData.subject}_
 🗄️𝗪𝗲 𝗔𝗿𝗲 𝗡𝗼𝘄➛  _${GroupMemG}_ 𝗠𝗲𝗺𝗯𝗲𝗿𝘀
-
-*•⊹٭---------------٭⊹•*
 ${Fetched.message}`,
               }
             );
@@ -218,25 +233,6 @@ ${Fetched.message}`,
         if (enable === false || enable === `OFF`) {
           return;
         }
-        var byes = [
-          `will be missed.`,
-          `just went offline.`,
-          `has left the lobby.`,
-          `has left the clan.`,
-          `has left the game.`,
-          `has fled the area.`,
-          `Nice knowing ya, !`,
-          `It was a fun time .`,
-          `We hope to see you again soon`,
-          `I donut want to say goodbye`,
-          `Goodbye ! Guess who's gonna miss you :')`,
-          `Goodbye ! It's gonna be lonely without ya.`,
-          `Please don't leave me alone in this place, !`,
-          `Good luck finding better shit-posters than us, !`,
-          `You know we're gonna miss you . Right? Right? Right?`,
-          `Congratulations, ! You're officially free of this mess.`,
-          `You're leaving, ? Yare Yare Daze.`,
-        ];
         var Fetched = await ɠɠᴜʟᴛʀᴏɴ.getMessage(GroupID, `setgoodbye`);
         const width = 1280;
         const height = 720;
@@ -250,13 +246,14 @@ ${Fetched.message}`,
         const BYETEXT = `@${MemNum.split(`@`)[0]}`;
         const BYETW = context.measureText(BYETEXT).width;
         context.fillRect(600 - BYETW / 2 - 10, 170 - 5, BYETW + 20, 120);
-        const text2b = `@${MemNum.split(`@`)[0]}\n${byes[Math.floor(Math.random() * byes.length)]
-          }`;
-        context.fillStyle = randomMC.getColor();
+        const Text_Rand_Bye = `${
+          Text__Bye[Math.floor(Math.random() * Text__Bye.length)]
+        }`;
+        context.fillStyle = Matellic.getColor();
         context.fillText(BYETEXT, 600, 170);
         context.fillStyle = `#fff`;
         context.font = `bold 50pt Honeycomb`;
-        context.fillText(text2b, 600, 530);
+        context.fillText(Text_Rand_Bye, 600, 530);
         const myimg = loadImage(`./ᴜʟᴛʀᴏɴ/ᴜʟᴛʀᴏɴɠb.png`);
         await myimg.then(() => {
           const buffer = canvas.toBuffer(`image/png`);
@@ -308,93 +305,59 @@ ${Fetched.message}`,
       `setwelcome`,
       `disappear`,
       `setgoodbye`,
-      `setdp`,
       `tagall`,
     ];
-    if (ᴜʟᴛʀᴏɴ.isCmd && !ᴜʟᴛʀᴏɴ.fromMe && !ᴜʟᴛʀᴏɴ.isSenderSUDO) {
-      if (ꜱɪɢɴ.PRIVACY === `public`) {
-        if (adminmodls.indexOf(ᴜʟᴛʀᴏɴ.commandName) >= 0 && !ᴜʟᴛʀᴏɴ.isSenderGroupAdmin) {
+    if (ᴜʟᴛʀᴏɴ.isCmd && !ᴜʟᴛʀᴏɴ.fromMe) {
+      if (
+        adminmodls.indexOf(ᴜʟᴛʀᴏɴ.commandName) >= 0 &&
+        !ᴜʟᴛʀᴏɴ.isSenderGroupAdmin
+      ) {
+        return υℓтяσηℓιєηт.sendMessage(
+          ᴜʟᴛʀᴏɴ.chatId,
+          `You need to be an admin to execute this command.`,
+          MessageType.text
+        );
+      } else if (ᴜʟᴛʀᴏɴSudo.indexOf(ᴜʟᴛʀᴏɴ.commandName) >= 0) {
+        var messageSent = await clientult.getUser(ᴜʟᴛʀᴏɴ.chatId);
+        if (messageSent) {
+          return console.log(
+            Kolor.blue(
+              `💡⬰  Promo message had already been sent to ` + ᴜʟᴛʀᴏɴ.chatId
+            )
+          );
+        } else {
+          await clientult.addUser(ᴜʟᴛʀᴏɴ.chatId);
           return υℓтяσηℓιєηт.sendMessage(
             ᴜʟᴛʀᴏɴ.chatId,
-            `You need to be an admin to execute this command.`,
-            MessageType.text
-          );
-        } else if (ᴜʟᴛʀᴏɴSudo.indexOf(ᴜʟᴛʀᴏɴ.commandName) >= 0 && !ᴜʟᴛʀᴏɴ.isSenderSUDO) {
-          var messageSent = await clientult.getUser(ᴜʟᴛʀᴏɴ.chatId);
-          if (messageSent) {
-            return console.log(Kolor.blue(`💡⬰  Promo message had already been sent to ` + ᴜʟᴛʀᴏɴ.chatId));
-          } else {
-            await clientult.addUser(ᴜʟᴛʀᴏɴ.chatId);
-            return υℓтяσηℓιєηт.sendMessage(
-              ᴜʟᴛʀᴏɴ.chatId,
-              `ᴜʟᴛʀᴏɴ is Alive!.
+            `ᴜʟᴛʀᴏɴ is Alive!.
 I guess you were trying to use my commands in *${ᴜʟᴛʀᴏɴ.groupName}*. However, the bot is currently in ${worktype} mode. 
 This enables only the owner and sudo clientult to use the command *${commandName}* .
 If you are keen to use my features, you can deploy ᴜʟᴛʀᴏɴ on your own account without much effort, in less than 5 minutes! Check out the links given below.`,
-              {
-                worktype: `public`,
-                groupName: ᴜʟᴛʀᴏɴ.groupName ? ᴜʟᴛʀᴏɴ.groupName : `private chat`,
-                commandName: ᴜʟᴛʀᴏɴ.commandName,
-              },
-              MessageType.text,
-              {
-                contextInfo: {
-                  stanzaId: chat.key.id,
-                  participant: ᴜʟᴛʀᴏɴ.sender,
-                  quotedMessage: {
-                    conversation: ᴜʟᴛʀᴏɴ.body,
-                  },
+            {
+              worktype: `public`,
+              groupName: ᴜʟᴛʀᴏɴ.groupName ? ᴜʟᴛʀᴏɴ.groupName : `private chat`,
+              commandName: ᴜʟᴛʀᴏɴ.commandName,
+            },
+            MessageType.text,
+            {
+              contextInfo: {
+                stanzaId: chat.key.id,
+                participant: ᴜʟᴛʀᴏɴ.sender,
+                quotedMessage: {
+                  conversation: ᴜʟᴛʀᴏɴ.body,
                 },
-              }
-            );
-          }
+              },
+            }
+          );
         }
       }
-      //       else if (ꜱɪɢɴ.PRIVACY === `private` && !ᴜʟᴛʀᴏɴ.isSenderSUDO) {
-      //         console.log(
-      //           Kolor.redBright.bold(`💡⬰  commmand `),
-      //           Kolor.greenBright.bold(`${ᴜʟᴛʀᴏɴ.commandName}`),
-      //           Kolor.redBright.bold(`not executed in private Work Type.`)
-      //         );
-      //         var messageSent = await clientult.getUser(ᴜʟᴛʀᴏɴ.chatId);
-      //         if (messageSent) {
-      //           return console.log(
-      //             Kolor.blue(
-      //               `💡⬰  Promo message had already been sent to ` + ᴜʟᴛʀᴏɴ.chatId
-      //             )
-      //           );
-      //         } else {
-      //           await clientult.addUser(ᴜʟᴛʀᴏɴ.chatId);
-      //           return υℓтяσηℓιєηт.sendMessage(
-      //             ᴜʟᴛʀᴏɴ.chatId,
-      //             `ᴜʟᴛʀᴏɴ is Alive!.
-      // I guess you were trying to use my commands in *${ᴜʟᴛʀᴏɴ.groupName}*. However, the bot is currently in ${worktype} mode. This enables only the owner and sudo clientult to use the command *${commandName}* .
-      // If you are keen to use my features, you can deploy ᴜʟᴛʀᴏɴ on your own account without much effort, in less than 5 minutes! Check out the links given below.`,
-      //             {
-      //               worktype: `private`,
-      //               groupName: ᴜʟᴛʀᴏɴ.groupName ? ᴜʟᴛʀᴏɴ.groupName : `private chat`,
-      //               commandName: ᴜʟᴛʀᴏɴ.commandName,
-      //             },
-      //             MessageType.text,
-      //             {
-      //               contextInfo: {
-      //                 stanzaId: chat.key.id,
-      //                 participant: ᴜʟᴛʀᴏɴ.sender,
-      //                 quotedMessage: {
-      //                   conversation: ᴜʟᴛʀᴏɴ.body,
-      //                 },
-      //               },
-      //             }
-      //           );
-      //         }
-      //       }
     }
     // ===============================================================================
     // 🎮ᴜʟᴛʀᴏɴ™ 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..
     // ===============================================================================
     if (ᴜʟᴛʀᴏɴ.isCmd) {
       console.log(
-        Kolor.greenBright.bold(
+        Kolor.green(
           `💡⬰  ${ᴜʟᴛʀᴏɴ.commandName.toUpperCase()} command executed.`
         )
       );
@@ -411,17 +374,17 @@ If you are keen to use my features, you can deploy ᴜʟᴛʀᴏɴ on your own a
           MessageType.image,
           {
             mimetype: Mimetype.png,
-            caption: `*_⚠️𝗜𝗻𝘃𝗮𝗹𝗶𝗱 ᴜʟᴛʀᴏɴ 𝗖𝗼𝗺𝗺𝗮𝗻𝗱*
+            caption: `*⚠️𝗜𝗻𝘃𝗮𝗹𝗶𝗱 ᴜʟᴛʀᴏɴ 𝗖𝗼𝗺𝗺𝗮𝗻𝗱*
 
 *No such command found.*
-Please Use *${Ultronf}help to get the list of available commands_*`,
+Please Use *${Ultronf}help to get the list of available commands*`,
           }
         );
       } else if (command && ᴜʟᴛʀᴏɴ.commandName == `help`) {
         try {
           return command.handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc, UltronSitrep);
         } catch (cᴇʀʀᴏʀ) {
-          return console.log(Kolor.redBright.bold(`❌⬰ `, cᴇʀʀᴏʀ));
+          return console.log(Kolor.red(`❌⬰ `, cᴇʀʀᴏʀ));
         }
       }
       command.handle(υℓтяσηℓιєηт, chat, ᴜʟᴛʀᴏɴ, Arc);
@@ -429,7 +392,7 @@ Please Use *${Ultronf}help to get the list of available commands_*`,
   });
 }
 ᴜʟᴛʀᴏɴRunner().catch((cᴇʀʀᴏʀ) =>
-  console.log(Kolor.redBright.bold(`❌⬰`), Kolor.redBright.italic(cᴇʀʀᴏʀ))
+  console.log(Kolor.red(`❌⬰`), Kolor.red(cᴇʀʀᴏʀ))
 );
 // ===============================================================================
 // 🎮ᴜʟᴛʀᴏɴ™ 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..
