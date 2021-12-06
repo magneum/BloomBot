@@ -11,6 +11,27 @@ module.exports = {
   description: `Spam Messages.
 ${ꜱɪɢɴ.Mee6IX}spam <count> <text>*`,
   async handle(υℓтяσηℓιєηт, chat, ᴍᴇᴇ6, Arc) {
+    if (ᴍᴇᴇ6.isGroup && !ᴍᴇᴇ6.isSenderGroupAdmin) {
+      return await υℓтяσηℓιєηт
+        .sendMessage(
+          ᴍᴇᴇ6.chatId,
+          {
+            url: ꜱɪɢɴ.ERROR,
+          },
+          MessageType.image,
+          {
+            mimetype: Mimetype.png,
+            caption: `
+⚠️𝗘𝗿𝗿𝗼𝗿: 
+➛ ʜᴇʏ ᴛʜᴇʀᴇ ɴɪʙʙᴀ!💩
+
+ʏᴏᴜ ᴅᴏɴ'ᴛ ꜱᴇᴇᴍ ᴛᴏ ʙᴇ ᴀᴅᴍɪɴ..
+ʏᴏᴜ ᴄᴀɴɴᴏᴛ ᴜꜱᴇ spam!
+`,
+          }
+        )
+        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+    }
     let count = Number(Arc.shift());
     if (isNaN(count)) {
       return await υℓтяσηℓιєηт
