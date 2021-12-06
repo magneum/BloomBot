@@ -2,12 +2,12 @@
 // 🎮ᴜʟᴛʀᴏɴ™ 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..
 // ===============================================================================
 const { registerFont, createCanvas, loadImage } = require(`canvas`);
-registerFont(`./ᴜʟᴛʀᴏɴ/Honeycomb-Round.otf`, {
-  family: `Honeycomb`,
-});
-registerFont(`./ᴜʟᴛʀᴏɴ/LobsterTwo-Bold.ttf`, {
-  family: `Lobster`,
-});
+// registerFont(`./ᴜʟᴛʀᴏɴ/Honeycomb-Round.otf`, {
+//   family: `Honeycomb`,
+// });
+// registerFont(`./ᴜʟᴛʀᴏɴ/LobsterTwo-Bold.ttf`, {
+//   family: `Lobster`,
+// });
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const ꜱɪɢɴ = require(`./ᴜʟᴛʀᴏɴ/ꜱɪɢɴ`);
 const ᴜʟᴛʀᴏɴֆʏռօք = require(`./ᴜʟᴛʀᴏɴ/UltronCOrex`);
@@ -39,7 +39,7 @@ async function ᴜʟᴛʀᴏɴRunner() {
     process.exit(0);
   }
   console.log(Kolor.yellowBright.bold(`[INFO] Checking for updates...`));
-  await gitPull();
+ // await gitPull();
   try {
     var session = ᴜʟᴛʀᴏɴֆʏռօք.ultronreignite(ꜱɪɢɴ.ULTRON);
     υℓтяσηℓιєηт.loadAuthInfo(session);
@@ -248,22 +248,22 @@ ${Fetched.message}`,
         context.font = `bold 60pt Lobster`;
         context.textAlign = `center`;
         context.textBaseline = `top`;
-        const text = `@${num.split("@")[0]}\n${
+        const textb = `@${num.split("@")[0]}\n${
           byes[Math.floor(Math.random() * byes.length)]
         }`;
-        const textWidth = context.measureText(text).width;
+        const textWidthb = context.measureText(textb).width;
         context.fillRect(
-          600 - textWidth / 2 - 10,
+          600 - textWidthb / 2 - 10,
           170 - 5,
-          textWidth + 20,
+          textWidthb + 20,
           120
         );
-        const text2 = rg.greet();
+        const text2b = rg.greet();
         context.fillStyle = randomMC.getColor();
-        context.fillText(text, 600, 170);
+        context.fillText(textb, 600, 170);
         context.fillStyle = `#fff`;
         context.font = `bold 50pt Honeycomb`;
-        context.fillText(text2, 600, 530);
+        context.fillText(text2b, 600, 530);
         const myimg = loadImage(`./ᴜʟᴛʀᴏɴ/ᴜʟᴛʀᴏɴɠb.png`);
         await myimg.then(() => {
           const buffer = canvas.toBuffer(`image/png`);

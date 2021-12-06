@@ -2,8 +2,10 @@
 // 🎮ᴜʟᴛʀᴏɴ™ 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..
 // ===============================================================================
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
-const ꜱɪɢɴ = require(`../../ᴜʟᴛʀᴏɴ/ꜱɪɢɴ`);
+const fetchVideoInfo = require("youtube-info");
 const ℓιєηт = require("../../ᴜʟᴛʀᴏɴ/catch");
+const getVideoId = require("get-video-id");
+const ꜱɪɢɴ = require(`../../ᴜʟᴛʀᴏɴ/ꜱɪɢɴ`);
 const ffmpeg = require(`fluent-ffmpeg`);
 const ytdl = require(`ytdl-core`);
 const yts = require(`yt-search`);
@@ -50,7 +52,7 @@ You Can Get URL by using ${ꜱɪɢɴ.ULTRONIX}yts <song-name>`,
           ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴜʟᴛʀᴏɴ));
         });
     }
-    if (Regex.PlaylistURL.test(Arc[0])) {
+    if (!Regex.VideoURL.test(Arc[0])) {
       return await υℓтяσηℓιєηт
         .sendMessage(
           ᴜʟᴛʀᴏɴ.chatId,
@@ -60,10 +62,10 @@ You Can Get URL by using ${ꜱɪɢɴ.ULTRONIX}yts <song-name>`,
           MessageType.image,
           {
             mimetype: Mimetype.jpeg,
-            caption: `*⚠️Seems like ${Arc[0]} is not YouTube URL!*
+            caption: `*⚠️Seems like ${Arc[0]} is not YouTube Link or not YouTube Single Video Link!*
 
 *Usage Example*
-${ꜱɪɢɴ.ULTRONIX}ytdl <URL>
+${ꜱɪɢɴ.ULTRONIX}ytdl <video-link>
 
 *NOTE:*
 You Can Get URL by using ${ꜱɪɢɴ.ULTRONIX}yts <song-name>`,
@@ -73,10 +75,6 @@ You Can Get URL by using ${ꜱɪɢɴ.ULTRONIX}yts <song-name>`,
           ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴜʟᴛʀᴏɴ));
         });
     }
-    await υℓтяσηℓιєηт
-      .sendMessage(ᴜʟᴛʀᴏɴ.chatId, `Downloading your song...`, MessageType.text)
-      .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴜʟᴛʀᴏɴ));
-
     // Task starts here
     var Id = ` `;
     if (Arc[0].includes(`youtu`)) {
@@ -113,6 +111,44 @@ You Can Get URL by using ${ꜱɪɢɴ.ULTRONIX}yts <song-name>`,
         quality: `highestaudio`,
       });
 
+      const FetchedLink = await yts(Arc.join(` `));
+      const videos = FetchedLink.videos.slice(0, 1);
+      videos.forEach(function (youfound) {
+        Fetched = `*⛖𝐘𝐨𝐮𝐫 𝐌𝐮𝐬𝐢𝐜 𝐈𝐬 𝐍𝐨𝐰 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐢𝐧𝐠⛖*
+_📥𝘋𝘰𝘸𝘯𝘭𝘰𝘢𝘥 𝘛𝘪𝘮𝘦 𝘥𝘦𝘱𝘦𝘯𝘥𝘴 𝘰𝘯 𝘔𝘶𝘴𝘪𝘤 𝘓𝘦𝘯𝘨𝘵𝘩_
+
+🍻—••÷ 𝐓𝐢𝐭𝐥𝐞 ÷••— 
+⪢ ${youfound.title}
+
+🙈—••÷ 𝐕𝐢𝐞𝐰𝐬 ÷••—
+⪢ ${youfound.views}
+
+⏰—••÷ 𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧 ÷••—
+⪢ ${youfound.timestamp}
+
+✒️—••÷ 𝐀𝐮𝐭𝐡𝐨𝐫 ÷••—
+⪢ ${youfound.author.name}
+
+🔗—••÷ 𝐋𝐢𝐧𝐤 ÷••—
+⪢ ${youfound.url}
+
+🛸—••÷ 𝗦𝗲𝗿𝘃𝗶𝗰𝗲 ÷••—
+⪢ ʏᴏᴜᴛᴜʙᴇ⭕ʏᴏᴜᴛᴜʙᴇ ᴍᴜꜱɪᴄ`;
+      });
+      const { id } = getVideoId(Arc.join(` `));
+      await υℓтяσηℓιєηт
+        .sendMessage(
+          ᴜʟᴛʀᴏɴ.chatId,
+          {
+            url: "http://img.youtube.com/vi/" + id + "/0.jpg",
+          },
+          MessageType.image,
+          {
+            mimetype: Mimetype.png,
+            caption: Fetched,
+          }
+        )
+        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴜʟᴛʀᴏɴ));
       ffmpeg(stream)
         .audioBitrate(320)
         .toFormat(`ipod`)
