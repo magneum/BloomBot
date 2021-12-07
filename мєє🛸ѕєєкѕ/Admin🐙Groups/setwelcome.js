@@ -40,54 +40,36 @@ Do note, the setwelcome option is still enabled after you use the delete option.
         )
         .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
     }
-    try {
-      if (!ᴍᴇᴇ6.isGroup) {
-        υℓтяσηℓιєηт
-          .sendMessage(
-            ᴍᴇᴇ6.chatId,
-            `This command is only applicable in a group chat.`,
-            MessageType.text
-          )
-          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
-        return;
-      }
-      var Msg = await Greetings.getMessage(ᴍᴇᴇ6.chatId, `setwelcome`);
-      if (Arc.length == 0) {
-        var enabled = await Greetings.checkSettings(ᴍᴇᴇ6.chatId, `setwelcome`);
-        try {
-          if (enabled === false || enabled === undefined) {
-            υℓтяσηℓιєηт
-              .sendMessage(
-                ᴍᴇᴇ6.chatId,
-                `Set a setwelcome message first.`,
-                MessageType.text
-              )
-              .catch((cᴇʀʀᴏʀ) => {
-                ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴍᴇᴇ6));
-              });
-            return;
-          } else if (enabled === `OFF`) {
-            υℓтяσηℓιєηт
-              .sendMessage(
-                ᴍᴇᴇ6.chatId,
-                `Greetings are enabled: False \nCurrently greeting new members with:`,
-                MessageType.text
-              )
-              .catch((cᴇʀʀᴏʀ) => {
-                ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴍᴇᴇ6));
-              });
-            υℓтяσηℓιєηт
-              .sendMessage(ᴍᴇᴇ6.chatId, Msg.message, MessageType.text)
-              .catch((cᴇʀʀᴏʀ) => {
-                ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴍᴇᴇ6));
-              });
-            return;
-          }
-
+    if (!ᴍᴇᴇ6.isGroup) {
+      υℓтяσηℓιєηт
+        .sendMessage(
+          ᴍᴇᴇ6.chatId,
+          `This command is only applicable in a group chat.`,
+          MessageType.text
+        )
+        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+      return;
+    }
+    var Msg = await Greetings.getMessage(ᴍᴇᴇ6.chatId, `setwelcome`);
+    if (Arc.length == 0) {
+      var enabled = await Greetings.checkSettings(ᴍᴇᴇ6.chatId, `setwelcome`);
+      try {
+        if (enabled === false || enabled === undefined) {
           υℓтяσηℓιєηт
             .sendMessage(
               ᴍᴇᴇ6.chatId,
-              `Greetings are enabled: True \nCurrently greeting new members with:`,
+              `Set a setwelcome message first.`,
+              MessageType.text
+            )
+            .catch((cᴇʀʀᴏʀ) => {
+              ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+            });
+          return;
+        } else if (enabled === `OFF`) {
+          υℓтяσηℓιєηт
+            .sendMessage(
+              ᴍᴇᴇ6.chatId,
+              `Greetings are enabled: False \nCurrently greeting new members with:`,
               MessageType.text
             )
             .catch((cᴇʀʀᴏʀ) => {
@@ -98,110 +80,112 @@ Do note, the setwelcome option is still enabled after you use the delete option.
             .catch((cᴇʀʀᴏʀ) => {
               ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴍᴇᴇ6));
             });
-        } catch (cᴇʀʀᴏʀ) {
-          throw cᴇʀʀᴏʀ;
+          return;
         }
-      } else {
-        try {
-          if (Arc[0] === `OFF` || Arc[0] === `off` || Arc[0] === `Off`) {
-            switched = `OFF`;
-            await Greetings.changeSettings(ᴍᴇᴇ6.chatId, switched);
-            υℓтяσηℓιєηт
-              .sendMessage(
-                ᴍᴇᴇ6.chatId,
-                `Welcome message has been disabled.`,
-                MessageType.text
-              )
-              .catch((cᴇʀʀᴏʀ) => {
-                ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴍᴇᴇ6));
-              });
-            return;
-          }
-          if (Arc[0] === `ON` || Arc[0] === `on` || Arc[0] === `On`) {
-            switched = `ON`;
-            await Greetings.changeSettings(ᴍᴇᴇ6.chatId, switched);
-            υℓтяσηℓιєηт
-              .sendMessage(
-                ᴍᴇᴇ6.chatId,
-                `Welcome message has been enabled.`,
-                MessageType.text
-              )
-              .catch((cᴇʀʀᴏʀ) => {
-                ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴍᴇᴇ6));
-              });
-            return;
-          }
-          if (Arc[0] === `delete`) {
-            var Msg = await Greetings.deleteMessage(ᴍᴇᴇ6.chatId, `setwelcome`);
-            if (Msg === false || Msg === undefined) {
-              υℓтяσηℓιєηт
-                .sendMessage(
-                  ᴍᴇᴇ6.chatId,
-                  `Set a setwelcome message first.`,
-                  MessageType.text
-                )
-                .catch((cᴇʀʀᴏʀ) => {
-                  ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴍᴇᴇ6));
-                });
-              return;
-            }
 
-            await υℓтяσηℓιєηт
-              .sendMessage(
-                ᴍᴇᴇ6.chatId,
-                `Welcome message deleted.`,
-                MessageType.text
-              )
-              .catch((cᴇʀʀᴏʀ) => {
-                ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴍᴇᴇ6));
-              });
-            return;
-          }
-          text = ᴍᴇᴇ6.body.replace(
-            ᴍᴇᴇ6.body[0] + ᴍᴇᴇ6.commandName + ` `,
-            ``
-          );
-          if (Msg === false || Msg === undefined) {
-            await Greetings.setWelcome(ᴍᴇᴇ6.chatId, text);
-            await υℓтяσηℓιєηт
-              .sendMessage(
-                ᴍᴇᴇ6.chatId,
-                `Welcome message updated and enabled.`,
-                MessageType.text
-              )
-              .catch((cᴇʀʀᴏʀ) => {
-                ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴍᴇᴇ6));
-              });
-            return;
-          } else {
-            await Greetings.deleteMessage(ᴍᴇᴇ6.chatId, `setwelcome`);
-            await Greetings.setWelcome(ᴍᴇᴇ6.chatId, text);
-            await υℓтяσηℓιєηт
-              .sendMessage(
-                ᴍᴇᴇ6.chatId,
-                `Welcome message updated and enabled.`,
-                MessageType.text
-              )
-              .catch((cᴇʀʀᴏʀ) => {
-                ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴍᴇᴇ6));
-              });
-            return;
-          }
-        } catch (cᴇʀʀᴏʀ) {
-          throw cᴇʀʀᴏʀ;
-        }
+        υℓтяσηℓιєηт
+          .sendMessage(
+            ᴍᴇᴇ6.chatId,
+            `Greetings are enabled: True \nCurrently greeting new members with:`,
+            MessageType.text
+          )
+          .catch((cᴇʀʀᴏʀ) => {
+            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+          });
+        υℓтяσηℓιєηт
+          .sendMessage(ᴍᴇᴇ6.chatId, Msg.message, MessageType.text)
+          .catch((cᴇʀʀᴏʀ) => {
+            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+          });
+      } catch (cᴇʀʀᴏʀ) {
+        throw cᴇʀʀᴏʀ;
       }
-    } catch (cᴇʀʀᴏʀ) {
-      υℓтяσηℓιєηт.sendMessage(
-        ᴍᴇᴇ6.chatId,
-        `*🎮ᴍᴇᴇ6™* 𝐝𝐢𝐝𝐧'𝐭 𝐰𝐨𝐫𝐤 𝐚𝐬 𝐞𝐱𝐩𝐞𝐜𝐭𝐞𝐝❗
+    } else {
+      try {
+        if (Arc[0] === `OFF` || Arc[0] === `off` || Arc[0] === `Off`) {
+          switched = `OFF`;
+          await Greetings.changeSettings(ᴍᴇᴇ6.chatId, switched);
+          υℓтяσηℓιєηт
+            .sendMessage(
+              ᴍᴇᴇ6.chatId,
+              `Welcome message has been disabled.`,
+              MessageType.text
+            )
+            .catch((cᴇʀʀᴏʀ) => {
+              ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+            });
+          return;
+        }
+        if (Arc[0] === `ON` || Arc[0] === `on` || Arc[0] === `On`) {
+          switched = `ON`;
+          await Greetings.changeSettings(ᴍᴇᴇ6.chatId, switched);
+          υℓтяσηℓιєηт
+            .sendMessage(
+              ᴍᴇᴇ6.chatId,
+              `Welcome message has been enabled.`,
+              MessageType.text
+            )
+            .catch((cᴇʀʀᴏʀ) => {
+              ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+            });
+          return;
+        }
+        if (Arc[0] === `delete`) {
+          var Msg = await Greetings.deleteMessage(ᴍᴇᴇ6.chatId, `setwelcome`);
+          if (Msg === false || Msg === undefined) {
+            υℓтяσηℓιєηт
+              .sendMessage(
+                ᴍᴇᴇ6.chatId,
+                `Set a setwelcome message first.`,
+                MessageType.text
+              )
+              .catch((cᴇʀʀᴏʀ) => {
+                ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+              });
+            return;
+          }
 
-💡𝗛𝗲𝗿𝗲 𝗶𝘀 𝗮 𝘀𝗺𝗮𝗹𝗹 𝗲𝗿𝗿𝗼𝗿 𝗿𝗲𝗽𝗼𝗿𝘁 𝗮𝗻𝗱 𝘁𝗼 𝗹𝗼𝗴 𝘁𝗵𝗲 𝗿𝗲𝗽𝗼𝗿𝘁 𝘂𝘀𝗲 ${ꜱɪɢɴ.Mee6IX}𝗿𝗲𝗽𝗼𝗿𝘁
-⚠️𝗘𝗿𝗿𝗼𝗿
-• ${cᴇʀʀᴏʀ}`,
-        MessageType.text
-      );
-      return;
+          await υℓтяσηℓιєηт
+            .sendMessage(
+              ᴍᴇᴇ6.chatId,
+              `Welcome message deleted.`,
+              MessageType.text
+            )
+            .catch((cᴇʀʀᴏʀ) => {
+              ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+            });
+          return;
+        }
+        text = ᴍᴇᴇ6.body.replace(ᴍᴇᴇ6.body[0] + ᴍᴇᴇ6.commandName + ` `, ``);
+        if (Msg === false || Msg === undefined) {
+          await Greetings.setWelcome(ᴍᴇᴇ6.chatId, text);
+          await υℓтяσηℓιєηт
+            .sendMessage(
+              ᴍᴇᴇ6.chatId,
+              `Welcome message updated and enabled.`,
+              MessageType.text
+            )
+            .catch((cᴇʀʀᴏʀ) => {
+              ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+            });
+          return;
+        } else {
+          await Greetings.deleteMessage(ᴍᴇᴇ6.chatId, `setwelcome`);
+          await Greetings.setWelcome(ᴍᴇᴇ6.chatId, text);
+          await υℓтяσηℓιєηт
+            .sendMessage(
+              ᴍᴇᴇ6.chatId,
+              `Welcome message updated and enabled.`,
+              MessageType.text
+            )
+            .catch((cᴇʀʀᴏʀ) => {
+              ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+            });
+          return;
+        }
+      } catch (cᴇʀʀᴏʀ) {
+        throw cᴇʀʀᴏʀ;
+      }
     }
   },
 };

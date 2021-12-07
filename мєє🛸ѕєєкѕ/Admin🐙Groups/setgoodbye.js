@@ -35,18 +35,87 @@ module.exports = {
         )
         .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
     }
-    try {
-      if (!ᴍᴇᴇ6.isGroup) {
+    if (!ᴍᴇᴇ6.isGroup) {
+      υℓтяσηℓιєηт
+        .sendMessage(ᴍᴇᴇ6.chatId, `This is not a group`, MessageType.text)
+        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+      return;
+    }
+    if (Arc.length == 0) {
+      var enabled = await Greetings.checkSettings(ᴍᴇᴇ6.chatId, `setgoodbye`);
+      var Msg = await Greetings.getMessage(ᴍᴇᴇ6.chatId, `setgoodbye`);
+      try {
+        if (enabled === false || enabled === undefined) {
+          υℓтяσηℓιєηт
+            .sendMessage(
+              ᴍᴇᴇ6.chatId,
+              `Set a setgoodbye message first.`,
+              MessageType.text
+            )
+            .catch((cᴇʀʀᴏʀ) => {
+              ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+            });
+          return;
+        } else if (enabled === `OFF`) {
+          υℓтяσηℓιєηт
+            .sendMessage(
+              ᴍᴇᴇ6.chatId,
+              `Greetings are enabled: True \nCurrently greeting new members with:`,
+              MessageType.text
+            )
+            .catch((cᴇʀʀᴏʀ) => {
+              ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+            });
+          υℓтяσηℓιєηт
+            .sendMessage(ᴍᴇᴇ6.chatId, Msg.message, MessageType.text)
+            .catch((cᴇʀʀᴏʀ) => {
+              ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+            });
+          return;
+        }
+
         υℓтяσηℓιєηт
-          .sendMessage(ᴍᴇᴇ6.chatId, `This is not a group`, MessageType.text)
-          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
-        return;
+          .sendMessage(ᴍᴇᴇ6.chatId, GOODBYE.CURRENTLY_ENABLED, MessageType.text)
+          .catch((cᴇʀʀᴏʀ) => {
+            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+          });
+        υℓтяσηℓιєηт.sendMessage(ᴍᴇᴇ6.chatId, Msg.message, MessageType.text);
+      } catch (cᴇʀʀᴏʀ) {
+        throw cᴇʀʀᴏʀ;
       }
-      if (Arc.length == 0) {
-        var enabled = await Greetings.checkSettings(ᴍᴇᴇ6.chatId, `setgoodbye`);
-        var Msg = await Greetings.getMessage(ᴍᴇᴇ6.chatId, `setgoodbye`);
-        try {
-          if (enabled === false || enabled === undefined) {
+    } else {
+      try {
+        if (Arc[0] === `OFF` || Arc[0] === `off` || Arc[0] === `Off`) {
+          switched = `OFF`;
+          await Greetings.changeSettings(ᴍᴇᴇ6.chatId, switched);
+          υℓтяσηℓιєηт
+            .sendMessage(
+              ᴍᴇᴇ6.chatId,
+              `Goodbye message has been disabled.`,
+              MessageType.text
+            )
+            .catch((cᴇʀʀᴏʀ) => {
+              ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+            });
+          return;
+        }
+        if (Arc[0] === `ON` || Arc[0] === `on` || Arc[0] === `On`) {
+          switched = `ON`;
+          await Greetings.changeSettings(ᴍᴇᴇ6.chatId, switched);
+          υℓтяσηℓιєηт
+            .sendMessage(
+              ᴍᴇᴇ6.chatId,
+              `Goodbye message has been enabled.`,
+              MessageType.text
+            )
+            .catch((cᴇʀʀᴏʀ) => {
+              ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+            });
+          return;
+        }
+        if (Arc[0] === `delete`) {
+          var Msg = await Greetings.deleteMessage(ᴍᴇᴇ6.chatId, `setgoodbye`);
+          if (Msg === false || Msg === undefined) {
             υℓтяσηℓιєηт
               .sendMessage(
                 ᴍᴇᴇ6.chatId,
@@ -57,139 +126,51 @@ module.exports = {
                 ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴍᴇᴇ6));
               });
             return;
-          } else if (enabled === `OFF`) {
-            υℓтяσηℓιєηт
-              .sendMessage(
-                ᴍᴇᴇ6.chatId,
-                `Greetings are enabled: True \nCurrently greeting new members with:`,
-                MessageType.text
-              )
-              .catch((cᴇʀʀᴏʀ) => {
-                ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴍᴇᴇ6));
-              });
-            υℓтяσηℓιєηт
-              .sendMessage(ᴍᴇᴇ6.chatId, Msg.message, MessageType.text)
-              .catch((cᴇʀʀᴏʀ) => {
-                ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴍᴇᴇ6));
-              });
-            return;
           }
-
-          υℓтяσηℓιєηт
+          await υℓтяσηℓιєηт
             .sendMessage(
               ᴍᴇᴇ6.chatId,
-              GOODBYE.CURRENTLY_ENABLED,
+              `Goodbye message deleted.`,
               MessageType.text
             )
             .catch((cᴇʀʀᴏʀ) => {
               ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴍᴇᴇ6));
             });
-          υℓтяσηℓιєηт.sendMessage(ᴍᴇᴇ6.chatId, Msg.message, MessageType.text);
-        } catch (cᴇʀʀᴏʀ) {
-          throw cᴇʀʀᴏʀ;
+          return;
         }
-      } else {
-        try {
-          if (Arc[0] === `OFF` || Arc[0] === `off` || Arc[0] === `Off`) {
-            switched = `OFF`;
-            await Greetings.changeSettings(ᴍᴇᴇ6.chatId, switched);
-            υℓтяσηℓιєηт
-              .sendMessage(
-                ᴍᴇᴇ6.chatId,
-                `Goodbye message has been disabled.`,
-                MessageType.text
-              )
-              .catch((cᴇʀʀᴏʀ) => {
-                ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴍᴇᴇ6));
-              });
-            return;
-          }
-          if (Arc[0] === `ON` || Arc[0] === `on` || Arc[0] === `On`) {
-            switched = `ON`;
-            await Greetings.changeSettings(ᴍᴇᴇ6.chatId, switched);
-            υℓтяσηℓιєηт
-              .sendMessage(
-                ᴍᴇᴇ6.chatId,
-                `Goodbye message has been enabled.`,
-                MessageType.text
-              )
-              .catch((cᴇʀʀᴏʀ) => {
-                ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴍᴇᴇ6));
-              });
-            return;
-          }
-          if (Arc[0] === `delete`) {
-            var Msg = await Greetings.deleteMessage(ᴍᴇᴇ6.chatId, `setgoodbye`);
-            if (Msg === false || Msg === undefined) {
-              υℓтяσηℓιєηт
-                .sendMessage(
-                  ᴍᴇᴇ6.chatId,
-                  `Set a setgoodbye message first.`,
-                  MessageType.text
-                )
-                .catch((cᴇʀʀᴏʀ) => {
-                  ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴍᴇᴇ6));
-                });
-              return;
-            }
-            await υℓтяσηℓιєηт
-              .sendMessage(
-                ᴍᴇᴇ6.chatId,
-                `Goodbye message deleted.`,
-                MessageType.text
-              )
-              .catch((cᴇʀʀᴏʀ) => {
-                ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴍᴇᴇ6));
-              });
-            return;
-          }
-          text = ᴍᴇᴇ6.body.replace(
-            ᴍᴇᴇ6.body[0] + ᴍᴇᴇ6.commandName + ` `,
-            ``
-          );
+        text = ᴍᴇᴇ6.body.replace(ᴍᴇᴇ6.body[0] + ᴍᴇᴇ6.commandName + ` `, ``);
 
-          var Msg = await Greetings.getMessage(ᴍᴇᴇ6.chatId, `setgoodbye`);
-          if (Msg === false || Msg === undefined) {
-            await Greetings.setGoodbye(ᴍᴇᴇ6.chatId, text);
-            await υℓтяσηℓιєηт
-              .sendMessage(
-                ᴍᴇᴇ6.chatId,
-                `Goodbye message updated and enabled.`,
-                MessageType.text
-              )
-              .catch((cᴇʀʀᴏʀ) => {
-                ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴍᴇᴇ6));
-              });
+        var Msg = await Greetings.getMessage(ᴍᴇᴇ6.chatId, `setgoodbye`);
+        if (Msg === false || Msg === undefined) {
+          await Greetings.setGoodbye(ᴍᴇᴇ6.chatId, text);
+          await υℓтяσηℓιєηт
+            .sendMessage(
+              ᴍᴇᴇ6.chatId,
+              `Goodbye message updated and enabled.`,
+              MessageType.text
+            )
+            .catch((cᴇʀʀᴏʀ) => {
+              ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+            });
 
-            return;
-          } else {
-            await Greetings.deleteMessage(ᴍᴇᴇ6.chatId, `setgoodbye`);
-            await Greetings.setGoodbye(ᴍᴇᴇ6.chatId, text);
-            await υℓтяσηℓιєηт
-              .sendMessage(
-                ᴍᴇᴇ6.chatId,
-                `Goodbye message updated and enabled.`,
-                MessageType.text
-              )
-              .catch((cᴇʀʀᴏʀ) => {
-                ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴍᴇᴇ6));
-              });
-            return;
-          }
-        } catch (cᴇʀʀᴏʀ) {
-          throw cᴇʀʀᴏʀ;
+          return;
+        } else {
+          await Greetings.deleteMessage(ᴍᴇᴇ6.chatId, `setgoodbye`);
+          await Greetings.setGoodbye(ᴍᴇᴇ6.chatId, text);
+          await υℓтяσηℓιєηт
+            .sendMessage(
+              ᴍᴇᴇ6.chatId,
+              `Goodbye message updated and enabled.`,
+              MessageType.text
+            )
+            .catch((cᴇʀʀᴏʀ) => {
+              ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+            });
+          return;
         }
+      } catch (cᴇʀʀᴏʀ) {
+        throw cᴇʀʀᴏʀ;
       }
-    } catch (cᴇʀʀᴏʀ) {
-      await υℓтяσηℓιєηт.sendMessage(
-        ᴍᴇᴇ6.chatId,
-        `*🎮ᴍᴇᴇ6™* 𝐝𝐢𝐝𝐧'𝐭 𝐰𝐨𝐫𝐤 𝐚𝐬 𝐞𝐱𝐩𝐞𝐜𝐭𝐞𝐝❗
-
-💡𝗛𝗲𝗿𝗲 𝗶𝘀 𝗮 𝘀𝗺𝗮𝗹𝗹 𝗲𝗿𝗿𝗼𝗿 𝗿𝗲𝗽𝗼𝗿𝘁 𝗮𝗻𝗱 𝘁𝗼 𝗹𝗼𝗴 𝘁𝗵𝗲 𝗿𝗲𝗽𝗼𝗿𝘁 𝘂𝘀𝗲 ${ꜱɪɢɴ.Mee6IX}𝗿𝗲𝗽𝗼𝗿𝘁
-⚠️𝗘𝗿𝗿𝗼𝗿
-• ${cᴇʀʀᴏʀ}`,
-        MessageType.text
-      );
     }
   },
 };
