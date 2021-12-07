@@ -58,9 +58,7 @@ Enter text with the command  *${ꜱɪɢɴ.Mee6IX}neko* .`,
               caption: `*⚠️Seems like someone forgot to give text!*
 
 *Usage Example*
-${ꜱɪɢɴ.Mee6IX}neko <text>
-or reply to the text with ${ꜱɪɢɴ.Mee6IX}neko
-`,
+${ꜱɪɢɴ.Mee6IX}neko <text>`,
             }
           )
           .catch((cᴇʀʀᴏʀ) => {
