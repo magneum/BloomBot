@@ -9,6 +9,8 @@ module.exports = {
   commandType: "Mee6💻System",
   description: `ᴄʜᴇᴄᴋ ᴍᴇᴇ6 ᴜᴘᴛɪᴍᴇ`,
   async handle(υℓтяσηℓιєηт, chat, ᴍᴇᴇ6, Arc, Mee6Sitrep) {
+    var str = ᴍᴇᴇ6.sender;
+    var newString = str.substring(0, str.length - 15);
     const runtime = function (seconds) {
       seconds = Number(seconds);
       var d = Math.floor(seconds / (3600 * 24));
@@ -31,11 +33,11 @@ module.exports = {
         MessageType.image,
         {
           mimetype: Mimetype.png,
+          contextInfo: { mentionedJid: [ᴍᴇᴇ6.sender] },
           caption: `*⬡••••••••⬡    𝐌𝐞𝐞𝟔™    ⬡••••••••⬡*
-𝐈 𝐚𝐦 𝐌𝐫𝐌𝐞𝐞𝟔🛸𝐋𝐨𝐨𝐤 𝐀𝐭 𝐌𝐞!
-⧪ 𝙰𝚍𝚟𝚊𝚗𝚌𝚎 𝚆𝚑𝚊𝚝𝚜𝚊𝚙𝚙 𝚄𝚜𝚎𝚛𝚋𝚘𝚝 ⧪
+𝐈 𝐚𝐦 𝐌𝐫𝐌𝐞𝐞𝟔🛸𝐋𝐨𝐨𝐤 𝐀𝐭 𝐌𝐞! 𝗠𝗼𝘀𝘁 𝗔𝗱𝘃𝗮𝗻𝗰𝗲 𝗪𝗵𝗮𝘁𝘀𝗮𝗽𝗽 𝗕𝗼𝘁 ⧪
 
-
+*❗Dҽαɾ @${newString},*
 *This 𝐌𝐞𝐞𝟔's Is Running Since:*
 ⚰️𝐔𝐩𝐓𝐢𝐦𝐞: ${runtime(process.uptime())}`,
         }

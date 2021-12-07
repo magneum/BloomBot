@@ -43,8 +43,9 @@ exports.catch = async (error, υℓтяσηℓιєηт, ᴍᴇᴇ6) => {
 
 *⬡••••••••⬡    𝐌𝐞𝐞𝟔™    ⬡••••••••⬡*
 ⧪➛ 𝗝𝗼𝗶𝗻 𝗦𝘂𝗽𝗽𝗼𝗿𝘁 𝗚𝗿𝗼𝘂𝗽(🐞RΣPӨЯƬ)
-🔸ᴡʜᴀᴛꜱᴀᴘᴘ https://chat.whatsapp.com/FmMcEeSqZQw85qAkgUs3f5
-🔸ᴅɪꜱᴄᴏʀᴅ https://discord.gg/xcFN6NDHEV`,
+🔸ɢɪᴛʜᴜʙ: https://github.com/Krakinz/Mee6
+🔸ᴅɪꜱᴄᴏʀᴅ: https://discord.gg/xcFN6NDHEV
+🔸ᴡʜᴀᴛꜱᴀᴘᴘ: https://chat.whatsapp.com/FmMcEeSqZQw85qAkgUs3f5`,
     }
   );
 };
