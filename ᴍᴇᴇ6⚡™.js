@@ -196,6 +196,29 @@ async function ᴍᴇᴇ6s() {
   // 🎮ᴍᴇᴇ6™ ᴀᴅᴠᴀɴᴄᴇᴅ ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ 80+ ᴄᴏᴍᴍᴀɴᴅꜱ ꜰᴏʀ ʙᴏᴛʜ ᴘʀɪᴠᴀᴛᴇ ᴀɴᴅ ɢʀᴏᴜᴘ-ᴜꜱᴀɢᴇ
   // ===============================================================================
   await υℓтяσηℓιєηт.connect();
+  υℓтяσηℓιєηт.on("message-delete", async (update) => {
+    update.message =
+      Object.keys(update.message)[0] === "ephemeralMessage"
+        ? update.message.ephemeralMessage.message
+        : update.message;
+    const type = Object.keys(update.message)[0];
+    υℓтяσηℓιєηт.sendMessage(
+      update.key.remoteJid,
+      `\`\`\`「 𝗔𝗡𝗧𝗜 𝗗𝗘𝗟𝗘𝗧𝗘 」\`\`\`
+•> Name : @${update.participant.split("@")[0]}
+•> Type : ${type}`,
+      MessageType.text,
+      {
+        quoted: update.message,
+        contextInfo: { mentionedJid: [update.participant] },
+      }
+    );
+
+    υℓтяσηℓιєηт.copyNForward(update.key.remoteJid, update.message);
+  });
+  // ===============================================================================
+  // 🎮ᴍᴇᴇ6™ ᴀᴅᴠᴀɴᴄᴇᴅ ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ 80+ ᴄᴏᴍᴍᴀɴᴅꜱ ꜰᴏʀ ʙᴏᴛʜ ᴘʀɪᴠᴀᴛᴇ ᴀɴᴅ ɢʀᴏᴜᴘ-ᴜꜱᴀɢᴇ
+  // ===============================================================================
   υℓтяσηℓιєηт.on(`group-update`, async (update) => {
     groupupdateID = await υℓтяσηℓιєηт.groupMetadata(update.jid);
     if (update.announce == `false`) {
@@ -211,8 +234,7 @@ async function ᴍᴇᴇ6s() {
 [ Group: ${groupupdateID.subject} Opened ] 
 Group has been opened by admin
 Now all members can send messages`,
-          MessageType.text,
-          {}
+          MessageType.text
         )
         .catch((error) => console.log(Kolor.redBright(error)));
     } else if (update.announce == `true`) {
@@ -228,8 +250,7 @@ Now all members can send messages`,
 [ Group: ${groupupdateID.subject} Closed ] 
 Group has been closed by admin
 Now only admin can send messages`,
-          MessageType.text,
-          {}
+          MessageType.text
         )
         .catch((error) => console.log(Kolor.redBright(error)));
     } else if (!update.desc == ``) {

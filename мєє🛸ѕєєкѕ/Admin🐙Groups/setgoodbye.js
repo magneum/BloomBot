@@ -5,7 +5,9 @@ const { MessageType } = require(`@adiwajshing/baileys`);
 const Greetings = require(`../../ᴍᴇᴇ6/ɠɠᴍᴇᴇ6`);
 const ℓιєηт = require("../../ᴍᴇᴇ6/catch");
 const ꜱɪɢɴ = require(`../../ᴍᴇᴇ6/ꜱɪɢɴ`);
-// ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
+var Mee6Regex = new RegExp(ꜱɪɢɴ.Mee6IX, "g");
+var Mee6f = /\/\^\[(.*)+\]\/\g/g.exec(Mee6Regex)[1];
+// ⬡••••••••⬡    𝐌𝐞𝐞𝟔™    ⬡••••••••⬡⬡••••••••⬡    𝐌𝐞𝐞𝟔™    ⬡••••••••⬡
 module.exports = {
   name: `setgoodbye`,
   commandType: "Admin🐙Groups",

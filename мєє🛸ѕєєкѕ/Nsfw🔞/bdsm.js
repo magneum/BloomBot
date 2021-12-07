@@ -5,7 +5,9 @@ const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const ꜱɪɢɴ = require(`../../ᴍᴇᴇ6/ꜱɪɢɴ`);
 const ℓιєηт = require("../../ᴍᴇᴇ6/catch");
 const akaneko = require(`akaneko`);
-// ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
+var Mee6Regex = new RegExp(ꜱɪɢɴ.Mee6IX, "g");
+var Mee6f = /\/\^\[(.*)+\]\/\g/g.exec(Mee6Regex)[1];
+// ⬡••••••••⬡    𝐌𝐞𝐞𝟔™    ⬡••••••••⬡⬡••••••••⬡    𝐌𝐞𝐞𝟔™    ⬡••••••••⬡
 module.exports = {
   name: `bdsm`,
   commandType: "Nsfw🔞",

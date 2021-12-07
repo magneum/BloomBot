@@ -12,7 +12,9 @@ const ffmpeg = require(`fluent-ffmpeg`);
 const Kolor = require(`chalk`);
 const API = new Anime_Images();
 const fs = require(`fs`);
-// ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
+var Mee6Regex = new RegExp(ꜱɪɢɴ.Mee6IX, "g");
+var Mee6f = /\/\^\[(.*)+\]\/\g/g.exec(Mee6Regex)[1];
+// ⬡••••••••⬡    𝐌𝐞𝐞𝟔™    ⬡••••••••⬡⬡••••••••⬡    𝐌𝐞𝐞𝟔™    ⬡••••••••⬡
 module.exports = {
   name: `hug`,
   commandType: "Conversation🎙️",

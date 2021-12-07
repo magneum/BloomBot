@@ -5,7 +5,9 @@ const imdb = require("imdb-api");
 const ℓιєηт = require("../../ᴍᴇᴇ6/catch");
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const ꜱɪɢɴ = require(`../../ᴍᴇᴇ6/ꜱɪɢɴ`);
-// ➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛
+var Mee6Regex = new RegExp(ꜱɪɢɴ.Mee6IX, "g");
+var Mee6f = /\/\^\[(.*)+\]\/\g/g.exec(Mee6Regex)[1];
+// ⬡••••••••⬡    𝐌𝐞𝐞𝟔™    ⬡••••••••⬡⬡••••••••⬡    𝐌𝐞𝐞𝟔™    ⬡••••••••⬡
 module.exports = {
   name: `imdb`,
   commandType: "Fun⚡",
