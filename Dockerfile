@@ -1,5 +1,6 @@
 FROM jrottenberg/ffmpeg
 RUN apt update 
+RUN apt install git -y 
 RUN apt install curl -y 
 RUN curl -sL https://deb.nodesource.com/setup_14.x | bash -
 RUN apt install nodejs -y
