@@ -10,9 +10,9 @@ registerFont(`./ᴍᴇᴇ6/LobsterTwo-Bold.ttf`, {
 });
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const ᴍᴇᴇ6ֆʏռօք = require(`./ᴍᴇᴇ6/ᴍᴇᴇ6ᴢᴇɴ`);
-const ℓιєηт = require("./ᴍᴇᴇ6/catch");
+const ℓιєηт = require(`./ᴍᴇᴇ6/catch`);
 const vers = require(`./package.json`);
-const clientult = require(`./ᴍᴇᴇ6/ɠɠʊ`);
+const υℓтяσηℓιєηтult = require(`./ᴍᴇᴇ6/ɠɠʊ`);
 const gitPull = require(`./ᴍᴇᴇ6/ᴍᴇᴇ6ɢɪᴛ`);
 const ɠɠᴍᴇᴇ6 = require(`./ᴍᴇᴇ6/ɠɠᴍᴇᴇ6`);
 const ᴍᴇᴇ6Sudo = [`block`, `unblock`];
@@ -152,11 +152,11 @@ async function ᴍᴇᴇ6s() {
         `\n\n\n=================😈    |  ᴍᴇᴇ6  |    😈=================`
       ),
       Kolor.blue(`
-      ███    ███ ███████ ███████  ███████  
-      ████  ████ ██      ██       ██       
-      ██ ████ ██ █████   █████    ███████  
-      ██  ██  ██ ██      ██       ██   ██ 
-      ██      ██ ███████ ███████  ███████     
+███    ███ ███████ ███████  ███████  
+████  ████ ██      ██       ██       
+██ ████ ██ █████   █████    ███████  
+██  ██  ██ ██      ██       ██   ██ 
+██      ██ ███████ ███████  ███████     
 `),
       Kolor.green(`=================😈    |  ᴍᴇᴇ6  |    😈=================`)
     );
@@ -169,7 +169,10 @@ async function ᴍᴇᴇ6s() {
       {
         mimetype: Mimetype.png,
         caption: `*⬡••••••••⬡    𝐌𝐞𝐞𝟔™    ⬡••••••••⬡*
-⚡𝐌𝐞𝐞𝟔™ ⧪ɪ ᴀᴍ ᴍʀ ᴍᴇᴇ6, ʟᴏᴏᴋ ᴀᴛ ᴍᴇ! 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵
+𝐈 𝐚𝐦 𝐌𝐫𝐌𝐞𝐞𝟔🛸𝐋𝐨𝐨𝐤 𝐀𝐭 𝐌𝐞!
+⧪ 𝙰𝚍𝚟𝚊𝚗𝚌𝚎 𝚆𝚑𝚊𝚝𝚜𝚊𝚙𝚙 𝚄𝚜𝚎𝚛𝚋𝚘𝚝 ⧪
+
+
 
 ⚙️𝗩𝗲𝗿𝘀𝗶𝗼𝗻: 
 ￫ ${vers.vers}
@@ -193,8 +196,111 @@ async function ᴍᴇᴇ6s() {
   // 🎮ᴍᴇᴇ6™ ᴀᴅᴠᴀɴᴄᴇᴅ ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ 80+ ᴄᴏᴍᴍᴀɴᴅꜱ ꜰᴏʀ ʙᴏᴛʜ ᴘʀɪᴠᴀᴛᴇ ᴀɴᴅ ɢʀᴏᴜᴘ-ᴜꜱᴀɢᴇ
   // ===============================================================================
   await υℓтяσηℓιєηт.connect();
+  υℓтяσηℓιєηт.on(`group-update`, async (update) => {
+    groupupdateID = await υℓтяσηℓιєηт.groupMetadata(update.jid);
+    if (update.announce == `false`) {
+      υℓтяσηℓιєηт
+        .sendMessage(
+          groupupdateID.id,
+          `*⬡••••••••⬡    𝐌𝐞𝐞𝟔™    ⬡••••••••⬡*
+𝐈 𝐚𝐦 𝐌𝐫𝐌𝐞𝐞𝟔🛸𝐋𝐨𝐨𝐤 𝐀𝐭 𝐌𝐞!
+⧪ 𝙰𝚍𝚟𝚊𝚗𝚌𝚎 𝚆𝚑𝚊𝚝𝚜𝚊𝚙𝚙 𝚄𝚜𝚎𝚛𝚋𝚘𝚝 ⧪
+
+
+
+[ Group: ${groupupdateID.subject} Opened ] 
+Group has been opened by admin
+Now all members can send messages`,
+          MessageType.text,
+          {}
+        )
+        .catch((error) => console.log(Kolor.redBright(error)));
+    } else if (update.announce == `true`) {
+      υℓтяσηℓιєηт
+        .sendMessage(
+          groupupdateID.id,
+          `*⬡••••••••⬡    𝐌𝐞𝐞𝟔™    ⬡••••••••⬡*
+𝐈 𝐚𝐦 𝐌𝐫𝐌𝐞𝐞𝟔🛸𝐋𝐨𝐨𝐤 𝐀𝐭 𝐌𝐞!
+⧪ 𝙰𝚍𝚟𝚊𝚗𝚌𝚎 𝚆𝚑𝚊𝚝𝚜𝚊𝚙𝚙 𝚄𝚜𝚎𝚛𝚋𝚘𝚝 ⧪
+
+
+
+[ Group: ${groupupdateID.subject} Closed ] 
+Group has been closed by admin
+Now only admin can send messages`,
+          MessageType.text,
+          {}
+        )
+        .catch((error) => console.log(Kolor.redBright(error)));
+    } else if (!update.desc == ``) {
+      tag = update.descOwner.split(`@`)[0] + `@s.whatsapp.net`;
+      υℓтяσηℓιєηт
+        .sendMessage(
+          groupupdateID.id,
+          `*⬡••••••••⬡    𝐌𝐞𝐞𝟔™    ⬡••••••••⬡*
+𝐈 𝐚𝐦 𝐌𝐫𝐌𝐞𝐞𝟔🛸𝐋𝐨𝐨𝐤 𝐀𝐭 𝐌𝐞!
+⧪ 𝙰𝚍𝚟𝚊𝚗𝚌𝚎 𝚆𝚑𝚊𝚝𝚜𝚊𝚙𝚙 𝚄𝚜𝚎𝚛𝚋𝚘𝚝 ⧪
+
+
+
+[ Group: ${groupupdateID.subject} Description Change ] 
+Group description has been changed by:
+Admin @${update.descOwner.split(`@`)[0]}
+
+• New Description: 
+${update.desc}`,
+          MessageType.text,
+          {
+            contextInfo: { mentionedJid: [tag] },
+          }
+        )
+        .catch((error) => console.log(Kolor.redBright(error)));
+    } else if (update.restrict == `false`) {
+      υℓтяσηℓιєηт
+        .sendMessage(
+          groupupdateID.id,
+          `*⬡••••••••⬡    𝐌𝐞𝐞𝟔™    ⬡••••••••⬡*
+𝐈 𝐚𝐦 𝐌𝐫𝐌𝐞𝐞𝟔🛸𝐋𝐨𝐨𝐤 𝐀𝐭 𝐌𝐞!
+⧪ 𝙰𝚍𝚟𝚊𝚗𝚌𝚎 𝚆𝚑𝚊𝚝𝚜𝚊𝚙𝚙 𝚄𝚜𝚎𝚛𝚋𝚘𝚝 ⧪
+
+[ Group: ${groupupdateID.subject} 𝗦𝗲𝘁𝘁𝗶𝗻𝗴 𝗖h𝗮𝗻𝗴𝗲 ]
+Edit Group info has been opened for members
+Now all members can edit this group info`,
+          MessageType.text,
+          {}
+        )
+        .catch((error) => console.log(Kolor.redBright(error)));
+    } else if (update.restrict == `true`) {
+      υℓтяσηℓιєηт
+        .sendMessage(
+          groupupdateID.id,
+          `*⬡••••••••⬡    𝐌𝐞𝐞𝟔™    ⬡••••••••⬡*
+𝐈 𝐚𝐦 𝐌𝐫𝐌𝐞𝐞𝟔🛸𝐋𝐨𝐨𝐤 𝐀𝐭 𝐌𝐞!
+⧪ 𝙰𝚍𝚟𝚊𝚗𝚌𝚎 𝚆𝚑𝚊𝚝𝚜𝚊𝚙𝚙 𝚄𝚜𝚎𝚛𝚋𝚘𝚝 ⧪
+
+
+
+[ Group: ${groupupdateID.subject} 𝗦𝗲𝘁𝘁𝗶𝗻𝗴 𝗖𝗵𝗮𝗻𝗴𝗲 ]
+Edit Group info has been closed for members
+Now only group admins can edit this group info`,
+          MessageType.text,
+          {}
+        )
+        .catch((error) => console.log(Kolor.redBright(error)));
+    }
+  });
+  // ===============================================================================
+  // 🎮ᴍᴇᴇ6™ ᴀᴅᴠᴀɴᴄᴇᴅ ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ 80+ ᴄᴏᴍᴍᴀɴᴅꜱ ꜰᴏʀ ʙᴏᴛʜ ᴘʀɪᴠᴀᴛᴇ ᴀɴᴅ ɢʀᴏᴜᴘ-ᴜꜱᴀɢᴇ
+  // ===============================================================================
   υℓтяσηℓιєηт.on(`group-participants-update`, async (update) => {
     const MemNum = update.participants[0];
+    if (update.action == `add` && MemNum.includes(υℓтяσηℓιєηт.user.jid)) {
+      υℓтяσηℓιєηт.sendMessage(
+        update.jid,
+        `Hello everyone, ⚡𝐌𝐞𝐞𝟔™ ⧪ɪ ᴀᴍ ᴍʀ ᴍᴇᴇ6, ʟᴏᴏᴋ ᴀᴛ ᴍᴇ! 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵, ready to help you here ㋛︎`,
+        `conversation`
+      );
+    }
     const GroupMemData = await υℓтяσηℓιєηт.groupMetadata(update.jid);
     const GroupMemG = GroupMemData.participants.length;
     const GroupMemBio = await υℓтяσηℓιєηт.getStatus(
@@ -233,15 +339,16 @@ async function ᴍᴇᴇ6s() {
               Text_Rand_Welcome[
                 Math.floor(Math.random() * Text_Rand_Welcome.length)
               ];
-            return υℓтяσηℓιєηт.sendMessage(
-              GroupID,
-              {
-                url: `./ᴛᴇᴍᴘ/ppimg.jpg`,
-              },
-              MessageType.image,
-              {
-                mimetype: Mimetype.png,
-                caption: `
+            return υℓтяσηℓιєηт
+              .sendMessage(
+                GroupID,
+                {
+                  url: `./ᴛᴇᴍᴘ/ppimg.jpg`,
+                },
+                MessageType.image,
+                {
+                  mimetype: Mimetype.png,
+                  caption: `
 @${MemNum.split(`@`)[0]}
 ${weltext}
 
@@ -249,8 +356,9 @@ ${weltext}
 🎊𝗚𝗥𝗢𝗨𝗣➛ _${GroupMemData.subject}_
 🗄️𝗪𝗲 𝗔𝗿𝗲 𝗡𝗼𝘄➛  _${GroupMemG}_ 𝗠𝗲𝗺𝗯𝗲𝗿𝘀
 ${Fetched.message}`,
-              }
-            );
+                }
+              )
+              .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
           }
         );
         return;
@@ -299,40 +407,14 @@ ${Fetched.message}`,
         adminmodls.indexOf(ᴍᴇᴇ6.commandName) >= 0 &&
         !ᴍᴇᴇ6.isSenderGroupAdmin
       ) {
-        return υℓтяσηℓιєηт.sendMessage(
-          ᴍᴇᴇ6.chatId,
-          `You need to be an admin to execute this command.`,
-          MessageType.text
-        );
+        return;
       } else if (ᴍᴇᴇ6Sudo.indexOf(ᴍᴇᴇ6.commandName) >= 0) {
-        var messageSent = await clientult.getUser(ᴍᴇᴇ6.chatId);
+        var messageSent = await υℓтяσηℓιєηтult.getUser(ᴍᴇᴇ6.chatId);
         if (messageSent) {
-          return console.log(
-            Kolor.blue(
-              `💡⬰  Promo message had already been sent to ` + ᴍᴇᴇ6.chatId
-            )
-          );
+          return;
         } else {
-          await clientult.addUser(ᴍᴇᴇ6.chatId);
-          return υℓтяσηℓιєηт.sendMessage(
-            ᴍᴇᴇ6.chatId,
-            `ᴍᴇᴇ6 is Alive!`,
-            {
-              worktype: `public`,
-              groupName: ᴍᴇᴇ6.groupName ? ᴍᴇᴇ6.groupName : `private chat`,
-              commandName: ᴍᴇᴇ6.commandName,
-            },
-            MessageType.text,
-            {
-              contextInfo: {
-                stanzaId: chat.key.id,
-                participant: ᴍᴇᴇ6.sender,
-                quotedMessage: {
-                  conversation: ᴍᴇᴇ6.body,
-                },
-              },
-            }
-          );
+          await υℓтяσηℓιєηтult.addUser(ᴍᴇᴇ6.chatId);
+          return;
         }
       }
     }
