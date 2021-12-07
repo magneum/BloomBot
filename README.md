@@ -27,8 +27,6 @@
 
 *text and link*
 - ꜰɪʀꜱᴛ ꜰᴏʀᴋ ᴀɴᴅ ꜱᴛᴀʀ ᴛʜᴇ ʀᴇᴘᴏ (or else auto upgrading won't work)
-- [🛸Deployment-Video](https://github.com/Krakinz/Mee6/tree/KrakinzLab/%E1%B4%8D%E1%B4%87%E1%B4%876/Deployment.avi)
-- [⚡Re-Deployment-Video](https://github.com/Krakinz/Mee6/tree/KrakinzLab/%E1%B4%8D%E1%B4%87%E1%B4%876/Re-Deployment(AUTO).avi)
 - Make Heroku Account If You Don't Have already.
 - Link to [Heroku](https://dashboard.heroku.com/apps)
 - Get Your Heroku-Api Key From [Heroku API Key](https://dashboard.heroku.com/account)
