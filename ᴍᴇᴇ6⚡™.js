@@ -422,6 +422,9 @@ ${Fetched.message}`,
       `setgoodbye`,
       `tagall`,
     ];
+    if (ᴍᴇᴇ6.chatId === "120363025343298860@g.us") {
+      return;
+    }
     if (ᴍᴇᴇ6.isCmd && !ᴍᴇᴇ6.fromMe) {
       if (
         adminmodls.indexOf(ᴍᴇᴇ6.commandName) >= 0 &&
