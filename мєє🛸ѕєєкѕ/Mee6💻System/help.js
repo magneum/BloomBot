@@ -164,7 +164,7 @@ module.exports = {
             caption: `*⚡𝐌𝐞𝐞𝟔™* | 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 |
 ⬡=======================⬡
 シ︎ 💡𝐏𝐫𝐞𝐟𝐢𝐱: ${Mee6f}
-シ︎ 🛰️𝐏𝐢𝐧𝐠: _${latensie.toFixed(2)}s_
+シ︎ 🛰️𝐏𝐢𝐧𝐠: _${latensie.toFixed(6)}s_
 シ︎ ⚰️𝐔𝐩𝐓𝐢𝐦𝐞: _${runtime(process.uptime())}_
 シ︎ 💻𝐏𝐥𝐚𝐭𝐟𝐨𝐫𝐦: _${os.platform()}_
 ⬡=======================⬡

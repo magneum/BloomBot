@@ -37,34 +37,46 @@ ${ꜱɪɢɴ.Mee6IX}lyrics <song-name>`,
       song = Arc.join(` `);
     }
     await υℓтяσηℓιєηт
-      .sendMessage(
-        ᴍᴇᴇ6.chatId,
-        `Searching. Please wait....`,
-        MessageType.text
-      )
+      .sendMessage(ᴍᴇᴇ6.chatId, `Searching. Please wait....`, MessageType.text)
       .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
-    let API = await got(`https://some-random-api.ml/lyrics/?title=${song}`);
-    let APIData = JSON.parse(API.body);
-    let caption =
-      `*Title :* ` +
-      APIData.title +
-      `\n*Author :* ` +
-      APIData.author +
-      `\n*Lyrics :*\n` +
-      APIData.lyrics;
-    await υℓтяσηℓιєηт
-      .sendMessage(
-        ᴍᴇᴇ6.chatId,
-        {
-          url: APIData.thumbnail.genius,
-        },
-        MessageType.image,
-        {
-          mimetype: Mimetype.png,
-          caption: caption,
-        }
-      )
-      .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+    try {
+      let API = await got(`https://some-random-api.ml/lyrics/?title=${song}`);
+      let APIData = JSON.parse(API.body);
+      let caption =
+        `*Title :* ` +
+        APIData.title +
+        `\n*Author :* ` +
+        APIData.author +
+        `\n*Lyrics :*\n` +
+        APIData.lyrics;
+      await υℓтяσηℓιєηт
+        .sendMessage(
+          ᴍᴇᴇ6.chatId,
+          {
+            url: APIData.thumbnail.genius,
+          },
+          MessageType.image,
+          {
+            mimetype: Mimetype.png,
+            caption: caption,
+          }
+        )
+        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+    } catch (cᴇʀʀᴏʀ) {
+      await υℓтяσηℓιєηт
+        .sendMessage(
+          ᴍᴇᴇ6.chatId,
+          {
+            url: ꜱɪɢɴ.ERROR,
+          },
+          MessageType.image,
+          {
+            mimetype: Mimetype.png,
+            caption: "Seems Like No Lyrics Found\n\nIt will be fixed Soon!",
+          }
+        )
+        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+    }
   },
 };
 // ===============================================================================

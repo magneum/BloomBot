@@ -25,7 +25,7 @@ module.exports = {
 ⬡=======================⬡
 
 *𝐌𝐞𝐞𝟔's Server Response Time Is:*
-🛰️𝐏𝐢𝐧𝐠: _${latensie.toFixed(2)}s_
+🛰️𝐏𝐢𝐧𝐠: _${latensie.toFixed(6)}s_
 
 ⬡=======================⬡`,
         }

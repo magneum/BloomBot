@@ -193,6 +193,7 @@ async function ᴍᴇᴇ6s() {
   // ===============================================================================
   await υℓтяσηℓιєηт.connect();
   υℓтяσηℓιєηт.on(`group-participants-update`, async (update) => {
+    console.log(update);
     const MemNum = update.participants[0];
     const GroupMemData = await υℓтяσηℓιєηт.groupMetadata(update.jid);
     const GroupMemG = GroupMemData.participants.length;
@@ -292,6 +293,38 @@ ${Fetched.message}`,
       `setgoodbye`,
       `tagall`,
     ];
+    var Mee6Regex = new RegExp(ꜱɪɢɴ.Mee6IX, "g");
+    var Mee6f = /\/\^\[(.*)+\]\/\g/g.exec(Mee6Regex)[1];
+    if (ᴍᴇᴇ6.chatId === "120363025343298860@g.us") {
+      await υℓтяσηℓιєηт
+        .sendMessage(
+          ᴍᴇᴇ6.chatId,
+          {
+            url: ꜱɪɢɴ.MEE,
+          },
+          MessageType.image,
+          {
+            mimetype: Mimetype.png,
+            caption: `*⚡𝐌𝐞𝐞𝟔™* | 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 |
+⬡=======================⬡
+➛ɪ ᴀᴍ ᴍʀ ᴍᴇᴇ6, ʟᴏᴏᴋ ᴀᴛ ᴍᴇ!
+➛ɪ ᴀᴍ ᴅɪꜱᴀʙʟᴇᴅ ɪɴ ᴛʜɪꜱ ɢʀᴏᴜᴘ
+
+➛ᴛᴏ ᴜꜱᴇ ᴍʏ ᴄᴏᴍᴍᴀɴᴅꜱ ᴘʟᴇᴀꜱᴇ 
+➛ɢᴏ ɪɴ ᴘʀɪᴠᴀᴛᴇ ᴏʀ ᴀɴʏ ᴏᴛʜᴇʀ ɢʀᴏᴜᴘꜱ.
+
+⧪𝗠𝘆 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝗔𝗹𝗹𝗼𝘄𝗲𝗱 𝗛𝗲𝗿𝗲⧪
+  *⬡${Mee6f}ping
+  *⬡${Mee6f}update
+  *⬡${Mee6f}nekobin
+  *⬡${Mee6f}help
+  *⬡${Mee6f}uptime
+⬡=======================⬡`,
+          }
+        )
+        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+      return;
+    }
     if (ᴍᴇᴇ6.isCmd && !ᴍᴇᴇ6.fromMe) {
       if (
         adminmodls.indexOf(ᴍᴇᴇ6.commandName) >= 0 &&
