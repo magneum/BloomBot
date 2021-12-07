@@ -409,27 +409,27 @@ ${Fetched.message}`,
       ? await υℓтяσηℓιєηт.groupMetadata(sender)
       : ``;
     var ᴍᴇᴇ6 = ᴍᴇᴇ6ǟքք.resolve(chat, υℓтяσηℓιєηт, groupMetadata);
-    const adminmodls = [
-      `add`,
-      `demote`,
-      `invite`,
-      `mute`,
-      `promote`,
-      `remove`,
-      `unmute`,
-      `setwelcome`,
-      `disappear`,
-      `setgoodbye`,
-      `tagall`,
-    ];
     // if (ᴍᴇᴇ6.chatId === "120363025343298860@g.us") {
     //   return;
     // }
+    // if (ᴍᴇᴇ6.isCmd && !ᴍᴇᴇ6.fromMe) {
+    //   if (
+    //     adminmodls.indexOf(ᴍᴇᴇ6.commandName) >= 0 &&
+    //     !ᴍᴇᴇ6.isSenderGroupAdmin
+    //   ) {
+    //     return;
+    //   } else if (ᴍᴇᴇ6Sudo.indexOf(ᴍᴇᴇ6.commandName) >= 0) {
+    //     var messageSent = await υℓтяσηℓιєηтult.getUser(ᴍᴇᴇ6.chatId);
+    //     if (messageSent) {
+    //       return;
+    //     } else {
+    //       await υℓтяσηℓιєηтult.addUser(ᴍᴇᴇ6.chatId);
+    //       return;
+    //     }
+    //   }
+    // }
     if (ᴍᴇᴇ6.isCmd && !ᴍᴇᴇ6.fromMe) {
-      if (
-        adminmodls.indexOf(ᴍᴇᴇ6.commandName) >= 0 &&
-        !ᴍᴇᴇ6.isSenderGroupAdmin
-      ) {
+      if (!ᴍᴇᴇ6.isSenderGroupAdmin) {
         return;
       } else if (ᴍᴇᴇ6Sudo.indexOf(ᴍᴇᴇ6.commandName) >= 0) {
         var messageSent = await υℓтяσηℓιєηтult.getUser(ᴍᴇᴇ6.chatId);

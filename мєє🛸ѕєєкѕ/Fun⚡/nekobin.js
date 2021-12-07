@@ -42,78 +42,54 @@ Enter text with the command  *${ꜱɪɢɴ.Mee6IX}neko* .`,
     //         )
     //         .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
     //     }
-    try {
-      if (Arc.length === 0 && !ᴍᴇᴇ6.isReply) {
-        await υℓтяσηℓιєηт.sendMessage(ᴍᴇᴇ6.chatId, "❌", MessageType.text);
-        return await υℓтяσηℓιєηт
-          .sendMessage(
-            ᴍᴇᴇ6.chatId,
-            {
-              url: ꜱɪɢɴ.ARC,
-            },
-            MessageType.image,
-            {
-              mimetype: Mimetype.jpeg,
-              caption: `*⚠️Seems like someone forgot to give text!*
+    if (Arc.length === 0 && !ᴍᴇᴇ6.isReply) {
+      await υℓтяσηℓιєηт.sendMessage(ᴍᴇᴇ6.chatId, "❌", MessageType.text);
+      return await υℓтяσηℓιєηт
+        .sendMessage(
+          ᴍᴇᴇ6.chatId,
+          {
+            url: ꜱɪɢɴ.ARC,
+          },
+          MessageType.image,
+          {
+            mimetype: Mimetype.jpeg,
+            caption: `*⚠️Seems like someone forgot to give text!*
 
 *Usage Example*
 ${ꜱɪɢɴ.Mee6IX}neko <text>`,
-            }
-          )
-          .catch((cᴇʀʀᴏʀ) => {
-            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴍᴇᴇ6));
-          });
-      }
-      await υℓтяσηℓιєηт
-        .sendMessage(
-          ᴍᴇᴇ6.chatId,
-          `Pasting text to nekobin. Please wait...`,
-          MessageType.text
+          }
         )
-        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
-      if (!ᴍᴇᴇ6.isReply) {
-        var json = {
-          content: ᴍᴇᴇ6.body.replace(ᴍᴇᴇ6.body[0] + ᴍᴇᴇ6.commandName + ` `, ``),
-        };
-      } else {
-        var json = {
-          content: ᴍᴇᴇ6.replyMessage.replace(
-            ᴍᴇᴇ6.body[0] + ᴍᴇᴇ6.commandName + ` `,
-            ``
-          ),
-        };
-      }
-      let text = await got.post(`https://nekobin.com/api/documents`, {
-        json,
-      });
-      json = JSON.parse(text.body);
-      neko_url = `https://nekobin.com/` + json.result.key;
-      υℓтяσηℓιєηт
-        .sendMessage(ᴍᴇᴇ6.chatId, neko_url, MessageType.text)
-        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
-    } catch (cᴇʀʀᴏʀ) {
-      if (json.result == undefined) {
-        υℓтяσηℓιєηт.sendMessage(
-          ᴍᴇᴇ6.chatId,
-          `*🎮ᴍᴇᴇ6™* 𝐝𝐢𝐝𝐧'𝐭 𝐰𝐨𝐫𝐤 𝐚𝐬 𝐞𝐱𝐩𝐞𝐜𝐭𝐞𝐝❗
-
-💡𝗛𝗲𝗿𝗲 𝗶𝘀 𝗮 𝘀𝗺𝗮𝗹𝗹 𝗲𝗿𝗿𝗼𝗿 𝗿𝗲𝗽𝗼𝗿𝘁 𝗮𝗻𝗱 𝘁𝗼 𝗹𝗼𝗴 𝘁𝗵𝗲 𝗿𝗲𝗽𝗼𝗿𝘁 𝘂𝘀𝗲 ${ꜱɪɢɴ.Mee6IX}𝗿𝗲𝗽𝗼𝗿𝘁
-⚠️𝗘𝗿𝗿𝗼𝗿
-• ${cᴇʀʀᴏʀ}`,
-          MessageType.text
-        );
-      } else {
-        υℓтяσηℓιєηт.sendMessage(
-          ᴍᴇᴇ6.chatId,
-          `*🎮ᴍᴇᴇ6™* 𝐝𝐢𝐝𝐧'𝐭 𝐰𝐨𝐫𝐤 𝐚𝐬 𝐞𝐱𝐩𝐞𝐜𝐭𝐞𝐝❗
-
-💡𝗛𝗲𝗿𝗲 𝗶𝘀 𝗮 𝘀𝗺𝗮𝗹𝗹 𝗲𝗿𝗿𝗼𝗿 𝗿𝗲𝗽𝗼𝗿𝘁 𝗮𝗻𝗱 𝘁𝗼 𝗹𝗼𝗴 𝘁𝗵𝗲 𝗿𝗲𝗽𝗼𝗿𝘁 𝘂𝘀𝗲 ${ꜱɪɢɴ.Mee6IX}𝗿𝗲𝗽𝗼𝗿𝘁
-⚠️𝗘𝗿𝗿𝗼𝗿
-• ${cᴇʀʀᴏʀ}`,
-          MessageType.text
-        );
-      }
+        .catch((cᴇʀʀᴏʀ) => {
+          ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+        });
     }
+    await υℓтяσηℓιєηт
+      .sendMessage(
+        ᴍᴇᴇ6.chatId,
+        `Pasting text to nekobin. Please wait...`,
+        MessageType.text
+      )
+      .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+    if (!ᴍᴇᴇ6.isReply) {
+      var json = {
+        content: ᴍᴇᴇ6.body.replace(ᴍᴇᴇ6.body[0] + ᴍᴇᴇ6.commandName + ` `, ``),
+      };
+    } else {
+      var json = {
+        content: ᴍᴇᴇ6.replyMessage.replace(
+          ᴍᴇᴇ6.body[0] + ᴍᴇᴇ6.commandName + ` `,
+          ``
+        ),
+      };
+    }
+    let text = await got.post(`https://nekobin.com/api/documents`, {
+      json,
+    });
+    json = JSON.parse(text.body);
+    neko_url = `https://nekobin.com/` + json.result.key;
+    υℓтяσηℓιєηт
+      .sendMessage(ᴍᴇᴇ6.chatId, neko_url, MessageType.text)
+      .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
   },
 };
 // ===============================================================================

@@ -11,8 +11,6 @@ module.exports = {
   name: `promote`,
   commandType: "Admin🐙Groups",
   description: `Use this command to promote a member to admin. You can enter the person's mobile number as per the format below. Valid Syntaxes -
-1. XXXXXXXXXX
-2. YYXXXXXXXXXX ()
 For example- *${ꜱɪɢɴ.Mee6IX}promote 9861212121*`,
   async handle(υℓтяσηℓιєηт, chat, ᴍᴇᴇ6, Arc) {
     var str = ᴍᴇᴇ6.sender;

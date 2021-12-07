@@ -15,7 +15,7 @@ module.exports = {
     var newString = str.substring(0, str.length - 15);
     var Mee6Regex = new RegExp(ꜱɪɢɴ.Mee6IX, "g");
     var Mee6f = /\/\^\[(.*)+\]\/\g/g.exec(Mee6Regex)[1];
-    const ULTHELP = `
+    const ULTHELP = `*BOT IN BETA*
 🔸ɢɪᴛʜᴜʙ: https://github.com/Krakinz/Mee6
 🔸ᴅɪꜱᴄᴏʀᴅ: https://discord.gg/xcFN6NDHEV
 🔸ᴡʜᴀᴛꜱᴀᴘᴘ: https://chat.whatsapp.com/FmMcEeSqZQw85qAkgUs3f5
