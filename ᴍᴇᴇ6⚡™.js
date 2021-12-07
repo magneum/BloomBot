@@ -348,13 +348,13 @@ Now only group admins can edit this group info`,
             directory: `./ᴛᴇᴍᴘ/`,
             filename: `ppimg.jpg`,
           },
-          function (err) {
+          async function (err) {
             if (err) throw err;
             const weltext =
               Text_Rand_Welcome[
                 Math.floor(Math.random() * Text_Rand_Welcome.length)
               ];
-            return υℓтяσηℓιєηт
+            return await υℓтяσηℓιєηт
               .sendMessage(
                 GroupID,
                 {
@@ -363,13 +363,18 @@ Now only group admins can edit this group info`,
                 MessageType.image,
                 {
                   mimetype: Mimetype.png,
-                  caption: `
-@${MemNum.split(`@`)[0]}
-${weltext}
+                  contextInfo: { mentionedJid: [MemNum] },
+                  caption: `⬡••••••••⬡    𝐌𝐞𝐞𝟔™    ⬡••••••••⬡*
+🤩@${MemNum.split(`@`)[0]} ${weltext}
 
-❣️𝗕𝗜𝗢➛ _${GroupMemBio.status}_
-🎊𝗚𝗥𝗢𝗨𝗣➛ _${GroupMemData.subject}_
-🗄️𝗪𝗲 𝗔𝗿𝗲 𝗡𝗼𝘄➛  _${GroupMemG}_ 𝗠𝗲𝗺𝗯𝗲𝗿𝘀
+⦿================⦿
+|\`\`\`⬘𝕭𝖎𝖔\`\`\`: ${GroupMemBio.status}
+|
+|\`\`\`⬘𝕲𝖗𝖔𝖚𝖕\`\`\`: ${GroupMemData.subject}
+|
+|\`\`\`⬘𝕮𝖔𝖚𝖓𝖙\`\`\`: ${GroupMemG}
+⦿================⦿
+
 ${Fetched.message}`,
                 }
               )
