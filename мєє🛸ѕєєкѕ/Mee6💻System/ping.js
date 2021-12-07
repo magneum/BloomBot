@@ -25,9 +25,7 @@ module.exports = {
 ⚡𝐌𝐞𝐞𝟔™ ⧪ɪ ᴀᴍ ᴍʀ ᴍᴇᴇ6, ʟᴏᴏᴋ ᴀᴛ ᴍᴇ! 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵
 
 *𝐌𝐞𝐞𝟔's Server Response Time Is:*
-🛰️𝐏𝐢𝐧𝐠: _${latensie.toFixed(6)}s_
-
-⬡=======================⬡`,
+🛰️𝐏𝐢𝐧𝐠: _${latensie.toFixed(6)}s_`,
         }
       )
       .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));

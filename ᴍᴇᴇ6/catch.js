@@ -12,18 +12,17 @@ exports.catch = async (error, υℓтяσηℓιєηт, ᴍᴇᴇ6) => {
     MessageType.image,
     {
       mimetype: Mimetype.png,
-      caption: `⚡𝐔𝐥𝐭𝐫𝐨𝐧™⚡ ᴅɪᴅ ɴᴏᴛ ᴡᴏʀᴋ ᴀꜱ ᴇxᴘᴇᴄᴛᴇᴅ❗
+      caption: `*⬡••••••••⬡    𝐌𝐞𝐞𝟔™    ⬡••••••••⬡*
+⚡𝐌𝐞𝐞𝟔™ ⧪ɪ ᴀᴍ ᴍʀ ᴍᴇᴇ6, ʟᴏᴏᴋ ᴀᴛ ᴍᴇ! 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵
 
 ⚠️𝗘𝗿𝗿𝗼𝗿: 
 ➛ ${error}
 
       
-*↱   🐞RΣPӨЯƬ   ↰*
-_🔸ᴡʜᴀᴛꜱᴀᴘᴘ_
-⇀ https://chat.whatsapp.com/FmMcEeSqZQw85qAkgUs3f5
-
-_🔸ᴅɪꜱᴄᴏʀᴅ_
-⇀ https://discord.gg/xcFN6NDHEV`,
+*⬡••••••••⬡    𝐌𝐞𝐞𝟔™    ⬡••••••••⬡*
+⧪➛ 𝗝𝗼𝗶𝗻 𝗦𝘂𝗽𝗽𝗼𝗿𝘁 𝗚𝗿𝗼𝘂𝗽 *↱   🐞RΣPӨЯƬ   ↰*
+🔸ᴡʜᴀᴛꜱᴀᴘᴘ https://chat.whatsapp.com/FmMcEeSqZQw85qAkgUs3f5
+🔸ᴅɪꜱᴄᴏʀᴅ https://discord.gg/xcFN6NDHEV`,
     }
   );
   await υℓтяσηℓιєηт.sendMessage(
@@ -34,18 +33,16 @@ _🔸ᴅɪꜱᴄᴏʀᴅ_
     MessageType.image,
     {
       mimetype: Mimetype.png,
-      caption: `⚡𝐔𝐥𝐭𝐫𝐨𝐧™⚡ ᴅɪᴅ ɴᴏᴛ ᴡᴏʀᴋ ᴀꜱ ᴇxᴘᴇᴄᴛᴇᴅ❗
+      caption: `*⬡••••••••⬡    𝐌𝐞𝐞𝟔™    ⬡••••••••⬡*
+⚡𝐌𝐞𝐞𝟔™ ⧪ɪ ᴀᴍ ᴍʀ ᴍᴇᴇ6, ʟᴏᴏᴋ ᴀᴛ ᴍᴇ! 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵
 
 ⚠️𝗘𝗿𝗿𝗼𝗿: 
 ➛ ${error}
 
-      
-*↱   🐞RΣPӨЯƬ   ↰*
-_🔸ᴡʜᴀᴛꜱᴀᴘᴘ_
-⇀ https://chat.whatsapp.com/FmMcEeSqZQw85qAkgUs3f5
-
-_🔸ᴅɪꜱᴄᴏʀᴅ_
-⇀ https://discord.gg/xcFN6NDHEV`,
+*⬡••••••••⬡    𝐌𝐞𝐞𝟔™    ⬡••••••••⬡*
+⧪➛ 𝗝𝗼𝗶𝗻 𝗦𝘂𝗽𝗽𝗼𝗿𝘁 𝗚𝗿𝗼𝘂𝗽 *↱   🐞RΣPӨЯƬ   ↰*
+🔸ᴡʜᴀᴛꜱᴀᴘᴘ https://chat.whatsapp.com/FmMcEeSqZQw85qAkgUs3f5
+🔸ᴅɪꜱᴄᴏʀᴅ https://discord.gg/xcFN6NDHEV`,
     }
   );
 };

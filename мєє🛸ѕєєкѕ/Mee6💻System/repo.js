@@ -21,23 +21,22 @@ module.exports = {
         MessageType.image,
         {
           mimetype: Mimetype.png,
-          caption: `*⚡𝐌𝐞𝐞𝟔™* | 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 |
-⬡=======================⬡
+          caption: `*⬡••••••••⬡    𝐌𝐞𝐞𝟔™    ⬡••••••••⬡*
+⚡𝐌𝐞𝐞𝟔™ ⧪ɪ ᴀᴍ ᴍʀ ᴍᴇᴇ6, ʟᴏᴏᴋ ᴀᴛ ᴍᴇ! 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵
+
 ⧪➛ 𝗛𝗲𝗿𝗲 𝗜𝘀 𝗠𝗲𝗲𝟲 𝗥𝗲𝗽𝗼𝘀𝗶𝘁𝗼𝗿𝘆 _(Please Read the README)_
 ʟɪɴᴋ: https://github.com/Krakinz/Mee6
 ⬣
 ⬣
 ⬣
-⬡=======================⬡
+*⬡••••••••⬡    𝐌𝐞𝐞𝟔™    ⬡••••••••⬡*
 ⧪➛ 𝗝𝗼𝗶𝗻 𝗦𝘂𝗽𝗽𝗼𝗿𝘁 𝗚𝗿𝗼𝘂𝗽 *↱   🐞RΣPӨЯƬ   ↰*
-_🔸ᴡʜᴀᴛꜱᴀᴘᴘ_
-⇀ https://chat.whatsapp.com/FmMcEeSqZQw85qAkgUs3f5
-_🔸ᴅɪꜱᴄᴏʀᴅ_
-⇀ https://discord.gg/xcFN6NDHEV
+🔸ᴡʜᴀᴛꜱᴀᴘᴘ https://chat.whatsapp.com/FmMcEeSqZQw85qAkgUs3f5
+🔸ᴅɪꜱᴄᴏʀᴅ https://discord.gg/xcFN6NDHEV
 ⬣
 ⬣
 ⬣
-⬡=======================⬡
+*⬡••••••••⬡    𝐌𝐞𝐞𝟔™    ⬡••••••••⬡*
 ⧪➛ ❓𝗪𝗵𝘆 𝗠𝗮𝗱𝗲 𝗠𝗲𝗲𝟲
 🔸 ᴀᴅᴠᴀɴᴄᴇᴅ ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ 80+ ᴄᴏᴍᴍᴀɴᴅꜱ ꜰᴏʀ ʙᴏᴛʜ ᴘʀɪᴠᴀᴛᴇ ᴀɴᴅ ɢʀᴏᴜᴘ-ᴜꜱᴀɢᴇ
 🔸 ᴍᴇᴇ6 is written in JavaScript and is by far the most advance Whatsapp Userbot.
