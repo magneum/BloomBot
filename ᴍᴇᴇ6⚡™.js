@@ -423,7 +423,25 @@ ${Fetched.message}`,
       `tagall`,
     ];
     if (ᴍᴇᴇ6.chatId === "120363025343298860@g.us") {
-      return;
+      return υℓтяσηℓιєηт
+        .sendMessage(
+          ᴍᴇᴇ6.chatId,
+          {
+            url: ꜱɪɢɴ.ERROR,
+          },
+          MessageType.image,
+          {
+            mimetype: Mimetype.png,
+            caption: `*⬡••••••••⬡    𝐌𝐞𝐞𝟔™    ⬡••••••••⬡*
+𝐈 𝐚𝐦 𝐌𝐫𝐌𝐞𝐞𝟔🛸𝐋𝐨𝐨𝐤 𝐀𝐭 𝐌𝐞! 𝗠𝗼𝘀𝘁 𝗔𝗱𝘃𝗮𝗻𝗰𝗲 𝗪𝗵𝗮𝘁𝘀𝗮𝗽𝗽 𝗕𝗼𝘁 ⧪
+
+
+*Please Come In Private To Use That Command!*
+Or Deploy Your Own 𝐌𝐫𝐌𝐞𝐞𝟔🛸
+Type *⬡${Mee6f}repo`,
+          }
+        )
+        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
     }
     if (ᴍᴇᴇ6.isCmd && !ᴍᴇᴇ6.fromMe) {
       if (
