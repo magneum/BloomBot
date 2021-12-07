@@ -20,28 +20,30 @@
 ```
 
 # ⚡ 𝕯𝖊𝖕𝖑𝖔𝖞𝖒𝖊𝖓𝖙
-⇢↱   𝐒𝐭𝐞𝐩 𝟏    ↰⇠
-- ꜰɪʀꜱᴛ ꜰᴏʀᴋ ᴀɴᴅ ꜱᴛᴀʀ ᴛʜᴇ ʀᴇᴘᴏ
+# ================ VISUAL ===================
+- ꜰɪʀꜱᴛ ꜰᴏʀᴋ ᴀɴᴅ ꜱᴛᴀʀ ᴛʜᴇ ʀᴇᴘᴏ (or else auto upgrading won't work)
+- [🛸Deployment-Video](https://github.com/Krakinz/Mee6/tree/KrakinzLab/%E1%B4%8D%E1%B4%87%E1%B4%876/Deployment.avi)
+- [⚡Re-Deployment-Video](https://github.com/Krakinz/Mee6/tree/KrakinzLab/%E1%B4%8D%E1%B4%87%E1%B4%876/Re-Deployment(AUTO).avi)
+
+# ================ TEXT AND LINKS ===================
+- ꜰɪʀꜱᴛ ꜰᴏʀᴋ ᴀɴᴅ ꜱᴛᴀʀ ᴛʜᴇ ʀᴇᴘᴏ (or else auto upgrading won't work)
+- [🛸Deployment-Video](https://github.com/Krakinz/Mee6/tree/KrakinzLab/%E1%B4%8D%E1%B4%87%E1%B4%876/Deployment.avi)
+- [⚡Re-Deployment-Video](https://github.com/Krakinz/Mee6/tree/KrakinzLab/%E1%B4%8D%E1%B4%87%E1%B4%876/Re-Deployment(AUTO).avi)
 - Make Heroku Account If You Don't Have already.
 - Link to [Heroku](https://dashboard.heroku.com/apps)
 - Get Your Heroku-Api Key From [Heroku API Key](https://dashboard.heroku.com/account)
-
-⇢↱   𝗦𝘁𝗲𝗽 𝟮   ↰⇠
 - Get Your Mee6 SessionCode from [![Generic badge](https://img.shields.io/badge/Mee6_Session-blue.svg)](https://replit.com/@Krakinzkon/Mee6)
 - Head Over To [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Krakinz/Mee6.git) 
-
-⇢↱   𝗦𝘁𝗲𝗽 𝟯   ↰⇠
 - Put All The Informations In the Box given in heroku (env vars)
 - Click deploy and wait for deployment to get done (takes 10-15mins)
 - After Deployment is done a new button appears "Manage Apps"
 - Click on it and 𝘌𝘯𝘢𝘣𝘭𝘦 𝘵𝘩𝘦 𝘥𝘺𝘯𝘰 𝘪𝘯 𝘩𝘦𝘳𝘰𝘬𝘶
 - Click on logs in the top right corner of the page
 - If all went right then check your whatsapp for confirmation
-
-⇢↱   𝗦𝘁𝗲𝗽 𝟰   ↰⇠
 - If anything went wrong Please 🐞RΣPӨЯƬ
 🔸[ᴡʜᴀᴛꜱᴀᴘᴘ](https://chat.whatsapp.com/FmMcEeSqZQw85qAkgUs3f5)
 🔸[ᴅɪꜱᴄᴏʀᴅ](https://discord.gg/xcFN6NDHEV)
+
 
 
 
