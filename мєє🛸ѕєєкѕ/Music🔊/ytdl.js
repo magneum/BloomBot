@@ -1,7 +1,7 @@
-// ===============================================================================
-// 🎮ᴍᴇᴇ6™ 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..
-// ===============================================================================
-const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
+const {
+  MessageType,
+  Mimetype
+} = require(`@adiwajshing/baileys`);
 const fetchVideoInfo = require("youtube-info");
 const ℓιєηт = require("../../ᴍᴇᴇ6/catch");
 const getVideoId = require("get-video-id");
@@ -12,62 +12,25 @@ const yts = require(`yt-search`);
 const fs = require(`fs`);
 const Regex = {
   VideoID: /^[a-zA-Z0-9-_]{11}$/,
-  VideoURL:
-    /^((?:https?:)?\/\/)?((?:www|m)\.)?((?:youtube\.com|youtu.be))(\/(?:[\w\-]+\?v=|embed\/|v\/)?)([\w\-]+)(\S+)?$/,
+  VideoURL: /^((?:https?:)?\/\/)?((?:www|m)\.)?((?:youtube\.com|youtu.be))(\/(?:[\w\-]+\?v=|embed\/|v\/)?)([\w\-]+)(\S+)?$/,
   PlaylistID: /(PL|UU|LL|RD)[a-zA-Z0-9-_]{16,41}/,
-  PlaylistURL:
-    /https?:\/\/(www.)?youtube.com\/playlist\?list=((PL|UU|LL|RD)[a-zA-Z0-9-_]{16,41})/,
-  SCTrack:
-    /^https?:\/\/(soundcloud\.com|snd\.sc)\/([A-Za-z0-9_-]+)\/([A-Za-z0-9_-]+)\/?$/,
-  SCPlaylist:
-    /^https?:\/\/(soundcloud\.com|snd\.sc)\/([A-Za-z0-9_-]+)\/sets\/([A-Za-z0-9_-]+)\/?$/,
+  PlaylistURL: /https?:\/\/(www.)?youtube.com\/playlist\?list=((PL|UU|LL|RD)[a-zA-Z0-9-_]{16,41})/,
+  SCTrack: /^https?:\/\/(soundcloud\.com|snd\.sc)\/([A-Za-z0-9_-]+)\/([A-Za-z0-9_-]+)\/?$/,
+  SCPlaylist: /^https?:\/\/(soundcloud\.com|snd\.sc)\/([A-Za-z0-9_-]+)\/sets\/([A-Za-z0-9_-]+)\/?$/,
   Spotify: /^(spotify:|https:\/\/[a-z]+\.spotify\.com\/)/,
 };
-var Mee6Regex = new RegExp(ꜱɪɢɴ.Mee6IX, "g");
-var Mee6f = /\/\^\[(.*)+\]\/\g/g.exec(Mee6Regex)[1];
-// ⬡••••••••⬡    𝐌𝐞𝐞𝟔™    ⬡••••••••⬡⬡••••••••⬡    𝐌𝐞𝐞𝟔™    ⬡••••••••⬡
 module.exports = {
   name: `ytdl`,
   commandType: "Music🔊",
   description: `Use this command to download audio of your choice either by specifying a YouTube link or the name of the song.`,
   async handle(υℓтяσηℓιєηт, chat, ᴍᴇᴇ6, Arc) {
-    var str = ᴍᴇᴇ6.sender;
-    var newString = str.substring(0, str.length - 15);
-    //     if (ᴍᴇᴇ6.chatId === "120363025343298860@g.us") {
-    //       return await υℓтяσηℓιєηт
-    //         .sendMessage(
-    //           ᴍᴇᴇ6.chatId,
-    //           {
-    //             url: ꜱɪɢɴ.ERROR,
-    //           },
-    //           MessageType.image,
-    //           {
-    //             mimetype: Mimetype.png,
-    //             contextInfo: { mentionedJid: [ᴍᴇᴇ6.sender] },
-    //             caption: `*⬡••••••••⬡    𝐌𝐞𝐞𝟔™    ⬡••••••••⬡*
-    // 𝐈 𝐚𝐦 𝐌𝐫𝐌𝐞𝐞𝟔🛸𝐋𝐨𝐨𝐤 𝐀𝐭 𝐌𝐞! 𝗠𝗼𝘀𝘁 𝗔𝗱𝘃𝗮𝗻𝗰𝗲 𝗪𝗵𝗮𝘁𝘀𝗮𝗽𝗽 𝗕𝗼𝘁 ⧪
-
-    // *❗Dҽαɾ @${newString}, ᴀʟʟ ᴍᴇᴇ6 ʙᴏᴛꜱ ᴀʀᴇ ᴅɪꜱᴀʙʟᴇᴅ ɪɴ ᴛʜɪꜱ ɢʀᴏᴜᴘ*
-    // 👇🏽‍𝗔𝗹𝗹𝗼𝘄𝗲𝗱-𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀
-    //   *⬡${Mee6f}uptime*
-    //   *⬡${Mee6f}ping*
-    //   *⬡${Mee6f}help*
-    //   *⬡${Mee6f}alive*
-    //   *⬡${Mee6f}update*
-    // *⬡••••••••⬡    𝐌𝐞𝐞𝟔™    ⬡••••••••⬡*`,
-    //           }
-    //         )
-    //         .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
-    //     }
     if (Arc.length === 0) {
       return await υℓтяσηℓιєηт
         .sendMessage(
-          ᴍᴇᴇ6.chatId,
-          {
+          ᴍᴇᴇ6.chatId, {
             url: ꜱɪɢɴ.ARC,
           },
-          MessageType.image,
-          {
+          MessageType.image, {
             mimetype: Mimetype.jpeg,
             caption: `*⚠️Seems like someone forgot to give URL!*
 
@@ -85,12 +48,10 @@ You Can Get URL by using ${ꜱɪɢɴ.Mee6IX}yts <song-name>`,
     if (!Regex.VideoURL.test(Arc[0])) {
       return await υℓтяσηℓιєηт
         .sendMessage(
-          ᴍᴇᴇ6.chatId,
-          {
+          ᴍᴇᴇ6.chatId, {
             url: ꜱɪɢɴ.ARC,
           },
-          MessageType.image,
-          {
+          MessageType.image, {
             mimetype: Mimetype.jpeg,
             caption: `*⚠️Seems like ${Arc[0]} is not YouTube Link or not YouTube Single Video Link!*
 
@@ -165,15 +126,15 @@ _📥𝘋𝘰𝘸𝘯𝘭𝘰𝘢𝘥 𝘛𝘪𝘮𝘦 𝘥𝘦𝘱𝘦𝘯𝘥�
 🛸—••÷ 𝗦𝗲𝗿𝘃𝗶𝗰𝗲 ÷••—
 ⪢ ʏᴏᴜᴛᴜʙᴇ⭕ʏᴏᴜᴛᴜʙᴇ ᴍᴜꜱɪᴄ`;
       });
-      const { id } = getVideoId(Arc.join(` `));
+      const {
+        id
+      } = getVideoId(Arc.join(` `));
       await υℓтяσηℓιєηт
         .sendMessage(
-          ᴍᴇᴇ6.chatId,
-          {
+          ᴍᴇᴇ6.chatId, {
             url: "http://img.youtube.com/vi/" + id + "/0.jpg",
           },
-          MessageType.image,
-          {
+          MessageType.image, {
             mimetype: Mimetype.png,
             caption: Fetched,
           }
@@ -193,8 +154,7 @@ _📥𝘋𝘰𝘸𝘯𝘭𝘰𝘢𝘥 𝘛𝘪𝘮𝘦 𝘥𝘦𝘱𝘦𝘯𝘥�
             .sendMessage(
               ᴍᴇᴇ6.chatId,
               fs.readFileSync(`./ᴛᴇᴍᴘ/${chat.key.id}.mp3`),
-              MessageType.audio,
-              {
+              MessageType.audio, {
                 mimetype: Mimetype.mp4Audio,
               }
             )

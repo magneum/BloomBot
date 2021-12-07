@@ -1,18 +1,25 @@
-// ===============================================================================
-// 🎮ᴍᴇᴇ6™ ᴀᴅᴠᴀɴᴄᴇᴅ ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ 80+ ᴄᴏᴍᴍᴀɴᴅꜱ ꜰᴏʀ ʙᴏᴛʜ ᴘʀɪᴠᴀᴛᴇ ᴀɴᴅ ɢʀᴏᴜᴘ-ᴜꜱᴀɢᴇ
-// ===============================================================================
-const { registerFont, createCanvas, loadImage } = require(`canvas`);
+//                            ⬡••••••••••••••••⬡                𝐌𝐞𝐞𝟔™                ⬡••••••••••••••••⬡
+//                                      𝐈 𝐚𝐦 𝐌𝐫𝐌𝐞𝐞𝟔🛸𝐋𝐨𝐨𝐤 𝐀𝐭 𝐌𝐞!  𝗠𝗼𝘀𝘁 𝗔𝗱𝘃𝗮𝗻𝗰𝗲 𝗪𝗵𝗮𝘁𝘀𝗮𝗽𝗽 𝗕𝗼𝘁 ⧪
+//                            ⬡••••••••••••••••⬡                𝐌𝐞𝐞𝟔™                ⬡••••••••••••••••⬡
+const {
+  registerFont,
+  createCanvas,
+  loadImage
+} = require(`canvas`);
 registerFont(`./ᴍᴇᴇ6/Honeycomb-Round.otf`, {
   family: `Honeycomb`,
 });
 registerFont(`./ᴍᴇᴇ6/LobsterTwo-Bold.ttf`, {
   family: `Lobster`,
 });
-const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
+const {
+  MessageType,
+  Mimetype
+} = require(`@adiwajshing/baileys`);
 const ᴍᴇᴇ6ֆʏռօք = require(`./ᴍᴇᴇ6/ᴍᴇᴇ6ᴢᴇɴ`);
-const ℓιєηт = require(`./ᴍᴇᴇ6/catch`);
+const ℓιєηт = require("./ᴍᴇᴇ6/catch");
 const vers = require(`./package.json`);
-const υℓтяσηℓιєηтult = require(`./ᴍᴇᴇ6/ɠɠʊ`);
+const clientult = require(`./ᴍᴇᴇ6/ɠɠʊ`);
 const gitPull = require(`./ᴍᴇᴇ6/ᴍᴇᴇ6ɢɪᴛ`);
 const ɠɠᴍᴇᴇ6 = require(`./ᴍᴇᴇ6/ɠɠᴍᴇᴇ6`);
 const ᴍᴇᴇ6Sudo = [`block`, `unblock`];
@@ -62,115 +69,75 @@ var Text__Bye = [
   `*ʏᴏᴜ ᴋɴᴏᴡ ᴡᴇ'ʀᴇ ɢᴏɴɴᴀ ᴍɪꜱꜱ ʏᴏᴜ . ʀɪɢʜᴛ? ʀɪɢʜᴛ? ʀɪɢʜᴛ?*`,
   `*ᴄᴏɴɢʀᴀᴛᴜʟᴀᴛɪᴏɴꜱ, ! ʏᴏᴜ'ʀᴇ ᴏꜰꜰɪᴄɪᴀʟʟʏ ꜰʀᴇᴇ ᴏꜰ ᴛʜɪꜱ ᴍᴇꜱꜱ.*`,
 ];
-// ===============================================================================
-// 🎮ᴍᴇᴇ6™ ᴀᴅᴠᴀɴᴄᴇᴅ ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ 80+ ᴄᴏᴍᴍᴀɴᴅꜱ ꜰᴏʀ ʙᴏᴛʜ ᴘʀɪᴠᴀᴛᴇ ᴀɴᴅ ɢʀᴏᴜᴘ-ᴜꜱᴀɢᴇ
-// ===============================================================================
+//                            ⬡••••••••••••••••⬡                𝐌𝐞𝐞𝟔™                ⬡••••••••••••••••⬡
+//                                      𝐈 𝐚𝐦 𝐌𝐫𝐌𝐞𝐞𝟔🛸𝐋𝐨𝐨𝐤 𝐀𝐭 𝐌𝐞!  𝗠𝗼𝘀𝘁 𝗔𝗱𝘃𝗮𝗻𝗰𝗲 𝗪𝗵𝗮𝘁𝘀𝗮𝗽𝗽 𝗕𝗼𝘁 ⧪
+//                            ⬡••••••••••••••••⬡                𝐌𝐞𝐞𝟔™                ⬡••••••••••••••••⬡
 var υℓтяσηℓιєηт = ᴍᴇᴇ6ֆʏռօք.WhatsApp;
 async function ᴍᴇᴇ6s() {
+  υℓтяσηℓιєηт.logger.level = "error";
   var Mee6Sitrep = new Map();
   if (ꜱɪɢɴ.HEROKU_API === `Null` || ꜱɪɢɴ.HEROKU_BOT_NAME === `Null`) {
-    console.log(
-      Kolor.yellow(
-        `❌⬰ seems like heroku vars are invalid.\nPlease check and retry.`
-      )
-    );
+    console.log(Kolor.yellow(`❌⬰ seems like heroku vars are invalid.\nPlease check and retry.`));
     process.exit(0);
   }
-  console.log(
-    Kolor.yellow(`=================😈    |  ᴍᴇᴇ6  |    😈=================`)
-  );
   console.log(Kolor.yellow(`[INFO] Checking for updates...`));
   await gitPull();
   try {
     var session = ᴍᴇᴇ6ֆʏռօք.Mee6reignite(ꜱɪɢɴ.Mee6);
     υℓтяσηℓιєηт.loadAuthInfo(session);
   } catch (cᴇʀʀᴏʀ) {
-    if (
-      cᴇʀʀᴏʀ instanceof TypeError ||
-      cᴇʀʀᴏʀ.message === `given authInfo is null` ||
-      cᴇʀʀᴏʀ instanceof SyntaxError
-    ) {
-      console.log(
-        Kolor.red(`Incorrect Session String. Please authenticate again!`)
-      );
+    if (cᴇʀʀᴏʀ instanceof TypeError || cᴇʀʀᴏʀ.message === `given authInfo is null` || cᴇʀʀᴏʀ instanceof SyntaxError) {
+      console.log(Kolor.red(`Incorrect Session String. Please authenticate again!`));
       process.exit(0);
     } else {
       console.log(Kolor.red(`SOMETHING WENT WRONG.\n`));
       process.exit(0);
     }
   }
-  // ===============================================================================
-  // 🎮ᴍᴇᴇ6™ ᴀᴅᴠᴀɴᴄᴇᴅ ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ 80+ ᴄᴏᴍᴍᴀɴᴅꜱ ꜰᴏʀ ʙᴏᴛʜ ᴘʀɪᴠᴀᴛᴇ ᴀɴᴅ ɢʀᴏᴜᴘ-ᴜꜱᴀɢᴇ
-  // ===============================================================================
+  //                            ⬡••••••••••••••••⬡                𝐌𝐞𝐞𝟔™                ⬡••••••••••••••••⬡
+  //                                      𝐈 𝐚𝐦 𝐌𝐫𝐌𝐞𝐞𝟔🛸𝐋𝐨𝐨𝐤 𝐀𝐭 𝐌𝐞!  𝗠𝗼𝘀𝘁 𝗔𝗱𝘃𝗮𝗻𝗰𝗲 𝗪𝗵𝗮𝘁𝘀𝗮𝗽𝗽 𝗕𝗼𝘁 ⧪
+  //                            ⬡••••••••••••••••⬡                𝐌𝐞𝐞𝟔™                ⬡••••••••••••••••⬡
   υℓтяσηℓιєηт.on(`connecting`, async () => {
-    console.log(
-      Kolor.yellow(`=================😈    |  ᴍᴇᴇ6  |    😈=================`)
-    );
     console.log(Kolor.yellow(`💡⬰  𝘊𝘰𝘯𝘯𝘦𝘤𝘵𝘪𝘯𝘨 𝘵𝘰 𝘞𝘩𝘢𝘵𝘴𝘈𝘱𝘱...🤖`));
   });
-  // ===============================================================================
-  // 🎮ᴍᴇᴇ6™ ᴀᴅᴠᴀɴᴄᴇᴅ ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ 80+ ᴄᴏᴍᴍᴀɴᴅꜱ ꜰᴏʀ ʙᴏᴛʜ ᴘʀɪᴠᴀᴛᴇ ᴀɴᴅ ɢʀᴏᴜᴘ-ᴜꜱᴀɢᴇ
-  // ===============================================================================
+  //                            ⬡••••••••••••••••⬡                𝐌𝐞𝐞𝟔™                ⬡••••••••••••••••⬡
+  //                                      𝐈 𝐚𝐦 𝐌𝐫𝐌𝐞𝐞𝟔🛸𝐋𝐨𝐨𝐤 𝐀𝐭 𝐌𝐞!  𝗠𝗼𝘀𝘁 𝗔𝗱𝘃𝗮𝗻𝗰𝗲 𝗪𝗵𝗮𝘁𝘀𝗮𝗽𝗽 𝗕𝗼𝘁 ⧪
+  //                            ⬡••••••••••••••••⬡                𝐌𝐞𝐞𝟔™                ⬡••••••••••••••••⬡
   υℓтяσηℓιєηт.on(`open`, async () => {
-    console.log(
-      Kolor.yellow(`=================😈    |  ᴍᴇᴇ6  |    😈=================`)
-    );
     console.log(Kolor.yellow(`💡⬰  𝘊𝘰𝘯𝘯𝘦𝘤𝘵𝘪𝘯𝘨 𝘵𝘰 𝘋𝘢𝘵𝘢𝘣𝘢𝘴𝘦...✅`));
     try {
       await ᴍᴇᴇ6sql.authenticate();
     } catch (error) {
       console.error(`❌⬰ Unable to connect to the database:`, error);
     }
-    console.log(
-      Kolor.yellow(`=================😈    |  ᴍᴇᴇ6  |    😈=================`)
-    );
     console.log(Kolor.yellow(`💡⬰  𝘚𝘺𝘯𝘤𝘪𝘯𝘨 𝘋𝘢𝘵𝘢 𝘸𝘪𝘵𝘩 𝘏𝘰𝘴𝘵...✅`));
     await ᴍᴇᴇ6sql.sync();
     console.clear();
-    console.log(
-      Kolor.yellow(
-        `\n\n\n\n\n\n=================😈    |  ᴍᴇᴇ6  |    😈=================`
-      )
-    );
     console.log(Kolor.yellow(`💡⬰  𝘐𝘯𝘴𝘵𝘢𝘭𝘭𝘪𝘯𝘨 𝘗𝘭𝘶𝘨𝘪𝘯𝘴...✅`));
     const Folders = fs.readdirSync(`./мєє🛸ѕєєкѕ`);
     for (const folder of Folders) {
-      const commandFiles = fs
-        .readdirSync(`./мєє🛸ѕєєкѕ/${folder}`)
-        .filter((file) => file.endsWith(`.js`));
+      const commandFiles = fs.readdirSync(`./мєє🛸ѕєєкѕ/${folder}`).filter((file) => file.endsWith(`.js`));
       for (const file of commandFiles) {
         const command = require(`./мєє🛸ѕєєкѕ/${folder}/${file}`);
         Mee6Sitrep.set(command.name, command);
-        console.log(
-          Kolor.yellow(`💡⬰  `),
-          Kolor.green(command.name.toUpperCase())
-        );
+        console.log(Kolor.yellow(`💡⬰  `), Kolor.green(command.name.toUpperCase()));
       }
     }
-    console.log(
-      Kolor.green(
-        `\n\n\n=================😈    |  ᴍᴇᴇ6  |    😈=================`
-      ),
+    console.log(Kolor.green(`=================😈    |  ᴍᴇᴇ6  |    😈=================`),
       Kolor.blue(`
 ███    ███ ███████ ███████  ███████  
 ████  ████ ██      ██       ██       
 ██ ████ ██ █████   █████    ███████  
 ██  ██  ██ ██      ██       ██   ██ 
-██      ██ ███████ ███████  ███████     
-`),
-      Kolor.green(`=================😈    |  ᴍᴇᴇ6  |    😈=================`)
-    );
-    await υℓтяσηℓιєηт.sendMessage(
-      υℓтяσηℓιєηт.user.jid,
-      {
-        url: `https://i.postimg.cc/d0yKmR0t/Mee6.png`,
+██      ██ ███████ ███████  ███████`),
+      Kolor.green(`=================😈    |  ᴍᴇᴇ6  |    😈=================`));
+    await υℓтяσηℓιєηт.sendMessage(υℓтяσηℓιєηт.user.jid, {
+        url: `https://i.postimg.cc/d0yKmR0t/Mee6.png`
       },
-      MessageType.image,
-      {
+      MessageType.image, {
         mimetype: Mimetype.png,
         caption: `*⬡••••••••⬡    𝐌𝐞𝐞𝟔™    ⬡••••••••⬡*
 𝐈 𝐚𝐦 𝐌𝐫𝐌𝐞𝐞𝟔🛸𝐋𝐨𝐨𝐤 𝐀𝐭 𝐌𝐞! 𝗠𝗼𝘀𝘁 𝗔𝗱𝘃𝗮𝗻𝗰𝗲 𝗪𝗵𝗮𝘁𝘀𝗮𝗽𝗽 𝗕𝗼𝘁 ⧪
-
 
 
 ⚙️𝗩𝗲𝗿𝘀𝗶𝗼𝗻: 
@@ -191,74 +158,35 @@ async function ᴍᴇᴇ6s() {
       }
     );
   });
-  // ===============================================================================
-  // 🎮ᴍᴇᴇ6™ ᴀᴅᴠᴀɴᴄᴇᴅ ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ 80+ ᴄᴏᴍᴍᴀɴᴅꜱ ꜰᴏʀ ʙᴏᴛʜ ᴘʀɪᴠᴀᴛᴇ ᴀɴᴅ ɢʀᴏᴜᴘ-ᴜꜱᴀɢᴇ
-  // ===============================================================================
+  //                            ⬡••••••••••••••••⬡                𝐌𝐞𝐞𝟔™                ⬡••••••••••••••••⬡
+  //                                      𝐈 𝐚𝐦 𝐌𝐫𝐌𝐞𝐞𝟔🛸𝐋𝐨𝐨𝐤 𝐀𝐭 𝐌𝐞!  𝗠𝗼𝘀𝘁 𝗔𝗱𝘃𝗮𝗻𝗰𝗲 𝗪𝗵𝗮𝘁𝘀𝗮𝗽𝗽 𝗕𝗼𝘁 ⧪
+  //                            ⬡••••••••••••••••⬡                𝐌𝐞𝐞𝟔™                ⬡••••••••••••••••⬡
   await υℓтяσηℓιєηт.connect();
-  υℓтяσηℓιєηт.on("message-delete", async (update) => {
-    update.message =
-      Object.keys(update.message)[0] === "ephemeralMessage"
-        ? update.message.ephemeralMessage.message
-        : update.message;
-    const type = Object.keys(update.message)[0];
-    υℓтяσηℓιєηт.sendMessage(
-      update.key.remoteJid,
-      `\`\`\`「 𝗔𝗡𝗧𝗜 𝗗𝗘𝗟𝗘𝗧𝗘 」\`\`\`
-•> Name : @${update.participant.split("@")[0]}
-•> Type : ${type}`,
-      MessageType.text,
-      {
-        quoted: update.message,
-        contextInfo: { mentionedJid: [update.participant] },
-      }
-    );
-
-    υℓтяσηℓιєηт.copyNForward(update.key.remoteJid, update.message);
-  });
-  // ===============================================================================
-  // 🎮ᴍᴇᴇ6™ ᴀᴅᴠᴀɴᴄᴇᴅ ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ 80+ ᴄᴏᴍᴍᴀɴᴅꜱ ꜰᴏʀ ʙᴏᴛʜ ᴘʀɪᴠᴀᴛᴇ ᴀɴᴅ ɢʀᴏᴜᴘ-ᴜꜱᴀɢᴇ
-  // ===============================================================================
   υℓтяσηℓιєηт.on(`group-update`, async (update) => {
     groupupdateID = await υℓтяσηℓιєηт.groupMetadata(update.jid);
     if (update.announce == `false`) {
-      υℓтяσηℓιєηт
-        .sendMessage(
-          groupupdateID.id,
-          `*⬡••••••••⬡    𝐌𝐞𝐞𝟔™    ⬡••••••••⬡*
+      υℓтяσηℓιєηт.sendMessage(groupupdateID.id,
+        `*⬡••••••••⬡    𝐌𝐞𝐞𝟔™    ⬡••••••••⬡*
 𝐈 𝐚𝐦 𝐌𝐫𝐌𝐞𝐞𝟔🛸𝐋𝐨𝐨𝐤 𝐀𝐭 𝐌𝐞! 𝗠𝗼𝘀𝘁 𝗔𝗱𝘃𝗮𝗻𝗰𝗲 𝗪𝗵𝗮𝘁𝘀𝗮𝗽𝗽 𝗕𝗼𝘁 ⧪
-
-
 
 [ Group: ${groupupdateID.subject} Opened ] 
 Group has been opened by admin
 Now all members can send messages`,
-          MessageType.text
-        )
-        .catch((error) => console.log(Kolor.redBright(error)));
+        MessageType.text).catch((error) => console.log(Kolor.redBright(error)));
     } else if (update.announce == `true`) {
-      υℓтяσηℓιєηт
-        .sendMessage(
-          groupupdateID.id,
-          `*⬡••••••••⬡    𝐌𝐞𝐞𝟔™    ⬡••••••••⬡*
+      υℓтяσηℓιєηт.sendMessage(groupupdateID.id,
+        `*⬡••••••••⬡    𝐌𝐞𝐞𝟔™    ⬡••••••••⬡*
 𝐈 𝐚𝐦 𝐌𝐫𝐌𝐞𝐞𝟔🛸𝐋𝐨𝐨𝐤 𝐀𝐭 𝐌𝐞! 𝗠𝗼𝘀𝘁 𝗔𝗱𝘃𝗮𝗻𝗰𝗲 𝗪𝗵𝗮𝘁𝘀𝗮𝗽𝗽 𝗕𝗼𝘁 ⧪
-
-
 
 [ Group: ${groupupdateID.subject} Closed ] 
 Group has been closed by admin
 Now only admin can send messages`,
-          MessageType.text
-        )
-        .catch((error) => console.log(Kolor.redBright(error)));
+        MessageType.text).catch((error) => console.log(Kolor.redBright(error)));
     } else if (!update.desc == ``) {
       tag = update.descOwner.split(`@`)[0] + `@s.whatsapp.net`;
-      υℓтяσηℓιєηт
-        .sendMessage(
-          groupupdateID.id,
-          `*⬡••••••••⬡    𝐌𝐞𝐞𝟔™    ⬡••••••••⬡*
+      υℓтяσηℓιєηт.sendMessage(groupupdateID.id,
+        `*⬡••••••••⬡    𝐌𝐞𝐞𝟔™    ⬡••••••••⬡*
 𝐈 𝐚𝐦 𝐌𝐫𝐌𝐞𝐞𝟔🛸𝐋𝐨𝐨𝐤 𝐀𝐭 𝐌𝐞! 𝗠𝗼𝘀𝘁 𝗔𝗱𝘃𝗮𝗻𝗰𝗲 𝗪𝗵𝗮𝘁𝘀𝗮𝗽𝗽 𝗕𝗼𝘁 ⧪
-
-
 
 [ Group: ${groupupdateID.subject} Description Change ] 
 Group description has been changed by:
@@ -266,67 +194,41 @@ Admin @${update.descOwner.split(`@`)[0]}
 
 • New Description: 
 ${update.desc}`,
-          MessageType.text,
-          {
-            contextInfo: { mentionedJid: [tag] },
-          }
-        )
-        .catch((error) => console.log(Kolor.redBright(error)));
+        MessageType.text, {
+          contextInfo: {
+            mentionedJid: [tag]
+          },
+        }).catch((error) => console.log(Kolor.redBright(error)));
     } else if (update.restrict == `false`) {
-      υℓтяσηℓιєηт
-        .sendMessage(
-          groupupdateID.id,
-          `*⬡••••••••⬡    𝐌𝐞𝐞𝟔™    ⬡••••••••⬡*
+      υℓтяσηℓιєηт.sendMessage(groupupdateID.id,
+        `*⬡••••••••⬡    𝐌𝐞𝐞𝟔™    ⬡••••••••⬡*
 𝐈 𝐚𝐦 𝐌𝐫𝐌𝐞𝐞𝟔🛸𝐋𝐨𝐨𝐤 𝐀𝐭 𝐌𝐞! 𝗠𝗼𝘀𝘁 𝗔𝗱𝘃𝗮𝗻𝗰𝗲 𝗪𝗵𝗮𝘁𝘀𝗮𝗽𝗽 𝗕𝗼𝘁 ⧪
 
 [ Group: ${groupupdateID.subject} 𝗦𝗲𝘁𝘁𝗶𝗻𝗴 𝗖h𝗮𝗻𝗴𝗲 ]
 Edit Group info has been opened for members
 Now all members can edit this group info`,
-          MessageType.text,
-          {}
-        )
-        .catch((error) => console.log(Kolor.redBright(error)));
+        MessageType.text).catch((error) => console.log(Kolor.redBright(error)));
     } else if (update.restrict == `true`) {
-      υℓтяσηℓιєηт
-        .sendMessage(
-          groupupdateID.id,
-          `*⬡••••••••⬡    𝐌𝐞𝐞𝟔™    ⬡••••••••⬡*
+      υℓтяσηℓιєηт.sendMessage(groupupdateID.id,
+        `*⬡••••••••⬡    𝐌𝐞𝐞𝟔™    ⬡••••••••⬡*
 𝐈 𝐚𝐦 𝐌𝐫𝐌𝐞𝐞𝟔🛸𝐋𝐨𝐨𝐤 𝐀𝐭 𝐌𝐞! 𝗠𝗼𝘀𝘁 𝗔𝗱𝘃𝗮𝗻𝗰𝗲 𝗪𝗵𝗮𝘁𝘀𝗮𝗽𝗽 𝗕𝗼𝘁 ⧪
-
-
 
 [ Group: ${groupupdateID.subject} 𝗦𝗲𝘁𝘁𝗶𝗻𝗴 𝗖𝗵𝗮𝗻𝗴𝗲 ]
 Edit Group info has been closed for members
 Now only group admins can edit this group info`,
-          MessageType.text,
-          {}
-        )
-        .catch((error) => console.log(Kolor.redBright(error)));
+        MessageType.text).catch((error) => console.log(Kolor.redBright(error)));
     }
   });
-  // ===============================================================================
-  // 🎮ᴍᴇᴇ6™ ᴀᴅᴠᴀɴᴄᴇᴅ ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ 80+ ᴄᴏᴍᴍᴀɴᴅꜱ ꜰᴏʀ ʙᴏᴛʜ ᴘʀɪᴠᴀᴛᴇ ᴀɴᴅ ɢʀᴏᴜᴘ-ᴜꜱᴀɢᴇ
-  // ===============================================================================
+  //                            ⬡••••••••••••••••⬡                𝐌𝐞𝐞𝟔™                ⬡••••••••••••••••⬡
+  //                                      𝐈 𝐚𝐦 𝐌𝐫𝐌𝐞𝐞𝟔🛸𝐋𝐨𝐨𝐤 𝐀𝐭 𝐌𝐞!  𝗠𝗼𝘀𝘁 𝗔𝗱𝘃𝗮𝗻𝗰𝗲 𝗪𝗵𝗮𝘁𝘀𝗮𝗽𝗽 𝗕𝗼𝘁 ⧪
+  //                            ⬡••••••••••••••••⬡                𝐌𝐞𝐞𝟔™                ⬡••••••••••••••••⬡
   υℓтяσηℓιєηт.on(`group-participants-update`, async (update) => {
     const MemNum = update.participants[0];
-    if (update.action == `add` && MemNum.includes(υℓтяσηℓιєηт.user.jid)) {
-      υℓтяσηℓιєηт.sendMessage(
-        update.jid,
-        `Hello everyone, ⚡𝐌𝐞𝐞𝟔™ ⧪ɪ ᴀᴍ ᴍʀ ᴍᴇᴇ6, ʟᴏᴏᴋ ᴀᴛ ᴍᴇ! 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵, ready to help you here ㋛︎`,
-        `conversation`
-      );
-    }
     const GroupMemData = await υℓтяσηℓιєηт.groupMetadata(update.jid);
     const GroupMemG = GroupMemData.participants.length;
-    const GroupMemBio = await υℓтяσηℓιєηт.getStatus(
-      update.participants[0],
-      MessageType.text
-    );
-    console.log(
-      `=================😈    |  ɢʀᴏᴜᴘ ᴘᴀʀᴛɪᴄɪᴘᴀɴᴛ ᴜᴘᴅᴀᴛᴇ  |    😈=================`
-    );
+    const GroupMemBio = await υℓтяσηℓιєηт.getStatus(update.participants[0], MessageType.text);
+    console.log(`=================😈    |  ɢʀᴏᴜᴘ ᴘᴀʀᴛɪᴄɪᴘᴀɴᴛ ᴜᴘᴅᴀᴛᴇ  |    😈=================`);
     var GroupID = update.jid;
-
     try {
       if (update.action === `add`) {
         var enable = await ɠɠᴍᴇᴇ6.checkSettings(GroupID, `setwelcome`);
@@ -343,42 +245,32 @@ Now only group admins can edit this group info`,
           ppimg = `https://i.postimg.cc/bJmWSkFL/depositphotos-39258143-stock-illustration-businessman-avatar-profile-picture.jpg`;
         }
         download(
-          ppimg,
-          {
+          ppimg, {
             directory: `./ᴛᴇᴍᴘ/`,
             filename: `ppimg.jpg`,
           },
           async function (err) {
             if (err) throw err;
-            const weltext =
-              Text_Rand_Welcome[
-                Math.floor(Math.random() * Text_Rand_Welcome.length)
-              ];
-            return await υℓтяσηℓιєηт
-              .sendMessage(
-                GroupID,
-                {
-                  url: `./ᴛᴇᴍᴘ/ppimg.jpg`,
+            const weltext = Text_Rand_Welcome[Math.floor(Math.random() * Text_Rand_Welcome.length)];
+            return await υℓтяσηℓιєηт.sendMessage(GroupID, {
+                url: `./ᴛᴇᴍᴘ/ppimg.jpg`,
+              },
+              MessageType.image, {
+                mimetype: Mimetype.png,
+                contextInfo: {
+                  mentionedJid: [MemNum]
                 },
-                MessageType.image,
-                {
-                  mimetype: Mimetype.png,
-                  contextInfo: { mentionedJid: [MemNum] },
-                  caption: `⬡••••••••⬡    𝐌𝐞𝐞𝟔™    ⬡••••••••⬡*
+                caption: `⬡••••••••⬡    𝐌𝐞𝐞𝟔™    ⬡••••••••⬡*
 🤩@${MemNum.split(`@`)[0]} ${weltext}
 
 ⦿================⦿
-|\`\`\`⬘𝕭𝖎𝖔\`\`\`: ${GroupMemBio.status}
-|
-|\`\`\`⬘𝕲𝖗𝖔𝖚𝖕\`\`\`: ${GroupMemData.subject}
-|
-|\`\`\`⬘𝕮𝖔𝖚𝖓𝖙\`\`\`: ${GroupMemG}
+\`\`\`⬘𝕭𝖎𝖔\`\`\`: ${GroupMemBio.status}
+\`\`\`⬘𝕲𝖗𝖔𝖚𝖕\`\`\`: ${GroupMemData.subject}
+\`\`\`⬘𝕮𝖔𝖚𝖓𝖙\`\`\`: ${GroupMemG}
 ⦿================⦿
 
 ${Fetched.message}`,
-                }
-              )
-              .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+              }).catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
           }
         );
         return;
@@ -393,9 +285,9 @@ ${Fetched.message}`,
       console.log(cᴇʀʀᴏʀ);
     }
   });
-  // ===============================================================================
-  // 🎮ᴍᴇᴇ6™ ᴀᴅᴠᴀɴᴄᴇᴅ ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ 80+ ᴄᴏᴍᴍᴀɴᴅꜱ ꜰᴏʀ ʙᴏᴛʜ ᴘʀɪᴠᴀᴛᴇ ᴀɴᴅ ɢʀᴏᴜᴘ-ᴜꜱᴀɢᴇ
-  // ===============================================================================
+  //                            ⬡••••••••••••••••⬡                𝐌𝐞𝐞𝟔™                ⬡••••••••••••••••⬡
+  //                                      𝐈 𝐚𝐦 𝐌𝐫𝐌𝐞𝐞𝟔🛸𝐋𝐨𝐨𝐤 𝐀𝐭 𝐌𝐞!  𝗠𝗼𝘀𝘁 𝗔𝗱𝘃𝗮𝗻𝗰𝗲 𝗪𝗵𝗮𝘁𝘀𝗮𝗽𝗽 𝗕𝗼𝘁 ⧪
+  //                            ⬡••••••••••••••••⬡                𝐌𝐞𝐞𝟔™                ⬡••••••••••••••••⬡
   υℓтяσηℓιєηт.on(`chat-update`, async (chat) => {
     if (!chat.hasNewMessage) {
       return;
@@ -405,70 +297,71 @@ ${Fetched.message}`,
     }
     chat = chat.messages.all()[0];
     var sender = chat.key.remoteJid;
-    const groupMetadata = sender.endsWith(`@g.us`)
-      ? await υℓтяσηℓιєηт.groupMetadata(sender)
-      : ``;
+    const groupMetadata = sender.endsWith(`@g.us`) ? await υℓтяσηℓιєηт.groupMetadata(sender) : ``;
     var ᴍᴇᴇ6 = ᴍᴇᴇ6ǟքք.resolve(chat, υℓтяσηℓιєηт, groupMetadata);
-    // if (ᴍᴇᴇ6.chatId === "120363025343298860@g.us") {
-    //   return;
-    // }
-    // if (ᴍᴇᴇ6.isCmd && !ᴍᴇᴇ6.fromMe) {
-    //   if (
-    //     adminmodls.indexOf(ᴍᴇᴇ6.commandName) >= 0 &&
-    //     !ᴍᴇᴇ6.isSenderGroupAdmin
-    //   ) {
-    //     return;
-    //   } else if (ᴍᴇᴇ6Sudo.indexOf(ᴍᴇᴇ6.commandName) >= 0) {
-    //     var messageSent = await υℓтяσηℓιєηтult.getUser(ᴍᴇᴇ6.chatId);
-    //     if (messageSent) {
-    //       return;
-    //     } else {
-    //       await υℓтяσηℓιєηтult.addUser(ᴍᴇᴇ6.chatId);
-    //       return;
+    const adminmodls = [
+      `add`,
+      `demote`,
+      `invite`,
+      `mute`,
+      `promote`,
+      `remove`,
+      `unmute`,
+      `setwelcome`,
+      `disappear`,
+      `setgoodbye`,
+      `tagall`,
+    ];
+    // "120363025343298860@g.us"
+    //     if (ᴍᴇᴇ6.isCmd && ᴍᴇᴇ6.chatId === "120363022624090215@g.us") {
+    //       return await υℓтяσηℓιєηт
+    //         .sendMessage(
+    //           ᴍᴇᴇ6.chatId,
+    //           {
+    //             url: ꜱɪɢɴ.MEE,
+    //           },
+    //           MessageType.image,
+    //           {
+    //             mimetype: Mimetype.png,
+    //             caption: `⬡•••••••••••••••••••••••••⬡
+    // ⚡𝐌𝐞𝐞𝟔™ ⧪ɪ ᴀᴍ ᴍʀ ᴍᴇᴇ6, ʟᴏᴏᴋ ᴀᴛ ᴍᴇ! 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵
+
+    // ❌𝗠𝘆 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝗡𝗼𝘁 𝗔𝗹𝗹𝗼𝘄𝗲𝗱 𝗛𝗲𝗿𝗲❌
+    // ⬡•••••••••••••••••••••••••⬡`,
+    //           }
+    //         )
+    //         .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
     //     }
-    //   }
-    // }
     if (ᴍᴇᴇ6.isCmd && !ᴍᴇᴇ6.fromMe) {
-      if (!ᴍᴇᴇ6.isSenderGroupAdmin) {
-        return;
+      if (adminmodls.indexOf(ᴍᴇᴇ6.commandName) >= 0 && !ᴍᴇᴇ6.isSenderGroupAdmin) {
+        return υℓтяσηℓιєηт.sendMessage(ᴍᴇᴇ6.chatId, `You need to be an admin to execute this command.`, MessageType.text);
       } else if (ᴍᴇᴇ6Sudo.indexOf(ᴍᴇᴇ6.commandName) >= 0) {
-        var messageSent = await υℓтяσηℓιєηтult.getUser(ᴍᴇᴇ6.chatId);
+        var messageSent = await clientult.getUser(ᴍᴇᴇ6.chatId);
         if (messageSent) {
-          return;
+          return console.log(Kolor.blue(`💡⬰  Promo message had already been sent to ` + ᴍᴇᴇ6.chatId));
         } else {
-          await υℓтяσηℓιєηтult.addUser(ᴍᴇᴇ6.chatId);
+          await clientult.addUser(ᴍᴇᴇ6.chatId);
           return;
         }
       }
     }
-    // ===============================================================================
-    // 🎮ᴍᴇᴇ6™ ᴀᴅᴠᴀɴᴄᴇᴅ ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ 80+ ᴄᴏᴍᴍᴀɴᴅꜱ ꜰᴏʀ ʙᴏᴛʜ ᴘʀɪᴠᴀᴛᴇ ᴀɴᴅ ɢʀᴏᴜᴘ-ᴜꜱᴀɢᴇ
-    // ===============================================================================
     if (ᴍᴇᴇ6.isCmd) {
-      console.log(
-        Kolor.green(`💡⬰  ${ᴍᴇᴇ6.commandName.toUpperCase()} command executed.`)
-      );
+      console.log(Kolor.green(`💡⬰  ${ᴍᴇᴇ6.commandName.toUpperCase()} command executed.`));
       const command = Mee6Sitrep.get(ᴍᴇᴇ6.commandName);
       var Arc = ᴍᴇᴇ6.body.trim().split(/\s+/).slice(1);
       var Mee6Regex = new RegExp(ꜱɪɢɴ.Mee6IX, `g`);
       var Mee6f = /\/\^\[(.*)+\]\/\g/g.exec(Mee6Regex)[1];
       if (!command) {
-        return υℓтяσηℓιєηт
-          .sendMessage(
-            ᴍᴇᴇ6.chatId,
-            {
-              url: ꜱɪɢɴ.INVL,
-            },
-            MessageType.image,
-            {
-              mimetype: Mimetype.png,
-              caption: `*⚠️𝗜𝗻𝘃𝗮𝗹𝗶𝗱 ᴍᴇᴇ6 𝗖𝗼𝗺𝗺𝗮𝗻𝗱*
-
+        return υℓтяσηℓιєηт.sendMessage(ᴍᴇᴇ6.chatId, {
+            url: ꜱɪɢɴ.INVL
+          },
+          MessageType.image, {
+            mimetype: Mimetype.png,
+            caption: `*⚠️𝗜𝗻𝘃𝗮𝗹𝗶𝗱 ᴍᴇᴇ6 𝗖𝗼𝗺𝗺𝗮𝗻𝗱*
 *No such command found.*
 Please Use *${Mee6f}help to get the list of available commands*`,
-            }
-          )
-          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+          }
+        ).catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
       } else if (command && ᴍᴇᴇ6.commandName == `help`) {
         try {
           return command.handle(υℓтяσηℓιєηт, chat, ᴍᴇᴇ6, Arc, Mee6Sitrep);
@@ -481,6 +374,6 @@ Please Use *${Mee6f}help to get the list of available commands*`,
   });
 }
 ᴍᴇᴇ6s().catch((cᴇʀʀᴏʀ) => console.log(Kolor.red(`❌⬰`), Kolor.red(cᴇʀʀᴏʀ)));
-// ===============================================================================
-// 🎮ᴍᴇᴇ6™ ᴀᴅᴠᴀɴᴄᴇᴅ ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ 80+ ᴄᴏᴍᴍᴀɴᴅꜱ ꜰᴏʀ ʙᴏᴛʜ ᴘʀɪᴠᴀᴛᴇ ᴀɴᴅ ɢʀᴏᴜᴘ-ᴜꜱᴀɢᴇ
-// ===============================================================================
+//                            ⬡••••••••••••••••⬡                𝐌𝐞𝐞𝟔™                ⬡••••••••••••••••⬡
+//                                      𝐈 𝐚𝐦 𝐌𝐫𝐌𝐞𝐞𝟔🛸𝐋𝐨𝐨𝐤 𝐀𝐭 𝐌𝐞!  𝗠𝗼𝘀𝘁 𝗔𝗱𝘃𝗮𝗻𝗰𝗲 𝗪𝗵𝗮𝘁𝘀𝗮𝗽𝗽 𝗕𝗼𝘁 ⧪
+//                            ⬡••••••••••••••••⬡                𝐌𝐞𝐞𝟔™                ⬡••••••••••••••••⬡
