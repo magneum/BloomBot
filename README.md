@@ -20,12 +20,12 @@
 ```
 
 # ⚡ 𝕯𝖊𝖕𝖑𝖔𝖞𝖒𝖊𝖓𝖙
-# ================ VISUAL ===================
+ *video*
 - ꜰɪʀꜱᴛ ꜰᴏʀᴋ ᴀɴᴅ ꜱᴛᴀʀ ᴛʜᴇ ʀᴇᴘᴏ (or else auto upgrading won't work)
 - [🛸Deployment-Video](https://github.com/Krakinz/Mee6/tree/KrakinzLab/%E1%B4%8D%E1%B4%87%E1%B4%876/Deployment.avi)
 - [⚡Re-Deployment-Video](https://github.com/Krakinz/Mee6/tree/KrakinzLab/%E1%B4%8D%E1%B4%87%E1%B4%876/Re-Deployment(AUTO).avi)
 
-# ================ TEXT AND LINKS ===================
+*text and link*
 - ꜰɪʀꜱᴛ ꜰᴏʀᴋ ᴀɴᴅ ꜱᴛᴀʀ ᴛʜᴇ ʀᴇᴘᴏ (or else auto upgrading won't work)
 - [🛸Deployment-Video](https://github.com/Krakinz/Mee6/tree/KrakinzLab/%E1%B4%8D%E1%B4%87%E1%B4%876/Deployment.avi)
 - [⚡Re-Deployment-Video](https://github.com/Krakinz/Mee6/tree/KrakinzLab/%E1%B4%8D%E1%B4%87%E1%B4%876/Re-Deployment(AUTO).avi)
