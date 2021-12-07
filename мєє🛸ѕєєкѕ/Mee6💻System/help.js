@@ -151,7 +151,7 @@ module.exports = {
         .sendMessage(
           ᴍᴇᴇ6.chatId,
           {
-            url: ꜱɪɢɴ.MEE,
+            url: "https://i.postimg.cc/KcDxkHBQ/Help.png",
           },
           MessageType.image,
           {

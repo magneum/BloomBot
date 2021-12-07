@@ -47,10 +47,10 @@ const env = {
           },
         }),
   ERROR: "https://i.postimg.cc/mkdqGhr5/Mee6-Error.png",
-  MEE: "https://i.postimg.cc/d0yKmR0t/Mee6.png",
+  MEE: "https://i.postimg.cc/5ygVhXbD/Mee6-Master.png",
   INVL: "https://i.postimg.cc/v8p25RV9/Mee6-Invalid.png",
   ARC: "https://i.postimg.cc/Nf3D2RZx/Mee6-Args.png",
-  UPT: "https://i.postimg.cc/2S5W6ySx/Mee6-Update.png",
+  UPT: "https://i.postimg.cc/FH22ny07/Meeseeks-Box.png",
   PRIVACY: process.env.PRIVACY === undefined ? `public` : process.env.PRIVACY,
   SUDO: process.env.KING === undefined ? `` : process.env.KING,
 };
