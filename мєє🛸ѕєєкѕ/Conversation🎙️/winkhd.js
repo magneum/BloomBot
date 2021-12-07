@@ -1,10 +1,7 @@
 // ===============================================================================
 // 🎮ᴍᴇᴇ6™ 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..
 // ===============================================================================
-const {
-  MessageType,
-  Mimetype
-} = require(`@adiwajshing/baileys`);
+const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const Anime_Images = require(`anime-images-api`);
 const ꜱɪɢɴ = require(`../../ᴍᴇᴇ6/ꜱɪɢɴ`);
 const download = require(`download-file`);
@@ -20,6 +17,8 @@ module.exports = {
   commandType: "Conversation🎙️",
   description: `I know you like anime wink`,
   async handle(υℓтяσηℓιєηт, chat, ᴍᴇᴇ6, Arc) {
+    var str = ᴍᴇᴇ6.sender;
+    var newString = str.substring(0, str.length - 15);
     if (ᴍᴇᴇ6.chatId === "120363025343298860@g.us") {
       return await υℓтяσηℓιєηт
         .sendMessage(
@@ -30,18 +29,18 @@ module.exports = {
           MessageType.image,
           {
             mimetype: Mimetype.png,
+            contextInfo: { mentionedJid: [ᴍᴇᴇ6.sender] },
             caption: `*⬡••••••••⬡    𝐌𝐞𝐞𝟔™    ⬡••••••••⬡*
-𝐈 𝐚𝐦 𝐌𝐫𝐌𝐞𝐞𝟔🛸𝐋𝐨𝐨𝐤 𝐀𝐭 𝐌𝐞!
-⧪ 𝙰𝚍𝚟𝚊𝚗𝚌𝚎 𝚆𝚑𝚊𝚝𝚜𝚊𝚙𝚙 𝚄𝚜𝚎𝚛𝚋𝚘𝚝 ⧪
+𝐈 𝐚𝐦 𝐌𝐫𝐌𝐞𝐞𝟔🛸𝐋𝐨𝐨𝐤 𝐀𝐭 𝐌𝐞! 𝗠𝗼𝘀𝘁 𝗔𝗱𝘃𝗮𝗻𝗰𝗲 𝗪𝗵𝗮𝘁𝘀𝗮𝗽𝗽 𝗕𝗼𝘁 ⧪
 
 
-
-*↱ 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝗔𝗹𝗹𝗼𝘄𝗲𝗱 𝗛𝗲𝗿𝗲 ↰*
-  *⬡${ꜱɪɢɴ.Mee6IX}uptime*  ᴄʜᴇᴄᴋ ᴍᴇᴇ6 ᴜᴘᴛɪᴍᴇ
-  *⬡${ꜱɪɢɴ.Mee6IX}ping*  ᴄʜᴇᴄᴋ ᴍᴇᴇ6 ʀᴇꜱᴘᴏɴꜱᴇ ᴛɪᴍᴇ
-  *⬡${ꜱɪɢɴ.Mee6IX}help*  ɢᴇᴛ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅ ʟɪꜱᴛ ᴀɴᴅ ɪɴꜰᴏ ᴏɴ ᴍᴏᴅᴜʟᴇꜱ
-  *⬡${ꜱɪɢɴ.Mee6IX}alive*  ᴄʜᴇᴄᴋ ɪꜰ ʙᴏᴛ ɪꜱ ᴏɴʟɪɴᴇ ᴀɴᴅ ᴡᴏʀᴋɪɴɢ ꜰɪɴᴇ
-  *⬡${ꜱɪɢɴ.Mee6IX}update*  ᴛʜɪꜱ ᴄᴏᴍᴍᴀɴᴅ ᴄᴀɴ ʙᴇ ᴜꜱᴇᴅ ᴛᴏ ᴜᴘᴅᴀᴛᴇ ᴛʜᴇ ʙᴏᴛ
+*❗Dҽαɾ @${newString}, ᴀʟʟ ᴍᴇᴇ6 ʙᴏᴛꜱ ᴀʀᴇ ᴅɪꜱᴀʙʟᴇᴅ ɪɴ ᴛʜɪꜱ ɢʀᴏᴜᴘ*
+👇🏽‍𝗔𝗹𝗹𝗼𝘄𝗲𝗱-𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀
+  *⬡${Mee6f}uptime*  
+  *⬡${Mee6f}ping*  
+  *⬡${Mee6f}help*  
+  *⬡${Mee6f}alive* 
+  *⬡${Mee6f}update*  
 *⬡••••••••⬡    𝐌𝐞𝐞𝟔™    ⬡••••••••⬡*`,
           }
         )
@@ -50,10 +49,12 @@ module.exports = {
     let image = await API.sfw.wink();
     if (image.image === undefined) {
       return await υℓтяσηℓιєηт.sendMessage(
-        ᴍᴇᴇ6.chatId, {
-          url: `https://i.postimg.cc/KcNwHtZt/ltr.png`
+        ᴍᴇᴇ6.chatId,
+        {
+          url: `https://i.postimg.cc/KcNwHtZt/ltr.png`,
         },
-        MessageType.image, {
+        MessageType.image,
+        {
           mimetype: Mimetype.png,
           caption: `Seems Like No Image Was Found.\nPlease Try Again Later!`,
         }
@@ -61,7 +62,8 @@ module.exports = {
     } else {
       console.log(image.image);
       download(
-        image.image, {
+        image.image,
+        {
           directory: `./ᴛᴇᴍᴘ/`,
           filename: `wink-${chat.key.id}.gif`,
         },
@@ -115,10 +117,12 @@ setsar=1`
                 );
               await υℓтяσηℓιєηт
                 .sendMessage(
-                  ᴍᴇᴇ6.chatId, {
-                    url: image.image
+                  ᴍᴇᴇ6.chatId,
+                  {
+                    url: image.image,
                   },
-                  MessageType.video, {
+                  MessageType.video,
+                  {
                     mimetype: Mimetype.gif,
                     caption: `⚡Here Is Your HD Download Link:\n📎 ${image.url}`,
                   }
