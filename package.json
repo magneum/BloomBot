@@ -1,7 +1,10 @@
 {
     "name": "mee6",
     "main": "MeeSeeks™.js",
-    "vers": "ᴍᴇᴇ6-6nightly",
+    "vers": "ᴍᴇᴇ6-7nightly",
+    "engines": {
+        "node": ">=17.x"
+    },
     "dependencies": {
         "@adiwajshing/baileys": "github:adiwajshing/baileys",
         "@ffmpeg-installer/ffmpeg": "^1.1.0",
