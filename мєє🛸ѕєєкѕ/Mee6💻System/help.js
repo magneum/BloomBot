@@ -163,11 +163,13 @@ module.exports = {
           {
             mimetype: Mimetype.png,
             caption: `*⬡••••••••⬡    𝐌𝐞𝐞𝟔™    ⬡••••••••⬡*
-⚡𝐌𝐞𝐞𝟔™ ⧪ɪ ᴀᴍ ᴍʀ ᴍᴇᴇ6, ʟᴏᴏᴋ ᴀᴛ ᴍᴇ! 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵
-シ︎ 💡𝐏𝐫𝐞𝐟𝐢𝐱: ${Mee6f}
-シ︎ 🛰️𝐏𝐢𝐧𝐠: _${latensie.toFixed(6)}s_
-シ︎ ⚰️𝐔𝐩𝐓𝐢𝐦𝐞: _${runtime(process.uptime())}_
-シ︎ 💻𝐏𝐥𝐚𝐭𝐟𝐨𝐫𝐦: _${os.platform()}_
+𝐈 𝐚𝐦 𝐌𝐫𝐌𝐞𝐞𝟔🛸𝐋𝐨𝐨𝐤 𝐀𝐭 𝐌𝐞!
+⧪ 𝙰𝚍𝚟𝚊𝚗𝚌𝚎 𝚆𝚑𝚊𝚝𝚜𝚊𝚙𝚙 𝚄𝚜𝚎𝚛𝚋𝚘𝚝 ⧪
+
+シ︎💡𝐏𝐫𝐞𝐟𝐢𝐱: ${Mee6f}
+シ︎🛰️𝐏𝐢𝐧𝐠: _${latensie.toFixed(6)}s_
+シ︎⚰️𝐔𝐩𝐓𝐢𝐦𝐞: _${runtime(process.uptime())}_
+シ︎💻𝐏𝐥𝐚𝐭𝐟𝐨𝐫𝐦: _${os.platform()}_
 *⬡••••••••⬡    𝐌𝐞𝐞𝟔™    ⬡••••••••⬡*
 
 ${ULTHELP}‍`,

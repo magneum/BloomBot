@@ -22,18 +22,18 @@ module.exports = {
         {
           mimetype: Mimetype.png,
           caption: `*⬡••••••••⬡    𝐌𝐞𝐞𝟔™    ⬡••••••••⬡*
-⚡𝐌𝐞𝐞𝟔™ ⧪ɪ ᴀᴍ ᴍʀ ᴍᴇᴇ6, ʟᴏᴏᴋ ᴀᴛ ᴍᴇ! 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵
-
+𝐈 𝐚𝐦 𝐌𝐫𝐌𝐞𝐞𝟔🛸𝐋𝐨𝐨𝐤 𝐀𝐭 𝐌𝐞!
+⧪ 𝙰𝚍𝚟𝚊𝚗𝚌𝚎 𝚆𝚑𝚊𝚝𝚜𝚊𝚙𝚙 𝚄𝚜𝚎𝚛𝚋𝚘𝚝 ⧪
+⬣
+⬣
 ⧪➛ 𝗛𝗲𝗿𝗲 𝗜𝘀 𝗠𝗲𝗲𝟲 𝗥𝗲𝗽𝗼𝘀𝗶𝘁𝗼𝗿𝘆 _(Please Read the README)_
 ʟɪɴᴋ: https://github.com/Krakinz/Mee6
-⬣
 ⬣
 ⬣
 *⬡••••••••⬡    𝐌𝐞𝐞𝟔™    ⬡••••••••⬡*
 ⧪➛ 𝗝𝗼𝗶𝗻 𝗦𝘂𝗽𝗽𝗼𝗿𝘁 𝗚𝗿𝗼𝘂𝗽 *↱   🐞RΣPӨЯƬ   ↰*
 🔸ᴡʜᴀᴛꜱᴀᴘᴘ https://chat.whatsapp.com/FmMcEeSqZQw85qAkgUs3f5
 🔸ᴅɪꜱᴄᴏʀᴅ https://discord.gg/xcFN6NDHEV
-⬣
 ⬣
 ⬣
 *⬡••••••••⬡    𝐌𝐞𝐞𝟔™    ⬡••••••••⬡*
