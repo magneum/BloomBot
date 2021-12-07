@@ -2,7 +2,6 @@ const {
   MessageType,
   Mimetype
 } = require(`@adiwajshing/baileys`);
-const fetchVideoInfo = require("youtube-info");
 const ℓιєηт = require("../../ᴍᴇᴇ6/catch");
 const getVideoId = require("get-video-id");
 const ꜱɪɢɴ = require(`../../ᴍᴇᴇ6/ꜱɪɢɴ`);
