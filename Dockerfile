@@ -1,4 +1,4 @@
-FROM jrottenberg/ffmpeg
+FROM ubuntu
 RUN apt update 
 RUN apt install git -y 
 RUN apt install curl -y 
