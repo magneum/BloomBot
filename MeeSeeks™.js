@@ -16,7 +16,6 @@ const download = require(`download-file`);
 const ᴍᴇᴇ6ǟքք = require(`./ᴍᴇᴇ6/helper`);
 const ɠɠᴍᴇᴇ6 = require(`./ᴍᴇᴇ6/ɠɠᴍᴇᴇ6`);
 const vers = require(`./package.json`);
-const ᴍᴇᴇgit = require("simple-git")();
 const ℓιєηт = require(`./ᴍᴇᴇ6/catch`);
 const ᴍᴇᴇ6Sudo = [`block`, `unblock`];
 const ꜱɪɢɴ = require(`./ᴍᴇᴇ6/ꜱɪɢɴ`);
