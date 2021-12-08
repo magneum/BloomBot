@@ -5,13 +5,13 @@ const {
 } = require(`@adiwajshing/baileys`);
 const ꜱɪɢɴ = require(`../../ᴍᴇᴇ6/ꜱɪɢɴ`);
 const ℓιєηт = require("../../ᴍᴇᴇ6/catch");
-var Mee6Regex = new RegExp(ꜱɪɢɴ.Mee6IX, "g");
-var Mee6f = /\/\^\[(.*)+\]\/\g/g.exec(Mee6Regex)[1];
+var ᴋᴇɪᴇx = new RegExp(ꜱɪɢɴ.Mee6IX, "g");
+var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 module.exports = {
   name: `unmute`,
   commandType: "Admin🐙Groups",
   description: `Unmute non-admin members of a group`,
-  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք, ɴᴇᴡᴍᴇᴇ6) {
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք, ɴᴇᴡᴍᴇᴇ6){
     if (ɴᴇᴡᴍᴇᴇ6.total) {
       await ʍɛɛℓιєηт
         .sendMessage(

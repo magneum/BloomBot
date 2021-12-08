@@ -1,6 +1,8 @@
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const ℓιєηт = require("../../ᴍᴇᴇ6/catch");
 const ꜱɪɢɴ = require(`../../ᴍᴇᴇ6/ꜱɪɢɴ`);
+var ᴋᴇɪᴇx = new RegExp(ꜱɪɢɴ.Mee6IX, "g");
+var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 module.exports = {
   name: `mute`,
   commandType: "Admin🐙Groups",
@@ -9,7 +11,7 @@ You can even specify the duration using s, m or h.
 For example:
 *${ꜱɪɢɴ.Mee6IX}mute 15 m*
 will change chat permissions to admin-only for 15 minutes.`,
-  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք, ɴᴇᴡᴍᴇᴇ6) {
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք, ɴᴇᴡᴍᴇᴇ6){
     if (ɴᴇᴡᴍᴇᴇ6.total) {
       await ʍɛɛℓιєηт
         .sendMessage(

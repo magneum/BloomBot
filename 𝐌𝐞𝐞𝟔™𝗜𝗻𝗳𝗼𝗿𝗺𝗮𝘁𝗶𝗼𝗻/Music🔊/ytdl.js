@@ -19,11 +19,13 @@ const Regex = {
     /^https?:\/\/(soundcloud\.com|snd\.sc)\/([A-Za-z0-9_-]+)\/sets\/([A-Za-z0-9_-]+)\/?$/,
   Spotify: /^(spotify:|https:\/\/[a-z]+\.spotify\.com\/)/,
 };
+var ᴋᴇɪᴇx = new RegExp(ꜱɪɢɴ.Mee6IX, "g");
+var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 module.exports = {
   name: `ytdl`,
   commandType: "Music🔊",
   description: `Use this command to download audio of your choice either by specifying a YouTube link or the name of the song.`,
-  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք, ɴᴇᴡᴍᴇᴇ6) {
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք, ɴᴇᴡᴍᴇᴇ6){
     if (ɴᴇᴡᴍᴇᴇ6.total) {
       await ʍɛɛℓιєηт
         .sendMessage(

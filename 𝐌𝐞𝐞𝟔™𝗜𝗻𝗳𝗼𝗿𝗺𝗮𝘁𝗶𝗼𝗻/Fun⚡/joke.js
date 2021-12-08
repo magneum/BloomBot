@@ -8,6 +8,8 @@ const {
   matchJoke,
   getRandomJoke,
 } = require(`random-jokes`);
+var ᴋᴇɪᴇx = new RegExp(ꜱɪɢɴ.Mee6IX, "g");
+var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 module.exports = {
   name: `joke`,
   commandType: `Fun⚡`,

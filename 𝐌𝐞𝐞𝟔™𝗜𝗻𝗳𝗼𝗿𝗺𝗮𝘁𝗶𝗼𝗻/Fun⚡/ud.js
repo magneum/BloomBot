@@ -2,12 +2,14 @@ const ℓιєηт = require("../../ᴍᴇᴇ6/catch");
 const { MessageType } = require(`@adiwajshing/baileys`);
 const ꜱɪɢɴ = require(`../../ᴍᴇᴇ6/ꜱɪɢɴ`);
 const ud = require(`urban-dictionary`);
+var ᴋᴇɪᴇx = new RegExp(ꜱɪɢɴ.Mee6IX, "g");
+var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 module.exports = {
   name: `ud`,
   commandType: "Fun⚡",
   description: `Urban Dictionary`,
   ᴍᴇᴇ6ʍօʀɛ: `Use this command to find the meaning of a word in Urban Dictionary. Enter  *${ꜱɪɢɴ.Mee6IX}ud*  command.`,
-  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք, ɴᴇᴡᴍᴇᴇ6) {
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք, ɴᴇᴡᴍᴇᴇ6){
     if (ɴᴇᴡᴍᴇᴇ6.total) {
       await ʍɛɛℓιєηт
         .sendMessage(

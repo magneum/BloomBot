@@ -2,6 +2,8 @@ const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const ℓιєηт = require("../../ᴍᴇᴇ6/catch");
 const ꜱɪɢɴ = require(`../../ᴍᴇᴇ6/ꜱɪɢɴ`);
 const Greetings = require(`../../ᴍᴇᴇ6/ɠɠᴍᴇᴇ6`);
+var ᴋᴇɪᴇx = new RegExp(ꜱɪɢɴ.Mee6IX, "g");
+var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 module.exports = {
   name: `setgoodbye`,
   commandType: "Admin🐙Groups",
@@ -10,7 +12,7 @@ Use this command to either set, update or delete the existing message.
 The setgoodbye option can be disabled but saved using the  *${ꜱɪɢɴ.Mee6IX}setgoodbye  off*  command. 
 In order to delete the existing message, use  *${ꜱɪɢɴ.Mee6IX}setgoodbye  delete*.
 Do note, the setgoodbye option is still enabled after you use the delete option.`,
-  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք, ɴᴇᴡᴍᴇᴇ6) {
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք, ɴᴇᴡᴍᴇᴇ6){
     if (ɴᴇᴡᴍᴇᴇ6.total) {
       await ʍɛɛℓιєηт
         .sendMessage(

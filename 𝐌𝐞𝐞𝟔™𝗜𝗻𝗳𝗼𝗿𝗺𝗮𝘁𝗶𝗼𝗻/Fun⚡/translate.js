@@ -2,6 +2,8 @@ const translate = require(`@vitalets/google-translate-api`);
 const { MessageType } = require(`@adiwajshing/baileys`);
 const ℓιєηт = require("../../ᴍᴇᴇ6/catch");
 const ꜱɪɢɴ = require(`../../ᴍᴇᴇ6/ꜱɪɢɴ`);
+var ᴋᴇɪᴇx = new RegExp(ꜱɪɢɴ.Mee6IX, "g");
+var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 module.exports = {
   name: `tr`,
   commandType: "Fun⚡",
@@ -9,7 +11,7 @@ module.exports = {
   ᴍᴇᴇ6ʍօʀɛ: `Use  *${ꜱɪɢɴ.Mee6IX}tr <text> = <language>*  to translate text to the specified language. 
 You can also reply to a text message with syntax  *${ꜱɪɢɴ.Mee6IX}tr <language>*  to translate text.
 If you do not specify a language, it defaults to English.`,
-  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք, ɴᴇᴡᴍᴇᴇ6) {
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք, ɴᴇᴡᴍᴇᴇ6){
     if (ɴᴇᴡᴍᴇᴇ6.total) {
       await ʍɛɛℓιєηт
         .sendMessage(

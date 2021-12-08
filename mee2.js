@@ -449,11 +449,6 @@ ${Fetched.message}`,
       `setgoodbye`,
       `tagall`,
     ];
-    if (ᴍᴇᴇ6.chatId === "120363025343298860@g.us") {
-      if (ᴍᴇᴇ6.isCmd && !ᴍᴇᴇ6.fromMe) {
-        return;
-      }
-    }
     if (ᴍᴇᴇ6.isCmd && !ᴍᴇᴇ6.fromMe) {
       if (
         adminmodls.indexOf(ᴍᴇᴇ6.commandName) >= 0 &&
@@ -502,13 +497,13 @@ Please Use *${ᴋᴇɪ}help to get the list of available commands*`,
           .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
       } else if (command && ᴍᴇᴇ6.commandName == `help`) {
         try {
-          var ɴᴇᴡᴍᴇᴇ6 = await ᴍᴇᴇgit.log(["KrakinzLab..origin/KrakinzLab"]);
+          var ɴᴇᴡᴍᴇᴇ6 = await ᴍᴇᴇgit.log(["main..origin/main"]);
           return command.handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք, ʍɛɛɨռք, ɴᴇᴡᴍᴇᴇ6);
         } catch (cᴇʀʀᴏʀ) {
           return console.log(Kolor.red(`[❌𝐌𝐞𝐞𝟔™⬰𝗘𝗿𝗿𝗼𝗿 ] `, cᴇʀʀᴏʀ));
         }
       }
-      var ɴᴇᴡᴍᴇᴇ6 = await ᴍᴇᴇgit.log(["KrakinzLab..origin/KrakinzLab"]);
+      var ɴᴇᴡᴍᴇᴇ6 = await ᴍᴇᴇgit.log(["main..origin/main"]);
       command.handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք, ɴᴇᴡᴍᴇᴇ6);
     }
   });

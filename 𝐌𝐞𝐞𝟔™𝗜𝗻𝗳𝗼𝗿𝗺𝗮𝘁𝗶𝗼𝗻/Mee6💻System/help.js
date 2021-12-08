@@ -3,11 +3,13 @@ const ℓιєηт = require("../../ᴍᴇᴇ6/catch");
 const speed = require("performance-now");
 const ꜱɪɢɴ = require(`../../ᴍᴇᴇ6/ꜱɪɢɴ`);
 const os = require("os");
+var ᴋᴇɪᴇx = new RegExp(ꜱɪɢɴ.Mee6IX, "g");
+var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 module.exports = {
   name: `help`,
   commandType: "Mee6💻System",
   description: `ɢᴇᴛ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅ ʟɪꜱᴛ ᴀɴᴅ ɪɴꜰᴏ ᴏɴ ᴍᴏᴅᴜʟᴇꜱ`,
-  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք, ɴᴇᴡᴍᴇᴇ6) {
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք, ɴᴇᴡᴍᴇᴇ6){
     if (ɴᴇᴡᴍᴇᴇ6.total) {
       await ʍɛɛℓιєηт
         .sendMessage(
@@ -176,7 +178,7 @@ ${MeeHelper}‍`,
         .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
     }
     var ᴍᴇᴇ6ʍօ = "⤥ 💡𝐂𝐨𝐦𝐦𝐚𝐧𝐝\n";
-    var command = Mee6Sitrep.get(ʍɛɛɨռք[0]);
+    var command = ʍɛɛɨռք.get(ʍɛɛɨռք[0]);
     if (command) {
       ᴍᴇᴇ6ʍօ += `⤤ ${(ᴋᴇɪ, command.name === undefined ? "Null" : command.name)}
 

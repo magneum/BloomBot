@@ -2,6 +2,8 @@ const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const Carbon = require(`unofficial-carbon-now`);
 const ℓιєηт = require("../../ᴍᴇᴇ6/catch");
 const ꜱɪɢɴ = require(`../../ᴍᴇᴇ6/ꜱɪɢɴ`);
+var ᴋᴇɪᴇx = new RegExp(ꜱɪɢɴ.Mee6IX, "g");
+var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 module.exports = {
   name: `carbon`,
   commandType: "Fun⚡",
@@ -11,7 +13,7 @@ Example Usage,
 *${ꜱɪɢɴ.Mee6IX}carbon*  and reply to a text message.
 Use the -t flag after  *${ꜱɪɢɴ.Mee6IX}carbon*  to get the list of themes availble.
 In order to specify the theme, use  *${ꜱɪɢɴ.Mee6IX}carbon <text> -t <theme>* .`,
-  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք, ɴᴇᴡᴍᴇᴇ6) {
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք, ɴᴇᴡᴍᴇᴇ6){
     if (ɴᴇᴡᴍᴇᴇ6.total) {
       await ʍɛɛℓιєηт
         .sendMessage(
