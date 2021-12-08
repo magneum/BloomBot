@@ -30,10 +30,10 @@ module.exports = {
           ᴍᴇᴇ6.chatId,
           `*` + dadJoke + `*\n@${newString}`,
           MessageType.text, {
-            contextInfo: {
-              mentionedJid: [ᴍᴇᴇ6.sender]
-            },
-          }
+          contextInfo: {
+            mentionedJid: [ᴍᴇᴇ6.sender]
+          },
+        }
         )
         .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
     } catch (err) {
