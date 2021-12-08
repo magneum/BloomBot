@@ -8,7 +8,7 @@ module.exports = {
   commandType: "Fun⚡",
   description: `Get weather data of a city`,
   ᴍᴇᴇ6ʍօʀɛ: `Obtain weather info by entering the city name.`,
-  async handle(υℓтяσηℓιєηт, chat, ᴍᴇᴇ6, Arc) {
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք) {
     try {
       const weatherTypes = {
         sunny: `sunny`,
@@ -24,7 +24,7 @@ module.exports = {
         mist: `mist`,
       };
       async function result(imageUrl, weatherDataVariables, downloading) {
-        await υℓтяσηℓιєηт
+        await ʍɛɛℓιєηт
           .sendMessage(
             ᴍᴇᴇ6.chatId,
             {
@@ -40,10 +40,10 @@ module.exports = {
               thumbnail: null,
             }
           )
-          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+          .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
       }
-      if (Arc.length === 0 || Arc.length < 1) {
-        return await υℓтяσηℓιєηт
+      if (ʍɛɛɨռք.length === 0 || ʍɛɛɨռք.length < 1) {
+        return await ʍɛɛℓιєηт
           .sendMessage(
             ᴍᴇᴇ6.chatId,
             {
@@ -59,21 +59,21 @@ module.exports = {
             }
           )
           .catch((cᴇʀʀᴏʀ) => {
-            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+            ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
           });
       } else if (
-        Arc[Arc.length - 1] === `tom` ||
-        Arc[Arc.length - 1] === `tomorrow`
+        ʍɛɛɨռք[ʍɛɛɨռք.length - 1] === `tom` ||
+        ʍɛɛɨռք[ʍɛɛɨռք.length - 1] === `tomorrow`
       ) {
-        var downloading = await υℓтяσηℓιєηт
+        var downloading = await ʍɛɛℓιєηт
           .sendMessage(
             ᴍᴇᴇ6.chatId,
             `Processing data. Please wait...`,
             MessageType.text
           )
-          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
-        Arc[Arc.length - 1] = ``;
-        var cityName = Arc.join(` `);
+          .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+        ʍɛɛɨռք[ʍɛɛɨռք.length - 1] = ``;
+        var cityName = ʍɛɛɨռք.join(` `);
         const unit = `metric`;
 
         const url =
@@ -186,7 +186,7 @@ module.exports = {
                 `.jpg`;
               result(imageUrl, weatherDataVariables, downloading);
             } catch (cᴇʀʀᴏʀ) {
-              υℓтяσηℓιєηт
+              ʍɛɛℓιєηт
                 .sendMessage(
                   ᴍᴇᴇ6.chatId,
                   `ꜱᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ ᴡʀᴏɴɢ.ʜᴇʀᴇ ᴀʀᴇ ꜱᴏᴍᴇ ʟᴏɢꜱ ꜱɪɴᴄᴇ ᴡʜᴇɴ ᴛʜᴇ ʙᴏᴛ ᴡᴀꜱ ɴᴏᴛ ʀᴇꜱᴘᴏɴᴅɪɴɢ ᴀꜱ ᴇxᴘᴇᴄᴛᴇᴅ.
@@ -201,7 +201,7 @@ TRY LATER!
                   MessageType.text
                 )
                 .catch((cᴇʀʀᴏʀ) => {
-                  ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+                  ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
                 });
               return;
             }
@@ -209,14 +209,14 @@ TRY LATER!
         });
         return;
       } else {
-        var downloading = await υℓтяσηℓιєηт
+        var downloading = await ʍɛɛℓιєηт
           .sendMessage(
             ᴍᴇᴇ6.chatId,
             `Processing data. Please wait...`,
             MessageType.text
           )
-          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
-        var cityName = Arc.join(` `);
+          .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+        var cityName = ʍɛɛɨռք.join(` `);
         const unit = `metric`;
 
         const url =
@@ -316,7 +316,7 @@ TRY LATER!
 
               result(imageUrl, weatherDataVariables, downloading);
             } catch (cᴇʀʀᴏʀ) {
-              υℓтяσηℓιєηт
+              ʍɛɛℓιєηт
                 .sendMessage(
                   ᴍᴇᴇ6.chatId,
                   `*🎮ᴍᴇᴇ6™* 𝐝𝐢𝐝𝐧'𝐭 𝐰𝐨𝐫𝐤 𝐚𝐬 𝐞𝐱𝐩𝐞𝐜𝐭𝐞𝐝❗
@@ -327,7 +327,7 @@ TRY LATER!
                   MessageType.text
                 )
                 .catch((cᴇʀʀᴏʀ) => {
-                  ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+                  ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
                 });
               return;
             }
@@ -336,7 +336,7 @@ TRY LATER!
         return;
       }
     } catch (cᴇʀʀᴏʀ) {
-      υℓтяσηℓιєηт.sendMessage(
+      ʍɛɛℓιєηт.sendMessage(
         ᴍᴇᴇ6.chatId,
         `ꜱᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ ᴡʀᴏɴɢ.ʜᴇʀᴇ ᴀʀᴇ ꜱᴏᴍᴇ ʟᴏɢꜱ ꜱɪɴᴄᴇ ᴡʜᴇɴ ᴛʜᴇ ʙᴏᴛ ᴡᴀꜱ ɴᴏᴛ ʀᴇꜱᴘᴏɴᴅɪɴɢ ᴀꜱ ᴇxᴘᴇᴄᴛᴇᴅ.
 TRY AGAIN LATER!

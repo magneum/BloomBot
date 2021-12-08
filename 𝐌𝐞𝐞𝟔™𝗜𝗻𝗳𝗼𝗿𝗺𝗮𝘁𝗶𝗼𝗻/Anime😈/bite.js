@@ -6,8 +6,8 @@ module.exports = {
   name: `bite`,
   commandType: "Anime😈",
   description: `	I know you like anime bite`,
-  async handle(υℓтяσηℓιєηт, chat, ᴍᴇᴇ6, Arc) {
-    await υℓтяσηℓιєηт
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք) {
+    await ʍɛɛℓιєηт
       .sendMessage(
         ᴍᴇᴇ6.chatId,
         {
@@ -19,6 +19,6 @@ module.exports = {
           caption: `_ᴘᴏᴡᴇʀᴇᴅ ʙʏ_\n*⚡𝐌𝐞𝐞𝟔™*`,
         }
       )
-      .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+      .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
   },
 };

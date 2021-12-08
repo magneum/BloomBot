@@ -6,12 +6,12 @@ module.exports = {
   name: `lyrics`,
   commandType: "Music🔊",
   description: `Use this command to find the lyrics of a song by using  *${ꜱɪɢɴ.Mee6IX}lyrics*  command.`,
-  async handle(υℓтяσηℓιєηт, chat, ᴍᴇᴇ6, Arc) {
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք) {
     var song = ``;
     if (ᴍᴇᴇ6.isReply) {
       song = ᴍᴇᴇ6.replyMessage;
-    } else if (Arc.length === 0) {
-      return await υℓтяσηℓιєηт
+    } else if (ʍɛɛɨռք.length === 0) {
+      return await ʍɛɛℓιєηт
         .sendMessage(
           ᴍᴇᴇ6.chatId,
           {
@@ -27,14 +27,14 @@ ${ꜱɪɢɴ.Mee6IX}lyrics <song-name>`,
           }
         )
         .catch((cᴇʀʀᴏʀ) => {
-          ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+          ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
         });
     } else {
-      song = Arc.join(` `);
+      song = ʍɛɛɨռք.join(` `);
     }
-    await υℓтяσηℓιєηт
+    await ʍɛɛℓιєηт
       .sendMessage(ᴍᴇᴇ6.chatId, `Searching. Please wait....`, MessageType.text)
-      .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+      .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
     try {
       let API = await got(`https://some-random-api.ml/lyrics/?title=${song}`);
       let APIData = JSON.parse(API.body);
@@ -45,7 +45,7 @@ ${ꜱɪɢɴ.Mee6IX}lyrics <song-name>`,
         APIData.author +
         `\n*Lyrics :*\n` +
         APIData.lyrics;
-      await υℓтяσηℓιєηт
+      await ʍɛɛℓιєηт
         .sendMessage(
           ᴍᴇᴇ6.chatId,
           {
@@ -57,9 +57,9 @@ ${ꜱɪɢɴ.Mee6IX}lyrics <song-name>`,
             caption: caption,
           }
         )
-        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
     } catch (cᴇʀʀᴏʀ) {
-      await υℓтяσηℓιєηт
+      await ʍɛɛℓιєηт
         .sendMessage(
           ᴍᴇᴇ6.chatId,
           {
@@ -71,7 +71,7 @@ ${ꜱɪɢɴ.Mee6IX}lyrics <song-name>`,
             caption: "Seems Like No Lyrics Found\n\nIt will be fixed Soon!",
           }
         )
-        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
     }
   },
 };

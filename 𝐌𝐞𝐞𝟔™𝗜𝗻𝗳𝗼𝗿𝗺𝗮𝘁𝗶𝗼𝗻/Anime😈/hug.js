@@ -1,7 +1,4 @@
-const {
-  MessageType,
-  Mimetype
-} = require(`@adiwajshing/baileys`);
+const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const Anime_Images = require(`anime-images-api`);
 const ꜱɪɢɴ = require(`../../ᴍᴇᴇ6/ꜱɪɢɴ`);
 const download = require(`download-file`);
@@ -13,16 +10,16 @@ module.exports = {
   name: `hug`,
   commandType: "Anime😈",
   description: `I know you like anime hug`,
-  async handle(υℓтяσηℓιєηт, chat, ᴍᴇᴇ6, Arc) {
-    let {
-      image
-    } = await API.sfw.hug();
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք) {
+    let { image } = await API.sfw.hug();
     if (image === undefined) {
-      return await υℓтяσηℓιєηт.sendMessage(
-        ᴍᴇᴇ6.chatId, {
+      return await ʍɛɛℓιєηт.sendMessage(
+        ᴍᴇᴇ6.chatId,
+        {
           url: `https://i.postimg.cc/KcNwHtZt/ltr.png`,
         },
-        MessageType.image, {
+        MessageType.image,
+        {
           mimetype: Mimetype.png,
           caption: `Seems Like No Image Was Found.\nPlease Try Again Later!`,
         }
@@ -30,7 +27,8 @@ module.exports = {
     } else {
       console.log(image);
       download(
-        image, {
+        image,
+        {
           directory: `./ᴛᴇᴍᴘ/`,
           filename: `hug-${chat.key.id}.gif`,
         },
@@ -62,14 +60,14 @@ setsar=1`
             )
             .save(SP)
             .on(`end`, async () => {
-              await υℓтяσηℓιєηт
+              await ʍɛɛℓιєηт
                 .sendMessage(
                   ᴍᴇᴇ6.chatId,
                   fs.readFileSync(SP),
                   MessageType.sticker
                 )
                 .catch((CYΣЯЯ) =>
-                  υℓтяσηℓιєηт.sendMessage(
+                  ʍɛɛℓιєηт.sendMessage(
                     ᴍᴇᴇ6.chatId,
                     `ꜱᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ ᴡʀᴏɴɢ.ʜᴇʀᴇ ᴀʀᴇ ꜱᴏᴍᴇ ʟᴏɢꜱ ꜱɪɴᴄᴇ ᴡʜᴇɴ ᴛʜᴇ ʙᴏᴛ ᴡᴀꜱ ɴᴏᴛ ʀᴇꜱᴘᴏɴᴅɪɴɢ ᴀꜱ ᴇxᴘᴇᴄᴛᴇᴅ.
 

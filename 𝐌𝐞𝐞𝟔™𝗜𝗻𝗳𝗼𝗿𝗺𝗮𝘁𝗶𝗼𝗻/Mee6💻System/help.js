@@ -7,7 +7,7 @@ module.exports = {
   name: `help`,
   commandType: "Mee6💻System",
   description: `ɢᴇᴛ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅ ʟɪꜱᴛ ᴀɴᴅ ɪɴꜰᴏ ᴏɴ ᴍᴏᴅᴜʟᴇꜱ`,
-  async handle(υℓтяσηℓιєηт, chat, ᴍᴇᴇ6, Arc, Mee6Sitrep) {
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք, Mee6Sitrep) {
     var str = ᴍᴇᴇ6.sender;
     var newString = str.substring(0, str.length - 15);
     var Mee6Regex = new RegExp(ꜱɪɢɴ.Mee6IX, "g");
@@ -52,7 +52,6 @@ module.exports = {
 
 
 ⬣ *👑➾➾➾➾  𝙂𝙧𝙤𝙪𝙥𝙨*
- *✫ ${Mee6f}add*  ᴀᴅᴅ ᴀ ᴘᴇʀꜱᴏɴ ᴛᴏ ᴀ ɢʀᴏᴜᴘ
  *✫ ${Mee6f}spam*  Spam Messages ᴀ ɢʀᴏᴜᴘ
  *✫ ${Mee6f}ban*  ᴍᴏᴅᴜʟᴇ ᴛᴏ Add the number to banlist.
  *✫ ${Mee6f}unban*  ᴍᴏᴅᴜʟᴇ ᴛᴏ remove the number from banlist.
@@ -121,7 +120,7 @@ many many more!
     // ===============================================================================
     // 🎮ᴍᴇᴇ6™ 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..
     // ===============================================================================
-    if (!Arc[0]) {
+    if (!ʍɛɛɨռք[0]) {
       const runtime = function (seconds) {
         seconds = Number(seconds);
         var d = Math.floor(seconds / (3600 * 24));
@@ -137,7 +136,7 @@ many many more!
       uptime = process.uptime();
       timestampe = speed();
       latensie = speed() - timestampe;
-      await υℓтяσηℓιєηт
+      await ʍɛɛℓιєηт
         .sendMessage(
           ᴍᴇᴇ6.chatId,
           {
@@ -163,10 +162,10 @@ many many more!
 ${MeeHelper}‍`,
           }
         )
-        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
     }
     var ᴍᴇᴇ6ʍօ = "⤥ 💡𝐂𝐨𝐦𝐦𝐚𝐧𝐝\n";
-    var command = Mee6Sitrep.get(Arc[0]);
+    var command = Mee6Sitrep.get(ʍɛɛɨռք[0]);
     if (command) {
       ᴍᴇᴇ6ʍօ += `⤤ ${
         (Mee6f, command.name === undefined ? "Null" : command.name)
@@ -183,7 +182,7 @@ ${MeeHelper}‍`,
         (command.description,
         command.description === undefined ? "Null" : command.description)
       }`;
-      return υℓтяσηℓιєηт
+      return ʍɛɛℓιєηт
         .sendMessage(
           ᴍᴇᴇ6.chatId,
           {
@@ -195,7 +194,7 @@ ${MeeHelper}‍`,
             caption: ᴍᴇᴇ6ʍօ,
           }
         )
-        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
     }
   },
 };

@@ -7,13 +7,13 @@ module.exports = {
   commandType: "Fun⚡",
   description: `Urban Dictionary`,
   ᴍᴇᴇ6ʍօʀɛ: `Use this command to find the meaning of a word in Urban Dictionary. Enter  *${ꜱɪɢɴ.Mee6IX}ud*  command.`,
-  async handle(υℓтяσηℓιєηт, chat, ᴍᴇᴇ6, Arc) {
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք) {
     try {
       var text = ``;
       if (!(ᴍᴇᴇ6.replyMessage === ``)) {
         text = ᴍᴇᴇ6.replyMessage;
-      } else if (Arc.length === 0) {
-        return await υℓтяσηℓιєηт
+      } else if (ʍɛɛɨռք.length === 0) {
+        return await ʍɛɛℓιєηт
           .sendMessage(
             ᴍᴇᴇ6.chatId,
             {
@@ -29,10 +29,10 @@ module.exports = {
             }
           )
           .catch((cᴇʀʀᴏʀ) => {
-            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+            ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
           });
       } else {
-        text = Arc.join(` `);
+        text = ʍɛɛɨռք.join(` `);
       }
 
       let Response = await ud.define(text);
@@ -59,11 +59,11 @@ module.exports = {
         result.thumbs_up +
         `  👎` +
         result.thumbs_down;
-      await υℓтяσηℓιєηт
+      await ʍɛɛℓιєηт
         .sendMessage(ᴍᴇᴇ6.chatId, msg, MessageType.text)
-        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
     } catch (cᴇʀʀᴏʀ) {
-      υℓтяσηℓιєηт.sendMessage(
+      ʍɛɛℓιєηт.sendMessage(
         ᴍᴇᴇ6.chatId,
         `*🎮ᴍᴇᴇ6™* 𝐝𝐢𝐝𝐧'𝐭 𝐰𝐨𝐫𝐤 𝐚𝐬 𝐞𝐱𝐩𝐞𝐜𝐭𝐞𝐝❗
 

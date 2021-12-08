@@ -8,9 +8,9 @@ module.exports = {
   description: `Text To Speech.`,
   ᴍᴇᴇ6ʍօʀɛ: `Use  *${ꜱɪɢɴ.Mee6IX}tts <text>*  or  *${ꜱɪɢɴ.Mee6IX}tts <text> | <language_code>*  to convert text to speech.
 You can also reply to a text message with syntax  *${ꜱɪɢɴ.Mee6IX}tr <language>*  to translate text.`,
-  async handle(υℓтяσηℓιєηт, chat, ᴍᴇᴇ6, Arc) {
-    if (Arc.length === 0) {
-      return await υℓтяσηℓιєηт
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք) {
+    if (ʍɛɛɨռք.length === 0) {
+      return await ʍɛɛℓιєηт
         .sendMessage(
           ᴍᴇᴇ6.chatId,
           {
@@ -28,20 +28,20 @@ You can also reply to a text message with syntax  *${ꜱɪɢɴ.Mee6IX}tr <langua
           }
         )
         .catch((cᴇʀʀᴏʀ) => {
-          ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+          ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
         });
     }
     let text = ``;
     let langCode = `en`;
-    for (var i = 0; i < Arc.length; i++) {
-      if (Arc[i] == `=`) {
-        langCode = Arc[i + 1];
+    for (var i = 0; i < ʍɛɛɨռք.length; i++) {
+      if (ʍɛɛɨռք[i] == `=`) {
+        langCode = ʍɛɛɨռք[i + 1];
         break;
       }
-      text += Arc[i] + ` `;
+      text += ʍɛɛɨռք[i] + ` `;
     }
     if (text.length > 200) {
-      await υℓтяσηℓιєηт
+      await ʍɛɛℓιєηт
         .sendMessage(
           ᴍᴇᴇ6.chatId,
           `*Total characters should be less than 200.*\nTotal characters for current input were {}.`.format(
@@ -49,7 +49,7 @@ You can also reply to a text message with syntax  *${ꜱɪɢɴ.Mee6IX}tr <langua
           ),
           MessageType.text
         )
-        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
     } else {
       try {
         const url = googleTTS.getAudioUrl(text, {
@@ -58,7 +58,7 @@ You can also reply to a text message with syntax  *${ꜱɪɢɴ.Mee6IX}tr <langua
           host: `https://translate.google.com`,
         });
         console.log(url);
-        await υℓтяσηℓιєηт
+        await ʍɛɛℓιєηт
           .sendMessage(
             ᴍᴇᴇ6.chatId,
             {
@@ -69,9 +69,9 @@ You can also reply to a text message with syntax  *${ꜱɪɢɴ.Mee6IX}tr <langua
               mimetype: Mimetype.mp4Audio,
             }
           )
-          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+          .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
       } catch (cᴇʀʀᴏʀ) {
-        υℓтяσηℓιєηт.sendMessage(
+        ʍɛɛℓιєηт.sendMessage(
           ᴍᴇᴇ6.chatId,
           `*🎮ᴍᴇᴇ6™* 𝐝𝐢𝐝𝐧'𝐭 𝐰𝐨𝐫𝐤 𝐚𝐬 𝐞𝐱𝐩𝐞𝐜𝐭𝐞𝐝❗
 

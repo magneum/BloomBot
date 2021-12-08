@@ -9,11 +9,11 @@ module.exports = {
   name: `update`,
   commandType: "Mee6💻System",
   description: `ᴛʜɪꜱ ᴄᴏᴍᴍᴀɴᴅ ᴄᴀɴ ʙᴇ ᴜꜱᴇᴅ ᴛᴏ ᴜᴘᴅᴀᴛᴇ ᴛʜᴇ ʙᴏᴛ`,
-  async handle(υℓтяσηℓιєηт, chat, ᴍᴇᴇ6, Arc) {
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք) {
     var str = ᴍᴇᴇ6.sender;
     var newString = str.substring(0, str.length - 15);
     if (!ᴍᴇᴇ6.fromMe) {
-      return await υℓтяσηℓιєηт
+      return await ʍɛɛℓιєηт
         .sendMessage(
           ᴍᴇᴇ6.chatId,
           {
@@ -33,9 +33,9 @@ module.exports = {
 ⚠️hahaha Nice Try! Only My Owner Can use that command!`,
           }
         )
-        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
     } else {
-      await υℓтяσηℓιєηт
+      await ʍɛɛℓιєηт
         .sendMessage(
           ᴍᴇᴇ6.chatId,
           {
@@ -60,7 +60,7 @@ module.exports = {
 𝘁𝗵𝗲𝗻 𝗣𝗹𝗲𝗮𝘀𝗲 𝗿𝗲𝗱𝗲𝗽𝗹𝗼𝘆 𝘆𝗼𝘂𝗿 𝗯𝗼𝘁!`,
           }
         )
-        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
       heroku
         .delete("/apps/" + ꜱɪɢɴ.HEROKU_BOT_NAME + "/dynos/" + "worker")
         .then((x) => console.log(x));

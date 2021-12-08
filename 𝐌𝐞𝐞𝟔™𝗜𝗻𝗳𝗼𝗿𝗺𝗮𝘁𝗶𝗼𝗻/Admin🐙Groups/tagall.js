@@ -1,10 +1,7 @@
 // ===============================================================================
 // 🎮ᴍᴇᴇ6™ ᴀᴅᴠᴀɴᴄᴇᴅ ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ 80+ ᴄᴏᴍᴍᴀɴᴅꜱ ꜰᴏʀ ʙᴏᴛʜ ᴘʀɪᴠᴀᴛᴇ ᴀɴᴅ ɢʀᴏᴜᴘ-ᴜꜱᴀɢᴇ
 // ===============================================================================
-const {
-  MessageType,
-  Mimetype
-} = require(`@adiwajshing/baileys`);
+const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const ℓιєηт = require("../../ᴍᴇᴇ6/catch");
 const ꜱɪɢɴ = require(`../../ᴍᴇᴇ6/ꜱɪɢɴ`);
 // ⬡••••••••⬡    𝐌𝐞𝐞𝟔™    ⬡••••••••⬡⬡••••••••⬡    𝐌𝐞𝐞𝟔™    ⬡••••••••⬡
@@ -13,14 +10,16 @@ module.exports = {
   commandType: "Admin🐙Groups",
   description: `command to tag evryone in a group.`,
   ᴍᴇᴇ6ʍօʀɛ: `Use this command to tag everyone in the group by either replying to a message or simply using  *${ꜱɪɢɴ.Mee6IX}tagall*  command.`,
-  async handle(υℓтяσηℓιєηт, chat, ᴍᴇᴇ6, Arc) {
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք) {
     if (!ᴍᴇᴇ6.isSenderGroupAdmin) {
-      return await υℓтяσηℓιєηт
+      return await ʍɛɛℓιєηт
         .sendMessage(
-          ᴍᴇᴇ6.chatId, {
+          ᴍᴇᴇ6.chatId,
+          {
             url: ꜱɪɢɴ.ERROR,
           },
-          MessageType.image, {
+          MessageType.image,
+          {
             mimetype: Mimetype.png,
             caption: `
 ⚠️𝗘𝗿𝗿𝗼𝗿: 
@@ -31,21 +30,23 @@ module.exports = {
 `,
           }
         )
-        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
     }
     if (!ᴍᴇᴇ6.isGroup) {
-      return await υℓтяσηℓιєηт
+      return await ʍɛɛℓιєηт
         .sendMessage(
-          ᴍᴇᴇ6.chatId, {
+          ᴍᴇᴇ6.chatId,
+          {
             url: ꜱɪɢɴ.ERROR,
           },
-          MessageType.image, {
+          MessageType.image,
+          {
             mimetype: Mimetype.jpeg,
             caption: `*⚠️ONLY IN GROUPS!*`,
           }
         )
         .catch((cᴇʀʀᴏʀ) => {
-          ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+          ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
         });
     }
     let members = [];
@@ -53,7 +54,7 @@ module.exports = {
       members[i] = ᴍᴇᴇ6.groupMembers[i].jid;
     }
     if (ᴍᴇᴇ6.isReply) {
-      υℓтяσηℓιєηт
+      ʍɛɛℓιєηт
         .sendMessage(ᴍᴇᴇ6.chatId, `*Everyone!*`, MessageType.text, {
           contextInfo: {
             stanzaId: ᴍᴇᴇ6.replyMessageId,
@@ -64,27 +65,27 @@ module.exports = {
             mentionedJid: members,
           },
         })
-        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
       return;
     }
-    if (Arc.length) {
-      υℓтяσηℓιєηт
-        .sendMessage(ᴍᴇᴇ6.chatId, Arc.join(` `), MessageType.text, {
+    if (ʍɛɛɨռք.length) {
+      ʍɛɛℓιєηт
+        .sendMessage(ᴍᴇᴇ6.chatId, ʍɛɛɨռք.join(` `), MessageType.text, {
           contextInfo: {
             mentionedJid: members,
           },
         })
-        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
       return;
     }
 
-    υℓтяσηℓιєηт
+    ʍɛɛℓιєηт
       .sendMessage(ᴍᴇᴇ6.chatId, `*Everyone!*`, MessageType.text, {
         contextInfo: {
           mentionedJid: members,
         },
       })
-      .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+      .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
     return;
   },
 };

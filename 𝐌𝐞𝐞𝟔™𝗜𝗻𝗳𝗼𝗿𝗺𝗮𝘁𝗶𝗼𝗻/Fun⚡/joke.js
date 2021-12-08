@@ -16,13 +16,13 @@ module.exports = {
   name: `joke`,
   commandType: `Fun⚡`,
   description: `Get any random Jokes`,
-  async handle(υℓтяσηℓιєηт, chat, ᴍᴇᴇ6, Arc) {
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք) {
     try {
       const dadJoke = await getDadjoke();
       console.log(ᴍᴇᴇ6.sender);
       var str = ᴍᴇᴇ6.sender;
       var newString = str.substring(0, str.length - 15);
-      await υℓтяσηℓιєηт
+      await ʍɛɛℓιєηт
         .sendMessage(
           ᴍᴇᴇ6.chatId,
           `*` + dadJoke + `*\n@${newString}`,
@@ -33,7 +33,7 @@ module.exports = {
             },
           }
         )
-        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
     } catch (err) {
       console.log(err);
     }

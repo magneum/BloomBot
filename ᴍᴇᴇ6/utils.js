@@ -3,7 +3,7 @@
 // ===============================================================================
 const { MessageType, Mimetype } = require("@adiwajshing/baileys");
 class Handlers {
-  constructor(υℓтяσηℓιєηт) {
+  constructor(ʍɛɛℓιєηт) {
     this.sendMsessage = this.sendMsessage;
   }
   sendMsessage(id, content) {

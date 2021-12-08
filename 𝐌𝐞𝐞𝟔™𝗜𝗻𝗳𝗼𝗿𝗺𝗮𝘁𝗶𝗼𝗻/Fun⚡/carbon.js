@@ -11,7 +11,7 @@ Example Usage,
 *${ꜱɪɢɴ.Mee6IX}carbon*  and reply to a text message.
 Use the -t flag after  *${ꜱɪɢɴ.Mee6IX}carbon*  to get the list of themes availble.
 In order to specify the theme, use  *${ꜱɪɢɴ.Mee6IX}carbon <text> -t <theme>* .`,
-  async handle(υℓтяσηℓιєηт, chat, ᴍᴇᴇ6, Arc) {
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք) {
     try {
       let themes = [
         `3024 night`,
@@ -44,8 +44,8 @@ In order to specify the theme, use  *${ꜱɪɢɴ.Mee6IX}carbon <text> -t <theme>
         `zenburn`,
       ];
       var code = ``;
-      if (Arc[0] == null && !ᴍᴇᴇ6.isReply) {
-        await υℓтяσηℓιєηт
+      if (ʍɛɛɨռք[0] == null && !ᴍᴇᴇ6.isReply) {
+        await ʍɛɛℓιєηт
           .sendMessage(
             ᴍᴇᴇ6.chatId,
             {
@@ -78,16 +78,16 @@ _verminal_  *|*  _vscode_
 _yeti_  *|*  _zenburn_`,
             }
           )
-          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+          .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
         return;
       } else if (ᴍᴇᴇ6.isReply && !ᴍᴇᴇ6.replyMessage) {
-        await υℓтяσηℓιєηт
+        await ʍɛɛℓιєηт
           .sendMessage(
             ᴍᴇᴇ6.chatId,
             `*☢️ᴍᴇᴇ6*\n\nThe replied message should be text.`,
             MessageType.text
           )
-          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+          .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
         return;
       } else if (ᴍᴇᴇ6.isReply) {
         code = ᴍᴇᴇ6.replyMessage;
@@ -106,14 +106,14 @@ _yeti_  *|*  _zenburn_`,
                 message += `\n${counter}. ${theme}`;
                 counter += 1;
               });
-              await υℓтяσηℓιєηт.sendMessage(
+              await ʍɛɛℓιєηт.sendMessage(
                 ᴍᴇᴇ6.chatId,
                 `` + message + ``,
                 MessageType.text
               );
               return;
             } else {
-              await υℓтяσηℓιєηт
+              await ʍɛɛℓιєηт
                 .sendMessage(
                   ᴍᴇᴇ6.chatId,
                   `*☢️ᴍᴇᴇ6*\n\nNo input provided.
@@ -121,7 +121,7 @@ Please use the command  *${ꜱɪɢɴ.Mee6IX}carbon <text>*  or reply to a text m
                   MessageType.text
                 )
                 .catch((cᴇʀʀᴏʀ) => {
-                  ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+                  ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
                 });
               return;
             }
@@ -130,7 +130,7 @@ Please use the command  *${ꜱɪɢɴ.Mee6IX}carbon <text>*  or reply to a text m
           code = body[0].replace(ᴍᴇᴇ6.body[0] + ᴍᴇᴇ6.commandName + ` `, ``);
           themeInput = body[1].substring(1);
           if (!themes.includes(themeInput)) {
-            await υℓтяσηℓιєηт
+            await ʍɛɛℓιєηт
               .sendMessage(
                 ᴍᴇᴇ6.chatId,
                 `*☢️ᴍᴇᴇ6*\n\nPlease enter a valid theme.
@@ -138,7 +138,7 @@ Do note that theme names are  *case sensitive*${ꜱɪɢɴ.Mee6IX}`,
                 MessageType.text
               )
               .catch((cᴇʀʀᴏʀ) => {
-                ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+                ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
               });
             return;
           }
@@ -150,31 +150,31 @@ Do note that theme names are  *case sensitive*${ꜱɪɢɴ.Mee6IX}`,
         }
       }
       try {
-        await υℓтяσηℓιєηт
+        await ʍɛɛℓιєηт
           .sendMessage(
             ᴍᴇᴇ6.chatId,
             `*☢️ᴍᴇᴇ6*\n\nConverting your text into a code snippet. Please wait...`,
             MessageType.text
           )
-          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+          .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
         const carbon = new Carbon.createCarbon()
           .setCode(code)
           .setPrettify(true)
           .setTheme(themeInput);
         const output = await Carbon.generateCarbon(carbon);
-        await υℓтяσηℓιєηт
+        await ʍɛɛℓιєηт
           .sendMessage(ᴍᴇᴇ6.chatId, output, MessageType.image, {
             mimetype: Mimetype.png,
             caption: `*☢️ᴍᴇᴇ6*\n\n
 *<< Here's your carbon image! >>*
 Colour Scheme: {}`.format(themeInput),
           })
-          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+          .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
       } catch (cᴇʀʀᴏʀ) {
         throw cᴇʀʀᴏʀ;
       }
     } catch (cᴇʀʀᴏʀ) {
-      await υℓтяσηℓιєηт.sendMessage(
+      await ʍɛɛℓιєηт.sendMessage(
         ᴍᴇᴇ6.chatId,
         `*🎮ᴍᴇᴇ6™* 𝐝𝐢𝐝𝐧'𝐭 𝐰𝐨𝐫𝐤 𝐚𝐬 𝐞𝐱𝐩𝐞𝐜𝐭𝐞𝐝❗
 

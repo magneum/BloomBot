@@ -9,12 +9,12 @@ module.exports = {
   ᴍᴇᴇ6ʍօʀɛ: `Use  *${ꜱɪɢɴ.Mee6IX}tr <text> = <language>*  to translate text to the specified language. 
 You can also reply to a text message with syntax  *${ꜱɪɢɴ.Mee6IX}tr <language>*  to translate text.
 If you do not specify a language, it defaults to <English class=''></English>`,
-  async handle(υℓтяσηℓιєηт, chat, ᴍᴇᴇ6, Arc) {
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք) {
     try {
       var text = ``;
       var language = ``;
-      if (Arc.length === 0) {
-        return await υℓтяσηℓιєηт
+      if (ʍɛɛɨռք.length === 0) {
+        return await ʍɛɛℓιєηт
           .sendMessage(
             ᴍᴇᴇ6.chatId,
             {
@@ -30,7 +30,7 @@ If you do not specify a language, it defaults to <English class=''></English>`,
             }
           )
           .catch((cᴇʀʀᴏʀ) => {
-            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+            ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
           });
       }
       if (!ᴍᴇᴇ6.isReply) {
@@ -50,18 +50,18 @@ If you do not specify a language, it defaults to <English class=''></English>`,
         }
       } else if (ᴍᴇᴇ6.replyMessage) {
         text = ᴍᴇᴇ6.replyMessage;
-        language = Arc[0];
+        language = ʍɛɛɨռք[0];
       } else {
-        await υℓтяσηℓιєηт
+        await ʍɛɛℓιєηт
           .sendMessage(
             ᴍᴇᴇ6.chatId,
             `Please reply to a text message.`,
             MessageType.text
           )
-          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+          .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
       }
       if (text.length > 4000) {
-        await υℓтяσηℓιєηт
+        await ʍɛɛℓιєηт
           .sendMessage(
             ᴍᴇᴇ6.chatId,
             `*Total characters should be less than 4000.*\nTotal characters for current input were {}.`.format(
@@ -69,13 +69,13 @@ If you do not specify a language, it defaults to <English class=''></English>`,
             ),
             MessageType.text
           )
-          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+          .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
       }
       await translate(text, {
         to: language,
       })
         .then((res) => {
-          υℓтяσηℓιєηт.sendMessage(
+          ʍɛɛℓιєηт.sendMessage(
             ᴍᴇᴇ6.chatId,
             `*TR:* Translate [*{}* -> *{}*]\n\n{}`.format(
               res.from.language.iso,
@@ -85,9 +85,9 @@ If you do not specify a language, it defaults to <English class=''></English>`,
             MessageType.text
           );
         })
-        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
     } catch (cᴇʀʀᴏʀ) {
-      υℓтяσηℓιєηт.sendMessage(
+      ʍɛɛℓιєηт.sendMessage(
         ᴍᴇᴇ6.chatId,
         `*🎮ᴍᴇᴇ6™* 𝐝𝐢𝐝𝐧'𝐭 𝐰𝐨𝐫𝐤 𝐚𝐬 𝐞𝐱𝐩𝐞𝐜𝐭𝐞𝐝❗
 

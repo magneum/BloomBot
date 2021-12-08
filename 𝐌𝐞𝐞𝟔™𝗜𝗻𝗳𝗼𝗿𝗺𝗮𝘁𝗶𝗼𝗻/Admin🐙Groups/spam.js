@@ -1,7 +1,4 @@
-const {
-  MessageType,
-  Mimetype
-} = require(`@adiwajshing/baileys`);
+const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const ꜱɪɢɴ = require(`../../ᴍᴇᴇ6/ꜱɪɢɴ`);
 const ℓιєηт = require("../../ᴍᴇᴇ6/catch");
 var Mee6Regex = new RegExp(ꜱɪɢɴ.Mee6IX, "g");
@@ -12,14 +9,16 @@ module.exports = {
   commandType: "Admin🐙Groups",
   description: `Spam Messages.
 ${ꜱɪɢɴ.Mee6IX}spam <count> <text>*`,
-  async handle(υℓтяσηℓιєηт, chat, ᴍᴇᴇ6, Arc) {
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք) {
     if (ᴍᴇᴇ6.isGroup && !ᴍᴇᴇ6.isSenderGroupAdmin) {
-      return await υℓтяσηℓιєηт
+      return await ʍɛɛℓιєηт
         .sendMessage(
-          ᴍᴇᴇ6.chatId, {
+          ᴍᴇᴇ6.chatId,
+          {
             url: ꜱɪɢɴ.ERROR,
           },
-          MessageType.image, {
+          MessageType.image,
+          {
             mimetype: Mimetype.png,
             caption: `
 ⚠️𝗘𝗿𝗿𝗼𝗿: 
@@ -30,16 +29,18 @@ ${ꜱɪɢɴ.Mee6IX}spam <count> <text>*`,
 `,
           }
         )
-        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
     }
-    let count = Number(Arc.shift());
+    let count = Number(ʍɛɛɨռք.shift());
     if (isNaN(count)) {
-      return await υℓтяσηℓιєηт
+      return await ʍɛɛℓιєηт
         .sendMessage(
-          ᴍᴇᴇ6.chatId, {
+          ᴍᴇᴇ6.chatId,
+          {
             url: ꜱɪɢɴ.ARC,
           },
-          MessageType.image, {
+          MessageType.image,
+          {
             mimetype: Mimetype.jpeg,
             caption: `*⚠️Seems like someone forgot to give count and text!*
 
@@ -48,31 +49,31 @@ ${ꜱɪɢɴ.Mee6IX}spam <count> <text>`,
           }
         )
         .catch((cᴇʀʀᴏʀ) => {
-          ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+          ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
         });
     }
     if (count > 0) {
       count = parseInt(count);
     } else {
-      await υℓтяσηℓιєηт
+      await ʍɛɛℓιєηт
         .sendMessage(ᴍᴇᴇ6.chatId, `Count can't be zero.`, MessageType.text)
-        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
       return 0;
     }
-    if (Arc.length) {
-      let text = Arc.join(" ");
+    if (ʍɛɛɨռք.length) {
+      let text = ʍɛɛɨռք.join(" ");
       for (let i = 0; i < count; i++)
-        await υℓтяσηℓιєηт
-        .sendMessage(ᴍᴇᴇ6.chatId, text, MessageType.text)
-        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+        await ʍɛɛℓιєηт
+          .sendMessage(ᴍᴇᴇ6.chatId, text, MessageType.text)
+          .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
     } else {
-      await υℓтяσηℓιєηт
+      await ʍɛɛℓιєηт
         .sendMessage(
           ᴍᴇᴇ6.chatId,
           `No text found for spamming!!! Please read !help spam.`,
           MessageType.text
         )
-        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
     }
   },
 };

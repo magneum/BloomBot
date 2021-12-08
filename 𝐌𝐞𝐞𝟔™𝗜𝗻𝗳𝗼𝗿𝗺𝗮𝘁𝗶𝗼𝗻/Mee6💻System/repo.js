@@ -6,12 +6,12 @@ module.exports = {
   name: `repo`,
   commandType: "Mee6💻System",
   description: `ᴄʜᴇᴄᴋ ᴍᴇᴇ6 ʀᴇᴘᴏ`,
-  async handle(υℓтяσηℓιєηт, chat, ᴍᴇᴇ6, Arc, Mee6Sitrep) {
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք, Mee6Sitrep) {
     var str = ᴍᴇᴇ6.sender;
     var newString = str.substring(0, str.length - 15);
     timestampe = speed();
     latensie = speed() - timestampe;
-    await υℓтяσηℓιєηт
+    await ʍɛɛℓιєηт
       .sendMessage(
         ᴍᴇᴇ6.chatId,
         {
@@ -28,16 +28,13 @@ module.exports = {
 ⧪ 𝗔𝗱𝘃𝗮𝗻𝗰𝗲 𝗪𝗵𝗮𝘁𝘀𝗮𝗽𝗽 𝗕𝗼𝘁 ⧪
 
 *💞Dҽαɾ* @${newString}
-⧪➛ 𝗛𝗲𝗿𝗲 𝗜𝘀 𝗠𝗲𝗲𝟲 𝗥𝗲𝗽𝗼𝘀𝗶𝘁𝗼𝗿𝘆 
-ʟɪɴᴋ: https://github.com/Krakinz/Mee6
+⧪➛ 𝗛𝗲𝗿𝗲 𝗜𝘀 𝗠𝗲𝗲𝟲 𝗥𝗲𝗽𝗼𝘀𝗶𝘁𝗼𝗿𝘆: https://github.com/Krakinz/Mee6
 
 
-*⬡••••••••⬡    𝐌𝐞𝐞𝟔™    ⬡••••••••⬡*
-⧪➛ 𝗝𝗼𝗶𝗻 𝗦𝘂𝗽𝗽𝗼𝗿𝘁 𝗚𝗿𝗼𝘂𝗽 (🐞RΣPӨЯƬ)
-🔸ᴡʜᴀᴛꜱᴀᴘᴘ https://chat.whatsapp.com/FmMcEeSqZQw85qAkgUs3f5
-🔸ᴅɪꜱᴄᴏʀᴅ https://discord.gg/xcFN6NDHEV`,
+⧪➛ 𝗝𝗼𝗶𝗻 𝗦𝘂𝗽𝗽𝗼𝗿𝘁 𝗚𝗿𝗼𝘂𝗽: https://chat.whatsapp.com/FmMcEeSqZQw85qAkgUs3f5
+*⬡••••••••⬡    𝐌𝐞𝐞𝟔™    ⬡••••••••⬡*`,
         }
       )
-      .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+      .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
   },
 };

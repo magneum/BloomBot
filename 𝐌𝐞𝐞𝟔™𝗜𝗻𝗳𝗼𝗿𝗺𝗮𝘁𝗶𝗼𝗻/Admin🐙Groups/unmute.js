@@ -15,14 +15,16 @@ module.exports = {
   name: `unmute`,
   commandType: "Admin🐙Groups",
   description: `Unmute non-admin members of a group`,
-  async handle(υℓтяσηℓιєηт, chat, ᴍᴇᴇ6, Arc) {
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք) {
     if (!ᴍᴇᴇ6.isSenderGroupAdmin) {
-      return await υℓтяσηℓιєηт
+      return await ʍɛɛℓιєηт
         .sendMessage(
-          ᴍᴇᴇ6.chatId, {
+          ᴍᴇᴇ6.chatId,
+          {
             url: ꜱɪɢɴ.ERROR,
           },
-          MessageType.image, {
+          MessageType.image,
+          {
             mimetype: Mimetype.png,
             caption: `
 ⚠️𝗘𝗿𝗿𝗼𝗿: 
@@ -33,28 +35,28 @@ module.exports = {
 `,
           }
         )
-        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
     }
     if (!ᴍᴇᴇ6.isGroup) {
-      υℓтяσηℓιєηт
+      ʍɛɛℓιєηт
         .sendMessage(
           ᴍᴇᴇ6.chatId,
           `*${ꜱɪɢɴ.Mee6IX}unmute*  command is only applicable for a group chat.`,
           MessageType.text
         )
-        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
       return;
     }
-    υℓтяσηℓιєηт
+    ʍɛɛℓιєηт
       .groupSettingChange(ᴍᴇᴇ6.chatId, GroupSettingChange.messageSend, false)
-      .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
-    υℓтяσηℓιєηт
+      .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+    ʍɛɛℓιєηт
       .sendMessage(
         ᴍᴇᴇ6.chatId,
         `Chat permissions changed to  *all group members*${ꜱɪɢɴ.Mee6IX}`,
         MessageType.text
       )
-      .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+      .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
   },
 };
 // ===============================================================================

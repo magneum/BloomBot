@@ -6,9 +6,9 @@ module.exports = {
   name: `anime`,
   commandType: "Anime😈",
   description: `Get Anime Informations From MyAnimeList`,
-  async handle(υℓтяσηℓιєηт, chat, ᴍᴇᴇ6, Arc) {
-    if (Arc.length === 0) {
-      return await υℓтяσηℓιєηт
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք) {
+    if (ʍɛɛɨռք.length === 0) {
+      return await ʍɛɛℓιєηт
         .sendMessage(
           ᴍᴇᴇ6.chatId,
           {
@@ -24,10 +24,10 @@ ${ꜱɪɢɴ.Mee6IX} <anime name>`,
           }
         )
         .catch((cᴇʀʀᴏʀ) => {
-          ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+          ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
         });
     }
-    const name = Arc.join(` `);
+    const name = ʍɛɛɨռք.join(` `);
     malScraper.getInfoFromName(name).then(async (data) => {
       const AnimeInfos = `💡𝐓𝐢𝐭𝐥𝐞: *${data.title}*
 🧀𝗣𝗿𝗲𝗺𝗶𝗲𝗿𝗲𝗱: _${data.premiered}_
@@ -52,7 +52,7 @@ ${ꜱɪɢɴ.Mee6IX} <anime name>`,
 🕸️𝗦𝘁𝗮𝘁𝘂𝘀: _${data.status}_
 🎯𝗜𝗱: _${data.id}_
 📥𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱: _${data.url}_`;
-      await υℓтяσηℓιєηт
+      await ʍɛɛℓιєηт
         .sendMessage(
           ᴍᴇᴇ6.chatId,
           {
@@ -64,7 +64,7 @@ ${ꜱɪɢɴ.Mee6IX} <anime name>`,
             caption: AnimeInfos,
           }
         )
-        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
     });
   },
 };

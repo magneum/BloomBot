@@ -8,19 +8,19 @@ module.exports = {
   commandType: "Fun⚡",
   description: `command to convert image to sticker`,
   ᴍᴇᴇ6ʍօʀɛ: `Use this command to convert any image from your chat to a sticker. Reply to an image message with the command  *${ꜱɪɢɴ.Mee6IX}sticker*  to convert and send that image as a sticker.`,
-  async handle(υℓтяσηℓιєηт, chat, ᴍᴇᴇ6, Arc) {
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք) {
     try {
       const convertToSticker = async (imageId, replyChat) => {
-        await υℓтяσηℓιєηт
+        await ʍɛɛℓιєηт
           .sendMessage(
             ᴍᴇᴇ6.chatId,
             `Your sticker is downloading. Please wait...`,
             MessageType.text
           )
-          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
-        const filePath = await υℓтяσηℓιєηт
+          .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+        const filePath = await ʍɛɛℓιєηт
           .downloadAndSaveMediaMessage(replyChat, `./ᴛᴇᴍᴘ/ct-` + imageId)
-          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+          .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
         const stickerPath = `./ᴛᴇᴍᴘ/st-` + imageId + `.webp`;
         if (ᴍᴇᴇ6.type === `image` || ᴍᴇᴇ6.isReplyImage) {
           ffmpeg(filePath)
@@ -30,14 +30,14 @@ module.exports = {
             )
             .save(stickerPath)
             .on(`end`, async () => {
-              await υℓтяσηℓιєηт
+              await ʍɛɛℓιєηт
                 .sendMessage(
                   ᴍᴇᴇ6.chatId,
                   fs.readFileSync(stickerPath),
                   MessageType.sticker
                 )
                 .catch((cᴇʀʀᴏʀ) => {
-                  ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+                  ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
                 });
               fs.unlink(filePath, (cᴇʀʀᴏʀ) => {
                 if (cᴇʀʀᴏʀ) {
@@ -55,7 +55,7 @@ module.exports = {
               });
             })
             .on(`error`, async (CYΣЯЯ) => {
-              υℓтяσηℓιєηт.sendMessage(
+              ʍɛɛℓιєηт.sendMessage(
                 ᴍᴇᴇ6.chatId,
                 `ꜱᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ ᴡʀᴏɴɢ.ʜᴇʀᴇ ᴀʀᴇ ꜱᴏᴍᴇ ʟᴏɢꜱ ꜱɪɴᴄᴇ ᴡʜᴇɴ ᴛʜᴇ ʙᴏᴛ ᴡᴀꜱ ɴᴏᴛ ʀᴇꜱᴘᴏɴᴅɪɴɢ ᴀꜱ ᴇxᴘᴇᴄᴛᴇᴅ.
 
@@ -88,14 +88,14 @@ module.exports = {
           )
           .save(stickerPath)
           .on(`end`, async () => {
-            await υℓтяσηℓιєηт
+            await ʍɛɛℓιєηт
               .sendMessage(
                 ᴍᴇᴇ6.chatId,
                 fs.readFileSync(stickerPath),
                 MessageType.sticker
               )
               .catch((cᴇʀʀᴏʀ) => {
-                ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+                ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
               });
             fs.unlink(filePath, (cᴇʀʀᴏʀ) => {
               if (cᴇʀʀᴏʀ) {
@@ -113,7 +113,7 @@ module.exports = {
             });
           })
           .on(`cᴇʀʀᴏʀ`, async (CYΣЯЯ) => {
-            return υℓтяσηℓιєηт.sendMessage(
+            return ʍɛɛℓιєηт.sendMessage(
               ᴍᴇᴇ6.chatId,
               `ꜱᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ ᴡʀᴏɴɢ.ʜᴇʀᴇ ᴀʀᴇ ꜱᴏᴍᴇ ʟᴏɢꜱ ꜱɪɴᴄᴇ ᴡʜᴇɴ ᴛʜᴇ ʙᴏᴛ ᴡᴀꜱ ɴᴏᴛ ʀᴇꜱᴘᴏɴᴅɪɴɢ ᴀꜱ ᴇxᴘᴇᴄᴛᴇᴅ.
 
@@ -141,17 +141,17 @@ module.exports = {
         var imageId = chat.message.extendedTextMessage.contextInfo.stanzaId;
         convertToSticker(imageId, replyChatObject);
       } else {
-        υℓтяσηℓιєηт
+        ʍɛɛℓιєηт
           .sendMessage(
             ᴍᴇᴇ6.chatId,
             `Please tag a valid image/video/gif message to convert to sticker.`,
             MessageType.text
           )
-          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+          .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
       }
       return;
     } catch (CYΣЯЯ) {
-      υℓтяσηℓιєηт.sendMessage(
+      ʍɛɛℓιєηт.sendMessage(
         ᴍᴇᴇ6.chatId,
         `ꜱᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ ᴡʀᴏɴɢ.ʜᴇʀᴇ ᴀʀᴇ ꜱᴏᴍᴇ ʟᴏɢꜱ ꜱɪɴᴄᴇ ᴡʜᴇɴ ᴛʜᴇ ʙᴏᴛ ᴡᴀꜱ ɴᴏᴛ ʀᴇꜱᴘᴏɴᴅɪɴɢ ᴀꜱ ᴇxᴘᴇᴄᴛᴇᴅ.
 ENTER VALID FILE!

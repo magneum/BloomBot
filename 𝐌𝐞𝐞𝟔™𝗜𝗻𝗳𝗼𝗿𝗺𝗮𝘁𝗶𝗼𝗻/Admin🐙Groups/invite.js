@@ -1,21 +1,20 @@
-const {
-  MessageType,
-  Mimetype
-} = require(`@adiwajshing/baileys`);
+const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const ℓιєηт = require("../../ᴍᴇᴇ6/catch");
 const ꜱɪɢɴ = require(`../../ᴍᴇᴇ6/ꜱɪɢɴ`);
 module.exports = {
   name: `invite`,
   commandType: "Admin🐙Groups",
   description: `Use this command to send a group invite link in the group or personally to someone.`,
-  async handle(υℓтяσηℓιєηт, chat, ᴍᴇᴇ6, Arc) {
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք) {
     if (!ᴍᴇᴇ6.isSenderGroupAdmin) {
-      return await υℓтяσηℓιєηт
+      return await ʍɛɛℓιєηт
         .sendMessage(
-          ᴍᴇᴇ6.chatId, {
+          ᴍᴇᴇ6.chatId,
+          {
             url: ꜱɪɢɴ.ERROR,
           },
-          MessageType.image, {
+          MessageType.image,
+          {
             mimetype: Mimetype.png,
             caption: `
 ⚠️𝗘𝗿𝗿𝗼𝗿: 
@@ -26,43 +25,43 @@ module.exports = {
 `,
           }
         )
-        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
     }
     if (!ᴍᴇᴇ6.isGroup) {
-      υℓтяσηℓιєηт
+      ʍɛɛℓιєηт
         .sendMessage(
           ᴍᴇᴇ6.chatId,
           `command only applicable in a group chat.`,
           MessageType.text
         )
-        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
       return;
     }
-    const code = await υℓтяσηℓιєηт.groupInviteCode(ᴍᴇᴇ6.chatId);
+    const code = await ʍɛɛℓιєηт.groupInviteCode(ᴍᴇᴇ6.chatId);
     if (ᴍᴇᴇ6.isReply) {
-      υℓтяσηℓιєηт
+      ʍɛɛℓιєηт
         .sendMessage(
           chat.message.extendedTextMessage.contextInfo.participant,
           `https://chat.whatsapp.com/` + code,
           MessageType.text
         )
-        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
-      υℓтяσηℓιєηт
+        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+      ʍɛɛℓιєηт
         .sendMessage(
           ᴍᴇᴇ6.chatId,
           `Invite link sent in DM, please check.`,
           MessageType.text
         )
-        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
       return;
     }
-    υℓтяσηℓιєηт
+    ʍɛɛℓιєηт
       .sendMessage(
         ᴍᴇᴇ6.chatId,
         `https://chat.whatsapp.com/` + code,
         MessageType.text
       )
-      .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+      .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
     return;
   },
 };

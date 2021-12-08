@@ -1,21 +1,20 @@
-const {
-  MessageType,
-  Mimetype
-} = require(`@adiwajshing/baileys`);
+const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const ℓιєηт = require("../../ᴍᴇᴇ6/catch");
 const ꜱɪɢɴ = require(`../../ᴍᴇᴇ6/ꜱɪɢɴ`);
 module.exports = {
   name: `kick`,
   commandType: "Admin🐙Groups",
   description: `Use this command to kick people from a group by tagging them  *${ꜱɪɢɴ.Mee6IX}kick @<person-to-kick>*  or replying to them  *${ꜱɪɢɴ.Mee6IX}kick*${ꜱɪɢɴ.Mee6IX}`,
-  async handle(υℓтяσηℓιєηт, chat, ᴍᴇᴇ6, Arc) {
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք) {
     if (!ᴍᴇᴇ6.isSenderGroupAdmin) {
-      return await υℓтяσηℓιєηт
+      return await ʍɛɛℓιєηт
         .sendMessage(
-          ᴍᴇᴇ6.chatId, {
+          ᴍᴇᴇ6.chatId,
+          {
             url: ꜱɪɢɴ.ERROR,
           },
-          MessageType.image, {
+          MessageType.image,
+          {
             mimetype: Mimetype.png,
             caption: `
 ⚠️𝗘𝗿𝗿𝗼𝗿: 
@@ -26,16 +25,16 @@ module.exports = {
 `,
           }
         )
-        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
     }
     if (!ᴍᴇᴇ6.isGroup) {
-      υℓтяσηℓιєηт
+      ʍɛɛℓιєηт
         .sendMessage(
           ᴍᴇᴇ6.chatId,
           `command only applicable in a group chat.`,
           MessageType.text
         )
-        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
       return;
     }
     let owner = ᴍᴇᴇ6.chatId.split(`-`)[0];
@@ -43,26 +42,26 @@ module.exports = {
       let PersonToRemove =
         chat.message.extendedTextMessage.contextInfo.participant;
       if (PersonToRemove === owner + `@s.whatsapp.net`) {
-        υℓтяσηℓιєηт
+        ʍɛɛℓιєηт
           .sendMessage(
             ᴍᴇᴇ6.chatId,
             `*` + owner + ` is the owner of the group*`,
             MessageType.text
           )
           .catch((cᴇʀʀᴏʀ) => {
-            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+            ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
           });
         return;
       }
       if (PersonToRemove === ᴍᴇᴇ6.owner) {
-        υℓтяσηℓιєηт
+        ʍɛɛℓιєηт
           .sendMessage(
             ᴍᴇᴇ6.chatId,
             `Why man, why?! Why would you use my powers to kick myself from the group?!🥺\n*Request Rejected.* 😤`,
             MessageType.text
           )
           .catch((cᴇʀʀᴏʀ) => {
-            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+            ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
           });
         return;
       }
@@ -80,22 +79,22 @@ module.exports = {
         }
       };
       if (!isMember) {
-        υℓтяσηℓιєηт
+        ʍɛɛℓιєηт
           .sendMessage(
             ᴍᴇᴇ6.chatId,
             `*person is not in the group*`,
             MessageType.text
           )
           .catch((cᴇʀʀᴏʀ) => {
-            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+            ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
           });
       }
       try {
         if (PersonToRemove) {
-          υℓтяσηℓιєηт
+          ʍɛɛℓιєηт
             .groupRemove(ᴍᴇᴇ6.chatId, [PersonToRemove])
             .catch((cᴇʀʀᴏʀ) => {
-              ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+              ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
             });
           return;
         }
@@ -104,71 +103,71 @@ module.exports = {
       }
       return;
     }
-    if (!Arc[0]) {
-      υℓтяσηℓιєηт
+    if (!ʍɛɛɨռք[0]) {
+      ʍɛɛℓιєηт
         .sendMessage(
           ᴍᴇᴇ6.chatId,
           `Reply to the person you want to kick or tag them.\n\nFor instance,  *${ꜱɪɢɴ.Mee6IX}kick @<person-to-kick>*  or reply using  *${ꜱɪɢɴ.Mee6IX}kick*${ꜱɪɢɴ.Mee6IX}`,
           MessageType.text
         )
-        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
       return;
     }
-    if (Arc[0][0] == `@`) {
-      const number = Arc[0].substring(1);
+    if (ʍɛɛɨռք[0][0] == `@`) {
+      const number = ʍɛɛɨռք[0].substring(1);
       if (isNaN(number)) {
-        υℓтяσηℓιєηт
+        ʍɛɛℓιєηт
           .sendMessage(
             ᴍᴇᴇ6.chatId,
             `Reply to the person you want to kick or tag them.\n\nFor instance,  *${ꜱɪɢɴ.Mee6IX}kick @<person-to-kick>*  or reply using  *${ꜱɪɢɴ.Mee6IX}kick*${ꜱɪɢɴ.Mee6IX}`,
             MessageType.text
           )
           .catch((cᴇʀʀᴏʀ) => {
-            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+            ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
           });
         return;
       }
 
       if (number + `@s.whatsapp.net` === ᴍᴇᴇ6.owner) {
-        υℓтяσηℓιєηт
+        ʍɛɛℓιєηт
           .sendMessage(
             ᴍᴇᴇ6.chatId,
             `Why man, why?! Why would you use my powers to kick myself from the group?!🥺\n*Request Rejected.* 😤`,
             MessageType.text
           )
           .catch((cᴇʀʀᴏʀ) => {
-            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+            ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
           });
         return;
       }
 
       if (!(number === owner)) {
-        υℓтяσηℓιєηт
+        ʍɛɛℓιєηт
           .groupRemove(ᴍᴇᴇ6.chatId, [number + `@s.whatsapp.net`])
           .catch((cᴇʀʀᴏʀ) => {
-            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+            ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
           });
         return;
       } else {
-        υℓтяσηℓιєηт
+        ʍɛɛℓιєηт
           .sendMessage(
             ᴍᴇᴇ6.chatId,
             `*` + owner + ` is the owner of the group*`,
             MessageType.text
           )
           .catch((cᴇʀʀᴏʀ) => {
-            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+            ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
           });
         return;
       }
     }
-    υℓтяσηℓιєηт
+    ʍɛɛℓιєηт
       .sendMessage(
         ᴍᴇᴇ6.chatId,
         `Reply to the person you want to kick or tag them.\n\nFor instance,  *${ꜱɪɢɴ.Mee6IX}kick @<person-to-kick>*  or reply using  *${ꜱɪɢɴ.Mee6IX}kick*${ꜱɪɢɴ.Mee6IX}`,
         MessageType.text
       )
-      .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+      .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
   },
 };
 // ===============================================================================

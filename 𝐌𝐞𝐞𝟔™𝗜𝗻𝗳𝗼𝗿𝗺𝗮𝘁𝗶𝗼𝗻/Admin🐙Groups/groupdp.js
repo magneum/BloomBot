@@ -1,7 +1,4 @@
-const {
-  MessageType,
-  Mimetype
-} = require(`@adiwajshing/baileys`);
+const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const ℓιєηт = require("../../ᴍᴇᴇ6/catch");
 const ꜱɪɢɴ = require(`../../ᴍᴇᴇ6/ꜱɪɢɴ`);
 const ffmpeg = require(`fluent-ffmpeg`);
@@ -11,52 +8,54 @@ module.exports = {
   commandType: "Admin🐙Groups",
   description: `Use this command to change the group's icon.
 Tag image with the command or send the desired image with caption as the command`,
-  async handle(υℓтяσηℓιєηт, chat, ᴍᴇᴇ6, Arc) {
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք) {
     if (!ᴍᴇᴇ6.isGroup) {
-      await υℓтяσηℓιєηт
+      await ʍɛɛℓιєηт
         .sendMessage(
           ᴍᴇᴇ6.chatId,
           `This command is only applicable in a group chat.`,
           MessageType.text
         )
-        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
       return;
     }
     if (!ᴍᴇᴇ6.isImage && !ᴍᴇᴇ6.isReplyImage) {
-      await υℓтяσηℓιєηт
+      await ʍɛɛℓιєηт
         .sendMessage(
           ᴍᴇᴇ6.chatId,
           `Please reply or caption the image you want to make the group icon.`,
           MessageType.text
         )
-        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
       return;
     }
-    var update = await υℓтяσηℓιєηт
+    var update = await ʍɛɛℓιєηт
       .sendMessage(
         ᴍᴇᴇ6.chatId,
         `Chnaging icon/group image...`,
         MessageType.text
       )
-      .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+      .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
     var imageId = chat.key.id;
     const fileName = `./ᴛᴇᴍᴘ/change_pic` + imageId;
     if (ᴍᴇᴇ6.isImage) {
-      var filePath = await υℓтяσηℓιєηт
-        .downloadAndSaveMediaMessage({
+      var filePath = await ʍɛɛℓιєηт
+        .downloadAndSaveMediaMessage(
+          {
             message: chat.message,
           },
           fileName
         )
-        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
     } else {
-      var filePath = await υℓтяσηℓιєηт
-        .downloadAndSaveMediaMessage({
+      var filePath = await ʍɛɛℓιєηт
+        .downloadAndSaveMediaMessage(
+          {
             message: chat.message.extendedTextMessage.contextInfo.quotedMessage,
           },
           fileName
         )
-        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
     }
 
     const imagePath = `./ᴛᴇᴍᴘ/image-` + imageId + `.png`;
@@ -67,10 +66,10 @@ Tag image with the command or send the desired image with caption as the command
       )
       .save(imagePath)
       .on(`end`, async () => {
-        υℓтяσηℓιєηт
+        ʍɛɛℓιєηт
           .updateProfilePicture(ᴍᴇᴇ6.chatId, fs.readFileSync(imagePath))
           .catch((cᴇʀʀᴏʀ) => {
-            ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+            ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
           });
         fs.unlink(imagePath, (cᴇʀʀᴏʀ) => {
           if (cᴇʀʀᴏʀ) console.log(cᴇʀʀᴏʀ);

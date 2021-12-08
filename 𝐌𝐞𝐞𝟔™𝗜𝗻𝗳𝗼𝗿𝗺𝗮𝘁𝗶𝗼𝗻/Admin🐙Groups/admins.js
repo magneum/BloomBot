@@ -1,22 +1,19 @@
-const {
-  MessageType,
-  Mimetype
-} = require(`@adiwajshing/baileys`);
+const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const ℓιєηт = require("../../ᴍᴇᴇ6/catch");
 const ꜱɪɢɴ = require(`../../ᴍᴇᴇ6/ꜱɪɢɴ`);
 module.exports = {
   name: `admins`,
   commandType: "Admin🐙Groups",
   description: `Tag admins of a group (either as a reply to another message or a direct tag).`,
-  async handle(υℓтяσηℓιєηт, chat, ᴍᴇᴇ6, Arc) {
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք) {
     if (!ᴍᴇᴇ6.isGroup) {
-      υℓтяσηℓιєηт
+      ʍɛɛℓιєηт
         .sendMessage(
           ᴍᴇᴇ6.chatId,
           `*${ꜱɪɢɴ.Mee6IX}admins*  command is only applicable for group chats.`,
           MessageType.text
         )
-        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
       return;
     }
 
@@ -27,17 +24,17 @@ module.exports = {
     }
 
     if (!ᴍᴇᴇ6.isReply) {
-      υℓтяσηℓιєηт
+      ʍɛɛℓιєηт
         .sendMessage(ᴍᴇᴇ6.chatId, message, MessageType.text, {
           contextInfo: {
             mentionedJid: ᴍᴇᴇ6.groupAdmins,
           },
         })
-        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
       return;
     }
 
-    υℓтяσηℓιєηт
+    ʍɛɛℓιєηт
       .sendMessage(ᴍᴇᴇ6.chatId, message, MessageType.text, {
         contextInfo: {
           stanzaId: ᴍᴇᴇ6.replyMessageId,
@@ -48,7 +45,7 @@ module.exports = {
           mentionedJid: ᴍᴇᴇ6.groupAdmins,
         },
       })
-      .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+      .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
   },
 };
 // ===============================================================================

@@ -6,8 +6,8 @@ module.exports = {
   name: `animewallpaper`,
   commandType: "Anime😈",
   description: `Download Anime Wallpapers`,
-  async handle(υℓтяσηℓιєηт, chat, ᴍᴇᴇ6, Arc) {
-    await υℓтяσηℓιєηт
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք) {
+    await ʍɛɛℓιєηт
       .sendMessage(
         ᴍᴇᴇ6.chatId,
         {
@@ -19,7 +19,7 @@ module.exports = {
           caption: `_ᴘᴏᴡᴇʀᴇᴅ ʙʏ_\n*🐙KЯПZΛPP♙*`,
         }
       )
-      .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+      .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
   },
 };
 // ===============================================================================

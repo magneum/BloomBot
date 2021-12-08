@@ -6,10 +6,10 @@ module.exports = {
   name: `imdb`,
   commandType: "Fun⚡",
   description: `This command was built to find any IMDB movie/series.`,
-  async handle(υℓтяσηℓιєηт, chat, ᴍᴇᴇ6, Arc) {
-    if (Arc.length === 0) {
-      await υℓтяσηℓιєηт.sendMessage(ᴍᴇᴇ6.chatId, "❌", MessageType.text);
-      await υℓтяσηℓιєηт
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք) {
+    if (ʍɛɛɨռք.length === 0) {
+      await ʍɛɛℓιєηт.sendMessage(ᴍᴇᴇ6.chatId, "❌", MessageType.text);
+      await ʍɛɛℓιєηт
         .sendMessage(
           ᴍᴇᴇ6.chatId,
           {
@@ -24,14 +24,14 @@ module.exports = {
   .imdb <movie/series>`,
           }
         )
-        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
       return;
     }
     const imob = new imdb.Client({
       apiKey: ꜱɪɢɴ.IMDB,
     });
     let movie = await imob.get({
-      name: Arc.join(" "),
+      name: ʍɛɛɨռք.join(" "),
     });
     const Litol = `*💡𝐓𝐢𝐭𝐥𝐞➛*  ${movie.title.toUpperCase()}
 *🕜𝐓𝐢𝐦𝐞➛*  ${movie.runtime}
@@ -48,7 +48,7 @@ module.exports = {
 *🔗𝐈𝐦𝐝𝐛𝐮𝐫𝐥➛*  ${movie.imdburl}
 *❓𝐏𝐥𝐨𝐭➛*  ${movie.plot}`;
     console.log(Litol);
-    await υℓтяσηℓιєηт
+    await ʍɛɛℓιєηт
       .sendMessage(
         ᴍᴇᴇ6.chatId,
         {
@@ -60,7 +60,7 @@ module.exports = {
           caption: Litol,
         }
       )
-      .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+      .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
   },
 };
 // ===============================================================================

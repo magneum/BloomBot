@@ -23,9 +23,9 @@ module.exports = {
   name: `ytdl`,
   commandType: "Music🔊",
   description: `Use this command to download audio of your choice either by specifying a YouTube link or the name of the song.`,
-  async handle(υℓтяσηℓιєηт, chat, ᴍᴇᴇ6, Arc) {
-    if (Arc.length === 0) {
-      return await υℓтяσηℓιєηт
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք) {
+    if (ʍɛɛɨռք.length === 0) {
+      return await ʍɛɛℓιєηт
         .sendMessage(
           ᴍᴇᴇ6.chatId,
           {
@@ -44,11 +44,11 @@ You Can Get URL by using ${ꜱɪɢɴ.Mee6IX}yts <song-name>`,
           }
         )
         .catch((cᴇʀʀᴏʀ) => {
-          ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+          ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
         });
     }
-    if (!Regex.VideoURL.test(Arc[0])) {
-      return await υℓтяσηℓιєηт
+    if (!Regex.VideoURL.test(ʍɛɛɨռք[0])) {
+      return await ʍɛɛℓιєηт
         .sendMessage(
           ᴍᴇᴇ6.chatId,
           {
@@ -57,7 +57,7 @@ You Can Get URL by using ${ꜱɪɢɴ.Mee6IX}yts <song-name>`,
           MessageType.image,
           {
             mimetype: Mimetype.jpeg,
-            caption: `*⚠️Seems like ${Arc[0]} is not YouTube Link or not YouTube Single Video Link!*
+            caption: `*⚠️Seems like ${ʍɛɛɨռք[0]} is not YouTube Link or not YouTube Single Video Link!*
 
 *Usage Example*
 ${ꜱɪɢɴ.Mee6IX}ytdl <video-link>
@@ -67,18 +67,18 @@ You Can Get URL by using ${ꜱɪɢɴ.Mee6IX}yts <song-name>`,
           }
         )
         .catch((cᴇʀʀᴏʀ) => {
-          ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+          ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
         });
     }
     // Task starts here
     var Id = ` `;
-    if (Arc[0].includes(`youtu`)) {
-      Id = Arc[0];
+    if (ʍɛɛɨռք[0].includes(`youtu`)) {
+      Id = ʍɛɛɨռք[0];
       try {
-        if (Arc[0].includes(`watch?v=`)) {
-          var songId = Arc[0].split(`watch?v=`)[1];
+        if (ʍɛɛɨռք[0].includes(`watch?v=`)) {
+          var songId = ʍɛɛɨռք[0].split(`watch?v=`)[1];
         } else {
-          var songId = Arc[0].split(`/`)[3];
+          var songId = ʍɛɛɨռք[0].split(`/`)[3];
         }
         await yts({
           videoId: songId,
@@ -87,16 +87,16 @@ You Can Get URL by using ${ꜱɪɢɴ.Mee6IX}yts <song-name>`,
         throw cᴇʀʀᴏʀ;
       }
     } else {
-      var song = await yts(Arc.join(` `));
+      var song = await yts(ʍɛɛɨռք.join(` `));
       song = song.all;
       if (song.length < 1) {
-        υℓтяσηℓιєηт
+        ʍɛɛℓιєηт
           .sendMessage(
             ᴍᴇᴇ6.chatId,
             `Could not find the song you entered. Check whether the link or keyword entered is correct.`,
             MessageType.text
           )
-          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+          .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
         return;
       }
       Id = song[0].url;
@@ -106,7 +106,7 @@ You Can Get URL by using ${ꜱɪɢɴ.Mee6IX}yts <song-name>`,
         quality: `highestaudio`,
       });
 
-      const FetchedLink = await yts(Arc.join(` `));
+      const FetchedLink = await yts(ʍɛɛɨռք.join(` `));
       const videos = FetchedLink.videos.slice(0, 1);
       videos.forEach(function (youfound) {
         Fetched = `*⛖𝐘𝐨𝐮𝐫 𝐌𝐮𝐬𝐢𝐜 𝐈𝐬 𝐍𝐨𝐰 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐢𝐧𝐠⛖*
@@ -130,8 +130,8 @@ _📥𝘋𝘰𝘸𝘯𝘭𝘰𝘢𝘥 𝘛𝘪𝘮𝘦 𝘥𝘦𝘱𝘦𝘯𝘥�
 🛸—••÷ 𝗦𝗲𝗿𝘃𝗶𝗰𝗲 ÷••—
 ⪢ ʏᴏᴜᴛᴜʙᴇ⭕ʏᴏᴜᴛᴜʙᴇ ᴍᴜꜱɪᴄ`;
       });
-      const { id } = getVideoId(Arc.join(` `));
-      await υℓтяσηℓιєηт
+      const { id } = getVideoId(ʍɛɛɨռք.join(` `));
+      await ʍɛɛℓιєηт
         .sendMessage(
           ᴍᴇᴇ6.chatId,
           {
@@ -143,18 +143,18 @@ _📥𝘋𝘰𝘸𝘯𝘭𝘰𝘢𝘥 𝘛𝘪𝘮𝘦 𝘥𝘦𝘱𝘦𝘯𝘥�
             caption: Fetched,
           }
         )
-        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
       ffmpeg(stream)
         .audioBitrate(320)
         .toFormat(`ipod`)
         .saveToFile(`./ᴛᴇᴍᴘ/${chat.key.id}.mp3`)
         .on(`end`, async () => {
-          await υℓтяσηℓιєηт
+          await ʍɛɛℓιєηт
             .sendMessage(ᴍᴇᴇ6.chatId, `Uploading song...`, MessageType.text)
             .catch((cᴇʀʀᴏʀ) => {
-              ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+              ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
             });
-          await υℓтяσηℓιєηт
+          await ʍɛɛℓιєηт
             .sendMessage(
               ᴍᴇᴇ6.chatId,
               fs.readFileSync(`./ᴛᴇᴍᴘ/${chat.key.id}.mp3`),
@@ -164,7 +164,7 @@ _📥𝘋𝘰𝘸𝘯𝘭𝘰𝘢𝘥 𝘛𝘪𝘮𝘦 𝘥𝘦𝘱𝘦𝘯𝘥�
               }
             )
             .catch((cᴇʀʀᴏʀ) => {
-              ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+              ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
             });
           fs.unlink(`./ᴛᴇᴍᴘ/${chat.key.id}.mp3`, (cᴇʀʀᴏʀ) => {
             if (cᴇʀʀᴏʀ) console.log(cᴇʀʀᴏʀ);
@@ -174,7 +174,7 @@ _📥𝘋𝘰𝘸𝘯𝘭𝘰𝘢𝘥 𝘛𝘪𝘮𝘦 𝘥𝘦𝘱𝘦𝘯𝘥�
           });
         });
     } catch (cᴇʀʀᴏʀ) {
-      await ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+      await ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
     }
   },
 };

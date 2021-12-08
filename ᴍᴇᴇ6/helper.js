@@ -7,7 +7,7 @@ const Kolor = require("chalk");
 // ===============================================================================
 // 🎮ᴍᴇᴇ6™ 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..
 // ===============================================================================
-exports.resolve = function (messageInstance, υℓтяσηℓιєηт, groupMetadata) {
+exports.resolve = function (messageInstance, ʍɛɛℓιєηт, groupMetadata) {
   var ᴍᴇᴇ6 = new ƈʏɮօʀɢƈʟǟ();
   var prefix = ꜱɪɢɴ.Mee6IX + "\\w+";
   var prefixRegex = new RegExp(prefix, "g");
@@ -19,7 +19,7 @@ exports.resolve = function (messageInstance, υℓтяσηℓιєηт, groupMeta
   }
   ᴍᴇᴇ6.chatId = messageInstance.key.remoteJid || "";
   ᴍᴇᴇ6.fromMe = messageInstance.key.fromMe;
-  ᴍᴇᴇ6.owner = υℓтяσηℓιєηт.user.jid || "";
+  ᴍᴇᴇ6.owner = ʍɛɛℓιєηт.user.jid || "";
   ᴍᴇᴇ6.mimeType = messageInstance.message
     ? Object.keys(messageInstance.message)[0]
     : null;
@@ -104,7 +104,7 @@ exports.resolve = function (messageInstance, υℓтяσηℓιєηт, groupMeta
   ᴍᴇᴇ6.isReplyAudio = ᴍᴇᴇ6.isReply
     ? jsonMessage.indexOf("audioMessage") !== -1
     : false;
-  ᴍᴇᴇ6.logGroup = υℓтяσηℓιєηт.user.jid || "";
+  ᴍᴇᴇ6.logGroup = ʍɛɛℓιєηт.user.jid || "";
   ᴍᴇᴇ6.isGroup = ᴍᴇᴇ6.chatId.endsWith("@g.us");
   ᴍᴇᴇ6.isPm = !ᴍᴇᴇ6.isGroup;
   ᴍᴇᴇ6.sender =

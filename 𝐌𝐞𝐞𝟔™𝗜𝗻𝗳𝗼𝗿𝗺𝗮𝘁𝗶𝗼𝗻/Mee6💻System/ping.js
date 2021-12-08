@@ -6,12 +6,12 @@ module.exports = {
   name: `ping`,
   commandType: "Mee6💻System",
   description: `ᴄʜᴇᴄᴋ ᴍᴇᴇ6 ʀᴇꜱᴘᴏɴꜱᴇ ᴛɪᴍᴇ`,
-  async handle(υℓтяσηℓιєηт, chat, ᴍᴇᴇ6, Arc, Mee6Sitrep) {
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք, Mee6Sitrep) {
     var str = ᴍᴇᴇ6.sender;
     var newString = str.substring(0, str.length - 15);
     timestampe = speed();
     latensie = speed() - timestampe;
-    await υℓтяσηℓιєηт
+    await ʍɛɛℓιєηт
       .sendMessage(
         ᴍᴇᴇ6.chatId,
         {
@@ -32,7 +32,7 @@ module.exports = {
 🛰️𝐏𝐢𝐧𝐠: _${latensie.toFixed(6)}s_`,
         }
       )
-      .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+      .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
   },
 };
 // ===============================================================================

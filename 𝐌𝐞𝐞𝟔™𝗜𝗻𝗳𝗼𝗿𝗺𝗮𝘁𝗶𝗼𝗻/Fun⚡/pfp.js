@@ -5,10 +5,10 @@ module.exports = {
   name: `pfp`,
   commandType: "Fun⚡",
   description: `Get the profile picture of the group in a group conversation or the profile picture of ᴍᴇᴇ6 itself in personal chat.`,
-  async handle(υℓтяσηℓιєηт, chat, ᴍᴇᴇ6, Arc) {
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք) {
     try {
-      let url = await υℓтяσηℓιєηт.getProfilePicture(ᴍᴇᴇ6.chatId);
-      await υℓтяσηℓιєηт
+      let url = await ʍɛɛℓιєηт.getProfilePicture(ᴍᴇᴇ6.chatId);
+      await ʍɛɛℓιєηт
         .sendMessage(
           ᴍᴇᴇ6.chatId,
           {
@@ -21,10 +21,10 @@ module.exports = {
             thumbnail: null,
           }
         )
-        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
     } catch (cᴇʀʀᴏʀ) {
       if (cᴇʀʀᴏʀ.status == 404) {
-        υℓтяσηℓιєηт.sendMessage(
+        ʍɛɛℓιєηт.sendMessage(
           ᴍᴇᴇ6.chatId,
           `*🎮ᴍᴇᴇ6™* 𝐝𝐢𝐝𝐧'𝐭 𝐰𝐨𝐫𝐤 𝐚𝐬 𝐞𝐱𝐩𝐞𝐜𝐭𝐞𝐝❗
 
@@ -34,7 +34,7 @@ module.exports = {
           MessageType.text
         );
       } else {
-        υℓтяσηℓιєηт.sendMessage(
+        ʍɛɛℓιєηт.sendMessage(
           ᴍᴇᴇ6.chatId,
           `*🎮ᴍᴇᴇ6™* 𝐝𝐢𝐝𝐧'𝐭 𝐰𝐨𝐫𝐤 𝐚𝐬 𝐞𝐱𝐩𝐞𝐜𝐭𝐞𝐝❗
 

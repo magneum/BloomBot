@@ -5,9 +5,9 @@ module.exports = {
   name: `google`,
   commandType: "Fun⚡",
   description: `Search anything on google`,
-  async handle(υℓтяσηℓιєηт, chat, ᴍᴇᴇ6, Arc) {
-    if (Arc.length === 0) {
-      return await υℓтяσηℓιєηт
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք) {
+    if (ʍɛɛɨռք.length === 0) {
+      return await ʍɛɛℓιєηт
         .sendMessage(
           ᴍᴇᴇ6.chatId,
           {
@@ -23,11 +23,11 @@ ${ꜱɪɢɴ.Mee6IX}google <search topic>`,
           }
         )
         .catch((cᴇʀʀᴏʀ) => {
-          ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+          ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
         });
     }
     try {
-      await υℓтяσηℓιєηт
+      await ʍɛɛℓιєηт
         .sendMessage(
           ᴍᴇᴇ6.chatId,
           {
@@ -37,11 +37,11 @@ ${ꜱɪɢɴ.Mee6IX}google <search topic>`,
           {
             mimetype: Mimetype.jpeg,
             caption: `
-*🌍𝗚𝗼𝗼𝗴𝗹𝗲𝗱:* ${Arc.join(` `)}
-*💡𝗥𝗲𝘀𝘂𝗹𝘁:* https://google.com/search?q=${Arc.join(`+`)}`,
+*🌍𝗚𝗼𝗼𝗴𝗹𝗲𝗱:* ${ʍɛɛɨռք.join(` `)}
+*💡𝗥𝗲𝘀𝘂𝗹𝘁:* https://google.com/search?q=${ʍɛɛɨռք.join(`+`)}`,
           }
         )
-        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
     } catch (err) {
       console.log(err);
     }

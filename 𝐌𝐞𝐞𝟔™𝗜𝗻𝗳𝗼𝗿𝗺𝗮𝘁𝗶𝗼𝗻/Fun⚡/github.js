@@ -7,14 +7,14 @@ module.exports = {
   commandType: "Fun⚡",
   description: `Get the github profile by command  *${ꜱɪɢɴ.Mee6IX}github <user>*  
 or replying  *${ꜱɪɢɴ.Mee6IX}github* .`,
-  async handle(υℓтяσηℓιєηт, chat, ᴍᴇᴇ6, Arc) {
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք) {
     try {
       let user_name = ``;
       if (ᴍᴇᴇ6.isReply) {
         user_name = ᴍᴇᴇ6.replyMessage;
       } else {
-        if (Arc.length === 0) {
-          return await υℓтяσηℓιєηт
+        if (ʍɛɛɨռք.length === 0) {
+          return await ʍɛɛℓιєηт
             .sendMessage(
               ᴍᴇᴇ6.chatId,
               {
@@ -30,10 +30,10 @@ or replying  *${ꜱɪɢɴ.Mee6IX}github* .`,
               }
             )
             .catch((cᴇʀʀᴏʀ) => {
-              ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+              ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
             });
         }
-        user_name = Arc[0];
+        user_name = ʍɛɛɨռք[0];
       }
       let userResponse = await got(`https://api.github.com/users/` + user_name);
       let user = JSON.parse(userResponse.body);
@@ -79,7 +79,7 @@ or replying  *${ꜱɪɢɴ.Mee6IX}github* .`,
         caption += `\n*🔍 Some Repos :* ` + repos;
       }
       try {
-        await υℓтяσηℓιєηт
+        await ʍɛɛℓιєηт
           .sendMessage(
             ᴍᴇᴇ6.chatId,
             {
@@ -92,12 +92,12 @@ or replying  *${ꜱɪɢɴ.Mee6IX}github* .`,
               thumbnail: null,
             }
           )
-          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+          .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
       } catch (cᴇʀʀᴏʀ) {
-        υℓтяσηℓιєηт.sendMessage(ᴍᴇᴇ6.chatId, caption, MessageType.text);
+        ʍɛɛℓιєηт.sendMessage(ᴍᴇᴇ6.chatId, caption, MessageType.text);
       }
     } catch (cᴇʀʀᴏʀ) {
-      await υℓтяσηℓιєηт.sendMessage(
+      await ʍɛɛℓιєηт.sendMessage(
         ᴍᴇᴇ6.chatId,
         `ꜱᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ ᴡʀᴏɴɢ.ʜᴇʀᴇ ᴀʀᴇ ꜱᴏᴍᴇ ʟᴏɢꜱ ꜱɪɴᴄᴇ ᴡʜᴇɴ ᴛʜᴇ ʙᴏᴛ ᴡᴀꜱ ɴᴏᴛ ʀᴇꜱᴘᴏɴᴅɪɴɢ ᴀꜱ ᴇxᴘᴇᴄᴛᴇᴅ.
 ACCOUNT NOT FOUND

@@ -7,9 +7,9 @@ module.exports = {
   name: `yts`,
   commandType: "Music🔊",
   description: `Get the first 10 recommendations from YouTube with their authorname, timestamp and link. Mention the FetchedLinks that are required to be searched along with the command.`,
-  async handle(υℓтяσηℓιєηт, chat, ᴍᴇᴇ6, Arc) {
-    if (Arc.length === 0) {
-      return await υℓтяσηℓιєηт
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք) {
+    if (ʍɛɛɨռք.length === 0) {
+      return await ʍɛɛℓιєηт
         .sendMessage(
           ᴍᴇᴇ6.chatId,
           {
@@ -28,10 +28,10 @@ You Can Get download audio by using ${ꜱɪɢɴ.Mee6IX}ytdl <song-url>`,
           }
         )
         .catch((cᴇʀʀᴏʀ) => {
-          ℓιєηт.catch((cᴇʀʀᴏʀ, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+          ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
         });
     }
-    const FetchedLink = await yts(Arc.join(` `));
+    const FetchedLink = await yts(ʍɛɛɨռք.join(` `));
     const videos = FetchedLink.videos.slice(0, 5);
     var Fetched = ``;
     videos.forEach(function (youfound) {
@@ -46,13 +46,13 @@ You Can Get download audio by using ${ꜱɪɢɴ.Mee6IX}ytdl <song-url>`,
 *📥𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐫↬* https://www.youtubepp.com/watch?v=${id}\n\n`;
     });
     if (Fetched === ``) {
-      υℓтяσηℓιєηт
+      ʍɛɛℓιєηт
         .sendMessage(ᴍᴇᴇ6.chatId, `No videos could be found.`, MessageType.text)
-        .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
       return;
     }
-    const c = Arc.join(` `);
-    υℓтяσηℓιєηт
+    const c = ʍɛɛɨռք.join(` `);
+    ʍɛɛℓιєηт
       .sendMessage(
         ᴍᴇᴇ6.chatId,
         {
@@ -66,7 +66,7 @@ You Can Get download audio by using ${ꜱɪɢɴ.Mee6IX}ytdl <song-url>`,
 *🔎: ${c.toUpperCase()}*\n\n` + Fetched,
         }
       )
-      .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+      .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
   },
 };
 // ===============================================================================

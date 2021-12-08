@@ -12,7 +12,7 @@ const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const ᴍᴇᴇ6ֆʏռօք = require(`./ᴍᴇᴇ6/ᴍᴇᴇ6ᴢᴇɴ`);
 const ℓιєηт = require(`./ᴍᴇᴇ6/catch`);
 const vers = require(`./package.json`);
-const υℓтяσηℓιєηтult = require(`./ᴍᴇᴇ6/ɠɠʊ`);
+const ʍɛɛℓιєηтult = require(`./ᴍᴇᴇ6/ɠɠʊ`);
 const gitPull = require(`./ᴍᴇᴇ6/ᴍᴇᴇ6ɢɪᴛ`);
 const ɠɠᴍᴇᴇ6 = require(`./ᴍᴇᴇ6/ɠɠᴍᴇᴇ6`);
 const ᴍᴇᴇ6Sudo = [`block`, `unblock`];
@@ -65,9 +65,9 @@ var Text__Bye = [
 // ===============================================================================
 // 🎮ᴍᴇᴇ6™ ᴀᴅᴠᴀɴᴄᴇᴅ ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ 80+ ᴄᴏᴍᴍᴀɴᴅꜱ ꜰᴏʀ ʙᴏᴛʜ ᴘʀɪᴠᴀᴛᴇ ᴀɴᴅ ɢʀᴏᴜᴘ-ᴜꜱᴀɢᴇ
 // ===============================================================================
-var υℓтяσηℓιєηт = ᴍᴇᴇ6ֆʏռօք.WhatsApp;
+var ʍɛɛℓιєηт = ᴍᴇᴇ6ֆʏռօք.WhatsApp;
 async function ᴍᴇᴇ6s() {
-  υℓтяσηℓιєηт.logger.level = "error";
+  ʍɛɛℓιєηт.logger.level = "error";
   var Mee6Sitrep = new Map();
   if (ꜱɪɢɴ.HEROKU_API === `Null` || ꜱɪɢɴ.HEROKU_BOT_NAME === `Null`) {
     console.log(
@@ -84,7 +84,7 @@ async function ᴍᴇᴇ6s() {
   await gitPull();
   try {
     var session = ᴍᴇᴇ6ֆʏռօք.Mee6reignite(ꜱɪɢɴ.Mee6);
-    υℓтяσηℓιєηт.loadAuthInfo(session);
+    ʍɛɛℓιєηт.loadAuthInfo(session);
   } catch (cᴇʀʀᴏʀ) {
     if (
       cᴇʀʀᴏʀ instanceof TypeError ||
@@ -103,7 +103,7 @@ async function ᴍᴇᴇ6s() {
   // ===============================================================================
   // 🎮ᴍᴇᴇ6™ ᴀᴅᴠᴀɴᴄᴇᴅ ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ 80+ ᴄᴏᴍᴍᴀɴᴅꜱ ꜰᴏʀ ʙᴏᴛʜ ᴘʀɪᴠᴀᴛᴇ ᴀɴᴅ ɢʀᴏᴜᴘ-ᴜꜱᴀɢᴇ
   // ===============================================================================
-  υℓтяσηℓιєηт.on(`connecting`, async () => {
+  ʍɛɛℓιєηт.on(`connecting`, async () => {
     console.log(
       Kolor.yellow(`⬡=================⬡    ⦿𝐌𝐞𝐞𝟔™⦿    ⬡=================⬡`)
     );
@@ -114,7 +114,7 @@ async function ᴍᴇᴇ6s() {
   // ===============================================================================
   // 🎮ᴍᴇᴇ6™ ᴀᴅᴠᴀɴᴄᴇᴅ ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ 80+ ᴄᴏᴍᴍᴀɴᴅꜱ ꜰᴏʀ ʙᴏᴛʜ ᴘʀɪᴠᴀᴛᴇ ᴀɴᴅ ɢʀᴏᴜᴘ-ᴜꜱᴀɢᴇ
   // ===============================================================================
-  υℓтяσηℓιєηт.on(`open`, async () => {
+  ʍɛɛℓιєηт.on(`open`, async () => {
     console.log(
       Kolor.yellow(`⬡=================⬡    ⦿𝐌𝐞𝐞𝟔™⦿    ⬡=================⬡`)
     );
@@ -172,8 +172,8 @@ async function ᴍᴇᴇ6s() {
 `),
       Kolor.green(`⬡=================⬡    ⦿𝐌𝐞𝐞𝟔™⦿    ⬡=================⬡`)
     );
-    await υℓтяσηℓιєηт.sendMessage(
-      υℓтяσηℓιєηт.user.jid,
+    await ʍɛɛℓιєηт.sendMessage(
+      ʍɛɛℓιєηт.user.jid,
       {
         url: `https://i.postimg.cc/RZ11rBnw/Mee6.png`,
       },
@@ -203,14 +203,14 @@ async function ᴍᴇᴇ6s() {
   // ===============================================================================
   // 🎮ᴍᴇᴇ6™ ᴀᴅᴠᴀɴᴄᴇᴅ ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ 80+ ᴄᴏᴍᴍᴀɴᴅꜱ ꜰᴏʀ ʙᴏᴛʜ ᴘʀɪᴠᴀᴛᴇ ᴀɴᴅ ɢʀᴏᴜᴘ-ᴜꜱᴀɢᴇ
   // ===============================================================================
-  await υℓтяσηℓιєηт.connect();
-  //   υℓтяσηℓιєηт.on("message-delete", async (update) => {
+  await ʍɛɛℓιєηт.connect();
+  //   ʍɛɛℓιєηт.on("message-delete", async (update) => {
   //     update.message =
   //       Object.keys(update.message)[0] === "ephemeralMessage" ?
   //         update.message.ephemeralMessage.message :
   //         update.message;
   //     const type = Object.keys(update.message)[0];
-  //     υℓтяσηℓιєηт.sendMessage(
+  //     ʍɛɛℓιєηт.sendMessage(
   //       update.key.remoteJid,
   //       `「 𝗔𝗡𝗧𝗜 𝗗𝗘𝗟𝗘𝗧𝗘 」
   // •> Name : @${update.participant.split("@")[0]}
@@ -223,15 +223,15 @@ async function ᴍᴇᴇ6s() {
   //     }
   //     );
 
-  //     υℓтяσηℓιєηт.copyNForward(update.key.remoteJid, update.message);
+  //     ʍɛɛℓιєηт.copyNForward(update.key.remoteJid, update.message);
   //   });
   // ===============================================================================
   // 🎮ᴍᴇᴇ6™ ᴀᴅᴠᴀɴᴄᴇᴅ ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ 80+ ᴄᴏᴍᴍᴀɴᴅꜱ ꜰᴏʀ ʙᴏᴛʜ ᴘʀɪᴠᴀᴛᴇ ᴀɴᴅ ɢʀᴏᴜᴘ-ᴜꜱᴀɢᴇ
   // ===============================================================================
-  υℓтяσηℓιєηт.on(`group-update`, async (update) => {
-    groupupdateID = await υℓтяσηℓιєηт.groupMetadata(update.jid);
+  ʍɛɛℓιєηт.on(`group-update`, async (update) => {
+    groupupdateID = await ʍɛɛℓιєηт.groupMetadata(update.jid);
     if (update.announce == `false`) {
-      υℓтяσηℓιєηт
+      ʍɛɛℓιєηт
         .sendMessage(
           groupupdateID.id,
           `⬡••••••••⬡    ⦿𝐌𝐞𝐞𝟔™⦿    ⬡••••••••⬡
@@ -247,7 +247,7 @@ Now all members can send messages`,
         )
         .catch((error) => console.log(Kolor.redBright(error)));
     } else if (update.announce == `true`) {
-      υℓтяσηℓιєηт
+      ʍɛɛℓιєηт
         .sendMessage(
           groupupdateID.id,
           `⬡••••••••⬡    ⦿𝐌𝐞𝐞𝟔™⦿    ⬡••••••••⬡
@@ -264,7 +264,7 @@ Now only admin can send messages`,
         .catch((error) => console.log(Kolor.redBright(error)));
     } else if (!update.desc == ``) {
       tag = update.descOwner.split(`@`)[0] + `@s.whatsapp.net`;
-      υℓтяσηℓιєηт
+      ʍɛɛℓιєηт
         .sendMessage(
           groupupdateID.id,
           `⬡••••••••⬡    ⦿𝐌𝐞𝐞𝟔™⦿    ⬡••••••••⬡
@@ -288,7 +288,7 @@ ${update.desc}`,
         )
         .catch((error) => console.log(Kolor.redBright(error)));
     } else if (update.restrict == `false`) {
-      υℓтяσηℓιєηт
+      ʍɛɛℓιєηт
         .sendMessage(
           groupupdateID.id,
           `⬡••••••••⬡    ⦿𝐌𝐞𝐞𝟔™⦿    ⬡••••••••⬡
@@ -303,7 +303,7 @@ Now all members can edit this group info`,
         )
         .catch((error) => console.log(Kolor.redBright(error)));
     } else if (update.restrict == `true`) {
-      υℓтяσηℓιєηт
+      ʍɛɛℓιєηт
         .sendMessage(
           groupupdateID.id,
           `⬡••••••••⬡    ⦿𝐌𝐞𝐞𝟔™⦿    ⬡••••••••⬡
@@ -324,18 +324,18 @@ Now only group admins can edit this group info`,
   // ===============================================================================
   // 🎮ᴍᴇᴇ6™ ᴀᴅᴠᴀɴᴄᴇᴅ ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ 80+ ᴄᴏᴍᴍᴀɴᴅꜱ ꜰᴏʀ ʙᴏᴛʜ ᴘʀɪᴠᴀᴛᴇ ᴀɴᴅ ɢʀᴏᴜᴘ-ᴜꜱᴀɢᴇ
   // ===============================================================================
-  υℓтяσηℓιєηт.on(`group-participants-update`, async (update) => {
+  ʍɛɛℓιєηт.on(`group-participants-update`, async (update) => {
     const MemNum = update.participants[0];
-    if (update.action == `add` && MemNum.includes(υℓтяσηℓιєηт.user.jid)) {
-      υℓтяσηℓιєηт.sendMessage(
+    if (update.action == `add` && MemNum.includes(ʍɛɛℓιєηт.user.jid)) {
+      ʍɛɛℓιєηт.sendMessage(
         update.jid,
         `Hello everyone, ⚡𝐌𝐞𝐞𝟔™ ⧪ɪ ᴀᴍ ᴍʀ ᴍᴇᴇ6, ʟᴏᴏᴋ ᴀᴛ ᴍᴇ! 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵, ready to help you here ㋛︎`,
         `conversation`
       );
     }
-    const GroupMemData = await υℓтяσηℓιєηт.groupMetadata(update.jid);
+    const GroupMemData = await ʍɛɛℓιєηт.groupMetadata(update.jid);
     const GroupMemG = GroupMemData.participants.length;
-    const GroupMemBio = await υℓтяσηℓιєηт.getStatus(
+    const GroupMemBio = await ʍɛɛℓιєηт.getStatus(
       update.participants[0],
       MessageType.text
     );
@@ -353,7 +353,7 @@ Now only group admins can edit this group info`,
 
         var Fetched = await ɠɠᴍᴇᴇ6.getMessage(GroupID, `setwelcome`);
         try {
-          ppimg = await υℓтяσηℓιєηт.getProfilePicture(
+          ppimg = await ʍɛɛℓιєηт.getProfilePicture(
             `${MemNum.split(`@`)[0]}@c.us`
           );
         } catch {
@@ -371,7 +371,7 @@ Now only group admins can edit this group info`,
               Text_Rand_Welcome[
                 Math.floor(Math.random() * Text_Rand_Welcome.length)
               ];
-            return await υℓтяσηℓιєηт
+            return await ʍɛɛℓιєηт
               .sendMessage(
                 GroupID,
                 {
@@ -395,7 +395,7 @@ Now only group admins can edit this group info`,
 ${Fetched.message}`,
                 }
               )
-              .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+              .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
           }
         );
         return;
@@ -413,7 +413,7 @@ ${Fetched.message}`,
   // ===============================================================================
   // 🎮ᴍᴇᴇ6™ ᴀᴅᴠᴀɴᴄᴇᴅ ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ 80+ ᴄᴏᴍᴍᴀɴᴅꜱ ꜰᴏʀ ʙᴏᴛʜ ᴘʀɪᴠᴀᴛᴇ ᴀɴᴅ ɢʀᴏᴜᴘ-ᴜꜱᴀɢᴇ
   // ===============================================================================
-  υℓтяσηℓιєηт.on(`chat-update`, async (chat) => {
+  ʍɛɛℓιєηт.on(`chat-update`, async (chat) => {
     if (!chat.hasNewMessage) {
       return;
     }
@@ -423,9 +423,9 @@ ${Fetched.message}`,
     chat = chat.messages.all()[0];
     var sender = chat.key.remoteJid;
     const groupMetadata = sender.endsWith(`@g.us`)
-      ? await υℓтяσηℓιєηт.groupMetadata(sender)
+      ? await ʍɛɛℓιєηт.groupMetadata(sender)
       : ``;
-    var ᴍᴇᴇ6 = ᴍᴇᴇ6ǟքք.resolve(chat, υℓтяσηℓιєηт, groupMetadata);
+    var ᴍᴇᴇ6 = ᴍᴇᴇ6ǟքք.resolve(chat, ʍɛɛℓιєηт, groupMetadata);
     const adminmodls = [
       `add`,
       `demote`,
@@ -439,9 +439,9 @@ ${Fetched.message}`,
       `setgoodbye`,
       `tagall`,
     ];
-    // if (ᴍᴇᴇ6.chatId === "120363025343298860@g.us") {
-    //   return;
-    // }
+    if (ᴍᴇᴇ6.chatId === "120363025343298860@g.us") {
+      return;
+    }
     if (ᴍᴇᴇ6.isCmd && !ᴍᴇᴇ6.fromMe) {
       if (
         adminmodls.indexOf(ᴍᴇᴇ6.commandName) >= 0 &&
@@ -449,11 +449,11 @@ ${Fetched.message}`,
       ) {
         return;
       } else if (ᴍᴇᴇ6Sudo.indexOf(ᴍᴇᴇ6.commandName) >= 0) {
-        var messageSent = await υℓтяσηℓιєηтult.getUser(ᴍᴇᴇ6.chatId);
+        var messageSent = await ʍɛɛℓιєηтult.getUser(ᴍᴇᴇ6.chatId);
         if (messageSent) {
           return;
         } else {
-          await υℓтяσηℓιєηтult.addUser(ᴍᴇᴇ6.chatId);
+          await ʍɛɛℓιєηтult.addUser(ᴍᴇᴇ6.chatId);
           return;
         }
       }
@@ -468,11 +468,11 @@ ${Fetched.message}`,
         )
       );
       const command = Mee6Sitrep.get(ᴍᴇᴇ6.commandName);
-      var Arc = ᴍᴇᴇ6.body.trim().split(/\s+/).slice(1);
+      var ʍɛɛɨռք = ᴍᴇᴇ6.body.trim().split(/\s+/).slice(1);
       var Mee6Regex = new RegExp(ꜱɪɢɴ.Mee6IX, `g`);
       var Mee6f = /\/\^\[(.*)+\]\/\g/g.exec(Mee6Regex)[1];
       if (!command) {
-        return υℓтяσηℓιєηт
+        return ʍɛɛℓιєηт
           .sendMessage(
             ᴍᴇᴇ6.chatId,
             {
@@ -487,15 +487,15 @@ ${Fetched.message}`,
 Please Use *${Mee6f}help to get the list of available commands*`,
             }
           )
-          .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
+          .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
       } else if (command && ᴍᴇᴇ6.commandName == `help`) {
         try {
-          return command.handle(υℓтяσηℓιєηт, chat, ᴍᴇᴇ6, Arc, Mee6Sitrep);
+          return command.handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք, Mee6Sitrep);
         } catch (cᴇʀʀᴏʀ) {
           return console.log(Kolor.red(`[❌𝐌𝐞𝐞𝟔™⬰𝗘𝗿𝗿𝗼𝗿 ] `, cᴇʀʀᴏʀ));
         }
       }
-      command.handle(υℓтяσηℓιєηт, chat, ᴍᴇᴇ6, Arc);
+      command.handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք);
     }
   });
 }
