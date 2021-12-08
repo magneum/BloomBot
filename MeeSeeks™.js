@@ -69,7 +69,7 @@ var Text__Bye = [
 var ʍɛɛℓιєηт = ᴍᴇᴇ6ֆʏռօք.WhatsApp;
 async function ᴍᴇᴇ6s() {
   ʍɛɛℓιєηт.logger.level = "error";
-  var arg = new Map();
+  var Mee6Sitrep = new Map();
   if (ꜱɪɢɴ.HEROKU_API === `Null` || ꜱɪɢɴ.HEROKU_BOT_NAME === `Null`) {
     console.log(
       Kolor.yellow(
@@ -153,7 +153,7 @@ async function ᴍᴇᴇ6s() {
         .filter((file) => file.endsWith(`.js`));
       for (const file of commandFiles) {
         const command = require(`./𝐌𝐞𝐞𝟔™𝗜𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻/${folder}/${file}`);
-        arg.set(command.name, command);
+        Mee6Sitrep.set(command.name, command);
         console.log(
           Kolor.yellow(`[💡𝐌𝐞𝐞𝟔™⬰𝗜𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻 ]  `),
           Kolor.green(command.name.toUpperCase())
@@ -328,18 +328,9 @@ Now only group admins can edit this group info`,
   ʍɛɛℓιєηт.on(`group-participants-update`, async (update) => {
     const MemNum = update.participants[0];
     if (update.action == `add` && MemNum.includes(ʍɛɛℓιєηт.user.jid)) {
-      await ʍɛɛℓιєηт.sendMessage(
+      ʍɛɛℓιєηт.sendMessage(
         update.jid,
-        `Hello everyone, 𝐈 𝐚𝐦 𝐌𝐫𝐌𝐞𝐞𝟔🛸𝐋𝐨𝐨𝐤 𝐀𝐭 𝐌𝐞! ⧪ 𝗔𝗱𝘃𝗮𝗻𝗰𝗲 𝗪𝗵𝗮𝘁𝘀𝗮𝗽𝗽 𝗕𝗼𝘁 ⧪, ready to help you here ㋛︎`,
-        `conversation`
-      );
-      await ʍɛɛℓιєηт.sendMessage(update.jid, `xhelp`, `conversation`);
-      await ʍɛɛℓιєηт.sendMessage(
-        update.jid,
-        `⬡••••••••⬡    ⦿𝐌𝐞𝐞𝟔™⦿    ⬡••••••••⬡
-
-𝗖𝗼𝗺𝗲 𝗝𝗼𝗶𝗻 𝗨𝘀 𝗮𝗻𝗱 𝗚𝗲𝘁 𝗬𝗼𝘂𝗿 𝗢𝘄𝗻 𝗣𝗲𝗿𝘀𝗼𝗻𝗮𝗹 ⦿𝐌𝐞𝐞𝟔™
-*Link:* https://chat.whatsapp.com/FmMcEeSqZQw85qAkgUs3f5`,
+        `Hello everyone, ⚡𝐌𝐞𝐞𝟔™ ⧪ɪ ᴀᴍ ᴍʀ ᴍᴇᴇ6, ʟᴏᴏᴋ ᴀᴛ ᴍᴇ! 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵, ready to help you here ㋛︎`,
         `conversation`
       );
     }
@@ -450,9 +441,8 @@ ${Fetched.message}`,
       `tagall`,
     ];
     if (ᴍᴇᴇ6.chatId === "120363025343298860@g.us") {
-      if (ᴍᴇᴇ6.isCmd && !ᴍᴇᴇ6.fromMe) {
-        return;
-      }
+      if (ᴍᴇᴇ6.isCmd && !ᴍᴇᴇ6.fromMe) return;
+      return;
     }
     if (ᴍᴇᴇ6.isCmd && !ᴍᴇᴇ6.fromMe) {
       if (
@@ -479,7 +469,7 @@ ${Fetched.message}`,
           `[💡𝐌𝐞𝐞𝟔™⬰𝗜𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻 ]  ${ᴍᴇᴇ6.commandName.toUpperCase()} command executed.`
         )
       );
-      const command = arg.get(ᴍᴇᴇ6.commandName);
+      const command = Mee6Sitrep.get(ᴍᴇᴇ6.commandName);
       var arg = ᴍᴇᴇ6.body.trim().split(/\s+/).slice(1);
       var ᴋᴇɪᴇx = new RegExp(ꜱɪɢɴ.Mee6IX, `g`);
       var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
@@ -502,14 +492,26 @@ Please Use *${ᴋᴇɪ}help to get the list of available commands*`,
           .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
       } else if (command && ᴍᴇᴇ6.commandName == `help`) {
         try {
+          var ᴋᴇɪᴇx = new RegExp(ꜱɪɢɴ.Mee6IX, "g");
+          var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
           var ɴᴇᴡᴍᴇᴇ6 = await ᴍᴇᴇgit.log(["KrakinzLab..origin/KrakinzLab"]);
-          return command.handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg, ɴᴇᴡᴍᴇᴇ6);
+          return command.handle(
+            ʍɛɛℓιєηт,
+            chat,
+            ᴍᴇᴇ6,
+            arg,
+            Mee6Sitrep,
+            ɴᴇᴡᴍᴇᴇ6,
+            ᴋᴇɪ
+          );
         } catch (cᴇʀʀᴏʀ) {
           return console.log(Kolor.red(`[❌𝐌𝐞𝐞𝟔™⬰𝗘𝗿𝗿𝗼𝗿 ] `, cᴇʀʀᴏʀ));
         }
       }
+      var ᴋᴇɪᴇx = new RegExp(ꜱɪɢɴ.Mee6IX, "g");
+      var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
       var ɴᴇᴡᴍᴇᴇ6 = await ᴍᴇᴇgit.log(["KrakinzLab..origin/KrakinzLab"]);
-      command.handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ɴᴇᴡᴍᴇᴇ6);
+      command.handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg, ɴᴇᴡᴍᴇᴇ6, ᴋᴇɪ);
     }
   });
 }
