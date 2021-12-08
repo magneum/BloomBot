@@ -141,7 +141,7 @@ many many more!
         .sendMessage(
           ᴍᴇᴇ6.chatId,
           {
-            url: "ttps://i.postimg.cc/RZ11rBnw/Mee6.png",
+            url: "https://i.postimg.cc/RZ11rBnw/Mee6.png",
           },
           MessageType.image,
           {
