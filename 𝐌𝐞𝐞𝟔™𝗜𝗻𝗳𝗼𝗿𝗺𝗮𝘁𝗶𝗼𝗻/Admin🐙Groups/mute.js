@@ -11,7 +11,7 @@ You can even specify the duration using s, m or h.
 For example:
 *${ꜱɪɢɴ.Mee6IX}mute 15 m*
 will change chat permissions to admin-only for 15 minutes.`,
-  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք, ɴᴇᴡᴍᴇᴇ6){
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg, ɴᴇᴡᴍᴇᴇ6){
     if (ɴᴇᴡᴍᴇᴇ6.total) {
       await ʍɛɛℓιєηт
         .sendMessage(
@@ -66,7 +66,7 @@ will change chat permissions to admin-only for 15 minutes.`,
         .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
       return;
     }
-    if (ʍɛɛɨռք.length === 0) {
+    if (arg.length === 0) {
       await ʍɛɛℓιєηт.sendMessage(ᴍᴇᴇ6.chatId, "❌", MessageType.text);
       await ʍɛɛℓιєηт
         .sendMessage(
@@ -92,7 +92,7 @@ will change chat permissions to admin-only for 15 minutes.`,
         )
         .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
       return;
-    } else if (isNaN(ʍɛɛɨռք[0])) {
+    } else if (isNaN(arg[0])) {
       ʍɛɛℓιєηт
         .sendMessage(
           ᴍᴇᴇ6.chatId,
@@ -105,17 +105,17 @@ will change chat permissions to admin-only for 15 minutes.`,
 
     var duration;
     var type = `minutes`;
-    if (ʍɛɛɨռք[1] === `s`) {
-      duration = ʍɛɛɨռք[0] * 1000;
+    if (arg[1] === `s`) {
+      duration = arg[0] * 1000;
       type = `seconds`;
-    } else if (ʍɛɛɨռք[1] === `m`) {
-      duration = ʍɛɛɨռք[0] * 60 * 1000;
+    } else if (arg[1] === `m`) {
+      duration = arg[0] * 60 * 1000;
       type = `seconds`;
-    } else if (ʍɛɛɨռք[1] === `h`) {
-      duration = ʍɛɛɨռք[0] * 60 * 60 * 1000;
+    } else if (arg[1] === `h`) {
+      duration = arg[0] * 60 * 60 * 1000;
       type = `seconds`;
     } else {
-      duration = ʍɛɛɨռք[0] * 60 * 1000;
+      duration = arg[0] * 60 * 1000;
     }
 
     ʍɛɛℓιєηт
@@ -125,7 +125,7 @@ will change chat permissions to admin-only for 15 minutes.`,
       .sendMessage(
         ᴍᴇᴇ6.chatId,
         `Chat permissions changed to  *admin only*  for ` +
-          ʍɛɛɨռք[0] +
+          arg[0] +
           ` ` +
           type +
           `.`,

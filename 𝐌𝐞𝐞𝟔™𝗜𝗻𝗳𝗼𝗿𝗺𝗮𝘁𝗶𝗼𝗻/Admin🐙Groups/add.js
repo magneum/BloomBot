@@ -10,7 +10,7 @@ module.exports = {
 Example -
 ${ꜱɪɢɴ.Mee6IX}add <country-code>8250889325*
 ${ꜱɪɢɴ.Mee6IX}add 918250889325*`,
-  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք, ɴᴇᴡᴍᴇᴇ6) {
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg, ɴᴇᴡᴍᴇᴇ6) {
     if (ɴᴇᴡᴍᴇᴇ6.total) {
       await ʍɛɛℓιєηт
         .sendMessage(
@@ -25,7 +25,7 @@ ${ꜱɪɢɴ.Mee6IX}add 918250889325*`,
         .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
     }
     try {
-      if (!ʍɛɛɨռք[0]) {
+      if (!arg[0]) {
         ʍɛɛℓιєηт
           .sendMessage(
             ᴍᴇᴇ6.chatId,
@@ -38,7 +38,7 @@ For instance,
         return;
       }
       let NUM;
-      if (isNaN(ʍɛɛɨռք[0]) || ʍɛɛɨռք[0][0] === `+` || ʍɛɛɨռք[0].length < 10) {
+      if (isNaN(arg[0]) || arg[0][0] === `+` || arg[0].length < 10) {
         ʍɛɛℓιєηт
           .sendMessage(
             ᴍᴇᴇ6.chatId,
@@ -52,10 +52,10 @@ Example -
           .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
         return;
       }
-      if (ʍɛɛɨռք[0].length == 10 && !isNaN(ʍɛɛɨռք[0])) {
-        NUM = `91` + ʍɛɛɨռք[0];
+      if (arg[0].length == 10 && !isNaN(arg[0])) {
+        NUM = `91` + arg[0];
       } else {
-        NUM = ʍɛɛɨռք[0];
+        NUM = arg[0];
       }
       const exists = await ʍɛɛℓιєηт.isOnWhatsApp(NUM + `@s.whatsapp.net`);
       if (!exists) {
@@ -73,7 +73,7 @@ Example -
           .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
         return;
       }
-      NUM = `${ʍɛɛɨռք[0].replace(/ /g, "")}@s.whatsapp.net`;
+      NUM = `${arg[0].replace(/ /g, "")}@s.whatsapp.net`;
       const request = ʍɛɛℓιєηт.groupAdd(ᴍᴇᴇ6.chatId, [NUM]);
       const response = await request;
 

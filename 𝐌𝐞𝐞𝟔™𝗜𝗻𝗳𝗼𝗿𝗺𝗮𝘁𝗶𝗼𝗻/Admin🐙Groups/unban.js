@@ -7,7 +7,7 @@ module.exports = {
   name: `unban`,
   commandType: "Admin🐙Groups",
   description: `Remove number from the banlist.`,
-  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք, ɴᴇᴡᴍᴇᴇ6){
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg, ɴᴇᴡᴍᴇᴇ6){
     if (ɴᴇᴡᴍᴇᴇ6.total) {
       await ʍɛɛℓιєηт
         .sendMessage(
@@ -42,7 +42,7 @@ module.exports = {
         )
         .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
     }
-    if (!ᴍᴇᴇ6.isReply && typeof ʍɛɛɨռք[0] == `undefined`) {
+    if (!ᴍᴇᴇ6.isReply && typeof arg[0] == `undefined`) {
       ʍɛɛℓιєηт
         .sendMessage(
           ᴍᴇᴇ6.chatId,
@@ -54,15 +54,15 @@ module.exports = {
     }
     const reply = chat.message.extendedTextMessage;
     var contact = ``;
-    if (!ʍɛɛɨռք.length > 0) {
+    if (!arg.length > 0) {
       contact = reply.contextInfo.participant.split(`@`)[0];
     } else {
-      contact = async (ʍɛɛɨռք, ʍɛɛℓιєηт, ᴍᴇᴇ6) => {
+      contact = async (arg, ʍɛɛℓιєηт, ᴍᴇᴇ6) => {
         var JoinIDNum = ``;
         var countryCode = ꜱɪɢɴ.COUNTRY_CODE;
-        if (isNaN(ʍɛɛɨռք[0]) || ʍɛɛɨռք[0][0] === `+`) {
-          if (ʍɛɛɨռք[0][0] === `@` || ʍɛɛɨռք[0][0] === `+`) {
-            JoinIDNum = ʍɛɛɨռք[0].substring(1, ʍɛɛɨռք[0].length + 1);
+        if (isNaN(arg[0]) || arg[0][0] === `+`) {
+          if (arg[0][0] === `@` || arg[0][0] === `+`) {
+            JoinIDNum = arg[0].substring(1, arg[0].length + 1);
           } else {
             ʍɛɛℓιєηт
               .sendMessage(
@@ -80,7 +80,7 @@ Approved Syntax:
             return;
           }
         } else {
-          JoinIDNum = ʍɛɛɨռք[0];
+          JoinIDNum = arg[0];
         }
 
         if (JoinIDNum.length < 8 || JoinIDNum.length > 13) {

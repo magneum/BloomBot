@@ -7,7 +7,7 @@ module.exports = {
   name: `google`,
   commandType: "Fun⚡",
   description: `Search anything on google`,
-  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք, ɴᴇᴡᴍᴇᴇ6){
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg, ɴᴇᴡᴍᴇᴇ6){
     if (ɴᴇᴡᴍᴇᴇ6.total) {
       await ʍɛɛℓιєηт
         .sendMessage(
@@ -21,7 +21,7 @@ module.exports = {
         )
         .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
     }
-    if (ʍɛɛɨռք.length === 0) {
+    if (arg.length === 0) {
       return await ʍɛɛℓιєηт
         .sendMessage(
           ᴍᴇᴇ6.chatId,
@@ -52,8 +52,8 @@ ${ᴋᴇɪ}google <search topic>`,
           {
             mimetype: Mimetype.jpeg,
             caption: `
-*🌍𝗚𝗼𝗼𝗴𝗹𝗲𝗱:* ${ʍɛɛɨռք.join(` `)}
-*💡𝗥𝗲𝘀𝘂𝗹𝘁:* https://google.com/search?q=${ʍɛɛɨռք.join(`+`)}`,
+*🌍𝗚𝗼𝗼𝗴𝗹𝗲𝗱:* ${arg.join(` `)}
+*💡𝗥𝗲𝘀𝘂𝗹𝘁:* https://google.com/search?q=${arg.join(`+`)}`,
           }
         )
         .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));

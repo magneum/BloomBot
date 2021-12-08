@@ -9,7 +9,7 @@ module.exports = {
   commandType: "Fun⚡",
   description: `Get the github profile by command  *${ꜱɪɢɴ.Mee6IX}github <user>*  
 or replying  *${ꜱɪɢɴ.Mee6IX}github*`,
-  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք, ɴᴇᴡᴍᴇᴇ6){
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg, ɴᴇᴡᴍᴇᴇ6){
     if (ɴᴇᴡᴍᴇᴇ6.total) {
       await ʍɛɛℓιєηт
         .sendMessage(
@@ -28,7 +28,7 @@ or replying  *${ꜱɪɢɴ.Mee6IX}github*`,
       if (ᴍᴇᴇ6.isReply) {
         user_name = ᴍᴇᴇ6.replyMessage;
       } else {
-        if (ʍɛɛɨռք.length === 0) {
+        if (arg.length === 0) {
           return await ʍɛɛℓιєηт
             .sendMessage(
               ᴍᴇᴇ6.chatId,
@@ -48,7 +48,7 @@ or replying  *${ꜱɪɢɴ.Mee6IX}github*`,
               ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
             });
         }
-        user_name = ʍɛɛɨռք[0];
+        user_name = arg[0];
       }
       let userResponse = await got(`https://api.github.com/users/` + user_name);
       let user = JSON.parse(userResponse.body);

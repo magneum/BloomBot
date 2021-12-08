@@ -10,7 +10,7 @@ module.exports = {
   description: `Text To Speech.`,
   ᴍᴇᴇ6ʍօʀɛ: `Use  *${ꜱɪɢɴ.Mee6IX}tts <text>*  or  *${ꜱɪɢɴ.Mee6IX}tts <text> | <language_code>*  to convert text to speech.
 You can also reply to a text message with syntax  *${ꜱɪɢɴ.Mee6IX}tr <language>*  to translate text.`,
-  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք, ɴᴇᴡᴍᴇᴇ6){
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg, ɴᴇᴡᴍᴇᴇ6){
     if (ɴᴇᴡᴍᴇᴇ6.total) {
       await ʍɛɛℓιєηт
         .sendMessage(
@@ -24,7 +24,7 @@ You can also reply to a text message with syntax  *${ꜱɪɢɴ.Mee6IX}tr <langua
         )
         .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
     }
-    if (ʍɛɛɨռք.length === 0) {
+    if (arg.length === 0) {
       return await ʍɛɛℓιєηт
         .sendMessage(
           ᴍᴇᴇ6.chatId,
@@ -48,12 +48,12 @@ You can also reply to a text message with syntax  *${ꜱɪɢɴ.Mee6IX}tr <langua
     }
     let text = ``;
     let langCode = `en`;
-    for (var i = 0; i < ʍɛɛɨռք.length; i++) {
-      if (ʍɛɛɨռք[i] == `=`) {
-        langCode = ʍɛɛɨռք[i + 1];
+    for (var i = 0; i < arg.length; i++) {
+      if (arg[i] == `=`) {
+        langCode = arg[i + 1];
         break;
       }
-      text += ʍɛɛɨռք[i] + ` `;
+      text += arg[i] + ` `;
     }
     if (text.length > 200) {
       await ʍɛɛℓιєηт

@@ -9,7 +9,7 @@ module.exports = {
   name: `yts`,
   commandType: "Music🔊",
   description: `Get the first 10 recommendations from YouTube with their authorname, timestamp and link. Mention the FetchedLinks that are required to be searched along with the command.`,
-  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք, ɴᴇᴡᴍᴇᴇ6){
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg, ɴᴇᴡᴍᴇᴇ6){
     if (ɴᴇᴡᴍᴇᴇ6.total) {
       await ʍɛɛℓιєηт
         .sendMessage(
@@ -23,7 +23,7 @@ module.exports = {
         )
         .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
     }
-    if (ʍɛɛɨռք.length === 0) {
+    if (arg.length === 0) {
       return await ʍɛɛℓιєηт
         .sendMessage(
           ᴍᴇᴇ6.chatId,
@@ -46,7 +46,7 @@ You Can Get download audio by using ${ᴋᴇɪ}ytdl <song-url>`,
           ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
         });
     }
-    const FetchedLink = await yts(ʍɛɛɨռք.join(` `));
+    const FetchedLink = await yts(arg.join(` `));
     const videos = FetchedLink.videos.slice(0, 5);
     var Fetched = ``;
     videos.forEach(function (youfound) {
@@ -66,7 +66,7 @@ You Can Get download audio by using ${ᴋᴇɪ}ytdl <song-url>`,
         .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
       return;
     }
-    const c = ʍɛɛɨռք.join(` `);
+    const c = arg.join(` `);
     ʍɛɛℓιєηт
       .sendMessage(
         ᴍᴇᴇ6.chatId,

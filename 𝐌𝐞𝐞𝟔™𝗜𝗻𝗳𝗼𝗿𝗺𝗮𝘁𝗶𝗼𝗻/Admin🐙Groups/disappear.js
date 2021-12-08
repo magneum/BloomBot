@@ -7,7 +7,7 @@ module.exports = {
   name: `disappear`,
   commandType: "Admin🐙Groups",
   description: `Toggle disappearing messages by using command ${ꜱɪɢɴ.Mee6IX}dissapear* .`,
-  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք, ɴᴇᴡᴍᴇᴇ6){
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg, ɴᴇᴡᴍᴇᴇ6){
     if (ɴᴇᴡᴍᴇᴇ6.total) {
       await ʍɛɛℓιєηт
         .sendMessage(

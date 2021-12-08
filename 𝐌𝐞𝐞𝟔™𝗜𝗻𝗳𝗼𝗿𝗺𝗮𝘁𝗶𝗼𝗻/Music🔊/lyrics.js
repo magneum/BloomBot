@@ -8,7 +8,7 @@ module.exports = {
   name: `lyrics`,
   commandType: "Music🔊",
   description: `Use this command to find the lyrics of a song by using  *${ꜱɪɢɴ.Mee6IX}lyrics*  command.`,
-  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք, ɴᴇᴡᴍᴇᴇ6){
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg, ɴᴇᴡᴍᴇᴇ6){
     if (ɴᴇᴡᴍᴇᴇ6.total) {
       await ʍɛɛℓιєηт
         .sendMessage(
@@ -25,7 +25,7 @@ module.exports = {
     var song = ``;
     if (ᴍᴇᴇ6.isReply) {
       song = ᴍᴇᴇ6.replyMessage;
-    } else if (ʍɛɛɨռք.length === 0) {
+    } else if (arg.length === 0) {
       return await ʍɛɛℓιєηт
         .sendMessage(
           ᴍᴇᴇ6.chatId,
@@ -45,7 +45,7 @@ ${ᴋᴇɪ}lyrics <song-name>`,
           ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
         });
     } else {
-      song = ʍɛɛɨռք.join(` `);
+      song = arg.join(` `);
     }
     await ʍɛɛℓιєηт
       .sendMessage(ᴍᴇᴇ6.chatId, `Searching. Please wait....`, MessageType.text)

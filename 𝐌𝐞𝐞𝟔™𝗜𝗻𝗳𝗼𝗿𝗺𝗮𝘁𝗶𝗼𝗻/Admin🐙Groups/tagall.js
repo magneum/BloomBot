@@ -11,7 +11,7 @@ module.exports = {
   commandType: "Admin🐙Groups",
   description: `command to tag evryone in a group.`,
   ᴍᴇᴇ6ʍօʀɛ: `Use this command to tag everyone in the group by either replying to a message or simply using  *${ꜱɪɢɴ.Mee6IX}tagall*  command.`,
-  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք, ɴᴇᴡᴍᴇᴇ6){
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg, ɴᴇᴡᴍᴇᴇ6){
     if (ɴᴇᴡᴍᴇᴇ6.total) {
       await ʍɛɛℓιєηт
         .sendMessage(
@@ -82,9 +82,9 @@ module.exports = {
         .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
       return;
     }
-    if (ʍɛɛɨռք.length) {
+    if (arg.length) {
       ʍɛɛℓιєηт
-        .sendMessage(ᴍᴇᴇ6.chatId, ʍɛɛɨռք.join(` `), MessageType.text, {
+        .sendMessage(ᴍᴇᴇ6.chatId, arg.join(` `), MessageType.text, {
           contextInfo: {
             mentionedJid: members,
           },

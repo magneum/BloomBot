@@ -8,7 +8,7 @@ module.exports = {
   name: `imdb`,
   commandType: "Fun⚡",
   description: `This command was built to find any IMDB movie/series.`,
-  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք, ɴᴇᴡᴍᴇᴇ6){
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg, ɴᴇᴡᴍᴇᴇ6){
     if (ɴᴇᴡᴍᴇᴇ6.total) {
       await ʍɛɛℓιєηт
         .sendMessage(
@@ -22,7 +22,7 @@ module.exports = {
         )
         .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
     }
-    if (ʍɛɛɨռք.length === 0) {
+    if (arg.length === 0) {
       await ʍɛɛℓιєηт.sendMessage(ᴍᴇᴇ6.chatId, "❌", MessageType.text);
       await ʍɛɛℓιєηт
         .sendMessage(
@@ -46,7 +46,7 @@ module.exports = {
       apiKey: ꜱɪɢɴ.IMDB,
     });
     let movie = await imob.get({
-      name: ʍɛɛɨռք.join(" "),
+      name: arg.join(" "),
     });
     const Litol = `*💡𝐓𝐢𝐭𝐥𝐞➛*  ${movie.title.toUpperCase()}
 *🕜𝐓𝐢𝐦𝐞➛*  ${movie.runtime}

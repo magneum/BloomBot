@@ -9,7 +9,7 @@ module.exports = {
   commandType: "Fun⚡",
   description: `Urban Dictionary`,
   ᴍᴇᴇ6ʍօʀɛ: `Use this command to find the meaning of a word in Urban Dictionary. Enter  *${ꜱɪɢɴ.Mee6IX}ud*  command.`,
-  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք, ɴᴇᴡᴍᴇᴇ6){
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg, ɴᴇᴡᴍᴇᴇ6){
     if (ɴᴇᴡᴍᴇᴇ6.total) {
       await ʍɛɛℓιєηт
         .sendMessage(
@@ -27,7 +27,7 @@ module.exports = {
       var text = ``;
       if (!(ᴍᴇᴇ6.replyMessage === ``)) {
         text = ᴍᴇᴇ6.replyMessage;
-      } else if (ʍɛɛɨռք.length === 0) {
+      } else if (arg.length === 0) {
         return await ʍɛɛℓιєηт
           .sendMessage(
             ᴍᴇᴇ6.chatId,
@@ -47,7 +47,7 @@ module.exports = {
             ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
           });
       } else {
-        text = ʍɛɛɨռք.join(` `);
+        text = arg.join(` `);
       }
 
       let Response = await ud.define(text);

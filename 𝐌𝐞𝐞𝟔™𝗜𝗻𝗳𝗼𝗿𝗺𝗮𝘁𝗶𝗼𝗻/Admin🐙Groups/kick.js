@@ -7,7 +7,7 @@ module.exports = {
   name: `kick`,
   commandType: "Admin🐙Groups",
   description: `Use this command to kick people from a group by tagging them  *${ꜱɪɢɴ.Mee6IX}kick @<person-to-kick>*  or replying to them  *${ꜱɪɢɴ.Mee6IX}kick*`,
-  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք, ɴᴇᴡᴍᴇᴇ6){
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg, ɴᴇᴡᴍᴇᴇ6){
     if (ɴᴇᴡᴍᴇᴇ6.total) {
       await ʍɛɛℓιєηт
         .sendMessage(
@@ -118,7 +118,7 @@ module.exports = {
       }
       return;
     }
-    if (!ʍɛɛɨռք[0]) {
+    if (!arg[0]) {
       ʍɛɛℓιєηт
         .sendMessage(
           ᴍᴇᴇ6.chatId,
@@ -128,8 +128,8 @@ module.exports = {
         .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
       return;
     }
-    if (ʍɛɛɨռք[0][0] == `@`) {
-      const number = ʍɛɛɨռք[0].substring(1);
+    if (arg[0][0] == `@`) {
+      const number = arg[0].substring(1);
       if (isNaN(number)) {
         ʍɛɛℓιєηт
           .sendMessage(

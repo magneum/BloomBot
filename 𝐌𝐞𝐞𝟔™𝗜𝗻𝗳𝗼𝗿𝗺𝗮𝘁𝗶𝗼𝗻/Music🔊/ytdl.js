@@ -25,7 +25,7 @@ module.exports = {
   name: `ytdl`,
   commandType: "Music🔊",
   description: `Use this command to download audio of your choice either by specifying a YouTube link or the name of the song.`,
-  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք, ɴᴇᴡᴍᴇᴇ6){
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg, ɴᴇᴡᴍᴇᴇ6){
     if (ɴᴇᴡᴍᴇᴇ6.total) {
       await ʍɛɛℓιєηт
         .sendMessage(
@@ -39,7 +39,7 @@ module.exports = {
         )
         .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
     }
-    if (ʍɛɛɨռք.length === 0) {
+    if (arg.length === 0) {
       return await ʍɛɛℓιєηт
         .sendMessage(
           ᴍᴇᴇ6.chatId,
@@ -62,7 +62,7 @@ You Can Get URL by using ${ᴋᴇɪ}yts <song-name>`,
           ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
         });
     }
-    if (!Regex.VideoURL.test(ʍɛɛɨռք[0])) {
+    if (!Regex.VideoURL.test(arg[0])) {
       return await ʍɛɛℓιєηт
         .sendMessage(
           ᴍᴇᴇ6.chatId,
@@ -72,7 +72,7 @@ You Can Get URL by using ${ᴋᴇɪ}yts <song-name>`,
           MessageType.image,
           {
             mimetype: Mimetype.jpeg,
-            caption: `*⚠️Seems like ${ʍɛɛɨռք[0]} is not YouTube Link or not YouTube Single Video Link!*
+            caption: `*⚠️Seems like ${arg[0]} is not YouTube Link or not YouTube Single Video Link!*
 
 *Usage Example*
 ${ᴋᴇɪ}ytdl <video-link>
@@ -87,13 +87,13 @@ You Can Get URL by using ${ᴋᴇɪ}yts <song-name>`,
     }
     // Task starts here
     var Id = ` `;
-    if (ʍɛɛɨռք[0].includes(`youtu`)) {
-      Id = ʍɛɛɨռք[0];
+    if (arg[0].includes(`youtu`)) {
+      Id = arg[0];
       try {
-        if (ʍɛɛɨռք[0].includes(`watch?v=`)) {
-          var songId = ʍɛɛɨռք[0].split(`watch?v=`)[1];
+        if (arg[0].includes(`watch?v=`)) {
+          var songId = arg[0].split(`watch?v=`)[1];
         } else {
-          var songId = ʍɛɛɨռք[0].split(`/`)[3];
+          var songId = arg[0].split(`/`)[3];
         }
         await yts({
           videoId: songId,
@@ -102,7 +102,7 @@ You Can Get URL by using ${ᴋᴇɪ}yts <song-name>`,
         throw cᴇʀʀᴏʀ;
       }
     } else {
-      var song = await yts(ʍɛɛɨռք.join(` `));
+      var song = await yts(arg.join(` `));
       song = song.all;
       if (song.length < 1) {
         ʍɛɛℓιєηт
@@ -121,7 +121,7 @@ You Can Get URL by using ${ᴋᴇɪ}yts <song-name>`,
         quality: `highestaudio`,
       });
 
-      const FetchedLink = await yts(ʍɛɛɨռք.join(` `));
+      const FetchedLink = await yts(arg.join(` `));
       const videos = FetchedLink.videos.slice(0, 1);
       videos.forEach(function (youfound) {
         Fetched = `*⛖𝐘𝐨𝐮𝐫 𝐌𝐮𝐬𝐢𝐜 𝐈𝐬 𝐍𝐨𝐰 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐢𝐧𝐠⛖*
@@ -145,7 +145,7 @@ _📥𝘋𝘰𝘸𝘯𝘭𝘰𝘢𝘥 𝘛𝘪𝘮𝘦 𝘥𝘦𝘱𝘦𝘯𝘥�
 🛸—••÷ 𝗦𝗲𝗿𝘃𝗶𝗰𝗲 ÷••—
 ⪢ ʏᴏᴜᴛᴜʙᴇ⭕ʏᴏᴜᴛᴜʙᴇ ᴍᴜꜱɪᴄ`;
       });
-      const { id } = getVideoId(ʍɛɛɨռք.join(` `));
+      const { id } = getVideoId(arg.join(` `));
       await ʍɛɛℓιєηт
         .sendMessage(
           ᴍᴇᴇ6.chatId,

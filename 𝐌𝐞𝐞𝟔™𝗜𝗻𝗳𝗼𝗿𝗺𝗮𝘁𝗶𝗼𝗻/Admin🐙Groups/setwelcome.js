@@ -13,7 +13,7 @@ Use this command to either set, update or delete the existing message.
 The setwelcome option can be disabled but saved using the   *${ꜱɪɢɴ.Mee6IX}setwelcome  off*  command. 
 In order to delete the existing message, use  *${ꜱɪɢɴ.Mee6IX}setwelcome  delete* .
 Do note, the setwelcome option is still enabled after you use the delete option.`,
-  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք, ɴᴇᴡᴍᴇᴇ6){
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg, ɴᴇᴡᴍᴇᴇ6){
     if (ɴᴇᴡᴍᴇᴇ6.total) {
       await ʍɛɛℓιєηт
         .sendMessage(
@@ -59,7 +59,7 @@ Do note, the setwelcome option is still enabled after you use the delete option.
       return;
     }
     var Msg = await Greetings.getMessage(ᴍᴇᴇ6.chatId, `setwelcome`);
-    if (ʍɛɛɨռք.length == 0) {
+    if (arg.length == 0) {
       var enabled = await Greetings.checkSettings(ᴍᴇᴇ6.chatId, `setwelcome`);
       try {
         if (enabled === false || enabled === undefined) {
@@ -110,7 +110,7 @@ Do note, the setwelcome option is still enabled after you use the delete option.
       }
     } else {
       try {
-        if (ʍɛɛɨռք[0] === `OFF` || ʍɛɛɨռք[0] === `off` || ʍɛɛɨռք[0] === `Off`) {
+        if (arg[0] === `OFF` || arg[0] === `off` || arg[0] === `Off`) {
           switched = `OFF`;
           await Greetings.changeSettings(ᴍᴇᴇ6.chatId, switched);
           ʍɛɛℓιєηт
@@ -124,7 +124,7 @@ Do note, the setwelcome option is still enabled after you use the delete option.
             });
           return;
         }
-        if (ʍɛɛɨռք[0] === `ON` || ʍɛɛɨռք[0] === `on` || ʍɛɛɨռք[0] === `On`) {
+        if (arg[0] === `ON` || arg[0] === `on` || arg[0] === `On`) {
           switched = `ON`;
           await Greetings.changeSettings(ᴍᴇᴇ6.chatId, switched);
           ʍɛɛℓιєηт
@@ -138,7 +138,7 @@ Do note, the setwelcome option is still enabled after you use the delete option.
             });
           return;
         }
-        if (ʍɛɛɨռք[0] === `delete`) {
+        if (arg[0] === `delete`) {
           var Msg = await Greetings.deleteMessage(ᴍᴇᴇ6.chatId, `setwelcome`);
           if (Msg === false || Msg === undefined) {
             ʍɛɛℓιєηт

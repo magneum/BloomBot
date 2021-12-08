@@ -7,7 +7,7 @@ module.exports = {
   name: "spam",
   commandType: "Admin🐙Groups",
   description: `Spam Messages.${ꜱɪɢɴ.Mee6IX}spam <count> <text>*`,
-  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք, ɴᴇᴡᴍᴇᴇ6){
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg, ɴᴇᴡᴍᴇᴇ6){
     if (ɴᴇᴡᴍᴇᴇ6.total) {
       await ʍɛɛℓιєηт
         .sendMessage(
@@ -42,7 +42,7 @@ module.exports = {
         )
         .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
     }
-    let count = Number(ʍɛɛɨռք.shift());
+    let count = Number(arg.shift());
     if (isNaN(count)) {
       return await ʍɛɛℓιєηт
         .sendMessage(
@@ -71,8 +71,8 @@ ${ᴋᴇɪ}spam <count> <text>`,
         .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
       return 0;
     }
-    if (ʍɛɛɨռք.length) {
-      let text = ʍɛɛɨռք.join(" ");
+    if (arg.length) {
+      let text = arg.join(" ");
       for (let i = 0; i < count; i++)
         await ʍɛɛℓιєηт
           .sendMessage(ᴍᴇᴇ6.chatId, text, MessageType.text)

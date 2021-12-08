@@ -11,7 +11,7 @@ module.exports = {
   description: `command to convert image to sticker`,
   ᴍᴇᴇ6ʍօʀɛ: `Use this command to convert any image from your chat to a sticker. 
 Reply to an image message with the command  *${ꜱɪɢɴ.Mee6IX}sticker*  to convert and send that image as a sticker.`,
-  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք, ɴᴇᴡᴍᴇᴇ6){
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg, ɴᴇᴡᴍᴇᴇ6){
     if (ɴᴇᴡᴍᴇᴇ6.total) {
       await ʍɛɛℓιєηт
         .sendMessage(

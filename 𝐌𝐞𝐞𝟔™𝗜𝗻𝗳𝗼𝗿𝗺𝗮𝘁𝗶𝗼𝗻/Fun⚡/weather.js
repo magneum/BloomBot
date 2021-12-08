@@ -10,7 +10,7 @@ module.exports = {
   commandType: "Fun⚡",
   description: `Get weather data of a city`,
   ᴍᴇᴇ6ʍօʀɛ: `Obtain weather info by entering the city name.`,
-  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք, ɴᴇᴡᴍᴇᴇ6){
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg, ɴᴇᴡᴍᴇᴇ6){
     if (ɴᴇᴡᴍᴇᴇ6.total) {
       await ʍɛɛℓιєηт
         .sendMessage(
@@ -57,7 +57,7 @@ module.exports = {
           )
           .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
       }
-      if (ʍɛɛɨռք.length === 0 || ʍɛɛɨռք.length < 1) {
+      if (arg.length === 0 || arg.length < 1) {
         return await ʍɛɛℓιєηт
           .sendMessage(
             ᴍᴇᴇ6.chatId,
@@ -77,8 +77,8 @@ module.exports = {
             ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
           });
       } else if (
-        ʍɛɛɨռք[ʍɛɛɨռք.length - 1] === `tom` ||
-        ʍɛɛɨռք[ʍɛɛɨռք.length - 1] === `tomorrow`
+        arg[arg.length - 1] === `tom` ||
+        arg[arg.length - 1] === `tomorrow`
       ) {
         var downloading = await ʍɛɛℓιєηт
           .sendMessage(
@@ -87,8 +87,8 @@ module.exports = {
             MessageType.text
           )
           .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
-        ʍɛɛɨռք[ʍɛɛɨռք.length - 1] = ``;
-        var cityName = ʍɛɛɨռք.join(` `);
+        arg[arg.length - 1] = ``;
+        var cityName = arg.join(` `);
         const unit = `metric`;
 
         const url =
@@ -231,7 +231,7 @@ TRY LATER!
             MessageType.text
           )
           .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
-        var cityName = ʍɛɛɨռք.join(` `);
+        var cityName = arg.join(` `);
         const unit = `metric`;
 
         const url =

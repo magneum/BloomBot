@@ -69,7 +69,7 @@ var Text__Bye = [
 var ʍɛɛℓιєηт = ᴍᴇᴇ6ֆʏռօք.WhatsApp;
 async function ᴍᴇᴇ6s() {
   ʍɛɛℓιєηт.logger.level = "error";
-  var ʍɛɛɨռք = new Map();
+  var arg = new Map();
   if (ꜱɪɢɴ.HEROKU_API === `Null` || ꜱɪɢɴ.HEROKU_BOT_NAME === `Null`) {
     console.log(
       Kolor.yellow(
@@ -153,7 +153,7 @@ async function ᴍᴇᴇ6s() {
         .filter((file) => file.endsWith(`.js`));
       for (const file of commandFiles) {
         const command = require(`./𝐌𝐞𝐞𝟔™𝗜𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻/${folder}/${file}`);
-        ʍɛɛɨռք.set(command.name, command);
+        arg.set(command.name, command);
         console.log(
           Kolor.yellow(`[💡𝐌𝐞𝐞𝟔™⬰𝗜𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻 ]  `),
           Kolor.green(command.name.toUpperCase())
@@ -479,8 +479,8 @@ ${Fetched.message}`,
           `[💡𝐌𝐞𝐞𝟔™⬰𝗜𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻 ]  ${ᴍᴇᴇ6.commandName.toUpperCase()} command executed.`
         )
       );
-      const command = ʍɛɛɨռք.get(ᴍᴇᴇ6.commandName);
-      var ʍɛɛɨռք = ᴍᴇᴇ6.body.trim().split(/\s+/).slice(1);
+      const command = arg.get(ᴍᴇᴇ6.commandName);
+      var arg = ᴍᴇᴇ6.body.trim().split(/\s+/).slice(1);
       var ᴋᴇɪᴇx = new RegExp(ꜱɪɢɴ.Mee6IX, `g`);
       var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
       if (!command) {
@@ -503,7 +503,7 @@ Please Use *${ᴋᴇɪ}help to get the list of available commands*`,
       } else if (command && ᴍᴇᴇ6.commandName == `help`) {
         try {
           var ɴᴇᴡᴍᴇᴇ6 = await ᴍᴇᴇgit.log(["KrakinzLab..origin/KrakinzLab"]);
-          return command.handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք, ɴᴇᴡᴍᴇᴇ6);
+          return command.handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg, ɴᴇᴡᴍᴇᴇ6);
         } catch (cᴇʀʀᴏʀ) {
           return console.log(Kolor.red(`[❌𝐌𝐞𝐞𝟔™⬰𝗘𝗿𝗿𝗼𝗿 ] `, cᴇʀʀᴏʀ));
         }

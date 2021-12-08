@@ -13,7 +13,7 @@ Example Usage,
 *${ꜱɪɢɴ.Mee6IX}carbon*  and reply to a text message.
 Use the -t flag after  *${ꜱɪɢɴ.Mee6IX}carbon*  to get the list of themes availble.
 In order to specify the theme, use  *${ꜱɪɢɴ.Mee6IX}carbon <text> -t <theme>* .`,
-  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք, ɴᴇᴡᴍᴇᴇ6){
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg, ɴᴇᴡᴍᴇᴇ6){
     if (ɴᴇᴡᴍᴇᴇ6.total) {
       await ʍɛɛℓιєηт
         .sendMessage(
@@ -59,7 +59,7 @@ In order to specify the theme, use  *${ꜱɪɢɴ.Mee6IX}carbon <text> -t <theme>
         `zenburn`,
       ];
       var code = ``;
-      if (ʍɛɛɨռք[0] == null && !ᴍᴇᴇ6.isReply) {
+      if (arg[0] == null && !ᴍᴇᴇ6.isReply) {
         await ʍɛɛℓιєηт
           .sendMessage(
             ᴍᴇᴇ6.chatId,

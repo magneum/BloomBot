@@ -11,7 +11,7 @@ module.exports = {
   ᴍᴇᴇ6ʍօʀɛ: `Use  *${ꜱɪɢɴ.Mee6IX}tr <text> = <language>*  to translate text to the specified language. 
 You can also reply to a text message with syntax  *${ꜱɪɢɴ.Mee6IX}tr <language>*  to translate text.
 If you do not specify a language, it defaults to English.`,
-  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք, ɴᴇᴡᴍᴇᴇ6){
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg, ɴᴇᴡᴍᴇᴇ6){
     if (ɴᴇᴡᴍᴇᴇ6.total) {
       await ʍɛɛℓιєηт
         .sendMessage(
@@ -28,7 +28,7 @@ If you do not specify a language, it defaults to English.`,
     try {
       var text = ``;
       var language = ``;
-      if (ʍɛɛɨռք.length === 0) {
+      if (arg.length === 0) {
         return await ʍɛɛℓιєηт
           .sendMessage(
             ᴍᴇᴇ6.chatId,
@@ -65,7 +65,7 @@ If you do not specify a language, it defaults to English.`,
         }
       } else if (ᴍᴇᴇ6.replyMessage) {
         text = ᴍᴇᴇ6.replyMessage;
-        language = ʍɛɛɨռք[0];
+        language = arg[0];
       } else {
         await ʍɛɛℓιєηт
           .sendMessage(
