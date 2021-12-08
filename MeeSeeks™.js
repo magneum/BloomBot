@@ -73,7 +73,7 @@ async function ᴍᴇᴇ6s() {
   if (ꜱɪɢɴ.HEROKU_API === `Null` || ꜱɪɢɴ.HEROKU_BOT_NAME === `Null`) {
     console.log(
       Kolor.yellow(
-        `[❌𝐌𝐞𝐞𝟔™⬰𝗘𝗿𝗿𝗼𝗿 ] 𝐒𝐞𝐞𝐦𝐬 𝐥𝐢𝐤𝐞 𝐇𝐞𝐫𝐨𝐤𝐮 𝐯𝐚𝐫𝐬 𝐚𝐫𝐞 𝐢𝐧𝐯𝐚𝐥𝐢𝐝.𝐏𝐥𝐞𝐚𝐬𝐞 𝐜𝐡𝐞𝐜𝐤 𝐚𝐧𝐝 𝐫𝐞𝐭𝐫𝐲!`
+        `𝐌𝐞𝐞𝟔™❌𝗘𝗿𝗿𝗼𝗿⬰ 𝐒𝐞𝐞𝐦𝐬 𝐥𝐢𝐤𝐞 𝐇𝐞𝐫𝐨𝐤𝐮 𝐯𝐚𝐫𝐬 𝐚𝐫𝐞 𝐢𝐧𝐯𝐚𝐥𝐢𝐝.𝐏𝐥𝐞𝐚𝐬𝐞 𝐜𝐡𝐞𝐜𝐤 𝐚𝐧𝐝 𝐫𝐞𝐭𝐫𝐲!`
       )
     );
     process.exit(0);
@@ -81,7 +81,7 @@ async function ᴍᴇᴇ6s() {
   console.log(
     Kolor.yellow(`⬡=================⬡    ⦿𝐌𝐞𝐞𝟔™⦿    ⬡=================⬡`)
   );
-  console.log(Kolor.yellow(`[💡𝐌𝐞𝐞𝟔™⬰𝗜𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻 ] Checking for updates...`));
+  console.log(Kolor.yellow(`𝐌𝐞𝐞𝟔™💡𝗜𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻⬰ 𝗖𝗵𝗲𝗰𝗸𝗶𝗻𝗴 𝗳𝗼𝗿 𝘂𝗽𝗱𝗮𝘁𝗲𝘀...`));
   await AutoMeeUpdate();
   try {
     var session = ᴍᴇᴇ6ֆʏռօք.Mee6reignite(ꜱɪɢɴ.Mee6);
@@ -93,7 +93,7 @@ async function ᴍᴇᴇ6s() {
       cᴇʀʀᴏʀ instanceof SyntaxError
     ) {
       console.log(
-        Kolor.red(`Incorrect Session String. Please authenticate again!`)
+        Kolor.red(`𝗜𝗻𝗰𝗼𝗿𝗿𝗲𝗰𝘁 𝗦𝗲𝘀𝘀𝗶𝗼𝗻 𝗦𝘁𝗿𝗶𝗻𝗴. 𝗣𝗹𝗲𝗮𝘀𝗲 𝗮𝘂𝘁𝗵𝗲𝗻𝘁𝗶𝗰𝗮𝘁𝗲 𝗮𝗴𝗮𝗶𝗻!`)
       );
       process.exit(0);
     } else {
@@ -109,7 +109,7 @@ async function ᴍᴇᴇ6s() {
       Kolor.yellow(`⬡=================⬡    ⦿𝐌𝐞𝐞𝟔™⦿    ⬡=================⬡`)
     );
     console.log(
-      Kolor.yellow(`[💡𝐌𝐞𝐞𝟔™⬰𝗜𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻 ]  𝘊𝘰𝘯𝘯𝘦𝘤𝘵𝘪𝘯𝘨 𝘵𝘰 𝘞𝘩𝘢𝘵𝘴𝘈𝘱𝘱...🤖`)
+      Kolor.yellow(`𝐌𝐞𝐞𝟔™💡𝗜𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻⬰  𝘊𝘰𝘯𝘯𝘦𝘤𝘵𝘪𝘯𝘨 𝘵𝘰 𝘞𝘩𝘢𝘵𝘴𝘈𝘱𝘱...🤖`)
     );
   });
   // ===============================================================================
@@ -120,21 +120,18 @@ async function ᴍᴇᴇ6s() {
       Kolor.yellow(`⬡=================⬡    ⦿𝐌𝐞𝐞𝟔™⦿    ⬡=================⬡`)
     );
     console.log(
-      Kolor.yellow(`[💡𝐌𝐞𝐞𝟔™⬰𝗜𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻 ]  𝘊𝘰𝘯𝘯𝘦𝘤𝘵𝘪𝘯𝘨 𝘵𝘰 𝘋𝘢𝘵𝘢𝘣𝘢𝘴𝘦...✅`)
+      Kolor.yellow(`𝐌𝐞𝐞𝟔™💡𝗜𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻⬰  𝘊𝘰𝘯𝘯𝘦𝘤𝘵𝘪𝘯𝘨 𝘵𝘰 𝘋𝘢𝘵𝘢𝘣𝘢𝘴𝘦...✅`)
     );
     try {
       await ᴍᴇᴇ6sql.authenticate();
     } catch (error) {
-      console.error(
-        `[❌𝐌𝐞𝐞𝟔™⬰𝗘𝗿𝗿𝗼𝗿 ] Unable to connect to the database:`,
-        error
-      );
+      console.error(`𝐌𝐞𝐞𝟔™❌𝗘𝗿𝗿𝗼𝗿⬰ 𝗨𝗻𝗮𝗯𝗹𝗲 𝘁𝗼 𝗰𝗼𝗻𝗻𝗲𝗰𝘁 𝘁𝗼 𝘁𝗵𝗲 𝗱𝗮𝘁𝗮𝗯𝗮𝘀𝗲:`, error);
     }
     console.log(
       Kolor.yellow(`⬡=================⬡    ⦿𝐌𝐞𝐞𝟔™⦿    ⬡=================⬡`)
     );
     console.log(
-      Kolor.yellow(`[💡𝐌𝐞𝐞𝟔™⬰𝗜𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻 ]  𝘚𝘺𝘯𝘤𝘪𝘯𝘨 𝘋𝘢𝘵𝘢 𝘸𝘪𝘵𝘩 𝘏𝘰𝘴𝘵...✅`)
+      Kolor.yellow(`𝐌𝐞𝐞𝟔™💡𝗜𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻⬰  𝘚𝘺𝘯𝘤𝘪𝘯𝘨 𝘋𝘢𝘵𝘢 𝘸𝘪𝘵𝘩 𝘏𝘰𝘴𝘵...✅`)
     );
     await ᴍᴇᴇ6sql.sync();
     console.clear();
@@ -143,9 +140,7 @@ async function ᴍᴇᴇ6s() {
         `\n\n\n\n\n\n⬡=================⬡    ⦿𝐌𝐞𝐞𝟔™⦿    ⬡=================⬡`
       )
     );
-    console.log(
-      Kolor.yellow(`[💡𝐌𝐞𝐞𝟔™⬰𝗜𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻 ]  𝘐𝘯𝘴𝘵𝘢𝘭𝘭𝘪𝘯𝘨 𝘗𝘭𝘶𝘨𝘪𝘯𝘴...✅`)
-    );
+    console.log(Kolor.yellow(`𝐌𝐞𝐞𝟔™💡𝗜𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻⬰  𝘐𝘯𝘴𝘵𝘢𝘭𝘭𝘪𝘯𝘨 𝘗𝘭𝘶𝘨𝘪𝘯𝘴...✅`));
     const Folders = fs.readdirSync(`./𝐌𝐞𝐞𝟔™𝗜𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻`);
     for (const folder of Folders) {
       const commandFiles = fs
@@ -155,7 +150,7 @@ async function ᴍᴇᴇ6s() {
         const command = require(`./𝐌𝐞𝐞𝟔™𝗜𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻/${folder}/${file}`);
         Mee6Sitrep.set(command.name, command);
         console.log(
-          Kolor.yellow(`[💡𝐌𝐞𝐞𝟔™⬰𝗜𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻 ]  `),
+          Kolor.yellow(`𝐌𝐞𝐞𝟔™💡𝗜𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻⬰  `),
           Kolor.green(command.name.toUpperCase())
         );
       }
@@ -456,7 +451,7 @@ ${Fetched.message}`,
     if (ᴍᴇᴇ6.isCmd) {
       console.log(
         Kolor.green(
-          `[💡𝐌𝐞𝐞𝟔™⬰𝗜𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻 ]  ${ᴍᴇᴇ6.commandName.toUpperCase()} command executed.`
+          `𝐌𝐞𝐞𝟔™💡𝗜𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻⬰  ${ᴍᴇᴇ6.commandName.toUpperCase()} command executed.`
         )
       );
       const command = Mee6Sitrep.get(ᴍᴇᴇ6.commandName);
@@ -482,31 +477,19 @@ Please Use *${ᴋᴇɪ}help to get the list of available commands*`,
           .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
       } else if (command && ᴍᴇᴇ6.commandName == `help`) {
         try {
-          var ᴋᴇɪᴇx = new RegExp(ꜱɪɢɴ.Mee6IX, "g");
-          var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
           var ɴᴇᴡᴍᴇᴇ6 = await ᴍᴇᴇgit.log(["KrakinzLab..origin/KrakinzLab"]);
-          return command.handle(
-            ʍɛɛℓιєηт,
-            chat,
-            ᴍᴇᴇ6,
-            arg,
-            Mee6Sitrep,
-            ɴᴇᴡᴍᴇᴇ6,
-            ᴋᴇɪ
-          );
+          return command.handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg, Mee6Sitrep, ɴᴇᴡᴍᴇᴇ6);
         } catch (cᴇʀʀᴏʀ) {
-          return console.log(Kolor.red(`[❌𝐌𝐞𝐞𝟔™⬰𝗘𝗿𝗿𝗼𝗿 ] `, cᴇʀʀᴏʀ));
+          return console.log(Kolor.red(`𝐌𝐞𝐞𝟔™❌𝗘𝗿𝗿𝗼𝗿⬰ `, cᴇʀʀᴏʀ));
         }
       }
-      var ᴋᴇɪᴇx = new RegExp(ꜱɪɢɴ.Mee6IX, "g");
-      var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
       var ɴᴇᴡᴍᴇᴇ6 = await ᴍᴇᴇgit.log(["KrakinzLab..origin/KrakinzLab"]);
-      command.handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg, ɴᴇᴡᴍᴇᴇ6, ᴋᴇɪ);
+      command.handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg, ɴᴇᴡᴍᴇᴇ6);
     }
   });
 }
 ᴍᴇᴇ6s().catch((cᴇʀʀᴏʀ) =>
-  console.log(Kolor.red(`[❌𝐌𝐞𝐞𝟔™⬰𝗘𝗿𝗿𝗼𝗿 ]`), Kolor.red(cᴇʀʀᴏʀ))
+  console.log(Kolor.red(`𝐌𝐞𝐞𝟔™❌𝗘𝗿𝗿𝗼𝗿⬰`), Kolor.red(cᴇʀʀᴏʀ))
 );
 // ===============================================================================
 // 🎮ᴍᴇᴇ6™ ᴀᴅᴠᴀɴᴄᴇᴅ ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ 80+ ᴄᴏᴍᴍᴀɴᴅꜱ ꜰᴏʀ ʙᴏᴛʜ ᴘʀɪᴠᴀᴛᴇ ᴀɴᴅ ɢʀᴏᴜᴘ-ᴜꜱᴀɢᴇ

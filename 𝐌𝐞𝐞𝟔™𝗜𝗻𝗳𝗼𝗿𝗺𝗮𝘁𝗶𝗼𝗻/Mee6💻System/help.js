@@ -9,7 +9,7 @@ module.exports = {
   name: `help`,
   commandType: "Mee6💻System",
   description: `ɢᴇᴛ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅ ʟɪꜱᴛ ᴀɴᴅ ɪɴꜰᴏ ᴏɴ ᴍᴏᴅᴜʟᴇꜱ`,
-  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg, ɴᴇᴡᴍᴇᴇ6) {
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg, Mee6Sitrep, ɴᴇᴡᴍᴇᴇ6) {
     if (ɴᴇᴡᴍᴇᴇ6.total) {
       await ʍɛɛℓιєηт
         .sendMessage(
@@ -153,7 +153,7 @@ many many more!
         .sendMessage(
           ᴍᴇᴇ6.chatId,
           {
-            url: "https://i.postimg.cc/RZ11rBnw/Mee6.png",
+            url: ꜱɪɢɴ.MEE,
           },
           MessageType.image,
           {
@@ -178,7 +178,7 @@ ${MeeHelper}‍`,
         .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
     }
     var ᴍᴇᴇ6ʍօ = "⤥ 💡𝐂𝐨𝐦𝐦𝐚𝐧𝐝\n";
-    var command = arg.get(arg[0]);
+    var command = Mee6Sitrep.get(arg[0]);
     if (command) {
       ᴍᴇᴇ6ʍօ += `⤤ ${(ᴋᴇɪ, command.name === undefined ? "Null" : command.name)}
 
@@ -197,7 +197,7 @@ ${MeeHelper}‍`,
         .sendMessage(
           ᴍᴇᴇ6.chatId,
           {
-            url: `https://i.postimg.cc/d0yKmR0t/Mee6.png`,
+            url: ꜱɪɢɴ.MEE,
           },
           MessageType.image,
           {
