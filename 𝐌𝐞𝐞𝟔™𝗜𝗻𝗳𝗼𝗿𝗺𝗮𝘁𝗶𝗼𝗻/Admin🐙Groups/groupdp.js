@@ -5,7 +5,6 @@ const ffmpeg = require(`fluent-ffmpeg`);
 const fs = require(`fs`);
 var ᴋᴇɪᴇx = new RegExp(ꜱɪɢɴ.Mee6IX, "g");
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
-var ɴᴇᴡᴍᴇᴇ6 = await ᴍᴇᴇgit.log(["KrakinzLab..origin/KrakinzLab"]);
 // ⬡==================⬡-----------------⦿𝐌𝐞𝐞𝟔™⦿-----------------⬡==================⬡
 // 🛸ᴍᴇᴇ6™ ᴀᴅᴠᴀɴᴄᴇᴅ ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ 80+ ᴄᴏᴍᴍᴀɴᴅꜱ ꜰᴏʀ ʙᴏᴛʜ ᴘʀɪᴠᴀᴛᴇ ᴀɴᴅ ɢʀᴏᴜᴘ-ᴜꜱᴀɢᴇ🛸
 // ⬡==================⬡-----------------⦿𝐌𝐞𝐞𝟔™⦿-----------------⬡==================⬡
@@ -15,6 +14,7 @@ module.exports = {
   description: `Use this command to change the group's icon.
 Tag image with the command or send the desired image with caption as the command`,
   async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg) {
+var ɴᴇᴡᴍᴇᴇ6 = await ᴍᴇᴇgit.log(["KrakinzLab..origin/KrakinzLab"]);
     if (ɴᴇᴡᴍᴇᴇ6.total) {
       await ʍɛɛℓιєηт
         .sendMessage(
