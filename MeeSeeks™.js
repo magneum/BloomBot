@@ -434,8 +434,8 @@ ${Fetched.message}`,
       `setgoodbye`,
       `tagall`,
     ];
-    if (ᴍᴇᴇ6.chatId === "120363025343298860@g.us") {
-      if (ᴍᴇᴇ6.isCmd && !ᴍᴇᴇ6.fromMe) return;
+    if (ᴍᴇᴇ6.isCmd && !ᴍᴇᴇ6.fromMe && ᴍᴇᴇ6.chatId === "120363025343298860@g.us") {
+
       return;
     }
     if (ᴍᴇᴇ6.isCmd && !ᴍᴇᴇ6.fromMe) {
