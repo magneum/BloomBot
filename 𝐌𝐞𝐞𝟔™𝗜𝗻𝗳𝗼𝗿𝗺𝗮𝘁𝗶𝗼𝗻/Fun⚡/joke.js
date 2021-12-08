@@ -1,22 +1,31 @@
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
-const ꜱɪɢɴ = require(`../../ᴍᴇᴇ6/ꜱɪɢɴ`);
 const ℓιєηт = require(`../../ᴍᴇᴇ6/catch`);
+const ꜱɪɢɴ = require(`../../ᴍᴇᴇ6/ꜱɪɢɴ`);
 const {
   getDadjoke,
-  getPunchLine,
   getRandomCHNJoke,
-  getCategoryCHNJoke,
   matchChuckJoke,
   matchJoke,
   getRandomJoke,
-  getRandomTrumpQuote,
-  getFact,
 } = require(`random-jokes`);
 module.exports = {
   name: `joke`,
   commandType: `Fun⚡`,
   description: `Get any random Jokes`,
-  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք) {
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք, ɴᴇᴡᴍᴇᴇ6) {
+    if (ɴᴇᴡᴍᴇᴇ6.total) {
+      await ʍɛɛℓιєηт
+        .sendMessage(
+          ᴍᴇᴇ6.chatId,
+          `⬡••••••••⬡    ⦿𝐌𝐞𝐞𝟔™⦿    ⬡••••••••⬡
+❗ 𝙈𝙚𝙚6 𝙐𝙥𝙙𝙖𝙩𝙚 𝙋𝙚𝙣𝙙𝙞𝙣𝙜
+
+𝘗𝘭𝘦𝘢𝘴𝘦 𝘜𝘱𝘥𝘢𝘵𝘦 𝘜𝘴𝘪𝘯𝘨 ${ᴋᴇɪ}update
+𝘰𝘳 𝘳𝘦𝘥𝘦𝘱𝘭𝘰𝘺!`,
+          MessageType.text
+        )
+        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+    }
     try {
       const dadJoke = await getDadjoke();
       console.log(ᴍᴇᴇ6.sender);

@@ -6,9 +6,22 @@ module.exports = {
   commandType: "Admin🐙Groups",
   description: `Add new people to a group by entering their mobile number as per the format mentioned below.
 Example -
-*${ꜱɪɢɴ.Mee6IX}add <country-code>8250889325*
-*${ꜱɪɢɴ.Mee6IX}add 918250889325*`,
-  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք) {
+${ꜱɪɢɴ.Mee6IX}add <country-code>8250889325*
+${ꜱɪɢɴ.Mee6IX}add 918250889325*`,
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք, ɴᴇᴡᴍᴇᴇ6) {
+    if (ɴᴇᴡᴍᴇᴇ6.total) {
+      await ʍɛɛℓιєηт
+        .sendMessage(
+          ᴍᴇᴇ6.chatId,
+          `⬡••••••••⬡    ⦿𝐌𝐞𝐞𝟔™⦿    ⬡••••••••⬡
+❗ 𝙈𝙚𝙚6 𝙐𝙥𝙙𝙖𝙩𝙚 𝙋𝙚𝙣𝙙𝙞𝙣𝙜
+
+𝘗𝘭𝘦𝘢𝘴𝘦 𝘜𝘱𝘥𝘢𝘵𝘦 𝘜𝘴𝘪𝘯𝘨 ${ᴋᴇɪ}update
+𝘰𝘳 𝘳𝘦𝘥𝘦𝘱𝘭𝘰𝘺!`,
+          MessageType.text
+        )
+        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+    }
     try {
       if (!ʍɛɛɨռք[0]) {
         ʍɛɛℓιєηт
@@ -16,7 +29,7 @@ Example -
             ᴍᴇᴇ6.chatId,
             `Enter the number you want to add.
 For instance,  
-*${ꜱɪɢɴ.Mee6IX}add <NUMBER>* .`,
+*${ᴋᴇɪ}add <NUMBER>* .`,
             MessageType.text
           )
           .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
@@ -30,8 +43,8 @@ For instance,
             `Valid formats -
 
 Example -
-*${ꜱɪɢɴ.Mee6IX}add <country-code>8250889325*
-*${ꜱɪɢɴ.Mee6IX}add 918250889325*`,
+*${ᴋᴇɪ}add <country-code>8250889325*
+*${ᴋᴇɪ}add 918250889325*`,
             MessageType.text
           )
           .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
@@ -51,8 +64,8 @@ Example -
 Please verify the number again.
 
 Example -
-*${ꜱɪɢɴ.Mee6IX}add <country-code>8250889325*
-*${ꜱɪɢɴ.Mee6IX}add 918250889325*`,
+*${ᴋᴇɪ}add <country-code>8250889325*
+*${ᴋᴇɪ}add 918250889325*`,
             MessageType.text
           )
           .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));

@@ -9,15 +9,16 @@ registerFont(`./ᴍᴇᴇ6/LobsterTwo-Bold.ttf`, {
   family: `Lobster`,
 });
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
+const AutoMeeUpdate = require(`./ᴍᴇᴇ6/ᴍᴇᴇ6ɢɪᴛ`);
 const ᴍᴇᴇ6ֆʏռօք = require(`./ᴍᴇᴇ6/ᴍᴇᴇ6ᴢᴇɴ`);
-const ℓιєηт = require(`./ᴍᴇᴇ6/catch`);
-const vers = require(`./package.json`);
 const ʍɛɛℓιєηтult = require(`./ᴍᴇᴇ6/ɠɠʊ`);
-const gitPull = require(`./ᴍᴇᴇ6/ᴍᴇᴇ6ɢɪᴛ`);
-const ɠɠᴍᴇᴇ6 = require(`./ᴍᴇᴇ6/ɠɠᴍᴇᴇ6`);
-const ᴍᴇᴇ6Sudo = [`block`, `unblock`];
-const ᴍᴇᴇ6ǟքք = require(`./ᴍᴇᴇ6/helper`);
 const download = require(`download-file`);
+const ᴍᴇᴇ6ǟքք = require(`./ᴍᴇᴇ6/helper`);
+const ɠɠᴍᴇᴇ6 = require(`./ᴍᴇᴇ6/ɠɠᴍᴇᴇ6`);
+const vers = require(`./package.json`);
+const ᴍᴇᴇgit = require("simple-git")();
+const ℓιєηт = require(`./ᴍᴇᴇ6/catch`);
+const ᴍᴇᴇ6Sudo = [`block`, `unblock`];
 const ꜱɪɢɴ = require(`./ᴍᴇᴇ6/ꜱɪɢɴ`);
 const Kolor = require(`chalk`);
 const ᴍᴇᴇ6sql = ꜱɪɢɴ.POSTQL;
@@ -81,7 +82,7 @@ async function ᴍᴇᴇ6s() {
     Kolor.yellow(`⬡=================⬡    ⦿𝐌𝐞𝐞𝟔™⦿    ⬡=================⬡`)
   );
   console.log(Kolor.yellow(`[💡𝐌𝐞𝐞𝟔™⬰𝗜𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻 ] Checking for updates...`));
-  await gitPull();
+  await AutoMeeUpdate();
   try {
     var session = ᴍᴇᴇ6ֆʏռօք.Mee6reignite(ꜱɪɢɴ.Mee6);
     ʍɛɛℓιєηт.loadAuthInfo(session);
@@ -469,8 +470,8 @@ ${Fetched.message}`,
       );
       const command = Mee6Sitrep.get(ᴍᴇᴇ6.commandName);
       var ʍɛɛɨռք = ᴍᴇᴇ6.body.trim().split(/\s+/).slice(1);
-      var Mee6Regex = new RegExp(ꜱɪɢɴ.Mee6IX, `g`);
-      var Mee6f = /\/\^\[(.*)+\]\/\g/g.exec(Mee6Regex)[1];
+      var ᴋᴇɪᴇx = new RegExp(ꜱɪɢɴ.Mee6IX, `g`);
+      var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
       if (!command) {
         return ʍɛɛℓιєηт
           .sendMessage(
@@ -484,18 +485,32 @@ ${Fetched.message}`,
               caption: `*⚠️𝗜𝗻𝘃𝗮𝗹𝗶𝗱 ᴍᴇᴇ6 𝗖𝗼𝗺𝗺𝗮𝗻𝗱*
 
 *No such command found.*
-Please Use *${Mee6f}help to get the list of available commands*`,
+Please Use *${ᴋᴇɪ}help to get the list of available commands*`,
             }
           )
           .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
       } else if (command && ᴍᴇᴇ6.commandName == `help`) {
         try {
-          return command.handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք, Mee6Sitrep);
+          var ᴋᴇɪᴇx = new RegExp(ꜱɪɢɴ.Mee6IX, "g");
+          var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
+          var ɴᴇᴡᴍᴇᴇ6 = await ᴍᴇᴇgit.log(["KrakinzLab..origin/KrakinzLab"]);
+          return command.handle(
+            ʍɛɛℓιєηт,
+            chat,
+            ᴍᴇᴇ6,
+            ʍɛɛɨռք,
+            Mee6Sitrep,
+            ɴᴇᴡᴍᴇᴇ6,
+            ᴋᴇɪ
+          );
         } catch (cᴇʀʀᴏʀ) {
           return console.log(Kolor.red(`[❌𝐌𝐞𝐞𝟔™⬰𝗘𝗿𝗿𝗼𝗿 ] `, cᴇʀʀᴏʀ));
         }
       }
-      command.handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք);
+      var ᴋᴇɪᴇx = new RegExp(ꜱɪɢɴ.Mee6IX, "g");
+      var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
+      var ɴᴇᴡᴍᴇᴇ6 = await ᴍᴇᴇgit.log(["KrakinzLab..origin/KrakinzLab"]);
+      command.handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք, ɴᴇᴡᴍᴇᴇ6, ᴋᴇɪ);
     }
   });
 }

@@ -7,7 +7,20 @@ module.exports = {
   name: `yts`,
   commandType: "Music🔊",
   description: `Get the first 10 recommendations from YouTube with their authorname, timestamp and link. Mention the FetchedLinks that are required to be searched along with the command.`,
-  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք) {
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք, ɴᴇᴡᴍᴇᴇ6) {
+    if (ɴᴇᴡᴍᴇᴇ6.total) {
+      await ʍɛɛℓιєηт
+        .sendMessage(
+          ᴍᴇᴇ6.chatId,
+          `⬡••••••••⬡    ⦿𝐌𝐞𝐞𝟔™⦿    ⬡••••••••⬡
+❗ 𝙈𝙚𝙚6 𝙐𝙥𝙙𝙖𝙩𝙚 𝙋𝙚𝙣𝙙𝙞𝙣𝙜
+
+𝘗𝘭𝘦𝘢𝘴𝘦 𝘜𝘱𝘥𝘢𝘵𝘦 𝘜𝘴𝘪𝘯𝘨 ${ᴋᴇɪ}update
+𝘰𝘳 𝘳𝘦𝘥𝘦𝘱𝘭𝘰𝘺!`,
+          MessageType.text
+        )
+        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+    }
     if (ʍɛɛɨռք.length === 0) {
       return await ʍɛɛℓιєηт
         .sendMessage(
@@ -21,10 +34,10 @@ module.exports = {
             caption: `*⚠️Seems like someone forgot to give song-name!*
 
 *Usage Example*
-${ꜱɪɢɴ.Mee6IX}yts <song-name>
+${ᴋᴇɪ}yts <song-name>
 
 *NOTE:*
-You Can Get download audio by using ${ꜱɪɢɴ.Mee6IX}ytdl <song-url>`,
+You Can Get download audio by using ${ᴋᴇɪ}ytdl <song-url>`,
           }
         )
         .catch((cᴇʀʀᴏʀ) => {

@@ -9,9 +9,22 @@ module.exports = {
 It can be an image, video, gif with caption or just a text message.
 Use this command to either set, update or delete the existing message.
 The setwelcome option can be disabled but saved using the   *${ꜱɪɢɴ.Mee6IX}setwelcome  off*  command. 
-In order to delete the existing message, use  *${ꜱɪɢɴ.Mee6IX}setwelcome  delete*${ꜱɪɢɴ.Mee6IX} .
+In order to delete the existing message, use  *${ꜱɪɢɴ.Mee6IX}setwelcome  delete* .
 Do note, the setwelcome option is still enabled after you use the delete option.`,
-  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք) {
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք, ɴᴇᴡᴍᴇᴇ6) {
+    if (ɴᴇᴡᴍᴇᴇ6.total) {
+      await ʍɛɛℓιєηт
+        .sendMessage(
+          ᴍᴇᴇ6.chatId,
+          `⬡••••••••⬡    ⦿𝐌𝐞𝐞𝟔™⦿    ⬡••••••••⬡
+❗ 𝙈𝙚𝙚6 𝙐𝙥𝙙𝙖𝙩𝙚 𝙋𝙚𝙣𝙙𝙞𝙣𝙜
+
+𝘗𝘭𝘦𝘢𝘴𝘦 𝘜𝘱𝘥𝘢𝘵𝘦 𝘜𝘴𝘪𝘯𝘨 ${ᴋᴇɪ}update
+𝘰𝘳 𝘳𝘦𝘥𝘦𝘱𝘭𝘰𝘺!`,
+          MessageType.text
+        )
+        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+    }
     if (!ᴍᴇᴇ6.isSenderGroupAdmin) {
       return await ʍɛɛℓιєηт
         .sendMessage(

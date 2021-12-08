@@ -10,36 +10,21 @@ var Mee6f = /\/\^\[(.*)+\]\/\g/g.exec(Mee6Regex)[1];
 module.exports = {
   name: `ban`,
   commandType: "Admin🐙Groups",
-  description: `Add the number to banlist. You can reply to the person in group / pm or use !ban <number>.`,
-  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք) {
-    var str = ᴍᴇᴇ6.sender;
-    var newString = str.substring(0, str.length - 15);
-    //     if (ᴍᴇᴇ6.chatId === "120363025343298860@g.us") {
-    //       return await ʍɛɛℓιєηт
-    //         .sendMessage(
-    //           ᴍᴇᴇ6.chatId,
-    //           {
-    //             url: ꜱɪɢɴ.ERROR,
-    //           },
-    //           MessageType.image,
-    //           {
-    //             mimetype: Mimetype.png,
-    //             contextInfo: { mentionedJid: [ᴍᴇᴇ6.sender] },
-    //             caption: `*⬡••••••••⬡    𝐌𝐞𝐞𝟔™    ⬡••••••••⬡*
-    // 𝐈 𝐚𝐦 𝐌𝐫𝐌𝐞𝐞𝟔🛸𝐋𝐨𝐨𝐤 𝐀𝐭 𝐌𝐞! 𝗠𝗼𝘀𝘁 𝗔𝗱𝘃𝗮𝗻𝗰𝗲 𝗪𝗵𝗮𝘁𝘀𝗮𝗽𝗽 𝗕𝗼𝘁 ⧪
+  description: `Add the number to banlist. You can reply to the person in group / pm or use ${ꜱɪɢɴ.Mee6IX}ban <number>.`,
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք, ɴᴇᴡᴍᴇᴇ6) {
+    if (ɴᴇᴡᴍᴇᴇ6.total) {
+      await ʍɛɛℓιєηт
+        .sendMessage(
+          ᴍᴇᴇ6.chatId,
+          `⬡••••••••⬡    ⦿𝐌𝐞𝐞𝟔™⦿    ⬡••••••••⬡
+❗ 𝙈𝙚𝙚6 𝙐𝙥𝙙𝙖𝙩𝙚 𝙋𝙚𝙣𝙙𝙞𝙣𝙜
 
-    // *❗Dҽαɾ @${newString}, ᴀʟʟ ᴍᴇᴇ6 ʙᴏᴛꜱ ᴀʀᴇ ᴅɪꜱᴀʙʟᴇᴅ ɪɴ ᴛʜɪꜱ ɢʀᴏᴜᴘ*
-    // 👇🏽‍𝗔𝗹𝗹𝗼𝘄𝗲𝗱-𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀
-    //   *⬡${Mee6f}uptime*
-    //   *⬡${Mee6f}ping*
-    //   *⬡${Mee6f}help*
-    //   *⬡${Mee6f}alive*
-    //   *⬡${Mee6f}update*
-    // *⬡••••••••⬡    𝐌𝐞𝐞𝟔™    ⬡••••••••⬡*`,
-    //           }
-    //         )
-    //         .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
-    //     }
+𝘗𝘭𝘦𝘢𝘴𝘦 𝘜𝘱𝘥𝘢𝘵𝘦 𝘜𝘴𝘪𝘯𝘨 ${ᴋᴇɪ}update
+𝘰𝘳 𝘳𝘦𝘥𝘦𝘱𝘭𝘰𝘺!`,
+          MessageType.text
+        )
+        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+    }
     if (!ᴍᴇᴇ6.isReply && typeof ʍɛɛɨռք[0] == `undefined`) {
       ʍɛɛℓιєηт
         .sendMessage(

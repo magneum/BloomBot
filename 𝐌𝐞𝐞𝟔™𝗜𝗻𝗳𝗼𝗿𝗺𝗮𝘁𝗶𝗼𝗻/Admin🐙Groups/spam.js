@@ -7,9 +7,21 @@ var Mee6f = /\/\^\[(.*)+\]\/\g/g.exec(Mee6Regex)[1];
 module.exports = {
   name: "spam",
   commandType: "Admin🐙Groups",
-  description: `Spam Messages.
-${ꜱɪɢɴ.Mee6IX}spam <count> <text>*`,
-  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք) {
+  description: `Spam Messages.${ꜱɪɢɴ.Mee6IX}spam <count> <text>*`,
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք, ɴᴇᴡᴍᴇᴇ6) {
+    if (ɴᴇᴡᴍᴇᴇ6.total) {
+      await ʍɛɛℓιєηт
+        .sendMessage(
+          ᴍᴇᴇ6.chatId,
+          `⬡••••••••⬡    ⦿𝐌𝐞𝐞𝟔™⦿    ⬡••••••••⬡
+❗ 𝙈𝙚𝙚6 𝙐𝙥𝙙𝙖𝙩𝙚 𝙋𝙚𝙣𝙙𝙞𝙣𝙜
+
+𝘗𝘭𝘦𝘢𝘴𝘦 𝘜𝘱𝘥𝘢𝘵𝘦 𝘜𝘴𝘪𝘯𝘨 ${ᴋᴇɪ}update
+𝘰𝘳 𝘳𝘦𝘥𝘦𝘱𝘭𝘰𝘺!`,
+          MessageType.text
+        )
+        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+    }
     if (ᴍᴇᴇ6.isGroup && !ᴍᴇᴇ6.isSenderGroupAdmin) {
       return await ʍɛɛℓιєηт
         .sendMessage(
@@ -45,7 +57,7 @@ ${ꜱɪɢɴ.Mee6IX}spam <count> <text>*`,
             caption: `*⚠️Seems like someone forgot to give count and text!*
 
 *Usage Example*
-${ꜱɪɢɴ.Mee6IX}spam <count> <text>`,
+${ᴋᴇɪ}spam <count> <text>`,
           }
         )
         .catch((cᴇʀʀᴏʀ) => {

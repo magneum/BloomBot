@@ -11,7 +11,20 @@ Example Usage,
 *${ꜱɪɢɴ.Mee6IX}carbon*  and reply to a text message.
 Use the -t flag after  *${ꜱɪɢɴ.Mee6IX}carbon*  to get the list of themes availble.
 In order to specify the theme, use  *${ꜱɪɢɴ.Mee6IX}carbon <text> -t <theme>* .`,
-  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք) {
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք, ɴᴇᴡᴍᴇᴇ6) {
+    if (ɴᴇᴡᴍᴇᴇ6.total) {
+      await ʍɛɛℓιєηт
+        .sendMessage(
+          ᴍᴇᴇ6.chatId,
+          `⬡••••••••⬡    ⦿𝐌𝐞𝐞𝟔™⦿    ⬡••••••••⬡
+❗ 𝙈𝙚𝙚6 𝙐𝙥𝙙𝙖𝙩𝙚 𝙋𝙚𝙣𝙙𝙞𝙣𝙜
+
+𝘗𝘭𝘦𝘢𝘴𝘦 𝘜𝘱𝘥𝘢𝘵𝘦 𝘜𝘴𝘪𝘯𝘨 ${ᴋᴇɪ}update
+𝘰𝘳 𝘳𝘦𝘥𝘦𝘱𝘭𝘰𝘺!`,
+          MessageType.text
+        )
+        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+    }
     try {
       let themes = [
         `3024 night`,
@@ -56,9 +69,9 @@ In order to specify the theme, use  *${ꜱɪɢɴ.Mee6IX}carbon <text> -t <theme>
               mimetype: Mimetype.jpeg,
               caption: `*☢️ᴍᴇᴇ6*\n\nNo input provided.
 Please use the command  
-*${ꜱɪɢɴ.Mee6IX}carbon <text> -t <theme>*  
+*${ᴋᴇɪ}carbon <text> -t <theme>*  
 or reply to a text message with  
-*${ꜱɪɢɴ.Mee6IX}carbon*  to carbonize the text.
+*${ᴋᴇɪ}carbon*  to carbonize the text.
 
 *----> 𝐓𝐇𝐄𝐌𝐄𝐒 <----*
 _3024 night_  *|*  _a11y dark_  
@@ -117,7 +130,7 @@ _yeti_  *|*  _zenburn_`,
                 .sendMessage(
                   ᴍᴇᴇ6.chatId,
                   `*☢️ᴍᴇᴇ6*\n\nNo input provided.
-Please use the command  *${ꜱɪɢɴ.Mee6IX}carbon <text>*  or reply to a text message with  *${ꜱɪɢɴ.Mee6IX}carbon*  to carbonize the text.`,
+Please use the command  *${ᴋᴇɪ}carbon <text>*  or reply to a text message with  *${ᴋᴇɪ}carbon*  to carbonize the text.`,
                   MessageType.text
                 )
                 .catch((cᴇʀʀᴏʀ) => {
@@ -134,7 +147,7 @@ Please use the command  *${ꜱɪɢɴ.Mee6IX}carbon <text>*  or reply to a text m
               .sendMessage(
                 ᴍᴇᴇ6.chatId,
                 `*☢️ᴍᴇᴇ6*\n\nPlease enter a valid theme.
-Do note that theme names are  *case sensitive*${ꜱɪɢɴ.Mee6IX}`,
+Do note that theme names are  *case sensitive*${ᴋᴇɪ}`,
                 MessageType.text
               )
               .catch((cᴇʀʀᴏʀ) => {
@@ -178,7 +191,7 @@ Colour Scheme: {}`.format(themeInput),
         ᴍᴇᴇ6.chatId,
         `*🎮ᴍᴇᴇ6™* 𝐝𝐢𝐝𝐧'𝐭 𝐰𝐨𝐫𝐤 𝐚𝐬 𝐞𝐱𝐩𝐞𝐜𝐭𝐞𝐝❗
 
-💡𝗛𝗲𝗿𝗲 𝗶𝘀 𝗮 𝘀𝗺𝗮𝗹𝗹 𝗲𝗿𝗿𝗼𝗿 𝗿𝗲𝗽𝗼𝗿𝘁 𝗮𝗻𝗱 𝘁𝗼 𝗹𝗼𝗴 𝘁𝗵𝗲 𝗿𝗲𝗽𝗼𝗿𝘁 𝘂𝘀𝗲 ${ꜱɪɢɴ.Mee6IX}𝗿𝗲𝗽𝗼𝗿𝘁
+💡𝗛𝗲𝗿𝗲 𝗶𝘀 𝗮 𝘀𝗺𝗮𝗹𝗹 𝗲𝗿𝗿𝗼𝗿 𝗿𝗲𝗽𝗼𝗿𝘁 𝗮𝗻𝗱 𝘁𝗼 𝗹𝗼𝗴 𝘁𝗵𝗲 𝗿𝗲𝗽𝗼𝗿𝘁 𝘂𝘀𝗲 ${ᴋᴇɪ}𝗿𝗲𝗽𝗼𝗿𝘁
 ⚠️𝗘𝗿𝗿𝗼𝗿
 • ${cᴇʀʀᴏʀ}`,
         MessageType.text

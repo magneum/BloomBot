@@ -4,8 +4,21 @@ const ꜱɪɢɴ = require(`../../ᴍᴇᴇ6/ꜱɪɢɴ`);
 module.exports = {
   name: `kick`,
   commandType: "Admin🐙Groups",
-  description: `Use this command to kick people from a group by tagging them  *${ꜱɪɢɴ.Mee6IX}kick @<person-to-kick>*  or replying to them  *${ꜱɪɢɴ.Mee6IX}kick*${ꜱɪɢɴ.Mee6IX}`,
-  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք) {
+  description: `Use this command to kick people from a group by tagging them  *${ꜱɪɢɴ.Mee6IX}kick @<person-to-kick>*  or replying to them  *${ꜱɪɢɴ.Mee6IX}kick*`,
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք, ɴᴇᴡᴍᴇᴇ6) {
+    if (ɴᴇᴡᴍᴇᴇ6.total) {
+      await ʍɛɛℓιєηт
+        .sendMessage(
+          ᴍᴇᴇ6.chatId,
+          `⬡••••••••⬡    ⦿𝐌𝐞𝐞𝟔™⦿    ⬡••••••••⬡
+❗ 𝙈𝙚𝙚6 𝙐𝙥𝙙𝙖𝙩𝙚 𝙋𝙚𝙣𝙙𝙞𝙣𝙜
+
+𝘗𝘭𝘦𝘢𝘴𝘦 𝘜𝘱𝘥𝘢𝘵𝘦 𝘜𝘴𝘪𝘯𝘨 ${ᴋᴇɪ}update
+𝘰𝘳 𝘳𝘦𝘥𝘦𝘱𝘭𝘰𝘺!`,
+          MessageType.text
+        )
+        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+    }
     if (!ᴍᴇᴇ6.isSenderGroupAdmin) {
       return await ʍɛɛℓιєηт
         .sendMessage(
@@ -107,7 +120,7 @@ module.exports = {
       ʍɛɛℓιєηт
         .sendMessage(
           ᴍᴇᴇ6.chatId,
-          `Reply to the person you want to kick or tag them.\n\nFor instance,  *${ꜱɪɢɴ.Mee6IX}kick @<person-to-kick>*  or reply using  *${ꜱɪɢɴ.Mee6IX}kick*${ꜱɪɢɴ.Mee6IX}`,
+          `Reply to the person you want to kick or tag them.\n\nFor instance,  *${ᴋᴇɪ}kick @<person-to-kick>*  or reply using  *${ᴋᴇɪ}kick*${ᴋᴇɪ}`,
           MessageType.text
         )
         .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
@@ -119,7 +132,7 @@ module.exports = {
         ʍɛɛℓιєηт
           .sendMessage(
             ᴍᴇᴇ6.chatId,
-            `Reply to the person you want to kick or tag them.\n\nFor instance,  *${ꜱɪɢɴ.Mee6IX}kick @<person-to-kick>*  or reply using  *${ꜱɪɢɴ.Mee6IX}kick*${ꜱɪɢɴ.Mee6IX}`,
+            `Reply to the person you want to kick or tag them.\n\nFor instance,  *${ᴋᴇɪ}kick @<person-to-kick>*  or reply using  *${ᴋᴇɪ}kick*${ᴋᴇɪ}`,
             MessageType.text
           )
           .catch((cᴇʀʀᴏʀ) => {
@@ -164,7 +177,7 @@ module.exports = {
     ʍɛɛℓιєηт
       .sendMessage(
         ᴍᴇᴇ6.chatId,
-        `Reply to the person you want to kick or tag them.\n\nFor instance,  *${ꜱɪɢɴ.Mee6IX}kick @<person-to-kick>*  or reply using  *${ꜱɪɢɴ.Mee6IX}kick*${ꜱɪɢɴ.Mee6IX}`,
+        `Reply to the person you want to kick or tag them.\n\nFor instance,  *${ᴋᴇɪ}kick @<person-to-kick>*  or reply using  *${ᴋᴇɪ}kick*${ᴋᴇɪ}`,
         MessageType.text
       )
       .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));

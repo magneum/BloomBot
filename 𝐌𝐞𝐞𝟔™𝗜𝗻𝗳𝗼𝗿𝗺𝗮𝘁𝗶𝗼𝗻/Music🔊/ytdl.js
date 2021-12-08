@@ -23,7 +23,20 @@ module.exports = {
   name: `ytdl`,
   commandType: "Music🔊",
   description: `Use this command to download audio of your choice either by specifying a YouTube link or the name of the song.`,
-  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք) {
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք, ɴᴇᴡᴍᴇᴇ6) {
+    if (ɴᴇᴡᴍᴇᴇ6.total) {
+      await ʍɛɛℓιєηт
+        .sendMessage(
+          ᴍᴇᴇ6.chatId,
+          `⬡••••••••⬡    ⦿𝐌𝐞𝐞𝟔™⦿    ⬡••••••••⬡
+❗ 𝙈𝙚𝙚6 𝙐𝙥𝙙𝙖𝙩𝙚 𝙋𝙚𝙣𝙙𝙞𝙣𝙜
+
+𝘗𝘭𝘦𝘢𝘴𝘦 𝘜𝘱𝘥𝘢𝘵𝘦 𝘜𝘴𝘪𝘯𝘨 ${ᴋᴇɪ}update
+𝘰𝘳 𝘳𝘦𝘥𝘦𝘱𝘭𝘰𝘺!`,
+          MessageType.text
+        )
+        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+    }
     if (ʍɛɛɨռք.length === 0) {
       return await ʍɛɛℓιєηт
         .sendMessage(
@@ -37,10 +50,10 @@ module.exports = {
             caption: `*⚠️Seems like someone forgot to give URL!*
 
 *Usage Example*
-${ꜱɪɢɴ.Mee6IX}ytdl <URL>
+${ᴋᴇɪ}ytdl <URL>
 
 *NOTE:*
-You Can Get URL by using ${ꜱɪɢɴ.Mee6IX}yts <song-name>`,
+You Can Get URL by using ${ᴋᴇɪ}yts <song-name>`,
           }
         )
         .catch((cᴇʀʀᴏʀ) => {
@@ -60,10 +73,10 @@ You Can Get URL by using ${ꜱɪɢɴ.Mee6IX}yts <song-name>`,
             caption: `*⚠️Seems like ${ʍɛɛɨռք[0]} is not YouTube Link or not YouTube Single Video Link!*
 
 *Usage Example*
-${ꜱɪɢɴ.Mee6IX}ytdl <video-link>
+${ᴋᴇɪ}ytdl <video-link>
 
 *NOTE:*
-You Can Get URL by using ${ꜱɪɢɴ.Mee6IX}yts <song-name>`,
+You Can Get URL by using ${ᴋᴇɪ}yts <song-name>`,
           }
         )
         .catch((cᴇʀʀᴏʀ) => {
