@@ -509,7 +509,7 @@ Please Use *${ᴋᴇɪ}help to get the list of available commands*`,
         }
       }
       var ɴᴇᴡᴍᴇᴇ6 = await ᴍᴇᴇgit.log(["KrakinzLab..origin/KrakinzLab"]);
-      command.handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ʍɛɛɨռք, ɴᴇᴡᴍᴇᴇ6);
+      command.handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, ɴᴇᴡᴍᴇᴇ6);
     }
   });
 }
