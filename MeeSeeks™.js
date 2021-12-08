@@ -487,14 +487,12 @@ Please Use *${ᴋᴇɪ}help to get the list of available commands*`,
           .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
       } else if (command && ᴍᴇᴇ6.commandName == `help`) {
         try {
-          var ɴᴇᴡᴍᴇᴇ6 = await ᴍᴇᴇgit.log(["KrakinzLab..origin/KrakinzLab"]);
-          return command.handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg, Mee6Sitrep, ɴᴇᴡᴍᴇᴇ6);
+          return command.handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg, Mee6Sitrep);
         } catch (cᴇʀʀᴏʀ) {
           return console.log(Kolor.red(`𝐌𝐞𝐞𝟔™❌𝗘𝗿𝗿𝗼𝗿⬰ `, cᴇʀʀᴏʀ));
         }
       }
-      var ɴᴇᴡᴍᴇᴇ6 = await ᴍᴇᴇgit.log(["KrakinzLab..origin/KrakinzLab"]);
-      command.handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg, ɴᴇᴡᴍᴇᴇ6);
+      command.handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg);
     }
   });
 }

@@ -5,6 +5,7 @@ const ffmpeg = require(`fluent-ffmpeg`);
 const fs = require(`fs`);
 var ᴋᴇɪᴇx = new RegExp(ꜱɪɢɴ.Mee6IX, "g");
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
+var ɴᴇᴡᴍᴇᴇ6 = await ᴍᴇᴇgit.log(["KrakinzLab..origin/KrakinzLab"]);
 // ⬡==================⬡-----------------⦿𝐌𝐞𝐞𝟔™⦿-----------------⬡==================⬡
 // 🛸ᴍᴇᴇ6™ ᴀᴅᴠᴀɴᴄᴇᴅ ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ 80+ ᴄᴏᴍᴍᴀɴᴅꜱ ꜰᴏʀ ʙᴏᴛʜ ᴘʀɪᴠᴀᴛᴇ ᴀɴᴅ ɢʀᴏᴜᴘ-ᴜꜱᴀɢᴇ🛸
 // ⬡==================⬡-----------------⦿𝐌𝐞𝐞𝟔™⦿-----------------⬡==================⬡
@@ -14,7 +15,7 @@ module.exports = {
   description: `command to convert image to sticker`,
   ᴍᴇᴇ6ʍօʀɛ: `Use this command to convert any image from your chat to a sticker. 
 Reply to an image message with the command  *${ꜱɪɢɴ.Mee6IX}sticker*  to convert and send that image as a sticker.`,
-  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg, ɴᴇᴡᴍᴇᴇ6){
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg) {
     if (ɴᴇᴡᴍᴇᴇ6.total) {
       await ʍɛɛℓιєηт
         .sendMessage(

@@ -3,6 +3,7 @@ const ℓιєηт = require("../../ᴍᴇᴇ6/catch");
 const ꜱɪɢɴ = require(`../../ᴍᴇᴇ6/ꜱɪɢɴ`);
 var ᴋᴇɪᴇx = new RegExp(ꜱɪɢɴ.Mee6IX, "g");
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
+var ɴᴇᴡᴍᴇᴇ6 = await ᴍᴇᴇgit.log(["KrakinzLab..origin/KrakinzLab"]);
 // ⬡==================⬡-----------------⦿𝐌𝐞𝐞𝟔™⦿-----------------⬡==================⬡
 // 🛸ᴍᴇᴇ6™ ᴀᴅᴠᴀɴᴄᴇᴅ ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ 80+ ᴄᴏᴍᴍᴀɴᴅꜱ ꜰᴏʀ ʙᴏᴛʜ ᴘʀɪᴠᴀᴛᴇ ᴀɴᴅ ɢʀᴏᴜᴘ-ᴜꜱᴀɢᴇ🛸
 // ⬡==================⬡-----------------⦿𝐌𝐞𝐞𝟔™⦿-----------------⬡==================⬡
@@ -10,7 +11,7 @@ module.exports = {
   name: `uptime`,
   commandType: "Mee6💻System",
   description: `ᴄʜᴇᴄᴋ ᴍᴇᴇ6 ᴜᴘᴛɪᴍᴇ`,
-  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg, ɴᴇᴡᴍᴇᴇ6){
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg){
     if (ɴᴇᴡᴍᴇᴇ6.total) {
       await ʍɛɛℓιєηт
         .sendMessage(

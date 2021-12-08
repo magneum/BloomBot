@@ -4,6 +4,7 @@ const ℓιєηт = require("../../ᴍᴇᴇ6/catch");
 const googleTTS = require(`google-tts-api`);
 var ᴋᴇɪᴇx = new RegExp(ꜱɪɢɴ.Mee6IX, "g");
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
+var ɴᴇᴡᴍᴇᴇ6 = await ᴍᴇᴇgit.log(["KrakinzLab..origin/KrakinzLab"]);
 // ⬡==================⬡-----------------⦿𝐌𝐞𝐞𝟔™⦿-----------------⬡==================⬡
 // 🛸ᴍᴇᴇ6™ ᴀᴅᴠᴀɴᴄᴇᴅ ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ 80+ ᴄᴏᴍᴍᴀɴᴅꜱ ꜰᴏʀ ʙᴏᴛʜ ᴘʀɪᴠᴀᴛᴇ ᴀɴᴅ ɢʀᴏᴜᴘ-ᴜꜱᴀɢᴇ🛸
 // ⬡==================⬡-----------------⦿𝐌𝐞𝐞𝟔™⦿-----------------⬡==================⬡
@@ -13,7 +14,7 @@ module.exports = {
   description: `Text To Speech.`,
   ᴍᴇᴇ6ʍօʀɛ: `Use  *${ꜱɪɢɴ.Mee6IX}tts <text>*  or  *${ꜱɪɢɴ.Mee6IX}tts <text> | <language_code>*  to convert text to speech.
 You can also reply to a text message with syntax  *${ꜱɪɢɴ.Mee6IX}tr <language>*  to translate text.`,
-  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg, ɴᴇᴡᴍᴇᴇ6){
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg){
     if (ɴᴇᴡᴍᴇᴇ6.total) {
       await ʍɛɛℓιєηт
         .sendMessage(
