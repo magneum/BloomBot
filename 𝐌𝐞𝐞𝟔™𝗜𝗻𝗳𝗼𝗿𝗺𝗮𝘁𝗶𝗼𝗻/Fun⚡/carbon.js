@@ -1,7 +1,4 @@
-const {
-  MessageType,
-  Mimetype
-} = require(`@adiwajshing/baileys`);
+const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const Carbon = require(`unofficial-carbon-now`);
 const ℓιєηт = require("../../ᴍᴇᴇ6/catch");
 const ꜱɪɢɴ = require(`../../ᴍᴇᴇ6/ꜱɪɢɴ`);
@@ -50,10 +47,12 @@ In order to specify the theme, use  *${ꜱɪɢɴ.Mee6IX}carbon <text> -t <theme>
       if (Arc[0] == null && !ᴍᴇᴇ6.isReply) {
         await υℓтяσηℓιєηт
           .sendMessage(
-            ᴍᴇᴇ6.chatId, {
+            ᴍᴇᴇ6.chatId,
+            {
               url: ꜱɪɢɴ.ARC,
             },
-            MessageType.image, {
+            MessageType.image,
+            {
               mimetype: Mimetype.jpeg,
               caption: `*☢️ᴍᴇᴇ6*\n\nNo input provided.
 Please use the command  

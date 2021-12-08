@@ -1,7 +1,4 @@
-const {
-  MessageType,
-  Mimetype
-} = require(`@adiwajshing/baileys`);
+const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const ꜱɪɢɴ = require(`../../ᴍᴇᴇ6/ꜱɪɢɴ`);
 const ℓιєηт = require("../../ᴍᴇᴇ6/catch");
 const got = require(`got`);
@@ -16,10 +13,12 @@ module.exports = {
     } else if (Arc.length === 0) {
       return await υℓтяσηℓιєηт
         .sendMessage(
-          ᴍᴇᴇ6.chatId, {
+          ᴍᴇᴇ6.chatId,
+          {
             url: ꜱɪɢɴ.ARC,
           },
-          MessageType.image, {
+          MessageType.image,
+          {
             mimetype: Mimetype.jpeg,
             caption: `*⚠️Seems like someone forgot to give song name!*
 
@@ -48,10 +47,12 @@ ${ꜱɪɢɴ.Mee6IX}lyrics <song-name>`,
         APIData.lyrics;
       await υℓтяσηℓιєηт
         .sendMessage(
-          ᴍᴇᴇ6.chatId, {
+          ᴍᴇᴇ6.chatId,
+          {
             url: APIData.thumbnail.genius,
           },
-          MessageType.image, {
+          MessageType.image,
+          {
             mimetype: Mimetype.png,
             caption: caption,
           }
@@ -60,10 +61,12 @@ ${ꜱɪɢɴ.Mee6IX}lyrics <song-name>`,
     } catch (cᴇʀʀᴏʀ) {
       await υℓтяσηℓιєηт
         .sendMessage(
-          ᴍᴇᴇ6.chatId, {
+          ᴍᴇᴇ6.chatId,
+          {
             url: ꜱɪɢɴ.ERROR,
           },
-          MessageType.image, {
+          MessageType.image,
+          {
             mimetype: Mimetype.png,
             caption: "Seems Like No Lyrics Found\n\nIt will be fixed Soon!",
           }

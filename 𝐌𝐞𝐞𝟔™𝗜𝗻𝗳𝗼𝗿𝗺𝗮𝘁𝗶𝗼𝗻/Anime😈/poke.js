@@ -6,14 +6,14 @@ const ꜱɪɢɴ = require(`../../ᴍᴇᴇ6/ꜱɪɢɴ`);
 const ℓιєηт = require("../../ᴍᴇᴇ6/catch");
 const anime = require("anime-actions");
 module.exports = {
-  name: `hi5`,
-  commandType: "Conversation🎙️",
-  description: `	I know you like anime highfive`,
+  name: `poke`,
+  commandType: "Anime😈",
+  description: `I know you like anime poke`,
   async handle(υℓтяσηℓιєηт, chat, ᴍᴇᴇ6, Arc) {
     await υℓтяσηℓιєηт
       .sendMessage(
         ᴍᴇᴇ6.chatId, {
-          url: await anime.highfive(),
+          url: await anime.poke(),
         },
         MessageType.image, {
           mimetype: Mimetype.jpeg,

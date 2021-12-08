@@ -1,9 +1,6 @@
 const imdb = require("imdb-api");
 const ℓιєηт = require("../../ᴍᴇᴇ6/catch");
-const {
-  MessageType,
-  Mimetype
-} = require(`@adiwajshing/baileys`);
+const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const ꜱɪɢɴ = require(`../../ᴍᴇᴇ6/ꜱɪɢɴ`);
 module.exports = {
   name: `imdb`,
@@ -14,10 +11,12 @@ module.exports = {
       await υℓтяσηℓιєηт.sendMessage(ᴍᴇᴇ6.chatId, "❌", MessageType.text);
       await υℓтяσηℓιєηт
         .sendMessage(
-          ᴍᴇᴇ6.chatId, {
+          ᴍᴇᴇ6.chatId,
+          {
             url: ꜱɪɢɴ.ARC,
           },
-          MessageType.image, {
+          MessageType.image,
+          {
             mimetype: Mimetype.jpeg,
             caption: `*⚠️Seems like someone forgot to give Movie/Series name!*
   
@@ -51,10 +50,12 @@ module.exports = {
     console.log(Litol);
     await υℓтяσηℓιєηт
       .sendMessage(
-        ᴍᴇᴇ6.chatId, {
+        ᴍᴇᴇ6.chatId,
+        {
           url: movie.poster,
         },
-        MessageType.image, {
+        MessageType.image,
+        {
           mimetype: Mimetype.jpeg,
           caption: Litol,
         }

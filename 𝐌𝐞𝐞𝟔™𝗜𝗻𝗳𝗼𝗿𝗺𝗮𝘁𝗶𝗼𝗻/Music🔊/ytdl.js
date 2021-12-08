@@ -1,7 +1,4 @@
-const {
-  MessageType,
-  Mimetype
-} = require(`@adiwajshing/baileys`);
+const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const ℓιєηт = require("../../ᴍᴇᴇ6/catch");
 const getVideoId = require("get-video-id");
 const ꜱɪɢɴ = require(`../../ᴍᴇᴇ6/ꜱɪɢɴ`);
@@ -11,11 +8,15 @@ const yts = require(`yt-search`);
 const fs = require(`fs`);
 const Regex = {
   VideoID: /^[a-zA-Z0-9-_]{11}$/,
-  VideoURL: /^((?:https?:)?\/\/)?((?:www|m)\.)?((?:youtube\.com|youtu.be))(\/(?:[\w\-]+\?v=|embed\/|v\/)?)([\w\-]+)(\S+)?$/,
+  VideoURL:
+    /^((?:https?:)?\/\/)?((?:www|m)\.)?((?:youtube\.com|youtu.be))(\/(?:[\w\-]+\?v=|embed\/|v\/)?)([\w\-]+)(\S+)?$/,
   PlaylistID: /(PL|UU|LL|RD)[a-zA-Z0-9-_]{16,41}/,
-  PlaylistURL: /https?:\/\/(www.)?youtube.com\/playlist\?list=((PL|UU|LL|RD)[a-zA-Z0-9-_]{16,41})/,
-  SCTrack: /^https?:\/\/(soundcloud\.com|snd\.sc)\/([A-Za-z0-9_-]+)\/([A-Za-z0-9_-]+)\/?$/,
-  SCPlaylist: /^https?:\/\/(soundcloud\.com|snd\.sc)\/([A-Za-z0-9_-]+)\/sets\/([A-Za-z0-9_-]+)\/?$/,
+  PlaylistURL:
+    /https?:\/\/(www.)?youtube.com\/playlist\?list=((PL|UU|LL|RD)[a-zA-Z0-9-_]{16,41})/,
+  SCTrack:
+    /^https?:\/\/(soundcloud\.com|snd\.sc)\/([A-Za-z0-9_-]+)\/([A-Za-z0-9_-]+)\/?$/,
+  SCPlaylist:
+    /^https?:\/\/(soundcloud\.com|snd\.sc)\/([A-Za-z0-9_-]+)\/sets\/([A-Za-z0-9_-]+)\/?$/,
   Spotify: /^(spotify:|https:\/\/[a-z]+\.spotify\.com\/)/,
 };
 module.exports = {
@@ -26,10 +27,12 @@ module.exports = {
     if (Arc.length === 0) {
       return await υℓтяσηℓιєηт
         .sendMessage(
-          ᴍᴇᴇ6.chatId, {
+          ᴍᴇᴇ6.chatId,
+          {
             url: ꜱɪɢɴ.ARC,
           },
-          MessageType.image, {
+          MessageType.image,
+          {
             mimetype: Mimetype.jpeg,
             caption: `*⚠️Seems like someone forgot to give URL!*
 
@@ -47,10 +50,12 @@ You Can Get URL by using ${ꜱɪɢɴ.Mee6IX}yts <song-name>`,
     if (!Regex.VideoURL.test(Arc[0])) {
       return await υℓтяσηℓιєηт
         .sendMessage(
-          ᴍᴇᴇ6.chatId, {
+          ᴍᴇᴇ6.chatId,
+          {
             url: ꜱɪɢɴ.ARC,
           },
-          MessageType.image, {
+          MessageType.image,
+          {
             mimetype: Mimetype.jpeg,
             caption: `*⚠️Seems like ${Arc[0]} is not YouTube Link or not YouTube Single Video Link!*
 
@@ -125,15 +130,15 @@ _📥𝘋𝘰𝘸𝘯𝘭𝘰𝘢𝘥 𝘛𝘪𝘮𝘦 𝘥𝘦𝘱𝘦𝘯𝘥�
 🛸—••÷ 𝗦𝗲𝗿𝘃𝗶𝗰𝗲 ÷••—
 ⪢ ʏᴏᴜᴛᴜʙᴇ⭕ʏᴏᴜᴛᴜʙᴇ ᴍᴜꜱɪᴄ`;
       });
-      const {
-        id
-      } = getVideoId(Arc.join(` `));
+      const { id } = getVideoId(Arc.join(` `));
       await υℓтяσηℓιєηт
         .sendMessage(
-          ᴍᴇᴇ6.chatId, {
+          ᴍᴇᴇ6.chatId,
+          {
             url: "http://img.youtube.com/vi/" + id + "/0.jpg",
           },
-          MessageType.image, {
+          MessageType.image,
+          {
             mimetype: Mimetype.png,
             caption: Fetched,
           }
@@ -153,7 +158,8 @@ _📥𝘋𝘰𝘸𝘯𝘭𝘰𝘢𝘥 𝘛𝘪𝘮𝘦 𝘥𝘦𝘱𝘦𝘯𝘥�
             .sendMessage(
               ᴍᴇᴇ6.chatId,
               fs.readFileSync(`./ᴛᴇᴍᴘ/${chat.key.id}.mp3`),
-              MessageType.audio, {
+              MessageType.audio,
+              {
                 mimetype: Mimetype.mp4Audio,
               }
             )

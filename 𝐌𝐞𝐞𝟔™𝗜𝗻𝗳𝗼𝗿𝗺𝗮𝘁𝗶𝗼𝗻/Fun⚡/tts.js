@@ -1,7 +1,4 @@
-const {
-  MessageType,
-  Mimetype
-} = require(`@adiwajshing/baileys`);
+const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const ꜱɪɢɴ = require(`../../ᴍᴇᴇ6/ꜱɪɢɴ`);
 const ℓιєηт = require("../../ᴍᴇᴇ6/catch");
 const googleTTS = require(`google-tts-api`);
@@ -15,10 +12,12 @@ You can also reply to a text message with syntax  *${ꜱɪɢɴ.Mee6IX}tr <langua
     if (Arc.length === 0) {
       return await υℓтяσηℓιєηт
         .sendMessage(
-          ᴍᴇᴇ6.chatId, {
+          ᴍᴇᴇ6.chatId,
+          {
             url: ꜱɪɢɴ.ARC,
           },
-          MessageType.image, {
+          MessageType.image,
+          {
             mimetype: Mimetype.jpeg,
             caption: `*⚠️Seems like someone forgot to give text or language!*
 
@@ -61,10 +60,12 @@ You can also reply to a text message with syntax  *${ꜱɪɢɴ.Mee6IX}tr <langua
         console.log(url);
         await υℓтяσηℓιєηт
           .sendMessage(
-            ᴍᴇᴇ6.chatId, {
+            ᴍᴇᴇ6.chatId,
+            {
               url: url,
             },
-            MessageType.audio, {
+            MessageType.audio,
+            {
               mimetype: Mimetype.mp4Audio,
             }
           )

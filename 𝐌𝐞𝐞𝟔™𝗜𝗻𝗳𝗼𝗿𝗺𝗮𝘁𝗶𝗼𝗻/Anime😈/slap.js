@@ -10,13 +10,13 @@ const Kolor = require(`chalk`);
 const API = new Anime_Images();
 const fs = require(`fs`);
 module.exports = {
-  name: `cuddle`,
-  commandType: "Conversation🎙️",
-  description: `I know you like anime cuddle`,
+  name: `slap`,
+  commandType: "Anime😈",
+  description: `I know you like anime slap`,
   async handle(υℓтяσηℓιєηт, chat, ᴍᴇᴇ6, Arc) {
     let {
       image
-    } = await API.sfw.cuddle();
+    } = await API.sfw.slap();
     if (image === undefined) {
       return await υℓтяσηℓιєηт.sendMessage(
         ᴍᴇᴇ6.chatId, {
@@ -32,15 +32,15 @@ module.exports = {
       download(
         image, {
           directory: `./ᴛᴇᴍᴘ/`,
-          filename: `cuddle-${chat.key.id}.gif`,
+          filename: `slap-${chat.key.id}.gif`,
         },
         function (err) {
           0;
           if (err) {
             return console.log(err);
           } else console.log(`Download Done...`);
-          const FP = `./ᴛᴇᴍᴘ/cuddle-${chat.key.id}.gif`;
-          const SP = `./ᴛᴇᴍᴘ/cuddle-${chat.key.id}.webp`;
+          const FP = `./ᴛᴇᴍᴘ/slap-${chat.key.id}.gif`;
+          const SP = `./ᴛᴇᴍᴘ/slap-${chat.key.id}.webp`;
           ffmpeg(FP)
             .duration(8)
             .outputOptions([

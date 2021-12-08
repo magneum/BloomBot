@@ -1,7 +1,4 @@
-const {
-  MessageType,
-  Mimetype
-} = require(`@adiwajshing/baileys`);
+const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const ꜱɪɢɴ = require(`../../ᴍᴇᴇ6/ꜱɪɢɴ`);
 const ℓιєηт = require("../../ᴍᴇᴇ6/catch");
 module.exports = {
@@ -14,10 +11,12 @@ module.exports = {
       try {
         await υℓтяσηℓιєηт
           .sendMessage(
-            ᴍᴇᴇ6.chatId, {
+            ᴍᴇᴇ6.chatId,
+            {
               url: `https://ctk-api.herokuapp.com/meme/${num}`,
             },
-            MessageType.image, {
+            MessageType.image,
+            {
               mimetype: Mimetype.jpeg,
             }
           )
@@ -26,10 +25,12 @@ module.exports = {
         console.log(e);
         await υℓтяσηℓιєηт
           .sendMessage(
-            ᴍᴇᴇ6.chatId, {
+            ᴍᴇᴇ6.chatId,
+            {
               url: `https://ctk-api.herokuapp.com/meme/${num}`,
             },
-            MessageType.image, {
+            MessageType.image,
+            {
               mimetype: Mimetype.png,
             }
           )

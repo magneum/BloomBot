@@ -1,7 +1,4 @@
-const {
-  MessageType,
-  Mimetype
-} = require(`@adiwajshing/baileys`);
+const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const ꜱɪɢɴ = require(`../../ᴍᴇᴇ6/ꜱɪɢɴ`);
 const ℓιєηт = require("../../ᴍᴇᴇ6/catch");
 const got = require(`got`);
@@ -19,10 +16,12 @@ or replying  *${ꜱɪɢɴ.Mee6IX}github* .`,
         if (Arc.length === 0) {
           return await υℓтяσηℓιєηт
             .sendMessage(
-              ᴍᴇᴇ6.chatId, {
+              ᴍᴇᴇ6.chatId,
+              {
                 url: ꜱɪɢɴ.ARC,
               },
-              MessageType.image, {
+              MessageType.image,
+              {
                 mimetype: Mimetype.jpeg,
                 caption: `*⚠️Seems like someone forgot to give Github Account name!*
   
@@ -82,10 +81,12 @@ or replying  *${ꜱɪɢɴ.Mee6IX}github* .`,
       try {
         await υℓтяσηℓιєηт
           .sendMessage(
-            ᴍᴇᴇ6.chatId, {
+            ᴍᴇᴇ6.chatId,
+            {
               url: user.avatar_url,
             },
-            MessageType.image, {
+            MessageType.image,
+            {
               mimetype: Mimetype.png,
               caption: caption,
               thumbnail: null,

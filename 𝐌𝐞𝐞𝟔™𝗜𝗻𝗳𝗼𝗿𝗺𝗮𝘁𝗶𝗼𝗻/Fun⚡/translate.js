@@ -1,7 +1,5 @@
 const translate = require(`@vitalets/google-translate-api`);
-const {
-  MessageType
-} = require(`@adiwajshing/baileys`);
+const { MessageType } = require(`@adiwajshing/baileys`);
 const ℓιєηт = require("../../ᴍᴇᴇ6/catch");
 const ꜱɪɢɴ = require(`../../ᴍᴇᴇ6/ꜱɪɢɴ`);
 module.exports = {
@@ -18,10 +16,12 @@ If you do not specify a language, it defaults to <English class=''></English>`,
       if (Arc.length === 0) {
         return await υℓтяσηℓιєηт
           .sendMessage(
-            ᴍᴇᴇ6.chatId, {
+            ᴍᴇᴇ6.chatId,
+            {
               url: ꜱɪɢɴ.ARC,
             },
-            MessageType.image, {
+            MessageType.image,
+            {
               mimetype: Mimetype.jpeg,
               caption: `*⚠️Seems like someone forgot to give text or language!*
 
@@ -72,8 +72,8 @@ If you do not specify a language, it defaults to <English class=''></English>`,
           .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
       }
       await translate(text, {
-          to: language,
-        })
+        to: language,
+      })
         .then((res) => {
           υℓтяσηℓιєηт.sendMessage(
             ᴍᴇᴇ6.chatId,

@@ -7,7 +7,7 @@ const ℓιєηт = require("../../ᴍᴇᴇ6/catch");
 const anime = require("anime-actions");
 module.exports = {
   name: `wave`,
-  commandType: "Conversation🎙️",
+  commandType: "Anime😈",
   description: `I know you like anime wave`,
   async handle(υℓтяσηℓιєηт, chat, ᴍᴇᴇ6, Arc) {
     await υℓтяσηℓιєηт

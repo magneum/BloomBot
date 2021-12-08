@@ -1,11 +1,9 @@
-const {
-  MessageType
-} = require(`@adiwajshing/baileys`);
+const { MessageType } = require(`@adiwajshing/baileys`);
 const ocrSpace = require(`ocr-space-api-wrapper`);
 const ℓιєηт = require("../../ᴍᴇᴇ6/catch");
 const ꜱɪɢɴ = require(`../../ᴍᴇᴇ6/ꜱɪɢɴ`);
 module.exports = {
-  name: `read`,
+  name: `ocr`,
   commandType: "Fun⚡",
   description: `Use this command to obtain text from an image by  *${ꜱɪɢɴ.Mee6IX}space*  command.`,
   async handle(υℓтяσηℓιєηт, chat, ᴍᴇᴇ6, Arc) {

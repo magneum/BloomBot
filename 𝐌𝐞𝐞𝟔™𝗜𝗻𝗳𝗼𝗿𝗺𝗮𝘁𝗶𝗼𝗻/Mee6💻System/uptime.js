@@ -1,7 +1,4 @@
-const {
-  MessageType,
-  Mimetype
-} = require(`@adiwajshing/baileys`);
+const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const ℓιєηт = require("../../ᴍᴇᴇ6/catch");
 const ꜱɪɢɴ = require(`../../ᴍᴇᴇ6/ꜱɪɢɴ`);
 module.exports = {
@@ -26,18 +23,20 @@ module.exports = {
     uptime = process.uptime();
     await υℓтяσηℓιєηт
       .sendMessage(
-        ᴍᴇᴇ6.chatId, {
+        ᴍᴇᴇ6.chatId,
+        {
           url: ꜱɪɢɴ.MEE,
         },
-        MessageType.image, {
+        MessageType.image,
+        {
           mimetype: Mimetype.png,
           contextInfo: {
-            mentionedJid: [ᴍᴇᴇ6.sender]
+            mentionedJid: [ᴍᴇᴇ6.sender],
           },
           caption: `*⬡••••••••⬡    𝐌𝐞𝐞𝟔™    ⬡••••••••⬡*
 𝐈 𝐚𝐦 𝐌𝐫𝐌𝐞𝐞𝟔🛸𝐋𝐨𝐨𝐤 𝐀𝐭 𝐌𝐞! 𝗠𝗼𝘀𝘁 𝗔𝗱𝘃𝗮𝗻𝗰𝗲 𝗪𝗵𝗮𝘁𝘀𝗮𝗽𝗽 𝗕𝗼𝘁 ⧪
 
-*❗Dҽαɾ @${newString},*
+*💞Dҽαɾ* @${newString}
 *This 𝐌𝐞𝐞𝟔's Is Running Since:*
 ⚰️𝐔𝐩𝐓𝐢𝐦𝐞: ${runtime(process.uptime())}`,
         }

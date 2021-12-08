@@ -1,7 +1,4 @@
-const {
-  MessageType,
-  Mimetype
-} = require(`@adiwajshing/baileys`);
+const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const ꜱɪɢɴ = require(`../../ᴍᴇᴇ6/ꜱɪɢɴ`);
 const ℓιєηт = require("../../ᴍᴇᴇ6/catch");
 module.exports = {
@@ -12,10 +9,12 @@ module.exports = {
     if (Arc.length === 0) {
       return await υℓтяσηℓιєηт
         .sendMessage(
-          ᴍᴇᴇ6.chatId, {
+          ᴍᴇᴇ6.chatId,
+          {
             url: ꜱɪɢɴ.ARC,
           },
-          MessageType.image, {
+          MessageType.image,
+          {
             mimetype: Mimetype.jpeg,
             caption: `*⚠️Seems like someone forgot to give what to search*
 
@@ -30,10 +29,12 @@ ${ꜱɪɢɴ.Mee6IX}google <search topic>`,
     try {
       await υℓтяσηℓιєηт
         .sendMessage(
-          ᴍᴇᴇ6.chatId, {
+          ᴍᴇᴇ6.chatId,
+          {
             url: `https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/2000px-Google_%22G%22_Logo.svg.png`,
           },
-          MessageType.image, {
+          MessageType.image,
+          {
             mimetype: Mimetype.jpeg,
             caption: `
 *🌍𝗚𝗼𝗼𝗴𝗹𝗲𝗱:* ${Arc.join(` `)}

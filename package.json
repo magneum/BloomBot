@@ -1,7 +1,7 @@
 {
     "name": "mee6",
     "main": "MeeSeeks™.js",
-    "vers": "ᴍᴇᴇ6-7nightly",
+    "vers": "ᴍᴇᴇ6-7.5nightly",
     "engines": {
         "node": ">=17.x"
     },

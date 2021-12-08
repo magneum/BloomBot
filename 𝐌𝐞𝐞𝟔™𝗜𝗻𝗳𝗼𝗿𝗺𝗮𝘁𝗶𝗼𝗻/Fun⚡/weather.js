@@ -1,7 +1,4 @@
-const {
-  MessageType,
-  Mimetype
-} = require(`@adiwajshing/baileys`);
+const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const ꜱɪɢɴ = require(`../../ᴍᴇᴇ6/ꜱɪɢɴ`);
 const ℓιєηт = require("../../ᴍᴇᴇ6/catch");
 const apiKey = ꜱɪɢɴ.WAPI;
@@ -29,14 +26,17 @@ module.exports = {
       async function result(imageUrl, weatherDataVariables, downloading) {
         await υℓтяσηℓιєηт
           .sendMessage(
-            ᴍᴇᴇ6.chatId, {
+            ᴍᴇᴇ6.chatId,
+            {
               url: imageUrl,
             },
-            MessageType.image, {
+            MessageType.image,
+            {
               mimetype: Mimetype.png,
-              caption: `*Temperature:* {tempInC} °C | {tempInF} °F\n*Min Temp:* {minTempInC} °C | {minTempInF} °F\n*Max Temp:* {maxTempInC} °C | {maxTempInF} °F\n*Humidity:* {humidity}%\n*Wind:* {windSpeedInkmph} kmph | {windSpeedInmph} mph , {degree}°\n*Sunrise:* {sunriseTime}\n*Sunset:* {sunsetTime}\n\n\n*{weatherDescription}*\n{cityName} , {country}\n{dateAndTime}`.format(
-                weatherDataVariables
-              ),
+              caption:
+                `*Temperature:* {tempInC} °C | {tempInF} °F\n*Min Temp:* {minTempInC} °C | {minTempInF} °F\n*Max Temp:* {maxTempInC} °C | {maxTempInF} °F\n*Humidity:* {humidity}%\n*Wind:* {windSpeedInkmph} kmph | {windSpeedInmph} mph , {degree}°\n*Sunrise:* {sunriseTime}\n*Sunset:* {sunsetTime}\n\n\n*{weatherDescription}*\n{cityName} , {country}\n{dateAndTime}`.format(
+                  weatherDataVariables
+                ),
               thumbnail: null,
             }
           )
@@ -45,10 +45,12 @@ module.exports = {
       if (Arc.length === 0 || Arc.length < 1) {
         return await υℓтяσηℓιєηт
           .sendMessage(
-            ᴍᴇᴇ6.chatId, {
+            ᴍᴇᴇ6.chatId,
+            {
               url: ꜱɪɢɴ.ARC,
             },
-            MessageType.image, {
+            MessageType.image,
+            {
               mimetype: Mimetype.jpeg,
               caption: `*⚠️Seems like someone forgot to give text or language!*
 

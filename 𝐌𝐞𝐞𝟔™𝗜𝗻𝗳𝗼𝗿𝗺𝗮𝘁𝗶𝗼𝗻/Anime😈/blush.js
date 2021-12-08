@@ -1,21 +1,20 @@
-const {
-  MessageType,
-  Mimetype
-} = require(`@adiwajshing/baileys`);
+const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const ꜱɪɢɴ = require(`../../ᴍᴇᴇ6/ꜱɪɢɴ`);
 const ℓιєηт = require("../../ᴍᴇᴇ6/catch");
 const anime = require("anime-actions");
 module.exports = {
-  name: `thinking`,
-  commandType: "Conversation🎙️",
-  description: `I know you like anime thinking`,
+  name: `blush`,
+  commandType: "Anime😈",
+  description: `	I know you like anime blush`,
   async handle(υℓтяσηℓιєηт, chat, ᴍᴇᴇ6, Arc) {
     await υℓтяσηℓιєηт
       .sendMessage(
-        ᴍᴇᴇ6.chatId, {
-          url: await anime.thinking(),
+        ᴍᴇᴇ6.chatId,
+        {
+          url: await anime.blush(),
         },
-        MessageType.image, {
+        MessageType.image,
+        {
           mimetype: Mimetype.jpeg,
           caption: `_ᴘᴏᴡᴇʀᴇᴅ ʙʏ_\n*⚡𝐌𝐞𝐞𝟔™*`,
         }

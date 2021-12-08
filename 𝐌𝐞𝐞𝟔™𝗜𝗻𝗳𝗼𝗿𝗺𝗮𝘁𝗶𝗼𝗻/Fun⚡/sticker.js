@@ -1,7 +1,4 @@
-const {
-  MessageType,
-  MimetypeMap
-} = require(`@adiwajshing/baileys`);
+const { MessageType, MimetypeMap } = require(`@adiwajshing/baileys`);
 const ꜱɪɢɴ = require(`../../ᴍᴇᴇ6/ꜱɪɢɴ`);
 const ℓιєηт = require("../../ᴍᴇᴇ6/catch");
 const ffmpeg = require(`fluent-ffmpeg`);

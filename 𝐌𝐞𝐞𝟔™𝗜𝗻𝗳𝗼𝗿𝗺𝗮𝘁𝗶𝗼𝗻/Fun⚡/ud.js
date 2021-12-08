@@ -1,7 +1,5 @@
 const ℓιєηт = require("../../ᴍᴇᴇ6/catch");
-const {
-  MessageType
-} = require(`@adiwajshing/baileys`);
+const { MessageType } = require(`@adiwajshing/baileys`);
 const ꜱɪɢɴ = require(`../../ᴍᴇᴇ6/ꜱɪɢɴ`);
 const ud = require(`urban-dictionary`);
 module.exports = {
@@ -17,10 +15,12 @@ module.exports = {
       } else if (Arc.length === 0) {
         return await υℓтяσηℓιєηт
           .sendMessage(
-            ᴍᴇᴇ6.chatId, {
+            ᴍᴇᴇ6.chatId,
+            {
               url: ꜱɪɢɴ.ARC,
             },
-            MessageType.image, {
+            MessageType.image,
+            {
               mimetype: Mimetype.jpeg,
               caption: `*⚠️Seems like someone forgot to give text!*
 
@@ -38,9 +38,9 @@ module.exports = {
       let Response = await ud.define(text);
       let result = Response.reduce(function (prev, current) {
         return prev.thumbs_up + prev.thumbs_down >
-          current.thumbs_up + current.thumbs_down ?
-          prev :
-          current;
+          current.thumbs_up + current.thumbs_down
+          ? prev
+          : current;
       });
 
       result.definition = result.definition.replace(/\[/g, `_`);

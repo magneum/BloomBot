@@ -1,7 +1,4 @@
-const {
-  MessageType,
-  Mimetype
-} = require(`@adiwajshing/baileys`);
+const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const ꜱɪɢɴ = require(`../../ᴍᴇᴇ6/ꜱɪɢɴ`);
 const ℓιєηт = require("../../ᴍᴇᴇ6/catch");
 const getVideoId = require("get-video-id");
@@ -14,10 +11,12 @@ module.exports = {
     if (Arc.length === 0) {
       return await υℓтяσηℓιєηт
         .sendMessage(
-          ᴍᴇᴇ6.chatId, {
+          ᴍᴇᴇ6.chatId,
+          {
             url: ꜱɪɢɴ.ARC,
           },
-          MessageType.image, {
+          MessageType.image,
+          {
             mimetype: Mimetype.jpeg,
             caption: `*⚠️Seems like someone forgot to give song-name!*
 
@@ -36,9 +35,7 @@ You Can Get download audio by using ${ꜱɪɢɴ.Mee6IX}ytdl <song-url>`,
     const videos = FetchedLink.videos.slice(0, 5);
     var Fetched = ``;
     videos.forEach(function (youfound) {
-      const {
-        id
-      } = getVideoId(youfound.url);
+      const { id } = getVideoId(youfound.url);
       Fetched =
         Fetched +
         `*🥳𝐓𝐢𝐭𝐥𝐞↬* ${youfound.title}
@@ -57,12 +54,15 @@ You Can Get download audio by using ${ꜱɪɢɴ.Mee6IX}ytdl <song-url>`,
     const c = Arc.join(` `);
     υℓтяσηℓιєηт
       .sendMessage(
-        ᴍᴇᴇ6.chatId, {
+        ᴍᴇᴇ6.chatId,
+        {
           url: `https://i.postimg.cc/D0N0BK4y/yts.png`,
         },
-        MessageType.image, {
+        MessageType.image,
+        {
           mimetype: Mimetype.png,
-          caption: `ᴛʜᴇꜱᴇ ᴀʀᴇ ᴛʜᴇ *ꜰɪʀꜱᴛ-5* ᴍᴏꜱᴛ ᴍᴀᴛᴄʜɪɴɢ ꜱᴇᴀʀᴄʜ ʀᴇꜱᴜʟᴛꜱ ꜰᴏʀ:
+          caption:
+            `ᴛʜᴇꜱᴇ ᴀʀᴇ ᴛʜᴇ *ꜰɪʀꜱᴛ-5* ᴍᴏꜱᴛ ᴍᴀᴛᴄʜɪɴɢ ꜱᴇᴀʀᴄʜ ʀᴇꜱᴜʟᴛꜱ ꜰᴏʀ:
 *🔎: ${c.toUpperCase()}*\n\n` + Fetched,
         }
       )

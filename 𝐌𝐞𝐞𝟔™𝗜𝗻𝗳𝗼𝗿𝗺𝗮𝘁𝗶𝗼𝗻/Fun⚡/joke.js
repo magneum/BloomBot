@@ -1,7 +1,4 @@
-const {
-  MessageType,
-  Mimetype
-} = require(`@adiwajshing/baileys`);
+const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const ꜱɪɢɴ = require(`../../ᴍᴇᴇ6/ꜱɪɢɴ`);
 const ℓιєηт = require(`../../ᴍᴇᴇ6/catch`);
 const {
@@ -29,11 +26,12 @@ module.exports = {
         .sendMessage(
           ᴍᴇᴇ6.chatId,
           `*` + dadJoke + `*\n@${newString}`,
-          MessageType.text, {
-          contextInfo: {
-            mentionedJid: [ᴍᴇᴇ6.sender]
-          },
-        }
+          MessageType.text,
+          {
+            contextInfo: {
+              mentionedJid: [ᴍᴇᴇ6.sender],
+            },
+          }
         )
         .catch((error) => ℓιєηт.catch(error, υℓтяσηℓιєηт, ᴍᴇᴇ6));
     } catch (err) {

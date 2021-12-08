@@ -1,7 +1,4 @@
-const {
-  MessageType,
-  Mimetype
-} = require(`@adiwajshing/baileys`);
+const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const ꜱɪɢɴ = require(`../../ᴍᴇᴇ6/ꜱɪɢɴ`);
 const ℓιєηт = require("../../ᴍᴇᴇ6/catch");
 module.exports = {
@@ -13,10 +10,12 @@ module.exports = {
       let url = await υℓтяσηℓιєηт.getProfilePicture(ᴍᴇᴇ6.chatId);
       await υℓтяσηℓιєηт
         .sendMessage(
-          ᴍᴇᴇ6.chatId, {
+          ᴍᴇᴇ6.chatId,
+          {
             url: url,
           },
-          MessageType.image, {
+          MessageType.image,
+          {
             mimetype: Mimetype.png,
             caption: `Here is the display image. Procured by ᴍᴇᴇ6.`,
             thumbnail: null,
