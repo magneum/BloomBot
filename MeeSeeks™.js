@@ -175,7 +175,7 @@ async function ᴍᴇᴇ6s() {
     await υℓтяσηℓιєηт.sendMessage(
       υℓтяσηℓιєηт.user.jid,
       {
-        url: `https://i.postimg.cc/d0yKmR0t/Mee6.png`,
+        url: `https://i.postimg.cc/RZ11rBnw/Mee6.png`,
       },
       MessageType.image,
       {
