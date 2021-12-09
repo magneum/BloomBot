@@ -37,7 +37,8 @@ class ᴍᴇᴇ6 {
     isReplyAudio,
     isVideo,
     isAudio,
-    isReplyAnimatedSticker
+    isReplyAnimatedSticker,
+    isAntilink
   ) {
     this.mimeType = mimeType;
     this.type = type;
@@ -74,6 +75,7 @@ class ᴍᴇᴇ6 {
     this.groupMembers = groupMembers;
     this.groupAdmins = groupAdmins;
     this.groupId = groupId;
+    this.isAntilink = isAntilink;
   }
 }
 // ⬡==================⬡-----------------⦿𝐌𝐞𝐞𝟔™⦿-----------------⬡==================⬡

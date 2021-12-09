@@ -38,7 +38,8 @@ module.exports = {
     var str = ᴍᴇᴇ6.sender;
     var newString = str.substring(0, str.length - 15);
     const MeeHelper = `*𝘽𝙊𝙏 𝙄𝙉 𝘽𝙀𝙏𝘼*
-🔸ᴡʜᴀᴛꜱᴀᴘᴘ: https://chat.whatsapp.com/FmMcEeSqZQw85qAkgUs3f5
+シ︎𝗦𝘂𝗽𝗽𝗼𝗿𝘁 𝐆𝐫𝐨𝐮𝐩🛸*https://chat.whatsapp.com/FmMcEeSqZQw85qAkgUs3f5
+シ︎𝐒𝐩𝐚𝐦 𝐆𝐫𝐨𝐮𝐩🛸https://chat.whatsapp.com/GDNPVuH3eMq72UOUHavZxH
 
 
 ⬣ *🛸➾➾➾➾  𝙎𝙮𝙨𝙩𝙚𝙢*

@@ -23,8 +23,8 @@ exports.catch = async (error, ʍɛɛℓιєηт, ᴍᴇᴇ6) => {
 ⚠️𝗘𝗿𝗿𝗼𝗿⚠️
 ${error}
 
-⧪➛ 𝗝𝗼𝗶𝗻 𝗦𝘂𝗽𝗽𝗼𝗿𝘁 𝗚𝗿𝗼𝘂𝗽: https://chat.whatsapp.com/FmMcEeSqZQw85qAkgUs3f5
-*⬡••••••••⬡    𝐌𝐞𝐞𝟔™    ⬡••••••••⬡*`,
+シ︎𝗦𝘂𝗽𝗽𝗼𝗿𝘁 𝐆𝐫𝐨𝐮𝐩🛸*https://chat.whatsapp.com/FmMcEeSqZQw85qAkgUs3f5
+シ︎𝐒𝐩𝐚𝐦 𝐆𝐫𝐨𝐮𝐩🛸https://chat.whatsapp.com/GDNPVuH3eMq72UOUHavZxH`,
     }
   );
 };

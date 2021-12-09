@@ -17,4 +17,4 @@ _ᴍᴇᴇ6-ᴍᴇᴇ6-8.09nightly+livedaily_
 ᴄᴏᴘʏʀɪɢʜᴛ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢʟᴀʙ
 `;
 
-https://chat.whatsapp.com/GDNPVuH3eMq72UOUHavZxH
+"https://chat.whatsapp.com/GDNPVuH3eMq72UOUHavZxH"

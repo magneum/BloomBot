@@ -128,7 +128,6 @@ exports.resolve = function (messageInstance, ʍɛɛℓιєηт, groupMetadata) {
   ᴍᴇᴇ6.isSenderGroupAdmin = ᴍᴇᴇ6.isGroup
     ? ᴍᴇᴇ6.groupAdmins.includes(ᴍᴇᴇ6.sender)
     : false;
-
   return ᴍᴇᴇ6;
 };
 // ⬡==================⬡-----------------⦿𝐌𝐞𝐞𝟔™⦿-----------------⬡==================⬡
