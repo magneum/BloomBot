@@ -189,8 +189,7 @@ async function ᴍᴇᴇ6s() {
 
 シ︎💡𝐏𝐫𝐞𝐟𝐢𝐱: x
 シ︎💡⚙️𝗩𝗲𝗿𝘀𝗶𝗼𝗻: ￫ ${vers.vers} - Beta
-シ︎𝗦𝘂𝗽𝗽𝗼𝗿𝘁 𝐆𝐫𝐨𝐮𝐩🛸*https://chat.whatsapp.com/FmMcEeSqZQw85qAkgUs3f5
-シ︎𝐒𝐩𝐚𝐦 𝐆𝐫𝐨𝐮𝐩🛸https://chat.whatsapp.com/GDNPVuH3eMq72UOUHavZxH
+⧪➛ 𝗝𝗼𝗶𝗻 𝗦𝘂𝗽𝗽𝗼𝗿𝘁 𝗚𝗿𝗼𝘂𝗽: https://chat.whatsapp.com/FmMcEeSqZQw85qAkgUs3f5
 
 
 💻 𝗪𝗵𝗮𝘁 𝗖𝗮𝗻 𝐌𝐞𝐞𝟔™ 𝗗𝗼???
@@ -328,8 +327,7 @@ ${update.desc}`,
         `⬡••••••••⬡    *⦿𝐌𝐞𝐞𝟔™⦿*    ⬡••••••••⬡
 
 𝗖𝗼𝗺𝗲 𝗝𝗼𝗶𝗻 𝗨𝘀 𝗮𝗻𝗱 𝗚𝗲𝘁 𝗬𝗼𝘂𝗿 𝗢𝘄𝗻 𝗣𝗲𝗿𝘀𝗼𝗻𝗮𝗹 ⦿𝐌𝐞𝐞𝟔™
-シ︎𝗦𝘂𝗽𝗽𝗼𝗿𝘁 𝐆𝐫𝐨𝐮𝐩🛸*https://chat.whatsapp.com/FmMcEeSqZQw85qAkgUs3f5
-シ︎𝐒𝐩𝐚𝐦 𝐆𝐫𝐨𝐮𝐩🛸https://chat.whatsapp.com/GDNPVuH3eMq72UOUHavZxH`,
+*⦿ Link:* https://chat.whatsapp.com/FmMcEeSqZQw85qAkgUs3f5`,
         `conversation`
       );
     }
@@ -441,16 +439,7 @@ ${Fetched.message}`,
     ];
     if (ᴍᴇᴇ6.isCmd && !ᴍᴇᴇ6.fromMe) {
       if (ᴍᴇᴇ6.chatId === "120363025343298860@g.us") {
-        await ʍɛɛℓιєηт
-          .sendMessage(
-            ᴍᴇᴇ6.chatId,
-            `⬡••••••••⬡    *⦿𝐌𝐞𝐞𝟔™⦿*    ⬡••••••••⬡
-
-ᴊᴏɪɴ ꜱᴘᴀᴍ ɢʀᴏᴜᴘ ᴛᴏ ᴜꜱᴇ ᴀɴʏ/ᴀʟʟ ᴍᴇᴇ6 ᴄᴏᴍᴍᴀɴᴅꜱ!
-シ︎𝐒𝐩𝐚𝐦 𝐆𝐫𝐨𝐮𝐩🛸https://chat.whatsapp.com/GDNPVuH3eMq72UOUHavZxH`,
-            `conversation`
-          )
-          .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+        console.log("Dev-only Allowed!");
         return;
       } else if (
         adminmodls.indexOf(ᴍᴇᴇ6.commandName) >= 0 &&
