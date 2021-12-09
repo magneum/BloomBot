@@ -18,8 +18,8 @@ module.exports = {
   name: `joke`,
   commandType: `Fun⚡`,
   description: `Get any random Jokes`,
-  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg){
-var ɴᴇᴡᴍᴇᴇ6 = await ᴍᴇᴇgit.log(["KrakinzLab..origin/KrakinzLab"]);
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg) {
+    var ɴᴇᴡᴍᴇᴇ6 = await ᴍᴇᴇgit.log(["KrakinzLab..origin/KrakinzLab"]);
     if (ɴᴇᴡᴍᴇᴇ6.total) {
       await ʍɛɛℓιєηт
         .sendMessage(
@@ -35,7 +35,6 @@ var ɴᴇᴡᴍᴇᴇ6 = await ᴍᴇᴇgit.log(["KrakinzLab..origin/KrakinzLab"
     }
     try {
       const dadJoke = await getDadjoke();
-      console.log(ᴍᴇᴇ6.sender);
       var str = ᴍᴇᴇ6.sender;
       var newString = str.substring(0, str.length - 15);
       await ʍɛɛℓιєηт
