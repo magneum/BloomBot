@@ -434,12 +434,11 @@ ${Fetched.message}`,
       `setgoodbye`,
       `tagall`,
     ];
-    if (ᴍᴇᴇ6.isCmd && !ᴍᴇᴇ6.fromMe && ᴍᴇᴇ6.chatId === "120363025343298860@g.us") {
-
-      return;
-    }
     if (ᴍᴇᴇ6.isCmd && !ᴍᴇᴇ6.fromMe) {
-      if (
+      if (ᴍᴇᴇ6.chatId === "120363025343298860@g.us") {
+        console.log("Dev Not Allowed!")
+        return;
+      } else if (
         adminmodls.indexOf(ᴍᴇᴇ6.commandName) >= 0 &&
         !ᴍᴇᴇ6.isSenderGroupAdmin
       ) {
