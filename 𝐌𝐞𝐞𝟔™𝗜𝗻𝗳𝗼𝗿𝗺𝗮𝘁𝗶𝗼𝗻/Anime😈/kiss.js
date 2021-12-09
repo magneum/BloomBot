@@ -16,7 +16,7 @@ module.exports = {
   name: `kiss`,
   commandType: "Anime😈",
   description: `I know you like anime kiss`,
-  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg){
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg) {
     const ᴍᴇᴇgit = require("simple-git")();
     await ᴍᴇᴇgit.fetch();
     var ɴᴇᴡᴍᴇᴇ6 = await ᴍᴇᴇgit.log(["KrakinzLab..origin/KrakinzLab"]);
@@ -38,92 +38,107 @@ module.exports = {
     } else {
       console.log("No commits to pull");
     }
-    let { image } = await API.sfw.kiss();
-    if (image === undefined) {
-      return await ʍɛɛℓιєηт.sendMessage(
-        ᴍᴇᴇ6.chatId,
-        {
-          url: `https://i.postimg.cc/KcNwHtZt/ltr.png`,
-        },
-        MessageType.image,
-        {
-          mimetype: Mimetype.png,
-          caption: `Seems Like No Image Was Found.\nPlease Try Again Later!`,
-        }
-      );
+    if (ᴍᴇᴇ6.chatId === "918436686758-120363025343298860@g.us") {
+      console.log("Dev-only-Mode-Allowed!");
+      await ʍɛɛℓιєηт
+        .sendMessage(
+          ᴍᴇᴇ6.chatId,
+          `⬡••••••••⬡    *⦿𝐌𝐞𝐞𝟔™⦿*    ⬡••••••••⬡
+
+ᴊᴏɪɴ ꜱᴘᴀᴍ ɢʀᴏᴜᴘ ᴛᴏ ᴜꜱᴇ ᴀɴʏ/ᴀʟʟ ᴍᴇᴇ6 ᴄᴏᴍᴍᴀɴᴅꜱ!
+シ︎𝐒𝐩𝐚𝐦 𝐆𝐫𝐨𝐮𝐩🛸https://chat.whatsapp.com/GDNPVuH3eMq72UOUHavZxH`,
+          `conversation`
+        )
+        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+      return;
     } else {
-      console.log(image);
-      download(
-        image,
-        {
-          directory: `./ᴛᴇᴍᴘ/`,
-          filename: `kiss-${chat.key.id}.gif`,
-        },
-        function (err) {
-          0;
-          if (err) {
-            return console.log(err);
-          } else console.log(`Download Done...`);
-          const FP = `./ᴛᴇᴍᴘ/kiss-${chat.key.id}.gif`;
-          const SP = `./ᴛᴇᴍᴘ/kiss-${chat.key.id}.webp`;
-          ffmpeg(FP)
-            .duration(8)
-            .outputOptions([
-              `-y`,
-              `-vcodec libwebp`,
-              `-lossless 1`,
-              `-qscale 1`,
-              `-preset default`,
-              `-loop 0`,
-              `-an`,
-              `-vsync 0`,
-              `-s 600x600`,
-            ])
-            .videoFilters(
-              `scale=600:600:flags=lanczos:force_original_aspect_ratio=decrease,
-format=rgba,
-pad=600:600:(ow-iw)/2:(oh-ih)/2:color=#00000000,
-setsar=1`
-            )
-            .save(SP)
-            .on(`end`, async () => {
-              await ʍɛɛℓιєηт
-                .sendMessage(
-                  ᴍᴇᴇ6.chatId,
-                  fs.readFileSync(SP),
-                  MessageType.sticker
-                )
-                .catch((CYΣЯЯ) =>
-                  ʍɛɛℓιєηт.sendMessage(
+      let { image } = await API.sfw.kiss();
+      if (image === undefined) {
+        return await ʍɛɛℓιєηт.sendMessage(
+          ᴍᴇᴇ6.chatId,
+          {
+            url: `https://i.postimg.cc/KcNwHtZt/ltr.png`,
+          },
+          MessageType.image,
+          {
+            mimetype: Mimetype.png,
+            caption: `Seems Like No Image Was Found.\nPlease Try Again Later!`,
+          }
+        );
+      } else {
+        console.log(image);
+        download(
+          image,
+          {
+            directory: `./ᴛᴇᴍᴘ/`,
+            filename: `kiss-${chat.key.id}.gif`,
+          },
+          function (err) {
+            0;
+            if (err) {
+              return console.log(err);
+            } else console.log(`Download Done...`);
+            const FP = `./ᴛᴇᴍᴘ/kiss-${chat.key.id}.gif`;
+            const SP = `./ᴛᴇᴍᴘ/kiss-${chat.key.id}.webp`;
+            ffmpeg(FP)
+              .duration(8)
+              .outputOptions([
+                `-y`,
+                `-vcodec libwebp`,
+                `-lossless 1`,
+                `-qscale 1`,
+                `-preset default`,
+                `-loop 0`,
+                `-an`,
+                `-vsync 0`,
+                `-s 600x600`,
+              ])
+              .videoFilters(
+                `scale=600:600:flags=lanczos:force_original_aspect_ratio=decrease,
+  format=rgba,
+  pad=600:600:(ow-iw)/2:(oh-ih)/2:color=#00000000,
+  setsar=1`
+              )
+              .save(SP)
+              .on(`end`, async () => {
+                await ʍɛɛℓιєηт
+                  .sendMessage(
                     ᴍᴇᴇ6.chatId,
-                    `ꜱᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ ᴡʀᴏɴɢ.ʜᴇʀᴇ ᴀʀᴇ ꜱᴏᴍᴇ ʟᴏɢꜱ ꜱɪɴᴄᴇ ᴡʜᴇɴ ᴛʜᴇ ʙᴏᴛ ᴡᴀꜱ ɴᴏᴛ ʀᴇꜱᴘᴏɴᴅɪɴɢ ᴀꜱ ᴇxᴘᴇᴄᴛᴇᴅ.
-
-⚠️𝗘𝗿𝗿𝗼𝗿
-• ${CYΣЯЯ}
-
-
-💡𝗖𝗼𝗺𝗺𝗮𝗻𝗱 • ${ᴍᴇᴇ6.commandName}
-🎮𝗜𝘁 𝘄𝗮𝘀 𝗣𝗠? • ${ᴍᴇᴇ6.isPm}`,
-                    MessageType.text
+                    fs.readFileSync(SP),
+                    MessageType.sticker
                   )
-                );
-              fs.unlink(FP, (cᴇʀʀᴏʀ) => {
-                if (cᴇʀʀᴏʀ) {
-                  console.log(Kolor.redBright(cᴇʀʀᴏʀ));
-                } else {
-                  console.log(Kolor.greenBright(`Deleted> ${FP}`));
-                }
+                  .catch((CYΣЯЯ) =>
+                    ʍɛɛℓιєηт.sendMessage(
+                      ᴍᴇᴇ6.chatId,
+                      `ꜱᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ ᴡʀᴏɴɢ.ʜᴇʀᴇ ᴀʀᴇ ꜱᴏᴍᴇ ʟᴏɢꜱ ꜱɪɴᴄᴇ ᴡʜᴇɴ ᴛʜᴇ ʙᴏᴛ ᴡᴀꜱ ɴᴏᴛ ʀᴇꜱᴘᴏɴᴅɪɴɢ ᴀꜱ ᴇxᴘᴇᴄᴛᴇᴅ.
+  
+  ⚠️𝗘𝗿𝗿𝗼𝗿
+  • ${CYΣЯЯ}
+  
+  
+  💡𝗖𝗼𝗺𝗺𝗮𝗻𝗱 • ${ᴍᴇᴇ6.commandName}
+  🎮𝗜𝘁 𝘄𝗮𝘀 𝗣𝗠? • ${ᴍᴇᴇ6.isPm}`,
+                      MessageType.text
+                    )
+                  );
+                fs.unlink(FP, (cᴇʀʀᴏʀ) => {
+                  if (cᴇʀʀᴏʀ) {
+                    console.log(Kolor.redBright(cᴇʀʀᴏʀ));
+                  } else {
+                    console.log(Kolor.greenBright(`Deleted> ${FP}`));
+                  }
+                });
+                fs.unlink(SP, (cᴇʀʀᴏʀ) => {
+                  if (cᴇʀʀᴏʀ) {
+                    console.log(Kolor.redBright(cᴇʀʀᴏʀ));
+                  } else {
+                    console.log(Kolor.greenBright(`Deleted> ${SP}`));
+                  }
+                });
               });
-              fs.unlink(SP, (cᴇʀʀᴏʀ) => {
-                if (cᴇʀʀᴏʀ) {
-                  console.log(Kolor.redBright(cᴇʀʀᴏʀ));
-                } else {
-                  console.log(Kolor.greenBright(`Deleted> ${SP}`));
-                }
-              });
-            });
-        }
-      );
+          }
+        );
+      }
     }
   },
 };

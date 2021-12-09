@@ -11,7 +11,7 @@ module.exports = {
   name: `google`,
   commandType: "Fun⚡",
   description: `Search anything on google`,
-  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg){
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg) {
     const ᴍᴇᴇgit = require("simple-git")();
     await ᴍᴇᴇgit.fetch();
     var ɴᴇᴡᴍᴇᴇ6 = await ᴍᴇᴇgit.log(["KrakinzLab..origin/KrakinzLab"]);
@@ -33,44 +33,59 @@ module.exports = {
     } else {
       console.log("No commits to pull");
     }
-    if (arg.length === 0) {
-      return await ʍɛɛℓιєηт
-        .sendMessage(
-          ᴍᴇᴇ6.chatId,
-          {
-            url: ꜱɪɢɴ.ARC,
-          },
-          MessageType.image,
-          {
-            mimetype: Mimetype.jpeg,
-            caption: `*⚠️Seems like someone forgot to give what to search*
-
-*Usage Example*
-${ᴋᴇɪ}google <search topic>`,
-          }
-        )
-        .catch((cᴇʀʀᴏʀ) => {
-          ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
-        });
-    }
-    try {
+    if (ᴍᴇᴇ6.chatId === "918436686758-120363025343298860@g.us") {
+      console.log("Dev-only-Mode-Allowed!");
       await ʍɛɛℓιєηт
         .sendMessage(
           ᴍᴇᴇ6.chatId,
-          {
-            url: `https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/2000px-Google_%22G%22_Logo.svg.png`,
-          },
-          MessageType.image,
-          {
-            mimetype: Mimetype.jpeg,
-            caption: `
-*🌍𝗚𝗼𝗼𝗴𝗹𝗲𝗱:* ${arg.join(` `)}
-*💡𝗥𝗲𝘀𝘂𝗹𝘁:* https://google.com/search?q=${arg.join(`+`)}`,
-          }
+          `⬡••••••••⬡    *⦿𝐌𝐞𝐞𝟔™⦿*    ⬡••••••••⬡
+
+ᴊᴏɪɴ ꜱᴘᴀᴍ ɢʀᴏᴜᴘ ᴛᴏ ᴜꜱᴇ ᴀɴʏ/ᴀʟʟ ᴍᴇᴇ6 ᴄᴏᴍᴍᴀɴᴅꜱ!
+シ︎𝐒𝐩𝐚𝐦 𝐆𝐫𝐨𝐮𝐩🛸https://chat.whatsapp.com/GDNPVuH3eMq72UOUHavZxH`,
+          `conversation`
         )
         .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
-    } catch (err) {
-      console.log(err);
+      return;
+    } else {
+      if (arg.length === 0) {
+        return await ʍɛɛℓιєηт
+          .sendMessage(
+            ᴍᴇᴇ6.chatId,
+            {
+              url: ꜱɪɢɴ.ARC,
+            },
+            MessageType.image,
+            {
+              mimetype: Mimetype.jpeg,
+              caption: `*⚠️Seems like someone forgot to give what to search*
+  
+  *Usage Example*
+  ${ᴋᴇɪ}google <search topic>`,
+            }
+          )
+          .catch((cᴇʀʀᴏʀ) => {
+            ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+          });
+      }
+      try {
+        await ʍɛɛℓιєηт
+          .sendMessage(
+            ᴍᴇᴇ6.chatId,
+            {
+              url: `https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/2000px-Google_%22G%22_Logo.svg.png`,
+            },
+            MessageType.image,
+            {
+              mimetype: Mimetype.jpeg,
+              caption: `
+  *🌍𝗚𝗼𝗼𝗴𝗹𝗲𝗱:* ${arg.join(` `)}
+  *💡𝗥𝗲𝘀𝘂𝗹𝘁:* https://google.com/search?q=${arg.join(`+`)}`,
+            }
+          )
+          .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+      } catch (err) {
+        console.log(err);
+      }
     }
   },
 };

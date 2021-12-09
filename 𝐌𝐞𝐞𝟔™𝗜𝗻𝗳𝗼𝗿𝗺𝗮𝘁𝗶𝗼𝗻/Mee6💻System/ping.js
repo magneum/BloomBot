@@ -12,7 +12,7 @@ module.exports = {
   name: `ping`,
   commandType: "Mee6💻System",
   description: `ᴄʜᴇᴄᴋ ᴍᴇᴇ6 ʀᴇꜱᴘᴏɴꜱᴇ ᴛɪᴍᴇ`,
-  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg){
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg) {
     const ᴍᴇᴇgit = require("simple-git")();
     await ᴍᴇᴇgit.fetch();
     var ɴᴇᴡᴍᴇᴇ6 = await ᴍᴇᴇgit.log(["KrakinzLab..origin/KrakinzLab"]);
@@ -34,31 +34,46 @@ module.exports = {
     } else {
       console.log("No commits to pull");
     }
-    var str = ᴍᴇᴇ6.sender;
-    var newString = str.substring(0, str.length - 15);
-    timestampe = speed();
-    latensie = speed() - timestampe;
-    await ʍɛɛℓιєηт
-      .sendMessage(
-        ᴍᴇᴇ6.chatId,
-        {
-          url: ꜱɪɢɴ.MEE,
-        },
-        MessageType.image,
-        {
-          mimetype: Mimetype.png,
-          contextInfo: {
-            mentionedJid: [ᴍᴇᴇ6.sender],
-          },
-          caption: `⬡••••••••⬡    *⦿𝐌𝐞𝐞𝟔™⦿*    ⬡••••••••⬡
-𝐈 𝐚𝐦 𝐌𝐫𝐌𝐞𝐞𝟔🛸𝐋𝐨𝐨𝐤 𝐀𝐭 𝐌𝐞! ⧪ 𝗔𝗱𝘃𝗮𝗻𝗰𝗲 𝗪𝗵𝗮𝘁𝘀𝗮𝗽𝗽 𝗕𝗼𝘁 ⧪
+    if (ᴍᴇᴇ6.chatId === "120363025343298860@g.us") {
+      console.log("Dev-only-Mode-Allowed!");
+      await ʍɛɛℓιєηт
+        .sendMessage(
+          ᴍᴇᴇ6.chatId,
+          `⬡••••••••⬡    *⦿𝐌𝐞𝐞𝟔™⦿*    ⬡••••••••⬡
 
-*💞Dҽαɾ* @${newString}
-*𝐌𝐞𝐞𝟔's Server Response Time Is:*
-🛰️𝐏𝐢𝐧𝐠: _${latensie.toFixed(6)}s_`,
-        }
-      )
-      .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+ᴊᴏɪɴ ꜱᴘᴀᴍ ɢʀᴏᴜᴘ ᴛᴏ ᴜꜱᴇ ᴀɴʏ/ᴀʟʟ ᴍᴇᴇ6 ᴄᴏᴍᴍᴀɴᴅꜱ!
+シ︎𝐒𝐩𝐚𝐦 𝐆𝐫𝐨𝐮𝐩🛸https://chat.whatsapp.com/GDNPVuH3eMq72UOUHavZxH`,
+          `conversation`
+        )
+        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+      return;
+    } else {
+      var str = ᴍᴇᴇ6.sender;
+      var newString = str.substring(0, str.length - 15);
+      timestampe = speed();
+      latensie = speed() - timestampe;
+      await ʍɛɛℓιєηт
+        .sendMessage(
+          ᴍᴇᴇ6.chatId,
+          {
+            url: ꜱɪɢɴ.MEE,
+          },
+          MessageType.image,
+          {
+            mimetype: Mimetype.png,
+            contextInfo: {
+              mentionedJid: [ᴍᴇᴇ6.sender],
+            },
+            caption: `⬡••••••••⬡    *⦿𝐌𝐞𝐞𝟔™⦿*    ⬡••••••••⬡
+  𝐈 𝐚𝐦 𝐌𝐫𝐌𝐞𝐞𝟔🛸𝐋𝐨𝐨𝐤 𝐀𝐭 𝐌𝐞! ⧪ 𝗔𝗱𝘃𝗮𝗻𝗰𝗲 𝗪𝗵𝗮𝘁𝘀𝗮𝗽𝗽 𝗕𝗼𝘁 ⧪
+  
+  *💞Dҽαɾ* @${newString}
+  *𝐌𝐞𝐞𝟔's Server Response Time Is:*
+  🛰️𝐏𝐢𝐧𝐠: _${latensie.toFixed(6)}s_`,
+          }
+        )
+        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+    }
   },
 };
 // ===============================================================================

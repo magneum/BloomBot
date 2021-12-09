@@ -12,7 +12,7 @@ module.exports = {
   name: `lyrics`,
   commandType: "Music🔊",
   description: `Use this command to find the lyrics of a song by using  *${ꜱɪɢɴ.Mee6IX}lyrics*  command.`,
-  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg){
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg) {
     const ᴍᴇᴇgit = require("simple-git")();
     await ᴍᴇᴇgit.fetch();
     var ɴᴇᴡᴍᴇᴇ6 = await ᴍᴇᴇgit.log(["KrakinzLab..origin/KrakinzLab"]);
@@ -34,71 +34,90 @@ module.exports = {
     } else {
       console.log("No commits to pull");
     }
-    var song = ``;
-    if (ᴍᴇᴇ6.isReply) {
-      song = ᴍᴇᴇ6.replyMessage;
-    } else if (arg.length === 0) {
-      return await ʍɛɛℓιєηт
+    if (ᴍᴇᴇ6.chatId === "918436686758-120363025343298860@g.us") {
+      console.log("Dev-only-Mode-Allowed!");
+      await ʍɛɛℓιєηт
         .sendMessage(
           ᴍᴇᴇ6.chatId,
-          {
-            url: ꜱɪɢɴ.ARC,
-          },
-          MessageType.image,
-          {
-            mimetype: Mimetype.jpeg,
-            caption: `*⚠️Seems like someone forgot to give song name!*
+          `⬡••••••••⬡    *⦿𝐌𝐞𝐞𝟔™⦿*    ⬡••••••••⬡
 
-*Usage Example*
-${ᴋᴇɪ}lyrics <song-name>`,
-          }
+ᴊᴏɪɴ ꜱᴘᴀᴍ ɢʀᴏᴜᴘ ᴛᴏ ᴜꜱᴇ ᴀɴʏ/ᴀʟʟ ᴍᴇᴇ6 ᴄᴏᴍᴍᴀɴᴅꜱ!
+シ︎𝐒𝐩𝐚𝐦 𝐆𝐫𝐨𝐮𝐩🛸https://chat.whatsapp.com/GDNPVuH3eMq72UOUHavZxH`,
+          `conversation`
         )
-        .catch((cᴇʀʀᴏʀ) => {
-          ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
-        });
+        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+      return;
     } else {
-      song = arg.join(` `);
-    }
-    await ʍɛɛℓιєηт
-      .sendMessage(ᴍᴇᴇ6.chatId, `Searching. Please wait....`, MessageType.text)
-      .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
-    try {
-      let API = await got(`https://some-random-api.ml/lyrics/?title=${song}`);
-      let APIData = JSON.parse(API.body);
-      let caption =
-        `*Title :* ` +
-        APIData.title +
-        `\n*Author :* ` +
-        APIData.author +
-        `\n*Lyrics :*\n` +
-        APIData.lyrics;
+      var song = ``;
+      if (ᴍᴇᴇ6.isReply) {
+        song = ᴍᴇᴇ6.replyMessage;
+      } else if (arg.length === 0) {
+        return await ʍɛɛℓιєηт
+          .sendMessage(
+            ᴍᴇᴇ6.chatId,
+            {
+              url: ꜱɪɢɴ.ARC,
+            },
+            MessageType.image,
+            {
+              mimetype: Mimetype.jpeg,
+              caption: `*⚠️Seems like someone forgot to give song name!*
+  
+  *Usage Example*
+  ${ᴋᴇɪ}lyrics <song-name>`,
+            }
+          )
+          .catch((cᴇʀʀᴏʀ) => {
+            ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+          });
+      } else {
+        song = arg.join(` `);
+      }
       await ʍɛɛℓιєηт
         .sendMessage(
           ᴍᴇᴇ6.chatId,
-          {
-            url: APIData.thumbnail.genius,
-          },
-          MessageType.image,
-          {
-            mimetype: Mimetype.png,
-            caption: caption,
-          }
+          `Searching. Please wait....`,
+          MessageType.text
         )
         .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
-    } catch (cᴇʀʀᴏʀ) {
-      await ʍɛɛℓιєηт
-        .sendMessage(
-          ᴍᴇᴇ6.chatId,
-          {
-            url: ꜱɪɢɴ.ERROR,
-          },
-          MessageType.image,
-          {
-            mimetype: Mimetype.png,
-            caption: "Seems Like No Lyrics Found\n\nIt will be fixed Soon!",
-          }
-        )
-        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+      try {
+        let API = await got(`https://some-random-api.ml/lyrics/?title=${song}`);
+        let APIData = JSON.parse(API.body);
+        let caption =
+          `*Title :* ` +
+          APIData.title +
+          `\n*Author :* ` +
+          APIData.author +
+          `\n*Lyrics :*\n` +
+          APIData.lyrics;
+        await ʍɛɛℓιєηт
+          .sendMessage(
+            ᴍᴇᴇ6.chatId,
+            {
+              url: APIData.thumbnail.genius,
+            },
+            MessageType.image,
+            {
+              mimetype: Mimetype.png,
+              caption: caption,
+            }
+          )
+          .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+      } catch (cᴇʀʀᴏʀ) {
+        await ʍɛɛℓιєηт
+          .sendMessage(
+            ᴍᴇᴇ6.chatId,
+            {
+              url: ꜱɪɢɴ.ERROR,
+            },
+            MessageType.image,
+            {
+              mimetype: Mimetype.png,
+              caption: "Seems Like No Lyrics Found\n\nIt will be fixed Soon!",
+            }
+          )
+          .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+      }
     }
   },
 };

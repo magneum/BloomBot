@@ -34,29 +34,43 @@ module.exports = {
     } else {
       console.log("No commits to pull");
     }
-    if (arg.length === 0) {
-      return await ʍɛɛℓιєηт
+    if (ᴍᴇᴇ6.chatId === "918436686758-120363025343298860@g.us") {
+      console.log("Dev-only-Mode-Allowed!");
+      await ʍɛɛℓιєηт
         .sendMessage(
           ᴍᴇᴇ6.chatId,
-          {
-            url: ꜱɪɢɴ.ARC,
-          },
-          MessageType.image,
-          {
-            mimetype: Mimetype.jpeg,
-            caption: `*⚠️Seems like someone forgot to give Anime name!*
+          `⬡••••••••⬡    *⦿𝐌𝐞𝐞𝟔™⦿*    ⬡••••••••⬡
+
+ᴊᴏɪɴ ꜱᴘᴀᴍ ɢʀᴏᴜᴘ ᴛᴏ ᴜꜱᴇ ᴀɴʏ/ᴀʟʟ ᴍᴇᴇ6 ᴄᴏᴍᴍᴀɴᴅꜱ!
+シ︎𝐒𝐩𝐚𝐦 𝐆𝐫𝐨𝐮𝐩🛸https://chat.whatsapp.com/GDNPVuH3eMq72UOUHavZxH`,
+          `conversation`
+        )
+        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+      return;
+    } else {
+      if (arg.length === 0) {
+        return await ʍɛɛℓιєηт
+          .sendMessage(
+            ᴍᴇᴇ6.chatId,
+            {
+              url: ꜱɪɢɴ.ARC,
+            },
+            MessageType.image,
+            {
+              mimetype: Mimetype.jpeg,
+              caption: `*⚠️Seems like someone forgot to give Anime name!*
 
 *Usage Example*
 ${ᴋᴇɪ} <anime name>`,
-          }
-        )
-        .catch((cᴇʀʀᴏʀ) => {
-          ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
-        });
-    }
-    const name = arg.join(` `);
-    malScraper.getInfoFromName(name).then(async (data) => {
-      const AnimeInfos = `💡𝐓𝐢𝐭𝐥𝐞: *${data.title}*
+            }
+          )
+          .catch((cᴇʀʀᴏʀ) => {
+            ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+          });
+      }
+      const name = arg.join(` `);
+      malScraper.getInfoFromName(name).then(async (data) => {
+        const AnimeInfos = `💡𝐓𝐢𝐭𝐥𝐞: *${data.title}*
 🧀𝗣𝗿𝗲𝗺𝗶𝗲𝗿𝗲𝗱: _${data.premiered}_
 😈𝗕𝗿𝗼𝗮𝗱𝗰𝗮𝘀𝘁: _${data.broadcast}_
 ❓𝗚𝗲𝗻𝗿𝗲𝘀: _${data.genres}_
@@ -79,20 +93,21 @@ ${ᴋᴇɪ} <anime name>`,
 🕸️𝗦𝘁𝗮𝘁𝘂𝘀: _${data.status}_
 🎯𝗜𝗱: _${data.id}_
 📥𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱: _${data.url}_`;
-      await ʍɛɛℓιєηт
-        .sendMessage(
-          ᴍᴇᴇ6.chatId,
-          {
-            url: data.picture,
-          },
-          MessageType.image,
-          {
-            mimetype: Mimetype.jpeg,
-            caption: AnimeInfos,
-          }
-        )
-        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
-    });
+        await ʍɛɛℓιєηт
+          .sendMessage(
+            ᴍᴇᴇ6.chatId,
+            {
+              url: data.picture,
+            },
+            MessageType.image,
+            {
+              mimetype: Mimetype.jpeg,
+              caption: AnimeInfos,
+            }
+          )
+          .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+      });
+    }
   },
 };
 // ===============================================================================

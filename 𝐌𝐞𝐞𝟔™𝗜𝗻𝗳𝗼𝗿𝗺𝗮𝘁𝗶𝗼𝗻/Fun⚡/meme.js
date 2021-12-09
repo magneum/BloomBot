@@ -11,7 +11,7 @@ module.exports = {
   name: `meme`,
   commandType: "Fun⚡",
   description: `Get Random Memes`,
-  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg){
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg) {
     const ᴍᴇᴇgit = require("simple-git")();
     await ᴍᴇᴇgit.fetch();
     var ɴᴇᴡᴍᴇᴇ6 = await ᴍᴇᴇgit.log(["KrakinzLab..origin/KrakinzLab"]);
@@ -33,38 +33,53 @@ module.exports = {
     } else {
       console.log("No commits to pull");
     }
-    try {
-      var num = Math.floor(Math.random() * (500 - 1) + 1);
+    if (ᴍᴇᴇ6.chatId === "918436686758-120363025343298860@g.us") {
+      console.log("Dev-only-Mode-Allowed!");
+      await ʍɛɛℓιєηт
+        .sendMessage(
+          ᴍᴇᴇ6.chatId,
+          `⬡••••••••⬡    *⦿𝐌𝐞𝐞𝟔™⦿*    ⬡••••••••⬡
+
+ᴊᴏɪɴ ꜱᴘᴀᴍ ɢʀᴏᴜᴘ ᴛᴏ ᴜꜱᴇ ᴀɴʏ/ᴀʟʟ ᴍᴇᴇ6 ᴄᴏᴍᴍᴀɴᴅꜱ!
+シ︎𝐒𝐩𝐚𝐦 𝐆𝐫𝐨𝐮𝐩🛸https://chat.whatsapp.com/GDNPVuH3eMq72UOUHavZxH`,
+          `conversation`
+        )
+        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+      return;
+    } else {
       try {
-        await ʍɛɛℓιєηт
-          .sendMessage(
-            ᴍᴇᴇ6.chatId,
-            {
-              url: `https://ctk-api.herokuapp.com/meme/${num}`,
-            },
-            MessageType.image,
-            {
-              mimetype: Mimetype.jpeg,
-            }
-          )
-          .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
-      } catch (e) {
-        console.log(e);
-        await ʍɛɛℓιєηт
-          .sendMessage(
-            ᴍᴇᴇ6.chatId,
-            {
-              url: `https://ctk-api.herokuapp.com/meme/${num}`,
-            },
-            MessageType.image,
-            {
-              mimetype: Mimetype.png,
-            }
-          )
-          .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+        var num = Math.floor(Math.random() * (500 - 1) + 1);
+        try {
+          await ʍɛɛℓιєηт
+            .sendMessage(
+              ᴍᴇᴇ6.chatId,
+              {
+                url: `https://ctk-api.herokuapp.com/meme/${num}`,
+              },
+              MessageType.image,
+              {
+                mimetype: Mimetype.jpeg,
+              }
+            )
+            .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+        } catch (e) {
+          console.log(e);
+          await ʍɛɛℓιєηт
+            .sendMessage(
+              ᴍᴇᴇ6.chatId,
+              {
+                url: `https://ctk-api.herokuapp.com/meme/${num}`,
+              },
+              MessageType.image,
+              {
+                mimetype: Mimetype.png,
+              }
+            )
+            .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+        }
+      } catch (err) {
+        console.log(err);
       }
-    } catch (err) {
-      console.log(err);
     }
   },
 };

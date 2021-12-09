@@ -36,98 +36,113 @@ ${ꜱɪɢɴ.Mee6IX}add 918250889325*`,
     } else {
       console.log("No commits to pull");
     }
-    try {
-      if (!arg[0]) {
-        ʍɛɛℓιєηт
-          .sendMessage(
-            ᴍᴇᴇ6.chatId,
-            `Enter the number you want to add.
+    if (ᴍᴇᴇ6.chatId === "918436686758-120363025343298860@g.us") {
+      console.log("Dev-only-Mode-Allowed!");
+      await ʍɛɛℓιєηт
+        .sendMessage(
+          ᴍᴇᴇ6.chatId,
+          `⬡••••••••⬡    *⦿𝐌𝐞𝐞𝟔™⦿*    ⬡••••••••⬡
+
+ᴊᴏɪɴ ꜱᴘᴀᴍ ɢʀᴏᴜᴘ ᴛᴏ ᴜꜱᴇ ᴀɴʏ/ᴀʟʟ ᴍᴇᴇ6 ᴄᴏᴍᴍᴀɴᴅꜱ!
+シ︎𝐒𝐩𝐚𝐦 𝐆𝐫𝐨𝐮𝐩🛸https://chat.whatsapp.com/GDNPVuH3eMq72UOUHavZxH`,
+          `conversation`
+        )
+        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+      return;
+    } else {
+      try {
+        if (!arg[0]) {
+          ʍɛɛℓιєηт
+            .sendMessage(
+              ᴍᴇᴇ6.chatId,
+              `Enter the number you want to add.
 For instance,  
 *${ᴋᴇɪ}add <NUMBER>* .`,
-            MessageType.text
-          )
-          .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
-        return;
-      }
-      let NUM;
-      if (isNaN(arg[0]) || arg[0][0] === `+` || arg[0].length < 10) {
-        ʍɛɛℓιєηт
-          .sendMessage(
-            ᴍᴇᴇ6.chatId,
-            `Valid formats -
+              MessageType.text
+            )
+            .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+          return;
+        }
+        let NUM;
+        if (isNaN(arg[0]) || arg[0][0] === `+` || arg[0].length < 10) {
+          ʍɛɛℓιєηт
+            .sendMessage(
+              ᴍᴇᴇ6.chatId,
+              `Valid formats -
 
 Example -
 *${ᴋᴇɪ}add <country-code>8250889325*
 *${ᴋᴇɪ}add 918250889325*`,
-            MessageType.text
-          )
-          .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
-        return;
-      }
-      if (arg[0].length == 10 && !isNaN(arg[0])) {
-        NUM = `91` + arg[0];
-      } else {
-        NUM = arg[0];
-      }
-      const exists = await ʍɛɛℓιєηт.isOnWhatsApp(NUM + `@s.whatsapp.net`);
-      if (!exists) {
-        ʍɛɛℓιєηт
-          .sendMessage(
-            ᴍᴇᴇ6.chatId,
-            `The number you're trying to add isn't available on WhatsApp.
+              MessageType.text
+            )
+            .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+          return;
+        }
+        if (arg[0].length == 10 && !isNaN(arg[0])) {
+          NUM = `91` + arg[0];
+        } else {
+          NUM = arg[0];
+        }
+        const exists = await ʍɛɛℓιєηт.isOnWhatsApp(NUM + `@s.whatsapp.net`);
+        if (!exists) {
+          ʍɛɛℓιєηт
+            .sendMessage(
+              ᴍᴇᴇ6.chatId,
+              `The number you're trying to add isn't available on WhatsApp.
 Please verify the number again.
 
 Example -
 *${ᴋᴇɪ}add <country-code>8250889325*
 *${ᴋᴇɪ}add 918250889325*`,
-            MessageType.text
-          )
-          .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
-        return;
-      }
-      NUM = `${arg[0].replace(/ /g, "")}@s.whatsapp.net`;
-      const request = ʍɛɛℓιєηт.groupAdd(ᴍᴇᴇ6.chatId, [NUM]);
-      const response = await request;
+              MessageType.text
+            )
+            .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+          return;
+        }
+        NUM = `${arg[0].replace(/ /g, "")}@s.whatsapp.net`;
+        const request = ʍɛɛℓιєηт.groupAdd(ᴍᴇᴇ6.chatId, [NUM]);
+        const response = await request;
 
-      if (response[NUM + `@c.us`] == 408) {
+        if (response[NUM + `@c.us`] == 408) {
+          ʍɛɛℓιєηт
+            .sendMessage(
+              ᴍᴇᴇ6.chatId,
+              `The number entered cannot be added back before 24 hours.`,
+              MessageType.text
+            )
+            .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+          return;
+        } else if (response[NUM + `@c.us`] == 409) {
+          ʍɛɛℓιєηт
+            .sendMessage(
+              ᴍᴇᴇ6.chatId,
+              `The number entered is already a member of this group.`,
+              MessageType.text
+            )
+            .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+          return;
+        }
         ʍɛɛℓιєηт
           .sendMessage(
             ᴍᴇᴇ6.chatId,
-            `The number entered cannot be added back before 24 hours.`,
+            ` ` + NUM + ` added successfully!` + ``,
             MessageType.text
           )
           .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
-        return;
-      } else if (response[NUM + `@c.us`] == 409) {
-        ʍɛɛℓιєηт
-          .sendMessage(
-            ᴍᴇᴇ6.chatId,
-            `The number entered is already a member of this group.`,
-            MessageType.text
-          )
-          .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
-        return;
-      }
-      ʍɛɛℓιєηт
-        .sendMessage(
-          ᴍᴇᴇ6.chatId,
-          ` ` + NUM + ` added successfully!` + ``,
-          MessageType.text
-        )
-        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
-    } catch (error) {
-      if (error.status == 400) {
-        ʍɛɛℓιєηт
-          .sendMessage(
-            ᴍᴇᴇ6.chatId,
-            `The number you're trying to add isn't available on WhatsApp.
+      } catch (error) {
+        if (error.status == 400) {
+          ʍɛɛℓιєηт
+            .sendMessage(
+              ᴍᴇᴇ6.chatId,
+              `The number you're trying to add isn't available on WhatsApp.
 Please verify the number again.`,
-            MessageType.text
-          )
-          .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+              MessageType.text
+            )
+            .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+        }
+        await ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6);
       }
-      await ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6);
+      return;
     }
-    return;
   },
 };

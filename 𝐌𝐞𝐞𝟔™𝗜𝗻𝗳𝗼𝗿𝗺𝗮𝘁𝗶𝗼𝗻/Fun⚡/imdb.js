@@ -12,7 +12,7 @@ module.exports = {
   name: `imdb`,
   commandType: "Fun⚡",
   description: `This command was built to find any IMDB movie/series.`,
-  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg){
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg) {
     const ᴍᴇᴇgit = require("simple-git")();
     await ᴍᴇᴇgit.fetch();
     var ɴᴇᴡᴍᴇᴇ6 = await ᴍᴇᴇgit.log(["KrakinzLab..origin/KrakinzLab"]);
@@ -34,60 +34,75 @@ module.exports = {
     } else {
       console.log("No commits to pull");
     }
-    if (arg.length === 0) {
-      await ʍɛɛℓιєηт.sendMessage(ᴍᴇᴇ6.chatId, "❌", MessageType.text);
+    if (ᴍᴇᴇ6.chatId === "918436686758-120363025343298860@g.us") {
+      console.log("Dev-only-Mode-Allowed!");
+      await ʍɛɛℓιєηт
+        .sendMessage(
+          ᴍᴇᴇ6.chatId,
+          `⬡••••••••⬡    *⦿𝐌𝐞𝐞𝟔™⦿*    ⬡••••••••⬡
+
+ᴊᴏɪɴ ꜱᴘᴀᴍ ɢʀᴏᴜᴘ ᴛᴏ ᴜꜱᴇ ᴀɴʏ/ᴀʟʟ ᴍᴇᴇ6 ᴄᴏᴍᴍᴀɴᴅꜱ!
+シ︎𝐒𝐩𝐚𝐦 𝐆𝐫𝐨𝐮𝐩🛸https://chat.whatsapp.com/GDNPVuH3eMq72UOUHavZxH`,
+          `conversation`
+        )
+        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+      return;
+    } else {
+      if (arg.length === 0) {
+        await ʍɛɛℓιєηт.sendMessage(ᴍᴇᴇ6.chatId, "❌", MessageType.text);
+        await ʍɛɛℓιєηт
+          .sendMessage(
+            ᴍᴇᴇ6.chatId,
+            {
+              url: ꜱɪɢɴ.ARC,
+            },
+            MessageType.image,
+            {
+              mimetype: Mimetype.jpeg,
+              caption: `*⚠️Seems like someone forgot to give Movie/Series name!*
+    
+    *Usage Example*
+    .imdb <movie/series>`,
+            }
+          )
+          .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+        return;
+      }
+      const imob = new imdb.Client({
+        apiKey: ꜱɪɢɴ.IMDB,
+      });
+      let movie = await imob.get({
+        name: arg.join(" "),
+      });
+      const Litol = `*💡𝐓𝐢𝐭𝐥𝐞➛*  ${movie.title.toUpperCase()}
+  *🕜𝐓𝐢𝐦𝐞➛*  ${movie.runtime}
+  *📚𝐆𝐞𝐧𝐫𝐞𝐬➛*  ${movie.genres}
+  *😎𝐀𝐜𝐭𝐨𝐫𝐬➛*  ${movie.actors}
+  *🙋🏽𝐕𝐨𝐭𝐞𝐬➛*  ${movie.votes}
+  *⭐𝐑𝐚𝐭𝐢𝐧𝐠➛*  ${movie.rating}
+  *🔩𝐓𝐲𝐩𝐞➛*  ${movie.type}
+  *🌐𝐂𝐨𝐮𝐧𝐭𝐫𝐲➛*  ${movie.country}
+  *🎥𝐃𝐢𝐫𝐞𝐜𝐭𝐨𝐫➛*  ${movie.director}
+  *✒️𝐖𝐫𝐢𝐭𝐞𝐫➛*  ${movie.writer}
+  *📜𝐒𝐞𝐫𝐢𝐞𝐬➛*  ${movie.series}
+  
+  *🔗𝐈𝐦𝐝𝐛𝐮𝐫𝐥➛*  ${movie.imdburl}
+  *❓𝐏𝐥𝐨𝐭➛*  ${movie.plot}`;
+      console.log(Litol);
       await ʍɛɛℓιєηт
         .sendMessage(
           ᴍᴇᴇ6.chatId,
           {
-            url: ꜱɪɢɴ.ARC,
+            url: movie.poster,
           },
           MessageType.image,
           {
             mimetype: Mimetype.jpeg,
-            caption: `*⚠️Seems like someone forgot to give Movie/Series name!*
-  
-  *Usage Example*
-  .imdb <movie/series>`,
+            caption: Litol,
           }
         )
         .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
-      return;
     }
-    const imob = new imdb.Client({
-      apiKey: ꜱɪɢɴ.IMDB,
-    });
-    let movie = await imob.get({
-      name: arg.join(" "),
-    });
-    const Litol = `*💡𝐓𝐢𝐭𝐥𝐞➛*  ${movie.title.toUpperCase()}
-*🕜𝐓𝐢𝐦𝐞➛*  ${movie.runtime}
-*📚𝐆𝐞𝐧𝐫𝐞𝐬➛*  ${movie.genres}
-*😎𝐀𝐜𝐭𝐨𝐫𝐬➛*  ${movie.actors}
-*🙋🏽𝐕𝐨𝐭𝐞𝐬➛*  ${movie.votes}
-*⭐𝐑𝐚𝐭𝐢𝐧𝐠➛*  ${movie.rating}
-*🔩𝐓𝐲𝐩𝐞➛*  ${movie.type}
-*🌐𝐂𝐨𝐮𝐧𝐭𝐫𝐲➛*  ${movie.country}
-*🎥𝐃𝐢𝐫𝐞𝐜𝐭𝐨𝐫➛*  ${movie.director}
-*✒️𝐖𝐫𝐢𝐭𝐞𝐫➛*  ${movie.writer}
-*📜𝐒𝐞𝐫𝐢𝐞𝐬➛*  ${movie.series}
-
-*🔗𝐈𝐦𝐝𝐛𝐮𝐫𝐥➛*  ${movie.imdburl}
-*❓𝐏𝐥𝐨𝐭➛*  ${movie.plot}`;
-    console.log(Litol);
-    await ʍɛɛℓιєηт
-      .sendMessage(
-        ᴍᴇᴇ6.chatId,
-        {
-          url: movie.poster,
-        },
-        MessageType.image,
-        {
-          mimetype: Mimetype.jpeg,
-          caption: Litol,
-        }
-      )
-      .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
   },
 };
 // ===============================================================================

@@ -55,157 +55,172 @@ module.exports = {
     } else {
       console.log("No commits to pull");
     }
-    if (arg.length === 0) {
-      return await ʍɛɛℓιєηт
-        .sendMessage(
-          ᴍᴇᴇ6.chatId,
-          {
-            url: ꜱɪɢɴ.ARC,
-          },
-          MessageType.image,
-          {
-            mimetype: Mimetype.jpeg,
-            caption: `*⚠️Seems like someone forgot to give URL!*
-
-*Usage Example*
-${ᴋᴇɪ}ytdl <URL>
-
-*NOTE:*
-You Can Get URL by using ${ᴋᴇɪ}yts <song-name>`,
-          }
-        )
-        .catch((cᴇʀʀᴏʀ) => {
-          ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
-        });
-    }
-    if (!Regex.VideoURL.test(arg[0])) {
-      return await ʍɛɛℓιєηт
-        .sendMessage(
-          ᴍᴇᴇ6.chatId,
-          {
-            url: ꜱɪɢɴ.ARC,
-          },
-          MessageType.image,
-          {
-            mimetype: Mimetype.jpeg,
-            caption: `*⚠️Seems like ${arg[0]} is not YouTube Link or not YouTube Single Video Link!*
-
-*Usage Example*
-${ᴋᴇɪ}ytdl <video-link>
-
-*NOTE:*
-You Can Get URL by using ${ᴋᴇɪ}yts <song-name>`,
-          }
-        )
-        .catch((cᴇʀʀᴏʀ) => {
-          ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
-        });
-    }
-    // Task starts here
-    var Id = ` `;
-    if (arg[0].includes(`youtu`)) {
-      Id = arg[0];
-      try {
-        if (arg[0].includes(`watch?v=`)) {
-          var songId = arg[0].split(`watch?v=`)[1];
-        } else {
-          var songId = arg[0].split(`/`)[3];
-        }
-        await yts({
-          videoId: songId,
-        });
-      } catch (cᴇʀʀᴏʀ) {
-        throw cᴇʀʀᴏʀ;
-      }
-    } else {
-      var song = await yts(arg.join(` `));
-      song = song.all;
-      if (song.length < 1) {
-        ʍɛɛℓιєηт
-          .sendMessage(
-            ᴍᴇᴇ6.chatId,
-            `Could not find the song you entered. Check whether the link or keyword entered is correct.`,
-            MessageType.text
-          )
-          .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
-        return;
-      }
-      Id = song[0].url;
-    }
-    try {
-      var stream = ytdl(Id, {
-        quality: `highestaudio`,
-      });
-
-      const FetchedLink = await yts(arg.join(` `));
-      const videos = FetchedLink.videos.slice(0, 1);
-      videos.forEach(function (youfound) {
-        Fetched = `*⛖𝐘𝐨𝐮𝐫 𝐌𝐮𝐬𝐢𝐜 𝐈𝐬 𝐍𝐨𝐰 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐢𝐧𝐠⛖*
-_📥𝘋𝘰𝘸𝘯𝘭𝘰𝘢𝘥 𝘛𝘪𝘮𝘦 𝘥𝘦𝘱𝘦𝘯𝘥𝘴 𝘰𝘯 𝘔𝘶𝘴𝘪𝘤 𝘓𝘦𝘯𝘨𝘵𝘩_
-
-🍻—••÷ 𝐓𝐢𝐭𝐥𝐞 ÷••— 
-⪢ ${youfound.title}
-
-🙈—••÷ 𝐕𝐢𝐞𝐰𝐬 ÷••—
-⪢ ${youfound.views}
-
-⏰—••÷ 𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧 ÷••—
-⪢ ${youfound.timestamp}
-
-✒️—••÷ 𝐀𝐮𝐭𝐡𝐨𝐫 ÷••—
-⪢ ${youfound.author.name}
-
-🔗—••÷ 𝐋𝐢𝐧𝐤 ÷••—
-⪢ ${youfound.url}
-
-🛸—••÷ 𝗦𝗲𝗿𝘃𝗶𝗰𝗲 ÷••—
-⪢ ʏᴏᴜᴛᴜʙᴇ⭕ʏᴏᴜᴛᴜʙᴇ ᴍᴜꜱɪᴄ`;
-      });
-      const { id } = getVideoId(arg.join(` `));
+    if (ᴍᴇᴇ6.chatId === "918436686758-120363025343298860@g.us") {
+      console.log("Dev-only-Mode-Allowed!");
       await ʍɛɛℓιєηт
         .sendMessage(
           ᴍᴇᴇ6.chatId,
-          {
-            url: "http://img.youtube.com/vi/" + id + "/0.jpg",
-          },
-          MessageType.image,
-          {
-            mimetype: Mimetype.png,
-            caption: Fetched,
-          }
+          `⬡••••••••⬡    *⦿𝐌𝐞𝐞𝟔™⦿*    ⬡••••••••⬡
+
+ᴊᴏɪɴ ꜱᴘᴀᴍ ɢʀᴏᴜᴘ ᴛᴏ ᴜꜱᴇ ᴀɴʏ/ᴀʟʟ ᴍᴇᴇ6 ᴄᴏᴍᴍᴀɴᴅꜱ!
+シ︎𝐒𝐩𝐚𝐦 𝐆𝐫𝐨𝐮𝐩🛸https://chat.whatsapp.com/GDNPVuH3eMq72UOUHavZxH`,
+          `conversation`
         )
         .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
-      ffmpeg(stream)
-        .audioBitrate(320)
-        .toFormat(`ipod`)
-        .saveToFile(`./ᴛᴇᴍᴘ/${chat.key.id}.mp3`)
-        .on(`end`, async () => {
-          await ʍɛɛℓιєηт
-            .sendMessage(ᴍᴇᴇ6.chatId, `Uploading song...`, MessageType.text)
-            .catch((cᴇʀʀᴏʀ) => {
-              ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
-            });
-          await ʍɛɛℓιєηт
+      return;
+    } else {
+      if (arg.length === 0) {
+        return await ʍɛɛℓιєηт
+          .sendMessage(
+            ᴍᴇᴇ6.chatId,
+            {
+              url: ꜱɪɢɴ.ARC,
+            },
+            MessageType.image,
+            {
+              mimetype: Mimetype.jpeg,
+              caption: `*⚠️Seems like someone forgot to give URL!*
+  
+  *Usage Example*
+  ${ᴋᴇɪ}ytdl <URL>
+  
+  *NOTE:*
+  You Can Get URL by using ${ᴋᴇɪ}yts <song-name>`,
+            }
+          )
+          .catch((cᴇʀʀᴏʀ) => {
+            ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+          });
+      }
+      if (!Regex.VideoURL.test(arg[0])) {
+        return await ʍɛɛℓιєηт
+          .sendMessage(
+            ᴍᴇᴇ6.chatId,
+            {
+              url: ꜱɪɢɴ.ARC,
+            },
+            MessageType.image,
+            {
+              mimetype: Mimetype.jpeg,
+              caption: `*⚠️Seems like ${arg[0]} is not YouTube Link or not YouTube Single Video Link!*
+  
+  *Usage Example*
+  ${ᴋᴇɪ}ytdl <video-link>
+  
+  *NOTE:*
+  You Can Get URL by using ${ᴋᴇɪ}yts <song-name>`,
+            }
+          )
+          .catch((cᴇʀʀᴏʀ) => {
+            ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+          });
+      }
+      // Task starts here
+      var Id = ` `;
+      if (arg[0].includes(`youtu`)) {
+        Id = arg[0];
+        try {
+          if (arg[0].includes(`watch?v=`)) {
+            var songId = arg[0].split(`watch?v=`)[1];
+          } else {
+            var songId = arg[0].split(`/`)[3];
+          }
+          await yts({
+            videoId: songId,
+          });
+        } catch (cᴇʀʀᴏʀ) {
+          throw cᴇʀʀᴏʀ;
+        }
+      } else {
+        var song = await yts(arg.join(` `));
+        song = song.all;
+        if (song.length < 1) {
+          ʍɛɛℓιєηт
             .sendMessage(
               ᴍᴇᴇ6.chatId,
-              fs.readFileSync(`./ᴛᴇᴍᴘ/${chat.key.id}.mp3`),
-              MessageType.audio,
-              {
-                mimetype: Mimetype.mp4Audio,
-              }
+              `Could not find the song you entered. Check whether the link or keyword entered is correct.`,
+              MessageType.text
             )
-            .catch((cᴇʀʀᴏʀ) => {
-              ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
-            });
-          fs.unlink(`./ᴛᴇᴍᴘ/${chat.key.id}.mp3`, (cᴇʀʀᴏʀ) => {
-            if (cᴇʀʀᴏʀ) console.log(cᴇʀʀᴏʀ);
-            else {
-              console.log("Deleted!");
-            }
-          });
+            .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+          return;
+        }
+        Id = song[0].url;
+      }
+      try {
+        var stream = ytdl(Id, {
+          quality: `highestaudio`,
         });
-    } catch (cᴇʀʀᴏʀ) {
-      await ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+
+        const FetchedLink = await yts(arg.join(` `));
+        const videos = FetchedLink.videos.slice(0, 1);
+        videos.forEach(function (youfound) {
+          Fetched = `*⛖𝐘𝐨𝐮𝐫 𝐌𝐮𝐬𝐢𝐜 𝐈𝐬 𝐍𝐨𝐰 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐢𝐧𝐠⛖*
+  _📥𝘋𝘰𝘸𝘯𝘭𝘰𝘢𝘥 𝘛𝘪𝘮𝘦 𝘥𝘦𝘱𝘦𝘯𝘥𝘴 𝘰𝘯 𝘔𝘶𝘴𝘪𝘤 𝘓𝘦𝘯𝘨𝘵𝘩_
+  
+  🍻—••÷ 𝐓𝐢𝐭𝐥𝐞 ÷••— 
+  ⪢ ${youfound.title}
+  
+  🙈—••÷ 𝐕𝐢𝐞𝐰𝐬 ÷••—
+  ⪢ ${youfound.views}
+  
+  ⏰—••÷ 𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧 ÷••—
+  ⪢ ${youfound.timestamp}
+  
+  ✒️—••÷ 𝐀𝐮𝐭𝐡𝐨𝐫 ÷••—
+  ⪢ ${youfound.author.name}
+  
+  🔗—••÷ 𝐋𝐢𝐧𝐤 ÷••—
+  ⪢ ${youfound.url}
+  
+  🛸—••÷ 𝗦𝗲𝗿𝘃𝗶𝗰𝗲 ÷••—
+  ⪢ ʏᴏᴜᴛᴜʙᴇ⭕ʏᴏᴜᴛᴜʙᴇ ᴍᴜꜱɪᴄ`;
+        });
+        const { id } = getVideoId(arg.join(` `));
+        await ʍɛɛℓιєηт
+          .sendMessage(
+            ᴍᴇᴇ6.chatId,
+            {
+              url: "http://img.youtube.com/vi/" + id + "/0.jpg",
+            },
+            MessageType.image,
+            {
+              mimetype: Mimetype.png,
+              caption: Fetched,
+            }
+          )
+          .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+        ffmpeg(stream)
+          .audioBitrate(320)
+          .toFormat(`ipod`)
+          .saveToFile(`./ᴛᴇᴍᴘ/${chat.key.id}.mp3`)
+          .on(`end`, async () => {
+            await ʍɛɛℓιєηт
+              .sendMessage(ᴍᴇᴇ6.chatId, `Uploading song...`, MessageType.text)
+              .catch((cᴇʀʀᴏʀ) => {
+                ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+              });
+            await ʍɛɛℓιєηт
+              .sendMessage(
+                ᴍᴇᴇ6.chatId,
+                fs.readFileSync(`./ᴛᴇᴍᴘ/${chat.key.id}.mp3`),
+                MessageType.audio,
+                {
+                  mimetype: Mimetype.mp4Audio,
+                }
+              )
+              .catch((cᴇʀʀᴏʀ) => {
+                ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+              });
+            fs.unlink(`./ᴛᴇᴍᴘ/${chat.key.id}.mp3`, (cᴇʀʀᴏʀ) => {
+              if (cᴇʀʀᴏʀ) console.log(cᴇʀʀᴏʀ);
+              else {
+                console.log("Deleted!");
+              }
+            });
+          });
+      } catch (cᴇʀʀᴏʀ) {
+        await ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+      }
     }
   },
 };

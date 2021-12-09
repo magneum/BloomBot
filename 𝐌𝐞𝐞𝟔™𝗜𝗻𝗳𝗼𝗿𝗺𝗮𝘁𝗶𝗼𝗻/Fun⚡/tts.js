@@ -14,7 +14,7 @@ module.exports = {
   description: `Text To Speech.`,
   ᴍᴇᴇ6ʍօʀɛ: `Use  *${ꜱɪɢɴ.Mee6IX}tts <text>*  or  *${ꜱɪɢɴ.Mee6IX}tts <text> | <language_code>*  to convert text to speech.
 You can also reply to a text message with syntax  *${ꜱɪɢɴ.Mee6IX}tr <language>*  to translate text.`,
-  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg){
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg) {
     const ᴍᴇᴇgit = require("simple-git")();
     await ᴍᴇᴇgit.fetch();
     var ɴᴇᴡᴍᴇᴇ6 = await ᴍᴇᴇgit.log(["KrakinzLab..origin/KrakinzLab"]);
@@ -36,77 +36,92 @@ You can also reply to a text message with syntax  *${ꜱɪɢɴ.Mee6IX}tr <langua
     } else {
       console.log("No commits to pull");
     }
-    if (arg.length === 0) {
-      return await ʍɛɛℓιєηт
-        .sendMessage(
-          ᴍᴇᴇ6.chatId,
-          {
-            url: ꜱɪɢɴ.ARC,
-          },
-          MessageType.image,
-          {
-            mimetype: Mimetype.jpeg,
-            caption: `*⚠️Seems like someone forgot to give text or language!*
-
-*Usage Example*
-*${ᴋᴇɪ}tts <text>*
-*With language code:*
-*${ᴋᴇɪ}tts <text> = <language_code>*`,
-          }
-        )
-        .catch((cᴇʀʀᴏʀ) => {
-          ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
-        });
-    }
-    let text = ``;
-    let langCode = `en`;
-    for (var i = 0; i < arg.length; i++) {
-      if (arg[i] == `=`) {
-        langCode = arg[i + 1];
-        break;
-      }
-      text += arg[i] + ` `;
-    }
-    if (text.length > 200) {
+    if (ᴍᴇᴇ6.chatId === "918436686758-120363025343298860@g.us") {
+      console.log("Dev-only-Mode-Allowed!");
       await ʍɛɛℓιєηт
         .sendMessage(
           ᴍᴇᴇ6.chatId,
-          `*Total characters should be less than 200.*\nTotal characters for current input were {}.`.format(
-            text.length
-          ),
-          MessageType.text
+          `⬡••••••••⬡    *⦿𝐌𝐞𝐞𝟔™⦿*    ⬡••••••••⬡
+
+ᴊᴏɪɴ ꜱᴘᴀᴍ ɢʀᴏᴜᴘ ᴛᴏ ᴜꜱᴇ ᴀɴʏ/ᴀʟʟ ᴍᴇᴇ6 ᴄᴏᴍᴍᴀɴᴅꜱ!
+シ︎𝐒𝐩𝐚𝐦 𝐆𝐫𝐨𝐮𝐩🛸https://chat.whatsapp.com/GDNPVuH3eMq72UOUHavZxH`,
+          `conversation`
         )
         .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+      return;
     } else {
-      try {
-        const url = googleTTS.getAudioUrl(text, {
-          lang: langCode,
-          slow: false,
-          host: `https://translate.google.com`,
-        });
-        console.log(url);
-        await ʍɛɛℓιєηт
+      if (arg.length === 0) {
+        return await ʍɛɛℓιєηт
           .sendMessage(
             ᴍᴇᴇ6.chatId,
             {
-              url: url,
+              url: ꜱɪɢɴ.ARC,
             },
-            MessageType.audio,
+            MessageType.image,
             {
-              mimetype: Mimetype.mp4Audio,
+              mimetype: Mimetype.jpeg,
+              caption: `*⚠️Seems like someone forgot to give text or language!*
+  
+  *Usage Example*
+  *${ᴋᴇɪ}tts <text>*
+  *With language code:*
+  *${ᴋᴇɪ}tts <text> = <language_code>*`,
             }
           )
+          .catch((cᴇʀʀᴏʀ) => {
+            ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+          });
+      }
+      let text = ``;
+      let langCode = `en`;
+      for (var i = 0; i < arg.length; i++) {
+        if (arg[i] == `=`) {
+          langCode = arg[i + 1];
+          break;
+        }
+        text += arg[i] + ` `;
+      }
+      if (text.length > 200) {
+        await ʍɛɛℓιєηт
+          .sendMessage(
+            ᴍᴇᴇ6.chatId,
+            `*Total characters should be less than 200.*\nTotal characters for current input were {}.`.format(
+              text.length
+            ),
+            MessageType.text
+          )
           .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
-      } catch (cᴇʀʀᴏʀ) {
-        ʍɛɛℓιєηт.sendMessage(
-          ᴍᴇᴇ6.chatId,
-          `*🎮ᴍᴇᴇ6™* 𝐝𝐢𝐝𝐧'𝐭 𝐰𝐨𝐫𝐤 𝐚𝐬 𝐞𝐱𝐩𝐞𝐜𝐭𝐞𝐝❗
-
-💡𝗛𝗲𝗿𝗲 𝗶𝘀 𝗮 𝘀𝗺𝗮𝗹𝗹 𝗲𝗿𝗿𝗼𝗿 𝗿𝗲𝗽𝗼𝗿𝘁 𝗮𝗻𝗱 𝘁𝗼 𝗹𝗼𝗴 𝘁𝗵𝗲 𝗿𝗲𝗽𝗼𝗿𝘁 𝘂𝘀𝗲 ${ᴋᴇɪ}𝗿𝗲𝗽𝗼𝗿𝘁
-⚠️𝗘𝗿𝗿𝗼𝗿
-• ${cᴇʀʀᴏʀ}`,
-          MessageType.text
-        );
+      } else {
+        try {
+          const url = googleTTS.getAudioUrl(text, {
+            lang: langCode,
+            slow: false,
+            host: `https://translate.google.com`,
+          });
+          console.log(url);
+          await ʍɛɛℓιєηт
+            .sendMessage(
+              ᴍᴇᴇ6.chatId,
+              {
+                url: url,
+              },
+              MessageType.audio,
+              {
+                mimetype: Mimetype.mp4Audio,
+              }
+            )
+            .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+        } catch (cᴇʀʀᴏʀ) {
+          ʍɛɛℓιєηт.sendMessage(
+            ᴍᴇᴇ6.chatId,
+            `*🎮ᴍᴇᴇ6™* 𝐝𝐢𝐝𝐧'𝐭 𝐰𝐨𝐫𝐤 𝐚𝐬 𝐞𝐱𝐩𝐞𝐜𝐭𝐞𝐝❗
+  
+  💡𝗛𝗲𝗿𝗲 𝗶𝘀 𝗮 𝘀𝗺𝗮𝗹𝗹 𝗲𝗿𝗿𝗼𝗿 𝗿𝗲𝗽𝗼𝗿𝘁 𝗮𝗻𝗱 𝘁𝗼 𝗹𝗼𝗴 𝘁𝗵𝗲 𝗿𝗲𝗽𝗼𝗿𝘁 𝘂𝘀𝗲 ${ᴋᴇɪ}𝗿𝗲𝗽𝗼𝗿𝘁
+  ⚠️𝗘𝗿𝗿𝗼𝗿
+  • ${cᴇʀʀᴏʀ}`,
+            MessageType.text
+          );
+        }
       }
     }
   },

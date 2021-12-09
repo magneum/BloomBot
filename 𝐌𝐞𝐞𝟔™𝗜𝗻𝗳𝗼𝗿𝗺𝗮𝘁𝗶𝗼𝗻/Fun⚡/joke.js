@@ -40,24 +40,39 @@ module.exports = {
     } else {
       console.log("No commits to pull");
     }
-    try {
-      const dadJoke = await getDadjoke();
-      var str = ᴍᴇᴇ6.sender;
-      var newString = str.substring(0, str.length - 15);
+    if (ᴍᴇᴇ6.chatId === "918436686758-120363025343298860@g.us") {
+      console.log("Dev-only-Mode-Allowed!");
       await ʍɛɛℓιєηт
         .sendMessage(
           ᴍᴇᴇ6.chatId,
-          `*` + dadJoke + `*\n@${newString}`,
-          MessageType.text,
-          {
-            contextInfo: {
-              mentionedJid: [ᴍᴇᴇ6.sender],
-            },
-          }
+          `⬡••••••••⬡    *⦿𝐌𝐞𝐞𝟔™⦿*    ⬡••••••••⬡
+
+ᴊᴏɪɴ ꜱᴘᴀᴍ ɢʀᴏᴜᴘ ᴛᴏ ᴜꜱᴇ ᴀɴʏ/ᴀʟʟ ᴍᴇᴇ6 ᴄᴏᴍᴍᴀɴᴅꜱ!
+シ︎𝐒𝐩𝐚𝐦 𝐆𝐫𝐨𝐮𝐩🛸https://chat.whatsapp.com/GDNPVuH3eMq72UOUHavZxH`,
+          `conversation`
         )
         .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
-    } catch (err) {
-      console.log(err);
+      return;
+    } else {
+      try {
+        const dadJoke = await getDadjoke();
+        var str = ᴍᴇᴇ6.sender;
+        var newString = str.substring(0, str.length - 15);
+        await ʍɛɛℓιєηт
+          .sendMessage(
+            ᴍᴇᴇ6.chatId,
+            `*` + dadJoke + `*\n@${newString}`,
+            MessageType.text,
+            {
+              contextInfo: {
+                mentionedJid: [ᴍᴇᴇ6.sender],
+              },
+            }
+          )
+          .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+      } catch (err) {
+        console.log(err);
+      }
     }
   },
 };

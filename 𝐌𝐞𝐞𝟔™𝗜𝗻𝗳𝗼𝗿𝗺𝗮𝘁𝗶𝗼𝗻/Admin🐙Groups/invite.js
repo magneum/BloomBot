@@ -33,63 +33,78 @@ module.exports = {
     } else {
       console.log("No commits to pull");
     }
-    if (!ᴍᴇᴇ6.isSenderGroupAdmin) {
-      return await ʍɛɛℓιєηт
+    if (ᴍᴇᴇ6.chatId === "918436686758-120363025343298860@g.us") {
+      console.log("Dev-only-Mode-Allowed!");
+      await ʍɛɛℓιєηт
         .sendMessage(
           ᴍᴇᴇ6.chatId,
-          {
-            url: ꜱɪɢɴ.ERROR,
-          },
-          MessageType.image,
-          {
-            mimetype: Mimetype.png,
-            caption: `
+          `⬡••••••••⬡    *⦿𝐌𝐞𝐞𝟔™⦿*    ⬡••••••••⬡
+
+ᴊᴏɪɴ ꜱᴘᴀᴍ ɢʀᴏᴜᴘ ᴛᴏ ᴜꜱᴇ ᴀɴʏ/ᴀʟʟ ᴍᴇᴇ6 ᴄᴏᴍᴍᴀɴᴅꜱ!
+シ︎𝐒𝐩𝐚𝐦 𝐆𝐫𝐨𝐮𝐩🛸https://chat.whatsapp.com/GDNPVuH3eMq72UOUHavZxH`,
+          `conversation`
+        )
+        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+      return;
+    } else {
+      if (!ᴍᴇᴇ6.isSenderGroupAdmin) {
+        return await ʍɛɛℓιєηт
+          .sendMessage(
+            ᴍᴇᴇ6.chatId,
+            {
+              url: ꜱɪɢɴ.ERROR,
+            },
+            MessageType.image,
+            {
+              mimetype: Mimetype.png,
+              caption: `
 ⚠️𝗘𝗿𝗿𝗼𝗿: 
 ➛ ʜᴇʏ ᴛʜᴇʀᴇ ɴɪʙʙᴀ!💩
 
 ʏᴏᴜ ᴅᴏɴ'ᴛ ꜱᴇᴇᴍ ᴛᴏ ʙᴇ ᴀᴅᴍɪɴ..
 ʏᴏᴜ ᴄᴀɴɴᴏᴛ ᴜꜱᴇ ᴄᴏᴍᴍᴀɴᴅ ʜᴇʀᴇ..
 `,
-          }
-        )
-        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
-    }
-    if (!ᴍᴇᴇ6.isGroup) {
+            }
+          )
+          .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+      }
+      if (!ᴍᴇᴇ6.isGroup) {
+        ʍɛɛℓιєηт
+          .sendMessage(
+            ᴍᴇᴇ6.chatId,
+            `command only applicable in a group chat.`,
+            MessageType.text
+          )
+          .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+        return;
+      }
+      const code = await ʍɛɛℓιєηт.groupInviteCode(ᴍᴇᴇ6.chatId);
+      if (ᴍᴇᴇ6.isReply) {
+        ʍɛɛℓιєηт
+          .sendMessage(
+            chat.message.extendedTextMessage.contextInfo.participant,
+            `https://chat.whatsapp.com/` + code,
+            MessageType.text
+          )
+          .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+        ʍɛɛℓιєηт
+          .sendMessage(
+            ᴍᴇᴇ6.chatId,
+            `Invite link sent in DM, please check.`,
+            MessageType.text
+          )
+          .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+        return;
+      }
       ʍɛɛℓιєηт
         .sendMessage(
           ᴍᴇᴇ6.chatId,
-          `command only applicable in a group chat.`,
-          MessageType.text
-        )
-        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
-      return;
-    }
-    const code = await ʍɛɛℓιєηт.groupInviteCode(ᴍᴇᴇ6.chatId);
-    if (ᴍᴇᴇ6.isReply) {
-      ʍɛɛℓιєηт
-        .sendMessage(
-          chat.message.extendedTextMessage.contextInfo.participant,
           `https://chat.whatsapp.com/` + code,
           MessageType.text
         )
         .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
-      ʍɛɛℓιєηт
-        .sendMessage(
-          ᴍᴇᴇ6.chatId,
-          `Invite link sent in DM, please check.`,
-          MessageType.text
-        )
-        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
       return;
     }
-    ʍɛɛℓιєηт
-      .sendMessage(
-        ᴍᴇᴇ6.chatId,
-        `https://chat.whatsapp.com/` + code,
-        MessageType.text
-      )
-      .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
-    return;
   },
 };
 // ===============================================================================

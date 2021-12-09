@@ -12,7 +12,7 @@ module.exports = {
   name: `ocr`,
   commandType: "Fun⚡",
   description: `Use this command to obtain text from an image by  *${ꜱɪɢɴ.Mee6IX}space*  command.`,
-  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg){
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg) {
     const ᴍᴇᴇgit = require("simple-git")();
     await ᴍᴇᴇgit.fetch();
     var ɴᴇᴡᴍᴇᴇ6 = await ᴍᴇᴇgit.log(["KrakinzLab..origin/KrakinzLab"]);
@@ -34,92 +34,115 @@ module.exports = {
     } else {
       console.log("No commits to pull");
     }
-    try {
-      if (ᴍᴇᴇ6.isImage) {
-        var replyChatObject = {
-          message: chat.message,
-        };
-        var imageId = chat.key.id;
-        const fileName = `./ᴛᴇᴍᴘ/img-` + imageId;
-        const filePath = await ʍɛɛℓιєηт.downloadAndSaveMediaMessage(
-          replyChatObject,
-          fileName
-        );
-        try {
-          const text = await ocrSpace(filePath, {
-            apiKey: ꜱɪɢɴ.OCR,
-          });
-          var Msg = text.ParsedResults[0].ParsedText;
-          if (Msg === ``) {
+    if (ᴍᴇᴇ6.chatId === "918436686758-120363025343298860@g.us") {
+      console.log("Dev-only-Mode-Allowed!");
+      await ʍɛɛℓιєηт
+        .sendMessage(
+          ᴍᴇᴇ6.chatId,
+          `⬡••••••••⬡    *⦿𝐌𝐞𝐞𝟔™⦿*    ⬡••••••••⬡
+
+ᴊᴏɪɴ ꜱᴘᴀᴍ ɢʀᴏᴜᴘ ᴛᴏ ᴜꜱᴇ ᴀɴʏ/ᴀʟʟ ᴍᴇᴇ6 ᴄᴏᴍᴍᴀɴᴅꜱ!
+シ︎𝐒𝐩𝐚𝐦 𝐆𝐫𝐨𝐮𝐩🛸https://chat.whatsapp.com/GDNPVuH3eMq72UOUHavZxH`,
+          `conversation`
+        )
+        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+      return;
+    } else {
+      try {
+        if (ᴍᴇᴇ6.isImage) {
+          var replyChatObject = {
+            message: chat.message,
+          };
+          var imageId = chat.key.id;
+          const fileName = `./ᴛᴇᴍᴘ/img-` + imageId;
+          const filePath = await ʍɛɛℓιєηт.downloadAndSaveMediaMessage(
+            replyChatObject,
+            fileName
+          );
+          try {
+            const text = await ocrSpace(filePath, {
+              apiKey: ꜱɪɢɴ.OCR,
+            });
+            var Msg = text.ParsedResults[0].ParsedText;
+            if (Msg === ``) {
+              ʍɛɛℓιєηт
+                .sendMessage(
+                  ᴍᴇᴇ6.chatId,
+                  `Couldn't find text in the image`,
+                  MessageType.text
+                )
+                .catch((cᴇʀʀᴏʀ) => {
+                  ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+                });
+            }
             ʍɛɛℓιєηт
-              .sendMessage(
-                ᴍᴇᴇ6.chatId,
-                `Couldn't find text in the image`,
-                MessageType.text
-              )
+              .sendMessage(ᴍᴇᴇ6.chatId, Msg, MessageType.text)
               .catch((cᴇʀʀᴏʀ) => {
                 ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
               });
+          } catch (cᴇʀʀᴏʀ) {
+            throw cᴇʀʀᴏʀ;
           }
-          ʍɛɛℓιєηт
-            .sendMessage(ᴍᴇᴇ6.chatId, Msg, MessageType.text)
-            .catch((cᴇʀʀᴏʀ) => {
-              ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
-            });
-        } catch (cᴇʀʀᴏʀ) {
-          throw cᴇʀʀᴏʀ;
+          fs.unlink(filePath),
+            (cᴇʀʀᴏʀ) => {
+              if (cᴇʀʀᴏʀ) console.log(cᴇʀʀᴏʀ);
+              else {
+                console.log("Deleted!");
+              }
+            };
         }
-        fs.unlink(filePath),
-          (cᴇʀʀᴏʀ) => {
-            if (cᴇʀʀᴏʀ) console.log(cᴇʀʀᴏʀ);
-            else {
-              console.log("Deleted!");
-            }
+        if (ᴍᴇᴇ6.isReplyImage) {
+          var replyChatObject = {
+            message: chat.message.extendedTextMessage.contextInfo.quotedMessage,
           };
-      }
-      if (ᴍᴇᴇ6.isReplyImage) {
-        var replyChatObject = {
-          message: chat.message.extendedTextMessage.contextInfo.quotedMessage,
-        };
-        var imageId = chat.message.extendedTextMessage.contextInfo.stanzaId;
-        const fileName = `./ᴛᴇᴍᴘ/img-` + imageId;
-        const filePath = await ʍɛɛℓιєηт.downloadAndSaveMediaMessage(
-          replyChatObject,
-          fileName
-        );
-        try {
-          const text = await ocrSpace(filePath, {
-            apiKey: ꜱɪɢɴ.OCR,
-          });
-          var Msg = text.ParsedResults[0].ParsedText;
-          if (Msg === ``) {
+          var imageId = chat.message.extendedTextMessage.contextInfo.stanzaId;
+          const fileName = `./ᴛᴇᴍᴘ/img-` + imageId;
+          const filePath = await ʍɛɛℓιєηт.downloadAndSaveMediaMessage(
+            replyChatObject,
+            fileName
+          );
+          try {
+            const text = await ocrSpace(filePath, {
+              apiKey: ꜱɪɢɴ.OCR,
+            });
+            var Msg = text.ParsedResults[0].ParsedText;
+            if (Msg === ``) {
+              ʍɛɛℓιєηт
+                .sendMessage(
+                  ᴍᴇᴇ6.chatId,
+                  `Couldn't find text in the image`,
+                  MessageType.text
+                )
+                .catch((cᴇʀʀᴏʀ) => {
+                  ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+                });
+            }
             ʍɛɛℓιєηт
-              .sendMessage(
-                ᴍᴇᴇ6.chatId,
-                `Couldn't find text in the image`,
-                MessageType.text
-              )
+              .sendMessage(ᴍᴇᴇ6.chatId, Msg, MessageType.text)
               .catch((cᴇʀʀᴏʀ) => {
                 ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
               });
+          } catch (cᴇʀʀᴏʀ) {
+            throw cᴇʀʀᴏʀ;
           }
-          ʍɛɛℓιєηт
-            .sendMessage(ᴍᴇᴇ6.chatId, Msg, MessageType.text)
-            .catch((cᴇʀʀᴏʀ) => {
-              ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
-            });
-        } catch (cᴇʀʀᴏʀ) {
-          throw cᴇʀʀᴏʀ;
+          fs.unlink(filePath),
+            (cᴇʀʀᴏʀ) => {
+              if (cᴇʀʀᴏʀ) console.log(cᴇʀʀᴏʀ);
+              else {
+                console.log("Deleted!");
+              }
+            };
         }
-        fs.unlink(filePath),
-          (cᴇʀʀᴏʀ) => {
-            if (cᴇʀʀᴏʀ) console.log(cᴇʀʀᴏʀ);
-            else {
-              console.log("Deleted!");
-            }
-          };
-      }
-      setTimeout(async () => {
+        setTimeout(async () => {
+          await ʍɛɛℓιєηт
+            .sendMessage(
+              ᴍᴇᴇ6.chatId,
+              `Please tag a valid message.`,
+              MessageType.text
+            )
+            .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+          return;
+        }, 300000);
         await ʍɛɛℓιєηт
           .sendMessage(
             ᴍᴇᴇ6.chatId,
@@ -127,27 +150,19 @@ module.exports = {
             MessageType.text
           )
           .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
-        return;
-      }, 300000);
-      await ʍɛɛℓιєηт
-        .sendMessage(
+      } catch (CYΣЯЯ) {
+        ʍɛɛℓιєηт.sendMessage(
           ᴍᴇᴇ6.chatId,
-          `Please tag a valid message.`,
+          `ꜱᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ ᴡʀᴏɴɢ.ʜᴇʀᴇ ᴀʀᴇ ꜱᴏᴍᴇ ʟᴏɢꜱ ꜱɪɴᴄᴇ ᴡʜᴇɴ ᴛʜᴇ ʙᴏᴛ ᴡᴀꜱ ɴᴏᴛ ʀᴇꜱᴘᴏɴᴅɪɴɢ ᴀꜱ ᴇxᴘᴇᴄᴛᴇᴅ.
+  
+  ⚠️𝗘𝗿𝗿𝗼𝗿
+  • ${CYΣЯЯ}
+  
+  💡𝗖𝗼𝗺𝗺𝗮𝗻𝗱 • ${ᴍᴇᴇ6.commandName}
+  🎮𝗜𝘁 𝘄𝗮𝘀 𝗣𝗠? • ${ᴍᴇᴇ6.isPm}`,
           MessageType.text
-        )
-        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
-    } catch (CYΣЯЯ) {
-      ʍɛɛℓιєηт.sendMessage(
-        ᴍᴇᴇ6.chatId,
-        `ꜱᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ ᴡʀᴏɴɢ.ʜᴇʀᴇ ᴀʀᴇ ꜱᴏᴍᴇ ʟᴏɢꜱ ꜱɪɴᴄᴇ ᴡʜᴇɴ ᴛʜᴇ ʙᴏᴛ ᴡᴀꜱ ɴᴏᴛ ʀᴇꜱᴘᴏɴᴅɪɴɢ ᴀꜱ ᴇxᴘᴇᴄᴛᴇᴅ.
-
-⚠️𝗘𝗿𝗿𝗼𝗿
-• ${CYΣЯЯ}
-
-💡𝗖𝗼𝗺𝗺𝗮𝗻𝗱 • ${ᴍᴇᴇ6.commandName}
-🎮𝗜𝘁 𝘄𝗮𝘀 𝗣𝗠? • ${ᴍᴇᴇ6.isPm}`,
-        MessageType.text
-      );
+        );
+      }
     }
   },
 };

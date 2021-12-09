@@ -81,16 +81,21 @@ module.exports = {
     }
     if (ᴍᴇᴇ6.isReply) {
       ʍɛɛℓιєηт
-        .sendMessage(ᴍᴇᴇ6.chatId, `*Everyone!*`, MessageType.text, {
-          contextInfo: {
-            stanzaId: ᴍᴇᴇ6.replyMessageId,
-            participant: ᴍᴇᴇ6.replyParticipant,
-            quotedMessage: {
-              conversation: ᴍᴇᴇ6.replyMessage,
+        .sendMessage(
+          ᴍᴇᴇ6.chatId,
+          `\`\`\`Attention Here Everyone In the Group!\`\`\``,
+          MessageType.text,
+          {
+            contextInfo: {
+              stanzaId: ᴍᴇᴇ6.replyMessageId,
+              participant: ᴍᴇᴇ6.replyParticipant,
+              quotedMessage: {
+                conversation: ᴍᴇᴇ6.replyMessage,
+              },
+              mentionedJid: members,
             },
-            mentionedJid: members,
-          },
-        })
+          }
+        )
         .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
       return;
     }

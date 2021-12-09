@@ -11,7 +11,7 @@ module.exports = {
   name: `uptime`,
   commandType: "Mee6💻System",
   description: `ᴄʜᴇᴄᴋ ᴍᴇᴇ6 ᴜᴘᴛɪᴍᴇ`,
-  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg){
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg) {
     const ᴍᴇᴇgit = require("simple-git")();
     await ᴍᴇᴇgit.fetch();
     var ɴᴇᴡᴍᴇᴇ6 = await ᴍᴇᴇgit.log(["KrakinzLab..origin/KrakinzLab"]);
@@ -33,41 +33,56 @@ module.exports = {
     } else {
       console.log("No commits to pull");
     }
-    var str = ᴍᴇᴇ6.sender;
-    var newString = str.substring(0, str.length - 15);
-    const runtime = function (seconds) {
-      seconds = Number(seconds);
-      var d = Math.floor(seconds / (3600 * 24));
-      var h = Math.floor((seconds % (3600 * 24)) / 3600);
-      var m = Math.floor((seconds % 3600) / 60);
-      var s = Math.floor(seconds % 60);
-      var dDisplay = d > 0 ? d + (d == 1 ? " day, " : " Day, ") : "";
-      var hDisplay = h > 0 ? h + (h == 1 ? " hour, " : " Hour, ") : "";
-      var mDisplay = m > 0 ? m + (m == 1 ? " minute, " : " Minute, ") : "";
-      var sDisplay = s > 0 ? s + (s == 1 ? " second" : " Second") : "";
-      return dDisplay + hDisplay + mDisplay + sDisplay;
-    };
-    uptime = process.uptime();
-    await ʍɛɛℓιєηт
-      .sendMessage(
-        ᴍᴇᴇ6.chatId,
-        {
-          url: ꜱɪɢɴ.MEE,
-        },
-        MessageType.image,
-        {
-          mimetype: Mimetype.png,
-          contextInfo: {
-            mentionedJid: [ᴍᴇᴇ6.sender],
-          },
-          caption: `⬡••••••••⬡    *⦿𝐌𝐞𝐞𝟔™⦿*    ⬡••••••••⬡
-𝐈 𝐚𝐦 𝐌𝐫𝐌𝐞𝐞𝟔🛸𝐋𝐨𝐨𝐤 𝐀𝐭 𝐌𝐞! ⧪ 𝗔𝗱𝘃𝗮𝗻𝗰𝗲 𝗪𝗵𝗮𝘁𝘀𝗮𝗽𝗽 𝗕𝗼𝘁 ⧪
+    if (ᴍᴇᴇ6.chatId === "918436686758-120363025343298860@g.us") {
+      console.log("Dev-only-Mode-Allowed!");
+      await ʍɛɛℓιєηт
+        .sendMessage(
+          ᴍᴇᴇ6.chatId,
+          `⬡••••••••⬡    *⦿𝐌𝐞𝐞𝟔™⦿*    ⬡••••••••⬡
 
-*💞Dҽαɾ* @${newString}
-*This 𝐌𝐞𝐞𝟔's Is Running Since:*
-⚰️𝐔𝐩𝐓𝐢𝐦𝐞: ${runtime(process.uptime())}`,
-        }
-      )
-      .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+ᴊᴏɪɴ ꜱᴘᴀᴍ ɢʀᴏᴜᴘ ᴛᴏ ᴜꜱᴇ ᴀɴʏ/ᴀʟʟ ᴍᴇᴇ6 ᴄᴏᴍᴍᴀɴᴅꜱ!
+シ︎𝐒𝐩𝐚𝐦 𝐆𝐫𝐨𝐮𝐩🛸https://chat.whatsapp.com/GDNPVuH3eMq72UOUHavZxH`,
+          `conversation`
+        )
+        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+      return;
+    } else {
+      var str = ᴍᴇᴇ6.sender;
+      var newString = str.substring(0, str.length - 15);
+      const runtime = function (seconds) {
+        seconds = Number(seconds);
+        var d = Math.floor(seconds / (3600 * 24));
+        var h = Math.floor((seconds % (3600 * 24)) / 3600);
+        var m = Math.floor((seconds % 3600) / 60);
+        var s = Math.floor(seconds % 60);
+        var dDisplay = d > 0 ? d + (d == 1 ? " day, " : " Day, ") : "";
+        var hDisplay = h > 0 ? h + (h == 1 ? " hour, " : " Hour, ") : "";
+        var mDisplay = m > 0 ? m + (m == 1 ? " minute, " : " Minute, ") : "";
+        var sDisplay = s > 0 ? s + (s == 1 ? " second" : " Second") : "";
+        return dDisplay + hDisplay + mDisplay + sDisplay;
+      };
+      uptime = process.uptime();
+      await ʍɛɛℓιєηт
+        .sendMessage(
+          ᴍᴇᴇ6.chatId,
+          {
+            url: ꜱɪɢɴ.MEE,
+          },
+          MessageType.image,
+          {
+            mimetype: Mimetype.png,
+            contextInfo: {
+              mentionedJid: [ᴍᴇᴇ6.sender],
+            },
+            caption: `⬡••••••••⬡    *⦿𝐌𝐞𝐞𝟔™⦿*    ⬡••••••••⬡
+  𝐈 𝐚𝐦 𝐌𝐫𝐌𝐞𝐞𝟔🛸𝐋𝐨𝐨𝐤 𝐀𝐭 𝐌𝐞! ⧪ 𝗔𝗱𝘃𝗮𝗻𝗰𝗲 𝗪𝗵𝗮𝘁𝘀𝗮𝗽𝗽 𝗕𝗼𝘁 ⧪
+  
+  *💞Dҽαɾ* @${newString}
+  *This 𝐌𝐞𝐞𝟔's Is Running Since:*
+  ⚰️𝐔𝐩𝐓𝐢𝐦𝐞: ${runtime(process.uptime())}`,
+          }
+        )
+        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+    }
   },
 };
