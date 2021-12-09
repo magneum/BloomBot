@@ -35,7 +35,7 @@ module.exports = {
 𝐈 𝐚𝐦 𝐌𝐫𝐌𝐞𝐞𝟔🛸𝐋𝐨𝐨𝐤 𝐀𝐭 𝐌𝐞! ⧪ 𝗔𝗱𝘃𝗮𝗻𝗰𝗲 𝗪𝗵𝗮𝘁𝘀𝗮𝗽𝗽 𝗕𝗼𝘁 ⧪
 
 *💞Dҽαɾ* @${newString}
-⚠️hahaha Nice Try! Only My Owner Can use that command!`,
+⚠️𝙉𝙞𝙘𝙚 𝙏𝙧𝙮 𝘽𝙪𝙩 𝙊𝙣𝙡𝙮 𝙈𝙮 𝙊𝙬𝙣𝙚𝙧 𝘾𝙖𝙣 𝙪𝙨𝙚 𝙩𝙝𝙖𝙩 𝙘𝙤𝙢𝙢𝙖𝙣𝙙!`,
           }
         )
         .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
