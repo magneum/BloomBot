@@ -15,7 +15,7 @@ module.exports = {
   name: `update`,
   commandType: "Mee6💻System",
   description: `ᴛʜɪꜱ ᴄᴏᴍᴍᴀɴᴅ ᴄᴀɴ ʙᴇ ᴜꜱᴇᴅ ᴛᴏ ᴜᴘᴅᴀᴛᴇ ᴛʜᴇ ʙᴏᴛ`,
-  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg){
+  async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg) {
     var str = ᴍᴇᴇ6.sender;
     var newString = str.substring(0, str.length - 15);
     if (!ᴍᴇᴇ6.fromMe) {
@@ -39,20 +39,20 @@ module.exports = {
           }
         )
         .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
-    } else {
-      await ʍɛɛℓιєηт
-        .sendMessage(
-          ᴍᴇᴇ6.chatId,
-          {
-            url: ꜱɪɢɴ.UPT,
+    }
+    await ʍɛɛℓιєηт
+      .sendMessage(
+        ᴍᴇᴇ6.chatId,
+        {
+          url: ꜱɪɢɴ.UPT,
+        },
+        MessageType.image,
+        {
+          mimetype: Mimetype.png,
+          contextInfo: {
+            mentionedJid: [ᴍᴇᴇ6.sender],
           },
-          MessageType.image,
-          {
-            mimetype: Mimetype.png,
-            contextInfo: {
-              mentionedJid: [ᴍᴇᴇ6.sender],
-            },
-            caption: `⬡••••••••⬡    *⦿𝐌𝐞𝐞𝟔™⦿*    ⬡••••••••⬡
+          caption: `⬡••••••••⬡    *⦿𝐌𝐞𝐞𝟔™⦿*    ⬡••••••••⬡
 𝐈 𝐚𝐦 𝐌𝐫𝐌𝐞𝐞𝟔🛸𝐋𝐨𝐨𝐤 𝐀𝐭 𝐌𝐞! 
 ⧪ 𝗔𝗱𝘃𝗮𝗻𝗰𝗲 𝗪𝗵𝗮𝘁𝘀𝗮𝗽𝗽 𝗕𝗼𝘁 ⧪
 
@@ -63,12 +63,11 @@ module.exports = {
 
 ⚠️𝗜𝗳 𝗶𝘁 𝘄𝗮𝘀 𝗮 𝗕𝗜𝗚 ⚡𝐌𝐞𝐞𝟔™ 𝘂𝗽𝗱𝗮𝘁𝗲,
 𝘁𝗵𝗲𝗻 𝗣𝗹𝗲𝗮𝘀𝗲 𝗿𝗲𝗱𝗲𝗽𝗹𝗼𝘆 𝘆𝗼𝘂𝗿 𝗯𝗼𝘁!`,
-          }
-        )
-        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
-      heroku
-        .delete("/apps/" + ꜱɪɢɴ.HEROKU_BOT_NAME + "/dynos/" + "worker")
-        .then((x) => console.log(x));
-    }
+        }
+      )
+      .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+    heroku
+      .delete("/apps/" + ꜱɪɢɴ.HEROKU_BOT_NAME + "/dynos/" + "worker")
+      .then((x) => console.log(x));
   },
 };

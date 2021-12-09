@@ -12,6 +12,27 @@ module.exports = {
   commandType: "Fun⚡",
   description: `Get the profile picture of the group in a group conversation or the profile picture of ᴍᴇᴇ6 itself in personal chat.`,
   async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg){
+    const ᴍᴇᴇgit = require("simple-git")();
+    await ᴍᴇᴇgit.fetch();
+    var ɴᴇᴡᴍᴇᴇ6 = await ᴍᴇᴇgit.log(["KrakinzLab..origin/KrakinzLab"]);
+    if (ɴᴇᴡᴍᴇᴇ6.total != 0) {
+      console.log(ɴᴇᴡᴍᴇᴇ6);
+      var str = ᴍᴇᴇ6.sender;
+      var newString = str.substring(0, str.length - 15);
+      await ʍɛɛℓιєηт
+        .sendMessage(
+          ᴍᴇᴇ6.chatId,
+          `⬡••••••••⬡    *⦿𝐌𝐞𝐞𝟔™⦿*    ⬡••••••••⬡
+❗ 𝙈𝙚𝙚6 𝙐𝙥𝙙𝙖𝙩𝙚 𝙋𝙚𝙣𝙙𝙞𝙣𝙜
+
+*💞Dҽαɾ @${newString},*
+𝘗𝘭𝘦𝘢𝘴𝘦 𝘜𝘱𝘥𝘢𝘵𝘦 𝘜𝘴𝘪𝘯𝘨 *${ᴋᴇɪ}update* 𝘰𝘳 𝘳𝘦𝘥𝘦𝘱𝘭𝘰𝘺 𝐌𝐞𝐞𝟔™!`,
+          MessageType.text
+        )
+        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+    } else {
+      console.log("No commits to pull");
+    }
     try {
       let url = await ʍɛɛℓιєηт.getProfilePicture(ᴍᴇᴇ6.chatId);
       await ʍɛɛℓιєηт
