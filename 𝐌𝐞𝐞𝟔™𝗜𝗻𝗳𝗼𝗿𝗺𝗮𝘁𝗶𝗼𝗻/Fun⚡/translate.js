@@ -37,7 +37,7 @@ If you do not specify a language, it defaults to English.`,
     } else {
       console.log("No commits to pull");
     }
-    if (ᴍᴇᴇ6.chatId === "918436686758-120363025343298860@g.us") {
+    if (ᴍᴇᴇ6.chatId === "120363025343298860@g.us") {
       console.log("Dev-only-Mode-Allowed!");
       await ʍɛɛℓιєηт
         .sendMessage(
