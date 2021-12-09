@@ -86,7 +86,7 @@ async function ᴍᴇᴇ6s() {
     Kolor.yellow(`⬡=================⬡    ⦿𝐌𝐞𝐞𝟔™⦿    ⬡=================⬡`)
   );
   console.log(Kolor.yellow(`𝐌𝐞𝐞𝟔™💡𝗜𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻⬰ 𝗖𝗵𝗲𝗰𝗸𝗶𝗻𝗴 𝗳𝗼𝗿 𝘂𝗽𝗱𝗮𝘁𝗲𝘀...`));
-  // await AutoMeeUpdate();
+  await AutoMeeUpdate();
   try {
     var session = ᴍᴇᴇ6ֆʏռօք.Mee6reignite(ꜱɪɢɴ.Mee6);
     ʍɛɛℓιєηт.loadAuthInfo(session);
