@@ -6,16 +6,10 @@ require("python-format-js");
 exports.catch = async (error, ʍɛɛℓιєηт, ᴍᴇᴇ6) => {
   var str = ᴍᴇᴇ6.sender;
   var newString = str.substring(0, str.length - 15);
+
   await ʍɛɛℓιєηт.sendMessage(
     ᴍᴇᴇ6.chatId,
-    {
-      url: "https://i.postimg.cc/mkdqGhr5/Mee6-Error.png",
-    },
-    MessageType.image,
-    {
-      mimetype: Mimetype.png,
-      contextInfo: { mentionedJid: [ᴍᴇᴇ6.sender] },
-      caption: `*⬡••••••••⬡    𝐌𝐞𝐞𝟔™    ⬡••••••••⬡*
+    `*⬡••••••••⬡    𝐌𝐞𝐞𝟔™    ⬡••••••••⬡*
 𝐈 𝐚𝐦 𝐌𝐫𝐌𝐞𝐞𝟔🛸𝐋𝐨𝐨𝐤 𝐀𝐭 𝐌𝐞! 
 ⧪ 𝗔𝗱𝘃𝗮𝗻𝗰𝗲 𝗪𝗵𝗮𝘁𝘀𝗮𝗽𝗽 𝗕𝗼𝘁 ⧪
 
@@ -25,6 +19,11 @@ ${error}
 
 シ︎𝗦𝘂𝗽𝗽𝗼𝗿𝘁 𝐆𝐫𝐨𝐮𝐩🛸*https://chat.whatsapp.com/FmMcEeSqZQw85qAkgUs3f5
 シ︎𝐒𝐩𝐚𝐦 𝐆𝐫𝐨𝐮𝐩🛸https://chat.whatsapp.com/GDNPVuH3eMq72UOUHavZxH`,
+    MessageType.text,
+    {
+      contextInfo: {
+        mentionedJid: [ᴍᴇᴇ6.sender],
+      },
     }
   );
 };
