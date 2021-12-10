@@ -17,7 +17,7 @@ module.exports = {
     await ᴍᴇᴇgit.fetch();
     var Sender = ᴍᴇᴇ6.sender;
     var ɴᴇᴡᴍᴇᴇ6 = await ᴍᴇᴇgit.log(["KrakinzLab..origin/KrakinzLab"]);
-    personsending = Sender.substring(0, Sender.length - 15);
+    var personsending = Sender.substring(0, Sender.length - 15);
     // ⬡==================⬡-----------------⦿𝐌𝐞𝐞𝟔™⦿-----------------⬡==================⬡
     if (ɴᴇᴡᴍᴇᴇ6.total != 0) {
       await ʍɛɛℓιєηт
@@ -53,7 +53,7 @@ module.exports = {
     // ⬡==================⬡-----------------⦿𝐌𝐞𝐞𝟔™⦿-----------------⬡==================⬡
     if (ᴍᴇᴇ6.isGroup && ᴍᴇᴇ6.isReply) {
       var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
-      personreceived = Receiver.substring(0, Receiver.length - 15);
+      var personreceived = Receiver.substring(0, Receiver.length - 15);
       // ⬡==================⬡-----------------⦿𝐌𝐞𝐞𝟔™⦿-----------------⬡==================⬡
       await ʍɛɛℓιєηт
         .sendMessage(
@@ -64,7 +64,7 @@ module.exports = {
           MessageType.image,
           {
             mimetype: Mimetype.jpeg || Mimetype.png,
-            contextInfo: { mentionedJid: [personsending, personreceived] },
+            contextInfo: { mentionedJid: [Sender, Receiver] },
             caption: `⦿ᴘᴏᴡᴇʀᴇᴅ ʙʏ 
 *👓𝓜𝓮𝓮6™* ▽ 𝙒𝙝𝙖𝙩𝙨𝙖𝙥𝙥 𝙐𝙨𝙚𝙧𝘽𝙤𝙩
 
@@ -75,9 +75,6 @@ module.exports = {
     }
     // ⬡==================⬡-----------------⦿𝐌𝐞𝐞𝟔™⦿-----------------⬡==================⬡
     if (ᴍᴇᴇ6.isGroup && !ᴍᴇᴇ6.isReply) {
-      var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
-      personreceived = Receiver.substring(0, Receiver.length - 15);
-      // ⬡==================⬡-----------------⦿𝐌𝐞𝐞𝟔™⦿-----------------⬡==================⬡
       await ʍɛɛℓιєηт
         .sendMessage(
           ᴍᴇᴇ6.chatId,
@@ -87,7 +84,7 @@ module.exports = {
           MessageType.image,
           {
             mimetype: Mimetype.jpeg || Mimetype.png,
-            contextInfo: { mentionedJid: [personsending] },
+            contextInfo: { mentionedJid: [Sender] },
             caption: `⦿ᴘᴏᴡᴇʀᴇᴅ ʙʏ 
 *👓𝓜𝓮𝓮6™* ▽ 𝙒𝙝𝙖𝙩𝙨𝙖𝙥𝙥 𝙐𝙨𝙚𝙧𝘽𝙤𝙩
   
