@@ -10,7 +10,7 @@ const ᴍᴇᴇgit = require("simple-git")();
 module.exports = {
   name: `disappear`,
   commandType: "Admin🐙Groups",
-  description: `Toggle disappearing messages by using command ${ꜱɪɢɴ.Mee6IX}dissapear* .`,
+  description: `Toggle disappearing messages by using command ${ᴋᴇɪ}dissapear* .`,
   async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg) {
     const ᴍᴇᴇgit = require("simple-git")();
     await ᴍᴇᴇgit.fetch();

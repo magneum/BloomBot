@@ -12,10 +12,9 @@ module.exports = {
   name: `setwelcome`,
   commandType: "Admin🐙Groups",
   description: `New members of a group chat will be welcomed with a message. 
-It can be an image, video, gif with caption or just a text message.
-Use this command to either set, update or delete the existing message.
-The setwelcome option can be disabled but saved using the   *${ꜱɪɢɴ.Mee6IX}setwelcome  off*  command. 
-In order to delete the existing message, use  *${ꜱɪɢɴ.Mee6IX}setwelcome  delete* .
+*${ᴋᴇɪ}setwelcome <message>
+*${ᴋᴇɪ}setwelcome*  <off>  
+*${ᴋᴇɪ}setwelcome*  <delete>
 Do note, the setwelcome option is still enabled after you use the delete option.`,
   async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg) {
     const ᴍᴇᴇgit = require("simple-git")();

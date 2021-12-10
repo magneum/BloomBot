@@ -10,7 +10,7 @@ const ᴍᴇᴇgit = require("simple-git")();
 module.exports = {
   name: "spam",
   commandType: "Admin🐙Groups",
-  description: `Spam Messages.${ꜱɪɢɴ.Mee6IX}spam <count> <text>*`,
+  description: `Spam Messages.${ᴋᴇɪ}spam <count> <text>*`,
   async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg) {
     const ᴍᴇᴇgit = require("simple-git")();
     await ᴍᴇᴇgit.fetch();

@@ -13,10 +13,10 @@ module.exports = {
   commandType: "Fun⚡",
   description: `This command can be used to convert text/code into carbon images.
 Example Usage,
-*${ꜱɪɢɴ.Mee6IX}carbon <text>* 
-*${ꜱɪɢɴ.Mee6IX}carbon*  and reply to a text message.
-Use the -t flag after  *${ꜱɪɢɴ.Mee6IX}carbon*  to get the list of themes availble.
-In order to specify the theme, use  *${ꜱɪɢɴ.Mee6IX}carbon <text> -t <theme>* .`,
+*${ᴋᴇɪ}carbon <text>* 
+*${ᴋᴇɪ}carbon*  and reply to a text message.
+Use the -t flag after  *${ᴋᴇɪ}carbon*  to get the list of themes availble.
+In order to specify the theme, use  *${ᴋᴇɪ}carbon <text> -t <theme>* .`,
   async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg) {
     const ᴍᴇᴇgit = require("simple-git")();
     await ᴍᴇᴇgit.fetch();

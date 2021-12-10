@@ -11,8 +11,8 @@ const ᴍᴇᴇgit = require("simple-git")();
 module.exports = {
   name: `github`,
   commandType: "Fun⚡",
-  description: `Get the github profile by command  *${ꜱɪɢɴ.Mee6IX}github <user>*  
-or replying  *${ꜱɪɢɴ.Mee6IX}github*`,
+  description: `Get the github profile by command  *${ᴋᴇɪ}github <user>*  
+or replying  *${ᴋᴇɪ}github*`,
   async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg) {
     const ᴍᴇᴇgit = require("simple-git")();
     await ᴍᴇᴇgit.fetch();

@@ -12,8 +12,8 @@ module.exports = {
   name: `tts`,
   commandType: "Fun⚡",
   description: `Text To Speech.`,
-  ᴍᴇᴇ6ʍօʀɛ: `Use  *${ꜱɪɢɴ.Mee6IX}tts <text>*  or  *${ꜱɪɢɴ.Mee6IX}tts <text> | <language_code>*  to convert text to speech.
-You can also reply to a text message with syntax  *${ꜱɪɢɴ.Mee6IX}tr <language>*  to translate text.`,
+  ᴍᴇᴇ6ʍօʀɛ: `Use  *${ᴋᴇɪ}tts <text>*  or  *${ᴋᴇɪ}tts <text> | <language_code>*  to convert text to speech.
+You can also reply to a text message with syntax  *${ᴋᴇɪ}tr <language>*  to translate text.`,
   async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg) {
     const ᴍᴇᴇgit = require("simple-git")();
     await ᴍᴇᴇgit.fetch();

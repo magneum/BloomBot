@@ -13,7 +13,7 @@ module.exports = {
   description: `Mute non-admin members of a group. 
 You can even specify the duration using s, m or h.
 For example:
-*${ꜱɪɢɴ.Mee6IX}mute 15 m*
+*${ᴋᴇɪ}mute 15 m*
 will change chat permissions to admin-only for 15 minutes.`,
   async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg) {
     const ᴍᴇᴇgit = require("simple-git")();

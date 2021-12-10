@@ -11,7 +11,7 @@ const ᴍᴇᴇgit = require("simple-git")();
 module.exports = {
   name: `ocr`,
   commandType: "Fun⚡",
-  description: `Use this command to obtain text from an image by  *${ꜱɪɢɴ.Mee6IX}space*  command.`,
+  description: `Use this command to obtain text from an image by  *${ᴋᴇɪ}space*  command.`,
   async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg) {
     const ᴍᴇᴇgit = require("simple-git")();
     await ᴍᴇᴇgit.fetch();

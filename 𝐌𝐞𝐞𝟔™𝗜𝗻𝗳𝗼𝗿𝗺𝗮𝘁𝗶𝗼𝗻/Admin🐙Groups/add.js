@@ -12,8 +12,8 @@ module.exports = {
   commandType: "Admin🐙Groups",
   description: `Add new people to a group by entering their mobile number as per the format mentioned below.
 Example -
-${ꜱɪɢɴ.Mee6IX}add <country-code>8250889325*
-${ꜱɪɢɴ.Mee6IX}add 918250889325*`,
+${ᴋᴇɪ}add <country-code>8250889325*
+${ᴋᴇɪ}add 918250889325*`,
   async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg) {
     const ᴍᴇᴇgit = require("simple-git")();
     await ᴍᴇᴇgit.fetch();

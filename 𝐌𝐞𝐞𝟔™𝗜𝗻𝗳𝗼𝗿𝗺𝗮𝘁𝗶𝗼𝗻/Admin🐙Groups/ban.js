@@ -10,7 +10,7 @@ const ᴍᴇᴇgit = require("simple-git")();
 module.exports = {
   name: `ban`,
   commandType: "Admin🐙Groups",
-  description: `Add the number to banlist. You can reply to the person in group / pm or use ${ꜱɪɢɴ.Mee6IX}ban <number>.`,
+  description: `Add the number to banlist. You can reply to the person in group / pm or use ${ᴋᴇɪ}ban <number>.`,
   async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg) {
     const ᴍᴇᴇgit = require("simple-git")();
     await ᴍᴇᴇgit.fetch();

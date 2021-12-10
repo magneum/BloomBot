@@ -14,7 +14,7 @@ module.exports = {
   name: `tagall`,
   commandType: "Admin🐙Groups",
   description: `command to tag evryone in a group.`,
-  ᴍᴇᴇ6ʍօʀɛ: `Use this command to tag everyone in the group by either replying to a message or simply using  *${ꜱɪɢɴ.Mee6IX}tagall*  command.`,
+  ᴍᴇᴇ6ʍօʀɛ: `Use this command to tag everyone in the group by either replying to a message or simply using  *${ᴋᴇɪ}tagall*  command.`,
   async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg) {
     const ᴍᴇᴇgit = require("simple-git")();
     await ᴍᴇᴇgit.fetch();

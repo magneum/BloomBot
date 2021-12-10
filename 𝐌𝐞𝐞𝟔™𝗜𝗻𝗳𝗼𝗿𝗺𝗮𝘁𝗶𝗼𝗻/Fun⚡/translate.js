@@ -12,8 +12,8 @@ module.exports = {
   name: `tr`,
   commandType: "Fun⚡",
   description: `Language Translator`,
-  ᴍᴇᴇ6ʍօʀɛ: `Use  *${ꜱɪɢɴ.Mee6IX}tr <text> = <language>*  to translate text to the specified language. 
-You can also reply to a text message with syntax  *${ꜱɪɢɴ.Mee6IX}tr <language>*  to translate text.
+  ᴍᴇᴇ6ʍօʀɛ: `Use  *${ᴋᴇɪ}tr <text> = <language>*  to translate text to the specified language. 
+You can also reply to a text message with syntax  *${ᴋᴇɪ}tr <language>*  to translate text.
 If you do not specify a language, it defaults to English.`,
   async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg) {
     const ᴍᴇᴇgit = require("simple-git")();

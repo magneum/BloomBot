@@ -12,9 +12,10 @@ module.exports = {
   name: `setgoodbye`,
   commandType: "Admin🐙Groups",
   description: `A setgoodbye message will be sent when any member leaves the group. It can be an image, video, gif with caption or just a text message.
-Use this command to either set, update or delete the existing message.
-The setgoodbye option can be disabled but saved using the  *${ꜱɪɢɴ.Mee6IX}setgoodbye  off*  command. 
-In order to delete the existing message, use  *${ꜱɪɢɴ.Mee6IX}setgoodbye  delete*.
+
+*${ᴋᴇɪ}setgoodbye <message>
+*${ᴋᴇɪ}setgoodbye*  <off>
+*${ᴋᴇɪ}setgoodbye*  <delete>
 Do note, the setgoodbye option is still enabled after you use the delete option.`,
   async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg) {
     const ᴍᴇᴇgit = require("simple-git")();

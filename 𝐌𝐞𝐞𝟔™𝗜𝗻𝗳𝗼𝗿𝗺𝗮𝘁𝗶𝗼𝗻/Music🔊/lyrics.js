@@ -11,7 +11,7 @@ const ᴍᴇᴇgit = require("simple-git")();
 module.exports = {
   name: `lyrics`,
   commandType: "Music🔊",
-  description: `Use this command to find the lyrics of a song by using  *${ꜱɪɢɴ.Mee6IX}lyrics*  command.`,
+  description: `Use this command to find the lyrics of a song by using  *${ᴋᴇɪ}lyrics*  command.`,
   async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg) {
     const ᴍᴇᴇgit = require("simple-git")();
     await ᴍᴇᴇgit.fetch();

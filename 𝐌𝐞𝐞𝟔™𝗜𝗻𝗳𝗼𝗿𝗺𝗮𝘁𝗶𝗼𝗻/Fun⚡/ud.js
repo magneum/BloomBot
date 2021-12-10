@@ -12,7 +12,7 @@ module.exports = {
   name: `ud`,
   commandType: "Fun⚡",
   description: `Urban Dictionary`,
-  ᴍᴇᴇ6ʍօʀɛ: `Use this command to find the meaning of a word in Urban Dictionary. Enter  *${ꜱɪɢɴ.Mee6IX}ud*  command.`,
+  ᴍᴇᴇ6ʍօʀɛ: `Use this command to find the meaning of a word in Urban Dictionary. Enter  *${ᴋᴇɪ}ud*  command.`,
   async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg) {
     const ᴍᴇᴇgit = require("simple-git")();
     await ᴍᴇᴇgit.fetch();
