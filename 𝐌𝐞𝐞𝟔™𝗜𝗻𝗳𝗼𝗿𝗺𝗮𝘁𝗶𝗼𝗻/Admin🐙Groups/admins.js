@@ -33,61 +33,46 @@ module.exports = {
     } else {
       console.log("No commits to pull");
     }
-    if (ᴍᴇᴇ6.chatId === "120363025343298860@g.us") {
-      console.log("Dev-only-Mode-Allowed!");
-      //       await ʍɛɛℓιєηт
-      //         .sendMessage(
-      //           ᴍᴇᴇ6.chatId,
-      //           `⬡••••••••⬡    *⦿𝐌𝐞𝐞𝟔™⦿*    ⬡••••••••⬡
-
-      // ᴊᴏɪɴ ꜱᴘᴀᴍ ɢʀᴏᴜᴘ ᴛᴏ ᴜꜱᴇ ᴀɴʏ/ᴀʟʟ ᴍᴇᴇ6 ᴄᴏᴍᴍᴀɴᴅꜱ!
-      // シ︎𝐒𝐩𝐚𝐦 𝐆𝐫𝐨𝐮𝐩🛸https://chat.whatsapp.com/GDNPVuH3eMq72UOUHavZxH`,
-      //           `conversation`
-      //         )
-      //         .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+    if (!ᴍᴇᴇ6.isGroup) {
+      ʍɛɛℓιєηт
+        .sendMessage(
+          ᴍᴇᴇ6.chatId,
+          `*${ᴋᴇɪ}admins*  command is only applicable for group chats.`,
+          MessageType.text
+        )
+        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
       return;
-    } else {
-      if (!ᴍᴇᴇ6.isGroup) {
-        ʍɛɛℓιєηт
-          .sendMessage(
-            ᴍᴇᴇ6.chatId,
-            `*${ᴋᴇɪ}admins*  command is only applicable for group chats.`,
-            MessageType.text
-          )
-          .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
-        return;
-      }
+    }
 
-      var message = ``;
-      for (let admin of ᴍᴇᴇ6.groupAdmins) {
-        let number = admin.split(`@`)[0];
-        message += `@${number} `;
-      }
+    var message = ``;
+    for (let admin of ᴍᴇᴇ6.groupAdmins) {
+      let number = admin.split(`@`)[0];
+      message += `@${number} `;
+    }
 
-      if (!ᴍᴇᴇ6.isReply) {
-        ʍɛɛℓιєηт
-          .sendMessage(ᴍᴇᴇ6.chatId, message, MessageType.text, {
-            contextInfo: {
-              mentionedJid: ᴍᴇᴇ6.groupAdmins,
-            },
-          })
-          .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
-        return;
-      }
-
+    if (!ᴍᴇᴇ6.isReply) {
       ʍɛɛℓιєηт
         .sendMessage(ᴍᴇᴇ6.chatId, message, MessageType.text, {
           contextInfo: {
-            stanzaId: ᴍᴇᴇ6.replyMessageId,
-            participant: ᴍᴇᴇ6.replyParticipant,
-            quotedMessage: {
-              conversation: ᴍᴇᴇ6.replyMessage,
-            },
             mentionedJid: ᴍᴇᴇ6.groupAdmins,
           },
         })
         .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+      return;
     }
+
+    ʍɛɛℓιєηт
+      .sendMessage(ᴍᴇᴇ6.chatId, message, MessageType.text, {
+        contextInfo: {
+          stanzaId: ᴍᴇᴇ6.replyMessageId,
+          participant: ᴍᴇᴇ6.replyParticipant,
+          quotedMessage: {
+            conversation: ᴍᴇᴇ6.replyMessage,
+          },
+          mentionedJid: ᴍᴇᴇ6.groupAdmins,
+        },
+      })
+      .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
   },
 };
 // ===============================================================================

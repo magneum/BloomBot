@@ -33,175 +33,104 @@ module.exports = {
     } else {
       console.log("No commits to pull");
     }
-    if (ᴍᴇᴇ6.chatId === "120363025343298860@g.us") {
-      console.log("Dev-only-Mode-Allowed!");
-      //       await ʍɛɛℓιєηт
-      //         .sendMessage(
-      //           ᴍᴇᴇ6.chatId,
-      //           `⬡••••••••⬡    *⦿𝐌𝐞𝐞𝟔™⦿*    ⬡••••••••⬡
-
-      // ᴊᴏɪɴ ꜱᴘᴀᴍ ɢʀᴏᴜᴘ ᴛᴏ ᴜꜱᴇ ᴀɴʏ/ᴀʟʟ ᴍᴇᴇ6 ᴄᴏᴍᴍᴀɴᴅꜱ!
-      // シ︎𝐒𝐩𝐚𝐦 𝐆𝐫𝐨𝐮𝐩🛸https://chat.whatsapp.com/GDNPVuH3eMq72UOUHavZxH`,
-      //           `conversation`
-      //         )
-      //         .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
-      return;
-    } else {
-      if (!ᴍᴇᴇ6.isSenderGroupAdmin) {
-        return await ʍɛɛℓιєηт
-          .sendMessage(
-            ᴍᴇᴇ6.chatId,
-            {
-              url: ꜱɪɢɴ.ERROR,
-            },
-            MessageType.image,
-            {
-              mimetype: Mimetype.png,
-              caption: `
+    if (!ᴍᴇᴇ6.isSenderGroupAdmin) {
+      return await ʍɛɛℓιєηт
+        .sendMessage(
+          ᴍᴇᴇ6.chatId,
+          {
+            url: ꜱɪɢɴ.ERROR,
+          },
+          MessageType.image,
+          {
+            mimetype: Mimetype.png,
+            caption: `
 ⚠️𝗘𝗿𝗿𝗼𝗿: 
 ➛ ʜᴇʏ ᴛʜᴇʀᴇ ɴɪʙʙᴀ!💩
 
 ʏᴏᴜ ᴅᴏɴ'ᴛ ꜱᴇᴇᴍ ᴛᴏ ʙᴇ ᴀᴅᴍɪɴ..
 ʏᴏᴜ ᴄᴀɴɴᴏᴛ ᴜꜱᴇ ᴄᴏᴍᴍᴀɴᴅ ʜᴇʀᴇ..
 `,
-            }
-          )
-          .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
-      }
-      if (!ᴍᴇᴇ6.isGroup) {
+          }
+        )
+        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+    }
+    if (!ᴍᴇᴇ6.isGroup) {
+      ʍɛɛℓιєηт
+        .sendMessage(
+          ᴍᴇᴇ6.chatId,
+          `command only applicable in a group chat.`,
+          MessageType.text
+        )
+        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+      return;
+    }
+    let owner = ᴍᴇᴇ6.chatId.split(`-`)[0];
+    if (ᴍᴇᴇ6.isReply) {
+      let PersonToRemove =
+        chat.message.extendedTextMessage.contextInfo.participant;
+      if (PersonToRemove === owner + `@s.whatsapp.net`) {
         ʍɛɛℓιєηт
           .sendMessage(
             ᴍᴇᴇ6.chatId,
-            `command only applicable in a group chat.`,
+            `*` + owner + ` is the owner of the group*`,
             MessageType.text
           )
-          .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+          .catch((cᴇʀʀᴏʀ) => {
+            ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+          });
         return;
       }
-      let owner = ᴍᴇᴇ6.chatId.split(`-`)[0];
-      if (ᴍᴇᴇ6.isReply) {
-        let PersonToRemove =
-          chat.message.extendedTextMessage.contextInfo.participant;
-        if (PersonToRemove === owner + `@s.whatsapp.net`) {
-          ʍɛɛℓιєηт
-            .sendMessage(
-              ᴍᴇᴇ6.chatId,
-              `*` + owner + ` is the owner of the group*`,
-              MessageType.text
-            )
-            .catch((cᴇʀʀᴏʀ) => {
-              ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
-            });
-          return;
-        }
-        if (PersonToRemove === ᴍᴇᴇ6.owner) {
-          ʍɛɛℓιєηт
-            .sendMessage(
-              ᴍᴇᴇ6.chatId,
-              `Why man, why?! Why would you use my powers to kick myself from the group?!🥺\n*Request Rejected.* 😤`,
-              MessageType.text
-            )
-            .catch((cᴇʀʀᴏʀ) => {
-              ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
-            });
-          return;
-        }
-        var isMember = async (chatId, groupMembers) => {
-          var isMember = false;
-          if (!(chatId === undefined)) {
-            for (const index in groupMembers) {
-              if (chatId == groupMembers[index].jid.split(`@`)[0]) {
-                isMember = true;
-              }
-            }
-            return isMember;
-          } else {
-            return isMember;
-          }
-        };
-        if (!isMember) {
-          ʍɛɛℓιєηт
-            .sendMessage(
-              ᴍᴇᴇ6.chatId,
-              `*person is not in the group*`,
-              MessageType.text
-            )
-            .catch((cᴇʀʀᴏʀ) => {
-              ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
-            });
-        }
-        try {
-          if (PersonToRemove) {
-            ʍɛɛℓιєηт
-              .groupRemove(ᴍᴇᴇ6.chatId, [PersonToRemove])
-              .catch((cᴇʀʀᴏʀ) => {
-                ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
-              });
-            return;
-          }
-        } catch (cᴇʀʀᴏʀ) {
-          throw cᴇʀʀᴏʀ;
-        }
-        return;
-      }
-      if (!arg[0]) {
+      if (PersonToRemove === ᴍᴇᴇ6.owner) {
         ʍɛɛℓιєηт
           .sendMessage(
             ᴍᴇᴇ6.chatId,
-            `Reply to the person you want to kick or tag them.\n\nFor instance,  *${ᴋᴇɪ}kick @<person-to-kick>*  or reply using  *${ᴋᴇɪ}kick*${ᴋᴇɪ}`,
+            `Why man, why?! Why would you use my powers to kick myself from the group?!🥺\n*Request Rejected.* 😤`,
             MessageType.text
           )
-          .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+          .catch((cᴇʀʀᴏʀ) => {
+            ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+          });
         return;
       }
-      if (arg[0][0] == `@`) {
-        const number = arg[0].substring(1);
-        if (isNaN(number)) {
-          ʍɛɛℓιєηт
-            .sendMessage(
-              ᴍᴇᴇ6.chatId,
-              `Reply to the person you want to kick or tag them.\n\nFor instance,  *${ᴋᴇɪ}kick @<person-to-kick>*  or reply using  *${ᴋᴇɪ}kick*${ᴋᴇɪ}`,
-              MessageType.text
-            )
-            .catch((cᴇʀʀᴏʀ) => {
-              ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
-            });
-          return;
-        }
-
-        if (number + `@s.whatsapp.net` === ᴍᴇᴇ6.owner) {
-          ʍɛɛℓιєηт
-            .sendMessage(
-              ᴍᴇᴇ6.chatId,
-              `Why man, why?! Why would you use my powers to kick myself from the group?!🥺\n*Request Rejected.* 😤`,
-              MessageType.text
-            )
-            .catch((cᴇʀʀᴏʀ) => {
-              ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
-            });
-          return;
-        }
-
-        if (!(number === owner)) {
-          ʍɛɛℓιєηт
-            .groupRemove(ᴍᴇᴇ6.chatId, [number + `@s.whatsapp.net`])
-            .catch((cᴇʀʀᴏʀ) => {
-              ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
-            });
-          return;
+      var isMember = async (chatId, groupMembers) => {
+        var isMember = false;
+        if (!(chatId === undefined)) {
+          for (const index in groupMembers) {
+            if (chatId == groupMembers[index].jid.split(`@`)[0]) {
+              isMember = true;
+            }
+          }
+          return isMember;
         } else {
+          return isMember;
+        }
+      };
+      if (!isMember) {
+        ʍɛɛℓιєηт
+          .sendMessage(
+            ᴍᴇᴇ6.chatId,
+            `*person is not in the group*`,
+            MessageType.text
+          )
+          .catch((cᴇʀʀᴏʀ) => {
+            ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+          });
+      }
+      try {
+        if (PersonToRemove) {
           ʍɛɛℓιєηт
-            .sendMessage(
-              ᴍᴇᴇ6.chatId,
-              `*` + owner + ` is the owner of the group*`,
-              MessageType.text
-            )
+            .groupRemove(ᴍᴇᴇ6.chatId, [PersonToRemove])
             .catch((cᴇʀʀᴏʀ) => {
               ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
             });
           return;
         }
+      } catch (cᴇʀʀᴏʀ) {
+        throw cᴇʀʀᴏʀ;
       }
+      return;
+    }
+    if (!arg[0]) {
       ʍɛɛℓιєηт
         .sendMessage(
           ᴍᴇᴇ6.chatId,
@@ -209,7 +138,63 @@ module.exports = {
           MessageType.text
         )
         .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+      return;
     }
+    if (arg[0][0] == `@`) {
+      const number = arg[0].substring(1);
+      if (isNaN(number)) {
+        ʍɛɛℓιєηт
+          .sendMessage(
+            ᴍᴇᴇ6.chatId,
+            `Reply to the person you want to kick or tag them.\n\nFor instance,  *${ᴋᴇɪ}kick @<person-to-kick>*  or reply using  *${ᴋᴇɪ}kick*${ᴋᴇɪ}`,
+            MessageType.text
+          )
+          .catch((cᴇʀʀᴏʀ) => {
+            ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+          });
+        return;
+      }
+
+      if (number + `@s.whatsapp.net` === ᴍᴇᴇ6.owner) {
+        ʍɛɛℓιєηт
+          .sendMessage(
+            ᴍᴇᴇ6.chatId,
+            `Why man, why?! Why would you use my powers to kick myself from the group?!🥺\n*Request Rejected.* 😤`,
+            MessageType.text
+          )
+          .catch((cᴇʀʀᴏʀ) => {
+            ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+          });
+        return;
+      }
+
+      if (!(number === owner)) {
+        ʍɛɛℓιєηт
+          .groupRemove(ᴍᴇᴇ6.chatId, [number + `@s.whatsapp.net`])
+          .catch((cᴇʀʀᴏʀ) => {
+            ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+          });
+        return;
+      } else {
+        ʍɛɛℓιєηт
+          .sendMessage(
+            ᴍᴇᴇ6.chatId,
+            `*` + owner + ` is the owner of the group*`,
+            MessageType.text
+          )
+          .catch((cᴇʀʀᴏʀ) => {
+            ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+          });
+        return;
+      }
+    }
+    ʍɛɛℓιєηт
+      .sendMessage(
+        ᴍᴇᴇ6.chatId,
+        `Reply to the person you want to kick or tag them.\n\nFor instance,  *${ᴋᴇɪ}kick @<person-to-kick>*  or reply using  *${ᴋᴇɪ}kick*${ᴋᴇɪ}`,
+        MessageType.text
+      )
+      .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
   },
 };
 // ===============================================================================

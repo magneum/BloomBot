@@ -56,7 +56,7 @@ module.exports = {
   シ︎𝐒𝐩𝐚𝐦 𝐆𝐫𝐨𝐮𝐩🛸https://chat.whatsapp.com/GDNPVuH3eMq72UOUHavZxH
   
   
-  ⬣ *🛸➾➾➾➾  𝙎𝙮𝙨𝙩𝙚𝙢*
+  ⬣ *🛸➾  𝙎𝙮𝙨𝙩𝙚𝙢*
   • *${ᴋᴇɪ}help*  ɢᴇᴛ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅ ʟɪꜱᴛ ᴀɴᴅ ɪɴꜰᴏ ᴏɴ ᴍᴏᴅᴜʟᴇꜱ
   • *${ᴋᴇɪ}ping*  ᴄʜᴇᴄᴋ ᴍᴇᴇ6 ʀᴇꜱᴘᴏɴꜱᴇ ᴛɪᴍᴇ
   • *${ᴋᴇɪ}uptime*  ᴄʜᴇᴄᴋ ᴍᴇᴇ6 ᴜᴘᴛɪᴍᴇ
@@ -65,7 +65,7 @@ module.exports = {
   • *${ᴋᴇɪ}broadcast* ꜱᴇɴᴅ ʙʀᴏᴀᴅᴄᴀꜱᴛ ᴍᴇꜱꜱᴀɢᴇꜱ ᴛᴏ ᴀʟʟ ɢʀᴏᴜᴘꜱ/ᴅᴍꜱ ʏᴏᴜ ᴀʀᴇ ɪɴ
   
   
-  ⬣ *🤩➾➾➾➾  𝘼𝙣𝙞𝙢𝙚* 
+  ⬣ *🤩➾  𝘼𝙣𝙞𝙢𝙚* 
   • *${ᴋᴇɪ}anime*  ꜱᴇᴀʀᴄʜ ᴀɴɪᴍᴇ
   • *${ᴋᴇɪ}animewallpaper*  ᴅᴏᴡɴʟᴏᴀᴅ ʜᴅ ᴀɴɪᴍᴇ-ᴡᴀʟʟᴘᴀᴘᴇʀꜱ
   • *${ᴋᴇɪ}cuddle*  ɢᴇᴛ ᴀɴ ᴀɴɪᴍᴇ-ᴄᴜᴅᴅʟᴇ ꜱᴛɪᴄᴋᴇʀ
@@ -86,13 +86,13 @@ module.exports = {
   • *${ᴋᴇɪ}sad*  ɢᴇᴛ ᴀɴ ᴀɴɪᴍᴇ-ꜱᴀᴅ ɪᴍᴀɢᴇ
   • *${ᴋᴇɪ}thinking*  ɢᴇᴛ ᴀɴ ᴀɴɪᴍᴇ-ᴛʜɪɴᴋɪɴɢ ɪᴍᴀɢᴇ
   
-  ⬣ *🎣➾➾➾➾  𝙈𝙪𝙨𝙞𝙘*
+  ⬣ *🎣➾  𝙈𝙪𝙨𝙞𝙘*
   • *${ᴋᴇɪ}lyrics*  ꜰɪɴᴅ ʟʏʀɪᴄꜱ ᴏꜰ ꜱᴏɴɢꜱ
   • *${ᴋᴇɪ}ytdl*  ᴅᴏᴡɴʟᴏᴀᴅ ꜱᴏɴɢꜱ ᴅɪʀᴇᴄᴛ ꜰʀᴏᴍ ʏᴏᴜᴛᴜʙᴇ
   • *${ᴋᴇɪ}yts*  ɢᴇᴛ ʀᴇᴄᴏᴍᴍᴇɴᴅᴀᴛɪᴏɴꜱ ᴀɴᴅ ʟɪɴᴋꜱ ꜰʀᴏᴍ ʏᴏᴜᴛᴜʙᴇ
   
   
-  ⬣ *👑➾➾➾➾  𝙂𝙧𝙤𝙪𝙥𝙨*
+  ⬣ *👑➾  𝙂𝙧𝙤𝙪𝙥𝙨*
   • *${ᴋᴇɪ}promote*  𝘗𝘳𝘰𝘮𝘰𝘵𝘦 𝘢 𝘮𝘦𝘮𝘣𝘦𝘳 𝘵𝘰 𝘢𝘥𝘮𝘪𝘯
   • *${ᴋᴇɪ}spam*  Spam Messages ᴀ ɢʀᴏᴜᴘ
   • *${ᴋᴇɪ}ban*  ᴍᴏᴅᴜʟᴇ ᴛᴏ Add the number to banlist.
@@ -109,7 +109,7 @@ module.exports = {
   • *${ᴋᴇɪ}setwelcome*  ᴡᴇʟᴄᴏᴍᴇ ɴᴇᴡ ᴍᴇᴍʙᴇʀꜱ ᴛᴏ ᴛʜᴇ ɢʀᴏᴜᴘ ᴡɪᴛʜ ᴀ ᴄᴜꜱᴛᴏᴍ ᴍᴇꜱꜱᴀɢᴇ
   
   
-  ⬣ *🧀➾➾➾➾  𝙁𝙪𝙣𝙨*
+  ⬣ *🧀➾  𝙁𝙪𝙣𝙨*
   • *${ᴋᴇɪ}google*  ꜱᴇᴀʀᴄʜ ᴀɴʏᴛʜɪɴɢ ᴏɴ ɢᴏᴏɢʟᴇ
   • *${ᴋᴇɪ}carbon*  ᴄᴏɴᴠᴇʀᴛ ᴛᴇxᴛ ᴏʀ ᴄᴏᴅᴇ ᴛᴏ ᴀ ᴄᴀʀʙᴏɴ ɪᴍᴀɢᴇ
   • *${ᴋᴇɪ}pfgroupdp*  ɢᴇᴛ ᴅɪꜱᴘʟᴀʏ ᴘɪᴄᴛᴜʀᴇ ᴏꜰ ᴀ ɢʀᴏᴜᴘ
@@ -124,7 +124,7 @@ module.exports = {
   • *${ᴋᴇɪ}ud*  ᴜʀʙᴀɴ ᴅɪᴄᴛɪᴏɴᴀʀʏ ꜰᴏʀ ᴄʀᴀᴢʏ ᴘᴇᴇᴘꜱ
   
   
-  ⬣ *🔞➾➾➾➾  𝙉𝙨𝙛𝙬*
+  ⬣ *🔞➾  𝘼𝙙𝙪𝙡𝙩 𝙉𝙎𝙁𝙒 18+ (𝘼𝙙𝙢𝙞𝙣 𝙊𝙣𝙡𝙮)*
   • *${ᴋᴇɪ}ass*  ɪ ᴋɴᴏᴡ ʏᴏᴜ ʟɪᴋᴇ ᴀɴɪᴍᴇ ᴀꜱꜱ~
   • *${ᴋᴇɪ}bdsm*  ɪꜰ ʏᴏᴜ ᴅᴏɴ'ᴛ ᴋɴᴏᴡ ᴡʜᴀᴛ ɪᴛ ɪꜱ, ꜱᴇᴀʀᴄʜ ɪᴛ ᴜᴘ
   • *${ᴋᴇɪ}blowjob*  ʙᴀꜱɪᴄᴀʟʟʏ ᴀɴ ɪᴍᴀɢᴇ ᴏꜰ ᴀ ɢɪʀʟ ꜱᴜᴄᴋɪɴɢ ᴏɴ ᴀ ꜱʜᴀʀᴘ ʙʟᴀᴅᴇ!
@@ -208,21 +208,18 @@ module.exports = {
       var ᴍᴇᴇ6ʍօ = "⤥ 💡𝐂𝐨𝐦𝐦𝐚𝐧𝐝\n";
       var command = Mee6Sitrep.get(arg[0]);
       if (command) {
-        ᴍᴇᴇ6ʍօ += `⤤ ${
-          (ᴋᴇɪ, command.name === undefined ? "Null" : command.name)
-        }
+        ᴍᴇᴇ6ʍօ += `⤤ ${(ᴋᴇɪ, command.name === undefined ? "Null" : command.name)
+          }
   
   ⤥ 🧀𝐂𝐚𝐭𝐞𝐠𝐨𝐫𝐲 
-  ⤤ ${
-    (command.commandType,
-    command.commandType === undefined ? "Null" : command.commandType)
-  }
+  ⤤ ${(command.commandType,
+            command.commandType === undefined ? "Null" : command.commandType)
+          }
   
   ⤥ 🖊️𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧 
-  ⤤ ${
-    (command.description,
-    command.description === undefined ? "Null" : command.description)
-  }`;
+  ⤤ ${(command.description,
+            command.description === undefined ? "Null" : command.description)
+          }`;
         return ʍɛɛℓιєηт
           .sendMessage(
             ᴍᴇᴇ6.chatId,

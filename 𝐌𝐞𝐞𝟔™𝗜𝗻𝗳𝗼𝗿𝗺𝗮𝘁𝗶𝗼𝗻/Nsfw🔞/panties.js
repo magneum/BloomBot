@@ -13,13 +13,13 @@ module.exports = {
   commandType: "Nsfw🔞",
   description: `ɪ ᴍᴇᴀɴ... ᴊᴜꜱᴛ ᴡʜʏ? ʏᴏᴜ ʟɪᴋᴇ ᴜɴᴅᴇʀᴡᴇᴀʀ?`,
   async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg) {
+    var str = ᴍᴇᴇ6.sender;
+    var newString = str.substring(0, str.length - 15);
     const ᴍᴇᴇgit = require("simple-git")();
     await ᴍᴇᴇgit.fetch();
     var ɴᴇᴡᴍᴇᴇ6 = await ᴍᴇᴇgit.log(["KrakinzLab..origin/KrakinzLab"]);
     if (ɴᴇᴡᴍᴇᴇ6.total != 0) {
       console.log(ɴᴇᴡᴍᴇᴇ6);
-      var str = ᴍᴇᴇ6.sender;
-      var newString = str.substring(0, str.length - 15);
       await ʍɛɛℓιєηт
         .sendMessage(
           ᴍᴇᴇ6.chatId,
@@ -44,23 +44,20 @@ module.exports = {
           MessageType.image,
           {
             mimetype: Mimetype.jpeg,
-            caption: `_ᴘᴏᴡᴇʀᴇᴅ ʙʏ_\n*⚡𝐌𝐞𝐞𝟔™*`,
+            contextInfo: {
+              mentionedJid: [ᴍᴇᴇ6.sender],
+            },
+            caption: `*⦿ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝐌𝐞𝐞𝟔™*
+
+Nsfw Topic: *Panties*
+Asked By? @${newString} (admin)`,
           }
         )
         .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
     }
     if (ᴍᴇᴇ6.chatId === "120363025343298860@g.us") {
       console.log("Dev-only-Mode-Allowed!");
-      //       await ʍɛɛℓιєηт
-      //         .sendMessage(
-      //           ᴍᴇᴇ6.chatId,
-      //           `⬡••••••••⬡    *⦿𝐌𝐞𝐞𝟔™⦿*    ⬡••••••••⬡
 
-      // ᴊᴏɪɴ ꜱᴘᴀᴍ ɢʀᴏᴜᴘ ᴛᴏ ᴜꜱᴇ ᴀɴʏ/ᴀʟʟ ᴍᴇᴇ6 ᴄᴏᴍᴍᴀɴᴅꜱ!
-      // シ︎𝐒𝐩𝐚𝐦 𝐆𝐫𝐨𝐮𝐩🛸https://chat.whatsapp.com/GDNPVuH3eMq72UOUHavZxH`,
-      //           `conversation`
-      //         )
-      //         .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
       return;
     } else {
       if (ᴍᴇᴇ6.isGroup && !ᴍᴇᴇ6.isSenderGroupAdmin) {
@@ -93,7 +90,13 @@ module.exports = {
             MessageType.image,
             {
               mimetype: Mimetype.jpeg,
-              caption: `_ᴘᴏᴡᴇʀᴇᴅ ʙʏ_\n*⚡𝐌𝐞𝐞𝟔™*`,
+              contextInfo: {
+                mentionedJid: [ᴍᴇᴇ6.sender],
+              },
+              caption: `*⦿ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝐌𝐞𝐞𝟔™*
+
+Nsfw Topic: *Panties*
+Asked By? @${newString} (admin)`,
             }
           )
           .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));

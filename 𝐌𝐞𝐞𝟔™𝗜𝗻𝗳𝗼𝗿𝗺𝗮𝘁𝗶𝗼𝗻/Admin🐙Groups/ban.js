@@ -33,62 +33,28 @@ module.exports = {
     } else {
       console.log("No commits to pull");
     }
-    if (ᴍᴇᴇ6.chatId === "120363025343298860@g.us") {
-      console.log("Dev-only-Mode-Allowed!");
-      //       await ʍɛɛℓιєηт
-      //         .sendMessage(
-      //           ᴍᴇᴇ6.chatId,
-      //           `⬡••••••••⬡    *⦿𝐌𝐞𝐞𝟔™⦿*    ⬡••••••••⬡
-
-      // ᴊᴏɪɴ ꜱᴘᴀᴍ ɢʀᴏᴜᴘ ᴛᴏ ᴜꜱᴇ ᴀɴʏ/ᴀʟʟ ᴍᴇᴇ6 ᴄᴏᴍᴍᴀɴᴅꜱ!
-      // シ︎𝐒𝐩𝐚𝐦 𝐆𝐫𝐨𝐮𝐩🛸https://chat.whatsapp.com/GDNPVuH3eMq72UOUHavZxH`,
-      //           `conversation`
-      //         )
-      //         .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+    if (!ᴍᴇᴇ6.isReply && typeof arg[0] == `undefined`) {
+      ʍɛɛℓιєηт
+        .sendMessage(
+          ᴍᴇᴇ6.chatId,
+          `Tag a message or enter a number to proceed.`,
+          MessageType.text
+        )
+        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
       return;
+    }
+    const reply = chat.message.extendedTextMessage;
+    var contact = ``;
+    if (!arg.length > 0) {
+      contact = reply.contextInfo.participant.split(`@`)[0];
     } else {
-      if (!ᴍᴇᴇ6.isReply && typeof arg[0] == `undefined`) {
-        ʍɛɛℓιєηт
-          .sendMessage(
-            ᴍᴇᴇ6.chatId,
-            `Tag a message or enter a number to proceed.`,
-            MessageType.text
-          )
-          .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
-        return;
-      }
-      const reply = chat.message.extendedTextMessage;
-      var contact = ``;
-      if (!arg.length > 0) {
-        contact = reply.contextInfo.participant.split(`@`)[0];
-      } else {
-        contact = async (arg, ʍɛɛℓιєηт, ᴍᴇᴇ6) => {
-          var JoinIDNum = ``;
-          var countryCode = ꜱɪɢɴ.COUNTRY_CODE;
-          if (isNaN(arg[0]) || arg[0][0] === `+`) {
-            if (arg[0][0] === `@` || arg[0][0] === `+`) {
-              JoinIDNum = arg[0].substring(1, arg[0].length + 1);
-            } else {
-              ʍɛɛℓιєηт
-                .sendMessage(
-                  ᴍᴇᴇ6.chatId,
-                  `*Enter valid contact number.* 
-Approved Syntax:
-1. XXXXXXXXXX
-2. Tag the person
-3. +(YYY)XXXXXXXXXX _(YY- Country Code, without zeros)_`,
-                  MessageType.text
-                )
-                .catch((cᴇʀʀᴏʀ) => {
-                  ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
-                });
-              return;
-            }
+      contact = async (arg, ʍɛɛℓιєηт, ᴍᴇᴇ6) => {
+        var JoinIDNum = ``;
+        var countryCode = ꜱɪɢɴ.COUNTRY_CODE;
+        if (isNaN(arg[0]) || arg[0][0] === `+`) {
+          if (arg[0][0] === `@` || arg[0][0] === `+`) {
+            JoinIDNum = arg[0].substring(1, arg[0].length + 1);
           } else {
-            JoinIDNum = arg[0];
-          }
-
-          if (JoinIDNum.length < 8 || JoinIDNum.length > 13) {
             ʍɛɛℓιєηт
               .sendMessage(
                 ᴍᴇᴇ6.chatId,
@@ -103,44 +69,63 @@ Approved Syntax:
                 ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
               });
             return;
-          } else if (JoinIDNum.length === 10) {
-            JoinIDNum = countryCode + JoinIDNum;
           }
-          var isOnWhatsApp = await ʍɛɛℓιєηт.isOnWhatsApp(JoinIDNum);
-          if (isOnWhatsApp === undefined) {
-            throw `NumberInvalid`;
-          }
-          return JoinIDNum;
-        };
-      }
+        } else {
+          JoinIDNum = arg[0];
+        }
 
-      if (contact === ᴍᴇᴇ6.owner.split(`@`)[0]) {
-        ʍɛɛℓιєηт
-          .sendMessage(ᴍᴇᴇ6.chatId, `Bot can not ban itself`, MessageType.text)
-          .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
-        return;
-      }
+        if (JoinIDNum.length < 8 || JoinIDNum.length > 13) {
+          ʍɛɛℓιєηт
+            .sendMessage(
+              ᴍᴇᴇ6.chatId,
+              `*Enter valid contact number.* 
+Approved Syntax:
+1. XXXXXXXXXX
+2. Tag the person
+3. +(YYY)XXXXXXXXXX _(YY- Country Code, without zeros)_`,
+              MessageType.text
+            )
+            .catch((cᴇʀʀᴏʀ) => {
+              ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+            });
+          return;
+        } else if (JoinIDNum.length === 10) {
+          JoinIDNum = countryCode + JoinIDNum;
+        }
+        var isOnWhatsApp = await ʍɛɛℓιєηт.isOnWhatsApp(JoinIDNum);
+        if (isOnWhatsApp === undefined) {
+          throw `NumberInvalid`;
+        }
+        return JoinIDNum;
+      };
+    }
 
-      if (contact === ``) {
-        ʍɛɛℓιєηт
-          .sendMessage(
-            ᴍᴇᴇ6.chatId,
-            `Tag a message or enter a number to proceed.`,
-            MessageType.text
-          )
-          .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
-        return;
-      }
-      var JID = contact + `@s.whatsapp.net`;
-      ʍɛɛℓιєηт.banUser(JID, `add`);
+    if (contact === ᴍᴇᴇ6.owner.split(`@`)[0]) {
+      ʍɛɛℓιєηт
+        .sendMessage(ᴍᴇᴇ6.chatId, `Bot can not ban itself`, MessageType.text)
+        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+      return;
+    }
+
+    if (contact === ``) {
       ʍɛɛℓιєηт
         .sendMessage(
           ᴍᴇᴇ6.chatId,
-          `*` + contact + ` baned successfully.*`,
+          `Tag a message or enter a number to proceed.`,
           MessageType.text
         )
         .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+      return;
     }
+    var JID = contact + `@s.whatsapp.net`;
+    ʍɛɛℓιєηт.banUser(JID, `add`);
+    ʍɛɛℓιєηт
+      .sendMessage(
+        ᴍᴇᴇ6.chatId,
+        `*` + contact + ` baned successfully.*`,
+        MessageType.text
+      )
+      .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
   },
 };
 // ===============================================================================

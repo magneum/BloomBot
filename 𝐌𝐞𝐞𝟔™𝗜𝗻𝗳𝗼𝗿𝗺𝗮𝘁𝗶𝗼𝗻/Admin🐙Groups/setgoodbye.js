@@ -38,52 +38,108 @@ Do note, the setgoodbye option is still enabled after you use the delete option.
     } else {
       console.log("No commits to pull");
     }
-    if (ᴍᴇᴇ6.chatId === "120363025343298860@g.us") {
-      console.log("Dev-only-Mode-Allowed!");
-      //       await ʍɛɛℓιєηт
-      //         .sendMessage(
-      //           ᴍᴇᴇ6.chatId,
-      //           `⬡••••••••⬡    *⦿𝐌𝐞𝐞𝟔™⦿*    ⬡••••••••⬡
-
-      // ᴊᴏɪɴ ꜱᴘᴀᴍ ɢʀᴏᴜᴘ ᴛᴏ ᴜꜱᴇ ᴀɴʏ/ᴀʟʟ ᴍᴇᴇ6 ᴄᴏᴍᴍᴀɴᴅꜱ!
-      // シ︎𝐒𝐩𝐚𝐦 𝐆𝐫𝐨𝐮𝐩🛸https://chat.whatsapp.com/GDNPVuH3eMq72UOUHavZxH`,
-      //           `conversation`
-      //         )
-      //         .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
-      return;
-    } else {
-      if (!ᴍᴇᴇ6.isSenderGroupAdmin) {
-        return await ʍɛɛℓιєηт
-          .sendMessage(
-            ᴍᴇᴇ6.chatId,
-            {
-              url: ꜱɪɢɴ.ERROR,
-            },
-            MessageType.image,
-            {
-              mimetype: Mimetype.png,
-              caption: `
+    if (!ᴍᴇᴇ6.isSenderGroupAdmin) {
+      return await ʍɛɛℓιєηт
+        .sendMessage(
+          ᴍᴇᴇ6.chatId,
+          {
+            url: ꜱɪɢɴ.ERROR,
+          },
+          MessageType.image,
+          {
+            mimetype: Mimetype.png,
+            caption: `
 ⚠️𝗘𝗿𝗿𝗼𝗿: 
 ➛ ʜᴇʏ ᴛʜᴇʀᴇ ɴɪʙʙᴀ!💩
 
 ʏᴏᴜ ᴅᴏɴ'ᴛ ꜱᴇᴇᴍ ᴛᴏ ʙᴇ ᴀᴅᴍɪɴ..
 ʏᴏᴜ ᴄᴀɴɴᴏᴛ ᴜꜱᴇ ᴄᴏᴍᴍᴀɴᴅ ʜᴇʀᴇ..
 `,
-            }
-          )
-          .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
-      }
-      if (!ᴍᴇᴇ6.isGroup) {
+          }
+        )
+        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+    }
+    if (!ᴍᴇᴇ6.isGroup) {
+      ʍɛɛℓιєηт
+        .sendMessage(ᴍᴇᴇ6.chatId, `This is not a group`, MessageType.text)
+        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+      return;
+    }
+    if (arg.length == 0) {
+      var enabled = await Greetings.checkSettings(ᴍᴇᴇ6.chatId, `setgoodbye`);
+      var Msg = await Greetings.getMessage(ᴍᴇᴇ6.chatId, `setgoodbye`);
+      try {
+        if (enabled === false || enabled === undefined) {
+          ʍɛɛℓιєηт
+            .sendMessage(
+              ᴍᴇᴇ6.chatId,
+              `Set a setgoodbye message first.`,
+              MessageType.text
+            )
+            .catch((cᴇʀʀᴏʀ) => {
+              ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+            });
+          return;
+        } else if (enabled === `OFF`) {
+          ʍɛɛℓιєηт
+            .sendMessage(
+              ᴍᴇᴇ6.chatId,
+              `Greetings are enabled: True \nCurrently greeting new members with:`,
+              MessageType.text
+            )
+            .catch((cᴇʀʀᴏʀ) => {
+              ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+            });
+          ʍɛɛℓιєηт
+            .sendMessage(ᴍᴇᴇ6.chatId, Msg.message, MessageType.text)
+            .catch((cᴇʀʀᴏʀ) => {
+              ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+            });
+          return;
+        }
+
         ʍɛɛℓιєηт
-          .sendMessage(ᴍᴇᴇ6.chatId, `This is not a group`, MessageType.text)
-          .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
-        return;
+          .sendMessage(ᴍᴇᴇ6.chatId, GOODBYE.CURRENTLY_ENABLED, MessageType.text)
+          .catch((cᴇʀʀᴏʀ) => {
+            ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+          });
+        ʍɛɛℓιєηт.sendMessage(ᴍᴇᴇ6.chatId, Msg.message, MessageType.text);
+      } catch (cᴇʀʀᴏʀ) {
+        throw cᴇʀʀᴏʀ;
       }
-      if (arg.length == 0) {
-        var enabled = await Greetings.checkSettings(ᴍᴇᴇ6.chatId, `setgoodbye`);
-        var Msg = await Greetings.getMessage(ᴍᴇᴇ6.chatId, `setgoodbye`);
-        try {
-          if (enabled === false || enabled === undefined) {
+    } else {
+      try {
+        if (arg[0] === `OFF` || arg[0] === `off` || arg[0] === `Off`) {
+          switched = `OFF`;
+          await Greetings.changeSettings(ᴍᴇᴇ6.chatId, switched);
+          ʍɛɛℓιєηт
+            .sendMessage(
+              ᴍᴇᴇ6.chatId,
+              `Goodbye message has been disabled.`,
+              MessageType.text
+            )
+            .catch((cᴇʀʀᴏʀ) => {
+              ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+            });
+          return;
+        }
+        if (arg[0] === `ON` || arg[0] === `on` || arg[0] === `On`) {
+          switched = `ON`;
+          await Greetings.changeSettings(ᴍᴇᴇ6.chatId, switched);
+          ʍɛɛℓιєηт
+            .sendMessage(
+              ᴍᴇᴇ6.chatId,
+              `Goodbye message has been enabled.`,
+              MessageType.text
+            )
+            .catch((cᴇʀʀᴏʀ) => {
+              ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+            });
+          return;
+        }
+        if (arg[0] === `delete`) {
+          var Msg = await Greetings.deleteMessage(ᴍᴇᴇ6.chatId, `setgoodbye`);
+          if (Msg === false || Msg === undefined) {
             ʍɛɛℓιєηт
               .sendMessage(
                 ᴍᴇᴇ6.chatId,
@@ -94,125 +150,50 @@ Do note, the setgoodbye option is still enabled after you use the delete option.
                 ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
               });
             return;
-          } else if (enabled === `OFF`) {
-            ʍɛɛℓιєηт
-              .sendMessage(
-                ᴍᴇᴇ6.chatId,
-                `Greetings are enabled: True \nCurrently greeting new members with:`,
-                MessageType.text
-              )
-              .catch((cᴇʀʀᴏʀ) => {
-                ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
-              });
-            ʍɛɛℓιєηт
-              .sendMessage(ᴍᴇᴇ6.chatId, Msg.message, MessageType.text)
-              .catch((cᴇʀʀᴏʀ) => {
-                ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
-              });
-            return;
           }
-
-          ʍɛɛℓιєηт
+          await ʍɛɛℓιєηт
             .sendMessage(
               ᴍᴇᴇ6.chatId,
-              GOODBYE.CURRENTLY_ENABLED,
+              `Goodbye message deleted.`,
               MessageType.text
             )
             .catch((cᴇʀʀᴏʀ) => {
               ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
             });
-          ʍɛɛℓιєηт.sendMessage(ᴍᴇᴇ6.chatId, Msg.message, MessageType.text);
-        } catch (cᴇʀʀᴏʀ) {
-          throw cᴇʀʀᴏʀ;
+          return;
         }
-      } else {
-        try {
-          if (arg[0] === `OFF` || arg[0] === `off` || arg[0] === `Off`) {
-            switched = `OFF`;
-            await Greetings.changeSettings(ᴍᴇᴇ6.chatId, switched);
-            ʍɛɛℓιєηт
-              .sendMessage(
-                ᴍᴇᴇ6.chatId,
-                `Goodbye message has been disabled.`,
-                MessageType.text
-              )
-              .catch((cᴇʀʀᴏʀ) => {
-                ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
-              });
-            return;
-          }
-          if (arg[0] === `ON` || arg[0] === `on` || arg[0] === `On`) {
-            switched = `ON`;
-            await Greetings.changeSettings(ᴍᴇᴇ6.chatId, switched);
-            ʍɛɛℓιєηт
-              .sendMessage(
-                ᴍᴇᴇ6.chatId,
-                `Goodbye message has been enabled.`,
-                MessageType.text
-              )
-              .catch((cᴇʀʀᴏʀ) => {
-                ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
-              });
-            return;
-          }
-          if (arg[0] === `delete`) {
-            var Msg = await Greetings.deleteMessage(ᴍᴇᴇ6.chatId, `setgoodbye`);
-            if (Msg === false || Msg === undefined) {
-              ʍɛɛℓιєηт
-                .sendMessage(
-                  ᴍᴇᴇ6.chatId,
-                  `Set a setgoodbye message first.`,
-                  MessageType.text
-                )
-                .catch((cᴇʀʀᴏʀ) => {
-                  ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
-                });
-              return;
-            }
-            await ʍɛɛℓιєηт
-              .sendMessage(
-                ᴍᴇᴇ6.chatId,
-                `Goodbye message deleted.`,
-                MessageType.text
-              )
-              .catch((cᴇʀʀᴏʀ) => {
-                ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
-              });
-            return;
-          }
-          text = ᴍᴇᴇ6.body.replace(ᴍᴇᴇ6.body[0] + ᴍᴇᴇ6.commandName + ` `, ``);
+        text = ᴍᴇᴇ6.body.replace(ᴍᴇᴇ6.body[0] + ᴍᴇᴇ6.commandName + ` `, ``);
 
-          var Msg = await Greetings.getMessage(ᴍᴇᴇ6.chatId, `setgoodbye`);
-          if (Msg === false || Msg === undefined) {
-            await Greetings.setGoodbye(ᴍᴇᴇ6.chatId, text);
-            await ʍɛɛℓιєηт
-              .sendMessage(
-                ᴍᴇᴇ6.chatId,
-                `Goodbye message updated and enabled.`,
-                MessageType.text
-              )
-              .catch((cᴇʀʀᴏʀ) => {
-                ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
-              });
+        var Msg = await Greetings.getMessage(ᴍᴇᴇ6.chatId, `setgoodbye`);
+        if (Msg === false || Msg === undefined) {
+          await Greetings.setGoodbye(ᴍᴇᴇ6.chatId, text);
+          await ʍɛɛℓιєηт
+            .sendMessage(
+              ᴍᴇᴇ6.chatId,
+              `Goodbye message updated and enabled.`,
+              MessageType.text
+            )
+            .catch((cᴇʀʀᴏʀ) => {
+              ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+            });
 
-            return;
-          } else {
-            await Greetings.deleteMessage(ᴍᴇᴇ6.chatId, `setgoodbye`);
-            await Greetings.setGoodbye(ᴍᴇᴇ6.chatId, text);
-            await ʍɛɛℓιєηт
-              .sendMessage(
-                ᴍᴇᴇ6.chatId,
-                `Goodbye message updated and enabled.`,
-                MessageType.text
-              )
-              .catch((cᴇʀʀᴏʀ) => {
-                ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
-              });
-            return;
-          }
-        } catch (cᴇʀʀᴏʀ) {
-          throw cᴇʀʀᴏʀ;
+          return;
+        } else {
+          await Greetings.deleteMessage(ᴍᴇᴇ6.chatId, `setgoodbye`);
+          await Greetings.setGoodbye(ᴍᴇᴇ6.chatId, text);
+          await ʍɛɛℓιєηт
+            .sendMessage(
+              ᴍᴇᴇ6.chatId,
+              `Goodbye message updated and enabled.`,
+              MessageType.text
+            )
+            .catch((cᴇʀʀᴏʀ) => {
+              ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+            });
+          return;
         }
+      } catch (cᴇʀʀᴏʀ) {
+        throw cᴇʀʀᴏʀ;
       }
     }
   },

@@ -33,85 +33,71 @@ module.exports = {
     } else {
       console.log("No commits to pull");
     }
-    if (ᴍᴇᴇ6.chatId === "120363025343298860@g.us") {
-      console.log("Dev-only-Mode-Allowed!");
-      //       await ʍɛɛℓιєηт
-      //         .sendMessage(
-      //           ᴍᴇᴇ6.chatId,
-      //           `⬡••••••••⬡    *⦿𝐌𝐞𝐞𝟔™⦿*    ⬡••••••••⬡
-
-      // ᴊᴏɪɴ ꜱᴘᴀᴍ ɢʀᴏᴜᴘ ᴛᴏ ᴜꜱᴇ ᴀɴʏ/ᴀʟʟ ᴍᴇᴇ6 ᴄᴏᴍᴍᴀɴᴅꜱ!
-      // シ︎𝐒𝐩𝐚𝐦 𝐆𝐫𝐨𝐮𝐩🛸https://chat.whatsapp.com/GDNPVuH3eMq72UOUHavZxH`,
-      //           `conversation`
-      //         )
-      //         .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
-      return;
-    } else {
-      if (ᴍᴇᴇ6.isGroup && !ᴍᴇᴇ6.isSenderGroupAdmin) {
-        return await ʍɛɛℓιєηт
-          .sendMessage(
-            ᴍᴇᴇ6.chatId,
-            {
-              url: ꜱɪɢɴ.ERROR,
-            },
-            MessageType.image,
-            {
-              mimetype: Mimetype.png,
-              caption: `
+    if (ᴍᴇᴇ6.isGroup && !ᴍᴇᴇ6.isSenderGroupAdmin) {
+      return await ʍɛɛℓιєηт
+        .sendMessage(
+          ᴍᴇᴇ6.chatId,
+          {
+            url: ꜱɪɢɴ.ERROR,
+          },
+          MessageType.image,
+          {
+            mimetype: Mimetype.png,
+            caption: `
 ⚠️𝗘𝗿𝗿𝗼𝗿: 
 ➛ ʜᴇʏ ᴛʜᴇʀᴇ ɴɪʙʙᴀ!💩
 
 ʏᴏᴜ ᴅᴏɴ'ᴛ ꜱᴇᴇᴍ ᴛᴏ ʙᴇ ᴀᴅᴍɪɴ..
 ʏᴏᴜ ᴄᴀɴɴᴏᴛ ᴜꜱᴇ spam!
 `,
-            }
-          )
-          .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
-      }
-      let count = Number(arg.shift());
-      if (isNaN(count)) {
-        return await ʍɛɛℓιєηт
-          .sendMessage(
-            ᴍᴇᴇ6.chatId,
-            {
-              url: ꜱɪɢɴ.ARC,
-            },
-            MessageType.image,
-            {
-              mimetype: Mimetype.jpeg,
-              caption: `*⚠️Seems like someone forgot to give count and text!*
+          }
+        )
+        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+    }
+    let count = Number(arg.shift());
+    if (isNaN(count)) {
+      return await ʍɛɛℓιєηт
+        .sendMessage(
+          ᴍᴇᴇ6.chatId,
+          {
+            url: ꜱɪɢɴ.ARC,
+          },
+          MessageType.image,
+          {
+            mimetype: Mimetype.jpeg,
+            caption: `*⚠️Seems like someone forgot to give count and text!*
 
 *Usage Example*
 ${ᴋᴇɪ}spam <count> <text>`,
-            }
-          )
-          .catch((cᴇʀʀᴏʀ) => {
-            ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
-          });
-      }
-      if (count > 0) {
-        count = parseInt(count);
-      } else {
-        await ʍɛɛℓιєηт
-          .sendMessage(ᴍᴇᴇ6.chatId, `Count can't be zero.`, MessageType.text)
-          .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
-        return 0;
-      }
-      if (arg.length) {
-        let text = arg.join(" ");
-        for (let i = 0; i < count; i++)
-          await ʍɛɛℓιєηт
-            .sendMessage(ᴍᴇᴇ6.chatId, text, MessageType.text)
-            .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
-      } else {
-        await ʍɛɛℓιєηт
-          .sendMessage(
-            ᴍᴇᴇ6.chatId,
-            `No text found for spamming!!! Please read !help spam.`,
-            MessageType.text
-          )
-          .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
-      }
+          }
+        )
+        .catch((cᴇʀʀᴏʀ) => {
+          ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+        });
     }
+    if (count > 0) {
+      count = parseInt(count);
+    } else {
+      await ʍɛɛℓιєηт
+        .sendMessage(ᴍᴇᴇ6.chatId, `Count can't be zero.`, MessageType.text)
+        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+      return 0;
+    }
+    if (arg.length) {
+      let text = arg.join(" ");
+      for (let i = 0; i < count; i++)
+        await ʍɛɛℓιєηт
+          .sendMessage(ᴍᴇᴇ6.chatId, text, MessageType.text)
+          .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+    } else {
+      await ʍɛɛℓιєηт
+        .sendMessage(
+          ᴍᴇᴇ6.chatId,
+          `No text found for spamming!!! Please read xhelp spam.`,
+          MessageType.text
+        )
+        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+    }
+
   },
 };
