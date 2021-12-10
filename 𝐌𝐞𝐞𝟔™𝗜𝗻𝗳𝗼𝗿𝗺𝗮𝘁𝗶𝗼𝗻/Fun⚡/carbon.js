@@ -22,8 +22,6 @@ In order to specify the theme, use  *${ᴋᴇɪ}carbon <text> -t <theme>* .`,
     await ᴍᴇᴇgit.fetch();
     var Sender = ᴍᴇᴇ6.sender;
     var ɴᴇᴡᴍᴇᴇ6 = await ᴍᴇᴇgit.log(["KrakinzLab..origin/KrakinzLab"]);
-    var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
-    personreceived = Receiver.substring(0, Receiver.length - 15);
     personsending = Sender.substring(0, Sender.length - 15);
     // ⬡==================⬡-----------------⦿𝐌𝐞𝐞𝟔™⦿-----------------⬡==================⬡
     if (ɴᴇᴡᴍᴇᴇ6.total != 0) {
