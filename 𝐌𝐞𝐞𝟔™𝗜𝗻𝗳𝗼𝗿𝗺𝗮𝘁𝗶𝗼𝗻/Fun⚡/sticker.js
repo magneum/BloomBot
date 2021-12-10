@@ -16,44 +16,45 @@ module.exports = {
   ᴍᴇᴇ6ʍօʀɛ: `Use this command to convert any image from your chat to a sticker. 
 Reply to an image message with the command  *${ᴋᴇɪ}sticker*  to convert and send that image as a sticker.`,
   async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg) {
-    const ᴍᴇᴇgit = require("simple-git")();
+    // ⬡==================⬡-----------------⦿𝐌𝐞𝐞𝟔™⦿-----------------⬡==================⬡
     await ᴍᴇᴇgit.fetch();
+    var Sender = ᴍᴇᴇ6.sender;
     var ɴᴇᴡᴍᴇᴇ6 = await ᴍᴇᴇgit.log(["KrakinzLab..origin/KrakinzLab"]);
+    var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
+    personreceived = Receiver.substring(0, Receiver.length - 15);
+    personsending = Sender.substring(0, Sender.length - 15);
+    // ⬡==================⬡-----------------⦿𝐌𝐞𝐞𝟔™⦿-----------------⬡==================⬡
     if (ɴᴇᴡᴍᴇᴇ6.total != 0) {
-      console.log(ɴᴇᴡᴍᴇᴇ6);
-      var Sender = ᴍᴇᴇ6.sender;
-      var personsending = Sender.substring(0, Sender.length - 15);
       await ʍɛɛℓιєηт
         .sendMessage(
           ᴍᴇᴇ6.logGroup,
           `⦿ᴘᴏᴡᴇʀᴇᴅ ʙʏ 
 *👓𝓜𝓮𝓮6™* ▽ 𝙒𝙝𝙖𝙩𝙨𝙖𝙥𝙥 𝙐𝙨𝙚𝙧𝘽𝙤𝙩
-❗ 𝙈𝙚𝙚6 𝙐𝙥𝙙𝙖𝙩𝙚 𝙋𝙚𝙣𝙙𝙞𝙣𝙜
 
+𝙐𝙥𝙙𝙖𝙩𝙚🤖𝙋𝙚𝙣𝙙𝙞𝙣𝙜
 *•@${personsending}*,𝘗𝘭𝘦𝘢𝘴𝘦 𝘜𝘱𝘥𝘢𝘵𝘦 𝘜𝘴𝘪𝘯𝘨 *${ᴋᴇɪ}update* 𝘰𝘳 𝘳𝘦𝘥𝘦𝘱𝘭𝘰𝘺 𝐌𝐞𝐞𝟔™!`,
           MessageType.text
         )
         .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
-    } else {
-      console.log("No commits to pull");
     }
+    // ⬡==================⬡-----------------⦿𝐌𝐞𝐞𝟔™⦿-----------------⬡==================⬡
     if (ᴍᴇᴇ6.chatId === "120363025343298860@g.us") {
-      if (!ᴍᴇᴇ6.fromMe) {
-        console.log("Dev-only-Mode-Allowed!");
-      }
-      if (ᴍᴇᴇ6.fromMe) {
+      if (!ᴍᴇᴇ6.fromMe) return;
+      if (!ᴍᴇᴇ6.isSenderSUDO) {
         await ʍɛɛℓιєηт
           .sendMessage(
             ᴍᴇᴇ6.chatId,
             `⦿ᴘᴏᴡᴇʀᴇᴅ ʙʏ 
 *👓𝓜𝓮𝓮6™* ▽ 𝙒𝙝𝙖𝙩𝙨𝙖𝙥𝙥 𝙐𝙨𝙚𝙧𝘽𝙤𝙩
 
-*•@${personsending}*,シ︎𝙎𝙥𝙖𝙢/𝙏𝙚𝙨𝙩 𝐆𝐫𝐨𝐮𝐩🛸https://chat.whatsapp.com/GDNPVuH3eMq72UOUHavZxH`,
+*•@${personsending}*,
+シ︎𝙎𝙥𝙖𝙢/𝙏𝙚𝙨𝙩 𝐆𝐫𝐨𝐮𝐩🛸 https://chat.whatsapp.com/GDNPVuH3eMq72UOUHavZxH`,
             `conversation`
           )
           .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
       }
       return;
+      // ⬡==================⬡-----------------⦿𝐌𝐞𝐞𝟔™⦿-----------------⬡==================⬡
     } else {
       try {
         const convertToSticker = async (imageId, replyChat) => {
