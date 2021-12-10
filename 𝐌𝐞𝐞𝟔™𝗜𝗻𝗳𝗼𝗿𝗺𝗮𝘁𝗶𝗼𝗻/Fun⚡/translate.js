@@ -13,8 +13,7 @@ module.exports = {
   commandType: "Fun⚡",
   description: `Language Translator`,
   ᴍᴇᴇ6ʍօʀɛ: `Use  *${ᴋᴇɪ}tr <text> = <language>*  to translate text to the specified language. 
-You can also reply to a text message with syntax  *${ᴋᴇɪ}tr <language>*  to translate text.
-If you do not specify a language, it defaults to English.`,
+You can also reply to a text message with syntax  *${ᴋᴇɪ}tr <language>*  to translate text.`,
   async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg) {
     const ᴍᴇᴇgit = require("simple-git")();
     await ᴍᴇᴇgit.fetch();
@@ -53,96 +52,78 @@ If you do not specify a language, it defaults to English.`,
       }
       return;
     } else {
-      try {
-        var text = ``;
-        var language = ``;
-        if (arg.length === 0) {
-          return await ʍɛɛℓιєηт
-            .sendMessage(
-              ᴍᴇᴇ6.chatId,
-              {
-                url: ꜱɪɢɴ.ARC,
-              },
-              MessageType.image,
-              {
-                mimetype: Mimetype.jpeg,
-                caption: `*⚠️Seems like someone forgot to give text or language!*
+      var text = ``;
+      var language = ``;
+      if (arg.length === 0) {
+        return await ʍɛɛℓιєηт
+          .sendMessage(
+            ᴍᴇᴇ6.chatId,
+            {
+              url: ꜱɪɢɴ.ARC,
+            },
+            MessageType.image,
+            {
+              mimetype: Mimetype.jpeg,
+              caption: `*⚠️Seems like someone forgot to give text or language!*
 
 *Usage Example*
 *${ᴋᴇɪ}tr <text> = <language>*`,
-              }
-            )
-            .catch((cᴇʀʀᴏʀ) => {
-              ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
-            });
-        }
-        if (!ᴍᴇᴇ6.isReply) {
-          try {
-            var body = ᴍᴇᴇ6.body.split(`=`);
-            text = body[0].replace(ᴍᴇᴇ6.body[0] + ᴍᴇᴇ6.commandName + ` `, ``);
-            var i = 0;
-            while (body[1].split(` `)[i] == ``) {
-              i++;
             }
-            language = body[1].split(` `)[i];
-          } catch (cᴇʀʀᴏʀ) {
-            if (cᴇʀʀᴏʀ instanceof TypeError) {
-              text = ᴍᴇᴇ6.body.replace(
-                ᴍᴇᴇ6.body[0] + ᴍᴇᴇ6.commandName + ` `,
-                ``
-              );
-              language = `English`;
-            }
-          }
-        } else if (ᴍᴇᴇ6.replyMessage) {
-          text = ᴍᴇᴇ6.replyMessage;
-          language = arg[0];
-        } else {
-          await ʍɛɛℓιєηт
-            .sendMessage(
-              ᴍᴇᴇ6.chatId,
-              `Please reply to a text message.`,
-              MessageType.text
-            )
-            .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
-        }
-        if (text.length > 4000) {
-          await ʍɛɛℓιєηт
-            .sendMessage(
-              ᴍᴇᴇ6.chatId,
-              `*Total characters should be less than 4000.*\nTotal characters for current input were {}.`.format(
-                text.length
-              ),
-              MessageType.text
-            )
-            .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
-        }
-        await translate(text, {
-          to: language,
-        })
-          .then((res) => {
-            ʍɛɛℓιєηт.sendMessage(
-              ᴍᴇᴇ6.chatId,
-              `*TR:* Translate [*{}* -> *{}*]\n\n{}`.format(
-                res.from.language.iso,
-                language,
-                res.text
-              ),
-              MessageType.text
-            );
-          })
-          .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
-      } catch (cᴇʀʀᴏʀ) {
-        ʍɛɛℓιєηт.sendMessage(
-          ᴍᴇᴇ6.chatId,
-          `*🎮ᴍᴇᴇ6™* 𝐝𝐢𝐝𝐧'𝐭 𝐰𝐨𝐫𝐤 𝐚𝐬 𝐞𝐱𝐩𝐞𝐜𝐭𝐞𝐝❗
-
-💡𝗛𝗲𝗿𝗲 𝗶𝘀 𝗮 𝘀𝗺𝗮𝗹𝗹 𝗲𝗿𝗿𝗼𝗿 𝗿𝗲𝗽𝗼𝗿𝘁 𝗮𝗻𝗱 𝘁𝗼 𝗹𝗼𝗴 𝘁𝗵𝗲 𝗿𝗲𝗽𝗼𝗿𝘁 𝘂𝘀𝗲 ${ᴋᴇɪ}𝗿𝗲𝗽𝗼𝗿𝘁
-⚠️𝗘𝗿𝗿𝗼𝗿
-• ${cᴇʀʀᴏʀ}`,
-          MessageType.text
-        );
+          )
+          .catch((cᴇʀʀᴏʀ) => {
+            ℓιєηт.catch((cᴇʀʀᴏʀ, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+          });
       }
+      if (!ᴍᴇᴇ6.isReply) {
+        try {
+          var body = ᴍᴇᴇ6.body.split(`=`);
+          text = body[0].replace(ᴍᴇᴇ6.body[0] + ᴍᴇᴇ6.commandName + ` `, ``);
+          var i = 0;
+          while (body[1].split(` `)[i] == ``) {
+            i++;
+          }
+          language = body[1].split(` `)[i];
+        } catch (cᴇʀʀᴏʀ) {
+          if (cᴇʀʀᴏʀ instanceof TypeError) {
+            text = ᴍᴇᴇ6.body.replace(ᴍᴇᴇ6.body[0] + ᴍᴇᴇ6.commandName + ` `, ``);
+            language = `English`;
+          }
+        }
+      } else if (ᴍᴇᴇ6.replyMessage) {
+        text = ᴍᴇᴇ6.replyMessage;
+        language = arg[0];
+      } else {
+        await ʍɛɛℓιєηт
+          .sendMessage(
+            ᴍᴇᴇ6.chatId,
+            `Please reply to a text message.`,
+            MessageType.text
+          )
+          .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+      }
+      if (text.length > 4000) {
+        await ʍɛɛℓιєηт
+          .sendMessage(
+            ᴍᴇᴇ6.chatId,
+            `*Total characters should be less than 4000.*\nTotal characters for current input were {}.`.format(
+              text.length
+            ),
+            MessageType.text
+          )
+          .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+      }
+      await translate(text, {
+        to: language,
+      })
+        .then((res) => {
+          ʍɛɛℓιєηт.sendMessage(
+            ᴍᴇᴇ6.chatId,
+            `Translated From *${res.from.language.iso}* to> *${language}*
+${res.text}`,
+            MessageType.text
+          );
+        })
+        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
     }
   },
 };

@@ -55,13 +55,6 @@ Reply to an image message with the command  *${ᴋᴇɪ}sticker*  to convert and
     } else {
       try {
         const convertToSticker = async (imageId, replyChat) => {
-          await ʍɛɛℓιєηт
-            .sendMessage(
-              ᴍᴇᴇ6.chatId,
-              `Your sticker is downloading. Please wait...`,
-              MessageType.text
-            )
-            .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
           const filePath = await ʍɛɛℓιєηт
             .downloadAndSaveMediaMessage(replyChat, `./ᴛᴇᴍᴘ/ct-` + imageId)
             .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));

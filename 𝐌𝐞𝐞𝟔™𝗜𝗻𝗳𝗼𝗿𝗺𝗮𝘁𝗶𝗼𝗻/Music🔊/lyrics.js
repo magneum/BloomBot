@@ -1,10 +1,10 @@
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
-const ꜱɪɢɴ = require(`../../ᴍᴇᴇ6/ꜱɪɢɴ`);
+const songlyrics = require("songlyrics").default;
 const ℓιєηт = require("../../ᴍᴇᴇ6/catch");
-const got = require(`got`);
+const lyrics = require("music-lyrics");
+const ꜱɪɢɴ = require(`../../ᴍᴇᴇ6/ꜱɪɢɴ`);
 var ᴋᴇɪᴇx = new RegExp(ꜱɪɢɴ.Mee6IX, "g");
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
-const ᴍᴇᴇgit = require("simple-git")();
 // ⬡==================⬡-----------------⦿𝐌𝐞𝐞𝟔™⦿-----------------⬡==================⬡
 // 🛸ᴍᴇᴇ6™ ᴀᴅᴠᴀɴᴄᴇᴅ ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ 80+ ᴄᴏᴍᴍᴀɴᴅꜱ ꜰᴏʀ ʙᴏᴛʜ ᴘʀɪᴠᴀᴛᴇ ᴀɴᴅ ɢʀᴏᴜᴘ-ᴜꜱᴀɢᴇ🛸
 // ⬡==================⬡-----------------⦿𝐌𝐞𝐞𝟔™⦿-----------------⬡==================⬡
@@ -75,50 +75,46 @@ ${ᴋᴇɪ}lyrics <song-name>`,
       } else {
         song = arg.join(` `);
       }
-      await ʍɛɛℓιєηт
-        .sendMessage(
-          ᴍᴇᴇ6.chatId,
-          `Searching. Please wait....`,
-          MessageType.text
-        )
-        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
       try {
-        let API = await got(`https://some-random-api.ml/lyrics/?title=${song}`);
-        let APIData = JSON.parse(API.body);
-        let caption =
-          `*Title :* ` +
-          APIData.title +
-          `\n*Author :* ` +
-          APIData.author +
-          `\n*Lyrics :*\n` +
-          APIData.lyrics;
+        const lyrics = await songlyrics(song);
         await ʍɛɛℓιєηт
           .sendMessage(
             ᴍᴇᴇ6.chatId,
+            `*⦿𝐌𝐞𝐞𝟔™   ⬡••••••••⬡*
+𝐈 𝐚𝐦 𝐌𝐫𝐌𝐞𝐞𝟔🛸𝐋𝐨𝐨𝐤 𝐀𝐭 𝐌𝐞! ⧪ 𝗔𝗱𝘃𝗮𝗻𝗰𝗲 𝗪𝗵𝗮𝘁𝘀𝗮𝗽𝗽 𝗕𝗼𝘁 ⧪
+
+
+𝗟𝘆𝗿𝗶𝗰𝘀 𝗦𝗼𝘂𝗿𝗰𝗲: ${lyrics.source.name}
+𝗟𝘆𝗿𝗶𝗰𝘀 𝗨𝗿𝗹: ${lyrics.source.link}
+𝗟𝘆𝗿𝗶𝗰𝘀 𝗙𝗼𝘂𝗻𝗱 𝗙𝗼𝗿: _${song}_
+${lyrics.lyrics}`,
+            MessageType.text,
             {
-              url: APIData.thumbnail.genius,
-            },
-            MessageType.image,
-            {
-              mimetype: Mimetype.png,
-              caption: caption,
+              contextInfo: {
+                mentionedJid: [ᴍᴇᴇ6.sender],
+              },
             }
           )
           .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
-      } catch (cᴇʀʀᴏʀ) {
-        await ʍɛɛℓιєηт
-          .sendMessage(
-            ᴍᴇᴇ6.chatId,
-            {
-              url: ꜱɪɢɴ.ERROR,
-            },
-            MessageType.image,
-            {
-              mimetype: Mimetype.png,
-              caption: "Seems Like No Lyrics Found\n\nIt will be fixed Soon!",
-            }
-          )
-          .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+      } catch (err) {
+        try {
+          const lyric = await lyrics.search(song);
+          await ʍɛɛℓιєηт
+            .sendMessage(
+              ᴍᴇᴇ6.chatId,
+              `𝗟𝘆𝗿𝗶𝗰𝘀 𝗙𝗼𝘂𝗻𝗱 𝗙𝗼𝗿 ${song}:
+${lyric}`,
+              MessageType.text,
+              {
+                contextInfo: {
+                  mentionedJid: [ᴍᴇᴇ6.sender],
+                },
+              }
+            )
+            .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+        } catch (error) {
+          await ℓιєηт.catch("No Lyrics Found!", ʍɛɛℓιєηт, ᴍᴇᴇ6);
+        }
       }
     }
   },
