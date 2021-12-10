@@ -19,15 +19,16 @@ module.exports = {
     var ɴᴇᴡᴍᴇᴇ6 = await ᴍᴇᴇgit.log(["KrakinzLab..origin/KrakinzLab"]);
     if (ɴᴇᴡᴍᴇᴇ6.total != 0) {
       console.log(ɴᴇᴡᴍᴇᴇ6);
-      var str = ᴍᴇᴇ6.sender;
-      var newString = str.substring(0, str.length - 15);
+      var Sender = ᴍᴇᴇ6.sender;
+      var personsending = Sender.substring(0, Sender.length - 15);
       await ʍɛɛℓιєηт
         .sendMessage(
           ᴍᴇᴇ6.logGroup,
-          `*⦿𝐌𝐞𝐞𝟔™   ⬡••••••••⬡*
+          `⦿ᴘᴏᴡᴇʀᴇᴅ ʙʏ 
+*👓𝓜𝓮𝓮6™* ▽ 𝙒𝙝𝙖𝙩𝙨𝙖𝙥𝙥 𝙐𝙨𝙚𝙧𝘽𝙤𝙩
 ❗ 𝙈𝙚𝙚6 𝙐𝙥𝙙𝙖𝙩𝙚 𝙋𝙚𝙣𝙙𝙞𝙣𝙜
 
-*•@${newString}*,𝘗𝘭𝘦𝘢𝘴𝘦 𝘜𝘱𝘥𝘢𝘵𝘦 𝘜𝘴𝘪𝘯𝘨 *${ᴋᴇɪ}update* 𝘰𝘳 𝘳𝘦𝘥𝘦𝘱𝘭𝘰𝘺 𝐌𝐞𝐞𝟔™!`,
+*•@${personsending}*,𝘗𝘭𝘦𝘢𝘴𝘦 𝘜𝘱𝘥𝘢𝘵𝘦 𝘜𝘴𝘪𝘯𝘨 *${ᴋᴇɪ}update* 𝘰𝘳 𝘳𝘦𝘥𝘦𝘱𝘭𝘰𝘺 𝐌𝐞𝐞𝟔™!`,
           MessageType.text
         )
         .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
@@ -42,17 +43,18 @@ module.exports = {
         await ʍɛɛℓιєηт
           .sendMessage(
             ᴍᴇᴇ6.chatId,
-            `*⦿𝐌𝐞𝐞𝟔™   ⬡••••••••⬡*
+            `⦿ᴘᴏᴡᴇʀᴇᴅ ʙʏ 
+*👓𝓜𝓮𝓮6™* ▽ 𝙒𝙝𝙖𝙩𝙨𝙖𝙥𝙥 𝙐𝙨𝙚𝙧𝘽𝙤𝙩
 
-*•@${newString}*,シ︎𝙎𝙥𝙖𝙢/𝙏𝙚𝙨𝙩 𝐆𝐫𝐨𝐮𝐩🛸https://chat.whatsapp.com/GDNPVuH3eMq72UOUHavZxH`,
+*•@${personsending}*,シ︎𝙎𝙥𝙖𝙢/𝙏𝙚𝙨𝙩 𝐆𝐫𝐨𝐮𝐩🛸https://chat.whatsapp.com/GDNPVuH3eMq72UOUHavZxH`,
             `conversation`
           )
           .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
       }
       return;
     } else {
-      var str = ᴍᴇᴇ6.sender;
-      var newString = str.substring(0, str.length - 15);
+      var Sender = ᴍᴇᴇ6.sender;
+      var personsending = Sender.substring(0, Sender.length - 15);
       const MeeHelper = `*𝘽𝙊𝙏 𝙄𝙉 𝘽𝙀𝙏𝘼*
 シ︎𝗦𝘂𝗽𝗽𝗼𝗿𝘁 𝐆𝐫𝐨𝐮𝐩🛸*https://chat.whatsapp.com/FmMcEeSqZQw85qAkgUs3f5
 シ︎𝐒𝐩𝐚𝐦 𝐆𝐫𝐨𝐮𝐩🛸https://chat.whatsapp.com/GDNPVuH3eMq72UOUHavZxH
@@ -192,15 +194,15 @@ many many more!
               contextInfo: {
                 mentionedJid: [ᴍᴇᴇ6.sender],
               },
-              caption: `*⦿𝐌𝐞𝐞𝟔™   ⬡••••••••⬡*
-𝐈 𝐚𝐦 𝐌𝐫𝐌𝐞𝐞𝟔🛸𝐋𝐨𝐨𝐤 𝐀𝐭 𝐌𝐞! ⧪ 𝗔𝗱𝘃𝗮𝗻𝗰𝗲 𝗪𝗵𝗮𝘁𝘀𝗮𝗽𝗽 𝗕𝗼𝘁 ⧪
+              caption: `⦿ᴘᴏᴡᴇʀᴇᴅ ʙʏ 
+*👓𝓜𝓮𝓮6™* ▽ 𝙒𝙝𝙖𝙩𝙨𝙖𝙥𝙥 𝙐𝙨𝙚𝙧𝘽𝙤𝙩
 
-*•@${newString}*,
+*•@${personsending}*,
 シ︎💡𝐏𝐫𝐞𝐟𝐢𝐱: ${ᴋᴇɪ}
 シ︎🛰️𝐏𝐢𝐧𝐠: _${latensie.toFixed(6)}s_
 シ︎⚰️𝐔𝐩𝐓𝐢𝐦𝐞: _${runtime(process.uptime())}_
 シ︎💻𝐏𝐥𝐚𝐭𝐟𝐨𝐫𝐦: _${os.platform()}_
-*⦿𝐌𝐞𝐞𝟔™   ⬡••••••••⬡*
+
 
 ${MeeHelper}‍`,
             }

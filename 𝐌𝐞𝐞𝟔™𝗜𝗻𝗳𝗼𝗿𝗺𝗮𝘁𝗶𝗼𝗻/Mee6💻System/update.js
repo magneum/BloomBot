@@ -16,8 +16,8 @@ module.exports = {
   commandType: "Mee6💻System",
   description: `ᴛʜɪꜱ ᴄᴏᴍᴍᴀɴᴅ ᴄᴀɴ ʙᴇ ᴜꜱᴇᴅ ᴛᴏ ᴜᴘᴅᴀᴛᴇ ᴛʜᴇ ʙᴏᴛ`,
   async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg) {
-    var str = ᴍᴇᴇ6.sender;
-    var newString = str.substring(0, str.length - 15);
+    var Sender = ᴍᴇᴇ6.sender;
+    var personsending = Sender.substring(0, Sender.length - 15);
     if (!ᴍᴇᴇ6.fromMe) {
       return await ʍɛɛℓιєηт
         .sendMessage(
@@ -31,10 +31,10 @@ module.exports = {
             contextInfo: {
               mentionedJid: [ᴍᴇᴇ6.sender],
             },
-            caption: `*⦿𝐌𝐞𝐞𝟔™   ⬡••••••••⬡*
-𝐈 𝐚𝐦 𝐌𝐫𝐌𝐞𝐞𝟔🛸𝐋𝐨𝐨𝐤 𝐀𝐭 𝐌𝐞! ⧪ 𝗔𝗱𝘃𝗮𝗻𝗰𝗲 𝗪𝗵𝗮𝘁𝘀𝗮𝗽𝗽 𝗕𝗼𝘁 ⧪
+            caption: `⦿ᴘᴏᴡᴇʀᴇᴅ ʙʏ 
+*👓𝓜𝓮𝓮6™* ▽ 𝙒𝙝𝙖𝙩𝙨𝙖𝙥𝙥 𝙐𝙨𝙚𝙧𝘽𝙤𝙩
 
-*•@${newString}*,⚠️𝙉𝙞𝙘𝙚 𝙏𝙧𝙮 𝘽𝙪𝙩 𝙊𝙣𝙡𝙮 𝙈𝙮 𝙊𝙬𝙣𝙚𝙧 𝘾𝙖𝙣 𝙪𝙨𝙚 𝙩𝙝𝙖𝙩 𝙘𝙤𝙢𝙢𝙖𝙣𝙙!`,
+*•@${personsending}*,⚠️𝙉𝙞𝙘𝙚 𝙏𝙧𝙮 𝘽𝙪𝙩 𝙊𝙣𝙡𝙮 𝙈𝙮 𝙊𝙬𝙣𝙚𝙧 𝘾𝙖𝙣 𝙪𝙨𝙚 𝙩𝙝𝙖𝙩 𝙘𝙤𝙢𝙢𝙖𝙣𝙙!`,
           }
         )
         .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
@@ -51,10 +51,10 @@ module.exports = {
           contextInfo: {
             mentionedJid: [ᴍᴇᴇ6.sender],
           },
-          caption: `*⦿𝐌𝐞𝐞𝟔™   ⬡••••••••⬡*
-𝐈 𝐚𝐦 𝐌𝐫𝐌𝐞𝐞𝟔🛸𝐋𝐨𝐨𝐤 𝐀𝐭 𝐌𝐞! ⧪ 𝗔𝗱𝘃𝗮𝗻𝗰𝗲 𝗪𝗵𝗮𝘁𝘀𝗮𝗽𝗽 𝗕𝗼𝘁 ⧪
+          caption: `⦿ᴘᴏᴡᴇʀᴇᴅ ʙʏ 
+*👓𝓜𝓮𝓮6™* ▽ 𝙒𝙝𝙖𝙩𝙨𝙖𝙥𝙥 𝙐𝙨𝙚𝙧𝘽𝙤𝙩
 
-*•@${newString}*,ʏᴏᴜʀ ᴍᴇᴇ6 ʙᴏᴛ ɪꜱ ɴᴏᴡ ᴜᴘᴅᴀᴛɪɴɢ.ᴘʟᴇᴀꜱᴇ ᴡᴀɪᴛ ꜰᴏʀ 30-60ꜱᴇᴄ
+*•@${personsending}*,ʏᴏᴜʀ ᴍᴇᴇ6 ʙᴏᴛ ɪꜱ ɴᴏᴡ ᴜᴘᴅᴀᴛɪɴɢ.ᴘʟᴇᴀꜱᴇ ᴡᴀɪᴛ ꜰᴏʀ 30-60ꜱᴇᴄ
 
 ⚠️𝗜𝗳 𝗶𝘁 𝘄𝗮𝘀 𝗮 𝗕𝗜𝗚 ⚡𝐌𝐞𝐞𝟔™ 𝘂𝗽𝗱𝗮𝘁𝗲,
 𝘁𝗵𝗲𝗻 𝗣𝗹𝗲𝗮𝘀𝗲 𝗿𝗲𝗱𝗲𝗽𝗹𝗼𝘆 𝘆𝗼𝘂𝗿 𝗯𝗼𝘁!`,
