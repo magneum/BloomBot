@@ -83,7 +83,7 @@ module.exports = {
       ʍɛɛℓιєηт
         .sendMessage(
           ᴍᴇᴇ6.chatId,
-          `\`\`\`Attention Here Everyone In the Group!\`\`\``,
+          `*Attention Here Everyone In the Group!*`,
           MessageType.text,
           {
             contextInfo: {
@@ -111,14 +111,13 @@ module.exports = {
     }
 
     ʍɛɛℓιєηт
-      .sendMessage(ᴍᴇᴇ6.chatId, `*Everyone!*`, MessageType.text, {
+      .sendMessage(ᴍᴇᴇ6.chatId, `*Attention Here Everyone In the Group!*`, MessageType.text, {
         contextInfo: {
           mentionedJid: members,
         },
       })
       .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
     return;
-
   },
 };
 // ===============================================================================
