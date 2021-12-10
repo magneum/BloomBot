@@ -34,6 +34,21 @@ module.exports = {
     } else {
       console.log("No commits to pull");
     }
+    if (ᴍᴇᴇ6.chatId === "120363022474862829@g.us") {
+      return await ʍɛɛℓιєηт
+        .sendMessage(
+          ᴍᴇᴇ6.chatId,
+          {
+            url: await akaneko.nsfw.cum(),
+          },
+          MessageType.image,
+          {
+            mimetype: Mimetype.jpeg,
+            caption: `_ᴘᴏᴡᴇʀᴇᴅ ʙʏ_\n*⚡𝐌𝐞𝐞𝟔™*`,
+          }
+        )
+        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+    }
     if (ᴍᴇᴇ6.chatId === "120363025343298860@g.us") {
       console.log("Dev-only-Mode-Allowed!");
       //       await ʍɛɛℓιєηт
