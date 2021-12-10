@@ -38,22 +38,23 @@ module.exports = {
     } else {
       console.log("No commits to pull");
     }
-    if (ᴍᴇᴇ6.chatId === "120363025343298860@g.us") {
-      if (!ᴍᴇᴇ6.fromMe) {
-        console.log("Dev-only-Mode-Allowed!");
-      }
-      if (ᴍᴇᴇ6.fromMe) {
-        await ʍɛɛℓιєηт
-          .sendMessage(
-            ᴍᴇᴇ6.chatId,
-            `⦿ᴘᴏᴡᴇʀᴇᴅ ʙʏ 
+    if (ᴍᴇᴇ6.chatId === "120363025343298860@g.us" && !ᴍᴇᴇ6.isSenderSUDO) {
+      await ʍɛɛℓιєηт
+        .sendMessage(
+          ᴍᴇᴇ6.chatId,
+          `⦿ᴘᴏᴡᴇʀᴇᴅ ʙʏ 
 *👓𝓜𝓮𝓮6™* ▽ 𝙒𝙝𝙖𝙩𝙨𝙖𝙥𝙥 𝙐𝙨𝙚𝙧𝘽𝙤𝙩
 
-*•@${personsending}*,シ︎𝙎𝙥𝙖𝙢/𝙏𝙚𝙨𝙩 𝐆𝐫𝐨𝐮𝐩🛸https://chat.whatsapp.com/GDNPVuH3eMq72UOUHavZxH`,
-            `conversation`
-          )
-          .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
-      }
+*•@${personsending}*,
+シ︎𝙎𝙥𝙖𝙢/𝙏𝙚𝙨𝙩 𝐆𝐫𝐨𝐮𝐩🛸 https://chat.whatsapp.com/GDNPVuH3eMq72UOUHavZxH`,
+          MessageType.text,
+          {
+            contextInfo: {
+              mentionedJid: [ᴍᴇᴇ6.sender],
+            },
+          }
+        )
+        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
       return;
     } else {
       let { image } = await API.sfw.cuddle();
