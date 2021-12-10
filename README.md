@@ -1,6 +1,6 @@
 [![Open Source Love svg3](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)<img align="centre" src="https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg" alt="Krakinz"/><img align="centre" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"/>
 
-# 『 🎮ᴍᴇᴇ6™ 』𝘽𝙊𝙏 𝙄𝙉 𝘽𝙀𝙏𝘼
+# 『 ⬡ 👓𝓜𝓮𝓮6™ △▽ 𝖂𝖍𝖆𝖙𝖘𝖆𝖕𝖕-𝖀𝖘𝖊𝖗𝖇𝖔𝖙 ⬡ 』𝘽𝙊𝙏 𝙄𝙉 𝘽𝙀𝙏𝘼
 ʏᴏᴜʀ ᴀꜱꜱɪꜱꜱᴛᴀɴᴛ ꜰᴏʀ ᴍᴀᴋɪɴɢ ʙᴏʀɪɴɢ ᴡʜᴀᴛꜱᴀᴘᴘ ᴀ ʙᴇᴛᴛᴇʀ ᴀᴅᴠᴀɴᴄᴇ ᴀᴘᴘ!
 
 <p align="center">
@@ -41,10 +41,6 @@
 - If anything went wrong Please 🐞RΣPӨЯƬ
 🔸[ᴡʜᴀᴛꜱᴀᴘᴘ](https://chat.whatsapp.com/FmMcEeSqZQw85qAkgUs3f5)
 🔸[ᴅɪꜱᴄᴏʀᴅ](https://discord.gg/xcFN6NDHEV)
-
-
-
-
 
 
 # 💡 𝕴𝖓𝖘𝖕𝖎𝖗𝖆𝖙𝖎𝖔𝖓
