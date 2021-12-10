@@ -44,11 +44,10 @@ module.exports = {
       await ʍɛɛℓιєηт
         .sendMessage(
           ᴍᴇᴇ6.chatId,
-          `⬡••••••••⬡    *⦿𝐌𝐞𝐞𝟔™⦿*    ⬡••••••••⬡
+          `*⦿𝐌𝐞𝐞𝟔™   ⬡••••••••⬡*
 ❗ 𝙈𝙚𝙚6 𝙐𝙥𝙙𝙖𝙩𝙚 𝙋𝙚𝙣𝙙𝙞𝙣𝙜
 
-*💞Dҽαɾ @${newString},*
-𝘗𝘭𝘦𝘢𝘴𝘦 𝘜𝘱𝘥𝘢𝘵𝘦 𝘜𝘴𝘪𝘯𝘨 *${ᴋᴇɪ}update* 𝘰𝘳 𝘳𝘦𝘥𝘦𝘱𝘭𝘰𝘺 𝐌𝐞𝐞𝟔™!`,
+*•@${newString}*,𝘗𝘭𝘦𝘢𝘴𝘦 𝘜𝘱𝘥𝘢𝘵𝘦 𝘜𝘴𝘪𝘯𝘨 *${ᴋᴇɪ}update* 𝘰𝘳 𝘳𝘦𝘥𝘦𝘱𝘭𝘰𝘺 𝐌𝐞𝐞𝟔™!`,
           MessageType.text
         )
         .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
@@ -56,17 +55,20 @@ module.exports = {
       console.log("No commits to pull");
     }
     if (ᴍᴇᴇ6.chatId === "120363025343298860@g.us") {
-      console.log("Dev-only-Mode-Allowed!");
-      //       await ʍɛɛℓιєηт
-      //         .sendMessage(
-      //           ᴍᴇᴇ6.chatId,
-      //           `⬡••••••••⬡    *⦿𝐌𝐞𝐞𝟔™⦿*    ⬡••••••••⬡
+      if (!ᴍᴇᴇ6.fromMe) {
+        console.log("Dev-only-Mode-Allowed!");
+      }
+      if (ᴍᴇᴇ6.fromMe) {
+        await ʍɛɛℓιєηт
+          .sendMessage(
+            ᴍᴇᴇ6.chatId,
+            `*⦿𝐌𝐞𝐞𝟔™   ⬡••••••••⬡*
 
-      // ᴊᴏɪɴ ꜱᴘᴀᴍ ɢʀᴏᴜᴘ ᴛᴏ ᴜꜱᴇ ᴀɴʏ/ᴀʟʟ ᴍᴇᴇ6 ᴄᴏᴍᴍᴀɴᴅꜱ!
-      // シ︎𝐒𝐩𝐚𝐦 𝐆𝐫𝐨𝐮𝐩🛸https://chat.whatsapp.com/GDNPVuH3eMq72UOUHavZxH`,
-      //           `conversation`
-      //         )
-      //         .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+*•@${newString}*,シ︎𝙎𝙥𝙖𝙢/𝙏𝙚𝙨𝙩 𝐆𝐫𝐨𝐮𝐩🛸https://chat.whatsapp.com/GDNPVuH3eMq72UOUHavZxH`,
+            `conversation`
+          )
+          .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+      }
       return;
     } else {
       if (arg.length === 0) {
@@ -80,12 +82,12 @@ module.exports = {
             {
               mimetype: Mimetype.jpeg,
               caption: `*⚠️Seems like someone forgot to give URL!*
-  
-  *Usage Example*
-  ${ᴋᴇɪ}ytdl <URL>
-  
-  *NOTE:*
-  You Can Get URL by using ${ᴋᴇɪ}yts <song-name>`,
+
+*Usage Example*
+${ᴋᴇɪ}ytdl <URL>
+
+*NOTE:*
+You Can Get URL by using ${ᴋᴇɪ}yts <song-name>`,
             }
           )
           .catch((cᴇʀʀᴏʀ) => {
@@ -103,12 +105,12 @@ module.exports = {
             {
               mimetype: Mimetype.jpeg,
               caption: `*⚠️Seems like ${arg[0]} is not YouTube Link or not YouTube Single Video Link!*
-  
-  *Usage Example*
-  ${ᴋᴇɪ}ytdl <video-link>
-  
-  *NOTE:*
-  You Can Get URL by using ${ᴋᴇɪ}yts <song-name>`,
+
+*Usage Example*
+${ᴋᴇɪ}ytdl <video-link>
+
+*NOTE:*
+You Can Get URL by using ${ᴋᴇɪ}yts <song-name>`,
             }
           )
           .catch((cᴇʀʀᴏʀ) => {
@@ -155,25 +157,25 @@ module.exports = {
         const videos = FetchedLink.videos.slice(0, 1);
         videos.forEach(function (youfound) {
           Fetched = `*⛖𝐘𝐨𝐮𝐫 𝐌𝐮𝐬𝐢𝐜 𝐈𝐬 𝐍𝐨𝐰 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐢𝐧𝐠⛖*
-  _📥𝘋𝘰𝘸𝘯𝘭𝘰𝘢𝘥 𝘛𝘪𝘮𝘦 𝘥𝘦𝘱𝘦𝘯𝘥𝘴 𝘰𝘯 𝘔𝘶𝘴𝘪𝘤 𝘓𝘦𝘯𝘨𝘵𝘩_
-  
-  🍻—••÷ 𝐓𝐢𝐭𝐥𝐞 ÷••— 
-  ⪢ ${youfound.title}
-  
-  🙈—••÷ 𝐕𝐢𝐞𝐰𝐬 ÷••—
-  ⪢ ${youfound.views}
-  
-  ⏰—••÷ 𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧 ÷••—
-  ⪢ ${youfound.timestamp}
-  
-  ✒️—••÷ 𝐀𝐮𝐭𝐡𝐨𝐫 ÷••—
-  ⪢ ${youfound.author.name}
-  
-  🔗—••÷ 𝐋𝐢𝐧𝐤 ÷••—
-  ⪢ ${youfound.url}
-  
-  🛸—••÷ 𝗦𝗲𝗿𝘃𝗶𝗰𝗲 ÷••—
-  ⪢ ʏᴏᴜᴛᴜʙᴇ⭕ʏᴏᴜᴛᴜʙᴇ ᴍᴜꜱɪᴄ`;
+_📥𝘋𝘰𝘸𝘯𝘭𝘰𝘢𝘥 𝘛𝘪𝘮𝘦 𝘥𝘦𝘱𝘦𝘯𝘥𝘴 𝘰𝘯 𝘔𝘶𝘴𝘪𝘤 𝘓𝘦𝘯𝘨𝘵𝘩_
+
+🍻—••÷ 𝐓𝐢𝐭𝐥𝐞 ÷••— 
+⪢ ${youfound.title}
+
+🙈—••÷ 𝐕𝐢𝐞𝐰𝐬 ÷••—
+⪢ ${youfound.views}
+
+⏰—••÷ 𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧 ÷••—
+⪢ ${youfound.timestamp}
+
+✒️—••÷ 𝐀𝐮𝐭𝐡𝐨𝐫 ÷••—
+⪢ ${youfound.author.name}
+
+🔗—••÷ 𝐋𝐢𝐧𝐤 ÷••—
+⪢ ${youfound.url}
+
+🛸—••÷ 𝗦𝗲𝗿𝘃𝗶𝗰𝗲 ÷••—
+⪢ ʏᴏᴜᴛᴜʙᴇ⭕ʏᴏᴜᴛᴜʙᴇ ᴍᴜꜱɪᴄ`;
         });
         const { id } = getVideoId(arg.join(` `));
         await ʍɛɛℓιєηт

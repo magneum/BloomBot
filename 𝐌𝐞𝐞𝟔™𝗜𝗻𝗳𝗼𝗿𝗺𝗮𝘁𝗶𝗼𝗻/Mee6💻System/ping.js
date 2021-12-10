@@ -23,11 +23,10 @@ module.exports = {
       await ʍɛɛℓιєηт
         .sendMessage(
           ᴍᴇᴇ6.chatId,
-          `⬡••••••••⬡    *⦿𝐌𝐞𝐞𝟔™⦿*    ⬡••••••••⬡
+          `*⦿𝐌𝐞𝐞𝟔™   ⬡••••••••⬡*
 ❗ 𝙈𝙚𝙚6 𝙐𝙥𝙙𝙖𝙩𝙚 𝙋𝙚𝙣𝙙𝙞𝙣𝙜
 
-*💞Dҽαɾ @${newString},*
-𝘗𝘭𝘦𝘢𝘴𝘦 𝘜𝘱𝘥𝘢𝘵𝘦 𝘜𝘴𝘪𝘯𝘨 *${ᴋᴇɪ}update* 𝘰𝘳 𝘳𝘦𝘥𝘦𝘱𝘭𝘰𝘺 𝐌𝐞𝐞𝟔™!`,
+*•@${newString}*,𝘗𝘭𝘦𝘢𝘴𝘦 𝘜𝘱𝘥𝘢𝘵𝘦 𝘜𝘴𝘪𝘯𝘨 *${ᴋᴇɪ}update* 𝘰𝘳 𝘳𝘦𝘥𝘦𝘱𝘭𝘰𝘺 𝐌𝐞𝐞𝟔™!`,
           MessageType.text
         )
         .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
@@ -35,17 +34,20 @@ module.exports = {
       console.log("No commits to pull");
     }
     if (ᴍᴇᴇ6.chatId === "120363025343298860@g.us") {
-      console.log("Dev-only-Mode-Allowed!");
-      //       await ʍɛɛℓιєηт
-      //         .sendMessage(
-      //           ᴍᴇᴇ6.chatId,
-      //           `⬡••••••••⬡    *⦿𝐌𝐞𝐞𝟔™⦿*    ⬡••••••••⬡
+      if (!ᴍᴇᴇ6.fromMe) {
+        console.log("Dev-only-Mode-Allowed!");
+      }
+      if (ᴍᴇᴇ6.fromMe) {
+        await ʍɛɛℓιєηт
+          .sendMessage(
+            ᴍᴇᴇ6.chatId,
+            `*⦿𝐌𝐞𝐞𝟔™   ⬡••••••••⬡*
 
-      // ᴊᴏɪɴ ꜱᴘᴀᴍ ɢʀᴏᴜᴘ ᴛᴏ ᴜꜱᴇ ᴀɴʏ/ᴀʟʟ ᴍᴇᴇ6 ᴄᴏᴍᴍᴀɴᴅꜱ!
-      // シ︎𝐒𝐩𝐚𝐦 𝐆𝐫𝐨𝐮𝐩🛸https://chat.whatsapp.com/GDNPVuH3eMq72UOUHavZxH`,
-      //           `conversation`
-      //         )
-      //         .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+*•@${newString}*,シ︎𝙎𝙥𝙖𝙢/𝙏𝙚𝙨𝙩 𝐆𝐫𝐨𝐮𝐩🛸https://chat.whatsapp.com/GDNPVuH3eMq72UOUHavZxH`,
+            `conversation`
+          )
+          .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+      }
       return;
     } else {
       var str = ᴍᴇᴇ6.sender;
@@ -64,12 +66,11 @@ module.exports = {
             contextInfo: {
               mentionedJid: [ᴍᴇᴇ6.sender],
             },
-            caption: `⬡••••••••⬡    *⦿𝐌𝐞𝐞𝟔™⦿*    ⬡••••••••⬡
-  𝐈 𝐚𝐦 𝐌𝐫𝐌𝐞𝐞𝟔🛸𝐋𝐨𝐨𝐤 𝐀𝐭 𝐌𝐞! ⧪ 𝗔𝗱𝘃𝗮𝗻𝗰𝗲 𝗪𝗵𝗮𝘁𝘀𝗮𝗽𝗽 𝗕𝗼𝘁 ⧪
-  
-  *💞Dҽαɾ* @${newString}
-  *𝐌𝐞𝐞𝟔's Server Response Time Is:*
-  🛰️𝐏𝐢𝐧𝐠: _${latensie.toFixed(6)}s_`,
+            caption: `*⦿𝐌𝐞𝐞𝟔™   ⬡••••••••⬡*
+𝐈 𝐚𝐦 𝐌𝐫𝐌𝐞𝐞𝟔🛸𝐋𝐨𝐨𝐤 𝐀𝐭 𝐌𝐞! ⧪ 𝗔𝗱𝘃𝗮𝗻𝗰𝗲 𝗪𝗵𝗮𝘁𝘀𝗮𝗽𝗽 𝗕𝗼𝘁 ⧪
+
+*•@${newString}*,  *𝐌𝐞𝐞𝟔's Server Response Time Is:*
+🛰️𝐏𝐢𝐧𝐠: _${latensie.toFixed(6)}s_`,
           }
         )
         .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));

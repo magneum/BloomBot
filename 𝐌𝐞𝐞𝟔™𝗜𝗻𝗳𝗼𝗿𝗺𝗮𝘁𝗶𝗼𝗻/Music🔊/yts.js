@@ -24,11 +24,10 @@ module.exports = {
       await ʍɛɛℓιєηт
         .sendMessage(
           ᴍᴇᴇ6.chatId,
-          `⬡••••••••⬡    *⦿𝐌𝐞𝐞𝟔™⦿*    ⬡••••••••⬡
+          `*⦿𝐌𝐞𝐞𝟔™   ⬡••••••••⬡*
 ❗ 𝙈𝙚𝙚6 𝙐𝙥𝙙𝙖𝙩𝙚 𝙋𝙚𝙣𝙙𝙞𝙣𝙜
 
-*💞Dҽαɾ @${newString},*
-𝘗𝘭𝘦𝘢𝘴𝘦 𝘜𝘱𝘥𝘢𝘵𝘦 𝘜𝘴𝘪𝘯𝘨 *${ᴋᴇɪ}update* 𝘰𝘳 𝘳𝘦𝘥𝘦𝘱𝘭𝘰𝘺 𝐌𝐞𝐞𝟔™!`,
+*•@${newString}*,𝘗𝘭𝘦𝘢𝘴𝘦 𝘜𝘱𝘥𝘢𝘵𝘦 𝘜𝘴𝘪𝘯𝘨 *${ᴋᴇɪ}update* 𝘰𝘳 𝘳𝘦𝘥𝘦𝘱𝘭𝘰𝘺 𝐌𝐞𝐞𝟔™!`,
           MessageType.text
         )
         .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
@@ -36,17 +35,20 @@ module.exports = {
       console.log("No commits to pull");
     }
     if (ᴍᴇᴇ6.chatId === "120363025343298860@g.us") {
-      console.log("Dev-only-Mode-Allowed!");
-      //       await ʍɛɛℓιєηт
-      //         .sendMessage(
-      //           ᴍᴇᴇ6.chatId,
-      //           `⬡••••••••⬡    *⦿𝐌𝐞𝐞𝟔™⦿*    ⬡••••••••⬡
+      if (!ᴍᴇᴇ6.fromMe) {
+        console.log("Dev-only-Mode-Allowed!");
+      }
+      if (ᴍᴇᴇ6.fromMe) {
+        await ʍɛɛℓιєηт
+          .sendMessage(
+            ᴍᴇᴇ6.chatId,
+            `*⦿𝐌𝐞𝐞𝟔™   ⬡••••••••⬡*
 
-      // ᴊᴏɪɴ ꜱᴘᴀᴍ ɢʀᴏᴜᴘ ᴛᴏ ᴜꜱᴇ ᴀɴʏ/ᴀʟʟ ᴍᴇᴇ6 ᴄᴏᴍᴍᴀɴᴅꜱ!
-      // シ︎𝐒𝐩𝐚𝐦 𝐆𝐫𝐨𝐮𝐩🛸https://chat.whatsapp.com/GDNPVuH3eMq72UOUHavZxH`,
-      //           `conversation`
-      //         )
-      //         .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+*•@${newString}*,シ︎𝙎𝙥𝙖𝙢/𝙏𝙚𝙨𝙩 𝐆𝐫𝐨𝐮𝐩🛸https://chat.whatsapp.com/GDNPVuH3eMq72UOUHavZxH`,
+            `conversation`
+          )
+          .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+      }
       return;
     } else {
       if (arg.length === 0) {
@@ -60,12 +62,12 @@ module.exports = {
             {
               mimetype: Mimetype.jpeg,
               caption: `*⚠️Seems like someone forgot to give song-name!*
-  
-  *Usage Example*
-  ${ᴋᴇɪ}yts <song-name>
-  
-  *NOTE:*
-  You Can Get download audio by using ${ᴋᴇɪ}ytdl <song-url>`,
+
+*Usage Example*
+${ᴋᴇɪ}yts <song-name>
+
+*NOTE:*
+You Can Get download audio by using ${ᴋᴇɪ}ytdl <song-url>`,
             }
           )
           .catch((cᴇʀʀᴏʀ) => {
@@ -80,11 +82,11 @@ module.exports = {
         Fetched =
           Fetched +
           `*🥳𝐓𝐢𝐭𝐥𝐞↬* ${youfound.title}
-  *👀𝐕𝐢𝐞𝐰𝐬↬* ${youfound.views}
-  *🕐𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧↬* ${youfound.timestamp}
-  *📜𝐀𝐮𝐭𝐡𝐨𝐫↬* ${youfound.author.name}
-  *📜𝐋𝐢𝐧𝐤↬* ${youfound.url}
-  *📥𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐫↬* https://www.youtubepp.com/watch?v=${id}\n\n`;
+*👀𝐕𝐢𝐞𝐰𝐬↬* ${youfound.views}
+*🕐𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧↬* ${youfound.timestamp}
+*📜𝐀𝐮𝐭𝐡𝐨𝐫↬* ${youfound.author.name}
+*📜𝐋𝐢𝐧𝐤↬* ${youfound.url}
+*📥𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐫↬* https://www.youtubepp.com/watch?v=${id}\n\n`;
       });
       if (Fetched === ``) {
         ʍɛɛℓιєηт
@@ -108,7 +110,7 @@ module.exports = {
             mimetype: Mimetype.png,
             caption:
               `ᴛʜᴇꜱᴇ ᴀʀᴇ ᴛʜᴇ *ꜰɪʀꜱᴛ-5* ᴍᴏꜱᴛ ᴍᴀᴛᴄʜɪɴɢ ꜱᴇᴀʀᴄʜ ʀᴇꜱᴜʟᴛꜱ ꜰᴏʀ:
-  *🔎: ${c.toUpperCase()}*\n\n` + Fetched,
+*🔎: ${c.toUpperCase()}*\n\n` + Fetched,
           }
         )
         .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));

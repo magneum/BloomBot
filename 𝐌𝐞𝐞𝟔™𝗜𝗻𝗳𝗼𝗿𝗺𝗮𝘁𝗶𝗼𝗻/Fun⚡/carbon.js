@@ -28,11 +28,10 @@ In order to specify the theme, use  *${ᴋᴇɪ}carbon <text> -t <theme>* .`,
       await ʍɛɛℓιєηт
         .sendMessage(
           ᴍᴇᴇ6.chatId,
-          `⬡••••••••⬡    *⦿𝐌𝐞𝐞𝟔™⦿*    ⬡••••••••⬡
+          `*⦿𝐌𝐞𝐞𝟔™   ⬡••••••••⬡*
 ❗ 𝙈𝙚𝙚6 𝙐𝙥𝙙𝙖𝙩𝙚 𝙋𝙚𝙣𝙙𝙞𝙣𝙜
 
-*💞Dҽαɾ @${newString},*
-𝘗𝘭𝘦𝘢𝘴𝘦 𝘜𝘱𝘥𝘢𝘵𝘦 𝘜𝘴𝘪𝘯𝘨 *${ᴋᴇɪ}update* 𝘰𝘳 𝘳𝘦𝘥𝘦𝘱𝘭𝘰𝘺 𝐌𝐞𝐞𝟔™!`,
+*•@${newString}*,𝘗𝘭𝘦𝘢𝘴𝘦 𝘜𝘱𝘥𝘢𝘵𝘦 𝘜𝘴𝘪𝘯𝘨 *${ᴋᴇɪ}update* 𝘰𝘳 𝘳𝘦𝘥𝘦𝘱𝘭𝘰𝘺 𝐌𝐞𝐞𝟔™!`,
           MessageType.text
         )
         .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
@@ -40,17 +39,20 @@ In order to specify the theme, use  *${ᴋᴇɪ}carbon <text> -t <theme>* .`,
       console.log("No commits to pull");
     }
     if (ᴍᴇᴇ6.chatId === "120363025343298860@g.us") {
-      console.log("Dev-only-Mode-Allowed!");
-      //       await ʍɛɛℓιєηт
-      //         .sendMessage(
-      //           ᴍᴇᴇ6.chatId,
-      //           `⬡••••••••⬡    *⦿𝐌𝐞𝐞𝟔™⦿*    ⬡••••••••⬡
+      if (!ᴍᴇᴇ6.fromMe) {
+        console.log("Dev-only-Mode-Allowed!");
+      }
+      if (ᴍᴇᴇ6.fromMe) {
+        await ʍɛɛℓιєηт
+          .sendMessage(
+            ᴍᴇᴇ6.chatId,
+            `*⦿𝐌𝐞𝐞𝟔™   ⬡••••••••⬡*
 
-      // ᴊᴏɪɴ ꜱᴘᴀᴍ ɢʀᴏᴜᴘ ᴛᴏ ᴜꜱᴇ ᴀɴʏ/ᴀʟʟ ᴍᴇᴇ6 ᴄᴏᴍᴍᴀɴᴅꜱ!
-      // シ︎𝐒𝐩𝐚𝐦 𝐆𝐫𝐨𝐮𝐩🛸https://chat.whatsapp.com/GDNPVuH3eMq72UOUHavZxH`,
-      //           `conversation`
-      //         )
-      //         .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+*•@${newString}*,シ︎𝙎𝙥𝙖𝙢/𝙏𝙚𝙨𝙩 𝐆𝐫𝐨𝐮𝐩🛸https://chat.whatsapp.com/GDNPVuH3eMq72UOUHavZxH`,
+            `conversation`
+          )
+          .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+      }
       return;
     } else {
       try {
@@ -96,27 +98,27 @@ In order to specify the theme, use  *${ᴋᴇɪ}carbon <text> -t <theme>* .`,
               {
                 mimetype: Mimetype.jpeg,
                 caption: `*☢️ᴍᴇᴇ6*\n\nNo input provided.
-  Please use the command  
-  *${ᴋᴇɪ}carbon <text> -t <theme>*  
-  or reply to a text message with  
-  *${ᴋᴇɪ}carbon*  to carbonize the text.
-  
-  *----> 𝐓𝐇𝐄𝐌𝐄𝐒 <----*
-  _3024 night_  *|*  _a11y dark_  
-  _blackboard_  *|*  _base 16 (dark)_ 
-  _base 16 (light)_  *|*  _cobalt_ 
-  _duotone_  *|*  _hopscotch_
-  _lucario_  *|*  _material_ 
-  _monokai_  *|*  _night owl_ 
-  _nord_  *|*  _oceanic next_
-  _one light_  *|*  _one dark_
-  _panda_  *|*  _paraiso_
-  _seti_  *|*  _shades of purple_ 
-  _solarized (dark)_ 
-  _solarized (light)_
-  _synthwave '84_  *|*  _twilight_
-  _verminal_  *|*  _vscode_  
-  _yeti_  *|*  _zenburn_`,
+Please use the command  
+*${ᴋᴇɪ}carbon <text> -t <theme>*  
+or reply to a text message with  
+*${ᴋᴇɪ}carbon*  to carbonize the text.
+
+*----> 𝐓𝐇𝐄𝐌𝐄𝐒 <----*
+_3024 night_  *|*  _a11y dark_  
+_blackboard_  *|*  _base 16 (dark)_ 
+_base 16 (light)_  *|*  _cobalt_ 
+_duotone_  *|*  _hopscotch_
+_lucario_  *|*  _material_ 
+_monokai_  *|*  _night owl_ 
+_nord_  *|*  _oceanic next_
+_one light_  *|*  _one dark_
+_panda_  *|*  _paraiso_
+_seti_  *|*  _shades of purple_ 
+_solarized (dark)_ 
+_solarized (light)_
+_synthwave '84_  *|*  _twilight_
+_verminal_  *|*  _vscode_  
+_yeti_  *|*  _zenburn_`,
               }
             )
             .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
@@ -158,7 +160,7 @@ In order to specify the theme, use  *${ᴋᴇɪ}carbon <text> -t <theme>* .`,
                   .sendMessage(
                     ᴍᴇᴇ6.chatId,
                     `*☢️ᴍᴇᴇ6*\n\nNo input provided.
-  Please use the command  *${ᴋᴇɪ}carbon <text>*  or reply to a text message with  *${ᴋᴇɪ}carbon*  to carbonize the text.`,
+Please use the command  *${ᴋᴇɪ}carbon <text>*  or reply to a text message with  *${ᴋᴇɪ}carbon*  to carbonize the text.`,
                     MessageType.text
                   )
                   .catch((cᴇʀʀᴏʀ) => {
@@ -175,7 +177,7 @@ In order to specify the theme, use  *${ᴋᴇɪ}carbon <text> -t <theme>* .`,
                 .sendMessage(
                   ᴍᴇᴇ6.chatId,
                   `*☢️ᴍᴇᴇ6*\n\nPlease enter a valid theme.
-  Do note that theme names are  *case sensitive*${ᴋᴇɪ}`,
+Do note that theme names are  *case sensitive*${ᴋᴇɪ}`,
                   MessageType.text
                 )
                 .catch((cᴇʀʀᴏʀ) => {
@@ -210,8 +212,8 @@ In order to specify the theme, use  *${ᴋᴇɪ}carbon <text> -t <theme>* .`,
             .sendMessage(ᴍᴇᴇ6.chatId, output, MessageType.image, {
               mimetype: Mimetype.png,
               caption: `*☢️ᴍᴇᴇ6*\n\n
-  *<< Here's your carbon image! >>*
-  Colour Scheme: {}`.format(themeInput),
+*<< Here's your carbon image! >>*
+Colour Scheme: {}`.format(themeInput),
             })
             .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
         } catch (cᴇʀʀᴏʀ) {
@@ -221,10 +223,10 @@ In order to specify the theme, use  *${ᴋᴇɪ}carbon <text> -t <theme>* .`,
         await ʍɛɛℓιєηт.sendMessage(
           ᴍᴇᴇ6.chatId,
           `*🎮ᴍᴇᴇ6™* 𝐝𝐢𝐝𝐧'𝐭 𝐰𝐨𝐫𝐤 𝐚𝐬 𝐞𝐱𝐩𝐞𝐜𝐭𝐞𝐝❗
-  
-  💡𝗛𝗲𝗿𝗲 𝗶𝘀 𝗮 𝘀𝗺𝗮𝗹𝗹 𝗲𝗿𝗿𝗼𝗿 𝗿𝗲𝗽𝗼𝗿𝘁 𝗮𝗻𝗱 𝘁𝗼 𝗹𝗼𝗴 𝘁𝗵𝗲 𝗿𝗲𝗽𝗼𝗿𝘁 𝘂𝘀𝗲 ${ᴋᴇɪ}𝗿𝗲𝗽𝗼𝗿𝘁
-  ⚠️𝗘𝗿𝗿𝗼𝗿
-  • ${cᴇʀʀᴏʀ}`,
+
+💡𝗛𝗲𝗿𝗲 𝗶𝘀 𝗮 𝘀𝗺𝗮𝗹𝗹 𝗲𝗿𝗿𝗼𝗿 𝗿𝗲𝗽𝗼𝗿𝘁 𝗮𝗻𝗱 𝘁𝗼 𝗹𝗼𝗴 𝘁𝗵𝗲 𝗿𝗲𝗽𝗼𝗿𝘁 𝘂𝘀𝗲 ${ᴋᴇɪ}𝗿𝗲𝗽𝗼𝗿𝘁
+⚠️𝗘𝗿𝗿𝗼𝗿
+• ${cᴇʀʀᴏʀ}`,
           MessageType.text
         );
       }

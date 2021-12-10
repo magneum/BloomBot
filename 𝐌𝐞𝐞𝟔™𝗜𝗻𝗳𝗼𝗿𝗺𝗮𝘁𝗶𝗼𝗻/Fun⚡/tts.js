@@ -25,11 +25,10 @@ You can also reply to a text message with syntax  *${ᴋᴇɪ}tr <language>*  to
       await ʍɛɛℓιєηт
         .sendMessage(
           ᴍᴇᴇ6.chatId,
-          `⬡••••••••⬡    *⦿𝐌𝐞𝐞𝟔™⦿*    ⬡••••••••⬡
+          `*⦿𝐌𝐞𝐞𝟔™   ⬡••••••••⬡*
 ❗ 𝙈𝙚𝙚6 𝙐𝙥𝙙𝙖𝙩𝙚 𝙋𝙚𝙣𝙙𝙞𝙣𝙜
 
-*💞Dҽαɾ @${newString},*
-𝘗𝘭𝘦𝘢𝘴𝘦 𝘜𝘱𝘥𝘢𝘵𝘦 𝘜𝘴𝘪𝘯𝘨 *${ᴋᴇɪ}update* 𝘰𝘳 𝘳𝘦𝘥𝘦𝘱𝘭𝘰𝘺 𝐌𝐞𝐞𝟔™!`,
+*•@${newString}*,𝘗𝘭𝘦𝘢𝘴𝘦 𝘜𝘱𝘥𝘢𝘵𝘦 𝘜𝘴𝘪𝘯𝘨 *${ᴋᴇɪ}update* 𝘰𝘳 𝘳𝘦𝘥𝘦𝘱𝘭𝘰𝘺 𝐌𝐞𝐞𝟔™!`,
           MessageType.text
         )
         .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
@@ -37,17 +36,20 @@ You can also reply to a text message with syntax  *${ᴋᴇɪ}tr <language>*  to
       console.log("No commits to pull");
     }
     if (ᴍᴇᴇ6.chatId === "120363025343298860@g.us") {
-      console.log("Dev-only-Mode-Allowed!");
-      //       await ʍɛɛℓιєηт
-      //         .sendMessage(
-      //           ᴍᴇᴇ6.chatId,
-      //           `⬡••••••••⬡    *⦿𝐌𝐞𝐞𝟔™⦿*    ⬡••••••••⬡
+      if (!ᴍᴇᴇ6.fromMe) {
+        console.log("Dev-only-Mode-Allowed!");
+      }
+      if (ᴍᴇᴇ6.fromMe) {
+        await ʍɛɛℓιєηт
+          .sendMessage(
+            ᴍᴇᴇ6.chatId,
+            `*⦿𝐌𝐞𝐞𝟔™   ⬡••••••••⬡*
 
-      // ᴊᴏɪɴ ꜱᴘᴀᴍ ɢʀᴏᴜᴘ ᴛᴏ ᴜꜱᴇ ᴀɴʏ/ᴀʟʟ ᴍᴇᴇ6 ᴄᴏᴍᴍᴀɴᴅꜱ!
-      // シ︎𝐒𝐩𝐚𝐦 𝐆𝐫𝐨𝐮𝐩🛸https://chat.whatsapp.com/GDNPVuH3eMq72UOUHavZxH`,
-      //           `conversation`
-      //         )
-      //         .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+*•@${newString}*,シ︎𝙎𝙥𝙖𝙢/𝙏𝙚𝙨𝙩 𝐆𝐫𝐨𝐮𝐩🛸https://chat.whatsapp.com/GDNPVuH3eMq72UOUHavZxH`,
+            `conversation`
+          )
+          .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+      }
       return;
     } else {
       if (arg.length === 0) {
@@ -61,11 +63,11 @@ You can also reply to a text message with syntax  *${ᴋᴇɪ}tr <language>*  to
             {
               mimetype: Mimetype.jpeg,
               caption: `*⚠️Seems like someone forgot to give text or language!*
-  
-  *Usage Example*
-  *${ᴋᴇɪ}tts <text>*
-  *With language code:*
-  *${ᴋᴇɪ}tts <text> = <language_code>*`,
+
+*Usage Example*
+*${ᴋᴇɪ}tts <text>*
+*With language code:*
+*${ᴋᴇɪ}tts <text> = <language_code>*`,
             }
           )
           .catch((cᴇʀʀᴏʀ) => {
@@ -115,10 +117,10 @@ You can also reply to a text message with syntax  *${ᴋᴇɪ}tr <language>*  to
           ʍɛɛℓιєηт.sendMessage(
             ᴍᴇᴇ6.chatId,
             `*🎮ᴍᴇᴇ6™* 𝐝𝐢𝐝𝐧'𝐭 𝐰𝐨𝐫𝐤 𝐚𝐬 𝐞𝐱𝐩𝐞𝐜𝐭𝐞𝐝❗
-  
-  💡𝗛𝗲𝗿𝗲 𝗶𝘀 𝗮 𝘀𝗺𝗮𝗹𝗹 𝗲𝗿𝗿𝗼𝗿 𝗿𝗲𝗽𝗼𝗿𝘁 𝗮𝗻𝗱 𝘁𝗼 𝗹𝗼𝗴 𝘁𝗵𝗲 𝗿𝗲𝗽𝗼𝗿𝘁 𝘂𝘀𝗲 ${ᴋᴇɪ}𝗿𝗲𝗽𝗼𝗿𝘁
-  ⚠️𝗘𝗿𝗿𝗼𝗿
-  • ${cᴇʀʀᴏʀ}`,
+
+💡𝗛𝗲𝗿𝗲 𝗶𝘀 𝗮 𝘀𝗺𝗮𝗹𝗹 𝗲𝗿𝗿𝗼𝗿 𝗿𝗲𝗽𝗼𝗿𝘁 𝗮𝗻𝗱 𝘁𝗼 𝗹𝗼𝗴 𝘁𝗵𝗲 𝗿𝗲𝗽𝗼𝗿𝘁 𝘂𝘀𝗲 ${ᴋᴇɪ}𝗿𝗲𝗽𝗼𝗿𝘁
+⚠️𝗘𝗿𝗿𝗼𝗿
+• ${cᴇʀʀᴏʀ}`,
             MessageType.text
           );
         }

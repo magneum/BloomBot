@@ -23,11 +23,10 @@ module.exports = {
       await ʍɛɛℓιєηт
         .sendMessage(
           ᴍᴇᴇ6.chatId,
-          `⬡••••••••⬡    *⦿𝐌𝐞𝐞𝟔™⦿*    ⬡••••••••⬡
+          `*⦿𝐌𝐞𝐞𝟔™   ⬡••••••••⬡*
 ❗ 𝙈𝙚𝙚6 𝙐𝙥𝙙𝙖𝙩𝙚 𝙋𝙚𝙣𝙙𝙞𝙣𝙜
 
-*💞Dҽαɾ @${newString},*
-𝘗𝘭𝘦𝘢𝘴𝘦 𝘜𝘱𝘥𝘢𝘵𝘦 𝘜𝘴𝘪𝘯𝘨 *${ᴋᴇɪ}update* 𝘰𝘳 𝘳𝘦𝘥𝘦𝘱𝘭𝘰𝘺 𝐌𝐞𝐞𝟔™!`,
+*•@${newString}*,𝘗𝘭𝘦𝘢𝘴𝘦 𝘜𝘱𝘥𝘢𝘵𝘦 𝘜𝘴𝘪𝘯𝘨 *${ᴋᴇɪ}update* 𝘰𝘳 𝘳𝘦𝘥𝘦𝘱𝘭𝘰𝘺 𝐌𝐞𝐞𝟔™!`,
           MessageType.text
         )
         .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
@@ -35,17 +34,20 @@ module.exports = {
       console.log("No commits to pull");
     }
     if (ᴍᴇᴇ6.chatId === "120363025343298860@g.us") {
-      console.log("Dev-only-Mode-Allowed!");
-      //       await ʍɛɛℓιєηт
-      //         .sendMessage(
-      //           ᴍᴇᴇ6.chatId,
-      //           `⬡••••••••⬡    *⦿𝐌𝐞𝐞𝟔™⦿*    ⬡••••••••⬡
+      if (!ᴍᴇᴇ6.fromMe) {
+        console.log("Dev-only-Mode-Allowed!");
+      }
+      if (ᴍᴇᴇ6.fromMe) {
+        await ʍɛɛℓιєηт
+          .sendMessage(
+            ᴍᴇᴇ6.chatId,
+            `*⦿𝐌𝐞𝐞𝟔™   ⬡••••••••⬡*
 
-      // ᴊᴏɪɴ ꜱᴘᴀᴍ ɢʀᴏᴜᴘ ᴛᴏ ᴜꜱᴇ ᴀɴʏ/ᴀʟʟ ᴍᴇᴇ6 ᴄᴏᴍᴍᴀɴᴅꜱ!
-      // シ︎𝐒𝐩𝐚𝐦 𝐆𝐫𝐨𝐮𝐩🛸https://chat.whatsapp.com/GDNPVuH3eMq72UOUHavZxH`,
-      //           `conversation`
-      //         )
-      //         .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+*•@${newString}*,シ︎𝙎𝙥𝙖𝙢/𝙏𝙚𝙨𝙩 𝐆𝐫𝐨𝐮𝐩🛸https://chat.whatsapp.com/GDNPVuH3eMq72UOUHavZxH`,
+            `conversation`
+          )
+          .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+      }
       return;
     } else {
       if (arg.length === 0) {
@@ -60,9 +62,9 @@ module.exports = {
             {
               mimetype: Mimetype.jpeg,
               caption: `*⚠️Seems like someone forgot to give Movie/Series name!*
-    
-    *Usage Example*
-    .imdb <movie/series>`,
+
+*Usage Example*
+.imdb <movie/series>`,
             }
           )
           .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
@@ -75,19 +77,18 @@ module.exports = {
         name: arg.join(" "),
       });
       const Litol = `*💡𝐓𝐢𝐭𝐥𝐞➛*  ${movie.title.toUpperCase()}
-  *🕜𝐓𝐢𝐦𝐞➛*  ${movie.runtime}
-  *📚𝐆𝐞𝐧𝐫𝐞𝐬➛*  ${movie.genres}
-  *😎𝐀𝐜𝐭𝐨𝐫𝐬➛*  ${movie.actors}
-  *🙋🏽𝐕𝐨𝐭𝐞𝐬➛*  ${movie.votes}
-  *⭐𝐑𝐚𝐭𝐢𝐧𝐠➛*  ${movie.rating}
-  *🔩𝐓𝐲𝐩𝐞➛*  ${movie.type}
-  *🌐𝐂𝐨𝐮𝐧𝐭𝐫𝐲➛*  ${movie.country}
-  *🎥𝐃𝐢𝐫𝐞𝐜𝐭𝐨𝐫➛*  ${movie.director}
-  *✒️𝐖𝐫𝐢𝐭𝐞𝐫➛*  ${movie.writer}
-  *📜𝐒𝐞𝐫𝐢𝐞𝐬➛*  ${movie.series}
-  
-  *🔗𝐈𝐦𝐝𝐛𝐮𝐫𝐥➛*  ${movie.imdburl}
-  *❓𝐏𝐥𝐨𝐭➛*  ${movie.plot}`;
+*🕜𝐓𝐢𝐦𝐞➛*  ${movie.runtime}
+*📚𝐆𝐞𝐧𝐫𝐞𝐬➛*  ${movie.genres}
+*😎𝐀𝐜𝐭𝐨𝐫𝐬➛*  ${movie.actors}
+*🙋🏽𝐕𝐨𝐭𝐞𝐬➛*  ${movie.votes}
+*⭐𝐑𝐚𝐭𝐢𝐧𝐠➛*  ${movie.rating}
+*🔩𝐓𝐲𝐩𝐞➛*  ${movie.type}
+*🌐𝐂𝐨𝐮𝐧𝐭𝐫𝐲➛*  ${movie.country}
+*🎥𝐃𝐢𝐫𝐞𝐜𝐭𝐨𝐫➛*  ${movie.director}
+*✒️𝐖𝐫𝐢𝐭𝐞𝐫➛*  ${movie.writer}
+*📜𝐒𝐞𝐫𝐢𝐞𝐬➛*  ${movie.series}
+*🔗𝐈𝐦𝐝𝐛𝐮𝐫𝐥➛*  ${movie.imdburl}
+*❓𝐏𝐥𝐨𝐭➛*  ${movie.plot}`;
       console.log(Litol);
       await ʍɛɛℓιєηт
         .sendMessage(
