@@ -52,7 +52,7 @@ const env = {
   ARC: "https://i.postimg.cc/Nf3D2RZx/Mee6-Args.png",
   UPT: "https://i.postimg.cc/FH22ny07/Meeseeks-Box.png",
   PRIVACY: process.env.PRIVACY === undefined ? `public` : process.env.PRIVACY,
-  SUDO: process.env.KING === undefined ? `` : process.env.KING,
+  SUDO: `918436686758 917430922909 918250889325`,
 };
 module.exports = env;
 // ⬡==================⬡-----------------⦿𝐌𝐞𝐞𝟔™⦿-----------------⬡==================⬡

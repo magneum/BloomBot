@@ -13,43 +13,45 @@ module.exports = {
   commandType: "Anime😈",
   description: `I know you like anime poke`,
   async handle(ʍɛɛℓιєηт, chat, ᴍᴇᴇ6, arg) {
-    const ᴍᴇᴇgit = require("simple-git")();
+    // ⬡==================⬡-----------------⦿𝐌𝐞𝐞𝟔™⦿-----------------⬡==================⬡
     await ᴍᴇᴇgit.fetch();
+    var Sender = ᴍᴇᴇ6.sender;
     var ɴᴇᴡᴍᴇᴇ6 = await ᴍᴇᴇgit.log(["KrakinzLab..origin/KrakinzLab"]);
+    var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
+    personreceived = Receiver.substring(0, Receiver.length - 15);
+    personsending = Sender.substring(0, Sender.length - 15);
+    // ⬡==================⬡-----------------⦿𝐌𝐞𝐞𝟔™⦿-----------------⬡==================⬡
     if (ɴᴇᴡᴍᴇᴇ6.total != 0) {
-      console.log(ɴᴇᴡᴍᴇᴇ6);
-      var str = ᴍᴇᴇ6.sender;
-      var newString = str.substring(0, str.length - 15);
       await ʍɛɛℓιєηт
         .sendMessage(
           ᴍᴇᴇ6.logGroup,
-          `*⦿𝐌𝐞𝐞𝟔™   ⬡••••••••⬡*
-❗ 𝙈𝙚𝙚6 𝙐𝙥𝙙𝙖𝙩𝙚 𝙋𝙚𝙣𝙙𝙞𝙣𝙜
+          `*👓𝓜𝓮𝓮6™* ▽ 𝙒𝙝𝙖𝙩𝙨𝙖𝙥𝙥 𝙐𝙨𝙚𝙧𝘽𝙤𝙩
 
-*•@${newString}*,𝘗𝘭𝘦𝘢𝘴𝘦 𝘜𝘱𝘥𝘢𝘵𝘦 𝘜𝘴𝘪𝘯𝘨 *${ᴋᴇɪ}update* 𝘰𝘳 𝘳𝘦𝘥𝘦𝘱𝘭𝘰𝘺 𝐌𝐞𝐞𝟔™!`,
+❗ *👓𝓜𝓮𝓮6™* 𝙐𝙥𝙙𝙖𝙩𝙚* 𝙋𝙚𝙣𝙙𝙞𝙣𝙜
+*•@${personsending}*,𝘗𝘭𝘦𝘢𝘴𝘦 𝘜𝘱𝘥𝘢𝘵𝘦 𝘜𝘴𝘪𝘯𝘨 *${ᴋᴇɪ}update* 𝘰𝘳 𝘳𝘦𝘥𝘦𝘱𝘭𝘰𝘺 𝐌𝐞𝐞𝟔™!`,
           MessageType.text
         )
         .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
-    } else {
-      console.log("No commits to pull");
     }
+    // ⬡==================⬡-----------------⦿𝐌𝐞𝐞𝟔™⦿-----------------⬡==================⬡
     if (ᴍᴇᴇ6.chatId === "120363025343298860@g.us") {
-      if (!ᴍᴇᴇ6.fromMe) {
-        console.log("Dev-only-Mode-Allowed!");
-      }
-      if (ᴍᴇᴇ6.fromMe) {
+      if (!ᴍᴇᴇ6.fromMe) return;
+      if (!ᴍᴇᴇ6.isSenderSUDO) {
         await ʍɛɛℓιєηт
           .sendMessage(
             ᴍᴇᴇ6.chatId,
-            `*⦿𝐌𝐞𝐞𝟔™   ⬡••••••••⬡*
+            `*👓𝓜𝓮𝓮6™* ▽ 𝙒𝙝𝙖𝙩𝙨𝙖𝙥𝙥 𝙐𝙨𝙚𝙧𝘽𝙤𝙩
 
-*•@${newString}*,シ︎𝙎𝙥𝙖𝙢/𝙏𝙚𝙨𝙩 𝐆𝐫𝐨𝐮𝐩🛸https://chat.whatsapp.com/GDNPVuH3eMq72UOUHavZxH`,
+*•@${personsending}*,
+シ︎𝙎𝙥𝙖𝙢/𝙏𝙚𝙨𝙩 𝐆𝐫𝐨𝐮𝐩🛸 https://chat.whatsapp.com/GDNPVuH3eMq72UOUHavZxH`,
             `conversation`
           )
           .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
       }
       return;
-    } else {
+    }
+    // ⬡==================⬡-----------------⦿𝐌𝐞𝐞𝟔™⦿-----------------⬡==================⬡
+    if (ᴍᴇᴇ6.isGroup && ᴍᴇᴇ6.isReply) {
       await ʍɛɛℓιєηт
         .sendMessage(
           ᴍᴇᴇ6.chatId,
@@ -58,11 +60,54 @@ module.exports = {
           },
           MessageType.image,
           {
-            mimetype: Mimetype.jpeg,
-            caption: `_ᴘᴏᴡᴇʀᴇᴅ ʙʏ_\n*⚡𝐌𝐞𝐞𝟔™*`,
+            mimetype: Mimetype.jpeg || Mimetype.png,
+            contextInfo: { mentionedJid: [personsending, personreceived] },
+            caption: `*👓𝓜𝓮𝓮6™* ▽ 𝙒𝙝𝙖𝙩𝙨𝙖𝙥𝙥 𝙐𝙨𝙚𝙧𝘽𝙤𝙩
+
+*😒@${personsending}* is poking *😒@${personreceived}*`,
+          }
+        )
+        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+    }
+    // ⬡==================⬡-----------------⦿𝐌𝐞𝐞𝟔™⦿-----------------⬡==================⬡
+    if (ᴍᴇᴇ6.isGroup && !ᴍᴇᴇ6.isReply) {
+      await ʍɛɛℓιєηт
+        .sendMessage(
+          ᴍᴇᴇ6.chatId,
+          {
+            url: await anime.poke(),
+          },
+          MessageType.image,
+          {
+            mimetype: Mimetype.jpeg || Mimetype.png,
+            contextInfo: { mentionedJid: [personsending] },
+            caption: `*👓𝓜𝓮𝓮6™* ▽ 𝙒𝙝𝙖𝙩𝙨𝙖𝙥𝙥 𝙐𝙨𝙚𝙧𝘽𝙤𝙩
+  
+*😒@${personsending}* is poking!`,
+          }
+        )
+        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
+    }
+    // ⬡==================⬡-----------------⦿𝐌𝐞𝐞𝟔™⦿-----------------⬡==================⬡
+    if (!ᴍᴇᴇ6.isGroup) {
+      await ʍɛɛℓιєηт
+        .sendMessage(
+          ᴍᴇᴇ6.chatId,
+          {
+            url: await anime.poke(),
+          },
+          MessageType.image,
+          {
+            mimetype: Mimetype.jpeg || Mimetype.png,
+            caption: `*👓𝓜𝓮𝓮6™* ▽ 𝙒𝙝𝙖𝙩𝙨𝙖𝙥𝙥 𝙐𝙨𝙚𝙧𝘽𝙤𝙩
+
+*😒Poking!*`,
           }
         )
         .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
     }
   },
 };
+// ⬡==================⬡-----------------⦿𝐌𝐞𝐞𝟔™⦿-----------------⬡==================⬡
+// 🛸ᴍᴇᴇ6™ ᴀᴅᴠᴀɴᴄᴇᴅ ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ 80+ ᴄᴏᴍᴍᴀɴᴅꜱ ꜰᴏʀ ʙᴏᴛʜ ᴘʀɪᴠᴀᴛᴇ ᴀɴᴅ ɢʀᴏᴜᴘ-ᴜꜱᴀɢᴇ🛸
+// ⬡==================⬡-----------------⦿𝐌𝐞𝐞𝟔™⦿-----------------⬡==================⬡
