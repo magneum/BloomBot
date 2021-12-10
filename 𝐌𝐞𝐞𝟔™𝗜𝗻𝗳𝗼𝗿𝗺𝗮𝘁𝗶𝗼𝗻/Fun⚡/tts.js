@@ -24,7 +24,7 @@ You can also reply to a text message with syntax  *${ᴋᴇɪ}tr <language>*  to
       var newString = str.substring(0, str.length - 15);
       await ʍɛɛℓιєηт
         .sendMessage(
-          ᴍᴇᴇ6.chatId,
+          ᴍᴇᴇ6.logGroup,
           `*⦿𝐌𝐞𝐞𝟔™   ⬡••••••••⬡*
 ❗ 𝙈𝙚𝙚6 𝙐𝙥𝙙𝙖𝙩𝙚 𝙋𝙚𝙣𝙙𝙞𝙣𝙜
 
