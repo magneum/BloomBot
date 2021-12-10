@@ -3,6 +3,7 @@ const ℓιєηт = require("../../ᴍᴇᴇ6/catch");
 const speed = require("performance-now");
 const ꜱɪɢɴ = require(`../../ᴍᴇᴇ6/ꜱɪɢɴ`);
 const os = require("os");
+const vers = require(`../../package.json`);
 var ᴋᴇɪᴇx = new RegExp(ꜱɪɢɴ.Mee6IX, "g");
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 const ᴍᴇᴇgit = require("simple-git")();
@@ -200,9 +201,10 @@ many many more!
 
 *•@${personsending}*,
 シ︎💡𝐏𝐫𝐞𝐟𝐢𝐱: ${ᴋᴇɪ}
+シ︎⚙️𝗩𝗲𝗿𝘀𝗶𝗼𝗻: ￫ ${vers.vers}
+シ︎💻𝐏𝐥𝐚𝐭𝐟𝐨𝐫𝐦: _${os.platform()}_
 シ︎🛰️𝐏𝐢𝐧𝐠: _${latensie.toFixed(6)}s_
 シ︎⚰️𝐔𝐩𝐓𝐢𝐦𝐞: _${runtime(process.uptime())}_
-シ︎💻𝐏𝐥𝐚𝐭𝐟𝐨𝐫𝐦: _${os.platform()}_
 
 
 ${MeeHelper}‍`,
