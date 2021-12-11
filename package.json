@@ -1,12 +1,12 @@
 {
     "name": "mee6",
-    "main": "MeeSeeks™.js",
-    "vers": "ʙᴇᴛᴀ-10.ᴊᴋ.ɴɪɢʜᴛʟʏ",
+    "main": "𝓜𝓮𝓮6™.js",
+    "vers": "ʙᴇᴛᴀ-11.x.ɴɪɢʜᴛʟʏ",
     "engines": {
         "node": ">=17.x"
     },
     "dependencies": {
-        "@adiwajshing/baileys": "^3.5.3",
+        "@adiwajshing/baileys": "*",
         "@ffmpeg-installer/ffmpeg": "^1.1.0",
         "@ffprobe-installer/ffprobe": "^1.2.0",
         "@vitalets/google-translate-api": "^7.0.0",

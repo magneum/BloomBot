@@ -13,10 +13,10 @@
 ```sh
 💻 𝗪𝗵𝗮𝘁 𝗖𝗮𝗻 𝗕𝗼𝘁 𝗗𝗼???
 
-🎮ᴍᴇᴇ6
+🎮𝓜𝓮𝓮6
 🔸 ᴀᴅᴠᴀɴᴄᴇᴅ ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ 80+ ᴄᴏᴍᴍᴀɴᴅꜱ ꜰᴏʀ ʙᴏᴛʜ ᴘʀɪᴠᴀᴛᴇ ᴀɴᴅ ɢʀᴏᴜᴘ-ᴜꜱᴀɢᴇ
-🔸 ᴍᴇᴇ6 is written in JavaScript and is by far the most advance Whatsapp Userbot.
-🔸 Use ᴍᴇᴇ6 in both public-groups and private
+🔸 𝓜𝓮𝓮6 is written in JavaScript and is by far the most advance Whatsapp Userbot.
+🔸 Use 𝓜𝓮𝓮6 in both public-groups and private
 🔸 So many commands that will blow up the every-day use of boring whatsapp.
 ```
 
@@ -59,7 +59,7 @@
 Apache License
 Version 2.0, January 2004
 http://www.apache.org/licenses
-—••÷[🎮ᴍᴇᴇ6]÷••—
+—••÷[🎮𝓜𝓮𝓮6]÷••—
 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵
 has been licensed under Apache License
 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
