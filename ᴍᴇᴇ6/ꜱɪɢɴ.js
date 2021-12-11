@@ -47,7 +47,7 @@ const env = {
           },
         }),
   ERROR: "https://i.postimg.cc/q7GB8m6s/Error0.png",
-  MEE: "https://i.postimg.cc/Kvx8ZS6Q/Mee6.png",
+  MEE: "https://i.postimg.cc/RFCw6K0Z/Mee6.png",
   INVL: "https://i.postimg.cc/v8p25RV9/Mee6-Invalid.png",
   ARC: "https://i.postimg.cc/Nf3D2RZx/Mee6-Args.png",
   UPT: "https://i.postimg.cc/FH22ny07/Meeseeks-Box.png",

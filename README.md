@@ -5,7 +5,7 @@
 ʏᴏᴜʀ ᴀꜱꜱɪꜱꜱᴛᴀɴᴛ ꜰᴏʀ ᴍᴀᴋɪɴɢ ʙᴏʀɪɴɢ ᴡʜᴀᴛꜱᴀᴘᴘ ᴀ ʙᴇᴛᴛᴇʀ ᴀᴅᴠᴀɴᴄᴇ ᴀᴘᴘ!
 
 <p align="center">
-  <img src="https://i.postimg.cc/RZ11rBnw/Mee6.png" height="400px"/>
+  <img src="https://i.postimg.cc/RFCw6K0Z/Mee6.png" height="400px"/>
 </p>
 
 # ❓ 𝖂𝖍𝖞 𝕸𝖆𝖉𝖊 𝕿𝖍𝖎𝖘 𝕭𝖔𝖙?
