@@ -70,8 +70,8 @@ module.exports = {
 シ︎🛸𝐆𝐫𝐨𝐮𝐩: _https://chat.whatsapp.com/FmMcEeSqZQw85qAkgUs3f5_
 
 
-*↦ ʜᴇʀᴇ ᴀʀᴇ ᴀʟʟ ᴄᴀᴛᴇɢᴏʀʏ ꜰᴏʀ ᴄᴏᴍᴍᴀɴᴅꜱ ↤*
-  |Command|        |Category|
+*↦ ʜᴇʀᴇ ᴀʀᴇ ᴛʜᴇ ᴄᴀᴛᴇɢᴏʀɪᴇꜱ ↤*
+|Command|          |Category|
 ⬣ *${ᴋᴇɪ}help1* ➾  🛸𝙎𝙮𝙨𝙩𝙚𝙢
 ⬣ *${ᴋᴇɪ}help2* ➾  🤩𝘼𝙣𝙞𝙢𝙚
 ⬣ *${ᴋᴇɪ}help3* ➾  🎙️𝙈𝙪𝙨𝙞𝙘
