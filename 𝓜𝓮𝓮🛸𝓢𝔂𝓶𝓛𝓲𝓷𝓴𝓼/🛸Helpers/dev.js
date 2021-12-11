@@ -36,26 +36,26 @@ module.exports = {
     timestampe = speed();
     latensie = speed() - timestampe;
     // ⬡==================⬡-----------------⦿𝐌𝐞𝐞𝟔™⦿-----------------⬡==================⬡
-    let content = fs.readFileSync("./𝓜𝓮𝓮6🧀𝓒𝓻𝓪𝓽𝓮/Mee6.png");
+    let content = fs.readFileSync("./𝓜𝓮𝓮6🧀𝓒𝓻𝓪𝓽𝓮/giphy.gif");
     const media = await ʍɛɛℓιєηт.prepareMessage(
       𝓜𝓮𝓮6.chatId,
       content,
-      MessageType.image
+      MessageType.video
     );
     const buttons = [
       {
-        buttonId: `${ᴋᴇɪ}help1`,
-        buttonText: { displayText: `${ᴋᴇɪ}help1` },
+        buttonId: `${ᴋᴇɪ}help`,
+        buttonText: { displayText: `${ᴋᴇɪ}help` },
         type: 1,
       },
       {
-        buttonId: `${ᴋᴇɪ}help2`,
-        buttonText: { displayText: `${ᴋᴇɪ}help2` },
+        buttonId: `${ᴋᴇɪ}ping`,
+        buttonText: { displayText: `${ᴋᴇɪ}ping` },
         type: 1,
       },
       {
-        buttonId: `${ᴋᴇɪ}help3`,
-        buttonText: { displayText: `${ᴋᴇɪ}help3` },
+        buttonId: `${ᴋᴇɪ}group`,
+        buttonText: { displayText: `${ᴋᴇɪ}group` },
         type: 1,
       },
     ];
@@ -78,8 +78,8 @@ module.exports = {
       footerText: `_⦿ᴘᴏᴡᴇʀᴇᴅ ʙʏ_
 *👓𝓜𝓮𝓮6™ △▽ 𝖂𝖍𝖆𝖙𝖘𝖆𝖕𝖕-𝖀𝖘𝖊𝖗𝖇𝖔𝖙*`,
       buttons: buttons,
-      headerType: 4,
-      imageMessage: media.message.imageMessage,
+      headerType: 5,
+      videoMessage: media.message.videoMessage.gifPlayback,
     };
     await ʍɛɛℓιєηт.sendMessage(
       𝓜𝓮𝓮6.chatId,

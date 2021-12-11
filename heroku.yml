@@ -2,4 +2,4 @@ build:
   docker:
     worker: Dockerfile
 run:
-   worker: node MeeSeeks™.js
+   worker: node 𝓜𝓮𝓮6™.js

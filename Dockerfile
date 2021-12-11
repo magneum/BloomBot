@@ -11,4 +11,4 @@ RUN cd Mee6
 WORKDIR /Mee6
 RUN npm install --force
 RUN touch ~/.hushlogin
-CMD node MeeSeeks™.js
+CMD node 𝓜𝓮𝓮6™.js
