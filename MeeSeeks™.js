@@ -460,6 +460,8 @@ ${Fetched.message}`,
       );
       const command = Mee6Sitrep.get(ᴍᴇᴇ6.commandName);
       var arg = ᴍᴇᴇ6.body.trim().split(/\s+/).slice(1);
+      var Sender = ᴍᴇᴇ6.sender;
+      personsending = Sender.substring(0, Sender.length - 15);
       if (!command) {
         return ʍɛɛℓιєηт
           .sendMessage(
@@ -470,10 +472,12 @@ ${Fetched.message}`,
             MessageType.image,
             {
               mimetype: Mimetype.png,
-              caption: `*⚠️𝗜𝗻𝘃𝗮𝗹𝗶𝗱 ᴍᴇᴇ6 𝗖𝗼𝗺𝗺𝗮𝗻𝗱*
+              contextInfo: {
+                mentionedJid: [Sender],
+              },
+              caption: `𝗜𝗻𝘃𝗮𝗹𝗶𝗱 𝗖𝗼𝗺𝗺𝗮𝗻𝗱: *${arg}*
 
-*No such command found.*
-Please Use *${ᴋᴇɪ}help to get the list of available commands*`,
+*•@${personsending},Use ${ᴋᴇɪ}help to get the list of available commands*`,
             }
           )
           .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, ᴍᴇᴇ6));
