@@ -6,6 +6,7 @@
         "node": ">=17.x"
     },
     "dependencies": {
+        "@adiwajshing/baileys": "^3.5.3",
         "@ffmpeg-installer/ffmpeg": "^1.1.0",
         "@ffprobe-installer/ffprobe": "^1.2.0",
         "@vitalets/google-translate-api": "^7.0.0",

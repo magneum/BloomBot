@@ -76,16 +76,16 @@ async function 𝓜𝓮𝓮6s() {
   var Mee6Sitrep = new Map();
   if (ꜱɪɢɴ.HEROKU_API === `Null` || ꜱɪɢɴ.HEROKU_BOT_NAME === `Null`) {
     console.log(
-      Kolor.yellow(
+      Kolor.yellow.bold(
         `𝐌𝐞𝐞𝟔™❌𝗘𝗿𝗿𝗼𝗿⬰ 𝐒𝐞𝐞𝐦𝐬 𝐥𝐢𝐤𝐞 𝐇𝐞𝐫𝐨𝐤𝐮 𝐯𝐚𝐫𝐬 𝐚𝐫𝐞 𝐢𝐧𝐯𝐚𝐥𝐢𝐝.𝐏𝐥𝐞𝐚𝐬𝐞 𝐜𝐡𝐞𝐜𝐤 𝐚𝐧𝐝 𝐫𝐞𝐭𝐫𝐲!`
       )
     );
     process.exit(0);
   }
   console.log(
-    Kolor.yellow(`⬡=================⬡    ⦿𝐌𝐞𝐞𝟔™⦿    ⬡=================⬡`)
+    Kolor.yellow.bold(`⬡=================⬡    ⦿𝐌𝐞𝐞𝟔™⦿    ⬡=================⬡`)
   );
-  console.log(Kolor.yellow(`𝐌𝐞𝐞𝟔™💡𝗜𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻⬰ 𝗖𝗵𝗲𝗰𝗸𝗶𝗻𝗴 𝗳𝗼𝗿 𝘂𝗽𝗱𝗮𝘁𝗲𝘀...`));
+  console.log(Kolor.yellow.bold(`𝐌𝐞𝐞𝟔™💡𝗜𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻⬰ 𝗖𝗵𝗲𝗰𝗸𝗶𝗻𝗴 𝗳𝗼𝗿 𝘂𝗽𝗱𝗮𝘁𝗲𝘀...`));
   await AutoMeeUpdate();
   try {
     var session = 𝓜𝓮𝓮6ֆʏռօք.Mee6reignite(ꜱɪɢɴ.Mee6);
@@ -97,11 +97,11 @@ async function 𝓜𝓮𝓮6s() {
       cᴇʀʀᴏʀ instanceof SyntaxError
     ) {
       console.log(
-        Kolor.red(`𝗜𝗻𝗰𝗼𝗿𝗿𝗲𝗰𝘁 𝗦𝗲𝘀𝘀𝗶𝗼𝗻 𝗦𝘁𝗿𝗶𝗻𝗴. 𝗣𝗹𝗲𝗮𝘀𝗲 𝗮𝘂𝘁𝗵𝗲𝗻𝘁𝗶𝗰𝗮𝘁𝗲 𝗮𝗴𝗮𝗶𝗻!`)
+        Kolor.red.bold(`𝗜𝗻𝗰𝗼𝗿𝗿𝗲𝗰𝘁 𝗦𝗲𝘀𝘀𝗶𝗼𝗻 𝗦𝘁𝗿𝗶𝗻𝗴. 𝗣𝗹𝗲𝗮𝘀𝗲 𝗮𝘂𝘁𝗵𝗲𝗻𝘁𝗶𝗰𝗮𝘁𝗲 𝗮𝗴𝗮𝗶𝗻!`)
       );
       process.exit(0);
     } else {
-      console.log(Kolor.red(`SOMETHING WENT WRONG.\n`));
+      console.log(Kolor.red.bold(`SOMETHING WENT WRONG.\n`));
       process.exit(0);
     }
   }
@@ -110,10 +110,10 @@ async function 𝓜𝓮𝓮6s() {
   // ⬡==================⬡-----------------⦿𝐌𝐞𝐞𝟔™⦿-----------------⬡=================
   ʍɛɛℓιєηт.on(`connecting`, async () => {
     console.log(
-      Kolor.yellow(`⬡=================⬡    ⦿𝐌𝐞𝐞𝟔™⦿    ⬡=================⬡`)
+      Kolor.yellow.bold(`⬡=================⬡    ⦿𝐌𝐞𝐞𝟔™⦿    ⬡=================⬡`)
     );
     console.log(
-      Kolor.yellow(`𝐌𝐞𝐞𝟔™💡𝗜𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻⬰  𝘊𝘰𝘯𝘯𝘦𝘤𝘵𝘪𝘯𝘨 𝘵𝘰 𝘞𝘩𝘢𝘵𝘴𝘈𝘱𝘱...🤖`)
+      Kolor.yellow.bold(`𝐌𝐞𝐞𝟔™💡𝗜𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻⬰  𝘊𝘰𝘯𝘯𝘦𝘤𝘵𝘪𝘯𝘨 𝘵𝘰 𝘞𝘩𝘢𝘵𝘴𝘈𝘱𝘱...🤖`)
     );
   });
   // ⬡==================⬡-----------------⦿𝐌𝐞𝐞𝟔™⦿-----------------⬡==================⬡
@@ -121,10 +121,10 @@ async function 𝓜𝓮𝓮6s() {
   // ⬡==================⬡-----------------⦿𝐌𝐞𝐞𝟔™⦿-----------------⬡=================
   ʍɛɛℓιєηт.on(`open`, async () => {
     console.log(
-      Kolor.yellow(`⬡=================⬡    ⦿𝐌𝐞𝐞𝟔™⦿    ⬡=================⬡`)
+      Kolor.yellow.bold(`⬡=================⬡    ⦿𝐌𝐞𝐞𝟔™⦿    ⬡=================⬡`)
     );
     console.log(
-      Kolor.yellow(`𝐌𝐞𝐞𝟔™💡𝗜𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻⬰  𝘊𝘰𝘯𝘯𝘦𝘤𝘵𝘪𝘯𝘨 𝘵𝘰 𝘋𝘢𝘵𝘢𝘣𝘢𝘴𝘦...✅`)
+      Kolor.yellow.bold(`𝐌𝐞𝐞𝟔™💡𝗜𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻⬰  𝘊𝘰𝘯𝘯𝘦𝘤𝘵𝘪𝘯𝘨 𝘵𝘰 𝘋𝘢𝘵𝘢𝘣𝘢𝘴𝘦...✅`)
     );
     try {
       await 𝓜𝓮𝓮6sql.authenticate();
@@ -132,19 +132,21 @@ async function 𝓜𝓮𝓮6s() {
       console.error(`𝐌𝐞𝐞𝟔™❌𝗘𝗿𝗿𝗼𝗿⬰ 𝗨𝗻𝗮𝗯𝗹𝗲 𝘁𝗼 𝗰𝗼𝗻𝗻𝗲𝗰𝘁 𝘁𝗼 𝘁𝗵𝗲 𝗱𝗮𝘁𝗮𝗯𝗮𝘀𝗲:`, error);
     }
     console.log(
-      Kolor.yellow(`⬡=================⬡    ⦿𝐌𝐞𝐞𝟔™⦿    ⬡=================⬡`)
+      Kolor.yellow.bold(`⬡=================⬡    ⦿𝐌𝐞𝐞𝟔™⦿    ⬡=================⬡`)
     );
     console.log(
-      Kolor.yellow(`𝐌𝐞𝐞𝟔™💡𝗜𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻⬰  𝘚𝘺𝘯𝘤𝘪𝘯𝘨 𝘋𝘢𝘵𝘢 𝘸𝘪𝘵𝘩 𝘏𝘰𝘴𝘵...✅`)
+      Kolor.yellow.bold(`𝐌𝐞𝐞𝟔™💡𝗜𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻⬰  𝘚𝘺𝘯𝘤𝘪𝘯𝘨 𝘋𝘢𝘵𝘢 𝘸𝘪𝘵𝘩 𝘏𝘰𝘴𝘵...✅`)
     );
     await 𝓜𝓮𝓮6sql.sync();
     console.clear();
     console.log(
-      Kolor.yellow(
+      Kolor.yellow.bold(
         `\n\n\n\n\n\n⬡=================⬡    ⦿𝐌𝐞𝐞𝟔™⦿    ⬡=================⬡`
       )
     );
-    console.log(Kolor.yellow(`𝐌𝐞𝐞𝟔™💡𝗜𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻⬰  𝘐𝘯𝘴𝘵𝘢𝘭𝘭𝘪𝘯𝘨 𝘗𝘭𝘶𝘨𝘪𝘯𝘴...✅`));
+    console.log(
+      Kolor.yellow.bold(`𝐌𝐞𝐞𝟔™💡𝗜𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻⬰  𝘐𝘯𝘴𝘵𝘢𝘭𝘭𝘪𝘯𝘨 𝘗𝘭𝘶𝘨𝘪𝘯𝘴...✅`)
+    );
     const Folders = fs.readdirSync(`./𝓜𝓮𝓮🛸𝓢𝔂𝓶𝓛𝓲𝓷𝓴𝓼`);
     for (const folder of Folders) {
       const commandFiles = fs
@@ -154,24 +156,25 @@ async function 𝓜𝓮𝓮6s() {
         const command = require(`./𝓜𝓮𝓮🛸𝓢𝔂𝓶𝓛𝓲𝓷𝓴𝓼/${folder}/${file}`);
         Mee6Sitrep.set(command.name, command);
         console.log(
-          Kolor.yellow(`𝐌𝐞𝐞𝟔™💡𝗜𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻⬰  `),
-          Kolor.green(command.name.toUpperCase())
+          Kolor.yellow.bold(`𝐌𝐞𝐞𝟔™💡𝗜𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻⬰  `),
+          Kolor.green.bold(command.name.toUpperCase())
         );
       }
     }
+    console.clear();
     console.log(
-      Kolor.green(
-        `\n\n\n⬡=================⬡    ⦿𝐌𝐞𝐞𝟔™⦿    ⬡=================⬡`
+      Kolor.green.bold(
+        `\n\n\n\n\n\n⬡=================⬡    ⦿𝐌𝐞𝐞𝟔™⦿    ⬡=================⬡`
       ),
-      Kolor.blue(`
-███╗   ███╗███████╗███████╗ ██████╗ 
-████╗ ████║██╔════╝██╔════╝██╔════╝ 
-██╔████╔██║█████╗  █████╗  ███████╗ 
-██║╚██╔╝██║██╔══╝  ██╔══╝  ██╔═══██╗
-██║ ╚═╝ ██║███████╗███████╗╚██████╔╝
-╚═╝     ╚═╝╚══════╝╚══════╝ ╚═════╝ 
+      Kolor.red.bold(`
+        ███╗   ███╗███████╗███████╗ ██████╗ 
+        ████╗ ████║██╔════╝██╔════╝██╔════╝ 
+        ██╔████╔██║█████╗  █████╗  ███████╗ 
+        ██║╚██╔╝██║██╔══╝  ██╔══╝  ██╔═══██╗
+        ██║ ╚═╝ ██║███████╗███████╗╚██████╔╝
+        ╚═╝     ╚═╝╚══════╝╚══════╝ ╚═════╝ 
 `),
-      Kolor.green(`⬡=================⬡    ⦿𝐌𝐞𝐞𝟔™⦿    ⬡=================⬡`)
+      Kolor.green.bold(`⬡=================⬡    ⦿𝐌𝐞𝐞𝟔™⦿    ⬡=================⬡`)
     );
     // ⬡==================⬡-----------------⦿𝐌𝐞𝐞𝟔™⦿-----------------⬡==================⬡
     // 👓𝓜𝓮𝓮6™ ᴀᴅᴠᴀɴᴄᴇᴅ ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ 80+ ᴄᴏᴍᴍᴀɴᴅꜱ ꜰᴏʀ ʙᴏᴛʜ ᴘʀɪᴠᴀᴛᴇ ᴀɴᴅ ɢʀᴏᴜᴘ-ᴜꜱᴀɢᴇ👓
@@ -242,7 +245,7 @@ async function 𝓜𝓮𝓮6s() {
 Group has been opened by admin Now all members can send messages`,
           MessageType.text
         )
-        .catch((error) => console.log(Kolor.redBright(error)));
+        .catch((error) => console.log(Kolor.red.boldBright(error)));
     } else if (update.announce == `true`) {
       ʍɛɛℓιєηт
         .sendMessage(
@@ -254,7 +257,7 @@ Group has been opened by admin Now all members can send messages`,
 ɢʀᴏᴜᴘ ʜᴀꜱ ʙᴇᴇɴ ᴄʟᴏꜱᴇᴅ ʙʏ ᴀᴅᴍɪɴ ɴᴏᴡ ᴏɴʟʏ ᴀᴅᴍɪɴ ᴄᴀɴ ꜱᴇɴᴅ ᴍᴇꜱꜱᴀɢᴇꜱ`,
           MessageType.text
         )
-        .catch((error) => console.log(Kolor.redBright(error)));
+        .catch((error) => console.log(Kolor.red.boldBright(error)));
     } else if (!update.desc == ``) {
       tag = update.descOwner.split(`@`)[0] + `@s.whatsapp.net`;
       ʍɛɛℓιєηт
@@ -276,7 +279,7 @@ ${update.desc}`,
             },
           }
         )
-        .catch((error) => console.log(Kolor.redBright(error)));
+        .catch((error) => console.log(Kolor.red.boldBright(error)));
     } else if (update.restrict == `false`) {
       ʍɛɛℓιєηт
         .sendMessage(
@@ -289,7 +292,7 @@ ${update.desc}`,
           MessageType.text,
           {}
         )
-        .catch((error) => console.log(Kolor.redBright(error)));
+        .catch((error) => console.log(Kolor.red.boldBright(error)));
     } else if (update.restrict == `true`) {
       ʍɛɛℓιєηт
         .sendMessage(
@@ -302,7 +305,7 @@ ${update.desc}`,
           MessageType.text,
           {}
         )
-        .catch((error) => console.log(Kolor.redBright(error)));
+        .catch((error) => console.log(Kolor.red.boldBright(error)));
     }
   });
   // ⬡==================⬡-----------------⦿𝐌𝐞𝐞𝟔™⦿-----------------⬡==================⬡
@@ -454,7 +457,7 @@ ${Fetched.message}`,
     // ⬡==================⬡-----------------⦿𝐌𝐞𝐞𝟔™⦿-----------------⬡=================
     if (𝓜𝓮𝓮6.isCmd) {
       console.log(
-        Kolor.green(
+        Kolor.green.bold(
           `𝐌𝐞𝐞𝟔™💡𝗜𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻⬰  ${𝓜𝓮𝓮6.commandName.toUpperCase()} command executed.`
         )
       );
@@ -485,7 +488,7 @@ ${Fetched.message}`,
         try {
           return command.handle(ʍɛɛℓιєηт, chat, 𝓜𝓮𝓮6, arg, Mee6Sitrep);
         } catch (cᴇʀʀᴏʀ) {
-          return console.log(Kolor.red(`𝐌𝐞𝐞𝟔™❌𝗘𝗿𝗿𝗼𝗿⬰ `, cᴇʀʀᴏʀ));
+          return console.log(Kolor.red.bold(`𝐌𝐞𝐞𝟔™❌𝗘𝗿𝗿𝗼𝗿⬰ `, cᴇʀʀᴏʀ));
         }
       }
       command.handle(ʍɛɛℓιєηт, chat, 𝓜𝓮𝓮6, arg);
@@ -493,7 +496,7 @@ ${Fetched.message}`,
   });
 }
 𝓜𝓮𝓮6s().catch((cᴇʀʀᴏʀ) =>
-  console.log(Kolor.red(`𝐌𝐞𝐞𝟔™❌𝗘𝗿𝗿𝗼𝗿⬰`), Kolor.red(cᴇʀʀᴏʀ))
+  console.log(Kolor.red.bold(`𝐌𝐞𝐞𝟔™❌𝗘𝗿𝗿𝗼𝗿⬰`), Kolor.red.bold(cᴇʀʀᴏʀ))
 );
 // ⬡==================⬡-----------------⦿𝐌𝐞𝐞𝟔™⦿-----------------⬡==================⬡
 // 👓𝓜𝓮𝓮6™ ᴀᴅᴠᴀɴᴄᴇᴅ ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ 80+ ᴄᴏᴍᴍᴀɴᴅꜱ ꜰᴏʀ ʙᴏᴛʜ ᴘʀɪᴠᴀᴛᴇ ᴀɴᴅ ɢʀᴏᴜᴘ-ᴜꜱᴀɢᴇ👓
