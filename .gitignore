@@ -21,9 +21,8 @@ lib-cov
 # Coverage directory used by tools like istanbul
 coverage
 *.lcov
-ʊʟȶʀօռ.env
-
-ᴍᴇᴇ6.db
+𝓜𝓮𝓮6.db
+𝓜𝓮𝓮6.env
 
 
 # nyc test coverage
