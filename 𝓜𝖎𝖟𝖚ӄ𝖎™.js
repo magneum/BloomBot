@@ -522,7 +522,7 @@ ${ꜰᴇᴛᴄʜᴇᴅʙʏᴇ.message}`,
         return await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            `𝗜𝗻𝘃𝗮𝗹𝗶𝗱 𝗖𝗼𝗺𝗺𝗮𝗻𝗱: ${爪𝖎𝖟𝖚ӄ𝖎.commandName.toUpperCase()}
+            `𝗜𝗻𝘃𝗮𝗹𝗶𝗱 𝗖𝗼𝗺𝗺𝗮𝗻𝗱
 
 Yo Bruh •@${personsending},
 Use ${ᴋᴇɪ}help to get the list of available commands`,
