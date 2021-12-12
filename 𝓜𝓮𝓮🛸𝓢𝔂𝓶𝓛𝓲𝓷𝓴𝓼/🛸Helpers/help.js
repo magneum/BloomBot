@@ -36,7 +36,7 @@ module.exports = {
     timestampe = speed();
     latensie = speed() - timestampe;
     // ⬡==================⬡-----------------⦿𝐌𝐞𝐞𝟔™⦿-----------------⬡==================⬡
-    let content = fs.readFileSync("./𝓜𝓮𝓮6🧀𝓒𝓻𝓪𝓽𝓮/Mee6.png");
+    let content = fs.readFileSync("./𝓜𝓮𝓮6🧀𝓒𝓻𝓪𝓽𝓮/Mee6.jpg");
     const media = await ʍɛɛℓιєηт.prepareMessage(
       𝓜𝓮𝓮6.chatId,
       content,
