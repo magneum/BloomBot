@@ -58,7 +58,7 @@ module.exports = {
         .sendMessage(
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
           {
-            url: "https://i.postimg.cc/5yQVrzBn/Capture.png",
+            url: "https://i.postimg.cc/L8qyfqkt/Git-Puller.png",
           },
           MessageType.image,
           {
