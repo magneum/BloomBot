@@ -23,16 +23,14 @@
 # ⚡ 𝕯𝖊𝖕𝖑𝖔𝖞𝖒𝖊𝖓𝖙
  *video download and watch*
 - ꜰɪʀꜱᴛ ꜰᴏʀᴋ ᴀɴᴅ ꜱᴛᴀʀ ᴛʜᴇ ʀᴇᴘᴏ (or else auto upgrading won't work)
-- [👓Deployment-Video](https://github.com/Krakinz/Mee6/tree/KrakinzLab/%E1%B4%8D%E1%B4%87%E1%B4%876/Deployment.avi)
-- [⚡Re-Deployment-Video](https://github.com/Krakinz/Mee6/tree/KrakinzLab/%E1%B4%8D%E1%B4%87%E1%B4%876/Re-Deployment(AUTO).avi)
 
 *text and link*
 - ꜰɪʀꜱᴛ ꜰᴏʀᴋ ᴀɴᴅ ꜱᴛᴀʀ ᴛʜᴇ ʀᴇᴘᴏ (or else auto upgrading won't work)
 - Make Heroku Account If You Don't Have already.
 - Link to [Heroku](https://dashboard.heroku.com/apps)
 - Get Your Heroku-Api Key From [Heroku API Key](https://dashboard.heroku.com/account)
-- Get Your Mee6 SessionCode from [![Generic badge](https://img.shields.io/badge/Mee6_Session-blue.svg)](https://replit.com/@Krakinzkon/Mee6)
-- Head Over To [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Krakinz/Mee6.git) 
+- Get Your Mee6 SessionCode from [![Generic badge](https://img.shields.io/badge/Mee6_Session-blue.svg)](https://replit.com/@Krakinzkon/Mizuki)
+- Head Over To [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Krakinz/Mizuki.git) 
 - Put All The Informations In the Box given in heroku (env vars)
 - Click deploy and wait for deployment to get done (takes 10-15mins)
 - After Deployment is done a new button appears "Manage Apps"
