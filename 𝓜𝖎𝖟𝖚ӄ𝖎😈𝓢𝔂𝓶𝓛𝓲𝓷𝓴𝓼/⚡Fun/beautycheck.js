@@ -175,7 +175,7 @@ module.exports = {
         const context = canvas.getContext("2d");
         context.fillStyle = "#252525";
         context.fillRect(0, 0, width, height);
-        context.font = "bold 90pt Housttely";
+        context.font = "bold 120pt Housttely";
         context.textAlign = `center`;
         context.textBaseline = `top`;
         // context.fillStyle = randomMC.getColor();
@@ -190,7 +190,7 @@ module.exports = {
         context.fillStyle = randomMC.getColor();
         context.fillText(text, 600, 170);
         context.fillStyle = "#fff";
-        context.font = "bold 50pt Honeycomb";
+        context.font = "bold 80pt Honeycomb";
         context.fillText("Percentage: " + Much + "%", 600, 530);
         loadImage("./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/爪𝖎𝖟𝖚ӄ𝖎Tempa.png").then(async () => {
           const buffer = canvas.toBuffer("image/png");
@@ -225,7 +225,7 @@ module.exports = {
         const context = canvas.getContext("2d");
         context.fillStyle = "#252525";
         context.fillRect(0, 0, width, height);
-        context.font = "bold 90pt Housttely";
+        context.font = "bold 120pt Housttely";
         context.textAlign = `center`;
         context.textBaseline = `top`;
         // context.fillStyle = randomMC.getColor();
@@ -240,7 +240,7 @@ module.exports = {
         context.fillStyle = randomMC.getColor();
         context.fillText(text, 600, 170);
         context.fillStyle = "#fff";
-        context.font = "bold 50pt Honeycomb";
+        context.font = "bold 80pt Honeycomb";
         context.fillText("Percentage: " + Much + "%", 600, 530);
         loadImage("./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/爪𝖎𝖟𝖚ӄ𝖎Tempa.png").then(async () => {
           const buffer = canvas.toBuffer("image/png");
@@ -289,7 +289,7 @@ Asked By? @${personsending}
         const context = canvas.getContext("2d");
         context.fillStyle = "#252525";
         context.fillRect(0, 0, width, height);
-        context.font = "bold 90pt Housttely";
+        context.font = "bold 120pt Housttely";
         context.textAlign = `center`;
         context.textBaseline = `top`;
         // context.fillStyle = randomMC.getColor();
@@ -304,7 +304,7 @@ Asked By? @${personsending}
         context.fillStyle = randomMC.getColor();
         context.fillText(text, 600, 170);
         context.fillStyle = "#fff";
-        context.font = "bold 50pt Honeycomb";
+        context.font = "bold 80pt Honeycomb";
         context.fillText("Percentage: " + Much + "%", 600, 530);
         loadImage("./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/爪𝖎𝖟𝖚ӄ𝖎Tempa.png").then(async () => {
           const buffer = canvas.toBuffer("image/png");
