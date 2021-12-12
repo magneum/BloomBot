@@ -76,7 +76,7 @@ module.exports = {
 ⬣ *${ᴋᴇɪ}groupside*➾ 👑𝙂𝙧𝙤𝙪𝙥𝙨
 ⬣ *${ᴋᴇɪ}funside*➾ 🧀𝙁𝙪𝙣𝙨
 ⬣ *${ᴋᴇɪ}nsfwside*➾ 🔞𝘼𝙙𝙪𝙡𝙩`,
-      footerText: `⬡ *爪𝖎𝖟𝖚ӄ𝖎* by ₭𝔯𝔞ӄ𝔦𝔫𝔷𝔏𝔞𝔟 ⬡`,
+      footerText: `⬡••• *𝐌𝐢𝐳𝐮𝐤𝐢 by ₭𝔯𝔞ӄ𝔦𝔫𝔷𝔏𝔞𝔟* •••⦿`,
       buttons: buttons,
       headerType: 4,
       imageMessage: media.message.imageMessage,
