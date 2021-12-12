@@ -36,7 +36,7 @@ module.exports = {
     timestampe = speed();
     latensie = speed() - timestampe;
     // ⬡==================⬡-----------------⦿𝐌𝐞𝐞𝟔™⦿-----------------⬡==================⬡
-    let content = fs.readFileSync("./𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/爪𝖎𝖟𝖚ӄ𝖎.png");
+    let content = fs.readFileSync("./𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/爪𝖎𝖟𝖚ӄ𝖎.jpg");
     const media = await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃.prepareMessage(
       爪𝖎𝖟𝖚ӄ𝖎.chatId,
       content,
@@ -53,31 +53,30 @@ module.exports = {
         buttonText: { displayText: `${ᴋᴇɪ}ping` },
         type: 1,
       },
-      {
-        buttonId: `${ᴋᴇɪ}group`,
-        buttonText: { displayText: `${ᴋᴇɪ}group` },
-        type: 1,
-      },
+      // {
+      //   buttonId: `${ᴋᴇɪ}group`,
+      //   buttonText: { displayText: `${ᴋᴇɪ}group` },
+      //   type: 1,
+      // },
     ];
     const buttonMessage = {
       contentText: `
 *Hey •@${personsending}*
-シ︎💡𝐏𝐫𝐞𝐟𝐢𝐱: ${ᴋᴇɪ}
-シ︎⚙️𝗩𝗲𝗿𝘀𝗶𝗼𝗻: ￫ ${vers.vers}
-シ︎💻𝐏𝐥𝐚𝐭𝐟𝐨𝐫𝐦: _${os.platform()}_
-シ︎🛰️𝐏𝐢𝐧𝐠: _${latensie.toFixed(6)}s_
-シ︎⚰️𝐔𝐩𝐓𝐢𝐦𝐞: _${runtime(process.uptime())}_
+シ︎💡ᴘʀᴇꜰɪx: ${ᴋᴇɪ}
+シ︎⚙️ᴇɴɢɪɴᴇ: ￫ ${vers.vers}
+シ︎💻ᴘʟᴀᴛꜰᴏʀᴍ: _${os.platform()}_
+シ︎🛰️ᴘɪɴɢ: _${latensie.toFixed(6)}s_
+シ︎⚰️ᴜᴘᴛɪᴍᴇ: _${runtime(process.uptime())}_
 シ︎🛸𝐆𝐫𝐨𝐮𝐩: https://chat.whatsapp.com/Ih78PSfbxhn6hIS2D09S5S
 
 
 *↦ ʜᴇʀᴇ ᴀʀᴇ ᴛʜᴇ ᴄᴀᴛᴇɢᴏʀɪᴇꜱ ↤*
-|Command|          |Category|
-⬣ *${ᴋᴇɪ}systemside* ➾  🛸𝙎𝙮𝙨𝙩𝙚𝙢
-⬣ *${ᴋᴇɪ}animeside* ➾  🤩𝘼𝙣𝙞𝙢𝙚
-⬣ *${ᴋᴇɪ}musicside* ➾  🎙️𝙈𝙪𝙨𝙞𝙘
-⬣ *${ᴋᴇɪ}groupside* ➾  👑𝙂𝙧𝙤𝙪𝙥𝙨
-⬣ *${ᴋᴇɪ}funside* ➾  🧀𝙁𝙪𝙣𝙨
-⬣ *${ᴋᴇɪ}nsfwside* ➾  🔞𝘼𝙙𝙪𝙡𝙩`,
+⬣ *${ᴋᴇɪ}systemside*➾ 🛸𝙎𝙮𝙨𝙩𝙚𝙢
+⬣ *${ᴋᴇɪ}animeside*➾ 🤩𝘼𝙣𝙞𝙢𝙚
+⬣ *${ᴋᴇɪ}musicside*➾ 🎙️𝙈𝙪𝙨𝙞𝙘
+⬣ *${ᴋᴇɪ}groupside*➾ 👑𝙂𝙧𝙤𝙪𝙥𝙨
+⬣ *${ᴋᴇɪ}funside*➾ 🧀𝙁𝙪𝙣𝙨
+⬣ *${ᴋᴇɪ}nsfwside*➾ 🔞𝘼𝙙𝙪𝙡𝙩`,
       footerText: `⬡ *爪𝖎𝖟𝖚ӄ𝖎* by ₭𝔯𝔞ӄ𝔦𝔫𝔷𝔏𝔞𝔟 ⬡`,
       buttons: buttons,
       headerType: 4,
