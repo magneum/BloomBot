@@ -9,8 +9,8 @@ exports.catch = async (error, ʍɛɛℓιєηт, 𝓜𝓮𝓮6) => {
   var newString = str.substring(0, str.length - 15);
   await ʍɛɛℓιєηт.sendMessage(
     𝓜𝓮𝓮6.logGroup,
-    `_⦿ᴘᴏᴡᴇʀᴇᴅ ʙʏ_
-*👓𝓜𝓮𝓮6™ △▽ 𝖂𝖍𝖆𝖙𝖘𝖆𝖕𝖕-𝖀𝖘𝖊𝖗𝖇𝖔𝖙*
+    `⦿ᴘᴏᴡᴇʀᴇᴅ ʙʏ
+*🍄𝐌𝐞𝐞𝟔™ △▽ 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐁𝐨𝐭🤖*
 
 ⚠️𝗘𝗿𝗿𝗼𝗿⚠️
 ${error}
@@ -34,8 +34,8 @@ ${error}
       contextInfo: {
         mentionedJid: [𝓜𝓮𝓮6.sender],
       },
-      caption: `_⦿ᴘᴏᴡᴇʀᴇᴅ ʙʏ_
-*👓𝓜𝓮𝓮6™ △▽ 𝖂𝖍𝖆𝖙𝖘𝖆𝖕𝖕-𝖀𝖘𝖊𝖗𝖇𝖔𝖙*
+      caption: `⦿ᴘᴏᴡᴇʀᴇᴅ ʙʏ
+*🍄𝐌𝐞𝐞𝟔™ △▽ 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐁𝐨𝐭🤖*
 
 
 *•@${newString}*,𝙏𝙝𝙚𝙧𝙚 𝙒𝙖𝙨 𝘼𝙣 𝙀𝙧𝙧𝙤𝙧.𝙋𝙡𝙚𝙖𝙨𝙚 𝙩𝙧𝙮 𝘼𝙜𝙖𝙞𝙣 𝙇𝙖𝙩𝙚𝙧!

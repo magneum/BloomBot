@@ -22,9 +22,10 @@ module.exports = {
       await ʍɛɛℓιєηт
         .sendMessage(
           𝓜𝓮𝓮6.logGroup,
-          `*⦿𝐌𝐞𝐞𝟔™   ⬡••••••••⬡*
-❗ 𝙈𝙚𝙚6 𝙐𝙥𝙙𝙖𝙩𝙚 𝙋𝙚𝙣𝙙𝙞𝙣𝙜
+          `⦿ᴘᴏᴡᴇʀᴇᴅ ʙʏ
+*🍄𝐌𝐞𝐞𝟔™ △▽ 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐁𝐨𝐭🤖*
 
+❗ 𝙈𝙚𝙚6 𝙐𝙥𝙙𝙖𝙩𝙚 𝙋𝙚𝙣𝙙𝙞𝙣𝙜
 *•𝘗𝘭𝘦𝘢𝘴𝘦 𝘜𝘱𝘥𝘢𝘵𝘦 𝘜𝘴𝘪𝘯𝘨 *${ᴋᴇɪ}update* 𝘰𝘳 𝘳𝘦𝘥𝘦𝘱𝘭𝘰𝘺 𝐌𝐞𝐞𝟔™!`,
           MessageType.text
         )
@@ -45,8 +46,8 @@ module.exports = {
             contextInfo: {
               mentionedJid: [𝓜𝓮𝓮6.sender],
             },
-            caption: `⦿ᴘᴏᴡᴇʀᴇᴅ ʙʏ 
-*⬡ 👓𝓜𝓮𝓮6™ △▽ 𝖂𝖍𝖆𝖙𝖘𝖆𝖕𝖕-𝖀𝖘𝖊𝖗𝖇𝖔𝖙 ⬡*
+            caption: `⦿ᴘᴏᴡᴇʀᴇᴅ ʙʏ
+*🍄𝐌𝐞𝐞𝟔™ △▽ 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐁𝐨𝐭🤖*
 
 Nsfw Topic: *Pussy*
 Asked By? @${personsending} (admin)`,
@@ -58,8 +59,8 @@ Asked By? @${personsending} (admin)`,
       await ʍɛɛℓιєηт
         .sendMessage(
           𝓜𝓮𝓮6.chatId,
-          `⦿ᴘᴏᴡᴇʀᴇᴅ ʙʏ 
-*⬡ 👓𝓜𝓮𝓮6™ △▽ 𝖂𝖍𝖆𝖙𝖘𝖆𝖕𝖕-𝖀𝖘𝖊𝖗𝖇𝖔𝖙 ⬡*
+          `⦿ᴘᴏᴡᴇʀᴇᴅ ʙʏ
+*🍄𝐌𝐞𝐞𝟔™ △▽ 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐁𝐨𝐭🤖*
 
 *•@${personsending}*,
 シ︎𝙎𝙥𝙖𝙢/𝙏𝙚𝙨𝙩 𝐆𝐫𝐨𝐮𝐩🛸 https://chat.whatsapp.com/GDNPVuH3eMq72UOUHavZxH`,
@@ -95,25 +96,25 @@ Asked By? @${personsending} (admin)`,
           .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, 𝓜𝓮𝓮6));
       } else {
         return await ʍɛɛℓιєηт
-        .sendMessage(
-          𝓜𝓮𝓮6.chatId,
-          {
-            url: await akaneko.nsfw.pussy(),
-          },
-          MessageType.image,
-          {
-            mimetype: Mimetype.jpeg,
-            contextInfo: {
-              mentionedJid: [𝓜𝓮𝓮6.sender],
+          .sendMessage(
+            𝓜𝓮𝓮6.chatId,
+            {
+              url: await akaneko.nsfw.pussy(),
             },
-            caption: `⦿ᴘᴏᴡᴇʀᴇᴅ ʙʏ 
+            MessageType.image,
+            {
+              mimetype: Mimetype.jpeg,
+              contextInfo: {
+                mentionedJid: [𝓜𝓮𝓮6.sender],
+              },
+              caption: `⦿ᴘᴏᴡᴇʀᴇᴅ ʙʏ 
 *⬡ 👓𝓜𝓮𝓮6™ △▽ 𝖂𝖍𝖆𝖙𝖘𝖆𝖕𝖕-𝖀𝖘𝖊𝖗𝖇𝖔𝖙 ⬡*
 
 Nsfw Topic: *Pussy*
 Asked By? @${personsending} (admin)`,
-          }
-        )
-        .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, 𝓜𝓮𝓮6));
+            }
+          )
+          .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, 𝓜𝓮𝓮6));
       }
     }
   },
