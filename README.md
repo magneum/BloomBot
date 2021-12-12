@@ -1,11 +1,11 @@
 [![Open Source Love svg3](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)<img align="centre" src="https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg" alt="Krakinz"/><img align="centre" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"/>
 
-# 『 ⬡ 👓𝓜𝓮𝓮6™ △▽ 𝖂𝖍𝖆𝖙𝖘𝖆𝖕𝖕-𝖀𝖘𝖊𝖗𝖇𝖔𝖙 ⬡ 』
+# 『 ⬡ 👓爪𝖎𝖟𝖚ӄ𝖎™ △▽ 𝖂𝖍𝖆𝖙𝖘𝖆𝖕𝖕-𝖀𝖘𝖊𝖗𝖇𝖔𝖙 ⬡ 』
 𝘽𝙊𝙏 𝙄𝙉 𝘽𝙀𝙏𝘼
 ʏᴏᴜʀ ᴀꜱꜱɪꜱꜱᴛᴀɴᴛ ꜰᴏʀ ᴍᴀᴋɪɴɢ ʙᴏʀɪɴɢ ᴡʜᴀᴛꜱᴀᴘᴘ ᴀ ʙᴇᴛᴛᴇʀ ᴀᴅᴠᴀɴᴄᴇ ᴀᴘᴘ!
 
 <p align="center">
-  <img src="https://i.postimg.cc/RFCw6K0Z/Mee6.png" height="400px"/>
+  <img src="https://i.postimg.cc/WpF9RDtF/Mizuki.png" height="400px"/>
 </p>
 
 # ❓ 𝖂𝖍𝖞 𝕸𝖆𝖉𝖊 𝕿𝖍𝖎𝖘 𝕭𝖔𝖙?
@@ -13,10 +13,10 @@
 ```sh
 💻 𝗪𝗵𝗮𝘁 𝗖𝗮𝗻 𝗕𝗼𝘁 𝗗𝗼???
 
-🎮𝓜𝓮𝓮6
+🎮爪𝖎𝖟𝖚ӄ𝖎
 🔸 ᴀᴅᴠᴀɴᴄᴇᴅ ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ 80+ ᴄᴏᴍᴍᴀɴᴅꜱ ꜰᴏʀ ʙᴏᴛʜ ᴘʀɪᴠᴀᴛᴇ ᴀɴᴅ ɢʀᴏᴜᴘ-ᴜꜱᴀɢᴇ
-🔸 𝓜𝓮𝓮6 is written in JavaScript and is by far the most advance Whatsapp Userbot.
-🔸 Use 𝓜𝓮𝓮6 in both public-groups and private
+🔸 爪𝖎𝖟𝖚ӄ𝖎 is written in JavaScript and is by far the most advance Whatsapp Userbot.
+🔸 Use 爪𝖎𝖟𝖚ӄ𝖎 in both public-groups and private
 🔸 So many commands that will blow up the every-day use of boring whatsapp.
 ```
 
@@ -59,7 +59,7 @@
 Apache License
 Version 2.0, January 2004
 http://www.apache.org/licenses
-—••÷[🎮𝓜𝓮𝓮6]÷••—
+—••÷[🎮爪𝖎𝖟𝖚ӄ𝖎]÷••—
 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵
 has been licensed under Apache License
 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
