@@ -40,7 +40,7 @@
 - Click on logs in the top right corner of the page
 - If all went right then check your whatsapp for confirmation
 - If anything went wrong Please 🐞RΣPӨЯƬ
-🔸[ᴡʜᴀᴛꜱᴀᴘᴘ](https://chat.whatsapp.com/FmMcEeSqZQw85qAkgUs3f5)
+🔸[ᴡʜᴀᴛꜱᴀᴘᴘ](https://chat.whatsapp.com/Ih78PSfbxhn6hIS2D09S5S)
 🔸[ᴅɪꜱᴄᴏʀᴅ](https://discord.gg/xcFN6NDHEV)
 
 

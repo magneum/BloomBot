@@ -67,7 +67,7 @@ module.exports = {
 シ︎💻𝐏𝐥𝐚𝐭𝐟𝐨𝐫𝐦: _${os.platform()}_
 シ︎🛰️𝐏𝐢𝐧𝐠: _${latensie.toFixed(6)}s_
 シ︎⚰️𝐔𝐩𝐓𝐢𝐦𝐞: _${runtime(process.uptime())}_
-シ︎🛸𝐆𝐫𝐨𝐮𝐩: _https://chat.whatsapp.com/FmMcEeSqZQw85qAkgUs3f5_
+シ︎🛸𝐆𝐫𝐨𝐮𝐩: _https://chat.whatsapp.com/Ih78PSfbxhn6hIS2D09S5S_
 
 
 *↦ ʜᴇʀᴇ ᴀʀᴇ ᴛʜᴇ ᴄᴀᴛᴇɢᴏʀɪᴇꜱ ↤*
