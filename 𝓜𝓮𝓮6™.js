@@ -466,21 +466,17 @@ ${Fetched.message}`,
       var Sender = 𝓜𝓮𝓮6.sender;
       personsending = Sender.substring(0, Sender.length - 15);
       if (!command) {
-        return ʍɛɛℓιєηт
+        return await ʍɛɛℓιєηт
           .sendMessage(
             𝓜𝓮𝓮6.chatId,
-            {
-              url: ꜱɪɢɴ.INVL,
-            },
-            MessageType.image,
-            {
-              mimetype: Mimetype.png,
-              contextInfo: {
-                mentionedJid: [Sender],
-              },
-              caption: `𝗜𝗻𝘃𝗮𝗹𝗶𝗱 𝗖𝗼𝗺𝗺𝗮𝗻𝗱: *${arg}*
+            `𝗜𝗻𝘃𝗮𝗹𝗶𝗱 𝗖𝗼𝗺𝗺𝗮𝗻𝗱: *${arg}*
 
 *•@${personsending},Use ${ᴋᴇɪ}help to get the list of available commands*`,
+            MessageType.text,
+            {
+              contextInfo: {
+                mentionedJid: [𝓜𝓮𝓮6.sender],
+              },
             }
           )
           .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, 𝓜𝓮𝓮6));

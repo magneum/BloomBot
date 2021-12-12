@@ -22,7 +22,7 @@ const env = {
       ? "Null"
       : process.env.HEROKU_BOT_NAME,
   IMDB: `5e36f0db`,
-  Mee6IX: `^[x]`,
+  Mee6IX: `^[!]`,
   CCD: process.env.CCD === undefined ? `91` : process.env.CCD,
   OCR: `9ffb44def388957`,
   WAPI: `6729ac2b2e2bb5c686ff427a2f06df92`,
@@ -47,7 +47,7 @@ const env = {
           },
         }),
   ERROR: "https://i.postimg.cc/q7GB8m6s/Error0.png",
-  MEE: "https://i.postimg.cc/RFCw6K0Z/Mee6.png",
+  MEE: "https://i.postimg.cc/FzLyh2jL/Main6-1.jpg",
   INVL: "https://i.postimg.cc/v8p25RV9/Mee6-Invalid.png",
   ARC: "https://i.postimg.cc/Nf3D2RZx/Mee6-Args.png",
   UPT: "https://i.postimg.cc/FH22ny07/Meeseeks-Box.png",
