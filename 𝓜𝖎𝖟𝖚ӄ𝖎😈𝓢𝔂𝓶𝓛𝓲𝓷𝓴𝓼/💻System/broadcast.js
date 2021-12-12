@@ -49,11 +49,11 @@ module.exports = {
       return;
       // ⬡==================⬡-----------------⦿𝐌𝐞𝐞𝟔™⦿-----------------⬡==================⬡
     } else {
-      if (!𝓜𝖎𝖟𝖚ӄ𝖎.Owner) {
+      if (!𝓜𝖎𝖟𝖚ӄ𝖎.isSenderSUDO) {
         return await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            "only owner can use this feature",
+            "only *𝓜𝖎𝖟𝖚ӄ𝖎-Devs* can use this feature",
             MessageType.text,
             {
               contextInfo: {
