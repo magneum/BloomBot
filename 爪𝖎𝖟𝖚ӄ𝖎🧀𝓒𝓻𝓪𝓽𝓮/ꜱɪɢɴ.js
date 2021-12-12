@@ -14,7 +14,7 @@ if (fs.existsSync(`爪𝖎𝖟𝖚ӄ𝖎.env`)) {
 // 👓爪𝖎𝖟𝖚ӄ𝖎™ ᴀᴅᴠᴀɴᴄᴇᴅ ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ 80+ ᴄᴏᴍᴍᴀɴᴅꜱ ꜰᴏʀ ʙᴏᴛʜ ᴘʀɪᴠᴀᴛᴇ ᴀɴᴅ ɢʀᴏᴜᴘ-ᴜꜱᴀɢᴇ👓
 // ⬡==================⬡-----------------⦿𝐌𝐞𝐞𝟔™⦿-----------------⬡==================⬡
 const env = {
-  Mee6: process.env.Mee6 === undefined ? `` : process.env.Mee6,
+  Mizuki: process.env.Mizuki === undefined ? `` : process.env.Mizuki,
   HEROKU_API:
     process.env.HEROKU_API === undefined ? "Null" : process.env.HEROKU_API,
   HEROKU_BOT_NAME:
@@ -22,7 +22,7 @@ const env = {
       ? "Null"
       : process.env.HEROKU_BOT_NAME,
   IMDB: `5e36f0db`,
-  Mee6IX: `^[!]`,
+  MizukiIX: `^[!]`,
   CCD: process.env.CCD === undefined ? `91` : process.env.CCD,
   OCR: `9ffb44def388957`,
   WAPI: `6729ac2b2e2bb5c686ff427a2f06df92`,
@@ -48,8 +48,8 @@ const env = {
         }),
   ERROR: "https://i.postimg.cc/q7GB8m6s/Error0.png",
   MEE: "https://i.postimg.cc/WpF9RDtF/Mizuki.png",
-  INVL: "https://i.postimg.cc/v8p25RV9/Mee6-Invalid.png",
-  ARC: "https://i.postimg.cc/Nf3D2RZx/Mee6-Args.png",
+  INVL: "https://i.postimg.cc/v8p25RV9/Mizuki-Invalid.png",
+  ARC: "https://i.postimg.cc/Nf3D2RZx/Mizuki-Args.png",
   UPT: "https://i.postimg.cc/FH22ny07/Meeseeks-Box.png",
   PRIVACY: process.env.PRIVACY === undefined ? `public` : process.env.PRIVACY,
   SUDO: `918250889325`,

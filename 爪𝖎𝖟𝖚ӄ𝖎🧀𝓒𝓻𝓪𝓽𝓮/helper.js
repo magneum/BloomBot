@@ -9,7 +9,7 @@ const Kolor = require("chalk");
 // ⬡==================⬡-----------------⦿𝐌𝐞𝐞𝟔™⦿-----------------⬡==================⬡
 exports.resolve = function (messageInstance, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, groupMetadata) {
   var 爪𝖎𝖟𝖚ӄ𝖎 = new ƈʏɮօʀɢƈʟǟ();
-  var prefix = ꜱɪɢɴ.Mee6IX + "\\w+";
+  var prefix = ꜱɪɢɴ.MizukiIX + "\\w+";
   var prefixRegex = new RegExp(prefix, "g");
   var SUDOstring = ꜱɪɢɴ.SUDO;
   try {
