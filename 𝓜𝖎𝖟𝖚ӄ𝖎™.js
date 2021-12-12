@@ -204,7 +204,7 @@ async function 𝓜𝓮𝓮6s() {
 
 シ︎💡ᴘʀᴇꜰɪx: ${ᴋᴇɪ}
 シ︎⚙️ᴇɴɢɪɴᴇ: ￫ ${vers.vers}
-シ︎🛸𝐆𝐫𝐨𝐮𝐩: https://chat.whatsapp.com/Ih78PSfbxhn6hIS2D09S5S
+シ︎🛸𝐆𝐫𝐨𝐮𝐩: ${_𝔏𝔞𝔟_.HASH}
 
 
 💻 𝗪𝗵𝗮𝘁 𝗖𝗮𝗻 𝐌𝐢𝐳𝐮𝐤𝐢™ 𝗗𝗼???
@@ -328,7 +328,7 @@ ${update.desc}`,
 ⦿ ʜᴇʟʟᴏ ᴇᴠᴇʀʏᴏɴᴇ, ʀᴇᴀᴅʏ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ʜᴇʀᴇ
 ⦿ ᴘʟᴇᴀꜱᴇ ᴛʏᴘᴇ *${ᴋᴇɪ}help* ᴛᴏ ᴋɴᴏᴡ ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅꜱ!
 
-⬡ 𝗦𝘂𝗽𝗽𝗼𝗿𝘁 𝐆𝐫𝐨𝐮𝐩👓https://chat.whatsapp.com/Ih78PSfbxhn6hIS2D09S5S`,
+⬡ 𝗦𝘂𝗽𝗽𝗼𝗿𝘁 𝐆𝐫𝐨𝐮𝐩👓${_𝔏𝔞𝔟_.HASH}`,
         MessageType.text,
         {
           contextInfo: {

@@ -40,7 +40,7 @@ module.exports = {
           `⬡••• *𝐌𝐢𝐳𝐮𝐤𝐢 by ₭𝔯𝔞ӄ𝔦𝔫𝔷𝔏𝔞𝔟* •••⦿
 
 *•@${personsending}*,
-シ︎🛸𝐆𝐫𝐨𝐮𝐩: https://chat.whatsapp.com/Ih78PSfbxhn6hIS2D09S5S`,
+シ︎🛸𝐆𝐫𝐨𝐮𝐩: ${_𝔏𝔞𝔟_.HASH}`,
           MessageType.text,
           {
             contextInfo: {
@@ -55,7 +55,7 @@ module.exports = {
       var Sender = 爪𝖎𝖟𝖚ӄ𝖎.sender;
       var personsending = Sender.substring(0, Sender.length - 15);
       const MeeHelper = `*𝘽𝙊𝙏 𝙄𝙉 𝘽𝙀𝙏𝘼*
-シ︎🛸𝐆𝐫𝐨𝐮𝐩: https://chat.whatsapp.com/Ih78PSfbxhn6hIS2D09S5S
+シ︎🛸𝐆𝐫𝐨𝐮𝐩: ${_𝔏𝔞𝔟_.HASH}
 
 ⬣ *🛸➾  𝙎𝙮𝙨𝙩𝙚𝙢*
 • *${ᴋᴇɪ}help*  ɢᴇᴛ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅ ʟɪꜱᴛ ᴀɴᴅ ɪɴꜰᴏ ᴏɴ ᴍᴏᴅᴜʟᴇꜱ

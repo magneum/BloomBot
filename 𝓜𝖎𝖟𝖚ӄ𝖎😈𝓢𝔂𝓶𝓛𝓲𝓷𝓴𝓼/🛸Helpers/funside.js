@@ -26,7 +26,8 @@ module.exports = {
           },
           caption: `⬡••• *𝐌𝐢𝐳𝐮𝐤𝐢 by ₭𝔯𝔞ӄ𝔦𝔫𝔷𝔏𝔞𝔟* •••⦿
 
-*Hey •@${personsending}*,
+*•@${personsending}*,
+シ︎𝐆𝐫𝐨𝐮𝐩👓${_𝔏𝔞𝔟_.HASH}
 *⬡••••••⦿  𝙁𝙪𝙣𝙨  ⦿••••••⬡*
 
 • *${ᴋᴇɪ}google*  ꜱᴇᴀʀᴄʜ ᴀɴʏᴛʜɪɴɢ ᴏɴ ɢᴏᴏɢʟᴇ
