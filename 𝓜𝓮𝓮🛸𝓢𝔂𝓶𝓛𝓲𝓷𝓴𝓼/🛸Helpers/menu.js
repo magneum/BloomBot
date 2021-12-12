@@ -13,7 +13,7 @@ const 𝓜𝓮𝓮git = require("simple-git")();
 module.exports = {
   name: `menu`,
   description: `ɢᴇᴛ ᴛʜᴇ entire ᴄᴏᴍᴍᴀɴᴅ ʟɪꜱᴛ ᴀɴᴅ ɪɴꜰᴏ ᴏɴ ᴍᴏᴅᴜʟᴇꜱ`,
-  async handle(ʍɛɛℓιєηт, chat, 𝓜𝓮𝓮6, arg) {
+  async handle(ʍɛɛℓιєηт, chat, 𝓜𝓮𝓮6, arg, Mee6Sitrep) {
     // ⬡==================⬡-----------------⦿𝐌𝐞𝐞𝟔™⦿-----------------⬡==================⬡
     await 𝓜𝓮𝓮git.fetch();
     var Sender = 𝓜𝓮𝓮6.sender;
@@ -24,7 +24,7 @@ module.exports = {
       await ʍɛɛℓιєηт
         .sendMessage(
           𝓜𝓮𝓮6.logGroup,
-          `⦿ᴘᴏᴡᴇʀᴇᴅ ʙʏ
+          `_☆ ӄʀǟӄɨռʐʟǟɮ ɛռɢɨռɛ ☆_
 *🍄𝐌𝐞𝐞𝟔™ △▽ 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐁𝐨𝐭🤖*
 
 𝙐𝙥𝙙𝙖𝙩𝙚🤖𝙋𝙚𝙣𝙙𝙞𝙣𝙜
@@ -38,7 +38,7 @@ module.exports = {
       await ʍɛɛℓιєηт
         .sendMessage(
           𝓜𝓮𝓮6.chatId,
-          `⦿ᴘᴏᴡᴇʀᴇᴅ ʙʏ
+          `_☆ ӄʀǟӄɨռʐʟǟɮ ɛռɢɨռɛ ☆_
 *🍄𝐌𝐞𝐞𝟔™ △▽ 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐁𝐨𝐭🤖*
 
 *•@${personsending}*,
@@ -165,75 +165,75 @@ many many more!
       // ===============================================================================
       // 🎮𝓜𝓮𝓮6™ 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..
       // ===============================================================================
-      //       if (!arg[0]) {
-      //         const runtime = function (seconds) {
-      //           seconds = Number(seconds);
-      //           var d = Math.floor(seconds / (3600 * 24));
-      //           var h = Math.floor((seconds % (3600 * 24)) / 3600);
-      //           var m = Math.floor((seconds % 3600) / 60);
-      //           var s = Math.floor(seconds % 60);
-      //           var dDisplay = d > 0 ? d + (d == 1 ? " day, " : " Day, ") : "";
-      //           var hDisplay = h > 0 ? h + (h == 1 ? " hour, " : " Hour, ") : "";
-      //           var mDisplay = m > 0 ? m + (m == 1 ? " minute, " : " Minute, ") : "";
-      //           var sDisplay = s > 0 ? s + (s == 1 ? " second" : " Second") : "";
-      //           return dDisplay + hDisplay + mDisplay + sDisplay;
-      //         };
-      //         uptime = process.uptime();
-      //         timestampe = speed();
-      //         latensie = speed() - timestampe;
-      //         await ʍɛɛℓιєηт
-      //           .sendMessage(
-      //             𝓜𝓮𝓮6.chatId,
-      //             {
-      //               url: ꜱɪɢɴ.MEE,
-      //             },
-      //             MessageType.image,
-      //             {
-      //               mimetype: Mimetype.png,
-      //               contextInfo: {
-      //                 mentionedJid: [𝓜𝓮𝓮6.sender],
-      //               },
-      //               caption: `_⦿ᴘᴏᴡᴇʀᴇᴅ ʙʏ_
-      // *👓𝓜𝓮𝓮6™ △▽ 𝖂𝖍𝖆𝖙𝖘𝖆𝖕𝖕-𝖀𝖘𝖊𝖗𝖇𝖔𝖙*
+      if (!arg[0]) {
+        const runtime = function (seconds) {
+          seconds = Number(seconds);
+          var d = Math.floor(seconds / (3600 * 24));
+          var h = Math.floor((seconds % (3600 * 24)) / 3600);
+          var m = Math.floor((seconds % 3600) / 60);
+          var s = Math.floor(seconds % 60);
+          var dDisplay = d > 0 ? d + (d == 1 ? " day, " : " Day, ") : "";
+          var hDisplay = h > 0 ? h + (h == 1 ? " hour, " : " Hour, ") : "";
+          var mDisplay = m > 0 ? m + (m == 1 ? " minute, " : " Minute, ") : "";
+          var sDisplay = s > 0 ? s + (s == 1 ? " second" : " Second") : "";
+          return dDisplay + hDisplay + mDisplay + sDisplay;
+        };
+        uptime = process.uptime();
+        timestampe = speed();
+        latensie = speed() - timestampe;
+        await ʍɛɛℓιєηт
+          .sendMessage(
+            𝓜𝓮𝓮6.chatId,
+            {
+              url: ꜱɪɢɴ.MEE,
+            },
+            MessageType.image,
+            {
+              mimetype: Mimetype.png,
+              contextInfo: {
+                mentionedJid: [𝓜𝓮𝓮6.sender],
+              },
+              caption: `__☆ ӄʀǟӄɨռʐʟǟɮ ɛռɢɨռɛ ☆__
+*👓𝓜𝓮𝓮6™ △▽ 𝖂𝖍𝖆𝖙𝖘𝖆𝖕𝖕-𝖀𝖘𝖊𝖗𝖇𝖔𝖙*
 
-      // *•@${personsending}*,
-      // シ︎💡𝐏𝐫𝐞𝐟𝐢𝐱: ${ᴋᴇɪ}
-      // シ︎⚙️𝗩𝗲𝗿𝘀𝗶𝗼𝗻: ￫ ${vers.vers}
-      // シ︎💻𝐏𝐥𝐚𝐭𝐟𝐨𝐫𝐦: _${os.platform()}_
-      // シ︎🛰️𝐏𝐢𝐧𝐠: _${latensie.toFixed(6)}s_
-      // シ︎⚰️𝐔𝐩𝐓𝐢𝐦𝐞: _${runtime(process.uptime())}_
+*•@${personsending}*,
+シ︎💡𝐏𝐫𝐞𝐟𝐢𝐱: ${ᴋᴇɪ}
+シ︎⚙️𝗩𝗲𝗿𝘀𝗶𝗼𝗻: ￫ ${vers.vers}
+シ︎💻𝐏𝐥𝐚𝐭𝐟𝐨𝐫𝐦: _${os.platform()}_
+シ︎🛰️𝐏𝐢𝐧𝐠: _${latensie.toFixed(6)}s_
+シ︎⚰️𝐔𝐩𝐓𝐢𝐦𝐞: _${runtime(process.uptime())}_
 
-      // ${MeeHelper}‍`,
-      //             }
-      //           )
-      //           .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, 𝓜𝓮𝓮6));
-      //       }
-      //       var 𝓜𝓮𝓮6ʍօ = "⤥ 💡𝐂𝐨𝐦𝐦𝐚𝐧𝐝\n";
-      //       var command = Mee6Sitrep.get(arg[0]);
-      //       if (command) {
-      //         𝓜𝓮𝓮6ʍօ += `⤤ ${
-      //           (ᴋᴇɪ, command.name === undefined ? "Null" : command.name)
-      //         }
+${MeeHelper}‍`,
+            }
+          )
+          .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, 𝓜𝓮𝓮6));
+      }
+      var 𝓜𝓮𝓮6ʍօ = "⤥ 💡𝐂𝐨𝐦𝐦𝐚𝐧𝐝\n";
+      var command = Mee6Sitrep.get(arg[0]);
+      if (command) {
+        𝓜𝓮𝓮6ʍօ += `⤤ ${
+          (ᴋᴇɪ, command.name === undefined ? "Null" : command.name)
+        }
 
-      // ⤥ 🖊️𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧
-      // ⤤ ${
-      //           (command.description,
-      //           command.description === undefined ? "Null" : command.description)
-      //         }`;
-      //         return ʍɛɛℓιєηт
-      //           .sendMessage(
-      //             𝓜𝓮𝓮6.chatId,
-      //             {
-      //               url: ꜱɪɢɴ.MEE,
-      //             },
-      //             MessageType.image,
-      //             {
-      //               mimetype: Mimetype.png,
-      //               caption: 𝓜𝓮𝓮6ʍօ,
-      //             }
-      //           )
-      //           .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, 𝓜𝓮𝓮6));
-      //       }
+⤥ 🖊️𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧
+⤤ ${
+          (command.description,
+          command.description === undefined ? "Null" : command.description)
+        }`;
+        return ʍɛɛℓιєηт
+          .sendMessage(
+            𝓜𝓮𝓮6.chatId,
+            {
+              url: ꜱɪɢɴ.MEE,
+            },
+            MessageType.image,
+            {
+              mimetype: Mimetype.png,
+              caption: 𝓜𝓮𝓮6ʍօ,
+            }
+          )
+          .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, 𝓜𝓮𝓮6));
+      }
     }
   },
 };

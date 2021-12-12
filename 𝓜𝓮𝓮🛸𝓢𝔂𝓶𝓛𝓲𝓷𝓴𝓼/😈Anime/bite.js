@@ -22,7 +22,7 @@ module.exports = {
       await ʍɛɛℓιєηт
         .sendMessage(
           𝓜𝓮𝓮6.logGroup,
-          `⦿ᴘᴏᴡᴇʀᴇᴅ ʙʏ
+          `_☆ ӄʀǟӄɨռʐʟǟɮ ɛռɢɨռɛ ☆_
 *🍄𝐌𝐞𝐞𝟔™ △▽ 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐁𝐨𝐭🤖*
 
 𝙐𝙥𝙙𝙖𝙩𝙚🤖𝙋𝙚𝙣𝙙𝙞𝙣𝙜
@@ -36,7 +36,7 @@ module.exports = {
       await ʍɛɛℓιєηт
         .sendMessage(
           𝓜𝓮𝓮6.chatId,
-          `⦿ᴘᴏᴡᴇʀᴇᴅ ʙʏ
+          `_☆ ӄʀǟӄɨռʐʟǟɮ ɛռɢɨռɛ ☆_
 *🍄𝐌𝐞𝐞𝟔™ △▽ 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐁𝐨𝐭🤖*
 
 *•@${personsending}*,
@@ -66,7 +66,7 @@ module.exports = {
           {
             mimetype: Mimetype.jpeg || Mimetype.png,
             contextInfo: { mentionedJid: [Sender, Receiver] },
-            caption: `⦿ᴘᴏᴡᴇʀᴇᴅ ʙʏ
+            caption: `_☆ ӄʀǟӄɨռʐʟǟɮ ɛռɢɨռɛ ☆_
 *🍄𝐌𝐞𝐞𝟔™ △▽ 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐁𝐨𝐭🤖*
 
 *⚡@${personsending}* bit *@${personreceived}*`,
@@ -86,7 +86,7 @@ module.exports = {
           {
             mimetype: Mimetype.jpeg || Mimetype.png,
             contextInfo: { mentionedJid: [Sender] },
-            caption: `⦿ᴘᴏᴡᴇʀᴇᴅ ʙʏ
+            caption: `_☆ ӄʀǟӄɨռʐʟǟɮ ɛռɢɨռɛ ☆_
 *🍄𝐌𝐞𝐞𝟔™ △▽ 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐁𝐨𝐭🤖*
   
 *⚡@${personsending}* Bit!`,
@@ -105,7 +105,7 @@ module.exports = {
           MessageType.image,
           {
             mimetype: Mimetype.jpeg || Mimetype.png,
-            caption: `⦿ᴘᴏᴡᴇʀᴇᴅ ʙʏ
+            caption: `_☆ ӄʀǟӄɨռʐʟǟɮ ɛռɢɨռɛ ☆_
 *🍄𝐌𝐞𝐞𝟔™ △▽ 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐁𝐨𝐭🤖*
 
 *⚡I Bite You!*`,

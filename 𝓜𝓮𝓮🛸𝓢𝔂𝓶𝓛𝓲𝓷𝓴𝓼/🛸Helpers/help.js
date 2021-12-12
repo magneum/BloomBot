@@ -78,7 +78,7 @@ module.exports = {
 ⬣ *${ᴋᴇɪ}help4* ➾  👑𝙂𝙧𝙤𝙪𝙥𝙨
 ⬣ *${ᴋᴇɪ}help5* ➾  🧀𝙁𝙪𝙣𝙨
 ⬣ *${ᴋᴇɪ}help6* ➾  🔞𝘼𝙙𝙪𝙡𝙩 𝙉𝙎𝙁𝙒 18+ (𝘼𝙙𝙢𝙞𝙣 𝙊𝙣𝙡𝙮)`,
-      footerText: `⦿ᴘᴏᴡᴇʀᴇᴅ ʙʏ
+      footerText: `_☆ ӄʀǟӄɨռʐʟǟɮ ɛռɢɨռɛ ☆_
 *🍄𝐌𝐞𝐞𝟔™ △▽ 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐁𝐨𝐭🤖*`,
       buttons: buttons,
       headerType: 4,

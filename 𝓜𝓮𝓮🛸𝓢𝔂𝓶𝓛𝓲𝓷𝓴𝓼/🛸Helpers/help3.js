@@ -24,7 +24,7 @@ module.exports = {
           contextInfo: {
             mentionedJid: [𝓜𝓮𝓮6.sender],
           },
-          caption: `⦿ᴘᴏᴡᴇʀᴇᴅ ʙʏ
+          caption: `_☆ ӄʀǟӄɨռʐʟǟɮ ɛռɢɨռɛ ☆_
 *🍄𝐌𝐞𝐞𝟔™ △▽ 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐁𝐨𝐭🤖*
 
 *Hey •@${personsending}*,
