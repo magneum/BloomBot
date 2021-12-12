@@ -53,11 +53,11 @@ module.exports = {
         buttonText: { displayText: `${ᴋᴇɪ}ping` },
         type: 1,
       },
-      {
-        buttonId: `${ᴋᴇɪ}group`,
-        buttonText: { displayText: `${ᴋᴇɪ}group` },
-        type: 1,
-      },
+      // {
+      //   buttonId: `${ᴋᴇɪ}group`,
+      //   buttonText: { displayText: `${ᴋᴇɪ}group` },
+      //   type: 1,
+      // },
     ];
     const buttonMessage = {
       contentText: `

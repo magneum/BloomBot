@@ -26,7 +26,7 @@ Do note, the setwelcome option is still enabled after you use the delete option.
       await ʍɛɛℓιєηт
         .sendMessage(
           𝓜𝓮𝓮6.logGroup,
-          `⦿ᴘᴏᴡᴇʀᴇᴅ ʙʏ
+          `_☆ ӄʀǟӄɨռʐʟǟɮ ɛռɢɨռɛ ☆_
 *🍄𝐌𝐞𝐞𝟔™ △▽ 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐁𝐨𝐭🤖*
 
 𝙐𝙥𝙙𝙖𝙩𝙚🤖𝙋𝙚𝙣𝙙𝙞𝙣𝙜
@@ -40,7 +40,7 @@ Do note, the setwelcome option is still enabled after you use the delete option.
       await ʍɛɛℓιєηт
         .sendMessage(
           𝓜𝓮𝓮6.chatId,
-          `⦿ᴘᴏᴡᴇʀᴇᴅ ʙʏ
+          `_☆ ӄʀǟӄɨռʐʟǟɮ ɛռɢɨռɛ ☆_
 *🍄𝐌𝐞𝐞𝟔™ △▽ 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐁𝐨𝐭🤖*
 
 *•@${personsending}*,
