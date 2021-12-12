@@ -11,4 +11,4 @@ RUN cd Mizuki
 WORKDIR /Mizuki
 RUN npm install --force
 RUN touch ~/.hushlogin
-CMD node 𝓜𝓮𝓮6™.js
+CMD node 𝓜𝖎𝖟𝖚ӄ𝖎™.js
