@@ -123,7 +123,7 @@ const can = [
 // ⬡==================⬡-----------------⦿𝐌𝐢𝐳𝐮𝐤𝐢™⦿-----------------⬡==================⬡
 module.exports = {
   name: `beautycheck`,
-  description: `Get any random Jokes`,
+  description: `ᴄʜᴇᴄᴋ ʜᴏᴡ ʙᴇᴀᴜᴛɪꜰᴜʟ ʏᴏᴜ/ᴛᴀɢɢᴇᴅ ᴘᴇʀꜱᴏɴ ɪꜱ`,
   async handle(𝓚𝓻𝓪𝓴𝓲𝓷𝔃, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg) {
     // ⬡==================⬡-----------------⦿𝐌𝐢𝐳𝐮𝐤𝐢™⦿-----------------⬡==================⬡
     await 𝓜𝓮𝓮git.fetch();
@@ -163,7 +163,7 @@ module.exports = {
       return;
       // ⬡==================⬡-----------------⦿𝐌𝐢𝐳𝐮𝐤𝐢™⦿-----------------⬡==================⬡
     } else {
-      if (𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
+      if (!𝓜𝖎𝖟𝖚ӄ𝖎.Group && 𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
         var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
         personreceived = Receiver.substring(0, Receiver.length - 15);
         var Sender = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
@@ -179,7 +179,57 @@ module.exports = {
         context.textAlign = `center`;
         context.textBaseline = `top`;
         // context.fillStyle = randomMC.getColor();
-        const text = "Beauty💄Checker";
+        const text = "Beauty Checker";
+        const textWidth = context.measureText(text).width;
+        context.fillRect(
+          600 - textWidth / 2 - 10,
+          170 - 5,
+          textWidth + 20,
+          120
+        );
+        context.fillStyle = randomMC.getColor();
+        context.fillText(text, 600, 170);
+        context.fillStyle = "#fff";
+        context.font = "bold 50pt Honeycomb";
+        context.fillText("Percentage: " + Much + "%", 600, 530);
+        loadImage("./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/爪𝖎𝖟𝖚ӄ𝖎Tempa.png").then(async () => {
+          const buffer = canvas.toBuffer("image/png");
+          fs.writeFileSync("./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/爪𝖎𝖟𝖚ӄ𝖎Tempa.png", buffer);
+          𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+            .sendMessage(
+              𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+              {
+                url: "./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/爪𝖎𝖟𝖚ӄ𝖎Tempa.png",
+              },
+              MessageType.image,
+              {
+                mimetype: Mimetype.png,
+                contextInfo: { mentionedJid: [Sender, Receiver] },
+                caption: `⬡••• *𝐌𝐢𝐳𝐮𝐤𝐢 by ₭𝔯𝔞ӄ𝔦𝔫𝔷𝔏𝔞𝔟* •••⦿
+
+𝗤𝘂𝗲𝘀𝘁𝗶𝗼𝗻: ʜᴏᴡ ʙᴇᴀᴜᴛʏꜰᴜʟʟ ɪꜱ *@${personreceived}*
+𝗣𝗲𝗿𝗰𝗲𝗻𝘁𝗮𝗴𝗲: ${Much}%`,
+              }
+            )
+            .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+        });
+      } else if (𝓜𝖎𝖟𝖚ӄ𝖎.Group && 𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
+        var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
+        personreceived = Receiver.substring(0, Receiver.length - 15);
+        var Sender = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
+        personsending = Sender.substring(0, Sender.length - 15);
+        const Much = can[Math.floor(Math.random() * can.length)];
+        const width = 1280;
+        const height = 720;
+        const canvas = createCanvas(width, height);
+        const context = canvas.getContext("2d");
+        context.fillStyle = "#252525";
+        context.fillRect(0, 0, width, height);
+        context.font = "bold 90pt Housttely";
+        context.textAlign = `center`;
+        context.textBaseline = `top`;
+        // context.fillStyle = randomMC.getColor();
+        const text = "Beauty Checker";
         const textWidth = context.measureText(text).width;
         context.fillRect(
           600 - textWidth / 2 - 10,
@@ -243,7 +293,7 @@ Asked By? @${personsending}
         context.textAlign = `center`;
         context.textBaseline = `top`;
         // context.fillStyle = randomMC.getColor();
-        const text = "Beauty💄Checker";
+        const text = "Beauty Checker";
         const textWidth = context.measureText(text).width;
         context.fillRect(
           600 - textWidth / 2 - 10,
