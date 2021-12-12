@@ -14,7 +14,7 @@ if (fs.existsSync(`𝓜𝖎𝖟𝖚ӄ𝖎.env`)) {
 // 👓𝓜𝓮𝓮6™ ᴀᴅᴠᴀɴᴄᴇᴅ ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ 80+ ᴄᴏᴍᴍᴀɴᴅꜱ ꜰᴏʀ ʙᴏᴛʜ ᴘʀɪᴠᴀᴛᴇ ᴀɴᴅ ɢʀᴏᴜᴘ-ᴜꜱᴀɢᴇ👓
 // ⬡==================⬡-----------------⦿𝐌𝐞𝐞𝟔™⦿-----------------⬡==================⬡
 const env = {
-  Mee6: process.env.MIZUKI === undefined ? `` : process.env.MIZUKI,
+  Mee6: process.env.MIZUKI === undefined ? "Null" : process.env.MIZUKI,
   HEROKU_API:
     process.env.HEROKU_API === undefined ? "Null" : process.env.HEROKU_API,
   HEROKU_BOT_NAME:
@@ -26,7 +26,7 @@ const env = {
   CCD: process.env.CCD === undefined ? `91` : process.env.CCD,
   OCR: `9ffb44def388957`,
   WAPI: `6729ac2b2e2bb5c686ff427a2f06df92`,
-  HASH: "",
+  HASH: "https://chat.whatsapp.com/HKBqzwhixq6AwbOAWefioF",
   DATABASE_URL: (process.env.DATABASE_URL =
     process.env.DATABASE_URL === undefined
       ? `./𝓜𝖎𝖟𝖚ӄ𝖎.db`
