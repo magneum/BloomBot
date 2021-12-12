@@ -484,7 +484,7 @@ ${Fetched.message}`,
             }
           )
           .catch((error) => ℓιєηт.catch(error, ʍɛɛℓιєηт, 𝓜𝓮𝓮6));
-      } else if (command && 𝓜𝓮𝓮6.commandName == `help`) {
+      } else if (command && 𝓜𝓮𝓮6.commandName == `menu`) {
         try {
           return command.handle(ʍɛɛℓιєηт, chat, 𝓜𝓮𝓮6, arg, Mee6Sitrep);
         } catch (cᴇʀʀᴏʀ) {
