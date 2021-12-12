@@ -21,8 +21,6 @@
 ```
 
 # ⚡ 𝕯𝖊𝖕𝖑𝖔𝖞𝖒𝖊𝖓𝖙
- *video download and watch*
-- ꜰɪʀꜱᴛ ꜰᴏʀᴋ ᴀɴᴅ ꜱᴛᴀʀ ᴛʜᴇ ʀᴇᴘᴏ (or else auto upgrading won't work)
 
 *text and link*
 - ꜰɪʀꜱᴛ ꜰᴏʀᴋ ᴀɴᴅ ꜱᴛᴀʀ ᴛʜᴇ ʀᴇᴘᴏ (or else auto upgrading won't work)
