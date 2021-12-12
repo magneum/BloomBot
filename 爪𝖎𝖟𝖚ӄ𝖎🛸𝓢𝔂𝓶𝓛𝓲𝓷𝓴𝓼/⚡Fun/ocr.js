@@ -2,7 +2,7 @@ const { MessageType } = require(`@adiwajshing/baileys`);
 const ocrSpace = require(`ocr-space-api-wrapper`);
 const ℓιєηт = require("../../爪𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/catch");
 const ꜱɪɢɴ = require(`../../爪𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/ꜱɪɢɴ`);
-var ᴋᴇɪᴇx = new RegExp(ꜱɪɢɴ.Mee6IX, "g");
+var ᴋᴇɪᴇx = new RegExp(ꜱɪɢɴ.MizukiIX, "g");
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 const 爪𝖎𝖟𝖚ӄ𝖎git = require("simple-git")();
 // ⬡==================⬡-----------------⦿𝐌𝐞𝐞𝟔™⦿-----------------⬡==================⬡

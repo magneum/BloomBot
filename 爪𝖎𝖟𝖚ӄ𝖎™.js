@@ -22,7 +22,7 @@ const ꜱɪɢɴ = require(`./爪𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/ꜱɪ
 const Kolor = require(`chalk`);
 const 爪𝖎𝖟𝖚ӄ𝖎sql = ꜱɪɢɴ.POSTQL;
 const fs = require(`fs`);
-var ᴋᴇɪᴇx = new RegExp(ꜱɪɢɴ.Mee6IX, `g`);
+var ᴋᴇɪᴇx = new RegExp(ꜱɪɢɴ.MizukiIX, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 console.clear();
 // ⬡==================⬡-----------------⦿𝐌𝐞𝐞𝟔™⦿-----------------⬡==================⬡
@@ -73,7 +73,7 @@ var ᴛᴇxᴛʙʏᴇ = [
 var 𝓚𝓻𝓪𝓴𝓲𝓷𝔃 = 爪𝖎𝖟𝖚ӄ𝖎ֆʏռօք.WhatsApp;
 async function 爪𝖎𝖟𝖚ӄ𝖎s() {
   𝓚𝓻𝓪𝓴𝓲𝓷𝔃.logger.level = "error";
-  var Mee6Sitrep = new Map();
+  var MizukiSitrep = new Map();
   if (ꜱɪɢɴ.HEROKU_API === `Null` || ꜱɪɢɴ.HEROKU_BOT_NAME === `Null`) {
     console.log(
       Kolor.yellow.bold(
@@ -88,7 +88,7 @@ async function 爪𝖎𝖟𝖚ӄ𝖎s() {
   console.log(Kolor.yellow.bold(`𝐌𝐞𝐞𝟔™💡𝗜𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻⬰ 𝗖𝗵𝗲𝗰𝗸𝗶𝗻𝗴 𝗳𝗼𝗿 𝘂𝗽𝗱𝗮𝘁𝗲𝘀...`));
   await AutoMeeUpdate();
   try {
-    var session = 爪𝖎𝖟𝖚ӄ𝖎ֆʏռօք.Mee6reignite(ꜱɪɢɴ.Mee6);
+    var session = 爪𝖎𝖟𝖚ӄ𝖎ֆʏռօք.Mizukireignite(ꜱɪɢɴ.Mizuki);
     𝓚𝓻𝓪𝓴𝓲𝓷𝔃.loadAuthInfo(session);
   } catch (cᴇʀʀᴏʀ) {
     if (
@@ -154,7 +154,7 @@ async function 爪𝖎𝖟𝖚ӄ𝖎s() {
         .filter((file) => file.endsWith(`.js`));
       for (const file of commandFiles) {
         const command = require(`./爪𝖎𝖟𝖚ӄ𝖎🛸𝓢𝔂𝓶𝓛𝓲𝓷𝓴𝓼/${folder}/${file}`);
-        Mee6Sitrep.set(command.name, command);
+        MizukiSitrep.set(command.name, command);
         console.log(
           Kolor.yellow.bold(`𝐌𝐞𝐞𝟔™💡𝗜𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻⬰  `),
           Kolor.green.bold(command.name.toUpperCase())
@@ -497,7 +497,7 @@ ${ꜰᴇᴛᴄʜᴇᴅʙʏᴇ.message}`,
           `𝐌𝐞𝐞𝟔™💡𝗜𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻⬰  ${爪𝖎𝖟𝖚ӄ𝖎.commandName.toUpperCase()} command executed.`
         )
       );
-      const command = Mee6Sitrep.get(爪𝖎𝖟𝖚ӄ𝖎.commandName);
+      const command = MizukiSitrep.get(爪𝖎𝖟𝖚ӄ𝖎.commandName);
       var arg = 爪𝖎𝖟𝖚ӄ𝖎.body.trim().split(/\s+/).slice(1);
       var Sender = 爪𝖎𝖟𝖚ӄ𝖎.sender;
       personsending = Sender.substring(0, Sender.length - 15);
@@ -520,7 +520,7 @@ Use ${ᴋᴇɪ}help to get the list of available commands`,
           .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 爪𝖎𝖟𝖚ӄ𝖎));
       } else if (command && 爪𝖎𝖟𝖚ӄ𝖎.commandName == `menu`) {
         try {
-          return command.handle(𝓚𝓻𝓪𝓴𝓲𝓷𝔃, chat, 爪𝖎𝖟𝖚ӄ𝖎, arg, Mee6Sitrep);
+          return command.handle(𝓚𝓻𝓪𝓴𝓲𝓷𝔃, chat, 爪𝖎𝖟𝖚ӄ𝖎, arg, MizukiSitrep);
         } catch (cᴇʀʀᴏʀ) {
           return console.log(Kolor.red.bold(`𝐌𝐞𝐞𝟔™❌𝗘𝗿𝗿𝗼𝗿⬰ `, cᴇʀʀᴏʀ));
         }

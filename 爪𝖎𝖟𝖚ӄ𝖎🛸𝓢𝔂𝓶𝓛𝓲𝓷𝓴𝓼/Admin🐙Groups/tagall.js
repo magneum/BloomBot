@@ -1,43 +1,43 @@
 // ===============================================================================
-// 🎮爪𝖎𝖟𝖚ӄ𝖎6™ ᴀᴅᴠᴀɴᴄᴇᴅ ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ 80+ ᴄᴏᴍᴍᴀɴᴅꜱ ꜰᴏʀ ʙᴏᴛʜ ᴘʀɪᴠᴀᴛᴇ ᴀɴᴅ ɢʀᴏᴜᴘ-ᴜꜱᴀɢᴇ
+// 🎮爪𝖎𝖟𝖚ӄ𝖎™ ᴀᴅᴠᴀɴᴄᴇᴅ ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ 80+ ᴄᴏᴍᴍᴀɴᴅꜱ ꜰᴏʀ ʙᴏᴛʜ ᴘʀɪᴠᴀᴛᴇ ᴀɴᴅ ɢʀᴏᴜᴘ-ᴜꜱᴀɢᴇ
 // ===============================================================================
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
-const ℓιєηт = require("../../爪𝖎𝖟𝖚ӄ𝖎6🧀𝓒𝓻𝓪𝓽𝓮/catch");
-const ꜱɪɢɴ = require(`../../爪𝖎𝖟𝖚ӄ𝖎6🧀𝓒𝓻𝓪𝓽𝓮/ꜱɪɢɴ`);
+const ℓιєηт = require("../../爪𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/catch");
+const ꜱɪɢɴ = require(`../../爪𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/ꜱɪɢɴ`);
 var ᴋᴇɪᴇx = new RegExp(ꜱɪɢɴ.Mee6IX, "g");
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 const 爪𝖎𝖟𝖚ӄ𝖎git = require("simple-git")();
 // ⬡==================⬡-----------------⦿𝐌𝐞𝐞𝟔™⦿-----------------⬡==================⬡
-// 🛸爪𝖎𝖟𝖚ӄ𝖎6™ ᴀᴅᴠᴀɴᴄᴇᴅ ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ 80+ ᴄᴏᴍᴍᴀɴᴅꜱ ꜰᴏʀ ʙᴏᴛʜ ᴘʀɪᴠᴀᴛᴇ ᴀɴᴅ ɢʀᴏᴜᴘ-ᴜꜱᴀɢᴇ🛸
+// 🛸爪𝖎𝖟𝖚ӄ𝖎™ ᴀᴅᴠᴀɴᴄᴇᴅ ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ 80+ ᴄᴏᴍᴍᴀɴᴅꜱ ꜰᴏʀ ʙᴏᴛʜ ᴘʀɪᴠᴀᴛᴇ ᴀɴᴅ ɢʀᴏᴜᴘ-ᴜꜱᴀɢᴇ🛸
 // ⬡==================⬡-----------------⦿𝐌𝐞𝐞𝟔™⦿-----------------⬡==================⬡
 module.exports = {
   name: `tagall`,
   description: `command to tag evryone in a group.`,
-  爪𝖎𝖟𝖚ӄ𝖎6ʍօʀɛ: `Use this command to tag everyone in the group by either replying to a message or simply using  *${ᴋᴇɪ}tagall*  command.`,
-  async handle(𝓚𝓻𝓪𝓴𝓲𝓷𝔃, chat, 爪𝖎𝖟𝖚ӄ𝖎6, arg) {
+  爪𝖎𝖟𝖚ӄ𝖎ʍօʀɛ: `Use this command to tag everyone in the group by either replying to a message or simply using  *${ᴋᴇɪ}tagall*  command.`,
+  async handle(𝓚𝓻𝓪𝓴𝓲𝓷𝔃, chat, 爪𝖎𝖟𝖚ӄ𝖎, arg) {
     // ⬡==================⬡-----------------⦿𝐌𝐞𝐞𝟔™⦿-----------------⬡==================⬡
     await 爪𝖎𝖟𝖚ӄ𝖎git.fetch();
-    var Sender = 爪𝖎𝖟𝖚ӄ𝖎6.sender;
-    var ɴᴇᴡ爪𝖎𝖟𝖚ӄ𝖎6 = await 爪𝖎𝖟𝖚ӄ𝖎git.log(["KrakinzLab..origin/KrakinzLab"]);
+    var Sender = 爪𝖎𝖟𝖚ӄ𝖎.sender;
+    var ɴᴇᴡ爪𝖎𝖟𝖚ӄ𝖎 = await 爪𝖎𝖟𝖚ӄ𝖎git.log(["KrakinzLab..origin/KrakinzLab"]);
     personsending = Sender.substring(0, Sender.length - 15);
     // ⬡==================⬡-----------------⦿𝐌𝐞𝐞𝟔™⦿-----------------⬡==================⬡
-    if (ɴᴇᴡ爪𝖎𝖟𝖚ӄ𝖎6.total != 0) {
+    if (ɴᴇᴡ爪𝖎𝖟𝖚ӄ𝖎.total != 0) {
       await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
         .sendMessage(
-          爪𝖎𝖟𝖚ӄ𝖎6.logGroup,
+          爪𝖎𝖟𝖚ӄ𝖎.logGroup,
           `*©️ 爪𝖎𝖟𝖚ӄ𝖎* by _₭𝔯𝔞ӄ𝔦𝔫𝔷𝔏𝔞𝔟_
 
 𝙐𝙥𝙙𝙖𝙩𝙚🤖𝙋𝙚𝙣𝙙𝙞𝙣𝙜
 *•𝘗𝘭𝘦𝘢𝘴𝘦 𝘜𝘱𝘥𝘢𝘵𝘦 𝘜𝘴𝘪𝘯𝘨 *${ᴋᴇɪ}update* 𝘰𝘳 𝘳𝘦𝘥𝘦𝘱𝘭𝘰𝘺 𝐌𝐞𝐞𝟔™!`,
           MessageType.text
         )
-        .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 爪𝖎𝖟𝖚ӄ𝖎6));
+        .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 爪𝖎𝖟𝖚ӄ𝖎));
     }
     // ⬡==================⬡-----------------⦿𝐌𝐞𝐞𝟔™⦿-----------------⬡==================⬡
-    if (爪𝖎𝖟𝖚ӄ𝖎6.chatId === "120363025343298860@g.us" && !爪𝖎𝖟𝖚ӄ𝖎6.isSenderSUDO) {
+    if (爪𝖎𝖟𝖚ӄ𝖎.chatId === "120363025343298860@g.us" && !爪𝖎𝖟𝖚ӄ𝖎.isSenderSUDO) {
       await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
         .sendMessage(
-          爪𝖎𝖟𝖚ӄ𝖎6.chatId,
+          爪𝖎𝖟𝖚ӄ𝖎.chatId,
           `*©️ 爪𝖎𝖟𝖚ӄ𝖎* by _₭𝔯𝔞ӄ𝔦𝔫𝔷𝔏𝔞𝔟_
 
 *•@${personsending}*,
@@ -45,18 +45,18 @@ module.exports = {
           MessageType.text,
           {
             contextInfo: {
-              mentionedJid: [爪𝖎𝖟𝖚ӄ𝖎6.sender],
+              mentionedJid: [爪𝖎𝖟𝖚ӄ𝖎.sender],
             },
           }
         )
-        .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 爪𝖎𝖟𝖚ӄ𝖎6));
+        .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 爪𝖎𝖟𝖚ӄ𝖎));
       return;
     }
     // ⬡==================⬡-----------------⦿𝐌𝐞𝐞𝟔™⦿-----------------⬡==================⬡
-    if (!爪𝖎𝖟𝖚ӄ𝖎6.isGroup) {
+    if (!爪𝖎𝖟𝖚ӄ𝖎.isGroup) {
       return await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
         .sendMessage(
-          爪𝖎𝖟𝖚ӄ𝖎6.chatId,
+          爪𝖎𝖟𝖚ӄ𝖎.chatId,
           {
             url: ꜱɪɢɴ.ERROR,
           },
@@ -67,13 +67,13 @@ module.exports = {
           }
         )
         .catch((cᴇʀʀᴏʀ) => {
-          ℓιєηт.catch((cᴇʀʀᴏʀ, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 爪𝖎𝖟𝖚ӄ𝖎6));
+          ℓιєηт.catch((cᴇʀʀᴏʀ, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 爪𝖎𝖟𝖚ӄ𝖎));
         });
     }
-    if (爪𝖎𝖟𝖚ӄ𝖎6.isGroup && !爪𝖎𝖟𝖚ӄ𝖎6.isSenderGroupAdmin) {
+    if (爪𝖎𝖟𝖚ӄ𝖎.isGroup && !爪𝖎𝖟𝖚ӄ𝖎.isSenderGroupAdmin) {
       return await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
         .sendMessage(
-          爪𝖎𝖟𝖚ӄ𝖎6.chatId,
+          爪𝖎𝖟𝖚ӄ𝖎.chatId,
           {
             url: ꜱɪɢɴ.ERROR,
           },
@@ -89,46 +89,46 @@ module.exports = {
 `,
           }
         )
-        .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 爪𝖎𝖟𝖚ӄ𝖎6));
+        .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 爪𝖎𝖟𝖚ӄ𝖎));
     }
     let members = [];
-    for (var i = 0; i < 爪𝖎𝖟𝖚ӄ𝖎6.groupMembers.length; i++) {
-      members[i] = 爪𝖎𝖟𝖚ӄ𝖎6.groupMembers[i].jid;
+    for (var i = 0; i < 爪𝖎𝖟𝖚ӄ𝖎.groupMembers.length; i++) {
+      members[i] = 爪𝖎𝖟𝖚ӄ𝖎.groupMembers[i].jid;
     }
-    if (爪𝖎𝖟𝖚ӄ𝖎6.isReply) {
+    if (爪𝖎𝖟𝖚ӄ𝖎.isReply) {
       𝓚𝓻𝓪𝓴𝓲𝓷𝔃
         .sendMessage(
-          爪𝖎𝖟𝖚ӄ𝖎6.chatId,
+          爪𝖎𝖟𝖚ӄ𝖎.chatId,
           `*Attention Here Everyone In the Group!*`,
           MessageType.text,
           {
             contextInfo: {
-              stanzaId: 爪𝖎𝖟𝖚ӄ𝖎6.replyMessageId,
-              participant: 爪𝖎𝖟𝖚ӄ𝖎6.replyParticipant,
+              stanzaId: 爪𝖎𝖟𝖚ӄ𝖎.replyMessageId,
+              participant: 爪𝖎𝖟𝖚ӄ𝖎.replyParticipant,
               quotedMessage: {
-                conversation: 爪𝖎𝖟𝖚ӄ𝖎6.replyMessage,
+                conversation: 爪𝖎𝖟𝖚ӄ𝖎.replyMessage,
               },
               mentionedJid: members,
             },
           }
         )
-        .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 爪𝖎𝖟𝖚ӄ𝖎6));
+        .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 爪𝖎𝖟𝖚ӄ𝖎));
       return;
     }
     if (arg.length) {
       𝓚𝓻𝓪𝓴𝓲𝓷𝔃
-        .sendMessage(爪𝖎𝖟𝖚ӄ𝖎6.chatId, arg.join(` `), MessageType.text, {
+        .sendMessage(爪𝖎𝖟𝖚ӄ𝖎.chatId, arg.join(` `), MessageType.text, {
           contextInfo: {
             mentionedJid: members,
           },
         })
-        .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 爪𝖎𝖟𝖚ӄ𝖎6));
+        .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 爪𝖎𝖟𝖚ӄ𝖎));
       return;
     }
 
     𝓚𝓻𝓪𝓴𝓲𝓷𝔃
       .sendMessage(
-        爪𝖎𝖟𝖚ӄ𝖎6.chatId,
+        爪𝖎𝖟𝖚ӄ𝖎.chatId,
         `*Attention Here Everyone In the Group!*`,
         MessageType.text,
         {
@@ -137,10 +137,10 @@ module.exports = {
           },
         }
       )
-      .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 爪𝖎𝖟𝖚ӄ𝖎6));
+      .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 爪𝖎𝖟𝖚ӄ𝖎));
     return;
   },
 };
 // ===============================================================================
-// 🎮爪𝖎𝖟𝖚ӄ𝖎6™ 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..
+// 🎮爪𝖎𝖟𝖚ӄ𝖎™ 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤..
 // ===============================================================================

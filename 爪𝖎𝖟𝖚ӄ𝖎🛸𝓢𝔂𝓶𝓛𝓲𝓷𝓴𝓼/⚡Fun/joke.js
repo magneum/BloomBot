@@ -8,7 +8,7 @@ const {
   matchJoke,
   getRandomJoke,
 } = require(`random-jokes`);
-var ᴋᴇɪᴇx = new RegExp(ꜱɪɢɴ.Mee6IX, "g");
+var ᴋᴇɪᴇx = new RegExp(ꜱɪɢɴ.MizukiIX, "g");
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 const 爪𝖎𝖟𝖚ӄ𝖎git = require("simple-git")();
 // ⬡==================⬡-----------------⦿𝐌𝐞𝐞𝟔™⦿-----------------⬡==================⬡
