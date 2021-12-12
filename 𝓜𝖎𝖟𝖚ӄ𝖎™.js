@@ -353,17 +353,17 @@ ${update.desc}`,
 
         var Fetched = await ɠɠ𝓜𝖎𝖟𝖚ӄ𝖎.getMessage(GroupID, `setwelcome`);
         try {
-          ppimg = await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃.getProfilePicture(
+          𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃.getProfilePicture(
             `${MemNum.split(`@`)[0]}@c.us`
           );
         } catch {
-          ppimg = `https://i.postimg.cc/bJmWSkFL/depositphotos-39258143-stock-illustration-businessman-avatar-profile-picture.jpg`;
+          𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = `https://i.postimg.cc/bJmWSkFL/depositphotos-39258143-stock-illustration-businessman-avatar-profile-picture.jpg`;
         }
         download(
-          ppimg,
+          𝕻𝕻𝖑𝖊𝖙𝖊𝖗,
           {
             directory: `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/`,
-            filename: `ppimg.jpg`,
+            filename: `𝕻𝕻𝖑𝖊𝖙𝖊𝖗.jpg`,
           },
           async function (err) {
             if (err) throw err;
@@ -373,7 +373,7 @@ ${update.desc}`,
               .sendMessage(
                 GroupID,
                 {
-                  url: `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/ppimg.jpg`,
+                  url: `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/𝕻𝕻𝖑𝖊𝖙𝖊𝖗.jpg`,
                 },
                 MessageType.image,
                 {
