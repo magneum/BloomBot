@@ -213,7 +213,8 @@ module.exports = {
             )
             .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
         });
-      } else if (𝓜𝖎𝖟𝖚ӄ𝖎.Group && 𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
+      }
+      if (𝓜𝖎𝖟𝖚ӄ𝖎.Group && 𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
         var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
         personreceived = Receiver.substring(0, Receiver.length - 15);
         var Sender = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
@@ -264,86 +265,64 @@ Asked By? @${personsending}
             )
             .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
         });
-      } else {
-        var Sender = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
-        personsending = Sender.substring(0, Sender.length - 15);
-        const Much = can[Math.floor(Math.random() * can.length)];
-        await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+      }
+
+      const Much = can[Math.floor(Math.random() * can.length)];
+      const width = 1280;
+      const height = 720;
+      const canvas = createCanvas(width, height);
+      const context = canvas.getContext("2d");
+      context.fillStyle = "#252525";
+      context.fillRect(0, 0, width, height);
+      context.font = "bold 120pt Housttely";
+      context.textAlign = `center`;
+      context.textBaseline = `top`;
+      // context.fillStyle = randomMC.getColor();
+      const text = "Beauty Checker";
+      const textWidth = context.measureText(text).width;
+      context.fillRect(600 - textWidth / 2 - 10, 170 - 5, textWidth + 20, 120);
+      context.fillStyle = randomMC.getColor();
+      context.fillText(text, 600, 170);
+      context.fillStyle = "#fff";
+      context.font = "bold 80pt Honeycomb";
+      context.fillText("Percentage: " + Much + "%", 600, 530);
+      loadImage("./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/爪𝖎𝖟𝖚ӄ𝖎Tempa.png").then(async () => {
+        const buffer = canvas.toBuffer("image/png");
+        fs.writeFileSync("./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/爪𝖎𝖟𝖚ӄ𝖎Tempa.png", buffer);
+        𝓚𝓻𝓪𝓴𝓲𝓷𝔃
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            `𝗤𝘂𝗲𝘀𝘁𝗶𝗼𝗻: ʜᴏᴡ ʙᴇᴀᴜᴛʏꜰᴜʟʟ ɪꜱ *@${personsending}*` +
-              "*\n\n𝗣𝗲𝗿𝗰𝗲𝗻𝘁𝗮𝗴𝗲: " +
-              Much +
-              "%",
-            MessageType.text,
             {
-              contextInfo: {
-                mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
-              },
-            }
-          )
-          .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
-        const width = 1280;
-        const height = 720;
-        const canvas = createCanvas(width, height);
-        const context = canvas.getContext("2d");
-        context.fillStyle = "#252525";
-        context.fillRect(0, 0, width, height);
-        context.font = "bold 120pt Housttely";
-        context.textAlign = `center`;
-        context.textBaseline = `top`;
-        // context.fillStyle = randomMC.getColor();
-        const text = "Beauty Checker";
-        const textWidth = context.measureText(text).width;
-        context.fillRect(
-          600 - textWidth / 2 - 10,
-          170 - 5,
-          textWidth + 20,
-          120
-        );
-        context.fillStyle = randomMC.getColor();
-        context.fillText(text, 600, 170);
-        context.fillStyle = "#fff";
-        context.font = "bold 80pt Honeycomb";
-        context.fillText("Percentage: " + Much + "%", 600, 530);
-        loadImage("./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/爪𝖎𝖟𝖚ӄ𝖎Tempa.png").then(async () => {
-          const buffer = canvas.toBuffer("image/png");
-          fs.writeFileSync("./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/爪𝖎𝖟𝖚ӄ𝖎Tempa.png", buffer);
-          𝓚𝓻𝓪𝓴𝓲𝓷𝔃
-            .sendMessage(
-              𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              {
-                url: "./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/爪𝖎𝖟𝖚ӄ𝖎Tempa.png",
-              },
-              MessageType.image,
-              {
-                mimetype: Mimetype.png,
-                contextInfo: { mentionedJid: [Sender] },
-                caption: `⬡••• *𝐌𝐢𝐳𝐮𝐤𝐢 by ₭𝔯𝔞ӄ𝔦𝔫𝔷𝔏𝔞𝔟* •••⦿
+              url: "./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/爪𝖎𝖟𝖚ӄ𝖎Tempa.png",
+            },
+            MessageType.image,
+            {
+              mimetype: Mimetype.png,
+              contextInfo: { mentionedJid: [Sender] },
+              caption: `⬡••• *𝐌𝐢𝐳𝐮𝐤𝐢 by ₭𝔯𝔞ӄ𝔦𝔫𝔷𝔏𝔞𝔟* •••⦿
 
 𝗤𝘂𝗲𝘀𝘁𝗶𝗼𝗻: ʜᴏᴡ ʙᴇᴀᴜᴛʏꜰᴜʟʟ ɪꜱ *@${personsending}*
 𝗣𝗲𝗿𝗰𝗲𝗻𝘁𝗮𝗴𝗲: ${Much}%`,
-              }
-            )
-            .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
-        });
-      }
-      // ⬡==================⬡-----------------⦿𝐌𝐢𝐳𝐮𝐤𝐢™⦿-----------------⬡==================⬡
-      //   try {
-      //     var Receiver = "ME";
-      //     xic(Sender, Receiver).then((toxic) => {
-      //       𝓚𝓻𝓪𝓴𝓲𝓷𝔃
-      //         .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, toxic, MessageType.text, {
-      //           contextInfo: {
-      //             mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
-      //           },
-      //         })
-      //         .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
-      //     });
-      //   } catch (err) {
-      //     console.log(err);
-      //   }
+            }
+          )
+          .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+      });
     }
+    // ⬡==================⬡-----------------⦿𝐌𝐢𝐳𝐮𝐤𝐢™⦿-----------------⬡==================⬡
+    //   try {
+    //     var Receiver = "ME";
+    //     xic(Sender, Receiver).then((toxic) => {
+    //       𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+    //         .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, toxic, MessageType.text, {
+    //           contextInfo: {
+    //             mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
+    //           },
+    //         })
+    //         .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+    //     });
+    //   } catch (err) {
+    //     console.log(err);
+    //   }
   },
 };
 // ===============================================================================
