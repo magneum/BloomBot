@@ -31,6 +31,28 @@ Example Usage,
 *${ᴋᴇɪ}carbon*  and reply to a text message.
 Use the -t flag after  *${ᴋᴇɪ}carbon*  to get the list of themes availble.
 In order to specify the theme, use  *${ᴋᴇɪ}carbon <text> -t <theme>* .`,
+  more: `No input provided.
+Please use the command  
+*${ᴋᴇɪ}carbon <text> -t <theme>*  
+or reply to a text message with  
+*${ᴋᴇɪ}carbon*  to carbonize the text.
+
+*----> 𝐓𝐇𝐄𝐌𝐄𝐒 <----*
+_3024 night_  *|*  _a11y dark_  
+_blackboard_  *|*  _base 16 (dark)_ 
+_base 16 (light)_  *|*  _cobalt_ 
+_duotone_  *|*  _hopscotch_
+_lucario_  *|*  _material_ 
+_monokai_  *|*  _night owl_ 
+_nord_  *|*  _oceanic next_
+_one light_  *|*  _one dark_
+_panda_  *|*  _paraiso_
+_seti_  *|*  _shades of purple_ 
+_solarized (dark)_ 
+_solarized (light)_
+_synthwave '84_  *|*  _twilight_
+_verminal_  *|*  _vscode_  
+_yeti_  *|*  _zenburn_`,
   async handle(𝓚𝓻𝓪𝓴𝓲𝓷𝔃, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg) {
     // ⬡==================⬡-----------------⦿𝐌𝐢𝐳𝐮𝐤𝐢™⦿-----------------⬡==================⬡
     await 𝓜𝓮𝓮git.fetch();
@@ -42,7 +64,7 @@ In order to specify the theme, use  *${ᴋᴇɪ}carbon <text> -t <theme>* .`,
       await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
         .sendMessage(
           𝓜𝖎𝖟𝖚ӄ𝖎.logGroup,
-          `⬡••• *𝐌𝐢𝐳𝐮𝐤𝐢 by ₭𝔯𝔞ӄ𝔦𝔫𝔷𝔏𝔞𝔟* •••⦿
+          `*©️𝘔𝘪𝘻𝘶𝘬𝘪𝘉𝘰𝘵 𝘉𝘺 𝘒𝘳𝘢𝘬𝘪𝘯𝘻𝘓𝘢𝘣 •••⬡*
 
 𝙐𝙥𝙙𝙖𝙩𝙚🤖𝙋𝙚𝙣𝙙𝙞𝙣𝙜
 *•𝘗𝘭𝘦𝘢𝘴𝘦 𝘜𝘱𝘥𝘢𝘵𝘦 𝘜𝘴𝘪𝘯𝘨 *${ᴋᴇɪ}update* 𝘰𝘳 𝘳𝘦𝘥𝘦𝘱𝘭𝘰𝘺 𝐌𝐢𝐳𝐮𝐤𝐢™!`,
@@ -56,7 +78,7 @@ In order to specify the theme, use  *${ᴋᴇɪ}carbon <text> -t <theme>* .`,
       await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
         .sendMessage(
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-          `⬡••• *𝐌𝐢𝐳𝐮𝐤𝐢 by ₭𝔯𝔞ӄ𝔦𝔫𝔷𝔏𝔞𝔟* •••⦿
+          `*©️𝘔𝘪𝘻𝘶𝘬𝘪𝘉𝘰𝘵 𝘉𝘺 𝘒𝘳𝘢𝘬𝘪𝘯𝘻𝘓𝘢𝘣 •••⬡*
 
 *•@${personsending}*,
 シ︎𝐆𝐫𝐨𝐮𝐩👓${_𝔏𝔞𝔟_.HASH}`,
@@ -105,42 +127,18 @@ In order to specify the theme, use  *${ᴋᴇɪ}carbon <text> -t <theme>* .`,
         ];
         var code = ``;
         if (arg[0] == null && !𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
-          await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
-            .sendMessage(
-              𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              {
-                url: _𝔏𝔞𝔟_.ARC,
-              },
-              MessageType.image,
-              {
-                quoted: chat,
-                mimetype: Mimetype.jpeg,
-                caption: `*☢️𝓜𝓮𝓮6*\n\nNo input provided.
-Please use the command  
-*${ᴋᴇɪ}carbon <text> -t <theme>*  
-or reply to a text message with  
-*${ᴋᴇɪ}carbon*  to carbonize the text.
-
-*----> 𝐓𝐇𝐄𝐌𝐄𝐒 <----*
-_3024 night_  *|*  _a11y dark_  
-_blackboard_  *|*  _base 16 (dark)_ 
-_base 16 (light)_  *|*  _cobalt_ 
-_duotone_  *|*  _hopscotch_
-_lucario_  *|*  _material_ 
-_monokai_  *|*  _night owl_ 
-_nord_  *|*  _oceanic next_
-_one light_  *|*  _one dark_
-_panda_  *|*  _paraiso_
-_seti_  *|*  _shades of purple_ 
-_solarized (dark)_ 
-_solarized (light)_
-_synthwave '84_  *|*  _twilight_
-_verminal_  *|*  _vscode_  
-_yeti_  *|*  _zenburn_`,
-              }
-            )
-            .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
-          return;
+          var 𝓜Usage = 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹.get(𝓜𝖎𝖟𝖚ӄ𝖎.commandName);
+          𝓜𝓮𝓮ʍօʀɛ = 𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ === undefined ? "Null" : 𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ;
+          const nahargs = require("../../𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/nahargs");
+          return nahargs.nahargs(
+            𝓚𝓻𝓪𝓴𝓲𝓷𝔃,
+            chat,
+            𝓜𝖎𝖟𝖚ӄ𝖎,
+            Sender,
+            personsending,
+            𝓜𝖎𝖟𝖚ӄ𝖎.commandName,
+            𝓜𝓮𝓮ʍօʀɛ
+          );
         } else if (𝓜𝖎𝖟𝖚ӄ𝖎.isReply && !𝓜𝖎𝖟𝖚ӄ𝖎.replyMessage) {
           await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
             .sendMessage(

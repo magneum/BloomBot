@@ -39,7 +39,7 @@ module.exports = {
           contextInfo: {
             mentionedJid: [爪𝖎𝖟𝖚ӄ𝖎.sender],
           },
-          caption: `⬡••• *𝐌𝐢𝐳𝐮𝐤𝐢 by ₭𝔯𝔞ӄ𝔦𝔫𝔷𝔏𝔞𝔟* •••⦿
+          caption: `*©️𝘔𝘪𝘻𝘶𝘬𝘪𝘉𝘰𝘵 𝘉𝘺 𝘒𝘳𝘢𝘬𝘪𝘯𝘻𝘓𝘢𝘣 •••⬡*
 
 *•@${personsending}*,
 シ︎𝐆𝐫𝐨𝐮𝐩👓${_𝔏𝔞𝔟_.HASH}

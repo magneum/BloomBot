@@ -39,7 +39,7 @@ You can also reply to a text message with syntax  *${ᴋᴇɪ}tr <language>*  to
       await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
         .sendMessage(
           𝓜𝖎𝖟𝖚ӄ𝖎.logGroup,
-          `⬡••• *𝐌𝐢𝐳𝐮𝐤𝐢 by ₭𝔯𝔞ӄ𝔦𝔫𝔷𝔏𝔞𝔟* •••⦿
+          `*©️𝘔𝘪𝘻𝘶𝘬𝘪𝘉𝘰𝘵 𝘉𝘺 𝘒𝘳𝘢𝘬𝘪𝘯𝘻𝘓𝘢𝘣 •••⬡*
 
 𝙐𝙥𝙙𝙖𝙩𝙚🤖𝙋𝙚𝙣𝙙𝙞𝙣𝙜
 *•𝘗𝘭𝘦𝘢𝘴𝘦 𝘜𝘱𝘥𝘢𝘵𝘦 𝘜𝘴𝘪𝘯𝘨 *${ᴋᴇɪ}update* 𝘰𝘳 𝘳𝘦𝘥𝘦𝘱𝘭𝘰𝘺 𝐌𝐢𝐳𝐮𝐤𝐢™!`,
@@ -53,7 +53,7 @@ You can also reply to a text message with syntax  *${ᴋᴇɪ}tr <language>*  to
       await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
         .sendMessage(
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-          `⬡••• *𝐌𝐢𝐳𝐮𝐤𝐢 by ₭𝔯𝔞ӄ𝔦𝔫𝔷𝔏𝔞𝔟* •••⦿
+          `*©️𝘔𝘪𝘻𝘶𝘬𝘪𝘉𝘰𝘵 𝘉𝘺 𝘒𝘳𝘢𝘬𝘪𝘯𝘻𝘓𝘢𝘣 •••⬡*
 
 *•@${personsending}*,
 シ︎𝐆𝐫𝐨𝐮𝐩👓${_𝔏𝔞𝔟_.HASH}`,
@@ -72,25 +72,20 @@ You can also reply to a text message with syntax  *${ᴋᴇɪ}tr <language>*  to
       var text = ``;
       var language = ``;
       if (arg.length === 0) {
-        return await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
-          .sendMessage(
-            𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            {
-              url: _𝔏𝔞𝔟_.ARC,
-            },
-            MessageType.image,
-            {
-              quoted: chat,
-              mimetype: Mimetype.jpeg,
-              caption: `*⚠️Seems like someone forgot to give text or language!*
-
-*Usage Example*
-*${ᴋᴇɪ}tr <text> = <language>*`,
-            }
+        var 𝓜Usage = 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹.get(𝓜𝖎𝖟𝖚ӄ𝖎.commandName);
+        𝓜𝓮𝓮ʍօʀɛ = 𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ === undefined ? "Null" : 𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ;
+        const nahargs = require("../../𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/nahargs");
+        return nahargs
+          .nahargs(
+            𝓚𝓻𝓪𝓴𝓲𝓷𝔃,
+            chat,
+            𝓜𝖎𝖟𝖚ӄ𝖎,
+            Sender,
+            personsending,
+            𝓜𝖎𝖟𝖚ӄ𝖎.commandName,
+            𝓜𝓮𝓮ʍօʀɛ
           )
-          .catch((cᴇʀʀᴏʀ) => {
-            ℓιєηт.catch((cᴇʀʀᴏʀ, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
-          });
+          .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
       }
       if (!𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
         try {

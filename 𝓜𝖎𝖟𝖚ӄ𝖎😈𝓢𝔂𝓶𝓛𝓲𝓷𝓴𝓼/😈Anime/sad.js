@@ -37,7 +37,7 @@ module.exports = {
       await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
         .sendMessage(
           𝓜𝖎𝖟𝖚ӄ𝖎.logGroup,
-          `⬡••• *𝐌𝐢𝐳𝐮𝐤𝐢 by ₭𝔯𝔞ӄ𝔦𝔫𝔷𝔏𝔞𝔟* •••⦿
+          `*©️𝘔𝘪𝘻𝘶𝘬𝘪𝘉𝘰𝘵 𝘉𝘺 𝘒𝘳𝘢𝘬𝘪𝘯𝘻𝘓𝘢𝘣 •••⬡*
 ❗ 𝙈𝙚𝙚6 𝙐𝙥𝙙𝙖𝙩𝙚 𝙋𝙚𝙣𝙙𝙞𝙣𝙜
 
 *•𝘗𝘭𝘦𝘢𝘴𝘦 𝘜𝘱𝘥𝘢𝘵𝘦 𝘜𝘴𝘪𝘯𝘨 *${ᴋᴇɪ}update* 𝘰𝘳 𝘳𝘦𝘥𝘦𝘱𝘭𝘰𝘺 𝐌𝐢𝐳𝐮𝐤𝐢™!`,
@@ -52,7 +52,7 @@ module.exports = {
       await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
         .sendMessage(
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-          `⬡••• *𝐌𝐢𝐳𝐮𝐤𝐢 by ₭𝔯𝔞ӄ𝔦𝔫𝔷𝔏𝔞𝔟* •••⦿
+          `*©️𝘔𝘪𝘻𝘶𝘬𝘪𝘉𝘰𝘵 𝘉𝘺 𝘒𝘳𝘢𝘬𝘪𝘯𝘻𝘓𝘢𝘣 •••⬡*
 
 *•@${personsending}*,
 シ︎𝐆𝐫𝐨𝐮𝐩👓${_𝔏𝔞𝔟_.HASH}`,
@@ -77,7 +77,7 @@ module.exports = {
           {
             quoted: chat,
             mimetype: Mimetype.jpeg,
-            caption: `⬡••• *𝐌𝐢𝐳𝐮𝐤𝐢 by ₭𝔯𝔞ӄ𝔦𝔫𝔷𝔏𝔞𝔟* •••⦿`,
+            caption: `*©️𝘔𝘪𝘻𝘶𝘬𝘪𝘉𝘰𝘵 𝘉𝘺 𝘒𝘳𝘢𝘬𝘪𝘯𝘻𝘓𝘢𝘣 •••⬡*`,
           }
         )
         .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));

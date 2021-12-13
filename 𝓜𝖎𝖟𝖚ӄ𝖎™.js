@@ -94,18 +94,16 @@ async function 𝓜𝓮𝓮6s() {
   var 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹 = new Map();
   if (_𝔏𝔞𝔟_.HEROKU_API === `Null` || _𝔏𝔞𝔟_.HEROKU_BOT_NAME === `Null`) {
     console.log(
-      Kolor.yellow.bold(
-        `𝐌𝐢𝐳𝐮𝐤𝐢™❌𝗘𝗿𝗿𝗼𝗿⬰ 𝐒𝐞𝐞𝐦𝐬 𝐥𝐢𝐤𝐞 𝐇𝐞𝐫𝐨𝐤𝐮 𝐯𝐚𝐫𝐬 𝐚𝐫𝐞 𝐢𝐧𝐯𝐚𝐥𝐢𝐝.𝐏𝐥𝐞𝐚𝐬𝐞 𝐜𝐡𝐞𝐜𝐤 𝐚𝐧𝐝 𝐫𝐞𝐭𝐫𝐲!`
+      Kolor.yellow(
+        `❌𝗘𝗿𝗿𝗼𝗿⬰ 𝐒𝐞𝐞𝐦𝐬 𝐥𝐢𝐤𝐞 𝐇𝐞𝐫𝐨𝐤𝐮 𝐯𝐚𝐫𝐬 𝐚𝐫𝐞 𝐢𝐧𝐯𝐚𝐥𝐢𝐝.𝐏𝐥𝐞𝐚𝐬𝐞 𝐜𝐡𝐞𝐜𝐤 𝐚𝐧𝐝 𝐫𝐞𝐭𝐫𝐲!`
       )
     );
     process.exit(0);
   }
   console.log(
-    Kolor.yellow.bold(`⬡=================⬡    ⦿𝐌𝐢𝐳𝐮𝐤𝐢™⦿    ⬡=================⬡`)
+    Kolor.yellow(`⬡=================⬡    ⦿𝐌𝐢𝐳𝐮𝐤𝐢™⦿    ⬡=================⬡`)
   );
-  console.log(
-    Kolor.yellow.bold(`𝐌𝐢𝐳𝐮𝐤𝐢™💡𝗜𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻⬰ 𝗖𝗵𝗲𝗰𝗸𝗶𝗻𝗴 𝗳𝗼𝗿 𝘂𝗽𝗱𝗮𝘁𝗲𝘀...`)
-  );
+  console.log(Kolor.yellow(`💡𝗜𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻⬰ 𝗖𝗵𝗲𝗰𝗸𝗶𝗻𝗴 𝗳𝗼𝗿 𝘂𝗽𝗱𝗮𝘁𝗲𝘀...`));
   await AutoKrakz();
   try {
     var session = 𝓜𝖎𝖟𝖚ӄ𝖎ֆʏռօք.Mee6reignite(_𝔏𝔞𝔟_.Mee6);
@@ -117,11 +115,11 @@ async function 𝓜𝓮𝓮6s() {
       cᴇʀʀᴏʀ instanceof SyntaxError
     ) {
       console.log(
-        Kolor.red.bold(`𝗜𝗻𝗰𝗼𝗿𝗿𝗲𝗰𝘁 𝗦𝗲𝘀𝘀𝗶𝗼𝗻 𝗦𝘁𝗿𝗶𝗻𝗴. 𝗣𝗹𝗲𝗮𝘀𝗲 𝗮𝘂𝘁𝗵𝗲𝗻𝘁𝗶𝗰𝗮𝘁𝗲 𝗮𝗴𝗮𝗶𝗻!`)
+        Kolor.red(`𝗜𝗻𝗰𝗼𝗿𝗿𝗲𝗰𝘁 𝗦𝗲𝘀𝘀𝗶𝗼𝗻 𝗦𝘁𝗿𝗶𝗻𝗴. 𝗣𝗹𝗲𝗮𝘀𝗲 𝗮𝘂𝘁𝗵𝗲𝗻𝘁𝗶𝗰𝗮𝘁𝗲 𝗮𝗴𝗮𝗶𝗻!`)
       );
       process.exit(0);
     } else {
-      console.log(Kolor.red.bold(`SOMETHING WENT WRONG.\n`));
+      console.log(Kolor.red(`SOMETHING WENT WRONG.\n`));
       process.exit(0);
     }
   }
@@ -136,13 +134,9 @@ async function 𝓜𝓮𝓮6s() {
   ("⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡");
   𝓚𝓻𝓪𝓴𝓲𝓷𝔃.on(`connecting`, async () => {
     console.log(
-      Kolor.yellow.bold(
-        `⬡=================⬡    ⦿𝐌𝐢𝐳𝐮𝐤𝐢™⦿    ⬡=================⬡`
-      )
+      Kolor.yellow(`⬡=================⬡    ⦿𝐌𝐢𝐳𝐮𝐤𝐢™⦿    ⬡=================⬡`)
     );
-    console.log(
-      Kolor.yellow.bold(`𝐌𝐢𝐳𝐮𝐤𝐢™💡𝗜𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻⬰  𝘊𝘰𝘯𝘯𝘦𝘤𝘵𝘪𝘯𝘨 𝘵𝘰 𝘞𝘩𝘢𝘵𝘴𝘈𝘱𝘱...🤖`)
-    );
+    console.log(Kolor.yellow(`💡𝗜𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻⬰  𝘊𝘰𝘯𝘯𝘦𝘤𝘵𝘪𝘯𝘨 𝘵𝘰 𝘞𝘩𝘢𝘵𝘴𝘈𝘱𝘱...🤖`));
   });
   ("⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡");
   //•⬡• 😈𝗠𝗶𝘇𝘂𝗸𝗶 𝗪𝗵𝗮𝘁𝘀𝗮𝗽𝗽 𝗨𝘀𝗲𝗿𝗯𝗼𝘁😈
@@ -155,39 +149,27 @@ async function 𝓜𝓮𝓮6s() {
   ("⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡");
   𝓚𝓻𝓪𝓴𝓲𝓷𝔃.on(`open`, async () => {
     console.log(
-      Kolor.yellow.bold(
-        `⬡=================⬡    ⦿𝐌𝐢𝐳𝐮𝐤𝐢™⦿    ⬡=================⬡`
-      )
+      Kolor.yellow(`⬡=================⬡    ⦿𝐌𝐢𝐳𝐮𝐤𝐢™⦿    ⬡=================⬡`)
     );
-    console.log(
-      Kolor.yellow.bold(`𝐌𝐢𝐳𝐮𝐤𝐢™💡𝗜𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻⬰  𝘊𝘰𝘯𝘯𝘦𝘤𝘵𝘪𝘯𝘨 𝘵𝘰 𝘋𝘢𝘵𝘢𝘣𝘢𝘴𝘦...✅`)
-    );
+    console.log(Kolor.yellow(`💡𝗜𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻⬰  𝘊𝘰𝘯𝘯𝘦𝘤𝘵𝘪𝘯𝘨 𝘵𝘰 𝘋𝘢𝘵𝘢𝘣𝘢𝘴𝘦...✅`));
     try {
       await 𝓜𝖎𝖟𝖚ӄ𝖎sql.authenticate();
     } catch (error) {
-      console.error(
-        `𝐌𝐢𝐳𝐮𝐤𝐢™❌𝗘𝗿𝗿𝗼𝗿⬰ 𝗨𝗻𝗮𝗯𝗹𝗲 𝘁𝗼 𝗰𝗼𝗻𝗻𝗲𝗰𝘁 𝘁𝗼 𝘁𝗵𝗲 𝗱𝗮𝘁𝗮𝗯𝗮𝘀𝗲:`,
-        error
-      );
+      console.error(`❌𝗘𝗿𝗿𝗼𝗿⬰ 𝗨𝗻𝗮𝗯𝗹𝗲 𝘁𝗼 𝗰𝗼𝗻𝗻𝗲𝗰𝘁 𝘁𝗼 𝘁𝗵𝗲 𝗱𝗮𝘁𝗮𝗯𝗮𝘀𝗲:`, error);
     }
     console.log(
-      Kolor.yellow.bold(
-        `⬡=================⬡    ⦿𝐌𝐢𝐳𝐮𝐤𝐢™⦿    ⬡=================⬡`
-      )
+      Kolor.yellow(`⬡=================⬡    ⦿𝐌𝐢𝐳𝐮𝐤𝐢™⦿    ⬡=================⬡`)
     );
-    console.log(
-      Kolor.yellow.bold(`𝐌𝐢𝐳𝐮𝐤𝐢™💡𝗜𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻⬰  𝘚𝘺𝘯𝘤𝘪𝘯𝘨 𝘋𝘢𝘵𝘢 𝘸𝘪𝘵𝘩 𝘏𝘰𝘴𝘵...✅`)
-    );
+    console.log(Kolor.yellow(`💡𝗜𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻⬰  𝘚𝘺𝘯𝘤𝘪𝘯𝘨 𝘋𝘢𝘵𝘢 𝘸𝘪𝘵𝘩 𝘏𝘰𝘴𝘵...✅`));
     await 𝓜𝖎𝖟𝖚ӄ𝖎sql.sync();
     console.clear();
     console.log(
-      Kolor.yellow.bold(
+      Kolor.yellow(
         `\n\n\n\n\n\n⬡=================⬡    ⦿𝐌𝐢𝐳𝐮𝐤𝐢™⦿    ⬡=================⬡`
       )
     );
-    console.log(
-      Kolor.yellow.bold(`𝐌𝐢𝐳𝐮𝐤𝐢™💡𝗜𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻⬰  𝘐𝘯𝘴𝘵𝘢𝘭𝘭𝘪𝘯𝘨 𝘗𝘭𝘶𝘨𝘪𝘯𝘴...✅`)
-    );
+    console.log(Kolor.yellow(`💡𝗜𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻⬰  𝘐𝘯𝘴𝘵𝘢𝘭𝘭𝘪𝘯𝘨 𝘗𝘭𝘶𝘨𝘪𝘯𝘴...✅`));
+    var commandUsage = new Map();
     const Folders = fs.readdirSync(`./𝓜𝖎𝖟𝖚ӄ𝖎😈𝓢𝔂𝓶𝓛𝓲𝓷𝓴𝓼`);
     for (const folder of Folders) {
       const commandFiles = fs
@@ -196,27 +178,25 @@ async function 𝓜𝓮𝓮6s() {
       for (const file of commandFiles) {
         const command = require(`./𝓜𝖎𝖟𝖚ӄ𝖎😈𝓢𝔂𝓶𝓛𝓲𝓷𝓴𝓼/${folder}/${file}`);
         𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹.set(command.name, command);
+        commandUsage.set(command.𝓜𝓮𝓮6ʍօʀɛ, command.description);
         console.log(
-          Kolor.yellow.bold(`𝐌𝐢𝐳𝐮𝐤𝐢™💡𝗜𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻⬰  `),
-          Kolor.green.bold(command.name.toUpperCase())
+          Kolor.yellow(`💡𝗜𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻⬰  `),
+          Kolor.green(command.name.toUpperCase() + "    |"),
+          Kolor.whiteBright.italic(command.description + "    |"),
+          Kolor.blueBright.italic(command.𝓜𝓮𝓮6ʍօʀɛ)
         );
       }
     }
-    console.clear();
     console.log(
-      Kolor.green.bold(
-        `\n\n\n\n\n\n⬡=================⬡    ⦿𝐌𝐢𝐳𝐮𝐤𝐢™⦿    ⬡=================⬡`
-      ),
-      Kolor.red.bold(`
+      Kolor.green(`⬡=================⬡    ⦿𝐌𝐢𝐳𝐮𝐤𝐢™⦿    ⬡=================⬡`),
+      Kolor.red(`
       ███╗   ███╗██╗███████╗██╗   ██╗██╗  ██╗██╗
       ████╗ ████║██║╚══███╔╝██║   ██║██║ ██╔╝██║
       ██╔████╔██║██║  ███╔╝ ██║   ██║█████╔╝ ██║
       ██║╚██╔╝██║██║ ███╔╝  ██║   ██║██╔═██╗ ██║
       ██║ ╚═╝ ██║██║███████╗╚██████╔╝██║  ██╗██║
       ╚═╝     ╚═╝╚═╝╚══════╝ ╚═════╝ ╚═╝  ╚═╝╚═╝`),
-      Kolor.green.bold(
-        `⬡=================⬡    ⦿𝐌𝐢𝐳𝐮𝐤𝐢™⦿    ⬡=================⬡`
-      )
+      Kolor.green(`\n⬡=================⬡    ⦿𝐌𝐢𝐳𝐮𝐤𝐢™⦿    ⬡=================⬡`)
     );
     // ⬡==================⬡-----------------⦿𝐌𝐢𝐳𝐮𝐤𝐢™⦿-----------------⬡==================⬡
     // 👓𝓜𝖎𝖟𝖚ӄ𝖎™ ᴀᴅᴠᴀɴᴄᴇᴅ ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ 80+ ᴄᴏᴍᴍᴀɴᴅꜱ ꜰᴏʀ ʙᴏᴛʜ ᴘʀɪᴠᴀᴛᴇ ᴀɴᴅ ɢʀᴏᴜᴘ-ᴜꜱᴀɢᴇ👓
@@ -296,7 +276,7 @@ async function 𝓜𝓮𝓮6s() {
 Group has been opened by admin Now all members can send messages`,
           MessageType.text
         )
-        .catch((error) => console.log(Kolor.red.boldBright(error)));
+        .catch((error) => console.log(Kolor.redBright(error)));
     } else if (update.announce == `true`) {
       𝓚𝓻𝓪𝓴𝓲𝓷𝔃
         .sendMessage(
@@ -307,7 +287,7 @@ Group has been opened by admin Now all members can send messages`,
 ɢʀᴏᴜᴘ ʜᴀꜱ ʙᴇᴇɴ ᴄʟᴏꜱᴇᴅ ʙʏ ᴀᴅᴍɪɴ ɴᴏᴡ ᴏɴʟʏ ᴀᴅᴍɪɴ ᴄᴀɴ ꜱᴇɴᴅ ᴍᴇꜱꜱᴀɢᴇꜱ`,
           MessageType.text
         )
-        .catch((error) => console.log(Kolor.red.boldBright(error)));
+        .catch((error) => console.log(Kolor.redBright(error)));
     } else if (!update.desc == ``) {
       tag = update.descOwner.split(`@`)[0] + `@s.whatsapp.net`;
       𝓚𝓻𝓪𝓴𝓲𝓷𝔃
@@ -328,7 +308,7 @@ ${update.desc}`,
             },
           }
         )
-        .catch((error) => console.log(Kolor.red.boldBright(error)));
+        .catch((error) => console.log(Kolor.redBright(error)));
     } else if (update.restrict == `false`) {
       𝓚𝓻𝓪𝓴𝓲𝓷𝔃
         .sendMessage(
@@ -340,7 +320,7 @@ ${update.desc}`,
           MessageType.text,
           {}
         )
-        .catch((error) => console.log(Kolor.red.boldBright(error)));
+        .catch((error) => console.log(Kolor.redBright(error)));
     } else if (update.restrict == `true`) {
       𝓚𝓻𝓪𝓴𝓲𝓷𝔃
         .sendMessage(
@@ -352,7 +332,7 @@ ${update.desc}`,
           MessageType.text,
           {}
         )
-        .catch((error) => console.log(Kolor.red.boldBright(error)));
+        .catch((error) => console.log(Kolor.redBright(error)));
     }
   });
   ("⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡");
@@ -564,8 +544,8 @@ ${ꜰᴇᴛᴄʜᴇᴅʙʏᴇ.message}`,
     // ⬡==================⬡-----------------⦿𝐌𝐢𝐳𝐮𝐤𝐢™⦿-----------------⬡=================
     if (𝓜𝖎𝖟𝖚ӄ𝖎.isCmd) {
       console.log(
-        Kolor.green.bold(
-          `𝐌𝐢𝐳𝐮𝐤𝐢™💡𝗜𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻⬰  ${𝓜𝖎𝖟𝖚ӄ𝖎.commandName.toUpperCase()} command executed.`
+        Kolor.green(
+          `💡𝗜𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻⬰  ${𝓜𝖎𝖟𝖚ӄ𝖎.commandName.toUpperCase()} command executed.`
         )
       );
       const command = 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹.get(𝓜𝖎𝖟𝖚ӄ𝖎.commandName);
@@ -588,19 +568,21 @@ Use ${ᴋᴇɪ}help to get the list of available commands`,
             }
           )
           .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
-      } else if (command && 𝓜𝖎𝖟𝖚ӄ𝖎.commandName == `menu`) {
-        try {
-          return command.handle(𝓚𝓻𝓪𝓴𝓲𝓷𝔃, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹);
-        } catch (cᴇʀʀᴏʀ) {
-          return console.log(Kolor.red.bold(`𝐌𝐢𝐳𝐮𝐤𝐢™❌𝗘𝗿𝗿𝗼𝗿⬰ `, cᴇʀʀᴏʀ));
-        }
       }
-      command.handle(𝓚𝓻𝓪𝓴𝓲𝓷𝔃, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg);
+      //   else if (command && 𝓜𝖎𝖟𝖚ӄ𝖎.commandName == `menu`) {
+      //     try {
+      //       return command.handle(𝓚𝓻𝓪𝓴𝓲𝓷𝔃, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹);
+      //     } catch (cᴇʀʀᴏʀ) {
+      //       return console.log(Kolor.red.bold(`𝐌𝐢𝐳𝐮𝐤𝐢™❌𝗘𝗿𝗿𝗼𝗿⬰ `, cᴇʀʀᴏʀ));
+      //     }
+      //   }
+      //   command.handle(𝓚𝓻𝓪𝓴𝓲𝓷𝔃, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg);
+      return command.handle(𝓚𝓻𝓪𝓴𝓲𝓷𝔃, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹);
     }
   });
 }
 𝓜𝓮𝓮6s().catch((cᴇʀʀᴏʀ) =>
-  console.log(Kolor.red.bold(`𝐌𝐢𝐳𝐮𝐤𝐢™❌𝗘𝗿𝗿𝗼𝗿⬰`), Kolor.red.bold(cᴇʀʀᴏʀ))
+  console.log(Kolor.red(`❌𝗘𝗿𝗿𝗼𝗿⬰`), Kolor.red(cᴇʀʀᴏʀ))
 );
 ("⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡");
 //•⬡• 😈𝗠𝗶𝘇𝘂𝗸𝗶 𝗪𝗵𝗮𝘁𝘀𝗮𝗽𝗽 𝗨𝘀𝗲𝗿𝗯𝗼𝘁😈
