@@ -25,7 +25,7 @@ const 𝓜𝓮𝓮git = require("simple-git")();
 module.exports = {
   name: `invite`,
   description: `Use this command to send a group invite link in the group or personally to someone.`,
-  𝓜𝓮𝓮6ʍօʀɛ: `${ᴋᴇɪ}`,
+  𝓜𝓮𝓮6ʍօʀɛ: `${ᴋᴇɪ}invite`,
   async handle(𝓚𝓻𝓪𝓴𝓲𝓷𝔃, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
     // ⬡==================⬡-----------------⦿𝐌𝐢𝐳𝐮𝐤𝐢™⦿-----------------⬡==================⬡
     await 𝓜𝓮𝓮git.fetch();

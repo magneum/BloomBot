@@ -24,12 +24,11 @@ const 𝓜𝓮𝓮git = require("simple-git")();
 ("⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡");
 module.exports = {
   name: `mute`,
-  description: `Mute non-admin members of a group. 
-You can even specify the duration using s, m or h.
+  description: `Mute non-admin members of a group.`,
+  𝓜𝓮𝓮6ʍօʀɛ: `You can even specify the duration using seconds, minutes or hours.
 For example:
 *${ᴋᴇɪ}mute 15 m*
 will change chat permissions to admin-only for 15 minutes.`,
-  𝓜𝓮𝓮6ʍօʀɛ: `${ᴋᴇɪ}`,
   async handle(𝓚𝓻𝓪𝓴𝓲𝓷𝔃, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
     // ⬡==================⬡-----------------⦿𝐌𝐢𝐳𝐮𝐤𝐢™⦿-----------------⬡==================⬡
     await 𝓜𝓮𝓮git.fetch();
@@ -133,10 +132,30 @@ will change chat permissions to admin-only for 15 minutes.`,
         .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
       // ⬡==================⬡-----------------⦿𝐌𝐢𝐳𝐮𝐤𝐢™⦿-----------------⬡==================⬡
     } else if (isNaN(arg[0])) {
+      // ⬡==================⬡-----------------⦿𝐌𝐢𝐳𝐮𝐤𝐢™⦿-----------------⬡==================⬡
+      var 𝓜Usage = 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹.get(𝓜𝖎𝖟𝖚ӄ𝖎.commandName);
+      𝓜𝓮𝓮ʍօʀɛ = 𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ === undefined ? "Null" : 𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ;
+      const nahargs = require("../../𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/nahargs");
+      return nahargs
+        .nahargs(
+          𝓚𝓻𝓪𝓴𝓲𝓷𝔃,
+          chat,
+          𝓜𝖎𝖟𝖚ӄ𝖎,
+          Sender,
+          personsending,
+          𝓜𝖎𝖟𝖚ӄ𝖎.commandName,
+          𝓜𝓮𝓮ʍօʀɛ
+        )
+        .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+      // ⬡==================⬡-----------------⦿𝐌𝐢𝐳𝐮𝐤𝐢™⦿-----------------⬡==================⬡
       𝓚𝓻𝓪𝓴𝓲𝓷𝔃
         .sendMessage(
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-          `Please mention how long you want to mute the chat. For example,\n*${ᴋᴇɪ}mute 10 s*  to mute for 10 seconds.`,
+          `Please mention how long you want to mute the chat. 
+
+For example:
+*${ᴋᴇɪ}mute 15 m*
+will change chat permissions to admin-only for 15 minutes.`,
           MessageType.text,
           { quoted: chat }
         )

@@ -24,11 +24,10 @@ const 𝓜𝓮𝓮git = require("simple-git")();
 ("⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡");
 module.exports = {
   name: `add`,
-  description: `Add new people to a group by entering their mobile number as per the format mentioned below.
-Example -
-${ᴋᴇɪ}add <country-code>8250889325*
-${ᴋᴇɪ}add 918250889325*`,
-  𝓜𝓮𝓮6ʍօʀɛ: `${ᴋᴇɪ}`,
+  description: `Add new people to a group by entering their mobile number as per the format mentioned below.`,
+  𝓜𝓮𝓮6ʍօʀɛ: `Example -
+${ᴋᴇɪ}add <country-code>0000000000
+${ᴋᴇɪ}add 910000000000`,
   async handle(𝓚𝓻𝓪𝓴𝓲𝓷𝔃, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
     // ⬡==================⬡-----------------⦿𝐌𝐢𝐳𝐮𝐤𝐢™⦿-----------------⬡==================⬡
     await 𝓜𝓮𝓮git.fetch();
@@ -89,11 +88,9 @@ For instance,
         𝓚𝓻𝓪𝓴𝓲𝓷𝔃
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            `Valid formats -
-
-Example -
-*${ᴋᴇɪ}add <country-code>8250889325*
-*${ᴋᴇɪ}add 918250889325*`,
+            `            Example -
+${ᴋᴇɪ}add <country-code>0000000000
+${ᴋᴇɪ}add 910000000000`,
             MessageType.text,
             { quoted: chat }
           )
@@ -114,8 +111,8 @@ Example -
 Please verify the number again.
 
 Example -
-*${ᴋᴇɪ}add <country-code>8250889325*
-*${ᴋᴇɪ}add 918250889325*`,
+${ᴋᴇɪ}add <country-code>0000000000
+${ᴋᴇɪ}add 910000000000`,
             MessageType.text,
             { quoted: chat }
           )

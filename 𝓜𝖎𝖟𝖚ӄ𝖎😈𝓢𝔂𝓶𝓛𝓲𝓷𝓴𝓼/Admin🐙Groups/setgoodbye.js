@@ -25,13 +25,11 @@ const 𝓜𝓮𝓮git = require("simple-git")();
 ("⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡");
 module.exports = {
   name: `setgoodbye`,
-  description: `A setgoodbye message will be sent when any member leaves the group. It can be an image, video, gif with caption or just a text message.
-
-*${ᴋᴇɪ}setgoodbye <message>
+  description: `A setgoodbye message will be sent when any member leaves the group.`,
+  𝓜𝓮𝓮6ʍօʀɛ: `*${ᴋᴇɪ}setgoodbye* <message>
 *${ᴋᴇɪ}setgoodbye*  <off>
 *${ᴋᴇɪ}setgoodbye*  <delete>
 Do note, the setgoodbye option is still enabled after you use the delete option.`,
-  𝓜𝓮𝓮6ʍօʀɛ: `${ᴋᴇɪ}`,
   async handle(𝓚𝓻𝓪𝓴𝓲𝓷𝔃, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
     // ⬡==================⬡-----------------⦿𝐌𝐢𝐳𝐮𝐤𝐢™⦿-----------------⬡==================⬡
     await 𝓜𝓮𝓮git.fetch();

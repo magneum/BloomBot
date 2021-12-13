@@ -25,18 +25,18 @@ const 𝓜𝓮𝓮git = require("simple-git")();
 ("⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡");
 module.exports = {
   name: `setwelcome`,
-  description: `New members of a group chat will be welcomed with a message. 
+  description: `New members of a group chat will be welcomed with a message.`,
+  𝓜𝓮𝓮6ʍօʀɛ: ` 
 *${ᴋᴇɪ}setwelcome <message>
 *${ᴋᴇɪ}setwelcome*  <off>  
 *${ᴋᴇɪ}setwelcome*  <delete>
 Do note, the setwelcome option is still enabled after you use the delete option.`,
-  𝓜𝓮𝓮6ʍօʀɛ: `${ᴋᴇɪ}`,
   async handle(𝓚𝓻𝓪𝓴𝓲𝓷𝔃, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
     // ⬡==================⬡-----------------⦿𝐌𝐢𝐳𝐮𝐤𝐢™⦿-----------------⬡==================⬡
     await 𝓜𝓮𝓮git.fetch();
     var Sender = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
+    var personsending = Sender.substring(0, Sender.length - 15);
     var ɴᴇᴡ𝓜𝓮𝓮6 = await 𝓜𝓮𝓮git.log(["KrakinzLab..origin/KrakinzLab"]);
-    personsending = Sender.substring(0, Sender.length - 15);
     // ⬡==================⬡-----------------⦿𝐌𝐢𝐳𝐮𝐤𝐢™⦿-----------------⬡==================⬡
     if (ɴᴇᴡ𝓜𝓮𝓮6.total != 0) {
       await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃

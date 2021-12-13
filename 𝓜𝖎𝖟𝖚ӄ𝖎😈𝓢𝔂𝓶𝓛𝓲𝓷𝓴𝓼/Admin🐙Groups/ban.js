@@ -25,7 +25,8 @@ const 𝓜𝓮𝓮git = require("simple-git")();
 module.exports = {
   name: `ban`,
   description: `Add the number to banlist. You can reply to the person in group / pm or use ${ᴋᴇɪ}ban <number>.`,
-  𝓜𝓮𝓮6ʍօʀɛ: `${ᴋᴇɪ}`,
+  𝓜𝓮𝓮6ʍօʀɛ: `Tag the person or
+${ᴋᴇɪ}ban <country-code>0000000000`,
   async handle(𝓚𝓻𝓪𝓴𝓲𝓷𝔃, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
     // ⬡==================⬡-----------------⦿𝐌𝐢𝐳𝐮𝐤𝐢™⦿-----------------⬡==================⬡
     await 𝓜𝓮𝓮git.fetch();
@@ -97,7 +98,7 @@ module.exports = {
 Approved Syntax:
 1. XXXXXXXXXX
 2. Tag the person
-3. +(YYY)XXXXXXXXXX _(YY- Country Code, without zeros)_`,
+${ᴋᴇɪ}ban <country-code>0000000000`,
                 MessageType.text,
                 { quoted: chat }
               )
@@ -118,7 +119,7 @@ Approved Syntax:
 Approved Syntax:
 1. XXXXXXXXXX
 2. Tag the person
-3. +(YYY)XXXXXXXXXX _(YY- Country Code, without zeros)_`,
+${ᴋᴇɪ}ban <country-code>0000000000`,
               MessageType.text,
               { quoted: chat }
             )
