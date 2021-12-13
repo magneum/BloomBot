@@ -359,7 +359,7 @@ exports.nahargs = async (
   chat,
   𝓜𝖎𝖟𝖚ӄ𝖎,
   𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓,
-  personsending,
+  𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰,
   commandName,
   needs
 ) => {
@@ -397,7 +397,7 @@ exports.nahargs = async (
         contextInfo: { mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓] },
         caption: `*©️𝘔𝘪𝘻𝘶𝘬𝘪𝘉𝘰𝘵 𝘉𝘺 𝘒𝘳𝘢𝘬𝘪𝘯𝘻𝘓𝘢𝘣 •••⬡*
 
-𝘚𝘦𝘦𝘮𝘴 𝘓𝘪𝘬𝘦 @${personsending} 𝘍𝘰𝘳𝘨𝘰𝘵 𝘛𝘰 𝘎𝘪𝘷𝘦 𝘈𝘯𝘺 𝘈𝘳𝘨𝘶𝘮𝘦𝘯𝘵!
+𝘚𝘦𝘦𝘮𝘴 𝘓𝘪𝘬𝘦 @${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰} 𝘍𝘰𝘳𝘨𝘰𝘵 𝘛𝘰 𝘎𝘪𝘷𝘦 𝘈𝘯𝘺 𝘈𝘳𝘨𝘶𝘮𝘦𝘯𝘵!
 
 ⬡---- 𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ᴋᴇɪ}${commandName}
 ⬡---- 𝐔𝐬𝐚𝐠𝐞/𝐈𝐧𝐟𝐨: ${needs === undefined ? "null" : needs}`,
