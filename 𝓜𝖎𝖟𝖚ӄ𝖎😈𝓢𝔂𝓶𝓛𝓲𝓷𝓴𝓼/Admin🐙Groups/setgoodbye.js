@@ -31,7 +31,8 @@ module.exports = {
 *${ᴋᴇɪ}setgoodbye*  <off>
 *${ᴋᴇɪ}setgoodbye*  <delete>
 Do note, the setgoodbye option is still enabled after you use the delete option.`,
-  async handle(𝓚𝓻𝓪𝓴𝓲𝓷𝔃, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg) {
+  𝓜𝓮𝓮6ʍօʀɛ: `${ᴋᴇɪ}`,
+  async handle(𝓚𝓻𝓪𝓴𝓲𝓷𝔃, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
     // ⬡==================⬡-----------------⦿𝐌𝐢𝐳𝐮𝐤𝐢™⦿-----------------⬡==================⬡
     await 𝓜𝓮𝓮git.fetch();
     var Sender = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;

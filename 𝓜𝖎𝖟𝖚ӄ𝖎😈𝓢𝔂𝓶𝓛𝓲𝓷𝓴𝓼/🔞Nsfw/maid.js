@@ -26,7 +26,8 @@ const 𝓜𝓮𝓮git = require("simple-git")();
 module.exports = {
   name: `maid`,
   description: `ᴍᴀɪᴅꜱ, ᴍᴀɪᴅ ᴜɴɪꜰᴏʀᴍꜱ, ᴇᴛᴄ, ʏᴏᴜ ᴋɴᴏᴡ ᴡʜᴀᴛ ᴍᴀɪᴅꜱ ᴀʀᴇ`,
-  async handle(𝓚𝓻𝓪𝓴𝓲𝓷𝔃, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg) {
+  𝓜𝓮𝓮6ʍօʀɛ: `${ᴋᴇɪ}`,
+  async handle(𝓚𝓻𝓪𝓴𝓲𝓷𝔃, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
     var Sender = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
     var personsending = Sender.substring(0, Sender.length - 15);
     const 𝓜𝓮𝓮git = require("simple-git")();

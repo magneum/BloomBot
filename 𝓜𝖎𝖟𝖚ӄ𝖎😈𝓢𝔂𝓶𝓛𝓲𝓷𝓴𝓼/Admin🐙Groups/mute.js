@@ -29,7 +29,8 @@ You can even specify the duration using s, m or h.
 For example:
 *${ᴋᴇɪ}mute 15 m*
 will change chat permissions to admin-only for 15 minutes.`,
-  async handle(𝓚𝓻𝓪𝓴𝓲𝓷𝔃, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg) {
+  𝓜𝓮𝓮6ʍօʀɛ: `${ᴋᴇɪ}`,
+  async handle(𝓚𝓻𝓪𝓴𝓲𝓷𝔃, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
     // ⬡==================⬡-----------------⦿𝐌𝐢𝐳𝐮𝐤𝐢™⦿-----------------⬡==================⬡
     await 𝓜𝓮𝓮git.fetch();
     var Sender = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;

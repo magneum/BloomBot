@@ -28,7 +28,7 @@ module.exports = {
   name: `weather`,
   description: `Get weather data of a city`,
   𝓜𝓮𝓮6ʍօʀɛ: `Obtain weather info by entering the city name.`,
-  async handle(𝓚𝓻𝓪𝓴𝓲𝓷𝔃, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg) {
+  async handle(𝓚𝓻𝓪𝓴𝓲𝓷𝔃, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
     // ⬡==================⬡-----------------⦿𝐌𝐢𝐳𝐮𝐤𝐢™⦿-----------------⬡==================⬡
     await 𝓜𝓮𝓮git.fetch();
     var Sender = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;

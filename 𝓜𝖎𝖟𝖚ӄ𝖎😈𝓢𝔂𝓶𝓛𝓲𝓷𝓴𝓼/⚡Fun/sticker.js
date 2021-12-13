@@ -27,8 +27,7 @@ const 𝓜𝓮𝓮git = require("simple-git")();
 module.exports = {
   name: `sticker`,
   description: `command to convert image to sticker`,
-  𝓜𝓮𝓮6ʍօʀɛ: `Use this command to convert any image from your chat to a sticker. 
-Reply to an image message with the command  *${ᴋᴇɪ}sticker*  to convert and send that image as a sticker.`,
+  𝓜𝓮𝓮6ʍօʀɛ: `${ᴋᴇɪ}`,
   async handle(𝓚𝓻𝓪𝓴𝓲𝓷𝔃, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
     // ⬡==================⬡-----------------⦿𝐌𝐢𝐳𝐮𝐤𝐢™⦿-----------------⬡==================⬡
     await 𝓜𝓮𝓮git.fetch();

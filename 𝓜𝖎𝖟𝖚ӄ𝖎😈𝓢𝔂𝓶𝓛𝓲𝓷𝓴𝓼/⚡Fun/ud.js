@@ -27,7 +27,7 @@ module.exports = {
   name: `ud`,
   description: `Urban Dictionary`,
   𝓜𝓮𝓮6ʍօʀɛ: `Use this command to find the meaning of a word in Urban Dictionary. Enter  *${ᴋᴇɪ}ud*  command.`,
-  async handle(𝓚𝓻𝓪𝓴𝓲𝓷𝔃, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg) {
+  async handle(𝓚𝓻𝓪𝓴𝓲𝓷𝔃, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
     // ⬡==================⬡-----------------⦿𝐌𝐢𝐳𝐮𝐤𝐢™⦿-----------------⬡==================⬡
     await 𝓜𝓮𝓮git.fetch();
     var Sender = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
