@@ -7,7 +7,7 @@
 //•⬡• 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
 //•⬡• 💡𝗠𝗮𝗱𝗲 𝗕𝘆 𝗔 𝗡𝗼𝗼𝗯 𝗳𝗼𝗿 𝗣𝗿𝗼𝘀💡
 "⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡";
-const xic = (Sender, Receiver) =>
+const xic = (𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓, Receiver) =>
   new Promise((resolve, reject) => {
     let kata = [
       "pig",
@@ -29,7 +29,7 @@ const xic = (Sender, Receiver) =>
       "bastard",
       "fuck",
     ];
-    console.log(Sender, Receiver);
+    console.log(𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓, Receiver);
     let randKata = kata[Math.floor(Math.random() * kata.length)];
     let list = [
       `your face cake ${randKata}`,

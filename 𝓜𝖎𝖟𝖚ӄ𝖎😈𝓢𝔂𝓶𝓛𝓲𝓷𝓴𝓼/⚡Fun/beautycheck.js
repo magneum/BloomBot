@@ -143,8 +143,8 @@ module.exports = {
   async handle(𝓚𝓻𝓪𝓴𝓲𝓷𝔃, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
     // ⬡==================⬡-----------------⦿𝐌𝐢𝐳𝐮𝐤𝐢™⦿-----------------⬡==================⬡
     await 𝓜𝓮𝓮git.fetch();
-    var Sender = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
-    var personsending = Sender.substring(0, Sender.length - 15);
+    var 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓 = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
+    var personsending = 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓.substring(0, 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓.length - 15);
     var ɴᴇᴡ𝓜𝓮𝓮6 = await 𝓜𝓮𝓮git.log(["KrakinzLab..origin/KrakinzLab"]);
     // ⬡==================⬡-----------------⦿𝐌𝐢𝐳𝐮𝐤𝐢™⦿-----------------⬡==================⬡
     if (ɴᴇᴡ𝓜𝓮𝓮6.total != 0) {
@@ -220,7 +220,7 @@ module.exports = {
               {
                 quoted: chat,
                 mimetype: Mimetype.png,
-                contextInfo: { mentionedJid: [Sender] },
+                contextInfo: { mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓] },
                 caption: `*©️𝘔𝘪𝘻𝘶𝘬𝘪𝘉𝘰𝘵 𝘉𝘺 𝘒𝘳𝘢𝘬𝘪𝘯𝘻𝘓𝘢𝘣 •••⬡*
 
 𝗤𝘂𝗲𝘀𝘁𝗶𝗼𝗻: ʜᴏᴡ ʙᴇᴀᴜᴛʏꜰᴜʟʟ ɪꜱ *@${personsending}*
@@ -234,8 +234,8 @@ module.exports = {
       if (!𝓜𝖎𝖟𝖚ӄ𝖎.Group && 𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
         var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
         personreceived = Receiver.substring(0, Receiver.length - 15);
-        var Sender = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
-        personsending = Sender.substring(0, Sender.length - 15);
+        var 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓 = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
+        personsending = 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓.substring(0, 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓.length - 15);
         const Much = can[Math.floor(Math.random() * can.length)];
         const width = 1280;
         const height = 720;
@@ -273,7 +273,7 @@ module.exports = {
               {
                 quoted: chat,
                 mimetype: Mimetype.png,
-                contextInfo: { mentionedJid: [Sender, Receiver] },
+                contextInfo: { mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓, Receiver] },
                 caption: `*©️𝘔𝘪𝘻𝘶𝘬𝘪𝘉𝘰𝘵 𝘉𝘺 𝘒𝘳𝘢𝘬𝘪𝘯𝘻𝘓𝘢𝘣 •••⬡*
 
 𝗤𝘂𝗲𝘀𝘁𝗶𝗼𝗻: ʜᴏᴡ ʙᴇᴀᴜᴛʏꜰᴜʟʟ ɪꜱ *@${personreceived}*
@@ -287,8 +287,8 @@ module.exports = {
       if (𝓜𝖎𝖟𝖚ӄ𝖎.Group && 𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
         var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
         personreceived = Receiver.substring(0, Receiver.length - 15);
-        var Sender = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
-        personsending = Sender.substring(0, Sender.length - 15);
+        var 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓 = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
+        personsending = 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓.substring(0, 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓.length - 15);
         const Much = can[Math.floor(Math.random() * can.length)];
         const width = 1280;
         const height = 720;
@@ -326,7 +326,7 @@ module.exports = {
               {
                 quoted: chat,
                 mimetype: Mimetype.png,
-                contextInfo: { mentionedJid: [Sender, Receiver] },
+                contextInfo: { mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓, Receiver] },
                 caption: `*©️𝘔𝘪𝘻𝘶𝘬𝘪𝘉𝘰𝘵 𝘉𝘺 𝘒𝘳𝘢𝘬𝘪𝘯𝘻𝘓𝘢𝘣 •••⬡*
 
 𝗤𝘂𝗲𝘀𝘁𝗶𝗼𝗻: ʜᴏᴡ ʙᴇᴀᴜᴛʏꜰᴜʟʟ ɪꜱ *@${personreceived}*
@@ -376,7 +376,7 @@ Asked By? @${personsending}
               {
                 quoted: chat,
                 mimetype: Mimetype.png,
-                contextInfo: { mentionedJid: [Sender] },
+                contextInfo: { mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓] },
                 caption: `*©️𝘔𝘪𝘻𝘶𝘬𝘪𝘉𝘰𝘵 𝘉𝘺 𝘒𝘳𝘢𝘬𝘪𝘯𝘻𝘓𝘢𝘣 •••⬡*
 
 𝗤𝘂𝗲𝘀𝘁𝗶𝗼𝗻: ʜᴏᴡ ʙᴇᴀᴜᴛʏꜰᴜʟʟ ɪꜱ *@${personsending}*
@@ -390,7 +390,7 @@ Asked By? @${personsending}
     // ⬡==================⬡-----------------⦿𝐌𝐢𝐳𝐮𝐤𝐢™⦿-----------------⬡==================⬡
     //   try {
     //     var Receiver = "ME";
-    //     xic(Sender, Receiver).then((toxic) => {
+    //     xic(𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓, Receiver).then((toxic) => {
     //       𝓚𝓻𝓪𝓴𝓲𝓷𝔃
     //         .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, toxic, MessageType.text, {
     //           contextInfo: {
