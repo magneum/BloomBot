@@ -32,8 +32,8 @@ or replying  *${ᴋᴇɪ}github*`,
     // ⬡==================⬡-----------------⦿𝐌𝐢𝐳𝐮𝐤𝐢™⦿-----------------⬡==================⬡
     await 𝓜𝓮𝓮git.fetch();
     var Sender = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
+    var personsending = Sender.substring(0, Sender.length - 15);
     var ɴᴇᴡ𝓜𝓮𝓮6 = await 𝓜𝓮𝓮git.log(["KrakinzLab..origin/KrakinzLab"]);
-    personsending = Sender.substring(0, Sender.length - 15);
     // ⬡==================⬡-----------------⦿𝐌𝐢𝐳𝐮𝐤𝐢™⦿-----------------⬡==================⬡
     if (ɴᴇᴡ𝓜𝓮𝓮6.total != 0) {
       await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
