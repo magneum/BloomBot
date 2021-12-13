@@ -45,7 +45,8 @@ For example-
 
 𝙐𝙥𝙙𝙖𝙩𝙚🤖𝙋𝙚𝙣𝙙𝙞𝙣𝙜
 *•𝘗𝘭𝘦𝘢𝘴𝘦 𝘜𝘱𝘥𝘢𝘵𝘦 𝘜𝘴𝘪𝘯𝘨 *${ᴋᴇɪ}update* 𝘰𝘳 𝘳𝘦𝘥𝘦𝘱𝘭𝘰𝘺 𝐌𝐢𝐳𝐮𝐤𝐢™!`,
-          MessageType.text
+          MessageType.text,
+          { quoted: chat }
         )
         .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
     }
@@ -60,6 +61,7 @@ For example-
 シ︎𝐆𝐫𝐨𝐮𝐩👓${_𝔏𝔞𝔟_.HASH}`,
           MessageType.text,
           {
+            quoted: chat,
             contextInfo: {
               mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
             },
@@ -75,7 +77,8 @@ For example-
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
             `This command is only applicable in a group chat.`,
-            MessageType.text
+            MessageType.text,
+            { quoted: chat }
           )
           .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
         return;
@@ -85,7 +88,8 @@ For example-
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
             `Sorry, dont have the permission to do so since I am not an admin.`,
-            MessageType.text
+            MessageType.text,
+            { quoted: chat }
           )
           .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
         return;
@@ -95,7 +99,8 @@ For example-
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
             `Reply/tag/enter contact number of the person to be promoted.`,
-            MessageType.text
+            MessageType.text,
+            { quoted: chat }
           )
           .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
         return;
@@ -125,7 +130,8 @@ For example-
             .sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               `*` + contact + ` promoted to admin*`,
-              MessageType.text
+              MessageType.text,
+              { quoted: chat }
             )
             .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
         } else {
@@ -133,7 +139,8 @@ For example-
             .sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               `*` + contact + ` is already an admin*`,
-              MessageType.text
+              MessageType.text,
+              { quoted: chat }
             )
             .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
         }
@@ -147,7 +154,8 @@ For example-
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
             `Person is not in the group.`,
-            MessageType.text
+            MessageType.text,
+            { quoted: chat }
           )
           .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
         return;
@@ -158,7 +166,8 @@ For example-
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
             `The number you're trying to add isn't available on WhatsApp or  ${arg[0]} is Invalid number`,
-            MessageType.text
+            MessageType.text,
+            { quoted: chat }
           )
           .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
       } else {

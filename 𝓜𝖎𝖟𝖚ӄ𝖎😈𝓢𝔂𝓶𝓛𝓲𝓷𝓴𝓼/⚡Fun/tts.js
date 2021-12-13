@@ -43,7 +43,8 @@ You can also reply to a text message with syntax  *${ᴋᴇɪ}tr <language>*  to
 
 𝙐𝙥𝙙𝙖𝙩𝙚🤖𝙋𝙚𝙣𝙙𝙞𝙣𝙜
 *•𝘗𝘭𝘦𝘢𝘴𝘦 𝘜𝘱𝘥𝘢𝘵𝘦 𝘜𝘴𝘪𝘯𝘨 *${ᴋᴇɪ}update* 𝘰𝘳 𝘳𝘦𝘥𝘦𝘱𝘭𝘰𝘺 𝐌𝐢𝐳𝐮𝐤𝐢™!`,
-          MessageType.text
+          MessageType.text,
+          { quoted: chat }
         )
         .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
     }
@@ -58,6 +59,7 @@ You can also reply to a text message with syntax  *${ᴋᴇɪ}tr <language>*  to
 シ︎𝐆𝐫𝐨𝐮𝐩👓${_𝔏𝔞𝔟_.HASH}`,
           MessageType.text,
           {
+            quoted: chat,
             contextInfo: {
               mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
             },
@@ -76,6 +78,7 @@ You can also reply to a text message with syntax  *${ᴋᴇɪ}tr <language>*  to
             },
             MessageType.image,
             {
+              quoted: chat,
               mimetype: Mimetype.jpeg,
               caption: `*⚠️Seems like someone forgot to give text or language!*
 
@@ -105,7 +108,8 @@ You can also reply to a text message with syntax  *${ᴋᴇɪ}tr <language>*  to
             `*Total characters should be less than 200.*\nTotal characters for current input were {}.`.format(
               text.length
             ),
-            MessageType.text
+            MessageType.text,
+            { quoted: chat }
           )
           .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
       } else {
@@ -124,6 +128,7 @@ You can also reply to a text message with syntax  *${ᴋᴇɪ}tr <language>*  to
               },
               MessageType.audio,
               {
+                quoted: chat,
                 mimetype: Mimetype.mp4Audio,
               }
             )
@@ -136,7 +141,8 @@ You can also reply to a text message with syntax  *${ᴋᴇɪ}tr <language>*  to
 💡𝗛𝗲𝗿𝗲 𝗶𝘀 𝗮 𝘀𝗺𝗮𝗹𝗹 𝗲𝗿𝗿𝗼𝗿 𝗿𝗲𝗽𝗼𝗿𝘁 𝗮𝗻𝗱 𝘁𝗼 𝗹𝗼𝗴 𝘁𝗵𝗲 𝗿𝗲𝗽𝗼𝗿𝘁 𝘂𝘀𝗲 ${ᴋᴇɪ}𝗿𝗲𝗽𝗼𝗿𝘁
 ⚠️𝗘𝗿𝗿𝗼𝗿
 • ${cᴇʀʀᴏʀ}`,
-            MessageType.text
+            MessageType.text,
+            { quoted: chat }
           );
         }
       }

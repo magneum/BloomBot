@@ -45,7 +45,8 @@ module.exports = {
 ❗ 𝙈𝙚𝙚6 𝙐𝙥𝙙𝙖𝙩𝙚 𝙋𝙚𝙣𝙙𝙞𝙣𝙜
 
 *•𝘗𝘭𝘦𝘢𝘴𝘦 𝘜𝘱𝘥𝘢𝘵𝘦 𝘜𝘴𝘪𝘯𝘨 *${ᴋᴇɪ}update* 𝘰𝘳 𝘳𝘦𝘥𝘦𝘱𝘭𝘰𝘺 𝐌𝐢𝐳𝐮𝐤𝐢™!`,
-          MessageType.text
+          MessageType.text,
+          { quoted: chat }
         )
         .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
     } else {
@@ -61,6 +62,7 @@ module.exports = {
 シ︎𝐆𝐫𝐨𝐮𝐩👓${_𝔏𝔞𝔟_.HASH}`,
           MessageType.text,
           {
+            quoted: chat,
             contextInfo: {
               mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
             },
@@ -78,6 +80,7 @@ module.exports = {
           },
           MessageType.image,
           {
+            quoted: chat,
             mimetype: Mimetype.png,
             caption: `Seems Like No Image Was Found.\nPlease Try Again Later!`,
           }
@@ -135,21 +138,22 @@ module.exports = {
   
   💡𝗖𝗼𝗺𝗺𝗮𝗻𝗱 • ${𝓜𝖎𝖟𝖚ӄ𝖎.commandName}
   🎮𝗜𝘁 𝘄𝗮𝘀 𝗣𝗠? • ${𝓜𝖎𝖟𝖚ӄ𝖎.isPm}`,
-                      MessageType.text
+                      MessageType.text,
+                      { quoted: chat }
                     )
                   );
                 fs.unlink(FP, (cᴇʀʀᴏʀ) => {
                   if (cᴇʀʀᴏʀ) {
                     console.log(Kolor.redBright(cᴇʀʀᴏʀ));
                   } else {
-                    console.log(Kolor.greenBright(`Deleted> ${FP}`));
+                    console.log(Kolor.greenBright(FP));
                   }
                 });
                 fs.unlink(SP, (cᴇʀʀᴏʀ) => {
                   if (cᴇʀʀᴏʀ) {
                     console.log(Kolor.redBright(cᴇʀʀᴏʀ));
                   } else {
-                    console.log(Kolor.greenBright(`Deleted> ${SP}`));
+                    console.log(Kolor.greenBright(SP));
                   }
                 });
               });

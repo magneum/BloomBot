@@ -40,7 +40,8 @@ module.exports = {
 
 𝙐𝙥𝙙𝙖𝙩𝙚🤖𝙋𝙚𝙣𝙙𝙞𝙣𝙜
 *•𝘗𝘭𝘦𝘢𝘴𝘦 𝘜𝘱𝘥𝘢𝘵𝘦 𝘜𝘴𝘪𝘯𝘨 *${ᴋᴇɪ}update* 𝘰𝘳 𝘳𝘦𝘥𝘦𝘱𝘭𝘰𝘺 𝐌𝐢𝐳𝐮𝐤𝐢™!`,
-          MessageType.text
+          MessageType.text,
+          { quoted: chat }
         )
         .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
     }
@@ -55,6 +56,7 @@ module.exports = {
 シ︎𝐆𝐫𝐨𝐮𝐩👓${_𝔏𝔞𝔟_.HASH}`,
           MessageType.text,
           {
+            quoted: chat,
             contextInfo: {
               mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
             },
@@ -73,6 +75,7 @@ module.exports = {
           },
           MessageType.image,
           {
+            quoted: chat,
             mimetype: Mimetype.png,
             caption: `
 ⚠️𝗘𝗿𝗿𝗼𝗿: 
@@ -95,6 +98,7 @@ module.exports = {
           },
           MessageType.image,
           {
+            quoted: chat,
             mimetype: Mimetype.jpeg,
             caption: `*⚠️Seems like someone forgot to give count and text!*
 
@@ -110,7 +114,9 @@ ${ᴋᴇɪ}spam <count> <text>`,
       count = parseInt(count);
     } else {
       await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
-        .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, `Count can't be zero.`, MessageType.text)
+        .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, `Count can't be zero.`, MessageType.text, {
+          quoted: chat,
+        })
         .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
       return 0;
     }
@@ -118,14 +124,15 @@ ${ᴋᴇɪ}spam <count> <text>`,
       let text = arg.join(" ");
       for (let i = 0; i < count; i++)
         await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
-          .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, text, MessageType.text)
+          .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, text, MessageType.text, { quoted: chat })
           .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
     } else {
       await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
         .sendMessage(
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-          `No text found for spamming!!! Please read xhelp spam.`,
-          MessageType.text
+          `No text found for spamming!!! Please read !help spam.`,
+          MessageType.text,
+          { quoted: chat }
         )
         .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
     }

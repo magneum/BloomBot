@@ -35,6 +35,7 @@ module.exports = {
         },
         MessageType.image,
         {
+          quoted: chat,
           mimetype: Mimetype.png,
           contextInfo: {
             mentionedJid: [爪𝖎𝖟𝖚ӄ𝖎.sender],

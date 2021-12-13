@@ -43,7 +43,8 @@ ${ᴋᴇɪ}add 918250889325*`,
 
 𝙐𝙥𝙙𝙖𝙩𝙚🤖𝙋𝙚𝙣𝙙𝙞𝙣𝙜
 *•𝘗𝘭𝘦𝘢𝘴𝘦 𝘜𝘱𝘥𝘢𝘵𝘦 𝘜𝘴𝘪𝘯𝘨 *${ᴋᴇɪ}update* 𝘰𝘳 𝘳𝘦𝘥𝘦𝘱𝘭𝘰𝘺 𝐌𝐢𝐳𝐮𝐤𝐢™!`,
-          MessageType.text
+          MessageType.text,
+          { quoted: chat }
         )
         .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
     }
@@ -58,6 +59,7 @@ ${ᴋᴇɪ}add 918250889325*`,
 シ︎𝐆𝐫𝐨𝐮𝐩👓${_𝔏𝔞𝔟_.HASH}`,
           MessageType.text,
           {
+            quoted: chat,
             contextInfo: {
               mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
             },
@@ -75,7 +77,8 @@ ${ᴋᴇɪ}add 918250889325*`,
             `Enter the number you want to add.
 For instance,  
 *${ᴋᴇɪ}add <NUMBER>* .`,
-            MessageType.text
+            MessageType.text,
+            { quoted: chat }
           )
           .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
         return;
@@ -90,7 +93,8 @@ For instance,
 Example -
 *${ᴋᴇɪ}add <country-code>8250889325*
 *${ᴋᴇɪ}add 918250889325*`,
-            MessageType.text
+            MessageType.text,
+            { quoted: chat }
           )
           .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
         return;
@@ -111,7 +115,8 @@ Please verify the number again.
 Example -
 *${ᴋᴇɪ}add <country-code>8250889325*
 *${ᴋᴇɪ}add 918250889325*`,
-            MessageType.text
+            MessageType.text,
+            { quoted: chat }
           )
           .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
         return;
@@ -125,7 +130,8 @@ Example -
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
             `The number entered cannot be added back before 24 hours.`,
-            MessageType.text
+            MessageType.text,
+            { quoted: chat }
           )
           .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
         return;
@@ -134,7 +140,8 @@ Example -
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
             `The number entered is already a member of this group.`,
-            MessageType.text
+            MessageType.text,
+            { quoted: chat }
           )
           .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
         return;
@@ -143,7 +150,8 @@ Example -
         .sendMessage(
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
           ` ` + NUM + ` added successfully!` + ``,
-          MessageType.text
+          MessageType.text,
+          { quoted: chat }
         )
         .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
     } catch (error) {
@@ -153,7 +161,8 @@ Example -
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
             `The number you're trying to add isn't available on WhatsApp.
 Please verify the number again.`,
-            MessageType.text
+            MessageType.text,
+            { quoted: chat }
           )
           .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
       }

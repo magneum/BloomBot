@@ -46,7 +46,8 @@ In order to specify the theme, use  *${ᴋᴇɪ}carbon <text> -t <theme>* .`,
 
 𝙐𝙥𝙙𝙖𝙩𝙚🤖𝙋𝙚𝙣𝙙𝙞𝙣𝙜
 *•𝘗𝘭𝘦𝘢𝘴𝘦 𝘜𝘱𝘥𝘢𝘵𝘦 𝘜𝘴𝘪𝘯𝘨 *${ᴋᴇɪ}update* 𝘰𝘳 𝘳𝘦𝘥𝘦𝘱𝘭𝘰𝘺 𝐌𝐢𝐳𝐮𝐤𝐢™!`,
-          MessageType.text
+          MessageType.text,
+          { quoted: chat }
         )
         .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
     }
@@ -61,6 +62,7 @@ In order to specify the theme, use  *${ᴋᴇɪ}carbon <text> -t <theme>* .`,
 シ︎𝐆𝐫𝐨𝐮𝐩👓${_𝔏𝔞𝔟_.HASH}`,
           MessageType.text,
           {
+            quoted: chat,
             contextInfo: {
               mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
             },
@@ -111,6 +113,7 @@ In order to specify the theme, use  *${ᴋᴇɪ}carbon <text> -t <theme>* .`,
               },
               MessageType.image,
               {
+                quoted: chat,
                 mimetype: Mimetype.jpeg,
                 caption: `*☢️𝓜𝓮𝓮6*\n\nNo input provided.
 Please use the command  
@@ -143,7 +146,8 @@ _yeti_  *|*  _zenburn_`,
             .sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               `*☢️𝓜𝓮𝓮6*\n\nThe replied message should be text.`,
-              MessageType.text
+              MessageType.text,
+              { quoted: chat }
             )
             .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
           return;
@@ -167,7 +171,8 @@ _yeti_  *|*  _zenburn_`,
                 await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃.sendMessage(
                   𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
                   `` + message + ``,
-                  MessageType.text
+                  MessageType.text,
+                  { quoted: chat }
                 );
                 return;
               } else {
@@ -176,7 +181,8 @@ _yeti_  *|*  _zenburn_`,
                     𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
                     `*☢️𝓜𝓮𝓮6*\n\nNo input provided.
 Please use the command  *${ᴋᴇɪ}carbon <text>*  or reply to a text message with  *${ᴋᴇɪ}carbon*  to carbonize the text.`,
-                    MessageType.text
+                    MessageType.text,
+                    { quoted: chat }
                   )
                   .catch((cᴇʀʀᴏʀ) => {
                     ℓιєηт.catch((cᴇʀʀᴏʀ, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
@@ -196,7 +202,8 @@ Please use the command  *${ᴋᴇɪ}carbon <text>*  or reply to a text message w
                   𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
                   `*☢️𝓜𝓮𝓮6*\n\nPlease enter a valid theme.
 Do note that theme names are  *case sensitive*${ᴋᴇɪ}`,
-                  MessageType.text
+                  MessageType.text,
+                  { quoted: chat }
                 )
                 .catch((cᴇʀʀᴏʀ) => {
                   ℓιєηт.catch((cᴇʀʀᴏʀ, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
@@ -218,7 +225,8 @@ Do note that theme names are  *case sensitive*${ᴋᴇɪ}`,
             .sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               `*☢️𝓜𝓮𝓮6*\n\nConverting your text into a code snippet. Please wait...`,
-              MessageType.text
+              MessageType.text,
+              { quoted: chat }
             )
             .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
           const carbon = new Carbon.createCarbon()
@@ -228,6 +236,7 @@ Do note that theme names are  *case sensitive*${ᴋᴇɪ}`,
           const output = await Carbon.generateCarbon(carbon);
           await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
             .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, output, MessageType.image, {
+              quoted: chat,
               mimetype: Mimetype.png,
               caption: `*☢️𝓜𝓮𝓮6*\n\n
 *<< Here's your carbon image! >>*
@@ -245,7 +254,8 @@ Colour Scheme: {}`.format(themeInput),
 💡𝗛𝗲𝗿𝗲 𝗶𝘀 𝗮 𝘀𝗺𝗮𝗹𝗹 𝗲𝗿𝗿𝗼𝗿 𝗿𝗲𝗽𝗼𝗿𝘁 𝗮𝗻𝗱 𝘁𝗼 𝗹𝗼𝗴 𝘁𝗵𝗲 𝗿𝗲𝗽𝗼𝗿𝘁 𝘂𝘀𝗲 ${ᴋᴇɪ}𝗿𝗲𝗽𝗼𝗿𝘁
 ⚠️𝗘𝗿𝗿𝗼𝗿
 • ${cᴇʀʀᴏʀ}`,
-          MessageType.text
+          MessageType.text,
+          { quoted: chat }
         );
       }
     }

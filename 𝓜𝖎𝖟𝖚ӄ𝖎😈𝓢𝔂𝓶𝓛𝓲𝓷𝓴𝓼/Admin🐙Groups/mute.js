@@ -44,7 +44,8 @@ will change chat permissions to admin-only for 15 minutes.`,
 
 𝙐𝙥𝙙𝙖𝙩𝙚🤖𝙋𝙚𝙣𝙙𝙞𝙣𝙜
 *•𝘗𝘭𝘦𝘢𝘴𝘦 𝘜𝘱𝘥𝘢𝘵𝘦 𝘜𝘴𝘪𝘯𝘨 *${ᴋᴇɪ}update* 𝘰𝘳 𝘳𝘦𝘥𝘦𝘱𝘭𝘰𝘺 𝐌𝐢𝐳𝐮𝐤𝐢™!`,
-          MessageType.text
+          MessageType.text,
+          { quoted: chat }
         )
         .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
     }
@@ -59,6 +60,7 @@ will change chat permissions to admin-only for 15 minutes.`,
 シ︎𝐆𝐫𝐨𝐮𝐩👓${_𝔏𝔞𝔟_.HASH}`,
           MessageType.text,
           {
+            quoted: chat,
             contextInfo: {
               mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
             },
@@ -77,6 +79,7 @@ will change chat permissions to admin-only for 15 minutes.`,
           },
           MessageType.image,
           {
+            quoted: chat,
             mimetype: Mimetype.png,
             caption: `
 ⚠️𝗘𝗿𝗿𝗼𝗿: 
@@ -94,7 +97,8 @@ will change chat permissions to admin-only for 15 minutes.`,
         .sendMessage(
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
           `*${ᴋᴇɪ}mute*  command is only applicable in a group chat.`,
-          MessageType.text
+          MessageType.text,
+          { quoted: chat }
         )
         .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
       return;
@@ -104,13 +108,13 @@ will change chat permissions to admin-only for 15 minutes.`,
         .sendMessage(
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
           `Sorry, dont have the permission to do so since I am not an admin.`,
-          MessageType.text
+          MessageType.text,
+          { quoted: chat }
         )
         .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
       return;
     }
     if (arg.length === 0) {
-      await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃.sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, "❌", MessageType.text);
       await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
         .sendMessage(
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
@@ -119,6 +123,7 @@ will change chat permissions to admin-only for 15 minutes.`,
           },
           MessageType.image,
           {
+            quoted: chat,
             mimetype: Mimetype.jpeg,
             caption: `*⚠️Seems like someone forgot to give Movie/Series name!*
 
@@ -131,7 +136,8 @@ will change chat permissions to admin-only for 15 minutes.`,
         .sendMessage(
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
           `Chat permissions changed to  *admin only*${ᴋᴇɪ}`,
-          MessageType.text
+          MessageType.text,
+          { quoted: chat }
         )
         .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
       return;
@@ -140,7 +146,8 @@ will change chat permissions to admin-only for 15 minutes.`,
         .sendMessage(
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
           `Please mention how long you want to mute the chat. For example,\n*${ᴋᴇɪ}mute 10 s*  to mute for 10 seconds.`,
-          MessageType.text
+          MessageType.text,
+          { quoted: chat }
         )
         .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
       return;
@@ -172,7 +179,8 @@ will change chat permissions to admin-only for 15 minutes.`,
           ` ` +
           type +
           `.`,
-        MessageType.text
+        MessageType.text,
+        { quoted: chat }
       )
       .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
     setTimeout(() => {
@@ -187,13 +195,14 @@ will change chat permissions to admin-only for 15 minutes.`,
         .sendMessage(
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
           `Chat permissions changed to  *all group members*${ᴋᴇɪ}`,
-          MessageType.text
+          MessageType.text,
+          { quoted: chat }
         )
         .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
     }, duration);
   },
 };
-"⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡"
+("⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡");
 //•⬡• 😈𝗠𝗶𝘇𝘂𝗸𝗶 𝗪𝗵𝗮𝘁𝘀𝗮𝗽𝗽 𝗨𝘀𝗲𝗿𝗯𝗼𝘁😈
 //•⬡• 🐙ᴀᴅᴠᴀɴᴄᴇᴅ ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ 80+ ᴄᴏᴍᴍᴀɴᴅꜱ ꜰᴏʀ ʙᴏᴛʜ ᴘʀɪᴠᴀᴛᴇ ᴀɴᴅ ɢʀᴏᴜᴘ-ᴜꜱᴀɢᴇ🐙
 //•⬡• ɢɴᴜ ɢᴇɴᴇʀᴀʟ ᴘᴜʙʟɪᴄ ʟɪᴄᴇɴꜱᴇ ᴠᴇʀꜱɪᴏɴ 3, 29 ᴊᴜɴᴇ 2007 ᴄᴏᴘʏʀɪɢʜᴛ (ᴄ) 2007 ꜰʀᴇᴇ ꜱᴏꜰᴛᴡᴀʀᴇ ꜰᴏᴜɴᴅᴀᴛɪᴏɴ
@@ -201,4 +210,4 @@ will change chat permissions to admin-only for 15 minutes.`,
 //•⬡• —••÷[ 𝓜𝖎𝖟𝖚ӄ𝖎™ ]÷••—  ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ has been licensed under GNU General Public License
 //•⬡• 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
 //•⬡• 💡𝗠𝗮𝗱𝗲 𝗕𝘆 𝗔 𝗡𝗼𝗼𝗯 𝗳𝗼𝗿 𝗣𝗿𝗼𝘀💡
-"⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡"
+("⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡");

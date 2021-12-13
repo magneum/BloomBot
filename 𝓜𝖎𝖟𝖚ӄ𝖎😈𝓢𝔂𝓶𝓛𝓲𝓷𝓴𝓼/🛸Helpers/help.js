@@ -100,7 +100,7 @@ module.exports = {
       爪𝖎𝖟𝖚ӄ𝖎.chatId,
       buttonMessage,
       MessageType.buttonsMessage,
-      { contextInfo: { mentionedJid: [Sender] } }
+      { quoted: chat, contextInfo: { mentionedJid: [Sender] } }
     );
   },
 };

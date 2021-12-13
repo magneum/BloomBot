@@ -46,7 +46,8 @@ Do note, the setgoodbye option is still enabled after you use the delete option.
 
 𝙐𝙥𝙙𝙖𝙩𝙚🤖𝙋𝙚𝙣𝙙𝙞𝙣𝙜
 *•𝘗𝘭𝘦𝘢𝘴𝘦 𝘜𝘱𝘥𝘢𝘵𝘦 𝘜𝘴𝘪𝘯𝘨 *${ᴋᴇɪ}update* 𝘰𝘳 𝘳𝘦𝘥𝘦𝘱𝘭𝘰𝘺 𝐌𝐢𝐳𝐮𝐤𝐢™!`,
-          MessageType.text
+          MessageType.text,
+          { quoted: chat }
         )
         .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
     }
@@ -61,6 +62,7 @@ Do note, the setgoodbye option is still enabled after you use the delete option.
 シ︎𝐆𝐫𝐨𝐮𝐩👓${_𝔏𝔞𝔟_.HASH}`,
           MessageType.text,
           {
+            quoted: chat,
             contextInfo: {
               mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
             },
@@ -79,6 +81,7 @@ Do note, the setgoodbye option is still enabled after you use the delete option.
           },
           MessageType.image,
           {
+            quoted: chat,
             mimetype: Mimetype.png,
             caption: `
 ⚠️𝗘𝗿𝗿𝗼𝗿: 
@@ -93,7 +96,9 @@ Do note, the setgoodbye option is still enabled after you use the delete option.
     }
     if (!𝓜𝖎𝖟𝖚ӄ𝖎.isGroup) {
       𝓚𝓻𝓪𝓴𝓲𝓷𝔃
-        .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, `This is not a group`, MessageType.text)
+        .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, `This is not a group`, MessageType.text, {
+          quoted: chat,
+        })
         .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
       return;
     }
@@ -106,24 +111,28 @@ Do note, the setgoodbye option is still enabled after you use the delete option.
             .sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               `Set a setgoodbye message first.`,
-              MessageType.text
+              MessageType.text,
+              { quoted: chat }
             )
             .catch((cᴇʀʀᴏʀ) => {
               ℓιєηт.catch((cᴇʀʀᴏʀ, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
             });
           return;
         } else if (enabled === `OFF`) {
-          𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+          await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
             .sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               `Greetings are enabled: True \nCurrently greeting new members with:`,
-              MessageType.text
+              MessageType.text,
+              { quoted: chat }
             )
             .catch((cᴇʀʀᴏʀ) => {
               ℓιєηт.catch((cᴇʀʀᴏʀ, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
             });
-          𝓚𝓻𝓪𝓴𝓲𝓷𝔃
-            .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, Msg.message, MessageType.text)
+          await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+            .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, Msg.message, MessageType.text, {
+              quoted: chat,
+            })
             .catch((cᴇʀʀᴏʀ) => {
               ℓιєηт.catch((cᴇʀʀᴏʀ, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
             });
@@ -134,12 +143,15 @@ Do note, the setgoodbye option is still enabled after you use the delete option.
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
             GOODBYE.CURRENTLY_ENABLED,
-            MessageType.text
+            MessageType.text,
+            { quoted: chat }
           )
           .catch((cᴇʀʀᴏʀ) => {
             ℓιєηт.catch((cᴇʀʀᴏʀ, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
           });
-        𝓚𝓻𝓪𝓴𝓲𝓷𝔃.sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, Msg.message, MessageType.text);
+        𝓚𝓻𝓪𝓴𝓲𝓷𝔃.sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, Msg.message, MessageType.text, {
+          quoted: chat,
+        });
       } catch (cᴇʀʀᴏʀ) {
         throw cᴇʀʀᴏʀ;
       }
@@ -152,7 +164,8 @@ Do note, the setgoodbye option is still enabled after you use the delete option.
             .sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               `Goodbye message has been disabled.`,
-              MessageType.text
+              MessageType.text,
+              { quoted: chat }
             )
             .catch((cᴇʀʀᴏʀ) => {
               ℓιєηт.catch((cᴇʀʀᴏʀ, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
@@ -166,7 +179,8 @@ Do note, the setgoodbye option is still enabled after you use the delete option.
             .sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               `Goodbye message has been enabled.`,
-              MessageType.text
+              MessageType.text,
+              { quoted: chat }
             )
             .catch((cᴇʀʀᴏʀ) => {
               ℓιєηт.catch((cᴇʀʀᴏʀ, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
@@ -180,7 +194,8 @@ Do note, the setgoodbye option is still enabled after you use the delete option.
               .sendMessage(
                 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
                 `Set a setgoodbye message first.`,
-                MessageType.text
+                MessageType.text,
+                { quoted: chat }
               )
               .catch((cᴇʀʀᴏʀ) => {
                 ℓιєηт.catch((cᴇʀʀᴏʀ, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
@@ -191,7 +206,8 @@ Do note, the setgoodbye option is still enabled after you use the delete option.
             .sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               `Goodbye message deleted.`,
-              MessageType.text
+              MessageType.text,
+              { quoted: chat }
             )
             .catch((cᴇʀʀᴏʀ) => {
               ℓιєηт.catch((cᴇʀʀᴏʀ, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
@@ -210,7 +226,8 @@ Do note, the setgoodbye option is still enabled after you use the delete option.
             .sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               `Goodbye message updated and enabled.`,
-              MessageType.text
+              MessageType.text,
+              { quoted: chat }
             )
             .catch((cᴇʀʀᴏʀ) => {
               ℓιєηт.catch((cᴇʀʀᴏʀ, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
@@ -224,7 +241,8 @@ Do note, the setgoodbye option is still enabled after you use the delete option.
             .sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               `Goodbye message updated and enabled.`,
-              MessageType.text
+              MessageType.text,
+              { quoted: chat }
             )
             .catch((cᴇʀʀᴏʀ) => {
               ℓιєηт.catch((cᴇʀʀᴏʀ, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));

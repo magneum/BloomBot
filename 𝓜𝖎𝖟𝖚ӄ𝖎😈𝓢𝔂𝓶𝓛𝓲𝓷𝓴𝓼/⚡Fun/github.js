@@ -42,7 +42,8 @@ or replying  *${ᴋᴇɪ}github*`,
 
 𝙐𝙥𝙙𝙖𝙩𝙚🤖𝙋𝙚𝙣𝙙𝙞𝙣𝙜
 *•𝘗𝘭𝘦𝘢𝘴𝘦 𝘜𝘱𝘥𝘢𝘵𝘦 𝘜𝘴𝘪𝘯𝘨 *${ᴋᴇɪ}update* 𝘰𝘳 𝘳𝘦𝘥𝘦𝘱𝘭𝘰𝘺 𝐌𝐢𝐳𝐮𝐤𝐢™!`,
-          MessageType.text
+          MessageType.text,
+          { quoted: chat }
         )
         .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
     }
@@ -57,6 +58,7 @@ or replying  *${ᴋᴇɪ}github*`,
 シ︎𝐆𝐫𝐨𝐮𝐩👓${_𝔏𝔞𝔟_.HASH}`,
           MessageType.text,
           {
+            quoted: chat,
             contextInfo: {
               mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
             },
@@ -80,6 +82,7 @@ or replying  *${ᴋᴇɪ}github*`,
                 },
                 MessageType.image,
                 {
+                  quoted: chat,
                   mimetype: Mimetype.jpeg,
                   caption: `*⚠️Seems like someone forgot to give Github Account name!*
 
@@ -147,6 +150,7 @@ ${ᴋᴇɪ}github <account name>`,
               },
               MessageType.image,
               {
+                quoted: chat,
                 mimetype: Mimetype.png,
                 caption: caption,
                 thumbnail: null,
@@ -154,7 +158,9 @@ ${ᴋᴇɪ}github <account name>`,
             )
             .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
         } catch (cᴇʀʀᴏʀ) {
-          𝓚𝓻𝓪𝓴𝓲𝓷𝔃.sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, caption, MessageType.text);
+          𝓚𝓻𝓪𝓴𝓲𝓷𝔃.sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, caption, MessageType.text, {
+            quoted: chat,
+          });
         }
       } catch (cᴇʀʀᴏʀ) {
         await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃.sendMessage(
@@ -167,7 +173,8 @@ ACCOUNT NOT FOUND
 
 💡𝗖𝗼𝗺𝗺𝗮𝗻𝗱 • ${𝓜𝖎𝖟𝖚ӄ𝖎.commandName}
 🎮𝗜𝘁 𝘄𝗮𝘀 𝗣𝗠? • ${𝓜𝖎𝖟𝖚ӄ𝖎.isPm}`,
-          MessageType.text
+          MessageType.text,
+          { quoted: chat }
         );
       }
     }

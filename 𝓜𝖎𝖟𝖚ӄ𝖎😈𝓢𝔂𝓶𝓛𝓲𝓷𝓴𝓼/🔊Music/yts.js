@@ -42,7 +42,8 @@ module.exports = {
 
 𝙐𝙥𝙙𝙖𝙩𝙚🤖𝙋𝙚𝙣𝙙𝙞𝙣𝙜
 *•𝘗𝘭𝘦𝘢𝘴𝘦 𝘜𝘱𝘥𝘢𝘵𝘦 𝘜𝘴𝘪𝘯𝘨 *${ᴋᴇɪ}update* 𝘰𝘳 𝘳𝘦𝘥𝘦𝘱𝘭𝘰𝘺 𝐌𝐢𝐳𝐮𝐤𝐢™!`,
-          MessageType.text
+          MessageType.text,
+          { quoted: chat }
         )
         .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
     }
@@ -57,6 +58,7 @@ module.exports = {
 シ︎𝐆𝐫𝐨𝐮𝐩👓${_𝔏𝔞𝔟_.HASH}`,
           MessageType.text,
           {
+            quoted: chat,
             contextInfo: {
               mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
             },
@@ -75,6 +77,7 @@ module.exports = {
             },
             MessageType.image,
             {
+              quoted: chat,
               mimetype: Mimetype.jpeg,
               caption: `*⚠️Seems like someone forgot to give song-name!*
 
@@ -108,7 +111,8 @@ You Can Get download audio by using ${ᴋᴇɪ}ytdl <song-url>`,
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
             `No videos could be found.`,
-            MessageType.text
+            MessageType.text,
+            { quoted: chat }
           )
           .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
         return;
@@ -122,6 +126,7 @@ You Can Get download audio by using ${ᴋᴇɪ}ytdl <song-url>`,
           },
           MessageType.image,
           {
+            quoted: chat,
             mimetype: Mimetype.png,
             caption:
               `ᴛʜᴇꜱᴇ ᴀʀᴇ ᴛʜᴇ *ꜰɪʀꜱᴛ-5* ᴍᴏꜱᴛ ᴍᴀᴛᴄʜɪɴɢ ꜱᴇᴀʀᴄʜ ʀᴇꜱᴜʟᴛꜱ ꜰᴏʀ:

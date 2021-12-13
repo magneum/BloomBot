@@ -44,7 +44,8 @@ Reply to an image message with the command  *${ᴋᴇɪ}sticker*  to convert and
 
 𝙐𝙥𝙙𝙖𝙩𝙚🤖𝙋𝙚𝙣𝙙𝙞𝙣𝙜
 *•𝘗𝘭𝘦𝘢𝘴𝘦 𝘜𝘱𝘥𝘢𝘵𝘦 𝘜𝘴𝘪𝘯𝘨 *${ᴋᴇɪ}update* 𝘰𝘳 𝘳𝘦𝘥𝘦𝘱𝘭𝘰𝘺 𝐌𝐢𝐳𝐮𝐤𝐢™!`,
-          MessageType.text
+          MessageType.text,
+          { quoted: chat }
         )
         .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
     }
@@ -59,6 +60,7 @@ Reply to an image message with the command  *${ᴋᴇɪ}sticker*  to convert and
 シ︎𝐆𝐫𝐨𝐮𝐩👓${_𝔏𝔞𝔟_.HASH}`,
           MessageType.text,
           {
+            quoted: chat,
             contextInfo: {
               mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
             },
@@ -97,7 +99,8 @@ Reply to an image message with the command  *${ᴋᴇɪ}sticker*  to convert and
                   .sendMessage(
                     𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
                     fs.readFileSync(stickerPath),
-                    MessageType.sticker
+                    MessageType.sticker,
+                    { quoted: chat }
                   )
                   .catch((cᴇʀʀᴏʀ) => {
                     ℓιєηт.catch((cᴇʀʀᴏʀ, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
@@ -128,7 +131,8 @@ Reply to an image message with the command  *${ᴋᴇɪ}sticker*  to convert and
 
 💡𝗖𝗼𝗺𝗺𝗮𝗻𝗱 • ${𝓜𝖎𝖟𝖚ӄ𝖎.commandName}
 🎮𝗜𝘁 𝘄𝗮𝘀 𝗣𝗠? • ${𝓜𝖎𝖟𝖚ӄ𝖎.isPm}`,
-                  MessageType.text
+                  MessageType.text,
+                  { quoted: chat }
                 );
               });
             return;
@@ -155,7 +159,8 @@ Reply to an image message with the command  *${ᴋᴇɪ}sticker*  to convert and
                 .sendMessage(
                   𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
                   fs.readFileSync(stickerPath),
-                  MessageType.sticker
+                  MessageType.sticker,
+                  { quoted: chat }
                 )
                 .catch((cᴇʀʀᴏʀ) => {
                   ℓιєηт.catch((cᴇʀʀᴏʀ, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
@@ -186,7 +191,8 @@ Reply to an image message with the command  *${ᴋᴇɪ}sticker*  to convert and
 
 💡𝗖𝗼𝗺𝗺𝗮𝗻𝗱 • ${𝓜𝖎𝖟𝖚ӄ𝖎.commandName}
 🎮𝗜𝘁 𝘄𝗮𝘀 𝗣𝗠? • ${𝓜𝖎𝖟𝖚ӄ𝖎.isPm}`,
-                MessageType.text
+                MessageType.text,
+                { quoted: chat }
               );
             });
         };
@@ -212,7 +218,8 @@ Reply to an image message with the command  *${ᴋᴇɪ}sticker*  to convert and
             .sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               `Please tag a valid image/video/gif message to convert to sticker.`,
-              MessageType.text
+              MessageType.text,
+              { quoted: chat }
             )
             .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
         }
@@ -228,7 +235,8 @@ ENTER VALID FILE!
 
 💡𝗖𝗼𝗺𝗺𝗮𝗻𝗱 • ${𝓜𝖎𝖟𝖚ӄ𝖎.commandName}
 🎮𝗜𝘁 𝘄𝗮𝘀 𝗣𝗠? • ${𝓜𝖎𝖟𝖚ӄ𝖎.isPm}`,
-          MessageType.text
+          MessageType.text,
+          { quoted: chat }
         );
       }
     }
