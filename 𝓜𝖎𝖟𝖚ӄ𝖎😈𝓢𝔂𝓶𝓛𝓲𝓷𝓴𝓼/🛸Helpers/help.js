@@ -33,8 +33,8 @@ module.exports = {
   async handle(𝓚𝓻𝓪𝓴𝓲𝓷𝔃, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
     // ⬡==================⬡-----------------⦿𝐌𝐞𝐞𝟔™⦿-----------------⬡==================⬡
     await 爪𝖎𝖟𝖚ӄ𝖎git.fetch();
-    var Sender = 爪𝖎𝖟𝖚ӄ𝖎.sender;
-    personsending = Sender.substring(0, Sender.length - 15);
+    var 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓 = 爪𝖎𝖟𝖚ӄ𝖎.sender;
+    personsending = 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓.substring(0, 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓.length - 15);
     // ⬡==================⬡-----------------⦿𝐌𝐞𝐞𝟔™⦿-----------------⬡==================⬡
     const runtime = function (seconds) {
       seconds = Number(seconds);
@@ -101,7 +101,7 @@ module.exports = {
       爪𝖎𝖟𝖚ӄ𝖎.chatId,
       buttonMessage,
       MessageType.buttonsMessage,
-      { quoted: chat, contextInfo: { mentionedJid: [Sender] } }
+      { quoted: chat, contextInfo: { mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓] } }
     );
   },
 };

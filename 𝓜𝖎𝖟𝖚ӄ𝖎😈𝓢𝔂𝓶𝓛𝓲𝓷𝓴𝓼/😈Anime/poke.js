@@ -30,8 +30,8 @@ module.exports = {
   async handle(𝓚𝓻𝓪𝓴𝓲𝓷𝔃, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
     // ⬡==================⬡-----------------⦿𝐌𝐢𝐳𝐮𝐤𝐢™⦿-----------------⬡==================⬡
     await 𝓜𝓮𝓮git.fetch();
-    var Sender = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
-    var personsending = Sender.substring(0, Sender.length - 15);
+    var 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓 = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
+    var personsending = 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓.substring(0, 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓.length - 15);
     var ɴᴇᴡ𝓜𝓮𝓮6 = await 𝓜𝓮𝓮git.log(["KrakinzLab..origin/KrakinzLab"]);
     // ⬡==================⬡-----------------⦿𝐌𝐢𝐳𝐮𝐤𝐢™⦿-----------------⬡==================⬡
     if (ɴᴇᴡ𝓜𝓮𝓮6.total != 0) {
@@ -81,7 +81,7 @@ module.exports = {
           {
             quoted: chat,
             mimetype: Mimetype.jpeg || Mimetype.png,
-            contextInfo: { mentionedJid: [Sender, Receiver] },
+            contextInfo: { mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓, Receiver] },
             caption: `*©️𝘔𝘪𝘻𝘶𝘬𝘪𝘉𝘰𝘵 𝘉𝘺 𝘒𝘳𝘢𝘬𝘪𝘯𝘻𝘓𝘢𝘣 •••⬡*
 
 *😒@${personsending}* is poking *😒@${personreceived}*`,
@@ -101,7 +101,7 @@ module.exports = {
           {
             quoted: chat,
             mimetype: Mimetype.jpeg || Mimetype.png,
-            contextInfo: { mentionedJid: [Sender] },
+            contextInfo: { mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓] },
             caption: `*©️𝘔𝘪𝘻𝘶𝘬𝘪𝘉𝘰𝘵 𝘉𝘺 𝘒𝘳𝘢𝘬𝘪𝘯𝘻𝘓𝘢𝘣 •••⬡*
   
 *😒@${personsending}* is poking!`,
