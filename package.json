@@ -7,6 +7,7 @@
     },
     "dependencies": {
         "@adiwajshing/baileys": "^3.5.3",
+        "@cicciosgamino/openweather-apis": "^5.0.1",
         "@ffmpeg-installer/ffmpeg": "^1.1.0",
         "@ffprobe-installer/ffprobe": "^1.2.0",
         "@vitalets/google-translate-api": "^7.0.0",
@@ -56,6 +57,7 @@
         "text-to-image": "^4.1.1",
         "unofficial-carbon-now": "^1.0.3",
         "urban-dictionary": "^3.0.2",
+        "weather-js": "^2.0.0",
         "yarn": "^1.22.17",
         "youtube-metadata-from-url": "^1.0.3",
         "yt-search": "^2.10.1",
