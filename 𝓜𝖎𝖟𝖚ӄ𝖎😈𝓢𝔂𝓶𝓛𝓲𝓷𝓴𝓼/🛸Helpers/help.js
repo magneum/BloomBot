@@ -48,7 +48,7 @@ module.exports = {
     timestampe = speed();
     latensie = speed() - timestampe;
     `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
-    let content = fs.readFileSync(`./𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/𝓜𝖎𝖟𝖚ӄ𝖎.jpg`);
+    let content = fs.readFileSync(`./𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/𝓜𝖎𝖟𝖚ӄ𝖎.png`);
     const media = await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃.prepareMessage(
       𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
       content,
