@@ -7,11 +7,12 @@ const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const ℓιєηт = require(`../../𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/catch`);
 const speed = require(`performance-now`);
 const _𝔏𝔞𝔟_ = require(`../../𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/_𝔏𝔞𝔟_`);
-const os = require(`os`);
-const vers = require(`../../package.json`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
+const vers = require(`../../package.json`);
 const fs = require(`fs`);
+const os = require("os");
+const { formatp } = require(`../../𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/mizu`);
 `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
 //•⬡• ɢɴᴜ ɢᴇɴᴇʀᴀʟ ᴘᴜʙʟɪᴄ ʟɪᴄᴇɴꜱᴇ ᴠᴇʀꜱɪᴏɴ 3, 29 ᴊᴜɴᴇ 2007 ᴄᴏᴘʏʀɪɢʜᴛ (ᴄ) 2007 ꜰʀᴇᴇ ꜱᴏꜰᴛᴡᴀʀᴇ ꜰᴏᴜɴᴅᴀᴛɪᴏɴ
 //•⬡• ᴇᴠᴇʀʏᴏɴᴇ ɪꜱ ᴘᴇʀᴍɪᴛᴛᴇᴅ ᴛᴏ 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 ᴠᴇʀʙᴀᴛɪᴍ ᴄᴏᴘɪᴇꜱ ᴏꜰ ᴛʜɪꜱ ʟɪᴄᴇɴꜱᴇ ᴅᴏᴄᴜᴍᴇɴᴛ, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
@@ -70,43 +71,48 @@ module.exports = {
       //   type: 1,
       // },
     ];
+    let timestamp = speed();
+    let latensi = speed() - timestamp;
+    neww = performance.now();
+    oldd = performance.now();
     const buttonMessage = {
       contentText: `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
 
 *Hey* •@${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰}
 🛸𝐆𝐫𝐨𝐮𝐩: ${_𝔏𝔞𝔟_.HASH}
 
-┌──⭓ 𝐁𝐨𝐭 𝐈𝐧𝐟𝐨𝐬
+┌────⭓ 𝐀𝐥𝐥 𝐂𝐚𝐭𝐞𝐠𝐨𝐫𝐢𝐞𝐬
 │    
-│シ︎💡ᴘʀᴇꜰɪx: ${ᴋᴇɪ}
-│シ︎⚙️ᴇɴɢɪɴᴇ: ${vers.vers}
-│シ︎💻ᴘʟᴀᴛꜰᴏʀᴍ: ${os.platform()}
-│シ︎🛰️ᴘɪɴɢ: _${latensie.toFixed(3)}s
-│シ︎⚰️ᴜᴘᴛɪᴍᴇ: ${runtime(process.uptime())}
+│⚙️ ${ᴋᴇɪ}systemside: _ꜱʏꜱᴛᴇᴍ_
+│🎋 ${ᴋᴇɪ}animeside: _ᴀɴɪᴍᴇ_
+│🍫 ${ᴋᴇɪ}musicside: _ᴍᴜꜱɪᴄ_
+│🍭 ${ᴋᴇɪ}groupside: _ɢʀᴏᴜᴘꜱ_
+│🦄 ${ᴋᴇɪ}funside: _ꜰᴜɴꜱ_
+│🍄 ${ᴋᴇɪ}nsfwside: _ᴀᴅᴜʟᴛ_
 │
-└───────⭓
+└───────────⭓
 
-┌──⭓ 𝐀𝐥𝐥 𝐂𝐚𝐭𝐞𝐠𝐨𝐫𝐢𝐞𝐬
+┌────⭓ 𝐒𝐲𝐦𝐥𝐢𝐧𝐤 𝐈𝐧𝐟𝐨𝐬
 │    
-│⚙️ ${ᴋᴇɪ}systemside:  ꜱʏꜱᴛᴇᴍ
-│🎋 ${ᴋᴇɪ}animeside:  ᴀɴɪᴍᴇ
-│🍫 ${ᴋᴇɪ}musicside:  ᴍᴜꜱɪᴄ 
-│🍭 ${ᴋᴇɪ}groupside:  ɢʀᴏᴜᴘꜱ
-│🦄 ${ᴋᴇɪ}funside:  ꜰᴜɴꜱ
-│🍄 ${ᴋᴇɪ}nsfwside:  ᴀᴅᴜʟᴛ
+│💡 ᴘʀᴇꜰɪx: ${ᴋᴇɪ}
+│⚙️ ᴇɴɢɪɴᴇ: ${vers.vers}
+│💻 ᴘʟᴀᴛꜰᴏʀᴍ: ${os.platform()}
+│🛰️ ʟᴀᴛᴇɴᴄʏ: ${latensi.toFixed(4)}(s)
+│☕ ᴜᴘᴛɪᴍᴇ: ${runtime(process.uptime())}
+│🎮 ʀᴀᴍ: ${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}
 │
-└───────⭓`,
+└───────────⭓`,
       footerText: `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_`,
       buttons: buttons,
       headerType: 4,
       imageMessage: media.message.imageMessage,
     };
-    await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃.sendMessage(
-      𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-      buttonMessage,
-      MessageType.buttonsMessage,
-      { quoted: chat, contextInfo: { mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓] } }
-    );
+    await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+      .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, buttonMessage, MessageType.buttonsMessage, {
+        quoted: chat,
+        contextInfo: { mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓] },
+      })
+      .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
   },
 };
 `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;

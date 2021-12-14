@@ -7,7 +7,6 @@ const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const ℓιєηт = require(`../../𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/catch`);
 const speed = require("performance-now");
 const { performance } = require("perf_hooks");
-const used = process.memoryUsage();
 const vers = require(`../../package.json`);
 const _𝔏𝔞𝔟_ = require(`../../𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/_𝔏𝔞𝔟_`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
@@ -104,27 +103,26 @@ module.exports = {
       neww = performance.now();
       oldd = performance.now();
       respon = `
-┌──⭓ 𝐒𝐲𝐦𝐥𝐢𝐧𝐤 𝐈𝐧𝐟𝐨𝐬
+┌────⭓ 𝐒𝐲𝐦𝐥𝐢𝐧𝐤 𝐈𝐧𝐟𝐨𝐬
 │    
 │シ︎💡ᴘʀᴇꜰɪx: ${ᴋᴇɪ}
 │シ︎⚙️ᴇɴɢɪɴᴇ: ${vers.vers}
 │シ︎💻ᴘʟᴀᴛꜰᴏʀᴍ: ${os.platform()}
-│シ︎🛰️ʟᴀᴛᴇɴᴄʏ: ${latensi.toFixed(4)}(s) │ ${oldd - neww}(ms)
+│シ︎🛰️ʟᴀᴛᴇɴᴄʏ: ${latensi.toFixed(4)}(s)
 │シ︎☕ᴜᴘᴛɪᴍᴇ: ${runtime(process.uptime())}
 │シ︎🎮ʀᴀᴍ: ${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}
 │
-└───────⭓
+└───────────⭓
 
-⭓───────⭓ 𝐍𝐨𝐝𝐞𝐉𝐒 𝐌𝐞𝐦-𝐔𝐬𝐚𝐠𝐞:
-${Object.keys(used).map((key, _, arr) => `${key.padEnd(Math.max(...arr.map((v) => v.length)), " ")}: ${formatp(used[key])}`).join("\n│")}
-${cpus[0] ? `*Total CPU Usage*
-${cpus[0].model.trim()} (${cpu.speed} ᴍʜᴢ)
-${Object.keys(cpu.times).map((type) => `- *${(type + "*").padEnd(6)}: ${((100 * cpu.times[type]) / cpu.total).toFixed(2)}%`).join("\n")}
+┌────⭓ 𝐍𝐨𝐝𝐞𝐉𝐒 𝐌𝐞𝐦-𝐔𝐬𝐚𝐠𝐞:
+│${Object.keys(used).map((key, _, arr) => `${key.padEnd(Math.max(...arr.map((v) => v.length)), " ")}: ${formatp(used[key])}`).join("\n│")}
+
+┌────⭓ ${cpus[0] ? `𝐓𝐨𝐭𝐚𝐥 𝐂𝐏𝐔 𝐔𝐬𝐚𝐠𝐞
+│${cpus[0].model.trim()} (${cpu.speed} ᴍʜᴢ)${Object.keys(cpu.times).map((type) => `- *${(type + "*").padEnd(6)}: ${((100 * cpu.times[type]) / cpu.total).toFixed(2)}%`).join("\n")}
 
 
-⭓───────⭓ 𝐂𝐏𝐔 𝐂𝐨𝐫𝐞(𝐬) 𝐔𝐬𝐚𝐠𝐞 (_${cpus.length}_ 𝐂𝐨𝐫𝐞 𝐂𝐏𝐔)
-${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} ᴍʜᴢ)
-${Object.keys(cpu.times).map((type) => `- *${(type + "*").padEnd(6)}: ${((100 * cpu.times[type]) / cpu.total).toFixed(2)}%`).join("\n")}`).join("\n\n")}` : ""}`.trim();
+┌────⭓ 𝐂𝐏𝐔 𝐂𝐨𝐫𝐞(𝐬) 𝐔𝐬𝐚𝐠𝐞 (_${cpus.length}_ 𝐂𝐨𝐫𝐞 𝐂𝐏𝐔)
+│${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} ᴍʜᴢ)${Object.keys(cpu.times).map((type) => `- *${(type + "*").padEnd(6)}: ${((100 * cpu.times[type]) / cpu.total).toFixed(2)}%`).join("\n")}`).join("\n\n")}` : ""}`.trim();
       await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
         .sendMessage(
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
@@ -141,9 +139,7 @@ ${Object.keys(cpu.times).map((type) => `- *${(type + "*").padEnd(6)}: ${((100 * 
 
 *Hey •@${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰}*,  
 
-*⬡----⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿----⬡*
-${respon}
-*⬡----⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿----⬡*`,
+${respon}`,
           }
         )
         .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
