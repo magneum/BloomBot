@@ -1,7 +1,6 @@
 [![Open Source Love svg3](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)<img align="centre" src="https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg" alt="Krakinz"/><img align="centre" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"/>
 
 # ⬡ 👓𝓜𝖎𝖟𝖚ӄ𝖎™ △▽ 𝖂𝖍𝖆𝖙𝖘𝖆𝖕𝖕-𝖀𝖘𝖊𝖗𝖇𝖔𝖙 ⬡
-𝘽𝙊𝙏 𝙄𝙉 𝘽𝙀𝙏𝘼
 ʏᴏᴜʀ ᴀꜱꜱɪꜱꜱᴛᴀɴᴛ ꜰᴏʀ ᴍᴀᴋɪɴɢ ʙᴏʀɪɴɢ ᴡʜᴀᴛꜱᴀᴘᴘ ᴀ ʙᴇᴛᴛᴇʀ ᴀᴅᴠᴀɴᴄᴇ ᴀᴘᴘ!
 
 <p align="center">
@@ -22,9 +21,10 @@
 
 # ⚡ 𝕯𝖊𝖕𝖑𝖔𝖞𝖒𝖊𝖓𝖙
 
-- ꜰɪʀꜱᴛ ꜰᴏʀᴋ ᴀɴᴅ ꜱᴛᴀʀ ᴛʜᴇ ʀᴇᴘᴏ and join group chat (or else auto upgrading won't work)
-- Get Your Mee6 SessionCode from [![Generic badge](https://img.shields.io/badge/Mee6_Session-blue.svg)](https://replit.com/@Krakinzkon/Mizuki)
-🔸[ᴡʜᴀᴛꜱᴀᴘᴘ]()
+- *ꜰɪʀꜱᴛ ꜰᴏʀᴋ ᴀɴᴅ ꜱᴛᴀʀ ᴛʜᴇ ʀᴇᴘᴏ and join group chat (or else auto upgrading won't work)*
+- *Get Your Mee6 SessionCode from* [![Generic badge](https://img.shields.io/badge/Mee6_Session-blue.svg)](https://replit.com/@Krakinzkon/Mizuki)
+- *Head Over To* [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Krakinz/Mizuki.git)
+🔸[ᴡʜᴀᴛꜱᴀᴘᴘ](www.google.com)
 🔸[ᴅɪꜱᴄᴏʀᴅ](https://discord.gg/xcFN6NDHEV)
 
 
