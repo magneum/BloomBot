@@ -23,7 +23,9 @@ module.exports = {
     await 𝓜𝖎𝖟𝖚ӄ𝖎𝔊𝔦𝔱.fetch();
     var 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓 = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
     var 𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰 = 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓.substring(0, 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓.length - 15);
-    var 𝙵𝚎𝚝𝚌𝚑𝙼𝚒𝚣𝚞𝚔𝚒𝙽𝚎𝚜𝚜 = await 𝓜𝖎𝖟𝖚ӄ𝖎𝔊𝔦𝔱.log(["KrakinzLab..origin/KrakinzLab"]);
+    var 𝙵𝚎𝚝𝚌𝚑𝙼𝚒𝚣𝚞𝚔𝚒𝙽𝚎𝚜𝚜 = await 𝓜𝖎𝖟𝖚ӄ𝖎𝔊𝔦𝔱.log([
+      "KrakinzLab..origin/KrakinzLab",
+    ]);
     ("⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡");
     if (𝙵𝚎𝚝𝚌𝚑𝙼𝚒𝚣𝚞𝚔𝚒𝙽𝚎𝚜𝚜.total != 0) {
       await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
@@ -59,40 +61,36 @@ module.exports = {
       return;
       ("⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡");
     } else {
+      var num = Math.floor(Math.random() * (500 - 1) + 1);
       try {
-        var num = Math.floor(Math.random() * (500 - 1) + 1);
-        try {
-          await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
-            .sendMessage(
-              𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              {
-                url: `https://ctk-api.herokuapp.com/meme/${num}`,
-              },
-              MessageType.image,
-              {
-                quoted: chat,
-                mimetype: Mimetype.jpeg,
-              }
-            )
-            .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
-        } catch (e) {
-          console.log(e);
-          await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
-            .sendMessage(
-              𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              {
-                url: `https://ctk-api.herokuapp.com/meme/${num}`,
-              },
-              MessageType.image,
-              {
-                quoted: chat,
-                mimetype: Mimetype.png,
-              }
-            )
-            .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
-        }
-      } catch (err) {
-        console.log(err);
+        await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+          .sendMessage(
+            𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+            {
+              url: `https://ctk-api.herokuapp.com/meme/${num}`,
+            },
+            MessageType.image,
+            {
+              quoted: chat,
+              mimetype: Mimetype.jpeg,
+            }
+          )
+          .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+      } catch (e) {
+        console.log(e);
+        await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+          .sendMessage(
+            𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+            {
+              url: `https://ctk-api.herokuapp.com/meme/${num}`,
+            },
+            MessageType.image,
+            {
+              quoted: chat,
+              mimetype: Mimetype.png,
+            }
+          )
+          .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
       }
     }
   },

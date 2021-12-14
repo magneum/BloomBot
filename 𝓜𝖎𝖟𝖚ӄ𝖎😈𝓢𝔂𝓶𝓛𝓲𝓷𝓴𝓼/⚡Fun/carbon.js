@@ -50,7 +50,9 @@ _yeti_  *|*  _zenburn_`,
     await 𝓜𝖎𝖟𝖚ӄ𝖎𝔊𝔦𝔱.fetch();
     var 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓 = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
     var 𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰 = 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓.substring(0, 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓.length - 15);
-    var 𝙵𝚎𝚝𝚌𝚑𝙼𝚒𝚣𝚞𝚔𝚒𝙽𝚎𝚜𝚜 = await 𝓜𝖎𝖟𝖚ӄ𝖎𝔊𝔦𝔱.log(["KrakinzLab..origin/KrakinzLab"]);
+    var 𝙵𝚎𝚝𝚌𝚑𝙼𝚒𝚣𝚞𝚔𝚒𝙽𝚎𝚜𝚜 = await 𝓜𝖎𝖟𝖚ӄ𝖎𝔊𝔦𝔱.log([
+      "KrakinzLab..origin/KrakinzLab",
+    ]);
     ("⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡");
     if (𝙵𝚎𝚝𝚌𝚑𝙼𝚒𝚣𝚞𝚔𝚒𝙽𝚎𝚜𝚜.total != 0) {
       await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
@@ -158,12 +160,14 @@ _yeti_  *|*  _zenburn_`,
                   message += `\n${counter}. ${theme}`;
                   counter += 1;
                 });
-                await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃.sendMessage(
-                  𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                  `` + message + ``,
-                  MessageType.text,
-                  { quoted: chat }
-                );
+                await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+                  .sendMessage(
+                    𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                    `` + message + ``,
+                    MessageType.text,
+                    { quoted: chat }
+                  )
+                  .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
                 return;
               } else {
                 await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
@@ -174,9 +178,7 @@ Please use the command  *${ᴋᴇɪ}carbon <text>*  or reply to a text message w
                     MessageType.text,
                     { quoted: chat }
                   )
-                  .catch((cᴇʀʀᴏʀ) => {
-                    ℓιєηт.catch((cᴇʀʀᴏʀ, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
-                  });
+                  .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
                 return;
               }
             }
@@ -195,9 +197,7 @@ Do note that theme names are  *case sensitive*${ᴋᴇɪ}`,
                   MessageType.text,
                   { quoted: chat }
                 )
-                .catch((cᴇʀʀᴏʀ) => {
-                  ℓιєηт.catch((cᴇʀʀᴏʀ, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
-                });
+                .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
               return;
             }
           } catch (cᴇʀʀᴏʀ) {
@@ -210,43 +210,30 @@ Do note that theme names are  *case sensitive*${ᴋᴇɪ}`,
             }
           }
         }
-        try {
-          await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
-            .sendMessage(
-              𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              `*☢️𝓜𝓮𝓮6*\n\nConverting your text into a code snippet. Please wait...`,
-              MessageType.text,
-              { quoted: chat }
-            )
-            .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
-          const carbon = new Carbon.createCarbon()
-            .setCode(code)
-            .setPrettify(true)
-            .setTheme(themeInput);
-          const output = await Carbon.generateCarbon(carbon);
-          await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
-            .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, output, MessageType.image, {
-              quoted: chat,
-              mimetype: Mimetype.png,
-              caption: `*☢️𝓜𝓮𝓮6*\n\n
+        await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+          .sendMessage(
+            𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+            `*☢️𝓜𝓮𝓮6*\n\nConverting your text into a code snippet. Please wait...`,
+            MessageType.text,
+            { quoted: chat }
+          )
+          .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+        const carbon = new Carbon.createCarbon()
+          .setCode(code)
+          .setPrettify(true)
+          .setTheme(themeInput);
+        const output = await Carbon.generateCarbon(carbon);
+        await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+          .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, output, MessageType.image, {
+            quoted: chat,
+            mimetype: Mimetype.png,
+            caption: `*☢️𝓜𝓮𝓮6*\n\n
 *<< Here's your carbon image! >>*
 Colour Scheme: {}`.format(themeInput),
-            })
-            .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
-        } catch (cᴇʀʀᴏʀ) {
-          throw cᴇʀʀᴏʀ;
-        }
+          })
+          .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
       } catch (cᴇʀʀᴏʀ) {
-        await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃.sendMessage(
-          𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-          `*🎮𝓜𝖎𝖟𝖚ӄ𝖎™* 𝐝𝐢𝐝𝐧'𝐭 𝐰𝐨𝐫𝐤 𝐚𝐬 𝐞𝐱𝐩𝐞𝐜𝐭𝐞𝐝❗
-
-💡𝗛𝗲𝗿𝗲 𝗶𝘀 𝗮 𝘀𝗺𝗮𝗹𝗹 𝗲𝗿𝗿𝗼𝗿 𝗿𝗲𝗽𝗼𝗿𝘁 𝗮𝗻𝗱 𝘁𝗼 𝗹𝗼𝗴 𝘁𝗵𝗲 𝗿𝗲𝗽𝗼𝗿𝘁 𝘂𝘀𝗲 ${ᴋᴇɪ}𝗿𝗲𝗽𝗼𝗿𝘁
-⚠️𝗘𝗿𝗿𝗼𝗿
-• ${cᴇʀʀᴏʀ}`,
-          MessageType.text,
-          { quoted: chat }
-        );
+        throw cᴇʀʀᴏʀ;
       }
     }
   },

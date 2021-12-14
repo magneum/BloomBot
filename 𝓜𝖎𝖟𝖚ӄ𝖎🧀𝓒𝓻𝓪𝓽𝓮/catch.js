@@ -7,8 +7,8 @@ const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const _𝔏𝔞𝔟_ = require("./_𝔏𝔞𝔟_");
 require("python-format-js");
 exports.catch = async (error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎) => {
-  var str = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
-  var newString = str.substring(0, str.length - 15);
+  var 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓 = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
+  var 𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰 = 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓.substring(0, 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓.length - 15);
   await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃.sendMessage(
     𝓜𝖎𝖟𝖚ӄ𝖎.logGroup,
     `*(𝓒) 𝘔𝘪𝘻𝘶𝘬𝘪𝘉𝘰𝘵 𝘉𝘺 𝘒𝘳𝘢𝘬𝘪𝘯𝘻𝘓𝘢𝘣 •⬡•*
@@ -20,7 +20,7 @@ ${error}
     MessageType.text,
     {
       contextInfo: {
-        mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
+        mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓],
       },
     }
   );
@@ -33,12 +33,13 @@ ${error}
     {
       mimetype: Mimetype.png,
       contextInfo: {
-        mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
+        mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓],
       },
       caption: `*(𝓒) 𝘔𝘪𝘻𝘶𝘬𝘪𝘉𝘰𝘵 𝘉𝘺 𝘒𝘳𝘢𝘬𝘪𝘯𝘻𝘓𝘢𝘣 •⬡•*
 
 
-*•@${newString}*, 𝙏𝙝𝙚𝙧𝙚 𝙒𝙖𝙨 𝘼𝙣 𝙀𝙧𝙧𝙤𝙧.𝙋𝙡𝙚𝙖𝙨𝙚 𝙩𝙧𝙮 𝘼𝙜𝙖𝙞𝙣 𝙇𝙖𝙩𝙚𝙧!
+•@${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰}, Please try Again!
+There Was temporary erorr in that command.
 
 シ︎🛸𝐆𝐫𝐨𝐮𝐩: ${_𝔏𝔞𝔟_.HASH}`,
     }
