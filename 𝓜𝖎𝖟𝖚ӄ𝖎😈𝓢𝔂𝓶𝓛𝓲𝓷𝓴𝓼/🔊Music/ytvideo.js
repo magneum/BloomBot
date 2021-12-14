@@ -184,9 +184,16 @@ _Please wait for the media file to be sent it may take a few minutes_
 *Link*:  ${a.data}
 *Size*:  ${filesizeF}`
               );
-              sendMediaURL(𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓, dl_link).catch(() =>
-                reply(mess.error.api)
-              );
+              sendMediaURL(
+                𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓,
+                dl_link,
+                `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
+
+
+*Title*:  ${title}
+*Link*:  ${a.data}
+*Size*:  ${filesizeF}`
+              ).catch(() => reply(mess.error.api));
             }
           });
       });
