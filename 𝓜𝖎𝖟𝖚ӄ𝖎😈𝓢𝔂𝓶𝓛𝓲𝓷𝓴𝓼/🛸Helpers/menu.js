@@ -67,18 +67,15 @@ module.exports = {
 シ︎🛸𝐆𝐫𝐨𝐮𝐩: ${_𝔏𝔞𝔟_.HASH}
 
 ┌────⭓ *💻𝙎𝙮𝙨𝙩𝙚𝙢*-(${ᴋᴇɪ}systemside)
-│
 │⚙️ ${ᴋᴇɪ}help 
 │⚙️ ${ᴋᴇɪ}ping
 │⚙️ ${ᴋᴇɪ}mizuki
 │⚙️ ${ᴋᴇɪ}update
 │⚙️ ${ᴋᴇɪ}broadcast
 │⚙️ ${ᴋᴇɪ}ban
-│
 └───────────⭓
 
 ┌────⭓ *🤩𝘼𝙣𝙞𝙢𝙚*-(${ᴋᴇɪ}animeside)
-│
 │🎋 ${ᴋᴇɪ}anime
 │🎋 ${ᴋᴇɪ}animewallpaper 
 │🎋 ${ᴋᴇɪ}cuddle 
@@ -98,19 +95,15 @@ module.exports = {
 │🎋 ${ᴋᴇɪ}poke
 │🎋 ${ᴋᴇɪ}sad
 │🎋 ${ᴋᴇɪ}thinking
-│
 └───────────⭓
 
 ┌────⭓ *🍫𝙈𝙪𝙨𝙞𝙘*-(${ᴋᴇɪ}musicside)
-│
 │🍫 ${ᴋᴇɪ}lyrics
 │🍫 ${ᴋᴇɪ}ytdl
 │🍫 ${ᴋᴇɪ}yts
-│
 └───────────⭓
 
 ┌────⭓ *👑𝙂𝙧𝙤𝙪𝙥𝙨*-(groupside)
-│
 │🍭 ${ᴋᴇɪ}promote
 │🍭 ${ᴋᴇɪ}spam
 │🍭 ${ᴋᴇɪ}invite
@@ -123,11 +116,9 @@ module.exports = {
 │🍭 ${ᴋᴇɪ}tagall
 │🍭 ${ᴋᴇɪ}setwelcome
 │🍭 ${ᴋᴇɪ}setgoodbye
-│
 └───────────⭓
 
 ┌────⭓ *🧀𝙁𝙪𝙣𝙨*-(${ᴋᴇɪ}funside)
-│
 │🦄 ${ᴋᴇɪ}google
 │🦄 ${ᴋᴇɪ}carbon 
 │🦄 ${ᴋᴇɪ}pfgroupdp
@@ -141,11 +132,9 @@ module.exports = {
 │🦄 ${ᴋᴇɪ}tts 
 │🦄 ${ᴋᴇɪ}weather  
 │🦄 ${ᴋᴇɪ}ud
-│
 └───────────⭓
 
 ┌────⭓ *🔞𝙉𝙎𝙁𝙒 18+*-(${ᴋᴇɪ}nsfwside)
-│
 │🍄 ${ᴋᴇɪ}ass  
 │🍄 ${ᴋᴇɪ}bdsm  
 │🍄 ${ᴋᴇɪ}blowjob  
@@ -167,7 +156,6 @@ module.exports = {
 │🍄 ${ᴋᴇɪ}thighs
 │🍄 ${ᴋᴇɪ}uniform
 │🍄 ${ᴋᴇɪ}yuri
-│
 └───────────⭓
 
 *⧪➛𝘾𝙤𝙢𝙞𝙣𝙜 𝙎𝙤𝙤𝙣!*

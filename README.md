@@ -25,9 +25,9 @@
 - *Get Your Mee6 SessionCode from* [![Generic badge](https://img.shields.io/badge/Mee6_Session-blue.svg)](https://replit.com/@Krakinzkon/Mizuki)
 - *Head Over To* [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Krakinz/Mizuki.git)
 - 
-🔸[ᴡʜᴀᴛꜱᴀᴘᴘ](www.google.com)
+🔸[`ᴡʜᴀᴛꜱᴀᴘᴘ`](https://chat.whatsapp.com/KlMRYxCTte5H8TIIupbRVf)
 
-🔸[ᴅɪꜱᴄᴏʀᴅ](https://discord.gg/xcFN6NDHEV)
+🔸[`ᴅɪꜱᴄᴏʀᴅ`](https://discord.gg/xcFN6NDHEV)
 
 
 # 💡 𝕴𝖓𝖘𝖕𝖎𝖗𝖆𝖙𝖎𝖔𝖓
@@ -39,7 +39,7 @@
 ```
 
 
-# ☣️ [𝕷𝖎𝖈𝖊𝖓𝖘𝖊](LICENSE)
+# ☣️ [`𝕷𝖎𝖈𝖊𝖓𝖘𝖊`](LICENSE)
 
 ```sh
 Apache License
