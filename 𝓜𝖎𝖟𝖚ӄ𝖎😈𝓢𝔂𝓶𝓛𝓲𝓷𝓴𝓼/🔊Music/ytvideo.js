@@ -169,7 +169,7 @@ You Can Get URL by using ${ᴋᴇɪ}yts <song-name>`,
                 thumb,
                 `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
 
-_Please Choose Smaller File_
+_Please Choose Smaller File. Max Limit (100mb)_
 *Title*:  ${title}
 *Filesize*:  ${filesizeF}`
               );
