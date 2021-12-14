@@ -70,7 +70,7 @@ exports.nahargs = async (
         quoted: chat,
         mimetype: Mimetype.png,
         contextInfo: { mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓] },
-        caption: `(ᴄ)𝘔𝘪𝘻𝘶𝘬𝘪𝘉𝘰𝘵 𝘉𝘺 𝘒𝘳𝘢𝘬𝘪𝘯𝘻𝘓𝘢𝘣 
+        caption: `*(ᴄ) ❣️𝐌𝐢𝐳𝐮𝐤𝐢𝐁𝐨𝐭*
 
 𝘚𝘦𝘦𝘮𝘴 𝘓𝘪𝘬𝘦 @${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰} 𝘍𝘰𝘳𝘨𝘰𝘵 𝘛𝘰 𝘎𝘪𝘷𝘦 𝘈𝘯𝘺 𝘈𝘳𝘨𝘶𝘮𝘦𝘯𝘵!
 
