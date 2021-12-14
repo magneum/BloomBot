@@ -45,6 +45,7 @@
         "nodemon": "^2.0.15",
         "npm": "^8.1.4",
         "ocr-space-api-wrapper": "^1.0.6",
+        "perf_hooks": "^0.0.1",
         "performance-now": "^2.1.0",
         "pg": "^8.7.1",
         "ping": "^0.4.1",

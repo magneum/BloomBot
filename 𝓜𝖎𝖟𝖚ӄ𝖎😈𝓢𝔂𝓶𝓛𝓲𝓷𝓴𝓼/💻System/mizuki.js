@@ -5,6 +5,9 @@
 `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const ℓιєηт = require(`../../𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/catch`);
+const speed = require("performance-now");
+const { performance } = require("perf_hooks");
+const used = process.memoryUsage();
 const _𝔏𝔞𝔟_ = require(`../../𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/_𝔏𝔞𝔟_`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
@@ -14,8 +17,8 @@ var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 //•⬡• —••÷[ 𝓜𝖎𝖟𝖚ӄ𝖎™ ]÷••—  ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ has been licensed under Apache License
 `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
 module.exports = {
-  name: `uptime`,
-  description: `ᴄʜᴇᴄᴋ 𝓜𝖎𝖟𝖚ӄ𝖎 ᴜᴘᴛɪᴍᴇ`,
+  name: `mizuki`,
+  description: `ᴄʜᴇᴄᴋ 𝓜𝖎𝖟𝖚ӄ𝖎 system`,
   𝓜𝓮𝓮6ʍօʀɛ: `${ᴋᴇɪ}`,
   async handle(𝓚𝓻𝓪𝓴𝓲𝓷𝔃, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
     `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
@@ -31,7 +34,7 @@ module.exports = {
       await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
         .sendMessage(
           𝓜𝖎𝖟𝖚ӄ𝖎.logGroup,
-          `*(ᴄ) ❣️𝐌𝐢𝐳𝐮𝐤𝐢𝐁𝐨𝐭*
+          `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
 
 𝙐𝙥𝙙𝙖𝙩𝙚🤖𝙋𝙚𝙣𝙙𝙞𝙣𝙜
 *•𝘗𝘭𝘦𝘢𝘴𝘦 𝘜𝘱𝘥𝘢𝘵𝘦 𝘜𝘴𝘪𝘯𝘨 *${ᴋᴇɪ}update* 𝘰𝘳 𝘳𝘦𝘥𝘦𝘱𝘭𝘰𝘺 𝐌𝐢𝐳𝐮𝐤𝐢™!`,
@@ -44,7 +47,7 @@ module.exports = {
       await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
         .sendMessage(
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-          `*(ᴄ) ❣️𝐌𝐢𝐳𝐮𝐤𝐢𝐁𝐨𝐭*
+          `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
 
 *•@${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰}*,
 シ︎𝐆𝐫𝐨𝐮𝐩👓${_𝔏𝔞𝔟_.HASH}`,
@@ -59,21 +62,29 @@ module.exports = {
       return;
       `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
     } else {
-      var 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓 = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
-      var 𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰 = 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓.substring(0, 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓.length - 15);
-      const runtime = function (seconds) {
-        seconds = Number(seconds);
-        var d = Math.floor(seconds / (3600 * 24));
-        var h = Math.floor((seconds % (3600 * 24)) / 3600);
-        var m = Math.floor((seconds % 3600) / 60);
-        var s = Math.floor(seconds % 60);
-        var dDisplay = d > 0 ? d + (d == 1 ? ` day, ` : ` Day, `) : ``;
-        var hDisplay = h > 0 ? h + (h == 1 ? ` hour, ` : ` Hour, `) : ``;
-        var mDisplay = m > 0 ? m + (m == 1 ? ` minute, ` : ` Minute, `) : ``;
-        var sDisplay = s > 0 ? s + (s == 1 ? ` second` : ` Second`) : ``;
-        return dDisplay + hDisplay + mDisplay + sDisplay;
-      };
-      uptime = process.uptime();
+      let timestamp = speed();
+      let latensi = speed() - timestamp;
+      neww = performance.now();
+      oldd = performance.now();
+      respon = `
+Mizuki Response:
+${latensi.toFixed(4)}(s) | ${oldd - neww}(ms)
+
+Runtime : ${runtime(process.uptime())}
+
+💻 Info Server
+RAM: ${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}
+
+NodeJS Memory Usaage
+${Object.keys(used).map((key, _, arr) => `${key.padEnd(Math.max(...arr.map((v) => v.length)), " ")}: ${formatp(used[key])}`).join("\n")}
+
+${cpus[0] ? `Total CPU Usage
+${cpus[0].model.trim()} (${cpu.speed} MHZ)
+${Object.keys(cpu.times).map((type) => `- *${(type + "*").padEnd(6)}: ${((100 * cpu.times[type]) / cpu.total).toFixed(2)}%`).join("\n")}
+
+CPU Core(s) Usage (${cpus.length} Core CPU)
+${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)
+${Object.keys(cpu.times).map((type) => `- *${(type + "*").padEnd(6)}: ${((100 * cpu.times[type]) / cpu.total).toFixed(2)}%`).join("\n")}`).join("\n\n")}` : ""}`.trim();
       await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
         .sendMessage(
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
@@ -86,10 +97,11 @@ module.exports = {
             contextInfo: {
               mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
             },
-            caption: `*(ᴄ) ❣️𝐌𝐢𝐳𝐮𝐤𝐢𝐁𝐨𝐭*
+            caption: `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
 
-*•@${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰}*,  *This 𝐌𝐢𝐳𝐮𝐤𝐢's Is Running Since:*
-⚰️𝐔𝐩𝐓𝐢𝐦𝐞: ${runtime(process.uptime())}`,
+*•@${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰}*,  
+
+${respon}`,
           }
         )
         .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
