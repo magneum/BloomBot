@@ -2,13 +2,13 @@
     "logo": "https://i.postimg.cc/fW5DtrMQ/Mizuki-min.png",
     "name": "𝓜𝖎𝖟𝖚ӄ𝖎™",
     "repository": "https://github.com/Krakinz/Mizuki.git",
-    "stack": "heroku-20",
+    "stack": "container",
     "description": "ᴀᴅᴠᴀɴᴄᴇᴅ ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ 80+ ᴄᴏᴍᴍᴀɴᴅꜱ ꜰᴏʀ ʙᴏᴛʜ ᴘʀɪᴠᴀᴛᴇ ᴀɴᴅ ɢʀᴏᴜᴘ-ᴜꜱᴀɢᴇ",
     "env": {
         "MIZUKI": {
-            "description": "Put Your Mee6 Session Code.",
+            "description": "Put Your Mizuki Session Code.",
             "required": true,
-            "value": "get it from https://replit.com/@Krakinzkon/Mee6"
+            "value": "get it from https://replit.com/@Krakinzkon/Mizuki"
         },
         "HEROKU_API": {
             "description": "Put Your Heroku Api Code..",
