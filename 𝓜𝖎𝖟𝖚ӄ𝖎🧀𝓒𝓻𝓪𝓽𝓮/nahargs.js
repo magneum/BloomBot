@@ -56,7 +56,7 @@ exports.nahargs = async (
   context.fillText(text, 600, 170);
   context.fillStyle = "#fff";
   context.font = "bold 40pt TheHeartOfEverythingDemo";
-  context.fillText("(ᴄ)𝘔𝘪𝘻𝘶𝘬𝘪𝘉𝘰𝘵 𝘉𝘺 𝘒𝘳𝘢𝘬𝘪𝘯𝘻𝘓𝘢𝘣", 600, 530);
+  context.fillText("(c)Mizuki By KrakinzLab", 600, 530);
   loadImage("./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/爪𝖎𝖟𝖚ӄ𝖎Noargs.png").then(async () => {
     const buffer = canvas.toBuffer("image/png");
     fs.writeFileSync("./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/爪𝖎𝖟𝖚ӄ𝖎Noargs.png", buffer);
