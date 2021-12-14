@@ -11,7 +11,7 @@ exports.catch = async (error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ�
   var 𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰 = 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓.substring(0, 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓.length - 15);
   await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃.sendMessage(
     𝓜𝖎𝖟𝖚ӄ𝖎.logGroup,
-    `*(𝓒) 𝘔𝘪𝘻𝘶𝘬𝘪𝘉𝘰𝘵 𝘉𝘺 𝘒𝘳𝘢𝘬𝘪𝘯𝘻𝘓𝘢𝘣 •⬡•*
+    `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
 
 ⚠️𝗘𝗿𝗿𝗼𝗿⚠️
 ${error}
@@ -35,7 +35,7 @@ ${error}
       contextInfo: {
         mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓],
       },
-      caption: `*(𝓒) 𝘔𝘪𝘻𝘶𝘬𝘪𝘉𝘰𝘵 𝘉𝘺 𝘒𝘳𝘢𝘬𝘪𝘯𝘻𝘓𝘢𝘣 •⬡•*
+      caption: `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
 
 
 •@${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰}, Please try Again!
