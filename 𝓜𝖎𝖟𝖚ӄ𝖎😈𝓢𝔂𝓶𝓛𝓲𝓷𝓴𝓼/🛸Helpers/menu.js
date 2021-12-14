@@ -73,7 +73,7 @@ module.exports = {
 │
 │⚙️ *${ᴋᴇɪ}*help 
 │⚙️ *${ᴋᴇɪ}*ping
-│⚙️ *${ᴋᴇɪ}*mizuki
+│⚙️ *${ᴋᴇɪ}*mizukinfo
 │⚙️ *${ᴋᴇɪ}*update
 │⚙️ *${ᴋᴇɪ}*broadcast
 │⚙️ *${ᴋᴇɪ}*ban

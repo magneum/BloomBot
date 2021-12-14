@@ -60,8 +60,8 @@ module.exports = {
         type: 1,
       },
       {
-        buttonId: `${ᴋᴇɪ}mizuki`,
-        buttonText: { displayText: `${ᴋᴇɪ}mizuki` },
+        buttonId: `${ᴋᴇɪ}mizukinfo`,
+        buttonText: { displayText: `${ᴋᴇɪ}mizukinfo` },
         type: 1,
       },
       // {
