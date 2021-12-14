@@ -114,7 +114,7 @@ module.exports = {
               caption: text,
             })
             .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
-          fs.unlinkSync(filename);
+          await fs.unlinkSync(filename);
         });
       };
       `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;

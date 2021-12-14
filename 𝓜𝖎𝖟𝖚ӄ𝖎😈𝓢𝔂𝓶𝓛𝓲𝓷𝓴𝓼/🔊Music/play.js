@@ -12,7 +12,7 @@ var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 const fn = Date.now() / 10000;
 const request = require("request");
-const filename = `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/ytvideo_${fn.toString()}`;
+const filename = `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/play_${fn.toString()}`;
 const axios = require(`axios`);
 const fs = require(`fs`);
 let mime = ``;
@@ -115,7 +115,7 @@ module.exports = {
               caption: text,
             })
             .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
-          fs.unlinkSync(filename);
+            await fs.unlinkSync(filename);
         });
       };
       `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
