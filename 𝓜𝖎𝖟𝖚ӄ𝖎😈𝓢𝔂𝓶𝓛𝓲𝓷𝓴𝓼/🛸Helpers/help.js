@@ -23,9 +23,9 @@ module.exports = {
   𝓜𝓮𝓮6ʍօʀɛ: `${ᴋᴇɪ}`,
   async handle(𝓚𝓻𝓪𝓴𝓲𝓷𝔃, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
     ("⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡");
-    await 爪𝖎𝖟𝖚ӄ𝖎git.fetch();
-    var 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓 = 爪𝖎𝖟𝖚ӄ𝖎.sender;
-    var ɴᴇᴡ爪𝖎𝖟𝖚ӄ𝖎 = await 爪𝖎𝖟𝖚ӄ𝖎git.log(["KrakinzLab..origin/KrakinzLab"]);
+    await 𝓜𝖎𝖟𝖚ӄ𝖎𝔊𝔦𝔱.fetch();
+    var 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓 = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
+    var ɴᴇᴡ𝓜𝖎𝖟𝖚ӄ𝖎 = await 𝓜𝖎𝖟𝖚ӄ𝖎𝔊𝔦𝔱.log(["KrakinzLab..origin/KrakinzLab"]);
     𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰 = 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓.substring(0, 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓.length - 15);
     ("⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡");
     const runtime = function (seconds) {
@@ -44,9 +44,9 @@ module.exports = {
     timestampe = speed();
     latensie = speed() - timestampe;
     ("⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡");
-    let content = fs.readFileSync("./𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/爪𝖎𝖟𝖚ӄ𝖎.jpg");
+    let content = fs.readFileSync("./𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/𝓜𝖎𝖟𝖚ӄ𝖎.jpg");
     const media = await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃.prepareMessage(
-      爪𝖎𝖟𝖚ӄ𝖎.chatId,
+      𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
       content,
       MessageType.image
     );
@@ -90,7 +90,7 @@ module.exports = {
       imageMessage: media.message.imageMessage,
     };
     await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃.sendMessage(
-      爪𝖎𝖟𝖚ӄ𝖎.chatId,
+      𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
       buttonMessage,
       MessageType.buttonsMessage,
       { quoted: chat, contextInfo: { mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓] } }

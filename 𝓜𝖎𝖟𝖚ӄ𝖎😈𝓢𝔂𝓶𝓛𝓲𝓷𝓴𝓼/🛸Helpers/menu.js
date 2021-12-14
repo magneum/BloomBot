@@ -11,7 +11,7 @@ const os = require("os");
 const vers = require(`../../package.json`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, "g");
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
-const 爪𝖎𝖟𝖚ӄ𝖎git = require("simple-git")();
+const 𝓜𝖎𝖟𝖚ӄ𝖎𝔊𝔦𝔱 = require("simple-git")();
 ("⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡");
 //•⬡• ɢɴᴜ ɢᴇɴᴇʀᴀʟ ᴘᴜʙʟɪᴄ ʟɪᴄᴇɴꜱᴇ ᴠᴇʀꜱɪᴏɴ 3, 29 ᴊᴜɴᴇ 2007 ᴄᴏᴘʏʀɪɢʜᴛ (ᴄ) 2007 ꜰʀᴇᴇ ꜱᴏꜰᴛᴡᴀʀᴇ ꜰᴏᴜɴᴅᴀᴛɪᴏɴ
 //•⬡• ᴇᴠᴇʀʏᴏɴᴇ ɪꜱ ᴘᴇʀᴍɪᴛᴛᴇᴅ ᴛᴏ 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 ᴠᴇʀʙᴀᴛɪᴍ ᴄᴏᴘɪᴇꜱ ᴏꜰ ᴛʜɪꜱ ʟɪᴄᴇɴꜱᴇ ᴅᴏᴄᴜᴍᴇɴᴛ, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
@@ -23,15 +23,15 @@ module.exports = {
   𝓜𝓮𝓮6ʍօʀɛ: `${ᴋᴇɪ}`,
   async handle(𝓚𝓻𝓪𝓴𝓲𝓷𝔃, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
     ("⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡");
-    await 爪𝖎𝖟𝖚ӄ𝖎git.fetch();
-    var 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓 = 爪𝖎𝖟𝖚ӄ𝖎.sender;
-    var ɴᴇᴡ爪𝖎𝖟𝖚ӄ𝖎 = await 爪𝖎𝖟𝖚ӄ𝖎git.log(["KrakinzLab..origin/KrakinzLab"]);
+    await 𝓜𝖎𝖟𝖚ӄ𝖎𝔊𝔦𝔱.fetch();
+    var 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓 = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
+    var ɴᴇᴡ𝓜𝖎𝖟𝖚ӄ𝖎 = await 𝓜𝖎𝖟𝖚ӄ𝖎𝔊𝔦𝔱.log(["KrakinzLab..origin/KrakinzLab"]);
     𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰 = 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓.substring(0, 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓.length - 15);
     ("⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡");
-    if (ɴᴇᴡ爪𝖎𝖟𝖚ӄ𝖎.total != 0) {
+    if (ɴᴇᴡ𝓜𝖎𝖟𝖚ӄ𝖎.total != 0) {
       await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
         .sendMessage(
-          爪𝖎𝖟𝖚ӄ𝖎.logGroup,
+          𝓜𝖎𝖟𝖚ӄ𝖎.logGroup,
           `*©️𝘔𝘪𝘻𝘶𝘬𝘪𝘉𝘰𝘵 𝘉𝘺 𝘒𝘳𝘢𝘬𝘪𝘯𝘻𝘓𝘢𝘣 •••⬡*
 
 𝙐𝙥𝙙𝙖𝙩𝙚🤖𝙋𝙚𝙣𝙙𝙞𝙣𝙜
@@ -39,13 +39,13 @@ module.exports = {
           MessageType.text,
           { quoted: chat }
         )
-        .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 爪𝖎𝖟𝖚ӄ𝖎));
+        .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
     }
     ("⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡");
-    if (爪𝖎𝖟𝖚ӄ𝖎.chatId === "120363025343298860@g.us" && !爪𝖎𝖟𝖚ӄ𝖎.isSenderSUDO) {
+    if (𝓜𝖎𝖟𝖚ӄ𝖎.chatId === "120363025343298860@g.us" && !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderSUDO) {
       await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
         .sendMessage(
-          爪𝖎𝖟𝖚ӄ𝖎.chatId,
+          𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
           `*©️𝘔𝘪𝘻𝘶𝘬𝘪𝘉𝘰𝘵 𝘉𝘺 𝘒𝘳𝘢𝘬𝘪𝘯𝘻𝘓𝘢𝘣 •••⬡*
 
 *•@${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰}*,
@@ -54,24 +54,23 @@ module.exports = {
           {
             quoted: chat,
             contextInfo: {
-              mentionedJid: [爪𝖎𝖟𝖚ӄ𝖎.sender],
+              mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
             },
           }
         )
-        .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 爪𝖎𝖟𝖚ӄ𝖎));
+        .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
       return;
       ("⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡");
     } else {
-      var 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓 = 爪𝖎𝖟𝖚ӄ𝖎.sender;
+      var 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓 = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
       var 𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰 = 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓.substring(0, 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓.length - 15);
       const MeeHelper = `*𝘽𝙊𝙏 𝙄𝙉 𝘽𝙀𝙏𝘼*
 シ︎🛸𝐆𝐫𝐨𝐮𝐩: ${_𝔏𝔞𝔟_.HASH}
 
 ⬣ *🛸➾  𝙎𝙮𝙨𝙩𝙚𝙢*
 • *${ᴋᴇɪ}help*  ɢᴇᴛ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅ ʟɪꜱᴛ ᴀɴᴅ ɪɴꜰᴏ ᴏɴ ᴍᴏᴅᴜʟᴇꜱ
-• *${ᴋᴇɪ}ping*  ᴄʜᴇᴄᴋ 爪𝖎𝖟𝖚ӄ𝖎 ʀᴇꜱᴘᴏɴꜱᴇ ᴛɪᴍᴇ
-• *${ᴋᴇɪ}uptime*  ᴄʜᴇᴄᴋ 爪𝖎𝖟𝖚ӄ𝖎 ᴜᴘᴛɪᴍᴇ
-• *${ᴋᴇɪ}restart* ᴛʜɪꜱ ᴄᴏᴍᴍᴀɴᴅ ᴄᴀɴ ʙᴇ ᴜꜱᴇᴅ ᴛᴏ restart ᴛʜᴇ ʙᴏᴛ
+• *${ᴋᴇɪ}ping*  ᴄʜᴇᴄᴋ 𝓜𝖎𝖟𝖚ӄ𝖎 ʀᴇꜱᴘᴏɴꜱᴇ ᴛɪᴍᴇ
+• *${ᴋᴇɪ}uptime*  ᴄʜᴇᴄᴋ 𝓜𝖎𝖟𝖚ӄ𝖎 ᴜᴘᴛɪᴍᴇ
 • *${ᴋᴇɪ}update*  ᴛʜɪꜱ ᴄᴏᴍᴍᴀɴᴅ ᴄᴀɴ ʙᴇ ᴜꜱᴇᴅ ᴛᴏ ᴜᴘᴅᴀᴛᴇ ᴛʜᴇ ʙᴏᴛ
 • *${ᴋᴇɪ}broadcast* ꜱᴇɴᴅ ʙʀᴏᴀᴅᴄᴀꜱᴛ ᴍᴇꜱꜱᴀɢᴇꜱ ᴛᴏ ᴀʟʟ ɢʀᴏᴜᴘꜱ/ᴅᴍꜱ ʏᴏᴜ ᴀʀᴇ ɪɴ
 
@@ -198,7 +197,7 @@ many many more!
         latensie = speed() - timestampe;
         await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
           .sendMessage(
-            爪𝖎𝖟𝖚ӄ𝖎.chatId,
+            𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
             {
               url: _𝔏𝔞𝔟_.MEE,
             },
@@ -206,7 +205,7 @@ many many more!
             {
               mimetype: Mimetype.png,
               contextInfo: {
-                mentionedJid: [爪𝖎𝖟𝖚ӄ𝖎.sender],
+                mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
               },
               caption: `*©️𝘔𝘪𝘻𝘶𝘬𝘪𝘉𝘰𝘵 𝘉𝘺 𝘒𝘳𝘢𝘬𝘪𝘯𝘻𝘓𝘢𝘣 •••⬡*
 
@@ -220,12 +219,12 @@ many many more!
 ${MeeHelper}‍`,
             }
           )
-          .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 爪𝖎𝖟𝖚ӄ𝖎));
+          .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
       }
-      var 爪𝖎𝖟𝖚ӄ𝖎ʍօ = "⤥ 💡𝐂𝐨𝐦𝐦𝐚𝐧𝐝\n";
+      var 𝓜𝖎𝖟𝖚ӄ𝖎ʍօ = "⤥ 💡𝐂𝐨𝐦𝐦𝐚𝐧𝐝\n";
       var command = 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹.get(arg[0]);
       if (command) {
-        爪𝖎𝖟𝖚ӄ𝖎ʍօ += `⤤ ${
+        𝓜𝖎𝖟𝖚ӄ𝖎ʍօ += `⤤ ${
           (ᴋᴇɪ, command.name === undefined ? "Null" : command.name)
         }
 
@@ -236,17 +235,17 @@ ${MeeHelper}‍`,
         }`;
         return 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
           .sendMessage(
-            爪𝖎𝖟𝖚ӄ𝖎.chatId,
+            𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
             {
               url: _𝔏𝔞𝔟_.MEE,
             },
             MessageType.image,
             {
               mimetype: Mimetype.png,
-              caption: 爪𝖎𝖟𝖚ӄ𝖎ʍօ,
+              caption: 𝓜𝖎𝖟𝖚ӄ𝖎ʍօ,
             }
           )
-          .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 爪𝖎𝖟𝖚ӄ𝖎));
+          .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
       }
     }
   },
