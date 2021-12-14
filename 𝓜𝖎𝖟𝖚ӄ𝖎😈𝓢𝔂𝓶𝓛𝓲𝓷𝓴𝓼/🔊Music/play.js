@@ -6,7 +6,7 @@
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const _𝔏𝔞𝔟_ = require(`../../𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/_𝔏𝔞𝔟_`);
 const ℓιєηт = require(`../../𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/catch`);
-const { ytv } = require(`../../𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/youmaker`);
+const { yta } = require(`../../𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/youmaker`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 const fn = Date.now() / 10000;
@@ -21,9 +21,9 @@ let mime = ``;
 //•⬡• —••÷[ 𝓜𝖎𝖟𝖚ӄ𝖎™ ]÷••—  ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ has been licensed under Apache License
 `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
 module.exports = {
-  name: `ytvideo`,
+  name: `play`,
   description: `ᴅᴏᴡɴʟᴏᴀᴅ ᴀɴʏ ʏᴏᴜᴛᴜʙᴇ ᴠɪᴅᴇᴏ ᴜɴᴅᴇʀ 50ᴍʙ ꜱɪᴢᴇ.`,
-  𝓜𝓮𝓮6ʍօʀɛ: `${ᴋᴇɪ}ytvideo <link>`,
+  𝓜𝓮𝓮6ʍօʀɛ: `${ᴋᴇɪ}play <link>`,
   async handle(𝓚𝓻𝓪𝓴𝓲𝓷𝔃, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
     `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
     const 𝓜𝖎𝖟𝖚ӄ𝖎𝔊𝔦𝔱 = require(`simple-git`)();
@@ -158,43 +158,45 @@ You Can Get URL by using ${ᴋᴇɪ}yts <song-name>`,
           });
       }
       `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
-      ytv(arg[0]).then((res) => {
+      var srch = arg.join(" ");
+      aramas = await yts(srch);
+      aramat = aramas.all;
+      var mulaikah = aramat[0].url;
+      yta(mulaikah).then((res) => {
         const { dl_link, thumb, title, filesizeF, filesize } = res;
         axios
           .get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
-          .then((a) => {
-            if (Number(filesize) >= 9999999) {
+          .then(async (a) => {
+            if (Number(filesize) >= 100000)
               return sendMediaURL(
                 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓,
                 thumb,
                 `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
 
 _Please Choose Smaller File. Max Limit (100mb)_
-*Title*:  ${title}
-*Filesize*:  ${filesizeF}`
+*Title* : ${title}
+*Filesize* : ${filesizeF}
+*Link* : ${a.data}
+
+_For the duration of more than the limit is presented in the form of a link_`
               );
-            } else {
-              sendMediaURL(
-                𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓,
-                thumb,
-                `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
+            const captions = `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
 
 _Please wait for the media file to be sent it may take a few minutes_
-*Title*:  ${title}
-*Link*:  ${a.data}
-*Size*:  ${filesizeF}`
-              );
-              sendMediaURL(
-                𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓,
-                dl_link,
-                `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
+*Title* : ${title}
+*Size* : ${filesizeF}
+*Link* : ${a.data}`;
+            await sendMediaURL(𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓, thumb, captions);
+            sendMediaURL(
+              𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓,
+              dl_link,
+              `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
 
 
-*Title*:  ${title}
-*Link*:  ${a.data}
-*Size*:  ${filesizeF}`
-              ).catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
-            }
+*Title* : ${title}
+*Size* : ${filesizeF}
+*Link* : ${a.data}`
+            ).catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
           });
       });
     }
