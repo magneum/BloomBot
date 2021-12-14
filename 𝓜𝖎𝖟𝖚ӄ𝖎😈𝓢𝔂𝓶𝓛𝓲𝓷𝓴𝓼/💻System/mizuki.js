@@ -8,16 +8,22 @@ const ℓιєηт = require(`../../𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽�
 const speed = require("performance-now");
 const { performance } = require("perf_hooks");
 const used = process.memoryUsage();
+const vers = require(`../../package.json`);
 const _𝔏𝔞𝔟_ = require(`../../𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/_𝔏𝔞𝔟_`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
+const os = require("os");
+const {
+  formatp,
+  runtime,
+} = require(`../../𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/mizu`);
 `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
 //•⬡• ɢɴᴜ ɢᴇɴᴇʀᴀʟ ᴘᴜʙʟɪᴄ ʟɪᴄᴇɴꜱᴇ ᴠᴇʀꜱɪᴏɴ 3, 29 ᴊᴜɴᴇ 2007 ᴄᴏᴘʏʀɪɢʜᴛ (ᴄ) 2007 ꜰʀᴇᴇ ꜱᴏꜰᴛᴡᴀʀᴇ ꜰᴏᴜɴᴅᴀᴛɪᴏɴ
 //•⬡• ᴇᴠᴇʀʏᴏɴᴇ ɪꜱ ᴘᴇʀᴍɪᴛᴛᴇᴅ ᴛᴏ 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 ᴠᴇʀʙᴀᴛɪᴍ ᴄᴏᴘɪᴇꜱ ᴏꜰ ᴛʜɪꜱ ʟɪᴄᴇɴꜱᴇ ᴅᴏᴄᴜᴍᴇɴᴛ, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
 //•⬡• —••÷[ 𝓜𝖎𝖟𝖚ӄ𝖎™ ]÷••—  ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ has been licensed under Apache License
 `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
 module.exports = {
-  name: `mizukinfo`,
+  name: `mizuki`,
   description: `ᴄʜᴇᴄᴋ 𝓜𝖎𝖟𝖚ӄ𝖎 system`,
   𝓜𝓮𝓮6ʍօʀɛ: `${ᴋᴇɪ}`,
   async handle(𝓚𝓻𝓪𝓴𝓲𝓷𝔃, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
@@ -62,28 +68,62 @@ module.exports = {
       return;
       `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
     } else {
+      const used = process.memoryUsage();
+      const cpus = os.cpus().map((cpu) => {
+        cpu.total = Object.keys(cpu.times).reduce(
+          (last, type) => last + cpu.times[type],
+          0
+        );
+        return cpu;
+      });
+      const cpu = cpus.reduce(
+        (last, cpu, _, { length }) => {
+          last.total += cpu.total;
+          last.speed += cpu.speed / length;
+          last.times.user += cpu.times.user;
+          last.times.nice += cpu.times.nice;
+          last.times.sys += cpu.times.sys;
+          last.times.idle += cpu.times.idle;
+          last.times.irq += cpu.times.irq;
+          return last;
+        },
+        {
+          speed: 0,
+          total: 0,
+          times: {
+            user: 0,
+            nice: 0,
+            sys: 0,
+            idle: 0,
+            irq: 0,
+          },
+        }
+      );
       let timestamp = speed();
       let latensi = speed() - timestamp;
       neww = performance.now();
       oldd = performance.now();
       respon = `
-Mizuki Response:
-${latensi.toFixed(4)}(s) | ${oldd - neww}(ms)
+┌──⭓ 𝐒𝐲𝐦𝐥𝐢𝐧𝐤 𝐈𝐧𝐟𝐨𝐬
+│    
+│シ︎💡ᴘʀᴇꜰɪx: ${ᴋᴇɪ}
+│シ︎⚙️ᴇɴɢɪɴᴇ: ${vers.vers}
+│シ︎💻ᴘʟᴀᴛꜰᴏʀᴍ: ${os.platform()}
+│シ︎🛰️ʟᴀᴛᴇɴᴄʏ: ${latensi.toFixed(4)}(s) │ ${oldd - neww}(ms)
+│シ︎☕ᴜᴘᴛɪᴍᴇ: ${runtime(process.uptime())}
+│シ︎🎮ʀᴀᴍ: ${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}
+│
+└───────⭓
 
-Runtime : ${runtime(process.uptime())}
-
-💻 Info Server
-RAM: ${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}
-
-NodeJS Memory Usaage
-${Object.keys(used).map((key, _, arr) => `${key.padEnd(Math.max(...arr.map((v) => v.length)), " ")}: ${formatp(used[key])}`).join("\n")}
-
-${cpus[0] ? `Total CPU Usage
-${cpus[0].model.trim()} (${cpu.speed} MHZ)
+⭓───────⭓ 𝐍𝐨𝐝𝐞𝐉𝐒 𝐌𝐞𝐦-𝐔𝐬𝐚𝐠𝐞:
+${Object.keys(used).map((key, _, arr) => `${key.padEnd(Math.max(...arr.map((v) => v.length)), " ")}: ${formatp(used[key])}`).join("\n│")}
+${cpus[0] ? `*Total CPU Usage*
+${cpus[0].model.trim()} (${cpu.speed} ᴍʜᴢ)
 ${Object.keys(cpu.times).map((type) => `- *${(type + "*").padEnd(6)}: ${((100 * cpu.times[type]) / cpu.total).toFixed(2)}%`).join("\n")}
 
-CPU Core(s) Usage (${cpus.length} Core CPU)
-${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)
+
+⭓───────⭓ 𝐂𝐏𝐔 𝐂𝐨𝐫𝐞(𝐬) 𝐔𝐬𝐚𝐠𝐞 (_${cpus.length}_ 𝐂𝐨𝐫𝐞 𝐂𝐏𝐔)
+${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} ᴍʜᴢ)
 ${Object.keys(cpu.times).map((type) => `- *${(type + "*").padEnd(6)}: ${((100 * cpu.times[type]) / cpu.total).toFixed(2)}%`).join("\n")}`).join("\n\n")}` : ""}`.trim();
       await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
         .sendMessage(
@@ -99,9 +139,11 @@ ${Object.keys(cpu.times).map((type) => `- *${(type + "*").padEnd(6)}: ${((100 * 
             },
             caption: `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
 
-*•@${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰}*,  
+*Hey •@${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰}*,  
 
-${respon}`,
+*⬡----⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿----⬡*
+${respon}
+*⬡----⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿----⬡*`,
           }
         )
         .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));

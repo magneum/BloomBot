@@ -33,6 +33,7 @@
         "google-tts-api": "^2.0.2",
         "got": "^11.8.2",
         "heroku-client": "^3.1.0",
+        "human-readable": "^0.2.1",
         "i": "^0.3.7",
         "image-search": "^0.0.1",
         "imdb-api": "^4.4.1",
