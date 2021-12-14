@@ -107,22 +107,20 @@ module.exports = {
         return;
       }
       const c = arg.join(` `);
-      𝓚𝓻𝓪𝓴𝓲𝓷𝔃
-        .sendMessage(
-          𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-          {
-            url: `https://i.postimg.cc/D0N0BK4y/yts.png`,
-          },
-          MessageType.image,
-          {
-            quoted: chat,
-            mimetype: Mimetype.png,
-            caption:
-              `ᴛʜᴇꜱᴇ ᴀʀᴇ ᴛʜᴇ *ꜰɪʀꜱᴛ-5* ᴍᴏꜱᴛ ᴍᴀᴛᴄʜɪɴɢ ꜱᴇᴀʀᴄʜ ʀᴇꜱᴜʟᴛꜱ ꜰᴏʀ:
+      𝓚𝓻𝓪𝓴𝓲𝓷𝔃.sendMessage(
+        𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+        {
+          url: `https://i.postimg.cc/D0N0BK4y/yts.png`,
+        },
+        MessageType.image,
+        {
+          quoted: chat,
+          mimetype: Mimetype.png,
+          caption:
+            `ᴛʜᴇꜱᴇ ᴀʀᴇ ᴛʜᴇ *ꜰɪʀꜱᴛ-5* ᴍᴏꜱᴛ ᴍᴀᴛᴄʜɪɴɢ ꜱᴇᴀʀᴄʜ ʀᴇꜱᴜʟᴛꜱ ꜰᴏʀ:
 *🔎: ${c.toUpperCase()}*\n\n` + Fetched,
-          }
-        )
-        .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+        }
+      );
     }
   },
 };

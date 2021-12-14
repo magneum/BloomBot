@@ -109,15 +109,13 @@ module.exports = {
           if (mime.split(`/`)[0] === `audio`) {
             mime = Mimetype.mp4Audio;
           }
-          𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+          await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
             .sendMessage(to, media, type, {
-              quoted: chat,
               mimetype: mime,
               caption: text,
-              contextInfo: { mentionedJid: mids },
             })
             .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
-          await fs.unlinkSync(filename);
+          fs.unlinkSync(filename);
         });
       };
       `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
@@ -185,7 +183,6 @@ _For the duration of more than the limit is presented in the form of a link_`
 
 _Please wait for the media file to be sent it may take a few minutes_
 *Title* : ${title}
-*Size* : ${filesizeF}
 *Link* : ${a.data}`;
             await sendMediaURL(𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓, thumb, captions);
             sendMediaURL(
@@ -195,9 +192,8 @@ _Please wait for the media file to be sent it may take a few minutes_
 
 
 *Title* : ${title}
-*Size* : ${filesizeF}
 *Link* : ${a.data}`
-            ).catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+            );
           });
       });
     }
