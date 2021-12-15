@@ -110,7 +110,7 @@ module.exports = {
       𝓚𝓻𝓪𝓴𝓲𝓷𝔃.sendMessage(
         𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
         {
-          url: `https://i.postimg.cc/D0N0BK4y/yts.png`,
+          url: _𝔏𝔞𝔟_.MEE,
         },
         MessageType.image,
         {
