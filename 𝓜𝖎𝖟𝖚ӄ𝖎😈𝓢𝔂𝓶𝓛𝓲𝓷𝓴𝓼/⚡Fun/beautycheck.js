@@ -288,7 +288,6 @@ module.exports = {
           context.font = `bold 120pt Housttely`;
           context.textAlign = `center`;
           context.textBaseline = `top`;
-          // context.fillStyle = randomMC.getColor();
           const text = `Beauty Checker`;
           const textWidth = context.measureText(text).width;
           context.fillRect(
@@ -338,7 +337,6 @@ Asked By? @${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰}
           context.font = `bold 120pt Housttely`;
           context.textAlign = `center`;
           context.textBaseline = `top`;
-          // context.fillStyle = randomMC.getColor();
           const text = `Beauty Checker`;
           const textWidth = context.measureText(text).width;
           context.fillRect(
