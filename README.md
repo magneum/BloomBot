@@ -13,10 +13,10 @@
 💻 𝗪𝗵𝗮𝘁 𝗖𝗮𝗻 𝗕𝗼𝘁 𝗗𝗼???
 
 🎮ᴍɪᴢᴜᴋɪ
-🔸 ᴀᴅᴠᴀɴᴄᴇᴅ ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ 80+ ᴄᴏᴍᴍᴀɴᴅꜱ ꜰᴏʀ ʙᴏᴛʜ ᴘʀɪᴠᴀᴛᴇ ᴀɴᴅ ɢʀᴏᴜᴘ-ᴜꜱᴀɢᴇ
-🔸 ᴍɪᴢᴜᴋɪ is written in JavaScript and is by far the most advance Whatsapp Userbot.
 🔸 Use ᴍɪᴢᴜᴋɪ in both public-groups and private
 🔸 So many commands that will blow up the every-day use of boring whatsapp.
+🔸 ᴀᴅᴠᴀɴᴄᴇᴅ ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ 80+ ᴄᴏᴍᴍᴀɴᴅꜱ ꜰᴏʀ ʙᴏᴛʜ ᴘʀɪᴠᴀᴛᴇ ᴀɴᴅ ɢʀᴏᴜᴘ-ᴜꜱᴀɢᴇ
+🔸 ᴍɪᴢᴜᴋɪ is written in JavaScript and is by far the most advance Whatsapp Userbot.
 ```
 
 # ⚡ 𝕯𝖊𝖕𝖑𝖔𝖞𝖒𝖊𝖓𝖙
@@ -32,7 +32,6 @@
 ```
 )¤•• ʙᴀɪʟᴇʏꜱ ᴡʜᴀᴛꜱᴀᴘᴘ ʟɪʙʀᴀʀʏ [https://github.com/adiwajshing/Baileys]
 )¤•• ᴡʜᴀᴛꜱᴀᴘᴘ ᴡᴇʙ ᴀᴘɪ [https://github.com/pedroslopez/whatsapp-web.js/]
-)¤•• ᴘʀɪɴᴄᴇ-ᴍᴇɴᴅɪʀᴀᴛᴛᴀ ꜱᴄ [https://github.com/BotsAppOfficial/BotsApp]
 )¤•• ᴛᴇʟᴇɢʀᴀᴍ,ᴅɪꜱᴄᴏʀᴅ ʙᴏᴛꜱ ᴏꜰ ᴍʏ ᴏᴡɴ ʟᴍᴀᴏ
 ```
 

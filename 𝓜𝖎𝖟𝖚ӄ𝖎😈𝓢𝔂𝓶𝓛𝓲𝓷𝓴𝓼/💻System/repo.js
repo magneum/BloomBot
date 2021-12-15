@@ -70,10 +70,26 @@ module.exports = {
                 mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
               },
               caption: `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
+*ʏᴏᴜʀ ᴀꜱꜱɪꜱꜱᴛᴀɴᴛ ꜰᴏʀ ᴍᴀᴋɪɴɢ ʙᴏʀɪɴɢ ᴡʜᴀᴛꜱᴀᴘᴘ ᴀ ʙᴇᴛᴛᴇʀ ᴀᴅᴠᴀɴᴄᴇ ᴀᴘᴘ!*
 
-𝗔𝗵𝗺 •@${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰},  
-⧪➛ 𝗥𝗲𝗽𝗼𝘀𝗶𝘁𝗼𝗿𝘆: https://github.com/Krakinz/Mizuki
-シ︎🛸𝐆𝐫𝐨𝐮𝐩: ${_𝔏𝔞𝔟_.HASH}`,
+
+┌────⭓𝗔𝗵𝗺 •@${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰},  
+│⧪ 𝗥𝗲𝗽𝗼𝘀𝗶𝘁𝗼𝗿𝘆: https://github.com/Krakinz/Mizuki
+│⧪ 𝐆𝐫𝐨𝐮𝐩: ${_𝔏𝔞𝔟_.HASH}
+└───────────⭓
+
+┌────⭓❓ 𝖂𝖍𝖞 𝕸𝖆𝖉𝖊 𝕿𝖍𝖎𝖘 𝕭𝖔𝖙?
+│🔸 Use ᴍɪᴢᴜᴋɪ in both public-groups and private
+│🔸 So many commands that will blow up the every-day use of boring whatsapp.
+│🔸 ᴀᴅᴠᴀɴᴄᴇᴅ ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ 80+ ᴄᴏᴍᴍᴀɴᴅꜱ ꜰᴏʀ ʙᴏᴛʜ ᴘʀɪᴠᴀᴛᴇ ᴀɴᴅ ɢʀᴏᴜᴘ-ᴜꜱᴀɢᴇ
+│🔸 ᴍɪᴢᴜᴋɪ is written in JavaScript and is by far the most advance Whatsapp Userbot.
+└───────────⭓
+
+┌────⭓💡 𝕴𝖓𝖘𝖕𝖎𝖗𝖆𝖙𝖎𝖔𝖓
+│🔸 ʙᴀɪʟᴇʏꜱ ᴡʜᴀᴛꜱᴀᴘᴘ ʟɪʙʀᴀʀʏ [https://github.com/adiwajshing/Baileys]
+│🔸 ᴡʜᴀᴛꜱᴀᴘᴘ ᴡᴇʙ ᴀᴘɪ [https://github.com/pedroslopez/whatsapp-web.js/]
+│🔸 ᴛᴇʟᴇɢʀᴀᴍ,ᴅɪꜱᴄᴏʀᴅ ʙᴏᴛꜱ ᴏꜰ ᴍʏ ᴏᴡɴ ʟᴍᴀᴏ
+└───────────⭓`,
             }
           )
           .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
