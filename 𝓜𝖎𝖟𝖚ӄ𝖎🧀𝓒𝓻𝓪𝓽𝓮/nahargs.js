@@ -31,7 +31,7 @@ registerFont(`./𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/TheHeartOfEveryth
 var randomMC = require(`random-material-color`);
 exports.nahargs = async (
   𝓚𝓻𝓪𝓴𝓲𝓷𝔃,
-  chat,
+  ʟคɮ,
   𝓜𝖎𝖟𝖚ӄ𝖎,
   𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓,
   𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰,
@@ -67,7 +67,7 @@ exports.nahargs = async (
       },
       MessageType.image,
       {
-        quoted: chat,
+        quoted: ʟคɮ,
         mimetype: Mimetype.png,
         contextInfo: { mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓] },
         caption: `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_

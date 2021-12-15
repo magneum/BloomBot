@@ -342,13 +342,13 @@ ${update.desc}`,
               .sendMessage(
                 GroupID,
                 {
-                  contentText: `          @${personcum}
+                  contentText: `@${personcum}
 ${weltext}
 ┌───────────⭓ 
 │⬘𝗕𝗶𝗼: ${GroupMemBio.status}
 │⬘𝗠𝗲𝗺𝗯𝗲𝗿𝘀: ${GroupMemG}
 │⬘𝗚𝗿𝗼𝘂𝗽: ${GroupMemData.subject}
-│⬘𝗜𝗻𝘃𝗶𝘁𝗲: ${`https://chat.whatsapp.com/` + code}
+│⬘𝗜𝗻𝘃𝗶𝘁𝗲: ${`https://ʟคɮ.whatsapp.com/` + code}
 └───────────⭓
 ${Fetched.message}`,
                   footerText: `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_`,
@@ -369,40 +369,13 @@ ${Fetched.message}`,
                 },
                 MessageType.buttonsMessage,
                 {
-                  quoted: chat,
+                  quoted: ʟคɮ,
                   contextInfo: { mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓] },
-                }
-              )
-              .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
-            return await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
-              .sendMessage(
-                GroupID,
-                {
-                  url: `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/𝕻𝕻𝖑𝖊𝖙𝖊𝖗.jpg`,
-                },
-                MessageType.image,
-                {
-                  mimetype: Mimetype.png,
-                  contextInfo: {
-                    mentionedJid: [MemNum],
-                  },
-                  caption: `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
-
-@${personcum}
-${weltext}
-┌───────────⭓ 
-│⬘𝗕𝗶𝗼: ${GroupMemBio.status}
-│⬘𝗠𝗲𝗺𝗯𝗲𝗿𝘀: ${GroupMemG}
-│⬘𝗚𝗿𝗼𝘂𝗽: ${GroupMemData.subject}
-│⬘𝗜𝗻𝘃𝗶𝘁𝗲: ${`https://chat.whatsapp.com/` + code}
-└───────────⭓
-${Fetched.message}`,
                 }
               )
               .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
           }
         );
-        return;
       } else if (update.action === `remove`) {
         var enable = await ɠɠ𝓜𝖎𝖟𝖚ӄ𝖎.checkSettings(GroupID, `setgoodbye`);
         if (enable === false || enable === `OFF`) {
@@ -470,19 +443,19 @@ ${ꜰᴇᴛᴄʜᴇᴅʙʏᴇ.message}`,
   //•⬡• ᴇᴠᴇʀʏᴏɴᴇ ɪꜱ ᴘᴇʀᴍɪᴛᴛᴇᴅ ᴛᴏ 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 ᴠᴇʀʙᴀᴛɪᴍ ᴄᴏᴘɪᴇꜱ ᴏꜰ ᴛʜɪꜱ ʟɪᴄᴇɴꜱᴇ ᴅᴏᴄᴜᴍᴇɴᴛ, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
   //•⬡• —••÷[ 𝓜𝖎𝖟𝖚ӄ𝖎™ ]÷••—  ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ has been licensed under Apache License
   `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
-  𝓚𝓻𝓪𝓴𝓲𝓷𝔃.on(`chat-update`, async (chat) => {
-    if (!chat.hasNewMessage) {
+  𝓚𝓻𝓪𝓴𝓲𝓷𝔃.on(`ʟคɮ-update`, async (ʟคɮ) => {
+    if (!ʟคɮ.hasNewMessage) {
       return;
     }
-    if (!chat.messages) {
+    if (!ʟคɮ.messages) {
       return;
     }
-    chat = chat.messages.all()[0];
-    var sender = chat.key.remoteJid;
+    ʟคɮ = ʟคɮ.messages.all()[0];
+    var sender = ʟคɮ.key.remoteJid;
     const groupMetadata = sender.endsWith(`@g.us`)
       ? await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃.groupMetadata(sender)
       : ``;
-    var 𝓜𝖎𝖟𝖚ӄ𝖎 = 𝓜𝖎𝖟𝖚ӄ𝖎ǟքք.resolve(chat, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, groupMetadata);
+    var 𝓜𝖎𝖟𝖚ӄ𝖎 = 𝓜𝖎𝖟𝖚ӄ𝖎ǟքք.resolve(ʟคɮ, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, groupMetadata);
     const adminmodls = [
       `add`,
       `demote`,
@@ -542,7 +515,7 @@ _Use ${ᴋᴇɪ}𝗵𝗲𝗹𝗽 to get the list of available commands_`,
           )
           .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
       }
-      return command.handle(𝓚𝓻𝓪𝓴𝓲𝓷𝔃, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹);
+      return command.handle(𝓚𝓻𝓪𝓴𝓲𝓷𝔃, ʟคɮ, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹);
     }
   });
 }

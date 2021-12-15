@@ -15,14 +15,14 @@ var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 //•⬡• —••÷[ 𝓜𝖎𝖟𝖚ӄ𝖎™ ]÷••—  ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ has been licensed under Apache License
 `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
 module.exports = {
-  name: `carbon`,
-  description: `This command can be used to convert text/code into carbon images.`,
-  𝓜𝓮𝓮6ʍօʀɛ: `Example Usage,
+name: `carbon`,
+description: `This command can be used to convert text/code into carbon images.`,
+𝓜𝓮𝓮6ʍօʀɛ: `Example Usage,
 *${ᴋᴇɪ}carbon <text>* 
 *${ᴋᴇɪ}carbon*  and reply to a text message.
 Use the -t flag after  *${ᴋᴇɪ}carbon*  to get the list of themes availble.
 In order to specify the theme, use  *${ᴋᴇɪ}carbon <text> -t <theme>* .`,
-  more: `No input provided.
+more: `No input provided.
 Please use the command  
 *${ᴋᴇɪ}carbon <text> -t <theme>*  
 or reply to a text message with  
@@ -44,199 +44,199 @@ _solarized (light)_
 _synthwave '84_  *|*  _twilight_
 _verminal_  *|*  _vscode_  
 _yeti_  *|*  _zenburn_`,
-  async handle(𝓚𝓻𝓪𝓴𝓲𝓷𝔃, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
-    `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
-    const 𝓜𝖎𝖟𝖚ӄ𝖎𝔊𝔦𝔱 = require(`simple-git`)();
-    await 𝓜𝖎𝖟𝖚ӄ𝖎𝔊𝔦𝔱.fetch();
-    var 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓 = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
-    var 𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰 = 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓.substring(0, 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓.length - 15);
-    var 𝙵𝚎𝚝𝚌𝚑𝙼𝚒𝚣𝚞𝚔𝚒𝙽𝚎𝚜𝚜 = await 𝓜𝖎𝖟𝖚ӄ𝖎𝔊𝔦𝔱.log([
-      `KrakinzLab..origin/KrakinzLab`,
-    ]);
-    `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
-    if (𝙵𝚎𝚝𝚌𝚑𝙼𝚒𝚣𝚞𝚔𝚒𝙽𝚎𝚜𝚜.total != 0) {
-      await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
-        .sendMessage(
-          𝓜𝖎𝖟𝖚ӄ𝖎.logGroup,
-          `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
+async handle(𝓚𝓻𝓪𝓴𝓲𝓷𝔃, ʟคɮ, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
+`⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
+const 𝓜𝖎𝖟𝖚ӄ𝖎𝔊𝔦𝔱 = require(`simple-git`)();
+await 𝓜𝖎𝖟𝖚ӄ𝖎𝔊𝔦𝔱.fetch();
+var 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓 = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
+var 𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰 = 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓.substring(0, 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓.length - 15);
+var 𝙵𝚎𝚝𝚌𝚑𝙼𝚒𝚣𝚞𝚔𝚒𝙽𝚎𝚜𝚜 = await 𝓜𝖎𝖟𝖚ӄ𝖎𝔊𝔦𝔱.log([
+`KrakinzLab..origin/KrakinzLab`,
+]);
+`⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
+if (𝙵𝚎𝚝𝚌𝚑𝙼𝚒𝚣𝚞𝚔𝚒𝙽𝚎𝚜𝚜.total != 0) {
+await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+.sendMessage(
+𝓜𝖎𝖟𝖚ӄ𝖎.logGroup,
+`_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
 
 𝙐𝙥𝙙𝙖𝙩𝙚🤖𝙋𝙚𝙣𝙙𝙞𝙣𝙜
 *•𝘗𝘭𝘦𝘢𝘴𝘦 𝘜𝘱𝘥𝘢𝘵𝘦 𝘜𝘴𝘪𝘯𝘨 *${ᴋᴇɪ}update* 𝘰𝘳 𝘳𝘦𝘥𝘦𝘱𝘭𝘰𝘺 𝐌𝐢𝐳𝐮𝐤𝐢™!`,
-          MessageType.text,
-          { quoted: chat }
-        )
-        .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
-    }
-    `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
-    if (𝓜𝖎𝖟𝖚ӄ𝖎.chatId === `120363025343298860@g.us` && !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderSUDO) {
-      await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
-        .sendMessage(
-          𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-          `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
+MessageType.text,
+{ quoted: ʟคɮ }
+)
+.catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+}
+`⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
+if (𝓜𝖎𝖟𝖚ӄ𝖎.chatId === `120363025343298860@g.us` && !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderSUDO) {
+await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+.sendMessage(
+𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+`_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
 
 𝗔𝗵𝗺 •@${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰},
 シ︎𝐆𝐫𝐨𝐮𝐩👓${_𝔏𝔞𝔟_.HASH}`,
-          MessageType.text,
-          {
-            quoted: chat,
-            contextInfo: {
-              mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
-            },
-          }
-        )
-        .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
-      return;
-      `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
-    } else {
-      try {
-        let themes = [
-          `3024 night`,
-          `a11y dark`,
-          `blackboard`,
-          `base 16 (dark)`,
-          `base 16 (light)`,
-          `cobalt`,
-          `duotone`,
-          `hopscotch`,
-          `lucario`,
-          `material`,
-          `monokai`,
-          `night owl`,
-          `nord`,
-          `oceanic next`,
-          `one light`,
-          `one dark`,
-          `panda`,
-          `paraiso`,
-          `seti`,
-          `shades of purple`,
-          `solarized (dark)`,
-          `solarized (light)`,
-          `synthwave '84`,
-          `twilight`,
-          `verminal`,
-          `vscode`,
-          `yeti`,
-          `zenburn`,
-        ];
-        var code = ``;
-        if (arg[0] == null && !𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
-          var 𝓜Usage = 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹.get(𝓜𝖎𝖟𝖚ӄ𝖎.commandName);
-          𝓜𝓮𝓮ʍօʀɛ = 𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ === undefined ? `Null` : 𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ;
-          const nahargs = require(`../../𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/nahargs`);
-          return nahargs.nahargs(
-            𝓚𝓻𝓪𝓴𝓲𝓷𝔃,
-            chat,
-            𝓜𝖎𝖟𝖚ӄ𝖎,
-            𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓,
-            𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰,
-            𝓜𝖎𝖟𝖚ӄ𝖎.commandName,
-            𝓜𝓮𝓮ʍօʀɛ
-          );
-        } else if (𝓜𝖎𝖟𝖚ӄ𝖎.isReply && !𝓜𝖎𝖟𝖚ӄ𝖎.replyMessage) {
-          await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
-            .sendMessage(
-              𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              `*☢️𝓜𝓮𝓮6*\n\nThe replied message should be text.`,
-              MessageType.text,
-              { quoted: chat }
-            )
-            .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
-          return;
-        } else if (𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
-          code = 𝓜𝖎𝖟𝖚ӄ𝖎.replyMessage;
-          themeInput = themes[Math.floor(Math.random() * themes.length)];
-        } else {
-          try {
-            var text = 𝓜𝖎𝖟𝖚ӄ𝖎.body.replace(
-              𝓜𝖎𝖟𝖚ӄ𝖎.body[0] + 𝓜𝖎𝖟𝖚ӄ𝖎.commandName + ` `,
-              ``
-            );
-            if (text[0] === `-` && text[1] === `t`) {
-              if (text[2] == null) {
-                let counter = 1;
-                var message = `*☢️𝓜𝓮𝓮6*\n\nAvailable themes: `;
-                themes.forEach((theme) => {
-                  message += `\n${counter}. ${theme}`;
-                  counter += 1;
-                });
-                await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
-                  .sendMessage(
-                    𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                    `` + message + ``,
-                    MessageType.text,
-                    { quoted: chat }
-                  )
-                  .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
-                return;
-              } else {
-                await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
-                  .sendMessage(
-                    𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                    `*☢️𝓜𝓮𝓮6*\n\nNo input provided.
+MessageType.text,
+{
+quoted: ʟคɮ,
+contextInfo: {
+mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
+},
+}
+)
+.catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+return;
+`⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
+} else {
+try {
+let themes = [
+`3024 night`,
+`a11y dark`,
+`blackboard`,
+`base 16 (dark)`,
+`base 16 (light)`,
+`cobalt`,
+`duotone`,
+`hopscotch`,
+`lucario`,
+`material`,
+`monokai`,
+`night owl`,
+`nord`,
+`oceanic next`,
+`one light`,
+`one dark`,
+`panda`,
+`paraiso`,
+`seti`,
+`shades of purple`,
+`solarized (dark)`,
+`solarized (light)`,
+`synthwave '84`,
+`twilight`,
+`verminal`,
+`vscode`,
+`yeti`,
+`zenburn`,
+];
+var code = ``;
+if (arg[0] == null && !𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
+var 𝓜Usage = 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹.get(𝓜𝖎𝖟𝖚ӄ𝖎.commandName);
+𝓜𝓮𝓮ʍօʀɛ = 𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ === undefined ? `Null` : 𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ;
+const nahargs = require(`../../𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/nahargs`);
+return nahargs.nahargs(
+𝓚𝓻𝓪𝓴𝓲𝓷𝔃,
+ʟคɮ,
+𝓜𝖎𝖟𝖚ӄ𝖎,
+𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓,
+𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰,
+𝓜𝖎𝖟𝖚ӄ𝖎.commandName,
+𝓜𝓮𝓮ʍօʀɛ
+);
+} else if (𝓜𝖎𝖟𝖚ӄ𝖎.isReply && !𝓜𝖎𝖟𝖚ӄ𝖎.replyMessage) {
+await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+.sendMessage(
+𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+`*☢️𝓜𝓮𝓮6*\n\nThe replied message should be text.`,
+MessageType.text,
+{ quoted: ʟคɮ }
+)
+.catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+return;
+} else if (𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
+code = 𝓜𝖎𝖟𝖚ӄ𝖎.replyMessage;
+themeInput = themes[Math.floor(Math.random() * themes.length)];
+} else {
+try {
+var text = 𝓜𝖎𝖟𝖚ӄ𝖎.body.replace(
+𝓜𝖎𝖟𝖚ӄ𝖎.body[0] + 𝓜𝖎𝖟𝖚ӄ𝖎.commandName + ` `,
+``
+);
+if (text[0] === `-` && text[1] === `t`) {
+if (text[2] == null) {
+let counter = 1;
+var message = `*☢️𝓜𝓮𝓮6*\n\nAvailable themes: `;
+themes.forEach((theme) => {
+message += `\n${counter}. ${theme}`;
+counter += 1;
+});
+await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+.sendMessage(
+𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+`` + message + ``,
+MessageType.text,
+{ quoted: ʟคɮ }
+)
+.catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+return;
+} else {
+await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+.sendMessage(
+𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+`*☢️𝓜𝓮𝓮6*\n\nNo input provided.
 Please use the command  *${ᴋᴇɪ}carbon <text>*  or reply to a text message with  *${ᴋᴇɪ}carbon*  to carbonize the text.`,
-                    MessageType.text,
-                    { quoted: chat }
-                  )
-                  .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
-                return;
-              }
-            }
-            var body = 𝓜𝖎𝖟𝖚ӄ𝖎.body.split(`-t`);
-            code = body[0].replace(
-              𝓜𝖎𝖟𝖚ӄ𝖎.body[0] + 𝓜𝖎𝖟𝖚ӄ𝖎.commandName + ` `,
-              ``
-            );
-            themeInput = body[1].substring(1);
-            if (!themes.includes(themeInput)) {
-              await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
-                .sendMessage(
-                  𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                  `*☢️𝓜𝓮𝓮6*\n\nPlease enter a valid theme.
+MessageType.text,
+{ quoted: ʟคɮ }
+)
+.catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+return;
+}
+}
+var body = 𝓜𝖎𝖟𝖚ӄ𝖎.body.split(`-t`);
+code = body[0].replace(
+𝓜𝖎𝖟𝖚ӄ𝖎.body[0] + 𝓜𝖎𝖟𝖚ӄ𝖎.commandName + ` `,
+``
+);
+themeInput = body[1].substring(1);
+if (!themes.includes(themeInput)) {
+await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+.sendMessage(
+𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+`*☢️𝓜𝓮𝓮6*\n\nPlease enter a valid theme.
 Do note that theme names are  *case sensitive*${ᴋᴇɪ}`,
-                  MessageType.text,
-                  { quoted: chat }
-                )
-                .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
-              return;
-            }
-          } catch (cᴇʀʀᴏʀ) {
-            if (cᴇʀʀᴏʀ instanceof TypeError) {
-              code = 𝓜𝖎𝖟𝖚ӄ𝖎.body.replace(
-                𝓜𝖎𝖟𝖚ӄ𝖎.body[0] + 𝓜𝖎𝖟𝖚ӄ𝖎.commandName + ` `,
-                ``
-              );
-              themeInput = themes[Math.floor(Math.random() * themes.length)];
-            }
-          }
-        }
-        await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
-          .sendMessage(
-            𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            `*☢️𝓜𝓮𝓮6*\n\nConverting your text into a code snippet. Please wait...`,
-            MessageType.text,
-            { quoted: chat }
-          )
-          .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
-        const carbon = new Carbon.createCarbon()
-          .setCode(code)
-          .setPrettify(true)
-          .setTheme(themeInput);
-        const output = await Carbon.generateCarbon(carbon);
-        await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
-          .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, output, MessageType.image, {
-            quoted: chat,
-            mimetype: Mimetype.png,
-            caption: `*☢️𝓜𝓮𝓮6*\n\n
+MessageType.text,
+{ quoted: ʟคɮ }
+)
+.catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+return;
+}
+} catch (cᴇʀʀᴏʀ) {
+if (cᴇʀʀᴏʀ instanceof TypeError) {
+code = 𝓜𝖎𝖟𝖚ӄ𝖎.body.replace(
+𝓜𝖎𝖟𝖚ӄ𝖎.body[0] + 𝓜𝖎𝖟𝖚ӄ𝖎.commandName + ` `,
+``
+);
+themeInput = themes[Math.floor(Math.random() * themes.length)];
+}
+}
+}
+await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+.sendMessage(
+𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+`*☢️𝓜𝓮𝓮6*\n\nConverting your text into a code snippet. Please wait...`,
+MessageType.text,
+{ quoted: ʟคɮ }
+)
+.catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+const carbon = new Carbon.createCarbon()
+.setCode(code)
+.setPrettify(true)
+.setTheme(themeInput);
+const output = await Carbon.generateCarbon(carbon);
+await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+.sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, output, MessageType.image, {
+quoted: ʟคɮ,
+mimetype: Mimetype.png,
+caption: `*☢️𝓜𝓮𝓮6*\n\n
 *<< Here's your carbon image! >>*
 Colour Scheme: {}`.format(themeInput),
-          })
-          .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
-      } catch (cᴇʀʀᴏʀ) {
-        throw cᴇʀʀᴏʀ;
-      }
-    }
-  },
+})
+.catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+} catch (cᴇʀʀᴏʀ) {
+throw cᴇʀʀᴏʀ;
+}
+}
+},
 };
 `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
 //•⬡• ɢɴᴜ ɢᴇɴᴇʀᴀʟ ᴘᴜʙʟɪᴄ ʟɪᴄᴇɴꜱᴇ ᴠᴇʀꜱɪᴏɴ 3, 29 ᴊᴜɴᴇ 2007 ᴄᴏᴘʏʀɪɢʜᴛ (ᴄ) 2007 ꜰʀᴇᴇ ꜱᴏꜰᴛᴡᴀʀᴇ ꜰᴏᴜɴᴅᴀᴛɪᴏɴ
