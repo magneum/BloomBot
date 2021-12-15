@@ -4,7 +4,7 @@
 ʏᴏᴜʀ ᴀꜱꜱɪꜱꜱᴛᴀɴᴛ ꜰᴏʀ ᴍᴀᴋɪɴɢ ʙᴏʀɪɴɢ ᴡʜᴀᴛꜱᴀᴘᴘ ᴀ ʙᴇᴛᴛᴇʀ ᴀᴅᴠᴀɴᴄᴇ ᴀᴘᴘ!
 
 <p align="center">
-  <img src="https://i.postimg.cc/fyDMTPVN/image.jpg" width="400"/>
+  <img src="https://i.postimg.cc/8PZcCLL6/728112-01.jpg" width="400"/>
 </p>
 
 # ❓ 𝖂𝖍𝖞 𝕸𝖆𝖉𝖊 𝕿𝖍𝖎𝖘 𝕭𝖔𝖙?
