@@ -6,7 +6,7 @@
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const _𝔏𝔞𝔟_ = require(`../../𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/_𝔏𝔞𝔟_`);
 const ℓιєηт = require(`../../𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/catch`);
-const { ytv } = require(`../../𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/youmaker`);
+const { yta } = require(`../../𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/youmaker`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 const fn = Date.now() / 10000;
@@ -20,9 +20,9 @@ let mime = ``;
 //•⬡• —••÷[ 𝓜𝖎𝖟𝖚ӄ𝖎™ ]÷••—  ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ has been licensed under Apache License
 `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
 module.exports = {
-  name: `ytvideo`,
-  description: `ᴅᴏᴡɴʟᴏᴀᴅ ᴀɴʏ ʏᴏᴜᴛᴜʙᴇ ᴠɪᴅᴇᴏ ᴜɴᴅᴇʀ 100ᴍʙ ꜱɪᴢᴇ.`,
-  𝓜𝓮𝓮6ʍօʀɛ: `${ᴋᴇɪ}ytvideo <link>`,
+  name: `ytaudio`,
+  description: `ᴅᴏᴡɴʟᴏᴀᴅ ᴀɴʏ ʏᴏᴜᴛᴜʙᴇ audio ᴜɴᴅᴇʀ 100ᴍʙ ꜱɪᴢᴇ.`,
+  𝓜𝓮𝓮6ʍօʀɛ: `${ᴋᴇɪ}ytaudio <link>`,
   async handle(𝓚𝓻𝓪𝓴𝓲𝓷𝔃, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
     `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
     const 𝓜𝖎𝖟𝖚ӄ𝖎𝔊𝔦𝔱 = require(`simple-git`)();
@@ -148,7 +148,7 @@ module.exports = {
               caption: `*⚠️Seems like ${arg[0]} is not YouTube Link or not YouTube Single Video Link!*
 
 *Usage Example*
-${ᴋᴇɪ}ytvideo <youtubelink>
+${ᴋᴇɪ}ytaudio <youtubelink>
 
 *NOTE:*
 You Can Get URL by using ${ᴋᴇɪ}yts <song-name>`,
@@ -160,7 +160,7 @@ You Can Get URL by using ${ᴋᴇɪ}yts <song-name>`,
       }
       `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
       if (!𝓜𝖎𝖟𝖚ӄ𝖎.isGroup) {
-        ytv(arg[0]).then((gotResp) => {
+        yta(arg[0]).then((gotResp) => {
           const { main_link, thumb, title, filesize } = gotResp;
           axios
             .get(`https://tinyurl.com/api-create.php?url=${main_link}`)
@@ -224,7 +224,7 @@ _𝗣𝗹𝗲𝗮𝘀𝗲 𝗪𝗮𝗶𝘁 𝗳𝗼𝗿 𝘁𝗵𝗲 𝗮𝘂�
       }
       `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
       if (𝓜𝖎𝖟𝖚ӄ𝖎.isGroup) {
-        ytv(arg[0]).then((gotResp) => {
+        yta(arg[0]).then((gotResp) => {
           const { main_link, thumb, title, filesize } = gotResp;
           axios
             .get(`https://tinyurl.com/api-create.php?url=${main_link}`)

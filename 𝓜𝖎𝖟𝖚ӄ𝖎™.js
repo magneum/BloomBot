@@ -387,9 +387,9 @@ ${update.desc}`,
 @${personcum}🤩${weltext}
 
 ⦿================⦿
-*⬘𝕭𝖎𝖔:* ${GroupMemBio.status}
-*⬘𝕲𝖗𝖔𝖚𝖕:* ${GroupMemData.subject}
-*⬘𝕮𝖔𝖚𝖓𝖙:* ${GroupMemG}
+⬘𝕭𝖎𝖔: ${GroupMemBio.status}
+⬘𝕲𝖗𝖔𝖚𝖕: ${GroupMemData.subject}
+⬘𝕮𝖔𝖚𝖓𝖙: ${GroupMemG}
 ⦿================⦿
 
 ${Fetched.message}`,
@@ -443,9 +443,9 @@ ${Fetched.message}`,
 @${personcum}👋🏽${byetext}
 
 ⦿================⦿
-*⬘𝕭𝖎𝖔:* ${GroupMemBio.status}
-*⬘𝕲𝖗𝖔𝖚𝖕:* ${GroupMemData.subject}
-*⬘𝕮𝖔𝖚𝖓𝖙:* ${GroupMemG}
+⬘𝕭𝖎𝖔: ${GroupMemBio.status}
+⬘𝕲𝖗𝖔𝖚𝖕: ${GroupMemData.subject}
+⬘𝕮𝖔𝖚𝖓𝖙: ${GroupMemG}
 ⦿================⦿
 
 ${ꜰᴇᴛᴄʜᴇᴅʙʏᴇ.message}`,
@@ -527,8 +527,8 @@ ${ꜰᴇᴛᴄʜᴇᴅʙʏᴇ.message}`,
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
             `𝗜𝗻𝘃𝗮𝗹𝗶𝗱 𝗖𝗼𝗺𝗺𝗮𝗻𝗱
 
-Yo Bruh •@${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰},
-Use ${ᴋᴇɪ}help to get the list of available commands`,
+𝗔𝗵𝗺 •@${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰},
+_Use ${ᴋᴇɪ}𝗵𝗲𝗹𝗽 to get the list of available commands_`,
             MessageType.text,
             {
               contextInfo: {

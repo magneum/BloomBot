@@ -78,25 +78,25 @@ module.exports = {
     const buttonMessage = {
       contentText: `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
 
-*Hey* •@${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰}
+𝗔𝗵𝗺 •@${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰},
 🛸𝐆𝐫𝐨𝐮𝐩: ${_𝔏𝔞𝔟_.HASH}
 
 ┌────⭓ 𝐀𝐥𝐥 𝐂𝐚𝐭𝐞𝐠𝐨𝐫𝐢𝐞𝐬
-│⚙️ ${ᴋᴇɪ}systemside: _ꜱʏꜱᴛᴇᴍ_
-│🎋 ${ᴋᴇɪ}animeside: _ᴀɴɪᴍᴇ_
-│🍫 ${ᴋᴇɪ}musicside: _ᴍᴜꜱɪᴄ_
-│🍭 ${ᴋᴇɪ}groupside: _ɢʀᴏᴜᴘꜱ_
-│🦄 ${ᴋᴇɪ}funside: _ꜰᴜɴꜱ_
-│🍄 ${ᴋᴇɪ}nsfwside: _ᴀᴅᴜʟᴛ_
+│⚙️ *${ᴋᴇɪ}systemside:* _ꜱʏꜱᴛᴇᴍ_
+│🎋 *${ᴋᴇɪ}animeside:* _ᴀɴɪᴍᴇ_
+│🍫 *${ᴋᴇɪ}musicside:* _ᴍᴜꜱɪᴄ_
+│🍭 *${ᴋᴇɪ}groupside:* _ɢʀᴏᴜᴘꜱ_
+│🦄 *${ᴋᴇɪ}funside:* _ꜰᴜɴꜱ_
+│🍄 *${ᴋᴇɪ}nsfwside:* _ᴀᴅᴜʟᴛ_
 └───────────⭓
 
 ┌────⭓ 𝐒𝐲𝐦𝐥𝐢𝐧𝐤 𝐈𝐧𝐟𝐨𝐬  
-│💡 ᴘʀᴇꜰɪx: ${ᴋᴇɪ}
-│⚙️ ᴇɴɢɪɴᴇ: ${vers.vers}
-│💻 ᴘʟᴀᴛꜰᴏʀᴍ: ${os.platform()}
-│🛰️ ʟᴀᴛᴇɴᴄʏ: ${latensi.toFixed(4)}(s)
-│☕ ᴜᴘᴛɪᴍᴇ: ${runtime(process.uptime())}
-│🎮 ʀᴀᴍ: ${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}
+│💡  *ᴘʀᴇꜰɪx:* ${ᴋᴇɪ}
+│⚙️ *ᴇɴɢɪɴᴇ:* ${vers.vers}
+│💻 *ᴘʟᴀᴛꜰᴏʀᴍ:* ${os.platform()}
+│🛰️ *ʟᴀᴛᴇɴᴄʏ:* ${latensi.toFixed(4)}(s)
+│☕ *ᴜᴘᴛɪᴍᴇ:* ${runtime(process.uptime())}
+│🎮 *ʀᴀᴍ:* ${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}
 └───────────⭓`,
       footerText: `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_`,
       buttons: buttons,

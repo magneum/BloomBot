@@ -47,7 +47,7 @@ module.exports = {
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
           `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
 
-*•@${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰}*,
+𝗔𝗵𝗺 •@${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰},
 シ︎🛸𝐆𝐫𝐨𝐮𝐩: ${_𝔏𝔞𝔟_.HASH}`,
           MessageType.text,
           {
@@ -100,7 +100,7 @@ module.exports = {
 ┌────⭓ *🍫𝙈𝙪𝙨𝙞𝙘*-(${ᴋᴇɪ}musicside)
 │🍫 ${ᴋᴇɪ}lyrics
 │🍫 ${ᴋᴇɪ}ytsearch
-│🍫 ${ᴋᴇɪ}ytmusic
+│🍫 ${ᴋᴇɪ}ytaudio
 │🍫 ${ᴋᴇɪ}ytvideo
 └───────────⭓
 
@@ -186,7 +186,7 @@ many many more!
               },
               caption: `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
 
-*•@${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰}*,
+𝗔𝗵𝗺 •@${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰},
 
 ${MeeHelper}‍`,
             }
