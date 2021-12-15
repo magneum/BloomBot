@@ -437,7 +437,7 @@ ${Fetched.message}`,
                     contextInfo: {
                       mentionedJid: [MemNum],
                     },
-                    caption: `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_*
+                    caption: `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
 
 @${personcum}👋🏽${byetext}
 
