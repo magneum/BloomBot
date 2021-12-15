@@ -170,7 +170,7 @@ You Can Get URL by using ${ᴋᴇɪ}yts <song-name>`,
       `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
       if (𝓜𝖎𝖟𝖚ӄ𝖎.isGroup) {
         const filename = `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/${now}_ytvideoprivate_${nowbyk.toString()}${𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓}${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰}`;
-        ytv(arg[0]).then((gotResp) => {
+        ytv(arg[0]).then(async (gotResp) => {
           const { dl_link, thumb, title, filesize } = gotResp;
           axios
             .get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
@@ -248,7 +248,7 @@ You Can Get URL by using ${ᴋᴇɪ}yts <song-name>`,
       `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
       if (𝓜𝖎𝖟𝖚ӄ𝖎.isGroup) {
         const filename = `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/${now}_ytvideogroups_${nowbyk.toString()}${𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓}${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰}`;
-        ytv(arg[0]).then((gotResp) => {
+        ytv(arg[0]).then(async (gotResp) => {
           const { dl_link, thumb, title, filesize } = gotResp;
           axios
             .get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
