@@ -114,8 +114,11 @@ try {
       console.log(Kolor.yellow(`💡𝗜𝗻𝗳𝗼⬰ 𝘊𝘰𝘯𝘯𝘦𝘤𝘵𝘪𝘯𝘨 𝘵𝘰 𝘋𝘢𝘵𝘢𝘣𝘢𝘴𝘦...✅`));
       try {
         await 𝓜𝖎𝖟𝖚ӄ𝖎sql.authenticate();
-      } catch (error) {
-        console.error(`❌𝗘𝗿𝗿⬰  𝗨𝗻𝗮𝗯𝗹𝗲 𝘁𝗼 𝗰𝗼𝗻𝗻𝗲𝗰𝘁 𝘁𝗼 𝘁𝗵𝗲 𝗱𝗮𝘁𝗮𝗯𝗮𝘀𝗲:`, error);
+      } catch (ℓαвєяяσя) {
+        console.ℓαвєяяσя(
+          `❌𝗘𝗿𝗿⬰  𝗨𝗻𝗮𝗯𝗹𝗲 𝘁𝗼 𝗰𝗼𝗻𝗻𝗲𝗰𝘁 𝘁𝗼 𝘁𝗵𝗲 𝗱𝗮𝘁𝗮𝗯𝗮𝘀𝗲:`,
+          ℓαвєяяσя
+        );
       }
       console.log(
         Kolor.yellow(`⬡=================⬡    ⦿𝐌𝐢𝐳𝐮𝐤𝐢™⦿    ⬡=================⬡`)
@@ -223,7 +226,7 @@ try {
 Group has been opened by admin Now all members can send messages`,
             MessageType.text
           )
-          .catch((error) => console.log(Kolor.redBright(error)));
+          .catch((ℓαвєяяσя) => console.log(Kolor.redBright(ℓαвєяяσя)));
       } else if (update.announce == `true`) {
         𝓚𝓻𝓪𝓴𝓲𝓷𝔃
           .sendMessage(
@@ -234,7 +237,7 @@ Group has been opened by admin Now all members can send messages`,
 ɢʀᴏᴜᴘ ʜᴀꜱ ʙᴇᴇɴ ᴄʟᴏꜱᴇᴅ ʙʏ ᴀᴅᴍɪɴ ɴᴏᴡ ᴏɴʟʏ ᴀᴅᴍɪɴ ᴄᴀɴ ꜱᴇɴᴅ ᴍᴇꜱꜱᴀɢᴇꜱ`,
             MessageType.text
           )
-          .catch((error) => console.log(Kolor.redBright(error)));
+          .catch((ℓαвєяяσя) => console.log(Kolor.redBright(ℓαвєяяσя)));
       } else if (!update.desc == ``) {
         tag = update.descOwner.split(`@`)[0] + `@s.whatsapp.net`;
         𝓚𝓻𝓪𝓴𝓲𝓷𝔃
@@ -254,7 +257,7 @@ ${update.desc}`,
               },
             }
           )
-          .catch((error) => console.log(Kolor.redBright(error)));
+          .catch((ℓαвєяяσя) => console.log(Kolor.redBright(ℓαвєяяσя)));
       } else if (update.restrict == `false`) {
         𝓚𝓻𝓪𝓴𝓲𝓷𝔃
           .sendMessage(
@@ -266,7 +269,7 @@ ${update.desc}`,
             MessageType.text,
             {}
           )
-          .catch((error) => console.log(Kolor.redBright(error)));
+          .catch((ℓαвєяяσя) => console.log(Kolor.redBright(ℓαвєяяσя)));
       } else if (update.restrict == `true`) {
         𝓚𝓻𝓪𝓴𝓲𝓷𝔃
           .sendMessage(
@@ -278,7 +281,7 @@ ${update.desc}`,
             MessageType.text,
             {}
           )
-          .catch((error) => console.log(Kolor.redBright(error)));
+          .catch((ℓαвєяяσя) => console.log(Kolor.redBright(ℓαвєяяσя)));
       }
     });
     // ⦿──────────────────────────────────────────────────────────────────⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
@@ -312,7 +315,7 @@ ${update.desc}`,
             `conversation`
           )
           .then(console.log(Kolor.green(GroupID)))
-          .catch((error) => console.log(error));
+          .catch((ℓαвєяяσя) => console.log(ℓαвєяяσя));
       }
       if (update.action === `add` && !MemNum.includes(𝓚𝓻𝓪𝓴𝓲𝓷𝔃.user.jid)) {
         var enable = await ɠɠ𝓜𝖎𝖟𝖚ӄ𝖎.checkSettings(GroupID, `setwelcome`);
@@ -382,7 +385,7 @@ ${Fetched.message}`,
                   },
                 }
               )
-              .catch((error) => console.log(error));
+              .catch((ℓαвєяяσя) => console.log(ℓαвєяяσя));
           }
         );
       }
@@ -438,7 +441,7 @@ ${Fetched.message}`,
 ${ꜰᴇᴛᴄʜᴇᴅʙʏᴇ.message}`,
                   }
                 )
-                .catch((error) => console.log(error));
+                .catch((ℓαвєяяσя) => console.log(ℓαвєяяσя));
             }
           );
           return;
@@ -513,7 +516,7 @@ _Use ${ᴋᴇɪ}𝗵𝗲𝗹𝗽 to get the list of available commands_`,
                 },
               }
             )
-            .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+            .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
         }
         return command.handle(𝓚𝓻𝓪𝓴𝓲𝓷𝔃, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹);
       }
@@ -523,7 +526,7 @@ _Use ${ᴋᴇɪ}𝗵𝗲𝗹𝗽 to get the list of available commands_`,
     console.log(Kolor.red(`❌𝗘𝗿𝗿⬰ `), Kolor.red(cᴇʀʀᴏʀ))
   );
   // ⦿──────────────────────────────────────────────────────────────────⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
-} catch (error) {
-  console.log(error);
+} catch (ℓαвєяяσя) {
+  console.log(ℓαвєяяσя);
 }
 // ⦿──────────────────────────────────────────────────────────────────⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
