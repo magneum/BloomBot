@@ -200,7 +200,7 @@ You Can Get URL by using ${ᴋᴇɪ}yts <song-name>`,
                   )
                   .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
               } else {
-                const FetchedLink = await yts(arg.join(` `));
+                const FetchedLink = yts(arg.join(` `));
                 const videos = FetchedLink.videos.slice(0, 1);
                 videos.forEach(function (youfound) {
                   Fetched = `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
@@ -225,7 +225,7 @@ You Can Get URL by using ${ᴋᴇɪ}yts <song-name>`,
                   })
                   .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
                 `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
-                const FetchedLink = await yts(arg.join(` `));
+                const FetchedLink = yts(arg.join(` `));
                 const videos = FetchedLink.videos.slice(0, 1);
                 videos.forEach(function (youfound) {
                   Fetched = `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
@@ -278,7 +278,7 @@ You Can Get URL by using ${ᴋᴇɪ}yts <song-name>`,
                   )
                   .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
               } else {
-                const FetchedLink = await yts(arg.join(` `));
+                const FetchedLink = yts(arg.join(` `));
                 const videos = FetchedLink.videos.slice(0, 1);
                 videos.forEach(function (youfound) {
                   Fetched = `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
@@ -303,7 +303,7 @@ You Can Get URL by using ${ᴋᴇɪ}yts <song-name>`,
                   })
                   .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
                 `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
-                const FetchedLink = await yts(arg.join(` `));
+                const FetchedLink = yts(arg.join(` `));
                 const videos = FetchedLink.videos.slice(0, 1);
                 videos.forEach(function (youfound) {
                   Fetched = `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
