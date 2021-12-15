@@ -343,14 +343,14 @@ ${update.desc}`,
                 GroupID,
                 {
                   contentText: `          @${personcum}
-      ${weltext}
-      ┌───────────⭓ 
-      │⬘𝗕𝗶𝗼: ${GroupMemBio.status}
-      │⬘𝗠𝗲𝗺𝗯𝗲𝗿𝘀: ${GroupMemG}
-      │⬘𝗚𝗿𝗼𝘂𝗽: ${GroupMemData.subject}
-      │⬘𝗜𝗻𝘃𝗶𝘁𝗲: ${`https://chat.whatsapp.com/` + code}
-      └───────────⭓
-      ${Fetched.message}`,
+${weltext}
+┌───────────⭓ 
+│⬘𝗕𝗶𝗼: ${GroupMemBio.status}
+│⬘𝗠𝗲𝗺𝗯𝗲𝗿𝘀: ${GroupMemG}
+│⬘𝗚𝗿𝗼𝘂𝗽: ${GroupMemData.subject}
+│⬘𝗜𝗻𝘃𝗶𝘁𝗲: ${`https://chat.whatsapp.com/` + code}
+└───────────⭓
+${Fetched.message}`,
                   footerText: `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_`,
                   buttons: [
                     {
