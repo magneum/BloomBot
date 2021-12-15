@@ -379,7 +379,7 @@ ${update.desc}`,
         console.log(
           `=================😈    |  ɢʀᴏᴜᴘ ᴜᴘᴅᴀᴛᴇ  |    😈=================`
         );
-        const code = await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃.groupInviteCode(𝓜𝖎𝖟𝖚ӄ𝖎.chatId);
+        const code = await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃.groupInviteCode(GroupID);
         var Fetched = await ɠɠ𝓜𝖎𝖟𝖚ӄ𝖎.getMessage(GroupID, `setwelcome`);
         try {
           𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃.getProfilePicture(
