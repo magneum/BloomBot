@@ -88,14 +88,14 @@ module.exports = {
         if (chat.message.extendedTextMessage == null) {
           await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
             .toggleDisappearingMessages(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, time)
-            .catch((cᴇʀʀᴏʀ) => {
-              ℓιєηт.catch((cᴇʀʀᴏʀ, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+            .catch((ℓαвєяяσя) => {
+              ℓιєηт.catch((ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
             });
         } else {
           await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
             .toggleDisappearingMessages(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, 0)
-            .catch((cᴇʀʀᴏʀ) => {
-              ℓιєηт.catch((cᴇʀʀᴏʀ, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+            .catch((ℓαвєяяσя) => {
+              ℓιєηт.catch((ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
             });
         }
         return;

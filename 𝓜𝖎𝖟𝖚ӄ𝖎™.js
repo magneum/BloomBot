@@ -84,11 +84,11 @@ try {
     try {
       var session = 𝓜𝖎𝖟𝖚ӄ𝖎ֆʏռօք.Mee6reignite(_𝔏𝔞𝔟_.Mee6);
       𝓚𝓻𝓪𝓴𝓲𝓷𝔃.loadAuthInfo(session);
-    } catch (cᴇʀʀᴏʀ) {
+    } catch (ℓαвєяяσя) {
       if (
-        cᴇʀʀᴏʀ instanceof TypeError ||
-        cᴇʀʀᴏʀ.message === `given authInfo is null` ||
-        cᴇʀʀᴏʀ instanceof SyntaxError
+        ℓαвєяяσя instanceof TypeError ||
+        ℓαвєяяσя.message === `given authInfo is null` ||
+        ℓαвєяяσя instanceof SyntaxError
       ) {
         console.log(
           Kolor.red(`𝗜𝗻𝗰𝗼𝗿𝗿𝗲𝗰𝘁 𝗦𝗲𝘀𝘀𝗶𝗼𝗻 𝗦𝘁𝗿𝗶𝗻𝗴. 𝗣𝗹𝗲𝗮𝘀𝗲 𝗮𝘂𝘁𝗵𝗲𝗻𝘁𝗶𝗰𝗮𝘁𝗲 𝗮𝗴𝗮𝗶𝗻!`)
@@ -522,8 +522,8 @@ _Use ${ᴋᴇɪ}𝗵𝗲𝗹𝗽 to get the list of available commands_`,
       }
     });
   }
-  𝓜𝓮𝓮6s().catch((cᴇʀʀᴏʀ) =>
-    console.log(Kolor.red(`❌𝗘𝗿𝗿⬰ `), Kolor.red(cᴇʀʀᴏʀ))
+  𝓜𝓮𝓮6s().catch((ℓαвєяяσя) =>
+    console.log(Kolor.red(`❌𝗘𝗿𝗿⬰ `), Kolor.red(ℓαвєяяσя))
   );
   // ⦿──────────────────────────────────────────────────────────────────⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
 } catch (ℓαвєяяσя) {

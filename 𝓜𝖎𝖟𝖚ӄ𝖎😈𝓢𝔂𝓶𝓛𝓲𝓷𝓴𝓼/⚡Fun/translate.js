@@ -87,8 +87,8 @@ You can also reply to a text message with syntax  *${ᴋᴇɪ}tr <language>*  to
               i++;
             }
             language = body[1].split(` `)[i];
-          } catch (cᴇʀʀᴏʀ) {
-            if (cᴇʀʀᴏʀ instanceof TypeError) {
+          } catch (ℓαвєяяσя) {
+            if (ℓαвєяяσя instanceof TypeError) {
               text = 𝓜𝖎𝖟𝖚ӄ𝖎.body.replace(
                 𝓜𝖎𝖟𝖚ӄ𝖎.body[0] + 𝓜𝖎𝖟𝖚ӄ𝖎.commandName + ` `,
                 ``

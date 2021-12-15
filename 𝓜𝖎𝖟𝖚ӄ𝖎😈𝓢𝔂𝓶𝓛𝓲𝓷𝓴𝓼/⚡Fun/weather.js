@@ -138,8 +138,8 @@ module.exports = {
             8;
 
           https.get(url, function (response) {
-            response.on(`ℓαвєяяσя`, (cᴇʀʀᴏʀ) => {
-              throw cᴇʀʀᴏʀ;
+            response.on(`ℓαвєяяσя`, (ℓαвєяяσя) => {
+              throw ℓαвєяяσя;
             });
             response.on(`data`, function (data) {
               try {
@@ -238,7 +238,7 @@ module.exports = {
                   imageName +
                   `.jpg`;
                 result(imageUrl, weatherDataVariables, downloading);
-              } catch (cᴇʀʀᴏʀ) {
+              } catch (ℓαвєяяσя) {
                 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
                   .sendMessage(
                     𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
@@ -246,7 +246,7 @@ module.exports = {
 TRY LATER!
 
 ⚠️𝗘𝗿𝗿𝗼𝗿
-• ${cᴇʀʀᴏʀ}
+• ${ℓαвєяяσя}
 
 
 💡𝗖𝗼𝗺𝗺𝗮𝗻𝗱 • ${𝓜𝖎𝖟𝖚ӄ𝖎.commandName}
@@ -254,8 +254,8 @@ TRY LATER!
                     MessageType.text,
                     { quoted: chat }
                   )
-                  .catch((cᴇʀʀᴏʀ) => {
-                    ℓιєηт.catch((cᴇʀʀᴏʀ, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+                  .catch((ℓαвєяяσя) => {
+                    ℓιєηт.catch((ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
                   });
                 return;
               }
@@ -283,8 +283,8 @@ TRY LATER!
             unit;
 
           https.get(url, function (response) {
-            response.on(`ℓαвєяяσя`, (cᴇʀʀᴏʀ) => {
-              throw cᴇʀʀᴏʀ;
+            response.on(`ℓαвєяяσя`, (ℓαвєяяσя) => {
+              throw ℓαвєяяσя;
             });
             response.on(`data`, function (data) {
               const weatherData = JSON.parse(data);

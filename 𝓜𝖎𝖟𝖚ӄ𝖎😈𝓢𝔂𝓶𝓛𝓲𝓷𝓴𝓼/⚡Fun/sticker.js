@@ -79,26 +79,26 @@ module.exports = {
                     MessageType.sticker,
                     { quoted: chat }
                   )
-                  .catch((cᴇʀʀᴏʀ) => {
-                    ℓιєηт.catch((cᴇʀʀᴏʀ, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+                  .catch((ℓαвєяяσя) => {
+                    ℓιєηт.catch((ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
                   });
-                fs.unlink(filePath, (cᴇʀʀᴏʀ) => {
-                  if (cᴇʀʀᴏʀ) {
-                    console.log(cᴇʀʀᴏʀ);
+                fs.unlink(filePath, (ℓαвєяяσя) => {
+                  if (ℓαвєяяσя) {
+                    console.log(ℓαвєяяσя);
                   } else {
                     console.log(`Deleted!`);
                   }
                 });
-                fs.unlink(stickerPath, (cᴇʀʀᴏʀ) => {
-                  if (cᴇʀʀᴏʀ) {
-                    console.log(cᴇʀʀᴏʀ);
+                fs.unlink(stickerPath, (ℓαвєяяσя) => {
+                  if (ℓαвєяяσя) {
+                    console.log(ℓαвєяяσя);
                   } else {
                     console.log(`Deleted!`);
                   }
                 });
               })
               .on(`ℓαвєяяσя`, async (ℓαвєяяσя) => {
-                ℓιєηт.catch((cᴇʀʀᴏʀ, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+                ℓιєηт.catch((ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
               });
             return;
           }
@@ -127,26 +127,26 @@ module.exports = {
                   MessageType.sticker,
                   { quoted: chat }
                 )
-                .catch((cᴇʀʀᴏʀ) => {
-                  ℓιєηт.catch((cᴇʀʀᴏʀ, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+                .catch((ℓαвєяяσя) => {
+                  ℓιєηт.catch((ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
                 });
-              fs.unlink(filePath, (cᴇʀʀᴏʀ) => {
-                if (cᴇʀʀᴏʀ) {
-                  console.log(cᴇʀʀᴏʀ);
+              fs.unlink(filePath, (ℓαвєяяσя) => {
+                if (ℓαвєяяσя) {
+                  console.log(ℓαвєяяσя);
                 } else {
                   console.log(`Deleted!`);
                 }
               });
-              fs.unlink(stickerPath, (cᴇʀʀᴏʀ) => {
-                if (cᴇʀʀᴏʀ) {
-                  console.log(cᴇʀʀᴏʀ);
+              fs.unlink(stickerPath, (ℓαвєяяσя) => {
+                if (ℓαвєяяσя) {
+                  console.log(ℓαвєяяσя);
                 } else {
                   console.log(`Deleted!`);
                 }
               });
             })
-            .on(`cᴇʀʀᴏʀ`, async (ℓαвєяяσя) => {
-              return ℓιєηт.catch((cᴇʀʀᴏʀ, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+            .on(`ℓαвєяяσя`, async (ℓαвєяяσя) => {
+              return ℓιєηт.catch((ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
             });
         };
 

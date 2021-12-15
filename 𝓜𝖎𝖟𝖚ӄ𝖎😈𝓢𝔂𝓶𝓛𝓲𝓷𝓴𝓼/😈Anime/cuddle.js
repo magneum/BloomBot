@@ -119,16 +119,16 @@ setsar=1`
                       { quoted: chat }
                     )
                     .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
-                  fs.unlink(FP, (cᴇʀʀᴏʀ) => {
-                    if (cᴇʀʀᴏʀ) {
-                      console.log(Kolor.redBright(cᴇʀʀᴏʀ));
+                  fs.unlink(FP, (ℓαвєяяσя) => {
+                    if (ℓαвєяяσя) {
+                      console.log(Kolor.redBright(ℓαвєяяσя));
                     } else {
                       console.log(Kolor.greenBright(FP));
                     }
                   });
-                  fs.unlink(SP, (cᴇʀʀᴏʀ) => {
-                    if (cᴇʀʀᴏʀ) {
-                      console.log(Kolor.redBright(cᴇʀʀᴏʀ));
+                  fs.unlink(SP, (ℓαвєяяσя) => {
+                    if (ℓαвєяяσя) {
+                      console.log(Kolor.redBright(ℓαвєяяσя));
                     } else {
                       console.log(Kolor.greenBright(SP));
                     }

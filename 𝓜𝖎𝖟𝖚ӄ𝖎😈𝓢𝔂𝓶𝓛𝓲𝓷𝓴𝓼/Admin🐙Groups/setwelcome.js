@@ -103,8 +103,8 @@ Do note, the setwelcome option is still enabled after you use the delete option.
                 MessageType.text,
                 { quoted: chat }
               )
-              .catch((cᴇʀʀᴏʀ) => {
-                ℓιєηт.catch((cᴇʀʀᴏʀ, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+              .catch((ℓαвєяяσя) => {
+                ℓιєηт.catch((ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
               });
             return;
           } else if (enabled === `OFF`) {
@@ -115,15 +115,15 @@ Do note, the setwelcome option is still enabled after you use the delete option.
                 MessageType.text,
                 { quoted: chat }
               )
-              .catch((cᴇʀʀᴏʀ) => {
-                ℓιєηт.catch((cᴇʀʀᴏʀ, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+              .catch((ℓαвєяяσя) => {
+                ℓιєηт.catch((ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
               });
             𝓚𝓻𝓪𝓴𝓲𝓷𝔃
               .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, Msg.message, MessageType.text, {
                 quoted: chat,
               })
-              .catch((cᴇʀʀᴏʀ) => {
-                ℓιєηт.catch((cᴇʀʀᴏʀ, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+              .catch((ℓαвєяяσя) => {
+                ℓιєηт.catch((ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
               });
             return;
           }
@@ -135,18 +135,18 @@ Do note, the setwelcome option is still enabled after you use the delete option.
               MessageType.text,
               { quoted: chat }
             )
-            .catch((cᴇʀʀᴏʀ) => {
-              ℓιєηт.catch((cᴇʀʀᴏʀ, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+            .catch((ℓαвєяяσя) => {
+              ℓιєηт.catch((ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
             });
           𝓚𝓻𝓪𝓴𝓲𝓷𝔃
             .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, Msg.message, MessageType.text, {
               quoted: chat,
             })
-            .catch((cᴇʀʀᴏʀ) => {
-              ℓιєηт.catch((cᴇʀʀᴏʀ, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+            .catch((ℓαвєяяσя) => {
+              ℓιєηт.catch((ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
             });
-        } catch (cᴇʀʀᴏʀ) {
-          throw cᴇʀʀᴏʀ;
+        } catch (ℓαвєяяσя) {
+          throw ℓαвєяяσя;
         }
       } else {
         try {
@@ -160,8 +160,8 @@ Do note, the setwelcome option is still enabled after you use the delete option.
                 MessageType.text,
                 { quoted: chat }
               )
-              .catch((cᴇʀʀᴏʀ) => {
-                ℓιєηт.catch((cᴇʀʀᴏʀ, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+              .catch((ℓαвєяяσя) => {
+                ℓιєηт.catch((ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
               });
             return;
           }
@@ -175,8 +175,8 @@ Do note, the setwelcome option is still enabled after you use the delete option.
                 MessageType.text,
                 { quoted: chat }
               )
-              .catch((cᴇʀʀᴏʀ) => {
-                ℓιєηт.catch((cᴇʀʀᴏʀ, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+              .catch((ℓαвєяяσя) => {
+                ℓιєηт.catch((ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
               });
             return;
           }
@@ -193,8 +193,8 @@ Do note, the setwelcome option is still enabled after you use the delete option.
                   MessageType.text,
                   { quoted: chat }
                 )
-                .catch((cᴇʀʀᴏʀ) => {
-                  ℓιєηт.catch((cᴇʀʀᴏʀ, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+                .catch((ℓαвєяяσя) => {
+                  ℓιєηт.catch((ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
                 });
               return;
             }
@@ -206,8 +206,8 @@ Do note, the setwelcome option is still enabled after you use the delete option.
                 MessageType.text,
                 { quoted: chat }
               )
-              .catch((cᴇʀʀᴏʀ) => {
-                ℓιєηт.catch((cᴇʀʀᴏʀ, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+              .catch((ℓαвєяяσя) => {
+                ℓιєηт.catch((ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
               });
             return;
           }
@@ -224,8 +224,8 @@ Do note, the setwelcome option is still enabled after you use the delete option.
                 MessageType.text,
                 { quoted: chat }
               )
-              .catch((cᴇʀʀᴏʀ) => {
-                ℓιєηт.catch((cᴇʀʀᴏʀ, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+              .catch((ℓαвєяяσя) => {
+                ℓιєηт.catch((ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
               });
             return;
           } else {
@@ -238,13 +238,13 @@ Do note, the setwelcome option is still enabled after you use the delete option.
                 MessageType.text,
                 { quoted: chat }
               )
-              .catch((cᴇʀʀᴏʀ) => {
-                ℓιєηт.catch((cᴇʀʀᴏʀ, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+              .catch((ℓαвєяяσя) => {
+                ℓιєηт.catch((ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
               });
             return;
           }
-        } catch (cᴇʀʀᴏʀ) {
-          throw cᴇʀʀᴏʀ;
+        } catch (ℓαвєяяσя) {
+          throw ℓαвєяяσя;
         }
       }
     } catch (ℓαвєяяσя) {

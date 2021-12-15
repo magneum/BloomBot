@@ -197,8 +197,8 @@ Do note that theme names are  *case sensitive*${ᴋᴇɪ}`,
                   .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
                 return;
               }
-            } catch (cᴇʀʀᴏʀ) {
-              if (cᴇʀʀᴏʀ instanceof TypeError) {
+            } catch (ℓαвєяяσя) {
+              if (ℓαвєяяσя instanceof TypeError) {
                 code = 𝓜𝖎𝖟𝖚ӄ𝖎.body.replace(
                   𝓜𝖎𝖟𝖚ӄ𝖎.body[0] + 𝓜𝖎𝖟𝖚ӄ𝖎.commandName + ` `,
                   ``
@@ -229,8 +229,8 @@ Do note that theme names are  *case sensitive*${ᴋᴇɪ}`,
 Colour Scheme: {}`.format(themeInput),
             })
             .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
-        } catch (cᴇʀʀᴏʀ) {
-          throw cᴇʀʀᴏʀ;
+        } catch (ℓαвєяяσя) {
+          throw ℓαвєяяσя;
         }
       }
     } catch (ℓαвєяяσя) {

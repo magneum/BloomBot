@@ -130,16 +130,16 @@ setsar=1`
                         { quoted: chat }
                       )
                     );
-                  fs.unlink(FP, (cᴇʀʀᴏʀ) => {
-                    if (cᴇʀʀᴏʀ) {
-                      console.log(Kolor.redBright(cᴇʀʀᴏʀ));
+                  fs.unlink(FP, (ℓαвєяяσя) => {
+                    if (ℓαвєяяσя) {
+                      console.log(Kolor.redBright(ℓαвєяяσя));
                     } else {
                       console.log(Kolor.greenBright(FP));
                     }
                   });
-                  fs.unlink(SP, (cᴇʀʀᴏʀ) => {
-                    if (cᴇʀʀᴏʀ) {
-                      console.log(Kolor.redBright(cᴇʀʀᴏʀ));
+                  fs.unlink(SP, (ℓαвєяяσя) => {
+                    if (ℓαвєяяσя) {
+                      console.log(Kolor.redBright(ℓαвєяяσя));
                     } else {
                       console.log(Kolor.greenBright(SP));
                     }
