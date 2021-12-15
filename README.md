@@ -21,9 +21,9 @@
 
 # ⚡ 𝕯𝖊𝖕𝖑𝖔𝖞𝖒𝖊𝖓𝖙
 
-- *ꜰɪʀꜱᴛ ꜰᴏʀᴋ ᴀɴᴅ ꜱᴛᴀʀ ᴛʜᴇ ʀᴇᴘᴏ and join group chat (or else auto upgrading won't work)*
-- *Get Your Mee6 SessionCode from* [![Generic badge](https://img.shields.io/badge/ᴍɪᴢᴜᴋɪ_Session-blue.svg)](https://replit.com/@Krakinzkon/Mizuki)
-- *Head Over To* [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Krakinz/Mizuki.git)
+- ꜰɪʀꜱᴛ ꜰᴏʀᴋ ᴀɴᴅ ꜱᴛᴀʀ ᴛʜᴇ ʀᴇᴘᴏ and join group chat (or else auto upgrading won't work)
+- Get Your Mee6 SessionCode from [![Generic badge](https://img.shields.io/badge/ᴍɪᴢᴜᴋɪ_Session-blue.svg)](https://replit.com/@Krakinzkon/Mizuki)
+- Head Over To [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Krakinz/Mizuki.git)
 
 🔸[`ᴡʜᴀᴛꜱᴀᴘᴘ`](https://chat.whatsapp.com/KlMRYxCTte5H8TIIupbRVf) 🔸[`ᴅɪꜱᴄᴏʀᴅ`](https://discord.gg/xcFN6NDHEV)
 
