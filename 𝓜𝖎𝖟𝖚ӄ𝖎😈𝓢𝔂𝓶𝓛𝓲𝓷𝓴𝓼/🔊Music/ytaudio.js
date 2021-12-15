@@ -30,6 +30,7 @@ module.exports = {
     `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
     const 𝓜𝖎𝖟𝖚ӄ𝖎𝔊𝔦𝔱 = require(`simple-git`)();
     const FetchedLink = yts(arg.join(` `));
+    const videos = FetchedLink.videos.slice(0, 1);
     await 𝓜𝖎𝖟𝖚ӄ𝖎𝔊𝔦𝔱.fetch();
     var 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓 = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
     var 𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰 = 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓.substring(0, 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓.length - 15);
@@ -201,7 +202,6 @@ You Can Get URL by using ${ᴋᴇɪ}yts <song-name>`,
                   )
                   .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
               } else {
-                const videos = FetchedLink.videos.slice(0, 1);
                 videos.forEach(function (youfound) {
                   Fetched = `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
 
@@ -226,7 +226,6 @@ You Can Get URL by using ${ᴋᴇɪ}yts <song-name>`,
                   .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
                 `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
 
-                const videos = FetchedLink.videos.slice(0, 1);
                 videos.forEach(function (youfound) {
                   Fetched = `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
 
@@ -279,7 +278,6 @@ You Can Get URL by using ${ᴋᴇɪ}yts <song-name>`,
                   )
                   .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
               } else {
-                const videos = FetchedLink.videos.slice(0, 1);
                 videos.forEach(function (youfound) {
                   Fetched = `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
 
@@ -304,7 +302,6 @@ You Can Get URL by using ${ᴋᴇɪ}yts <song-name>`,
                   .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
                 `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
 
-                const videos = FetchedLink.videos.slice(0, 1);
                 videos.forEach(function (youfound) {
                   Fetched = `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
   
