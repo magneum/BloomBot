@@ -53,7 +53,7 @@ const env = {
           },
         }),
   ERROR: `https://i.postimg.cc/8z8FQJvf/Whats-App-Image-2021-12-14-at-8-00-29-AM.jpg`,
-  MEE: `https://i.postimg.cc/Z5t8qKwz/Main-01.jpg`,
+  MEE: `https://i.postimg.cc/fyDMTPVN/image.jpg`,
   INVL: `https://i.postimg.cc/NjDyyvY0/Mizuki.jpg`,
   ARC: `https://i.postimg.cc/NjDyyvY0/Mizuki.jpg`,
   UPT: `https://i.postimg.cc/NjDyyvY0/Mizuki.jpg`,
