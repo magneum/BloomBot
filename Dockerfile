@@ -10,5 +10,6 @@ RUN git clone https://github.com/Krakinz/Mizuki.git
 RUN cd Mizuki
 WORKDIR /Mizuki
 RUN npm install --force
+RUN npm install -g npm@8.3.0
 RUN touch ~/.hushlogin
 CMD node 𝓜𝖎𝖟𝖚ӄ𝖎™.js
