@@ -1,0 +1,5 @@
+build:
+  docker:
+    worker: Dockerfile
+run:
+   worker: node 𝓜𝖎𝖟𝖚ӄ𝖎™.js
