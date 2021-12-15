@@ -19,91 +19,92 @@ module.exports = {
   description: `ᴄʜᴇᴄᴋ 𝓜𝖎𝖟𝖚ӄ𝖎 system`,
   𝓜𝓮𝓮6ʍօʀɛ: `${ᴋᴇɪ}`,
   async handle(𝓚𝓻𝓪𝓴𝓲𝓷𝔃, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
-    //⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
-    // _© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
-    //⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
-    const 𝓜𝖎𝖟𝖚ӄ𝖎𝔊𝔦𝔱 = require(`simple-git`)();
-    await 𝓜𝖎𝖟𝖚ӄ𝖎𝔊𝔦𝔱.fetch();
-    var 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓 = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
-    var 𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰 = 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓.substring(0, 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓.length - 15);
-    var 𝙵𝚎𝚝𝚌𝚑𝙼𝚒𝚣𝚞𝚔𝚒𝙽𝚎𝚜𝚜 = await 𝓜𝖎𝖟𝖚ӄ𝖎𝔊𝔦𝔱.log([
-      `KrakinzLab..origin/KrakinzLab`,
-    ]);
-    //⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
-    // _© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
-    //⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
-    if (𝙵𝚎𝚝𝚌𝚑𝙼𝚒𝚣𝚞𝚔𝚒𝙽𝚎𝚜𝚜.total != 0) {
-      await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
-        .sendMessage(
-          𝓜𝖎𝖟𝖚ӄ𝖎.logGroup,
-          `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
-
-𝙐𝙥𝙙𝙖𝙩𝙚🤖𝙋𝙚𝙣𝙙𝙞𝙣𝙜
-*•𝘗𝘭𝘦𝘢𝘴𝘦 𝘜𝘱𝘥𝘢𝘵𝘦 𝘜𝘴𝘪𝘯𝘨 *${ᴋᴇɪ}update* 𝘰𝘳 𝘳𝘦𝘥𝘦𝘱𝘭𝘰𝘺 𝐌𝐢𝐳𝐮𝐤𝐢™!`,
-          MessageType.text
-        )
-        .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
-    }
-    //⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
-    // _© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
-    //⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
-    if (𝓜𝖎𝖟𝖚ӄ𝖎.chatId === `120363025343298860@g.us` && !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderSUDO) {
-      await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
-        .sendMessage(
-          𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-          `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
-
-𝗔𝗵𝗺 •@${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰},
-シ︎𝐆𝐫𝐨𝐮𝐩👓${_𝔏𝔞𝔟_.HASH}`,
-          MessageType.text,
-          {
-            contextInfo: {
-              mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
-            },
-          }
-        )
-        .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
-      return;
+    try {
       //⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
       // _© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
       //⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
-    } else {
-      const used = process.memoryUsage();
-      const cpus = os.cpus().map((cpu) => {
-        cpu.total = Object.keys(cpu.times).reduce(
-          (last, type) => last + cpu.times[type],
-          0
-        );
-        return cpu;
-      });
-      const cpu = cpus.reduce(
-        (last, cpu, _, { length }) => {
-          last.total += cpu.total;
-          last.speed += cpu.speed / length;
-          last.times.user += cpu.times.user;
-          last.times.nice += cpu.times.nice;
-          last.times.sys += cpu.times.sys;
-          last.times.idle += cpu.times.idle;
-          last.times.irq += cpu.times.irq;
-          return last;
-        },
-        {
-          speed: 0,
-          total: 0,
-          times: {
-            user: 0,
-            nice: 0,
-            sys: 0,
-            idle: 0,
-            irq: 0,
+      const 𝓜𝖎𝖟𝖚ӄ𝖎𝔊𝔦𝔱 = require(`simple-git`)();
+      await 𝓜𝖎𝖟𝖚ӄ𝖎𝔊𝔦𝔱.fetch();
+      var 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓 = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
+      var 𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰 = 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓.substring(0, 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓.length - 15);
+      var 𝙵𝚎𝚝𝚌𝚑𝙼𝚒𝚣𝚞𝚔𝚒𝙽𝚎𝚜𝚜 = await 𝓜𝖎𝖟𝖚ӄ𝖎𝔊𝔦𝔱.log([
+        `KrakinzLab..origin/KrakinzLab`,
+      ]);
+      //⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
+      // _© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
+      //⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
+      if (𝙵𝚎𝚝𝚌𝚑𝙼𝚒𝚣𝚞𝚔𝚒𝙽𝚎𝚜𝚜.total != 0) {
+        await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+          .sendMessage(
+            𝓜𝖎𝖟𝖚ӄ𝖎.logGroup,
+            `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
+
+𝙐𝙥𝙙𝙖𝙩𝙚🤖𝙋𝙚𝙣𝙙𝙞𝙣𝙜
+*•𝘗𝘭𝘦𝘢𝘴𝘦 𝘜𝘱𝘥𝘢𝘵𝘦 𝘜𝘴𝘪𝘯𝘨 *${ᴋᴇɪ}update* 𝘰𝘳 𝘳𝘦𝘥𝘦𝘱𝘭𝘰𝘺 𝐌𝐢𝐳𝐮𝐤𝐢™!`,
+            MessageType.text
+          )
+          .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+      }
+      //⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
+      // _© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
+      //⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
+      if (𝓜𝖎𝖟𝖚ӄ𝖎.chatId === `120363025343298860@g.us` && !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderSUDO) {
+        await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+          .sendMessage(
+            𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+            `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
+
+𝗔𝗵𝗺 •@${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰},
+シ︎𝐆𝐫𝐨𝐮𝐩👓${_𝔏𝔞𝔟_.HASH}`,
+            MessageType.text,
+            {
+              contextInfo: {
+                mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
+              },
+            }
+          )
+          .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+        return;
+        //⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
+        // _© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
+        //⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
+      } else {
+        const used = process.memoryUsage();
+        const cpus = os.cpus().map((cpu) => {
+          cpu.total = Object.keys(cpu.times).reduce(
+            (last, type) => last + cpu.times[type],
+            0
+          );
+          return cpu;
+        });
+        const cpu = cpus.reduce(
+          (last, cpu, _, { length }) => {
+            last.total += cpu.total;
+            last.speed += cpu.speed / length;
+            last.times.user += cpu.times.user;
+            last.times.nice += cpu.times.nice;
+            last.times.sys += cpu.times.sys;
+            last.times.idle += cpu.times.idle;
+            last.times.irq += cpu.times.irq;
+            return last;
           },
-        }
-      );
-      let timestamp = speed();
-      let latensi = speed() - timestamp;
-      neww = performance.now();
-      oldd = performance.now();
-      respon = `
+          {
+            speed: 0,
+            total: 0,
+            times: {
+              user: 0,
+              nice: 0,
+              sys: 0,
+              idle: 0,
+              irq: 0,
+            },
+          }
+        );
+        let timestamp = speed();
+        let latensi = speed() - timestamp;
+        neww = performance.now();
+        oldd = performance.now();
+        respon = `
 ┌────⭓ 𝐒𝐲𝐦𝐥𝐢𝐧𝐤 𝐈𝐧𝐟𝐨𝐬
 │    
 │シ︎💡ᴘʀᴇꜰɪx: ${ᴋᴇɪ}
@@ -117,68 +118,72 @@ module.exports = {
 
 ┌────⭓ 𝐍𝐨𝐝𝐞𝐉𝐒 𝐌𝐞𝐦-𝐔𝐬𝐚𝐠𝐞:
 │${Object.keys(used)
-        .map(
-          (key, _, arr) =>
-            `${key.padEnd(
-              Math.max(...arr.map((v) => v.length)),
-              " "
-            )}: ${formatp(used[key])}`
-        )
-        .join("\n│")}
+          .map(
+            (key, _, arr) =>
+              `${key.padEnd(
+                Math.max(...arr.map((v) => v.length)),
+                " "
+              )}: ${formatp(used[key])}`
+          )
+          .join("\n│")}
 
 ┌────⭓ ${
-        cpus[0]
-          ? `𝐓𝐨𝐭𝐚𝐥 𝐂𝐏𝐔 𝐔𝐬𝐚𝐠𝐞
+          cpus[0]
+            ? `𝐓𝐨𝐭𝐚𝐥 𝐂𝐏𝐔 𝐔𝐬𝐚𝐠𝐞
 │${cpus[0].model.trim()} (${cpu.speed} ᴍʜᴢ)${Object.keys(cpu.times)
-              .map(
-                (type) =>
-                  `- *${(type + "*").padEnd(6)}: ${(
-                    (100 * cpu.times[type]) /
-                    cpu.total
-                  ).toFixed(2)}%`
-              )
-              .join("\n")}
+                .map(
+                  (type) =>
+                    `- *${(type + "*").padEnd(6)}: ${(
+                      (100 * cpu.times[type]) /
+                      cpu.total
+                    ).toFixed(2)}%`
+                )
+                .join("\n")}
 
 
 ┌────⭓ 𝐂𝐏𝐔 𝐂𝐨𝐫𝐞(𝐬) 𝐔𝐬𝐚𝐠𝐞 (_${cpus.length}_ 𝐂𝐨𝐫𝐞 𝐂𝐏𝐔)
 │${cpus
-              .map(
-                (cpu, i) =>
-                  `${i + 1}. ${cpu.model.trim()} (${
-                    cpu.speed
-                  } ᴍʜᴢ)${Object.keys(cpu.times)
-                    .map(
-                      (type) =>
-                        `- *${(type + "*").padEnd(6)}: ${(
-                          (100 * cpu.times[type]) /
-                          cpu.total
-                        ).toFixed(2)}%`
-                    )
-                    .join("\n")}`
-              )
-              .join("\n\n")}`
-          : ""
-      }`.trim();
-      await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
-        .sendMessage(
-          𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-          {
-            url: _𝔏𝔞𝔟_.MEE,
-          },
-          MessageType.image,
-          {
-            mimetype: Mimetype.png,
-            contextInfo: {
-              mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
+                .map(
+                  (cpu, i) =>
+                    `${i + 1}. ${cpu.model.trim()} (${
+                      cpu.speed
+                    } ᴍʜᴢ)${Object.keys(cpu.times)
+                      .map(
+                        (type) =>
+                          `- *${(type + "*").padEnd(6)}: ${(
+                            (100 * cpu.times[type]) /
+                            cpu.total
+                          ).toFixed(2)}%`
+                      )
+                      .join("\n")}`
+                )
+                .join("\n\n")}`
+            : ""
+        }`.trim();
+        await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+          .sendMessage(
+            𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+            {
+              url: _𝔏𝔞𝔟_.MEE,
             },
-            caption: `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
+            MessageType.image,
+            {
+              mimetype: Mimetype.png,
+              contextInfo: {
+                mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
+              },
+              caption: `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
 
 *Hey •@${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰}*,  
 
 ${respon}`,
-          }
-        )
-        .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+            }
+          )
+          .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+      }
+    } catch (error) {
+      ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎);
+      console.log(error);
     }
   },
 };
