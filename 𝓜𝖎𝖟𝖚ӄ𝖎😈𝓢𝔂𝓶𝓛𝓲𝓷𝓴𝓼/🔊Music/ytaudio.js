@@ -9,7 +9,8 @@ const ℓιєηт = require(`../../𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽�
 const { yta } = require(`../../𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/youmaker`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
-const fn = Date.now() / 10000;
+const nowbyk = Date.now() / 10000;
+const now = Date.now();
 const request = require("request");
 const axios = require(`axios`);
 const fs = require(`fs`);
@@ -32,7 +33,6 @@ module.exports = {
     var 𝙵𝚎𝚝𝚌𝚑𝙼𝚒𝚣𝚞𝚔𝚒𝙽𝚎𝚜𝚜 = await 𝓜𝖎𝖟𝖚ӄ𝖎𝔊𝔦𝔱.log([
       `KrakinzLab..origin/KrakinzLab`,
     ]);
-    const filename = `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/ytvideo_${fn.toString()}${𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓}${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰}`;
     `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
     if (𝙵𝚎𝚝𝚌𝚑𝙼𝚒𝚣𝚞𝚔𝚒𝙽𝚎𝚜𝚜.total != 0) {
       await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
@@ -85,7 +85,13 @@ module.exports = {
           .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
       }
       `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
-      const YouFetchers = async (to, url, text = ``, mention = []) => {
+      const YouFetchers = async (
+        filename,
+        to,
+        url,
+        text = ``,
+        mention = []
+      ) => {
         if (mention.length > 0) {
           text = normalizeMention(to, text, mention);
         }
@@ -160,10 +166,11 @@ You Can Get URL by using ${ᴋᴇɪ}yts <song-name>`,
       }
       `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
       if (!𝓜𝖎𝖟𝖚ӄ𝖎.isGroup) {
+        const filename = `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/${now}_ytaudiosprivate_${nowbyk.toString()}${𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓}${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰}`;
         yta(arg[0]).then((gotResp) => {
-          const { main_link, thumb, title, filesize } = gotResp;
+          const { dl_link, thumb, title, filesize } = gotResp;
           axios
-            .get(`https://tinyurl.com/api-create.php?url=${main_link}`)
+            .get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
             .then((alpha) => {
               if (Number(filesize) >= 9999999) {
                 return 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
@@ -211,8 +218,9 @@ _𝗣𝗹𝗲𝗮𝘀𝗲 𝗪𝗮𝗶𝘁 𝗳𝗼𝗿 𝘁𝗵𝗲 𝗮𝘂�
                   )
                   .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
                 YouFetchers(
+                  filename,
                   𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓,
-                  main_link,
+                  dl_link,
                   `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
 
 🍻𝐓𝐢𝐭𝐥𝐞•⪢ ${title}
@@ -224,10 +232,11 @@ _𝗣𝗹𝗲𝗮𝘀𝗲 𝗪𝗮𝗶𝘁 𝗳𝗼𝗿 𝘁𝗵𝗲 𝗮𝘂�
       }
       `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
       if (𝓜𝖎𝖟𝖚ӄ𝖎.isGroup) {
+        const filename = `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/${now}ytaudiosgroups_${nowbyk.toString()}${𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓}${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰}`;
         yta(arg[0]).then((gotResp) => {
-          const { main_link, thumb, title, filesize } = gotResp;
+          const { dl_link, thumb, title, filesize } = gotResp;
           axios
-            .get(`https://tinyurl.com/api-create.php?url=${main_link}`)
+            .get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
             .then((alpha) => {
               if (Number(filesize) >= 9999999) {
                 return 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
@@ -275,8 +284,9 @@ _𝗣𝗹𝗲𝗮𝘀𝗲 𝗖𝗵𝗲𝗰𝗸 𝗬𝗼𝘂𝗿 𝗣𝗿𝗶𝘃
                   )
                   .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
                 YouFetchers(
+                  filename,
                   𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓,
-                  main_link,
+                  dl_link,
                   `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
 
 🍻𝐓𝐢𝐭𝐥𝐞•⪢ ${title}
