@@ -216,7 +216,7 @@ You Can Get URL by using ${ᴋᴇɪ}yts <song-name>`,
 📥𝐖𝐞𝐛-𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝⤞ https://www.youtubepp.com/watch?v=${id}`;
                 });
                 `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
-                await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+                𝓚𝓻𝓪𝓴𝓲𝓷𝔃
                   .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, Fetched, MessageType.text, {
                     quoted: chat,
                     contextInfo: {
@@ -295,7 +295,7 @@ You Can Get URL by using ${ᴋᴇɪ}yts <song-name>`,
 📥𝐖𝐞𝐛-𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝⤞ https://www.youtubepp.com/watch?v=${id}`;
                 });
                 `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
-                await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+                𝓚𝓻𝓪𝓴𝓲𝓷𝔃
                   .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, Fetched, MessageType.text, {
                     quoted: chat,
                     contextInfo: {
