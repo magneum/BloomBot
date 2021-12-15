@@ -35,8 +35,6 @@ module.exports = {
     var 𝙵𝚎𝚝𝚌𝚑𝙼𝚒𝚣𝚞𝚔𝚒𝙽𝚎𝚜𝚜 = await 𝓜𝖎𝖟𝖚ӄ𝖎𝔊𝔦𝔱.log([
       `KrakinzLab..origin/KrakinzLab`,
     ]);
-    const FetchedLink1 = await yts(arg.join(` `));
-    const FetchedLink = await yts(arg.join(` `));
     `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
     if (𝙵𝚎𝚝𝚌𝚑𝙼𝚒𝚣𝚞𝚔𝚒𝙽𝚎𝚜𝚜.total != 0) {
       await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
@@ -89,6 +87,8 @@ module.exports = {
           .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
       }
       `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
+      const FetchedLink1 = await yts(arg.join(` `));
+      const FetchedLink = await yts(arg.join(` `));
       const YouFetchers = async (
         filename,
         to,
