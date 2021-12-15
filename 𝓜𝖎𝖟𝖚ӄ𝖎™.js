@@ -313,9 +313,15 @@ ${update.desc}`,
   //•⬡• —••÷[ 𝓜𝖎𝖟𝖚ӄ𝖎™ ]÷••—  ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ has been licensed under Apache License
   `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
   𝓚𝓻𝓪𝓴𝓲𝓷𝔃.on(`group-participants-update`, async (update) => {
+    const GroupMemData = await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃.groupMetadata(update.jid);
+    const GroupMemG = GroupMemData.participants.length;
+    const GroupMemBio = await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃.getStatus(
+      update.participants[0],
+      MessageType.text
+    );
     const MemNum = update.participants[0];
     if (update.action == `add` && MemNum.includes(𝓚𝓻𝓪𝓴𝓲𝓷𝔃.user.jid)) {
-      console.log(`⬡••••••••⬡    ⦿𝐌𝐢𝐳𝐮𝐤𝐢™⦿Added    ⬡••••••••⬡`);
+      console.log(`⬡••••••••⬡    𝐌𝐢𝐳𝐮𝐤𝐢™ 𝐀𝐝𝐝𝐞𝐝    ⬡••••••••⬡`);
     }
     let content = fs.readFileSync(`./𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/𝓜𝖎𝖟𝖚ӄ𝖎.jpg`);
     const media = await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃.prepareMessage(
@@ -362,25 +368,17 @@ ${update.desc}`,
         }
       )
       .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
-    const GroupMemData = await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃.groupMetadata(update.jid);
-    const GroupMemG = GroupMemData.participants.length;
-    const GroupMemBio = await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃.getStatus(
-      update.participants[0],
-      MessageType.text
-    );
-
-    console.log(
-      `=================😈    |  ɢʀᴏᴜᴘ ᴘᴀʀᴛɪᴄɪᴘᴀɴᴛ ᴜᴘᴅᴀᴛᴇ  |    😈=================`
-    );
     var GroupID = update.jid;
     console.log(GroupID);
-
     try {
       if (update.action === `add`) {
         var enable = await ɠɠ𝓜𝖎𝖟𝖚ӄ𝖎.checkSettings(GroupID, `setwelcome`);
         if (enable === false || enable === `OFF`) {
           return;
         }
+        console.log(
+          `=================😈    |  ɢʀᴏᴜᴘ ᴜᴘᴅᴀᴛᴇ  |    😈=================`
+        );
         const code = await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃.groupInviteCode(𝓜𝖎𝖟𝖚ӄ𝖎.chatId);
         var Fetched = await ɠɠ𝓜𝖎𝖟𝖚ӄ𝖎.getMessage(GroupID, `setwelcome`);
         try {
