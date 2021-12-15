@@ -93,7 +93,7 @@ module.exports = {
             text = normalizeMention(to, text, mention);
           }
           var Download_Video = function (uri, filename, callback) {
-            request.head(uri, function (err, gotResp, body) {
+            request.head(uri, function (ℓαвєяяσя, gotResp, body) {
               mime = gotResp.headers[`content-type`];
               request(uri)
                 .pipe(fs.createWriteStream(filename))

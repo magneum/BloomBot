@@ -339,8 +339,8 @@ ${update.desc}`,
             directory: `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/`,
             filename: `𝕻𝕻𝖑𝖊𝖙𝖊𝖗.jpg`,
           },
-          async function (err) {
-            if (err) throw err;
+          async function (ℓαвєяяσя) {
+            if (ℓαвєяяσя) throw ℓαвєяяσя;
             const weltext = ᴛᴡᴇʟ[Math.floor(Math.random() * ᴛᴡᴇʟ.length)];
             personcum = MemNum.substring(0, MemNum.length - 15);
             let content = fs.readFileSync(`./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/𝕻𝕻𝖑𝖊𝖙𝖊𝖗.jpg`);
@@ -412,8 +412,8 @@ ${Fetched.message}`,
               directory: `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/`,
               filename: `𝕸𝖊𝖊𝕷𝖊𝖋𝖙𝖊𝖗.jpg`,
             },
-            async function (err) {
-              if (err) throw err;
+            async function (ℓαвєяяσя) {
+              if (ℓαвєяяσя) throw ℓαвєяяσя;
               const byetext = ᴛʙʏᴇ[Math.floor(Math.random() * ᴛʙʏᴇ.length)];
               personcum = MemNum.substring(0, MemNum.length - 15);
               return await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃

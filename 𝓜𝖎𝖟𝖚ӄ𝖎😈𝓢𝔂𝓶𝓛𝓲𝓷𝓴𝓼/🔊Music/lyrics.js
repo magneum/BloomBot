@@ -100,7 +100,7 @@ ${lyrics.lyrics}`,
               }
             )
             .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
-        } catch (err) {
+        } catch (ℓαвєяяσя) {
           try {
             const lyric = await lyrics.search(song);
             await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃

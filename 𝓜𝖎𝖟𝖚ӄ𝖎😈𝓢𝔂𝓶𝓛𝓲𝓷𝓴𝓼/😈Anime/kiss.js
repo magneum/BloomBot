@@ -81,10 +81,10 @@ module.exports = {
               directory: `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/`,
               filename: `kiss-${chat.key.id}.gif`,
             },
-            function (err) {
+            function (ℓαвєяяσя) {
               0;
-              if (err) {
-                return console.log(err);
+              if (ℓαвєяяσя) {
+                return console.log(ℓαвєяяσя);
               } else console.log(`Download Done...`);
               const FP = `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/kiss-${chat.key.id}.gif`;
               const SP = `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/kiss-${chat.key.id}.webp`;
@@ -116,19 +116,8 @@ setsar=1`
                       MessageType.sticker,
                       { quoted: chat }
                     )
-                    .catch((CYΣЯЯ) =>
-                      𝓚𝓻𝓪𝓴𝓲𝓷𝔃.sendMessage(
-                        𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                        `ꜱᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ ᴡʀᴏɴɢ.ʜᴇʀᴇ ᴀʀᴇ ꜱᴏᴍᴇ ʟᴏɢꜱ ꜱɪɴᴄᴇ ᴡʜᴇɴ ᴛʜᴇ ʙᴏᴛ ᴡᴀꜱ ɴᴏᴛ ʀᴇꜱᴘᴏɴᴅɪɴɢ ᴀꜱ ᴇxᴘᴇᴄᴛᴇᴅ.
-
-⚠️𝗘𝗿𝗿𝗼𝗿
-• ${CYΣЯЯ}
-
-
-💡𝗖𝗼𝗺𝗺𝗮𝗻𝗱 • ${𝓜𝖎𝖟𝖚ӄ𝖎.commandName}
-🎮𝗜𝘁 𝘄𝗮𝘀 𝗣𝗠? • ${𝓜𝖎𝖟𝖚ӄ𝖎.isPm}`,
-                        MessageType.text
-                      )
+                    .catch((ℓαвєяяσя) =>
+                      ℓιєηт.catch(ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎)
                     );
                   fs.unlink(FP, (ℓαвєяяσя) => {
                     if (ℓαвєяяσя) {

@@ -83,10 +83,10 @@ module.exports = {
               directory: `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/`,
               filename: `cuddle-${chat.key.id}.gif`,
             },
-            function (err) {
+            function (ℓαвєяяσя) {
               0;
-              if (err) {
-                return console.log(err);
+              if (ℓαвєяяσя) {
+                return console.log(ℓαвєяяσя);
               } else console.log(`Download Done...`);
               const FP = `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/cuddle-${chat.key.id}.gif`;
               const SP = `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/cuddle-${chat.key.id}.webp`;
