@@ -22,7 +22,7 @@ module.exports = {
 name: `kiss`,
 description: `I know you like anime kiss`,
 𝓜𝓮𝓮6ʍօʀɛ: `${ᴋᴇɪ}`,
-async handle(𝓚𝓻𝓪𝓴𝓲𝓷𝔃, ʟคɮ, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
+async handle(𝓚𝓻𝓪𝓴𝓲𝓷𝔃, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
 `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
 const 𝓜𝖎𝖟𝖚ӄ𝖎𝔊𝔦𝔱 = require(`simple-git`)();
 await 𝓜𝖎𝖟𝖚ӄ𝖎𝔊𝔦𝔱.fetch();
@@ -41,7 +41,7 @@ await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
 ❗ *👓𝓜𝓮𝓮6™* 𝙐𝙥𝙙𝙖𝙩𝙚* 𝙋𝙚𝙣𝙙𝙞𝙣𝙜
 *•𝘗𝘭𝘦𝘢𝘴𝘦 𝘜𝘱𝘥𝘢𝘵𝘦 𝘜𝘴𝘪𝘯𝘨 *${ᴋᴇɪ}update* 𝘰𝘳 𝘳𝘦𝘥𝘦𝘱𝘭𝘰𝘺 𝐌𝐢𝐳𝐮𝐤𝐢™!`,
 MessageType.text,
-{ quoted: ʟคɮ }
+{ quoted: chat }
 )
 .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
 `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
@@ -56,7 +56,7 @@ await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
 シ︎𝐆𝐫𝐨𝐮𝐩👓${_𝔏𝔞𝔟_.HASH}`,
 MessageType.text,
 {
-quoted: ʟคɮ,
+quoted: chat,
 contextInfo: {
 mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
 },
@@ -75,7 +75,7 @@ url: `https://i.postimg.cc/KcNwHtZt/ltr.png`,
 },
 MessageType.image,
 {
-quoted: ʟคɮ,
+quoted: chat,
 mimetype: Mimetype.png,
 caption: `Seems Like No Image Was Found.\nPlease Try Again Later!`,
 }
@@ -86,15 +86,15 @@ download(
 image,
 {
 directory: `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/`,
-filename: `kiss-${ʟคɮ.key.id}.gif`,
+filename: `kiss-${chat.key.id}.gif`,
 },
 function (err) {
 0;
 if (err) {
 return console.log(err);
 } else console.log(`Download Done...`);
-const FP = `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/kiss-${ʟคɮ.key.id}.gif`;
-const SP = `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/kiss-${ʟคɮ.key.id}.webp`;
+const FP = `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/kiss-${chat.key.id}.gif`;
+const SP = `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/kiss-${chat.key.id}.webp`;
 ffmpeg(FP)
 .duration(8)
 .outputOptions([
@@ -121,7 +121,7 @@ await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
 fs.readFileSync(SP),
 MessageType.sticker,
-{ quoted: ʟคɮ }
+{ quoted: chat }
 )
 .catch((CYΣЯЯ) =>
 𝓚𝓻𝓪𝓴𝓲𝓷𝔃.sendMessage(

@@ -17,7 +17,7 @@ module.exports = {
 name: `broadcast`,
 description: `Send broadcast Messages to All Groups/Dms You Are In.`,
 𝓜𝓮𝓮6ʍօʀɛ: `${ᴋᴇɪ}`,
-async handle(𝓚𝓻𝓪𝓴𝓲𝓷𝔃, ʟคɮ, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
+async handle(𝓚𝓻𝓪𝓴𝓲𝓷𝔃, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
 `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
 const 𝓜𝖎𝖟𝖚ӄ𝖎𝔊𝔦𝔱 = require(`simple-git`)();
 await 𝓜𝖎𝖟𝖚ӄ𝖎𝔊𝔦𝔱.fetch();
@@ -36,7 +36,7 @@ await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
 𝙐𝙥𝙙𝙖𝙩𝙚🤖𝙋𝙚𝙣𝙙𝙞𝙣𝙜
 *•𝘗𝘭𝘦𝘢𝘴𝘦 𝘜𝘱𝘥𝘢𝘵𝘦 𝘜𝘴𝘪𝘯𝘨 *${ᴋᴇɪ}update* 𝘰𝘳 𝘳𝘦𝘥𝘦𝘱𝘭𝘰𝘺 𝐌𝐞𝐞𝟔™!`,
 MessageType.text,
-{ quoted: ʟคɮ }
+{ quoted: chat }
 )
 .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
 }
@@ -51,7 +51,7 @@ await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
 シ︎𝐆𝐫𝐨𝐮𝐩👓${_𝔏𝔞𝔟_.HASH}`,
 MessageType.text,
 {
-quoted: ʟคɮ,
+quoted: chat,
 contextInfo: {
 mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
 },
@@ -68,7 +68,7 @@ return await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
 `only *𝓜𝖎𝖟𝖚ӄ𝖎-Devs* can use this feature`,
 MessageType.text,
 {
-quoted: ʟคɮ,
+quoted: chat,
 contextInfo: {
 mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
 },
@@ -82,7 +82,7 @@ const nahargs = require(`../../𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/na
 return nahargs
 .nahargs(
 𝓚𝓻𝓪𝓴𝓲𝓷𝔃,
-ʟคɮ,
+chat,
 𝓜𝖎𝖟𝖚ӄ𝖎,
 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓,
 𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰,
@@ -102,7 +102,7 @@ _.jid,
 ${arg.join(` `)}`,
 MessageType.text,
 {
-quoted: ʟคɮ,
+quoted: chat,
 contextInfo: {
 mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
 forwardingScore: 999,
@@ -121,7 +121,7 @@ await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
 𝗔𝗵𝗺 •@${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰},𝗕𝗿𝗼𝗮𝗱𝗖𝗮𝘀𝘁𝗶𝗻𝗴 𝗙𝗶𝗻𝗶𝘀𝗵𝗲𝗱!`,
 MessageType.text,
 {
-quoted: ʟคɮ,
+quoted: chat,
 contextInfo: {
 mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
 },

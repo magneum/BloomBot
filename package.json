@@ -1,10 +1,7 @@
 {
     "name": "mizuki",
     "main": "𝓜𝖎𝖟𝖚ӄ𝖎™.js",
-    "vers": "ɴɪɢʜᴛʟʏ-v14.5",
-    "engines": {
-        "node": ">=17.x"
-    },
+    "vers": "ɴɪɢʜᴛʟʏ-v14.6",
     "dependencies": {
         "@adiwajshing/baileys": "^3.5.3",
         "@cicciosgamino/openweather-apis": "^5.0.1",
@@ -28,7 +25,6 @@
         "genius-lyrics": "^4.3.4",
         "get-lyrics-hd": "^0.0.1",
         "get-video-id": "^3.4.3",
-        "google-image-search": "^0.1.0",
         "google-search-results-nodejs": "^2.0.1",
         "google-tts-api": "^2.0.2",
         "got": "^11.8.2",

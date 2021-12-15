@@ -18,7 +18,7 @@ module.exports = {
 name: `poke`,
 description: `I know you like anime poke`,
 𝓜𝓮𝓮6ʍօʀɛ: `${ᴋᴇɪ}`,
-async handle(𝓚𝓻𝓪𝓴𝓲𝓷𝔃, ʟคɮ, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
+async handle(𝓚𝓻𝓪𝓴𝓲𝓷𝔃, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
 `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
 const 𝓜𝖎𝖟𝖚ӄ𝖎𝔊𝔦𝔱 = require(`simple-git`)();
 await 𝓜𝖎𝖟𝖚ӄ𝖎𝔊𝔦𝔱.fetch();
@@ -51,7 +51,7 @@ await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
 シ︎𝐆𝐫𝐨𝐮𝐩👓${_𝔏𝔞𝔟_.HASH}`,
 MessageType.text,
 {
-quoted: ʟคɮ,
+quoted: chat,
 contextInfo: {
 mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
 },
@@ -62,7 +62,7 @@ return;
 }
 `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
 if (𝓜𝖎𝖟𝖚ӄ𝖎.isGroup && 𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
-var Receiver = ʟคɮ.message.extendedTextMessage.contextInfo.participant;
+var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
 personreceived = Receiver.substring(0, Receiver.length - 15);
 `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
 await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
@@ -73,7 +73,7 @@ url: await anime.poke(),
 },
 MessageType.image,
 {
-quoted: ʟคɮ,
+quoted: chat,
 mimetype: Mimetype.jpeg || Mimetype.png,
 contextInfo: { mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓, Receiver] },
 caption: `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
@@ -93,7 +93,7 @@ url: await anime.poke(),
 },
 MessageType.image,
 {
-quoted: ʟคɮ,
+quoted: chat,
 mimetype: Mimetype.jpeg || Mimetype.png,
 contextInfo: { mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓] },
 caption: `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
@@ -113,7 +113,7 @@ url: await anime.poke(),
 },
 MessageType.image,
 {
-quoted: ʟคɮ,
+quoted: chat,
 mimetype: Mimetype.jpeg || Mimetype.png,
 caption: `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
 

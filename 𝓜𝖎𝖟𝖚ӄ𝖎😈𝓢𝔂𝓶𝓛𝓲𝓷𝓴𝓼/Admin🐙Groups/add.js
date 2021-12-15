@@ -19,7 +19,7 @@ module.exports = {
   𝓜𝓮𝓮6ʍօʀɛ: `Example -
 ${ᴋᴇɪ}add <country-code>0000000000
 ${ᴋᴇɪ}add 910000000000`,
-  async handle(𝓚𝓻𝓪𝓴𝓲𝓷𝔃, ʟคɮ, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
+  async handle(𝓚𝓻𝓪𝓴𝓲𝓷𝔃, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
     `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
     const 𝓜𝖎𝖟𝖚ӄ𝖎𝔊𝔦𝔱 = require(`simple-git`)();
     await 𝓜𝖎𝖟𝖚ӄ𝖎𝔊𝔦𝔱.fetch();
@@ -38,7 +38,7 @@ ${ᴋᴇɪ}add 910000000000`,
 𝙐𝙥𝙙𝙖𝙩𝙚🤖𝙋𝙚𝙣𝙙𝙞𝙣𝙜
 *•𝘗𝘭𝘦𝘢𝘴𝘦 𝘜𝘱𝘥𝘢𝘵𝘦 𝘜𝘴𝘪𝘯𝘨 *${ᴋᴇɪ}update* 𝘰𝘳 𝘳𝘦𝘥𝘦𝘱𝘭𝘰𝘺 𝐌𝐢𝐳𝐮𝐤𝐢™!`,
           MessageType.text,
-          { quoted: ʟคɮ }
+          { quoted: chat }
         )
         .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
     }
@@ -53,7 +53,7 @@ ${ᴋᴇɪ}add 910000000000`,
 シ︎𝐆𝐫𝐨𝐮𝐩👓${_𝔏𝔞𝔟_.HASH}`,
           MessageType.text,
           {
-            quoted: ʟคɮ,
+            quoted: chat,
             contextInfo: {
               mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
             },
@@ -74,7 +74,7 @@ ${ᴋᴇɪ}add 910000000000`,
             },
             MessageType.image,
             {
-              quoted: ʟคɮ,
+              quoted: chat,
               mimetype: Mimetype.png,
               caption: `
     ⚠️𝗘𝗿𝗿𝗼𝗿: @${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰}, *ʏᴏᴜ ᴅᴏɴ'ᴛ ꜱᴇᴇᴍ ᴛᴏ ʙᴇ ᴀᴅᴍɪɴ..*`,
@@ -90,7 +90,7 @@ ${ᴋᴇɪ}add 910000000000`,
 For instance,  
 *${ᴋᴇɪ}add <NUMBER>* .`,
             MessageType.text,
-            { quoted: ʟคɮ }
+            { quoted: chat }
           )
           .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
         return;
@@ -104,7 +104,7 @@ For instance,
 ${ᴋᴇɪ}add <country-code>0000000000
 ${ᴋᴇɪ}add 910000000000`,
             MessageType.text,
-            { quoted: ʟคɮ }
+            { quoted: chat }
           )
           .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
         return;
@@ -126,7 +126,7 @@ Example -
 ${ᴋᴇɪ}add <country-code>0000000000
 ${ᴋᴇɪ}add 910000000000`,
             MessageType.text,
-            { quoted: ʟคɮ }
+            { quoted: chat }
           )
           .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
         return;
@@ -141,7 +141,7 @@ ${ᴋᴇɪ}add 910000000000`,
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
             `The number entered cannot be added back before 24 hours.`,
             MessageType.text,
-            { quoted: ʟคɮ }
+            { quoted: chat }
           )
           .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
         return;
@@ -151,7 +151,7 @@ ${ᴋᴇɪ}add 910000000000`,
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
             `The number entered is already a member of this group.`,
             MessageType.text,
-            { quoted: ʟคɮ }
+            { quoted: chat }
           )
           .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
         return;
@@ -161,7 +161,7 @@ ${ᴋᴇɪ}add 910000000000`,
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
           ` ` + NUM + ` added successfully!` + ``,
           MessageType.text,
-          { quoted: ʟคɮ }
+          { quoted: chat }
         )
         .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
     } catch (error) {
@@ -172,7 +172,7 @@ ${ᴋᴇɪ}add 910000000000`,
             `The number you're trying to add isn't available on WhatsApp.
 Please verify the number again.`,
             MessageType.text,
-            { quoted: ʟคɮ }
+            { quoted: chat }
           )
           .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
       }

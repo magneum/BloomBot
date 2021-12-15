@@ -18,7 +18,7 @@ module.exports = {
   description: `Add the number to banlist. You can reply to the person in group / pm or use ${ᴋᴇɪ}ban <number>.`,
   𝓜𝓮𝓮6ʍօʀɛ: `Tag the person or
 ${ᴋᴇɪ}ban <country-code>0000000000`,
-  async handle(𝓚𝓻𝓪𝓴𝓲𝓷𝔃, ʟคɮ, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
+  async handle(𝓚𝓻𝓪𝓴𝓲𝓷𝔃, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
     `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
     const 𝓜𝖎𝖟𝖚ӄ𝖎𝔊𝔦𝔱 = require(`simple-git`)();
     await 𝓜𝖎𝖟𝖚ӄ𝖎𝔊𝔦𝔱.fetch();
@@ -37,7 +37,7 @@ ${ᴋᴇɪ}ban <country-code>0000000000`,
 𝙐𝙥𝙙𝙖𝙩𝙚🤖𝙋𝙚𝙣𝙙𝙞𝙣𝙜
 *•𝘗𝘭𝘦𝘢𝘴𝘦 𝘜𝘱𝘥𝘢𝘵𝘦 𝘜𝘴𝘪𝘯𝘨 *${ᴋᴇɪ}update* 𝘰𝘳 𝘳𝘦𝘥𝘦𝘱𝘭𝘰𝘺 𝐌𝐢𝐳𝐮𝐤𝐢™!`,
           MessageType.text,
-          { quoted: ʟคɮ }
+          { quoted: chat }
         )
         .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
     }
@@ -52,7 +52,7 @@ ${ᴋᴇɪ}ban <country-code>0000000000`,
 シ︎𝐆𝐫𝐨𝐮𝐩👓${_𝔏𝔞𝔟_.HASH}`,
           MessageType.text,
           {
-            quoted: ʟคɮ,
+            quoted: chat,
             contextInfo: {
               mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
             },
@@ -68,12 +68,12 @@ ${ᴋᴇɪ}ban <country-code>0000000000`,
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
           `Tag a message or enter a number to proceed.`,
           MessageType.text,
-          { quoted: ʟคɮ }
+          { quoted: chat }
         )
         .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
       return;
     }
-    const reply = ʟคɮ.message.extendedTextMessage;
+    const reply = chat.message.extendedTextMessage;
     var contact = ``;
     if (!arg.length > 0) {
       contact = reply.contextInfo.participant.split(`@`)[0];
@@ -94,7 +94,7 @@ Approved Syntax:
 2. Tag the person
 ${ᴋᴇɪ}ban <country-code>0000000000`,
                 MessageType.text,
-                { quoted: ʟคɮ }
+                { quoted: chat }
               )
               .catch((cᴇʀʀᴏʀ) => {
                 ℓιєηт.catch((cᴇʀʀᴏʀ, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
@@ -115,7 +115,7 @@ Approved Syntax:
 2. Tag the person
 ${ᴋᴇɪ}ban <country-code>0000000000`,
               MessageType.text,
-              { quoted: ʟคɮ }
+              { quoted: chat }
             )
             .catch((cᴇʀʀᴏʀ) => {
               ℓιєηт.catch((cᴇʀʀᴏʀ, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
@@ -138,7 +138,7 @@ ${ᴋᴇɪ}ban <country-code>0000000000`,
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
           `Bot can not ban itself`,
           MessageType.text,
-          { quoted: ʟคɮ }
+          { quoted: chat }
         )
         .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
       return;
@@ -150,7 +150,7 @@ ${ᴋᴇɪ}ban <country-code>0000000000`,
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
           `Tag a message or enter a number to proceed.`,
           MessageType.text,
-          { quoted: ʟคɮ }
+          { quoted: chat }
         )
         .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
       return;
@@ -162,7 +162,7 @@ ${ᴋᴇɪ}ban <country-code>0000000000`,
         𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
         `*` + contact + ` baned successfully.*`,
         MessageType.text,
-        { quoted: ʟคɮ }
+        { quoted: chat }
       )
       .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
   },

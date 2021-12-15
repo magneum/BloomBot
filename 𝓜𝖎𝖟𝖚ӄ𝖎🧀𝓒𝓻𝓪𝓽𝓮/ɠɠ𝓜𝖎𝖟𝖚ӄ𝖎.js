@@ -9,7 +9,7 @@ const sequelize = _𝔏𝔞𝔟_.POSTQL;
 const Greeting = sequelize.define(
   `Greeting`,
   {
-    ʟคɮ: {
+    chat: {
       type: DataTypes.STRING,
       allowNull: false,
     },
@@ -37,7 +37,7 @@ const Greeting = sequelize.define(
 async function getMessage(jid = null, type) {
   var Msg = await Greeting.findAll({
     where: {
-      ʟคɮ: jid,
+      chat: jid,
       greetingType: type,
     },
   });
@@ -56,7 +56,7 @@ async function getMessage(jid = null, type) {
 async function checkSettings(jid = null, type) {
   var Msg = await Greeting.findAll({
     where: {
-      ʟคɮ: jid,
+      chat: jid,
       greetingType: type,
     },
   });
@@ -83,7 +83,7 @@ async function changeSettings(groupJid = null, isWorking) {
     },
     {
       where: {
-        ʟคɮ: groupJid,
+        chat: groupJid,
       },
     }
   );
@@ -96,11 +96,11 @@ async function changeSettings(groupJid = null, isWorking) {
 async function setWelcome(jid = null, text = null) {
   Greeting.findOrCreate({
     where: {
-      ʟคɮ: jid,
+      chat: jid,
       greetingType: `setwelcome`,
     },
     defaults: {
-      ʟคɮ: jid,
+      chat: jid,
       switched: `ON`,
       greetingType: `setwelcome`,
       message: text,
@@ -115,11 +115,11 @@ async function setWelcome(jid = null, text = null) {
 async function setGoodbye(jid, text = null) {
   Greeting.findOrCreate({
     where: {
-      ʟคɮ: jid,
+      chat: jid,
       greetingType: `setgoodbye`,
     },
     defaults: {
-      ʟคɮ: jid,
+      chat: jid,
       switched: `ON`,
       greetingType: `setgoodbye`,
       message: text,
@@ -134,7 +134,7 @@ async function setGoodbye(jid, text = null) {
 async function deleteMessage(jid = null, type = null) {
   var Msg = await Greeting.findAll({
     where: {
-      ʟคɮ: jid,
+      chat: jid,
       greetingType: type,
     },
   });

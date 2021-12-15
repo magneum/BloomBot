@@ -23,7 +23,7 @@ module.exports = {
 For example-
 *${ᴋᴇɪ}promote 9861212121*`,
   𝓜𝓮𝓮6ʍօʀɛ: `${ᴋᴇɪ}`,
-  async handle(𝓚𝓻𝓪𝓴𝓲𝓷𝔃, ʟคɮ, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
+  async handle(𝓚𝓻𝓪𝓴𝓲𝓷𝔃, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
     `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
     const 𝓜𝖎𝖟𝖚ӄ𝖎𝔊𝔦𝔱 = require(`simple-git`)();
     await 𝓜𝖎𝖟𝖚ӄ𝖎𝔊𝔦𝔱.fetch();
@@ -42,7 +42,7 @@ For example-
 𝙐𝙥𝙙𝙖𝙩𝙚🤖𝙋𝙚𝙣𝙙𝙞𝙣𝙜
 *•𝘗𝘭𝘦𝘢𝘴𝘦 𝘜𝘱𝘥𝘢𝘵𝘦 𝘜𝘴𝘪𝘯𝘨 *${ᴋᴇɪ}update* 𝘰𝘳 𝘳𝘦𝘥𝘦𝘱𝘭𝘰𝘺 𝐌𝐢𝐳𝐮𝐤𝐢™!`,
           MessageType.text,
-          { quoted: ʟคɮ }
+          { quoted: chat }
         )
         .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
     }
@@ -57,7 +57,7 @@ For example-
 シ︎𝐆𝐫𝐨𝐮𝐩👓${_𝔏𝔞𝔟_.HASH}`,
           MessageType.text,
           {
-            quoted: ʟคɮ,
+            quoted: chat,
             contextInfo: {
               mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
             },
@@ -72,9 +72,9 @@ For example-
         𝓚𝓻𝓪𝓴𝓲𝓷𝔃
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            `This command is only applicable in a group ʟคɮ.`,
+            `This command is only applicable in a group chat.`,
             MessageType.text,
-            { quoted: ʟคɮ }
+            { quoted: chat }
           )
           .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
         return;
@@ -89,7 +89,7 @@ For example-
             },
             MessageType.image,
             {
-              quoted: ʟคɮ,
+              quoted: chat,
               mimetype: Mimetype.png,
               caption: `
   ⚠️𝗘𝗿𝗿𝗼𝗿: @${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰}, *ʏᴏᴜ ᴅᴏɴ'ᴛ ꜱᴇᴇᴍ ᴛᴏ ʙᴇ ᴀᴅᴍɪɴ..*`,
@@ -103,7 +103,7 @@ For example-
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
             `Sorry, dont have the permission to do so since I am not an admin.`,
             MessageType.text,
-            { quoted: ʟคɮ }
+            { quoted: chat }
           )
           .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
         return;
@@ -114,12 +114,12 @@ For example-
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
             `Reply/tag/enter contact number of the person to be promoted.`,
             MessageType.text,
-            { quoted: ʟคɮ }
+            { quoted: chat }
           )
           .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
         return;
       }
-      const reply = ʟคɮ.message.extendedTextMessage;
+      const reply = chat.message.extendedTextMessage;
 
       if (𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
         var contact = reply.contextInfo.participant.split(`@`)[0];
@@ -145,7 +145,7 @@ For example-
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               `*` + contact + ` promoted to admin*`,
               MessageType.text,
-              { quoted: ʟคɮ }
+              { quoted: chat }
             )
             .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
         } else {
@@ -154,7 +154,7 @@ For example-
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               `*` + contact + ` is already an admin*`,
               MessageType.text,
-              { quoted: ʟคɮ }
+              { quoted: chat }
             )
             .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
         }
@@ -169,7 +169,7 @@ For example-
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
             `Person is not in the group.`,
             MessageType.text,
-            { quoted: ʟคɮ }
+            { quoted: chat }
           )
           .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
         return;
@@ -181,7 +181,7 @@ For example-
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
             `The number you're trying to add isn't available on WhatsApp or  ${arg[0]} is Invalid number`,
             MessageType.text,
-            { quoted: ʟคɮ }
+            { quoted: chat }
           )
           .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
       } else {

@@ -18,7 +18,7 @@ module.exports = {
 name: `ocr`,
 description: `Use this command to obtain text from an image by  *${ᴋᴇɪ}space*  command.`,
 𝓜𝓮𝓮6ʍօʀɛ: `${ᴋᴇɪ}`,
-async handle(𝓚𝓻𝓪𝓴𝓲𝓷𝔃, ʟคɮ, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
+async handle(𝓚𝓻𝓪𝓴𝓲𝓷𝔃, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
 `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
 const 𝓜𝖎𝖟𝖚ӄ𝖎𝔊𝔦𝔱 = require(`simple-git`)();
 await 𝓜𝖎𝖟𝖚ӄ𝖎𝔊𝔦𝔱.fetch();
@@ -37,7 +37,7 @@ await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
 𝙐𝙥𝙙𝙖𝙩𝙚🤖𝙋𝙚𝙣𝙙𝙞𝙣𝙜
 *•𝘗𝘭𝘦𝘢𝘴𝘦 𝘜𝘱𝘥𝘢𝘵𝘦 𝘜𝘴𝘪𝘯𝘨 *${ᴋᴇɪ}update* 𝘰𝘳 𝘳𝘦𝘥𝘦𝘱𝘭𝘰𝘺 𝐌𝐢𝐳𝐮𝐤𝐢™!`,
 MessageType.text,
-{ quoted: ʟคɮ }
+{ quoted: chat }
 )
 .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
 }
@@ -52,7 +52,7 @@ await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
 シ︎𝐆𝐫𝐨𝐮𝐩👓${_𝔏𝔞𝔟_.HASH}`,
 MessageType.text,
 {
-quoted: ʟคɮ,
+quoted: chat,
 contextInfo: {
 mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
 },
@@ -64,9 +64,9 @@ return;
 } else {
 if (𝓜𝖎𝖟𝖚ӄ𝖎.isImage) {
 var replyChatObject = {
-message: ʟคɮ.message,
+message: chat.message,
 };
-var imageId = ʟคɮ.key.id;
+var imageId = chat.key.id;
 const fileName = `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/img-` + imageId;
 const filePath = await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃.downloadAndSaveMediaMessage(
 replyChatObject,
@@ -83,7 +83,7 @@ if (Msg === ``) {
 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
 `Couldn't find text in the image`,
 MessageType.text,
-{ quoted: ʟคɮ }
+{ quoted: chat }
 )
 .catch((cᴇʀʀᴏʀ) => {
 ℓιєηт.catch((cᴇʀʀᴏʀ, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
@@ -91,7 +91,7 @@ MessageType.text,
 }
 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
 .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, Msg, MessageType.text, {
-quoted: ʟคɮ,
+quoted: chat,
 })
 .catch((cᴇʀʀᴏʀ) => {
 ℓιєηт.catch((cᴇʀʀᴏʀ, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
@@ -109,9 +109,9 @@ console.log(`Deleted!`);
 }
 if (𝓜𝖎𝖟𝖚ӄ𝖎.isReplyImage) {
 var replyChatObject = {
-message: ʟคɮ.message.extendedTextMessage.contextInfo.quotedMessage,
+message: chat.message.extendedTextMessage.contextInfo.quotedMessage,
 };
-var imageId = ʟคɮ.message.extendedTextMessage.contextInfo.stanzaId;
+var imageId = chat.message.extendedTextMessage.contextInfo.stanzaId;
 const fileName = `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/img-` + imageId;
 const filePath = await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃.downloadAndSaveMediaMessage(
 replyChatObject,
@@ -128,7 +128,7 @@ if (Msg === ``) {
 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
 `Couldn't find text in the image`,
 MessageType.text,
-{ quoted: ʟคɮ }
+{ quoted: chat }
 )
 .catch((cᴇʀʀᴏʀ) => {
 ℓιєηт.catch((cᴇʀʀᴏʀ, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
@@ -136,7 +136,7 @@ MessageType.text,
 }
 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
 .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, Msg, MessageType.text, {
-quoted: ʟคɮ,
+quoted: chat,
 })
 .catch((cᴇʀʀᴏʀ) => {
 ℓιєηт.catch((cᴇʀʀᴏʀ, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
@@ -158,7 +158,7 @@ await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
 `Please tag a valid message.`,
 MessageType.text,
-{ quoted: ʟคɮ }
+{ quoted: chat }
 )
 .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
 return;
@@ -168,7 +168,7 @@ await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
 `Please tag a valid message.`,
 MessageType.text,
-{ quoted: ʟคɮ }
+{ quoted: chat }
 )
 .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
 }

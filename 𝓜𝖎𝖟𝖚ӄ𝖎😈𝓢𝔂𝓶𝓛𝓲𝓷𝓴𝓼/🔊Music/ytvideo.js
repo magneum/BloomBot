@@ -26,7 +26,7 @@ module.exports = {
 name: `ytvideo`,
 description: `ᴅᴏᴡɴʟᴏᴀᴅ ᴀɴʏ ʏᴏᴜᴛᴜʙᴇ ᴠɪᴅᴇᴏ ᴜɴᴅᴇʀ 100ᴍʙ ꜱɪᴢᴇ.`,
 𝓜𝓮𝓮6ʍօʀɛ: `${ᴋᴇɪ}ytaudio <link>`,
-async handle(𝓚𝓻𝓪𝓴𝓲𝓷𝔃, ʟคɮ, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
+async handle(𝓚𝓻𝓪𝓴𝓲𝓷𝔃, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
 `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
 const 𝓜𝖎𝖟𝖚ӄ𝖎𝔊𝔦𝔱 = require(`simple-git`)();
 await 𝓜𝖎𝖟𝖚ӄ𝖎𝔊𝔦𝔱.fetch();
@@ -45,7 +45,7 @@ await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
 𝙐𝙥𝙙𝙖𝙩𝙚🤖𝙋𝙚𝙣𝙙𝙞𝙣𝙜
 *•𝘗𝘭𝘦𝘢𝘴𝘦 𝘜𝘱𝘥𝘢𝘵𝘦 𝘜𝘴𝘪𝘯𝘨 *${ᴋᴇɪ}update* 𝘰𝘳 𝘳𝘦𝘥𝘦𝘱𝘭𝘰𝘺 𝐌𝐢𝐳𝐮𝐤𝐢™!`,
 MessageType.text,
-{ quoted: ʟคɮ }
+{ quoted: chat }
 )
 .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
 }
@@ -60,7 +60,7 @@ await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
 シ︎𝐆𝐫𝐨𝐮𝐩👓${_𝔏𝔞𝔟_.HASH}`,
 MessageType.text,
 {
-quoted: ʟคɮ,
+quoted: chat,
 contextInfo: {
 mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓],
 },
@@ -77,7 +77,7 @@ const nahargs = require(`../../𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/na
 return nahargs
 .nahargs(
 𝓚𝓻𝓪𝓴𝓲𝓷𝔃,
-ʟคɮ,
+chat,
 𝓜𝖎𝖟𝖚ӄ𝖎,
 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓,
 𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰,
@@ -119,7 +119,7 @@ mime = Mimetype.mp4Audio;
 }
 await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
 .sendMessage(to, media, type, {
-quoted: ʟคɮ,
+quoted: chat,
 mimetype: mime,
 caption: text,
 contextInfo: {
@@ -156,7 +156,7 @@ url: _𝔏𝔞𝔟_.ARC,
 },
 MessageType.image,
 {
-quoted: ʟคɮ,
+quoted: chat,
 mimetype: Mimetype.jpeg,
 caption: `*⚠️Seems like ${arg[0]} is not YouTube Link or not YouTube Single Video Link!*
 
@@ -189,7 +189,7 @@ caption: thumb,
 },
 MessageType.image,
 {
-quoted: ʟคɮ,
+quoted: chat,
 contextInfo: {
 mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓],
 },
@@ -221,7 +221,7 @@ Fetched = `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
 `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
 .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, Fetched, MessageType.text, {
-quoted: ʟคɮ,
+quoted: chat,
 contextInfo: {
 mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓],
 },
@@ -265,7 +265,7 @@ caption: thumb,
 },
 MessageType.image,
 {
-quoted: ʟคɮ,
+quoted: chat,
 contextInfo: {
 mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓],
 },
@@ -297,7 +297,7 @@ Fetched = `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
 `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
 .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, Fetched, MessageType.text, {
-quoted: ʟคɮ,
+quoted: chat,
 contextInfo: {
 mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓],
 },

@@ -16,13 +16,13 @@ var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
 module.exports = {
   name: `setwelcome`,
-  description: `New members of a group ʟคɮ will be welcomed with a message.`,
+  description: `New members of a group chat will be welcomed with a message.`,
   𝓜𝓮𝓮6ʍօʀɛ: ` 
 *${ᴋᴇɪ}setwelcome <message>
 *${ᴋᴇɪ}setwelcome*  <off>  
 *${ᴋᴇɪ}setwelcome*  <delete>
 Do note, the setwelcome option is still enabled after you use the delete option.`,
-  async handle(𝓚𝓻𝓪𝓴𝓲𝓷𝔃, ʟคɮ, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
+  async handle(𝓚𝓻𝓪𝓴𝓲𝓷𝔃, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
     `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
     const 𝓜𝖎𝖟𝖚ӄ𝖎𝔊𝔦𝔱 = require(`simple-git`)();
     await 𝓜𝖎𝖟𝖚ӄ𝖎𝔊𝔦𝔱.fetch();
@@ -41,7 +41,7 @@ Do note, the setwelcome option is still enabled after you use the delete option.
 𝙐𝙥𝙙𝙖𝙩𝙚🤖𝙋𝙚𝙣𝙙𝙞𝙣𝙜
 *•𝘗𝘭𝘦𝘢𝘴𝘦 𝘜𝘱𝘥𝘢𝘵𝘦 𝘜𝘴𝘪𝘯𝘨 *${ᴋᴇɪ}update* 𝘰𝘳 𝘳𝘦𝘥𝘦𝘱𝘭𝘰𝘺 𝐌𝐢𝐳𝐮𝐤𝐢™!`,
           MessageType.text,
-          { quoted: ʟคɮ }
+          { quoted: chat }
         )
         .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
     }
@@ -56,7 +56,7 @@ Do note, the setwelcome option is still enabled after you use the delete option.
 シ︎𝐆𝐫𝐨𝐮𝐩👓${_𝔏𝔞𝔟_.HASH}`,
           MessageType.text,
           {
-            quoted: ʟคɮ,
+            quoted: chat,
             contextInfo: {
               mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
             },
@@ -75,7 +75,7 @@ Do note, the setwelcome option is still enabled after you use the delete option.
           },
           MessageType.image,
           {
-            quoted: ʟคɮ,
+            quoted: chat,
             mimetype: Mimetype.png,
             caption: `
 ⚠️𝗘𝗿𝗿𝗼𝗿: @${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰}, *ʏᴏᴜ ᴅᴏɴ'ᴛ ꜱᴇᴇᴍ ᴛᴏ ʙᴇ ᴀᴅᴍɪɴ..*`,
@@ -87,9 +87,9 @@ Do note, the setwelcome option is still enabled after you use the delete option.
       𝓚𝓻𝓪𝓴𝓲𝓷𝔃
         .sendMessage(
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-          `This command is only applicable in a group ʟคɮ.`,
+          `This command is only applicable in a group chat.`,
           MessageType.text,
-          { quoted: ʟคɮ }
+          { quoted: chat }
         )
         .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
       return;
@@ -104,7 +104,7 @@ Do note, the setwelcome option is still enabled after you use the delete option.
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               `Set a setwelcome message first.`,
               MessageType.text,
-              { quoted: ʟคɮ }
+              { quoted: chat }
             )
             .catch((cᴇʀʀᴏʀ) => {
               ℓιєηт.catch((cᴇʀʀᴏʀ, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
@@ -116,14 +116,14 @@ Do note, the setwelcome option is still enabled after you use the delete option.
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               `Greetings are enabled: False \nCurrently greeting new members with:`,
               MessageType.text,
-              { quoted: ʟคɮ }
+              { quoted: chat }
             )
             .catch((cᴇʀʀᴏʀ) => {
               ℓιєηт.catch((cᴇʀʀᴏʀ, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
             });
           𝓚𝓻𝓪𝓴𝓲𝓷𝔃
             .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, Msg.message, MessageType.text, {
-              quoted: ʟคɮ,
+              quoted: chat,
             })
             .catch((cᴇʀʀᴏʀ) => {
               ℓιєηт.catch((cᴇʀʀᴏʀ, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
@@ -136,14 +136,14 @@ Do note, the setwelcome option is still enabled after you use the delete option.
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
             `Greetings are enabled: True \nCurrently greeting new members with:`,
             MessageType.text,
-            { quoted: ʟคɮ }
+            { quoted: chat }
           )
           .catch((cᴇʀʀᴏʀ) => {
             ℓιєηт.catch((cᴇʀʀᴏʀ, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
           });
         𝓚𝓻𝓪𝓴𝓲𝓷𝔃
           .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, Msg.message, MessageType.text, {
-            quoted: ʟคɮ,
+            quoted: chat,
           })
           .catch((cᴇʀʀᴏʀ) => {
             ℓιєηт.catch((cᴇʀʀᴏʀ, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
@@ -161,7 +161,7 @@ Do note, the setwelcome option is still enabled after you use the delete option.
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               `Welcome message has been disabled.`,
               MessageType.text,
-              { quoted: ʟคɮ }
+              { quoted: chat }
             )
             .catch((cᴇʀʀᴏʀ) => {
               ℓιєηт.catch((cᴇʀʀᴏʀ, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
@@ -176,7 +176,7 @@ Do note, the setwelcome option is still enabled after you use the delete option.
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               `Welcome message has been enabled.`,
               MessageType.text,
-              { quoted: ʟคɮ }
+              { quoted: chat }
             )
             .catch((cᴇʀʀᴏʀ) => {
               ℓιєηт.catch((cᴇʀʀᴏʀ, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
@@ -191,7 +191,7 @@ Do note, the setwelcome option is still enabled after you use the delete option.
                 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
                 `Set a setwelcome message first.`,
                 MessageType.text,
-                { quoted: ʟคɮ }
+                { quoted: chat }
               )
               .catch((cᴇʀʀᴏʀ) => {
                 ℓιєηт.catch((cᴇʀʀᴏʀ, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
@@ -204,7 +204,7 @@ Do note, the setwelcome option is still enabled after you use the delete option.
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               `Welcome message deleted.`,
               MessageType.text,
-              { quoted: ʟคɮ }
+              { quoted: chat }
             )
             .catch((cᴇʀʀᴏʀ) => {
               ℓιєηт.catch((cᴇʀʀᴏʀ, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
@@ -222,7 +222,7 @@ Do note, the setwelcome option is still enabled after you use the delete option.
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               `Welcome message updated and enabled.`,
               MessageType.text,
-              { quoted: ʟคɮ }
+              { quoted: chat }
             )
             .catch((cᴇʀʀᴏʀ) => {
               ℓιєηт.catch((cᴇʀʀᴏʀ, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
@@ -236,7 +236,7 @@ Do note, the setwelcome option is still enabled after you use the delete option.
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               `Welcome message updated and enabled.`,
               MessageType.text,
-              { quoted: ʟคɮ }
+              { quoted: chat }
             )
             .catch((cᴇʀʀᴏʀ) => {
               ℓιєηт.catch((cᴇʀʀᴏʀ, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));

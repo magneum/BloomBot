@@ -19,7 +19,7 @@ module.exports = {
 name: `sticker`,
 description: `command to convert image to sticker`,
 𝓜𝓮𝓮6ʍօʀɛ: `${ᴋᴇɪ}sticker (gif/image/video) _<tag> or <reply>_`,
-async handle(𝓚𝓻𝓪𝓴𝓲𝓷𝔃, ʟคɮ, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
+async handle(𝓚𝓻𝓪𝓴𝓲𝓷𝔃, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
 `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
 const 𝓜𝖎𝖟𝖚ӄ𝖎𝔊𝔦𝔱 = require(`simple-git`)();
 await 𝓜𝖎𝖟𝖚ӄ𝖎𝔊𝔦𝔱.fetch();
@@ -38,7 +38,7 @@ await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
 𝙐𝙥𝙙𝙖𝙩𝙚🤖𝙋𝙚𝙣𝙙𝙞𝙣𝙜
 *•𝘗𝘭𝘦𝘢𝘴𝘦 𝘜𝘱𝘥𝘢𝘵𝘦 𝘜𝘴𝘪𝘯𝘨 *${ᴋᴇɪ}update* 𝘰𝘳 𝘳𝘦𝘥𝘦𝘱𝘭𝘰𝘺 𝐌𝐢𝐳𝐮𝐤𝐢™!`,
 MessageType.text,
-{ quoted: ʟคɮ }
+{ quoted: chat }
 )
 .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
 }
@@ -53,7 +53,7 @@ await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
 シ︎𝐆𝐫𝐨𝐮𝐩👓${_𝔏𝔞𝔟_.HASH}`,
 MessageType.text,
 {
-quoted: ʟคɮ,
+quoted: chat,
 contextInfo: {
 mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
 },
@@ -89,7 +89,7 @@ await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
 fs.readFileSync(stickerPath),
 MessageType.sticker,
-{ quoted: ʟคɮ }
+{ quoted: chat }
 )
 .catch((cᴇʀʀᴏʀ) => {
 ℓιєηт.catch((cᴇʀʀᴏʀ, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
@@ -121,7 +121,7 @@ console.log(`Deleted!`);
 💡𝗖𝗼𝗺𝗺𝗮𝗻𝗱 • ${𝓜𝖎𝖟𝖚ӄ𝖎.commandName}
 🎮𝗜𝘁 𝘄𝗮𝘀 𝗣𝗠? • ${𝓜𝖎𝖟𝖚ӄ𝖎.isPm}`,
 MessageType.text,
-{ quoted: ʟคɮ }
+{ quoted: chat }
 );
 });
 return;
@@ -149,7 +149,7 @@ await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
 fs.readFileSync(stickerPath),
 MessageType.sticker,
-{ quoted: ʟคɮ }
+{ quoted: chat }
 )
 .catch((cᴇʀʀᴏʀ) => {
 ℓιєηт.catch((cᴇʀʀᴏʀ, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
@@ -181,16 +181,16 @@ return 𝓚𝓻𝓪𝓴𝓲𝓷𝔃.sendMessage(
 💡𝗖𝗼𝗺𝗺𝗮𝗻𝗱 • ${𝓜𝖎𝖟𝖚ӄ𝖎.commandName}
 🎮𝗜𝘁 𝘄𝗮𝘀 𝗣𝗠? • ${𝓜𝖎𝖟𝖚ӄ𝖎.isPm}`,
 MessageType.text,
-{ quoted: ʟคɮ }
+{ quoted: chat }
 );
 });
 };
 
 if (𝓜𝖎𝖟𝖚ӄ𝖎.isImage || 𝓜𝖎𝖟𝖚ӄ𝖎.isGIF || 𝓜𝖎𝖟𝖚ӄ𝖎.isVideo) {
 var replyChatObject = {
-message: ʟคɮ.message,
+message: chat.message,
 };
-var imageId = ʟคɮ.key.id;
+var imageId = chat.key.id;
 convertToSticker(imageId, replyChatObject);
 } else if (
 𝓜𝖎𝖟𝖚ӄ𝖎.isReplyImage ||
@@ -198,9 +198,9 @@ convertToSticker(imageId, replyChatObject);
 𝓜𝖎𝖟𝖚ӄ𝖎.isReplyVideo
 ) {
 var replyChatObject = {
-message: ʟคɮ.message.extendedTextMessage.contextInfo.quotedMessage,
+message: chat.message.extendedTextMessage.contextInfo.quotedMessage,
 };
-var imageId = ʟคɮ.message.extendedTextMessage.contextInfo.stanzaId;
+var imageId = chat.message.extendedTextMessage.contextInfo.stanzaId;
 convertToSticker(imageId, replyChatObject);
 } else {
 var 𝓜Usage = 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹.get(𝓜𝖎𝖟𝖚ӄ𝖎.commandName);
@@ -208,7 +208,7 @@ var 𝓜Usage = 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹.get(𝓜𝖎�
 const nahargs = require(`../../𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/nahargs`);
 return nahargs.nahargs(
 𝓚𝓻𝓪𝓴𝓲𝓷𝔃,
-ʟคɮ,
+chat,
 𝓜𝖎𝖟𝖚ӄ𝖎,
 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓,
 𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰,

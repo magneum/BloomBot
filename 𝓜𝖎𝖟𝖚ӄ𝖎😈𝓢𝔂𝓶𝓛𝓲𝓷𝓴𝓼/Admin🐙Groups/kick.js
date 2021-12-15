@@ -17,7 +17,7 @@ module.exports = {
   name: `kick`,
   description: `Use this command to kick people from a group by tagging them  *${ᴋᴇɪ}kick @<person-to-kick>*  or replying to them  *${ᴋᴇɪ}kick*`,
   𝓜𝓮𝓮6ʍօʀɛ: `${ᴋᴇɪ}kick <tag> or <reply to person's text>`,
-  async handle(𝓚𝓻𝓪𝓴𝓲𝓷𝔃, ʟคɮ, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
+  async handle(𝓚𝓻𝓪𝓴𝓲𝓷𝔃, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
     `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
     const 𝓜𝖎𝖟𝖚ӄ𝖎𝔊𝔦𝔱 = require(`simple-git`)();
     await 𝓜𝖎𝖟𝖚ӄ𝖎𝔊𝔦𝔱.fetch();
@@ -36,7 +36,7 @@ module.exports = {
 𝙐𝙥𝙙𝙖𝙩𝙚🤖𝙋𝙚𝙣𝙙𝙞𝙣𝙜
 *•𝘗𝘭𝘦𝘢𝘴𝘦 𝘜𝘱𝘥𝘢𝘵𝘦 𝘜𝘴𝘪𝘯𝘨 *${ᴋᴇɪ}update* 𝘰𝘳 𝘳𝘦𝘥𝘦𝘱𝘭𝘰𝘺 𝐌𝐢𝐳𝐮𝐤𝐢™!`,
           MessageType.text,
-          { quoted: ʟคɮ }
+          { quoted: chat }
         )
         .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
     }
@@ -51,7 +51,7 @@ module.exports = {
 シ︎𝐆𝐫𝐨𝐮𝐩👓${_𝔏𝔞𝔟_.HASH}`,
           MessageType.text,
           {
-            quoted: ʟคɮ,
+            quoted: chat,
             contextInfo: {
               mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
             },
@@ -70,7 +70,7 @@ module.exports = {
           },
           MessageType.image,
           {
-            quoted: ʟคɮ,
+            quoted: chat,
             mimetype: Mimetype.png,
             caption: `
 ⚠️𝗘𝗿𝗿𝗼𝗿: @${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰}, *ʏᴏᴜ ᴅᴏɴ'ᴛ ꜱᴇᴇᴍ ᴛᴏ ʙᴇ ᴀᴅᴍɪɴ..*`,
@@ -82,9 +82,9 @@ module.exports = {
       𝓚𝓻𝓪𝓴𝓲𝓷𝔃
         .sendMessage(
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-          `command only applicable in a group ʟคɮ.`,
+          `command only applicable in a group chat.`,
           MessageType.text,
-          { quoted: ʟคɮ }
+          { quoted: chat }
         )
         .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
       return;
@@ -92,14 +92,14 @@ module.exports = {
     let owner = 𝓜𝖎𝖟𝖚ӄ𝖎.chatId.split(`-`)[0];
     if (𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
       let PersonToRemove =
-        ʟคɮ.message.extendedTextMessage.contextInfo.participant;
+        chat.message.extendedTextMessage.contextInfo.participant;
       if (PersonToRemove === owner + `@s.whatsapp.net`) {
         𝓚𝓻𝓪𝓴𝓲𝓷𝔃
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
             `*` + owner + ` is the owner of the group*`,
             MessageType.text,
-            { quoted: ʟคɮ }
+            { quoted: chat }
           )
           .catch((cᴇʀʀᴏʀ) => {
             ℓιєηт.catch((cᴇʀʀᴏʀ, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
@@ -112,7 +112,7 @@ module.exports = {
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
             `Why man, why?! Why would you use my powers to kick myself from the group?!🥺\n*Request Rejected.* 😤`,
             MessageType.text,
-            { quoted: ʟคɮ }
+            { quoted: chat }
           )
           .catch((cᴇʀʀᴏʀ) => {
             ℓιєηт.catch((cᴇʀʀᴏʀ, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
@@ -138,7 +138,7 @@ module.exports = {
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
             `*person is not in the group*`,
             MessageType.text,
-            { quoted: ʟคɮ }
+            { quoted: chat }
           )
           .catch((cᴇʀʀᴏʀ) => {
             ℓιєηт.catch((cᴇʀʀᴏʀ, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
@@ -164,7 +164,7 @@ module.exports = {
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
           `Reply to the person you want to kick or tag them.\n\nFor instance,  *${ᴋᴇɪ}kick @<person-to-kick>*  or reply using  *${ᴋᴇɪ}kick*${ᴋᴇɪ}`,
           MessageType.text,
-          { quoted: ʟคɮ }
+          { quoted: chat }
         )
         .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
       return;
@@ -177,7 +177,7 @@ module.exports = {
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
             `Reply to the person you want to kick or tag them.\n\nFor instance,  *${ᴋᴇɪ}kick @<person-to-kick>*  or reply using  *${ᴋᴇɪ}kick*${ᴋᴇɪ}`,
             MessageType.text,
-            { quoted: ʟคɮ }
+            { quoted: chat }
           )
           .catch((cᴇʀʀᴏʀ) => {
             ℓιєηт.catch((cᴇʀʀᴏʀ, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
@@ -191,7 +191,7 @@ module.exports = {
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
             `Why man, why?! Why would you use my powers to kick myself from the group?!🥺\n*Request Rejected.* 😤`,
             MessageType.text,
-            { quoted: ʟคɮ }
+            { quoted: chat }
           )
           .catch((cᴇʀʀᴏʀ) => {
             ℓιєηт.catch((cᴇʀʀᴏʀ, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
@@ -212,7 +212,7 @@ module.exports = {
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
             `*` + owner + ` is the owner of the group*`,
             MessageType.text,
-            { quoted: ʟคɮ }
+            { quoted: chat }
           )
           .catch((cᴇʀʀᴏʀ) => {
             ℓιєηт.catch((cᴇʀʀᴏʀ, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
@@ -225,7 +225,7 @@ module.exports = {
         𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
         `Reply to the person you want to kick or tag them.\n\nFor instance,  *${ᴋᴇɪ}kick @<person-to-kick>*  or reply using  *${ᴋᴇɪ}kick*${ᴋᴇɪ}`,
         MessageType.text,
-        { quoted: ʟคɮ }
+        { quoted: chat }
       )
       .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
   },

@@ -131,7 +131,7 @@ module.exports = {
 name: `beautycheck`,
 description: `ᴄʜᴇᴄᴋ ʜᴏᴡ ʙᴇᴀᴜᴛɪꜰᴜʟ ʏᴏᴜ/ᴛᴀɢɢᴇᴅ ᴘᴇʀꜱᴏɴ ɪꜱ`,
 𝓜𝓮𝓮6ʍօʀɛ: `${ᴋᴇɪ}`,
-async handle(𝓚𝓻𝓪𝓴𝓲𝓷𝔃, ʟคɮ, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
+async handle(𝓚𝓻𝓪𝓴𝓲𝓷𝔃, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
 `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
 const 𝓜𝖎𝖟𝖚ӄ𝖎𝔊𝔦𝔱 = require(`simple-git`)();
 await 𝓜𝖎𝖟𝖚ӄ𝖎𝔊𝔦𝔱.fetch();
@@ -150,7 +150,7 @@ await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
 𝙐𝙥𝙙𝙖𝙩𝙚🤖𝙋𝙚𝙣𝙙𝙞𝙣𝙜
 *•𝘗𝘭𝘦𝘢𝘴𝘦 𝘜𝘱𝘥𝘢𝘵𝘦 𝘜𝘴𝘪𝘯𝘨 *${ᴋᴇɪ}update* 𝘰𝘳 𝘳𝘦𝘥𝘦𝘱𝘭𝘰𝘺 𝐌𝐢𝐳𝐮𝐤𝐢™!`,
 MessageType.text,
-{ quoted: ʟคɮ }
+{ quoted: chat }
 )
 .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
 }
@@ -165,7 +165,7 @@ await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
 シ︎𝐆𝐫𝐨𝐮𝐩👓${_𝔏𝔞𝔟_.HASH}`,
 MessageType.text,
 {
-quoted: ʟคɮ,
+quoted: chat,
 contextInfo: {
 mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
 },
@@ -212,7 +212,7 @@ url: `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/爪𝖎𝖟𝖚ӄ𝖎Tempa.png
 },
 MessageType.image,
 {
-quoted: ʟคɮ,
+quoted: chat,
 mimetype: Mimetype.png,
 contextInfo: { mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓] },
 caption: `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
@@ -226,7 +226,7 @@ caption: `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
 }
 `⦿𝐌𝐢𝐳𝐮𝐤𝐢™⦿-----------------⬡==================⬡  Private And Reply`;
 if (!𝓜𝖎𝖟𝖚ӄ𝖎.Group && 𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
-var Receiver = ʟคɮ.message.extendedTextMessage.contextInfo.participant;
+var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
 personreceived = Receiver.substring(0, Receiver.length - 15);
 var 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓 = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
 𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰 = 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓.substring(0, 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓.length - 15);
@@ -265,7 +265,7 @@ url: `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/爪𝖎𝖟𝖚ӄ𝖎Tempa.png
 },
 MessageType.image,
 {
-quoted: ʟคɮ,
+quoted: chat,
 mimetype: Mimetype.png,
 contextInfo: { mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓, Receiver] },
 caption: `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
@@ -279,7 +279,7 @@ caption: `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
 }
 `⦿𝐌𝐢𝐳𝐮𝐤𝐢™⦿-----------------⬡==================⬡  Group And Reply`;
 if (𝓜𝖎𝖟𝖚ӄ𝖎.Group && 𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
-var Receiver = ʟคɮ.message.extendedTextMessage.contextInfo.participant;
+var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
 personreceived = Receiver.substring(0, Receiver.length - 15);
 var 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓 = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
 𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰 = 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓.substring(0, 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓.length - 15);
@@ -318,7 +318,7 @@ url: `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/爪𝖎𝖟𝖚ӄ𝖎Tempa.png
 },
 MessageType.image,
 {
-quoted: ʟคɮ,
+quoted: chat,
 mimetype: Mimetype.png,
 contextInfo: { mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓, Receiver] },
 caption: `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
@@ -368,7 +368,7 @@ url: `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/爪𝖎𝖟𝖚ӄ𝖎Tempa.png
 },
 MessageType.image,
 {
-quoted: ʟคɮ,
+quoted: chat,
 mimetype: Mimetype.png,
 contextInfo: { mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓] },
 caption: `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
