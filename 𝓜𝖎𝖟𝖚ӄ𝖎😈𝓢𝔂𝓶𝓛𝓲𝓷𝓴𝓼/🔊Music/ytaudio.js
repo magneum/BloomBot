@@ -29,8 +29,6 @@ module.exports = {
   async handle(𝓚𝓻𝓪𝓴𝓲𝓷𝔃, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
     `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
     const 𝓜𝖎𝖟𝖚ӄ𝖎𝔊𝔦𝔱 = require(`simple-git`)();
-    const FetchedLink = yts(arg.join(` `));
-    const videos = FetchedLink.videos.slice(0, 1);
     await 𝓜𝖎𝖟𝖚ӄ𝖎𝔊𝔦𝔱.fetch();
     var 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓 = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
     var 𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰 = 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓.substring(0, 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓.length - 15);
@@ -171,6 +169,8 @@ You Can Get URL by using ${ᴋᴇɪ}yts <song-name>`,
       }
       `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
       if (!𝓜𝖎𝖟𝖚ӄ𝖎.isGroup) {
+        const FetchedLink1 = yts(arg.join(` `));
+        const videos1 = FetchedLink1.videos.slice(0, 1);
         const filename = `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/${now}_ytaudiosprivate_${nowbyk.toString()}${𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓}${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰}`;
         yta(arg[0]).then(async (gotResp) => {
           const { dl_link, thumb, title, filesize } = gotResp;
@@ -202,7 +202,7 @@ You Can Get URL by using ${ᴋᴇɪ}yts <song-name>`,
                   )
                   .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
               } else {
-                videos.forEach(function (youfound) {
+                videos1.forEach(function (youfound) {
                   Fetched = `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
 
 ⭕𝗔𝘂𝗱𝗶𝗼
@@ -225,8 +225,7 @@ You Can Get URL by using ${ᴋᴇɪ}yts <song-name>`,
                   })
                   .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
                 `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
-
-                videos.forEach(function (youfound) {
+                videos1.forEach(function (youfound) {
                   Fetched = `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
 
 ⭕𝗔𝘂𝗱𝗶𝗼
@@ -247,6 +246,8 @@ You Can Get URL by using ${ᴋᴇɪ}yts <song-name>`,
       }
       `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
       if (𝓜𝖎𝖟𝖚ӄ𝖎.isGroup) {
+        const FetchedLink = yts(arg.join(` `));
+        const videos = FetchedLink.videos.slice(0, 1);
         const filename = `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/${now}ytaudiosgroups_${nowbyk.toString()}${𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓}${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰}`;
         yta(arg[0]).then(async (gotResp) => {
           const { dl_link, thumb, title, filesize } = gotResp;
