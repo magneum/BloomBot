@@ -93,7 +93,7 @@ module.exports = {
 *🕐𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧↬* ${youfound.timestamp}
 *📜𝐀𝐮𝐭𝐡𝐨𝐫↬* ${youfound.author.name}
 *📜𝐋𝐢𝐧𝐤↬* ${youfound.url}
-*📥𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐫↬* https://www.youtubepp.com/watch?v=${id}\n\n`;
+\n\n`;
       });
       if (Fetched === ``) {
         𝓚𝓻𝓪𝓴𝓲𝓷𝔃
