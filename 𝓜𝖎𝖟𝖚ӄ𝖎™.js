@@ -1,8 +1,6 @@
-`⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
-//•⬡• ɢɴᴜ ɢᴇɴᴇʀᴀʟ ᴘᴜʙʟɪᴄ ʟɪᴄᴇɴꜱᴇ ᴠᴇʀꜱɪᴏɴ 3, 29 ᴊᴜɴᴇ 2007 ᴄᴏᴘʏʀɪɢʜᴛ (ᴄ) 2007 ꜰʀᴇᴇ ꜱᴏꜰᴛᴡᴀʀᴇ ꜰᴏᴜɴᴅᴀᴛɪᴏɴ
-//•⬡• ᴇᴠᴇʀʏᴏɴᴇ ɪꜱ ᴘᴇʀᴍɪᴛᴛᴇᴅ ᴛᴏ 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 ᴠᴇʀʙᴀᴛɪᴍ ᴄᴏᴘɪᴇꜱ ᴏꜰ ᴛʜɪꜱ ʟɪᴄᴇɴꜱᴇ ᴅᴏᴄᴜᴍᴇɴᴛ, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
-//•⬡• —••÷[ 𝓜𝖎𝖟𝖚ӄ𝖎™ ]÷••—  ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ has been licensed under Apache License
-`⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
+//⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
+// _© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
+//⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
 const { registerFont, createCanvas, loadImage } = require(`canvas`);
 registerFont(`./𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/Honeycomb-Round.otf`, {
   family: `Honeycomb`,
@@ -66,11 +64,9 @@ var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 const fs = require(`fs`);
 console.clear();
-`⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
-//•⬡• ɢɴᴜ ɢᴇɴᴇʀᴀʟ ᴘᴜʙʟɪᴄ ʟɪᴄᴇɴꜱᴇ ᴠᴇʀꜱɪᴏɴ 3, 29 ᴊᴜɴᴇ 2007 ᴄᴏᴘʏʀɪɢʜᴛ (ᴄ) 2007 ꜰʀᴇᴇ ꜱᴏꜰᴛᴡᴀʀᴇ ꜰᴏᴜɴᴅᴀᴛɪᴏɴ
-//•⬡• ᴇᴠᴇʀʏᴏɴᴇ ɪꜱ ᴘᴇʀᴍɪᴛᴛᴇᴅ ᴛᴏ 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 ᴠᴇʀʙᴀᴛɪᴍ ᴄᴏᴘɪᴇꜱ ᴏꜰ ᴛʜɪꜱ ʟɪᴄᴇɴꜱᴇ ᴅᴏᴄᴜᴍᴇɴᴛ, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
-//•⬡• —••÷[ 𝓜𝖎𝖟𝖚ӄ𝖎™ ]÷••—  ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ has been licensed under Apache License
-`⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
+//⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
+// _© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
+//⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
 var 𝓚𝓻𝓪𝓴𝓲𝓷𝔃 = 𝓜𝖎𝖟𝖚ӄ𝖎ֆʏռօք.WhatsApp;
 async function 𝓜𝓮𝓮6s() {
   𝓚𝓻𝓪𝓴𝓲𝓷𝔃.logger.level = `error`;
@@ -106,22 +102,18 @@ async function 𝓜𝓮𝓮6s() {
       process.exit(0);
     }
   }
-  `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
-  //•⬡• ɢɴᴜ ɢᴇɴᴇʀᴀʟ ᴘᴜʙʟɪᴄ ʟɪᴄᴇɴꜱᴇ ᴠᴇʀꜱɪᴏɴ 3, 29 ᴊᴜɴᴇ 2007 ᴄᴏᴘʏʀɪɢʜᴛ (ᴄ) 2007 ꜰʀᴇᴇ ꜱᴏꜰᴛᴡᴀʀᴇ ꜰᴏᴜɴᴅᴀᴛɪᴏɴ
-  //•⬡• ᴇᴠᴇʀʏᴏɴᴇ ɪꜱ ᴘᴇʀᴍɪᴛᴛᴇᴅ ᴛᴏ 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 ᴠᴇʀʙᴀᴛɪᴍ ᴄᴏᴘɪᴇꜱ ᴏꜰ ᴛʜɪꜱ ʟɪᴄᴇɴꜱᴇ ᴅᴏᴄᴜᴍᴇɴᴛ, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
-  //•⬡• —••÷[ 𝓜𝖎𝖟𝖚ӄ𝖎™ ]÷••—  ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ has been licensed under Apache License
-  `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
+  //⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
+  // _© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
+  //⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
   𝓚𝓻𝓪𝓴𝓲𝓷𝔃.on(`connecting`, async () => {
     console.log(
       Kolor.yellow(`⬡=================⬡    ⦿𝐌𝐢𝐳𝐮𝐤𝐢™⦿    ⬡=================⬡`)
     );
     console.log(Kolor.yellow(`💡𝗜𝗻𝗳𝗼⬰ 𝘊𝘰𝘯𝘯𝘦𝘤𝘵𝘪𝘯𝘨 𝘵𝘰 𝘞𝘩𝘢𝘵𝘴𝘈𝘱𝘱...🤖`));
   });
-  `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
-  //•⬡• ɢɴᴜ ɢᴇɴᴇʀᴀʟ ᴘᴜʙʟɪᴄ ʟɪᴄᴇɴꜱᴇ ᴠᴇʀꜱɪᴏɴ 3, 29 ᴊᴜɴᴇ 2007 ᴄᴏᴘʏʀɪɢʜᴛ (ᴄ) 2007 ꜰʀᴇᴇ ꜱᴏꜰᴛᴡᴀʀᴇ ꜰᴏᴜɴᴅᴀᴛɪᴏɴ
-  //•⬡• ᴇᴠᴇʀʏᴏɴᴇ ɪꜱ ᴘᴇʀᴍɪᴛᴛᴇᴅ ᴛᴏ 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 ᴠᴇʀʙᴀᴛɪᴍ ᴄᴏᴘɪᴇꜱ ᴏꜰ ᴛʜɪꜱ ʟɪᴄᴇɴꜱᴇ ᴅᴏᴄᴜᴍᴇɴᴛ, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
-  //•⬡• —••÷[ 𝓜𝖎𝖟𝖚ӄ𝖎™ ]÷••—  ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ has been licensed under Apache License
-  `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
+  //⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
+  // _© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
+  //⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
   𝓚𝓻𝓪𝓴𝓲𝓷𝔃.on(`open`, async () => {
     console.log(
       Kolor.yellow(`⬡=================⬡    ⦿𝐌𝐢𝐳𝐮𝐤𝐢™⦿    ⬡=================⬡`)
@@ -173,9 +165,9 @@ async function 𝓜𝓮𝓮6s() {
 ╚═╝     ╚═╝╚═╝╚══════╝ ╚═════╝ ╚═╝  ╚═╝╚═╝`),
       Kolor.green(`\n⬡=================⬡    ⦿𝐌𝐢𝐳𝐮𝐤𝐢™⦿    ⬡=================⬡`)
     );
-    `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
-    // 👓𝓜𝖎𝖟𝖚ӄ𝖎™ ᴀᴅᴠᴀɴᴄᴇᴅ ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ 80+ ᴄᴏᴍᴍᴀɴᴅꜱ ꜰᴏʀ ʙᴏᴛʜ ᴘʀɪᴠᴀᴛᴇ ᴀɴᴅ ɢʀᴏᴜᴘ-ᴜꜱᴀɢᴇ👓
-    // ⬡==================⬡-----------------⦿𝐌𝐢𝐳𝐮𝐤𝐢™⦿-----------------⬡=================
+    //⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
+    // _© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
+    //⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
     const yes_no = _𝔏𝔞𝔟_.Krakinz;
     if (yes_no === `Null`) {
       await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃.sendMessage(
@@ -205,11 +197,9 @@ async function 𝓜𝓮𝓮6s() {
     }
   });
   await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃.connect();
-  `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
-  //•⬡• ɢɴᴜ ɢᴇɴᴇʀᴀʟ ᴘᴜʙʟɪᴄ ʟɪᴄᴇɴꜱᴇ ᴠᴇʀꜱɪᴏɴ 3, 29 ᴊᴜɴᴇ 2007 ᴄᴏᴘʏʀɪɢʜᴛ (ᴄ) 2007 ꜰʀᴇᴇ ꜱᴏꜰᴛᴡᴀʀᴇ ꜰᴏᴜɴᴅᴀᴛɪᴏɴ
-  //•⬡• ᴇᴠᴇʀʏᴏɴᴇ ɪꜱ ᴘᴇʀᴍɪᴛᴛᴇᴅ ᴛᴏ 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 ᴠᴇʀʙᴀᴛɪᴍ ᴄᴏᴘɪᴇꜱ ᴏꜰ ᴛʜɪꜱ ʟɪᴄᴇɴꜱᴇ ᴅᴏᴄᴜᴍᴇɴᴛ, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
-  //•⬡• —••÷[ 𝓜𝖎𝖟𝖚ӄ𝖎™ ]÷••—  ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ has been licensed under Apache License
-  `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
+  //⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
+  // _© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
+  //⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
   //   𝓚𝓻𝓪𝓴𝓲𝓷𝔃.on(`message-delete`, async (update) => {
   //     update.message =
   //       Object.keys(update.message)[0] === `ephemeralMessage` ?
@@ -231,11 +221,9 @@ async function 𝓜𝓮𝓮6s() {
 
   //     𝓚𝓻𝓪𝓴𝓲𝓷𝔃.copyNForward(update.key.remoteJid, update.message);
   //   });
-  `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
-  //•⬡• ɢɴᴜ ɢᴇɴᴇʀᴀʟ ᴘᴜʙʟɪᴄ ʟɪᴄᴇɴꜱᴇ ᴠᴇʀꜱɪᴏɴ 3, 29 ᴊᴜɴᴇ 2007 ᴄᴏᴘʏʀɪɢʜᴛ (ᴄ) 2007 ꜰʀᴇᴇ ꜱᴏꜰᴛᴡᴀʀᴇ ꜰᴏᴜɴᴅᴀᴛɪᴏɴ
-  //•⬡• ᴇᴠᴇʀʏᴏɴᴇ ɪꜱ ᴘᴇʀᴍɪᴛᴛᴇᴅ ᴛᴏ 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 ᴠᴇʀʙᴀᴛɪᴍ ᴄᴏᴘɪᴇꜱ ᴏꜰ ᴛʜɪꜱ ʟɪᴄᴇɴꜱᴇ ᴅᴏᴄᴜᴍᴇɴᴛ, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
-  //•⬡• —••÷[ 𝓜𝖎𝖟𝖚ӄ𝖎™ ]÷••—  ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ has been licensed under Apache License
-  `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
+  //⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
+  // _© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
+  //⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
   𝓚𝓻𝓪𝓴𝓲𝓷𝔃.on(`group-update`, async (update) => {
     groupupdateID = await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃.groupMetadata(update.jid);
     if (update.announce == `false`) {
@@ -268,8 +256,7 @@ Group has been opened by admin Now all members can send messages`,
           `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
 
 *<○ ${groupupdateID.subject} 𝗗𝗲𝘀𝗰𝗿𝗶𝗽𝘁𝗶𝗼𝗻 𝗖𝗵𝗮𝗻𝗴𝗲 ○>*
-• 𝙶𝚛𝚘𝚞𝚙 𝚍𝚎𝚜𝚌𝚛𝚒𝚙𝚝𝚒𝚘𝚗 𝚑𝚊𝚜 𝚋𝚎𝚎𝚗 𝚌𝚑𝚊𝚗𝚐𝚎𝚍 𝚋𝚢:
-@${update.descOwner.split(`@`)[0]}
+• 𝙶𝚛𝚘𝚞𝚙 𝚍𝚎𝚜𝚌𝚛𝚒𝚙𝚝𝚒𝚘𝚗 𝚑𝚊𝚜 𝚋𝚎𝚎𝚗 𝚌𝚑𝚊𝚗𝚐𝚎𝚍 𝚋𝚢:@${update.descOwner.split(`@`)[0]}
 
 • 𝙽𝚎𝚠 𝙳𝚎𝚜𝚌𝚛𝚒𝚙𝚝𝚒𝚘𝚗: 
 ${update.desc}`,
@@ -307,12 +294,11 @@ ${update.desc}`,
         .catch((error) => console.log(Kolor.redBright(error)));
     }
   });
-  `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
-  //•⬡• ɢɴᴜ ɢᴇɴᴇʀᴀʟ ᴘᴜʙʟɪᴄ ʟɪᴄᴇɴꜱᴇ ᴠᴇʀꜱɪᴏɴ 3, 29 ᴊᴜɴᴇ 2007 ᴄᴏᴘʏʀɪɢʜᴛ (ᴄ) 2007 ꜰʀᴇᴇ ꜱᴏꜰᴛᴡᴀʀᴇ ꜰᴏᴜɴᴅᴀᴛɪᴏɴ
-  //•⬡• ᴇᴠᴇʀʏᴏɴᴇ ɪꜱ ᴘᴇʀᴍɪᴛᴛᴇᴅ ᴛᴏ 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 ᴠᴇʀʙᴀᴛɪᴍ ᴄᴏᴘɪᴇꜱ ᴏꜰ ᴛʜɪꜱ ʟɪᴄᴇɴꜱᴇ ᴅᴏᴄᴜᴍᴇɴᴛ, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
-  //•⬡• —••÷[ 𝓜𝖎𝖟𝖚ӄ𝖎™ ]÷••—  ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ has been licensed under Apache License
-  `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
+  //⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
+  // _© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
+  //⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
   𝓚𝓻𝓪𝓴𝓲𝓷𝔃.on(`group-participants-update`, async (update) => {
+    var GroupID = update.jid;
     const GroupMemData = await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃.groupMetadata(update.jid);
     const GroupMemG = GroupMemData.participants.length;
     const GroupMemBio = await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃.getStatus(
@@ -321,166 +307,140 @@ ${update.desc}`,
     );
     const MemNum = update.participants[0];
     if (update.action == `add` && MemNum.includes(𝓚𝓻𝓪𝓴𝓲𝓷𝔃.user.jid)) {
-      console.log(`⬡••••••••⬡    𝐌𝐢𝐳𝐮𝐤𝐢™ 𝐀𝐝𝐝𝐞𝐝    ⬡••••••••⬡`);
-      let content = fs.readFileSync(`./𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/𝓜𝖎𝖟𝖚ӄ𝖎.jpg`);
-      const media = await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃.prepareMessage(
-        GroupID,
-        content,
-        MessageType.image
-      );
-      await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+      console.log(`⬡••••••••⬡    ⦿𝐌𝐢𝐳𝐮𝐤𝐢™⦿Added    ⬡••••••••⬡`);
+      return await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
         .sendMessage(
           GroupID,
-          {
-            contentText: `
-┌───────────⭓ 
-│
+          `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
+
+┌─────⭓
 │⦿ ʜᴇʟʟᴏ ᴇᴠᴇʀʏᴏɴᴇ, ʀᴇᴀᴅʏ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ʜᴇʀᴇ
 │⦿ ᴘʟᴇᴀꜱᴇ ᴛʏᴘᴇ *${ᴋᴇɪ}help* ᴛᴏ ᴋɴᴏᴡ ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅꜱ!
-│⬡ 𝗦𝘂𝗽𝗽𝗼𝗿𝘁 𝐆𝐫𝐨𝐮𝐩👓${_𝔏𝔞𝔟_.HASH}
-│
-│⬘𝗠𝗲𝗺𝗯𝗲𝗿𝘀: ${GroupMemG}
-│⬘𝗚𝗿𝗼𝘂𝗽: ${GroupMemData.subject}
-│
-└───────────⭓`,
-            footerText: `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_`,
-            buttons: [
-              {
-                buttonId: `${ᴋᴇɪ}help`,
-                buttonText: { displayText: `${ᴋᴇɪ}help` },
-                type: 1,
-              },
-              {
-                buttonId: `${ᴋᴇɪ}mizuki`,
-                buttonText: { displayText: `${ᴋᴇɪ}mizuki` },
-                type: 1,
-              },
-            ],
-            headerType: 4,
-            imageMessage: media.message.imageMessage,
-          },
-          MessageType.buttonsMessage
+└───────────⭓
+
+┌─────⭓
+│⬘ 𝗠𝗲𝗺𝗯𝗲𝗿𝘀: ${GroupMemG}
+│⬘ 𝗚𝗿𝗼𝘂𝗽: ${GroupMemData.subject}
+└───────────⭓
+
+𝗦𝘂𝗽𝗽𝗼𝗿𝘁 𝐆𝐫𝐨𝐮𝐩:${_𝔏𝔞𝔟_.HASH}`,
+          `conversation`
         )
-        .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+        .then(console.log(Kolor.green(GroupID)))
+        .catch((error) => console.log(error));
     }
-    `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
-    var GroupID = update.jid;
-    console.log(GroupID);
-    try {
-      if (update.action === `add`) {
-        var enable = await ɠɠ𝓜𝖎𝖟𝖚ӄ𝖎.checkSettings(GroupID, `setwelcome`);
-        if (enable === false || enable === `OFF`) {
-          return;
-        }
-        console.log(
-          `=================😈    |  ɢʀᴏᴜᴘ ᴜᴘᴅᴀᴛᴇ  |    😈=================`
+    if (update.action === `add` && !MemNum.includes(𝓚𝓻𝓪𝓴𝓲𝓷𝔃.user.jid)) {
+      var enable = await ɠɠ𝓜𝖎𝖟𝖚ӄ𝖎.checkSettings(GroupID, `setwelcome`);
+      if (enable === false || enable === `OFF`) {
+        return;
+      }
+      console.log(
+        `=================😈    |  ɢʀᴏᴜᴘ ᴜᴘᴅᴀᴛᴇ  |    😈=================`
+      );
+      var Fetched = await ɠɠ𝓜𝖎𝖟𝖚ӄ𝖎.getMessage(GroupID, `setwelcome`);
+      try {
+        𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃.getProfilePicture(
+          `${MemNum.split(`@`)[0]}@c.us`
         );
-        const code = await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃.groupInviteCode(GroupID);
-        var Fetched = await ɠɠ𝓜𝖎𝖟𝖚ӄ𝖎.getMessage(GroupID, `setwelcome`);
-        try {
-          𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃.getProfilePicture(
-            `${MemNum.split(`@`)[0]}@c.us`
+      } catch {
+        𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = `https://i.postimg.cc/bJmWSkFL/depositphotos-39258143-stock-illustration-businessman-avatar-profile-picture.jpg`;
+      }
+      download(
+        𝕻𝕻𝖑𝖊𝖙𝖊𝖗,
+        {
+          directory: `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/`,
+          filename: `𝕻𝕻𝖑𝖊𝖙𝖊𝖗.jpg`,
+        },
+        async function (err) {
+          if (err) throw err;
+          const weltext = ᴛᴡᴇʟ[Math.floor(Math.random() * ᴛᴡᴇʟ.length)];
+          personcum = MemNum.substring(0, MemNum.length - 15);
+          let content = fs.readFileSync(`./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/𝕻𝕻𝖑𝖊𝖙𝖊𝖗.jpg`);
+          const media = await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃.prepareMessage(
+            GroupID,
+            content,
+            MessageType.image
           );
-        } catch {
-          𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = `https://i.postimg.cc/bJmWSkFL/depositphotos-39258143-stock-illustration-businessman-avatar-profile-picture.jpg`;
-        }
-        download(
-          𝕻𝕻𝖑𝖊𝖙𝖊𝖗,
-          {
-            directory: `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/`,
-            filename: `𝕻𝕻𝖑𝖊𝖙𝖊𝖗.jpg`,
-          },
-          async function (err) {
-            if (err) throw err;
-            const weltext = ᴛᴡᴇʟ[Math.floor(Math.random() * ᴛᴡᴇʟ.length)];
-            personcum = MemNum.substring(0, MemNum.length - 15);
-            let content = fs.readFileSync(`./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/𝕻𝕻𝖑𝖊𝖙𝖊𝖗.jpg`);
-            const media = await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃.prepareMessage(
+          return await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+            .sendMessage(
               GroupID,
-              content,
-              MessageType.image
-            );
-            await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
-              .sendMessage(
-                GroupID,
-                {
-                  contentText: `@${personcum}
+              {
+                contentText: `@${personcum}
 ${weltext}
 ┌───────⭓ 
 │⬘𝗕𝗶𝗼: ${GroupMemBio.status}
 │⬘𝗠𝗲𝗺𝗯𝗲𝗿𝘀: ${GroupMemG}
 │⬘𝗚𝗿𝗼𝘂𝗽: ${GroupMemData.subject}
 └───────────⭓
-⬘𝗜𝗻𝘃𝗶𝘁𝗲: ${`https://chat.whatsapp.com/` + code}
 
 ${Fetched.message}`,
-                  footerText: `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_`,
-                  buttons: [
-                    {
-                      buttonId: `${ᴋᴇɪ}help`,
-                      buttonText: { displayText: `${ᴋᴇɪ}help` },
-                      type: 1,
-                    },
-                    {
-                      buttonId: `${ᴋᴇɪ}mizuki`,
-                      buttonText: { displayText: `${ᴋᴇɪ}mizuki` },
-                      type: 1,
-                    },
-                  ],
-                  headerType: 4,
-                  imageMessage: media.message.imageMessage,
+                footerText: `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_`,
+                buttons: [
+                  {
+                    buttonId: `${ᴋᴇɪ}help`,
+                    buttonText: { displayText: `${ᴋᴇɪ}help` },
+                    type: 1,
+                  },
+                  {
+                    buttonId: `${ᴋᴇɪ}mizuki`,
+                    buttonText: { displayText: `${ᴋᴇɪ}mizuki` },
+                    type: 1,
+                  },
+                ],
+                headerType: 4,
+                imageMessage: media.message.imageMessage,
+              },
+              MessageType.buttonsMessage,
+              {
+                contextInfo: {
+                  mentionedJid: [MemNum],
                 },
-                MessageType.buttonsMessage,
+              }
+            )
+            .catch((error) => console.log(error));
+        }
+      );
+    }
+    if (update.action === `remove`) {
+      var enable = await ɠɠ𝓜𝖎𝖟𝖚ӄ𝖎.checkSettings(GroupID, `setgoodbye`);
+      if (enable === false || enable === `OFF`) {
+        return;
+      }
+      var enable = await ɠɠ𝓜𝖎𝖟𝖚ӄ𝖎.checkSettings(GroupID, `setgoodbye`);
+      if (enable === false || enable === `OFF`) {
+        return;
+      } else {
+        var ꜰᴇᴛᴄʜᴇᴅʙʏᴇ = await ɠɠ𝓜𝖎𝖟𝖚ӄ𝖎.getMessage(GroupID, `setgoodbye`);
+        try {
+          𝕸𝖊𝖊𝕷𝖊𝖋𝖙𝖊𝖗 = await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃.getProfilePicture(
+            `${MemNum.split(`@`)[0]}@c.us`
+          );
+        } catch {
+          𝕸𝖊𝖊𝕷𝖊𝖋𝖙𝖊𝖗 = `https://i.postimg.cc/bJmWSkFL/depositphotos-39258143-stock-illustration-businessman-avatar-profile-picture.jpg`;
+        }
+        download(
+          𝕸𝖊𝖊𝕷𝖊𝖋𝖙𝖊𝖗,
+          {
+            directory: `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/`,
+            filename: `𝕸𝖊𝖊𝕷𝖊𝖋𝖙𝖊𝖗.jpg`,
+          },
+          async function (err) {
+            if (err) throw err;
+            const byetext = ᴛʙʏᴇ[Math.floor(Math.random() * ᴛʙʏᴇ.length)];
+            personcum = MemNum.substring(0, MemNum.length - 15);
+            return await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+              .sendMessage(
+                GroupID,
                 {
+                  url: `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/𝕸𝖊𝖊𝕷𝖊𝖋𝖙𝖊𝖗.jpg`,
+                },
+                MessageType.image,
+                {
+                  mimetype: Mimetype.png,
                   contextInfo: {
                     mentionedJid: [MemNum],
                   },
-                }
-              )
-              .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
-          }
-        );
-        `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
-      } else if (update.action === `remove`) {
-        var enable = await ɠɠ𝓜𝖎𝖟𝖚ӄ𝖎.checkSettings(GroupID, `setgoodbye`);
-        if (enable === false || enable === `OFF`) {
-          return;
-        }
-        var enable = await ɠɠ𝓜𝖎𝖟𝖚ӄ𝖎.checkSettings(GroupID, `setgoodbye`);
-        if (enable === false || enable === `OFF`) {
-          return;
-        } else {
-          var ꜰᴇᴛᴄʜᴇᴅʙʏᴇ = await ɠɠ𝓜𝖎𝖟𝖚ӄ𝖎.getMessage(GroupID, `setgoodbye`);
-          try {
-            𝕸𝖊𝖊𝕷𝖊𝖋𝖙𝖊𝖗 = await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃.getProfilePicture(
-              `${MemNum.split(`@`)[0]}@c.us`
-            );
-          } catch {
-            𝕸𝖊𝖊𝕷𝖊𝖋𝖙𝖊𝖗 = `https://i.postimg.cc/bJmWSkFL/depositphotos-39258143-stock-illustration-businessman-avatar-profile-picture.jpg`;
-          }
-          download(
-            𝕸𝖊𝖊𝕷𝖊𝖋𝖙𝖊𝖗,
-            {
-              directory: `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/`,
-              filename: `𝕸𝖊𝖊𝕷𝖊𝖋𝖙𝖊𝖗.jpg`,
-            },
-            async function (err) {
-              if (err) throw err;
-              const byetext = ᴛʙʏᴇ[Math.floor(Math.random() * ᴛʙʏᴇ.length)];
-              personcum = MemNum.substring(0, MemNum.length - 15);
-              return await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
-                .sendMessage(
-                  GroupID,
-                  {
-                    url: `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/𝕸𝖊𝖊𝕷𝖊𝖋𝖙𝖊𝖗.jpg`,
-                  },
-                  MessageType.image,
-                  {
-                    mimetype: Mimetype.png,
-                    contextInfo: {
-                      mentionedJid: [MemNum],
-                    },
-                    caption: `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_*
+                  caption: `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_*
 
 @${personcum}👋🏽${byetext}
 
@@ -491,23 +451,18 @@ ${Fetched.message}`,
 └───────────⭓
 
 ${ꜰᴇᴛᴄʜᴇᴅʙʏᴇ.message}`,
-                  }
-                )
-                .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
-            }
-          );
-          return;
-        }
+                }
+              )
+              .catch((error) => console.log(error));
+          }
+        );
+        return;
       }
-    } catch (cᴇʀʀᴏʀ) {
-      console.log(cᴇʀʀᴏʀ);
     }
   });
-  `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
-  //•⬡• ɢɴᴜ ɢᴇɴᴇʀᴀʟ ᴘᴜʙʟɪᴄ ʟɪᴄᴇɴꜱᴇ ᴠᴇʀꜱɪᴏɴ 3, 29 ᴊᴜɴᴇ 2007 ᴄᴏᴘʏʀɪɢʜᴛ (ᴄ) 2007 ꜰʀᴇᴇ ꜱᴏꜰᴛᴡᴀʀᴇ ꜰᴏᴜɴᴅᴀᴛɪᴏɴ
-  //•⬡• ᴇᴠᴇʀʏᴏɴᴇ ɪꜱ ᴘᴇʀᴍɪᴛᴛᴇᴅ ᴛᴏ 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 ᴠᴇʀʙᴀᴛɪᴍ ᴄᴏᴘɪᴇꜱ ᴏꜰ ᴛʜɪꜱ ʟɪᴄᴇɴꜱᴇ ᴅᴏᴄᴜᴍᴇɴᴛ, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
-  //•⬡• —••÷[ 𝓜𝖎𝖟𝖚ӄ𝖎™ ]÷••—  ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ has been licensed under Apache License
-  `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
+  //⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
+  // _© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
+  //⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
   𝓚𝓻𝓪𝓴𝓲𝓷𝔃.on(`chat-update`, async (chat) => {
     if (!chat.hasNewMessage) {
       return;
@@ -524,7 +479,6 @@ ${ꜰᴇᴛᴄʜᴇᴅʙʏᴇ.message}`,
     const adminmodls = [
       `add`,
       `demote`,
-      `invite`,
       `mute`,
       `promote`,
       `remove`,
@@ -550,9 +504,9 @@ ${ꜰᴇᴛᴄʜᴇᴅʙʏᴇ.message}`,
         }
       }
     }
-    `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
-    // 👓𝓜𝖎𝖟𝖚ӄ𝖎™ ᴀᴅᴠᴀɴᴄᴇᴅ ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ 80+ ᴄᴏᴍᴍᴀɴᴅꜱ ꜰᴏʀ ʙᴏᴛʜ ᴘʀɪᴠᴀᴛᴇ ᴀɴᴅ ɢʀᴏᴜᴘ-ᴜꜱᴀɢᴇ👓
-    // ⬡==================⬡-----------------⦿𝐌𝐢𝐳𝐮𝐤𝐢™⦿-----------------⬡=================
+    //⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
+    // _© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
+    //⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
     if (𝓜𝖎𝖟𝖚ӄ𝖎.isCmd) {
       console.log(
         Kolor.green(
@@ -585,8 +539,6 @@ _Use ${ᴋᴇɪ}𝗵𝗲𝗹𝗽 to get the list of available commands_`,
   });
 }
 𝓜𝓮𝓮6s().catch((cᴇʀʀᴏʀ) => console.log(Kolor.red(`❌𝗘𝗿𝗿⬰ `), Kolor.red(cᴇʀʀᴏʀ)));
-`⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
-//•⬡• ɢɴᴜ ɢᴇɴᴇʀᴀʟ ᴘᴜʙʟɪᴄ ʟɪᴄᴇɴꜱᴇ ᴠᴇʀꜱɪᴏɴ 3, 29 ᴊᴜɴᴇ 2007 ᴄᴏᴘʏʀɪɢʜᴛ (ᴄ) 2007 ꜰʀᴇᴇ ꜱᴏꜰᴛᴡᴀʀᴇ ꜰᴏᴜɴᴅᴀᴛɪᴏɴ
-//•⬡• ᴇᴠᴇʀʏᴏɴᴇ ɪꜱ ᴘᴇʀᴍɪᴛᴛᴇᴅ ᴛᴏ 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 ᴠᴇʀʙᴀᴛɪᴍ ᴄᴏᴘɪᴇꜱ ᴏꜰ ᴛʜɪꜱ ʟɪᴄᴇɴꜱᴇ ᴅᴏᴄᴜᴍᴇɴᴛ, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
-//•⬡• —••÷[ 𝓜𝖎𝖟𝖚ӄ𝖎™ ]÷••—  ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ has been licensed under Apache License
-`⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
+//⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
+// _© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
+//⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
