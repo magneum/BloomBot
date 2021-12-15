@@ -1,30 +1,27 @@
 //⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
-// _© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
-//⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
-const xic = (𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓, Receiver) =>
+let kata = [
+  `pig`,
+  `ape`,
+  `dog`,
+  `mf`,
+  `asshole`,
+  `pussy`,
+  `dick`,
+  `shout`,
+  `shout`,
+  `gay`,
+  `lesbi`,
+  `yoga`,
+  `setan`,
+  `piyo`,
+  `chopsticks`,
+  `cumbersome`,
+  `bastard`,
+  `fuck`,
+];
+let randKata = kata[Math.floor(Math.random() * kata.length)];
+const xic = () =>
   new Promise((resolve, reject) => {
-    let kata = [
-      `pig`,
-      `ape`,
-      `dog`,
-      `mf`,
-      `asshole`,
-      `pussy`,
-      `dick`,
-      `shout`,
-      `shout`,
-      `gay`,
-      `lesbi`,
-      `yoga`,
-      `setan`,
-      `piyo`,
-      `chopsticks`,
-      `cumbersome`,
-      `bastard`,
-      `fuck`,
-    ];
-    console.log(𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓, Receiver);
-    let randKata = kata[Math.floor(Math.random() * kata.length)];
     let list = [
       `your face cake ${randKata}`,
       `you know ${randKata} ?`,
@@ -49,6 +46,4 @@ const xic = (𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓, Receiver) =>
   });
 
 module.exports = { xic };
-//⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
-// _© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
 //⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
