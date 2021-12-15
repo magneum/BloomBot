@@ -322,51 +322,52 @@ ${update.desc}`,
     const MemNum = update.participants[0];
     if (update.action == `add` && MemNum.includes(𝓚𝓻𝓪𝓴𝓲𝓷𝔃.user.jid)) {
       console.log(`⬡••••••••⬡    𝐌𝐢𝐳𝐮𝐤𝐢™ 𝐀𝐝𝐝𝐞𝐝    ⬡••••••••⬡`);
-    }
-    let content = fs.readFileSync(`./𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/𝓜𝖎𝖟𝖚ӄ𝖎.jpg`);
-    const media = await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃.prepareMessage(
-      GroupID,
-      content,
-      MessageType.image
-    );
-    await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
-      .sendMessage(
+      let content = fs.readFileSync(`./𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/𝓜𝖎𝖟𝖚ӄ𝖎.jpg`);
+      const media = await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃.prepareMessage(
         GroupID,
-        {
-          contentText: `
-┌───────────⭓ 
-│
-│⦿ ʜᴇʟʟᴏ ᴇᴠᴇʀʏᴏɴᴇ, ʀᴇᴀᴅʏ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ʜᴇʀᴇ
-│⦿ ᴘʟᴇᴀꜱᴇ ᴛʏᴘᴇ *${ᴋᴇɪ}help* ᴛᴏ ᴋɴᴏᴡ ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅꜱ!
-│⬡ 𝗦𝘂𝗽𝗽𝗼𝗿𝘁 𝐆𝐫𝐨𝐮𝐩👓${_𝔏𝔞𝔟_.HASH}
-│
-│⬘𝗠𝗲𝗺𝗯𝗲𝗿𝘀: ${GroupMemG}
-│⬘𝗚𝗿𝗼𝘂𝗽: ${GroupMemData.subject}
-│
-└───────────⭓`,
-          footerText: `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_`,
-          buttons: [
-            {
-              buttonId: `${ᴋᴇɪ}help`,
-              buttonText: { displayText: `${ᴋᴇɪ}help` },
-              type: 1,
-            },
-            {
-              buttonId: `${ᴋᴇɪ}mizuki`,
-              buttonText: { displayText: `${ᴋᴇɪ}mizuki` },
-              type: 1,
-            },
-          ],
-          headerType: 4,
-          imageMessage: media.message.imageMessage,
-        },
-        MessageType.buttonsMessage,
-        {
-          quoted: chat,
-          contextInfo: { mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓] },
-        }
-      )
-      .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+        content,
+        MessageType.image
+      );
+      await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+        .sendMessage(
+          GroupID,
+          {
+            contentText: `
+  ┌───────────⭓ 
+  │
+  │⦿ ʜᴇʟʟᴏ ᴇᴠᴇʀʏᴏɴᴇ, ʀᴇᴀᴅʏ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ʜᴇʀᴇ
+  │⦿ ᴘʟᴇᴀꜱᴇ ᴛʏᴘᴇ *${ᴋᴇɪ}help* ᴛᴏ ᴋɴᴏᴡ ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅꜱ!
+  │⬡ 𝗦𝘂𝗽𝗽𝗼𝗿𝘁 𝐆𝐫𝐨𝐮𝐩👓${_𝔏𝔞𝔟_.HASH}
+  │
+  │⬘𝗠𝗲𝗺𝗯𝗲𝗿𝘀: ${GroupMemG}
+  │⬘𝗚𝗿𝗼𝘂𝗽: ${GroupMemData.subject}
+  │
+  └───────────⭓`,
+            footerText: `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_`,
+            buttons: [
+              {
+                buttonId: `${ᴋᴇɪ}help`,
+                buttonText: { displayText: `${ᴋᴇɪ}help` },
+                type: 1,
+              },
+              {
+                buttonId: `${ᴋᴇɪ}mizuki`,
+                buttonText: { displayText: `${ᴋᴇɪ}mizuki` },
+                type: 1,
+              },
+            ],
+            headerType: 4,
+            imageMessage: media.message.imageMessage,
+          },
+          MessageType.buttonsMessage,
+          {
+            quoted: chat,
+            contextInfo: { mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓] },
+          }
+        )
+        .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+    }
+    `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
     var GroupID = update.jid;
     console.log(GroupID);
     try {
@@ -441,6 +442,7 @@ ${Fetched.message}`,
               .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
           }
         );
+        `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
       } else if (update.action === `remove`) {
         var enable = await ɠɠ𝓜𝖎𝖟𝖚ӄ𝖎.checkSettings(GroupID, `setgoodbye`);
         if (enable === false || enable === `OFF`) {
