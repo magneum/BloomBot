@@ -35,6 +35,8 @@ module.exports = {
     var 𝙵𝚎𝚝𝚌𝚑𝙼𝚒𝚣𝚞𝚔𝚒𝙽𝚎𝚜𝚜 = await 𝓜𝖎𝖟𝖚ӄ𝖎𝔊𝔦𝔱.log([
       `KrakinzLab..origin/KrakinzLab`,
     ]);
+    const FetchedLink1 = await yts(arg.join(` `));
+    const FetchedLink = await yts(arg.join(` `));
     `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
     if (𝙵𝚎𝚝𝚌𝚑𝙼𝚒𝚣𝚞𝚔𝚒𝙽𝚎𝚜𝚜.total != 0) {
       await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
@@ -169,7 +171,6 @@ You Can Get URL by using ${ᴋᴇɪ}yts <song-name>`,
       }
       `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
       if (!𝓜𝖎𝖟𝖚ӄ𝖎.isGroup) {
-        const FetchedLink1 = yts(arg.join(` `));
         const videos1 = FetchedLink1.videos.slice(0, 1);
         const filename = `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/${now}_ytaudiosprivate_${nowbyk.toString()}${𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓}${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰}`;
         yta(arg[0]).then(async (gotResp) => {
@@ -246,7 +247,6 @@ You Can Get URL by using ${ᴋᴇɪ}yts <song-name>`,
       }
       `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
       if (𝓜𝖎𝖟𝖚ӄ𝖎.isGroup) {
-        const FetchedLink = yts(arg.join(` `));
         const videos = FetchedLink.videos.slice(0, 1);
         const filename = `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/${now}ytaudiosgroups_${nowbyk.toString()}${𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓}${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰}`;
         yta(arg[0]).then(async (gotResp) => {

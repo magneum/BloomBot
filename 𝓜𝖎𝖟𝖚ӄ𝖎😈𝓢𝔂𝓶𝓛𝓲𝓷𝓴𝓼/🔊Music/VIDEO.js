@@ -29,7 +29,6 @@ module.exports = {
     var 𝙵𝚎𝚝𝚌𝚑𝙼𝚒𝚣𝚞𝚔𝚒𝙽𝚎𝚜𝚜 = await 𝓜𝖎𝖟𝖚ӄ𝖎𝔊𝔦𝔱.log([
       `KrakinzLab..origin/KrakinzLab`,
     ]);
-
     if (𝙵𝚎𝚝𝚌𝚑𝙼𝚒𝚣𝚞𝚔𝚒𝙽𝚎𝚜𝚜.total != 0) {
       await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
         .sendMessage(
@@ -160,7 +159,6 @@ You Can Get URL by using ${ᴋᴇɪ}yts <song-name>`,
           });
       }
       const { id } = getVideoId(arg[0]);
-
       if (𝓜𝖎𝖟𝖚ӄ𝖎.isGroup) {
         const filename = `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/${now}_ytvideoprivate_${nowbyk.toString()}${𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓}${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰}`;
         ytv(arg[0]).then(async (gotResp) => {
@@ -193,7 +191,6 @@ You Can Get URL by using ${ᴋᴇɪ}yts <song-name>`,
                   )
                   .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
               } else {
-                const FetchedLink1 = yts(arg.join(` `));
                 const videos1 = FetchedLink1.videos.slice(0, 1);
                 videos1.forEach(function (youfound) {
                   Fetched = `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
@@ -269,7 +266,6 @@ You Can Get URL by using ${ᴋᴇɪ}yts <song-name>`,
                   )
                   .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
               } else {
-                const FetchedLink2 = yts(arg.join(` `));
                 const videos2 = FetchedLink2.videos.slice(0, 1);
                 videos2.forEach(function (youfound) {
                   Fetched = `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
