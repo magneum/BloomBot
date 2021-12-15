@@ -1,10 +1,10 @@
 [![Open Source Love svg3](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)<img align="centre" src="https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg" alt="Krakinz"/><img align="centre" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"/>
 
-# ⬡ 𝓜𝖎𝖟𝖚ӄ𝖎™ △▽ 𝖂𝖍𝖆𝖙𝖘𝖆𝖕𝖕-𝖀𝖘𝖊𝖗𝖇𝖔𝖙 ⬡
+# 𝐌𝐢𝐳𝐮𝐤𝐢™ △▽ 𝙒𝙝𝙖𝙩𝙨𝙖𝙥𝙥 𝙐𝙨𝙚𝙧𝙗𝙤𝙩
 ʏᴏᴜʀ ᴀꜱꜱɪꜱꜱᴛᴀɴᴛ ꜰᴏʀ ᴍᴀᴋɪɴɢ ʙᴏʀɪɴɢ ᴡʜᴀᴛꜱᴀᴘᴘ ᴀ ʙᴇᴛᴛᴇʀ ᴀᴅᴠᴀɴᴄᴇ ᴀᴘᴘ!
 
 <p align="center">
-  <img src="https://i.postimg.cc/8PZcCLL6/728112-01.jpg" width="400"/>
+  <img src="https://i.postimg.cc/GmqLqy9M/image.jpg" width="400"/>
 </p>
 
 # ❓ 𝖂𝖍𝖞 𝕸𝖆𝖉𝖊 𝕿𝖍𝖎𝖘 𝕭𝖔𝖙?
@@ -12,17 +12,17 @@
 ```sh
 💻 𝗪𝗵𝗮𝘁 𝗖𝗮𝗻 𝗕𝗼𝘁 𝗗𝗼???
 
-🎮𝓜𝖎𝖟𝖚ӄ𝖎
+🎮ᴍɪᴢᴜᴋɪ
 🔸 ᴀᴅᴠᴀɴᴄᴇᴅ ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ 80+ ᴄᴏᴍᴍᴀɴᴅꜱ ꜰᴏʀ ʙᴏᴛʜ ᴘʀɪᴠᴀᴛᴇ ᴀɴᴅ ɢʀᴏᴜᴘ-ᴜꜱᴀɢᴇ
-🔸 𝓜𝖎𝖟𝖚ӄ𝖎 is written in JavaScript and is by far the most advance Whatsapp Userbot.
-🔸 Use 𝓜𝖎𝖟𝖚ӄ𝖎 in both public-groups and private
+🔸 ᴍɪᴢᴜᴋɪ is written in JavaScript and is by far the most advance Whatsapp Userbot.
+🔸 Use ᴍɪᴢᴜᴋɪ in both public-groups and private
 🔸 So many commands that will blow up the every-day use of boring whatsapp.
 ```
 
 # ⚡ 𝕯𝖊𝖕𝖑𝖔𝖞𝖒𝖊𝖓𝖙
 
 - *ꜰɪʀꜱᴛ ꜰᴏʀᴋ ᴀɴᴅ ꜱᴛᴀʀ ᴛʜᴇ ʀᴇᴘᴏ and join group chat (or else auto upgrading won't work)*
-- *Get Your Mee6 SessionCode from* [![Generic badge](https://img.shields.io/badge/𝓜𝖎𝖟𝖚ӄ𝖎_Session-blue.svg)](https://replit.com/@Krakinzkon/Mizuki)
+- *Get Your Mee6 SessionCode from* [![Generic badge](https://img.shields.io/badge/ᴍɪᴢᴜᴋɪ_Session-blue.svg)](https://replit.com/@Krakinzkon/Mizuki)
 - *Head Over To* [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Krakinz/Mizuki.git)
 - 
 🔸[`ᴡʜᴀᴛꜱᴀᴘᴘ`](https://chat.whatsapp.com/KlMRYxCTte5H8TIIupbRVf)
@@ -45,7 +45,7 @@
 Apache License
 Version 2.0, January 2004
 http://www.apache.org/licenses
-—••÷[🎮𝓜𝖎𝖟𝖚ӄ𝖎]÷••—
+—••÷[🎮ᴍɪᴢᴜᴋɪ]÷••—
 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵
 has been licensed under Apache License
 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
