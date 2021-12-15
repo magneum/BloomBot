@@ -4,33 +4,17 @@
 //•⬡• —••÷[ 𝓜𝖎𝖟𝖚ӄ𝖎™ ]÷••—  ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ has been licensed under Apache License
 `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
-const ℓιєηт = require(`../../𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/catch`);
-const getVideoId = require(`get-video-id`);
 const _𝔏𝔞𝔟_ = require(`../../𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/_𝔏𝔞𝔟_`);
-const ffmpeg = require(`fluent-ffmpeg`);
-const ytdl = require(`ytdl-core`);
+const ℓιєηт = require(`../../𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/catch`);
+const { yta } = require(`../../𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/youmaker`);
 const yts = require(`yt-search`);
-const fs = require(`fs`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
-`⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
-//•⬡• ɢɴᴜ ɢᴇɴᴇʀᴀʟ ᴘᴜʙʟɪᴄ ʟɪᴄᴇɴꜱᴇ ᴠᴇʀꜱɪᴏɴ 3, 29 ᴊᴜɴᴇ 2007 ᴄᴏᴘʏʀɪɢʜᴛ (ᴄ) 2007 ꜰʀᴇᴇ ꜱᴏꜰᴛᴡᴀʀᴇ ꜰᴏᴜɴᴅᴀᴛɪᴏɴ
-//•⬡• ᴇᴠᴇʀʏᴏɴᴇ ɪꜱ ᴘᴇʀᴍɪᴛᴛᴇᴅ ᴛᴏ 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 ᴠᴇʀʙᴀᴛɪᴍ ᴄᴏᴘɪᴇꜱ ᴏꜰ ᴛʜɪꜱ ʟɪᴄᴇɴꜱᴇ ᴅᴏᴄᴜᴍᴇɴᴛ, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
-//•⬡• —••÷[ 𝓜𝖎𝖟𝖚ӄ𝖎™ ]÷••—  ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ has been licensed under Apache License
-`⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
-const Regex = {
-  VideoID: /^[a-zA-Z0-9-_]{11}$/,
-  VideoURL:
-    /^((?:https?:)?\/\/)?((?:www|m)\.)?((?:youtube\.com|youtu.be))(\/(?:[\w\-]+\?v=|embed\/|v\/)?)([\w\-]+)(\S+)?$/,
-  PlaylistID: /(PL|UU|LL|RD)[a-zA-Z0-9-_]{16,41}/,
-  PlaylistURL:
-    /https?:\/\/(www.)?youtube.com\/playlist\?list=((PL|UU|LL|RD)[a-zA-Z0-9-_]{16,41})/,
-  SCTrack:
-    /^https?:\/\/(soundcloud\.com|snd\.sc)\/([A-Za-z0-9_-]+)\/([A-Za-z0-9_-]+)\/?$/,
-  SCPlaylist:
-    /^https?:\/\/(soundcloud\.com|snd\.sc)\/([A-Za-z0-9_-]+)\/sets\/([A-Za-z0-9_-]+)\/?$/,
-  Spotify: /^(spotify:|https:\/\/[a-z]+\.spotify\.com\/)/,
-};
+const fn = Date.now() / 10000;
+const request = require("request");
+const axios = require(`axios`);
+const fs = require(`fs`);
+let mime = ``;
 `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
 //•⬡• ɢɴᴜ ɢᴇɴᴇʀᴀʟ ᴘᴜʙʟɪᴄ ʟɪᴄᴇɴꜱᴇ ᴠᴇʀꜱɪᴏɴ 3, 29 ᴊᴜɴᴇ 2007 ᴄᴏᴘʏʀɪɢʜᴛ (ᴄ) 2007 ꜰʀᴇᴇ ꜱᴏꜰᴛᴡᴀʀᴇ ꜰᴏᴜɴᴅᴀᴛɪᴏɴ
 //•⬡• ᴇᴠᴇʀʏᴏɴᴇ ɪꜱ ᴘᴇʀᴍɪᴛᴛᴇᴅ ᴛᴏ 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 ᴠᴇʀʙᴀᴛɪᴍ ᴄᴏᴘɪᴇꜱ ᴏꜰ ᴛʜɪꜱ ʟɪᴄᴇɴꜱᴇ ᴅᴏᴄᴜᴍᴇɴᴛ, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
@@ -38,8 +22,8 @@ const Regex = {
 `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
 module.exports = {
   name: `ytmusic`,
-  description: `Use this command to download audio of your choice either by specifying a YouTube link or the name of the song.`,
-  𝓜𝓮𝓮6ʍօʀɛ: `${ᴋᴇɪ}`,
+  description: `ᴅᴏᴡɴʟᴏᴀᴅ ᴀɴʏ ʏᴏᴜᴛᴜʙᴇ audio ᴜɴᴅᴇʀ 100ᴍʙ ꜱɪᴢᴇ.`,
+  𝓜𝓮𝓮6ʍօʀɛ: `${ᴋᴇɪ}ytmusic <link>`,
   async handle(𝓚𝓻𝓪𝓴𝓲𝓷𝔃, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
     `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
     const 𝓜𝖎𝖟𝖚ӄ𝖎𝔊𝔦𝔱 = require(`simple-git`)();
@@ -49,6 +33,7 @@ module.exports = {
     var 𝙵𝚎𝚝𝚌𝚑𝙼𝚒𝚣𝚞𝚔𝚒𝙽𝚎𝚜𝚜 = await 𝓜𝖎𝖟𝖚ӄ𝖎𝔊𝔦𝔱.log([
       `KrakinzLab..origin/KrakinzLab`,
     ]);
+    const filename = `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/ytmusic_${fn.toString()}${𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓}${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰}`;
     `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
     if (𝙵𝚎𝚝𝚌𝚑𝙼𝚒𝚣𝚞𝚔𝚒𝙽𝚎𝚜𝚜.total != 0) {
       await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
@@ -85,7 +70,6 @@ module.exports = {
       `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
     } else {
       if (arg.length === 0) {
-        `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
         var 𝓜Usage = 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹.get(𝓜𝖎𝖟𝖚ӄ𝖎.commandName);
         𝓜𝓮𝓮ʍօʀɛ = 𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ === undefined ? `Null` : 𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ;
         const nahargs = require(`../../𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/nahargs`);
@@ -100,8 +84,58 @@ module.exports = {
             𝓜𝓮𝓮ʍօʀɛ
           )
           .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
-        `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
       }
+      `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
+      const YouFetchers = async (to, url, text = ``, mention = []) => {
+        if (mention.length > 0) {
+          text = normalizeMention(to, text, mention);
+        }
+        var Download_Audio = function (uri, filename, callback) {
+          request.head(uri, function (err, res, body) {
+            mime = res.headers[`content-type`];
+            request(uri)
+              .pipe(fs.createWriteStream(filename))
+              .on(`close`, callback);
+          });
+        };
+        Download_Audio(url, filename, async function () {
+          console.log(`done`);
+          let media = fs.readFileSync(filename);
+          let type = mime.split(`/`)[0] + `Message`;
+          if (mime === `image/gif`) {
+            type = MessageType.video;
+            mime = Mimetype.gif;
+          }
+          if (mime.split(`/`)[0] === `audio`) {
+            mime = Mimetype.mp4Audio;
+          }
+          await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+            .sendMessage(to, media, type, {
+              quoted: chat,
+              mimetype: mime,
+              caption: text,
+              contextInfo: { mentionedJid: mention },
+            })
+            .then(() => {
+              fs.unlinkSync(filename);
+            })
+            .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+        });
+      };
+      `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
+      const Regex = {
+        VideoID: /^[a-zA-Z0-9-_]{11}$/,
+        VideoURL:
+          /^((?:https?:)?\/\/)?((?:www|m)\.)?((?:youtube\.com|youtu.be))(\/(?:[\w\-]+\?v=|embed\/|v\/)?)([\w\-]+)(\S+)?$/,
+        PlaylistID: /(PL|UU|LL|RD)[a-zA-Z0-9-_]{16,41}/,
+        PlaylistURL:
+          /https?:\/\/(www.)?youtube.com\/playlist\?list=((PL|UU|LL|RD)[a-zA-Z0-9-_]{16,41})/,
+        SCTrack:
+          /^https?:\/\/(soundcloud\.com|snd\.sc)\/([A-Za-z0-9_-]+)\/([A-Za-z0-9_-]+)\/?$/,
+        SCPlaylist:
+          /^https?:\/\/(soundcloud\.com|snd\.sc)\/([A-Za-z0-9_-]+)\/sets\/([A-Za-z0-9_-]+)\/?$/,
+        Spotify: /^(spotify:|https:\/\/[a-z]+\.spotify\.com\/)/,
+      };
       if (!Regex.VideoURL.test(arg[0])) {
         return await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
           .sendMessage(
@@ -116,7 +150,7 @@ module.exports = {
               caption: `*⚠️Seems like ${arg[0]} is not YouTube Link or not YouTube Single Video Link!*
 
 *Usage Example*
-${ᴋᴇɪ}ytdl <video-link>
+${ᴋᴇɪ}ytvideo <youtubelink>
 
 *NOTE:*
 You Can Get URL by using ${ᴋᴇɪ}yts <song-name>`,
@@ -126,120 +160,75 @@ You Can Get URL by using ${ᴋᴇɪ}yts <song-name>`,
             ℓιєηт.catch((cᴇʀʀᴏʀ, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
           });
       }
-      // Task starts here
-      var Id = ` `;
-      if (arg[0].includes(`youtu`)) {
-        Id = arg[0];
-        try {
-          if (arg[0].includes(`watch?v=`)) {
-            var songId = arg[0].split(`watch?v=`)[1];
-          } else {
-            var songId = arg[0].split(`/`)[3];
-          }
-          await yts({
-            videoId: songId,
-          });
-        } catch (cᴇʀʀᴏʀ) {
-          throw cᴇʀʀᴏʀ;
-        }
-      } else {
-        var song = await yts(arg.join(` `));
-        song = song.all;
-        if (song.length < 1) {
-          𝓚𝓻𝓪𝓴𝓲𝓷𝔃
-            .sendMessage(
-              𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              `Could not find the song you entered. Check whether the link or keyword entered is correct.`,
-              MessageType.text,
-              { quoted: chat }
-            )
-            .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
-          return;
-        }
-        Id = song[0].url;
-      }
-      try {
-        var stream = ytdl(Id, {
-          quality: `highestaudio`,
-        });
+      `⬡==================⬡-----------------⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
+      searchaudio = await yts(arg.join(" "));
+      searchedaudio = searchaudio.all;
+      var final = searchedaudio[0].url;
+      yta(final).then((res) => {
+        const { dl_link, thumb, title, filesizeF, filesize } = res;
+        axios
+          .get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
+          .then(async (a) => {
+            if (Number(filesize) >= 100000) {
+              return 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+                .sendMessage(
+                  𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                  {
+                    caption: thumb,
+                  },
+                  MessageType.image,
+                  {
+                    quoted: chat,
+                    contextInfo: {
+                      mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓],
+                    },
+                    mimetype: Mimetype.png,
+                    content: `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
 
-        const FetchedLink = await yts(arg.join(` `));
-        const videos = FetchedLink.videos.slice(0, 1);
-        videos.forEach(function (youfound) {
-          Fetched = `*⛖𝐘𝐨𝐮𝐫 𝐌𝐮𝐬𝐢𝐜 𝐈𝐬 𝐍𝐨𝐰 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐢𝐧𝐠⛖*
-_📥𝘋𝘰𝘸𝘯𝘭𝘰𝘢𝘥 𝘛𝘪𝘮𝘦 𝘥𝘦𝘱𝘦𝘯𝘥𝘴 𝘰𝘯 𝘔𝘶𝘴𝘪𝘤 𝘓𝘦𝘯𝘨𝘵𝘩_
+*•@${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰}*,
+_Please Choose Smaller File. Max Limit (100mb)_
+*Title* : ${title}
+*Filesize* : ${filesizeF}`,
+                  }
+                )
+                .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+            } else {
+              𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+                .sendMessage(
+                  𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                  {
+                    url: thumb,
+                  },
+                  MessageType.image,
+                  {
+                    quoted: chat,
+                    contextInfo: {
+                      mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓],
+                    },
+                    mimetype: Mimetype.png,
+                    caption: `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
 
-🍻—••÷ 𝐓𝐢𝐭𝐥𝐞 ÷••— 
-⪢ ${youfound.title}
+*•@${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰}*,
 
-🙈—••÷ 𝐕𝐢𝐞𝐰𝐬 ÷••—
-⪢ ${youfound.views}
+*Please Check Your Private for the media file*
+*Title*:  ${title}
+*Link*:  ${a.data}
+*Size*:  ${filesizeF}`,
+                  }
+                )
+                .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+              YouFetchers(
+                𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓,
+                dl_link,
+                `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
 
-⏰—••÷ 𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧 ÷••—
-⪢ ${youfound.timestamp}
-
-✒️—••÷ 𝐀𝐮𝐭𝐡𝐨𝐫 ÷••—
-⪢ ${youfound.author.name}
-
-🔗—••÷ 𝐋𝐢𝐧𝐤 ÷••—
-⪢ ${youfound.url}
-
-🛸—••÷ 𝗦𝗲𝗿𝘃𝗶𝗰𝗲 ÷••—
-⪢ ʏᴏᴜᴛᴜʙᴇ⭕ʏᴏᴜᴛᴜʙᴇ ᴍᴜꜱɪᴄ`;
-        });
-        const { id } = getVideoId(arg.join(` `));
-        await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
-          .sendMessage(
-            𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            {
-              url: `http://img.youtube.com/vi/` + id + `/0.jpg`,
-            },
-            MessageType.image,
-            {
-              quoted: chat,
-              mimetype: Mimetype.png,
-              caption: Fetched,
+*Title*:  ${title}
+*Link*:  ${a.data}
+*Size*:  ${filesizeF}`
+              );
             }
-          )
-          .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
-        ffmpeg(stream)
-          .audioBitrate(320)
-          .toFormat(`ipod`)
-          .saveToFile(`./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/${chat.key.id}.mp3`)
-          .on(`end`, async () => {
-            await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
-              .sendMessage(
-                𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                `Uploading song...`,
-                MessageType.text,
-                { quoted: chat }
-              )
-              .catch((cᴇʀʀᴏʀ) => {
-                ℓιєηт.catch((cᴇʀʀᴏʀ, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
-              });
-            await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
-              .sendMessage(
-                𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                fs.readFileSync(`./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/${chat.key.id}.mp3`),
-                MessageType.audio,
-                {
-                  quoted: chat,
-                  mimetype: Mimetype.mp4Audio,
-                }
-              )
-              .catch((cᴇʀʀᴏʀ) => {
-                ℓιєηт.catch((cᴇʀʀᴏʀ, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
-              });
-            fs.unlink(`./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/${chat.key.id}.mp3`, (cᴇʀʀᴏʀ) => {
-              if (cᴇʀʀᴏʀ) console.log(cᴇʀʀᴏʀ);
-              else {
-                console.log(`Deleted!`);
-              }
-            });
           });
-      } catch (cᴇʀʀᴏʀ) {
-        await ℓιєηт.catch((cᴇʀʀᴏʀ, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
-      }
+      });
     }
   },
 };
