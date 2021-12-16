@@ -8,6 +8,7 @@ exports.resolve = function (messageInstance, ӄʀǟӄɨռʐ, groupMetadata) {
   var prefix = _𝔏𝔞𝔟_.FOXTROT + `\\w+`;
   var prefixRegex = new RegExp(prefix, `g`);
   var SUDOstring = _𝔏𝔞𝔟_.SUDO;
+  var DEVstring = _𝔏𝔞𝔟_.DEV;
   try {
     var jsonMessage = JSON.stringify(messageInstance);
   } catch (CYΣЯЯ) {
@@ -119,6 +120,9 @@ exports.resolve = function (messageInstance, ӄʀǟӄɨռʐ, groupMetadata) {
     : ``;
   𝓜𝖎𝖟𝖚ӄ𝖎.groupId = 𝓜𝖎𝖟𝖚ӄ𝖎.isGroup ? groupMetadata.id : ``;
   𝓜𝖎𝖟𝖚ӄ𝖎.isSenderSUDO = SUDOstring.includes(
+    𝓜𝖎𝖟𝖚ӄ𝖎.sender.substring(0, 𝓜𝖎𝖟𝖚ӄ𝖎.sender.indexOf(`@`))
+  );
+  𝓜𝖎𝖟𝖚ӄ𝖎.isDEV = DEVstring.includes(
     𝓜𝖎𝖟𝖚ӄ𝖎.sender.substring(0, 𝓜𝖎𝖟𝖚ӄ𝖎.sender.indexOf(`@`))
   );
   𝓜𝖎𝖟𝖚ӄ𝖎.isBotGroupAdmin = 𝓜𝖎𝖟𝖚ӄ𝖎.isGroup

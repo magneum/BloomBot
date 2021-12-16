@@ -54,23 +54,24 @@ module.exports = {
         return;
         //⦿──────────────────────────────────────────────────────────────────⦿   © 𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿──────────────────────────────────────────────────────────────────⦿`;
       } else {
-        var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
-        var ꜱᴇɴᴅᴇʀᴄᴏɴꜰ = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
-        timestampe = speed();
-        latensie = speed() - timestampe;
-        await ӄʀǟӄɨռʐ
-          .sendMessage(
-            𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            {
-              url: _𝔏𝔞𝔟_.MEE,
-            },
-            MessageType.image,
-            {
-              mimetype: Mimetype.png || Mimetype.jpeg,
-              contextInfo: {
-                mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
+        if (𝓜𝖎𝖟𝖚ӄ𝖎.isDEV) {
+          var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
+          var ꜱᴇɴᴅᴇʀᴄᴏɴꜰ = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
+          timestampe = speed();
+          latensie = speed() - timestampe;
+          await ӄʀǟӄɨռʐ
+            .sendMessage(
+              𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+              {
+                url: _𝔏𝔞𝔟_.MEE,
               },
-              caption: `*(c)Mïzµkï* _${vers.vers}_
+              MessageType.image,
+              {
+                mimetype: Mimetype.png || Mimetype.jpeg,
+                contextInfo: {
+                  mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
+                },
+                caption: `*(c)Mïzµkï* _${vers.vers}_
 
 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},*ʏᴏᴜʀ ᴀꜱꜱɪꜱꜱᴛᴀɴᴛ ꜰᴏʀ ᴍᴀᴋɪɴɢ ʙᴏʀɪɴɢ ᴡʜᴀᴛꜱᴀᴘᴘ ᴀ ʙᴇᴛᴛᴇʀ ᴀᴅᴠᴀɴᴄᴇ ᴀᴘᴘ!*
 
@@ -79,12 +80,15 @@ module.exports = {
 │⧪ ɢɪᴛʜᴜʙ: https://github.com/Krakinz/Mizuki
 └───────────⭓
 
-┌────⭓ 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 𝐚𝐧𝐝 𝐒𝐞𝐬𝐬𝐢𝐨𝐧 𝐂𝐨𝐝𝐞
+┌────⭓ 𝐒𝐞𝐬𝐬𝐢𝐨𝐧 𝐂𝐨𝐝𝐞
 │⧪ ʀᴇᴘʟɪᴛ: https://replit.com/@Krakinzkon/Mizuki
 └───────────⭓`,
-            }
-          )
-          .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
+              }
+            )
+            .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
+        } else {
+          console.log("Null!");
+        }
       }
     } catch (ℓαвєяяσя) {
       ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);

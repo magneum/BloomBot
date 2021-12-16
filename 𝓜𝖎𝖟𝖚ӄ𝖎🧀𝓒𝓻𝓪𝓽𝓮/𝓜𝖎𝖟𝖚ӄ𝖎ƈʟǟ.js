@@ -21,6 +21,7 @@ class 𝓜𝖎𝖟𝖚ӄ𝓲𝓷𝔃 {
     isBotGroupAdmin,
     isSenderGroupAdmin,
     isSenderSUDO,
+    isDEV,
     replyMessageId,
     replyMessage,
     replyParticipant,
@@ -66,6 +67,7 @@ class 𝓜𝖎𝖟𝖚ӄ𝓲𝓷𝔃 {
     this.isReplyAudio = isReplyAudio;
     this.isSenderGroupAdmin = isSenderGroupAdmin;
     this.isSenderSUDO = isSenderSUDO;
+    this.isDEV = isDEV;
     this.isCmd = isCmd;
     this.commandName = commandName;
     this.logGroup = logGroup;
