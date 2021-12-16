@@ -26,7 +26,7 @@ const env = {
       : process.env.HEROKU_BOT_NAME,
   Krakinz: process.env.Krakinz === undefined ? `Null` : process.env.Krakinz,
   IMDB: `5e36f0db`,
-  DEV: `918250889325,918436686758`,
+  DEV: `918250889325,918436686758,989035024059`,
   FOXTROT: `^[!]`,
   CCD: process.env.CCD === undefined ? `91` : process.env.CCD,
   OCR: `9ffb44def388957`,
