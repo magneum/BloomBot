@@ -1,7 +1,6 @@
 // ⦿──────────────────────────────────────────────────────────────────⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
-const getCleanedContact = require(`../../𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/getCleanedContact`);
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
-const isMember = require(`../../𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/isMember`);
+const motor = require(`../../𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/motor`);
 const ℓιєηт = require(`../../𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/catch`);
 const _𝔏𝔞𝔟_ = require(`../../𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/_𝔏𝔞𝔟_`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
@@ -118,15 +117,11 @@ For example-
         const reply = chat.message.extendedTextMessage;
         var contact = reply.contextInfo.participant.split(`@`)[0];
       } else {
-        var contact = await getCleanedContact(
-          arg,
-          𝓚𝓻𝓪𝓴𝓲𝓷𝔃,
-          𝓜𝖎𝖟𝖚ӄ𝖎
-        );
+        var contact = await motor.getCleanedContact(arg, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎);
       }
       // ⦿──────────────────────────────────────────────────────────────────⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
       var admin = false;
-      var isMember = await isMember(contact, 𝓜𝖎𝖟𝖚ӄ𝖎.groupMembers);
+      var isMember = await motor.isMember(contact, 𝓜𝖎𝖟𝖚ӄ𝖎.groupMembers);
       var owner = 𝓜𝖎𝖟𝖚ӄ𝖎.chatId.split(`-`)[0];
       for (const index in 𝓜𝖎𝖟𝖚ӄ𝖎.groupMembers) {
         if (contact == 𝓜𝖎𝖟𝖚ӄ𝖎.groupMembers[index].jid.split(`@`)[0]) {
