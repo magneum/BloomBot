@@ -55,7 +55,7 @@ const env = {
   MEE: MizukiMain,
   INVL: `https://i.postimg.cc/NfXSPxHd/Mizuki-Error.jpg`,
   ARC: `https://i.postimg.cc/251T8y9H/image.jpg`,
-  UPT: `https://i.postimg.cc/251T8y9H/image.jpg`,
+  UPT: `https://i.postimg.cc/K8PnV1QX/Mizuki-Update.png`,
   PRIVACY: process.env.PRIVACY === undefined ? `public` : process.env.PRIVACY,
   SUDO: `918250889325`,
 };
