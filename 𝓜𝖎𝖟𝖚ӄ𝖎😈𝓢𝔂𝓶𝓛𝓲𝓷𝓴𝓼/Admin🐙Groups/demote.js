@@ -20,7 +20,7 @@ For example-
       const ᴍɪᴢᴜᴋɪɢɪᴛ = require(`simple-git`)();
       await ᴍɪᴢᴜᴋɪɢɪᴛ.fetch();
       var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
-      var 𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰 = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
+      var ꜱᴇɴᴅᴇʀᴄᴏɴꜰ = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
       var 𝙵𝚎𝚝𝚌𝚑𝙼𝚒𝚣𝚞𝚔𝚒𝙽𝚎𝚜𝚜 = await ᴍɪᴢᴜᴋɪɢɪᴛ.log([
         `KrakinzLab..origin/KrakinzLab`,
       ]);
@@ -45,7 +45,7 @@ For example-
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
             `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
 
-𝗔𝗵𝗺 •@${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰},
+𝗔𝗵𝗺 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 シ︎𝐆𝐫𝐨𝐮𝐩👓${_𝔏𝔞𝔟_.HASH}`,
             MessageType.text,
             {
@@ -63,7 +63,7 @@ For example-
         𝓚𝓻𝓪𝓴𝓲𝓷𝔃
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            `𝗔𝗵𝗺 •@${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰},This command is only applicable in a group chat.`,
+            `𝗔𝗵𝗺 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},This command is only applicable in a group chat.`,
             MessageType.text,
             { quoted: chat }
           )
@@ -86,7 +86,7 @@ For example-
               },
               mimetype: Mimetype.png,
               caption: `
-⚠️𝗘𝗿𝗿𝗼𝗿: @${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰}, *ʏᴏᴜ ᴅᴏɴ'ᴛ ꜱᴇᴇᴍ ᴛᴏ ʙᴇ ᴀᴅᴍɪɴ..*`,
+⚠️𝗘𝗿𝗿𝗼𝗿: @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}, *ʏᴏᴜ ᴅᴏɴ'ᴛ ꜱᴇᴇᴍ ᴛᴏ ʙᴇ ᴀᴅᴍɪɴ..*`,
             }
           )
           .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
@@ -96,7 +96,7 @@ For example-
         𝓚𝓻𝓪𝓴𝓲𝓷𝔃
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            `𝗔𝗵𝗺 •@${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰},Sorry, dont have the permission to do so since I am not an admin.`,
+            `𝗔𝗵𝗺 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},Sorry, dont have the permission to do so since I am not an admin.`,
             MessageType.text,
             {
               quoted: chat,
@@ -113,7 +113,7 @@ For example-
         𝓚𝓻𝓪𝓴𝓲𝓷𝔃
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            `𝗔𝗵𝗺 •@${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰},Reply/tag/enter contact number of the person to be demoted.`,
+            `𝗔𝗵𝗺 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},Reply/tag/enter contact number of the person to be demoted.`,
             MessageType.text,
             {
               quoted: chat,
@@ -152,7 +152,7 @@ For example-
         𝓚𝓻𝓪𝓴𝓲𝓷𝔃
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            `𝗔𝗵𝗺 •@${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰},
+            `𝗔𝗵𝗺 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 
 ${contact} is the owner of the group`,
             MessageType.text,
@@ -174,7 +174,7 @@ ${contact} is the owner of the group`,
           await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
             .sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              `𝗔𝗵𝗺 •@${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰},
+              `𝗔𝗵𝗺 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 
 ${contact} is demoted from admin`,
               MessageType.text,
@@ -191,7 +191,7 @@ ${contact} is demoted from admin`,
           await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
             .sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              `𝗔𝗵𝗺 •@${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰},
+              `𝗔𝗵𝗺 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 
 ${contact} was not an admin`,
               MessageType.text,

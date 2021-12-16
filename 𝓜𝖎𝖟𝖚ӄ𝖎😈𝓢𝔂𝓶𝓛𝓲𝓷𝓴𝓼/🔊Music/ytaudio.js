@@ -24,7 +24,7 @@ module.exports = {
       const ᴍɪᴢᴜᴋɪɢɪᴛ = require(`simple-git`)();
       await ᴍɪᴢᴜᴋɪɢɪᴛ.fetch();
       var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
-      var 𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰 = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
+      var ꜱᴇɴᴅᴇʀᴄᴏɴꜰ = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
       var 𝙵𝚎𝚝𝚌𝚑𝙼𝚒𝚣𝚞𝚔𝚒𝙽𝚎𝚜𝚜 = await ᴍɪᴢᴜᴋɪɢɪᴛ.log([
         `KrakinzLab..origin/KrakinzLab`,
       ]);
@@ -49,7 +49,7 @@ module.exports = {
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
             `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
 
-•@${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰},
+•@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 シ︎𝐆𝐫𝐨𝐮𝐩👓${_𝔏𝔞𝔟_.HASH}`,
             MessageType.text,
             {
@@ -73,7 +73,7 @@ module.exports = {
               chat,
               𝓜𝖎𝖟𝖚ӄ𝖎,
               ꜱᴇɴᴅᴇʀɪᴅ,
-              𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰,
+              ꜱᴇɴᴅᴇʀᴄᴏɴꜰ,
               𝓜𝖎𝖟𝖚ӄ𝖎.commandName,
               𝓜𝓮𝓮ʍօʀɛ
             )
@@ -167,7 +167,7 @@ You Can Get URL by using ${ᴋᴇɪ}yts <song-name>`,
         //⦿──────────────────────────────────────────────────────────────────⦿   © 𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
         if (!𝓜𝖎𝖟𝖚ӄ𝖎.isGroup) {
           const videos1 = FetchedLink1.videos.slice(0, 1);
-          const filename = `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/${now}_ytaudiosprivate_${nowbyk.toString()}${ꜱᴇɴᴅᴇʀɪᴅ}${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰}`;
+          const filename = `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/${now}_ytaudiosprivate_${nowbyk.toString()}${ꜱᴇɴᴅᴇʀɪᴅ}${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}`;
           yta(arg[0]).then(async (gotResp) => {
             const { dl_link, thumb, title, filesize } = gotResp;
             axios
@@ -190,7 +190,7 @@ You Can Get URL by using ${ᴋᴇɪ}yts <song-name>`,
                         content: `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
 
 ⭕𝗔𝘂𝗱𝗶𝗼
-•@${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰}, 𝗣𝗹𝗲𝗮𝘀𝗲 𝗖𝗵𝗼𝗼𝘀𝗲 𝗦𝗺𝗮𝗹𝗹𝗲𝗿 𝗙𝗶𝗹𝗲. 𝗠𝗮𝘅 𝗟𝗶𝗺𝗶𝘁 (𝟭𝟬𝟬𝗺𝗯)!
+•@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}, 𝗣𝗹𝗲𝗮𝘀𝗲 𝗖𝗵𝗼𝗼𝘀𝗲 𝗦𝗺𝗮𝗹𝗹𝗲𝗿 𝗙𝗶𝗹𝗲. 𝗠𝗮𝘅 𝗟𝗶𝗺𝗶𝘁 (𝟭𝟬𝟬𝗺𝗯)!
 
 🍻𝐓𝐢𝐭𝐥𝐞⤞ ${title}
 📥𝐖𝐞𝐛-𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝⤞ https://www.youtubepp.com/watch?v=${id}`,
@@ -204,7 +204,7 @@ You Can Get URL by using ${ᴋᴇɪ}yts <song-name>`,
                     Fetched = `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
 
 ⭕𝗔𝘂𝗱𝗶𝗼
-•@${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰}, 𝗣𝗹𝗲𝗮𝘀𝗲 𝗖𝗵𝗲𝗰𝗸 𝗬𝗼𝘂𝗿 𝗣𝗿𝗶𝘃𝗮𝘁𝗲 𝗳𝗼𝗿 𝘁𝗵𝗲 𝗱𝗲𝗹𝗶𝘃𝗲𝗿𝘆 𝗼𝗳 𝗔𝘂𝗱𝗶𝗼!
+•@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}, 𝗣𝗹𝗲𝗮𝘀𝗲 𝗖𝗵𝗲𝗰𝗸 𝗬𝗼𝘂𝗿 𝗣𝗿𝗶𝘃𝗮𝘁𝗲 𝗳𝗼𝗿 𝘁𝗵𝗲 𝗱𝗲𝗹𝗶𝘃𝗲𝗿𝘆 𝗼𝗳 𝗔𝘂𝗱𝗶𝗼!
 
 🍻𝐓𝐢𝐭𝐥𝐞⤞ ${title}
 🙈𝐕𝐢𝐞𝐰𝐬⤞ ${youfound.views}
@@ -229,7 +229,7 @@ You Can Get URL by using ${ᴋᴇɪ}yts <song-name>`,
                     Fetched = `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
 
 ⭕𝗔𝘂𝗱𝗶𝗼
-•@${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰}, 𝗣𝗹𝗲𝗮𝘀𝗲 𝗖𝗵𝗲𝗰𝗸 𝗬𝗼𝘂𝗿 𝗣𝗿𝗶𝘃𝗮𝘁𝗲 𝗳𝗼𝗿 𝘁𝗵𝗲 𝗱𝗲𝗹𝗶𝘃𝗲𝗿𝘆 𝗼𝗳 𝗔𝘂𝗱𝗶𝗼!
+•@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}, 𝗣𝗹𝗲𝗮𝘀𝗲 𝗖𝗵𝗲𝗰𝗸 𝗬𝗼𝘂𝗿 𝗣𝗿𝗶𝘃𝗮𝘁𝗲 𝗳𝗼𝗿 𝘁𝗵𝗲 𝗱𝗲𝗹𝗶𝘃𝗲𝗿𝘆 𝗼𝗳 𝗔𝘂𝗱𝗶𝗼!
 
 🍻𝐓𝐢𝐭𝐥𝐞⤞ ${title}
 🙈𝐕𝐢𝐞𝐰𝐬⤞ ${youfound.views}
@@ -247,7 +247,7 @@ You Can Get URL by using ${ᴋᴇɪ}yts <song-name>`,
         //⦿──────────────────────────────────────────────────────────────────⦿   © 𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
         if (𝓜𝖎𝖟𝖚ӄ𝖎.isGroup) {
           const videos = FetchedLink.videos.slice(0, 1);
-          const filename = `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/${now}ytaudiosgroups_${nowbyk.toString()}${ꜱᴇɴᴅᴇʀɪᴅ}${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰}`;
+          const filename = `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/${now}ytaudiosgroups_${nowbyk.toString()}${ꜱᴇɴᴅᴇʀɪᴅ}${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}`;
           yta(arg[0]).then(async (gotResp) => {
             const { dl_link, thumb, title, filesize } = gotResp;
             axios
@@ -270,7 +270,7 @@ You Can Get URL by using ${ᴋᴇɪ}yts <song-name>`,
                         content: `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
 
 ⭕𝗔𝘂𝗱𝗶𝗼
-•@${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰}, 𝗣𝗹𝗲𝗮𝘀𝗲 𝗖𝗵𝗼𝗼𝘀𝗲 𝗦𝗺𝗮𝗹𝗹𝗲𝗿 𝗙𝗶𝗹𝗲. 𝗠𝗮𝘅 𝗟𝗶𝗺𝗶𝘁 (𝟭𝟬𝟬𝗺𝗯)!
+•@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}, 𝗣𝗹𝗲𝗮𝘀𝗲 𝗖𝗵𝗼𝗼𝘀𝗲 𝗦𝗺𝗮𝗹𝗹𝗲𝗿 𝗙𝗶𝗹𝗲. 𝗠𝗮𝘅 𝗟𝗶𝗺𝗶𝘁 (𝟭𝟬𝟬𝗺𝗯)!
 
 🍻𝐓𝐢𝐭𝐥𝐞⤞ ${title}
 📥𝐖𝐞𝐛-𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝⤞ https://www.youtubepp.com/watch?v=${id}`,
@@ -284,7 +284,7 @@ You Can Get URL by using ${ᴋᴇɪ}yts <song-name>`,
                     Fetched = `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
 
 ⭕𝗔𝘂𝗱𝗶𝗼
-•@${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰}, 𝗣𝗹𝗲𝗮𝘀𝗲 𝗖𝗵𝗲𝗰𝗸 𝗬𝗼𝘂𝗿 𝗣𝗿𝗶𝘃𝗮𝘁𝗲 𝗳𝗼𝗿 𝘁𝗵𝗲 𝗱𝗲𝗹𝗶𝘃𝗲𝗿𝘆 𝗼𝗳 𝗔𝘂𝗱𝗶𝗼!
+•@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}, 𝗣𝗹𝗲𝗮𝘀𝗲 𝗖𝗵𝗲𝗰𝗸 𝗬𝗼𝘂𝗿 𝗣𝗿𝗶𝘃𝗮𝘁𝗲 𝗳𝗼𝗿 𝘁𝗵𝗲 𝗱𝗲𝗹𝗶𝘃𝗲𝗿𝘆 𝗼𝗳 𝗔𝘂𝗱𝗶𝗼!
 
 🍻𝐓𝐢𝐭𝐥𝐞⤞ ${title}
 🙈𝐕𝐢𝐞𝐰𝐬⤞ ${youfound.views}
@@ -310,7 +310,7 @@ You Can Get URL by using ${ᴋᴇɪ}yts <song-name>`,
                     Fetched = `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
 
 ⭕𝗔𝘂𝗱𝗶𝗼
-•@${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰}, 𝗣𝗹𝗲𝗮𝘀𝗲 𝗖𝗵𝗲𝗰𝗸 𝗬𝗼𝘂𝗿 𝗣𝗿𝗶𝘃𝗮𝘁𝗲 𝗳𝗼𝗿 𝘁𝗵𝗲 𝗱𝗲𝗹𝗶𝘃𝗲𝗿𝘆 𝗼𝗳 𝗔𝘂𝗱𝗶𝗼!
+•@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}, 𝗣𝗹𝗲𝗮𝘀𝗲 𝗖𝗵𝗲𝗰𝗸 𝗬𝗼𝘂𝗿 𝗣𝗿𝗶𝘃𝗮𝘁𝗲 𝗳𝗼𝗿 𝘁𝗵𝗲 𝗱𝗲𝗹𝗶𝘃𝗲𝗿𝘆 𝗼𝗳 𝗔𝘂𝗱𝗶𝗼!
 
 🍻𝐓𝐢𝐭𝐥𝐞⤞ ${title}
 🙈𝐕𝐢𝐞𝐰𝐬⤞ ${youfound.views}

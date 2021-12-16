@@ -16,7 +16,7 @@ module.exports = {
       const ᴍɪᴢᴜᴋɪɢɪᴛ = require(`simple-git`)();
       await ᴍɪᴢᴜᴋɪɢɪᴛ.fetch();
       var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
-      var 𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰 = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
+      var ꜱᴇɴᴅᴇʀᴄᴏɴꜰ = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
       var 𝙵𝚎𝚝𝚌𝚑𝙼𝚒𝚣𝚞𝚔𝚒𝙽𝚎𝚜𝚜 = await ᴍɪᴢᴜᴋɪɢɪᴛ.log([
         `KrakinzLab..origin/KrakinzLab`,
       ]);
@@ -41,7 +41,7 @@ module.exports = {
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
             `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
 
-𝗔𝗵𝗺 •@${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰},
+𝗔𝗵𝗺 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 シ︎𝐆𝐫𝐨𝐮𝐩👓${_𝔏𝔞𝔟_.HASH}`,
             MessageType.text,
             {
@@ -66,7 +66,7 @@ module.exports = {
               chat,
               𝓜𝖎𝖟𝖚ӄ𝖎,
               ꜱᴇɴᴅᴇʀɪᴅ,
-              𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰,
+              ꜱᴇɴᴅᴇʀᴄᴏɴꜰ,
               𝓜𝖎𝖟𝖚ӄ𝖎.commandName,
               𝓜𝓮𝓮ʍօʀɛ
             )
