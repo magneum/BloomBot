@@ -48,27 +48,29 @@ exports.welbuts = async (
     𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = `https://i.postimg.cc/3wfrmmpB/NoPP.jpg`;
   }
   //⦿──────────────────────────────────────────────────────────────────⦿   © 𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿──────────────────────────────────────────────────────────────────⦿`;
-  try {
-    download(
-      𝕻𝕻𝖑𝖊𝖙𝖊𝖗,
-      {
-        directory: `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/`,
-        filename: `𝕻𝕻𝖑𝖊𝖙𝖊𝖗.jpg`,
-      },
-      async function (ℓαвєяяσя) {
-        if (ℓαвєяяσя) throw ℓαвєяяσя;
-        let content = fs.readFileSync(`./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/𝕻𝕻𝖑𝖊𝖙𝖊𝖗.jpg`);
-        const media = await ӄʀǟӄɨռʐ.prepareMessage(
+  download(
+    𝕻𝕻𝖑𝖊𝖙𝖊𝖗,
+    {
+      directory: `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/`,
+      filename: `𝕻𝕻𝖑𝖊𝖙𝖊𝖗.jpg`,
+    },
+    async function (ℓαвєяяσя) {
+      if (ℓαвєяяσя) throw ℓαвєяяσя;
+      await ӄʀǟӄɨռʐ
+        .sendMessage(
           GroupID,
-          content,
-          MessageType.image
-        );
-        return await ӄʀǟӄɨռʐ
-          .sendMessage(
-            GroupID,
-            {
-              contentText: `@${ᴘᴘᴡᴇʟᴄᴏᴍᴇ}
-${ᴡᴇʟᴄᴏᴍᴇʀᴛxᴛ}
+          {
+            url: `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/𝕻𝕻𝖑𝖊𝖙𝖊𝖗.jpg`,
+          },
+          MessageType.image,
+          {
+            mimetype: Mimetype.png || Mimetype.jpeg,
+            contextInfo: {
+              mentionedJid: [MemNum],
+            },
+            caption: `*(c)Mïzµkï* _${vers.vers}_
+            
+@${ᴘᴘᴡᴇʟᴄᴏᴍᴇ} | ${ᴡᴇʟᴄᴏᴍᴇʀᴛxᴛ}
 ┌───────⭓
 │⬘𝗕𝗶𝗼: ${GroupMemBio.status}
 │⬘𝗠𝗲𝗺𝗯𝗲𝗿𝘀: ${GroupMemG}
@@ -76,69 +78,11 @@ ${ᴡᴇʟᴄᴏᴍᴇʀᴛxᴛ}
 └───────────⭓
 
 ${ꜰᴇᴛᴄʜᴇᴅᴡᴇʟᴄᴏᴍᴇ.message}`,
-              footerText: `*(c)Mïzµkï* _${vers.vers}_`,
-              buttons: [
-                {
-                  buttonId: `${ᴋᴇɪ}help`,
-                  buttonText: { displayText: `${ᴋᴇɪ}help` },
-                  type: 1,
-                },
-                {
-                  buttonId: `${ᴋᴇɪ}mizuki`,
-                  buttonText: { displayText: `${ᴋᴇɪ}mizuki` },
-                  type: 1,
-                },
-              ],
-              headerType: 4,
-              imageMessage: media.message.imageMessage,
-            },
-            MessageType.buttonsMessage,
-            {
-              contextInfo: {
-                mentionedJid: [MemNum],
-              },
-            }
-          )
-          .catch((ℓαвєяяσя) => console.log(ℓαвєяяσя));
-      }
-    );
-    //⦿──────────────────────────────────────────────────────────────────⦿   © 𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿──────────────────────────────────────────────────────────────────⦿`;
-  } catch (ℓαвєяяσя) {
-    console.log(ℓαвєяяσя);
-    download(
-      𝕻𝕻𝖑𝖊𝖙𝖊𝖗,
-      {
-        directory: `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/`,
-        filename: `𝕻𝕻𝖑𝖊𝖙𝖊𝖗.jpg`,
-      },
-      async function (ℓαвєяяσя) {
-        if (ℓαвєяяσя) throw ℓαвєяяσя;
-        await ӄʀǟӄɨռʐ
-          .sendMessage(
-            GroupID,
-            {
-              url: `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/𝕻𝕻𝖑𝖊𝖙𝖊𝖗.jpg`,
-            },
-            MessageType.image,
-            {
-              mimetype: Mimetype.png || Mimetype.jpeg,
-              contextInfo: {
-                mentionedJid: [MemNum],
-              },
-              caption: `@${ᴘᴘᴡᴇʟᴄᴏᴍᴇ}
-${ᴡᴇʟᴄᴏᴍᴇʀᴛxᴛ}
-┌───────⭓
-│⬘𝗕𝗶𝗼: ${GroupMemBio.status}
-│⬘𝗠𝗲𝗺𝗯𝗲𝗿𝘀: ${GroupMemG}
-│⬘𝗚𝗿𝗼𝘂𝗽: ${GroupMemData.subject}
-└───────────⭓
-
-${ꜰᴇᴛᴄʜᴇᴅᴡᴇʟᴄᴏᴍᴇ.message}`,
-            }
-          )
-          .catch((ℓαвєяяσя) => console.log(ℓαвєяяσя));
-      }
-    );
-  }
+          }
+        )
+        .catch((ℓαвєяяσя) => console.log(ℓαвєяяσя));
+    }
+  );
 };
+
 //⦿──────────────────────────────────────────────────────────────────⦿   © 𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿──────────────────────────────────────────────────────────────────⦿`;
