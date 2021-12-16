@@ -63,7 +63,10 @@ For example-
         ӄʀǟӄɨռʐ
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            `𝗔𝗵𝗺 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},This command is only applicable in a group chat.`,
+            `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
+
+𝗔𝗵𝗺 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
+This command is only applicable in a group chat.`,
             MessageType.text,
             { quoted: chat }
           )
@@ -85,8 +88,10 @@ For example-
                 mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
               },
               mimetype: Mimetype.png,
-              caption: `
-⚠️𝗘𝗿𝗿𝗼𝗿: @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}, *ʏᴏᴜ ᴅᴏɴ'ᴛ ꜱᴇᴇᴍ ᴛᴏ ʙᴇ ᴀᴅᴍɪɴ..*`,
+              caption: `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
+
+𝗔𝗵𝗺 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
+⚠️𝗘𝗿𝗿𝗼𝗿:*ʏᴏᴜ ᴅᴏɴ'ᴛ ꜱᴇᴇᴍ ᴛᴏ ʙᴇ ᴀᴅᴍɪɴ..*`,
             }
           )
           .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
@@ -96,7 +101,10 @@ For example-
         ӄʀǟӄɨռʐ
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            `𝗔𝗵𝗺 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},Sorry, dont have the permission to do so since I am not an admin.`,
+            `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
+
+𝗔𝗵𝗺 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
+Sorry, dont have the permission to do so since I am not an admin.`,
             MessageType.text,
             {
               quoted: chat,
@@ -113,7 +121,10 @@ For example-
         ӄʀǟӄɨռʐ
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            `𝗔𝗵𝗺 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},Reply/tag/enter contact number of the person to be demoted.`,
+            `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
+
+𝗔𝗵𝗺 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
+Reply/tag/enter contact number of the person to be demoted.`,
             MessageType.text,
             {
               quoted: chat,
@@ -152,8 +163,9 @@ For example-
         ӄʀǟӄɨռʐ
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            `𝗔𝗵𝗺 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
+            `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
 
+𝗔𝗵𝗺 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 ${contact} is the owner of the group`,
             MessageType.text,
             {
@@ -174,8 +186,9 @@ ${contact} is the owner of the group`,
           await ӄʀǟӄɨռʐ
             .sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              `𝗔𝗵𝗺 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
+              `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
 
+𝗔𝗵𝗺 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 ${contact} is demoted from admin`,
               MessageType.text,
               {
@@ -191,8 +204,9 @@ ${contact} is demoted from admin`,
           await ӄʀǟӄɨռʐ
             .sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              `𝗔𝗵𝗺 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
+              `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
 
+𝗔𝗵𝗺 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 ${contact} was not an admin`,
               MessageType.text,
               {
@@ -209,17 +223,21 @@ ${contact} was not an admin`,
       // ⦿──────────────────────────────────────────────────────────────────⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
       if (!isMember) {
         if (contact === undefined) {
+          await ӄʀǟӄɨռʐ
+            .sendMessage(
+              𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+              `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
+
+𝗔𝗵𝗺 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},Person not found.`,
+              MessageType.text,
+              {
+                quoted: chat,
+              }
+            )
+            .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
           return;
         }
-
-        await ӄʀǟӄɨռʐ
-          .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, `Person not found.`, MessageType.text, {
-            quoted: chat,
-          })
-          .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
-        return;
       }
-      return;
       // ⦿──────────────────────────────────────────────────────────────────⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
     } catch (ℓαвєяяσя) {
       ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
