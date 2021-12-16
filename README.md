@@ -4,7 +4,10 @@
 ʏᴏᴜʀ ᴀꜱꜱɪꜱꜱᴛᴀɴᴛ ꜰᴏʀ ᴍᴀᴋɪɴɢ ʙᴏʀɪɴɢ ᴡʜᴀᴛꜱᴀᴘᴘ ᴀ ʙᴇᴛᴛᴇʀ ᴀᴅᴠᴀɴᴄᴇ ᴀᴘᴘ!
 🔸[`ᴡʜᴀᴛꜱᴀᴘᴘ`](https://chat.whatsapp.com/KlMRYxCTte5H8TIIupbRVf) 🔸[`ᴅɪꜱᴄᴏʀᴅ`](https://discord.gg/xcFN6NDHEV)
 
-![](Mizuki.gif)
+
+<p align="center">
+  ![](Mizuki.gif)
+</p>
 
 # ❓ 𝖂𝖍𝖞 𝕸𝖆𝖉𝖊 𝕿𝖍𝖎𝖘 𝕭𝖔𝖙?
 
