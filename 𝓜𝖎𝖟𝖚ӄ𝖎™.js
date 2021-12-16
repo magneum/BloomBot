@@ -66,7 +66,7 @@ var ᴛʙʏᴇ = [
 
 var ӄʀǟӄɨռʐ = 𝓜𝖎𝖟𝖚ӄ𝖎ֆʏռօք.WhatsApp;
 async function 𝓜𝓮𝓮6s() {
-  ӄʀǟӄɨռʐ.logger.level = `ℓαвєяяσя`;
+  ӄʀǟӄɨռʐ.logger.level = `error`;
   var 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹 = new Map();
   if (_𝔏𝔞𝔟_.HEROKU_API === `Null` || _𝔏𝔞𝔟_.HEROKU_BOT_NAME === `Null`) {
     console.log(
