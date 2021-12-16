@@ -144,8 +144,8 @@ Reply/tag/enter contact number of the person to be demoted.`,
         var contactmen = reply.contextInfo.participant + "@s.whatsapp.net";
         console.log(contactmen);
       } else {
-        var contact = await motor.getCleanedContact(arg, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
-        var contactmen = await motor.getCleanedContact(arg, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
+        var contact = await motor.nomentioncontact(arg, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
+        var contactmen = await motor.nomentioncontact(arg, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
       }
       // ⦿──────────────────────────────────────────────────────────────────⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
       var admin = false;
