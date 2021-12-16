@@ -149,7 +149,7 @@ Reply/tag/enter contact number of the person to be demoted.`,
       }
       // ⦿──────────────────────────────────────────────────────────────────⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
       var admin = false;
-      var isMember = await motor.isMember(contact, 𝓜𝖎𝖟𝖚ӄ𝖎.groupMembers);
+      var isMember = await motor.onwhatsappserver(contact, 𝓜𝖎𝖟𝖚ӄ𝖎.groupMembers);
       var owner = 𝓜𝖎𝖟𝖚ӄ𝖎.chatId.split(`-`)[0];
       for (const index in 𝓜𝖎𝖟𝖚ӄ𝖎.groupMembers) {
         if (contact == 𝓜𝖎𝖟𝖚ӄ𝖎.groupMembers[index].jid.split(`@`)[0]) {
