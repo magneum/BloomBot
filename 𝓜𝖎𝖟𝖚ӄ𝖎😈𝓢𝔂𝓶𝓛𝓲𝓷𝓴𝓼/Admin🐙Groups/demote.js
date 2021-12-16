@@ -51,7 +51,7 @@ For example-
             {
               quoted: chat,
               contextInfo: {
-                mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
+                mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓],
               },
             }
           )
@@ -63,7 +63,7 @@ For example-
         𝓚𝓻𝓪𝓴𝓲𝓷𝔃
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            `This command is only applicable in a group chat.`,
+            `𝗔𝗵𝗺 •@${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰},This command is only applicable in a group chat.`,
             MessageType.text,
             { quoted: chat }
           )
@@ -81,6 +81,9 @@ For example-
             MessageType.image,
             {
               quoted: chat,
+              contextInfo: {
+                mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓],
+              },
               mimetype: Mimetype.png,
               caption: `
 ⚠️𝗘𝗿𝗿𝗼𝗿: @${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰}, *ʏᴏᴜ ᴅᴏɴ'ᴛ ꜱᴇᴇᴍ ᴛᴏ ʙᴇ ᴀᴅᴍɪɴ..*`,
@@ -93,9 +96,14 @@ For example-
         𝓚𝓻𝓪𝓴𝓲𝓷𝔃
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            `Sorry, dont have the permission to do so since I am not an admin.`,
+            `𝗔𝗵𝗺 •@${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰},Sorry, dont have the permission to do so since I am not an admin.`,
             MessageType.text,
-            { quoted: chat }
+            {
+              quoted: chat,
+              contextInfo: {
+                mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓],
+              },
+            }
           )
           .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
         return;
@@ -105,9 +113,14 @@ For example-
         𝓚𝓻𝓪𝓴𝓲𝓷𝔃
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            `Reply/tag/enter contact number of the person to be demoted.`,
+            `𝗔𝗵𝗺 •@${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰},Reply/tag/enter contact number of the person to be demoted.`,
             MessageType.text,
-            { quoted: chat }
+            {
+              quoted: chat,
+              contextInfo: {
+                mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓],
+              },
+            }
           )
           .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
         return;
@@ -135,9 +148,16 @@ For example-
         𝓚𝓻𝓪𝓴𝓲𝓷𝔃
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            `*` + contact + ` is the owner of the group*`,
+            `𝗔𝗵𝗺 •@${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰},
+
+${contact} is the owner of the group`,
             MessageType.text,
-            { quoted: chat }
+            {
+              quoted: chat,
+              contextInfo: {
+                mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓],
+              },
+            }
           )
           .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
         return;
@@ -150,10 +170,16 @@ For example-
           await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
             .sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              `
+              `𝗔𝗵𝗺 •@${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰},
+
 ${contact} is demoted from admin`,
               MessageType.text,
-              { quoted: chat }
+              {
+                quoted: chat,
+                contextInfo: {
+                  mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓],
+                },
+              }
             )
             .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
           return;
@@ -161,10 +187,16 @@ ${contact} is demoted from admin`,
           await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
             .sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              `
+              `𝗔𝗵𝗺 •@${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰},
+
 ${contact} was not an admin`,
               MessageType.text,
-              { quoted: chat }
+              {
+                quoted: chat,
+                contextInfo: {
+                  mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓],
+                },
+              }
             )
             .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
           return;

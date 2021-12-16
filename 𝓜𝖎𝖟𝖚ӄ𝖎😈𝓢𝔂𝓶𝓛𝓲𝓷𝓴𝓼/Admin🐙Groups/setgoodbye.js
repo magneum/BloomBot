@@ -50,7 +50,7 @@ Do note, the setgoodbye option is still enabled after you use the delete option.
             {
               quoted: chat,
               contextInfo: {
-                mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
+                mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓],
               },
             }
           )

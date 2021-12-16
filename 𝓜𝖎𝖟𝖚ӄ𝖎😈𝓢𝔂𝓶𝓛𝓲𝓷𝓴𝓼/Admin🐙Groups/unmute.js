@@ -50,7 +50,7 @@ module.exports = {
             {
               quoted: chat,
               contextInfo: {
-                mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
+                mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓],
               },
             }
           )
