@@ -118,7 +118,7 @@ For example-
         const reply = chat.message.extendedTextMessage;
         var contact = reply.contextInfo.participant.split(`@`)[0];
       } else {
-        var contact = await getCleanedContact.getCleanedContact(
+        var contact = await getCleanedContact(
           arg,
           𝓚𝓻𝓪𝓴𝓲𝓷𝔃,
           𝓜𝖎𝖟𝖚ӄ𝖎
@@ -126,7 +126,7 @@ For example-
       }
       // ⦿──────────────────────────────────────────────────────────────────⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
       var admin = false;
-      var isMember = await isMember.isMember(contact, 𝓜𝖎𝖟𝖚ӄ𝖎.groupMembers);
+      var isMember = await isMember(contact, 𝓜𝖎𝖟𝖚ӄ𝖎.groupMembers);
       var owner = 𝓜𝖎𝖟𝖚ӄ𝖎.chatId.split(`-`)[0];
       for (const index in 𝓜𝖎𝖟𝖚ӄ𝖎.groupMembers) {
         if (contact == 𝓜𝖎𝖟𝖚ӄ𝖎.groupMembers[index].jid.split(`@`)[0]) {
