@@ -25,7 +25,7 @@ module.exports = {
         await ӄʀǟӄɨռʐ
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.logGroup,
-            `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
+            `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭 ʙʏ ᴋʀᴀᴋɪɴᴢ_
 
 ❗ *👓𝓜𝓮𝓮6™* 𝙐𝙥𝙙𝙖𝙩𝙚* 𝙋𝙚𝙣𝙙𝙞𝙣𝙜
 *•𝘗𝘭𝘦𝘢𝘴𝘦 𝘜𝘱𝘥𝘢𝘵𝘦 𝘜𝘴𝘪𝘯𝘨 *${ᴋᴇɪ}update* 𝘰𝘳 𝘳𝘦𝘥𝘦𝘱𝘭𝘰𝘺 𝐌𝐢𝐳𝐮𝐤𝐢™!`,
@@ -38,7 +38,7 @@ module.exports = {
         await ӄʀǟӄɨռʐ
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
+            `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭 ʙʏ ᴋʀᴀᴋɪɴᴢ_
 
 𝗔𝗵𝗺 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 シ︎𝐆𝐫𝐨𝐮𝐩👓${_𝔏𝔞𝔟_.HASH}`,
@@ -69,7 +69,7 @@ module.exports = {
               quoted: chat,
               mimetype: Mimetype.jpeg || Mimetype.png,
               contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ, Receiver] },
-              caption: `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
+              caption: `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭 ʙʏ ᴋʀᴀᴋɪɴᴢ_
 
 *😒@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}* is poking *😒@${personreceived}*`,
             }
@@ -89,7 +89,7 @@ module.exports = {
               quoted: chat,
               mimetype: Mimetype.jpeg || Mimetype.png,
               contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
-              caption: `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
+              caption: `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭 ʙʏ ᴋʀᴀᴋɪɴᴢ_
 
 *😒@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}* is poking!`,
             }
@@ -108,7 +108,7 @@ module.exports = {
             {
               quoted: chat,
               mimetype: Mimetype.jpeg || Mimetype.png,
-              caption: `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
+              caption: `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭 ʙʏ ᴋʀᴀᴋɪɴᴢ_
 
 *😒Poking!*`,
             }
