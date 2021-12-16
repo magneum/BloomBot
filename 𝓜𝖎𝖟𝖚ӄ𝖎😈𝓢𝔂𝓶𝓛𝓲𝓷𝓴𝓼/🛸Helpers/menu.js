@@ -59,7 +59,7 @@ module.exports = {
         const MeeHelper = `*𝘽𝙊𝙏 𝙄𝙉 𝘽𝙀𝙏𝘼*
 シ︎🛸𝐆𝐫𝐨𝐮𝐩: ${_𝔏𝔞𝔟_.HASH}
 
-┌────⭓ *💻𝙎𝙮𝙨𝙩𝙚𝙢*-(${ᴋᴇɪ}systemside)
+┌────⭓ *💻𝙎𝙮𝙨𝙩𝙚𝙢 > (${ᴋᴇɪ}systemside)*
 │⚙️ ${ᴋᴇɪ}help 
 │⚙️ ${ᴋᴇɪ}mizuki
 │⚙️ ${ᴋᴇɪ}paste
@@ -68,7 +68,7 @@ module.exports = {
 │⚙️ ${ᴋᴇɪ}ban
 └───────────⭓
 
-┌────⭓ *🤩𝘼𝙣𝙞𝙢𝙚*-(${ᴋᴇɪ}animeside)
+┌────⭓ *🤩𝘼𝙣𝙞𝙢𝙚 > (${ᴋᴇɪ}animeside)*
 │🎋 ${ᴋᴇɪ}anime
 │🎋 ${ᴋᴇɪ}animewallpaper 
 │🎋 ${ᴋᴇɪ}cuddle 
@@ -90,15 +90,16 @@ module.exports = {
 │🎋 ${ᴋᴇɪ}thinking
 └───────────⭓
 
-┌────⭓ *🍫𝙈𝙪𝙨𝙞𝙘*-(${ᴋᴇɪ}musicside)
+┌────⭓ *🍫𝙈𝙪𝙨𝙞𝙘 > (${ᴋᴇɪ}musicside)*
 │🍫 ${ᴋᴇɪ}lyrics
 │🍫 ${ᴋᴇɪ}ytsearch
 │🍫 ${ᴋᴇɪ}ytaudio
 │🍫 ${ᴋᴇɪ}ytvideo
 └───────────⭓
 
-┌────⭓ *👑𝙂𝙧𝙤𝙪𝙥𝙨*-(groupside)
+┌────⭓ *👑𝙂𝙧𝙤𝙪𝙥𝙨 > (groupside)*
 │🍭 ${ᴋᴇɪ}promote
+│🍭 ${ᴋᴇɪ}demote
 │🍭 ${ᴋᴇɪ}spam
 │🍭 ${ᴋᴇɪ}invite
 │🍭 ${ᴋᴇɪ}admins
@@ -112,7 +113,7 @@ module.exports = {
 │🍭 ${ᴋᴇɪ}setgoodbye
 └───────────⭓
 
-┌────⭓ *🧀𝙁𝙪𝙣𝙨*-(${ᴋᴇɪ}funside)
+┌────⭓ *🧀𝙁𝙪𝙣𝙨 > (${ᴋᴇɪ}funside)*
 │🦄 ${ᴋᴇɪ}google
 │🦄 ${ᴋᴇɪ}carbon 
 │🦄 ${ᴋᴇɪ}pfgroupdp
@@ -128,7 +129,7 @@ module.exports = {
 │🦄 ${ᴋᴇɪ}ud
 └───────────⭓
 
-┌────⭓ *🔞𝙉𝙎𝙁𝙒 18+*-(${ᴋᴇɪ}nsfwside)
+┌────⭓ *🔞𝙉𝙎𝙁𝙒 18+ > (${ᴋᴇɪ}nsfwside)*
 │🍄 ${ᴋᴇɪ}ass  
 │🍄 ${ᴋᴇɪ}bdsm  
 │🍄 ${ᴋᴇɪ}blowjob  
