@@ -127,10 +127,12 @@ For example-
       }
       // ⦿──────────────────────────────────────────────────────────────────⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
       if (𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
-        const reply = chat.message.extendedTextMessage;
         var contact = reply.contextInfo.participant.split(`@`)[0];
+        var contactmen = reply.contextInfo.participant + "@s.whatsapp.net";
+        console.log(contactmen);
       } else {
         var contact = await motor.getCleanedContact(arg, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎);
+        var contactmen = await motor.getCleanedContact(arg, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎);
       }
       // ⦿──────────────────────────────────────────────────────────────────⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
       var admin = false;
@@ -155,7 +157,7 @@ ${contact} is the owner of the group`,
             {
               quoted: chat,
               contextInfo: {
-                mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓],
+                mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓, contactmen],
               },
             }
           )
@@ -177,7 +179,7 @@ ${contact} is demoted from admin`,
               {
                 quoted: chat,
                 contextInfo: {
-                  mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓],
+                  mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓, contactmen],
                 },
               }
             )
@@ -194,7 +196,7 @@ ${contact} was not an admin`,
               {
                 quoted: chat,
                 contextInfo: {
-                  mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓],
+                  mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓, contactmen],
                 },
               }
             )

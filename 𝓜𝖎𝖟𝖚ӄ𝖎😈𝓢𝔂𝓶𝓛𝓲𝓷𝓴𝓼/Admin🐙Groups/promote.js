@@ -139,12 +139,11 @@ Reply/tag/enter contact number of the person to be promoted.`,
 
         if (𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
           var contact = reply.contextInfo.participant.split(`@`)[0];
-          var contactmen = reply.contextInfo.participant;
+          var contactmen = reply.contextInfo.participant + "@s.whatsapp.net";
           console.log(contactmen);
         } else {
           var contact = await motor.getCleanedContact(arg, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎);
-          var contactmen = contact;
-          console.log(contactmen);
+          var contactmen = await motor.getCleanedContact(arg, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎);
         }
 
         var admin = false;
@@ -171,7 +170,7 @@ ${contact} is promoted to admin`,
                 {
                   quoted: chat,
                   contextInfo: {
-                    mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓],
+                    mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓, contactmen],
                   },
                 }
               )
@@ -188,7 +187,7 @@ ${contact} is already an admin`,
                 {
                   quoted: chat,
                   contextInfo: {
-                    mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓],
+                    mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓, contactmen],
                   },
                 }
               )
