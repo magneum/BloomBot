@@ -46,7 +46,7 @@ For example-
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
             `*© Mïzµkï* _${vers.vers}_
 
-𝗔𝗵𝗺 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
+•@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 シ︎𝐆𝐫𝐨𝐮𝐩👓${_𝔏𝔞𝔟_.HASH}`,
             MessageType.text,
             {
@@ -65,7 +65,7 @@ For example-
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
           `*© Mïzµkï* _${vers.vers}_
 
-𝗔𝗵𝗺 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
+•@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 This command is only applicable for group chats.`,
           MessageType.text,
           {
@@ -104,7 +104,7 @@ This command is only applicable for group chats.`,
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
           `*© Mïzµkï* _${vers.vers}_
 
-𝗔𝗵𝗺 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
+•@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 Sorry, dont have the permission to do so since I am not an admin.`,
           MessageType.text,
           {
@@ -122,7 +122,7 @@ Sorry, dont have the permission to do so since I am not an admin.`,
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
           `*© Mïzµkï* _${vers.vers}_
 
-𝗔𝗵𝗺 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
+•@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 Reply/tag/enter contact number of the person to be demoted.`,
           MessageType.text,
           {
@@ -160,7 +160,7 @@ Reply/tag/enter contact number of the person to be demoted.`,
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
             `*© Mïzµkï* _${vers.vers}_
 
-𝗔𝗵𝗺 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
+•@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 ${contact} promoted to admin*`,
             MessageType.text,
             {
@@ -175,7 +175,7 @@ ${contact} promoted to admin*`,
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
             `*© Mïzµkï* _${vers.vers}_
 
-𝗔𝗵𝗺 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
+•@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 ${contact} is already an admin`,
             MessageType.text,
             {
@@ -195,7 +195,7 @@ ${contact} is already an admin`,
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               `*© Mïzµkï* _${vers.vers}_
 
-𝗔𝗵𝗺 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
+•@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 Person not found.`,
               MessageType.text,
               {

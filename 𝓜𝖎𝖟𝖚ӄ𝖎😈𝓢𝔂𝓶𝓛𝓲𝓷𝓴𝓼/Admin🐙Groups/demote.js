@@ -46,7 +46,7 @@ For example-
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
             `*© Mïzµkï* _${vers.vers}_
 
-𝗔𝗵𝗺 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
+•@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 シ︎𝐆𝐫𝐨𝐮𝐩👓${_𝔏𝔞𝔟_.HASH}`,
             MessageType.text,
             {
@@ -66,7 +66,7 @@ For example-
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
             `*© Mïzµkï* _${vers.vers}_
 
-𝗔𝗵𝗺 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
+•@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 This command is only applicable in a group chat.`,
             MessageType.text,
             { quoted: chat }
@@ -102,7 +102,7 @@ This command is only applicable in a group chat.`,
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
             `*© Mïzµkï* _${vers.vers}_
 
-𝗔𝗵𝗺 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
+•@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 Sorry, dont have the permission to do so since I am not an admin.`,
             MessageType.text,
             {
@@ -122,7 +122,7 @@ Sorry, dont have the permission to do so since I am not an admin.`,
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
             `*© Mïzµkï* _${vers.vers}_
 
-𝗔𝗵𝗺 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
+•@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 Reply/tag/enter contact number of the person to be demoted.`,
             MessageType.text,
             {
@@ -164,7 +164,7 @@ Reply/tag/enter contact number of the person to be demoted.`,
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
             `*© Mïzµkï* _${vers.vers}_
 
-𝗔𝗵𝗺 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
+•@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 ${contact} is the owner of the group`,
             MessageType.text,
             {
@@ -187,7 +187,7 @@ ${contact} is the owner of the group`,
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               `*© Mïzµkï* _${vers.vers}_
 
-𝗔𝗵𝗺 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
+•@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 ${contact} is demoted from admin`,
               MessageType.text,
               {
@@ -205,7 +205,7 @@ ${contact} is demoted from admin`,
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               `*© Mïzµkï* _${vers.vers}_
 
-𝗔𝗵𝗺 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
+•@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 ${contact} was not an admin`,
               MessageType.text,
               {
@@ -227,7 +227,7 @@ ${contact} was not an admin`,
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               `*© Mïzµkï* _${vers.vers}_
 
-𝗔𝗵𝗺 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},Person not found.`,
+•@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},Person not found.`,
               MessageType.text,
               {
                 quoted: chat,

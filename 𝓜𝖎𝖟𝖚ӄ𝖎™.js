@@ -161,27 +161,27 @@ async function 𝓜𝓮𝓮6s() {
   });
   await ӄʀǟӄɨռʐ.connect();
   //⦿──────────────────────────────────────────────────────────────────⦿   © 𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿──────────────────────────────────────────────────────────────────⦿`;
-  //   ӄʀǟӄɨռʐ.on(`message-delete`, async (update) => {
-  //     update.message =
-  //       Object.keys(update.message)[0] === `ephemeralMessage` ?
-  //         update.message.ephemeralMessage.message :
-  //         update.message;
-  //     const type = Object.keys(update.message)[0];
-  //     ӄʀǟӄɨռʐ.sendMessage(
-  //       update.key.remoteJid,
-  //       `「 𝗔𝗡𝗧𝗜 𝗗𝗘𝗟𝗘𝗧𝗘 」
-  // •> Name : @${update.participant.split(`@`)[0]}
-  // •> Type : ${type}`,
-  //       MessageType.text, {
-  //       quoted: update.message,
-  //       contextInfo: {
-  //         mentionedJid: [update.participant]
-  //       },
-  //     }
-  //     );
-
-  //     ӄʀǟӄɨռʐ.copyNForward(update.key.remoteJid, update.message);
-  //   });
+  ӄʀǟӄɨռʐ.on(`message-delete`, async (update) => {
+    update.message =
+      Object.keys(update.message)[0] === `ephemeralMessage`
+        ? update.message.ephemeralMessage.message
+        : update.message;
+    const type = Object.keys(update.message)[0];
+    await ӄʀǟӄɨռʐ.sendMessage(
+      update.key.remoteJid,
+      `「 𝗔𝗡𝗧𝗜 𝗗𝗘𝗟𝗘𝗧𝗘 」
+•> Name : @${update.participant.split(`@`)[0]}
+•> Type : ${type}`,
+      MessageType.text,
+      {
+        quoted: update.message,
+        contextInfo: {
+          mentionedJid: [update.participant],
+        },
+      }
+    );
+    await ӄʀǟӄɨռʐ.copyNForward(update.key.remoteJid, update.message);
+  });
   //⦿──────────────────────────────────────────────────────────────────⦿   © 𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿──────────────────────────────────────────────────────────────────⦿`;
   ӄʀǟӄɨռʐ.on(`group-update`, async (update) => {
     groupupdateID = await ӄʀǟӄɨռʐ.groupMetadata(update.jid);
@@ -473,8 +473,7 @@ ${ꜰᴇᴛᴄʜᴇᴅʙʏᴇ.message}`,
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
             `𝗜𝗻𝘃𝗮𝗹𝗶𝗱 𝗖𝗼𝗺𝗺𝗮𝗻𝗱
 
-𝗔𝗵𝗺 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
-_Use ${ᴋᴇɪ}𝗵𝗲𝗹𝗽 to get the list of available commands_`,
+•@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},Use *${ᴋᴇɪ}𝗵𝗲𝗹𝗽* to get the list of available commands`,
             MessageType.text,
             {
               contextInfo: {

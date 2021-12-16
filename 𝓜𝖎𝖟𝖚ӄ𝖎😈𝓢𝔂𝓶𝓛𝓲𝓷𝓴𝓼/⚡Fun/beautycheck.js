@@ -155,7 +155,7 @@ module.exports = {
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
             `*© Mïzµkï* _${vers.vers}_
 
-𝗔𝗵𝗺 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
+•@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 シ︎𝐆𝐫𝐨𝐮𝐩👓${_𝔏𝔞𝔟_.HASH}`,
             MessageType.text,
             {
@@ -181,7 +181,6 @@ module.exports = {
           context.font = `bold 120pt Housttely`;
           context.textAlign = `center`;
           context.textBaseline = `top`;
-          // context.fillStyle = randomMC.getColor();
           const text = `Beauty Checker`;
           const textWidth = context.measureText(text).width;
           context.fillRect(
@@ -235,7 +234,6 @@ module.exports = {
           context.font = `bold 120pt Housttely`;
           context.textAlign = `center`;
           context.textBaseline = `top`;
-          // context.fillStyle = randomMC.getColor();
           const text = `Beauty Checker`;
           const textWidth = context.measureText(text).width;
           context.fillRect(

@@ -34,10 +34,8 @@ ${ℓαвєяяσя}
       caption: `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭 ʙʏ ᴋʀᴀᴋɪɴᴢ_
 
 
-𝗔𝗵𝗺 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
-Please try Again!There Was temporary erorr in that command.
-
-シ︎🛸𝐆𝐫𝐨𝐮𝐩: ${_𝔏𝔞𝔟_.HASH}`,
+•@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
+Please try Again!There Was temporary erorr in that command.`,
     }
   );
 };
