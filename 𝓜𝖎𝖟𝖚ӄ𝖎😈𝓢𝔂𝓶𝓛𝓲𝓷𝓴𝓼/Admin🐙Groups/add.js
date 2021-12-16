@@ -94,17 +94,20 @@ For instance,
         }
         let NUM;
         if (isNaN(arg[0]) || arg[0][0] === `+` || arg[0].length < 10) {
-          ӄʀǟӄɨռʐ
-            .sendMessage(
-              𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              `            Example -
-${ᴋᴇɪ}add <country-code>0000000000
-${ᴋᴇɪ}add 910000000000`,
-              MessageType.text,
-              { quoted: chat }
+          var 𝓜Usage = 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹.get(𝓜𝖎𝖟𝖚ӄ𝖎.commandName);
+          𝓜𝓮𝓮ʍօʀɛ = 𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ === undefined ? `Null` : 𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ;
+          const nahargs = require(`../../𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/nahargs`);
+          return nahargs
+            .nahargs(
+              ӄʀǟӄɨռʐ,
+              chat,
+              𝓜𝖎𝖟𝖚ӄ𝖎,
+              ꜱᴇɴᴅᴇʀɪᴅ,
+              ꜱᴇɴᴅᴇʀᴄᴏɴꜰ,
+              𝓜𝖎𝖟𝖚ӄ𝖎.commandName,
+              𝓜𝓮𝓮ʍօʀɛ
             )
             .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
-          return;
         }
         if (arg[0].length == 10 && !isNaN(arg[0])) {
           NUM = `91` + arg[0];
