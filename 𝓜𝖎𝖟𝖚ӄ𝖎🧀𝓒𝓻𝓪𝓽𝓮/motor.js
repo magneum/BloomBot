@@ -2,6 +2,7 @@
 const { MessageType } = require(`@adiwajshing/baileys`);
 const _𝔏𝔞𝔟_ = require(`./_𝔏𝔞𝔟_`);
 require(`python-format-js`);
+const vers = require(`../package.json`);
 //⦿──────────────────────────────────────────────────────────────────⦿   © 𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿──────────────────────────────────────────────────────────────────⦿`;
 exports.nomentioncontact = async (args, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎) => {
   var jidNumber = ``;
@@ -12,7 +13,9 @@ exports.nomentioncontact = async (args, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎) 
     } else {
       ӄʀǟӄɨռʐ.sendMessage(
         𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-        `*Enter valid contact number.* Approved Syntax:
+        `*© Mïzµkï* _${vers.vers}_
+        
+*Enter valid contact number.* Approved Syntax:
 1. XXXXXXXXXX 
 2. Tag the person 3. +(YYY)XXXXXXXXXX. 
 _(YY- Country Code, without zeros)_`,
@@ -27,7 +30,9 @@ _(YY- Country Code, without zeros)_`,
   if (jidNumber.length < 8 || jidNumber.length > 13) {
     ӄʀǟӄɨռʐ.sendMessage(
       𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-      `*Enter valid contact number.* Approved Syntax:
+      `*© Mïzµkï* _${vers.vers}_
+      
+*Enter valid contact number.* Approved Syntax:
 1. XXXXXXXXXX 
 2. Tag the person 
 3. +(YYY)XXXXXXXXXX. 
