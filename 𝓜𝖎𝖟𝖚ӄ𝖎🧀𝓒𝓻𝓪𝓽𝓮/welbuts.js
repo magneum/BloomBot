@@ -72,7 +72,7 @@ ${weltext}
 └───────────⭓
 
 ${Fetched.message}`,
-            footerText: `*© Mïzµkï* _${vers.vers}_`,
+            footerText: `*(c)Mïzµkï* _${vers.vers}_`,
             buttons: [
               {
                 buttonId: `${ᴋᴇɪ}help`,
