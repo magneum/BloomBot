@@ -156,7 +156,7 @@ async function 𝓜𝓮𝓮6s() {
         }
       );
     } else {
-      console.log("KrakinzLab-Dev-Mode");
+      console.log(`KrakinzLab-Dev-Mode`);
     }
   });
   await ӄʀǟӄɨռʐ.connect();
