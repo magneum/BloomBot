@@ -2,6 +2,7 @@
 
 # 𝐌𝐢𝐳𝐮𝐤𝐢™ △▽ 𝙒𝙝𝙖𝙩𝙨𝙖𝙥𝙥 𝙐𝙨𝙚𝙧𝙗𝙤𝙩
 ʏᴏᴜʀ ᴀꜱꜱɪꜱꜱᴛᴀɴᴛ ꜰᴏʀ ᴍᴀᴋɪɴɢ ʙᴏʀɪɴɢ ᴡʜᴀᴛꜱᴀᴘᴘ ᴀ ʙᴇᴛᴛᴇʀ ᴀᴅᴠᴀɴᴄᴇ ᴀᴘᴘ!
+🔸[`ᴡʜᴀᴛꜱᴀᴘᴘ`](https://chat.whatsapp.com/KlMRYxCTte5H8TIIupbRVf) 🔸[`ᴅɪꜱᴄᴏʀᴅ`](https://discord.gg/xcFN6NDHEV)
 
 <p align="center">
   <img src="https://i.postimg.cc/251T8y9H/image.jpg" width="400"/>
@@ -22,10 +23,10 @@
 # ⚡ 𝕯𝖊𝖕𝖑𝖔𝖞𝖒𝖊𝖓𝖙
 
 - ꜰɪʀꜱᴛ ꜰᴏʀᴋ ᴀɴᴅ ꜱᴛᴀʀ ᴛʜᴇ ʀᴇᴘᴏ and join group chat (or else auto upgrading won't work)
-- Get Your Mee6 SessionCode from [![Generic badge](https://img.shields.io/badge/ᴍɪᴢᴜᴋɪ_Session-blue.svg)](https://replit.com/@Krakinzkon/Mizuki)
+- Get Your Mee6 SessionCode from [`ᴡʜᴀᴛꜱᴀᴘᴘ`](https://chat.whatsapp.com/KlMRYxCTte5H8TIIupbRVf)
 - Head Over To [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Krakinz/Mizuki.git)
 
-🔸[`ᴡʜᴀᴛꜱᴀᴘᴘ`](https://chat.whatsapp.com/KlMRYxCTte5H8TIIupbRVf) 🔸[`ᴅɪꜱᴄᴏʀᴅ`](https://discord.gg/xcFN6NDHEV)
+
 
 
 # 💡 𝕴𝖓𝖘𝖕𝖎𝖗𝖆𝖙𝖎𝖔𝖓
