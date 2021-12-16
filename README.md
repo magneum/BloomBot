@@ -6,6 +6,7 @@
 
 <p align="center">
   <img src="https://i.postimg.cc/Y9n0ZHJB/Mizuki.gif" width="500"/>
+  ![grab-landing-page](https://github.com/winnie1312/grab/blob/master/grab-landingpage-winnie.gif)
 </p>
 
 # ❓ 𝖂𝖍𝖞 𝕸𝖆𝖉𝖊 𝕿𝖍𝖎𝖘 𝕭𝖔𝖙?
