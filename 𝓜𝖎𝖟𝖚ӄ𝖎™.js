@@ -10,7 +10,7 @@ const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const 𝓜𝖎𝖟𝖚ӄ𝖎ֆʏռօք = require(`./𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/𝓜𝖎𝖟𝖚ӄ𝖎ᴢᴇɴ`);
 const AutoKrakz = require(`./𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/𝓜𝖎𝖟𝖚ӄ𝖎ɢɪᴛ`);
 const ɠɠ𝓜𝖎𝖟𝖚ӄ𝖎 = require(`./𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/ɠɠ𝓜𝖎𝖟𝖚ӄ𝖎`);
-const 𝓚𝓻𝓪𝓴𝓲𝓷𝔃ult = require(`./𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/ɠɠʊ`);
+const ӄʀǟӄɨռʐult = require(`./𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/ɠɠʊ`);
 const 𝓜𝖎𝖟𝖚ӄ𝖎ǟքք = require(`./𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/helper`);
 const _𝔏𝔞𝔟_ = require(`./𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/_𝔏𝔞𝔟_`);
 const ℓιєηт = require(`./𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/catch`);
@@ -66,7 +66,7 @@ var ᴛʙʏᴇ = [
 
 var ӄʀǟӄɨռʐ = 𝓜𝖎𝖟𝖚ӄ𝖎ֆʏռօք.WhatsApp;
 async function 𝓜𝓮𝓮6s() {
-  ӄʀǟӄɨռʐ.logger.level = `error`;
+  ӄʀǟӄɨռʐ.logger.level = `ℓαвєяяσя`;
   var 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹 = new Map();
   if (_𝔏𝔞𝔟_.HEROKU_API === `Null` || _𝔏𝔞𝔟_.HEROKU_BOT_NAME === `Null`) {
     console.log(
@@ -86,9 +86,9 @@ async function 𝓜𝓮𝓮6s() {
     ӄʀǟӄɨռʐ.loadAuthInfo(session);
   } catch (ℓαвєяяσя) {
     if (
-      ℓαвєяяσя instanceof TypeError ||
+      ℓαвєяяσя instanceof Typeℓαвєяяσя ||
       ℓαвєяяσя.message === `given authInfo is null` ||
-      ℓαвєяяσя instanceof SyntaxError
+      ℓαвєяяσя instanceof Syntaxℓαвєяяσя
     ) {
       console.log(
         Kolor.red(`𝗜𝗻𝗰𝗼𝗿𝗿𝗲𝗰𝘁 𝗦𝗲𝘀𝘀𝗶𝗼𝗻 𝗦𝘁𝗿𝗶𝗻𝗴. 𝗣𝗹𝗲𝗮𝘀𝗲 𝗮𝘂𝘁𝗵𝗲𝗻𝘁𝗶𝗰𝗮𝘁𝗲 𝗮𝗴𝗮𝗶𝗻!`)
@@ -316,7 +316,7 @@ ${update.desc}`,
     if (update.action === `add` && !MemNum.includes(ӄʀǟӄɨռʐ.user.jid)) {
       var Fetched = await ɠɠ𝓜𝖎𝖟𝖚ӄ𝖎.getMessage(GroupID, `setwelcome`);
       try {
-        𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃.getProfilePicture(
+        𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄʀǟӄɨռʐ.getProfilePicture(
           `${MemNum.split(`@`)[0]}@c.us`
         );
       } catch {
@@ -332,7 +332,7 @@ ${update.desc}`,
           if (err) throw err;
           const weltext = ᴛᴡᴇʟ[Math.floor(Math.random() * ᴛᴡᴇʟ.length)];
           personcum = MemNum.substring(0, MemNum.length - 15);
-          return await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+          return await ӄʀǟӄɨռʐ
             .sendMessage(
               GroupID,
               {
@@ -355,7 +355,7 @@ ${weltext}
 ${Fetched.message}`,
               }
             )
-            .catch((error) => ℓιєηт.catch(error, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+            .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
         }
       );
       return;
@@ -522,11 +522,11 @@ ${ꜰᴇᴛᴄʜᴇᴅʙʏᴇ.message}`,
       ) {
         return;
       } else if (𝓜𝖎𝖟𝖚ӄ𝖎Sudo.indexOf(𝓜𝖎𝖟𝖚ӄ𝖎.commandName) >= 0) {
-        var messageSent = await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃ult.getUser(𝓜𝖎𝖟𝖚ӄ𝖎.chatId);
+        var messageSent = await ӄʀǟӄɨռʐult.getUser(𝓜𝖎𝖟𝖚ӄ𝖎.chatId);
         if (messageSent) {
           return;
         } else {
-          await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃ult.addUser(𝓜𝖎𝖟𝖚ӄ𝖎.chatId);
+          await ӄʀǟӄɨռʐult.addUser(𝓜𝖎𝖟𝖚ӄ𝖎.chatId);
           return;
         }
       }
