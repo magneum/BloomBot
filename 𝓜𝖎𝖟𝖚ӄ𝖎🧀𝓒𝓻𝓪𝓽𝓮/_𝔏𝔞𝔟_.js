@@ -8,6 +8,13 @@ if (fs.existsSync(`𝓜𝖎𝖟𝖚ӄ𝖎.env`)) {
 } else {
   require(`dotenv`);
 }
+var ᴛ = [
+  `https://i.postimg.cc/251T8y9H/image.jpg`,
+  `https://i.postimg.cc/tCPRtWCj/Mizuki2.png`,
+  `https://i.postimg.cc/kgvnLCbY/Mizuki3.png`,
+  `https://i.postimg.cc/h4QKcTmd/Mizuki4.png`,
+];
+const MizukiMain = ᴛ[Math.floor(Math.random() * ᴛ.length)];
 //⦿──────────────────────────────────────────────────────────────────⦿   © 𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿──────────────────────────────────────────────────────────────────⦿`;
 const env = {
   Mee6: process.env.MIZUKI === undefined ? `Null` : process.env.MIZUKI,
@@ -45,7 +52,7 @@ const env = {
           },
         }),
   ERROR: `https://i.postimg.cc/NfXSPxHd/Mizuki-Error.jpg`,
-  MEE: `https://i.postimg.cc/251T8y9H/image.jpg`,
+  MEE: MizukiMain,
   INVL: `https://i.postimg.cc/NfXSPxHd/Mizuki-Error.jpg`,
   ARC: `https://i.postimg.cc/251T8y9H/image.jpg`,
   UPT: `https://i.postimg.cc/251T8y9H/image.jpg`,
