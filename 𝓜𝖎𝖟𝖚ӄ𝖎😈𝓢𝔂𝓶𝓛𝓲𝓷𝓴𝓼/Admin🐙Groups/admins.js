@@ -9,7 +9,7 @@ module.exports = {
   name: `admins`,
   description: `Tag admins of a group (either as a reply to another message or a direct tag).`,
   𝓜𝓮𝓮6ʍօʀɛ: `${ᴋᴇɪ}admins`,
-  async handle(𝓚𝓻𝓪𝓴𝓲𝓷𝔃, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
+  async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
     try {
       // ⦿──────────────────────────────────────────────────────────────────⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
       const ᴍɪᴢᴜᴋɪɢɪᴛ = require(`simple-git`)();
@@ -21,7 +21,7 @@ module.exports = {
       ]);
       // ⦿──────────────────────────────────────────────────────────────────⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
       if (ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total != 0) {
-        await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+        await ӄʀǟӄɨռʐ
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.logGroup,
             `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
@@ -31,11 +31,11 @@ module.exports = {
             MessageType.text,
             { quoted: chat }
           )
-          .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+          .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
       }
       // ⦿──────────────────────────────────────────────────────────────────⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
       if (𝓜𝖎𝖟𝖚ӄ𝖎.chatId === `120363025343298860@g.us` && !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderSUDO) {
-        await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+        await ӄʀǟӄɨռʐ
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
             `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
@@ -50,19 +50,19 @@ module.exports = {
               },
             }
           )
-          .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+          .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
         return;
       }
       // ⦿──────────────────────────────────────────────────────────────────⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
       if (!𝓜𝖎𝖟𝖚ӄ𝖎.isGroup) {
-        𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+        ӄʀǟӄɨռʐ
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
             `*${ᴋᴇɪ}admins*  command is only applicable for group chats.`,
             MessageType.text,
             { quoted: chat }
           )
-          .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+          .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
         return;
       }
 
@@ -73,18 +73,18 @@ module.exports = {
       }
 
       if (!𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
-        𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+        ӄʀǟӄɨռʐ
           .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, message, MessageType.text, {
             quoted: chat,
             contextInfo: {
               mentionedJid: 𝓜𝖎𝖟𝖚ӄ𝖎.groupAdmins,
             },
           })
-          .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+          .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
         return;
       }
 
-      𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+      ӄʀǟӄɨռʐ
         .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, message, MessageType.text, {
           quoted: chat,
           contextInfo: {
@@ -96,9 +96,9 @@ module.exports = {
             mentionedJid: 𝓜𝖎𝖟𝖚ӄ𝖎.groupAdmins,
           },
         })
-        .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+        .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
     } catch (ℓαвєяяσя) {
-      ℓιєηт.catch(ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎);
+      ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
       console.log(ℓαвєяяσя);
     }
   },

@@ -2,10 +2,10 @@
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const _𝔏𝔞𝔟_ = require(`./_𝔏𝔞𝔟_`);
 require(`python-format-js`);
-exports.catch = async (ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎) => {
+exports.catch = async (ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎) => {
   var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
   var ꜱᴇɴᴅᴇʀᴄᴏɴꜰ = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
-  await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃.sendMessage(
+  await ӄʀǟӄɨռʐ.sendMessage(
     𝓜𝖎𝖟𝖚ӄ𝖎.logGroup,
     `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
 
@@ -20,7 +20,7 @@ ${ℓαвєяяσя}
       },
     }
   );
-  await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃.sendMessage(
+  await ӄʀǟӄɨռʐ.sendMessage(
     𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
     {
       url: _𝔏𝔞𝔟_.ERROR,

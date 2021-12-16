@@ -3,7 +3,7 @@ const _𝔏𝔞𝔟_ = require(`./_𝔏𝔞𝔟_`);
 var ƈʏɮօʀɢƈʟǟ = require(`./𝓜𝖎𝖟𝖚ӄ𝖎ƈʟǟ`);
 const Kolor = require(`chalk`);
 // ⦿──────────────────────────────────────────────────────────────────⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
-exports.resolve = function (messageInstance, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, groupMetadata) {
+exports.resolve = function (messageInstance, ӄʀǟӄɨռʐ, groupMetadata) {
   var 𝓜𝖎𝖟𝖚ӄ𝖎 = new ƈʏɮօʀɢƈʟǟ();
   var prefix = _𝔏𝔞𝔟_.FOXTROT + `\\w+`;
   var prefixRegex = new RegExp(prefix, `g`);
@@ -15,7 +15,7 @@ exports.resolve = function (messageInstance, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, group
   }
   𝓜𝖎𝖟𝖚ӄ𝖎.chatId = messageInstance.key.remoteJid || ``;
   𝓜𝖎𝖟𝖚ӄ𝖎.fromMe = messageInstance.key.fromMe;
-  𝓜𝖎𝖟𝖚ӄ𝖎.owner = 𝓚𝓻𝓪𝓴𝓲𝓷𝔃.user.jid || ``;
+  𝓜𝖎𝖟𝖚ӄ𝖎.owner = ӄʀǟӄɨռʐ.user.jid || ``;
   𝓜𝖎𝖟𝖚ӄ𝖎.mimeType = messageInstance.message
     ? Object.keys(messageInstance.message)[0]
     : null;
@@ -101,7 +101,7 @@ exports.resolve = function (messageInstance, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, group
   𝓜𝖎𝖟𝖚ӄ𝖎.isReplyAudio = 𝓜𝖎𝖟𝖚ӄ𝖎.isReply
     ? jsonMessage.indexOf(`audioMessage`) !== -1
     : false;
-  𝓜𝖎𝖟𝖚ӄ𝖎.logGroup = 𝓚𝓻𝓪𝓴𝓲𝓷𝔃.user.jid || ``;
+  𝓜𝖎𝖟𝖚ӄ𝖎.logGroup = ӄʀǟӄɨռʐ.user.jid || ``;
   𝓜𝖎𝖟𝖚ӄ𝖎.isGroup = 𝓜𝖎𝖟𝖚ӄ𝖎.chatId.endsWith(`@g.us`);
   𝓜𝖎𝖟𝖚ӄ𝖎.isPm = !𝓜𝖎𝖟𝖚ӄ𝖎.isGroup;
   𝓜𝖎𝖟𝖚ӄ𝖎.sender =

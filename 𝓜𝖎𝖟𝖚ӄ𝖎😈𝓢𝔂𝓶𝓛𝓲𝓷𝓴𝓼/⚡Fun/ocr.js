@@ -10,7 +10,7 @@ module.exports = {
   name: `ocr`,
   description: `Use this command to obtain text from an image by  *${ᴋᴇɪ}space*  command.`,
   𝓜𝓮𝓮6ʍօʀɛ: `${ᴋᴇɪ}`,
-  async handle(𝓚𝓻𝓪𝓴𝓲𝓷𝔃, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
+  async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
     try {
       //⦿──────────────────────────────────────────────────────────────────⦿   © 𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
       const ᴍɪᴢᴜᴋɪɢɪᴛ = require(`simple-git`)();
@@ -22,7 +22,7 @@ module.exports = {
       ]);
       //⦿──────────────────────────────────────────────────────────────────⦿   © 𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
       if (ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total != 0) {
-        await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+        await ӄʀǟӄɨռʐ
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.logGroup,
             `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
@@ -32,11 +32,11 @@ module.exports = {
             MessageType.text,
             { quoted: chat }
           )
-          .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+          .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
       }
       //⦿──────────────────────────────────────────────────────────────────⦿   © 𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
       if (𝓜𝖎𝖟𝖚ӄ𝖎.chatId === `120363025343298860@g.us` && !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderSUDO) {
-        await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+        await ӄʀǟӄɨռʐ
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
             `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
@@ -51,7 +51,7 @@ module.exports = {
               },
             }
           )
-          .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+          .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
         return;
         //⦿──────────────────────────────────────────────────────────────────⦿   © 𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
       } else {
@@ -61,7 +61,7 @@ module.exports = {
           };
           var imageId = chat.key.id;
           const fileName = `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/img-` + imageId;
-          const filePath = await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃.downloadAndSaveMediaMessage(
+          const filePath = await ӄʀǟӄɨռʐ.downloadAndSaveMediaMessage(
             replyChatObject,
             fileName
           );
@@ -71,7 +71,7 @@ module.exports = {
             });
             var Msg = text.ParsedResults[0].ParsedText;
             if (Msg === ``) {
-              𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+              ӄʀǟӄɨռʐ
                 .sendMessage(
                   𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
                   `Couldn't find text in the image`,
@@ -79,15 +79,15 @@ module.exports = {
                   { quoted: chat }
                 )
                 .catch((ℓαвєяяσя) => {
-                  ℓιєηт.catch((ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+                  ℓιєηт.catch((ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
                 });
             }
-            𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+            ӄʀǟӄɨռʐ
               .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, Msg, MessageType.text, {
                 quoted: chat,
               })
               .catch((ℓαвєяяσя) => {
-                ℓιєηт.catch((ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+                ℓιєηт.catch((ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
               });
           } catch (ℓαвєяяσя) {
             throw ℓαвєяяσя;
@@ -106,7 +106,7 @@ module.exports = {
           };
           var imageId = chat.message.extendedTextMessage.contextInfo.stanzaId;
           const fileName = `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/img-` + imageId;
-          const filePath = await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃.downloadAndSaveMediaMessage(
+          const filePath = await ӄʀǟӄɨռʐ.downloadAndSaveMediaMessage(
             replyChatObject,
             fileName
           );
@@ -116,7 +116,7 @@ module.exports = {
             });
             var Msg = text.ParsedResults[0].ParsedText;
             if (Msg === ``) {
-              𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+              ӄʀǟӄɨռʐ
                 .sendMessage(
                   𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
                   `Couldn't find text in the image`,
@@ -124,15 +124,15 @@ module.exports = {
                   { quoted: chat }
                 )
                 .catch((ℓαвєяяσя) => {
-                  ℓιєηт.catch((ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+                  ℓιєηт.catch((ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
                 });
             }
-            𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+            ӄʀǟӄɨռʐ
               .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, Msg, MessageType.text, {
                 quoted: chat,
               })
               .catch((ℓαвєяяσя) => {
-                ℓιєηт.catch((ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+                ℓιєηт.catch((ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
               });
           } catch (ℓαвєяяσя) {
             throw ℓαвєяяσя;
@@ -146,27 +146,27 @@ module.exports = {
             };
         }
         setTimeout(async () => {
-          await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+          await ӄʀǟӄɨռʐ
             .sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               `Please tag a valid message.`,
               MessageType.text,
               { quoted: chat }
             )
-            .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+            .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
           return;
         }, 300000);
-        await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+        await ӄʀǟӄɨռʐ
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
             `Please tag a valid message.`,
             MessageType.text,
             { quoted: chat }
           )
-          .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+          .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
       }
     } catch (ℓαвєяяσя) {
-      ℓιєηт.catch(ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎);
+      ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
       console.log(ℓαвєяяσя);
     }
   },

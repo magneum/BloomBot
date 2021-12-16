@@ -11,7 +11,7 @@ module.exports = {
   𝓜𝓮𝓮6ʍօʀɛ: `Example -
 ${ᴋᴇɪ}add <country-code>0000000000
 ${ᴋᴇɪ}add 910000000000`,
-  async handle(𝓚𝓻𝓪𝓴𝓲𝓷𝔃, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
+  async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
     try {
       // ⦿──────────────────────────────────────────────────────────────────⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
       const ᴍɪᴢᴜᴋɪɢɪᴛ = require(`simple-git`)();
@@ -23,7 +23,7 @@ ${ᴋᴇɪ}add 910000000000`,
       ]);
       // ⦿──────────────────────────────────────────────────────────────────⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
       if (ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total != 0) {
-        await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+        await ӄʀǟӄɨռʐ
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.logGroup,
             `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
@@ -33,11 +33,11 @@ ${ᴋᴇɪ}add 910000000000`,
             MessageType.text,
             { quoted: chat }
           )
-          .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+          .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
       }
       // ⦿──────────────────────────────────────────────────────────────────⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
       if (𝓜𝖎𝖟𝖚ӄ𝖎.chatId === `120363025343298860@g.us` && !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderSUDO) {
-        await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+        await ӄʀǟӄɨռʐ
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
             `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
@@ -52,14 +52,14 @@ ${ᴋᴇɪ}add 910000000000`,
               },
             }
           )
-          .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+          .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
         return;
       }
       // ⦿──────────────────────────────────────────────────────────────────⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
       try {
         // ⦿──────────────────────────────────────────────────────────────────⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
         if (𝓜𝖎𝖟𝖚ӄ𝖎.isGroup && !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderGroupAdmin) {
-          return await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+          return await ӄʀǟӄɨռʐ
             .sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               {
@@ -73,11 +73,11 @@ ${ᴋᴇɪ}add 910000000000`,
 ⚠️𝗘𝗿𝗿𝗼𝗿: @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}, *ʏᴏᴜ ᴅᴏɴ'ᴛ ꜱᴇᴇᴍ ᴛᴏ ʙᴇ ᴀᴅᴍɪɴ..*`,
               }
             )
-            .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+            .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
         }
         // ⦿──────────────────────────────────────────────────────────────────⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
         if (!arg[0]) {
-          𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+          ӄʀǟӄɨռʐ
             .sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               `Enter the number you want to add.
@@ -86,12 +86,12 @@ For instance,
               MessageType.text,
               { quoted: chat }
             )
-            .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+            .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
           return;
         }
         let NUM;
         if (isNaN(arg[0]) || arg[0][0] === `+` || arg[0].length < 10) {
-          𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+          ӄʀǟӄɨռʐ
             .sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               `            Example -
@@ -100,7 +100,7 @@ ${ᴋᴇɪ}add 910000000000`,
               MessageType.text,
               { quoted: chat }
             )
-            .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+            .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
           return;
         }
         if (arg[0].length == 10 && !isNaN(arg[0])) {
@@ -108,9 +108,9 @@ ${ᴋᴇɪ}add 910000000000`,
         } else {
           NUM = arg[0];
         }
-        const exists = await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃.isOnWhatsApp(NUM + `@s.whatsapp.net`);
+        const exists = await ӄʀǟӄɨռʐ.isOnWhatsApp(NUM + `@s.whatsapp.net`);
         if (!exists) {
-          𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+          ӄʀǟӄɨռʐ
             .sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               `The number you're trying to add isn't available on WhatsApp.
@@ -122,45 +122,45 @@ ${ᴋᴇɪ}add 910000000000`,
               MessageType.text,
               { quoted: chat }
             )
-            .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+            .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
           return;
         }
         NUM = `${arg[0].replace(/ /g, ``)}@s.whatsapp.net`;
-        const request = 𝓚𝓻𝓪𝓴𝓲𝓷𝔃.groupAdd(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, [NUM]);
+        const request = ӄʀǟӄɨռʐ.groupAdd(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, [NUM]);
         const response = await request;
 
         if (response[NUM + `@c.us`] == 408) {
-          𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+          ӄʀǟӄɨռʐ
             .sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               `The number entered cannot be added back before 24 hours.`,
               MessageType.text,
               { quoted: chat }
             )
-            .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+            .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
           return;
         } else if (response[NUM + `@c.us`] == 409) {
-          𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+          ӄʀǟӄɨռʐ
             .sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               `The number entered is already a member of this group.`,
               MessageType.text,
               { quoted: chat }
             )
-            .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+            .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
           return;
         }
-        𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+        ӄʀǟӄɨռʐ
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
             ` ` + NUM + ` added successfully!` + ``,
             MessageType.text,
             { quoted: chat }
           )
-          .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+          .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
       } catch (ℓαвєяяσя) {
         if (ℓαвєяяσя.status == 400) {
-          𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+          ӄʀǟӄɨռʐ
             .sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               `The number you're trying to add isn't available on WhatsApp.
@@ -168,13 +168,13 @@ Please verify the number again.`,
               MessageType.text,
               { quoted: chat }
             )
-            .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+            .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
         }
-        await ℓιєηт.catch(ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎);
+        await ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
       }
       return;
     } catch (ℓαвєяяσя) {
-      ℓιєηт.catch(ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎);
+      ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
       console.log(ℓαвєяяσя);
     }
   },

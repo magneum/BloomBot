@@ -64,9 +64,9 @@ var ᴛʙʏᴇ = [
 ];
 // ⦿──────────────────────────────────────────────────────────────────⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
 try {
-  var 𝓚𝓻𝓪𝓴𝓲𝓷𝔃 = 𝓜𝖎𝖟𝖚ӄ𝖎ֆʏռօք.WhatsApp;
+  var ӄʀǟӄɨռʐ = 𝓜𝖎𝖟𝖚ӄ𝖎ֆʏռօք.WhatsApp;
   async function 𝓜𝓮𝓮6s() {
-    𝓚𝓻𝓪𝓴𝓲𝓷𝔃.logger.level = `error`;
+    ӄʀǟӄɨռʐ.logger.level = `error`;
     var 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹 = new Map();
     if (_𝔏𝔞𝔟_.HEROKU_API === `Null` || _𝔏𝔞𝔟_.HEROKU_BOT_NAME === `Null`) {
       console.log(
@@ -83,7 +83,7 @@ try {
     await AutoKrakz();
     try {
       var session = 𝓜𝖎𝖟𝖚ӄ𝖎ֆʏռօք.Mee6reignite(_𝔏𝔞𝔟_.Mee6);
-      𝓚𝓻𝓪𝓴𝓲𝓷𝔃.loadAuthInfo(session);
+      ӄʀǟӄɨռʐ.loadAuthInfo(session);
     } catch (ℓαвєяяσя) {
       if (
         ℓαвєяяσя instanceof TypeError ||
@@ -100,14 +100,14 @@ try {
       }
     }
     // ⦿──────────────────────────────────────────────────────────────────⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
-    𝓚𝓻𝓪𝓴𝓲𝓷𝔃.on(`connecting`, async () => {
+    ӄʀǟӄɨռʐ.on(`connecting`, async () => {
       console.log(
         Kolor.yellow(`⬡=================⬡    ⦿𝐌𝐢𝐳𝐮𝐤𝐢™⦿    ⬡=================⬡`)
       );
       console.log(Kolor.yellow(`💡𝗜𝗻𝗳𝗼⬰ 𝘊𝘰𝘯𝘯𝘦𝘤𝘵𝘪𝘯𝘨 𝘵𝘰 𝘞𝘩𝘢𝘵𝘴𝘈𝘱𝘱...🤖`));
     });
     // ⦿──────────────────────────────────────────────────────────────────⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
-    𝓚𝓻𝓪𝓴𝓲𝓷𝔃.on(`open`, async () => {
+    ӄʀǟӄɨռʐ.on(`open`, async () => {
       console.log(
         Kolor.yellow(`⬡=================⬡    ⦿𝐌𝐢𝐳𝐮𝐤𝐢™⦿    ⬡=================⬡`)
       );
@@ -164,8 +164,8 @@ try {
       // ⦿──────────────────────────────────────────────────────────────────⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
       const yes_no = _𝔏𝔞𝔟_.Krakinz;
       if (yes_no === `Null`) {
-        await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃.sendMessage(
-          𝓚𝓻𝓪𝓴𝓲𝓷𝔃.user.jid,
+        await ӄʀǟӄɨռʐ.sendMessage(
+          ӄʀǟӄɨռʐ.user.jid,
           {
             url: _𝔏𝔞𝔟_.MEE,
           },
@@ -190,15 +190,15 @@ try {
         console.log("KrakinzLab-Dev-Mode");
       }
     });
-    await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃.connect();
+    await ӄʀǟӄɨռʐ.connect();
     // ⦿──────────────────────────────────────────────────────────────────⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
-    //   𝓚𝓻𝓪𝓴𝓲𝓷𝔃.on(`message-delete`, async (update) => {
+    //   ӄʀǟӄɨռʐ.on(`message-delete`, async (update) => {
     //     update.message =
     //       Object.keys(update.message)[0] === `ephemeralMessage` ?
     //         update.message.ephemeralMessage.message :
     //         update.message;
     //     const type = Object.keys(update.message)[0];
-    //     𝓚𝓻𝓪𝓴𝓲𝓷𝔃.sendMessage(
+    //     ӄʀǟӄɨռʐ.sendMessage(
     //       update.key.remoteJid,
     //       `「 𝗔𝗡𝗧𝗜 𝗗𝗘𝗟𝗘𝗧𝗘 」
     // •> Name : @${update.participant.split(`@`)[0]}
@@ -211,13 +211,13 @@ try {
     //     }
     //     );
 
-    //     𝓚𝓻𝓪𝓴𝓲𝓷𝔃.copyNForward(update.key.remoteJid, update.message);
+    //     ӄʀǟӄɨռʐ.copyNForward(update.key.remoteJid, update.message);
     //   });
     // ⦿──────────────────────────────────────────────────────────────────⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
-    𝓚𝓻𝓪𝓴𝓲𝓷𝔃.on(`group-update`, async (update) => {
-      groupupdateID = await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃.groupMetadata(update.jid);
+    ӄʀǟӄɨռʐ.on(`group-update`, async (update) => {
+      groupupdateID = await ӄʀǟӄɨռʐ.groupMetadata(update.jid);
       if (update.announce == `false`) {
-        𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+        ӄʀǟӄɨռʐ
           .sendMessage(
             groupupdateID.id,
             `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
@@ -228,7 +228,7 @@ Group has been opened by admin Now all members can send messages`,
           )
           .catch((ℓαвєяяσя) => console.log(Kolor.redBright(ℓαвєяяσя)));
       } else if (update.announce == `true`) {
-        𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+        ӄʀǟӄɨռʐ
           .sendMessage(
             groupupdateID.id,
             `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
@@ -240,7 +240,7 @@ Group has been opened by admin Now all members can send messages`,
           .catch((ℓαвєяяσя) => console.log(Kolor.redBright(ℓαвєяяσя)));
       } else if (!update.desc == ``) {
         tag = update.descOwner.split(`@`)[0] + `@s.whatsapp.net`;
-        𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+        ӄʀǟӄɨռʐ
           .sendMessage(
             groupupdateID.id,
             `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
@@ -259,7 +259,7 @@ ${update.desc}`,
           )
           .catch((ℓαвєяяσя) => console.log(Kolor.redBright(ℓαвєяяσя)));
       } else if (update.restrict == `false`) {
-        𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+        ӄʀǟӄɨռʐ
           .sendMessage(
             groupupdateID.id,
             `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
@@ -271,7 +271,7 @@ ${update.desc}`,
           )
           .catch((ℓαвєяяσя) => console.log(Kolor.redBright(ℓαвєяяσя)));
       } else if (update.restrict == `true`) {
-        𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+        ӄʀǟӄɨռʐ
           .sendMessage(
             groupupdateID.id,
             `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
@@ -285,18 +285,18 @@ ${update.desc}`,
       }
     });
     // ⦿──────────────────────────────────────────────────────────────────⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
-    𝓚𝓻𝓪𝓴𝓲𝓷𝔃.on(`group-participants-update`, async (update) => {
+    ӄʀǟӄɨռʐ.on(`group-participants-update`, async (update) => {
       var GroupID = update.jid;
-      const GroupMemData = await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃.groupMetadata(update.jid);
+      const GroupMemData = await ӄʀǟӄɨռʐ.groupMetadata(update.jid);
       const GroupMemG = GroupMemData.participants.length;
-      const GroupMemBio = await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃.getStatus(
+      const GroupMemBio = await ӄʀǟӄɨռʐ.getStatus(
         update.participants[0],
         MessageType.text
       );
       const MemNum = update.participants[0];
-      if (update.action == `add` && MemNum.includes(𝓚𝓻𝓪𝓴𝓲𝓷𝔃.user.jid)) {
+      if (update.action == `add` && MemNum.includes(ӄʀǟӄɨռʐ.user.jid)) {
         console.log(`⬡••••••••⬡    ⦿𝐌𝐢𝐳𝐮𝐤𝐢™⦿Added    ⬡••••••••⬡`);
-        return await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+        return await ӄʀǟӄɨռʐ
           .sendMessage(
             GroupID,
             `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
@@ -317,7 +317,7 @@ ${update.desc}`,
           .then(console.log(Kolor.green(GroupID)))
           .catch((ℓαвєяяσя) => console.log(ℓαвєяяσя));
       }
-      if (update.action === `add` && !MemNum.includes(𝓚𝓻𝓪𝓴𝓲𝓷𝔃.user.jid)) {
+      if (update.action === `add` && !MemNum.includes(ӄʀǟӄɨռʐ.user.jid)) {
         var enable = await ɠɠ𝓜𝖎𝖟𝖚ӄ𝖎.checkSettings(GroupID, `setwelcome`);
         if (enable === false || enable === `OFF`) {
           return;
@@ -327,7 +327,7 @@ ${update.desc}`,
         );
         var Fetched = await ɠɠ𝓜𝖎𝖟𝖚ӄ𝖎.getMessage(GroupID, `setwelcome`);
         try {
-          𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃.getProfilePicture(
+          𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄʀǟӄɨռʐ.getProfilePicture(
             `${MemNum.split(`@`)[0]}@c.us`
           );
         } catch {
@@ -344,12 +344,12 @@ ${update.desc}`,
             const weltext = ᴛᴡᴇʟ[Math.floor(Math.random() * ᴛᴡᴇʟ.length)];
             personcum = MemNum.substring(0, MemNum.length - 15);
             let content = fs.readFileSync(`./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/𝕻𝕻𝖑𝖊𝖙𝖊𝖗.jpg`);
-            const media = await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃.prepareMessage(
+            const media = await ӄʀǟӄɨռʐ.prepareMessage(
               GroupID,
               content,
               MessageType.image
             );
-            return await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+            return await ӄʀǟӄɨռʐ
               .sendMessage(
                 GroupID,
                 {
@@ -400,7 +400,7 @@ ${Fetched.message}`,
         } else {
           var ꜰᴇᴛᴄʜᴇᴅʙʏᴇ = await ɠɠ𝓜𝖎𝖟𝖚ӄ𝖎.getMessage(GroupID, `setgoodbye`);
           try {
-            𝕸𝖊𝖊𝕷𝖊𝖋𝖙𝖊𝖗 = await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃.getProfilePicture(
+            𝕸𝖊𝖊𝕷𝖊𝖋𝖙𝖊𝖗 = await ӄʀǟӄɨռʐ.getProfilePicture(
               `${MemNum.split(`@`)[0]}@c.us`
             );
           } catch {
@@ -416,7 +416,7 @@ ${Fetched.message}`,
               if (ℓαвєяяσя) throw ℓαвєяяσя;
               const byetext = ᴛʙʏᴇ[Math.floor(Math.random() * ᴛʙʏᴇ.length)];
               personcum = MemNum.substring(0, MemNum.length - 15);
-              return await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+              return await ӄʀǟӄɨռʐ
                 .sendMessage(
                   GroupID,
                   {
@@ -449,7 +449,7 @@ ${ꜰᴇᴛᴄʜᴇᴅʙʏᴇ.message}`,
       }
     });
     // ⦿──────────────────────────────────────────────────────────────────⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
-    𝓚𝓻𝓪𝓴𝓲𝓷𝔃.on(`chat-update`, async (chat) => {
+    ӄʀǟӄɨռʐ.on(`chat-update`, async (chat) => {
       if (!chat.hasNewMessage) {
         return;
       }
@@ -459,9 +459,9 @@ ${ꜰᴇᴛᴄʜᴇᴅʙʏᴇ.message}`,
       chat = chat.messages.all()[0];
       var sender = chat.key.remoteJid;
       const groupMetadata = sender.endsWith(`@g.us`)
-        ? await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃.groupMetadata(sender)
+        ? await ӄʀǟӄɨռʐ.groupMetadata(sender)
         : ``;
-      var 𝓜𝖎𝖟𝖚ӄ𝖎 = 𝓜𝖎𝖟𝖚ӄ𝖎ǟքք.resolve(chat, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, groupMetadata);
+      var 𝓜𝖎𝖟𝖚ӄ𝖎 = 𝓜𝖎𝖟𝖚ӄ𝖎ǟքք.resolve(chat, ӄʀǟӄɨռʐ, groupMetadata);
       const adminmodls = [
         `add`,
         `demote`,
@@ -502,7 +502,7 @@ ${ꜰᴇᴛᴄʜᴇᴅʙʏᴇ.message}`,
         var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
         var ꜱᴇɴᴅᴇʀᴄᴏɴꜰ = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
         if (!command) {
-          return await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+          return await ӄʀǟӄɨռʐ
             .sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               `𝗜𝗻𝘃𝗮𝗹𝗶𝗱 𝗖𝗼𝗺𝗺𝗮𝗻𝗱
@@ -516,9 +516,9 @@ _Use ${ᴋᴇɪ}𝗵𝗲𝗹𝗽 to get the list of available commands_`,
                 },
               }
             )
-            .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+            .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
         }
-        return command.handle(𝓚𝓻𝓪𝓴𝓲𝓷𝔃, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹);
+        return command.handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹);
       }
     });
   }

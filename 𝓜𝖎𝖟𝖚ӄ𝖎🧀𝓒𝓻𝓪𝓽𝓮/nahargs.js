@@ -26,7 +26,7 @@ registerFont(`./𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/TheHeartOfEveryth
 });
 var randomMC = require(`random-material-color`);
 exports.nahargs = async (
-  𝓚𝓻𝓪𝓴𝓲𝓷𝔃,
+  ӄʀǟӄɨռʐ,
   chat,
   𝓜𝖎𝖟𝖚ӄ𝖎,
   ꜱᴇɴᴅᴇʀɪᴅ,
@@ -56,7 +56,7 @@ exports.nahargs = async (
   loadImage(`./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/爪𝖎𝖟𝖚ӄ𝖎Noargs.png`).then(async () => {
     const buffer = canvas.toBuffer(`image/png`);
     fs.writeFileSync(`./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/爪𝖎𝖟𝖚ӄ𝖎Noargs.png`, buffer);
-    await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃.sendMessage(
+    await ӄʀǟӄɨռʐ.sendMessage(
       𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
       {
         url: `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/爪𝖎𝖟𝖚ӄ𝖎Noargs.png`,

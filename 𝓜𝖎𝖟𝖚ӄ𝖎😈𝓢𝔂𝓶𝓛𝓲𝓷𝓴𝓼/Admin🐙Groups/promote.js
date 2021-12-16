@@ -14,7 +14,7 @@ module.exports = {
 For example-
 *${ᴋᴇɪ}promote 9861212121*`,
   𝓜𝓮𝓮6ʍօʀɛ: `${ᴋᴇɪ}`,
-  async handle(𝓚𝓻𝓪𝓴𝓲𝓷𝔃, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
+  async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
     try {
       // ⦿──────────────────────────────────────────────────────────────────⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
       const ᴍɪᴢᴜᴋɪɢɪᴛ = require(`simple-git`)();
@@ -26,7 +26,7 @@ For example-
       ]);
       // ⦿──────────────────────────────────────────────────────────────────⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
       if (ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total != 0) {
-        await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+        await ӄʀǟӄɨռʐ
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.logGroup,
             `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
@@ -36,11 +36,11 @@ For example-
             MessageType.text,
             { quoted: chat }
           )
-          .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+          .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
       }
       // ⦿──────────────────────────────────────────────────────────────────⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
       if (𝓜𝖎𝖟𝖚ӄ𝖎.chatId === `120363025343298860@g.us` && !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderSUDO) {
-        await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+        await ӄʀǟӄɨռʐ
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
             `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
@@ -55,13 +55,13 @@ For example-
               },
             }
           )
-          .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+          .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
         return;
       }
       // ⦿──────────────────────────────────────────────────────────────────⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
       try {
         if (!𝓜𝖎𝖟𝖚ӄ𝖎.isGroup) {
-          𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+          ӄʀǟӄɨռʐ
             .sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
@@ -71,12 +71,12 @@ This command is only applicable in a group chat.`,
               MessageType.text,
               { quoted: chat }
             )
-            .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+            .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
           return;
         }
         // ⦿──────────────────────────────────────────────────────────────────⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
         if (𝓜𝖎𝖟𝖚ӄ𝖎.isGroup && !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderGroupAdmin) {
-          return await 𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+          return await ӄʀǟӄɨռʐ
             .sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               {
@@ -94,11 +94,11 @@ This command is only applicable in a group chat.`,
 ⚠️𝗘𝗿𝗿𝗼𝗿: @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}, *ʏᴏᴜ ᴅᴏɴ'ᴛ ꜱᴇᴇᴍ ᴛᴏ ʙᴇ ᴀᴅᴍɪɴ..*`,
               }
             )
-            .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+            .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
         }
         // ⦿──────────────────────────────────────────────────────────────────⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
         if (!𝓜𝖎𝖟𝖚ӄ𝖎.isBotGroupAdmin) {
-          𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+          ӄʀǟӄɨռʐ
             .sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
@@ -113,11 +113,11 @@ Sorry, dont have the permission to do so since I am not an admin.`,
                 },
               }
             )
-            .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+            .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
           return;
         }
         if (!𝓜𝖎𝖟𝖚ӄ𝖎.isReply && typeof arg[0] == `undefined`) {
-          𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+          ӄʀǟӄɨռʐ
             .sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
@@ -132,7 +132,7 @@ Reply/tag/enter contact number of the person to be promoted.`,
                 },
               }
             )
-            .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+            .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
           return;
         }
 
@@ -152,8 +152,8 @@ Reply/tag/enter contact number of the person to be promoted.`,
           if (CheckMember) {
             if (!admin == true) {
               const arr = [contact + `@s.whatsapp.net`];
-              𝓚𝓻𝓪𝓴𝓲𝓷𝔃.groupMakeAdmin(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, arr);
-              𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+              ӄʀǟӄɨռʐ.groupMakeAdmin(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, arr);
+              ӄʀǟӄɨռʐ
                 .sendMessage(
                   𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
                   `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
@@ -169,9 +169,9 @@ mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ, contactmen],
 },
 }
 )
-.catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+.catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
 } else {
-𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+ӄʀǟӄɨռʐ
 .sendMessage(
 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
 `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
@@ -186,7 +186,7 @@ mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ, contactmen],
 },
 }
 )
-.catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+.catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
 }
 }
 if (!CheckMember) {
@@ -194,7 +194,7 @@ if (contact === undefined) {
 return;
 }
 
-𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+ӄʀǟӄɨռʐ
 .sendMessage(
 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
 `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
@@ -209,12 +209,12 @@ mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
 },
 }
 )
-.catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+.catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
 return;
 }
 } catch (ℓαвєяяσя) {
 if (ℓαвєяяσя === `NumberInvalid`) {
-𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+ӄʀǟӄɨռʐ
 .sendMessage(
 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
 `
@@ -229,13 +229,13 @@ mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
 },
 }
 )
-.catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+.catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
 } else {
-await ℓιєηт.catch(ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎);
+await ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
 }
 }
 } else {
-var contact = await motor.getCleanedContact(arg, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎);
+var contact = await motor.getCleanedContact(arg, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
 var contactmen = contact;
 var admin = false;
 var CheckMember = await motor.isMember(contact, 𝓜𝖎𝖟𝖚ӄ𝖎.groupMembers);
@@ -249,14 +249,14 @@ admin = true;
 if (CheckMember) {
 if (!admin == true) {
 const arr = [contact + `@s.whatsapp.net`];
-𝓚𝓻𝓪𝓴𝓲𝓷𝔃.groupMakeAdmin(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, arr);
-𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+ӄʀǟӄɨռʐ.groupMakeAdmin(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, arr);
+ӄʀǟӄɨռʐ
 .sendMessage(
 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
 `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
 
             𝗔𝗵𝗺 •@${ ꜱᴇɴᴅᴇʀᴄᴏɴꜰ },
-${ await motor.getCleanedContact(arg, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎) } is promoted to admin`,
+${ await motor.getCleanedContact(arg, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎) } is promoted to admin`,
 MessageType.text,
 {
 quoted: chat,
@@ -265,15 +265,15 @@ mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ, contactmen],
 },
 }
 )
-.catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+.catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
 } else {
-𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+ӄʀǟӄɨռʐ
 .sendMessage(
 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
 `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
 
             𝗔𝗵𝗺 •@${ ꜱᴇɴᴅᴇʀᴄᴏɴꜰ },
-${ await motor.getCleanedContact(arg, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎) } is already an admin`,
+${ await motor.getCleanedContact(arg, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎) } is already an admin`,
 MessageType.text,
 {
 quoted: chat,
@@ -282,7 +282,7 @@ mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ, contactmen],
 },
 }
 )
-.catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+.catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
 }
 }
 if (!CheckMember) {
@@ -290,7 +290,7 @@ if (contact === undefined) {
 return;
 }
 
-𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+ӄʀǟӄɨռʐ
 .sendMessage(
 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
 `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
@@ -305,12 +305,12 @@ mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
 },
 }
 )
-.catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+.catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
 return;
 }
 } catch (ℓαвєяяσя) {
 if (ℓαвєяяσя === `NumberInvalid`) {
-𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+ӄʀǟӄɨռʐ
 .sendMessage(
 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
 `
@@ -325,16 +325,16 @@ mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
 },
 }
 )
-.catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+.catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
 } else {
-await ℓιєηт.catch(ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎);
+await ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
 }
 }
 }
 
 
 } catch (ℓαвєяяσя) {
-ℓιєηт.catch(ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎);
+ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
 console.log(ℓαвєяяσя);
 }
 },
