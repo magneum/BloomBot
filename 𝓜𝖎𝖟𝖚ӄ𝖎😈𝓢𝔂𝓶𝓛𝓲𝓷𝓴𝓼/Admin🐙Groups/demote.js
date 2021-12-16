@@ -126,6 +126,7 @@ For example-
         return;
       }
       // ⦿──────────────────────────────────────────────────────────────────⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
+      const reply = chat.message.extendedTextMessage;
       if (𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
         var contact = reply.contextInfo.participant.split(`@`)[0];
         var contactmen = reply.contextInfo.participant + "@s.whatsapp.net";
