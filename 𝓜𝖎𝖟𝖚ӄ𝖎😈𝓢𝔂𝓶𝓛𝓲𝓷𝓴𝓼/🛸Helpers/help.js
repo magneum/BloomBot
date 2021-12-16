@@ -38,10 +38,19 @@ module.exports = {
         return dDisplay + hDisplay + mDisplay + sDisplay;
       };
       uptime = process.uptime();
-      timestampe = speed();
-      latensie = speed() - timestampe;
+      let timestamp = speed();
+      let latensi = speed() - timestamp;
+      neww = performance.now();
+      oldd = performance.now();
       // ⦿──────────────────────────────────────────────────────────────────⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿──────────────────────────────────────────────────────────────────⦿`;
-      let content = fs.readFileSync(`./𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/𝓜𝖎𝖟𝖚ӄ𝖎.jpg`);
+      var ᴛ = [
+        `./𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/𝓜𝖎𝖟𝖚ӄ𝖎.jpg`,
+        `./𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/𝓜𝖎𝖟𝖚ӄ𝖎2.jpg`,
+        `./𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/𝓜𝖎𝖟𝖚ӄ𝖎3.jpg`,
+        `./𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/𝓜𝖎𝖟𝖚ӄ𝖎4.jpg`,
+      ];
+      const MizukiMain = ᴛ[Math.floor(Math.random() * ᴛ.length)];
+      let content = fs.readFileSync(MizukiMain);
       const media = await ӄʀǟӄɨռʐ.prepareMessage(
         𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
         content,
@@ -64,10 +73,6 @@ module.exports = {
         //   type: 1,
         // },
       ];
-      let timestamp = speed();
-      let latensi = speed() - timestamp;
-      neww = performance.now();
-      oldd = performance.now();
       const buttonMessage = {
         contentText: `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭 ʙʏ ᴋʀᴀᴋɪɴᴢ_
 
