@@ -5,7 +5,7 @@
 🔸[`ᴡʜᴀᴛꜱᴀᴘᴘ`](https://chat.whatsapp.com/KlMRYxCTte5H8TIIupbRVf) 🔸[`ᴅɪꜱᴄᴏʀᴅ`](https://discord.gg/xcFN6NDHEV)
 
 <p align="center">
-  <img src="https://i.postimg.cc/251T8y9H/image.jpg" width="400"/>
+  <img src="https://i.postimg.cc/Y9n0ZHJB/Mizuki.gif" width="500"/>
 </p>
 
 # ❓ 𝖂𝖍𝖞 𝕸𝖆𝖉𝖊 𝕿𝖍𝖎𝖘 𝕭𝖔𝖙?
