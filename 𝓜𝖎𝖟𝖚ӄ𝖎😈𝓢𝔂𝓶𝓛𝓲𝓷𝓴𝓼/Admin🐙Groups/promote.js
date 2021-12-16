@@ -139,8 +139,10 @@ Reply/tag/enter contact number of the person to be promoted.`,
 
         if (𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
           var contact = reply.contextInfo.participant.split(`@`)[0];
+          console.log(contact);
         } else {
           var contact = await motor.getCleanedContact(arg, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎);
+          console.log(contact);
         }
 
         var admin = false;
