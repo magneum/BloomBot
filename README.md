@@ -5,9 +5,9 @@
 🔸[`ᴡʜᴀᴛꜱᴀᴘᴘ`](https://chat.whatsapp.com/KlMRYxCTte5H8TIIupbRVf) 🔸[`ᴅɪꜱᴄᴏʀᴅ`](https://discord.gg/xcFN6NDHEV)
 
 
-<p align="center">
-  ![](Mizuki.gif)
-</p>
+
+![𝐌𝐢𝐳𝐮𝐤𝐢™](Mizuki.gif)
+
 
 # ❓ 𝖂𝖍𝖞 𝕸𝖆𝖉𝖊 𝕿𝖍𝖎𝖘 𝕭𝖔𝖙?
 
