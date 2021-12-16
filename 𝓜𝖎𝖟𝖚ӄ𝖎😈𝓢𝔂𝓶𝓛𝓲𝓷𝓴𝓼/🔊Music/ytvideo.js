@@ -23,8 +23,8 @@ module.exports = {
       //⦿──────────────────────────────────────────────────────────────────⦿   © 𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
       const ᴍɪᴢᴜᴋɪɢɪᴛ = require(`simple-git`)();
       await ᴍɪᴢᴜᴋɪɢɪᴛ.fetch();
-      var 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓 = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
-      var 𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰 = 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓.substring(0, 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓.length - 15);
+      var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
+      var 𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰 = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
       var 𝙵𝚎𝚝𝚌𝚑𝙼𝚒𝚣𝚞𝚔𝚒𝙽𝚎𝚜𝚜 = await ᴍɪᴢᴜᴋɪɢɪᴛ.log([
         `KrakinzLab..origin/KrakinzLab`,
       ]);
@@ -55,7 +55,7 @@ module.exports = {
             {
               quoted: chat,
               contextInfo: {
-                mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓],
+                mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
               },
             }
           )
@@ -72,7 +72,7 @@ module.exports = {
               𝓚𝓻𝓪𝓴𝓲𝓷𝔃,
               chat,
               𝓜𝖎𝖟𝖚ӄ𝖎,
-              𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓,
+              ꜱᴇɴᴅᴇʀɪᴅ,
               𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰,
               𝓜𝖎𝖟𝖚ӄ𝖎.commandName,
               𝓜𝓮𝓮ʍօʀɛ
@@ -116,7 +116,7 @@ module.exports = {
                 mimetype: mime,
                 caption: text,
                 contextInfo: {
-                  mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓],
+                  mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
                 },
               })
               .then(() => {
@@ -167,7 +167,7 @@ You Can Get URL by using ${ᴋᴇɪ}yts <song-name>`,
         //⦿──────────────────────────────────────────────────────────────────⦿   © 𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
         if (!𝓜𝖎𝖟𝖚ӄ𝖎.isGroup) {
           const videos1 = FetchedLink1.videos.slice(0, 1);
-          const filename = `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/${now}_ytaudiosprivate_${nowbyk.toString()}${𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓}${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰}`;
+          const filename = `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/${now}_ytaudiosprivate_${nowbyk.toString()}${ꜱᴇɴᴅᴇʀɪᴅ}${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰}`;
           ytv(arg[0]).then(async (gotResp) => {
             const { dl_link, thumb, title, filesize } = gotResp;
             axios
@@ -184,7 +184,7 @@ You Can Get URL by using ${ᴋᴇɪ}yts <song-name>`,
                       {
                         quoted: chat,
                         contextInfo: {
-                          mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓],
+                          mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
                         },
                         mimetype: Mimetype.png,
                         content: `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
@@ -218,7 +218,7 @@ You Can Get URL by using ${ᴋᴇɪ}yts <song-name>`,
                     .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, Fetched, MessageType.text, {
                       quoted: chat,
                       contextInfo: {
-                        mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓],
+                        mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
                       },
                     })
                     .catch((ℓαвєяяσя) =>
@@ -237,7 +237,7 @@ You Can Get URL by using ${ᴋᴇɪ}yts <song-name>`,
 ✒️𝐀𝐮𝐭𝐡𝐨𝐫⤞ ${youfound.author.name}
 🔗𝐋𝐢𝐧𝐤⤞ ${youfound.url}
 📥𝐖𝐞𝐛-𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝⤞ https://www.youtubepp.com/watch?v=${id}`;
-                    YouFetchers(filename, 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓, dl_link, Fetched);
+                    YouFetchers(filename, ꜱᴇɴᴅᴇʀɪᴅ, dl_link, Fetched);
                   });
                   //⦿──────────────────────────────────────────────────────────────────⦿   © 𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
                 }
@@ -247,7 +247,7 @@ You Can Get URL by using ${ᴋᴇɪ}yts <song-name>`,
         //⦿──────────────────────────────────────────────────────────────────⦿   © 𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
         if (𝓜𝖎𝖟𝖚ӄ𝖎.isGroup) {
           const videos = FetchedLink.videos.slice(0, 1);
-          const filename = `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/${now}ytaudiosgroups_${nowbyk.toString()}${𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓}${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰}`;
+          const filename = `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/${now}ytaudiosgroups_${nowbyk.toString()}${ꜱᴇɴᴅᴇʀɪᴅ}${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰}`;
           ytv(arg[0]).then(async (gotResp) => {
             const { dl_link, thumb, title, filesize } = gotResp;
             axios
@@ -264,7 +264,7 @@ You Can Get URL by using ${ᴋᴇɪ}yts <song-name>`,
                       {
                         quoted: chat,
                         contextInfo: {
-                          mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓],
+                          mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
                         },
                         mimetype: Mimetype.png,
                         content: `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
@@ -298,7 +298,7 @@ You Can Get URL by using ${ᴋᴇɪ}yts <song-name>`,
                     .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, Fetched, MessageType.text, {
                       quoted: chat,
                       contextInfo: {
-                        mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓],
+                        mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
                       },
                     })
                     .catch((ℓαвєяяσя) =>
@@ -318,7 +318,7 @@ You Can Get URL by using ${ᴋᴇɪ}yts <song-name>`,
 ✒️𝐀𝐮𝐭𝐡𝐨𝐫⤞ ${youfound.author.name}
 🔗𝐋𝐢𝐧𝐤⤞ ${youfound.url}
 📥𝐖𝐞𝐛-𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝⤞ https://www.youtubepp.com/watch?v=${id}`;
-                    YouFetchers(filename, 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓, dl_link, Fetched);
+                    YouFetchers(filename, ꜱᴇɴᴅᴇʀɪᴅ, dl_link, Fetched);
                   });
                 }
               });

@@ -15,8 +15,8 @@ module.exports = {
       //⦿──────────────────────────────────────────────────────────────────⦿   © 𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
       const ᴍɪᴢᴜᴋɪɢɪᴛ = require(`simple-git`)();
       await ᴍɪᴢᴜᴋɪɢɪᴛ.fetch();
-      var 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓 = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
-      var 𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰 = 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓.substring(0, 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓.length - 15);
+      var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
+      var 𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰 = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
       var 𝙵𝚎𝚝𝚌𝚑𝙼𝚒𝚣𝚞𝚔𝚒𝙽𝚎𝚜𝚜 = await ᴍɪᴢᴜᴋɪɢɪᴛ.log([
         `KrakinzLab..origin/KrakinzLab`,
       ]);
@@ -47,7 +47,7 @@ module.exports = {
             {
               quoted: chat,
               contextInfo: {
-                mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓],
+                mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
               },
             }
           )
@@ -60,7 +60,7 @@ module.exports = {
             𝓚𝓻𝓪𝓴𝓲𝓷𝔃
               .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, toxic, MessageType.text, {
                 contextInfo: {
-                  mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓],
+                  mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
                 },
               })
               .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
@@ -70,7 +70,7 @@ module.exports = {
             𝓚𝓻𝓪𝓴𝓲𝓷𝔃
               .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, toxic, MessageType.text, {
                 contextInfo: {
-                  mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓],
+                  mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
                 },
               })
               .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
@@ -83,7 +83,7 @@ module.exports = {
             𝓚𝓻𝓪𝓴𝓲𝓷𝔃
               .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, toxic, MessageType.text, {
                 contextInfo: {
-                  mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓],
+                  mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
                 },
               })
               .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
@@ -96,7 +96,7 @@ module.exports = {
             𝓚𝓻𝓪𝓴𝓲𝓷𝔃
               .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, toxic, MessageType.text, {
                 contextInfo: {
-                  mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓],
+                  mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
                 },
               })
               .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));

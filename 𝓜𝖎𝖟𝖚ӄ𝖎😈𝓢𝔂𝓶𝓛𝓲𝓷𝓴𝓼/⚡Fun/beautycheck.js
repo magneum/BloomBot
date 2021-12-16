@@ -128,8 +128,8 @@ module.exports = {
       //⦿──────────────────────────────────────────────────────────────────⦿   © 𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
       const ᴍɪᴢᴜᴋɪɢɪᴛ = require(`simple-git`)();
       await ᴍɪᴢᴜᴋɪɢɪᴛ.fetch();
-      var 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓 = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
-      var 𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰 = 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓.substring(0, 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓.length - 15);
+      var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
+      var 𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰 = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
       var 𝙵𝚎𝚝𝚌𝚑𝙼𝚒𝚣𝚞𝚔𝚒𝙽𝚎𝚜𝚜 = await ᴍɪᴢᴜᴋɪɢɪᴛ.log([
         `KrakinzLab..origin/KrakinzLab`,
       ]);
@@ -207,7 +207,7 @@ module.exports = {
                 {
                   quoted: chat,
                   mimetype: Mimetype.png,
-                  contextInfo: { mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓] },
+                  contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
                   caption: `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
 
 𝗤𝘂𝗲𝘀𝘁𝗶𝗼𝗻: ʜᴏᴡ ʙᴇᴀᴜᴛʏꜰᴜʟʟ ɪꜱ *@${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰}*
@@ -222,8 +222,8 @@ module.exports = {
           var Receiver =
             chat.message.extendedTextMessage.contextInfo.participant;
           personreceived = Receiver.substring(0, Receiver.length - 15);
-          var 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓 = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
-          𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰 = 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓.substring(0, 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓.length - 15);
+          var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
+          𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰 = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
           const Much = can[Math.floor(Math.random() * can.length)];
           const width = 1280;
           const height = 720;
@@ -261,7 +261,7 @@ module.exports = {
                 {
                   quoted: chat,
                   mimetype: Mimetype.png,
-                  contextInfo: { mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓, Receiver] },
+                  contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ, Receiver] },
                   caption: `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
 
 𝗤𝘂𝗲𝘀𝘁𝗶𝗼𝗻: ʜᴏᴡ ʙᴇᴀᴜᴛʏꜰᴜʟʟ ɪꜱ *@${personreceived}*
@@ -276,8 +276,8 @@ module.exports = {
           var Receiver =
             chat.message.extendedTextMessage.contextInfo.participant;
           personreceived = Receiver.substring(0, Receiver.length - 15);
-          var 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓 = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
-          𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰 = 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓.substring(0, 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓.length - 15);
+          var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
+          𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰 = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
           const Much = can[Math.floor(Math.random() * can.length)];
           const width = 1280;
           const height = 720;
@@ -314,7 +314,7 @@ module.exports = {
                 {
                   quoted: chat,
                   mimetype: Mimetype.png,
-                  contextInfo: { mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓, Receiver] },
+                  contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ, Receiver] },
                   caption: `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
 
 𝗤𝘂𝗲𝘀𝘁𝗶𝗼𝗻: ʜᴏᴡ ʙᴇᴀᴜᴛʏꜰᴜʟʟ ɪꜱ *@${personreceived}*
@@ -363,7 +363,7 @@ Asked By? @${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰}
                 {
                   quoted: chat,
                   mimetype: Mimetype.png,
-                  contextInfo: { mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓] },
+                  contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
                   caption: `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
 
 𝗤𝘂𝗲𝘀𝘁𝗶𝗼𝗻: ʜᴏᴡ ʙᴇᴀᴜᴛʏꜰᴜʟʟ ɪꜱ *@${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰}*

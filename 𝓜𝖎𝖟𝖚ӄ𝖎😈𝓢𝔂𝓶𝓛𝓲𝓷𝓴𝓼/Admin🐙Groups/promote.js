@@ -19,8 +19,8 @@ For example-
       // ⦿──────────────────────────────────────────────────────────────────⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
       const ᴍɪᴢᴜᴋɪɢɪᴛ = require(`simple-git`)();
       await ᴍɪᴢᴜᴋɪɢɪᴛ.fetch();
-      var 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓 = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
-      var 𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰 = 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓.substring(0, 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓.length - 15);
+      var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
+      var 𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰 = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
       var 𝙵𝚎𝚝𝚌𝚑𝙼𝚒𝚣𝚞𝚔𝚒𝙽𝚎𝚜𝚜 = await ᴍɪᴢᴜᴋɪɢɪᴛ.log([
         `KrakinzLab..origin/KrakinzLab`,
       ]);
@@ -51,7 +51,7 @@ For example-
             {
               quoted: chat,
               contextInfo: {
-                mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓],
+                mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
               },
             }
           )
@@ -87,7 +87,7 @@ This command is only applicable in a group chat.`,
                 quoted: chat,
                 mimetype: Mimetype.png,
                 contextInfo: {
-                  mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓],
+                  mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
                 },
                 caption: `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
 
@@ -109,7 +109,7 @@ Sorry, dont have the permission to do so since I am not an admin.`,
               {
                 quoted: chat,
                 contextInfo: {
-                  mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓],
+                  mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
                 },
               }
             )
@@ -128,7 +128,7 @@ Reply/tag/enter contact number of the person to be promoted.`,
               {
                 quoted: chat,
                 contextInfo: {
-                  mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓],
+                  mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
                 },
               }
             )
@@ -165,7 +165,7 @@ MessageType.text,
 {
 quoted: chat,
 contextInfo: {
-mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓, contactmen],
+mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ, contactmen],
 },
 }
 )
@@ -182,7 +182,7 @@ MessageType.text,
 {
 quoted: chat,
 contextInfo: {
-mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓, contactmen],
+mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ, contactmen],
 },
 }
 )
@@ -205,7 +205,7 @@ MessageType.text,
 {
 quoted: chat,
 contextInfo: {
-mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓],
+mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
 },
 }
 )
@@ -225,7 +225,7 @@ MessageType.text,
 {
 quoted: chat,
 contextInfo: {
-mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓],
+mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
 },
 }
 )
@@ -261,7 +261,7 @@ MessageType.text,
 {
 quoted: chat,
 contextInfo: {
-mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓, contactmen],
+mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ, contactmen],
 },
 }
 )
@@ -278,7 +278,7 @@ MessageType.text,
 {
 quoted: chat,
 contextInfo: {
-mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓, contactmen],
+mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ, contactmen],
 },
 }
 )
@@ -301,7 +301,7 @@ MessageType.text,
 {
 quoted: chat,
 contextInfo: {
-mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓],
+mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
 },
 }
 )
@@ -321,7 +321,7 @@ MessageType.text,
 {
 quoted: chat,
 contextInfo: {
-mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓],
+mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
 },
 }
 )

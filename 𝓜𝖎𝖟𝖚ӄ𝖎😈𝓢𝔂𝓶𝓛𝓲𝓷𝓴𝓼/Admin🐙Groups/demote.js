@@ -19,8 +19,8 @@ For example-
       // ⦿──────────────────────────────────────────────────────────────────⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
       const ᴍɪᴢᴜᴋɪɢɪᴛ = require(`simple-git`)();
       await ᴍɪᴢᴜᴋɪɢɪᴛ.fetch();
-      var 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓 = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
-      var 𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰 = 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓.substring(0, 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓.length - 15);
+      var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
+      var 𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰 = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
       var 𝙵𝚎𝚝𝚌𝚑𝙼𝚒𝚣𝚞𝚔𝚒𝙽𝚎𝚜𝚜 = await ᴍɪᴢᴜᴋɪɢɪᴛ.log([
         `KrakinzLab..origin/KrakinzLab`,
       ]);
@@ -51,7 +51,7 @@ For example-
             {
               quoted: chat,
               contextInfo: {
-                mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓],
+                mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
               },
             }
           )
@@ -82,7 +82,7 @@ For example-
             {
               quoted: chat,
               contextInfo: {
-                mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓],
+                mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
               },
               mimetype: Mimetype.png,
               caption: `
@@ -101,7 +101,7 @@ For example-
             {
               quoted: chat,
               contextInfo: {
-                mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓],
+                mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
               },
             }
           )
@@ -118,7 +118,7 @@ For example-
             {
               quoted: chat,
               contextInfo: {
-                mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓],
+                mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
               },
             }
           )
@@ -159,7 +159,7 @@ ${contact} is the owner of the group`,
             {
               quoted: chat,
               contextInfo: {
-                mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓, contactmen],
+                mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ, contactmen],
               },
             }
           )
@@ -181,7 +181,7 @@ ${contact} is demoted from admin`,
               {
                 quoted: chat,
                 contextInfo: {
-                  mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓, contactmen],
+                  mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ, contactmen],
                 },
               }
             )
@@ -198,7 +198,7 @@ ${contact} was not an admin`,
               {
                 quoted: chat,
                 contextInfo: {
-                  mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓, contactmen],
+                  mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ, contactmen],
                 },
               }
             )
