@@ -1,9 +1,12 @@
 // ⦿──────────────────────────────────────────────────────────────────⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
-const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
+const {
+  MessageType,
+  Mimetype
+} = require(`@adiwajshing/baileys`);
 const ℓιєηт = require(`../../𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/catch`);
-const _𝔏𝔞𝔟_ = require(`../../𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/_𝔏𝔞𝔟_`);
+const _𝔏𝔞𝔟 _ = require(`../../𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/_𝔏𝔞𝔟_`);
 const motor = require(`../../𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/motor`);
-var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
+var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟 _.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 // ⦿──────────────────────────────────────────────────────────────────⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
 module.exports = {
@@ -13,7 +16,7 @@ module.exports = {
 2. YYXXXXXXXXXX ()
 For example-
 *${ᴋᴇɪ}promote 9861212121*`,
-  𝓜𝓮𝓮6ʍօʀɛ: `${ᴋᴇɪ}`,
+  𝓜𝓮𝓮6 ʍօʀɛ: `${ᴋᴇɪ}`,
   async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
     try {
       // ⦿──────────────────────────────────────────────────────────────────⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
@@ -27,28 +30,26 @@ For example-
       // ⦿──────────────────────────────────────────────────────────────────⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
       if (ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total != 0) {
         await ӄʀǟӄɨռʐ
-          .sendMessage(
-            𝓜𝖎𝖟𝖚ӄ𝖎.logGroup,
+          .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.logGroup,
             `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
 
 𝙐𝙥𝙙𝙖𝙩𝙚🤖𝙋𝙚𝙣𝙙𝙞𝙣𝙜
 *•𝘗𝘭𝘦𝘢𝘴𝘦 𝘜𝘱𝘥𝘢𝘵𝘦 𝘜𝘴𝘪𝘯𝘨 *${ᴋᴇɪ}update* 𝘰𝘳 𝘳𝘦𝘥𝘦𝘱𝘭𝘰𝘺 𝐌𝐢𝐳𝐮𝐤𝐢™!`,
-            MessageType.text,
-            { quoted: chat }
+            MessageType.text, {
+              quoted: chat
+            }
           )
           .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
       }
       // ⦿──────────────────────────────────────────────────────────────────⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
       if (𝓜𝖎𝖟𝖚ӄ𝖎.chatId === `120363025343298860@g.us` && !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderSUDO) {
         await ӄʀǟӄɨռʐ
-          .sendMessage(
-            𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+          .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
             `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
 
 𝗔𝗵𝗺 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 シ︎𝐆𝐫𝐨𝐮𝐩👓${_𝔏𝔞𝔟_.HASH}`,
-            MessageType.text,
-            {
+            MessageType.text, {
               quoted: chat,
               contextInfo: {
                 mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
@@ -62,14 +63,14 @@ For example-
       try {
         if (!𝓜𝖎𝖟𝖚ӄ𝖎.isGroup) {
           ӄʀǟӄɨռʐ
-            .sendMessage(
-              𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+            .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
 
 𝗔𝗵𝗺 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 This command is only applicable in a group chat.`,
-              MessageType.text,
-              { quoted: chat }
+              MessageType.text, {
+                quoted: chat
+              }
             )
             .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
           return;
@@ -77,13 +78,10 @@ This command is only applicable in a group chat.`,
         // ⦿──────────────────────────────────────────────────────────────────⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
         if (𝓜𝖎𝖟𝖚ӄ𝖎.isGroup && !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderGroupAdmin) {
           return await ӄʀǟӄɨռʐ
-            .sendMessage(
-              𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              {
-                url: _𝔏𝔞𝔟_.ERROR,
+            .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, {
+                url: _𝔏𝔞𝔟 _.ERROR,
               },
-              MessageType.image,
-              {
+              MessageType.image, {
                 quoted: chat,
                 mimetype: Mimetype.png,
                 contextInfo: {
@@ -99,14 +97,12 @@ This command is only applicable in a group chat.`,
         // ⦿──────────────────────────────────────────────────────────────────⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
         if (!𝓜𝖎𝖟𝖚ӄ𝖎.isBotGroupAdmin) {
           ӄʀǟӄɨռʐ
-            .sendMessage(
-              𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+            .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
 
 𝗔𝗵𝗺 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 Sorry, dont have the permission to do so since I am not an admin.`,
-              MessageType.text,
-              {
+              MessageType.text, {
                 quoted: chat,
                 contextInfo: {
                   mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
@@ -116,16 +112,15 @@ Sorry, dont have the permission to do so since I am not an admin.`,
             .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
           return;
         }
+        // ⦿──────────────────────────────────────────────────────────────────⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
         if (!𝓜𝖎𝖟𝖚ӄ𝖎.isReply && typeof arg[0] == `undefined`) {
           ӄʀǟӄɨռʐ
-            .sendMessage(
-              𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+            .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
 
 𝗔𝗵𝗺 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 Reply/tag/enter contact number of the person to be promoted.`,
-              MessageType.text,
-              {
+              MessageType.text, {
                 quoted: chat,
                 contextInfo: {
                   mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
@@ -135,7 +130,7 @@ Reply/tag/enter contact number of the person to be promoted.`,
             .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
           return;
         }
-
+        // ⦿──────────────────────────────────────────────────────────────────⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
         if (𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
           const reply = chat.message.extendedTextMessage;
           var contact = reply.contextInfo.participant.split(`@`)[0];
@@ -149,194 +144,186 @@ Reply/tag/enter contact number of the person to be promoted.`,
               }
             }
           }
+          // ⦿──────────────────────────────────────────────────────────────────⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
           if (CheckMember) {
             if (!admin == true) {
               const arr = [contact + `@s.whatsapp.net`];
               ӄʀǟӄɨռʐ.groupMakeAdmin(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, arr);
               ӄʀǟӄɨռʐ
-                .sendMessage(
-                  𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
                   `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
 
 𝗔𝗵𝗺 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 ${reply.contextInfo.participant.split(`@`)[0];
-            } is promoted to admin`,
-MessageType.text,
-{
-quoted: chat,
-contextInfo: {
-mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ, contactmen],
-},
-}
-)
-.catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
-} else {
-ӄʀǟӄɨռʐ
-.sendMessage(
-𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-`_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
+} is promoted to admin`,
+                  MessageType.text, {
+                    quoted: chat,
+                    contextInfo: {
+                      mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ, contactmen],
+                    },
+                  }
+                )
+                .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
+              // ⦿──────────────────────────────────────────────────────────────────⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
+            } else {
+              ӄʀǟӄɨռʐ
+                .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                  `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
 
-            𝗔𝗵𝗺 •@${ ꜱᴇɴᴅᴇʀᴄᴏɴꜰ },
+𝗔𝗵𝗺 •@${ ꜱᴇɴᴅᴇʀᴄᴏɴꜰ },
 ${ reply.contextInfo.participant.split(`@`)[0]; } is already an admin`,
-MessageType.text,
-{
-quoted: chat,
-contextInfo: {
-mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ, contactmen],
-},
-}
-)
-.catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
-}
-}
-if (!CheckMember) {
-if (contact === undefined) {
-return;
-}
+                  MessageType.text, {
+                    quoted: chat,
+                    contextInfo: {
+                      mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ, contactmen],
+                    },
+                  }
+                )
+                .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
+            }
+          }
+          // ⦿──────────────────────────────────────────────────────────────────⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
+          if (!CheckMember) {
+            if (contact === undefined) {
+              return;
+            }
 
-ӄʀǟӄɨռʐ
-.sendMessage(
-𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-`_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
+            ӄʀǟӄɨռʐ
+              .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
 
-            𝗔𝗵𝗺 •@${ ꜱᴇɴᴅᴇʀᴄᴏɴꜰ },
+𝗔𝗵𝗺 •@${ ꜱᴇɴᴅᴇʀᴄᴏɴꜰ },
 Person is not in the group.`,
-MessageType.text,
-{
-quoted: chat,
-contextInfo: {
-mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
-},
-}
-)
-.catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
-return;
-}
-} catch (ℓαвєяяσя) {
-if (ℓαвєяяσя === `NumberInvalid`) {
-ӄʀǟӄɨռʐ
-.sendMessage(
-𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-`
+                MessageType.text, {
+                  quoted: chat,
+                  contextInfo: {
+                    mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
+                  },
+                }
+              )
+              .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
+            return;
+          }
+          // ⦿──────────────────────────────────────────────────────────────────⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
+        } catch (ℓαвєяяσя) {
+          if (ℓαвєяяσя === `NumberInvalid`) {
+            ӄʀǟӄɨռʐ
+              .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                `
 
-            𝗔𝗵𝗺 •@${ ꜱᴇɴᴅᴇʀᴄᴏɴꜰ },
+𝗔𝗵𝗺 •@${ ꜱᴇɴᴅᴇʀᴄᴏɴꜰ },
 The number you're trying to add isn't available on WhatsApp or  ${ arg[0] } is Invalid number`,
-MessageType.text,
-{
-quoted: chat,
-contextInfo: {
-mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
-},
-}
-)
-.catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
-} else {
-await ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
-}
-}
-} else {
-var contact = await motor.getCleanedContact(arg, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
-var contactmen = contact;
-var admin = false;
-var CheckMember = await motor.isMember(contact, 𝓜𝖎𝖟𝖚ӄ𝖎.groupMembers);
-for(const index in 𝓜𝖎𝖟𝖚ӄ𝖎.groupMembers) {
-if (contact == 𝓜𝖎𝖟𝖚ӄ𝖎.groupMembers[index].jid.split(`@`)[0]) {
-if (𝓜𝖎𝖟𝖚ӄ𝖎.groupMembers[index].isAdmin) {
-admin = true;
-}
-}
-}
-if (CheckMember) {
-if (!admin == true) {
-const arr = [contact + `@s.whatsapp.net`];
-ӄʀǟӄɨռʐ.groupMakeAdmin(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, arr);
-ӄʀǟӄɨռʐ
-.sendMessage(
-𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-`_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
+                MessageType.text, {
+                  quoted: chat,
+                  contextInfo: {
+                    mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
+                  },
+                }
+              )
+              .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
+          } else {
+            await ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
+          }
+        }
+        // ⦿──────────────────────────────────────────────────────────────────⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
+      } else {
+        var contact = await motor.getCleanedContact(arg, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
+        var contactmen = contact;
+        var admin = false;
+        var CheckMember = await motor.isMember(contact, 𝓜𝖎𝖟𝖚ӄ𝖎.groupMembers);
+        for (const index in 𝓜𝖎𝖟𝖚ӄ𝖎.groupMembers) {
+          if (contact == 𝓜𝖎𝖟𝖚ӄ𝖎.groupMembers[index].jid.split(`@`)[0]) {
+            if (𝓜𝖎𝖟𝖚ӄ𝖎.groupMembers[index].isAdmin) {
+              admin = true;
+            }
+          }
+        }
+        // ⦿──────────────────────────────────────────────────────────────────⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
+        if (CheckMember) {
+          if (!admin == true) {
+            const arr = [contact + `@s.whatsapp.net`];
+            ӄʀǟӄɨռʐ.groupMakeAdmin(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, arr);
+            ӄʀǟӄɨռʐ
+              .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
 
-            𝗔𝗵𝗺 •@${ ꜱᴇɴᴅᴇʀᴄᴏɴꜰ },
+𝗔𝗵𝗺 •@${ ꜱᴇɴᴅᴇʀᴄᴏɴꜰ },
 ${ await motor.getCleanedContact(arg, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎) } is promoted to admin`,
-MessageType.text,
-{
-quoted: chat,
-contextInfo: {
-mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ, contactmen],
-},
-}
-)
-.catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
-} else {
-ӄʀǟӄɨռʐ
-.sendMessage(
-𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-`_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
+                MessageType.text, {
+                  quoted: chat,
+                  contextInfo: {
+                    mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ, contactmen],
+                  },
+                }
+              )
+              .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
+            // ⦿──────────────────────────────────────────────────────────────────⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
+          } else {
+            ӄʀǟӄɨռʐ
+              .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
 
-            𝗔𝗵𝗺 •@${ ꜱᴇɴᴅᴇʀᴄᴏɴꜰ },
+𝗔𝗵𝗺 •@${ ꜱᴇɴᴅᴇʀᴄᴏɴꜰ },
 ${ await motor.getCleanedContact(arg, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎) } is already an admin`,
-MessageType.text,
-{
-quoted: chat,
-contextInfo: {
-mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ, contactmen],
-},
-}
-)
-.catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
-}
-}
-if (!CheckMember) {
-if (contact === undefined) {
-return;
-}
+                MessageType.text, {
+                  quoted: chat,
+                  contextInfo: {
+                    mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ, contactmen],
+                  },
+                }
+              )
+              .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
+          }
+        }
+        // ⦿──────────────────────────────────────────────────────────────────⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
+        if (!CheckMember) {
+          if (contact === undefined) {
+            return;
+          }
 
-ӄʀǟӄɨռʐ
-.sendMessage(
-𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-`_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
+          ӄʀǟӄɨռʐ
+            .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+              `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
 
-            𝗔𝗵𝗺 •@${ ꜱᴇɴᴅᴇʀᴄᴏɴꜰ },
+𝗔𝗵𝗺 •@${ ꜱᴇɴᴅᴇʀᴄᴏɴꜰ },
 Person is not in the group.`,
-MessageType.text,
-{
-quoted: chat,
-contextInfo: {
-mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
-},
-}
-)
-.catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
-return;
-}
-} catch (ℓαвєяяσя) {
-if (ℓαвєяяσя === `NumberInvalid`) {
-ӄʀǟӄɨռʐ
-.sendMessage(
-𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-`
+              MessageType.text, {
+                quoted: chat,
+                contextInfo: {
+                  mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
+                },
+              }
+            )
+            .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
+          return;
+        }
+        // ⦿──────────────────────────────────────────────────────────────────⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
+      } catch (ℓαвєяяσя) {
+        if (ℓαвєяяσя === `NumberInvalid`) {
+          ӄʀǟӄɨռʐ
+            .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+              `
 
-            𝗔𝗵𝗺 •@${ ꜱᴇɴᴅᴇʀᴄᴏɴꜰ },
+𝗔𝗵𝗺 •@${ ꜱᴇɴᴅᴇʀᴄᴏɴꜰ },
 The number you're trying to add isn't available on WhatsApp or  ${ arg[0] } is Invalid number`,
-MessageType.text,
-{
-quoted: chat,
-contextInfo: {
-mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
-},
-}
-)
-.catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
-} else {
-await ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
-}
-}
-}
-
-
-} catch (ℓαвєяяσя) {
-ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
-console.log(ℓαвєяяσя);
-}
+              MessageType.text, {
+                quoted: chat,
+                contextInfo: {
+                  mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
+                },
+              }
+            )
+            .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
+        } else {
+          await ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
+        }
+      }
+    }
+    // ⦿──────────────────────────────────────────────────────────────────⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
+  } catch (ℓαвєяяσя) {
+    ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
+    console.log(ℓαвєяяσя);
+  }
 },
 };
 // ⦿──────────────────────────────────────────────────────────────────⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
