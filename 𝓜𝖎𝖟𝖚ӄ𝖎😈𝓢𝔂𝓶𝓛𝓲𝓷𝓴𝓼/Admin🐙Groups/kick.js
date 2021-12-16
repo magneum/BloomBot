@@ -5,6 +5,7 @@ const _𝔏𝔞𝔟_ = require(`../../𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 const vers = require(`../../package.json`);
+const anime = require(`anime-actions`);
 // ⦿──────────────────────────────────────────────────────────────────⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿──────────────────────────────────────────────────────────────────⦿`;
 module.exports = {
   name: `kick`,
@@ -108,7 +109,8 @@ module.exports = {
           ӄʀǟӄɨռʐ
             .sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              `Why man, why?! Why would you use my powers to kick myself from the group?!🥺\n*Request Rejected.* 😤`,
+              `*Request Rejected.* 😤
+Why would you use my powers to kick myself from the group?!`,
               MessageType.text,
               { quoted: chat }
             )
@@ -142,13 +144,27 @@ module.exports = {
               ℓιєηт.catch((ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
             });
         }
+        // ⦿──────────────────────────────────────────────────────────────────⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿──────────────────────────────────────────────────────────────────⦿`;
         try {
           if (PersonToRemove) {
-            ӄʀǟӄɨռʐ
-              .groupRemove(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, [PersonToRemove])
-              .catch((ℓαвєяяσя) => {
-                ℓιєηт.catch((ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
-              });
+            await ӄʀǟӄɨռʐ
+              .sendMessage(
+                𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                {
+                  url: await anime.kick(),
+                },
+                MessageType.image,
+                {
+                  quoted: chat,
+                  mimetype: Mimetype.jpeg || Mimetype.png,
+                  contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ, Receiver] },
+                  caption: `*(c)Mïzµkï* _${vers.vers}_
+
+*⚡@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}* kicked *@${personreceived}* outta the group!`,
+                }
+              )
+              .then(await ӄʀǟӄɨռʐ.groupRemove(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, [PersonToRemove]))
+              .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
             return;
           }
         } catch (ℓαвєяяσя) {
@@ -156,6 +172,7 @@ module.exports = {
         }
         return;
       }
+      // ⦿──────────────────────────────────────────────────────────────────⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿──────────────────────────────────────────────────────────────────⦿`;
       if (!arg[0]) {
         ӄʀǟӄɨռʐ
           .sendMessage(
@@ -198,11 +215,28 @@ module.exports = {
         }
 
         if (!(number === owner)) {
-          ӄʀǟӄɨռʐ
-            .groupRemove(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, [number + `@s.whatsapp.net`])
-            .catch((ℓαвєяяσя) => {
-              ℓιєηт.catch((ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
-            });
+          await ӄʀǟӄɨռʐ
+            .sendMessage(
+              𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+              {
+                url: await anime.kick(),
+              },
+              MessageType.image,
+              {
+                quoted: chat,
+                mimetype: Mimetype.jpeg || Mimetype.png,
+                contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ, Receiver] },
+                caption: `*(c)Mïzµkï* _${vers.vers}_
+
+*⚡@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}* kicked *@${personreceived}* outta the group!`,
+              }
+            )
+            .then(
+              await ӄʀǟӄɨռʐ.groupRemove(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, [
+                number + `@s.whatsapp.net`,
+              ])
+            )
+            .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
           return;
         } else {
           ӄʀǟӄɨռʐ

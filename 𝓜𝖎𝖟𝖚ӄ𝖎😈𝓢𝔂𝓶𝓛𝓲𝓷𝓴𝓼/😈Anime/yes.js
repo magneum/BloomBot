@@ -69,7 +69,7 @@ module.exports = {
             MessageType.image,
             {
               quoted: chat,
-              mimetype: Mimetype.jpeg || Mimetype.png || Mimetype.jpeg,
+              mimetype: Mimetype.jpeg || Mimetype.png,
               contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ, Receiver] },
               caption: `*(c)Mïzµkï* _${vers.vers}_
 
@@ -88,7 +88,7 @@ module.exports = {
             },
             MessageType.image,
             {
-              mimetype: Mimetype.jpeg || Mimetype.png || Mimetype.jpeg,
+              mimetype: Mimetype.jpeg || Mimetype.png,
               contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
               caption: `*(c)Mïzµkï* _${vers.vers}_
 
@@ -108,7 +108,7 @@ module.exports = {
             MessageType.image,
             {
               quoted: chat,
-              mimetype: Mimetype.jpeg || Mimetype.png || Mimetype.jpeg,
+              mimetype: Mimetype.jpeg || Mimetype.png,
               caption: `*(c)Mïzµkï* _${vers.vers}_
 
 *I agree*`,
