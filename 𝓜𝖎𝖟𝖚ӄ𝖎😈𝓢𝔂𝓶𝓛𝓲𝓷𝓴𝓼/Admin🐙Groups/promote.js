@@ -91,7 +91,7 @@ This command is only applicable for group chats.`,
               contextInfo: {
                 mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
               },
-              mimetype: Mimetype.png,
+              mimetype: Mimetype.png || Mimetype.jpeg,
               caption: `
 ⚠️𝗘𝗿𝗿𝗼𝗿: @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}, *ʏᴏᴜ ᴅᴏɴ'ᴛ ꜱᴇᴇᴍ ᴛᴏ ʙᴇ ᴀᴅᴍɪɴ..*`,
             }

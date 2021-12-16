@@ -168,7 +168,7 @@ async function 𝓜𝓮𝓮6s() {
         },
         MessageType.image,
         {
-          mimetype: Mimetype.png,
+          mimetype: Mimetype.png || Mimetype.jpeg,
           caption: `*© Mïzµkï* _${vers.vers}_
 
 シ︎💡ᴘʀᴇꜰɪx: ${ᴋᴇɪ}
@@ -314,13 +314,17 @@ ${update.desc}`,
         .catch((ℓαвєяяσя) => console.log(ℓαвєяяσя));
     }
     if (update.action === `add` && !MemNum.includes(ӄʀǟӄɨռʐ.user.jid)) {
+      var enable = await ɠɠ𝓜𝖎𝖟𝖚ӄ𝖎.checkSettings(GroupID, `setwelcome`);
+      if (enable === false || enable === `OFF`) {
+        return;
+      }
       var Fetched = await ɠɠ𝓜𝖎𝖟𝖚ӄ𝖎.getMessage(GroupID, `setwelcome`);
       try {
         𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄʀǟӄɨռʐ.getProfilePicture(
           `${MemNum.split(`@`)[0]}@c.us`
         );
       } catch {
-        𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = `https://i.postimg.cc/bJmWSkFL/depositphotos-39258143-stock-illustration-businessman-avatar-profile-picture.jpg`;
+        𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = `https://i.postimg.cc/3wfrmmpB/NoPP.jpg`;
       }
       download(
         𝕻𝕻𝖑𝖊𝖙𝖊𝖗,
@@ -340,7 +344,7 @@ ${update.desc}`,
               },
               MessageType.image,
               {
-                mimetype: Mimetype.png,
+                mimetype: Mimetype.png || Mimetype.jpeg,
                 contextInfo: {
                   mentionedJid: [MemNum],
                 },
@@ -359,93 +363,19 @@ ${Fetched.message}`,
         }
       );
       return;
-      //         var enable = await ɠɠ𝓜𝖎𝖟𝖚ӄ𝖎.checkSettings(GroupID, `setwelcome`);
-      //         if (enable === false || enable === `OFF`) {
-      //           return;
-      //         }
-      //         console.log(
-      //           `=================😈    |  ɢʀᴏᴜᴘ ᴜᴘᴅᴀᴛᴇ  |    😈=================`
-      //         );
-      //         var Fetched = await ɠɠ𝓜𝖎𝖟𝖚ӄ𝖎.getMessage(GroupID, `setwelcome`);
-      //         try {
-      //           𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄʀǟӄɨռʐ.getProfilePicture(
-      //             `${MemNum.split(`@`)[0]}@c.us`
-      //           );
-      //         } catch {
-      //           𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = `https://i.postimg.cc/bJmWSkFL/depositphotos-39258143-stock-illustration-businessman-avatar-profile-picture.jpg`;
-      //         }
-      //         download(
-      //           𝕻𝕻𝖑𝖊𝖙𝖊𝖗,
-      //           {
-      //             directory: `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/`,
-      //             filename: `𝕻𝕻𝖑𝖊𝖙𝖊𝖗.jpg`,
-      //           },
-      //           async function (ℓαвєяяσя) {
-      //             if (ℓαвєяяσя) throw ℓαвєяяσя;
-      //             const weltext = ᴛᴡᴇʟ[Math.floor(Math.random() * ᴛᴡᴇʟ.length)];
-      //             personcum = MemNum.substring(0, MemNum.length - 15);
-      //             let content = fs.readFileSync(`./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/𝕻𝕻𝖑𝖊𝖙𝖊𝖗.jpg`);
-      //             const media = await ӄʀǟӄɨռʐ.prepareMessage(
-      //               GroupID,
-      //               content,
-      //               MessageType.image
-      //             );
-      //             return await ӄʀǟӄɨռʐ
-      //               .sendMessage(
-      //                 GroupID,
-      //                 {
-      //                   contentText: `@${personcum}
-      // ${weltext}
-      // ┌───────⭓
-      // │⬘𝗕𝗶𝗼: ${GroupMemBio.status}
-      // │⬘𝗠𝗲𝗺𝗯𝗲𝗿𝘀: ${GroupMemG}
-      // │⬘𝗚𝗿𝗼𝘂𝗽: ${GroupMemData.subject}
-      // └───────────⭓
-
-      // ${Fetched.message}`,
-      //                   footerText: `*© Mïzµkï* _${vers.vers}_`,
-      //                   buttons: [
-      //                     {
-      //                       buttonId: `${ᴋᴇɪ}help`,
-      //                       buttonText: { displayText: `${ᴋᴇɪ}help` },
-      //                       type: 1,
-      //                     },
-      //                     {
-      //                       buttonId: `${ᴋᴇɪ}mizuki`,
-      //                       buttonText: { displayText: `${ᴋᴇɪ}mizuki` },
-      //                       type: 1,
-      //                     },
-      //                   ],
-      //                   headerType: 4,
-      //                   imageMessage: media.message.imageMessage,
-      //                 },
-      //                 MessageType.buttonsMessage,
-      //                 {
-      //                   contextInfo: {
-      //                     mentionedJid: [MemNum],
-      //                   },
-      //                 }
-      //               )
-      //               .catch((ℓαвєяяσя) => console.log(ℓαвєяяσя));
-      //           }
-      //         );
     }
     if (update.action === `remove`) {
       var enable = await ɠɠ𝓜𝖎𝖟𝖚ӄ𝖎.checkSettings(GroupID, `setgoodbye`);
-      if (enable === false || enable === `OFF`) {
-        return;
-      }
-      var enable = await ɠɠ𝓜𝖎𝖟𝖚ӄ𝖎.checkSettings(GroupID, `setgoodbye`);
+      var ꜰᴇᴛᴄʜᴇᴅʙʏᴇ = await ɠɠ𝓜𝖎𝖟𝖚ӄ𝖎.getMessage(GroupID, `setgoodbye`);
       if (enable === false || enable === `OFF`) {
         return;
       } else {
-        var ꜰᴇᴛᴄʜᴇᴅʙʏᴇ = await ɠɠ𝓜𝖎𝖟𝖚ӄ𝖎.getMessage(GroupID, `setgoodbye`);
         try {
           𝕸𝖊𝖊𝕷𝖊𝖋𝖙𝖊𝖗 = await ӄʀǟӄɨռʐ.getProfilePicture(
             `${MemNum.split(`@`)[0]}@c.us`
           );
         } catch {
-          𝕸𝖊𝖊𝕷𝖊𝖋𝖙𝖊𝖗 = `https://i.postimg.cc/bJmWSkFL/depositphotos-39258143-stock-illustration-businessman-avatar-profile-picture.jpg`;
+          𝕸𝖊𝖊𝕷𝖊𝖋𝖙𝖊𝖗 = `https://i.postimg.cc/3wfrmmpB/NoPP.jpg`;
         }
         download(
           𝕸𝖊𝖊𝕷𝖊𝖋𝖙𝖊𝖗,
@@ -465,7 +395,7 @@ ${Fetched.message}`,
                 },
                 MessageType.image,
                 {
-                  mimetype: Mimetype.png,
+                  mimetype: Mimetype.png || Mimetype.jpeg,
                   contextInfo: {
                     mentionedJid: [MemNum],
                   },
@@ -482,7 +412,7 @@ ${Fetched.message}`,
 ${ꜰᴇᴛᴄʜᴇᴅʙʏᴇ.message}`,
                 }
               )
-              .catch((ℓαвєяяσя) => console.log(ℓαвєяяσя));
+              .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
           }
         );
         return;

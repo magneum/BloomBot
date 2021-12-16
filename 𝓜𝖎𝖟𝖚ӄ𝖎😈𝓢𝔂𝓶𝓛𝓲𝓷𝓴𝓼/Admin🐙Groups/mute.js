@@ -71,7 +71,7 @@ will change chat permissions to admin-only for 15 minutes.`,
               contextInfo: {
                 mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
               },
-              mimetype: Mimetype.png,
+              mimetype: Mimetype.png || Mimetype.jpeg,
               caption: `
 ⚠️𝗘𝗿𝗿𝗼𝗿: @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}, *ʏᴏᴜ ᴅᴏɴ'ᴛ ꜱᴇᴇᴍ ᴛᴏ ʙᴇ ᴀᴅᴍɪɴ..*`,
             }

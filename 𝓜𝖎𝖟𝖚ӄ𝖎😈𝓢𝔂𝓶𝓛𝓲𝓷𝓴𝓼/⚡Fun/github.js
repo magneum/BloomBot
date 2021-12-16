@@ -133,7 +133,7 @@ or replying  *${ᴋᴇɪ}github*`,
             MessageType.image,
             {
               quoted: chat,
-              mimetype: Mimetype.png,
+              mimetype: Mimetype.png || Mimetype.jpeg,
               caption: caption,
               thumbnail: null,
             }

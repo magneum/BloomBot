@@ -93,7 +93,7 @@ Asked By? @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ} (admin)`,
                 contextInfo: {
                   mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
                 },
-                mimetype: Mimetype.png,
+                mimetype: Mimetype.png || Mimetype.jpeg,
                 caption: `
 ⚠️𝗘𝗿𝗿𝗼𝗿: @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}, *ʏᴏᴜ ᴅᴏɴ'ᴛ ꜱᴇᴇᴍ ᴛᴏ ʙᴇ ᴀᴅᴍɪɴ..*`,
               }

@@ -181,7 +181,7 @@ many many more!
               },
               MessageType.image,
               {
-                mimetype: Mimetype.png,
+                mimetype: Mimetype.png || Mimetype.jpeg,
                 contextInfo: {
                   mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
                 },
@@ -214,7 +214,7 @@ ${MeeHelper}‍`,
               },
               MessageType.image,
               {
-                mimetype: Mimetype.png,
+                mimetype: Mimetype.png || Mimetype.jpeg,
                 caption: 𝓜𝖎𝖟𝖚ӄ𝖎ʍօ,
               }
             )

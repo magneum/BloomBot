@@ -80,7 +80,7 @@ module.exports = {
               MessageType.image,
               {
                 quoted: chat,
-                mimetype: Mimetype.png,
+                mimetype: Mimetype.png || Mimetype.jpeg,
                 caption:
                   `*Temperature:* {tempInC} °C | {tempInF} °F\n*Min Temp:* {minTempInC} °C | {minTempInF} °F\n*Max Temp:* {maxTempInC} °C | {maxTempInF} °F\n*Humidity:* {humidity}%\n*Wind:* {windSpeedInkmph} kmph | {windSpeedInmph} mph , {degree}°\n*Sunrise:* {sunriseTime}\n*Sunset:* {sunsetTime}\n\n\n*{weatherDescription}*\n{cityName} , {country}\n{dateAndTime}`.format(
                     weatherDataVariables

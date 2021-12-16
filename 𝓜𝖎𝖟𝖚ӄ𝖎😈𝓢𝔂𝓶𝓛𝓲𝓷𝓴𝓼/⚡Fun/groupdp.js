@@ -65,7 +65,7 @@ module.exports = {
             MessageType.image,
             {
               quoted: chat,
-              mimetype: Mimetype.png,
+              mimetype: Mimetype.png || Mimetype.jpeg,
               caption: `Here is the display image. Procured by 𝓜𝖎𝖟𝖚ӄ𝖎.`,
               thumbnail: null,
             }

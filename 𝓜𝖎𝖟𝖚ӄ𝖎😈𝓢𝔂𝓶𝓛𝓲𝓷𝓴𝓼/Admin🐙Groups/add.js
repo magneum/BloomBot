@@ -71,7 +71,7 @@ ${ᴋᴇɪ}add 910000000000`,
                 contextInfo: {
                   mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
                 },
-                mimetype: Mimetype.png,
+                mimetype: Mimetype.png || Mimetype.jpeg,
                 caption: `
 ⚠️𝗘𝗿𝗿𝗼𝗿: @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}, *ʏᴏᴜ ᴅᴏɴ'ᴛ ꜱᴇᴇᴍ ᴛᴏ ʙᴇ ᴀᴅᴍɪɴ..*`,
               }

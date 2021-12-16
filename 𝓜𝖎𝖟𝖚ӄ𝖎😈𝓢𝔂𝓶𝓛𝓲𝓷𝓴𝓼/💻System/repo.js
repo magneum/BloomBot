@@ -66,7 +66,7 @@ module.exports = {
             },
             MessageType.image,
             {
-              mimetype: Mimetype.png,
+              mimetype: Mimetype.png || Mimetype.jpeg,
               contextInfo: {
                 mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
               },

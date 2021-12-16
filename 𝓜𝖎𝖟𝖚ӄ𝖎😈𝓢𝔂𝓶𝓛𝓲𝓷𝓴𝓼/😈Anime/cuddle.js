@@ -71,7 +71,7 @@ module.exports = {
               MessageType.image,
               {
                 quoted: chat,
-                mimetype: Mimetype.png,
+                mimetype: Mimetype.png || Mimetype.jpeg,
                 caption: `Seems Like No Image Was Found.\nPlease Try Again Later!`,
               }
             )

@@ -224,7 +224,7 @@ Do note that theme names are  *case sensitive*${ᴋᴇɪ}`,
           await ӄʀǟӄɨռʐ
             .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, output, MessageType.image, {
               quoted: chat,
-              mimetype: Mimetype.png,
+              mimetype: Mimetype.png || Mimetype.jpeg,
               caption: `*☢️𝓜𝓮𝓮6*\n\n
 *<< Here's your carbon image! >>*
 Colour Scheme: {}`.format(themeInput),

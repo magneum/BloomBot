@@ -187,7 +187,7 @@ You Can Get URL by using ${ᴋᴇɪ}yts <song-name>`,
                         contextInfo: {
                           mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
                         },
-                        mimetype: Mimetype.png,
+                        mimetype: Mimetype.png || Mimetype.jpeg,
                         content: `*© Mïzµkï* _${vers.vers}_
 
 🎥𝗔𝘂𝗱𝗶𝗼
@@ -269,7 +269,7 @@ You Can Get URL by using ${ᴋᴇɪ}yts <song-name>`,
                         contextInfo: {
                           mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
                         },
-                        mimetype: Mimetype.png,
+                        mimetype: Mimetype.png || Mimetype.jpeg,
                         content: `*© Mïzµkï* _${vers.vers}_
 
 🎥𝗔𝘂𝗱𝗶𝗼
