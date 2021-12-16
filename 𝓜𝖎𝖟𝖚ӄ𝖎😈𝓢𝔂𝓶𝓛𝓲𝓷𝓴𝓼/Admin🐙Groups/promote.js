@@ -17,11 +17,11 @@ For example-
   async handle(𝓚𝓻𝓪𝓴𝓲𝓷𝔃, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
     try {
       // ⦿──────────────────────────────────────────────────────────────────⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
-      const 𝓜𝖎𝖟𝖚ӄ𝖎𝔊𝔦𝔱 = require(`simple-git`)();
-      await 𝓜𝖎𝖟𝖚ӄ𝖎𝔊𝔦𝔱.fetch();
+      const ᴍɪᴢᴜᴋɪɢɪᴛ = require(`simple-git`)();
+      await ᴍɪᴢᴜᴋɪɢɪᴛ.fetch();
       var 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓 = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
       var 𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰 = 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓.substring(0, 𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓.length - 15);
-      var 𝙵𝚎𝚝𝚌𝚑𝙼𝚒𝚣𝚞𝚔𝚒𝙽𝚎𝚜𝚜 = await 𝓜𝖎𝖟𝖚ӄ𝖎𝔊𝔦𝔱.log([
+      var 𝙵𝚎𝚝𝚌𝚑𝙼𝚒𝚣𝚞𝚔𝚒𝙽𝚎𝚜𝚜 = await ᴍɪᴢᴜᴋɪɢɪᴛ.log([
         `KrakinzLab..origin/KrakinzLab`,
       ]);
       // ⦿──────────────────────────────────────────────────────────────────⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
@@ -102,7 +102,7 @@ This command is only applicable in a group chat.`,
             .sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
-              
+
 𝗔𝗵𝗺 •@${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰},
 Sorry, dont have the permission to do so since I am not an admin.`,
               MessageType.text,
@@ -135,114 +135,208 @@ Reply/tag/enter contact number of the person to be promoted.`,
             .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
           return;
         }
-        const reply = chat.message.extendedTextMessage;
 
         if (𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
+          const reply = chat.message.extendedTextMessage;
           var contact = reply.contextInfo.participant.split(`@`)[0];
           var contactmen = reply.contextInfo.participant + "@s.whatsapp.net";
-          console.log(contactmen);
-        } else {
-          var contact = await motor.getCleanedContact(arg, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎);
-          var contactmen = await motor.getCleanedContact(arg, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎);
-        }
-
-        var admin = false;
-        var CheckMember = await motor.isMember(contact, 𝓜𝖎𝖟𝖚ӄ𝖎.groupMembers);
-        for (const index in 𝓜𝖎𝖟𝖚ӄ𝖎.groupMembers) {
-          if (contact == 𝓜𝖎𝖟𝖚ӄ𝖎.groupMembers[index].jid.split(`@`)[0]) {
-            if (𝓜𝖎𝖟𝖚ӄ𝖎.groupMembers[index].isAdmin) {
-              admin = true;
+          var admin = false;
+          var CheckMember = await motor.isMember(contact, 𝓜𝖎𝖟𝖚ӄ𝖎.groupMembers);
+          for (const index in 𝓜𝖎𝖟𝖚ӄ𝖎.groupMembers) {
+            if (contact == 𝓜𝖎𝖟𝖚ӄ𝖎.groupMembers[index].jid.split(`@`)[0]) {
+              if (𝓜𝖎𝖟𝖚ӄ𝖎.groupMembers[index].isAdmin) {
+                admin = true;
+              }
             }
           }
-        }
-        if (CheckMember) {
-          if (!admin == true) {
-            const arr = [contact + `@s.whatsapp.net`];
-            𝓚𝓻𝓪𝓴𝓲𝓷𝔃.groupMakeAdmin(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, arr);
-            𝓚𝓻𝓪𝓴𝓲𝓷𝔃
-              .sendMessage(
-                𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
-                
-𝗔𝗵𝗺 •@${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰},
-${contact} is promoted to admin`,
-                MessageType.text,
-                {
-                  quoted: chat,
-                  contextInfo: {
-                    mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓, contactmen],
-                  },
-                }
-              )
-              .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
-          } else {
-            𝓚𝓻𝓪𝓴𝓲𝓷𝔃
-              .sendMessage(
-                𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
+          if (CheckMember) {
+            if (!admin == true) {
+              const arr = [contact + `@s.whatsapp.net`];
+              𝓚𝓻𝓪𝓴𝓲𝓷𝔃.groupMakeAdmin(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, arr);
+              𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+                .sendMessage(
+                  𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                  `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
 
 𝗔𝗵𝗺 •@${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰},
-${contact} is already an admin`,
-                MessageType.text,
-                {
-                  quoted: chat,
-                  contextInfo: {
-                    mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓, contactmen],
-                  },
-                }
-              )
-              .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
-          }
-        }
-        if (!CheckMember) {
-          if (contact === undefined) {
-            return;
-          }
+${reply.contextInfo.participant.split(`@`)[0];
+            } is promoted to admin`,
+MessageType.text,
+{
+quoted: chat,
+contextInfo: {
+mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓, contactmen],
+},
+}
+)
+.catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+} else {
+𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+.sendMessage(
+𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+`_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
 
-          𝓚𝓻𝓪𝓴𝓲𝓷𝔃
-            .sendMessage(
-              𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              `_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
-              
-𝗔𝗵𝗺 •@${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰},
+            𝗔𝗵𝗺 •@${ 𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰 },
+${ reply.contextInfo.participant.split(`@`)[0]; } is already an admin`,
+MessageType.text,
+{
+quoted: chat,
+contextInfo: {
+mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓, contactmen],
+},
+}
+)
+.catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+}
+}
+if (!CheckMember) {
+if (contact === undefined) {
+return;
+}
+
+𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+.sendMessage(
+𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+`_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
+
+            𝗔𝗵𝗺 •@${ 𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰 },
 Person is not in the group.`,
-              MessageType.text,
-              {
-                quoted: chat,
-                contextInfo: {
-                  mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓],
-                },
-              }
-            )
-            .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
-          return;
-        }
-      } catch (ℓαвєяяσя) {
-        if (ℓαвєяяσя === `NumberInvalid`) {
-          𝓚𝓻𝓪𝓴𝓲𝓷𝔃
-            .sendMessage(
-              𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              `
-              
-𝗔𝗵𝗺 •@${𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰},
-The number you're trying to add isn't available on WhatsApp or  ${arg[0]} is Invalid number`,
-              MessageType.text,
-              {
-                quoted: chat,
-                contextInfo: {
-                  mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓],
-                },
-              }
-            )
-            .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
-        } else {
-          await ℓιєηт.catch(ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎);
-        }
-      }
-    } catch (ℓαвєяяσя) {
-      ℓιєηт.catch(ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎);
-      console.log(ℓαвєяяσя);
-    }
-  },
+MessageType.text,
+{
+quoted: chat,
+contextInfo: {
+mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓],
+},
+}
+)
+.catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+return;
+}
+} catch (ℓαвєяяσя) {
+if (ℓαвєяяσя === `NumberInvalid`) {
+𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+.sendMessage(
+𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+`
+
+            𝗔𝗵𝗺 •@${ 𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰 },
+The number you're trying to add isn't available on WhatsApp or  ${ arg[0] } is Invalid number`,
+MessageType.text,
+{
+quoted: chat,
+contextInfo: {
+mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓],
+},
+}
+)
+.catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+} else {
+await ℓιєηт.catch(ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎);
+}
+}
+} else {
+var contact = await motor.getCleanedContact(arg, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎);
+var contactmen = contact;
+var admin = false;
+var CheckMember = await motor.isMember(contact, 𝓜𝖎𝖟𝖚ӄ𝖎.groupMembers);
+for(const index in 𝓜𝖎𝖟𝖚ӄ𝖎.groupMembers) {
+if (contact == 𝓜𝖎𝖟𝖚ӄ𝖎.groupMembers[index].jid.split(`@`)[0]) {
+if (𝓜𝖎𝖟𝖚ӄ𝖎.groupMembers[index].isAdmin) {
+admin = true;
+}
+}
+}
+if (CheckMember) {
+if (!admin == true) {
+const arr = [contact + `@s.whatsapp.net`];
+𝓚𝓻𝓪𝓴𝓲𝓷𝔃.groupMakeAdmin(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, arr);
+𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+.sendMessage(
+𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+`_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
+
+            𝗔𝗵𝗺 •@${ 𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰 },
+${ await motor.getCleanedContact(arg, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎) } is promoted to admin`,
+MessageType.text,
+{
+quoted: chat,
+contextInfo: {
+mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓, contactmen],
+},
+}
+)
+.catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+} else {
+𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+.sendMessage(
+𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+`_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
+
+            𝗔𝗵𝗺 •@${ 𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰 },
+${ await motor.getCleanedContact(arg, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎) } is already an admin`,
+MessageType.text,
+{
+quoted: chat,
+contextInfo: {
+mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓, contactmen],
+},
+}
+)
+.catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+}
+}
+if (!CheckMember) {
+if (contact === undefined) {
+return;
+}
+
+𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+.sendMessage(
+𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+`_© 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭_
+
+            𝗔𝗵𝗺 •@${ 𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰 },
+Person is not in the group.`,
+MessageType.text,
+{
+quoted: chat,
+contextInfo: {
+mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓],
+},
+}
+)
+.catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+return;
+}
+} catch (ℓαвєяяσя) {
+if (ℓαвєяяσя === `NumberInvalid`) {
+𝓚𝓻𝓪𝓴𝓲𝓷𝔃
+.sendMessage(
+𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+`
+
+            𝗔𝗵𝗺 •@${ 𝓢𝓮𝓷𝓭𝓮𝓻𝓒𝓸𝓷𝓯𝓲𝓰 },
+The number you're trying to add isn't available on WhatsApp or  ${ arg[0] } is Invalid number`,
+MessageType.text,
+{
+quoted: chat,
+contextInfo: {
+mentionedJid: [𝓢𝓮𝓷𝓭𝓮𝓻𝓘𝓓],
+},
+}
+)
+.catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎));
+} else {
+await ℓιєηт.catch(ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎);
+}
+}
+}
+
+
+} catch (ℓαвєяяσя) {
+ℓιєηт.catch(ℓαвєяяσя, 𝓚𝓻𝓪𝓴𝓲𝓷𝔃, 𝓜𝖎𝖟𝖚ӄ𝖎);
+console.log(ℓαвєяяσя);
+}
+},
 };
 // ⦿──────────────────────────────────────────────────────────────────⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿-----------------⬡==================⬡`;
