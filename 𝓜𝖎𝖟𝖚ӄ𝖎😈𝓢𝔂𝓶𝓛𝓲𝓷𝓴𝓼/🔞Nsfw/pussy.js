@@ -46,7 +46,7 @@ module.exports = {
             },
             MessageType.image,
             {
-              mimetype: Mimetype.jpeg,
+              mimetype: Mimetype.png || Mimetype.jpeg,
               contextInfo: {
                 mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
               },
@@ -107,12 +107,11 @@ Asked By? @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ} (admin)`,
               },
               MessageType.image,
               {
-                mimetype: Mimetype.jpeg,
+                mimetype: Mimetype.png || Mimetype.jpeg,
                 contextInfo: {
                   mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
                 },
-                caption: `_☆ ӄʀǟӄɨռʐʟǟɮ ɛռɢɨռɛ ☆_ 
-*⬡ 👓𝓜𝓮𝓮6™ △▽ 𝖂𝖍𝖆𝖙𝖘𝖆𝖕𝖕-𝖀𝖘𝖊𝖗𝖇𝖔𝖙 ⬡*
+                caption: `*© Mïzµkï* _${vers.vers}_
 
 Nsfw Topic: *Pussy*
 Asked By? @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ} (admin)`,

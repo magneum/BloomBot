@@ -151,7 +151,7 @@ module.exports = {
               MessageType.image,
               {
                 quoted: chat,
-                mimetype: Mimetype.jpeg,
+                mimetype: Mimetype.png || Mimetype.jpeg,
                 caption: `*⚠️Seems like ${arg[0]} is not YouTube Link or not YouTube Single Video Link!*
 
 *Usage Example*

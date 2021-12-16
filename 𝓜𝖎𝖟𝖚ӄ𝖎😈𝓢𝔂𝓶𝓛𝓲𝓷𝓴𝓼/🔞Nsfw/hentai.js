@@ -46,7 +46,7 @@ module.exports = {
             },
             MessageType.image,
             {
-              mimetype: Mimetype.jpeg,
+              mimetype: Mimetype.png || Mimetype.jpeg,
               contextInfo: {
                 mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
               },
@@ -107,7 +107,7 @@ Asked By? @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ} (admin)`,
               },
               MessageType.image,
               {
-                mimetype: Mimetype.jpeg,
+                mimetype: Mimetype.png || Mimetype.jpeg,
                 contextInfo: {
                   mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
                 },
