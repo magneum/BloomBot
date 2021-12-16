@@ -68,6 +68,9 @@ Do note, the setgoodbye option is still enabled after you use the delete option.
             MessageType.image,
             {
               quoted: chat,
+              contextInfo: {
+                mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
+              },
               mimetype: Mimetype.png,
               caption: `
 ⚠️𝗘𝗿𝗿𝗼𝗿: @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}, *ʏᴏᴜ ᴅᴏɴ'ᴛ ꜱᴇᴇᴍ ᴛᴏ ʙᴇ ᴀᴅᴍɪɴ..*`,
