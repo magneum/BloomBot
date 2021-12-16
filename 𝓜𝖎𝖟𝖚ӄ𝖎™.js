@@ -37,7 +37,6 @@ var ᴛʙʏᴇ = [
   `ᴄᴏɴɢʀᴀᴛᴜʟᴀᴛɪᴏɴꜱ, ! ʏᴏᴜ'ʀᴇ ᴏꜰꜰɪᴄɪᴀʟʟʏ ꜰʀᴇᴇ ᴏꜰ ᴛʜɪꜱ ᴍᴇꜱꜱ.`,
 ];
 //⦿──────────────────────────────────────────────────────────────────⦿   © 𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿──────────────────────────────────────────────────────────────────⦿`;
-
 var ӄʀǟӄɨռʐ = 𝓜𝖎𝖟𝖚ӄ𝖎ֆʏռօք.WhatsApp;
 async function 𝓜𝓮𝓮6s() {
   var 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹 = new Map();
@@ -302,7 +301,6 @@ ${update.desc}`,
         return welbuts
           .welbuts(
             ӄʀǟӄɨռʐ,
-            𝓜𝖎𝖟𝖚ӄ𝖎,
             GroupID,
             GroupMemData,
             GroupMemG,
@@ -312,50 +310,6 @@ ${update.desc}`,
           .catch((ℓαвєяяσя) => console.log(ℓαвєяяσя));
       }
       //⦿──────────────────────────────────────────────────────────────────⦿   © 𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿──────────────────────────────────────────────────────────────────⦿`;
-      //       var Fetched = await ɠɠ𝓜𝖎𝖟𝖚ӄ𝖎.getMessage(GroupID, `setwelcome`);
-      //       try {
-      //         𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄʀǟӄɨռʐ.getProfilePicture(
-      //           `${MemNum.split(`@`)[0]}@c.us`
-      //         );
-      //       } catch {
-      //         𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = `https://i.postimg.cc/3wfrmmpB/NoPP.jpg`;
-      //       }
-      //       download(
-      //         𝕻𝕻𝖑𝖊𝖙𝖊𝖗,
-      //         {
-      //           directory: `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/`,
-      //           filename: `𝕻𝕻𝖑𝖊𝖙𝖊𝖗.jpg`,
-      //         },
-      //         async function (err) {
-      //           if (err) throw err;
-      //           const weltext = ᴛᴡᴇʟ[Math.floor(Math.random() * ᴛᴡᴇʟ.length)];
-      //           personcum = MemNum.substring(0, MemNum.length - 15);
-      //           return await ӄʀǟӄɨռʐ
-      //             .sendMessage(
-      //               GroupID,
-      //               {
-      //                 url: `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/𝕻𝕻𝖑𝖊𝖙𝖊𝖗.jpg`,
-      //               },
-      //               MessageType.image,
-      //               {
-      //                 mimetype: Mimetype.png || Mimetype.jpeg,
-      //                 contextInfo: {
-      //                   mentionedJid: [MemNum],
-      //                 },
-      //                 caption: `@${personcum}
-      // ${weltext}
-      // ┌───────⭓
-      // │⬘𝗕𝗶𝗼: ${GroupMemBio.status}
-      // │⬘𝗠𝗲𝗺𝗯𝗲𝗿𝘀: ${GroupMemG}
-      // │⬘𝗚𝗿𝗼𝘂𝗽: ${GroupMemData.subject}
-      // └───────────⭓
-
-      // ${Fetched.message}`,
-      //               }
-      //             )
-      //            .catch((ℓαвєяяσя) => console.log(ℓαвєяяσя));
-      //         }
-      //       );
     }
     //⦿──────────────────────────────────────────────────────────────────⦿   © 𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿──────────────────────────────────────────────────────────────────⦿`;
     if (update.action === `remove`) {
