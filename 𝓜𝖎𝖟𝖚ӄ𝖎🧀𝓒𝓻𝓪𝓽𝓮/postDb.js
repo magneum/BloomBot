@@ -103,6 +103,21 @@ async function setGoodbye(jid, text = null) {
   });
 }
 // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
+async function setAntilink(jid, text = null) {
+  DataBase.findOrCreate({
+    where: {
+      chat: jid,
+      greetingType: `setantilink`,
+    },
+    defaults: {
+      chat: jid,
+      switched: `ON`,
+      greetingType: `setantilink`,
+      message: text,
+    },
+  });
+}
+// ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
 async function deleteMessage(jid = null, type = null) {
   var Msg = await DataBase.findAll({
     where: {
@@ -119,11 +134,12 @@ async function deleteMessage(jid = null, type = null) {
 // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
 module.exports = {
   DataBase: DataBase,
-  getMessage: getMessage,
-  changeSettings: changeSettings,
-  checkSettings: checkSettings,
   setWelcome: setWelcome,
   setGoodbye: setGoodbye,
+  getMessage: getMessage,
+  setAntilink: setAntilink,
   deleteMessage: deleteMessage,
+  checkSettings: checkSettings,
+  changeSettings: changeSettings,
 };
 // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿

@@ -54,7 +54,10 @@ module.exports = {
       const media = await ӄʀǟӄɨռʐ.prepareMessage(
         𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
         content,
-        MessageType.image
+        MessageType.image,
+        {
+          mimetype: Mimetype.png || Mimetype.jpeg,
+        }
       );
       const buttons = [
         {
@@ -74,7 +77,7 @@ module.exports = {
         // },
       ];
       const buttonMessage = {
-        contentText: `*(c)𝐌𝐢𝐳𝐮𝐤𝐢* ${vers.vers}
+        contentText: `_(c)𝐌𝐢𝐳𝐮𝐤𝐢 ${vers.vers}_
 
 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},*𝘽𝙊𝙏 𝙄𝙉 𝘽𝙀𝙏𝘼*
 シ︎🛸𝐆𝐫𝐨𝐮𝐩: ${_𝔏𝔞𝔟_.HASH}
@@ -97,7 +100,7 @@ module.exports = {
 │☕ *ᴜᴘᴛɪᴍᴇ:* ${runtime(process.uptime())}
 │🎮 *ʀᴀᴍ:* ${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}
 └───────────⭓`,
-        footerText: `*(c)𝐌𝐢𝐳𝐮𝐤𝐢* ${vers.vers}`,
+        footerText: `_(c)𝐌𝐢𝐳𝐮𝐤𝐢 ${vers.vers}_`,
         buttons: buttons,
         headerType: 4,
         imageMessage: media.message.imageMessage,
