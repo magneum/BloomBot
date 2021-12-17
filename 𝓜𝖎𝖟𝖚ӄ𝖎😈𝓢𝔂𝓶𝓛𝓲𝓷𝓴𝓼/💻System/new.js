@@ -81,6 +81,7 @@ module.exports = {
 
 ┌────⭓ 𝐍𝐞𝐰 𝐏𝐮𝐛𝐥𝐢𝐜-𝐁𝐞𝐭𝐚 𝐅𝐞𝐚𝐭𝐮𝐫𝐞𝐬
 │⧪ ${ᴋᴇɪ}setantilink
+│⧪ ${ᴋᴇɪ}paste (nekobin/dogbin)
 └───────────⭓
 
 _check the help or menu for more info._`,
