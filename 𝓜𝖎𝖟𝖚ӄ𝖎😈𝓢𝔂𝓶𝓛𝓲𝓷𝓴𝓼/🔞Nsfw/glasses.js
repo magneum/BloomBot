@@ -50,7 +50,7 @@ module.exports = {
               contextInfo: {
                 mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
               },
-              caption: `*(c)𝐌𝐢𝐳𝐮𝐤𝐢* ${vers.vers}
+              caption: `_(c)𝐌𝐢𝐳𝐮𝐤𝐢 ${vers.vers}_
 
 Nsfw Topic: *Glasses*
 Asked By? @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ} (admin)`,
@@ -62,7 +62,7 @@ Asked By? @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ} (admin)`,
         await ӄʀǟӄɨռʐ
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            `*(c)𝐌𝐢𝐳𝐮𝐤𝐢* ${vers.vers}
+            `_(c)𝐌𝐢𝐳𝐮𝐤𝐢 ${vers.vers}_
 
 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 シ︎𝐆𝐫𝐨𝐮𝐩👓${_𝔏𝔞𝔟_.HASH}`,
@@ -111,7 +111,7 @@ Asked By? @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ} (admin)`,
                 contextInfo: {
                   mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
                 },
-                caption: `*(c)𝐌𝐢𝐳𝐮𝐤𝐢* ${vers.vers}
+                caption: `_(c)𝐌𝐢𝐳𝐮𝐤𝐢 ${vers.vers}_
 
 Nsfw Topic: *Glasses*
 Asked By? @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ} (admin)`,
