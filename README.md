@@ -23,9 +23,7 @@
 
 # ⚡ 𝕯𝖊𝖕𝖑𝖔𝖞𝖒𝖊𝖓𝖙
 
-- ꜰɪʀꜱᴛ ꜰᴏʀᴋ ᴀɴᴅ ꜱᴛᴀʀ ᴛʜᴇ ʀᴇᴘᴏ and join group chat (or else auto upgrading won't work)
-- Get Your Mee6 SessionCode from [`ᴡʜᴀᴛꜱᴀᴘᴘ`](https://chat.whatsapp.com/KlMRYxCTte5H8TIIupbRVf) | [`ᴅɪꜱᴄᴏʀᴅ`](https://discord.gg/xcFN6NDHEV)
-- Head Over To [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Krakinz/Mizuki.git)
+- Removed since bot in beta but people complaining for bugs -_-... WTF! BETA means something...
 
 
 
