@@ -2,7 +2,7 @@
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const ℓιєηт = require(`../../𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/catch`);
 const _𝔏𝔞𝔟_ = require(`../../𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/_𝔏𝔞𝔟_`);
-const Greetings = require(`../../𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/ɠɠ𝓜𝖎𝖟𝖚ӄ𝖎`);
+const PostDataBase = require(`../../𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/postDb`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 const vers = require(`../../package.json`);
@@ -110,11 +110,11 @@ Do note, the setgoodbye option is still enabled after you use the delete option.
         return;
       }
       if (arg.length == 0) {
-        var enabled = await Greetings.checkSettings(
+        var enabled = await PostDataBase.checkSettings(
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
           `setgoodbye`
         );
-        var Msg = await Greetings.getMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, `setgoodbye`);
+        var Msg = await PostDataBase.getMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, `setgoodbye`);
         try {
           if (enabled === false || enabled === undefined) {
             ӄʀǟӄɨռʐ
@@ -132,7 +132,7 @@ Do note, the setgoodbye option is still enabled after you use the delete option.
             await ӄʀǟӄɨռʐ
               .sendMessage(
                 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                `Greetings are enabled: True \nCurrently greeting new members with:`,
+                `PostDataBase are enabled: True \nCurrently greeting new members with:`,
                 MessageType.text,
                 { quoted: chat }
               )
@@ -169,7 +169,7 @@ Do note, the setgoodbye option is still enabled after you use the delete option.
         try {
           if (arg[0] === `OFF` || arg[0] === `off` || arg[0] === `Off`) {
             switched = `OFF`;
-            await Greetings.changeSettings(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, switched);
+            await PostDataBase.changeSettings(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, switched);
             ӄʀǟӄɨռʐ
               .sendMessage(
                 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
@@ -184,7 +184,7 @@ Do note, the setgoodbye option is still enabled after you use the delete option.
           }
           if (arg[0] === `ON` || arg[0] === `on` || arg[0] === `On`) {
             switched = `ON`;
-            await Greetings.changeSettings(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, switched);
+            await PostDataBase.changeSettings(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, switched);
             ӄʀǟӄɨռʐ
               .sendMessage(
                 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
@@ -198,7 +198,7 @@ Do note, the setgoodbye option is still enabled after you use the delete option.
             return;
           }
           if (arg[0] === `delete`) {
-            var Msg = await Greetings.deleteMessage(
+            var Msg = await PostDataBase.deleteMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               `setgoodbye`
             );
@@ -232,9 +232,9 @@ Do note, the setgoodbye option is still enabled after you use the delete option.
             ``
           );
 
-          var Msg = await Greetings.getMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, `setgoodbye`);
+          var Msg = await PostDataBase.getMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, `setgoodbye`);
           if (Msg === false || Msg === undefined) {
-            await Greetings.setGoodbye(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, text);
+            await PostDataBase.setGoodbye(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, text);
             await ӄʀǟӄɨռʐ
               .sendMessage(
                 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
@@ -248,8 +248,8 @@ Do note, the setgoodbye option is still enabled after you use the delete option.
 
             return;
           } else {
-            await Greetings.deleteMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, `setgoodbye`);
-            await Greetings.setGoodbye(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, text);
+            await PostDataBase.deleteMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, `setgoodbye`);
+            await PostDataBase.setGoodbye(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, text);
             await ӄʀǟӄɨռʐ
               .sendMessage(
                 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,

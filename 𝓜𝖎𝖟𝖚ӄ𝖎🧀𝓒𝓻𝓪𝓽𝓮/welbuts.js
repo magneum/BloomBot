@@ -2,7 +2,7 @@
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const download = require(`download-file`);
 const vers = require(`../package.json`);
-const ɠɠ𝓜𝖎𝖟𝖚ӄ𝖎 = require(`./ɠɠ𝓜𝖎𝖟𝖚ӄ𝖎`);
+const postDb = require(`./postDb`);
 const _𝔏𝔞𝔟_ = require(`./_𝔏𝔞𝔟_`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
@@ -38,7 +38,7 @@ exports.welbuts = async (
   GroupMemBio,
   MemNum
 ) => {
-  var ꜰᴇᴛᴄʜᴇᴅᴡᴇʟᴄᴏᴍᴇ = await ɠɠ𝓜𝖎𝖟𝖚ӄ𝖎.getMessage(GroupID, `setwelcome`);
+  var ꜰᴇᴛᴄʜᴇᴅᴡᴇʟᴄᴏᴍᴇ = await postDb.getMessage(GroupID, `setwelcome`);
   const ᴡᴇʟᴄᴏᴍᴇʀᴛxᴛ = ᴛᴡᴇʟ[Math.floor(Math.random() * ᴛᴡᴇʟ.length)];
   var ᴘᴘᴡᴇʟᴄᴏᴍᴇ = MemNum.substring(0, MemNum.length - 15);
   // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿

@@ -2,7 +2,7 @@
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const 𝓜𝖎𝖟𝖚ӄ𝖎ֆʏռօք = require(`./𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/𝓜𝖎𝖟𝖚ӄ𝖎ᴢᴇɴ`);
 const AutoKrakz = require(`./𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/𝓜𝖎𝖟𝖚ӄ𝖎ɢɪᴛ`);
-const ɠɠ𝓜𝖎𝖟𝖚ӄ𝖎 = require(`./𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/ɠɠ𝓜𝖎𝖟𝖚ӄ𝖎`);
+const postDb = require(`./𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/postDb`);
 const 𝓜𝖎𝖟𝖚ӄ𝖎ǟքք = require(`./𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/helper`);
 const welbuts = require(`./𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/welbuts`);
 const ӄʀǟӄɨռʐult = require(`./𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/ɠɠʊ`);
@@ -269,7 +269,7 @@ ${update.desc}`,
     }
     // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
     if (update.action === `add` && !MemNum.includes(ӄʀǟӄɨռʐ.user.jid)) {
-      var enable = await ɠɠ𝓜𝖎𝖟𝖚ӄ𝖎.checkSettings(GroupID, `setwelcome`);
+      var enable = await postDb.checkSettings(GroupID, `setwelcome`);
       if (enable === false || enable === `OFF`) {
         return;
       } else {
@@ -289,8 +289,8 @@ ${update.desc}`,
     }
     // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
     if (update.action === `remove`) {
-      var enable = await ɠɠ𝓜𝖎𝖟𝖚ӄ𝖎.checkSettings(GroupID, `setgoodbye`);
-      var ꜰᴇᴛᴄʜᴇᴅʙʏᴇ = await ɠɠ𝓜𝖎𝖟𝖚ӄ𝖎.getMessage(GroupID, `setgoodbye`);
+      var enable = await postDb.checkSettings(GroupID, `setgoodbye`);
+      var ꜰᴇᴛᴄʜᴇᴅʙʏᴇ = await postDb.getMessage(GroupID, `setgoodbye`);
       if (enable === false || enable === `OFF`) {
         return;
         // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
