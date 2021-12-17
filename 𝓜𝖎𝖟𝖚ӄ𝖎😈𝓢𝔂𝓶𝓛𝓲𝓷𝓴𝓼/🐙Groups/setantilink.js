@@ -117,15 +117,8 @@ This is not a group`,
       if (arg.length == 0) {
         var enabled = await PostDataBase.checkSettings(
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-          `setantilink`,
-          MessageType.text,
-          {
-            quoted: chat,
-            contextInfo: {
-              mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
-            },
-          }
-        ).catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
+          `antilink`
+        );
         var Msg = await PostDataBase.getMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, `setantilink`);
         // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
         try {
@@ -145,7 +138,6 @@ Set an Antilink message first.`,
                 }
               )
               .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
-            console.log(enabled);
             return;
             // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
           } else if (enabled === `OFF`) {
@@ -165,7 +157,6 @@ Antilink are not enabled!`,
                 }
               )
               .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
-            console.log(enabled);
             return;
           }
           // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
@@ -185,7 +176,6 @@ Antilink are enabled!`,
               }
             )
             .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
-          console.log(Msg);
         } catch (ℓαвєяяσя) {
           throw ℓαвєяяσя;
         }
@@ -193,10 +183,7 @@ Antilink are enabled!`,
       } else {
         if (arg[0] === `OFF` || arg[0] === `off` || arg[0] === `Off`) {
           switched = `OFF`;
-          const how = await PostDataBase.changeSettings(
-            𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            switched
-          );
+          await PostDataBase.changeSettings(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, switched);
           await ӄʀǟӄɨռʐ
             .sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
@@ -213,16 +200,12 @@ Antilink messsage has been disabled.`,
               }
             )
             .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
-          console.log(how);
           return;
         }
         // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
         if (arg[0] === `ON` || arg[0] === `on` || arg[0] === `On`) {
           switched = `ON`;
-          const how = await PostDataBase.changeSettings(
-            𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            switched
-          );
+          await PostDataBase.changeSettings(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, switched);
           ӄʀǟӄɨռʐ
             .sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
@@ -239,7 +222,6 @@ Antilink messsage has been enabled.`,
               }
             )
             .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
-          console.log(how);
           return;
         }
         // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿

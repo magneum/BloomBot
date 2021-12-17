@@ -167,6 +167,10 @@ try {
     await ӄʀǟӄɨռʐ.connect();
     // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
     ӄʀǟӄɨռʐ.on(`group-update`, async (update) => {
+      // var enable = await postDb.checkSettings(update.jid, `bangroup`);
+      // if (enable === true || enable === `ON`) {
+      //   return;
+      // } else {}
       groupupdateID = await ӄʀǟӄɨռʐ.groupMetadata(update.jid);
       if (update.announce == `false`) {
         ӄʀǟӄɨռʐ
@@ -242,8 +246,11 @@ ${update.desc}`,
     });
     // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
     ӄʀǟӄɨռʐ.on(`group-participants-update`, async (update) => {
-      // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
-      var GroupID = update.jid;
+      // var GroupID = update.jid;
+      // var enable = await postDb.checkSettings(GroupID, `bangroup`);
+      // if (enable === true || enable === `ON`) {
+      //   return;
+      // } else {}
       const GroupMemData = await ӄʀǟӄɨռʐ.groupMetadata(update.jid);
       const GroupMemG = GroupMemData.participants.length;
       const GroupMemBio = await ӄʀǟӄɨռʐ.getStatus(
@@ -291,7 +298,6 @@ ${update.desc}`,
             )
             .catch((ℓαвєяяσя) => console.log(ℓαвєяяσя));
         }
-        // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
       }
       // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
       if (update.action === `remove`) {
@@ -422,9 +428,12 @@ ${ꜰᴇᴛᴄʜᴇᴅʙʏᴇ.message}`,
       }
       // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
       try {
-        var enable = await postDb.checkSettings(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, `setantilink`);
+        var enableanti = await postDb.checkSettings(
+          𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+          `setantilink`
+        );
         var ꜰᴇᴛᴄʜᴇᴅanti = await postDb.getMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, `setantilink`);
-        if (enable === false || enable === `OFF`) {
+        if (enableanti === false || enableanti === `OFF`) {
           return;
         } else {
           const REMOVE = chat.key.fromMe
@@ -434,19 +443,22 @@ ${ꜰᴇᴛᴄʜᴇᴅʙʏᴇ.message}`,
             : chat.key.remoteJid;
           if (!𝓜𝖎𝖟𝖚ӄ𝖎.fromMe && 𝓜𝖎𝖟𝖚ӄ𝖎.isGroup && !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderGroupAdmin) {
             if (
-              !𝓜𝖎𝖟𝖚ӄ𝖎.budy.includes(_𝔏𝔞𝔟_.HASH) &&
-              𝓜𝖎𝖟𝖚ӄ𝖎.budy.includes(`://chat.whatsapp.com/`)
+              (!𝓜𝖎𝖟𝖚ӄ𝖎.budy.includes(_𝔏𝔞𝔟_.HASH) &&
+                𝓜𝖎𝖟𝖚ӄ𝖎.budy.includes(`://chat.whatsapp.com/`)) ||
+              𝓜𝖎𝖟𝖚ӄ𝖎.budy.includes(`://wa.me/`)
             ) {
               await ӄʀǟӄɨռʐ
                 .sendMessage(
                   𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
                   `_(c)𝐌𝐢𝐳𝐮𝐤𝐢 ${vers.vers}_
 
+@${REMOVE},
 ┌────⭓ 𝐀𝐧𝐭𝐢𝐥𝐢𝐧𝐤🐙𝐀𝐜𝐭𝐢𝐯𝐞
-│ 𝗔𝗻𝘁𝗶𝗹𝗶𝗻𝗸-𝗔𝗰𝘁𝗶𝘃𝗲 𝘚𝘰 𝘺𝘰𝘶 𝘸𝘪𝘭𝘭 
+│ ❗𝗔𝗻𝘁𝗶𝗹𝗶𝗻𝗸-𝗔𝗰𝘁𝗶𝘃𝗲 𝘚𝘰 𝘺𝘰𝘶 𝘸𝘪𝘭𝘭 
 │ 𝘣𝘦 𝗔𝘂𝘁𝗼-𝗞𝗶𝗰𝗸𝗲𝗱 𝘣𝘺 𝘢𝘥𝘮𝘪𝘯𝘴❗
 └───────────⭓
-                  
+
+*•──────[ Message From Admins  ]──────•*
 ${ꜰᴇᴛᴄʜᴇᴅanti.message}`,
                   MessageType.text
                 )
@@ -461,9 +473,9 @@ ${ꜰᴇᴛᴄʜᴇᴅanti.message}`,
         ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
         console.log(ℓαвєяяσя);
       }
-      // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
     });
   }
+  // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
   𝓜𝓮𝓮6s().catch((ℓαвєяяσя) =>
     console.log(Kolor.red(`❌𝗘𝗿𝗿⬰ `), Kolor.red(ℓαвєяяσя))
   );
@@ -471,3 +483,4 @@ ${ꜰᴇᴛᴄʜᴇᴅanti.message}`,
 } catch (ℓαвєяяσя) {
   console.log(ℓαвєяяσя);
 }
+// ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿

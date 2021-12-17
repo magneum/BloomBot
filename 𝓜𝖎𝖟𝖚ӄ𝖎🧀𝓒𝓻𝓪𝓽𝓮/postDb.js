@@ -15,7 +15,7 @@ const DataBase = sequelize.define(
       allowNull: false,
       defaultValue: `ON`,
     },
-    greetingType: {
+    Type: {
       type: DataTypes.TEXT,
     },
     message: {
@@ -26,11 +26,12 @@ const DataBase = sequelize.define(
     tableName: `PostDataBase`,
   }
 );
+// ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
 async function getMessage(jid = null, type) {
   var Msg = await DataBase.findAll({
     where: {
       chat: jid,
-      greetingType: type,
+      Type: type,
     },
   });
 
@@ -45,7 +46,7 @@ async function checkSettings(jid = null, type) {
   var Msg = await DataBase.findAll({
     where: {
       chat: jid,
-      greetingType: type,
+      Type: type,
     },
   });
 
@@ -77,12 +78,12 @@ async function setWelcome(jid = null, text = null) {
   DataBase.findOrCreate({
     where: {
       chat: jid,
-      greetingType: `setwelcome`,
+      Type: `setwelcome`,
     },
     defaults: {
       chat: jid,
       switched: `ON`,
-      greetingType: `setwelcome`,
+      Type: `setwelcome`,
       message: text,
     },
   });
@@ -92,12 +93,12 @@ async function setGoodbye(jid, text = null) {
   DataBase.findOrCreate({
     where: {
       chat: jid,
-      greetingType: `setgoodbye`,
+      Type: `setgoodbye`,
     },
     defaults: {
       chat: jid,
       switched: `ON`,
-      greetingType: `setgoodbye`,
+      Type: `setgoodbye`,
       message: text,
     },
   });
@@ -107,12 +108,12 @@ async function setAntilink(jid, text = null) {
   DataBase.findOrCreate({
     where: {
       chat: jid,
-      greetingType: `setantilink`,
+      Type: `setantilink`,
     },
     defaults: {
       chat: jid,
       switched: `ON`,
-      greetingType: `setantilink`,
+      Type: `setantilink`,
       message: text,
     },
   });
@@ -122,7 +123,7 @@ async function deleteMessage(jid = null, type = null) {
   var Msg = await DataBase.findAll({
     where: {
       chat: jid,
-      greetingType: type,
+      Type: type,
     },
   });
   if (Msg.length < 1) {
@@ -133,6 +134,7 @@ async function deleteMessage(jid = null, type = null) {
 }
 // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
 module.exports = {
+  banGroup: banGroup,
   DataBase: DataBase,
   setWelcome: setWelcome,
   setGoodbye: setGoodbye,
