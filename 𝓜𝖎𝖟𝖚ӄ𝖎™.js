@@ -246,11 +246,7 @@ ${update.desc}`,
     });
     // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
     ӄʀǟӄɨռʐ.on(`group-participants-update`, async (update) => {
-      // var GroupID = update.jid;
-      // var enable = await postDb.checkSettings(GroupID, `bangroup`);
-      // if (enable === true || enable === `ON`) {
-      //   return;
-      // } else {}
+      var GroupID = update.jid;
       const GroupMemData = await ӄʀǟӄɨռʐ.groupMetadata(update.jid);
       const GroupMemG = GroupMemData.participants.length;
       const GroupMemBio = await ӄʀǟӄɨռʐ.getStatus(
@@ -401,7 +397,7 @@ ${ꜰᴇᴛᴄʜᴇᴅʙʏᴇ.message}`,
               MessageType.text,
               {
                 contextInfo: {
-                  mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
+                  mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
                 },
               }
             )

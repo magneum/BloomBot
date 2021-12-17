@@ -47,7 +47,7 @@ module.exports = {
             {
               quoted: chat,
               contextInfo: {
-                mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
+                mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
               },
             }
           )
@@ -64,7 +64,7 @@ module.exports = {
               {
                 quoted: chat,
                 contextInfo: {
-                  mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
+                  mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
                 },
               }
             )
@@ -98,7 +98,7 @@ ${arg.join(` `)}`,
               {
                 quoted: chat,
                 contextInfo: {
-                  mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
+                  mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
                   forwardingScore: 999,
                   isForwarded: true,
                 },
@@ -117,7 +117,7 @@ ${arg.join(` `)}`,
             {
               quoted: chat,
               contextInfo: {
-                mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
+                mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
               },
             }
           )

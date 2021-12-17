@@ -52,7 +52,7 @@ module.exports = {
             {
               quoted: chat,
               contextInfo: {
-                mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
+                mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
               },
             }
           )

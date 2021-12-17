@@ -46,7 +46,7 @@ module.exports = {
             MessageType.text,
             {
               contextInfo: {
-                mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
+                mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
               },
             }
           )

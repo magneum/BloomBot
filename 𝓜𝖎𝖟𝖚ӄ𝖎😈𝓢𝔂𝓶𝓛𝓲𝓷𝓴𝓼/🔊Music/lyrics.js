@@ -49,7 +49,7 @@ module.exports = {
             {
               quoted: chat,
               contextInfo: {
-                mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
+                mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
               },
             }
           )
@@ -96,7 +96,7 @@ ${lyrics.lyrics}`,
               {
                 quoted: chat,
                 contextInfo: {
-                  mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
+                  mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
                 },
               }
             )
@@ -113,7 +113,7 @@ ${lyric}`,
                 {
                   quoted: chat,
                   contextInfo: {
-                    mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
+                    mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
                   },
                 }
               )

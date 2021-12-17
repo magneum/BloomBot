@@ -50,7 +50,7 @@ You can also reply to a text message with syntax  *${ᴋᴇɪ}tr <language>*  to
             {
               quoted: chat,
               contextInfo: {
-                mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
+                mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
               },
             }
           )

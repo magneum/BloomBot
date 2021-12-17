@@ -46,7 +46,7 @@ module.exports = {
             MessageType.text,
             {
               contextInfo: {
-                mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
+                mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
               },
             }
           )
@@ -68,7 +68,7 @@ module.exports = {
             {
               mimetype: Mimetype.png || Mimetype.jpeg,
               contextInfo: {
-                mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
+                mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
               },
               caption: `_(c)𝐌𝐢𝐳𝐮𝐤𝐢 ${vers.vers}_
 
