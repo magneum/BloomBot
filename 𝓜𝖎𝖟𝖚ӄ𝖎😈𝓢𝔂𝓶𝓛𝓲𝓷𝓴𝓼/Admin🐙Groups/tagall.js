@@ -145,7 +145,7 @@ module.exports = {
       if (arg.length) {
         ӄʀǟӄɨռʐ
           .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, arg.join(` `), MessageType.text, {
-            uoted: chat,
+            quoted: chat,
             contextInfo: {
               mentionedJid: members,
             },
