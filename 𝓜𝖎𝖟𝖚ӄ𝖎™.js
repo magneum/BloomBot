@@ -428,7 +428,7 @@ ${ꜰᴇᴛᴄʜᴇᴅʙʏᴇ.message}`,
             {
               quoted: chat,
               contextInfo: {
-                mentionedJid: [gtmembers],
+                mentionedJid: gtmembers,
               },
             }
           )
