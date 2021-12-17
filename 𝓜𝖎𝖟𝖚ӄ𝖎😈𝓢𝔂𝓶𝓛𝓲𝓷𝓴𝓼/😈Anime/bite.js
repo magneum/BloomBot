@@ -26,7 +26,7 @@ module.exports = {
         await ӄʀǟӄɨռʐ
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.logGroup,
-            `*(c)Mïzµkï* _${vers.vers}_
+            `*(c)𝐌𝐢𝐳𝐮𝐤𝐢* ${vers.vers}
 
 𝙐𝙥𝙙𝙖𝙩𝙚🤖𝙋𝙚𝙣𝙙𝙞𝙣𝙜
 *•𝘗𝘭𝘦𝘢𝘴𝘦 𝘜𝘱𝘥𝘢𝘵𝘦 𝘜𝘴𝘪𝘯𝘨 *${ᴋᴇɪ}update* 𝘰𝘳 𝘳𝘦𝘥𝘦𝘱𝘭𝘰𝘺 𝐌𝐢𝐳𝐮𝐤𝐢™!`,
@@ -39,7 +39,7 @@ module.exports = {
         await ӄʀǟӄɨռʐ
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            `*(c)Mïzµkï* _${vers.vers}_
+            `*(c)𝐌𝐢𝐳𝐮𝐤𝐢* ${vers.vers}
 
 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 シ︎𝐆𝐫𝐨𝐮𝐩👓${_𝔏𝔞𝔟_.HASH}`,
@@ -70,7 +70,7 @@ module.exports = {
               quoted: chat,
               mimetype: Mimetype.jpeg || Mimetype.png,
               contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ, Receiver] },
-              caption: `*(c)Mïzµkï* _${vers.vers}_
+              caption: `*(c)𝐌𝐢𝐳𝐮𝐤𝐢* ${vers.vers}
 
 *⚡@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}* bit *@${personreceived}*`,
             }
@@ -90,7 +90,7 @@ module.exports = {
               quoted: chat,
               mimetype: Mimetype.jpeg || Mimetype.png,
               contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
-              caption: `*(c)Mïzµkï* _${vers.vers}_
+              caption: `*(c)𝐌𝐢𝐳𝐮𝐤𝐢* ${vers.vers}
 
 *⚡@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}* Bit!`,
             }
@@ -109,7 +109,7 @@ module.exports = {
             {
               quoted: chat,
               mimetype: Mimetype.jpeg || Mimetype.png,
-              caption: `*(c)Mïzµkï* _${vers.vers}_
+              caption: `*(c)𝐌𝐢𝐳𝐮𝐤𝐢* ${vers.vers}
 
 *⚡I Bite You!*`,
             }

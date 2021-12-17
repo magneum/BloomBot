@@ -26,7 +26,7 @@ module.exports = {
         await ӄʀǟӄɨռʐ
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.logGroup,
-            `*(c)Mïzµkï* _${vers.vers}_
+            `*(c)𝐌𝐢𝐳𝐮𝐤𝐢* ${vers.vers}
 
 ❗ *👓𝓜𝓮𝓮6™* 𝙐𝙥𝙙𝙖𝙩𝙚* 𝙋𝙚𝙣𝙙𝙞𝙣𝙜
 *•𝘗𝘭𝘦𝘢𝘴𝘦 𝘜𝘱𝘥𝘢𝘵𝘦 𝘜𝘴𝘪𝘯𝘨 *${ᴋᴇɪ}update* 𝘰𝘳 𝘳𝘦𝘥𝘦𝘱𝘭𝘰𝘺 𝐌𝐢𝐳𝐮𝐤𝐢™!`,
@@ -40,7 +40,7 @@ module.exports = {
         await ӄʀǟӄɨռʐ
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            `*(c)Mïzµkï* _${vers.vers}_
+            `*(c)𝐌𝐢𝐳𝐮𝐤𝐢* ${vers.vers}
 
 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 シ︎𝐆𝐫𝐨𝐮𝐩👓${_𝔏𝔞𝔟_.HASH}`,
@@ -66,7 +66,7 @@ module.exports = {
             {
               quoted: chat,
               mimetype: Mimetype.png || Mimetype.jpeg,
-              caption: `*(c)Mïzµkï* _${vers.vers}_`,
+              caption: `*(c)𝐌𝐢𝐳𝐮𝐤𝐢* ${vers.vers}`,
             }
           )
           .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));

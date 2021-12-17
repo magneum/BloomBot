@@ -30,7 +30,7 @@ For example-
         await ӄʀǟӄɨռʐ
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.logGroup,
-            `*(c)Mïzµkï* _${vers.vers}_
+            `*(c)𝐌𝐢𝐳𝐮𝐤𝐢* ${vers.vers}
 
 𝙐𝙥𝙙𝙖𝙩𝙚🤖𝙋𝙚𝙣𝙙𝙞𝙣𝙜
 *•𝘗𝘭𝘦𝘢𝘴𝘦 𝘜𝘱𝘥𝘢𝘵𝘦 𝘜𝘴𝘪𝘯𝘨 *${ᴋᴇɪ}update* 𝘰𝘳 𝘳𝘦𝘥𝘦𝘱𝘭𝘰𝘺 𝐌𝐢𝐳𝐮𝐤𝐢™!`,
@@ -44,7 +44,7 @@ For example-
         await ӄʀǟӄɨռʐ
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            `*(c)Mïzµkï* _${vers.vers}_
+            `*(c)𝐌𝐢𝐳𝐮𝐤𝐢* ${vers.vers}
 
 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 シ︎𝐆𝐫𝐨𝐮𝐩👓${_𝔏𝔞𝔟_.HASH}`,
@@ -63,7 +63,7 @@ For example-
       if (!𝓜𝖎𝖟𝖚ӄ𝖎.isGroup) {
         ӄʀǟӄɨռʐ.sendMessage(
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-          `*(c)Mïzµkï* _${vers.vers}_
+          `*(c)𝐌𝐢𝐳𝐮𝐤𝐢* ${vers.vers}
 
 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 This command is only applicable for group chats.`,
@@ -102,7 +102,7 @@ This command is only applicable for group chats.`,
       if (!𝓜𝖎𝖟𝖚ӄ𝖎.isBotGroupAdmin) {
         ӄʀǟӄɨռʐ.sendMessage(
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-          `*(c)Mïzµkï* _${vers.vers}_
+          `*(c)𝐌𝐢𝐳𝐮𝐤𝐢* ${vers.vers}
 
 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 Sorry, dont have the permission to do so since I am not an admin.`,
@@ -120,7 +120,7 @@ Sorry, dont have the permission to do so since I am not an admin.`,
       if (!𝓜𝖎𝖟𝖚ӄ𝖎.isReply && typeof arg[0] == `undefined`) {
         ӄʀǟӄɨռʐ.sendMessage(
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-          `*(c)Mïzµkï* _${vers.vers}_
+          `*(c)𝐌𝐢𝐳𝐮𝐤𝐢* ${vers.vers}
 
 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 Reply/tag/enter contact number of the person to be demoted.`,
@@ -158,7 +158,7 @@ Reply/tag/enter contact number of the person to be demoted.`,
           ӄʀǟӄɨռʐ.groupMakeAdmin(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, arr);
           ӄʀǟӄɨռʐ.sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            `*(c)Mïzµkï* _${vers.vers}_
+            `*(c)𝐌𝐢𝐳𝐮𝐤𝐢* ${vers.vers}
 
 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 ${contact} promoted to admin*`,
@@ -173,7 +173,7 @@ ${contact} promoted to admin*`,
         } else {
           ӄʀǟӄɨռʐ.sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            `*(c)Mïzµkï* _${vers.vers}_
+            `*(c)𝐌𝐢𝐳𝐮𝐤𝐢* ${vers.vers}
 
 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 ${contact} is already an admin`,
@@ -193,7 +193,7 @@ ${contact} is already an admin`,
           await ӄʀǟӄɨռʐ
             .sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              `*(c)Mïzµkï* _${vers.vers}_
+              `*(c)𝐌𝐢𝐳𝐮𝐤𝐢* ${vers.vers}
 
 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 Person not found.`,

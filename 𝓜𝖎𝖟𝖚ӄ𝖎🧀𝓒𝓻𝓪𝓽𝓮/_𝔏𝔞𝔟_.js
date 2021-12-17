@@ -38,19 +38,11 @@ const env = {
       : process.env.DATABASE_URL),
   POSTQL:
     process.env.DATABASE_URL === `./𝓜𝖎𝖟𝖚ӄ𝖎.db`
-      ? new Sequelize({
-          dialect: `sqlite`,
-          storage: process.env.DATABASE_URL,
-        })
+      ? new Sequelize({ dialect: `sqlite`, storage: process.env.DATABASE_URL })
       : new Sequelize(process.env.DATABASE_URL, {
           dialect: `postgres`,
           protocol: `postgres`,
-          dialectOptions: {
-            ssl: {
-              require: true,
-              rejectUnauthorized: false,
-            },
-          },
+          dialectOptions: { ssl: { require: true, rejectUnauthorized: false } },
         }),
   ERROR: `https://i.postimg.cc/NfXSPxHd/Mizuki-Error.jpg`,
   MEE: MizukiMain,

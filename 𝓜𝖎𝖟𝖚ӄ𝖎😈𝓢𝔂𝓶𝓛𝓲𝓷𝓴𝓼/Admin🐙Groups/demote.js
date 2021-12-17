@@ -30,7 +30,7 @@ For example-
         await ӄʀǟӄɨռʐ
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.logGroup,
-            `*(c)Mïzµkï* _${vers.vers}_
+            `*(c)𝐌𝐢𝐳𝐮𝐤𝐢* ${vers.vers}
 
 𝙐𝙥𝙙𝙖𝙩𝙚🤖𝙋𝙚𝙣𝙙𝙞𝙣𝙜
 *•𝘗𝘭𝘦𝘢𝘴𝘦 𝘜𝘱𝘥𝘢𝘵𝘦 𝘜𝘴𝘪𝘯𝘨 *${ᴋᴇɪ}update* 𝘰𝘳 𝘳𝘦𝘥𝘦𝘱𝘭𝘰𝘺 𝐌𝐢𝐳𝐮𝐤𝐢™!`,
@@ -44,7 +44,7 @@ For example-
         await ӄʀǟӄɨռʐ
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            `*(c)Mïzµkï* _${vers.vers}_
+            `*(c)𝐌𝐢𝐳𝐮𝐤𝐢* ${vers.vers}
 
 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 シ︎𝐆𝐫𝐨𝐮𝐩👓${_𝔏𝔞𝔟_.HASH}`,
@@ -64,7 +64,7 @@ For example-
         ӄʀǟӄɨռʐ
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            `*(c)Mïzµkï* _${vers.vers}_
+            `*(c)𝐌𝐢𝐳𝐮𝐤𝐢* ${vers.vers}
 
 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 This command is only applicable in a group chat.`,
@@ -100,7 +100,7 @@ This command is only applicable in a group chat.`,
         ӄʀǟӄɨռʐ
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            `*(c)Mïzµkï* _${vers.vers}_
+            `*(c)𝐌𝐢𝐳𝐮𝐤𝐢* ${vers.vers}
 
 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 Sorry, dont have the permission to do so since I am not an admin.`,
@@ -120,7 +120,7 @@ Sorry, dont have the permission to do so since I am not an admin.`,
         ӄʀǟӄɨռʐ
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            `*(c)Mïzµkï* _${vers.vers}_
+            `*(c)𝐌𝐢𝐳𝐮𝐤𝐢* ${vers.vers}
 
 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 Reply/tag/enter contact number of the person to be demoted.`,
@@ -162,7 +162,7 @@ Reply/tag/enter contact number of the person to be demoted.`,
         ӄʀǟӄɨռʐ
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            `*(c)Mïzµkï* _${vers.vers}_
+            `*(c)𝐌𝐢𝐳𝐮𝐤𝐢* ${vers.vers}
 
 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 ${contact} is the owner of the group`,
@@ -185,7 +185,7 @@ ${contact} is the owner of the group`,
           await ӄʀǟӄɨռʐ
             .sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              `*(c)Mïzµkï* _${vers.vers}_
+              `*(c)𝐌𝐢𝐳𝐮𝐤𝐢* ${vers.vers}
 
 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 ${contact} is demoted from admin`,
@@ -203,7 +203,7 @@ ${contact} is demoted from admin`,
           await ӄʀǟӄɨռʐ
             .sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              `*(c)Mïzµkï* _${vers.vers}_
+              `*(c)𝐌𝐢𝐳𝐮𝐤𝐢* ${vers.vers}
 
 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 ${contact} was not an admin`,
@@ -225,7 +225,7 @@ ${contact} was not an admin`,
           await ӄʀǟӄɨռʐ
             .sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              `*(c)Mïzµkï* _${vers.vers}_
+              `*(c)𝐌𝐢𝐳𝐮𝐤𝐢* ${vers.vers}
 
 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},Person not found.`,
               MessageType.text,

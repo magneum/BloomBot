@@ -38,7 +38,7 @@ module.exports = {
               contextInfo: {
                 mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
               },
-              caption: `*(c)Mïzµkï* _${vers.vers}_
+              caption: `*(c)𝐌𝐢𝐳𝐮𝐤𝐢* ${vers.vers}
 
 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},⚠️𝙉𝙞𝙘𝙚 𝙏𝙧𝙮 𝘽𝙪𝙩 𝙊𝙣𝙡𝙮 𝙈𝙮 𝙊𝙬𝙣𝙚𝙧 𝘾𝙖𝙣 𝙪𝙨𝙚 𝙩𝙝𝙖𝙩 𝙘𝙤𝙢𝙢𝙖𝙣𝙙!`,
             }
@@ -57,7 +57,7 @@ module.exports = {
             contextInfo: {
               mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
             },
-            caption: `*(c)Mïzµkï* _${vers.vers}_
+            caption: `*(c)𝐌𝐢𝐳𝐮𝐤𝐢* ${vers.vers}
 
 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 ʏᴏᴜʀ 𝓜𝖎𝖟𝖚ӄ𝖎 ʙᴏᴛ ɪꜱ ɴᴏᴡ ᴜᴘᴅᴀᴛɪɴɢ.ᴘʟᴇᴀꜱᴇ ᴡᴀɪᴛ ꜰᴏʀ 30-60ꜱᴇᴄ`,

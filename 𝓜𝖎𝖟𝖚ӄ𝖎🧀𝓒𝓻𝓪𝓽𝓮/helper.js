@@ -52,6 +52,12 @@ exports.resolve = function (messageInstance, ӄʀǟӄɨռʐ, groupMetadata) {
     𝓜𝖎𝖟𝖚ӄ𝖎.isReply && messageInstance.message.extendedTextMessage.contextInfo
       ? messageInstance.message.extendedTextMessage.contextInfo.participant
       : ``;
+  𝓜𝖎𝖟𝖚ӄ𝖎.budy =
+    𝓜𝖎𝖟𝖚ӄ𝖎.mimeType === "conversation"
+      ? messageInstance.message.conversation
+      : 𝓜𝖎𝖟𝖚ӄ𝖎.mimeType === "extendedTextMessage"
+      ? messageInstance.message.extendedTextMessage.text
+      : "";
   𝓜𝖎𝖟𝖚ӄ𝖎.body =
     𝓜𝖎𝖟𝖚ӄ𝖎.mimeType === `conversation`
       ? messageInstance.message.conversation
