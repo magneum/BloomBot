@@ -157,6 +157,7 @@ Successfully Activated antilink!
         `./𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/antitemp/antilink.json`,
         JSON.stringify(antilink)
       );
+      console.log(antilink);
       await ӄʀǟӄɨռʐ
         .sendMessage(
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
@@ -182,6 +183,7 @@ Successfully Activated antilink!
         `./𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/antitemp/antilink.json`,
         JSON.stringify(antilink)
       );
+      console.log(antilink);
       await ӄʀǟӄɨռʐ
         .sendMessage(
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
