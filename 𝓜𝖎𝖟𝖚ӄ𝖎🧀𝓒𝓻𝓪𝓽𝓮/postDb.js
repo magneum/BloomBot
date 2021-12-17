@@ -15,7 +15,7 @@ const DataBase = sequelize.define(
       allowNull: false,
       defaultValue: `ON`,
     },
-    Type: {
+    greetingType: {
       type: DataTypes.TEXT,
     },
     message: {
@@ -31,7 +31,7 @@ async function getMessage(jid = null, type) {
   var Msg = await DataBase.findAll({
     where: {
       chat: jid,
-      Type: type,
+      greetingType: type,
     },
   });
 
@@ -46,7 +46,7 @@ async function checkSettings(jid = null, type) {
   var Msg = await DataBase.findAll({
     where: {
       chat: jid,
-      Type: type,
+      greetingType: type,
     },
   });
 
@@ -78,12 +78,12 @@ async function setWelcome(jid = null, text = null) {
   DataBase.findOrCreate({
     where: {
       chat: jid,
-      Type: `setwelcome`,
+      greetingType: `setwelcome`,
     },
     defaults: {
       chat: jid,
       switched: `ON`,
-      Type: `setwelcome`,
+      greetingType: `setwelcome`,
       message: text,
     },
   });
@@ -93,12 +93,12 @@ async function setGoodbye(jid, text = null) {
   DataBase.findOrCreate({
     where: {
       chat: jid,
-      Type: `setgoodbye`,
+      greetingType: `setgoodbye`,
     },
     defaults: {
       chat: jid,
       switched: `ON`,
-      Type: `setgoodbye`,
+      greetingType: `setgoodbye`,
       message: text,
     },
   });
@@ -108,12 +108,12 @@ async function setAntilink(jid, text = null) {
   DataBase.findOrCreate({
     where: {
       chat: jid,
-      Type: `setantilink`,
+      greetingType: `setantilink`,
     },
     defaults: {
       chat: jid,
       switched: `ON`,
-      Type: `setantilink`,
+      greetingType: `setantilink`,
       message: text,
     },
   });
@@ -123,7 +123,7 @@ async function deleteMessage(jid = null, type = null) {
   var Msg = await DataBase.findAll({
     where: {
       chat: jid,
-      Type: type,
+      greetingType: type,
     },
   });
   if (Msg.length < 1) {
