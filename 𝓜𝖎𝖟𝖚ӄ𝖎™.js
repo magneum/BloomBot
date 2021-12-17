@@ -147,7 +147,7 @@ try {
           MessageType.image,
           {
             mimetype: Mimetype.png || Mimetype.jpeg,
-            caption: `*(c)𝐌𝐢𝐳𝐮𝐤𝐢* ${vers.vers}
+            caption: `_(c)𝐌𝐢𝐳𝐮𝐤𝐢 ${vers.vers}_
 
 シ︎💡ᴘʀᴇꜰɪx: ${ᴋᴇɪ}
 シ︎🛸𝐆𝐫𝐨𝐮𝐩: ${_𝔏𝔞𝔟_.HASH}
@@ -172,7 +172,7 @@ try {
         ӄʀǟӄɨռʐ
           .sendMessage(
             groupupdateID.id,
-            `*(c)𝐌𝐢𝐳𝐮𝐤𝐢* ${vers.vers}
+            `_(c)𝐌𝐢𝐳𝐮𝐤𝐢 ${vers.vers}_
 
 *<○ ${groupupdateID.subject} Opened ○>*
 Group has been opened by admin Now all members can send messages`,
@@ -184,7 +184,7 @@ Group has been opened by admin Now all members can send messages`,
         ӄʀǟӄɨռʐ
           .sendMessage(
             groupupdateID.id,
-            `*(c)𝐌𝐢𝐳𝐮𝐤𝐢* ${vers.vers}
+            `_(c)𝐌𝐢𝐳𝐮𝐤𝐢 ${vers.vers}_
 
 *<○ ${groupupdateID.subject} 𝗖𝗹𝗼𝘀𝗲𝗱 ○>*
 ɢʀᴏᴜᴘ ʜᴀꜱ ʙᴇᴇɴ ᴄʟᴏꜱᴇᴅ ʙʏ ᴀᴅᴍɪɴ ɴᴏᴡ ᴏɴʟʏ ᴀᴅᴍɪɴ ᴄᴀɴ ꜱᴇɴᴅ ᴍᴇꜱꜱᴀɢᴇꜱ`,
@@ -197,7 +197,7 @@ Group has been opened by admin Now all members can send messages`,
         ӄʀǟӄɨռʐ
           .sendMessage(
             groupupdateID.id,
-            `*(c)𝐌𝐢𝐳𝐮𝐤𝐢* ${vers.vers}
+            `_(c)𝐌𝐢𝐳𝐮𝐤𝐢 ${vers.vers}_
 
 *<○ ${groupupdateID.subject} 𝗗𝗲𝘀𝗰𝗿𝗶𝗽𝘁𝗶𝗼𝗻 𝗖𝗵𝗮𝗻𝗴𝗲 ○>*
 • 𝙶𝚛𝚘𝚞𝚙 𝚍𝚎𝚜𝚌𝚛𝚒𝚙𝚝𝚒𝚘𝚗 𝚑𝚊𝚜 𝚋𝚎𝚎𝚗 𝚌𝚑𝚊𝚗𝚐𝚎𝚍 𝚋𝚢:@${update.descOwner.split(`@`)[0]}
@@ -217,7 +217,7 @@ ${update.desc}`,
         ӄʀǟӄɨռʐ
           .sendMessage(
             groupupdateID.id,
-            `*(c)𝐌𝐢𝐳𝐮𝐤𝐢* ${vers.vers}
+            `_(c)𝐌𝐢𝐳𝐮𝐤𝐢 ${vers.vers}_
 
 *<○ ${groupupdateID.subject} 𝗦𝗲𝘁𝘁𝗶𝗻𝗴 𝗖h𝗮𝗻𝗴𝗲 ○>*
 ᴇᴅɪᴛ ɢʀᴏᴜᴘ ɪɴꜰᴏ ʜᴀꜱ ʙᴇᴇɴ ᴏᴘᴇɴᴇᴅ ꜰᴏʀ ᴍᴇᴍʙᴇʀꜱ ɴᴏᴡ ᴀʟʟ ᴍᴇᴍʙᴇʀꜱ ᴄᴀɴ ᴇᴅɪᴛ ᴛʜɪꜱ ɢʀᴏᴜᴘ ɪɴꜰᴏ`,
@@ -230,7 +230,7 @@ ${update.desc}`,
         ӄʀǟӄɨռʐ
           .sendMessage(
             groupupdateID.id,
-            `*(c)𝐌𝐢𝐳𝐮𝐤𝐢* ${vers.vers}
+            `_(c)𝐌𝐢𝐳𝐮𝐤𝐢 ${vers.vers}_
 
 *<○ ${groupupdateID.subject} 𝗦𝗲𝘁𝘁𝗶𝗻𝗴 𝗖𝗵𝗮𝗻𝗴𝗲 ○>*
 ɢʀᴏᴜᴘ ɪɴꜰᴏ ʜᴀꜱ ʙᴇᴇɴ ᴄʟᴏꜱᴇᴅ ꜰᴏʀ ᴍᴇᴍʙᴇʀꜱ ɴᴏᴡ ᴏɴʟʏ ɢʀᴏᴜᴘ ᴀᴅᴍɪɴꜱ ᴄᴀɴ ᴇᴅɪᴛ ᴛʜɪꜱ ɢʀᴏᴜᴘ ɪɴꜰᴏ`,
@@ -257,7 +257,7 @@ ${update.desc}`,
         return await ӄʀǟӄɨռʐ
           .sendMessage(
             GroupID,
-            `*(c)𝐌𝐢𝐳𝐮𝐤𝐢* ${vers.vers}
+            `_(c)𝐌𝐢𝐳𝐮𝐤𝐢 ${vers.vers}_
 
 ┌─────⭓
 │⦿ ʜᴇʟʟᴏ ᴇᴠᴇʀʏᴏɴᴇ, ʀᴇᴀᴅʏ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ʜᴇʀᴇ
@@ -330,7 +330,7 @@ ${update.desc}`,
                     contextInfo: {
                       mentionedJid: [MemNum],
                     },
-                    caption: `*(c)𝐌𝐢𝐳𝐮𝐤𝐢* ${vers.vers}
+                    caption: `_(c)𝐌𝐢𝐳𝐮𝐤𝐢 ${vers.vers}_
 
 @${personcum}👋🏽${byetext}
 
