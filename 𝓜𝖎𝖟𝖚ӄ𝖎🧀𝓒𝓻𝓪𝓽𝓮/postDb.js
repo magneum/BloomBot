@@ -104,6 +104,21 @@ async function setGoodbye(jid, text = null) {
   });
 }
 // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
+async function banGroup(jid, text = null) {
+  DataBase.findOrCreate({
+    where: {
+      chat: jid,
+      Type: `bangroup`,
+    },
+    defaults: {
+      chat: jid,
+      switched: `ON`,
+      Type: `bangroup`,
+      message: text,
+    },
+  });
+}
+// ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
 async function setAntilink(jid, text = null) {
   DataBase.findOrCreate({
     where: {
