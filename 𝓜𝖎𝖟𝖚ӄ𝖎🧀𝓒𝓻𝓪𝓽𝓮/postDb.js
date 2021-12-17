@@ -134,7 +134,6 @@ async function deleteMessage(jid = null, type = null) {
 }
 // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
 module.exports = {
-  banGroup: banGroup,
   DataBase: DataBase,
   setWelcome: setWelcome,
   setGoodbye: setGoodbye,
