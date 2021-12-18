@@ -22,23 +22,32 @@ ${ℓαвєяяσя}
       },
     }
   );
+  // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
   await ӄʀǟӄɨռʐ.sendMessage(
     𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-    {
-      url: _𝔏𝔞𝔟_.ERROR,
-    },
-    MessageType.image,
-    {
-      mimetype: Mimetype.png,
-      contextInfo: {
-        mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
-      },
-      caption: `_(c)𝐌𝐢𝐳𝐮𝐤𝐢 ${vers.vers}_
+    `_(c)𝐌𝐢𝐳𝐮𝐤𝐢 ${vers.vers}_
 
 
 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 Please try Again!There Was temporary erorr in that command.`,
-    }
+    MessageType.text
   );
+  //   await ӄʀǟӄɨռʐ.sendMessage(
+  //     𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+  //     {
+  //       url: _𝔏𝔞𝔟_.ERROR,
+  //     },
+  //     MessageType.image,
+  //     {
+  //       mimetype: Mimetype.png,
+  //       contextInfo: {
+  //         mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
+  //       },
+  //       caption: `_(c)𝐌𝐢𝐳𝐮𝐤𝐢 ${vers.vers}_
+
+  // •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
+  // Please try Again!There Was temporary erorr in that command.`,
+  //     }
+  //   );
 };
 // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
