@@ -30,7 +30,11 @@ ${ℓαвєяяσя}
 
 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 Please try Again!There Was temporary erorr in that command.`,
-    MessageType.text
+    MessageType.text, {
+    contextInfo: {
+      mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
+    },
+  }
   );
   //   await ӄʀǟӄɨռʐ.sendMessage(
   //     𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
