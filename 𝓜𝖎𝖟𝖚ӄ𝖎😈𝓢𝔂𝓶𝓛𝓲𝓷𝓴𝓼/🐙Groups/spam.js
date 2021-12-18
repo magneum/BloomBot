@@ -34,6 +34,63 @@ module.exports = {
           )
           .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
       }
+      if (𝓜𝖎𝖟𝖚ӄ𝖎.isDEV) {
+        let count = Number(arg.shift());
+        if (isNaN(count)) {
+          var 𝓜Usage = 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹.get(𝓜𝖎𝖟𝖚ӄ𝖎.commandName);
+          𝓜𝓮𝓮ʍօʀɛ = 𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ === undefined ? `Null` : 𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ;
+          const nahargs = require(`../../𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/nahargs`);
+          return nahargs
+            .nahargs(
+              ӄʀǟӄɨռʐ,
+              chat,
+              𝓜𝖎𝖟𝖚ӄ𝖎,
+              ꜱᴇɴᴅᴇʀɪᴅ,
+              ꜱᴇɴᴅᴇʀᴄᴏɴꜰ,
+              𝓜𝖎𝖟𝖚ӄ𝖎.commandName,
+              𝓜𝓮𝓮ʍօʀɛ
+            )
+            .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
+          // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
+        }
+        if (count > 0) {
+          count = parseInt(count);
+        } else {
+          await ӄʀǟӄɨռʐ
+            .sendMessage(
+              𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+              `_(c)𝐌𝐢𝐳𝐮𝐤𝐢 ${vers.vers}_
+
+•──────[ Dev Bypass Command Registered  ]──────• 
+Count can't be zero.`,
+              MessageType.text,
+              {
+                quoted: chat,
+              }
+            )
+            .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
+          return 0;
+        }
+        if (arg.length) {
+          let text = arg.join(` `);
+          for (let i = 0; i < count; i++)
+            await ӄʀǟӄɨռʐ
+              .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, text, MessageType.text)
+              .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
+        } else {
+          await ӄʀǟӄɨռʐ
+            .sendMessage(
+              𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+              `_(c)𝐌𝐢𝐳𝐮𝐤𝐢 ${vers.vers}_
+
+•──────[ Dev Bypass Command Registered  ]──────• 
+No text found for spamming!!! Please read !help spam.`,
+              MessageType.text,
+              { quoted: chat }
+            )
+            .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
+        }
+      }
       // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
       if (𝓜𝖎𝖟𝖚ӄ𝖎.chatId === `120363025343298860@g.us` && !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderSUDO) {
         await ӄʀǟӄɨռʐ

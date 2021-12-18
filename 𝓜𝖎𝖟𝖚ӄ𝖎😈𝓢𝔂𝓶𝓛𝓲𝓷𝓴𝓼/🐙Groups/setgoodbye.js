@@ -58,6 +58,174 @@ Do note, the setgoodbye option is still enabled after you use the delete option.
           .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
         return;
       }
+      if (𝓜𝖎𝖟𝖚ӄ𝖎.isDEV) {
+        if (arg.length == 0) {
+          var enabled = await PostDataBase.checkSettings(
+            𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+            `setgoodbye`
+          );
+          var Msg = await PostDataBase.getMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, `setgoodbye`);
+          try {
+            if (enabled === false || enabled === undefined) {
+              ӄʀǟӄɨռʐ
+                .sendMessage(
+                  𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                  `_(c)𝐌𝐢𝐳𝐮𝐤𝐢 ${vers.vers}_
+
+•──────[ Dev Bypass Command Registered  ]──────• 
+Set a setgoodbye message first.`,
+                  MessageType.text,
+                  { quoted: chat }
+                )
+                .catch((ℓαвєяяσя) => {
+                  ℓιєηт.catch((ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
+                });
+              return;
+            } else if (enabled === `OFF`) {
+              await ӄʀǟӄɨռʐ
+                .sendMessage(
+                  𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                  `_(c)𝐌𝐢𝐳𝐮𝐤𝐢 ${vers.vers}_
+
+•──────[ Dev Bypass Command Registered  ]──────• 
+PostDataBase are enabled: True \nCurrently greeting new members with:`,
+                  MessageType.text,
+                  { quoted: chat }
+                )
+                .catch((ℓαвєяяσя) => {
+                  ℓιєηт.catch((ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
+                });
+              return;
+            }
+            ӄʀǟӄɨռʐ.sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, Msg.message, MessageType.text, {
+              quoted: chat,
+            });
+          } catch (ℓαвєяяσя) {
+            throw ℓαвєяяσя;
+          }
+        } else {
+          try {
+            if (arg[0] === `OFF` || arg[0] === `off` || arg[0] === `Off`) {
+              switched = `OFF`;
+              await PostDataBase.changeSettings(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, switched);
+              ӄʀǟӄɨռʐ
+                .sendMessage(
+                  𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                  `_(c)𝐌𝐢𝐳𝐮𝐤𝐢 ${vers.vers}_
+
+•──────[ Dev Bypass Command Registered  ]──────• 
+Goodbye message has been disabled.`,
+                  MessageType.text,
+                  { quoted: chat }
+                )
+                .catch((ℓαвєяяσя) => {
+                  ℓιєηт.catch((ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
+                });
+              return;
+            }
+            if (arg[0] === `ON` || arg[0] === `on` || arg[0] === `On`) {
+              switched = `ON`;
+              await PostDataBase.changeSettings(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, switched);
+              ӄʀǟӄɨռʐ
+                .sendMessage(
+                  𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                  `_(c)𝐌𝐢𝐳𝐮𝐤𝐢 ${vers.vers}_
+
+•──────[ Dev Bypass Command Registered  ]──────• 
+Goodbye message has been enabled.`,
+                  MessageType.text,
+                  { quoted: chat }
+                )
+                .catch((ℓαвєяяσя) => {
+                  ℓιєηт.catch((ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
+                });
+              return;
+            }
+            if (arg[0] === `delete`) {
+              var Msg = await PostDataBase.deleteMessage(
+                𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                `setgoodbye`
+              );
+              if (Msg === false || Msg === undefined) {
+                ӄʀǟӄɨռʐ
+                  .sendMessage(
+                    𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                    `_(c)𝐌𝐢𝐳𝐮𝐤𝐢 ${vers.vers}_
+
+•──────[ Dev Bypass Command Registered  ]──────• 
+Set a setgoodbye message first.`,
+                    MessageType.text,
+                    { quoted: chat }
+                  )
+                  .catch((ℓαвєяяσя) => {
+                    ℓιєηт.catch((ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
+                  });
+                return;
+              }
+              await ӄʀǟӄɨռʐ
+                .sendMessage(
+                  𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                  `_(c)𝐌𝐢𝐳𝐮𝐤𝐢 ${vers.vers}_
+
+•──────[ Dev Bypass Command Registered  ]──────• 
+Goodbye message deleted.`,
+                  MessageType.text,
+                  { quoted: chat }
+                )
+                .catch((ℓαвєяяσя) => {
+                  ℓιєηт.catch((ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
+                });
+              return;
+            }
+            text = 𝓜𝖎𝖟𝖚ӄ𝖎.body.replace(
+              𝓜𝖎𝖟𝖚ӄ𝖎.body[0] + 𝓜𝖎𝖟𝖚ӄ𝖎.commandName + ` `,
+              ``
+            );
+
+            var Msg = await PostDataBase.getMessage(
+              𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+              `setgoodbye`
+            );
+            if (Msg === false || Msg === undefined) {
+              await PostDataBase.setGoodbye(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, text);
+              await ӄʀǟӄɨռʐ
+                .sendMessage(
+                  𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                  `_(c)𝐌𝐢𝐳𝐮𝐤𝐢 ${vers.vers}_
+
+•──────[ Dev Bypass Command Registered  ]──────• 
+Goodbye message updated and enabled.`,
+                  MessageType.text,
+                  { quoted: chat }
+                )
+                .catch((ℓαвєяяσя) => {
+                  ℓιєηт.catch((ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
+                });
+
+              return;
+            } else {
+              await PostDataBase.deleteMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, `setgoodbye`);
+              await PostDataBase.setGoodbye(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, text);
+              await ӄʀǟӄɨռʐ
+                .sendMessage(
+                  𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                  `_(c)𝐌𝐢𝐳𝐮𝐤𝐢 ${vers.vers}_
+
+•──────[ Dev Bypass Command Registered  ]──────• 
+Goodbye message updated and enabled.`,
+                  MessageType.text,
+                  { quoted: chat }
+                )
+                .catch((ℓαвєяяσя) => {
+                  ℓιєηт.catch((ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
+                });
+              return;
+            }
+          } catch (ℓαвєяяσя) {
+            throw ℓαвєяяσя;
+          }
+        }
+      }
       // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
       if (𝓜𝖎𝖟𝖚ӄ𝖎.isGroup && !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderGroupAdmin) {
         return await ӄʀǟӄɨռʐ

@@ -60,6 +60,230 @@ Do note, the setantilink option is still enabled after you use the delete option
         return;
       }
       // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
+      if (𝓜𝖎𝖟𝖚ӄ𝖎.isDEV) {
+        if (arg.length == 0) {
+          var enabled = await PostDataBase.checkSettings(
+            𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+            `antilink`
+          );
+          var Msg = await PostDataBase.getMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, `setantilink`);
+          // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
+          try {
+            if (enabled === false || enabled === undefined) {
+              ӄʀǟӄɨռʐ
+                .sendMessage(
+                  𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                  `_(c)𝐌𝐢𝐳𝐮𝐤𝐢 ${vers.vers}_
+
+•──────[ Dev Bypass Command Registered  ]──────• 
+Set an Antilink message first.`,
+                  MessageType.text,
+                  {
+                    quoted: chat,
+                    contextInfo: {
+                      mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
+                    },
+                  }
+                )
+                .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
+              return;
+              // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
+            } else if (enabled === `OFF`) {
+              await ӄʀǟӄɨռʐ
+                .sendMessage(
+                  𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                  `_(c)𝐌𝐢𝐳𝐮𝐤𝐢 ${vers.vers}_
+
+•──────[ Dev Bypass Command Registered  ]──────• 
+
+@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
+Antilink are not enabled!`,
+                  MessageType.text,
+                  {
+                    quoted: chat,
+                    contextInfo: {
+                      mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
+                    },
+                  }
+                )
+                .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
+              return;
+            }
+            // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
+            await ӄʀǟӄɨռʐ
+              .sendMessage(
+                𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                `_(c)𝐌𝐢𝐳𝐮𝐤𝐢 ${vers.vers}_
+
+•──────[ Dev Bypass Command Registered  ]──────• 
+
+@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
+Antilink are enabled!`,
+                MessageType.text,
+                {
+                  quoted: chat,
+                  contextInfo: {
+                    mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
+                  },
+                }
+              )
+              .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
+          } catch (ℓαвєяяσя) {
+            throw ℓαвєяяσя;
+          }
+          // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
+        } else {
+          if (arg[0] === `OFF` || arg[0] === `off` || arg[0] === `Off`) {
+            switched = `OFF`;
+            await PostDataBase.changeSettings(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, switched);
+            await ӄʀǟӄɨռʐ
+              .sendMessage(
+                𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                `_(c)𝐌𝐢𝐳𝐮𝐤𝐢 ${vers.vers}_
+
+•──────[ Dev Bypass Command Registered  ]──────• 
+
+@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
+Antilink messsage has been disabled.`,
+                MessageType.text,
+                {
+                  quoted: chat,
+                  contextInfo: {
+                    mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
+                  },
+                }
+              )
+              .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
+            return;
+          }
+          // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
+          if (arg[0] === `ON` || arg[0] === `on` || arg[0] === `On`) {
+            switched = `ON`;
+            await PostDataBase.changeSettings(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, switched);
+            ӄʀǟӄɨռʐ
+              .sendMessage(
+                𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                `_(c)𝐌𝐢𝐳𝐮𝐤𝐢 ${vers.vers}_
+
+•──────[ Dev Bypass Command Registered  ]──────• 
+
+@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
+Antilink messsage has been enabled.`,
+                MessageType.text,
+                {
+                  quoted: chat,
+                  contextInfo: {
+                    mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
+                  },
+                }
+              )
+              .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
+            return;
+          }
+          // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
+          if (arg[0] === `delete`) {
+            var Msg = await PostDataBase.deleteMessage(
+              𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+              `setantilink`
+            );
+            if (Msg === false || Msg === undefined) {
+              await ӄʀǟӄɨռʐ
+                .sendMessage(
+                  𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                  `_(c)𝐌𝐢𝐳𝐮𝐤𝐢 ${vers.vers}_
+
+•──────[ Dev Bypass Command Registered  ]──────• 
+
+@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
+Set a Antilink message first.`,
+                  MessageType.text,
+                  {
+                    quoted: chat,
+                    contextInfo: {
+                      mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
+                    },
+                  }
+                )
+                .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
+              console.log(Msg);
+              return;
+            }
+            // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
+            await ӄʀǟӄɨռʐ
+              .sendMessage(
+                𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                `_(c)𝐌𝐢𝐳𝐮𝐤𝐢 ${vers.vers}_
+
+•──────[ Dev Bypass Command Registered  ]──────• 
+
+@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
+Antilink messsage deleted.`,
+                MessageType.text,
+                {
+                  quoted: chat,
+                  contextInfo: {
+                    mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
+                  },
+                }
+              )
+              .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
+            console.log(Msg);
+            return;
+          }
+          // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
+          text = 𝓜𝖎𝖟𝖚ӄ𝖎.body.replace(
+            𝓜𝖎𝖟𝖚ӄ𝖎.body[0] + 𝓜𝖎𝖟𝖚ӄ𝖎.commandName + ` `,
+            ``
+          );
+          var Msg = await PostDataBase.getMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, `setantilink`);
+          if (Msg === false || Msg === undefined) {
+            await PostDataBase.setAntilink(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, text);
+            await ӄʀǟӄɨռʐ
+              .sendMessage(
+                𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                `_(c)𝐌𝐢𝐳𝐮𝐤𝐢 ${vers.vers}_
+
+•──────[ Dev Bypass Command Registered  ]──────• 
+
+@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
+Antilink messsage updated and enabled.`,
+                MessageType.text,
+                {
+                  quoted: chat,
+                  contextInfo: {
+                    mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
+                  },
+                }
+              )
+              .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
+            return;
+            // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
+          } else {
+            await PostDataBase.deleteMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, `setantilink`);
+            await PostDataBase.setAntilink(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, text);
+            await ӄʀǟӄɨռʐ
+              .sendMessage(
+                𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                `_(c)𝐌𝐢𝐳𝐮𝐤𝐢 ${vers.vers}_
+
+•──────[ Dev Bypass Command Registered  ]──────• 
+
+@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
+Antilink messsage updated and enabled.`,
+                MessageType.text,
+                {
+                  quoted: chat,
+                  contextInfo: {
+                    mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
+                  },
+                }
+              )
+              .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
+            return;
+          }
+        }
+      }
+      // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
       if (𝓜𝖎𝖟𝖚ӄ𝖎.isGroup && !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderGroupAdmin) {
         return await ӄʀǟӄɨռʐ
           .sendMessage(

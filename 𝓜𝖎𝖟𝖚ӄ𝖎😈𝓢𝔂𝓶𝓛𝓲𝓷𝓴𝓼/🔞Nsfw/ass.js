@@ -116,8 +116,9 @@ Asked By? @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ} (admin)`,
                   },
                   caption: `_(c)𝐌𝐢𝐳𝐮𝐤𝐢 ${vers.vers}_
 
-Nsfw Topic: *Ass*
-Asked By? @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ} (dev)`,
+Nsfw Topic: *Ass*              
+•──────[ Dev Bypass Command Registered  ]──────• 
+`,
                 }
               )
               .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));

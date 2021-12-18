@@ -39,6 +39,187 @@ Do note, the setwelcome option is still enabled after you use the delete option.
           )
           .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
       }
+      if (𝓜𝖎𝖟𝖚ӄ𝖎.isDEV) {
+        var Msg = await PostDataBase.getMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, `setwelcome`);
+        if (arg.length == 0) {
+          var enabled = await PostDataBase.checkSettings(
+            𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+            `setwelcome`
+          );
+          try {
+            if (enabled === false || enabled === undefined) {
+              ӄʀǟӄɨռʐ
+                .sendMessage(
+                  𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                  `_(c)𝐌𝐢𝐳𝐮𝐤𝐢 ${vers.vers}_
+
+•──────[ Dev Bypass Command Registered  ]──────• 
+Set a setwelcome message first.`,
+                  MessageType.text,
+                  { quoted: chat }
+                )
+                .catch((ℓαвєяяσя) => {
+                  ℓιєηт.catch((ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
+                });
+              return;
+            } else if (enabled === `OFF`) {
+              ӄʀǟӄɨռʐ
+                .sendMessage(
+                  𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                  `_(c)𝐌𝐢𝐳𝐮𝐤𝐢 ${vers.vers}_
+
+•──────[ Dev Bypass Command Registered  ]──────• 
+PostDataBase are enabled: False \nCurrently greeting new members with:`,
+                  MessageType.text,
+                  { quoted: chat }
+                )
+                .catch((ℓαвєяяσя) => {
+                  ℓιєηт.catch((ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
+                });
+              return;
+            }
+
+            ӄʀǟӄɨռʐ
+              .sendMessage(
+                𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                `_(c)𝐌𝐢𝐳𝐮𝐤𝐢 ${vers.vers}_
+
+•──────[ Dev Bypass Command Registered  ]──────• 
+PostDataBase are enabled: True \nCurrently greeting new members with:`,
+                MessageType.text,
+                { quoted: chat }
+              )
+              .catch((ℓαвєяяσя) => {
+                ℓιєηт.catch((ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
+              });
+            ӄʀǟӄɨռʐ
+              .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, Msg.message, MessageType.text, {
+                quoted: chat,
+              })
+              .catch((ℓαвєяяσя) => {
+                ℓιєηт.catch((ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
+              });
+          } catch (ℓαвєяяσя) {
+            throw ℓαвєяяσя;
+          }
+        } else {
+          try {
+            if (arg[0] === `OFF` || arg[0] === `off` || arg[0] === `Off`) {
+              switched = `OFF`;
+              await PostDataBase.changeSettings(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, switched);
+              ӄʀǟӄɨռʐ
+                .sendMessage(
+                  𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                  `_(c)𝐌𝐢𝐳𝐮𝐤𝐢 ${vers.vers}_
+
+•──────[ Dev Bypass Command Registered  ]──────• 
+Welcome message has been disabled.`,
+                  MessageType.text,
+                  { quoted: chat }
+                )
+                .catch((ℓαвєяяσя) => {
+                  ℓιєηт.catch((ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
+                });
+              return;
+            }
+            if (arg[0] === `ON` || arg[0] === `on` || arg[0] === `On`) {
+              switched = `ON`;
+              await PostDataBase.changeSettings(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, switched);
+              ӄʀǟӄɨռʐ
+                .sendMessage(
+                  𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                  `_(c)𝐌𝐢𝐳𝐮𝐤𝐢 ${vers.vers}_
+
+•──────[ Dev Bypass Command Registered  ]──────• 
+Welcome message has been enabled.`,
+                  MessageType.text,
+                  { quoted: chat }
+                )
+                .catch((ℓαвєяяσя) => {
+                  ℓιєηт.catch((ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
+                });
+              return;
+            }
+            if (arg[0] === `delete`) {
+              var Msg = await PostDataBase.deleteMessage(
+                𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                `setwelcome`
+              );
+              if (Msg === false || Msg === undefined) {
+                ӄʀǟӄɨռʐ
+                  .sendMessage(
+                    𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                    `_(c)𝐌𝐢𝐳𝐮𝐤𝐢 ${vers.vers}_
+
+•──────[ Dev Bypass Command Registered  ]──────• 
+Set a setwelcome message first.`,
+                    MessageType.text,
+                    { quoted: chat }
+                  )
+                  .catch((ℓαвєяяσя) => {
+                    ℓιєηт.catch((ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
+                  });
+                return;
+              }
+
+              await ӄʀǟӄɨռʐ
+                .sendMessage(
+                  𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                  `_(c)𝐌𝐢𝐳𝐮𝐤𝐢 ${vers.vers}_
+
+•──────[ Dev Bypass Command Registered  ]──────• 
+Welcome message deleted.`,
+                  MessageType.text,
+                  { quoted: chat }
+                )
+                .catch((ℓαвєяяσя) => {
+                  ℓιєηт.catch((ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
+                });
+              return;
+            }
+            text = 𝓜𝖎𝖟𝖚ӄ𝖎.body.replace(
+              𝓜𝖎𝖟𝖚ӄ𝖎.body[0] + 𝓜𝖎𝖟𝖚ӄ𝖎.commandName + ` `,
+              ``
+            );
+            if (Msg === false || Msg === undefined) {
+              await PostDataBase.setWelcome(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, text);
+              await ӄʀǟӄɨռʐ
+                .sendMessage(
+                  𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                  `_(c)𝐌𝐢𝐳𝐮𝐤𝐢 ${vers.vers}_
+
+•──────[ Dev Bypass Command Registered  ]──────• 
+Welcome message updated and enabled.`,
+                  MessageType.text,
+                  { quoted: chat }
+                )
+                .catch((ℓαвєяяσя) => {
+                  ℓιєηт.catch((ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
+                });
+              return;
+            } else {
+              await PostDataBase.deleteMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, `setwelcome`);
+              await PostDataBase.setWelcome(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, text);
+              await ӄʀǟӄɨռʐ
+                .sendMessage(
+                  𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                  `_(c)𝐌𝐢𝐳𝐮𝐤𝐢 ${vers.vers}_
+
+•──────[ Dev Bypass Command Registered  ]──────• 
+Welcome message updated and enabled.`,
+                  MessageType.text,
+                  { quoted: chat }
+                )
+                .catch((ℓαвєяяσя) => {
+                  ℓιєηт.catch((ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
+                });
+              return;
+            }
+          } catch (ℓαвєяяσя) {
+            throw ℓαвєяяσя;
+          }
+        }
+      }
       // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
       if (𝓜𝖎𝖟𝖚ӄ𝖎.chatId === `120363025343298860@g.us` && !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderSUDO) {
         await ӄʀǟӄɨռʐ
