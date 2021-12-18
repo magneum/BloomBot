@@ -110,16 +110,6 @@ module.exports = {
                   buttonText: { displayText: `${ᴋᴇɪ}${moonshine}` },
                   type: 1,
                 },
-                {
-                  buttonId: `${ᴋᴇɪ}${moonshine}`,
-                  buttonText: { displayText: `${ᴋᴇɪ}${moonshine}` },
-                  type: 1,
-                },
-                {
-                  buttonId: `${ᴋᴇɪ}${moonshine}`,
-                  buttonText: { displayText: `${ᴋᴇɪ}${moonshine}` },
-                  type: 1,
-                },
               ],
               headerType: 4,
               imageMessage: media.message.imageMessage,
