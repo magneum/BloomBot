@@ -33,7 +33,7 @@ module.exports = {
             quoted: chat,
             mimetype: Mimetype.png || Mimetype.jpeg,
             contextInfo: {
-              mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
+              mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
             },
             caption: `_(c)𝐌𝐢𝐳𝐮𝐤𝐢 ${vers.vers}_
 

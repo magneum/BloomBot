@@ -103,7 +103,7 @@ module.exports = {
       await ӄʀǟӄɨռʐ
         .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, buttonMessage, MessageType.buttonsMessage, {
           quoted: chat,
-          contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
+          contextInfo: { mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender] },
         })
         .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
     } catch (ℓαвєяяσя) {

@@ -47,7 +47,7 @@ module.exports = {
             {
               quoted: chat,
               contextInfo: {
-                mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
+                mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
               },
             }
           )
@@ -89,7 +89,7 @@ module.exports = {
             {
               quoted: chat,
               mimetype: Mimetype.jpeg || Mimetype.png,
-              contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
+              contextInfo: { mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender] },
               caption: `_(c)𝐌𝐢𝐳𝐮𝐤𝐢 ${vers.vers}_
 
 *😒@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}* is poking!`,
