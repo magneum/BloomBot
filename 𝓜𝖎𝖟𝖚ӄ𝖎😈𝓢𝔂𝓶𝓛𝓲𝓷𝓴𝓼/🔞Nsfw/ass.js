@@ -1,132 +1,171 @@
-// ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
+// ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[🐙]  𝐌𝐢𝐳𝐮𝐤𝐢™   [🐙]──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
+const Downloader = require(`nodejs-file-downloader`);
 const _𝔏𝔞𝔟_ = require(`../../𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/_𝔏𝔞𝔟_`);
 const ℓιєηт = require(`../../𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/catch`);
 const akaneko = require(`akaneko`);
+const fs = require(`fs`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 const ᴍɪᴢᴜᴋɪɢɪᴛ = require(`simple-git`)();
-const vers = require(`../../package.json`);
-// ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
+// ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[🐙]  𝐌𝐢𝐳𝐮𝐤𝐢™   [🐙]──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
 module.exports = {
   name: `ass`,
   description: `ɪ ᴋɴᴏᴡ ʏᴏᴜ ʟɪᴋᴇ ᴀɴɪᴍᴇ ᴀꜱꜱ~`,
   𝓜𝓮𝓮6ʍօʀɛ: `${ᴋᴇɪ}`,
   async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
     try {
-      // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
       await ᴍɪᴢᴜᴋɪɢɪᴛ.fetch();
       var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
+      var ᴛᴏᴘɪᴄ = await akaneko.nsfw.ass();
       var ꜱᴇɴᴅᴇʀᴄᴏɴꜰ = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
-      var ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ = await ᴍɪᴢᴜᴋɪɢɪᴛ.log([
+      // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[🐙]  𝐌𝐢𝐳𝐮𝐤𝐢™   [🐙]──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
+      const ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ = await ᴍɪᴢᴜᴋɪɢɪᴛ.log([
         `KrakinzLab..origin/KrakinzLab`,
       ]);
-      // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
       if (ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total != 0) {
         console.log(ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ);
         await ӄʀǟӄɨռʐ
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.logGroup,
-            `*⦿𝐌𝐢𝐳𝐮𝐤𝐢™   ⬡••••••••⬡*
-❗ 𝙈𝙚𝙚6 𝙐𝙥𝙙𝙖𝙩𝙚 𝙋𝙚𝙣𝙙𝙞𝙣𝙜
+            `(c)𝐌𝐢𝐳𝐮𝐤𝐢
 
-*•𝘗𝘭𝘦𝘢𝘴𝘦 𝘜𝘱𝘥𝘢𝘵𝘦 𝘜𝘴𝘪𝘯𝘨 *${ᴋᴇɪ}update* 𝘰𝘳 𝘳𝘦𝘥𝘦𝘱𝘭𝘰𝘺 𝐌𝐢𝐳𝐮𝐤𝐢™!`,
+❗ 𝐌𝐢𝐳𝐮𝐤𝐢™ 𝙐𝙥𝙙𝙖𝙩𝙚 𝙋𝙚𝙣𝙙𝙞𝙣𝙜
+•𝘗𝘭𝘦𝘢𝘴𝘦 𝘜𝘱𝘥𝘢𝘵𝘦 𝘜𝘴𝘪𝘯𝘨 ${ᴋᴇɪ}update 𝘰𝘳 𝘳𝘦𝘥𝘦𝘱𝘭𝘰𝘺 𝐌𝐢𝐳𝐮𝐤𝐢™!`,
             MessageType.text,
             { quoted: chat }
           )
           .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
-      } else {
-        console.log(`No commits to pull`);
       }
-      if (𝓜𝖎𝖟𝖚ӄ𝖎.chatId === `120363022474862829@g.us`) {
+      // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[🐙]  𝐌𝐢𝐳𝐮𝐤𝐢™   [🐙]──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
+      if (
+        𝓜𝖎𝖟𝖚ӄ𝖎.isGroup &&
+        !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderGroupAdmin &&
+        !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderKRAK
+      ) {
         return await ӄʀǟӄɨռʐ
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            {
-              url: await akaneko.nsfw.ass(),
-            },
-            MessageType.image,
-            {
-              mimetype: Mimetype.png || Mimetype.jpeg,
-              quoted: chat,
-              contextInfo: {
-                mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
-              },
-              caption: `_(c)𝐌𝐢𝐳𝐮𝐤𝐢 ${vers.vers}_
+            `(c)𝐌𝐢𝐳𝐮𝐤𝐢
 
-Nsfw Topic: *Ass*
-Asked By? @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ} (admin)`,
-            }
-          )
-          .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
-      }
-      if (𝓜𝖎𝖟𝖚ӄ𝖎.chatId === `120363025343298860@g.us` && !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderSUDO) {
-        await ӄʀǟӄɨռʐ
-          .sendMessage(
-            𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            `_(c)𝐌𝐢𝐳𝐮𝐤𝐢 ${vers.vers}_
-
-•@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
-シ︎𝐆𝐫𝐨𝐮𝐩👓${_𝔏𝔞𝔟_.HASH}`,
+@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}, 
+ʏᴏᴜ ᴅᴏɴ'ᴛ ꜱᴇᴇᴍ ᴛᴏ ʙᴇ ᴀᴅᴍɪɴ..`,
             MessageType.text,
             {
               quoted: chat,
               contextInfo: {
-                mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
+                mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
               },
             }
           )
           .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
-        return;
-      } else {
-        // ⦿──────────────────────────────────────────────────────────────────⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿──────────────────────────────────────────────────────────────────⦿`;
-        if (𝓜𝖎𝖟𝖚ӄ𝖎.isGroup && !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderGroupAdmin) {
-          await ӄʀǟӄɨռʐ
-            .sendMessage(
-              𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              {
-                url: _𝔏𝔞𝔟_.ERROR,
-              },
-              MessageType.image,
-              {
-                quoted: chat,
-                contextInfo: {
-                  mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
-                },
-                mimetype: Mimetype.png || Mimetype.jpeg,
-                caption: `
-⚠️𝗘𝗿𝗿𝗼𝗿: @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}, *ʏᴏᴜ ᴅᴏɴ'ᴛ ꜱᴇᴇᴍ ᴛᴏ ʙᴇ ᴀᴅᴍɪɴ..*`,
-              }
-            )
-            .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
-          // ⦿──────────────────────────────────────────────────────────────────⦿   𝐌𝐢𝐳𝐮𝐤𝐢™   ⦿──────────────────────────────────────────────────────────────────⦿`;
-        } else {
+      }
+      // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[🐙]  𝐌𝐢𝐳𝐮𝐤𝐢™   [🐙]──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
+      if (𝓜𝖎𝖟𝖚ӄ𝖎.isGroup && 𝓜𝖎𝖟𝖚ӄ𝖎.isSenderKRAK) {
+        const downloader = await new Downloader({
+          url: ᴛᴏᴘɪᴄ,
+          directory: `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/nsfwdownloads`,
+          fileName: `ᴛᴏᴘɪᴄ.jpeg`,
+          cloneFiles: false,
+        });
+        try {
+          await downloader.download();
+          let content = await fs.readFileSync(
+            `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/nsfwdownloads/ᴛᴏᴘɪᴄ.jpeg`
+          );
+          const media = await ӄʀǟӄɨռʐ.prepareMessage(
+            𝓜𝖎𝖟𝖚ӄ𝖎.sender,
+            content,
+            MessageType.image,
+            {
+              mimetype: Mimetype.jpeg,
+            }
+          );
           return await ӄʀǟӄɨռʐ
             .sendMessage(
-              𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+              𝓜𝖎𝖟𝖚ӄ𝖎.sender,
               {
-                url: await akaneko.nsfw.ass(),
+                contentText: `(c)𝐌𝐢𝐳𝐮𝐤𝐢
+
+Nsfw Topic: ${𝓜𝖎𝖟𝖚ӄ𝖎.commandName.toUpperCase()}
+Asked By? @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ} (dev)`,
+                footerText: `(c)𝐌𝐢𝐳𝐮𝐤𝐢`,
+                buttons: [
+                  {
+                    buttonId: `${ᴋᴇɪ}ass`,
+                    buttonText: { displayText: `${ᴋᴇɪ}ass` },
+                    type: 1,
+                  },
+                ],
+                headerType: 4,
+                imageMessage: media.message.imageMessage,
               },
-              MessageType.image,
+              MessageType.buttonsMessage,
               {
                 quoted: chat,
-                mimetype: Mimetype.png || Mimetype.jpeg,
                 contextInfo: {
-                  mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
+                  mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
                 },
-                caption: `_(c)𝐌𝐢𝐳𝐮𝐤𝐢 ${vers.vers}_
-
-Nsfw Topic: *Ass*
-Asked By? @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ} (admin)`,
               }
             )
             .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
+        } catch (error) {
+          console.log("Download failed", error);
+        }
+        // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[🐙]  𝐌𝐢𝐳𝐮𝐤𝐢™   [🐙]──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
+      } else {
+        const downloader = await new Downloader({
+          url: ᴛᴏᴘɪᴄ,
+          directory: `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/nsfwdownloads`,
+          fileName: `ᴛᴏᴘɪᴄ.jpeg`,
+          cloneFiles: false,
+        });
+        try {
+          await downloader.download();
+          let content = await fs.readFileSync(
+            `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/nsfwdownloads/ᴛᴏᴘɪᴄ.jpeg`
+          );
+          const media = await ӄʀǟӄɨռʐ
+            .prepareMessage(𝓜𝖎𝖟𝖚ӄ𝖎.sender, content, MessageType.image, {
+              mimetype: Mimetype.jpeg,
+            })
+            .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
+          return await ӄʀǟӄɨռʐ
+            .sendMessage(
+              𝓜𝖎𝖟𝖚ӄ𝖎.sender,
+              {
+                contentText: `(c)𝐌𝐢𝐳𝐮𝐤𝐢
+
+Nsfw Topic: ${𝓜𝖎𝖟𝖚ӄ𝖎.commandName.toUpperCase()}
+Asked By? @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ} (admin)`,
+                footerText: `(c)𝐌𝐢𝐳𝐮𝐤𝐢`,
+                buttons: [
+                  {
+                    buttonId: `${ᴋᴇɪ}ass`,
+                    buttonText: { displayText: `${ᴋᴇɪ}ass` },
+                    type: 1,
+                  },
+                ],
+                headerType: 4,
+                imageMessage: media.message.imageMessage,
+              },
+              MessageType.buttonsMessage,
+              {
+                quoted: chat,
+                contextInfo: {
+                  mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
+                },
+              }
+            )
+            .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
+        } catch (error) {
+          console.log("Download failed", error);
         }
       }
+      // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[🐙]  𝐌𝐢𝐳𝐮𝐤𝐢™   [🐙]──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
     } catch (ℓαвєяяσя) {
       ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
       console.log(ℓαвєяяσя);
     }
   },
 };
-// ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿

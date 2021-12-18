@@ -48,7 +48,7 @@ module.exports = {
             {
               mimetype: Mimetype.png || Mimetype.jpeg,
               contextInfo: {
-                mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
+                mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
               },
               caption: `_(c)𝐌𝐢𝐳𝐮𝐤𝐢 ${vers.vers}_
 
@@ -69,7 +69,7 @@ Asked By? @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ} (admin)`,
             MessageType.text,
             {
               contextInfo: {
-                mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
+                mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
               },
             }
           )
@@ -88,7 +88,7 @@ Asked By? @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ} (admin)`,
               {
                 quoted: chat,
                 contextInfo: {
-                  mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
+                  mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
                 },
                 mimetype: Mimetype.png || Mimetype.jpeg,
                 caption: `
@@ -107,7 +107,7 @@ Asked By? @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ} (admin)`,
               {
                 mimetype: Mimetype.png || Mimetype.jpeg,
                 contextInfo: {
-                  mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
+                  mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
                 },
                 caption: `_(c)𝐌𝐢𝐳𝐮𝐤𝐢 ${vers.vers}_
 

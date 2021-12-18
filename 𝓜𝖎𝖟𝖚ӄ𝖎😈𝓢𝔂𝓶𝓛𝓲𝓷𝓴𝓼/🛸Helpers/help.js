@@ -70,11 +70,6 @@ module.exports = {
           buttonText: { displayText: `${ᴋᴇɪ}mizuki` },
           type: 1,
         },
-        // {
-        //   buttonId: `${ᴋᴇɪ}group`,
-        //   buttonText: { displayText: `${ᴋᴇɪ}group` },
-        //   type: 1,
-        // },
       ];
       const buttonMessage = {
         contentText: `_(c)𝐌𝐢𝐳𝐮𝐤𝐢 ${vers.vers}_

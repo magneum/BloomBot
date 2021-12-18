@@ -40,6 +40,7 @@
     "music-lyrics": "^1.1.3",
     "nekobin": "^0.0.1",
     "node-fetch": "^2.6.1",
+    "nodejs-file-downloader": "^4.8.1",
     "nodemon": "^2.0.15",
     "npm": "^8.3.0",
     "ocr-space-api-wrapper": "^1.0.6",
