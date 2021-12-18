@@ -35,64 +35,6 @@ module.exports = {
           )
           .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
       }
-      if (𝓜𝖎𝖟𝖚ӄ𝖎.isDEV) {
-        let members = [];
-        for (var i = 0; i < 𝓜𝖎𝖟𝖚ӄ𝖎.groupMembers.length; i++) {
-          members[i] = 𝓜𝖎𝖟𝖚ӄ𝖎.groupMembers[i].jid;
-        }
-        if (𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
-          ӄʀǟӄɨռʐ
-            .sendMessage(
-              𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              `_(c)𝐌𝐢𝐳𝐮𝐤𝐢 ${vers.vers}_
-
-•──────[ Dev Bypass Command Registered  ]──────• 
-*Attention Here Everyone In the Group!*`,
-              MessageType.text,
-              {
-                quoted: chat,
-                contextInfo: {
-                  stanzaId: 𝓜𝖎𝖟𝖚ӄ𝖎.replyMessageId,
-                  participant: 𝓜𝖎𝖟𝖚ӄ𝖎.replyParticipant,
-                  quotedMessage: {
-                    conversation: 𝓜𝖎𝖟𝖚ӄ𝖎.replyMessage,
-                  },
-                  mentionedJid: members,
-                },
-              }
-            )
-            .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
-          return;
-        }
-        if (arg.length) {
-          ӄʀǟӄɨռʐ
-            .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, arg.join(` `), MessageType.text, {
-              quoted: chat,
-              contextInfo: {
-                mentionedJid: members,
-              },
-            })
-            .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
-          return;
-        }
-        ӄʀǟӄɨռʐ
-          .sendMessage(
-            𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            `_(c)𝐌𝐢𝐳𝐮𝐤𝐢 ${vers.vers}_
-
-•──────[ Dev Bypass Command Registered  ]──────• 
-*Attention Here Everyone In the Group!*`,
-            MessageType.text,
-            {
-              quoted: chat,
-              contextInfo: {
-                mentionedJid: members,
-              },
-            }
-          )
-          .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
-        return;
-      }
       // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
       if (𝓜𝖎𝖟𝖚ӄ𝖎.chatId === `120363025343298860@g.us` && !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderSUDO) {
         await ӄʀǟӄɨռʐ

@@ -167,10 +167,6 @@ try {
     await ӄʀǟӄɨռʐ.connect();
     // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
     ӄʀǟӄɨռʐ.on(`group-update`, async (update) => {
-      // var enable = await postDb.checkSettings(update.jid, `bangroup`);
-      // if (enable === true || enable === `ON`) {
-      //   return;
-      // } else {}
       groupupdateID = await ӄʀǟӄɨռʐ.groupMetadata(update.jid);
       if (update.announce == `false`) {
         ӄʀǟӄɨռʐ

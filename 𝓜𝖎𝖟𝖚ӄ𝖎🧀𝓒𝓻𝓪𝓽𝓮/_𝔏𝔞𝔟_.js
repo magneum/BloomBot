@@ -26,7 +26,7 @@ const env = {
       : process.env.HEROKU_BOT_NAME,
   Krakinz: process.env.Krakinz === undefined ? `Null` : process.env.Krakinz,
   IMDB: `5e36f0db`,
-  DEV: `918250889325,918436686758,989035024059`,
+  SUDO: "918436686758,918250889325",
   FOXTROT: `^[!]`,
   CCD: process.env.CCD === undefined ? `91` : process.env.CCD,
   OCR: `9ffb44def388957`,
@@ -50,7 +50,6 @@ const env = {
   ARC: `https://i.postimg.cc/251T8y9H/image.jpg`,
   UPT: `https://i.postimg.cc/K8PnV1QX/Mizuki-Update.png`,
   PRIVACY: process.env.PRIVACY === undefined ? `public` : process.env.PRIVACY,
-  SUDO: `918250889325`,
 };
 module.exports = env;
 // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
