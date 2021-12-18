@@ -78,12 +78,12 @@ module.exports = {
       const downloader = await new Downloader({
         url: link,
         directory: `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷`,
-        fileName: `ass_${ꜱᴇɴᴅᴇʀɪᴅ}.png`,
+        fileName: `${𝓜𝖎𝖟𝖚ӄ𝖎.commandName.toUpperCase()}_${ꜱᴇɴᴅᴇʀɪᴅ}.png`,
         cloneFiles: false,
       });
       try {
         await downloader.download();
-        let content = fs.readFileSync(`./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/ass_${ꜱᴇɴᴅᴇʀɪᴅ}.png`);
+        let content = fs.readFileSync(`./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/${𝓜𝖎𝖟𝖚ӄ𝖎.commandName.toUpperCase()}_${ꜱᴇɴᴅᴇʀɪᴅ}.png`);
         console.log(content);
         const media = await ӄʀǟӄɨռʐ.prepareMessage(
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
@@ -119,7 +119,7 @@ module.exports = {
             }
           )
           .then(() => {
-            fs.unlinkSync(`./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/ass_${ꜱᴇɴᴅᴇʀɪᴅ}.png`);
+            fs.unlinkSync(`./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/${𝓜𝖎𝖟𝖚ӄ𝖎.commandName.toUpperCase()}_${ꜱᴇɴᴅᴇʀɪᴅ}.png`);
           })
           .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
       } catch (ℓαвєяяσя) {
