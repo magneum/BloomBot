@@ -12,7 +12,6 @@ const ᴍɪᴢᴜᴋɪɢɪᴛ = require(`simple-git`)();
 module.exports = {
   name: `ass`,
   description: `ɪ ᴋɴᴏᴡ ʏᴏᴜ ʟɪᴋᴇ ᴀɴɪᴍᴇ ᴀꜱꜱ~`,
-  𝓜𝓮𝓮6ʍօʀɛ: `${ᴋᴇɪ}`,
   async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
     await ᴍɪᴢᴜᴋɪɢɪᴛ.fetch();
     var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
@@ -36,7 +35,7 @@ module.exports = {
         },
       ];
       const buttonMessage = {
-        contentText: `You Are Not Admin!`,
+        contentText: `@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}, *ʏᴏᴜ ᴅᴏɴ'ᴛ ꜱᴇᴇᴍ ᴛᴏ ʙᴇ ᴀᴅᴍɪɴ..*`,
         footerText: `(c)𝐌𝐢𝐳𝐮𝐤𝐢`,
         buttons: buttons,
         headerType: 4,
@@ -49,36 +48,6 @@ module.exports = {
         })
         .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
       // ⦿••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••[  𝐌𝐢𝐳𝐮𝐤𝐢™   ]••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••⦿
-    } else if (𝓜𝖎𝖟𝖚ӄ𝖎.isGroup && !𝓜𝖎𝖟𝖚ӄ𝖎.isBotGroupAdmin) {
-      let content = fs.readFileSync(`./𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/𝓜𝖎𝖟𝖚ӄ𝖎MemErr.png`);
-      const media = await ӄʀǟӄɨռʐ.prepareMessage(
-        𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-        content,
-        MessageType.image,
-        {
-          mimetype: Mimetype.png,
-        }
-      );
-      const buttons = [
-        {
-          buttonId: `${ᴋᴇɪ}help`,
-          buttonText: { displayText: `${ᴋᴇɪ}help` },
-          type: 1,
-        },
-      ];
-      const buttonMessage = {
-        contentText: `Bot Not Admin!`,
-        footerText: `(c)𝐌𝐢𝐳𝐮𝐤𝐢`,
-        buttons: buttons,
-        headerType: 4,
-        imageMessage: media.message.imageMessage,
-      };
-      return await ӄʀǟӄɨռʐ
-        .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, buttonMessage, MessageType.buttonsMessage, {
-          quoted: chat,
-          contextInfo: { mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender] },
-        })
-        .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
     } else {
       const link = await akaneko.nsfw.ass();
       console.log(link);
@@ -103,10 +72,11 @@ module.exports = {
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
             {
               contentText: `
-┌────⭓ @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}
-│Topic: *Ass*
-│Link: ${link}
-└───────────⭓`,
+┌────⭓ 🔞𝘼𝙙𝙪𝙡𝙩 𝙉𝙎𝙁𝙒 18+
+│🔸 𝐎𝐫𝐝𝐞𝐫𝐞𝐝𝐁𝐲: @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ} 
+│🔸 𝐓𝐨𝐩𝐢𝐜: *${𝓜𝖎𝖟𝖚ӄ𝖎.commandName.toUpperCase()}*
+└───────────⭓
+🔗𝐋𝐢𝐧𝐤: ${link}`,
               footerText: `(c)𝐌𝐢𝐳𝐮𝐤𝐢`,
               buttons: [
                 {
