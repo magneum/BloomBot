@@ -423,36 +423,42 @@ ${ꜰᴇᴛᴄʜᴇᴅʙʏᴇ.message}`,
         }
       }
       try {
-        const REMOVE = chat.key.fromMe
-          ? ӄʀǟӄɨռʐ.user.jid
-          : 𝓜𝖎𝖟𝖚ӄ𝖎.isGroup
-          ? chat.participant
-          : chat.key.remoteJid;
-        if (!𝓜𝖎𝖟𝖚ӄ𝖎.fromMe && 𝓜𝖎𝖟𝖚ӄ𝖎.isGroup && !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderGroupAdmin) {
-          if (
-            (!𝓜𝖎𝖟𝖚ӄ𝖎.budy.includes(_𝔏𝔞𝔟_.HASH) &&
-              𝓜𝖎𝖟𝖚ӄ𝖎.budy.includes(`://chat.whatsapp.com/`)) ||
-            𝓜𝖎𝖟𝖚ӄ𝖎.budy.includes(`://wa.me/`)
-          ) {
-            await ӄʀǟӄɨռʐ
-              .sendMessage(
-                𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                `_(c)𝐌𝐢𝐳𝐮𝐤𝐢 ${vers.vers}_
+        var enable = await postDb.checkSettings(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, `setantilink`);
+        var ꜰᴇᴛᴄʜᴇᴅanti = await postDb.getMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, `setantilink`);
+        if (enable === false || enable === `OFF`) {
+          return;
+        } else {
+          const REMOVE = chat.key.fromMe
+            ? ӄʀǟӄɨռʐ.user.jid
+            : 𝓜𝖎𝖟𝖚ӄ𝖎.isGroup
+            ? chat.participant
+            : chat.key.remoteJid;
+          if (!𝓜𝖎𝖟𝖚ӄ𝖎.fromMe && 𝓜𝖎𝖟𝖚ӄ𝖎.isGroup && !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderGroupAdmin) {
+            if (
+              (!𝓜𝖎𝖟𝖚ӄ𝖎.budy.includes(_𝔏𝔞𝔟_.HASH) &&
+                𝓜𝖎𝖟𝖚ӄ𝖎.budy.includes(`://chat.whatsapp.com/`)) ||
+              𝓜𝖎𝖟𝖚ӄ𝖎.budy.includes(`://wa.me/`)
+            ) {
+              await ӄʀǟӄɨռʐ
+                .sendMessage(
+                  𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                  `_(c)𝐌𝐢𝐳𝐮𝐤𝐢 ${vers.vers}_
 
-      @${REMOVE},
-      ┌────⭓ 𝐀𝐧𝐭𝐢𝐥𝐢𝐧𝐤🐙𝐀𝐜𝐭𝐢𝐯𝐞
-      │ ❗𝗔𝗻𝘁𝗶𝗹𝗶𝗻𝗸-𝗔𝗰𝘁𝗶𝘃𝗲 𝘚𝘰 𝘺𝘰𝘶 𝘸𝘪𝘭𝘭
-      │ 𝘣𝘦 𝗔𝘂𝘁𝗼-𝗞𝗶𝗰𝗸𝗲𝗱 𝘣𝘺 𝘢𝘥𝘮𝘪𝘯𝘴❗
-      └───────────⭓
+@${REMOVE},
+┌────⭓ 𝐀𝐧𝐭𝐢𝐥𝐢𝐧𝐤🐙𝐀𝐜𝐭𝐢𝐯𝐞
+│ ❗𝗔𝗻𝘁𝗶𝗹𝗶𝗻𝗸-𝗔𝗰𝘁𝗶𝘃𝗲 𝘚𝘰 𝘺𝘰𝘶 𝘸𝘪𝘭𝘭
+│ 𝘣𝘦 𝗔𝘂𝘁𝗼-𝗞𝗶𝗰𝗸𝗲𝗱 𝘣𝘺 𝘢𝘥𝘮𝘪𝘯𝘴❗
+└───────────⭓
 
-      *•──────[ Message From Admins  ]──────•*
-      ${ꜰᴇᴛᴄʜᴇᴅanti.message}`,
-                MessageType.text
-              )
-              .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
-            return await ӄʀǟӄɨռʐ
-              .groupRemove(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, [REMOVE])
-              .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
+*•──────[ Message From Admins  ]──────•*
+${ꜰᴇᴛᴄʜᴇᴅanti.message}`,
+                  MessageType.text
+                )
+                .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
+              return await ӄʀǟӄɨռʐ
+                .groupRemove(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, [REMOVE])
+                .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
+            }
           }
         }
       } catch (ℓαвєяяσя) {
