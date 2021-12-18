@@ -104,8 +104,18 @@ module.exports = {
               footerText: `(c)𝐌𝐢𝐳𝐮𝐤𝐢`,
               buttons: [
                 {
-                  buttonId: `${ᴋᴇɪ}uniform`,
-                  buttonText: { displayText: `${ᴋᴇɪ}uniform` },
+                  buttonId: `${ᴋᴇɪ}${moon}`,
+                  buttonText: { displayText: `${ᴋᴇɪ}${moon}` },
+                  type: 1,
+                },
+                {
+                  buttonId: `${ᴋᴇɪ}${moon}`,
+                  buttonText: { displayText: `${ᴋᴇɪ}${moon}` },
+                  type: 1,
+                },
+                {
+                  buttonId: `${ᴋᴇɪ}${moon}`,
+                  buttonText: { displayText: `${ᴋᴇɪ}${moon}` },
                   type: 1,
                 },
               ],
