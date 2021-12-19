@@ -16,7 +16,7 @@ module.exports = {
   async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
     await ᴍɪᴢᴜᴋɪɢɪᴛ.fetch();
     var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
-    var ꜱᴇɴᴅᴇʀᴄᴏɴꜰ = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
+    var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
     got("https://www.reddit.com/r/lactating/random.json").then(
       async (response) => {
         let content = JSON.parse(response.body);
@@ -44,7 +44,7 @@ module.exports = {
             },
           ];
           const buttonMessage = {
-            contentText: `❌ @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},  *You Are Not Allowed!*
+            contentText: `❌ @${ꜱᴇɴᴅᴇʀeceived},  *You Are Not Allowed!*
 
 _❗In Groups This Command allowed to Admins & Developers!_`,
             footerText: `_𝐌𝐢𝐳𝐮𝐤𝐢™_`,
@@ -89,7 +89,7 @@ _❗In Groups This Command allowed to Admins & Developers!_`,
                 {
                   contentText: `
 ┌────⭓
-│⦿ 𝐎𝐫𝐝𝐞𝐫𝐞𝐝𝐁𝐲: @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ} 
+│⦿ 𝐎𝐫𝐝𝐞𝐫𝐞𝐝𝐁𝐲: @${ꜱᴇɴᴅᴇʀeceived} 
 │⦿ 𝐓𝐢𝐭𝐥𝐞: *${title}*
 │⦿ 𝐓𝐨𝐩𝐢𝐜: ${𝓜𝖎𝖟𝖚ӄ𝖎.commandName.toUpperCase()}
 └───────────⭓

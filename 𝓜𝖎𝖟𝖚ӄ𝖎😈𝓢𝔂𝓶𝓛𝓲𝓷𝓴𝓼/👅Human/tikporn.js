@@ -15,7 +15,7 @@ module.exports = {
       const ᴍɪᴢᴜᴋɪɢɪᴛ = require(`simple-git`)();
       await ᴍɪᴢᴜᴋɪɢɪᴛ.fetch();
       var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
-      var ꜱᴇɴᴅᴇʀᴄᴏɴꜰ = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
+      var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
       const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
       const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
       console.log(`𝐓𝐨𝐩𝐢𝐜: ` + FinalName);
@@ -41,7 +41,7 @@ module.exports = {
           },
         ];
         const buttonMessage = {
-          contentText: `❌ @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},  *You Are Not Allowed!*
+          contentText: `❌ @${ꜱᴇɴᴅᴇʀeceived},  *You Are Not Allowed!*
 
 _❗In Groups This Command allowed to Admins & Developers!_`,
           footerText: `_𝐌𝐢𝐳𝐮𝐤𝐢™_`,
@@ -70,13 +70,13 @@ _❗In Groups This Command allowed to Admins & Developers!_`,
       const downloader = await new Downloader({
         url: ppl,
         directory: `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷`,
-        fileName: `${FinalName}_${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}.mp4`,
+        fileName: `${FinalName}_${ꜱᴇɴᴅᴇʀeceived}.mp4`,
         cloneFiles: false,
       });
       try {
         await downloader.download();
         let content = fs.readFileSync(
-          `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/${FinalName}_${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}.mp4`
+          `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/${FinalName}_${ꜱᴇɴᴅᴇʀeceived}.mp4`
         );
         const media = await ӄʀǟӄɨռʐ.prepareMessage(
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
@@ -102,7 +102,7 @@ _❗In Groups This Command allowed to Admins & Developers!_`,
           contentText: `_𝐌𝐢𝐳𝐮𝐤𝐢™_
 
 ┌────⭓
-│⦿ 𝐀𝐬𝐤𝐞𝐝𝐁𝐲: @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
+│⦿ 𝐀𝐬𝐤𝐞𝐝𝐁𝐲: @${ꜱᴇɴᴅᴇʀeceived},
 │⦿ 𝐓𝐨𝐩𝐢𝐜: *${FinalName}*
 └───────────⭓
 
@@ -135,7 +135,7 @@ _❗In Groups This Command allowed to Admins & Developers!_`,
             }
           )
           .then(() => {
-            fs.unlinkSync(`./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/${FinalName}_${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}.mp4`);
+            fs.unlinkSync(`./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/${FinalName}_${ꜱᴇɴᴅᴇʀeceived}.mp4`);
           })
           .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
       } catch (ℓαвєяяσя) {
