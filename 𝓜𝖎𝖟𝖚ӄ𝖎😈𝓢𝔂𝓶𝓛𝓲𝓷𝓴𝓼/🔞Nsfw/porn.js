@@ -6,6 +6,7 @@ const _𝔏𝔞𝔟_ = require(`../../𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 const Downloader = require(`nodejs-file-downloader`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
+const fs = require("fs");
 // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
 module.exports = {
   name: `porn`,
@@ -39,68 +40,43 @@ module.exports = {
       }
       // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
       prn = await porno();
-      console.log(`(ᴄ) ᴍɪᴢᴜᴋɪ ʙᴏᴛ
-
-┌────⭓
-│⦿ 𝐀𝐬𝐤𝐞𝐝𝐁𝐲: @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
-│⦿ 𝐓𝐨𝐩𝐢𝐜: *${FinalName}*
-└───────────⭓
-
-┌────⭓ 
-│⭔ Title : ${prn.title}
-│⭔ Viewers : ${prn.views}
-│⭔ Tags : ${prn.tags}
-│⭔ Likes : ${prn.like}
-│⭔ Dislikes : ${prn.dislike}
-│⭔ Favourite : ${prn.favorite}
-│⭔ Time Upload : ${prn.upload}
-│⭔ Description : ${prn.desc}
-│⭔ Download: https://tikporntok.com/${prn.video}
-│⭔ Source : https://tikporntok.com/${prn.source}
-└───────────⭓`);
-      // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
-      const link = await anime.bite();
+      const link = prn.video;
       console.log(link);
+      var ppl = `https://tikporntok.com/` + prn.video;
+      console.log(ppl);
       const downloader = await new Downloader({
-        url: link,
+        url: ppl,
         directory: `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷`,
-        fileName: `${FinalName}_${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}.gif`,
+        fileName: `${FinalName}_${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}.mp4`,
         cloneFiles: false,
       });
       try {
         await downloader.download();
-      } catch (ℓαвєяяσя) {
-        ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
-      }
-      // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
-      let content = fs.readFileSync(`./𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/𝓜𝖎𝖟𝖚ӄ𝖎ɦɛʟք.png`);
-      const media = await ӄʀǟӄɨռʐ.prepareMessage(
-        𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-        content,
-        MessageType.video,
-        {
-          mimetype: Mimetype.mp4Audio,
-        }
-      );
-      const buttons = [
-        {
-          buttonId: `${ᴋᴇɪ}menu`,
-          buttonText: { displayText: `${ᴋᴇɪ}menu` },
-          type: 1,
-        },
-        {
-          buttonId: `${ᴋᴇɪ}mizuki`,
-          buttonText: { displayText: `${ᴋᴇɪ}mizuki` },
-          type: 1,
-        },
-        {
-          buttonId: `${ᴋᴇɪ}repo`,
-          buttonText: { displayText: `${ᴋᴇɪ}repo` },
-          type: 1,
-        },
-      ];
-      const buttonMessage = {
-        contentText: `(ᴄ) ᴍɪᴢᴜᴋɪ ʙᴏᴛ
+        let content = fs.readFileSync(
+          `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/${FinalName}_${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}.mp4`
+        );
+        const media = await ӄʀǟӄɨռʐ.prepareMessage(
+          𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+          content,
+          MessageType.video,
+          {
+            mimetype: Mimetype.mp4,
+          }
+        );
+        const buttons = [
+          {
+            buttonId: `${ᴋᴇɪ}porn`,
+            buttonText: { displayText: `${ᴋᴇɪ}porn` },
+            type: 1,
+          },
+          {
+            buttonId: `${ᴋᴇɪ}nsfwside`,
+            buttonText: { displayText: `${ᴋᴇɪ}nsfwside` },
+            type: 1,
+          },
+        ];
+        const buttonMessage = {
+          contentText: `(ᴄ) ᴍɪᴢᴜᴋɪ ʙᴏᴛ
 
 ┌────⭓
 │⦿ 𝐀𝐬𝐤𝐞𝐝𝐁𝐲: @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
@@ -115,21 +91,34 @@ module.exports = {
 │⭔ Dislikes : ${prn.dislike}
 │⭔ Favourite : ${prn.favorite}
 │⭔ Time Upload : ${prn.upload}
-│⭔ Description : ${prn.desc}
-│⭔ Download: https://tikporntok.com/${prn.video}
-│⭔ Source : https://tikporntok.com/${prn.source}
-└───────────⭓`,
-        footerText: `(ᴄ) ᴍɪᴢᴜᴋɪ ʙᴏᴛ`,
-        buttons: buttons,
-        headerType: 5,
-        videoMessage: media.message.videoMessage,
-      };
-      await ӄʀǟӄɨռʐ
-        .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, buttonMessage, MessageType.buttonsMessage, {
-          quoted: chat,
-          contextInfo: { mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender] },
-        })
-        .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
+│
+└───────────⭓
+⭔ Description : ${prn.desc}
+⭔ Download: https://tikporntok.com/${prn.video}
+⭔ Source : https://tikporntok.com/${prn.source}`,
+          footerText: `(ᴄ) ᴍɪᴢᴜᴋɪ ʙᴏᴛ`,
+          buttons: buttons,
+          headerType: 5,
+          videoMessage: media.message.videoMessage,
+        };
+        await ӄʀǟӄɨռʐ
+          .sendMessage(
+            𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+            buttonMessage,
+            MessageType.buttonsMessage,
+            {
+              quoted: chat,
+              contextInfo: { mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender] },
+            }
+          )
+          .then(() => {
+            fs.unlinkSync(`./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/${FinalName}_${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}.mp4`);
+          })
+          .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
+      } catch (ℓαвєяяσя) {
+        ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
+      }
+      // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
     } catch (ℓαвєяяσя) {
       ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
       console.log(ℓαвєяяσя);
