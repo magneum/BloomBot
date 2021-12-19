@@ -403,7 +403,9 @@ Use *${ᴋᴇɪ}𝗵𝗲𝗹𝗽* to get the list of available commands`,
           if (
             (!𝓜𝖎𝖟𝖚ӄ𝖎.budy.includes(_𝔏𝔞𝔟_.HASH) &&
               𝓜𝖎𝖟𝖚ӄ𝖎.budy.includes(`://chat.whatsapp.com/`)) ||
-            𝓜𝖎𝖟𝖚ӄ𝖎.budy.includes(`://wa.me/`)
+            𝓜𝖎𝖟𝖚ӄ𝖎.budy.includes(`://wa.me/`) ||
+            𝓜𝖎𝖟𝖚ӄ𝖎.budy.includes(`://discord.gg`) 
+            
           ) {
             ӄʀǟӄɨռʐ
               .sendMessage(
