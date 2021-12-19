@@ -75,7 +75,7 @@ module.exports = {
 
 @${ꜱᴇɴᴅᴇʀeceived} slapped @${personreceived}!
 
-🔗𝐋𝐢𝐧𝐤: ${link}`,
+🔗𝐋𝐢𝐧𝐤: ${image}`,
                 }
               )
               .then(async () => {
@@ -121,7 +121,7 @@ module.exports = {
 
 @${ꜱᴇɴᴅᴇʀeceived} is slapped!
 
-🔗𝐋𝐢𝐧𝐤: ${link}`,
+🔗𝐋𝐢𝐧𝐤: ${image}`,
                 }
               )
               .then(async () => {
