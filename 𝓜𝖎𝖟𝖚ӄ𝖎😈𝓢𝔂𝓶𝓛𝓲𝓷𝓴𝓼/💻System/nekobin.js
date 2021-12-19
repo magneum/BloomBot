@@ -7,10 +7,10 @@ var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 const got = require("got");
 // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
 module.exports = {
-  name: `paste`,
-  description: `Use this module to paste your text to a pastebin (NEKOBIN).`,
-  𝓜𝓮𝓮6ʍօʀɛ: `*${ᴋᴇɪ}paste* <text>
-or reply *${ᴋᴇɪ}paste* to any text.`,
+  name: `nekobin`,
+  description: `Use this module to paste your text to (NEKOBIN).`,
+  𝓜𝓮𝓮6ʍօʀɛ: `*${ᴋᴇɪ}nekobin* <text>
+or reply *${ᴋᴇɪ}nekobin* to any text.`,
   async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
     try {
       const ᴍɪᴢᴜᴋɪɢɪᴛ = require(`simple-git`)();
@@ -105,7 +105,7 @@ or reply *${ᴋᴇɪ}paste* to any text.`,
             `(ᴄ)ᴍɪᴢᴜᴋɪ
 
 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},   
-Here Is Your pasted link👇🏽‍
+Here Is Your nekobind link👇🏽‍
 
 https://nekobin.com/${nekoson.result.key}`,
             MessageType.text,
@@ -136,7 +136,7 @@ https://nekobin.com/${nekoson.result.key}`,
             `(ᴄ)ᴍɪᴢᴜᴋɪ
 
 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},   
-Here Is Your pasted link👇🏽‍
+Here Is Your nekobind link👇🏽‍
 
 https://nekobin.com/${nekoson.result.key}`,
             MessageType.text,
