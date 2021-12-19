@@ -106,24 +106,31 @@ try {
       );
       console.log(Kolor.yellow(`💡𝗜𝗻𝗳𝗼⬰ 𝘐𝘯𝘴𝘵𝘢𝘭𝘭𝘪𝘯𝘨 𝘗𝘭𝘶𝘨𝘪𝘯𝘴...✅`));
       var commandUsage = new Map();
-      const Folders = fs.readdirSync(`./𝓜𝖎𝖟𝖚ӄ𝖎😈𝓢𝔂𝓶𝓛𝓲𝓷𝓴𝓼`);
-      for (const folder of Folders) {
-        const commandFiles = fs
-          .readdirSync(`./𝓜𝖎𝖟𝖚ӄ𝖎😈𝓢𝔂𝓶𝓛𝓲𝓷𝓴𝓼/${folder}`)
-          .filter((file) => file.endsWith(`.js`));
-        for (const file of commandFiles) {
-          const command = require(`./𝓜𝖎𝖟𝖚ӄ𝖎😈𝓢𝔂𝓶𝓛𝓲𝓷𝓴𝓼/${folder}/${file}`);
-          𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹.set(command.name, command);
-          commandUsage.set(command.𝓜𝓮𝓮6ʍօʀɛ, command.description);
-          console.log(
-            Kolor.yellow(`💡𝗜𝗻𝗳𝗼⬰ `),
-            Kolor.green(command.name.toUpperCase() + `    |`),
-            Kolor.whiteBright.italic(command.description + `    |`),
-            Kolor.blueBright.italic(command.𝓜𝓮𝓮6ʍօʀɛ)
-          );
+      const ascii = require("ascii-table");
+      const 𝓜𝖎𝖟𝖚ӄ𝖎Table = new ascii().setHeading("✭𝓜𝖎𝖟𝖚ӄ𝖎✭", "Health");
+      function loadCommands() {
+        const Folders = fs.readdirSync(`./𝓜𝖎𝖟𝖚ӄ𝖎😈𝓢𝔂𝓶𝓛𝓲𝓷𝓴𝓼`);
+        for (const folder of Folders) {
+          const commandFiles = fs
+            .readdirSync(`./𝓜𝖎𝖟𝖚ӄ𝖎😈𝓢𝔂𝓶𝓛𝓲𝓷𝓴𝓼/${folder}`)
+            .filter((file) => file.endsWith(".js"));
+          for (const file of commandFiles) {
+            const command = require(`./𝓜𝖎𝖟𝖚ӄ𝖎😈𝓢𝔂𝓶𝓛𝓲𝓷𝓴𝓼/${folder}/${file}`);
+            if (command.name) {
+              𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹.set(command.name, command);
+              commandUsage.set(command.𝓜𝓮𝓮6ʍօʀɛ, command.description);
+              𝓜𝖎𝖟𝖚ӄ𝖎Table.addRow(
+                `💡𝗜𝗻𝗳𝗼⬰ ` + Kolor.green(command.name.toUpperCase()),
+                "Ready 🐙"
+              );
+            } else {
+              continue;
+            }
+          }
+          console.log(𝓜𝖎𝖟𝖚ӄ𝖎Table.toString());
         }
       }
-      console.clear();
+      loadCommands();
       console.log(
         Kolor.green(`⬡=================⬡    ⦿𝐌𝐢𝐳𝐮𝐤𝐢™⦿    ⬡=================⬡`),
         Kolor.red(`
