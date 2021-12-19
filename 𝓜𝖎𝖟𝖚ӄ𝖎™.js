@@ -406,7 +406,7 @@ Use *${ᴋᴇɪ}𝗵𝗲𝗹𝗽* to get the list of available commands`,
             𝓜𝖎𝖟𝖚ӄ𝖎.budy.includes(`://wa.me/`) ||
             𝓜𝖎𝖟𝖚ӄ𝖎.budy.includes(`://discord.gg`)
           ) {
-            ӄʀǟӄɨռʐ
+            await ӄʀǟӄɨռʐ
               .sendMessage(
                 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
                 `(ᴄ) ᴍɪᴢᴜᴋɪ ʙᴏᴛ
@@ -422,7 +422,7 @@ ${ꜰᴇᴛᴄʜᴇᴅanti.message}`,
                 MessageType.text
               )
               .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
-            ӄʀǟӄɨռʐ
+            await ӄʀǟӄɨռʐ
               .groupRemove(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, [REMOVE])
               .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
             return;
