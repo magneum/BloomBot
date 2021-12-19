@@ -75,7 +75,7 @@ module.exports = {
             await ӄʀǟӄɨռʐ
               .sendMessage(
                 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                fs.readFileSync(`𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/${FinalName}_${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}.mp4`),
+                fs.readFileSync(`./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/${FinalName}_${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}.mp4`),
                 MessageType.video,
                 {
                   contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ, Receiver] },
@@ -119,7 +119,7 @@ module.exports = {
             await ӄʀǟӄɨռʐ
               .sendMessage(
                 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                fs.readFileSync(`𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/${FinalName}_${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}.mp4`),
+                fs.readFileSync(`./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/${FinalName}_${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}.mp4`),
                 MessageType.video,
                 {
                   contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
@@ -163,7 +163,7 @@ module.exports = {
             await ӄʀǟӄɨռʐ
               .sendMessage(
                 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                fs.readFileSync(`𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/${FinalName}_${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}.mp4`),
+                fs.readFileSync(`./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/${FinalName}_${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}.mp4`),
                 MessageType.video,
                 {
                   contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
