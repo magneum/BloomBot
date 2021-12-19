@@ -4,8 +4,6 @@ const _𝔏𝔞𝔟_ = require(`../../𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽
 const ℓιєηт = require(`../../𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/catch`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
-const vers = require(`../../package.json`);
-const bin = require(`nekobin`);
 // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
 module.exports = {
   name: `paste`,
@@ -88,35 +86,42 @@ or reply *${ᴋᴇɪ}paste* to any text.`,
       }
       // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
       if (!𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
-        content = 𝓜𝖎𝖟𝖚ӄ𝖎.body.replace(
-          𝓜𝖎𝖟𝖚ӄ𝖎.body[0] + 𝓜𝖎𝖟𝖚ӄ𝖎.commandName + ` `,
-          ``
-        );
+        var json = {
+          content: 𝓜𝖎𝖟𝖚ӄ𝖎.body.replace(
+            𝓜𝖎𝖟𝖚ӄ𝖎.body[0] + 𝓜𝖎𝖟𝖚ӄ𝖎.commandName + " ",
+            ""
+          ),
+        };
       } else {
-        contents = 𝓜𝖎𝖟𝖚ӄ𝖎.replyMessage.replace(
-          𝓜𝖎𝖟𝖚ӄ𝖎.body[0] + 𝓜𝖎𝖟𝖚ӄ𝖎.commandName + ` `,
-          ``
-        );
+        var json = {
+          content: 𝓜𝖎𝖟𝖚ӄ𝖎.replyMessage.replace(
+            𝓜𝖎𝖟𝖚ӄ𝖎.body[0] + 𝓜𝖎𝖟𝖚ӄ𝖎.commandName + " ",
+            ""
+          ),
+        };
       }
-      // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
-      bin.nekobin(contents).then((data) => {
-        ӄʀǟӄɨռʐ
-          .sendMessage(
-            𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            `(ᴄ)ᴍɪᴢᴜᴋɪ
-          
+      let text = await got.post("https://nekobin.com/api/documents", {
+        json,
+      });
+      json = JSON.parse(text.body);
+      neko_url = "https://nekobin.com/" + json.result.key;
+      ӄʀǟӄɨռʐ
+        .sendMessage(
+          𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+          `(ᴄ)ᴍɪᴢᴜᴋɪ
+
 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},   
 Here Is Your pasted link👇🏽‍
-${data.url}`,
-            MessageType.text,
-            {
-              contextInfo: {
-                mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
-              },
-            }
-          )
-          .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
-      });
+
+"https://nekobin.com/" + ${json.result.key}`,
+          MessageType.text,
+          {
+            contextInfo: {
+              mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
+            },
+          }
+        )
+        .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
     } catch (ℓαвєяяσя) {
       ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
       console.log(ℓαвєяяσя);
