@@ -31,7 +31,7 @@ const env = {
   CCD: process.env.CCD === undefined ? `91` : process.env.CCD,
   OCR: `9ffb44def388957`,
   WAPI: `6729ac2b2e2bb5c686ff427a2f06df92`,
-  HASH: `https://chat.whatsapp.com/KlMRYxCTte5H8TIIupbRVf`,
+  HASH: `https://chat.whatsapp.com/KC32fr1BLmzHYgToZjMuHn`,
   DATABASE_URL: (process.env.DATABASE_URL =
     process.env.DATABASE_URL === undefined
       ? `./𝓜𝖎𝖟𝖚ӄ𝖎.db`
