@@ -14,7 +14,7 @@ module.exports = {
   async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
     try {
       var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
-      var ꜱᴇɴᴅᴇʀᴄᴏɴꜰ = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
+      var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
       // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
       var song = ``;
       if (𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
@@ -30,7 +30,7 @@ module.exports = {
             chat,
             𝓜𝖎𝖟𝖚ӄ𝖎,
             ꜱᴇɴᴅᴇʀɪᴅ,
-            ꜱᴇɴᴅᴇʀᴄᴏɴꜰ,
+            ꜱᴇɴᴅᴇʀeceived,
             𝓜𝖎𝖟𝖚ӄ𝖎.commandName,
             𝓜𝓮𝓮ʍօʀɛ
           )
@@ -45,7 +45,7 @@ module.exports = {
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
           `_𝐌𝐢𝐳𝐮𝐤𝐢™_
 
-•@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
+•@${ꜱᴇɴᴅᴇʀeceived},
 📜𝗟𝘆𝗿𝗶𝗰𝘀 𝗙𝗼𝘂𝗻𝗱 𝗙𝗼𝗿: _${song}_
 💡𝗟𝘆𝗿𝗶𝗰𝘀 𝗦𝗼𝘂𝗿𝗰𝗲: ${lyrics.source.name}
 🔗𝗟𝘆𝗿𝗶𝗰𝘀 𝗨𝗿𝗹: ${lyrics.source.link}
@@ -66,7 +66,7 @@ ${lyrics.lyrics}`,
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
             `_𝐌𝐢𝐳𝐮𝐤𝐢™_
 
-•@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
+•@${ꜱᴇɴᴅᴇʀeceived},
 📜𝗟𝘆𝗿𝗶𝗰𝘀 𝗙𝗼𝘂𝗻𝗱 𝗙𝗼𝗿: _${song}_
 ${lyric}`,
             MessageType.text,

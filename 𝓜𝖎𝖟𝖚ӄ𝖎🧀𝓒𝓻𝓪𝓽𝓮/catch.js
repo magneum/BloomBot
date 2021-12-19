@@ -6,7 +6,7 @@ require(`python-format-js`);
 // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
 exports.catch = async (ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎) => {
   var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
-  var ꜱᴇɴᴅᴇʀᴄᴏɴꜰ = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
+  var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
   await ӄʀǟӄɨռʐ.sendMessage(
     𝓜𝖎𝖟𝖚ӄ𝖎.logGroup,
     `_𝐌𝐢𝐳𝐮𝐤𝐢™_
@@ -28,8 +28,8 @@ ${ℓαвєяяσя}
     `_𝐌𝐢𝐳𝐮𝐤𝐢™_
 
 
-•@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
-Please try Again!There Was temporary erorr in that command.`,
+•@${ꜱᴇɴᴅᴇʀeceived},*Please try Again!*
+_There Was temporary erorr in that command._`,
     MessageType.text, {
     contextInfo: {
       mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
@@ -49,7 +49,7 @@ Please try Again!There Was temporary erorr in that command.`,
   //       },
   //       caption: `_𝐌𝐢𝐳𝐮𝐤𝐢™_
 
-  // •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
+  // •@${ꜱᴇɴᴅᴇʀeceived},
   // Please try Again!There Was temporary erorr in that command.`,
   //     }
   //   );
