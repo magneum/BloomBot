@@ -54,6 +54,7 @@
     "random-hex-color": "^1.0.1",
     "random-jokes": "^2.0.3",
     "random-material-color": "^1.0.5",
+    "request-promise-native": "^1.0.9",
     "sequelize": "^6.7.0",
     "simple-git": "^2.47.0",
     "songlyrics": "^2.2.4",

@@ -63,13 +63,14 @@ module.exports = {
 ────⭓🛸𝐆𝐫𝐨𝐮𝐩│${_𝔏𝔞𝔟_.HASH}
 
 ┌────⭓ 𝐀𝐥𝐥 𝐂𝐚𝐭𝐞𝐠𝐨𝐫𝐢𝐞𝐬
+│🎋 *${ᴋᴇɪ}animeside:* _anime sub-menu_
+│👅 *${ᴋᴇɪ}nsfwside:* _adult-human sub-menu_
+│🍄 *${ᴋᴇɪ}hentaiside:* _adult-hentai sub-menu_
 │🐙 *${ᴋᴇɪ}ownerside:* _owner sub-menu_
 │⚙️ *${ᴋᴇɪ}systemside:* _system sub-menu_
-│🎋 *${ᴋᴇɪ}animeside:* _anime sub-menu_
 │🎙️ *${ᴋᴇɪ}musicside:* _music sub-menu_
 │🍭 *${ᴋᴇɪ}groupside:* _groups sub-menu_
 │🦄 *${ᴋᴇɪ}funside:* _funs sub-menu_
-│🍄 *${ᴋᴇɪ}nsfwside:* _adult sub-menu_
 └───────────⭓
 
 _❗Remember to make me admin_
