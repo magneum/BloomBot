@@ -36,11 +36,11 @@ module.exports = {
 
 
 ┌────⭓ *𝙎𝙮𝙨𝙩𝙚𝙢*  ⦿
-│⚙️• ${ᴋᴇɪ}help: _ɢᴇᴛ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅ ʟɪꜱᴛ ᴀɴᴅ ɪɴꜰᴏ ᴏɴ ᴍᴏᴅᴜʟᴇꜱ_
-│⚙️• ${ᴋᴇɪ}nekobin: _ᴘᴀꜱᴛᴇ ʏᴏᴜʀ ᴛᴇxᴛ ᴛᴏ ɴᴇᴋᴏʙɪɴ_
-│⚙️• ${ᴋᴇɪ}mizuki: _ᴄʜᴇᴄᴋ 𝓜𝖎𝖟𝖚ӄ𝖎 system_
-│⚙️• ${ᴋᴇɪ}update: _ᴛʜɪꜱ ᴄᴏᴍᴍᴀɴᴅ ᴄᴀɴ ʙᴇ ᴜꜱᴇᴅ ᴛᴏ ᴜᴘᴅᴀᴛᴇ ᴛʜᴇ ʙᴏᴛ_
-│⚙️• ${ᴋᴇɪ}broadcast: _ꜱᴇɴᴅ ʙʀᴏᴀᴅᴄᴀꜱᴛ ᴍᴇꜱꜱᴀɢᴇꜱ ᴛᴏ ᴀʟʟ ɢʀᴏᴜᴘꜱ/ᴅᴍꜱ ʏᴏᴜ ᴀʀᴇ ɪɴ_
+│⚙️• ${ᴋᴇɪ}help: _basic help command_
+│⚙️• ${ᴋᴇɪ}nekobin: _paste text to nekobin_
+│⚙️• ${ᴋᴇɪ}mizuki: _check mizuki system health config_
+│⚙️• ${ᴋᴇɪ}update: _update Mizuki bot_
+│⚙️• ${ᴋᴇɪ}broadcast: _send broadcast message to groups and private_
 └───────────⭓
 
 
