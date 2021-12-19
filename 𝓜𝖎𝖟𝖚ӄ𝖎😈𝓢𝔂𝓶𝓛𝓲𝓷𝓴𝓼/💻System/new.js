@@ -41,10 +41,10 @@ module.exports = {
 
 
 ┌────⭓ 𝐍𝐞𝐰 𝐏𝐮𝐛𝐥𝐢𝐜-𝐁𝐞𝐭𝐚 𝐅𝐞𝐚𝐭𝐮𝐫𝐞𝐬
-│⧪ ${ᴋᴇɪ}setantilink
-│⧪ ${ᴋᴇɪ}porn (18+ admin-only)
 │⧪ ${ᴋᴇɪ}pinterest
-│⧪ Many New Anime Gifs
+│⧪ ${ᴋᴇɪ}porn (18+ admin-only)
+│⧪ ${ᴋᴇɪ}hentaiside (hentai)
+│⧪ ${ᴋᴇɪ}humanside (porn)
 └───────────⭓
 
 _check the help or menu for more info._`,

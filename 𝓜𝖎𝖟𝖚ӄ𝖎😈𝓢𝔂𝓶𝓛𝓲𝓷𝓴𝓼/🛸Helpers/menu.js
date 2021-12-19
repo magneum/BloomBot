@@ -122,7 +122,6 @@ module.exports = {
 ┌────⭓ *🔞𝙉𝙎𝙁𝙒 18+ > (${ᴋᴇɪ}nsfwside)*
 │🍄• ${ᴋᴇɪ}ass  
 │🍄• ${ᴋᴇɪ}bdsm  
-│🍄• ${ᴋᴇɪ}blowjob  
 │🍄• ${ᴋᴇɪ}cum  
 │🍄• ${ᴋᴇɪ}doujin 
 │🍄• ${ᴋᴇɪ}feet  
