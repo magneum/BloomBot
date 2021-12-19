@@ -34,7 +34,7 @@ module.exports = {
         await ӄʀǟӄɨռʐ
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.logGroup,
-            `(ᴄ)ᴍɪᴢᴜᴋɪ
+            `(ᴄ) ᴍɪᴢᴜᴋɪ ʙᴏᴛ
 
 𝙐𝙥𝙙𝙖𝙩𝙚🤖𝙋𝙚𝙣𝙙𝙞𝙣𝙜
 *•𝘗𝘭𝘦𝘢𝘴𝘦 𝘜𝘱𝘥𝘢𝘵𝘦 𝘜𝘴𝘪𝘯𝘨 *${ᴋᴇɪ}update* 𝘰𝘳 𝘳𝘦𝘥𝘦𝘱𝘭𝘰𝘺 𝐌𝐢𝐳𝐮𝐤𝐢™!`,
@@ -48,7 +48,7 @@ module.exports = {
         await ӄʀǟӄɨռʐ
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            `(ᴄ)ᴍɪᴢᴜᴋɪ
+            `(ᴄ) ᴍɪᴢᴜᴋɪ ʙᴏᴛ
 
 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 シ︎𝐆𝐫𝐨𝐮𝐩👓${_𝔏𝔞𝔟_.HASH}`,
@@ -188,7 +188,7 @@ You Can Get URL by using ${ᴋᴇɪ}yts <song-name>`,
                           mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
                         },
                         mimetype: Mimetype.png || Mimetype.jpeg,
-                        content: `(ᴄ)ᴍɪᴢᴜᴋɪ
+                        content: `(ᴄ) ᴍɪᴢᴜᴋɪ ʙᴏᴛ
 
 🎥𝗔𝘂𝗱𝗶𝗼
 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}, 𝗣𝗹𝗲𝗮𝘀𝗲 𝗖𝗵𝗼𝗼𝘀𝗲 𝗦𝗺𝗮𝗹𝗹𝗲𝗿 𝗙𝗶𝗹𝗲. 𝗠𝗮𝘅 𝗟𝗶𝗺𝗶𝘁 (𝟭𝟬𝟬𝗺𝗯)!
@@ -202,7 +202,7 @@ You Can Get URL by using ${ᴋᴇɪ}yts <song-name>`,
                     );
                 } else {
                   videos1.forEach(function (youfound) {
-                    Fetched = `(ᴄ)ᴍɪᴢᴜᴋɪ
+                    Fetched = `(ᴄ) ᴍɪᴢᴜᴋɪ ʙᴏᴛ
 
 🎥𝗔𝘂𝗱𝗶𝗼
 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}, 𝗣𝗹𝗲𝗮𝘀𝗲 𝗖𝗵𝗲𝗰𝗸 𝗬𝗼𝘂𝗿 𝗣𝗿𝗶𝘃𝗮𝘁𝗲 𝗳𝗼𝗿 𝘁𝗵𝗲 𝗱𝗲𝗹𝗶𝘃𝗲𝗿𝘆 𝗼𝗳 𝗩𝗶𝗱𝗲𝗼!
@@ -228,7 +228,7 @@ You Can Get URL by using ${ᴋᴇɪ}yts <song-name>`,
                     );
                   // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
                   videos1.forEach(function (youfound) {
-                    Fetched = `(ᴄ)ᴍɪᴢᴜᴋɪ
+                    Fetched = `(ᴄ) ᴍɪᴢᴜᴋɪ ʙᴏᴛ
 
 🎥𝗔𝘂𝗱𝗶𝗼
 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}, 𝗣𝗹𝗲𝗮𝘀𝗲 𝗖𝗵𝗲𝗰𝗸 𝗬𝗼𝘂𝗿 𝗣𝗿𝗶𝘃𝗮𝘁𝗲 𝗳𝗼𝗿 𝘁𝗵𝗲 𝗱𝗲𝗹𝗶𝘃𝗲𝗿𝘆 𝗼𝗳 𝗩𝗶𝗱𝗲𝗼!
@@ -270,7 +270,7 @@ You Can Get URL by using ${ᴋᴇɪ}yts <song-name>`,
                           mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
                         },
                         mimetype: Mimetype.png || Mimetype.jpeg,
-                        content: `(ᴄ)ᴍɪᴢᴜᴋɪ
+                        content: `(ᴄ) ᴍɪᴢᴜᴋɪ ʙᴏᴛ
 
 🎥𝗔𝘂𝗱𝗶𝗼
 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}, 𝗣𝗹𝗲𝗮𝘀𝗲 𝗖𝗵𝗼𝗼𝘀𝗲 𝗦𝗺𝗮𝗹𝗹𝗲𝗿 𝗙𝗶𝗹𝗲. 𝗠𝗮𝘅 𝗟𝗶𝗺𝗶𝘁 (𝟭𝟬𝟬𝗺𝗯)!
@@ -284,7 +284,7 @@ You Can Get URL by using ${ᴋᴇɪ}yts <song-name>`,
                     );
                 } else {
                   videos.forEach(function (youfound) {
-                    Fetched = `(ᴄ)ᴍɪᴢᴜᴋɪ
+                    Fetched = `(ᴄ) ᴍɪᴢᴜᴋɪ ʙᴏᴛ
 
 🎥𝗔𝘂𝗱𝗶𝗼
 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}, 𝗣𝗹𝗲𝗮𝘀𝗲 𝗖𝗵𝗲𝗰𝗸 𝗬𝗼𝘂𝗿 𝗣𝗿𝗶𝘃𝗮𝘁𝗲 𝗳𝗼𝗿 𝘁𝗵𝗲 𝗱𝗲𝗹𝗶𝘃𝗲𝗿𝘆 𝗼𝗳 𝗩𝗶𝗱𝗲𝗼!
@@ -311,7 +311,7 @@ You Can Get URL by using ${ᴋᴇɪ}yts <song-name>`,
                   // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
 
                   videos.forEach(function (youfound) {
-                    Fetched = `(ᴄ)ᴍɪᴢᴜᴋɪ
+                    Fetched = `(ᴄ) ᴍɪᴢᴜᴋɪ ʙᴏᴛ
 
 🎥𝗔𝘂𝗱𝗶𝗼
 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}, 𝗣𝗹𝗲𝗮𝘀𝗲 𝗖𝗵𝗲𝗰𝗸 𝗬𝗼𝘂𝗿 𝗣𝗿𝗶𝘃𝗮𝘁𝗲 𝗳𝗼𝗿 𝘁𝗵𝗲 𝗱𝗲𝗹𝗶𝘃𝗲𝗿𝘆 𝗼𝗳 𝗩𝗶𝗱𝗲𝗼!
