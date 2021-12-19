@@ -34,7 +34,7 @@ module.exports = {
             contextInfo: {
               mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
             },
-            caption: `(ᴄ)ᴍɪᴢᴜᴋɪ
+            caption: `(ᴄ) ᴍɪᴢᴜᴋɪ ʙᴏᴛ
 
 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 シ︎𝐆𝐫𝐨𝐮𝐩👓${_𝔏𝔞𝔟_.HASH}

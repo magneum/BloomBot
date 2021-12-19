@@ -66,7 +66,7 @@ module.exports = {
         },
       ];
       const buttonMessage = {
-        contentText: `(ᴄ)ᴍɪᴢᴜᴋɪ
+        contentText: `(ᴄ) ᴍɪᴢᴜᴋɪ ʙᴏᴛ
 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},*𝘽𝙊𝙏 𝙄𝙉 𝘽𝙀𝙏𝘼*
 シ︎🛸𝐆𝐫𝐨𝐮𝐩: ${_𝔏𝔞𝔟_.HASH}
 ┌────⭓ 𝐀𝐥𝐥 𝐂𝐚𝐭𝐞𝐠𝐨𝐫𝐢𝐞𝐬
@@ -86,7 +86,7 @@ module.exports = {
 │☕ *ᴜᴘᴛɪᴍᴇ:* ${runtime(process.uptime())}
 │🎮 *ʀᴀᴍ:* ${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}
 └───────────⭓`,
-        footerText: `(ᴄ)ᴍɪᴢᴜᴋɪ`,
+        footerText: `(ᴄ) ᴍɪᴢᴜᴋɪ ʙᴏᴛ`,
         buttons: buttons,
         headerType: 4,
         imageMessage: media.message.imageMessage,

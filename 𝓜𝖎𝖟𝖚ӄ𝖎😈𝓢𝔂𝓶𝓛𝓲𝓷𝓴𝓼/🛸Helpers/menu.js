@@ -25,7 +25,7 @@ module.exports = {
         await ӄʀǟӄɨռʐ
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.logGroup,
-            `(ᴄ)ᴍɪᴢᴜᴋɪ
+            `(ᴄ) ᴍɪᴢᴜᴋɪ ʙᴏᴛ
 
 𝙐𝙥𝙙𝙖𝙩𝙚🤖𝙋𝙚𝙣𝙙𝙞𝙣𝙜
 *•𝘗𝘭𝘦𝘢𝘴𝘦 𝘜𝘱𝘥𝘢𝘵𝘦 𝘜𝘴𝘪𝘯𝘨 *${ᴋᴇɪ}update* 𝘰𝘳 𝘳𝘦𝘥𝘦𝘱𝘭𝘰𝘺 𝐌𝐞𝐞𝟔™!`,
@@ -39,7 +39,7 @@ module.exports = {
         await ӄʀǟӄɨռʐ
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            `(ᴄ)ᴍɪᴢᴜᴋɪ
+            `(ᴄ) ᴍɪᴢᴜᴋɪ ʙᴏᴛ
 
 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 シ︎🛸𝐆𝐫𝐨𝐮𝐩: ${_𝔏𝔞𝔟_.HASH}`,
@@ -185,7 +185,7 @@ many many more!
                 contextInfo: {
                   mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
                 },
-                caption: `(ᴄ)ᴍɪᴢᴜᴋɪ
+                caption: `(ᴄ) ᴍɪᴢᴜᴋɪ ʙᴏᴛ
 
 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 
