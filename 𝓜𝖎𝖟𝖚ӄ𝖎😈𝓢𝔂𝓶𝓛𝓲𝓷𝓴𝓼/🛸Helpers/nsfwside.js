@@ -35,7 +35,7 @@ module.exports = {
 │👅• ${ᴋᴇɪ}tikporn: _get random tiktoc porn video_
 │👅• ${ᴋᴇɪ}4k: _get random 4k human nsfw image_
 │👅• ${ᴋᴇɪ}blowjob: _get random 4k blowjob image_
-│👅• ${ᴋᴇɪ}sluts: _get random 4k cumSluts image_
+│👅• ${ᴋᴇɪ}slut: _get random 4k cumSluts image_
 │👅• ${ᴋᴇɪ}milf: _get random 4k milf image_
 │👅• ${ᴋᴇɪ}milk: _get random 4k milking image_
 │👅• ${ᴋᴇɪ}pussy: _get random 4k pussy image_
