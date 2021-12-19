@@ -42,9 +42,14 @@ module.exports = {
 
 ┌────⭓ 𝐍𝐞𝐰 𝐏𝐮𝐛𝐥𝐢𝐜-𝐁𝐞𝐭𝐚 𝐅𝐞𝐚𝐭𝐮𝐫𝐞𝐬
 │⧪ ${ᴋᴇɪ}pinterest
-│⧪ ${ᴋᴇɪ}porn (18+ admin-only)
-│⧪ ${ᴋᴇɪ}hentaiside (hentai)
-│⧪ ${ᴋᴇɪ}humanside (porn)
+│⧪ ${ᴋᴇɪ}broadcast
+│⧪ ${ᴋᴇɪ}disappear
+│⧪ ${ᴋᴇɪ}beautycheck
+└───────────⭓
+
+┌────⭓ 𝙉𝙎𝙁𝙒 𝐂𝐚𝐭𝐞𝐠𝐨𝐫𝐢𝐞𝐬 _(27commmands)_
+│👅 *${ᴋᴇɪ}nsfwside:* _adult-human sub-menu_
+│🍄 *${ᴋᴇɪ}hentaiside:* _adult-hentai sub-menu_
 └───────────⭓
 
 _check the help or menu for more info._`,
