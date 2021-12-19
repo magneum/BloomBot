@@ -196,7 +196,7 @@ module.exports = {
           MessageType.listMessage,
           {
             quoted: chat,
-            contextInfo: { mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender] },
+            contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
           }
         )
         .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));

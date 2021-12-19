@@ -24,7 +24,7 @@ module.exports = {
             quoted: chat,
             mimetype: Mimetype.png || Mimetype.jpeg,
             contextInfo: {
-              mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
+              mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
             },
             caption: `_𝐌𝐢𝐳𝐮𝐤𝐢™_
 

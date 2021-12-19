@@ -108,7 +108,7 @@ module.exports = {
             MessageType.buttonsMessage,
             {
               quoted: chat,
-              contextInfo: { mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender] },
+              contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
             }
           )
           .then(() => {

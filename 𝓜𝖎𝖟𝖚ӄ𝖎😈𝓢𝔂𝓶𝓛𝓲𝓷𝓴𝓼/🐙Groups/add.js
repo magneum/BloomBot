@@ -51,7 +51,7 @@ ${ᴋᴇɪ}add 910000000000`,
               MessageType.buttonsMessage,
               {
                 quoted: chat,
-                contextInfo: { mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender] },
+                contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
               }
             )
             .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
