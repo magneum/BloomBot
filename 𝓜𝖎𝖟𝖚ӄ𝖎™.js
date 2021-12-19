@@ -250,18 +250,15 @@ ${update.desc}`,
       const MemNum = update.participants[0];
       // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
       if (update.action == `add` && MemNum.includes(ӄʀǟӄɨռʐ.user.jid)) {
-        let members = [];
-        for (var i = 0; i < update.groupMembers.length; i++) {
-          members[i] = update.groupMembers[i].jid;
-        }
-        return await ӄʀǟӄɨռʐ.sendMessage(
-          GroupID,
-          fs.readFileSync(`./𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/𝓜𝖎𝖟𝖚ӄ𝖎ɦɛʟք.png`),
-          MessageType.image,
-          {
-            quoted: members,
-            mimetype: Mimetype.png,
-            caption: `(ᴄ) ᴍɪᴢᴜᴋɪ ʙᴏᴛ
+        console.log(`⬡••••••••⬡    ⦿𝐌𝐢𝐳𝐮𝐤𝐢™⦿Added    ⬡••••••••⬡`);
+        return await ӄʀǟӄɨռʐ
+          .sendMessage(
+            GroupID,
+            fs.readFileSync(`./𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/𝓜𝖎𝖟𝖚ӄ𝖎ɦɛʟք.png`),
+            MessageType.image,
+            {
+              mimetype: Mimetype.png,
+              caption: `(ᴄ) ᴍɪᴢᴜᴋɪ ʙᴏᴛ
 
 ┌─────⭓
 │⦿ ʜᴇʟʟᴏ ᴇᴠᴇʀʏᴏɴᴇ, ʀᴇᴀᴅʏ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ʜᴇʀᴇ
@@ -272,8 +269,10 @@ ${update.desc}`,
 │⬘ 𝗠𝗲𝗺𝗯𝗲𝗿𝘀: ${GroupMemG}
 │⬘ 𝗚𝗿𝗼𝘂𝗽: ${GroupMemData.subject}
 └───────────⭓`,
-          }
-        );
+            }
+          )
+          .then(console.log(Kolor.green(GroupID)))
+          .catch((ℓαвєяяσя) => console.log(ℓαвєяяσя));
       }
       // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
       if (update.action === `add` && !MemNum.includes(ӄʀǟӄɨռʐ.user.jid)) {
@@ -427,7 +426,7 @@ ${ꜰᴇᴛᴄʜᴇᴅanti.message}`,
                 MessageType.text,
                 {
                   contextInfo: {
-                    mentionedJid: [REMOVE],
+                    mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
                   },
                 }
               )
