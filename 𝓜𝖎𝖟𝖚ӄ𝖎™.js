@@ -251,7 +251,27 @@ ${update.desc}`,
       // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
       if (update.action == `add` && MemNum.includes(ӄʀǟӄɨռʐ.user.jid)) {
         console.log(`⬡••••••••⬡    ⦿𝐌𝐢𝐳𝐮𝐤𝐢™⦿Added    ⬡••••••••⬡`);
-        return await ӄʀǟӄɨռʐ
+        return await ӄʀǟӄɨռʐ.sendMessage(
+          𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+          fs.readFileSync(`./𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/𝓜𝖎𝖟𝖚ӄ𝖎ɦɛʟք.png`),
+          MessageType.image,
+          {
+            quoted: chat,
+            mimetype: Mimetype.png,
+            caption: `(ᴄ) ᴍɪᴢᴜᴋɪ ʙᴏᴛ
+
+┌─────⭓
+│⦿ ʜᴇʟʟᴏ ᴇᴠᴇʀʏᴏɴᴇ, ʀᴇᴀᴅʏ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ʜᴇʀᴇ
+│⦿ ᴘʟᴇᴀꜱᴇ ᴛʏᴘᴇ *${ᴋᴇɪ}help* ᴛᴏ ᴋɴᴏᴡ ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅꜱ!
+└───────────⭓
+
+┌─────⭓
+│⬘ 𝗠𝗲𝗺𝗯𝗲𝗿𝘀: ${GroupMemG}
+│⬘ 𝗚𝗿𝗼𝘂𝗽: ${GroupMemData.subject}
+└───────────⭓`,
+          }
+        );
+        await ӄʀǟӄɨռʐ
           .sendMessage(
             GroupID,
             `(ᴄ) ᴍɪᴢᴜᴋɪ ʙᴏᴛ
@@ -419,7 +439,12 @@ Use *${ᴋᴇɪ}𝗵𝗲𝗹𝗽* to get the list of available commands`,
 
 *•──────[ Message From Admins  ]──────•*
 ${ꜰᴇᴛᴄʜᴇᴅanti.message}`,
-                MessageType.text
+                MessageType.text,
+                {
+                  contextInfo: {
+                    mentionedJid: [REMOVE],
+                  },
+                }
               )
               .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
             await ӄʀǟӄɨռʐ
