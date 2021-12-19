@@ -4,7 +4,7 @@ const _𝔏𝔞𝔟_ = require(`../../𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽
 const ℓιєηт = require(`../../𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/catch`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
-const got = require("got")
+const got = require("got");
 // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
 module.exports = {
   name: `paste`,
@@ -104,9 +104,8 @@ or reply *${ᴋᴇɪ}paste* to any text.`,
       let text = await got.post("https://nekobin.com/api/documents", {
         json,
       });
-      json = JSON.parse(text.body);
-      neko_url = "https://nekobin.com/" + json.result.key;
-      ӄʀǟӄɨռʐ
+      nekoson = await JSON.parse(text.body);
+      await ӄʀǟӄɨռʐ
         .sendMessage(
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
           `(ᴄ)ᴍɪᴢᴜᴋɪ
@@ -114,7 +113,7 @@ or reply *${ᴋᴇɪ}paste* to any text.`,
 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},   
 Here Is Your pasted link👇🏽‍
 
-"https://nekobin.com/" + ${json.result.key}`,
+"https://nekobin.com/" + ${nekoson.result.key}`,
           MessageType.text,
           {
             contextInfo: {
