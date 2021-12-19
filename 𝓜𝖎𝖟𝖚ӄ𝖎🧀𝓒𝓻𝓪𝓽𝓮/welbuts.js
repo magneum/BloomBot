@@ -68,7 +68,7 @@ exports.welbuts = async (
             contextInfo: {
               mentionedJid: [MemNum],
             },
-            caption: `©️ ᴍɪᴢᴜᴋɪ ʙᴏᴛ
+            caption: `(ᴄ) ᴍɪᴢᴜᴋɪ ʙᴏᴛ
             
 @${ᴘᴘᴡᴇʟᴄᴏᴍᴇ} | ${ᴡᴇʟᴄᴏᴍᴇʀᴛxᴛ}
 ┌───────⭓

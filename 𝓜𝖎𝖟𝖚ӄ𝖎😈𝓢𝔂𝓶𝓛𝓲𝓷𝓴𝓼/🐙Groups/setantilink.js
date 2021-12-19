@@ -31,7 +31,7 @@ Do note, the setantilink option is still enabled after you use the delete option
         await ӄʀǟӄɨռʐ
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.logGroup,
-            `©️ ᴍɪᴢᴜᴋɪ ʙᴏᴛ
+            `(ᴄ) ᴍɪᴢᴜᴋɪ ʙᴏᴛ
 
 𝙐𝙥𝙙𝙖𝙩𝙚🤖𝙋𝙚𝙣𝙙𝙞𝙣𝙜
 *•𝘗𝘭𝘦𝘢𝘴𝘦 𝘜𝘱𝘥𝘢𝘵𝘦 𝘜𝘴𝘪𝘯𝘨 *${ᴋᴇɪ}update* 𝘰𝘳 𝘳𝘦𝘥𝘦𝘱𝘭𝘰𝘺 𝐌𝐢𝐳𝐮𝐤𝐢™!`,
@@ -45,7 +45,7 @@ Do note, the setantilink option is still enabled after you use the delete option
         await ӄʀǟӄɨռʐ
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            `©️ ᴍɪᴢᴜᴋɪ ʙᴏᴛ
+            `(ᴄ) ᴍɪᴢᴜᴋɪ ʙᴏᴛ
 
 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 シ︎𝐆𝐫𝐨𝐮𝐩👓${_𝔏𝔞𝔟_.HASH}`,
@@ -122,7 +122,7 @@ Do note, the setantilink option is still enabled after you use the delete option
       if (!𝓜𝖎𝖟𝖚ӄ𝖎.isGroup) {
         ӄʀǟӄɨռʐ.sendMessage(
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-          `©️ ᴍɪᴢᴜᴋɪ ʙᴏᴛ
+          `(ᴄ) ᴍɪᴢᴜᴋɪ ʙᴏᴛ
 
 This is not a group`,
           MessageType.text,
@@ -143,7 +143,7 @@ This is not a group`,
             ӄʀǟӄɨռʐ
               .sendMessage(
                 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                `©️ ᴍɪᴢᴜᴋɪ ʙᴏᴛ
+                `(ᴄ) ᴍɪᴢᴜᴋɪ ʙᴏᴛ
 
 Set an Antilink message first.`,
                 MessageType.text,
@@ -161,7 +161,7 @@ Set an Antilink message first.`,
             await ӄʀǟӄɨռʐ
               .sendMessage(
                 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                `©️ ᴍɪᴢᴜᴋɪ ʙᴏᴛ
+                `(ᴄ) ᴍɪᴢᴜᴋɪ ʙᴏᴛ
 
 @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 Antilink are not enabled!`,
@@ -180,7 +180,7 @@ Antilink are not enabled!`,
           await ӄʀǟӄɨռʐ
             .sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              `©️ ᴍɪᴢᴜᴋɪ ʙᴏᴛ
+              `(ᴄ) ᴍɪᴢᴜᴋɪ ʙᴏᴛ
 
 @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 Antilink are enabled!`,
@@ -204,7 +204,7 @@ Antilink are enabled!`,
           await ӄʀǟӄɨռʐ
             .sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              `©️ ᴍɪᴢᴜᴋɪ ʙᴏᴛ
+              `(ᴄ) ᴍɪᴢᴜᴋɪ ʙᴏᴛ
 
 @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 Antilink messsage has been disabled.`,
@@ -226,7 +226,7 @@ Antilink messsage has been disabled.`,
           ӄʀǟӄɨռʐ
             .sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              `©️ ᴍɪᴢᴜᴋɪ ʙᴏᴛ
+              `(ᴄ) ᴍɪᴢᴜᴋɪ ʙᴏᴛ
 
 @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 Antilink messsage has been enabled.`,
@@ -251,7 +251,7 @@ Antilink messsage has been enabled.`,
             await ӄʀǟӄɨռʐ
               .sendMessage(
                 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                `©️ ᴍɪᴢᴜᴋɪ ʙᴏᴛ
+                `(ᴄ) ᴍɪᴢᴜᴋɪ ʙᴏᴛ
 
 @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 Set a Antilink message first.`,
@@ -271,7 +271,7 @@ Set a Antilink message first.`,
           await ӄʀǟӄɨռʐ
             .sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              `©️ ᴍɪᴢᴜᴋɪ ʙᴏᴛ
+              `(ᴄ) ᴍɪᴢᴜᴋɪ ʙᴏᴛ
 
 @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 Antilink messsage deleted.`,
@@ -298,7 +298,7 @@ Antilink messsage deleted.`,
           await ӄʀǟӄɨռʐ
             .sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              `©️ ᴍɪᴢᴜᴋɪ ʙᴏᴛ
+              `(ᴄ) ᴍɪᴢᴜᴋɪ ʙᴏᴛ
 
 @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 Antilink messsage updated and enabled.`,
@@ -319,7 +319,7 @@ Antilink messsage updated and enabled.`,
           await ӄʀǟӄɨռʐ
             .sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              `©️ ᴍɪᴢᴜᴋɪ ʙᴏᴛ
+              `(ᴄ) ᴍɪᴢᴜᴋɪ ʙᴏᴛ
 
 @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 Antilink messsage updated and enabled.`,
