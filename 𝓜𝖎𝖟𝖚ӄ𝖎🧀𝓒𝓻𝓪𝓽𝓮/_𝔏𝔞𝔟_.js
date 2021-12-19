@@ -46,6 +46,7 @@ const env = {
         }),
   ERROR: `https://i.postimg.cc/NfXSPxHd/Mizuki-Error.jpg`,
   MEE: MizukiMain,
+  MINAN: `./𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/𝓜𝖎𝖟𝖚ӄ𝖎NAdmin.png`,
   INVL: `https://i.postimg.cc/NfXSPxHd/Mizuki-Error.jpg`,
   ARC: `https://i.postimg.cc/251T8y9H/image.jpg`,
   UPT: `https://i.postimg.cc/K8PnV1QX/Mizuki-Update.png`,
