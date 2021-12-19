@@ -22,8 +22,7 @@
 ```
 
 # ⚡ 𝕯𝖊𝖕𝖑𝖔𝖞𝖒𝖊𝖓𝖙
-
-- Removed since bot in beta but people complaining for bugs -_-... WTF! BETA means something...
+- Removed since bot in beta but people complaining-_-... WTF! BETA means something...
 
 
 
