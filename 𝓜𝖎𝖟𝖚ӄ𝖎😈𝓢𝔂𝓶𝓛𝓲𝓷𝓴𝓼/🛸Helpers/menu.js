@@ -4,7 +4,6 @@ const ℓιєηт = require(`../../𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽�
 const _𝔏𝔞𝔟_ = require(`../../𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/_𝔏𝔞𝔟_`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
-const vers = require(`../../package.json`);
 // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
 module.exports = {
   name: `menu`,
@@ -18,7 +17,29 @@ module.exports = {
       var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
       var ꜱᴇɴᴅᴇʀᴄᴏɴꜰ = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
       // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
-      const MeeHelper = `*𝘽𝙊𝙏 𝙄𝙉 𝘽𝙀𝙏𝘼*
+      let content = fs.readFileSync(`./𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/𝓜𝖎𝖟𝖚ӄ𝖎ɦɛʟք.png`);
+      const media = await ӄʀǟӄɨռʐ.prepareMessage(
+        𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+        content,
+        MessageType.image,
+        {
+          mimetype: Mimetype.png || Mimetype.jpeg,
+        }
+      );
+      const buttons = [
+        {
+          buttonId: `${ᴋᴇɪ}help`,
+          buttonText: { displayText: `${ᴋᴇɪ}menu` },
+          type: 1,
+        },
+        {
+          buttonId: `${ᴋᴇɪ}repo`,
+          buttonText: { displayText: `${ᴋᴇɪ}repo` },
+          type: 1,
+        },
+      ];
+      const buttonMessage = {
+        contentText: `*𝘽𝙊𝙏 𝙄𝙉 𝘽𝙀𝙏𝘼*
 シ︎🛸𝐆𝐫𝐨𝐮𝐩: ${_𝔏𝔞𝔟_.HASH}
 
 ┌────⭓ *🤩𝘼𝙣𝙞𝙢𝙚 > (${ᴋᴇɪ}animeside)*
@@ -123,7 +144,18 @@ module.exports = {
 
 *⧪➛𝘾𝙤𝙢𝙞𝙣𝙜 𝙎𝙤𝙤𝙣!*
 many many more!
-`;
+`,
+        footerText: `_𝐌𝐢𝐳𝐮𝐤𝐢™_ ${vers.vers}`,
+        buttons: buttons,
+        headerType: 4,
+        imageMessage: media.message.imageMessage,
+      };
+      await ӄʀǟӄɨռʐ
+        .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, buttonMessage, MessageType.buttonsMessage, {
+          quoted: chat,
+          contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
+        })
+        .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
       // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
     } catch (ℓαвєяяσя) {
       ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
