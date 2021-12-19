@@ -109,7 +109,7 @@ _❗In Groups This Command allowed to Admins & Developers!_`,
 
 ┌────⭓
 │⦿ 𝐎𝐫𝐝𝐞𝐫𝐞𝐝𝐁𝐲: @${ꜱᴇɴᴅᴇʀeceived} 
-│⦿ 𝐓𝐨𝐩𝐢𝐜: ${𝓜𝖎𝖟𝖚ӄ𝖎.commandName.toUpperCase()}
+│⦿ 𝐓𝐨𝐩𝐢𝐜: *${𝓜𝖎𝖟𝖚ӄ𝖎.commandName.toUpperCase()}*
 └───────────⭓
 🔗𝐋𝐢𝐧𝐤: ${amazeme}`,
                   }
