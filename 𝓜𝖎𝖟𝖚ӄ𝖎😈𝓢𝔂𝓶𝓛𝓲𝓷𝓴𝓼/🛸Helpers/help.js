@@ -55,13 +55,13 @@ module.exports = {
       );
       const buttons = [
         {
-          buttonId: `${ᴋᴇɪ}menu`,
-          buttonText: { displayText: `${ᴋᴇɪ}menu` },
+          buttonId: `${ᴋᴇɪ}category`,
+          buttonText: { displayText: `${ᴋᴇɪ}category` },
           type: 1,
         },
         {
-          buttonId: `${ᴋᴇɪ}category`,
-          buttonText: { displayText: `${ᴋᴇɪ}category` },
+          buttonId: `${ᴋᴇɪ}menu`,
+          buttonText: { displayText: `${ᴋᴇɪ}menu` },
           type: 1,
         },
         {
@@ -73,7 +73,7 @@ module.exports = {
       const buttonMessage = {
         contentText: `•@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}, 
 
-𝘽𝙊𝙏 𝙄𝙉 𝘽𝙀𝙏𝘼
+𝘽𝙊𝙏 𝙄𝙉 𝘽𝙀𝙏𝘼 
 ────⭓🛸𝐆𝐫𝐨𝐮𝐩│${_𝔏𝔞𝔟_.HASH}
 
 
@@ -81,9 +81,10 @@ _❗Remember to make me admin_
 _❗Never Dm the bot user_
 _❗Kick the bot and group will be global-banned_
 
-*𝗣𝗿𝗲𝘀𝘀 𝗯𝗲𝗹𝗼𝘄 𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗦𝘁𝗮𝗿𝘁 𝘂𝘀𝗶𝗻𝗴 𝗠𝗶𝘇𝘂𝗸𝗶👇🏽‍*
+
+𝗣𝗿𝗲𝘀𝘀 𝗯𝗲𝗹𝗼𝘄 𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗦𝘁𝗮𝗿𝘁 𝘂𝘀𝗶𝗻𝗴 𝗠𝗶𝘇𝘂𝗸𝗶👇🏽‍
 `,
-        footerText: `(ᴄ) ᴍɪᴢᴜᴋɪ ʙᴏᴛ`,
+        footerText: `(ᴄ) ᴍɪᴢᴜᴋɪ ʙᴏᴛ - ${vers.vers}`,
         buttons: buttons,
         headerType: 4,
         imageMessage: media.message.imageMessage,
