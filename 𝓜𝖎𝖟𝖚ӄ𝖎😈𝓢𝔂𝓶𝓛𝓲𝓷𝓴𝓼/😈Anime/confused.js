@@ -30,7 +30,7 @@ module.exports = {
       const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
       console.log("𝐓𝐨𝐩𝐢𝐜: " + FinalName);
       // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
-      const link = await anime.blush();
+      const link = await anime.confused();
       console.log(link);
       const downloader = await new Downloader({
         url: link,
