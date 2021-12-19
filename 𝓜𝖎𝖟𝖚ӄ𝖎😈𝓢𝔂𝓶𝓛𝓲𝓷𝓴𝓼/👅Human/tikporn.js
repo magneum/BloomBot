@@ -22,7 +22,7 @@ module.exports = {
       // ⚡•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[🐙  𝐌𝐢𝐳𝐮𝐤𝐢™   🐙]──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⚡
       if (
         𝓜𝖎𝖟𝖚ӄ𝖎.isGroup &&
-        (!𝓜𝖎𝖟𝖚ӄ𝖎.isSenderGroupAdmin || !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderKRAK)
+        (!𝓜𝖎𝖟𝖚ӄ𝖎.isSenderGroupAdmin || !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderSUDO)
       ) {
         let content = fs.readFileSync(_𝔏𝔞𝔟_.MINAN);
         const media = await ӄʀǟӄɨռʐ.prepareMessage(
