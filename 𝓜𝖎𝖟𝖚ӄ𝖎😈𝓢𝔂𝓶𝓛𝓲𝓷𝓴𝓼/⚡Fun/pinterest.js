@@ -54,8 +54,9 @@ module.exports = {
           .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
       }
       // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
-      Pins = await pinterest(arg.join(`+`));
+      Pins = await pinterest(arg.join(` `));
       var PinReslt = Pins[Math.floor(Math.random() * Pins.length)];
+      console.log(PinReslt);
       await ӄʀǟӄɨռʐ
         .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, { url: PinReslt }, MessageType.image, {
           contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
