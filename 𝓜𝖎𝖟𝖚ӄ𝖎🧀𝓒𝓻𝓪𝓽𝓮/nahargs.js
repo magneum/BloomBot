@@ -67,7 +67,7 @@ exports.nahargs = async (
         quoted: chat,
         mimetype: Mimetype.png,
         contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
-        caption: `_(c)𝐌𝐢𝐳𝐮𝐤𝐢 ${vers.vers}_
+        caption: `(ᴄ)ᴍɪᴢᴜᴋɪ
 
 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}, 𝘍𝘰𝘳𝘨𝘰𝘵 𝘛𝘰 𝘎𝘪𝘷𝘦 𝘈𝘯𝘺 𝘈𝘳𝘨𝘶𝘮𝘦𝘯𝘵!
 ⬡ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ᴋᴇɪ}${commandName}
