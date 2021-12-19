@@ -39,57 +39,56 @@ module.exports = {
       neww = performance.now();
       oldd = performance.now();
       // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
-      let content = fs.readFileSync(`./𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/𝓜𝖎𝖟𝖚ӄ𝖎™.gif`);
+      let content = fs.readFileSync(`./𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/𝓜𝖎𝖟𝖚ӄ𝖎ɦɛʟք.png`);
       const media = await ӄʀǟӄɨռʐ.prepareMessage(
         𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
         content,
-        MessageType.video,
+        MessageType.image,
         {
-          mimetype: "video/gif",
+          mimetype: Mimetype.png || Mimetype.jpeg,
         }
       );
-      await ӄʀǟӄɨռʐ
-        .sendMessage(
-          𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-          {
-            contentText: `•@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}, 𝘽𝙊𝙏 𝙄𝙉 𝘽𝙀𝙏𝘼 
-🛸𝐆𝐫𝐨𝐮𝐩│${_𝔏𝔞𝔟_.HASH}
+      const buttons = [
+        {
+          buttonId: `${ᴋᴇɪ}category`,
+          buttonText: { displayText: `${ᴋᴇɪ}category` },
+          type: 1,
+        },
+        {
+          buttonId: `${ᴋᴇɪ}menu`,
+          buttonText: { displayText: `${ᴋᴇɪ}menu` },
+          type: 1,
+        },
+        {
+          buttonId: `${ᴋᴇɪ}mizuki`,
+          buttonText: { displayText: `${ᴋᴇɪ}mizuki` },
+          type: 1,
+        },
+      ];
+      const buttonMessage = {
+        contentText: `•@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}, 
+
+𝘽𝙊𝙏 𝙄𝙉 𝘽𝙀𝙏𝘼 
+────⭓🛸𝐆𝐫𝐨𝐮𝐩│${_𝔏𝔞𝔟_.HASH}
 
 
-_❗Remember to make bot admin_
+_❗Remember to make me admin_
 _❗Never Dm the bot user_
 _❗Kick the bot and group will be global-banned_
 
 
 𝗣𝗿𝗲𝘀𝘀 𝗯𝗲𝗹𝗼𝘄 𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗦𝘁𝗮𝗿𝘁 𝘂𝘀𝗶𝗻𝗴 𝗠𝗶𝘇𝘂𝗸𝗶👇🏽‍
 `,
-            footerText: `_𝐌𝐢𝐳𝐮𝐤𝐢™_ - ${vers.vers}`,
-            buttons: [
-              {
-                buttonId: `${ᴋᴇɪ}category`,
-                buttonText: { displayText: `${ᴋᴇɪ}category` },
-                type: 1,
-              },
-              {
-                buttonId: `${ᴋᴇɪ}menu`,
-                buttonText: { displayText: `${ᴋᴇɪ}menu` },
-                type: 1,
-              },
-              {
-                buttonId: `${ᴋᴇɪ}mizuki`,
-                buttonText: { displayText: `${ᴋᴇɪ}mizuki` },
-                type: 1,
-              },
-            ],
-            headerType: 5,
-            videoMessage: media.message.videoMessage,
-          },
-          MessageType.buttonsMessage,
-          {
-            quoted: chat,
-            contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
-          }
-        )
+        footerText: `(ᴄ) ᴍɪᴢᴜᴋɪ ʙᴏᴛ - ${vers.vers}`,
+        buttons: buttons,
+        headerType: 4,
+        imageMessage: media.message.imageMessage,
+      };
+      await ӄʀǟӄɨռʐ
+        .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, buttonMessage, MessageType.buttonsMessage, {
+          quoted: chat,
+          contextInfo: { mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender] },
+        })
         .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
     } catch (ℓαвєяяσя) {
       ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
