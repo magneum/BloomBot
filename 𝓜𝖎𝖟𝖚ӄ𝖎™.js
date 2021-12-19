@@ -65,7 +65,6 @@ try {
         console.log(𝓜𝖎𝖟𝖚ӄ𝖎Table.toString());
       }
     }
-    loadCommands();
     if (_𝔏𝔞𝔟_.HEROKU_API === `Null` || _𝔏𝔞𝔟_.HEROKU_BOT_NAME === `Null`) {
       console.log(
         Kolor.yellow(
@@ -122,6 +121,7 @@ try {
         Kolor.yellow(`⬡=================⬡    ⦿𝐌𝐢𝐳𝐮𝐤𝐢™⦿    ⬡=================⬡`)
       );
       console.log(Kolor.green(`💡𝗜𝗻𝗳𝗼⬰ 𝘚𝘺𝘯𝘤𝘪𝘯𝘨 𝘋𝘢𝘵𝘢 𝘸𝘪𝘵𝘩 𝘏𝘰𝘴𝘵...✅`));
+      loadCommands();
       await 𝓜𝖎𝖟𝖚ӄ𝖎sql.sync();
       console.log(
         Kolor.green(`⬡=================⬡    ⦿𝐌𝐢𝐳𝐮𝐤𝐢™⦿    ⬡=================⬡`),
