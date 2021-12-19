@@ -1,6 +1,7 @@
 FROM ubuntu
 RUN apt update 
 RUN apt upgrade -y 
+ENV DEBIAN_FRONTEND=noninteractive 
 RUN apt install git -y 
 RUN apt-get install curl -y 
 RUN apt install -y ffmpeg opus-tools bpm-tools 
