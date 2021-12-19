@@ -64,6 +64,11 @@ module.exports = {
           buttonText: { displayText: `${ᴋᴇɪ}mizuki` },
           type: 1,
         },
+        {
+          buttonId: `${ᴋᴇɪ}repo`,
+          buttonText: { displayText: `${ᴋᴇɪ}repo` },
+          type: 1,
+        },
       ];
       const buttonMessage = {
         contentText: `•@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}, 𝘽𝙊𝙏 𝙄𝙉 𝘽𝙀𝙏𝘼
