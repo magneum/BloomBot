@@ -5,12 +5,10 @@ try {
   const AutoKrakz = require(`./𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/𝓜𝖎𝖟𝖚ӄ𝖎ɢɪᴛ`);
   const 𝓜𝖎𝖟𝖚ӄ𝖎ǟքք = require(`./𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/helper`);
   const welbuts = require(`./𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/welbuts`);
-  const ӄʀǟӄɨռʐult = require(`./𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/ɠɠʊ`);
   const postDb = require(`./𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/postDb`);
   const _𝔏𝔞𝔟_ = require(`./𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/_𝔏𝔞𝔟_`);
   const ℓιєηт = require(`./𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/catch`);
   const download = require(`download-file`);
-  const vers = require(`./package.json`);
   const Kolor = require(`chalk`);
   const 𝓜𝖎𝖟𝖚ӄ𝖎sql = _𝔏𝔞𝔟_.POSTQL;
   var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
@@ -38,9 +36,36 @@ try {
   ];
   // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
   var ӄʀǟӄɨռʐ = 𝓜𝖎𝖟𝖚ӄ𝖎ֆʏռօք.WhatsApp;
+  const ascii = require("ascii-table");
+  const 𝓜𝖎𝖟𝖚ӄ𝖎Table = new ascii().setHeading("✭𝓜𝖎𝖟𝖚ӄ𝖎✭", "Health");
   ӄʀǟӄɨռʐ.logger.level = "error";
   async function 𝓜𝓮𝓮6s() {
     var 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹 = new Map();
+    var commandUsage = new Map();
+    console.log(Kolor.yellow(`💡𝗜𝗻𝗳𝗼⬰ 𝘐𝘯𝘴𝘵𝘢𝘭𝘭𝘪𝘯𝘨 𝘗𝘭𝘶𝘨𝘪𝘯𝘴...✅`));
+    function loadCommands() {
+      const Folders = fs.readdirSync(`./𝓜𝖎𝖟𝖚ӄ𝖎😈𝓢𝔂𝓶𝓛𝓲𝓷𝓴𝓼`);
+      for (const folder of Folders) {
+        const commandFiles = fs
+          .readdirSync(`./𝓜𝖎𝖟𝖚ӄ𝖎😈𝓢𝔂𝓶𝓛𝓲𝓷𝓴𝓼/${folder}`)
+          .filter((file) => file.endsWith(".js"));
+        for (const file of commandFiles) {
+          const command = require(`./𝓜𝖎𝖟𝖚ӄ𝖎😈𝓢𝔂𝓶𝓛𝓲𝓷𝓴𝓼/${folder}/${file}`);
+          if (command.name) {
+            𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹.set(command.name, command);
+            commandUsage.set(command.𝓜𝓮𝓮6ʍօʀɛ, command.description);
+            𝓜𝖎𝖟𝖚ӄ𝖎Table.addRow(
+              `💡𝗜𝗻𝗳𝗼⬰ ` + Kolor.green(command.name.toUpperCase()),
+              "Ready 🐙"
+            );
+          } else {
+            continue;
+          }
+        }
+        console.log(𝓜𝖎𝖟𝖚ӄ𝖎Table.toString());
+      }
+    }
+    loadCommands();
     if (_𝔏𝔞𝔟_.HEROKU_API === `Null` || _𝔏𝔞𝔟_.HEROKU_BOT_NAME === `Null`) {
       console.log(
         Kolor.yellow(
@@ -84,7 +109,7 @@ try {
       console.log(
         Kolor.yellow(`⬡=================⬡    ⦿𝐌𝐢𝐳𝐮𝐤𝐢™⦿    ⬡=================⬡`)
       );
-      console.log(Kolor.yellow(`💡𝗜𝗻𝗳𝗼⬰ 𝘊𝘰𝘯𝘯𝘦𝘤𝘵𝘪𝘯𝘨 𝘵𝘰 𝘋𝘢𝘵𝘢𝘣𝘢𝘴𝘦...✅`));
+      console.log(Kolor.green(`💡𝗜𝗻𝗳𝗼⬰ 𝘊𝘰𝘯𝘯𝘦𝘤𝘵𝘪𝘯𝘨 𝘵𝘰 𝘋𝘢𝘵𝘢𝘣𝘢𝘴𝘦...✅`));
       try {
         await 𝓜𝖎𝖟𝖚ӄ𝖎sql.authenticate();
       } catch (ℓαвєяяσя) {
@@ -96,41 +121,8 @@ try {
       console.log(
         Kolor.yellow(`⬡=================⬡    ⦿𝐌𝐢𝐳𝐮𝐤𝐢™⦿    ⬡=================⬡`)
       );
-      console.log(Kolor.yellow(`💡𝗜𝗻𝗳𝗼⬰ 𝘚𝘺𝘯𝘤𝘪𝘯𝘨 𝘋𝘢𝘵𝘢 𝘸𝘪𝘵𝘩 𝘏𝘰𝘴𝘵...✅`));
+      console.log(Kolor.green(`💡𝗜𝗻𝗳𝗼⬰ 𝘚𝘺𝘯𝘤𝘪𝘯𝘨 𝘋𝘢𝘵𝘢 𝘸𝘪𝘵𝘩 𝘏𝘰𝘴𝘵...✅`));
       await 𝓜𝖎𝖟𝖚ӄ𝖎sql.sync();
-      console.clear();
-      console.log(
-        Kolor.yellow(
-          `\n\n\n\n\n\n⬡=================⬡    ⦿𝐌𝐢𝐳𝐮𝐤𝐢™⦿    ⬡=================⬡`
-        )
-      );
-      console.log(Kolor.yellow(`💡𝗜𝗻𝗳𝗼⬰ 𝘐𝘯𝘴𝘵𝘢𝘭𝘭𝘪𝘯𝘨 𝘗𝘭𝘶𝘨𝘪𝘯𝘴...✅`));
-      var commandUsage = new Map();
-      const ascii = require("ascii-table");
-      const 𝓜𝖎𝖟𝖚ӄ𝖎Table = new ascii().setHeading("✭𝓜𝖎𝖟𝖚ӄ𝖎✭", "Health");
-      function loadCommands() {
-        const Folders = fs.readdirSync(`./𝓜𝖎𝖟𝖚ӄ𝖎😈𝓢𝔂𝓶𝓛𝓲𝓷𝓴𝓼`);
-        for (const folder of Folders) {
-          const commandFiles = fs
-            .readdirSync(`./𝓜𝖎𝖟𝖚ӄ𝖎😈𝓢𝔂𝓶𝓛𝓲𝓷𝓴𝓼/${folder}`)
-            .filter((file) => file.endsWith(".js"));
-          for (const file of commandFiles) {
-            const command = require(`./𝓜𝖎𝖟𝖚ӄ𝖎😈𝓢𝔂𝓶𝓛𝓲𝓷𝓴𝓼/${folder}/${file}`);
-            if (command.name) {
-              𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹.set(command.name, command);
-              commandUsage.set(command.𝓜𝓮𝓮6ʍօʀɛ, command.description);
-              𝓜𝖎𝖟𝖚ӄ𝖎Table.addRow(
-                `💡𝗜𝗻𝗳𝗼⬰ ` + Kolor.green(command.name.toUpperCase()),
-                "Ready 🐙"
-              );
-            } else {
-              continue;
-            }
-          }
-          console.log(𝓜𝖎𝖟𝖚ӄ𝖎Table.toString());
-        }
-      }
-      loadCommands();
       console.log(
         Kolor.green(`⬡=================⬡    ⦿𝐌𝐢𝐳𝐮𝐤𝐢™⦿    ⬡=================⬡`),
         Kolor.red(`
