@@ -251,10 +251,24 @@ ${update.desc}`,
       // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
       if (update.action == `add` && MemNum.includes(ӄʀǟӄɨռʐ.user.jid)) {
         console.log(`⬡••••••••⬡    ⦿𝐌𝐢𝐳𝐮𝐤𝐢™⦿Added    ⬡••••••••⬡`);
-        return await ӄʀǟӄɨռʐ
-          .sendMessage(
-            GroupID,
-            `©️ ᴍɪᴢᴜᴋɪ ʙᴏᴛ
+        let content = fs.readFileSync(_𝔏𝔞𝔟_.MINAN);
+        const media = await ӄʀǟӄɨռʐ.prepareMessage(
+          GroupID,
+          content,
+          MessageType.image,
+          {
+            mimetype: Mimetype.png,
+          }
+        );
+        const buttons = [
+          {
+            buttonId: `${ᴋᴇɪ}help`,
+            buttonText: { displayText: `${ᴋᴇɪ}help` },
+            type: 1,
+          },
+        ];
+        const buttonMessage = {
+          contentText: `©️ ᴍɪᴢᴜᴋɪ ʙᴏᴛ
 
 ┌─────⭓
 │⦿ ʜᴇʟʟᴏ ᴇᴠᴇʀʏᴏɴᴇ, ʀᴇᴀᴅʏ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ʜᴇʀᴇ
@@ -265,9 +279,13 @@ ${update.desc}`,
 │⬘ 𝗠𝗲𝗺𝗯𝗲𝗿𝘀: ${GroupMemG}
 │⬘ 𝗚𝗿𝗼𝘂𝗽: ${GroupMemData.subject}
 └───────────⭓`,
-            `conversation`
-          )
-          .then(console.log(Kolor.green(GroupID)))
+          footerText: `(c)𝐌𝐢𝐳𝐮𝐤𝐢`,
+          buttons: buttons,
+          headerType: 4,
+          imageMessage: media.message.imageMessage,
+        };
+        return await ӄʀǟӄɨռʐ
+          .sendMessage(GroupID, buttonMessage, MessageType.buttonsMessage)
           .catch((ℓαвєяяσя) => console.log(ℓαвєяяσя));
       }
       // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
@@ -404,8 +422,7 @@ Use *${ᴋᴇɪ}𝗵𝗲𝗹𝗽* to get the list of available commands`,
             (!𝓜𝖎𝖟𝖚ӄ𝖎.budy.includes(_𝔏𝔞𝔟_.HASH) &&
               𝓜𝖎𝖟𝖚ӄ𝖎.budy.includes(`://chat.whatsapp.com/`)) ||
             𝓜𝖎𝖟𝖚ӄ𝖎.budy.includes(`://wa.me/`) ||
-            𝓜𝖎𝖟𝖚ӄ𝖎.budy.includes(`://discord.gg`) 
-            
+            𝓜𝖎𝖟𝖚ӄ𝖎.budy.includes(`://discord.gg`)
           ) {
             ӄʀǟӄɨռʐ
               .sendMessage(
