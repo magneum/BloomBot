@@ -93,6 +93,30 @@ or reply *${ᴋᴇɪ}paste* to any text.`,
             ""
           ),
         };
+        let text = await got.post("https://nekobin.com/api/documents", {
+          json,
+        });
+        console.log(json);
+        nekoson = await JSON.parse(text.body);
+        console.log(nekoson);
+        await ӄʀǟӄɨռʐ
+          .sendMessage(
+            𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+            `(ᴄ)ᴍɪᴢᴜᴋɪ
+
+•@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},   
+Here Is Your pasted link👇🏽‍
+
+https://nekobin.com/${nekoson.result.key}`,
+            MessageType.text,
+            {
+              quoted: chat,
+              contextInfo: {
+                mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
+              },
+            }
+          )
+          .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
       } else {
         var json = {
           content: 𝓜𝖎𝖟𝖚ӄ𝖎.replyMessage.replace(
@@ -100,28 +124,31 @@ or reply *${ᴋᴇɪ}paste* to any text.`,
             ""
           ),
         };
-      }
-      let text = await got.post("https://nekobin.com/api/documents", {
-        json,
-      });
-      nekoson = await JSON.parse(text.body);
-      await ӄʀǟӄɨռʐ
-        .sendMessage(
-          𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-          `(ᴄ)ᴍɪᴢᴜᴋɪ
+        let text = await got.post("https://nekobin.com/api/documents", {
+          json,
+        });
+        console.log(json);
+        nekoson = await JSON.parse(text.body);
+        console.log(nekoson);
+        await ӄʀǟӄɨռʐ
+          .sendMessage(
+            𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+            `(ᴄ)ᴍɪᴢᴜᴋɪ
 
 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},   
 Here Is Your pasted link👇🏽‍
 
-"https://nekobin.com/" + ${nekoson.result.key}`,
-          MessageType.text,
-          {
-            contextInfo: {
-              mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
-            },
-          }
-        )
-        .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
+https://nekobin.com/${nekoson.result.key}`,
+            MessageType.text,
+            {
+              quoted: chat,
+              contextInfo: {
+                mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
+              },
+            }
+          )
+          .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
+      }
     } catch (ℓαвєяяσя) {
       ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
       console.log(ℓαвєяяσя);
