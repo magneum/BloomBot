@@ -58,7 +58,7 @@ module.exports = {
 
 *Press below Menu Button All Commands!👇🏽‍*
 `,
-        footerText: `(ᴄ) ᴍɪᴢᴜᴋɪ ʙᴏᴛ`,
+        footerText: `_𝐌𝐢𝐳𝐮𝐤𝐢™_`,
         buttons: buttons,
         headerType: 4,
         imageMessage: media.message.imageMessage,

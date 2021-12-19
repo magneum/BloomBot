@@ -60,7 +60,7 @@ module.exports = {
       ];
       const buttonMessage = {
         contentText: `@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}, *ʏᴏᴜ ᴅᴏɴ'ᴛ ꜱᴇᴇᴍ ᴛᴏ ʙᴇ ᴀᴅᴍɪɴ..*`,
-        footerText: `(ᴄ) ᴍɪᴢᴜᴋɪ ʙᴏᴛ`,
+        footerText: `_𝐌𝐢𝐳𝐮𝐤𝐢™_`,
         buttons: buttons,
         headerType: 4,
         imageMessage: media.message.imageMessage,
@@ -101,7 +101,7 @@ module.exports = {
 │⦿ 𝐓𝐨𝐩𝐢𝐜: *${𝓜𝖎𝖟𝖚ӄ𝖎.commandName.toUpperCase()}*
 └───────────⭓
 🔗𝐋𝐢𝐧𝐤: ${link}`,
-              footerText: `(ᴄ) ᴍɪᴢᴜᴋɪ ʙᴏᴛ`,
+              footerText: `_𝐌𝐢𝐳𝐮𝐤𝐢™_`,
               buttons: [
                 {
                   buttonId: `${ᴋᴇɪ}${moonshine}`,

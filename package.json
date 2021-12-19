@@ -1,7 +1,7 @@
 {
   "name": "mizuki",
   "main": "𝓜𝖎𝖟𝖚ӄ𝖎™.js",
-  "vers": "ɴɪɢʜᴛʟʏ-v16.6",
+  "vers": "ɴɪɢʜᴛʟʏ-v17",
   "dependencies": {
     "@adiwajshing/baileys": "^3.5.3",
     "@cicciosgamino/openweather-apis": "^5.0.1",

@@ -34,17 +34,17 @@ module.exports = {
             contextInfo: {
               mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
             },
-            caption: `(ᴄ) ᴍɪᴢᴜᴋɪ ʙᴏᴛ
+            caption: `_𝐌𝐢𝐳𝐮𝐤𝐢™_
 
 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 シ︎𝐆𝐫𝐨𝐮𝐩👓${_𝔏𝔞𝔟_.HASH}
 
 
 ┌────⭓ *𝙈𝙪𝙨𝙞𝙘*  ⦿
-│🍫• ${ᴋᴇɪ}lyrics: _ꜰɪɴᴅ ʟʏʀɪᴄꜱ ᴏꜰ ꜱᴏɴɢꜱ_
-│🍫• ${ᴋᴇɪ}ytaudio: _ᴅᴏᴡɴʟᴏᴀᴅ ᴀɴʏ ʏᴏᴜᴛᴜʙᴇ ᴀᴜᴅɪᴏ ᴜɴᴅᴇʀ 100ᴍʙ ꜱɪᴢᴇ._
-│🍫• ${ᴋᴇɪ}ytsearch: _ɢᴇᴛ ʀᴇᴄᴏᴍᴍᴇɴᴅᴀᴛɪᴏɴꜱ ᴀɴᴅ ʟɪɴᴋꜱ ꜰʀᴏᴍ ʏᴏᴜᴛᴜʙᴇ_
-│🍫• ${ᴋᴇɪ}ytvideo: _ᴅᴏᴡɴʟᴏᴀᴅ ᴀɴʏ ʏᴏᴜᴛᴜʙᴇ ᴠɪᴅᴇᴏ ᴜɴᴅᴇʀ 50ᴍʙ ꜱɪᴢᴇ._
+│🍫• ${ᴋᴇɪ}lyrics: _find lyrics of songs_
+│🍫• ${ᴋᴇɪ}ytsearch: _search videos in youtube_
+│🍫• ${ᴋᴇɪ}ytaudio: _download youtube audio under 100mb_
+│🍫• ${ᴋᴇɪ}ytvideo: _download youtube video under 100mb_
 └───────────⭓
 
 *⧪➛𝘾𝙤𝙢𝙞𝙣𝙜 𝙎𝙤𝙤𝙣!*

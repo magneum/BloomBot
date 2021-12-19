@@ -29,7 +29,7 @@ module.exports = {
         await ӄʀǟӄɨռʐ
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.logGroup,
-            `(ᴄ) ᴍɪᴢᴜᴋɪ ʙᴏᴛ
+            `_𝐌𝐢𝐳𝐮𝐤𝐢™_
 
 𝙐𝙥𝙙𝙖𝙩𝙚🤖𝙋𝙚𝙣𝙙𝙞𝙣𝙜
 •𝘗𝘭𝘦𝘢𝘴𝘦 𝘜𝘱𝘥𝘢𝘵𝘦 𝘜𝘴𝘪𝘯𝘨 ${ᴋᴇɪ}update 𝘰𝘳 𝘳𝘦𝘥𝘦𝘱𝘭𝘰𝘺 𝐌𝐢𝐳𝐮𝐤𝐢™!`,
@@ -76,7 +76,7 @@ module.exports = {
           },
         ];
         const buttonMessage = {
-          contentText: `(ᴄ) ᴍɪᴢᴜᴋɪ ʙᴏᴛ
+          contentText: `_𝐌𝐢𝐳𝐮𝐤𝐢™_
 
 ┌────⭓
 │⦿ 𝐀𝐬𝐤𝐞𝐝𝐁𝐲: @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
@@ -96,7 +96,7 @@ module.exports = {
 ⭔ Description : ${prn.desc}
 ⭔ Download: https://tikporntok.com/${prn.video}
 ⭔ Source : https://tikporntok.com/${prn.source}`,
-          footerText: `(ᴄ) ᴍɪᴢᴜᴋɪ ʙᴏᴛ`,
+          footerText: `_𝐌𝐢𝐳𝐮𝐤𝐢™_`,
           buttons: buttons,
           headerType: 5,
           videoMessage: media.message.videoMessage,

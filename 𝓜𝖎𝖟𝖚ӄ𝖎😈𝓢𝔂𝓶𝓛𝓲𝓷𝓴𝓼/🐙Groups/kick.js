@@ -27,7 +27,7 @@ module.exports = {
         await ӄʀǟӄɨռʐ
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.logGroup,
-            `(ᴄ) ᴍɪᴢᴜᴋɪ ʙᴏᴛ
+            `_𝐌𝐢𝐳𝐮𝐤𝐢™_
 
 𝙐𝙥𝙙𝙖𝙩𝙚🤖𝙋𝙚𝙣𝙙𝙞𝙣𝙜
 *•𝘗𝘭𝘦𝘢𝘴𝘦 𝘜𝘱𝘥𝘢𝘵𝘦 𝘜𝘴𝘪𝘯𝘨 *${ᴋᴇɪ}update* 𝘰𝘳 𝘳𝘦𝘥𝘦𝘱𝘭𝘰𝘺 𝐌𝐢𝐳𝐮𝐤𝐢™!`,
@@ -41,7 +41,7 @@ module.exports = {
         await ӄʀǟӄɨռʐ
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            `(ᴄ) ᴍɪᴢᴜᴋɪ ʙᴏᴛ
+            `_𝐌𝐢𝐳𝐮𝐤𝐢™_
 
 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 シ︎𝐆𝐫𝐨𝐮𝐩👓${_𝔏𝔞𝔟_.HASH}`,
@@ -205,7 +205,7 @@ module.exports = {
                     quoted: chat,
                     mimetype: Mimetype.jpeg || Mimetype.png,
                     contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ, Receiver] },
-                    caption: `(ᴄ) ᴍɪᴢᴜᴋɪ ʙᴏᴛ
+                    caption: `_𝐌𝐢𝐳𝐮𝐤𝐢™_
 
 @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ} ᴋɪᴄᴋᴇᴅ @${personreceived} ᴏᴜᴛᴛᴀ ᴛʜᴇ ɢʀᴏᴜᴘ!`,
                   }
@@ -230,7 +230,7 @@ module.exports = {
                     quoted: chat,
                     mimetype: Mimetype.jpeg || Mimetype.png,
                     contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
-                    caption: `(ᴄ) ᴍɪᴢᴜᴋɪ ʙᴏᴛ
+                    caption: `_𝐌𝐢𝐳𝐮𝐤𝐢™_
 
 @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ} ᴋɪᴄᴋᴇᴅ ᴛʜᴀᴛ ᴘᴇʀꜱᴏɴ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ!`,
                   }
@@ -309,7 +309,7 @@ module.exports = {
                   quoted: chat,
                   mimetype: Mimetype.jpeg || Mimetype.png,
                   contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ, Receiver] },
-                  caption: `(ᴄ) ᴍɪᴢᴜᴋɪ ʙᴏᴛ
+                  caption: `_𝐌𝐢𝐳𝐮𝐤𝐢™_
 
 @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ} ᴋɪᴄᴋᴇᴅ @${personreceived} ᴏᴜᴛᴛᴀ ᴛʜᴇ ɢʀᴏᴜᴘ!`,
                 }
@@ -334,7 +334,7 @@ module.exports = {
                   quoted: chat,
                   mimetype: Mimetype.jpeg || Mimetype.png,
                   contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
-                  caption: `(ᴄ) ᴍɪᴢᴜᴋɪ ʙᴏᴛ
+                  caption: `_𝐌𝐢𝐳𝐮𝐤𝐢™_
 
 @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}, ᴋɪᴄᴋᴇᴅ ᴛʜᴀᴛ ᴘᴇʀꜱᴏɴ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ!`,
                 }

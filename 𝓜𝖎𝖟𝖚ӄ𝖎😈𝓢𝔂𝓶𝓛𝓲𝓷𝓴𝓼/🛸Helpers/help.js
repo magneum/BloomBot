@@ -84,7 +84,7 @@ _❗Kick the bot and group will be global-banned_
 
 𝗣𝗿𝗲𝘀𝘀 𝗯𝗲𝗹𝗼𝘄 𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗦𝘁𝗮𝗿𝘁 𝘂𝘀𝗶𝗻𝗴 𝗠𝗶𝘇𝘂𝗸𝗶👇🏽‍
 `,
-        footerText: `(ᴄ) ᴍɪᴢᴜᴋɪ ʙᴏᴛ - ${vers.vers}`,
+        footerText: `_𝐌𝐢𝐳𝐮𝐤𝐢™_ - ${vers.vers}`,
         buttons: buttons,
         headerType: 4,
         imageMessage: media.message.imageMessage,

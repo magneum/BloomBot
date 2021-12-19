@@ -35,33 +35,33 @@ module.exports = {
             contextInfo: {
               mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
             },
-            caption: `(ᴄ) ᴍɪᴢᴜᴋɪ ʙᴏᴛ
+            caption: `_𝐌𝐢𝐳𝐮𝐤𝐢™_
 
 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 シ︎𝐆𝐫𝐨𝐮𝐩👓${_𝔏𝔞𝔟_.HASH}
 
 
 ┌────⭓ 𝘼𝙣𝙞𝙢𝙚*  ⦿
-│🎋• ${ᴋᴇɪ}anime: _ꜱᴇᴀʀᴄʜ ᴀɴɪᴍᴇ_
-│🎋• ${ᴋᴇɪ}animewallpaper: _ᴅᴏᴡɴʟᴏᴀᴅ ʜᴅ ᴀɴɪᴍᴇ-ᴡᴀʟʟᴘᴀᴘᴇʀꜱ_
-│🎋• ${ᴋᴇɪ}cuddle: _ɢᴇᴛ ᴀɴ ᴀɴɪᴍᴇ-ᴄᴜᴅᴅʟᴇ ɢɪꜰ_
-│🎋• ${ᴋᴇɪ}hug: _ɢᴇᴛ ᴀɴ ᴀɴɪᴍᴇ-ʜᴜɢ ɢɪꜰ_
-│🎋• ${ᴋᴇɪ}pat: _ɢᴇᴛ ᴀɴ ᴀɴɪᴍᴇ-ᴘᴀᴛ ɢɪꜰ_
-│🎋• ${ᴋᴇɪ}smile: _ɢᴇᴛ ᴀɴ ᴀɴɪᴍᴇ-ꜱᴍɪʟᴇ ɢɪꜰ_
-│🎋• ${ᴋᴇɪ}slap: _ɢᴇᴛ ᴀɴ ᴀɴɪᴍᴇ-ꜱʟᴀᴘ ɢɪꜰ_
-│🎋• ${ᴋᴇɪ}wink: _ɢᴇᴛ ᴀɴ ᴀɴɪᴍᴇ-ᴡɪɴᴋ ɢɪꜰ_
-│🎋• ${ᴋᴇɪ}yes: _ɢᴇᴛ ᴀɴ ᴀɴɪᴍᴇ-ʏᴇꜱ ɢɪꜰ_
-│🎋• ${ᴋᴇɪ}bite: _ɢᴇᴛ ᴀɴ ᴀɴɪᴍᴇ-ʙɪᴛᴇ ɢɪꜰ_
-│🎋• ${ᴋᴇɪ}blush: _ɢᴇᴛ ᴀɴ ᴀɴɪᴍᴇ-ʙʟᴜꜱʜ ɢɪꜰ_
-│🎋• ${ᴋᴇɪ}bored: _ɢᴇᴛ ᴀɴ ᴀɴɪᴍᴇ-ʙᴏʀᴇᴅ ɢɪꜰ_
-│🎋• ${ᴋᴇɪ}confused: _ɢᴇᴛ ᴀɴ ᴀɴɪᴍᴇ-ᴄᴏɴꜰᴜꜱᴇᴅ ɢɪꜰ_
-│🎋• ${ᴋᴇɪ}cry: _ɢᴇᴛ ᴀɴ ᴀɴɪᴍᴇ-ᴄʀʏ ɢɪꜰ_
-│🎋• ${ᴋᴇɪ}goodnight: _ɢᴇᴛ ᴀɴ ᴀɴɪᴍᴇ-ɢᴏᴏᴅɴɪɢʜᴛ ɢɪꜰ_
-│🎋• ${ᴋᴇɪ}happy: _ɢᴇᴛ ᴀɴ ᴀɴɪᴍᴇ-ʜᴀᴘᴘʏ ɢɪꜰ_
-│🎋• ${ᴋᴇɪ}hi5: _ɢᴇᴛ ᴀɴ ᴀɴɪᴍᴇ-ʜɪɢʜꜰɪᴠᴇ ɢɪꜰ_
-│🎋• ${ᴋᴇɪ}poke: _ɢᴇᴛ ᴀɴ ᴀɴɪᴍᴇ-ᴘᴏᴋᴇ ɢɪꜰ_
-│🎋• ${ᴋᴇɪ}sad: _ɢᴇᴛ ᴀɴ ᴀɴɪᴍᴇ-ꜱᴀᴅ ɢɪꜰ_
-│🎋• ${ᴋᴇɪ}thinking: _ɢᴇᴛ ᴀɴ ᴀɴɪᴍᴇ-ᴛʜɪɴᴋɪɴɢ ɢɪꜰ_
+│🎋• ${ᴋᴇɪ}anime: _Get Anime Informations From MyAnimeList_
+│🎋• ${ᴋᴇɪ}ranimewall: _get random HD anime wallpapers_
+│🎋• ${ᴋᴇɪ}cuddle: _get anime-ᴄᴜᴅᴅʟᴇ gif_
+│🎋• ${ᴋᴇɪ}hug: _get anime-ʜᴜɢ gif_
+│🎋• ${ᴋᴇɪ}pat: _get anime-ᴘᴀᴛ gif_
+│🎋• ${ᴋᴇɪ}smile: _get anime-ꜱᴍɪʟᴇ gif_
+│🎋• ${ᴋᴇɪ}slap: _get anime-ꜱʟᴀᴘ gif_
+│🎋• ${ᴋᴇɪ}wink: _get anime-ᴡɪɴᴋ gif_
+│🎋• ${ᴋᴇɪ}yes: _get anime-ʏᴇꜱ gif_
+│🎋• ${ᴋᴇɪ}bite: _get anime-ʙɪᴛᴇ gif_
+│🎋• ${ᴋᴇɪ}blush: _get anime-ʙʟᴜꜱʜ gif_
+│🎋• ${ᴋᴇɪ}bored: _get anime-ʙᴏʀᴇᴅ gif_
+│🎋• ${ᴋᴇɪ}confused: _get anime-ᴄᴏɴꜰᴜꜱᴇᴅ gif_
+│🎋• ${ᴋᴇɪ}cry: _get anime-ᴄʀʏ gif_
+│🎋• ${ᴋᴇɪ}goodnight: _get anime-ɢᴏᴏᴅɴɪɢʜᴛ gif_
+│🎋• ${ᴋᴇɪ}happy: _get anime-ʜᴀᴘᴘʏ gif_
+│🎋• ${ᴋᴇɪ}hi5: _get anime-ʜɪɢʜꜰɪᴠᴇ gif_
+│🎋• ${ᴋᴇɪ}poke: _get anime-ᴘᴏᴋᴇ gif_
+│🎋• ${ᴋᴇɪ}sad: _get anime-ꜱᴀᴅ gif_
+│🎋• ${ᴋᴇɪ}thinking: _get anime-ᴛʜɪɴᴋɪɴɢ gif_
 └───────────⭓
 
 *⧪➛𝘾𝙤𝙢𝙞𝙣𝙜 𝙎𝙤𝙤𝙣!*
