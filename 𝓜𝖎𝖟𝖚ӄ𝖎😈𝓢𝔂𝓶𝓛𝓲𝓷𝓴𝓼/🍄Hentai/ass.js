@@ -3,32 +3,8 @@ const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const _𝔏𝔞𝔟_ = require(`../../𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/_𝔏𝔞𝔟_`);
 const ℓιєηт = require(`../../𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/catch`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
-var path = require(`path`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
-var moon = [
-  `ass`,
-  `bdsm`,
-  `blowjob`,
-  `cum`,
-  `doujin`,
-  `feet`,
-  `femdom`,
-  `foxgirl`,
-  `glasses`,
-  `hentai`,
-  `maid`,
-  `masturbation`,
-  `netorare`,
-  `orgy`,
-  `panties`,
-  `pussy`,
-  `school`,
-  `tentacles`,
-  `thighs`,
-  `uniform`,
-  `yuri`,
-];
-const moonshine = moon[Math.floor(Math.random() * moon.length)];
+const moonshine = require(`../../𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/moonshine`);
 const Downloader = require(`nodejs-file-downloader`);
 const ffmpegInstaller = require(`@ffmpeg-installer/ffmpeg`);
 const ffprobe = require(`@ffprobe-installer/ffprobe`);
@@ -81,7 +57,7 @@ _❗In Groups This Command allowed to Admins & Developers!_`,
         .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
       // ⚡•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[🐙  𝐌𝐢𝐳𝐮𝐤𝐢™   🐙]──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⚡
     } else {
-      if (ʟᴀʙᴛᴇꜱᴛ.endsWith(`.png`)) {
+      if (ʟᴀʙᴛᴇꜱᴛ.endsWith(`png`)) {
         const downloader = await new Downloader({
           url: ʟᴀʙᴛᴇꜱᴛ,
           directory: `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷`,
@@ -133,10 +109,7 @@ _❗In Groups This Command allowed to Admins & Developers!_`,
                   `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/${𝓜𝖎𝖟𝖚ӄ𝖎.commandName}_${ꜱᴇɴᴅᴇʀɪᴅ}.png`
                 );
               } catch (ℓαвєяяσя) {
-                if (ℓαвєяяσя.status == 404 || ℓαвєяяσя.status == 400) {
-                  ℓιєηт.catch(`Try Again Image Not Found`, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
-                }
-                ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
+                console.log(ℓαвєяяσя);
               }
             });
         } catch (ℓαвєяяσя) {
@@ -146,7 +119,7 @@ _❗In Groups This Command allowed to Admins & Developers!_`,
           ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
         }
       }
-      if (ʟᴀʙᴛᴇꜱᴛ.endsWith(`.webp`)) {
+      if (ʟᴀʙᴛᴇꜱᴛ.endsWith(`webp`)) {
         const downloader = await new Downloader({
           url: ʟᴀʙᴛᴇꜱᴛ,
           directory: `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷`,
@@ -206,10 +179,7 @@ _❗In Groups This Command allowed to Admins & Developers!_`,
                       `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/${𝓜𝖎𝖟𝖚ӄ𝖎.commandName}_${ꜱᴇɴᴅᴇʀɪᴅ}.png`
                     );
                   } catch (ℓαвєяяσя) {
-                    if (ℓαвєяяσя.status == 404 || ℓαвєяяσя.status == 400) {
-                      ℓιєηт.catch(`Try Again Image Not Found`, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
-                    }
-                    ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
+                    console.log(ℓαвєяяσя);
                   }
                 });
             })
@@ -222,7 +192,7 @@ _❗In Groups This Command allowed to Admins & Developers!_`,
           ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
         }
       }
-      if (ʟᴀʙᴛᴇꜱᴛ.endsWith(`.jpg`)) {
+      if (ʟᴀʙᴛᴇꜱᴛ.endsWith(`jpg`)) {
         const downloader = await new Downloader({
           url: ʟᴀʙᴛᴇꜱᴛ,
           directory: `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷`,
@@ -282,10 +252,7 @@ _❗In Groups This Command allowed to Admins & Developers!_`,
                       `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/${𝓜𝖎𝖟𝖚ӄ𝖎.commandName}_${ꜱᴇɴᴅᴇʀɪᴅ}.png`
                     );
                   } catch (ℓαвєяяσя) {
-                    if (ℓαвєяяσя.status == 404 || ℓαвєяяσя.status == 400) {
-                      ℓιєηт.catch(`Try Again Image Not Found`, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
-                    }
-                    ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
+                    console.log(ℓαвєяяσя);
                   }
                 });
             })
@@ -298,7 +265,7 @@ _❗In Groups This Command allowed to Admins & Developers!_`,
           ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
         }
       }
-      if (ʟᴀʙᴛᴇꜱᴛ.endsWith(`.jpeg`)) {
+      if (ʟᴀʙᴛᴇꜱᴛ.endsWith(`jpeg`)) {
         const downloader = await new Downloader({
           url: ʟᴀʙᴛᴇꜱᴛ,
           directory: `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷`,
@@ -358,10 +325,7 @@ _❗In Groups This Command allowed to Admins & Developers!_`,
                       `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/${𝓜𝖎𝖟𝖚ӄ𝖎.commandName}_${ꜱᴇɴᴅᴇʀɪᴅ}.png`
                     );
                   } catch (ℓαвєяяσя) {
-                    if (ℓαвєяяσя.status == 404 || ℓαвєяяσя.status == 400) {
-                      ℓιєηт.catch(`Try Again Image Not Found`, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
-                    }
-                    ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
+                    console.log(ℓαвєяяσя);
                   }
                 });
             })
@@ -375,12 +339,10 @@ _❗In Groups This Command allowed to Admins & Developers!_`,
         }
       }
       if (
-        !ʟᴀʙᴛᴇꜱᴛ.endsWith(`.png`) ||
-        !ʟᴀʙᴛᴇꜱᴛ.endsWith(`.webp`) ||
-        !ʟᴀʙᴛᴇꜱᴛ.endsWith(`.jpg`) ||
-        !ʟᴀʙᴛᴇꜱᴛ.endsWith(`.jpeg`) ||
-        !ʟᴀʙᴛᴇꜱᴛ.endsWith(`.gif`) ||
-        !ʟᴀʙᴛᴇꜱᴛ.endsWith(`.mp4`)
+        !ʟᴀʙᴛᴇꜱᴛ.endsWith(`png`) ||
+        !ʟᴀʙᴛᴇꜱᴛ.endsWith(`webp`) ||
+        !ʟᴀʙᴛᴇꜱᴛ.endsWith(`jpg`) ||
+        !ʟᴀʙᴛᴇꜱᴛ.endsWith(`jpeg`)
       ) {
         const downloader = await new Downloader({
           url: ʟᴀʙᴛᴇꜱᴛ,
@@ -433,10 +395,7 @@ _❗In Groups This Command allowed to Admins & Developers!_`,
                   `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/${𝓜𝖎𝖟𝖚ӄ𝖎.commandName}_${ꜱᴇɴᴅᴇʀɪᴅ}.png`
                 );
               } catch (ℓαвєяяσя) {
-                if (ℓαвєяяσя.status == 404 || ℓαвєяяσя.status == 400) {
-                  ℓιєηт.catch(`Try Again Image Not Found`, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
-                }
-                ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
+                console.log(ℓαвєяяσя);
               }
             });
         } catch (ℓαвєяяσя) {

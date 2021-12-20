@@ -375,7 +375,10 @@ ${ꜰᴇᴛᴄʜᴇᴅʙʏᴇ.message}`,
         : ``;
       var 𝓜𝖎𝖟𝖚ӄ𝖎 = 𝓜𝖎𝖟𝖚ӄ𝖎ǟքք.resolve(chat, ӄʀǟӄɨռʐ, groupMetadata);
       // ⚡•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[🐙  𝐌𝐢𝐳𝐮𝐤𝐢™   🐙]──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⚡
-      if (𝓜𝖎𝖟𝖚ӄ𝖎.isCmd) {
+      if (𝓜𝖎𝖟𝖚ӄ𝖎.isCmd && 𝓜𝖎𝖟𝖚ӄ𝖎.fromMe) {
+        var heroku = new Heroku({
+          token: _𝔏𝔞𝔟_.HEROKU_API,
+        });
         await AutoKrakz();
         const ᴍɪᴢᴜᴋɪɢɪᴛ = require(`simple-git`)();
         await ᴍɪᴢᴜᴋɪɢɪᴛ.fetch();
@@ -390,12 +393,22 @@ ${ꜰᴇᴛᴄʜᴇᴅʙʏᴇ.message}`,
               `_𝐌𝐢𝐳𝐮𝐤𝐢™_
 
 𝙐𝙥𝙙𝙖𝙩𝙚🤖𝙋𝙚𝙣𝙙𝙞𝙣𝙜
-•𝘗𝘭𝘦𝘢𝘴𝘦 𝘜𝘱𝘥𝘢𝘵𝘦 𝘜𝘴𝘪𝘯𝘨 ${ᴋᴇɪ}update 𝘰𝘳 𝘳𝘦𝘥𝘦𝘱𝘭𝘰𝘺 𝐌𝐢𝐳𝐮𝐤𝐢™!`,
+•Please wait for bot to auto-udate!`,
               MessageType.text
+            )
+            .then(
+              async () =>
+                await heroku
+                  .delete(
+                    `/apps/` + _𝔏𝔞𝔟_.HEROKU_BOT_NAME + `/dynos/` + `worker`
+                  )
+                  .then((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎))
             )
             .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
         }
-        // ⚡•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[🐙  𝐌𝐢𝐳𝐮𝐤𝐢™   🐙]──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⚡
+      }
+      // ⚡•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[🐙  𝐌𝐢𝐳𝐮𝐤𝐢™   🐙]──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⚡
+      if (𝓜𝖎𝖟𝖚ӄ𝖎.isCmd) {
         console.log(
           Kolor.green(`💡𝗜𝗻𝗳𝗼⬰ ${𝓜𝖎𝖟𝖚ӄ𝖎.commandName} command executed.`)
         );

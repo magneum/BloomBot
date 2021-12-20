@@ -1,0 +1,25 @@
+const moon = [
+  `ass`,
+  `bdsm`,
+  `blowjob`,
+  `cum`,
+  `doujin`,
+  `feet`,
+  `femdom`,
+  `foxgirl`,
+  `glasses`,
+  `hentai`,
+  `maid`,
+  `masturbation`,
+  `netorare`,
+  `orgy`,
+  `panties`,
+  `pussy`,
+  `school`,
+  `tentacles`,
+  `thighs`,
+  `uniform`,
+  `yuri`,
+];
+const moonshine = moon[Math.floor(Math.random() * moon.length)];
+module.exports = moonshine;
