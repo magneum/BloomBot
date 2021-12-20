@@ -40,6 +40,7 @@
     "mal-scraper": "^2.11.3",
     "meme-api": "^1.0.0",
     "music-lyrics": "^1.1.3",
+    "n": "^8.0.1",
     "nekobin": "^0.0.1",
     "node-fetch": "^2.6.1",
     "nodejs-file-downloader": "^4.8.1",
