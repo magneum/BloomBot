@@ -41,7 +41,7 @@ module.exports = {
 │🦄• ${ᴋᴇɪ}joke: _get random jokes_
 │🦄• ${ᴋᴇɪ}meme: _get random memes_
 │🦄• ${ᴋᴇɪ}ocr: _read text written on tagged image_
-│🦄• ${ᴋᴇɪ}sticker: _convert image/video/gif to sticker_
+│🦄• ${ᴋᴇɪ}sticker: _convert image to sticker_
 │🦄• ${ᴋᴇɪ}translate: _language translater_
 │🦄• ${ᴋᴇɪ}tts: _convert text to speech_
 │🦄• ${ᴋᴇɪ}weather: _get weather data_  
