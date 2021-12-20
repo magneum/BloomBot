@@ -54,7 +54,6 @@
     "qs": "^6.10.2",
     "random-greetings": "^1.0.5",
     "random-hex-color": "^1.0.1",
-    "random-hub": "^1.0.0",
     "random-jokes": "^2.0.3",
     "random-material-color": "^1.0.5",
     "request-promise-native": "^1.0.9",
