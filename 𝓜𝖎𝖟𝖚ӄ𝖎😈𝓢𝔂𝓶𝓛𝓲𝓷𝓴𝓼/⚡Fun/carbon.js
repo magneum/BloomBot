@@ -9,7 +9,6 @@ var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 // ⚡•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⚡
 module.exports = {
   name: `carbon`,
-  description: `This command can be used to convert text/code into carbon images.`,
   𝓜𝓮𝓮6ʍօʀɛ: `Example Usage,
 *${ᴋᴇɪ}carbon <text>* 
 *${ᴋᴇɪ}carbon*  and reply to a text message.

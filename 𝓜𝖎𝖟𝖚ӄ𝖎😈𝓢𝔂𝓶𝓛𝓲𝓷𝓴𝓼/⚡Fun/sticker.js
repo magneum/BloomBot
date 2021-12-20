@@ -6,11 +6,9 @@ const ffmpeg = require(`fluent-ffmpeg`);
 const fs = require(`fs`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
-const vers = require(`../../package.json`);
 // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
 module.exports = {
   name: `sticker`,
-  description: `command to convert image to sticker`,
   𝓜𝓮𝓮6ʍօʀɛ: `${ᴋᴇɪ}sticker (gif/image/video) _<tag> or <reply>_`,
   async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
     try {
@@ -20,11 +18,18 @@ module.exports = {
       // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
       const convertToSticker = async (imageId, replyChat) => {
         const filePath = await ӄʀǟӄɨռʐ
-          .downloadAndSaveMediaMessage(replyChat, `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/ct-` + imageId)
+          .downloadAndSaveMediaMessage(
+            replyChat,
+            `𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/${𝓜𝖎𝖟𝖚ӄ𝖎.commandName}_${ꜱᴇɴᴅᴇʀɪᴅ}_beforeconver` +
+              imageId
+          )
           .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
-        const stickerPath = `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/st-` + imageId + `.webp`;
+        const stickerPath =
+          `𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/${𝓜𝖎𝖟𝖚ӄ𝖎.commandName}_${ꜱᴇɴᴅᴇʀɪᴅ}_sticker` +
+          imageId +
+          `.webp`;
         if (𝓜𝖎𝖟𝖚ӄ𝖎.type === `image` || 𝓜𝖎𝖟𝖚ӄ𝖎.isReplyImage) {
-          ffmpeg(filePath)
+          await ffmpeg(filePath)
             .outputOptions([`-y`, `-vcodec libwebp`])
             .videoFilters(
               `scale=2000:2000:flags=lanczos:force_original_aspect_ratio=decrease,format=rgba,pad=2000:2000:(ow-iw)/2:(oh-ih)/2:color=#00000000,setsar=1`
@@ -42,18 +47,10 @@ module.exports = {
                   ℓιєηт.catch((ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
                 });
               fs.unlink(filePath, (ℓαвєяяσя) => {
-                if (ℓαвєяяσя) {
-                  console.log(ℓαвєяяσя);
-                } else {
-                  console.log(`Deleted!`);
-                }
+                if (ℓαвєяяσя) console.log(ℓαвєяяσя);
               });
               fs.unlink(stickerPath, (ℓαвєяяσя) => {
-                if (ℓαвєяяσя) {
-                  console.log(ℓαвєяяσя);
-                } else {
-                  console.log(`Deleted!`);
-                }
+                if (ℓαвєяяσя) console.log(ℓαвєяяσя);
               });
             })
             .on(`ℓαвєяяσя`, async (ℓαвєяяσя) => {
@@ -90,18 +87,10 @@ module.exports = {
                 ℓιєηт.catch((ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
               });
             fs.unlink(filePath, (ℓαвєяяσя) => {
-              if (ℓαвєяяσя) {
-                console.log(ℓαвєяяσя);
-              } else {
-                console.log(`Deleted!`);
-              }
+              if (ℓαвєяяσя) console.log(ℓαвєяяσя);
             });
             fs.unlink(stickerPath, (ℓαвєяяσя) => {
-              if (ℓαвєяяσя) {
-                console.log(ℓαвєяяσя);
-              } else {
-                console.log(`Deleted!`);
-              }
+              if (ℓαвєяяσя) console.log(ℓαвєяяσя);
             });
           })
           .on(`ℓαвєяяσя`, async (ℓαвєяяσя) => {
