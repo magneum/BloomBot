@@ -46,16 +46,12 @@ module.exports = {
                     𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
                     fs.readFileSync(SN),
                     MessageType.sticker,
-                    {
-                      packname: `global.packname`,
-                      author: `global.author`,
-                    }
+                    { quoted: chat }
                   )
                   .then(async () => {
                     await fs.unlinkSync(FN);
                     await fs.unlinkSync(SN);
-                  })
-                  .catch((ℓαвєяяσя) => console.log(ℓαвєяяσя));
+                  });
               })
               .on("error", (e) => console.log(e))
               .run();
@@ -86,18 +82,15 @@ module.exports = {
                 return await ӄʀǟӄɨռʐ
                   .sendMessage(
                     𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                    { url: SN },
                     fs.readFileSync(SN),
                     MessageType.sticker,
-                    {
-                      packname: `global.packname`,
-                      author: `global.author`,
-                    }
+                    { quoted: chat }
                   )
                   .then(async () => {
                     await fs.unlinkSync(FN);
                     await fs.unlinkSync(SN);
-                  })
-                  .catch((ℓαвєяяσя) => console.log(ℓαвєяяσя));
+                  });
               })
               .on("error", (e) => console.log(e))
               .run();
@@ -107,7 +100,7 @@ module.exports = {
         var 𝓜Usage = 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹.get(𝓜𝖎𝖟𝖚ӄ𝖎.commandName);
         𝓜𝓮𝓮ʍօʀɛ = 𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ === undefined ? `Null` : 𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ;
         const nahargs = require(`../../𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/nahargs`);
-        return await nahargs.nahargs(
+        return nahargs.nahargs(
           ӄʀǟӄɨռʐ,
           chat,
           𝓜𝖎𝖟𝖚ӄ𝖎,
