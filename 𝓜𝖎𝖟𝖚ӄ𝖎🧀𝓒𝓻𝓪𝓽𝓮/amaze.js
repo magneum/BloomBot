@@ -104,7 +104,7 @@ const hub = [
   "https://cdn.discordapp.com/attachments/399416520297676801/798956608864256070/1610551207451.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/798956592648159252/1610551386074.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/798900500326121512/3ad9cc23161d740944ca32aff7293365.gif",
-  "https://cdn.discordapp.com/attachments/399416520297676801/797818189366558750/anime-hentai-gif-9.gif",
+  //"https://cdn.discordapp.com/attachments/399416520297676801/797818189366558750/anime-hentai-gif-9.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/797818155769528330/Anythinggoes_Chun_li.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/796392862127620096/1609091418307.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/792373189090476052/51216dc.gif",
@@ -155,7 +155,7 @@ const hub = [
   "https://cdn.discordapp.com/attachments/399416520297676801/771484665809862676/heroine_dra_koi_drawn_by_tsuji_santa__e8206e3412abcdc4162cd3fc0ddda424.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/771484647381008454/OuRqTf3.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/770931384139120640/20175886.gif",
-  "https://cdn.discordapp.com/attachments/399416520297676801/770430267210989628/Pyra-Mythra-Hentai-Xenoblade-Chronicles-2_SML_pervify.com_0009.gif",
+  //"https://cdn.discordapp.com/attachments/399416520297676801/770430267210989628/Pyra-Mythra-Hentai-Xenoblade-Chronicles-2_SML_pervify.com_0009.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/770430260776927262/PoisedLivelyDachshund-size_restricted.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/770430212202299392/2701551_-_Blake_Belladonna_RWBY_animated_twistedgrim.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/770430169918865408/2136417_-_Kantai_Collection_Pokiyu_Tenryuu_animated.gif",
@@ -211,7 +211,7 @@ const hub = [
   "https://cdn.discordapp.com/attachments/399416520297676801/737148379133509662/20200425_201640.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/737147609642434610/Veneratedalarmingdarwinsfox_Size_Restricted.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/737147429824233482/18056.gif",
-  "https://cdn.discordapp.com/attachments/399416520297676801/737147038776557610/Touhou_Momiji_Inubashiri_Pov_Hentai_Titfuck_Buckethead_Ero_Gif.gif",
+  //"https://cdn.discordapp.com/attachments/399416520297676801/737147038776557610/Touhou_Momiji_Inubashiri_Pov_Hentai_Titfuck_Buckethead_Ero_Gif.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/737146679907581963/Gif_18.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/735593686083305602/956dc41d-aa2f-4390-bc1f-0526a8764238.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/735593445367742614/0b3b0465-fa3c-4a5b-82a2-3d335c84c405.gif",
@@ -395,7 +395,7 @@ const hub = [
   "https://cdn.discordapp.com/attachments/399416520297676801/592654591535874078/position-gif-porn.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/592654567800307752/porn-animation.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/592654530378727444/sexy-gif-2.gif",
-  "https://cdn.discordapp.com/attachments/399416520297676801/592654504990867456/gifs-animes-porn.gif",
+  //"https://cdn.discordapp.com/attachments/399416520297676801/592654504990867456/gifs-animes-porn.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/592654482265997332/gif-levrette.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/592654463203016710/animation-porn.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/592654425042976778/tumblr_nm3egib64j1suh97yo1_500.gif",
@@ -448,13 +448,13 @@ const hub = [
   "https://cdn.discordapp.com/attachments/399416520297676801/587358782107942923/gif-video.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/587253594399440916/17739144.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/586690856548040705/gif-video.gif",
-  "https://cdn.discordapp.com/attachments/399416520297676801/586480106269179905/hentai-gif-6.gif",
+  //"https://cdn.discordapp.com/attachments/399416520297676801/586480106269179905/hentai-gif-6.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/586442535334051850/194ovZr.gif",
-  "https://cdn.discordapp.com/attachments/399416520297676801/586127332402659329/OniChichiRefresh-Episode3-EroAnime-Omake-2.gif",
+  //"https://cdn.discordapp.com/attachments/399416520297676801/586127332402659329/OniChichiRefresh-Episode3-EroAnime-Omake-2.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/584541430697951272/38923f324a4e779830c0ec406d583bf9.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/584499804697133096/b4cd0d9342f31746c7ea9bcf9cb72dc0.0.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/584499805607166026/b8d9d6b3e2a383c4c78554e11d6a3d22.0.gif",
-  "https://cdn.discordapp.com/attachments/399416520297676801/584465098303602690/hentai-gif-samus-christmas-present-exlic.gif",
+  //"https://cdn.discordapp.com/attachments/399416520297676801/584465098303602690/hentai-gif-samus-christmas-present-exlic.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/584377558670376980/Kuzuki_Souichirou_fate_Artist_-_Ocarina.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/583624971994005508/1498081361-ezgif-1-5a6c0b1fce.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/583574317049184256/e7eb1e8.gif",
@@ -530,7 +530,7 @@ const hub = [
   "https://cdn.discordapp.com/attachments/399416520297676801/570021095025934365/1.gif-video.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/569683346146328577/1.gif-video2.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/569683312461742081/1.gif-video.gif",
-  "https://cdn.discordapp.com/attachments/399416520297676801/569673505151516685/gif-sexe-hentai.gif",
+  //"https://cdn.discordapp.com/attachments/399416520297676801/569673505151516685/gif-sexe-hentai.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/569318009038962720/1.gif-video3.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/569317885265182730/1.gif-video2.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/569317871075721226/1.gif-video.gif",
@@ -600,13 +600,13 @@ const hub = [
   "https://cdn.discordapp.com/attachments/399416520297676801/564341472875249694/1b5f9f2cddd26a889431324b244a8111.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/564332385634877460/tumblr_nhuk56Oc7i1sfl9d5o6_640.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/564332228440490004/topic001436.gif",
-  "https://cdn.discordapp.com/attachments/399416520297676801/564332101499879424/dog078.gif",
-  "https://cdn.discordapp.com/attachments/399416520297676801/564205993400074251/sexe-a-trois-gif-hentai.gif",
-  "https://cdn.discordapp.com/attachments/399416520297676801/564205994280747009/sexe-hentai-gif.gif",
-  "https://cdn.discordapp.com/attachments/399416520297676801/564205994280747013/animation-sodomie-hentai.gif",
-  "https://cdn.discordapp.com/attachments/399416520297676801/564205994822074383/hentai-animation.gif",
-  "https://cdn.discordapp.com/attachments/399416520297676801/564205995744690187/gif-hentai-excitation.gif",
-  "https://cdn.discordapp.com/attachments/399416520297676801/564205995744690188/gifs-anime-mangas-pornographiques.gif",
+  // "https://cdn.discordapp.com/attachments/399416520297676801/564332101499879424/dog078.gif",
+  // "https://cdn.discordapp.com/attachments/399416520297676801/564205993400074251/sexe-a-trois-gif-hentai.gif",
+  // "https://cdn.discordapp.com/attachments/399416520297676801/564205994280747009/sexe-hentai-gif.gif",
+  // "https://cdn.discordapp.com/attachments/399416520297676801/564205994280747013/animation-sodomie-hentai.gif",
+  // "https://cdn.discordapp.com/attachments/399416520297676801/564205994822074383/hentai-animation.gif",
+  // "https://cdn.discordapp.com/attachments/399416520297676801/564205995744690187/gif-hentai-excitation.gif",
+  //"https://cdn.discordapp.com/attachments/399416520297676801/564205995744690188/gifs-anime-mangas-pornographiques.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/563945352865120287/af5b9d46aa7ca124c373989db002adaa4be80c164d3e9cd0956e7cee20d1a5da.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/563945246254301218/20151012151549f66.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/563945195482382346/5o5pwrtw1io21.gif",
@@ -687,7 +687,7 @@ const hub = [
   "https://cdn.discordapp.com/attachments/399416520297676801/554786938750631937/141289_296x1000.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/554405545222602782/NTPSicjbgo7zb0em.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/554405467502411785/NTPSjh7hi3fnrypv.gif",
-  "https://cdn.discordapp.com/attachments/399416520297676801/554018306252865546/Miyako-Hoshino-Hentai.gif",
+  //"https://cdn.discordapp.com/attachments/399416520297676801/554018306252865546/Miyako-Hoshino-Hentai.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/553537072066068480/NTPS52bpz756piv3.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/552614482212552704/17102699.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/551763035723923491/NTPSzrvb5s3620jx.gif",
@@ -901,7 +901,7 @@ const hub = [
   "https://cdn.discordapp.com/attachments/399416520297676801/533431848865628170/8.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/533431840850051082/0t7uwpkqxorzgmey5ah1.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/533431830943367169/0lai8z2foqe9b6r4gu3h.gif",
-  "https://cdn.discordapp.com/attachments/399416520297676801/533431819954028584/Random_hentai_gifNB0166.gif",
+  //"https://cdn.discordapp.com/attachments/399416520297676801/533431819954028584/Random_hentai_gifNB0166.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/533400169904078864/image0.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/533073907322716161/misatocrossfuck.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/533071077484658709/f202ed910e17f5471990b558606f588d.gif",
@@ -1087,10 +1087,10 @@ const hub = [
   "https://cdn.discordapp.com/attachments/399416520297676801/523665625931972608/tumblr_nugjktLOcj1uwne50o1_500.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/523665604486627328/tumblr_nr8ilzcaCS1tbe8e9o1_500.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/523665586639601674/tumblr_mgzwovSQSE1r3si7eo1_500.gif",
-  "https://cdn.discordapp.com/attachments/399416520297676801/523608338118868992/gif-anime-scene-porno.gif",
+  //"https://cdn.discordapp.com/attachments/399416520297676801/523608338118868992/gif-anime-scene-porno.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/523608304753311745/gif-x.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/523608250982072320/gifs-x.gif",
-  "https://cdn.discordapp.com/attachments/399416520297676801/523608216735711232/gifs-animes-position.gif",
+  //"https://cdn.discordapp.com/attachments/399416520297676801/523608216735711232/gifs-animes-position.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/523608179784024067/gifs-position.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/523554244226187299/19756359.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/522881357232209940/tumblr_o679pe9I8P1un3pvro1_500.gif",
@@ -1185,7 +1185,7 @@ const hub = [
   "https://cdn.discordapp.com/attachments/399416520297676801/519426331986100244/tumblr_o2pf26F7fB1ud4tq1o1_r1_500.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/519293959160201279/tumblr_pj6bc5JegK1vhcokzo1_500.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/519293938771689473/tumblr_pj6bc5JegK1vhcokzo4_500.gif",
-  "https://cdn.discordapp.com/attachments/399416520297676801/519291279201402894/hentai-gif.gif",
+  //"https://cdn.discordapp.com/attachments/399416520297676801/519291279201402894/hentai-gif.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/519291260578693141/tumblr_oe6dhncxlq1v2hfg0o3_500.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/519282396353527822/tumblr_okcflglRfk1usu2yko8_400.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/519282372131160072/tumblr_okcflglRfk1usu2yko2_400.gif",
@@ -1388,7 +1388,7 @@ const hub = [
   "https://cdn.discordapp.com/attachments/399416520297676801/513332662841376770/Miku_getting_DPd_-_Imgur.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/513332608143458304/Yuria_Kisaragi_Dreamland_3a.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/513332507828158464/118_1816890_D.Va_Overwatch_RexxCraft_World_of_Warcraft_animated_crossover_fel_orc.gif",
-  "https://cdn.discordapp.com/attachments/399416520297676801/513332491147542530/Overwatch_Hentai_Porn-yeerod-va-does-some-more-stuff-at-the-arcade-gfycatmp4-2.gif",
+  //"https://cdn.discordapp.com/attachments/399416520297676801/513332491147542530/Overwatch_Hentai_Porn-yeerod-va-does-some-more-stuff-at-the-arcade-gfycatmp4-2.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/513004227837296665/15087084.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/513004163026780170/15087077.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/513004136732688395/15087075.gif",
@@ -1399,8 +1399,8 @@ const hub = [
   "https://cdn.discordapp.com/attachments/399416520297676801/512668119513432067/59e42606-066e-446e-a163-.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/512668115914588171/detail.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/512668072000225280/detail_1.gif",
-  "https://cdn.discordapp.com/attachments/399416520297676801/512668049669619716/porno-anime-47.gif",
-  "https://cdn.discordapp.com/attachments/399416520297676801/512667992992120853/sex-hentai-anime-porn-pics-and-drawn-xxx-pictures-hentai-sex-blog-15222.gif",
+  //"https://cdn.discordapp.com/attachments/399416520297676801/512668049669619716/porno-anime-47.gif",
+  //"https://cdn.discordapp.com/attachments/399416520297676801/512667992992120853/sex-hentai-anime-porn-pics-and-drawn-xxx-pictures-hentai-sex-blog-15222.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/512667923756744714/1.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/512614818491006982/tumblr_o2k1newREz1trcrrdo1_400.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/512540564806303754/tumblr_nra3zynVUK1un023zo10_500.gif",
@@ -1424,7 +1424,7 @@ const hub = [
   "https://cdn.discordapp.com/attachments/399416520297676801/511568272018243585/tumblr_os1s8c0quA1wofmfso1_r1_500.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/511568231677296662/tumblr_pcnck7bes21uw1g7zo1_500.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/511373149338599474/tumblr_ofw3u2mHvX1ufasflo1_500.gif",
-  "https://cdn.discordapp.com/attachments/399416520297676801/511361647571632128/hypnohentai.gif",
+  //"https://cdn.discordapp.com/attachments/399416520297676801/511361647571632128/hypnohentai.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/511290003901382657/tumblr_phhwnldrIl1tduf00o1_500.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/511289999237316618/tumblr_p4g7mqmv191r9lbo2o1_500.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/511289988055433216/tumblr_o3zvmm3khn1tlfgs7o1_500.gif",
@@ -1658,7 +1658,7 @@ const hub = [
   "https://cdn.discordapp.com/attachments/399416520297676801/501088034050277400/20066518.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/501087881834528768/20060897.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/500924840895578127/gifs-manga-porno.gif",
-  "https://cdn.discordapp.com/attachments/399416520297676801/500924447176261652/dessins-hentai-sexe.gif",
+  //"https://cdn.discordapp.com/attachments/399416520297676801/500924447176261652/dessins-hentai-sexe.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/500924079818145792/gif-manga-porno.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/500922832935583744/6611679.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/500897361221124108/tumblr_pgk7iwaj3Z1xgiqh3o2_500.gif",
@@ -1683,9 +1683,9 @@ const hub = [
   "https://cdn.discordapp.com/attachments/399416520297676801/500279533589757977/tumblr_obwrs905i51ulkm9zo2_500.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/500279509505933312/tumblr_o36x9xkVqA1u3x79lo1_500.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/500279488777551872/tumblr_o33c68tNSp1qzddoio1_500.gif",
-  "https://cdn.discordapp.com/attachments/399416520297676801/500231566270660628/2.gif-hentai3.gif",
-  "https://cdn.discordapp.com/attachments/399416520297676801/500231524147527690/2.gif-hentai2.gif",
-  "https://cdn.discordapp.com/attachments/399416520297676801/500231493315067904/1.gif-hentai.gif",
+  // "https://cdn.discordapp.com/attachments/399416520297676801/500231566270660628/2.gif-hentai3.gif",
+  // "https://cdn.discordapp.com/attachments/399416520297676801/500231524147527690/2.gif-hentai2.gif",
+  // "https://cdn.discordapp.com/attachments/399416520297676801/500231493315067904/1.gif-hentai.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/500036469029601280/tumblr_n6z6utgt0U1revz5to9_r1_500.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/500036431243247636/tumblr_n6z6utgt0U1revz5to8_r1_500.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/500036415065948170/tumblr_n6z6utgt0U1revz5to7_r1_500.gif",
@@ -1921,8 +1921,8 @@ const hub = [
   "https://cdn.discordapp.com/attachments/399416520297676801/483224461106216960/1a1f20ca7fad2b3c3a7b49f78baae7c3.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/483224348266856468/BillVicious-491596-MISTY_Sex_Animation_GIF.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/483031451701346369/242_1000.gif",
-  "https://cdn.discordapp.com/attachments/399416520297676801/483030944278904833/hentai-gif-1.gif",
-  "https://cdn.discordapp.com/attachments/399416520297676801/483030501213601792/sexe-debout-gif-hentai.gif",
+  //"https://cdn.discordapp.com/attachments/399416520297676801/483030944278904833/hentai-gif-1.gif",
+  //"https://cdn.discordapp.com/attachments/399416520297676801/483030501213601792/sexe-debout-gif-hentai.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/482110896509026304/19632932.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/482110820415832064/15604042.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/482079145174499328/tumblr_p6gaazuEdD1wn5xz9o1_640.gif",
@@ -2100,18 +2100,18 @@ const hub = [
   "https://cdn.discordapp.com/attachments/399416520297676801/471684741758844939/53be6c84-9969-4b95-bcd9-3b736c16790e.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/471268708443095040/rqADFk.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/471170942853185546/f29ad850-ecc2-41c1-b8ec-1ccfd0e35a2c.gif",
-  "https://cdn.discordapp.com/attachments/399416520297676801/470801921356070945/037-fucking-big-tits-hentai-gif.gif",
+  //"https://cdn.discordapp.com/attachments/399416520297676801/470801921356070945/037-fucking-big-tits-hentai-gif.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/470801725939515412/3180192.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/470801674802561025/Big-Tits-Pharah-Mouth-Fucked-GIF.gif",
-  "https://cdn.discordapp.com/attachments/399416520297676801/470801421944750093/fuck-from-behind-cute-hentai-girl.gif",
+  //"https://cdn.discordapp.com/attachments/399416520297676801/470801421944750093/fuck-from-behind-cute-hentai-girl.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/470801335873437716/lusciousnet_lusciousnet_pussy-fuck-close_433356856.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/470562296146558996/19739499.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/470557112729206784/c13da364-e9c6-4ffa-b7b2-88372bfbe07c.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/470212516891459595/th.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/470211919635152916/19708072.gif",
-  "https://cdn.discordapp.com/attachments/399416520297676801/470122203212677130/0986-big-tit-hentai-girl-fucked-hard.gif",
+  // "https://cdn.discordapp.com/attachments/399416520297676801/470122203212677130/0986-big-tit-hentai-girl-fucked-hard.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/470122176801013770/5015991.gif",
-  "https://cdn.discordapp.com/attachments/399416520297676801/470122125458669568/fucked-from-behind-doggy-style-hentai-gif.gif",
+  //"https://cdn.discordapp.com/attachments/399416520297676801/470122125458669568/fucked-from-behind-doggy-style-hentai-gif.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/470122108027011073/16568192.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/469948553591259136/tumblr_ma04zgJ0eN1rdw7hvo1_500.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/469724708821008394/4889277.gif",
@@ -2500,8 +2500,8 @@ const hub = [
   "https://cdn.discordapp.com/attachments/399416520297676801/460529261405536277/18421321.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/460528834005958687/14151285.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/460474589185703957/QTlvBEE.gif",
-  "https://cdn.discordapp.com/attachments/399416520297676801/460473671996276737/sheryl-nome-sucking-cock-macross-frontier-hentai-gif.gif",
-  "https://cdn.discordapp.com/attachments/399416520297676801/460473233901092864/hentai_hd_1.gif",
+  // "https://cdn.discordapp.com/attachments/399416520297676801/460473671996276737/sheryl-nome-sucking-cock-macross-frontier-hentai-gif.gif",
+  // "https://cdn.discordapp.com/attachments/399416520297676801/460473233901092864/hentai_hd_1.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/460472671419760650/ChijokuSeifuku_08.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/460458815205408798/17727278.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/460453625236422676/14198852.gif",
@@ -2566,142 +2566,3 @@ const hub = [
   "https://cdn.discordapp.com/attachments/399416520297676801/459957139113377792/8461809.gif",
 ];
 var rporn = hub[Math.floor(Math.random() * hub.length)];
-// ⚡•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[🐙  𝐌𝐢𝐳𝐮𝐤𝐢™   🐙]──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⚡
-const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
-const ffmpegInstaller = require("@ffmpeg-installer/ffmpeg");
-const ffprobe = require("@ffprobe-installer/ffprobe");
-const ffmpeg = require("fluent-ffmpeg")()
-  .setFfprobePath(ffprobe.path)
-  .setFfmpegPath(ffmpegInstaller.path);
-const _𝔏𝔞𝔟_ = require(`../../𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/_𝔏𝔞𝔟_`);
-const ℓιєηт = require(`../../𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/catch`);
-const Downloader = require(`nodejs-file-downloader`);
-const fs = require(`fs`);
-const PN = performance.now();
-var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
-var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
-`🐙`;
-`🐙`;
-`🐙============================================================================================================================<⚡>`;
-`   𝐌𝐢𝐳𝐮𝐤𝐢™   💡𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤.. `;
-`🐙============================================================================================================================<⚡>`;
-`🐙`;
-`🐙`;
-module.exports = {
-  name: `randomporn`,
-  async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
-    try {
-      var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
-      var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
-      const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
-      const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
-      console.log("𝐓𝐨𝐩𝐢𝐜: " + FinalName);
-      // ⚡•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[🐙  𝐌𝐢𝐳𝐮𝐤𝐢™   🐙]──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⚡
-      if (
-        𝓜𝖎𝖟𝖚ӄ𝖎.isGroup &&
-        !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderGroupAdmin &&
-        !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderSUDO
-      ) {
-        let content = fs.readFileSync(_𝔏𝔞𝔟_.MINAN);
-        const media = await ӄʀǟӄɨռʐ.prepareMessage(
-          𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-          content,
-          MessageType.image,
-          {
-            mimetype: Mimetype.png,
-          }
-        );
-        const buttons = [
-          {
-            buttonId: `${ᴋᴇɪ}help`,
-            buttonText: { displayText: `${ᴋᴇɪ}help` },
-            type: 1,
-          },
-        ];
-        const buttonMessage = {
-          contentText: `❌ @${ꜱᴇɴᴅᴇʀeceived},  *You Are Not Allowed!*
-
-_❗In Groups This Command allowed to Admins & Developers!_`,
-          footerText: `_𝐌𝐢𝐳𝐮𝐤𝐢™_`,
-          buttons: buttons,
-          headerType: 4,
-          imageMessage: media.message.imageMessage,
-        };
-        return await ӄʀǟӄɨռʐ
-          .sendMessage(
-            𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            buttonMessage,
-            MessageType.buttonsMessage,
-            {
-              quoted: chat,
-              contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
-            }
-          )
-          .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
-        // ⚡•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[🐙  𝐌𝐢𝐳𝐮𝐤𝐢™   🐙]──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⚡
-      }
-
-      console.log(rporn);
-      const downloader = await new Downloader({
-        url: rporn,
-        directory: `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷`,
-        fileName: `${FinalName}_${PN}_${ꜱᴇɴᴅᴇʀɪᴅ}.gif`,
-        cloneFiles: false,
-      });
-      try {
-        await downloader.download();
-        await ffmpeg
-          .input(`./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/${FinalName}_${PN}_${ꜱᴇɴᴅᴇʀɪᴅ}.gif`)
-          .outputOptions([
-            "-pix_fmt yuv420p",
-            "-c:v libx264",
-            "-movflags +faststart",
-            "-filter:v crop='floor(in_w/2)*2:floor(in_h/2)*2'",
-          ])
-          .noAudio()
-          .output(`./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/${FinalName}_${PN}_${ꜱᴇɴᴅᴇʀɪᴅ}.mp4`)
-          .on("end", async () => {
-            console.log("Finished");
-            await ӄʀǟӄɨռʐ
-              .sendMessage(
-                𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                fs.readFileSync(
-                  `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/${FinalName}_${PN}_${ꜱᴇɴᴅᴇʀɪᴅ}.mp4`
-                ),
-                MessageType.video,
-                {
-                  contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
-                  quoted: chat,
-                  mimetype: "video/gif",
-                  caption: `_𝐌𝐢𝐳𝐮𝐤𝐢™_
-
-┌────⭓
-│⚡ 𝐎𝐫𝐝𝐞𝐫𝐞𝐝𝐁𝐲: @${ꜱᴇɴᴅᴇʀeceived} 
-│⚡ 𝐓𝐨𝐩𝐢𝐜: *${𝓜𝖎𝖟𝖚ӄ𝖎.commandName.toUpperCase()}*
-└───────────⭓
-🔗𝐋𝐢𝐧𝐤: ${rporn}`,
-                }
-              )
-              .then(async () => {
-                await fs.unlinkSync(
-                  `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/${FinalName}_${PN}_${ꜱᴇɴᴅᴇʀɪᴅ}.gif`
-                );
-                await fs.unlinkSync(
-                  `./𝓜𝖎𝖟𝖚ӄ𝖎🗑️𝓑𝓲𝓷/${FinalName}_${PN}_${ꜱᴇɴᴅᴇʀɪᴅ}.mp4`
-                );
-              })
-              .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
-          })
-          .on("error", (e) => console.log(e))
-          .run();
-      } catch (ℓαвєяяσя) {
-        ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
-      }
-      // ⚡•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[🐙  𝐌𝐢𝐳𝐮𝐤𝐢™   🐙]──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⚡
-    } catch (ℓαвєяяσя) {
-      ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
-      console.log(ℓαвєяяσя);
-    }
-  },
-};
-// ⚡•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[🐙  𝐌𝐢𝐳𝐮𝐤𝐢™   🐙]──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⚡

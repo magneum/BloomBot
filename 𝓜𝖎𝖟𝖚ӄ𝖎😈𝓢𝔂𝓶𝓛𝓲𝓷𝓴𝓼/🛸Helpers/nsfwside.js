@@ -37,7 +37,7 @@ module.exports = {
 💞𝐆𝐫𝐨𝐮𝐩: ${_𝔏𝔞𝔟_.HASH}
 
 ┌────⭓ *👅𝙃𝙪𝙢𝙖𝙣 𝙉𝙎𝙁𝙒*
-│👅• ${ᴋᴇɪ}randomporn: _get random 4k porn gif_
+│👅• ${ᴋᴇɪ}rporn: _get random 4k porn gif_
 │👅• ${ᴋᴇɪ}tikporn: _get random tiktoc porn video_
 │👅• ${ᴋᴇɪ}4k: _get random 4k human nsfw image_
 │👅• ${ᴋᴇɪ}blowjob: _get random 4k blowjob image_
