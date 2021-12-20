@@ -19,12 +19,6 @@ exports.resolve = function (messageInstance, ӄʀǟӄɨռʐ, groupMetadata) {
   𝓜𝖎𝖟𝖚ӄ𝖎.mimeType = messageInstance.message
     ? Object.keys(messageInstance.message)[0]
     : null;
-  𝓜𝖎𝖟𝖚ӄ𝖎.budy =
-    𝓜𝖎𝖟𝖚ӄ𝖎.mimeType === "conversation"
-      ? messageInstance.message.conversation
-      : 𝓜𝖎𝖟𝖚ӄ𝖎.mimeType === "extendedTextMessage"
-      ? messageInstance.message.extendedTextMessage.text
-      : "";
   𝓜𝖎𝖟𝖚ӄ𝖎.type =
     𝓜𝖎𝖟𝖚ӄ𝖎.mimeType === "imageMessage"
       ? "image"

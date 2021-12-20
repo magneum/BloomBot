@@ -438,10 +438,10 @@ Use *${ᴋᴇɪ}𝗵𝗲𝗹𝗽* to get the list of available commands`,
           : chat.key.remoteJid;
         if (!𝓜𝖎𝖟𝖚ӄ𝖎.fromMe && 𝓜𝖎𝖟𝖚ӄ𝖎.isGroup && !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderGroupAdmin) {
           if (
-            (!𝓜𝖎𝖟𝖚ӄ𝖎.budy.includes(_𝔏𝔞𝔟_.HASH) &&
-              𝓜𝖎𝖟𝖚ӄ𝖎.budy.includes(`://chat.whatsapp.com/`)) ||
-            𝓜𝖎𝖟𝖚ӄ𝖎.budy.includes(`://wa.me/`) ||
-            𝓜𝖎𝖟𝖚ӄ𝖎.budy.includes(`://discord.gg`)
+            (!𝓜𝖎𝖟𝖚ӄ𝖎.body.includes(_𝔏𝔞𝔟_.HASH) &&
+              𝓜𝖎𝖟𝖚ӄ𝖎.body.includes(`://chat.whatsapp.com/`)) ||
+            𝓜𝖎𝖟𝖚ӄ𝖎.body.includes(`://wa.me/`) ||
+            𝓜𝖎𝖟𝖚ӄ𝖎.body.includes(`://discord.gg`)
           ) {
             await ӄʀǟӄɨռʐ
               .sendMessage(
