@@ -6,7 +6,7 @@ var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 var moon = [
   `ass`,
-  `bsdm`,
+  `bdsm`,
   `blowjob`,
   `cum`,
   `doujin`,

@@ -7,7 +7,7 @@ var path = require(`path`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 var moon = [
   `ass`,
-  `bsdm`,
+  `bdsm`,
   `blowjob`,
   `cum`,
   `doujin`,
