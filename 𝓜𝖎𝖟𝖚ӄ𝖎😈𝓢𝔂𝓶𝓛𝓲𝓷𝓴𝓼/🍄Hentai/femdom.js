@@ -4,7 +4,30 @@ const _𝔏𝔞𝔟_ = require(`../../𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽
 const ℓιєηт = require(`../../𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/catch`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
-const moonshine = require(`../../𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/moonshine`);
+const moon = [
+  `ass`,
+  `bdsm`,
+  `blowjob`,
+  `cum`,
+  `doujin`,
+  `feet`,
+  `femdom`,
+  `foxgirl`,
+  `glasses`,
+  `hentai`,
+  `maid`,
+  `masturbation`,
+  `netorare`,
+  `orgy`,
+  `panties`,
+  `pussy`,
+  `school`,
+  `tentacles`,
+  `thighs`,
+  `uniform`,
+  `yuri`,
+];
+const moonshine = moon[Math.floor(Math.random() * moon.length)];
 const Downloader = require(`nodejs-file-downloader`);
 const ffmpegInstaller = require(`@ffmpeg-installer/ffmpeg`);
 const ffprobe = require(`@ffprobe-installer/ffprobe`);
