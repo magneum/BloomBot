@@ -132,7 +132,7 @@ _❗In Groups This Command allowed to Admins & Developers!_`,
                   );
                 } catch (e) {
                   console.log(e.error());
-                  continue;
+                  
                 }
               });
           });
@@ -200,7 +200,7 @@ _❗In Groups This Command allowed to Admins & Developers!_`,
                       );
                     } catch (e) {
                       console.log(e.error());
-                      continue;
+                      
                     }
                   });
               })
@@ -271,7 +271,7 @@ _❗In Groups This Command allowed to Admins & Developers!_`,
                       );
                     } catch (e) {
                       console.log(e.error());
-                      continue;
+                      
                     }
                   });
               })
@@ -342,7 +342,7 @@ _❗In Groups This Command allowed to Admins & Developers!_`,
                       );
                     } catch (e) {
                       console.log(e.error());
-                      continue;
+                      
                     }
                   });
               })
@@ -408,7 +408,7 @@ _❗In Groups This Command allowed to Admins & Developers!_`,
                   );
                 } catch (e) {
                   console.log(e.error());
-                  continue;
+                  
                 }
               });
           });
