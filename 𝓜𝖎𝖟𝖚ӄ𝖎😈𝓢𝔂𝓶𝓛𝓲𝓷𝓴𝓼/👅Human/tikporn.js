@@ -107,19 +107,17 @@ _❗In Groups This Command allowed to Admins & Developers!_`,
 │⚡ 𝐓𝐨𝐩𝐢𝐜: *${FinalName}*
 └───────────⭓
 
-┌────⭓ 
-│⭔ Title : ${prn.title}
-│⭔ Viewers : ${prn.views}
-│⭔ Tags : ${prn.tags}
-│⭔ Likes : ${prn.like}
-│⭔ Dislikes : ${prn.dislike}
-│⭔ Favourite : ${prn.favorite}
-│⭔ Time Upload : ${prn.upload}
-│
-└───────────⭓
-⭔ Description : ${prn.desc}
-⭔ Download: https://tikporntok.com/${prn.video}
-⭔ Source : https://tikporntok.com/${prn.source}`,
+
+📜Title: ${prn.title}
+👀Viewers : ${prn.views}
+🔸Tags : ${prn.tags}
+👍🏽‍Likes : ${prn.like}
+👎🏽‍Dislikes : ${prn.dislike}
+⭐Favourite : ${prn.favorite}
+📤Time Upload : ${prn.upload}
+🖊️Description : ${prn.desc}
+📥Download: https://tikporntok.com/${prn.video}
+🫁Source : https://tikporntok.com/${prn.source}`,
           footerText: `_𝐌𝐢𝐳𝐮𝐤𝐢™_`,
           buttons: buttons,
           headerType: 5,
