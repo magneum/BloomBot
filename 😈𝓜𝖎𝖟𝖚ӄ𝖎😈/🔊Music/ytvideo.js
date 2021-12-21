@@ -7,7 +7,6 @@ var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 const getVideoId = require(`get-video-id`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 const request = require("request");
-const nowbyk = Date.now() / 10000;
 const yts = require(`yt-search`);
 const axios = require(`axios`);
 const fs = require(`fs`);
@@ -92,11 +91,10 @@ module.exports = {
             .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
         });
       };
-      const { id } = getVideoId(arg[0]);
       `🐙============================================================================================================================<⚡>`;
-
+      const { id } = getVideoId(arg[0]);
       const videos = FetchedLink.videos.slice(0, 1);
-      const filename = `./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/${now}ytaudiosgroups_${nowbyk.toString()}${ꜱᴇɴᴅᴇʀɪᴅ}`;
+      const filename = `./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/${now}_${id}_${ꜱᴇɴᴅᴇʀɪᴅ}`;
       ytv(arg[0]).then(async (gotResp) => {
         const { dl_link, thumb, title, filesizeF, filesize } = gotResp;
         axios
