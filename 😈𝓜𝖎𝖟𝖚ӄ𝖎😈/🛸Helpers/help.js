@@ -65,18 +65,18 @@ module.exports = {
       const buttonMessage = {
         contentText: `•@${ꜱᴇɴᴅᴇʀeceived}, 𝘽𝙊𝙏 𝙄𝙉 𝘽𝙀𝙏𝘼 
 
-⭓ 𝙎𝙁𝙒 𝐂𝐚𝐭𝐞𝐠𝐨𝐫𝐢𝐞𝐬
-🎋 *${ᴋᴇɪ}animeside* 
-🐙 *${ᴋᴇɪ}ownerside* 
-⚙️ *${ᴋᴇɪ}systemside* 
-🎙️ *${ᴋᴇɪ}musicside*
-🍭 *${ᴋᴇɪ}groupside*
-🦄 *${ᴋᴇɪ}funside* 
+┌────⭓ 𝙎𝙁𝙒 𝐂𝐚𝐭𝐞𝐠𝐨𝐫𝐢𝐞𝐬
+↳⦿ *${ᴋᴇɪ}animeside* 
+↳⦿ *${ᴋᴇɪ}ownerside* 
+↳⦿ *${ᴋᴇɪ}systemside* 
+↳⦿ *${ᴋᴇɪ}musicside*
+↳⦿ *${ᴋᴇɪ}groupside*
+↳⦿ *${ᴋᴇɪ}funside* 
 
 
-⭓ 𝙉𝙎𝙁𝙒 𝐂𝐚𝐭𝐞𝐠𝐨𝐫𝐢𝐞𝐬
-👅 *${ᴋᴇɪ}nsfwside* 
-🍄 *${ᴋᴇɪ}hentaiside* 
+┌────⭓ 𝙉𝙎𝙁𝙒 𝐂𝐚𝐭𝐞𝐠𝐨𝐫𝐢𝐞𝐬
+↳⦿ *${ᴋᴇɪ}nsfwside* 
+↳⦿ *${ᴋᴇɪ}hentaiside* 
 
 _❗Remember to make me admin_
 _❗Never Dm the bot user_
