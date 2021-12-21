@@ -1,6 +1,6 @@
 const axios = require("axios");
 const cheerio = require("cheerio");
-
+`🐙============================================================================================================================<⚡>`;
 function pinterest(querry) {
   return new Promise(async (resolve, reject) => {
     axios
@@ -29,7 +29,7 @@ function pinterest(querry) {
       });
   });
 }
-
+`🐙============================================================================================================================<⚡>`;
 function wallpaper(title, page = "1") {
   return new Promise((resolve, reject) => {
     axios
@@ -50,7 +50,7 @@ function wallpaper(title, page = "1") {
       });
   });
 }
-
+`🐙============================================================================================================================<⚡>`;
 function wikimedia(title) {
   return new Promise((resolve, reject) => {
     axios
@@ -72,7 +72,7 @@ function wikimedia(title) {
       });
   });
 }
-
+`🐙============================================================================================================================<⚡>`;
 function porno() {
   return new Promise((resolve, reject) => {
     axios.get("https://tikporntok.com/?random=1").then((res) => {
@@ -114,7 +114,7 @@ function porno() {
     });
   });
 }
-
+`🐙============================================================================================================================<⚡>`;
 function hentai() {
   return new Promise((resolve, reject) => {
     const page = Math.floor(Math.random() * 1153);
@@ -146,7 +146,7 @@ function hentai() {
     });
   });
 }
-
+`🐙============================================================================================================================<⚡>`;
 function quotesAnime() {
   return new Promise((resolve, reject) => {
     const page = Math.floor(Math.random() * 184);
@@ -171,7 +171,7 @@ function quotesAnime() {
       .catch(reject);
   });
 }
-
+`🐙============================================================================================================================<⚡>`;
 module.exports = {
   pinterest,
   wallpaper,
@@ -180,3 +180,4 @@ module.exports = {
   hentai,
   quotesAnime,
 };
+`🐙============================================================================================================================<⚡>`;

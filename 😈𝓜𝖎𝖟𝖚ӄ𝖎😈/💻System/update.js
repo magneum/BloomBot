@@ -40,28 +40,30 @@ module.exports = {
 Nice Try But Only My *Owner* Can Use *OWNER_ONLY* Commands!`,
         }
       );
-    }
-    await ӄʀǟӄɨռʐ
-      .sendMessage(
-        𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-        {
-          url: _𝔏𝔞𝔟_.UPT,
-        },
-        MessageType.image,
-        {
-          mimetype: Mimetype.png,
-          contextInfo: {
-            mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
+      `🐙============================================================================================================================<⚡>`;
+    } else {
+      await ӄʀǟӄɨռʐ
+        .sendMessage(
+          𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+          {
+            url: _𝔏𝔞𝔟_.UPT,
           },
-          caption: `_𝐌𝐢𝐳𝐮𝐤𝐢™_
+          MessageType.image,
+          {
+            mimetype: Mimetype.png,
+            contextInfo: {
+              mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
+            },
+            caption: `_𝐌𝐢𝐳𝐮𝐤𝐢™_
 
 •@${ꜱᴇɴᴅᴇʀeceived},
 ʏᴏᴜʀ _𝐌𝐢𝐳𝐮𝐤𝐢™_ ɪꜱ ɴᴏᴡ ᴜᴘᴅᴀᴛɪɴɢ.ᴘʟᴇᴀꜱᴇ ᴡᴀɪᴛ ꜰᴏʀ 30-60ꜱᴇᴄ`,
-        }
-      )
-      .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
-    heroku
-      .delete(`/apps/` + _𝔏𝔞𝔟_.HEROKU_BOT_NAME + `/dynos/` + `worker`)
-      .then((x) => console.log(x));
+          }
+        )
+        .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
+      heroku
+        .delete(`/apps/` + _𝔏𝔞𝔟_.HEROKU_BOT_NAME + `/dynos/` + `worker`)
+        .then((x) => console.log(x));
+    }
   },
 };
