@@ -56,7 +56,7 @@ module.exports = {
     } else {
       const FetchedLink = await yts(arg.join(` `));
       const YouFetchers = async (
-        Filename,
+        filename,
         to,
         url,
         text = ``,
@@ -65,16 +65,16 @@ module.exports = {
         if (mention.length > 0) {
           text = normalizeMention(to, text, mention);
         }
-        var Download_Video = function (uri, Filename, callback) {
+        var Download_Video = function (uri, filename, callback) {
           request.head(uri, function (gotResp) {
             mime = gotResp.headers[`content-type`];
             request(uri)
-              .pipe(fs.createWriteStream(Filename))
+              .pipe(fs.createWriteStream(filename))
               .on(`close`, callback);
           });
         };
-        Download_Video(url, Filename, async function () {
-          let media = fs.readFileSync(Filename);
+        Download_Video(url, filename, async function () {
+          let media = fs.readFileSync(filename);
           let type = mime.split(`/`)[0] + `Message`;
           if (mime === `image/gif`) {
             type = MessageType.video;
@@ -93,21 +93,21 @@ module.exports = {
               },
             })
             .then(() => {
-              fs.unlinkSync(Filename);
+              fs.unlinkSync(filename);
             })
             .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
         });
       };
       const { id } = getVideoId(arg[0]);
       const videos = FetchedLink.videos.slice(0, 1);
-      const Filename = `./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/${now}ytaudios_${nowbyk.toString()}_${ꜱᴇɴᴅᴇʀɪᴅ}`;
+      const filename = `./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/${now}ytaudios_${nowbyk.toString()}_${ꜱᴇɴᴅᴇʀɪᴅ}`;
       try {
         yta(arg[0]).then(async (gotResp) => {
-          const { Dloader, thumb, title, Filesize } = gotResp;
+          const { dl_link, thumb, title, filesize } = gotResp;
           await axios
-            .get(`https://tinyurl.com/api-create.php?url=${Dloader}`)
+            .get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
             .then(async () => {
-              if (Number(Filesize) >= 100000) {
+              if (Number(filesize) >= 100000) {
                 return await ӄʀǟӄɨռʐ.sendMessage(
                   𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
                   {
@@ -142,7 +142,7 @@ module.exports = {
 ✒️𝐀𝐮𝐭𝐡𝐨𝐫⤞ ${youfound.author.name}
 🔗𝐋𝐢𝐧𝐤⤞ ${youfound.url}
 📥𝐖𝐞𝐛-𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝⤞ https://www.youtubepp.com/watch?v=${id}`;
-                  await YouFetchers(Filename, ꜱᴇɴᴅᴇʀɪᴅ, Dloader, Fetched);
+                  await YouFetchers(filename, ꜱᴇɴᴅᴇʀɪᴅ, dl_link, Fetched);
                 });
               }
             });
