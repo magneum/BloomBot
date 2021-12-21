@@ -25,7 +25,7 @@ exports.catch = async (ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎
     {
       contentText: `${ꜱᴇɴᴅᴇʀeceived} 
 *🐙Please try Again Later!*
-There Was temporary erorr in *${FinalName}* command.
+There Was temporary erorr in *${ᴋᴇɪ}${FinalName} command.* 
 
 📂𝗟𝗼𝗴:
 ${ℓαвєяяσя}`,
