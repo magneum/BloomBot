@@ -13,7 +13,6 @@ const axios = require(`axios`);
 const fs = require(`fs`);
 const now = Date.now();
 let mime = ``;
-const vers = require(`../../package.json`);
 `🐙`;
 `🐙`;
 `🐙============================================================================================================================<⚡>`;
