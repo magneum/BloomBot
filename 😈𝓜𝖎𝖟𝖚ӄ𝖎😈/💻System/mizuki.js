@@ -129,7 +129,7 @@ module.exports = {
             contextInfo: {
               mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
             },
-            caption: `_𝐌𝐢𝐳𝐮𝐤𝐢™_
+            caption: `*🍁𝓜𝖎𝖟𝖚ӄ𝖎™*
 
 *Hey •@${ꜱᴇɴᴅᴇʀeceived}*,  
 

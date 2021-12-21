@@ -54,7 +54,7 @@ module.exports = {
 
 *🎊Groups:* Admins & Developers!
 *🫒Private:* Everyone`,
-          footerText: `_𝐌𝐢𝐳𝐮𝐤𝐢™_`,
+          footerText: `*🍁𝓜𝖎𝖟𝖚ӄ𝖎™*`,
           buttons: buttons,
           headerType: 4,
           imageMessage: media.message.imageMessage,
@@ -101,7 +101,7 @@ module.exports = {
                     contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
                     quoted: chat,
                     mimetype: "video/gif",
-                    caption: `_𝐌𝐢𝐳𝐮𝐤𝐢™_
+                    caption: `*🍁𝓜𝖎𝖟𝖚ӄ𝖎™*
 
 ⚡𝐓𝐨𝐩𝐢𝐜: *${FinalName}*
 🥳𝐅𝐫𝐨𝐦: @${ꜱᴇɴᴅᴇʀeceived}

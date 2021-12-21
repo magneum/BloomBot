@@ -72,7 +72,7 @@ or reply *${ᴋᴇɪ}nekobin* to any text.`,
         await ӄʀǟӄɨռʐ
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            `_𝐌𝐢𝐳𝐮𝐤𝐢™_
+            `*🍁𝓜𝖎𝖟𝖚ӄ𝖎™*
 
 •@${ꜱᴇɴᴅᴇʀeceived},   
 Here Is Your nekobind link👇🏽‍
@@ -103,7 +103,7 @@ https://nekobin.com/${nekoson.result.key}`,
         await ӄʀǟӄɨռʐ
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            `_𝐌𝐢𝐳𝐮𝐤𝐢™_
+            `*🍁𝓜𝖎𝖟𝖚ӄ𝖎™*
 
 •@${ꜱᴇɴᴅᴇʀeceived},   
 Here Is Your nekobind link👇🏽‍

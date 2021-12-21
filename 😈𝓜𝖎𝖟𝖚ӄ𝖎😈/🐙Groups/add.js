@@ -52,7 +52,7 @@ ${ᴋᴇɪ}add 910000000000`,
 
 *🎊Groups:* Admins & Developers!
 *🫒Private:* Everyone`,
-            footerText: `_𝐌𝐢𝐳𝐮𝐤𝐢™_`,
+            footerText: `*🍁𝓜𝖎𝖟𝖚ӄ𝖎™*`,
             buttons: buttons,
             headerType: 4,
             imageMessage: media.message.imageMessage,

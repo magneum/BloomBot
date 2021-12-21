@@ -47,7 +47,7 @@ module.exports = {
         ];
         const buttonMessage = {
           contentText: `@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}, ❌ You Are Not Allowed!`,
-          footerText: `_𝐌𝐢𝐳𝐮𝐤𝐢™_`,
+          footerText: `*🍁𝓜𝖎𝖟𝖚ӄ𝖎™*`,
           buttons: buttons,
           headerType: 4,
           imageMessage: media.message.imageMessage,
@@ -79,7 +79,7 @@ module.exports = {
             contextInfo: {
               mentionedJid: members,
             },
-            caption: `_𝐌𝐢𝐳𝐮𝐤𝐢™_
+            caption: `*🍁𝓜𝖎𝖟𝖚ӄ𝖎™*
 𝔼𝕧𝕖𝕣𝕪𝕠𝕟𝕖! - ʏᴏᴜʀ ᴀꜱꜱɪꜱꜱᴛᴀɴᴛ ꜰᴏʀ ᴍᴀᴋɪɴɢ ʙᴏʀɪɴɢ ᴡʜᴀᴛꜱᴀᴘᴘ ᴀ ʙᴇᴛᴛᴇʀ ᴀᴅᴠᴀɴᴄᴇ ᴀᴘᴘ!
 
 ┌────⭓ 𝐍𝐞𝐰 𝐏𝐮𝐛𝐥𝐢𝐜-𝐁𝐞𝐭𝐚 𝐅𝐞𝐚𝐭𝐮𝐫𝐞𝐬

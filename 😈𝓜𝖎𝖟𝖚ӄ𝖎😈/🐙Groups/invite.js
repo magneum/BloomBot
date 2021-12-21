@@ -22,12 +22,12 @@ module.exports = {
       `🐙============================================================================================================================<⚡>`;
       var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
       var ꜱᴇɴᴅᴇʀᴄᴏɴꜰ = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
-            `🐙============================================================================================================================<⚡>`;
+      `🐙============================================================================================================================<⚡>`;
       if (!𝓜𝖎𝖟𝖚ӄ𝖎.isGroup) {
         ӄʀǟӄɨռʐ
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            `command only applicable in a group chat.`,
+            `*🍁𝓜𝖎𝖟𝖚ӄ𝖎™*\n\ncommand only applicable in a group chat.`,
             MessageType.text,
             { quoted: chat }
           )
@@ -39,7 +39,7 @@ module.exports = {
         ӄʀǟӄɨռʐ
           .sendMessage(
             chat.message.extendedTextMessage.contextInfo.participant,
-            `https://chat.whatsapp.com/` + code,
+            `*🍁𝓜𝖎𝖟𝖚ӄ𝖎™*\n\nhttps://chat.whatsapp.com/` + code,
             MessageType.text,
             { quoted: chat }
           )
@@ -57,7 +57,7 @@ module.exports = {
       ӄʀǟӄɨռʐ
         .sendMessage(
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-          `https://chat.whatsapp.com/` + code,
+          `*🍁𝓜𝖎𝖟𝖚ӄ𝖎™*\n\nhttps://chat.whatsapp.com/` + code,
           MessageType.text,
           { quoted: chat }
         )

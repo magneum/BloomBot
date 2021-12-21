@@ -35,7 +35,7 @@ module.exports = {
 
 ┌────⭓ *Report*
 ⧪  ${_𝔏𝔞𝔟_.HASH}`,
-            footerText: `_𝐌𝐢𝐳𝐮𝐤𝐢™_ ${vers.vers}`,
+            footerText: `*🍁𝓜𝖎𝖟𝖚ӄ𝖎™* ${vers.vers}`,
             buttons: [
               {
                 buttonId: `${ᴋᴇɪ}help`,

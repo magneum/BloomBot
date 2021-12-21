@@ -72,7 +72,7 @@ module.exports = {
 
 *⧪➛𝘾𝙤𝙢𝙞𝙣𝙜 𝙎𝙤𝙤𝙣!*
 many many more!`,
-        footerText: `_𝐌𝐢𝐳𝐮𝐤𝐢™_`,
+        footerText: `*🍁𝓜𝖎𝖟𝖚ӄ𝖎™*`,
         buttons: buttons,
         headerType: 4,
         imageMessage: media.message.imageMessage,

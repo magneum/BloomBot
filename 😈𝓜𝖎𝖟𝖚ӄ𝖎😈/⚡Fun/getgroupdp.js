@@ -31,7 +31,7 @@ module.exports = {
           {
             quoted: chat,
             mimetype: Mimetype.png,
-            caption: `Here is the display image. Procured by 𝓜𝖎𝖟𝖚ӄ𝖎.`,
+            caption: `Here is the display image. Procured by *🍁𝓜𝖎𝖟𝖚ӄ𝖎™*.`,
             thumbnail: null,
           }
         )

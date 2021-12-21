@@ -59,7 +59,7 @@ module.exports = {
 
 🌱𝗣𝗿𝗲𝘀𝘀 𝗯𝗲𝗹𝗼𝘄 𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗦𝘁𝗮𝗿𝘁 𝘂𝘀𝗶𝗻𝗴 𝗠𝗶𝘇𝘂𝗸𝗶👇🏽‍
 `,
-            footerText: `_𝐌𝐢𝐳𝐮𝐤𝐢™_`,
+            footerText: `*🍁𝓜𝖎𝖟𝖚ӄ𝖎™*`,
             buttons: [
               {
                 buttonId: `${ᴋᴇɪ}list`,

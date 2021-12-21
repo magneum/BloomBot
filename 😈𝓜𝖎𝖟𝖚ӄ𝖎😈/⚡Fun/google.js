@@ -47,7 +47,8 @@ module.exports = {
           {
             quoted: chat,
             mimetype: Mimetype.png,
-            caption: `
+            caption: `*🍁𝓜𝖎𝖟𝖚ӄ𝖎™*
+            
 *🌍𝗚𝗼𝗼𝗴𝗹𝗲𝗱:* ${arg.join(` `)}
 *💡𝗥𝗲𝘀𝘂𝗹𝘁:* https://google.com/search?q=${arg.join(`+`)}`,
           }
