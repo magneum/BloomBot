@@ -1,4 +1,3 @@
-`🐙============================================================================================================================<⚡>`;
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const { ytv } = require(`../../🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/youmaker`);
 const _𝔏𝔞𝔟_ = require(`../../🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/_𝔏𝔞𝔟_`);
@@ -7,7 +6,6 @@ var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 const getVideoId = require(`get-video-id`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 const request = require("request");
-const nowbyk = Date.now() / 10000;
 const yts = require(`yt-search`);
 const axios = require(`axios`);
 const fs = require(`fs`);
@@ -24,40 +22,36 @@ const RegexYouTube =
 `🐙`;
 module.exports = {
   name: `ytvideo`,
+  description: `ᴅᴏᴡɴʟᴏᴀᴅ ᴀɴʏ ʏᴏᴜᴛᴜʙᴇ ᴠɪᴅᴇᴏ ᴜɴᴅᴇʀ 100ᴍʙ ꜱɪᴢᴇ.`,
   𝓜𝓮𝓮6ʍօʀɛ: `${ᴋᴇɪ}ytaudio <link>`,
   async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
     var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
-    var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
+    var ꜱᴇɴᴅᴇʀᴄᴏɴꜰ = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
     `🐙============================================================================================================================<⚡>`;
     if (arg.length === 0) {
       const nahargs = require(`../../🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/nahargs`);
-      return nahargs
-        .nahargs(
-          ӄʀǟӄɨռʐ,
-          chat,
-          𝓜𝖎𝖟𝖚ӄ𝖎,
-          ꜱᴇɴᴅᴇʀɪᴅ,
-          ꜱᴇɴᴅᴇʀeceived,
-          𝓜𝖎𝖟𝖚ӄ𝖎.commandName,
-          𝓜𝓮𝓮ʍօʀɛ
-        )
-        .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
-      `🐙============================================================================================================================<⚡>`;
+      return nahargs.nahargs(
+        ӄʀǟӄɨռʐ,
+        chat,
+        𝓜𝖎𝖟𝖚ӄ𝖎,
+        ꜱᴇɴᴅᴇʀɪᴅ,
+        ꜱᴇɴᴅᴇʀeceived,
+        𝓜𝖎𝖟𝖚ӄ𝖎.commandName,
+        𝓜𝓮𝓮ʍօʀɛ
+      )`🐙============================================================================================================================<⚡>`;
     } else if (!RegexYouTube.test(arg[0])) {
       const nahargs = require(`../../🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/nahargs`);
-      return nahargs
-        .nahargs(
-          ӄʀǟӄɨռʐ,
-          chat,
-          𝓜𝖎𝖟𝖚ӄ𝖎,
-          ꜱᴇɴᴅᴇʀɪᴅ,
-          ꜱᴇɴᴅᴇʀeceived,
-          𝓜𝖎𝖟𝖚ӄ𝖎.commandName,
-          𝓜𝓮𝓮ʍօʀɛ
-        )
-        .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
-      `🐙============================================================================================================================<⚡>`;
+      return nahargs.nahargs(
+        ӄʀǟӄɨռʐ,
+        chat,
+        𝓜𝖎𝖟𝖚ӄ𝖎,
+        ꜱᴇɴᴅᴇʀɪᴅ,
+        ꜱᴇɴᴅᴇʀeceived,
+        𝓜𝖎𝖟𝖚ӄ𝖎.commandName,
+        𝓜𝓮𝓮ʍօʀɛ
+      )`🐙============================================================================================================================<⚡>`;
     } else {
+      const FetchedLink1 = await yts(arg.join(` `));
       const FetchedLink = await yts(arg.join(` `));
       const YouFetchers = async (
         filename,
@@ -93,21 +87,20 @@ module.exports = {
               mimetype: mime,
               caption: text,
             })
-            .then(fs.unlinkSync(filename))
-            .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
+            .then(fs.unlinkSync(filename));
         });
       };
       const { id } = getVideoId(arg[0]);
-      const videos = FetchedLink.videos.slice(0, 1);
-      const filename = `./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/${now}ytvideo_groups_${nowbyk.toString()}${ꜱᴇɴᴅᴇʀɪᴅ}`;
-      ytv(arg[0]).then(async (gotResp) => {
-        const { dl_link, thumb, title, filesizeF, filesize } = gotResp;
-        axios
-          .get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
-          .then((alpha) => {
-            if (Number(filesize) >= 9999999) {
-              return ӄʀǟӄɨռʐ
-                .sendMessage(
+      if (!𝓜𝖎𝖟𝖚ӄ𝖎.isGroup) {
+        const videos1 = FetchedLink1.videos.slice(0, 1);
+        const filename = `./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/${now}_ytaudio_private_${ꜱᴇɴᴅᴇʀɪᴅ}`;
+        await ytv(arg[0]).then(async (gotResp) => {
+          const { dl_link, thumb, title, filesizeF, filesize } = gotResp;
+          await axios
+            .get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
+            .then(async (a) => {
+              if (Number(filesize) >= 9999999) {
+                return await ӄʀǟӄɨռʐ.sendMessage(
                   𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
                   {
                     caption: thumb,
@@ -115,23 +108,25 @@ module.exports = {
                   MessageType.image,
                   {
                     quoted: chat,
+                    contextInfo: {
+                      mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
+                    },
                     mimetype: Mimetype.png || Mimetype.jpeg,
                     content: `*🍁𝓜𝖎𝖟𝖚ӄ𝖎™*
 
 🎥𝗔𝘂𝗱𝗶𝗼
-•@${ꜱᴇɴᴅᴇʀeceived}, 𝗣𝗹𝗲𝗮𝘀𝗲 𝗖𝗵𝗼𝗼𝘀𝗲 𝗦𝗺𝗮𝗹𝗹𝗲𝗿 𝗙𝗶𝗹𝗲. 𝗠𝗮𝘅 𝗟𝗶𝗺𝗶𝘁 (𝟭𝟬𝟬𝗺𝗯)!
+•@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}, 𝗣𝗹𝗲𝗮𝘀𝗲 𝗖𝗵𝗼𝗼𝘀𝗲 𝗦𝗺𝗮𝗹𝗹𝗲𝗿 𝗙𝗶𝗹𝗲. 𝗠𝗮𝘅 𝗟𝗶𝗺𝗶𝘁 (𝟭𝟬𝟬𝗺𝗯)!
 
 🍻𝐓𝐢𝐭𝐥𝐞⤞ ${title}
 📥𝐖𝐞𝐛-𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝⤞ https://www.youtubepp.com/watch?v=${id}`,
                   }
-                )
-                .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
-            } else {
-              videos.forEach(function (youfound) {
-                Fetched = `*🍁𝓜𝖎𝖟𝖚ӄ𝖎™*
+                );
+              } else {
+                await videos1.forEach(async function (youfound) {
+                  Fetched = `*🍁𝓜𝖎𝖟𝖚ӄ𝖎™*
 
 🎥𝗔𝘂𝗱𝗶𝗼
-•@${ꜱᴇɴᴅᴇʀeceived}, 𝗣𝗹𝗲𝗮𝘀𝗲 𝗖𝗵𝗲𝗰𝗸 𝗬𝗼𝘂𝗿 𝗣𝗿𝗶𝘃𝗮𝘁𝗲 𝗳𝗼𝗿 𝘁𝗵𝗲 𝗱𝗲𝗹𝗶𝘃𝗲𝗿𝘆 𝗼𝗳 𝗩𝗶𝗱𝗲𝗼!
+•@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}, 𝗣𝗹𝗲𝗮𝘀𝗲 𝗖𝗵𝗲𝗰𝗸 𝗬𝗼𝘂𝗿 𝗣𝗿𝗶𝘃𝗮𝘁𝗲 𝗳𝗼𝗿 𝘁𝗵𝗲 𝗱𝗲𝗹𝗶𝘃𝗲𝗿𝘆 𝗼𝗳 𝗩𝗶𝗱𝗲𝗼!
 
 🍻𝐓𝐢𝐭𝐥𝐞⤞ ${title}
 🍯𝐅𝐢𝐥𝐞𝐬𝐢𝐳𝐞⤞ ${filesizeF}
@@ -140,19 +135,25 @@ module.exports = {
 ✒️𝐀𝐮𝐭𝐡𝐨𝐫⤞ ${youfound.author.name}
 🔗𝐋𝐢𝐧𝐤⤞ ${youfound.url}
 📥𝐖𝐞𝐛-𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝⤞ https://www.youtubepp.com/watch?v=${id}`;
-              });
-              `🐙============================================================================================================================<⚡>`;
-              ӄʀǟӄɨռʐ
-                .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, Fetched, MessageType.text, {
-                  quoted: chat,
-                })
-                .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
-              `🐙============================================================================================================================<⚡>`;
-              videos.forEach(function (youfound) {
-                Fetched = `*🍁𝓜𝖎𝖟𝖚ӄ𝖎™*
+                });
+
+                await ӄʀǟӄɨռʐ.sendMessage(
+                  𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                  Fetched,
+                  MessageType.text,
+                  {
+                    quoted: chat,
+                    contextInfo: {
+                      mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
+                    },
+                  }
+                );
+
+                await videos1.forEach(async function (youfound) {
+                  Fetched = `*🍁𝓜𝖎𝖟𝖚ӄ𝖎™*
 
 🎥𝗔𝘂𝗱𝗶𝗼
-•@${ꜱᴇɴᴅᴇʀeceived}, 𝗣𝗹𝗲𝗮𝘀𝗲 𝗖𝗵𝗲𝗰𝗸 𝗬𝗼𝘂𝗿 𝗣𝗿𝗶𝘃𝗮𝘁𝗲 𝗳𝗼𝗿 𝘁𝗵𝗲 𝗱𝗲𝗹𝗶𝘃𝗲𝗿𝘆 𝗼𝗳 𝗩𝗶𝗱𝗲𝗼!
+•@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}, 𝗣𝗹𝗲𝗮𝘀𝗲 𝗖𝗵𝗲𝗰𝗸 𝗬𝗼𝘂𝗿 𝗣𝗿𝗶𝘃𝗮𝘁𝗲 𝗳𝗼𝗿 𝘁𝗵𝗲 𝗱𝗲𝗹𝗶𝘃𝗲𝗿𝘆 𝗼𝗳 𝗩𝗶𝗱𝗲𝗼!
 
 🍻𝐓𝐢𝐭𝐥𝐞⤞ ${title}
 🍯𝐅𝐢𝐥𝐞𝐬𝐢𝐳𝐞⤞ ${filesizeF}
@@ -161,12 +162,90 @@ module.exports = {
 ✒️𝐀𝐮𝐭𝐡𝐨𝐫⤞ ${youfound.author.name}
 🔗𝐋𝐢𝐧𝐤⤞ ${youfound.url}
 📥𝐖𝐞𝐛-𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝⤞ https://www.youtubepp.com/watch?v=${id}`;
-                YouFetchers(filename, ꜱᴇɴᴅᴇʀɪᴅ, dl_link, Fetched);
-              });
-            }
-          });
-      });
+                  await YouFetchers(filename, ꜱᴇɴᴅᴇʀɪᴅ, dl_link, Fetched);
+                });
+              }
+            });
+        });
+      }
+
+      if (𝓜𝖎𝖟𝖚ӄ𝖎.isGroup) {
+        const videos = FetchedLink.videos.slice(0, 1);
+        const filename = `./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/${now}_ytaudio_groups_${ꜱᴇɴᴅᴇʀɪᴅ}`;
+        await ytv(arg[0]).then(async (gotResp) => {
+          const { dl_link, thumb, title, filesizeF, filesize } = gotResp;
+          await axios
+            .get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
+            .then(async (a) => {
+              if (Number(filesize) >= 9999999) {
+                return await ӄʀǟӄɨռʐ.sendMessage(
+                  𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                  {
+                    caption: thumb,
+                  },
+                  MessageType.image,
+                  {
+                    quoted: chat,
+                    contextInfo: {
+                      mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
+                    },
+                    mimetype: Mimetype.png || Mimetype.jpeg,
+                    content: `*🍁𝓜𝖎𝖟𝖚ӄ𝖎™*
+
+🎥𝗔𝘂𝗱𝗶𝗼
+•@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}, 𝗣𝗹𝗲𝗮𝘀𝗲 𝗖𝗵𝗼𝗼𝘀𝗲 𝗦𝗺𝗮𝗹𝗹𝗲𝗿 𝗙𝗶𝗹𝗲. 𝗠𝗮𝘅 𝗟𝗶𝗺𝗶𝘁 (𝟭𝟬𝟬𝗺𝗯)!
+
+🍻𝐓𝐢𝐭𝐥𝐞⤞ ${title}
+📥𝐖𝐞𝐛-𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝⤞ https://www.youtubepp.com/watch?v=${id}`,
+                  }
+                );
+              } else {
+                await videos.forEach(async function (youfound) {
+                  Fetched = `*🍁𝓜𝖎𝖟𝖚ӄ𝖎™*
+
+🎥𝗔𝘂𝗱𝗶𝗼
+•@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}, 𝗣𝗹𝗲𝗮𝘀𝗲 𝗖𝗵𝗲𝗰𝗸 𝗬𝗼𝘂𝗿 𝗣𝗿𝗶𝘃𝗮𝘁𝗲 𝗳𝗼𝗿 𝘁𝗵𝗲 𝗱𝗲𝗹𝗶𝘃𝗲𝗿𝘆 𝗼𝗳 𝗩𝗶𝗱𝗲𝗼!
+
+🍻𝐓𝐢𝐭𝐥𝐞⤞ ${title}
+🍯𝐅𝐢𝐥𝐞𝐬𝐢𝐳𝐞⤞ ${filesizeF}
+🙈𝐕𝐢𝐞𝐰𝐬⤞ ${youfound.views}
+⏰𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧⤞ ${youfound.timestamp}
+✒️𝐀𝐮𝐭𝐡𝐨𝐫⤞ ${youfound.author.name}
+🔗𝐋𝐢𝐧𝐤⤞ ${youfound.url}
+📥𝐖𝐞𝐛-𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝⤞ https://www.youtubepp.com/watch?v=${id}`;
+                });
+
+                await ӄʀǟӄɨռʐ.sendMessage(
+                  𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                  Fetched,
+                  MessageType.text,
+                  {
+                    quoted: chat,
+                    contextInfo: {
+                      mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
+                    },
+                  }
+                );
+
+                await videos.forEach(async function (youfound) {
+                  Fetched = `*🍁𝓜𝖎𝖟𝖚ӄ𝖎™*
+
+🎥𝗔𝘂𝗱𝗶𝗼
+•@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}, 𝗣𝗹𝗲𝗮𝘀𝗲 𝗖𝗵𝗲𝗰𝗸 𝗬𝗼𝘂𝗿 𝗣𝗿𝗶𝘃𝗮𝘁𝗲 𝗳𝗼𝗿 𝘁𝗵𝗲 𝗱𝗲𝗹𝗶𝘃𝗲𝗿𝘆 𝗼𝗳 𝗩𝗶𝗱𝗲𝗼!
+
+🍻𝐓𝐢𝐭𝐥𝐞⤞ ${title}
+🍯𝐅𝐢𝐥𝐞𝐬𝐢𝐳𝐞⤞ ${filesizeF}
+🙈𝐕𝐢𝐞𝐰𝐬⤞ ${youfound.views}
+⏰𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧⤞ ${youfound.timestamp}
+✒️𝐀𝐮𝐭𝐡𝐨𝐫⤞ ${youfound.author.name}
+🔗𝐋𝐢𝐧𝐤⤞ ${youfound.url}
+📥𝐖𝐞𝐛-𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝⤞ https://www.youtubepp.com/watch?v=${id}`;
+                  await YouFetchers(filename, ꜱᴇɴᴅᴇʀɪᴅ, dl_link, Fetched);
+                });
+              }
+            });
+        });
+      }
     }
   },
 };
-`🐙============================================================================================================================<⚡>`;
