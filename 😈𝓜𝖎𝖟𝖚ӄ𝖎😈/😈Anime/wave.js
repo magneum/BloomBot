@@ -59,10 +59,11 @@ module.exports = {
                     quoted: chat,
                     mimetype: "video/gif",
                     caption: `_𝐌𝐢𝐳𝐮𝐤𝐢™_
-                
-⚡ 𝐓𝐨𝐩𝐢𝐜: *${FinalName}*
 
-@${ꜱᴇɴᴅᴇʀeceived} hugged @${personreceived}!
+⚡𝐓𝐨𝐩𝐢𝐜: *${FinalName}*
+🥳𝐅𝐫𝐨𝐦: @${ꜱᴇɴᴅᴇʀeceived}
+🤩𝐓𝐨: @${personreceived}
+
 
 🔗𝐋𝐢𝐧𝐤: ${link}`,
                   }
@@ -110,10 +111,9 @@ module.exports = {
                     quoted: chat,
                     mimetype: "video/gif",
                     caption: `_𝐌𝐢𝐳𝐮𝐤𝐢™_
-                  
-⚡ 𝐓𝐨𝐩𝐢𝐜: *${FinalName}*
 
-@${ꜱᴇɴᴅᴇʀeceived} hugged themselves!
+⚡𝐓𝐨𝐩𝐢𝐜: *${FinalName}*
+🍯𝐓𝐡𝐞𝐦𝐬𝐞𝐥𝐯𝐞: @${ꜱᴇɴᴅᴇʀeceived}
 
 🔗𝐋𝐢𝐧𝐤: ${link}`,
                   }
