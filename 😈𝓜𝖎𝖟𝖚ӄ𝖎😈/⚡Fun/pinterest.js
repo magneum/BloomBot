@@ -49,7 +49,7 @@ module.exports = {
           contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
           quoted: chat,
           mimetype: Mimetype.png,
-          caption: `_𝐌𝐢𝐳𝐮𝐤𝐢™_
+          caption: `*🍁𝓜𝖎𝖟𝖚ӄ𝖎™*
 
 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 ┌────⭓ 
