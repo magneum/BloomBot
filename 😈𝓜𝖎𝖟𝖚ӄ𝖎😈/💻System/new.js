@@ -23,22 +23,63 @@ module.exports = {
       for (var i = 0; i < 𝓜𝖎𝖟𝖚ӄ𝖎.groupMembers.length; i++) {
         members[i] = 𝓜𝖎𝖟𝖚ӄ𝖎.groupMembers[i].jid;
       }
-      if (𝓜𝖎𝖟𝖚ӄ𝖎.isSenderSUDO) {
-        timestampe = speed();
-        latensie = speed() - timestampe;
-        await ӄʀǟӄɨռʐ
+      // ⚡•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[🐙  𝐌𝐢𝐳𝐮𝐤𝐢™   🐙]──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⚡
+      if (
+        𝓜𝖎𝖟𝖚ӄ𝖎.isGroup &&
+        !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderGroupAdmin &&
+        !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderSUDO
+      ) {
+        let content = await fs.readFileSync(_𝔏𝔞𝔟_.NotAdmin);
+        const media = await ӄʀǟӄɨռʐ.prepareMessage(
+          𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+          content,
+          MessageType.image,
+          {
+            mimetype: Mimetype.png,
+          }
+        );
+        const buttons = [
+          {
+            buttonId: `${ᴋᴇɪ}help`,
+            buttonText: { displayText: `${ᴋᴇɪ}help` },
+            type: 1,
+          },
+        ];
+        const buttonMessage = {
+          contentText: `@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}, ❌ You Are Not Allowed!`,
+          footerText: `_𝐌𝐢𝐳𝐮𝐤𝐢™_`,
+          buttons: buttons,
+          headerType: 4,
+          imageMessage: media.message.imageMessage,
+        };
+        return await ӄʀǟӄɨռʐ
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+            buttonMessage,
+            MessageType.buttonsMessage,
             {
-              url: _𝔏𝔞𝔟_.MEE,
+              quoted: chat,
+              contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
+            }
+          )
+          .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
+      }
+      // ⚡•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[🐙  𝐌𝐢𝐳𝐮𝐤𝐢™   🐙]──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⚡
+      timestampe = speed();
+      latensie = speed() - timestampe;
+      await ӄʀǟӄɨռʐ
+        .sendMessage(
+          𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+          {
+            url: _𝔏𝔞𝔟_.MEE,
+          },
+          MessageType.image,
+          {
+            mimetype: Mimetype.png || Mimetype.jpeg,
+            contextInfo: {
+              mentionedJid: members,
             },
-            MessageType.image,
-            {
-              mimetype: Mimetype.png || Mimetype.jpeg,
-              contextInfo: {
-                mentionedJid: members,
-              },
-              caption: `_𝐌𝐢𝐳𝐮𝐤𝐢™_
+            caption: `_𝐌𝐢𝐳𝐮𝐤𝐢™_
 𝔼𝕧𝕖𝕣𝕪𝕠𝕟𝕖! - ʏᴏᴜʀ ᴀꜱꜱɪꜱꜱᴛᴀɴᴛ ꜰᴏʀ ᴍᴀᴋɪɴɢ ʙᴏʀɪɴɢ ᴡʜᴀᴛꜱᴀᴘᴘ ᴀ ʙᴇᴛᴛᴇʀ ᴀᴅᴠᴀɴᴄᴇ ᴀᴘᴘ!
 
 ┌────⭓ 𝐍𝐞𝐰 𝐏𝐮𝐛𝐥𝐢𝐜-𝐁𝐞𝐭𝐚 𝐅𝐞𝐚𝐭𝐮𝐫𝐞𝐬
@@ -55,12 +96,9 @@ module.exports = {
 └───────────⭓
 
 _check the help or menu for more info._`,
-            }
-          )
-          .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
-      } else {
-        console.log("Null!");
-      }
+          }
+        )
+        .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
     } catch (ℓαвєяяσя) {
       ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
       console.log(ℓαвєяяσя);

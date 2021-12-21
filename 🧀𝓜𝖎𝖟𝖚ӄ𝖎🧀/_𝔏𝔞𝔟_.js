@@ -9,7 +9,7 @@ if (fs.existsSync(`𝓜𝖎𝖟𝖚ӄ𝖎.env`)) {
   require(`dotenv`);
 }
 var ᴛ = [
-  `https://i.postimg.cc/251T8y9H/image.jpg`,
+  `https://i.postimg.cc/251T8y9H/image.png`,
   `https://i.postimg.cc/tCPRtWCj/Mizuki2.png`,
   `https://i.postimg.cc/kgvnLCbY/Mizuki3.png`,
 ];
@@ -25,7 +25,6 @@ const env = {
       : process.env.HEROKU_BOT_NAME,
   Krakinz: process.env.Krakinz === undefined ? `Null` : process.env.Krakinz,
   IMDB: `5e36f0db`,
-  SUDO: "918436686758,918250889325",
   FOXTROT: `^[!]`,
   CCD: process.env.CCD === undefined ? `91` : process.env.CCD,
   OCR: `9ffb44def388957`,
@@ -44,9 +43,9 @@ const env = {
           dialectOptions: { ssl: { require: true, rejectUnauthorized: false } },
         }),
   MEE: MizukiMain,
-  NotAdmin: `./𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/𝓜𝖎𝖟𝖚ӄ𝖎NAdmin.png`,
-  INVL: `https://i.postimg.cc/NfXSPxHd/Mizuki-Error.jpg`,
-  ARC: `https://i.postimg.cc/251T8y9H/image.jpg`,
+  NotAdmin: `./🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/𝓜𝖎𝖟𝖚ӄ𝖎MemErr.png`,
+  INVL: `https://i.postimg.cc/NfXSPxHd/Mizuki-Error.png`,
+  ARC: `https://i.postimg.cc/251T8y9H/image.png`,
   UPT: `https://i.postimg.cc/K8PnV1QX/Mizuki-Update.png`,
   PRIVACY: process.env.PRIVACY === undefined ? `public` : process.env.PRIVACY,
 };

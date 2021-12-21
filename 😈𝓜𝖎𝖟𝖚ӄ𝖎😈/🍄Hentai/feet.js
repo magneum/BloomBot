@@ -70,9 +70,10 @@ module.exports = {
         },
       ];
       const buttonMessage = {
-        contentText: `❌ @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},  *You Are Not Allowed!*
+        contentText: `@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}, ❌ You Are Not Allowed!
 
-_❗In Groups This Command allowed to Admins & Developers!_`,
+*🎊Groups:* Admins & Developers!
+*🫒Private:* Everyone`,
         footerText: `_𝐌𝐢𝐳𝐮𝐤𝐢™_`,
         buttons: buttons,
         headerType: 4,
