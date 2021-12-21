@@ -63,7 +63,7 @@ module.exports = {
         },
       ];
       const buttonMessage = {
-        contentText: `Konnichiwa👋🏻 •@${ꜱᴇɴᴅᴇʀeceived}, _I'm Mizuki, My prefix is !._
+        contentText: `𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚👋🏻 •@${ꜱᴇɴᴅᴇʀeceived}, _I'm Mizuki, My prefix is !._
 
 ┌────🌈 𝙎𝙁𝙒 𝐂𝐚𝐭𝐞𝐠𝐨𝐫𝐢𝐞𝐬 
 ☘️ *${ᴋᴇɪ}animeside* 
