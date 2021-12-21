@@ -63,29 +63,26 @@ module.exports = {
         },
       ];
       const buttonMessage = {
-        contentText: `•@${ꜱᴇɴᴅᴇʀeceived}, 
+        contentText: `•@${ꜱᴇɴᴅᴇʀeceived}, 𝘽𝙊𝙏 𝙄𝙉 𝘽𝙀𝙏𝘼 
 
-𝘽𝙊𝙏 𝙄𝙉 𝘽𝙀𝙏𝘼 
-────⭓🛸𝐆𝐫𝐨𝐮𝐩│${_𝔏𝔞𝔟_.HASH}
+⭓ 𝙎𝙁𝙒 𝐂𝐚𝐭𝐞𝐠𝐨𝐫𝐢𝐞𝐬
+🎋 *${ᴋᴇɪ}animeside* 
+🐙 *${ᴋᴇɪ}ownerside* 
+⚙️ *${ᴋᴇɪ}systemside* 
+🎙️ *${ᴋᴇɪ}musicside*
+🍭 *${ᴋᴇɪ}groupside*
+🦄 *${ᴋᴇɪ}funside* 
 
-┌────⭓ 𝙎𝙁𝙒 𝐂𝐚𝐭𝐞𝐠𝐨𝐫𝐢𝐞𝐬
-│🎋 *${ᴋᴇɪ}animeside:* _anime sub-list_
-│🐙 *${ᴋᴇɪ}ownerside:* _owner sub-list_
-│⚙️ *${ᴋᴇɪ}systemside:* _system sub-list_
-│🎙️ *${ᴋᴇɪ}musicside:* _music sub-list_
-│🍭 *${ᴋᴇɪ}groupside:* _groups sub-list_
-│🦄 *${ᴋᴇɪ}funside:* _funs sub-list_
-└───────────⭓
 
-┌────⭓ 𝙉𝙎𝙁𝙒 𝐂𝐚𝐭𝐞𝐠𝐨𝐫𝐢𝐞𝐬
-│👅 *${ᴋᴇɪ}nsfwside:* _adult-human sub-list_
-│🍄 *${ᴋᴇɪ}hentaiside:* _adult-hentai sub-list_
-└───────────⭓
+⭓ 𝙉𝙎𝙁𝙒 𝐂𝐚𝐭𝐞𝐠𝐨𝐫𝐢𝐞𝐬
+👅 *${ᴋᴇɪ}nsfwside* 
+🍄 *${ᴋᴇɪ}hentaiside* 
 
 _❗Remember to make me admin_
 _❗Never Dm the bot user_
 _❗Kick the bot and group will be global-banned_
 
+⭓🛸𝐆𝐫𝐨𝐮𝐩│${_𝔏𝔞𝔟_.HASH}
 𝗣𝗿𝗲𝘀𝘀 𝗯𝗲𝗹𝗼𝘄 𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗦𝘁𝗮𝗿𝘁 𝘂𝘀𝗶𝗻𝗴 𝗠𝗶𝘇𝘂𝗸𝗶👇🏽‍
 `,
         footerText: `_𝐌𝐢𝐳𝐮𝐤𝐢™_ ${vers.vers}`,
