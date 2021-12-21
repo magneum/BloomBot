@@ -3,7 +3,7 @@ RUN apt update
 RUN apt upgrade -y 
 RUN apt install git -y 
 RUN apt-get install curl -y 
-RUN curl -sL https://deb.nodesource.com/setup_16.x | bash -
+RUN curl -sL https://deb.nodesource.com/setup_17.x | bash -
 RUN apt install nodejs -y
 RUN git clone https://github.com/Krakinz/Mizuki.git
 RUN cd Mizuki

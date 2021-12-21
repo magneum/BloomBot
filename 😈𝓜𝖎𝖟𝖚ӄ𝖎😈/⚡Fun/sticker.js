@@ -24,7 +24,7 @@ module.exports = {
       const convertToSticker = async (imageId, replyChat) => {
         const filePath = await ӄʀǟӄɨռʐ
           .downloadAndSaveMediaMessage(replyChat, `./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/ct-` + imageId)
-          .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
+          .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
         const stickerPath = `./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/st-` + imageId + `.webp`;
         if (𝓜𝖎𝖟𝖚ӄ𝖎.type === `image` || 𝓜𝖎𝖟𝖚ӄ𝖎.isReplyImage) {
           ffmpeg(filePath)
@@ -81,7 +81,7 @@ module.exports = {
         );
       }
     } catch (ℓαвєяяσя) {
-      ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
+      ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
       console.log(ℓαвєяяσя);
     }
   },

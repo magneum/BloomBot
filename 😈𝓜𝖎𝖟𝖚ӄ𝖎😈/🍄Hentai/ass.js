@@ -75,7 +75,7 @@ module.exports = {
 
 *🎊Groups:* Admins & Developers!
 *🫒Private:* Everyone`,
-        footerText: `*🍁𝓜𝖎𝖟𝖚ӄ𝖎™*`,
+        footerText: `_𝐌𝐢𝐳𝐮𝐤𝐢™_`,
         buttons: buttons,
         headerType: 4,
         imageMessage: media.message.imageMessage,
@@ -85,7 +85,7 @@ module.exports = {
           quoted: chat,
           contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
         })
-        .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
+        .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
     } else {
       if (ʟᴀʙᴛᴇꜱᴛ.endsWith(`png`)) {
         const downloader = await new Downloader({
@@ -115,7 +115,7 @@ module.exports = {
 ↳👅𝐓𝐨𝐩𝐢𝐜: *${𝓜𝖎𝖟𝖚ӄ𝖎.commandName}
 ↳⚡𝐎𝐫𝐝𝐞𝐫𝐞𝐝𝐁𝐲: @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ} 
 `,
-                footerText: `*🍁𝓜𝖎𝖟𝖚ӄ𝖎™*`,
+                footerText: `_𝐌𝐢𝐳𝐮𝐤𝐢™_`,
                 buttons: [
                   {
                     buttonId: `${ᴋᴇɪ}${moonshine}`,
@@ -145,7 +145,7 @@ module.exports = {
           if (ℓαвєяяσя.status == 404 || ℓαвєяяσя.status == 400) {
             ℓιєηт.catch(`Try Again Image Not Found`, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
           }
-          ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
+          ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
         }
       }
       if (ʟᴀʙᴛᴇꜱᴛ.endsWith(`webp`)) {
@@ -180,7 +180,7 @@ module.exports = {
 ┌────⭓ 🔞𝘼𝙙𝙪𝙡𝙩 𝙉𝙎𝙁𝙒 18+
 ↳👅𝐓𝐨𝐩𝐢𝐜: *${𝓜𝖎𝖟𝖚ӄ𝖎.commandName}
 ↳⚡𝐎𝐫𝐝𝐞𝐫𝐞𝐝𝐁𝐲: @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ} `,
-                    footerText: `*🍁𝓜𝖎𝖟𝖚ӄ𝖎™*`,
+                    footerText: `_𝐌𝐢𝐳𝐮𝐤𝐢™_`,
                     buttons: [
                       {
                         buttonId: `${ᴋᴇɪ}${moonshine}`,
@@ -216,7 +216,7 @@ module.exports = {
           if (ℓαвєяяσя.status == 404 || ℓαвєяяσя.status == 400) {
             ℓιєηт.catch(`Try Again Image Not Found`, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
           }
-          ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
+          ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
         }
       }
       if (ʟᴀʙᴛᴇꜱᴛ.endsWith(`jpg`)) {
@@ -252,7 +252,7 @@ module.exports = {
 ↳👅𝐓𝐨𝐩𝐢𝐜: *${𝓜𝖎𝖟𝖚ӄ𝖎.commandName}
 ↳⚡𝐎𝐫𝐝𝐞𝐫𝐞𝐝𝐁𝐲: @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ} 
 `,
-                    footerText: `*🍁𝓜𝖎𝖟𝖚ӄ𝖎™*`,
+                    footerText: `_𝐌𝐢𝐳𝐮𝐤𝐢™_`,
                     buttons: [
                       {
                         buttonId: `${ᴋᴇɪ}${moonshine}`,
@@ -288,7 +288,7 @@ module.exports = {
           if (ℓαвєяяσя.status == 404 || ℓαвєяяσя.status == 400) {
             ℓιєηт.catch(`Try Again Image Not Found`, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
           }
-          ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
+          ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
         }
       }
       if (ʟᴀʙᴛᴇꜱᴛ.endsWith(`jpeg`)) {
@@ -324,7 +324,7 @@ module.exports = {
 ↳👅𝐓𝐨𝐩𝐢𝐜: *${𝓜𝖎𝖟𝖚ӄ𝖎.commandName}
 ↳⚡𝐎𝐫𝐝𝐞𝐫𝐞𝐝𝐁𝐲: @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ} 
 `,
-                    footerText: `*🍁𝓜𝖎𝖟𝖚ӄ𝖎™*`,
+                    footerText: `_𝐌𝐢𝐳𝐮𝐤𝐢™_`,
                     buttons: [
                       {
                         buttonId: `${ᴋᴇɪ}${moonshine}`,
@@ -360,7 +360,7 @@ module.exports = {
           if (ℓαвєяяσя.status == 404 || ℓαвєяяσя.status == 400) {
             ℓιєηт.catch(`Try Again Image Not Found`, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
           }
-          ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
+          ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
         }
       }
       if (
@@ -396,7 +396,7 @@ module.exports = {
 ↳👅𝐓𝐨𝐩𝐢𝐜: *${𝓜𝖎𝖟𝖚ӄ𝖎.commandName}
 ↳⚡𝐎𝐫𝐝𝐞𝐫𝐞𝐝𝐁𝐲: @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ} 
 `,
-                footerText: `*🍁𝓜𝖎𝖟𝖚ӄ𝖎™*`,
+                footerText: `_𝐌𝐢𝐳𝐮𝐤𝐢™_`,
                 buttons: [
                   {
                     buttonId: `${ᴋᴇɪ}${moonshine}`,
@@ -426,7 +426,7 @@ module.exports = {
           if (ℓαвєяяσя.status == 404 || ℓαвєяяσя.status == 400) {
             ℓιєηт.catch(`Try Again Image Not Found`, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
           }
-          ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
+          ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
         }
       }
     }

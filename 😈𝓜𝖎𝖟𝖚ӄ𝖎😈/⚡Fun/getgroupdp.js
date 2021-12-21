@@ -31,13 +31,13 @@ module.exports = {
           {
             quoted: chat,
             mimetype: Mimetype.png,
-            caption: `Here is the display image. Procured by *🍁𝓜𝖎𝖟𝖚ӄ𝖎™*.`,
+            caption: `Here is the display image. Procured by 𝓜𝖎𝖟𝖚ӄ𝖎.`,
             thumbnail: null,
           }
         )
-        .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
+        .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
     } catch (ℓαвєяяσя) {
-      ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
+      ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
       console.log(ℓαвєяяσя);
     }
   },

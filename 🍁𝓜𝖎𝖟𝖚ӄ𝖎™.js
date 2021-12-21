@@ -503,7 +503,7 @@ ${ꜰᴇᴛᴄʜᴇᴅʙʏᴇ.message}`,
 •Please wait for bot to auto-udate!`,
               MessageType.text
             )
-            .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
+            .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
         }
       }
       `🐙`;
@@ -561,7 +561,7 @@ ${ꜰᴇᴛᴄʜᴇᴅʙʏᴇ.message}`,
                 contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
               }
             )
-            .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
+            .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
         }
         return command.handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹);
       }
@@ -610,12 +610,12 @@ ${ꜰᴇᴛᴄʜᴇᴅanti.message}`,
                 }
               )
               .catch((ℓαвєяяσя) =>
-                ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
+                ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎)
               );
             await ӄʀǟӄɨռʐ
               .groupRemove(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, [REMOVE])
               .catch((ℓαвєяяσя) =>
-                ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
+                ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎)
               );
             return;
           }

@@ -100,7 +100,7 @@ _yeti_  *|*  _zenburn_`,
               MessageType.text,
               { quoted: chat }
             )
-            .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
+            .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
           return;
         } else if (𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
           code = 𝓜𝖎𝖟𝖚ӄ𝖎.replyMessage;
@@ -126,7 +126,7 @@ _yeti_  *|*  _zenburn_`,
                     MessageType.text,
                     { quoted: chat }
                   )
-                  .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
+                  .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
                 return;
               } else {
                 await ӄʀǟӄɨռʐ
@@ -137,7 +137,7 @@ Please use the command  *${ᴋᴇɪ}carbon <text>*  or reply to a text message w
                     MessageType.text,
                     { quoted: chat }
                   )
-                  .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
+                  .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
                 return;
               }
             }
@@ -156,7 +156,7 @@ Do note that theme names are  *case sensitive*${ᴋᴇɪ}`,
                   MessageType.text,
                   { quoted: chat }
                 )
-                .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
+                .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
               return;
             }
           } catch (ℓαвєяяσя) {
@@ -176,7 +176,7 @@ Do note that theme names are  *case sensitive*${ᴋᴇɪ}`,
             MessageType.text,
             { quoted: chat }
           )
-          .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
+          .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
         const carbon = new Carbon.createCarbon()
           .setCode(code)
           .setPrettify(true)
@@ -190,12 +190,12 @@ Do note that theme names are  *case sensitive*${ᴋᴇɪ}`,
 *<< Here's your carbon image! >>*
 Colour Scheme: {}`.format(themeInput),
           })
-          .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
+          .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
       } catch (ℓαвєяяσя) {
         throw ℓαвєяяσя;
       }
     } catch (ℓαвєяяσя) {
-      ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
+      ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
       console.log(ℓαвєяяσя);
     }
   },

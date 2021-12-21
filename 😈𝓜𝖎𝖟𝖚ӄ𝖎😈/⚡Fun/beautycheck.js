@@ -173,13 +173,13 @@ module.exports = {
                 quoted: chat,
                 mimetype: Mimetype.png,
                 contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
-                caption: `*🍁𝓜𝖎𝖟𝖚ӄ𝖎™*
+                caption: `_𝐌𝐢𝐳𝐮𝐤𝐢™_
 
 𝗤𝘂𝗲𝘀𝘁𝗶𝗼𝗻: ʜᴏᴡ ʙᴇᴀᴜᴛʏꜰᴜʟʟ ɪꜱ *@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}*
 𝗣𝗲𝗿𝗰𝗲𝗻𝘁𝗮𝗴𝗲: ${Much}%`,
               }
             )
-            .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
+            .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
         });
       }
       `⚡𝐌𝐢𝐳𝐮𝐤𝐢™⚡-----------------⬡==================⬡  Private And Reply`;
@@ -225,13 +225,13 @@ module.exports = {
                 quoted: chat,
                 mimetype: Mimetype.png,
                 contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ, Receiver] },
-                caption: `*🍁𝓜𝖎𝖟𝖚ӄ𝖎™*
+                caption: `_𝐌𝐢𝐳𝐮𝐤𝐢™_
 
 𝗤𝘂𝗲𝘀𝘁𝗶𝗼𝗻: ʜᴏᴡ ʙᴇᴀᴜᴛʏꜰᴜʟʟ ɪꜱ *@${personreceived}*
 𝗣𝗲𝗿𝗰𝗲𝗻𝘁𝗮𝗴𝗲: ${Much}%`,
               }
             )
-            .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
+            .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
         });
       }
       `⚡𝐌𝐢𝐳𝐮𝐤𝐢™⚡-----------------⬡==================⬡  Group And Reply`;
@@ -277,14 +277,14 @@ module.exports = {
                 quoted: chat,
                 mimetype: Mimetype.png,
                 contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ, Receiver] },
-                caption: `*🍁𝓜𝖎𝖟𝖚ӄ𝖎™*
+                caption: `_𝐌𝐢𝐳𝐮𝐤𝐢™_
 
 𝗤𝘂𝗲𝘀𝘁𝗶𝗼𝗻: ʜᴏᴡ ʙᴇᴀᴜᴛʏꜰᴜʟʟ ɪꜱ *@${personreceived}*
 Asked By? @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ} 
 𝗣𝗲𝗿𝗰𝗲𝗻𝘁𝗮𝗴𝗲: ${Much}%`,
               }
             )
-            .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
+            .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
         });
       }
       `⚡𝐌𝐢𝐳𝐮𝐤𝐢™⚡-----------------⬡==================⬡  Private And No Reply`;
@@ -326,17 +326,17 @@ Asked By? @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}
                 quoted: chat,
                 mimetype: Mimetype.png,
                 contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
-                caption: `*🍁𝓜𝖎𝖟𝖚ӄ𝖎™*
+                caption: `_𝐌𝐢𝐳𝐮𝐤𝐢™_
 
 𝗤𝘂𝗲𝘀𝘁𝗶𝗼𝗻: ʜᴏᴡ ʙᴇᴀᴜᴛʏꜰᴜʟʟ ɪꜱ *@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}*
 𝗣𝗲𝗿𝗰𝗲𝗻𝘁𝗮𝗴𝗲: ${Much}%`,
               }
             )
-            .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
+            .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
         });
       }
     } catch (ℓαвєяяσя) {
-      ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
+      ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
       console.log(ℓαвєяяσя);
     }
   },
