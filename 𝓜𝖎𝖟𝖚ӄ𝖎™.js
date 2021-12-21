@@ -531,8 +531,8 @@ ${ꜰᴇᴛᴄʜᴇᴅʙʏᴇ.message}`,
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               `𝗜𝗻𝘃𝗮𝗹𝗶𝗱 𝗖𝗼𝗺𝗺𝗮𝗻𝗱
 
-•@${ꜱᴇɴᴅᴇʀeceived},
-Use *${ᴋᴇɪ}𝗵𝗲𝗹𝗽* to get the list of available commands`,
+*😑Baka* @${ꜱᴇɴᴅᴇʀeceived},
+-.-Invalid command type *${ᴋᴇɪ}𝗵𝗲𝗹𝗽* for all the commands`,
               MessageType.text,
               {
                 quoted: chat,
