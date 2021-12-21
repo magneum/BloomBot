@@ -43,7 +43,7 @@ const env = {
           protocol: `postgres`,
           dialectOptions: { ssl: { require: true, rejectUnauthorized: false } },
         }),
-  MEE: `https://i.postimg.cc/Dwtq7fZn/Member-Err.jpg`,
+  MEE: MizukiMain,
   NotAdmin: `./𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/𝓜𝖎𝖟𝖚ӄ𝖎NAdmin.png`,
   INVL: `https://i.postimg.cc/NfXSPxHd/Mizuki-Error.jpg`,
   ARC: `https://i.postimg.cc/251T8y9H/image.jpg`,
