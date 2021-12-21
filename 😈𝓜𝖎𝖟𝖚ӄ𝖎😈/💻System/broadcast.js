@@ -78,8 +78,8 @@ module.exports = {
                   type: 1,
                 },
                 {
-                  buttonId: `${ᴋᴇɪ}list`,
-                  buttonText: { displayText: `${ᴋᴇɪ}list` },
+                  buttonId: `${ᴋᴇɪ}repo`,
+                  buttonText: { displayText: `${ᴋᴇɪ}repo` },
                   type: 1,
                 },
               ],
@@ -105,7 +105,7 @@ module.exports = {
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
           `_𝐌𝐢𝐳𝐮𝐤𝐢™_
 
-•@${ꜱᴇɴᴅᴇʀeceived},𝗕𝗿𝗼𝗮𝗱𝗖𝗮𝘀𝘁𝗶𝗻𝗴 𝗙𝗶𝗻𝗶𝘀𝗵𝗲𝗱!`,
+•@${ꜱᴇɴᴅᴇʀeceived}, 𝗕𝗿𝗼𝗮𝗱𝗖𝗮𝘀𝘁𝗶𝗻𝗴 𝗙𝗶𝗻𝗶𝘀𝗵𝗲𝗱!`,
           MessageType.text,
           {
             quoted: chat,
