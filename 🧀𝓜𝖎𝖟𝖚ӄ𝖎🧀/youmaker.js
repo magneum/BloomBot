@@ -1,4 +1,3 @@
-`🐙============================================================================================================================<⚡>`;
 const { JSDOM } = require("jsdom");
 const fetch = require("node-fetch");
 const FormData = require("form-data");
@@ -6,10 +5,10 @@ const axios = require("axios");
 const cheerio = require("cheerio");
 const qs = require("qs");
 const { fromBuffer } = require("file-type");
-`🐙============================================================================================================================<⚡>`;
+
 const ytIdRegex =
   /(?:http(?:s|):\/\/|)(?:(?:www\.|)youtube(?:\-nocookie|)\.com\/(?:watch\?.*(?:|\&)v=|embed\/|v\/)|youtu\.be\/)([-_0-9A-Za-z]{11})/;
-`🐙============================================================================================================================<⚡>`;
+
 function post(url, formdata) {
   console.log(
     Object.keys(formdata)
@@ -28,7 +27,7 @@ function post(url, formdata) {
       .join("&"),
   });
 }
-`🐙============================================================================================================================<⚡>`;
+
 function yta(url) {
   return new Promise((resolve, reject) => {
     if (ytIdRegex.test(url)) {
@@ -77,7 +76,7 @@ function yta(url) {
     } else reject("URL INVALID");
   });
 }
-`🐙============================================================================================================================<⚡>`;
+
 function igdl(url_media) {
   return new Promise((resolve, reject) => {
     url_media = url_media.replace("reel", "p");
@@ -129,7 +128,7 @@ function igdl(url_media) {
       });
   });
 }
-`🐙============================================================================================================================<⚡>`;
+
 function ytv(url) {
   return new Promise((resolve, reject) => {
     if (ytIdRegex.test(url)) {
@@ -175,7 +174,7 @@ function ytv(url) {
     } else reject("URL INVALID");
   });
 }
-`🐙============================================================================================================================<⚡>`;
+
 function upload(media) {
   return new Promise(async (resolve, reject) => {
     try {
@@ -199,7 +198,6 @@ function upload(media) {
   });
 }
 
-`🐙============================================================================================================================<⚡>`;
 function formatDate(n, locale = "id") {
   let d = new Date(n);
   return d.toLocaleDateString(locale, {
@@ -212,10 +210,9 @@ function formatDate(n, locale = "id") {
     second: "numeric",
   });
 }
-`🐙============================================================================================================================<⚡>`;
+
 module.exports.yta = yta;
 module.exports.ytv = ytv;
 module.exports.igdl = igdl;
 module.exports.upload = upload;
 module.exports.formatDate = formatDate;
-`🐙============================================================================================================================<⚡>`;
