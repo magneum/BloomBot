@@ -2,33 +2,27 @@
 `   𝐌𝐢𝐳𝐮𝐤𝐢™   💡𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤.. `;
 `🐙============================================================================================================================<⚡>`;
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
-const download = require(`download-file`);
-const vers = require(`../package.json`);
 const postDb = require(`./postDb`);
 const _𝔏𝔞𝔟_ = require(`./_𝔏𝔞𝔟_`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
+const Downloader = require(`nodejs-file-downloader`);
 const fs = require(`fs`);
 require(`python-format-js`);
 var ᴛᴡᴇʟ = [
-  `ᴊᴜꜱᴛ ᴊᴏɪɴᴇᴅ ᴛʜᴇ ꜱᴇʀᴠᴇʀ - ɢʟʜꜰ!`,
-  `ᴊᴜꜱᴛ ᴊᴏɪɴᴇᴅ. ᴇᴠᴇʀʏᴏɴᴇ, ʟᴏᴏᴋ ʙᴜꜱʏ!`,
-  `ᴊᴜꜱᴛ ᴊᴏɪɴᴇᴅ. ᴄᴀɴ ɪ ɢᴇᴛ ᴀ ʜᴇᴀʟ?`,
-  `ᴊᴏɪɴᴇᴅ ʏᴏᴜʀ ᴘᴀʀᴛʏ.`,
-  `ᴊᴏɪɴᴇᴅ. ʏᴏᴜ ᴍᴜꜱᴛ ᴄᴏɴꜱᴛʀᴜᴄᴛ ᴀᴅᴅɪᴛɪᴏɴᴀʟ ᴘʏʟᴏɴꜱ.`,
-  `ᴡᴇʟᴄᴏᴍᴇ, ꜱᴛᴀʏ ᴀᴡʜɪʟᴇ ᴀɴᴅ ʟɪꜱᴛᴇɴ.`,
-  `ᴡᴇʟᴄᴏᴍᴇ, ᴡᴇ ᴡᴇʀᴇ ᴇxᴘᴇᴄᴛɪɴɢ ʏᴏᴜ.`,
-  `ᴡᴇʟᴄᴏᴍᴇ, ᴡᴇ ʜᴏᴘᴇ ʏᴏᴜ ʙʀᴏᴜɢʜᴛ ᴘɪᴢᴢᴀ.`,
-  `ᴡᴇʟᴄᴏᴍᴇ ʟᴇᴀᴠᴇ ʏᴏᴜʀ ᴡᴇᴀᴘᴏɴꜱ ʙʏ ᴛʜᴇ ᴅᴏᴏʀ.`,
-  `ᴊᴜꜱᴛ ᴀᴘᴘᴇᴀʀᴇᴅ.`,
-  `ꜱᴡᴏᴏᴏᴏꜱʜ. ᴊᴜꜱᴛ ʟᴀɴᴅᴇᴅ.`,
-  `ʙʀᴀᴄᴇ ʏᴏᴜʀꜱᴇʟᴠᴇꜱ. ᴊᴜꜱᴛ ᴊᴏɪɴᴇᴅ ᴛʜᴇ ꜱᴇʀᴠᴇʀ.`,
-  `ᴊᴜꜱᴛ ᴊᴏɪɴᴇᴅ. ʜɪᴅᴇ ʏᴏᴜʀ ʙᴀɴᴀɴᴀꜱ.`,
-  `ᴊᴜꜱᴛ ᴀʀʀɪᴠᴇᴅ. ꜱᴇᴇᴍꜱ ᴏᴘ - ᴘʟᴇᴀꜱᴇ ɴᴇʀꜰ.`,
-  `ᴊᴜꜱᴛ ꜱʟɪᴅ ɪɴᴛᴏ ᴛʜᴇ ꜱᴇʀᴠᴇʀ.`,
-  `ʜᴀꜱ ꜱᴘᴀᴡɴᴇᴅ ɪɴ ᴛʜᴇ ꜱᴇʀᴠᴇʀ.`,
-  `ʜᴏᴘᴘᴇᴅ ɪɴᴛᴏ ᴛʜᴇ ꜱᴇʀᴠᴇʀ. ᴋᴀɴɢᴀʀᴏᴏ!!`,
-  `ᴊᴜꜱᴛ ꜱʜᴏᴡᴇᴅ ᴜᴘ. ʜᴏʟᴅ ᴍʏ ʙᴇᴇʀ.`,
+  `just joined the server!`,
+  `just joined. Everyone,look busy!`,
+  `just joined!`,
+  `joined the party!`,
+  `welcome, we were expecting you to join!`,
+  `welcome, we hope you bought pizza for us!`,
+  `welcome, leave your weapons by the door!`,
+  `Swooosh! Just landed.`,
+  `just joined. Hide your bananas!`,
+  `just joined. Seems OP, please nerf!`,
+  `just slid into the server!`,
+  `has spawned in the server!`,
+  `just showed up in the server!`,
 ];
 var Flower = ["💐", "🌻", "🌼", "🌹", "🌸", "💮"];
 var People = ["👮", "👳", "🤱", "🤰", "💂"];
@@ -64,57 +58,61 @@ exports.welbuts = async (
   `🐙============================================================================================================================<⚡>`;
   `   𝐌𝐢𝐳𝐮𝐤𝐢™   💡𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤.. `;
   `🐙============================================================================================================================<⚡>`;
-  const Downloader = require(`nodejs-file-downloader`);
-  const fs = require(`fs`);
-  const downloader = await new Downloader({
-    url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗,
-    directory: `./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️`,
-    fileName: `${ᴘᴘᴡᴇʟᴄᴏᴍᴇ}_${FlowerWel}.png`,
-    cloneFiles: false,
-  });
-  await downloader.download();
-  let content = fs.readFileSync(`./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/${ᴘᴘᴡᴇʟᴄᴏᴍᴇ}_${FlowerWel}.png`);
-  const media = await ӄʀǟӄɨռʐ.prepareMessage(
-    GroupID,
-    content,
-    MessageType.image,
-    {
-      mimetype: Mimetype.png || Mimetype.jpeg,
-    }
-  );
-  await ӄʀǟӄɨռʐ
-    .sendMessage(
+  try {
+    const downloader = await new Downloader({
+      url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗,
+      directory: `./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️`,
+      fileName: `${ᴘᴘᴡᴇʟᴄᴏᴍᴇ}_${FlowerWel}.png`,
+      cloneFiles: false,
+    });
+    await downloader.download();
+    let content = fs.readFileSync(`./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/${ᴘᴘᴡᴇʟᴄᴏᴍᴇ}_${FlowerWel}.png`);
+    const media = await ӄʀǟӄɨռʐ.prepareMessage(
       GroupID,
+      content,
+      MessageType.image,
       {
-        contentText: `*⚡@${ᴘᴘᴡᴇʟᴄᴏᴍᴇ},* ${ᴡᴇʟᴄᴏᴍᴇʀᴛxᴛ}
+        mimetype: Mimetype.png || Mimetype.jpeg,
+      }
+    );
+    await ӄʀǟӄɨռʐ
+      .sendMessage(
+        GroupID,
+        {
+          contentText: `*⚡@${ᴘᴘᴡᴇʟᴄᴏᴍᴇ},* ${ᴡᴇʟᴄᴏᴍᴇʀᴛxᴛ}
+
+*<⚡>*
 ${FlowerWel}𝗕𝗶𝗼: ${GroupMemBio.status}
 ${PeopleWel}𝗠𝗲𝗺𝗯𝗲𝗿𝘀: ${GroupMemG}
 💡𝗚𝗿𝗼𝘂𝗽: ${GroupMemData.subject}
+*<⚡>*
 
-===============<⚡>
 ${ꜰᴇᴛᴄʜᴇᴅᴡᴇʟᴄᴏᴍᴇ.message}`,
-        footerText: `_𝐌𝐢𝐳𝐮𝐤𝐢™_`,
-        buttons: [
-          {
-            buttonId: `${ᴋᴇɪ}help`,
-            buttonText: { displayText: `${ᴋᴇɪ}help` },
-            type: 1,
-          },
-          {
-            buttonId: `${ᴋᴇɪ}menu`,
-            buttonText: { displayText: `${ᴋᴇɪ}menu` },
-            type: 1,
-          },
-        ],
-        headerType: 4,
-        imageMessage: media.message.imageMessage,
-      },
-      MessageType.buttonsMessage,
-      {
-        contextInfo: { mentionedJid: [MemNum] },
-      }
-    )
-    .then(fs.unlinkSync(`./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/${ᴘᴘᴡᴇʟᴄᴏᴍᴇ}_${FlowerWel}.png`));
+          footerText: `_𝐌𝐢𝐳𝐮𝐤𝐢™_`,
+          buttons: [
+            {
+              buttonId: `${ᴋᴇɪ}help`,
+              buttonText: { displayText: `${ᴋᴇɪ}help` },
+              type: 1,
+            },
+            {
+              buttonId: `${ᴋᴇɪ}menu`,
+              buttonText: { displayText: `${ᴋᴇɪ}menu` },
+              type: 1,
+            },
+          ],
+          headerType: 4,
+          imageMessage: media.message.imageMessage,
+        },
+        MessageType.buttonsMessage,
+        {
+          contextInfo: { mentionedJid: [MemNum] },
+        }
+      )
+      .then(fs.unlinkSync(`./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/${ᴘᴘᴡᴇʟᴄᴏᴍᴇ}_${FlowerWel}.png`));
+  } catch (e) {
+    console.log(e);
+  }
 };
 `🐙============================================================================================================================<⚡>`;
 `   𝐌𝐢𝐳𝐮𝐤𝐢™   💡𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝘞𝘪𝘵𝘩 80+ 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘧𝘰𝘳 𝘣𝘰𝘵𝘩 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘗𝘶𝘣𝘭𝘪𝘤.. `;
