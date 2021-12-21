@@ -5,7 +5,8 @@
 ʏᴏᴜʀ ᴀꜱꜱɪꜱꜱᴛᴀɴᴛ ꜰᴏʀ ᴍᴀᴋɪɴɢ ʙᴏʀɪɴɢ ᴡʜᴀᴛꜱᴀᴘᴘ ᴀ ʙᴇᴛᴛᴇʀ ᴀᴅᴠᴀɴᴄᴇ ᴀᴘᴘ!
 🔸[`ᴡʜᴀᴛꜱᴀᴘᴘ`](https://chat.whatsapp.com/KC32fr1BLmzHYgToZjMuHn) 🔸[`ᴅɪꜱᴄᴏʀᴅ`](https://discord.gg/xcFN6NDHEV)
 
-[!🍁𝓜𝖎𝖟𝖚ӄ𝖎™](𝓜𝖎𝖟𝖚ӄ𝖎™.gif)
+<p align="centre">
+<img  img src="https://i.postimg.cc/zvmqDTF7/ezgif-com-gif-maker.gif" /></p>
 
 # ❓ 𝖂𝖍𝖞 𝕸𝖆𝖉𝖊 𝕿𝖍𝖎𝖘 𝕭𝖔𝖙?
 
