@@ -88,7 +88,7 @@ ${PeopleWel}𝗠𝗲𝗺𝗯𝗲𝗿𝘀: ${GroupMemG}
 *<⚡>*
 
 ${ꜰᴇᴛᴄʜᴇᴅᴡᴇʟᴄᴏᴍᴇ.message}`,
-          footerText: `_𝐌𝐢𝐳𝐮𝐤𝐢™_`,
+          footerText: `*🍁𝓜𝖎𝖟𝖚ӄ𝖎™*`,
           buttons: [
             {
               buttonId: `${ᴋᴇɪ}help`,
