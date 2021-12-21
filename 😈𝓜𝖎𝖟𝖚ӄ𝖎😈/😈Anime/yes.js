@@ -15,7 +15,7 @@ const fs = require(`fs`);
 `🐙`;
 `🐙`;
 module.exports = {
-  name: `bite`,
+  name: `yes`,
   async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
     try {
       var GifID = chat.key.id;
@@ -30,7 +30,7 @@ module.exports = {
         var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
         var personreceived = Receiver.substring(0, Receiver.length - 15);
         var GifID = chat.message.extendedTextMessage.contextInfo.stanzaId;
-        const link = await anime.bite();
+        const link = await anime.yes();
         const downloader = await new Downloader({
           url: link,
           directory: `./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️`,
@@ -81,7 +81,7 @@ module.exports = {
       }
       `🐙============================================================================================================================<⚡>`;
       if (!𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
-        const link = await anime.bite();
+        const link = await anime.yes();
         const downloader = await new Downloader({
           url: link,
           directory: `./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️`,
