@@ -22,17 +22,41 @@ module.exports = {
       var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
       var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
       `🐙============================================================================================================================<⚡>`;
-      if (!𝓜𝖎𝖟𝖚ӄ𝖎.fromMe) {
+      console.log(𝓜𝖎𝖟𝖚ӄ𝖎.isSenderSUDO);
+      if (!𝓜𝖎𝖟𝖚ӄ𝖎.fromMe && !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderSUDO) {
+        let content = await fs.readFileSync(_𝔏𝔞𝔟_.ɴᴏᴛᴀᴅᴍɪɴ);
+        const media = await ӄʀǟӄɨռʐ.prepareMessage(
+          𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+          content,
+          MessageType.image,
+          {
+            mimetype: Mimetype.png,
+          }
+        );
+        const buttons = [
+          {
+            buttonId: `${ᴋᴇɪ}help`,
+            buttonText: { displayText: `${ᴋᴇɪ}help` },
+            type: 1,
+          },
+        ];
+        const buttonMessage = {
+          contentText: `@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}, ❌ You Are Not Allowed!
+
+only *𝓜𝖎𝖟𝖚ӄ𝖎-Owners* can use this feature`,
+          footerText: `_𝐌𝐢𝐳𝐮𝐤𝐢™_`,
+          buttons: buttons,
+          headerType: 4,
+          imageMessage: media.message.imageMessage,
+        };
         return await ӄʀǟӄɨռʐ
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            `only *𝓜𝖎𝖟𝖚ӄ𝖎-Owners* can use this feature`,
-            MessageType.text,
+            buttonMessage,
+            MessageType.buttonsMessage,
             {
               quoted: chat,
-              contextInfo: {
-                mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
-              },
+              contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
             }
           )
           .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
@@ -69,7 +93,7 @@ module.exports = {
             _.jid,
             {
               contentText: `📜𝗦𝗽𝗲𝗰𝗶𝗮𝗹 𝗕𝗿𝗼𝗮𝗱𝗰𝗮𝘀𝘁
-              ${arg.join(` `)}`,
+${arg.join(` `)}`,
               footerText: `_𝐌𝐢𝐳𝐮𝐤𝐢™_ ${vers.vers}`,
               buttons: [
                 {
