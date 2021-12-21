@@ -13,6 +13,12 @@ const axios = require(`axios`);
 const fs = require(`fs`);
 const now = Date.now();
 let mime = ``;
+const Regex = {
+  VideoURL:
+    /^((?:https?:)?\/\/)?((?:www|m)\.)?((?:youtube\.com|youtu.be))(\/(?:[\w\-]+\?v=|embed\/|v\/)?)([\w\-]+)(\S+)?$/,
+  PlaylistURL:
+    /https?:\/\/(www.)?youtube.com\/playlist\?list=((PL|UU|LL|RD)[a-zA-Z0-9-_]{16,41})/,
+};
 `🐙============================================================================================================================<⚡>`;
 module.exports = {
   name: `ytaudio`,
@@ -24,7 +30,7 @@ module.exports = {
       var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
       var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
       `🐙============================================================================================================================<⚡>`;
-      if (arg.length === 0) {
+      if (arg.length === 0 && !Regex.VideoURL.test(arg[0])) {
         var 𝓜Usage = 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹.get(𝓜𝖎𝖟𝖚ӄ𝖎.commandName);
         𝓜𝓮𝓮ʍօʀɛ = 𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ === undefined ? `Null` : 𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ;
         const nahargs = require(`../../🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/nahargs`);
@@ -39,43 +45,6 @@ module.exports = {
             𝓜𝓮𝓮ʍօʀɛ
           )
           .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
-      }
-      const Regex = {
-        VideoID: /^[a-zA-Z0-9-_]{11}$/,
-        VideoURL:
-          /^((?:https?:)?\/\/)?((?:www|m)\.)?((?:youtube\.com|youtu.be))(\/(?:[\w\-]+\?v=|embed\/|v\/)?)([\w\-]+)(\S+)?$/,
-        PlaylistID: /(PL|UU|LL|RD)[a-zA-Z0-9-_]{16,41}/,
-        PlaylistURL:
-          /https?:\/\/(www.)?youtube.com\/playlist\?list=((PL|UU|LL|RD)[a-zA-Z0-9-_]{16,41})/,
-        SCTrack:
-          /^https?:\/\/(soundcloud\.com|snd\.sc)\/([A-Za-z0-9_-]+)\/([A-Za-z0-9_-]+)\/?$/,
-        SCPlaylist:
-          /^https?:\/\/(soundcloud\.com|snd\.sc)\/([A-Za-z0-9_-]+)\/sets\/([A-Za-z0-9_-]+)\/?$/,
-        Spotify: /^(spotify:|https:\/\/[a-z]+\.spotify\.com\/)/,
-      };
-      if (!Regex.VideoURL.test(arg[0])) {
-        return await ӄʀǟӄɨռʐ
-          .sendMessage(
-            𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            {
-              url: _𝔏𝔞𝔟_.ARC,
-            },
-            MessageType.image,
-            {
-              quoted: chat,
-              mimetype: Mimetype.png || Mimetype.jpeg,
-              caption: `*⚠️Seems like ${arg[0]} is not YouTube Link or not YouTube Single Video Link!*
-
-*Usage Example*
-${ᴋᴇɪ}ytaudio <youtubelink>
-
-*NOTE:*
-You Can Get URL by using ${ᴋᴇɪ}yts <song-name>`,
-            }
-          )
-          .catch((ℓαвєяяσя) => {
-            ℓιєηт.catch((ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
-          });
       }
       `🐙============================================================================================================================<⚡>`;
       const FetchedLink = await yts(arg.join(` `));
