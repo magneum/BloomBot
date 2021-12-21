@@ -9,6 +9,5 @@ RUN apt install nodejs -y
 RUN git clone https://github.com/Krakinz/Mizuki.git
 RUN cd Mizuki
 WORKDIR /Mizuki
-RUN npm install --force
-RUN touch ~/.hushlogin
-CMD node 𝓜𝖎𝖟𝖚ӄ𝖎™.js
+RUN npm i --force
+CMD node 🍁𝓜𝖎𝖟𝖚ӄ𝖎™.js
