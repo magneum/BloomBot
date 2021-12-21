@@ -4,7 +4,7 @@ require(`python-format-js`);
 const fs = require(`fs`);
 `🐙============================================================================================================================<⚡>`;
 exports.catch = async (ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎) => {
-  let content = fs.readFileSync(`./𝓜𝖎𝖟𝖚ӄ𝖎/MizukiError.png`);
+  let content = await fs.readFileSync(`./𝓜𝖎𝖟𝖚ӄ𝖎/MizukiError.png`);
   const media = await ӄʀǟӄɨռʐ.prepareMessage(
     𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
     content,
