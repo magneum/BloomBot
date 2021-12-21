@@ -53,12 +53,12 @@ module.exports = {
       const buttons = [
         {
           buttonId: `${ᴋᴇɪ}menu`,
-          buttonText: { displayText: `${ᴋᴇɪ}menu` },
+          buttonText: { displayText: `𝐄𝐧𝐭𝐢𝐫𝐞⚡𝐋𝐢𝐬𝐭` },
           type: 1,
         },
         {
           buttonId: `${ᴋᴇɪ}mizuki`,
-          buttonText: { displayText: `${ᴋᴇɪ}mizuki` },
+          buttonText: { displayText: `🛸𝐒𝐲𝐬𝐭𝐞𝐦` },
           type: 1,
         },
       ];
