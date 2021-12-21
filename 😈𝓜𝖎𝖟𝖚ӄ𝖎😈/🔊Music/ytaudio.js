@@ -55,16 +55,7 @@ module.exports = {
       `🐙============================================================================================================================<⚡>`;
     } else {
       const FetchedLink = await yts(arg.join(` `));
-      const YouFetchers = async (
-        filename,
-        to,
-        url,
-        text = ``,
-        mention = []
-      ) => {
-        if (mention.length > 0) {
-          text = normalizeMention(to, text, mention);
-        }
+      const YouFetchers = async (filename, to, url) => {
         var Download_Video = function (uri, filename, callback) {
           request.head(uri, function (gotResp) {
             mime = gotResp.headers[`content-type`];
@@ -76,25 +67,15 @@ module.exports = {
         Download_Video(url, filename, async function () {
           let media = fs.readFileSync(filename);
           let type = mime.split(`/`)[0] + `Message`;
-          if (mime === `image/gif`) {
-            type = MessageType.video;
-            mime = Mimetype.gif;
-          }
-          if (mime.split(`/`)[0] === `audio`) {
-            mime = Mimetype.mp4Audio;
-          }
           await ӄʀǟӄɨռʐ
             .sendMessage(to, media, type, {
               quoted: chat,
-              mimetype: mime,
-              caption: text,
+              mimetype: Mimetype.mp4Audio,
               contextInfo: {
                 mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
               },
             })
-            .then(() => {
-              fs.unlinkSync(filename);
-            })
+            .then(fs.unlinkSync(filename))
             .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
         });
       };
@@ -120,7 +101,7 @@ module.exports = {
                       mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
                     },
                     mimetype: Mimetype.png || Mimetype.jpeg,
-                    content: `_𝐌𝐢𝐳𝐮𝐤𝐢™_
+                    content: `*🍁𝓜𝖎𝖟𝖚ӄ𝖎™*
 
 ⭕𝗔𝘂𝗱𝗶𝗼
 •@${ꜱᴇɴᴅᴇʀeceived}, 𝗣𝗹𝗲𝗮𝘀𝗲 𝗖𝗵𝗼𝗼𝘀𝗲 𝗦𝗺𝗮𝗹𝗹𝗲𝗿 𝗙𝗶𝗹𝗲. 𝗠𝗮𝘅 𝗟𝗶𝗺𝗶𝘁 (𝟭𝟬𝟬𝗺𝗯)!
@@ -130,8 +111,9 @@ module.exports = {
                   }
                 );
               } else {
-                await videos.forEach(async function (youfound) {
-                  var Fetched = `_𝐌𝐢𝐳𝐮𝐤𝐢™_
+                await ӄʀǟӄɨռʐ.sendMessage(
+                  𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                  `*🍁𝓜𝖎𝖟𝖚ӄ𝖎™*
 
 ⭕𝗔𝘂𝗱𝗶𝗼
 •@${ꜱᴇɴᴅᴇʀeceived}, 𝗣𝗹𝗲𝗮𝘀𝗲 𝗖𝗵𝗲𝗰𝗸 𝗬𝗼𝘂𝗿 𝗣𝗿𝗶𝘃𝗮𝘁𝗲 𝗳𝗼𝗿 𝘁𝗵𝗲 𝗱𝗲𝗹𝗶𝘃𝗲𝗿𝘆 𝗼𝗳 𝗔𝘂𝗱𝗶𝗼!
@@ -141,8 +123,17 @@ module.exports = {
 ⏰𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧⤞ ${youfound.timestamp}
 ✒️𝐀𝐮𝐭𝐡𝐨𝐫⤞ ${youfound.author.name}
 🔗𝐋𝐢𝐧𝐤⤞ ${youfound.url}
-📥𝐖𝐞𝐛-𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝⤞ https://www.youtubepp.com/watch?v=${id}`;
-                  await YouFetchers(filename, ꜱᴇɴᴅᴇʀɪᴅ, dl_link, Fetched);
+📥𝐖𝐞𝐛-𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝⤞ https://www.youtubepp.com/watch?v=${id}`,
+                  MessageType.text,
+                  {
+                    quoted: chat,
+                    contextInfo: {
+                      mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
+                    },
+                  }
+                );
+                await videos.forEach(async function () {
+                  await YouFetchers(filename, ꜱᴇɴᴅᴇʀɪᴅ, dl_link);
                 });
               }
             });
