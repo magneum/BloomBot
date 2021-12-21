@@ -19,7 +19,7 @@
 🔸 ᴍɪᴢᴜᴋɪ is written in JavaScript and is by far the most advance Whatsapp Userbot.
 ```
 
-- [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Krakinz/Mizuki.git/tree/KrakinzLa) Will Not work now!
+- [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Krakinz/Mizuki.git/tree/KrakinzLab)
 
 # 💡 𝕴𝖓𝖘𝖕𝖎𝖗𝖆𝖙𝖎𝖔𝖓
 
