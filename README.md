@@ -1,13 +1,12 @@
 [![Open Source Love svg3](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)<img align="centre" src="https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg" alt="Krakinz"/><img align="centre" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"/>
 
-# 𝐌𝐢𝐳𝐮𝐤𝐢™ △▽ 𝙒𝙝𝙖𝙩𝙨𝙖𝙥𝙥 𝙐𝙨𝙚𝙧𝙗𝙤𝙩 - *BETA*
+# 𝐌𝐢𝐳𝐮𝐤𝐢™ △▽ 𝙒𝙝𝙖𝙩𝙨𝙖𝙥𝙥 𝙐𝙨𝙚𝙧𝙗𝙤𝙩 - _BETA_
+
 ʏᴏᴜʀ ᴀꜱꜱɪꜱꜱᴛᴀɴᴛ ꜰᴏʀ ᴍᴀᴋɪɴɢ ʙᴏʀɪɴɢ ᴡʜᴀᴛꜱᴀᴘᴘ ᴀ ʙᴇᴛᴛᴇʀ ᴀᴅᴠᴀɴᴄᴇ ᴀᴘᴘ!
 🔸[`ᴡʜᴀᴛꜱᴀᴘᴘ`](https://chat.whatsapp.com/KC32fr1BLmzHYgToZjMuHn) 🔸[`ᴅɪꜱᴄᴏʀᴅ`](https://discord.gg/xcFN6NDHEV)
 
-
-
-![𝐌𝐢𝐳𝐮𝐤𝐢™](𝓜𝖎𝖟𝖚ӄ𝖎™.gif)
-
+<p align="centre">
+<img  img src="https://github.com/Krakinz/Mizuki/blob/KrakinzLab/%F0%9D%93%9C%F0%9D%96%8E%F0%9D%96%9F%F0%9D%96%9A%D3%84%F0%9D%96%8E/Mizuki_Main.png" /></p>
 
 # ❓ 𝖂𝖍𝖞 𝕸𝖆𝖉𝖊 𝕿𝖍𝖎𝖘 𝕭𝖔𝖙?
 
@@ -20,14 +19,13 @@
 🔸 ᴍɪᴢᴜᴋɪ is written in JavaScript and is by far the most advance Whatsapp Userbot.
 ```
 
-
 # 💡 𝕴𝖓𝖘𝖕𝖎𝖗𝖆𝖙𝖎𝖔𝖓
+
 ```
 )¤•• ʙᴀɪʟᴇʏꜱ ᴡʜᴀᴛꜱᴀᴘᴘ ʟɪʙʀᴀʀʏ [https://github.com/adiwajshing/Baileys]
 )¤•• ᴡʜᴀᴛꜱᴀᴘᴘ ᴡᴇʙ ᴀᴘɪ [https://github.com/pedroslopez/whatsapp-web.js/]
 )¤•• ᴛᴇʟᴇɢʀᴀᴍ,ᴅɪꜱᴄᴏʀᴅ ʙᴏᴛꜱ ᴏꜰ ᴍʏ ᴏᴡɴ ʟᴍᴀᴏ
 ```
-
 
 # ☣️ [`𝕷𝖎𝖈𝖊𝖓𝖘𝖊`](LICENSE)
 
