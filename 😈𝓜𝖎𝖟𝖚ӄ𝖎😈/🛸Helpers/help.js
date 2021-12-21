@@ -23,47 +23,23 @@ module.exports = {
       var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
       var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
       // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
-      const runtime = function (seconds) {
-        seconds = Number(seconds);
-        var d = Math.floor(seconds / (3600 * 24));
-        var h = Math.floor((seconds % (3600 * 24)) / 3600);
-        var m = Math.floor((seconds % 3600) / 60);
-        var s = Math.floor(seconds % 60);
-        var dDisplay = d > 0 ? d + (d == 1 ? ` day, ` : ` Day, `) : ``;
-        var hDisplay = h > 0 ? h + (h == 1 ? ` hour, ` : ` Hour, `) : ``;
-        var mDisplay = m > 0 ? m + (m == 1 ? ` minute, ` : ` Minute, `) : ``;
-        var sDisplay = s > 0 ? s + (s == 1 ? ` second` : ` Second`) : ``;
-        return dDisplay + hDisplay + mDisplay + sDisplay;
-      };
-      uptime = process.uptime();
-      let timestamp = speed();
-      let latensi = speed() - timestamp;
-      neww = performance.now();
-      oldd = performance.now();
-      // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
-      let content = fs.readFileSync(`./𝓜𝖎𝖟𝖚ӄ𝖎/Mizuki_Main.png`);
+      let content = fs.readFileSync(`./𝓜𝖎𝖟𝖚ӄ𝖎/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`);
       const media = await ӄʀǟӄɨռʐ.prepareMessage(
         𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
         content,
-        MessageType.image,
+        MessageType.video,
         {
-          mimetype: Mimetype.png,
+          mimetype: "video/gif",
         }
       );
-      const buttons = [
-        {
-          buttonId: `${ᴋᴇɪ}list`,
-          buttonText: { displayText: `${ᴋᴇɪ}list` },
-          type: 1,
-        },
-        {
-          buttonId: `${ᴋᴇɪ}mizuki`,
-          buttonText: { displayText: `${ᴋᴇɪ}mizuki` },
-          type: 1,
-        },
-      ];
-      const buttonMessage = {
-        contentText: `𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚👋🏻 •@${ꜱᴇɴᴅᴇʀeceived}, _I'm Mizuki, My prefix is !._
+      await ӄʀǟӄɨռʐ
+        .sendMessage(
+          𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+          {
+            contentText: `𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚👋🏻 •@${ꜱᴇɴᴅᴇʀeceived},
+
+🔑𝐏𝐫𝐞𝐟𝐢𝐱: *!*
+👑𝐎𝐰𝐧𝐞𝐫: _🐙KrakinzKon_
 
 ┌────🌈 𝙎𝙁𝙒 𝐂𝐚𝐭𝐞𝐠𝐨𝐫𝐢𝐞𝐬 
 ☘️ *${ᴋᴇɪ}animeside* 
@@ -84,16 +60,28 @@ module.exports = {
 
 🌱𝗣𝗿𝗲𝘀𝘀 𝗯𝗲𝗹𝗼𝘄 𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗦𝘁𝗮𝗿𝘁 𝘂𝘀𝗶𝗻𝗴 𝗠𝗶𝘇𝘂𝗸𝗶👇🏽‍
 `,
-        footerText: `_𝐌𝐢𝐳𝐮𝐤𝐢™_ ${vers.vers}`,
-        buttons: buttons,
-        headerType: 4,
-        imageMessage: media.message.imageMessage,
-      };
-      await ӄʀǟӄɨռʐ
-        .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, buttonMessage, MessageType.buttonsMessage, {
-          quoted: chat,
-          contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
-        })
+            footerText: `_𝐌𝐢𝐳𝐮𝐤𝐢™_ ${vers.vers}`,
+            buttons: [
+              {
+                buttonId: `${ᴋᴇɪ}list`,
+                buttonText: { displayText: `${ᴋᴇɪ}list` },
+                type: 1,
+              },
+              {
+                buttonId: `${ᴋᴇɪ}mizuki`,
+                buttonText: { displayText: `${ᴋᴇɪ}mizuki` },
+                type: 1,
+              },
+            ],
+            headerType: 5,
+            videoMessage: media.message.videoMessage,
+          },
+          MessageType.buttonsMessage,
+          {
+            quoted: chat,
+            contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
+          }
+        )
         .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
     } catch (ℓαвєяяσя) {
       ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);

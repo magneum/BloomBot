@@ -526,19 +526,43 @@ ${ꜰᴇᴛᴄʜᴇᴅʙʏᴇ.message}`,
         var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
         var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
         if (!command) {
+          let content = fs.readFileSync(`./𝓜𝖎𝖟𝖚ӄ𝖎/Mizuki_Invalid.png`);
+          const media = await ӄʀǟӄɨռʐ.prepareMessage(
+            𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+            content,
+            MessageType.image,
+            {
+              mimetype: Mimetype.png,
+            }
+          );
           return await ӄʀǟӄɨռʐ
             .sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              `𝗜𝗻𝘃𝗮𝗹𝗶𝗱 𝗖𝗼𝗺𝗺𝗮𝗻𝗱
+              {
+                contentText: `𝗜𝗻𝘃𝗮𝗹𝗶𝗱 𝗖𝗼𝗺𝗺𝗮𝗻𝗱
 
 *😑Baka* @${ꜱᴇɴᴅᴇʀeceived},
--.-Invalid command type *${ᴋᴇɪ}𝗵𝗲𝗹𝗽* for all the commands`,
-              MessageType.text,
+-.-Type *${ᴋᴇɪ}help*`,
+                footerText: `_𝐌𝐢𝐳𝐮𝐤𝐢™_`,
+                buttons: [
+                  {
+                    buttonId: `${ᴋᴇɪ}list`,
+                    buttonText: { displayText: `${ᴋᴇɪ}list` },
+                    type: 1,
+                  },
+                  {
+                    buttonId: `${ᴋᴇɪ}list`,
+                    buttonText: { displayText: `${ᴋᴇɪ}list` },
+                    type: 1,
+                  },
+                ],
+                headerType: 4,
+                imageMessage: media.message.imageMessage,
+              },
+              MessageType.buttonsMessage,
               {
                 quoted: chat,
-                contextInfo: {
-                  mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
-                },
+                contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
               }
             )
             .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
@@ -560,8 +584,8 @@ ${ꜰᴇᴛᴄʜᴇᴅʙʏᴇ.message}`,
         const REMOVE = chat.key.fromMe
           ? ӄʀǟӄɨռʐ.user.jid
           : 𝓜𝖎𝖟𝖚ӄ𝖎.isGroup
-          ? chat.participant
-          : chat.key.remoteJid;
+            ? chat.participant
+            : chat.key.remoteJid;
         if (!𝓜𝖎𝖟𝖚ӄ𝖎.fromMe && 𝓜𝖎𝖟𝖚ӄ𝖎.isGroup && !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderGroupAdmin) {
           if (
             (!𝓜𝖎𝖟𝖚ӄ𝖎.body.includes(_𝔏𝔞𝔟_.HASH) &&
