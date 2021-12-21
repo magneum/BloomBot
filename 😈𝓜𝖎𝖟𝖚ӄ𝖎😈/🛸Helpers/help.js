@@ -6,8 +6,6 @@ const _𝔏𝔞𝔟_ = require(`../../🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/_𝔏𝔞�
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 const fs = require(`fs`);
-const os = require("os");
-const { formatp } = require(`../../🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/mizu`);
 const vers = require(`../../package.json`);
 `🐙`;
 `🐙`;
@@ -53,12 +51,12 @@ module.exports = {
       const buttons = [
         {
           buttonId: `${ᴋᴇɪ}menu`,
-          buttonText: { displayText: `𝐄𝐧𝐭𝐢𝐫𝐞⚡𝐋𝐢𝐬𝐭` },
+          buttonText: { displayText: `${ᴋᴇɪ}menu` },
           type: 1,
         },
         {
           buttonId: `${ᴋᴇɪ}mizuki`,
-          buttonText: { displayText: `🛸𝐒𝐲𝐬𝐭𝐞𝐦` },
+          buttonText: { displayText: `${ᴋᴇɪ}mizuki` },
           type: 1,
         },
       ];
