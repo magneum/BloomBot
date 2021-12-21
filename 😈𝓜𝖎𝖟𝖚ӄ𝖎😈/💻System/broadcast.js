@@ -52,16 +52,41 @@ module.exports = {
           )
           .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
       }
+      `🐙============================================================================================================================<⚡>`;
       𝓜𝓮𝓮s = await ӄʀǟӄɨռʐ.chats.all();
       for (let _ of 𝓜𝓮𝓮s) {
+        let content = fs.readFileSync(`./𝓜𝖎𝖟𝖚ӄ𝖎/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`);
+        const media = await ӄʀǟӄɨռʐ.prepareMessage(
+          _.jid,
+          content,
+          MessageType.video,
+          {
+            mimetype: `video/gif`,
+          }
+        );
         await ӄʀǟӄɨռʐ
           .sendMessage(
             _.jid,
-            `_𝐌𝐢𝐳𝐮𝐤𝐢™_
-
-📜𝗦𝗽𝗲𝗰𝗶𝗮𝗹 𝗕𝗿𝗼𝗮𝗱𝗰𝗮𝘀𝘁
-${arg.join(` `)}`,
-            MessageType.text,
+            {
+              contentText: `📜𝗦𝗽𝗲𝗰𝗶𝗮𝗹 𝗕𝗿𝗼𝗮𝗱𝗰𝗮𝘀𝘁
+              ${arg.join(` `)}`,
+              footerText: `_𝐌𝐢𝐳𝐮𝐤𝐢™_ ${vers.vers}`,
+              buttons: [
+                {
+                  buttonId: `${ᴋᴇɪ}help`,
+                  buttonText: { displayText: `${ᴋᴇɪ}help` },
+                  type: 1,
+                },
+                {
+                  buttonId: `${ᴋᴇɪ}list`,
+                  buttonText: { displayText: `${ᴋᴇɪ}list` },
+                  type: 1,
+                },
+              ],
+              headerType: 5,
+              videoMessage: media.message.videoMessage,
+            },
+            MessageType.buttonsMessage,
             {
               quoted: chat,
               contextInfo: {
@@ -74,6 +99,7 @@ ${arg.join(` `)}`,
           )
           .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
       }
+      `🐙============================================================================================================================<⚡>`;
       await ӄʀǟӄɨռʐ
         .sendMessage(
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
