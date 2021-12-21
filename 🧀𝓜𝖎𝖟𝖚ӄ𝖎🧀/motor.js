@@ -2,7 +2,6 @@
 const { MessageType } = require(`@adiwajshing/baileys`);
 const _𝔏𝔞𝔟_ = require(`./_𝔏𝔞𝔟_`);
 require(`python-format-js`);
-const vers = require(`../package.json`);
 `🐙============================================================================================================================<⚡>`;
 exports.nomentioncontact = async (args, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎) => {
   var jidNumber = ``;

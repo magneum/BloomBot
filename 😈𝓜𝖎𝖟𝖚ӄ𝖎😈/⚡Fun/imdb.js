@@ -1,6 +1,5 @@
 `🐙============================================================================================================================<⚡>`;
 const imdb = require(`imdb-api`);
-const vers = require(`../../package.json`);
 const ℓιєηт = require(`../../🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/catch`);
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const _𝔏𝔞𝔟_ = require(`../../🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/_𝔏𝔞𝔟_`);

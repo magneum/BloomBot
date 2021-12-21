@@ -1,7 +1,6 @@
 `🐙============================================================================================================================<⚡>`;
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const ℓιєηт = require(`../../🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/catch`);
-const vers = require(`../../package.json`);
 const _𝔏𝔞𝔟_ = require(`../../🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/_𝔏𝔞𝔟_`);
 const { getDadjoke, getRandomCHNJoke, getRandomJoke } = require(`random-jokes`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);

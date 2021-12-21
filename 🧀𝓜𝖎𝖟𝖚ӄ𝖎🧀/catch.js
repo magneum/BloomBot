@@ -19,7 +19,7 @@ exports.catch = async (ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎
       {
         contentText: `*🐙Please try Again Later!*
 There Was temporary erorr in that command.`,
-        footerText: `_𝐌𝐢𝐳𝐮𝐤𝐢™_ ${vers.vers}`,
+        footerText: `_𝐌𝐢𝐳𝐮𝐤𝐢™_`,
         buttons: [
           {
             buttonId: `${ᴋᴇɪ}help`,
