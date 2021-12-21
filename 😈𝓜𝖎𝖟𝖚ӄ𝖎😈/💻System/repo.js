@@ -27,7 +27,7 @@ module.exports = {
         .sendMessage(
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
           {
-            url: _𝔏𝔞𝔟_.MEE,
+            url: "https://i.postimg.cc/pLSwPn8y/repos.png",
           },
           MessageType.image,
           {
