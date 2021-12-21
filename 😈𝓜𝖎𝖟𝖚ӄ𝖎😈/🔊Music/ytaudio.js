@@ -125,7 +125,7 @@ module.exports = {
 ${ᴋᴇɪ}ytaudio <youtubelink>
 
 *NOTE:*
-You Can Get URL by using ${ᴋᴇɪ}yts <song-name>`,
+You Can Get URL by using ${ᴋᴇɪ}ytsearch <song-name>`,
             }
           )
           .catch((ℓαвєяяσя) => {
