@@ -26,7 +26,7 @@ module.exports = {
       var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
       const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
       const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
-      `🐙============================================================================================================================<⚡>`;
+      // ⚡•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[🐙  𝐌𝐢𝐳𝐮𝐤𝐢™   🐙]──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⚡
       if (
         𝓜𝖎𝖟𝖚ӄ𝖎.isGroup &&
         !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderGroupAdmin &&
@@ -49,9 +49,10 @@ module.exports = {
           },
         ];
         const buttonMessage = {
-          contentText: `❌ @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},  *You Are Not Allowed!*
+          contentText: `@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}, ❌ You Are Not Allowed!
 
-_❗In Groups This Command allowed to Admins & Developers!_`,
+*🎊Groups:* Admins & Developers!
+*🫒Private:* Everyone`,
           footerText: `_𝐌𝐢𝐳𝐮𝐤𝐢™_`,
           buttons: buttons,
           headerType: 4,

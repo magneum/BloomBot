@@ -51,7 +51,7 @@ This command is only applicable for group chats.`,
         !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderGroupAdmin &&
         !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderSUDO
       ) {
-        let content = fs.readFileSync(_𝔏𝔞𝔟_.NotAdmin);
+        let content = await fs.readFileSync(_𝔏𝔞𝔟_.NotAdmin);
         const media = await ӄʀǟӄɨռʐ.prepareMessage(
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
           content,
@@ -68,9 +68,10 @@ This command is only applicable for group chats.`,
           },
         ];
         const buttonMessage = {
-          contentText: `❌ @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},  *You Are Not Allowed!*
+          contentText: `@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}, ❌ You Are Not Allowed!
 
-_❗In Groups This Command allowed to Admins & Developers!_`,
+*🎊Groups:* Admins & Developers!
+*🫒Private:* Everyone`,
           footerText: `_𝐌𝐢𝐳𝐮𝐤𝐢™_`,
           buttons: buttons,
           headerType: 4,
