@@ -42,7 +42,7 @@ module.exports = {
         `🐙============================================================================================================================<⚡>`;
       }
       const FetchedLink = await yts(arg.join(` `));
-      const videos = FetchedLink.videos.slice(0, 5);
+      const videos = FetchedLink.videos.slice(0, 3);
       var Fetched = ``;
       videos.forEach(function (youfound) {
         const { id } = getVideoId(youfound.url);
@@ -77,7 +77,7 @@ module.exports = {
           quoted: chat,
           mimetype: Mimetype.png || Mimetype.jpeg,
           caption:
-            `ᴛʜᴇꜱᴇ ᴀʀᴇ ᴛʜᴇ *ꜰɪʀꜱᴛ-5* ᴍᴏꜱᴛ ᴍᴀᴛᴄʜɪɴɢ ꜱᴇᴀʀᴄʜ ʀᴇꜱᴜʟᴛꜱ ꜰᴏʀ:
+            `ᴛʜᴇꜱᴇ ᴀʀᴇ ᴛʜᴇ *ꜰɪʀꜱᴛ-3* ᴍᴏꜱᴛ ᴍᴀᴛᴄʜɪɴɢ ꜱᴇᴀʀᴄʜ ʀᴇꜱᴜʟᴛꜱ ꜰᴏʀ:
 *🔎: ${c.toUpperCase()}*\n\n` + Fetched,
         }
       );
