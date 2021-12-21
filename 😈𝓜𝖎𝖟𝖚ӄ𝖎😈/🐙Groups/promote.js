@@ -46,9 +46,11 @@ This command is only applicable for group chats.`,
         return;
       }
       // ⚡•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[🐙  𝐌𝐢𝐳𝐮𝐤𝐢™   🐙]──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⚡
+      console.log(𝓜𝖎𝖟𝖚ӄ𝖎.isSenderSUDO);
       if (
         𝓜𝖎𝖟𝖚ӄ𝖎.isGroup &&
-        (!𝓜𝖎𝖟𝖚ӄ𝖎.isSenderGroupAdmin || !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderSUDO)
+        !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderGroupAdmin &&
+        !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderSUDO
       ) {
         let content = await fs.readFileSync(_𝔏𝔞𝔟_.ɴᴏᴛᴀᴅᴍɪɴ);
         const media = await ӄʀǟӄɨռʐ.prepareMessage(
