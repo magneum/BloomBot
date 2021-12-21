@@ -13,7 +13,7 @@ const axios = require(`axios`);
 const fs = require(`fs`);
 const now = Date.now();
 let mime = ``;
-const ytIdRegex =
+const RegexYouTube =
   /(?:http(?:s|):\/\/|)(?:(?:www\.|)youtube(?:\-nocookie|)\.com\/(?:watch\?.*(?:|\&)v=|embed\/|v\/)|youtu\.be\/)([-_0-9A-Za-z]{11})/;
 `🐙============================================================================================================================<⚡>`;
 module.exports = {
@@ -39,7 +39,7 @@ module.exports = {
         )
         .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
       `🐙============================================================================================================================<⚡>`;
-    } else if (!ytIdRegex.test(arg[0])) {
+    } else if (!RegexYouTube.test(arg[0])) {
       const nahargs = require(`../../🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/nahargs`);
       return nahargs
         .nahargs(
