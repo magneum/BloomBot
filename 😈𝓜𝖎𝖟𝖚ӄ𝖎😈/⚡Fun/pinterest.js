@@ -48,7 +48,7 @@ module.exports = {
         .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, { url: PinReslt }, MessageType.image, {
           contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
           quoted: chat,
-          mimetype: Mimetype.png || Mimetype.jpeg,
+          mimetype: Mimetype.png,
           caption: `_𝐌𝐢𝐳𝐮𝐤𝐢™_
 
 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},

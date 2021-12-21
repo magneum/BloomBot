@@ -172,7 +172,7 @@ module.exports = {
               MessageType.image,
               {
                 quoted: chat,
-                mimetype: Mimetype.png || Mimetype.jpeg,
+                mimetype: Mimetype.png,
                 contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
                 caption: `_𝐌𝐢𝐳𝐮𝐤𝐢™_
 
@@ -224,7 +224,7 @@ module.exports = {
               MessageType.image,
               {
                 quoted: chat,
-                mimetype: Mimetype.png || Mimetype.jpeg,
+                mimetype: Mimetype.png,
                 contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ, Receiver] },
                 caption: `_𝐌𝐢𝐳𝐮𝐤𝐢™_
 
@@ -276,7 +276,7 @@ module.exports = {
               MessageType.image,
               {
                 quoted: chat,
-                mimetype: Mimetype.png || Mimetype.jpeg,
+                mimetype: Mimetype.png,
                 contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ, Receiver] },
                 caption: `_𝐌𝐢𝐳𝐮𝐤𝐢™_
 
@@ -325,7 +325,7 @@ Asked By? @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}
               MessageType.image,
               {
                 quoted: chat,
-                mimetype: Mimetype.png || Mimetype.jpeg,
+                mimetype: Mimetype.png,
                 contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
                 caption: `_𝐌𝐢𝐳𝐮𝐤𝐢™_
 

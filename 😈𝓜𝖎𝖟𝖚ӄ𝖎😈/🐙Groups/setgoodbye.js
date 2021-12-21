@@ -29,7 +29,7 @@ Do note, the setgoodbye option is still enabled after you use the delete option.
       // ⚡•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[🐙  𝐌𝐢𝐳𝐮𝐤𝐢™   🐙]──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⚡
       console.log(𝓜𝖎𝖟𝖚ӄ𝖎.isSenderSUDO);
       if (𝓜𝖎𝖟𝖚ӄ𝖎.isGroup && !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderGroupAdmin && !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderSUDO) {
-        let content = await fs.readFileSync(_𝔏𝔞𝔟_.NotAdmin);
+        let content = await fs.readFileSync(_𝔏𝔞𝔟_.ɴᴏᴛᴀᴅᴍɪɴ);
         const media = await ӄʀǟӄɨռʐ.prepareMessage(
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
           content,
@@ -81,7 +81,7 @@ Do note, the setgoodbye option is still enabled after you use the delete option.
               contextInfo: {
                 mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
               },
-              mimetype: Mimetype.png || Mimetype.jpeg,
+              mimetype: Mimetype.png,
               caption: `
 ⚠️𝗘𝗿𝗿𝗼𝗿: @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}, *ʏᴏᴜ need ᴛᴏ ᴍᴀᴋᴇ ᴍᴇ ᴀᴅᴍɪɴ ꜰɪʀꜱᴛ*`,
             }

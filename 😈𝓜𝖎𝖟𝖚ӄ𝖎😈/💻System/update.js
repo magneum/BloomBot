@@ -21,16 +21,16 @@ module.exports = {
   async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
     var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
     var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
-    if (!𝓜𝖎𝖟𝖚ӄ𝖎.fromMe || !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderSUDO) {
+    if (!𝓜𝖎𝖟𝖚ӄ𝖎.fromMe && !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderSUDO) {
       return await ӄʀǟӄɨռʐ.sendMessage(
         𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
         {
-          url: _𝔏𝔞𝔟_.NotAdmin,
+          url: _𝔏𝔞𝔟_.ɴᴏᴛᴀᴅᴍɪɴ,
         },
         MessageType.image,
         {
           quoted: chat,
-          mimetype: Mimetype.png || Mimetype.jpeg,
+          mimetype: Mimetype.png,
           contextInfo: {
             mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
           },
@@ -49,7 +49,7 @@ Nice Try But Only My *Owner* Can Use *OWNER_ONLY* Commands!`,
         },
         MessageType.image,
         {
-          mimetype: Mimetype.png || Mimetype.jpeg,
+          mimetype: Mimetype.png,
           contextInfo: {
             mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
           },

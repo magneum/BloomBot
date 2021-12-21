@@ -29,7 +29,7 @@ module.exports = {
         !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderGroupAdmin &&
         !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderSUDO
       ) {
-        let content = await fs.readFileSync(_𝔏𝔞𝔟_.NotAdmin);
+        let content = await fs.readFileSync(_𝔏𝔞𝔟_.ɴᴏᴛᴀᴅᴍɪɴ);
         const media = await ӄʀǟӄɨռʐ.prepareMessage(
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
           content,
@@ -75,7 +75,7 @@ module.exports = {
           },
           MessageType.image,
           {
-            mimetype: Mimetype.png || Mimetype.jpeg,
+            mimetype: Mimetype.png,
             contextInfo: {
               mentionedJid: members,
             },

@@ -33,7 +33,7 @@ module.exports = {
             MessageType.image,
             {
               quoted: chat,
-              mimetype: Mimetype.png || Mimetype.jpeg,
+              mimetype: Mimetype.png,
             }
           )
           .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
@@ -48,7 +48,7 @@ module.exports = {
             MessageType.image,
             {
               quoted: chat,
-              mimetype: Mimetype.png || Mimetype.jpeg,
+              mimetype: Mimetype.png,
             }
           )
           .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));

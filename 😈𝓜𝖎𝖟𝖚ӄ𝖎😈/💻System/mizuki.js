@@ -125,7 +125,7 @@ module.exports = {
           },
           MessageType.image,
           {
-            mimetype: Mimetype.png || Mimetype.jpeg,
+            mimetype: Mimetype.png,
             contextInfo: {
               mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
             },

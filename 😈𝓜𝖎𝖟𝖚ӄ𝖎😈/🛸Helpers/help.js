@@ -41,13 +41,13 @@ module.exports = {
       neww = performance.now();
       oldd = performance.now();
       // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
-      let content = fs.readFileSync(`./🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/𝓜𝖎𝖟𝖚ӄ𝖎ɦɛʟք.png`);
+      let content = fs.readFileSync(`./𝓜𝖎𝖟𝖚ӄ𝖎/Mizuki_Main.png`);
       const media = await ӄʀǟӄɨռʐ.prepareMessage(
         𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
         content,
         MessageType.image,
         {
-          mimetype: Mimetype.png || Mimetype.jpeg,
+          mimetype: Mimetype.png,
         }
       );
       const buttons = [

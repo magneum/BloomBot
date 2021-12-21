@@ -77,7 +77,7 @@ module.exports = {
               contextInfo: {
                 mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
               },
-              mimetype: Mimetype.png || Mimetype.jpeg,
+              mimetype: Mimetype.png,
               caption: `
 ⚠️𝗘𝗿𝗿𝗼𝗿: @${ꜱᴇɴᴅᴇʀeceived}, *ʏᴏᴜ need ᴛᴏ ᴍᴀᴋᴇ ᴍᴇ ᴀᴅᴍɪɴ ꜰɪʀꜱᴛ*`,
             }

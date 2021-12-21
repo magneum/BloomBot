@@ -98,7 +98,7 @@ or replying  *${ᴋᴇɪ}github*`,
           MessageType.image,
           {
             quoted: chat,
-            mimetype: Mimetype.png || Mimetype.jpeg,
+            mimetype: Mimetype.png,
             caption: caption,
             thumbnail: null,
           }

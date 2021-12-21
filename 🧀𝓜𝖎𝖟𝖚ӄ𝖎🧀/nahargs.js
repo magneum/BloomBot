@@ -7,22 +7,22 @@ require(`python-format-js`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 const { registerFont, createCanvas, loadImage } = require(`canvas`);
-registerFont(`./𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/Honeycomb-Round.otf`, {
+registerFont(`./🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/Honeycomb-Round.otf`, {
   family: `Honeycomb`,
 });
-registerFont(`./𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/LobsterTwo-Bold.ttf`, {
+registerFont(`./🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/LobsterTwo-Bold.ttf`, {
   family: `Lobster`,
 });
-registerFont(`./𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/HousttelySignature-GOonZ.ttf`, {
+registerFont(`./🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/HousttelySignature-GOonZ.ttf`, {
   family: `Housttely`,
 });
-registerFont(`./𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/AngelesPersonalUseItalic-2Odz8.ttf`, {
+registerFont(`./🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/AngelesPersonalUseItalic-2Odz8.ttf`, {
   family: `AngelesPersonalUseItalic`,
 });
-registerFont(`./𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/KashmirrosyPersonaluse-X3qLd.otf`, {
+registerFont(`./🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/KashmirrosyPersonaluse-X3qLd.otf`, {
   family: `KashmirrosyPersonaluse`,
 });
-registerFont(`./𝓜𝖎𝖟𝖚ӄ𝖎🧀𝓒𝓻𝓪𝓽𝓮/TheHeartOfEverythingDemo-KRdD.ttf`, {
+registerFont(`./🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/TheHeartOfEverythingDemo-KRdD.ttf`, {
   family: `TheHeartOfEverythingDemo`,
 });
 var randomMC = require(`random-material-color`);

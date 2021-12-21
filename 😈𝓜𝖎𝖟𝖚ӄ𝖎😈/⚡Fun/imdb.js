@@ -70,7 +70,7 @@ module.exports = {
           MessageType.image,
           {
             quoted: chat,
-            mimetype: Mimetype.png || Mimetype.jpeg,
+            mimetype: Mimetype.png,
             caption: Litol,
           }
         )
