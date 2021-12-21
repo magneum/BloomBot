@@ -79,7 +79,7 @@ exports.welbuts = async (
       .sendMessage(
         GroupID,
         {
-          contentText: `*⚡@${ᴘᴘᴡᴇʟᴄᴏᴍᴇ},* ${ᴡᴇʟᴄᴏᴍᴇʀᴛxᴛ}
+          contentText: `*⚡@${ᴘᴘᴡᴇʟᴄᴏᴍᴇ}* ${ᴡᴇʟᴄᴏᴍᴇʀᴛxᴛ}
 
 *<⚡>*
 ${FlowerWel}𝗕𝗶𝗼: ${GroupMemBio.status}
