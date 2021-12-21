@@ -19,22 +19,29 @@ module.exports = {
       var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
       var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
       // ⦿•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[]  𝐌𝐢𝐳𝐮𝐤𝐢™   []──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⦿
-      await ӄʀǟӄɨռʐ
-        .sendMessage(
-          𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-          {
-            url: _𝔏𝔞𝔟_.MEE,
-          },
-          MessageType.image,
-          {
-            quoted: chat,
-            mimetype: Mimetype.png || Mimetype.jpeg,
-            contextInfo: {
-              mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
-            },
-            caption: `_𝐌𝐢𝐳𝐮𝐤𝐢™_
-
-•@${ꜱᴇɴᴅᴇʀeceived},
+      let content = fs.readFileSync(`./🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/𝓜𝖎𝖟𝖚ӄ𝖎ɦɛʟք.png`);
+      const media = await ӄʀǟӄɨռʐ.prepareMessage(
+        𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+        content,
+        MessageType.image,
+        {
+          mimetype: Mimetype.png || Mimetype.jpeg,
+        }
+      );
+      const buttons = [
+        {
+          buttonId: `${ᴋᴇɪ}list`,
+          buttonText: { displayText: `${ᴋᴇɪ}list` },
+          type: 1,
+        },
+        {
+          buttonId: `${ᴋᴇɪ}smile`,
+          buttonText: { displayText: `${ᴋᴇɪ}smile` },
+          type: 1,
+        },
+      ];
+      const buttonMessage = {
+        contentText: `•@${ꜱᴇɴᴅᴇʀeceived},
 💞𝐆𝐫𝐨𝐮𝐩: ${_𝔏𝔞𝔟_.HASH}
 
 
@@ -49,8 +56,16 @@ module.exports = {
 
 *⧪➛𝘾𝙤𝙢𝙞𝙣𝙜 𝙎𝙤𝙤𝙣!*
 many many more!`,
-          }
-        )
+        footerText: `_𝐌𝐢𝐳𝐮𝐤𝐢™_`,
+        buttons: buttons,
+        headerType: 4,
+        imageMessage: media.message.imageMessage,
+      };
+      await ӄʀǟӄɨռʐ
+        .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, buttonMessage, MessageType.buttonsMessage, {
+          quoted: chat,
+          contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
+        })
         .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
     } catch (ℓαвєяяσя) {
       ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);

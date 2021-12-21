@@ -13,7 +13,7 @@ const fs = require(`fs`);
 `🐙`;
 `🐙`;
 module.exports = {
-  name: `menu`,
+  name: `list`,
   description: `ɢᴇᴛ ᴛʜᴇ entire ᴄᴏᴍᴍᴀɴᴅ ʟɪꜱᴛ ᴀɴᴅ ɪɴꜰᴏ ᴏɴ ᴍᴏᴅᴜʟᴇꜱ`,
   𝓜𝓮𝓮6ʍօʀɛ: `${ᴋᴇɪ}`,
   async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
@@ -35,8 +35,8 @@ module.exports = {
       );
       const buttons = [
         {
-          buttonId: `${ᴋᴇɪ}help`,
-          buttonText: { displayText: `${ᴋᴇɪ}menu` },
+          buttonId: `${ᴋᴇɪ}smile`,
+          buttonText: { displayText: `${ᴋᴇɪ}smile` },
           type: 1,
         },
         {

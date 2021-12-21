@@ -67,6 +67,9 @@ exports.resolve = function (messageInstance, ӄʀǟӄɨռʐ, groupMetadata) {
   𝓜𝖎𝖟𝖚ӄ𝖎.commandName = 𝓜𝖎𝖟𝖚ӄ𝖎.isCmd
     ? 𝓜𝖎𝖟𝖚ӄ𝖎.body.slice(1).trim().split(/ +/).shift().toLowerCase()
     : "";
+  𝓜𝖎𝖟𝖚ӄ𝖎.alias = 𝓜𝖎𝖟𝖚ӄ𝖎.isCmd
+    ? 𝓜𝖎𝖟𝖚ӄ𝖎.body.slice(1).trim().split(/ +/).shift().toLowerCase()
+    : "";
   𝓜𝖎𝖟𝖚ӄ𝖎.isImage = 𝓜𝖎𝖟𝖚ӄ𝖎.type === "image";
   𝓜𝖎𝖟𝖚ӄ𝖎.isReplyImage = 𝓜𝖎𝖟𝖚ӄ𝖎.isReply
     ? jsonMessage.indexOf("imageMessage") !== -1
