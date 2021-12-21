@@ -26,14 +26,14 @@ const env = {
   OCR: `9ffb44def388957`,
   WAPI: `6729ac2b2e2bb5c686ff427a2f06df92`,
   HASH: `https://chat.whatsapp.com/KC32fr1BLmzHYgToZjMuHn`,
-  DATABASE_URL: (process.env.DATABASE_URL =
-    process.env.DATABASE_URL === undefined
+  DATABASE_URLM: (process.env.DATABASE_URLM =
+    process.env.DATABASE_URLM === undefined
       ? `./𝓜𝖎𝖟𝖚ӄ𝖎.db`
-      : process.env.DATABASE_URL),
+      : process.env.DATABASE_URLM),
   POSTQL:
-    process.env.DATABASE_URL === `./𝓜𝖎𝖟𝖚ӄ𝖎.db`
-      ? new Sequelize({ dialect: `sqlite`, storage: process.env.DATABASE_URL })
-      : new Sequelize(process.env.DATABASE_URL, {
+    process.env.DATABASE_URLM === `./𝓜𝖎𝖟𝖚ӄ𝖎.db`
+      ? new Sequelize({ dialect: `sqlite`, storage: process.env.DATABASE_URLM })
+      : new Sequelize(process.env.DATABASE_URLM, {
           dialect: `postgres`,
           protocol: `postgres`,
           dialectOptions: { ssl: { require: true, rejectUnauthorized: false } },

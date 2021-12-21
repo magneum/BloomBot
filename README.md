@@ -39,3 +39,8 @@ Apache License Version 2.0, January 2004 http://www.apache.org/licenses
 ```
 
 <img align="centre" src="https://i.postimg.cc/sXG9mb1D/Mizuki-Main.png">
+
+
+
+
+postgres://yoxjmbbbolkuob:b46b901ff022e903f918357189ca65e10c947c5e86dbc205a68e889c6717857c@ec2-52-213-119-221.eu-west-1.compute.amazonaws.com:5432/d7v4j22qsuhqq2
