@@ -103,7 +103,7 @@ module.exports = {
       const filename = `./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/${now}ytaudios_${nowbyk.toString()}_${ꜱᴇɴᴅᴇʀɪᴅ}`;
       try {
         yta(arg[0]).then(async (gotResp) => {
-          const { dl_link, thumb, title, filesize } = gotResp;
+          const { dl_link, thumb, title, filesizeF, filesize } = gotResp;
           await axios
             .get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
             .then(async () => {
