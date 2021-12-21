@@ -85,7 +85,7 @@ module.exports = {
           quoted: chat,
           contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
         })
-        .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
+        .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
       // ⚡•=•=•=•=•=•=•=•=•=•=•=•=•=•──────[🐙  𝐌𝐢𝐳𝐮𝐤𝐢™   🐙]──────•=•=•=•=•=•=•=•=•=•=•=•=•=•⚡
     } else {
       if (ʟᴀʙᴛᴇꜱᴛ.endsWith(`png`)) {
@@ -146,7 +146,7 @@ module.exports = {
           if (ℓαвєяяσя.status == 404 || ℓαвєяяσя.status == 400) {
             ℓιєηт.catch(`Try Again Image Not Found`, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
           }
-          ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
+          ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
         }
       }
       if (ʟᴀʙᴛᴇꜱᴛ.endsWith(`webp`)) {
@@ -218,7 +218,7 @@ module.exports = {
           if (ℓαвєяяσя.status == 404 || ℓαвєяяσя.status == 400) {
             ℓιєηт.catch(`Try Again Image Not Found`, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
           }
-          ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
+          ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
         }
       }
       if (ʟᴀʙᴛᴇꜱᴛ.endsWith(`jpg`)) {
@@ -290,7 +290,7 @@ module.exports = {
           if (ℓαвєяяσя.status == 404 || ℓαвєяяσя.status == 400) {
             ℓιєηт.catch(`Try Again Image Not Found`, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
           }
-          ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
+          ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
         }
       }
       if (ʟᴀʙᴛᴇꜱᴛ.endsWith(`jpeg`)) {
@@ -362,7 +362,7 @@ module.exports = {
           if (ℓαвєяяσя.status == 404 || ℓαвєяяσя.status == 400) {
             ℓιєηт.catch(`Try Again Image Not Found`, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
           }
-          ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
+          ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
         }
       }
       if (
@@ -428,7 +428,7 @@ module.exports = {
           if (ℓαвєяяσя.status == 404 || ℓαвєяяσя.status == 400) {
             ℓιєηт.catch(`Try Again Image Not Found`, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
           }
-          ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
+          ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
         }
       }
     }
