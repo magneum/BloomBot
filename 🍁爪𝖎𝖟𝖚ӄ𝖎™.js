@@ -455,7 +455,6 @@ ${ꜰᴇᴛᴄʜᴇᴅʙʏᴇ.message}`,
     `🐙============================================================================================================================<⚡>`;
     var enableanti = await postDb.checkSettings(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, `setantilink`);
     var ꜰᴇᴛᴄʜᴇᴅanti = await postDb.getMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, `setantilink`);
-    console.clear();
     if (enableanti === false || enableanti === `OFF`) {
       return;
     } else {
