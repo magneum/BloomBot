@@ -13,7 +13,7 @@ const fs = require(`fs`);
 `🐙`;
 `🐙`;
 module.exports = {
-  name: `nsfwside`,
+  name: `humanside`,
   async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
     try {
       var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;

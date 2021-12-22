@@ -54,10 +54,7 @@ module.exports = {
                     MessageType.sticker,
                     { quoted: chat }
                   )
-                  .then(async () => {
-                    await fs.unlinkSync(FN);
-                    await fs.unlinkSync(SN);
-                  });
+                  .then(fs.unlinkSync(FN), fs.unlinkSync(SN));
               })
               .on("error", (e) => console.log(e))
               .run();
@@ -93,10 +90,7 @@ module.exports = {
                     MessageType.sticker,
                     { quoted: chat }
                   )
-                  .then(async () => {
-                    await fs.unlinkSync(FN);
-                    await fs.unlinkSync(SN);
-                  });
+                  .then(fs.unlinkSync(FN), fs.unlinkSync(SN));
               })
               .on("error", (e) => console.log(e))
               .run();

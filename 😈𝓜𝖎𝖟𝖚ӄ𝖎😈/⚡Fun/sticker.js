@@ -22,30 +22,37 @@ module.exports = {
       var ꜱᴇɴᴅᴇʀᴄᴏɴꜰ = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
       `🐙============================================================================================================================<⚡>`;
       const convertToSticker = async (imageId, replyChat) => {
-        const filePath = await ӄʀǟӄɨռʐ
-          .downloadAndSaveMediaMessage(replyChat, `./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/ct-` + imageId)
-          .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
-        const stickerPath = `./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/st-` + imageId + `.webp`;
+        try {
+          var SPath = await ӄʀǟӄɨռʐ.downloadAndSaveMediaMessage(
+            replyChat,
+            `./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/SPath_${imageId}_${ꜱᴇɴᴅᴇʀɪᴅ}`
+          );
+        } catch (ℓαвєяяσя) {
+          ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
+        }
         if (𝓜𝖎𝖟𝖚ӄ𝖎.type === `image` || 𝓜𝖎𝖟𝖚ӄ𝖎.isReplyImage) {
-          ffmpeg(filePath)
+          ffmpeg(SPath)
             .outputOptions([`-y`, `-vcodec libwebp`])
             .videoFilters(
               `scale=2000:2000:flags=lanczos:force_original_aspect_ratio=decrease,format=rgba,pad=2000:2000:(ow-iw)/2:(oh-ih)/2:color=#00000000,setsar=1`
             )
-            .save(stickerPath)
+            .save(`./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/SDPath_${imageId}_${ꜱᴇɴᴅᴇʀɪᴅ}.webp`)
             .on(`end`, async () => {
-              await ӄʀǟӄɨռʐ.sendMessage(
-                𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                fs.readFileSync(stickerPath),
-                MessageType.sticker,
-                { quoted: chat }
-              );
-              fs.unlink(filePath, (ℓαвєяяσя) => {
-                if (ℓαвєяяσя) console.log(ℓαвєяяσя);
-              });
-              fs.unlink(stickerPath, (ℓαвєяяσя) => {
-                if (ℓαвєяяσя) console.log(ℓαвєяяσя);
-              });
+              await ӄʀǟӄɨռʐ
+                .sendMessage(
+                  𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                  fs.readFileSync(
+                    `./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/SDPath_${imageId}_${ꜱᴇɴᴅᴇʀɪᴅ}.webp`
+                  ),
+                  MessageType.sticker,
+                  { quoted: chat }
+                )
+                .then(
+                  fs.unlinkSync(SPath),
+                  fs.unlinkSync(
+                    `./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/SDPath_${imageId}_${ꜱᴇɴᴅᴇʀɪᴅ}.webp`
+                  )
+                );
             })
             .on(`ℓαвєяяσя`, async (ℓαвєяяσя) => {
               ℓιєηт.catch((ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
