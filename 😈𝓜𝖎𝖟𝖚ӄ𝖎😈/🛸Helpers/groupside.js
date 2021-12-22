@@ -45,18 +45,18 @@ module.exports = {
 シ︎𝐆𝐫𝐨𝐮𝐩👓${_𝔏𝔞𝔟_.HASH}
 
 ┌────⭓ *𝙂𝙧𝙤𝙪𝙥𝙨*  ⦿
-│🍭• ${ᴋᴇɪ}promote: _promote member to admin_
-│🍭• ${ᴋᴇɪ}demote: _demote member from admin_
-│🍭• ${ᴋᴇɪ}spam: _spam messsage in group/private_
-│🍭• ${ᴋᴇɪ}invite: _get group invite link_
-│🍭• ${ᴋᴇɪ}admins: _get all admins of a group_
-│🍭• ${ᴋᴇɪ}disappear: _toggle disappear message in group_
-│🍭• ${ᴋᴇɪ}groupdp: _change group profile picture_
-│🍭• ${ᴋᴇɪ}kick: _ʀᴇᴍᴏᴠᴇ ᴀ ᴘᴇʀꜱᴏɴ ꜰʀᴏᴍ ᴀ ɢʀᴏᴜᴘ_
-│🍭• ${ᴋᴇɪ}tagall: _tag everyone in group_
-│🍭• ${ᴋᴇɪ}setantilink: _remove any person who sends any links_
-│🍭• ${ᴋᴇɪ}setwelcome: _welcome new members with custom message_
-│🍭• ${ᴋᴇɪ}setgoodbye: _custom goodbye message for members when they leave_
+│🔰• ${ᴋᴇɪ}promote: _promote member to admin_
+│🔰• ${ᴋᴇɪ}demote: _demote member from admin_
+│🔰• ${ᴋᴇɪ}spam: _spam messsage in group/private_
+│🔰• ${ᴋᴇɪ}invite: _get group invite link_
+│🔰• ${ᴋᴇɪ}admins: _get all admins of a group_
+│🔰• ${ᴋᴇɪ}disappear: _toggle disappear message in group_
+│🔰• ${ᴋᴇɪ}groupdp: _change group profile picture_
+│🔰• ${ᴋᴇɪ}kick: _ʀᴇᴍᴏᴠᴇ ᴀ ᴘᴇʀꜱᴏɴ ꜰʀᴏᴍ ᴀ ɢʀᴏᴜᴘ_
+│🔰• ${ᴋᴇɪ}tagall: _tag everyone in group_
+│🔰• ${ᴋᴇɪ}setantilink: _remove any person who sends any links_
+│🔰• ${ᴋᴇɪ}setwelcome: _welcome new members with custom message_
+│🔰• ${ᴋᴇɪ}setgoodbye: _custom goodbye message for members when they leave_
 └───────────⭓
 
 *⧪➛𝘾𝙤𝙢𝙞𝙣𝙜 𝙎𝙤𝙤𝙣!*
