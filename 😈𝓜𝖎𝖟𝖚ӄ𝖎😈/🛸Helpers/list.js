@@ -104,6 +104,7 @@ module.exports = {
 │🔰• ${ᴋᴇɪ}disappear
 │🔰• ${ᴋᴇɪ}groupdp
 │🔰• ${ᴋᴇɪ}kick
+│🔰• ${ᴋᴇɪ}getdp
 │🔰• ${ᴋᴇɪ}tagall
 │🔰• ${ᴋᴇɪ}setwelcome
 │🔰• ${ᴋᴇɪ}setgoodbye
@@ -113,7 +114,6 @@ module.exports = {
 ┌────⭓ 🧀𝙁𝙪𝙣𝙨
 │🦄• ${ᴋᴇɪ}google _(ꜱᴇᴀʀᴄʜ)_
 │🦄• ${ᴋᴇɪ}carbon 
-│🦄• ${ᴋᴇɪ}pfgroupdp
 │🦄• ${ᴋᴇɪ}github
 │🦄• ${ᴋᴇɪ}beautycheck
 │🦄• ${ᴋᴇɪ}joke _(ᴛᴇxᴛ)_
