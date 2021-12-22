@@ -447,6 +447,7 @@ ${ꜰᴇᴛᴄʜᴇᴅʙʏᴇ.message}`,
   `🐙`;
   `🐙`;
   ӄʀǟӄɨռʐ.on(`chat-update`, async (chat) => {
+    console.log(chat);
     if (!chat.hasNewMessage) {
       return;
     }

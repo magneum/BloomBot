@@ -87,6 +87,7 @@ module.exports = {
 └───────⭓
 
 ┌────⭓ 💻𝙎𝙮𝙨𝙩𝙚𝙢
+│⚙️• ${ᴋᴇɪ}bugreport
 │⚙️• ${ᴋᴇɪ}help 
 │⚙️• ${ᴋᴇɪ}mizuki
 │⚙️• ${ᴋᴇɪ}nekobin _(ʙᴇᴛᴀ)_
