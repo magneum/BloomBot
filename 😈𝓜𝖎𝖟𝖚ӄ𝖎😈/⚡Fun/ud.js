@@ -14,8 +14,7 @@ var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 `🐙`;
 module.exports = {
   name: `ud`,
-  description: `Urban Dictionary`,
-  𝓜𝓮𝓮6ʍօʀɛ: `Use this command to find the meaning of a word in Urban Dictionary. Enter  *${ᴋᴇɪ}ud*  command.`,
+  𝓜𝓮𝓮6ʍօʀɛ: `Use this command to find the meaning of a word in Urban Dictionary. Enter  *${ᴋᴇɪ}ud*  <topic>`,
   async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
     try {
       `🐙============================================================================================================================<⚡>`;

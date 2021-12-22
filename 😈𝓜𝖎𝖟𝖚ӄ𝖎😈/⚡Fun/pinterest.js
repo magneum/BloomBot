@@ -14,7 +14,6 @@ var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 `🐙`;
 module.exports = {
   name: `pinterest`,
-  description: `Get random images from pinterest`,
   𝓜𝓮𝓮6ʍօʀɛ: `${ᴋᴇɪ}pinterest <search>`,
   async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
     try {

@@ -14,7 +14,6 @@ var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 `🐙`;
 module.exports = {
   name: `ocr`,
-  description: `Use this command to obtain text from an image by  *${ᴋᴇɪ}space*  command.`,
   𝓜𝓮𝓮6ʍօʀɛ: `Use this command to obtain text from an image by  *${ᴋᴇɪ}space*  command.`,
   async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
     try {

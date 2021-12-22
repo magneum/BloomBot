@@ -14,8 +14,7 @@ var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 `🐙`;
 module.exports = {
   name: `tts`,
-  description: `Text To Speech.`,
-  𝓜𝓮𝓮6ʍօʀɛ: `Use  *${ᴋᴇɪ}tts <text>*  or  *${ᴋᴇɪ}tts <text> = <language_code>*  to convert text to speech.
+  𝓜𝓮𝓮6ʍօʀɛ: `Use  *${ᴋᴇɪ}tts <text>*  or  *${ᴋᴇɪ}tts <text> | <language_code>*  to convert text to speech.
 You can also reply to a text message with syntax  *${ᴋᴇɪ}tr <language>*  to translate text.`,
   async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
     try {
@@ -42,7 +41,7 @@ You can also reply to a text message with syntax  *${ᴋᴇɪ}tr <language>*  to
       let text = ``;
       let langCode = `en`;
       for (var i = 0; i < arg.length; i++) {
-        if (arg[i] == `=`) {
+        if (arg[i] == `|`) {
           langCode = arg[i + 1];
           break;
         }

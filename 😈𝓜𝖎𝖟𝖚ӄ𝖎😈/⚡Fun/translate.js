@@ -14,10 +14,8 @@ var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 `🐙`;
 module.exports = {
   name: `tr`,
-  description: `Language Translator`,
-  𝓜𝓮𝓮6ʍօʀɛ: `Use  *${ᴋᴇɪ}tr <text> = <language>*  to translate text to the specified language. 
+  𝓜𝓮𝓮6ʍօʀɛ: `Use  *${ᴋᴇɪ}tr <text> | <language>*  to translate text to the specified language. 
 You can also reply to a text message with syntax  *${ᴋᴇɪ}tr <language>*  to translate text.`,
-  𝓜𝓮𝓮6ʍօʀɛ: `${ᴋᴇɪ}`,
   async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
     try {
       `🐙============================================================================================================================<⚡>`;
@@ -44,7 +42,7 @@ You can also reply to a text message with syntax  *${ᴋᴇɪ}tr <language>*  to
       }
       if (!𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
         try {
-          var body = 𝓜𝖎𝖟𝖚ӄ𝖎.body.split(`=`);
+          var body = 𝓜𝖎𝖟𝖚ӄ𝖎.body.split(`|`);
           text = body[0].replace(𝓜𝖎𝖟𝖚ӄ𝖎.body[0] + 𝓜𝖎𝖟𝖚ӄ𝖎.commandName + ` `, ``);
           var i = 0;
           while (body[1].split(` `)[i] == ``) {

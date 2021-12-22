@@ -16,7 +16,8 @@ var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 module.exports = {
   name: `weather`,
   description: `Get weather data of a city`,
-  𝓜𝓮𝓮6ʍօʀɛ: `Obtain weather info by entering the city name.`,
+  𝓜𝓮𝓮6ʍօʀɛ: `Obtain weather info by entering the city name.
+*${ᴋᴇɪ}weather* <name of city>`,
   async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
     try {
       `🐙============================================================================================================================<⚡>`;
