@@ -27,10 +27,6 @@ module.exports = {
     try {
       `🐙============================================================================================================================<⚡>`;
       const ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
-      const LinkForGroups = await yts(arg.join(` `));
-      const PrivatesVideos = LinkForGroups.videos.slice(0, 1);
-      const LinkForPrivates = await yts(arg.join(` `));
-      const GroupVideos = LinkForPrivates.videos.slice(0, 1);
       const 𝓜Usage = 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹.get(𝓜𝖎𝖟𝖚ӄ𝖎.commandName);
       const ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
       const 𝓜𝓮𝓮ʍօʀɛ = 𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ === undefined ? `Null` : 𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ;
@@ -64,6 +60,10 @@ module.exports = {
           .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
         `🐙============================================================================================================================<⚡>`;
       } else {
+        const LinkForGroups = await yts(arg.join(` `));
+        const PrivatesVideos = LinkForGroups.videos.slice(0, 1);
+        const LinkForPrivates = await yts(arg.join(` `));
+        const GroupVideos = LinkForPrivates.videos.slice(0, 1);
         await GroupVideos.forEach(async function (youfound) {
           await ӄʀǟӄɨռʐ
             .sendMessage(
