@@ -44,7 +44,7 @@ module.exports = {
       let movie = await imob.get({
         name: arg.join(` `),
       });
-      const Litol = `_𝐌𝐢𝐳𝐮𝐤𝐢™_
+      const Litol = `爪𝖎𝖟𝖚ӄ𝖎™
         
 *💡𝐓𝐢𝐭𝐥𝐞➛*  ${movie.title.toUpperCase()}
 *🕜𝐓𝐢𝐦𝐞➛*  ${movie.runtime}

@@ -37,7 +37,7 @@ module.exports = {
           {
             contentText: `𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚👋🏻 •@${ꜱᴇɴᴅᴇʀeceived},
 
-🔑𝐏𝐫𝐞𝐟𝐢𝐱: *!*
+🔑𝐏𝐫𝐞𝐟𝐢𝐱: */*
 👑𝐎𝐰𝐧𝐞𝐫: _🐙KrakinzKon_
 
 ┌────⭓ 🌈𝙎𝙁𝙒 𝐂𝐚𝐭𝐞𝐠𝐨𝐫𝐢𝐞𝐬 
@@ -59,7 +59,7 @@ module.exports = {
 
 🌱𝗣𝗿𝗲𝘀𝘀 𝗯𝗲𝗹𝗼𝘄 𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗦𝘁𝗮𝗿𝘁 𝘂𝘀𝗶𝗻𝗴 𝗠𝗶𝘇𝘂𝗸𝗶👇🏽‍
 `,
-            footerText: `*🍁𝓜𝖎𝖟𝖚ӄ𝖎™*`,
+            footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎™*`,
             buttons: [
               {
                 buttonId: `${ᴋᴇɪ}list`,
