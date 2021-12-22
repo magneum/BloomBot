@@ -128,91 +128,45 @@ module.exports = {
               .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
           });
         };
-        if (!𝓜𝖎𝖟𝖚ӄ𝖎.isGroup) {
-          const fn = Date.now() / 10000;
-          const filename = fn.toString();
-          yta(arg[0]).then(async (gotResp) => {
-            const { dl_link, thumb, title, filesizeF, filesize } = gotResp;
-            axios
-              .get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
-              .then((alpha) => {
-                if (Number(filesize) >= 100000) {
-                  return ӄʀǟӄɨռʐ
-                    .sendMessage(
-                      𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                      {
-                        caption: thumb,
-                      },
-                      MessageType.image,
-                      {
-                        quoted: chat,
-                        contextInfo: {
-                          mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
-                        },
-                        mimetype: Mimetype.png || Mimetype.jpeg,
-                        content: `*🍁爪𝖎𝖟𝖚ӄ𝖎™*
-
-⭕𝗔𝘂𝗱𝗶𝗼 •@${ꜱᴇɴᴅᴇʀeceived}, 𝗣𝗹𝗲𝗮𝘀𝗲 𝗖𝗵𝗼𝗼𝘀𝗲 𝗦𝗺𝗮𝗹𝗹𝗲𝗿 𝗙𝗶𝗹𝗲!
-
-🍻𝐓𝐢𝐭𝐥𝐞⤞ ${title}
-🥣𝐒𝐢𝐳𝐞⤞ ${filesizeF}`,
-                      }
-                    )
-                    .catch((ℓαвєяяσя) =>
-                      ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎)
-                    );
-                } else {
-                  GroupVideos.forEach(function () {
-                    Fetched = `⭕𝗔𝘂𝗱𝗶𝗼`;
-                    YouFetchers(filename, ꜱᴇɴᴅᴇʀɪᴅ, dl_link, Fetched);
-                  });
-                }
-              });
-          });
-        }
         `🐙============================================================================================================================<⚡>`;
-        if (𝓜𝖎𝖟𝖚ӄ𝖎.isGroup) {
-          const fn = Date.now() / 10000;
-          const filename = fn.toString();
-          yta(arg[0]).then(async (gotResp) => {
-            const { dl_link, thumb, title, filesizeF, filesize } = gotResp;
-            axios
-              .get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
-              .then((alpha) => {
-                if (Number(filesize) >= 100000) {
-                  return ӄʀǟӄɨռʐ
-                    .sendMessage(
-                      𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                      {
-                        caption: thumb,
+        const fn = Date.now() / 10000;
+        const filename = fn.toString();
+        yta(arg[0]).then(async (gotResp) => {
+          const { dl_link, thumb, title, filesizeF, filesize } = gotResp;
+          axios
+            .get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
+            .then((alpha) => {
+              if (Number(filesize) >= 100000) {
+                return ӄʀǟӄɨռʐ
+                  .sendMessage(
+                    𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                    {
+                      caption: thumb,
+                    },
+                    MessageType.image,
+                    {
+                      quoted: chat,
+                      contextInfo: {
+                        mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
                       },
-                      MessageType.image,
-                      {
-                        quoted: chat,
-                        contextInfo: {
-                          mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
-                        },
-                        mimetype: Mimetype.png || Mimetype.jpeg,
-                        content: `*🍁爪𝖎𝖟𝖚ӄ𝖎™*
+                      mimetype: Mimetype.png || Mimetype.jpeg,
+                      content: `*🍁爪𝖎𝖟𝖚ӄ𝖎™*
 
 ⭕𝗔𝘂𝗱𝗶𝗼 •@${ꜱᴇɴᴅᴇʀeceived}, 𝗣𝗹𝗲𝗮𝘀𝗲 𝗖𝗵𝗼𝗼𝘀𝗲 𝗦𝗺𝗮𝗹𝗹𝗲𝗿 𝗙𝗶𝗹𝗲!
 
 🍻𝐓𝐢𝐭𝐥𝐞⤞ ${title}
 🥣𝐒𝐢𝐳𝐞⤞ ${filesizeF}`,
-                      }
-                    )
-                    .catch((ℓαвєяяσя) =>
-                      ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎)
-                    );
-                } else {
-                  PrivatesVideos.forEach(function () {
-                    Fetched = `⭕𝗔𝘂𝗱𝗶𝗼`;
-                    YouFetchers(filename, ꜱᴇɴᴅᴇʀɪᴅ, dl_link, Fetched);
-                  });
-                }
-              });
-          });
-        }
+                    }
+                  )
+                  .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
+              } else {
+                PrivatesVideos.forEach(function () {
+                  Fetched = `⭕𝗔𝘂𝗱𝗶𝗼`;
+                  YouFetchers(filename, ꜱᴇɴᴅᴇʀɪᴅ, dl_link, Fetched);
+                });
+              }
+            });
+        });
       }
     } catch (ℓαвєяяσя) {
       ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
