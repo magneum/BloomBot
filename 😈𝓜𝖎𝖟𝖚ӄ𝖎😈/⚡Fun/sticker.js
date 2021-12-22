@@ -21,58 +21,92 @@ module.exports = {
       var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
       var ꜱᴇɴᴅᴇʀᴄᴏɴꜰ = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
       `🐙============================================================================================================================<⚡>`;
-      const convertToSticker = async (imageId, replyChat) => {
-        try {
-          var SPath = await ӄʀǟӄɨռʐ.downloadAndSaveMediaMessage(
-            replyChat,
-            `./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/SPath_${imageId}_${ꜱᴇɴᴅᴇʀɪᴅ}`
-          );
-        } catch (ℓαвєяяσя) {
-          ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
-        }
-        if (𝓜𝖎𝖟𝖚ӄ𝖎.type === `image` || 𝓜𝖎𝖟𝖚ӄ𝖎.isReplyImage) {
-          ffmpeg(SPath)
-            .outputOptions([`-y`, `-vcodec libwebp`])
-            .videoFilters(
-              `scale=2000:2000:flags=lanczos:force_original_aspect_ratio=decrease,format=rgba,pad=2000:2000:(ow-iw)/2:(oh-ih)/2:color=#00000000,setsar=1`
-            )
-            .save(`./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/SDPath_${imageId}_${ꜱᴇɴᴅᴇʀɪᴅ}.webp`)
-            .on(`end`, async () => {
-              await ӄʀǟӄɨռʐ
-                .sendMessage(
-                  𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                  fs.readFileSync(
-                    `./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/SDPath_${imageId}_${ꜱᴇɴᴅᴇʀɪᴅ}.webp`
-                  ),
-                  MessageType.sticker,
-                  { quoted: chat }
-                )
-                .then(
-                  fs.unlinkSync(SPath),
-                  fs.unlinkSync(
-                    `./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/SDPath_${imageId}_${ꜱᴇɴᴅᴇʀɪᴅ}.webp`
-                  )
-                );
-            })
-            .on(`ℓαвєяяσя`, async (ℓαвєяяσя) => {
-              ℓιєηт.catch((ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
-            });
-          return;
-        }
-      };
-      `🐙============================================================================================================================<⚡>`;
-      if (𝓜𝖎𝖟𝖚ӄ𝖎.isImage) {
+      if (𝓜𝖎𝖟𝖚ӄ𝖎.isImage && 𝓜𝖎𝖟𝖚ӄ𝖎.type === "image") {
         var replyChatObject = {
           message: chat.message,
         };
         var imageId = chat.key.id;
-        convertToSticker(imageId, replyChatObject);
+        console.log(replyChatObject);
+        try {
+          await ӄʀǟӄɨռʐ
+            .downloadAndSaveMediaMessage(
+              replyChatObject,
+              `./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/non_replied_${imageId}`
+            )
+            .then(async () => {
+              ffmpeg(`./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/non_replied_${imageId}.jpeg`)
+                .outputOptions([`-y`, `-vcodec libwebp`])
+                .videoFilters(
+                  `scale=2000:2000:flags=lanczos:force_original_aspect_ratio=decrease`,
+                  `format=rgba`,
+                  `pad=2000:2000:(ow-iw)/2:(oh-ih)/2:color=#00000000,setsar=1`
+                )
+                .save(`./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/non_replied_${imageId}.webp`)
+                .on(`end`, async () => {
+                  await ӄʀǟӄɨռʐ
+                    .sendMessage(
+                      𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                      fs.readFileSync(
+                        `./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/non_replied_${imageId}.webp`
+                      ),
+                      MessageType.sticker,
+                      { quoted: chat }
+                    )
+                    .then(
+                      fs.unlinkSync(`./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/non_replied_${imageId}.jpeg`),
+                      fs.unlinkSync(`./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/non_replied_${imageId}.webp`)
+                    );
+                })
+                .on(`ℓαвєяяσя`, async (ℓαвєяяσя) => {
+                  ℓιєηт.catch((ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
+                });
+            });
+        } catch (ℓαвєяяσя) {
+          ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
+        }
+        `🐙============================================================================================================================<⚡>`;
       } else if (𝓜𝖎𝖟𝖚ӄ𝖎.isReplyImage) {
         var replyChatObject = {
           message: chat.message.extendedTextMessage.contextInfo.quotedMessage,
         };
         var imageId = chat.message.extendedTextMessage.contextInfo.stanzaId;
-        convertToSticker(imageId, replyChatObject);
+        console.log(replyChatObject);
+        try {
+          await ӄʀǟӄɨռʐ
+            .downloadAndSaveMediaMessage(
+              replyChatObject,
+              `./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/replied_${imageId}`
+            )
+            .then(async () => {
+              ffmpeg(`./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/replied_${imageId}.jpeg`)
+                .outputOptions([`-y`, `-vcodec libwebp`])
+                .videoFilters(
+                  `scale=2000:2000:flags=lanczos:force_original_aspect_ratio=decrease`,
+                  `format=rgba`,
+                  `pad=2000:2000:(ow-iw)/2:(oh-ih)/2:color=#00000000,setsar=1`
+                )
+                .save(`./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/replied_${imageId}.webp`)
+                .on(`end`, async () => {
+                  await ӄʀǟӄɨռʐ
+                    .sendMessage(
+                      𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                      fs.readFileSync(`./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/replied_${imageId}.webp`),
+                      MessageType.sticker,
+                      { quoted: chat }
+                    )
+                    .then(
+                      fs.unlinkSync(`./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/replied_${imageId}.jpeg`),
+                      fs.unlinkSync(`./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/replied_${imageId}.webp`)
+                    );
+                })
+                .on(`ℓαвєяяσя`, async (ℓαвєяяσя) => {
+                  ℓιєηт.catch((ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
+                });
+            });
+        } catch (ℓαвєяяσя) {
+          ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
+        }
+        `🐙============================================================================================================================<⚡>`;
       } else {
         var 𝓜Usage = 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹.get(𝓜𝖎𝖟𝖚ӄ𝖎.commandName);
         𝓜𝓮𝓮ʍօʀɛ = 𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ === undefined ? `Null` : 𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ;
