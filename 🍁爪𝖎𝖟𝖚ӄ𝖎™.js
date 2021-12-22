@@ -266,7 +266,7 @@ ${update.desc}`,
       return await ӄʀǟӄɨռʐ
         .sendMessage(
           GroupID,
-          fs.readFileSync(`./𝓜𝖎𝖟𝖚ӄ𝖎/爪𝖎𝖟𝖚ӄ𝖎™.mp4`),
+          fs.readFileSync(`./𝓜𝖎𝖟𝖚ӄ𝖎/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`),
           MessageType.video,
           {
             mimetype: `video/gif`,
