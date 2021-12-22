@@ -50,7 +50,7 @@ module.exports = {
 │🎙️• ${ᴋᴇɪ}play: _download youtube audio under 100mb_
 │🎙️• ${ᴋᴇɪ}ytaudio: _download youtube audio under 100mb_
 │🎙️• ${ᴋᴇɪ}ytvideo: _download youtube video under 100mb_
-└───────────⭓
+└───────⭓
 
 *⧪➛𝘾𝙤𝙢𝙞𝙣𝙜 𝙎𝙤𝙤𝙣!*
 many many more!`,

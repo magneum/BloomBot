@@ -58,7 +58,7 @@ module.exports = {
 │🦄• ${ᴋᴇɪ}tts: _convert text to speech_
 │🦄• ${ᴋᴇɪ}weather: _get weather data_  
 │🦄• ${ᴋᴇɪ}ud: _urban dictionary for crazy people_
-└───────────⭓
+└───────⭓
 
 *⧪➛𝘾𝙤𝙢𝙞𝙣𝙜 𝙎𝙤𝙤𝙣!*
 many many more!`,
