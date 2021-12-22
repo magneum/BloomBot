@@ -5,6 +5,29 @@ const _𝔏𝔞𝔟_ = require(`../../🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/_𝔏𝔞�
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 const fs = require(`fs`);
+const moon = [
+  `bite`,
+  `blush`,
+  `bored`,
+  `confused`,
+  `cry`,
+  `cuddle`,
+  `goodnight`,
+  `happy`,
+  `highfive`,
+  `hug`,
+  `kiss`,
+  `pat`,
+  `poke`,
+  `sad`,
+  `slap`,
+  `smile`,
+  `thinking`,
+  `wave`,
+  `wink`,
+  `yes`,
+];
+const moonshine = moon[Math.floor(Math.random() * moon.length)];
 `🐙`;
 `🐙`;
 `🐙============================================================================================================================<⚡>`;
@@ -34,13 +57,13 @@ module.exports = {
       );
       const buttons = [
         {
-          buttonId: `${ᴋᴇɪ}smile`,
-          buttonText: { displayText: `${ᴋᴇɪ}smile` },
+          buttonId: `${ᴋᴇɪ}repo`,
+          buttonText: { displayText: `${ᴋᴇɪ}repo` },
           type: 1,
         },
         {
-          buttonId: `${ᴋᴇɪ}repo`,
-          buttonText: { displayText: `${ᴋᴇɪ}repo` },
+          buttonId: `${ᴋᴇɪ}bugreport`,
+          buttonText: { displayText: `${ᴋᴇɪ}bugreport` },
           type: 1,
         },
       ];
