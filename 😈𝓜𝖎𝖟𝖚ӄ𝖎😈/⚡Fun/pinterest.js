@@ -19,7 +19,7 @@ module.exports = {
   async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
     try {
       var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
-      var ꜱᴇɴᴅᴇʀᴄᴏɴꜰ = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
+      var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
       const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
       const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
       console.log("𝐓𝐨𝐩𝐢𝐜: " + FinalName);
@@ -34,7 +34,7 @@ module.exports = {
             chat,
             𝓜𝖎𝖟𝖚ӄ𝖎,
             ꜱᴇɴᴅᴇʀɪᴅ,
-            ꜱᴇɴᴅᴇʀᴄᴏɴꜰ,
+            ꜱᴇɴᴅᴇʀeceived,
             𝓜𝖎𝖟𝖚ӄ𝖎.commandName,
             𝓜𝓮𝓮ʍօʀɛ
           )
@@ -51,7 +51,7 @@ module.exports = {
           mimetype: Mimetype.png,
           caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
 
-•@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
+•@${ꜱᴇɴᴅᴇʀeceived},
 ┌────⭓ 
 │⦿ 𝐓𝐨𝐩𝐢𝐜: *${FinalName}*
 │⦿ 𝐒𝐞𝐚𝐫𝐜𝐡𝐞𝐝𝐅𝐨𝐫: ${arg.join(` `)}

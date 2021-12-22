@@ -34,7 +34,7 @@ module.exports = {
             chat,
             𝓜𝖎𝖟𝖚ӄ𝖎,
             ꜱᴇɴᴅᴇʀɪᴅ,
-            ꜱᴇɴᴅᴇʀᴄᴏɴꜰ,
+            ꜱᴇɴᴅᴇʀeceived,
             𝓜𝖎𝖟𝖚ӄ𝖎.commandName,
             𝓜𝓮𝓮ʍօʀɛ
           )

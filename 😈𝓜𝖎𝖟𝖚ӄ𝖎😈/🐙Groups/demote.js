@@ -27,7 +27,7 @@ For example-
     try {
       `🐙============================================================================================================================<⚡>`;
       var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
-      var ꜱᴇɴᴅᴇʀᴄᴏɴꜰ = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
+      var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
       `🐙============================================================================================================================<⚡>`;
       if (!𝓜𝖎𝖟𝖚ӄ𝖎.isGroup) {
         ӄʀǟӄɨռʐ
@@ -35,7 +35,7 @@ For example-
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
             `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
 
-•@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
+•@${ꜱᴇɴᴅᴇʀeceived},
 This command is only applicable in a group chat.`,
             MessageType.text,
             { quoted: chat }
@@ -67,7 +67,7 @@ This command is only applicable in a group chat.`,
           },
         ];
         const buttonMessage = {
-          contentText: `@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}, ❌ You Are Not Allowed!
+          contentText: `@${ꜱᴇɴᴅᴇʀeceived}, ❌ You Are Not Allowed!
 
 *🎊Groups:* Admins & Developers!
 *🫒Private:* Everyone`,
@@ -104,7 +104,7 @@ This command is only applicable in a group chat.`,
               },
               mimetype: Mimetype.png,
               caption: `
-⚠️𝗘𝗿𝗿𝗼𝗿: @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}, *ʏᴏᴜ need ᴛᴏ ᴍᴀᴋᴇ ᴍᴇ ᴀᴅᴍɪɴ ꜰɪʀꜱᴛ*`,
+⚠️𝗘𝗿𝗿𝗼𝗿: @${ꜱᴇɴᴅᴇʀeceived}, *ʏᴏᴜ need ᴛᴏ ᴍᴀᴋᴇ ᴍᴇ ᴀᴅᴍɪɴ ꜰɪʀꜱᴛ*`,
             }
           )
           .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
@@ -116,7 +116,7 @@ This command is only applicable in a group chat.`,
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
             `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
 
-•@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
+•@${ꜱᴇɴᴅᴇʀeceived},
 Reply/tag/enter contact number of the person to be demoted.`,
             MessageType.text,
             {
@@ -158,7 +158,7 @@ Reply/tag/enter contact number of the person to be demoted.`,
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
             `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
 
-•@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
+•@${ꜱᴇɴᴅᴇʀeceived},
 ${contact} is the owner of the group`,
             MessageType.text,
             {
@@ -181,7 +181,7 @@ ${contact} is the owner of the group`,
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
 
-•@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
+•@${ꜱᴇɴᴅᴇʀeceived},
 ${contact} is demoted from admin`,
               MessageType.text,
               {
@@ -199,7 +199,7 @@ ${contact} is demoted from admin`,
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
 
-•@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
+•@${ꜱᴇɴᴅᴇʀeceived},
 ${contact} was not an admin`,
               MessageType.text,
               {
@@ -221,7 +221,7 @@ ${contact} was not an admin`,
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
 
-•@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},Person not found.`,
+•@${ꜱᴇɴᴅᴇʀeceived},Person not found.`,
               MessageType.text,
               {
                 quoted: chat,

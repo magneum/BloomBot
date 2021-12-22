@@ -22,7 +22,7 @@ module.exports = {
     try {
       `🐙============================================================================================================================<⚡>`;
       var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
-      var ꜱᴇɴᴅᴇʀᴄᴏɴꜰ = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
+      var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
       `🐙============================================================================================================================<⚡>`;
       console.log(𝓜𝖎𝖟𝖚ӄ𝖎.isSenderSUDO);
       if (
@@ -47,7 +47,7 @@ module.exports = {
           },
         ];
         const buttonMessage = {
-          contentText: `@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}, ❌ You Are Not Allowed!
+          contentText: `@${ꜱᴇɴᴅᴇʀeceived}, ❌ You Are Not Allowed!
 
 *🎊Groups:* Admins & Developers!
 *🫒Private:* Everyone`,
@@ -84,7 +84,7 @@ module.exports = {
               },
               mimetype: Mimetype.png,
               caption: `
-⚠️𝗘𝗿𝗿𝗼𝗿: @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}, *ʏᴏᴜ need ᴛᴏ ᴍᴀᴋᴇ ᴍᴇ ᴀᴅᴍɪɴ ꜰɪʀꜱᴛ*`,
+⚠️𝗘𝗿𝗿𝗼𝗿: @${ꜱᴇɴᴅᴇʀeceived}, *ʏᴏᴜ need ᴛᴏ ᴍᴀᴋᴇ ᴍᴇ ᴀᴅᴍɪɴ ꜰɪʀꜱᴛ*`,
             }
           )
           .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
@@ -101,7 +101,7 @@ module.exports = {
             chat,
             𝓜𝖎𝖟𝖚ӄ𝖎,
             ꜱᴇɴᴅᴇʀɪᴅ,
-            ꜱᴇɴᴅᴇʀᴄᴏɴꜰ,
+            ꜱᴇɴᴅᴇʀeceived,
             𝓜𝖎𝖟𝖚ӄ𝖎.commandName,
             𝓜𝓮𝓮ʍօʀɛ
           )

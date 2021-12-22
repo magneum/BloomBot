@@ -27,7 +27,7 @@ Do note, the setantilink option is still enabled after you use the delete option
     try {
       `🐙============================================================================================================================<⚡>`;
       var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
-      var ꜱᴇɴᴅᴇʀᴄᴏɴꜰ = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
+      var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
       `🐙============================================================================================================================<⚡>`;
       console.log(𝓜𝖎𝖟𝖚ӄ𝖎.isSenderSUDO);
       if (
@@ -52,7 +52,7 @@ Do note, the setantilink option is still enabled after you use the delete option
           },
         ];
         const buttonMessage = {
-          contentText: `@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}, ❌ You Are Not Allowed!
+          contentText: `@${ꜱᴇɴᴅᴇʀeceived}, ❌ You Are Not Allowed!
 
 *🎊Groups:* Admins & Developers!
 *🫒Private:* Everyone`,
@@ -89,7 +89,7 @@ Do note, the setantilink option is still enabled after you use the delete option
               },
               mimetype: Mimetype.png,
               caption: `
-⚠️𝗘𝗿𝗿𝗼𝗿: @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}, *ʏᴏᴜ need ᴛᴏ ᴍᴀᴋᴇ ᴍᴇ ᴀᴅᴍɪɴ ꜰɪʀꜱᴛ*`,
+⚠️𝗘𝗿𝗿𝗼𝗿: @${ꜱᴇɴᴅᴇʀeceived}, *ʏᴏᴜ need ᴛᴏ ᴍᴀᴋᴇ ᴍᴇ ᴀᴅᴍɪɴ ꜰɪʀꜱᴛ*`,
             }
           )
           .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
@@ -141,7 +141,7 @@ Set an Antilink message first.`,
                 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
                 `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
 
-@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
+@${ꜱᴇɴᴅᴇʀeceived},
 Antilink are not enabled!`,
                 MessageType.text,
                 {
@@ -162,7 +162,7 @@ Antilink are not enabled!`,
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
 
-@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
+@${ꜱᴇɴᴅᴇʀeceived},
 Antilink are enabled!`,
               MessageType.text,
               {
@@ -186,7 +186,7 @@ Antilink are enabled!`,
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
 
-@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
+@${ꜱᴇɴᴅᴇʀeceived},
 Antilink messsage has been disabled.`,
               MessageType.text,
               {
@@ -208,7 +208,7 @@ Antilink messsage has been disabled.`,
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
 
-@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
+@${ꜱᴇɴᴅᴇʀeceived},
 Antilink messsage has been enabled.`,
               MessageType.text,
               {
@@ -233,7 +233,7 @@ Antilink messsage has been enabled.`,
                 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
                 `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
 
-@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
+@${ꜱᴇɴᴅᴇʀeceived},
 Set a Antilink message first.`,
                 MessageType.text,
                 {
@@ -255,7 +255,7 @@ Set a Antilink message first.`,
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
 
-@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
+@${ꜱᴇɴᴅᴇʀeceived},
 Antilink messsage deleted.`,
               MessageType.text,
               {
@@ -282,7 +282,7 @@ Antilink messsage deleted.`,
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
 
-@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
+@${ꜱᴇɴᴅᴇʀeceived},
 Antilink messsage updated and enabled.`,
               MessageType.text,
               {
@@ -303,7 +303,7 @@ Antilink messsage updated and enabled.`,
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
 
-@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
+@${ꜱᴇɴᴅᴇʀeceived},
 Antilink messsage updated and enabled.`,
               MessageType.text,
               {

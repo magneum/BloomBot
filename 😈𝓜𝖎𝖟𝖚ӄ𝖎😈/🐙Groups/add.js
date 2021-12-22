@@ -23,7 +23,7 @@ ${ᴋᴇɪ}add 910000000000`,
   async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
     try {
       var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
-      var ꜱᴇɴᴅᴇʀᴄᴏɴꜰ = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
+      var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
       try {
         `🐙============================================================================================================================<⚡>`;
         console.log(𝓜𝖎𝖟𝖚ӄ𝖎.isSenderSUDO);
@@ -49,7 +49,7 @@ ${ᴋᴇɪ}add 910000000000`,
             },
           ];
           const buttonMessage = {
-            contentText: `@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}, ❌ You Are Not Allowed!
+            contentText: `@${ꜱᴇɴᴅᴇʀeceived}, ❌ You Are Not Allowed!
 
 *🎊Groups:* Admins & Developers!
 *🫒Private:* Everyone`,
@@ -86,7 +86,7 @@ ${ᴋᴇɪ}add 910000000000`,
                 },
                 mimetype: Mimetype.png,
                 caption: `
-⚠️𝗘𝗿𝗿𝗼𝗿: @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}, *ʏᴏᴜ need ᴛᴏ ᴍᴀᴋᴇ ᴍᴇ ᴀᴅᴍɪɴ ꜰɪʀꜱᴛ*`,
+⚠️𝗘𝗿𝗿𝗼𝗿: @${ꜱᴇɴᴅᴇʀeceived}, *ʏᴏᴜ need ᴛᴏ ᴍᴀᴋᴇ ᴍᴇ ᴀᴅᴍɪɴ ꜰɪʀꜱᴛ*`,
               }
             )
             .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
@@ -116,7 +116,7 @@ For instance,
               chat,
               𝓜𝖎𝖟𝖚ӄ𝖎,
               ꜱᴇɴᴅᴇʀɪᴅ,
-              ꜱᴇɴᴅᴇʀᴄᴏɴꜰ,
+              ꜱᴇɴᴅᴇʀeceived,
               𝓜𝖎𝖟𝖚ӄ𝖎.commandName,
               𝓜𝓮𝓮ʍօʀɛ
             )
