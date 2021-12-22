@@ -46,7 +46,7 @@ module.exports = {
         ];
         const buttonMessage = {
           contentText: `@${ꜱᴇɴᴅᴇʀeceived}, *ʏᴏᴜ ᴅᴏɴ'ᴛ ꜱᴇᴇᴍ ᴛᴏ ʙᴇ ᴀᴅᴍɪɴ..*`,
-          footerText: `*🍁𝓜𝖎𝖟𝖚ӄ𝖎™*`,
+          footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎™*`,
           buttons: buttons,
           headerType: 4,
           imageMessage: media.message.imageMessage,

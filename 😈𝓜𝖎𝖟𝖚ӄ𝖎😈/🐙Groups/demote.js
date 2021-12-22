@@ -32,7 +32,7 @@ For example-
         ӄʀǟӄɨռʐ
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            `*🍁𝓜𝖎𝖟𝖚ӄ𝖎™*
+            `*🍁爪𝖎𝖟𝖚ӄ𝖎™*
 
 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 This command is only applicable in a group chat.`,
@@ -70,7 +70,7 @@ This command is only applicable in a group chat.`,
 
 *🎊Groups:* Admins & Developers!
 *🫒Private:* Everyone`,
-          footerText: `*🍁𝓜𝖎𝖟𝖚ӄ𝖎™*`,
+          footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎™*`,
           buttons: buttons,
           headerType: 4,
           imageMessage: media.message.imageMessage,
@@ -113,7 +113,7 @@ This command is only applicable in a group chat.`,
         ӄʀǟӄɨռʐ
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            `*🍁𝓜𝖎𝖟𝖚ӄ𝖎™*
+            `*🍁爪𝖎𝖟𝖚ӄ𝖎™*
 
 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 Reply/tag/enter contact number of the person to be demoted.`,
@@ -155,7 +155,7 @@ Reply/tag/enter contact number of the person to be demoted.`,
         ӄʀǟӄɨռʐ
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            `*🍁𝓜𝖎𝖟𝖚ӄ𝖎™*
+            `*🍁爪𝖎𝖟𝖚ӄ𝖎™*
 
 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 ${contact} is the owner of the group`,
@@ -178,7 +178,7 @@ ${contact} is the owner of the group`,
           await ӄʀǟӄɨռʐ
             .sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              `*🍁𝓜𝖎𝖟𝖚ӄ𝖎™*
+              `*🍁爪𝖎𝖟𝖚ӄ𝖎™*
 
 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 ${contact} is demoted from admin`,
@@ -196,7 +196,7 @@ ${contact} is demoted from admin`,
           await ӄʀǟӄɨռʐ
             .sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              `*🍁𝓜𝖎𝖟𝖚ӄ𝖎™*
+              `*🍁爪𝖎𝖟𝖚ӄ𝖎™*
 
 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 ${contact} was not an admin`,
@@ -218,7 +218,7 @@ ${contact} was not an admin`,
           await ӄʀǟӄɨռʐ
             .sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              `*🍁𝓜𝖎𝖟𝖚ӄ𝖎™*
+              `*🍁爪𝖎𝖟𝖚ӄ𝖎™*
 
 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},Person not found.`,
               MessageType.text,

@@ -31,7 +31,7 @@ For example-
       if (!𝓜𝖎𝖟𝖚ӄ𝖎.isGroup) {
         ӄʀǟӄɨռʐ.sendMessage(
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-          `*🍁𝓜𝖎𝖟𝖚ӄ𝖎™*
+          `*🍁爪𝖎𝖟𝖚ӄ𝖎™*
 
 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 This command is only applicable for group chats.`,
@@ -73,7 +73,7 @@ This command is only applicable for group chats.`,
 
 *🎊Groups:* Admins & Developers!
 *🫒Private:* Everyone`,
-          footerText: `*🍁𝓜𝖎𝖟𝖚ӄ𝖎™*`,
+          footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎™*`,
           buttons: buttons,
           headerType: 4,
           imageMessage: media.message.imageMessage,
@@ -115,7 +115,7 @@ This command is only applicable for group chats.`,
       if (!𝓜𝖎𝖟𝖚ӄ𝖎.isReply && typeof arg[0] == `undefined`) {
         ӄʀǟӄɨռʐ.sendMessage(
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-          `*🍁𝓜𝖎𝖟𝖚ӄ𝖎™*
+          `*🍁爪𝖎𝖟𝖚ӄ𝖎™*
 
 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 Reply/tag/enter contact number of the person to be demoted.`,
@@ -153,7 +153,7 @@ Reply/tag/enter contact number of the person to be demoted.`,
           ӄʀǟӄɨռʐ.groupMakeAdmin(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, arr);
           ӄʀǟӄɨռʐ.sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            `*🍁𝓜𝖎𝖟𝖚ӄ𝖎™*
+            `*🍁爪𝖎𝖟𝖚ӄ𝖎™*
 
 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 ${contact} promoted to admin*`,
@@ -168,7 +168,7 @@ ${contact} promoted to admin*`,
         } else {
           ӄʀǟӄɨռʐ.sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            `*🍁𝓜𝖎𝖟𝖚ӄ𝖎™*
+            `*🍁爪𝖎𝖟𝖚ӄ𝖎™*
 
 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 ${contact} is already an admin`,
@@ -188,7 +188,7 @@ ${contact} is already an admin`,
           await ӄʀǟӄɨռʐ
             .sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              `*🍁𝓜𝖎𝖟𝖚ӄ𝖎™*
+              `*🍁爪𝖎𝖟𝖚ӄ𝖎™*
 
 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 Person not found.`,

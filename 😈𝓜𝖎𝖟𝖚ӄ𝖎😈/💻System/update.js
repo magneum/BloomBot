@@ -34,7 +34,7 @@ module.exports = {
           contextInfo: {
             mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
           },
-          caption: `*🍁𝓜𝖎𝖟𝖚ӄ𝖎™*
+          caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎™*
 
 •@${ꜱᴇɴᴅᴇʀeceived},
 Nice Try But Only My *Owner* Can Use *OWNER_ONLY* Commands!`,
@@ -54,10 +54,10 @@ Nice Try But Only My *Owner* Can Use *OWNER_ONLY* Commands!`,
             contextInfo: {
               mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
             },
-            caption: `*🍁𝓜𝖎𝖟𝖚ӄ𝖎™*
+            caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎™*
 
 •@${ꜱᴇɴᴅᴇʀeceived},
-ʏᴏᴜʀ *🍁𝓜𝖎𝖟𝖚ӄ𝖎™* ɪꜱ ɴᴏᴡ ᴜᴘᴅᴀᴛɪɴɢ.ᴘʟᴇᴀꜱᴇ ᴡᴀɪᴛ ꜰᴏʀ 30-60ꜱᴇᴄ`,
+ʏᴏᴜʀ *🍁爪𝖎𝖟𝖚ӄ𝖎™* ɪꜱ ɴᴏᴡ ᴜᴘᴅᴀᴛɪɴɢ.ᴘʟᴇᴀꜱᴇ ᴡᴀɪᴛ ꜰᴏʀ 30-60ꜱᴇᴄ`,
           }
         )
         .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));

@@ -53,7 +53,7 @@ module.exports = {
 
 *🎊Groups:* Admins & Developers!
 *🫒Private:* Everyone`,
-          footerText: `*🍁𝓜𝖎𝖟𝖚ӄ𝖎™*`,
+          footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎™*`,
           buttons: buttons,
           headerType: 4,
           imageMessage: media.message.imageMessage,
@@ -108,7 +108,7 @@ module.exports = {
           },
         ];
         const buttonMessage = {
-          contentText: `*🍁𝓜𝖎𝖟𝖚ӄ𝖎™*
+          contentText: `*🍁爪𝖎𝖟𝖚ӄ𝖎™*
 
 ┌────⭓
 │⚡ 𝐀𝐬𝐤𝐞𝐝𝐁𝐲: @${ꜱᴇɴᴅᴇʀeceived},
@@ -126,7 +126,7 @@ module.exports = {
 🖊️Description : ${prn.desc}
 📥Download: https://tikporntok.com/${prn.video}
 🫁Source : https://tikporntok.com/${prn.source}`,
-          footerText: `*🍁𝓜𝖎𝖟𝖚ӄ𝖎™*`,
+          footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎™*`,
           buttons: buttons,
           headerType: 5,
           videoMessage: media.message.videoMessage,

@@ -27,7 +27,7 @@ module.exports = {
         ӄʀǟӄɨռʐ
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            `*🍁𝓜𝖎𝖟𝖚ӄ𝖎™*\n\ncommand only applicable in a group chat.`,
+            `*🍁爪𝖎𝖟𝖚ӄ𝖎™*\n\ncommand only applicable in a group chat.`,
             MessageType.text,
             { quoted: chat }
           )
@@ -39,7 +39,7 @@ module.exports = {
         ӄʀǟӄɨռʐ
           .sendMessage(
             chat.message.extendedTextMessage.contextInfo.participant,
-            `*🍁𝓜𝖎𝖟𝖚ӄ𝖎™*\n\nhttps://chat.whatsapp.com/` + code,
+            `*🍁爪𝖎𝖟𝖚ӄ𝖎™*\n\nhttps://chat.whatsapp.com/` + code,
             MessageType.text,
             { quoted: chat }
           )
@@ -57,7 +57,7 @@ module.exports = {
       ӄʀǟӄɨռʐ
         .sendMessage(
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-          `*🍁𝓜𝖎𝖟𝖚ӄ𝖎™*\n\nhttps://chat.whatsapp.com/` + code,
+          `*🍁爪𝖎𝖟𝖚ӄ𝖎™*\n\nhttps://chat.whatsapp.com/` + code,
           MessageType.text,
           { quoted: chat }
         )

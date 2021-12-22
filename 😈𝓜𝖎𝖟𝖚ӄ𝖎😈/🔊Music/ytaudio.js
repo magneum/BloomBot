@@ -4,14 +4,11 @@ const { yta } = require(`../../🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/youmaker`);
 const _𝔏𝔞𝔟_ = require(`../../🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/_𝔏𝔞𝔟_`);
 const ℓιєηт = require(`../../🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/catch`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
-const getVideoId = require(`get-video-id`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 const request = require("request");
-const nowbyk = Date.now() / 10000;
 const yts = require(`yt-search`);
 const axios = require(`axios`);
 const fs = require(`fs`);
-const now = Date.now();
 let mime = ``;
 const RegexYouTube =
   /(?:http(?:s|):\/\/|)(?:(?:www\.|)youtube(?:\-nocookie|)\.com\/(?:watch\?.*(?:|\&)v=|embed\/|v\/)|youtu\.be\/)([-_0-9A-Za-z]{11})/;
@@ -29,7 +26,6 @@ module.exports = {
     try {
       `🐙============================================================================================================================<⚡>`;
       const ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
-      const { id } = getVideoId(arg[0]);
       const LinkForGroups = await yts(arg.join(` `));
       const PrivatesVideos = LinkForGroups.videos.slice(0, 1);
       const LinkForPrivates = await yts(arg.join(` `));
@@ -71,17 +67,16 @@ module.exports = {
           await ӄʀǟӄɨռʐ
             .sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              `*🍁𝓜𝖎𝖟𝖚ӄ𝖎™*
+              `*🍁爪𝖎𝖟𝖚ӄ𝖎™*
 
 ⭕𝗔𝘂𝗱𝗶𝗼 •@${ꜱᴇɴᴅᴇʀeceived}, 
-𝗣𝗹𝗲𝗮𝘀𝗲 𝗖𝗵𝗲𝗰𝗸 𝗬𝗼𝘂𝗿 𝗣𝗿𝗶𝘃𝗮𝘁𝗲 𝗳𝗼𝗿 𝘁𝗵𝗲 𝗱𝗲𝗹𝗶𝘃𝗲𝗿𝘆 𝗼𝗳 𝗔𝘂𝗱𝗶𝗼!
+𝗣𝗹𝗲𝗮𝘀𝗲 𝗖𝗵𝗲𝗰𝗸 𝗬𝗼𝘂𝗿 𝗣𝗿𝗶𝘃𝗮𝘁𝗲 𝗗𝗠 𝗳𝗼𝗿 𝘁𝗵𝗲 𝗱𝗲𝗹𝗶𝘃𝗲𝗿𝘆 𝗼𝗳 𝗔𝘂𝗱𝗶𝗼!
 
 🍻𝐓𝐢𝐭𝐥𝐞⤞ ${youfound.title}
 🙈𝐕𝐢𝐞𝐰𝐬⤞ ${youfound.views}
 ⏰𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧⤞ ${youfound.timestamp}
 ✒️𝐀𝐮𝐭𝐡𝐨𝐫⤞ ${youfound.author.name}
-🔗𝐋𝐢𝐧𝐤⤞ ${youfound.url}
-📥𝐖𝐞𝐛-𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝⤞ https://www.youtubepp.com/watch?v=${id}`,
+🔗𝐋𝐢𝐧𝐤⤞ ${youfound.url}`,
               MessageType.text,
               {
                 quoted: chat,
@@ -135,7 +130,8 @@ module.exports = {
           });
         };
         if (!𝓜𝖎𝖟𝖚ӄ𝖎.isGroup) {
-          const filename = `./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/${now}_ytaudio_private_${nowbyk.toString()}${ꜱᴇɴᴅᴇʀɪᴅ}`;
+          const fn = Date.now() / 10000;
+          const filename = fn.toString();
           yta(arg[0]).then(async (gotResp) => {
             const { dl_link, thumb, title, filesize } = gotResp;
             axios
@@ -155,13 +151,12 @@ module.exports = {
                           mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
                         },
                         mimetype: Mimetype.png || Mimetype.jpeg,
-                        content: `*🍁𝓜𝖎𝖟𝖚ӄ𝖎™*
+                        content: `*🍁爪𝖎𝖟𝖚ӄ𝖎™*
 
 ⭕𝗔𝘂𝗱𝗶𝗼 •@${ꜱᴇɴᴅᴇʀeceived}, 
 𝗣𝗹𝗲𝗮𝘀𝗲 𝗖𝗵𝗼𝗼𝘀𝗲 𝗦𝗺𝗮𝗹𝗹𝗲𝗿 𝗙𝗶𝗹𝗲. 𝗠𝗮𝘅 𝗟𝗶𝗺𝗶𝘁 (𝟭𝟬𝟬𝗺𝗯)!
 
-🍻𝐓𝐢𝐭𝐥𝐞⤞ ${title}
-📥𝐖𝐞𝐛-𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝⤞ https://www.youtubepp.com/watch?v=${id}`,
+🍻𝐓𝐢𝐭𝐥𝐞⤞ ${title}`,
                       }
                     )
                     .catch((ℓαвєяяσя) =>
@@ -178,7 +173,8 @@ module.exports = {
         }
         `🐙============================================================================================================================<⚡>`;
         if (𝓜𝖎𝖟𝖚ӄ𝖎.isGroup) {
-          const filename = `./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/${now}_ytaudio_group_${nowbyk.toString()}${ꜱᴇɴᴅᴇʀɪᴅ}${ꜱᴇɴᴅᴇʀeceived}`;
+          const fn = Date.now() / 10000;
+          const filename = fn.toString();
           yta(arg[0]).then(async (gotResp) => {
             const { dl_link, thumb, title, filesize } = gotResp;
             axios
@@ -198,13 +194,12 @@ module.exports = {
                           mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
                         },
                         mimetype: Mimetype.png || Mimetype.jpeg,
-                        content: `*🍁𝓜𝖎𝖟𝖚ӄ𝖎™*
+                        content: `*🍁爪𝖎𝖟𝖚ӄ𝖎™*
 
 ⭕𝗔𝘂𝗱𝗶𝗼 •@${ꜱᴇɴᴅᴇʀeceived}, 
 𝗣𝗹𝗲𝗮𝘀𝗲 𝗖𝗵𝗼𝗼𝘀𝗲 𝗦𝗺𝗮𝗹𝗹𝗲𝗿 𝗙𝗶𝗹𝗲. 𝗠𝗮𝘅 𝗟𝗶𝗺𝗶𝘁 (𝟭𝟬𝟬𝗺𝗯)!
 
-🍻𝐓𝐢𝐭𝐥𝐞⤞ ${title}
-📥𝐖𝐞𝐛-𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝⤞ https://www.youtubepp.com/watch?v=${id}`,
+🍻𝐓𝐢𝐭𝐥𝐞⤞ ${title}`,
                       }
                     )
                     .catch((ℓαвєяяσя) =>

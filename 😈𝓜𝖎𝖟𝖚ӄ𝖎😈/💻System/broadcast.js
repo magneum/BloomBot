@@ -45,7 +45,7 @@ module.exports = {
           contentText: `@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}, ❌ You Are Not Allowed!
 
 only *𝓜𝖎𝖟𝖚ӄ𝖎-Owners* can use this feature`,
-          footerText: `*🍁𝓜𝖎𝖟𝖚ӄ𝖎™*`,
+          footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎™*`,
           buttons: buttons,
           headerType: 4,
           imageMessage: media.message.imageMessage,
@@ -95,7 +95,7 @@ only *𝓜𝖎𝖟𝖚ӄ𝖎-Owners* can use this feature`,
             {
               contentText: `📜𝗦𝗽𝗲𝗰𝗶𝗮𝗹 𝗕𝗿𝗼𝗮𝗱𝗰𝗮𝘀𝘁
 ${arg.join(` `)}`,
-              footerText: `*🍁𝓜𝖎𝖟𝖚ӄ𝖎™* ${vers.vers}`,
+              footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎™* ${vers.vers}`,
               buttons: [
                 {
                   buttonId: `${ᴋᴇɪ}help`,
@@ -128,7 +128,7 @@ ${arg.join(` `)}`,
       await ӄʀǟӄɨռʐ
         .sendMessage(
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-          `*🍁𝓜𝖎𝖟𝖚ӄ𝖎™*
+          `*🍁爪𝖎𝖟𝖚ӄ𝖎™*
 
 •@${ꜱᴇɴᴅᴇʀeceived}, 𝗕𝗿𝗼𝗮𝗱𝗖𝗮𝘀𝘁𝗶𝗻𝗴 𝗙𝗶𝗻𝗶𝘀𝗵𝗲𝗱!`,
           MessageType.text,

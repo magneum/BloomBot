@@ -51,7 +51,7 @@ module.exports = {
 
 *🎊Groups:* Admins & Developers!
 *🫒Private:* Everyone`,
-          footerText: `*🍁𝓜𝖎𝖟𝖚ӄ𝖎™*`,
+          footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎™*`,
           buttons: buttons,
           headerType: 4,
           imageMessage: media.message.imageMessage,
@@ -180,7 +180,7 @@ module.exports = {
                     quoted: chat,
                     mimetype: Mimetype.jpeg || Mimetype.png,
                     contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ, Receiver] },
-                    caption: `*🍁𝓜𝖎𝖟𝖚ӄ𝖎™*
+                    caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎™*
 
 @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ} ᴋɪᴄᴋᴇᴅ @${personreceived} ᴏᴜᴛᴛᴀ ᴛʜᴇ ɢʀᴏᴜᴘ!`,
                   }
@@ -209,7 +209,7 @@ module.exports = {
                     quoted: chat,
                     mimetype: Mimetype.jpeg || Mimetype.png,
                     contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
-                    caption: `*🍁𝓜𝖎𝖟𝖚ӄ𝖎™*
+                    caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎™*
 
 @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ} ᴋɪᴄᴋᴇᴅ ᴛʜᴀᴛ ᴘᴇʀꜱᴏɴ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ!`,
                   }
@@ -292,7 +292,7 @@ module.exports = {
                   quoted: chat,
                   mimetype: Mimetype.jpeg || Mimetype.png,
                   contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ, Receiver] },
-                  caption: `*🍁𝓜𝖎𝖟𝖚ӄ𝖎™*
+                  caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎™*
 
 @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ} ᴋɪᴄᴋᴇᴅ @${personreceived} ᴏᴜᴛᴛᴀ ᴛʜᴇ ɢʀᴏᴜᴘ!`,
                 }
@@ -319,7 +319,7 @@ module.exports = {
                   quoted: chat,
                   mimetype: Mimetype.jpeg || Mimetype.png,
                   contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
-                  caption: `*🍁𝓜𝖎𝖟𝖚ӄ𝖎™*
+                  caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎™*
 
 @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}, ᴋɪᴄᴋᴇᴅ ᴛʜᴀᴛ ᴘᴇʀꜱᴏɴ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ!`,
                 }
