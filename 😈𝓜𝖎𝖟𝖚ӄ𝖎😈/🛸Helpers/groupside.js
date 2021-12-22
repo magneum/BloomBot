@@ -50,6 +50,7 @@ module.exports = {
 │🔰• ${ᴋᴇɪ}invite: _get group invite link_
 │🔰• ${ᴋᴇɪ}admins: _get all admins of a group_
 │🔰• ${ᴋᴇɪ}disappear: _toggle disappear message in group_
+│🔰• ${ᴋᴇɪ}getdesc: _get group description_
 │🔰• ${ᴋᴇɪ}groupdp: _change group profile picture_
 │🔰• ${ᴋᴇɪ}kick: _ʀᴇᴍᴏᴠᴇ ᴀ ᴘᴇʀꜱᴏɴ ꜰʀᴏᴍ ᴀ ɢʀᴏᴜᴘ_
 │🔰• ${ᴋᴇɪ}tagall: _tag everyone in group_
