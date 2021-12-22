@@ -7,6 +7,7 @@ var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 const fs = require(`fs`);
 const os = require("os");
+const vers = require(`../../package.json`);
 const moon = [
   `bite`,
   `blush`,
@@ -82,7 +83,7 @@ module.exports = {
 
 🌱𝗣𝗿𝗲𝘀𝘀 𝗯𝗲𝗹𝗼𝘄 𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗦𝘁𝗮𝗿𝘁 𝘂𝘀𝗶𝗻𝗴 𝗠𝗶𝘇𝘂𝗸𝗶👇🏽‍
 `,
-            footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎™*`,
+            footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*`,
             buttons: [
               {
                 buttonId: `${ᴋᴇɪ}list`,

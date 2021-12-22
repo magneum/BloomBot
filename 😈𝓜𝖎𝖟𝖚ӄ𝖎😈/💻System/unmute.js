@@ -10,6 +10,7 @@ var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 const Downloader = require(`nodejs-file-downloader`);
 const fs = require(`fs`);
+const vers = require(`../../package.json`);
 `🐙`;
 `🐙`;
 `🐙============================================================================================================================<⚡>`;
@@ -46,7 +47,7 @@ module.exports = {
         ];
         const buttonMessage = {
           contentText: `@${ꜱᴇɴᴅᴇʀeceived}, *ʏᴏᴜ ᴅᴏɴ'ᴛ ꜱᴇᴇᴍ ᴛᴏ ʙᴇ ᴀᴅᴍɪɴ..*`,
-          footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎™*`,
+          footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*`,
           buttons: buttons,
           headerType: 4,
           imageMessage: media.message.imageMessage,

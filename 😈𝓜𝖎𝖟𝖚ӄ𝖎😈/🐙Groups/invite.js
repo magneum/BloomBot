@@ -6,6 +6,7 @@ var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 const Downloader = require(`nodejs-file-downloader`);
 const fs = require(`fs`);
+const vers = require(`../../package.json`);
 `🐙`;
 `🐙`;
 `🐙============================================================================================================================<⚡>`;
@@ -27,7 +28,7 @@ module.exports = {
         ӄʀǟӄɨռʐ
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            `*🍁爪𝖎𝖟𝖚ӄ𝖎™*\n\ncommand only applicable in a group chat.`,
+            `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*\n\ncommand only applicable in a group chat.`,
             MessageType.text,
             { quoted: chat }
           )
@@ -39,7 +40,7 @@ module.exports = {
         ӄʀǟӄɨռʐ
           .sendMessage(
             chat.message.extendedTextMessage.contextInfo.participant,
-            `*🍁爪𝖎𝖟𝖚ӄ𝖎™*\n\nhttps://chat.whatsapp.com/` + code,
+            `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*\n\nhttps://chat.whatsapp.com/` + code,
             MessageType.text,
             { quoted: chat }
           )
@@ -57,7 +58,7 @@ module.exports = {
       ӄʀǟӄɨռʐ
         .sendMessage(
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-          `*🍁爪𝖎𝖟𝖚ӄ𝖎™*\n\nhttps://chat.whatsapp.com/` + code,
+          `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*\n\nhttps://chat.whatsapp.com/` + code,
           MessageType.text,
           { quoted: chat }
         )

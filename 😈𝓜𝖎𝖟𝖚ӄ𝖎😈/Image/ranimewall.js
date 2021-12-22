@@ -34,7 +34,7 @@ module.exports = {
           {
             quoted: chat,
             mimetype: Mimetype.png || Mimetype.jpeg,
-            caption: `_ᴘᴏᴡᴇʀᴇᴅ ʙʏ_`,
+            caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*`,
           }
         )
         .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));

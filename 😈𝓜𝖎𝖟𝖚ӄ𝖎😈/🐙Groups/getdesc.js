@@ -5,6 +5,7 @@ const ℓιєηт = require(`../../🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/catch`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 const got = require("got");
+const vers = require(`../../package.json`);
 `🐙`;
 `🐙`;
 `🐙============================================================================================================================<⚡>`;
@@ -61,7 +62,7 @@ module.exports = {
 🎊𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${groupData.subject}
 💞𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${groupData.participants.length}
 📝𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${groupData.desc}`,
-            footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎™*`,
+            footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*`,
             buttons: [
               {
                 buttonId: `${ᴋᴇɪ}help`,

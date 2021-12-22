@@ -5,6 +5,7 @@ const _𝔏𝔞𝔟_ = require(`../../🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/_𝔏𝔞�
 var heroku = new Heroku({
   token: _𝔏𝔞𝔟_.HEROKU_API,
 });
+const vers = require(`../../package.json`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 `🐙`;
@@ -34,7 +35,7 @@ module.exports = {
           contextInfo: {
             mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
           },
-          caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎™*
+          caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
 
 •@${ꜱᴇɴᴅᴇʀeceived},
 Nice Try But Only My *Owner* Can Use *OWNER_ONLY* Commands!`,
@@ -54,10 +55,10 @@ Nice Try But Only My *Owner* Can Use *OWNER_ONLY* Commands!`,
             contextInfo: {
               mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
             },
-            caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎™*
+            caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
 
 •@${ꜱᴇɴᴅᴇʀeceived},
-ʏᴏᴜʀ *🍁爪𝖎𝖟𝖚ӄ𝖎™* ɪꜱ ɴᴏᴡ ᴜᴘᴅᴀᴛɪɴɢ.ᴘʟᴇᴀꜱᴇ ᴡᴀɪᴛ ꜰᴏʀ 30-60ꜱᴇᴄ`,
+ʏᴏᴜʀ *🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}* ɪꜱ ɴᴏᴡ ᴜᴘᴅᴀᴛɪɴɢ.ᴘʟᴇᴀꜱᴇ ᴡᴀɪᴛ ꜰᴏʀ 30-60ꜱᴇᴄ`,
           }
         )
         .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));

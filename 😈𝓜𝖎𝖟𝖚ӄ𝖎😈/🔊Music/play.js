@@ -8,6 +8,7 @@ var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 const request = require("request");
 const yts = require(`yt-search`);
 const axios = require(`axios`);
+const vers = require(`../../package.json`);
 const fs = require(`fs`);
 let mime = ``;
 const RegexYouTube =
@@ -67,7 +68,7 @@ module.exports = {
           await ӄʀǟӄɨռʐ
             .sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              `*🍁爪𝖎𝖟𝖚ӄ𝖎™*
+              `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
 
 ⭕𝗔𝘂𝗱𝗶𝗼 •@${ꜱᴇɴᴅᴇʀeceived}, 𝗣𝗹𝗲𝗮𝘀𝗲 𝗖𝗵𝗲𝗰𝗸 𝗬𝗼𝘂𝗿 𝗣𝗿𝗶𝘃𝗮𝘁𝗲 𝗗𝗠 𝗳𝗼𝗿 𝘁𝗵𝗲 𝗱𝗲𝗹𝗶𝘃𝗲𝗿𝘆 𝗼𝗳 𝗔𝘂𝗱𝗶𝗼!
 
@@ -150,7 +151,7 @@ module.exports = {
                         mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
                       },
                       mimetype: Mimetype.png || Mimetype.jpeg,
-                      content: `*🍁爪𝖎𝖟𝖚ӄ𝖎™*
+                      content: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
 
 ⭕𝗔𝘂𝗱𝗶𝗼 •@${ꜱᴇɴᴅᴇʀeceived}, 𝗣𝗹𝗲𝗮𝘀𝗲 𝗖𝗵𝗼𝗼𝘀𝗲 𝗦𝗺𝗮𝗹𝗹𝗲𝗿 𝗙𝗶𝗹𝗲!
 

@@ -4,6 +4,7 @@ const ℓιєηт = require(`../../🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/catch`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 const got = require("got");
+const vers = require(`../../package.json`);
 const {
   WAConnection: _WAConnection,
   MessageType,
@@ -61,7 +62,7 @@ module.exports = {
           contentText: `@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}, ❌ You Are Not Allowed!
 
 *🎊Groups:* Admins & Developers!`,
-          footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎™*`,
+          footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*`,
           buttons: buttons,
           headerType: 4,
           imageMessage: media.message.imageMessage,

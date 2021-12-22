@@ -4,6 +4,7 @@ const _𝔏𝔞𝔟_ = require(`../../🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/_𝔏𝔞�
 const ℓιєηт = require(`../../🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/catch`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
+const vers = require(`../../package.json`);
 const got = require("got");
 `🐙`;
 `🐙`;
@@ -72,7 +73,7 @@ or reply *${ᴋᴇɪ}nekobin* to any text.`,
         await ӄʀǟӄɨռʐ
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            `*🍁爪𝖎𝖟𝖚ӄ𝖎™*
+            `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
 
 •@${ꜱᴇɴᴅᴇʀeceived},   
 Here Is Your nekobind link👇🏽‍
@@ -103,7 +104,7 @@ https://nekobin.com/${nekoson.result.key}`,
         await ӄʀǟӄɨռʐ
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            `*🍁爪𝖎𝖟𝖚ӄ𝖎™*
+            `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
 
 •@${ꜱᴇɴᴅᴇʀeceived},   
 Here Is Your nekobind link👇🏽‍

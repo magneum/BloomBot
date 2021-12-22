@@ -5,6 +5,7 @@ var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 require(`python-format-js`);
 const fs = require(`fs`);
+const vers = require(`../package.json`);
 `🐙============================================================================================================================<⚡>`;
 exports.catch = async (ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎) => {
   var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
@@ -29,7 +30,7 @@ There Was temporary erorr in *${ᴋᴇɪ}${FinalName} command.*
 
 📂𝗟𝗼𝗴:
 ${ℓαвєяяσя}`,
-      footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎™*`,
+      footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*`,
       buttons: [
         {
           buttonId: `${ᴋᴇɪ}help`,

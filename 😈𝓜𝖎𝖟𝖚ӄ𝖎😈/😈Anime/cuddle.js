@@ -7,6 +7,7 @@ var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 const Downloader = require(`nodejs-file-downloader`);
 const anime = require(`anime-actions`);
 const fs = require(`fs`);
+const vers = require(`../../package.json`);
 `🐙`;
 `🐙`;
 `🐙============================================================================================================================<⚡>`;
@@ -58,7 +59,7 @@ module.exports = {
                     contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ, Receiver] },
                     quoted: chat,
                     mimetype: "video/gif",
-                    caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎™*
+                    caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
 
 ⚡𝐓𝐨𝐩𝐢𝐜: *${FinalName}*
 🥳𝐅𝐫𝐨𝐦: @${ꜱᴇɴᴅᴇʀeceived}
@@ -109,7 +110,7 @@ module.exports = {
                     contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
                     quoted: chat,
                     mimetype: "video/gif",
-                    caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎™*
+                    caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
 
 ⚡𝐓𝐨𝐩𝐢𝐜: *${FinalName}*
 🍯𝐓𝐡𝐞𝐦𝐬𝐞𝐥𝐯𝐞: @${ꜱᴇɴᴅᴇʀeceived}

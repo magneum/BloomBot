@@ -5,6 +5,7 @@ const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const _𝔏𝔞𝔟_ = require(`../../🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/_𝔏𝔞𝔟_`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
+const vers = require(`../../package.json`);
 `🐙`;
 `🐙`;
 `🐙============================================================================================================================<⚡>`;
@@ -43,7 +44,7 @@ module.exports = {
       let movie = await imob.get({
         name: arg.join(` `),
       });
-      const Litol = `爪𝖎𝖟𝖚ӄ𝖎™
+      const Litol = `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
         
 *💡𝐓𝐢𝐭𝐥𝐞➛*  ${movie.title.toUpperCase()}
 *🕜𝐓𝐢𝐦𝐞➛*  ${movie.runtime}

@@ -7,6 +7,7 @@ var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 const Downloader = require(`nodejs-file-downloader`);
 const fs = require(`fs`);
+const vers = require(`../../package.json`);
 `🐙`;
 `🐙`;
 `🐙============================================================================================================================<⚡>`;
@@ -32,7 +33,7 @@ For example-
         ӄʀǟӄɨռʐ
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            `*🍁爪𝖎𝖟𝖚ӄ𝖎™*
+            `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
 
 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 This command is only applicable in a group chat.`,
@@ -70,7 +71,7 @@ This command is only applicable in a group chat.`,
 
 *🎊Groups:* Admins & Developers!
 *🫒Private:* Everyone`,
-          footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎™*`,
+          footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*`,
           buttons: buttons,
           headerType: 4,
           imageMessage: media.message.imageMessage,
@@ -113,7 +114,7 @@ This command is only applicable in a group chat.`,
         ӄʀǟӄɨռʐ
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            `*🍁爪𝖎𝖟𝖚ӄ𝖎™*
+            `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
 
 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 Reply/tag/enter contact number of the person to be demoted.`,
@@ -155,7 +156,7 @@ Reply/tag/enter contact number of the person to be demoted.`,
         ӄʀǟӄɨռʐ
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            `*🍁爪𝖎𝖟𝖚ӄ𝖎™*
+            `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
 
 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 ${contact} is the owner of the group`,
@@ -178,7 +179,7 @@ ${contact} is the owner of the group`,
           await ӄʀǟӄɨռʐ
             .sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              `*🍁爪𝖎𝖟𝖚ӄ𝖎™*
+              `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
 
 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 ${contact} is demoted from admin`,
@@ -196,7 +197,7 @@ ${contact} is demoted from admin`,
           await ӄʀǟӄɨռʐ
             .sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              `*🍁爪𝖎𝖟𝖚ӄ𝖎™*
+              `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
 
 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 ${contact} was not an admin`,
@@ -218,7 +219,7 @@ ${contact} was not an admin`,
           await ӄʀǟӄɨռʐ
             .sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              `*🍁爪𝖎𝖟𝖚ӄ𝖎™*
+              `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
 
 •@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},Person not found.`,
               MessageType.text,

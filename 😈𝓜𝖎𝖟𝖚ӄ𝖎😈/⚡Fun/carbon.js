@@ -4,6 +4,7 @@ const Carbon = require(`unofficial-carbon-now`);
 const ℓιєηт = require(`../../🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/catch`);
 const _𝔏𝔞𝔟_ = require(`../../🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/_𝔏𝔞𝔟_`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
+const vers = require(`../../package.json`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 `🐙`;
 `🐙`;
@@ -96,7 +97,7 @@ _yeti_  *|*  _zenburn_`,
           await ӄʀǟӄɨռʐ
             .sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              `*☢️𝓜𝓮𝓮6*\n\nThe replied message should be text.`,
+              `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*\n\nThe replied message should be text.`,
               MessageType.text,
               { quoted: chat }
             )
@@ -114,7 +115,7 @@ _yeti_  *|*  _zenburn_`,
             if (text[0] === `-` && text[1] === `t`) {
               if (text[2] == null) {
                 let counter = 1;
-                var message = `*☢️𝓜𝓮𝓮6*\n\nAvailable themes: `;
+                var message = `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*\n\nAvailable themes: `;
                 themes.forEach((theme) => {
                   message += `\n${counter}. ${theme}`;
                   counter += 1;
@@ -132,7 +133,7 @@ _yeti_  *|*  _zenburn_`,
                 await ӄʀǟӄɨռʐ
                   .sendMessage(
                     𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                    `*☢️𝓜𝓮𝓮6*\n\nNo input provided.
+                    `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*\n\nNo input provided.
 Please use the command  *${ᴋᴇɪ}carbon <text>*  or reply to a text message with  *${ᴋᴇɪ}carbon*  to carbonize the text.`,
                     MessageType.text,
                     { quoted: chat }
@@ -151,7 +152,7 @@ Please use the command  *${ᴋᴇɪ}carbon <text>*  or reply to a text message w
               await ӄʀǟӄɨռʐ
                 .sendMessage(
                   𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                  `*☢️𝓜𝓮𝓮6*\n\nPlease enter a valid theme.
+                  `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*\n\nPlease enter a valid theme.
 Do note that theme names are  *case sensitive*${ᴋᴇɪ}`,
                   MessageType.text,
                   { quoted: chat }
@@ -172,7 +173,7 @@ Do note that theme names are  *case sensitive*${ᴋᴇɪ}`,
         await ӄʀǟӄɨռʐ
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            `*☢️𝓜𝓮𝓮6*\n\nConverting your text into a code snippet. Please wait...`,
+            `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*\n\nConverting your text into a code snippet. Please wait...`,
             MessageType.text,
             { quoted: chat }
           )
@@ -186,7 +187,7 @@ Do note that theme names are  *case sensitive*${ᴋᴇɪ}`,
           .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, output, MessageType.image, {
             quoted: chat,
             mimetype: Mimetype.png,
-            caption: `*☢️𝓜𝓮𝓮6*\n\n
+            caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*\n\n
 *<< Here's your carbon image! >>*
 Colour Scheme: {}`.format(themeInput),
           })

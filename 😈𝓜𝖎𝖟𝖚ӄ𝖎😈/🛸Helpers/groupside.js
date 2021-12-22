@@ -5,6 +5,7 @@ const _𝔏𝔞𝔟_ = require(`../../🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/_𝔏𝔞�
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 const fs = require(`fs`);
+const vers = require(`../../package.json`);
 const moon = [
   `bite`,
   `blush`,
@@ -87,7 +88,7 @@ module.exports = {
 
 *⧪➛𝘾𝙤𝙢𝙞𝙣𝙜 𝙎𝙤𝙤𝙣!*
 many many more!`,
-        footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎™*`,
+        footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*`,
         buttons: buttons,
         headerType: 4,
         imageMessage: media.message.imageMessage,

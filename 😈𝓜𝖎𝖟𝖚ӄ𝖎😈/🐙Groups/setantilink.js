@@ -7,6 +7,7 @@ var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 const Downloader = require(`nodejs-file-downloader`);
 const fs = require(`fs`);
+const vers = require(`../../package.json`);
 `🐙`;
 `🐙`;
 `🐙============================================================================================================================<⚡>`;
@@ -55,7 +56,7 @@ Do note, the setantilink option is still enabled after you use the delete option
 
 *🎊Groups:* Admins & Developers!
 *🫒Private:* Everyone`,
-          footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎™*`,
+          footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*`,
           buttons: buttons,
           headerType: 4,
           imageMessage: media.message.imageMessage,
@@ -97,7 +98,7 @@ Do note, the setantilink option is still enabled after you use the delete option
       if (!𝓜𝖎𝖟𝖚ӄ𝖎.isGroup) {
         ӄʀǟӄɨռʐ.sendMessage(
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-          `*🍁爪𝖎𝖟𝖚ӄ𝖎™*
+          `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
 
 This is not a group`,
           MessageType.text,
@@ -118,7 +119,7 @@ This is not a group`,
             ӄʀǟӄɨռʐ
               .sendMessage(
                 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                `*🍁爪𝖎𝖟𝖚ӄ𝖎™*
+                `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
 
 Set an Antilink message first.`,
                 MessageType.text,
@@ -138,7 +139,7 @@ Set an Antilink message first.`,
             await ӄʀǟӄɨռʐ
               .sendMessage(
                 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                `*🍁爪𝖎𝖟𝖚ӄ𝖎™*
+                `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
 
 @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 Antilink are not enabled!`,
@@ -159,7 +160,7 @@ Antilink are not enabled!`,
           await ӄʀǟӄɨռʐ
             .sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              `*🍁爪𝖎𝖟𝖚ӄ𝖎™*
+              `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
 
 @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 Antilink are enabled!`,
@@ -183,7 +184,7 @@ Antilink are enabled!`,
           await ӄʀǟӄɨռʐ
             .sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              `*🍁爪𝖎𝖟𝖚ӄ𝖎™*
+              `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
 
 @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 Antilink messsage has been disabled.`,
@@ -205,7 +206,7 @@ Antilink messsage has been disabled.`,
           ӄʀǟӄɨռʐ
             .sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              `*🍁爪𝖎𝖟𝖚ӄ𝖎™*
+              `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
 
 @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 Antilink messsage has been enabled.`,
@@ -230,7 +231,7 @@ Antilink messsage has been enabled.`,
             await ӄʀǟӄɨռʐ
               .sendMessage(
                 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                `*🍁爪𝖎𝖟𝖚ӄ𝖎™*
+                `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
 
 @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 Set a Antilink message first.`,
@@ -252,7 +253,7 @@ Set a Antilink message first.`,
           await ӄʀǟӄɨռʐ
             .sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              `*🍁爪𝖎𝖟𝖚ӄ𝖎™*
+              `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
 
 @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 Antilink messsage deleted.`,
@@ -279,7 +280,7 @@ Antilink messsage deleted.`,
           await ӄʀǟӄɨռʐ
             .sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              `*🍁爪𝖎𝖟𝖚ӄ𝖎™*
+              `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
 
 @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 Antilink messsage updated and enabled.`,
@@ -300,7 +301,7 @@ Antilink messsage updated and enabled.`,
           await ӄʀǟӄɨռʐ
             .sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              `*🍁爪𝖎𝖟𝖚ӄ𝖎™*
+              `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
 
 @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ},
 Antilink messsage updated and enabled.`,

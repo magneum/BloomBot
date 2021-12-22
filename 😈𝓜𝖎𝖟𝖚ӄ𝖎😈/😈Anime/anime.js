@@ -5,6 +5,7 @@ const ℓιєηт = require(`../../🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/catch`);
 const malScraper = require(`mal-scraper`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
+const vers = require(`../../package.json`);
 `🐙`;
 `🐙`;
 `🐙============================================================================================================================<⚡>`;
@@ -40,7 +41,9 @@ module.exports = {
       }
       const name = arg.join(` `);
       malScraper.getInfoFromName(name).then(async (data) => {
-        const AnimeInfos = `💡𝐓𝐢𝐭𝐥𝐞: *${data.title}*
+        const AnimeInfos = `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
+        
+💡𝐓𝐢𝐭𝐥𝐞: *${data.title}*
 🧀𝗣𝗿𝗲𝗺𝗶𝗲𝗿𝗲𝗱: _${data.premiered}_
 😈𝗕𝗿𝗼𝗮𝗱𝗰𝗮𝘀𝘁: _${data.broadcast}_
 ❓𝗚𝗲𝗻𝗿𝗲𝘀: _${data.genres}_

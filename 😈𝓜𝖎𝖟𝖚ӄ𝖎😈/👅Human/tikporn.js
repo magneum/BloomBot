@@ -7,6 +7,7 @@ var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 const Downloader = require(`nodejs-file-downloader`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 const fs = require("fs");
+const vers = require(`../../package.json`);
 `🐙`;
 `🐙`;
 `🐙============================================================================================================================<⚡>`;
@@ -53,7 +54,7 @@ module.exports = {
 
 *🎊Groups:* Admins & Developers!
 *🫒Private:* Everyone`,
-          footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎™*`,
+          footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*`,
           buttons: buttons,
           headerType: 4,
           imageMessage: media.message.imageMessage,
@@ -108,7 +109,7 @@ module.exports = {
           },
         ];
         const buttonMessage = {
-          contentText: `*🍁爪𝖎𝖟𝖚ӄ𝖎™*
+          contentText: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
 
 ┌────⭓
 │⚡ 𝐀𝐬𝐤𝐞𝐝𝐁𝐲: @${ꜱᴇɴᴅᴇʀeceived},
@@ -126,7 +127,7 @@ module.exports = {
 🖊️Description : ${prn.desc}
 📥Download: https://tikporntok.com/${prn.video}
 🫁Source : https://tikporntok.com/${prn.source}`,
-          footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎™*`,
+          footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*`,
           buttons: buttons,
           headerType: 5,
           videoMessage: media.message.videoMessage,

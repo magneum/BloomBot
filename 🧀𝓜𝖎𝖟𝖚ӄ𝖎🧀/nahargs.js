@@ -4,6 +4,7 @@ const _𝔏𝔞𝔟_ = require(`./_𝔏𝔞𝔟_`);
 const ℓιєηт = require(`./catch`);
 const fs = require(`fs`);
 require(`python-format-js`);
+const vers = require(`../package.json`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 const { registerFont, createCanvas, loadImage } = require(`canvas`);
@@ -70,7 +71,7 @@ exports.nahargs = async (
           quoted: chat,
           mimetype: Mimetype.png,
           contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
-          caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎™*
+          caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
 
 *😑Baka* @${ꜱᴇɴᴅᴇʀeceived}, 𝘍𝘰𝘳𝘨𝘰𝘵 𝘛𝘰 𝘎𝘪𝘷𝘦 𝘈𝘯𝘺 𝘈𝘳𝘨𝘶𝘮𝘦𝘯𝘵!
 

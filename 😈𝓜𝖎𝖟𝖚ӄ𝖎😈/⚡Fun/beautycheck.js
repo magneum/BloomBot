@@ -4,6 +4,7 @@ const ℓιєηт = require(`../../🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/catch`);
 const _𝔏𝔞𝔟_ = require(`../../🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/_𝔏𝔞𝔟_`);
 var randomMC = require(`random-material-color`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
+const vers = require(`../../package.json`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 const { registerFont, createCanvas, loadImage } = require(`canvas`);
 registerFont(`./🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/Honeycomb-Round.otf`, {
@@ -173,7 +174,7 @@ module.exports = {
                 quoted: chat,
                 mimetype: Mimetype.png,
                 contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
-                caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎™*
+                caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
 
 𝗤𝘂𝗲𝘀𝘁𝗶𝗼𝗻: ʜᴏᴡ ʙᴇᴀᴜᴛʏꜰᴜʟʟ ɪꜱ *@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}*
 𝗣𝗲𝗿𝗰𝗲𝗻𝘁𝗮𝗴𝗲: ${Much}%`,
@@ -225,7 +226,7 @@ module.exports = {
                 quoted: chat,
                 mimetype: Mimetype.png,
                 contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ, Receiver] },
-                caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎™*
+                caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
 
 𝗤𝘂𝗲𝘀𝘁𝗶𝗼𝗻: ʜᴏᴡ ʙᴇᴀᴜᴛʏꜰᴜʟʟ ɪꜱ *@${personreceived}*
 𝗣𝗲𝗿𝗰𝗲𝗻𝘁𝗮𝗴𝗲: ${Much}%`,
@@ -277,7 +278,7 @@ module.exports = {
                 quoted: chat,
                 mimetype: Mimetype.png,
                 contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ, Receiver] },
-                caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎™*
+                caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
 
 𝗤𝘂𝗲𝘀𝘁𝗶𝗼𝗻: ʜᴏᴡ ʙᴇᴀᴜᴛʏꜰᴜʟʟ ɪꜱ *@${personreceived}*
 Asked By? @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ} 
@@ -326,7 +327,7 @@ Asked By? @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}
                 quoted: chat,
                 mimetype: Mimetype.png,
                 contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
-                caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎™*
+                caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
 
 𝗤𝘂𝗲𝘀𝘁𝗶𝗼𝗻: ʜᴏᴡ ʙᴇᴀᴜᴛʏꜰᴜʟʟ ɪꜱ *@${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ}*
 𝗣𝗲𝗿𝗰𝗲𝗻𝘁𝗮𝗴𝗲: ${Much}%`,

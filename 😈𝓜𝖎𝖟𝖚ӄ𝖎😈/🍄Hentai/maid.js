@@ -4,6 +4,7 @@ const _𝔏𝔞𝔟_ = require(`../../🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/_𝔏𝔞�
 const ℓιєηт = require(`../../🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/catch`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
+const vers = require(`../../package.json`);
 const moon = [
   `ass`,
   `bdsm`,
@@ -75,7 +76,7 @@ module.exports = {
 
 *🎊Groups:* Admins & Developers!
 *🫒Private:* Everyone`,
-        footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎™*`,
+        footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*`,
         buttons: buttons,
         headerType: 4,
         imageMessage: media.message.imageMessage,
@@ -116,7 +117,7 @@ module.exports = {
 ↳👅𝐓𝐨𝐩𝐢𝐜: *${𝓜𝖎𝖟𝖚ӄ𝖎.commandName}
 ↳⚡𝐎𝐫𝐝𝐞𝐫𝐞𝐝𝐁𝐲: @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ} 
 `,
-                footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎™*`,
+                footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*`,
                 buttons: [
                   {
                     buttonId: `${ᴋᴇɪ}${moonshine}`,
@@ -182,7 +183,7 @@ module.exports = {
 ↳👅𝐓𝐨𝐩𝐢𝐜: *${𝓜𝖎𝖟𝖚ӄ𝖎.commandName}
 ↳⚡𝐎𝐫𝐝𝐞𝐫𝐞𝐝𝐁𝐲: @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ} 
 `,
-                    footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎™*`,
+                    footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*`,
                     buttons: [
                       {
                         buttonId: `${ᴋᴇɪ}${moonshine}`,
@@ -254,7 +255,7 @@ module.exports = {
 ↳👅𝐓𝐨𝐩𝐢𝐜: *${𝓜𝖎𝖟𝖚ӄ𝖎.commandName}
 ↳⚡𝐎𝐫𝐝𝐞𝐫𝐞𝐝𝐁𝐲: @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ} 
 `,
-                    footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎™*`,
+                    footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*`,
                     buttons: [
                       {
                         buttonId: `${ᴋᴇɪ}${moonshine}`,
@@ -326,7 +327,7 @@ module.exports = {
 ↳👅𝐓𝐨𝐩𝐢𝐜: *${𝓜𝖎𝖟𝖚ӄ𝖎.commandName}
 ↳⚡𝐎𝐫𝐝𝐞𝐫𝐞𝐝𝐁𝐲: @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ} 
 `,
-                    footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎™*`,
+                    footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*`,
                     buttons: [
                       {
                         buttonId: `${ᴋᴇɪ}${moonshine}`,
@@ -398,7 +399,7 @@ module.exports = {
 ↳👅𝐓𝐨𝐩𝐢𝐜: *${𝓜𝖎𝖟𝖚ӄ𝖎.commandName}
 ↳⚡𝐎𝐫𝐝𝐞𝐫𝐞𝐝𝐁𝐲: @${ꜱᴇɴᴅᴇʀᴄᴏɴꜰ} 
 `,
-                footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎™*`,
+                footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*`,
                 buttons: [
                   {
                     buttonId: `${ᴋᴇɪ}${moonshine}`,

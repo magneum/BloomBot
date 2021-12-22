@@ -7,6 +7,7 @@ var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 const ffmpeg = require(`fluent-ffmpeg`);
 const Downloader = require(`nodejs-file-downloader`);
 const fs = require(`fs`);
+const vers = require(`../../package.json`);
 const RandomHub = require("random-hub").RandomHub;
 const hub = new RandomHub();
 `🐙`;
@@ -54,7 +55,7 @@ module.exports = {
 
 *🎊Groups:* Admins & Developers!
 *🫒Private:* Everyone`,
-          footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎™*`,
+          footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*`,
           buttons: buttons,
           headerType: 4,
           imageMessage: media.message.imageMessage,
@@ -101,7 +102,7 @@ module.exports = {
                     contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
                     quoted: chat,
                     mimetype: "video/gif",
-                    caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎™*
+                    caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
 
 ⚡𝐓𝐨𝐩𝐢𝐜: *${FinalName}*
 🥳𝐅𝐫𝐨𝐦: @${ꜱᴇɴᴅᴇʀeceived}

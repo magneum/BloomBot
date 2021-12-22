@@ -13,6 +13,7 @@ const _𝔏𝔞𝔟_ = require(`./🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/_𝔏𝔞𝔟_`
 const ℓιєηт = require(`./🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/catch`);
 const download = require(`download-file`);
 const Kolor = require(`chalk`);
+const vers = require(`./package.json`);
 const 𝓜𝖎𝖟𝖚ӄ𝖎sql = _𝔏𝔞𝔟_.POSTQL;
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
@@ -172,7 +173,7 @@ async function 𝐌𝐢𝐳𝐮𝐤𝐢() {
         MessageType.image,
         {
           mimetype: Mimetype.png || Mimetype.jpeg,
-          caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎™*
+          caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
 
 シ︎💡ᴘʀᴇꜰɪx: ${ᴋᴇɪ}
 シ︎🛸𝐆𝐫𝐨𝐮𝐩: ${_𝔏𝔞𝔟_.HASH}
@@ -203,7 +204,7 @@ async function 𝐌𝐢𝐳𝐮𝐤𝐢() {
       ӄʀǟӄɨռʐ
         .sendMessage(
           groupupdateID.id,
-          `*🍁爪𝖎𝖟𝖚ӄ𝖎™*
+          `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
 
 *<○ ${groupupdateID.subject} Opened ○>*
 Group has been opened by admin Now all members can send messages`,
@@ -221,7 +222,7 @@ Group has been opened by admin Now all members can send messages`,
       ӄʀǟӄɨռʐ
         .sendMessage(
           groupupdateID.id,
-          `*🍁爪𝖎𝖟𝖚ӄ𝖎™*
+          `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
 
 *<○ ${groupupdateID.subject} 𝗖𝗹𝗼𝘀𝗲𝗱 ○>*
 ɢʀᴏᴜᴘ ʜᴀꜱ ʙᴇᴇɴ ᴄʟᴏꜱᴇᴅ ʙʏ ᴀᴅᴍɪɴ ɴᴏᴡ ᴏɴʟʏ ᴀᴅᴍɪɴ ᴄᴀɴ ꜱᴇɴᴅ ᴍᴇꜱꜱᴀɢᴇꜱ`,
@@ -240,7 +241,7 @@ Group has been opened by admin Now all members can send messages`,
       ӄʀǟӄɨռʐ
         .sendMessage(
           groupupdateID.id,
-          `*🍁爪𝖎𝖟𝖚ӄ𝖎™*
+          `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
 
 *<○ ${groupupdateID.subject} 𝗗𝗲𝘀𝗰𝗿𝗶𝗽𝘁𝗶𝗼𝗻 𝗖𝗵𝗮𝗻𝗴𝗲 ○>*
 • 𝙶𝚛𝚘𝚞𝚙 𝚍𝚎𝚜𝚌𝚛𝚒𝚙𝚝𝚒𝚘𝚗 𝚑𝚊𝚜 𝚋𝚎𝚎𝚗 𝚌𝚑𝚊𝚗𝚐𝚎𝚍 𝚋𝚢:@${update.descOwner.split(`@`)[0]}
@@ -266,7 +267,7 @@ ${update.desc}`,
       ӄʀǟӄɨռʐ
         .sendMessage(
           groupupdateID.id,
-          `*🍁爪𝖎𝖟𝖚ӄ𝖎™*
+          `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
 
 *<○ ${groupupdateID.subject} 𝗦𝗲𝘁𝘁𝗶𝗻𝗴 𝗖h𝗮𝗻𝗴𝗲 ○>*
 ᴇᴅɪᴛ ɢʀᴏᴜᴘ ɪɴꜰᴏ ʜᴀꜱ ʙᴇᴇɴ ᴏᴘᴇɴᴇᴅ ꜰᴏʀ ᴍᴇᴍʙᴇʀꜱ ɴᴏᴡ ᴀʟʟ ᴍᴇᴍʙᴇʀꜱ ᴄᴀɴ ᴇᴅɪᴛ ᴛʜɪꜱ ɢʀᴏᴜᴘ ɪɴꜰᴏ`,
@@ -285,7 +286,7 @@ ${update.desc}`,
       ӄʀǟӄɨռʐ
         .sendMessage(
           groupupdateID.id,
-          `*🍁爪𝖎𝖟𝖚ӄ𝖎™*
+          `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
 
 *<○ ${groupupdateID.subject} 𝗦𝗲𝘁𝘁𝗶𝗻𝗴 𝗖𝗵𝗮𝗻𝗴𝗲 ○>*
 ɢʀᴏᴜᴘ ɪɴꜰᴏ ʜᴀꜱ ʙᴇᴇɴ ᴄʟᴏꜱᴇᴅ ꜰᴏʀ ᴍᴇᴍʙᴇʀꜱ ɴᴏᴡ ᴏɴʟʏ ɢʀᴏᴜᴘ ᴀᴅᴍɪɴꜱ ᴄᴀɴ ᴇᴅɪᴛ ᴛʜɪꜱ ɢʀᴏᴜᴘ ɪɴꜰᴏ`,
@@ -327,7 +328,7 @@ ${update.desc}`,
           MessageType.video,
           {
             mimetype: `video/gif`,
-            caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎™*
+            caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
 
 🔑𝐏𝐫𝐞𝐟𝐢𝐱: *!*
 👑𝐎𝐰𝐧𝐞𝐫: _🐙KrakinzKon_
@@ -419,7 +420,7 @@ ${update.desc}`,
                   contextInfo: {
                     mentionedJid: [MemNum],
                   },
-                  caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎™*
+                  caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
 
 @${personcum}👋🏽${byetext}
 
@@ -484,7 +485,7 @@ ${ꜰᴇᴛᴄʜᴇᴅʙʏᴇ.message}`,
         await ӄʀǟӄɨռʐ
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.logGroup,
-            `*🍁爪𝖎𝖟𝖚ӄ𝖎™*
+            `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
 
 𝙐𝙥𝙙𝙖𝙩𝙚🤖𝙋𝙚𝙣𝙙𝙞𝙣𝙜
 •Please wait for bot to auto-udate!`,
@@ -526,7 +527,7 @@ ${ꜰᴇᴛᴄʜᴇᴅʙʏᴇ.message}`,
 
 *😑Baka* @${ꜱᴇɴᴅᴇʀeceived},
 -.-Type *${ᴋᴇɪ}help*`,
-              footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎™*`,
+              footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*`,
               buttons: [
                 {
                   buttonId: `${ᴋᴇɪ}list`,
@@ -579,7 +580,7 @@ ${ꜰᴇᴛᴄʜᴇᴅʙʏᴇ.message}`,
           await ӄʀǟӄɨռʐ
             .sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              `*🍁爪𝖎𝖟𝖚ӄ𝖎™*
+              `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
 
 @${REMOVE},
 ┌────⭓ 𝐀𝐧𝐭𝐢𝐥𝐢𝐧𝐤🐙𝐀𝐜𝐭𝐢𝐯𝐞

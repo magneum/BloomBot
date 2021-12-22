@@ -4,6 +4,7 @@ const ℓιєηт = require(`../../🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/catch`);
 const _𝔏𝔞𝔟_ = require(`../../🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/_𝔏𝔞𝔟_`);
 const fs = require(`fs`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
+const vers = require(`../../package.json`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 `🐙`;
 `🐙`;
@@ -60,7 +61,7 @@ _If Found the report was just for fun then you will be banned by the bot!_
 
 ┌────⭓ 𝐒𝐮𝐩𝐩𝐨𝐫𝐭
 *🔥 ɢʀᴏᴜᴘ:* ${_𝔏𝔞𝔟_.HASH}`,
-            footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎™*`,
+            footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*`,
             buttons: [
               {
                 buttonId: `${ᴋᴇɪ}help`,
@@ -92,7 +93,7 @@ _If Found the report was just for fun then you will be banned by the bot!_
         {
           mentionedJid: members,
           mimetype: "video/gif",
-          caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎™*
+          caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
 
 ⚡𝐓𝐨𝐩𝐢𝐜: *${FinalName}*
 🐞𝐑𝐞𝐩𝐨𝐫𝐭𝐞𝐝 𝐁𝐲: *${ꜱᴇɴᴅᴇʀɪᴅ}*
@@ -108,7 +109,7 @@ ${arg.join(" ")}`,
         MessageType.video,
         {
           mimetype: "video/gif",
-          caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎™*
+          caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
 
 ⚡𝐓𝐨𝐩𝐢𝐜: *${FinalName}*
 🐞𝐑𝐞𝐩𝐨𝐫𝐭𝐞𝐝 𝐁𝐲: *${ꜱᴇɴᴅᴇʀɪᴅ}*
@@ -124,7 +125,7 @@ ${arg.join(" ")}`,
         MessageType.video,
         {
           mimetype: "video/gif",
-          caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎™*
+          caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
 
 ⚡𝐓𝐨𝐩𝐢𝐜: *${FinalName}*
 🐞𝐑𝐞𝐩𝐨𝐫𝐭𝐞𝐝 𝐁𝐲: *${ꜱᴇɴᴅᴇʀɪᴅ}*
@@ -140,7 +141,7 @@ ${arg.join(" ")}`,
         MessageType.video,
         {
           mimetype: "video/gif",
-          caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎™*
+          caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
 
 ⚡𝐓𝐨𝐩𝐢𝐜: *${FinalName}*
 🐞𝐑𝐞𝐩𝐨𝐫𝐭𝐞𝐝 𝐁𝐲: *${ꜱᴇɴᴅᴇʀɪᴅ}*
