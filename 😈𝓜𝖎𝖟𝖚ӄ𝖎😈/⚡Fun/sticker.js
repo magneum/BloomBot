@@ -21,38 +21,64 @@ module.exports = {
       var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
       var ꜱᴇɴᴅᴇʀᴄᴏɴꜰ = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
       `🐙============================================================================================================================<⚡>`;
-      if (𝓜𝖎𝖟𝖚ӄ𝖎.isReplyImage && 𝓜𝖎𝖟𝖚ӄ𝖎.type === "image") {
-        var STICKER_OBJECT = {
+      if (𝓜𝖎𝖟𝖚ӄ𝖎.isReplyImage) {
+        var FILEOBJECT = {
           message: chat.message.extendedTextMessage.contextInfo.quotedMessage,
         };
-        var STICKER_ID = chat.message.extendedTextMessage.contextInfo.stanzaId;
-        console.log(STICKER_OBJECT);
+        var FILEID = chat.message.extendedTextMessage.contextInfo.stanzaId;
+        console.log(FILEOBJECT);
         try {
           await ӄʀǟӄɨռʐ
             .downloadAndSaveMediaMessage(
-              STICKER_OBJECT,
-              `./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/𝓜𝖎𝖟𝖚ӄ𝖎_${STICKER_ID}`
+              FILEOBJECT,
+              `./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/𝐌𝐢𝐳𝐮𝐤𝐢__${FILEID}`
             )
             .then(async () => {
-              ffmpeg(`./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/𝓜𝖎𝖟𝖚ӄ𝖎_${STICKER_ID}.jpeg`)
+              if (fs.existsSync(`./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/𝐌𝐢𝐳𝐮𝐤𝐢__${FILEID}.jpeg`)) {
+                await ffmpeg(`./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/𝐌𝐢𝐳𝐮𝐤𝐢__${FILEID}.jpeg`)
+                  .outputOptions([`-y`, `-vcodec libwebp`])
+                  .videoFilters(
+                    `scale=2000:2000:flags=lanczos:force_original_aspect_ratio=decrease`,
+                    `format=rgba`,
+                    `pad=2000:2000:(ow-iw)/2:(oh-ih)/2:color=#00000000,setsar=1`
+                  )
+                  .save(`./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/𝐌𝐢𝐳𝐮𝐤𝐢__${FILEID}.webp`)
+                  .on(`end`, async () => {
+                    await ӄʀǟӄɨռʐ
+                      .sendMessage(
+                        𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                        fs.readFileSync(`./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/𝐌𝐢𝐳𝐮𝐤𝐢__${FILEID}.webp`),
+                        MessageType.sticker,
+                        { quoted: chat }
+                      )
+                      .then(
+                        fs.unlinkSync(`./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/𝐌𝐢𝐳𝐮𝐤𝐢__${FILEID}.jpeg`),
+                        fs.unlinkSync(`./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/𝐌𝐢𝐳𝐮𝐤𝐢__${FILEID}.webp`)
+                      );
+                  })
+                  .on(`ℓαвєяяσя`, async (ℓαвєяяσя) => {
+                    ℓιєηт.catch((ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
+                  });
+              }
+              await ffmpeg(`./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/𝐌𝐢𝐳𝐮𝐤𝐢__${FILEID}.png`)
                 .outputOptions([`-y`, `-vcodec libwebp`])
                 .videoFilters(
                   `scale=2000:2000:flags=lanczos:force_original_aspect_ratio=decrease`,
                   `format=rgba`,
                   `pad=2000:2000:(ow-iw)/2:(oh-ih)/2:color=#00000000,setsar=1`
                 )
-                .save(`./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/𝓜𝖎𝖟𝖚ӄ𝖎_${STICKER_ID}.webp`)
+                .save(`./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/𝐌𝐢𝐳𝐮𝐤𝐢__${FILEID}.webp`)
                 .on(`end`, async () => {
                   await ӄʀǟӄɨռʐ
                     .sendMessage(
                       𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                      fs.readFileSync(`./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/𝓜𝖎𝖟𝖚ӄ𝖎_${STICKER_ID}.webp`),
+                      fs.readFileSync(`./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/𝐌𝐢𝐳𝐮𝐤𝐢__${FILEID}.webp`),
                       MessageType.sticker,
                       { quoted: chat }
                     )
                     .then(
-                      fs.unlinkSync(`./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/𝓜𝖎𝖟𝖚ӄ𝖎_${STICKER_ID}.jpeg`),
-                      fs.unlinkSync(`./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/𝓜𝖎𝖟𝖚ӄ𝖎_${STICKER_ID}.webp`)
+                      fs.unlinkSync(`./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/𝐌𝐢𝐳𝐮𝐤𝐢__${FILEID}.png`),
+                      fs.unlinkSync(`./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/𝐌𝐢𝐳𝐮𝐤𝐢__${FILEID}.webp`)
                     );
                 })
                 .on(`ℓαвєяяσя`, async (ℓαвєяяσя) => {
@@ -64,53 +90,46 @@ module.exports = {
         }
         `🐙============================================================================================================================<⚡>`;
       } else if (𝓜𝖎𝖟𝖚ӄ𝖎.isReplyVideo || 𝓜𝖎𝖟𝖚ӄ𝖎.isReplyGIF) {
-        var VIDEO_STICKER_OBJECT = {
+        var VIDEOBJECT = {
           message: chat.message.extendedTextMessage.contextInfo.quotedMessage,
         };
-        var VIDEO_STICKER_ID =
-          chat.message.extendedTextMessage.contextInfo.stanzaId;
-        console.log(VIDEO_STICKER_OBJECT);
+        var VIDEOID = chat.message.extendedTextMessage.contextInfo.stanzaId;
+        console.log(VIDEOBJECT);
         try {
           await ӄʀǟӄɨռʐ
             .downloadAndSaveMediaMessage(
-              VIDEO_STICKER_OBJECT,
-              `./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/𝓜𝖎𝖟𝖚ӄ𝖎_${VIDEO_STICKER_ID}`
+              VIDEOBJECT,
+              `./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️//𝐌𝐢𝐳𝐮𝐤𝐢__${VIDEOID}`
             )
             .then(async () => {
-              ffmpeg(`./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/𝓜𝖎𝖟𝖚ӄ𝖎_${VIDEO_STICKER_ID}.mp4`)
+              ffmpeg(`./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️//𝐌𝐢𝐳𝐮𝐤𝐢__${VIDEOID}.mp4`)
                 .duration(8)
                 .outputOptions([
-                  "-y",
-                  "-vcodec libwebp",
-                  "-lossless 1",
-                  "-qscale 1",
-                  "-preset default",
-                  "-loop 0",
-                  "-an",
-                  "-vsync 0",
-                  "-s 600x600",
+                  `-y`,
+                  `-vcodec libwebp`,
+                  `-lossless 1`,
+                  `-qscale 1`,
+                  `-preset default`,
+                  `-loop 0`,
+                  `-an`,
+                  `-vsync 0`,
+                  `-s 600x600`,
                 ])
                 .videoFilters(
-                  "scale=600:600:flags=lanczos:force_original_aspect_ratio=decrease,format=rgba,pad=600:600:(ow-iw)/2:(oh-ih)/2:color=#00000000,setsar=1"
+                  `scale=600:600:flags=lanczos:force_original_aspect_ratio=decrease,format=rgba,pad=600:600:(ow-iw)/2:(oh-ih)/2:color=#00000000,setsar=1`
                 )
-                .save(`./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/𝓜𝖎𝖟𝖚ӄ𝖎_${VIDEO_STICKER_ID}.webp`)
+                .save(`./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️//𝐌𝐢𝐳𝐮𝐤𝐢__${VIDEOID}.webp`)
                 .on(`end`, async () => {
                   await ӄʀǟӄɨռʐ
                     .sendMessage(
                       𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                      fs.readFileSync(
-                        `./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/𝓜𝖎𝖟𝖚ӄ𝖎_${VIDEO_STICKER_ID}.webp`
-                      ),
+                      fs.readFileSync(`./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️//𝐌𝐢𝐳𝐮𝐤𝐢__${VIDEOID}.webp`),
                       MessageType.sticker,
                       { quoted: chat }
                     )
                     .then(
-                      fs.unlinkSync(
-                        `./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/𝓜𝖎𝖟𝖚ӄ𝖎_${VIDEO_STICKER_ID}.mp4`
-                      ),
-                      fs.unlinkSync(
-                        `./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/𝓜𝖎𝖟𝖚ӄ𝖎_${VIDEO_STICKER_ID}.webp`
-                      )
+                      fs.unlinkSync(`./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️//𝐌𝐢𝐳𝐮𝐤𝐢__${VIDEOID}.mp4`),
+                      fs.unlinkSync(`./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️//𝐌𝐢𝐳𝐮𝐤𝐢__${VIDEOID}.webp`)
                     );
                 })
                 .on(`ℓαвєяяσя`, async (ℓαвєяяσя) => {
