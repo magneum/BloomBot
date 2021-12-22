@@ -22,8 +22,7 @@ const RegexYouTube =
 `🐙`;
 module.exports = {
   name: `ytvideo`,
-  description: `ᴅᴏᴡɴʟᴏᴀᴅ ᴀɴʏ ʏᴏᴜᴛᴜʙᴇ ᴠɪᴅᴇᴏ ᴜɴᴅᴇʀ 100ᴍʙ ꜱɪᴢᴇ.`,
-  𝓜𝓮𝓮6ʍօʀɛ: `${ᴋᴇɪ}ytaudio <link>`,
+  𝓜𝓮𝓮6ʍօʀɛ: `${ᴋᴇɪ}ytaudio <youtube link>`,
   async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
     var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
     var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
@@ -59,8 +58,7 @@ module.exports = {
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
             `*🍁爪𝖎𝖟𝖚ӄ𝖎™*
 
-📹𝗩𝗶𝗱𝗲𝗼 •@${ꜱᴇɴᴅᴇʀeceived}, 
-𝗣𝗹𝗲𝗮𝘀𝗲 𝗖𝗵𝗲𝗰𝗸 𝗬𝗼𝘂𝗿 𝗣𝗿𝗶𝘃𝗮𝘁𝗲 𝗗𝗠 𝗳𝗼𝗿 𝘁𝗵𝗲 𝗱𝗲𝗹𝗶𝘃𝗲𝗿𝘆 𝗼𝗳 𝗩𝗶𝗱𝗲𝗼!
+📹𝗩𝗶𝗱𝗲𝗼 •@${ꜱᴇɴᴅᴇʀeceived}, 𝗣𝗹𝗲𝗮𝘀𝗲 𝗖𝗵𝗲𝗰𝗸 𝗬𝗼𝘂𝗿 𝗣𝗿𝗶𝘃𝗮𝘁𝗲 𝗗𝗠 𝗳𝗼𝗿 𝘁𝗵𝗲 𝗱𝗲𝗹𝗶𝘃𝗲𝗿𝘆 𝗼𝗳 𝗩𝗶𝗱𝗲𝗼!
 
 🍻𝐓𝐢𝐭𝐥𝐞⤞ ${youfound.title}
 🙈𝐕𝐢𝐞𝐰𝐬⤞ ${youfound.views}
@@ -136,11 +134,10 @@ module.exports = {
                       mimetype: Mimetype.png || Mimetype.jpeg,
                       content: `*🍁爪𝖎𝖟𝖚ӄ𝖎™*
 
-📹𝗩𝗶𝗱𝗲𝗼 •@${ꜱᴇɴᴅᴇʀeceived}, 
-𝗣𝗹𝗲𝗮𝘀𝗲 𝗖𝗵𝗼𝗼𝘀𝗲 𝗦𝗺𝗮𝗹𝗹𝗲𝗿 𝗙𝗶𝗹𝗲. 𝗠𝗮𝘅 𝗟𝗶𝗺𝗶𝘁 (𝟭𝟬𝟬𝗺𝗯)!
+📹𝗩𝗶𝗱𝗲𝗼 •@${ꜱᴇɴᴅᴇʀeceived}, 𝗣𝗹𝗲𝗮𝘀𝗲 𝗖𝗵𝗼𝗼𝘀𝗲 𝗦𝗺𝗮𝗹𝗹𝗲𝗿 𝗙𝗶𝗹𝗲!
 
 🍻𝐓𝐢𝐭𝐥𝐞⤞ ${title}
-*Size* : ${filesizeF}`,
+🥣𝐒𝐢𝐳𝐞⤞ ${filesizeF}`,
                     }
                   )
                   .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
