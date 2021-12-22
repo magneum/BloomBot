@@ -72,7 +72,7 @@ module.exports = {
 
 ┌────⭓ 𝘼𝙣𝙞𝙢𝙚*  ⦿
 │🍣• ${ᴋᴇɪ}anime _search any anime_
-│🍣• ${ᴋᴇɪ}animewallpaper _get random anime wallpaper_
+│🍣• ${ᴋᴇɪ}ranimewall _get random anime wallpaper_
 │🍣• ${ᴋᴇɪ}smile _(ɢɪꜰ)_ 
 │🍣• ${ᴋᴇɪ}yes _(ɢɪꜰ)_
 │🍣• ${ᴋᴇɪ}bite _(ɢɪꜰ)_
