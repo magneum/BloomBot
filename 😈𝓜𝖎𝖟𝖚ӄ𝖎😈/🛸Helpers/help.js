@@ -22,13 +22,13 @@ module.exports = {
       var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
       var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
       `🐙============================================================================================================================<⚡>`;
-      let content = fs.readFileSync(`./𝓜𝖎𝖟𝖚ӄ𝖎/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`);
+      let content = fs.readFileSync(`./𝓜𝖎𝖟𝖚ӄ𝖎/Mizuki_Main.png`);
       const media = await ӄʀǟӄɨռʐ.prepareMessage(
         𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
         content,
-        MessageType.video,
+        MessageType.image,
         {
-          mimetype: "video/gif",
+          mimetype: Mimetype.png,
         }
       );
       await ӄʀǟӄɨռʐ
@@ -72,8 +72,8 @@ module.exports = {
                 type: 1,
               },
             ],
-            headerType: 5,
-            videoMessage: media.message.videoMessage,
+            headerType: 4,
+            imageMessage: media.message.imageMessage,
           },
           MessageType.buttonsMessage,
           {
