@@ -3,7 +3,7 @@
   "main": "🍁爪𝖎𝖟𝖚ӄ𝖎™.js",
   "vers": "ɴɪɢʜᴛʟʏ-v18.56",
   "dependencies": {
-    "@adiwajshing/baileys": "^3.5.3",
+    "@adiwajshing/baileys": "^3.5.0",
     "@cicciosgamino/openweather-apis": "^5.0.1",
     "@ffmpeg-installer/ffmpeg": "^1.1.0",
     "@ffprobe-installer/ffprobe": "^1.3.0",
