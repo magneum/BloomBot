@@ -61,7 +61,7 @@ exports.mainMizukigif = async (ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, �
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
           {
             contentText: `𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚👋🏻 •@${ꜱᴇɴᴅᴇʀeceived}\n====<⚡>${𝓜𝖎𝖟𝖚ӄ𝖎Text}`,
-            footerText: `*🍁𝓜𝖎𝖟𝖚ӄ𝖎™*`,
+            footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎™*`,
             buttons: [
               {
                 buttonId: `${ᴋᴇɪ}list`,

@@ -29,7 +29,7 @@ There Was temporary erorr in *${ᴋᴇɪ}${FinalName} command.*
 
 📂𝗟𝗼𝗴:
 ${ℓαвєяяσя}`,
-      footerText: `*🍁𝓜𝖎𝖟𝖚ӄ𝖎™*`,
+      footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎™*`,
       buttons: [
         {
           buttonId: `${ᴋᴇɪ}help`,

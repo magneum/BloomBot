@@ -70,7 +70,7 @@ exports.nahargs = async (
           quoted: chat,
           mimetype: Mimetype.png,
           contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
-          caption: `*🍁𝓜𝖎𝖟𝖚ӄ𝖎™*
+          caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎™*
 
 *😑Baka* @${ꜱᴇɴᴅᴇʀeceived}, 𝘍𝘰𝘳𝘨𝘰𝘵 𝘛𝘰 𝘎𝘪𝘷𝘦 𝘈𝘯𝘺 𝘈𝘳𝘨𝘶𝘮𝘦𝘯𝘵!
 
