@@ -67,6 +67,9 @@ module.exports = {
 シ︎𝐆𝐫𝐨𝐮𝐩👓${_𝔏𝔞𝔟_.HASH}
 
 ┌────⭓ *𝙂𝙧𝙤𝙪𝙥𝙨*  ⦿
+│🔰• ${ᴋᴇɪ}group: _lock/unlock group_
+│🔰• ${ᴋᴇɪ}lockgc: _lock group chat for non-admins_
+│🔰• ${ᴋᴇɪ}unlockgc: _unlock group chat for everyone_
 │🔰• ${ᴋᴇɪ}promote: _promote member to admin_
 │🔰• ${ᴋᴇɪ}demote: _demote member from admin_
 │🔰• ${ᴋᴇɪ}spam: _spam messsage in group/private_
