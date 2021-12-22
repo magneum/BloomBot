@@ -1,4 +1,7 @@
 {
+  "main": "🍁爪𝖎𝖟𝖚ӄ𝖎™.js",
+  "name": "mizuki",
+  "vers": "𝘣𝘦𝘵𝘢-v𝟣𝟫.1",
   "dependencies": {
     "@adiwajshing/baileys": "^3.5.3",
     "@cicciosgamino/openweather-apis": "^5.0.1",
@@ -15,7 +18,6 @@
     "brainly-scraper": "^1.0.3",
     "browser-id3-writer": "^4.4.0",
     "canvas": "^2.8.0",
-    "canvas-constructor": "^5.0.1",
     "cfonts": "^2.9.0",
     "chalk": "^4.1.1",
     "cheerio": "^1.0.0-rc.10",
@@ -100,8 +102,5 @@
     "youtube-metadata-from-url": "^1.0.3",
     "yt-search": "^2.10.1",
     "ytdl-core": "^4.9.1"
-  },
-  "main": "🍁爪𝖎𝖟𝖚ӄ𝖎™.js",
-  "name": "mizuki",
-  "vers": "𝘣𝘦𝘵𝘢-v𝟣𝟫.1"
+  }
 }

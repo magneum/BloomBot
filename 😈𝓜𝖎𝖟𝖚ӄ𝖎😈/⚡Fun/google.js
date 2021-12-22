@@ -4,7 +4,7 @@ const ℓιєηт = require(`../../🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/catch`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 const fetch = require("node-fetch");
-const googleIt = require("google-it");
+const Google = require("google-it");
 const vers = require(`../../package.json`);
 module.exports = {
   name: `google`,
@@ -29,20 +29,50 @@ module.exports = {
         )
         .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
     }
-
-    let url = "https://google.com/search?q=" + encodeURIComponent(text);
-    let search = await googleIt({ query: text });
-    let msg = search.map(({ title, link, snippet }) => {
-      return `*${title}*\n_${link}_\n_${snippet}_`;
-    }).join`\n\n`;
+    `🐙============================================================================================================================<⚡>`;
     try {
-      let ss = await (
-        await fetch(
-          global.API("nrtm", "/api/ssweb", { delay: 1000, url, full })
-        )
-      ).buffer();
-      if (ss.includes("html")) throw "";
-      await conn.sendFile(m.chat, ss, "screenshot.png", url + "\n\n" + msg, m);
+      await Google({ query: arg.join(` `) })
+        .then((results) => {
+          let msg = results.map(({ title, link, snippet }) => {
+            return `🍻𝐓𝐢𝐭𝐥𝐞⤞ *${title}*
+🔗𝐋𝐢𝐧𝐤⤞ ${link}
+📜𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧⤞ ${snippet}`;
+          }).join`\n\n`;
+          const media = await ӄʀǟӄɨռʐ.prepareMessage(
+            𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+            { url: `./𝓜𝖎𝖟𝖚ӄ𝖎/Mizuki_Google.png` },
+            MessageType.image,
+            {
+              mimetype: Mimetype.png,
+            }
+          );
+          await ӄʀǟӄɨռʐ
+            .sendMessage(
+              𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+              {
+                contentText: `•@${ꜱᴇɴᴅᴇʀeceived},`,
+                footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*\n\n${msg}`,
+                buttons: [
+                  {
+                    buttonId: `${ᴋᴇɪ}bugreport`,
+                    buttonText: { displayText: `${ᴋᴇɪ}bugreport` },
+                    type: 1,
+                  },
+                ],
+                headerType: 4,
+                imageMessage: media.message.imageMessage,
+              },
+              MessageType.buttonsMessage,
+              {
+                quoted: chat,
+                contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
+              }
+            )
+            .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
+        })
+        .catch((e) => {
+          console.log(e);
+        });
     } catch (ℓαвєяяσя) {
       ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
       console.log(ℓαвєяяσя);
