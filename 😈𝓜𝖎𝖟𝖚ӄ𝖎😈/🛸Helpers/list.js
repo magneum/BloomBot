@@ -120,9 +120,6 @@ module.exports = {
 └───────⭓
 
 ┌────⭓ 👑𝙂𝙧𝙤𝙪𝙥𝙨
-│🔰• ${ᴋᴇɪ}group
-│🔰• ${ᴋᴇɪ}opengc
-│🔰• ${ᴋᴇɪ}closegc
 │🔰• ${ᴋᴇɪ}promote 
 │🔰• ${ᴋᴇɪ}demote
 │🔰• ${ᴋᴇɪ}spam
