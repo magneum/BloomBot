@@ -80,19 +80,30 @@ module.exports = {
               mentionedJid: members,
             },
             caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎™*
-*EVERYONE!* - ʏᴏᴜʀ ᴀꜱꜱɪꜱꜱᴛᴀɴᴛ ꜰᴏʀ ᴍᴀᴋɪɴɢ ʙᴏʀɪɴɢ ᴡʜᴀᴛꜱᴀᴘᴘ ᴀ ʙᴇᴛᴛᴇʀ ᴀᴅᴠᴀɴᴄᴇ ᴀᴘᴘ!
+
+𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚👋🏻 *EVERYONE!,*
+_ʏᴏᴜʀ ᴀꜱꜱɪꜱꜱᴛᴀɴᴛ ꜰᴏʀ ᴍᴀᴋɪɴɢ ʙᴏʀɪɴɢ ᴡʜᴀᴛꜱᴀᴘᴘ ᴀ ʙᴇᴛᴛᴇʀ ᴀᴅᴠᴀɴᴄᴇ ᴀᴘᴘ!_
+
+🔑𝐏𝐫𝐞𝐟𝐢𝐱: *${ᴋᴇɪ}*
+👑𝐎𝐰𝐧𝐞𝐫: _🐙KrakinzKon_
+
 
 ┌────⭓ 𝐍𝐞𝐰 𝐏𝐮𝐛𝐥𝐢𝐜-𝐁𝐞𝐭𝐚 𝐅𝐞𝐚𝐭𝐮𝐫𝐞𝐬
-│🫒 ${ᴋᴇɪ}group
-│🫒 ${ᴋᴇɪ}lockgc
-│🫒 ${ᴋᴇɪ}unlockgc
-│🫒 ${ᴋᴇɪ}getdesc
-│🫒 ${ᴋᴇɪ}getdp
+│🫒 ${ᴋᴇɪ}bugreport _(ɴᴇᴡ)_
+│🫒 ${ᴋᴇɪ}group _(ɴᴇᴡ)_
+│🫒 ${ᴋᴇɪ}lockgc _(ɴᴇᴡ)_
+│🫒 ${ᴋᴇɪ}unlockgc _(ɴᴇᴡ)_
+│🫒 ${ᴋᴇɪ}getdesc _(ɴᴇᴡ)_
+│🫒 ${ᴋᴇɪ}getdp _(ɴᴇᴡ)_
+│🫒 ${ᴋᴇɪ}play _(ɴᴇᴡ)_
+│🫒 ${ᴋᴇɪ}ytaudio _(ᴜᴘᴅᴀᴛᴇᴅ)_
+│🫒 ${ᴋᴇɪ}ytvideo _(ᴜᴘᴅᴀᴛᴇᴅ)_
 └────────⭓
 
 ┌────⭓ 
-│New Welcome UI
-│New Help UI
+│New GIF for Mizuki _(ɢɪꜰ)_
+│New Welcome UI _(ʙʀᴀɴᴅ)_
+│New Help UI _(ʙʀᴀɴᴅ)_
 └────────⭓
 
 _check the help or menu for more info._`,
