@@ -22,39 +22,43 @@ module.exports = {
       var ꜱᴇɴᴅᴇʀᴄᴏɴꜰ = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
       `🐙============================================================================================================================<⚡>`;
       if (𝓜𝖎𝖟𝖚ӄ𝖎.isImage && 𝓜𝖎𝖟𝖚ӄ𝖎.type === "image") {
-        var replyChatObject = {
+        var STICKER_OBJECT = {
           message: chat.message,
         };
-        var imageId = chat.key.id;
-        console.log(replyChatObject);
+        var STICKER_ID = chat.key.id;
+        console.log(STICKER_OBJECT);
         try {
           await ӄʀǟӄɨռʐ
             .downloadAndSaveMediaMessage(
-              replyChatObject,
-              `./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/non_replied_${imageId}`
+              STICKER_OBJECT,
+              `./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/non_replied_${STICKER_ID}`
             )
             .then(async () => {
-              ffmpeg(`./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/non_replied_${imageId}.jpeg`)
+              ffmpeg(`./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/non_replied_${STICKER_ID}.jpeg`)
                 .outputOptions([`-y`, `-vcodec libwebp`])
                 .videoFilters(
                   `scale=2000:2000:flags=lanczos:force_original_aspect_ratio=decrease`,
                   `format=rgba`,
                   `pad=2000:2000:(ow-iw)/2:(oh-ih)/2:color=#00000000,setsar=1`
                 )
-                .save(`./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/non_replied_${imageId}.webp`)
+                .save(`./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/non_replied_${STICKER_ID}.webp`)
                 .on(`end`, async () => {
                   await ӄʀǟӄɨռʐ
                     .sendMessage(
                       𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
                       fs.readFileSync(
-                        `./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/non_replied_${imageId}.webp`
+                        `./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/non_replied_${STICKER_ID}.webp`
                       ),
                       MessageType.sticker,
                       { quoted: chat }
                     )
                     .then(
-                      fs.unlinkSync(`./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/non_replied_${imageId}.jpeg`),
-                      fs.unlinkSync(`./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/non_replied_${imageId}.webp`)
+                      fs.unlinkSync(
+                        `./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/non_replied_${STICKER_ID}.jpeg`
+                      ),
+                      fs.unlinkSync(
+                        `./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/non_replied_${STICKER_ID}.webp`
+                      )
                     );
                 })
                 .on(`ℓαвєяяσя`, async (ℓαвєяяσя) => {
@@ -66,37 +70,39 @@ module.exports = {
         }
         `🐙============================================================================================================================<⚡>`;
       } else if (𝓜𝖎𝖟𝖚ӄ𝖎.isReplyImage) {
-        var replyChatObject = {
+        var STICKER_OBJECT = {
           message: chat.message.extendedTextMessage.contextInfo.quotedMessage,
         };
-        var imageId = chat.message.extendedTextMessage.contextInfo.stanzaId;
-        console.log(replyChatObject);
+        var STICKER_ID = chat.message.extendedTextMessage.contextInfo.stanzaId;
+        console.log(STICKER_OBJECT);
         try {
           await ӄʀǟӄɨռʐ
             .downloadAndSaveMediaMessage(
-              replyChatObject,
-              `./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/replied_${imageId}`
+              STICKER_OBJECT,
+              `./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/replied_${STICKER_ID}`
             )
             .then(async () => {
-              ffmpeg(`./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/replied_${imageId}.jpeg`)
+              ffmpeg(`./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/replied_${STICKER_ID}.jpeg`)
                 .outputOptions([`-y`, `-vcodec libwebp`])
                 .videoFilters(
                   `scale=2000:2000:flags=lanczos:force_original_aspect_ratio=decrease`,
                   `format=rgba`,
                   `pad=2000:2000:(ow-iw)/2:(oh-ih)/2:color=#00000000,setsar=1`
                 )
-                .save(`./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/replied_${imageId}.webp`)
+                .save(`./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/replied_${STICKER_ID}.webp`)
                 .on(`end`, async () => {
                   await ӄʀǟӄɨռʐ
                     .sendMessage(
                       𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                      fs.readFileSync(`./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/replied_${imageId}.webp`),
+                      fs.readFileSync(
+                        `./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/replied_${STICKER_ID}.webp`
+                      ),
                       MessageType.sticker,
                       { quoted: chat }
                     )
                     .then(
-                      fs.unlinkSync(`./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/replied_${imageId}.jpeg`),
-                      fs.unlinkSync(`./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/replied_${imageId}.webp`)
+                      fs.unlinkSync(`./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/replied_${STICKER_ID}.jpeg`),
+                      fs.unlinkSync(`./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/replied_${STICKER_ID}.webp`)
                     );
                 })
                 .on(`ℓαвєяяσя`, async (ℓαвєяяσя) => {
