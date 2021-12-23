@@ -7,7 +7,7 @@ exports.resolve = function (messageInstance, ӄʀǟӄɨռʐ, groupMetadata) {
   var 𝓜𝖎𝖟𝖚ӄ𝖎 = new ƈʏɮօʀɢƈʟǟ();
   var prefix = _𝔏𝔞𝔟_.FOXTROT + `\\w+`;
   var prefixRegex = new RegExp(prefix, `g`);
-  var SUDOS = _𝔏𝔞𝔟_.SUDO;
+  var SUDO = _𝔏𝔞𝔟_.SUDO;
   try {
     var jsonMessage = JSON.stringify(messageInstance);
   } catch (CYΣЯЯ) {
@@ -121,7 +121,7 @@ exports.resolve = function (messageInstance, ӄʀǟӄɨռʐ, groupMetadata) {
     ? getGroupAdmins(𝓜𝖎𝖟𝖚ӄ𝖎.groupMembers)
     : ``;
   𝓜𝖎𝖟𝖚ӄ𝖎.groupId = 𝓜𝖎𝖟𝖚ӄ𝖎.isGroup ? groupMetadata.id : ``;
-  𝓜𝖎𝖟𝖚ӄ𝖎.isSenderSUDO = SUDOS.includes(
+  𝓜𝖎𝖟𝖚ӄ𝖎.isSenderSUDO = SUDO.includes(
     𝓜𝖎𝖟𝖚ӄ𝖎.sender.substring(0, 𝓜𝖎𝖟𝖚ӄ𝖎.sender.indexOf(`@`))
   );
   𝓜𝖎𝖟𝖚ӄ𝖎.isBotGroupAdmin = 𝓜𝖎𝖟𝖚ӄ𝖎.isGroup
