@@ -13,6 +13,7 @@ const _𝔏𝔞𝔟_ = require(`./🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/_𝔏𝔞𝔟_`
 const ℓιєηт = require(`./🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/catch`);
 const download = require(`download-file`);
 const Kolor = require(`chalk`);
+const yes_no = _𝔏𝔞𝔟_.Krakinz;
 const vers = require(`./package.json`);
 const 𝓜𝖎𝖟𝖚ӄ𝖎sql = _𝔏𝔞𝔟_.POSTQL;
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
@@ -147,7 +148,6 @@ async function 𝐌𝐢𝐳𝐮𝐤𝐢() {
       )
     );
     `🐙============================================================================================================================<⚡>`;
-    const yes_no = _𝔏𝔞𝔟_.Krakinz;
     if (yes_no === `Null`) {
       await ӄʀǟӄɨռʐ.sendMessage(
         ӄʀǟӄɨռʐ.user.jid,
@@ -402,7 +402,7 @@ ${ꜰᴇᴛᴄʜᴇᴅʙʏᴇ.message}`,
     `🐙============================================================================================================================<⚡>`;
     if (𝓜𝖎𝖟𝖚ӄ𝖎.isCmd) {
       console.log(
-        Kolor.green(`💡𝗜𝗻𝗳𝗼⬰ ${𝓜𝖎𝖟𝖚ӄ𝖎.commandName} command executed.`)
+        Kolor.blueBright(`💡𝗜𝗻𝗳𝗼 ⬰⬰⬰⬰⬰⬰ ${𝓜𝖎𝖟𝖚ӄ𝖎.commandName} command executed.`)
       );
       const command = 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹.get(𝓜𝖎𝖟𝖚ӄ𝖎.commandName);
       var arg = 𝓜𝖎𝖟𝖚ӄ𝖎.body.trim().split(/\s+/).slice(1);
