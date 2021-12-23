@@ -56,18 +56,22 @@ module.exports = {
         });
       };
       await GroupVideos.forEach(async function (youfound) {
-        const media = await ӄʀǟӄɨռʐ.prepareMessage(
-          𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-          { url: thumb },
-          MessageType.image,
-          {
-            mimetype: Mimetype.png || Mimetype.jpeg,
-          }
-        );
-        await ӄʀǟӄɨռʐ.sendMessage(
-          𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-          {
-            contentText: `𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚👋🏻 •@${ꜱᴇɴᴅᴇʀeceived},    
+        yta(youfound.url).then(async (gotResp) => {
+          console.log(youfound.url);
+          const { dl_link, thumb, title, filesizeF, filesize } = gotResp;
+          console.log(gotResp);
+          const media = await ӄʀǟӄɨռʐ.prepareMessage(
+            𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+            { url: thumb },
+            MessageType.image,
+            {
+              mimetype: Mimetype.png || Mimetype.jpeg,
+            }
+          );
+          await ӄʀǟӄɨռʐ.sendMessage(
+            𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+            {
+              contentText: `𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚👋🏻 •@${ꜱᴇɴᴅᴇʀeceived},    
 ⭕𝗔𝘂𝗱𝗶𝗼 𝗣𝗹𝗲𝗮𝘀𝗲 𝘄𝗮𝗶𝘁 𝗳𝗼𝗿 𝘁𝗵𝗲 𝗱𝗲𝗹𝗶𝘃𝗲𝗿𝘆 𝗼𝗳 𝗔𝘂𝗱𝗶𝗼!
 
 
@@ -76,33 +80,29 @@ module.exports = {
 ⏰𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧⤞ ${youfound.timestamp}
 ✒️𝐀𝐮𝐭𝐡𝐨𝐫⤞ ${youfound.author.name}
 🔗𝐋𝐢𝐧𝐤⤞ ${youfound.url}`,
-            footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*`,
-            buttons: [
-              {
-                buttonId: `${ᴋᴇɪ}happy`,
-                buttonText: { displayText: `${ᴋᴇɪ}happy` },
-                type: 1,
-              },
-              {
-                buttonId: `${ᴋᴇɪ}bugreport`,
-                buttonText: { displayText: `${ᴋᴇɪ}bugreport` },
-                type: 1,
-              },
-            ],
-            headerType: 4,
-            imageMessage: media.message.imageMessage,
-          },
-          MessageType.buttonsMessage,
-          {
-            quoted: chat,
-            contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
-          }
-        );
-        yta(youfound.url).then(async (gotResp) => {
-          console.log(youfound.url);
-          const { dl_link, thumb, title, filesizeF, filesize } = gotResp;
-          console.log(gotResp);
-          await axios
+              footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*`,
+              buttons: [
+                {
+                  buttonId: `${ᴋᴇɪ}happy`,
+                  buttonText: { displayText: `${ᴋᴇɪ}happy` },
+                  type: 1,
+                },
+                {
+                  buttonId: `${ᴋᴇɪ}bugreport`,
+                  buttonText: { displayText: `${ᴋᴇɪ}bugreport` },
+                  type: 1,
+                },
+              ],
+              headerType: 4,
+              imageMessage: media.message.imageMessage,
+            },
+            MessageType.buttonsMessage,
+            {
+              quoted: chat,
+              contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
+            }
+          );
+          axios
             .get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
             .then(async (a) => {
               console.log(a);
