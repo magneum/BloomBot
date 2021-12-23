@@ -79,7 +79,6 @@ async function 𝐌𝐢𝐳𝐮𝐤𝐢() {
       console.log(𝓜𝖎𝖟𝖚ӄ𝖎Table.toString());
     }
   }
-  await loadCommands();
   console.clear();
   if (_𝔏𝔞𝔟_.HEROKU_API === `Null` || _𝔏𝔞𝔟_.HEROKU_BOT_NAME === `Null`) {
     console.log(
@@ -136,6 +135,7 @@ async function 𝐌𝐢𝐳𝐮𝐤𝐢() {
       Kolor.yellow(`⬡=================⬡    🍁爪𝖎𝖟𝖚ӄ𝖎™🍁    ⬡=================⬡`)
     );
     console.log(Kolor.green(`💡𝗜𝗻𝗳𝗼⬰ 𝘚𝘺𝘯𝘤𝘪𝘯𝘨 𝘋𝘢𝘵𝘢 𝘸𝘪𝘵𝘩 𝘏𝘰𝘴𝘵...✅`));
+    await loadCommands();
     console.log(
       Kolor.green(`⬡=================⬡    🍁爪𝖎𝖟𝖚ӄ𝖎™🍁    ⬡=================⬡`),
       Kolor.red(`
