@@ -69,8 +69,6 @@ module.exports = {
 
 ┌────⭓ *𝙁𝙪𝙣𝙨*  ⦿
 │🦄• ${ᴋᴇɪ}google: _search anything on google_
-│🦄• ${ᴋᴇɪ}pinterest _search anything on pinterest_
-│🦄• ${ᴋᴇɪ}carbon: _convert text to carbonized image_
 │🦄• ${ᴋᴇɪ}github: _fing any github profile_
 │🦄• ${ᴋᴇɪ}beautycheck: _check beauty of tagged person/yourself_
 │🦄• ${ᴋᴇɪ}joke: _get random jokes_
