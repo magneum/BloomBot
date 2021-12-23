@@ -39,6 +39,10 @@ const env = {
           dialectOptions: { ssl: { require: true, rejectUnauthorized: false } },
         }),
   MEE: MizukiMain,
+  SUDO:
+    process.env.SUDO === undefined
+      ? `918250889325,918436686758,989035024059`
+      : process.env.SUDO,
   ɴᴏᴛᴀᴅᴍɪɴ: `./𝓜𝖎𝖟𝖚ӄ𝖎/𝓜𝖎𝖟𝖚ӄ𝖎MemErr.png`,
   INVL: `https://i.postimg.cc/x8KGDHKw/Mizuki-Invalid.png`,
   UPT: `https://i.postimg.cc/kgjQm7bg/Mizuki-Update.png`,
