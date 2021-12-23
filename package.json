@@ -1,7 +1,7 @@
 {
   "main": "🍁爪𝖎𝖟𝖚ӄ𝖎™.js",
   "name": "mizuki",
-  "vers": "𝘣𝘦𝘵𝘢-v𝟣𝟫.7",
+  "vers": "𝘣𝘦𝘵𝘢-v𝟣𝟫.8",
   "dependencies": {
     "@adiwajshing/baileys": "^3.5.3",
     "@cicciosgamino/openweather-apis": "^5.0.1",
@@ -62,6 +62,7 @@
     "nekobin": "^0.0.1",
     "nhentai-pdf": "^1.0.0",
     "nhentaidownloader": "^1.1.6",
+    "node-cooldown": "^0.0.2",
     "node-fetch": "^2.6.1",
     "nodejs-file-downloader": "^4.8.1",
     "nodemon": "^2.0.15",

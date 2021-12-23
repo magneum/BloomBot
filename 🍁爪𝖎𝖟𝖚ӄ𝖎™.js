@@ -6,6 +6,8 @@
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const 𝓜𝖎𝖟𝖚ӄ𝖎ֆʏռօք = require(`./🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/𝓜𝖎𝖟𝖚ӄ𝖎ᴢᴇɴ`);
 const AutoKrakz = require(`./🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/𝓜𝖎𝖟𝖚ӄ𝖎ɢɪᴛ`);
+const clearance = require("./🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/clearance");
+const BanList = require("./🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/BanList");
 const 𝓜𝖎𝖟𝖚ӄ𝖎ǟքք = require(`./🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/helper`);
 const welbuts = require(`./🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/welbuts`);
 const postDb = require(`./🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/postDb`);
@@ -401,56 +403,67 @@ ${ꜰᴇᴛᴄʜᴇᴅʙʏᴇ.message}`,
     }
     `🐙============================================================================================================================<⚡>`;
     if (𝓜𝖎𝖟𝖚ӄ𝖎.isCmd) {
-      console.log(
-        Kolor.blueBright(`💡𝗜𝗻𝗳𝗼 ⬰⬰⬰⬰⬰⬰ ${𝓜𝖎𝖟𝖚ӄ𝖎.commandName} command executed.`)
+      let CheckBans = await BanList.getBanlistUser(
+        𝓜𝖎𝖟𝖚ӄ𝖎.sender,
+        𝓜𝖎𝖟𝖚ӄ𝖎.chatId
       );
-      const command = 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹.get(𝓜𝖎𝖟𝖚ӄ𝖎.commandName);
-      var arg = 𝓜𝖎𝖟𝖚ӄ𝖎.body.trim().split(/\s+/).slice(1);
-      var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
-      var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
-      if (!command) {
-        let content = fs.readFileSync(`./𝓜𝖎𝖟𝖚ӄ𝖎/Mizuki_Invalid.png`);
-        const media = await ӄʀǟӄɨռʐ.prepareMessage(
-          𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-          content,
-          MessageType.image,
-          {
-            mimetype: Mimetype.png,
-          }
+      const letGo = await clearance(𝓜𝖎𝖟𝖚ӄ𝖎, ӄʀǟӄɨռʐ, CheckBans);
+      if (letGo) {
+        return;
+      } else {
+        console.log(
+          Kolor.blueBright(
+            `💡𝗜𝗻𝗳𝗼 ⬰⬰⬰⬰⬰⬰ ${𝓜𝖎𝖟𝖚ӄ𝖎.commandName} command executed.`
+          )
         );
-        return await ӄʀǟӄɨռʐ
-          .sendMessage(
+        const command = 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹.get(𝓜𝖎𝖟𝖚ӄ𝖎.commandName);
+        var arg = 𝓜𝖎𝖟𝖚ӄ𝖎.body.trim().split(/\s+/).slice(1);
+        var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
+        var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
+        if (!command) {
+          let content = fs.readFileSync(`./𝓜𝖎𝖟𝖚ӄ𝖎/Mizuki_Invalid.png`);
+          const media = await ӄʀǟӄɨռʐ.prepareMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+            content,
+            MessageType.image,
             {
-              contentText: `𝗜𝗻𝘃𝗮𝗹𝗶𝗱 𝗖𝗼𝗺𝗺𝗮𝗻𝗱
+              mimetype: Mimetype.png,
+            }
+          );
+          return await ӄʀǟӄɨռʐ
+            .sendMessage(
+              𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+              {
+                contentText: `𝗜𝗻𝘃𝗮𝗹𝗶𝗱 𝗖𝗼𝗺𝗺𝗮𝗻𝗱
 
 *😑Baka* @${ꜱᴇɴᴅᴇʀeceived},
 -.-Type *${ᴋᴇɪ}help*`,
-              footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*`,
-              buttons: [
-                {
-                  buttonId: `${ᴋᴇɪ}list`,
-                  buttonText: { displayText: `${ᴋᴇɪ}list` },
-                  type: 1,
-                },
-                {
-                  buttonId: `${ᴋᴇɪ}list`,
-                  buttonText: { displayText: `${ᴋᴇɪ}list` },
-                  type: 1,
-                },
-              ],
-              headerType: 4,
-              imageMessage: media.message.imageMessage,
-            },
-            MessageType.buttonsMessage,
-            {
-              quoted: chat,
-              contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
-            }
-          )
-          .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
+                footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*`,
+                buttons: [
+                  {
+                    buttonId: `${ᴋᴇɪ}list`,
+                    buttonText: { displayText: `${ᴋᴇɪ}list` },
+                    type: 1,
+                  },
+                  {
+                    buttonId: `${ᴋᴇɪ}list`,
+                    buttonText: { displayText: `${ᴋᴇɪ}list` },
+                    type: 1,
+                  },
+                ],
+                headerType: 4,
+                imageMessage: media.message.imageMessage,
+              },
+              MessageType.buttonsMessage,
+              {
+                quoted: chat,
+                contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
+              }
+            )
+            .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
+        }
+        return command.handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹);
       }
-      return command.handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹);
     }
     `🐙============================================================================================================================<⚡>`;
     var enableanti = await postDb.checkSettings(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, `setantilink`);
