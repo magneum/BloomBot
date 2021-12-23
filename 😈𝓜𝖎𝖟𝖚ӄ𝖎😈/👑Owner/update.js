@@ -59,7 +59,6 @@ Nice Try But Only My *Owner* Can Use *OWNER_ONLY* Commands!`,
               },
               MessageType.png,
               {
-                quoted: chat,
                 contextInfo: {
                   mentionedJid: members,
                   forwardingScore: 999,
