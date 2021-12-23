@@ -46,7 +46,7 @@ module.exports = {
         const LinkForGroups = await yts(arg.join(` `));
         const GroupVideos = LinkForGroups.videos.slice(0, 1);
         const fn = Date.now();
-        const filename = fn.toString();
+        const filename = fn;
         var DAudio = function (uri, filename, callback) {
           request.head(uri, function (ℓαвєяяσя, gotResp, body) {
             console.log(gotResp);

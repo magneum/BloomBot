@@ -66,7 +66,7 @@ module.exports = {
         const LinkForGroups = await yts(SpotRslt.url);
         const GroupVideos = LinkForGroups.videos.slice(0, 1);
         const fn = Date.now() / 10000;
-        const filename = ꜱᴇɴᴅᴇʀeceived + fn.toString();
+        const filename = fn;
         var DAudio = function (uri, filename, callback) {
           request.head(uri, function (ℓαвєяяσя, gotResp, body) {
             console.log(gotResp);

@@ -131,7 +131,7 @@ module.exports = {
         };
         `🐙============================================================================================================================<⚡>`;
         const fn = Date.now();
-        const filename = fn.toString();
+        const filename = fn;
         yta(arg[0]).then(async (gotResp) => {
           const { dl_link, thumb, title, filesizeF, filesize } = gotResp;
           axios
