@@ -161,7 +161,6 @@ module.exports = {
 │⚙️• ${ᴋᴇɪ}bugreport
 │⚙️• ${ᴋᴇɪ}help 
 │⚙️• ${ᴋᴇɪ}mizuki
-│⚙️• ${ᴋᴇɪ}nekobin _(ʙᴇᴛᴀ)_
 │⚙️• ${ᴋᴇɪ}update
 │⚙️• ${ᴋᴇɪ}broadcast _(ʙᴇᴛᴀ)_
 └───────⭓

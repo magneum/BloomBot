@@ -71,7 +71,6 @@ module.exports = {
 ┌────⭓ *𝙎𝙮𝙨𝙩𝙚𝙢*  ⦿
 │⚙️• ${ᴋᴇɪ}bugreport: _report any bug_
 │⚙️• ${ᴋᴇɪ}help: _basic help command_
-│⚙️• ${ᴋᴇɪ}nekobin: _paste text to nekobin_
 │⚙️• ${ᴋᴇɪ}mizuki: _check mizuki system health config_
 │⚙️• ${ᴋᴇɪ}update: _update Mizuki bot_
 │⚙️• ${ᴋᴇɪ}broadcast: _send broadcast message to groups and private_
