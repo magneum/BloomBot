@@ -95,7 +95,7 @@ only *𝓜𝖎𝖟𝖚ӄ𝖎-Owners* can use this feature`,
             {
               contentText: `📜𝗦𝗽𝗲𝗰𝗶𝗮𝗹 𝗕𝗿𝗼𝗮𝗱𝗰𝗮𝘀𝘁
 ${arg.join(` `)}`,
-              footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}* ${vers.vers}`,
+              footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*`,
               buttons: [
                 {
                   buttonId: `${ᴋᴇɪ}help`,

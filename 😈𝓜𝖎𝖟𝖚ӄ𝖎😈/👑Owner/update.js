@@ -49,9 +49,9 @@ Nice Try But Only My *Owner* Can Use *OWNER_ONLY* Commands!`,
           .sendMessage(
             _.jid,
             {
-              url: _𝔏𝔞𝔟_.UPT,
+              url: "https://i.postimg.cc/wjQm7TcC/Mizuki-Update.png",
             },
-            MessageType.image,
+            MessageType.png,
             {
               quoted: chat,
               contextInfo: {
@@ -61,16 +61,15 @@ Nice Try But Only My *Owner* Can Use *OWNER_ONLY* Commands!`,
               },
               sendEphemeral: true,
               mimetype: Mimetype.png,
-              caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
-
-•@${ꜱᴇɴᴅᴇʀeceived},
-ʏᴏᴜʀ *🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}* ɪꜱ ɴᴏᴡ ᴜᴘᴅᴀᴛɪɴɢ.ᴘʟᴇᴀꜱᴇ ᴡᴀɪᴛ ꜰᴏʀ 30-60ꜱᴇᴄ`,
+              caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}* ɪꜱ ɴᴏᴡ ᴜᴘᴅᴀᴛɪɴɢ.ᴘʟᴇᴀꜱᴇ ᴡᴀɪᴛ ꜰᴏʀ 30-60ꜱᴇᴄ`,
             }
           )
+          .then(async () => {
+            await heroku
+              .delete(`/apps/` + _𝔏𝔞𝔟_.HEROKU_BOT_NAME + `/dynos/` + `worker`)
+              .then((x) => console.log(x));
+          })
           .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
-        heroku
-          .delete(`/apps/` + _𝔏𝔞𝔟_.HEROKU_BOT_NAME + `/dynos/` + `worker`)
-          .then((x) => console.log(x));
       }
     }
   },
