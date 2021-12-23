@@ -21,57 +21,58 @@ module.exports = {
   name: `play`,
   𝓜𝓮𝓮6ʍօʀɛ: `${ᴋᴇɪ}play <youtube song name>`,
   async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
-    `🐙============================================================================================================================<⚡>`;
-    const ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
-    const 𝓜Usage = 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹.get(𝓜𝖎𝖟𝖚ӄ𝖎.commandName);
-    const ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
-    const 𝓜𝓮𝓮ʍօʀɛ = 𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ === undefined ? `Null` : 𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ;
-    `🐙============================================================================================================================<⚡>`;
-    if (arg.length === 0) {
-      const nahargs = require(`../../🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/nahargs`);
-      return nahargs
-        .nahargs(
-          ӄʀǟӄɨռʐ,
-          chat,
-          𝓜𝖎𝖟𝖚ӄ𝖎,
-          ꜱᴇɴᴅᴇʀɪᴅ,
-          ꜱᴇɴᴅᴇʀeceived,
-          𝓜𝖎𝖟𝖚ӄ𝖎.commandName,
-          𝓜𝓮𝓮ʍօʀɛ
-        )
-        .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
+    try {
       `🐙============================================================================================================================<⚡>`;
-    } else {
-      const LinkForGroups = await yts(arg.join(` `));
-      const GroupVideos = LinkForGroups.videos.slice(0, 1);
-      const fn = Date.now() / 10000;
-      const filename = fn.toString();
-      var DAudio = function (uri, filename, callback) {
-        request.head(uri, function (ℓαвєяяσя, gotResp, body) {
-          console.log(gotResp);
-          mime = gotResp.headers[`content-type`];
-          request(uri)
-            .pipe(fs.createWriteStream(filename))
-            .on(`close`, callback);
-        });
-      };
-      await GroupVideos.forEach(async function (youfound) {
-        yta(youfound.url).then(async (gotResp) => {
-          console.log(youfound.url);
-          const { dl_link, thumb, title, filesizeF, filesize } = gotResp;
-          console.log(gotResp);
-          const media = await ӄʀǟӄɨռʐ.prepareMessage(
-            𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            { url: thumb },
-            MessageType.image,
-            {
-              mimetype: Mimetype.png || Mimetype.jpeg,
-            }
-          );
-          await ӄʀǟӄɨռʐ.sendMessage(
-            𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            {
-              contentText: `𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚👋🏻 •@${ꜱᴇɴᴅᴇʀeceived},    
+      const ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
+      const 𝓜Usage = 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹.get(𝓜𝖎𝖟𝖚ӄ𝖎.commandName);
+      const ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
+      const 𝓜𝓮𝓮ʍօʀɛ = 𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ === undefined ? `Null` : 𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ;
+      `🐙============================================================================================================================<⚡>`;
+      if (arg.length === 0) {
+        const nahargs = require(`../../🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/nahargs`);
+        return nahargs
+          .nahargs(
+            ӄʀǟӄɨռʐ,
+            chat,
+            𝓜𝖎𝖟𝖚ӄ𝖎,
+            ꜱᴇɴᴅᴇʀɪᴅ,
+            ꜱᴇɴᴅᴇʀeceived,
+            𝓜𝖎𝖟𝖚ӄ𝖎.commandName,
+            𝓜𝓮𝓮ʍօʀɛ
+          )
+          .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
+        `🐙============================================================================================================================<⚡>`;
+      } else {
+        const LinkForGroups = await yts(arg.join(` `));
+        const GroupVideos = LinkForGroups.videos.slice(0, 1);
+        const fn = Date.now() / 10000;
+        const filename = ꜱᴇɴᴅᴇʀeceived + fn.toString();
+        var DAudio = function (uri, filename, callback) {
+          request.head(uri, function (ℓαвєяяσя, gotResp, body) {
+            console.log(gotResp);
+            mime = gotResp.headers[`content-type`];
+            request(uri)
+              .pipe(fs.createWriteStream(filename))
+              .on(`close`, callback);
+          });
+        };
+        await GroupVideos.forEach(async function (youfound) {
+          yta(youfound.url).then(async (gotResp) => {
+            console.log(youfound.url);
+            const { dl_link, thumb, title, filesizeF, filesize } = gotResp;
+            console.log(gotResp);
+            const media = await ӄʀǟӄɨռʐ.prepareMessage(
+              𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+              { url: thumb },
+              MessageType.image,
+              {
+                mimetype: Mimetype.png || Mimetype.jpeg,
+              }
+            );
+            await ӄʀǟӄɨռʐ.sendMessage(
+              𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+              {
+                contentText: `𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚👋🏻 •@${ꜱᴇɴᴅᴇʀeceived},    
 ⭕𝗔𝘂𝗱𝗶𝗼 𝗣𝗹𝗲𝗮𝘀𝗲 𝘄𝗮𝗶𝘁 𝗳𝗼𝗿 𝘁𝗵𝗲 𝗱𝗲𝗹𝗶𝘃𝗲𝗿𝘆 𝗼𝗳 𝗔𝘂𝗱𝗶𝗼!
 
 
@@ -80,48 +81,52 @@ module.exports = {
 ⏰𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧⤞ ${youfound.timestamp}
 ✒️𝐀𝐮𝐭𝐡𝐨𝐫⤞ ${youfound.author.name}
 🔗𝐋𝐢𝐧𝐤⤞ ${youfound.url}`,
-              footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*`,
-              buttons: [
-                {
-                  buttonId: `${ᴋᴇɪ}happy`,
-                  buttonText: { displayText: `${ᴋᴇɪ}happy` },
-                  type: 1,
-                },
-                {
-                  buttonId: `${ᴋᴇɪ}bugreport`,
-                  buttonText: { displayText: `${ᴋᴇɪ}bugreport` },
-                  type: 1,
-                },
-              ],
-              headerType: 4,
-              imageMessage: media.message.imageMessage,
-            },
-            MessageType.buttonsMessage,
-            {
-              quoted: chat,
-              contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
-            }
-          );
-          axios
-            .get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
-            .then(async (a) => {
-              console.log(a);
-              DAudio(dl_link, filename, async function () {
-                await ӄʀǟӄɨռʐ
-                  .sendMessage(
-                    𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                    fs.readFileSync(filename),
-                    MessageType.audio,
-                    {
-                      quoted: chat,
-                      mimetype: Mimetype.mp4Audio,
-                    }
-                  )
-                  .then(fs.unlinkSync(filename));
+                footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*`,
+                buttons: [
+                  {
+                    buttonId: `${ᴋᴇɪ}happy`,
+                    buttonText: { displayText: `${ᴋᴇɪ}happy` },
+                    type: 1,
+                  },
+                  {
+                    buttonId: `${ᴋᴇɪ}bugreport`,
+                    buttonText: { displayText: `${ᴋᴇɪ}bugreport` },
+                    type: 1,
+                  },
+                ],
+                headerType: 4,
+                imageMessage: media.message.imageMessage,
+              },
+              MessageType.buttonsMessage,
+              {
+                quoted: chat,
+                contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
+              }
+            );
+            axios
+              .get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
+              .then(async (a) => {
+                console.log(a);
+                DAudio(dl_link, filename, async function () {
+                  await ӄʀǟӄɨռʐ
+                    .sendMessage(
+                      𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                      fs.readFileSync(filename),
+                      MessageType.audio,
+                      {
+                        quoted: chat,
+                        mimetype: Mimetype.mp4Audio,
+                      }
+                    )
+                    .then(fs.unlinkSync(filename));
+                });
               });
-            });
+          });
         });
-      });
+      }
+    } catch (ℓαвєяяσя) {
+      ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
+      console.log(ℓαвєяяσя);
     }
   },
 };
