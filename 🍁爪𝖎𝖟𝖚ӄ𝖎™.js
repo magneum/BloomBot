@@ -6,7 +6,7 @@
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const 𝓜𝖎𝖟𝖚ӄ𝖎ֆʏռօք = require(`./🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/𝓜𝖎𝖟𝖚ӄ𝖎ᴢᴇɴ`);
 const AutoKrakz = require(`./🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/𝓜𝖎𝖟𝖚ӄ𝖎ɢɪᴛ`);
-const clearance = require("./🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/clearance");
+const LetGoChecker = require("./🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/LetGoChecker");
 const BanList = require("./🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/BanList");
 const 𝓜𝖎𝖟𝖚ӄ𝖎ǟքք = require(`./🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/helper`);
 const welbuts = require(`./🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/welbuts`);
@@ -407,8 +407,8 @@ ${ꜰᴇᴛᴄʜᴇᴅʙʏᴇ.message}`,
         𝓜𝖎𝖟𝖚ӄ𝖎.sender,
         𝓜𝖎𝖟𝖚ӄ𝖎.chatId
       );
-      const letGo = await clearance(𝓜𝖎𝖟𝖚ӄ𝖎, ӄʀǟӄɨռʐ, CheckBans);
-      if (letGo) {
+      const letGo = await LetGoChecker(𝓜𝖎𝖟𝖚ӄ𝖎, ӄʀǟӄɨռʐ, CheckBans);
+      if (!letGo) {
         return;
       } else {
         console.log(
