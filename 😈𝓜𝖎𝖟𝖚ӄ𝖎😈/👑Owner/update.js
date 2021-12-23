@@ -20,66 +20,74 @@ module.exports = {
   description: `ᴛʜɪꜱ ᴄᴏᴍᴍᴀɴᴅ ᴄᴀɴ ʙᴇ ᴜꜱᴇᴅ ᴛᴏ ᴜᴘᴅᴀᴛᴇ ᴛʜᴇ ʙᴏᴛ`,
   𝓜𝓮𝓮6ʍօʀɛ: `${ᴋᴇɪ}`,
   async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
-    var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
-    var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
-    if (!𝓜𝖎𝖟𝖚ӄ𝖎.fromMe && !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderSUDO) {
-      return await ӄʀǟӄɨռʐ.sendMessage(
-        𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-        {
-          url: _𝔏𝔞𝔟_.ɴᴏᴛᴀᴅᴍɪɴ,
-        },
-        MessageType.image,
-        {
-          quoted: chat,
-          mimetype: Mimetype.png,
-          contextInfo: {
-            mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
+    try {
+      var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
+      var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
+      `🐙============================================================================================================================<⚡>`;
+      if (!𝓜𝖎𝖟𝖚ӄ𝖎.fromMe && !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderSUDO) {
+        return await ӄʀǟӄɨռʐ.sendMessage(
+          𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+          {
+            url: _𝔏𝔞𝔟_.ɴᴏᴛᴀᴅᴍɪɴ,
           },
-          caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
+          MessageType.image,
+          {
+            quoted: chat,
+            mimetype: Mimetype.png,
+            contextInfo: {
+              mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
+            },
+            caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
 
 •@${ꜱᴇɴᴅᴇʀeceived},
 Nice Try But Only My *Owner* Can Use *OWNER_ONLY* Commands!`,
+          }
+        );
+        `🐙============================================================================================================================<⚡>`;
+      } else {
+        𝓜𝓮𝓮s = await ӄʀǟӄɨռʐ.chats.all();
+        let members = [];
+        for (var i = 0; i < 𝓜𝖎𝖟𝖚ӄ𝖎.groupMembers.length; i++) {
+          members[i] = 𝓜𝖎𝖟𝖚ӄ𝖎.groupMembers[i].jid;
         }
-      );
-      `🐙============================================================================================================================<⚡>`;
-    } else {
-      𝓜𝓮𝓮s = await ӄʀǟӄɨռʐ.chats.all();
-      let members = [];
-      for (var i = 0; i < 𝓜𝖎𝖟𝖚ӄ𝖎.groupMembers.length; i++) {
-        members[i] = 𝓜𝖎𝖟𝖚ӄ𝖎.groupMembers[i].jid;
-      }
-      for (let _ of 𝓜𝓮𝓮s) {
-        await ӄʀǟӄɨռʐ
-          .sendMessage(
-            _.jid,
-            {
-              url: "https://i.postimg.cc/wjQm7TcC/Mizuki-Update.png",
-            },
-            MessageType.png,
-            {
-              quoted: chat,
-              contextInfo: {
-                forwardingScore: 999,
-                isForwarded: true,
-                stanzaId: 𝓜𝖎𝖟𝖚ӄ𝖎.replyMessageId,
-                participant: 𝓜𝖎𝖟𝖚ӄ𝖎.replyParticipant,
-                quotedMessage: {
-                  conversation: 𝓜𝖎𝖟𝖚ӄ𝖎.replyMessage,
-                },
-                mentionedJid: members,
+        for (let _ of 𝓜𝓮𝓮s) {
+          await ӄʀǟӄɨռʐ
+            .sendMessage(
+              _.jid,
+              {
+                url: "https://i.postimg.cc/wjQm7TcC/Mizuki-Update.png",
               },
-              sendEphemeral: true,
-              mimetype: Mimetype.png,
-              caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}* ɪꜱ ɴᴏᴡ ᴜᴘᴅᴀᴛɪɴɢ.ᴘʟᴇᴀꜱᴇ ᴡᴀɪᴛ ꜰᴏʀ 30-60ꜱᴇᴄ`,
-            }
-          )
-          .then(async () => {
-            await heroku
-              .delete(`/apps/` + _𝔏𝔞𝔟_.HEROKU_BOT_NAME + `/dynos/` + `worker`)
-              .then((x) => console.log(x));
-          })
-          .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
+              MessageType.png,
+              {
+                quoted: chat,
+                contextInfo: {
+                  forwardingScore: 999,
+                  isForwarded: true,
+                  stanzaId: 𝓜𝖎𝖟𝖚ӄ𝖎.replyMessageId,
+                  participant: 𝓜𝖎𝖟𝖚ӄ𝖎.replyParticipant,
+                  quotedMessage: {
+                    conversation: 𝓜𝖎𝖟𝖚ӄ𝖎.replyMessage,
+                  },
+                  mentionedJid: members,
+                },
+                sendEphemeral: true,
+                mimetype: Mimetype.png,
+                caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}* ɪꜱ ɴᴏᴡ ᴜᴘᴅᴀᴛɪɴɢ.ᴘʟᴇᴀꜱᴇ ᴡᴀɪᴛ ꜰᴏʀ 30-60ꜱᴇᴄ`,
+              }
+            )
+            .then(async () => {
+              await heroku
+                .delete(`/apps/` + _𝔏𝔞𝔟_.HEROKU_BOT_NAME + `/dynos/` + `worker`)
+                .then((x) => console.log(x));
+            })
+            .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
+          `🐙============================================================================================================================<⚡>`;
+        }
       }
+    } catch (ℓαвєяяσя) {
+      ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
+      console.log(ℓαвєяяσя);
     }
   },
 };
+`🐙============================================================================================================================<⚡>`;
