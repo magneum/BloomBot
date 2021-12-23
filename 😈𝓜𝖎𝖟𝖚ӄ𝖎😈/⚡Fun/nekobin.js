@@ -11,7 +11,6 @@ var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 const vers = require(`../../package.json`);
 const MizuNeko = require(`nekobin`);
 const fs = require(`fs`);
-var Regex = require("regex");
 `🐙============================================================================================================================<⚡>`;
 module.exports = {
   name: `nekobin`,
