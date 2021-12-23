@@ -59,10 +59,7 @@ or reply *${ᴋᴇɪ}nekobin* to any text.`,
       `🐙============================================================================================================================<⚡>`;
       if (𝓜𝖎𝖟𝖚ӄ𝖎.isReply && 𝓜𝖎𝖟𝖚ӄ𝖎.type === `text`) {
         const MizuBin = {
-          content: 𝓜𝖎𝖟𝖚ӄ𝖎.replyMessage.replace(
-            𝓜𝖎𝖟𝖚ӄ𝖎.body[0] + 𝓜𝖎𝖟𝖚ӄ𝖎.commandName + ` `,
-            ``
-          ),
+          content: 𝓜𝖎𝖟𝖚ӄ𝖎.replyMessage.replace(𝓜𝖎𝖟𝖚ӄ𝖎.commandName + ` `, ``),
         };
         const filename = ꜱᴇɴᴅᴇʀɪᴅ + "_" + Date.now();
         await fs.writeFileSync(`./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/${filename}`, MizuBin.content);
@@ -74,7 +71,7 @@ or reply *${ᴋᴇɪ}nekobin* to any text.`,
             .sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
-              
+
 •@${ꜱᴇɴᴅᴇʀeceived}, Here Is Your pasted link👇🏽‍
 ${data.url}`,
               MessageType.text,
@@ -97,10 +94,7 @@ ${data.url}`,
       `🐙============================================================================================================================<⚡>`;
       if (!𝓜𝖎𝖟𝖚ӄ𝖎.isReply && 𝓜𝖎𝖟𝖚ӄ𝖎.type === `text`) {
         const MizuBin = {
-          content: 𝓜𝖎𝖟𝖚ӄ𝖎.body.replace(
-            𝓜𝖎𝖟𝖚ӄ𝖎.body[0] + 𝓜𝖎𝖟𝖚ӄ𝖎.commandName + ` `,
-            ``
-          ),
+          content: 𝓜𝖎𝖟𝖚ӄ𝖎.body.replace(𝓜𝖎𝖟𝖚ӄ𝖎.commandName + ` `, ``),
         };
         const filename = ꜱᴇɴᴅᴇʀɪᴅ + "_" + Date.now();
         await fs.writeFileSync(`./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/${filename}`, MizuBin.content);
