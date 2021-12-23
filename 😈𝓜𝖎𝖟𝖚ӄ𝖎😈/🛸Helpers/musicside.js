@@ -72,6 +72,7 @@ module.exports = {
 │⭕• ${ᴋᴇɪ}lyrics: _find lyrics of songs_
 │⭕• ${ᴋᴇɪ}ytsearch: _search videos in youtube_
 │⭕• ${ᴋᴇɪ}play: _download youtube audio under 100mb_
+│⭕• ${ᴋᴇɪ}song: _download youtube audio under 100mb_
 │⭕• ${ᴋᴇɪ}ytaudio: _download youtube audio under 100mb_
 │⭕• ${ᴋᴇɪ}ytvideo: _download youtube video under 100mb_
 │⭕• ${ᴋᴇɪ}spotify: _download spotify audio under 100mb_
