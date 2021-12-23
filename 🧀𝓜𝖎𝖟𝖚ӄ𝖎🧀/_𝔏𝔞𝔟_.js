@@ -8,7 +8,7 @@ if (fs.existsSync(`𝓜𝖎𝖟𝖚ӄ𝖎.env`)) {
 } else {
   require(`dotenv`);
 }
-var ᴛ = [`https://i.postimg.cc/sXG9mb1D/Mizuki-Main.png`];
+var ᴛ = [`https://i.postimg.cc/RFXvJhgD/Mizuki-Main.png`];
 const MizukiMain = ᴛ[Math.floor(Math.random() * ᴛ.length)];
 `🐙============================================================================================================================<⚡>`;
 const env = {
