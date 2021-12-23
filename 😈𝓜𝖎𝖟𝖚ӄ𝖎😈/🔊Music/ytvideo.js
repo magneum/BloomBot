@@ -1,3 +1,4 @@
+`🐙============================================================================================================================<⚡>`;
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const { ytv } = require(`../../🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/youmaker`);
 const _𝔏𝔞𝔟_ = require(`../../🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/_𝔏𝔞𝔟_`);
@@ -9,6 +10,7 @@ const request = require("request");
 const yts = require(`yt-search`);
 const axios = require(`axios`);
 const fs = require(`fs`);
+let mime = ``;
 const RegexYouTube =
   /(?:http(?:s|):\/\/|)(?:(?:www\.|)youtube(?:\-nocookie|)\.com\/(?:watch\?.*(?:|\&)v=|embed\/|v\/)|youtu\.be\/)([-_0-9A-Za-z]{11})/;
 `🐙`;
@@ -20,109 +22,123 @@ const RegexYouTube =
 `🐙`;
 module.exports = {
   name: `ytvideo`,
-  𝓜𝓮𝓮6ʍօʀɛ: `${ᴋᴇɪ}ytaudio <youtube link>`,
+  𝓜𝓮𝓮6ʍօʀɛ: `${ᴋᴇɪ}ytvideo <youtube link>`,
   async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹) {
-    `🐙============================================================================================================================<⚡>`;
-    const ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
-    const 𝓜Usage = 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹.get(𝓜𝖎𝖟𝖚ӄ𝖎.commandName);
-    const ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
-    const 𝓜𝓮𝓮ʍօʀɛ = 𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ === undefined ? `Null` : 𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ;
-    const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
-    const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
-    `🐙============================================================================================================================<⚡>`;
-    if (arg.length === 0) {
-      const nahargs = require(`../../🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/nahargs`);
-      return nahargs.nahargs(
-        ӄʀǟӄɨռʐ,
-        chat,
-        𝓜𝖎𝖟𝖚ӄ𝖎,
-        ꜱᴇɴᴅᴇʀɪᴅ,
-        ꜱᴇɴᴅᴇʀeceived,
-        𝓜𝖎𝖟𝖚ӄ𝖎.commandName,
-        𝓜𝓮𝓮ʍօʀɛ
-      );
+    try {
       `🐙============================================================================================================================<⚡>`;
-    } else if (!RegexYouTube.test(arg[0])) {
-      const nahargs = require(`../../🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/nahargs`);
-      return nahargs.nahargs(
-        ӄʀǟӄɨռʐ,
-        chat,
-        𝓜𝖎𝖟𝖚ӄ𝖎,
-        ꜱᴇɴᴅᴇʀɪᴅ,
-        ꜱᴇɴᴅᴇʀeceived,
-        𝓜𝖎𝖟𝖚ӄ𝖎.commandName,
-        𝓜𝓮𝓮ʍօʀɛ
-      );
+      const ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
+      const 𝓜Usage = 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹.get(𝓜𝖎𝖟𝖚ӄ𝖎.commandName);
+      const ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
+      const 𝓜𝓮𝓮ʍօʀɛ = 𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ === undefined ? `Null` : 𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ;
+      const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
+      const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
       `🐙============================================================================================================================<⚡>`;
-    } else {
-      const filename = `${FinalName}_${ꜱᴇɴᴅᴇʀɪᴅ}`
-      const LinkForExtractor = await yts(arg.join(` `));
-      const Extractor = LinkForExtractor.videos.slice(0, 1);
-      Extractor.forEach(async function (youfound) {
-        await ӄʀǟӄɨռʐ
-          .sendMessage(
-            𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
+      if (arg.length === 0) {
+        const nahargs = require(`../../🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/nahargs`);
+        return nahargs
+          .nahargs(
+            ӄʀǟӄɨռʐ,
+            chat,
+            𝓜𝖎𝖟𝖚ӄ𝖎,
+            ꜱᴇɴᴅᴇʀɪᴅ,
+            ꜱᴇɴᴅᴇʀeceived,
+            𝓜𝖎𝖟𝖚ӄ𝖎.commandName,
+            𝓜𝓮𝓮ʍօʀɛ
+          )
+          .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
+        `🐙============================================================================================================================<⚡>`;
+      } else if (!RegexYouTube.test(arg[0])) {
+        const nahargs = require(`../../🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/nahargs`);
+        return nahargs
+          .nahargs(
+            ӄʀǟӄɨռʐ,
+            chat,
+            𝓜𝖎𝖟𝖚ӄ𝖎,
+            ꜱᴇɴᴅᴇʀɪᴅ,
+            ꜱᴇɴᴅᴇʀeceived,
+            𝓜𝖎𝖟𝖚ӄ𝖎.commandName,
+            𝓜𝓮𝓮ʍօʀɛ
+          )
+          .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
+        `🐙============================================================================================================================<⚡>`;
+      } else {
+        const filename = `${FinalName}_${ꜱᴇɴᴅᴇʀɪᴅ}`;
+        const LinkForGroups = await yts(arg.join(` `));
+        const PrivatesVideos = LinkForGroups.videos.slice(0, 1);
+        const LinkForPrivates = await yts(arg.join(` `));
+        const GroupVideos = LinkForPrivates.videos.slice(0, 1);
+        await GroupVideos.forEach(async function (youfound) {
+          await ӄʀǟӄɨռʐ
+            .sendMessage(
+              𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+              `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
 
-📹𝗩𝗶𝗱𝗲𝗼 •@${ꜱᴇɴᴅᴇʀeceived}, 𝗣𝗹𝗲𝗮𝘀𝗲 𝗖𝗵𝗲𝗰𝗸 𝗬𝗼𝘂𝗿 𝗣𝗿𝗶𝘃𝗮𝘁𝗲 𝗗𝗠 𝗳𝗼𝗿 𝘁𝗵𝗲 𝗱𝗲𝗹𝗶𝘃𝗲𝗿𝘆 𝗼𝗳 𝗩𝗶𝗱𝗲𝗼!
+📀𝗩𝗶𝗱𝗲𝗼 •@${ꜱᴇɴᴅᴇʀeceived}, 𝗣𝗹𝗲𝗮𝘀𝗲 𝗖𝗵𝗲𝗰𝗸 𝗬𝗼𝘂𝗿 𝗣𝗿𝗶𝘃𝗮𝘁𝗲 𝗗𝗠 𝗳𝗼𝗿 𝘁𝗵𝗲 𝗱𝗲𝗹𝗶𝘃𝗲𝗿𝘆 𝗼𝗳 𝗩𝗶𝗱𝗲𝗼!
 
 🍻𝐓𝐢𝐭𝐥𝐞⤞ ${youfound.title}
 🙈𝐕𝐢𝐞𝐰𝐬⤞ ${youfound.views}
 ⏰𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧⤞ ${youfound.timestamp}
 ✒️𝐀𝐮𝐭𝐡𝐨𝐫⤞ ${youfound.author.name}
 🔗𝐋𝐢𝐧𝐤⤞ ${youfound.url}`,
-            MessageType.text,
-            {
-              quoted: chat,
-              contextInfo: {
-                mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
-              },
+              MessageType.text,
+              {
+                quoted: chat,
+                contextInfo: {
+                  mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
+                },
+              }
+            )
+            .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
+        });
+        `🐙============================================================================================================================<⚡>`;
+        const YouFetchers = async (
+          filename,
+          to,
+          url,
+          text = ``,
+          mention = []
+        ) => {
+          if (mention.length > 0) {
+            text = normalizeMention(to, text, mention);
+          }
+          var Download_Video = function (uri, filename, callback) {
+            request.head(uri, function (ℓαвєяяσя, gotResp, body) {
+              mime = gotResp.headers[`content-type`];
+              request(uri)
+                .pipe(fs.createWriteStream(filename))
+                .on(`close`, callback);
+            });
+          };
+          Download_Video(url, filename, async function () {
+            let media = fs.readFileSync(filename);
+            let type = mime.split(`/`)[0] + `Message`;
+            if (mime === `image/gif`) {
+              type = MessageType.video;
+              mime = Mimetype.gif;
             }
-          )
-          .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
-      });
-      `🐙============================================================================================================================<⚡>`;
-      const sendMediaURL = async (to, url, text = "", mids = []) => {
-        if (mids.length > 0) {
-          text = normalizeMention(to, text, mids);
-        }
-        let mime = "";
-        var download = function (uri, filename, callback) {
-          request.head(uri, function (err, res, body) {
-            mime = res.headers["content-type"];
-            request(uri)
-              .pipe(fs.createWriteStream(filename))
-              .on("close", callback);
+            if (mime.split(`/`)[0] === `audio`) {
+              mime = Mimetype.mp4Audio;
+            }
+            await ӄʀǟӄɨռʐ
+              .sendMessage(to, media, type, {
+                quoted: chat,
+                mimetype: mime,
+                caption: text,
+                contextInfo: {
+                  mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
+                },
+              })
+              .then(fs.unlinkSync(filename))
+              .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
           });
         };
-        download(url, filename, async function () {
-          console.log("done");
-          let media = fs.readFileSync(filename);
-          let type = mime.split("/")[0] + "Message";
-          if (mime === "image/gif") {
-            type = MessageType.video;
-            mime = Mimetype.gif;
-          }
-          if (mime.split("/")[0] === "audio") {
-            mime = Mimetype.mp4Audio;
-          }
-          ӄʀǟӄɨռʐ.sendMessage(to, media, type, {
-            quoted: chat,
-            mimetype: mime,
-            caption: text,
-            contextInfo: { mentionedJid: mids },
-          });
-          fs.unlinkSync(filename);
-        });
-      };
-      `🐙============================================================================================================================<⚡>`;
-      try {
-        ytv(arg[0]).then((res) => {
-          const { dl_link, thumb, title, filesizeF, filesize } = res;
+        `🐙============================================================================================================================<⚡>`;
+        ytv(arg[0]).then(async (gotResp) => {
+          const { dl_link, thumb, title, filesizeF, filesize } = gotResp;
           axios
             .get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
-            .then((a) => {
-              if (Number(filesize) >= 9999)
+            .then((alpha) => {
+              if (Number(filesize) >= 1000) {
                 return ӄʀǟӄɨռʐ
                   .sendMessage(
                     𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
@@ -138,21 +154,25 @@ module.exports = {
                       mimetype: Mimetype.png || Mimetype.jpeg,
                       content: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
 
-📹𝗩𝗶𝗱𝗲𝗼 •@${ꜱᴇɴᴅᴇʀeceived}, 𝗣𝗹𝗲𝗮𝘀𝗲 𝗖𝗵𝗼𝗼𝘀𝗲 𝗦𝗺𝗮𝗹𝗹𝗲𝗿 𝗙𝗶𝗹𝗲!
+📀𝗩𝗶𝗱𝗲𝗼 •@${ꜱᴇɴᴅᴇʀeceived}, 𝗣𝗹𝗲𝗮𝘀𝗲 𝗖𝗵𝗼𝗼𝘀𝗲 𝗦𝗺𝗮𝗹𝗹𝗲𝗿 𝗙𝗶𝗹𝗲!
 
 🍻𝐓𝐢𝐭𝐥𝐞⤞ ${title}
 🥣𝐒𝐢𝐳𝐞⤞ ${filesizeF}`,
                     }
                   )
                   .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
-              sendMediaURL(ꜱᴇɴᴅᴇʀɪᴅ, dl_link).catch((ℓαвєяяσя) =>
-                ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎)
-              );
+              } else {
+                PrivatesVideos.forEach(function () {
+                  Fetched = `📀𝗩𝗶𝗱𝗲𝗼`;
+                  YouFetchers(filename, ꜱᴇɴᴅᴇʀɪᴅ, dl_link, Fetched);
+                });
+              }
             });
         });
-      } catch (err) {
-        console.log(err);
       }
+    } catch (ℓαвєяяσя) {
+      ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
+      console.log(ℓαвєяяσя);
     }
   },
 };

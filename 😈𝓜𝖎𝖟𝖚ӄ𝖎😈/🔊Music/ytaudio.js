@@ -101,7 +101,7 @@ module.exports = {
           if (mention.length > 0) {
             text = normalizeMention(to, text, mention);
           }
-          var Download_Video = function (uri, filename, callback) {
+          var Download_Audio = function (uri, filename, callback) {
             request.head(uri, function (ℓαвєяяσя, gotResp, body) {
               mime = gotResp.headers[`content-type`];
               request(uri)
@@ -109,7 +109,7 @@ module.exports = {
                 .on(`close`, callback);
             });
           };
-          Download_Video(url, filename, async function () {
+          Download_Audio(url, filename, async function () {
             let media = fs.readFileSync(filename);
             let type = mime.split(`/`)[0] + `Message`;
             if (mime === `image/gif`) {
@@ -133,7 +133,6 @@ module.exports = {
           });
         };
         `🐙============================================================================================================================<⚡>`;
-
         yta(arg[0]).then(async (gotResp) => {
           const { dl_link, thumb, title, filesizeF, filesize } = gotResp;
           axios
