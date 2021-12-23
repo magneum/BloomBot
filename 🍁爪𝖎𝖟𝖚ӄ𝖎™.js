@@ -4,9 +4,11 @@
 `🐙`;
 `🐙`;
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
+const LetGoChecker = require("./🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/LetGoChecker");
+const LinkGoCheck = require("./🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/LinkGoCheck");
 const 𝓜𝖎𝖟𝖚ӄ𝖎ֆʏռօք = require(`./🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/𝓜𝖎𝖟𝖚ӄ𝖎ᴢᴇɴ`);
 const AutoKrakz = require(`./🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/𝓜𝖎𝖟𝖚ӄ𝖎ɢɪᴛ`);
-const LetGoChecker = require("./🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/LetGoChecker");
+const LinkList = require("./🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/LinkList");
 const BanList = require("./🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/BanList");
 const 𝓜𝖎𝖟𝖚ӄ𝖎ǟքք = require(`./🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/helper`);
 const welbuts = require(`./🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/welbuts`);
@@ -402,12 +404,50 @@ ${ꜰᴇᴛᴄʜᴇᴅʙʏᴇ.message}`,
       }
     }
     `🐙============================================================================================================================<⚡>`;
+    if (𝓜𝖎𝖟𝖚ӄ𝖎.isGroup && !𝓜𝖎𝖟𝖚ӄ𝖎.fromMe) {
+      let CheckLinks = await LinkList.getLinklistUser(
+        𝓜𝖎𝖟𝖚ӄ𝖎.sender,
+        𝓜𝖎𝖟𝖚ӄ𝖎.chatId
+      );
+      const letlinkGo = await LinkGoCheck(𝓜𝖎𝖟𝖚ӄ𝖎, ӄʀǟӄɨռʐ, CheckLinks);
+      console.log(letlinkGo);
+      if (letlinkGo) {
+        return;
+      } else {
+        const REMOVE = chat.key.fromMe
+          ? ӄʀǟӄɨռʐ.user.jid
+          : 𝓜𝖎𝖟𝖚ӄ𝖎.isGroup
+          ? chat.participant
+          : chat.key.remoteJid;
+        await ӄʀǟӄɨռʐ
+          .sendMessage(
+            𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+            `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
+
+@${REMOVE}
+
+*•──[ Message From Admins  ]──•*
+┌────⭓ 𝐀𝐧𝐭𝐢𝐥𝐢𝐧𝐤🐙𝐀𝐜𝐭𝐢𝐯𝐞
+│ ❗𝗔𝗻𝘁𝗶𝗹𝗶𝗻𝗸-𝗔𝗰𝘁𝗶𝘃𝗲 𝘚𝘰 𝘺𝘰𝘶 𝘸𝘪𝘭𝘭
+│ 𝘣𝘦 𝗔𝘂𝘁𝗼-𝗞𝗶𝗰𝗸𝗲𝗱 𝘣𝘺 𝘢𝘥𝘮𝘪𝘯𝘴❗
+└──────⭓`,
+            MessageType.text
+          )
+          .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
+        await ӄʀǟӄɨռʐ
+          .groupRemove(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, [REMOVE])
+          .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
+        return;
+      }
+    }
+    `🐙============================================================================================================================<⚡>`;
     if (𝓜𝖎𝖟𝖚ӄ𝖎.isCmd) {
       let CheckBans = await BanList.getBanlistUser(
         𝓜𝖎𝖟𝖚ӄ𝖎.sender,
         𝓜𝖎𝖟𝖚ӄ𝖎.chatId
       );
       const letGo = await LetGoChecker(𝓜𝖎𝖟𝖚ӄ𝖎, ӄʀǟӄɨռʐ, CheckBans);
+      console.log(letGo);
       if (!letGo) {
         return;
       } else {
@@ -463,52 +503,6 @@ ${ꜰᴇᴛᴄʜᴇᴅʙʏᴇ.message}`,
             .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
         }
         return command.handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹);
-      }
-    }
-    `🐙============================================================================================================================<⚡>`;
-    var enableanti = await postDb.checkSettings(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, `setantilink`);
-    var ꜰᴇᴛᴄʜᴇᴅanti = await postDb.getMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, `setantilink`);
-    if (enableanti === false || enableanti === `OFF`) {
-      return;
-    } else {
-      const REMOVE = chat.key.fromMe
-        ? ӄʀǟӄɨռʐ.user.jid
-        : 𝓜𝖎𝖟𝖚ӄ𝖎.isGroup
-        ? chat.participant
-        : chat.key.remoteJid;
-      if (!𝓜𝖎𝖟𝖚ӄ𝖎.fromMe && 𝓜𝖎𝖟𝖚ӄ𝖎.isGroup && !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderGroupAdmin) {
-        if (
-          (!𝓜𝖎𝖟𝖚ӄ𝖎.body.includes(_𝔏𝔞𝔟_.HASH) &&
-            𝓜𝖎𝖟𝖚ӄ𝖎.body.includes(`://chat.whatsapp.com/`)) ||
-          𝓜𝖎𝖟𝖚ӄ𝖎.body.includes(`://wa.me/`) ||
-          𝓜𝖎𝖟𝖚ӄ𝖎.body.includes(`://discord.gg`)
-        ) {
-          await ӄʀǟӄɨռʐ
-            .sendMessage(
-              𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
-
-@${REMOVE},
-┌────⭓ 𝐀𝐧𝐭𝐢𝐥𝐢𝐧𝐤🐙𝐀𝐜𝐭𝐢𝐯𝐞
-│ ❗𝗔𝗻𝘁𝗶𝗹𝗶𝗻𝗸-𝗔𝗰𝘁𝗶𝘃𝗲 𝘚𝘰 𝘺𝘰𝘶 𝘸𝘪𝘭𝘭
-│ 𝘣𝘦 𝗔𝘂𝘁𝗼-𝗞𝗶𝗰𝗸𝗲𝗱 𝘣𝘺 𝘢𝘥𝘮𝘪𝘯𝘴❗
-└───────────⭓
-
-*•──[ Message From Admins  ]──•*
-${ꜰᴇᴛᴄʜᴇᴅanti.message}`,
-              MessageType.text,
-              {
-                contextInfo: {
-                  mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
-                },
-              }
-            )
-            .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
-          await ӄʀǟӄɨռʐ
-            .groupRemove(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, [REMOVE])
-            .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
-          return;
-        }
       }
     }
   });

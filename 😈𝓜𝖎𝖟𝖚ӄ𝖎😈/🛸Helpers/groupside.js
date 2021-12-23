@@ -78,7 +78,7 @@ module.exports = {
 │🔰• ${ᴋᴇɪ}groupdp: _change group profile picture_
 │🔰• ${ᴋᴇɪ}kick: _ʀᴇᴍᴏᴠᴇ ᴀ ᴘᴇʀꜱᴏɴ ꜰʀᴏᴍ ᴀ ɢʀᴏᴜᴘ_
 │🔰• ${ᴋᴇɪ}tagall: _tag everyone in group_
-│🔰• ${ᴋᴇɪ}setantilink: _remove any person who sends any links_
+│🔰• ${ᴋᴇɪ}antilink: _remove any person who sends any links_
 │🔰• ${ᴋᴇɪ}setwelcome: _welcome new members with custom message_
 │🔰• ${ᴋᴇɪ}setgoodbye: _custom goodbye message for members when they leave_
 └───────⭓
