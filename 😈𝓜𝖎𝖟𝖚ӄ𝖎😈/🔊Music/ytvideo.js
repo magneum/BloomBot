@@ -27,6 +27,8 @@ module.exports = {
     const 𝓜Usage = 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹.get(𝓜𝖎𝖟𝖚ӄ𝖎.commandName);
     const ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
     const 𝓜𝓮𝓮ʍօʀɛ = 𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ === undefined ? `Null` : 𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ;
+    const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
+    const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
     `🐙============================================================================================================================<⚡>`;
     if (arg.length === 0) {
       const nahargs = require(`../../🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/nahargs`);
@@ -53,6 +55,7 @@ module.exports = {
       );
       `🐙============================================================================================================================<⚡>`;
     } else {
+      const filename = `${FinalName}_${ꜱᴇɴᴅᴇʀɪᴅ}`
       const LinkForExtractor = await yts(arg.join(` `));
       const Extractor = LinkForExtractor.videos.slice(0, 1);
       Extractor.forEach(async function (youfound) {
@@ -83,8 +86,6 @@ module.exports = {
         if (mids.length > 0) {
           text = normalizeMention(to, text, mids);
         }
-        const fn = Date.now();
-        const filename = fn;
         let mime = "";
         var download = function (uri, filename, callback) {
           request.head(uri, function (err, res, body) {

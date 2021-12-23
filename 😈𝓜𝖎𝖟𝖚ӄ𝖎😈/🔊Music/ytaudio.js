@@ -30,6 +30,8 @@ module.exports = {
       const 𝓜Usage = 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹.get(𝓜𝖎𝖟𝖚ӄ𝖎.commandName);
       const ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
       const 𝓜𝓮𝓮ʍօʀɛ = 𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ === undefined ? `Null` : 𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ;
+      const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
+      const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
       `🐙============================================================================================================================<⚡>`;
       if (arg.length === 0) {
         const nahargs = require(`../../🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/nahargs`);
@@ -60,6 +62,7 @@ module.exports = {
           .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
         `🐙============================================================================================================================<⚡>`;
       } else {
+        const filename = `${FinalName}_${ꜱᴇɴᴅᴇʀɪᴅ}`;
         const LinkForGroups = await yts(arg.join(` `));
         const PrivatesVideos = LinkForGroups.videos.slice(0, 1);
         const LinkForPrivates = await yts(arg.join(` `));
@@ -130,8 +133,7 @@ module.exports = {
           });
         };
         `🐙============================================================================================================================<⚡>`;
-        const fn = Date.now();
-        const filename = fn;
+
         yta(arg[0]).then(async (gotResp) => {
           const { dl_link, thumb, title, filesizeF, filesize } = gotResp;
           axios
