@@ -83,7 +83,7 @@ module.exports = {
         if (mids.length > 0) {
           text = normalizeMention(to, text, mids);
         }
-        const fn = Date.now() / 10000;
+        const fn = Date.now();
         const filename = fn.toString();
         let mime = "";
         var download = function (uri, filename, callback) {

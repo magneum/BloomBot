@@ -130,7 +130,7 @@ module.exports = {
           });
         };
         `🐙============================================================================================================================<⚡>`;
-        const fn = Date.now() / 10000;
+        const fn = Date.now();
         const filename = fn.toString();
         yta(arg[0]).then(async (gotResp) => {
           const { dl_link, thumb, title, filesizeF, filesize } = gotResp;
