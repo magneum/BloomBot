@@ -45,17 +45,17 @@ Nice Try But Only My *Owner* Can Use *OWNER_ONLY* Commands!`,
         );
         `🐙============================================================================================================================<⚡>`;
       } else {
-        𝓜𝓮𝓮s = await ӄʀǟӄɨռʐ.chats.all();
         let members = [];
         for (var i = 0; i < 𝓜𝖎𝖟𝖚ӄ𝖎.groupMembers.length; i++) {
           members[i] = 𝓜𝖎𝖟𝖚ӄ𝖎.groupMembers[i].jid;
         }
+        𝓜𝓮𝓮s = await ӄʀǟӄɨռʐ.chats.all();
         for (let _ of 𝓜𝓮𝓮s) {
           await ӄʀǟӄɨռʐ
             .sendMessage(
               _.jid,
               {
-                url: "https://i.postimg.cc/wjQm7TcC/Mizuki-Update.png",
+                url: "./𝓜𝖎𝖟𝖚ӄ𝖎/MizukiUpdate.PNG",
               },
               MessageType.png,
               {
