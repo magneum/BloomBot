@@ -78,10 +78,10 @@ or reply *${ᴋᴇɪ}nekobin* to any text.`,
         const filename = ꜱᴇɴᴅᴇʀɪᴅ + "_" + Date.now();
         await fs.writeFileSync(`./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/${filename}`, 𝓜𝖎𝖟𝖚ӄ𝖎.body);
         var Mdata = await fs.readFileSync(`./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/${filename}`, "utf8");
-        const FILE = Mdata.toString();
-        const FINAL = FILE.replace("/nekobin", "");
-        console.log(FINAL);
-        await MizuNeko.nekobin(FINAL).then(async (data) => {
+        // const FILE = Mdata.toString();
+        // const FINAL = FILE.replace("/nekobin", "");
+        console.log(Mdata.toString());
+        await MizuNeko.nekobin(Mdata.toString()).then(async (data) => {
           console.log(data);
           await ӄʀǟӄɨռʐ
             .sendMessage(
