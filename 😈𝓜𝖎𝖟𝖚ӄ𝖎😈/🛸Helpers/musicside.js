@@ -69,11 +69,12 @@ module.exports = {
 
 
 ┌────⭓ *𝙈𝙪𝙨𝙞𝙘*
-│🎙️• ${ᴋᴇɪ}lyrics: _find lyrics of songs_
-│🎙️• ${ᴋᴇɪ}ytsearch: _search videos in youtube_
-│🎙️• ${ᴋᴇɪ}play: _download youtube audio under 100mb_
-│🎙️• ${ᴋᴇɪ}ytaudio: _download youtube audio under 100mb_
-│🎙️• ${ᴋᴇɪ}ytvideo: _download youtube video under 100mb_
+│⭕• ${ᴋᴇɪ}lyrics: _find lyrics of songs_
+│⭕• ${ᴋᴇɪ}ytsearch: _search videos in youtube_
+│⭕• ${ᴋᴇɪ}play: _download youtube audio under 100mb_
+│⭕• ${ᴋᴇɪ}ytaudio: _download youtube audio under 100mb_
+│⭕• ${ᴋᴇɪ}ytvideo: _download youtube video under 100mb_
+│⭕• ${ᴋᴇɪ}spotify: _download spotify audio under 100mb_
 └───────⭓
 
 *⧪➛𝘾𝙤𝙢𝙞𝙣𝙜 𝙎𝙤𝙤𝙣!*
