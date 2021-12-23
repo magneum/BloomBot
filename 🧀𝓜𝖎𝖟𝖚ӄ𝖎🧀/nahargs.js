@@ -29,6 +29,9 @@ registerFont(`./🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/TheHeartOfEverythingDemo-KRdD.ttf
 registerFont(`./🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/SlouchybrushRegular-eZnEB.ttf`, {
   family: `SlouchybrushRegular`,
 });
+registerFont(`./🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/Shalma-Rp0Pe.otf`, {
+  family: `Shalma-Rp0Pe`,
+});
 var randomMC = require(`random-material-color`);
 exports.nahargs = async (
   ӄʀǟӄɨռʐ,
@@ -56,8 +59,8 @@ exports.nahargs = async (
     context.fillStyle = randomMC.getColor();
     context.fillText(text, 600, 170);
     context.fillStyle = `#fff`;
-    context.font = `bold 40pt SlouchybrushRegular`;
-    context.fillText(`(c)Mizuki By KrakinzLab`, 600, 530);
+    context.font = `bold 40pt Shalma-Rp0Pe`;
+    context.fillText(`(c)Mizuki`, 600, 530);
     loadImage(`./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/爪𝖎𝖟𝖚ӄ𝖎Noargs.png`).then(async () => {
       const buffer = canvas.toBuffer(`image/png`);
       fs.writeFileSync(`./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/爪𝖎𝖟𝖚ӄ𝖎Noargs.png`, buffer);
