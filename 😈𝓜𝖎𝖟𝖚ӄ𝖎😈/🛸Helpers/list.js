@@ -58,8 +58,8 @@ module.exports = {
       );
       const buttons = [
         {
-          buttonId: `${ᴋᴇɪ}repo`,
-          buttonText: { displayText: `${ᴋᴇɪ}repo` },
+          buttonId: `${ᴋᴇɪ}request`,
+          buttonText: { displayText: `${ᴋᴇɪ}request` },
           type: 1,
         },
         {

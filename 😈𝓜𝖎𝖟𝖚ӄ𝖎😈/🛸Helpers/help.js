@@ -93,8 +93,8 @@ module.exports = {
                 type: 1,
               },
               {
-                buttonId: `${ᴋᴇɪ}bugreport`,
-                buttonText: { displayText: `${ᴋᴇɪ}bugreport` },
+                buttonId: `${ᴋᴇɪ}request`,
+                buttonText: { displayText: `${ᴋᴇɪ}request` },
                 type: 1,
               },
               {
