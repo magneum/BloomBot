@@ -62,7 +62,7 @@ module.exports = {
           .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
         `🐙============================================================================================================================<⚡>`;
       } else {
-        const filename = `${FinalName}_${ꜱᴇɴᴅᴇʀɪᴅ}`;
+        const filename = `${FinalName}_${ꜱᴇɴᴅᴇʀɪᴅ}_${Date.now()}`;
         const LinkForGroups = await yts(arg.join(` `));
         const PrivatesVideos = LinkForGroups.videos.slice(0, 1);
         const LinkForPrivates = await yts(arg.join(` `));

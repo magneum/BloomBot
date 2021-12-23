@@ -63,7 +63,7 @@ module.exports = {
           .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
         `🐙============================================================================================================================<⚡>`;
       } else {
-        const filename = `${FinalName}_${ꜱᴇɴᴅᴇʀɪᴅ}`;
+        const filename = `${FinalName}_${ꜱᴇɴᴅᴇʀɪᴅ}_${Date.now()}`;
         const SpotRslt = await spotifyToYT.trackGet(arg.join(` `));
         console.log(SpotRslt);
         const LinkForGroups = await yts(SpotRslt.url);
