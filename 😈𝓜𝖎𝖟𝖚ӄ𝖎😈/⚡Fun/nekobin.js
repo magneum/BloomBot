@@ -74,8 +74,9 @@ or reply *${ᴋᴇɪ}nekobin* to any text.`,
             .sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
-    •@${ꜱᴇɴᴅᴇʀeceived}, Here Is Your nekobind link👇🏽‍
-    ${data.url}`,
+              
+•@${ꜱᴇɴᴅᴇʀeceived}, Here Is Your pasted link👇🏽‍
+${data.url}`,
               MessageType.text,
               {
                 quoted: chat,
@@ -111,8 +112,9 @@ or reply *${ᴋᴇɪ}nekobin* to any text.`,
             .sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
-  •@${ꜱᴇɴᴅᴇʀeceived}, Here Is Your nekobind link👇🏽‍
-  ${data.url}`,
+
+•@${ꜱᴇɴᴅᴇʀeceived}, Here Is Your pasted link👇🏽‍
+${data.url}`,
               MessageType.text,
               {
                 quoted: chat,
