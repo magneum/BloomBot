@@ -93,6 +93,11 @@ module.exports = {
 𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚👋🏻 *EVERYONE!,*
 _ʏᴏᴜʀ ᴀꜱꜱɪꜱꜱᴛᴀɴᴛ ꜰᴏʀ ᴍᴀᴋɪɴɢ ʙᴏʀɪɴɢ ᴡʜᴀᴛꜱᴀᴘᴘ ᴀ ʙᴇᴛᴛᴇʀ ᴀᴅᴠᴀɴᴄᴇ ᴀᴘᴘ!_
 
+┌────⭓ 𝐍𝐞𝐰 𝗦𝘁𝗮𝗯𝗹𝗲 𝐅𝐞𝐚𝐭𝐮𝐫𝐞𝐬
+│🛸 *${ᴋᴇɪ}antilink* _(on/off)_
+│*⚠️All Group Admins Please Turn-On*
+│*Antilink For Your Groups*
+└────────⭓
 ┌────⭓ 𝐍𝐞𝐰 𝐏𝐮𝐛𝐥𝐢𝐜-𝐁𝐞𝐭𝐚 𝐅𝐞𝐚𝐭𝐮𝐫𝐞𝐬
 │🍹 *${ᴋᴇɪ}request* _(ɴᴇᴡ)_
 │🍹 *${ᴋᴇɪ}bugreport* _(ɴᴇᴡ)_
@@ -105,9 +110,7 @@ _ʏᴏᴜʀ ᴀꜱꜱɪꜱꜱᴛᴀɴᴛ ꜰᴏʀ ᴍᴀᴋɪɴɢ ʙᴏʀɪɴɢ 
 
 🔑𝐏𝐫𝐞𝐟𝐢𝐱: *${ᴋᴇɪ}*
 👑𝐎𝐰𝐧𝐞𝐫: _🐙KrakinzKon_
-☣️𝐋𝐢𝐜𝐞𝐧𝐬𝐞𝐝: Apache License Version 2.0, January 2004 http://www.apache.org/licenses
-爪𝖎𝖟𝖚ӄ𝖎™ - 𝘈𝘥𝘷𝘢𝘯𝘤𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 has been licensed under Apache License
-𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁`,
+☣️𝐋𝐢𝐜𝐞𝐧𝐬𝐞𝐝: Apache License Version 2.0`,
             }
           )
           .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
