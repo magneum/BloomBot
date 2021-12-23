@@ -3,6 +3,7 @@
 `🐙============================================================================================================================<⚡>`;
 `🐙`;
 `🐙`;
+// 120363039360979234@g.us
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const LetGoChecker = require("./🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/LetGoChecker");
 const LinkGoCheck = require("./🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/LinkGoCheck");
@@ -410,7 +411,6 @@ ${ꜰᴇᴛᴄʜᴇᴅʙʏᴇ.message}`,
         𝓜𝖎𝖟𝖚ӄ𝖎.chatId
       );
       const letlinkGo = await LinkGoCheck(𝓜𝖎𝖟𝖚ӄ𝖎, ӄʀǟӄɨռʐ, CheckLinks);
-      console.log(letlinkGo);
       if (letlinkGo) {
         return;
       } else {
