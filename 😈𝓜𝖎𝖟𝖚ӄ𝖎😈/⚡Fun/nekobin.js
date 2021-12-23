@@ -5,7 +5,8 @@ const ℓιєηт = require(`../../🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/catch`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 const vers = require(`../../package.json`);
-const MizuNeko = require("nekobin");
+const MizuNeko = require(`nekobin`);
+fs = require(`fs`);
 `🐙`;
 `🐙`;
 `🐙============================================================================================================================<⚡>`;
@@ -60,21 +61,22 @@ or reply *${ᴋᴇɪ}nekobin* to any text.`,
       if (𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
         const MizuBin = {
           content: 𝓜𝖎𝖟𝖚ӄ𝖎.replyMessage.replace(
-            𝓜𝖎𝖟𝖚ӄ𝖎.body[0] + 𝓜𝖎𝖟𝖚ӄ𝖎.commandName + " ",
-            ""
+            𝓜𝖎𝖟𝖚ӄ𝖎.body[0] + 𝓜𝖎𝖟𝖚ӄ𝖎.commandName + ` `,
+            ``
           ),
         };
-        var FILEI = MizuBin.content;
-        console.log(FILEI);
-        MizuNeko.nekobin(FILEI).then(async (data) => {
+        const filename = Date.now();
+        await fs.writeFileSync(`./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/${filename}`, MizuBin.content);
+        var data = await fs.readFileSync(`./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/${filename}`, "utf8");
+        console.log(data.toString());
+        MizuNeko.nekobin(data.toString()).then(async (data) => {
           console.log(data);
           await ӄʀǟӄɨռʐ
             .sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
-
-•@${ꜱᴇɴᴅᴇʀeceived}, Here Is Your nekobind link👇🏽‍
-${data.url}`,
+    •@${ꜱᴇɴᴅᴇʀeceived}, Here Is Your nekobind link👇🏽‍
+    ${data.url}`,
               MessageType.text,
               {
                 quoted: chat,
@@ -83,26 +85,34 @@ ${data.url}`,
                 },
               }
             )
-            .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
+            .then(async () => {
+              try {
+                await fs.unlinkSync(`./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/${filename}`);
+              } catch (ℓαвєяяσя) {
+                console.log(ℓαвєяяσя);
+              }
+            });
         });
       }
+
       const MizuBin = {
         content: 𝓜𝖎𝖟𝖚ӄ𝖎.body.replace(
-          𝓜𝖎𝖟𝖚ӄ𝖎.body[0] + 𝓜𝖎𝖟𝖚ӄ𝖎.commandName + " ",
-          ""
+          𝓜𝖎𝖟𝖚ӄ𝖎.body[0] + 𝓜𝖎𝖟𝖚ӄ𝖎.commandName + ` `,
+          ``
         ),
       };
-      var FILEI = MizuBin.content;
-      console.log(FILEI);
-      MizuNeko.nekobin(FILEI).then(async (data) => {
+      const filename = Date.now();
+      await fs.writeFileSync(`./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/${filename}`, MizuBin.content);
+      var data = await fs.readFileSync(`./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/${filename}`, "utf8");
+      console.log(data.toString());
+      MizuNeko.nekobin(data.toString()).then(async (data) => {
         console.log(data);
         await ӄʀǟӄɨռʐ
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
             `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
-
-•@${ꜱᴇɴᴅᴇʀeceived}, Here Is Your nekobind link👇🏽‍
-${data.url}`,
+  •@${ꜱᴇɴᴅᴇʀeceived}, Here Is Your nekobind link👇🏽‍
+  ${data.url}`,
             MessageType.text,
             {
               quoted: chat,
@@ -111,7 +121,13 @@ ${data.url}`,
               },
             }
           )
-          .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
+          .then(async () => {
+            try {
+              await fs.unlinkSync(`./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/${filename}`);
+            } catch (ℓαвєяяσя) {
+              console.log(ℓαвєяяσя);
+            }
+          });
       });
     } catch (ℓαвєяяσя) {
       ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
