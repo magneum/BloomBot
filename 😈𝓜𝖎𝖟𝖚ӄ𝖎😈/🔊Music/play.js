@@ -61,6 +61,30 @@ module.exports = {
             console.log(youfound.url);
             const { dl_link, thumb, title, filesizeF, filesize } = gotResp;
             console.log(gotResp);
+            if (Number(filesize) >= 1000) {
+              return ӄʀǟӄɨռʐ
+                .sendMessage(
+                  𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                  {
+                    caption: thumb,
+                  },
+                  MessageType.image,
+                  {
+                    quoted: chat,
+                    contextInfo: {
+                      mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
+                    },
+                    mimetype: Mimetype.png || Mimetype.jpeg,
+                    content: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
+
+⭕𝗔𝘂𝗱𝗶𝗼 •@${ꜱᴇɴᴅᴇʀeceived}, 𝗣𝗹𝗲𝗮𝘀𝗲 𝗖𝗵𝗼𝗼𝘀𝗲 𝗦𝗺𝗮𝗹𝗹𝗲𝗿 𝗙𝗶𝗹𝗲!
+
+🍻𝐓𝐢𝐭𝐥𝐞⤞ ${title}
+🥣𝐒𝐢𝐳𝐞⤞ ${filesizeF}`,
+                  }
+                )
+                .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
+            }
             const media = await ӄʀǟӄɨռʐ.prepareMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               { url: thumb },

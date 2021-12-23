@@ -121,7 +121,7 @@ module.exports = {
           axios
             .get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
             .then((a) => {
-              if (Number(filesize) >= 9999999)
+              if (Number(filesize) >= 9999)
                 return ӄʀǟӄɨռʐ
                   .sendMessage(
                     𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
