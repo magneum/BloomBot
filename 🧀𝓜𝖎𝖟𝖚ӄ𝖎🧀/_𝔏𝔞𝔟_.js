@@ -24,7 +24,10 @@ const env = {
   FOXTROT: `^[/]`,
   CCD: process.env.CCD === undefined ? `91` : process.env.CCD,
   OCR: `9ffb44def388957`,
+  ɴᴏᴛᴀᴅᴍɪɴ: `./𝓜𝖎𝖟𝖚ӄ𝖎/𝓜𝖎𝖟𝖚ӄ𝖎MemErr.png`,
   WAPI: `6729ac2b2e2bb5c686ff427a2f06df92`,
+  UPT: `https://i.postimg.cc/kgjQm7bg/Mizuki-Update.png`,
+  INVL: `https://i.postimg.cc/x8KGDHKw/Mizuki-Invalid.png`,
   HASH: `https://chat.whatsapp.com/KC32fr1BLmzHYgToZjMuHn`,
   DATABASE_URL: (process.env.DATABASE_URL =
     process.env.DATABASE_URL === undefined
@@ -39,13 +42,7 @@ const env = {
           dialectOptions: { ssl: { require: true, rejectUnauthorized: false } },
         }),
   MEE: MizukiMain,
-  SUDO:
-    process.env.SUDO === undefined
-      ? `918250889325,918436686758,989035024059`
-      : process.env.SUDO,
-  ɴᴏᴛᴀᴅᴍɪɴ: `./𝓜𝖎𝖟𝖚ӄ𝖎/𝓜𝖎𝖟𝖚ӄ𝖎MemErr.png`,
-  INVL: `https://i.postimg.cc/x8KGDHKw/Mizuki-Invalid.png`,
-  UPT: `https://i.postimg.cc/kgjQm7bg/Mizuki-Update.png`,
+  SUDO: process.env.SUDO === undefined ? "" : process.env.SUDO,
   PRIVACY: process.env.PRIVACY === undefined ? `public` : process.env.PRIVACY,
 };
 module.exports = env;
