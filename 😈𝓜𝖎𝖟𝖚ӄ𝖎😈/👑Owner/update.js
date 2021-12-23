@@ -44,6 +44,10 @@ Nice Try But Only My *Owner* Can Use *OWNER_ONLY* Commands!`,
       `🐙============================================================================================================================<⚡>`;
     } else {
       𝓜𝓮𝓮s = await ӄʀǟӄɨռʐ.chats.all();
+      let members = [];
+      for (var i = 0; i < 𝓜𝖎𝖟𝖚ӄ𝖎.groupMembers.length; i++) {
+        members[i] = 𝓜𝖎𝖟𝖚ӄ𝖎.groupMembers[i].jid;
+      }
       for (let _ of 𝓜𝓮𝓮s) {
         await ӄʀǟӄɨռʐ
           .sendMessage(
@@ -55,9 +59,14 @@ Nice Try But Only My *Owner* Can Use *OWNER_ONLY* Commands!`,
             {
               quoted: chat,
               contextInfo: {
-                mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
                 forwardingScore: 999,
                 isForwarded: true,
+                stanzaId: 𝓜𝖎𝖟𝖚ӄ𝖎.replyMessageId,
+                participant: 𝓜𝖎𝖟𝖚ӄ𝖎.replyParticipant,
+                quotedMessage: {
+                  conversation: 𝓜𝖎𝖟𝖚ӄ𝖎.replyMessage,
+                },
+                mentionedJid: members,
               },
               sendEphemeral: true,
               mimetype: Mimetype.png,
