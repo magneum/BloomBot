@@ -64,7 +64,7 @@ or reply *${ᴋᴇɪ}nekobin* to any text.`,
             ``
           ),
         };
-        const filename = Date.now();
+        const filename = ꜱᴇɴᴅᴇʀɪᴅ + "_" + Date.now();
         await fs.writeFileSync(`./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/${filename}`, MizuBin.content);
         var data = await fs.readFileSync(`./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/${filename}`, "utf8");
         console.log(data.toString());
@@ -101,7 +101,7 @@ or reply *${ᴋᴇɪ}nekobin* to any text.`,
             ``
           ),
         };
-        const filename = Date.now();
+        const filename = ꜱᴇɴᴅᴇʀɪᴅ + "_" + Date.now();
         await fs.writeFileSync(`./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/${filename}`, MizuBin.content);
         var data = await fs.readFileSync(`./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/${filename}`, "utf8");
         console.log(data.toString());
