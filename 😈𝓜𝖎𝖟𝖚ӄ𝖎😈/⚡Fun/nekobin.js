@@ -5,7 +5,7 @@ const ℓιєηт = require(`../../🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/catch`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 const vers = require(`../../package.json`);
-const got = require("got");
+const MizuNeko = require("nekobin");
 `🐙`;
 `🐙`;
 `🐙============================================================================================================================<⚡>`;
@@ -57,59 +57,52 @@ or reply *${ᴋᴇɪ}nekobin* to any text.`,
           .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
       }
       `🐙============================================================================================================================<⚡>`;
-      if (!𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
-        var json = {
-          content: 𝓜𝖎𝖟𝖚ӄ𝖎.body.replace(
-            𝓜𝖎𝖟𝖚ӄ𝖎.body[0] + 𝓜𝖎𝖟𝖚ӄ𝖎.commandName + " ",
-            ""
-          ),
-        };
-        let text = await got.post("https://nekobin.com/api/documents", {
-          json,
-        });
-        console.log(json);
-        nekoson = await JSON.parse(text.body);
-        console.log(nekoson);
-        await ӄʀǟӄɨռʐ
-          .sendMessage(
-            𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
-
-•@${ꜱᴇɴᴅᴇʀeceived},   
-Here Is Your nekobind link👇🏽‍
-
-https://nekobin.com/${nekoson.result.key}`,
-            MessageType.text,
-            {
-              quoted: chat,
-              contextInfo: {
-                mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
-              },
-            }
-          )
-          .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
-      } else {
-        var json = {
+      if (𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
+        const MizuBin = {
           content: 𝓜𝖎𝖟𝖚ӄ𝖎.replyMessage.replace(
             𝓜𝖎𝖟𝖚ӄ𝖎.body[0] + 𝓜𝖎𝖟𝖚ӄ𝖎.commandName + " ",
             ""
           ),
         };
-        let text = await got.post("https://nekobin.com/api/documents", {
-          json,
+        var FILEI = MizuBin.content;
+        console.log(FILEI);
+        MizuNeko.nekobin(FILEI).then(async (data) => {
+          console.log(data);
+          await ӄʀǟӄɨռʐ
+            .sendMessage(
+              𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+              `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
+
+•@${ꜱᴇɴᴅᴇʀeceived}, Here Is Your nekobind link👇🏽‍
+${data.url}`,
+              MessageType.text,
+              {
+                quoted: chat,
+                contextInfo: {
+                  mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
+                },
+              }
+            )
+            .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
         });
-        console.log(json);
-        nekoson = await JSON.parse(text.body);
-        console.log(nekoson);
+      }
+      const MizuBin = {
+        content: 𝓜𝖎𝖟𝖚ӄ𝖎.body.replace(
+          𝓜𝖎𝖟𝖚ӄ𝖎.body[0] + 𝓜𝖎𝖟𝖚ӄ𝖎.commandName + " ",
+          ""
+        ),
+      };
+      var FILEI = MizuBin.content;
+      console.log(FILEI);
+      MizuNeko.nekobin(FILEI).then(async (data) => {
+        console.log(data);
         await ӄʀǟӄɨռʐ
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
             `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
 
-•@${ꜱᴇɴᴅᴇʀeceived},   
-Here Is Your nekobind link👇🏽‍
-
-https://nekobin.com/${nekoson.result.key}`,
+•@${ꜱᴇɴᴅᴇʀeceived}, Here Is Your nekobind link👇🏽‍
+${data.url}`,
             MessageType.text,
             {
               quoted: chat,
@@ -119,7 +112,7 @@ https://nekobin.com/${nekoson.result.key}`,
             }
           )
           .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
-      }
+      });
     } catch (ℓαвєяяσя) {
       ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
       console.log(ℓαвєяяσя);
