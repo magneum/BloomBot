@@ -61,14 +61,9 @@ Nice Try But Only My *Owner* Can Use *OWNER_ONLY* Commands!`,
               {
                 quoted: chat,
                 contextInfo: {
+                  mentionedJid: members,
                   forwardingScore: 999,
                   isForwarded: true,
-                  stanzaId: 𝓜𝖎𝖟𝖚ӄ𝖎.replyMessageId,
-                  participant: 𝓜𝖎𝖟𝖚ӄ𝖎.replyParticipant,
-                  quotedMessage: {
-                    conversation: 𝓜𝖎𝖟𝖚ӄ𝖎.replyMessage,
-                  },
-                  mentionedJid: members,
                 },
                 sendEphemeral: true,
                 mimetype: Mimetype.png,
