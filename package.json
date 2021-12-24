@@ -1,7 +1,9 @@
 {
-  "main": "🍁爪𝖎𝖟𝖚ӄ𝖎™.js",
   "name": "mizuki",
   "vers": "𝘣𝘦𝘵𝘢-v21",
+  "scripts": {
+    "start": "node 🍁爪𝖎𝖟𝖚ӄ𝖎™.js"
+  },
   "dependencies": {
     "@adiwajshing/baileys": "^3.5.0",
     "@cicciosgamino/openweather-apis": "^5.0.1",
@@ -39,6 +41,7 @@
     "genius-lyrics": "^4.3.4",
     "get-lyrics-hd": "^0.0.1",
     "get-video-id": "^3.4.3",
+    "gitcord": "^1.0.3",
     "google-it": "^1.6.2",
     "google-tts-api": "^2.0.2",
     "got": "^11.8.2",

@@ -62,9 +62,9 @@ async function 𝐌𝐢𝐳𝐮𝐤𝐢() {
     )
   );
   console.log(Kolor.yellow(`💡INFO ⬰ 𝐂𝐡𝐞𝐜𝐤𝐢𝐧𝐠 𝐅𝐨𝐫 𝐌𝐢𝐳𝐮𝐤𝐢 𝐔𝐩𝐝𝐚𝐭𝐞𝐬...\n✔️`));
-  if (yes_no === `Null`) {
-    await AutoKrakz();
-  }
+  // if (yes_no === `Null`) {
+  //   await AutoKrakz();
+  // }
   // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
   try {
     var session = 𝓜𝖎𝖟𝖚ӄ𝖎ֆʏռօք.Mee6reignite(_𝔏𝔞𝔟_.Mee6);
@@ -298,25 +298,26 @@ ${update.desc}`,
       : ``;
     var 𝓜𝖎𝖟𝖚ӄ𝖎 = 𝓜𝖎𝖟𝖚ӄ𝖎ǟքք.resolve(chat, ӄʀǟӄɨռʐ, groupMetadata);
     // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-    if (yes_no === `Null`) {
-      const ᴍɪᴢᴜᴋɪɢɪᴛ = require(`simple-git`)();
-      await ᴍɪᴢᴜᴋɪɢɪᴛ.fetch();
-      var ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ = await ᴍɪᴢᴜᴋɪɢɪᴛ.log([
-        `KrakinzLab..origin/KrakinzLab`,
-      ]);
-      if (ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total != 0) {
-        await ӄʀǟӄɨռʐ.sendMessage(
-          𝓜𝖎𝖟𝖚ӄ𝖎.logGroup,
-          `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
+    const ᴍɪᴢᴜᴋɪɢɪᴛ = require(`simple-git`)();
+    await ᴍɪᴢᴜᴋɪɢɪᴛ.fetch();
+    var ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ = await ᴍɪᴢᴜᴋɪɢɪᴛ.log([`KrakinzLab..origin/KrakinzLab`]);
+    if (ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total != 0) {
+      await ӄʀǟӄɨռʐ.sendMessage(
+        𝓜𝖎𝖟𝖚ӄ𝖎.logGroup,
+        `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
 
 𝙐𝙥𝙙𝙖𝙩𝙚🤖𝙋𝙚𝙣𝙙𝙞𝙣𝙜
 •Please wait for bot to auto-udate!`,
-          MessageType.text
-        );
-      }
-    } else {
-      console.log("⬡==========================⬡  By-Passing Git Checking!");
+        MessageType.text
+      );
     }
+    const git = require("simple-git")();
+    if ((await git.pull())?.summary.changes) {
+      console.log("Starting pull...");
+      require("child_process").exec("npm restart");
+      console.log("pull done.");
+    }
+    require("child_process").exec("npm restart");
     // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
     let CheckBans = await BanList.getBanlistUser(𝓜𝖎𝖟𝖚ӄ𝖎.sender, 𝓜𝖎𝖟𝖚ӄ𝖎.chatId);
     const letGos = await LetGoChecker(𝓜𝖎𝖟𝖚ӄ𝖎, ӄʀǟӄɨռʐ, CheckBans);
