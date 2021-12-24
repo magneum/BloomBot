@@ -364,13 +364,23 @@ ${update.desc}`,
         ]);
         // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
         if (ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total != 0) {
+          try {
+            const mergeSummary = await git.merge();
+            console.log(`Merged ${mergeSummary.merges.length} files`);
+          } catch (err) {
+            console.error(
+              `Merge resulted in ${err.git.conflicts.length} conflicts`
+            );
+          }
+
           require("simple-git")()
             .exec(async () => {
               await ӄʀǟӄɨռʐ.sendMessage(
                 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
+                `*🍁爪𝖎𝖟𝖚ӄ𝖎™*
 
 *• Bot Auto-Udated!*
+*• New Version: *🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
 *• Total New Commits:* ${ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total}`,
                 MessageType.text
               );
@@ -390,7 +400,9 @@ ${update.desc}`,
               }
             });
         } else {
-          console.log("⬡==========================⬡    🍁Already Udated to Latest Version!");
+          console.log(
+            "⬡==========================⬡    🍁Already Udated to Latest Version!"
+          );
         }
         // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
         const command = ꜱɪᴛʀᴀᴘ.get(𝓜𝖎𝖟𝖚ӄ𝖎.commandName);
