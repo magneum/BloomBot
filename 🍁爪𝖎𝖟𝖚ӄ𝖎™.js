@@ -372,7 +372,7 @@ ${update.desc}`,
               `Merge resulted in ${err.git.conflicts.length} conflicts`
             );
           }
-
+          // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
           require("simple-git")()
             .exec(async () => {
               await ӄʀǟӄɨռʐ.sendMessage(
