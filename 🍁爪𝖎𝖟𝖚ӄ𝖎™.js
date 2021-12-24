@@ -370,13 +370,13 @@ ${update.desc}`,
             MessageType.text
           );
           require("simple-git")()
-            .exec(() => console.log("Starting pull..."))
+            .exec(() => console.log(Kolor.blue.bold("⬡==========================⬡    🍁Starting Mizuki pull...")))
             .pull((err, update) => {
               if (update && update.summary.changes) {
                 require("child_process").exec("node 🍁爪𝖎𝖟𝖚ӄ𝖎™.js");
               }
             })
-            .exec(() => console.log("pull done."));
+            .exec(() => console.log(Kolor.blue.bold("⬡==========================⬡    🍁Mizuki Pull done.")));
           //           if ((await ᴍɪᴢᴜᴋɪɢɪᴛ.pull())?.summary.changes) {
           //             console.log("Starting pull...");
           //             var child = require("child_process").exec("node 🍁爪𝖎𝖟𝖚ӄ𝖎™.js");
