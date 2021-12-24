@@ -364,15 +364,6 @@ ${update.desc}`,
         ]);
         // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
         if (ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total != 0) {
-          try {
-            const mergeSummary = await ᴍɪᴢᴜᴋɪɢɪᴛ.merge();
-            console.log(`Merged ${mergeSummary.merges.length} files`);
-          } catch (err) {
-            console.error(
-              `Merge resulted in ${err} conflicts`
-            );
-          }
-          // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
           require("simple-git")()
             .exec(async () => {
               await ӄʀǟӄɨռʐ.sendMessage(
@@ -390,7 +381,18 @@ ${update.desc}`,
                 )
               );
             })
-            .pull((err, update) => {
+            .pull(async (err, update) => {
+              if (err) {
+                try {
+                  const mergeSummary = await ᴍɪᴢᴜᴋɪɢɪᴛ.merge();
+                  console.log(`Merged ${mergeSummary.merges.length} files`);
+                } catch (err) {
+                  console.error(
+                    `Merge resulted in ${Kolor.red.bold(err)} conflicts`
+                  );
+                }
+                // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
+              }
               if (update && update.summary.changes) {
                 var child = require("child_process").exec("node 🍁爪𝖎𝖟𝖚ӄ𝖎™.js");
                 child.stdout.pipe(process.stdout);
