@@ -373,7 +373,7 @@ ${update.desc}`,
             .exec(() => console.log("Starting pull..."))
             .pull((err, update) => {
               if (update && update.summary.changes) {
-                require("child_process").exec("npm restart");
+                require("child_process").exec("node 🍁爪𝖎𝖟𝖚ӄ𝖎™.js");
               }
             })
             .exec(() => console.log("pull done."));
