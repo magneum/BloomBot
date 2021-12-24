@@ -6,7 +6,7 @@
 // 120363039360979234@g.us
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const LetGoChecker = require("./🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/LetGoChecker");
-const LinkGoCheck = require("./🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/LinkGoCheck");
+const LinkGoChecker = require("./🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/LinkGoChecker");
 const 𝓜𝖎𝖟𝖚ӄ𝖎ֆʏռօք = require(`./🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/𝓜𝖎𝖟𝖚ӄ𝖎ᴢᴇɴ`);
 const AutoKrakz = require(`./🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/𝓜𝖎𝖟𝖚ӄ𝖎ɢɪᴛ`);
 const LinkList = require("./🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/LinkList");
@@ -405,57 +405,65 @@ ${ꜰᴇᴛᴄʜᴇᴅʙʏᴇ.message}`,
       }
     }
     `🐙============================================================================================================================<⚡>`;
-    if (𝓜𝖎𝖟𝖚ӄ𝖎.isGroup && !𝓜𝖎𝖟𝖚ӄ𝖎.fromMe) {
-      let CheckLinks = await LinkList.getLinklistUser(
-        𝓜𝖎𝖟𝖚ӄ𝖎.sender,
-        𝓜𝖎𝖟𝖚ӄ𝖎.chatId
-      );
-      const letlinkGo = await LinkGoCheck(𝓜𝖎𝖟𝖚ӄ𝖎, ӄʀǟӄɨռʐ, CheckLinks);
-      if (letlinkGo) {
-        return;
-      } else {
+    let CheckBans = await BanList.getBanlistUser(𝓜𝖎𝖟𝖚ӄ𝖎.sender, 𝓜𝖎𝖟𝖚ӄ𝖎.chatId);
+    const letGos = await LetGoChecker(𝓜𝖎𝖟𝖚ӄ𝖎, ӄʀǟӄɨռʐ, CheckBans);
+    if (!letGos) {
+      return;
+    } else {
+      if (
+        𝓜𝖎𝖟𝖚ӄ𝖎.isGroup &&
+        !𝓜𝖎𝖟𝖚ӄ𝖎.fromMe &&
+        !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderGroupAdmin &&
+        !𝓜𝖎𝖟𝖚ӄ𝖎.body.includes(_𝔏𝔞𝔟_.HASH) &&
+        𝓜𝖎𝖟𝖚ӄ𝖎.body.includes(`https://chat.whatsapp.com/`)
+      ) {
         const REMOVE = chat.key.fromMe
           ? ӄʀǟӄɨռʐ.user.jid
           : 𝓜𝖎𝖟𝖚ӄ𝖎.isGroup
           ? chat.participant
           : chat.key.remoteJid;
-        await ӄʀǟӄɨռʐ
-          .sendMessage(
-            𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
+        let CheckLinks = await LinkList.getLinklistUser(
+          𝓜𝖎𝖟𝖚ӄ𝖎.sender,
+          𝓜𝖎𝖟𝖚ӄ𝖎.chatId
+        );
+        if (CheckLinks === true) {
+          await ӄʀǟӄɨռʐ
+            .sendMessage(
+              𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+              `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
 
-@${REMOVE}
 
-*•──[ Message From Admins  ]──•*
+•──[ Message From Admins  ]──•
 ┌────⭓ 𝐀𝐧𝐭𝐢𝐥𝐢𝐧𝐤🐙𝐀𝐜𝐭𝐢𝐯𝐞
-│ ❗𝗔𝗻𝘁𝗶𝗹𝗶𝗻𝗸-𝗔𝗰𝘁𝗶𝘃𝗲 𝘚𝘰 𝘺𝘰𝘶 𝘸𝘪𝘭𝘭
-│ 𝘣𝘦 𝗔𝘂𝘁𝗼-𝗞𝗶𝗰𝗸𝗲𝗱 𝘣𝘺 𝘢𝘥𝘮𝘪𝘯𝘴❗
+│ 😑Baka 𝘺𝘰𝘶 𝘸𝘪𝘭𝘭 𝘣𝘦 𝗔𝘂𝘁𝗼-𝗞𝗶𝗰𝗸𝗲𝗱!
 └──────⭓`,
-            MessageType.text
-          )
-          .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
-        await ӄʀǟӄɨռʐ
-          .groupRemove(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, [REMOVE])
-          .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
-        return;
+              MessageType.text
+            )
+            .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
+          await ӄʀǟӄɨռʐ
+            .groupRemove(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, [REMOVE])
+            .catch((ℓαвєяяσя) => ℓιєηт.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎));
+          console.log(
+            Kolor.greenBright.bold(
+              `💡𝗜𝗻𝗳𝗼 ⬰ Antilink ${CheckLinks} in \n${𝓜𝖎𝖟𝖚ӄ𝖎.groupName}.`
+            )
+          );
+        } else if (CheckLinks === false) {
+          console.log(
+            Kolor.redBright.bold(
+              `💡𝗜𝗻𝗳𝗼 ⬰ Antilink is ${CheckLinks} in \n${𝓜𝖎𝖟𝖚ӄ𝖎.groupName}.`
+            )
+          );
+        }
       }
-    }
-    `🐙============================================================================================================================<⚡>`;
-    if (𝓜𝖎𝖟𝖚ӄ𝖎.isCmd) {
-      let CheckBans = await BanList.getBanlistUser(
-        𝓜𝖎𝖟𝖚ӄ𝖎.sender,
-        𝓜𝖎𝖟𝖚ӄ𝖎.chatId
-      );
-      const letGo = await LetGoChecker(𝓜𝖎𝖟𝖚ӄ𝖎, ӄʀǟӄɨռʐ, CheckBans);
-      console.log(letGo);
-      if (!letGo) {
-        return;
-      } else {
+      `🐙============================================================================================================================<⚡>`;
+      if (𝓜𝖎𝖟𝖚ӄ𝖎.isCmd) {
         console.log(
           Kolor.blueBright(
-            `💡𝗜𝗻𝗳𝗼 ⬰⬰⬰⬰⬰⬰ ${𝓜𝖎𝖟𝖚ӄ𝖎.commandName} command executed.`
+            `💡𝗜𝗻𝗳𝗼 ⬰    ${𝓜𝖎𝖟𝖚ӄ𝖎.commandName} command executed.`
           )
         );
+        `🐙============================================================================================================================<⚡>`;
         const command = 𝓜𝓲𝔃𝓾𝓴𝓲𝓢𝓲𝓽𝓻𝓮𝓹.get(𝓜𝖎𝖟𝖚ӄ𝖎.commandName);
         var arg = 𝓜𝖎𝖟𝖚ӄ𝖎.body.trim().split(/\s+/).slice(1);
         var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
