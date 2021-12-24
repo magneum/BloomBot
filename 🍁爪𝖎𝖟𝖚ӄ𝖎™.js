@@ -6,7 +6,6 @@
 // 120363039360979234@g.us
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const LetGoChecker = require("./🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/LetGoChecker");
-const LinkGoChecker = require("./🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/LinkGoChecker");
 const 𝓜𝖎𝖟𝖚ӄ𝖎ֆʏռօք = require(`./🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/𝓜𝖎𝖟𝖚ӄ𝖎ᴢᴇɴ`);
 const AutoKrakz = require(`./🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/𝓜𝖎𝖟𝖚ӄ𝖎ɢɪᴛ`);
 const LinkList = require("./🧀𝓜𝖎𝖟𝖚ӄ𝖎🧀/LinkList");
