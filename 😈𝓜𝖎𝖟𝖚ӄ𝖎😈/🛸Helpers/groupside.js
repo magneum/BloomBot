@@ -80,7 +80,6 @@ module.exports = {
 │🔰• ${ᴋᴇɪ}tagall: _tag everyone in group_
 │🔰• ${ᴋᴇɪ}antilink: _remove any person who sends any links_
 │🔰• ${ᴋᴇɪ}setwelcome: _welcome new members with custom message_
-│🔰• ${ᴋᴇɪ}setgoodbye: _custom goodbye message for members when they leave_
 └───────⭓
 
 *⧪➛𝘾𝙤𝙢𝙞𝙣𝙜 𝙎𝙤𝙤𝙣!*

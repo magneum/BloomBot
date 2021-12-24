@@ -307,59 +307,7 @@ ${update.desc}`,
     }
     `🐙============================================================================================================================<⚡>`;
     if (update.action === `remove`) {
-      var enable = await postDb.checkSettings(GroupID, `setgoodbye`);
-      var ꜰᴇᴛᴄʜᴇᴅʙʏᴇ = await postDb.getMessage(GroupID, `setgoodbye`);
-      if (enable === false || enable === `OFF`) {
-        return;
-        `🐙============================================================================================================================<⚡>`;
-      } else {
-        try {
-          𝕸𝖊𝖊𝕷𝖊𝖋𝖙𝖊𝖗 = await ӄʀǟӄɨռʐ.getProfilePicture(
-            `${MemNum.split(`@`)[0]}@c.us`
-          );
-        } catch {
-          𝕸𝖊𝖊𝕷𝖊𝖋𝖙𝖊𝖗 = `https://i.postimg.cc/3wfrmmpB/NoPP.jpg`;
-        }
-        download(
-          𝕸𝖊𝖊𝕷𝖊𝖋𝖙𝖊𝖗,
-          {
-            directory: `./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/`,
-            filename: `𝕸𝖊𝖊𝕷𝖊𝖋𝖙𝖊𝖗.jpg`,
-          },
-          async function (ℓαвєяяσя) {
-            if (ℓαвєяяσя) throw ℓαвєяяσя;
-            const byetext = ᴛʙʏᴇ[Math.floor(Math.random() * ᴛʙʏᴇ.length)];
-            personcum = MemNum.substring(0, MemNum.length - 15);
-            return await ӄʀǟӄɨռʐ
-              .sendMessage(
-                GroupID,
-                {
-                  url: `./🗑️𝓜𝖎𝖟𝖚ӄ𝖎🗑️/𝕸𝖊𝖊𝕷𝖊𝖋𝖙𝖊𝖗.jpg`,
-                },
-                MessageType.image,
-                {
-                  mimetype: Mimetype.png || Mimetype.jpeg,
-                  contextInfo: {
-                    mentionedJid: [MemNum],
-                  },
-                  caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
-
-@${personcum}👋🏽${byetext}
-
-┌───────⭓ 
-│⬘𝗕𝗶𝗼: ${GroupMemBio.status}
-│⬘𝗠𝗲𝗺𝗯𝗲𝗿𝘀: ${GroupMemG}
-│⬘𝗚𝗿𝗼𝘂𝗽: ${GroupMemData.subject}
-└───────────⭓
-
-${ꜰᴇᴛᴄʜᴇᴅʙʏᴇ.message}`,
-                }
-              )
-              .catch((ℓαвєяяσя) => console.log(ℓαвєяяσя));
-          }
-        );
-        return;
-      }
+      return;
     }
   });
   `🐙============================================================================================================================<⚡>`;

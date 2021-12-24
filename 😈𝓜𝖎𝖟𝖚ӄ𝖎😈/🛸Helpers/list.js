@@ -175,7 +175,6 @@ module.exports = {
 │🔰• ${ᴋᴇɪ}getdp
 │🔰• ${ᴋᴇɪ}tagall
 │🔰• ${ᴋᴇɪ}setwelcome <text/on/off>
-│🔰• ${ᴋᴇɪ}setgoodbye <text/on/off>
 │🔰• ${ᴋᴇɪ}antilink <on/off>
 └───────⭓
 
