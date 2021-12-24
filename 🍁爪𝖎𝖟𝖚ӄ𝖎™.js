@@ -370,7 +370,7 @@ ${update.desc}`,
                 `*🍁爪𝖎𝖟𝖚ӄ𝖎™*
 
 *• Bot Auto-Udated!*
-*• New Version: *🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
+*• New Version: *🍁爪𝖎𝖟𝖚ӄ𝖎™* ${vers.vers}
 *• Total New Commits:* ${ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total}`,
                 MessageType.text
               );
