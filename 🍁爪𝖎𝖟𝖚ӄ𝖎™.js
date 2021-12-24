@@ -360,7 +360,6 @@ ${update.desc}`,
         var ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ = await ᴍɪᴢᴜᴋɪɢɪᴛ.log([
           `KrakinzLab..origin/KrakinzLab`,
         ]);
-        console.log(Kolor.red.italic(ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ));
         if (ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total != 0) {
           console.log(ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total);
           await ӄʀǟӄɨռʐ.sendMessage(
@@ -370,22 +369,29 @@ ${update.desc}`,
 𝙐𝙥𝙙𝙖𝙩𝙚🤖𝙋𝙚𝙣𝙙𝙞𝙣𝙜!`,
             MessageType.text
           );
-          if ((await ᴍɪᴢᴜᴋɪɢɪᴛ.pull())?.summary.changes) {
-            console.log("Starting pull...");
-            var child = require("child_process").exec("node 🍁爪𝖎𝖟𝖚ӄ𝖎™.js");
-            child.stdout.pipe(process.stdout);
-            child.on("exit", async function () {
-              await console.log("pull done.");
-              await ӄʀǟӄɨռʐ.sendMessage(
-                𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
+          require("simple-git")()
+            .exec(() => console.log("Starting pull..."))
+            .pull((err, update) => {
+              if (update && update.summary.changes) {
+                require("child_process").exec("npm restart");
+              }
+            })
+            .exec(() => console.log("pull done."));
+          //           if ((await ᴍɪᴢᴜᴋɪɢɪᴛ.pull())?.summary.changes) {
+          //             console.log("Starting pull...");
+          //             var child = require("child_process").exec("node 🍁爪𝖎𝖟𝖚ӄ𝖎™.js");
+          //             child.stdout.pipe(process.stdout);
+          //             child.on("exit", async function () {
+          //               await ӄʀǟӄɨռʐ.sendMessage(
+          //                 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+          //                 `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
 
-•Bot Auto-Udated!`,
-                MessageType.text
-              );
-              await process.exit();
-            });
-          }
+          // •Bot Auto-Udated!`,
+          //                 MessageType.text
+          //               );
+          //               process.exit(1);
+          //             });
+          //           }
         } else {
           console.log("Bot Already Udated to Latest Version!");
         }
