@@ -365,7 +365,7 @@ ${update.desc}`,
         // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
         if (ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total != 0) {
           try {
-            const mergeSummary = await git.merge();
+            const mergeSummary = await ᴍɪᴢᴜᴋɪɢɪᴛ.merge();
             console.log(`Merged ${mergeSummary.merges.length} files`);
           } catch (err) {
             console.error(
