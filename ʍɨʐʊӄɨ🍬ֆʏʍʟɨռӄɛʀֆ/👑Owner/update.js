@@ -56,7 +56,7 @@ Nice Try But Only My *Owner* Can Use *OWNER_ONLY* Commands!`,
           await ӄʀǟӄɨռʐ.sendMessage(
             _.jid,
             {
-              url: `./𝓜𝖎𝖟𝖚ӄ𝖎/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`,
+              url: `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`,
             },
             MessageType.video,
             {

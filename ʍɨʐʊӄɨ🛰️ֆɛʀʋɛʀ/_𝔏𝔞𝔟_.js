@@ -1,9 +1,9 @@
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
 const fs = require(`fs`);
 const { Sequelize } = require(`sequelize`);
-if (fs.existsSync(`𝓜𝖎𝖟𝖚ӄ𝖎.env`)) {
+if (fs.existsSync(`ʍɨʐʊӄɨ☣️ƈօʀɛ.env`)) {
   require(`dotenv`).config({
-    path: `./𝓜𝖎𝖟𝖚ӄ𝖎.env`,
+    path: `./ʍɨʐʊӄɨ☣️ƈօʀɛ.env`,
   });
 } else {
   require(`dotenv`);
@@ -24,17 +24,17 @@ const env = {
   FOXTROT: `^[/]`,
   CCD: process.env.CCD === undefined ? `91` : process.env.CCD,
   OCR: `9ffb44def388957`,
-  ɴᴏᴛᴀᴅᴍɪɴ: `./𝓜𝖎𝖟𝖚ӄ𝖎/𝓜𝖎𝖟𝖚ӄ𝖎MemErr.png`,
+  ɴᴏᴛᴀᴅᴍɪɴ: `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎MemErr.png`,
   WAPI: `6729ac2b2e2bb5c686ff427a2f06df92`,
   UPT: `https://i.postimg.cc/kgjQm7bg/Mizuki-Update.png`,
   INVL: `https://i.postimg.cc/x8KGDHKw/Mizuki-Invalid.png`,
   HASH: `https://chat.whatsapp.com/KC32fr1BLmzHYgToZjMuHn`,
   DATABASE_URL: (process.env.DATABASE_URL =
     process.env.DATABASE_URL === undefined
-      ? `./𝓜𝖎𝖟𝖚ӄ𝖎.db`
+      ? `./ʍɨʐʊӄɨ☣️ƈօʀɛ.db`
       : process.env.DATABASE_URL),
   POSTQL:
-    process.env.DATABASE_URL === `./𝓜𝖎𝖟𝖚ӄ𝖎.db`
+    process.env.DATABASE_URL === `./ʍɨʐʊӄɨ☣️ƈօʀɛ.db`
       ? new Sequelize({ dialect: `sqlite`, storage: process.env.DATABASE_URL })
       : new Sequelize(process.env.DATABASE_URL, {
           dialect: `postgres`,

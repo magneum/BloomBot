@@ -46,7 +46,7 @@ module.exports = {
         }).join`\n\n`;
         const media = await ӄʀǟӄɨռʐ.prepareMessage(
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-          { url: `./𝓜𝖎𝖟𝖚ӄ𝖎/Mizuki_Google.png` },
+          { url: `./ʍɨʐʊӄɨ☣️ƈօʀɛ/Mizuki_Google.png` },
           MessageType.image,
           {
             mimetype: Mimetype.png,

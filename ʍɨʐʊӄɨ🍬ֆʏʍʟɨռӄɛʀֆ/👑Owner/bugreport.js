@@ -36,7 +36,7 @@ module.exports = {
         );
       }
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-      let content = fs.readFileSync(`./𝓜𝖎𝖟𝖚ӄ𝖎/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`);
+      let content = fs.readFileSync(`./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`);
       const media = await ӄʀǟӄɨռʐ.prepareMessage(
         𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
         content,
@@ -82,7 +82,7 @@ _If Found the report was just for fun then you will be banned by the bot!_
       }
       await ӄʀǟӄɨռʐ.sendMessage(
         "120363039360979234@g.us",
-        fs.readFileSync(`./𝓜𝖎𝖟𝖚ӄ𝖎/Mizuki_Bug.mp4`),
+        fs.readFileSync(`./ʍɨʐʊӄɨ☣️ƈօʀɛ/Mizuki_Bug.mp4`),
         MessageType.video,
         {
           mentionedJid: members,
@@ -99,7 +99,7 @@ ${arg.join(" ")}`,
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
       await ӄʀǟӄɨռʐ.sendMessage(
         "918250889325@s.whatsapp.net",
-        fs.readFileSync(`./𝓜𝖎𝖟𝖚ӄ𝖎/Mizuki_Bug.mp4`),
+        fs.readFileSync(`./ʍɨʐʊӄɨ☣️ƈօʀɛ/Mizuki_Bug.mp4`),
         MessageType.video,
         {
           mimetype: "video/gif",
@@ -115,7 +115,7 @@ ${arg.join(" ")}`,
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
       await ӄʀǟӄɨռʐ.sendMessage(
         "918436686758@s.whatsapp.net",
-        fs.readFileSync(`./𝓜𝖎𝖟𝖚ӄ𝖎/Mizuki_Bug.mp4`),
+        fs.readFileSync(`./ʍɨʐʊӄɨ☣️ƈօʀɛ/Mizuki_Bug.mp4`),
         MessageType.video,
         {
           mimetype: "video/gif",
@@ -131,7 +131,7 @@ ${arg.join(" ")}`,
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
       await ӄʀǟӄɨռʐ.sendMessage(
         "989035024059@s.whatsapp.net",
-        fs.readFileSync(`./𝓜𝖎𝖟𝖚ӄ𝖎/Mizuki_Bug.mp4`),
+        fs.readFileSync(`./ʍɨʐʊӄɨ☣️ƈօʀɛ/Mizuki_Bug.mp4`),
         MessageType.video,
         {
           mimetype: "video/gif",

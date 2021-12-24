@@ -74,7 +74,7 @@ only *𝓜𝖎𝖟𝖚ӄ𝖎-Owners* can use this feature`,
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
       𝓜𝓮𝓮s = await ӄʀǟӄɨռʐ.chats.all();
       for (let _ of 𝓜𝓮𝓮s) {
-        let content = fs.readFileSync(`./𝓜𝖎𝖟𝖚ӄ𝖎/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`);
+        let content = fs.readFileSync(`./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`);
         const media = await ӄʀǟӄɨռʐ.prepareMessage(
           _.jid,
           content,

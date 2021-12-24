@@ -241,7 +241,7 @@ ${update.desc}`,
       return await ӄʀǟӄɨռʐ
         .sendMessage(
           GroupID,
-          fs.readFileSync(`./𝓜𝖎𝖟𝖚ӄ𝖎/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`),
+          fs.readFileSync(`./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`),
           MessageType.video,
           {
             mimetype: `video/gif`,
@@ -381,7 +381,7 @@ ${update.desc}`,
         var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
         // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
         if (!command) {
-          let content = fs.readFileSync(`./𝓜𝖎𝖟𝖚ӄ𝖎/Mizuki_Invalid.png`);
+          let content = fs.readFileSync(`./ʍɨʐʊӄɨ☣️ƈօʀɛ/Mizuki_Invalid.png`);
           const media = await ӄʀǟӄɨռʐ.prepareMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
             content,
