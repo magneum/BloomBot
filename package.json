@@ -1,9 +1,9 @@
 {
   "main": "🍁爪𝖎𝖟𝖚ӄ𝖎™.js",
   "name": "mizuki",
-  "vers": "𝘣𝘦𝘵𝘢-v20",
+  "vers": "𝘣𝘦𝘵𝘢-v21",
   "dependencies": {
-    "@adiwajshing/baileys": "^3.5.3",
+    "@adiwajshing/baileys": "^3.5.0",
     "@cicciosgamino/openweather-apis": "^5.0.1",
     "@ffmpeg-installer/ffmpeg": "^1.1.0",
     "@ffprobe-installer/ffprobe": "^1.3.0",
@@ -85,6 +85,7 @@
     "random-hub": "^1.0.0",
     "random-jokes": "^2.0.3",
     "random-material-color": "^1.0.5",
+    "random-number": "^0.0.9",
     "request": "^2.88.2",
     "request-promise-native": "^1.0.9",
     "scraper-instagram": "^1.0.17",
