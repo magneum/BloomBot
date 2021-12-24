@@ -77,12 +77,6 @@ module.exports = {
 │🥩 *${ᴋᴇɪ}hentaiside* 
 └───────⭓
 
-┌────⭓ 𝙄𝙢𝙥𝙤𝙧𝙩𝙖𝙣𝙩
-│💡 ᴅᴏɴ'ᴛ ꜰᴏʀɢᴇᴛ ᴛᴏ ᴍᴀᴋᴇ ᴛʜᴇ ʙᴏᴛ ᴀᴅᴍɪɴ.
-│💡 ᴅᴏɴ'ᴛ ᴘᴍ ᴏʀ ᴄᴀʟʟ ᴛʜᴇ ʙᴏᴛ.
-│💡 ɪꜰ ʏᴏᴜ ᴋɪᴄᴋ ᴛʜᴇ ʙᴏᴛ ꜰʀᴏᴍ ʏᴏᴜʀ ɢʀᴏᴜᴘ ʏᴏᴜʀ ɢʀᴏᴜᴘ ɢᴇᴛꜱ ɢʟᴏʙᴀʟʟʏ ʙᴀɴɴᴇᴅ.
-└───────⭓
-
 🌱𝗣𝗿𝗲𝘀𝘀 𝗯𝗲𝗹𝗼𝘄 𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗦𝘁𝗮𝗿𝘁 𝘂𝘀𝗶𝗻𝗴 𝗠𝗶𝘇𝘂𝗸𝗶👇🏽‍
 `,
             footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*`,
@@ -90,11 +84,6 @@ module.exports = {
               {
                 buttonId: `${ᴋᴇɪ}list`,
                 buttonText: { displayText: `${ᴋᴇɪ}list` },
-                type: 1,
-              },
-              {
-                buttonId: `${ᴋᴇɪ}request`,
-                buttonText: { displayText: `${ᴋᴇɪ}request` },
                 type: 1,
               },
               {
