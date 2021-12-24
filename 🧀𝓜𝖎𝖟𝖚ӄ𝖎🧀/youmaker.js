@@ -167,7 +167,6 @@ function formatDate(n, locale = "id") {
 }
 
 module.exports.yta = yta;
-module.exports.ytv = ytv;
 module.exports.igdl = igdl;
 module.exports.upload = upload;
 module.exports.formatDate = formatDate;
