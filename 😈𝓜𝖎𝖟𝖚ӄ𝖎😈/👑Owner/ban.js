@@ -127,7 +127,7 @@ ${User} has been blacklisted from using the bot in this group.`,
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
           `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
 
-Bot has been disabled for the group ${𝓜𝖎𝖟𝖚ӄ𝖎.groupName}. For more configurations use the *.help ban* command.`,
+Bot has been disabled for the group ${𝓜𝖎𝖟𝖚ӄ𝖎.groupName}.`,
           MessageType.text
         );
       }
