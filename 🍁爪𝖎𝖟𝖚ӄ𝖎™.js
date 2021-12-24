@@ -363,42 +363,36 @@ ${update.desc}`,
           `KrakinzLab..origin/KrakinzLab`,
         ]);
         // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-        //         if (ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total != 0) {
-        //           require("simple-git")()
-        //             .exec(() =>
-        //               console.log(
-        //                 Kolor.blue.bold(
-        //                   "⬡==========================⬡    🍁Starting Mizuki pull..."
-        //                 )
-        //               )
-        //             )
-        //             .pull((err, update) => {
-        //               if (update && update.summary.changes) {
-        //                 var child = require("child_process").exec("node 🍁爪𝖎𝖟𝖚ӄ𝖎™.js");
-        //                 child.stdout.pipe(process.stdout);
-        //                 child.on("exit", async function () {
-        //                   process.exitCode = 1;
-        //                 });
-        //               }
-        //             })
-        //             .exec(async () => {
-        //               await ӄʀǟӄɨռʐ.sendMessage(
-        //                 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-        //                 `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
+        if (ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total != 0) {
+          require("simple-git")()
+            .exec(async () => {
+              await ӄʀǟӄɨռʐ.sendMessage(
+                𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
 
-        // *• Bot Auto-Udated!*
-        // *• Total New Commits:* ${ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total}`,
-        //                 MessageType.text
-        //               );
-        //               console.log(
-        //                 Kolor.blue.bold(
-        //                   "⬡==========================⬡    🍁Mizuki Pull done."
-        //                 )
-        //               );
-        //             });
-        //         } else {
-        //           console.log("Bot Already Udated to Latest Version!");
-        //         }
+*• Bot Auto-Udated!*
+*• Total New Commits:* ${ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total}`,
+                MessageType.text
+              );
+              console.log(
+                Kolor.blue.bold(
+                  "⬡==========================⬡    🍁Starting Mizuki pull..."
+                )
+              );
+            })
+            .pull((err, update) => {
+              if (update && update.summary.changes) {
+                var child = require("child_process").exec("node 🍁爪𝖎𝖟𝖚ӄ𝖎™.js");
+                child.stdout.pipe(process.stdout);
+                child.on("exit", async function () {
+                  process.exitCode = 1;
+                });
+              }
+            });
+        } else {
+          console.log("⬡==========================⬡    🍁Already Udated to Latest Version!");
+        }
+        // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
         const command = ꜱɪᴛʀᴀᴘ.get(𝓜𝖎𝖟𝖚ӄ𝖎.commandName);
         var arg = 𝓜𝖎𝖟𝖚ӄ𝖎.body.trim().split(/\s+/).slice(1);
         var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
