@@ -14,6 +14,14 @@ const download = require(`download-file`);
 const ascii = require(`ascii-table`);
 const Kolor = require(`chalk`);
 const yes_no = _𝔏𝔞𝔟_.Krakinz;
+const speed = require("performance-now");
+let Timestamp = speed();
+const Ping = speed() - Timestamp;
+const date = require("date-and-time");
+const now = new Date();
+date.format(now, "ddd, MMM DD YYYY");
+const pattern = date.compile("ddd, MMM DD YYYY");
+const Clock = date.format(now, pattern);
 const vers = require(`./package.json`);
 const 𝓜𝖎𝖟𝖚ӄ𝖎sql = _𝔏𝔞𝔟_.POSTQL;
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
@@ -136,7 +144,9 @@ async function 𝐌𝐢𝐳𝐮𝐤𝐢() {
         MessageType.image,
         {
           mimetype: Mimetype.png,
-          caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
+          caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(
+            2
+          )}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
 
 シ︎💡ᴘʀᴇꜰɪx: ${ᴋᴇɪ}
 シ︎🛸𝐆𝐫𝐨𝐮𝐩: ${_𝔏𝔞𝔟_.HASH}`,
@@ -157,7 +167,9 @@ async function 𝐌𝐢𝐳𝐮𝐤𝐢() {
       ӄʀǟӄɨռʐ
         .sendMessage(
           groupupdateID.id,
-          `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
+          `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(2)}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${
+            vers.vers
+          }_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
 
 *<○ ${groupupdateID.subject} Opened ○>*
 Group has been opened by admin Now all members can send messages`,
@@ -169,7 +181,9 @@ Group has been opened by admin Now all members can send messages`,
       ӄʀǟӄɨռʐ
         .sendMessage(
           groupupdateID.id,
-          `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
+          `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(2)}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${
+            vers.vers
+          }_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
 
 *<○ ${groupupdateID.subject} 𝗖𝗹𝗼𝘀𝗲𝗱 ○>*
 ɢʀᴏᴜᴘ ʜᴀꜱ ʙᴇᴇɴ ᴄʟᴏꜱᴇᴅ ʙʏ ᴀᴅᴍɪɴ ɴᴏᴡ ᴏɴʟʏ ᴀᴅᴍɪɴ ᴄᴀɴ ꜱᴇɴᴅ ᴍᴇꜱꜱᴀɢᴇꜱ`,
@@ -182,7 +196,9 @@ Group has been opened by admin Now all members can send messages`,
       ӄʀǟӄɨռʐ
         .sendMessage(
           groupupdateID.id,
-          `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
+          `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(2)}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${
+            vers.vers
+          }_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
 
 *<○ ${groupupdateID.subject} 𝗗𝗲𝘀𝗰𝗿𝗶𝗽𝘁𝗶𝗼𝗻 𝗖𝗵𝗮𝗻𝗴𝗲 ○>*
 • 𝙶𝚛𝚘𝚞𝚙 𝚍𝚎𝚜𝚌𝚛𝚒𝚙𝚝𝚒𝚘𝚗 𝚑𝚊𝚜 𝚋𝚎𝚎𝚗 𝚌𝚑𝚊𝚗𝚐𝚎𝚍 𝚋𝚢:@${update.descOwner.split(`@`)[0]}
@@ -202,7 +218,9 @@ ${update.desc}`,
       ӄʀǟӄɨռʐ
         .sendMessage(
           groupupdateID.id,
-          `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
+          `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(2)}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${
+            vers.vers
+          }_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
 
 *<○ ${groupupdateID.subject} 𝗦𝗲𝘁𝘁𝗶𝗻𝗴 𝗖h𝗮𝗻𝗴𝗲 ○>*
 ᴇᴅɪᴛ ɢʀᴏᴜᴘ ɪɴꜰᴏ ʜᴀꜱ ʙᴇᴇɴ ᴏᴘᴇɴᴇᴅ ꜰᴏʀ ᴍᴇᴍʙᴇʀꜱ ɴᴏᴡ ᴀʟʟ ᴍᴇᴍʙᴇʀꜱ ᴄᴀɴ ᴇᴅɪᴛ ᴛʜɪꜱ ɢʀᴏᴜᴘ ɪɴꜰᴏ`,
@@ -215,7 +233,9 @@ ${update.desc}`,
       ӄʀǟӄɨռʐ
         .sendMessage(
           groupupdateID.id,
-          `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
+          `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(2)}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${
+            vers.vers
+          }_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
 
 *<○ ${groupupdateID.subject} 𝗦𝗲𝘁𝘁𝗶𝗻𝗴 𝗖𝗵𝗮𝗻𝗴𝗲 ○>*
 ɢʀᴏᴜᴘ ɪɴꜰᴏ ʜᴀꜱ ʙᴇᴇɴ ᴄʟᴏꜱᴇᴅ ꜰᴏʀ ᴍᴇᴍʙᴇʀꜱ ɴᴏᴡ ᴏɴʟʏ ɢʀᴏᴜᴘ ᴀᴅᴍɪɴꜱ ᴄᴀɴ ᴇᴅɪᴛ ᴛʜɪꜱ ɢʀᴏᴜᴘ ɪɴꜰᴏ`,
@@ -245,7 +265,9 @@ ${update.desc}`,
           MessageType.video,
           {
             mimetype: `video/gif`,
-            caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
+            caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(
+              2
+            )}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
 
 🔑𝐏𝐫𝐞𝐟𝐢𝐱: *!*
 👑𝐎𝐰𝐧𝐞𝐫: _🐙KrakinzKon_
@@ -322,7 +344,9 @@ ${update.desc}`,
         if (CheckLinks === true) {
           await ӄʀǟӄɨռʐ.sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
+            `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(2)}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${
+              vers.vers
+            }_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
 
 
 •──[ Message From Admins  ]──•
@@ -391,8 +415,7 @@ ${update.desc}`,
                   );
                 }
                 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-              }
-              if (update && update.summary.changes) {
+              } else if (update && update.summary.changes) {
                 var child = require("child_process").exec("node 🍁爪𝖎𝖟𝖚ӄ𝖎™.js");
                 child.stdout.pipe(process.stdout);
                 child.on("exit", async function () {
@@ -427,7 +450,9 @@ ${update.desc}`,
               contentText: `𝗜𝗻𝘃𝗮𝗹𝗶𝗱 𝗖𝗼𝗺𝗺𝗮𝗻𝗱
 
 *😑Baka* @${ꜱᴇɴᴅᴇʀeceived},Type *${ᴋᴇɪ}help*`,
-              footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*`,
+              footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(
+                2
+              )}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n📅𝐃𝐚𝐭𝐞: _${Clock}_`,
               buttons: [
                 {
                   buttonId: `${ᴋᴇɪ}list`,
@@ -450,7 +475,7 @@ ${update.desc}`,
             }
           );
         }
-        return command.handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, ꜱɪᴛʀᴀᴘ);
+        return command.handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, ꜱɪᴛʀᴀᴘ, Clock, Ping);
       }
     }
   });

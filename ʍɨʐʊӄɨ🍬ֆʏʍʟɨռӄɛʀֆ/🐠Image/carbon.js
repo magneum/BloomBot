@@ -36,7 +36,7 @@ _solarized (light)_
 _synthwave '84_  *|*  _twilight_
 _verminal_  *|*  _vscode_  
 _yeti_  *|*  _zenburn_`,
-  async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, ꜱɪᴛʀᴀᴘ) {
+  async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
     try {
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
       var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
@@ -95,7 +95,9 @@ _yeti_  *|*  _zenburn_`,
       } else if (𝓜𝖎𝖟𝖚ӄ𝖎.isReply && !𝓜𝖎𝖟𝖚ӄ𝖎.replyMessage) {
         await ӄʀǟӄɨռʐ.sendMessage(
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-          `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*\n\nThe replied message should be text.`,
+          `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(2)}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${
+            vers.vers
+          }_\n📅𝐃𝐚𝐭𝐞: _${Clock}_\n\nThe replied message should be text.`,
           MessageType.text,
           { quoted: chat }
         );
@@ -114,7 +116,11 @@ _yeti_  *|*  _zenburn_`,
           if (text[0] === `-` && text[1] === `t`) {
             if (text[2] == null) {
               let counter = 1;
-              var message = `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*\n\nAvailable themes: `;
+              var message = `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(
+                2
+              )}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${
+                vers.vers
+              }_\n📅𝐃𝐚𝐭𝐞: _${Clock}_\n\nAvailable themes: `;
               themes.forEach((theme) => {
                 message += `\n${counter}. ${theme}`;
                 counter += 1;
@@ -130,7 +136,9 @@ _yeti_  *|*  _zenburn_`,
             } else {
               await ӄʀǟӄɨռʐ.sendMessage(
                 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*\n\nNo input provided.
+                `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(2)}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${
+                  vers.vers
+                }_\n📅𝐃𝐚𝐭𝐞: _${Clock}_\n\nNo input provided.
 Please use the command  *${ᴋᴇɪ}carbon <text>*  or reply to a text message with  *${ᴋᴇɪ}carbon*  to carbonize the text.`,
                 MessageType.text,
                 { quoted: chat }
@@ -146,7 +154,9 @@ Please use the command  *${ᴋᴇɪ}carbon <text>*  or reply to a text message w
           if (!themes.includes(themeInput)) {
             await ӄʀǟӄɨռʐ.sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*\n\nPlease enter a valid theme.
+              `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(2)}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${
+                vers.vers
+              }_\n📅𝐃𝐚𝐭𝐞: _${Clock}_\n\nPlease enter a valid theme.
 Do note that theme names are  *case sensitive*${ᴋᴇɪ}`,
               MessageType.text,
               { quoted: chat }
@@ -167,7 +177,9 @@ Do note that theme names are  *case sensitive*${ᴋᴇɪ}`,
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
       await ӄʀǟӄɨռʐ.sendMessage(
         𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-        `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*\n\nConverting your text into a code snippet. Please wait...`,
+        `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(2)}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${
+          vers.vers
+        }_\n📅𝐃𝐚𝐭𝐞: _${Clock}_\n\nConverting your text into a code snippet. Please wait...`,
         MessageType.text,
         { quoted: chat }
       );
@@ -179,7 +191,9 @@ Do note that theme names are  *case sensitive*${ᴋᴇɪ}`,
       await ӄʀǟӄɨռʐ.sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, output, MessageType.image, {
         quoted: chat,
         mimetype: Mimetype.png,
-        caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*\n\n
+        caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(2)}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${
+          vers.vers
+        }_\n📅𝐃𝐚𝐭𝐞: _${Clock}_\n\n
 *<< Here's your carbon image! >>*
 Colour Scheme: {}`.format(themeInput),
       });

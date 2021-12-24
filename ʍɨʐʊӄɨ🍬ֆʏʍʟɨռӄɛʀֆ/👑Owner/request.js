@@ -10,7 +10,7 @@ var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 module.exports = {
   name: `request`,
   𝓜𝓮𝓮6ʍօʀɛ: `${ᴋᴇɪ}request <your group link>`,
-  async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, ꜱɪᴛʀᴀᴘ) {
+  async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
     try {
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
       var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
@@ -66,7 +66,7 @@ module.exports = {
           contentText: `•@${ꜱᴇɴᴅᴇʀeceived},
 *Thank you for Requesting to add 爪𝖎𝖟𝖚ӄ𝖎™ in your group!*
 Go Check Your Group Now!`,
-          footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*`,
+          footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(2)}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n📅𝐃𝐚𝐭𝐞: _${Clock}_`,
           buttons: [
             {
               buttonId: `${ᴋᴇɪ}help`,
@@ -98,7 +98,7 @@ Go Check Your Group Now!`,
         {
           mentionedJid: members,
           mimetype: "video/gif",
-          caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
+          caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(2)}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
 
 ⚡𝐓𝐨𝐩𝐢𝐜: *${FinalName}*
 🤩𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐁𝐲: *${ꜱᴇɴᴅᴇʀɪᴅ}*
@@ -114,7 +114,7 @@ ${arg.join(" ")}`,
         MessageType.video,
         {
           mimetype: "video/gif",
-          caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
+          caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(2)}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
 
 ⚡𝐓𝐨𝐩𝐢𝐜: *${FinalName}*
 🤩𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐁𝐲: *${ꜱᴇɴᴅᴇʀɪᴅ}*
@@ -130,7 +130,7 @@ ${arg.join(" ")}`,
         MessageType.video,
         {
           mimetype: "video/gif",
-          caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
+          caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(2)}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
 
 ⚡𝐓𝐨𝐩𝐢𝐜: *${FinalName}*
 🤩𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐁𝐲: *${ꜱᴇɴᴅᴇʀɪᴅ}*
@@ -146,7 +146,7 @@ ${arg.join(" ")}`,
         MessageType.video,
         {
           mimetype: "video/gif",
-          caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
+          caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(2)}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
 
 ⚡𝐓𝐨𝐩𝐢𝐜: *${FinalName}*
 🤩𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐁𝐲: *${ꜱᴇɴᴅᴇʀɪᴅ}*

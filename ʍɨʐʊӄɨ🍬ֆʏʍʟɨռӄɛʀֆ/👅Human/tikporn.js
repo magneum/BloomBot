@@ -11,7 +11,7 @@ const vers = require(`../../package.json`);
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
 module.exports = {
   name: `tikporn`,
-  async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, ꜱɪᴛʀᴀᴘ) {
+  async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
     try {
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
       var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
@@ -45,7 +45,7 @@ module.exports = {
 
 *🎊Groups:* Admins & Developers!
 *🫒Private:* Everyone`,
-          footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*`,
+          footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(2)}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n📅𝐃𝐚𝐭𝐞: _${Clock}_`,
           buttons: buttons,
           headerType: 4,
           imageMessage: media.message.imageMessage,
@@ -97,7 +97,7 @@ module.exports = {
         },
       ];
       const buttonMessage = {
-        contentText: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
+        contentText: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(2)}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
 
 ┌────⭓
 │⚡ 𝐀𝐬𝐤𝐞𝐝𝐁𝐲: @${ꜱᴇɴᴅᴇʀeceived},
@@ -115,7 +115,7 @@ module.exports = {
 🖊️Description : ${prn.desc}
 📥Download: https://tikporntok.com/${prn.video}
 🫁Source : https://tikporntok.com/${prn.source}`,
-        footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*`,
+        footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(2)}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n📅𝐃𝐚𝐭𝐞: _${Clock}_`,
         buttons: buttons,
         headerType: 5,
         videoMessage: media.message.videoMessage,

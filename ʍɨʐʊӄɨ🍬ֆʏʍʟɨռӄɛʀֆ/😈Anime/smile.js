@@ -16,7 +16,7 @@ var newScpt = str.slice(0, -3).toLowerCase();
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
 module.exports = {
   name: newScpt,
-  async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, ꜱɪᴛʀᴀᴘ) {
+  async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
     try {
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
       var GifID = chat.key.id;
@@ -61,7 +61,7 @@ module.exports = {
                   contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ, Receiver] },
                   quoted: chat,
                   mimetype: "video/gif",
-                  caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
+                  caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ* _${vers.vers}_
 
 ⚡𝐓𝐨𝐩𝐢𝐜: *${FinalName}*
 🥳𝐅𝐫𝐨𝐦: @${ꜱᴇɴᴅᴇʀeceived}
@@ -108,7 +108,7 @@ module.exports = {
                   contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
                   quoted: chat,
                   mimetype: "video/gif",
-                  caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
+                  caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ* _${vers.vers}_
 
 ⚡𝐓𝐨𝐩𝐢𝐜: *${FinalName}*
 🍯𝐓𝐡𝐞𝐦𝐬𝐞𝐥𝐯𝐞: @${ꜱᴇɴᴅᴇʀeceived}

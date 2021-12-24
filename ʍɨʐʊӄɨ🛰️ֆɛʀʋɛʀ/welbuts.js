@@ -8,6 +8,14 @@ const ꜰᴜᴄᴋ = require(`./oShit`);
 require(`python-format-js`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
+const speed = require("performance-now");
+let Timestamp = speed();
+const Ping = speed() - Timestamp;
+const date = require("date-and-time");
+const now = new Date();
+date.format(now, "ddd, MMM DD YYYY");
+const pattern = date.compile("ddd, MMM DD YYYY");
+const Clock = date.format(now, pattern);
 const fs = require(`fs`);
 var ᴛᴡᴇʟ = [
   `just joined the server!`,
@@ -96,7 +104,7 @@ ${PeopleWel}𝗠𝗲𝗺𝗯𝗲𝗿𝘀: ${GroupMemG}
 💡𝗚𝗿𝗼𝘂𝗽: ${GroupMemData.subject}
 
 ${ꜰᴇᴛᴄʜᴇᴅᴡᴇʟᴄᴏᴍᴇ.message}`,
-          footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*`,
+          footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(2)}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n📅𝐃𝐚𝐭𝐞: _${Clock}_`,
           buttons: [
             {
               buttonId: `${ᴋᴇɪ}help`,

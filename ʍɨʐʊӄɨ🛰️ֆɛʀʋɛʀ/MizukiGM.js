@@ -11,6 +11,14 @@ var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 const Downloader = require(`nodejs-file-downloader`);
 const anime = require(`anime-actions`);
 const fs = require(`fs`);
+const speed = require("performance-now");
+let Timestamp = speed();
+const Ping = speed() - Timestamp;
+const date = require("date-and-time");
+const now = new Date();
+date.format(now, "ddd, MMM DD YYYY");
+const pattern = date.compile("ddd, MMM DD YYYY");
+const Clock = date.format(now, pattern);
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
 exports.MizukiGM = async (ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎) => {
   var MizukiGMid = chat.key.id;
@@ -55,7 +63,7 @@ exports.MizukiGM = async (ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎) => {
                 contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ, Receiver] },
                 quoted: chat,
                 mimetype: "video/gif",
-                caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
+                caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ* _${vers.vers}_
 
 ⚡𝐓𝐨𝐩𝐢𝐜: *${FinalName}*
 🥳𝐅𝐫𝐨𝐦: @${ꜱᴇɴᴅᴇʀeceived}
@@ -103,7 +111,7 @@ exports.MizukiGM = async (ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎) => {
                 contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
                 quoted: chat,
                 mimetype: "video/gif",
-                caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
+                caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ* _${vers.vers}_
 
 ⚡𝐓𝐨𝐩𝐢𝐜: *${FinalName}*
 🍯𝐓𝐡𝐞𝐦𝐬𝐞𝐥𝐯𝐞: @${ꜱᴇɴᴅᴇʀeceived}`,

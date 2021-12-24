@@ -20,7 +20,7 @@ These are the configurations -
 2. If you send the command in a group and *reply to someone*, they will not be able to use the bot in that *specific group.*
 3. If you tag someone in a group like *${ᴋᴇɪ}ban @<person>*, they will not be able to use the bot in that specific group.
 4. If you send the command in *personal chat* of a person, they will be blacklisted from using the bot in *any group.*`,
-  async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, ꜱɪᴛʀᴀᴘ) {
+  async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
     try {
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
       var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
@@ -52,7 +52,9 @@ These are the configurations -
           contentText: `@${ꜱᴇɴᴅᴇʀeceived}, ❌ You Are Not Allowed!
 
 only *𝓜𝖎𝖟𝖚ӄ𝖎-Owners* can use this feature`,
-          footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*`,
+          footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(
+            2
+          )}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n📅𝐃𝐚𝐭𝐞: _${Clock}_`,
           buttons: buttons,
           headerType: 4,
           imageMessage: media.message.imageMessage,
@@ -74,7 +76,9 @@ only *𝓜𝖎𝖟𝖚ӄ𝖎-Owners* can use this feature`,
         const User = PersonToBanlist.substring(0, PersonToBanlist.indexOf(`@`));
         return ӄʀǟӄɨռʐ.sendMessage(
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-          `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
+          `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(2)}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${
+            vers.vers
+          }_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
 
 ${User} banned from using the bot in all chats.`,
           MessageType.text
@@ -93,7 +97,9 @@ ${User} banned from using the bot in all chats.`,
           if (𝓜𝖎𝖟𝖚ӄ𝖎.owner === PersonToBanlist) {
             return ӄʀǟӄɨռʐ.sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
+              `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(2)}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${
+                vers.vers
+              }_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
 
 Bot cannot blacklist itself. Tag or reply to a different user.`,
               MessageType.text
@@ -102,7 +108,9 @@ Bot cannot blacklist itself. Tag or reply to a different user.`,
           BanList.addBanlistUser(PersonToBanlist, 𝓜𝖎𝖟𝖚ӄ𝖎.chatId);
           return ӄʀǟӄɨռʐ.sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
+            `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(2)}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${
+              vers.vers
+            }_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
 
 ${User} has been blacklisted from using the bot in this group.`,
             MessageType.text
@@ -113,7 +121,9 @@ ${User} has been blacklisted from using the bot in this group.`,
           if (𝓜𝖎𝖟𝖚ӄ𝖎.owner === PersonToBanlist) {
             return ӄʀǟӄɨռʐ.sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
+              `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(2)}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${
+                vers.vers
+              }_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
 
 Bot cannot blacklist itself. Tag or reply to a different user.`,
               MessageType.text
@@ -122,7 +132,9 @@ Bot cannot blacklist itself. Tag or reply to a different user.`,
           BanList.addBanlistUser(PersonToBanlist, 𝓜𝖎𝖟𝖚ӄ𝖎.chatId);
           return ӄʀǟӄɨռʐ.sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
+            `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(2)}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${
+              vers.vers
+            }_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
 
 ${User} has been blacklisted from using the bot in this group.`,
             MessageType.text
@@ -132,7 +144,9 @@ ${User} has been blacklisted from using the bot in this group.`,
           BanList.addBanlistUser(``, 𝓜𝖎𝖟𝖚ӄ𝖎.chatId);
           return ӄʀǟӄɨռʐ.sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
+            `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(2)}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${
+              vers.vers
+            }_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
 
 Bot has been disabled for the group ${𝓜𝖎𝖟𝖚ӄ𝖎.groupName}.`,
             MessageType.text

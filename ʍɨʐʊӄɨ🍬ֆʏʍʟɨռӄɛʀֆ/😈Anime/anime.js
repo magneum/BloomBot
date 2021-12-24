@@ -10,7 +10,7 @@ const vers = require(`../../package.json`);
 module.exports = {
   name: `anime`,
   𝓜𝓮𝓮6ʍօʀɛ: `${ᴋᴇɪ}anime <anime-name>`,
-  async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, ꜱɪᴛʀᴀᴘ) {
+  async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
     try {
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
       var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
@@ -39,7 +39,7 @@ module.exports = {
       }
       const name = arg.join(` `);
       malScraper.getInfoFromName(name).then(async (data) => {
-        const AnimeInfos = `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
+        const AnimeInfos = `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ* _${vers.vers}_
 
 💡𝐓𝐢𝐭𝐥𝐞: *${data.title}*
 🧀𝗣𝗿𝗲𝗺𝗶𝗲𝗿𝗲𝗱: _${data.premiered}_

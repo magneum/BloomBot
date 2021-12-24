@@ -13,7 +13,7 @@ module.exports = {
   name: `kick`,
   description: `Use this command to kick people from a group by tagging them  *${ᴋᴇɪ}kick @<person-to-kick>*  or replying to them  *${ᴋᴇɪ}kick*`,
   𝓜𝓮𝓮6ʍօʀɛ: `${ᴋᴇɪ}kick <tag> or <reply to person's text>`,
-  async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, ꜱɪᴛʀᴀᴘ) {
+  async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
     try {
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
       var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
@@ -46,7 +46,7 @@ module.exports = {
 
 *🎊Groups:* Admins & Developers!
 *🫒Private:* Everyone`,
-          footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*`,
+          footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(2)}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n📅𝐃𝐚𝐭𝐞: _${Clock}_`,
           buttons: buttons,
           headerType: 4,
           imageMessage: media.message.imageMessage,
@@ -158,7 +158,7 @@ module.exports = {
                 quoted: chat,
                 mimetype: Mimetype.jpeg || Mimetype.png,
                 contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ, Receiver] },
-                caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
+                caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(2)}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
 
 @${ꜱᴇɴᴅᴇʀeceived} ᴋɪᴄᴋᴇᴅ @${personreceived} ᴏᴜᴛᴛᴀ ᴛʜᴇ ɢʀᴏᴜᴘ!`,
               }
@@ -179,7 +179,7 @@ module.exports = {
                 quoted: chat,
                 mimetype: Mimetype.jpeg || Mimetype.png,
                 contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
-                caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
+                caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(2)}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
 
 @${ꜱᴇɴᴅᴇʀeceived} ᴋɪᴄᴋᴇᴅ ᴛʜᴀᴛ ᴘᴇʀꜱᴏɴ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ!`,
               }
@@ -246,7 +246,7 @@ module.exports = {
                   quoted: chat,
                   mimetype: Mimetype.jpeg || Mimetype.png,
                   contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ, Receiver] },
-                  caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
+                  caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(2)}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
 
 @${ꜱᴇɴᴅᴇʀeceived} ᴋɪᴄᴋᴇᴅ @${personreceived} ᴏᴜᴛᴛᴀ ᴛʜᴇ ɢʀᴏᴜᴘ!`,
                 }
@@ -271,7 +271,7 @@ module.exports = {
                   quoted: chat,
                   mimetype: Mimetype.jpeg || Mimetype.png,
                   contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
-                  caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
+                  caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(2)}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
 
 @${ꜱᴇɴᴅᴇʀeceived}, ᴋɪᴄᴋᴇᴅ ᴛʜᴀᴛ ᴘᴇʀꜱᴏɴ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ!`,
                 }

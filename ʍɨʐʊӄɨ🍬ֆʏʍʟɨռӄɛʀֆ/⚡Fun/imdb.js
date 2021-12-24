@@ -10,7 +10,7 @@ const vers = require(`../../package.json`);
 module.exports = {
   name: `imdb`,
   𝓜𝓮𝓮6ʍօʀɛ: `${ᴋᴇɪ}imdb <movie/series>`,
-  async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, ꜱɪᴛʀᴀᴘ) {
+  async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
     try {
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
       var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
@@ -42,7 +42,7 @@ module.exports = {
       let movie = await imob.get({
         name: arg.join(` `),
       });
-      const Litol = `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
+      const Litol = `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(2)}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
 
 *💡𝐓𝐢𝐭𝐥𝐞➛*  ${movie.title.toUpperCase()}
 *🕜𝐓𝐢𝐦𝐞➛*  ${movie.runtime}

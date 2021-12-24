@@ -8,6 +8,14 @@ const ffmpeg = require(`fluent-ffmpeg`);
 const fs = require(`fs`);
 const vers = require(`../package.json`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
+const speed = require("performance-now");
+let Timestamp = speed();
+const Ping = speed() - Timestamp;
+const date = require("date-and-time");
+const now = new Date();
+date.format(now, "ddd, MMM DD YYYY");
+const pattern = date.compile("ddd, MMM DD YYYY");
+const Clock = date.format(now, pattern);
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
 exports.mainMizukigif = async (ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, 𝓜𝖎𝖟𝖚ӄ𝖎Text) => {
   try {
@@ -59,7 +67,7 @@ exports.mainMizukigif = async (ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, �
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
             {
               contentText: `𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚👋🏻 •@${ꜱᴇɴᴅᴇʀeceived}\n====<⚡>${𝓜𝖎𝖟𝖚ӄ𝖎Text}`,
-              footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*`,
+              footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(2)}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n📅𝐃𝐚𝐭𝐞: _${Clock}_`,
               buttons: [
                 {
                   buttonId: `${ᴋᴇɪ}list`,

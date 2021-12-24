@@ -6,6 +6,14 @@ var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 require(`python-format-js`);
 const fs = require(`fs`);
 const vers = require(`../package.json`);
+const speed = require("performance-now");
+let Timestamp = speed();
+const Ping = speed() - Timestamp;
+const date = require("date-and-time");
+const now = new Date();
+date.format(now, "ddd, MMM DD YYYY");
+const pattern = date.compile("ddd, MMM DD YYYY");
+const Clock = date.format(now, pattern);
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
 exports.catch = async (ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎) => {
   var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
@@ -27,8 +35,10 @@ exports.catch = async (ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎
       contentText: `${ꜱᴇɴᴅᴇʀeceived}, Try Again Later!
 
 ⚡𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ᴋᴇɪ}${FinalName}
-📂𝗟𝗼𝗴${ℓαвєяяσя}`,
-      footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*`,
+📂𝗟𝗼𝗴: ${ℓαвєяяσя}`,
+      footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(
+        2
+      )}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n📅𝐃𝐚𝐭𝐞: _${Clock}_`,
       buttons: [
         {
           buttonId: `${ᴋᴇɪ}help`,

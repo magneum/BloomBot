@@ -14,7 +14,7 @@ const fs = require(`fs`);
 module.exports = {
   name: `song`,
   𝓜𝓮𝓮6ʍօʀɛ: `${ᴋᴇɪ}song <youtube song name>`,
-  async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, ꜱɪᴛʀᴀᴘ) {
+  async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
     try {
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
       var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
@@ -71,7 +71,7 @@ module.exports = {
                     mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
                   },
                   mimetype: Mimetype.png || Mimetype.jpeg,
-                  content: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
+                  content: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(2)}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
 
 ⭕𝗔𝘂𝗱𝗶𝗼 •@${ꜱᴇɴᴅᴇʀeceived}, 𝗣𝗹𝗲𝗮𝘀𝗲 𝗖𝗵𝗼𝗼𝘀𝗲 𝗦𝗺𝗮𝗹𝗹𝗲𝗿 𝗙𝗶𝗹𝗲!
 
@@ -100,7 +100,7 @@ module.exports = {
 ⏰𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧⤞ ${youfound.timestamp}
 ✒️𝐀𝐮𝐭𝐡𝐨𝐫⤞ ${youfound.author.name}
 🔗𝐋𝐢𝐧𝐤⤞ ${youfound.url}`,
-                footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*`,
+                footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(2)}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n📅𝐃𝐚𝐭𝐞: _${Clock}_`,
                 buttons: [
                   {
                     buttonId: `${ᴋᴇɪ}happy`,
