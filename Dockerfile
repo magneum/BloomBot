@@ -10,4 +10,4 @@ RUN git clone https://github.com/Krakinz/Mizuki.git
 RUN cd Mizuki
 WORKDIR /Mizuki
 RUN npm i --force
-CMD node start
+CMD node 🍁爪𝖎𝖟𝖚ӄ𝖎™.js
