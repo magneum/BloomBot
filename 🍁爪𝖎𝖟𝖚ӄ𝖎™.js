@@ -355,43 +355,46 @@ ${update.desc}`,
             `💡INFO ⬰ ${𝓜𝖎𝖟𝖚ӄ𝖎.commandName} Executed By ${𝓜𝖎𝖟𝖚ӄ𝖎.sender}`
           )
         );
+        // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
         const ᴍɪᴢᴜᴋɪɢɪᴛ = require(`simple-git`)();
         await ᴍɪᴢᴜᴋɪɢɪᴛ.fetch();
         var ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ = await ᴍɪᴢᴜᴋɪɢɪᴛ.log([
           `KrakinzLab..origin/KrakinzLab`,
         ]);
+        // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
         if (ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total != 0) {
-          console.log(ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total);
-          await ӄʀǟӄɨռʐ.sendMessage(
-            𝓜𝖎𝖟𝖚ӄ𝖎.logGroup,
-            `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
-
-𝙐𝙥𝙙𝙖𝙩𝙚🤖𝙋𝙚𝙣𝙙𝙞𝙣𝙜!`,
-            MessageType.text
-          );
           require("simple-git")()
-            .exec(() => console.log(Kolor.blue.bold("⬡==========================⬡    🍁Starting Mizuki pull...")))
+            .exec(() =>
+              console.log(
+                Kolor.blue.bold(
+                  "⬡==========================⬡    🍁Starting Mizuki pull..."
+                )
+              )
+            )
             .pull((err, update) => {
               if (update && update.summary.changes) {
-                require("child_process").exec("node 🍁爪𝖎𝖟𝖚ӄ𝖎™.js");
+                var child = require("child_process").exec("node 🍁爪𝖎𝖟𝖚ӄ𝖎™.js");
+                child.stdout.pipe(process.stdout);
+                child.on("exit", async function () {
+                  process.exitCode = 1;
+                });
               }
             })
-            .exec(() => console.log(Kolor.blue.bold("⬡==========================⬡    🍁Mizuki Pull done.")));
-          //           if ((await ᴍɪᴢᴜᴋɪɢɪᴛ.pull())?.summary.changes) {
-          //             console.log("Starting pull...");
-          //             var child = require("child_process").exec("node 🍁爪𝖎𝖟𝖚ӄ𝖎™.js");
-          //             child.stdout.pipe(process.stdout);
-          //             child.on("exit", async function () {
-          //               await ӄʀǟӄɨռʐ.sendMessage(
-          //                 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-          //                 `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
+            .exec(async () => {
+              await ӄʀǟӄɨռʐ.sendMessage(
+                𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
 
-          // •Bot Auto-Udated!`,
-          //                 MessageType.text
-          //               );
-          //               process.exit(1);
-          //             });
-          //           }
+*• Bot Auto-Udated!*
+*• Total New Commits:* ${ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total}`,
+                MessageType.text
+              );
+              console.log(
+                Kolor.blue.bold(
+                  "⬡==========================⬡    🍁Mizuki Pull done."
+                )
+              );
+            });
         } else {
           console.log("Bot Already Udated to Latest Version!");
         }
