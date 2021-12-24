@@ -363,27 +363,31 @@ ${update.desc}`,
         console.log(Kolor.red.italic(ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ));
         if (ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total != 0) {
           console.log(ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total);
-          console.log("Starting pull...");
+          await ӄʀǟӄɨռʐ.sendMessage(
+            𝓜𝖎𝖟𝖚ӄ𝖎.logGroup,
+            `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
+
+𝙐𝙥𝙙𝙖𝙩𝙚🤖𝙋𝙚𝙣𝙙𝙞𝙣𝙜!`,
+            MessageType.text
+          );
           if ((await ᴍɪᴢᴜᴋɪɢɪᴛ.pull())?.summary.changes) {
-            require("child_process").exec("node 🍁爪𝖎𝖟𝖚ӄ𝖎™.js");
+            console.log("Starting pull...");
+            var child = require("child_process").exec("node 🍁爪𝖎𝖟𝖚ӄ𝖎™.js");
+            child.stdout.pipe(process.stdout);
+            child.on("exit", async function () {
+              await console.log("pull done.");
+              await ӄʀǟӄɨռʐ.sendMessage(
+                𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
+
+•Bot Auto-Udated!`,
+                MessageType.text
+              );
+              await process.exit();
+            });
           }
-          console.log("pull done.");
-
-          // console.log("Starting pull...");
-          // var child = require("child_process").exec("node 🍁爪𝖎𝖟𝖚ӄ𝖎™.js");
-          // child.stdout.pipe(process.stdout);
-          // child.on("exit", function () {
-          //   console.log("pull done.");
-          //   process.exit();
-          // });
-          //           await ӄʀǟӄɨռʐ.sendMessage(
-          //             𝓜𝖎𝖟𝖚ӄ𝖎.logGroup,
-          //             `*🍁爪𝖎𝖟𝖚ӄ𝖎™ ${vers.vers}*
-
-          // 𝙐𝙥𝙙𝙖𝙩𝙚🤖𝙋𝙚𝙣𝙙𝙞𝙣𝙜
-          // •Please wait for bot to auto-udate!`,
-          //             MessageType.text
-          //           );
+        } else {
+          console.log("Bot Already Udated to Latest Version!");
         }
         const command = ꜱɪᴛʀᴀᴘ.get(𝓜𝖎𝖟𝖚ӄ𝖎.commandName);
         var arg = 𝓜𝖎𝖟𝖚ӄ𝖎.body.trim().split(/\s+/).slice(1);
