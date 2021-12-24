@@ -369,7 +369,7 @@ ${update.desc}`,
             console.log(`Merged ${mergeSummary.merges.length} files`);
           } catch (err) {
             console.error(
-              `Merge resulted in ${err.git.conflicts.length} conflicts`
+              `Merge resulted in ${err} conflicts`
             );
           }
           // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
