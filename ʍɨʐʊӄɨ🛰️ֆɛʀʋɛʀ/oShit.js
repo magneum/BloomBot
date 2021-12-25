@@ -25,7 +25,7 @@ exports.catch = async (ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎
     .sendMessage(
       𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
       {
-        contentText: `${ꜱᴇɴᴅᴇʀeceived},
+        contentText: `@${ꜱᴇɴᴅᴇʀeceived},
 ⚡Try Command: _${ᴋᴇɪ}${FinalName}_ Again Later!`,
         footerText: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${
           vers.vers
