@@ -156,11 +156,6 @@ ${youfound.thumbnail}`);
                       buttonText: { displayText: `${ᴋᴇɪ}happy` },
                       type: 1,
                     },
-                    {
-                      buttonId: `${ᴋᴇɪ}bugreport`,
-                      buttonText: { displayText: `${ᴋᴇɪ}bugreport` },
-                      type: 1,
-                    },
                   ],
                   headerType: 4,
                   imageMessage: media.message.imageMessage,
