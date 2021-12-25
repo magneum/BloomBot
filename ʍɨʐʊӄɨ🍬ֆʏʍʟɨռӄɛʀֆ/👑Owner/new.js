@@ -71,7 +71,6 @@ module.exports = {
           },
           MessageType.video,
           {
-            quoted: chat,
             mimetype: "video/gif",
             contextInfo: {
               mentionedJid: members,
