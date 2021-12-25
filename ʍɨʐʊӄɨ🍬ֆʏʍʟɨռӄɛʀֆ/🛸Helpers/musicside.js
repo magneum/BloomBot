@@ -41,18 +41,25 @@ module.exports = {
 
 
 ┌────⭓ *𝙈𝙪𝙨𝙞𝙘*
-│⭕• ${ᴋᴇɪ}lyrics: _find lyrics of songs_
-│⭕• ${ᴋᴇɪ}ytsearch: _search videos in youtube_
-│⭕• ${ᴋᴇɪ}play: _download youtube audio under 100mb_
-│⭕• ${ᴋᴇɪ}song: _download youtube audio under 100mb_
-│⭕• ${ᴋᴇɪ}ytaudio: _download youtube audio under 100mb_
-│⭕• ${ᴋᴇɪ}ytvideo: _removed_
-│⭕• ${ᴋᴇɪ}spotify: _download spotify audio under 100mb_
+│⭕• ${ᴋᴇɪ}lyrics _find lyrics of songs_
+│⭕• ${ᴋᴇɪ}spotify _download spotify audio under 30min_
+│⭕• ${ᴋᴇɪ}ytsearch _search anything in youtube_
+│💡 *𝘠𝘛-𝘈𝘶𝘥𝘪𝘰*
+│⭕• ${ᴋᴇɪ}play _download youtube-name-audio under 30min_
+│⭕• ${ᴋᴇɪ}song _download youtube-name-audio under 30min_
+│⭕• ${ᴋᴇɪ}ytaudio _download youtube-link-audio under 30min_
+│💡 *𝘠𝘛-𝘝𝘪𝘥𝘦𝘰*
+│⭕• ${ᴋᴇɪ}watch _download youtube-name-video under 30min_
+│⭕• ${ᴋᴇɪ}stream _download youtube-name-video under 30min_
+│⭕• ${ᴋᴇɪ}ytvideo _download youtube-link-video under 30min_
 └───────⭓
+
 
 *⧪➛𝘾𝙤𝙢𝙞𝙣𝙜 𝙎𝙤𝙤𝙣!*
 many many more!`,
-        footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(4)}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n📅𝐃𝐚𝐭𝐞: _${Clock}_`,
+        footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(
+          4
+        )}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n📅𝐃𝐚𝐭𝐞: _${Clock}_`,
         buttons: buttons,
         headerType: 4,
         imageMessage: media.message.imageMessage,
