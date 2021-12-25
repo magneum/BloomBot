@@ -5,18 +5,20 @@ const _𝔏𝔞𝔟_ = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/_𝔏𝔞�
 const ꜰᴜᴄᴋ = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/oShit`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
-const vers = require(`../../package.json`);
-const request = require("request");
+const request = require(`request`);
 const yts = require(`yt-search`);
 const axios = require(`axios`);
+const vers = require(`../../package.json`);
 const fs = require(`fs`);
-let mime = ``;
 const RegexYouTube =
   /^((?:https?:)?\/\/)?((?:www|m)\.)?((?:youtube\.com|youtu.be))(\/(?:[\w\-]+\?v=|embed\/|v\/)?)([\w\-]+)(\S+)?$/;
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
 module.exports = {
   name: `ytaudio`,
-  𝓜𝓮𝓮6ʍօʀɛ: `${ᴋᴇɪ}ytaudio <youtube link>`,
+  𝓜𝓮𝓮6ʍօʀɛ: `${ᴋᴇɪ}play <youtube-link>
+
+🔎𝐒𝐞𝐚𝐫𝐜𝐡 𝐘𝐨𝐮𝐓𝐮𝐛𝐞? ${ᴋᴇɪ}ytsearch
+🔸𝐔𝐬𝐢𝐧𝐠 𝐒𝐨𝐧𝐠 𝐍𝐚𝐦𝐞? ${ᴋᴇɪ}watch`,
   async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
     try {
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
@@ -25,7 +27,7 @@ module.exports = {
       const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
       const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
       console.log(
-        "🍁爪𝖎𝖟𝖚ӄ𝖎™ ᴠᴇʀɪꜰɪᴇᴅ ꜰɪʟᴇ > " + FinalName.toUpperCase() + "✔️"
+        `🍁爪𝖎𝖟𝖚ӄ𝖎™ ᴠᴇʀɪꜰɪᴇᴅ ꜰɪʟᴇ > ` + FinalName.toUpperCase() + `✔️`
       );
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
       if (arg.length === 0) {
@@ -54,122 +56,148 @@ module.exports = {
           𝓜𝖎𝖟𝖚ӄ𝖎.commandName,
           𝓜𝓮𝓮ʍօʀɛ
         );
-
         // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
       } else {
-        const filename = `${FinalName}_${ꜱᴇɴᴅᴇʀɪᴅ}_${Date.now()}`;
         const LinkForGroups = await yts(arg.join(` `));
-        const PrivatesVideos = LinkForGroups.videos.slice(0, 1);
-        const LinkForPrivates = await yts(arg.join(` `));
-        const GroupVideos = LinkForPrivates.videos.slice(0, 1);
+        const GroupVideos = LinkForGroups.videos.slice(0, 1);
+        const filename = `${FinalName}_${ꜱᴇɴᴅᴇʀɪᴅ}_${Date.now()}`;
+        var DAudio = function (uri, filename, callback) {
+          request.head(uri, function (ℓαвєяяσя, gotResp, body) {
+            mime = gotResp.headers[`content-type`];
+            request(uri)
+              .pipe(fs.createWriteStream(filename))
+              .on(`close`, callback);
+          });
+        };
         await GroupVideos.forEach(async function (youfound) {
-          await ӄʀǟӄɨռʐ.sendMessage(
-            𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(4)}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${
-              vers.vers
-            }_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
+          if (youfound.seconds > "1800") {
+            console.log(`
+${youfound.videoId}
+${youfound.url}
+${youfound.title}
+${youfound.description}
+${youfound.timestamp}
+${youfound.duration}
+${youfound.ago}
+${youfound.views}
+${youfound.author.name}
+${youfound.thumbnail}`);
+            const media = await ӄʀǟӄɨռʐ.prepareMessage(
+              𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+              { url: youfound.thumbnail },
+              MessageType.image,
+              {
+                mimetype: Mimetype.jpeg,
+              }
+            );
+            const buttons = [
+              {
+                buttonId: `${ᴋᴇɪ}list`,
+                buttonText: { displayText: `${ᴋᴇɪ}list` },
+                type: 1,
+              },
+            ];
+            const buttonMessage = {
+              contentText: `•@${ꜱᴇɴᴅᴇʀeceived}, 🔔𝐀𝐮𝐝𝐢𝐨
+𝗣𝗹𝗲𝗮𝘀𝗲 𝗖𝗵𝗼𝗼𝘀𝗲 𝗙𝗶𝗹𝗲 𝗦𝗺𝗮𝗹𝗹𝗲𝗿 𝗧𝗵𝗲𝗻 𝟯𝟬𝗺𝗶𝗻𝘂𝘁𝗲𝘀!
 
-⭕𝗔𝘂𝗱𝗶𝗼 •@${ꜱᴇɴᴅᴇʀeceived}, 𝗣𝗹𝗲𝗮𝘀𝗲 𝗖𝗵𝗲𝗰𝗸 𝗬𝗼𝘂𝗿 𝗣𝗿𝗶𝘃𝗮𝘁𝗲 𝗗𝗠 𝗳𝗼𝗿 𝘁𝗵𝗲 𝗱𝗲𝗹𝗶𝘃𝗲𝗿𝘆 𝗼𝗳 𝗔𝘂𝗱𝗶𝗼!
+
+🍻𝐓𝐢𝐭𝐥𝐞⤞ ${youfound.title}
+⏰𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧⤞ ${youfound.timestamp}
+📜𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧⤞ ${youfound.description}
+🔗𝐋𝐢𝐧𝐤⤞ ${youfound.url}`,
+              footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(
+                4
+              )}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n📅𝐃𝐚𝐭𝐞: _${Clock}_`,
+              buttons: buttons,
+              headerType: 4,
+              imageMessage: media.message.imageMessage,
+            };
+            await ӄʀǟӄɨռʐ.sendMessage(
+              𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+              buttonMessage,
+              MessageType.buttonsMessage,
+              {
+                quoted: chat,
+                contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
+              }
+            );
+          } else {
+            await yta(youfound.url).then(async (gotResp) => {
+              console.log(youfound.url);
+              const { dl_link, thumb, title, filesizeF, filesize } = gotResp;
+              const media = await ӄʀǟӄɨռʐ.prepareMessage(
+                𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                { url: youfound.thumbnail },
+                MessageType.image,
+                {
+                  mimetype: Mimetype.jpeg,
+                }
+              );
+              await ӄʀǟӄɨռʐ.sendMessage(
+                𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                {
+                  contentText: `𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚👋🏻 •@${ꜱᴇɴᴅᴇʀeceived},    
+🔔𝐀𝐮𝐝𝐢𝐨 𝗣𝗹𝗲𝗮𝘀𝗲 𝘄𝗮𝗶𝘁 𝗳𝗼𝗿 𝘁𝗵𝗲 𝗱𝗲𝗹𝗶𝘃𝗲𝗿𝘆 𝗼𝗳 𝐀𝐮𝐝𝐢𝐨!
+
 
 🍻𝐓𝐢𝐭𝐥𝐞⤞ ${youfound.title}
 🙈𝐕𝐢𝐞𝐰𝐬⤞ ${youfound.views}
 ⏰𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧⤞ ${youfound.timestamp}
 ✒️𝐀𝐮𝐭𝐡𝐨𝐫⤞ ${youfound.author.name}
+📜𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧⤞ ${youfound.description}
 🔗𝐋𝐢𝐧𝐤⤞ ${youfound.url}`,
-            MessageType.text,
-            {
-              quoted: chat,
-              contextInfo: {
-                mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
-              },
-            }
-          );
-        });
-        // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-        const YouFetchers = async (
-          filename,
-          to,
-          url,
-          text = ``,
-          mention = []
-        ) => {
-          if (mention.length > 0) {
-            text = normalizeMention(to, text, mention);
-          }
-          var Download_Audio = function (uri, filename, callback) {
-            request.head(uri, function (ℓαвєяяσя, gotResp, body) {
-              mime = gotResp.headers[`content-type`];
-              request(uri)
-                .pipe(fs.createWriteStream(filename))
-                .on(`close`, callback);
-            });
-          };
-          Download_Audio(url, filename, async function () {
-            let media = fs.readFileSync(filename);
-            let type = mime.split(`/`)[0] + `Message`;
-            if (mime === `image/gif`) {
-              type = MessageType.video;
-              mime = Mimetype.gif;
-            }
-            if (mime.split(`/`)[0] === `audio`) {
-              mime = Mimetype.mp4Audio;
-            }
-            await ӄʀǟӄɨռʐ
-              .sendMessage(to, media, type, {
-                quoted: chat,
-                mimetype: mime,
-                caption: text,
-                contextInfo: {
-                  mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
-                },
-              })
-              .then(fs.unlinkSync(filename));
-          });
-        };
-        // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-        yta(arg[0]).then(async (gotResp) => {
-          const { dl_link, thumb, title, filesizeF, filesize } = gotResp;
-          axios
-            .get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
-            .then((alpha) => {
-              if (Number(filesize) >= 1000) {
-                return ӄʀǟӄɨռʐ.sendMessage(
-                  𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                  {
-                    caption: thumb,
-                  },
-                  MessageType.image,
-                  {
-                    quoted: chat,
-                    contextInfo: {
-                      mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
+                  footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(
+                    4
+                  )}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n📅𝐃𝐚𝐭𝐞: _${Clock}_`,
+                  buttons: [
+                    {
+                      buttonId: `${ᴋᴇɪ}happy`,
+                      buttonText: { displayText: `${ᴋᴇɪ}happy` },
+                      type: 1,
                     },
-                    mimetype: Mimetype.png || Mimetype.jpeg,
-                    content: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(
-                      4
-                    )}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
-
-⭕𝗔𝘂𝗱𝗶𝗼 •@${ꜱᴇɴᴅᴇʀeceived}, 𝗣𝗹𝗲𝗮𝘀𝗲 𝗖𝗵𝗼𝗼𝘀𝗲 𝗦𝗺𝗮𝗹𝗹𝗲𝗿 𝗙𝗶𝗹𝗲!
-
-🍻𝐓𝐢𝐭𝐥𝐞⤞ ${title}
-🥣𝐒𝐢𝐳𝐞⤞ ${filesizeF}`,
-                  }
-                );
-              } else {
-                PrivatesVideos.forEach(function () {
-                  Fetched = `⭕𝗔𝘂𝗱𝗶𝗼`;
-                  YouFetchers(filename, ꜱᴇɴᴅᴇʀɪᴅ, dl_link, Fetched);
+                    {
+                      buttonId: `${ᴋᴇɪ}bugreport`,
+                      buttonText: { displayText: `${ᴋᴇɪ}bugreport` },
+                      type: 1,
+                    },
+                  ],
+                  headerType: 4,
+                  imageMessage: media.message.imageMessage,
+                },
+                MessageType.buttonsMessage,
+                {
+                  quoted: chat,
+                  contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
+                }
+              );
+              axios
+                .get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
+                .then(async (a) => {
+                  DAudio(dl_link, filename, async function () {
+                    await ӄʀǟӄɨռʐ
+                      .sendMessage(
+                        𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                        fs.readFileSync(filename),
+                        MessageType.audio,
+                        {
+                          quoted: chat,
+                          mimetype: Mimetype.mp4Audio,
+                        }
+                      )
+                      .then(fs.unlinkSync(filename));
+                  });
                 });
-              }
             });
+          }
         });
       }
     } catch (ℓαвєяяσя) {
       await ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
       console.log(
-        "⬡==========================⬡    🍁 " +
+        `⬡==========================⬡    🍁 ` +
           ℓαвєяяσя +
-          "🍁    ⬡==========================⬡"
+          `🍁    ⬡==========================⬡`
       );
     }
   },

@@ -6,8 +6,8 @@ const axios = require("axios");
 const cheerio = require("cheerio");
 const qs = require("qs");
 const { fromBuffer } = require("file-type");
-const RegexYouTube =
-  /^((?:https?:)?\/\/)?((?:www|m)\.)?((?:youtube\.com|youtu.be))(\/(?:[\w\-]+\?v=|embed\/|v\/)?)([\w\-]+)(\S+)?$/;
+const ytIdRegex =
+  /(?:http(?:s|):\/\/|)(?:(?:www\.|)youtube(?:\-nocookie|)\.com\/(?:watch\?.*(?:|\&)v=|embed\/|v\/)|youtu\.be\/)([-_0-9A-Za-z]{11})/;
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
 function post(url, formdata) {
   console.log(
@@ -30,8 +30,8 @@ function post(url, formdata) {
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
 function yta(url) {
   return new Promise((resolve, reject) => {
-    if (RegexYouTube.test(url)) {
-      let ytId = RegexYouTube.exec(url);
+    if (ytIdRegex.test(url)) {
+      let ytId = ytIdRegex.exec(url);
       url = "https://youtu.be/" + ytId[1];
       post("https://www.y2mate.com/mates/en60/analyze/ajax", {
         url,
@@ -106,10 +106,12 @@ function igdl(url_media) {
       .then((result) => {
         let $ = cheerio.load(result.data),
           ig = [];
+        //Obter todos os links de videos da pagina carregada
         $("[data-mediatype=Video]").each((i, element) => {
           let cheerioElement = $(element);
           ig.push(cheerioElement.attr("href"));
         });
+        //Obter todos os links de imagem da pagina carregada
         $("div > div.bg-white.border.rounded-sm.max-w-md > img").each(
           (i, element) => {
             let cheerioElement = $(element);
@@ -126,6 +128,52 @@ function igdl(url_media) {
         console.log(err.response);
         reject(err);
       });
+  });
+}
+// ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
+function ytv(url) {
+  return new Promise((resolve, reject) => {
+    if (ytIdRegex.test(url)) {
+      let ytId = ytIdRegex.exec(url);
+      url = "https://youtu.be/" + ytId[1];
+      post("https://www.y2mate.com/mates/en60/analyze/ajax", {
+        url,
+        q_auto: 0,
+        ajax: 1,
+      })
+        .then((res) => res.json())
+        .then((res) => {
+          document = new JSDOM(res.result).window.document;
+          yaha = document.querySelectorAll("td");
+          filesize = yaha[yaha.length - 23].innerHTML;
+          id = /var k__id = "(.*?)"/.exec(document.body.innerHTML) || ["", ""];
+          thumb = document.querySelector("img").src;
+          title = document.querySelector("b").innerHTML;
+
+          post("https://www.y2mate.com/mates/en60/convert", {
+            type: "youtube",
+            _id: id[1],
+            v_id: ytId[1],
+            ajax: "1",
+            token: "",
+            ftype: "mp4",
+            fquality: 360,
+          })
+            .then((res) => res.json())
+            .then((res) => {
+              let KB = parseFloat(filesize) * (1000 * /MB$/.test(filesize));
+              resolve({
+                dl_link: /<a.+?href="(.+?)"/.exec(res.result)[1],
+                thumb,
+                title,
+                filesizeF: filesize,
+                filesize: KB,
+              });
+            })
+            .catch(reject);
+        })
+        .catch(reject);
+    } else reject("URL INVALID");
   });
 }
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
@@ -166,6 +214,7 @@ function formatDate(n, locale = "id") {
 }
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
 module.exports.yta = yta;
+module.exports.ytv = ytv;
 module.exports.igdl = igdl;
 module.exports.upload = upload;
 module.exports.formatDate = formatDate;

@@ -1,6 +1,6 @@
 {
   "name": "mizuki",
-  "vers": "Pbeta-v21.1",
+  "vers": "beta-v21.2",
   "scripts": {
     "start": "node 🍁爪𝖎𝖟𝖚ӄ𝖎™.js"
   },
@@ -41,6 +41,7 @@
     "g-i-s": "^2.1.6",
     "genius-lyrics": "^4.3.4",
     "get-lyrics-hd": "^0.0.1",
+    "get-video-duration": "^4.0.0",
     "get-video-id": "^3.4.3",
     "gitcord": "^1.0.3",
     "google-it": "^1.6.2",
@@ -107,6 +108,7 @@
     "urban-dictionary": "^3.0.2",
     "weather-js": "^2.0.0",
     "yarn": "^1.22.17",
+    "youtube-duration": "^1.0.0",
     "youtube-metadata-from-url": "^1.0.3",
     "yt-search": "^2.10.1",
     "ytdl-core": "^4.9.1"

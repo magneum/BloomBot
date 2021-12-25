@@ -5,16 +5,18 @@ const _𝔏𝔞𝔟_ = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/_𝔏𝔞�
 const ꜰᴜᴄᴋ = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/oShit`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
-const request = require("request");
+const request = require(`request`);
 const yts = require(`yt-search`);
-const spotifyToYT = require("spotify-to-yt");
+const spotifyToYT = require(`spotify-to-yt`);
 const axios = require(`axios`);
 const vers = require(`../../package.json`);
 const fs = require(`fs`);
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
 module.exports = {
   name: `spotify`,
-  𝓜𝓮𝓮6ʍօʀɛ: `${ᴋᴇɪ}spotify <spotify link>`,
+  𝓜𝓮𝓮6ʍօʀɛ: `${ᴋᴇɪ}spotify <spotify link>
+  
+🔎𝐒𝐞𝐚𝐫𝐜𝐡 𝐘𝐨𝐮𝐓𝐮𝐛𝐞? ${ᴋᴇɪ}ytsearch`,
   async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
     try {
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
@@ -23,7 +25,7 @@ module.exports = {
       const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
       const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
       console.log(
-        "🍁爪𝖎𝖟𝖚ӄ𝖎™ ᴠᴇʀɪꜰɪᴇᴅ ꜰɪʟᴇ > " + FinalName.toUpperCase() + "✔️"
+        `🍁爪𝖎𝖟𝖚ӄ𝖎™ ᴠᴇʀɪꜰɪᴇᴅ ꜰɪʟᴇ > ` + FinalName.toUpperCase() + `✔️`
       );
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
       if (arg.length === 0) {
@@ -42,9 +44,9 @@ module.exports = {
 
         // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
       }
-      const validate = await spotifyToYT.validateURL(arg.join(" "));
-      const result = validate ? "Valid" : "Invalid";
-      if (result === "Invalid") {
+      const validate = await spotifyToYT.validateURL(arg.join(` `));
+      const result = validate ? `Valid` : `Invalid`;
+      if (result === `Invalid`) {
         const ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
         return ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
           ӄʀǟӄɨռʐ,
@@ -77,8 +79,9 @@ module.exports = {
           yta(youfound.url).then(async (gotResp) => {
             console.log(youfound.url);
             const { dl_link, thumb, title, filesizeF, filesize } = gotResp;
-            console.log(gotResp);
-            if (Number(filesize) >= 1000) {
+            if (youfound.seconds > "1800") {
+              console.log(youfound.timestamp);
+              console.log("Sorry cannot Continue!");
               return ӄʀǟӄɨռʐ.sendMessage(
                 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
                 {
@@ -91,11 +94,12 @@ module.exports = {
                     mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
                   },
                   mimetype: Mimetype.png || Mimetype.jpeg,
-                  content: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(4)}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
+                  content: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(
+                    4
+                  )}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
 
-𝗦𝗽𝗼𝘁𝗶𝗳𝘆🟢𝗔𝘂𝗱𝗶𝗼 •@${ꜱᴇɴᴅᴇʀeceived}, 𝗣𝗹𝗲𝗮𝘀𝗲 𝗖𝗵𝗼𝗼𝘀𝗲 𝗦𝗺𝗮𝗹𝗹𝗲𝗿 𝗙𝗶𝗹𝗲!
+⭕𝗔𝘂𝗱𝗶𝗼 •@${ꜱᴇɴᴅᴇʀeceived}, 𝗣𝗹𝗲𝗮𝘀𝗲 𝗖𝗵𝗼𝗼𝘀𝗲 𝗦𝗺𝗮𝗹𝗹𝗲𝗿 𝗙𝗶𝗹𝗲!
 
-_ᴛᴏᴏᴋ ꜰʀᴏᴍ ʏᴏᴜᴛᴜʙᴇ_
 🍻𝐓𝐢𝐭𝐥𝐞⤞ ${title}
 🥣𝐒𝐢𝐳𝐞⤞ ${filesizeF}`,
                 }
@@ -123,7 +127,9 @@ _ᴛᴏᴏᴋ ꜰʀᴏᴍ ʏᴏᴜᴛᴜʙᴇ_
 ⏰𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧⤞ ${youfound.timestamp}
 ✒️𝐀𝐮𝐭𝐡𝐨𝐫⤞ ${youfound.author.name}
 🔗𝐋𝐢𝐧𝐤⤞ ${youfound.url}`,
-                footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(4)}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n📅𝐃𝐚𝐭𝐞: _${Clock}_`,
+                footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(
+                  4
+                )}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n📅𝐃𝐚𝐭𝐞: _${Clock}_`,
                 buttons: [
                   {
                     buttonId: `${ᴋᴇɪ}happy`,
@@ -149,7 +155,6 @@ _ᴛᴏᴏᴋ ꜰʀᴏᴍ ʏᴏᴜᴛᴜʙᴇ_
             axios
               .get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
               .then(async (a) => {
-                console.log(a);
                 DAudio(dl_link, filename, async function () {
                   await ӄʀǟӄɨռʐ
                     .sendMessage(
@@ -170,9 +175,9 @@ _ᴛᴏᴏᴋ ꜰʀᴏᴍ ʏᴏᴜᴛᴜʙᴇ_
     } catch (ℓαвєяяσя) {
       await ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
       console.log(
-        "⬡==========================⬡    🍁 " +
+        `⬡==========================⬡    🍁 ` +
           ℓαвєяяσя +
-          "🍁    ⬡==========================⬡"
+          `🍁    ⬡==========================⬡`
       );
     }
   },
