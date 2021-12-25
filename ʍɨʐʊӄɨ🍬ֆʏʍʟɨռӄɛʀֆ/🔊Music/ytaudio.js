@@ -60,7 +60,7 @@ module.exports = {
       } else {
         const LinkForGroups = await yts(arg.join(` `));
         const GroupVideos = LinkForGroups.videos.slice(0, 1);
-        const filename = `${FinalName}_${ꜱᴇɴᴅᴇʀɪᴅ}_${Date.now()}`;
+        const filename = `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FinalName}_${ꜱᴇɴᴅᴇʀɪᴅ}_${Date.now()}`;
         var DAudio = function (uri, filename, callback) {
           request.head(uri, function (ℓαвєяяσя, gotResp, body) {
             mime = gotResp.headers[`content-type`];
