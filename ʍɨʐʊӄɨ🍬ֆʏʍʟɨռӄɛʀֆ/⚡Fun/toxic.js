@@ -23,42 +23,50 @@ module.exports = {
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
       if (!𝓜𝖎𝖟𝖚ӄ𝖎.isGroup && !𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
         xic().then((toxic) => {
-          ӄʀǟӄɨռʐ.sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, toxic, MessageType.text, {
-            contextInfo: {
-              mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
-            },
-          });
+          ӄʀǟӄɨռʐ
+            .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, toxic, MessageType.text, {
+              contextInfo: {
+                mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
+              },
+            })
+            .ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
         });
         // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
       } else if (𝓜𝖎𝖟𝖚ӄ𝖎.isGroup && !𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
         xic().then((toxic) => {
-          ӄʀǟӄɨռʐ.sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, toxic, MessageType.text, {
-            contextInfo: {
-              mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
-            },
-          });
+          ӄʀǟӄɨռʐ
+            .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, toxic, MessageType.text, {
+              contextInfo: {
+                mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
+              },
+            })
+            .ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
         });
         // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
       } else if (!𝓜𝖎𝖟𝖚ӄ𝖎.isGroup && 𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
         var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
         personreceived = Receiver.substring(0, Receiver.length - 15);
         xic().then((toxic) => {
-          ӄʀǟӄɨռʐ.sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, toxic, MessageType.text, {
-            contextInfo: {
-              mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
-            },
-          });
+          ӄʀǟӄɨռʐ
+            .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, toxic, MessageType.text, {
+              contextInfo: {
+                mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
+              },
+            })
+            .ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
         });
         // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
       } else if (𝓜𝖎𝖟𝖚ӄ𝖎.isGroup && 𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
         var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
         personreceived = Receiver.substring(0, Receiver.length - 15);
         xic().then((toxic) => {
-          ӄʀǟӄɨռʐ.sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, toxic, MessageType.text, {
-            contextInfo: {
-              mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
-            },
-          });
+          ӄʀǟӄɨռʐ
+            .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, toxic, MessageType.text, {
+              contextInfo: {
+                mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
+              },
+            })
+            .ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
         });
       }
     } catch (ℓαвєяяσя) {

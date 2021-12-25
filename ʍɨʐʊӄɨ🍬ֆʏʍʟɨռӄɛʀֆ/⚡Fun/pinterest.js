@@ -39,15 +39,14 @@ module.exports = {
       Pins = await pinterest(arg.join(` `));
       var PinReslt = Pins[Math.floor(Math.random() * Pins.length)];
       console.log(PinReslt);
-      await ӄʀǟӄɨռʐ.sendMessage(
-        𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-        { url: PinReslt },
-        MessageType.image,
-        {
+      await ӄʀǟӄɨռʐ
+        .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, { url: PinReslt }, MessageType.image, {
           contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
           quoted: chat,
           mimetype: Mimetype.png,
-          caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(4)}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
+          caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(
+            4
+          )}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
 
 •@${ꜱᴇɴᴅᴇʀeceived},
 ┌────⭓ 
@@ -56,8 +55,8 @@ module.exports = {
 └───────────⭓
 
 🔗𝐋𝐢𝐧𝐤: ${PinReslt}`,
-        }
-      );
+        })
+        .ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
     } catch (ℓαвєяяσя) {
       await ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
       console.log(

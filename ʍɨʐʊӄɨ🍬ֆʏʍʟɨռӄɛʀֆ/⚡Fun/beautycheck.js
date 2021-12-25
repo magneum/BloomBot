@@ -64,24 +64,26 @@ module.exports = {
         loadImage(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/爪𝖎𝖟𝖚ӄ𝖎Tempa.png`).then(async () => {
           const buffer = canvas.toBuffer(`image/png`);
           fs.writeFileSync(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/爪𝖎𝖟𝖚ӄ𝖎Tempa.png`, buffer);
-          ӄʀǟӄɨռʐ.sendMessage(
-            𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            {
-              url: `./ʍɨʐʊӄɨ🗑️ȶɛʍք/爪𝖎𝖟𝖚ӄ𝖎Tempa.png`,
-            },
-            MessageType.image,
-            {
-              quoted: chat,
-              mimetype: Mimetype.png,
-              contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
-              caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(
-                4
-              )}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
+          ӄʀǟӄɨռʐ
+            .sendMessage(
+              𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+              {
+                url: `./ʍɨʐʊӄɨ🗑️ȶɛʍք/爪𝖎𝖟𝖚ӄ𝖎Tempa.png`,
+              },
+              MessageType.image,
+              {
+                quoted: chat,
+                mimetype: Mimetype.png,
+                contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
+                caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(
+                  4
+                )}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
 
 𝗤𝘂𝗲𝘀𝘁𝗶𝗼𝗻: ʜᴏᴡ ʙᴇᴀᴜᴛʏꜰᴜʟʟ ɪꜱ *@${ꜱᴇɴᴅᴇʀeceived}*
 𝗣𝗲𝗿𝗰𝗲𝗻𝘁𝗮𝗴𝗲: ${Much}%`,
-            }
-          );
+              }
+            )
+            .ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
         });
       }
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
@@ -116,24 +118,26 @@ module.exports = {
         loadImage(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/爪𝖎𝖟𝖚ӄ𝖎Tempa.png`).then(async () => {
           const buffer = canvas.toBuffer(`image/png`);
           fs.writeFileSync(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/爪𝖎𝖟𝖚ӄ𝖎Tempa.png`, buffer);
-          ӄʀǟӄɨռʐ.sendMessage(
-            𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            {
-              url: `./ʍɨʐʊӄɨ🗑️ȶɛʍք/爪𝖎𝖟𝖚ӄ𝖎Tempa.png`,
-            },
-            MessageType.image,
-            {
-              quoted: chat,
-              mimetype: Mimetype.png,
-              contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ, Receiver] },
-              caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(
-                4
-              )}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
+          ӄʀǟӄɨռʐ
+            .sendMessage(
+              𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+              {
+                url: `./ʍɨʐʊӄɨ🗑️ȶɛʍք/爪𝖎𝖟𝖚ӄ𝖎Tempa.png`,
+              },
+              MessageType.image,
+              {
+                quoted: chat,
+                mimetype: Mimetype.png,
+                contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ, Receiver] },
+                caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(
+                  4
+                )}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
 
 𝗤𝘂𝗲𝘀𝘁𝗶𝗼𝗻: ʜᴏᴡ ʙᴇᴀᴜᴛʏꜰᴜʟʟ ɪꜱ *@${personreceived}*
 𝗣𝗲𝗿𝗰𝗲𝗻𝘁𝗮𝗴𝗲: ${Much}%`,
-            }
-          );
+              }
+            )
+            .ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
         });
       }
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
@@ -168,25 +172,27 @@ module.exports = {
         loadImage(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/爪𝖎𝖟𝖚ӄ𝖎Tempa.png`).then(async () => {
           const buffer = canvas.toBuffer(`image/png`);
           fs.writeFileSync(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/爪𝖎𝖟𝖚ӄ𝖎Tempa.png`, buffer);
-          ӄʀǟӄɨռʐ.sendMessage(
-            𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            {
-              url: `./ʍɨʐʊӄɨ🗑️ȶɛʍք/爪𝖎𝖟𝖚ӄ𝖎Tempa.png`,
-            },
-            MessageType.image,
-            {
-              quoted: chat,
-              mimetype: Mimetype.png,
-              contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ, Receiver] },
-              caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(
-                4
-              )}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
+          ӄʀǟӄɨռʐ
+            .sendMessage(
+              𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+              {
+                url: `./ʍɨʐʊӄɨ🗑️ȶɛʍք/爪𝖎𝖟𝖚ӄ𝖎Tempa.png`,
+              },
+              MessageType.image,
+              {
+                quoted: chat,
+                mimetype: Mimetype.png,
+                contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ, Receiver] },
+                caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(
+                  4
+                )}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
 
 𝗤𝘂𝗲𝘀𝘁𝗶𝗼𝗻: ʜᴏᴡ ʙᴇᴀᴜᴛʏꜰᴜʟʟ ɪꜱ *@${personreceived}*
 Asked By? @${ꜱᴇɴᴅᴇʀeceived} 
 𝗣𝗲𝗿𝗰𝗲𝗻𝘁𝗮𝗴𝗲: ${Much}%`,
-            }
-          );
+              }
+            )
+            .ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
         });
       }
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
@@ -217,24 +223,26 @@ Asked By? @${ꜱᴇɴᴅᴇʀeceived}
         loadImage(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/爪𝖎𝖟𝖚ӄ𝖎Tempa.png`).then(async () => {
           const buffer = canvas.toBuffer(`image/png`);
           fs.writeFileSync(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/爪𝖎𝖟𝖚ӄ𝖎Tempa.png`, buffer);
-          ӄʀǟӄɨռʐ.sendMessage(
-            𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            {
-              url: `./ʍɨʐʊӄɨ🗑️ȶɛʍք/爪𝖎𝖟𝖚ӄ𝖎Tempa.png`,
-            },
-            MessageType.image,
-            {
-              quoted: chat,
-              mimetype: Mimetype.png,
-              contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
-              caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(
-                4
-              )}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
+          ӄʀǟӄɨռʐ
+            .sendMessage(
+              𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+              {
+                url: `./ʍɨʐʊӄɨ🗑️ȶɛʍք/爪𝖎𝖟𝖚ӄ𝖎Tempa.png`,
+              },
+              MessageType.image,
+              {
+                quoted: chat,
+                mimetype: Mimetype.png,
+                contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
+                caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(
+                  4
+                )}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
 
 𝗤𝘂𝗲𝘀𝘁𝗶𝗼𝗻: ʜᴏᴡ ʙᴇᴀᴜᴛʏꜰᴜʟʟ ɪꜱ *@${ꜱᴇɴᴅᴇʀeceived}*
 𝗣𝗲𝗿𝗰𝗲𝗻𝘁𝗮𝗴𝗲: ${Much}%`,
-            }
-          );
+              }
+            )
+            .ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
         });
       }
     } catch (ℓαвєяяσя) {

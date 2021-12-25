@@ -19,17 +19,19 @@ module.exports = {
       );
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
       var num = Math.floor(Math.random() * (500 - 1) + 1);
-      await ӄʀǟӄɨռʐ.sendMessage(
-        𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-        {
-          url: `https://ctk-api.herokuapp.com/meme/${num}`,
-        },
-        MessageType.image,
-        {
-          quoted: chat,
-          mimetype: Mimetype.png || Mimetype.jpeg,
-        }
-      );
+      await ӄʀǟӄɨռʐ
+        .sendMessage(
+          𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+          {
+            url: `https://ctk-api.herokuapp.com/meme/${num}`,
+          },
+          MessageType.image,
+          {
+            quoted: chat,
+            mimetype: Mimetype.png || Mimetype.jpeg,
+          }
+        )
+        .ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
     } catch (ℓαвєяяσя) {
       await ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
       console.log(

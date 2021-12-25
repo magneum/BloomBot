@@ -42,7 +42,9 @@ module.exports = {
       let movie = await imob.get({
         name: arg.join(` `),
       });
-      const Litol = `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(4)}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
+      const Litol = `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(
+        4
+      )}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
 
 *💡𝐓𝐢𝐭𝐥𝐞➛*  ${movie.title.toUpperCase()}
 *🕜𝐓𝐢𝐦𝐞➛*  ${movie.runtime}
@@ -58,18 +60,20 @@ module.exports = {
 *🔗𝐈𝐦𝐝𝐛𝐮𝐫𝐥➛*  ${movie.imdburl}
 *❓𝐏𝐥𝐨𝐭➛*  ${movie.plot}`;
       console.log(Litol);
-      await ӄʀǟӄɨռʐ.sendMessage(
-        𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-        {
-          url: movie.poster,
-        },
-        MessageType.image,
-        {
-          quoted: chat,
-          mimetype: Mimetype.png,
-          caption: Litol,
-        }
-      );
+      await ӄʀǟӄɨռʐ
+        .sendMessage(
+          𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+          {
+            url: movie.poster,
+          },
+          MessageType.image,
+          {
+            quoted: chat,
+            mimetype: Mimetype.png,
+            caption: Litol,
+          }
+        )
+        .ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
     } catch (ℓαвєяяσя) {
       await ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
       console.log(

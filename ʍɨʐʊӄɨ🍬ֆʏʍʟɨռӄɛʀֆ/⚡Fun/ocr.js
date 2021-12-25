@@ -36,16 +36,20 @@ module.exports = {
         });
         var Msg = text.ParsedResults[0].ParsedText;
         if (Msg === ``) {
-          ӄʀǟӄɨռʐ.sendMessage(
-            𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            `Couldn't find text in the image`,
-            MessageType.text,
-            { quoted: chat }
-          );
+          ӄʀǟӄɨռʐ
+            .sendMessage(
+              𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+              `Couldn't find text in the image`,
+              MessageType.text,
+              { quoted: chat }
+            )
+            .ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
         }
-        ӄʀǟӄɨռʐ.sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, Msg, MessageType.text, {
-          quoted: chat,
-        });
+        ӄʀǟӄɨռʐ
+          .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, Msg, MessageType.text, {
+            quoted: chat,
+          })
+          .ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
         fs.unlink(filePath),
           (ℓαвєяяσя) => {
             if (ℓαвєяяσя) console.log(ℓαвєяяσя);
@@ -70,16 +74,20 @@ module.exports = {
         });
         var Msg = text.ParsedResults[0].ParsedText;
         if (Msg === ``) {
-          ӄʀǟӄɨռʐ.sendMessage(
-            𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            `Couldn't find text in the image`,
-            MessageType.text,
-            { quoted: chat }
-          );
+          ӄʀǟӄɨռʐ
+            .sendMessage(
+              𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+              `Couldn't find text in the image`,
+              MessageType.text,
+              { quoted: chat }
+            )
+            .ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
         }
-        ӄʀǟӄɨռʐ.sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, Msg, MessageType.text, {
-          quoted: chat,
-        });
+        ӄʀǟӄɨռʐ
+          .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, Msg, MessageType.text, {
+            quoted: chat,
+          })
+          .ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
         fs.unlink(filePath),
           (ℓαвєяяσя) => {
             if (ℓαвєяяσя) console.log(ℓαвєяяσя);
@@ -89,20 +97,24 @@ module.exports = {
           };
       }
       setTimeout(async () => {
-        await ӄʀǟӄɨռʐ.sendMessage(
+        await ӄʀǟӄɨռʐ
+          .sendMessage(
+            𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+            `Please tag a valid message.`,
+            MessageType.text,
+            { quoted: chat }
+          )
+          .ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
+        return;
+      }, 300000);
+      await ӄʀǟӄɨռʐ
+        .sendMessage(
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
           `Please tag a valid message.`,
           MessageType.text,
           { quoted: chat }
-        );
-        return;
-      }, 300000);
-      await ӄʀǟӄɨռʐ.sendMessage(
-        𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-        `Please tag a valid message.`,
-        MessageType.text,
-        { quoted: chat }
-      );
+        )
+        .ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
     } catch (ℓαвєяяσя) {
       await ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
       console.log(
