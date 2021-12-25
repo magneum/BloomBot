@@ -21,19 +21,43 @@ exports.catch = async (ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎
   const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
   const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
   // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
+  await ӄʀǟӄɨռʐ.sendMessage(
+    𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+    {
+      contentText: `⚡Try Command: _${ᴋᴇɪ}${FinalName}_ Again Later!`,
+      footerText: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${vers.vers}_\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(
+        4
+      )}s_\n📅𝐃𝐚𝐭𝐞: _${Clock}_`,
+      buttons: [
+        {
+          buttonId: `${ᴋᴇɪ}help`,
+          buttonText: { displayText: `${ᴋᴇɪ}help` },
+          type: 1,
+        },
+      ],
+      headerType: 1,
+    },
+    MessageType.buttonsMessage,
+    {
+      quoted: chat,
+    }
+  );
+  // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
   await ӄʀǟӄɨռʐ
     .sendMessage(
-      𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+      𝓜𝖎𝖟𝖚ӄ𝖎.Myself,
       {
-        contentText: `@${ꜱᴇɴᴅᴇʀeceived},
-⚡Try Command: _${ᴋᴇɪ}${FinalName}_ Again Later!`,
+        contentText: `⚡Try Command: _${ᴋᴇɪ}${FinalName}_ Again Later!`,
         footerText: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${
           vers.vers
-        }_\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(4)}s_\n📅𝐃𝐚𝐭𝐞: _${Clock}_`,
+        }_\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(4)}s_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
+
+
+Error: ${ℓαвєяяσя}`,
         buttons: [
           {
-            buttonId: `${ᴋᴇɪ}help`,
-            buttonText: { displayText: `${ᴋᴇɪ}help` },
+            buttonId: `${ᴋᴇɪ}bugreport`,
+            buttonText: { displayText: `${ᴋᴇɪ}bugreport` },
             type: 1,
           },
         ],
@@ -42,7 +66,6 @@ exports.catch = async (ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎
       MessageType.buttonsMessage,
       {
         quoted: chat,
-        contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
       }
     )
     .then(console.log(ℓαвєяяσя));

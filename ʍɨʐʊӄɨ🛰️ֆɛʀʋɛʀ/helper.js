@@ -101,7 +101,7 @@ exports.resolve = function (messageInstance, ӄʀǟӄɨռʐ, groupMetadata) {
   𝓜𝖎𝖟𝖚ӄ𝖎.isReplyAudio = 𝓜𝖎𝖟𝖚ӄ𝖎.isReply
     ? jsonMessage.indexOf(`audioMessage`) !== -1
     : false;
-  𝓜𝖎𝖟𝖚ӄ𝖎.logGroup = ӄʀǟӄɨռʐ.user.jid || ``;
+  𝓜𝖎𝖟𝖚ӄ𝖎.Myself = ӄʀǟӄɨռʐ.user.jid || ``;
   𝓜𝖎𝖟𝖚ӄ𝖎.isGroup = 𝓜𝖎𝖟𝖚ӄ𝖎.chatId.endsWith(`@g.us`);
   𝓜𝖎𝖟𝖚ӄ𝖎.isPm = !𝓜𝖎𝖟𝖚ӄ𝖎.isGroup;
   𝓜𝖎𝖟𝖚ӄ𝖎.sender =

@@ -1,4 +1,5 @@
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
+const Mizuki_Buttons = require(`./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Mizuki_Buttons`);
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const LetGoChecker = require("./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/LetGoChecker");
 const 𝓜𝖎𝖟𝖚ӄ𝖎ֆʏռօք = require(`./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/𝓜𝖎𝖟𝖚ӄ𝖎ᴢᴇɴ`);
@@ -46,10 +47,7 @@ async function 𝐌𝐢𝐳𝐮𝐤𝐢() {
         const command = require(`./ʍɨʐʊӄɨ🍬ֆʏʍʟɨռӄɛʀֆ/${ʜᴏʟᴅᴇʀ}/${ᴍɪꜱᴏ}`);
         ꜱɪᴛʀᴀᴘ.set(command.name, command);
         commandUsage.set(command.𝓜𝓮𝓮6ʍօʀɛ, command.description);
-        ᴍɪᴢᴜᴋɪᴛᴀʙʟᴇ.addRow(
-          Kolor.green.bold(command.name.toUpperCase()),
-          `✔️   𝘚𝘺𝘮-𝘓𝘪𝘯𝘬𝘦𝘥`
-        );
+        ᴍɪᴢᴜᴋɪᴛᴀʙʟᴇ.addRow(Kolor.green.bold(command.name), `✔️   𝘚𝘺𝘮-𝘓𝘪𝘯𝘬𝘦𝘥`);
       }
       console.log(ᴍɪᴢᴜᴋɪᴛᴀʙʟᴇ.toString());
     }
@@ -166,9 +164,9 @@ async function 𝐌𝐢𝐳𝐮𝐤𝐢() {
       ӄʀǟӄɨռʐ
         .sendMessage(
           groupupdateID.id,
-          `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(2)}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${
-            vers.vers
-          }_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
+          `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ* \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+            4
+          )}s_\n📅ᴅᴀᴛᴇ: _${Clock}_
 
 *<○ ${groupupdateID.subject} Opened ○>*
 Group has been opened by admin Now all members can send messages`,
@@ -180,9 +178,9 @@ Group has been opened by admin Now all members can send messages`,
       ӄʀǟӄɨռʐ
         .sendMessage(
           groupupdateID.id,
-          `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(2)}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${
-            vers.vers
-          }_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
+          `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ* \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+            4
+          )}s_\n📅ᴅᴀᴛᴇ: _${Clock}_
 
 *<○ ${groupupdateID.subject} 𝗖𝗹𝗼𝘀𝗲𝗱 ○>*
 ɢʀᴏᴜᴘ ʜᴀꜱ ʙᴇᴇɴ ᴄʟᴏꜱᴇᴅ ʙʏ ᴀᴅᴍɪɴ ɴᴏᴡ ᴏɴʟʏ ᴀᴅᴍɪɴ ᴄᴀɴ ꜱᴇɴᴅ ᴍᴇꜱꜱᴀɢᴇꜱ`,
@@ -195,9 +193,9 @@ Group has been opened by admin Now all members can send messages`,
       ӄʀǟӄɨռʐ
         .sendMessage(
           groupupdateID.id,
-          `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(2)}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${
-            vers.vers
-          }_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
+          `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ* \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+            4
+          )}s_\n📅ᴅᴀᴛᴇ: _${Clock}_
 
 *<○ ${groupupdateID.subject} 𝗗𝗲𝘀𝗰𝗿𝗶𝗽𝘁𝗶𝗼𝗻 𝗖𝗵𝗮𝗻𝗴𝗲 ○>*
 • 𝙶𝚛𝚘𝚞𝚙 𝚍𝚎𝚜𝚌𝚛𝚒𝚙𝚝𝚒𝚘𝚗 𝚑𝚊𝚜 𝚋𝚎𝚎𝚗 𝚌𝚑𝚊𝚗𝚐𝚎𝚍 𝚋𝚢:@${update.descOwner.split(`@`)[0]}
@@ -217,9 +215,9 @@ ${update.desc}`,
       ӄʀǟӄɨռʐ
         .sendMessage(
           groupupdateID.id,
-          `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(2)}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${
-            vers.vers
-          }_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
+          `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ* \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+            4
+          )}s_\n📅ᴅᴀᴛᴇ: _${Clock}_
 
 *<○ ${groupupdateID.subject} 𝗦𝗲𝘁𝘁𝗶𝗻𝗴 𝗖h𝗮𝗻𝗴𝗲 ○>*
 ᴇᴅɪᴛ ɢʀᴏᴜᴘ ɪɴꜰᴏ ʜᴀꜱ ʙᴇᴇɴ ᴏᴘᴇɴᴇᴅ ꜰᴏʀ ᴍᴇᴍʙᴇʀꜱ ɴᴏᴡ ᴀʟʟ ᴍᴇᴍʙᴇʀꜱ ᴄᴀɴ ᴇᴅɪᴛ ᴛʜɪꜱ ɢʀᴏᴜᴘ ɪɴꜰᴏ`,
@@ -232,9 +230,9 @@ ${update.desc}`,
       ӄʀǟӄɨռʐ
         .sendMessage(
           groupupdateID.id,
-          `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(2)}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${
-            vers.vers
-          }_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
+          `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ* \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+            4
+          )}s_\n📅ᴅᴀᴛᴇ: _${Clock}_
 
 *<○ ${groupupdateID.subject} 𝗦𝗲𝘁𝘁𝗶𝗻𝗴 𝗖𝗵𝗮𝗻𝗴𝗲 ○>*
 ɢʀᴏᴜᴘ ɪɴꜰᴏ ʜᴀꜱ ʙᴇᴇɴ ᴄʟᴏꜱᴇᴅ ꜰᴏʀ ᴍᴇᴍʙᴇʀꜱ ɴᴏᴡ ᴏɴʟʏ ɢʀᴏᴜᴘ ᴀᴅᴍɪɴꜱ ᴄᴀɴ ᴇᴅɪᴛ ᴛʜɪꜱ ɢʀᴏᴜᴘ ɪɴꜰᴏ`,
@@ -264,11 +262,11 @@ ${update.desc}`,
           MessageType.video,
           {
             mimetype: `video/gif`,
-            caption: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${
-              vers.vers
-            }_\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(4)}s_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
+            caption: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ* \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+              4
+            )}s_\n📅ᴅᴀᴛᴇ: _${Clock}_
 
-🔑𝐏𝐫𝐞𝐟𝐢𝐱: *!*
+🔑𝐏𝐫𝐞𝐟𝐢𝐱: *${ᴋᴇɪ}*
 👑𝐎𝐰𝐧𝐞𝐫: _🐙KrakinzKon_
 
 𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚👋🏻 ᴇᴠᴇʀʏᴏɴᴇ, ʀᴇᴀᴅʏ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ʜᴇʀᴇ
@@ -344,9 +342,9 @@ ${update.desc}`,
           await ӄʀǟӄɨռʐ
             .sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(2)}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${
-                vers.vers
-              }_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
+              `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ* \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+                4
+              )}s_\n📅ᴅᴀᴛᴇ: _${Clock}_
 
 
 •──[ Message From Admins  ]──•
@@ -393,11 +391,11 @@ ${update.desc}`,
               await ӄʀǟӄɨռʐ
                 .sendMessage(
                   𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                  `*🍁爪𝖎𝖟𝖚ӄ𝖎™*
+                  `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*
 
-*• Bot Auto-Udated!*
-*• New Version: *🍁爪𝖎𝖟𝖚ӄ𝖎™* ${vers.vers}
-*• Total New Commits:* ${ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total}`,
+*🍁Bot Auto-Udated!*
+*🍁New Version: ${vers.vers}
+*🍁Total New Commits:* ${ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total}`,
                   MessageType.text
                 )
                 .catch((ℓαвєяяσя) =>
@@ -440,42 +438,15 @@ ${update.desc}`,
         var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
         // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
         if (!command) {
-          let content = fs.readFileSync(`./ʍɨʐʊӄɨ☣️ƈօʀɛ/Mizuki_Invalid.png`);
-          const media = await ӄʀǟӄɨռʐ.prepareMessage(
-            𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            content,
-            MessageType.image,
-            {
-              mimetype: Mimetype.png,
-            }
-          );
-          return await ӄʀǟӄɨռʐ
-            .sendMessage(
-              𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              {
-                contentText: `𝗜𝗻𝘃𝗮𝗹𝗶𝗱 𝗖𝗼𝗺𝗺𝗮𝗻𝗱
+          return Mizuki_Buttons.MTB(
+            ӄʀǟӄɨռʐ,
+            chat,
+            𝓜𝖎𝖟𝖚ӄ𝖎,
+            `@${ꜱᴇɴᴅᴇʀeceived}, ❌ 𝚆𝚛𝚘𝚗𝚐 𝙲𝚘𝚖𝚖𝚊𝚗𝚍
 
-*😑Baka* @${ꜱᴇɴᴅᴇʀeceived},Type *${ᴋᴇɪ}help*`,
-                footerText: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${
-                  vers.vers
-                }_\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(4)}s_\n📅𝐃𝐚𝐭𝐞: _${Clock}_`,
-                buttons: [
-                  {
-                    buttonId: `${ᴋᴇɪ}help`,
-                    buttonText: { displayText: `${ᴋᴇɪ}help` },
-                    type: 1,
-                  },
-                ],
-                headerType: 4,
-                imageMessage: media.message.imageMessage,
-              },
-              MessageType.buttonsMessage,
-              {
-                quoted: chat,
-                contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
-              }
-            )
-            .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
+*😑Baka* 
+Type _*${ᴋᴇɪ}help*_ and Read Everything Properly`
+          ).catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
         }
         return command.handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, ꜱɪᴛʀᴀᴘ, Clock, Ping);
       }

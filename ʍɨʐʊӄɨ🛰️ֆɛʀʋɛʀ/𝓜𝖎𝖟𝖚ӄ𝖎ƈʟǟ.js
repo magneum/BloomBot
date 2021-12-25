@@ -10,7 +10,7 @@ class 𝓜𝖎𝖟𝖚ӄ𝓲𝓷𝔃 {
     chatId,
     fromMe,
     owner,
-    logGroup,
+    Myself,
     isGroup,
     isPm,
     sender,
@@ -70,7 +70,7 @@ class 𝓜𝖎𝖟𝖚ӄ𝓲𝓷𝔃 {
     this.isSenderDev = isSenderDev;
     this.isCmd = isCmd;
     this.commandName = commandName;
-    this.logGroup = logGroup;
+    this.Myself = Myself;
     this.groupName = groupName;
     this.groupMembers = groupMembers;
     this.groupAdmins = groupAdmins;
