@@ -65,17 +65,16 @@ module.exports = {
 
 ⚡𝐓𝐨𝐩𝐢𝐜: *${FinalName}*
 🥳𝐅𝐫𝐨𝐦: @${ꜱᴇɴᴅᴇʀeceived}
-🤩𝐓𝐨: @${personreceived}
-
-`,
+🤩𝐓𝐨: @${personreceived}`,
                 }
               )
               .then(
                 fs.unlinkSync(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FinalName}_${GifID}.gif`),
                 fs.unlinkSync(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FinalName}_${GifID}.mp4`)
-              );
+              )
+              .ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
           })
-          .on(`ℓαвєяяσя`, async (ℓαвєяяσя) => {
+          .on(`error`, async (ℓαвєяяσя) => {
             console.log(ℓαвєяяσя);
           });
       }
@@ -111,16 +110,16 @@ module.exports = {
                   caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ* _${vers.vers}_
 
 ⚡𝐓𝐨𝐩𝐢𝐜: *${FinalName}*
-🍯𝐓𝐡𝐞𝐦𝐬𝐞𝐥𝐯𝐞: @${ꜱᴇɴᴅᴇʀeceived}
-`,
+🍯𝐓𝐡𝐞𝐦𝐬𝐞𝐥𝐯𝐞: @${ꜱᴇɴᴅᴇʀeceived}`,
                 }
               )
               .then(
                 fs.unlinkSync(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FinalName}_${GifID}.gif`),
                 fs.unlinkSync(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FinalName}_${GifID}.mp4`)
-              );
+              )
+              .ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
           })
-          .on(`ℓαвєяяσя`, async (ℓαвєяяσя) => {
+          .on(`error`, async (ℓαвєяяσя) => {
             console.log(ℓαвєяяσя);
           });
       }
