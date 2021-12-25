@@ -73,9 +73,10 @@ module.exports = {
               .then(
                 fs.unlinkSync(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FinalName}_${GifID}.gif`),
                 fs.unlinkSync(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FinalName}_${GifID}.mp4`)
-              );
+              )
+              .ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
           })
-          .on(`ℓαвєяяσя`, async (ℓαвєяяσя) => {
+          .on(`error`, async (ℓαвєяяσя) => {
             console.log(ℓαвєяяσя);
           });
       }
@@ -118,9 +119,10 @@ module.exports = {
               .then(
                 fs.unlinkSync(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FinalName}_${GifID}.gif`),
                 fs.unlinkSync(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FinalName}_${GifID}.mp4`)
-              );
+              )
+              .ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
           })
-          .on(`ℓαвєяяσя`, async (ℓαвєяяσя) => {
+          .on(`error`, async (ℓαвєяяσя) => {
             console.log(ℓαвєяяσя);
           });
       }

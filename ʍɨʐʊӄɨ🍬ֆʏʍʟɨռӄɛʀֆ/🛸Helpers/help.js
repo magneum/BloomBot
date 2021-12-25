@@ -30,10 +30,11 @@ module.exports = {
           mimetype: Mimetype.jpeg,
         }
       );
-      await ӄʀǟӄɨռʐ.sendMessage(
-        𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-        {
-          contentText: `𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚👋🏻 •@${ꜱᴇɴᴅᴇʀeceived},
+      await ӄʀǟӄɨռʐ
+        .sendMessage(
+          𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+          {
+            contentText: `𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚👋🏻 •@${ꜱᴇɴᴅᴇʀeceived},
 
 🎄🎅🏽‍🎄❄️🎄☃️🎄❄️🎄🎅🏽‍🎄 
 🎄
@@ -63,30 +64,31 @@ module.exports = {
 🎄
 ☃️
 🌱𝗣𝗿𝗲𝘀𝘀 𝗯𝗲𝗹𝗼𝘄 𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗦𝘁𝗮𝗿𝘁 𝘂𝘀𝗶𝗻𝗴 𝗠𝗶𝘇𝘂𝗸𝗶👇🏽‍ `,
-          footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(
-            4
-          )}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n📅𝐃𝐚𝐭𝐞: _${Clock}_`,
-          buttons: [
-            {
-              buttonId: `${ᴋᴇɪ}list`,
-              buttonText: { displayText: `${ᴋᴇɪ}list` },
-              type: 1,
-            },
-            {
-              buttonId: `${ᴋᴇɪ}mizuki`,
-              buttonText: { displayText: `${ᴋᴇɪ}mizuki` },
-              type: 1,
-            },
-          ],
-          headerType: 4,
-          imageMessage: media.message.imageMessage,
-        },
-        MessageType.buttonsMessage,
-        {
-          quoted: chat,
-          contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
-        }
-      );
+            footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(
+              4
+            )}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n📅𝐃𝐚𝐭𝐞: _${Clock}_`,
+            buttons: [
+              {
+                buttonId: `${ᴋᴇɪ}list`,
+                buttonText: { displayText: `${ᴋᴇɪ}list` },
+                type: 1,
+              },
+              {
+                buttonId: `${ᴋᴇɪ}mizuki`,
+                buttonText: { displayText: `${ᴋᴇɪ}mizuki` },
+                type: 1,
+              },
+            ],
+            headerType: 4,
+            imageMessage: media.message.imageMessage,
+          },
+          MessageType.buttonsMessage,
+          {
+            quoted: chat,
+            contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
+          }
+        )
+        .ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
     } catch (ℓαвєяяσя) {
       await ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
       console.log(

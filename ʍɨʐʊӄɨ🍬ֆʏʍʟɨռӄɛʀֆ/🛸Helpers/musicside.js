@@ -64,15 +64,12 @@ many many more!`,
         headerType: 4,
         imageMessage: media.message.imageMessage,
       };
-      await ӄʀǟӄɨռʐ.sendMessage(
-        𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-        buttonMessage,
-        MessageType.buttonsMessage,
-        {
+      await ӄʀǟӄɨռʐ
+        .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, buttonMessage, MessageType.buttonsMessage, {
           quoted: chat,
           contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
-        }
-      );
+        })
+        .ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
     } catch (ℓαвєяяσя) {
       await ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
       console.log(

@@ -64,18 +64,20 @@ module.exports = {
 🕸️𝗦𝘁𝗮𝘁𝘂𝘀: _${data.status}_
 🎯𝗜𝗱: _${data.id}_
 📥𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱: _${data.url}_`;
-        await ӄʀǟӄɨռʐ.sendMessage(
-          𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-          {
-            url: data.picture,
-          },
-          MessageType.image,
-          {
-            quoted: chat,
-            mimetype: Mimetype.png || Mimetype.jpeg,
-            caption: AnimeInfos,
-          }
-        );
+        await ӄʀǟӄɨռʐ
+          .sendMessage(
+            𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+            {
+              url: data.picture,
+            },
+            MessageType.image,
+            {
+              quoted: chat,
+              mimetype: Mimetype.png || Mimetype.jpeg,
+              caption: AnimeInfos,
+            }
+          )
+          .ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
       });
     } catch (ℓαвєяяσя) {
       await ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
