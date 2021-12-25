@@ -45,87 +45,89 @@ module.exports = {
           .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
 
         // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-      }
-      const validate = await spotifyToYT.validateURL(arg.join(` `));
-      const result = validate ? `Valid` : `Invalid`;
-      if (result === `Invalid`) {
-        const ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
-        return ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ
-          .ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
-            ӄʀǟӄɨռʐ,
-            chat,
-            𝓜𝖎𝖟𝖚ӄ𝖎,
-            ꜱᴇɴᴅᴇʀɪᴅ,
-            ꜱᴇɴᴅᴇʀeceived,
-            𝓜𝖎𝖟𝖚ӄ𝖎.commandName,
-            𝓜𝓮𝓮ʍօʀɛ
-          )
-          .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
-
-        // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
       } else {
-        const filename = `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FinalName}_${ꜱᴇɴᴅᴇʀɪᴅ}_${Date.now()}`;
-        const SpotRslt = await spotifyToYT.trackGet(arg.join(` `));
-        console.log(SpotRslt);
-        const LinkForGroups = await yts(SpotRslt.url);
-        const GroupVideos = LinkForGroups.videos.slice(0, 1);
-        var DAudio = function (uri, filename, callback) {
-          request.head(uri, function (ℓαвєяяσя, gotResp, body) {
-            console.log(gotResp);
-            mime = gotResp.headers[`content-type`];
-            request(uri)
-              .pipe(fs.createWriteStream(filename))
-              .on(`close`, callback);
-          });
-        };
-        // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-        await GroupVideos.forEach(async function (youfound) {
-          yta(youfound.url)
-            .then(async (gotResp) => {
-              console.log(youfound.url);
-              const { dl_link, thumb, title, filesizeF, filesize } = gotResp;
-              if (youfound.seconds > "1800") {
-                console.log(youfound.timestamp);
-                console.log("Sorry cannot Continue!");
-                return ӄʀǟӄɨռʐ
-                  .sendMessage(
-                    𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                    {
-                      caption: thumb,
-                    },
-                    MessageType.image,
-                    {
-                      quoted: chat,
-                      contextInfo: {
-                        mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
+        const validate = await spotifyToYT.validateURL(arg.join(` `));
+        const result = validate ? `Valid` : `Invalid`;
+        if (result === `Invalid`) {
+          const ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
+          return ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ
+            .ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
+              ӄʀǟӄɨռʐ,
+              chat,
+              𝓜𝖎𝖟𝖚ӄ𝖎,
+              ꜱᴇɴᴅᴇʀɪᴅ,
+              ꜱᴇɴᴅᴇʀeceived,
+              𝓜𝖎𝖟𝖚ӄ𝖎.commandName,
+              𝓜𝓮𝓮ʍօʀɛ
+            )
+            .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
+
+          // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
+        } else {
+          const filename = `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FinalName}_${ꜱᴇɴᴅᴇʀɪᴅ}_${Date.now()}`;
+          const SpotRslt = await spotifyToYT.trackGet(arg.join(` `));
+          console.log(SpotRslt);
+          const LinkForGroups = await yts(SpotRslt.url);
+          const GroupVideos = LinkForGroups.videos.slice(0, 1);
+          var DAudio = function (uri, filename, callback) {
+            request.head(uri, function (ℓαвєяяσя, gotResp, body) {
+              console.log(gotResp);
+              mime = gotResp.headers[`content-type`];
+              request(uri)
+                .pipe(fs.createWriteStream(filename))
+                .on(`close`, callback);
+            });
+          };
+          // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
+          await GroupVideos.forEach(async function (youfound) {
+            yta(youfound.url)
+              .then(async (gotResp) => {
+                console.log(youfound.url);
+                const { dl_link, thumb, title, filesizeF, filesize } = gotResp;
+                if (youfound.seconds > "1800") {
+                  console.log(youfound.timestamp);
+                  console.log("Sorry cannot Continue!");
+                  return ӄʀǟӄɨռʐ
+                    .sendMessage(
+                      𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                      {
+                        caption: thumb,
                       },
-                      mimetype: Mimetype.png || Mimetype.jpeg,
-                      content: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${
-                        vers.vers
-                      }_\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(4)}s_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
+                      MessageType.image,
+                      {
+                        quoted: chat,
+                        contextInfo: {
+                          mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
+                        },
+                        mimetype: Mimetype.png || Mimetype.jpeg,
+                        content: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${
+                          vers.vers
+                        }_\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(4)}s_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
 
 ⭕𝗔𝘂𝗱𝗶𝗼 •@${ꜱᴇɴᴅᴇʀeceived}, 𝗣𝗹𝗲𝗮𝘀𝗲 𝗖𝗵𝗼𝗼𝘀𝗲 𝗦𝗺𝗮𝗹𝗹𝗲𝗿 𝗙𝗶𝗹𝗲!
 
 🍻𝐓𝐢𝐭𝐥𝐞⤞ ${title}
 🥣𝐒𝐢𝐳𝐞⤞ ${filesizeF}`,
-                    }
-                  )
-                  .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
-              }
-              // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-              const media = await ӄʀǟӄɨռʐ.prepareMessage(
-                𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                { url: thumb },
-                MessageType.image,
-                {
-                  mimetype: Mimetype.png || Mimetype.jpeg,
+                      }
+                    )
+                    .catch((ℓαвєяяσя) =>
+                      ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
+                    );
                 }
-              );
-              await ӄʀǟӄɨռʐ
-                .sendMessage(
+                // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
+                const media = await ӄʀǟӄɨռʐ.prepareMessage(
                   𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                  { url: thumb },
+                  MessageType.image,
                   {
-                    contentText: `𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚👋🏻 •@${ꜱᴇɴᴅᴇʀeceived},    
+                    mimetype: Mimetype.png || Mimetype.jpeg,
+                  }
+                );
+                await ӄʀǟӄɨռʐ
+                  .sendMessage(
+                    𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                    {
+                      contentText: `𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚👋🏻 •@${ꜱᴇɴᴅᴇʀeceived},    
 𝗦𝗽𝗼𝘁𝗶𝗳𝘆🟢𝗔𝘂𝗱𝗶𝗼 𝗣𝗹𝗲𝗮𝘀𝗲 𝘄𝗮𝗶𝘁 𝗳𝗼𝗿 𝘁𝗵𝗲 𝗱𝗲𝗹𝗶𝘃𝗲𝗿𝘆 𝗼𝗳 𝗦𝗽𝗼𝘁𝗶𝗳𝘆-𝗔𝘂𝗱𝗶𝗼!
 
 
@@ -135,53 +137,58 @@ _ᴛᴏᴏᴋ ꜰʀᴏᴍ ʏᴏᴜᴛᴜʙᴇ_
 ⏰𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧⤞ ${youfound.timestamp}
 ✒️𝐀𝐮𝐭𝐡𝐨𝐫⤞ ${youfound.author.name}
 🔗𝐋𝐢𝐧𝐤⤞ ${youfound.url}`,
-                    footerText: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${
-                      vers.vers
-                    }_\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(4)}s_\n📅𝐃𝐚𝐭𝐞: _${Clock}_`,
-                    buttons: [
-                      {
-                        buttonId: `${ᴋᴇɪ}happy`,
-                        buttonText: { displayText: `${ᴋᴇɪ}happy` },
-                        type: 1,
-                      },
-                      {
-                        buttonId: `${ᴋᴇɪ}bugreport`,
-                        buttonText: { displayText: `${ᴋᴇɪ}bugreport` },
-                        type: 1,
-                      },
-                    ],
-                    headerType: 4,
-                    imageMessage: media.message.imageMessage,
-                  },
-                  MessageType.buttonsMessage,
-                  {
-                    quoted: chat,
-                    contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
-                  }
-                )
-                .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
-              // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-              axios
-                .get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
-                .then(async (a) => {
-                  DAudio(dl_link, filename, async function () {
-                    await ӄʀǟӄɨռʐ
-                      .sendMessage(
-                        𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                        fs.readFileSync(filename),
-                        MessageType.audio,
+                      footerText: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${
+                        vers.vers
+                      }_\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(4)}s_\n📅𝐃𝐚𝐭𝐞: _${Clock}_`,
+                      buttons: [
                         {
-                          quoted: chat,
-                          mimetype: Mimetype.mp4Audio,
-                        }
-                      )
-                      .then(fs.unlinkSync(filename))
-                      .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
+                          buttonId: `${ᴋᴇɪ}happy`,
+                          buttonText: { displayText: `${ᴋᴇɪ}happy` },
+                          type: 1,
+                        },
+                        {
+                          buttonId: `${ᴋᴇɪ}bugreport`,
+                          buttonText: { displayText: `${ᴋᴇɪ}bugreport` },
+                          type: 1,
+                        },
+                      ],
+                      headerType: 4,
+                      imageMessage: media.message.imageMessage,
+                    },
+                    MessageType.buttonsMessage,
+                    {
+                      quoted: chat,
+                      contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
+                    }
+                  )
+                  .catch((ℓαвєяяσя) =>
+                    ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
+                  );
+                // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
+                axios
+                  .get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
+                  .then(async (a) => {
+                    DAudio(dl_link, filename, async function () {
+                      await ӄʀǟӄɨռʐ
+                        .sendMessage(
+                          𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                          fs.readFileSync(filename),
+                          MessageType.audio,
+                          {
+                            quoted: chat,
+                            mimetype: Mimetype.mp4Audio,
+                          }
+                        )
+                        .then(fs.unlinkSync(filename))
+                        .catch((ℓαвєяяσя) =>
+                          ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
+                        );
+                    });
                   });
-                });
-            })
-            .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
-        });
+              })
+              .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
+          });
+        }
       }
     } catch (ℓαвєяяσя) {
       await ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
