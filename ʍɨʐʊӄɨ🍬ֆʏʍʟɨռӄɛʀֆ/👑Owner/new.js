@@ -80,32 +80,33 @@ module.exports = {
             sendEphemeral: true,
             caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(4)}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
 
-𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚👋🏻 *EVERYONE!,* _ʏᴏᴜʀ ᴀꜱꜱɪꜱꜱᴛᴀɴᴛ ꜰᴏʀ ᴍᴀᴋɪɴɢ ʙᴏʀɪɴɢ ᴡʜᴀᴛꜱᴀᴘᴘ ᴀ ʙᴇᴛᴛᴇʀ ᴀᴅᴠᴀɴᴄᴇ ᴀᴘᴘ!_
-
-┌────⭓🤖 𝐍𝐞𝐰 𝗦𝘁𝗮𝗯𝗹𝗲 𝐅𝐞𝐚𝐭𝐮𝐫𝐞𝐬
-│🛸 *${ᴋᴇɪ}antilink* _(on/off)_
-│*⚠️All Group Admins Please Turn-On*
-│*Antilink For Your Groups*
-└────────⭓
-
-
-┌────⭓ *𝙈𝙪𝙨𝙞𝙘*
-│🔎• ${ᴋᴇɪ}lyrics _find lyrics of songs_
-│🟢• ${ᴋᴇɪ}spotify _download spotify audio under 30min_
-│🔎• ${ᴋᴇɪ}ytsearch _search anything in youtube_
-│💡 *𝘠𝘛-𝘈𝘶𝘥𝘪𝘰*
-│⭕• ${ᴋᴇɪ}play _download youtube-name-audio under 30min_
-│⭕• ${ᴋᴇɪ}song _download youtube-name-audio under 30min_
-│⭕• ${ᴋᴇɪ}ytaudio _download youtube-link-audio under 30min_
-│💡 *𝘠𝘛-𝘝𝘪𝘥𝘦𝘰*
-│📺• ${ᴋᴇɪ}watch _download youtube-name-video under 30min_
-│📺• ${ᴋᴇɪ}stream _download youtube-name-video under 30min_
-│📺• ${ᴋᴇɪ}ytvideo _download youtube-link-video under 30min_
-└───────⭓
-
-🔑𝐏𝐫𝐞𝐟𝐢𝐱: *${ᴋᴇɪ}*
-👑𝐎𝐰𝐧𝐞𝐫: _🐙KrakinzKon_
-☣️𝐋𝐢𝐜𝐞𝐧𝐬𝐞𝐝: Apache License Version 2.0`,
+🎄🎅🏽‍🎄❄️🎄☃️🎄❄️🎄🎅🏽‍🎄 
+❄️𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚👋🏻 
+🎄_𝗘𝗩𝗘𝗥𝗬𝗢𝗡𝗘!, 𝐌𝐚𝐫𝐫𝐲 𝐂𝐡𝐫𝐢𝐬𝐦𝐚𝐬_
+❄️
+🎄┌────⭓🤖 𝐍𝐞𝐰 𝗦𝘁𝗮𝗯𝗹𝗲 𝐅𝐞𝐚𝐭𝐮𝐫𝐞𝐬
+❄️│🛸 *${ᴋᴇɪ}antilink* _(on/off)_
+🎄└────────⭓
+❄️
+🎄┌────⭓ *𝙈𝙪𝙨𝙞𝙘*
+❄️│🔎• ${ᴋᴇɪ}lyrics _find lyrics of songs_
+🎄│🟢• ${ᴋᴇɪ}spotify _download spotify audio under 30min_
+❄️│🔎• ${ᴋᴇɪ}ytsearch _search anything in youtube_
+🎄│💡 *𝘠𝘛-𝘈𝘶𝘥𝘪𝘰*
+❄️│⭕• ${ᴋᴇɪ}play _download youtube-name-audio under 30min_
+🎄│⭕• ${ᴋᴇɪ}song _download youtube-name-audio under 30min_
+❄️│⭕• ${ᴋᴇɪ}ytaudio _download youtube-link-audio under 30min_
+🎄│💡 *𝘠𝘛-𝘝𝘪𝘥𝘦𝘰*
+❄️│📺• ${ᴋᴇɪ}watch _download youtube-name-video under 30min_
+🎄│📺• ${ᴋᴇɪ}stream _download youtube-name-video under 30min_
+❄️│📺• ${ᴋᴇɪ}ytvideo _download youtube-link-video under 30min_
+🎄└───────⭓
+❄️
+🎄🔑𝐏𝐫𝐞𝐟𝐢𝐱: *${ᴋᴇɪ}*
+❄️👑𝐎𝐰𝐧𝐞𝐫: _🐙KrakinzKon_
+🎄☣️𝐋𝐢𝐜𝐞𝐧𝐬𝐞𝐝: Apache License Version 2.0
+❄️
+🎄🎅🏽‍🎄❄️🎄☃️🎄❄️🎄🎅🏽‍🎄 `,
           }
         );
       }
