@@ -93,7 +93,7 @@ module.exports = {
       ) {
         const media = await ӄʀǟӄɨռʐ.prepareMessage(
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-          fs.readFileSync(`./𝓜𝖎𝖟𝖚ӄ𝖎/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`),
+          fs.readFileSync(`./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`),
           MessageType.video,
           {
             mimetype: "video/gif",
@@ -143,7 +143,7 @@ module.exports = {
       ) {
         const media = await ӄʀǟӄɨռʐ.prepareMessage(
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-          fs.readFileSync(`./𝓜𝖎𝖟𝖚ӄ𝖎/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`),
+          fs.readFileSync(`./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`),
           MessageType.video,
           {
             mimetype: "video/gif",
@@ -191,7 +191,7 @@ module.exports = {
         await LinkList.addLinklistUser(``, 𝓜𝖎𝖟𝖚ӄ𝖎.chatId).then(async () => {
           const media = await ӄʀǟӄɨռʐ.prepareMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            fs.readFileSync(`./𝓜𝖎𝖟𝖚ӄ𝖎/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`),
+            fs.readFileSync(`./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`),
             MessageType.video,
             {
               mimetype: "video/gif",
@@ -239,7 +239,7 @@ module.exports = {
         await LinkList.removeLinklistUser(``, 𝓜𝖎𝖟𝖚ӄ𝖎.chatId).then(async () => {
           const media = await ӄʀǟӄɨռʐ.prepareMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            fs.readFileSync(`./𝓜𝖎𝖟𝖚ӄ𝖎/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`),
+            fs.readFileSync(`./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`),
             MessageType.video,
             {
               mimetype: "video/gif",
