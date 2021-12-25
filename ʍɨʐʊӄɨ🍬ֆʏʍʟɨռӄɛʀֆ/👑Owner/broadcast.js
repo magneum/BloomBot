@@ -43,7 +43,7 @@ module.exports = {
           contentText: `@${ꜱᴇɴᴅᴇʀeceived}, ❌ You Are Not Allowed!
 
 only *𝓜𝖎𝖟𝖚ӄ𝖎-Owners* can use this feature`,
-          footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(2)}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n📅𝐃𝐚𝐭𝐞: _${Clock}_`,
+          footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(4)}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n📅𝐃𝐚𝐭𝐞: _${Clock}_`,
           buttons: buttons,
           headerType: 4,
           imageMessage: media.message.imageMessage,
@@ -88,7 +88,7 @@ only *𝓜𝖎𝖟𝖚ӄ𝖎-Owners* can use this feature`,
           {
             contentText: `📜𝗦𝗽𝗲𝗰𝗶𝗮𝗹 𝗕𝗿𝗼𝗮𝗱𝗰𝗮𝘀𝘁
 ${arg.join(` `)}`,
-            footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(2)}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n📅𝐃𝐚𝐭𝐞: _${Clock}_`,
+            footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(4)}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n📅𝐃𝐚𝐭𝐞: _${Clock}_`,
             buttons: [
               {
                 buttonId: `${ᴋᴇɪ}help`,
@@ -119,7 +119,7 @@ ${arg.join(` `)}`,
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
       await ӄʀǟӄɨռʐ.sendMessage(
         𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-        `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(2)}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
+        `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(4)}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
 
 •@${ꜱᴇɴᴅᴇʀeceived}, 𝗕𝗿𝗼𝗮𝗱𝗖𝗮𝘀𝘁𝗶𝗻𝗴 𝗙𝗶𝗻𝗶𝘀𝗵𝗲𝗱!`,
         MessageType.text,

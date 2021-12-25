@@ -6,8 +6,8 @@ const axios = require("axios");
 const cheerio = require("cheerio");
 const qs = require("qs");
 const { fromBuffer } = require("file-type");
-const ytIdRegex =
-  /(?:http(?:s|):\/\/|)(?:(?:www\.|)youtube(?:\-nocookie|)\.com\/(?:watch\?.*(?:|\&)v=|embed\/|v\/)|youtu\.be\/)([-_0-9A-Za-z]{11})/;
+const RegexYouTube =
+  /^((?:https?:)?\/\/)?((?:www|m)\.)?((?:youtube\.com|youtu.be))(\/(?:[\w\-]+\?v=|embed\/|v\/)?)([\w\-]+)(\S+)?$/;
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
 function post(url, formdata) {
   console.log(
@@ -30,8 +30,8 @@ function post(url, formdata) {
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
 function yta(url) {
   return new Promise((resolve, reject) => {
-    if (ytIdRegex.test(url)) {
-      let ytId = ytIdRegex.exec(url);
+    if (RegexYouTube.test(url)) {
+      let ytId = RegexYouTube.exec(url);
       url = "https://youtu.be/" + ytId[1];
       post("https://www.y2mate.com/mates/en60/analyze/ajax", {
         url,

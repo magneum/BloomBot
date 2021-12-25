@@ -56,7 +56,7 @@ _If Found the report was just for fun then you will be banned by the bot!_
 ┌────⭓ 𝐒𝐮𝐩𝐩𝐨𝐫𝐭
 *🔥 ɢʀᴏᴜᴘ:* ${_𝔏𝔞𝔟_.HASH}`,
           footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(
-            2
+            4
           )}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n📅𝐃𝐚𝐭𝐞: _${Clock}_`,
           buttons: [
             {
@@ -90,7 +90,7 @@ _If Found the report was just for fun then you will be banned by the bot!_
           mentionedJid: members,
           mimetype: "video/gif",
           caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(
-            2
+            4
           )}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
 
 ⚡𝐓𝐨𝐩𝐢𝐜: *${FinalName}*
@@ -108,7 +108,7 @@ ${arg.join(" ")}`,
         {
           mimetype: "video/gif",
           caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(
-            2
+            4
           )}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
 
 ⚡𝐓𝐨𝐩𝐢𝐜: *${FinalName}*
@@ -126,7 +126,7 @@ ${arg.join(" ")}`,
         {
           mimetype: "video/gif",
           caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(
-            2
+            4
           )}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
 
 ⚡𝐓𝐨𝐩𝐢𝐜: *${FinalName}*
@@ -144,7 +144,7 @@ ${arg.join(" ")}`,
         {
           mimetype: "video/gif",
           caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(
-            2
+            4
           )}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
 
 ⚡𝐓𝐨𝐩𝐢𝐜: *${FinalName}*

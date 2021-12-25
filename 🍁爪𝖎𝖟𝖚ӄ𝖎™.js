@@ -145,7 +145,7 @@ async function 𝐌𝐢𝐳𝐮𝐤𝐢() {
         {
           mimetype: Mimetype.png,
           caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(
-            2
+            4
           )}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
 
 シ︎💡ᴘʀᴇꜰɪx: ${ᴋᴇɪ}
@@ -266,7 +266,7 @@ ${update.desc}`,
           {
             mimetype: `video/gif`,
             caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(
-              2
+              4
             )}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
 
 🔑𝐏𝐫𝐞𝐟𝐢𝐱: *!*
@@ -451,7 +451,7 @@ ${update.desc}`,
 
 *😑Baka* @${ꜱᴇɴᴅᴇʀeceived},Type *${ᴋᴇɪ}help*`,
               footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(
-                2
+                4
               )}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n📅𝐃𝐚𝐭𝐞: _${Clock}_`,
               buttons: [
                 {
