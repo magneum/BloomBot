@@ -41,17 +41,17 @@ module.exports = {
 
 
 ┌────⭓ *𝙈𝙪𝙨𝙞𝙘*
-│⭕• ${ᴋᴇɪ}lyrics _find lyrics of songs_
-│⭕• ${ᴋᴇɪ}spotify _download spotify audio under 30min_
-│⭕• ${ᴋᴇɪ}ytsearch _search anything in youtube_
+│🔎• ${ᴋᴇɪ}lyrics _find lyrics of songs_
+│🟢• ${ᴋᴇɪ}spotify _download spotify audio under 30min_
+│🔎• ${ᴋᴇɪ}ytsearch _search anything in youtube_
 │💡 *𝘠𝘛-𝘈𝘶𝘥𝘪𝘰*
 │⭕• ${ᴋᴇɪ}play _download youtube-name-audio under 30min_
 │⭕• ${ᴋᴇɪ}song _download youtube-name-audio under 30min_
 │⭕• ${ᴋᴇɪ}ytaudio _download youtube-link-audio under 30min_
 │💡 *𝘠𝘛-𝘝𝘪𝘥𝘦𝘰*
-│⭕• ${ᴋᴇɪ}watch _download youtube-name-video under 30min_
-│⭕• ${ᴋᴇɪ}stream _download youtube-name-video under 30min_
-│⭕• ${ᴋᴇɪ}ytvideo _download youtube-link-video under 30min_
+│📺• ${ᴋᴇɪ}watch _download youtube-name-video under 30min_
+│📺• ${ᴋᴇɪ}stream _download youtube-name-video under 30min_
+│📺• ${ᴋᴇɪ}ytvideo _download youtube-link-video under 30min_
 └───────⭓
 
 
