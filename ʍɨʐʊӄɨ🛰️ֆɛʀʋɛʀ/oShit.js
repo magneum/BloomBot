@@ -15,7 +15,7 @@ date.format(now, "ddd, MMM DD YYYY");
 const pattern = date.compile("ddd, MMM DD YYYY");
 const Clock = date.format(now, pattern);
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-exports.catch = async (ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎) => {
+exports.catch = async (ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat) => {
   var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
   var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
   const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
@@ -25,9 +25,7 @@ exports.catch = async (ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎
     .sendMessage(
       𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
       {
-        contentText: `${ꜱᴇɴᴅᴇʀeceived}, Try Again Later!
-
-⚡𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ᴋᴇɪ}${FinalName}`,
+        contentText: `*${ꜱᴇɴᴅᴇʀeceived},⚡Try Command: ${ᴋᴇɪ}${FinalName} Again Later!*`,
         footerText: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${
           vers.vers
         }_\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(4)}s_\n📅𝐃𝐚𝐭𝐞: _${Clock}_`,
@@ -47,6 +45,7 @@ exports.catch = async (ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎
       },
       MessageType.buttonsMessage,
       {
+        quoted: chat,
         contextInfo: {
           mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
         },

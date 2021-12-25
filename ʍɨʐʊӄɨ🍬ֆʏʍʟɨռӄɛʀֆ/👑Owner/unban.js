@@ -62,7 +62,7 @@ only *𝓜𝖎𝖟𝖚ӄ𝖎-Owners* can use this feature`,
               contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
             }
           )
-          .ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
+          .ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
       }
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
       if (𝓜𝖎𝖟𝖚ӄ𝖎.isPm && 𝓜𝖎𝖟𝖚ӄ𝖎.fromMe) {
@@ -82,7 +82,7 @@ only *𝓜𝖎𝖟𝖚ӄ𝖎-Owners* can use this feature`,
 Entry for ${RmUser} not found in the BanList.`,
               MessageType.text
             )
-            .ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
+            .ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
         }
         BanList.removeBanlistUser(PersonToRemoveFromBanlist, ``);
         return ӄʀǟӄɨռʐ
@@ -95,7 +95,7 @@ Entry for ${RmUser} not found in the BanList.`,
 ${RmUser} removed from BanList for all the chats.`,
             MessageType.text
           )
-          .ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
+          .ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
         // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
       } else {
         if (arg.length > 0) {
@@ -123,7 +123,7 @@ ${RmUser} removed from BanList for all the chats.`,
 Entry for ${RmUser} not found in the BanList.`,
                 MessageType.text
               )
-              .ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
+              .ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
           }
           BanList.removeBanlistUser(PersonToRemoveFromBanlist, 𝓜𝖎𝖟𝖚ӄ𝖎.chatId);
           return ӄʀǟӄɨռʐ
@@ -136,7 +136,7 @@ Entry for ${RmUser} not found in the BanList.`,
 ${RmUser} has been removed from the BanList for this group.`,
               MessageType.text
             )
-            .ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
+            .ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
           // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
         } else if (𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
           let PersonToRemoveFromBanlist = 𝓜𝖎𝖟𝖚ӄ𝖎.replyParticipant;
@@ -156,7 +156,7 @@ ${RmUser} has been removed from the BanList for this group.`,
 Entry for ${RmUser} not found in the BanList.`,
                 MessageType.text
               )
-              .ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
+              .ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
           }
           BanList.removeBanlistUser(PersonToRemoveFromBanlist, 𝓜𝖎𝖟𝖚ӄ𝖎.chatId);
           return ӄʀǟӄɨռʐ
@@ -169,7 +169,7 @@ Entry for ${RmUser} not found in the BanList.`,
 ${RmUser} has been removed from the BanList for this group.`,
               MessageType.text
             )
-            .ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
+            .ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
           // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
         } else {
           if (!(await BanList.getBanlistUser(``, 𝓜𝖎𝖟𝖚ӄ𝖎.chatId))) {
@@ -183,7 +183,7 @@ ${RmUser} has been removed from the BanList for this group.`,
 Entry for ${𝓜𝖎𝖟𝖚ӄ𝖎.groupName} not found in the BanList.`,
                 MessageType.text
               )
-              .ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
+              .ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
           }
           BanList.removeBanlistUser(``, 𝓜𝖎𝖟𝖚ӄ𝖎.chatId);
           return ӄʀǟӄɨռʐ
@@ -196,11 +196,11 @@ Entry for ${𝓜𝖎𝖟𝖚ӄ𝖎.groupName} not found in the BanList.`,
 Bot has been enabled for the group ${𝓜𝖎𝖟𝖚ӄ𝖎.groupName}`,
               MessageType.text
             )
-            .ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
+            .ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
         }
       }
     } catch (ℓαвєяяσя) {
-      await ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
+      await ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
       console.log(
         "⬡==========================⬡    🍁 " +
           ℓαвєяяσя +
