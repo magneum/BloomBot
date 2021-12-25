@@ -81,8 +81,9 @@ module.exports = {
             caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(4)}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
 
 🎄🎅🏽‍🎄❄️🎄☃️🎄❄️🎄🎅🏽‍🎄 
-❄️𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚👋🏻 
-🎄_𝗘𝗩𝗘𝗥𝗬𝗢𝗡𝗘!, 𝐌𝐚𝐫𝐫𝐲 𝐂𝐡𝐫𝐢𝐬𝐦𝐚𝐬_
+🎄
+❄️𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚👋🏻 _𝗘𝗩𝗘𝗥𝗬𝗢𝗡𝗘!, 𝐌𝐚𝐫𝐫𝐲 𝐂𝐡𝐫𝐢𝐬𝐦𝐚𝐬_
+🎄
 ❄️
 🎄┌────⭓🤖 𝐍𝐞𝐰 𝗦𝘁𝗮𝗯𝗹𝗲 𝐅𝐞𝐚𝐭𝐮𝐫𝐞𝐬
 ❄️│🛸 *${ᴋᴇɪ}antilink* _(on/off)_
@@ -102,9 +103,9 @@ module.exports = {
 ❄️│📺• ${ᴋᴇɪ}ytvideo _download youtube-link-video under 30min_
 🎄└───────⭓
 ❄️
-🎄🔑𝐏𝐫𝐞𝐟𝐢𝐱: *${ᴋᴇɪ}*
-❄️👑𝐎𝐰𝐧𝐞𝐫: _🐙KrakinzKon_
-🎄☣️𝐋𝐢𝐜𝐞𝐧𝐬𝐞𝐝: Apache License Version 2.0
+🎄│🔑𝐏𝐫𝐞𝐟𝐢𝐱: *${ᴋᴇɪ}*
+❄️│👑𝐎𝐰𝐧𝐞𝐫: _🐙KrakinzKon_
+🎄│☣️𝐋𝐢𝐜𝐞𝐧𝐬𝐞𝐝: Apache License Version 2.0
 ❄️
 🎄🎅🏽‍🎄❄️🎄☃️🎄❄️🎄🎅🏽‍🎄 `,
           }
