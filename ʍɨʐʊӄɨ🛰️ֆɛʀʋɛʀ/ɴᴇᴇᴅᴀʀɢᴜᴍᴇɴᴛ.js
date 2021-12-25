@@ -72,27 +72,29 @@ exports.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ = async (
     loadImage(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/爪𝖎𝖟𝖚ӄ𝖎Noargs.png`).then(async () => {
       const buffer = canvas.toBuffer(`image/png`);
       fs.writeFileSync(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/爪𝖎𝖟𝖚ӄ𝖎Noargs.png`, buffer);
-      await ӄʀǟӄɨռʐ.sendMessage(
-        𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-        {
-          url: `./ʍɨʐʊӄɨ🗑️ȶɛʍք/爪𝖎𝖟𝖚ӄ𝖎Noargs.png`,
-        },
-        MessageType.image,
-        {
-          quoted: chat,
-          mimetype: Mimetype.png,
-          contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
-          caption: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${vers.vers}_\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(
-            4
-          )}s_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
+      await ӄʀǟӄɨռʐ
+        .sendMessage(
+          𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+          {
+            url: `./ʍɨʐʊӄɨ🗑️ȶɛʍք/爪𝖎𝖟𝖚ӄ𝖎Noargs.png`,
+          },
+          MessageType.image,
+          {
+            quoted: chat,
+            mimetype: Mimetype.png,
+            contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
+            caption: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${
+              vers.vers
+            }_\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(4)}s_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
 
 *😑Baka* @${ꜱᴇɴᴅᴇʀeceived}, 𝘍𝘰𝘳𝘨𝘰𝘵 𝘛𝘰 𝘎𝘪𝘷𝘦 𝘈𝘯𝘺 𝘈𝘳𝘨𝘶𝘮𝘦𝘯𝘵!
 
 ⚡𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ᴋᴇɪ}${commandName}
 🤖𝐔𝐬𝐚𝐠𝐞/𝐈𝐧𝐟𝐨:  
 ${needs === undefined ? `null` : needs}`,
-        }
-      );
+          }
+        )
+        .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
     });
   } catch (ℓαвєяяσя) {
     await ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);

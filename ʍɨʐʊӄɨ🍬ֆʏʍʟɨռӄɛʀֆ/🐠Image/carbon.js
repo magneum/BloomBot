@@ -102,7 +102,7 @@ _yeti_  *|*  _zenburn_`,
             MessageType.text,
             { quoted: chat }
           )
-          .ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
+          .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
 
         return;
       } else if (𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
@@ -134,7 +134,7 @@ _yeti_  *|*  _zenburn_`,
                   MessageType.text,
                   { quoted: chat }
                 )
-                .ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
+                .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
 
               return;
             } else {
@@ -150,7 +150,7 @@ Please use the command  *${ᴋᴇɪ}carbon <text>*  or reply to a text message w
                   MessageType.text,
                   { quoted: chat }
                 )
-                .ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
+                .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
 
               return;
             }
@@ -170,7 +170,7 @@ Do note that theme names are  *case sensitive*${ᴋᴇɪ}`,
                 MessageType.text,
                 { quoted: chat }
               )
-              .ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
+              .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
 
             return;
           }
@@ -194,7 +194,7 @@ Do note that theme names are  *case sensitive*${ᴋᴇɪ}`,
           MessageType.text,
           { quoted: chat }
         )
-        .ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
+        .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
       const carbon = new Carbon.createCarbon()
         .setCode(code)
         .setPrettify(true)
@@ -210,7 +210,7 @@ Do note that theme names are  *case sensitive*${ᴋᴇɪ}`,
 *<< Here's your carbon image! >>*
 Colour Scheme: {}`.format(themeInput),
         })
-        .ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
+        .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
     } catch (ℓαвєяяσя) {
       await ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
       console.log(

@@ -62,15 +62,17 @@ module.exports = {
           headerType: 4,
           imageMessage: media.message.imageMessage,
         };
-        return await ӄʀǟӄɨռʐ.sendMessage(
-          𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-          buttonMessage,
-          MessageType.buttonsMessage,
-          {
-            quoted: chat,
-            contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
-          }
-        );
+        return await ӄʀǟӄɨռʐ
+          .sendMessage(
+            𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+            buttonMessage,
+            MessageType.buttonsMessage,
+            {
+              quoted: chat,
+              contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
+            }
+          )
+          .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
 
         // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
       } else {
@@ -125,7 +127,8 @@ module.exports = {
                 fs.unlinkSync(
                   `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${𝓜𝖎𝖟𝖚ӄ𝖎.commandName}_${ꜱᴇɴᴅᴇʀɪᴅ}.png`
                 )
-              );
+              )
+              .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
           } catch (ℓαвєяяσя) {
             if (ℓαвєяяσя.status == 404) {
               ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
@@ -193,6 +196,9 @@ module.exports = {
                     fs.unlinkSync(
                       `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${𝓜𝖎𝖟𝖚ӄ𝖎.commandName}_${ꜱᴇɴᴅᴇʀɪᴅ}.png`
                     )
+                  )
+                  .catch((ℓαвєяяσя) =>
+                    ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
                   );
               })
               .on(`error`, (ℓαвєяяσя) => console.log(ℓαвєяяσя))
@@ -265,6 +271,9 @@ module.exports = {
                     fs.unlinkSync(
                       `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${𝓜𝖎𝖟𝖚ӄ𝖎.commandName}_${ꜱᴇɴᴅᴇʀɪᴅ}.png`
                     )
+                  )
+                  .catch((ℓαвєяяσя) =>
+                    ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
                   );
               })
               .on(`error`, (ℓαвєяяσя) => console.log(ℓαвєяяσя))
@@ -337,6 +346,9 @@ module.exports = {
                     fs.unlinkSync(
                       `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${𝓜𝖎𝖟𝖚ӄ𝖎.commandName}_${ꜱᴇɴᴅᴇʀɪᴅ}.png`
                     )
+                  )
+                  .catch((ℓαвєяяσя) =>
+                    ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
                   );
               })
               .on(`error`, (ℓαвєяяσя) => console.log(ℓαвєяяσя))
@@ -406,7 +418,8 @@ module.exports = {
                 fs.unlinkSync(
                   `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${𝓜𝖎𝖟𝖚ӄ𝖎.commandName}_${ꜱᴇɴᴅᴇʀɪᴅ}.png`
                 )
-              );
+              )
+              .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
           } catch (ℓαвєяяσя) {
             if (ℓαвєяяσя.status == 404) {
               ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
