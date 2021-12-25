@@ -179,7 +179,7 @@ ${youfound.thumbnail}`);
                       .sendMessage(
                         𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
                         fs.readFileSync(filename),
-                        MessageType.audio,
+                        MessageType.video,
                         {
                           quoted: chat,
                           mimetype: Mimetype.mp4Audio,
