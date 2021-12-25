@@ -24,12 +24,14 @@ module.exports = {
       );
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
       if (!𝓜𝖎𝖟𝖚ӄ𝖎.isGroup) {
-        ӄʀǟӄɨռʐ.sendMessage(
-          𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-          `*${ᴋᴇɪ}admins*  command is only applicable for group chats.`,
-          MessageType.text,
-          { quoted: chat }
-        );
+        ӄʀǟӄɨռʐ
+          .sendMessage(
+            𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+            `*${ᴋᴇɪ}admins*  command is only applicable for group chats.`,
+            MessageType.text,
+            { quoted: chat }
+          )
+          .ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
 
         return;
       }
@@ -41,27 +43,31 @@ module.exports = {
       }
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
       if (!𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
-        ӄʀǟӄɨռʐ.sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, message, MessageType.text, {
-          quoted: chat,
-          contextInfo: {
-            mentionedJid: 𝓜𝖎𝖟𝖚ӄ𝖎.groupAdmins,
-          },
-        });
+        ӄʀǟӄɨռʐ
+          .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, message, MessageType.text, {
+            quoted: chat,
+            contextInfo: {
+              mentionedJid: 𝓜𝖎𝖟𝖚ӄ𝖎.groupAdmins,
+            },
+          })
+          .ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
 
         return;
       }
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-      await ӄʀǟӄɨռʐ.sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, message, MessageType.text, {
-        quoted: chat,
-        contextInfo: {
-          stanzaId: 𝓜𝖎𝖟𝖚ӄ𝖎.replyMessageId,
-          participant: 𝓜𝖎𝖟𝖚ӄ𝖎.replyParticipant,
-          quotedMessage: {
-            conversation: 𝓜𝖎𝖟𝖚ӄ𝖎.replyMessage,
+      await ӄʀǟӄɨռʐ
+        .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, message, MessageType.text, {
+          quoted: chat,
+          contextInfo: {
+            stanzaId: 𝓜𝖎𝖟𝖚ӄ𝖎.replyMessageId,
+            participant: 𝓜𝖎𝖟𝖚ӄ𝖎.replyParticipant,
+            quotedMessage: {
+              conversation: 𝓜𝖎𝖟𝖚ӄ𝖎.replyMessage,
+            },
+            mentionedJid: 𝓜𝖎𝖟𝖚ӄ𝖎.groupAdmins,
           },
-          mentionedJid: 𝓜𝖎𝖟𝖚ӄ𝖎.groupAdmins,
-        },
-      });
+        })
+        .ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
     } catch (ℓαвєяяσя) {
       await ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
       console.log(

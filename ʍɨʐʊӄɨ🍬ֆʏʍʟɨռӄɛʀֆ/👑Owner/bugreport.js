@@ -45,115 +45,125 @@ module.exports = {
           mimetype: `video/gif`,
         }
       );
-      await ӄʀǟӄɨռʐ.sendMessage(
-        𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-        {
-          contentText: `•@${ꜱᴇɴᴅᴇʀeceived},
+      await ӄʀǟӄɨռʐ
+        .sendMessage(
+          𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+          {
+            contentText: `•@${ꜱᴇɴᴅᴇʀeceived},
 *Thank you for reporting the bug to the Developers!*
 _If Found the report was just for fun then you will be banned by the bot!_
 
 
 ┌────⭓ 𝐒𝐮𝐩𝐩𝐨𝐫𝐭
 *🔥 ɢʀᴏᴜᴘ:* ${_𝔏𝔞𝔟_.HASH}`,
-          footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(
-            4
-          )}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n📅𝐃𝐚𝐭𝐞: _${Clock}_`,
-          buttons: [
-            {
-              buttonId: `${ᴋᴇɪ}help`,
-              buttonText: { displayText: `${ᴋᴇɪ}help` },
-              type: 1,
-            },
-          ],
-          headerType: 5,
-          videoMessage: media.message.videoMessage,
-        },
-        MessageType.buttonsMessage,
-        {
-          quoted: chat,
-          contextInfo: {
-            mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
+            footerText: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${
+              vers.vers
+            }_\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(4)}s_\n📅𝐃𝐚𝐭𝐞: _${Clock}_`,
+            buttons: [
+              {
+                buttonId: `${ᴋᴇɪ}help`,
+                buttonText: { displayText: `${ᴋᴇɪ}help` },
+                type: 1,
+              },
+            ],
+            headerType: 5,
+            videoMessage: media.message.videoMessage,
           },
-        }
-      );
+          MessageType.buttonsMessage,
+          {
+            quoted: chat,
+            contextInfo: {
+              mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
+            },
+          }
+        )
+        .ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
 
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
       let members = [];
       for (var i = 0; i < 𝓜𝖎𝖟𝖚ӄ𝖎.groupMembers.length; i++) {
         members[i] = 𝓜𝖎𝖟𝖚ӄ𝖎.groupMembers[i].jid;
       }
-      await ӄʀǟӄɨռʐ.sendMessage(
-        "120363039360979234@g.us",
-        fs.readFileSync(`./ʍɨʐʊӄɨ☣️ƈօʀɛ/Mizuki_Bug.mp4`),
-        MessageType.video,
-        {
-          mentionedJid: members,
-          mimetype: "video/gif",
-          caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(
-            4
-          )}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
+      await ӄʀǟӄɨռʐ
+        .sendMessage(
+          "120363039360979234@g.us",
+          fs.readFileSync(`./ʍɨʐʊӄɨ☣️ƈօʀɛ/Mizuki_Bug.mp4`),
+          MessageType.video,
+          {
+            mentionedJid: members,
+            mimetype: "video/gif",
+            caption: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${
+              vers.vers
+            }_\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(4)}s_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
 
 ⚡𝐓𝐨𝐩𝐢𝐜: *${FinalName}*
 🐞𝐑𝐞𝐩𝐨𝐫𝐭𝐞𝐝 𝐁𝐲: *${ꜱᴇɴᴅᴇʀɪᴅ}*
 
 🐙=============🐙
 ${arg.join(" ")}`,
-        }
-      );
+          }
+        )
+        .ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-      await ӄʀǟӄɨռʐ.sendMessage(
-        "918250889325@s.whatsapp.net",
-        fs.readFileSync(`./ʍɨʐʊӄɨ☣️ƈօʀɛ/Mizuki_Bug.mp4`),
-        MessageType.video,
-        {
-          mimetype: "video/gif",
-          caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(
-            4
-          )}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
+      await ӄʀǟӄɨռʐ
+        .sendMessage(
+          "918250889325@s.whatsapp.net",
+          fs.readFileSync(`./ʍɨʐʊӄɨ☣️ƈօʀɛ/Mizuki_Bug.mp4`),
+          MessageType.video,
+          {
+            mimetype: "video/gif",
+            caption: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${
+              vers.vers
+            }_\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(4)}s_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
 
 ⚡𝐓𝐨𝐩𝐢𝐜: *${FinalName}*
 🐞𝐑𝐞𝐩𝐨𝐫𝐭𝐞𝐝 𝐁𝐲: *${ꜱᴇɴᴅᴇʀɪᴅ}*
 
 🐙=============🐙
 ${arg.join(" ")}`,
-        }
-      );
+          }
+        )
+        .ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-      await ӄʀǟӄɨռʐ.sendMessage(
-        "918436686758@s.whatsapp.net",
-        fs.readFileSync(`./ʍɨʐʊӄɨ☣️ƈօʀɛ/Mizuki_Bug.mp4`),
-        MessageType.video,
-        {
-          mimetype: "video/gif",
-          caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(
-            4
-          )}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
+      await ӄʀǟӄɨռʐ
+        .sendMessage(
+          "918436686758@s.whatsapp.net",
+          fs.readFileSync(`./ʍɨʐʊӄɨ☣️ƈօʀɛ/Mizuki_Bug.mp4`),
+          MessageType.video,
+          {
+            mimetype: "video/gif",
+            caption: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${
+              vers.vers
+            }_\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(4)}s_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
 
 ⚡𝐓𝐨𝐩𝐢𝐜: *${FinalName}*
 🐞𝐑𝐞𝐩𝐨𝐫𝐭𝐞𝐝 𝐁𝐲: *${ꜱᴇɴᴅᴇʀɪᴅ}*
 
 🐙=============🐙
 ${arg.join(" ")}`,
-        }
-      );
+          }
+        )
+        .ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-      await ӄʀǟӄɨռʐ.sendMessage(
-        "989035024059@s.whatsapp.net",
-        fs.readFileSync(`./ʍɨʐʊӄɨ☣️ƈօʀɛ/Mizuki_Bug.mp4`),
-        MessageType.video,
-        {
-          mimetype: "video/gif",
-          caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(
-            4
-          )}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
+      await ӄʀǟӄɨռʐ
+        .sendMessage(
+          "989035024059@s.whatsapp.net",
+          fs.readFileSync(`./ʍɨʐʊӄɨ☣️ƈօʀɛ/Mizuki_Bug.mp4`),
+          MessageType.video,
+          {
+            mimetype: "video/gif",
+            caption: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${
+              vers.vers
+            }_\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(4)}s_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
 
 ⚡𝐓𝐨𝐩𝐢𝐜: *${FinalName}*
 🐞𝐑𝐞𝐩𝐨𝐫𝐭𝐞𝐝 𝐁𝐲: *${ꜱᴇɴᴅᴇʀɪᴅ}*
 
 🐙=============🐙
 ${arg.join(" ")}`,
-        }
-      );
+          }
+        )
+        .ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
     } catch (ℓαвєяяσя) {
       await ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
       console.log(

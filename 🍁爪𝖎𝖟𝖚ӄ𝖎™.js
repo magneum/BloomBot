@@ -143,9 +143,9 @@ async function 𝐌𝐢𝐳𝐮𝐤𝐢() {
         MessageType.image,
         {
           mimetype: Mimetype.png,
-          caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(
+          caption: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${vers.vers}_\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(
             4
-          )}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
+          )}s_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
 
 シ︎💡ᴘʀᴇꜰɪx: ${ᴋᴇɪ}
 シ︎🛸𝐆𝐫𝐨𝐮𝐩: ${_𝔏𝔞𝔟_.HASH}`,
@@ -264,9 +264,9 @@ ${update.desc}`,
           MessageType.video,
           {
             mimetype: `video/gif`,
-            caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(
-              4
-            )}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
+            caption: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${
+              vers.vers
+            }_\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(4)}s_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
 
 🔑𝐏𝐫𝐞𝐟𝐢𝐱: *!*
 👑𝐎𝐰𝐧𝐞𝐫: _🐙KrakinzKon_
@@ -341,22 +341,24 @@ ${update.desc}`,
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId
         );
         if (CheckLinks === true) {
-          await ӄʀǟӄɨռʐ.sendMessage(
-            𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(2)}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${
-              vers.vers
-            }_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
+          await ӄʀǟӄɨռʐ
+            .sendMessage(
+              𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+              `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(2)}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${
+                vers.vers
+              }_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
 
 
 •──[ Message From Admins  ]──•
 ┌────⭓ 𝐀𝐧𝐭𝐢𝐥𝐢𝐧𝐤🐙𝐀𝐜𝐭𝐢𝐯𝐞
 │ 😑Baka 𝘺𝘰𝘶 𝘸𝘪𝘭𝘭 𝘣𝘦 𝗔𝘂𝘁𝗼-𝗞𝗶𝗰𝗸𝗲𝗱!
 └──────⭓`,
-            MessageType.text
-          );
-
-          await ӄʀǟӄɨռʐ.groupRemove(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, [REMOVE]);
-
+              MessageType.text
+            )
+            .ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
+          await ӄʀǟӄɨռʐ
+            .groupRemove(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, [REMOVE])
+            .ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
           console.log(
             Kolor.greenBright(
               `💡INFO ⬰ Antilink ${CheckLinks} in > ${𝓜𝖎𝖟𝖚ӄ𝖎.groupName}.`
@@ -388,15 +390,17 @@ ${update.desc}`,
         if (ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total != 0) {
           require("simple-git")()
             .exec(async () => {
-              await ӄʀǟӄɨռʐ.sendMessage(
-                𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                `*🍁爪𝖎𝖟𝖚ӄ𝖎™*
+              await ӄʀǟӄɨռʐ
+                .sendMessage(
+                  𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                  `*🍁爪𝖎𝖟𝖚ӄ𝖎™*
 
 *• Bot Auto-Udated!*
 *• New Version: *🍁爪𝖎𝖟𝖚ӄ𝖎™* ${vers.vers}
 *• Total New Commits:* ${ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total}`,
-                MessageType.text
-              );
+                  MessageType.text
+                )
+                .ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
               console.log(
                 Kolor.blue.bold(
                   "⬡==========================⬡    🍁Starting Mizuki pull..."
@@ -443,36 +447,33 @@ ${update.desc}`,
               mimetype: Mimetype.png,
             }
           );
-          return await ӄʀǟӄɨռʐ.sendMessage(
-            𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            {
-              contentText: `𝗜𝗻𝘃𝗮𝗹𝗶𝗱 𝗖𝗼𝗺𝗺𝗮𝗻𝗱
+          return await ӄʀǟӄɨռʐ
+            .sendMessage(
+              𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+              {
+                contentText: `𝗜𝗻𝘃𝗮𝗹𝗶𝗱 𝗖𝗼𝗺𝗺𝗮𝗻𝗱
 
 *😑Baka* @${ꜱᴇɴᴅᴇʀeceived},Type *${ᴋᴇɪ}help*`,
-              footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(
-                4
-              )}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n📅𝐃𝐚𝐭𝐞: _${Clock}_`,
-              buttons: [
-                {
-                  buttonId: `${ᴋᴇɪ}list`,
-                  buttonText: { displayText: `${ᴋᴇɪ}list` },
-                  type: 1,
-                },
-                {
-                  buttonId: `${ᴋᴇɪ}list`,
-                  buttonText: { displayText: `${ᴋᴇɪ}list` },
-                  type: 1,
-                },
-              ],
-              headerType: 4,
-              imageMessage: media.message.imageMessage,
-            },
-            MessageType.buttonsMessage,
-            {
-              quoted: chat,
-              contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
-            }
-          );
+                footerText: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${
+                  vers.vers
+                }_\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(4)}s_\n📅𝐃𝐚𝐭𝐞: _${Clock}_`,
+                buttons: [
+                  {
+                    buttonId: `${ᴋᴇɪ}help`,
+                    buttonText: { displayText: `${ᴋᴇɪ}help` },
+                    type: 1,
+                  },
+                ],
+                headerType: 4,
+                imageMessage: media.message.imageMessage,
+              },
+              MessageType.buttonsMessage,
+              {
+                quoted: chat,
+                contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
+              }
+            )
+            .ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
         }
         return command.handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, ꜱɪᴛʀᴀᴘ, Clock, Ping);
       }

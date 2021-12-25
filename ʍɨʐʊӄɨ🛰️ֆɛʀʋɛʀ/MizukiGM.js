@@ -5,6 +5,7 @@ const _𝔏𝔞𝔟_ = require(`./_𝔏𝔞𝔟_`);
 const ℓιєηт = require(`./oShit`);
 const ffmpeg = require(`fluent-ffmpeg`);
 require(`python-format-js`);
+const ꜰᴜᴄᴋ = require(`./oShit`);
 const vers = require(`../package.json`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
@@ -120,9 +121,10 @@ exports.MizukiGM = async (ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎) => {
             .then(
               fs.unlinkSync(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FinalName}_${MizukiGMid}.gif`),
               fs.unlinkSync(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FinalName}_${MizukiGMid}.mp4`)
-            );
+            )
+            .ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
         })
-        .on(`ℓαвєяяσя`, async (ℓαвєяяσя) => {
+        .on(`error`, async (ℓαвєяяσя) => {
           console.log(ℓαвєяяσя);
         });
     } catch (ℓαвєяяσя) {

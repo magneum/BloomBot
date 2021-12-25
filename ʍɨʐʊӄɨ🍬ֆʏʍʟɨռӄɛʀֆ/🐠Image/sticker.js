@@ -54,9 +54,10 @@ module.exports = {
                     .then(
                       fs.unlinkSync(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FILEID}.jpeg`),
                       fs.unlinkSync(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FILEID}.webp`)
-                    );
+                    )
+                    .ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
                 })
-                .on(`ℓαвєяяσя`, async (ℓαвєяяσя) => {
+                .on(`error`, async (ℓαвєяяσя) => {
                   console.log(ℓαвєяяσя);
                 });
               // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
@@ -81,9 +82,10 @@ module.exports = {
                     .then(
                       fs.unlinkSync(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FILEID}.png`),
                       fs.unlinkSync(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FILEID}.webp`)
-                    );
+                    )
+                    .ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
                 })
-                .on(`ℓαвєяяσя`, async (ℓαвєяяσя) => {
+                .on(`error`, async (ℓαвєяяσя) => {
                   console.log(ℓαвєяяσя);
                 });
             }
@@ -126,9 +128,10 @@ module.exports = {
                   .then(
                     fs.unlinkSync(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/${VIDEOID}.mp4`),
                     fs.unlinkSync(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/${VIDEOID}.webp`)
-                  );
+                  )
+                  .ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
               })
-              .on(`ℓαвєяяσя`, async (ℓαвєяяσя) => {
+              .on(`error`, async (ℓαвєяяσя) => {
                 console.log(ℓαвєяяσя);
               });
           });
@@ -137,15 +140,17 @@ module.exports = {
         var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(𝓜𝖎𝖟𝖚ӄ𝖎.commandName);
         𝓜𝓮𝓮ʍօʀɛ = 𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ === undefined ? `Null` : 𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ;
         const ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
-        return ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
-          ӄʀǟӄɨռʐ,
-          chat,
-          𝓜𝖎𝖟𝖚ӄ𝖎,
-          ꜱᴇɴᴅᴇʀɪᴅ,
-          ꜱᴇɴᴅᴇʀeceived,
-          𝓜𝖎𝖟𝖚ӄ𝖎.commandName,
-          𝓜𝓮𝓮ʍօʀɛ
-        );
+        return ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ
+          .ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
+            ӄʀǟӄɨռʐ,
+            chat,
+            𝓜𝖎𝖟𝖚ӄ𝖎,
+            ꜱᴇɴᴅᴇʀɪᴅ,
+            ꜱᴇɴᴅᴇʀeceived,
+            𝓜𝖎𝖟𝖚ӄ𝖎.commandName,
+            𝓜𝓮𝓮ʍօʀɛ
+          )
+          .ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
       }
     } catch (ℓαвєяяσя) {
       await ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);

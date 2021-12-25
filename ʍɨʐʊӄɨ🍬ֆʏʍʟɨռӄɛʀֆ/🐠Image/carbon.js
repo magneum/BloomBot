@@ -93,14 +93,16 @@ _yeti_  *|*  _zenburn_`,
         );
         // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
       } else if (𝓜𝖎𝖟𝖚ӄ𝖎.isReply && !𝓜𝖎𝖟𝖚ӄ𝖎.replyMessage) {
-        await ӄʀǟӄɨռʐ.sendMessage(
-          𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-          `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(4)}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${
-            vers.vers
-          }_\n📅𝐃𝐚𝐭𝐞: _${Clock}_\n\nThe replied message should be text.`,
-          MessageType.text,
-          { quoted: chat }
-        );
+        await ӄʀǟӄɨռʐ
+          .sendMessage(
+            𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+            `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${vers.vers}_\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(
+              4
+            )}s_\n📅𝐃𝐚𝐭𝐞: _${Clock}_\n\nThe replied message should be text.`,
+            MessageType.text,
+            { quoted: chat }
+          )
+          .ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
 
         return;
       } else if (𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
@@ -116,7 +118,7 @@ _yeti_  *|*  _zenburn_`,
           if (text[0] === `-` && text[1] === `t`) {
             if (text[2] == null) {
               let counter = 1;
-              var message = `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(
+              var message = `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(
                 2
               )}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${
                 vers.vers
@@ -125,24 +127,30 @@ _yeti_  *|*  _zenburn_`,
                 message += `\n${counter}. ${theme}`;
                 counter += 1;
               });
-              await ӄʀǟӄɨռʐ.sendMessage(
-                𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                `` + message + ``,
-                MessageType.text,
-                { quoted: chat }
-              );
+              await ӄʀǟӄɨռʐ
+                .sendMessage(
+                  𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                  `` + message + ``,
+                  MessageType.text,
+                  { quoted: chat }
+                )
+                .ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
 
               return;
             } else {
-              await ӄʀǟӄɨռʐ.sendMessage(
-                𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(4)}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${
-                  vers.vers
-                }_\n📅𝐃𝐚𝐭𝐞: _${Clock}_\n\nNo input provided.
+              await ӄʀǟӄɨռʐ
+                .sendMessage(
+                  𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                  `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(
+                    4
+                  )}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${
+                    vers.vers
+                  }_\n📅𝐃𝐚𝐭𝐞: _${Clock}_\n\nNo input provided.
 Please use the command  *${ᴋᴇɪ}carbon <text>*  or reply to a text message with  *${ᴋᴇɪ}carbon*  to carbonize the text.`,
-                MessageType.text,
-                { quoted: chat }
-              );
+                  MessageType.text,
+                  { quoted: chat }
+                )
+                .ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
 
               return;
             }
@@ -152,15 +160,17 @@ Please use the command  *${ᴋᴇɪ}carbon <text>*  or reply to a text message w
           code = body[0].replace(𝓜𝖎𝖟𝖚ӄ𝖎.body[0] + 𝓜𝖎𝖟𝖚ӄ𝖎.commandName + ` `, ``);
           themeInput = body[1].substring(1);
           if (!themes.includes(themeInput)) {
-            await ӄʀǟӄɨռʐ.sendMessage(
-              𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(4)}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${
-                vers.vers
-              }_\n📅𝐃𝐚𝐭𝐞: _${Clock}_\n\nPlease enter a valid theme.
+            await ӄʀǟӄɨռʐ
+              .sendMessage(
+                𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${vers.vers}_\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(
+                  4
+                )}s_\n📅𝐃𝐚𝐭𝐞: _${Clock}_\n\nPlease enter a valid theme.
 Do note that theme names are  *case sensitive*${ᴋᴇɪ}`,
-              MessageType.text,
-              { quoted: chat }
-            );
+                MessageType.text,
+                { quoted: chat }
+              )
+              .ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
 
             return;
           }
@@ -175,28 +185,32 @@ Do note that theme names are  *case sensitive*${ᴋᴇɪ}`,
         }
       }
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-      await ӄʀǟӄɨռʐ.sendMessage(
-        𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-        `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(4)}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${
-          vers.vers
-        }_\n📅𝐃𝐚𝐭𝐞: _${Clock}_\n\nConverting your text into a code snippet. Please wait...`,
-        MessageType.text,
-        { quoted: chat }
-      );
+      await ӄʀǟӄɨռʐ
+        .sendMessage(
+          𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+          `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${vers.vers}_\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(
+            4
+          )}s_\n📅𝐃𝐚𝐭𝐞: _${Clock}_\n\nConverting your text into a code snippet. Please wait...`,
+          MessageType.text,
+          { quoted: chat }
+        )
+        .ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
       const carbon = new Carbon.createCarbon()
         .setCode(code)
         .setPrettify(true)
         .setTheme(themeInput);
       const output = await Carbon.generateCarbon(carbon);
-      await ӄʀǟӄɨռʐ.sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, output, MessageType.image, {
-        quoted: chat,
-        mimetype: Mimetype.png,
-        caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(4)}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${
-          vers.vers
-        }_\n📅𝐃𝐚𝐭𝐞: _${Clock}_\n\n
+      await ӄʀǟӄɨռʐ
+        .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, output, MessageType.image, {
+          quoted: chat,
+          mimetype: Mimetype.png,
+          caption: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${vers.vers}_\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(
+            4
+          )}s_\n📅𝐃𝐚𝐭𝐞: _${Clock}_\n\n
 *<< Here's your carbon image! >>*
 Colour Scheme: {}`.format(themeInput),
-      });
+        })
+        .ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
     } catch (ℓαвєяяσя) {
       await ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎);
       console.log(
