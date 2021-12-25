@@ -25,7 +25,8 @@ exports.catch = async (ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎
     .sendMessage(
       𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
       {
-        contentText: `*${ꜱᴇɴᴅᴇʀeceived},⚡Try Command: ${ᴋᴇɪ}${FinalName} Again Later!*`,
+        contentText: `${ꜱᴇɴᴅᴇʀeceived},
+⚡Try Command: _${ᴋᴇɪ}${FinalName}_ Again Later!`,
         footerText: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${
           vers.vers
         }_\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(4)}s_\n📅𝐃𝐚𝐭𝐞: _${Clock}_`,
@@ -35,20 +36,13 @@ exports.catch = async (ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎
             buttonText: { displayText: `${ᴋᴇɪ}help` },
             type: 1,
           },
-          {
-            buttonId: `${ᴋᴇɪ}bugreport`,
-            buttonText: { displayText: `${ᴋᴇɪ}bugreport` },
-            type: 1,
-          },
         ],
         headerType: 1,
       },
       MessageType.buttonsMessage,
       {
         quoted: chat,
-        contextInfo: {
-          mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender],
-        },
+        contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
       }
     )
     .then(console.log(ℓαвєяяσя));
