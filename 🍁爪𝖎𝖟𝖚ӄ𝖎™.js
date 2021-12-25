@@ -143,11 +143,11 @@ async function 𝐌𝐢𝐳𝐮𝐤𝐢() {
         MessageType.image,
         {
           mimetype: Mimetype.png,
-          caption: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${vers.vers}_\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(
-            4
-          )}s_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
+          caption: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ* _${vers.vers}_
 
 シ︎💡ᴘʀᴇꜰɪx: ${ᴋᴇɪ}
+🛰️𝐏𝐢𝐧𝐠: ${Ping.toFixed(4)}s
+📅𝐃𝐚𝐭𝐞: ${Clock}
 シ︎🛸𝐆𝐫𝐨𝐮𝐩: ${_𝔏𝔞𝔟_.HASH}`,
         }
       );
