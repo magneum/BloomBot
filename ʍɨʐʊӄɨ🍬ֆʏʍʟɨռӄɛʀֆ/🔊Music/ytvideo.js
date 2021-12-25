@@ -60,15 +60,39 @@ module.exports = {
       } else {
         const LinkForGroups = await yts(arg.join(` `));
         const GroupVideos = LinkForGroups.videos.slice(0, 1);
-        const filename = `${FinalName}_${ꜱᴇɴᴅᴇʀɪᴅ}_${Date.now()}`;
-        var DAudio = function (uri, filename, callback) {
-          request.head(uri, function (ℓαвєяяσя, gotResp, body) {
-            mime = gotResp.headers[`content-type`];
-            request(uri)
-              .pipe(fs.createWriteStream(filename))
-              .on(`close`, callback);
+        // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
+        const DVideo = async (url, text = "") => {
+          const filename = `${FinalName}_${ꜱᴇɴᴅᴇʀɪᴅ}_${Date.now()}`;
+          let mime = "";
+          var download = function (uri, filename, callback) {
+            request.head(uri, function (err, res, body) {
+              mime = res.headers["content-type"];
+              request(uri)
+                .pipe(fs.createWriteStream(filename))
+                .on("close", callback);
+            });
+          };
+          download(url, filename, async function () {
+            let media = fs.readFileSync(filename);
+            let type = mime.split("/")[0] + "Message";
+            if (mime === "image/gif") {
+              type = MessageType.video;
+              mime = Mimetype.gif;
+            }
+            if (mime.split("/")[0] === "audio") {
+              mime = Mimetype.mp4Audio;
+            }
+            await ӄʀǟӄɨռʐ
+              .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, media, type, {
+                quoted: chat,
+                contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
+                mimetype: mime,
+                caption: text,
+              })
+              .then(fs.unlinkSync(filename));
           });
         };
+        // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
         await GroupVideos.forEach(async function (youfound) {
           if (youfound.seconds > "1800") {
             console.log(`
@@ -126,18 +150,21 @@ ${youfound.thumbnail}`);
             await ytv(youfound.url).then(async (gotResp) => {
               console.log(youfound.url);
               const { dl_link, thumb, title, filesizeF, filesize } = gotResp;
-              const media = await ӄʀǟӄɨռʐ.prepareMessage(
-                𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                { url: youfound.thumbnail },
-                MessageType.image,
-                {
-                  mimetype: Mimetype.jpeg,
-                }
+              console.log(
+                dl_link +
+                  "\n" +
+                  thumb +
+                  "\n" +
+                  title +
+                  "\n" +
+                  filesizeF +
+                  "\n" +
+                  filesize
               );
-              await ӄʀǟӄɨռʐ.sendMessage(
-                𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                {
-                  contentText: `𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚👋🏻 •@${ꜱᴇɴᴅᴇʀeceived},    
+              axios
+                .get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
+                .then(async (a) => {
+                  const captionsYtmp4 = `𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚👋🏻 •@${ꜱᴇɴᴅᴇʀeceived},    
 📺𝐕𝐢𝐝𝐞𝐨 𝗣𝗹𝗲𝗮𝘀𝗲 𝘄𝗮𝗶𝘁 𝗳𝗼𝗿 𝘁𝗵𝗲 𝗱𝗲𝗹𝗶𝘃𝗲𝗿𝘆 𝗼𝗳 𝐕𝐢𝐝𝐞𝐨!
 
 
@@ -146,55 +173,9 @@ ${youfound.thumbnail}`);
 ⏰𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧⤞ ${youfound.timestamp}
 ✒️𝐀𝐮𝐭𝐡𝐨𝐫⤞ ${youfound.author.name}
 📜𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧⤞ ${youfound.description}
-🔗𝐋𝐢𝐧𝐤⤞ ${youfound.url}`,
-                  footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(
-                    4
-                  )}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n📅𝐃𝐚𝐭𝐞: _${Clock}_`,
-                  buttons: [
-                    {
-                      buttonId: `${ᴋᴇɪ}happy`,
-                      buttonText: { displayText: `${ᴋᴇɪ}happy` },
-                      type: 1,
-                    },
-                    {
-                      buttonId: `${ᴋᴇɪ}bugreport`,
-                      buttonText: { displayText: `${ᴋᴇɪ}bugreport` },
-                      type: 1,
-                    },
-                  ],
-                  headerType: 4,
-                  imageMessage: media.message.imageMessage,
-                },
-                MessageType.buttonsMessage,
-                {
-                  quoted: chat,
-                  contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
-                }
-              );
-              axios
-                .get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
-                .then(async (a) => {
-                  DAudio(dl_link, filename, async function () {
-                    await ӄʀǟӄɨռʐ
-                      .sendMessage(
-                        𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                        fs.readFileSync(filename),
-                        MessageType.video,
-                        {
-                          quoted: chat,
-                          mimetype: Mimetype.mp4Audio,
-                          contentText: `𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚👋🏻 •@${ꜱᴇɴᴅᴇʀeceived},    
-
-🍻𝐓𝐢𝐭𝐥𝐞⤞ ${youfound.title}
-🙈𝐕𝐢𝐞𝐰𝐬⤞ ${youfound.views}
-⏰𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧⤞ ${youfound.timestamp}
-✒️𝐀𝐮𝐭𝐡𝐨𝐫⤞ ${youfound.author.name}
-📜𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧⤞ ${youfound.description}
-🔗𝐋𝐢𝐧𝐤⤞ ${youfound.url}`,
-                        }
-                      )
-                      .then(fs.unlinkSync(filename));
-                  });
+🔗𝐋𝐢𝐧𝐤⤞ ${youfound.url}`;
+                  DVideo(thumb, captionsYtmp4);
+                  DVideo(dl_link);
                 });
             });
           }
