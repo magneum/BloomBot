@@ -11,6 +11,7 @@ if (fs.existsSync(`ʍɨʐʊӄɨ☣️ƈօʀɛ.env`)) {
 var ᴛ = [
   `https://i.postimg.cc/T1cTxHMb/image.png`,
   `https://i.postimg.cc/nLrDRg9C/image.png`,
+  `https://i.postimg.cc/DyRHw3nK/2.png``https://i.postimg.cc/76XjHCYB/mizuki-main.jpg`,
 ];
 const MizukiMain = ᴛ[Math.floor(Math.random() * ᴛ.length)];
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
