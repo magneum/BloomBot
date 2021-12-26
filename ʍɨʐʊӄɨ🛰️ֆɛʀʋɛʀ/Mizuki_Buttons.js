@@ -135,35 +135,6 @@ const Mizuki_VideoAudio_But = async (
   );
 };
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-const Mizuki_Gif_But = async (ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, MainText, MediaUrl) => {
-  Muri = MediaUrl;
-  Media = ӄʀǟӄɨռʐ.prepareMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, Muri, MessageType.video);
-  const buttonMessages = {
-    videoMessage: Media.message.videoMessage,
-    contentText: MainText,
-    footerText: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ* \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
-      4
-    )}s_\n📅ᴅᴀᴛᴇ: _${Clock}_`,
-    buttons: [
-      {
-        buttonId: `${ᴋᴇɪ}help`,
-        buttonText: { displayText: `${ᴋᴇɪ}help` },
-        type: 1,
-      },
-    ],
-    headerType: 5,
-  };
-  return ӄʀǟӄɨռʐ.sendMessage(
-    𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-    buttonMessages,
-    MessageType.buttonsMessage,
-    {
-      mimetype: "video/gif",
-      quoted: chat,
-    }
-  );
-};
-// ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
 const Mizuki_Location_But = async (
   ӄʀǟӄɨռʐ,
   chat,
@@ -199,7 +170,6 @@ const Mizuki_Location_But = async (
 };
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
 module.exports = {
-  MGB: Mizuki_Gif_But,
   MTB: Mizuki_Text_But,
   MIB: Mizuki_Image_But,
   MVB: Mizuki_Video_But,

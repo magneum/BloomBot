@@ -78,7 +78,9 @@ MessageType.text
 .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
 } else {
+let PersonToBanlist = 𝓜𝖎𝖟𝖚ӄ𝖎.chatId;
 await BanList.addBanlistUser(PersonToBanlist, 𝓜𝖎𝖟𝖚ӄ𝖎.chatId);
+const User = PersonToBanlist.substring(0, PersonToBanlist.indexOf(`@`));
 return await ӄʀǟӄɨռʐ
 .sendMessage(
 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
@@ -94,6 +96,8 @@ MessageType.text
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
 } else if (𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
 let PersonToBanlist = 𝓜𝖎𝖟𝖚ӄ𝖎.replyParticipant;
+await BanList.addBanlistUser(PersonToBanlist, 𝓜𝖎𝖟𝖚ӄ𝖎.chatId);
+const User = PersonToBanlist.substring(0, PersonToBanlist.indexOf(`@`));
 if (𝓜𝖎𝖟𝖚ӄ𝖎.owner === PersonToBanlist) {
 return await ӄʀǟӄɨռʐ
 .sendMessage(
@@ -108,7 +112,9 @@ MessageType.text
 .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
 } else {
+let PersonToBanlist = 𝓜𝖎𝖟𝖚ӄ𝖎.chatId;
 await BanList.addBanlistUser(PersonToBanlist, 𝓜𝖎𝖟𝖚ӄ𝖎.chatId);
+const User = PersonToBanlist.substring(0, PersonToBanlist.indexOf(`@`));
 return await ӄʀǟӄɨռʐ
 .sendMessage(
 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,

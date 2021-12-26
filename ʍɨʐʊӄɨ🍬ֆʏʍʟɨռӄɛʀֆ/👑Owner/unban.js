@@ -78,6 +78,10 @@ arg,
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
 if (PersonToRemoveFromBanlist === undefined) return;
 PersonToRemoveFromBanlist += `@s.whatsapp.net`;
+const RmUser = PersonToRemoveFromBanlist.substring(
+0,
+PersonToRemoveFromBanlist.indexOf(`@`)
+);
 if (
 !(await BanList.getBanlistUser(
 PersonToRemoveFromBanlist,
@@ -111,6 +115,10 @@ MessageType.text
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
 } else if (𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
 let PersonToRemoveFromBanlist = 𝓜𝖎𝖟𝖚ӄ𝖎.replyParticipant;
+const RmUser = PersonToRemoveFromBanlist.substring(
+0,
+PersonToRemoveFromBanlist.indexOf(`@`)
+);
 if (
 !(await BanList.getBanlistUser(
 PersonToRemoveFromBanlist,
