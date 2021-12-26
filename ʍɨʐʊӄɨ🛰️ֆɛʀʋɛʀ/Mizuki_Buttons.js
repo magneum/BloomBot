@@ -44,9 +44,9 @@ const Mizuki_Text_But = (ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, MainText)
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
 const Mizuki_Image_But = async (ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, MainText, MediaUrl) => {
   Muri = MediaUrl;
-  Media = ӄʀǟӄɨռʐ.prepareMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, Muri, MessageType.image);
+  const media = ӄʀǟӄɨռʐ.prepareMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, Muri, MessageType.image);
   const buttonMessages = {
-    imageMessage: Media.message.imageMessage,
+    imageMessage: media.message.imageMessage,
     contentText: MainText,
     footerText: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ* \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
       4
@@ -73,9 +73,9 @@ const Mizuki_Image_But = async (ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, Ma
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
 const Mizuki_Video_But = async (ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, MainText, MediaUrl) => {
   Muri = MediaUrl;
-  Media = ӄʀǟӄɨռʐ.prepareMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, Muri, MessageType.video);
+  const media = ӄʀǟӄɨռʐ.prepareMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, Muri, MessageType.video);
   const buttonMessages = {
-    videoMessage: Media.message.videoMessage,
+    videoMessage: media.message.videoMessage,
     contentText: MainText,
     footerText: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ* \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
       4
@@ -108,9 +108,9 @@ const Mizuki_VideoAudio_But = async (
   MediaUrl
 ) => {
   Muri = MediaUrl;
-  Media = ӄʀǟӄɨռʐ.prepareMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, Muri, MessageType.video);
+  const media = ӄʀǟӄɨռʐ.prepareMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, Muri, MessageType.video);
   const buttonMessages = {
-    videoMessage: Media.message.videoMessage,
+    videoMessage: media.message.videoMessage,
     contentText: MainText,
     footerText: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ* \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
       4
@@ -143,9 +143,13 @@ const Mizuki_Location_But = async (
   MediaUrl
 ) => {
   Muri = MediaUrl;
-  Media = ӄʀǟӄɨռʐ.prepareMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, Muri, MessageType.location);
+  const media = ӄʀǟӄɨռʐ.prepareMessage(
+    𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+    Muri,
+    MessageType.location
+  );
   const buttonMessages = {
-    locationMessage: Media.message.locationMessage,
+    locationMessage: media.message.locationMessage,
     contentText: MainText,
     footerText: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ* \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
       4
