@@ -42,7 +42,7 @@ contentText: `•@${ꜱᴇɴᴅᴇʀeceived},
 
 
 ┌────⭓ *👅𝙋𝙤𝙧𝙣 𝙉𝙎𝙁𝙒*
-│👅• ${ᴋᴇɪ}rporn: _get random porn gif_
+│👅• ${ᴋᴇɪ}porn: _get random porn gif_
 │👅• ${ᴋᴇɪ}tikporn: _get random tiktoc porn video_
 │👅• ${ᴋᴇɪ}4k: _get random 4k human nsfw image_
 │👅• ${ᴋᴇɪ}blowjob: _get random 4k blowjob image_
