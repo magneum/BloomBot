@@ -56,9 +56,10 @@ _😈Only My Owner Can Use_ *${ᴋᴇɪ}${𝓜𝖎𝖟𝖚ӄ𝖎.commandName}*`
             `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`,
             MessageType.video,
             {
-              quoted: chat,
               contentText: `📜𝗕𝗿𝗼𝗮𝗱𝗰𝗮𝘀𝘁: \n\n${arg.join(` `)}`,
+              quoted: chat,
               contextInfo: {
+                mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
                 forwardingScore: 999,
                 isForwarded: true,
               },
