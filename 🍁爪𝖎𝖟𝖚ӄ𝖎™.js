@@ -303,10 +303,6 @@ ${update.desc}`,
     // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
     if (update.action == `add` && MemNum.includes(ӄʀǟӄɨռʐ.user.jid)) {
       console.log(`⬡••••••••⬡    🍁 爪𝖎𝖟𝖚ӄ𝖎™ 🍁Added    ⬡••••••••⬡`);
-      let members = [];
-      for (var i = 0; i < 𝓜𝖎𝖟𝖚ӄ𝖎.groupMembers.length; i++) {
-        members[i] = 𝓜𝖎𝖟𝖚ӄ𝖎.groupMembers[i].jid;
-      }
       return await ӄʀǟӄɨռʐ
         .sendMessage(
           GroupID,
@@ -327,14 +323,6 @@ ${update.desc}`,
 
 𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚👋🏻 ᴇᴠᴇʀʏᴏɴᴇ, ʀᴇᴀᴅʏ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ʜᴇʀᴇ
 ᴘʟᴇᴀꜱᴇ ᴛʏᴘᴇ *${ᴋᴇɪ}help* ᴛᴏ ᴋɴᴏᴡ ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅꜱ!`,
-            contextInfo: {
-              stanzaId: 𝓜𝖎𝖟𝖚ӄ𝖎.replyMessageId,
-              participant: 𝓜𝖎𝖟𝖚ӄ𝖎.replyParticipant,
-              quotedMessage: {
-                conversation: 𝓜𝖎𝖟𝖚ӄ𝖎.replyMessage,
-              },
-              mentionedJid: members,
-            },
           }
         )
         .then(console.log(Kolor.green.italic(GroupID)))
