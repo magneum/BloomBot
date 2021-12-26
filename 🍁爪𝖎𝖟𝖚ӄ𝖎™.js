@@ -444,7 +444,7 @@ ${update.desc}`,
             𝓜𝖎𝖟𝖚ӄ𝖎,
             `@${ꜱᴇɴᴅᴇʀeceived}, ❌ 𝚆𝚛𝚘𝚗𝚐 𝙲𝚘𝚖𝚖𝚊𝚗𝚍
 
-*😑Baka* 
+*Yo Noobie🤪💩* 
 Type _*${ᴋᴇɪ}help*_ and Read Everything Properly`
           ).catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
         }
