@@ -8,12 +8,7 @@ if (fs.existsSync(`ʍɨʐʊӄɨ☣️ƈօʀɛ.env`)) {
 } else {
   require(`dotenv`);
 }
-var ᴛ = [
-  // `https://i.postimg.cc/T1cTxHMb/image.png`,
-  `https://i.postimg.cc/nLrDRg9C/image.png`,
-  // `https://i.postimg.cc/DyRHw3nK/2.png`,
-  // `https://i.postimg.cc/76XjHCYB/mizuki-main.jpg`,
-];
+var ᴛ = [`https://i.postimg.cc/sDXbg5xF/image.png`];
 const MizukiMain = ᴛ[Math.floor(Math.random() * ᴛ.length)];
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
 const env = {
@@ -31,9 +26,9 @@ const env = {
   OCR: `9ffb44def388957`,
   ɴᴏᴛᴀᴅᴍɪɴ: `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎MemErr.png`,
   WAPI: `6729ac2b2e2bb5c686ff427a2f06df92`,
-  UPT: `https://i.postimg.cc/RFXvJhgD/Mizuki-Main.png`,
-  INVL: `https://i.postimg.cc/x8KGDHKw/Mizuki-Invalid.png`,
-  HASH: `https://chat.whatsapp.com/KC32fr1BLmzHYgToZjMuHn`,
+  UPT: `https://i.postimg.cc/sDXbg5xF/image.png`,
+  INVL: `https://i.postimg.cc/sDXbg5xF/image.png`,
+  HASH: `https://i.postimg.cc/sDXbg5xF/image.png`,
   DATABASE_URL: (process.env.DATABASE_URL =
     process.env.DATABASE_URL === undefined
       ? `./ʍɨʐʊӄɨ☣️ƈօʀɛ.db`
