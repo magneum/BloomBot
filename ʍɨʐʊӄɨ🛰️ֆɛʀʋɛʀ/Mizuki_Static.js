@@ -18,7 +18,6 @@ const Mizuki_GIF_Static = async (
   ӄʀǟӄɨռʐ,
   chat,
   𝓜𝖎𝖟𝖚ӄ𝖎,
-  Where,
   MainText,
   MediaUrl
 ) => {
