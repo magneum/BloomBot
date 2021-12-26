@@ -1,22 +1,30 @@
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
-const speed = require("performance-now");
+const speed = require(`performance-now`);
 const vers = require(`../package.json`);
-const date = require("date-and-time");
+const date = require(`date-and-time`);
 const _𝔏𝔞𝔟_ = require(`./_𝔏𝔞𝔟_`);
 let Timestamp = speed();
 const Ping = speed() - Timestamp;
 const now = new Date();
-date.format(now, "ddd, MMM DD YYYY");
-const pattern = date.compile("ddd, MMM DD YYYY");
+date.format(now, `ddd, MMM DD YYYY`);
+const pattern = date.compile(`ddd, MMM DD YYYY`);
 const Clock = date.format(now, pattern);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
 const Mizuki_Text_But = (ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, MainText) => {
-  var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
-  var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
-  // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
+  if (𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
+    var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
+    var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
+    var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
+    var personreceived = Receiver.substring(0, Receiver.length - 15);
+  } else {
+    var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
+    var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
+    const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
+    const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
+  }
   const buttonMessage = {
     contentText: MainText,
     footerText: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ* \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
@@ -31,73 +39,147 @@ const Mizuki_Text_But = (ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, MainText)
     ],
     headerType: 1,
   };
-  return ӄʀǟӄɨռʐ.sendMessage(
-    𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-    buttonMessage,
-    MessageType.buttonsMessage,
-    {
+  ӄʀǟӄɨռʐ
+    .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, buttonMessage, MessageType.buttonsMessage, {
       quoted: chat,
       contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
-    }
-  );
+    })
+    .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
 };
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
 const Mizuki_Image_But = async (ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, MainText, MediaUrl) => {
-  Muri = MediaUrl;
-  const media = ӄʀǟӄɨռʐ.prepareMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, Muri, MessageType.image);
-  const buttonMessages = {
-    imageMessage: media.message.imageMessage,
-    contentText: MainText,
-    footerText: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ* \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
-      4
-    )}s_\n📅ᴅᴀᴛᴇ: _${Clock}_`,
-    buttons: [
-      {
-        buttonId: `${ᴋᴇɪ}help`,
-        buttonText: { displayText: `${ᴋᴇɪ}help` },
-        type: 1,
-      },
-    ],
-    headerType: 4,
-  };
-  return ӄʀǟӄɨռʐ.sendMessage(
+  if (𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
+    var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
+    var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
+    var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
+    var personreceived = Receiver.substring(0, Receiver.length - 15);
+  } else {
+    var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
+    var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
+    const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
+    const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
+  }
+  const media = await ӄʀǟӄɨռʐ.prepareMessage(
     𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-    buttonMessages,
-    MessageType.buttonsMessage,
-    {
-      mimetype: Mimetype.png || Mimetype.jpeg,
-      quoted: chat,
-    }
+    { url: MediaUrl },
+    MessageType.image,
+    { mimetype: Mimetype.png }
   );
+  return await ӄʀǟӄɨռʐ
+    .sendMessage(
+      𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+      {
+        contentText: MainText,
+        footerText: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ* \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+          4
+        )}s_\n📅ᴅᴀᴛᴇ: _${Clock}_`,
+        buttons: [
+          {
+            buttonId: `${ᴋᴇɪ}help`,
+            buttonText: { displayText: `${ᴋᴇɪ}help` },
+            type: 1,
+          },
+        ],
+        headerType: 4,
+        imageMessage: media.message.imageMessage,
+      },
+      MessageType.buttonsMessage,
+      {
+        quoted: chat,
+        contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
+      }
+    )
+    .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
 };
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
 const Mizuki_Video_But = async (ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, MainText, MediaUrl) => {
-  Muri = MediaUrl;
-  const media = ӄʀǟӄɨռʐ.prepareMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, Muri, MessageType.video);
-  const buttonMessages = {
-    videoMessage: media.message.videoMessage,
-    contentText: MainText,
-    footerText: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ* \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
-      4
-    )}s_\n📅ᴅᴀᴛᴇ: _${Clock}_`,
-    buttons: [
-      {
-        buttonId: `${ᴋᴇɪ}help`,
-        buttonText: { displayText: `${ᴋᴇɪ}help` },
-        type: 1,
-      },
-    ],
-    headerType: 5,
-  };
-  return ӄʀǟӄɨռʐ.sendMessage(
+  if (𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
+    var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
+    var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
+    var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
+    var personreceived = Receiver.substring(0, Receiver.length - 15);
+  } else {
+    var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
+    var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
+    const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
+    const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
+  }
+  const media = await ӄʀǟӄɨռʐ.prepareMessage(
     𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-    buttonMessages,
-    MessageType.buttonsMessage,
-    {
-      mimetype: Mimetype.mp4,
-      quoted: chat,
-    }
+    { url: MediaUrl },
+    MessageType.video,
+    { mimetype: Mimetype.mp4 }
   );
+  return await ӄʀǟӄɨռʐ
+    .sendMessage(
+      𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+      {
+        contentText: MainText,
+        footerText: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ* \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+          4
+        )}s_\n📅ᴅᴀᴛᴇ: _${Clock}_`,
+        buttons: [
+          {
+            buttonId: `${ᴋᴇɪ}help`,
+            buttonText: { displayText: `${ᴋᴇɪ}help` },
+            type: 1,
+          },
+        ],
+        headerType: 5,
+        videoMessage: media.message.videoMessage,
+      },
+      MessageType.buttonsMessage,
+      {
+        quoted: chat,
+        contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
+      }
+    )
+    .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
+};
+// ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
+const Mizuki_GIF_But = async (ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, MainText, MediaUrl) => {
+  if (𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
+    var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
+    var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
+    var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
+    var personreceived = Receiver.substring(0, Receiver.length - 15);
+  } else {
+    var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
+    var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
+    const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
+    const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
+  }
+  const media = await ӄʀǟӄɨռʐ.prepareMessage(
+    𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+    { url: MediaUrl },
+    MessageType.video,
+    { mimetype: `video/gif` }
+  );
+  return await ӄʀǟӄɨռʐ
+    .sendMessage(
+      𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+      {
+        contentText: MainText,
+        footerText: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ* \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+          4
+        )}s_\n📅ᴅᴀᴛᴇ: _${Clock}_`,
+        buttons: [
+          {
+            buttonId: `${ᴋᴇɪ}help`,
+            buttonText: { displayText: `${ᴋᴇɪ}help` },
+            type: 1,
+          },
+        ],
+        headerType: 5,
+        videoMessage: media.message.videoMessage,
+      },
+      MessageType.buttonsMessage,
+      {
+        quoted: chat,
+        contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
+      }
+    )
+    .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
 };
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
 const Mizuki_VideoAudio_But = async (
@@ -107,8 +189,22 @@ const Mizuki_VideoAudio_But = async (
   MainText,
   MediaUrl
 ) => {
-  Muri = MediaUrl;
-  const media = ӄʀǟӄɨռʐ.prepareMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, Muri, MessageType.video);
+  if (𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
+    var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
+    var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
+    var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
+    var personreceived = Receiver.substring(0, Receiver.length - 15);
+  } else {
+    var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
+    var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
+    const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
+    const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
+  }
+  const media = ӄʀǟӄɨռʐ.prepareMessage(
+    𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+    { url: MediaUrl },
+    MessageType.video
+  );
   const buttonMessages = {
     videoMessage: media.message.videoMessage,
     contentText: MainText,
@@ -124,15 +220,12 @@ const Mizuki_VideoAudio_But = async (
     ],
     headerType: 5,
   };
-  return ӄʀǟӄɨռʐ.sendMessage(
-    𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-    buttonMessages,
-    MessageType.buttonsMessage,
-    {
+  ӄʀǟӄɨռʐ
+    .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, buttonMessages, MessageType.buttonsMessage, {
       mimetype: Mimetype.mp4Audio,
       quoted: chat,
-    }
-  );
+    })
+    .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
 };
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
 const Mizuki_Location_But = async (
@@ -142,10 +235,20 @@ const Mizuki_Location_But = async (
   MainText,
   MediaUrl
 ) => {
-  Muri = MediaUrl;
+  if (𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
+    var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
+    var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
+    var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
+    var personreceived = Receiver.substring(0, Receiver.length - 15);
+  } else {
+    var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
+    var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
+    const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
+    const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
+  }
   const media = ӄʀǟӄɨռʐ.prepareMessage(
     𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-    Muri,
+    { url: MediaUrl },
     MessageType.location
   );
   const buttonMessages = {
@@ -163,18 +266,16 @@ const Mizuki_Location_But = async (
     ],
     headerType: 6,
   };
-  return ӄʀǟӄɨռʐ.sendMessage(
-    𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-    buttonMessages,
-    MessageType.buttonsMessage,
-    {
+  ӄʀǟӄɨռʐ
+    .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, buttonMessages, MessageType.buttonsMessage, {
       quoted: chat,
-    }
-  );
+    })
+    .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
 };
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
 module.exports = {
   MTB: Mizuki_Text_But,
+  MGB: Mizuki_GIF_But,
   MIB: Mizuki_Image_But,
   MVB: Mizuki_Video_But,
   MLB: Mizuki_Location_But,

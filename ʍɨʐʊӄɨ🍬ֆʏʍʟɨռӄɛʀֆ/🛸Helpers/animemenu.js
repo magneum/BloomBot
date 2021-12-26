@@ -1,4 +1,5 @@
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
+const Mizuki_GIF_Static = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Mizuki_Static`);
 const Mizuki_Buttons = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Mizuki_Buttons`);
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const ꜰᴜᴄᴋ = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/oShit`);
@@ -22,11 +23,7 @@ module.exports = {
         "🍁爪𝖎𝖟𝖚ӄ𝖎™ ᴠᴇʀɪꜰɪᴇᴅ ꜰɪʟᴇ > " + FinalName.toUpperCase() + "✔️"
       );
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-      return Mizuki_Buttons.MVB(
-        ӄʀǟӄɨռʐ,
-        chat,
-        𝓜𝖎𝖟𝖚ӄ𝖎,
-        `
+      const MainText = `
 ┌────⭓
 │🔑𝐏𝐫𝐞𝐟𝐢𝐱: *${ᴋᴇɪ}*
 │👑𝐎𝐰𝐧𝐞𝐫: _🐙KrakinzKon_
@@ -99,9 +96,15 @@ module.exports = {
 │🍣• ${ᴋᴇɪ}thumbsup _(ɢɪꜰ)_
 │🍣• ${ᴋᴇɪ}triggered _(ɢɪꜰ)_
 │🍣• ${ᴋᴇɪ}wag _(ɢɪꜰ)_
-└───────⭓`,
+└───────⭓`;
+      return Mizuki_GIF_Static.MGS(
+        ӄʀǟӄɨռʐ,
+        chat,
+        𝓜𝖎𝖟𝖚ӄ𝖎,
+        MainText,
         `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
       ).catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
+      // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
     } catch (ℓαвєяяσя) {
       await ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
       console.log(
