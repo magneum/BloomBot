@@ -59,7 +59,7 @@ _😈Only My Owner Can Use_ *${ᴋᴇɪ}${𝓜𝖎𝖟𝖚ӄ𝖎.commandName}*`
               quoted: chat,
               contentText: `📜𝗕𝗿𝗼𝗮𝗱𝗰𝗮𝘀𝘁: \n\n${arg.join(` `)}`,
               contextInfo: {
-                 forwardingScore: 999,
+                forwardingScore: 999,
                 isForwarded: true,
               },
               sendEphemeral: true,

@@ -9,43 +9,32 @@ const fs = require(`fs`);
 const vers = require(`../../package.json`);
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
 module.exports = {
-name: `list`,
-description: `ɢᴇᴛ ᴛʜᴇ entire ᴄᴏᴍᴍᴀɴᴅ ʟɪꜱᴛ ᴀɴᴅ ɪɴꜰᴏ ᴏɴ ᴍᴏᴅᴜʟᴇꜱ`,
-𝓜𝓮𝓮6ʍօʀɛ: `${ᴋᴇɪ}`,
-async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
-try {
-// ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
-var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
-const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
-const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
-console.log(
-"🍁爪𝖎𝖟𝖚ӄ𝖎™ ᴠᴇʀɪꜰɪᴇᴅ ꜰɪʟᴇ > " + FinalName.toUpperCase() + "✔️"
-);
-// ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-const media = await ӄʀǟӄɨռʐ.prepareMessage(
-𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-{ url: _𝔏𝔞𝔟_.MEE },
-MessageType.image,
-{
-mimetype: Mimetype.jpeg,
-}
-);
-const buttons = [
-{
-buttonId: `${ᴋᴇɪ}bugreport`,
-buttonText: { displayText: `${ᴋᴇɪ}bugreport` },
-type: 1,
-},
-];
-const buttonMessage = {
-contentText: `
+  name: `list`,
+  description: `ɢᴇᴛ ᴛʜᴇ entire ᴄᴏᴍᴍᴀɴᴅ ʟɪꜱᴛ ᴀɴᴅ ɪɴꜰᴏ ᴏɴ ᴍᴏᴅᴜʟᴇꜱ`,
+  𝓜𝓮𝓮6ʍօʀɛ: `${ᴋᴇɪ}`,
+  async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
+    try {
+      // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
+      var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
+      var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
+      const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
+      const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
+      console.log(
+        "🍁爪𝖎𝖟𝖚ӄ𝖎™ ᴠᴇʀɪꜰɪᴇᴅ ꜰɪʟᴇ > " + FinalName.toUpperCase() + "✔️"
+      );
+      // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
+      return Mizuki_Buttons.MVB(
+        ӄʀǟӄɨռʐ,
+        chat,
+        𝓜𝖎𝖟𝖚ӄ𝖎,
+        `
 ┌────⭓
 │🔑𝐏𝐫𝐞𝐟𝐢𝐱: *${ᴋᴇɪ}*
 │👑𝐎𝐰𝐧𝐞𝐫: _🐙KrakinzKon_
 │🤖ᴀᴅᴅ ᴍɪᴢᴜᴋɪ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ: _${ᴋᴇɪ}request_
 │☣️𝐋𝐢𝐜𝐞𝐧𝐬𝐞𝐝: Apache License Version 2.0
 └───────⭓
+⧪𝘾𝙤𝙢𝙞𝙣𝙜 𝙎𝙤𝙤𝙣! _many many more_
 
 ┌────⭓ 𝘿𝙤𝙬𝙣𝙡𝙤𝙖𝙙𝙚𝙧𝙨
 │🔎 ${ᴋᴇɪ}ytsearch 
@@ -208,30 +197,17 @@ contentText: `
 │🍄 ${ᴋᴇɪ}thighs
 │🍄 ${ᴋᴇɪ}uniform
 │🍄 ${ᴋᴇɪ}yuri
-└───────⭓
-
-*⧪➛𝘾𝙤𝙢𝙞𝙣𝙜 𝙎𝙤𝙤𝙣!*
-many many more!
-`,
-footerText: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ* \n🛰️ᴘɪɴɢ: _${Ping.toFixed(4)}s_\n📅ᴅᴀᴛᴇ: _${Clock}_`,
-buttons: buttons,
-headerType: 4,
-imageMessage: media.message.imageMessage,
-};
-await ӄʀǟӄɨռʐ
-.sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, buttonMessage, MessageType.buttonsMessage, {
-quoted: chat,
-contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
-})
-.catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
-} catch (ℓαвєяяσя) {
-await ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
-console.log(
-"⬡==========================⬡    🍁 " +
-ℓαвєяяσя +
-"🍁    ⬡==========================⬡"
-);
-}
-},
+└───────⭓`,
+        `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
+      ).catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
+    } catch (ℓαвєяяσя) {
+      await ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
+      console.log(
+        "⬡==========================⬡    🍁 " +
+          ℓαвєяяσя +
+          "🍁    ⬡==========================⬡"
+      );
+    }
+  },
 };
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
