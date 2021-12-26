@@ -393,6 +393,18 @@ ${update.desc}`,
                   𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
                   `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*
 
+🍁Starting Mizuki pull and Auto Updating Bot!`,
+                  MessageType.text
+                )
+                .catch((ℓαвєяяσя) =>
+                  ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
+                );
+              await ӄʀǟӄɨռʐ
+                .sendMessage(
+                  𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                  `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*
+
+
 *🍁Bot Auto-Udated!*
 *🍁New Version:* _${vers.vers}_
 *🍁Total New Commits:* _${ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total}_`,
