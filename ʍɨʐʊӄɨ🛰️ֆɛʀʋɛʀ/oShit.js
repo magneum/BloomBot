@@ -25,9 +25,7 @@ exports.catch = async (ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎
     𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
     {
       contentText: `⚡Try Command: _${ᴋᴇɪ}${FinalName}_ Again Later!`,
-      footerText: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${vers.vers}_\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(
-        4
-      )}s_\n📅𝐃𝐚𝐭𝐞: _${Clock}_`,
+      footerText: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${vers.vers}_`,
       buttons: [
         {
           buttonId: `${ᴋᴇɪ}help`,
