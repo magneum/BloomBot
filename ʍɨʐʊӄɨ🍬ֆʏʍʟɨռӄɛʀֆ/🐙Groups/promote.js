@@ -37,7 +37,7 @@ For example-
               4
             )}s_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
 
-•@${ꜱᴇɴᴅᴇʀeceived},
+•🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived},
 This command is only applicable for group chats.`,
             MessageType.text,
             {
@@ -56,7 +56,7 @@ This command is only applicable for group chats.`,
           ӄʀǟӄɨռʐ,
           chat,
           𝓜𝖎𝖟𝖚ӄ𝖎,
-          `@${ꜱᴇɴᴅᴇʀeceived}, *❌ 𝚈𝚘𝚞 𝙰𝚛𝚎 𝙽𝚘𝚝 𝙰𝚕𝚕𝚘𝚠𝚎𝚍!*
+          `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived}, *❌ 𝚈𝚘𝚞 𝙰𝚛𝚎 𝙽𝚘𝚝 𝙰𝚕𝚕𝚘𝚠𝚎𝚍!*
 
 
 ┌────⭓ 🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧     
@@ -72,7 +72,7 @@ This command is only applicable for group chats.`,
           ӄʀǟӄɨռʐ,
           chat,
           𝓜𝖎𝖟𝖚ӄ𝖎,
-          `@${ꜱᴇɴᴅᴇʀeceived}, *❌ʜᴏᴡ ᴄᴀɴ ɪ ᴜꜱᴇ ᴀᴅᴍɪɴ ᴄᴏᴍᴍᴀɴᴅꜱ ᴡʜᴇɴ ɪ ᴀᴍ ɴᴏᴛ ᴀᴅᴍɪɴ?*
+          `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived}, *❌ʜᴏᴡ ᴄᴀɴ ɪ ᴜꜱᴇ ᴀᴅᴍɪɴ ᴄᴏᴍᴍᴀɴᴅꜱ ᴡʜᴇɴ ɪ ᴀᴍ ɴᴏᴛ ᴀᴅᴍɪɴ?*
 
 💡𝐅𝐢𝐱: _Make Me Admin First_`,
           _𝔏𝔞𝔟_.ɴᴏᴛᴍᴇᴀᴅᴍɪɴ
@@ -87,7 +87,7 @@ This command is only applicable for group chats.`,
               4
             )}s_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
 
-•@${ꜱᴇɴᴅᴇʀeceived},
+•🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived},
 Reply/tag/enter contact number of the person to be demoted.`,
             MessageType.text,
             {
@@ -129,7 +129,7 @@ Reply/tag/enter contact number of the person to be demoted.`,
                 4
               )}s_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
 
-•@${ꜱᴇɴᴅᴇʀeceived},
+•🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived},
 ${contact} promoted to admin*`,
               MessageType.text,
               {
@@ -148,7 +148,7 @@ ${contact} promoted to admin*`,
                 4
               )}s_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
 
-•@${ꜱᴇɴᴅᴇʀeceived},
+•🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived},
 ${contact} is already an admin`,
               MessageType.text,
               {
@@ -171,7 +171,7 @@ ${contact} is already an admin`,
                 4
               )}s_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
 
-•@${ꜱᴇɴᴅᴇʀeceived},
+•🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived},
 Person not found.`,
               MessageType.text,
               {

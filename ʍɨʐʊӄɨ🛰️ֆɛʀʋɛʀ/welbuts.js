@@ -97,11 +97,14 @@ exports.welbuts = async (
       .sendMessage(
         GroupID,
         {
-          contentText: `⚡@${ᴘᴘᴡᴇʟᴄᴏᴍᴇ} ${ᴡᴇʟᴄᴏᴍᴇʀᴛxᴛ}
+          contentText: `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ᴘᴘᴡᴇʟᴄᴏᴍᴇ} 
+${ᴡᴇʟᴄᴏᴍᴇʀᴛxᴛ}
 
-${FlowerWel}𝗕𝗶𝗼: ${GroupMemBio.status}
-${PeopleWel}𝗠𝗲𝗺𝗯𝗲𝗿𝘀: ${GroupMemG}
-💡𝗚𝗿𝗼𝘂𝗽: ${GroupMemData.subject}
+★━━━━━━━━★
+│${FlowerWel}𝗕𝗶𝗼: ${GroupMemBio.status}
+│${PeopleWel}𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${GroupMemG}
+│🎪𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${GroupMemData.subject}
+★━━━━━━━━★
 
 ${ꜰᴇᴛᴄʜᴇᴅᴡᴇʟᴄᴏᴍᴇ.message}`,
           footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(

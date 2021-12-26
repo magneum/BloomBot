@@ -50,7 +50,7 @@ module.exports = {
         .sendMessage(
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
           {
-            contentText: `•@${ꜱᴇɴᴅᴇʀeceived},
+            contentText: `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived},
 *Thank you for reporting the bug to the Developers!*
 _If Found the report was just for fun then you will be banned by the bot!_
 
