@@ -4,6 +4,7 @@ const speed = require(`performance-now`);
 const vers = require(`../package.json`);
 const date = require(`date-and-time`);
 const _𝔏𝔞𝔟_ = require(`./_𝔏𝔞𝔟_`);
+const ꜰᴜᴄᴋ = require(`./oShit`);
 let Timestamp = speed();
 const Ping = speed() - Timestamp;
 const now = new Date();
