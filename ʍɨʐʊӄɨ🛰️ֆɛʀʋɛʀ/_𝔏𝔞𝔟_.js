@@ -27,8 +27,9 @@ const env = {
   ɴᴏᴛᴀᴅᴍɪɴ: `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎MemErr.png`,
   WAPI: `6729ac2b2e2bb5c686ff427a2f06df92`,
   UPT: `https://i.postimg.cc/sDXbg5xF/image.png`,
-  INVL: `https://i.postimg.cc/sDXbg5xF/image.png`,
-  HASH: `https://i.postimg.cc/sDXbg5xF/image.png`,
+  ERROR: `https://i.postimg.cc/sDPF83Mx/Mizuki-Error.png`,
+  INVL: `https://i.postimg.cc/q7k5WK9Z/Mizuki-Invalid.png`,
+  HASH: ``,
   DATABASE_URL: (process.env.DATABASE_URL =
     process.env.DATABASE_URL === undefined
       ? `./ʍɨʐʊӄɨ☣️ƈօʀɛ.db`

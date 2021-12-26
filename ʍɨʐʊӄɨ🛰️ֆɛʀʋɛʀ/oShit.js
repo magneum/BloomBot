@@ -12,6 +12,7 @@ const Ping = speed() - Timestamp;
 const date = require("date-and-time");
 const now = new Date();
 date.format(now, "ddd, MMM DD YYYY");
+const Mizuki_Buttons = require(`./Mizuki_Buttons`);
 const pattern = date.compile("ddd, MMM DD YYYY");
 const Clock = date.format(now, pattern);
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
@@ -21,27 +22,18 @@ exports.catch = async (ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎
   const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
   const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
   // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-  await ӄʀǟӄɨռʐ.sendMessage(
-    𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-    {
-      contentText: `⚡Try Command: _${ᴋᴇɪ}${FinalName}_ Again Later!`,
-      footerText: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${vers.vers}_`,
-      buttons: [
-        {
-          buttonId: `${ᴋᴇɪ}help`,
-          buttonText: { displayText: `${ᴋᴇɪ}help` },
-          type: 1,
-        },
-      ],
-      headerType: 1,
-    },
-    MessageType.buttonsMessage,
-    {
-      quoted: chat,
-    }
+  Mizuki_Buttons.MIB(
+    ӄʀǟӄɨռʐ,
+    chat,
+    𝓜𝖎𝖟𝖚ӄ𝖎,
+    `_⚡Try Again Later!_
+
+*Command:* _${ᴋᴇɪ}${FinalName}_
+*Or Type:* _${ᴋᴇɪ}help_`,
+    _𝔏𝔞𝔟_.INVL
   );
   // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-  await ӄʀǟӄɨռʐ
+  return await ӄʀǟӄɨռʐ
     .sendMessage(
       𝓜𝖎𝖟𝖚ӄ𝖎.Myself,
       {
