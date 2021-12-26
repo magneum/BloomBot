@@ -40,7 +40,12 @@ chat,
 ).catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
 } else {
-const link = Kebab;
+var link = Kebab;
+if (link.endsWith(`.gif`)) {
+link = link;
+} else {
+link = Kebab;
+}
 console.log(link);
 const downloader = await new Downloader({
 url: link,
