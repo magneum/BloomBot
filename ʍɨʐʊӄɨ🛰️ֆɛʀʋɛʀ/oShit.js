@@ -12,7 +12,6 @@ const Ping = speed() - Timestamp;
 const date = require("date-and-time");
 const now = new Date();
 date.format(now, "ddd, MMM DD YYYY");
-const Mizuki_Buttons = require(`./Mizuki_Buttons`);
 const pattern = date.compile("ddd, MMM DD YYYY");
 const Clock = date.format(now, pattern);
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
@@ -22,16 +21,41 @@ exports.catch = async (ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎
   const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
   const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
   // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-  Mizuki_Buttons.MIB(
-    ӄʀǟӄɨռʐ,
-    chat,
-    𝓜𝖎𝖟𝖚ӄ𝖎,
-    `_⚡Try Again Later!_
-
-*Command:* _${ᴋᴇɪ}${FinalName}_
-*Or Type:* _${ᴋᴇɪ}help_`,
-    _𝔏𝔞𝔟_.INVL
+  const media = await ӄʀǟӄɨռʐ.prepareMessage(
+    𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+    { url: _𝔏𝔞𝔟_.INVL },
+    MessageType.image,
+    { mimetype: Mimetype.png }
   );
+  await ӄʀǟӄɨռʐ
+    .sendMessage(
+      𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+      {
+        contentText: `_😭𝙏𝙧𝙮 𝘼𝙜𝙖𝙞𝙣 𝙇𝙖𝙩𝙚𝙧!_
+
+        ⬡ 𝘞𝘦 𝘙𝘢𝘯 𝘐𝘯𝘵𝘰 𝘚𝘰𝘮𝘦 𝘌𝘳𝘳𝘰𝘳
+        ⬡━━━━━━━★
+        ⚡𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_`,
+        footerText: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ* \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+          4
+        )}s_\n📅ᴅᴀᴛᴇ: _${Clock}_`,
+        buttons: [
+          {
+            buttonId: `${ᴋᴇɪ}help`,
+            buttonText: { displayText: `${ᴋᴇɪ}help` },
+            type: 1,
+          },
+        ],
+        headerType: 4,
+        imageMessage: media.message.imageMessage,
+      },
+      MessageType.buttonsMessage,
+      {
+        quoted: chat,
+        contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
+      }
+    )
+    .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
   // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
   return await ӄʀǟӄɨռʐ
     .sendMessage(

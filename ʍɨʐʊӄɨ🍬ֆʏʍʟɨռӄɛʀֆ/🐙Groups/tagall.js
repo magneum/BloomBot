@@ -50,10 +50,10 @@ module.exports = {
           `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived}, *❌ 𝚈𝚘𝚞 𝙰𝚛𝚎 𝙽𝚘𝚝 𝙰𝚕𝚕𝚘𝚠𝚎𝚍!*
 
 
-┌────⭓ 🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧     
+┌────◆▶ 🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧     
 │🌶️𝐆𝐫𝐨𝐮𝐩𝐬: _Admins & Devs!_
 │🌽𝐏𝐫𝐢𝐯𝐚𝐭𝐞 _Everyone_
-└───────⭓`,
+└───────◆▶`,
           _𝔏𝔞𝔟_.ɴᴏᴛᴀᴅᴍɪɴ
         ).catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
       }
@@ -78,7 +78,7 @@ module.exports = {
         ӄʀǟӄɨռʐ
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            `*Attention Here Everyone In the Group!*`,
+            `*────◆▶ Attention Here Everyone In the Group!*`,
             MessageType.text,
             {
               quoted: chat,
@@ -112,7 +112,7 @@ module.exports = {
       await ӄʀǟӄɨռʐ
         .sendMessage(
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-          `*Attention Here Everyone In the Group!*`,
+          `*────◆▶ Attention Here Everyone In the Group!*`,
           MessageType.text,
           {
             quoted: chat,
