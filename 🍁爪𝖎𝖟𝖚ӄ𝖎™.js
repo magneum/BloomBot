@@ -1,6 +1,7 @@
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
 const Mizuki_Buttons = require(`./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Mizuki_Buttons`);
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
+const Mizuki_Static = require(`./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Mizuki_Static`);
 const LetGoChecker = require("./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/LetGoChecker");
 const 𝓜𝖎𝖟𝖚ӄ𝖎ֆʏռօք = require(`./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/𝓜𝖎𝖟𝖚ӄ𝖎ᴢᴇɴ`);
 const AutoKrakz = require(`./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/𝓜𝖎𝖟𝖚ӄ𝖎ɢɪᴛ`);

@@ -1,6 +1,6 @@
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-const Mizuki_GIF_Static = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Mizuki_Static`);
 const Mizuki_Buttons = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Mizuki_Buttons`);
+const Mizuki_Static = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Mizuki_Static`);
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const ꜰᴜᴄᴋ = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/oShit`);
 const _𝔏𝔞𝔟_ = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/_𝔏𝔞𝔟_`);
@@ -47,7 +47,7 @@ module.exports = {
 │🔰• ${ᴋᴇɪ}unmute: _unmute a group chat_
 │🔰• ${ᴋᴇɪ}mute: _mute group chat_
 └───────⭓`;
-      return Mizuki_GIF_Static.MGS(
+      return Mizuki_Static.MGS(
         ӄʀǟӄɨռʐ,
         chat,
         𝓜𝖎𝖟𝖚ӄ𝖎,
