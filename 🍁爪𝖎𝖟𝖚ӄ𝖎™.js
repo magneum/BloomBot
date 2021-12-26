@@ -384,6 +384,10 @@ ${update.desc}`,
         var ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ = await ᴍɪᴢᴜᴋɪɢɪᴛ.log([
           `KrakinzLab..origin/KrakinzLab`,
         ]);
+        let members = [];
+        for (var i = 0; i < 𝓜𝖎𝖟𝖚ӄ𝖎.groupMembers.length; i++) {
+          members[i] = 𝓜𝖎𝖟𝖚ӄ𝖎.groupMembers[i].jid;
+        }
         // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
         if (ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total != 0) {
           require("simple-git")()
@@ -394,7 +398,18 @@ ${update.desc}`,
                   `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*
 
 🍁Starting Mizuki pull and Auto Updating Bot!`,
-                  MessageType.text
+                  MessageType.text,
+                  {
+                    quoted: chat,
+                    contextInfo: {
+                      stanzaId: 𝓜𝖎𝖟𝖚ӄ𝖎.replyMessageId,
+                      participant: 𝓜𝖎𝖟𝖚ӄ𝖎.replyParticipant,
+                      quotedMessage: {
+                        conversation: 𝓜𝖎𝖟𝖚ӄ𝖎.replyMessage,
+                      },
+                      mentionedJid: members,
+                    },
+                  }
                 )
                 .catch((ℓαвєяяσя) =>
                   ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
@@ -408,7 +423,18 @@ ${update.desc}`,
 *🍁Bot Auto-Udated!*
 *🍁New Version:* _${vers.vers}_
 *🍁Total New Commits:* _${ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total}_`,
-                  MessageType.text
+                  MessageType.text,
+                  {
+                    quoted: chat,
+                    contextInfo: {
+                      stanzaId: 𝓜𝖎𝖟𝖚ӄ𝖎.replyMessageId,
+                      participant: 𝓜𝖎𝖟𝖚ӄ𝖎.replyParticipant,
+                      quotedMessage: {
+                        conversation: 𝓜𝖎𝖟𝖚ӄ𝖎.replyMessage,
+                      },
+                      mentionedJid: members,
+                    },
+                  }
                 )
                 .catch((ℓαвєяяσя) =>
                   ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
