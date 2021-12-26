@@ -394,8 +394,8 @@ ${update.desc}`,
                   `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*
 
 *🍁Bot Auto-Udated!*
-*🍁New Version: ${vers.vers}
-*🍁Total New Commits:* ${ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total}`,
+*🍁New Version:* _${vers.vers}_
+*🍁Total New Commits:* _${ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total}_`,
                   MessageType.text
                 )
                 .catch((ℓαвєяяσя) =>
