@@ -162,14 +162,14 @@ module.exports = {
                       contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
                     }
                   )
-                  .then(
+                  .then(async () => {
                     fs.unlinkSync(
                       `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${𝓜𝖎𝖟𝖚ӄ𝖎.commandName}_${ꜱᴇɴᴅᴇʀɪᴅ}.webp`
-                    ),
+                    );
                     fs.unlinkSync(
                       `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${𝓜𝖎𝖟𝖚ӄ𝖎.commandName}_${ꜱᴇɴᴅᴇʀɪᴅ}.png`
-                    )
-                  )
+                    );
+                  })
                   .catch((ℓαвєяяσя) =>
                     ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
                   );
@@ -237,14 +237,14 @@ module.exports = {
                       contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
                     }
                   )
-                  .then(
+                  .then(async () => {
                     fs.unlinkSync(
                       `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${𝓜𝖎𝖟𝖚ӄ𝖎.commandName}_${ꜱᴇɴᴅᴇʀɪᴅ}.jpg`
-                    ),
+                    );
                     fs.unlinkSync(
                       `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${𝓜𝖎𝖟𝖚ӄ𝖎.commandName}_${ꜱᴇɴᴅᴇʀɪᴅ}.png`
-                    )
-                  )
+                    );
+                  })
                   .catch((ℓαвєяяσя) =>
                     ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
                   );
@@ -312,14 +312,14 @@ module.exports = {
                       contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
                     }
                   )
-                  .then(
+                  .then(async () => {
                     fs.unlinkSync(
                       `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${𝓜𝖎𝖟𝖚ӄ𝖎.commandName}_${ꜱᴇɴᴅᴇʀɪᴅ}.jpeg`
-                    ),
+                    );
                     fs.unlinkSync(
                       `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${𝓜𝖎𝖟𝖚ӄ𝖎.commandName}_${ꜱᴇɴᴅᴇʀɪᴅ}.png`
-                    )
-                  )
+                    );
+                  })
                   .catch((ℓαвєяяσя) =>
                     ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
                   );
