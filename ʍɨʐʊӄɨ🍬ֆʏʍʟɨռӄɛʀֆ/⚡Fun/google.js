@@ -57,8 +57,10 @@ module.exports = {
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
             {
-              contentText: `•@${ꜱᴇɴᴅᴇʀeceived}, Here Are The Search Results For ${arg.join(` `)}
-              
+              contentText: `•@${ꜱᴇɴᴅᴇʀeceived}, 
+
+☣️𝐆𝐨𝐨𝐠𝐥𝐞𝐝 𝐅𝐨𝐫: _${arg.join(` `)}_
+★━━━━━━━━━━━━━━━━━━━━★
 ${msg}`,
               footerText: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ* \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
                 4
