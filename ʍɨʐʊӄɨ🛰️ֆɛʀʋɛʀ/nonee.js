@@ -83,7 +83,7 @@ exports.nonee = async (
             quoted: chat,
             mimetype: Mimetype.png,
             contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
-            caption: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍣𝐁𝐨𝐭  _${vers.vers}_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+            caption: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍣𝐁𝐨𝐭  \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
               4
             )}s_\n📅ᴅᴀᴛᴇ: _${Clock}_
 

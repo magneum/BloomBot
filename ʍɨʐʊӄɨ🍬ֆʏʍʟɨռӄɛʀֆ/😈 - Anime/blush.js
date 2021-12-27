@@ -78,7 +78,7 @@ module.exports = {
                 contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ, Receiver] },
                 quoted: chat,
                 mimetype: `video/gif`,
-                caption: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍣𝐁𝐨𝐭 _${vers.vers}_
+                caption: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍣𝐁𝐨𝐭 
 
 ┌────◆◇🍌𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 │
@@ -112,7 +112,7 @@ module.exports = {
                 contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
                 quoted: chat,
                 mimetype: `video/gif`,
-                caption: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍣𝐁𝐨𝐭 _${vers.vers}_
+                caption: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍣𝐁𝐨𝐭 
 
 ┌────◆◇🍌𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 │

@@ -68,9 +68,9 @@ module.exports = {
               quoted: chat,
               mimetype: Mimetype.png,
               contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
-              caption: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍣𝐁𝐨𝐭  _${
-                vers.vers
-              }_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(4)}s_ 📅ᴅᴀᴛᴇ: _${Clock}_
+              caption: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍣𝐁𝐨𝐭  \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+                4
+              )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_
 
 𝗤𝘂𝗲𝘀𝘁𝗶𝗼𝗻: ʜᴏᴡ ʙᴇᴀᴜᴛʏꜰᴜʟʟ ɪꜱ *@${ꜱᴇɴᴅᴇʀeceived}*
 𝗣𝗲𝗿𝗰𝗲𝗻𝘁𝗮𝗴𝗲: ${Much}%`,
@@ -117,9 +117,9 @@ module.exports = {
               quoted: chat,
               mimetype: Mimetype.png,
               contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ, Receiver] },
-              caption: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍣𝐁𝐨𝐭  _${
-                vers.vers
-              }_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(4)}s_ 📅ᴅᴀᴛᴇ: _${Clock}_
+              caption: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍣𝐁𝐨𝐭  \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+                4
+              )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_
 
 𝗤𝘂𝗲𝘀𝘁𝗶𝗼𝗻: ʜᴏᴡ ʙᴇᴀᴜᴛʏꜰᴜʟʟ ɪꜱ *@${personreceived}*
 𝗣𝗲𝗿𝗰𝗲𝗻𝘁𝗮𝗴𝗲: ${Much}%`,
@@ -166,9 +166,9 @@ module.exports = {
               quoted: chat,
               mimetype: Mimetype.png,
               contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ, Receiver] },
-              caption: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍣𝐁𝐨𝐭  _${
-                vers.vers
-              }_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(4)}s_ 📅ᴅᴀᴛᴇ: _${Clock}_
+              caption: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍣𝐁𝐨𝐭  \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+                4
+              )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_
 
 𝗤𝘂𝗲𝘀𝘁𝗶𝗼𝗻: ʜᴏᴡ ʙᴇᴀᴜᴛʏꜰᴜʟʟ ɪꜱ *@${personreceived}*
 Asked By? @${ꜱᴇɴᴅᴇʀeceived} 
@@ -212,9 +212,9 @@ Asked By? @${ꜱᴇɴᴅᴇʀeceived}
               quoted: chat,
               mimetype: Mimetype.png,
               contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
-              caption: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍣𝐁𝐨𝐭  _${
-                vers.vers
-              }_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(4)}s_ 📅ᴅᴀᴛᴇ: _${Clock}_
+              caption: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍣𝐁𝐨𝐭  \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+                4
+              )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_
 
 𝗤𝘂𝗲𝘀𝘁𝗶𝗼𝗻: ʜᴏᴡ ʙᴇᴀᴜᴛʏꜰᴜʟʟ ɪꜱ *@${ꜱᴇɴᴅᴇʀeceived}*
 𝗣𝗲𝗿𝗰𝗲𝗻𝘁𝗮𝗴𝗲: ${Much}%`,
