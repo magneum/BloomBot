@@ -1,7 +1,7 @@
 [![Open Source Love svg3](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)<img align="centre" src="https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg" alt="Krakinz"/><img align="centre" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"/>
 
 <img align="left"  height="50" src="https://i.postimg.cc/sDPF83Mx/Mizuki-Error.png">
-<img align="right"  height="50" src="https://i.postimg.cc/q7k5WK9Z/Mizuki-Invalid.png">
+<img align="right"  height="50" src="https://i.postimg.cc/3wGtxscV/Mem-Err.png">
 
 # 🍁𝓜𝖎𝖟𝖚ӄ𝖎™ △▽ 𝙒𝙝𝙖𝙩𝙨𝙖𝙥𝙥 𝙐𝙨𝙚𝙧𝙗𝙤𝙩 - _BETA_
 
