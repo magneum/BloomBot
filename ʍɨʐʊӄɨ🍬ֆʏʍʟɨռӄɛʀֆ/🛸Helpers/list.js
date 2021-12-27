@@ -186,7 +186,7 @@ module.exports = {
 │🍄 ${ᴋᴇɪ}femdom  
 │🍄 ${ᴋᴇɪ}foxgirl  
 │🍄 ${ᴋᴇɪ}glasses  
-│🍄 ${ᴋᴇɪ}hentai  
+│🍄 ${ᴋᴇɪ}rhentai
 │🍄 ${ᴋᴇɪ}maid  
 │🍄 ${ᴋᴇɪ}masturbation 
 │🍄 ${ᴋᴇɪ}netorare  
