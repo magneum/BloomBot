@@ -70,7 +70,7 @@ module.exports = {
         .sendMessage(
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
           {
-            contentText: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍣𝐁𝐨𝐭 \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+            contentText: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
               4
             )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_
 
@@ -91,7 +91,7 @@ module.exports = {
 │📥𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝: https://tikporntok.com/${TikPork.video}
 │🔥𝐒𝐨𝐮𝐫𝐜𝐞: https://tikporntok.com/${TikPork.source}
 └───────────◆◇`,
-            footerText: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍣𝐁𝐨𝐭 \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+            footerText: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
               4
             )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
             buttons: [
@@ -159,7 +159,7 @@ module.exports = {
         .sendMessage(
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
           {
-            contentText: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍣𝐁𝐨𝐭 \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+            contentText: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
               4
             )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_
 
@@ -180,7 +180,7 @@ module.exports = {
 │📥𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝: https://tikporntok.com/${TikPork.video}
 │🔥𝐒𝐨𝐮𝐫𝐜𝐞: https://tikporntok.com/${TikPork.source}
 └───────────◆◇`,
-            footerText: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍣𝐁𝐨𝐭 \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+            footerText: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
               4
             )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
             buttons: [

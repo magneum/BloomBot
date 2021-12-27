@@ -40,7 +40,7 @@ module.exports = {
     let movie = await imob.get({
       name: Needs.join(` `),
     });
-    const Litol = `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍣𝐁𝐨𝐭\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+    const Litol = `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
       4
     )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_
 

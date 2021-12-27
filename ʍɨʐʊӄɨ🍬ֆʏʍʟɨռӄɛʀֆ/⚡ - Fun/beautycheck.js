@@ -68,7 +68,7 @@ module.exports = {
               quoted: chat,
               mimetype: Mimetype.png,
               contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
-              caption: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍣𝐁𝐨𝐭  \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+              caption: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭  \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
                 4
               )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_
 
@@ -117,7 +117,7 @@ module.exports = {
               quoted: chat,
               mimetype: Mimetype.png,
               contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ, Receiver] },
-              caption: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍣𝐁𝐨𝐭  \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+              caption: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭  \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
                 4
               )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_
 
@@ -166,7 +166,7 @@ module.exports = {
               quoted: chat,
               mimetype: Mimetype.png,
               contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ, Receiver] },
-              caption: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍣𝐁𝐨𝐭  \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+              caption: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭  \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
                 4
               )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_
 
@@ -212,7 +212,7 @@ Asked By? @${ꜱᴇɴᴅᴇʀeceived}
               quoted: chat,
               mimetype: Mimetype.png,
               contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
-              caption: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍣𝐁𝐨𝐭  \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+              caption: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭  \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
                 4
               )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_
 

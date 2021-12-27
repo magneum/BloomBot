@@ -46,7 +46,7 @@ module.exports = {
       await ӄʀǟӄɨռʐ
         .sendMessage(
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-          `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍣𝐁𝐨𝐭  \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+          `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭  \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
             4
           )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_
 
@@ -72,7 +72,7 @@ ${lyrics.lyrics}`,
       await ӄʀǟӄɨռʐ
         .sendMessage(
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-          `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍣𝐁𝐨𝐭  \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+          `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭  \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
             4
           )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_
 

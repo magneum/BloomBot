@@ -40,7 +40,7 @@ module.exports = {
     }
     const name = Needs.join(` `);
     malScraper.getInfoFromName(name).then(async (data) => {
-      const AnimeInfos = `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍣𝐁𝐨𝐭 
+      const AnimeInfos = `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 
 
 ┌────◆◇💡𝐓𝐢𝐭𝐥𝐞: *${data.title}*
 │

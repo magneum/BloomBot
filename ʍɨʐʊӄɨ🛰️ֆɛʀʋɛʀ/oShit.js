@@ -36,7 +36,7 @@ exports.catch = async (ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎
         ⬡ 𝘞𝘦 𝘙𝘢𝘯 𝘐𝘯𝘵𝘰 𝘚𝘰𝘮𝘦 𝘌𝘳𝘳𝘰𝘳
         ⬡━━━━━━━★
         ⚡𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_`,
-        footerText: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍣𝐁𝐨𝐭 \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+        footerText: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
           4
         )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
         buttons: [
@@ -62,7 +62,7 @@ exports.catch = async (ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎
       𝓜𝖎𝖟𝖚ӄ𝖎.Myself,
       {
         contentText: `⚡Try Command: _${ᴋᴇɪ}${FinalName}_ Again Later!`,
-        footerText: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍣𝐁𝐨𝐭  \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+        footerText: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭  \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
           4
         )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_
 

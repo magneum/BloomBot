@@ -77,7 +77,7 @@ module.exports = {
 │👅𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 │⚡𝐎𝐫𝐝𝐞𝐫𝐞𝐝𝐁𝐲: @${ꜱᴇɴᴅᴇʀeceived} (ᴀᴅᴍɪɴ)
 └───────◆◇`,
-              footerText: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍣𝐁𝐨𝐭\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+              footerText: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
                 4
               )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
               buttons: [
@@ -108,7 +108,7 @@ module.exports = {
 │👅𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 │⚡𝐎𝐫𝐝𝐞𝐫𝐞𝐝𝐁𝐲: @${ꜱᴇɴᴅᴇʀeceived} 
 └───────◆◇`,
-              footerText: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍣𝐁𝐨𝐭\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+              footerText: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
                 4
               )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
               buttons: [

@@ -76,7 +76,7 @@ module.exports = {
 
 *Thank you for Requesting to add 爪𝖎𝖟𝖚ӄ𝖎™ in your group!*
 _*Now Wait!*_`,
-          footerText: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍣𝐁𝐨𝐭 \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+          footerText: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
             4
           )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
           buttons: [
@@ -112,7 +112,7 @@ _*Now Wait!*_`,
         {
           mentionedJid: members,
           mimetype: "video/gif",
-          caption: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍣𝐁𝐨𝐭 \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+          caption: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
             4
           )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_
 
@@ -132,7 +132,7 @@ ${Needs.join(" ")}`,
         MessageType.video,
         {
           mimetype: "video/gif",
-          caption: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍣𝐁𝐨𝐭 \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+          caption: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
             4
           )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_
 
@@ -152,7 +152,7 @@ ${Needs.join(" ")}`,
         MessageType.video,
         {
           mimetype: "video/gif",
-          caption: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍣𝐁𝐨𝐭 \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+          caption: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
             4
           )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_
 
@@ -172,7 +172,7 @@ ${Needs.join(" ")}`,
         MessageType.video,
         {
           mimetype: "video/gif",
-          caption: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍣𝐁𝐨𝐭 \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+          caption: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
             4
           )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_
 

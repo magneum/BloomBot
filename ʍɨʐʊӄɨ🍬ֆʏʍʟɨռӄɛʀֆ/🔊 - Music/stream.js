@@ -147,7 +147,7 @@ ${youfound.thumbnail}`);
 ⏰𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧⤞ ${youfound.timestamp}
 📜𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧⤞ ${youfound.description}
 🔗𝐋𝐢𝐧𝐤⤞ ${youfound.url}`,
-            footerText: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍣𝐁𝐨𝐭 \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+            footerText: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
               4
             )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
             buttons: buttons,

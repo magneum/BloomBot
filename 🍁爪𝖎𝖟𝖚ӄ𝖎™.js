@@ -165,7 +165,7 @@ async function 𝐌𝐢𝐳𝐮𝐤𝐢() {
           MessageType.image,
           {
             mimetype: Mimetype.png,
-            caption: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍣𝐁𝐨𝐭 _${vers.vers}_
+            caption: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 _${vers.vers}_
 
 ┌━━━━━━━★
 │💡ᴘʀᴇꜰɪx: ${ᴋᴇɪ}
@@ -331,7 +331,7 @@ ${update.desc}`,
             MessageType.video,
             {
               mimetype: `video/gif`,
-              caption: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍣𝐁𝐨𝐭\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+              caption: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
                 4
               )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_
 
@@ -420,7 +420,7 @@ ${update.desc}`,
             await ӄʀǟӄɨռʐ
               .sendMessage(
                 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍣𝐁𝐨𝐭\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+                `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
                   4
                 )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_
 
@@ -473,7 +473,7 @@ ${update.desc}`,
                 //                 await ӄʀǟӄɨռʐ
                 //                   .sendMessage(
                 //                     𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                //                     `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍣𝐁𝐨𝐭
+                //                     `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭
 
                 // *🍁Starting Mizuki pull and Auto Updating Bot!*
                 // _*🍁Mizuki Will Be Down For Few Seconds/Minutes*_`,
@@ -496,7 +496,7 @@ ${update.desc}`,
                 await ӄʀǟӄɨռʐ
                   .sendMessage(
                     𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                    `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍣𝐁𝐨𝐭
+                    `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭
 
 
 *◇ Mizuki:* Auto-Udated!
