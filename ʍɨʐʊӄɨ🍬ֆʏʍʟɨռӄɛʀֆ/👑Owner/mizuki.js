@@ -14,53 +14,50 @@ const { formatp, runtime } = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/mizu
 module.exports = {
   name: `mizuki`,
   async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
-    try {
-      // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-      var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
-      var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
-      const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
-      const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
-      console.log(
-        "🍁爪𝖎𝖟𝖚ӄ𝖎™ ᴠᴇʀɪꜰɪᴇᴅ ꜰɪʟᴇ > " + FinalName.toUpperCase() + "✔️"
+    // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
+    var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
+    var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
+    const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
+    const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
+    console.log("🍁爪𝖎𝖟𝖚ӄ𝖎™ ᴠᴇʀɪꜰɪᴇᴅ ꜰɪʟᴇ > " + FinalName.toUpperCase() + "✔️");
+    // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
+    const used = process.memoryUsage();
+    const cpus = os.cpus().map((cpu) => {
+      cpu.total = Object.keys(cpu.times).reduce(
+        (last, type) => last + cpu.times[type],
+        0
       );
-      // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-      const used = process.memoryUsage();
-      const cpus = os.cpus().map((cpu) => {
-        cpu.total = Object.keys(cpu.times).reduce(
-          (last, type) => last + cpu.times[type],
-          0
-        );
-        return cpu;
-      });
-      const cpu = cpus.reduce(
-        (last, cpu, _, { length }) => {
-          last.total += cpu.total;
-          last.speed += cpu.speed / length;
-          last.times.user += cpu.times.user;
-          last.times.nice += cpu.times.nice;
-          last.times.sys += cpu.times.sys;
-          last.times.idle += cpu.times.idle;
-          last.times.irq += cpu.times.irq;
-          return last;
+      return cpu;
+    });
+    const cpu = cpus.reduce(
+      (last, cpu, _, { length }) => {
+        last.total += cpu.total;
+        last.speed += cpu.speed / length;
+        last.times.user += cpu.times.user;
+        last.times.nice += cpu.times.nice;
+        last.times.sys += cpu.times.sys;
+        last.times.idle += cpu.times.idle;
+        last.times.irq += cpu.times.irq;
+        return last;
+      },
+      {
+        speed: 0,
+        total: 0,
+        times: {
+          user: 0,
+          nice: 0,
+          sys: 0,
+          idle: 0,
+          irq: 0,
         },
-        {
-          speed: 0,
-          total: 0,
-          times: {
-            user: 0,
-            nice: 0,
-            sys: 0,
-            idle: 0,
-            irq: 0,
-          },
-        }
-      );
-      // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-      let timestamp = speed();
-      let latensi = speed() - timestamp;
-      neww = performance.now();
-      oldd = performance.now();
-      respon = `
+      }
+    );
+    // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
+    let timestamp = speed();
+    let latensi = speed() - timestamp;
+    neww = performance.now();
+    oldd = performance.now();
+    respon = `
 ┌────◆▶ 𝐒𝐲𝐦𝐥𝐢𝐧𝐤 𝐈𝐧𝐟𝐨𝐬
 │    
 │シ︎💡ᴘʀᴇꜰɪx: ${ᴋᴇɪ}
@@ -74,76 +71,67 @@ module.exports = {
 
 ┌────◆▶ 𝐍𝐨𝐝𝐞𝐉𝐒 𝐌𝐞𝐦-𝐔𝐬𝐚𝐠𝐞:
 │${Object.keys(used)
-        .map(
-          (key, _, arr) =>
-            `${key.padEnd(
-              Math.max(...arr.map((v) => v.length)),
-              " "
-            )}: ${formatp(used[key])}`
-        )
-        .join("\n│")}
+      .map(
+        (key, _, arr) =>
+          `${key.padEnd(Math.max(...arr.map((v) => v.length)), " ")}: ${formatp(
+            used[key]
+          )}`
+      )
+      .join("\n│")}
 
 ┌────◆▶ ${
-        cpus[0]
-          ? `𝐓𝐨𝐭𝐚𝐥 𝐂𝐏𝐔 𝐔𝐬𝐚𝐠𝐞
+      cpus[0]
+        ? `𝐓𝐨𝐭𝐚𝐥 𝐂𝐏𝐔 𝐔𝐬𝐚𝐠𝐞
 │${cpus[0].model.trim()} (${cpu.speed} ᴍʜᴢ)${Object.keys(cpu.times)
-              .map(
-                (type) =>
-                  `- *${(type + "*").padEnd(6)}: ${(
-                    (100 * cpu.times[type]) /
-                    cpu.total
-                  ).toFixed(2)}%`
-              )
-              .join("\n")}
+            .map(
+              (type) =>
+                `- *${(type + "*").padEnd(6)}: ${(
+                  (100 * cpu.times[type]) /
+                  cpu.total
+                ).toFixed(2)}%`
+            )
+            .join("\n")}
 
 
 ┌────◆▶ 𝐂𝐏𝐔 𝐂𝐨𝐫𝐞(𝐬) 𝐔𝐬𝐚𝐠𝐞 (_${cpus.length}_ 𝐂𝐨𝐫𝐞 𝐂𝐏𝐔)
 │${cpus
-              .map(
-                (cpu, i) =>
-                  `${i + 1}. ${cpu.model.trim()} (${
-                    cpu.speed
-                  } ᴍʜᴢ)${Object.keys(cpu.times)
-                    .map(
-                      (type) =>
-                        `- *${(type + "*").padEnd(6)}: ${(
-                          (100 * cpu.times[type]) /
-                          cpu.total
-                        ).toFixed(2)}%`
-                    )
-                    .join("\n")}`
-              )
-              .join("\n\n")}`
-          : ""
-      }`.trim();
-      // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-      await ӄʀǟӄɨռʐ
-        .sendMessage(
-          𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-          {
-            url: _𝔏𝔞𝔟_.MEE,
+            .map(
+              (cpu, i) =>
+                `${i + 1}. ${cpu.model.trim()} (${cpu.speed} ᴍʜᴢ)${Object.keys(
+                  cpu.times
+                )
+                  .map(
+                    (type) =>
+                      `- *${(type + "*").padEnd(6)}: ${(
+                        (100 * cpu.times[type]) /
+                        cpu.total
+                      ).toFixed(2)}%`
+                  )
+                  .join("\n")}`
+            )
+            .join("\n\n")}`
+        : ""
+    }`.trim();
+    // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
+    await ӄʀǟӄɨռʐ
+      .sendMessage(
+        𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+        {
+          url: _𝔏𝔞𝔟_.MEE,
+        },
+        MessageType.image,
+        {
+          mimetype: Mimetype.png,
+          contextInfo: {
+            mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
           },
-          MessageType.image,
-          {
-            mimetype: Mimetype.png,
-            contextInfo: {
-              mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
-            },
-            caption: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
+          caption: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
 
 🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived}, 
 ${respon}`,
-          }
-        )
-        .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
-    } catch (ℓαвєяяσя) {
-      await ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
-      console.log(
-        "⬡==========================⬡    🍁 " +
-          ℓαвєяяσя +
-          "🍁    ⬡==========================⬡"
-      );
-    }
+        }
+      )
+      .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
   },
 };
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
