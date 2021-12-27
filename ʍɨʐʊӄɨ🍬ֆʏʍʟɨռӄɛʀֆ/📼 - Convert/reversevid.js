@@ -52,9 +52,9 @@ module.exports = {
 │📤𝗙𝗿𝗼𝗺: _Normal Video_
 │📥𝗧𝗼: _Reversed Video_
 └───────◆▶`,
-              fs.readFileSync(ran)
+              fs.readFileSync(Convert_To)
             );
-            return await fs.unlinkSync(ran);
+            return await fs.unlinkSync(Convert_To);
           }
         }
       );

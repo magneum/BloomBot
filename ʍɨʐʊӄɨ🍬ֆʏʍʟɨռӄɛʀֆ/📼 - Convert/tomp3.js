@@ -10,8 +10,8 @@ const { exec } = require("child_process");
 const fs = require(`fs`);
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
 module.exports = {
-  name: `slowvid`,
-  𝓜𝓮𝓮6ʍօʀɛ: `*${ᴋᴇɪ}slowvid* (reply video)`,
+  name: `tomp3`,
+  𝓜𝓮𝓮6ʍօʀɛ: `*${ᴋᴇɪ}tomp3* (reply video)`,
   async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
     // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
     var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
@@ -39,20 +39,16 @@ module.exports = {
         if (err) {
           return console.log(`Err: ${err}`);
         } else {
-          await Mizuki_Buttons.MAB(
-            ӄʀǟӄɨռʐ,
-            chat,
-            𝓜𝖎𝖟𝖚ӄ𝖎,
-            `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived}, 𝐅𝐅𝐌𝐏𝐄𝐆 𝐂𝐨𝐧𝐯𝐞𝐫𝐭𝐞𝐫!
-
-┌────◆▶🍌𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-│
-│📤𝗙𝗿𝗼𝗺: _Normal Speed Mp4_
-│📥𝗧𝗼: _Normal Speed Mp3_
-└───────◆▶`,
-            fs.readFileSync(ran)
+          await ӄʀǟӄɨռʐ.sendMessage(
+            𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+            fs.readFileSync(Convert_To),
+            MessageType.audio,
+            {
+              mimetype: "audio/mp4",
+              quoted: chat,
+            }
           );
-          return await fs.unlinkSync(ran);
+          await fs.unlinkSync(Convert_To);
         }
       });
     } else {
