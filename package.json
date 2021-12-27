@@ -4,6 +4,16 @@
   "scripts": {
     "start": "node 🍁爪𝖎𝖟𝖚ӄ𝖎™.js"
   },
+  "keywords": [
+    "whatsapp",
+    "js-whatsapp",
+    "whatsapp-api",
+    "whatsapp-web",
+    "whatsapp",
+    "whatsapp-chat",
+    "whatsapp-group",
+    "automation"
+  ],
   "dependencies": {
     "@adiwajshing/baileys": "^3.5.0",
     "@cicciosgamino/openweather-apis": "^5.0.1",
