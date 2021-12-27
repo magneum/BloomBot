@@ -45,12 +45,14 @@ module.exports = {
       const { id } = getVideoId(youfound.url);
       Fetched =
         Fetched +
-        `*🥳𝐓𝐢𝐭𝐥𝐞↬* ${youfound.title}
-*👀𝐕𝐢𝐞𝐰𝐬↬* ${youfound.views}
-*🕐𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧↬* ${youfound.timestamp}
-*📜𝐀𝐮𝐭𝐡𝐨𝐫↬* ${youfound.author.name}
-*📜𝐋𝐢𝐧𝐤↬* ${youfound.url}
-\n\n`;
+        `
+┌────◆◇🥳𝐓𝐢𝐭𝐥𝐞: ${youfound.title}
+│
+│👀𝐕𝐢𝐞𝐰𝐬: ${youfound.views}
+│🕐𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧: ${youfound.timestamp}
+│📜𝐀𝐮𝐭𝐡𝐨𝐫: ${youfound.author.name}
+│📜𝐋𝐢𝐧𝐤: ${youfound.url}
+└───────◆◇\n\n`;
     });
     if (Fetched === ``) {
       ӄʀǟӄɨռʐ

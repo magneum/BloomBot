@@ -30,10 +30,10 @@ module.exports = {
         `Who Is This Dumbo •@${ꜱᴇɴᴅᴇʀeceived} Trying to Use Owner-Only Commands.
 
 
-┌────◆▶ 🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧   
+┌────◆◇ 🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧   
 │  
 │*❌ 𝚈𝚘𝚞 𝙰𝚛𝚎 𝙽𝚘𝚝 𝙰𝚕𝚕𝚘𝚠𝚎𝚍!*
-└───────◆▶`,
+└───────◆◇`,
         _𝔏𝔞𝔟_.ɴᴏᴛᴀᴅᴍɪɴ
       );
     }
