@@ -397,6 +397,7 @@ ${update.desc}`,
         𝓜𝖎𝖟𝖚ӄ𝖎.chatId
       );
       const letGos = await LetGoChecker(𝓜𝖎𝖟𝖚ӄ𝖎, ӄʀǟӄɨռʐ, CheckBans);
+      console.log(letGos);
       if (!letGos) {
         return;
       } else {
@@ -407,14 +408,19 @@ ${update.desc}`,
           !𝓜𝖎𝖟𝖚ӄ𝖎.body.includes(_𝔏𝔞𝔟_.HASH) &&
           𝓜𝖎𝖟𝖚ӄ𝖎.body.includes(`https://chat.whatsapp.com/`)
         ) {
+          let CheckLinks = await LinkList.getLinklistUser(
+            𝓜𝖎𝖟𝖚ӄ𝖎.sender,
+            𝓜𝖎𝖟𝖚ӄ𝖎.chatId
+          );
           const REMOVE = chat.key.fromMe
             ? ӄʀǟӄɨռʐ.user.jid
             : 𝓜𝖎𝖟𝖚ӄ𝖎.isGroup
             ? chat.participant
             : chat.key.remoteJid;
-          let CheckLinks = await LinkList.getLinklistUser(
-            𝓜𝖎𝖟𝖚ӄ𝖎.sender,
-            𝓜𝖎𝖟𝖚ӄ𝖎.chatId
+          console.log(
+            Kolor.green.italic(
+              `💡INFO ⬰ Antilink ${CheckLinks} in > ${𝓜𝖎𝖟𝖚ӄ𝖎.groupName}.`
+            )
           );
           if (CheckLinks === true) {
             try {
@@ -429,18 +435,16 @@ ${update.desc}`,
 │🎪𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${𝓜𝖎𝖟𝖚ӄ𝖎.groupName}
 └──────◆◇`,
                 `./ʍɨʐʊӄɨ☣️ƈօʀɛ/Mizuki_Antilink.png`
+              ).then(
+                ӄʀǟӄɨռʐ
+                  .groupRemove(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, [REMOVE])
+                  .catch((ℓαвєяяσя) =>
+                    ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
+                  )
               );
             } catch (ℓαвєяяσя) {
               ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
             }
-            await ӄʀǟӄɨռʐ
-              .groupRemove(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, [REMOVE])
-              .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
-            console.log(
-              Kolor.green.italic(
-                `💡INFO ⬰ Antilink ${CheckLinks} in > ${𝓜𝖎𝖟𝖚ӄ𝖎.groupName}.`
-              )
-            );
           } else if (CheckLinks === false) {
             console.log(
               Kolor.red.bold(
