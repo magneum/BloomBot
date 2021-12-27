@@ -30,7 +30,7 @@ const Mizuki_Text_But = (ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, MainText)
     contentText: MainText,
     footerText: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ* \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
       4
-    )}s_\n📅ᴅᴀᴛᴇ: _${Clock}_`,
+    )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
     buttons: [
       {
         buttonId: `${ᴋᴇɪ}help`,
@@ -73,7 +73,7 @@ const Mizuki_Image_But = async (ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, Ma
         contentText: MainText,
         footerText: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ* \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
           4
-        )}s_\n📅ᴅᴀᴛᴇ: _${Clock}_`,
+        )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
         buttons: [
           {
             buttonId: `${ᴋᴇɪ}help`,
@@ -118,7 +118,7 @@ const Mizuki_Video_But = async (ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, Ma
         contentText: MainText,
         footerText: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ* \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
           4
-        )}s_\n📅ᴅᴀᴛᴇ: _${Clock}_`,
+        )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
         buttons: [
           {
             buttonId: `${ᴋᴇɪ}help`,
@@ -163,7 +163,7 @@ const Mizuki_GIF_But = async (ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, Main
         contentText: MainText,
         footerText: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ* \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
           4
-        )}s_\n📅ᴅᴀᴛᴇ: _${Clock}_`,
+        )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
         buttons: [
           {
             buttonId: `${ᴋᴇɪ}help`,
@@ -211,7 +211,7 @@ const Mizuki_VideoAudio_But = async (
     contentText: MainText,
     footerText: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ* \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
       4
-    )}s_\n📅ᴅᴀᴛᴇ: _${Clock}_`,
+    )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
     buttons: [
       {
         buttonId: `${ᴋᴇɪ}help`,
@@ -257,7 +257,7 @@ const Mizuki_Location_But = async (
     contentText: MainText,
     footerText: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ* \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
       4
-    )}s_\n📅ᴅᴀᴛᴇ: _${Clock}_`,
+    )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
     buttons: [
       {
         buttonId: `${ᴋᴇɪ}help`,
