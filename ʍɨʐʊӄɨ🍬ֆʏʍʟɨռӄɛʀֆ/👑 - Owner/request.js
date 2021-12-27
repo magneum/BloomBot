@@ -78,7 +78,7 @@ module.exports = {
 _*Now Wait!*_`,
           footerText: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ* \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
             4
-          )}s_\n📅ᴅᴀᴛᴇ: _${Clock}_`,
+          )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
           buttons: [
             {
               buttonId: `${ᴋᴇɪ}help`,
@@ -114,7 +114,7 @@ _*Now Wait!*_`,
           mimetype: "video/gif",
           caption: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ* \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
             4
-          )}s_\n📅ᴅᴀᴛᴇ: _${Clock}_
+          )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_
 
 ⚡𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 🤩𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐁𝐲: *${ꜱᴇɴᴅᴇʀɪᴅ}*
@@ -134,7 +134,7 @@ ${Needs.join(" ")}`,
           mimetype: "video/gif",
           caption: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ* \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
             4
-          )}s_\n📅ᴅᴀᴛᴇ: _${Clock}_
+          )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_
 
 ⚡𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 🤩𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐁𝐲: *${ꜱᴇɴᴅᴇʀɪᴅ}*
@@ -154,7 +154,7 @@ ${Needs.join(" ")}`,
           mimetype: "video/gif",
           caption: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ* \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
             4
-          )}s_\n📅ᴅᴀᴛᴇ: _${Clock}_
+          )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_
 
 ⚡𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 🤩𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐁𝐲: *${ꜱᴇɴᴅᴇʀɪᴅ}*
@@ -174,7 +174,7 @@ ${Needs.join(" ")}`,
           mimetype: "video/gif",
           caption: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ* \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
             4
-          )}s_\n📅ᴅᴀᴛᴇ: _${Clock}_
+          )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_
 
 ⚡𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 🤩𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐁𝐲: *${ꜱᴇɴᴅᴇʀɪᴅ}*

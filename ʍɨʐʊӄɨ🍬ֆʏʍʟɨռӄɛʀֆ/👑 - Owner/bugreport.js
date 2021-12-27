@@ -56,7 +56,7 @@ _If Found the report was just for fun then you will be banned by the bot!_
 *🔥 ɢʀᴏᴜᴘ:* ${_𝔏𝔞𝔟_.HASH}`,
           footerText: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ* \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
             4
-          )}s_\n📅ᴅᴀᴛᴇ: _${Clock}_`,
+          )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
           buttons: [
             {
               buttonId: `${ᴋᴇɪ}help`,
@@ -92,7 +92,7 @@ _If Found the report was just for fun then you will be banned by the bot!_
           mimetype: "video/gif",
           caption: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ* \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
             4
-          )}s_\n📅ᴅᴀᴛᴇ: _${Clock}_
+          )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_
 
 ⚡𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 🐞𝐑𝐞𝐩𝐨𝐫𝐭𝐞𝐝 𝐁𝐲: *${ꜱᴇɴᴅᴇʀɪᴅ}*
@@ -112,7 +112,7 @@ ${Needs.join(" ")}`,
           mimetype: "video/gif",
           caption: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ* \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
             4
-          )}s_\n📅ᴅᴀᴛᴇ: _${Clock}_
+          )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_
 
 ⚡𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 🐞𝐑𝐞𝐩𝐨𝐫𝐭𝐞𝐝 𝐁𝐲: *${ꜱᴇɴᴅᴇʀɪᴅ}*
@@ -132,7 +132,7 @@ ${Needs.join(" ")}`,
           mimetype: "video/gif",
           caption: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ* \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
             4
-          )}s_\n📅ᴅᴀᴛᴇ: _${Clock}_
+          )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_
 
 ⚡𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 🐞𝐑𝐞𝐩𝐨𝐫𝐭𝐞𝐝 𝐁𝐲: *${ꜱᴇɴᴅᴇʀɪᴅ}*
@@ -152,7 +152,7 @@ ${Needs.join(" ")}`,
           mimetype: "video/gif",
           caption: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ* \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
             4
-          )}s_\n📅ᴅᴀᴛᴇ: _${Clock}_
+          )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_
 
 ⚡𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 🐞𝐑𝐞𝐩𝐨𝐫𝐭𝐞𝐝 𝐁𝐲: *${ꜱᴇɴᴅᴇʀɪᴅ}*

@@ -38,7 +38,7 @@ exports.catch = async (ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎
         ⚡𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_`,
         footerText: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ* \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
           4
-        )}s_\n📅ᴅᴀᴛᴇ: _${Clock}_`,
+        )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
         buttons: [
           {
             buttonId: `${ᴋᴇɪ}help`,
@@ -64,7 +64,7 @@ exports.catch = async (ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎
         contentText: `⚡Try Command: _${ᴋᴇɪ}${FinalName}_ Again Later!`,
         footerText: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${
           vers.vers
-        }_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(4)}s_\n📅ᴅᴀᴛᴇ: _${Clock}_
+        }_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(4)}s_ 📅ᴅᴀᴛᴇ: _${Clock}_
 
 
 Error: ${ℓαвєяяσя}`,

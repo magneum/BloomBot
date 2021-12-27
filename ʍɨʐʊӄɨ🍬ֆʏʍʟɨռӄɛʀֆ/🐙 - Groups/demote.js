@@ -30,7 +30,7 @@ For example-
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
           `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${vers.vers}_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
             4
-          )}s_\n📅ᴅᴀᴛᴇ: _${Clock}_
+          )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_
 
 •🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived},
 This command is only applicable in a group chat.`,
@@ -77,7 +77,7 @@ This command is only applicable in a group chat.`,
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
           `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${vers.vers}_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
             4
-          )}s_\n📅ᴅᴀᴛᴇ: _${Clock}_
+          )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_
 
 •🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived},
 Reply/tag/enter contact number of the person to be demoted.`,
@@ -122,7 +122,7 @@ Reply/tag/enter contact number of the person to be demoted.`,
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
           `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${vers.vers}_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
             4
-          )}s_\n📅ᴅᴀᴛᴇ: _${Clock}_
+          )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_
 
 •🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived},
 ${contact} is the owner of the group`,
@@ -148,7 +148,7 @@ ${contact} is the owner of the group`,
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
             `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${vers.vers}_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
               4
-            )}s_\n📅ᴅᴀᴛᴇ: _${Clock}_
+            )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_
 
 •🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived},
 ${contact} is demoted from admin`,
@@ -169,7 +169,7 @@ ${contact} is demoted from admin`,
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
             `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${vers.vers}_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
               4
-            )}s_\n📅ᴅᴀᴛᴇ: _${Clock}_
+            )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_
 
 •🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived},
 ${contact} was not an admin`,
@@ -194,7 +194,7 @@ ${contact} was not an admin`,
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
             `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${vers.vers}_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
               4
-            )}s_\n📅ᴅᴀᴛᴇ: _${Clock}_
+            )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_
 
 •🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived},Person not found.`,
             MessageType.text,

@@ -44,7 +44,7 @@ module.exports = {
       });
       const Litol = `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ* \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
         4
-      )}s_\n📅ᴅᴀᴛᴇ: _${Clock}_
+      )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_
 
 *💡𝐓𝐢𝐭𝐥𝐞➛*  ${movie.title.toUpperCase()}
 *🕜𝐓𝐢𝐦𝐞➛*  ${movie.runtime}

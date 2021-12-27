@@ -126,7 +126,7 @@ ${youfound.thumbnail}`);
 🔗𝐋𝐢𝐧𝐤⤞ ${youfound.url}`,
             footerText: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ* \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
               4
-            )}s_\n📅ᴅᴀᴛᴇ: _${Clock}_`,
+            )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
             buttons: buttons,
             headerType: 4,
             imageMessage: media.message.imageMessage,
@@ -171,7 +171,7 @@ ${youfound.thumbnail}`);
 🔗𝐋𝐢𝐧𝐤⤞ ${youfound.url}`,
                     footerText: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ* \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
                       4
-                    )}s_\n📅ᴅᴀᴛᴇ: _${Clock}_`,
+                    )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
                     buttons: [
                       {
                         buttonId: `${ᴋᴇɪ}happy`,

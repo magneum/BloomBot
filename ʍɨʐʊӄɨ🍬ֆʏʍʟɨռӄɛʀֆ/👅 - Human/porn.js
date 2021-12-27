@@ -2624,7 +2624,7 @@ module.exports = {
           mimetype: "video/gif",
           caption: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ* \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
             4
-          )}s_\n📅ᴅᴀᴛᴇ: _${Clock}_
+          )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_
 
 ┌────◆▶
 │⚡𝐓𝐨𝐩𝐢𝐜: ${FinalName}

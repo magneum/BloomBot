@@ -72,7 +72,7 @@ module.exports = {
           {
             contentText: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ* \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
               4
-            )}s_\n📅ᴅᴀᴛᴇ: _${Clock}_
+            )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_
 
 ┌────◆▶
 │⚡ 𝐀𝐬𝐤𝐞𝐝𝐁𝐲: @${ꜱᴇɴᴅᴇʀeceived},
@@ -93,7 +93,7 @@ module.exports = {
 └───────────◆▶`,
             footerText: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ* \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
               4
-            )}s_\n📅ᴅᴀᴛᴇ: _${Clock}_`,
+            )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
             buttons: [
               {
                 buttonId: `${ᴋᴇɪ}list`,
@@ -161,7 +161,7 @@ module.exports = {
           {
             contentText: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ* \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
               4
-            )}s_\n📅ᴅᴀᴛᴇ: _${Clock}_
+            )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_
 
 ┌────◆▶
 │⚡ 𝐀𝐬𝐤𝐞𝐝𝐁𝐲: @${ꜱᴇɴᴅᴇʀeceived},
@@ -182,7 +182,7 @@ module.exports = {
 └───────────◆▶`,
             footerText: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ* \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
               4
-            )}s_\n📅ᴅᴀᴛᴇ: _${Clock}_`,
+            )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
             buttons: [
               {
                 buttonId: `${ᴋᴇɪ}list`,

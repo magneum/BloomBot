@@ -30,7 +30,7 @@ module.exports = {
           mimetype: Mimetype.png || Mimetype.jpeg,
           caption: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ* \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
             4
-          )}s_\n📅ᴅᴀᴛᴇ: _${Clock}_`,
+          )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
         }
       )
       .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));

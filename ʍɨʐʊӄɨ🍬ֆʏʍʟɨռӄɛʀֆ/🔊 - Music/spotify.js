@@ -100,7 +100,7 @@ module.exports = {
                       mimetype: Mimetype.png || Mimetype.jpeg,
                       content: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ* \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
                         4
-                      )}s_\n📅ᴅᴀᴛᴇ: _${Clock}_
+                      )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_
 
 🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived}, ⭕𝗔𝘂𝗱𝗶𝗼 
 𝗣𝗹𝗲𝗮𝘀𝗲 𝗖𝗵𝗼𝗼𝘀𝗲 𝗦𝗺𝗮𝗹𝗹𝗲𝗿 𝗙𝗶𝗹𝗲!
@@ -138,7 +138,7 @@ _ᴛᴏᴏᴋ ꜰʀᴏᴍ ʏᴏᴜᴛᴜʙᴇ_
 🔗𝐋𝐢𝐧𝐤⤞ ${youfound.url}`,
                     footerText: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ* \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
                       4
-                    )}s_\n📅ᴅᴀᴛᴇ: _${Clock}_`,
+                    )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
                     buttons: [
                       {
                         buttonId: `${ᴋᴇɪ}happy`,
