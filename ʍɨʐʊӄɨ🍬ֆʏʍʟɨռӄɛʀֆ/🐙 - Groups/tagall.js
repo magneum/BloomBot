@@ -11,9 +11,8 @@ const vers = require(`../../package.json`);
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
 module.exports = {
   name: `tagall`,
-  description: `command to tag evryone in a group.`,
-  𝓜𝓮𝓮6ʍօʀɛ: `Use this command to tag everyone in the group by either replying to a message or simply using  *${ᴋᴇɪ}tagall*  command.`,
-  𝓜𝓮𝓮6ʍօʀɛ: `${ᴋᴇɪ}tagall <text> or <no-text>`,
+  𝓜𝓮𝓮6ʍօʀɛ: `${ᴋᴇɪ}tagall (text) 
+or (no-text): ${ᴋᴇɪ}tagall`,
   async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
     // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
     var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
