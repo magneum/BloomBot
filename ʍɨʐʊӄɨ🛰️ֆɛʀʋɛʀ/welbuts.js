@@ -109,7 +109,7 @@ ${ᴡᴇʟᴄᴏᴍᴇʀᴛxᴛ}
 ${ꜰᴇᴛᴄʜᴇᴅᴡᴇʟᴄᴏᴍᴇ.message}`,
           footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ _${vers.vers}_*\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
             4
-          )}s_\n📅𝐃𝐚𝐭𝐞: _${Clock}_`,
+          )}s_\n📅ᴅᴀᴛᴇ: _${Clock}_`,
           buttons: [
             {
               buttonId: `${ᴋᴇɪ}help`,

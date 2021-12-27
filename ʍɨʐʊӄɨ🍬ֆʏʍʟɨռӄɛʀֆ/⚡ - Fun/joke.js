@@ -30,7 +30,7 @@ module.exports = {
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
           `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${vers.vers}_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
             4
-          )}s_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
+          )}s_\n📅ᴅᴀᴛᴇ: _${Clock}_
 
 🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived},
 Here Is Your Mizuki Dad-Joke

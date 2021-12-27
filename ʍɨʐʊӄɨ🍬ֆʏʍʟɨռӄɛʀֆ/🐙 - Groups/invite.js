@@ -58,7 +58,7 @@ module.exports = {
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
             `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${vers.vers}_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
               4
-            )}s_\n📅𝐃𝐚𝐭𝐞: _${Clock}_\n\ncommand only applicable in a group chat.`,
+            )}s_\n📅ᴅᴀᴛᴇ: _${Clock}_\n\ncommand only applicable in a group chat.`,
             MessageType.text,
             { quoted: chat }
           )
@@ -73,7 +73,7 @@ module.exports = {
             chat.message.extendedTextMessage.contextInfo.participant,
             `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${vers.vers}_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
               4
-            )}s_\n📅𝐃𝐚𝐭𝐞: _${Clock}_\n\nhttps://chat.whatsapp.com/` + code,
+            )}s_\n📅ᴅᴀᴛᴇ: _${Clock}_\n\nhttps://chat.whatsapp.com/` + code,
             MessageType.text,
             { quoted: chat }
           )
@@ -95,7 +95,7 @@ module.exports = {
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
           `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${vers.vers}_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
             4
-          )}s_\n📅𝐃𝐚𝐭𝐞: _${Clock}_\n\nhttps://chat.whatsapp.com/` + code,
+          )}s_\n📅ᴅᴀᴛᴇ: _${Clock}_\n\nhttps://chat.whatsapp.com/` + code,
           MessageType.text,
           { quoted: chat }
         )

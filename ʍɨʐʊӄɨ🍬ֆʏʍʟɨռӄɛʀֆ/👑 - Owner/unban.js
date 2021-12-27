@@ -45,7 +45,7 @@ _😈Only My Owner Can Use_ *${ᴋᴇɪ}${𝓜𝖎𝖟𝖚ӄ𝖎.commandName}*`
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
             `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${vers.vers}_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
               4
-            )}s_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
+            )}s_\n📅ᴅᴀᴛᴇ: _${Clock}_
 
 Entry for ${RmUser} not found in the BanList.`,
             MessageType.text
@@ -58,7 +58,7 @@ Entry for ${RmUser} not found in the BanList.`,
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
           `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${vers.vers}_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
             4
-          )}s_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
+          )}s_\n📅ᴅᴀᴛᴇ: _${Clock}_
 
 ${RmUser} removed from BanList for all the chats.`,
           MessageType.text
@@ -90,7 +90,7 @@ ${RmUser} removed from BanList for all the chats.`,
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${vers.vers}_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
                 4
-              )}s_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
+              )}s_\n📅ᴅᴀᴛᴇ: _${Clock}_
 
 Entry for ${RmUser} not found in the BanList.`,
               MessageType.text
@@ -103,7 +103,7 @@ Entry for ${RmUser} not found in the BanList.`,
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
             `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${vers.vers}_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
               4
-            )}s_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
+            )}s_\n📅ᴅᴀᴛᴇ: _${Clock}_
 
 ${RmUser} has been removed from the BanList for this group.`,
             MessageType.text
@@ -127,7 +127,7 @@ ${RmUser} has been removed from the BanList for this group.`,
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${vers.vers}_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
                 4
-              )}s_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
+              )}s_\n📅ᴅᴀᴛᴇ: _${Clock}_
 
 Entry for ${RmUser} not found in the BanList.`,
               MessageType.text
@@ -140,7 +140,7 @@ Entry for ${RmUser} not found in the BanList.`,
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
             `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${vers.vers}_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
               4
-            )}s_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
+            )}s_\n📅ᴅᴀᴛᴇ: _${Clock}_
 
 ${RmUser} has been removed from the BanList for this group.`,
             MessageType.text
@@ -154,7 +154,7 @@ ${RmUser} has been removed from the BanList for this group.`,
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${vers.vers}_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
                 4
-              )}s_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
+              )}s_\n📅ᴅᴀᴛᴇ: _${Clock}_
 
 Entry for ${𝓜𝖎𝖟𝖚ӄ𝖎.groupName} not found in the BanList.`,
               MessageType.text
@@ -167,7 +167,7 @@ Entry for ${𝓜𝖎𝖟𝖚ӄ𝖎.groupName} not found in the BanList.`,
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
             `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${vers.vers}_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
               4
-            )}s_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
+            )}s_\n📅ᴅᴀᴛᴇ: _${Clock}_
 
 Bot has been enabled for the group ${𝓜𝖎𝖟𝖚ӄ𝖎.groupName}`,
             MessageType.text

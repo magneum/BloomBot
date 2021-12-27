@@ -96,7 +96,7 @@ _yeti_  *|*  _zenburn_`,
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
           `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${vers.vers}_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
             4
-          )}s_\n📅𝐃𝐚𝐭𝐞: _${Clock}_\n\nThe replied message should be text.`,
+          )}s_\n📅ᴅᴀᴛᴇ: _${Clock}_\n\nThe replied message should be text.`,
           MessageType.text,
           { quoted: chat }
         )
@@ -120,7 +120,7 @@ _yeti_  *|*  _zenburn_`,
               2
             )}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${
               vers.vers
-            }_\n📅𝐃𝐚𝐭𝐞: _${Clock}_\n\nAvailable themes: `;
+            }_\n📅ᴅᴀᴛᴇ: _${Clock}_\n\nAvailable themes: `;
             themes.forEach((theme) => {
               message += `\n${counter}. ${theme}`;
               counter += 1;
@@ -140,7 +140,7 @@ _yeti_  *|*  _zenburn_`,
                   4
                 )}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${
                   vers.vers
-                }_\n📅𝐃𝐚𝐭𝐞: _${Clock}_\n\nNo input provided.
+                }_\n📅ᴅᴀᴛᴇ: _${Clock}_\n\nNo input provided.
 Please use the command  *${ᴋᴇɪ}carbon <text>*  or reply to a text message with  *${ᴋᴇɪ}carbon*  to carbonize the text.`,
                 MessageType.text,
                 { quoted: chat }
@@ -160,7 +160,7 @@ Please use the command  *${ᴋᴇɪ}carbon <text>*  or reply to a text message w
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${vers.vers}_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
                 4
-              )}s_\n📅𝐃𝐚𝐭𝐞: _${Clock}_\n\nPlease enter a valid theme.
+              )}s_\n📅ᴅᴀᴛᴇ: _${Clock}_\n\nPlease enter a valid theme.
 Do note that theme names are  *case sensitive*${ᴋᴇɪ}`,
               MessageType.text,
               { quoted: chat }
@@ -185,7 +185,7 @@ Do note that theme names are  *case sensitive*${ᴋᴇɪ}`,
         𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
         `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${vers.vers}_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
           4
-        )}s_\n📅𝐃𝐚𝐭𝐞: _${Clock}_\n\nConverting your text into a code snippet. Please wait...`,
+        )}s_\n📅ᴅᴀᴛᴇ: _${Clock}_\n\nConverting your text into a code snippet. Please wait...`,
         MessageType.text,
         { quoted: chat }
       )
@@ -201,7 +201,7 @@ Do note that theme names are  *case sensitive*${ᴋᴇɪ}`,
         mimetype: Mimetype.png,
         caption: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${vers.vers}_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
           4
-        )}s_\n📅𝐃𝐚𝐭𝐞: _${Clock}_\n\n
+        )}s_\n📅ᴅᴀᴛᴇ: _${Clock}_\n\n
 *<< Here's your carbon image! >>*
 Colour Scheme: {}`.format(themeInput),
       })

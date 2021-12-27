@@ -44,7 +44,7 @@ _😈Only My Owner Can Use_ *${ᴋᴇɪ}${𝓜𝖎𝖟𝖚ӄ𝖎.commandName}*`
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
           `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${vers.vers}_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
             4
-          )}s_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
+          )}s_\n📅ᴅᴀᴛᴇ: _${Clock}_
 
 ${User} banned from using the bot in all chats.`,
           MessageType.text
@@ -67,7 +67,7 @@ ${User} banned from using the bot in all chats.`,
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${vers.vers}_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
                 4
-              )}s_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
+              )}s_\n📅ᴅᴀᴛᴇ: _${Clock}_
 
 Bot cannot blacklist itself. Tag or reply to a different user.`,
               MessageType.text
@@ -86,7 +86,7 @@ Bot cannot blacklist itself. Tag or reply to a different user.`,
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${vers.vers}_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
                 4
-              )}s_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
+              )}s_\n📅ᴅᴀᴛᴇ: _${Clock}_
 
 ${User} has been blacklisted from using the bot in this group.`,
               MessageType.text
@@ -104,7 +104,7 @@ ${User} has been blacklisted from using the bot in this group.`,
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${vers.vers}_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
                 4
-              )}s_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
+              )}s_\n📅ᴅᴀᴛᴇ: _${Clock}_
 
 Bot cannot blacklist itself. Tag or reply to a different user.`,
               MessageType.text
@@ -123,7 +123,7 @@ Bot cannot blacklist itself. Tag or reply to a different user.`,
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${vers.vers}_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
                 4
-              )}s_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
+              )}s_\n📅ᴅᴀᴛᴇ: _${Clock}_
 
 ${User} has been blacklisted from using the bot in this group.`,
               MessageType.text
@@ -138,7 +138,7 @@ ${User} has been blacklisted from using the bot in this group.`,
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
             `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${vers.vers}_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
               4
-            )}s_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
+            )}s_\n📅ᴅᴀᴛᴇ: _${Clock}_
 
 Bot has been disabled for the group ${𝓜𝖎𝖟𝖚ӄ𝖎.groupName}.`,
             MessageType.text

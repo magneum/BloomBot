@@ -73,7 +73,7 @@ exports.mainMizukigif = async (ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, �
               contentText: `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived},\n====<⚡>${𝓜𝖎𝖟𝖚ӄ𝖎Text}`,
               footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ* _${
                 vers.vers
-              }_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(4)}s_n📅𝐃𝐚𝐭𝐞: _${Clock}_`,
+              }_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(4)}s_n📅ᴅᴀᴛᴇ: _${Clock}_`,
               buttons: [
                 {
                   buttonId: `${ᴋᴇɪ}list`,
