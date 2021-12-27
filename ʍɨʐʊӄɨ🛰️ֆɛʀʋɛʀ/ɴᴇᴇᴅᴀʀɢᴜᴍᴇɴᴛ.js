@@ -85,7 +85,7 @@ exports.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ = async (
             contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
             caption: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${
               vers.vers
-            }_\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(4)}s_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
+            }_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(4)}s_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
 
 🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived}, 
 

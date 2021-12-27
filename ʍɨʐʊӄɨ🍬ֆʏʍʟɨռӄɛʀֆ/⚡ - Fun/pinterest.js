@@ -44,11 +44,12 @@ module.exports = {
           contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
           quoted: chat,
           mimetype: Mimetype.png,
-          caption: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${vers.vers}_\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(
+          caption: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${vers.vers}_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
             4
           )}s_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
 
 •🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived},
+
 ┌────◆▶ 
 │⦿ 𝐓𝐨𝐩𝐢𝐜: *${FinalName}*
 │⦿ 𝐒𝐞𝐚𝐫𝐜𝐡𝐞𝐝𝐅𝐨𝐫: ${Needs.join(` `)}

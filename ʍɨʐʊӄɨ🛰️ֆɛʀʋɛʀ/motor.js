@@ -21,7 +21,7 @@ exports.nomentioncontact = async (args, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎) 
     } else {
       ӄʀǟӄɨռʐ.sendMessage(
         𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-        `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(4)}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
+        `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ* _${vers.vers}_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(4)}s_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
 
 *Enter valid contact number.* Approved Syntax:
 1. XXXXXXXXXX 
@@ -38,7 +38,7 @@ _(YY- Country Code, without zeros)_`,
   if (jidNumber.length < 8 || jidNumber.length > 13) {
     ӄʀǟӄɨռʐ.sendMessage(
       𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-      `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(4)}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
+      `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ* _${vers.vers}_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(4)}s_\n📅𝐃𝐚𝐭𝐞: _${Clock}_
 
 *Enter valid contact number.* Approved Syntax:
 1. XXXXXXXXXX 

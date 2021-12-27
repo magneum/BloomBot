@@ -94,7 +94,7 @@ _yeti_  *|*  _zenburn_`,
       await ӄʀǟӄɨռʐ
         .sendMessage(
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-          `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${vers.vers}_\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(
+          `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${vers.vers}_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
             4
           )}s_\n📅𝐃𝐚𝐭𝐞: _${Clock}_\n\nThe replied message should be text.`,
           MessageType.text,
@@ -116,7 +116,7 @@ _yeti_  *|*  _zenburn_`,
         if (text[0] === `-` && text[1] === `t`) {
           if (text[2] == null) {
             let counter = 1;
-            var message = `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(
+            var message = `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
               2
             )}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${
               vers.vers
@@ -136,7 +136,7 @@ _yeti_  *|*  _zenburn_`,
             await ӄʀǟӄɨռʐ
               .sendMessage(
                 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(
+                `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
                   4
                 )}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${
                   vers.vers
@@ -158,7 +158,7 @@ Please use the command  *${ᴋᴇɪ}carbon <text>*  or reply to a text message w
           await ӄʀǟӄɨռʐ
             .sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${vers.vers}_\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(
+              `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${vers.vers}_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
                 4
               )}s_\n📅𝐃𝐚𝐭𝐞: _${Clock}_\n\nPlease enter a valid theme.
 Do note that theme names are  *case sensitive*${ᴋᴇɪ}`,
@@ -183,7 +183,7 @@ Do note that theme names are  *case sensitive*${ᴋᴇɪ}`,
     await ӄʀǟӄɨռʐ
       .sendMessage(
         𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-        `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${vers.vers}_\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(
+        `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${vers.vers}_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
           4
         )}s_\n📅𝐃𝐚𝐭𝐞: _${Clock}_\n\nConverting your text into a code snippet. Please wait...`,
         MessageType.text,
@@ -199,7 +199,7 @@ Do note that theme names are  *case sensitive*${ᴋᴇɪ}`,
       .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, output, MessageType.image, {
         quoted: chat,
         mimetype: Mimetype.png,
-        caption: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${vers.vers}_\n🛰️𝐏𝐢𝐧𝐠: _${Ping.toFixed(
+        caption: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${vers.vers}_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
           4
         )}s_\n📅𝐃𝐚𝐭𝐞: _${Clock}_\n\n
 *<< Here's your carbon image! >>*
