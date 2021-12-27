@@ -25,7 +25,7 @@ module.exports = {
       var MediaUrl = `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`;
       var MainText = `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived},
       
-┌────◆▶
+┌──────────────◆▶
 │🔑𝐏𝐫𝐞𝐟𝐢𝐱: *${ᴋᴇɪ}*
 │👑𝐎𝐰𝐧𝐞𝐫: _🐙KrakinzKon_
 │🤖ᴀᴅᴅ ᴍɪᴢᴜᴋɪ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ: _${ᴋᴇɪ}request_
@@ -33,19 +33,19 @@ module.exports = {
 └───────◆▶
 ⧪𝘾𝙤𝙢𝙞𝙣𝙜 𝙎𝙤𝙤𝙣! _many many more_
 
-┌────◆▶ 𝙈𝙪𝙨𝙞𝙘
+┌──────────────◆▶ 𝙈𝙪𝙨𝙞𝙘
 │📥• ${ᴋᴇɪ}lyrics _find lyrics of songs_
 │📥• ${ᴋᴇɪ}spotify _download spotify audio under 30min_
 │📥• ${ᴋᴇɪ}ytsearch _search anything in youtube_
-│📥 ${ᴋᴇɪ}instagram _download image/video from ig_
-│💡 ---------- *𝘠𝘛-𝘈𝘶𝘥𝘪𝘰*
+│📥• ${ᴋᴇɪ}instagram _download image/video from ig_
 │📥• ${ᴋᴇɪ}play _download youtube-name-audio under 30min_
 │📥• ${ᴋᴇɪ}song _download youtube-name-audio under 30min_
+│📥• ${ᴋᴇɪ}tiktokaudio _download tik-tok audio_
 │📥• ${ᴋᴇɪ}ytaudio _download youtube-link-audio under 30min_
-│💡 ---------- *𝘠𝘛-𝘝𝘪𝘥𝘦𝘰*
 │📥• ${ᴋᴇɪ}watch _download youtube-name-video under 30min_
 │📥• ${ᴋᴇɪ}stream _download youtube-name-video under 30min_
 │📥• ${ᴋᴇɪ}ytvideo _download youtube-link-video under 30min_
+│📥• ${ᴋᴇɪ}tiktokvideo _download tik-tok video_
 └───────◆▶`;
       return Mizuki_Static.MGS(
         ӄʀǟӄɨռʐ,
