@@ -24,16 +24,17 @@ module.exports = {
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
       var MediaUrl = `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`;
       var MainText = `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived},
-      
-┌──────────────◆◇
-│🔑𝐏𝐫𝐞𝐟𝐢𝐱: *${ᴋᴇɪ}*
-│👑𝐎𝐰𝐧𝐞𝐫: _🐙KrakinzKon_
-│🤖ᴀᴅᴅ ᴍɪᴢᴜᴋɪ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ: _${ᴋᴇɪ}request_
-│☣️𝐋𝐢𝐜𝐞𝐧𝐬𝐞𝐝: Apache License Version 2.0
-└───────◆◇
+
+┌──────────────◆➤
+│🔑 𝐏𝐫𝐞𝐟𝐢𝐱: *${ᴋᴇɪ}*
+│👑 𝐎𝐰𝐧𝐞𝐫: _🐙KrakinzKon_
+│🤖 ᴀᴅᴅ ᴍɪᴢᴜᴋɪ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ: _${ᴋᴇɪ}request_
+│☣️ 𝐋𝐢𝐜𝐞𝐧𝐬𝐞𝐝: Apache License Version 2.0
+└───────◆➤
+🤖𝗝𝗼𝗶𝗻: ${_𝔏𝔞𝔟_.HASH}
 ⧪𝘾𝙤𝙢𝙞𝙣𝙜 𝙎𝙤𝙤𝙣! _many many more_
 
-┌──────────────◆◇ 𝙈𝙪𝙨𝙞𝙘
+┌──────────────◆➤ 𝙈𝙪𝙨𝙞𝙘
 │📥• ${ᴋᴇɪ}lyrics _find lyrics of songs_
 │📥• ${ᴋᴇɪ}spotify _download spotify audio under 30min_
 │📥• ${ᴋᴇɪ}ytsearch _search anything in youtube_
@@ -46,14 +47,10 @@ module.exports = {
 │📥• ${ᴋᴇɪ}stream _download youtube-name-video under 30min_
 │📥• ${ᴋᴇɪ}ytvideo _download youtube-link-video under 30min_
 │📥• ${ᴋᴇɪ}tiktokvideo _download tik-tok video_
-└───────◆◇`;
-      return Mizuki_Static.MGS(
-        ӄʀǟӄɨռʐ,
-        chat,
-        𝓜𝖎𝖟𝖚ӄ𝖎,
-        MainText,
-        MediaUrl
-      ).catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
+└───────◆➤`;
+      return Mizuki_Static.MGS(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, MainText, MediaUrl).catch(
+        (ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
+      );
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
     } catch (ℓαвєяяσя) {
       await ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);

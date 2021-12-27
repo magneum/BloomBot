@@ -37,11 +37,11 @@ module.exports = {
             `Who Is This Non-Admin •@${ꜱᴇɴᴅᴇʀeceived} Trying to Use Admin-Only Commands.
 
 *❌ 𝚈𝚘𝚞 𝙰𝚛𝚎 𝙽𝚘𝚝 𝙰𝚕𝚕𝚘𝚠𝚎𝚍!*
-┌────◆◇ 🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧   
+┌────◆➤ 🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧   
 │  
 │🌶️𝐆𝐫𝐨𝐮𝐩𝐬: _Admins & Devs!_
 │🌽𝐏𝐫𝐢𝐯𝐚𝐭𝐞 _Everyone_
-└───────◆◇`,
+└───────◆➤`,
             _𝔏𝔞𝔟_.ɴᴏᴛᴀᴅᴍɪɴ
           );
         } catch (ℓαвєяяσя) {
@@ -71,11 +71,11 @@ module.exports = {
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
             {
               contentText: `
-┌────◆◇
+┌────◆➤
 │⚡ 𝐎𝐫𝐝𝐞𝐫𝐞𝐝𝐁𝐲: @${ꜱᴇɴᴅᴇʀeceived} 
 │⚡ 𝐓𝐢𝐭𝐥𝐞: *${title}*
 │⚡ 𝐓𝐨𝐩𝐢𝐜: ${𝓜𝖎𝖟𝖚ӄ𝖎.commandName.toUpperCase()}
-└───────────◆◇
+└───────────◆➤
 🔗𝐋𝐢𝐧𝐤: ${amazeme}`,
               footerText: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
                 4

@@ -31,11 +31,9 @@ exports.catch = async (ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎
     .sendMessage(
       𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
       {
-        contentText: `_😭𝙏𝙧𝙮 𝘼𝙜𝙖𝙞𝙣 𝙇𝙖𝙩𝙚𝙧!_
+        contentText: `⬡ 𝘞𝘦 𝘙𝘢𝘯 𝘐𝘯𝘵𝘰 𝘚𝘰𝘮𝘦 𝘌𝘳𝘳𝘰𝘳
 
-⬡ 𝘞𝘦 𝘙𝘢𝘯 𝘐𝘯𝘵𝘰 𝘚𝘰𝘮𝘦 𝘌𝘳𝘳𝘰𝘳
-⬡━━━━━━━★
-⚡𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_`,
+◆➤ 𝙏𝙧𝙮 𝐂𝐨𝐦𝐦𝐚𝐧𝐝 _${ᴋᴇɪ}${FinalName}_ 𝙇𝙖𝙩𝙚𝙧!`,
         footerText: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
           4
         )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,

@@ -58,12 +58,12 @@ module.exports = {
         𝓜𝖎𝖟𝖚ӄ𝖎,
         `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived}, 
 
-┌────◆◇🍌𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
+┌────◆➤🍌𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
 │
 │🔎Word: ${result.word}
 │📚Defination: ${result.definition}
 │🫒Example: ${result.example}
-└───────◆◇
+└───────◆➤
 👍: ${result.thumbs_up} |👎: ${result.thumbs_down}`
       );
     } catch (ℓαвєяяσя) {

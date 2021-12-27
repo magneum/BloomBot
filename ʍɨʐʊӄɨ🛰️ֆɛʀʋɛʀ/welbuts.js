@@ -100,11 +100,11 @@ exports.welbuts = async (
           contentText: `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ᴘᴘᴡᴇʟᴄᴏᴍᴇ} 
 ${ᴡᴇʟᴄᴏᴍᴇʀᴛxᴛ}
 
-★━━━━━━━◆◇
+★━━━━━━━◆➤
 │${FlowerWel}𝗕𝗶𝗼: ${GroupMemBio.status}
 │${PeopleWel}𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${GroupMemG}
 │🎪𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${GroupMemData.subject}
-★━━━━━━━━◆◇
+★━━━━━━━━◆➤
 
 ${ꜰᴇᴛᴄʜᴇᴅᴡᴇʟᴄᴏᴍᴇ.message}`,
           footerText: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 *\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
