@@ -78,7 +78,7 @@ module.exports = {
               contentText: `
 ┌────◆◇ 🔞𝘼𝙙𝙢𝙞𝙣-𝙊𝙣𝙡𝙮-𝘼𝙙𝙪𝙡𝙩-𝙉𝙎𝙁𝙒
 │
-│👅𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+│👅𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
 │⚡𝐎𝐫𝐝𝐞𝐫𝐞𝐝𝐁𝐲: @${ꜱᴇɴᴅᴇʀeceived} (ᴀᴅᴍɪɴ)
 └───────◆◇`,
               footerText: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
@@ -109,7 +109,7 @@ module.exports = {
               contentText: `
 ┌────◆◇ 🔞𝘼𝙙𝙪𝙡𝙩 𝙉𝙎𝙁𝙒 18+
 │
-│👅𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+│👅𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
 │⚡𝐎𝐫𝐝𝐞𝐫𝐞𝐝𝐁𝐲: @${ꜱᴇɴᴅᴇʀeceived} 
 └───────◆◇`,
               footerText: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭\n🛰️ᴘɪɴɢ: _${Ping.toFixed(

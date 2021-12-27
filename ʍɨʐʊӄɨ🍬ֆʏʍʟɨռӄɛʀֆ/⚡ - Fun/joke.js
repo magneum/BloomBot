@@ -30,7 +30,7 @@ module.exports = {
           `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived},
 
 
-┌────◆◇🍌𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+┌────◆◇🍌𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
 │
 │🤪𝐃𝐚𝐝𝐉𝐨𝐤𝐞: ${dadJoke}
 │😝𝐂𝐡𝐮𝐧𝐤 𝐍𝐨𝐫𝐫𝐢𝐬 𝐉𝐨𝐤𝐞: ${chunkJoke}
