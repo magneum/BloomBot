@@ -14,7 +14,7 @@ const fs = require(`fs`);
 module.exports = {
   name: `antilink`,
   𝓜𝓮𝓮6ʍօʀɛ: `${ᴋᴇɪ}antilink (on/off)`,
-  async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
+  async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
     try {
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
       var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
@@ -55,7 +55,7 @@ module.exports = {
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
       if (
         !(await LinkList.getLinklistUser(``, 𝓜𝖎𝖟𝖚ӄ𝖎.chatId)) &&
-        arg.length == 0
+        Needs.length == 0
       ) {
         const media = await ӄʀǟӄɨռʐ.prepareMessage(
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
@@ -105,7 +105,7 @@ module.exports = {
         // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
       } else if (
         (await LinkList.getLinklistUser(``, 𝓜𝖎𝖟𝖚ӄ𝖎.chatId)) &&
-        arg.length == 0
+        Needs.length == 0
       ) {
         const media = await ӄʀǟӄɨռʐ.prepareMessage(
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
@@ -153,7 +153,7 @@ module.exports = {
           .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
 
         // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-      } else if (arg[0] === `ON` || arg[0] === `on` || arg[0] === `On`) {
+      } else if (Needs[0] === `ON` || Needs[0] === `on` || Needs[0] === `On`) {
         await LinkList.addLinklistUser(``, 𝓜𝖎𝖟𝖚ӄ𝖎.chatId).then(async () => {
           const media = await ӄʀǟӄɨռʐ.prepareMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
@@ -201,7 +201,7 @@ module.exports = {
             .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
         });
         // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-      } else if (arg[0] === `OFF` || arg[0] === `off` || arg[0] === `Off`) {
+      } else if (Needs[0] === `OFF` || Needs[0] === `off` || Needs[0] === `Off`) {
         await LinkList.removeLinklistUser(``, 𝓜𝖎𝖟𝖚ӄ𝖎.chatId).then(async () => {
           const media = await ӄʀǟӄɨռʐ.prepareMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,

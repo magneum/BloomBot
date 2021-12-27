@@ -13,7 +13,7 @@ module.exports = {
   name: `spam`,
   description: `Spam Messages.${ᴋᴇɪ}spam <count> <text>*`,
   𝓜𝓮𝓮6ʍօʀɛ: `${ᴋᴇɪ}spam <amount> <message>`,
-  async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
+  async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
     try {
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
       var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
@@ -52,7 +52,7 @@ module.exports = {
         ).catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
       }
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-      let count = Number(arg.shift());
+      let count = Number(Needs.shift());
       if (isNaN(count)) {
         var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(𝓜𝖎𝖟𝖚ӄ𝖎.commandName);
         𝓜𝓮𝓮ʍօʀɛ = 𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ === undefined ? `Null` : 𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ;
@@ -85,8 +85,8 @@ module.exports = {
 
         return 0;
       }
-      if (arg.length) {
-        let text = arg.join(` `);
+      if (Needs.length) {
+        let text = Needs.join(` `);
         for (let i = 0; i < count; i++)
           await ӄʀǟӄɨռʐ
             .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, text, MessageType.text)

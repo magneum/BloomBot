@@ -18,7 +18,7 @@ module.exports = {
 *${ᴋᴇɪ}setwelcome*  <off>  
 *${ᴋᴇɪ}setwelcome*  <delete>
 Do note, the setwelcome option is still enabled after you use the delete option.`,
-  async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
+  async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
     try {
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
       var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
@@ -71,7 +71,7 @@ Do note, the setwelcome option is still enabled after you use the delete option.
       }
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
       var Msg = await PostDataBase.getMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, `setwelcome`);
-      if (arg.length == 0) {
+      if (Needs.length == 0) {
         var enabled = await PostDataBase.checkSettings(
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
           `setwelcome`
@@ -119,7 +119,7 @@ Do note, the setwelcome option is still enabled after you use the delete option.
 
         // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
       } else {
-        if (arg[0] === `OFF` || arg[0] === `off` || arg[0] === `Off`) {
+        if (Needs[0] === `OFF` || Needs[0] === `off` || Needs[0] === `Off`) {
           switched = `OFF`;
           await PostDataBase.changeSettings(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, switched);
           ӄʀǟӄɨռʐ
@@ -134,7 +134,7 @@ Do note, the setwelcome option is still enabled after you use the delete option.
           return;
         }
         // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-        if (arg[0] === `ON` || arg[0] === `on` || arg[0] === `On`) {
+        if (Needs[0] === `ON` || Needs[0] === `on` || Needs[0] === `On`) {
           switched = `ON`;
           await PostDataBase.changeSettings(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, switched);
           ӄʀǟӄɨռʐ
@@ -149,7 +149,7 @@ Do note, the setwelcome option is still enabled after you use the delete option.
           return;
         }
         // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-        if (arg[0] === `delete`) {
+        if (Needs[0] === `delete`) {
           var Msg = await PostDataBase.deleteMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
             `setwelcome`

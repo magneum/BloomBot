@@ -19,7 +19,7 @@ module.exports = {
   𝓜𝓮𝓮6ʍօʀɛ: `*${ᴋᴇɪ}lock 15 m*
 
 🍁will change chat permissions to admin-only for 15 minutes.`,
-  async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, arg, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
+  async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
     try {
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
       var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
@@ -70,7 +70,7 @@ module.exports = {
         return;
       }
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-      if (arg.length === 0) {
+      if (Needs.length === 0) {
         var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(𝓜𝖎𝖟𝖚ӄ𝖎.commandName);
         𝓜𝓮𝓮ʍօʀɛ = 𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ === undefined ? `Null` : 𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ;
         const ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
@@ -86,7 +86,7 @@ module.exports = {
           )
           .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
         // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-      } else if (isNaN(arg[0])) {
+      } else if (isNaN(Needs[0])) {
         var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(𝓜𝖎𝖟𝖚ӄ𝖎.commandName);
         𝓜𝓮𝓮ʍօʀɛ = 𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ === undefined ? `Null` : 𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ;
         const ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
@@ -111,17 +111,17 @@ module.exports = {
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
       var duration;
       var type = `minutes`;
-      if (arg[1] === `s`) {
-        duration = arg[0] * 1000;
+      if (Needs[1] === `s`) {
+        duration = Needs[0] * 1000;
         type = `seconds`;
-      } else if (arg[1] === `m`) {
-        duration = arg[0] * 60 * 1000;
+      } else if (Needs[1] === `m`) {
+        duration = Needs[0] * 60 * 1000;
         type = `seconds`;
-      } else if (arg[1] === `h`) {
-        duration = arg[0] * 60 * 60 * 1000;
+      } else if (Needs[1] === `h`) {
+        duration = Needs[0] * 60 * 60 * 1000;
         type = `seconds`;
       } else {
-        duration = arg[0] * 60 * 1000;
+        duration = Needs[0] * 60 * 1000;
       }
       await ӄʀǟӄɨռʐ
         .groupSettingChange(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, GroupSettingChange.messageSend, true)
@@ -130,7 +130,7 @@ module.exports = {
         .sendMessage(
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
           `Chat permissions changed to  *admin only*  for ` +
-            arg[0] +
+            Needs[0] +
             ` ` +
             type +
             `.`,
