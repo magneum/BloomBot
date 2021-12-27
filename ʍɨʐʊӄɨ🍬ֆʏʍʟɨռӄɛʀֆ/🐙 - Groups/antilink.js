@@ -74,7 +74,7 @@ module.exports = {
 ⚙️𝐄𝐧𝐠𝐢𝐧𝐞: *⋊ʀʏᴏ* _ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ_
 
 🌱𝗣𝗿𝗲𝘀𝘀 𝗯𝗲𝗹𝗼𝘄 𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗧𝗼𝗴𝗴𝗹𝗲 𝗔𝗻𝘁𝗶𝗹𝗶𝗻𝗸👇🏽‍`,
-            footerText: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ* \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+            footerText: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍣𝐁𝐨𝐭\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
               4
             )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
             buttons: [
@@ -124,7 +124,7 @@ module.exports = {
 ⚙️𝐄𝐧𝐠𝐢𝐧𝐞: *⋊ʀʏᴏ* _ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ_
 
 🌱𝗣𝗿𝗲𝘀𝘀 𝗯𝗲𝗹𝗼𝘄 𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗧𝗼𝗴𝗴𝗹𝗲 𝗔𝗻𝘁𝗶𝗹𝗶𝗻𝗸👇🏽‍`,
-            footerText: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ* \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+            footerText: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍣𝐁𝐨𝐭\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
               4
             )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
             buttons: [
@@ -172,7 +172,7 @@ module.exports = {
 ⚙️𝐄𝐧𝐠𝐢𝐧𝐞: *⋊ʀʏᴏ* _ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ_
 
 🌱𝗣𝗿𝗲𝘀𝘀 𝗯𝗲𝗹𝗼𝘄 𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗧𝗼𝗴𝗴𝗹𝗲 𝗔𝗻𝘁𝗶𝗹𝗶𝗻𝗸👇🏽‍`,
-              footerText: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ* \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+              footerText: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍣𝐁𝐨𝐭\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
                 4
               )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
               buttons: [
@@ -220,7 +220,7 @@ module.exports = {
 ⚙️𝐄𝐧𝐠𝐢𝐧𝐞: *⋊ʀʏᴏ* _ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ_
 
 🌱𝗣𝗿𝗲𝘀𝘀 𝗯𝗲𝗹𝗼𝘄 𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗧𝗼𝗴𝗴𝗹𝗲 𝗔𝗻𝘁𝗶𝗹𝗶𝗻𝗸👇🏽‍`,
-              footerText: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ* \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+              footerText: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍣𝐁𝐨𝐭\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
                 4
               )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
               buttons: [

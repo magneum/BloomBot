@@ -73,7 +73,7 @@ module.exports = {
 │⚡ 𝐓𝐨𝐩𝐢𝐜: ${𝓜𝖎𝖟𝖚ӄ𝖎.commandName.toUpperCase()}
 └───────────◆▶
 🔗𝐋𝐢𝐧𝐤: ${amazeme}`,
-              footerText: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ* \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+              footerText: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍣𝐁𝐨𝐭 \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
                 4
               )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
               buttons: [

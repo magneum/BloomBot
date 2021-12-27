@@ -98,7 +98,7 @@ module.exports = {
                         mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
                       },
                       mimetype: Mimetype.png || Mimetype.jpeg,
-                      content: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ* \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+                      content: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍣𝐁𝐨𝐭 \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
                         4
                       )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_
 
@@ -136,7 +136,7 @@ _ᴛᴏᴏᴋ ꜰʀᴏᴍ ʏᴏᴜᴛᴜʙᴇ_
 ⏰𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧⤞ ${youfound.timestamp}
 ✒️𝐀𝐮𝐭𝐡𝐨𝐫⤞ ${youfound.author.name}
 🔗𝐋𝐢𝐧𝐤⤞ ${youfound.url}`,
-                    footerText: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ* \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+                    footerText: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍣𝐁𝐨𝐭 \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
                       4
                     )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
                     buttons: [

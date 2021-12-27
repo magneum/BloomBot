@@ -48,7 +48,7 @@ module.exports = {
         return ӄʀǟӄɨռʐ
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${vers.vers}_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+            `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍣𝐁𝐨𝐭  _${vers.vers}_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
               4
             )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_
 
@@ -61,7 +61,7 @@ Entry for ${RmUser} not found in the BanList.`,
       return ӄʀǟӄɨռʐ
         .sendMessage(
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-          `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${vers.vers}_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+          `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍣𝐁𝐨𝐭  _${vers.vers}_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
             4
           )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_
 
@@ -93,7 +93,7 @@ ${RmUser} removed from BanList for all the chats.`,
           return ӄʀǟӄɨռʐ
             .sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${vers.vers}_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+              `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍣𝐁𝐨𝐭  _${vers.vers}_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
                 4
               )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_
 
@@ -106,7 +106,7 @@ Entry for ${RmUser} not found in the BanList.`,
         return ӄʀǟӄɨռʐ
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${vers.vers}_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+            `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍣𝐁𝐨𝐭  _${vers.vers}_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
               4
             )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_
 
@@ -130,7 +130,7 @@ ${RmUser} has been removed from the BanList for this group.`,
           return ӄʀǟӄɨռʐ
             .sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${vers.vers}_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+              `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍣𝐁𝐨𝐭  _${vers.vers}_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
                 4
               )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_
 
@@ -143,7 +143,7 @@ Entry for ${RmUser} not found in the BanList.`,
         return ӄʀǟӄɨռʐ
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${vers.vers}_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+            `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍣𝐁𝐨𝐭  _${vers.vers}_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
               4
             )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_
 
@@ -157,7 +157,7 @@ ${RmUser} has been removed from the BanList for this group.`,
           return ӄʀǟӄɨռʐ
             .sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${vers.vers}_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+              `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍣𝐁𝐨𝐭  _${vers.vers}_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
                 4
               )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_
 
@@ -170,7 +170,7 @@ Entry for ${𝓜𝖎𝖟𝖚ӄ𝖎.groupName} not found in the BanList.`,
         return ӄʀǟӄɨռʐ
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${vers.vers}_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+            `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍣𝐁𝐨𝐭  _${vers.vers}_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
               4
             )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_
 

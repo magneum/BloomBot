@@ -36,7 +36,7 @@ module.exports = {
 ┌──────────────◆▶ 𝙊𝙬𝙣𝙚𝙧
 │🐙• ${ᴋᴇɪ}ban: _ban bot in group/user_
 │🐙• ${ᴋᴇɪ}unban: _unban bot in group/user_
-│🐙• ${ᴋᴇɪ}update: _ᴜᴘᴅᴀᴛᴇ ʏᴏᴜʀ ᴍɪᴢᴜᴋɪ ᴛᴏ ʟᴀᴛᴇꜱᴛ ᴠᴇʀꜱɪᴏɴ._
+│🐙• ${ᴋᴇɪ}reboot: _reboot mizuki server_
 │🐙• ${ᴋᴇɪ}broadcast: _ꜱᴇɴᴅ ʙʀᴏᴀᴅᴄᴀꜱᴛ ᴍᴇꜱꜱᴀɢᴇꜱ ᴛᴏ ᴀʟʟ ɢʀᴏᴜᴘꜱ/ᴅᴍꜱ ʏᴏᴜ ᴀʀᴇ ɪɴ._
 │🐙• ${ᴋᴇɪ}bugreport: _ꜱᴇɴᴅ bug report to devs._
 │🐙• ${ᴋᴇɪ}help 

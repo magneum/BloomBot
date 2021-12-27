@@ -137,7 +137,7 @@ module.exports = {
                 quoted: chat,
                 mimetype: Mimetype.jpeg || Mimetype.png,
                 contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ, Receiver] },
-                caption: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ* \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+                caption: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍣𝐁𝐨𝐭 \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
                   4
                 )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_
 
@@ -164,7 +164,7 @@ module.exports = {
                 quoted: chat,
                 mimetype: Mimetype.jpeg || Mimetype.png,
                 contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
-                caption: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ* \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+                caption: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍣𝐁𝐨𝐭 \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
                   4
                 )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_
 
@@ -242,7 +242,7 @@ module.exports = {
                 quoted: chat,
                 mimetype: "video/gif",
                 contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ, Receiver] },
-                caption: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ* \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+                caption: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍣𝐁𝐨𝐭 \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
                   4
                 )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_
 
@@ -270,7 +270,7 @@ module.exports = {
                 quoted: chat,
                 mimetype: Mimetype.jpeg || Mimetype.png,
                 contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
-                caption: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ* \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+                caption: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍣𝐁𝐨𝐭 \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
                   4
                 )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_
 

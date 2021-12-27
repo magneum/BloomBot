@@ -28,7 +28,7 @@ module.exports = {
         {
           quoted: chat,
           mimetype: Mimetype.png || Mimetype.jpeg,
-          caption: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ* \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+          caption: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍣𝐁𝐨𝐭 \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
             4
           )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
         }

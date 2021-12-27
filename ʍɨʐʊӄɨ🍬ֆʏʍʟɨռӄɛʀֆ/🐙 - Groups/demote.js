@@ -28,7 +28,7 @@ For example-
       ӄʀǟӄɨռʐ
         .sendMessage(
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-          `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${vers.vers}_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+          `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍣𝐁𝐨𝐭  _${vers.vers}_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
             4
           )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_
 
@@ -75,7 +75,7 @@ This command is only applicable in a group chat.`,
       ӄʀǟӄɨռʐ
         .sendMessage(
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-          `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${vers.vers}_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+          `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍣𝐁𝐨𝐭  _${vers.vers}_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
             4
           )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_
 
@@ -120,7 +120,7 @@ Reply/tag/enter contact number of the person to be demoted.`,
       ӄʀǟӄɨռʐ
         .sendMessage(
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-          `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${vers.vers}_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+          `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍣𝐁𝐨𝐭  _${vers.vers}_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
             4
           )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_
 
@@ -146,7 +146,7 @@ ${contact} is the owner of the group`,
         await ӄʀǟӄɨռʐ
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${vers.vers}_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+            `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍣𝐁𝐨𝐭  _${vers.vers}_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
               4
             )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_
 
@@ -167,7 +167,7 @@ ${contact} is demoted from admin`,
         await ӄʀǟӄɨռʐ
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${vers.vers}_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+            `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍣𝐁𝐨𝐭  _${vers.vers}_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
               4
             )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_
 
@@ -192,7 +192,7 @@ ${contact} was not an admin`,
         await ӄʀǟӄɨռʐ
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${vers.vers}_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+            `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍣𝐁𝐨𝐭  _${vers.vers}_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
               4
             )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_
 

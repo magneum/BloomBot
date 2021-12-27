@@ -54,7 +54,7 @@ module.exports = {
       ӄʀǟӄɨռʐ
         .sendMessage(
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-          `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${vers.vers}_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+          `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍣𝐁𝐨𝐭  _${vers.vers}_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
             4
           )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_\n\ncommand only applicable in a group chat.`,
           MessageType.text,
@@ -69,7 +69,7 @@ module.exports = {
       ӄʀǟӄɨռʐ
         .sendMessage(
           chat.message.extendedTextMessage.contextInfo.participant,
-          `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${vers.vers}_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+          `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍣𝐁𝐨𝐭  _${vers.vers}_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
             4
           )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_\n\nhttps://chat.whatsapp.com/` + code,
           MessageType.text,
@@ -91,7 +91,7 @@ module.exports = {
     await ӄʀǟӄɨռʐ
       .sendMessage(
         𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-        `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${vers.vers}_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+        `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍣𝐁𝐨𝐭  _${vers.vers}_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
           4
         )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_\n\nhttps://chat.whatsapp.com/` + code,
         MessageType.text,

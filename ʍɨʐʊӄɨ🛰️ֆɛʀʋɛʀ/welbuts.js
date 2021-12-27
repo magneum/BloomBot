@@ -107,7 +107,7 @@ ${ᴡᴇʟᴄᴏᴍᴇʀᴛxᴛ}
 ★━━━━━━━━◆▶
 
 ${ꜰᴇᴛᴄʜᴇᴅᴡᴇʟᴄᴏᴍᴇ.message}`,
-          footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ _${vers.vers}_*\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+          footerText: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍣𝐁𝐨𝐭 _${vers.vers}_*\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
             4
           )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
           buttons: [

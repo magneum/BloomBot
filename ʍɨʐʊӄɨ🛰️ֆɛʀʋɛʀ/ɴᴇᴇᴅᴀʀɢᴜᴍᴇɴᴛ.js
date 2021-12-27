@@ -83,9 +83,9 @@ exports.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ = async (
             quoted: chat,
             mimetype: Mimetype.png,
             contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
-            caption: `*(c)爪𝖎𝖟𝖚ӄ𝖎🍁乃օȶ*  _${
-              vers.vers
-            }_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(4)}s_\n📅ᴅᴀᴛᴇ: _${Clock}_
+            caption: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍣𝐁𝐨𝐭  _${vers.vers}_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+              4
+            )}s_\n📅ᴅᴀᴛᴇ: _${Clock}_
 
 🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived}, 
 
