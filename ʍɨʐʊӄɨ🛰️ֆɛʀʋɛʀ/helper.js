@@ -4,7 +4,7 @@ var ƈʏɮօʀɢƈʟǟ = require(`./𝓜𝖎𝖟𝖚ӄ𝖎ƈʟǟ`);
 const Kolor = require(`chalk`);
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
 exports.resolve = function (messageInstance, ӄʀǟӄɨռʐ, groupMetadata) {
-  var Dev = "918436686758,989035024059";
+  var DEVstring =_𝔏𝔞𝔟_.DEV;
   var 𝓜𝖎𝖟𝖚ӄ𝖎 = new ƈʏɮօʀɢƈʟǟ();
   var prefix = _𝔏𝔞𝔟_.FOXTROT + `\\w+`;
   var prefixRegex = new RegExp(prefix, `g`);
@@ -118,7 +118,7 @@ exports.resolve = function (messageInstance, ӄʀǟӄɨռʐ, groupMetadata) {
     ? getGroupAdmins(𝓜𝖎𝖟𝖚ӄ𝖎.groupMembers)
     : ``;
   𝓜𝖎𝖟𝖚ӄ𝖎.groupId = 𝓜𝖎𝖟𝖚ӄ𝖎.isGroup ? groupMetadata.id : ``;
-  𝓜𝖎𝖟𝖚ӄ𝖎.isSenderDev = Dev.includes(
+  𝓜𝖎𝖟𝖚ӄ𝖎.isSenderDev = DEVstring.includes(
     𝓜𝖎𝖟𝖚ӄ𝖎.sender.substring(0, 𝓜𝖎𝖟𝖚ӄ𝖎.sender.indexOf(`@`))
   );
   𝓜𝖎𝖟𝖚ӄ𝖎.isBotGroupAdmin = 𝓜𝖎𝖟𝖚ӄ𝖎.isGroup

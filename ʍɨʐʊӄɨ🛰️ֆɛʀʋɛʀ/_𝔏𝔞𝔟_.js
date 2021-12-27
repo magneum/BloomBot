@@ -31,6 +31,7 @@ const env = {
   ERROR: `https://i.postimg.cc/sDPF83Mx/Mizuki-Error.png`,
   INVL: `https://i.postimg.cc/q7k5WK9Z/Mizuki-Invalid.png`,
   HASH: ``,
+  DEV: `918436686758,989035024059`,
   DATABASE_URL: (process.env.DATABASE_URL =
     process.env.DATABASE_URL === undefined
       ? `./ʍɨʐʊӄɨ☣️ƈօʀɛ.db`
