@@ -61,22 +61,42 @@ module.exports = {
         for (let i of result.medias) {
           if (i.url.includes("mp4")) {
             let link = await getBuffer(i.url);
-            try {
-              return Mizuki_Buttons.MVB(
-                ӄʀǟӄɨռʐ,
-                chat,
-                𝓜𝖎𝖟𝖚ӄ𝖎,
-                `
+            const media = await ӄʀǟӄɨռʐ.prepareMessage(
+              𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+              { url: link },
+              MessageType.video,
+              { mimetype: `video/mp4` }
+            );
+            return await ӄʀǟӄɨռʐ
+              .sendMessage(
+                𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                {
+                  contentText: `
 ┌────◆➤🍌𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
 │
 │🍠𝐒𝐨𝐮𝐫𝐜𝐞: _•Instagram_
 │🧀𝐅𝐢𝐥𝐞 𝐓𝐲𝐩𝐞: ${i.type}
 └───────◆➤`,
-                link
-              );
-            } catch (ℓαвєяяσя) {
-              ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
-            }
+                  footerText: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+                    4
+                  )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
+                  buttons: [
+                    {
+                      buttonId: `${ᴋᴇɪ}help`,
+                      buttonText: { displayText: `${ᴋᴇɪ}help` },
+                      type: 1,
+                    },
+                  ],
+                  headerType: 5,
+                  videoMessage: media.message.videoMessage,
+                },
+                MessageType.buttonsMessage,
+                {
+                  quoted: chat,
+                  contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
+                }
+              )
+              .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
           } else {
             let link = await getBuffer(i.url);
             try {
