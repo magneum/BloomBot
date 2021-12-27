@@ -61,7 +61,6 @@ module.exports = {
         for (let i of result.medias) {
           if (i.url.includes("mp4")) {
             let link = await getBuffer(i.url).then(async function (res) {
-              console.log(link);
               console.log(res);
               const media = await ӄʀǟӄɨռʐ.prepareMessage(
                 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
@@ -101,6 +100,7 @@ module.exports = {
                   ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
                 );
             });
+            console.log(link);
           } else {
             let link = await getBuffer(i.url);
             try {
