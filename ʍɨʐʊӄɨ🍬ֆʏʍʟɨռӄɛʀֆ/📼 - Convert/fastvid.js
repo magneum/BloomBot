@@ -30,18 +30,18 @@ module.exports = {
         FILEOBJECT,
         `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FILEID}`
       );
-      var media = `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FILEID}.mp4`;
-      var ext = `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FILEID}_${Math.floor(
+      var Convert_From = `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FILEID}.mp4`;
+      var Convert_To = `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FILEID}_${Math.floor(
         Math.random() * 10000
       )}.mp4`;
       exec(
-        `ffmpeg -i ${media} -filter_complex "[0:v]setpts=0.5*PTS[v];[0:a]atempo=2[a]" -map "[v]" -map "[a]" ${ext}`,
+        `ffmpeg -i ${Convert_From} -filter_complex "[0:v]setpts=0.5*PTS[v];[0:a]atempo=2[a]" -map "[v]" -map "[a]" ${Convert_To}`,
         async (err) => {
-          await fs.unlinkSync(media);
+          await fs.unlinkSync(Convert_From);
           if (err) {
             return console.log(`Err: ${err}`);
           } else {
-            await Mizuki_Buttons.MAB(
+            await Mizuki_Buttons.MVB(
               ӄʀǟӄɨռʐ,
               chat,
               𝓜𝖎𝖟𝖚ӄ𝖎,

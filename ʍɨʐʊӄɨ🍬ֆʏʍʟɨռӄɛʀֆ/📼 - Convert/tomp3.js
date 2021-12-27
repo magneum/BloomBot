@@ -1,19 +1,76 @@
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
 const Mizuki_Buttons = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Mizuki_Buttons`);
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
-// if (!isQuotedVideo) return fakegroup("Reply the video!");
-// fakegroup(mess.wait);
-// encmedia = JSON.parse(JSON.stringify(mek).replace("quotedM", "m")).message
-//   .extendedTextMessage.contextInfo;
-// media = await xeon.downloadAndSaveMediaMessage(encmedia);
-// ran = getRandom(".mp4");
-// exec(`ffmpeg -i ${media} ${ran}`, (err) => {
-//   fs.unlinkSync(media);
-//   if (err) return fakegroup(`Err: ${err}`);
-//   buffer453 = fs.readFileSync(ran);
-//   xeon.sendMessage(from, buffer453, audio, {
-//     mimetype: "audio/mp4",
-//     quoted: mek,
-//   });
-//   fs.unlinkSync(ran);
-// });
+const ꜰᴜᴄᴋ = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/oShit`);
+const _𝔏𝔞𝔟_ = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/_𝔏𝔞𝔟_`);
+var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
+var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
+const vers = require(`../../package.json`);
+const { exec } = require("child_process");
+const fs = require(`fs`);
+// ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
+module.exports = {
+  name: `slowvid`,
+  𝓜𝓮𝓮6ʍօʀɛ: `*${ᴋᴇɪ}slowvid* (reply video)`,
+  async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
+    // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
+    var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
+    var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
+    const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
+    const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
+    console.log("🍁爪𝖎𝖟𝖚ӄ𝖎™ ᴠᴇʀɪꜰɪᴇᴅ ꜰɪʟᴇ > " + FinalName.toUpperCase() + "✔️");
+    // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
+    if (𝓜𝖎𝖟𝖚ӄ𝖎.isReplyVideo) {
+      var FILEOBJECT = {
+        message: chat.message.extendedTextMessage.contextInfo.quotedMessage,
+      };
+      var FILEID = chat.message.extendedTextMessage.contextInfo.stanzaId;
+      console.log(FILEOBJECT);
+      await ӄʀǟӄɨռʐ.downloadAndSaveMediaMessage(
+        FILEOBJECT,
+        `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FILEID}`
+      );
+      var Convert_From = `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FILEID}.mp4`;
+      var Convert_To = `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FILEID}_${Math.floor(
+        Math.random() * 10000
+      )}.mp3`;
+      exec(`ffmpeg -i ${Convert_From} ${Convert_To}`, async (err) => {
+        await fs.unlinkSync(Convert_From);
+        if (err) {
+          return console.log(`Err: ${err}`);
+        } else {
+          await Mizuki_Buttons.MAB(
+            ӄʀǟӄɨռʐ,
+            chat,
+            𝓜𝖎𝖟𝖚ӄ𝖎,
+            `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived}, 𝐅𝐅𝐌𝐏𝐄𝐆 𝐂𝐨𝐧𝐯𝐞𝐫𝐭𝐞𝐫!
+
+┌────◆▶🍌𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+│
+│📤𝗙𝗿𝗼𝗺: _Normal Speed Mp4_
+│📥𝗧𝗼: _Normal Speed Mp3_
+└───────◆▶`,
+            fs.readFileSync(ran)
+          );
+          return await fs.unlinkSync(ran);
+        }
+      });
+    } else {
+      var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(𝓜𝖎𝖟𝖚ӄ𝖎.commandName);
+      𝓜𝓮𝓮ʍօʀɛ = 𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ === undefined ? `Null` : 𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ;
+      const ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
+      return ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ
+        .ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
+          ӄʀǟӄɨռʐ,
+          chat,
+          𝓜𝖎𝖟𝖚ӄ𝖎,
+          ꜱᴇɴᴅᴇʀɪᴅ,
+          ꜱᴇɴᴅᴇʀeceived,
+          𝓜𝖎𝖟𝖚ӄ𝖎.commandName,
+          𝓜𝓮𝓮ʍօʀɛ
+        )
+        .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
+    }
+  },
+};
+// ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
