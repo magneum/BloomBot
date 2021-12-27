@@ -60,32 +60,40 @@ module.exports = {
         for (let i of result.medias) {
           if (i.url.includes("mp4")) {
             let link = await getBuffer(i.url);
-            return Mizuki_Buttons.MAB(
-              ӄʀǟӄɨռʐ,
-              chat,
-              𝓜𝖎𝖟𝖚ӄ𝖎,
-              `
+            try {
+              return Mizuki_Buttons.MAB(
+                ӄʀǟӄɨռʐ,
+                chat,
+                𝓜𝖎𝖟𝖚ӄ𝖎,
+                `
 ┌────◆◇🍌𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 │
 │🍠𝐒𝐨𝐮𝐫𝐜𝐞: _•Instagram_
 │🧀𝐅𝐢𝐥𝐞 𝐓𝐲𝐩𝐞: ${i.type}
 └───────◆◇`,
-              link
-            );
+                link
+              );
+            } catch (ℓαвєяяσя) {
+              ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
+            }
           } else {
             let link = await getBuffer(i.url);
-            return Mizuki_Buttons.MIB(
-              ӄʀǟӄɨռʐ,
-              chat,
-              𝓜𝖎𝖟𝖚ӄ𝖎,
-              `
+            try {
+              return Mizuki_Buttons.MIB(
+                ӄʀǟӄɨռʐ,
+                chat,
+                𝓜𝖎𝖟𝖚ӄ𝖎,
+                `
 ┌────◆◇🍌𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 │
 │🍠𝐒𝐨𝐮𝐫𝐜𝐞: _•Instagram_
 │🧀𝐅𝐢𝐥𝐞 𝐓𝐲𝐩𝐞: ${i.type}
 └───────◆◇`,
-              link
-            );
+                link
+              );
+            } catch (ℓαвєяяσя) {
+              ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
+            }
           }
         }
       });

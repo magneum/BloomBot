@@ -558,16 +558,20 @@ ${update.desc}`,
           // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
           const MediaUrl = _𝔏𝔞𝔟_.INVL;
           if (!command) {
-            return Mizuki_Buttons.MIB(
-              ӄʀǟӄɨռʐ,
-              chat,
-              𝓜𝖎𝖟𝖚ӄ𝖎,
-              `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived}, ❌ 𝚆𝚛𝚘𝚗𝚐 𝙲𝚘𝚖𝚖𝚊𝚗𝚍
+            try {
+              return Mizuki_Buttons.MIB(
+                ӄʀǟӄɨռʐ,
+                chat,
+                𝓜𝖎𝖟𝖚ӄ𝖎,
+                `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived}, ❌ 𝚆𝚛𝚘𝚗𝚐 𝙲𝚘𝚖𝚖𝚊𝚗𝚍
 
 *Yo Noobie🤪💩* 
 Type _*${ᴋᴇɪ}help*_ and Read Everything Properly`,
-              MediaUrl
-            ).catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
+                MediaUrl
+              );
+            } catch (ℓαвєяяσя) {
+              ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
+            }
           }
           return command.handle(
             ӄʀǟӄɨռʐ,

@@ -34,11 +34,12 @@ module.exports = {
           !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderGroupAdmin &&
           !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderDev
         ) {
-          return Mizuki_Buttons.MIB(
-            ӄʀǟӄɨռʐ,
-            chat,
-            𝓜𝖎𝖟𝖚ӄ𝖎,
-            `Who Is This Non-Admin •@${ꜱᴇɴᴅᴇʀeceived} Trying to Use Admin-Only Commands.
+          try {
+            return Mizuki_Buttons.MIB(
+              ӄʀǟӄɨռʐ,
+              chat,
+              𝓜𝖎𝖟𝖚ӄ𝖎,
+              `Who Is This Non-Admin •@${ꜱᴇɴᴅᴇʀeceived} Trying to Use Admin-Only Commands.
 
 *❌ 𝚈𝚘𝚞 𝙰𝚛𝚎 𝙽𝚘𝚝 𝙰𝚕𝚕𝚘𝚠𝚎𝚍!*
 ┌────◆◇ 🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧   
@@ -46,8 +47,11 @@ module.exports = {
 │🌶️𝐆𝐫𝐨𝐮𝐩𝐬: _Admins & Devs!_
 │🌽𝐏𝐫𝐢𝐯𝐚𝐭𝐞 _Everyone_
 └───────◆◇`,
-            _𝔏𝔞𝔟_.ɴᴏᴛᴀᴅᴍɪɴ
-          ).catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
+              _𝔏𝔞𝔟_.ɴᴏᴛᴀᴅᴍɪɴ
+            );
+          } catch (ℓαвєяяσя) {
+            ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
+          }
           // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
         } else {
           const downloader = await new Downloader({

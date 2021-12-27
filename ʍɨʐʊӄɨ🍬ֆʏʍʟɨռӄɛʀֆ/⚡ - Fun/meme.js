@@ -17,15 +17,19 @@ module.exports = {
     console.log("🍁爪𝖎𝖟𝖚ӄ𝖎™ ᴠᴇʀɪꜰɪᴇᴅ ꜰɪʟᴇ > " + FinalName.toUpperCase() + "✔️");
     // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
     var N = Math.floor(Math.random() * (1000 - 1) + 1);
-    return Mizuki_Buttons.MIB(
-      ӄʀǟӄɨռʐ,
-      chat,
-      𝓜𝖎𝖟𝖚ӄ𝖎,
-      `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived},     
+    try {
+      return Mizuki_Buttons.MIB(
+        ӄʀǟӄɨռʐ,
+        chat,
+        𝓜𝖎𝖟𝖚ӄ𝖎,
+        `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived},     
 
 Here Is Your Mizuki Meme‍`,
-      `https://ctk-api.herokuapp.com/meme/${N}`
-    ).catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
+        `https://ctk-api.herokuapp.com/meme/${N}`
+      );
+    } catch (ℓαвєяяσя) {
+      ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
+    }
   },
 };
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡

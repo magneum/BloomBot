@@ -50,11 +50,13 @@ module.exports = {
     result.definition = result.definition.replace(/\]/g, `_`);
     result.example = result.example.replace(/\[/g, `_`);
     result.example = result.example.replace(/\]/g, `_`);
-    return Mizuki_Buttons.MTB(
-      ӄʀǟӄɨռʐ,
-      chat,
-      𝓜𝖎𝖟𝖚ӄ𝖎,
-      `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived}, 
+
+    try {
+      return Mizuki_Buttons.MTB(
+        ӄʀǟӄɨռʐ,
+        chat,
+        𝓜𝖎𝖟𝖚ӄ𝖎,
+        `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived}, 
 
 ┌────◆◇🍌𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 │
@@ -63,7 +65,10 @@ module.exports = {
 │🫒Example: ${result.example}
 └───────◆◇
 👍: ${result.thumbs_up} |👎: ${result.thumbs_down}`
-    ).catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
+      );
+    } catch (ℓαвєяяσя) {
+      ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
+    }
   },
 };
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
