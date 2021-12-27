@@ -62,7 +62,7 @@ module.exports = {
           if (i.url.includes("mp4")) {
             let link = await getBuffer(i.url);
             try {
-              return Mizuki_Buttons.MAB(
+              return Mizuki_Buttons.MVB(
                 ӄʀǟӄɨռʐ,
                 chat,
                 𝓜𝖎𝖟𝖚ӄ𝖎,
