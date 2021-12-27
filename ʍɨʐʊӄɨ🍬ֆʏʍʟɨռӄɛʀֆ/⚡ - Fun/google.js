@@ -36,50 +36,38 @@ module.exports = {
       );
     }
     // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-    await Google({ query: Needs.join(` `) }).then(async (results) => {
-      let msg = results.map(({ title, link, snippet }) => {
-        return `🍻𝐓𝐢𝐭𝐥𝐞⤞ *${title}*
+    try {
+      await Google({ query: Needs.join(` `) }).then(async (results) => {
+        let msg = results.map(({ title, link, snippet }) => {
+          return `
+┌────◆◇
+🍻𝐓𝐢𝐭𝐥𝐞⤞ *${title}*
 🔗𝐋𝐢𝐧𝐤⤞ ${link}
-📜𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧⤞ ${snippet}`;
-      }).join`\n\n`;
-      const media = await ӄʀǟӄɨռʐ.prepareMessage(
-        𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-        { url: `./ʍɨʐʊӄɨ☣️ƈօʀɛ/Mizuki_Google.png` },
-        MessageType.image,
-        {
-          mimetype: Mimetype.png,
-        }
-      );
-      await ӄʀǟӄɨռʐ
-        .sendMessage(
-          𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-          {
-            contentText: `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived}, 
+📜𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧⤞ ${snippet}
+└───────◆◇`;
+        }).join`\n\n`;
+
+        return Mizuki_Buttons.MIB(
+          ӄʀǟӄɨռʐ,
+          chat,
+          𝓜𝖎𝖟𝖚ӄ𝖎,
+          `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived}, 
 
 ☣️𝐆𝐨𝐨𝐠𝐥𝐞𝐝 𝐅𝐨𝐫: _${Needs.join(` `)}_
 ★━━━━━━━━━━━━━━━━━━━━★
 ${msg}`,
-            footerText: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
-              4
-            )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
-            buttons: [
-              {
-                buttonId: `${ᴋᴇɪ}bugreport`,
-                buttonText: { displayText: `${ᴋᴇɪ}bugreport` },
-                type: 1,
-              },
-            ],
-            headerType: 4,
-            imageMessage: media.message.imageMessage,
-          },
-          MessageType.buttonsMessage,
-          {
-            quoted: chat,
-            contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
-          }
-        )
-        .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
-    });
+          `./ʍɨʐʊӄɨ☣️ƈօʀɛ/Mizuki_Google.png`
+        ).catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
+      });
+    } catch {
+      return Mizuki_Buttons.MTB(
+        ӄʀǟӄɨռʐ,
+        chat,
+        𝓜𝖎𝖟𝖚ӄ𝖎,
+        `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived}, 
+_Nothing Found For *${Needs.join(` `)}*_`
+      );
+    }
   },
 };
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
