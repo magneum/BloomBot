@@ -50,23 +50,22 @@ module.exports = {
         .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
     }
     // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
+    const sender = chat.key.fromMe
+      ? ӄʀǟӄɨռʐ.user.jid
+      : isGroup
+      ? chat.participant
+      : chat.key.remoteJid;
     𝓜𝓮𝓮s = await ӄʀǟӄɨռʐ.chats.all();
-    for (let allownull of 𝓜𝓮𝓮s) {
-      return ӄʀǟӄɨռʐ
-        .sendMessage(
-          allownull.jid,
-          `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`,
-          MessageType.video,
-          {
-            contentText: `📜𝗕𝗿𝗼𝗮𝗱𝗰𝗮𝘀𝘁: \n\n${Needs.join(` `)}`,
-            quoted: chat,
-            contextInfo: {
-              forwardingScore: 999,
-              isForwarded: true,
-            },
-            sendEphemeral: true,
-          }
-        )
+    for (let _ of 𝓜𝓮𝓮s) {
+      return await ӄʀǟӄɨռʐ
+        .sendMessage(_.jid, `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`, MessageType.video, {
+          contextInfo: {
+            mentionedJid: [sender],
+            forwardingScore: 999,
+            isForwarded: true,
+          },
+          sendEphemeral: true,
+        })
         .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
     }
     // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
