@@ -60,18 +60,32 @@ module.exports = {
         for (let i of result.medias) {
           if (i.url.includes("mp4")) {
             let link = await getBuffer(i.url);
-            await ӄʀǟӄɨռʐ.sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, link, MessageType.video, {
-              quoted: chat,
-              mimetype: Mimetype.mp4Audio,
-              caption: `Type: ${i.type}`,
-            });
+            return Mizuki_Buttons.MAB(
+              ӄʀǟӄɨռʐ,
+              chat,
+              𝓜𝖎𝖟𝖚ӄ𝖎,
+              `
+┌────◆▶🍌𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+│
+│🍠𝐒𝐨𝐮𝐫𝐜𝐞: _•Instagram_
+│🧀𝐅𝐢𝐥𝐞 𝐓𝐲𝐩𝐞: ${i.type}
+└───────◆▶`,
+              link
+            );
           } else {
             let link = await getBuffer(i.url);
-            await ӄʀǟӄɨռʐ.sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, link, MessageType.image, {
-              quoted: chat,
-              mimetype: Mimetype.png || Mimetype.jpeg,
-              caption: `Type: ${i.type}`,
-            });
+            return Mizuki_Buttons.MIB(
+              ӄʀǟӄɨռʐ,
+              chat,
+              𝓜𝖎𝖟𝖚ӄ𝖎,
+              `
+┌────◆▶🍌𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+│
+│🍠𝐒𝐨𝐮𝐫𝐜𝐞: _•Instagram_
+│🧀𝐅𝐢𝐥𝐞 𝐓𝐲𝐩𝐞: ${i.type}
+└───────◆▶`,
+              link
+            );
           }
         }
       });

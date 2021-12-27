@@ -109,7 +109,7 @@ const Mizuki_Video_But = async (ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, Ma
     𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
     { url: MediaUrl },
     MessageType.video,
-    { mimetype: Mimetype.mp4 }
+    { mimetype: `video/mp4` }
   );
   return await ӄʀǟӄɨռʐ
     .sendMessage(
@@ -204,7 +204,8 @@ const Mizuki_VideoAudio_But = async (
   const media = ӄʀǟӄɨռʐ.prepareMessage(
     𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
     { url: MediaUrl },
-    MessageType.video
+    MessageType.mp4Audio,
+    { mimetype: `audio/mp4` }
   );
   const buttonMessages = {
     videoMessage: media.message.videoMessage,
