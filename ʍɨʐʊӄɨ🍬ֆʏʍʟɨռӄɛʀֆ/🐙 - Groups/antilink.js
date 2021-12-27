@@ -65,10 +65,10 @@ module.exports = {
     ) {
       const media = await ӄʀǟӄɨռʐ.prepareMessage(
         𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-        fs.readFileSync(`./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`),
-        MessageType.video,
+        fs.readFileSync(`./ʍɨʐʊӄɨ☣️ƈօʀɛ/Mizuki_Antilink.png`),
+        MessageType.image,
         {
-          mimetype: "video/gif",
+          mimetype: Mimetype.png,
         }
       );
       return await ӄʀǟӄɨռʐ
@@ -77,10 +77,13 @@ module.exports = {
           {
             contentText: `𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚👋🏻 •🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived}, (admin)
 
-📜𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${𝓜𝖎𝖟𝖚ӄ𝖎.groupName}
-🔗𝐀𝐧𝐭𝐢𝐥𝐢𝐧𝐤 𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _⚠️not-set_
-⚙️𝐄𝐧𝐠𝐢𝐧𝐞: *⋊ʀʏᴏ* _ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ_
 
+┌────◆◇🍌𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
+│
+│📜𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${𝓜𝖎𝖟𝖚ӄ𝖎.groupName}
+│🔗𝐀𝐧𝐭𝐢𝐥𝐢𝐧𝐤 𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _⚠️Not-set_
+│⚙️𝐄𝐧𝐠𝐢𝐧𝐞: *⋊ʀʏᴏ* _ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ_
+└───────◆◇
 🌱𝗣𝗿𝗲𝘀𝘀 𝗯𝗲𝗹𝗼𝘄 𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗧𝗼𝗴𝗴𝗹𝗲 𝗔𝗻𝘁𝗶𝗹𝗶𝗻𝗸👇🏽‍`,
             footerText: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
               4
@@ -97,8 +100,8 @@ module.exports = {
                 type: 1,
               },
             ],
-            headerType: 5,
-            videoMessage: media.message.videoMessage,
+            headerType: 4,
+            imageMessage: media.message.imageMessage,
           },
           MessageType.buttonsMessage,
           {
@@ -115,10 +118,10 @@ module.exports = {
     ) {
       const media = await ӄʀǟӄɨռʐ.prepareMessage(
         𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-        fs.readFileSync(`./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`),
-        MessageType.video,
+        fs.readFileSync(`./ʍɨʐʊӄɨ☣️ƈօʀɛ/Mizuki_Antilink.png`),
+        MessageType.image,
         {
-          mimetype: "video/gif",
+          mimetype: Mimetype.png,
         }
       );
       return await ӄʀǟӄɨռʐ
@@ -127,10 +130,12 @@ module.exports = {
           {
             contentText: `𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚👋🏻 •🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived}, (admin)
 
-📜𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${𝓜𝖎𝖟𝖚ӄ𝖎.groupName}
-🔗𝐀𝐧𝐭𝐢𝐥𝐢𝐧𝐤 𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _✅Pre-Turned-On_
-⚙️𝐄𝐧𝐠𝐢𝐧𝐞: *⋊ʀʏᴏ* _ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ_
-
+┌────◆◇🍌𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
+│
+│📜𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${𝓜𝖎𝖟𝖚ӄ𝖎.groupName}
+│🔗𝐀𝐧𝐭𝐢𝐥𝐢𝐧𝐤 𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _✅Pre-Turned-On_
+│⚙️𝐄𝐧𝐠𝐢𝐧𝐞: *⋊ʀʏᴏ* _ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ_
+└───────◆◇
 🌱𝗣𝗿𝗲𝘀𝘀 𝗯𝗲𝗹𝗼𝘄 𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗧𝗼𝗴𝗴𝗹𝗲 𝗔𝗻𝘁𝗶𝗹𝗶𝗻𝗸👇🏽‍`,
             footerText: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
               4
@@ -147,8 +152,8 @@ module.exports = {
                 type: 1,
               },
             ],
-            headerType: 5,
-            videoMessage: media.message.videoMessage,
+            headerType: 4,
+            imageMessage: media.message.imageMessage,
           },
           MessageType.buttonsMessage,
           {
@@ -163,10 +168,10 @@ module.exports = {
       await LinkList.addLinklistUser(``, 𝓜𝖎𝖟𝖚ӄ𝖎.chatId).then(async () => {
         const media = await ӄʀǟӄɨռʐ.prepareMessage(
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-          fs.readFileSync(`./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`),
-          MessageType.video,
+          fs.readFileSync(`./ʍɨʐʊӄɨ☣️ƈօʀɛ/Mizuki_Antilink.png`),
+          MessageType.image,
           {
-            mimetype: "video/gif",
+            mimetype: Mimetype.png,
           }
         );
         return await ӄʀǟӄɨռʐ
@@ -175,10 +180,12 @@ module.exports = {
             {
               contentText: `𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚👋🏻 •🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived}, (admin)
 
-📜𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${𝓜𝖎𝖟𝖚ӄ𝖎.groupName}
-🔗𝐀𝐧𝐭𝐢𝐥𝐢𝐧𝐤 𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _✅Enabled_
-⚙️𝐄𝐧𝐠𝐢𝐧𝐞: *⋊ʀʏᴏ* _ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ_
-
+┌────◆◇🍌𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
+│
+│📜𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${𝓜𝖎𝖟𝖚ӄ𝖎.groupName}
+│🔗𝐀𝐧𝐭𝐢𝐥𝐢𝐧𝐤 𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _✅Enabled_
+│⚙️𝐄𝐧𝐠𝐢𝐧𝐞: *⋊ʀʏᴏ* _ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ_
+└───────◆◇
 🌱𝗣𝗿𝗲𝘀𝘀 𝗯𝗲𝗹𝗼𝘄 𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗧𝗼𝗴𝗴𝗹𝗲 𝗔𝗻𝘁𝗶𝗹𝗶𝗻𝗸👇🏽‍`,
               footerText: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
                 4
@@ -195,8 +202,8 @@ module.exports = {
                   type: 1,
                 },
               ],
-              headerType: 5,
-              videoMessage: media.message.videoMessage,
+              headerType: 4,
+              imageMessage: media.message.imageMessage,
             },
             MessageType.buttonsMessage,
             {
@@ -211,10 +218,10 @@ module.exports = {
       await LinkList.removeLinklistUser(``, 𝓜𝖎𝖟𝖚ӄ𝖎.chatId).then(async () => {
         const media = await ӄʀǟӄɨռʐ.prepareMessage(
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-          fs.readFileSync(`./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`),
-          MessageType.video,
+          fs.readFileSync(`./ʍɨʐʊӄɨ☣️ƈօʀɛ/Mizuki_Antilink.png`),
+          MessageType.image,
           {
-            mimetype: "video/gif",
+            mimetype: Mimetype.png,
           }
         );
         return await ӄʀǟӄɨռʐ
@@ -223,10 +230,12 @@ module.exports = {
             {
               contentText: `𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚👋🏻 •🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived}, (admin)
 
-📜𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${𝓜𝖎𝖟𝖚ӄ𝖎.groupName}
-🔗𝐀𝐧𝐭𝐢𝐥𝐢𝐧𝐤 𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _❌Disabled_
-⚙️𝐄𝐧𝐠𝐢𝐧𝐞: *⋊ʀʏᴏ* _ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ_
-
+┌────◆◇🍌𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
+│
+│📜𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${𝓜𝖎𝖟𝖚ӄ𝖎.groupName}
+│🔗𝐀𝐧𝐭𝐢𝐥𝐢𝐧𝐤 𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _❌Disabled_
+│⚙️𝐄𝐧𝐠𝐢𝐧𝐞: *⋊ʀʏᴏ* _ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ_
+└───────◆◇
 🌱𝗣𝗿𝗲𝘀𝘀 𝗯𝗲𝗹𝗼𝘄 𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗧𝗼𝗴𝗴𝗹𝗲 𝗔𝗻𝘁𝗶𝗹𝗶𝗻𝗸👇🏽‍`,
               footerText: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
                 4
@@ -243,8 +252,8 @@ module.exports = {
                   type: 1,
                 },
               ],
-              headerType: 5,
-              videoMessage: media.message.videoMessage,
+              headerType: 4,
+              imageMessage: media.message.imageMessage,
             },
             MessageType.buttonsMessage,
             {
