@@ -40,7 +40,7 @@ module.exports = {
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
     }
     const FetchedLink = await yts(Needs.join(` `));
-    const videos = FetchedLink.videos.slice(0, 3);
+    const videos = FetchedLink.videos.slice(0, 8);
     var Fetched = ``;
     videos.forEach(function (youfound) {
       const { id } = getVideoId(youfound.url);

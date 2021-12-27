@@ -72,7 +72,22 @@ module.exports = {
         });
       };
       await GroupVideos.forEach(async function (youfound) {
-        if (youfound.seconds > "1800") {
+        if (!youfound.url.startsWith(`https:`)) {
+          return Mizuki_Buttons.MTB(
+            ӄʀǟӄɨռʐ,
+            chat,
+            𝓜𝖎𝖟𝖚ӄ𝖎,
+            `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived}, _Nothing Found For *${Needs.join(
+              ` `
+            )}*_
+
+┌────◆▶𝙏𝙧𝙮 𝙊𝙩𝙝𝙚𝙧 𝘾𝙤𝙢𝙢𝙖𝙣𝙙𝙨:
+│${ᴋᴇɪ}ytsearch (song name)
+│${ᴋᴇɪ}ytaudio (song link)
+│${ᴋᴇɪ}ytvideo (video link)
+└───────◆▶`
+          );
+        } else if (youfound.seconds > "1800") {
           console.log(`
 ${youfound.videoId}
 ${youfound.url}

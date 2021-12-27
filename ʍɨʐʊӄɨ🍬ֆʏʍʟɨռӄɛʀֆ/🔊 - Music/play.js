@@ -42,7 +42,7 @@ module.exports = {
         )
         .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-    } else if (𝓜𝖎𝖟𝖚ӄ𝖎.body.includes("http")) {
+    } else if (𝓜𝖎𝖟𝖚ӄ𝖎.body.includes(`http`)) {
       var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(𝓜𝖎𝖟𝖚ӄ𝖎.commandName);
       𝓜𝓮𝓮ʍօʀɛ = 𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ === undefined ? `Null` : 𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ;
       const ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
@@ -71,7 +71,22 @@ module.exports = {
         });
       };
       await GroupVideos.forEach(async function (youfound) {
-        if (youfound.seconds > "1800") {
+        if (!youfound.url.startsWith(`https:`)) {
+          return Mizuki_Buttons.MTB(
+            ӄʀǟӄɨռʐ,
+            chat,
+            𝓜𝖎𝖟𝖚ӄ𝖎,
+            `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived}, _Nothing Found For *${Needs.join(
+              ` `
+            )}*_
+
+┌────◆▶𝙏𝙧𝙮 𝙊𝙩𝙝𝙚𝙧 𝘾𝙤𝙢𝙢𝙖𝙣𝙙𝙨:
+│${ᴋᴇɪ}ytsearch (song name)
+│${ᴋᴇɪ}ytaudio (song link)
+│${ᴋᴇɪ}ytvideo (video link)
+└───────◆▶`
+          );
+        } else if (youfound.seconds > `1800`) {
           console.log(`
 ${youfound.videoId}
 ${youfound.url}
