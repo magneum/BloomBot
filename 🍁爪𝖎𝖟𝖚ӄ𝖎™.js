@@ -54,11 +54,19 @@ async function 𝐌𝐢𝐳𝐮𝐤𝐢() {
         const command = require(`./ʍɨʐʊӄɨ🍬ֆʏʍʟɨռӄɛʀֆ/${ʜᴏʟᴅᴇʀ}/${ᴍɪꜱᴏ}`);
         ꜱɪᴛʀᴀᴘ.set(command.name, command);
         commandUsage.set(command.𝓜𝓮𝓮6ʍօʀɛ, command.description);
-        ᴍɪᴢᴜᴋɪᴛᴀʙʟᴇ.addRow(
-          Kolor.green.italic(command.name),
-          ʜᴏʟᴅᴇʀ,
-          `✔️   𝘚𝘺𝘮-𝘓𝘪𝘯𝘬𝘦𝘥`
-        );
+        try {
+          ᴍɪᴢᴜᴋɪᴛᴀʙʟᴇ.addRow(
+            Kolor.green.italic(command.name.toUpperCase()),
+            ʜᴏʟᴅᴇʀ,
+            `✔️   𝘚𝘺𝘮-𝘓𝘪𝘯𝘬𝘦𝘥`
+          );
+        } catch {
+          ᴍɪᴢᴜᴋɪᴛᴀʙʟᴇ.addRow(
+            Kolor.green.italic(command.name),
+            ʜᴏʟᴅᴇʀ,
+            `✔️   𝘚𝘺𝘮-𝘓𝘪𝘯𝘬𝘦𝘥`
+          );
+        }
       }
       console.log(ᴍɪᴢᴜᴋɪᴛᴀʙʟᴇ.toString());
     }

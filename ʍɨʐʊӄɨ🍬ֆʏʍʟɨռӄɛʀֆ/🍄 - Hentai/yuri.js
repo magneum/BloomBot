@@ -24,7 +24,7 @@ module.exports = {
     // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
     var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
     const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
-    const Raw = await akaneko.nsfw.yuri();
+    var Raw = await akaneko.nsfw.yuri();
     var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
     const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
     console.log("🍁爪𝖎𝖟𝖚ӄ𝖎™ ᴠᴇʀɪꜰɪᴇᴅ ꜰɪʟᴇ > " + FinalName.toUpperCase() + "✔️");
@@ -34,7 +34,7 @@ module.exports = {
       !Raw.endsWith(`.jpg`) &&
       !Raw.endsWith(`.jpeg`)
     ) {
-      const Raw = await akaneko.nsfw.yuri();
+      var Raw = await akaneko.nsfw.yuri();
       Raw = Raw;
       ʟᴀʙᴛᴇꜱᴛ = Raw;
     } else {

@@ -37,10 +37,10 @@ module.exports = {
     }
     // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
     try {
-      const Raw = await porno();
+      var Raw = await porno();
       RawData = `https://tikporntok.com/` + Raw.video;
       if (!RawData.endsWith(`.mp4`)) {
-        const Raw = await porno();
+        var Raw = await porno();
         RawData = `https://tikporntok.com/` + Raw.video;
         TikPork = RawData;
       } else {
@@ -113,22 +113,22 @@ module.exports = {
         .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
     } catch {
-      const Raw = await porno();
+      var Raw = await porno();
       RawData = `https://tikporntok.com/` + Raw.video;
       if (RawData.endsWith(`.gif`)) {
-        const Raw = await porno();
+        var Raw = await porno();
         RawData = `https://tikporntok.com/` + Raw.video;
         TikPork = RawData;
       } else if (RawData.endsWith(`.png`)) {
-        const Raw = await porno();
+        var Raw = await porno();
         RawData = `https://tikporntok.com/` + Raw.video;
         TikPork = RawData;
       } else if (RawData.endsWith(`.jpg`)) {
-        const Raw = await porno();
+        var Raw = await porno();
         RawData = `https://tikporntok.com/` + Raw.video;
         TikPork = RawData;
       } else if (RawData.endsWith(`.jpeg`)) {
-        const Raw = await porno();
+        var Raw = await porno();
         RawData = `https://tikporntok.com/` + Raw.video;
         TikPork = RawData;
       } else {
