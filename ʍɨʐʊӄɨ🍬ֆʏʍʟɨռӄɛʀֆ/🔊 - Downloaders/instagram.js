@@ -71,7 +71,8 @@ module.exports = {
                 .sendMessage(
                   𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
                   {
-                    contentText: `
+                    contentText: `•🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived},
+                    
 ┌────◆➤🍌𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
 │
 │🍠𝐒𝐨𝐮𝐫𝐜𝐞: _•Instagram_
@@ -112,7 +113,8 @@ module.exports = {
                 .sendMessage(
                   𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
                   {
-                    contentText: `
+                    contentText: `•🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived},
+
 ┌────◆➤🍌𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
 │
 │🍠𝐒𝐨𝐮𝐫𝐜𝐞: _•Instagram_
