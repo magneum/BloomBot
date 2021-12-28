@@ -2,8 +2,8 @@
   "name": "mizuki",
   "vers": "v25.1-Stable",
   "engines": {
-    "node": "16.13.0",
-    "npm": "8.1.0"
+    "node": "v17.3.0",
+    "npm": "8.3.0"
   },
   "scripts": {
     "start": "node 🍁爪𝖎𝖟𝖚ӄ𝖎™.js"
