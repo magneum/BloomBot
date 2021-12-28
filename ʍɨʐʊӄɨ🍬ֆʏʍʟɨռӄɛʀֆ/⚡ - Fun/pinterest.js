@@ -38,28 +38,23 @@ module.exports = {
         );
       }
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-      Pins = await pinterest(Needs.join(` `));
+      var Pins = await pinterest(Needs.join(` `));
       var PinReslt = Pins[Math.floor(Math.random() * Pins.length)];
       console.log(PinReslt);
-      await ӄʀǟӄɨռʐ
-        .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, { url: PinReslt }, MessageType.image, {
-          contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
-          quoted: chat,
-          mimetype: Mimetype.png,
-          caption: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭  \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
-            4
-          )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_
+      return Mizuki_Buttons.MIB(
+        ӄʀǟӄɨռʐ,
+        chat,
+        𝓜𝖎𝖟𝖚ӄ𝖎,
+        `•🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived},
 
-•🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived},
-
-┌────◆➤ 
-│⦿ 𝐓𝐨𝐩𝐢𝐜: *${FinalName}*
-│⦿ 𝐒𝐞𝐚𝐫𝐜𝐡𝐞𝐝𝐅𝐨𝐫: ${Needs.join(` `)}
+┌────◆➤🍌𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
+│
+│🥕 𝐓𝐢𝐭𝐥𝐞:  ${Needs.join(` `)}
 └───────────◆➤
 
 🔗𝐋𝐢𝐧𝐤: ${PinReslt}`,
-        })
-        .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
+        PinReslt
+      );
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
     } catch (ℓαвєяяσя) {
       ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
