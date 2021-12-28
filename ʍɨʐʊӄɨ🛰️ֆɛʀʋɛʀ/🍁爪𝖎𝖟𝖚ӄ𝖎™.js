@@ -1,22 +1,21 @@
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-const Mizuki_Buttons = require(`./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Mizuki_Buttons`);
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
-const Mizuki_Static = require(`./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Mizuki_Static`);
-const LetGoChecker = require("./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/LetGoChecker");
-const 𝓜𝖎𝖟𝖚ӄ𝖎ֆʏռօք = require(`./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/𝓜𝖎𝖟𝖚ӄ𝖎ᴢᴇɴ`);
-const AutoKrakz = require(`./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/𝓜𝖎𝖟𝖚ӄ𝖎ɢɪᴛ`);
-const LinkList = require("./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/LinkList");
-const 𝓜𝖎𝖟𝖚ӄ𝖎ǟքք = require(`./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/helper`);
-const welbuts = require(`./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/welbuts`);
-const BanList = require("./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/BanList");
-const postDb = require(`./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/postDb`);
-const _𝔏𝔞𝔟_ = require(`./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/_𝔏𝔞𝔟_`);
-const ꜰᴜᴄᴋ = require(`./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/oShit`);
-const download = require(`download-file`);
-const ascii = require(`ascii-table`);
+const Mizuki_Buttons = require(`./Mizuki_Buttons`);
+const Mizuki_Static = require(`./Mizuki_Static`);
+const LetGoChecker = require("./LetGoChecker");
+const 𝓜𝖎𝖟𝖚ӄ𝖎ֆʏռօք = require(`./𝓜𝖎𝖟𝖚ӄ𝖎ᴢᴇɴ`);
+const AutoKrakz = require(`./𝓜𝖎𝖟𝖚ӄ𝖎ɢɪᴛ`);
+const speed = require("performance-now");
+const LinkList = require("./LinkList");
+const { ʄǟռƈʏ } = require("../ʄǟռƈʏ");
+const 𝓜𝖎𝖟𝖚ӄ𝖎ǟքք = require(`./helper`);
+const welbuts = require(`./welbuts`);
+const BanList = require("./BanList");
+const postDb = require(`./postDb`);
+const _𝔏𝔞𝔟_ = require(`./_𝔏𝔞𝔟_`);
+const ꜰᴜᴄᴋ = require(`./oShit`);
 const Kolor = require(`chalk`);
 const yes_no = _𝔏𝔞𝔟_.Krakinz;
-const speed = require("performance-now");
 let Timestamp = speed();
 const Ping = speed() - Timestamp;
 const date = require("date-and-time");
@@ -24,7 +23,7 @@ const now = new Date();
 date.format(now, "ddd, MMM DD YYYY");
 const pattern = date.compile("ddd, MMM DD YYYY");
 const Clock = date.format(now, pattern);
-const vers = require(`./package.json`);
+const vers = require(`../package.json`);
 const 𝓜𝖎𝖟𝖚ӄ𝖎sql = _𝔏𝔞𝔟_.POSTQL;
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
@@ -32,11 +31,6 @@ const fs = require(`fs`);
 console.clear();
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
 var ӄʀǟӄɨռʐ = 𝓜𝖎𝖟𝖚ӄ𝖎ֆʏռօք.WhatsApp;
-const ᴍɪᴢᴜᴋɪᴛᴀʙʟᴇ = new ascii().setHeading(
-  `🍁𝐂𝐨𝐦𝐦𝐚𝐧 𝐍𝐚𝐦𝐞🍁`,
-  `🍁𝗖𝗼𝗺𝗺𝗮𝗻𝗱 𝗙𝗼𝗹𝗱𝗲𝗿🍁`,
-  `🍁𝐇𝐞𝐚𝐥𝐭𝐡🍁`
-);
 ӄʀǟӄɨռʐ.logger.level = `error`;
 async function 𝐌𝐢𝐳𝐮𝐤𝐢() {
   var ꜱɪᴛʀᴀᴘ = new Map();
@@ -44,33 +38,6 @@ async function 𝐌𝐢𝐳𝐮𝐤𝐢() {
   console.log(
     Kolor.yellow.bold(`💡INFO ⬰ 𝐒𝐲𝐦𝐥𝐢𝐧𝐤𝐢𝐧𝐠 𝐖𝐢𝐭𝐡 𝐌𝐢𝐳𝐮𝐤𝐢 𝐒𝐲𝐬𝐭𝐞𝐦...\n✔️`)
   );
-  function loadCommands() {
-    const ᴍɪᴢᴜᴋɪᴅᴇʀꜱ = fs.readdirSync(`./ʍɨʐʊӄɨ🍬ֆʏʍʟɨռӄɛʀֆ`);
-    for (const ʜᴏʟᴅᴇʀ of ᴍɪᴢᴜᴋɪᴅᴇʀꜱ) {
-      const commandFiles = fs
-        .readdirSync(`./ʍɨʐʊӄɨ🍬ֆʏʍʟɨռӄɛʀֆ/${ʜᴏʟᴅᴇʀ}`)
-        .filter((ᴍɪꜱᴏ) => ᴍɪꜱᴏ.endsWith(`.js`));
-      for (const ᴍɪꜱᴏ of commandFiles) {
-        const command = require(`./ʍɨʐʊӄɨ🍬ֆʏʍʟɨռӄɛʀֆ/${ʜᴏʟᴅᴇʀ}/${ᴍɪꜱᴏ}`);
-        ꜱɪᴛʀᴀᴘ.set(command.name, command);
-        commandUsage.set(command.𝓜𝓮𝓮6ʍօʀɛ, command.description);
-        try {
-          ᴍɪᴢᴜᴋɪᴛᴀʙʟᴇ.addRow(
-            Kolor.green.italic(command.name.toUpperCase()),
-            ʜᴏʟᴅᴇʀ,
-            `✔️   𝘚𝘺𝘮-𝘓𝘪𝘯𝘬𝘦𝘥`
-          );
-        } catch {
-          ᴍɪᴢᴜᴋɪᴛᴀʙʟᴇ.addRow(
-            Kolor.green.italic(command.name),
-            ʜᴏʟᴅᴇʀ,
-            `✔️   𝘚𝘺𝘮-𝘓𝘪𝘯𝘬𝘦𝘥`
-          );
-        }
-      }
-      console.log(ᴍɪᴢᴜᴋɪᴛᴀʙʟᴇ.toString());
-    }
-  }
   console.clear();
   // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
   if (_𝔏𝔞𝔟_.HEROKU_API === `Null` || _𝔏𝔞𝔟_.HEROKU_BOT_NAME === `Null`) {
@@ -184,7 +151,7 @@ async function 𝐌𝐢𝐳𝐮𝐤𝐢() {
     } catch {}
   });
   // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-  await ӄʀǟӄɨռʐ.connect().then(loadCommands());
+  await ӄʀǟӄɨռʐ.connect().then(ʄǟռƈʏ(ꜱɪᴛʀᴀᴘ,commandUsage));
   ӄʀǟӄɨռʐ.on(`group-update`, async (update) => {
     try {
       const groupupdateID = await ӄʀǟӄɨռʐ.groupMetadata(update.jid);

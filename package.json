@@ -5,9 +5,6 @@
     "node": "v17.3.0",
     "npm": "8.3.0"
   },
-  "scripts": {
-    "start": "node 🍁爪𝖎𝖟𝖚ӄ𝖎™.js"
-  },
   "keywords": [
     "whatsapp",
     "js-whatsapp",
