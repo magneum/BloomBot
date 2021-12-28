@@ -34,10 +34,10 @@ const env = {
   DEV: `918436686758,989035024059`,
   DATABASE_URL: (process.env.DATABASE_URL =
     process.env.DATABASE_URL === undefined
-      ? `./ʍɨʐʊӄɨ☣️ƈօʀɛ.db`
+      ? `./ʍɨʐʊӄɨ☣️ƈօʀɛ/ʍɨʐʊӄɨ☣️ƈօʀɛ.db`
       : process.env.DATABASE_URL),
   POSTQL:
-    process.env.DATABASE_URL === `./ʍɨʐʊӄɨ☣️ƈօʀɛ.db`
+    process.env.DATABASE_URL === `./ʍɨʐʊӄɨ☣️ƈօʀɛ/ʍɨʐʊӄɨ☣️ƈօʀɛ.db`
       ? new Sequelize({ dialect: `sqlite`, storage: process.env.DATABASE_URL })
       : new Sequelize(process.env.DATABASE_URL, {
           dialect: `postgres`,
