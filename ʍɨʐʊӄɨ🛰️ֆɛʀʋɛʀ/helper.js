@@ -4,7 +4,7 @@ var ƈʏɮօʀɢƈʟǟ = require(`./𝓜𝖎𝖟𝖚ӄ𝖎ƈʟǟ`);
 const Kolor = require(`chalk`);
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
 exports.resolve = function (messageInstance, ӄʀǟӄɨռʐ, groupMetadata) {
-  var DEVstring =_𝔏𝔞𝔟_.DEV;
+  var DEVstring = _𝔏𝔞𝔟_.DEV;
   var 𝓜𝖎𝖟𝖚ӄ𝖎 = new ƈʏɮօʀɢƈʟǟ();
   var prefix = _𝔏𝔞𝔟_.FOXTROT + `\\w+`;
   var prefixRegex = new RegExp(prefix, `g`);
@@ -47,6 +47,12 @@ exports.resolve = function (messageInstance, ӄʀǟӄɨռʐ, groupMetadata) {
   𝓜𝖎𝖟𝖚ӄ𝖎.replyParticipant =
     𝓜𝖎𝖟𝖚ӄ𝖎.isReply && messageInstance.message.extendedTextMessage.contextInfo
       ? messageInstance.message.extendedTextMessage.contextInfo.participant
+      : ``;
+  𝓜𝖎𝖟𝖚ӄ𝖎.budy =
+    𝓜𝖎𝖟𝖚ӄ𝖎.mimeType === `conversation`
+      ? messageInstance.message.conversation
+      : 𝓜𝖎𝖟𝖚ӄ𝖎.mimeType === `extendedTextMessage`
+      ? messageInstance.message.extendedTextMessage.text
       : ``;
   𝓜𝖎𝖟𝖚ӄ𝖎.body =
     𝓜𝖎𝖟𝖚ӄ𝖎.mimeType === `conversation`

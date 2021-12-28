@@ -29,11 +29,11 @@ module.exports = {
     // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
     // var last = 𝓜𝖎𝖟𝖚ӄ𝖎.body.replace(      𝓜𝖎𝖟𝖚ӄ𝖎.body[0] + 𝓜𝖎𝖟𝖚ӄ𝖎.commandName + " ",      ""    );
 
-    check = 𝓜𝖎𝖟𝖚ӄ𝖎.body;
+    check = 𝓜𝖎𝖟𝖚ӄ𝖎.budy;
+    console.log(check);
     neko.nekobin(check).then((data) => {
       dt = data.url;
       console.log(dt);
-      console.log(check);
       ӄʀǟӄɨռʐ.sendMessage(
         𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
         { url: "https://i.postimg.cc/3wGtxscV/Mem-Err.png" },
