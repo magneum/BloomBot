@@ -167,7 +167,7 @@ async function 𝐌𝐢𝐳𝐮𝐤𝐢() {
             mimetype: Mimetype.png,
             caption: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 _${vers.vers}_
 
-┌━━━━━━━★
+┌━━━━━━━◆➤
 │💡ᴘʀᴇꜰɪx: ${ᴋᴇɪ}
 │🛰️𝐏𝐢𝐧𝐠: ${Ping.toFixed(4)}s
 │📅𝐃𝐚𝐭𝐞: ${Clock}
@@ -199,7 +199,7 @@ async function 𝐌𝐢𝐳𝐮𝐤𝐢() {
               mimetype: `video/gif`,
               caption: `*🍁Attention Here Everyone In the Group!🍁*
 
-┌━━━━━━━★
+┌━━━━━━━◆➤
 │⛺𝐆𝐫𝐨𝐮𝐩 𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _*Open For All*_
 │🎪𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${groupupdateID.subject}
 │💞𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${groupupdateID.participants.length}
@@ -222,7 +222,7 @@ async function 𝐌𝐢𝐳𝐮𝐤𝐢() {
               caption: `*🍁Attention Here Everyone In the Group!🍁*
 
 
-┌━━━━━━━★
+┌━━━━━━━◆➤
 │⛺𝐆𝐫𝐨𝐮𝐩 𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _*Admins-Only*_
 │🎪𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${groupupdateID.subject}
 │💞𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${groupupdateID.participants.length}
@@ -249,7 +249,7 @@ async function 𝐌𝐢𝐳𝐮𝐤𝐢() {
               caption: `*🍁Attention Here Everyone In the Group!🍁*
 
 
-┌━━━━━━━★
+┌━━━━━━━◆➤
 │⛺𝐆𝐫𝐨𝐮𝐩 𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _*New Description Added*_
 │🎪𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${groupupdateID.subject}
 │🍌𝐂𝐡𝐚𝐧𝐠𝐞𝐝 𝐁𝐲: @${update.descOwner.split(`@`)[0]}
@@ -273,7 +273,7 @@ ${update.desc}`,
               caption: `*🍁Attention Here Everyone In the Group!🍁*
 
 
-┌━━━━━━━★
+┌━━━━━━━◆➤
 │⛺𝐆𝐫𝐨𝐮𝐩 𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _*Info Edit Allowed For All*_
 │🎪𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${groupupdateID.subject}
 │💞𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${groupupdateID.participants.length}
@@ -296,7 +296,7 @@ ${update.desc}`,
               caption: `*🍁Attention Here Everyone In the Group!🍁*
 
 
-┌━━━━━━━★
+┌━━━━━━━◆➤
 │⛺𝐆𝐫𝐨𝐮𝐩 𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _*Info Edit Allowed For Admins-Only*_
 │🎪𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${groupupdateID.subject}
 │💞𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${groupupdateID.participants.length}
@@ -335,7 +335,7 @@ ${update.desc}`,
                 4
               )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_
 
-┌━━━━━━━★
+┌━━━━━━━◆➤
 │🔑𝐏𝐫𝐞𝐟𝐢𝐱: *${ᴋᴇɪ}*
 │👑𝐎𝐰𝐧𝐞𝐫: _🐙KrakinzKon_
 │🤖ᴀᴅᴅ ᴍɪᴢᴜᴋɪ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ: _${ᴋᴇɪ}request_
