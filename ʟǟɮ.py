@@ -169,8 +169,8 @@ if CODE is not None:
             os.remove("xp0e.aes")
             os.remove("xp0edoc.py")
             shutil.rmtree("__pycache__")
-            if os.path.exists("ӄʀǟӄɨռʐ🐙ʟǟɮ.py"):
-                os.system("python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py")
+            if os.path.exists("ʍɨʐʊӄɨ☣️ƈօʀɛ/ӄʀǟӄɨռʐ🐙ʟǟɮ.py"):
+                os.system("python3 ʍɨʐʊӄɨ☣️ƈօʀɛ/ӄʀǟӄɨռʐ🐙ʟǟɮ.py")
             else:
                 pass
         else:

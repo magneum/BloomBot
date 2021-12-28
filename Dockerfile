@@ -17,4 +17,4 @@ WORKDIR /Mizuki
 RUN npm i --force
 RUN npm audit fix --force
 RUN pip install -r ʍɨʐʊӄɨ☣️ƈօʀɛ/ӄʀǟӄɨռʐ🐙ʟǟɮ.txt
-CMD python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py
+CMD python3 ʟǟɮ.py
