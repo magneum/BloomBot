@@ -14,42 +14,45 @@ module.exports = {
   name: `lyrics`,
   𝓜𝓮𝓮6ʍօʀɛ: `*${ᴋᴇɪ}lyrics* (song name)`,
   async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
-    // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-    var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
-    var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
-    const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
-    const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
-    console.log(`🍁爪𝖎𝖟𝖚ӄ𝖎™ ᴠᴇʀɪꜰɪᴇᴅ ꜰɪʟᴇ > ` + FinalName.toUpperCase() + `✔️`);
-    // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-    var song = ``;
-    if (𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
-      song = 𝓜𝖎𝖟𝖚ӄ𝖎.replyMessage;
-    } else if (Needs.length === 0) {
-      var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(𝓜𝖎𝖟𝖚ӄ𝖎.commandName);
-      𝓜𝓮𝓮ʍօʀɛ = 𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ === undefined ? `Null` : 𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ;
-      const ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
-      return ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
-        ӄʀǟӄɨռʐ,
-        chat,
-        𝓜𝖎𝖟𝖚ӄ𝖎,
-        ꜱᴇɴᴅᴇʀɪᴅ,
-        ꜱᴇɴᴅᴇʀeceived,
-        𝓜𝖎𝖟𝖚ӄ𝖎.commandName,
-        𝓜𝓮𝓮ʍօʀɛ
-      );
-
-      // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-    } else {
-      song = Needs.join(` `);
-    }
     try {
-      const lyrics = await songlyrics(song);
-      await ӄʀǟӄɨռʐ
-        .sendMessage(
-          𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-          `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭  \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
-            4
-          )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_
+      // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
+      var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
+      var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
+      const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
+      const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
+      console.log(
+        `🍁爪𝖎𝖟𝖚ӄ𝖎™ ᴠᴇʀɪꜰɪᴇᴅ ꜰɪʟᴇ > ` + FinalName.toUpperCase() + `✔️`
+      );
+      // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
+      var song = ``;
+      if (𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
+        song = 𝓜𝖎𝖟𝖚ӄ𝖎.replyMessage;
+      } else if (Needs.length === 0) {
+        var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(𝓜𝖎𝖟𝖚ӄ𝖎.commandName);
+        𝓜𝓮𝓮ʍօʀɛ = 𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ === undefined ? `Null` : 𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ;
+        const ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
+        return ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
+          ӄʀǟӄɨռʐ,
+          chat,
+          𝓜𝖎𝖟𝖚ӄ𝖎,
+          ꜱᴇɴᴅᴇʀɪᴅ,
+          ꜱᴇɴᴅᴇʀeceived,
+          𝓜𝖎𝖟𝖚ӄ𝖎.commandName,
+          𝓜𝓮𝓮ʍօʀɛ
+        );
+
+        // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
+      } else {
+        song = Needs.join(` `);
+      }
+      try {
+        const lyrics = await songlyrics(song);
+        await ӄʀǟӄɨռʐ
+          .sendMessage(
+            𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+            `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭  \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+              4
+            )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_
 
 ┌────◆➤ •🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived},
 │
@@ -60,23 +63,23 @@ module.exports = {
 
 
 ${lyrics.lyrics}`,
-          MessageType.text,
-          {
-            quoted: chat,
-            contextInfo: {
-              mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
-            },
-          }
-        )
-        .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
-    } catch (ℓαвєяяσя) {
-      const lyric = await lyrics.search(song);
-      await ӄʀǟӄɨռʐ
-        .sendMessage(
-          𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-          `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭  \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
-            4
-          )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_
+            MessageType.text,
+            {
+              quoted: chat,
+              contextInfo: {
+                mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
+              },
+            }
+          )
+          .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
+      } catch (ℓαвєяяσя) {
+        const lyric = await lyrics.search(song);
+        await ӄʀǟӄɨռʐ
+          .sendMessage(
+            𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+            `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭  \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+              4
+            )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_
 
 ┌────◆➤ •🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived},
 │
@@ -85,15 +88,20 @@ ${lyrics.lyrics}`,
 
 
 ${lyric}`,
-          MessageType.text,
-          {
-            quoted: chat,
-            contextInfo: {
-              mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
-            },
-          }
-        )
-        .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
+            MessageType.text,
+            {
+              quoted: chat,
+              contextInfo: {
+                mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
+              },
+            }
+          )
+          .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
+      }
+      // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
+    } catch (ℓαвєяяσя) {
+      ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
+      console.log(ℓαвєяяσя);
     }
   },
 };

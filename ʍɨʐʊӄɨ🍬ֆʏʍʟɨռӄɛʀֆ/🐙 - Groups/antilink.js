@@ -16,20 +16,23 @@ module.exports = {
   name: `antilink`,
   𝓜𝓮𝓮6ʍօʀɛ: `${ᴋᴇɪ}antilink (on/off)`,
   async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
-    // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-    var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
-    var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
-    const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
-    const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
-    console.log("🍁爪𝖎𝖟𝖚ӄ𝖎™ ᴠᴇʀɪꜰɪᴇᴅ ꜰɪʟᴇ > " + FinalName.toUpperCase() + "✔️");
-    // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-    if (𝓜𝖎𝖟𝖚ӄ𝖎.isGroup && !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderGroupAdmin) {
-      try {
-        return Mizuki_Buttons.MIB(
-          ӄʀǟӄɨռʐ,
-          chat,
-          𝓜𝖎𝖟𝖚ӄ𝖎,
-          `Who Is This Non-Admin •@${ꜱᴇɴᴅᴇʀeceived} Trying to Use Admin-Only Commands.
+    try {
+      // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
+      var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
+      var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
+      const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
+      const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
+      console.log(
+        "🍁爪𝖎𝖟𝖚ӄ𝖎™ ᴠᴇʀɪꜰɪᴇᴅ ꜰɪʟᴇ > " + FinalName.toUpperCase() + "✔️"
+      );
+      // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
+      if (𝓜𝖎𝖟𝖚ӄ𝖎.isGroup && !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderGroupAdmin) {
+        try {
+          return Mizuki_Buttons.MIB(
+            ӄʀǟӄɨռʐ,
+            chat,
+            𝓜𝖎𝖟𝖚ӄ𝖎,
+            `Who Is This Non-Admin •@${ꜱᴇɴᴅᴇʀeceived} Trying to Use Admin-Only Commands.
 
 *❌ 𝚈𝚘𝚞 𝙰𝚛𝚎 𝙽𝚘𝚝 𝙰𝚕𝚕𝚘𝚠𝚎𝚍!*
 ┌────◆➤ 🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧   
@@ -37,65 +40,65 @@ module.exports = {
 │🌶️𝐆𝐫𝐨𝐮𝐩𝐬: _Admins & Devs!_
 │🌽𝐏𝐫𝐢𝐯𝐚𝐭𝐞 _Everyone_
 └───────◆➤`,
-          _𝔏𝔞𝔟_.ɴᴏᴛᴀᴅᴍɪɴ
-        );
-      } catch (ℓαвєяяσя) {
-        ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
+            _𝔏𝔞𝔟_.ɴᴏᴛᴀᴅᴍɪɴ
+          );
+        } catch (ℓαвєяяσя) {
+          ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
+        }
       }
-    }
-    // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-    if (𝓜𝖎𝖟𝖚ӄ𝖎.isGroup && !𝓜𝖎𝖟𝖚ӄ𝖎.isBotGroupAdmin) {
-      try {
-        return Mizuki_Buttons.MTB(
-          ӄʀǟӄɨռʐ,
-          chat,
-          𝓜𝖎𝖟𝖚ӄ𝖎,
-          `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived}, *❌ʜᴏᴡ ᴄᴀɴ ɪ ᴜꜱᴇ ᴀᴅᴍɪɴ ᴄᴏᴍᴍᴀɴᴅꜱ ᴡʜᴇɴ ɪ ᴀᴍ ɴᴏᴛ ᴀᴅᴍɪɴ?*
+      // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
+      if (𝓜𝖎𝖟𝖚ӄ𝖎.isGroup && !𝓜𝖎𝖟𝖚ӄ𝖎.isBotGroupAdmin) {
+        try {
+          return Mizuki_Buttons.MTB(
+            ӄʀǟӄɨռʐ,
+            chat,
+            𝓜𝖎𝖟𝖚ӄ𝖎,
+            `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived}, *❌ʜᴏᴡ ᴄᴀɴ ɪ ᴜꜱᴇ ᴀᴅᴍɪɴ ᴄᴏᴍᴍᴀɴᴅꜱ ᴡʜᴇɴ ɪ ᴀᴍ ɴᴏᴛ ᴀᴅᴍɪɴ?*
 
 💡𝐅𝐢𝐱: _Make Me Admin First_`,
-          _𝔏𝔞𝔟_.ɴᴏᴛᴍᴇᴀᴅᴍɪɴ
-        );
-      } catch (ℓαвєяяσя) {
-        ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
+            _𝔏𝔞𝔟_.ɴᴏᴛᴍᴇᴀᴅᴍɪɴ
+          );
+        } catch (ℓαвєяяσя) {
+          ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
+        }
       }
-    }
-    // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-    if (!𝓜𝖎𝖟𝖚ӄ𝖎.isGroup) {
-      try {
-        return Mizuki_Buttons.MTB(
-          ӄʀǟӄɨռʐ,
-          chat,
-          𝓜𝖎𝖟𝖚ӄ𝖎,
-          `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived}, 
+      // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
+      if (!𝓜𝖎𝖟𝖚ӄ𝖎.isGroup) {
+        try {
+          return Mizuki_Buttons.MTB(
+            ӄʀǟӄɨռʐ,
+            chat,
+            𝓜𝖎𝖟𝖚ӄ𝖎,
+            `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived}, 
           
 ┌────◆➤ 🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧  
 │ 
 │❗𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ᴋᴇɪ}${defaultnm}, 
 │ᴄᴏᴍᴍᴀɴᴅ ᴏɴʟʏ ꜰᴏʀ ɢʀᴏᴜᴘꜱ!
 └───────◆➤`
-        );
-      } catch (ℓαвєяяσя) {
-        ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
-      }
-    }
-    // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-    if (
-      !(await LinkList.getLinklistUser(``, 𝓜𝖎𝖟𝖚ӄ𝖎.chatId)) &&
-      Needs.length == 0
-    ) {
-      const media = await ӄʀǟӄɨռʐ.prepareMessage(
-        𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-        fs.readFileSync(`./ʍɨʐʊӄɨ☣️ƈօʀɛ/Mizuki_Antilink.png`),
-        MessageType.image,
-        {
-          mimetype: Mimetype.png,
+          );
+        } catch (ℓαвєяяσя) {
+          ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
         }
-      );
-      return await ӄʀǟӄɨռʐ
-        .sendMessage(
+      }
+      // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
+      if (
+        !(await LinkList.getLinklistUser(``, 𝓜𝖎𝖟𝖚ӄ𝖎.chatId)) &&
+        Needs.length == 0
+      ) {
+        const media = await ӄʀǟӄɨռʐ.prepareMessage(
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+          fs.readFileSync(`./ʍɨʐʊӄɨ☣️ƈօʀɛ/Mizuki_Antilink.png`),
+          MessageType.image,
           {
-            contentText: `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢  •@${ꜱᴇɴᴅᴇʀeceived}, (admin)
+            mimetype: Mimetype.png,
+          }
+        );
+        return await ӄʀǟӄɨռʐ
+          .sendMessage(
+            𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+            {
+              contentText: `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢  •@${ꜱᴇɴᴅᴇʀeceived}, (admin)
 
 
 ┌────◆➤🍌𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
@@ -105,50 +108,50 @@ module.exports = {
 │⚙️𝐄𝐧𝐠𝐢𝐧𝐞: *⋊ʀʏᴏ* _ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ_
 └───────◆➤
 🌱𝗣𝗿𝗲𝘀𝘀 𝗯𝗲𝗹𝗼𝘄 𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗧𝗼𝗴𝗴𝗹𝗲 𝗔𝗻𝘁𝗶𝗹𝗶𝗻𝗸👇🏽‍`,
-            footerText: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
-              4
-            )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
-            buttons: [
-              {
-                buttonId: `${ᴋᴇɪ}antilink on`,
-                buttonText: { displayText: `${ᴋᴇɪ}antilink on` },
-                type: 1,
-              },
-              {
-                buttonId: `${ᴋᴇɪ}antilink off`,
-                buttonText: { displayText: `${ᴋᴇɪ}antilink off` },
-                type: 1,
-              },
-            ],
-            headerType: 4,
-            imageMessage: media.message.imageMessage,
-          },
-          MessageType.buttonsMessage,
-          {
-            quoted: chat,
-            contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
-          }
-        )
-        .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
+              footerText: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+                4
+              )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
+              buttons: [
+                {
+                  buttonId: `${ᴋᴇɪ}antilink on`,
+                  buttonText: { displayText: `${ᴋᴇɪ}antilink on` },
+                  type: 1,
+                },
+                {
+                  buttonId: `${ᴋᴇɪ}antilink off`,
+                  buttonText: { displayText: `${ᴋᴇɪ}antilink off` },
+                  type: 1,
+                },
+              ],
+              headerType: 4,
+              imageMessage: media.message.imageMessage,
+            },
+            MessageType.buttonsMessage,
+            {
+              quoted: chat,
+              contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
+            }
+          )
+          .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
 
-      // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-    } else if (
-      (await LinkList.getLinklistUser(``, 𝓜𝖎𝖟𝖚ӄ𝖎.chatId)) &&
-      Needs.length == 0
-    ) {
-      const media = await ӄʀǟӄɨռʐ.prepareMessage(
-        𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-        fs.readFileSync(`./ʍɨʐʊӄɨ☣️ƈօʀɛ/Mizuki_Antilink.png`),
-        MessageType.image,
-        {
-          mimetype: Mimetype.png,
-        }
-      );
-      return await ӄʀǟӄɨռʐ
-        .sendMessage(
+        // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
+      } else if (
+        (await LinkList.getLinklistUser(``, 𝓜𝖎𝖟𝖚ӄ𝖎.chatId)) &&
+        Needs.length == 0
+      ) {
+        const media = await ӄʀǟӄɨռʐ.prepareMessage(
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+          fs.readFileSync(`./ʍɨʐʊӄɨ☣️ƈօʀɛ/Mizuki_Antilink.png`),
+          MessageType.image,
           {
-            contentText: `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢  •@${ꜱᴇɴᴅᴇʀeceived}, (admin)
+            mimetype: Mimetype.png,
+          }
+        );
+        return await ӄʀǟӄɨռʐ
+          .sendMessage(
+            𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+            {
+              contentText: `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢  •@${ꜱᴇɴᴅᴇʀeceived}, (admin)
 
 ┌────◆➤🍌𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
 │
@@ -157,48 +160,48 @@ module.exports = {
 │⚙️𝐄𝐧𝐠𝐢𝐧𝐞: *⋊ʀʏᴏ* _ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ_
 └───────◆➤
 🌱𝗣𝗿𝗲𝘀𝘀 𝗯𝗲𝗹𝗼𝘄 𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗧𝗼𝗴𝗴𝗹𝗲 𝗔𝗻𝘁𝗶𝗹𝗶𝗻𝗸👇🏽‍`,
-            footerText: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
-              4
-            )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
-            buttons: [
-              {
-                buttonId: `${ᴋᴇɪ}antilink on`,
-                buttonText: { displayText: `${ᴋᴇɪ}antilink on` },
-                type: 1,
-              },
-              {
-                buttonId: `${ᴋᴇɪ}antilink off`,
-                buttonText: { displayText: `${ᴋᴇɪ}antilink off` },
-                type: 1,
-              },
-            ],
-            headerType: 4,
-            imageMessage: media.message.imageMessage,
-          },
-          MessageType.buttonsMessage,
-          {
-            quoted: chat,
-            contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
-          }
-        )
-        .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
-
-      // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-    } else if (Needs[0] === `ON` || Needs[0] === `on` || Needs[0] === `On`) {
-      await LinkList.addLinklistUser(``, 𝓜𝖎𝖟𝖚ӄ𝖎.chatId).then(async () => {
-        const media = await ӄʀǟӄɨռʐ.prepareMessage(
-          𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-          fs.readFileSync(`./ʍɨʐʊӄɨ☣️ƈօʀɛ/Mizuki_Antilink.png`),
-          MessageType.image,
-          {
-            mimetype: Mimetype.png,
-          }
-        );
-        return await ӄʀǟӄɨռʐ
-          .sendMessage(
-            𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+              footerText: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+                4
+              )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
+              buttons: [
+                {
+                  buttonId: `${ᴋᴇɪ}antilink on`,
+                  buttonText: { displayText: `${ᴋᴇɪ}antilink on` },
+                  type: 1,
+                },
+                {
+                  buttonId: `${ᴋᴇɪ}antilink off`,
+                  buttonText: { displayText: `${ᴋᴇɪ}antilink off` },
+                  type: 1,
+                },
+              ],
+              headerType: 4,
+              imageMessage: media.message.imageMessage,
+            },
+            MessageType.buttonsMessage,
             {
-              contentText: `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢  •@${ꜱᴇɴᴅᴇʀeceived}, (admin)
+              quoted: chat,
+              contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
+            }
+          )
+          .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
+
+        // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
+      } else if (Needs[0] === `ON` || Needs[0] === `on` || Needs[0] === `On`) {
+        await LinkList.addLinklistUser(``, 𝓜𝖎𝖟𝖚ӄ𝖎.chatId).then(async () => {
+          const media = await ӄʀǟӄɨռʐ.prepareMessage(
+            𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+            fs.readFileSync(`./ʍɨʐʊӄɨ☣️ƈօʀɛ/Mizuki_Antilink.png`),
+            MessageType.image,
+            {
+              mimetype: Mimetype.png,
+            }
+          );
+          return await ӄʀǟӄɨռʐ
+            .sendMessage(
+              𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+              {
+                contentText: `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢  •@${ꜱᴇɴᴅᴇʀeceived}, (admin)
 
 ┌────◆➤🍌𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
 │
@@ -207,48 +210,52 @@ module.exports = {
 │⚙️𝐄𝐧𝐠𝐢𝐧𝐞: *⋊ʀʏᴏ* _ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ_
 └───────◆➤
 🌱𝗣𝗿𝗲𝘀𝘀 𝗯𝗲𝗹𝗼𝘄 𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗧𝗼𝗴𝗴𝗹𝗲 𝗔𝗻𝘁𝗶𝗹𝗶𝗻𝗸👇🏽‍`,
-              footerText: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
-                4
-              )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
-              buttons: [
-                {
-                  buttonId: `${ᴋᴇɪ}antilink on`,
-                  buttonText: { displayText: `${ᴋᴇɪ}antilink on` },
-                  type: 1,
-                },
-                {
-                  buttonId: `${ᴋᴇɪ}antilink off`,
-                  buttonText: { displayText: `${ᴋᴇɪ}antilink off` },
-                  type: 1,
-                },
-              ],
-              headerType: 4,
-              imageMessage: media.message.imageMessage,
-            },
-            MessageType.buttonsMessage,
-            {
-              quoted: chat,
-              contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
-            }
-          )
-          .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
-      });
-      // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-    } else if (Needs[0] === `OFF` || Needs[0] === `off` || Needs[0] === `Off`) {
-      await LinkList.removeLinklistUser(``, 𝓜𝖎𝖟𝖚ӄ𝖎.chatId).then(async () => {
-        const media = await ӄʀǟӄɨռʐ.prepareMessage(
-          𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-          fs.readFileSync(`./ʍɨʐʊӄɨ☣️ƈօʀɛ/Mizuki_Antilink.png`),
-          MessageType.image,
-          {
-            mimetype: Mimetype.png,
-          }
-        );
-        return await ӄʀǟӄɨռʐ
-          .sendMessage(
+                footerText: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+                  4
+                )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
+                buttons: [
+                  {
+                    buttonId: `${ᴋᴇɪ}antilink on`,
+                    buttonText: { displayText: `${ᴋᴇɪ}antilink on` },
+                    type: 1,
+                  },
+                  {
+                    buttonId: `${ᴋᴇɪ}antilink off`,
+                    buttonText: { displayText: `${ᴋᴇɪ}antilink off` },
+                    type: 1,
+                  },
+                ],
+                headerType: 4,
+                imageMessage: media.message.imageMessage,
+              },
+              MessageType.buttonsMessage,
+              {
+                quoted: chat,
+                contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
+              }
+            )
+            .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
+        });
+        // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
+      } else if (
+        Needs[0] === `OFF` ||
+        Needs[0] === `off` ||
+        Needs[0] === `Off`
+      ) {
+        await LinkList.removeLinklistUser(``, 𝓜𝖎𝖟𝖚ӄ𝖎.chatId).then(async () => {
+          const media = await ӄʀǟӄɨռʐ.prepareMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+            fs.readFileSync(`./ʍɨʐʊӄɨ☣️ƈօʀɛ/Mizuki_Antilink.png`),
+            MessageType.image,
             {
-              contentText: `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢  •@${ꜱᴇɴᴅᴇʀeceived}, (admin)
+              mimetype: Mimetype.png,
+            }
+          );
+          return await ӄʀǟӄɨռʐ
+            .sendMessage(
+              𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+              {
+                contentText: `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢  •@${ꜱᴇɴᴅᴇʀeceived}, (admin)
 
 ┌────◆➤🍌𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
 │
@@ -257,32 +264,37 @@ module.exports = {
 │⚙️𝐄𝐧𝐠𝐢𝐧𝐞: *⋊ʀʏᴏ* _ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ_
 └───────◆➤
 🌱𝗣𝗿𝗲𝘀𝘀 𝗯𝗲𝗹𝗼𝘄 𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗧𝗼𝗴𝗴𝗹𝗲 𝗔𝗻𝘁𝗶𝗹𝗶𝗻𝗸👇🏽‍`,
-              footerText: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
-                4
-              )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
-              buttons: [
-                {
-                  buttonId: `${ᴋᴇɪ}antilink on`,
-                  buttonText: { displayText: `${ᴋᴇɪ}antilink on` },
-                  type: 1,
-                },
-                {
-                  buttonId: `${ᴋᴇɪ}antilink off`,
-                  buttonText: { displayText: `${ᴋᴇɪ}antilink off` },
-                  type: 1,
-                },
-              ],
-              headerType: 4,
-              imageMessage: media.message.imageMessage,
-            },
-            MessageType.buttonsMessage,
-            {
-              quoted: chat,
-              contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
-            }
-          )
-          .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
-      });
+                footerText: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+                  4
+                )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
+                buttons: [
+                  {
+                    buttonId: `${ᴋᴇɪ}antilink on`,
+                    buttonText: { displayText: `${ᴋᴇɪ}antilink on` },
+                    type: 1,
+                  },
+                  {
+                    buttonId: `${ᴋᴇɪ}antilink off`,
+                    buttonText: { displayText: `${ᴋᴇɪ}antilink off` },
+                    type: 1,
+                  },
+                ],
+                headerType: 4,
+                imageMessage: media.message.imageMessage,
+              },
+              MessageType.buttonsMessage,
+              {
+                quoted: chat,
+                contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
+              }
+            )
+            .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
+        });
+      }
+      // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
+    } catch (ℓαвєяяσя) {
+      ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
+      console.log(ℓαвєяяσя);
     }
   },
 };

@@ -2583,21 +2583,24 @@ const Kebab = hub[Math.floor(Math.random() * hub.length)];
 module.exports = {
   name: `porn`,
   async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
-    // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-    var RpornID = chat.key.id;
-    var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
-    var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
-    const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
-    const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
-    console.log("🍁爪𝖎𝖟𝖚ӄ𝖎™ ᴠᴇʀɪꜰɪᴇᴅ ꜰɪʟᴇ > " + FinalName.toUpperCase() + "✔️");
-    // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-    if (𝓜𝖎𝖟𝖚ӄ𝖎.isGroup && !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderGroupAdmin && !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderDev) {
-      try {
-        return Mizuki_Buttons.MIB(
-          ӄʀǟӄɨռʐ,
-          chat,
-          𝓜𝖎𝖟𝖚ӄ𝖎,
-          `Who Is This Non-Admin •@${ꜱᴇɴᴅᴇʀeceived} Trying to Use Admin-Only Commands.
+    try {
+      // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
+      var RpornID = chat.key.id;
+      var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
+      var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
+      const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
+      const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
+      console.log(
+        "🍁爪𝖎𝖟𝖚ӄ𝖎™ ᴠᴇʀɪꜰɪᴇᴅ ꜰɪʟᴇ > " + FinalName.toUpperCase() + "✔️"
+      );
+      // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
+      if (𝓜𝖎𝖟𝖚ӄ𝖎.isGroup && !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderGroupAdmin && !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderDev) {
+        try {
+          return Mizuki_Buttons.MIB(
+            ӄʀǟӄɨռʐ,
+            chat,
+            𝓜𝖎𝖟𝖚ӄ𝖎,
+            `Who Is This Non-Admin •@${ꜱᴇɴᴅᴇʀeceived} Trying to Use Admin-Only Commands.
 
 *❌ 𝚈𝚘𝚞 𝙰𝚛𝚎 𝙽𝚘𝚝 𝙰𝚕𝚕𝚘𝚠𝚎𝚍!*
 ┌────◆➤ 🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧   
@@ -2605,39 +2608,44 @@ module.exports = {
 │🌶️𝐆𝐫𝐨𝐮𝐩𝐬: _Admins & Devs!_
 │🌽𝐏𝐫𝐢𝐯𝐚𝐭𝐞 _Everyone_
 └───────◆➤`,
-          _𝔏𝔞𝔟_.ɴᴏᴛᴀᴅᴍɪɴ
-        );
-      } catch (ℓαвєяяσя) {
-        ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
-      }
-      // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-    } else {
-      var link = Kebab;
-      if (link.endsWith(`.gif`)) {
-        link = link;
+            _𝔏𝔞𝔟_.ɴᴏᴛᴀᴅᴍɪɴ
+          );
+        } catch (ℓαвєяяσя) {
+          ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
+        }
+        // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
       } else {
-        link = Kebab;
-      }
-      console.log(link);
-      return await ӄʀǟӄɨռʐ.sendMessage(
-        𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-        { url: link },
-        MessageType.video,
-        {
-          contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
-          quoted: chat,
-          mimetype: "video/gif",
-          caption: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
-            4
-          )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_
+        var link = Kebab;
+        if (link.endsWith(`.gif`)) {
+          link = link;
+        } else {
+          link = Kebab;
+        }
+        console.log(link);
+        return await ӄʀǟӄɨռʐ.sendMessage(
+          𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+          { url: link },
+          MessageType.video,
+          {
+            contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
+            quoted: chat,
+            mimetype: "video/gif",
+            caption: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+              4
+            )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_
 
 ┌────◆➤
 │⚡𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 │🍯𝐓𝐡𝐞𝐦𝐬𝐞𝐥𝐯𝐞: @${ꜱᴇɴᴅᴇʀeceived}
 └───────◆➤
 🔗𝐋𝐢𝐧𝐤: ${link}`,
-        }
-      );
+          }
+        );
+      }
+      // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
+    } catch (ℓαвєяяσя) {
+      ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
+      console.log(ℓαвєяяσя);
     }
   },
 };
