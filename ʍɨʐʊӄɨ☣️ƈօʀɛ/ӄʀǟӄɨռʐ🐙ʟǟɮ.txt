@@ -4,4 +4,4 @@ psutil
 autopep8
 pyAesCrypt
 termcolor
-dotenv
+python-dotenv
