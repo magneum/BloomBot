@@ -1,4 +1,9 @@
-FROM debian
+FROM python:latest
+ENV VIRTUAL_ENV "/venv"
+RUN python -m venv $VIRTUAL_ENV
+ENV PATH "$VIRTUAL_ENV/bin:$PATH"
+RUN mkdir 🍁爪𝖎𝖟𝖚ӄ𝖎™
+RUN cd 🍁爪𝖎𝖟𝖚ӄ𝖎™
 RUN apt update 
 RUN apt upgrade -y 
 RUN apt install git -y 
@@ -10,4 +15,5 @@ RUN git clone https://github.com/Krakinz/Mizuki.git
 RUN cd Mizuki
 WORKDIR /Mizuki
 RUN npm i --force
+RUN pip install -r ʍɨʐʊӄɨ☣️ƈօʀɛ/ӄʀǟӄɨռʐ🐙ʟǟɮ.txt
 CMD python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py
