@@ -2,7 +2,7 @@
 const Mizuki_Buttons = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Mizuki_Buttons`);
 const Mizuki_Static = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Mizuki_Static`);
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
-const { TelegraPh } = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/uploader`);
+const { TelegraPh} = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/uploader`);
 const _𝔏𝔞𝔟_ = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/_𝔏𝔞𝔟_`);
 const ꜰᴜᴄᴋ = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/oShit`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
@@ -12,8 +12,8 @@ const util = require("util");
 const fs = require(`fs`);
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
 module.exports = {
-  name: `tourl`,
-  𝓜𝓮𝓮6ʍօʀɛ: `*${ᴋᴇɪ}tourl* (reply image)`,
+  name: `img2url`,
+  𝓜𝓮𝓮6ʍօʀɛ: `*${ᴋᴇɪ}img2url* (reply image)`,
   async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
     try {
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
@@ -33,13 +33,12 @@ module.exports = {
         console.log(FILEOBJECT);
         await ӄʀǟӄɨռʐ.downloadAndSaveMediaMessage(
           FILEOBJECT,
-          `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FinalName}_${FILEID}`
+          `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FILEID}`
         );
-        var before = `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FinalName}_${FILEID}.jpeg`;
-        let gotTgh = await TelegraPh(before);
+        let gotTgh = await TelegraPh(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FILEID}.jpeg`);
         const media = await ӄʀǟӄɨռʐ.prepareMessage(
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-          { url: `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FinalName}_${FILEID}.jpeg` },
+          { url: `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FILEID}.jpeg` },
           MessageType.image,
           { mimetype: Mimetype.png && Mimetype.jpeg }
         );
@@ -74,8 +73,9 @@ module.exports = {
               contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
             }
           )
-          .then(fs.unlinkSync(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FinalName}_${FILEID}.jpeg`))
+          .then(fs.unlinkSync(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FILEID}.jpeg`))
           .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
+        // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
       } else {
         var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(𝓜𝖎𝖟𝖚ӄ𝖎.commandName);
         𝓜𝓮𝓮ʍօʀɛ = 𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ === undefined ? `Null` : 𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ;

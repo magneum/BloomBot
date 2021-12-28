@@ -39,7 +39,7 @@ module.exports = {
 │🗂️• ${ᴋᴇɪ}slowvid: _convert normal vid to slow vid_
 │🗂️• ${ᴋᴇɪ}reversevid: _convert normal vid to reverse vid_
 │🗂️• ${ᴋᴇɪ}tomp3: _convert video tp music_
-│🗂️ ${ᴋᴇɪ}tourl: _convert image/video tp url_
+│🗂️ ${ᴋᴇɪ}img2url: _convert image tp url_
 └───────◆➤`;
       return Mizuki_Static.MGS(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, MainText, MediaUrl).catch(
         (ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
