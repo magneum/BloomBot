@@ -509,7 +509,7 @@ ${update.desc}`,
                   // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
                 } else if (update && update.summary.changes) {
                   var child = require("child_process").exec(
-                    "node 🍁爪𝖎𝖟𝖚ӄ𝖎™.js"
+                    "node ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/🍁爪𝖎𝖟𝖚ӄ𝖎™.js"
                   );
                   child.stdout.pipe(process.stdout);
                   child.on("exit", async function () {
