@@ -29,12 +29,19 @@ module.exports = {
     // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
     // var last = 𝓜𝖎𝖟𝖚ӄ𝖎.body.replace(      𝓜𝖎𝖟𝖚ӄ𝖎.body[0] + 𝓜𝖎𝖟𝖚ӄ𝖎.commandName + " ",      ""    );
 
-    console.log(𝓜𝖎𝖟𝖚ӄ𝖎.body);
-    await neko.nekobin(𝓜𝖎𝖟𝖚ӄ𝖎.body).then(async (data) => {
-      return await ӄʀǟӄɨռʐ.sendMessage(
+    check = 𝓜𝖎𝖟𝖚ӄ𝖎.body;
+    neko.nekobin(check).then((data) => {
+      dt = data.url;
+      console.log(dt);
+      console.log(check);
+      ӄʀǟӄɨռʐ.sendMessage(
         𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-        data.url,
-        MessageType.text
+        { url: "https://i.postimg.cc/3wGtxscV/Mem-Err.png" },
+        MessageType.image,
+        {
+          quoted: chat,
+          caption: dt,
+        }
       );
     });
   },
