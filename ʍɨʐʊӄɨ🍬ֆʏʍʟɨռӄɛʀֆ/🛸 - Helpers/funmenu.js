@@ -36,6 +36,7 @@ module.exports = {
 
 ┌──────────────◆➤ 𝙁𝙪𝙣𝙨
 │🦄• ${ᴋᴇɪ}google: _search anything on google_
+│🦄• ${ᴋᴇɪ}wallpaper: _download wallpapers_
 │🦄• ${ᴋᴇɪ}github: _fing any github profile_
 │🦄• ${ᴋᴇɪ}beautycheck: _check beauty of tagged person/yourself_
 │🦄• ${ᴋᴇɪ}joke: _get random jokes_
