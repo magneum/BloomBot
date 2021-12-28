@@ -2,7 +2,7 @@
     "logo": "https://i.postimg.cc/NjDyyvY0/Mizuki.jpg",
     "name": "𝓜𝖎𝖟𝖚ӄ𝖎™",
     "repository": "https://github.com/Krakinz/Mizuki.git",
-    "stack": "heroku-20",
+    "stack": "container",
     "description": "ᴀᴅᴠᴀɴᴄᴇᴅ ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ 80+ ᴄᴏᴍᴍᴀɴᴅꜱ ꜰᴏʀ ʙᴏᴛʜ ᴘʀɪᴠᴀᴛᴇ ᴀɴᴅ ɢʀᴏᴜᴘ-ᴜꜱᴀɢᴇ",
     "env": {
         "MIZUKI": {
@@ -26,14 +26,6 @@
             "value": "91"
         }
     },
-    "buildpacks": [
-        {
-            "url": "heroku/nodejs"
-        },
-        {
-            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
-        }
-    ],
     "addons": [
         {
             "plan": "heroku-postgresql",
