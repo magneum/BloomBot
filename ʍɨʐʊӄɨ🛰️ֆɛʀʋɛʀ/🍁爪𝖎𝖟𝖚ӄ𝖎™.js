@@ -35,25 +35,23 @@ var ӄʀǟӄɨռʐ = 𝓜𝖎𝖟𝖚ӄ𝖎ֆʏռօք.WhatsApp;
 async function 𝐌𝐢𝐳𝐮𝐤𝐢() {
   var ꜱɪᴛʀᴀᴘ = new Map();
   var commandUsage = new Map();
-  console.log(
-    Kolor.yellow.bold(`💡INFO ⬰ 𝐒𝐲𝐦𝐥𝐢𝐧𝐤𝐢𝐧𝐠 𝐖𝐢𝐭𝐡 𝐌𝐢𝐳𝐮𝐤𝐢 𝐒𝐲𝐬𝐭𝐞𝐦...\n✔️`)
-  );
+  console.log(Kolor.yellow(`💡INFO ⬰ 𝐒𝐲𝐦𝐥𝐢𝐧𝐤𝐢𝐧𝐠 𝐖𝐢𝐭𝐡 𝐌𝐢𝐳𝐮𝐤𝐢 𝐒𝐲𝐬𝐭𝐞𝐦...\n✔️`));
   console.clear();
   // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
   if (_𝔏𝔞𝔟_.HEROKU_API === `Null` || _𝔏𝔞𝔟_.HEROKU_BOT_NAME === `Null`) {
     console.log(
-      Kolor.yellow.bold(
+      Kolor.yellow(
         `❌ERROR ⬰  𝐒𝐞𝐞𝐦𝐬 𝐥𝐢𝐤𝐞 𝐇𝐞𝐫𝐨𝐤𝐮 𝐯𝐚𝐫𝐬 𝐚𝐫𝐞 𝐢𝐧𝐯𝐚𝐥𝐢𝐝.𝐏𝐥𝐞𝐚𝐬𝐞 𝐜𝐡𝐞𝐜𝐤 𝐚𝐧𝐝 𝐫𝐞𝐭𝐫𝐲!`
       )
     );
     process.exit(0);
   }
   console.log(
-    Kolor.yellow.bold(
+    Kolor.yellow(
       `⬡==========================⬡    🍁 爪𝖎𝖟𝖚ӄ𝖎™ 🍁    ⬡==========================⬡`
     )
   );
-  console.log(Kolor.yellow.bold(`💡INFO ⬰ 𝐂𝐡𝐞𝐜𝐤𝐢𝐧𝐠 𝐅𝐨𝐫 𝐌𝐢𝐳𝐮𝐤𝐢 𝐔𝐩𝐝𝐚𝐭𝐞𝐬...\n✔️`));
+  console.log(Kolor.yellow(`💡INFO ⬰ Checking For 🍁爪𝖎𝖟𝖚ӄ𝖎™Updates ...\n✔️`));
   if (yes_no === `Null`) {
     await AutoKrakz();
   }
@@ -68,30 +66,30 @@ async function 𝐌𝐢𝐳𝐮𝐤𝐢() {
       ℓαвєяяσя instanceof Syntaxℓαвєяяσя
     ) {
       console.log(
-        Kolor.red.bold(`𝗜𝗻𝗰𝗼𝗿𝗿𝗲𝗰𝘁 𝗦𝗲𝘀𝘀𝗶𝗼𝗻 𝗦𝘁𝗿𝗶𝗻𝗴. 𝗣𝗹𝗲𝗮𝘀𝗲 𝗮𝘂𝘁𝗵𝗲𝗻𝘁𝗶𝗰𝗮𝘁𝗲 𝗮𝗴𝗮𝗶𝗻!`)
+        Kolor.red(`𝗜𝗻𝗰𝗼𝗿𝗿𝗲𝗰𝘁 𝗦𝗲𝘀𝘀𝗶𝗼𝗻 𝗦𝘁𝗿𝗶𝗻𝗴. 𝗣𝗹𝗲𝗮𝘀𝗲 𝗮𝘂𝘁𝗵𝗲𝗻𝘁𝗶𝗰𝗮𝘁𝗲 𝗮𝗴𝗮𝗶𝗻!`)
       );
       process.exit(0);
     } else {
-      console.log(Kolor.red.bold(`SOMETHING WENT WRONG.\n`));
+      console.log(Kolor.red(`SOMETHING WENT WRONG.\n`));
       process.exit(0);
     }
   }
   // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
   ӄʀǟӄɨռʐ.on(`connecting`, async () => {
     console.log(
-      Kolor.yellow.bold(
+      Kolor.yellow(
         `⬡==========================⬡    🍁 爪𝖎𝖟𝖚ӄ𝖎™ 🍁    ⬡==========================⬡`
       )
     );
     console.log(
-      Kolor.yellow.bold(`💡INFO ⬰ 𝐂𝐨𝐧𝐧𝐞𝐜𝐭𝐢𝐧𝐠 𝐖𝐢𝐭𝐡 𝐘𝐨𝐮𝐫 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩...🛸`)
+      Kolor.yellow(`💡INFO ⬰ Connecting to 🍁爪𝖎𝖟𝖚ӄ𝖎™ Whatsapp...🛸`)
     );
-    console.log(Kolor.yellow.bold(`💡INFO ⬰ 𝐂𝐨𝐧𝐧𝐞𝐜𝐭𝐞𝐝...✔️`));
+    console.log(Kolor.yellow(`💡INFO ⬰ 🍁爪𝖎𝖟𝖚ӄ𝖎™ Connected✔️`));
   });
   // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
   ӄʀǟӄɨռʐ.on(`open`, async () => {
     console.log(
-      Kolor.yellow.bold(
+      Kolor.yellow(
         `⬡==========================⬡    🍁 爪𝖎𝖟𝖚ӄ𝖎™ 🍁    ⬡==========================⬡`
       )
     );
@@ -103,7 +101,7 @@ async function 𝐌𝐢𝐳𝐮𝐤𝐢() {
       await 𝓜𝖎𝖟𝖚ӄ𝖎sql.validate();
       await 𝓜𝖎𝖟𝖚ӄ𝖎sql
         .sync()
-        .then(console.log(Kolor.yellow.bold(`💡INFO ⬰ 𝐂𝐨𝐧𝐧𝐞𝐜𝐭𝐞𝐝...✔️`)));
+        .then(console.log(Kolor.yellow(`💡INFO ⬰ 🍁爪𝖎𝖟𝖚ӄ𝖎™ Connected✔️`)));
     } catch (ℓαвєяяσя) {
       console.ℓαвєяяσя(
         `❌ERROR ⬰  𝗨𝗻𝗮𝗯𝗹𝗲 𝘁𝗼 𝗰𝗼𝗻𝗻𝗲𝗰𝘁 𝘁𝗼 𝘁𝗵𝗲 𝗱𝗮𝘁𝗮𝗯𝗮𝘀𝗲:`,
@@ -111,7 +109,7 @@ async function 𝐌𝐢𝐳𝐮𝐤𝐢() {
       );
     }
     console.log(
-      Kolor.red.bold(`
+      Kolor.red(`
 ⬡==========================⬡    🍁 爪𝖎𝖟𝖚ӄ𝖎™ 🍁    ⬡==========================⬡
 ███╗   ███╗██╗███████╗██╗   ██╗██╗  ██╗██╗
 ████╗ ████║██║╚══███╔╝██║   ██║██║ ██╔╝██║
@@ -151,7 +149,7 @@ async function 𝐌𝐢𝐳𝐮𝐤𝐢() {
     } catch {}
   });
   // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-  await ӄʀǟӄɨռʐ.connect().then(ʄǟռƈʏ(ꜱɪᴛʀᴀᴘ,commandUsage));
+  await ӄʀǟӄɨռʐ.connect().then(ʄǟռƈʏ(ꜱɪᴛʀᴀᴘ, commandUsage));
   ӄʀǟӄɨռʐ.on(`group-update`, async (update) => {
     try {
       const groupupdateID = await ӄʀǟӄɨռʐ.groupMetadata(update.jid);
@@ -346,7 +344,7 @@ ${update.desc}`,
     try {
       console.log(chat);
       console.log(
-        Kolor.yellow.bold(
+        Kolor.yellow(
           `⬡==========================⬡    🍁 爪𝖎𝖟𝖚ӄ𝖎™ 🍁    ⬡==========================⬡`
         )
       );
@@ -414,7 +412,7 @@ ${update.desc}`,
             }
           } else if (CheckLinks === false) {
             console.log(
-              Kolor.red.bold(
+              Kolor.red(
                 `💡INFO ⬰ Antilink is ${CheckLinks} in > ${𝓜𝖎𝖟𝖚ӄ𝖎.groupName}.`
               )
             );
@@ -424,7 +422,7 @@ ${update.desc}`,
         if (𝓜𝖎𝖟𝖚ӄ𝖎.isCmd) {
           // 120363039360979234@g.us
           console.log(
-            Kolor.yellow.bold(
+            Kolor.yellow(
               `💡INFO ⬰ ${𝓜𝖎𝖟𝖚ӄ𝖎.commandName} Executed By ${𝓜𝖎𝖟𝖚ӄ𝖎.sender}`
             )
           );
@@ -491,7 +489,7 @@ ${update.desc}`,
                     ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
                   );
                 console.log(
-                  Kolor.blue.bold(
+                  Kolor.blue(
                     "⬡==========================⬡    🍁Starting Mizuki pull..."
                   )
                 );
@@ -503,7 +501,7 @@ ${update.desc}`,
                     console.log(`Merged ${mergeSummary.merges.length} files`);
                   } catch (err) {
                     console.error(
-                      `Merge resulted in ${Kolor.red.bold(err)} conflicts`
+                      `Merge resulted in ${Kolor.red(err)} conflicts`
                     );
                   }
                   // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
@@ -561,6 +559,6 @@ Type _*${ᴋᴇɪ}help*_ and Read Everything Properly`,
 }
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
 𝐌𝐢𝐳𝐮𝐤𝐢().catch((ℓαвєяяσя) =>
-  console.log(Kolor.red.bold(`❌ERROR ⬰ `), Kolor.red.bold(ℓαвєяяσя))
+  console.log(Kolor.red(`❌ERROR ⬰ `), Kolor.red(ℓαвєяяσя))
 );
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡

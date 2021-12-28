@@ -1,10 +1,6 @@
 {
   "name": "mizuki",
   "vers": "v25.1-Stable",
-  "engines": {
-    "node": "v17.3.0",
-    "npm": "8.3.0"
-  },
   "keywords": [
     "whatsapp",
     "js-whatsapp",

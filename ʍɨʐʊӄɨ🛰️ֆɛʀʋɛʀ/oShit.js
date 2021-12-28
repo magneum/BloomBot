@@ -21,19 +21,14 @@ exports.catch = async (ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎
   const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
   const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
   // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-  const media = await ӄʀǟӄɨռʐ.prepareMessage(
-    𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-    { url: _𝔏𝔞𝔟_.ERROR },
-    MessageType.image,
-    { mimetype: Mimetype.png }
-  );
   await ӄʀǟӄɨռʐ
     .sendMessage(
       𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
       {
-        contentText: `⬡ 𝘞𝘦 𝘙𝘢𝘯 𝘐𝘯𝘵𝘰 𝘚𝘰𝘮𝘦 𝘌𝘳𝘳𝘰𝘳
-
-◆➤ 𝙏𝙧𝙮 𝐂𝐨𝐦𝐦𝐚𝐧𝐝 _${ᴋᴇɪ}${FinalName}_ 𝙇𝙖𝙩𝙚𝙧!`,
+        contentText: `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived},
+        
+◆ 𝘞𝘦 𝘙𝘢𝘯 𝘐𝘯𝘵𝘰 𝘚𝘰𝘮𝘦 𝘌𝘳𝘳𝘰𝘳 ◆
+➤ 𝙏𝙧𝙮 𝙇𝙖𝙩𝙚𝙧 𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_!`,
         footerText: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
           4
         )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
@@ -44,8 +39,7 @@ exports.catch = async (ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎
             type: 1,
           },
         ],
-        headerType: 4,
-        imageMessage: media.message.imageMessage,
+        headerType: 1,
       },
       MessageType.buttonsMessage,
       {
