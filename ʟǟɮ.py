@@ -72,7 +72,7 @@ if CODE is not None:
             if HEROKU == "HEROKU":
                 LOGS.info(str(e))
             else:
-                print(e, "cyan")
+                print(e)
             pass
     if os.path.exists("xp0e.zip"):
         pass
@@ -124,13 +124,13 @@ if CODE is not None:
             if HEROKU == "HEROKU":
                 LOGS.info(str(e))
             else:
-                print(e, "cyan")
+                print(e)
             pass
     except Exception as e:
         if HEROKU == "HEROKU":
             LOGS.info(str(e))
         else:
-            print(e, "cyan")
+            print(e)
         pass
 
     if os.path.isfile("xp0e.py"):
@@ -141,7 +141,7 @@ if CODE is not None:
             if HEROKU == "HEROKU":
                 LOGS.info(str(e))
             else:
-                print(e, "cyan")
+                print(e)
         pass
     else:
         pass
@@ -152,7 +152,7 @@ if CODE is not None:
         if HEROKU == "HEROKU":
             LOGS.info(str(e))
         else:
-            print(e, "cyan")
+            print(e)
         pass
 
     try:
@@ -171,7 +171,7 @@ if CODE is not None:
         if HEROKU == "HEROKU":
             LOGS.info(str(e))
         else:
-            print(e, "cyan")
+            print(e)
         pass
 
     try:
@@ -198,5 +198,5 @@ if CODE is not None:
         if HEROKU == "HEROKU":
             LOGS.info(str(e))
         else:
-            print(e, "cyan")
+            print(e)
         pass
