@@ -16,6 +16,7 @@ var scriptName = path.basename(__filename);
 var str = scriptName;
 var newScpt = str.slice(0, -3).toLowerCase();
 const { getDadjoke } = require(`random-jokes`);
+const neko = require(`nekobin`);
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
 module.exports = {
   name: newScpt,
@@ -27,12 +28,18 @@ module.exports = {
     const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
     console.log("🍁爪𝖎𝖟𝖚ӄ𝖎™ ᴠᴇʀɪꜰɪᴇᴅ ꜰɪʟᴇ > " + FinalName.toUpperCase() + "✔️");
     // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-    console.log(𝓜𝖎𝖟𝖚ӄ𝖎.body);
-    return await ӄʀǟӄɨռʐ.sendMessage(
-      𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-      𝓜𝖎𝖟𝖚ӄ𝖎.body,
-      MessageType.text
+    var last = 𝓜𝖎𝖟𝖚ӄ𝖎.body.replace(
+      𝓜𝖎𝖟𝖚ӄ𝖎.body[0] + 𝓜𝖎𝖟𝖚ӄ𝖎.commandName + " ",
+      ""
     );
+    console.log(last);
+    await neko.nekobin(last).then(async (data) => {
+      return await ӄʀǟӄɨռʐ.sendMessage(
+        𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+        data.url,
+        MessageType.text
+      );
+    });
   },
 };
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
