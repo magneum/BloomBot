@@ -2,9 +2,9 @@
 const Mizuki_Buttons = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Mizuki_Buttons`);
 const Mizuki_Static = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Mizuki_Static`);
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
-const { TelegraPh} = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/uploader`);
-const _𝔏𝔞𝔟_ = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/_𝔏𝔞𝔟_`);
+const { UploadFileUgu } = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/uploader`);
 const ꜰᴜᴄᴋ = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/oShit`);
+const _𝔏𝔞𝔟_ = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/_𝔏𝔞𝔟_`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 const vers = require(`../../package.json`);
@@ -12,8 +12,8 @@ const util = require("util");
 const fs = require(`fs`);
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
 module.exports = {
-  name: `img2url`,
-  𝓜𝓮𝓮6ʍօʀɛ: `*${ᴋᴇɪ}img2url* (reply image)`,
+  name: `vid2url`,
+  𝓜𝓮𝓮6ʍօʀɛ: `*${ᴋᴇɪ}vid2url* (reply video)`,
   async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
     try {
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
@@ -25,7 +25,7 @@ module.exports = {
         "🍁爪𝖎𝖟𝖚ӄ𝖎™ ᴠᴇʀɪꜰɪᴇᴅ ꜰɪʟᴇ > " + FinalName.toUpperCase() + "✔️"
       );
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-      if (𝓜𝖎𝖟𝖚ӄ𝖎.isReplyImage) {
+      if (𝓜𝖎𝖟𝖚ӄ𝖎.isReplyVideo) {
         var FILEOBJECT = {
           message: chat.message.extendedTextMessage.contextInfo.quotedMessage,
         };
@@ -35,47 +35,9 @@ module.exports = {
           FILEOBJECT,
           `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FILEID}`
         );
-        let gotTgh = await TelegraPh(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FILEID}.jpeg`);
-        const media = await ӄʀǟӄɨռʐ.prepareMessage(
-          𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-          { url: `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FILEID}.jpeg` },
-          MessageType.image,
-          { mimetype: Mimetype.png && Mimetype.jpeg }
-        );
-        return await ӄʀǟӄɨռʐ
-          .sendMessage(
-            𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            {
-              contentText: `•🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived},
-
-┌────◆➤🍌𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
-│
-│📤𝗙𝗿𝗼𝗺: _Image_
-│📥𝗧𝗼: _Telegra.ph URL_
-└───────◆➤
-│🔗 𝐔𝐫𝐥: ${util.format(gotTgh)}`,
-              footerText: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
-                4
-              )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
-              buttons: [
-                {
-                  buttonId: `${ᴋᴇɪ}help`,
-                  buttonText: { displayText: `${ᴋᴇɪ}help` },
-                  type: 1,
-                },
-              ],
-              headerType: 4,
-              imageMessage: media.message.imageMessage,
-            },
-            MessageType.buttonsMessage,
-            {
-              quoted: chat,
-              contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
-            }
-          )
-          .then(fs.unlinkSync(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FILEID}.jpeg`))
-          .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
-        // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
+        var Convert_From = `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FILEID}.mp4`;
+        let gotTgh = await UploadFileUgu(Convert_From);
+        console.log(util.format(gotTgh));
       } else {
         var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(𝓜𝖎𝖟𝖚ӄ𝖎.commandName);
         𝓜𝓮𝓮ʍօʀɛ = 𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ === undefined ? `Null` : 𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ;
