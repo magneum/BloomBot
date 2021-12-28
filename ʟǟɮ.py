@@ -7,7 +7,6 @@ import shutil
 from datetime import *
 from os import getenv
 import os
-from cprint import *
 from dotenv import load_dotenv
 load_dotenv("./ʍɨʐʊӄɨ☣️ƈօʀɛ.env")
 os.system("clear")
@@ -18,7 +17,7 @@ HEROKU = getenv("HEROKU", None)
 HPCD = getenv("HEROKU", None)
 CODE = getenv("CODE", None)
 BFS = 64 * 1024
-cprint('''
+print('''
 ⬡==========================⬡    🍁 爪𝖎𝖟𝖚ӄ𝖎™ 🍁    ⬡==========================⬡
                 ███╗   ███╗██╗███████╗██╗   ██╗██╗  ██╗██╗
                 ████╗ ████║██║╚══███╔╝██║   ██║██║ ██╔╝██║
