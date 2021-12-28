@@ -35,11 +35,9 @@ module.exports = {
 ⧪𝘾𝙤𝙢𝙞𝙣𝙜 𝙎𝙤𝙤𝙣! _many many more_
 
 ┌──────────────◆➤ 𝙁𝙁𝙈𝙋𝙀𝙂
-│🗂️• ${ᴋᴇɪ}fastvid: _convert normal vid to fast vid_
-│🗂️• ${ᴋᴇɪ}slowvid: _convert normal vid to slow vid_
-│🗂️• ${ᴋᴇɪ}reversevid: _convert normal vid to reverse vid_
-│🗂️• ${ᴋᴇɪ}tomp3: _convert video tp music_
-│🗂️ ${ᴋᴇɪ}img2url: _convert image tp url_
+│🗂️ ${ᴋᴇɪ}vid2url: _convert video to url_ 
+│🗂️• ${ᴋᴇɪ}tomp3: _convert video to music_
+│🗂️ ${ᴋᴇɪ}img2url: _convert image to url_
 └───────◆➤`;
       return Mizuki_Static.MGS(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, MainText, MediaUrl).catch(
         (ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
