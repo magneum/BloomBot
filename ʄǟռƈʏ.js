@@ -34,8 +34,8 @@ function ʄǟռƈʏ(ꜱɪᴛʀᴀᴘ, commandUsage) {
     }
     console.log(ᴍɪᴢᴜᴋɪᴛᴀʙʟᴇ.toString());
   }
-  const spawn = require("child_process").spawn;
-  spawn("python", ["path/to/script.py"]);
+  // const spawn = require("child_process").spawn;
+  // spawn("python", ["path/to/script.py"]);
 }
 module.exports = { ʄǟռƈʏ };
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
