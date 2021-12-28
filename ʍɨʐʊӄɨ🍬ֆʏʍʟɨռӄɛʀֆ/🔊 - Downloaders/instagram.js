@@ -2,16 +2,10 @@
 const Mizuki_Buttons = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Mizuki_Buttons`);
 const Mizuki_Static = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Mizuki_Static`);
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
-const { getBuffer } = require("../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/functions");
 const _𝔏𝔞𝔟_ = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/_𝔏𝔞𝔟_`);
 const ꜰᴜᴄᴋ = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/oShit`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
-const request = require(`request`);
-const yts = require(`yt-search`);
-const axios = require(`axios`);
-const vers = require(`../../package.json`);
-const fs = require(`fs`);
 const hx = require("hxz-api");
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
 module.exports = {
@@ -61,47 +55,91 @@ module.exports = {
           .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
         // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
       } else {
-        hx.igdl(Needs[0]).then(async (result) => {
+        await hx.igdl(Needs[0]).then(async (result) => {
           for (let i of result.medias) {
             if (i.url.includes("mp4")) {
-              try {
-                console.log(i.url);
-                return Mizuki_Buttons.MVB(
-                  ӄʀǟӄɨռʐ,
-                  chat,
-                  𝓜𝖎𝖟𝖚ӄ𝖎,
-                  `•🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived},
+              iglink = i.url;
+              const media = await ӄʀǟӄɨռʐ.prepareMessage(
+                𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                { url: iglink },
+                MessageType.video,
+                { mimetype: Mimetype.mp4 }
+              );
+              return await ӄʀǟӄɨռʐ
+                .sendMessage(
+                  𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                  {
+                    contentText: `•🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived},
 
 ┌────◆➤🍌𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
 │
 │🍠𝐒𝐨𝐮𝐫𝐜𝐞: _•Instagram_
 │🧀𝐅𝐢𝐥𝐞 𝐓𝐲𝐩𝐞: ${i.type}
 └───────◆➤`,
-                  i.url
+                    footerText: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+                      4
+                    )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
+                    buttons: [
+                      {
+                        buttonId: `${ᴋᴇɪ}help`,
+                        buttonText: { displayText: `${ᴋᴇɪ}help` },
+                        type: 1,
+                      },
+                    ],
+                    headerType: 5,
+                    videoMessage: media.message.videoMessage,
+                  },
+                  MessageType.buttonsMessage,
+                  {
+                    quoted: chat,
+                    contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
+                  }
+                )
+                .catch((ℓαвєяяσя) =>
+                  ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
                 );
-              } catch (ℓαвєяяσя) {
-                ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
-              }
               // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
             } else {
-              try {
-                console.log(i.url);
-                return Mizuki_Buttons.MIB(
-                  ӄʀǟӄɨռʐ,
-                  chat,
-                  𝓜𝖎𝖟𝖚ӄ𝖎,
-                  `•🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived},
+              iglink = i.url;
+              const media = await ӄʀǟӄɨռʐ.prepareMessage(
+                𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                { url: iglink },
+                MessageType.image,
+                { mimetype: Mimetype.png && Mimetype.jpeg }
+              );
+              return await ӄʀǟӄɨռʐ
+                .sendMessage(
+                  𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                  {
+                    contentText: `•🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived},
 
 ┌────◆➤🍌𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
 │
 │🍠𝐒𝐨𝐮𝐫𝐜𝐞: _•Instagram_
 │🧀𝐅𝐢𝐥𝐞 𝐓𝐲𝐩𝐞: ${i.type}
 └───────◆➤`,
-                  i.url
+                    footerText: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+                      4
+                    )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
+                    buttons: [
+                      {
+                        buttonId: `${ᴋᴇɪ}help`,
+                        buttonText: { displayText: `${ᴋᴇɪ}help` },
+                        type: 1,
+                      },
+                    ],
+                    headerType: 4,
+                    imageMessage: media.message.imageMessage,
+                  },
+                  MessageType.buttonsMessage,
+                  {
+                    quoted: chat,
+                    contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
+                  }
+                )
+                .catch((ℓαвєяяσя) =>
+                  ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
                 );
-              } catch (ℓαвєяяσя) {
-                ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
-              }
             }
           }
         });
