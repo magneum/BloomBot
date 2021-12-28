@@ -72,7 +72,7 @@ if CODE is not None:
             if HEROKU == "HEROKU":
                 LOGS.info(str(e))
             else:
-                cprint(e, "cyan")
+                print(e, "cyan")
             pass
     if os.path.exists("xp0e.zip"):
         pass
@@ -124,13 +124,13 @@ if CODE is not None:
             if HEROKU == "HEROKU":
                 LOGS.info(str(e))
             else:
-                cprint(e, "cyan")
+                print(e, "cyan")
             pass
     except Exception as e:
         if HEROKU == "HEROKU":
             LOGS.info(str(e))
         else:
-            cprint(e, "cyan")
+            print(e, "cyan")
         pass
 
     if os.path.isfile("xp0e.py"):
@@ -141,7 +141,7 @@ if CODE is not None:
             if HEROKU == "HEROKU":
                 LOGS.info(str(e))
             else:
-                cprint(e, "cyan")
+                print(e, "cyan")
         pass
     else:
         pass
@@ -152,7 +152,7 @@ if CODE is not None:
         if HEROKU == "HEROKU":
             LOGS.info(str(e))
         else:
-            cprint(e, "cyan")
+            print(e, "cyan")
         pass
 
     try:
@@ -171,13 +171,13 @@ if CODE is not None:
         if HEROKU == "HEROKU":
             LOGS.info(str(e))
         else:
-            cprint(e, "cyan")
+            print(e, "cyan")
         pass
 
     try:
         from xp0edoc import *
         if CODE in YYUCCitinZfgQdrclRPOP:
-            cprint("✅✅✅     Correct ӄʀǟӄɨռʐ code    ✅✅✅",                "green")
+            print("✅✅✅     Correct ӄʀǟӄɨռʐ code    ✅✅✅",                "green")
             os.remove("xp0e.zip")
             os.remove("xp0e.aes")
             os.remove("xp0edoc.py")
@@ -188,7 +188,7 @@ if CODE is not None:
                 pass
         else:
             os.system("clear")
-            cprint("❌❌❌     Wrong ӄʀǟӄɨռʐ code   ❌❌❌",                "red")
+            print("❌❌❌     Wrong ӄʀǟӄɨռʐ code   ❌❌❌",                "red")
             os.remove("xp0e.zip")
             os.remove("xp0e.aes")
             os.remove("xp0edoc.py")
@@ -198,5 +198,5 @@ if CODE is not None:
         if HEROKU == "HEROKU":
             LOGS.info(str(e))
         else:
-            cprint(e, "cyan")
+            print(e, "cyan")
         pass
