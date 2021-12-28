@@ -15,7 +15,6 @@ var path = require(`path`);
 var scriptName = path.basename(__filename);
 var str = scriptName;
 var newScpt = str.slice(0, -3).toLowerCase();
-const { getDadjoke } = require(`random-jokes`);
 const neko = require(`nekobin`);
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
 module.exports = {
