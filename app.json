@@ -2,7 +2,7 @@
     "logo": "https://i.postimg.cc/NjDyyvY0/Mizuki.jpg",
     "name": "𝓜𝖎𝖟𝖚ӄ𝖎™",
     "repository": "https://github.com/Krakinz/Mizuki.git",
-    "stack": "heroku-18",
+    "stack": "heroku-20",
     "description": "ᴀᴅᴠᴀɴᴄᴇᴅ ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ 80+ ᴄᴏᴍᴍᴀɴᴅꜱ ꜰᴏʀ ʙᴏᴛʜ ᴘʀɪᴠᴀᴛᴇ ᴀɴᴅ ɢʀᴏᴜᴘ-ᴜꜱᴀɢᴇ",
     "env": {
         "MIZUKI": {
