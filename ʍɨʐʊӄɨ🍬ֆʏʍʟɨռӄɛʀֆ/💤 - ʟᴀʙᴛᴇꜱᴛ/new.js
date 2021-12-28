@@ -31,19 +31,19 @@ module.exports = {
 
     check = 𝓜𝖎𝖟𝖚ӄ𝖎.replyMessage;
     console.log(check);
-    // neko.nekobin(check).then((data) => {
-    //   dt = data.url;
-    //   console.log(dt);
-    //   ӄʀǟӄɨռʐ.sendMessage(
-    //     𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-    //     { url: "https://i.postimg.cc/3wGtxscV/Mem-Err.png" },
-    //     MessageType.image,
-    //     {
-    //       quoted: chat,
-    //       caption: dt,
-    //     }
-    //   );
-    // });
+    neko.nekobin(check).then((data) => {
+      dt = data.url;
+      console.log(dt);
+      ӄʀǟӄɨռʐ.sendMessage(
+        𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+        { url: "https://i.postimg.cc/3wGtxscV/Mem-Err.png" },
+        MessageType.image,
+        {
+          quoted: chat,
+          caption: dt,
+        }
+      );
+    });
   },
 };
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
