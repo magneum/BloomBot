@@ -15,6 +15,5 @@ RUN git clone https://github.com/Krakinz/Mizuki.git
 RUN cd Mizuki
 WORKDIR /Mizuki
 RUN npm i --force
-RUN npm audit fix --force
 RUN pip install -r ʍɨʐʊӄɨ☣️ƈօʀɛ/ӄʀǟӄɨռʐ🐙ʟǟɮ.txt
 CMD python3 ʟǟɮ.py
