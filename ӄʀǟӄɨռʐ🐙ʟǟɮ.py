@@ -1,12 +1,27 @@
-import os 
-import platform
- 
+try:
+    import platform
+    import psutil
+    import os
+    from cprint import *
+except ImportError:
+    os.system('pip install -r ./ʍɨʐʊӄɨ☣️ƈօʀɛ/ӄʀǟӄɨռʐ🐙ʟǟɮ.txt')
 my_system = platform.uname()
- 
-print(f"System: {my_system.system}")
-print(f"Node Name: {my_system.node}")
-print(f"Release: {my_system.release}")
-print(f"Version: {my_system.version}")
-print(f"Machine: {my_system.machine}")
-print(f"Processor: {my_system.processor}")
-os.system("node 🍁爪𝖎𝖟𝖚ӄ𝖎™.js")
+cprint('⬡==========================⬡    🍁 爪𝖎𝖟𝖚ӄ𝖎™ 🍁    ⬡==========================⬡')
+cprint(f'🍁System: {my_system.system}')
+cprint(f'🍁Node Name: {my_system.node}')
+cprint(f'🍁Release: {my_system.release}')
+cprint(f'🍁Version: {my_system.version}')
+cprint(f'🍁Machine: {my_system.machine}')
+cprint(f'🍁Memory: {psutil.virtual_memory()}')
+cprint(f'🍁Processor: {my_system.processor}')
+cprint('''
+⬡==========================⬡    🍁 爪𝖎𝖟𝖚ӄ𝖎™ 🍁    ⬡==========================⬡
+            ███╗   ███╗██╗███████╗██╗   ██╗██╗  ██╗██╗
+            ████╗ ████║██║╚══███╔╝██║   ██║██║ ██╔╝██║
+            ██╔████╔██║██║  ███╔╝ ██║   ██║█████╔╝ ██║
+            ██║╚██╔╝██║██║ ███╔╝  ██║   ██║██╔═██╗ ██║
+            ██║ ╚═╝ ██║██║███████╗╚██████╔╝██║  ██╗██║
+            ╚═╝     ╚═╝╚═╝╚══════╝ ╚═════╝ ╚═╝  ╚═╝╚═╝
+⬡==========================⬡    🍁 爪𝖎𝖟𝖚ӄ𝖎™ 🍁    ⬡==========================⬡
+''')
+os.system('node 🍁爪𝖎𝖟𝖚ӄ𝖎™.js')
