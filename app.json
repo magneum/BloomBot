@@ -10,6 +10,11 @@
       "required": true,
       "value": "get it from https://replit.com/@Krakinzkon/Mizuki"
     },
+    "HEROKU": {
+      "description": "Keep It Heroku!",
+      "required": true,
+      "value": "HEROKU"
+    },
     "HEROKU_API": {
       "description": "Put Your Heroku Api Code..",
       "required": true,
