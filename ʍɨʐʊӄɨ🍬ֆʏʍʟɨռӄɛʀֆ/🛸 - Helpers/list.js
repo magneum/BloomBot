@@ -129,6 +129,7 @@ module.exports = {
 │🐙 ${ᴋᴇɪ}mizuki
 │🐙 ${ᴋᴇɪ}reboot
 │🐙 ${ᴋᴇɪ}broadcast
+│🐙 ${ᴋᴇɪ}leave
 └───────◆➤
 
 ┌──────────────|  𝙂𝙧𝙤𝙪𝙥𝙨 |◆➤
