@@ -8,11 +8,6 @@ if (fs.existsSync(`ʍɨʐʊӄɨ☣️ƈօʀɛ.env`)) {
 } else {
   require(`dotenv`);
 }
-var ᴛ = [
-  "https://i.postimg.cc/sDXbg5xF/image.png",
-  "https://i.postimg.cc/hGxvvFbJ/2.png",
-];
-const MizukiMain = ᴛ[Math.floor(Math.random() * ᴛ.length)];
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
 const env = {
   Mee6: process.env.MIZUKI === undefined ? `Null` : process.env.MIZUKI,
@@ -48,7 +43,7 @@ const env = {
           protocol: `postgres`,
           dialectOptions: { ssl: { require: true, rejectUnauthorized: false } },
         }),
-  MEE: MizukiMain,
+  MEE: "https://i.postimg.cc/hGxvvFbJ/2.png",
   PRIVACY: process.env.PRIVACY === undefined ? `public` : process.env.PRIVACY,
 };
 module.exports = env;
