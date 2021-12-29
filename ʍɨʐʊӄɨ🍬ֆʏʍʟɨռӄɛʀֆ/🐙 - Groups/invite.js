@@ -89,30 +89,32 @@ module.exports = {
         𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = `https://i.postimg.cc/3wfrmmpB/NoPP.jpg`;
       }
       if (𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
+        var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
+        var personreceived = Receiver.substring(0, Receiver.length - 15);
         try {
           Mizuki_Buttons.MTB(
             ӄʀǟӄɨռʐ,
             chat,
             𝓜𝖎𝖟𝖚ӄ𝖎,
-            `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived}, _Invite link sent in DM!_`
+            `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived}, _Invite link has been sent in their DM!_`
           );
         } catch (ℓαвєяяσя) {
           ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
         }
         const media = await ӄʀǟӄɨռʐ.prepareMessage(
-          chat.message.extendedTextMessage.contextInfo.participant,
+          Receiver,
           { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 },
           MessageType.image,
           { mimetype: Mimetype.png }
         );
         return await ӄʀǟӄɨռʐ
           .sendMessage(
-            chat.message.extendedTextMessage.contextInfo.participant,
+            Receiver,
             {
-              contentText: `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived}, 
+              contentText: `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${personreceived}, 
 
 
-┌────◆➤🍌𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
+┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
 │
 │📜𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${groupData.subject}
 │💞𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${groupData.participants.length}
@@ -133,8 +135,7 @@ module.exports = {
             },
             MessageType.buttonsMessage,
             {
-              quoted: chat,
-              contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
+              contextInfo: { mentionedJid: [Receiver] },
             }
           )
           .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
@@ -152,7 +153,7 @@ module.exports = {
               contentText: `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived}, 
 
 
-┌────◆➤🍌𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
+┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
 │
 │📜𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${groupData.subject}
 │💞𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${groupData.participants.length}

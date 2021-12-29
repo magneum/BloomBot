@@ -60,7 +60,7 @@ module.exports = {
               𝓜𝖎𝖟𝖚ӄ𝖎,
               `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived} (Owner)
 
-┌────◆➤🍌𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
+┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
 │
 │👌🏽${RmUser} 
 │🔓𝐒𝐭𝐚𝐭𝐮𝐬: Not Pre-Banned!
@@ -80,7 +80,7 @@ module.exports = {
                   𝓜𝖎𝖟𝖚ӄ𝖎,
                   `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived} (Owner)
 
-┌────◆➤🍌𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
+┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
 │
 │👌🏽‍𝐔𝐧𝐁𝐚𝐧𝐧𝐞𝐝: ${RmUser}
 │🛡️ꜱᴜᴅᴏ ᴜɴʙᴀɴ ᴀᴄᴄᴇᴘᴛᴇᴅ
@@ -119,7 +119,7 @@ module.exports = {
                 𝓜𝖎𝖟𝖚ӄ𝖎,
                 `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived} (Owner)
 
-┌────◆➤🍌𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
+┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
 │
 │👌🏽${RmUser} 
 │🔓𝐒𝐭𝐚𝐭𝐮𝐬: Not Pre-Banned!
@@ -141,7 +141,7 @@ module.exports = {
                   𝓜𝖎𝖟𝖚ӄ𝖎,
                   `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived} (Owner)
 
-┌────◆➤🍌𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
+┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
 │
 │👌🏽‍𝐔𝐧𝐁𝐚𝐧𝐧𝐞𝐝: ${RmUser} _from this group_
 │🛡️ꜱᴜᴅᴏ ᴜɴʙᴀɴ ᴀᴄᴄᴇᴘᴛᴇᴅ
@@ -173,7 +173,7 @@ module.exports = {
                 𝓜𝖎𝖟𝖚ӄ𝖎,
                 `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived} (Owner)
 
-┌────◆➤🍌𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
+┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
 │
 │👌🏽𝐔𝐬𝐞𝐫: ${RmUser} 
 │🔓𝐒𝐭𝐚𝐭𝐮𝐬: Not Pre-Banned!
@@ -195,7 +195,7 @@ module.exports = {
                   𝓜𝖎𝖟𝖚ӄ𝖎,
                   `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived} (Owner)
 
-┌────◆➤🍌𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
+┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
 │
 │👌🏽𝐆𝐫𝐨𝐮𝐩 ‍𝐔𝐧𝐁𝐚𝐧𝐧𝐞𝐝: ${𝓜𝖎𝖟𝖚ӄ𝖎.groupName}
 │🛡️ꜱᴜᴅᴏ ᴜɴʙᴀɴ ᴀᴄᴄᴇᴘᴛᴇᴅ
@@ -217,7 +217,7 @@ module.exports = {
                 𝓜𝖎𝖟𝖚ӄ𝖎,
                 `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived} (Owner)
 
-┌────◆➤🍌𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
+┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
 │
 │👌🏽𝐆𝐫𝐨𝐮𝐩: ${𝓜𝖎𝖟𝖚ӄ𝖎.groupName}, 
 │🔓𝐒𝐭𝐚𝐭𝐮𝐬: Not Pre-Banned!
@@ -237,7 +237,7 @@ module.exports = {
                     𝓜𝖎𝖟𝖚ӄ𝖎,
                     `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived} (Owner)
 
-┌────◆➤🍌𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
+┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
 │
 │👌🏽𝐆𝐫𝐨𝐮𝐩 ‍𝐔𝐧𝐁𝐚𝐧𝐧𝐞𝐝: ${𝓜𝖎𝖟𝖚ӄ𝖎.groupName}
 │🛡️ꜱᴜᴅᴏ ᴜɴʙᴀɴ ᴀᴄᴄᴇᴘᴛᴇᴅ

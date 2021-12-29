@@ -50,45 +50,35 @@ module.exports = {
         const MP4 =
           json.results[Math.floor(Math.random() * json.results.length)].media[0]
             .mp4.url;
-        console.log(MP4);
         const TINYMP4 =
           json.results[Math.floor(Math.random() * json.results.length)].media[0]
             .tinymp4.url;
-        console.log(TINYMP4);
         const NANOMP4 =
           json.results[Math.floor(Math.random() * json.results.length)].media[0]
             .nanogif.url;
-        console.log(NANOMP4);
         const LOOPEDMP4 =
           json.results[Math.floor(Math.random() * json.results.length)].media[0]
             .loopedmp4.url;
-        console.log(LOOPEDMP4);
         // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
         const GIF =
           json.results[Math.floor(Math.random() * json.results.length)].media[0]
             .gif.url;
-        console.log(GIF);
         const NANOGIF =
           json.results[Math.floor(Math.random() * json.results.length)].media[0]
             .nanomp4.url;
-        console.log(NANOGIF);
         const TINYGIF =
           json.results[Math.floor(Math.random() * json.results.length)].media[0]
             .tinygif.url;
-        console.log(TINYGIF);
         const MEDIUMGIF =
           json.results[Math.floor(Math.random() * json.results.length)].media[0]
             .mediumgif.url;
-        console.log(MEDIUMGIF);
         // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
         const WEBM =
           json.results[Math.floor(Math.random() * json.results.length)].media[0]
             .webm.url;
-        console.log(WEBM);
         const TINYWEBM =
           json.results[Math.floor(Math.random() * json.results.length)].media[0]
             .tinywebm.url;
-        console.log(TINYWEBM);
         // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
         await ӄʀǟӄɨռʐ
           .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, { url: MP4 }, MessageType.video, {
@@ -97,7 +87,7 @@ module.exports = {
             mimetype: `video/gif`,
             caption: `©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭
 
-┌────◆➤🍌𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
+┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
 │
 │🍯 𝐒𝐞𝐚𝐫𝐜𝐡𝐞𝐝: ${Needs.join(` `)}
 └───────◆➤
