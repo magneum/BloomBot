@@ -1,6 +1,7 @@
 {
   "name": "mizuki",
-  "vers": "v25.3-Stable",
+  "vers": "v25.2-Stable",
+  "verold": "v25.3-Stable",
   "keywords": [
     "whatsapp",
     "js-whatsapp",

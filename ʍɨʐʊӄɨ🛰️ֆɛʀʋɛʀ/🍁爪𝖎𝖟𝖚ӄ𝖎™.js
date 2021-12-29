@@ -137,6 +137,10 @@ async function 𝐌𝐢𝐳𝐮𝐤𝐢() {
 │🛰️𝐏𝐢𝐧𝐠: ${Ping.toFixed(4)}s
 │📅𝐃𝐚𝐭𝐞: ${Clock}
 │🛸𝐆𝐫𝐨𝐮𝐩: ${_𝔏𝔞𝔟_.HASH}
+
+│💀 𝐎𝐥𝐝 𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_
+│🧈 𝐍𝐞𝐰 𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.verold}_
+│🧃 𝐍𝐞𝐰 𝐔𝐩𝐝𝐚𝐭𝐞𝐬: _${ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total}_
 └───────◆➤`,
           }
         );
@@ -440,59 +444,28 @@ ${update.desc}`,
           if (ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total != 0) {
             require("simple-git")()
               .exec(async () => {
-                //                 await ӄʀǟӄɨռʐ
-                //                   .sendMessage(
-                //                     𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                //                     `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭
-
-                // *🍁Starting Mizuki pull and Auto Updating Bot!*
-                // _*🍁Mizuki Will Be Down For Few Seconds/Minutes*_`,
-                //                     MessageType.text,
-                //                     {
-                //                       quoted: chat,
-                //                       contextInfo: {
-                //                         stanzaId: 𝓜𝖎𝖟𝖚ӄ𝖎.replyMessageId,
-                //                         participant: 𝓜𝖎𝖟𝖚ӄ𝖎.replyParticipant,
-                //                         quotedMessage: {
-                //                           conversation: 𝓜𝖎𝖟𝖚ӄ𝖎.replyMessage,
-                //                         },
-                //                         mentionedJid: members,
-                //                       },
-                //                     }
-                //                   )
-                //                   .catch((ℓαвєяяσя) =>
-                //                     ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
-                //                   );
-                await ӄʀǟӄɨռʐ
-                  .sendMessage(
-                    𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                    `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭
-
-
-*◇ Mizuki:* Auto-Udated!
-*◇ New Version:* _${vers.vers}_
-*◇ Total New Commits:* _${ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total}_`,
-                    MessageType.text,
-                    {
-                      quoted: chat,
-                      contextInfo: {
-                        stanzaId: 𝓜𝖎𝖟𝖚ӄ𝖎.replyMessageId,
-                        participant: 𝓜𝖎𝖟𝖚ӄ𝖎.replyParticipant,
-                        quotedMessage: {
-                          conversation: 𝓜𝖎𝖟𝖚ӄ𝖎.replyMessage,
-                        },
-                        mentionedJid: members,
-                      },
-                    }
-                  )
-                  .catch((ℓαвєяяσя) =>
-                    ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
-                  );
                 console.log(
                   Kolor.blue(
                     "⬡==========================⬡    🍁Starting Mizuki pull..."
                   )
                 );
+                try {
+                  return Mizuki_Buttons.MTB(
+                    ӄʀǟӄɨռʐ,
+                    chat,
+                    𝓜𝖎𝖟𝖚ӄ𝖎,
+                    `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived},
+
+┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*Auto-Update*_
+│
+│💀 𝐎𝐥𝐝 𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_
+│🧈 𝐍𝐞𝐰 𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.verold}_
+│🧃 𝐍𝐞𝐰 𝐔𝐩𝐝𝐚𝐭𝐞𝐬: _${ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total}_
+└───────◆➤`
+                  );
+                } catch (ℓαвєяяσя) {
+                  ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
+                }
               })
               .pull(async (err, update) => {
                 if (err) {
