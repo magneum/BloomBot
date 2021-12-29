@@ -69,7 +69,7 @@ module.exports = {
             chat,
             𝓜𝖎𝖟𝖚ӄ𝖎,
             `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived}, 
-          
+
 ┌────◆➤ 🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧   
 │
 │❗𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ᴋᴇɪ}${defaultnm}, 
@@ -81,41 +81,104 @@ module.exports = {
         }
       }
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-      const code = await ӄʀǟӄɨռʐ.groupInviteCode(𝓜𝖎𝖟𝖚ӄ𝖎.chatId);
+      const code = await ӄʀǟӄɨռʐ.groupInviteCode(chat.key.remoteJid);
+      const groupData = await ӄʀǟӄɨռʐ.groupMetadata(chat.key.remoteJid);
+      try {
+        𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄʀǟӄɨռʐ.getProfilePicture(𝓜𝖎𝖟𝖚ӄ𝖎.chatId);
+      } catch {
+        𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = `https://i.postimg.cc/3wfrmmpB/NoPP.jpg`;
+      }
       if (𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
-        ӄʀǟӄɨռʐ
+        try {
+          Mizuki_Buttons.MTB(
+            ӄʀǟӄɨռʐ,
+            chat,
+            𝓜𝖎𝖟𝖚ӄ𝖎,
+            `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived}, _Invite link sent in DM!_`
+          );
+        } catch (ℓαвєяяσя) {
+          ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
+        }
+        const media = await ӄʀǟӄɨռʐ.prepareMessage(
+          chat.message.extendedTextMessage.contextInfo.participant,
+          { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 },
+          MessageType.image,
+          { mimetype: Mimetype.png }
+        );
+        return await ӄʀǟӄɨռʐ
           .sendMessage(
             chat.message.extendedTextMessage.contextInfo.participant,
-            `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭  \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
-              4
-            )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_\n\nhttps://chat.whatsapp.com/` + code,
-            MessageType.text,
-            { quoted: chat }
+            {
+              contentText: `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived}, 
+
+
+┌────◆➤🍌𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
+│
+│📜𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${groupData.subject}
+│💞𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${groupData.participants.length}
+│🍰 𝐆𝐫𝐨𝐮𝐩: https://chat.whatsapp.com/${code}
+└───────◆➤`,
+              footerText: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+                4
+              )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
+              buttons: [
+                {
+                  buttonId: `${ᴋᴇɪ}help`,
+                  buttonText: { displayText: `${ᴋᴇɪ}help` },
+                  type: 1,
+                },
+              ],
+              headerType: 4,
+              imageMessage: media.message.imageMessage,
+            },
+            MessageType.buttonsMessage,
+            {
+              quoted: chat,
+              contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
+            }
           )
           .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
-
-        await ӄʀǟӄɨռʐ
+      } else {
+        const media = await ӄʀǟӄɨռʐ.prepareMessage(
+          𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+          { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 },
+          MessageType.image,
+          { mimetype: Mimetype.png }
+        );
+        return await ӄʀǟӄɨռʐ
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            `Invite link sent in DM, please check.`,
-            MessageType.text,
-            { quoted: chat }
+            {
+              contentText: `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived}, 
+
+
+┌────◆➤🍌𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
+│
+│📜𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${groupData.subject}
+│💞𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${groupData.participants.length}
+│🍰 𝐆𝐫𝐨𝐮𝐩: https://chat.whatsapp.com/${code}
+└───────◆➤`,
+              footerText: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+                4
+              )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
+              buttons: [
+                {
+                  buttonId: `${ᴋᴇɪ}help`,
+                  buttonText: { displayText: `${ᴋᴇɪ}help` },
+                  type: 1,
+                },
+              ],
+              headerType: 4,
+              imageMessage: media.message.imageMessage,
+            },
+            MessageType.buttonsMessage,
+            {
+              quoted: chat,
+              contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
+            }
           )
           .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
-
-        return;
       }
-      await ӄʀǟӄɨռʐ
-        .sendMessage(
-          𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-          `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭  \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
-            4
-          )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_\n\nhttps://chat.whatsapp.com/` + code,
-          MessageType.text,
-          { quoted: chat }
-        )
-        .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
-      return;
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
     } catch (ℓαвєяяσя) {
       ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
