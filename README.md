@@ -6,7 +6,7 @@
 # 🍁𝓜𝖎𝖟𝖚ӄ𝖎™ △▽ 𝙒𝙝𝙖𝙩𝙨𝙖𝙥𝙥 𝙐𝙨𝙚𝙧𝙗𝙤𝙩 - _BETA_
 
 <img align="left"  height="200" src="https://i.postimg.cc/3R4w1KDw/image.gif">
-<img align="centre"  height="200" src="https://i.postimg.cc/vTKmN9XJ/image.gif">
+<img align="centre"  height="200" src="https://i.postimg.cc/3R4w1KDw/image.gif">
 
 ʏᴏᴜʀ ᴀꜱꜱɪꜱꜱᴛᴀɴᴛ ꜰᴏʀ ᴍᴀᴋɪɴɢ ʙᴏʀɪɴɢ ᴡʜᴀᴛꜱᴀᴘᴘ ᴀ ʙᴇᴛᴛᴇʀ ᴀᴅᴠᴀɴᴄᴇ ᴀᴘᴘ!
 🔸[`ᴡʜᴀᴛꜱᴀᴘᴘ`](https://chat.whatsapp.com/KC32fr1BLmzHYgToZjMuHn) 🔸[`ᴅɪꜱᴄᴏʀᴅ`](https://discord.gg/xcFN6NDHEV)
