@@ -35,10 +35,7 @@ module.exports = {
 ⧪𝘾𝙤𝙢𝙞𝙣𝙜 𝙎𝙤𝙤𝙣! _many many more_
 
 ┌──────────────◆➤ 𝙁𝙪𝙣𝙨
-│🦄• ${ᴋᴇɪ}google: _search anything on google_
-│🦄 ${ᴋᴇɪ}wikipedia: _search anything on wikipedia_
-│🦄• ${ᴋᴇɪ}wallpaper: _download wallpapers_
-│🦄• ${ᴋᴇɪ}github: _fing any github profile_
+│🦄• ${ᴋᴇɪ}lyrics _find lyrics of songs_
 │🦄• ${ᴋᴇɪ}beautycheck: _check beauty of tagged person/yourself_
 │🦄• ${ᴋᴇɪ}joke: _get random jokes_
 │🦄• ${ᴋᴇɪ}meme: _get random memes_
@@ -46,8 +43,6 @@ module.exports = {
 │🦄• ${ᴋᴇɪ}sticker: _convert image to sticker_
 │🦄• ${ᴋᴇɪ}translate: _language translater_
 │🦄• ${ᴋᴇɪ}tts: _convert text to speech_
-│🦄• ${ᴋᴇɪ}weather: _get weather data_  
-│🦄• ${ᴋᴇɪ}ud: _urban dictionary for crazy people_
 └───────◆➤`;
       return Mizuki_Static.MGS(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, MainText, MediaUrl).catch(
         (ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)

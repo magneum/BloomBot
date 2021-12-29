@@ -35,9 +35,7 @@ module.exports = {
 ⧪𝘾𝙤𝙢𝙞𝙣𝙜 𝙎𝙤𝙤𝙣! _many many more_
 
 ┌──────────────◆➤ 𝙈𝙪𝙨𝙞𝙘
-│📥• ${ᴋᴇɪ}lyrics _find lyrics of songs_
 │📥• ${ᴋᴇɪ}spotify _download spotify audio under 30min_
-│📥• ${ᴋᴇɪ}ytsearch _search anything in youtube_
 │📥• ${ᴋᴇɪ}instagram _download image/video from ig_
 │📥• ${ᴋᴇɪ}play _download youtube-name-audio under 30min_
 │📥• ${ᴋᴇɪ}song _download youtube-name-audio under 30min_
