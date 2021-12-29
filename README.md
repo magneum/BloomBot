@@ -40,4 +40,4 @@ Apache License Version 2.0, January 2004 http://www.apache.org/licenses
 
 <img align="centre" src="https://i.postimg.cc/sDXbg5xF/image.png">
 
-- [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Krakinz/Mizuki.git/tree/KrakinzLab) 
+- [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Krakinz/Mizuki.git/tree/KrakinzLab) - On Your Own! 
