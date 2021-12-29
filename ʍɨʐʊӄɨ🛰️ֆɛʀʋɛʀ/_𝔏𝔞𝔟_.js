@@ -29,7 +29,7 @@ const env = {
   UPT: `https://i.postimg.cc/sDXbg5xF/image.png`,
   ERROR: `https://i.postimg.cc/sDPF83Mx/Mizuki-Error.png`,
   INVL: `https://i.postimg.cc/q7k5WK9Z/Mizuki-Invalid.png`,
-  HASH: `google.com`,
+  HASH: `https://chat.whatsapp.com/EKyTcSlzOmF20MELthQwgy`,
   DEV: `918436686758,989035024059`,
   DATABASE_URL: (process.env.DATABASE_URL =
     process.env.DATABASE_URL === undefined
