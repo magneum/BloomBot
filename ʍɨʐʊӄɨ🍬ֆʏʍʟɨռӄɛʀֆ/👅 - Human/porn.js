@@ -10,7 +10,7 @@ const ffmpeg = require(`fluent-ffmpeg`);
 const Downloader = require(`nodejs-file-downloader`);
 const fs = require(`fs`);
 const vers = require(`../../package.json`);
-const hub = [
+var Hub = [
   "https://cdn.discordapp.com/attachments/399416520297676801/844911893793472522/qm0b29l7gy651.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/844907250006360114/20210516_161050.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/838046436548673566/186.gif",
@@ -2577,8 +2577,9 @@ const hub = [
   "https://cdn.discordapp.com/attachments/399416520297676801/459957371301527554/12069836.gif",
   "https://cdn.discordapp.com/attachments/399416520297676801/459957139113377792/8461809.gif",
 ];
-
-const Kebab = hub[Math.floor(Math.random() * hub.length)];
+var randomIndex = Math.floor(Math.random() * Hub.length);
+var randomElement = Hub[randomIndex];
+console.log(randomElement);
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
 module.exports = {
   name: `porn`,
@@ -2615,11 +2616,11 @@ module.exports = {
         }
         // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
       } else {
-        var link = Kebab;
+        var link = randomElement;
         if (link.endsWith(`.gif`)) {
           link = link;
         } else {
-          link = Kebab;
+          link = randomElement;
         }
         console.log(link);
         return await ӄʀǟӄɨռʐ.sendMessage(
