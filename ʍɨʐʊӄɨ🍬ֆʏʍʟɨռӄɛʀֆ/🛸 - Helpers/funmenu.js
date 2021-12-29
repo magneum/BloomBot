@@ -38,7 +38,6 @@ module.exports = {
 
 ┌──────────────◆➤ 𝙁𝙪𝙣𝙨
 │🦄• ${ᴋᴇɪ}lyrics _find lyrics of songs_
-│🦄• ${ᴋᴇɪ}beautycheck: _check beauty of tagged person/yourself_
 │🦄• ${ᴋᴇɪ}joke: _get random jokes_
 │🦄• ${ᴋᴇɪ}meme: _get random memes_
 │🦄• ${ᴋᴇɪ}ocr: _read text written on tagged image_
