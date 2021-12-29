@@ -40,7 +40,7 @@
       "required": true,
       "value": "91"
     },
-    "KRAKINZ": {
+    "CODE": {
       "description": "Top Secret KrakinzLab Code",
       "required": true,
       "value": "--------------------------------"
