@@ -111,6 +111,7 @@
     "spinnies": "^0.5.1",
     "spotify-to-yt": "^1.1.1",
     "sqlite3": "^5.0.2",
+    "tenorjs": "^1.0.8",
     "text-to-image": "^4.1.1",
     "tod-api": "^1.0.5",
     "unofficial-carbon-now": "^1.0.3",
