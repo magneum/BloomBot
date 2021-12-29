@@ -5,6 +5,7 @@ var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 require(`python-format-js`);
 const fs = require(`fs`);
+const cleanRF = require("./cleanRF");
 const vers = require(`../package.json`);
 const speed = require("performance-now");
 let Timestamp = speed();

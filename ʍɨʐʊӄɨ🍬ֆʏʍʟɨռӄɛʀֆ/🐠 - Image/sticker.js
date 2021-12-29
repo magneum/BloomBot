@@ -2,6 +2,7 @@
 const Mizuki_Buttons = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Mizuki_Buttons`);
 const Mizuki_Static = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Mizuki_Static`);
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
+const cleanRF = require("../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/cleanRF");
 const _𝔏𝔞𝔟_ = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/_𝔏𝔞𝔟_`);
 const ꜰᴜᴄᴋ = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/oShit`);
 const ffmpeg = require(`fluent-ffmpeg`);
@@ -54,8 +55,10 @@ module.exports = {
                       { quoted: chat }
                     )
                     .then(
-                      fs.unlinkSync(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FILEID}.jpeg`),
-                      fs.unlinkSync(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FILEID}.webp`)
+                      cleanRF.cleanRF(
+                        `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FILEID}.jpeg`,
+                        `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FILEID}.webp`
+                      )
                     )
                     .catch((ℓαвєяяσя) =>
                       ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
@@ -84,8 +87,10 @@ module.exports = {
                       { quoted: chat }
                     )
                     .then(
-                      fs.unlinkSync(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FILEID}.png`),
-                      fs.unlinkSync(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FILEID}.webp`)
+                      cleanRF.cleanRF(
+                        `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FILEID}.png`,
+                        `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FILEID}.webp`
+                      )
                     )
                     .catch((ℓαвєяяσя) =>
                       ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
@@ -132,8 +137,10 @@ module.exports = {
                     { quoted: chat }
                   )
                   .then(
-                    fs.unlinkSync(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/${VIDEOID}.mp4`),
-                    fs.unlinkSync(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/${VIDEOID}.webp`)
+                    cleanRF.cleanRF(
+                      `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${VIDEOID}.mp4`,
+                      `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FILEID}.webp`
+                    )
                   )
                   .catch((ℓαвєяяσя) =>
                     ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)

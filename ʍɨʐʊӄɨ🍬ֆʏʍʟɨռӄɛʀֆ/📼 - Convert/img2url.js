@@ -2,7 +2,8 @@
 const Mizuki_Buttons = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Mizuki_Buttons`);
 const Mizuki_Static = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Mizuki_Static`);
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
-const { TelegraPh} = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/uploader`);
+const { TelegraPh } = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/uploader`);
+const cleanRF = require("../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/cleanRF");
 const _𝔏𝔞𝔟_ = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/_𝔏𝔞𝔟_`);
 const ꜰᴜᴄᴋ = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/oShit`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
@@ -73,7 +74,8 @@ module.exports = {
               contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
             }
           )
-          .then(fs.unlinkSync(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FILEID}.jpeg`))
+
+          .then(cleanRF.cleanRF(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FILEID}.jpeg`))
           .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
         // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
       } else {

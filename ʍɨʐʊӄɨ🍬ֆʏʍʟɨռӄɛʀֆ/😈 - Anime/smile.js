@@ -2,6 +2,7 @@
 const Mizuki_Buttons = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Mizuki_Buttons`);
 const Mizuki_Static = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Mizuki_Static`);
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
+const cleanRF = require("../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/cleanRF");
 const ffmpeg = require(`fluent-ffmpeg`);
 const _𝔏𝔞𝔟_ = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/_𝔏𝔞𝔟_`);
 const ꜰᴜᴄᴋ = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/oShit`);
@@ -95,8 +96,10 @@ module.exports = {
                 }
               )
               .then(
-                fs.unlinkSync(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/${Ping}_${FinalName}.mp4`),
-                fs.unlinkSync(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/${Ping}_${FinalName}.gif`)
+                cleanRF.cleanRF(
+                  `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${Ping}_${FinalName}.mp4`,
+                  `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${Ping}_${FinalName}.gif`
+                )
               )
               .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
           });
@@ -128,8 +131,10 @@ module.exports = {
                 }
               )
               .then(
-                fs.unlinkSync(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/${Ping}_${FinalName}.mp4`),
-                fs.unlinkSync(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/${Ping}_${FinalName}.gif`)
+                cleanRF.cleanRF(
+                  `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${Ping}_${FinalName}.mp4`,
+                  `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${Ping}_${FinalName}.gif`
+                )
               )
               .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
           });

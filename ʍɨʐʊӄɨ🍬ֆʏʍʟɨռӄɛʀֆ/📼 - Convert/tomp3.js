@@ -2,6 +2,7 @@
 const Mizuki_Buttons = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Mizuki_Buttons`);
 const Mizuki_Static = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Mizuki_Static`);
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
+const cleanRF = require("../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/cleanRF");
 const ꜰᴜᴄᴋ = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/oShit`);
 const _𝔏𝔞𝔟_ = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/_𝔏𝔞𝔟_`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
@@ -39,7 +40,7 @@ module.exports = {
           Math.random() * 10000
         )}.mp3`;
         exec(`ffmpeg -i ${Convert_From} ${Convert_To}`, async (err) => {
-          await fs.unlinkSync(Convert_From);
+          cleanRF.cleanRF(Convert_From);
           if (err) {
             return console.log(`Err: ${err}`);
           } else {
@@ -52,7 +53,7 @@ module.exports = {
                 quoted: chat,
               }
             );
-            await fs.unlinkSync(Convert_To);
+            cleanRF.cleanRF(Convert_To);
           }
         });
       } else {

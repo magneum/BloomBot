@@ -6,6 +6,7 @@ const _𝔏𝔞𝔟_ = require(`./_𝔏𝔞𝔟_`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 const ffmpeg = require(`fluent-ffmpeg`);
 const fs = require(`fs`);
+const cleanRF = require("./cleanRF");
 const vers = require(`../package.json`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 const speed = require("performance-now");
@@ -94,8 +95,10 @@ exports.mainMizukigif = async (ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, �
             }
           )
           .then(
-            fs.unlinkSync(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/𝓜𝖎𝖟𝖚ӄ𝖎_${ꜱᴇɴᴅᴇʀɪᴅ}_${𝓜𝖎𝖟𝖚ӄ𝖎ID}.mp4`),
-            fs.unlinkSync(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/𝓜𝖎𝖟𝖚ӄ𝖎_${ꜱᴇɴᴅᴇʀɪᴅ}_${𝓜𝖎𝖟𝖚ӄ𝖎ID}.gif`)
+            cleanRF.cleanRF(
+              `./ʍɨʐʊӄɨ🗑️ȶɛʍք/𝓜𝖎𝖟𝖚ӄ𝖎_${ꜱᴇɴᴅᴇʀɪᴅ}_${𝓜𝖎𝖟𝖚ӄ𝖎ID}.mp4`,
+              `./ʍɨʐʊӄɨ🗑️ȶɛʍք/𝓜𝖎𝖟𝖚ӄ𝖎_${ꜱᴇɴᴅᴇʀɪᴅ}_${𝓜𝖎𝖟𝖚ӄ𝖎ID}.gif`
+            )
           )
           .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
       })

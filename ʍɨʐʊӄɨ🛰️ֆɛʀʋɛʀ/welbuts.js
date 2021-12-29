@@ -13,6 +13,7 @@ let Timestamp = speed();
 const Ping = speed() - Timestamp;
 const date = require("date-and-time");
 const now = new Date();
+const cleanRF = require("./cleanRF");
 date.format(now, "ddd, MMM DD YYYY");
 const pattern = date.compile("ddd, MMM DD YYYY");
 const Clock = date.format(now, pattern);
@@ -135,7 +136,7 @@ ${ꜰᴇᴛᴄʜᴇᴅᴡᴇʟᴄᴏᴍᴇ.message}`,
           contextInfo: { mentionedJid: [MemNum] },
         }
       )
-      .then(fs.unlinkSync(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/${ᴘᴘᴡᴇʟᴄᴏᴍᴇ}_${FlowerWel}.png`))
+      .then(cleanRF.cleanRF(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/${ᴘᴘᴡᴇʟᴄᴏᴍᴇ}_${FlowerWel}.png`))
       .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
   } catch (ℓαвєяяσя) {
     await ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);

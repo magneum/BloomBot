@@ -1,5 +1,6 @@
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
+const cleanRF = require("../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/cleanRF");
 const _𝔏𝔞𝔟_ = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/_𝔏𝔞𝔟_`);
 const ꜰᴜᴄᴋ = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/oShit`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
@@ -95,7 +96,7 @@ ${data.url}`,
             )
             .then(async () => {
               try {
-                await fs.unlinkSync(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/${filename}`);
+                cleanRF.cleanRF(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/${filename}`);
               } catch (ℓαвєяяσя) {
                 console.log(ℓαвєяяσя);
               }
