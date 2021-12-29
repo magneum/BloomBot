@@ -14,7 +14,6 @@ RUN cd 🍁爪𝖎𝖟𝖚ӄ𝖎™
 RUN git clone https://github.com/Krakinz/Mizuki.git
 RUN cd Mizuki
 WORKDIR /Mizuki
-RUN npm install --global yarn
-RUN yarn install --force
+RUN npm install --force
 RUN pip install -r ʍɨʐʊӄɨ☣️ƈօʀɛ/ӄʀǟӄɨռʐ🐙ʟǟɮ.txt
 CMD python3 ʟӄʀǟӄɨռʐ🐙ʟǟɮ.py
