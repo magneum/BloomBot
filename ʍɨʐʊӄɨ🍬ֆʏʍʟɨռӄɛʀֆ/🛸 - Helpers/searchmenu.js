@@ -28,11 +28,12 @@ module.exports = {
 ┌──────────────◆➤
 │🔑 𝐏𝐫𝐞𝐟𝐢𝐱: *${ᴋᴇɪ}*
 │👑 𝐎𝐰𝐧𝐞𝐫: _🐙KrakinzKon_
-│🤖 ᴀᴅᴅ ᴍɪᴢᴜᴋɪ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ: _${ᴋᴇɪ}request_
+│🍁 𝐀𝐝𝐝 𝐌𝐢𝐳𝐮𝐤𝐢: _${ᴋᴇɪ}request_
 │☣️ 𝐋𝐢𝐜𝐞𝐧𝐬𝐞𝐝: Apache License Version 2.0
+│🍰 𝐆𝐫𝐨𝐮𝐩: ${_𝔏𝔞𝔟_.HASH}
+
+│🍕 𝘾𝙤𝙢𝙞𝙣𝙜 𝙎𝙤𝙤𝙣! _many many more_
 └───────◆➤
-🤖𝗝𝗼𝗶𝗻: ${_𝔏𝔞𝔟_.HASH}
-⧪𝘾𝙤𝙢𝙞𝙣𝙜 𝙎𝙤𝙤𝙣! _many many more_
 
 ┌──────────────◆➤ 𝙁𝙪𝙣𝙨
 │🔎• ${ᴋᴇɪ}google: _search anything on google_
