@@ -31,14 +31,14 @@ const env = {
   INVL: `https://i.postimg.cc/q7k5WK9Z/Mizuki-Invalid.png`,
   HASH: `https://chat.whatsapp.com/EKyTcSlzOmF20MELthQwgy`,
   DEV: `918436686758,989035024059`,
-  DATABASE_URL: (process.env.DATABASE_URL =
-    process.env.DATABASE_URL === undefined
+  MIZUKIQL: (process.env.MIZUKIQL =
+    process.env.MIZUKIQL === undefined
       ? `./ʍɨʐʊӄɨ☣️ƈօʀɛ/ʍɨʐʊӄɨ☣️ƈօʀɛ.db`
-      : process.env.DATABASE_URL),
+      : process.env.MIZUKIQL),
   POSTQL:
-    process.env.DATABASE_URL === `./ʍɨʐʊӄɨ☣️ƈօʀɛ/ʍɨʐʊӄɨ☣️ƈօʀɛ.db`
-      ? new Sequelize({ dialect: `sqlite`, storage: process.env.DATABASE_URL })
-      : new Sequelize(process.env.DATABASE_URL, {
+    process.env.MIZUKIQL === `./ʍɨʐʊӄɨ☣️ƈօʀɛ/ʍɨʐʊӄɨ☣️ƈօʀɛ.db`
+      ? new Sequelize({ dialect: `sqlite`, storage: process.env.MIZUKIQL })
+      : new Sequelize(process.env.MIZUKIQL, {
           dialect: `postgres`,
           protocol: `postgres`,
           dialectOptions: { ssl: { require: true, rejectUnauthorized: false } },
