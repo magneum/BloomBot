@@ -90,7 +90,7 @@ module.exports = {
 │👎🏽‍𝐃𝐢𝐬𝐥𝐢𝐤𝐞𝐬: ${Raw.dislike}
 │⭐𝐅𝐚𝐯𝐨𝐮𝐫𝐢𝐭𝐞: ${Raw.favorite}
 │📤𝐔𝐩𝐥𝐨𝐚𝐝𝐞𝐝: ${Raw.upload}
-│🖊️𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${TRaw.desc}
+│🖊️𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${Raw.desc}
 │📥𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝: https://tikporntok.com/${TikPork.video}
 │🔥𝐒𝐨𝐮𝐫𝐜𝐞: https://tikporntok.com/${TikPork.source}
 └───────────◆➤`,
@@ -175,7 +175,7 @@ module.exports = {
 │👎🏽‍𝐃𝐢𝐬𝐥𝐢𝐤𝐞𝐬: ${Raw.dislike}
 │⭐𝐅𝐚𝐯𝐨𝐮𝐫𝐢𝐭𝐞: ${Raw.favorite}
 │📤𝐔𝐩𝐥𝐨𝐚𝐝𝐞𝐝: ${Raw.upload}
-│🖊️𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${TRaw.desc}
+│🖊️𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${Raw.desc}
 │📥𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝: https://tikporntok.com/${TikPork.video}
 │🔥𝐒𝐨𝐮𝐫𝐜𝐞: https://tikporntok.com/${TikPork.source}
 └───────────◆➤`,
