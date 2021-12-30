@@ -24,23 +24,19 @@ module.exports = {
       );
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
       if (!𝓜𝖎𝖟𝖚ӄ𝖎.fromMe) {
-        try {
-          return Mizuki_Buttons.MIB(
-            ӄʀǟӄɨռʐ,
-            chat,
-            𝓜𝖎𝖟𝖚ӄ𝖎,
-            `Who Is This Dumbo •@${ꜱᴇɴᴅᴇʀeceived} Trying to Use Owner-Only Commands.
+        return Mizuki_Buttons.MIB(
+          ӄʀǟӄɨռʐ,
+          chat,
+          𝓜𝖎𝖟𝖚ӄ𝖎,
+          `Who Is This Dumbo •@${ꜱᴇɴᴅᴇʀeceived} Trying to Use Owner-Only Commands.
 
 
 ┌────◆➤ 🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧   
 │  
 │*❌ 𝚈𝚘𝚞 𝙰𝚛𝚎 𝙽𝚘𝚝 𝙰𝚕𝚕𝚘𝚠𝚎𝚍!*
 └───────〇`,
-            _𝔏𝔞𝔟_.ɴᴏᴛᴀᴅᴍɪɴ
-          );
-        } catch (ℓαвєяяσя) {
-          ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
-        }
+          _𝔏𝔞𝔟_.ɴᴏᴛᴀᴅᴍɪɴ
+        );
         // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
       } else if (Needs.length === 0) {
         var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(𝓜𝖎𝖟𝖚ӄ𝖎.commandName);
@@ -59,16 +55,11 @@ module.exports = {
           .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
       }
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-      𝓜𝓮𝓮s = await ӄʀǟӄɨռʐ.chats.all();
-      for (let _ of 𝓜𝓮𝓮s) {
+      var 𝖟𝖚ӄ𝖎 = await ӄʀǟӄɨռʐ.chats.all();
+      for (let _ of 𝖟𝖚ӄ𝖎) {
         return await ӄʀǟӄɨռʐ
           .sendMessage(_.jid, `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`, MessageType.video, {
             mimetype: "video/gif",
-            contextInfo: {
-              forwardingScore: 999,
-              isForwarded: true,
-            },
-            sendEphemeral: true,
           })
           .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
       }

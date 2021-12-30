@@ -2,7 +2,7 @@
 const Mizuki_Buttons = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Mizuki_Buttons`);
 const Mizuki_Static = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Mizuki_Static`);
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
-const cleanRF = require("../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/cleanRF");
+const PostDataBase = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/postDb`);
 const ꜰᴜᴄᴋ = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/oShit`);
 const _𝔏𝔞𝔟_ = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/_𝔏𝔞𝔟_`);
 const fs = require(`fs`);
@@ -100,10 +100,10 @@ ${Needs.join(` `)}`,
           )
           .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
         // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
+        await PostDataBase.deleteMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, `setwelcome`);
         await ӄʀǟӄɨռʐ
           .groupLeave(𝓜𝖎𝖟𝖚ӄ𝖎.chatId)
-          .then((res) => console.log(res))
-          .catch((err) => console.log(err));
+          .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
       }
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
     } catch (ℓαвєяяσя) {
