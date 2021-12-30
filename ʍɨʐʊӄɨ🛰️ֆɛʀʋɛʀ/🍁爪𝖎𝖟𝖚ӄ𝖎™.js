@@ -490,7 +490,6 @@ ${update.desc}`,
           var Needs = 𝓜𝖎𝖟𝖚ӄ𝖎.body.trim().split(/\s+/).slice(1);
           var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
           var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
-          const MediaUrl = _𝔏𝔞𝔟_.INVL;
           if (!command) {
             try {
               return Mizuki_Buttons.MIB(
@@ -498,9 +497,10 @@ ${update.desc}`,
                 chat,
                 𝓜𝖎𝖟𝖚ӄ𝖎,
                 `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived}, 
+
 ❌ 𝚆𝚛𝚘𝚗𝚐 𝙲𝚘𝚖𝚖𝚊𝚗𝚍
 Type _${ᴋᴇɪ}help_ and Read Everything Properly`,
-                MediaUrl
+                _𝔏𝔞𝔟_.INVL
               );
             } catch (ℓαвєяяσя) {
               ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
