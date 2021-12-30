@@ -80,8 +80,6 @@ ${lyric}`
         }
       }
     } catch (ℓαвєяяσя) {
-      console.log(ℓαвєяяσя);
-      ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
       try {
         return Mizuki_Buttons.MTB(
           ӄʀǟӄɨռʐ,
@@ -93,7 +91,6 @@ ${lyric}`
 _No Such Song Lyrics Found_`
         );
       } catch (ℓαвєяяσя) {
-        console.log(ℓαвєяяσя);
         ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
       }
     }
