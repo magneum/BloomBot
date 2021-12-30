@@ -83,7 +83,10 @@ Do note, the setwelcome option is still enabled after you use the delete option.
         }
       }
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-      var Msg = await PostDataBase.getMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, `setwelcome`);
+      var ꜰᴇᴛᴄʜᴇᴅᴍꜱɢ = await PostDataBase.getMessage(
+        𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+        `setwelcome`
+      );
       if (Needs.length == 0) {
         var enabled = await PostDataBase.checkSettings(
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
@@ -115,7 +118,7 @@ Do note, the setwelcome option is still enabled after you use the delete option.
 │
 │🍁 Mizuki Currently greeting new members with:
 └───────◆➤ 
-${Msg.message}`,
+${ꜰᴇᴛᴄʜᴇᴅᴍꜱɢ.message}`,
             `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
           );
         }
@@ -131,7 +134,7 @@ ${Msg.message}`,
 │
 │🍁 Mizuki Currently greeting new members with:
 └───────◆➤ 
-${Msg.message}`,
+${ꜰᴇᴛᴄʜᴇᴅᴍꜱɢ.message}`,
           `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
         );
         // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
@@ -171,11 +174,11 @@ ${Msg.message}`,
         }
         // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
         if (Needs[0] === `delete`) {
-          var Msg = await PostDataBase.deleteMessage(
+          var ꜰᴇᴛᴄʜᴇᴅᴍꜱɢ = await PostDataBase.deleteMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
             `setwelcome`
           );
-          if (Msg === false || Msg === undefined) {
+          if (ꜰᴇᴛᴄʜᴇᴅᴍꜱɢ === false || ꜰᴇᴛᴄʜᴇᴅᴍꜱɢ === undefined) {
             return Mizuki_Static.MGS(
               ӄʀǟӄɨռʐ,
               chat,
@@ -209,7 +212,7 @@ ${Msg.message}`,
           ``
         );
         // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-        if (Msg === false || Msg === undefined) {
+        if (ꜰᴇᴛᴄʜᴇᴅᴍꜱɢ === false || ꜰᴇᴛᴄʜᴇᴅᴍꜱɢ === undefined) {
           await PostDataBase.setWelcome(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, text);
           return Mizuki_Static.MGS(
             ӄʀǟӄɨռʐ,
