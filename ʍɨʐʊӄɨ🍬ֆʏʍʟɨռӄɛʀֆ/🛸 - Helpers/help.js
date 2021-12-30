@@ -88,6 +88,7 @@ module.exports = {
           },
           MessageType.buttonsMessage,
           {
+            timestamp: Date(),
             quoted: chat,
             contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
           }

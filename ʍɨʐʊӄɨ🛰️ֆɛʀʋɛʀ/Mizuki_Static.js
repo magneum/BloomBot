@@ -15,13 +15,7 @@ const Clock = date.format(now, pattern);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-const Mizuki_GIF_Static = async (
-  ӄʀǟӄɨռʐ,
-  chat,
-  𝓜𝖎𝖟𝖚ӄ𝖎,
-  MainText,
-  MediaUrl
-) => {
+const Mizuki_GIF_Static = async (ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, MainText, MediaUrl) => {
   if (𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
     var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
     var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
@@ -36,6 +30,7 @@ const Mizuki_GIF_Static = async (
   return await ӄʀǟӄɨռʐ
     .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, { url: MediaUrl }, MessageType.video, {
       mimetype: `video/gif`,
+      timestamp: Date(),
       quoted: chat,
       caption: MainText,
       contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
