@@ -339,20 +339,6 @@ ${update.desc}`,
   // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
   ӄʀǟӄɨռʐ.on(`chat-update`, async (chat) => {
     try {
-      console.log(chat);
-      console.log(
-        Kolor.yellow(
-          `⬡==========================⬡    🍁 爪𝖎𝖟𝖚ӄ𝖎™ 🍁    ⬡==========================⬡`
-        )
-      );
-      if (!chat.hasNewMessage) return;
-      if (!chat.messages) return;
-      chat = chat.messages.all()[0];
-      var sender = chat.key.remoteJid;
-      const groupMetadata = sender.endsWith(`@g.us`)
-        ? await ӄʀǟӄɨռʐ.groupMetadata(sender)
-        : ``;
-      var 𝓜𝖎𝖟𝖚ӄ𝖎 = 𝓜𝖎𝖟𝖚ӄ𝖎ǟքք.resolve(chat, ӄʀǟӄɨռʐ, groupMetadata);
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
       let CheckBans = await BanList.getBanlistUser(
         𝓜𝖎𝖟𝖚ӄ𝖎.sender,
@@ -363,6 +349,21 @@ ${update.desc}`,
       if (!letGos) {
         return;
       } else {
+        console.log(chat);
+        console.log(
+          Kolor.yellow(
+            `⬡==========================⬡    🍁 爪𝖎𝖟𝖚ӄ𝖎™ 🍁    ⬡==========================⬡`
+          )
+        );
+        if (!chat.hasNewMessage) return;
+        if (!chat.messages) return;
+        chat = chat.messages.all()[0];
+        var sender = chat.key.remoteJid;
+        const groupMetadata = sender.endsWith(`@g.us`)
+          ? await ӄʀǟӄɨռʐ.groupMetadata(sender)
+          : ``;
+        var 𝓜𝖎𝖟𝖚ӄ𝖎 = 𝓜𝖎𝖟𝖚ӄ𝖎ǟքք.resolve(chat, ӄʀǟӄɨռʐ, groupMetadata);
+
         if (
           𝓜𝖎𝖟𝖚ӄ𝖎.isGroup &&
           !𝓜𝖎𝖟𝖚ӄ𝖎.fromMe &&
