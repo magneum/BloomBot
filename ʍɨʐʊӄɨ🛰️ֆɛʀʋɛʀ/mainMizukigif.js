@@ -80,8 +80,8 @@ exports.mainMizukigif = async (ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, �
               }_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(4)}s_n📅ᴅᴀᴛᴇ: _${Clock}_`,
               buttons: [
                 {
-                  buttonId: `${ᴋᴇɪ}list`,
-                  buttonText: { displayText: `${ᴋᴇɪ}list` },
+                  buttonId: `${ᴋᴇɪ}menu`,
+                  buttonText: { displayText: `${ᴋᴇɪ}menu` },
                   type: 1,
                 },
               ],

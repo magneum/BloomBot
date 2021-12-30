@@ -118,8 +118,8 @@ ${ꜰᴇᴛᴄʜᴇᴅᴡᴇʟᴄᴏᴍᴇ.message}`,
               type: 1,
             },
             {
-              buttonId: `${ᴋᴇɪ}list`,
-              buttonText: { displayText: `${ᴋᴇɪ}list` },
+              buttonId: `${ᴋᴇɪ}menu`,
+              buttonText: { displayText: `${ᴋᴇɪ}menu` },
               type: 1,
             },
             {

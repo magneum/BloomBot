@@ -73,8 +73,8 @@ module.exports = {
             )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
             buttons: [
               {
-                buttonId: `${ᴋᴇɪ}list`,
-                buttonText: { displayText: `${ᴋᴇɪ}list` },
+                buttonId: `${ᴋᴇɪ}menu`,
+                buttonText: { displayText: `${ᴋᴇɪ}menu` },
                 type: 1,
               },
               {
