@@ -2,15 +2,15 @@
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const Mizuki_Buttons = require(`./Mizuki_Buttons`);
 const Mizuki_Static = require(`./Mizuki_Static`);
-const LetGoChecker = require("./LetGoChecker");
+const LetGoChecker = require(`./LetGoChecker`);
 const 𝓜𝖎𝖟𝖚ӄ𝖎ֆʏռօք = require(`./𝓜𝖎𝖟𝖚ӄ𝖎ᴢᴇɴ`);
 const AutoKrakz = require(`./𝓜𝖎𝖟𝖚ӄ𝖎ɢɪᴛ`);
-const speed = require("performance-now");
-const LinkList = require("./LinkList");
-const { ʄǟռƈʏ } = require("../ʄǟռƈʏ");
+const speed = require(`performance-now`);
+const LinkList = require(`./LinkList`);
+const { ʄǟռƈʏ } = require(`../ʄǟռƈʏ`);
 const 𝓜𝖎𝖟𝖚ӄ𝖎ǟքք = require(`./helper`);
 const welbuts = require(`./welbuts`);
-const BanList = require("./BanList");
+const BanList = require(`./BanList`);
 const postDb = require(`./postDb`);
 const _𝔏𝔞𝔟_ = require(`./_𝔏𝔞𝔟_`);
 const ꜰᴜᴄᴋ = require(`./oShit`);
@@ -18,10 +18,10 @@ const Kolor = require(`chalk`);
 const yes_no = _𝔏𝔞𝔟_.Krakinz;
 let Timestamp = speed();
 const Ping = speed() - Timestamp;
-const date = require("date-and-time");
+const date = require(`date-and-time`);
 const now = new Date();
-date.format(now, "ddd, MMM DD YYYY");
-const pattern = date.compile("ddd, MMM DD YYYY");
+date.format(now, `ddd, MMM DD YYYY`);
+const pattern = date.compile(`ddd, MMM DD YYYY`);
 const Clock = date.format(now, pattern);
 const vers = require(`../package.json`);
 const 𝓜𝖎𝖟𝖚ӄ𝖎sql = _𝔏𝔞𝔟_.POSTQL;
@@ -438,11 +438,11 @@ ${update.desc}`,
             }
             // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
             if (ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total != 0) {
-              require("simple-git")()
+              require(`simple-git`)()
                 .exec(async () => {
                   console.log(
-                    Kolor.blue(
-                      "⬡==========================⬡    🍁Starting Mizuki pull..."
+                    Kolor.green(
+                      `⬡==========================⬡    🍁Starting Mizuki pull...`
                     )
                   );
                   try {
@@ -475,11 +475,11 @@ ${update.desc}`,
                     }
                     // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
                   } else if (update && update.summary.changes) {
-                    var child = require("child_process").exec(
-                      "python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py"
+                    var child = require(`child_process`).exec(
+                      `python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`
                     );
                     child.stdout.pipe(process.stdout);
-                    child.on("exit", async function () {
+                    child.on(`exit`, async function () {
                       process.exitCode = 1;
                     });
                   }
