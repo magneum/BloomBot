@@ -47,7 +47,6 @@ module.exports = {
           },
           MessageType.video,
           {
-            timestamp: Date(),
             mimetype: "video/gif",
             contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
             caption: `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived}, (owner) 
