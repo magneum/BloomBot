@@ -30,7 +30,7 @@ const Mizuki_GIF_Static = async (ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, M
   return await ӄʀǟӄɨռʐ
     .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, { url: MediaUrl }, MessageType.video, {
       mimetype: `video/gif`,
-      timestamp: Date(),
+
       quoted: chat,
       caption: MainText,
       contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },

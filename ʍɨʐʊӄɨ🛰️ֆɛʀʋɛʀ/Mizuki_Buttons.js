@@ -43,7 +43,6 @@ const Mizuki_Text_But = (ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, MainText)
   };
   ӄʀǟӄɨռʐ
     .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, buttonMessage, MessageType.buttonsMessage, {
-      timestamp: Date(),
       quoted: chat,
       contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
     })
@@ -88,7 +87,6 @@ const Mizuki_Image_But = async (ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, Ma
       },
       MessageType.buttonsMessage,
       {
-        timestamp: Date(),
         quoted: chat,
         contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
       }
@@ -134,7 +132,6 @@ const Mizuki_Video_But = async (ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, Ma
       },
       MessageType.buttonsMessage,
       {
-        timestamp: Date(),
         quoted: chat,
         contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
       }
@@ -180,7 +177,6 @@ const Mizuki_GIF_But = async (ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, Main
       },
       MessageType.buttonsMessage,
       {
-        timestamp: Date(),
         quoted: chat,
         contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
       }
@@ -230,7 +226,7 @@ const Mizuki_VideoAudio_But = async (
   ӄʀǟӄɨռʐ
     .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, buttonMessages, MessageType.buttonsMessage, {
       mimetype: Mimetype.mp4Audio,
-      timestamp: Date(),
+
       quoted: chat,
     })
     .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
@@ -276,7 +272,6 @@ const Mizuki_Location_But = async (
   };
   ӄʀǟӄɨռʐ
     .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, buttonMessages, MessageType.buttonsMessage, {
-      timestamp: Date(),
       quoted: chat,
     })
     .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));

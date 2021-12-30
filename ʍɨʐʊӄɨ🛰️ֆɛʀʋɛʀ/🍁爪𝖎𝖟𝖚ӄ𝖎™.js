@@ -495,7 +495,36 @@ Type _${ᴋᴇɪ}help_ and Read Everything Properly`,
           ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
         }
       }
-      return command.handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping);
+      const moment = require("moment-timezone");
+      const time2 = moment().tz("Asia/Kolkata").format("HH:mm:ss");
+      if (time2 < "24:59:00") {
+        var Timers = "Good night😴";
+      }
+      if (time2 < "19:00:00") {
+        var Timers = "Good evening🌞";
+      }
+      if (time2 < "18:00:00") {
+        var Timers = "good afternoon🌄";
+      }
+      if (time2 < "15:00:00") {
+        var Timers = "good afternoon☀️";
+      }
+      if (time2 < "11:00:00") {
+        var Timers = "Good morning🌅";
+      }
+      if (time2 < "05:00:00") {
+        var Timers = "Good night💤";
+      }
+      return command.handle(
+        ӄʀǟӄɨռʐ,
+        chat,
+        𝓜𝖎𝖟𝖚ӄ𝖎,
+        Needs,
+        ꜱɪᴛʀᴀᴘ,
+        Clock,
+        Ping,
+        Timers
+      );
     }
   });
 }

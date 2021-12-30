@@ -21,25 +21,8 @@ In order to specify the theme, use  *${ᴋᴇɪ}carbon <text> -t <theme>* .`,
 Please use the command  
 *${ᴋᴇɪ}carbon <text> -t <theme>*  
 or reply to a text message with  
-*${ᴋᴇɪ}carbon*  to carbonize the text.
-
-*----> 𝐓𝐇𝐄𝐌𝐄𝐒 <----*
-_3024 night_  *|*  _a11y dark_  
-_blackboard_  *|*  _base 16 (dark)_ 
-_base 16 (light)_  *|*  _cobalt_ 
-_duotone_  *|*  _hopscotch_
-_lucario_  *|*  _material_ 
-_monokai_  *|*  _night owl_ 
-_nord_  *|*  _oceanic next_
-_one light_  *|*  _one dark_
-_panda_  *|*  _paraiso_
-_seti_  *|*  _shades of purple_ 
-_solarized (dark)_ 
-_solarized (light)_
-_synthwave '84_  *|*  _twilight_
-_verminal_  *|*  _vscode_  
-_yeti_  *|*  _zenburn_`,
-  async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
+*${ᴋᴇɪ}carbon*  to carbonize the text.`,
+  async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping, Timers) {
     try {
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
       var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
