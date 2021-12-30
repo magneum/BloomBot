@@ -33,7 +33,7 @@ module.exports = {
 │☣️ 𝐋𝐢𝐜𝐞𝐧𝐬𝐞𝐝: Apache License Version 2.0
 │🍰 𝐆𝐫𝐨𝐮𝐩: ${_𝔏𝔞𝔟_.HASH}
 │🍕 𝘾𝙤𝙢𝙞𝙣𝙜 𝙎𝙤𝙤𝙣! _many many more_
-└───────◆➤
+└───────〇
 
 ┌──────────────◆➤ 𝙂𝙧𝙤𝙪𝙥𝙨
 │🔰• ${ᴋᴇɪ}promote: _promote member to admin_
@@ -50,7 +50,7 @@ module.exports = {
 │🔰• ${ᴋᴇɪ}setwelcome: _welcome new members with custom message_
 │🔰• ${ᴋᴇɪ}unmute: _unmute a group chat_
 │🔰• ${ᴋᴇɪ}mute: _mute group chat_
-└───────◆➤`;
+└───────〇`;
       return Mizuki_Static.MGS(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, MainText, MediaUrl).catch(
         (ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
       );

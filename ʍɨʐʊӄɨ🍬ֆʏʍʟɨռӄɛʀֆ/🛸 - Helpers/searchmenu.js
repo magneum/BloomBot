@@ -33,7 +33,7 @@ module.exports = {
 │☣️ 𝐋𝐢𝐜𝐞𝐧𝐬𝐞𝐝: Apache License Version 2.0
 │🍰 𝐆𝐫𝐨𝐮𝐩: ${_𝔏𝔞𝔟_.HASH}
 │🍕 𝘾𝙤𝙢𝙞𝙣𝙜 𝙎𝙤𝙤𝙣! _many many more_
-└───────◆➤
+└───────〇
 
 ┌──────────────◆➤ 𝙁𝙪𝙣𝙨
 │🔎• ${ᴋᴇɪ}lyrics _find lyrics of songs_
@@ -47,7 +47,7 @@ module.exports = {
 │🔎• ${ᴋᴇɪ}ud: _urban dictionary for crazy people_
 │🔎• ${ᴋᴇɪ}tenor: _convert text to tenor gif_
 │🔎• ${ᴋᴇɪ}gif: _convert text tenor gif_
-└───────◆➤`;
+└───────〇`;
       return Mizuki_Static.MGS(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, MainText, MediaUrl).catch(
         (ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
       );

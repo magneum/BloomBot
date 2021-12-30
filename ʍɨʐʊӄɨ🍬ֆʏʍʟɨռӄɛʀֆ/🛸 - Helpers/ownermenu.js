@@ -33,7 +33,7 @@ module.exports = {
 │☣️ 𝐋𝐢𝐜𝐞𝐧𝐬𝐞𝐝: Apache License Version 2.0
 │🍰 𝐆𝐫𝐨𝐮𝐩: ${_𝔏𝔞𝔟_.HASH}
 │🍕 𝘾𝙤𝙢𝙞𝙣𝙜 𝙎𝙤𝙤𝙣! _many many more_
-└───────◆➤
+└───────〇
 
 ┌──────────────◆➤ 𝙊𝙬𝙣𝙚𝙧
 │🐙• ${ᴋᴇɪ}ban: _ban bot in group/user_
@@ -45,7 +45,7 @@ module.exports = {
 │🐙• ${ᴋᴇɪ}help 
 │🐙• ${ᴋᴇɪ}list
 │🐙• ${ᴋᴇɪ}mizuki
-└───────◆➤`;
+└───────〇`;
       return Mizuki_Static.MGS(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, MainText, MediaUrl).catch(
         (ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
       );

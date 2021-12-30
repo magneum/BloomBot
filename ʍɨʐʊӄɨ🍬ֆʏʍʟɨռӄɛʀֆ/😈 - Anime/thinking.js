@@ -92,7 +92,7 @@ module.exports = {
 │
 │🍪 𝐅𝐫𝐨𝐦: @${ꜱᴇɴᴅᴇʀeceived}
 │🍛 𝐓𝐨: @${personreceived}
-└───────◆➤`,
+└───────〇`,
                 }
               )
               .then(
@@ -127,7 +127,7 @@ module.exports = {
 ┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
 │
 │🍯𝐓𝐡𝐞𝐦𝐬𝐞𝐥𝐯𝐞: @${ꜱᴇɴᴅᴇʀeceived}
-└───────◆➤`,
+└───────〇`,
                 }
               )
               .then(

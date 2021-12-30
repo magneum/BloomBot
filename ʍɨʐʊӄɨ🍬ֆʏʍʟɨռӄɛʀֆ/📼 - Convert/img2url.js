@@ -53,7 +53,7 @@ module.exports = {
 │
 │📤𝗙𝗿𝗼𝗺: _Image_
 │📥𝗧𝗼: _Telegra.ph URL_
-└───────◆➤
+└───────〇
 │🔗 𝐔𝐫𝐥: ${util.format(gotTgh)}`,
               footerText: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
                 4

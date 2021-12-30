@@ -76,7 +76,7 @@ module.exports = {
 │
 │🍠𝐒𝐨𝐮𝐫𝐜𝐞: _•Instagram_
 │🧀𝐅𝐢𝐥𝐞 𝐓𝐲𝐩𝐞: ${i.type}
-└───────◆➤`,
+└───────〇`,
                     footerText: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
                       4
                     )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
@@ -118,7 +118,7 @@ module.exports = {
 │
 │🍠𝐒𝐨𝐮𝐫𝐜𝐞: _•Instagram_
 │🧀𝐅𝐢𝐥𝐞 𝐓𝐲𝐩𝐞: ${i.type}
-└───────◆➤`,
+└───────〇`,
                     footerText: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
                       4
                     )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,

@@ -51,7 +51,7 @@ module.exports = {
 │  
 │🌶️𝐆𝐫𝐨𝐮𝐩𝐬: _Admins & Devs!_
 │🌽𝐏𝐫𝐢𝐯𝐚𝐭𝐞 _Everyone_
-└───────◆➤`,
+└───────〇`,
                 _𝔏𝔞𝔟_.ɴᴏᴛᴀᴅᴍɪɴ
               );
             } catch (ℓαвєяяσя) {
@@ -101,7 +101,7 @@ module.exports = {
 ┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
 │
 │🍕 𝐓𝐢𝐭𝐥𝐞: *${title}*
-└───────────◆➤
+└───────〇
 🔗𝐋𝐢𝐧𝐤: ${amazeme}`,
                   footerText: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
                     4

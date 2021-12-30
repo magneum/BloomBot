@@ -71,8 +71,7 @@ module.exports = {
 │シ︎🛰️ʟᴀᴛᴇɴᴄʏ: ${latensi.toFixed(4)}(s)
 │シ︎☕ᴜᴘᴛɪᴍᴇ: ${runtime(process.uptime())}
 │シ︎🎮ʀᴀᴍ: ${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}
-│
-└───────────◆➤
+└───────〇
 
 ┌────◆➤ 𝐍𝐨𝐝𝐞𝐉𝐒 𝐌𝐞𝐦-𝐔𝐬𝐚𝐠𝐞:
 │${Object.keys(used)

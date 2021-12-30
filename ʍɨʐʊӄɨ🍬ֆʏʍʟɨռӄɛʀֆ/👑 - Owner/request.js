@@ -68,7 +68,7 @@ module.exports = {
 │🔑𝐏𝐫𝐞𝐟𝐢𝐱: *${ᴋᴇɪ}*
 │👑𝐎𝐰𝐧𝐞𝐫: _🐙KrakinzKon_
 │☣️𝐋𝐢𝐜𝐞𝐧𝐬𝐞𝐝: Apache License Version 2.0
-└───────◆➤
+└───────〇
 
 *Thank you for Requesting to add 爪𝖎𝖟𝖚ӄ𝖎™ in your group!*
 _*Now Wait!*_`,
