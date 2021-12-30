@@ -354,14 +354,13 @@ ${update.desc}`,
       console.log(letGos);
       return;
     } else {
-      if (!yes_no === `Null`) {
-        console.log(chat);
-        console.log(
-          Kolor.yellow(
-            `⬡==========================⬡    🍁 爪𝖎𝖟𝖚ӄ𝖎™ 🍁    ⬡==========================⬡`
-          )
-        );
-      }
+      console.log(chat);
+      console.log(
+        Kolor.yellow(
+          `⬡==========================⬡    🍁 爪𝖎𝖟𝖚ӄ𝖎™ 🍁    ⬡==========================⬡`
+        )
+      );
+
       if (
         𝓜𝖎𝖟𝖚ӄ𝖎.isGroup &&
         !𝓜𝖎𝖟𝖚ӄ𝖎.fromMe &&
