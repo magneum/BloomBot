@@ -350,7 +350,7 @@ ${update.desc}`,
     var 𝓜𝖎𝖟𝖚ӄ𝖎 = 𝓜𝖎𝖟𝖚ӄ𝖎ǟքք.resolve(chat, ӄʀǟӄɨռʐ, groupMetadata);
     let CheckBans = await BanList.getBanlistUser(𝓜𝖎𝖟𝖚ӄ𝖎.sender, 𝓜𝖎𝖟𝖚ӄ𝖎.chatId);
     const letGos = await LetGoChecker(𝓜𝖎𝖟𝖚ӄ𝖎, ӄʀǟӄɨռʐ, CheckBans);
-    if (!letGos) {
+    if (letGos) {
       console.log(letGos);
       return;
     } else {
