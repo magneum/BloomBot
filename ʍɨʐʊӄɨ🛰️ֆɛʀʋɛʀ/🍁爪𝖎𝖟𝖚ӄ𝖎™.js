@@ -340,6 +340,8 @@ ${update.desc}`,
   });
   // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
   ӄʀǟӄɨռʐ.on(`chat-update`, async (chat) => {
+    if (!chat.hasNewMessage) return;
+    if (!chat.messages) return;
     chat = chat.messages.all()[0];
     var sender = chat.key.remoteJid;
     const groupMetadata = sender.endsWith(`@g.us`)
@@ -358,8 +360,6 @@ ${update.desc}`,
           `⬡==========================⬡    🍁 爪𝖎𝖟𝖚ӄ𝖎™ 🍁    ⬡==========================⬡`
         )
       );
-      if (!chat.hasNewMessage) return;
-      if (!chat.messages) return;
       if (
         𝓜𝖎𝖟𝖚ӄ𝖎.isGroup &&
         !𝓜𝖎𝖟𝖚ӄ𝖎.fromMe &&
@@ -421,7 +421,6 @@ ${update.desc}`,
         );
         // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
         if (𝓜𝖎𝖟𝖚ӄ𝖎.fromMe) {
-          await AutoKrakz();
           const ᴍɪᴢᴜᴋɪɢɪᴛ = require(`simple-git`)();
           await ᴍɪᴢᴜᴋɪɢɪᴛ.fetch();
           var ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ = await ᴍɪᴢᴜᴋɪɢɪᴛ.log([
