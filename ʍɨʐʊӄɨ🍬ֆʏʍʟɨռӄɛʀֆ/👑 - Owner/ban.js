@@ -44,7 +44,7 @@ module.exports = {
       }
       if (𝓜𝖎𝖟𝖚ӄ𝖎.isPm && 𝓜𝖎𝖟𝖚ӄ𝖎.fromMe) {
         let PersonToBanlist = 𝓜𝖎𝖟𝖚ӄ𝖎.chatId;
-        await BanList.addBanlistUser(PersonToBanlist, ``);
+        BanList.addBanlistUser(PersonToBanlist, ``);
         var User = PersonToBanlist.substring(0, PersonToBanlist.indexOf(`@`));
         return Mizuki_Static.MGS(
           ӄʀǟӄɨռʐ,
@@ -72,7 +72,7 @@ module.exports = {
           if (𝓜𝖎𝖟𝖚ӄ𝖎.owner === PersonToBanlist) {
             return;
           }
-          await BanList.addBanlistUser(PersonToBanlist, 𝓜𝖎𝖟𝖚ӄ𝖎.chatId);
+          BanList.addBanlistUser(PersonToBanlist, 𝓜𝖎𝖟𝖚ӄ𝖎.chatId);
           return Mizuki_Static.MGS(
             ӄʀǟӄɨռʐ,
             chat,
@@ -89,13 +89,13 @@ module.exports = {
           // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
         } else if (𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
           let PersonToBanlist = 𝓜𝖎𝖟𝖚ӄ𝖎.replyParticipant;
-          await BanList.addBanlistUser(PersonToBanlist, 𝓜𝖎𝖟𝖚ӄ𝖎.chatId);
+          BanList.addBanlistUser(PersonToBanlist, 𝓜𝖎𝖟𝖚ӄ𝖎.chatId);
           if (𝓜𝖎𝖟𝖚ӄ𝖎.owner === PersonToBanlist) {
             return;
           }
           // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
           var User = PersonToBanlist.substring(0, PersonToBanlist.indexOf(`@`));
-          await BanList.addBanlistUser(PersonToBanlist, 𝓜𝖎𝖟𝖚ӄ𝖎.chatId);
+          BanList.addBanlistUser(PersonToBanlist, 𝓜𝖎𝖟𝖚ӄ𝖎.chatId);
           return Mizuki_Static.MGS(
             ӄʀǟӄɨռʐ,
             chat,
@@ -111,7 +111,7 @@ module.exports = {
           );
           // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
         } else {
-          await BanList.addBanlistUser(``, 𝓜𝖎𝖟𝖚ӄ𝖎.chatId);
+          BanList.addBanlistUser(``, 𝓜𝖎𝖟𝖚ӄ𝖎.chatId);
           return Mizuki_Static.MGS(
             ӄʀǟӄɨռʐ,
             chat,
