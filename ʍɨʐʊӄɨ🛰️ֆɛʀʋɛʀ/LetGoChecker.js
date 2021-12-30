@@ -7,7 +7,6 @@ const LetGoChecker = async (𝓜𝖎𝖟𝖚ӄ𝖎, ӄʀǟӄɨռʐ, CheckBans) =
     !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderGroupAdmin &&
     CheckBans
   ) {
-    console.log(chalk.blueBright.bold(`💡𝗜𝗻𝗳𝗼 ⬰ Banlisted Chat or User.`));
     return false;
   } else {
     return true;
