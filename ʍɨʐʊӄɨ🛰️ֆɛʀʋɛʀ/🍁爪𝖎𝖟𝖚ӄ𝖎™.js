@@ -52,9 +52,7 @@ async function 爪𝖎𝖟𝖚ӄ𝖎() {
     )
   );
   console.log(Kolor.yellow(`💡INFO ⬰ Checking For 🍁爪𝖎𝖟𝖚ӄ𝖎™Updates ...\n✔️`));
-  if (yes_no === `Null`) {
-    await AutoKrakz();
-  }
+  await AutoKrakz();
   // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
   try {
     var session = 𝓜𝖎𝖟𝖚ӄ𝖎ֆʏռօք.Mee6reignite(_𝔏𝔞𝔟_.Mee6);
