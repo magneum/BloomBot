@@ -168,7 +168,10 @@ ${ꜰᴇᴛᴄʜᴇᴅᴍꜱɢ.message}`,
 
 ┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
 │
-│🍁 Mizuki's Welcome Message has Been Enabled!`,
+│🍁 Mizuki's Welcome Message has Been Enabled!
+│🍁 Mizuki Currently greeting new members with:
+└───────〇 
+${ꜰᴇᴛᴄʜᴇᴅᴍꜱɢ.message}`,
             `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
           );
         }
@@ -223,7 +226,10 @@ ${ꜰᴇᴛᴄʜᴇᴅᴍꜱɢ.message}`,
 
 ┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
 │
-│🍁 Mizuki's Welcome Message has Been Updated!`,
+│🍁 Mizuki's Welcome Message has Been Updated!
+│🍁 Mizuki Currently greeting new members with:
+└───────〇 
+${ꜰᴇᴛᴄʜᴇᴅᴍꜱɢ.message}`,
             `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
           );
           // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
@@ -239,7 +245,10 @@ ${ꜰᴇᴛᴄʜᴇᴅᴍꜱɢ.message}`,
 
 ┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
 │
-│🍁 Mizuki's Welcome Message has Been Updated!`,
+│🍁 Mizuki's Welcome Message has Been Updated!
+│🍁 Mizuki Currently greeting new members with:
+└───────〇 
+${ꜰᴇᴛᴄʜᴇᴅᴍꜱɢ.message}`,
             `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
           );
         }
