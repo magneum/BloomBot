@@ -340,6 +340,12 @@ ${update.desc}`,
   });
   // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
   ӄʀǟӄɨռʐ.on(`chat-update`, async (chat) => {
+    chat = chat.messages.all()[0];
+    var sender = chat.key.remoteJid;
+    const groupMetadata = sender.endsWith(`@g.us`)
+      ? await ӄʀǟӄɨռʐ.groupMetadata(sender)
+      : ``;
+    var 𝓜𝖎𝖟𝖚ӄ𝖎 = 𝓜𝖎𝖟𝖚ӄ𝖎ǟքք.resolve(chat, ӄʀǟӄɨռʐ, groupMetadata);
     let CheckBans = await BanList.getBanlistUser(𝓜𝖎𝖟𝖚ӄ𝖎.sender, 𝓜𝖎𝖟𝖚ӄ𝖎.chatId);
     const letGos = await LetGoChecker(𝓜𝖎𝖟𝖚ӄ𝖎, ӄʀǟӄɨռʐ, CheckBans);
     if (!letGos) {
@@ -354,12 +360,6 @@ ${update.desc}`,
       );
       if (!chat.hasNewMessage) return;
       if (!chat.messages) return;
-      chat = chat.messages.all()[0];
-      var sender = chat.key.remoteJid;
-      const groupMetadata = sender.endsWith(`@g.us`)
-        ? await ӄʀǟӄɨռʐ.groupMetadata(sender)
-        : ``;
-      var 𝓜𝖎𝖟𝖚ӄ𝖎 = 𝓜𝖎𝖟𝖚ӄ𝖎ǟքք.resolve(chat, ӄʀǟӄɨռʐ, groupMetadata);
       if (
         𝓜𝖎𝖟𝖚ӄ𝖎.isGroup &&
         !𝓜𝖎𝖟𝖚ӄ𝖎.fromMe &&
