@@ -73,13 +73,12 @@ module.exports = {
               `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived},
 
 🤧𝐎𝐩𝐩𝐬𝐢𝐞 𝘛𝘳𝘺 𝘈𝘨𝘢𝘪𝘯!
-Porn Gif Not Found.`
+_Server Didn't Send Any Response_`
             );
           } catch (ℓαвєяяσя) {
             ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
           }
         }
-
         if (𝓜𝖎𝖟𝖚ӄ𝖎.isGroup) {
           await ffmpeg(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/${Ping}_${FinalName}_${RpornID}.gif`)
             .outputOptions([

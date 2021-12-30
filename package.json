@@ -1,7 +1,7 @@
 {
   "name": "mizuki",
-  "vers": "v25.4-Stable",
-  "verold": "v25.3-Stable",
+  "vers": "v25.5-Stable",
+  "verold": "v25.4-Stable",
   "keywords": [
     "whatsapp",
     "js-whatsapp",
@@ -46,7 +46,7 @@
     "form-data": "^4.0.0",
     "fs-extra": "^10.0.0",
     "g-i-s": "^2.1.6",
-    "genius-lyrics": "^4.3.4",
+    "genius-lyrics": "^4.3.5",
     "get-lyrics-hd": "^0.0.1",
     "get-video-duration": "^4.0.0",
     "get-video-id": "^3.4.3",

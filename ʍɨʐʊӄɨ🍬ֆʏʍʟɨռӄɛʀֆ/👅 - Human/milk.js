@@ -65,7 +65,23 @@ module.exports = {
               fileName: `${𝓜𝖎𝖟𝖚ӄ𝖎.commandName.toUpperCase()}_${ꜱᴇɴᴅᴇʀɪᴅ}.png`,
               cloneFiles: false,
             });
-            await downloader.download();
+            try {
+              await downloader.download();
+            } catch (ℓαвєяяσя) {
+              try {
+                return Mizuki_Buttons.MTB(
+                  ӄʀǟӄɨռʐ,
+                  chat,
+                  𝓜𝖎𝖟𝖚ӄ𝖎,
+                  `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived},
+    
+    🤧𝐎𝐩𝐩𝐬𝐢𝐞 𝘛𝘳𝘺 𝘈𝘨𝘢𝘪𝘯!
+    _Server Didn't Send Any Response_`
+                );
+              } catch (ℓαвєяяσя) {
+                ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
+              }
+            }
             let content = fs.readFileSync(
               `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${𝓜𝖎𝖟𝖚ӄ𝖎.commandName.toUpperCase()}_${ꜱᴇɴᴅᴇʀɪᴅ}.png`
             );
