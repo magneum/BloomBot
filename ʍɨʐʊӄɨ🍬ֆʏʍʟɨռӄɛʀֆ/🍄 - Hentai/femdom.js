@@ -68,75 +68,34 @@ module.exports = {
         }
         // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
       } else {
-        const media = await ӄʀǟӄɨռʐ.prepareMessage(
-          𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-          { url: ʟᴀʙᴛᴇꜱᴛ },
-          MessageType.image,
-          { mimetype: Mimetype.png && Mimetype.jpeg }
-        );
-        // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
         if (𝓜𝖎𝖟𝖚ӄ𝖎.isGroup) {
-          return await ӄʀǟӄɨռʐ
-            .sendMessage(
-              𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              {
-                contentText: `
-┌────◆➤ 🔞𝘼𝙙𝙢𝙞𝙣-𝙊𝙣𝙡𝙮-𝘼𝙙𝙪𝙡𝙩-𝙉𝙎𝙁𝙒
+          return Mizuki_Buttons.MIB(
+            ӄʀǟӄɨռʐ,
+            chat,
+            𝓜𝖎𝖟𝖚ӄ𝖎,
+            `
+
+┌────◆➤ 🔞𝘼𝙙𝙪𝙡𝙩 𝙉𝙎𝙁𝙒 18+
 │
 │👅𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
 │⚡𝐎𝐫𝐝𝐞𝐫𝐞𝐝𝐁𝐲: @${ꜱᴇɴᴅᴇʀeceived} (ᴀᴅᴍɪɴ)
 └───────◆➤`,
-                footerText: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
-                  4
-                )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
-                buttons: [
-                  {
-                    buttonId: `${ᴋᴇɪ}${newScpt}`,
-                    buttonText: { displayText: `${ᴋᴇɪ}${newScpt}` },
-                    type: 1,
-                  },
-                ],
-                headerType: 4,
-                imageMessage: media.message.imageMessage,
-              },
-              MessageType.buttonsMessage,
-              {
-                quoted: chat,
-                contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
-              }
-            )
-            .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
+            ʟᴀʙᴛᴇꜱᴛ
+          );
         } else {
-          return await ӄʀǟӄɨռʐ
-            .sendMessage(
-              𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              {
-                contentText: `
-┌────◆➤ 🔞𝘼𝙙𝙪𝙡𝙩 𝙉𝙎𝙁𝙒 18+
+          return Mizuki_Buttons.MIB(
+            ӄʀǟӄɨռʐ,
+            chat,
+            𝓜𝖎𝖟𝖚ӄ𝖎,
+            `
+
+┌────◆➤ 🔞𝘼𝙙𝙢𝙞𝙣-𝙊𝙣𝙡𝙮-𝘼𝙙𝙪𝙡𝙩-𝙉𝙎𝙁𝙒
 │
 │👅𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
-│⚡𝐎𝐫𝐝𝐞𝐫𝐞𝐝𝐁𝐲: @${ꜱᴇɴᴅᴇʀeceived} 
+│⚡𝐎𝐫𝐝𝐞𝐫𝐞𝐝𝐁𝐲: @${ꜱᴇɴᴅᴇʀeceived}
 └───────◆➤`,
-                footerText: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
-                  4
-                )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
-                buttons: [
-                  {
-                    buttonId: `${ᴋᴇɪ}${newScpt}`,
-                    buttonText: { displayText: `${ᴋᴇɪ}${newScpt}` },
-                    type: 1,
-                  },
-                ],
-                headerType: 4,
-                imageMessage: media.message.imageMessage,
-              },
-              MessageType.buttonsMessage,
-              {
-                quoted: chat,
-                contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
-              }
-            )
-            .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
+            ʟᴀʙᴛᴇꜱᴛ
+          );
         }
       }
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡

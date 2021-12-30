@@ -87,7 +87,7 @@ _Server Didn't Send Any Response_`
                   contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ, Receiver] },
                   quoted: chat,
                   mimetype: `video/gif`,
-                  caption: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 
+                  caption: `(c)𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭  📅ᴅᴀᴛᴇ: _${Clock}_
 
 ┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
 │
@@ -123,7 +123,7 @@ _Server Didn't Send Any Response_`
                   contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
                   quoted: chat,
                   mimetype: `video/gif`,
-                  caption: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 
+                  caption: `(c)𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭  📅ᴅᴀᴛᴇ: _${Clock}_
 
 ┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
 │
