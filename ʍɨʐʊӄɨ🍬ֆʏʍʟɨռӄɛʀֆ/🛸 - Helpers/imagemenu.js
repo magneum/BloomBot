@@ -36,7 +36,6 @@ module.exports = {
 └───────◆➤
 
 ┌──────────────◆➤ 𝙄𝙢𝙖𝙜𝙚
-│🐠• ${ᴋᴇɪ}pinterest _search anything on pinterest_
 │🐠• ${ᴋᴇɪ}ocr: _read text written on tagged image_
 │🐠• ${ᴋᴇɪ}sticker: _convert image/video to sticker_
 │🐠• ${ᴋᴇɪ}carbon: _convert text to carbonized image_
