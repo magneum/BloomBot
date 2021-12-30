@@ -32,14 +32,13 @@ module.exports = {
 │🍁 𝐀𝐝𝐝 𝐌𝐢𝐳𝐮𝐤𝐢: _${ᴋᴇɪ}request_
 │☣️ 𝐋𝐢𝐜𝐞𝐧𝐬𝐞𝐝: Apache License Version 2.0
 │🍰 𝐆𝐫𝐨𝐮𝐩: ${_𝔏𝔞𝔟_.HASH}
-
 │🍕 𝘾𝙤𝙢𝙞𝙣𝙜 𝙎𝙤𝙤𝙣! _many many more_
 └───────◆➤
 
 ┌──────────────◆➤ 𝙄𝙢𝙖𝙜𝙚
 │🐠• ${ᴋᴇɪ}pinterest _search anything on pinterest_
 │🐠• ${ᴋᴇɪ}ocr: _read text written on tagged image_
-│🐠• ${ᴋᴇɪ}sticker: _convert image to sticker_
+│🐠• ${ᴋᴇɪ}sticker: _convert image/video to sticker_
 │🐠• ${ᴋᴇɪ}carbon: _convert text to carbonized image_
 └───────◆➤`;
       return Mizuki_Static.MGS(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, MainText, MediaUrl).catch(
