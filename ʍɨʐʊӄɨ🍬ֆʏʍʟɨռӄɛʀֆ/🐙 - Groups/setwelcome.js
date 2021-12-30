@@ -16,7 +16,7 @@ module.exports = {
   name: `setwelcome`,
   description: `New members of a group chat will be welcomed with a message.`,
   𝓜𝓮𝓮6ʍօʀɛ: ` 
-*${ᴋᴇɪ}setwelcome <message>
+*${ᴋᴇɪ}setwelcome* <message>
 *${ᴋᴇɪ}setwelcome*  <off>  
 *${ᴋᴇɪ}setwelcome*  <delete>
 Do note, the setwelcome option is still enabled after you use the delete option.`,
@@ -98,7 +98,13 @@ Do note, the setwelcome option is still enabled after you use the delete option.
             ӄʀǟӄɨռʐ,
             chat,
             𝓜𝖎𝖟𝖚ӄ𝖎,
-            `Set a setwelcome message first.`,
+            `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived},
+
+
+┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
+│
+│🍁 Mizuki's Welcome Message needs to be added first!
+│🍁 use *${ᴋᴇɪ}setwelcome* <message>`,
             `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
           );
         } else if (enabled === `OFF`) {
@@ -106,7 +112,14 @@ Do note, the setwelcome option is still enabled after you use the delete option.
             ӄʀǟӄɨռʐ,
             chat,
             𝓜𝖎𝖟𝖚ӄ𝖎,
-            `PostDataBase are enabled: False \nCurrently greeting new members with: ${Msg.message}`,
+            `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived},
+
+
+┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
+│
+│🍁 Mizuki Currently greeting new members with:
+└───────◆➤ 
+${Msg.message}`,
             `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
           );
         }
@@ -115,7 +128,14 @@ Do note, the setwelcome option is still enabled after you use the delete option.
           ӄʀǟӄɨռʐ,
           chat,
           𝓜𝖎𝖟𝖚ӄ𝖎,
-          `PostDataBase are enabled: True \nCurrently greeting new members with: ${Msg.message}`,
+          `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived},
+
+
+┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
+│
+│🍁 Mizuki Currently greeting new members with:
+└───────◆➤ 
+${Msg.message}`,
           `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
         );
         // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
@@ -127,7 +147,12 @@ Do note, the setwelcome option is still enabled after you use the delete option.
             ӄʀǟӄɨռʐ,
             chat,
             𝓜𝖎𝖟𝖚ӄ𝖎,
-            `Welcome message has been disabled.`,
+            `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived},
+
+
+┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
+│
+│🍁 Mizuki's Welcome Message has Been Disabled!`,
             `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
           );
         }
@@ -139,7 +164,12 @@ Do note, the setwelcome option is still enabled after you use the delete option.
             ӄʀǟӄɨռʐ,
             chat,
             𝓜𝖎𝖟𝖚ӄ𝖎,
-            `Welcome message has been enabled.`,
+            `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived},
+
+
+┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
+│
+│🍁 Mizuki's Welcome Message has Been Enabled!`,
             `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
           );
         }
@@ -154,7 +184,13 @@ Do note, the setwelcome option is still enabled after you use the delete option.
               ӄʀǟӄɨռʐ,
               chat,
               𝓜𝖎𝖟𝖚ӄ𝖎,
-              `Set a setwelcome message first.`,
+              `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived},
+
+
+┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
+│
+│🍁 Mizuki's Welcome Message needs to be added first!
+│🍁 use *${ᴋᴇɪ}setwelcome* <message>`,
               `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
             );
           }
@@ -163,7 +199,12 @@ Do note, the setwelcome option is still enabled after you use the delete option.
             ӄʀǟӄɨռʐ,
             chat,
             𝓜𝖎𝖟𝖚ӄ𝖎,
-            `Welcome message deleted.`,
+            `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived},
+
+
+┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
+│
+│🍁 Mizuki's Welcome Message has Been Removed!`,
             `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
           );
         }
@@ -178,7 +219,12 @@ Do note, the setwelcome option is still enabled after you use the delete option.
             ӄʀǟӄɨռʐ,
             chat,
             𝓜𝖎𝖟𝖚ӄ𝖎,
-            `Welcome message updated and enabled.`,
+            `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived},
+
+
+┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
+│
+│🍁 Mizuki's Welcome Message has Been Updated!`,
             `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
           );
           // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
@@ -189,7 +235,12 @@ Do note, the setwelcome option is still enabled after you use the delete option.
             ӄʀǟӄɨռʐ,
             chat,
             𝓜𝖎𝖟𝖚ӄ𝖎,
-            `Welcome message updated and enabled.`,
+            `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived},
+
+
+┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
+│
+│🍁 Mizuki's Welcome Message has Been Updated!`,
             `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
           );
         }
