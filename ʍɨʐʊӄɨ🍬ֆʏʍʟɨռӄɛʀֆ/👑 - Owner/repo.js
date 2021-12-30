@@ -26,7 +26,7 @@ module.exports = {
       timestampe = speed();
       latensie = speed() - timestampe;
       try {
-        return Mizuki_Static.MGS(
+        Mizuki_Buttons.MIB(
           ӄʀǟӄɨռʐ,
           chat,
           𝓜𝖎𝖟𝖚ӄ𝖎,
@@ -44,7 +44,7 @@ module.exports = {
 │
 │*🔥 ɢʀᴏᴜᴘ:* ${_𝔏𝔞𝔟_.HASH}
 └───────◆➤`,
-          `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
+          _𝔏𝔞𝔟_.MEE
         );
       } catch (ℓαвєяяσя) {
         ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);

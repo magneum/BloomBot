@@ -13,8 +13,8 @@ const vers = require(`../../package.json`);
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
 module.exports = {
   name: `admins`,
-  description: `Tag admins of a group (either as a reply to another message or a direct tag).`,
-  𝓜𝓮𝓮6ʍօʀɛ: `${ᴋᴇɪ}admins`,
+  𝓜𝓮𝓮6ʍօʀɛ: `${ᴋᴇɪ}admins
+🍁Tag admins of a group (either as a reply to another message or a direct tag).`,
   async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
     try {
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
@@ -33,7 +33,7 @@ module.exports = {
             chat,
             𝓜𝖎𝖟𝖚ӄ𝖎,
             `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived}, 
-          
+
 ┌────◆➤ 🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧   
 │
 │❗𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ᴋᴇɪ}${defaultnm}, 
@@ -51,32 +51,17 @@ module.exports = {
         message += `@${number} `;
       }
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-      if (!𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
-        ӄʀǟӄɨռʐ
-          .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, message, MessageType.text, {
-            quoted: chat,
-            contextInfo: {
-              mentionedJid: 𝓜𝖎𝖟𝖚ӄ𝖎.groupAdmins,
-            },
-          })
-          .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
+      return Mizuki_Static.MGS(
+        ӄʀǟӄɨռʐ,
+        chat,
+        𝓜𝖎𝖟𝖚ӄ𝖎,
+        `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived},
 
-        return;
-      }
-      // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-      await ӄʀǟӄɨռʐ
-        .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, message, MessageType.text, {
-          quoted: chat,
-          contextInfo: {
-            stanzaId: 𝓜𝖎𝖟𝖚ӄ𝖎.replyMessageId,
-            participant: 𝓜𝖎𝖟𝖚ӄ𝖎.replyParticipant,
-            quotedMessage: {
-              conversation: 𝓜𝖎𝖟𝖚ӄ𝖎.replyMessage,
-            },
-            mentionedJid: 𝓜𝖎𝖟𝖚ӄ𝖎.groupAdmins,
-          },
-        })
-        .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
+
+┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
+${message}`,
+        `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
+      );
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
     } catch (ℓαвєяяσя) {
       ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
