@@ -32,7 +32,7 @@ try {
               
 ◆ 𝘞𝘦 𝘙𝘢𝘯 𝘐𝘯𝘵𝘰 𝘚𝘰𝘮𝘦 𝘌𝘳𝘳𝘰𝘳 ◆
 ➤ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_!`,
-          footerText: `\n(c)𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 \n🛰️ᴘɪɴɢ: _${Ping}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
+          footerText: `\n(c)𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 \n📅ᴅᴀᴛᴇ: _${Clock}_`,
           buttons: [
             {
               buttonId: `${ᴋᴇɪ}help`,
@@ -55,7 +55,7 @@ try {
         𝓜𝖎𝖟𝖚ӄ𝖎.Myself,
         {
           contentText: `⚡Try Command: _${ᴋᴇɪ}${FinalName}_ Again Later!`,
-          footerText: `\n(c)𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭  \n🛰️ᴘɪɴɢ: _${Ping}s_ 📅ᴅᴀᴛᴇ: _${Clock}_
+          footerText: `\n(c)𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭  \n📅ᴅᴀᴛᴇ: _${Clock}_
 
 
 Error: ${ℓαвєяяσя}`,

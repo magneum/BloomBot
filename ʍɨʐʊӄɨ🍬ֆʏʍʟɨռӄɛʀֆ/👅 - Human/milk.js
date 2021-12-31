@@ -103,7 +103,7 @@ _Server Didn't Send Any Response_`
 │🍕 𝐓𝐢𝐭𝐥𝐞: *${title}*
 └───────〇
 🔗𝐋𝐢𝐧𝐤: ${amazeme}`,
-                  footerText: `\n(c)𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 \n🛰️ᴘɪɴɢ: _${Ping}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
+                  footerText: `\n(c)𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 \n📅ᴅᴀᴛᴇ: _${Clock}_`,
                   buttons: [
                     {
                       buttonId: `${ᴋᴇɪ}${moonshine}`,

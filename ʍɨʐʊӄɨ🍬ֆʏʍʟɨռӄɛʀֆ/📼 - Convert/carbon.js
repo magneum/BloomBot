@@ -82,7 +82,7 @@ or reply to a text message with
         await ӄʀǟӄɨռʐ
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            `\n(c)𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭  \n🛰️ᴘɪɴɢ: _${Ping}s_ 📅ᴅᴀᴛᴇ: _${Clock}_\n\nThe replied message should be text.`,
+            `\n(c)𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭  \n📅ᴅᴀᴛᴇ: _${Clock}_\n\nThe replied message should be text.`,
             MessageType.text,
             { quoted: chat }
           )
@@ -149,7 +149,7 @@ Please use the command  *${ᴋᴇɪ}carbon <text>*  or reply to a text message w
             await ӄʀǟӄɨռʐ
               .sendMessage(
                 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                `\n(c)𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭  \n🛰️ᴘɪɴɢ: _${Ping}s_ 📅ᴅᴀᴛᴇ: _${Clock}_\n\nPlease enter a valid theme.
+                `\n(c)𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭  \n📅ᴅᴀᴛᴇ: _${Clock}_\n\nPlease enter a valid theme.
 Do note that theme names are  *case sensitive*${ᴋᴇɪ}`,
                 MessageType.text,
                 { quoted: chat }
@@ -172,7 +172,7 @@ Do note that theme names are  *case sensitive*${ᴋᴇɪ}`,
       await ӄʀǟӄɨռʐ
         .sendMessage(
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-          `\n(c)𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭  \n🛰️ᴘɪɴɢ: _${Ping}s_ 📅ᴅᴀᴛᴇ: _${Clock}_\n\nConverting your text into a code snippet. Please wait...`,
+          `\n(c)𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭  \n📅ᴅᴀᴛᴇ: _${Clock}_\n\nConverting your text into a code snippet. Please wait...`,
           MessageType.text,
           { quoted: chat }
         )
@@ -187,7 +187,7 @@ Do note that theme names are  *case sensitive*${ᴋᴇɪ}`,
           quoted: chat,
           mimetype: Mimetype.png,
           caption:
-            `\n(c)𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭  \n🛰️ᴘɪɴɢ: _${Ping}s_ 📅ᴅᴀᴛᴇ: _${Clock}_\n\n
+            `\n(c)𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭  \n📅ᴅᴀᴛᴇ: _${Clock}_\n\n
 *<< Here's your carbon image! >>*
 Colour Scheme: {}`.format(themeInput),
         })
