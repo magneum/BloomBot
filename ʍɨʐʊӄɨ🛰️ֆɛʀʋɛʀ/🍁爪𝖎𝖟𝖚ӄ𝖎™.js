@@ -4,6 +4,7 @@ const Mizuki_Buttons = require(`./Mizuki_Buttons`);
 const Mizuki_Static = require(`./Mizuki_Static`);
 const LetGoChecker = require(`./LetGoChecker`);
 const 𝓜𝖎𝖟𝖚ӄ𝖎ֆʏռօք = require(`./𝓜𝖎𝖟𝖚ӄ𝖎ᴢᴇɴ`);
+const moment = require(`moment-timezone`);
 const AutoKrakz = require(`./𝓜𝖎𝖟𝖚ӄ𝖎ɢɪᴛ`);
 const speed = require(`performance-now`);
 const LinkList = require(`./LinkList`);
@@ -347,7 +348,7 @@ ${update.desc}`,
     if (!chat.hasNewMessage) return;
     if (!chat.messages) return;
     console.log(
-      "⬡==========================⬡    🍁 爪𝖎𝖟𝖚ӄ𝖎™ 🍁    ⬡==========================⬡"
+      `⬡==========================⬡    🍁 爪𝖎𝖟𝖚ӄ𝖎™ 🍁    ⬡==========================⬡`
     );
     chat = chat.messages.all()[0];
     const sender = chat.key.remoteJid;
@@ -358,7 +359,7 @@ ${update.desc}`,
     // console.log(𝓜𝖎𝖟𝖚ӄ𝖎);
     console.log(chat);
     console.log(
-      "⬡==========================⬡    🍁 爪𝖎𝖟𝖚ӄ𝖎™ 🍁    ⬡==========================⬡"
+      `⬡==========================⬡    🍁 爪𝖎𝖟𝖚ӄ𝖎™ 🍁    ⬡==========================⬡`
     );
     if (
       𝓜𝖎𝖟𝖚ӄ𝖎.isGroup &&
@@ -494,25 +495,24 @@ Type _${ᴋᴇɪ}help_ and Read Everything Properly`,
           ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
         }
       }
-      const moment = require("moment-timezone");
-      const time2 = moment().tz("Asia/Kolkata").format("HH:mm:ss");
-      if (time2 < "24:59:00") {
-        var Timers = "Good night😴";
+      const time2 = moment().tz(`Asia/Kolkata`).format(`HH:mm:ss`);
+      if (time2 < `24:59:00`) {
+        var Timers = `𝐍𝐢𝐠𝐡𝐭😴`;
       }
-      if (time2 < "19:00:00") {
-        var Timers = "Good evening🌞";
+      if (time2 < `19:00:00`) {
+        var Timers = `𝐄𝐯𝐞𝐧𝐢𝐧𝐠🌞`;
       }
-      if (time2 < "18:00:00") {
-        var Timers = "good afternoon🌄";
+      if (time2 < `18:00:00`) {
+        var Timers = `𝐀𝐟𝐭𝐞𝐫𝐧𝐨𝐨𝐧🌄`;
       }
-      if (time2 < "15:00:00") {
-        var Timers = "good afternoon☀️";
+      if (time2 < `15:00:00`) {
+        var Timers = `𝐀𝐟𝐭𝐞𝐫𝐧𝐨𝐨𝐧☀️`;
       }
-      if (time2 < "11:00:00") {
-        var Timers = "Good morning🌅";
+      if (time2 < `11:00:00`) {
+        var Timers = `𝐌𝐨𝐫𝐧𝐢𝐧𝐠🌅`;
       }
-      if (time2 < "05:00:00") {
-        var Timers = "Good night💤";
+      if (time2 < `05:00:00`) {
+        var Timers = `𝐍𝐢𝐠𝐡𝐭💤`;
       }
       return command.handle(
         ӄʀǟӄɨռʐ,
