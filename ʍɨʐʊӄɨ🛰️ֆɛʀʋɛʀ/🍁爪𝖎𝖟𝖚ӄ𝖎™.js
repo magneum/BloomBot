@@ -478,6 +478,13 @@ ${update.desc}`,
                 )
               );
               try {
+                var child = require(`child_process`).exec(
+                  `python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`
+                );
+                child.stdout.pipe(process.stdout);
+                child.on(`exit`, async function () {
+                  process.exitCode = 1;
+                });
                 return Mizuki_Buttons.MTB(
                   ӄʀǟӄɨռʐ,
                   chat,
