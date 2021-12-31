@@ -411,7 +411,11 @@ ${update.desc}`,
       console.log(Kolor.red.bold(BANNED));
       console.log(Kolor.red.bold(CheckBans));
       if (CheckBans === true && !𝓜𝖎𝖟𝖚ӄ𝖎.fromMe) {
-        console.log(Kolor.blue.bold(`💡𝗜𝗻𝗳𝗼 ⬰ Banlisted!`));
+        console.log(
+          Kolor.blue.bold(
+            `💡𝗜𝗻𝗳𝗼 ⬰ Banlisted!\n${𝓜𝖎𝖟𝖚ӄ𝖎.commandName} Executed By ${𝓜𝖎𝖟𝖚ӄ𝖎.sender}`
+          )
+        );
         return;
       }
       console.log(
