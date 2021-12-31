@@ -13,8 +13,6 @@ RUN apt install nodejs -y
 RUN cd 🍁爪𝖎𝖟𝖚ӄ𝖎™
 RUN git clone https://github.com/Krakinz/Mizuki.git
 RUN cd Mizuki
-RUN git remote add upstream https://github.com/Krakinz/Mizuki.git
-RUN git fetch upstream
 WORKDIR /Mizuki
 RUN npm install --force
 RUN pip install -r ʍɨʐʊӄɨ☣️ƈօʀɛ/ӄʀǟӄɨռʐ🐙ʟǟɮ.txt
