@@ -477,30 +477,6 @@ ${update.desc}`,
                   `⬡==========================⬡    🍁Starting Mizuki pull...`
                 )
               );
-              try {
-                var child = require(`child_process`).exec(
-                  `python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`
-                );
-                child.stdout.pipe(process.stdout);
-                child.on(`exit`, async function () {
-                  process.exitCode = 1;
-                });
-                return Mizuki_Buttons.MTB(
-                  ӄʀǟӄɨռʐ,
-                  chat,
-                  𝓜𝖎𝖟𝖚ӄ𝖎,
-                  `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived},
-
-┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*Auto-Update*_
-│
-│💀 𝐎𝐥𝐝 𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_
-│🧈 𝐍𝐞𝐰 𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.verold}_
-│🧃 𝐍𝐞𝐰 𝐔𝐩𝐝𝐚𝐭𝐞𝐬: _${ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total}_
-└───────〇`
-                );
-              } catch (ℓαвєяяσя) {
-                ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
-              }
             })
             .pull(async (err, update) => {
               if (err) {
@@ -512,7 +488,6 @@ ${update.desc}`,
                     `Merge resulted in ${Kolor.red(err)} conflicts`
                   );
                 }
-                // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
               } else if (update && update.summary.changes) {
                 var child = require(`child_process`).exec(
                   `python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`

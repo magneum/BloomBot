@@ -21,41 +21,15 @@ module.exports = {
       );
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
       var N = Math.floor(Math.random() * (1000 - 1) + 1);
-      var M = Math.floor(Math.random() * (800 - 1) + 1);
-      var O = Math.floor(Math.random() * (800 - 1) + 1);
-      try {
-        try {
-          return Mizuki_Buttons.MIB(
-            ӄʀǟӄɨռʐ,
-            chat,
-            𝓜𝖎𝖟𝖚ӄ𝖎,
-            `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived},     
+      return Mizuki_Buttons.MIB(
+        ӄʀǟӄɨռʐ,
+        chat,
+        𝓜𝖎𝖟𝖚ӄ𝖎,
+        `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived},     
 
 Here Is Your Mizuki Meme‍`,
-            `https://ctk-api.herokuapp.com/meme/${N}`
-          );
-        } catch (ℓαвєяяσя) {
-          return Mizuki_Buttons.MIB(
-            ӄʀǟӄɨռʐ,
-            chat,
-            𝓜𝖎𝖟𝖚ӄ𝖎,
-            `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived},     
-
-Here Is Your Mizuki Meme‍`,
-            `https://ctk-api.herokuapp.com/meme/${M}`
-          );
-        }
-      } catch (ℓαвєяяσя) {
-        return Mizuki_Buttons.MIB(
-          ӄʀǟӄɨռʐ,
-          chat,
-          𝓜𝖎𝖟𝖚ӄ𝖎,
-          `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived},     
-
-Here Is Your Mizuki Meme‍`,
-          `https://ctk-api.herokuapp.com/meme/${O}`
-        );
-      }
+        `https://ctk-api.herokuapp.com/meme/${N}`
+      );
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
     } catch (ℓαвєяяσя) {
       ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
