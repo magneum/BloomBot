@@ -5,18 +5,8 @@ const _𝔏𝔞𝔟_ = require(`./_𝔏𝔞𝔟_`);
 const ꜰᴜᴄᴋ = require(`./oShit`);
 const fs = require(`fs`);
 require(`python-format-js`);
-const cleanRF = require("./cleanRF");
-const vers = require(`../package.json`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
-const speed = require("performance-now");
-let Timestamp = speed();
-const Ping = speed() - Timestamp;
-const date = require("date-and-time");
-const now = new Date();
-date.format(now, "ddd, MMM DD YYYY");
-const pattern = date.compile("ddd, MMM DD YYYY");
-const Clock = date.format(now, pattern);
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
 exports.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ = async (
   ӄʀǟӄɨռʐ,

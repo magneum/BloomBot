@@ -2,17 +2,9 @@
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const speed = require(`performance-now`);
 const vers = require(`../package.json`);
-const date = require(`date-and-time`);
 const cleanRF = require("./cleanRF");
 const _𝔏𝔞𝔟_ = require(`./_𝔏𝔞𝔟_`);
 const ꜰᴜᴄᴋ = require(`./oShit`);
-let Timestamp = speed();
-const Pong = speed() - Timestamp;
-const Ping = Pong.toFixed(4);
-const now = new Date();
-date.format(now, `ddd, MMM DD YYYY`);
-const pattern = date.compile(`ddd, MMM DD YYYY`);
-const Clock = date.format(now, pattern);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
@@ -28,6 +20,14 @@ const Mizuki_Text_But = (ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, MainText)
     const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
     const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
   }
+  const date = require(`date-and-time`);
+  let Timestamp = speed();
+  const Pong = speed() - Timestamp;
+  const Ping = Pong.toFixed(4);
+  const now = new Date();
+  date.format(now, `ddd, MMM DD YYYY`);
+  const pattern = date.compile(`ddd, MMM DD YYYY`);
+  const Clock = date.format(now, pattern);
   const buttonMessage = {
     contentText: MainText,
     footerText: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 \n🛰️ᴘɪɴɢ: _${Ping}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
@@ -60,6 +60,14 @@ const Mizuki_Image_But = async (ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, Ma
     const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
     const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
   }
+  const date = require(`date-and-time`);
+  let Timestamp = speed();
+  const Pong = speed() - Timestamp;
+  const Ping = Pong.toFixed(4);
+  const now = new Date();
+  date.format(now, `ddd, MMM DD YYYY`);
+  const pattern = date.compile(`ddd, MMM DD YYYY`);
+  const Clock = date.format(now, pattern);
   const media = await ӄʀǟӄɨռʐ.prepareMessage(
     𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
     { url: MediaUrl },
@@ -103,6 +111,14 @@ const Mizuki_Video_But = async (ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, Ma
     const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
     const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
   }
+  const date = require(`date-and-time`);
+  let Timestamp = speed();
+  const Pong = speed() - Timestamp;
+  const Ping = Pong.toFixed(4);
+  const now = new Date();
+  date.format(now, `ddd, MMM DD YYYY`);
+  const pattern = date.compile(`ddd, MMM DD YYYY`);
+  const Clock = date.format(now, pattern);
   const media = await ӄʀǟӄɨռʐ.prepareMessage(
     𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
     { url: MediaUrl },
@@ -146,6 +162,14 @@ const Mizuki_GIF_But = async (ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, Main
     const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
     const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
   }
+  const date = require(`date-and-time`);
+  let Timestamp = speed();
+  const Pong = speed() - Timestamp;
+  const Ping = Pong.toFixed(4);
+  const now = new Date();
+  date.format(now, `ddd, MMM DD YYYY`);
+  const pattern = date.compile(`ddd, MMM DD YYYY`);
+  const Clock = date.format(now, pattern);
   const media = await ӄʀǟӄɨռʐ.prepareMessage(
     𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
     { url: MediaUrl },
@@ -195,6 +219,14 @@ const Mizuki_VideoAudio_But = async (
     const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
     const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
   }
+  const date = require(`date-and-time`);
+  let Timestamp = speed();
+  const Pong = speed() - Timestamp;
+  const Ping = Pong.toFixed(4);
+  const now = new Date();
+  date.format(now, `ddd, MMM DD YYYY`);
+  const pattern = date.compile(`ddd, MMM DD YYYY`);
+  const Clock = date.format(now, pattern);
   const media = ӄʀǟӄɨռʐ.prepareMessage(
     𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
     { url: MediaUrl },
@@ -241,6 +273,14 @@ const Mizuki_Location_But = async (
     const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
     const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
   }
+  const date = require(`date-and-time`);
+  let Timestamp = speed();
+  const Pong = speed() - Timestamp;
+  const Ping = Pong.toFixed(4);
+  const now = new Date();
+  date.format(now, `ddd, MMM DD YYYY`);
+  const pattern = date.compile(`ddd, MMM DD YYYY`);
+  const Clock = date.format(now, pattern);
   const media = ӄʀǟӄɨռʐ.prepareMessage(
     𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
     { url: MediaUrl },
