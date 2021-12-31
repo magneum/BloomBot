@@ -94,7 +94,7 @@ For instance,
             `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
           );
         }
-        let NUM;
+
         // if (isNaN(Needs[0]) || Needs[0][0] === `+` || Needs[0].length < 10) {
         //   var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(𝓜𝖎𝖟𝖚ӄ𝖎.commandName);
         //   𝓜𝓮𝓮ʍօʀɛ = 𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ === undefined ? `Null` : 𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ;
@@ -111,19 +111,15 @@ For instance,
         // }
         // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
         // if (Needs[0].length == 10 && !isNaN(Needs[0])) {
-        //   NUM = `91` + Needs[0];
+        //   addnum = `91` + Needs[0];
         // } else {
-        //   NUM = Needs[0];
+        //   addnum = Needs[0];
         // }
-        var numbergot = Needs[0];
-        var number = numbergot.replaceAll(" ", "");
-        var add = number.replace(/[&\/\\#,+()$~%.'":*?<>{}]/g, "");
-        if (Needs[0].length == 10 && !isNaN(Needs[0])) {
-          NUM = add;
-        } else {
-          NUM = add;
-        }
-        const exists = await ӄʀǟӄɨռʐ.isOnWhatsApp(NUM + `@s.whatsapp.net`);
+        const numbergot = Needs[0];
+        const number = numbergot.replaceAll(" ", "");
+        const addnum = number.replace(/[&\/\\#,+()$~%.'":*?<>{}]/g, "");
+        console.log("🍁 " + addnum + " 🍁");
+        const exists = await ӄʀǟӄɨռʐ.isOnWhatsApp(addnum + `@s.whatsapp.net`);
         if (!exists) {
           return Mizuki_Static.MGS(
             ӄʀǟӄɨռʐ,
@@ -142,10 +138,9 @@ ${ᴋᴇɪ}add 910000000000`,
             `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
           );
         }
-        NUM = `${Needs[0].replace(/ /g, ``)}@s.whatsapp.net`;
-        const request = ӄʀǟӄɨռʐ.groupAdd(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, [NUM]);
+        const request = ӄʀǟӄɨռʐ.groupAdd(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, [addnum]);
         const response = await request;
-        if (response[NUM + `@c.us`] == 408) {
+        if (response[addnum + `@c.us`] == 408) {
           return Mizuki_Static.MGS(
             ӄʀǟӄɨռʐ,
             chat,
@@ -157,8 +152,7 @@ ${ᴋᴇɪ}add 910000000000`,
 The number entered cannot be added back before 24 hours.`,
             `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
           );
-          // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-        } else if (response[NUM + `@c.us`] == 409) {
+        } else if (response[addnum + `@c.us`] == 409) {
           return Mizuki_Static.MGS(
             ӄʀǟӄɨռʐ,
             chat,
@@ -179,11 +173,10 @@ The number entered is already a member of this group.`,
 
 
 ┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
-${NUM} added successfully!`,
+${addnum} added successfully!`,
             `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
           );
         }
-        // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
       } catch (ℓαвєяяσя) {
         if (ℓαвєяяσя.status == 400) {
           return Mizuki_Static.MGS(
@@ -201,8 +194,6 @@ Please verify the number again.`,
         }
         await ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
       }
-      return;
-      // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
     } catch (ℓαвєяяσя) {
       ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
       console.log(ℓαвєяяσя);
