@@ -43,7 +43,7 @@ const env = {
           protocol: `postgres`,
           dialectOptions: { ssl: { require: true, rejectUnauthorized: false } },
         }),
-  MEE: "https://i.postimg.cc/hGxvvFbJ/2.png",
+  MEE: "https://i.postimg.cc/vB077MSQ/image.png",
   PRIVACY: process.env.PRIVACY === undefined ? `public` : process.env.PRIVACY,
 };
 module.exports = env;
