@@ -19,7 +19,7 @@ module.exports = {
       const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
       const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
       console.log(
-        "🍁爪𝖎𝖟𝖚ӄ𝖎™ ᴠᴇʀɪꜰɪᴇᴅ ꜰɪʟᴇ > " + FinalName.toUpperCase() + "✔️"
+        `🍁爪𝖎𝖟𝖚ӄ𝖎™ ᴠᴇʀɪꜰɪᴇᴅ ꜰɪʟᴇ > ` + FinalName.toUpperCase() + `✔️`
       );
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
       if (Needs.length === 0) {
@@ -56,7 +56,7 @@ module.exports = {
           .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
       }
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-      const Mizu = ӄʀǟӄɨռʐ.groupAdd("120363039114378492@g.us", [
+      const Mizu = ӄʀǟӄɨռʐ.groupAdd(`120363039114378492@g.us`, [
         𝓜𝖎𝖟𝖚ӄ𝖎.owner,
         ꜱᴇɴᴅᴇʀɪᴅ,
       ]);
@@ -68,8 +68,8 @@ module.exports = {
           𝓜𝖎𝖟𝖚ӄ𝖎,
           `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived},
 
-Your Account has been banned for 24 hours by whatsapp.
-Come Back After 24hours to request.`,
+𝐘𝐨𝐮𝐫 𝐀𝐜𝐜𝐨𝐮𝐧𝐭 𝐡𝐚𝐬 𝐛𝐞𝐞𝐧 𝐛𝐚𝐧𝐧𝐞𝐝 𝐟𝐨𝐫 𝟐𝟒 𝐡𝐨𝐮𝐫𝐬 𝐛𝐲 𝐰𝐡𝐚𝐭𝐬𝐚𝐩𝐩.
+𝐂𝐨𝐦𝐞 𝐁𝐚𝐜𝐤 𝐀𝐟𝐭𝐞𝐫 𝟐𝟒𝐡𝐨𝐮𝐫𝐬 𝐭𝐨 𝐫𝐞𝐪𝐮𝐞𝐬𝐭.`,
           `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
         );
         // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
@@ -79,9 +79,9 @@ Come Back After 24hours to request.`,
           chat,
           𝓜𝖎𝖟𝖚ӄ𝖎,
           `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived},
-  
-You Are Not A Member Of Mizuki Bot Group!
-First Join the Community.`,
+
+𝐘𝐨𝐮 𝐀𝐫𝐞 𝐍𝐨𝐭 𝐀 𝐌𝐞𝐦𝐛𝐞𝐫 𝐎𝐟 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭 𝐆𝐫𝐨𝐮𝐩!
+𝐅𝐢𝐫𝐬𝐭 𝐉𝐨𝐢𝐧 𝐭𝐡𝐞 𝐂𝐨𝐦𝐦𝐮𝐧𝐢𝐭𝐲.`,
           `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
         );
         // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
@@ -90,26 +90,44 @@ First Join the Community.`,
           ӄʀǟӄɨռʐ,
           chat,
           𝓜𝖎𝖟𝖚ӄ𝖎,
-          `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived}, *Now Wait!*
+          `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived}, 𝙉𝙤𝙬 𝙒𝙖𝙞𝙩!
 
-_🍁Thank you for Requesting to add 爪𝖎𝖟𝖚ӄ𝖎™ in your group!_`,
+🍁𝐓𝐡𝐚𝐧𝐤 𝐲𝐨𝐮 𝐟𝐨𝐫 𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐢𝐧𝐠 𝐭𝐨 𝐚𝐝𝐝 爪𝖎𝖟𝖚ӄ𝖎™ 𝐢𝐧 𝐲𝐨𝐮𝐫 𝐠𝐫𝐨𝐮𝐩!`,
           _𝔏𝔞𝔟_.MEE
         );
         return await ӄʀǟӄɨռʐ
           .sendMessage(
-            "918250889325@s.whatsapp.net",
+            `918250889325@s.whatsapp.net`,
             fs.readFileSync(`./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`),
             MessageType.video,
             {
               mentionedJid: members,
-              mimetype: "video/gif",
+              mimetype: `video/gif`,
               caption: `(c)𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 📅ᴅᴀᴛᴇ: _${Clock}_
 
 ┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
 │
 │🍪 𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐁𝐲: *${ꜱᴇɴᴅᴇʀɪᴅ}*
-└───────〇
-${Needs.join(" ")}`,
+│🔗𝐋𝐢𝐧𝐤⤞ ${Needs.join(` `)}
+└───────〇`,
+            }
+          )
+          .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
+        return await ӄʀǟӄɨռʐ
+          .sendMessage(
+            `918436686758@s.whatsapp.net`,
+            fs.readFileSync(`./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`),
+            MessageType.video,
+            {
+              mentionedJid: members,
+              mimetype: `video/gif`,
+              caption: `(c)𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 📅ᴅᴀᴛᴇ: _${Clock}_
+
+┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
+│
+│🍪 𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐁𝐲: *${ꜱᴇɴᴅᴇʀɪᴅ}*
+│🔗𝐋𝐢𝐧𝐤⤞ ${Needs.join(` `)}
+└───────〇`,
             }
           )
           .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
@@ -119,27 +137,45 @@ ${Needs.join(" ")}`,
           ӄʀǟӄɨռʐ,
           chat,
           𝓜𝖎𝖟𝖚ӄ𝖎,
-          `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived}, *Now Wait!*
+          `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived}, 𝙉𝙤𝙬 𝙒𝙖𝙞𝙩!
 
-_🍁Thank you for Requesting to add 爪𝖎𝖟𝖚ӄ𝖎™ in your group!_`,
+🍁𝐓𝐡𝐚𝐧𝐤 𝐲𝐨𝐮 𝐟𝐨𝐫 𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐢𝐧𝐠 𝐭𝐨 𝐚𝐝𝐝 爪𝖎𝖟𝖚ӄ𝖎™ 𝐢𝐧 𝐲𝐨𝐮𝐫 𝐠𝐫𝐨𝐮𝐩!`,
           _𝔏𝔞𝔟_.MEE
         );
         // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
         await ӄʀǟӄɨռʐ
           .sendMessage(
-            "918250889325@s.whatsapp.net",
+            `918250889325@s.whatsapp.net`,
             fs.readFileSync(`./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`),
             MessageType.video,
             {
               mentionedJid: members,
-              mimetype: "video/gif",
+              mimetype: `video/gif`,
               caption: `(c)𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 📅ᴅᴀᴛᴇ: _${Clock}_
 
 ┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
 │
 │🍪 𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐁𝐲: *${ꜱᴇɴᴅᴇʀɪᴅ}*
-└───────〇
-${Needs.join(" ")}`,
+│🔗𝐋𝐢𝐧𝐤⤞ ${Needs.join(` `)}
+└───────〇`,
+            }
+          )
+          .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
+        return await ӄʀǟӄɨռʐ
+          .sendMessage(
+            `918436686758@s.whatsapp.net`,
+            fs.readFileSync(`./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`),
+            MessageType.video,
+            {
+              mentionedJid: members,
+              mimetype: `video/gif`,
+              caption: `(c)𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 📅ᴅᴀᴛᴇ: _${Clock}_
+
+┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
+│
+│🍪 𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐁𝐲: *${ꜱᴇɴᴅᴇʀɪᴅ}*
+│🔗𝐋𝐢𝐧𝐤⤞ ${Needs.join(` `)}
+└───────〇`,
             }
           )
           .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
