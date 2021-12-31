@@ -359,7 +359,9 @@ ${update.desc}`,
       !𝓜𝖎𝖟𝖚ӄ𝖎.fromMe &&
       !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderGroupAdmin &&
       !𝓜𝖎𝖟𝖚ӄ𝖎.body.includes(_𝔏𝔞𝔟_.HASH) &&
-      𝓜𝖎𝖟𝖚ӄ𝖎.body.includes(`https://chat.whatsapp.com/`)
+      !𝓜𝖎𝖟𝖚ӄ𝖎.body.includes(`https://yout`) &&
+      !𝓜𝖎𝖟𝖚ӄ𝖎.body.includes(`https:/google`) &&
+      𝓜𝖎𝖟𝖚ӄ𝖎.body.includes(`https://chat.whatsapp`)
     ) {
       var CheckLinks = await LinkList.getLinklistUser(
         𝓜𝖎𝖟𝖚ӄ𝖎.sender,
