@@ -8,7 +8,7 @@ RUN apt upgrade -y
 RUN apt install git -y 
 RUN apt-get install curl -y && apt install python3 -y && apt install python3-pip -y
 RUN apt install -y ffmpeg opus-tools bpm-tools 
-RUN curl -sL https://deb.nodesource.com/setup_17.x | bash -
+RUN curl -sL https://deb.nodesource.com/setup_16.x | bash -
 RUN apt install nodejs -y
 RUN cd 🍁爪𝖎𝖟𝖚ӄ𝖎™
 RUN git clone https://github.com/Krakinz/Mizuki.git
