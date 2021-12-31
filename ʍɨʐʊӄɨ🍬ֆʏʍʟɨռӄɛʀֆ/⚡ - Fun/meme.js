@@ -21,14 +21,14 @@ module.exports = {
       );
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
       var num = Math.floor(Math.random() * (500 - 1) + 1);
-      return Mizuki_Buttons.MIB(
-        ӄʀǟӄɨռʐ,
-        chat,
-        𝓜𝖎𝖟𝖚ӄ𝖎,
-        `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived},     
-
-Here Is Your Mizuki Meme‍`,
-        `https://ctk-api.herokuapp.com/meme/${num}`
+      await ӄʀǟӄɨռʐ.sendMessage(
+        𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+        { url: `https://ctk-api.herokuapp.com/meme/${num}` },
+        MessageType.image,
+        {
+          quoted: chat,
+          mimetype: Mimetype.png && Mimetype.jpeg,
+        }
       );
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
     } catch (ℓαвєяяσя) {
