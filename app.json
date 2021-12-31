@@ -18,7 +18,7 @@
     "MIZUKI": {
       "description": "Put Your Mizuki Session Code.",
       "required": true,
-      "value": "get it from https://replit.com/@Krakinzkon/Mizuki"
+      "value": "--------------------------------"
     },
     "HEROKU": {
       "description": "Keep It Heroku!",
@@ -38,7 +38,7 @@
     "CCD": {
       "description": "Put Your Country Code",
       "required": true,
-      "value": "91"
+      "value": "--------------------------------"
     },
     "CODE": {
       "description": "Top Secret KrakinzLab Code",
