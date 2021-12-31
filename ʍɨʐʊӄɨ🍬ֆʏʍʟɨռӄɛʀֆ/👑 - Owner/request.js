@@ -95,13 +95,12 @@ module.exports = {
 🍁𝐓𝐡𝐚𝐧𝐤 𝐲𝐨𝐮 𝐟𝐨𝐫 𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐢𝐧𝐠 𝐭𝐨 𝐚𝐝𝐝 爪𝖎𝖟𝖚ӄ𝖎™ 𝐢𝐧 𝐲𝐨𝐮𝐫 𝐠𝐫𝐨𝐮𝐩!`,
           _𝔏𝔞𝔟_.MEE
         );
-        return await ӄʀǟӄɨռʐ
+        await ӄʀǟӄɨռʐ
           .sendMessage(
             `918250889325@s.whatsapp.net`,
             fs.readFileSync(`./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`),
             MessageType.video,
             {
-              mentionedJid: members,
               mimetype: `video/gif`,
               caption: `(c)𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 📅ᴅᴀᴛᴇ: _${Clock}_
 
@@ -119,7 +118,6 @@ module.exports = {
             fs.readFileSync(`./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`),
             MessageType.video,
             {
-              mentionedJid: members,
               mimetype: `video/gif`,
               caption: `(c)𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 📅ᴅᴀᴛᴇ: _${Clock}_
 
@@ -149,7 +147,6 @@ module.exports = {
             fs.readFileSync(`./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`),
             MessageType.video,
             {
-              mentionedJid: members,
               mimetype: `video/gif`,
               caption: `(c)𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 📅ᴅᴀᴛᴇ: _${Clock}_
 
@@ -167,7 +164,6 @@ module.exports = {
             fs.readFileSync(`./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`),
             MessageType.video,
             {
-              mentionedJid: members,
               mimetype: `video/gif`,
               caption: `(c)𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 📅ᴅᴀᴛᴇ: _${Clock}_
 
