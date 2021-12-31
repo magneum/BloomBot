@@ -407,9 +407,6 @@ ${update.desc}`,
         𝓜𝖎𝖟𝖚ӄ𝖎.sender,
         𝓜𝖎𝖟𝖚ӄ𝖎.chatId
       );
-      const BANNED = await LetGoChecker(𝓜𝖎𝖟𝖚ӄ𝖎, ӄʀǟӄɨռʐ, CheckBans);
-      console.log(Kolor.red.bold(BANNED));
-      console.log(Kolor.red.bold(CheckBans));
       if (CheckBans === true && !𝓜𝖎𝖟𝖚ӄ𝖎.fromMe) {
         console.log(
           Kolor.blue.bold(
