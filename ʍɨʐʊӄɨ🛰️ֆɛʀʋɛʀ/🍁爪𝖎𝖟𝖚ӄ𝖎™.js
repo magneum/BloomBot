@@ -38,7 +38,7 @@ async function 爪𝖎𝖟𝖚ӄ𝖎() {
   var ꜱɪᴛʀᴀᴘ = new Map();
   var commandUsage = new Map();
   console.log(
-    Kolor.yellow.bold(`💡INFO ⬰ 𝐒𝐲𝐦𝐥𝐢𝐧𝐤𝐢𝐧𝐠 𝐖𝐢𝐭𝐡 𝐌𝐢𝐳𝐮𝐤𝐢 𝐒𝐲𝐬𝐭𝐞𝐦...\n✔️`)
+    Kolor.yellow.bold(`🍁INFO ⬰ 𝐒𝐲𝐦𝐥𝐢𝐧𝐤𝐢𝐧𝐠 𝐖𝐢𝐭𝐡 𝐌𝐢𝐳𝐮𝐤𝐢 𝐒𝐲𝐬𝐭𝐞𝐦...\n✔️`)
   );
   console.clear();
   // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
@@ -56,7 +56,7 @@ async function 爪𝖎𝖟𝖚ӄ𝖎() {
     )
   );
   console.log(
-    Kolor.yellow.bold(`💡INFO ⬰ Checking For 🍁爪𝖎𝖟𝖚ӄ𝖎™Updates ...\n✔️`)
+    Kolor.yellow.bold(`🍁INFO ⬰ Checking For 🍁爪𝖎𝖟𝖚ӄ𝖎™Updates ...\n✔️`)
   );
   await AutoKrakz();
   // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
@@ -86,9 +86,9 @@ async function 爪𝖎𝖟𝖚ӄ𝖎() {
       )
     );
     console.log(
-      Kolor.yellow.bold(`💡INFO ⬰ Connecting to 🍁爪𝖎𝖟𝖚ӄ𝖎™ Whatsapp...🛸`)
+      Kolor.yellow.bold(`🍁INFO ⬰ Connecting to 🍁爪𝖎𝖟𝖚ӄ𝖎™ Whatsapp...🛸`)
     );
-    console.log(Kolor.yellow.bold(`💡INFO ⬰ 🍁爪𝖎𝖟𝖚ӄ𝖎™ Connected✔️`));
+    console.log(Kolor.yellow.bold(`🍁INFO ⬰ 🍁爪𝖎𝖟𝖚ӄ𝖎™ Connected✔️`));
   });
   // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
   ӄʀǟӄɨռʐ.on(`open`, async () => {
@@ -98,7 +98,7 @@ async function 爪𝖎𝖟𝖚ӄ𝖎() {
       )
     );
     console.log(
-      Kolor.green.italic(`💡INFO ⬰ 𝐋𝐢𝐧𝐤𝐢𝐧𝐠 𝐌𝐢𝐳𝐮𝐤𝐢 𝐖𝐢𝐭𝐡 𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞...✔️`)
+      Kolor.green.italic(`🍁INFO ⬰ 𝐋𝐢𝐧𝐤𝐢𝐧𝐠 𝐌𝐢𝐳𝐮𝐤𝐢 𝐖𝐢𝐭𝐡 𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞...✔️`)
     );
     try {
       await 𝓜𝖎𝖟𝖚ӄ𝖎sql.authenticate();
@@ -106,7 +106,7 @@ async function 爪𝖎𝖟𝖚ӄ𝖎() {
       await 𝓜𝖎𝖟𝖚ӄ𝖎sql
         .sync()
         .then(
-          console.log(Kolor.yellow.bold(`💡INFO ⬰ 🍁爪𝖎𝖟𝖚ӄ𝖎™ Connected✔️`))
+          console.log(Kolor.yellow.bold(`🍁INFO ⬰ 🍁爪𝖎𝖟𝖚ӄ𝖎™ Connected✔️`))
         );
     } catch (ℓαвєяяσя) {
       console.ℓαвєяяσя(
@@ -140,7 +140,7 @@ async function 爪𝖎𝖟𝖚ӄ𝖎() {
         caption: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 _${vers.vers}_
 
 ┌━━━━━━━◆➤
-│💡ᴘʀᴇꜰɪx: ${ᴋᴇɪ}
+│🍁ᴘʀᴇꜰɪx: ${ᴋᴇɪ}
 │🛰️𝐏𝐢𝐧𝐠: ${Ping}s
 │📅𝐃𝐚𝐭𝐞: ${Clock}
 │🛸𝐆𝐫𝐨𝐮𝐩: ${_𝔏𝔞𝔟_.HASH}
@@ -380,7 +380,7 @@ ${update.desc}`,
         : chat.key.remoteJid;
       console.log(
         Kolor.green.italic(
-          `💡INFO ⬰ Antilink ${CheckLinks} in > ${𝓜𝖎𝖟𝖚ӄ𝖎.groupName}.`
+          `🍁INFO ⬰ Antilink ${CheckLinks} in > ${𝓜𝖎𝖟𝖚ӄ𝖎.groupName}.`
         )
       );
       if (CheckLinks === true) {
@@ -413,14 +413,14 @@ ${update.desc}`,
       if (CheckBans === true && !𝓜𝖎𝖟𝖚ӄ𝖎.fromMe) {
         console.log(
           Kolor.blue.bold(
-            `💡𝗜𝗻𝗳𝗼 ⬰ Banlisted!\n${𝓜𝖎𝖟𝖚ӄ𝖎.commandName} Executed By ${𝓜𝖎𝖟𝖚ӄ𝖎.sender}`
+            `🍁𝗜𝗻𝗳𝗼 ⬰ Banlisted!\n${𝓜𝖎𝖟𝖚ӄ𝖎.commandName} Executed By ${𝓜𝖎𝖟𝖚ӄ𝖎.sender}`
           )
         );
         return;
       }
       console.log(
         Kolor.yellow.bold(
-          `💡INFO ⬰ ${𝓜𝖎𝖟𝖚ӄ𝖎.commandName} Executed By ${𝓜𝖎𝖟𝖚ӄ𝖎.sender}`
+          `🍁INFO ⬰ ${𝓜𝖎𝖟𝖚ӄ𝖎.commandName} Executed By ${𝓜𝖎𝖟𝖚ӄ𝖎.sender}`
         )
       );
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
