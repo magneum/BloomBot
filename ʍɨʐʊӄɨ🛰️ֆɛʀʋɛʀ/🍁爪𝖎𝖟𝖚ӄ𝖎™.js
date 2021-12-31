@@ -31,6 +31,25 @@ try {
   var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
   var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
   const fs = require(`fs`);
+  const time2 = moment().tz(`Asia/Kolkata`).format(`HH:mm:ss`);
+  if (time2 < `24:59:00`) {
+    var Timers = `𝐍𝐢𝐠𝐡𝐭😴`;
+  }
+  if (time2 < `19:00:00`) {
+    var Timers = `𝐄𝐯𝐞𝐧𝐢𝐧𝐠🌞`;
+  }
+  if (time2 < `18:00:00`) {
+    var Timers = `𝐀𝐟𝐭𝐞𝐫𝐧𝐨𝐨𝐧🌄`;
+  }
+  if (time2 < `15:00:00`) {
+    var Timers = `𝐀𝐟𝐭𝐞𝐫𝐧𝐨𝐨𝐧☀️`;
+  }
+  if (time2 < `11:00:00`) {
+    var Timers = `𝐌𝐨𝐫𝐧𝐢𝐧𝐠🌅`;
+  }
+  if (time2 < `05:00:00`) {
+    var Timers = `𝐍𝐢𝐠𝐡𝐭💤`;
+  }
   console.clear();
   // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
   var ӄʀǟӄɨռʐ = 𝓜𝖎𝖟𝖚ӄ𝖎ֆʏռօք.WhatsApp;
@@ -293,24 +312,49 @@ ${update.desc}`,
         // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
         if (update.action == `add` && MemNum.includes(ӄʀǟӄɨռʐ.user.jid)) {
           console.log(`⬡••••••••⬡    🍁 爪𝖎𝖟𝖚ӄ𝖎™ 🍁Added    ⬡••••••••⬡`);
+          const media = await ӄʀǟӄɨռʐ.prepareMessage(
+            GroupID,
+            { url: _𝔏𝔞𝔟_.MEE },
+            MessageType.image,
+            { mimetype: Mimetype.png }
+          );
           return await ӄʀǟӄɨռʐ
             .sendMessage(
               GroupID,
-              fs.readFileSync(`./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`),
-              MessageType.video,
               {
-                mimetype: `video/gif`,
-                caption: `\n(c)𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭\n📅ᴅᴀᴛᴇ: _${Clock}_
+                contentText: `𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚👋🏻 ${Timers} ᴇᴠᴇʀʏᴏɴᴇ.
+ʙᴏᴛ ɪꜱ ʀᴇᴀᴅʏ ᴛᴏ ᴀꜱꜱɪꜱᴛ ʏᴏᴜ!
+ᴛʏᴘᴇ *${ᴋᴇɪ}help* ᴛᴏ ᴋɴᴏᴡ ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅꜱ!
 
 ┌━━━━━━━◆➤
+│
 │🔑𝐏𝐫𝐞𝐟𝐢𝐱: *${ᴋᴇɪ}*
 │👑𝐎𝐰𝐧𝐞𝐫: _🐙KrakinzKon_
-│🤖ᴀᴅᴅ ᴍɪᴢᴜᴋɪ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ: _${ᴋᴇɪ}request_
-│☣️𝐋𝐢𝐜𝐞𝐧𝐬𝐞𝐝: Apache License Version 2.0
-└───────〇
-
-𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚👋🏻 ᴇᴠᴇʀʏᴏɴᴇ, ʀᴇᴀᴅʏ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ʜᴇʀᴇ
-ᴘʟᴇᴀꜱᴇ ᴛʏᴘᴇ *${ᴋᴇɪ}help* ᴛᴏ ᴋɴᴏᴡ ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅꜱ!`,
+└───────〇`,
+                footerText: `\n(c)𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 \n📅ᴅᴀᴛᴇ: _${Clock}_`,
+                buttons: [
+                  {
+                    buttonId: `${ᴋᴇɪ}help`,
+                    buttonText: { displayText: `${ᴋᴇɪ}help` },
+                    type: 1,
+                  },
+                  {
+                    buttonId: `${ᴋᴇɪ}mizuki`,
+                    buttonText: { displayText: `${ᴋᴇɪ}mizuki` },
+                    type: 1,
+                  },
+                  {
+                    buttonId: `${ᴋᴇɪ}faq`,
+                    buttonText: { displayText: `${ᴋᴇɪ}faq` },
+                    type: 1,
+                  },
+                ],
+                headerType: 4,
+                imageMessage: media.message.imageMessage,
+              },
+              MessageType.buttonsMessage,
+              {
+                quoted: chat,
               }
             )
             .then(console.log(Kolor.green.italic(GroupID)))
@@ -496,25 +540,6 @@ Type _${ᴋᴇɪ}help_ and Read Everything Properly`,
           } catch (ℓαвєяяσя) {
             ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
           }
-        }
-        const time2 = moment().tz(`Asia/Kolkata`).format(`HH:mm:ss`);
-        if (time2 < `24:59:00`) {
-          var Timers = `𝐍𝐢𝐠𝐡𝐭😴`;
-        }
-        if (time2 < `19:00:00`) {
-          var Timers = `𝐄𝐯𝐞𝐧𝐢𝐧𝐠🌞`;
-        }
-        if (time2 < `18:00:00`) {
-          var Timers = `𝐀𝐟𝐭𝐞𝐫𝐧𝐨𝐨𝐧🌄`;
-        }
-        if (time2 < `15:00:00`) {
-          var Timers = `𝐀𝐟𝐭𝐞𝐫𝐧𝐨𝐨𝐧☀️`;
-        }
-        if (time2 < `11:00:00`) {
-          var Timers = `𝐌𝐨𝐫𝐧𝐢𝐧𝐠🌅`;
-        }
-        if (time2 < `05:00:00`) {
-          var Timers = `𝐍𝐢𝐠𝐡𝐭💤`;
         }
         return command.handle(
           ӄʀǟӄɨռʐ,
