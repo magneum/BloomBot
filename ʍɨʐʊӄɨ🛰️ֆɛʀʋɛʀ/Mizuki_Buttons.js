@@ -9,6 +9,7 @@ const ꜰᴜᴄᴋ = require(`./oShit`);
 let Timestamp = speed();
 const Pong = speed() - Timestamp;
 const Ping = Pong.toFixed(4);
+const now = new Date();
 date.format(now, `ddd, MMM DD YYYY`);
 const pattern = date.compile(`ddd, MMM DD YYYY`);
 const Clock = date.format(now, pattern);
