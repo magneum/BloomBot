@@ -90,7 +90,7 @@ module.exports = {
                 },
                 mentionedJid: members,
               },
-              caption: `©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 
+              caption: `(c)𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 
 
 ┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
 │

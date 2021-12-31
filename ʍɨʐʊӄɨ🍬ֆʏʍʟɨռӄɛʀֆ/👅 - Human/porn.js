@@ -99,7 +99,7 @@ _Server Didn't Send Any Response_`
                   contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
                   quoted: chat,
                   mimetype: "video/gif",
-                  caption: `©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 
+                  caption: `(c)𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 
 
 ┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
 │
@@ -128,7 +128,7 @@ _Server Didn't Send Any Response_`
                   contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
                   quoted: chat,
                   mimetype: "video/gif",
-                  caption: `©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 
+                  caption: `(c)𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 
 
 ┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
 │

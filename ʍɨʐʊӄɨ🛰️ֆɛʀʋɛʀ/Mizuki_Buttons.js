@@ -29,7 +29,7 @@ const Mizuki_Text_But = (ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, MainText)
   }
   const buttonMessage = {
     contentText: MainText,
-    footerText: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 \n🛰️ᴘɪɴɢ: _${Ping}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
+    footerText: `\n(c)𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 \n🛰️ᴘɪɴɢ: _${Ping}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
     buttons: [
       {
         buttonId: `${ᴋᴇɪ}help`,
@@ -70,7 +70,7 @@ const Mizuki_Image_But = async (ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, Ma
       𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
       {
         contentText: MainText,
-        footerText: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 \n🛰️ᴘɪɴɢ: _${Ping}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
+        footerText: `\n(c)𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 \n🛰️ᴘɪɴɢ: _${Ping}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
         buttons: [
           {
             buttonId: `${ᴋᴇɪ}help`,
@@ -113,7 +113,7 @@ const Mizuki_Video_But = async (ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, Ma
       𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
       {
         contentText: MainText,
-        footerText: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 \n🛰️ᴘɪɴɢ: _${Ping}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
+        footerText: `\n(c)𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 \n🛰️ᴘɪɴɢ: _${Ping}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
         buttons: [
           {
             buttonId: `${ᴋᴇɪ}help`,
@@ -156,7 +156,7 @@ const Mizuki_GIF_But = async (ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, Main
       𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
       {
         contentText: MainText,
-        footerText: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 \n🛰️ᴘɪɴɢ: _${Ping}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
+        footerText: `\n(c)𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 \n🛰️ᴘɪɴɢ: _${Ping}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
         buttons: [
           {
             buttonId: `${ᴋᴇɪ}help`,
@@ -203,7 +203,7 @@ const Mizuki_VideoAudio_But = async (
   const buttonMessages = {
     videoMessage: media.message.videoMessage,
     contentText: MainText,
-    footerText: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 \n🛰️ᴘɪɴɢ: _${Ping}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
+    footerText: `\n(c)𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 \n🛰️ᴘɪɴɢ: _${Ping}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
     buttons: [
       {
         buttonId: `${ᴋᴇɪ}help`,
@@ -248,7 +248,7 @@ const Mizuki_Location_But = async (
   const buttonMessages = {
     locationMessage: media.message.locationMessage,
     contentText: MainText,
-    footerText: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 \n🛰️ᴘɪɴɢ: _${Ping}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
+    footerText: `\n(c)𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 \n🛰️ᴘɪɴɢ: _${Ping}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
     buttons: [
       {
         buttonId: `${ᴋᴇɪ}help`,

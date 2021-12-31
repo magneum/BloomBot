@@ -39,17 +39,7 @@ module.exports = {
           {
             contentText: `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived}, ${Timers}
 
-┌──────────────◆➤
-│🔑 𝐏𝐫𝐞𝐟𝐢𝐱: *${ᴋᴇɪ}*
-│👑 𝐎𝐰𝐧𝐞𝐫: _🐙KrakinzKon_
-│🍁 𝐀𝐝𝐝 𝐌𝐢𝐳𝐮𝐤𝐢: _${ᴋᴇɪ}request_
-│☣️ 𝐋𝐢𝐜𝐞𝐧𝐬𝐞𝐝: Apache License Version 2.0
-│🍰 𝐆𝐫𝐨𝐮𝐩: ${_𝔏𝔞𝔟_.HASH}
-│🍕 𝘾𝙤𝙢𝙞𝙣𝙜 𝙎𝙤𝙤𝙣! _many many more_
-└───────〇
-
-
-┌━━━| 🌈𝙎𝙁𝙒 𝐂𝐚𝐭𝐞𝐠𝐨𝐫𝐢𝐞𝐬 |➤
+┌━━━|🌈𝙎𝙁𝙒 𝐂𝐚𝐭𝐞𝐠𝐨𝐫𝐢𝐞𝐬 ➤
 │
 │🍣 *${ᴋᴇɪ}animemenu*
 │🐙 *${ᴋᴇɪ}ownermenu*
@@ -57,18 +47,17 @@ module.exports = {
 │🔰 *${ᴋᴇɪ}groupmenu*
 │🦄 *${ᴋᴇɪ}funmenu* 
 │🔎 *${ᴋᴇɪ}searchmenu*
-│🧉 *${ᴋᴇɪ}imagemenu* 
 │🗂️ *${ᴋᴇɪ}ffmpegmenu*
 └───────〇
 
-┌━━━| 🔞𝙉𝙎𝙁𝙒 𝐂𝐚𝐭𝐞𝐠𝐨𝐫𝐢𝐞𝐬 |➤ 
+┌━━━|🔞𝙉𝙎𝙁𝙒 𝐂𝐚𝐭𝐞𝐠𝐨𝐫𝐢𝐞𝐬 ➤ 
 │
 │👅 *${ᴋᴇɪ}pornmenu* _(ᴀᴅᴍɪɴ-ᴏɴʟʏ)_
 │🍄 *${ᴋᴇɪ}hentaimenu* _(ᴀᴅᴍɪɴ-ᴏɴʟʏ)_
 └───────〇
 
 🌱𝗣𝗿𝗲𝘀𝘀 𝗯𝗲𝗹𝗼𝘄 𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗦𝘁𝗮𝗿𝘁 𝘂𝘀𝗶𝗻𝗴 𝗠𝗶𝘇𝘂𝗸𝗶👇🏽‍ `,
-            footerText: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 \n🛰️ᴘɪɴɢ: _${Ping}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
+            footerText: `\n(c)𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 \n🛰️ᴘɪɴɢ: _${Ping}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
             buttons: [
               {
                 buttonId: `${ᴋᴇɪ}menu`,

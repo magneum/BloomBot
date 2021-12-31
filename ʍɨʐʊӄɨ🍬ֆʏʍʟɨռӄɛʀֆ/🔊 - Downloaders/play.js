@@ -133,7 +133,7 @@ ${youfound.thumbnail}`);
 │📜𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧⤞ ${youfound.description}
 │🔗𝐋𝐢𝐧𝐤⤞ ${youfound.url}
 └───────〇`,
-              footerText: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 \n🛰️ᴘɪɴɢ: _${Ping}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
+              footerText: `\n(c)𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 \n🛰️ᴘɪɴɢ: _${Ping}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
               buttons: buttons,
               headerType: 4,
               imageMessage: media.message.imageMessage,
@@ -179,7 +179,7 @@ ${youfound.thumbnail}`);
 │📜𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧⤞ ${youfound.description}
 │🔗𝐋𝐢𝐧𝐤⤞ ${youfound.url}
 └───────〇`,
-                      footerText: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 \n🛰️ᴘɪɴɢ: _${Ping}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
+                      footerText: `\n(c)𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 \n🛰️ᴘɪɴɢ: _${Ping}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
                       buttons: [
                         {
                           buttonId: `${ᴋᴇɪ}happy`,

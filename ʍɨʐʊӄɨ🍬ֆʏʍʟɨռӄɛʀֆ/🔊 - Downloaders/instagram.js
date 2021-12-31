@@ -77,7 +77,7 @@ module.exports = {
 │🍠𝐒𝐨𝐮𝐫𝐜𝐞: _•Instagram_
 │🧀𝐅𝐢𝐥𝐞 𝐓𝐲𝐩𝐞: ${i.type}
 └───────〇`,
-                    footerText: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 \n🛰️ᴘɪɴɢ: _${Ping}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
+                    footerText: `\n(c)𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 \n🛰️ᴘɪɴɢ: _${Ping}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
                     buttons: [
                       {
                         buttonId: `${ᴋᴇɪ}help`,
@@ -117,7 +117,7 @@ module.exports = {
 │🍠𝐒𝐨𝐮𝐫𝐜𝐞: _•Instagram_
 │🧀𝐅𝐢𝐥𝐞 𝐓𝐲𝐩𝐞: ${i.type}
 └───────〇`,
-                    footerText: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 \n🛰️ᴘɪɴɢ: _${Ping}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
+                    footerText: `\n(c)𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 \n🛰️ᴘɪɴɢ: _${Ping}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
                     buttons: [
                       {
                         buttonId: `${ᴋᴇɪ}help`,

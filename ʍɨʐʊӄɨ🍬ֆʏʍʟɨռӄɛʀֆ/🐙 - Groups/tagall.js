@@ -100,7 +100,7 @@ or (no-text): ${ᴋᴇɪ}tagall`,
                 },
                 mentionedJid: members,
               },
-              caption: `©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 
+              caption: `(c)𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 
 
 ┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
 │
@@ -128,7 +128,7 @@ _⚠️Attention Everyone Here In the Group!_`,
               contextInfo: {
                 mentionedJid: members,
               },
-              caption: `©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 
+              caption: `(c)𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 
 
 ┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
 │
@@ -153,7 +153,7 @@ ${Needs.join(` `)}`,
               contextInfo: {
                 mentionedJid: members,
               },
-              caption: `©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 
+              caption: `(c)𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 
 
 ┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
 │

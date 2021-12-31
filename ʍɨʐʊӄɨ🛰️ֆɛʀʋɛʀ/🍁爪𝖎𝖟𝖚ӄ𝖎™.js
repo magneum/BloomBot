@@ -137,7 +137,7 @@ async function 爪𝖎𝖟𝖚ӄ𝖎() {
       MessageType.image,
       {
         mimetype: Mimetype.png,
-        caption: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 _${vers.vers}_
+        caption: `\n(c)𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 _${vers.vers}_
 
 ┌━━━━━━━◆➤
 │🍁ᴘʀᴇꜰɪx: ${ᴋᴇɪ}
@@ -299,7 +299,7 @@ ${update.desc}`,
             MessageType.video,
             {
               mimetype: `video/gif`,
-              caption: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭\n🛰️ᴘɪɴɢ: _${Ping}s_ 📅ᴅᴀᴛᴇ: _${Clock}_
+              caption: `\n(c)𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭\n🛰️ᴘɪɴɢ: _${Ping}s_ 📅ᴅᴀᴛᴇ: _${Clock}_
 
 ┌━━━━━━━◆➤
 │🔑𝐏𝐫𝐞𝐟𝐢𝐱: *${ᴋᴇɪ}*
