@@ -82,6 +82,11 @@ module.exports = {
                 buttonText: { displayText: `${ᴋᴇɪ}mizuki` },
                 type: 1,
               },
+              {
+                buttonId: `${ᴋᴇɪ}faq`,
+                buttonText: { displayText: `${ᴋᴇɪ}faq` },
+                type: 1,
+              },
             ],
             headerType: 4,
             imageMessage: media.message.imageMessage,
