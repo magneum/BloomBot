@@ -12,7 +12,7 @@ const vers = require(`../../package.json`);
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
 module.exports = {
   name: `tts`,
-  𝓜𝓮𝓮6ʍօʀɛ: `Use  *${ᴋᴇɪ}tts <text>*  or  *${ᴋᴇɪ}tts <text> | <language_code>*  to convert text to speech.
+  𝓜𝓮𝓮6ʍօʀɛ: `Use  *${ᴋᴇɪ}tts <text>*  or  *${ᴋᴇɪ}tts <text> = <language_code>*  to convert text to speech.
 You can also reply to a text message with syntax  *${ᴋᴇɪ}tr <language>*  to translate text.`,
   async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping, Timers) {
     try {
@@ -43,7 +43,7 @@ You can also reply to a text message with syntax  *${ᴋᴇɪ}tr <language>*  to
       let text = ``;
       let langCode = `en`;
       for (var i = 0; i < Needs.length; i++) {
-        if (Needs[i] == `|`) {
+        if (Needs[i] == `=`) {
           langCode = Needs[i + 1];
           break;
         }
