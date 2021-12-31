@@ -352,10 +352,7 @@ ${update.desc}`,
                 headerType: 4,
                 imageMessage: media.message.imageMessage,
               },
-              MessageType.buttonsMessage,
-              {
-                quoted: chat,
-              }
+              MessageType.buttonsMessage
             )
             .then(console.log(Kolor.green.italic(GroupID)))
             .catch((ℓαвєяяσя) => console.log(ℓαвєяяσя));
