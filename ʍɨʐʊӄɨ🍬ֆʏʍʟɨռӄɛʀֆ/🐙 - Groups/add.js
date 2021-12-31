@@ -115,9 +115,9 @@ For instance,
         // } else {
         //   addnum = Needs[0];
         // }
-        const numbergot = Needs[0];
+        const numbergot = Needs.join(` `);
         const number = numbergot.replaceAll(" ", "");
-        const addnum = number.replace(/[&\/\\#,+()$~%.'":*?<>{}]/g, "");
+        const addnum = number.replace(/[&\/\\#,+()$~%.'":*?<>{}-]/g, "");
         console.log("🍁 " + addnum + " 🍁");
         const exists = await ӄʀǟӄɨռʐ.isOnWhatsApp(addnum + `@s.whatsapp.net`);
         if (!exists) {
