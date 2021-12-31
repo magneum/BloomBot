@@ -11,7 +11,8 @@ const vers = require(`../package.json`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 const speed = require("performance-now");
 let Timestamp = speed();
-const Ping = speed() - Timestamp;
+const Pong = speed() - Timestamp;
+const Ping = Pong.toFixed(4);
 const date = require("date-and-time");
 const now = new Date();
 date.format(now, "ddd, MMM DD YYYY");
@@ -75,9 +76,7 @@ exports.mainMizukigif = async (ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, �
               
               
 ====<⚡>${𝓜𝖎𝖟𝖚ӄ𝖎Text}`,
-              footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ* _${
-                vers.vers
-              }_\n🛰️ᴘɪɴɢ: _${Ping.toFixed(4)}s_n📅ᴅᴀᴛᴇ: _${Clock}_`,
+              footerText: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ* _${vers.vers}_\n🛰️ᴘɪɴɢ: _${Ping}s_n📅ᴅᴀᴛᴇ: _${Clock}_`,
               buttons: [
                 {
                   buttonId: `${ᴋᴇɪ}menu`,

@@ -103,9 +103,7 @@ module.exports = {
                           mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
                         },
                         mimetype: Mimetype.png || Mimetype.jpeg,
-                        content: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
-                          4
-                        )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_
+                        content: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 \n🛰️ᴘɪɴɢ: _${Ping}s_ 📅ᴅᴀᴛᴇ: _${Clock}_
 
 🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived}, ⭕𝗔𝘂𝗱𝗶𝗼 
 𝗣𝗹𝗲𝗮𝘀𝗲 𝗖𝗵𝗼𝗼𝘀𝗲 𝗦𝗺𝗮𝗹𝗹𝗲𝗿 𝗙𝗶𝗹𝗲!
@@ -141,9 +139,7 @@ _ᴛᴏᴏᴋ ꜰʀᴏᴍ ʏᴏᴜᴛᴜʙᴇ_
 ⏰𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧⤞ ${youfound.timestamp}
 ✒️𝐀𝐮𝐭𝐡𝐨𝐫⤞ ${youfound.author.name}
 🔗𝐋𝐢𝐧𝐤⤞ ${youfound.url}`,
-                      footerText: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
-                        4
-                      )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
+                      footerText: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 \n🛰️ᴘɪɴɢ: _${Ping}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
                       buttons: [
                         {
                           buttonId: `${ᴋᴇɪ}happy`,

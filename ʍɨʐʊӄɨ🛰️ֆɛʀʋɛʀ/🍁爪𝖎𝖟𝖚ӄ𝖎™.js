@@ -135,7 +135,7 @@ async function 爪𝖎𝖟𝖚ӄ𝖎() {
 
 ┌━━━━━━━◆➤
 │💡ᴘʀᴇꜰɪx: ${ᴋᴇɪ}
-│🛰️𝐏𝐢𝐧𝐠: ${Ping.toFixed(4)}s
+│🛰️𝐏𝐢𝐧𝐠: ${Ping}s
 │📅𝐃𝐚𝐭𝐞: ${Clock}
 │🛸𝐆𝐫𝐨𝐮𝐩: ${_𝔏𝔞𝔟_.HASH}
 │💀 𝐎𝐥𝐝 𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.verold}_
@@ -293,9 +293,7 @@ ${update.desc}`,
             MessageType.video,
             {
               mimetype: `video/gif`,
-              caption: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
-                4
-              )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_
+              caption: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭\n🛰️ᴘɪɴɢ: _${Ping}s_ 📅ᴅᴀᴛᴇ: _${Clock}_
 
 ┌━━━━━━━◆➤
 │🔑𝐏𝐫𝐞𝐟𝐢𝐱: *${ᴋᴇɪ}*

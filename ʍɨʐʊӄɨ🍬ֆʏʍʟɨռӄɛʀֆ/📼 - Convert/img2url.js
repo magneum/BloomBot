@@ -55,9 +55,7 @@ module.exports = {
 │📥𝗧𝗼: _Telegra.ph URL_
 └───────〇
 │🔗 𝐔𝐫𝐥: ${util.format(gotTgh)}`,
-              footerText: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
-                4
-              )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
+              footerText: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 \n🛰️ᴘɪɴɢ: _${Ping}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
               buttons: [
                 {
                   buttonId: `${ᴋᴇɪ}help`,

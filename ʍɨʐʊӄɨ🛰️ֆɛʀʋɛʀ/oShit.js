@@ -9,7 +9,8 @@ const cleanRF = require("./cleanRF");
 const vers = require(`../package.json`);
 const speed = require("performance-now");
 let Timestamp = speed();
-const Ping = speed() - Timestamp;
+const Pong = speed() - Timestamp;
+const Ping = Pong.toFixed(4);
 const date = require("date-and-time");
 const now = new Date();
 date.format(now, "ddd, MMM DD YYYY");
@@ -30,9 +31,7 @@ exports.catch = async (ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎
         
 ◆ 𝘞𝘦 𝘙𝘢𝘯 𝘐𝘯𝘵𝘰 𝘚𝘰𝘮𝘦 𝘌𝘳𝘳𝘰𝘳 ◆
 ➤ 𝙏𝙧𝙮 𝙇𝙖𝙩𝙚𝙧 𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_!`,
-        footerText: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
-          4
-        )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
+        footerText: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 \n🛰️ᴘɪɴɢ: _${Ping}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
         buttons: [
           {
             buttonId: `${ᴋᴇɪ}help`,

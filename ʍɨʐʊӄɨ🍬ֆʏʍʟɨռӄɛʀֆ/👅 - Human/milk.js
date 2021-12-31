@@ -74,9 +74,9 @@ module.exports = {
                   chat,
                   𝓜𝖎𝖟𝖚ӄ𝖎,
                   `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived},
-    
-    🤧𝐎𝐩𝐩𝐬𝐢𝐞 𝘛𝘳𝘺 𝘈𝘨𝘢𝘪𝘯!
-    _Server Didn't Send Any Response_`
+
+🤧𝐎𝐩𝐩𝐬𝐢𝐞 𝘛𝘳𝘺 𝘈𝘨𝘢𝘪𝘯!
+_Server Didn't Send Any Response_`
                 );
               } catch (ℓαвєяяσя) {
                 ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
@@ -103,9 +103,7 @@ module.exports = {
 │🍕 𝐓𝐢𝐭𝐥𝐞: *${title}*
 └───────〇
 🔗𝐋𝐢𝐧𝐤: ${amazeme}`,
-                  footerText: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 \n🛰️ᴘɪɴɢ: _${Ping.toFixed(
-                    4
-                  )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
+                  footerText: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 \n🛰️ᴘɪɴɢ: _${Ping}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
                   buttons: [
                     {
                       buttonId: `${ᴋᴇɪ}${moonshine}`,

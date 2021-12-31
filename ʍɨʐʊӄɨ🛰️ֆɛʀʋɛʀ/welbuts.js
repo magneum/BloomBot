@@ -10,7 +10,8 @@ var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 const speed = require("performance-now");
 let Timestamp = speed();
-const Ping = speed() - Timestamp;
+const Pong = speed() - Timestamp;
+const Ping = Pong.toFixed(4);
 const date = require("date-and-time");
 const now = new Date();
 const cleanRF = require("./cleanRF");
@@ -108,9 +109,7 @@ ${ᴡᴇʟᴄᴏᴍᴇʀᴛxᴛ}
 ★━━━━━━━━◆➤
 
 ${ꜰᴇᴛᴄʜᴇᴅᴡᴇʟᴄᴏᴍᴇ.message}`,
-          footerText: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 *\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
-            4
-          )}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
+          footerText: `\n©️ 𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 *\n🛰️ᴘɪɴɢ: _${Ping}s_ 📅ᴅᴀᴛᴇ: _${Clock}_`,
           buttons: [
             {
               buttonId: `${ᴋᴇɪ}help`,
