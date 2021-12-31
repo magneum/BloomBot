@@ -35,7 +35,6 @@ console.clear();
 var ӄʀǟӄɨռʐ = 𝓜𝖎𝖟𝖚ӄ𝖎ֆʏռօք.WhatsApp;
 ӄʀǟӄɨռʐ.logger.level = `error`;
 async function 爪𝖎𝖟𝖚ӄ𝖎() {
-  await AutoKrakz();
   var ꜱɪᴛʀᴀᴘ = new Map();
   var commandUsage = new Map();
   console.log(
@@ -527,5 +526,5 @@ Type _${ᴋᴇɪ}help_ and Read Everything Properly`,
     }
   });
 }
-爪𝖎𝖟𝖚ӄ𝖎();
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
+module.exports = { 爪𝖎𝖟𝖚ӄ𝖎 };
