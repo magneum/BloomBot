@@ -476,7 +476,7 @@ ${update.desc}`,
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived}, 
 
-⬡ _First ioin the *Mizuki GC* so that my Devs can verify your account_
+⬡ _First ioin the Mizuki GC so that my Devs can verify your account_
 🐙𝐆𝐑𝐎𝐔𝐏: ${_𝔏𝔞𝔟_.HASH}`,
               MessageType.text,
               {
@@ -488,7 +488,7 @@ ${update.desc}`,
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived}, 
 
-⬡ _First ioin the *Mizuki GC* so that my Devs can verify your account_
+⬡ _First ioin the Mizuki GC so that my Devs can verify your account_
 🐙𝐆𝐑𝐎𝐔𝐏: ${_𝔏𝔞𝔟_.HASH}`,
               MessageType.text,
               {
@@ -542,10 +542,7 @@ ${update.desc}`,
             if (!ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ) {
               return await ӄʀǟӄɨռʐ.sendMessage(
                 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived}, 
-
-❌ *Wrong Command Executed!*
-*Type _${ᴋᴇɪ}help_*`,
+                `*😑Baka @${ꜱᴇɴᴅᴇʀeceived}, ❌Wrong Command Executed!*\n_Type & Read ${ᴋᴇɪ}help_`,
                 MessageType.text,
                 {
                   quoted: chat,
