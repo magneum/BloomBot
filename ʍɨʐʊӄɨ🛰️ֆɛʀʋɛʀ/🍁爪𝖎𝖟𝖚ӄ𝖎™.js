@@ -478,8 +478,7 @@ ${update.desc}`,
                 if (isjsoncool) {
                   return await ӄʀǟӄɨռʐ.sendMessage(
                     𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                    `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived},
-*🚏CoolDown:* _Wait For 10sec!_`,
+                    `*🚏CoolDown:* _Wait For 10sec!_`,
                     MessageType.text,
                     {
                       quoted: chat,
