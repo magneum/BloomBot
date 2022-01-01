@@ -13,7 +13,17 @@ const fs = require(`fs`);
 module.exports = {
   name: `unban`,
   𝓜𝓮𝓮6ʍօʀɛ: `Remove people or group from blacklist.`,
-  async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping, Timers) {
+  async handle(
+    ӄʀǟӄɨռʐ,
+    chat,
+    𝓜𝖎𝖟𝖚ӄ𝖎,
+    Needs,
+    ꜱɪᴛʀᴀᴘ,
+    Clock,
+    Ping,
+    Timers,
+    version
+  ) {
     try {
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
       var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
@@ -53,7 +63,7 @@ module.exports = {
             𝓜𝖎𝖟𝖚ӄ𝖎,
             `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived} (Owner)
 
-┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
+┌────◇🥭
 │
 │👌🏽${RmUser} 
 │🔓𝐒𝐭𝐚𝐭𝐮𝐬: Not Pre-Banned!
@@ -68,7 +78,7 @@ module.exports = {
           𝓜𝖎𝖟𝖚ӄ𝖎,
           `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived} (Owner)
 
-┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
+┌────◇🥭
 │
 │👌🏽‍𝐔𝐧𝐁𝐚𝐧𝐧𝐞𝐝: ${RmUser}
 │🛡️ꜱᴜᴅᴏ ᴜɴʙᴀɴ ᴀᴄᴄᴇᴘᴛᴇᴅ
@@ -97,7 +107,7 @@ module.exports = {
               𝓜𝖎𝖟𝖚ӄ𝖎,
               `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived} (Owner)
 
-┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
+┌────◇🥭
 │
 │👌🏽${RmUser} 
 │🔓𝐒𝐭𝐚𝐭𝐮𝐬: Not Pre-Banned!
@@ -112,7 +122,7 @@ module.exports = {
             𝓜𝖎𝖟𝖚ӄ𝖎,
             `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived} (Owner)
 
-┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
+┌────◇🥭
 │
 │👌🏽‍𝐔𝐧𝐁𝐚𝐧𝐧𝐞𝐝: ${RmUser} _from this group_
 │🛡️ꜱᴜᴅᴏ ᴜɴʙᴀɴ ᴀᴄᴄᴇᴘᴛᴇᴅ
@@ -135,7 +145,7 @@ module.exports = {
               𝓜𝖎𝖟𝖚ӄ𝖎,
               `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived} (Owner)
 
-┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
+┌────◇🥭
 │
 │👌🏽𝐔𝐬𝐞𝐫: ${RmUser} 
 │🔓𝐒𝐭𝐚𝐭𝐮𝐬: Not Pre-Banned!
@@ -151,7 +161,7 @@ module.exports = {
             𝓜𝖎𝖟𝖚ӄ𝖎,
             `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived} (Owner)
 
-┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
+┌────◇🥭
 │
 │👌🏽𝐆𝐫𝐨𝐮𝐩 ‍𝐔𝐧𝐁𝐚𝐧𝐧𝐞𝐝: ${𝓜𝖎𝖟𝖚ӄ𝖎.groupName}
 │🛡️ꜱᴜᴅᴏ ᴜɴʙᴀɴ ᴀᴄᴄᴇᴘᴛᴇᴅ
@@ -167,7 +177,7 @@ module.exports = {
               𝓜𝖎𝖟𝖚ӄ𝖎,
               `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived} (Owner)
 
-┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
+┌────◇🥭
 │
 │👌🏽𝐆𝐫𝐨𝐮𝐩: ${𝓜𝖎𝖟𝖚ӄ𝖎.groupName}, 
 │🔓𝐒𝐭𝐚𝐭𝐮𝐬: Not Pre-Banned!
@@ -182,7 +192,7 @@ module.exports = {
             𝓜𝖎𝖟𝖚ӄ𝖎,
             `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived} (Owner)
 
-┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
+┌────◇🥭
 │
 │👌🏽𝐆𝐫𝐨𝐮𝐩 ‍𝐔𝐧𝐁𝐚𝐧𝐧𝐞𝐝: ${𝓜𝖎𝖟𝖚ӄ𝖎.groupName}
 │🛡️ꜱᴜᴅᴏ ᴜɴʙᴀɴ ᴀᴄᴄᴇᴘᴛᴇᴅ

@@ -20,7 +20,17 @@ module.exports = {
   𝓜𝓮𝓮6ʍօʀɛ: `*${ᴋᴇɪ}spotify* <spotify link>
 
 🔎𝐒𝐞𝐚𝐫𝐜𝐡 𝐘𝐨𝐮𝐓𝐮𝐛𝐞? _${ᴋᴇɪ}ytsearch_`,
-  async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping, Timers) {
+  async handle(
+    ӄʀǟӄɨռʐ,
+    chat,
+    𝓜𝖎𝖟𝖚ӄ𝖎,
+    Needs,
+    ꜱɪᴛʀᴀᴘ,
+    Clock,
+    Ping,
+    Timers,
+    version
+  ) {
     try {
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
       var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
@@ -129,7 +139,7 @@ module.exports = {
 𝗣𝗹𝗲𝗮𝘀𝗲 𝗖𝗵𝗼𝗼𝘀𝗲 𝗦𝗺𝗮𝗹𝗹𝗲𝗿 𝗙𝗶𝗹𝗲!
 
 
-┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
+┌────◇🥭
 │
 │🍻𝐓𝐢𝐭𝐥𝐞⤞ ${title}
 │🥣𝐒𝐢𝐳𝐞⤞ ${filesizeF}
@@ -156,7 +166,7 @@ module.exports = {
                       contentText: `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, ${Timers} @${ꜱᴇɴᴅᴇʀeceived},    
 𝗦𝗽𝗼𝘁𝗶𝗳𝘆🟢𝗔𝘂𝗱𝗶𝗼 𝗣𝗹𝗲𝗮𝘀𝗲 𝘄𝗮𝗶𝘁 𝗳𝗼𝗿 𝘁𝗵𝗲 𝗱𝗲𝗹𝗶𝘃𝗲𝗿𝘆 𝗼𝗳 𝗦𝗽𝗼𝘁𝗶𝗳𝘆-𝗔𝘂𝗱𝗶𝗼!
 
-┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
+┌────◇🥭
 │
 │_ᴛᴏᴏᴋ ꜰʀᴏᴍ ʏᴏᴜᴛᴜʙᴇ_
 │🍻𝐓𝐢𝐭𝐥𝐞⤞ ${youfound.title}

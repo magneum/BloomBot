@@ -14,7 +14,17 @@ module.exports = {
   name: `github`,
   𝓜𝓮𝓮6ʍօʀɛ: `Get the github profile by command  *${ᴋᴇɪ}github <user>*  
 or replying  *${ᴋᴇɪ}github*`,
-  async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping, Timers) {
+  async handle(
+    ӄʀǟӄɨռʐ,
+    chat,
+    𝓜𝖎𝖟𝖚ӄ𝖎,
+    Needs,
+    ꜱɪᴛʀᴀᴘ,
+    Clock,
+    Ping,
+    Timers,
+    version
+  ) {
     try {
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
       var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;

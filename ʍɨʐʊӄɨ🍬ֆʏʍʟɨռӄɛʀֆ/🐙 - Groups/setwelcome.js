@@ -14,7 +14,17 @@ module.exports = {
   𝓜𝓮𝓮6ʍօʀɛ: ` 
 *${ᴋᴇɪ}setwelcome* (message)/(off)/(delete)
 🍁Do note, the setwelcome option is still enabled after you use the delete option.`,
-  async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping, Timers) {
+  async handle(
+    ӄʀǟӄɨռʐ,
+    chat,
+    𝓜𝖎𝖟𝖚ӄ𝖎,
+    Needs,
+    ꜱɪᴛʀᴀᴘ,
+    Clock,
+    Ping,
+    Timers,
+    version
+  ) {
     try {
       var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
       var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
@@ -103,7 +113,7 @@ module.exports = {
             `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, ${Timers} @${ꜱᴇɴᴅᴇʀeceived},
 
 
-┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
+┌────◇🥭
 │
 │🍁 Mizuki's Welcome Message needs to be added first!
 │🍁 use *${ᴋᴇɪ}setwelcome* (message)`,
@@ -117,7 +127,7 @@ module.exports = {
             `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, ${Timers} @${ꜱᴇɴᴅᴇʀeceived},
 
 
-┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
+┌────◇🥭
 │
 │🍁 Mizuki Currently not greeting new members!
 └───────〇 `,
@@ -131,7 +141,7 @@ module.exports = {
             `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, ${Timers} @${ꜱᴇɴᴅᴇʀeceived},
 
 
-┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
+┌────◇🥭
 │
 │🍁 Mizuki Currently greeting new members!
 └───────〇 `,
@@ -149,7 +159,7 @@ module.exports = {
             `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, ${Timers} @${ꜱᴇɴᴅᴇʀeceived},
 
 
-┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
+┌────◇🥭
 │
 │🍁 Mizuki's Welcome Message has Been Disabled!`,
             `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
@@ -165,7 +175,7 @@ module.exports = {
             `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, ${Timers} @${ꜱᴇɴᴅᴇʀeceived},
 
 
-┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
+┌────◇🥭
 │
 │🍁 Mizuki's Welcome Message has Been Enabled!
 └───────〇 `,
@@ -185,7 +195,7 @@ module.exports = {
               `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, ${Timers} @${ꜱᴇɴᴅᴇʀeceived},
 
 
-┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
+┌────◇🥭
 │
 │🍁 Mizuki's Welcome Message needs to be added first!
 │🍁 use *${ᴋᴇɪ}setwelcome* (message)`,
@@ -199,7 +209,7 @@ module.exports = {
             `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, ${Timers} @${ꜱᴇɴᴅᴇʀeceived},
 
 
-┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
+┌────◇🥭
 │
 │🍁 Mizuki's Welcome Message has Been Removed!`,
             `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
@@ -219,7 +229,7 @@ module.exports = {
             `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, ${Timers} @${ꜱᴇɴᴅᴇʀeceived},
 
 
-┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
+┌────◇🥭
 │
 │🍁 Mizuki's Welcome Message has Been Updated!
 └───────〇 `,
@@ -235,7 +245,7 @@ module.exports = {
             `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, ${Timers} @${ꜱᴇɴᴅᴇʀeceived},
 
 
-┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
+┌────◇🥭
 │
 │🍁 Mizuki's Welcome Message has Been Updated!
 └───────〇 `,

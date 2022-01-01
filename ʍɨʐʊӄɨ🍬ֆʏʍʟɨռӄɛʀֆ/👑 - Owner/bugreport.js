@@ -13,7 +13,17 @@ var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 module.exports = {
   name: `bugreport`,
   𝓜𝓮𝓮6ʍօʀɛ: `${ᴋᴇɪ}bugreport <feature> <Describe Error>`,
-  async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping, Timers) {
+  async handle(
+    ӄʀǟӄɨռʐ,
+    chat,
+    𝓜𝖎𝖟𝖚ӄ𝖎,
+    Needs,
+    ꜱɪᴛʀᴀᴘ,
+    Clock,
+    Ping,
+    Timers,
+    version
+  ) {
     try {
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
       var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
@@ -81,7 +91,7 @@ _If Found the report was just for fun then you will be banned by the bot!_
 
 ┌────◆➤ 𝐒𝐮𝐩𝐩𝐨𝐫𝐭
 *🔥 ɢʀᴏᴜᴘ:* ${_𝔏𝔞𝔟_.HASH}`,
-            footerText: `(c)爪ïʐʊӄï🍁乃օȶ \n📅ᴅᴀᴛᴇ: _${Clock}_`,
+            footerText: `(c)爪ïʐʊӄï🍁乃օȶ _${version}_\n📅ᴅᴀᴛᴇ: _${Clock}_`,
             buttons: [
               {
                 buttonId: `${ᴋᴇɪ}help`,
@@ -115,7 +125,7 @@ _If Found the report was just for fun then you will be banned by the bot!_
           {
             mentionedJid: members,
             mimetype: `video/gif`,
-            caption: `(c)爪ïʐʊӄï🍁乃օȶ \n📅ᴅᴀᴛᴇ: _${Clock}_
+            caption: `(c)爪ïʐʊӄï🍁乃օȶ _${version}_\n📅ᴅᴀᴛᴇ: _${Clock}_
 
 ⚡𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
 🐞𝐑𝐞𝐩𝐨𝐫𝐭𝐞𝐝 𝐁𝐲: *${ꜱᴇɴᴅᴇʀɪᴅ}*
@@ -133,7 +143,7 @@ ${Needs.join(` `)}`,
           MessageType.video,
           {
             mimetype: `video/gif`,
-            caption: `(c)爪ïʐʊӄï🍁乃օȶ \n📅ᴅᴀᴛᴇ: _${Clock}_
+            caption: `(c)爪ïʐʊӄï🍁乃օȶ _${version}_\n📅ᴅᴀᴛᴇ: _${Clock}_
 
 ⚡𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
 🐞𝐑𝐞𝐩𝐨𝐫𝐭𝐞𝐝 𝐁𝐲: *${ꜱᴇɴᴅᴇʀɪᴅ}*
@@ -151,7 +161,7 @@ ${Needs.join(` `)}`,
           MessageType.video,
           {
             mimetype: `video/gif`,
-            caption: `(c)爪ïʐʊӄï🍁乃օȶ \n📅ᴅᴀᴛᴇ: _${Clock}_
+            caption: `(c)爪ïʐʊӄï🍁乃օȶ _${version}_\n📅ᴅᴀᴛᴇ: _${Clock}_
 
 ⚡𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
 🐞𝐑𝐞𝐩𝐨𝐫𝐭𝐞𝐝 𝐁𝐲: *${ꜱᴇɴᴅᴇʀɪᴅ}*
@@ -169,7 +179,7 @@ ${Needs.join(` `)}`,
           MessageType.video,
           {
             mimetype: `video/gif`,
-            caption: `(c)爪ïʐʊӄï🍁乃օȶ \n📅ᴅᴀᴛᴇ: _${Clock}_
+            caption: `(c)爪ïʐʊӄï🍁乃օȶ _${version}_\n📅ᴅᴀᴛᴇ: _${Clock}_
 
 ⚡𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
 🐞𝐑𝐞𝐩𝐨𝐫𝐭𝐞𝐝 𝐁𝐲: *${ꜱᴇɴᴅᴇʀɪᴅ}*

@@ -12,7 +12,17 @@ module.exports = {
   name: `invite`,
   description: `Use this command to send a group invite link in the group or personally to someone.`,
   𝓜𝓮𝓮6ʍօʀɛ: `${ᴋᴇɪ}invite`,
-  async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping, Timers) {
+  async handle(
+    ӄʀǟӄɨռʐ,
+    chat,
+    𝓜𝖎𝖟𝖚ӄ𝖎,
+    Needs,
+    ꜱɪᴛʀᴀᴘ,
+    Clock,
+    Ping,
+    Timers,
+    version
+  ) {
     try {
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
       var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
@@ -133,13 +143,13 @@ module.exports = {
               contentText: `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${personreceived}, 
 
 
-┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
+┌────◇🥭
 │
 │📜𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${groupData.subject}
 │💞𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${groupData.participants.length}
 │🍰 𝐆𝐫𝐨𝐮𝐩: https://chat.whatsapp.com/${code}
 └───────〇`,
-              footerText: `(c)爪ïʐʊӄï🍁乃օȶ \n📅ᴅᴀᴛᴇ: _${Clock}_`,
+              footerText: `(c)爪ïʐʊӄï🍁乃օȶ _${version}_\n📅ᴅᴀᴛᴇ: _${Clock}_`,
               buttons: [
                 {
                   buttonId: `${ᴋᴇɪ}help`,
@@ -170,13 +180,13 @@ module.exports = {
               contentText: `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, ${Timers} @${ꜱᴇɴᴅᴇʀeceived}, 
 
 
-┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
+┌────◇🥭
 │
 │📜𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${groupData.subject}
 │💞𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${groupData.participants.length}
 │🍰 𝐆𝐫𝐨𝐮𝐩: https://chat.whatsapp.com/${code}
 └───────〇`,
-              footerText: `(c)爪ïʐʊӄï🍁乃օȶ \n📅ᴅᴀᴛᴇ: _${Clock}_`,
+              footerText: `(c)爪ïʐʊӄï🍁乃օȶ _${version}_\n📅ᴅᴀᴛᴇ: _${Clock}_`,
               buttons: [
                 {
                   buttonId: `${ᴋᴇɪ}help`,

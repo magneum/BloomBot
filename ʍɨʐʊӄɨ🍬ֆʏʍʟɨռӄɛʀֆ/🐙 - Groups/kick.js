@@ -12,7 +12,17 @@ const fs = require(`fs`);
 module.exports = {
   name: `kick`,
   𝓜𝓮𝓮6ʍօʀɛ: `${ᴋᴇɪ}kick (tag) or (reply to person's text)`,
-  async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping, Timers) {
+  async handle(
+    ӄʀǟӄɨռʐ,
+    chat,
+    𝓜𝖎𝖟𝖚ӄ𝖎,
+    Needs,
+    ꜱɪᴛʀᴀᴘ,
+    Clock,
+    Ping,
+    Timers,
+    version
+  ) {
     try {
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
       var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
@@ -156,7 +166,7 @@ ${owner} ɪꜱ ᴛʜᴇ ᴏᴡɴᴇʀ ᴏꜰ ᴛʜᴇ ɢʀᴏᴜᴘ*`,
                   quoted: chat,
                   mimetype: Mimetype.jpeg || Mimetype.png,
                   contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ, Receiver] },
-                  caption: `(c)爪ïʐʊӄï🍁乃օȶ \n📅ᴅᴀᴛᴇ: _${Clock}_
+                  caption: `(c)爪ïʐʊӄï🍁乃օȶ _${version}_\n📅ᴅᴀᴛᴇ: _${Clock}_
 
 @${ꜱᴇɴᴅᴇʀeceived} ᴋɪᴄᴋᴇᴅ @${personreceived} ᴏᴜᴛᴛᴀ ᴛʜᴇ ɢʀᴏᴜᴘ!`,
                 }
@@ -179,7 +189,7 @@ ${owner} ɪꜱ ᴛʜᴇ ᴏᴡɴᴇʀ ᴏꜰ ᴛʜᴇ ɢʀᴏᴜᴘ*`,
                   quoted: chat,
                   mimetype: Mimetype.jpeg || Mimetype.png,
                   contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
-                  caption: `(c)爪ïʐʊӄï🍁乃օȶ \n📅ᴅᴀᴛᴇ: _${Clock}_
+                  caption: `(c)爪ïʐʊӄï🍁乃օȶ _${version}_\n📅ᴅᴀᴛᴇ: _${Clock}_
 
 @${ꜱᴇɴᴅᴇʀeceived} ᴋɪᴄᴋᴇᴅ ᴛʜᴀᴛ ᴘᴇʀꜱᴏɴ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ!`,
                 }
@@ -257,7 +267,7 @@ Reply to the person you want to kick or tag them.\n\nFor instance,  *${ᴋᴇɪ}
                   quoted: chat,
                   mimetype: `video/gif`,
                   contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ, Receiver] },
-                  caption: `(c)爪ïʐʊӄï🍁乃օȶ \n📅ᴅᴀᴛᴇ: _${Clock}_
+                  caption: `(c)爪ïʐʊӄï🍁乃օȶ _${version}_\n📅ᴅᴀᴛᴇ: _${Clock}_
 
 @${ꜱᴇɴᴅᴇʀeceived} ᴋɪᴄᴋᴇᴅ @${personreceived} ᴏᴜᴛᴛᴀ ᴛʜᴇ ɢʀᴏᴜᴘ!`,
                 }
@@ -283,7 +293,7 @@ Reply to the person you want to kick or tag them.\n\nFor instance,  *${ᴋᴇɪ}
                   quoted: chat,
                   mimetype: Mimetype.jpeg || Mimetype.png,
                   contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
-                  caption: `(c)爪ïʐʊӄï🍁乃օȶ \n📅ᴅᴀᴛᴇ: _${Clock}_
+                  caption: `(c)爪ïʐʊӄï🍁乃օȶ _${version}_\n📅ᴅᴀᴛᴇ: _${Clock}_
 
 👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, ${Timers} @${ꜱᴇɴᴅᴇʀeceived}, ᴋɪᴄᴋᴇᴅ ᴛʜᴀᴛ ᴘᴇʀꜱᴏɴ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ!`,
                 }

@@ -37,7 +37,6 @@ try {
     return await ӄʀǟӄɨռʐ
       .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, { url: MediaUrl }, MessageType.video, {
         mimetype: `video/gif`,
-
         quoted: chat,
         caption: MainText,
         contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },

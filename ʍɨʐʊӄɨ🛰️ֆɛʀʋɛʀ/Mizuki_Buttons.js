@@ -16,6 +16,7 @@ try {
   date.format(now, `ddd, MMM DD YYYY`);
   const pattern = date.compile(`ddd, MMM DD YYYY`);
   const Clock = date.format(now, pattern);
+  const vers = require(`../package.json`);
   // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
   const Mizuki_Text_But = (ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, MainText) => {
     if (𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
@@ -31,7 +32,7 @@ try {
     }
     const buttonMessage = {
       contentText: MainText,
-      footerText: `(c)爪ïʐʊӄï🍁乃օȶ \n📅ᴅᴀᴛᴇ: _${Clock}_`,
+      footerText: `(c)爪ïʐʊӄï🍁乃օȶ _${vers.vers}_\n📅ᴅᴀᴛᴇ: _${Clock}_`,
       buttons: [
         {
           buttonId: `${ᴋᴇɪ}help`,
@@ -78,7 +79,7 @@ try {
         𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
         {
           contentText: MainText,
-          footerText: `(c)爪ïʐʊӄï🍁乃օȶ \n📅ᴅᴀᴛᴇ: _${Clock}_`,
+          footerText: `(c)爪ïʐʊӄï🍁乃օȶ _${vers.vers}_\n📅ᴅᴀᴛᴇ: _${Clock}_`,
           buttons: [
             {
               buttonId: `${ᴋᴇɪ}help`,
@@ -127,7 +128,7 @@ try {
         𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
         {
           contentText: MainText,
-          footerText: `(c)爪ïʐʊӄï🍁乃օȶ \n📅ᴅᴀᴛᴇ: _${Clock}_`,
+          footerText: `(c)爪ïʐʊӄï🍁乃օȶ _${vers.vers}_\n📅ᴅᴀᴛᴇ: _${Clock}_`,
           buttons: [
             {
               buttonId: `${ᴋᴇɪ}help`,
@@ -170,7 +171,7 @@ try {
         𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
         {
           contentText: MainText,
-          footerText: `(c)爪ïʐʊӄï🍁乃օȶ \n📅ᴅᴀᴛᴇ: _${Clock}_`,
+          footerText: `(c)爪ïʐʊӄï🍁乃օȶ _${vers.vers}_\n📅ᴅᴀᴛᴇ: _${Clock}_`,
           buttons: [
             {
               buttonId: `${ᴋᴇɪ}help`,
@@ -217,7 +218,7 @@ try {
     const buttonMessages = {
       videoMessage: media.message.videoMessage,
       contentText: MainText,
-      footerText: `(c)爪ïʐʊӄï🍁乃օȶ \n📅ᴅᴀᴛᴇ: _${Clock}_`,
+      footerText: `(c)爪ïʐʊӄï🍁乃օȶ _${vers.vers}_\n📅ᴅᴀᴛᴇ: _${Clock}_`,
       buttons: [
         {
           buttonId: `${ᴋᴇɪ}help`,
@@ -262,7 +263,7 @@ try {
     const buttonMessages = {
       locationMessage: media.message.locationMessage,
       contentText: MainText,
-      footerText: `(c)爪ïʐʊӄï🍁乃օȶ \n📅ᴅᴀᴛᴇ: _${Clock}_`,
+      footerText: `(c)爪ïʐʊӄï🍁乃օȶ _${vers.vers}_\n📅ᴅᴀᴛᴇ: _${Clock}_`,
       buttons: [
         {
           buttonId: `${ᴋᴇɪ}help`,

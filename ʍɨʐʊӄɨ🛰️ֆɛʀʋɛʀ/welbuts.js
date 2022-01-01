@@ -112,7 +112,7 @@ ${ᴡᴇʟᴄᴏᴍᴇʀᴛxᴛ}
 ★━━━━━━━━◆➤
 
 ${ꜰᴇᴛᴄʜᴇᴅᴡᴇʟᴄᴏᴍᴇ.message}`,
-            footerText: `(c)爪ïʐʊӄï🍁乃օȶ \n📅ᴅᴀᴛᴇ: _${Clock}_`,
+            footerText: `(c)爪ïʐʊӄï🍁乃օȶ _${vers.vers}_\n📅ᴅᴀᴛᴇ: _${Clock}_`,
             buttons: [
               {
                 buttonId: `${ᴋᴇɪ}help`,
