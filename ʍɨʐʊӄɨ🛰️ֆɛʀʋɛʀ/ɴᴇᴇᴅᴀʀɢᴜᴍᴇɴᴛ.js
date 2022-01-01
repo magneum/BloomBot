@@ -1,7 +1,7 @@
 try {
   // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
   const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
-  const Mizuki_Static = require(`./Mizuki_Static`);
+  const Mizuki_Buttons = require(`./Mizuki_Buttons`);
   const _𝔏𝔞𝔟_ = require(`./_𝔏𝔞𝔟_`);
   const ꜰᴜᴄᴋ = require(`./oShit`);
   const fs = require(`fs`);
@@ -38,9 +38,8 @@ try {
     commandName,
     needs
   ) => {
-    var MediaUrl = `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`;
     try {
-      return Mizuki_Static.MGS(
+      return Mizuki_Buttons.MTB(
         ӄʀǟӄɨռʐ,
         chat,
         𝓜𝖎𝖟𝖚ӄ𝖎,
@@ -49,8 +48,7 @@ try {
 ┌────────◆➤ ⚠️𝐑𝐄𝐀𝐃 𝐇𝐎𝐖 𝐓𝐎 𝐔𝐒𝐄
 │
 │❗ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ᴋᴇɪ}${commandName}
-│❓ 𝐔𝐬𝐚𝐠𝐞: ${needs === undefined ? `null` : needs}`,
-        MediaUrl
+│❓ 𝐔𝐬𝐚𝐠𝐞: ${needs === undefined ? `null` : needs}`
       );
     } catch (ℓαвєяяσя) {
       ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
