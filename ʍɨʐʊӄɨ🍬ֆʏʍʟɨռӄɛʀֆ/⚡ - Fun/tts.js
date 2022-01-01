@@ -111,7 +111,7 @@ You can also reply to a text message with syntax  *${ᴋᴇɪ}tr <language>*  to
               `./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`,
               JSON.stringify(jsoncool)
             );
-          }, 6000);
+          }, 10000);
         } catch (ℓαвєяяσя) {
           console.log(ℓαвєяяσя);
         }

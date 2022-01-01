@@ -98,7 +98,7 @@ Spam Amount can't be zero.`,
             `./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`,
             JSON.stringify(jsoncool)
           );
-        }, 6000);
+        }, 10000);
       } catch (ℓαвєяяσя) {
         console.log(ℓαвєяяσя);
       }

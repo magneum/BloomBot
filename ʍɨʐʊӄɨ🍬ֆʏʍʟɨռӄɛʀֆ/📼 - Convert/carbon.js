@@ -122,7 +122,7 @@ or reply to a text message with
               `./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`,
               JSON.stringify(jsoncool)
             );
-          }, 6000);
+          }, 10000);
         } catch (ℓαвєяяσя) {
           console.log(ℓαвєяяσя);
         }

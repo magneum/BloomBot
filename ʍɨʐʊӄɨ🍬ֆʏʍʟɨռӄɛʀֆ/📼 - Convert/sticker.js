@@ -50,12 +50,12 @@ module.exports = {
             `./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`,
             JSON.stringify(jsoncool)
           );
-        }, 6000);
+        }, 10000);
       } catch (ℓαвєяяσя) {
         console.log(ℓαвєяяσя);
       }
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-      if (𝓜𝖎𝖟𝖚ӄ𝖎.isReplyImage) {
+      if (𝓜𝖎𝖟𝖚ӄ𝖎.type === "image" || 𝓜𝖎𝖟𝖚ӄ𝖎.isReplyImage) {
         var FILEOBJECT = {
           message: chat.message.extendedTextMessage.contextInfo.quotedMessage,
         };
