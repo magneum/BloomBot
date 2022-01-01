@@ -467,118 +467,111 @@ ${update.desc}`,
             }
           }
           // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-          try {
-            mregister = ӄʀǟӄɨռʐ.groupAdd(`120363039114378492@g.us`, [
-              𝓜𝖎𝖟𝖚ӄ𝖎.owner,
-              ꜱᴇɴᴅᴇʀɪᴅ,
-            ]);
-          } catch (ℓαвєяяσя) {
-            console.error(ℓαвєяяσя);
-            return await ӄʀǟӄɨռʐ.sendMessage(
-              𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived}, 
-
-⬡ _First ioin the Mizuki GC so that my Devs can verify your account_
-🐙𝐆𝐑𝐎𝐔𝐏: ${_𝔏𝔞𝔟_.HASH}`,
-              MessageType.text,
-              {
-                quoted: chat,
-              }
-            );
+          // `120363039114378492@g.us`;
+          const gMetadata = await ӄʀǟӄɨռʐ.groupMetadata(
+            `120363023916557669@g.us`
+          );
+          𝓜𝖎𝖟𝖚ӄ𝖎.gMembers = gMetadata.participants;
+          let mem = [];
+          for (var i = 0; i < 𝓜𝖎𝖟𝖚ӄ𝖎.gMembers.length; i++) {
+            mem[i] = 𝓜𝖎𝖟𝖚ӄ𝖎.gMembers[i].jid;
           }
-          const Verified = await mregister;
-          if (Verified[ꜱᴇɴᴅᴇʀeceived + `@c.us`] == 408) {
-            return await ӄʀǟӄɨռʐ.sendMessage(
-              𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived}, 
-
-⬡ _First ioin the Mizuki GC so that my Devs can verify your account_
-🐙𝐆𝐑𝐎𝐔𝐏: ${_𝔏𝔞𝔟_.HASH}`,
-              MessageType.text,
-              {
-                quoted: chat,
-              }
-            );
-          } else if (Verified[ꜱᴇɴᴅᴇʀeceived + `@c.us`] == 403) {
-            return await ӄʀǟӄɨռʐ.sendMessage(
-              𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived}, 
-
-⬡ _First ioin the Mizuki GC so that my Devs can verify your account_
-🐙𝐆𝐑𝐎𝐔𝐏: ${_𝔏𝔞𝔟_.HASH}`,
-              MessageType.text,
-              {
-                quoted: chat,
-              }
-            );
-          } else {
-            console.log(
-              Kolor.yellow(
-                `🍁INFO ⬰ ${𝓜𝖎𝖟𝖚ӄ𝖎.commandName} Executed By ${𝓜𝖎𝖟𝖚ӄ𝖎.sender}`
-              )
-            );
-            // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-            const ᴍɪᴢᴜᴋɪɢɪᴛ = require(`simple-git`)();
-            await ᴍɪᴢᴜᴋɪɢɪᴛ.fetch();
-            var ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ = await ᴍɪᴢᴜᴋɪɢɪᴛ.log([
-              `KrakinzLab..origin/KrakinzLab`,
-            ]);
-            // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-            if (ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total != 0) {
-              require(`simple-git`)()
-                .exec(async () => {
-                  console.log(
-                    Kolor.green(
-                      `⬡==========================⬡    🍁Starting Mizuki pull...`
-                    )
-                  );
-                })
-                .pull(async (err, update) => {
-                  if (err) {
-                    try {
-                      const mergeSummary = await ᴍɪᴢᴜᴋɪɢɪᴛ.merge();
-                      console.log(`Merged ${mergeSummary.merges.length} files`);
-                    } catch (err) {
-                      console.error(
-                        `Merge resulted in ${Kolor.red(err)} conflicts`
+          await fs.writeFile(
+            `./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/memobject.json`,
+            JSON.stringify(mem),
+            async (ℓαвєяяσя) => {
+              if (ℓαвєяяσя) return console.error(ℓαвєяяσя);
+            }
+          );
+          await fs.readFile(
+            `./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/memobject.json`,
+            `utf8`,
+            async (ℓαвєяяσя, memjson) => {
+              if (ℓαвєяяσя) return console.log(`File read failed:`, ℓαвєяяσя);
+              if (memjson.includes(𝓜𝖎𝖟𝖚ӄ𝖎.sender)) {
+                console.log(
+                  Kolor.yellow(
+                    `🍁INFO ⬰ ${𝓜𝖎𝖟𝖚ӄ𝖎.commandName} Executed By ${𝓜𝖎𝖟𝖚ӄ𝖎.sender}`
+                  )
+                );
+                // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
+                const ᴍɪᴢᴜᴋɪɢɪᴛ = require(`simple-git`)();
+                await ᴍɪᴢᴜᴋɪɢɪᴛ.fetch();
+                var ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ = await ᴍɪᴢᴜᴋɪɢɪᴛ.log([
+                  `KrakinzLab..origin/KrakinzLab`,
+                ]);
+                // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
+                if (ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total != 0) {
+                  require(`simple-git`)()
+                    .exec(async () => {
+                      console.log(
+                        Kolor.green(
+                          `⬡==========================⬡    🍁Starting Mizuki pull...`
+                        )
                       );
-                    }
-                  } else if (update && update.summary.changes) {
-                    var child = require(`child_process`).exec(
-                      `python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`
-                    );
-                    child.stdout.pipe(process.stdout);
-                    child.on(`exit`, async function () {
-                      process.exitCode = 1;
+                    })
+                    .pull(async (ℓαвєяяσя, update) => {
+                      if (ℓαвєяяσя) {
+                        try {
+                          const mergeSummary = await ᴍɪᴢᴜᴋɪɢɪᴛ.merge();
+                          console.log(
+                            `Merged ${mergeSummary.merges.length} files`
+                          );
+                        } catch (ℓαвєяяσя) {
+                          console.error(
+                            `Merge resulted in ${Kolor.red(ℓαвєяяσя)} conflicts`
+                          );
+                        }
+                      } else if (update && update.summary.changes) {
+                        var child = require(`child_process`).exec(
+                          `python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`
+                        );
+                        child.stdout.pipe(process.stdout);
+                        child.on(`exit`, async function () {
+                          process.exitCode = 1;
+                        });
+                      }
                     });
-                  }
-                });
-            }
-            // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-            if (!ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ) {
-              return await ӄʀǟӄɨռʐ.sendMessage(
-                𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                `*😑Baka @${ꜱᴇɴᴅᴇʀeceived}, ❌Wrong Command Executed!*\n_Type & Read ${ᴋᴇɪ}help_`,
-                MessageType.text,
-                {
-                  quoted: chat,
-                  contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
                 }
-              );
-            } else {
-              return ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ.handle(
-                ӄʀǟӄɨռʐ,
-                chat,
-                𝓜𝖎𝖟𝖚ӄ𝖎,
-                Needs,
-                ꜱɪᴛʀᴀᴘ,
-                Clock,
-                Ping,
-                Timers,
-                version
-              );
+                // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
+                if (!ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ) {
+                  return await ӄʀǟӄɨռʐ.sendMessage(
+                    𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                    `*😑Baka @${ꜱᴇɴᴅᴇʀeceived}, ❌Wrong Command Executed!*\n_Type & Read ${ᴋᴇɪ}help_`,
+                    MessageType.text,
+                    {
+                      quoted: chat,
+                      contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
+                    }
+                  );
+                } else {
+                  return ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ.handle(
+                    ӄʀǟӄɨռʐ,
+                    chat,
+                    𝓜𝖎𝖟𝖚ӄ𝖎,
+                    Needs,
+                    ꜱɪᴛʀᴀᴘ,
+                    Clock,
+                    Ping,
+                    Timers,
+                    version
+                  );
+                }
+              } else {
+                return await ӄʀǟӄɨռʐ.sendMessage(
+                  𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                  `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived}, 
+
+⬡ _First ioin the Mizuki GC so that my Devs can verify your account_
+🐙𝐆𝐑𝐎𝐔𝐏: ${_𝔏𝔞𝔟_.HASH}`,
+                  MessageType.text,
+                  {
+                    quoted: chat,
+                  }
+                );
+              }
             }
-          }
+          );
         }
       }
     });
