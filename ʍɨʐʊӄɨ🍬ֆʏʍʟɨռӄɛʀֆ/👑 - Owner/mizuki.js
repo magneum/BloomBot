@@ -131,7 +131,7 @@ module.exports = {
             contextInfo: {
               mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
             },
-            caption: `\n(c)𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: \n📅𝐃𝐚𝐭𝐞: _${Clock}_
+            caption: `(c)爪ïʐʊӄï🍁乃օȶ\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: \n📅𝐃𝐚𝐭𝐞: _${Clock}_
 
 👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, ${Timers} @${ꜱᴇɴᴅᴇʀeceived}, 
 ${respon}`,
