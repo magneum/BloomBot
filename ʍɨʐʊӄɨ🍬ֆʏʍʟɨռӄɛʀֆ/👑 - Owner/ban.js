@@ -12,10 +12,6 @@ const fs = require(`fs`);
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
 module.exports = {
   name: `ban`,
-  𝓜𝓮𝓮6ʍօʀɛ: `These are the configurations -
-🍁If you send the command in a group *without replying* to anyone, the bot will be *disabled for that group.*
-🍁If you send the command in a group and *reply to someone*, they will not be able to use the bot in that *specific group.*
-🍁If you send the command in *personal chat* of a person, they will be blacklisted from using the bot in *any group.*`,
   async handle(
     ӄʀǟӄɨռʐ,
     chat,
@@ -45,7 +41,7 @@ module.exports = {
           `Who Is This Dumbo •@${ꜱᴇɴᴅᴇʀeceived} Trying to Use Owner-Only Commands.
 
 
-┌────◆➤ 🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧   
+┌────⤞ 🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧   
 │  
 │*❌ 𝚈𝚘𝚞 𝙰𝚛𝚎 𝙽𝚘𝚝 𝙰𝚕𝚕𝚘𝚠𝚎𝚍!*
 └───────〇`,
