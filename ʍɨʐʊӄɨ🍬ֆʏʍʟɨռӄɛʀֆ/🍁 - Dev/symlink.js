@@ -10,6 +10,7 @@ const speed = require(`performance-now`);
 const { performance } = require(`perf_hooks`);
 const vers = require(`../../package.json`);
 const os = require(`os`);
+const fs = require(`fs`);
 const { formatp, runtime } = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/mizu`);
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
 module.exports = {

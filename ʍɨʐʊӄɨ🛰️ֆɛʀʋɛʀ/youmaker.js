@@ -2,6 +2,7 @@ try {
   // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
   const { JSDOM } = require("jsdom");
   const fetch = require("node-fetch");
+  const fs = require(`fs`);
   const FormData = require("form-data");
   const axios = require("axios");
   const cheerio = require("cheerio");

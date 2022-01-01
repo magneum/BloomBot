@@ -10,6 +10,7 @@ const {
 } = require(`@adiwajshing/baileys`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
+const fs = require(`fs`);
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
 module.exports = {
   name: `lock`,
@@ -182,7 +183,7 @@ module.exports = {
 
 ┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
 Chat permissions changed to  *admin only*  for 
-${Needs[0]} ${type} `,
+${Needs[0]} ${type}`,
         `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
       );
       setTimeout(async () => {
@@ -199,7 +200,7 @@ ${Needs[0]} ${type} `,
 
 
 ┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
-Chat permissions changed to  *all group members*${ᴋᴇɪ}`,
+Chat permissions changed to *all group members*`,
           `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
         );
       }, duration);
