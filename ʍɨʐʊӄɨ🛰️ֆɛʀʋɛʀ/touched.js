@@ -9,6 +9,5 @@ fs.writeFile(
   `utf8`,
   function (err) {
     if (err) console.log(err);
-    console.log(`JSON file has been saved.`);
   }
 );
