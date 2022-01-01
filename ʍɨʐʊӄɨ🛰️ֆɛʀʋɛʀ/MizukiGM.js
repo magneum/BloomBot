@@ -1,11 +1,11 @@
 try {
   // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
   const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
-  const { MizukiTenorMaker } = require("./MizukiTenorMaker");
+  const { MizukiTenorMaker } = require(`./MizukiTenorMaker`);
   const _𝔏𝔞𝔟_ = require(`./_𝔏𝔞𝔟_`);
   const ℓιєηт = require(`./oShit`);
   const ffmpeg = require(`fluent-ffmpeg`);
-  const cleanRF = require("./cleanRF");
+  const cleanRF = require(`./cleanRF`);
   require(`python-format-js`);
   const ꜰᴜᴄᴋ = require(`./oShit`);
   const vers = require(`../package.json`);
@@ -14,14 +14,14 @@ try {
   const Downloader = require(`nodejs-file-downloader`);
   const anime = require(`anime-actions`);
   const fs = require(`fs`);
-  const speed = require("performance-now");
+  const speed = require(`performance-now`);
   let Timestamp = speed();
   const Pong = speed() - Timestamp;
   const Ping = Pong.toFixed(4);
-  const date = require("date-and-time");
+  const date = require(`date-and-time`);
   const now = new Date();
-  date.format(now, "ddd, MMM DD YYYY");
-  const pattern = date.compile("ddd, MMM DD YYYY");
+  date.format(now, `ddd, MMM DD YYYY`);
+  const pattern = date.compile(`ddd, MMM DD YYYY`);
   const Clock = date.format(now, pattern);
   // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
   exports.MizukiGM = async (ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎) => {
@@ -50,14 +50,14 @@ try {
         await downloader.download();
         await ffmpeg(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FinalName}_${MizukiGMid}.gif`)
           .outputOptions([
-            "-pix_fmt yuv420p",
-            "-c:v libx264",
-            "-movflags +faststart",
-            "-filter:v crop='floor(in_w/2)*2:floor(in_h/2)*2'",
+            `-pix_fmt yuv420p`,
+            `-c:v libx264`,
+            `-movflags +faststart`,
+            `-filter:v crop='floor(in_w/2)*2:floor(in_h/2)*2'`,
           ])
           .save(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FinalName}_${MizukiGMid}.mp4`)
-          .on("end", async () => {
-            console.log("Finished");
+          .on(`end`, async () => {
+            console.log(`Finished`);
             await ӄʀǟӄɨռʐ
               .sendMessage(
                 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
@@ -68,7 +68,7 @@ try {
                 {
                   contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ, Receiver] },
                   quoted: chat,
-                  mimetype: "video/gif",
+                  mimetype: `video/gif`,
                   caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ* 
 
 ┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
@@ -104,14 +104,14 @@ try {
         await downloader.download();
         ffmpeg(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FinalName}_${MizukiGMid}.gif`)
           .outputOptions([
-            "-pix_fmt yuv420p",
-            "-c:v libx264",
-            "-movflags +faststart",
-            "-filter:v crop='floor(in_w/2)*2:floor(in_h/2)*2'",
+            `-pix_fmt yuv420p`,
+            `-c:v libx264`,
+            `-movflags +faststart`,
+            `-filter:v crop='floor(in_w/2)*2:floor(in_h/2)*2'`,
           ])
           .save(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FinalName}_${MizukiGMid}.mp4`)
-          .on("end", async () => {
-            console.log("Finished");
+          .on(`end`, async () => {
+            console.log(`Finished`);
             await ӄʀǟӄɨռʐ
               .sendMessage(
                 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
@@ -122,7 +122,7 @@ try {
                 {
                   contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
                   quoted: chat,
-                  mimetype: "video/gif",
+                  mimetype: `video/gif`,
                   caption: `*🍁爪𝖎𝖟𝖚ӄ𝖎 ɮօȶ* 
 
 ┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_

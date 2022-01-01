@@ -5,7 +5,7 @@ try {
   const sequelize = _𝔏𝔞𝔟_.POSTQL;
   // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
   const Banlist = sequelize.define(
-    "Banlist",
+    `Banlist`,
     {
       JID: {
         type: DataTypes.STRING,
@@ -17,11 +17,11 @@ try {
       },
     },
     {
-      tableName: "Banlist",
+      tableName: `Banlist`,
     }
   );
   // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-  async function addBanlistUser(jid = "", GrpId = "") {
+  async function addBanlistUser(jid = ``, GrpId = ``) {
     Banlist.findOrCreate({
       where: {
         JID: jid,
@@ -30,10 +30,10 @@ try {
     });
   }
   // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-  async function getBanlistUser(jid = "", GrpId = "") {
+  async function getBanlistUser(jid = ``, GrpId = ``) {
     var Msg = await Banlist.findAll({
       where: {
-        JID: "",
+        JID: ``,
         GRPID: GrpId,
       },
     });
@@ -42,7 +42,7 @@ try {
       var Msg = await Banlist.findAll({
         where: {
           JID: jid,
-          GRPID: "",
+          GRPID: ``,
         },
       });
 
@@ -67,7 +67,7 @@ try {
     }
   }
   // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-  async function removeBanlistUser(jid = "", GrpId = "") {
+  async function removeBanlistUser(jid = ``, GrpId = ``) {
     var Msg = await Banlist.findAll({
       where: {
         JID: jid,

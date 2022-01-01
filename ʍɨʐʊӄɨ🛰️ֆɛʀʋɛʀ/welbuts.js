@@ -9,15 +9,15 @@ try {
   require(`python-format-js`);
   var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
   var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
-  const speed = require("performance-now");
+  const speed = require(`performance-now`);
   let Timestamp = speed();
   const Pong = speed() - Timestamp;
   const Ping = Pong.toFixed(4);
-  const date = require("date-and-time");
+  const date = require(`date-and-time`);
   const now = new Date();
-  const cleanRF = require("./cleanRF");
-  date.format(now, "ddd, MMM DD YYYY");
-  const pattern = date.compile("ddd, MMM DD YYYY");
+  const cleanRF = require(`./cleanRF`);
+  date.format(now, `ddd, MMM DD YYYY`);
+  const pattern = date.compile(`ddd, MMM DD YYYY`);
   const Clock = date.format(now, pattern);
   const fs = require(`fs`);
   var ᴛᴡᴇʟ = [
@@ -54,8 +54,8 @@ try {
     `ʏᴏᴜ ᴋɴᴏᴡ ᴡᴇ'ʀᴇ ɢᴏɴɴᴀ ᴍɪꜱꜱ ʏᴏᴜ . ʀɪɢʜᴛ? ʀɪɢʜᴛ? ʀɪɢʜᴛ?`,
     `ᴄᴏɴɢʀᴀᴛᴜʟᴀᴛɪᴏɴꜱ, ! ʏᴏᴜ'ʀᴇ ᴏꜰꜰɪᴄɪᴀʟʟʏ ꜰʀᴇᴇ ᴏꜰ ᴛʜɪꜱ ᴍᴇꜱꜱ.`,
   ];
-  var Flower = ["💐", "🌻", "🌼", "🌹", "🌸", "💮"];
-  var People = ["👮", "👳", "🤱", "🤰", "💂"];
+  var Flower = [`💐`, `🌻`, `🌼`, `🌹`, `🌸`, `💮`];
+  var People = [`👮`, `👳`, `🤱`, `🤰`, `💂`];
   // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
   exports.welbuts = async (
     ӄʀǟӄɨռʐ,
@@ -143,9 +143,9 @@ ${ꜰᴇᴛᴄʜᴇᴅᴡᴇʟᴄᴏᴍᴇ.message}`,
     } catch (ℓαвєяяσя) {
       await ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
       console.log(
-        "⬡==========================⬡    🍁 " +
+        `⬡==========================⬡    🍁 ` +
           ℓαвєяяσя +
-          "🍁    ⬡==========================⬡"
+          `🍁    ⬡==========================⬡`
       );
     }
   };

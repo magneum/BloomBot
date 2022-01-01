@@ -2,15 +2,15 @@
 const Mizuki_Buttons = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Mizuki_Buttons`);
 const Mizuki_Static = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Mizuki_Static`);
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
-const cleanRF = require("../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/cleanRF");
+const cleanRF = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/cleanRF`);
 const ꜰᴜᴄᴋ = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/oShit`);
-const speed = require("performance-now");
-const { performance } = require("perf_hooks");
+const speed = require(`performance-now`);
+const { performance } = require(`perf_hooks`);
 const vers = require(`../../package.json`);
 const _𝔏𝔞𝔟_ = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/_𝔏𝔞𝔟_`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
-const os = require("os");
+const os = require(`os`);
 const { formatp, runtime } = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/mizu`);
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
 module.exports = {
@@ -23,7 +23,7 @@ module.exports = {
       const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
       const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
       console.log(
-        "🍁爪𝖎𝖟𝖚ӄ𝖎™ ᴠᴇʀɪꜰɪᴇᴅ ꜰɪʟᴇ > " + FinalName.toUpperCase() + "✔️"
+        `🍁爪𝖎𝖟𝖚ӄ𝖎™ ᴠᴇʀɪꜰɪᴇᴅ ꜰɪʟᴇ > ` + FinalName.toUpperCase() + `✔️`
       );
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
       const used = process.memoryUsage();
@@ -79,10 +79,10 @@ module.exports = {
           (key, _, arr) =>
             `${key.padEnd(
               Math.max(...arr.map((v) => v.length)),
-              " "
+              ` `
             )}: ${formatp(used[key])}`
         )
-        .join("\n│")}
+        .join(`\n│`)}
 
 ┌────◆➤ ${
         cpus[0]
@@ -90,12 +90,12 @@ module.exports = {
 │${cpus[0].model.trim()} (${cpu.speed} ᴍʜᴢ)${Object.keys(cpu.times)
               .map(
                 (type) =>
-                  `- *${(type + "*").padEnd(6)}: ${(
+                  `- *${(type + `*`).padEnd(6)}: ${(
                     (100 * cpu.times[type]) /
                     cpu.total
                   ).toFixed(2)}%`
               )
-              .join("\n")}
+              .join(`\n`)}
 
 
 ┌────◆➤ 𝐂𝐏𝐔 𝐂𝐨𝐫𝐞(𝐬) 𝐔𝐬𝐚𝐠𝐞 (_${cpus.length}_ 𝐂𝐨𝐫𝐞 𝐂𝐏𝐔)
@@ -107,15 +107,15 @@ module.exports = {
                   } ᴍʜᴢ)${Object.keys(cpu.times)
                     .map(
                       (type) =>
-                        `- *${(type + "*").padEnd(6)}: ${(
+                        `- *${(type + `*`).padEnd(6)}: ${(
                           (100 * cpu.times[type]) /
                           cpu.total
                         ).toFixed(2)}%`
                     )
-                    .join("\n")}`
+                    .join(`\n`)}`
               )
-              .join("\n\n")}`
-          : ""
+              .join(`\n\n`)}`
+          : ``
       }`.trim();
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
       await ӄʀǟӄɨռʐ
@@ -132,7 +132,7 @@ module.exports = {
             },
             caption: `\n(c)𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: \n📅𝐃𝐚𝐭𝐞: _${Clock}_
 
-🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived}, 
+👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, ${Timers} @${ꜱᴇɴᴅᴇʀeceived}, 
 ${respon}`,
           }
         )

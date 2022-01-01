@@ -5,7 +5,7 @@ try {
   const sequelize = _𝔏𝔞𝔟_.POSTQL;
   // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
   const Linklist = sequelize.define(
-    "Linklist",
+    `Linklist`,
     {
       JID: {
         type: DataTypes.STRING,
@@ -17,11 +17,11 @@ try {
       },
     },
     {
-      tableName: "Linklist",
+      tableName: `Linklist`,
     }
   );
   // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-  async function addLinklistUser(jid = "", GrpId = "") {
+  async function addLinklistUser(jid = ``, GrpId = ``) {
     Linklist.findOrCreate({
       where: {
         JID: jid,
@@ -30,10 +30,10 @@ try {
     });
   }
   // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-  async function getLinklistUser(jid = "", GrpId = "") {
+  async function getLinklistUser(jid = ``, GrpId = ``) {
     var Msg = await Linklist.findAll({
       where: {
-        JID: "",
+        JID: ``,
         GRPID: GrpId,
       },
     });
@@ -42,7 +42,7 @@ try {
       var Msg = await Linklist.findAll({
         where: {
           JID: jid,
-          GRPID: "",
+          GRPID: ``,
         },
       });
 
@@ -67,7 +67,7 @@ try {
     }
   }
   // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-  async function removeLinklistUser(jid = "", GrpId = "") {
+  async function removeLinklistUser(jid = ``, GrpId = ``) {
     var Msg = await Linklist.findAll({
       where: {
         JID: jid,

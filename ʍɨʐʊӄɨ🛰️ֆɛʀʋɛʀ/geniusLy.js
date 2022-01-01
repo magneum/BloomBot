@@ -1,11 +1,11 @@
 try {
   // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
   const Second_Try_Lyrics = require(`songlyrics`).default;
-  const First_Try_Lyrics = require("genius-lyrics");
+  const First_Try_Lyrics = require(`genius-lyrics`);
   const Third_Try_Lyrics = require(`music-lyrics`);
   const GeniusClient = new First_Try_Lyrics.Client();
   console.clear();
-  const Song = "Sayonara";
+  const Song = `Sayonara`;
   // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
   (async () => {
     try {

@@ -4,13 +4,13 @@ try {
   const _𝔏𝔞𝔟_ = require(`./_𝔏𝔞𝔟_`);
   require(`python-format-js`);
   const vers = require(`../package.json`);
-  const speed = require("performance-now");
+  const speed = require(`performance-now`);
   let Timestamp = speed();
   const Ping = speed() - Timestamp;
-  const date = require("date-and-time");
+  const date = require(`date-and-time`);
   const now = new Date();
-  date.format(now, "ddd, MMM DD YYYY");
-  const pattern = date.compile("ddd, MMM DD YYYY");
+  date.format(now, `ddd, MMM DD YYYY`);
+  const pattern = date.compile(`ddd, MMM DD YYYY`);
   const Clock = date.format(now, pattern);
   // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
   exports.nomentioncontact = async (args, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎) => {

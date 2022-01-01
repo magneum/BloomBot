@@ -1,11 +1,11 @@
 try {
   (async () => {
-    const fetch = require("node-fetch");
-    let url = "https://api.tenor.com/v1/";
+    const fetch = require(`node-fetch`);
+    let url = `https://api.tenor.com/v1/`;
     let response = await fetch(url);
     let json = await response.json();
     console.log(json);
-    console.log("=========================================");
+    console.log(`=========================================`);
     console.log(
       json.results[Math.floor(Math.random() * json.results.length)].media[0].mp4
         .url

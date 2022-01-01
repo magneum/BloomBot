@@ -4,7 +4,7 @@ try {
   const speed = require(`performance-now`);
   const vers = require(`../package.json`);
   const date = require(`date-and-time`);
-  const cleanRF = require("./cleanRF");
+  const cleanRF = require(`./cleanRF`);
   const _𝔏𝔞𝔟_ = require(`./_𝔏𝔞𝔟_`);
   const ꜰᴜᴄᴋ = require(`./oShit`);
   let Timestamp = speed();

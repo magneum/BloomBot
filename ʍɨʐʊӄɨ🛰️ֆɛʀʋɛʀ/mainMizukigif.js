@@ -7,17 +7,17 @@ try {
   var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
   const ffmpeg = require(`fluent-ffmpeg`);
   const fs = require(`fs`);
-  const cleanRF = require("./cleanRF");
+  const cleanRF = require(`./cleanRF`);
   const vers = require(`../package.json`);
   var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
-  const speed = require("performance-now");
+  const speed = require(`performance-now`);
   let Timestamp = speed();
   const Pong = speed() - Timestamp;
   const Ping = Pong.toFixed(4);
-  const date = require("date-and-time");
+  const date = require(`date-and-time`);
   const now = new Date();
-  date.format(now, "ddd, MMM DD YYYY");
-  const pattern = date.compile("ddd, MMM DD YYYY");
+  date.format(now, `ddd, MMM DD YYYY`);
+  const pattern = date.compile(`ddd, MMM DD YYYY`);
   const Clock = date.format(now, pattern);
   // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
   exports.mainMizukigif = async (ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, 𝓜𝖎𝖟𝖚ӄ𝖎Text) => {
@@ -49,13 +49,13 @@ try {
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
       await ffmpeg(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/𝓜𝖎𝖟𝖚ӄ𝖎_${ꜱᴇɴᴅᴇʀɪᴅ}_${𝓜𝖎𝖟𝖚ӄ𝖎ID}.gif`)
         .outputOptions([
-          "-pix_fmt yuv420p",
-          "-c:v libx264",
-          "-movflags +faststart",
-          "-filter:v crop='floor(in_w/2)*2:floor(in_h/2)*2'",
+          `-pix_fmt yuv420p`,
+          `-c:v libx264`,
+          `-movflags +faststart`,
+          `-filter:v crop='floor(in_w/2)*2:floor(in_h/2)*2'`,
         ])
         .save(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/𝓜𝖎𝖟𝖚ӄ𝖎_${ꜱᴇɴᴅᴇʀɪᴅ}_${𝓜𝖎𝖟𝖚ӄ𝖎ID}.mp4`)
-        .on("end", async () => {
+        .on(`end`, async () => {
           const media = await ӄʀǟӄɨռʐ
             .prepareMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
@@ -73,7 +73,7 @@ try {
             .sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               {
-                contentText: `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived},
+                contentText: `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, ${Timers} @${ꜱᴇɴᴅᴇʀeceived},
               
               
 ====<⚡>${𝓜𝖎𝖟𝖚ӄ𝖎Text}`,
@@ -108,9 +108,9 @@ try {
     } catch (ℓαвєяяσя) {
       await ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
       console.log(
-        "⬡==========================⬡    🍁 " +
+        `⬡==========================⬡    🍁 ` +
           ℓαвєяяσя +
-          "🍁    ⬡==========================⬡"
+          `🍁    ⬡==========================⬡`
       );
     }
   };

@@ -1,6 +1,6 @@
 try {
   // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-  const tenors = require("./MizukiTenor");
+  const tenors = require(`./MizukiTenor`);
   module.exports = {
     MizukiTenorMaker(option) {
       let TenorGot;
@@ -10,7 +10,7 @@ try {
       if (TenorGot) {
         return TenorGot[Math.floor(Math.random() * TenorGot.length)];
       } else {
-        return "Invalid Request";
+        return `Invalid Request`;
       }
     },
   };

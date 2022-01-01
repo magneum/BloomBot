@@ -6,17 +6,36 @@ try {
   var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
   require(`python-format-js`);
   const fs = require(`fs`);
-  const cleanRF = require("./cleanRF");
+  const cleanRF = require(`./cleanRF`);
   const vers = require(`../package.json`);
-  const speed = require("performance-now");
+  const speed = require(`performance-now`);
   let Timestamp = speed();
   const Pong = speed() - Timestamp;
   const Ping = Pong.toFixed(4);
-  const date = require("date-and-time");
+  const date = require(`date-and-time`);
   const now = new Date();
-  date.format(now, "ddd, MMM DD YYYY");
-  const pattern = date.compile("ddd, MMM DD YYYY");
+  date.format(now, `ddd, MMM DD YYYY`);
+  const pattern = date.compile(`ddd, MMM DD YYYY`);
   const Clock = date.format(now, pattern);
+  const time2 = moment().tz(`Asia/Kolkata`).format(`HH:mm:ss`);
+  if (time2 < `24:59:00`) {
+    var Timers = `𝐍𝐢𝐠𝐡𝐭😴`;
+  }
+  if (time2 < `19:00:00`) {
+    var Timers = `𝐄𝐯𝐞𝐧𝐢𝐧𝐠🌞`;
+  }
+  if (time2 < `18:00:00`) {
+    var Timers = `𝐀𝐟𝐭𝐞𝐫𝐧𝐨𝐨𝐧🌄`;
+  }
+  if (time2 < `15:00:00`) {
+    var Timers = `𝐀𝐟𝐭𝐞𝐫𝐧𝐨𝐨𝐧☀️`;
+  }
+  if (time2 < `11:00:00`) {
+    var Timers = `𝐌𝐨𝐫𝐧𝐢𝐧𝐠🌅`;
+  }
+  if (time2 < `05:00:00`) {
+    var Timers = `𝐍𝐢𝐠𝐡𝐭💤`;
+  }
   // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
   exports.catch = async (ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat) => {
     var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
@@ -28,7 +47,7 @@ try {
       .sendMessage(
         𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
         {
-          contentText: `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived},
+          contentText: `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, ${Timers} @${ꜱᴇɴᴅᴇʀeceived},
               
 ◆ 𝘞𝘦 𝘙𝘢𝘯 𝘐𝘯𝘵𝘰 𝘚𝘰𝘮𝘦 𝘌𝘳𝘳𝘰𝘳 ◆
 ➤ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_!`,

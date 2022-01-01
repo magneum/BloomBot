@@ -1,6 +1,6 @@
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
-const cleanRF = require("../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/cleanRF");
+const cleanRF = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/cleanRF`);
 const _𝔏𝔞𝔟_ = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/_𝔏𝔞𝔟_`);
 const ꜰᴜᴄᴋ = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/oShit`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
@@ -68,14 +68,14 @@ or reply *${ᴋᴇɪ}nekobin* to any text.`,
       //   }
       // // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
       if (𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
-        const filename = ꜱᴇɴᴅᴇʀɪᴅ + "_" + Date.now();
+        const filename = ꜱᴇɴᴅᴇʀɪᴅ + `_` + Date.now();
         await fs.writeFileSync(
           `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${filename}`,
           𝓜𝖎𝖟𝖚ӄ𝖎.replyMessage
         );
-        var Mdata = await fs.readFileSync(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/${filename}`, "utf8");
+        var Mdata = await fs.readFileSync(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/${filename}`, `utf8`);
         const FILE = Mdata.toString();
-        const FINAL = FILE.replace("/nekobin", "");
+        const FINAL = FILE.replace(`/nekobin`, ``);
         console.log(FINAL);
         await MizuNeko.nekobin(FINAL).then(async (data) => {
           console.log(data);
