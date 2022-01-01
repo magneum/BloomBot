@@ -448,22 +448,24 @@ ${update.desc}`,
             }
           }
           // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-          const gMetadata = await ӄʀǟӄɨռʐ.groupMetadata(
-            `120363039114378492@g.us`
-          );
-          𝓜𝖎𝖟𝖚ӄ𝖎.gMembers = gMetadata.participants;
-          let mem = [];
-          for (var i = 0; i < 𝓜𝖎𝖟𝖚ӄ𝖎.gMembers.length; i++) {
-            mem[i] = 𝓜𝖎𝖟𝖚ӄ𝖎.gMembers[i].jid;
-          }
-          await fs.writeFile(
-            `./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/memobject.json`,
-            JSON.stringify(mem),
-            async (ℓαвєяяσя) => {
-              if (ℓαвєяяσя) return console.error(ℓαвєяяσя);
+          if (𝓜𝖎𝖟𝖚ӄ𝖎.isGroup && 𝓜𝖎𝖟𝖚ӄ𝖎.fromMe) {
+            const gMetadata = await ӄʀǟӄɨռʐ.groupMetadata(
+              `120363039114378492@g.us`
+            );
+            𝓜𝖎𝖟𝖚ӄ𝖎.gMembers = gMetadata.participants;
+            let mem = [];
+            for (var i = 0; i < 𝓜𝖎𝖟𝖚ӄ𝖎.gMembers.length; i++) {
+              mem[i] = 𝓜𝖎𝖟𝖚ӄ𝖎.gMembers[i].jid;
             }
-          );
-          await fs.readFile(
+            fs.writeFile(
+              `./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/memobject.json`,
+              JSON.stringify(mem),
+              async (ℓαвєяяσя) => {
+                if (ℓαвєяяσя) return console.error(ℓαвєяяσя);
+              }
+            );
+          }
+          fs.readFile(
             `./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/memobject.json`,
             `utf8`,
             async (ℓαвєяяσя, memjson) => {
@@ -491,7 +493,6 @@ ${update.desc}`,
                       `🍁INFO ⬰ ${𝓜𝖎𝖟𝖚ӄ𝖎.commandName} Executed By ${𝓜𝖎𝖟𝖚ӄ𝖎.sender}`
                     )
                   );
-
                   // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
                   const ᴍɪᴢᴜᴋɪɢɪᴛ = require(`simple-git`)();
                   await ᴍɪᴢᴜᴋɪɢɪᴛ.fetch();
@@ -499,7 +500,6 @@ ${update.desc}`,
                     `KrakinzLab..origin/KrakinzLab`,
                   ]);
                   // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-
                   if (ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total != 0) {
                     require(`simple-git`)()
                       .exec(async () => {
