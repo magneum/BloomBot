@@ -100,28 +100,32 @@ or (no-text): ${ᴋᴇɪ}tagall`,
         console.log(ℓαвєяяσя);
       }
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
+      var groupData = await ӄʀǟӄɨռʐ.groupMetadata(chat.key.remoteJid);
+      try {
+        𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄʀǟӄɨռʐ.getProfilePicture(𝓜𝖎𝖟𝖚ӄ𝖎.chatId);
+      } catch {
+        𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = `https://i.postimg.cc/3wfrmmpB/NoPP.jpg`;
+      }
+      console.log(FinalName + `\n` + groupData.desc + `\n` + 𝕻𝕻𝖑𝖊𝖙𝖊𝖗);
+      // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
       let members = [];
       for (var i = 0; i < 𝓜𝖎𝖟𝖚ӄ𝖎.groupMembers.length; i++) {
         members[i] = 𝓜𝖎𝖟𝖚ӄ𝖎.groupMembers[i].jid;
       }
       if (𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
         await ӄʀǟӄɨռʐ
-          .sendMessage(
-            𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            fs.readFileSync(`./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`),
-            MessageType.video,
-            {
-              mimetype: `video/gif`,
-              quoted: chat,
-              contextInfo: {
-                stanzaId: 𝓜𝖎𝖟𝖚ӄ𝖎.replyMessageId,
-                participant: 𝓜𝖎𝖟𝖚ӄ𝖎.replyParticipant,
-                quotedMessage: {
-                  conversation: 𝓜𝖎𝖟𝖚ӄ𝖎.replyMessage,
-                },
-                mentionedJid: members,
+          .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 }, MessageType.image, {
+            mimetype: Mimetype.png,
+            quoted: chat,
+            contextInfo: {
+              stanzaId: 𝓜𝖎𝖟𝖚ӄ𝖎.replyMessageId,
+              participant: 𝓜𝖎𝖟𝖚ӄ𝖎.replyParticipant,
+              quotedMessage: {
+                conversation: 𝓜𝖎𝖟𝖚ӄ𝖎.replyMessage,
               },
-              caption: `(c)𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 
+              mentionedJid: members,
+            },
+            caption: `(c)爪ïʐʊӄï🍁乃օȶ 
 
 ┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
 │
@@ -131,25 +135,20 @@ or (no-text): ${ᴋᴇɪ}tagall`,
 
 *•──[ Message From Admin  ]──•*
 _⚠️Attention Everyone Here In the Group!_`,
-            }
-          )
+          })
           .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
         return;
       }
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
       if (Needs.length) {
         return await ӄʀǟӄɨռʐ
-          .sendMessage(
-            𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            fs.readFileSync(`./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`),
-            MessageType.video,
-            {
-              mimetype: `video/gif`,
-              quoted: chat,
-              contextInfo: {
-                mentionedJid: members,
-              },
-              caption: `(c)𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 
+          .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 }, MessageType.image, {
+            mimetype: Mimetype.png,
+            quoted: chat,
+            contextInfo: {
+              mentionedJid: members,
+            },
+            caption: `(c)爪ïʐʊӄï🍁乃օȶ 
 
 ┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
 │
@@ -159,22 +158,17 @@ _⚠️Attention Everyone Here In the Group!_`,
 
 *•──[ Message From Admin  ]──•*
 ${Needs.join(` `)}`,
-            }
-          )
+          })
           .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
       } else {
         return await ӄʀǟӄɨռʐ
-          .sendMessage(
-            𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            fs.readFileSync(`./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`),
-            MessageType.video,
-            {
-              mimetype: `video/gif`,
-              quoted: chat,
-              contextInfo: {
-                mentionedJid: members,
-              },
-              caption: `(c)𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 
+          .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 }, MessageType.image, {
+            mimetype: Mimetype.png,
+            quoted: chat,
+            contextInfo: {
+              mentionedJid: members,
+            },
+            caption: `(c)爪ïʐʊӄï🍁乃օȶ 
 
 ┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
 │
@@ -184,8 +178,7 @@ ${Needs.join(` `)}`,
 
 *•──[ Message From Admin  ]──•*
 _⚠️Attention Everyone Here In the Group!_`,
-            }
-          )
+          })
           .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
       }
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
