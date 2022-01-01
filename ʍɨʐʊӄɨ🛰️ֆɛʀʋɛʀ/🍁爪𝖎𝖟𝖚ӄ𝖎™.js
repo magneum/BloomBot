@@ -410,11 +410,11 @@ ${update.desc}`,
         if (isjsoncool) {
           return await ӄʀǟӄɨռʐ.sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived}, 
-_💤Wait For 6sec!_`,
+            `*👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived}, 💤Wait For 6sec!*`,
             MessageType.text,
             {
               quoted: chat,
+              contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
             }
           );
         }
@@ -481,7 +481,11 @@ _💤Wait For 6sec!_`,
           if (Verified[ꜱᴇɴᴅᴇʀeceived + `@c.us`] == 408) {
             return await ӄʀǟӄɨռʐ.sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              `𝐘𝐨𝐮 𝐀𝐫𝐞 𝐍𝐨𝐭 𝐀 𝐌𝐞𝐦𝐛𝐞𝐫 𝐎𝐟 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭 𝐆𝐫𝐨𝐮𝐩!\n𝐅𝐢𝐫𝐬𝐭 𝐉𝐨𝐢𝐧 𝐭𝐡𝐞 𝐂𝐨𝐦𝐦𝐮𝐧𝐢𝐭𝐲.`,
+              `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived}, 
+
+⬡ *You Are Not A Member Of Mizuki GC!*
+⬡ _First Join The Community!_.
+🐙𝐆𝐑𝐎𝐔𝐏: ${_𝔏𝔞𝔟_.HASH}`,
               MessageType.text,
               {
                 quoted: chat,
@@ -490,7 +494,11 @@ _💤Wait For 6sec!_`,
           } else if (Verified[ꜱᴇɴᴅᴇʀeceived + `@c.us`] == 403) {
             return await ӄʀǟӄɨռʐ.sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              `𝐘𝐨𝐮 𝐀𝐫𝐞 𝐍𝐨𝐭 𝐀 𝐌𝐞𝐦𝐛𝐞𝐫 𝐎𝐟 𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭 𝐆𝐫𝐨𝐮𝐩!\n𝐅𝐢𝐫𝐬𝐭 𝐉𝐨𝐢𝐧 𝐭𝐡𝐞 𝐂𝐨𝐦𝐦𝐮𝐧𝐢𝐭𝐲.`,
+              `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived}, 
+
+⬡ *You Are Not A Member Of Mizuki GC!*
+⬡ _First Join The Community!_.
+🐙𝐆𝐑𝐎𝐔𝐏: ${_𝔏𝔞𝔟_.HASH}`,
               MessageType.text,
               {
                 quoted: chat,

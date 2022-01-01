@@ -30,7 +30,6 @@ module.exports = {
 ┌──────────────◆➤ 𝙂𝙧𝙤𝙪𝙥𝙨
 │🔰• ${ᴋᴇɪ}promote: _promote member to admin_
 │🔰• ${ᴋᴇɪ}demote: _demote member from admin_
-│🔰• ${ᴋᴇɪ}spam: _spam messsage in group/private_
 │🔰• ${ᴋᴇɪ}invite: _get group invite link_
 │🔰• ${ᴋᴇɪ}admins: _get all admins of a group_
 │🔰• ${ᴋᴇɪ}disappear: _toggle disappear message in group_
