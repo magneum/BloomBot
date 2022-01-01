@@ -404,25 +404,6 @@ ${update.desc}`,
         if (CheckBans === true && !𝓜𝖎𝖟𝖚ӄ𝖎.fromMe) {
           return console.log(Kolor.blue(`🍁𝗜𝗻𝗳𝗼 ⬰ Dumb Group!`));
         } else {
-          const jsoncool = JSON.parse(
-            fs.readFileSync(`./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`)
-          );
-          const isjsoncool = 𝓜𝖎𝖟𝖚ӄ𝖎.isGroup
-            ? jsoncool.includes(𝓜𝖎𝖟𝖚ӄ𝖎.sender + 𝓜𝖎𝖟𝖚ӄ𝖎.chatId)
-            : false;
-          if (isjsoncool) {
-            return await ӄʀǟӄɨռʐ.sendMessage(
-              𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived},\n*🚏CoolDown:* _Wait For 10sec!_`,
-              MessageType.text,
-              {
-                quoted: chat,
-                contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
-              }
-            );
-          }
-
-          // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
           if (
             𝓜𝖎𝖟𝖚ӄ𝖎.isGroup &&
             !𝓜𝖎𝖟𝖚ӄ𝖎.fromMe &&
@@ -488,6 +469,24 @@ ${update.desc}`,
             async (ℓαвєяяσя, memjson) => {
               if (ℓαвєяяσя) return console.log(`File read failed:`, ℓαвєяяσя);
               if (memjson.includes(𝓜𝖎𝖟𝖚ӄ𝖎.sender)) {
+                const jsoncool = JSON.parse(
+                  fs.readFileSync(`./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`)
+                );
+                const isjsoncool = jsoncool.includes(
+                  𝓜𝖎𝖟𝖚ӄ𝖎.sender + 𝓜𝖎𝖟𝖚ӄ𝖎.chatId
+                );
+                if (isjsoncool) {
+                  return await ӄʀǟӄɨռʐ.sendMessage(
+                    𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                    `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived},
+*🚏CoolDown:* _Wait For 10sec!_`,
+                    MessageType.text,
+                    {
+                      quoted: chat,
+                      contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
+                    }
+                  );
+                }
                 console.log(
                   Kolor.yellow(
                     `🍁INFO ⬰ ${𝓜𝖎𝖟𝖚ӄ𝖎.commandName} Executed By ${𝓜𝖎𝖟𝖚ӄ𝖎.sender}`
