@@ -47,7 +47,6 @@ module.exports = {
 ┌──────────────▶
 │🔑 𝐏𝐫𝐞𝐟𝐢𝐱: *${ᴋᴇɪ}*
 │👑 𝐎𝐰𝐧𝐞𝐫: _🐙KrakinzKon_
-│🍁 𝐀𝐝𝐝 𝐌𝐢𝐳𝐮𝐤𝐢: _${ᴋᴇɪ}request_
 │☣️ 𝐋𝐢𝐜𝐞𝐧𝐬𝐞𝐝: Apache License Version 2.0
 │🐙𝐆𝐑𝐎𝐔𝐏: ${_𝔏𝔞𝔟_.HASH}
 │🦞𝐆𝐢𝐭𝐡𝐮𝐛: _${ᴋᴇɪ}repo_
