@@ -46,7 +46,7 @@ try {
               ssl: { require: true, rejectUnauthorized: false },
             },
           }),
-    MEE: `https://i.postimg.cc/vB077MSQ/image.png`,
+    MEE: `https://i.postimg.cc/KcsXDdZN/image.png`,
     PRIVACY: process.env.PRIVACY === undefined ? `public` : process.env.PRIVACY,
   };
   module.exports = env;
