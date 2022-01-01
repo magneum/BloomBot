@@ -483,8 +483,7 @@ ${update.desc}`,
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived}, 
 
-⬡ *You Are Not A Member Of Mizuki GC!*
-⬡ _First Join The Community!_.
+⬡ _First ioin the *Mizuki GC* so that my Devs can verify your account_
 🐙𝐆𝐑𝐎𝐔𝐏: ${_𝔏𝔞𝔟_.HASH}`,
               MessageType.text,
               {
@@ -496,8 +495,7 @@ ${update.desc}`,
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived}, 
 
-⬡ *You Are Not A Member Of Mizuki GC!*
-⬡ _First Join The Community!_.
+⬡ _First ioin the *Mizuki GC* so that my Devs can verify your account_
 🐙𝐆𝐑𝐎𝐔𝐏: ${_𝔏𝔞𝔟_.HASH}`,
               MessageType.text,
               {
