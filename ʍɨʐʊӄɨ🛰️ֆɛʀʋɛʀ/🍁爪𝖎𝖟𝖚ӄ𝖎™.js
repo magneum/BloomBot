@@ -469,7 +469,7 @@ ${update.desc}`,
             `./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/memobject.json`,
             `utf8`,
             async (ℓαвєяяσя, memjson) => {
-              if (ℓαвєяяσя) return console.log(`File read failed:`, ℓαвєяяσя);
+              if (ℓαвєяяσя) console.log(`File read failed:`, ℓαвєяяσя);
               if (memjson.includes(𝓜𝖎𝖟𝖚ӄ𝖎.sender)) {
                 const jsoncool = JSON.parse(
                   fs.readFileSync(`./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`)
