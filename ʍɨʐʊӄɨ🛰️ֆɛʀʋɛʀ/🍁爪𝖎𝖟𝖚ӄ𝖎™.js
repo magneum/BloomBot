@@ -562,7 +562,7 @@ ${update.desc}`,
                   𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
                   `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived}, 
 
-⬡ _First ioin the Mizuki GC so that my Devs can verify your account_
+⬡ *First ioin the Mizuki GC so that my Devs can verify your account*
 🐙𝐆𝐑𝐎𝐔𝐏: ${_𝔏𝔞𝔟_.HASH}`,
                   MessageType.text,
                   {
