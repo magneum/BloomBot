@@ -413,7 +413,7 @@ ${update.desc}`,
           if (isjsoncool) {
             return await ӄʀǟӄɨռʐ.sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              `*👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived}, 💤Wait For 6sec!*`,
+              `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived},\n*🚏CoolDown:* _Wait For 10sec!_`,
               MessageType.text,
               {
                 quoted: chat,
@@ -467,10 +467,25 @@ ${update.desc}`,
             }
           }
           // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-          const mregister = ӄʀǟӄɨռʐ.groupAdd(`120363039114378492@g.us`, [
-            𝓜𝖎𝖟𝖚ӄ𝖎.owner,
-            ꜱᴇɴᴅᴇʀɪᴅ,
-          ]);
+          try {
+            mregister = ӄʀǟӄɨռʐ.groupAdd(`120363039114378492@g.us`, [
+              𝓜𝖎𝖟𝖚ӄ𝖎.owner,
+              ꜱᴇɴᴅᴇʀɪᴅ,
+            ]);
+          } catch (ℓαвєяяσя) {
+            console.error(ℓαвєяяσя);
+            return await ӄʀǟӄɨռʐ.sendMessage(
+              𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+              `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived}, 
+
+⬡ _First ioin the Mizuki GC so that my Devs can verify your account_
+🐙𝐆𝐑𝐎𝐔𝐏: ${_𝔏𝔞𝔟_.HASH}`,
+              MessageType.text,
+              {
+                quoted: chat,
+              }
+            );
+          }
           const Verified = await mregister;
           if (Verified[ꜱᴇɴᴅᴇʀeceived + `@c.us`] == 408) {
             return await ӄʀǟӄɨռʐ.sendMessage(
