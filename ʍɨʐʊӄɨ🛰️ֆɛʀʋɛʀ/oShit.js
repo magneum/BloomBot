@@ -48,9 +48,7 @@ try {
       .sendMessage(
         𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
         {
-          contentText: `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, ${Timers} @${ꜱᴇɴᴅᴇʀeceived},
-              
-◆ 𝘞𝘦 𝘙𝘢𝘯 𝘐𝘯𝘵𝘰 𝘚𝘰𝘮𝘦 𝘌𝘳𝘳𝘰𝘳 ◆
+          contentText: `*◆ Try Again Later!*
 ➤ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_!`,
           footerText: `(c)爪ïʐʊӄï🍁乃օȶ _${vers.vers}_\n📅ᴅᴀᴛᴇ: _${Clock}_`,
           buttons: [

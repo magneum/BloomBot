@@ -89,7 +89,7 @@ module.exports = {
 _If Found the report was just for fun then you will be banned by the bot!_
 
 
-┌────⤞ 𝐒𝐮𝐩𝐩𝐨𝐫𝐭
+┌────▶ 𝐒𝐮𝐩𝐩𝐨𝐫𝐭
 *🔥 ɢʀᴏᴜᴘ:* ${_𝔏𝔞𝔟_.HASH}`,
             footerText: `(c)爪ïʐʊӄï🍁乃օȶ _${version}_\n📅ᴅᴀᴛᴇ: _${Clock}_`,
             buttons: [
