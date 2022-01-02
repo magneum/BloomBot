@@ -8,11 +8,13 @@ const ꜰᴜᴄᴋ = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/oShit`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 const fs = require(`fs`);
+var path = require(`path`);
+var scriptName = path.basename(__filename);
+var newScpt = scriptName.slice(0, -3).toLowerCase();
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
 module.exports = {
-  name: `setwelcome`,
-  𝓜𝓮𝓮6ʍօʀɛ: ` 
-*${ᴋᴇɪ}setwelcome* (message)/(off)/(delete)
+  name: newScpt,
+  𝓜𝓮𝓮6ʍօʀɛ: `*${ᴋᴇɪ}setwelcome* (message)/(off)/(delete)
 🍁Do note, the setwelcome option is still enabled after you use the delete option.`,
   async handle(
     ӄʀǟӄɨռʐ,

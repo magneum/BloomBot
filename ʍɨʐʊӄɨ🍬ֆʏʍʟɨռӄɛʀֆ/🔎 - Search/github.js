@@ -9,9 +9,12 @@ const got = require(`got`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 const fs = require(`fs`);
+var path = require(`path`);
+var scriptName = path.basename(__filename);
+var newScpt = scriptName.slice(0, -3).toLowerCase();
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
 module.exports = {
-  name: `github`,
+  name: newScpt,
   𝓜𝓮𝓮6ʍօʀɛ: `Get the github profile by command  *${ᴋᴇɪ}github <user>*  
 or replying  *${ᴋᴇɪ}github*`,
   async handle(

@@ -11,9 +11,12 @@ var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 const vers = require(`../../package.json`);
 const util = require(`util`);
 const fs = require(`fs`);
+var path = require(`path`);
+var scriptName = path.basename(__filename);
+var newScpt = scriptName.slice(0, -3).toLowerCase();
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
 module.exports = {
-  name: `img2url`,
+  name: newScpt,
   𝓜𝓮𝓮6ʍօʀɛ: `*${ᴋᴇɪ}img2url* (reply image)`,
   async handle(
     ӄʀǟӄɨռʐ,

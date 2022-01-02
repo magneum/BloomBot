@@ -8,10 +8,12 @@ const _𝔏𝔞𝔟_ = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/_𝔏𝔞�
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 const fs = require(`fs`);
-const vers = require(`../../package.json`);
+var path = require(`path`);
+var scriptName = path.basename(__filename);
+var newScpt = scriptName.slice(0, -3).toLowerCase();
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
 module.exports = {
-  name: `ownermenu`,
+  name: newScpt,
   async handle(
     ӄʀǟӄɨռʐ,
     chat,
@@ -36,7 +38,7 @@ module.exports = {
       var MediaUrl = `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎.png`;
       var MainText = `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived}, ${Timers}
 
-┌──────────────▶ 𝙊𝙬𝙣𝙚𝙧
+┌──────────────▶ 𝐊𝐢𝐧𝐠/𝐎𝐰𝐧𝐞𝐫
 │🐙• ${ᴋᴇɪ}ban: _ban bot in group/user_
 │🐙• ${ᴋᴇɪ}unban: _unban bot in group/user_
 │🐙• ${ᴋᴇɪ}reboot: _reboot mizuki server_
@@ -47,15 +49,6 @@ module.exports = {
 │🐙• ${ᴋᴇɪ}help 
 │🐙• ${ᴋᴇɪ}list
 │🐙• ${ᴋᴇɪ}mizuki
-└───────〇
-
-┌──────────────▶
-│🔑 𝐏𝐫𝐞𝐟𝐢𝐱: *${ᴋᴇɪ}*
-│👑 𝐎𝐰𝐧𝐞𝐫: _🐙KrakinzKon_
-│☣️ 𝐋𝐢𝐜𝐞𝐧𝐬𝐞𝐝: Apache License Version 2.0
-│🐙𝐆𝐑𝐎𝐔𝐏: ${_𝔏𝔞𝔟_.HASH}
-│🦞𝐆𝐢𝐭𝐡𝐮𝐛: _${ᴋᴇɪ}repo_
-│🍕 𝘾𝙤𝙢𝙞𝙣𝙜 𝙎𝙤𝙤𝙣! _many many more_
 └───────〇`;
       return Mizuki_Buttons.MIB(
         ӄʀǟӄɨռʐ,

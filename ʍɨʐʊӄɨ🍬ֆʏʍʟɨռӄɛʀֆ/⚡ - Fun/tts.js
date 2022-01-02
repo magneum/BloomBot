@@ -10,9 +10,12 @@ var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 const vers = require(`../../package.json`);
 const fs = require(`fs`);
+var path = require(`path`);
+var scriptName = path.basename(__filename);
+var newScpt = scriptName.slice(0, -3).toLowerCase();
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
 module.exports = {
-  name: `tts`,
+  name: newScpt,
   𝓜𝓮𝓮6ʍօʀɛ: `Use  *${ᴋᴇɪ}tts <text>*  or  *${ᴋᴇɪ}tts <text> = <language_code>*  to convert text to speech.
 You can also reply to a text message with syntax  *${ᴋᴇɪ}tr <language>*  to translate text.`,
   async handle(

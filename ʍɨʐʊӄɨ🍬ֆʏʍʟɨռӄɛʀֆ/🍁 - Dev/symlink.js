@@ -12,9 +12,12 @@ const vers = require(`../../package.json`);
 const os = require(`os`);
 const fs = require(`fs`);
 const { formatp, runtime } = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/mizu`);
+var path = require(`path`);
+var scriptName = path.basename(__filename);
+var newScpt = scriptName.slice(0, -3).toLowerCase();
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
 module.exports = {
-  name: `symlink`,
+  name: newScpt,
   async handle(
     ӄʀǟӄɨռʐ,
     chat,

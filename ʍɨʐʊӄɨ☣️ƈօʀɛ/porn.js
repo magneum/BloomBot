@@ -1,16 +1,16 @@
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-const Mizuki_Buttons = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Mizuki_Buttons`);
-const Mizuki_Static = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Mizuki_Static`);
+const Mizuki_Buttons = require(`../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Mizuki_Buttons`);
+const Mizuki_Static = require(`../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Mizuki_Static`);
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
-const cleanRF = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/cleanRF`);
-const _𝔏𝔞𝔟_ = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/_𝔏𝔞𝔟_`);
-const ꜰᴜᴄᴋ = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/oShit`);
+const cleanRF = require(`../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/cleanRF`);
+const _𝔏𝔞𝔟_ = require(`../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/_𝔏𝔞𝔟_`);
+const ꜰᴜᴄᴋ = require(`../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/oShit`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 const ffmpeg = require(`fluent-ffmpeg`);
 const Downloader = require(`nodejs-file-downloader`);
 const fs = require(`fs`);
-const vers = require(`../../package.json`);
+const vers = require(`../package.json`);
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
 module.exports = {
   name: `porn`,
@@ -47,9 +47,7 @@ module.exports = {
         }
         // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
       } else {
-        // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
         try {
-          
           const jsoncool = JSON.parse(
             fs.readFileSync(`./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`)
           );
@@ -124,7 +122,7 @@ _Server Didn't Send Any Response_`
                   mimetype: `video/gif`,
                   caption: `(c)𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 
 
-┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
+┌────◇🥭
 │
 │🍪 𝐅𝐫𝐨𝐦: @${ꜱᴇɴᴅᴇʀeceived} (admin)
 🔗𝐋𝐢𝐧𝐤: ${link}`,
@@ -153,7 +151,7 @@ _Server Didn't Send Any Response_`
                   mimetype: `video/gif`,
                   caption: `(c)𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 
 
-┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
+┌────◇🥭
 │
 │🍪 𝐅𝐫𝐨𝐦: @${ꜱᴇɴᴅᴇʀeceived}
 🔗𝐋𝐢𝐧𝐤: ${link}`,

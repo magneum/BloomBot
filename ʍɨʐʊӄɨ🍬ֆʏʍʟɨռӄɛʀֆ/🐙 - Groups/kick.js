@@ -8,9 +8,12 @@ var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 const anime = require(`anime-actions`);
 const fs = require(`fs`);
+var path = require(`path`);
+var scriptName = path.basename(__filename);
+var newScpt = scriptName.slice(0, -3).toLowerCase();
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
 module.exports = {
-  name: `kick`,
+  name: newScpt,
   𝓜𝓮𝓮6ʍօʀɛ: `${ᴋᴇɪ}kick (tag) or (reply to person's text)`,
   async handle(
     ӄʀǟӄɨռʐ,

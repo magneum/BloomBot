@@ -13,9 +13,12 @@ const yts = require(`yt-search`);
 const axios = require(`axios`);
 const hx = require(`hxz-api`);
 const fs = require(`fs`);
+var path = require(`path`);
+var scriptName = path.basename(__filename);
+var newScpt = scriptName.slice(0, -3).toLowerCase();
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
 module.exports = {
-  name: `tiktokaudio`,
+  name: newScpt,
   𝓜𝓮𝓮6ʍօʀɛ: `*${ᴋᴇɪ}tiktokaudio* (tiktok audio link)`,
   async handle(
     ӄʀǟӄɨռʐ,

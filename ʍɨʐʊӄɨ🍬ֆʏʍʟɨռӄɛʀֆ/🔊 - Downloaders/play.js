@@ -12,9 +12,12 @@ const request = require(`request`);
 const yts = require(`yt-search`);
 const axios = require(`axios`);
 const fs = require(`fs`);
+var path = require(`path`);
+var scriptName = path.basename(__filename);
+var newScpt = scriptName.slice(0, -3).toLowerCase();
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
 module.exports = {
-  name: `play`,
+  name: newScpt,
   𝓜𝓮𝓮6ʍօʀɛ: `*${ᴋᴇɪ}play* <youtube song name>
 
 🔸𝐔𝐬𝐢𝐧𝐠 𝐋𝐢𝐧𝐤? _${ᴋᴇɪ}ytaudio_
