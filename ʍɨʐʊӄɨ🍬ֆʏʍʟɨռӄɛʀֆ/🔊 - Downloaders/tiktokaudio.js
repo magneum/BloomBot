@@ -11,9 +11,8 @@ var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 const request = require(`request`);
 const yts = require(`yt-search`);
 const axios = require(`axios`);
-const vers = require(`../../package.json`);
-const fs = require(`fs`);
 const hx = require(`hxz-api`);
+const fs = require(`fs`);
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
 module.exports = {
   name: `tiktokaudio`,
