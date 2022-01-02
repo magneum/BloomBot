@@ -104,26 +104,7 @@ module.exports = {
           });
         };
         await GroupVideos.forEach(async function (youfound) {
-          if (!youfound.url.startsWith(`https:`)) {
-            try {
-              return Mizuki_Buttons.MTB(
-                ӄʀǟӄɨռʐ,
-                chat,
-                𝓜𝖎𝖟𝖚ӄ𝖎,
-                `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, ${Timers} @${ꜱᴇɴᴅᴇʀeceived}, _Nothing Found For *${Needs.join(
-                  ` `
-                )}*_
-
-┌────▶𝙏𝙧𝙮 𝙊𝙩𝙝𝙚𝙧 𝘾𝙤𝙢𝙢𝙖𝙣𝙙𝙨:
-│${ᴋᴇɪ}ytsearch (song name)
-│${ᴋᴇɪ}ytaudio (song link)
-│${ᴋᴇɪ}ytvideo (video link)
-└───────〇`
-              );
-            } catch (ℓαвєяяσя) {
-              ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
-            }
-          } else if (youfound.seconds > `1800`) {
+          if (youfound.seconds > `1800`) {
             console.log(`
 ${youfound.videoId}
 ${youfound.url}
@@ -180,23 +161,22 @@ ${youfound.thumbnail}`);
               )
               .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
           } else {
-            await yta(youfound.url)
-              .then(async (gotResp) => {
-                console.log(youfound.url);
-                const { dl_link, thumb, title, filesizeF, filesize } = gotResp;
-                const media = await ӄʀǟӄɨռʐ.prepareMessage(
+            await yta(youfound.url).then(async (gotResp) => {
+              console.log(youfound.url);
+              const { dl_link, thumb, title, filesizeF, filesize } = gotResp;
+              const media = await ӄʀǟӄɨռʐ.prepareMessage(
+                𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                { url: youfound.thumbnail },
+                MessageType.image,
+                {
+                  mimetype: Mimetype.jpeg,
+                }
+              );
+              await ӄʀǟӄɨռʐ
+                .sendMessage(
                   𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                  { url: youfound.thumbnail },
-                  MessageType.image,
                   {
-                    mimetype: Mimetype.jpeg,
-                  }
-                );
-                await ӄʀǟӄɨռʐ
-                  .sendMessage(
-                    𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                    {
-                      contentText: `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, ${Timers} @${ꜱᴇɴᴅᴇʀeceived},    
+                    contentText: `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, ${Timers} @${ꜱᴇɴᴅᴇʀeceived},    
 🔊𝗦𝗼𝗻𝗴 𝗣𝗹𝗲𝗮𝘀𝗲 𝘄𝗮𝗶𝘁 𝗳𝗼𝗿 𝘁𝗵𝗲 𝗱𝗲𝗹𝗶𝘃𝗲𝗿𝘆 𝗼𝗳 𝗦𝗼𝗻𝗴!
 
 ┌────◇🥭
@@ -208,26 +188,27 @@ ${youfound.thumbnail}`);
 │📜𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧⤞ ${youfound.description}
 │🔗𝐋𝐢𝐧𝐤⤞ ${youfound.url}
 └───────〇`,
-                      footerText: `(c)爪ïʐʊӄï🍁乃օȶ \n📅ᴅᴀᴛᴇ: _${Clock}_`,
-                      buttons: [
-                        {
-                          buttonId: `${ᴋᴇɪ}happy`,
-                          buttonText: { displayText: `${ᴋᴇɪ}happy` },
-                          type: 1,
-                        },
-                      ],
-                      headerType: 4,
-                      imageMessage: media.message.imageMessage,
-                    },
-                    MessageType.buttonsMessage,
-                    {
-                      quoted: chat,
-                      contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
-                    }
-                  )
-                  .catch((ℓαвєяяσя) =>
-                    ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
-                  );
+                    footerText: `(c)爪ïʐʊӄï🍁乃օȶ \n📅ᴅᴀᴛᴇ: _${Clock}_`,
+                    buttons: [
+                      {
+                        buttonId: `${ᴋᴇɪ}happy`,
+                        buttonText: { displayText: `${ᴋᴇɪ}happy` },
+                        type: 1,
+                      },
+                    ],
+                    headerType: 4,
+                    imageMessage: media.message.imageMessage,
+                  },
+                  MessageType.buttonsMessage,
+                  {
+                    quoted: chat,
+                    contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
+                  }
+                )
+                .catch((ℓαвєяяσя) =>
+                  ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
+                );
+              try {
                 axios
                   .get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
                   .then(async (a) => {
@@ -248,9 +229,10 @@ ${youfound.thumbnail}`);
                         );
                     });
                   });
-              })
-              .catch((ℓαвєяяσя) =>
-                ꜰᴜᴄᴋ.catch(
+              } catch (ℓαвєяяσя) {
+                console.log(ℓαвєяяσя);
+                ӄʀǟӄɨռʐ.sendMessage(
+                  𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
                   `*No Song Found... Try Different Search Terms!*
 
 ┌────▶𝙏𝙧𝙮 𝙊𝙩𝙝𝙚𝙧 𝘾𝙤𝙢𝙢𝙖𝙣𝙙𝙨:
@@ -258,11 +240,13 @@ ${youfound.thumbnail}`);
 │${ᴋᴇɪ}ytaudio (song link)
 │${ᴋᴇɪ}ytvideo (video link)
 └───────〇`,
-                  ӄʀǟӄɨռʐ,
-                  𝓜𝖎𝖟𝖚ӄ𝖎,
-                  chat
-                )
-              );
+                  MessageType.text,
+                  {
+                    quoted: chat,
+                  }
+                );
+              }
+            });
           }
         });
       }

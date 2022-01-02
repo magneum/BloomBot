@@ -76,14 +76,14 @@ module.exports = {
             fs.readFileSync(`./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`)
           );
           await jsoncool.push(𝓜𝖎𝖟𝖚ӄ𝖎.sender + 𝓜𝖎𝖟𝖚ӄ𝖎.chatId);
-          await fs.writeFileSync(
+          fs.writeFileSync(
             `./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`,
             JSON.stringify(jsoncool)
           );
-          await setTimeout(async (error) => {
+          setTimeout(async (error) => {
             if (error) console.log(error);
             await jsoncool.splice(𝓜𝖎𝖟𝖚ӄ𝖎.sender + 𝓜𝖎𝖟𝖚ӄ𝖎.chatId);
-            await fs.writeFileSync(
+            fs.writeFileSync(
               `./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`,
               JSON.stringify(jsoncool)
             );
@@ -122,25 +122,11 @@ module.exports = {
                 mimetype: mime,
                 caption: text,
               })
-              .then(cleanRF.cleanRF(filename))
-              .catch((ℓαвєяяσя) =>
-                ꜰᴜᴄᴋ.catch(
-                  `*No Song Found... Try Different Search Terms!*
-
-┌────▶𝙏𝙧𝙮 𝙊𝙩𝙝𝙚𝙧 𝘾𝙤𝙢𝙢𝙖𝙣𝙙𝙨:
-│${ᴋᴇɪ}ytsearch (song name)
-│${ᴋᴇɪ}ytaudio (song link)
-│${ᴋᴇɪ}ytvideo (video link)
-└───────〇`,
-                  ӄʀǟӄɨռʐ,
-                  𝓜𝖎𝖟𝖚ӄ𝖎,
-                  chat
-                )
-              );
+              .then(cleanRF.cleanRF(filename));
           });
         };
         // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-        await GroupVideos.forEach(async function (youfound) {
+        GroupVideos.forEach(async function (youfound) {
           if (youfound.seconds > `1800`) {
             console.log(`
 ${youfound.videoId}
@@ -196,25 +182,13 @@ ${youfound.thumbnail}`);
               )
               .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
           } else {
-            await ytv(youfound.url)
-              .then(async (gotResp) => {
-                console.log(youfound.url);
-                const { dl_link, thumb, title, filesizeF, filesize } = gotResp;
-                console.log(
-                  dl_link +
-                    `\n` +
-                    thumb +
-                    `\n` +
-                    title +
-                    `\n` +
-                    filesizeF +
-                    `\n` +
-                    filesize
-                );
+            await ytv(youfound.url).then(async (gotResp) => {
+              const { dl_link, thumb, title, filesizeF, filesize } = gotResp;
+              try {
                 axios
                   .get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
                   .then(async (a) => {
-                    const captionsYtmp4 = `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, ${Timers} @${ꜱᴇɴᴅᴇʀeceived},    
+                    const captionsYtmp4 = `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, ${Timers} @${ꜱᴇɴᴅᴇʀeceived},
 🎥𝐕𝐢𝐝𝐞𝐨 𝗣𝗹𝗲𝗮𝘀𝗲 𝘄𝗮𝗶𝘁 𝗳𝗼𝗿 𝘁𝗵𝗲 𝗱𝗲𝗹𝗶𝘃𝗲𝗿𝘆 𝗼𝗳 𝐕𝐢𝐝𝐞𝐨!
 
 ┌────◇🥭
@@ -229,21 +203,25 @@ ${youfound.thumbnail}`);
                     DVideo(thumb, captionsYtmp4);
                     DVideo(dl_link);
                   });
-              })
-              .catch((ℓαвєяяσя) =>
-                ꜰᴜᴄᴋ.catch(
+              } catch (ℓαвєяяσя) {
+                console.log(ℓαвєяяσя);
+                ӄʀǟӄɨռʐ.sendMessage(
+                  𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
                   `*No Song Found... Try Different Search Terms!*
 
 ┌────▶𝙏𝙧𝙮 𝙊𝙩𝙝𝙚𝙧 𝘾𝙤𝙢𝙢𝙖𝙣𝙙𝙨:
+│
 │${ᴋᴇɪ}ytsearch (song name)
 │${ᴋᴇɪ}ytaudio (song link)
 │${ᴋᴇɪ}ytvideo (video link)
 └───────〇`,
-                  ӄʀǟӄɨռʐ,
-                  𝓜𝖎𝖟𝖚ӄ𝖎,
-                  chat
-                )
-              );
+                  MessageType.text,
+                  {
+                    quoted: chat,
+                  }
+                );
+              }
+            });
           }
         });
       }

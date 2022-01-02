@@ -303,6 +303,7 @@ ${update.desc}`,
           MessageType.text
         );
         const MemNum = update.participants[0];
+        // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
         const gMetadata = await ӄʀǟӄɨռʐ.groupMetadata(
           `120363039114378492@g.us`
         );
