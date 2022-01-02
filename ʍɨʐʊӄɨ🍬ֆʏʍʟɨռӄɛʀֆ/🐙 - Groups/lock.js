@@ -174,10 +174,10 @@ module.exports = {
         type = `seconds`;
       } else if (Needs[1] === `m`) {
         duration = Needs[0] * 60 * 1000;
-        type = `seconds`;
+        type = `minutes`;
       } else if (Needs[1] === `h`) {
         duration = Needs[0] * 60 * 60 * 1000;
-        type = `seconds`;
+        type = `hours`;
       } else {
         duration = Needs[0] * 60 * 1000;
       }
