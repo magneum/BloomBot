@@ -131,34 +131,11 @@ module.exports = {
         // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
         GroupVideos.forEach(async function (youfound) {
           if (youfound.seconds > `1800`) {
-            console.log(`
-${youfound.videoId}
-${youfound.url}
-${youfound.title}
-${youfound.description}
-${youfound.timestamp}
-${youfound.duration}
-${youfound.ago}
-${youfound.views}
-${youfound.author.name}
-${youfound.thumbnail}`);
-            const media = await ӄʀǟӄɨռʐ.prepareMessage(
-              𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              { url: youfound.thumbnail },
-              MessageType.image,
-              {
-                mimetype: Mimetype.jpeg,
-              }
-            );
-            const buttons = [
-              {
-                buttonId: `${ᴋᴇɪ}list`,
-                buttonText: { displayText: `${ᴋᴇɪ}list` },
-                type: 1,
-              },
-            ];
-            const buttonMessage = {
-              contentText: `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, ${Timers} @${ꜱᴇɴᴅᴇʀeceived}, 🎥𝐕𝐢𝐝𝐞𝐨
+            return Mizuki_Buttons.MIB(
+              ӄʀǟӄɨռʐ,
+              chat,
+              𝓜𝖎𝖟𝖚ӄ𝖎,
+              `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, ${Timers} @${ꜱᴇɴᴅᴇʀeceived}, 🎥𝐕𝐢𝐝𝐞𝐨
 𝗣𝗹𝗲𝗮𝘀𝗲 𝗖𝗵𝗼𝗼𝘀𝗲 𝗙𝗶𝗹𝗲 𝗦𝗺𝗮𝗹𝗹𝗲𝗿 𝗧𝗵𝗲𝗻 𝟯𝟬𝗺𝗶𝗻𝘂𝘁𝗲𝘀!
 
 ┌────◇🥭
@@ -168,22 +145,8 @@ ${youfound.thumbnail}`);
 │📜𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧⤞ ${youfound.description}
 │🔗𝐋𝐢𝐧𝐤⤞ ${youfound.url}
 └───────〇`,
-              footerText: `(c)爪ïʐʊӄï🍁乃օȶ \n📅ᴅᴀᴛᴇ: _${Clock}_`,
-              buttons: buttons,
-              headerType: 4,
-              imageMessage: media.message.imageMessage,
-            };
-            await ӄʀǟӄɨռʐ
-              .sendMessage(
-                𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                buttonMessage,
-                MessageType.buttonsMessage,
-                {
-                  quoted: chat,
-                  contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
-                }
-              )
-              .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
+              youfound.thumbnail
+            );
           } else {
             await ytv(youfound.url).then(async (gotResp) => {
               const { dl_link, thumb, title, filesizeF, filesize } = gotResp;
