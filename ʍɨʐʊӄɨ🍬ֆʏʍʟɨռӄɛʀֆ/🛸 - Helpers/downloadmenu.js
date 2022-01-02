@@ -39,16 +39,14 @@ module.exports = {
       var MainText = `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived}, ${Timers}
 
 ┌──────────────▶ 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫𝐬
-│📥• ${ᴋᴇɪ}spotify _download spotify audio under 30min_
 │📥• ${ᴋᴇɪ}instagram _download image/video from ig_
 │📥• ${ᴋᴇɪ}play _download youtube-name-audio under 30min_
-│📥• ${ᴋᴇɪ}song _download youtube-name-audio under 30min_
 │📥• ${ᴋᴇɪ}tiktokaudio _download tik-tok audio_
 │📥• ${ᴋᴇɪ}ytaudio _download youtube-link-audio under 30min_
 │📥• ${ᴋᴇɪ}watch _download youtube-name-video under 30min_
-│📥• ${ᴋᴇɪ}stream _download youtube-name-video under 30min_
 │📥• ${ᴋᴇɪ}ytvideo _download youtube-link-video under 30min_
 │📥• ${ᴋᴇɪ}tiktokvideo _download tik-tok video_
+│📥• ${ᴋᴇɪ}spotify _download spotify audio under 30min_
 └───────〇`;
       return Mizuki_Buttons.MIB(
         ӄʀǟӄɨռʐ,
