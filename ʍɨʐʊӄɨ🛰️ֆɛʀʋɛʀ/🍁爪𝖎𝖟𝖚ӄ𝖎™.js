@@ -568,6 +568,7 @@ ${update.desc}`,
                   MessageType.text,
                   {
                     quoted: chat,
+                    contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
                   }
                 );
               }
