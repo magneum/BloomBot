@@ -126,7 +126,7 @@ module.exports = {
         GroupSettingChange.messageSend,
         false
       );
-      return Mizuki_Static.MGS(
+      return Mizuki_Buttons.MTB(
         ӄʀǟӄɨռʐ,
         chat,
         𝓜𝖎𝖟𝖚ӄ𝖎,
@@ -134,8 +134,7 @@ module.exports = {
 
 
 ┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
-Chat permissions changed to  *all group members*${ᴋᴇɪ}`,
-        `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
+Chat permissions changed to  *all group members*${ᴋᴇɪ}`
       );
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
     } catch (ℓαвєяяσя) {
