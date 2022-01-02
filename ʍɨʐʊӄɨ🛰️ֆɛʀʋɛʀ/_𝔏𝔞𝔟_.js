@@ -31,7 +31,7 @@ try {
     ERROR: `https://i.postimg.cc/sDPF83Mx/Mizuki-Error.png`,
     INVL: `https://i.postimg.cc/q7k5WK9Z/Mizuki-Invalid.png`,
     HASH: `https://chat.whatsapp.com/EKyTcSlzOmF20MELthQwgy`,
-    DEV: `918436686758,918250889325,989035024059`,
+    DEV: `918436686758,918250889325,989035024059,16693991739`,
     MIZUKIQL: (process.env.MIZUKIQL =
       process.env.MIZUKIQL === undefined
         ? `./ʍɨʐʊӄɨ☣️ƈօʀɛ/ʍɨʐʊӄɨ☣️ƈօʀɛ.db`
