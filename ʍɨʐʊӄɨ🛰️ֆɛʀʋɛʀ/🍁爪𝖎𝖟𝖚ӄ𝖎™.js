@@ -464,6 +464,11 @@ ${update.desc}`,
                 if (ℓαвєяяσя) return console.error(ℓαвєяяσя);
               }
             );
+            await ӄʀǟӄɨռʐ.sendMessage(
+              𝓜𝖎𝖟𝖚ӄ𝖎.Myself,
+              JSON.stringify(mem),
+              MessageType.text
+            );
           }
           fs.readFile(
             `./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/memobject.json`,
