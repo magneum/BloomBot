@@ -97,7 +97,7 @@ module.exports = {
         // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
         const LinkForGroups = await yts(Needs.join(` `));
         const GroupVideos = LinkForGroups.videos.slice(0, 1);
-        const filename = `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FinalName}_${ꜱᴇɴᴅᴇʀɪᴅ}_${Date.now()}`;
+        const filename = `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FinalName}_${ꜱᴇɴᴅᴇʀɪᴅ}_${Ping}`;
         var DAudio = function (uri, filename, callback) {
           request.head(uri, function (ℓαвєяяσя, gotResp, body) {
             mime = gotResp.headers[`content-type`];
