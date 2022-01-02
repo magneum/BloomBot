@@ -560,7 +560,10 @@ ${update.desc}`,
                   𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
                   `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived}, 
 
-⬡ First ioin the Mizuki GC so that my Devs can auto-verify your account
+⬡ First ioin the Mizuki GC.
+⬡ KrakinzLab Will Auto-Verify Your Account.
+⬡ Enjoy Mizuki
+
 🐙𝐆𝐑𝐎𝐔𝐏: ${_𝔏𝔞𝔟_.HASH}`,
                   MessageType.text,
                   {
