@@ -48,7 +48,7 @@ module.exports = {
             `Who Is This Dumbo •@${ꜱᴇɴᴅᴇʀeceived} Trying to Use Owner-Only Commands.
 
 
-┌────▶ 🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧   
+┌────★ 🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧   
 │  
 │❌ _𝚈𝚘𝚞 𝙰𝚛𝚎 𝙽𝚘𝚝 𝙰𝚕𝚕𝚘𝚠𝚎𝚍!_
 └───────〇`,
@@ -107,7 +107,7 @@ module.exports = {
             contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
             caption: `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived} (owner/dev), ${Timers} 
 
-┌────▶ *🍁Starting Mizuki Server Sym-Link...*
+┌────★ *🍁Starting Mizuki Server Sym-Link...*
 │
 │シ︎💡ᴘʀᴇꜰɪx: ${ᴋᴇɪ}
 │シ︎⚙️ᴇɴɢɪɴᴇ: ${vers.vers}

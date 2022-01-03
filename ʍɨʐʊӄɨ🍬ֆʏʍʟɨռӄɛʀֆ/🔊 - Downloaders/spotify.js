@@ -180,7 +180,7 @@ module.exports = {
                     𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
                     `*No Song Found... Try Different Search Terms!*
 
-┌────▶𝙏𝙧𝙮 𝙊𝙩𝙝𝙚𝙧 𝘾𝙤𝙢𝙢𝙖𝙣𝙙𝙨:
+┌────★𝙏𝙧𝙮 𝙊𝙩𝙝𝙚𝙧 𝘾𝙤𝙢𝙢𝙖𝙣𝙙𝙨:
 │${ᴋᴇɪ}ytsearch (song name)
 │${ᴋᴇɪ}ytaudio (song link)
 │${ᴋᴇɪ}ytvideo (video link)

@@ -48,8 +48,7 @@ try {
       .sendMessage(
         𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
         {
-          contentText: `*◆ Try Again Later!*
-➤ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_!`,
+          contentText: `*◆ Try Again _${ᴋᴇɪ}${FinalName}_ Later!*`,
           footerText: `(c)爪ïʐʊӄï🍁乃օȶ _${vers.vers}_\n📅ᴅᴀᴛᴇ: _${Clock}_`,
           buttons: [
             {

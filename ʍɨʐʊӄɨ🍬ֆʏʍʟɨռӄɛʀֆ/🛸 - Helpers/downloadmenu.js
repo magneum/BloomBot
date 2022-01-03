@@ -38,7 +38,7 @@ module.exports = {
       var MediaUrl = `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎.png`;
       var MainText = `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived}, ${Timers}
 
-┌──────────────▶ 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫𝐬
+┌──────────────★ 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫𝐬
 │📥• ${ᴋᴇɪ}instagram _download image/video from ig_
 │📥• ${ᴋᴇɪ}play _download youtube-name-audio under 30min_
 │📥• ${ᴋᴇɪ}tiktokaudio _download tik-tok audio_

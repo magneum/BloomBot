@@ -38,7 +38,7 @@ module.exports = {
       var MediaUrl = `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎.png`;
       var MainText = `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived}, ${Timers}
 
-┌──────────────▶ 𝐒𝐞𝐚𝐫𝐜𝐡
+┌──────────────★ 𝐒𝐞𝐚𝐫𝐜𝐡
 │🔎• ${ᴋᴇɪ}lyrics _find lyrics of songs_
 │🔎• ${ᴋᴇɪ}google: _search anything on google_
 │🔎• ${ᴋᴇɪ}wikipedia: _search anything on wikipedia_
