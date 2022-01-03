@@ -15,35 +15,35 @@ var scriptName = path.basename(__filename);
 var newScpt = scriptName.slice(0, -3).toLowerCase();
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
 module.exports = {
-name: newScpt,
-async handle(
-ӄʀǟӄɨռʐ,
-chat,
-𝓜𝖎𝖟𝖚ӄ𝖎,
-Needs,
-ꜱɪᴛʀᴀᴘ,
-Clock,
-Ping,
-Timers,
-version
-) {
-try {
-// ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
-const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
-var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
-const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
-console.log(
-`🍁爪𝖎𝖟𝖚ӄ𝖎™ ᴠᴇʀɪꜰɪᴇᴅ ꜰɪʟᴇ > ` + FinalName.toUpperCase() + `✔️`
-);
-// ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-if (𝓜𝖎𝖟𝖚ӄ𝖎.isGroup && !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderGroupAdmin && !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderDev) {
-try {
-return Mizuki_Buttons.MIB(
-ӄʀǟӄɨռʐ,
-chat,
-𝓜𝖎𝖟𝖚ӄ𝖎,
-`Who Is This Non-Admin •@${ꜱᴇɴᴅᴇʀeceived} Trying to Use Admin-Only Commands.
+  name: newScpt,
+  async handle(
+    ӄʀǟӄɨռʐ,
+    chat,
+    𝓜𝖎𝖟𝖚ӄ𝖎,
+    Needs,
+    ꜱɪᴛʀᴀᴘ,
+    Clock,
+    Ping,
+    Timers,
+    version
+  ) {
+    try {
+      // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
+      var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
+      const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
+      var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
+      const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
+      console.log(
+        `🍁爪𝖎𝖟𝖚ӄ𝖎™ ᴠᴇʀɪꜰɪᴇᴅ ꜰɪʟᴇ > ` + FinalName.toUpperCase() + `✔️`
+      );
+      // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
+      if (𝓜𝖎𝖟𝖚ӄ𝖎.isGroup && !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderGroupAdmin && !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderDev) {
+        try {
+          return Mizuki_Buttons.MIB(
+            ӄʀǟӄɨռʐ,
+            chat,
+            𝓜𝖎𝖟𝖚ӄ𝖎,
+            `Who Is This Non-Admin •@${ꜱᴇɴᴅᴇʀeceived} Trying to Use Admin-Only Commands.
 
 │❌ _𝚈𝚘𝚞 𝙰𝚛𝚎 𝙽𝚘𝚝 𝙰𝚕𝚕𝚘𝚠𝚎𝚍!_
 ┌────★ 🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧   
@@ -51,144 +51,144 @@ chat,
 │🌶️𝐆𝐫𝐨𝐮𝐩𝐬: _Admins & Devs!_
 │🌽𝐏𝐫𝐢𝐯𝐚𝐭𝐞 _Everyone_
 └───────〇`,
-_𝔏𝔞𝔟_.ɴᴏᴛᴀᴅᴍɪɴ
-);
-} catch (ℓαвєяяσя) {
-ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
-}
-// ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-} else {
-if (𝓜𝖎𝖟𝖚ӄ𝖎.isGroup) {
-var where = "(ᴀᴅᴍɪɴ)";
-} else {
-var where = "(ᴘʀɪᴠᴀᴛᴇ)";
-}
+            _𝔏𝔞𝔟_.ɴᴏᴛᴀᴅᴍɪɴ
+          );
+        } catch (ℓαвєяяσя) {
+          ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
+        }
+        // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
+      } else {
+        if (𝓜𝖎𝖟𝖚ӄ𝖎.isGroup) {
+          var where = "(ᴀᴅᴍɪɴ)";
+        } else {
+          var where = "(ᴘʀɪᴠᴀᴛᴇ)";
+        }
 
-try {
-const jsoncool = JSON.parse(
-fs.readFileSync(`./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`)
-);
-await jsoncool.push(𝓜𝖎𝖟𝖚ӄ𝖎.sender + 𝓜𝖎𝖟𝖚ӄ𝖎.chatId);
-await fs.writeFileSync(
-`./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`,
-JSON.stringify(jsoncool)
-);
-await setTimeout(async (error) => {
-if (error) console.log(error);
-await jsoncool.splice(𝓜𝖎𝖟𝖚ӄ𝖎.sender);;
-await fs.writeFileSync(
-`./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`,
-JSON.stringify(jsoncool)
-);
-}, 10000);
-} catch (ℓαвєяяσя) {
-console.log(ℓαвєяяσя);
-}
-// ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-await got(`https://www.reddit.com/r/Blowjobs/random.json`).then(
-async (newScpt) => {
-var file = JSON.parse(newScpt.body);
-var title = file[0].data.children[0].data.title;
-var amazeme = file[0].data.children[0].data.url;
-// ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-if (
-!amazeme.endsWith(`.png`) &&
-!amazeme.endsWith(`.jpg`) &&
-!amazeme.endsWith(`.jpeg`)
-) {
-var amazeme = await got(
-`https://www.reddit.com/r/Blowjobs/random.json`
-).then(async (newScpt) => {
-var file = JSON.parse(newScpt.body);
-var title = file[0].data.children[0].data.title;
-var amazeme = file[0].data.children[0].data.url;
-return Mizuki_Buttons.MIB(
-ӄʀǟӄɨռʐ,
-chat,
-𝓜𝖎𝖟𝖚ӄ𝖎,
-`
+        try {
+          const jsoncool = JSON.parse(
+            fs.readFileSync(`./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`)
+          );
+          await jsoncool.push(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
+          await fs.writeFileSync(
+            `./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`,
+            JSON.stringify(jsoncool)
+          );
+          await setTimeout(async (error) => {
+            if (error) console.log(error);
+            await jsoncool.splice(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
+            await fs.writeFileSync(
+              `./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`,
+              JSON.stringify(jsoncool)
+            );
+          }, 10000);
+        } catch (ℓαвєяяσя) {
+          console.log(ℓαвєяяσя);
+        }
+        // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
+        await got(`https://www.reddit.com/r/Blowjobs/random.json`).then(
+          async (newScpt) => {
+            var file = JSON.parse(newScpt.body);
+            var title = file[0].data.children[0].data.title;
+            var amazeme = file[0].data.children[0].data.url;
+            // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
+            if (
+              !amazeme.endsWith(`.png`) &&
+              !amazeme.endsWith(`.jpg`) &&
+              !amazeme.endsWith(`.jpeg`)
+            ) {
+              var amazeme = await got(
+                `https://www.reddit.com/r/Blowjobs/random.json`
+              ).then(async (newScpt) => {
+                var file = JSON.parse(newScpt.body);
+                var title = file[0].data.children[0].data.title;
+                var amazeme = file[0].data.children[0].data.url;
+                return Mizuki_Buttons.MIB(
+                  ӄʀǟӄɨռʐ,
+                  chat,
+                  𝓜𝖎𝖟𝖚ӄ𝖎,
+                  `
 ┌────★ 🔞𝐇𝐮𝐦𝐚𝐧 𝐍𝐒𝐅𝐖
 │
 │👅 𝐓𝐨𝐩𝐢𝐜: ${title}
 │📞 𝐎𝐫𝐝𝐞𝐫𝐞𝐝𝐁𝐲: @${ꜱᴇɴᴅᴇʀeceived} ${where}
 └───────〇`,
-amazeme
-);
-});
-// ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-} else if (amazeme.endsWith(`.gif`)) {
-const downloader = await new Downloader({
-url: amazeme,
-directory: `./ʍɨʐʊӄɨ🗑️ȶɛʍք`,
-fileName: `${Ping}_${FinalName}.gif`,
-cloneFiles: false,
-});
-try {
-await downloader.download();
-} catch (ℓαвєяяσя) {
-return Mizuki_Buttons.MTB(
-ӄʀǟӄɨռʐ,
-chat,
-𝓜𝖎𝖟𝖚ӄ𝖎,
-`👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, ${Timers} @${ꜱᴇɴᴅᴇʀeceived},
+                  amazeme
+                );
+              });
+              // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
+            } else if (amazeme.endsWith(`.gif`)) {
+              const downloader = await new Downloader({
+                url: amazeme,
+                directory: `./ʍɨʐʊӄɨ🗑️ȶɛʍք`,
+                fileName: `${Ping}_${FinalName}.gif`,
+                cloneFiles: false,
+              });
+              try {
+                await downloader.download();
+              } catch (ℓαвєяяσя) {
+                return Mizuki_Buttons.MTB(
+                  ӄʀǟӄɨռʐ,
+                  chat,
+                  𝓜𝖎𝖟𝖚ӄ𝖎,
+                  `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, ${Timers} @${ꜱᴇɴᴅᴇʀeceived},
 
 🤧𝐎𝐩𝐩𝐬𝐢𝐞 𝘛𝘳𝘺 𝘈𝘨𝘢𝘪𝘯!
 _Server Didn't Send Any Response_`
-);
-}
-ffmpeg(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/${Ping}_${FinalName}.gif`)
-.outputOptions([
-`-pix_fmt yuv420p`,
-`-c:v libx264`,
-`-movflags +faststart`,
-`-filter:v crop='floor(in_w/2)*2:floor(in_h/2)*2'`,
-])
-.save(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/${Ping}_${FinalName}.mp4`)
-.on(`end`, async () => {
-return Mizuki_Static.MSB(
-ӄʀǟӄɨռʐ,
-chat,
-𝓜𝖎𝖟𝖚ӄ𝖎,
-`
+                );
+              }
+              ffmpeg(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/${Ping}_${FinalName}.gif`)
+                .outputOptions([
+                  `-pix_fmt yuv420p`,
+                  `-c:v libx264`,
+                  `-movflags +faststart`,
+                  `-filter:v crop='floor(in_w/2)*2:floor(in_h/2)*2'`,
+                ])
+                .save(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/${Ping}_${FinalName}.mp4`)
+                .on(`end`, async () => {
+                  return Mizuki_Static.MSB(
+                    ӄʀǟӄɨռʐ,
+                    chat,
+                    𝓜𝖎𝖟𝖚ӄ𝖎,
+                    `
 ┌────★ 🔞𝐇𝐮𝐦𝐚𝐧 𝐍𝐒𝐅𝐖
 │
 │👅 𝐓𝐨𝐩𝐢𝐜: ${title}
 │📞 𝐎𝐫𝐝𝐞𝐫𝐞𝐝𝐁𝐲: @${ꜱᴇɴᴅᴇʀeceived} ${where}
 └───────〇`,
-`./ʍɨʐʊӄɨ🗑️ȶɛʍք/${Ping}_${FinalName}.mp4`
-)
-.then(
-cleanRF.cleanRF(
-`./ʍɨʐʊӄɨ🗑️ȶɛʍք/${Ping}_${FinalName}.mp4`,
-`./ʍɨʐʊӄɨ🗑️ȶɛʍք/${Ping}_${FinalName}.gif`
-)
-)
-.catch((ℓαвєяяσя) =>
-ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
-);
-});
-// ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-} else {
-return Mizuki_Buttons.MIB(
-ӄʀǟӄɨռʐ,
-chat,
-𝓜𝖎𝖟𝖚ӄ𝖎,
-`
+                    `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${Ping}_${FinalName}.mp4`
+                  )
+                    .then(
+                      cleanRF.cleanRF(
+                        `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${Ping}_${FinalName}.mp4`,
+                        `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${Ping}_${FinalName}.gif`
+                      )
+                    )
+                    .catch((ℓαвєяяσя) =>
+                      ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
+                    );
+                });
+              // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
+            } else {
+              return Mizuki_Buttons.MIB(
+                ӄʀǟӄɨռʐ,
+                chat,
+                𝓜𝖎𝖟𝖚ӄ𝖎,
+                `
 ┌────★ 🔞𝐇𝐮𝐦𝐚𝐧 𝐍𝐒𝐅𝐖
 │
 │👅 𝐓𝐨𝐩𝐢𝐜: ${title}
 │📞 𝐎𝐫𝐝𝐞𝐫𝐞𝐝𝐁𝐲: @${ꜱᴇɴᴅᴇʀeceived} ${where}
 └───────〇`,
-amazeme
-);
-}
-}
-);
-}
-} catch (ℓαвєяяσя) {
-ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
-console.log(ℓαвєяяσя);
-}
-},
+                amazeme
+              );
+            }
+          }
+        );
+      }
+    } catch (ℓαвєяяσя) {
+      ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
+      console.log(ℓαвєяяσя);
+    }
+  },
 };
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
