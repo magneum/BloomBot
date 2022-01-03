@@ -7,6 +7,7 @@ try {
   const LetGoChecker = require(`./LetGoChecker`);
   const 𝓜𝖎𝖟𝖚ӄ𝖎ֆʏռօք = require(`./𝓜𝖎𝖟𝖚ӄ𝖎ᴢᴇɴ`);
   const moment = require(`moment-timezone`);
+  const PostDataBase = require(`./postDb`);
   const AutoKrakz = require(`./𝓜𝖎𝖟𝖚ӄ𝖎ɢɪᴛ`);
   const speed = require(`performance-now`);
   const LinkList = require(`./LinkList`);
@@ -347,7 +348,16 @@ ${update.desc}`,
               },
               MessageType.buttonsMessage
             )
-            .then(console.log(Kolor.green(GroupID)))
+            .then(async (ℓαвєяяσя) => {
+              await PostDataBase.setWelcome(
+                GroupID,
+                `𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚👋🏻 _New Member_
+⬡ ʙᴏᴛ ɪꜱ ʀᴇᴀᴅʏ ᴛᴏ ᴀꜱꜱɪꜱᴛ ʏᴏᴜ!
+
+🌱𝗣𝗿𝗲𝘀𝘀 𝗯𝗲𝗹𝗼𝘄 𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗦𝘁𝗮𝗿𝘁 𝘂𝘀𝗶𝗻𝗴 𝗠𝗶𝘇𝘂𝗸𝗶👇🏽‍ `
+              );
+              if (ℓαвєяяσя) console.log(ℓαвєяяσя);
+            })
             .catch((ℓαвєяяσя) => console.log(ℓαвєяяσя));
         }
         // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
