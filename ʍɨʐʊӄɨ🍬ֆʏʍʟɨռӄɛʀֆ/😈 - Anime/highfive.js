@@ -100,7 +100,7 @@ module.exports = {
 │🍕𝐅𝐫𝐨𝐦: @${ꜱᴇɴᴅᴇʀeceived}
 │🌭𝐓𝐨: @${personreceived}
 └───────〇`,
-              fs.readFileSync(GiveFile)
+              GiveFile
             );
             return await cleanRF.cleanRF(GiveFile, GotFile);
           });
@@ -123,7 +123,7 @@ module.exports = {
 │
 │🍯𝐓𝐡𝐞𝐦𝐬𝐞𝐥𝐯𝐞: @${ꜱᴇɴᴅᴇʀeceived}
 └───────〇`,
-              fs.readFileSync(GiveFile)
+              GiveFile
             );
             return await cleanRF.cleanRF(GiveFile, GotFile);
           });
