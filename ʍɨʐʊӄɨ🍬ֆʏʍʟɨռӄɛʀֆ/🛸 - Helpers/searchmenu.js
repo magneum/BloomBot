@@ -42,7 +42,6 @@ module.exports = {
 │🔎• ${ᴋᴇɪ}lyrics _find lyrics of songs_
 │🔎• ${ᴋᴇɪ}google: _search anything on google_
 │🔎• ${ᴋᴇɪ}wikipedia: _search anything on wikipedia_
-│🔎• ${ᴋᴇɪ}wallpaper: _download wallpapers_
 │🔎• ${ᴋᴇɪ}github: _fing any github profile_
 │🔎• ${ᴋᴇɪ}pinterest: _search anything on pinterest_
 │🔎• ${ᴋᴇɪ}ytsearch: _search anything on youtube_
