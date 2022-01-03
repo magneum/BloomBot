@@ -95,7 +95,7 @@ module.exports = {
             𝓜𝖎𝖟𝖚ӄ𝖎,
             `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, ${Timers} @${ꜱᴇɴᴅᴇʀeceived},
 
-┌────◇🥭
+┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 │
 │🌸 𝐏𝐥𝐚𝐜𝐞: ${name}
 │💮 𝐂𝐨𝐮𝐧𝐭𝐫𝐲: ${Country}

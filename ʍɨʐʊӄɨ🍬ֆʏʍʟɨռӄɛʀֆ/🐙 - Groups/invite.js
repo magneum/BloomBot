@@ -146,7 +146,7 @@ module.exports = {
               contentText: `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${personreceived}, 
 
 
-┌────◇🥭
+┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 │
 │📜𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${groupData.subject}
 │💞𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${groupData.participants.length}
@@ -183,7 +183,7 @@ module.exports = {
               contentText: `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, ${Timers} @${ꜱᴇɴᴅᴇʀeceived}, 
 
 
-┌────◇🥭
+┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 │
 │📜𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${groupData.subject}
 │💞𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${groupData.participants.length}

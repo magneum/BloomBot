@@ -138,7 +138,7 @@ module.exports = {
               `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, ${Timers} @${ꜱᴇɴᴅᴇʀeceived}, 🎥𝐕𝐢𝐝𝐞𝐨
 𝗣𝗹𝗲𝗮𝘀𝗲 𝗖𝗵𝗼𝗼𝘀𝗲 𝗙𝗶𝗹𝗲 𝗦𝗺𝗮𝗹𝗹𝗲𝗿 𝗧𝗵𝗲𝗻 𝟯𝟬𝗺𝗶𝗻𝘂𝘁𝗲𝘀!
 
-┌────◇🥭
+┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 │
 │🍻𝐓𝐢𝐭𝐥𝐞⤞ ${youfound.title}
 │⏰𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧⤞ ${youfound.timestamp}
@@ -157,7 +157,7 @@ module.exports = {
                     const captionsYtmp4 = `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, ${Timers} @${ꜱᴇɴᴅᴇʀeceived},
 🎥𝐕𝐢𝐝𝐞𝐨 𝗣𝗹𝗲𝗮𝘀𝗲 𝘄𝗮𝗶𝘁 𝗳𝗼𝗿 𝘁𝗵𝗲 𝗱𝗲𝗹𝗶𝘃𝗲𝗿𝘆 𝗼𝗳 𝐕𝐢𝐝𝐞𝐨!
 
-┌────◇🥭
+┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 │
 │🍻𝐓𝐢𝐭𝐥𝐞⤞ ${youfound.title}
 │🙈𝐕𝐢𝐞𝐰𝐬⤞ ${youfound.views}

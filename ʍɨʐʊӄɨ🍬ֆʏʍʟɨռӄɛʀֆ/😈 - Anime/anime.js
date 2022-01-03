@@ -79,7 +79,7 @@ module.exports = {
       malScraper.getInfoFromName(name).then(async (data) => {
         const AnimeInfos = `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, ${Timers} @${ꜱᴇɴᴅᴇʀeceived},
 
-┌────◇🥭
+┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 │
 │💡𝐓𝐢𝐭𝐥𝐞: *${data.title}*
 │🧀𝗣𝗿𝗲𝗺𝗶𝗲𝗿𝗲𝗱: _${data.premiered}_

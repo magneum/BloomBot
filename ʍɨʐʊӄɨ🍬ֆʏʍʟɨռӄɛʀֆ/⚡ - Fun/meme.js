@@ -67,7 +67,11 @@ module.exports = {
             {
               quoted: chat,
               mimetype: Mimetype.png && Mimetype.jpeg,
-              content: `title: ${response.title}`,
+              content: `
+┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+│
+│💡 𝗧𝗶𝘁𝗹𝗲: ${response.title}
+└───────〇`,
             }
           );
         });

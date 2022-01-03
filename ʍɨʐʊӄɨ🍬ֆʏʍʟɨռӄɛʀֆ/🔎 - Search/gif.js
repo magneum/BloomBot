@@ -123,7 +123,7 @@ module.exports = {
             mimetype: `video/gif`,
             caption: `(c)爪ïʐʊӄï🍁乃օȶ _${version}_\n📅ᴅᴀᴛᴇ: _${Clock}_
 
-┌────◇🥭
+┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 │
 │🍯 𝐒𝐞𝐚𝐫𝐜𝐡𝐞𝐝: ${Needs.join(` `)}
 └───────〇`,

@@ -194,7 +194,7 @@ module.exports = {
         `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, ${Timers} @${ꜱᴇɴᴅᴇʀeceived},
 
 
-┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
+┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 Chat permissions changed to  *admin only*  for 
 ${Needs[0]} ${type}`
       );
@@ -211,7 +211,7 @@ ${Needs[0]} ${type}`
           `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, ${Timers} @${ꜱᴇɴᴅᴇʀeceived},
 
 
-┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
+┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 Chat permissions changed to *all group members*`
         );
       }, duration);

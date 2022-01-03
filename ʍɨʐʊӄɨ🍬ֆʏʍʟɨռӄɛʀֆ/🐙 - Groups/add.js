@@ -97,7 +97,7 @@ module.exports = {
             `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, ${Timers} @${ꜱᴇɴᴅᴇʀeceived},
 
 
-┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
+┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 The number you're trying to add isn't available on WhatsApp.
 Please verify the number again.
 
@@ -120,7 +120,7 @@ ${ᴋᴇɪ}add 910000000000`,
             `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, ${Timers} @${ꜱᴇɴᴅᴇʀeceived},
 
 
-┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
+┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 The number entered cannot be added back before 24 hours.`,
             `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
           );
@@ -152,7 +152,7 @@ The number entered cannot be added back before 24 hours.`,
             `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, ${Timers} @${ꜱᴇɴᴅᴇʀeceived},
 
 
-┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
+┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 The number you're trying to add cannot be added to the group directly. 
 An invite link has been sent to them.`,
             `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
@@ -165,7 +165,7 @@ An invite link has been sent to them.`,
             `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, ${Timers} @${ꜱᴇɴᴅᴇʀeceived},
 
 
-┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
+┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 The number entered is already a member of this group.`,
             `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
           );
@@ -177,7 +177,7 @@ The number entered is already a member of this group.`,
           `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, ${Timers} @${ꜱᴇɴᴅᴇʀeceived},
 
 
-┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
+┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 ${addnum} added successfully!`,
           `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
         );
@@ -190,7 +190,7 @@ ${addnum} added successfully!`,
             `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, ${Timers} @${ꜱᴇɴᴅᴇʀeceived},
 
 
-┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
+┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 The number you're trying to add isn't available on WhatsApp.
 Please verify the number again.`,
             `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`

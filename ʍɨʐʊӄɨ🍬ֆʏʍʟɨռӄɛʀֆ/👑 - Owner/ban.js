@@ -61,7 +61,7 @@ module.exports = {
           𝓜𝖎𝖟𝖚ӄ𝖎,
           `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived} (Owner)
 
-┌────◇🥭
+┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 │
 │🛑𝐁𝐚𝐧𝐧𝐞𝐝: ${ᴀᴅᴅʙᴀɴ.substring(0, ᴀᴅᴅʙᴀɴ.indexOf(`@`))}
 │🛡️ꜱᴜᴅᴏ ʙᴀɴ ᴀᴄᴄᴇᴘᴛᴇᴅ: _Banlisted from using the bot!_
@@ -96,7 +96,7 @@ module.exports = {
             𝓜𝖎𝖟𝖚ӄ𝖎,
             `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived} (Owner)
 
-┌────◇🥭
+┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 │
 │🛑𝐁𝐚𝐧𝐧𝐞𝐝: ${ᴀᴅᴅʙᴀɴ.substring(0, ᴀᴅᴅʙᴀɴ.indexOf(`@`))}
 │🛡️ꜱᴜᴅᴏ ʙᴀɴ ᴀᴄᴄᴇᴘᴛᴇᴅ: _Banlisted from using the bot in this group!_
@@ -128,7 +128,7 @@ module.exports = {
             𝓜𝖎𝖟𝖚ӄ𝖎,
             `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived} (Owner)
 
-┌────◇🥭
+┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 │
 │🛑𝐁𝐚𝐧𝐧𝐞𝐝: ${ᴀᴅᴅʙᴀɴ.substring(0, ᴀᴅᴅʙᴀɴ.indexOf(`@`))}
 │🛡️ꜱᴜᴅᴏ ʙᴀɴ ᴀᴄᴄᴇᴘᴛᴇᴅ: _Banlisted from using the bot in this group!_
@@ -144,7 +144,7 @@ module.exports = {
             𝓜𝖎𝖟𝖚ӄ𝖎,
             `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived} (Owner)
 
-┌────◇🥭
+┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 │
 │🛑𝐆𝐫𝐨𝐮𝐩 𝐁𝐚𝐧𝐧𝐞𝐝: ${𝓜𝖎𝖟𝖚ӄ𝖎.groupName}
 │🛡️ꜱᴜᴅᴏ ʙᴀɴ ᴀᴄᴄᴇᴘᴛᴇᴅ: _Bot has been disabled for the group!_
