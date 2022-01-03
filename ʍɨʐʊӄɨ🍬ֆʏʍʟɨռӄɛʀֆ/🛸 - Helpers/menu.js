@@ -151,7 +151,6 @@ module.exports = {
 │🔰${ᴋᴇɪ}lock (ᴀᴍᴏᴜɴᴛ) (ʜ/ᴍ/ꜱ)
 │🔰${ᴋᴇɪ}unlock 
 │🔰${ᴋᴇɪ}admins
-│🔰${ᴋᴇɪ}disappear (ᴀᴍᴏᴜɴᴛ) (ʜ/ᴍ/ꜱ)
 │🔰${ᴋᴇɪ}groupdp
 │🔰${ᴋᴇɪ}kick (ʀᴇᴘʟʏ)
 │🔰${ᴋᴇɪ}getdesc

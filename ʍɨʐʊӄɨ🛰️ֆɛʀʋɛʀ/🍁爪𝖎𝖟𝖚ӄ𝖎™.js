@@ -455,12 +455,14 @@ ${update.desc}`,
                   ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
                 );
             }
+          } else {
+            console.log("Don't Care!");
           }
           // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
           const jsoncool = JSON.parse(
             fs.readFileSync(`./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`)
           );
-          const isjsoncool = jsoncool.includes(𝓜𝖎𝖟𝖚ӄ𝖎.sender + 𝓜𝖎𝖟𝖚ӄ𝖎.chatId);
+          const isjsoncool = jsoncool.includes(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
           if (isjsoncool) {
             return await ӄʀǟӄɨռʐ.sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
@@ -470,7 +472,6 @@ ${update.desc}`,
                 quoted: chat,
               }
             );
-            // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
           } else {
             console.log(
               Kolor.yellow(

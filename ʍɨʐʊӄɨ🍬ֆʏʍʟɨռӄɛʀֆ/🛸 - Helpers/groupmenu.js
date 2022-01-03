@@ -44,7 +44,6 @@ module.exports = {
 │🔰• ${ᴋᴇɪ}demote: _demote member from admin_
 │🔰• ${ᴋᴇɪ}invite: _get group invite link_
 │🔰• ${ᴋᴇɪ}admins: _get all admins of a group_
-│🔰• ${ᴋᴇɪ}disappear: _toggle disappear message in group_
 │🔰• ${ᴋᴇɪ}getdesc: _get group description_
 │🔰• ${ᴋᴇɪ}groupdp: _change group profile picture_
 │🔰• ${ᴋᴇɪ}kick: _ʀᴇᴍᴏᴠᴇ ᴀ ᴘᴇʀꜱᴏɴ ꜰʀᴏᴍ ᴀ ɢʀᴏᴜᴘ_

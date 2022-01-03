@@ -88,7 +88,7 @@ module.exports = {
           );
           await setTimeout(async (error) => {
             if (error) console.log(error);
-            await jsoncool.splice(𝓜𝖎𝖟𝖚ӄ𝖎.sender + 𝓜𝖎𝖟𝖚ӄ𝖎.chatId);
+            await jsoncool.splice(𝓜𝖎𝖟𝖚ӄ𝖎.sender);;
             await fs.writeFileSync(
               `./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`,
               JSON.stringify(jsoncool)

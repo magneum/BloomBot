@@ -17,95 +17,95 @@ var scriptName = path.basename(__filename);
 var newScpt = scriptName.slice(0, -3).toLowerCase();
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
 module.exports = {
-  name: newScpt,
-  async handle(
-    ӄʀǟӄɨռʐ,
-    chat,
-    𝓜𝖎𝖟𝖚ӄ𝖎,
-    Needs,
-    ꜱɪᴛʀᴀᴘ,
-    Clock,
-    Ping,
-    Timers,
-    version
-  ) {
-    try {
-      // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-      var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
-      var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
-      const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
-      const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
-      console.log(
-        `🍁爪𝖎𝖟𝖚ӄ𝖎™ ᴠᴇʀɪꜰɪᴇᴅ ꜰɪʟᴇ > ` + FinalName.toUpperCase() + `✔️`
-      );
-      // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-      if (!𝓜𝖎𝖟𝖚ӄ𝖎.fromMe) {
-        try {
-          return Mizuki_Buttons.MIB(
-            ӄʀǟӄɨռʐ,
-            chat,
-            𝓜𝖎𝖟𝖚ӄ𝖎,
-            `Who Is This Dumbo •@${ꜱᴇɴᴅᴇʀeceived} Trying to Use Owner-Only Commands.
+name: newScpt,
+async handle(
+ӄʀǟӄɨռʐ,
+chat,
+𝓜𝖎𝖟𝖚ӄ𝖎,
+Needs,
+ꜱɪᴛʀᴀᴘ,
+Clock,
+Ping,
+Timers,
+version
+) {
+try {
+// ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
+var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
+var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
+const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
+const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
+console.log(
+`🍁爪𝖎𝖟𝖚ӄ𝖎™ ᴠᴇʀɪꜰɪᴇᴅ ꜰɪʟᴇ > ` + FinalName.toUpperCase() + `✔️`
+);
+// ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
+if (!𝓜𝖎𝖟𝖚ӄ𝖎.fromMe) {
+try {
+return Mizuki_Buttons.MIB(
+ӄʀǟӄɨռʐ,
+chat,
+𝓜𝖎𝖟𝖚ӄ𝖎,
+`Who Is This Dumbo •@${ꜱᴇɴᴅᴇʀeceived} Trying to Use Owner-Only Commands.
 
 
 ┌────★ 🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧   
 │  
 │❌ _𝚈𝚘𝚞 𝙰𝚛𝚎 𝙽𝚘𝚝 𝙰𝚕𝚕𝚘𝚠𝚎𝚍!_
 └───────〇`,
-            _𝔏𝔞𝔟_.ɴᴏᴛᴀᴅᴍɪɴ
-          );
-        } catch (ℓαвєяяσя) {
-          ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
-        }
-        // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-      } else {
-        // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-        const used = process.memoryUsage();
-        const cpus = os.cpus().map((cpu) => {
-          cpu.total = Object.keys(cpu.times).reduce(
-            (last, type) => last + cpu.times[type],
-            0
-          );
-          return cpu;
-        });
-        const cpu = cpus.reduce(
-          (last, cpu, _, { length }) => {
-            last.total += cpu.total;
-            last.speed += cpu.speed / length;
-            last.times.user += cpu.times.user;
-            last.times.nice += cpu.times.nice;
-            last.times.sys += cpu.times.sys;
-            last.times.idle += cpu.times.idle;
-            last.times.irq += cpu.times.irq;
-            return last;
-          },
-          {
-            speed: 0,
-            total: 0,
-            times: {
-              user: 0,
-              nice: 0,
-              sys: 0,
-              idle: 0,
-              irq: 0,
-            },
-          }
-        );
-        // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-        let timestamp = speed();
-        let latensi = speed() - timestamp;
-        neww = performance.now();
-        oldd = performance.now();
-        await ӄʀǟӄɨռʐ.sendMessage(
-          𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-          {
-            url: `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`,
-          },
-          MessageType.video,
-          {
-            mimetype: `video/gif`,
-            contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
-            caption: `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived} (owner/dev), ${Timers} 
+_𝔏𝔞𝔟_.ɴᴏᴛᴀᴅᴍɪɴ
+);
+} catch (ℓαвєяяσя) {
+ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
+}
+// ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
+} else {
+// ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
+const used = process.memoryUsage();
+const cpus = os.cpus().map((cpu) => {
+cpu.total = Object.keys(cpu.times).reduce(
+(last, type) => last + cpu.times[type],
+0
+);
+return cpu;
+});
+const cpu = cpus.reduce(
+(last, cpu, _, { length }) => {
+last.total += cpu.total;
+last.speed += cpu.speed / length;
+last.times.user += cpu.times.user;
+last.times.nice += cpu.times.nice;
+last.times.sys += cpu.times.sys;
+last.times.idle += cpu.times.idle;
+last.times.irq += cpu.times.irq;
+return last;
+},
+{
+speed: 0,
+total: 0,
+times: {
+user: 0,
+nice: 0,
+sys: 0,
+idle: 0,
+irq: 0,
+},
+}
+);
+// ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
+let timestamp = speed();
+let latensi = speed() - timestamp;
+neww = performance.now();
+oldd = performance.now();
+await ӄʀǟӄɨռʐ.sendMessage(
+𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+{
+url: `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`,
+},
+MessageType.video,
+{
+mimetype: `video/gif`,
+contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
+caption: `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived} (owner/dev), ${Timers} 
 
 ┌────★ *🍁Starting Mizuki Server Sym-Link...*
 │
@@ -153,14 +153,14 @@ module.exports = {
 *◆ isAntilink:* ${𝓜𝖎𝖟𝖚ӄ𝖎.isAntilink}
 *◆ alias:* ${𝓜𝖎𝖟𝖚ӄ𝖎.alias}
 ⬡=====🍁 爪𝖎𝖟𝖚ӄ𝖎™ 🍁 =====⬡`,
-          }
-        );
-      }
-      // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-    } catch (ℓαвєяяσя) {
-      ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
-      console.log(ℓαвєяяσя);
-    }
-  },
+}
+);
+}
+// ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
+} catch (ℓαвєяяσя) {
+ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
+console.log(ℓαвєяяσя);
+}
+},
 };
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
