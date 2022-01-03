@@ -63,7 +63,7 @@ module.exports = {
 │🐙 *${ᴋᴇɪ}ownermenu*
 │📥 *${ᴋᴇɪ}downloadmenu*
 │🔰 *${ᴋᴇɪ}groupmenu*
-│🦄 *${ᴋᴇɪ}funmenu* 
+│🦄 *${ᴋᴇɪ}randommenu* 
 │🔎 *${ᴋᴇɪ}searchmenu*
 │🗂️ *${ᴋᴇɪ}ffmpegmenu*
 │🍄 *${ᴋᴇɪ}hentaimenu* _(ᴀᴅᴍɪɴ-ᴏɴʟʏ)_
