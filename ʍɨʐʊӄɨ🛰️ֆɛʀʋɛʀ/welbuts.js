@@ -120,8 +120,8 @@ ${ꜰᴇᴛᴄʜᴇᴅᴡᴇʟᴄᴏᴍᴇ.message}`,
                 type: 1,
               },
               {
-                buttonId: `${ᴋᴇɪ}menu`,
-                buttonText: { displayText: `${ᴋᴇɪ}menu` },
+                buttonId: `${ᴋᴇɪ}what`,
+                buttonText: { displayText: `${ᴋᴇɪ}what` },
                 type: 1,
               },
               {
