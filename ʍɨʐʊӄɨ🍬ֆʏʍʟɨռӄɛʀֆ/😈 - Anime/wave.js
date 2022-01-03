@@ -30,16 +30,25 @@ module.exports = {
     Timers,
     version
   ) {
+    // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
     try {
-      // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-      var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
       var Raw = await anime.wave();
       const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
-      var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
       const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
       console.log(
         `🍁爪𝖎𝖟𝖚ӄ𝖎™ ᴠᴇʀɪꜰɪᴇᴅ ꜰɪʟᴇ > ` + FinalName.toUpperCase() + `✔️`
       );
+      if (𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
+        var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
+        var personreceived = Receiver.substring(0, Receiver.length - 15);
+        var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
+        var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
+      } else {
+        var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
+        var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
+      }
+      const GotFile = `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${Ping}_${FinalName}.gif`;
+      const GiveFile = `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${Ping}_${FinalName}.mp4`;
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
       if (!Raw.endsWith(`.gif`) && !Raw.endsWith(`.mp4`)) {
         var Raw = await anime.wave();
@@ -47,7 +56,7 @@ module.exports = {
       } else {
         var ʟᴀʙᴛᴇꜱᴛ = Raw;
       }
-      console.log(ʟᴀʙᴛᴇꜱᴛ);
+      console.log("🍁====⬡ " + ʟᴀʙᴛᴇꜱᴛ + " ⬡====🍁");
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
       const downloader = await new Downloader({
         url: ʟᴀʙᴛᴇꜱᴛ,
@@ -58,95 +67,65 @@ module.exports = {
       try {
         await downloader.download();
       } catch (ℓαвєяяσя) {
-        try {
-          return Mizuki_Buttons.MTB(
-            ӄʀǟӄɨռʐ,
-            chat,
-            𝓜𝖎𝖟𝖚ӄ𝖎,
-            `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, ${Timers} @${ꜱᴇɴᴅᴇʀeceived},
-        
-🤧𝐎𝐩𝐩𝐬𝐢𝐞 𝘛𝘳𝘺 𝘈𝘨𝘢𝘪𝘯!
-_Server Didn't Send Any Response_`
-          );
-        } catch (ℓαвєяяσя) {
-          ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
-        }
-      }
-      if (𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
-        await ffmpeg(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/${Ping}_${FinalName}.gif`)
-          .outputOptions([
-            `-pix_fmt yuv420p`,
-            `-c:v libx264`,
-            `-movflags +faststart`,
-            `-filter:v crop='floor(in_w/2)*2:floor(in_h/2)*2'`,
-          ])
-          .save(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/${Ping}_${FinalName}.mp4`)
-          .on(`end`, async () => {
-            var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
-            var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
-            var Receiver =
-              chat.message.extendedTextMessage.contextInfo.participant;
-            var personreceived = Receiver.substring(0, Receiver.length - 15);
-            await ӄʀǟӄɨռʐ
-              .sendMessage(
-                𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                fs.readFileSync(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/${Ping}_${FinalName}.mp4`),
-                MessageType.video,
-                {
-                  contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ, Receiver] },
-                  quoted: chat,
-                  mimetype: `video/gif`,
-                  caption: `(ƈ)𝐌𝐢𝐳𝐮𝐤𝐢🍹𝐁𝐨𝐭 _${version}_\n📅ᴅᴀᴛᴇ: _${Clock}_
+        return Mizuki_Buttons.MTB(
+          ӄʀǟӄɨռʐ,
+          chat,
+          𝓜𝖎𝖟𝖚ӄ𝖎,
+          `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived},
 
 ┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 │
-│🍪 𝐅𝐫𝐨𝐦: @${ꜱᴇɴᴅᴇʀeceived}
-│🍛 𝐓𝐨: @${personreceived}
-└───────〇`,
-                }
-              )
-              .then(
-                cleanRF.cleanRF(
-                  `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${Ping}_${FinalName}.mp4`,
-                  `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${Ping}_${FinalName}.gif`
-                )
-              )
-              .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
-          });
-      } else {
-        await ffmpeg(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/${Ping}_${FinalName}.gif`)
+│🥺𝐎𝐩𝐩𝐬𝐢𝐞 𝐓𝐫𝐲 𝐀𝐠𝐚𝐢𝐧!
+│◇ ꜱᴇʀᴠᴇʀ ᴅɪᴅɴ'ᴛ ꜱᴇɴᴅ ᴀɴʏ ʀᴇꜱᴘᴏɴꜱᴇ
+└───────〇`
+        );
+      }
+      if (𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
+        ffmpeg(GotFile)
           .outputOptions([
             `-pix_fmt yuv420p`,
             `-c:v libx264`,
             `-movflags +faststart`,
             `-filter:v crop='floor(in_w/2)*2:floor(in_h/2)*2'`,
           ])
-          .save(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/${Ping}_${FinalName}.mp4`)
+          .save(GiveFile)
           .on(`end`, async () => {
-            await ӄʀǟӄɨռʐ
-              .sendMessage(
-                𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                fs.readFileSync(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/${Ping}_${FinalName}.mp4`),
-                MessageType.video,
-                {
-                  contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
-                  quoted: chat,
-                  mimetype: `video/gif`,
-                  caption: `(ƈ)𝐌𝐢𝐳𝐮𝐤𝐢🍹𝐁𝐨𝐭 _${version}_\n📅ᴅᴀᴛᴇ: _${Clock}_
-
+            await Mizuki_Static.MGS(
+              ӄʀǟӄɨռʐ,
+              chat,
+              𝓜𝖎𝖟𝖚ӄ𝖎,
+              `
+┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+│
+│🍕𝐅𝐫𝐨𝐦: @${ꜱᴇɴᴅᴇʀeceived}
+│🌭𝐓𝐨: @${personreceived}
+└───────〇`,
+              fs.readFileSync(GiveFile)
+            );
+            return await cleanRF.cleanRF(GiveFile, GotFile);
+          });
+      } else {
+        ffmpeg(GotFile)
+          .outputOptions([
+            `-pix_fmt yuv420p`,
+            `-c:v libx264`,
+            `-movflags +faststart`,
+            `-filter:v crop='floor(in_w/2)*2:floor(in_h/2)*2'`,
+          ])
+          .save(GiveFile)
+          .on(`end`, async () => {
+            await Mizuki_Static.MGS(
+              ӄʀǟӄɨռʐ,
+              chat,
+              𝓜𝖎𝖟𝖚ӄ𝖎,
+              `
 ┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 │
 │🍯𝐓𝐡𝐞𝐦𝐬𝐞𝐥𝐯𝐞: @${ꜱᴇɴᴅᴇʀeceived}
 └───────〇`,
-                }
-              )
-              .then(
-                cleanRF.cleanRF(
-                  `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${Ping}_${FinalName}.mp4`,
-                  `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${Ping}_${FinalName}.gif`
-                )
-              )
-              .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
+              fs.readFileSync(GiveFile)
+            );
+            return await cleanRF.cleanRF(GiveFile, GotFile);
           });
       }
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
