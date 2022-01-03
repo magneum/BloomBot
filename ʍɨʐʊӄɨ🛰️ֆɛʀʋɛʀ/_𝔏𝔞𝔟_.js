@@ -32,6 +32,7 @@ try {
     INVL: `https://i.postimg.cc/q7k5WK9Z/Mizuki-Invalid.png`,
     HASH: `https://chat.whatsapp.com/EKyTcSlzOmF20MELthQwgy`,
     DEV: `918436686758,19175804221`,
+    HEROKU: process.env.HEROKU,
     MIZUKIQL: (process.env.MIZUKIQL =
       process.env.MIZUKIQL === undefined
         ? `./ʍɨʐʊӄɨ☣️ƈօʀɛ/ʍɨʐʊӄɨ☣️ƈօʀɛ.db`

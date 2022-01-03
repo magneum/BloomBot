@@ -170,7 +170,6 @@ try {
     ӄʀǟӄɨռʐ.on(`group-update`, async (update) => {
       try {
         const groupupdateID = await ӄʀǟӄɨռʐ.groupMetadata(update.jid);
-        // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
         if (update.announce == `false`) {
           return await ӄʀǟӄɨռʐ
             .sendMessage(
