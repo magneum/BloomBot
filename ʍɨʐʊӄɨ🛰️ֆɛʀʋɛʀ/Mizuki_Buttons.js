@@ -32,7 +32,7 @@ try {
     }
     const buttonMessage = {
       contentText: MainText,
-      footerText: `(c)爪ïʐʊӄï🍁乃օȶ _${vers.vers}_\n📅ᴅᴀᴛᴇ: _${Clock}_`,
+      footerText: `(ƈ)𝐌𝐢𝐳𝐮𝐤𝐢🍹𝐁𝐨𝐭 _${vers.vers}_\n📅ᴅᴀᴛᴇ: _${Clock}_`,
       buttons: [
         {
           buttonId: `${ᴋᴇɪ}help`,
@@ -79,7 +79,7 @@ try {
         𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
         {
           contentText: MainText,
-          footerText: `(c)爪ïʐʊӄï🍁乃օȶ _${vers.vers}_\n📅ᴅᴀᴛᴇ: _${Clock}_`,
+          footerText: `(ƈ)𝐌𝐢𝐳𝐮𝐤𝐢🍹𝐁𝐨𝐭 _${vers.vers}_\n📅ᴅᴀᴛᴇ: _${Clock}_`,
           buttons: [
             {
               buttonId: `${ᴋᴇɪ}help`,
@@ -128,7 +128,7 @@ try {
         𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
         {
           contentText: MainText,
-          footerText: `(c)爪ïʐʊӄï🍁乃օȶ _${vers.vers}_\n📅ᴅᴀᴛᴇ: _${Clock}_`,
+          footerText: `(ƈ)𝐌𝐢𝐳𝐮𝐤𝐢🍹𝐁𝐨𝐭 _${vers.vers}_\n📅ᴅᴀᴛᴇ: _${Clock}_`,
           buttons: [
             {
               buttonId: `${ᴋᴇɪ}help`,
@@ -171,7 +171,7 @@ try {
         𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
         {
           contentText: MainText,
-          footerText: `(c)爪ïʐʊӄï🍁乃օȶ _${vers.vers}_\n📅ᴅᴀᴛᴇ: _${Clock}_`,
+          footerText: `(ƈ)𝐌𝐢𝐳𝐮𝐤𝐢🍹𝐁𝐨𝐭 _${vers.vers}_\n📅ᴅᴀᴛᴇ: _${Clock}_`,
           buttons: [
             {
               buttonId: `${ᴋᴇɪ}help`,
@@ -218,7 +218,7 @@ try {
     const buttonMessages = {
       videoMessage: media.message.videoMessage,
       contentText: MainText,
-      footerText: `(c)爪ïʐʊӄï🍁乃օȶ _${vers.vers}_\n📅ᴅᴀᴛᴇ: _${Clock}_`,
+      footerText: `(ƈ)𝐌𝐢𝐳𝐮𝐤𝐢🍹𝐁𝐨𝐭 _${vers.vers}_\n📅ᴅᴀᴛᴇ: _${Clock}_`,
       buttons: [
         {
           buttonId: `${ᴋᴇɪ}help`,
@@ -263,7 +263,7 @@ try {
     const buttonMessages = {
       locationMessage: media.message.locationMessage,
       contentText: MainText,
-      footerText: `(c)爪ïʐʊӄï🍁乃օȶ _${vers.vers}_\n📅ᴅᴀᴛᴇ: _${Clock}_`,
+      footerText: `(ƈ)𝐌𝐢𝐳𝐮𝐤𝐢🍹𝐁𝐨𝐭 _${vers.vers}_\n📅ᴅᴀᴛᴇ: _${Clock}_`,
       buttons: [
         {
           buttonId: `${ᴋᴇɪ}help`,

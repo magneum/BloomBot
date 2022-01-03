@@ -103,7 +103,7 @@ module.exports = {
                 },
                 mentionedJid: members,
               },
-              caption: `(c)爪ïʐʊӄï🍁乃օȶ 
+              caption: `(ƈ)𝐌𝐢𝐳𝐮𝐤𝐢🍹𝐁𝐨𝐭 
 
 ┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 │

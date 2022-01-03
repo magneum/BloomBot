@@ -49,7 +49,7 @@ try {
         𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
         {
           contentText: `*◆ Try Again _${ᴋᴇɪ}${FinalName}_ Later!*`,
-          footerText: `(c)爪ïʐʊӄï🍁乃օȶ _${vers.vers}_\n📅ᴅᴀᴛᴇ: _${Clock}_`,
+          footerText: `(ƈ)𝐌𝐢𝐳𝐮𝐤𝐢🍹𝐁𝐨𝐭 _${vers.vers}_\n📅ᴅᴀᴛᴇ: _${Clock}_`,
           buttons: [
             {
               buttonId: `${ᴋᴇɪ}help`,
@@ -72,7 +72,7 @@ try {
         𝓜𝖎𝖟𝖚ӄ𝖎.Myself,
         {
           contentText: `⚡Try Command: _${ᴋᴇɪ}${FinalName}_ Again Later!`,
-          footerText: `(c)爪ïʐʊӄï🍁乃օȶ _${vers.vers}_\n📅ᴅᴀᴛᴇ: _${Clock}_
+          footerText: `(ƈ)𝐌𝐢𝐳𝐮𝐤𝐢🍹𝐁𝐨𝐭 _${vers.vers}_\n📅ᴅᴀᴛᴇ: _${Clock}_
 
 
 Error: ${ℓαвєяяσя}`,

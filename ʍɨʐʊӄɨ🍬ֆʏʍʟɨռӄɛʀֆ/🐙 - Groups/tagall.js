@@ -138,7 +138,7 @@ or (no-text): ${ᴋᴇɪ}tagall`,
               },
               mentionedJid: members,
             },
-            caption: `(c)爪ïʐʊӄï🍁乃օȶ 
+            caption: `(ƈ)𝐌𝐢𝐳𝐮𝐤𝐢🍹𝐁𝐨𝐭 
 
 ┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 │
@@ -161,7 +161,7 @@ _⚠️Attention Everyone Here In the Group!_`,
             contextInfo: {
               mentionedJid: members,
             },
-            caption: `(c)爪ïʐʊӄï🍁乃օȶ 
+            caption: `(ƈ)𝐌𝐢𝐳𝐮𝐤𝐢🍹𝐁𝐨𝐭 
 
 ┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 │
@@ -181,7 +181,7 @@ ${Needs.join(` `)}`,
             contextInfo: {
               mentionedJid: members,
             },
-            caption: `(c)爪ïʐʊӄï🍁乃օȶ 
+            caption: `(ƈ)𝐌𝐢𝐳𝐮𝐤𝐢🍹𝐁𝐨𝐭 
 
 ┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 │
