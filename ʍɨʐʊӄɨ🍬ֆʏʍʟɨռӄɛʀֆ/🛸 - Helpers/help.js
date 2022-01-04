@@ -52,8 +52,8 @@ module.exports = {
             contentText: `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived}, ${Timers}
 
 ┌──────────────★
-│🔑 𝐏𝐫𝐞𝐟𝐢𝐱: *${ᴋᴇɪ}*
-│🐙 𝐆𝐑𝐎𝐔𝐏: _${ᴋᴇɪ}what_
+│🔑 𝐏𝐫𝐞𝐟𝐢𝐱: *${ᴋᴇɪ}* _(slash)_
+│🐙 𝐆𝐑𝐎𝐔𝐏: https://chat.whatsapp.com/EKyTcSlzOmF20MELthQwgy
 │🦞 𝐆𝐢𝐭𝐡𝐮𝐛: _${ᴋᴇɪ}repo_
 │🍾 𝐆𝐞𝐭 𝐌𝐢𝐳𝐮𝐤𝐢: _${ᴋᴇɪ}request_
 └───────〇
