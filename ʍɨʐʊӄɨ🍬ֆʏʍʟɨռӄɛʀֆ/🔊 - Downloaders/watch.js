@@ -131,7 +131,7 @@ module.exports = {
               ӄʀǟӄɨռʐ,
               chat,
               𝓜𝖎𝖟𝖚ӄ𝖎,
-              `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, ${Timers} @${ꜱᴇɴᴅᴇʀeceived}, 🎥𝐕𝐢𝐝𝐞𝐨
+              `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived}, 🎥𝐕𝐢𝐝𝐞𝐨
 𝗣𝗹𝗲𝗮𝘀𝗲 𝗖𝗵𝗼𝗼𝘀𝗲 𝗙𝗶𝗹𝗲 𝗦𝗺𝗮𝗹𝗹𝗲𝗿 𝗧𝗵𝗲𝗻 𝟯𝟬𝗺𝗶𝗻𝘂𝘁𝗲𝘀!
 
 ┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
@@ -150,7 +150,7 @@ module.exports = {
                 axios
                   .get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
                   .then(async (a) => {
-                    const captionsYtmp4 = `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, ${Timers} @${ꜱᴇɴᴅᴇʀeceived},
+                    const captionsYtmp4 = `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived},
 🎥𝐕𝐢𝐝𝐞𝐨 𝗣𝗹𝗲𝗮𝘀𝗲 𝘄𝗮𝗶𝘁 𝗳𝗼𝗿 𝘁𝗵𝗲 𝗱𝗲𝗹𝗶𝘃𝗲𝗿𝘆 𝗼𝗳 𝐕𝐢𝐝𝐞𝐨!
 
 ┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}

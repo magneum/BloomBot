@@ -70,7 +70,7 @@ module.exports = {
           {
             quoted: chat,
             mimetype: Mimetype.png,
-            caption: `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, ${Timers} @${ꜱᴇɴᴅᴇʀeceived},
+            caption: `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived},
 
 *Here is the display image!*`,
             thumbnail: null,

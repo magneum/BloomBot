@@ -59,17 +59,26 @@ module.exports = {
         𝓜𝖎𝖟𝖚ӄ𝖎.commandName,
         ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
       );
-    } // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-    var 𝖟𝖚ӄ𝖎 = await ӄʀǟӄɨռʐ.chats.all();
-    for (let _ of 𝖟𝖚ӄ𝖎) {
-      return await ӄʀǟӄɨռʐ.sendMessage(
-        _.jid,
-        `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`,
-        MessageType.video,
-        {
-          mimetype: `video/gif`,
-        }
-      );
+    } else {
+      𝖟𝖚ӄ𝖎 = await ӄʀǟӄɨռʐ.chats.all();
+      for (let _ of 𝖟𝖚ӄ𝖎) {
+        await ӄʀǟӄɨռʐ
+          .sendMessage(
+            _.jid,
+            { url: `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4` },
+            MessageType.video,
+            {
+              mimetype: `video/gif`,
+              quoted: chat,
+              caption: `${𝓜𝖎𝖟𝖚ӄ𝖎.body.replace(
+                𝓜𝖎𝖟𝖚ӄ𝖎.body[0] + 𝓜𝖎𝖟𝖚ӄ𝖎.commandName + " ",
+                ""
+              )}`,
+              contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
+            }
+          )
+          .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
+      }
     }
   },
 };
