@@ -36,6 +36,23 @@ module.exports = {
         `🍁爪𝖎𝖟𝖚ӄ𝖎™ ᴠᴇʀɪꜰɪᴇᴅ ꜰɪʟᴇ > ` + FinalName.toUpperCase() + `✔️`
       );
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
+      const jsoncool = JSON.parse(
+        fs.readFileSync(`./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`)
+      );
+      await jsoncool.push(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
+      await fs.writeFileSync(
+        `./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`,
+        JSON.stringify(jsoncool)
+      );
+      await setTimeout(async (error) => {
+        if (error) console.log(error);
+        await jsoncool.splice(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
+        await fs.writeFileSync(
+          `./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`,
+          JSON.stringify(jsoncool)
+        );
+      }, 10000);
+      // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
       if (𝓜𝖎𝖟𝖚ӄ𝖎.isGroup && !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderGroupAdmin) {
         try {
           return Mizuki_Buttons.MIB(
@@ -158,52 +175,26 @@ ${owner} ɪꜱ ᴛʜᴇ ᴏᴡɴᴇʀ ᴏꜰ ᴛʜᴇ ɢʀᴏᴜᴘ*`,
             var Receiver =
               chat.message.extendedTextMessage.contextInfo.participant;
             var personreceived = Receiver.substring(0, Receiver.length - 15);
-            await ӄʀǟӄɨռʐ
-              .sendMessage(
-                𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                {
-                  url: await anime.kick(),
-                },
-                MessageType.image,
-                {
-                  quoted: chat,
-                  mimetype: Mimetype.jpeg || Mimetype.png,
-                  contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ, Receiver] },
-                  caption: `(ƈ)𝐌𝐢𝐳𝐮𝐤𝐢🍹𝐁𝐨𝐭 _${version}_\n📅ᴅᴀᴛᴇ: _${Clock}_
-
-@${ꜱᴇɴᴅᴇʀeceived} ᴋɪᴄᴋᴇᴅ @${personreceived} ᴏᴜᴛᴛᴀ ᴛʜᴇ ɢʀᴏᴜᴘ!`,
-                }
-              )
-              .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
-            await ӄʀǟӄɨռʐ
+            Mizuki_Buttons.MTB(
+              ӄʀǟӄɨռʐ,
+              chat,
+              𝓜𝖎𝖟𝖚ӄ𝖎,
+              `@${ꜱᴇɴᴅᴇʀeceived} ᴋɪᴄᴋᴇᴅ @${personreceived} ᴏᴜᴛᴛᴀ ᴛʜᴇ ɢʀᴏᴜᴘ!`
+            );
+            return await ӄʀǟӄɨռʐ
               .groupRemove(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, [PersonToRemove])
               .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
-            return;
             // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
           } else {
-            await ӄʀǟӄɨռʐ
-              .sendMessage(
-                𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                {
-                  url: await anime.kick(),
-                },
-                MessageType.image,
-                {
-                  quoted: chat,
-                  mimetype: Mimetype.jpeg || Mimetype.png,
-                  contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
-                  caption: `(ƈ)𝐌𝐢𝐳𝐮𝐤𝐢🍹𝐁𝐨𝐭 _${version}_\n📅ᴅᴀᴛᴇ: _${Clock}_
-
-@${ꜱᴇɴᴅᴇʀeceived} ᴋɪᴄᴋᴇᴅ ᴛʜᴀᴛ ᴘᴇʀꜱᴏɴ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ!`,
-                }
-              )
-              .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
-
-            await ӄʀǟӄɨռʐ
+            Mizuki_Buttons.MTB(
+              ӄʀǟӄɨռʐ,
+              chat,
+              𝓜𝖎𝖟𝖚ӄ𝖎,
+              `@${ꜱᴇɴᴅᴇʀeceived} ᴋɪᴄᴋᴇᴅ ᴛʜᴀᴛ ᴘᴇʀꜱᴏɴ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ!`
+            );
+            return await ӄʀǟӄɨռʐ
               .groupRemove(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, [PersonToRemove])
               .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
-
-            return;
           }
         }
         return;
@@ -259,56 +250,27 @@ Reply to the person you want to kick or tag them.\n\nFor instance,  *${ᴋᴇɪ}
             var Receiver =
               chat.message.extendedTextMessage.contextInfo.participant;
             var personreceived = Receiver.substring(0, Receiver.length - 15);
-            await ӄʀǟӄɨռʐ
-              .sendMessage(
-                𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                {
-                  url: await anime.kick(),
-                },
-                MessageType.video,
-                {
-                  quoted: chat,
-                  mimetype: `video/gif`,
-                  contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ, Receiver] },
-                  caption: `(ƈ)𝐌𝐢𝐳𝐮𝐤𝐢🍹𝐁𝐨𝐭 _${version}_\n📅ᴅᴀᴛᴇ: _${Clock}_
+            Mizuki_Buttons.MTB(
+              ӄʀǟӄɨռʐ,
+              chat,
+              𝓜𝖎𝖟𝖚ӄ𝖎,
+              `@${ꜱᴇɴᴅᴇʀeceived} ᴋɪᴄᴋᴇᴅ @${personreceived} ᴏᴜᴛᴛᴀ ᴛʜᴇ ɢʀᴏᴜᴘ!`
+            );
 
-@${ꜱᴇɴᴅᴇʀeceived} ᴋɪᴄᴋᴇᴅ @${personreceived} ᴏᴜᴛᴛᴀ ᴛʜᴇ ɢʀᴏᴜᴘ!`,
-                }
-              )
-              .then(
-                await ӄʀǟӄɨռʐ.groupRemove(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, [
-                  number + `@s.whatsapp.net`,
-                ])
-              )
-              .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
-
-            return;
+            return await ӄʀǟӄɨռʐ.groupRemove(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, [
+              number + `@s.whatsapp.net`,
+            ]);
             // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
           } else {
-            await ӄʀǟӄɨռʐ
-              .sendMessage(
-                𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                {
-                  url: await anime.kick(),
-                },
-                MessageType.image,
-                {
-                  quoted: chat,
-                  mimetype: Mimetype.jpeg || Mimetype.png,
-                  contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
-                  caption: `(ƈ)𝐌𝐢𝐳𝐮𝐤𝐢🍹𝐁𝐨𝐭 _${version}_\n📅ᴅᴀᴛᴇ: _${Clock}_
-
-👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, ${Timers} @${ꜱᴇɴᴅᴇʀeceived}, ᴋɪᴄᴋᴇᴅ ᴛʜᴀᴛ ᴘᴇʀꜱᴏɴ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ!`,
-                }
-              )
-              .then(
-                await ӄʀǟӄɨռʐ.groupRemove(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, [
-                  number + `@s.whatsapp.net`,
-                ])
-              )
-              .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
-
-            return;
+            Mizuki_Buttons.MTB(
+              ӄʀǟӄɨռʐ,
+              chat,
+              𝓜𝖎𝖟𝖚ӄ𝖎,
+              `@${ꜱᴇɴᴅᴇʀeceived} ᴋɪᴄᴋᴇᴅ ᴛʜᴀᴛ ᴘᴇʀꜱᴏɴ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ!`
+            );
+            return await ӄʀǟӄɨռʐ.groupRemove(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, [
+              number + `@s.whatsapp.net`,
+            ]);
           }
           // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
         } else {
