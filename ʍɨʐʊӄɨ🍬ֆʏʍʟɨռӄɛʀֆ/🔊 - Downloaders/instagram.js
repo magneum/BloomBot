@@ -68,26 +68,22 @@ module.exports = {
         );
         // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
       } else {
-        try {
-          const jsoncool = JSON.parse(
-            fs.readFileSync(`./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`)
-          );
-          await jsoncool.push(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
-          await fs.writeFileSync(
+        const jsoncool = JSON.parse(
+          fs.readFileSync(`./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`)
+        );
+        await jsoncool.push(𝓜𝖎𝖟𝖚ӄ𝖎.sender + "_" + 𝓜𝖎𝖟𝖚ӄ𝖎.commandName);
+        fs.writeFileSync(
+          `./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`,
+          JSON.stringify(jsoncool)
+        );
+        setTimeout(async (error) => {
+          if (error) console.log(error);
+          await jsoncool.splice(𝓜𝖎𝖟𝖚ӄ𝖎.sender + "_" + 𝓜𝖎𝖟𝖚ӄ𝖎.commandName);
+          fs.writeFileSync(
             `./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`,
             JSON.stringify(jsoncool)
           );
-          await setTimeout(async (error) => {
-            if (error) console.log(error);
-            await jsoncool.splice(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
-            await fs.writeFileSync(
-              `./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`,
-              JSON.stringify(jsoncool)
-            );
-          }, 10000);
-        } catch (ℓαвєяяσя) {
-          console.log(ℓαвєяяσя);
-        }
+        }, 10000);
         // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
         await hx.igdl(Needs[0]).then(async (result) => {
           for (let i of result.medias) {

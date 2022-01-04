@@ -454,24 +454,31 @@ ${update.desc}`,
         }
       }
       // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-      var persCheck = jsoncool.includes(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
+      var persCheck = jsoncool.includes(
+        𝓜𝖎𝖟𝖚ӄ𝖎.sender + "_" + 𝓜𝖎𝖟𝖚ӄ𝖎.commandName
+      );
       console.log(persCheck);
       if (persCheck === true) {
-        return ӄʀǟӄɨռʐ.sendMessage(
-          𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-          `*🚏CoolDown:* _Wait For 10sec!_`,
-          MessageType.text,
-          {
-            quoted: chat,
-          }
-        );
+        if (𝓜𝖎𝖟𝖚ӄ𝖎.sender === 𝓜𝖎𝖟𝖚ӄ𝖎.fromMe) {
+          return ӄʀǟӄɨռʐ.sendMessage(
+            𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+            `*🙏🏽‍Sir Please Wait For 10sec!*`,
+            MessageType.text,
+            {
+              quoted: chat,
+            }
+          );
+        } else {
+          return ӄʀǟӄɨռʐ.sendMessage(
+            𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+            `*🚏CalmDown:* _Wait For 10sec!_`,
+            MessageType.text,
+            {
+              quoted: chat,
+            }
+          );
+        }
       } else {
-        console.log(
-          Kolor.yellow(
-            `🍁INFO ⬰ ${𝓜𝖎𝖟𝖚ӄ𝖎.commandName} Executed By ${𝓜𝖎𝖟𝖚ӄ𝖎.sender}`
-          )
-        );
-        // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
         const ᴍɪᴢᴜᴋɪɢɪᴛ = require(`simple-git`)();
         await ᴍɪᴢᴜᴋɪɢɪᴛ.fetch();
         var ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ = await ᴍɪᴢᴜᴋɪɢɪᴛ.log([
@@ -510,15 +517,18 @@ ${update.desc}`,
             });
         }
         // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
+        var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
+        var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
         const ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ = ꜱɪᴛʀᴀᴘ.get(𝓜𝖎𝖟𝖚ӄ𝖎.commandName);
         var Needs = 𝓜𝖎𝖟𝖚ӄ𝖎.body.trim().split(/\s+/).slice(1);
         if (!ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ) {
           return await ӄʀǟӄɨռʐ.sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            `*❌Wrong Command Executed! Type ${ᴋᴇɪ}help*`,
+            `@${ꜱᴇɴᴅᴇʀeceived}\n*❌Wrong Command Executed!* _Read: ${ᴋᴇɪ}help_`,
             MessageType.text,
             {
               quoted: chat,
+              contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
             }
           );
         } else {

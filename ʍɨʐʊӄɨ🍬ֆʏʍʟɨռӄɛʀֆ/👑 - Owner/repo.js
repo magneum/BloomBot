@@ -41,7 +41,7 @@ module.exports = {
         const jsoncool = JSON.parse(
           fs.readFileSync(`./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`)
         );
-        await jsoncool.push(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
+        await jsoncool.push(𝓜𝖎𝖟𝖚ӄ𝖎.sender + "_" + 𝓜𝖎𝖟𝖚ӄ𝖎.commandName);
         await fs.writeFileSync(
           `./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`,
           JSON.stringify(jsoncool)

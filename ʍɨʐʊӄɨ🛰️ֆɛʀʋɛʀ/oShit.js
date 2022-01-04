@@ -52,8 +52,8 @@ try {
           footerText: `(ƈ)𝐌𝐢𝐳𝐮𝐤𝐢🍹𝐁𝐨𝐭 _${vers.vers}_\n📅ᴅᴀᴛᴇ: _${Clock}_`,
           buttons: [
             {
-              buttonId: `${ᴋᴇɪ}help`,
-              buttonText: { displayText: `${ᴋᴇɪ}help` },
+              buttonId: `${ᴋᴇɪ}bugreport`,
+              buttonText: { displayText: `${ᴋᴇɪ}bugreport` },
               type: 1,
             },
           ],

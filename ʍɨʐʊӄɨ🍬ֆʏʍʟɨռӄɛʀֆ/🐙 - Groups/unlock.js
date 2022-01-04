@@ -41,14 +41,14 @@ module.exports = {
       const jsoncool = JSON.parse(
         fs.readFileSync(`./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`)
       );
-      await jsoncool.push(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
+      await jsoncool.push(𝓜𝖎𝖟𝖚ӄ𝖎.sender + "_" + 𝓜𝖎𝖟𝖚ӄ𝖎.commandName);
       await fs.writeFileSync(
         `./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`,
         JSON.stringify(jsoncool)
       );
       await setTimeout(async (error) => {
         if (error) console.log(error);
-        await jsoncool.splice(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
+        await jsoncool.splice(𝓜𝖎𝖟𝖚ӄ𝖎.sender + "_" + 𝓜𝖎𝖟𝖚ӄ𝖎.commandName);
         await fs.writeFileSync(
           `./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`,
           JSON.stringify(jsoncool)
@@ -110,28 +110,6 @@ module.exports = {
           ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
         }
       }
-      // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-      try {
-        const jsoncool = JSON.parse(
-          fs.readFileSync(`./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`)
-        );
-        await jsoncool.push(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
-        await fs.writeFileSync(
-          `./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`,
-          JSON.stringify(jsoncool)
-        );
-        await setTimeout(async (error) => {
-          if (error) console.log(error);
-          await jsoncool.splice(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
-          await fs.writeFileSync(
-            `./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`,
-            JSON.stringify(jsoncool)
-          );
-        }, 10000);
-      } catch (ℓαвєяяσя) {
-        console.log(ℓαвєяяσя);
-      }
-      // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
       try {
         𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄʀǟӄɨռʐ.getProfilePicture(𝓜𝖎𝖟𝖚ӄ𝖎.chatId);
       } catch {
