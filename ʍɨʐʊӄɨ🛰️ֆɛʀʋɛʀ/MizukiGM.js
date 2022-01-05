@@ -89,7 +89,7 @@ exports.MizukiGM = async (ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎) => {
                 contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ, Receiver] },
                 quoted: chat,
                 mimetype: `video/gif`,
-                caption: `(ƈ)𝐌𝐢𝐳𝐮𝐤𝐢🍹𝐁𝐨𝐭 _${vers.vers}_\n📅ᴅᴀᴛᴇ: _${Clock}_ 
+                caption: `(ƈ)𝐌𝐢𝐳𝐮𝐤𝐢🍹𝐁𝐨𝐭 _${vers.vers}_\n${Clock} 
 
 ┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 │
@@ -141,7 +141,7 @@ exports.MizukiGM = async (ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎) => {
                 contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
                 quoted: chat,
                 mimetype: `video/gif`,
-                caption: `(ƈ)𝐌𝐢𝐳𝐮𝐤𝐢🍹𝐁𝐨𝐭 _${vers.vers}_\n📅ᴅᴀᴛᴇ: _${Clock}_ 
+                caption: `(ƈ)𝐌𝐢𝐳𝐮𝐤𝐢🍹𝐁𝐨𝐭 _${vers.vers}_\n${Clock} 
 
 ┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 │

@@ -66,6 +66,7 @@ module.exports = {
       var MainText = `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived}, ${Timers}
 
 ┌──────────────★ 𝐊𝐢𝐧𝐠/𝐎𝐰𝐧𝐞𝐫
+│🐙• ${ᴋᴇɪ}dyno: _check heroku usage_
 │🐙• ${ᴋᴇɪ}ban: _ban bot in group/user_
 │🐙• ${ᴋᴇɪ}unban: _unban bot in group/user_
 │🐙• ${ᴋᴇɪ}reboot: _reboot mizuki server_

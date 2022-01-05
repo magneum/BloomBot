@@ -136,7 +136,7 @@ _Server Didn't Send Any Response_`
 │📥𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝: https://tikporntok.com/${TikPork.video}
 │🔥𝐒𝐨𝐮𝐫𝐜𝐞: https://tikporntok.com/${TikPork.source}
 └───────〇`,
-              footerText: `\n(c)𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 \n📅ᴅᴀᴛᴇ: _${Clock}_`,
+              footerText: `\n(c)𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 \n${Clock}`,
               buttons: [
                 {
                   buttonId: `${ᴋᴇɪ}menu`,
@@ -218,7 +218,7 @@ _Server Didn't Send Any Response_`
 │📥𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝: https://tikporntok.com/${TikPork.video}
 │🔥𝐒𝐨𝐮𝐫𝐜𝐞: https://tikporntok.com/${TikPork.source}
 └───────〇`,
-              footerText: `\n(c)𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 \n📅ᴅᴀᴛᴇ: _${Clock}_`,
+              footerText: `\n(c)𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 \n${Clock}`,
               buttons: [
                 {
                   buttonId: `${ᴋᴇɪ}menu`,

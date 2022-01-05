@@ -85,7 +85,7 @@ exports.mainMizukigif = async (ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, �
               
               
 ====<⚡>${𝓜𝖎𝖟𝖚ӄ𝖎Text}`,
-              footerText: `(ƈ)𝐌𝐢𝐳𝐮𝐤𝐢🍹𝐁𝐨𝐭 _${vers.vers}_\n📅ᴅᴀᴛᴇ: _${Clock}_`,
+              footerText: `(ƈ)𝐌𝐢𝐳𝐮𝐤𝐢🍹𝐁𝐨𝐭 _${vers.vers}_\n${Clock}`,
               buttons: [
                 {
                   buttonId: `${ᴋᴇɪ}menu`,
