@@ -15,12 +15,12 @@ if (fs.existsSync(`ʍɨʐʊӄɨ☣️ƈօʀɛ.env`)) {
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
 const env = {
   Mee6: process.env.MIZUKI === undefined ? `Null` : process.env.MIZUKI,
-  HEROKU_API:
-    process.env.HEROKU_API === undefined ? `Null` : process.env.HEROKU_API,
-  HEROKU_BOT_NAME:
-    process.env.HEROKU_BOT_NAME === undefined
+  HEROKU_API_KEY:
+    process.env.HEROKU_API_KEY === undefined ? `Null` : process.env.HEROKU_API_KEY,
+  HEROKU_APP_NAME:
+    process.env.HEROKU_APP_NAME === undefined
       ? `Null`
-      : process.env.HEROKU_BOT_NAME,
+      : process.env.HEROKU_APP_NAME,
   Krakinz: process.env.Krakinz === undefined ? `Null` : process.env.Krakinz,
   IMDB: `5e36f0db`,
   FOXTROT: `^[/]`,

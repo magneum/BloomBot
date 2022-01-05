@@ -25,12 +25,12 @@
       "required": true,
       "value": "HEROKU"
     },
-    "HEROKU_API": {
+    "HEROKU_API_KEY": {
       "description": "Put Your Heroku Api Code..",
       "required": true,
       "value": "get it from hhttps://dashboard.heroku.com/account"
     },
-    "HEROKU_BOT_NAME": {
+    "HEROKU_APP_NAME": {
       "description": "Put Your App name",
       "required": true,
       "value": "App name you gave in the top most box.."

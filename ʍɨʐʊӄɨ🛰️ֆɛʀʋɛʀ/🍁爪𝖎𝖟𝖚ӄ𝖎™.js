@@ -6,7 +6,6 @@
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const Mizuki_Buttons = require(`./Mizuki_Buttons`);
 const Mizuki_Static = require(`./Mizuki_Static`);
-const LetGoChecker = require(`./LetGoChecker`);
 const 𝓜𝖎𝖟𝖚ӄ𝖎ֆʏռօք = require(`./𝓜𝖎𝖟𝖚ӄ𝖎ᴢᴇɴ`);
 const moment = require(`moment-timezone`);
 const PostDataBase = require(`./postDb`);
@@ -68,7 +67,7 @@ async function 爪𝖎𝖟𝖚ӄ𝖎() {
   var commandUsage = new Map();
   console.log(Kolor.yellow(`🍁INFO ⬰ 𝐒𝐲𝐦𝐥𝐢𝐧𝐤𝐢𝐧𝐠 𝐖𝐢𝐭𝐡 𝐌𝐢𝐳𝐮𝐤𝐢 𝐒𝐲𝐬𝐭𝐞𝐦...\n✔️`));
 
-  if (_𝔏𝔞𝔟_.HEROKU_API === `Null` || _𝔏𝔞𝔟_.HEROKU_BOT_NAME === `Null`) {
+  if (_𝔏𝔞𝔟_.HEROKU_API_KEY === `Null` || _𝔏𝔞𝔟_.HEROKU_APP_NAME === `Null`) {
     console.log(
       Kolor.yellow(
         `❌ERROR ⬰  𝐒𝐞𝐞𝐦𝐬 𝐥𝐢𝐤𝐞 𝐇𝐞𝐫𝐨𝐤𝐮 𝐯𝐚𝐫𝐬 𝐚𝐫𝐞 𝐢𝐧𝐯𝐚𝐥𝐢𝐝.𝐏𝐥𝐞𝐚𝐬𝐞 𝐜𝐡𝐞𝐜𝐤 𝐚𝐧𝐝 𝐫𝐞𝐭𝐫𝐲!`
