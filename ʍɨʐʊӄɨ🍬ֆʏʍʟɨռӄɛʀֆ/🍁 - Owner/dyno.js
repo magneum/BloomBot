@@ -61,22 +61,38 @@ module.exports = {
           JSON.stringify(jsoncool)
         );
       }, 10000);
-      var child = require(`child_process`).exec(
-        `python3 ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Heroku.py`
-      );
-      child.stdout.pipe(process.stdout);
-      child.on(`exit`, async function () {
-        process.exitCode = 1;
-        var data = fs.readFileSync(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/𝐇𝐞𝐫𝐨𝐤𝐮.txt`, `utf8`);
-        console.log(data.toString());
+      if (!𝓜𝖎𝖟𝖚ӄ𝖎.fromMe) {
         return Mizuki_Buttons.MIB(
           ӄʀǟӄɨռʐ,
           chat,
           𝓜𝖎𝖟𝖚ӄ𝖎,
-          `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived} (Owner)\n\n${data.toString()}`,
-          _𝔏𝔞𝔟_.MEE
+          `Who Is This Dumbo •@${ꜱᴇɴᴅᴇʀeceived} Trying to Use Owner-Only Commands.
+
+
+┌────★ 🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧   
+│  
+│❌ _𝚈𝚘𝚞 𝙰𝚛𝚎 𝙽𝚘𝚝 𝙰𝚕𝚕𝚘𝚠𝚎𝚍!_
+└───────〇`,
+          _𝔏𝔞𝔟_.ɴᴏᴛᴀᴅᴍɪɴ
         );
-      });
+      } else {
+        var child = require(`child_process`).exec(
+          `python3 ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Heroku.py`
+        );
+        child.stdout.pipe(process.stdout);
+        child.on(`exit`, async function () {
+          process.exitCode = 1;
+          var data = fs.readFileSync(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/𝐇𝐞𝐫𝐨𝐤𝐮.txt`, `utf8`);
+          console.log(data.toString());
+          return Mizuki_Buttons.MIB(
+            ӄʀǟӄɨռʐ,
+            chat,
+            𝓜𝖎𝖟𝖚ӄ𝖎,
+            `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived} (Owner)\n\n${data.toString()}`,
+            _𝔏𝔞𝔟_.MEE
+          );
+        });
+      }
     } catch (ℓαвєяяσя) {
       ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
       console.log(ℓαвєяяσя);
