@@ -493,7 +493,7 @@ ${update.desc}`,
       );
       console.log(persCheck);
       if (persCheck === true) {
-        if (𝓜𝖎𝖟𝖚ӄ𝖎.sender === 𝓜𝖎𝖟𝖚ӄ𝖎.fromMe) {
+        if (𝓜𝖎𝖟𝖚ӄ𝖎.fromMe) {
           return ӄʀǟӄɨռʐ.sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
             `*🙏🏽‍Sir Please Wait For 10sec!*`,
