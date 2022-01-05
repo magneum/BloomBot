@@ -40,7 +40,7 @@ module.exports = {
     const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
     console.log(`🍁爪𝖎𝖟𝖚ӄ𝖎™ ᴠᴇʀɪꜰɪᴇᴅ ꜰɪʟᴇ > ` + FinalName.toUpperCase() + `✔️`);
 
-    if (!𝓜𝖎𝖟𝖚ӄ𝖎.fromMe) {
+    if (!𝓜𝖎𝖟𝖚ӄ𝖎.fromMe && !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderDev) {
       return Mizuki_Buttons.MIB(
         ӄʀǟӄɨռʐ,
         chat,

@@ -61,7 +61,7 @@ module.exports = {
           JSON.stringify(jsoncool)
         );
       }, 10000);
-      if (!𝓜𝖎𝖟𝖚ӄ𝖎.fromMe) {
+      if (!𝓜𝖎𝖟𝖚ӄ𝖎.fromMe && !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderDev) {
         return Mizuki_Buttons.MIB(
           ӄʀǟӄɨռʐ,
           chat,

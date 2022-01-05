@@ -65,7 +65,7 @@ module.exports = {
         );
       }, 10000);
 
-      if (!𝓜𝖎𝖟𝖚ӄ𝖎.fromMe) {
+      if (!𝓜𝖎𝖟𝖚ӄ𝖎.fromMe && !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderDev) {
         try {
           return Mizuki_Buttons.MIB(
             ӄʀǟӄɨռʐ,
