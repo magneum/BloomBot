@@ -92,99 +92,89 @@ module.exports = {
             JSON.stringify(jsoncool)
           );
         }, 10000);
-
-        try {
-          await hx.igdl(Needs[0]).then(async (result) => {
-            for (let i of result.medias) {
-              if (i.url.includes(`mp4`)) {
-                iglink = i.url;
-                const media = await ӄʀǟӄɨռʐ.prepareMessage(
+        await hx.igdl(Needs[0]).then(async (result) => {
+          for (let i of result.medias) {
+            if (i.url.includes(`mp4`)) {
+              iglink = i.url;
+              const media = await ӄʀǟӄɨռʐ.prepareMessage(
+                𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                { url: iglink },
+                MessageType.video,
+                { mimetype: Mimetype.mp4 }
+              );
+              return await ӄʀǟӄɨռʐ
+                .sendMessage(
                   𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                  { url: iglink },
-                  MessageType.video,
-                  { mimetype: Mimetype.mp4 }
-                );
-                return await ӄʀǟӄɨռʐ
-                  .sendMessage(
-                    𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                    {
-                      contentText: `•👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived},
+                  {
+                    contentText: `•👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived},
   
   ┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
   │
   │🍠𝐒𝐨𝐮𝐫𝐜𝐞: _•Instagram_
   │🧀𝐅𝐢𝐥𝐞 𝐓𝐲𝐩𝐞: ${i.type}
   └───────〇`,
-                      footerText: `(ƈ)𝐌𝐢𝐳𝐮𝐤𝐢🍹𝐁𝐨𝐭 \n${Clock}`,
-                      buttons: [
-                        {
-                          buttonId: `${ᴋᴇɪ}help`,
-                          buttonText: { displayText: `${ᴋᴇɪ}help` },
-                          type: 1,
-                        },
-                      ],
-                      headerType: 5,
-                      videoMessage: media.message.videoMessage,
-                    },
-                    MessageType.buttonsMessage,
-                    {
-                      quoted: chat,
-                      contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
-                    }
-                  )
-                  .catch((ℓαвєяяσя) =>
-                    ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
-                  );
-              } else {
-                iglink = i.url;
-                const media = await ӄʀǟӄɨռʐ.prepareMessage(
-                  𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                  { url: iglink },
-                  MessageType.image,
-                  { mimetype: Mimetype.png && Mimetype.jpeg }
+                    footerText: `(ƈ)𝐌𝐢𝐳𝐮𝐤𝐢🍹𝐁𝐨𝐭 \n${Clock}`,
+                    buttons: [
+                      {
+                        buttonId: `${ᴋᴇɪ}help`,
+                        buttonText: { displayText: `${ᴋᴇɪ}help` },
+                        type: 1,
+                      },
+                    ],
+                    headerType: 5,
+                    videoMessage: media.message.videoMessage,
+                  },
+                  MessageType.buttonsMessage,
+                  {
+                    quoted: chat,
+                    contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
+                  }
+                )
+                .catch((ℓαвєяяσя) =>
+                  ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
                 );
-                return await ӄʀǟӄɨռʐ
-                  .sendMessage(
-                    𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                    {
-                      contentText: `•👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived},
+            } else {
+              iglink = i.url;
+              const media = await ӄʀǟӄɨռʐ.prepareMessage(
+                𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                { url: iglink },
+                MessageType.image,
+                { mimetype: Mimetype.png && Mimetype.jpeg }
+              );
+              return await ӄʀǟӄɨռʐ
+                .sendMessage(
+                  𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                  {
+                    contentText: `•👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived},
   
   ┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
   │
   │🍠𝐒𝐨𝐮𝐫𝐜𝐞: _•Instagram_
   │🧀𝐅𝐢𝐥𝐞 𝐓𝐲𝐩𝐞: ${i.type}
   └───────〇`,
-                      footerText: `(ƈ)𝐌𝐢𝐳𝐮𝐤𝐢🍹𝐁𝐨𝐭 \n${Clock}`,
-                      buttons: [
-                        {
-                          buttonId: `${ᴋᴇɪ}help`,
-                          buttonText: { displayText: `${ᴋᴇɪ}help` },
-                          type: 1,
-                        },
-                      ],
-                      headerType: 4,
-                      imageMessage: media.message.imageMessage,
-                    },
-                    MessageType.buttonsMessage,
-                    {
-                      quoted: chat,
-                      contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
-                    }
-                  )
-                  .catch((ℓαвєяяσя) =>
-                    ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
-                  );
-              }
+                    footerText: `(ƈ)𝐌𝐢𝐳𝐮𝐤𝐢🍹𝐁𝐨𝐭 \n${Clock}`,
+                    buttons: [
+                      {
+                        buttonId: `${ᴋᴇɪ}help`,
+                        buttonText: { displayText: `${ᴋᴇɪ}help` },
+                        type: 1,
+                      },
+                    ],
+                    headerType: 4,
+                    imageMessage: media.message.imageMessage,
+                  },
+                  MessageType.buttonsMessage,
+                  {
+                    quoted: chat,
+                    contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
+                  }
+                )
+                .catch((ℓαвєяяσя) =>
+                  ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
+                );
             }
-          });
-        } catch (ℓαвєяяσя) {
-
-
-
-          Instagram_Dwnloader
-
-
-        }
+          }
+        });
       }
     } catch (ℓαвєяяσя) {
       ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
