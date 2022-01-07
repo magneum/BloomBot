@@ -6,7 +6,7 @@
 const Mizuki_Buttons = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Mizuki_Buttons`);
 const Mizuki_Static = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Mizuki_Static`);
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
-const { yta } = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/youmaker`);
+const { YouTube_Music } = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/youmaker`);
 const cleanRF = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/cleanRF`);
 const _𝔏𝔞𝔟_ = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/_𝔏𝔞𝔟_`);
 const ꜰᴜᴄᴋ = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/oShit`);
@@ -130,7 +130,7 @@ module.exports = {
               youfound.thumbnail
             );
           } else {
-            await yta(youfound.url).then(async (gotResp) => {
+            await YouTube_Music(youfound.url).then(async (gotResp) => {
               console.log(youfound.url);
               const { dl_link, thumb, title, filesizeF, filesize } = gotResp;
               Mizuki_Buttons.MIB(

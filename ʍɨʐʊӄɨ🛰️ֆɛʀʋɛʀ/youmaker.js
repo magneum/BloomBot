@@ -31,7 +31,7 @@ function post(url, formdata) {
   });
 }
 
-function yta(url) {
+function YouTube_Music(url) {
   return new Promise((resolve, reject) => {
     if (ytIdRegex.test(url)) {
       let ytId = ytIdRegex.exec(url);
@@ -134,7 +134,7 @@ function igdl(url_media) {
   });
 }
 
-function ytv(url) {
+function YouTube_Video(url) {
   return new Promise((resolve, reject) => {
     if (ytIdRegex.test(url)) {
       let ytId = ytIdRegex.exec(url);
@@ -214,8 +214,8 @@ function formatDate(n, locale = "id") {
     second: "numeric",
   });
 }
-module.exports.yta = yta;
-module.exports.ytv = ytv;
+module.exports.YouTube_Music = YouTube_Music;
+module.exports.YouTube_Video = YouTube_Video;
 module.exports.igdl = igdl;
 module.exports.upload = upload;
 module.exports.formatDate = formatDate;
