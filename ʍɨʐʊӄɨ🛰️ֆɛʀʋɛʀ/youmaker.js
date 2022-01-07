@@ -12,7 +12,7 @@ const ytIdRegex =
   /^((?:https?:)?\/\/)?((?:www|m)\.)?((?:youtube\.com|youtu.be))(\/(?:[\w\-]+\?v=|embed\/|v\/)?)([\w\-]+)(\S+)?$/;
 
 //fucntion
-function post(url, formdata) {
+function YouTube_Post(url, formdata) {
   console.log(
     Object.keys(formdata)
       .map((key) => `${key}=${encodeURIComponent(formdata[key])}`)
@@ -36,7 +36,7 @@ function YouTube_Music(url) {
     if (ytIdRegex.test(url)) {
       let ytId = ytIdRegex.exec(url);
       url = "https://youtu.be/" + ytId[1];
-      post("https://www.y2mate.com/mates/en60/analyze/ajax", {
+      YouTube_Post("https://www.y2mate.com/mates/en60/analyze/ajax", {
         url,
         q_auto: 0,
         ajax: 1,
@@ -53,7 +53,7 @@ function YouTube_Music(url) {
           let thumb = document.querySelector("img").src;
           let title = document.querySelector("b").innerHTML;
 
-          post("https://www.y2mate.com/mates/en60/convert", {
+          YouTube_Post("https://www.y2mate.com/mates/en60/convert", {
             type: "youtube",
             _id: id[1],
             v_id: ytId[1],
@@ -80,7 +80,7 @@ function YouTube_Music(url) {
   });
 }
 
-function igdl(url_media) {
+function Instagram_Dwnloader(url_media) {
   return new Promise((resolve, reject) => {
     url_media = url_media.replace("reel", "p");
     var url = "https://igram.io/i/";
@@ -105,7 +105,7 @@ function igdl(url_media) {
     };
 
     axios
-      .post(url, qs.stringify(requestBody), config)
+      .YouTube_Post(url, qs.stringify(requestBody), config)
       .then((result) => {
         let $ = cheerio.load(result.data),
           ig = [];
@@ -139,7 +139,7 @@ function YouTube_Video(url) {
     if (ytIdRegex.test(url)) {
       let ytId = ytIdRegex.exec(url);
       url = "https://youtu.be/" + ytId[1];
-      post("https://www.y2mate.com/mates/en60/analyze/ajax", {
+      YouTube_Post("https://www.y2mate.com/mates/en60/analyze/ajax", {
         url,
         q_auto: 0,
         ajax: 1,
@@ -153,7 +153,7 @@ function YouTube_Video(url) {
           thumb = document.querySelector("img").src;
           title = document.querySelector("b").innerHTML;
 
-          post("https://www.y2mate.com/mates/en60/convert", {
+          YouTube_Post("https://www.y2mate.com/mates/en60/convert", {
             type: "youtube",
             _id: id[1],
             v_id: ytId[1],
@@ -216,6 +216,6 @@ function formatDate(n, locale = "id") {
 }
 module.exports.YouTube_Music = YouTube_Music;
 module.exports.YouTube_Video = YouTube_Video;
-module.exports.igdl = igdl;
+module.exports.Instagram_Dwnloader = Instagram_Dwnloader;
 module.exports.upload = upload;
 module.exports.formatDate = formatDate;
