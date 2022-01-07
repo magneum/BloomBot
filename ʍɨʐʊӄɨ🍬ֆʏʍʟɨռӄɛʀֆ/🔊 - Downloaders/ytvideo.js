@@ -16,7 +16,7 @@ const request = require(`request`);
 const yts = require(`yt-search`);
 const axios = require(`axios`);
 const fs = require(`fs`);
-const RegexYouTube =
+const ytIdRegex =
   /^((?:https?:)?\/\/)?((?:www|m)\.)?((?:youtube\.com|youtu.be))(\/(?:[\w\-]+\?v=|embed\/|v\/)?)([\w\-]+)(\S+)?$/;
 var path = require(`path`);
 var scriptName = path.basename(__filename);
@@ -68,7 +68,7 @@ module.exports = {
           𝓜𝖎𝖟𝖚ӄ𝖎.commandName,
           ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
         );
-      } else if (!RegexYouTube.test(Needs[0])) {
+      } else if (!ytIdRegex.test(Needs[0])) {
         var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(𝓜𝖎𝖟𝖚ӄ𝖎.commandName);
         var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
           𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ === undefined ? `Null` : 𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ;
