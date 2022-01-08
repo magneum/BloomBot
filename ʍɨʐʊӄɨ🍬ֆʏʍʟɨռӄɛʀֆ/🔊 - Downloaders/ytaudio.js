@@ -46,6 +46,7 @@ module.exports = {
     version
   ) {
     try {
+      let URL;
       var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
       var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
       const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
@@ -129,15 +130,16 @@ module.exports = {
 └───────〇`,
               youfound.thumbnail
             );
-          } else {
-            await YouTube_Music(youfound.url).then(async (gotResp) => {
-              console.log(youfound.url);
-              const { dl_link, thumb, title, filesizeF, filesize } = gotResp;
-              Mizuki_Buttons.MIB(
-                ӄʀǟӄɨռʐ,
-                chat,
-                𝓜𝖎𝖟𝖚ӄ𝖎,
-                `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived},    
+          }
+          URL = youfound.url;
+        });
+        await YouTube_Music(URL).then(async (gotResp) => {
+          const { dl_link, thumb, title, filesizeF, filesize } = gotResp;
+          Mizuki_Buttons.MIB(
+            ӄʀǟӄɨռʐ,
+            chat,
+            𝓜𝖎𝖟𝖚ӄ𝖎,
+            `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived},    
 🔔𝐀𝐮𝐝𝐢𝐨 𝗣𝗹𝗲𝗮𝘀𝗲 𝘄𝗮𝗶𝘁 𝗳𝗼𝗿 𝘁𝗵𝗲 𝗱𝗲𝗹𝗶𝘃𝗲𝗿𝘆 𝗼𝗳 𝐀𝐮𝐝𝐢𝐨!
 
 ┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
@@ -149,49 +151,28 @@ module.exports = {
 │📜𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧⤞ ${youfound.description}
 │🔗𝐋𝐢𝐧𝐤⤞ ${youfound.url}
 └───────〇`,
-                youfound.thumbnail
-              );
-              try {
-                axios
-                  .get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
-                  .then(async (a) => {
-                    DAudio(dl_link, filename, async function () {
-                      await ӄʀǟӄɨռʐ
-                        .sendMessage(
-                          𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                          fs.readFileSync(filename),
-                          MessageType.audio,
-                          {
-                            quoted: chat,
-                            mimetype: Mimetype.mp4Audio,
-                          }
-                        )
-                        .then(cleanRF.cleanRF(filename))
-                        .catch((ℓαвєяяσя) =>
-                          ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
-                        );
-                    });
-                  });
-              } catch (ℓαвєяяσя) {
-                console.log(ℓαвєяяσя);
-                ӄʀǟӄɨռʐ.sendMessage(
-                  𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                  `*No Song Found... Try Different Search Terms!*
-
-┌────★𝙏𝙧𝙮 𝙊𝙩𝙝𝙚𝙧 𝘾𝙤𝙢𝙢𝙖𝙣𝙙𝙨:
-│
-│${ᴋᴇɪ}ytsearch (song name)
-│${ᴋᴇɪ}ytaudio (song link)
-│${ᴋᴇɪ}ytvideo (video link)
-└───────〇`,
-                  MessageType.text,
-                  {
-                    quoted: chat,
-                  }
-                );
-              }
+            youfound.thumbnail
+          );
+          axios
+            .get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
+            .then(async (a) => {
+              DAudio(dl_link, filename, async function () {
+                await ӄʀǟӄɨռʐ
+                  .sendMessage(
+                    𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                    fs.readFileSync(filename),
+                    MessageType.audio,
+                    {
+                      quoted: chat,
+                      mimetype: Mimetype.mp4Audio,
+                    }
+                  )
+                  .catch((ℓαвєяяσя) =>
+                    ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
+                  );
+                await cleanRF.cleanRF(filename);
+              });
             });
-          }
         });
       }
     } catch (ℓαвєяяσя) {

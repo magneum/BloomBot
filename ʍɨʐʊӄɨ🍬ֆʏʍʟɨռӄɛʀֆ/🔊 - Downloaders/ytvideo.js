@@ -46,6 +46,7 @@ module.exports = {
     version
   ) {
     try {
+      let URL;
       var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
       var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
       const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
@@ -130,10 +131,10 @@ module.exports = {
                 mimetype: mime,
                 caption: text,
               })
-              .then(cleanRF.cleanRF(filename));
+              .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
+            await cleanRF.cleanRF(filename);
           });
         };
-
         GroupVideos.forEach(async function (youfound) {
           if (youfound.seconds > `1800`) {
             return Mizuki_Buttons.MIB(
@@ -152,14 +153,16 @@ module.exports = {
 └───────〇`,
               youfound.thumbnail
             );
-          } else {
-            await YouTube_Video(youfound.url).then(async (gotResp) => {
-              const { dl_link, thumb, title, filesizeF, filesize } = gotResp;
-              try {
-                axios
-                  .get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
-                  .then(async (a) => {
-                    const captionsYtmp4 = `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived},
+          }
+          URL = youfound.url;
+        });
+        await YouTube_Video(URL).then(async (gotResp) => {
+          const { dl_link, thumb, title, filesizeF, filesize } = gotResp;
+          try {
+            axios
+              .get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
+              .then(async (a) => {
+                const captionsYtmp4 = `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived},
 🎥𝐕𝐢𝐝𝐞𝐨 𝗣𝗹𝗲𝗮𝘀𝗲 𝘄𝗮𝗶𝘁 𝗳𝗼𝗿 𝘁𝗵𝗲 𝗱𝗲𝗹𝗶𝘃𝗲𝗿𝘆 𝗼𝗳 𝐕𝐢𝐝𝐞𝐨!
 
 ┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
@@ -171,14 +174,14 @@ module.exports = {
 │📜𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧⤞ ${youfound.description}
 │🔗𝐋𝐢𝐧𝐤⤞ ${youfound.url}
 └───────〇`;
-                    DVideo(thumb, captionsYtmp4);
-                    DVideo(dl_link);
-                  });
-              } catch (ℓαвєяяσя) {
-                console.log(ℓαвєяяσя);
-                ӄʀǟӄɨռʐ.sendMessage(
-                  𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                  `*No Song Found... Try Different Search Terms!*
+                DVideo(thumb, captionsYtmp4);
+                DVideo(dl_link);
+              });
+          } catch (ℓαвєяяσя) {
+            console.log(ℓαвєяяσя);
+            ӄʀǟӄɨռʐ.sendMessage(
+              𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+              `*No Song Found... Try Different Search Terms!*
 
 ┌────★𝙏𝙧𝙮 𝙊𝙩𝙝𝙚𝙧 𝘾𝙤𝙢𝙢𝙖𝙣𝙙𝙨:
 │
@@ -186,13 +189,11 @@ module.exports = {
 │${ᴋᴇɪ}ytaudio (song link)
 │${ᴋᴇɪ}ytvideo (video link)
 └───────〇`,
-                  MessageType.text,
-                  {
-                    quoted: chat,
-                  }
-                );
+              MessageType.text,
+              {
+                quoted: chat,
               }
-            });
+            );
           }
         });
       }

@@ -146,8 +146,8 @@ module.exports = {
 └───────〇`,
             youfound.thumbnail
           );
+          URL = youfound.url;
         });
-        URL = youfound.url;
         await YouTube_Music(URL).then(async (gotResp) => {
           const { dl_link, thumb, title, filesizeF, filesize } = gotResp;
           axios
@@ -164,10 +164,10 @@ module.exports = {
                       mimetype: Mimetype.mp4Audio,
                     }
                   )
-                  .then(cleanRF.cleanRF(filename))
                   .catch((ℓαвєяяσя) =>
                     ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
                   );
+                await cleanRF.cleanRF(filename);
               });
             });
         });
