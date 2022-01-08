@@ -127,8 +127,8 @@ module.exports = {
                 mimetype: mime,
                 caption: text,
               })
+              .then(cleanRF.cleanRF(filename))
               .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
-            await cleanRF.cleanRF(filename);
           });
         };
 
