@@ -44,6 +44,7 @@ module.exports = {
     version
   ) {
     try {
+      let URL;
       var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
       var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
       const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
@@ -146,11 +147,8 @@ module.exports = {
             youfound.thumbnail
           );
         });
-        var srch = Needs.join(" ");
-        aramas = await yts(srch);
-        aramat = aramas.all;
-        var mulaikah = aramat[0].url;
-        await YouTube_Music(mulaikah).then(async (gotResp) => {
+        URL = youfound.url;
+        await YouTube_Music(URL).then(async (gotResp) => {
           const { dl_link, thumb, title, filesizeF, filesize } = gotResp;
           axios
             .get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
