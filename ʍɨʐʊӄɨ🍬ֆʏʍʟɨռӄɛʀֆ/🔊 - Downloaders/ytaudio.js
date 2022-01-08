@@ -104,9 +104,9 @@ module.exports = {
         const LinkForGroups = await yts(Needs.join(` `));
         const GroupVideos = LinkForGroups.videos.slice(0, 1);
         const filename = `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FinalName}_${ꜱᴇɴᴅᴇʀɪᴅ}_${Ping}`;
-        var DAudio = function (uri, filename, callback) {
-          request.head(uri, function (ℓαвєяяσя, gotResp, body) {
-            mime = gotResp.headers[`content-type`];
+        var ʏᴛᴀᴅᴏᴡɴʟᴏᴀᴅ = function (uri, filename, callback) {
+          request.head(uri, function (ℓαвєяяσя, ɢᴏᴛʀᴇꜱᴘ, body) {
+            mime = ɢᴏᴛʀᴇꜱᴘ.headers[`content-type`];
             request(uri)
               .pipe(fs.createWriteStream(filename))
               .on(`close`, callback);
@@ -151,12 +151,12 @@ module.exports = {
           );
           URL = youfound.url;
         });
-        await YouTube_Music(URL).then(async (gotResp) => {
-          const { dl_link, thumb, title, filesizeF, filesize } = gotResp;
+        await YouTube_Music(URL).then(async (ɢᴏᴛʀᴇꜱᴘ) => {
+          const { dl_link, thumb, title, filesizeF, filesize } = ɢᴏᴛʀᴇꜱᴘ;
           await axios
             .get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
             .then(async (a) => {
-              DAudio(dl_link, filename, async function () {
+              ʏᴛᴀᴅᴏᴡɴʟᴏᴀᴅ(dl_link, filename, async function () {
                 await ӄʀǟӄɨռʐ
                   .sendMessage(
                     𝓜𝖎𝖟𝖚ӄ𝖎.chatId,

@@ -103,7 +103,7 @@ module.exports = {
 
         const LinkForGroups = await yts(Needs.join(` `));
         const GroupVideos = LinkForGroups.videos.slice(0, 1);
-        const DVideo = async (url, text = ``) => {
+        const ʏᴛᴠᴅᴏᴡɴʟᴏᴀᴅ = async (url, text = ``) => {
           const filename = `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FinalName}_${ꜱᴇɴᴅᴇʀɪᴅ}_${Ping}`;
           let mime = ``;
           var download = function (uri, filename, callback) {
@@ -156,8 +156,8 @@ module.exports = {
           }
           URL = youfound.url;
         });
-        await YouTube_Video(URL).then(async (gotResp) => {
-          const { dl_link, thumb, title, filesizeF, filesize } = gotResp;
+        await YouTube_Video(URL).then(async (ɢᴏᴛʀᴇꜱᴘ) => {
+          const { dl_link, thumb, title, filesizeF, filesize } = ɢᴏᴛʀᴇꜱᴘ;
           await axios
             .get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
             .then(async (a) => {
@@ -173,8 +173,8 @@ module.exports = {
 │📜𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧⤞ ${youfound.description}
 │🔗𝐋𝐢𝐧𝐤⤞ ${youfound.url}
 └───────〇`;
-              DVideo(thumb, captionsYtmp4);
-              DVideo(dl_link);
+              ʏᴛᴠᴅᴏᴡɴʟᴏᴀᴅ(thumb, captionsYtmp4);
+              ʏᴛᴠᴅᴏᴡɴʟᴏᴀᴅ(dl_link);
             });
         });
       }
