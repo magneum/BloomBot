@@ -158,11 +158,10 @@ module.exports = {
         });
         await YouTube_Video(URL).then(async (gotResp) => {
           const { dl_link, thumb, title, filesizeF, filesize } = gotResp;
-          try {
-            axios
-              .get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
-              .then(async (a) => {
-                const captionsYtmp4 = `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived},
+          await axios
+            .get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
+            .then(async (a) => {
+              const captionsYtmp4 = `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived},
 🎥𝐕𝐢𝐝𝐞𝐨 𝗣𝗹𝗲𝗮𝘀𝗲 𝘄𝗮𝗶𝘁 𝗳𝗼𝗿 𝘁𝗵𝗲 𝗱𝗲𝗹𝗶𝘃𝗲𝗿𝘆 𝗼𝗳 𝐕𝐢𝐝𝐞𝐨!
 
 ┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
@@ -174,27 +173,9 @@ module.exports = {
 │📜𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧⤞ ${youfound.description}
 │🔗𝐋𝐢𝐧𝐤⤞ ${youfound.url}
 └───────〇`;
-                DVideo(thumb, captionsYtmp4);
-                DVideo(dl_link);
-              });
-          } catch (ℓαвєяяσя) {
-            console.log(ℓαвєяяσя);
-            ӄʀǟӄɨռʐ.sendMessage(
-              𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              `*No Song Found... Try Different Search Terms!*
-
-┌────★𝙏𝙧𝙮 𝙊𝙩𝙝𝙚𝙧 𝘾𝙤𝙢𝙢𝙖𝙣𝙙𝙨:
-│
-│${ᴋᴇɪ}ytsearch (song name)
-│${ᴋᴇɪ}ytaudio (song link)
-│${ᴋᴇɪ}ytvideo (video link)
-└───────〇`,
-              MessageType.text,
-              {
-                quoted: chat,
-              }
-            );
-          }
+              DVideo(thumb, captionsYtmp4);
+              DVideo(dl_link);
+            });
         });
       }
     } catch (ℓαвєяяσя) {

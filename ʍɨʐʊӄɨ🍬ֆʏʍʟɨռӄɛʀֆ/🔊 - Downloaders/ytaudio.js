@@ -131,10 +131,6 @@ module.exports = {
               youfound.thumbnail
             );
           }
-          URL = youfound.url;
-        });
-        await YouTube_Music(URL).then(async (gotResp) => {
-          const { dl_link, thumb, title, filesizeF, filesize } = gotResp;
           Mizuki_Buttons.MIB(
             ӄʀǟӄɨռʐ,
             chat,
@@ -153,7 +149,11 @@ module.exports = {
 └───────〇`,
             youfound.thumbnail
           );
-          axios
+          URL = youfound.url;
+        });
+        await YouTube_Music(URL).then(async (gotResp) => {
+          const { dl_link, thumb, title, filesizeF, filesize } = gotResp;
+          await axios
             .get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
             .then(async (a) => {
               DAudio(dl_link, filename, async function () {
