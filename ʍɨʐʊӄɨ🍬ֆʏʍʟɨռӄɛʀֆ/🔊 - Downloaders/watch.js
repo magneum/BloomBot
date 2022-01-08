@@ -99,7 +99,7 @@ module.exports = {
       } else {
         const LinkForGroups = await yts(Needs.join(` `));
         const GroupVideos = LinkForGroups.videos.slice(0, 1);
-        const filename = `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FinalName}_${ꜱᴇɴᴅᴇʀɪᴅ}_${Ping}`;
+        const filename = `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FinalName}_${Ping}_${ꜱᴇɴᴅᴇʀɪᴅ}`;
         const ʏᴛᴠᴅᴏᴡɴʟᴏᴀᴅ = async (url, text = ``) => {
           let mime = ``;
           var download = function (uri, filename, callback) {
@@ -159,17 +159,7 @@ module.exports = {
             .get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
             .then(async (a) => {
               const captionsYtmp4 = `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived},
-🎥𝐕𝐢𝐝𝐞𝐨 𝗣𝗹𝗲𝗮𝘀𝗲 𝘄𝗮𝗶𝘁 𝗳𝗼𝗿 𝘁𝗵𝗲 𝗱𝗲𝗹𝗶𝘃𝗲𝗿𝘆 𝗼𝗳 𝐕𝐢𝐝𝐞𝐨!
-
-┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-│
-│🍻𝐓𝐢𝐭𝐥𝐞⤞ ${youfound.title}
-│🙈𝐕𝐢𝐞𝐰𝐬⤞ ${youfound.views}
-│⏰𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧⤞ ${youfound.timestamp}
-│✒️𝐀𝐮𝐭𝐡𝐨𝐫⤞ ${youfound.author.name}
-│📜𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧⤞ ${youfound.description}
-│🔗𝐋𝐢𝐧𝐤⤞ ${youfound.url}
-└───────〇`;
+🎥𝐕𝐢𝐝𝐞𝐨 𝗣𝗹𝗲𝗮𝘀𝗲 𝘄𝗮𝗶𝘁 𝗳𝗼𝗿 𝘁𝗵𝗲 𝗱𝗲𝗹𝗶𝘃𝗲𝗿𝘆 𝗼𝗳 𝐕𝐢𝐝𝐞𝐨!`;
               ʏᴛᴠᴅᴏᴡɴʟᴏᴀᴅ(thumb, captionsYtmp4);
               ʏᴛᴠᴅᴏᴡɴʟᴏᴀᴅ(dl_link);
             });

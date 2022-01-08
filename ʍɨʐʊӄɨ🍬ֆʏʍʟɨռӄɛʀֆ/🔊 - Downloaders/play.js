@@ -99,7 +99,7 @@ module.exports = {
       } else {
         const LinkForGroups = await yts(Needs.join(` `));
         const GroupVideos = LinkForGroups.videos.slice(0, 1);
-        const filename = `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FinalName}_${ꜱᴇɴᴅᴇʀɪᴅ}_${Ping}`;
+        const filename = `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FinalName}_${Ping}_${ꜱᴇɴᴅᴇʀɪᴅ}`;
         var ʏᴛᴀᴅᴏᴡɴʟᴏᴀᴅ = function (uri, filename, callback) {
           request.head(uri, function (ℓαвєяяσя, ɢᴏᴛʀᴇꜱᴘ, body) {
             mime = ɢᴏᴛʀᴇꜱᴘ.headers[`content-type`];
