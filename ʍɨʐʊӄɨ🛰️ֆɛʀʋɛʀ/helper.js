@@ -5,7 +5,6 @@
 `🍁`;
 const _𝔏𝔞𝔟_ = require(`./_𝔏𝔞𝔟_`);
 var ƈʏɮօʀɢƈʟǟ = require(`./𝓜𝖎𝖟𝖚ӄ𝖎ƈʟǟ`);
-const Kolor = require(`chalk`);
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
 exports.resolve = function (messageInstance, ӄʀǟӄɨռʐ, groupMetadata) {
   var DEVstring = _𝔏𝔞𝔟_.DEV;
