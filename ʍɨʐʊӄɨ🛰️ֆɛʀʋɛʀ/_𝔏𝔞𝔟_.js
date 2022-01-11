@@ -14,7 +14,7 @@ if (fs.existsSync(`ʍɨʐʊӄɨ☣️ƈօʀɛ.env`)) {
 }
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
 const env = {
-  Mee6: process.env.MIZUKI === undefined ? `Null` : process.env.MIZUKI,
+  MIZUKI: process.env.MIZUKI === undefined ? `Null` : process.env.MIZUKI,
   HEROKU_API_KEY:
     process.env.HEROKU_API_KEY === undefined ? `Null` : process.env.HEROKU_API_KEY,
   HEROKU_APP_NAME:

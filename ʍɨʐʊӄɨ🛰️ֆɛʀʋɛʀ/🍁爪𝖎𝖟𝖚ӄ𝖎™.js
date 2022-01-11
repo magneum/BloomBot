@@ -84,7 +84,7 @@ async function 爪𝖎𝖟𝖚ӄ𝖎() {
   await AutoKrakz();
 
   try {
-    var session = 𝓜𝖎𝖟𝖚ӄ𝖎ֆʏռօք.Mee6reignite(_𝔏𝔞𝔟_.Mee6);
+    var session = 𝓜𝖎𝖟𝖚ӄ𝖎ֆʏռօք.Mee6reignite(_𝔏𝔞𝔟_.MIZUKI);
     ӄʀǟӄɨռʐ.loadAuthInfo(session);
   } catch (ℓαвєяяσя) {
     console.log(
