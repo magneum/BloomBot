@@ -86,7 +86,7 @@ async function 爪𝖎𝖟𝖚ӄ𝖎() {
     ӄʀǟӄɨռʐ.loadAuthInfo(session);
   } catch (ℓαвєяяσя) {
     console.log(
-      Kolor.red(`𝗜𝗻𝗰𝗼𝗿𝗿𝗲𝗰𝘁 𝗦𝗲𝘀𝘀𝗶𝗼𝗻 𝗦𝘁𝗿𝗶𝗻𝗴. 𝗣𝗹𝗲𝗮𝘀𝗲 𝗮𝘂𝘁𝗵𝗲𝗻𝘁𝗶𝗰𝗮𝘁𝗲 𝗮𝗴𝗮𝗶𝗻!`)
+      Kolor.red(`🍁INFO ⬰ Mizuki Code Is Wrong. Please Re-Auth using whatsapp!`)
     );
     process.exit(0);
   }
