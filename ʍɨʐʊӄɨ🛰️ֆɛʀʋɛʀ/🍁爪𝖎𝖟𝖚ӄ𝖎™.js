@@ -65,8 +65,7 @@ var ӄʀǟӄɨռʐ = 𝓜𝖎𝖟𝖚ӄ𝖎ֆʏռօք.WhatsApp;
 async function 爪𝖎𝖟𝖚ӄ𝖎() {
   var ꜱɪᴛʀᴀᴘ = new Map();
   var commandUsage = new Map();
-  console.log(Kolor.yellow(`🍁INFO ⬰ 𝐒𝐲𝐦𝐥𝐢𝐧𝐤𝐢𝐧𝐠 𝐖𝐢𝐭𝐡 𝐌𝐢𝐳𝐮𝐤𝐢 𝐒𝐲𝐬𝐭𝐞𝐦...\n✔️`));
-
+  console.log(Kolor.yellow(`🍁INFO ⬰ 𝐒𝐲𝐦𝐥𝐢𝐧𝐤𝐢𝐧𝐠 𝐖𝐢𝐭𝐡 𝐌𝐢𝐳𝐮𝐤𝐢 𝐒𝐲𝐬𝐭𝐞𝐦...✔️`));
   if (_𝔏𝔞𝔟_.HEROKU_API_KEY === `Null` || _𝔏𝔞𝔟_.HEROKU_APP_NAME === `Null`) {
     console.log(
       Kolor.yellow(
@@ -80,10 +79,9 @@ async function 爪𝖎𝖟𝖚ӄ𝖎() {
       `⬡==========================⬡    🍁 爪𝖎𝖟𝖚ӄ𝖎™ 🍁    ⬡==========================⬡`
     )
   );
-  console.log(Kolor.yellow(`🍁INFO ⬰ Checking For 🍁爪𝖎𝖟𝖚ӄ𝖎™Updates ...\n✔️`));
-  await AutoKrakz();
-
   try {
+    console.log(Kolor.yellow(`🍁INFO ⬰ Checking For 🍁爪𝖎𝖟𝖚ӄ𝖎™Updates ...✔️`));
+    await AutoKrakz();
     var session = 𝓜𝖎𝖟𝖚ӄ𝖎ֆʏռօք.Mee6reignite(_𝔏𝔞𝔟_.MIZUKI);
     ӄʀǟӄɨռʐ.loadAuthInfo(session);
   } catch (ℓαвєяяσя) {
