@@ -87,19 +87,10 @@ async function 爪𝖎𝖟𝖚ӄ𝖎() {
     var session = 𝓜𝖎𝖟𝖚ӄ𝖎ֆʏռօք.Mee6reignite(_𝔏𝔞𝔟_.Mee6);
     ӄʀǟӄɨռʐ.loadAuthInfo(session);
   } catch (ℓαвєяяσя) {
-    if (
-      ℓαвєяяσя instanceof Typeℓαвєяяσя ||
-      ℓαвєяяσя.message === `given authInfo is null` ||
-      ℓαвєяяσя instanceof Syntaxℓαвєяяσя
-    ) {
-      console.log(
-        Kolor.red(`𝗜𝗻𝗰𝗼𝗿𝗿𝗲𝗰𝘁 𝗦𝗲𝘀𝘀𝗶𝗼𝗻 𝗦𝘁𝗿𝗶𝗻𝗴. 𝗣𝗹𝗲𝗮𝘀𝗲 𝗮𝘂𝘁𝗵𝗲𝗻𝘁𝗶𝗰𝗮𝘁𝗲 𝗮𝗴𝗮𝗶𝗻!`)
-      );
-      process.exit(0);
-    } else {
-      console.log(Kolor.red(`SOMETHING WENT WRONG.\n`));
-      process.exit(0);
-    }
+    console.log(
+      Kolor.red(`𝗜𝗻𝗰𝗼𝗿𝗿𝗲𝗰𝘁 𝗦𝗲𝘀𝘀𝗶𝗼𝗻 𝗦𝘁𝗿𝗶𝗻𝗴. 𝗣𝗹𝗲𝗮𝘀𝗲 𝗮𝘂𝘁𝗵𝗲𝗻𝘁𝗶𝗰𝗮𝘁𝗲 𝗮𝗴𝗮𝗶𝗻!`)
+    );
+    process.exit(0);
   }
   `🍁`;
   `🍁`;
