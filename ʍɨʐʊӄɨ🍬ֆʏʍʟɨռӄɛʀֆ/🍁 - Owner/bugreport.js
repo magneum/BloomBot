@@ -103,7 +103,7 @@ _If Found the report was just for fun then you will be banned by the bot!_
 
 ┌────★ 𝐒𝐮𝐩𝐩𝐨𝐫𝐭
 *🔥 ɢʀᴏᴜᴘ:* ${_𝔏𝔞𝔟_.HASH}`,
-            footerText: `(ƈ)𝐌𝐢𝐳𝐮𝐤𝐢🍹𝐁𝐨𝐭 _${version}_\n${Clock}`,
+            footerText: `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™ _${version}_\n${Clock}`,
             buttons: [
               {
                 buttonId: `${ᴋᴇɪ}help`,
@@ -136,7 +136,7 @@ _If Found the report was just for fun then you will be banned by the bot!_
           {
             mentionedJid: members,
             mimetype: `video/gif`,
-            caption: `(ƈ)𝐌𝐢𝐳𝐮𝐤𝐢🍹𝐁𝐨𝐭 _${version}_\n${Clock}
+            caption: `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™ _${version}_\n${Clock}
 
 ⚡𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
 🐞𝐑𝐞𝐩𝐨𝐫𝐭𝐞𝐝 𝐁𝐲: *${ꜱᴇɴᴅᴇʀɪᴅ}*
@@ -154,7 +154,7 @@ ${Needs.join(` `)}`,
           MessageType.video,
           {
             mimetype: `video/gif`,
-            caption: `(ƈ)𝐌𝐢𝐳𝐮𝐤𝐢🍹𝐁𝐨𝐭 _${version}_\n${Clock}
+            caption: `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™ _${version}_\n${Clock}
 
 ⚡𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
 🐞𝐑𝐞𝐩𝐨𝐫𝐭𝐞𝐝 𝐁𝐲: *${ꜱᴇɴᴅᴇʀɪᴅ}*
@@ -172,7 +172,7 @@ ${Needs.join(` `)}`,
           MessageType.video,
           {
             mimetype: `video/gif`,
-            caption: `(ƈ)𝐌𝐢𝐳𝐮𝐤𝐢🍹𝐁𝐨𝐭 _${version}_\n${Clock}
+            caption: `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™ _${version}_\n${Clock}
 
 ⚡𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
 🐞𝐑𝐞𝐩𝐨𝐫𝐭𝐞𝐝 𝐁𝐲: *${ꜱᴇɴᴅᴇʀɪᴅ}*
@@ -190,7 +190,7 @@ ${Needs.join(` `)}`,
           MessageType.video,
           {
             mimetype: `video/gif`,
-            caption: `(ƈ)𝐌𝐢𝐳𝐮𝐤𝐢🍹𝐁𝐨𝐭 _${version}_\n${Clock}
+            caption: `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™ _${version}_\n${Clock}
 
 ⚡𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
 🐞𝐑𝐞𝐩𝐨𝐫𝐭𝐞𝐝 𝐁𝐲: *${ꜱᴇɴᴅᴇʀɪᴅ}*

@@ -99,7 +99,7 @@ module.exports = {
 
 
 🌱𝗣𝗿𝗲𝘀𝘀 𝗯𝗲𝗹𝗼𝘄 𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗦𝘁𝗮𝗿𝘁 𝘂𝘀𝗶𝗻𝗴 𝗠𝗶𝘇𝘂𝗸𝗶👇🏽‍ `,
-            footerText: `(ƈ)𝐌𝐢𝐳𝐮𝐤𝐢🍹𝐁𝐨𝐭 _${version}_\n📅ᴅᴀᴛᴇ: _${Clock}_`,
+            footerText: `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™ _${version}_\n📅ᴅᴀᴛᴇ: _${Clock}_`,
             buttons: [
               {
                 buttonId: `${ᴋᴇɪ}menu`,
@@ -109,11 +109,6 @@ module.exports = {
               {
                 buttonId: `${ᴋᴇɪ}mizuki`,
                 buttonText: { displayText: `${ᴋᴇɪ}mizuki` },
-                type: 1,
-              },
-              {
-                buttonId: `${ᴋᴇɪ}faq`,
-                buttonText: { displayText: `${ᴋᴇɪ}faq` },
                 type: 1,
               },
             ],

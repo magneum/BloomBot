@@ -146,7 +146,7 @@ module.exports = {
               },
               mentionedJid: members,
             },
-            caption: `(ƈ)𝐌𝐢𝐳𝐮𝐤𝐢🍹𝐁𝐨𝐭 
+            caption: `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™ 
 
 ┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 │
@@ -169,7 +169,7 @@ _⚠️Attention Everyone Here In the Group!_`,
             contextInfo: {
               mentionedJid: members,
             },
-            caption: `(ƈ)𝐌𝐢𝐳𝐮𝐤𝐢🍹𝐁𝐨𝐭 
+            caption: `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™ 
 
 ┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 │
@@ -192,7 +192,7 @@ ${𝓜𝖎𝖟𝖚ӄ𝖎.body.replace(𝓜𝖎𝖟𝖚ӄ𝖎.body[0] + 𝓜𝖎�
             contextInfo: {
               mentionedJid: members,
             },
-            caption: `(ƈ)𝐌𝐢𝐳𝐮𝐤𝐢🍹𝐁𝐨𝐭 
+            caption: `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™ 
 
 ┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 │
@@ -212,7 +212,7 @@ ${𝓜𝖎𝖟𝖚ӄ𝖎.replyMessage.replace(𝓜𝖎𝖟𝖚ӄ𝖎.body[0] + �
             contextInfo: {
               mentionedJid: members,
             },
-            caption: `(ƈ)𝐌𝐢𝐳𝐮𝐤𝐢🍹𝐁𝐨𝐭 
+            caption: `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™ 
 
 ┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 │

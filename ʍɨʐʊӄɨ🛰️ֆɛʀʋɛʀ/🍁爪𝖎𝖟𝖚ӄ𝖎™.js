@@ -168,7 +168,7 @@ async function 爪𝖎𝖟𝖚ӄ𝖎() {
       MessageType.image,
       {
         mimetype: Mimetype.png,
-        caption: `(ƈ)𝐌𝐢𝐳𝐮𝐤𝐢🍹𝐁𝐨𝐭 _${version}_
+        caption: `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™ _${version}_
 
 ┌━━━━━━━★
 │🍁ᴘʀᴇꜰɪx: ${ᴋᴇɪ}
@@ -349,7 +349,7 @@ ${update.desc}`,
 │🔑𝐏𝐫𝐞𝐟𝐢𝐱: *${ᴋᴇɪ}*
 │👑𝐎𝐰𝐧𝐞𝐫: _🐙KrakinzKon_
 └───────〇`,
-              footerText: `(ƈ)𝐌𝐢𝐳𝐮𝐤𝐢🍹𝐁𝐨𝐭 \n${Clock}`,
+              footerText: `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™ \n${Clock}`,
               buttons: [
                 {
                   buttonId: `${ᴋᴇɪ}help`,
@@ -359,11 +359,6 @@ ${update.desc}`,
                 {
                   buttonId: `${ᴋᴇɪ}mizuki`,
                   buttonText: { displayText: `${ᴋᴇɪ}mizuki` },
-                  type: 1,
-                },
-                {
-                  buttonId: `${ᴋᴇɪ}faq`,
-                  buttonText: { displayText: `${ᴋᴇɪ}faq` },
                   type: 1,
                 },
               ],

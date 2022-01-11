@@ -119,16 +119,11 @@ ${ᴡᴇʟᴄᴏᴍᴇʀᴛxᴛ}
 ★━━━━━━━━◆➤
 
 ${ꜰᴇᴛᴄʜᴇᴅᴡᴇʟᴄᴏᴍᴇ.message}`,
-          footerText: `(ƈ)𝐌𝐢𝐳𝐮𝐤𝐢🍹𝐁𝐨𝐭 _${vers.vers}_\n${Clock}`,
+          footerText: `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™ _${vers.vers}_\n${Clock}`,
           buttons: [
             {
               buttonId: `${ᴋᴇɪ}help`,
               buttonText: { displayText: `${ᴋᴇɪ}help` },
-              type: 1,
-            },
-            {
-              buttonId: `${ᴋᴇɪ}faq`,
-              buttonText: { displayText: `${ᴋᴇɪ}faq` },
               type: 1,
             },
             {

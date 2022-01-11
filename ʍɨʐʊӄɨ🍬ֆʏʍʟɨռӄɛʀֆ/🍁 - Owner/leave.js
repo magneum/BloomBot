@@ -111,7 +111,7 @@ module.exports = {
                 },
                 mentionedJid: members,
               },
-              caption: `(ƈ)𝐌𝐢𝐳𝐮𝐤𝐢🍹𝐁𝐨𝐭 
+              caption: `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™ 
 
 ┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 │

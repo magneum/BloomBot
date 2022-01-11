@@ -125,7 +125,7 @@ module.exports = {
             contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
             quoted: chat,
             mimetype: `video/gif`,
-            caption: `(ƈ)𝐌𝐢𝐳𝐮𝐤𝐢🍹𝐁𝐨𝐭 _${version}_\n${Clock}
+            caption: `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™ _${version}_\n${Clock}
 
 ┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 │
