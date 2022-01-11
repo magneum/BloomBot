@@ -117,7 +117,6 @@ async function 爪𝖎𝖟𝖚ӄ𝖎() {
     console.log(
       Kolor.yellow(`🍁INFO ⬰ Connecting to 🍁爪𝖎𝖟𝖚ӄ𝖎™ Whatsapp...🛸`)
     );
-    console.log(Kolor.yellow(`🍁INFO ⬰ 🍁爪𝖎𝖟𝖚ӄ𝖎™ Connected✔️`));
   });
   `🍁`;
   `🍁`;
@@ -127,6 +126,7 @@ async function 爪𝖎𝖟𝖚ӄ𝖎() {
   `🍁`;
   `🍁`;
   ӄʀǟӄɨռʐ.on(`open`, async () => {
+    console.log(Kolor.yellow(`🍁INFO ⬰ 🍁爪𝖎𝖟𝖚ӄ𝖎™ Connected✔️`));
     console.log(
       Kolor.yellow(
         `⬡==========================⬡    🍁 爪𝖎𝖟𝖚ӄ𝖎™ 🍁    ⬡==========================⬡`
