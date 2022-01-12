@@ -25,6 +25,11 @@
       "required": true,
       "value": "HEROKU"
     },
+
+    "MizukiMdb": {
+      "description": "Your Localized MONGOOSE",
+      "required": true
+    },
     "HEROKU_API_KEY": {
       "description": "Put Your Heroku Api Code..",
       "required": true,
