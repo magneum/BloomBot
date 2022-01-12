@@ -13,6 +13,7 @@
     "automation"
   ],
   "dependencies": {
+    "mongoose": "^5.10.7",
     "@adiwajshing/baileys": "^3.5.3",
     "@cicciosgamino/openweather-apis": "^5.0.1",
     "@ffmpeg-installer/ffmpeg": "^1.1.0",

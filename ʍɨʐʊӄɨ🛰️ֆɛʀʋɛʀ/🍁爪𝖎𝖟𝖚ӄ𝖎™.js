@@ -20,6 +20,7 @@ const postDb = require(`./postDb`);
 const _𝔏𝔞𝔟_ = require(`./_𝔏𝔞𝔟_`);
 const ꜰᴜᴄᴋ = require(`./oShit`);
 const Kolor = require(`chalk`);
+const Users = require(`./xp`);
 let Timestamp = speed();
 const Pong = speed() - Timestamp;
 const Ping = Pong.toFixed(4);
@@ -65,28 +66,34 @@ var ӄʀǟӄɨռʐ = 𝓜𝖎𝖟𝖚ӄ𝖎ֆʏռօք.WhatsApp;
 async function 爪𝖎𝖟𝖚ӄ𝖎() {
   var ꜱɪᴛʀᴀᴘ = new Map();
   var commandUsage = new Map();
-  console.log(Kolor.yellow(`🍁INFO ⬰ 𝐒𝐲𝐦𝐥𝐢𝐧𝐤𝐢𝐧𝐠 𝐖𝐢𝐭𝐡 𝐌𝐢𝐳𝐮𝐤𝐢 𝐒𝐲𝐬𝐭𝐞𝐦...✔️`));
+  console.log(
+    Kolor.bgYellowBright.black(`🍁INFO ⬰ 𝐒𝐲𝐦𝐥𝐢𝐧𝐤𝐢𝐧𝐠 𝐖𝐢𝐭𝐡 𝐌𝐢𝐳𝐮𝐤𝐢 𝐒𝐲𝐬𝐭𝐞𝐦...✔️`)
+  );
   if (_𝔏𝔞𝔟_.HEROKU_API_KEY === `Null` || _𝔏𝔞𝔟_.HEROKU_APP_NAME === `Null`) {
     console.log(
-      Kolor.yellow(
+      Kolor.bgYellowBright.black(
         `❌ERROR ⬰  𝐒𝐞𝐞𝐦𝐬 𝐥𝐢𝐤𝐞 𝐇𝐞𝐫𝐨𝐤𝐮 𝐯𝐚𝐫𝐬 𝐚𝐫𝐞 𝐢𝐧𝐯𝐚𝐥𝐢𝐝.𝐏𝐥𝐞𝐚𝐬𝐞 𝐜𝐡𝐞𝐜𝐤 𝐚𝐧𝐝 𝐫𝐞𝐭𝐫𝐲!`
       )
     );
     process.exit(0);
   }
   console.log(
-    Kolor.yellow(
+    Kolor.bgYellowBright.black(
       `⬡==========================⬡    🍁 爪𝖎𝖟𝖚ӄ𝖎™ 🍁    ⬡==========================⬡`
     )
   );
+  console.log(
+    Kolor.bgYellowBright.black(`🍁INFO ⬰ Checking For 🍁爪𝖎𝖟𝖚ӄ𝖎™Updates ...✔️`)
+  );
+  await AutoKrakz();
   try {
-    console.log(Kolor.yellow(`🍁INFO ⬰ Checking For 🍁爪𝖎𝖟𝖚ӄ𝖎™Updates ...✔️`));
-    await AutoKrakz();
     var session = 𝓜𝖎𝖟𝖚ӄ𝖎ֆʏռօք.Mee6reignite(_𝔏𝔞𝔟_.MIZUKI);
     ӄʀǟӄɨռʐ.loadAuthInfo(session);
   } catch (ℓαвєяяσя) {
     console.log(
-      Kolor.red(`🍁INFO ⬰ Mizuki Code Is Wrong. Please Re-Auth using whatsapp!`)
+      Kolor.bgRedBright.black(
+        `🍁INFO ⬰ Mizuki Code Is Wrong. Please Re-Auth using whatsapp!`
+      )
     );
     process.exit(0);
   }
@@ -99,12 +106,14 @@ async function 爪𝖎𝖟𝖚ӄ𝖎() {
   `🍁`;
   ӄʀǟӄɨռʐ.on(`connecting`, async () => {
     console.log(
-      Kolor.yellow(
+      Kolor.bgYellowBright.black(
         `⬡==========================⬡    🍁 爪𝖎𝖟𝖚ӄ𝖎™ 🍁    ⬡==========================⬡`
       )
     );
     console.log(
-      Kolor.yellow(`🍁INFO ⬰ Connecting to 🍁爪𝖎𝖟𝖚ӄ𝖎™ Whatsapp...🛸`)
+      Kolor.bgYellowBright.black(
+        `🍁INFO ⬰ Connecting to 🍁爪𝖎𝖟𝖚ӄ𝖎™ Whatsapp...🛸`
+      )
     );
   });
   `🍁`;
@@ -115,19 +124,25 @@ async function 爪𝖎𝖟𝖚ӄ𝖎() {
   `🍁`;
   `🍁`;
   ӄʀǟӄɨռʐ.on(`open`, async () => {
-    console.log(Kolor.yellow(`🍁INFO ⬰ 🍁爪𝖎𝖟𝖚ӄ𝖎™ Connected✔️`));
+    console.log(Kolor.bgYellowBright.black(`🍁INFO ⬰ 🍁爪𝖎𝖟𝖚ӄ𝖎™ Connected✔️`));
     console.log(
-      Kolor.yellow(
+      Kolor.bgYellowBright.black(
         `⬡==========================⬡    🍁 爪𝖎𝖟𝖚ӄ𝖎™ 🍁    ⬡==========================⬡`
       )
     );
-    console.log(Kolor.green(`🍁INFO ⬰ 𝐋𝐢𝐧𝐤𝐢𝐧𝐠 𝐌𝐢𝐳𝐮𝐤𝐢 𝐖𝐢𝐭𝐡 𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞...✔️`));
+    console.log(
+      Kolor.bgGreenBright.black(`🍁INFO ⬰ 𝐋𝐢𝐧𝐤𝐢𝐧𝐠 𝐌𝐢𝐳𝐮𝐤𝐢 𝐖𝐢𝐭𝐡 𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞...✔️`)
+    );
     try {
       await 𝓜𝖎𝖟𝖚ӄ𝖎sql.authenticate();
       await 𝓜𝖎𝖟𝖚ӄ𝖎sql.validate();
       await 𝓜𝖎𝖟𝖚ӄ𝖎sql
         .sync()
-        .then(console.log(Kolor.yellow(`🍁INFO ⬰ 🍁爪𝖎𝖟𝖚ӄ𝖎™ Connected✔️`)));
+        .then(
+          console.log(
+            Kolor.bgYellowBright.black(`🍁INFO ⬰ 🍁爪𝖎𝖟𝖚ӄ𝖎™ Connected✔️`)
+          )
+        );
     } catch (ℓαвєяяσя) {
       console.ℓαвєяяσя(
         `❌ERROR ⬰  𝗨𝗻𝗮𝗯𝗹𝗲 𝘁𝗼 𝗰𝗼𝗻𝗻𝗲𝗰𝘁 𝘁𝗼 𝘁𝗵𝗲 𝗱𝗮𝘁𝗮𝗯𝗮𝘀𝗲:`,
@@ -135,7 +150,7 @@ async function 爪𝖎𝖟𝖚ӄ𝖎() {
       );
     }
     console.log(
-      Kolor.red(`
+      Kolor.bgRedBright.black(`
 ⬡==========================⬡    🍁 爪𝖎𝖟𝖚ӄ𝖎™ 🍁    ⬡==========================⬡
 ███╗   ███╗██╗███████╗██╗   ██╗██╗  ██╗██╗
 ████╗ ████║██║╚══███╔╝██║   ██║██║ ██╔╝██║
@@ -410,7 +425,6 @@ ${update.desc}`,
   ӄʀǟӄɨռʐ.on(`chat-update`, async (chat) => {
     if (!chat.hasNewMessage) return;
     if (!chat.messages) return;
-
     chat = chat.messages.all()[0];
     const sender = chat.key.remoteJid;
     const groupMetadata = sender.endsWith(`@g.us`)
@@ -418,12 +432,79 @@ ${update.desc}`,
       : ``;
     var 𝓜𝖎𝖟𝖚ӄ𝖎 = 𝓜𝖎𝖟𝖚ӄ𝖎ǟքք.resolve(chat, ӄʀǟӄɨռʐ, groupMetadata);
     console.log(chat);
+    `🍁`;
+    `🍁`;
+    `⬡  ⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
+    ` (c)爪𝖎𝖟𝖚ӄ𝖎 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!`;
+    `⬡  ⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
+    `🍁`;
+    `🍁`;
+    if (𝓜𝖎𝖟𝖚ӄ𝖎.isGroup) {
+      const UsersMizuki = require("./xp");
+      let xpAdd = Math.ceil(Math.random() * 10);
+      let messageAdd = +1;
+      try {
+        𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄʀǟӄɨռʐ.getProfilePicture(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
+      } catch {
+        𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = `https://i.postimg.cc/3wfrmmpB/NoPP.jpg`;
+      }
+      UsersMizuki.findOne(
+        {
+          did: 𝓜𝖎𝖟𝖚ӄ𝖎.sender,
+          serverID: 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+        },
+        (err, users) => {
+          if (err) console.log(err);
+          if (!users) {
+            var newUsers = new Users({
+              did: 𝓜𝖎𝖟𝖚ӄ𝖎.sender,
+              serverID: 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+              xp: xpAdd,
+              level: 0,
+              message: messageAdd,
+              warns: 0,
+              avatarURL: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗,
+            });
+            newUsers.save().catch((error) => console.log(error));
+          } else {
+            users.xp = users.xp + xpAdd;
+            users.message = users.message + messageAdd;
+            users.avatarURL = 𝕻𝕻𝖑𝖊𝖙𝖊𝖗;
+            console.log(users.xp);
+            let nxtlvl = 200 * Math.pow(2, users.level);
+            if (users.xp >= nxtlvl) {
+              users.level = users.level + 1;
+              Mizuki_Buttons.MIB(
+                ӄʀǟӄɨռʐ,
+                chat,
+                𝓜𝖎𝖟𝖚ӄ𝖎,
+                `@${𝓜𝖎𝖟𝖚ӄ𝖎.sender.substring(0, 𝓜𝖎𝖟𝖚ӄ𝖎.sender.length - 15)}, 
+
+┌────★ 🌹𝐄𝐱𝐩𝐞𝐫𝐢𝐞𝐧𝐜𝐞  
+│  
+│🍮 𝗟𝗲𝘃𝗲𝗹: ${users.level}
+│🍯 𝗫𝗣: ${users.xp}
+└───────〇`,
+                𝕻𝕻𝖑𝖊𝖙𝖊𝖗
+              );
+            }
+            users.save().catch((error) => console.log(error));
+          }
+        }
+      );
+    }
+    `🍁`;
+    `🍁`;
+    `⬡  ⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
+    ` (c)爪𝖎𝖟𝖚ӄ𝖎 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!`;
+    `⬡  ⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
+    `🍁`;
+    `🍁`;
     if (𝓜𝖎𝖟𝖚ӄ𝖎.isCmd) {
       var CheckBans = await BanList.getBanlistUser(
         𝓜𝖎𝖟𝖚ӄ𝖎.sender,
         𝓜𝖎𝖟𝖚ӄ𝖎.chatId
       );
-
       if (CheckBans === true && !𝓜𝖎𝖟𝖚ӄ𝖎.fromMe) return;
       const jsoncool = JSON.parse(
         fs.readFileSync(`./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`)
@@ -447,7 +528,7 @@ ${update.desc}`,
           ? chat.participant
           : chat.key.remoteJid;
         console.log(
-          Kolor.green(
+          Kolor.bgGreenBright.black(
             `🍁INFO ⬰ Antilink ${CheckLinks} in > ${𝓜𝖎𝖟𝖚ӄ𝖎.groupName}.`
           )
         );
@@ -471,9 +552,8 @@ ${update.desc}`,
             .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
         }
       }
-
       var persCheck = jsoncool.includes(
-        𝓜𝖎𝖟𝖚ӄ𝖎.sender + "_" + 𝓜𝖎𝖟𝖚ӄ𝖎.commandName
+        𝓜𝖎𝖟𝖚ӄ𝖎.sender + `_` + 𝓜𝖎𝖟𝖚ӄ𝖎.commandName
       );
       console.log(persCheck);
       if (persCheck === true) {
@@ -507,7 +587,7 @@ ${update.desc}`,
           require(`simple-git`)()
             .exec(async () => {
               console.log(
-                Kolor.green(
+                Kolor.bgGreenBright.black(
                   `⬡==========================⬡    🍁Starting Mizuki pull...`
                 )
               );
@@ -519,7 +599,9 @@ ${update.desc}`,
                   console.log(`Merged ${mergeSummary.merges.length} files`);
                 } catch (ℓαвєяяσя) {
                   console.error(
-                    `Merge resulted in ${Kolor.red(ℓαвєяяσя)} conflicts`
+                    `Merge resulted in ${Kolor.bgRedBright.black(
+                      ℓαвєяяσя
+                    )} conflicts`
                   );
                 }
               } else if (update && update.summary.changes) {

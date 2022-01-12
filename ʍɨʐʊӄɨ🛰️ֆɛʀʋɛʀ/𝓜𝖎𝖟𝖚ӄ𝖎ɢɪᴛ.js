@@ -17,13 +17,13 @@ const gitPull = async () => {
           exec(`npm install`).stderr.pipe(process.stderr);
         }
         console.log(
-          chalk.greenBright(
+          chalk.bgGreenBright.black(
             `💡INFO ⬰ 𝗔𝘂𝘁𝗼-𝗨𝗽𝗱𝗮𝘁𝗲𝗱 ⚡𝐌𝐢𝐳𝐮𝐤𝐢™ 𝘄𝗶𝘁𝗵 𝗹𝗮𝘁𝗲𝘀𝘁 𝗰𝗵𝗮𝗻𝗴𝗲𝘀.`
           )
         );
       } else if (err) {
         console.log(
-          chalk.redBright(
+          chalk.bgRedBright.black(
             `❌ERROR ⬰ 𝗜𝗳 𝗶𝘁 𝘄𝗮𝘀 𝗮 𝗕𝗜𝗚 ⚡𝐌𝐢𝐳𝐮𝐤𝐢™ 𝘂𝗽𝗱𝗮𝘁𝗲 𝘁𝗵𝗲𝗻 𝗣𝗹𝗲𝗮𝘀𝗲 𝗿𝗲𝗱𝗲𝗽𝗹𝗼𝘆 𝘆𝗼𝘂𝗿 𝗯𝗼𝘁!`
           )
         );
@@ -31,7 +31,9 @@ const gitPull = async () => {
     });
   } else {
     console.log(
-      chalk.greenBright(`💡INFO ⬰ ⚡𝐌𝐢𝐳𝐮𝐤𝐢™ 𝗶𝘀 𝗮𝗹𝗿𝗲𝗮𝗱𝘆 𝗼𝗻 𝗹𝗮𝘁𝗲𝘀𝘁 𝘃𝗲𝗿𝘀𝗶𝗼𝗻.`)
+      chalk.bgGreenBright.black(
+        `💡INFO ⬰ ⚡𝐌𝐢𝐳𝐮𝐤𝐢™ 𝗶𝘀 𝗮𝗹𝗿𝗲𝗮𝗱𝘆 𝗼𝗻 𝗹𝗮𝘁𝗲𝘀𝘁 𝘃𝗲𝗿𝘀𝗶𝗼𝗻.`
+      )
     );
   }
 };
