@@ -46,7 +46,7 @@ module.exports = {
 ┌────★ 🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧   
   
 ❌ _𝚈𝚘𝚞 𝙰𝚛𝚎 𝙽𝚘𝚝 𝙰𝚕𝚕𝚘𝚠𝚎𝚍!_
-└───────〇`,
+`,
           _𝔏𝔞𝔟_.ɴᴏᴛᴀᴅᴍɪɴ
         );
       }
@@ -64,7 +64,7 @@ module.exports = {
 
 👌🏽 ${ʀᴍʙᴀɴ.substring(0, ʀᴍʙᴀɴ.indexOf(`@`))}
 🔓𝐒𝐭𝐚𝐭𝐮𝐬: Was Not Banned!
-└───────〇`,
+`,
             `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
           );
         }
@@ -80,7 +80,7 @@ module.exports = {
 
 👌🏽‍𝐔𝐧𝐁𝐚𝐧𝐧𝐞𝐝: ${ʀᴍʙᴀɴ.substring(0, ʀᴍʙᴀɴ.indexOf(`@`))}
 🛡️ꜱᴜᴅᴏ ᴜɴʙᴀɴ ᴀᴄᴄᴇᴘᴛᴇᴅ: _removed from BanList for all the chats._
-└───────〇`,
+`,
           `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
         );
       } else {
@@ -100,7 +100,7 @@ module.exports = {
 
 👌🏽 ${ʀᴍʙᴀɴ.substring(0, ʀᴍʙᴀɴ.indexOf(`@`))}
 🔓𝐒𝐭𝐚𝐭𝐮𝐬: Was Not Banned!
-└───────〇`,
+`,
               `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
             );
           }
@@ -116,7 +116,7 @@ module.exports = {
 
 👌🏽‍𝐔𝐧𝐁𝐚𝐧𝐧𝐞𝐝: ${ʀᴍʙᴀɴ.substring(0, ʀᴍʙᴀɴ.indexOf(`@`))}
 🛡️ꜱᴜᴅᴏ ᴜɴʙᴀɴ ᴀᴄᴄᴇᴘᴛᴇᴅ: _has been removed from the BanList for this group._
-└───────〇`,
+`,
             `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
           );
         } else if (𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
@@ -132,7 +132,7 @@ module.exports = {
 
 👌🏽 ${ʀᴍʙᴀɴ.substring(0, ʀᴍʙᴀɴ.indexOf(`@`))}
 🔓𝐒𝐭𝐚𝐭𝐮𝐬: Was Not Banned!
-└───────〇`,
+`,
               `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
             );
           }
@@ -148,7 +148,7 @@ module.exports = {
 
 👌🏽 𝐔𝐧𝐁𝐚𝐧𝐧𝐞𝐝: ${ʀᴍʙᴀɴ.substring(0, ʀᴍʙᴀɴ.indexOf(`@`))}
 🛡️ꜱᴜᴅᴏ ᴜɴʙᴀɴ ᴀᴄᴄᴇᴘᴛᴇᴅ: _has been removed from the BanList for this group._
-└───────〇`,
+`,
             `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
           );
         } else {
@@ -163,7 +163,7 @@ module.exports = {
 
 👌🏽 ${𝓜𝖎𝖟𝖚ӄ𝖎.groupName}
 🔓𝐒𝐭𝐚𝐭𝐮𝐬: Was Not Banned!
-└───────〇`,
+`,
               `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
             );
           }
@@ -179,7 +179,7 @@ module.exports = {
 
 👌🏽𝐆𝐫𝐨𝐮𝐩 𝐔𝐧𝐁𝐚𝐧𝐧𝐞𝐝: ${𝓜𝖎𝖟𝖚ӄ𝖎.groupName}
 🛡️ꜱᴜᴅᴏ ᴜɴʙᴀɴ ᴀᴄᴄᴇᴘᴛᴇᴅ: _Bot has been enabled for the group_
-└───────〇`,
+`,
             `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
           );
         }

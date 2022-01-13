@@ -82,7 +82,7 @@ module.exports = {
 
 📤𝗙𝗿𝗼𝗺: _Image_
 📥𝗧𝗼: _Telegra.ph URL_
-└───────〇
+
 🔗 𝐔𝐫𝐥: ${util.format(gotTgh)}`,
               footerText: `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™ \n${Clock}`,
               buttons: [

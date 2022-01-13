@@ -63,7 +63,7 @@ module.exports = {
 🥃• ${ᴋᴇɪ}pussy: _get random pussy img/gif_
 🥃• ${ᴋᴇɪ}slut: _get random slut img/gif_
 🥃• ${ᴋᴇɪ}tikporn: _get random tikporn video_
-└───────〇`;
+`;
       return Mizuki_Buttons.MIB(
         ӄʀǟӄɨռʐ,
         chat,

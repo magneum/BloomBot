@@ -61,7 +61,7 @@ module.exports = {
 🗂️ ${ᴋᴇɪ}ocr: _read text written on tagged image_
 🗂️ ${ᴋᴇɪ}sticker: _convert image/video to sticker_
 🗂️ ${ᴋᴇɪ}carbon: _convert text to carbonized image_
-└───────〇`;
+`;
       return Mizuki_Buttons.MIB(
         ӄʀǟӄɨռʐ,
         chat,

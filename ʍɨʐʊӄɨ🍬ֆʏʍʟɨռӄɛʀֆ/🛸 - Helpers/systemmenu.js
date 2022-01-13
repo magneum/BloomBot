@@ -60,7 +60,7 @@ module.exports = {
 ⚙️• ${ᴋᴇɪ}mizuki: _check mizuki system health config_
 ⚙️• ${ᴋᴇɪ}update: _update Mizuki bot_
 ⚙️• ${ᴋᴇɪ}broadcast: _send broadcast message to groups and private_
-└───────〇`;
+`;
       return Mizuki_Buttons.MIB(
         ӄʀǟӄɨռʐ,
         chat,

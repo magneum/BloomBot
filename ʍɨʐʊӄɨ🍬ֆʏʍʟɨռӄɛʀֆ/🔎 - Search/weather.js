@@ -98,7 +98,7 @@ module.exports = {
 📛 𝐌𝐚𝐱 𝐓𝐞𝐦𝐩: ${Maximum_Temperature}
 💦 𝐇𝐮𝐦𝐢𝐝𝐢𝐭𝐲: ${Humidity}
 🎐 𝐖𝐢𝐧𝐝: ${Wind}
-└───────〇
+
 `.trim(),
             `https://wttr.in/${Needs.join(` `)}.png?m`
           );

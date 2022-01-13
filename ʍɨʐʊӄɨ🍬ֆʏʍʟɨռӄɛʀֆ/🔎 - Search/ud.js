@@ -108,7 +108,7 @@ module.exports = {
 🔎Word: ${result.word}
 📚Defination: ${result.definition}
 🫒Example: ${result.example}
-└───────〇
+
 👍: ${result.thumbs_up} |👎: ${result.thumbs_down}`
         );
       } catch (ℓαвєяяσя) {

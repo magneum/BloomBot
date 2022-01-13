@@ -84,7 +84,7 @@ module.exports = {
 🕐𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧: ${youfound.timestamp}
 📜𝐀𝐮𝐭𝐡𝐨𝐫: ${youfound.author.name}
 📜𝐋𝐢𝐧𝐤: ${youfound.url}
-└───────〇\n\n`;
+\n\n`;
       });
       if (Fetched === ``) {
         ӄʀǟӄɨռʐ

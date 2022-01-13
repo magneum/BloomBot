@@ -68,7 +68,7 @@ module.exports = {
 🔰• ${ᴋᴇɪ}setwelcome: _welcome new members with custom message_
 🔰• ${ᴋᴇɪ}unmute: _unmute a group chat_
 🔰• ${ᴋᴇɪ}mute: _mute group chat_
-└───────〇`;
+`;
       return Mizuki_Buttons.MIB(
         ӄʀǟӄɨռʐ,
         chat,

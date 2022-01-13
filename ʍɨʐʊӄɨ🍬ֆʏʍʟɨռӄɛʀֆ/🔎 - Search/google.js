@@ -79,7 +79,7 @@ module.exports = {
 🍻𝐓𝐢𝐭𝐥𝐞⤞ *${title}*
 🔗𝐋𝐢𝐧𝐤⤞ ${link}
 📜𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧⤞ ${snippet}
-└───────〇`;
+`;
           }).join`\n\n`;
 
           return Mizuki_Buttons.MIB(

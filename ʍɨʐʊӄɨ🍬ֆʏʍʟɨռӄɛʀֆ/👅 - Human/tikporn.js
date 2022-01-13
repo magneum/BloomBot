@@ -47,7 +47,7 @@ module.exports = {
   
 🌶️𝐆𝐫𝐨𝐮𝐩𝐬: _Admins & Devs!_
 🌽𝐏𝐫𝐢𝐯𝐚𝐭𝐞 _Everyone_
-└───────〇`,
+`,
             _𝔏𝔞𝔟_.ɴᴏᴛᴀᴅᴍɪɴ
           );
         } catch (ℓαвєяяσя) {
@@ -135,7 +135,7 @@ _Server Didn't Send Any Response_`
 🖊️𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${Raw.desc}
 📥𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝: https://tikporntok.com/${TikPork.video}
 🔥𝐒𝐨𝐮𝐫𝐜𝐞: https://tikporntok.com/${TikPork.source}
-└───────〇`,
+`,
               footerText: `\n(c)𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 \n${Clock}`,
               buttons: [
                 {
@@ -217,7 +217,7 @@ _Server Didn't Send Any Response_`
 🖊️𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${Raw.desc}
 📥𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝: https://tikporntok.com/${TikPork.video}
 🔥𝐒𝐨𝐮𝐫𝐜𝐞: https://tikporntok.com/${TikPork.source}
-└───────〇`,
+`,
               footerText: `\n(c)𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 \n${Clock}`,
               buttons: [
                 {

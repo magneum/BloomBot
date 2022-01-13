@@ -93,7 +93,7 @@ module.exports = {
 
 🥺𝐎𝐩𝐩𝐬𝐢𝐞 𝐓𝐫𝐲 𝐀𝐠𝐚𝐢𝐧!
 ◇ ꜱᴇʀᴠᴇʀ ᴅɪᴅɴ'ᴛ ꜱᴇɴᴅ ᴀɴʏ ʀᴇꜱᴘᴏɴꜱᴇ
-└───────〇`
+`
         );
       }
       if (𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
@@ -115,7 +115,7 @@ module.exports = {
 
 🍕𝐅𝐫𝐨𝐦: @${ꜱᴇɴᴅᴇʀeceived}
 🌭𝐓𝐨: @${personreceived}
-└───────〇`,
+`,
               GiveFile
             );
             return await cleanRF.cleanRF(GiveFile, GotFile);
@@ -138,7 +138,7 @@ module.exports = {
 ┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 
 🍯𝐓𝐡𝐞𝐦𝐬𝐞𝐥𝐯𝐞: @${ꜱᴇɴᴅᴇʀeceived}
-└───────〇`,
+`,
               GiveFile
             );
             return await cleanRF.cleanRF(GiveFile, GotFile);

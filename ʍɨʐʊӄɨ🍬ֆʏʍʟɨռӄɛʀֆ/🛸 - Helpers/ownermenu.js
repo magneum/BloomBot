@@ -66,7 +66,7 @@ module.exports = {
 🐙• ${ᴋᴇɪ}help 
 🐙• ${ᴋᴇɪ}list
 🐙• ${ᴋᴇɪ}mizuki
-└───────〇`;
+`;
       return Mizuki_Buttons.MIB(
         ӄʀǟӄɨռʐ,
         chat,
