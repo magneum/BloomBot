@@ -34,7 +34,7 @@ const env = {
   ɴᴏᴛᴍᴇᴀᴅᴍɪɴ: `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎NotMeAdmin.png`,
   ɴᴏᴛᴀᴅᴍɪɴ: `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎MemErr.png`,
   WAPI: `6729ac2b2e2bb5c686ff427a2f06df92`,
-  UPT: `https://i.postimg.cc/YqZ5pJW4/image.png`,
+  UPT: `https://i.postimg.cc/kMhxqNK8/image.png`,
   ERROR: `https://i.postimg.cc/sDPF83Mx/Mizuki-Error.png`,
   INVL: `https://i.postimg.cc/q7k5WK9Z/Mizuki-Invalid.png`,
   HASH: `https://chat.whatsapp.com/EKyTcSlzOmF20MELthQwgy`,
@@ -54,7 +54,7 @@ const env = {
             ssl: { require: true, rejectUnauthorized: false },
           },
         }),
-  MEE: `https://i.postimg.cc/YqZ5pJW4/image.png`,
+  MEE: `https://i.postimg.cc/kMhxqNK8/image.png`,
   PRIVACY: process.env.PRIVACY === undefined ? `public` : process.env.PRIVACY,
 };
 module.exports = env;

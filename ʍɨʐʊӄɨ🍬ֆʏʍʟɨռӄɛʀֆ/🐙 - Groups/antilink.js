@@ -25,17 +25,7 @@ var newScpt = scriptName.slice(0, -3).toLowerCase();
 module.exports = {
   name: newScpt,
   𝓜𝓮𝓮6ʍօʀɛ: `${ᴋᴇɪ}antilink (on/off)`,
-  async handle(
-    ӄʀǟӄɨռʐ,
-    chat,
-    𝓜𝖎𝖟𝖚ӄ𝖎,
-    Needs,
-    ꜱɪᴛʀᴀᴘ,
-    Clock,
-    Ping,
-    Timers,
-    version
-  ) {
+  async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping, Timers) {
     try {
       var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
       var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
@@ -53,11 +43,11 @@ module.exports = {
             𝓜𝖎𝖟𝖚ӄ𝖎,
             `Who Is This Non-Admin •@${ꜱᴇɴᴅᴇʀeceived} Trying to Use Admin-Only Commands.
 
-│❌ _𝚈𝚘𝚞 𝙰𝚛𝚎 𝙽𝚘𝚝 𝙰𝚕𝚕𝚘𝚠𝚎𝚍!_
+❌ _𝚈𝚘𝚞 𝙰𝚛𝚎 𝙽𝚘𝚝 𝙰𝚕𝚕𝚘𝚠𝚎𝚍!_
 ┌────★ 🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧   
-│  
-│🌶️𝐆𝐫𝐨𝐮𝐩𝐬: _Admins & Devs!_
-│🌽𝐏𝐫𝐢𝐯𝐚𝐭𝐞 _Everyone_
+  
+🌶️𝐆𝐫𝐨𝐮𝐩𝐬: _Admins & Devs!_
+🌽𝐏𝐫𝐢𝐯𝐚𝐭𝐞 _Everyone_
 └───────〇`,
             _𝔏𝔞𝔟_.ɴᴏᴛᴀᴅᴍɪɴ
           );
@@ -91,9 +81,9 @@ module.exports = {
             `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived}, 
 
 ┌────★ 🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧  
-│ 
-│❗𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ᴋᴇɪ}${defaultnm}, 
-│ᴄᴏᴍᴍᴀɴᴅ ᴏɴʟʏ ꜰᴏʀ ɢʀᴏᴜᴘꜱ!
+ 
+❗𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ᴋᴇɪ}${defaultnm}, 
+ᴄᴏᴍᴍᴀɴᴅ ᴏɴʟʏ ꜰᴏʀ ɢʀᴏᴜᴘꜱ!
 └───────〇`
           );
         } catch (ℓαвєяяσя) {
@@ -142,13 +132,13 @@ module.exports = {
 
 
 ┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-│
-│📜𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${𝓜𝖎𝖟𝖚ӄ𝖎.groupName}
-│🔗𝐀𝐧𝐭𝐢𝐥𝐢𝐧𝐤 𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _⚠️Not-set_
-│⚙️𝐄𝐧𝐠𝐢𝐧𝐞: *⋊ʀʏᴏ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ*
+
+📜𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${𝓜𝖎𝖟𝖚ӄ𝖎.groupName}
+🔗𝐀𝐧𝐭𝐢𝐥𝐢𝐧𝐤 𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _⚠️Not-set_
+⚙️𝐄𝐧𝐠𝐢𝐧𝐞: *⋊ʀʏᴏ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ*
 └───────〇
 🌱𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗧𝗼𝗴𝗴𝗹𝗲 𝗔𝗻𝘁𝗶𝗹𝗶𝗻𝗸👇🏽‍`,
-              footerText: `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™ _${version}_\n${Clock}`,
+              footerText: `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™ \n${Clock}`,
               buttons: [
                 {
                   buttonId: `${ᴋᴇɪ}antilink on`,
@@ -190,13 +180,13 @@ module.exports = {
               contentText: `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived}, (admin)
 
 ┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-│
-│📜𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${𝓜𝖎𝖟𝖚ӄ𝖎.groupName}
-│🔗𝐀𝐧𝐭𝐢𝐥𝐢𝐧𝐤 𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _✅Pre-Turned-On_
-│⚙️𝐄𝐧𝐠𝐢𝐧𝐞: *⋊ʀʏᴏ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ*
+
+📜𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${𝓜𝖎𝖟𝖚ӄ𝖎.groupName}
+🔗𝐀𝐧𝐭𝐢𝐥𝐢𝐧𝐤 𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _✅Pre-Turned-On_
+⚙️𝐄𝐧𝐠𝐢𝐧𝐞: *⋊ʀʏᴏ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ*
 └───────〇
 🌱𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗧𝗼𝗴𝗴𝗹𝗲 𝗔𝗻𝘁𝗶𝗹𝗶𝗻𝗸👇🏽‍`,
-              footerText: `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™ _${version}_\n${Clock}`,
+              footerText: `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™ \n${Clock}`,
               buttons: [
                 {
                   buttonId: `${ᴋᴇɪ}antilink on`,
@@ -236,13 +226,13 @@ module.exports = {
                 contentText: `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived}, (admin)
 
 ┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-│
-│📜𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${𝓜𝖎𝖟𝖚ӄ𝖎.groupName}
-│🔗𝐀𝐧𝐭𝐢𝐥𝐢𝐧𝐤 𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _✅Enabled_
-│⚙️𝐄𝐧𝐠𝐢𝐧𝐞: *⋊ʀʏᴏ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ*
+
+📜𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${𝓜𝖎𝖟𝖚ӄ𝖎.groupName}
+🔗𝐀𝐧𝐭𝐢𝐥𝐢𝐧𝐤 𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _✅Enabled_
+⚙️𝐄𝐧𝐠𝐢𝐧𝐞: *⋊ʀʏᴏ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ*
 └───────〇
 🌱𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗧𝗼𝗴𝗴𝗹𝗲 𝗔𝗻𝘁𝗶𝗹𝗶𝗻𝗸👇🏽‍`,
-                footerText: `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™ _${version}_\n${Clock}`,
+                footerText: `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™ \n${Clock}`,
                 buttons: [
                   {
                     buttonId: `${ᴋᴇɪ}antilink on`,
@@ -287,13 +277,13 @@ module.exports = {
                 contentText: `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived}, (admin)
 
 ┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-│
-│📜𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${𝓜𝖎𝖟𝖚ӄ𝖎.groupName}
-│🔗𝐀𝐧𝐭𝐢𝐥𝐢𝐧𝐤 𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _❌Disabled_
-│⚙️𝐄𝐧𝐠𝐢𝐧𝐞: *⋊ʀʏᴏ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ*
+
+📜𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${𝓜𝖎𝖟𝖚ӄ𝖎.groupName}
+🔗𝐀𝐧𝐭𝐢𝐥𝐢𝐧𝐤 𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _❌Disabled_
+⚙️𝐄𝐧𝐠𝐢𝐧𝐞: *⋊ʀʏᴏ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ*
 └───────〇
 🌱𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗧𝗼𝗴𝗴𝗹𝗲 𝗔𝗻𝘁𝗶𝗹𝗶𝗻𝗸👇🏽‍`,
-                footerText: `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™ _${version}_\n${Clock}`,
+                footerText: `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™ \n${Clock}`,
                 buttons: [
                   {
                     buttonId: `${ᴋᴇɪ}antilink on`,

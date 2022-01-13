@@ -11,7 +11,6 @@ const ffmpeg = require(`fluent-ffmpeg`);
 const cleanRF = require(`./cleanRF`);
 require(`python-format-js`);
 const ꜰᴜᴄᴋ = require(`./oShit`);
-const vers = require(`../package.json`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 const Downloader = require(`nodejs-file-downloader`);
@@ -89,12 +88,12 @@ exports.MizukiGM = async (ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎) => {
                 contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ, Receiver] },
                 quoted: chat,
                 mimetype: `video/gif`,
-                caption: `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™ _${vers.vers}_\n${Clock} 
+                caption: `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™ \n${Clock} 
 
 ┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-│
-│🍪 𝐅𝐫𝐨𝐦: @${ꜱᴇɴᴅᴇʀeceived}
-│🍛 𝐓𝐨: @${personreceived}
+
+🍪 𝐅𝐫𝐨𝐦: @${ꜱᴇɴᴅᴇʀeceived}
+🍛 𝐓𝐨: @${personreceived}
 └───────〇 `,
               }
             )
@@ -141,11 +140,11 @@ exports.MizukiGM = async (ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎) => {
                 contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
                 quoted: chat,
                 mimetype: `video/gif`,
-                caption: `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™ _${vers.vers}_\n${Clock} 
+                caption: `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™ \n${Clock} 
 
 ┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-│
-│🍯𝐓𝐡𝐞𝐦𝐬𝐞𝐥𝐯𝐞: @${ꜱᴇɴᴅᴇʀeceived}
+
+🍯𝐓𝐡𝐞𝐦𝐬𝐞𝐥𝐯𝐞: @${ꜱᴇɴᴅᴇʀeceived}
 └───────〇`,
               }
             )

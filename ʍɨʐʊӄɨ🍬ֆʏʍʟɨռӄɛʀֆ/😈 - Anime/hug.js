@@ -29,18 +29,7 @@ var newScpt = str.slice(0, -3).toLowerCase();
 `🍁`;
 module.exports = {
   name: newScpt,
-  async handle(
-    ӄʀǟӄɨռʐ,
-    chat,
-    𝓜𝖎𝖟𝖚ӄ𝖎,
-    Needs,
-    ꜱɪᴛʀᴀᴘ,
-    Clock,
-    Ping,
-    Timers,
-    version
-  ) {
-    
+  async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping, Timers) {
     try {
       var Raw = await anime.hug();
       const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
@@ -59,7 +48,7 @@ module.exports = {
       }
       const GotFile = `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${Ping}_${FinalName}.gif`;
       const GiveFile = `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${Ping}_${FinalName}.mp4`;
-      
+
       const jsoncool = JSON.parse(
         fs.readFileSync(`./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`)
       );
@@ -76,7 +65,7 @@ module.exports = {
           JSON.stringify(jsoncool)
         );
       }, 10000);
-      
+
       if (!Raw.endsWith(`.gif`) && !Raw.endsWith(`.mp4`)) {
         var Raw = await anime.hug();
         var ʟᴀʙᴛᴇꜱᴛ = Raw;
@@ -84,7 +73,7 @@ module.exports = {
         var ʟᴀʙᴛᴇꜱᴛ = Raw;
       }
       console.log("🍁====⬡ " + ʟᴀʙᴛᴇꜱᴛ + " ⬡====🍁");
-      
+
       const downloader = await new Downloader({
         url: ʟᴀʙᴛᴇꜱᴛ,
         directory: `./ʍɨʐʊӄɨ🗑️ȶɛʍք`,
@@ -101,9 +90,9 @@ module.exports = {
           `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived},
 
 ┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-│
-│🥺𝐎𝐩𝐩𝐬𝐢𝐞 𝐓𝐫𝐲 𝐀𝐠𝐚𝐢𝐧!
-│◇ ꜱᴇʀᴠᴇʀ ᴅɪᴅɴ'ᴛ ꜱᴇɴᴅ ᴀɴʏ ʀᴇꜱᴘᴏɴꜱᴇ
+
+🥺𝐎𝐩𝐩𝐬𝐢𝐞 𝐓𝐫𝐲 𝐀𝐠𝐚𝐢𝐧!
+◇ ꜱᴇʀᴠᴇʀ ᴅɪᴅɴ'ᴛ ꜱᴇɴᴅ ᴀɴʏ ʀᴇꜱᴘᴏɴꜱᴇ
 └───────〇`
         );
       }
@@ -123,9 +112,9 @@ module.exports = {
               𝓜𝖎𝖟𝖚ӄ𝖎,
               `
 ┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-│
-│🍕𝐅𝐫𝐨𝐦: @${ꜱᴇɴᴅᴇʀeceived}
-│🌭𝐓𝐨: @${personreceived}
+
+🍕𝐅𝐫𝐨𝐦: @${ꜱᴇɴᴅᴇʀeceived}
+🌭𝐓𝐨: @${personreceived}
 └───────〇`,
               GiveFile
             );
@@ -147,15 +136,14 @@ module.exports = {
               𝓜𝖎𝖟𝖚ӄ𝖎,
               `
 ┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-│
-│🍯𝐓𝐡𝐞𝐦𝐬𝐞𝐥𝐯𝐞: @${ꜱᴇɴᴅᴇʀeceived}
+
+🍯𝐓𝐡𝐞𝐦𝐬𝐞𝐥𝐯𝐞: @${ꜱᴇɴᴅᴇʀeceived}
 └───────〇`,
               GiveFile
             );
             return await cleanRF.cleanRF(GiveFile, GotFile);
           });
       }
-      
     } catch (ℓαвєяяσя) {
       ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
       console.log(ℓαвєяяσя);

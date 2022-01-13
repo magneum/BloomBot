@@ -24,17 +24,7 @@ var newScpt = scriptName.slice(0, -3).toLowerCase();
 `🍁`;
 module.exports = {
   name: newScpt,
-  async handle(
-    ӄʀǟӄɨռʐ,
-    chat,
-    𝓜𝖎𝖟𝖚ӄ𝖎,
-    Needs,
-    ꜱɪᴛʀᴀᴘ,
-    Clock,
-    Ping,
-    Timers,
-    version
-  ) {
+  async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping, Timers) {
     try {
       var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
       var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
@@ -62,17 +52,17 @@ module.exports = {
       }, 10000);
 
       var MediaUrl = `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎.png`;
-      var MainText = `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived}, ${Timers}
+      var MainText = `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 •@${ꜱᴇɴᴅᴇʀeceived}, ${Timers}
 
 
 ┌──────────────★ 🔞𝐇𝐮𝐦𝐚𝐧 𝐍𝐒𝐅𝐖
-│🥃• ${ᴋᴇɪ}4k: _get random 4kporn img/gif_
-│🥃• ${ᴋᴇɪ}blowjob: _get random blowjob img/gif_
-│🥃• ${ᴋᴇɪ}milf: _get random milf img/gif_
-│🥃• ${ᴋᴇɪ}milk: _get random milk img/gif_
-│🥃• ${ᴋᴇɪ}pussy: _get random pussy img/gif_
-│🥃• ${ᴋᴇɪ}slut: _get random slut img/gif_
-│🥃• ${ᴋᴇɪ}tikporn: _get random tikporn video_
+🥃• ${ᴋᴇɪ}4k: _get random 4kporn img/gif_
+🥃• ${ᴋᴇɪ}blowjob: _get random blowjob img/gif_
+🥃• ${ᴋᴇɪ}milf: _get random milf img/gif_
+🥃• ${ᴋᴇɪ}milk: _get random milk img/gif_
+🥃• ${ᴋᴇɪ}pussy: _get random pussy img/gif_
+🥃• ${ᴋᴇɪ}slut: _get random slut img/gif_
+🥃• ${ᴋᴇɪ}tikporn: _get random tikporn video_
 └───────〇`;
       return Mizuki_Buttons.MIB(
         ӄʀǟӄɨռʐ,

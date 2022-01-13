@@ -26,17 +26,7 @@ var newScpt = scriptName.slice(0, -3).toLowerCase();
 `🍁`;
 module.exports = {
   name: newScpt,
-  async handle(
-    ӄʀǟӄɨռʐ,
-    chat,
-    𝓜𝖎𝖟𝖚ӄ𝖎,
-    Needs,
-    ꜱɪᴛʀᴀᴘ,
-    Clock,
-    Ping,
-    Timers,
-    version
-  ) {
+  async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping, Timers) {
     try {
       var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
       var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
@@ -79,14 +69,14 @@ module.exports = {
 
 
 ┌────★ 𝐆𝐞𝐭 𝐌𝐢𝐳𝐮𝐤𝐢 𝐅𝐫𝐨𝐦
-│
-│*🎊 ɢɪᴛʜᴜʙ:* https://github.com/Krakinz
-│*🎊 ɢɪᴛʜᴜʙ:* https://github.com/Krakinz/Mizuki
+
+*🎊 ɢɪᴛʜᴜʙ:* https://github.com/Krakinz
+*🎊 ɢɪᴛʜᴜʙ:* https://github.com/Krakinz/Mizuki
 └───────〇
 
 ┌────★ 𝐒𝐮𝐩𝐩𝐨𝐫𝐭
-│
-│*🔥 ɢʀᴏᴜᴘ:* ${_𝔏𝔞𝔟_.HASH}
+
+*🔥 ɢʀᴏᴜᴘ:* ${_𝔏𝔞𝔟_.HASH}
 └───────〇`,
           _𝔏𝔞𝔟_.MEE
         );

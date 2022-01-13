@@ -26,17 +26,7 @@ var newScpt = scriptName.slice(0, -3).toLowerCase();
 module.exports = {
   name: newScpt,
   𝓜𝓮𝓮6ʍօʀɛ: `${ᴋᴇɪ}bugreport <feature> <Describe Error>`,
-  async handle(
-    ӄʀǟӄɨռʐ,
-    chat,
-    𝓜𝖎𝖟𝖚ӄ𝖎,
-    Needs,
-    ꜱɪᴛʀᴀᴘ,
-    Clock,
-    Ping,
-    Timers,
-    version
-  ) {
+  async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping, Timers) {
     try {
       var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
       var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
@@ -103,7 +93,7 @@ _If Found the report was just for fun then you will be banned by the bot!_
 
 ┌────★ 𝐒𝐮𝐩𝐩𝐨𝐫𝐭
 *🔥 ɢʀᴏᴜᴘ:* ${_𝔏𝔞𝔟_.HASH}`,
-            footerText: `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™ _${version}_\n${Clock}`,
+            footerText: `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™ \n${Clock}`,
             buttons: [
               {
                 buttonId: `${ᴋᴇɪ}help`,
@@ -136,7 +126,7 @@ _If Found the report was just for fun then you will be banned by the bot!_
           {
             mentionedJid: members,
             mimetype: `video/gif`,
-            caption: `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™ _${version}_\n${Clock}
+            caption: `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™ \n${Clock}
 
 ⚡𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
 🐞𝐑𝐞𝐩𝐨𝐫𝐭𝐞𝐝 𝐁𝐲: *${ꜱᴇɴᴅᴇʀɪᴅ}*
@@ -154,7 +144,7 @@ ${Needs.join(` `)}`,
           MessageType.video,
           {
             mimetype: `video/gif`,
-            caption: `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™ _${version}_\n${Clock}
+            caption: `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™ \n${Clock}
 
 ⚡𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
 🐞𝐑𝐞𝐩𝐨𝐫𝐭𝐞𝐝 𝐁𝐲: *${ꜱᴇɴᴅᴇʀɪᴅ}*
@@ -172,7 +162,7 @@ ${Needs.join(` `)}`,
           MessageType.video,
           {
             mimetype: `video/gif`,
-            caption: `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™ _${version}_\n${Clock}
+            caption: `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™ \n${Clock}
 
 ⚡𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
 🐞𝐑𝐞𝐩𝐨𝐫𝐭𝐞𝐝 𝐁𝐲: *${ꜱᴇɴᴅᴇʀɪᴅ}*
@@ -190,7 +180,7 @@ ${Needs.join(` `)}`,
           MessageType.video,
           {
             mimetype: `video/gif`,
-            caption: `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™ _${version}_\n${Clock}
+            caption: `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™ \n${Clock}
 
 ⚡𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
 🐞𝐑𝐞𝐩𝐨𝐫𝐭𝐞𝐝 𝐁𝐲: *${ꜱᴇɴᴅᴇʀɪᴅ}*

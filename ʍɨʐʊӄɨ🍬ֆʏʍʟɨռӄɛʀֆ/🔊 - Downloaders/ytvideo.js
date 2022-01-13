@@ -34,17 +34,7 @@ module.exports = {
 
 🔎𝐒𝐞𝐚𝐫𝐜𝐡 𝐘𝐨𝐮𝐓𝐮𝐛𝐞? _${ᴋᴇɪ}ytsearch_
 🔸𝐔𝐬𝐢𝐧𝐠 𝐒𝐨𝐧𝐠 𝐍𝐚𝐦𝐞? _${ᴋᴇɪ}watch_ *or* _${ᴋᴇɪ}stream_`,
-  async handle(
-    ӄʀǟӄɨռʐ,
-    chat,
-    𝓜𝖎𝖟𝖚ӄ𝖎,
-    Needs,
-    ꜱɪᴛʀᴀᴘ,
-    Clock,
-    Ping,
-    Timers,
-    version
-  ) {
+  async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping, Timers) {
     try {
       var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
       var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
@@ -144,11 +134,11 @@ module.exports = {
 𝗣𝗹𝗲𝗮𝘀𝗲 𝗖𝗵𝗼𝗼𝘀𝗲 𝗙𝗶𝗹𝗲 𝗦𝗺𝗮𝗹𝗹𝗲𝗿 𝗧𝗵𝗲𝗻 𝟯𝟬𝗺𝗶𝗻𝘂𝘁𝗲𝘀!
 
 ┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-│
-│🍻𝐓𝐢𝐭𝐥𝐞⤞ ${youfound.title}
-│⏰𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧⤞ ${youfound.timestamp}
-│📜𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧⤞ ${youfound.description}
-│🔗𝐋𝐢𝐧𝐤⤞ ${youfound.url}
+
+🍻𝐓𝐢𝐭𝐥𝐞⤞ ${youfound.title}
+⏰𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧⤞ ${youfound.timestamp}
+📜𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧⤞ ${youfound.description}
+🔗𝐋𝐢𝐧𝐤⤞ ${youfound.url}
 └───────〇`,
               youfound.thumbnail
             );
@@ -163,13 +153,13 @@ module.exports = {
 🎥𝐕𝐢𝐝𝐞𝐨 𝗣𝗹𝗲𝗮𝘀𝗲 𝘄𝗮𝗶𝘁 𝗳𝗼𝗿 𝘁𝗵𝗲 𝗱𝗲𝗹𝗶𝘃𝗲𝗿𝘆 𝗼𝗳 𝐕𝐢𝐝𝐞𝐨!
 
 ┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-│
-│🍻𝐓𝐢𝐭𝐥𝐞⤞ ${youfound.title}
-│🙈𝐕𝐢𝐞𝐰𝐬⤞ ${youfound.views}
-│⏰𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧⤞ ${youfound.timestamp}
-│✒️𝐀𝐮𝐭𝐡𝐨𝐫⤞ ${youfound.author.name}
-│📜𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧⤞ ${youfound.description}
-│🔗𝐋𝐢𝐧𝐤⤞ ${youfound.url}
+
+🍻𝐓𝐢𝐭𝐥𝐞⤞ ${youfound.title}
+🙈𝐕𝐢𝐞𝐰𝐬⤞ ${youfound.views}
+⏰𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧⤞ ${youfound.timestamp}
+✒️𝐀𝐮𝐭𝐡𝐨𝐫⤞ ${youfound.author.name}
+📜𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧⤞ ${youfound.description}
+🔗𝐋𝐢𝐧𝐤⤞ ${youfound.url}
 └───────〇`;
                     DVideo(thumb, captionsYtmp4);
                     DVideo(dl_link);
@@ -181,10 +171,10 @@ module.exports = {
                   `*No Song Found... Try Different Search Terms!*
 
 ┌────★𝙏𝙧𝙮 𝙊𝙩𝙝𝙚𝙧 𝘾𝙤𝙢𝙢𝙖𝙣𝙙𝙨:
-│
-│${ᴋᴇɪ}ytsearch (song name)
-│${ᴋᴇɪ}ytaudio (song link)
-│${ᴋᴇɪ}ytvideo (video link)
+
+${ᴋᴇɪ}ytsearch (song name)
+${ᴋᴇɪ}ytaudio (song link)
+${ᴋᴇɪ}ytvideo (video link)
 └───────〇`,
                   MessageType.text,
                   {

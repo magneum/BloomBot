@@ -24,17 +24,7 @@ var newScpt = scriptName.slice(0, -3).toLowerCase();
 `🍁`;
 module.exports = {
   name: newScpt,
-  async handle(
-    ӄʀǟӄɨռʐ,
-    chat,
-    𝓜𝖎𝖟𝖚ӄ𝖎,
-    Needs,
-    ꜱɪᴛʀᴀᴘ,
-    Clock,
-    Ping,
-    Timers,
-    version
-  ) {
+  async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping, Timers) {
     try {
       var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
       var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
@@ -62,22 +52,22 @@ module.exports = {
       }, 10000);
 
       var MediaUrl = `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎.png`;
-      var MainText = `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${ꜱᴇɴᴅᴇʀeceived}, ${Timers}
+      var MainText = `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 •@${ꜱᴇɴᴅᴇʀeceived}, ${Timers}
 
 
 ┌──────────────★ 𝐆𝐫𝐨𝐮𝐩𝐬/𝐀𝐝𝐦𝐢𝐧𝐬
-│🔰• ${ᴋᴇɪ}promote: _promote member to admin_
-│🔰• ${ᴋᴇɪ}demote: _demote member from admin_
-│🔰• ${ᴋᴇɪ}invite: _get group invite link_
-│🔰• ${ᴋᴇɪ}admins: _get all admins of a group_
-│🔰• ${ᴋᴇɪ}getdesc: _get group description_
-│🔰• ${ᴋᴇɪ}groupdp: _change group profile picture_
-│🔰• ${ᴋᴇɪ}kick: _ʀᴇᴍᴏᴠᴇ ᴀ ᴘᴇʀꜱᴏɴ ꜰʀᴏᴍ ᴀ ɢʀᴏᴜᴘ_
-│🔰• ${ᴋᴇɪ}tagall: _tag everyone in group_
-│🔰• ${ᴋᴇɪ}antilink: _remove any person who sends any links_
-│🔰• ${ᴋᴇɪ}setwelcome: _welcome new members with custom message_
-│🔰• ${ᴋᴇɪ}unmute: _unmute a group chat_
-│🔰• ${ᴋᴇɪ}mute: _mute group chat_
+🔰• ${ᴋᴇɪ}promote: _promote member to admin_
+🔰• ${ᴋᴇɪ}demote: _demote member from admin_
+🔰• ${ᴋᴇɪ}invite: _get group invite link_
+🔰• ${ᴋᴇɪ}admins: _get all admins of a group_
+🔰• ${ᴋᴇɪ}getdesc: _get group description_
+🔰• ${ᴋᴇɪ}groupdp: _change group profile picture_
+🔰• ${ᴋᴇɪ}kick: _ʀᴇᴍᴏᴠᴇ ᴀ ᴘᴇʀꜱᴏɴ ꜰʀᴏᴍ ᴀ ɢʀᴏᴜᴘ_
+🔰• ${ᴋᴇɪ}tagall: _tag everyone in group_
+🔰• ${ᴋᴇɪ}antilink: _remove any person who sends any links_
+🔰• ${ᴋᴇɪ}setwelcome: _welcome new members with custom message_
+🔰• ${ᴋᴇɪ}unmute: _unmute a group chat_
+🔰• ${ᴋᴇɪ}mute: _mute group chat_
 └───────〇`;
       return Mizuki_Buttons.MIB(
         ӄʀǟӄɨռʐ,

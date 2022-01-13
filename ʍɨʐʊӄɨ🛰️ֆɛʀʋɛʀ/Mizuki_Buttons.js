@@ -25,7 +25,6 @@ const now = new Date();
 date.format(now, `ddd, MMM DD YYYY`);
 const pattern = date.compile(`ddd, MMM DD YYYY`);
 const Clock = date.format(now, pattern);
-const vers = require(`../package.json`);
 
 const Mizuki_Text_But = (ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, MainText) => {
   if (𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
@@ -41,7 +40,7 @@ const Mizuki_Text_But = (ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, MainText)
   }
   const buttonMessage = {
     contentText: MainText,
-    footerText: `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™ _${vers.vers}_\n${Clock}`,
+    footerText: `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™ \n${Clock}`,
     buttons: [
       {
         buttonId: `${ᴋᴇɪ}help`,
@@ -88,7 +87,7 @@ const Mizuki_Image_But = async (ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, Ma
       𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
       {
         contentText: MainText,
-        footerText: `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™ _${vers.vers}_\n${Clock}`,
+        footerText: `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™ \n${Clock}`,
         buttons: [
           {
             buttonId: `${ᴋᴇɪ}help`,
@@ -137,7 +136,7 @@ const Mizuki_Video_But = async (ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, Ma
       𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
       {
         contentText: MainText,
-        footerText: `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™ _${vers.vers}_\n${Clock}`,
+        footerText: `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™ \n${Clock}`,
         buttons: [
           {
             buttonId: `${ᴋᴇɪ}help`,
@@ -186,7 +185,7 @@ const Mizuki_GIF_But = async (ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, Main
       𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
       {
         contentText: MainText,
-        footerText: `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™ _${vers.vers}_\n${Clock}`,
+        footerText: `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™ \n${Clock}`,
         buttons: [
           {
             buttonId: `${ᴋᴇɪ}help`,
@@ -239,7 +238,7 @@ const Mizuki_VideoAudio_But = async (
   const buttonMessages = {
     videoMessage: media.message.videoMessage,
     contentText: MainText,
-    footerText: `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™ _${vers.vers}_\n${Clock}`,
+    footerText: `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™ \n${Clock}`,
     buttons: [
       {
         buttonId: `${ᴋᴇɪ}help`,
@@ -290,7 +289,7 @@ const Mizuki_Location_But = async (
   const buttonMessages = {
     locationMessage: media.message.locationMessage,
     contentText: MainText,
-    footerText: `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™ _${vers.vers}_\n${Clock}`,
+    footerText: `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™ \n${Clock}`,
     buttons: [
       {
         buttonId: `${ᴋᴇɪ}help`,

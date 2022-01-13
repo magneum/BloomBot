@@ -27,17 +27,7 @@ var newScpt = scriptName.slice(0, -3).toLowerCase();
 module.exports = {
   name: newScpt,
   𝓜𝓮𝓮6ʍօʀɛ: `${ᴋᴇɪ}tenor (gif name)`,
-  async handle(
-    ӄʀǟӄɨռʐ,
-    chat,
-    𝓜𝖎𝖟𝖚ӄ𝖎,
-    Needs,
-    ꜱɪᴛʀᴀᴘ,
-    Clock,
-    Ping,
-    Timers,
-    version
-  ) {
+  async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping, Timers) {
     try {
       var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
       var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
@@ -125,13 +115,13 @@ module.exports = {
             contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
             quoted: chat,
             mimetype: `video/gif`,
-            caption: `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™ _${version}_\n${Clock}
+            caption: `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™ \n${Clock}
 
 ┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-│
-│🍯 𝐒𝐞𝐚𝐫𝐜𝐡𝐞𝐝: ${Needs.join(` `)}
+
+🍯 𝐒𝐞𝐚𝐫𝐜𝐡𝐞𝐝: ${Needs.join(` `)}
 └───────〇
-│🌐𝐋𝐢𝐧𝐤: ${MP4}`,
+🌐𝐋𝐢𝐧𝐤: ${MP4}`,
           })
           .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
       } catch (ℓαвєяяσя) {

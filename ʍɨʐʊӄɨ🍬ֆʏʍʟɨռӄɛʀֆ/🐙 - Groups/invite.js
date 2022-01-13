@@ -25,17 +25,7 @@ module.exports = {
   name: newScpt,
   description: `Use this command to send a group invite link in the group or personally to someone.`,
   𝓜𝓮𝓮6ʍօʀɛ: `${ᴋᴇɪ}invite`,
-  async handle(
-    ӄʀǟӄɨռʐ,
-    chat,
-    𝓜𝖎𝖟𝖚ӄ𝖎,
-    Needs,
-    ꜱɪᴛʀᴀᴘ,
-    Clock,
-    Ping,
-    Timers,
-    version
-  ) {
+  async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping, Timers) {
     try {
       var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
       var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
@@ -53,11 +43,11 @@ module.exports = {
             𝓜𝖎𝖟𝖚ӄ𝖎,
             `Who Is This Non-Admin •@${ꜱᴇɴᴅᴇʀeceived} Trying to Use Admin-Only Commands.
 
-│❌ _𝚈𝚘𝚞 𝙰𝚛𝚎 𝙽𝚘𝚝 𝙰𝚕𝚕𝚘𝚠𝚎𝚍!_
+❌ _𝚈𝚘𝚞 𝙰𝚛𝚎 𝙽𝚘𝚝 𝙰𝚕𝚕𝚘𝚠𝚎𝚍!_
 ┌────★ 🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧   
-│  
-│🌶️𝐆𝐫𝐨𝐮𝐩𝐬: _Admins & Devs!_
-│🌽𝐏𝐫𝐢𝐯𝐚𝐭𝐞 _Everyone_
+  
+🌶️𝐆𝐫𝐨𝐮𝐩𝐬: _Admins & Devs!_
+🌽𝐏𝐫𝐢𝐯𝐚𝐭𝐞 _Everyone_
 └───────〇`,
             _𝔏𝔞𝔟_.ɴᴏᴛᴀᴅᴍɪɴ
           );
@@ -91,9 +81,9 @@ module.exports = {
             `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived}, 
 
 ┌────★ 🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧   
-│
-│❗𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ᴋᴇɪ}${defaultnm}, 
-│ᴄᴏᴍᴍᴀɴᴅ ᴏɴʟʏ ꜰᴏʀ ɢʀᴏᴜᴘꜱ!
+
+❗𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ᴋᴇɪ}${defaultnm}, 
+ᴄᴏᴍᴍᴀɴᴅ ᴏɴʟʏ ꜰᴏʀ ɢʀᴏᴜᴘꜱ!
 └───────〇`
           );
         } catch (ℓαвєяяσя) {
@@ -152,16 +142,16 @@ module.exports = {
           .sendMessage(
             Receiver,
             {
-              contentText: `🐣𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢 •@${personreceived}, 
+              contentText: `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 •@${personreceived}, 
 
 
 ┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-│
-│📜𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${groupData.subject}
-│💞𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${groupData.participants.length}
-│🍰 𝐆𝐫𝐨𝐮𝐩: https://chat.whatsapp.com/${code}
+
+📜𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${groupData.subject}
+💞𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${groupData.participants.length}
+🍰 𝐆𝐫𝐨𝐮𝐩: https://chat.whatsapp.com/${code}
 └───────〇`,
-              footerText: `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™ _${version}_\n${Clock}`,
+              footerText: `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™ \n${Clock}`,
               buttons: [
                 {
                   buttonId: `${ᴋᴇɪ}help`,
@@ -193,12 +183,12 @@ module.exports = {
 
 
 ┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-│
-│📜𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${groupData.subject}
-│💞𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${groupData.participants.length}
-│🍰 𝐆𝐫𝐨𝐮𝐩: https://chat.whatsapp.com/${code}
+
+📜𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${groupData.subject}
+💞𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${groupData.participants.length}
+🍰 𝐆𝐫𝐨𝐮𝐩: https://chat.whatsapp.com/${code}
 └───────〇`,
-              footerText: `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™ _${version}_\n${Clock}`,
+              footerText: `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™ \n${Clock}`,
               buttons: [
                 {
                   buttonId: `${ᴋᴇɪ}help`,

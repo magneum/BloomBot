@@ -44,9 +44,9 @@ module.exports = {
 
 *❌ 𝚈𝚘𝚞 𝙰𝚛𝚎 𝙽𝚘𝚝 𝙰𝚕𝚕𝚘𝚠𝚎𝚍!*
 ┌────◆➤ 🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧   
-│  
-│🌶️𝐆𝐫𝐨𝐮𝐩𝐬: _Admins & Devs!_
-│🌽𝐏𝐫𝐢𝐯𝐚𝐭𝐞 _Everyone_
+  
+🌶️𝐆𝐫𝐨𝐮𝐩𝐬: _Admins & Devs!_
+🌽𝐏𝐫𝐢𝐯𝐚𝐭𝐞 _Everyone_
 └───────〇`,
             _𝔏𝔞𝔟_.ɴᴏᴛᴀᴅᴍɪɴ
           );
@@ -124,17 +124,17 @@ _Server Didn't Send Any Response_`
               contentText: `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived},
 
 ┌────◇🥭𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
-│
-│📜𝐓𝐢𝐭𝐥𝐞: ${Raw.title}
-│👀𝐕𝐢𝐞𝐰𝐬: ${Raw.views}
-│🔸𝐓𝐚𝐠𝐬: ${Raw.tags}
-│👍🏽‍𝐋𝐢𝐤𝐞𝐬: ${Raw.like}
-│👎🏽‍𝐃𝐢𝐬𝐥𝐢𝐤𝐞𝐬: ${Raw.dislike}
-│⭐𝐅𝐚𝐯𝐨𝐮𝐫𝐢𝐭𝐞: ${Raw.favorite}
-│📤𝐔𝐩𝐥𝐨𝐚𝐝𝐞𝐝: ${Raw.upload}
-│🖊️𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${Raw.desc}
-│📥𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝: https://tikporntok.com/${TikPork.video}
-│🔥𝐒𝐨𝐮𝐫𝐜𝐞: https://tikporntok.com/${TikPork.source}
+
+📜𝐓𝐢𝐭𝐥𝐞: ${Raw.title}
+👀𝐕𝐢𝐞𝐰𝐬: ${Raw.views}
+🔸𝐓𝐚𝐠𝐬: ${Raw.tags}
+👍🏽‍𝐋𝐢𝐤𝐞𝐬: ${Raw.like}
+👎🏽‍𝐃𝐢𝐬𝐥𝐢𝐤𝐞𝐬: ${Raw.dislike}
+⭐𝐅𝐚𝐯𝐨𝐮𝐫𝐢𝐭𝐞: ${Raw.favorite}
+📤𝐔𝐩𝐥𝐨𝐚𝐝𝐞𝐝: ${Raw.upload}
+🖊️𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${Raw.desc}
+📥𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝: https://tikporntok.com/${TikPork.video}
+🔥𝐒𝐨𝐮𝐫𝐜𝐞: https://tikporntok.com/${TikPork.source}
 └───────〇`,
               footerText: `\n(c)𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 \n${Clock}`,
               buttons: [
@@ -206,17 +206,17 @@ _Server Didn't Send Any Response_`
               contentText: `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived},
 
 ┌────◇🥭
-│
-│📜𝐓𝐢𝐭𝐥𝐞: ${Raw.title}
-│👀𝐕𝐢𝐞𝐰𝐬: ${Raw.views}
-│🔸𝐓𝐚𝐠𝐬: ${Raw.tags}
-│👍🏽‍𝐋𝐢𝐤𝐞𝐬: ${Raw.like}
-│👎🏽‍𝐃𝐢𝐬𝐥𝐢𝐤𝐞𝐬: ${Raw.dislike}
-│⭐𝐅𝐚𝐯𝐨𝐮𝐫𝐢𝐭𝐞: ${Raw.favorite}
-│📤𝐔𝐩𝐥𝐨𝐚𝐝𝐞𝐝: ${Raw.upload}
-│🖊️𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${Raw.desc}
-│📥𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝: https://tikporntok.com/${TikPork.video}
-│🔥𝐒𝐨𝐮𝐫𝐜𝐞: https://tikporntok.com/${TikPork.source}
+
+📜𝐓𝐢𝐭𝐥𝐞: ${Raw.title}
+👀𝐕𝐢𝐞𝐰𝐬: ${Raw.views}
+🔸𝐓𝐚𝐠𝐬: ${Raw.tags}
+👍🏽‍𝐋𝐢𝐤𝐞𝐬: ${Raw.like}
+👎🏽‍𝐃𝐢𝐬𝐥𝐢𝐤𝐞𝐬: ${Raw.dislike}
+⭐𝐅𝐚𝐯𝐨𝐮𝐫𝐢𝐭𝐞: ${Raw.favorite}
+📤𝐔𝐩𝐥𝐨𝐚𝐝𝐞𝐝: ${Raw.upload}
+🖊️𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${Raw.desc}
+📥𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝: https://tikporntok.com/${TikPork.video}
+🔥𝐒𝐨𝐮𝐫𝐜𝐞: https://tikporntok.com/${TikPork.source}
 └───────〇`,
               footerText: `\n(c)𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 \n${Clock}`,
               buttons: [

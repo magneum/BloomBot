@@ -8,5 +8,4 @@ var UsersMizukiSchema = new mongoose.Schema({
   warns: Number,
   avatarURL: String,
 });
-console.log(UsersMizukiSchema);
 module.exports = mongoose.model("UsersMizuki", UsersMizukiSchema);

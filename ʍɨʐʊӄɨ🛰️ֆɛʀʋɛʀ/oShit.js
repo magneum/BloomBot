@@ -11,7 +11,6 @@ var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 require(`python-format-js`);
 const fs = require(`fs`);
 const cleanRF = require(`./cleanRF`);
-const vers = require(`../package.json`);
 const speed = require(`performance-now`);
 let Timestamp = speed();
 const Pong = speed() - Timestamp;
@@ -58,7 +57,7 @@ exports.catch = async (ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎
       𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
       {
         contentText: `*◆ Try Again _${ᴋᴇɪ}${FinalName}_ Later!*`,
-        footerText: `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™ _${vers.vers}_\n${Clock}`,
+        footerText: `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™ \n${Clock}`,
         buttons: [
           {
             buttonId: `${ᴋᴇɪ}bugreport`,
@@ -81,7 +80,7 @@ exports.catch = async (ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎
       𝓜𝖎𝖟𝖚ӄ𝖎.Myself,
       {
         contentText: `⚡Try Command: _${ᴋᴇɪ}${FinalName}_ Again Later!`,
-        footerText: `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™ _${vers.vers}_\n${Clock}
+        footerText: `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™ \n${Clock}
 
 
 Error: ${ℓαвєяяσя}`,

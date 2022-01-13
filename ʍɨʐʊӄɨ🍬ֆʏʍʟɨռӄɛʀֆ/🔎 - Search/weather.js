@@ -27,17 +27,7 @@ var newScpt = scriptName.slice(0, -3).toLowerCase();
 module.exports = {
   name: newScpt,
   𝓜𝓮𝓮6ʍօʀɛ: `*${ᴋᴇɪ}weather* (city/state)`,
-  async handle(
-    ӄʀǟӄɨռʐ,
-    chat,
-    𝓜𝖎𝖟𝖚ӄ𝖎,
-    Needs,
-    ꜱɪᴛʀᴀᴘ,
-    Clock,
-    Ping,
-    Timers,
-    version
-  ) {
+  async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping, Timers) {
     try {
       var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
       var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
@@ -99,15 +89,15 @@ module.exports = {
             `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived},
 
 ┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-│
-│🌸 𝐏𝐥𝐚𝐜𝐞: ${name}
-│💮 𝐂𝐨𝐮𝐧𝐭𝐫𝐲: ${Country}
-│🌈 𝐖𝐞𝐚𝐭𝐡𝐞𝐫: ${Weather}
-│🎋 𝐓𝐞𝐦𝐩𝐞𝐫𝐚𝐭𝐮𝐫𝐞: ${Temperature}
-│💠 𝐌𝐢𝐧 𝐓𝐞𝐦𝐩: ${Minimum_Temperature}
-│📛 𝐌𝐚𝐱 𝐓𝐞𝐦𝐩: ${Maximum_Temperature}
-│💦 𝐇𝐮𝐦𝐢𝐝𝐢𝐭𝐲: ${Humidity}
-│🎐 𝐖𝐢𝐧𝐝: ${Wind}
+
+🌸 𝐏𝐥𝐚𝐜𝐞: ${name}
+💮 𝐂𝐨𝐮𝐧𝐭𝐫𝐲: ${Country}
+🌈 𝐖𝐞𝐚𝐭𝐡𝐞𝐫: ${Weather}
+🎋 𝐓𝐞𝐦𝐩𝐞𝐫𝐚𝐭𝐮𝐫𝐞: ${Temperature}
+💠 𝐌𝐢𝐧 𝐓𝐞𝐦𝐩: ${Minimum_Temperature}
+📛 𝐌𝐚𝐱 𝐓𝐞𝐦𝐩: ${Maximum_Temperature}
+💦 𝐇𝐮𝐦𝐢𝐝𝐢𝐭𝐲: ${Humidity}
+🎐 𝐖𝐢𝐧𝐝: ${Wind}
 └───────〇
 `.trim(),
             `https://wttr.in/${Needs.join(` `)}.png?m`

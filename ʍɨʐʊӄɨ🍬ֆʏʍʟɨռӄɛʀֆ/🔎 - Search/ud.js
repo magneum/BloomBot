@@ -36,7 +36,7 @@ module.exports = {
     Clock,
     Ping,
     Timers,
-    version
+    
   ) {
     try {
       var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
@@ -104,10 +104,10 @@ module.exports = {
           `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived}, 
 
 ┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-│
-│🔎Word: ${result.word}
-│📚Defination: ${result.definition}
-│🫒Example: ${result.example}
+
+🔎Word: ${result.word}
+📚Defination: ${result.definition}
+🫒Example: ${result.example}
 └───────〇
 👍: ${result.thumbs_up} |👎: ${result.thumbs_down}`
         );

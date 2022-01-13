@@ -29,17 +29,7 @@ var newScpt = scriptName.slice(0, -3).toLowerCase();
 `🍁`;
 module.exports = {
   name: newScpt,
-  async handle(
-    ӄʀǟӄɨռʐ,
-    chat,
-    𝓜𝖎𝖟𝖚ӄ𝖎,
-    Needs,
-    ꜱɪᴛʀᴀᴘ,
-    Clock,
-    Ping,
-    Timers,
-    version
-  ) {
+  async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping, Timers) {
     try {
       var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
       var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
@@ -87,30 +77,29 @@ module.exports = {
       oldd = performance.now();
       respon = `
 ┌────★ 𝐒𝐲𝐦𝐥𝐢𝐧𝐤 𝐈𝐧𝐟𝐨𝐬
-│    
-│シ︎💡ᴘʀᴇꜰɪx: ${ᴋᴇɪ}
-│シ︎⚙️ᴇɴɢɪɴᴇ: ${vers.vers}
-│シ︎💻ᴘʟᴀᴛꜰᴏʀᴍ: ${os.platform()}
-│シ︎🛰️ʟᴀᴛᴇɴᴄʏ: ${latensi.toFixed(4)}(s)
-│シ︎☕ᴜᴘᴛɪᴍᴇ: ${runtime(process.uptime())}
-│シ︎🎮ʀᴀᴍ: ${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}
+    
+シ︎💡ᴘʀᴇꜰɪx: ${ᴋᴇɪ}
+シ︎⚙️ᴇɴɢɪɴᴇ: ${vers.vers}
+シ︎💻ᴘʟᴀᴛꜰᴏʀᴍ: ${os.platform()}
+シ︎🛰️ʟᴀᴛᴇɴᴄʏ: ${latensi.toFixed(4)}(s)
+シ︎☕ᴜᴘᴛɪᴍᴇ: ${runtime(process.uptime())}
+シ︎🎮ʀᴀᴍ: ${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}
 └───────〇
 
 ┌────★ 𝐍𝐨𝐝𝐞𝐉𝐒 𝐌𝐞𝐦-𝐔𝐬𝐚𝐠𝐞:
-│${Object.keys(used)
-        .map(
-          (key, _, arr) =>
-            `${key.padEnd(
-              Math.max(...arr.map((v) => v.length)),
-              ` `
-            )}: ${formatp(used[key])}`
-        )
-        .join(`\n│`)}
+${Object.keys(used)
+  .map(
+    (key, _, arr) =>
+      `${key.padEnd(Math.max(...arr.map((v) => v.length)), ` `)}: ${formatp(
+        used[key]
+      )}`
+  )
+  .join(`\n`)}
 
 ┌────★ ${
         cpus[0]
           ? `𝐓𝐨𝐭𝐚𝐥 𝐂𝐏𝐔 𝐔𝐬𝐚𝐠𝐞
-│${cpus[0].model.trim()} (${cpu.speed} ᴍʜᴢ)${Object.keys(cpu.times)
+${cpus[0].model.trim()} (${cpu.speed} ᴍʜᴢ)${Object.keys(cpu.times)
               .map(
                 (type) =>
                   `- *${(type + `*`).padEnd(6)}: ${(
@@ -122,22 +111,20 @@ module.exports = {
 
 
 ┌────★ 𝐂𝐏𝐔 𝐂𝐨𝐫𝐞(𝐬) 𝐔𝐬𝐚𝐠𝐞 (_${cpus.length}_ 𝐂𝐨𝐫𝐞 𝐂𝐏𝐔)
-│${cpus
-              .map(
-                (cpu, i) =>
-                  `${i + 1}. ${cpu.model.trim()} (${
-                    cpu.speed
-                  } ᴍʜᴢ)${Object.keys(cpu.times)
-                    .map(
-                      (type) =>
-                        `- *${(type + `*`).padEnd(6)}: ${(
-                          (100 * cpu.times[type]) /
-                          cpu.total
-                        ).toFixed(2)}%`
-                    )
-                    .join(`\n`)}`
-              )
-              .join(`\n\n`)}`
+${cpus
+  .map(
+    (cpu, i) =>
+      `${i + 1}. ${cpu.model.trim()} (${cpu.speed} ᴍʜᴢ)${Object.keys(cpu.times)
+        .map(
+          (type) =>
+            `- *${(type + `*`).padEnd(6)}: ${(
+              (100 * cpu.times[type]) /
+              cpu.total
+            ).toFixed(2)}%`
+        )
+        .join(`\n`)}`
+  )
+  .join(`\n\n`)}`
           : ``
       }`.trim();
 
@@ -153,7 +140,7 @@ module.exports = {
             contextInfo: {
               mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
             },
-            caption: `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™ _${version}_
+            caption: `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™ 
 
 👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived}, 
 ${respon}`,

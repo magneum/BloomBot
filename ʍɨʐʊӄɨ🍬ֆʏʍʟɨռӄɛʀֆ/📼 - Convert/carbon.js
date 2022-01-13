@@ -36,17 +36,7 @@ Please use the command
 *${ᴋᴇɪ}carbon <text> -t <theme>*  
 or reply to a text message with  
 *${ᴋᴇɪ}carbon*  to carbonize the text.`,
-  async handle(
-    ӄʀǟӄɨռʐ,
-    chat,
-    𝓜𝖎𝖟𝖚ӄ𝖎,
-    Needs,
-    ꜱɪᴛʀᴀᴘ,
-    Clock,
-    Ping,
-    Timers,
-    version
-  ) {
+  async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping, Timers) {
     try {
       var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
       var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
@@ -143,9 +133,7 @@ or reply to a text message with
               let counter = 1;
               var message = `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
                 2
-              )}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${
-                vers.vers
-              }_\n${Clock}\n\nAvailable themes: `;
+              )}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n${Clock}\n\nAvailable themes: `;
               themes.forEach((theme) => {
                 message += `\n${counter}. ${theme}`;
                 counter += 1;
