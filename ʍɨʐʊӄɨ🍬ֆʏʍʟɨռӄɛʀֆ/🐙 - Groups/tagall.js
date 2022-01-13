@@ -110,15 +110,11 @@ module.exports = {
       } catch (ℓαвєяяσя) {
         console.log(ℓαвєяяσя);
       }
-
-      var groupData = await ӄʀǟӄɨռʐ.groupMetadata(chat.key.remoteJid);
       try {
         𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄʀǟӄɨռʐ.getProfilePicture(𝓜𝖎𝖟𝖚ӄ𝖎.chatId);
       } catch {
         𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎.png`;
       }
-      console.log(FinalName + `\n` + groupData.desc + `\n` + 𝕻𝕻𝖑𝖊𝖙𝖊𝖗);
-
       let members = [];
       for (var i = 0; i < 𝓜𝖎𝖟𝖚ӄ𝖎.groupMembers.length; i++) {
         members[i] = 𝓜𝖎𝖟𝖚ӄ𝖎.groupMembers[i].jid;
