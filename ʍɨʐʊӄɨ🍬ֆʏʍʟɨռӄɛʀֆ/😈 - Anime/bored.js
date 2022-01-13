@@ -34,9 +34,7 @@ module.exports = {
       var Raw = await anime.bored();
       const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
       const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
-      console.log(
-        `🍁爪𝖎𝖟𝖚ӄ𝖎™ ᴠᴇʀɪꜰɪᴇᴅ ꜰɪʟᴇ > ` + FinalName.toUpperCase() + `✔️`
-      );
+      `⬡  ⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
       if (𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
         var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
         var personreceived = Receiver.substring(0, Receiver.length - 15);

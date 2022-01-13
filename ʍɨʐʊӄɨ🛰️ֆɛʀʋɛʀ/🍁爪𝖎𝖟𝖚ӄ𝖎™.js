@@ -61,7 +61,7 @@ const version = vers.vers;
 `🍁`;
 `🍁`;
 var ӄʀǟӄɨռʐ = 𝓜𝖎𝖟𝖚ӄ𝖎ֆʏռօք.WhatsApp;
-ӄʀǟӄɨռʐ.logger.level = `error`;
+// ӄʀǟӄɨռʐ.logger.level = `error`;
 async function 爪𝖎𝖟𝖚ӄ𝖎() {
   var ꜱɪᴛʀᴀᴘ = new Map();
   var commandUsage = new Map();
@@ -441,7 +441,7 @@ ${update.desc}`,
                 warns: 0,
                 avatarURL: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗,
               });
-              newUsers.save().catch((error) => console.log(error));
+              newUsers.save().catch((ℓαвєяяσя) => console.log(ℓαвєяяσя));
             } else {
               users.xp = users.xp + xpAdd;
               users.message = users.message + messageAdd;
@@ -461,7 +461,7 @@ ${update.desc}`,
                   𝕻𝕻𝖑𝖊𝖙𝖊𝖗
                 );
               }
-              users.save().catch((error) => console.log(error));
+              users.save().catch((ℓαвєяяσя) => console.log(ℓαвєяяσя));
             }
           }
         );
@@ -510,7 +510,6 @@ ${update.desc}`,
       var persCheck = jsoncool.includes(
         𝓜𝖎𝖟𝖚ӄ𝖎.sender + `_` + 𝓜𝖎𝖟𝖚ӄ𝖎.commandName
       );
-      console.log(persCheck);
       if (persCheck === true) {
         if (𝓜𝖎𝖟𝖚ӄ𝖎.fromMe) {
           return ӄʀǟӄɨռʐ.sendMessage(
@@ -553,7 +552,7 @@ ${update.desc}`,
                   const mergeSummary = await ᴍɪᴢᴜᴋɪɢɪᴛ.merge();
                   console.log(`Merged ${mergeSummary.merges.length} files`);
                 } catch (ℓαвєяяσя) {
-                  console.error(
+                  console.ℓαвєяяσя(
                     `Merge resulted in ${Kolor.bgRedBright.black(
                       ℓαвєяяσя
                     )} conflicts`
@@ -571,11 +570,19 @@ ${update.desc}`,
             });
         }
         console.log(
-          Kolor.bgYellowBright.black(
+          Kolor.bgRedBright.black(
             `⬡==========================⬡    🍁 爪𝖎𝖟𝖚ӄ𝖎™ 🍁    ⬡==========================⬡`
           )
         );
+        console.log(
+          `🍁爪𝖎𝖟𝖚ӄ𝖎™ Verified File: ` + 𝓜𝖎𝖟𝖚ӄ𝖎.commandName.toUpperCase() + `✔️`
+        );
         console.log(chat);
+        console.log(
+          Kolor.bgRedBright.black(
+            `⬡==========================⬡    🍁 爪𝖎𝖟𝖚ӄ𝖎™ 🍁    ⬡==========================⬡`
+          )
+        );
         var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
         var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
         const ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ = ꜱɪᴛʀᴀᴘ.get(𝓜𝖎𝖟𝖚ӄ𝖎.commandName);
