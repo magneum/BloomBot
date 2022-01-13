@@ -82,6 +82,7 @@ module.exports = {
 🦄 ${ᴋᴇɪ}randommenu 
 🔎 ${ᴋᴇɪ}searchmenu
 🗂️ ${ᴋᴇɪ}ffmpegmenu
+🏝️ ${ᴋᴇɪ}filtersmenu
 🍄 ${ᴋᴇɪ}hentaimenu _(ᴀᴅᴍɪɴ-ᴏɴʟʏ)_
 🥃 ${ᴋᴇɪ}humanmenu _(ᴀᴅᴍɪɴ-ᴏɴʟʏ)_
 
