@@ -94,87 +94,69 @@ module.exports = {
           }
         }
         `⬡  ⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-        const jsoncool = JSON.parse(
-          fs.readFileSync(`./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`)
-        );
-        await jsoncool.push(𝓜𝖎𝖟𝖚ӄ𝖎.sender + "_" + 𝓜𝖎𝖟𝖚ӄ𝖎.commandName);
-        fs.writeFileSync(
-          `./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`,
-          JSON.stringify(jsoncool)
-        );
-        setTimeout(async (error) => {
-          if (error) console.log(error);
-          await jsoncool.splice(𝓜𝖎𝖟𝖚ӄ𝖎.sender + "_" + 𝓜𝖎𝖟𝖚ӄ𝖎.commandName);
-          fs.writeFileSync(
-            `./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`,
-            JSON.stringify(jsoncool)
-          );
-        }, 10000);
-        `⬡  ⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-        const time = async (ms) => {
-          return new Promise((resolve) => setTimeout(resolve, ms));
-        };
+        let warnAdd = 1;
+        try {
+          𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄʀǟӄɨռʐ.getProfilePicture(Receiver);
+        } catch {
+          𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = `https://i.postimg.cc/3wfrmmpB/NoPP.jpg`;
+        }
         await WarnList.findOne(
           {
             did: Receiver,
             serverID: 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
           },
-          (err, users) => {
+          async (err, USER) => {
             if (err) console.log(err);
-            if (!users) {
-              var newUserWarn = new WarnList({
+            if (!USER) {
+              var newUsers = await new WarnList({
                 did: Receiver,
                 serverID: 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                warns: 1,
+                warns: warnAdd,
               });
-              newUserWarn.save().catch((error) => console.log(error));
-              return Mizuki_Static.MGS(
+              await newUsers.save().catch((error) => console.log(error));
+              Mizuki_Buttons.MTB(
                 ӄʀǟӄɨռʐ,
                 chat,
                 𝓜𝖎𝖟𝖚ӄ𝖎,
-                `You got a warning from admin, your total warning now *(1)*.\nIf you get 3 warnings, you will be kicked from this group!`,
-                `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
+                `You got a warning from admin, your total warning now *${USER.warns}.*
+If you get 3 warnings, you will be kicked from this group!`
               );
             } else {
-              if (users.warns < 2) {
-                var newUserWarn = new WarnList({
+              USER.warns = USER.warns + warnAdd;
+              if (USER.warns < 2) {
+                var newUsers = await new WarnList({
                   did: Receiver,
                   serverID: 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                  warns: 2,
+                  warns: +warnAdd,
                 });
-                newUserWarn.save().catch((error) => console.log(error));
-                return Mizuki_Static.MGS(
+                await newUsers.save().catch((error) => console.log(error));
+                Mizuki_Buttons.MTB(
                   ӄʀǟӄɨռʐ,
                   chat,
                   𝓜𝖎𝖟𝖚ӄ𝖎,
-                  `You got a warning from admin, your total warning now *(2)*.\nIf you get another 3 warnings, you will be kicked from this group!`,
-                  `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
+                  `You got a warning from admin, your total warning now *${USER.warns}.*
+If you get 3 warnings, you will be kicked from this group!`
                 );
               } else {
-                try {
-                  𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄʀǟӄɨռʐ.getProfilePicture(Receiver);
-                } catch {
-                  𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = `https://i.postimg.cc/3wfrmmpB/NoPP.jpg`;
-                }
-                if (users.warns == 2) {
-                  Mizuki_Buttons.MIB(
-                    ӄʀǟӄɨռʐ,
-                    chat,
-                    𝓜𝖎𝖟𝖚ӄ𝖎,
-                    `@${personreceived},
+                USER.warns = USER.warns + warnAdd;
+                console.log("Banned!");
+                await USER.deleteOne().catch((error) => console.log(error));
+                //               Mizuki_Buttons.MIB(
+                //                 ӄʀǟӄɨռʐ,
+                //                 chat,
+                //                 𝓜𝖎𝖟𝖚ӄ𝖎,
+                //                 `@${personreceived},
 
-┌────★ 👿𝐖𝐚𝐫𝐧𝐢𝐧𝐠𝐬
-⚠️ 𝐖𝐚𝐫𝐧𝐞𝐝: _3-ᴛɪᴍᴇꜱ_
-⚠️ 𝗣𝘂𝗻𝗶𝘀𝗵𝗺𝗲𝗻𝘁: _ʙᴀɴɴᴇᴅ ꜰʀᴏᴍ ɢʀᴏᴜᴘ_`,
-                    𝕻𝕻𝖑𝖊𝖙𝖊𝖗
-                  );
-                }
-                users.delete().catch((error) => console.log(error));
-                return await ӄʀǟӄɨռʐ
-                  .groupRemove(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, [Receiver])
-                  .catch((ℓαвєяяσя) =>
-                    ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
-                  );
+                // ┌────★ 👿𝐖𝐚𝐫𝐧𝐢𝐧𝐠𝐬
+                // ⚠️ 𝐖𝐚𝐫𝐧𝐞𝐝: _3-ᴛɪᴍᴇꜱ_
+                // ⚠️ 𝗣𝘂𝗻𝗶𝘀𝗵𝗺𝗲𝗻𝘁: _ʙᴀɴɴᴇᴅ ꜰʀᴏᴍ ɢʀᴏᴜᴘ_`,
+                //                 𝕻𝕻𝖑𝖊𝖙𝖊𝖗
+                //               );
+                //               ӄʀǟӄɨռʐ
+                //                 .groupRemove(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, [Receiver])
+                //                 .catch((ℓαвєяяσя) =>
+                //                   ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
+                //                 );
               }
             }
           }
