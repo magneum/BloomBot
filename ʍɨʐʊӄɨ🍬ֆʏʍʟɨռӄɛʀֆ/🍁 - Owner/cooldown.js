@@ -44,8 +44,7 @@ module.exports = {
           `Who Is This Dumbo •@${ꜱᴇɴᴅᴇʀeceived} Trying to Use Owner-Only Commands.
 
 
-┌────★ 🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧   
-  
+┌────★ 🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧     
 ❌ _𝚈𝚘𝚞 𝙰𝚛𝚎 𝙽𝚘𝚝 𝙰𝚕𝚕𝚘𝚠𝚎𝚍!_
 `,
           _𝔏𝔞𝔟_.ɴᴏᴛᴀᴅᴍɪɴ
@@ -89,7 +88,6 @@ module.exports = {
             `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived},
 
 ┌────★ 🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧   
-
 ❗𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ᴋᴇɪ}${defaultnm}, 
 ᴄᴏᴍᴍᴀɴᴅ ᴏɴʟʏ ꜰᴏʀ ɢʀᴏᴜᴘꜱ!
 `
@@ -122,7 +120,6 @@ module.exports = {
         `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 •@${ꜱᴇɴᴅᴇʀeceived} (Owner)
 
 ┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-
 🛑 𝐆𝐫𝐨𝐮𝐩 𝐂𝐨𝐨𝐥𝐃𝐨𝐰𝐧: ${𝓜𝖎𝖟𝖚ӄ𝖎.groupName}
 ⏰ 𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧: ${CoolDown_Duration}
 🛡️ ꜱᴜᴅᴏ ᴄᴏᴏʟᴅᴏᴡɴ ᴇɴᴀʙʟᴇᴅ✔️
@@ -138,7 +135,6 @@ module.exports = {
           `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 •@${ꜱᴇɴᴅᴇʀeceived} (Owner)
 
 ┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-
 🛑 𝐆𝐫𝐨𝐮𝐩 𝐂𝐨𝐨𝐥𝐃𝐨𝐰𝐧: ${𝓜𝖎𝖟𝖚ӄ𝖎.groupName}
 🛡️ ꜱᴜᴅᴏ ᴄᴏᴏʟᴅᴏᴡɴ ᴅɪꜱᴀʙʟᴇᴅ⚠️
 `,

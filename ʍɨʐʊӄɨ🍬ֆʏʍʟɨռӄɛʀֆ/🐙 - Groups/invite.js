@@ -44,8 +44,7 @@ module.exports = {
             `Who Is This Non-Admin •@${ꜱᴇɴᴅᴇʀeceived} Trying to Use Admin-Only Commands.
 
 ❌ _𝚈𝚘𝚞 𝙰𝚛𝚎 𝙽𝚘𝚝 𝙰𝚕𝚕𝚘𝚠𝚎𝚍!_
-┌────★ 🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧   
-  
+┌────★ 🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧     
 🌶️𝐆𝐫𝐨𝐮𝐩𝐬: _Admins & Devs!_
 🌽𝐏𝐫𝐢𝐯𝐚𝐭𝐞 _Everyone_
 `,
@@ -81,7 +80,6 @@ module.exports = {
             `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived}, 
 
 ┌────★ 🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧   
-
 ❗𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ᴋᴇɪ}${defaultnm}, 
 ᴄᴏᴍᴍᴀɴᴅ ᴏɴʟʏ ꜰᴏʀ ɢʀᴏᴜᴘꜱ!
 `
@@ -146,7 +144,6 @@ module.exports = {
 
 
 ┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-
 📜𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${groupData.subject}
 💞𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${groupData.participants.length}
 🍰 𝐆𝐫𝐨𝐮𝐩: https://chat.whatsapp.com/${code}
@@ -183,7 +180,6 @@ module.exports = {
 
 
 ┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-
 📜𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${groupData.subject}
 💞𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${groupData.participants.length}
 🍰 𝐆𝐫𝐨𝐮𝐩: https://chat.whatsapp.com/${code}

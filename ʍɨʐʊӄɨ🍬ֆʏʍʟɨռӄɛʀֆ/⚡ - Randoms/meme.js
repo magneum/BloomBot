@@ -64,7 +64,6 @@ module.exports = {
               mimetype: Mimetype.png && Mimetype.jpeg,
               content: `
 ┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-
 💡 𝗧𝗶𝘁𝗹𝗲: ${response.title}
 `,
             }

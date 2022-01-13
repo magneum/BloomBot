@@ -39,7 +39,6 @@ module.exports = {
       `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived},
 
 ┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-
 ${dadJoke}`
     );
 

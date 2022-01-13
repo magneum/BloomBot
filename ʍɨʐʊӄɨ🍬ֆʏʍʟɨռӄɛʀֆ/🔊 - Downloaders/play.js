@@ -104,11 +104,10 @@ module.exports = {
               ӄʀǟӄɨռʐ,
               chat,
               𝓜𝖎𝖟𝖚ӄ𝖎,
-              `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived}, ⭕𝐀𝐮𝐝𝐢𝐨
+              `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚, @${ꜱᴇɴᴅᴇʀeceived}, ⭕𝐀𝐮𝐝𝐢𝐨
 𝗣𝗹𝗲𝗮𝘀𝗲 𝗖𝗵𝗼𝗼𝘀𝗲 𝗙𝗶𝗹𝗲 𝗦𝗺𝗮𝗹𝗹𝗲𝗿 𝗧𝗵𝗲𝗻 𝟯𝟬𝗺𝗶𝗻𝘂𝘁𝗲𝘀!
 
 ┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-
 🍻𝐓𝐢𝐭𝐥𝐞⤞ ${youfound.title}
 ⏰𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧⤞ ${youfound.timestamp}
 📜𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧⤞ ${youfound.description}
@@ -121,11 +120,10 @@ module.exports = {
             ӄʀǟӄɨռʐ,
             chat,
             𝓜𝖎𝖟𝖚ӄ𝖎,
-            `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived},
+            `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚, @${ꜱᴇɴᴅᴇʀeceived},
 ⭕𝐀𝐮𝐝𝐢𝐨 𝗣𝗹𝗲𝗮𝘀𝗲 𝘄𝗮𝗶𝘁 𝗳𝗼𝗿 𝘁𝗵𝗲 𝗱𝗲𝗹𝗶𝘃𝗲𝗿𝘆 𝗼𝗳 𝐀𝐮𝐝𝐢𝐨!
 
 ┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-
 🍻𝐓𝐢𝐭𝐥𝐞⤞ ${youfound.title}
 🙈𝐕𝐢𝐞𝐰𝐬⤞ ${youfound.views}
 ⏰𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧⤞ ${youfound.timestamp}

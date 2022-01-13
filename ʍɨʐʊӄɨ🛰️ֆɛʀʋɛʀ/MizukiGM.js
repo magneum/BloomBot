@@ -91,10 +91,8 @@ exports.MizukiGM = async (ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎) => {
                 caption: `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™ \n${Clock} 
 
 ┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-
 🍪 𝐅𝐫𝐨𝐦: @${ꜱᴇɴᴅᴇʀeceived}
-🍛 𝐓𝐨: @${personreceived}
-└───────〇 `,
+🍛 𝐓𝐨: @${personreceived}`,
               }
             )
             .then(
@@ -143,9 +141,7 @@ exports.MizukiGM = async (ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎) => {
                 caption: `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™ \n${Clock} 
 
 ┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-
-🍯𝐓𝐡𝐞𝐦𝐬𝐞𝐥𝐯𝐞: @${ꜱᴇɴᴅᴇʀeceived}
-└───────〇`,
+🍯𝐓𝐡𝐞𝐦𝐬𝐞𝐥𝐯𝐞: @${ꜱᴇɴᴅᴇʀeceived}`,
               }
             )
             .then(

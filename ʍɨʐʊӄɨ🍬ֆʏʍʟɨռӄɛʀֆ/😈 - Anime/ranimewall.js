@@ -59,7 +59,6 @@ module.exports = {
         𝓜𝖎𝖟𝖚ӄ𝖎,
         `
 ┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-
 🍕𝐅𝐨𝐫: @${ꜱᴇɴᴅᴇʀeceived}`,
         await anime.wallpaper()
       );

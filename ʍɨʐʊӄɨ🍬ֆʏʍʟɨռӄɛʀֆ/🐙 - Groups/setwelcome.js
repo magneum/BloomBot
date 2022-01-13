@@ -43,8 +43,7 @@ module.exports = {
           `Who Is This Non-Admin •@${ꜱᴇɴᴅᴇʀeceived} Trying to Use Admin-Only Commands.
 
 ❌ _𝚈𝚘𝚞 𝙰𝚛𝚎 𝙽𝚘𝚝 𝙰𝚕𝚕𝚘𝚠𝚎𝚍!_
-┌────★ 🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧   
-  
+┌────★ 🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧     
 🌶️𝐆𝐫𝐨𝐮𝐩𝐬: _Admins & Devs!_
 🌽𝐏𝐫𝐢𝐯𝐚𝐭𝐞 _Everyone_
 `,
@@ -70,7 +69,6 @@ module.exports = {
           `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived}, 
 
 ┌────★ 🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧   
-
 ❗𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ᴋᴇɪ}${defaultnm}, 
 ᴄᴏᴍᴍᴀɴᴅ ᴏɴʟʏ ꜰᴏʀ ɢʀᴏᴜᴘꜱ!
 `
@@ -116,7 +114,6 @@ module.exports = {
 
 
 ┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-
 🍁 Mizuki's Welcome Message needs to be added first!
 🍁 use *${ᴋᴇɪ}setwelcome* (message)`,
             `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
@@ -130,7 +127,6 @@ module.exports = {
 
 
 ┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-
 🍁 Mizuki Currently not greeting new members!
  `,
             `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
@@ -144,7 +140,6 @@ module.exports = {
 
 
 ┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-
 🍁 Mizuki Currently greeting new members!
  `,
             `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
@@ -162,7 +157,6 @@ module.exports = {
 
 
 ┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-
 🍁 Mizuki's Welcome Message has Been Disabled!`,
             `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
           );
@@ -178,7 +172,6 @@ module.exports = {
 
 
 ┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-
 🍁 Mizuki's Welcome Message has Been Enabled!
  `,
             `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
@@ -198,7 +191,6 @@ module.exports = {
 
 
 ┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-
 🍁 Mizuki's Welcome Message needs to be added first!
 🍁 use *${ᴋᴇɪ}setwelcome* (message)`,
               `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
@@ -212,7 +204,6 @@ module.exports = {
 
 
 ┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-
 🍁 Mizuki's Welcome Message has Been Removed!`,
             `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
           );
@@ -232,7 +223,6 @@ module.exports = {
 
 
 ┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-
 🍁 Mizuki's Welcome Message has Been Updated!
  `,
             `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
@@ -248,7 +238,6 @@ module.exports = {
 
 
 ┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-
 🍁 Mizuki's Welcome Message has Been Updated!
  `,
             `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`

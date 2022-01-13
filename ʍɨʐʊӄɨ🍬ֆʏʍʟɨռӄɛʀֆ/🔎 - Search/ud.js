@@ -101,10 +101,9 @@ module.exports = {
           ӄʀǟӄɨռʐ,
           chat,
           𝓜𝖎𝖟𝖚ӄ𝖎,
-          `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived}, 
+          `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚, @${ꜱᴇɴᴅᴇʀeceived}, 
 
 ┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-
 🔎Word: ${result.word}
 📚Defination: ${result.definition}
 🫒Example: ${result.example}
