@@ -54,13 +54,18 @@ module.exports = {
       var MediaUrl = `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎.png`;
       var MainText = `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 •@${ꜱᴇɴᴅᴇʀeceived}, ${Timers}
 
-┌──────────────★ 𝐅𝐅𝐦𝐩𝐞𝐠
-🗂️ ${ᴋᴇɪ}vid2url: _convert video to url_ 
-🗂️ ${ᴋᴇɪ}tomp3: _convert video to music_
-🗂️ ${ᴋᴇɪ}img2url: _convert image to url_
-🗂️ ${ᴋᴇɪ}ocr: _read text written on tagged image_
-🗂️ ${ᴋᴇɪ}sticker: _convert image/video to sticker_
-🗂️ ${ᴋᴇɪ}carbon: _convert text to carbonized image_`;
+┌──────────────★ 𝐅𝐢𝐥𝐭𝐞𝐫𝐬/𝐀𝐮𝐝𝐢𝐨
+🏝️ ${ᴋᴇɪ}bass: _audio filter_
+🏝️ ${ᴋᴇɪ}blown: _audio filter_
+🏝️ ${ᴋᴇɪ}deep: _audio filter_
+🏝️ ${ᴋᴇɪ}earrape: _audio filter_
+🏝️ ${ᴋᴇɪ}fast: _audio filter_
+🏝️ ${ᴋᴇɪ}fat: _audio filter_
+🏝️ ${ᴋᴇɪ}nightcore: _audio filter_
+🏝️ ${ᴋᴇɪ}reverse: _audio filter_
+🏝️ ${ᴋᴇɪ}robot: _audio filter_
+🏝️ ${ᴋᴇɪ}slow: _audio filter_
+🏝️ ${ᴋᴇɪ}smooth: _audio filter_`;
       return Mizuki_Buttons.MIB(
         ӄʀǟӄɨռʐ,
         chat,

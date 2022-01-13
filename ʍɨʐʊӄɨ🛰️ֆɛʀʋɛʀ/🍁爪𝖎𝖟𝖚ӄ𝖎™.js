@@ -167,8 +167,7 @@ async function 爪𝖎𝖟𝖚ӄ𝖎() {
 🍁ᴘʀᴇꜰɪx: ${ᴋᴇɪ}
 🛰️𝐏𝐢𝐧𝐠: ${Ping}s
 📅𝐃𝐚𝐭𝐞: ${Clock}
-🛸𝐆𝐫𝐨𝐮𝐩: ${_𝔏𝔞𝔟_.HASH}
-└───────〇`,
+🛸𝐆𝐫𝐨𝐮𝐩: ${_𝔏𝔞𝔟_.HASH}`,
       MessageType.text
     );
   });
@@ -197,7 +196,6 @@ async function 爪𝖎𝖟𝖚ӄ𝖎() {
 ⛺𝐆𝐫𝐨𝐮𝐩 𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _*Open For All*_
 🎪𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${groupupdateID.subject}
 💞𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${groupupdateID.participants.length}
-└───────〇
 
 ⬡ 𝘎𝘳𝘰𝘶𝘱 𝘩𝘢𝘴 𝘣𝘦𝘦𝘯 𝘰𝘱𝘦𝘯𝘦𝘥 𝘣𝘺 𝘢𝘥𝘮𝘪𝘯 
 ⬡ 𝘕𝘰𝘸 𝘢𝘭𝘭 𝘮𝘦𝘮𝘣𝘦𝘳𝘴 𝘤𝘢𝘯 𝘴𝘦𝘯𝘥 𝘮𝘦𝘴𝘴𝘢𝘨𝘦𝘴`,
@@ -219,7 +217,6 @@ async function 爪𝖎𝖟𝖚ӄ𝖎() {
 ⛺𝐆𝐫𝐨𝐮𝐩 𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _*Admins-Only*_
 🎪𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${groupupdateID.subject}
 💞𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${groupupdateID.participants.length}
-└───────〇
 
 ⬡ 𝘎𝘳𝘰𝘶𝘱 𝘩𝘢𝘴 𝘣𝘦𝘦𝘯 𝘤𝘭𝘰𝘴𝘦𝘥 𝘣𝘺 𝘈𝘥𝘮𝘪𝘯𝘴
 ⬡ 𝘕𝘰𝘸 _only_ 𝘈𝘥𝘮𝘪𝘯𝘴 𝘤𝘢𝘯 𝘴𝘦𝘯𝘥 𝘮𝘦𝘴𝘴𝘢𝘨𝘦𝘴`,
@@ -246,7 +243,6 @@ async function 爪𝖎𝖟𝖚ӄ𝖎() {
 🎪𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${groupupdateID.subject}
 🍌𝐂𝐡𝐚𝐧𝐠𝐞𝐝 𝐁𝐲: @${update.descOwner.split(`@`)[0]}
 💞𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${groupupdateID.participants.length}
-└───────〇
 
 ★━━━━━★ 𝐍𝐞𝐰 𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧 ★━━━━━★
 ${update.desc}`,
@@ -268,7 +264,6 @@ ${update.desc}`,
 ⛺𝐆𝐫𝐨𝐮𝐩 𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _*Info Edit Allowed For All*_
 🎪𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${groupupdateID.subject}
 💞𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${groupupdateID.participants.length}
-└───────〇
 
 ⬡ 𝘎𝘳𝘰𝘶𝘱 𝘐𝘯𝘧𝘰 𝘌𝘥𝘪𝘵 𝘏𝘢𝘴 𝘉𝘦𝘦𝘯 𝘖𝘱𝘦𝘯𝘦𝘥 𝘍𝘰𝘳 𝘌𝘷𝘦𝘳𝘺𝘰𝘯𝘦
 ⬡ 𝘕𝘰𝘸 𝘈𝘭𝘭 𝘔𝘦𝘮𝘣𝘦𝘳𝘴 𝘊𝘢𝘯 𝘌𝘥𝘪𝘵 𝘎𝘳𝘰𝘶𝘱 𝘐𝘯𝘧𝘰`,
@@ -290,7 +285,6 @@ ${update.desc}`,
 ⛺𝐆𝐫𝐨𝐮𝐩 𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _*Info Edit Allowed For Admins-Only*_
 🎪𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${groupupdateID.subject}
 💞𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${groupupdateID.participants.length}
-└───────〇
 
 ⬡ 𝘎𝘳𝘰𝘶𝘱 𝘐𝘯𝘧𝘰 𝘌𝘥𝘪𝘵 𝘏𝘢𝘴 𝘉𝘦𝘦𝘯 𝘊𝘭𝘰𝘴𝘦𝘥 𝘍𝘰𝘳 𝘌𝘷𝘦𝘳𝘺𝘰𝘯𝘦
 ⬡ 𝘕𝘰𝘸 𝘈𝘭𝘭 𝘈𝘥𝘮𝘪𝘯𝘴 𝘊𝘢𝘯 𝘌𝘥𝘪𝘵 𝘎𝘳𝘰𝘶𝘱 𝘐𝘯𝘧𝘰`,
@@ -337,8 +331,7 @@ ${update.desc}`,
 ┌━━━━━━━★
 
 🔑𝐏𝐫𝐞𝐟𝐢𝐱: *${ᴋᴇɪ}*
-👑𝐎𝐰𝐧𝐞𝐫: _🐙KrakinzKon_
-└───────〇`,
+👑𝐎𝐰𝐧𝐞𝐫: _🐙KrakinzKon_`,
               footerText: `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™ \n${Clock}`,
               buttons: [
                 {
@@ -367,7 +360,6 @@ ${update.desc}`,
 🐙 𝐆𝐑𝐎𝐔𝐏: _${ᴋᴇɪ}what_
 🦞 𝐆𝐢𝐭𝐡𝐮𝐛: _${ᴋᴇɪ}repo_
 🍾 𝐆𝐞𝐭 𝐌𝐢𝐳𝐮𝐤𝐢: _${ᴋᴇɪ}request_
-└───────〇
 
 🌱𝗣𝗿𝗲𝘀𝘀 𝗯𝗲𝗹𝗼𝘄 𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗦𝘁𝗮𝗿𝘁 𝘂𝘀𝗶𝗻𝗴 𝗠𝗶𝘇𝘂𝗸𝗶👇🏽‍ `
             );
@@ -425,71 +417,63 @@ ${update.desc}`,
     `⬡  ⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
     `🍁`;
     `🍁`;
-    if (𝓜𝖎𝖟𝖚ӄ𝖎.isGroup && !𝓜𝖎𝖟𝖚ӄ𝖎.fromMe) {
-      const UsersMizuki = require("./xp");
-      let xpAdd = Math.ceil(Math.random() * 10);
-      let messageAdd = +1;
-      try {
-        𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄʀǟӄɨռʐ.getProfilePicture(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
-      } catch {
-        𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = `https://i.postimg.cc/3wfrmmpB/NoPP.jpg`;
-      }
-      UsersMizuki.findOne(
-        {
-          did: 𝓜𝖎𝖟𝖚ӄ𝖎.sender,
-          serverID: 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-        },
-        (err, users) => {
-          if (err) console.log(err);
-          if (!users) {
-            var newUsers = new UsersMizuki({
-              did: 𝓜𝖎𝖟𝖚ӄ𝖎.sender,
-              serverID: 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              xp: xpAdd,
-              level: 0,
-              message: messageAdd,
-              warns: 0,
-              avatarURL: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗,
-            });
-            newUsers.save().catch((error) => console.log(error));
-          } else {
-            users.xp = users.xp + xpAdd;
-            users.message = users.message + messageAdd;
-            users.avatarURL = 𝕻𝕻𝖑𝖊𝖙𝖊𝖗;
-            let nxtlvl = 300 * Math.pow(2, users.level);
-            if (users.xp >= nxtlvl) {
-              users.level = users.level + 1;
-              Mizuki_Buttons.MIB(
-                ӄʀǟӄɨռʐ,
-                chat,
-                𝓜𝖎𝖟𝖚ӄ𝖎,
-                `@${𝓜𝖎𝖟𝖚ӄ𝖎.sender.substring(0, 𝓜𝖎𝖟𝖚ӄ𝖎.sender.length - 15)}, 
-
-┌────★ 🌹𝐄𝐱𝐩𝐞𝐫𝐢𝐞𝐧𝐜𝐞  
-🍮 𝗟𝗲𝘃𝗲𝗹: ${users.level}
-🍯 𝗫𝗣: ${users.xp}
-└───────〇`,
-                𝕻𝕻𝖑𝖊𝖙𝖊𝖗
-              );
-            }
-            users.save().catch((error) => console.log(error));
-          }
-        }
-      );
-    }
-    `🍁`;
-    `🍁`;
-    `⬡  ⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-    ` (c)爪𝖎𝖟𝖚ӄ𝖎 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!`;
-    `⬡  ⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-    `🍁`;
-    `🍁`;
     if (𝓜𝖎𝖟𝖚ӄ𝖎.isCmd) {
       var CheckBans = await BanList.getBanlistUser(
         𝓜𝖎𝖟𝖚ӄ𝖎.sender,
         𝓜𝖎𝖟𝖚ӄ𝖎.chatId
       );
       if (CheckBans === true && !𝓜𝖎𝖟𝖚ӄ𝖎.fromMe) return;
+      if (𝓜𝖎𝖟𝖚ӄ𝖎.isGroup) {
+        const UsersMizuki = require("./xp");
+        let xpAdd = Math.ceil(Math.random() * 10);
+        let messageAdd = +1;
+        try {
+          𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄʀǟӄɨռʐ.getProfilePicture(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
+        } catch {
+          𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = `https://i.postimg.cc/3wfrmmpB/NoPP.jpg`;
+        }
+        UsersMizuki.findOne(
+          {
+            did: 𝓜𝖎𝖟𝖚ӄ𝖎.sender,
+            serverID: 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+          },
+          (err, users) => {
+            if (err) console.log(err);
+            if (!users) {
+              var newUsers = new UsersMizuki({
+                did: 𝓜𝖎𝖟𝖚ӄ𝖎.sender,
+                serverID: 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                xp: xpAdd,
+                level: 0,
+                message: messageAdd,
+                warns: 0,
+                avatarURL: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗,
+              });
+              newUsers.save().catch((error) => console.log(error));
+            } else {
+              users.xp = users.xp + xpAdd;
+              users.message = users.message + messageAdd;
+              users.avatarURL = 𝕻𝕻𝖑𝖊𝖙𝖊𝖗;
+              let nxtlvl = 300 * Math.pow(2, users.level);
+              if (users.xp >= nxtlvl) {
+                users.level = users.level + 1;
+                Mizuki_Buttons.MIB(
+                  ӄʀǟӄɨռʐ,
+                  chat,
+                  𝓜𝖎𝖟𝖚ӄ𝖎,
+                  `@${𝓜𝖎𝖟𝖚ӄ𝖎.sender.substring(0, 𝓜𝖎𝖟𝖚ӄ𝖎.sender.length - 15)}, 
+
+┌────★ 🌹𝐄𝐱𝐩𝐞𝐫𝐢𝐞𝐧𝐜𝐞  
+🍮 𝗟𝗲𝘃𝗲𝗹: ${users.level}
+🍯 𝗫𝗣: ${users.xp}`,
+                  𝕻𝕻𝖑𝖊𝖙𝖊𝖗
+                );
+              }
+              users.save().catch((error) => console.log(error));
+            }
+          }
+        );
+      }
       const jsoncool = JSON.parse(
         fs.readFileSync(`./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`)
       );
@@ -498,9 +482,7 @@ ${update.desc}`,
         !𝓜𝖎𝖟𝖚ӄ𝖎.fromMe &&
         !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderGroupAdmin &&
         !𝓜𝖎𝖟𝖚ӄ𝖎.body.includes(_𝔏𝔞𝔟_.HASH) &&
-        !𝓜𝖎𝖟𝖚ӄ𝖎.body.includes(`https://yout`) &&
-        !𝓜𝖎𝖟𝖚ӄ𝖎.body.includes(`https:/google`) &&
-        𝓜𝖎𝖟𝖚ӄ𝖎.body.includes(`https://chat.whatsapp`)
+        𝓜𝖎𝖟𝖚ӄ𝖎.body.includes(`https://chat`)
       ) {
         var CheckLinks = await LinkList.getLinklistUser(
           𝓜𝖎𝖟𝖚ӄ𝖎.sender,
@@ -525,8 +507,7 @@ ${update.desc}`,
 ┌────★ 📍𝐀𝐧𝐭𝐢𝐥𝐢𝐧𝐤-𝐀𝐜𝐭𝐢𝐯𝐞
 🎪 𝐆𝐫𝐨𝐮𝐩: ${𝓜𝖎𝖟𝖚ӄ𝖎.groupName}
 ⚠️ ᴛʜɪꜱ ɢʀᴏᴜᴘ ᴡɪʟʟ ᴋɪᴄᴋ ᴀɴʏ ɴᴏɴ-ᴀᴅᴍɪɴ ᴍᴇᴍʙᴇʀ ᴡʜᴏ ᴡɪʟʟ ꜱᴇɴᴅ ʟɪɴᴋ.
-😂 _ᴅᴏ ɴᴏᴛ ᴘᴍ ᴍᴇ ᴛᴏ ᴜɴʙʟᴏᴄᴋ ʏᴏᴜ, ɪ ᴡɪʟʟ ʙᴀɴ ʏᴏᴜ ꜱɪᴍᴘʟᴇ._
-└──────★`,
+😂 _ᴅᴏ ɴᴏᴛ ᴘᴍ ᴍᴇ ᴛᴏ ᴜɴʙʟᴏᴄᴋ ʏᴏᴜ, ɪ ᴡɪʟʟ ʙᴀɴ ʏᴏᴜ ꜱɪᴍᴘʟᴇ._`,
             `./ʍɨʐʊӄɨ☣️ƈօʀɛ/Mizuki_Antilink.png`
           );
           return await ӄʀǟӄɨռʐ
