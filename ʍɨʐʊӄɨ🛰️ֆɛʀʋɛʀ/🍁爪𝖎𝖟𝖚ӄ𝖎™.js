@@ -533,6 +533,7 @@ ${update.desc}`,
         𝓜𝖎𝖟𝖚ӄ𝖎.chatId
       );
       if (CheckBans === true && !𝓜𝖎𝖟𝖚ӄ𝖎.fromMe) return;
+      `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
       const jsoncool = JSON.parse(
         fs.readFileSync(`./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`)
       );
@@ -573,9 +574,7 @@ ${update.desc}`,
             .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
         }
       }
-      var persCheck = jsoncool.includes(
-        𝓜𝖎𝖟𝖚ӄ𝖎.sender + `_` + 𝓜𝖎𝖟𝖚ӄ𝖎.commandName
-      );
+      var persCheck = jsoncool.includes(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
       if (persCheck === true) {
         return ӄʀǟӄɨռʐ.sendMessage(
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
