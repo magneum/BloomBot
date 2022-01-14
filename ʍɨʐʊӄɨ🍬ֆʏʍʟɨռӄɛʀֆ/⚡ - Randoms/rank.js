@@ -39,7 +39,7 @@ module.exports = {
       var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
       const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
       const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
-      `⬡  ⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
+      `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
       if (!𝓜𝖎𝖟𝖚ӄ𝖎.isGroup) {
         try {
           return Mizuki_Buttons.MTB(
@@ -57,7 +57,7 @@ module.exports = {
           ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
         }
       }
-      `⬡  ⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
+      `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
       const jsoncool = JSON.parse(
         fs.readFileSync(`./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`)
       );
@@ -74,7 +74,7 @@ module.exports = {
           JSON.stringify(jsoncool)
         );
       }, 10000);
-      `⬡  ⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
+      `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
       const applyText = (canvas, text) => {
         const ctx = canvas.getContext(`2d`);
         let fontSize = 50;
@@ -90,7 +90,7 @@ module.exports = {
       } catch {
         𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = `https://i.postimg.cc/3wfrmmpB/NoPP.jpg`;
       }
-      `⬡  ⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
+      `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
       UsersMizuki.findOne(
         {
           did: 𝓜𝖎𝖟𝖚ӄ𝖎.sender,
@@ -100,19 +100,19 @@ module.exports = {
           if (err) console.log(err);
           var background = await Canvas.loadImage(`GroundXeno/Rank.png`);
           ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
-          //Draw rectangle
+          `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
           ctx.beginPath();
           ctx.fillStyle = `rgba(236,180,95, 0.5)`;
           ctx.fillRect(260, 80, 650, 160);
           ctx.closePath();
           ctx.stroke();
-          //show Username
+          `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
           ctx.font = applyText(canvas, `User`);
           ctx.fillStyle = `#000`;
           ctx.font = `80px LobsterTwo-Bold`;
           ctx.fillText(`★Level up!★`, 280, 136);
-          //Show Level & XP
-          let nxtlvl = 400 * Math.pow(2, users.level);
+          `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
+          let nxtlvl = 200 * Math.pow(2, users.level);
           var xpleft = nxtlvl - users.xp;
           ctx.font = `30px LobsterTwo-Bold`;
           ctx.fillStyle = `#000`;
@@ -121,11 +121,11 @@ module.exports = {
             280,
             180
           );
-          //xp Left
+          `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
           ctx.font = `40px SlouchybrushRegular`;
           ctx.fillStyle = `#000`;
           ctx.fillText(`Next Level in ` + xpleft + ` xp`, 280, 225);
-          //Get avatar
+          `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
           await Canvas.loadImage(𝕻𝕻𝖑𝖊𝖙𝖊𝖗).then((avatar) => {
             ctx.beginPath();
             ctx.arc(125, 140, 100, 0, Math.PI * 2);
@@ -152,6 +152,7 @@ module.exports = {
           });
         }
       );
+      `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
     } catch (ℓαвєяяσя) {
       ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
       console.log(ℓαвєяяσя);
