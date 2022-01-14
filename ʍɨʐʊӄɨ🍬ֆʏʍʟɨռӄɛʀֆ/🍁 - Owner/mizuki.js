@@ -138,7 +138,7 @@ ${cpus
             contextInfo: {
               mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
             },
-            caption: `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™ 
+            caption: `(𝐜)𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭 
 
 👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived}, 
 ${respon}`,

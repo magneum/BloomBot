@@ -119,11 +119,16 @@ ${PeopleWel}𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${GroupMemG}
 ★━━━━━━━━◆➤
 
 ${ꜰᴇᴛᴄʜᴇᴅᴡᴇʟᴄᴏᴍᴇ.message}`,
-          footerText: `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™ \n${Clock}`,
+          footerText: `(𝐜)𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭 \n${Clock}`,
           buttons: [
             {
               buttonId: `${ᴋᴇɪ}help`,
               buttonText: { displayText: `${ᴋᴇɪ}help` },
+              type: 1,
+            },
+            {
+              buttonId: `${ᴋᴇɪ}repo`,
+              buttonText: { displayText: `${ᴋᴇɪ}repo` },
               type: 1,
             },
             {

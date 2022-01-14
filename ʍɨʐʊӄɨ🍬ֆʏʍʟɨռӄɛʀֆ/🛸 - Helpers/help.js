@@ -266,7 +266,7 @@ _${ᴋᴇɪ}tentacles_
 _${ᴋᴇɪ}thighs_
 _${ᴋᴇɪ}uniform_
 _${ᴋᴇɪ}yuri_`,
-            footerText: `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™ \n📅ᴅᴀᴛᴇ: _${Clock}_`,
+            footerText: `(𝐜)𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭 \n📅ᴅᴀᴛᴇ: _${Clock}_`,
             buttons: [
               {
                 buttonId: `${ᴋᴇɪ}mizuki`,
@@ -276,11 +276,6 @@ _${ᴋᴇɪ}yuri_`,
               {
                 buttonId: `${ᴋᴇɪ}repo`,
                 buttonText: { displayText: `${ᴋᴇɪ}repo` },
-                type: 1,
-              },
-              {
-                buttonId: `${ᴋᴇɪ}hug`,
-                buttonText: { displayText: `${ᴋᴇɪ}hug` },
                 type: 1,
               },
             ],

@@ -134,7 +134,7 @@ module.exports = {
 ⚙️𝐄𝐧𝐠𝐢𝐧𝐞: *⋊ʀʏᴏ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ*
 
 🌱𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗧𝗼𝗴𝗴𝗹𝗲 𝗔𝗻𝘁𝗶𝗹𝗶𝗻𝗸👇🏽‍`,
-              footerText: `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™ \n${Clock}`,
+              footerText: `(𝐜)𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭 \n${Clock}`,
               buttons: [
                 {
                   buttonId: `${ᴋᴇɪ}antilink on`,
@@ -181,7 +181,7 @@ module.exports = {
 ⚙️𝐄𝐧𝐠𝐢𝐧𝐞: *⋊ʀʏᴏ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ*
 
 🌱𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗧𝗼𝗴𝗴𝗹𝗲 𝗔𝗻𝘁𝗶𝗹𝗶𝗻𝗸👇🏽‍`,
-              footerText: `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™ \n${Clock}`,
+              footerText: `(𝐜)𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭 \n${Clock}`,
               buttons: [
                 {
                   buttonId: `${ᴋᴇɪ}antilink on`,
@@ -226,7 +226,7 @@ module.exports = {
 ⚙️𝐄𝐧𝐠𝐢𝐧𝐞: *⋊ʀʏᴏ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ*
 
 🌱𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗧𝗼𝗴𝗴𝗹𝗲 𝗔𝗻𝘁𝗶𝗹𝗶𝗻𝗸👇🏽‍`,
-                footerText: `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™ \n${Clock}`,
+                footerText: `(𝐜)𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭 \n${Clock}`,
                 buttons: [
                   {
                     buttonId: `${ᴋᴇɪ}antilink on`,
@@ -276,7 +276,7 @@ module.exports = {
 ⚙️𝐄𝐧𝐠𝐢𝐧𝐞: *⋊ʀʏᴏ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ*
 
 🌱𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗧𝗼𝗴𝗴𝗹𝗲 𝗔𝗻𝘁𝗶𝗹𝗶𝗻𝗸👇🏽‍`,
-                footerText: `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™ \n${Clock}`,
+                footerText: `(𝐜)𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭 \n${Clock}`,
                 buttons: [
                   {
                     buttonId: `${ᴋᴇɪ}antilink on`,

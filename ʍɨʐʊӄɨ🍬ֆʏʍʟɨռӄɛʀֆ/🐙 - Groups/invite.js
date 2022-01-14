@@ -146,7 +146,7 @@ module.exports = {
 💞𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${groupData.participants.length}
 🍰 𝐆𝐫𝐨𝐮𝐩: https://chat.whatsapp.com/${code}
 `,
-              footerText: `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™ \n${Clock}`,
+              footerText: `(𝐜)𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭 \n${Clock}`,
               buttons: [
                 {
                   buttonId: `${ᴋᴇɪ}help`,
@@ -182,7 +182,7 @@ module.exports = {
 💞𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${groupData.participants.length}
 🍰 𝐆𝐫𝐨𝐮𝐩: https://chat.whatsapp.com/${code}
 `,
-              footerText: `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™ \n${Clock}`,
+              footerText: `(𝐜)𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭 \n${Clock}`,
               buttons: [
                 {
                   buttonId: `${ᴋᴇɪ}help`,

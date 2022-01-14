@@ -57,7 +57,7 @@ exports.catch = async (ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎
       𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
       {
         contentText: `*◆ Try Again _${ᴋᴇɪ}${FinalName}_ Later!*`,
-        footerText: `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™ \n${Clock}`,
+        footerText: `(𝐜)𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭 \n${Clock}`,
         buttons: [
           {
             buttonId: `${ᴋᴇɪ}bugreport`,
@@ -80,7 +80,7 @@ exports.catch = async (ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎
       𝓜𝖎𝖟𝖚ӄ𝖎.Myself,
       {
         contentText: `⚡Try Command: _${ᴋᴇɪ}${FinalName}_ Again Later!`,
-        footerText: `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™ \n${Clock}
+        footerText: `(𝐜)𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭 \n${Clock}
 
 
 Error: ${ℓαвєяяσя}`,

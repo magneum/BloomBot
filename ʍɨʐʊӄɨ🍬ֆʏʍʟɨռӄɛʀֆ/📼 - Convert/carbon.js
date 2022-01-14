@@ -93,7 +93,7 @@ or reply to a text message with
         await ӄʀǟӄɨռʐ
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™  \n${Clock}\n\nThe replied message should be text.`,
+            `(𝐜)𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭  \n${Clock}\n\nThe replied message should be text.`,
             MessageType.text,
             { quoted: chat }
           )
@@ -129,7 +129,7 @@ or reply to a text message with
           if (text[0] === `-` && text[1] === `t`) {
             if (text[2] == null) {
               let counter = 1;
-              var message = `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+              var message = `(𝐜)𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
                 2
               )}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n${Clock}\n\nAvailable themes: `;
               themes.forEach((theme) => {
@@ -154,7 +154,7 @@ or reply to a text message with
               await ӄʀǟӄɨռʐ
                 .sendMessage(
                   𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                  `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™\n🛰️ᴘɪɴɢ: _${Ping}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n${Clock}\n\nNo input provided.
+                  `(𝐜)𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭\n🛰️ᴘɪɴɢ: _${Ping}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n${Clock}\n\nNo input provided.
 Please use the command  *${ᴋᴇɪ}carbon <text>*  or reply to a text message with  *${ᴋᴇɪ}carbon*  to carbonize the text.`,
                   MessageType.text,
                   { quoted: chat }
@@ -174,7 +174,7 @@ Please use the command  *${ᴋᴇɪ}carbon <text>*  or reply to a text message w
             await ӄʀǟӄɨռʐ
               .sendMessage(
                 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™  \n${Clock}\n\nPlease enter a valid theme.
+                `(𝐜)𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭  \n${Clock}\n\nPlease enter a valid theme.
 Do note that theme names are  *case sensitive*${ᴋᴇɪ}`,
                 MessageType.text,
                 { quoted: chat }
@@ -197,7 +197,7 @@ Do note that theme names are  *case sensitive*${ᴋᴇɪ}`,
       await ӄʀǟӄɨռʐ
         .sendMessage(
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-          `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™  \n${Clock}\n\nConverting your text into a code snippet. Please wait...`,
+          `(𝐜)𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭  \n${Clock}\n\nConverting your text into a code snippet. Please wait...`,
           MessageType.text,
           { quoted: chat }
         )
@@ -211,7 +211,7 @@ Do note that theme names are  *case sensitive*${ᴋᴇɪ}`,
         .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, output, MessageType.image, {
           quoted: chat,
           mimetype: Mimetype.png,
-          caption: `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™  \n${Clock}\n\n
+          caption: `(𝐜)𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭  \n${Clock}\n\n
 *<< Here's your carbon image! >>*
 Colour Scheme: {}`.format(themeInput),
         })
