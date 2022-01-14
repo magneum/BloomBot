@@ -52,19 +52,19 @@ module.exports = {
       var MainText = `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 •@${ꜱᴇɴᴅᴇʀeceived}, ${Timers}
 
 
-──────────────★ 𝐆𝐫𝐨𝐮𝐩𝐬/𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧
-🔰• ${ᴋᴇɪ}promote: _promote member to admin_
-🔰• ${ᴋᴇɪ}demote: _demote member from admin_
-🔰• ${ᴋᴇɪ}invite: _get group invite link_
-🔰• ${ᴋᴇɪ}admins: _get all admins of a group_
-🔰• ${ᴋᴇɪ}getdesc: _get group description_
-🔰• ${ᴋᴇɪ}groupdp: _change group profile picture_
-🔰• ${ᴋᴇɪ}kick: _ʀᴇᴍᴏᴠᴇ ᴀ ᴘᴇʀꜱᴏɴ ꜰʀᴏᴍ ᴀ ɢʀᴏᴜᴘ_
-🔰• ${ᴋᴇɪ}tagall: _tag everyone in group_
-🔰• ${ᴋᴇɪ}antilink: _remove any person who sends any links_
-🔰• ${ᴋᴇɪ}setwelcome: _welcome new members with custom message_
-🔰• ${ᴋᴇɪ}unmute: _unmute a group chat_
-🔰• ${ᴋᴇɪ}mute: _mute group chat_`;
+╔═════════════🔰 𝐆𝐫𝐨𝐮𝐩𝐬/𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧
+║• ${ᴋᴇɪ}promote: _promote member to admin_
+║• ${ᴋᴇɪ}demote: _demote member from admin_
+║• ${ᴋᴇɪ}invite: _get group invite link_
+║• ${ᴋᴇɪ}admins: _get all admins of a group_
+║• ${ᴋᴇɪ}getdesc: _get group description_
+║• ${ᴋᴇɪ}groupdp: _change group profile picture_
+║• ${ᴋᴇɪ}kick: _ʀᴇᴍᴏᴠᴇ ᴀ ᴘᴇʀꜱᴏɴ ꜰʀᴏᴍ ᴀ ɢʀᴏᴜᴘ_
+║• ${ᴋᴇɪ}tagall: _tag everyone in group_
+║• ${ᴋᴇɪ}antilink: _remove any person who sends any links_
+║• ${ᴋᴇɪ}setwelcome: _welcome new members with custom message_
+║• ${ᴋᴇɪ}unmute: _unmute a group chat_
+║• ${ᴋᴇɪ}mute: _mute group chat_`;
       return Mizuki_Buttons.MIB(
         ӄʀǟӄɨռʐ,
         chat,

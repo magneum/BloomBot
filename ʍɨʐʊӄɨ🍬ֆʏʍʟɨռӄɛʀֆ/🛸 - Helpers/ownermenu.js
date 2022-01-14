@@ -51,18 +51,18 @@ module.exports = {
       var MediaUrl = `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎.png`;
       var MainText = `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 •@${ꜱᴇɴᴅᴇʀeceived}, ${Timers}
 
-──────────────★ 𝐊𝐢𝐧𝐠/𝐎𝐰𝐧𝐞𝐫
-🐙• ${ᴋᴇɪ}dyno: _check heroku usage_
-🐙• ${ᴋᴇɪ}ban: _ban bot in group/user_
-🐙• ${ᴋᴇɪ}unban: _unban bot in group/user_
-🐙• ${ᴋᴇɪ}reboot: _reboot mizuki server_
-🐙• ${ᴋᴇɪ}broadcast: _ꜱᴇɴᴅ ʙʀᴏᴀᴅᴄᴀꜱᴛ ᴍᴇꜱꜱᴀɢᴇꜱ ᴛᴏ ᴀʟʟ ɢʀᴏᴜᴘꜱ/ᴅᴍꜱ ʏᴏᴜ ᴀʀᴇ ɪɴ._
-🐙• ${ᴋᴇɪ}bugreport: _ꜱᴇɴᴅ bug report to devs._
-🐙• ${ᴋᴇɪ}leave: _leave groups with/without sending text._
-🐙• ${ᴋᴇɪ}spam: _spam messsage in group/private_
-🐙• ${ᴋᴇɪ}help: _basic help command_
-🐙• ${ᴋᴇɪ}mizuki: _check mizuki system health config_
-🐙• ${ᴋᴇɪ}update: _update Mizuki bot_`;
+╔═════════════🐙 𝐊𝐢𝐧𝐠/𝐎𝐰𝐧𝐞𝐫
+║• ${ᴋᴇɪ}dyno: _check heroku usage_
+║• ${ᴋᴇɪ}ban: _ban bot in group/user_
+║• ${ᴋᴇɪ}unban: _unban bot in group/user_
+║• ${ᴋᴇɪ}reboot: _reboot mizuki server_
+║• ${ᴋᴇɪ}broadcast: _ꜱᴇɴᴅ ʙʀᴏᴀᴅᴄᴀꜱᴛ ᴍᴇꜱꜱᴀɢᴇꜱ ᴛᴏ ᴀʟʟ ɢʀᴏᴜᴘꜱ/ᴅᴍꜱ ʏᴏᴜ ᴀʀᴇ ɪɴ._
+║• ${ᴋᴇɪ}bugreport: _ꜱᴇɴᴅ bug report to devs._
+║• ${ᴋᴇɪ}leave: _leave groups with/without sending text._
+║• ${ᴋᴇɪ}spam: _spam messsage in group/private_
+║• ${ᴋᴇɪ}help: _basic help command_
+║• ${ᴋᴇɪ}mizuki: _check mizuki system health config_
+║• ${ᴋᴇɪ}update: _update Mizuki bot_`;
       return Mizuki_Buttons.MIB(
         ӄʀǟӄɨռʐ,
         chat,

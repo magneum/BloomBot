@@ -52,14 +52,14 @@ module.exports = {
       var MainText = `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 •@${ꜱᴇɴᴅᴇʀeceived}, ${Timers}
 
 
-──────────────★ 🔞𝐇𝐮𝐦𝐚𝐧 𝐍𝐒𝐅𝐖
-🥃• ${ᴋᴇɪ}4k: _get random 4kporn img/gif_
-🥃• ${ᴋᴇɪ}blowjob: _get random blowjob img/gif_
-🥃• ${ᴋᴇɪ}milf: _get random milf img/gif_
-🥃• ${ᴋᴇɪ}milk: _get random milk img/gif_
-🥃• ${ᴋᴇɪ}pussy: _get random pussy img/gif_
-🥃• ${ᴋᴇɪ}slut: _get random slut img/gif_
-🥃• ${ᴋᴇɪ}tikporn: _get random tikporn video_`;
+╔═════════════🥃 🔞𝐇𝐮𝐦𝐚𝐧 𝐍𝐒𝐅𝐖
+║• ${ᴋᴇɪ}4k: _get random 4kporn img/gif_
+║• ${ᴋᴇɪ}blowjob: _get random blowjob img/gif_
+║• ${ᴋᴇɪ}milf: _get random milf img/gif_
+║• ${ᴋᴇɪ}milk: _get random milk img/gif_
+║• ${ᴋᴇɪ}pussy: _get random pussy img/gif_
+║• ${ᴋᴇɪ}slut: _get random slut img/gif_
+║• ${ᴋᴇɪ}tikporn: _get random tikporn video_`;
       return Mizuki_Buttons.MIB(
         ӄʀǟӄɨռʐ,
         chat,

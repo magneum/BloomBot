@@ -51,14 +51,14 @@ module.exports = {
       var MediaUrl = `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎.png`;
       var MainText = `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 •@${ꜱᴇɴᴅᴇʀeceived}, ${Timers}
 
-──────────────★ 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫𝐬
-📥• ${ᴋᴇɪ}instagram _download image/video from ig_
-📥• ${ᴋᴇɪ}play _download youtube-name-audio under 30min_
-📥• ${ᴋᴇɪ}tiktokaudio _download tik-tok audio_
-📥• ${ᴋᴇɪ}ytaudio _download youtube-link-audio under 30min_
-📥• ${ᴋᴇɪ}watch _download youtube-name-video under 30min_
-📥• ${ᴋᴇɪ}ytvideo _download youtube-link-video under 30min_
-📥• ${ᴋᴇɪ}tiktokvideo _download tik-tok video_`;
+╔═════════════📥 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫𝐬
+║• ${ᴋᴇɪ}instagram _download image/video from ig_
+║• ${ᴋᴇɪ}play _download youtube-name-audio under 30min_
+║• ${ᴋᴇɪ}tiktokaudio _download tik-tok audio_
+║• ${ᴋᴇɪ}ytaudio _download youtube-link-audio under 30min_
+║• ${ᴋᴇɪ}watch _download youtube-name-video under 30min_
+║• ${ᴋᴇɪ}ytvideo _download youtube-link-video under 30min_
+║• ${ᴋᴇɪ}tiktokvideo _download tik-tok video_`;
       return Mizuki_Buttons.MIB(
         ӄʀǟӄɨռʐ,
         chat,
