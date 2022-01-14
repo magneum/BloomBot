@@ -11,6 +11,7 @@ const cleanRF = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/cleanRF`);
 const _𝔏𝔞𝔟_ = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/_𝔏𝔞𝔟_`);
 const ꜰᴜᴄᴋ = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/oShit`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
+const { exec } = require(`child_process`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 const request = require(`request`);
 const yts = require(`yt-search`);
@@ -91,15 +92,6 @@ module.exports = {
         const LinkForGroups = await yts(Needs.join(` `));
         const GroupVideos = LinkForGroups.videos.slice(0, 1);
         const filename = `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FinalName}_${Ping}_${ꜱᴇɴᴅᴇʀɪᴅ}`;
-        var ʏᴛᴀᴅᴏᴡɴʟᴏᴀᴅ = function (uri, filename, callback) {
-          request.head(uri, function (ℓαвєяяσя, ɢᴏᴛʀᴇꜱᴘ, body) {
-            mime = ɢᴏᴛʀᴇꜱᴘ.headers[`content-type`];
-            request(uri)
-              .pipe(fs.createWriteStream(filename))
-              .on(`close`, callback);
-          });
-        };
-        `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
         GroupVideos.forEach(async function (youfound) {
           if (youfound.seconds > `1800`) {
             return Mizuki_Buttons.MIB(
@@ -139,29 +131,61 @@ module.exports = {
           URL = youfound.url;
         });
         `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-        await YouTube_Music(URL).then(async (ɢᴏᴛʀᴇꜱᴘ) => {
-          const { dl_link, thumb, title, filesizeF, filesize } = ɢᴏᴛʀᴇꜱᴘ;
-          await axios
-            .get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
-            .then(async (a) => {
-              ʏᴛᴀᴅᴏᴡɴʟᴏᴀᴅ(dl_link, filename, async function () {
-                await ӄʀǟӄɨռʐ
-                  .sendMessage(
-                    𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                    fs.readFileSync(filename),
-                    MessageType.audio,
-                    {
-                      quoted: chat,
-                      mimetype: Mimetype.mp4Audio,
-                    }
-                  )
-                  .catch((ℓαвєяяσя) =>
-                    ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
-                  );
-                await cleanRF.cleanRF(filename);
-              });
+        try {
+          var ʏᴛᴀᴅᴏᴡɴʟᴏᴀᴅ = function (uri, filename, callback) {
+            request.head(uri, function (ℓαвєяяσя, ɢᴏᴛʀᴇꜱᴘ, body) {
+              mime = ɢᴏᴛʀᴇꜱᴘ.headers[`content-type`];
+              request(uri)
+                .pipe(fs.createWriteStream(filename))
+                .on(`close`, callback);
             });
-        });
+          };
+          await YouTube_Music(URL).then(async (ɢᴏᴛʀᴇꜱᴘ) => {
+            const { dl_link, thumb, title, filesizeF, filesize } = ɢᴏᴛʀᴇꜱᴘ;
+            await axios
+              .get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
+              .then(async (a) => {
+                ʏᴛᴀᴅᴏᴡɴʟᴏᴀᴅ(dl_link, filename, async function () {
+                  await ӄʀǟӄɨռʐ
+                    .sendMessage(
+                      𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                      fs.readFileSync(filename),
+                      MessageType.audio,
+                      {
+                        quoted: chat,
+                        mimetype: "audio/mp4",
+                      }
+                    )
+                    .catch((ℓαвєяяσя) =>
+                      ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
+                    );
+                  await cleanRF.cleanRF(filename);
+                });
+              });
+          });
+        } catch (ℓαвєяяσя) {
+          console.log(ℓαвєяяσя);
+          exec(
+            `youtube-dl -o '${FinalName}_${Ping.toString()}_${ꜱᴇɴᴅᴇʀeceived}_.%(ext)s' -x --audio-format mp3 ${URL}`,
+            (err) => {
+              if (err) return console.log(err);
+              ӄʀǟӄɨռʐ.sendMessage(
+                𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                fs.readFileSync(
+                  `${FinalName}_${Ping.toString()}_${ꜱᴇɴᴅᴇʀeceived}_.mp3`
+                ),
+                MessageType.audio,
+                {
+                  mimetype: "audio/mp4",
+                  quoted: chat,
+                }
+              );
+              cleanRF.cleanRF(
+                `${FinalName}_${Ping.toString()}_${ꜱᴇɴᴅᴇʀeceived}_.mp3`
+              );
+            }
+          );
+        }
       }
       `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
     } catch (ℓαвєяяσя) {
