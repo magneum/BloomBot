@@ -11,7 +11,7 @@ const Heroku = require(`heroku-client`);
 const ꜰᴜᴄᴋ = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/oShit`);
 const _𝔏𝔞𝔟_ = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/_𝔏𝔞𝔟_`);
 var heroku = new Heroku({
-  token: _𝔏𝔞𝔟_.HEROKU_API,
+  token: _𝔏𝔞𝔟_.HEROKU_API_KEY,
 });
 const vers = require(`../../package.json`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
@@ -70,7 +70,7 @@ module.exports = {
           }
         );
         await heroku
-          .delete(`/apps/` + _𝔏𝔞𝔟_.HEROKU_BOT_NAME + `/dynos/` + `worker`)
+          .delete(`/apps/` + _𝔏𝔞𝔟_.HEROKU_APP_NAME + `/dynos/` + `worker`)
           .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
       }
     } catch (ℓαвєяяσя) {
