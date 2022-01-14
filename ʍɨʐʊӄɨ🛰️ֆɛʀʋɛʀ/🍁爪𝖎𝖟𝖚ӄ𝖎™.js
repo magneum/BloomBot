@@ -382,10 +382,7 @@ ${update.desc}`,
             .catch((ℓαвєяяσя) => console.log(ℓαвєяяσя));
         }
       }
-
-      if (update.action === `remove`) {
-        return;
-      }
+      if (update.action === `remove`) return;
     } catch (ℓαвєяяσя) {
       console.log(ℓαвєяяσя);
     }
