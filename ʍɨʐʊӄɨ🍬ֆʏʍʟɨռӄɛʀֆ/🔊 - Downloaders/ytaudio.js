@@ -149,6 +149,14 @@ module.exports = {
                 {
                   mimetype: "audio/mp4",
                   quoted: chat,
+                  caption: `────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+🍻𝐓𝐢𝐭𝐥𝐞⤞ ${youfound.title}
+🙈𝐕𝐢𝐞𝐰𝐬⤞ ${youfound.views}
+⏰𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧⤞ ${youfound.timestamp}
+✒️𝐀𝐮𝐭𝐡𝐨𝐫⤞ ${youfound.author.name}
+📜𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧⤞ ${youfound.description}
+🔗𝐋𝐢𝐧𝐤⤞ ${youfound.url}
+`,
                 }
               );
               cleanRF.cleanRF(
@@ -181,6 +189,14 @@ module.exports = {
                       {
                         quoted: chat,
                         mimetype: "audio/mp4",
+                        caption: `────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+🍻𝐓𝐢𝐭𝐥𝐞⤞ ${youfound.title}
+🙈𝐕𝐢𝐞𝐰𝐬⤞ ${youfound.views}
+⏰𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧⤞ ${youfound.timestamp}
+✒️𝐀𝐮𝐭𝐡𝐨𝐫⤞ ${youfound.author.name}
+📜𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧⤞ ${youfound.description}
+🔗𝐋𝐢𝐧𝐤⤞ ${youfound.url}
+`,
                       }
                     )
                     .catch((ℓαвєяяσя) =>
