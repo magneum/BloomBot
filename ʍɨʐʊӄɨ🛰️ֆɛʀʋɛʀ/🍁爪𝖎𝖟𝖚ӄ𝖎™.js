@@ -502,25 +502,14 @@ ${update.desc}`,
         𝓜𝖎𝖟𝖚ӄ𝖎.sender + `_` + 𝓜𝖎𝖟𝖚ӄ𝖎.commandName
       );
       if (persCheck === true) {
-        if (𝓜𝖎𝖟𝖚ӄ𝖎.fromMe) {
-          return ӄʀǟӄɨռʐ.sendMessage(
-            𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            `*🙏🏽‍Sir Please Wait For 10sec!*`,
-            MessageType.text,
-            {
-              quoted: chat,
-            }
-          );
-        } else {
-          return ӄʀǟӄɨռʐ.sendMessage(
-            𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            `*🚏CalmDown:* _Wait For 10sec!_`,
-            MessageType.text,
-            {
-              quoted: chat,
-            }
-          );
-        }
+        return ӄʀǟӄɨռʐ.sendMessage(
+          𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+          `*🚏CalmDown:* _Wait For 10sec!_`,
+          MessageType.text,
+          {
+            quoted: chat,
+          }
+        );
       } else {
         const ᴍɪᴢᴜᴋɪɢɪᴛ = require(`simple-git`)();
         await ᴍɪᴢᴜᴋɪɢɪᴛ.fetch();
