@@ -109,7 +109,7 @@ module.exports = {
           //show Username
           ctx.font = applyText(canvas, `User`);
           ctx.fillStyle = `#000`;
-          ctx.font = `30px LobsterTwo-Bold`;
+          ctx.font = `80px LobsterTwo-Bold`;
           ctx.fillText(`★Level up!★`, 280, 136);
           //Show Level & XP
           let nxtlvl = 400 * Math.pow(2, users.level);
