@@ -10,10 +10,18 @@ const cleanRF = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/cleanRF`);
 const UsersMizuki = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/xp`);
 const ꜰᴜᴄᴋ = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/oShit`);
 const _𝔏𝔞𝔟_ = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/_𝔏𝔞𝔟_`);
+const { registerFont } = require(`canvas`);
+registerFont(`./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/LobsterTwo-Bold.ttf`, {
+  family: `LobsterTwo-Bold`,
+});
+registerFont(`./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/SlouchybrushRegular-eZnEB.ttf`, {
+  family: `SlouchybrushRegular`,
+});
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 const fs = require(`fs`);
 var path = require(`path`);
+var Canvas = require(`canvas`);
 var scriptName = path.basename(__filename);
 var newScpt = scriptName.slice(0, -3).toLowerCase();
 `🍁`;
@@ -43,60 +51,105 @@ module.exports = {
 ────★ 🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧   
 
 ❗𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ᴋᴇɪ}${defaultnm}, 
-ᴄᴏᴍᴍᴀɴᴅ ᴏɴʟʏ ꜰᴏʀ ɢʀᴏᴜᴘꜱ!
-`
+ᴄᴏᴍᴍᴀɴᴅ ᴏɴʟʏ ꜰᴏʀ ɢʀᴏᴜᴘꜱ!`
           );
         } catch (ℓαвєяяσя) {
           ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
         }
       }
+      `⬡  ⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
       const jsoncool = JSON.parse(
         fs.readFileSync(`./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`)
       );
-      await jsoncool.push(𝓜𝖎𝖟𝖚ӄ𝖎.sender + "_" + 𝓜𝖎𝖟𝖚ӄ𝖎.commandName);
+      await jsoncool.push(𝓜𝖎𝖟𝖚ӄ𝖎.sender + `_` + 𝓜𝖎𝖟𝖚ӄ𝖎.commandName);
       fs.writeFileSync(
         `./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`,
         JSON.stringify(jsoncool)
       );
       setTimeout(async (error) => {
         if (error) console.log(error);
-        await jsoncool.splice(𝓜𝖎𝖟𝖚ӄ𝖎.sender + "_" + 𝓜𝖎𝖟𝖚ӄ𝖎.commandName);
+        await jsoncool.splice(𝓜𝖎𝖟𝖚ӄ𝖎.sender + `_` + 𝓜𝖎𝖟𝖚ӄ𝖎.commandName);
         fs.writeFileSync(
           `./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`,
           JSON.stringify(jsoncool)
         );
       }, 10000);
-      let xpAdd = Math.ceil(Math.random() * 10);
-      let messageAdd = +1;
+      `⬡  ⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
+      const applyText = (canvas, text) => {
+        const ctx = canvas.getContext(`2d`);
+        let fontSize = 50;
+        do {
+          ctx.font = `${(fontSize -= 10)}px Symbola`;
+        } while (ctx.measureText(text).width > canvas.width - 300);
+        return ctx.font;
+      };
+      var canvas = Canvas.createCanvas(840, 300);
+      var ctx = canvas.getContext(`2d`);
       try {
         𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄʀǟӄɨռʐ.getProfilePicture(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
       } catch {
         𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = `https://i.postimg.cc/3wfrmmpB/NoPP.jpg`;
       }
+      `⬡  ⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
       UsersMizuki.findOne(
         {
           did: 𝓜𝖎𝖟𝖚ӄ𝖎.sender,
           serverID: 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
         },
-        (err, users) => {
+        async (err, users) => {
           if (err) console.log(err);
-          users.xp = users.xp + xpAdd;
-          users.message = users.message + messageAdd;
-          users.avatarURL = 𝕻𝕻𝖑𝖊𝖙𝖊𝖗;
-          users.level = users.level + 1;
-          Mizuki_Buttons.MIB(
-            ӄʀǟӄɨռʐ,
-            chat,
-            𝓜𝖎𝖟𝖚ӄ𝖎,
-            `@${𝓜𝖎𝖟𝖚ӄ𝖎.sender.substring(0, 𝓜𝖎𝖟𝖚ӄ𝖎.sender.length - 15)},
-
-────★ 🌹𝐄𝐱𝐩𝐞𝐫𝐢𝐞𝐧𝐜𝐞
-
-🍮 𝗟𝗲𝘃𝗲𝗹: ${users.level}
-🍯 𝗫𝗣: ${users.xp}
-`,
-            𝕻𝕻𝖑𝖊𝖙𝖊𝖗
+          var background = await Canvas.loadImage(`GroundXeno/Rank.png`);
+          ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
+          //Draw rectangle
+          ctx.beginPath();
+          ctx.fillStyle = `rgba(236,180,95, 0.5)`;
+          ctx.fillRect(260, 80, 650, 160);
+          ctx.closePath();
+          ctx.stroke();
+          //show Username
+          ctx.font = applyText(canvas, `User`);
+          ctx.fillStyle = `#000`;
+          ctx.font = `30px LobsterTwo-Bold`;
+          ctx.fillText(`★Level up!★`, 280, 136);
+          //Show Level & XP
+          let nxtlvl = 400 * Math.pow(2, users.level);
+          var xpleft = nxtlvl - users.xp;
+          ctx.font = `30px LobsterTwo-Bold`;
+          ctx.fillStyle = `#000`;
+          ctx.fillText(
+            `Level now ` + users.level + ` - ` + users.xp + ` XP`,
+            280,
+            180
           );
+          //xp Left
+          ctx.font = `40px SlouchybrushRegular`;
+          ctx.fillStyle = `#000`;
+          ctx.fillText(`Next Level in ` + xpleft + ` xp`, 280, 225);
+          //Get avatar
+          await Canvas.loadImage(𝕻𝕻𝖑𝖊𝖙𝖊𝖗).then((avatar) => {
+            ctx.beginPath();
+            ctx.arc(125, 140, 100, 0, Math.PI * 2);
+            ctx.closePath();
+            ctx.clip();
+            ctx.drawImage(avatar, 25, 40, 200, 200);
+            const out = fs.createWriteStream(
+              `${ꜱᴇɴᴅᴇʀeceived.toString()}_.jpeg`
+            );
+            const stream = canvas.createJPEGStream();
+            stream.pipe(out);
+            out.on(`finish`, () => {
+              ӄʀǟӄɨռʐ.sendMessage(
+                𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                fs.readFileSync(`${ꜱᴇɴᴅᴇʀeceived.toString()}_.jpeg`),
+                MessageType.image,
+                {
+                  mimetype: Mimetype.jpeg,
+                  quoted: chat,
+                }
+              );
+              cleanRF.cleanRF(`${ꜱᴇɴᴅᴇʀeceived.toString()}_.jpeg`);
+            });
+          });
         }
       );
     } catch (ℓαвєяяσя) {

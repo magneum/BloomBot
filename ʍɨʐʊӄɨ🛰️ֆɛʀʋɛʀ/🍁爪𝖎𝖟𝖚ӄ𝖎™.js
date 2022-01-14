@@ -437,7 +437,7 @@ ${update.desc}`,
               users.xp = users.xp + xpAdd;
               users.message = users.message + messageAdd;
               users.avatarURL = 𝕻𝕻𝖑𝖊𝖙𝖊𝖗;
-              let nxtlvl = 300 * Math.pow(2, users.level);
+              let nxtlvl = 400 * Math.pow(2, users.level);
               if (users.xp >= nxtlvl) {
                 users.level = users.level + 1;
                 Mizuki_Buttons.MIB(
