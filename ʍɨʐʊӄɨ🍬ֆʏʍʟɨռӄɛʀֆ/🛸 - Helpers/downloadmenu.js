@@ -58,8 +58,7 @@ module.exports = {
 📥• ${ᴋᴇɪ}ytaudio _download youtube-link-audio under 30min_
 📥• ${ᴋᴇɪ}watch _download youtube-name-video under 30min_
 📥• ${ᴋᴇɪ}ytvideo _download youtube-link-video under 30min_
-📥• ${ᴋᴇɪ}tiktokvideo _download tik-tok video_
-`;
+📥• ${ᴋᴇɪ}tiktokvideo _download tik-tok video_`;
       return Mizuki_Buttons.MIB(
         ӄʀǟӄɨռʐ,
         chat,

@@ -60,10 +60,9 @@ module.exports = {
 🐙• ${ᴋᴇɪ}bugreport: _ꜱᴇɴᴅ bug report to devs._
 🐙• ${ᴋᴇɪ}leave: _leave groups with/without sending text._
 🐙• ${ᴋᴇɪ}spam: _spam messsage in group/private_
-🐙• ${ᴋᴇɪ}help 
-🐙• ${ᴋᴇɪ}list
-🐙• ${ᴋᴇɪ}mizuki
-`;
+🐙• ${ᴋᴇɪ}help: _basic help command_
+🐙• ${ᴋᴇɪ}mizuki: _check mizuki system health config_
+🐙• ${ᴋᴇɪ}update: _update Mizuki bot_`;
       return Mizuki_Buttons.MIB(
         ӄʀǟӄɨռʐ,
         chat,

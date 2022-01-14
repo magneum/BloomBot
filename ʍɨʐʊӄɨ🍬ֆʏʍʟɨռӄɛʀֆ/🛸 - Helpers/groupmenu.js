@@ -52,7 +52,7 @@ module.exports = {
       var MainText = `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 •@${ꜱᴇɴᴅᴇʀeceived}, ${Timers}
 
 
-──────────────★ 𝐆𝐫𝐨𝐮𝐩𝐬/𝐀𝐝𝐦𝐢𝐧𝐬
+──────────────★ 𝐆𝐫𝐨𝐮𝐩𝐬/𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧
 🔰• ${ᴋᴇɪ}promote: _promote member to admin_
 🔰• ${ᴋᴇɪ}demote: _demote member from admin_
 🔰• ${ᴋᴇɪ}invite: _get group invite link_
@@ -64,8 +64,7 @@ module.exports = {
 🔰• ${ᴋᴇɪ}antilink: _remove any person who sends any links_
 🔰• ${ᴋᴇɪ}setwelcome: _welcome new members with custom message_
 🔰• ${ᴋᴇɪ}unmute: _unmute a group chat_
-🔰• ${ᴋᴇɪ}mute: _mute group chat_
-`;
+🔰• ${ᴋᴇɪ}mute: _mute group chat_`;
       return Mizuki_Buttons.MIB(
         ӄʀǟӄɨռʐ,
         chat,
