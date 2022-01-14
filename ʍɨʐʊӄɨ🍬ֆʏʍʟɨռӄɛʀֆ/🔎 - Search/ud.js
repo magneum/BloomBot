@@ -27,24 +27,13 @@ var newScpt = scriptName.slice(0, -3).toLowerCase();
 module.exports = {
   name: newScpt,
   𝓜𝓮𝓮6ʍօʀɛ: `*${ᴋᴇɪ}ud*  <topic>`,
-  async handle(
-    ӄʀǟӄɨռʐ,
-    chat,
-    𝓜𝖎𝖟𝖚ӄ𝖎,
-    Needs,
-    ꜱɪᴛʀᴀᴘ,
-    Clock,
-    Ping,
-    Timers,
-    
-  ) {
+  async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping, Timers) {
     try {
       var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
       var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
       const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
       const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
-      `⬡  ⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-
+      `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
       var text = ``;
       if (!(𝓜𝖎𝖟𝖚ӄ𝖎.replyMessage === ``)) {
         text = 𝓜𝖎𝖟𝖚ӄ𝖎.replyMessage;
@@ -65,6 +54,7 @@ module.exports = {
       } else {
         text = Needs.join(` `);
       }
+      `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
       const jsoncool = JSON.parse(
         fs.readFileSync(`./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`)
       );
@@ -81,7 +71,7 @@ module.exports = {
           JSON.stringify(jsoncool)
         );
       }, 10000);
-
+      `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
       let Response = await ud.define(text);
       let result = Response.reduce(function (prev, current) {
         return prev.thumbs_up + prev.thumbs_down >
@@ -93,7 +83,7 @@ module.exports = {
       result.definition = result.definition.replace(/\]/g, `_`);
       result.example = result.example.replace(/\[/g, `_`);
       result.example = result.example.replace(/\]/g, `_`);
-
+      `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
       try {
         return Mizuki_Buttons.MTB(
           ӄʀǟӄɨռʐ,
@@ -108,6 +98,7 @@ module.exports = {
 
 👍: ${result.thumbs_up} |👎: ${result.thumbs_down}`
         );
+        `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
       } catch (ℓαвєяяσя) {
         ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
       }

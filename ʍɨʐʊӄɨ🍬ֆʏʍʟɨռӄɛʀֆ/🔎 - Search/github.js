@@ -33,8 +33,7 @@ or replying  *${ᴋᴇɪ}github*`,
       var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
       const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
       const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
-      `⬡  ⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-
+      `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
       let user_name = ``;
       if (𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
         user_name = 𝓜𝖎𝖟𝖚ӄ𝖎.replyMessage;
@@ -56,6 +55,7 @@ or replying  *${ᴋᴇɪ}github*`,
         }
         user_name = Needs[0];
       }
+      `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
       const jsoncool = JSON.parse(
         fs.readFileSync(`./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`)
       );
@@ -72,7 +72,7 @@ or replying  *${ᴋᴇɪ}github*`,
           JSON.stringify(jsoncool)
         );
       }, 10000);
-
+      `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
       let userResponse = await got(`https://api.github.com/users/` + user_name);
       let user = JSON.parse(userResponse.body);
       Object.keys(user).forEach(function (key) {
@@ -116,6 +116,7 @@ or replying  *${ᴋᴇɪ}github*`,
         }
         caption += `\n*🔍 Some Repos :* ` + repos;
       }
+      `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
       await ӄʀǟӄɨռʐ
         .sendMessage(
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
@@ -131,6 +132,7 @@ or replying  *${ᴋᴇɪ}github*`,
           }
         )
         .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
+        `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
     } catch (ℓαвєяяσя) {
       ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
       console.log(ℓαвєяяσя);

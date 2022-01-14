@@ -33,8 +33,7 @@ module.exports = {
       var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
       const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
       const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
-      `⬡  ⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-
+      `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
       if (Needs.length === 0) {
         var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(𝓜𝖎𝖟𝖚ӄ𝖎.commandName);
         var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
@@ -50,6 +49,7 @@ module.exports = {
           ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
         );
       }
+      `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
       try {
         const jsoncool = JSON.parse(
           fs.readFileSync(`./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`)
@@ -67,14 +67,14 @@ module.exports = {
             JSON.stringify(jsoncool)
           );
         }, 10000);
-
+        `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
         let url = `https://api.tenor.com/v1/search?q=${Needs.join(` `)}&key=${
           _𝔏𝔞𝔟_.TEN
         }&limit=100`;
         let response = await fetch(url);
         let json = await response.json();
         console.log(json);
-
+        `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
         const MP4 =
           json.results[Math.floor(Math.random() * json.results.length)].media[0]
             .mp4.url;
@@ -87,7 +87,7 @@ module.exports = {
         const LOOPEDMP4 =
           json.results[Math.floor(Math.random() * json.results.length)].media[0]
             .loopedmp4.url;
-
+        `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
         const GIF =
           json.results[Math.floor(Math.random() * json.results.length)].media[0]
             .gif.url;
@@ -107,7 +107,7 @@ module.exports = {
         const TINYWEBM =
           json.results[Math.floor(Math.random() * json.results.length)].media[0]
             .tinywebm.url;
-
+        `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
         await ӄʀǟӄɨռʐ
           .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, { url: MP4 }, MessageType.video, {
             contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
@@ -120,6 +120,7 @@ module.exports = {
 `,
           })
           .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
+        `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
       } catch (ℓαвєяяσя) {
         return Mizuki_Buttons.MTB(
           ӄʀǟӄɨռʐ,
@@ -131,6 +132,7 @@ module.exports = {
 𝘎𝘪𝘧 𝘕𝘰𝘵 𝘍𝘰𝘶𝘯𝘥.𝘛𝘳𝘺 𝘈𝘨𝘢𝘪𝘯!`
         );
       }
+      `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
     } catch (ℓαвєяяσя) {
       ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
       console.log(ℓαвєяяσя);

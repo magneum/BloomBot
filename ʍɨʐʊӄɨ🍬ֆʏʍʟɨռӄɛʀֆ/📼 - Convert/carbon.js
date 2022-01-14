@@ -42,8 +42,7 @@ or reply to a text message with
       var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
       const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
       const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
-      `⬡  ⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-
+      `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
       let themes = [
         `3024 night`,
         `a11y dark`,
@@ -74,6 +73,7 @@ or reply to a text message with
         `yeti`,
         `zenburn`,
       ];
+      `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
       var code = ``;
       if (Needs[0] == null && !𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
         var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(𝓜𝖎𝖟𝖚ӄ𝖎.commandName);
@@ -89,6 +89,7 @@ or reply to a text message with
           𝓜𝖎𝖟𝖚ӄ𝖎.commandName,
           ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
         );
+        `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
       } else if (𝓜𝖎𝖟𝖚ӄ𝖎.isReply && !𝓜𝖎𝖟𝖚ӄ𝖎.replyMessage) {
         await ӄʀǟӄɨռʐ
           .sendMessage(
@@ -98,8 +99,8 @@ or reply to a text message with
             { quoted: chat }
           )
           .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
-
         return;
+        `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
       } else if (𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
         code = 𝓜𝖎𝖟𝖚ӄ𝖎.replyMessage;
         themeInput = themes[Math.floor(Math.random() * themes.length)];
@@ -120,7 +121,7 @@ or reply to a text message with
             JSON.stringify(jsoncool)
           );
         }, 10000);
-
+        `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
         try {
           var text = 𝓜𝖎𝖟𝖚ӄ𝖎.body.replace(
             𝓜𝖎𝖟𝖚ӄ𝖎.body[0] + 𝓜𝖎𝖟𝖚ӄ𝖎.commandName + ` `,
@@ -148,8 +149,8 @@ or reply to a text message with
                 .catch((ℓαвєяяσя) =>
                   ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
                 );
-
               return;
+              `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
             } else {
               await ӄʀǟӄɨռʐ
                 .sendMessage(
@@ -166,7 +167,7 @@ Please use the command  *${ᴋᴇɪ}carbon <text>*  or reply to a text message w
               return;
             }
           }
-
+          `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
           var body = 𝓜𝖎𝖟𝖚ӄ𝖎.body.split(`-t`);
           code = body[0].replace(𝓜𝖎𝖟𝖚ӄ𝖎.body[0] + 𝓜𝖎𝖟𝖚ӄ𝖎.commandName + ` `, ``);
           themeInput = body[1].substring(1);
@@ -180,9 +181,9 @@ Do note that theme names are  *case sensitive*${ᴋᴇɪ}`,
                 { quoted: chat }
               )
               .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
-
             return;
           }
+          `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
         } catch (ℓαвєяяσя) {
           if (ℓαвєяяσя instanceof TypeError) {
             code = 𝓜𝖎𝖟𝖚ӄ𝖎.body.replace(
@@ -193,15 +194,7 @@ Do note that theme names are  *case sensitive*${ᴋᴇɪ}`,
           }
         }
       }
-
-      await ӄʀǟӄɨռʐ
-        .sendMessage(
-          𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-          `(𝐜)𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭  \n${Clock}\n\nConverting your text into a code snippet. Please wait...`,
-          MessageType.text,
-          { quoted: chat }
-        )
-        .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
+      `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
       const carbon = new Carbon.createCarbon()
         .setCode(code)
         .setPrettify(true)
@@ -211,8 +204,7 @@ Do note that theme names are  *case sensitive*${ᴋᴇɪ}`,
         .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, output, MessageType.image, {
           quoted: chat,
           mimetype: Mimetype.png,
-          caption: `(𝐜)𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭  \n${Clock}\n\n
-*<< Here's your carbon image! >>*
+          caption: `(𝐜)𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭
 Colour Scheme: {}`.format(themeInput),
         })
         .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
