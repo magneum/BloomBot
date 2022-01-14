@@ -17,6 +17,9 @@ registerFont(`./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/LobsterTwo-Bold.ttf`, {
 registerFont(`./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/SlouchybrushRegular-eZnEB.ttf`, {
   family: `SlouchybrushRegular`,
 });
+registerFont(`./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/TheHeartOfEverythingDemo-KRdD.ttf`, {
+  family: `TheHeartOfEverythingDemo`,
+});
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 const fs = require(`fs`);
@@ -122,7 +125,7 @@ module.exports = {
             180
           );
           `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-          ctx.font = `40px SlouchybrushRegular`;
+          ctx.font = `40px TheHeartOfEverythingDemo`;
           ctx.fillStyle = `#000`;
           ctx.fillText(`Next Level in ` + xpleft + ` xp`, 280, 225);
           `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;

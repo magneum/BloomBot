@@ -42,6 +42,9 @@ registerFont(`./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/LobsterTwo-Bold.ttf`, {
 registerFont(`./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/SlouchybrushRegular-eZnEB.ttf`, {
   family: `SlouchybrushRegular`,
 });
+registerFont(`./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/TheHeartOfEverythingDemo-KRdD.ttf`, {
+  family: `TheHeartOfEverythingDemo`,
+});
 var Canvas = require(`canvas`);
 if (time2 < `24:59:00`) {
   var Timers = `𝐍𝐢𝐠𝐡𝐭😴`;
@@ -480,13 +483,13 @@ ${update.desc}`,
               ctx.font = `30px LobsterTwo-Bold`;
               ctx.fillStyle = `#000`;
               ctx.fillText(
-                `Level now ` + users.level + ` - ` + users.xp + ` XP`,
+                `Level now ${users.level} - ${users.xp} XP`,
                 280,
                 180
               );
-              ctx.font = `40px SlouchybrushRegular`;
+              ctx.font = `40px TheHeartOfEverythingDemo`;
               ctx.fillStyle = `#000`;
-              ctx.fillText(`Next Level in ` + xpleft + ` xp`, 280, 225);
+              ctx.fillText(`Next Level in ${xpleft} xp`, 280, 225);
               await Canvas.loadImage(𝕻𝕻𝖑𝖊𝖙𝖊𝖗).then((avatar) => {
                 ctx.beginPath();
                 ctx.arc(125, 140, 100, 0, Math.PI * 2);
