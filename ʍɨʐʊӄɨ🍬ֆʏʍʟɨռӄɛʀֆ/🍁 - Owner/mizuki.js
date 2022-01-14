@@ -75,7 +75,6 @@ module.exports = {
       oldd = performance.now();
       respon = `
 ────★ 𝐒𝐲𝐦𝐥𝐢𝐧𝐤 𝐈𝐧𝐟𝐨𝐬
-    
 シ︎💡ᴘʀᴇꜰɪx: ${ᴋᴇɪ}
 シ︎⚙️ᴇɴɢɪɴᴇ: ${vers.vers}
 シ︎💻ᴘʟᴀᴛꜰᴏʀᴍ: ${os.platform()}
