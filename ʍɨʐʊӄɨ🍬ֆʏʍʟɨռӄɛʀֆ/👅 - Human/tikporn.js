@@ -32,7 +32,12 @@ module.exports = {
       const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
       `⬡  ⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
 
-      if (𝓜𝖎𝖟𝖚ӄ𝖎.isGroup && !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderGroupAdmin && !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderDev) {
+      if (
+        𝓜𝖎𝖟𝖚ӄ𝖎.isGroup &&
+        !𝓜𝖎𝖟𝖚ӄ𝖎.fromMe &&
+        !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderDev &&
+        !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderGroupAdmin
+      ) {
         try {
           return Mizuki_Buttons.MIB(
             ӄʀǟӄɨռʐ,
@@ -40,11 +45,10 @@ module.exports = {
             𝓜𝖎𝖟𝖚ӄ𝖎,
             `Who Is This Non-Admin •@${ꜱᴇɴᴅᴇʀeceived} Trying to Use Admin-Only Commands.
 
-*❌ 𝚈𝚘𝚞 𝙰𝚛𝚎 𝙽𝚘𝚝 𝙰𝚕𝚕𝚘𝚠𝚎𝚍!*
-┌────★ 🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧   
-🌶️𝐆𝐫𝐨𝐮𝐩𝐬: _Admins & Devs!_
-🌽𝐏𝐫𝐢𝐯𝐚𝐭𝐞 _Everyone_
-`,
+────★ 🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧   
+❌ You Are Not Allowed!  
+🌶️𝐆𝐫𝐨𝐮𝐩𝐬: Admins & Devs!
+🌽𝐏𝐫𝐢𝐯𝐚𝐭𝐞 Everyone`,
             _𝔏𝔞𝔟_.ɴᴏᴛᴀᴅᴍɪɴ
           );
         } catch (ℓαвєяяσя) {
@@ -120,7 +124,7 @@ _Server Didn't Send Any Response_`
             {
               contentText: `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived},
 
-┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 📜𝐓𝐢𝐭𝐥𝐞: ${Raw.title}
 👀𝐕𝐢𝐞𝐰𝐬: ${Raw.views}
 🔸𝐓𝐚𝐠𝐬: ${Raw.tags}
@@ -201,7 +205,7 @@ _Server Didn't Send Any Response_`
             {
               contentText: `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived},
 
-┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 📜𝐓𝐢𝐭𝐥𝐞: ${Raw.title}
 👀𝐕𝐢𝐞𝐰𝐬: ${Raw.views}
 🔸𝐓𝐚𝐠𝐬: ${Raw.tags}

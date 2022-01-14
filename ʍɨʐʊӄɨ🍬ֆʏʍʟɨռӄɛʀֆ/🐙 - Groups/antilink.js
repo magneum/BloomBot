@@ -41,10 +41,10 @@ module.exports = {
             𝓜𝖎𝖟𝖚ӄ𝖎,
             `Who Is This Non-Admin •@${ꜱᴇɴᴅᴇʀeceived} Trying to Use Admin-Only Commands.
 
-❌ _𝚈𝚘𝚞 𝙰𝚛𝚎 𝙽𝚘𝚝 𝙰𝚕𝚕𝚘𝚠𝚎𝚍!_
-┌────★ 🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧     
-🌶️𝐆𝐫𝐨𝐮𝐩𝐬: _Admins & Devs!_
-🌽𝐏𝐫𝐢𝐯𝐚𝐭𝐞 _Everyone_
+────★ 🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧   
+❌ You Are Not Allowed!  
+🌶️𝐆𝐫𝐨𝐮𝐩𝐬: Admins & Devs!
+🌽𝐏𝐫𝐢𝐯𝐚𝐭𝐞 Everyone
 `,
             _𝔏𝔞𝔟_.ɴᴏᴛᴀᴅᴍɪɴ
           );
@@ -77,7 +77,7 @@ module.exports = {
             𝓜𝖎𝖟𝖚ӄ𝖎,
             `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived}, 
 
-┌────★ 🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧  
+────★ 🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧  
  
 ❗𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ᴋᴇɪ}${defaultnm}, 
 ᴄᴏᴍᴍᴀɴᴅ ᴏɴʟʏ ꜰᴏʀ ɢʀᴏᴜᴘꜱ!
@@ -128,7 +128,7 @@ module.exports = {
               contentText: `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived}, (admin)
 
 
-┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 📜𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${𝓜𝖎𝖟𝖚ӄ𝖎.groupName}
 🔗𝐀𝐧𝐭𝐢𝐥𝐢𝐧𝐤 𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _⚠️Not-set_
 ⚙️𝐄𝐧𝐠𝐢𝐧𝐞: *⋊ʀʏᴏ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ*
@@ -175,7 +175,7 @@ module.exports = {
             {
               contentText: `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived}, (admin)
 
-┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 📜𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${𝓜𝖎𝖟𝖚ӄ𝖎.groupName}
 🔗𝐀𝐧𝐭𝐢𝐥𝐢𝐧𝐤 𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _✅Pre-Turned-On_
 ⚙️𝐄𝐧𝐠𝐢𝐧𝐞: *⋊ʀʏᴏ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ*
@@ -220,7 +220,7 @@ module.exports = {
               {
                 contentText: `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived}, (admin)
 
-┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 📜𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${𝓜𝖎𝖟𝖚ӄ𝖎.groupName}
 🔗𝐀𝐧𝐭𝐢𝐥𝐢𝐧𝐤 𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _✅Enabled_
 ⚙️𝐄𝐧𝐠𝐢𝐧𝐞: *⋊ʀʏᴏ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ*
@@ -270,7 +270,7 @@ module.exports = {
               {
                 contentText: `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived}, (admin)
 
-┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 📜𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${𝓜𝖎𝖟𝖚ӄ𝖎.groupName}
 🔗𝐀𝐧𝐭𝐢𝐥𝐢𝐧𝐤 𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _❌Disabled_
 ⚙️𝐄𝐧𝐠𝐢𝐧𝐞: *⋊ʀʏᴏ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ*

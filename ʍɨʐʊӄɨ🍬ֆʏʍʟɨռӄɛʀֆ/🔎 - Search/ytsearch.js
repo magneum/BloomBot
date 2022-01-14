@@ -76,7 +76,7 @@ module.exports = {
         Fetched =
           Fetched +
           `
-┌────★🥳𝐓𝐢𝐭𝐥𝐞: ${youfound.title}
+────★🥳𝐓𝐢𝐭𝐥𝐞: ${youfound.title}
 
 👀𝐕𝐢𝐞𝐰𝐬: ${youfound.views}
 🕐𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧: ${youfound.timestamp}

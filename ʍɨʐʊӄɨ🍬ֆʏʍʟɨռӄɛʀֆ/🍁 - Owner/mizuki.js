@@ -74,7 +74,7 @@ module.exports = {
       neww = performance.now();
       oldd = performance.now();
       respon = `
-┌────★ 𝐒𝐲𝐦𝐥𝐢𝐧𝐤 𝐈𝐧𝐟𝐨𝐬
+────★ 𝐒𝐲𝐦𝐥𝐢𝐧𝐤 𝐈𝐧𝐟𝐨𝐬
     
 シ︎💡ᴘʀᴇꜰɪx: ${ᴋᴇɪ}
 シ︎⚙️ᴇɴɢɪɴᴇ: ${vers.vers}
@@ -84,7 +84,7 @@ module.exports = {
 シ︎🎮ʀᴀᴍ: ${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}
 
 
-┌────★ 𝐍𝐨𝐝𝐞𝐉𝐒 𝐌𝐞𝐦-𝐔𝐬𝐚𝐠𝐞:
+────★ 𝐍𝐨𝐝𝐞𝐉𝐒 𝐌𝐞𝐦-𝐔𝐬𝐚𝐠𝐞:
 ${Object.keys(used)
   .map(
     (key, _, arr) =>
@@ -94,7 +94,7 @@ ${Object.keys(used)
   )
   .join(`\n`)}
 
-┌────★ ${
+────★ ${
         cpus[0]
           ? `𝐓𝐨𝐭𝐚𝐥 𝐂𝐏𝐔 𝐔𝐬𝐚𝐠𝐞
 ${cpus[0].model.trim()} (${cpu.speed} ᴍʜᴢ)${Object.keys(cpu.times)
@@ -108,7 +108,7 @@ ${cpus[0].model.trim()} (${cpu.speed} ᴍʜᴢ)${Object.keys(cpu.times)
               .join(`\n`)}
 
 
-┌────★ 𝐂𝐏𝐔 𝐂𝐨𝐫𝐞(𝐬) 𝐔𝐬𝐚𝐠𝐞 (_${cpus.length}_ 𝐂𝐨𝐫𝐞 𝐂𝐏𝐔)
+────★ 𝐂𝐏𝐔 𝐂𝐨𝐫𝐞(𝐬) 𝐔𝐬𝐚𝐠𝐞 (_${cpus.length}_ 𝐂𝐨𝐫𝐞 𝐂𝐏𝐔)
 ${cpus
   .map(
     (cpu, i) =>

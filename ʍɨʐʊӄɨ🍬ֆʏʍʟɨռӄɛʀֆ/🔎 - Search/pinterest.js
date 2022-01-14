@@ -76,7 +76,7 @@ module.exports = {
         𝓜𝖎𝖟𝖚ӄ𝖎,
         `•✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚, @${ꜱᴇɴᴅᴇʀeceived},
 
-┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 🥕 𝐓𝐢𝐭𝐥𝐞:  ${Needs.join(` `)}
 
 

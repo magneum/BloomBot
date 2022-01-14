@@ -87,7 +87,7 @@ module.exports = {
           𝓜𝖎𝖟𝖚ӄ𝖎,
           `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚, @${ꜱᴇɴᴅᴇʀeceived},
 
-┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 🥺𝐎𝐩𝐩𝐬𝐢𝐞 𝐓𝐫𝐲 𝐀𝐠𝐚𝐢𝐧!
 ◇ ꜱᴇʀᴠᴇʀ ᴅɪᴅɴ'ᴛ ꜱᴇɴᴅ ᴀɴʏ ʀᴇꜱᴘᴏɴꜱᴇ
 `
@@ -108,7 +108,7 @@ module.exports = {
               chat,
               𝓜𝖎𝖟𝖚ӄ𝖎,
               `
-┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 🍕𝐅𝐫𝐨𝐦: @${ꜱᴇɴᴅᴇʀeceived}
 🌭𝐓𝐨: @${personreceived}
 `,
@@ -131,7 +131,7 @@ module.exports = {
               chat,
               𝓜𝖎𝖟𝖚ӄ𝖎,
               `
-┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 🍯𝐓𝐡𝐞𝐦𝐬𝐞𝐥𝐯𝐞: @${ꜱᴇɴᴅᴇʀeceived}
 `,
               GiveFile

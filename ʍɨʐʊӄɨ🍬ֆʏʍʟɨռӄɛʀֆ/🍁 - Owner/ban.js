@@ -41,7 +41,7 @@ module.exports = {
           `Who Is This Dumbo •@${ꜱᴇɴᴅᴇʀeceived} Trying to Use Owner-Only Commands.
 
 
-┌────★ 🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧     
+────★ 🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧     
 ❌ _𝚈𝚘𝚞 𝙰𝚛𝚎 𝙽𝚘𝚝 𝙰𝚕𝚕𝚘𝚠𝚎𝚍!_
 `,
           _𝔏𝔞𝔟_.ɴᴏᴛᴀᴅᴍɪɴ
@@ -57,7 +57,7 @@ module.exports = {
           𝓜𝖎𝖟𝖚ӄ𝖎,
           `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 •@${ꜱᴇɴᴅᴇʀeceived} (Owner)
 
-┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 🛑𝐁𝐚𝐧𝐧𝐞𝐝: ${ᴀᴅᴅʙᴀɴ.substring(0, ᴀᴅᴅʙᴀɴ.indexOf(`@`))}
 🛡️ꜱᴜᴅᴏ ʙᴀɴ ᴀᴄᴄᴇᴘᴛᴇᴅ: _Banlisted from using the bot!_
 `,
@@ -76,7 +76,7 @@ module.exports = {
               `Who Is This Dumbo •@${ꜱᴇɴᴅᴇʀeceived} Trying to Use Owner-Only Commands.
 
 
-┌────★ 🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧     
+────★ 🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧     
 ❌ _𝚈𝚘𝚞 𝙰𝚛𝚎 𝙽𝚘𝚝 𝙰𝚕𝚕𝚘𝚠𝚎𝚍!_
 `,
               _𝔏𝔞𝔟_.ɴᴏᴛᴀᴅᴍɪɴ
@@ -89,7 +89,7 @@ module.exports = {
             𝓜𝖎𝖟𝖚ӄ𝖎,
             `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 •@${ꜱᴇɴᴅᴇʀeceived} (Owner)
 
-┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 🛑𝐁𝐚𝐧𝐧𝐞𝐝: ${ᴀᴅᴅʙᴀɴ.substring(0, ᴀᴅᴅʙᴀɴ.indexOf(`@`))}
 🛡️ꜱᴜᴅᴏ ʙᴀɴ ᴀᴄᴄᴇᴘᴛᴇᴅ: _Banlisted from using the bot in this group!_
 `,
@@ -105,7 +105,7 @@ module.exports = {
               `Who Is This Dumbo •@${ꜱᴇɴᴅᴇʀeceived} Trying to Use Owner-Only Commands.
 
 
-┌────★ 🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧     
+────★ 🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧     
 ❌ _𝚈𝚘𝚞 𝙰𝚛𝚎 𝙽𝚘𝚝 𝙰𝚕𝚕𝚘𝚠𝚎𝚍!_
 `,
               _𝔏𝔞𝔟_.ɴᴏᴛᴀᴅᴍɪɴ
@@ -118,7 +118,7 @@ module.exports = {
             𝓜𝖎𝖟𝖚ӄ𝖎,
             `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 •@${ꜱᴇɴᴅᴇʀeceived} (Owner)
 
-┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 🛑𝐁𝐚𝐧𝐧𝐞𝐝: ${ᴀᴅᴅʙᴀɴ.substring(0, ᴀᴅᴅʙᴀɴ.indexOf(`@`))}
 🛡️ꜱᴜᴅᴏ ʙᴀɴ ᴀᴄᴄᴇᴘᴛᴇᴅ: _Banlisted from using the bot in this group!_
 `,
@@ -132,7 +132,7 @@ module.exports = {
             𝓜𝖎𝖟𝖚ӄ𝖎,
             `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 •@${ꜱᴇɴᴅᴇʀeceived} (Owner)
 
-┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 🛑𝐆𝐫𝐨𝐮𝐩 𝐁𝐚𝐧𝐧𝐞𝐝: ${𝓜𝖎𝖟𝖚ӄ𝖎.groupName}
 🛡️ꜱᴜᴅᴏ ʙᴀɴ ᴀᴄᴄᴇᴘᴛᴇᴅ: _Bot has been disabled for the group!_
 `,

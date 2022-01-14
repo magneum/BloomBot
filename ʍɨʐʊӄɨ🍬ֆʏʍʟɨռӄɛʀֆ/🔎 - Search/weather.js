@@ -86,7 +86,7 @@ module.exports = {
             𝓜𝖎𝖟𝖚ӄ𝖎,
             `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚, @${ꜱᴇɴᴅᴇʀeceived},
 
-┌────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 🌸 𝐏𝐥𝐚𝐜𝐞: ${name}
 💮 𝐂𝐨𝐮𝐧𝐭𝐫𝐲: ${Country}
 🌈 𝐖𝐞𝐚𝐭𝐡𝐞𝐫: ${Weather}

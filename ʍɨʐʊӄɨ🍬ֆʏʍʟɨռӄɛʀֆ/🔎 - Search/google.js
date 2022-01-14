@@ -73,7 +73,7 @@ module.exports = {
         await Google({ query: Needs.join(` `) }).then(async (results) => {
           let msg = results.map(({ title, link, snippet }) => {
             return `
-┌────★
+────★
 🍻𝐓𝐢𝐭𝐥𝐞⤞ *${title}*
 🔗𝐋𝐢𝐧𝐤⤞ ${link}
 📜𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧⤞ ${snippet}
