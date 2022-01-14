@@ -320,11 +320,10 @@ ${update.desc}`,
           MessageType.image,
           { mimetype: Mimetype.png }
         );
-        return await ӄʀǟӄɨռʐ
-          .sendMessage(
-            GroupID,
-            {
-              contentText: `𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚👋🏻 ${Timers} ᴇᴠᴇʀʏᴏɴᴇ.
+        await ӄʀǟӄɨռʐ.sendMessage(
+          GroupID,
+          {
+            contentText: `𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚👋🏻 ${Timers} ᴇᴠᴇʀʏᴏɴᴇ.
 ʙᴏᴛ ɪꜱ ʀᴇᴀᴅʏ ᴛᴏ ᴀꜱꜱɪꜱᴛ ʏᴏᴜ!
 ᴛʏᴘᴇ *${ᴋᴇɪ}help* ᴛᴏ ᴋɴᴏᴡ ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅꜱ!
 
@@ -332,33 +331,32 @@ ${update.desc}`,
 
 🔑𝐏𝐫𝐞𝐟𝐢𝐱: *${ᴋᴇɪ}*
 👑𝐎𝐰𝐧𝐞𝐫: _🐙KrakinzKon_`,
-              footerText: `(𝐜)𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭 \n${Clock}`,
-              buttons: [
-                {
-                  buttonId: `${ᴋᴇɪ}help`,
-                  buttonText: { displayText: `${ᴋᴇɪ}help` },
-                  type: 1,
-                },
-                {
-                  buttonId: `${ᴋᴇɪ}repo`,
-                  buttonText: { displayText: `${ᴋᴇɪ}repo` },
-                  type: 1,
-                },
-                {
-                  buttonId: `${ᴋᴇɪ}mizuki`,
-                  buttonText: { displayText: `${ᴋᴇɪ}mizuki` },
-                  type: 1,
-                },
-              ],
-              headerType: 4,
-              imageMessage: media.message.imageMessage,
-            },
-            MessageType.buttonsMessage
-          )
-          .then(async (ℓαвєяяσя) => {
-            await PostDataBase.setWelcome(
-              GroupID,
-              `𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚👋🏻 ⬡ ʙᴏᴛ ɪꜱ ʀᴇᴀᴅʏ ᴛᴏ ᴀꜱꜱɪꜱᴛ ʏᴏᴜ!
+            footerText: `(𝐜)𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭 \n${Clock}`,
+            buttons: [
+              {
+                buttonId: `${ᴋᴇɪ}help`,
+                buttonText: { displayText: `${ᴋᴇɪ}help` },
+                type: 1,
+              },
+              {
+                buttonId: `${ᴋᴇɪ}repo`,
+                buttonText: { displayText: `${ᴋᴇɪ}repo` },
+                type: 1,
+              },
+              {
+                buttonId: `${ᴋᴇɪ}mizuki`,
+                buttonText: { displayText: `${ᴋᴇɪ}mizuki` },
+                type: 1,
+              },
+            ],
+            headerType: 4,
+            imageMessage: media.message.imageMessage,
+          },
+          MessageType.buttonsMessage
+        );
+        return await PostDataBase.setWelcome(
+          GroupID,
+          `𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚👋🏻 ⬡ ʙᴏᴛ ɪꜱ ʀᴇᴀᴅʏ ᴛᴏ ᴀꜱꜱɪꜱᴛ ʏᴏᴜ!
 
 ┌──────────────★
 🔑 𝐏𝐫𝐞𝐟𝐢𝐱: *${ᴋᴇɪ}*
@@ -367,12 +365,8 @@ ${update.desc}`,
 🍾 𝐆𝐞𝐭 𝐌𝐢𝐳𝐮𝐤𝐢: _${ᴋᴇɪ}request_
 
 🌱𝗣𝗿𝗲𝘀𝘀 𝗯𝗲𝗹𝗼𝘄 𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗦𝘁𝗮𝗿𝘁 𝘂𝘀𝗶𝗻𝗴 𝗠𝗶𝘇𝘂𝗸𝗶👇🏽‍ `
-            );
-            if (ℓαвєяяσя) console.log(ℓαвєяяσя);
-          })
-          .catch((ℓαвєяяσя) => console.log(ℓαвєяяσя));
+        );
       }
-
       if (update.action === `add` && !MemNum.includes(ӄʀǟӄɨռʐ.user.jid)) {
         var enable = await postDb.checkSettings(GroupID, `setwelcome`);
         if (enable === false || enable === `OFF`) {
