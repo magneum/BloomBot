@@ -630,7 +630,9 @@ ${update.desc}`,
         )
       );
       console.log(
-        `🍁爪𝖎𝖟𝖚ӄ𝖎™ Verified File: ` + 𝓜𝖎𝖟𝖚ӄ𝖎.commandName.toUpperCase() + `✔️`
+        `⬡============⬡🍁爪𝖎𝖟𝖚ӄ𝖎™ Verified File: ` +
+          𝓜𝖎𝖟𝖚ӄ𝖎.commandName +
+          `✔️⬡============⬡`
       );
       console.log(chat);
       console.log(
