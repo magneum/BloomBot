@@ -269,8 +269,8 @@ _${ᴋᴇɪ}yuri_`,
             footerText: `(c)🍁爪𝖎𝖟𝖚ӄ𝖎™ \n📅ᴅᴀᴛᴇ: _${Clock}_`,
             buttons: [
               {
-                buttonId: `_${ᴋᴇɪ}mizuki`,
-                buttonText: { displayText: `_${ᴋᴇɪ}mizuki` },
+                buttonId: `${ᴋᴇɪ}mizuki`,
+                buttonText: { displayText: `${ᴋᴇɪ}mizuki` },
                 type: 1,
               },
             ],
