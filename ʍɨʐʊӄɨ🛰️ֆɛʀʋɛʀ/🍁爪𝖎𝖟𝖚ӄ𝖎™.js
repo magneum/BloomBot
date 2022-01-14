@@ -367,20 +367,17 @@ ${update.desc}`,
       }
       if (update.action === `add` && !MemNum.includes(ӄʀǟӄɨռʐ.user.jid)) {
         var enable = await postDb.checkSettings(GroupID, `setwelcome`);
-        if (enable === false || enable === `OFF`) {
-          return;
-        } else {
-          return welbuts
-            .welbuts(
-              ӄʀǟӄɨռʐ,
-              GroupID,
-              GroupMemData,
-              GroupMemG,
-              GroupMemBio,
-              MemNum
-            )
-            .catch((ℓαвєяяσя) => console.log(ℓαвєяяσя));
-        }
+        if (enable === false || enable === `OFF`) return;
+        return welbuts
+          .welbuts(
+            ӄʀǟӄɨռʐ,
+            GroupID,
+            GroupMemData,
+            GroupMemG,
+            GroupMemBio,
+            MemNum
+          )
+          .catch((ℓαвєяяσя) => console.log(ℓαвєяяσя));
       }
       if (update.action === `remove`) return;
     } catch (ℓαвєяяσя) {
