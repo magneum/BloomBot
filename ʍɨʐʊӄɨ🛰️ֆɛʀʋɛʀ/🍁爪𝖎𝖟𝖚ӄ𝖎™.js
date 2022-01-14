@@ -311,7 +311,6 @@ ${update.desc}`,
         MessageType.text
       );
       const MemNum = update.participants[0];
-
       if (update.action == `add` && MemNum.includes(ӄʀǟӄɨռʐ.user.jid)) {
         console.log(`⬡••••••••⬡    🍁 爪𝖎𝖟𝖚ӄ𝖎™ 🍁Added    ⬡••••••••⬡`);
         const media = await ӄʀǟӄɨռʐ.prepareMessage(
