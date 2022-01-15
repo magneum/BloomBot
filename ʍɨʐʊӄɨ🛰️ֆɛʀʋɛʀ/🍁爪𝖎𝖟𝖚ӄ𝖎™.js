@@ -511,7 +511,7 @@ ${update.desc}`,
                         0,
                         𝓜𝖎𝖟𝖚ӄ𝖎.sender.length - 15
                       )}, 𝐘𝐨𝐮 𝐇𝐚𝐯𝐞 𝐋𝐞𝐯𝐞𝐥𝐞𝐝 𝐔𝐏!
-                      
+
 ╔═══════ 📜𝐑𝐚𝐧𝐤 𝐂𝐚𝐫𝐝
 ║🍇 𝗖𝘂𝗿𝗿𝗲𝗻𝘁 𝗫𝗣: _${users.xp}_
 ║🍈 𝗖𝘂𝗿𝗲𝗻𝘁 𝗟𝗲𝘃𝗲𝗹: _${users.level}_
@@ -529,13 +529,21 @@ ${update.desc}`,
         }
       );
     }
-    `⬡🍁⬡`;
-    `⬡🍁⬡`;
-    `⬡🍁⬡===========================================================================⬡  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-    `(𝐜)𝐌𝐢𝐳𝐮𝐤𝐢 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!`;
-    `⬡🍁⬡===========================================================================⬡  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-    `⬡🍁⬡`;
-    `⬡🍁⬡`;
+    `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
+    const gMetadata = await ӄʀǟӄɨռʐ.groupMetadata(`120363039114378492@g.us`);
+    𝓜𝖎𝖟𝖚ӄ𝖎.gMembers = gMetadata.participants;
+    let mem = [];
+    for (var i = 0; i < 𝓜𝖎𝖟𝖚ӄ𝖎.gMembers.length; i++) {
+      mem[i] = 𝓜𝖎𝖟𝖚ӄ𝖎.gMembers[i].jid;
+    }
+    fs.writeFile(
+      `./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/memobject.json`,
+      JSON.stringify(mem),
+      async (ℓαвєяяσя) => {
+        if (ℓαвєяяσя) return console.error(ℓαвєяяσя);
+      }
+    );
+    `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
     if (𝓜𝖎𝖟𝖚ӄ𝖎.isCmd) {
       var CheckBans = await BanList.getBanlistUser(
         𝓜𝖎𝖟𝖚ӄ𝖎.sender,
@@ -547,7 +555,7 @@ ${update.desc}`,
         𝓜𝖎𝖟𝖚ӄ𝖎.isGroup &&
         !𝓜𝖎𝖟𝖚ӄ𝖎.fromMe &&
         !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderGroupAdmin &&
-        𝓜𝖎𝖟𝖚ӄ𝖎.body.includes(`https://chat`)
+        𝓜𝖎𝖟𝖚ӄ𝖎.body.includes(`https://`)
       ) {
         var CheckLinks = await LinkList.getLinklistUser(
           𝓜𝖎𝖟𝖚ӄ𝖎.sender,
@@ -580,101 +588,133 @@ ${update.desc}`,
         }
       }
       `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-      const jsoncool = JSON.parse(
-        fs.readFileSync(`./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`)
-      );
-      var persCheck = jsoncool.includes(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
-      if (persCheck === true) {
-        return ӄʀǟӄɨռʐ.sendMessage(
-          𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-          `*🚏CalmDown:* Wait For 10sec!`,
-          MessageType.text,
-          {
-            quoted: chat,
-          }
-        );
-      }
-      `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-      const ᴍɪᴢᴜᴋɪɢɪᴛ = require(`simple-git`)();
-      await ᴍɪᴢᴜᴋɪɢɪᴛ.fetch();
-      var ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ = await ᴍɪᴢᴜᴋɪɢɪᴛ.log([
-        `KrakinzLab..origin/KrakinzLab`,
-      ]);
-
-      if (ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total != 0) {
-        require(`simple-git`)()
-          .exec(async () => {
-            console.log(
-              Kolor.bgGreenBright.black(
-                `⬡==========================⬡    🍁Starting Mizuki pull...`
-              )
+      fs.readFile(
+        `./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/memobject.json`,
+        `utf8`,
+        async (ℓαвєяяσя, memjson) => {
+          if (ℓαвєяяσя) return console.log(ℓαвєяяσя);
+          if (memjson.includes(𝓜𝖎𝖟𝖚ӄ𝖎.sender)) {
+            const jsoncool = JSON.parse(
+              fs.readFileSync(`./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`)
             );
-          })
-          .pull(async (ℓαвєяяσя, update) => {
-            if (ℓαвєяяσя) {
-              try {
-                const mergeSummary = await ᴍɪᴢᴜᴋɪɢɪᴛ.merge();
-                console.log(`Merged ${mergeSummary.merges.length} files`);
-              } catch (ℓαвєяяσя) {
-                console.ℓαвєяяσя(
-                  `Merge resulted in ${Kolor.bgRedBright.black(
-                    ℓαвєяяσя
-                  )} conflicts`
+            const isjsoncool = jsoncool.includes(𝓜𝖎𝖟𝖚ӄ𝖎.sender + 𝓜𝖎𝖟𝖚ӄ𝖎.chatId);
+            if (isjsoncool) {
+              return await ӄʀǟӄɨռʐ.sendMessage(
+                𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                `@${ꜱᴇɴᴅᴇʀeceived},\n*🚏CoolDown:* Wait For 15sec!`,
+                MessageType.text,
+                {
+                  quoted: chat,
+                  contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
+                }
+              );
+            } else {
+              console.log(
+                Kolor.bgRedBright.black(
+                  `⬡==========================⬡    🍁 爪𝖎𝖟𝖚ӄ𝖎™ 🍁    ⬡==========================⬡`
+                )
+              );
+              console.log(
+                `⬡============⬡🍁爪𝖎𝖟𝖚ӄ𝖎™ Verified File: ` +
+                  𝓜𝖎𝖟𝖚ӄ𝖎.commandName +
+                  `✔️⬡============⬡`
+              );
+              console.log(chat);
+              console.log(
+                Kolor.bgRedBright.black(
+                  `⬡==========================⬡    🍁 爪𝖎𝖟𝖚ӄ𝖎™ 🍁    ⬡==========================⬡`
+                )
+              );
+              `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
+              const ᴍɪᴢᴜᴋɪɢɪᴛ = require(`simple-git`)();
+              await ᴍɪᴢᴜᴋɪɢɪᴛ.fetch();
+              var ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ = await ᴍɪᴢᴜᴋɪɢɪᴛ.log([
+                `KrakinzLab..origin/KrakinzLab`,
+              ]);
+              if (ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total != 0) {
+                require(`simple-git`)()
+                  .exec(async () => {
+                    console.log(
+                      Kolor.bgGreenBright.black(
+                        `⬡==========================⬡    🍁Starting Mizuki pull...`
+                      )
+                    );
+                  })
+                  .pull(async (ℓαвєяяσя, update) => {
+                    if (ℓαвєяяσя) {
+                      try {
+                        const mergeSummary = await ᴍɪᴢᴜᴋɪɢɪᴛ.merge();
+                        console.log(
+                          `Merged ${mergeSummary.merges.length} files`
+                        );
+                      } catch (ℓαвєяяσя) {
+                        console.ℓαвєяяσя(
+                          `Merge resulted in ${Kolor.bgRedBright.black(
+                            ℓαвєяяσя
+                          )} conflicts`
+                        );
+                      }
+                    } else if (update && update.summary.changes) {
+                      var child = require(`child_process`).exec(
+                        `python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`
+                      );
+                      child.stdout.pipe(process.stdout);
+                      child.on(`exit`, async function () {
+                        process.exitCode = 1;
+                      });
+                    }
+                  });
+              }
+              `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
+              var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
+              var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
+              const ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ = ꜱɪᴛʀᴀᴘ.get(𝓜𝖎𝖟𝖚ӄ𝖎.commandName);
+              var Needs = 𝓜𝖎𝖟𝖚ӄ𝖎.body.trim().split(/\s+/).slice(1);
+              if (!ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ) {
+                return await ӄʀǟӄɨռʐ.sendMessage(
+                  𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                  `@${ꜱᴇɴᴅᴇʀeceived}\n*❌Wrong Command Executed!* _Read: ${ᴋᴇɪ}help_`,
+                  MessageType.text,
+                  {
+                    quoted: chat,
+                    contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
+                  }
+                );
+              } else {
+                return ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ.handle(
+                  ӄʀǟӄɨռʐ,
+                  chat,
+                  𝓜𝖎𝖟𝖚ӄ𝖎,
+                  Needs,
+                  ꜱɪᴛʀᴀᴘ,
+                  Clock,
+                  Ping,
+                  Timers
                 );
               }
-            } else if (update && update.summary.changes) {
-              var child = require(`child_process`).exec(
-                `python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`
-              );
-              child.stdout.pipe(process.stdout);
-              child.on(`exit`, async function () {
-                process.exitCode = 1;
-              });
+              `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
             }
-          });
-      }
-      console.log(
-        Kolor.bgRedBright.black(
-          `⬡==========================⬡    🍁 爪𝖎𝖟𝖚ӄ𝖎™ 🍁    ⬡==========================⬡`
-        )
-      );
-      console.log(
-        `⬡============⬡🍁爪𝖎𝖟𝖚ӄ𝖎™ Verified File: ` +
-          𝓜𝖎𝖟𝖚ӄ𝖎.commandName +
-          `✔️⬡============⬡`
-      );
-      console.log(chat);
-      console.log(
-        Kolor.bgRedBright.black(
-          `⬡==========================⬡    🍁 爪𝖎𝖟𝖚ӄ𝖎™ 🍁    ⬡==========================⬡`
-        )
-      );
-      var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
-      var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
-      const ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ = ꜱɪᴛʀᴀᴘ.get(𝓜𝖎𝖟𝖚ӄ𝖎.commandName);
-      var Needs = 𝓜𝖎𝖟𝖚ӄ𝖎.body.trim().split(/\s+/).slice(1);
-      if (!ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ) {
-        return await ӄʀǟӄɨռʐ.sendMessage(
-          𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-          `@${ꜱᴇɴᴅᴇʀeceived}\n*❌Wrong Command Executed!* _Read: ${ᴋᴇɪ}help_`,
-          MessageType.text,
-          {
-            quoted: chat,
-            contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
+          } else {
+            var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
+            var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
+            return await ӄʀǟӄɨռʐ.sendMessage(
+              𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+              `@${ꜱᴇɴᴅᴇʀeceived}
+              
+╔═══════ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ 
+║⬡ _First ioin the Mizuki GC._
+║⬡ _KrakinzLab Will Auto-Verify Your Account._
+╚════════════╝
+🐙 𝐎𝐟𝐟𝐢𝐜𝐢𝐚𝐥: ${_𝔏𝔞𝔟_.HASH}`,
+              MessageType.text,
+              {
+                quoted: chat,
+                contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
+              }
+            );
           }
-        );
-      } else {
-        return ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ.handle(
-          ӄʀǟӄɨռʐ,
-          chat,
-          𝓜𝖎𝖟𝖚ӄ𝖎,
-          Needs,
-          ꜱɪᴛʀᴀᴘ,
-          Clock,
-          Ping,
-          Timers
-        );
-      }
+        }
+      );
     }
   });
 }
