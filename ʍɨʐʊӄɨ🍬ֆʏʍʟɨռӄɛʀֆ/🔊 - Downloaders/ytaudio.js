@@ -134,28 +134,6 @@ module.exports = {
           URL = youfound.url;
           `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
           try {
-            console.log(youfound);
-            exec(
-              `youtube-dl --extract-audio --audio-format mp3 -o '${ꜱᴇɴᴅᴇʀeceived}_${youfound.title}.%(ext)s'  ${URL}`,
-              (err) => {
-                if (err) return console.log(err);
-                ӄʀǟӄɨռʐ.sendMessage(
-                  𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                  fs.readFileSync(`${ꜱᴇɴᴅᴇʀeceived}_${youfound.title}.mp3`),
-                  MessageType.audio,
-                  {
-                    mimetype: "audio/mp4",
-                    quoted: chat,
-                  }
-                );
-                cleanRF.cleanRF(`${ꜱᴇɴᴅᴇʀeceived}_${youfound.title}.mp3`);
-              }
-            );
-            // youtube-dl --extract-audio --audio-format mp3 -o '%(title)s.%(ext)s' https://youtu.be/L5CV53wCWO0
-            `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-          } catch (ℓαвєяяσя) {
-            console.log(ℓαвєяяσя);
-            console.log(youfound);
             var ʏᴛᴀᴅᴏᴡɴʟᴏᴀᴅ = function (uri, filename, callback) {
               request.head(uri, function (ℓαвєяяσя, ɢᴏᴛʀᴇꜱᴘ, body) {
                 mime = ɢᴏᴛʀᴇꜱᴘ.headers[`content-type`];
@@ -187,6 +165,26 @@ module.exports = {
                   });
                 });
             });
+            `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
+          } catch (ℓαвєяяσя) {
+            console.log(ℓαвєяяσя);
+            exec(
+              `youtube-dl --extract-audio --audio-format mp3 -o '${ꜱᴇɴᴅᴇʀeceived}_${youfound.title}.%(ext)s'  ${URL}`,
+              (err) => {
+                if (err) return console.log(err);
+                ӄʀǟӄɨռʐ.sendMessage(
+                  𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                  fs.readFileSync(`${ꜱᴇɴᴅᴇʀeceived}_${youfound.title}.mp3`),
+                  MessageType.audio,
+                  {
+                    mimetype: "audio/mp4",
+                    quoted: chat,
+                  }
+                );
+                cleanRF.cleanRF(`${ꜱᴇɴᴅᴇʀeceived}_${youfound.title}.mp3`);
+              }
+            );
+            // youtube-dl --extract-audio --audio-format mp3 -o '%(title)s.%(ext)s' https://youtu.be/L5CV53wCWO0
           }
         });
       }
