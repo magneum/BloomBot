@@ -148,6 +148,12 @@ module.exports = {
                 {
                   mimetype: Mimetype.jpeg,
                   quoted: chat,
+                  contextInfo: { mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender] },
+                  caption: `@${𝓜𝖎𝖟𝖚ӄ𝖎.sender.substring(
+                    0,
+                    𝓜𝖎𝖟𝖚ӄ𝖎.sender.length - 15
+                  )}
+🎉𝐓𝐡𝐞 𝐌𝐨𝐫𝐞 𝐘𝐨𝐮 𝐓𝐚𝐥𝐤, 𝐓𝐡𝐞 𝐌𝐨𝐫𝐞 𝐗𝐏 𝐘𝐨𝐮 𝐆𝐚𝐢𝐧. 𝐊𝐞𝐞𝐩 𝐔𝐩!🎉`,
                 }
               );
               cleanRF.cleanRF(`${ꜱᴇɴᴅᴇʀeceived.toString()}_.jpeg`);
