@@ -62,7 +62,8 @@ module.exports = {
 ║• ${ᴋᴇɪ}reverse: _audio filter_
 ║• ${ᴋᴇɪ}robot: _audio filter_
 ║• ${ᴋᴇɪ}slow: _audio filter_
-║• ${ᴋᴇɪ}smooth: _audio filter_`;
+║• ${ᴋᴇɪ}smooth: _audio filter_
+╚════════════╝`;
       return Mizuki_Buttons.MIB(
         ӄʀǟӄɨռʐ,
         chat,

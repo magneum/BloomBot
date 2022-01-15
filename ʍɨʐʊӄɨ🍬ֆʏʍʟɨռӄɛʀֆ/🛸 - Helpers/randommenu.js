@@ -57,7 +57,9 @@ module.exports = {
 ║• ${ᴋᴇɪ}meme: _get random memes_
 ║• ${ᴋᴇɪ}tr: _language translater_
 ║• ${ᴋᴇɪ}tts: _convert text to speech_
-║• ${ᴋᴇɪ}rank: _check  your rank in groups_`;
+║• ${ᴋᴇɪ}rank: _check  your rank in groups_
+║• ${ᴋᴇɪ}pokedex: _get any pokemon information_
+╚════════════╝`;
       return Mizuki_Buttons.MIB(
         ӄʀǟӄɨռʐ,
         chat,

@@ -62,7 +62,8 @@ module.exports = {
 ║• ${ᴋᴇɪ}weather: _get weather data_  
 ║• ${ᴋᴇɪ}ud: _urban dictionary for crazy people_
 ║• ${ᴋᴇɪ}tenor: _convert text to tenor gif_
-║• ${ᴋᴇɪ}gif: _convert text tenor gif_`;
+║• ${ᴋᴇɪ}gif: _convert text tenor gif_
+╚════════════╝`;
       return Mizuki_Buttons.MIB(
         ӄʀǟӄɨռʐ,
         chat,

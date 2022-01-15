@@ -62,7 +62,8 @@ module.exports = {
 ║• ${ᴋᴇɪ}spam: _spam messsage in group/private_
 ║• ${ᴋᴇɪ}help: _basic help command_
 ║• ${ᴋᴇɪ}mizuki: _check mizuki system health config_
-║• ${ᴋᴇɪ}update: _update Mizuki bot_`;
+║• ${ᴋᴇɪ}update: _update Mizuki bot_
+╚════════════╝`;
       return Mizuki_Buttons.MIB(
         ӄʀǟӄɨռʐ,
         chat,

@@ -115,7 +115,8 @@ module.exports = {
 ║• ${ᴋᴇɪ}tickle _(ɢɪꜰ)_
 ║• ${ᴋᴇɪ}thumbsup _(ɢɪꜰ)_
 ║• ${ᴋᴇɪ}triggered _(ɢɪꜰ)_
-║• ${ᴋᴇɪ}wag _(ɢɪꜰ)_`;
+║• ${ᴋᴇɪ}wag _(ɢɪꜰ)_
+╚════════════╝`;
       return Mizuki_Buttons.MIB(
         ӄʀǟӄɨռʐ,
         chat,

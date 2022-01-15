@@ -64,7 +64,8 @@ module.exports = {
 ║• ${ᴋᴇɪ}antilink: _remove any person who sends any links_
 ║• ${ᴋᴇɪ}setwelcome: _welcome new members with custom message_
 ║• ${ᴋᴇɪ}unmute: _unmute a group chat_
-║• ${ᴋᴇɪ}mute: _mute group chat_`;
+║• ${ᴋᴇɪ}mute: _mute group chat_
+╚════════════╝`;
       return Mizuki_Buttons.MIB(
         ӄʀǟӄɨռʐ,
         chat,
