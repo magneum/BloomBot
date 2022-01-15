@@ -13,7 +13,6 @@
     "automation"
   ],
   "dependencies": {
-    "mongoose": "^5.10.7",
     "@adiwajshing/baileys": "^3.5.3",
     "@cicciosgamino/openweather-apis": "^5.0.1",
     "@ffmpeg-installer/ffmpeg": "^1.1.0",
@@ -73,6 +72,7 @@
     "mal-scraper": "^2.11.3",
     "meme-api": "^1.0.0",
     "moment-timezone": "^0.5.33",
+    "mongoose": "^5.10.7",
     "ms": "^2.1.3",
     "music-lyrics": "^1.1.3",
     "n": "^8.0.1",
@@ -97,6 +97,7 @@
     "qrcode-reader": "^1.0.4",
     "qrcode-terminal": "^0.12.0",
     "qs": "^6.10.1",
+    "quick.eco": "^6.0.0",
     "ra-api": "^1.3.2",
     "random-greetings": "^1.0.5",
     "random-hex-color": "^1.0.1",
