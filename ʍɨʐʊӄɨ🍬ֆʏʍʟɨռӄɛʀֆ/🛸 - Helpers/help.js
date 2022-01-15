@@ -6,12 +6,15 @@
 const Mizuki_Buttons = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Mizuki_Buttons`);
 const Mizuki_Static = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Mizuki_Static`);
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
+const { formatp, runtime } = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/mizu`);
 const cleanRF = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/cleanRF`);
 const ꜰᴜᴄᴋ = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/oShit`);
 const speed = require(`performance-now`);
 const _𝔏𝔞𝔟_ = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/_𝔏𝔞𝔟_`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
+const { performance } = require(`perf_hooks`);
+const vers = require(`../../package.json`);
 const fs = require(`fs`);
 const os = require(`os`);
 var path = require(`path`);
@@ -48,7 +51,44 @@ module.exports = {
           `./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`,
           JSON.stringify(jsoncool)
         );
-      }, 10000);
+      }, 20000);
+      `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
+      const used = process.memoryUsage();
+      const cpus = os.cpus().map((cpu) => {
+        cpu.total = Object.keys(cpu.times).reduce(
+          (last, type) => last + cpu.times[type],
+          0
+        );
+        return cpu;
+      });
+      const cpu = cpus.reduce(
+        (last, cpu, _, { length }) => {
+          last.total += cpu.total;
+          last.speed += cpu.speed / length;
+          last.times.user += cpu.times.user;
+          last.times.nice += cpu.times.nice;
+          last.times.sys += cpu.times.sys;
+          last.times.idle += cpu.times.idle;
+          last.times.irq += cpu.times.irq;
+          return last;
+        },
+        {
+          speed: 0,
+          total: 0,
+          times: {
+            user: 0,
+            nice: 0,
+            sys: 0,
+            idle: 0,
+            irq: 0,
+          },
+        }
+      );
+
+      let timestamp = speed();
+      let latensi = speed() - timestamp;
+      neww = performance.now();
+      oldd = performance.now();
       `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
       const media = await ӄʀǟӄɨռʐ.prepareMessage(
         𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
@@ -62,29 +102,30 @@ module.exports = {
         .sendMessage(
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
           {
-            contentText: `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 ▷@${ꜱᴇɴᴅᴇʀeceived}, 
-${Timers}
-🍁𝐌𝐢𝐳𝐮𝐤𝐢 𝐈𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
-╔══════════════★
-║▷ 🔑 ᴘʀᴇꜰɪx: ${ᴋᴇɪ} (slash)
-║▷ 🦞 ɢɪᴛʜᴜʙ: ${ᴋᴇɪ}repo
-║▷ 🍾 ɢᴇᴛ ᴍɪᴢᴜᴋɪ: ${ᴋᴇɪ}request
-║▷ 🐙 ᴏꜰꜰɪᴄɪᴀʟ: ${_𝔏𝔞𝔟_.HASH}
+            contentText: `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived}, 
+
+${Timers}, 🍁𝐌𝐢𝐳𝐮𝐤𝐢 𝐈𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
+╔════════════★ 𝐒𝐲𝐦𝐥𝐢𝐧𝐤 𝐈𝐧𝐟𝐨𝐬
+║シ︎ ⚙️𝐄𝐧𝐠𝐢𝐧𝐞: ${vers.vers}
+║シ︎ 💻𝐏𝐥𝐚𝐭𝐅𝐨𝐫𝐦: ${os.platform()}
+║シ︎ 🛰️𝐋𝐚𝐭𝐞𝐧𝐜𝐲: ${latensi.toFixed(4)}(s)
+║シ︎ ☕𝐔𝐩𝐓𝐢𝐦𝐞: ${runtime(process.uptime())}
+║シ︎ 🎮𝐑𝐀𝐌: ${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}
 ╚════════════╝
 
-╔═══🌈𝐂𝐚𝐭𝐞𝐠𝐨𝐫𝐢𝐞𝐬*
-║▷ 🍣${ᴋᴇɪ}animemenu
-║▷ 🐙${ᴋᴇɪ}ownermenu
-║▷ 📥${ᴋᴇɪ}downloadmenu
-║▷ 🔰${ᴋᴇɪ}groupmenu
-║▷ 🦄${ᴋᴇɪ}randommenu 
-║▷ 🔎${ᴋᴇɪ}searchmenu
-║▷ 🗂️${ᴋᴇɪ}ffmpegmenu
-║▷ 🏝️${ᴋᴇɪ}filtersmenu
-║▷ 🍄${ᴋᴇɪ}hentaimenu _(ᴀᴅᴍɪɴ-ᴏɴʟʏ)_
-║▷ 🥃${ᴋᴇɪ}humanmenu _(ᴀᴅᴍɪɴ-ᴏɴʟʏ)_
+╔════════════🌈𝐂𝐚𝐭𝐞𝐠𝐨𝐫𝐢𝐞𝐬*
+║シ︎ 🍣${ᴋᴇɪ}animemenu
+║シ︎ 🐙${ᴋᴇɪ}ownermenu
+║シ︎ 📥${ᴋᴇɪ}downloadmenu
+║シ︎ 🔰${ᴋᴇɪ}groupmenu
+║シ︎ 🦄${ᴋᴇɪ}randommenu 
+║シ︎ 🔎${ᴋᴇɪ}searchmenu
+║シ︎ 🗂️${ᴋᴇɪ}ffmpegmenu
+║シ︎ 🏝️${ᴋᴇɪ}filtersmenu
+║シ︎ 🍄${ᴋᴇɪ}hentaimenu _(ᴀᴅᴍɪɴ-ᴏɴʟʏ)_
+║シ︎ 🥃${ᴋᴇɪ}humanmenu _(ᴀᴅᴍɪɴ-ᴏɴʟʏ)_
 ╚════════════╝
-
+🐙 𝐎𝐟𝐟𝐢𝐜𝐢𝐚𝐥: ${_𝔏𝔞𝔟_.HASH}
 ☘️𝐏𝐫𝐞𝐬𝐬 𝐁𝐞𝐥𝐨𝐰 𝐓𝐨 𝐋𝐞𝐚𝐫𝐧 𝐌𝐢𝐳𝐮𝐤𝐢 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬👇🏽‍`,
             footerText: `(𝐜)𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭 \n_${Clock}_`,
             buttons: [
@@ -94,8 +135,8 @@ ${Timers}
                 type: 1,
               },
               {
-                buttonId: `${ᴋᴇɪ}repo`,
-                buttonText: { displayText: `${ᴋᴇɪ}repo` },
+                buttonId: `${ᴋᴇɪ}mizuki`,
+                buttonText: { displayText: `${ᴋᴇɪ}mizuki` },
                 type: 1,
               },
             ],

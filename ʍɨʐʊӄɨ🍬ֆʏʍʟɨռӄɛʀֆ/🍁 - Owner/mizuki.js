@@ -74,13 +74,20 @@ module.exports = {
       neww = performance.now();
       oldd = performance.now();
       respon = `
-────★ 𝐒𝐲𝐦𝐥𝐢𝐧𝐤 𝐈𝐧𝐟𝐨𝐬
-シ︎💡ᴘʀᴇꜰɪx: ${ᴋᴇɪ}
-シ︎⚙️ᴇɴɢɪɴᴇ: ${vers.vers}
-シ︎💻ᴘʟᴀᴛꜰᴏʀᴍ: ${os.platform()}
-シ︎🛰️ʟᴀᴛᴇɴᴄʏ: ${latensi.toFixed(4)}(s)
-シ︎☕ᴜᴘᴛɪᴍᴇ: ${runtime(process.uptime())}
-シ︎🎮ʀᴀᴍ: ${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}
+╔══════════════★
+║▷ 🔑 𝐏𝐫𝐞𝐟𝐢𝐱: ${ᴋᴇɪ} (slash)
+║▷ 🦞 𝐆𝐢𝐭𝐇𝐮𝐛: ${ᴋᴇɪ}repo
+║▷ 🍾 𝐆𝐞𝐭 𝐌𝐢𝐳𝐮𝐤𝐢: ${ᴋᴇɪ}request
+║▷ 🐙 𝐎𝐟𝐟𝐢𝐜𝐢𝐚𝐥: ${_𝔏𝔞𝔟_.HASH}
+╚════════════╝
+
+╔═══════★ 𝐒𝐲𝐦𝐥𝐢𝐧𝐤 𝐈𝐧𝐟𝐨𝐬
+║シ︎⚙️ᴇɴɢɪɴᴇ: ${vers.vers}
+║シ︎💻ᴘʟᴀᴛꜰᴏʀᴍ: ${os.platform()}
+║シ︎🛰️ʟᴀᴛᴇɴᴄʏ: ${latensi.toFixed(4)}(s)
+║シ︎☕ᴜᴘᴛɪᴍᴇ: ${runtime(process.uptime())}
+║シ︎🎮ʀᴀᴍ: ${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}
+╚════════════╝
 
 
 ────★ 𝐍𝐨𝐝𝐞𝐉𝐒 𝐌𝐞𝐦-𝐔𝐬𝐚𝐠𝐞:

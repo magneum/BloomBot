@@ -354,11 +354,6 @@ ${update.desc}`,
                 buttonText: { displayText: `${ᴋᴇɪ}repo` },
                 type: 1,
               },
-              {
-                buttonId: `${ᴋᴇɪ}mizuki`,
-                buttonText: { displayText: `${ᴋᴇɪ}mizuki` },
-                type: 1,
-              },
             ],
             headerType: 4,
             imageMessage: media.message.imageMessage,
@@ -469,7 +464,7 @@ ${update.desc}`,
             if (users.xp >= nxtlvl) {
               users.level = users.level + 1;
               var background = await Canvas.loadImage(`./GroundXeno/Rank.png`);
-              ctx.drawImage(background, 0, 0, Canvas.width, Canvas.height);
+              ctx.drawImage(background, 0, 0, 1280, 720);
               ctx.beginPath();
               ctx.fillStyle = `rgba(236,180,95, 0.5)`;
               ctx.fillRect(260, 80, 650, 160);

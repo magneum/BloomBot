@@ -60,7 +60,7 @@ module.exports = {
           JSON.stringify(jsoncool)
         );
         console.log("ID Removed " + 𝓜𝖎𝖟𝖚ӄ𝖎.sender);
-      }, 10000);
+      }, 20000);
       `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
       if (!𝓜𝖎𝖟𝖚ӄ𝖎.isGroup) {
         try {
@@ -103,7 +103,7 @@ module.exports = {
         async (err, users) => {
           if (err) console.log(err);
           var background = await Canvas.loadImage(`GroundXeno/Rank.png`);
-          ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
+          ctx.drawImage(background, 0, 0, 1280, 720);
           `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
           ctx.beginPath();
           ctx.fillStyle = `rgba(236,180,95, 0.5)`;

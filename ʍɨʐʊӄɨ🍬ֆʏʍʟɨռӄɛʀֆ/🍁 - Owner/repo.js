@@ -50,7 +50,7 @@ module.exports = {
             `./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`,
             JSON.stringify(jsoncool)
           );
-        }, 10000);
+        }, 20000);
       } catch (ℓαвєяяσя) {
         console.log(ℓαвєяяσя);
       }

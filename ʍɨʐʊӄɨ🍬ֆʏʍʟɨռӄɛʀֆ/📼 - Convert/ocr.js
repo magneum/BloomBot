@@ -50,7 +50,7 @@ module.exports = {
           `./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`,
           JSON.stringify(jsoncool)
         );
-      }, 10000);
+      }, 20000);
 
       if (𝓜𝖎𝖟𝖚ӄ𝖎.isImage) {
         var replyChatObject = {

@@ -52,7 +52,7 @@ You can also reply to a text message with syntax  *${ᴋᴇɪ}tr <language>*  to
           JSON.stringify(jsoncool)
         );
         console.log("ID Removed " + 𝓜𝖎𝖟𝖚ӄ𝖎.sender);
-      }, 10000);
+      }, 20000);
       `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
       var text = ``;
       var language = ``;

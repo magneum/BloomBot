@@ -48,7 +48,7 @@ module.exports = {
           `./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`,
           JSON.stringify(jsoncool)
         );
-      }, 10000);
+      }, 20000);
 
       if (Needs.length === 0) {
         return Mizuki_Buttons.MTB(
