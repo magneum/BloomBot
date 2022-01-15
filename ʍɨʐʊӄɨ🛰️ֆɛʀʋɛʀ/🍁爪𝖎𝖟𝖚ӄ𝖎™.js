@@ -466,7 +466,7 @@ ${update.desc}`,
               var background = await Canvas.loadImage(
                 "https://i.postimg.cc/htTPpb6w/Rank.png"
               );
-              ctx.drawImage(background, 0, 0, 1280, 720);
+              ctx.drawImage(background, 0, 0, Canvas.width, Canvas.height);
               ctx.beginPath();
               ctx.fillStyle = `rgba(236,180,95, 0.5)`;
               ctx.fillRect(260, 80, 650, 160);
