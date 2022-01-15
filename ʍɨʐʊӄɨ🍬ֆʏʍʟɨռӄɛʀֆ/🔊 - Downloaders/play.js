@@ -126,40 +126,29 @@ module.exports = {
 ⏰𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧⤞ ${youfound.timestamp}
 ✒️𝐀𝐮𝐭𝐡𝐨𝐫⤞ ${youfound.author.name}
 📜𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧⤞ ${youfound.description}
-🔗𝐋𝐢𝐧𝐤⤞ ${youfound.url}
-`,
+🔗𝐋𝐢𝐧𝐤⤞ ${youfound.url}`,
             youfound.thumbnail
           );
           URL = youfound.url;
           `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
           try {
             exec(
-              `youtube-dl -o '${FinalName}_${Ping.toString()}_${ꜱᴇɴᴅᴇʀeceived}_.%(ext)s' -x --audio-format mp3 ${URL}`,
+              `youtube-dl --extract-audio --audio-format mp3 -o '${ꜱᴇɴᴅᴇʀeceived}_${youfound.title}.%(ext)s'  ${URL}`,
               (err) => {
                 if (err) return console.log(err);
                 ӄʀǟӄɨռʐ.sendMessage(
                   𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                  fs.readFileSync(
-                    `${FinalName}_${Ping.toString()}_${ꜱᴇɴᴅᴇʀeceived}_.mp3`
-                  ),
+                  fs.readFileSync(`${ꜱᴇɴᴅᴇʀeceived}_${youfound.title}.mp3`),
                   MessageType.audio,
                   {
                     mimetype: "audio/mp4",
                     quoted: chat,
-                    caption: `────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-🍻𝐓𝐢𝐭𝐥𝐞⤞ ${youfound.title}
-🙈𝐕𝐢𝐞𝐰𝐬⤞ ${youfound.views}
-⏰𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧⤞ ${youfound.timestamp}
-✒️𝐀𝐮𝐭𝐡𝐨𝐫⤞ ${youfound.author.name}
-📜𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧⤞ ${youfound.description}
-🔗𝐋𝐢𝐧𝐤⤞ ${youfound.url}`,
                   }
                 );
-                cleanRF.cleanRF(
-                  `${FinalName}_${Ping.toString()}_${ꜱᴇɴᴅᴇʀeceived}_.mp3`
-                );
+                cleanRF.cleanRF(`${ꜱᴇɴᴅᴇʀeceived}_${youfound.title}.mp3`);
               }
             );
+            // youtube-dl --extract-audio --audio-format mp3 -o '%(title)s.%(ext)s' https://youtu.be/L5CV53wCWO0
             `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
           } catch (ℓαвєяяσя) {
             console.log(ℓαвєяяσя);
@@ -185,13 +174,6 @@ module.exports = {
                         {
                           quoted: chat,
                           mimetype: "audio/mp4",
-                          caption: `────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-🍻𝐓𝐢𝐭𝐥𝐞⤞ ${youfound.title}
-🙈𝐕𝐢𝐞𝐰𝐬⤞ ${youfound.views}
-⏰𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧⤞ ${youfound.timestamp}
-✒️𝐀𝐮𝐭𝐡𝐨𝐫⤞ ${youfound.author.name}
-📜𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧⤞ ${youfound.description}
-🔗𝐋𝐢𝐧𝐤⤞ ${youfound.url}`,
                         }
                       )
                       .catch((ℓαвєяяσя) =>
