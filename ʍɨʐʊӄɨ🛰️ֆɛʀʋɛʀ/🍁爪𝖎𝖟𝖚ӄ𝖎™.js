@@ -609,6 +609,7 @@ ${update.desc}`,
                 }
               );
             } else {
+              console.log(" Person In Mizuki-DB!");
               console.log(
                 Kolor.bgRedBright.black(
                   `⬡==========================⬡    🍁 爪𝖎𝖟𝖚ӄ𝖎™ 🍁    ⬡==========================⬡`
