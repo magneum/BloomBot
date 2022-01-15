@@ -460,10 +460,12 @@ ${update.desc}`,
             users.xp = users.xp + xpAdd;
             users.message = users.message + messageAdd;
             users.avatarURL = 𝕻𝕻𝖑𝖊𝖙𝖊𝖗;
-            let nxtlvl = 150 * Math.pow(2, users.level);
+            let nxtlvl = 200 * Math.pow(2, users.level);
             if (users.xp >= nxtlvl) {
               users.level = users.level + 1;
-              var background = await Canvas.loadImage(`./GroundXeno/Rank.png`);
+              var background = await Canvas.loadImage(
+                "https://i.postimg.cc/htTPpb6w/Rank.png"
+              );
               ctx.drawImage(background, 0, 0, 1280, 720);
               ctx.beginPath();
               ctx.fillStyle = `rgba(236,180,95, 0.5)`;
@@ -484,7 +486,7 @@ ${update.desc}`,
               );
               ctx.font = `40px TheHeartOfEverythingDemo`;
               ctx.fillStyle = `#000`;
-              ctx.fillText(`Next Level in ${xpleft} xp`, 280, 225);
+              ctx.fillText(`Next Level in ` + xpleft + `xp`, 280, 225);
               await Canvas.loadImage(𝕻𝕻𝖑𝖊𝖙𝖊𝖗).then((avatar) => {
                 ctx.beginPath();
                 ctx.arc(125, 140, 100, 0, Math.PI * 2);

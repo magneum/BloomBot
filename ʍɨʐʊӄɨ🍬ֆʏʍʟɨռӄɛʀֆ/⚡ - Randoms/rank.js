@@ -79,6 +79,7 @@ module.exports = {
           ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
         }
       }
+      `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
       const applyText = (canvas, text) => {
         const ctx = canvas.getContext(`2d`);
         let fontSize = 50;
@@ -102,8 +103,10 @@ module.exports = {
         },
         async (err, users) => {
           if (err) console.log(err);
-          var background = await Canvas.loadImage(`GroundXeno/Rank.png`);
-          ctx.drawImage(background, 0, 0, 1280, 720);
+          var background = await Canvas.loadImage(
+            "https://i.postimg.cc/htTPpb6w/Rank.png"
+          );
+          ctx.drawImage(background, 0, 0, 1366, 768);
           `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
           ctx.beginPath();
           ctx.fillStyle = `rgba(236,180,95, 0.5)`;
@@ -114,21 +117,17 @@ module.exports = {
           ctx.font = applyText(canvas, `User`);
           ctx.fillStyle = `#000`;
           ctx.font = `80px LobsterTwo-Bold`;
-          ctx.fillText(`★Level up!★`, 280, 136);
+          ctx.fillText(`★Rank Check!★`, 280, 136);
           `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
           let nxtlvl = 200 * Math.pow(2, users.level);
           var xpleft = nxtlvl - users.xp;
-          ctx.font = `30px LobsterTwo-Bold`;
+          ctx.font = `40px TheHeartOfEverythingDemo`;
           ctx.fillStyle = `#000`;
           ctx.fillText(
             `Level now ` + users.level + ` - ` + users.xp + ` XP`,
             280,
             180
           );
-          `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-          ctx.font = `40px TheHeartOfEverythingDemo`;
-          ctx.fillStyle = `#000`;
-          ctx.fillText(`Next Level in ` + xpleft + ` xp`, 280, 225);
           `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
           await Canvas.loadImage(𝕻𝕻𝖑𝖊𝖙𝖊𝖗).then((avatar) => {
             ctx.beginPath();
