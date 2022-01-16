@@ -567,7 +567,7 @@ ${update.desc}`,
       }
     }
     `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-    const gMetadata = await ӄʀǟӄɨռʐ.groupMetadata(`120363039114378492@g.us`);
+    const gMetadata = await ӄʀǟӄɨռʐ.groupMetadata(`120363039223842047@g.us`);
     𝓜𝖎𝖟𝖚ӄ𝖎.gMembers = gMetadata.participants;
     let mem = [];
     for (var i = 0; i < 𝓜𝖎𝖟𝖚ӄ𝖎.gMembers.length; i++) {
