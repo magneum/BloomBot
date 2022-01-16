@@ -29,8 +29,15 @@ module.exports = {
   𝓜𝓮𝓮6ʍօʀɛ: `*${ᴋᴇɪ}wallpaper* <name>`,
   async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping, Timers) {
     try {
-      var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
-      var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
+      if (𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
+        var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
+        var personreceived = Receiver.substring(0, Receiver.length - 15);
+        var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
+        var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
+      } else {
+        var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
+        var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
+      }
       const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
       const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
       `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
@@ -69,25 +76,37 @@ module.exports = {
           console.log("ID Removed " + 𝓜𝖎𝖟𝖚ӄ𝖎.sender);
         }, 20000);
         `⬡🍁⬡========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-        let Who =
-          𝓜𝖎𝖟𝖚ӄ𝖎.mentionedJid && 𝓜𝖎𝖟𝖚ӄ𝖎.mentionedJid[0]
-            ? 𝓜𝖎𝖟𝖚ӄ𝖎.mentionedJid[0]
-            : 𝓜𝖎𝖟𝖚ӄ𝖎.fromMe
-            ? ӄʀǟӄɨռʐ.user.jid
-            : 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
-        Mizuki_Buttons.MIB(
-          ӄʀǟӄɨռʐ,
-          chat,
-          𝓜𝖎𝖟𝖚ӄ𝖎,
-          "🌈pure gay",
-          global.API("https://some-random-api.ml", "/canvas/gay", {
-            avatar: await ӄʀǟӄɨռʐ
-              .getProfilePicture(Who)
-              .catch(
-                (_) => "https://telegra.ph/file/24fa902ead26340f3df2c.png"
-              ),
-          })
-        );
+        if (𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
+          Mizuki_Buttons.MIB(
+            ӄʀǟӄɨռʐ,
+            chat,
+            𝓜𝖎𝖟𝖚ӄ𝖎,
+            "🌈pure gay",
+            global.API("https://some-random-api.ml", "/canvas/gay", {
+              avatar: await ӄʀǟӄɨռʐ
+                .getProfilePicture(Receiver)
+                .catch(
+                  (_) => "https://telegra.ph/file/24fa902ead26340f3df2c.png"
+                ),
+            })
+          );
+          `⬡🍁⬡========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
+        } else {
+          Mizuki_Buttons.MIB(
+            ӄʀǟӄɨռʐ,
+            chat,
+            𝓜𝖎𝖟𝖚ӄ𝖎,
+            "🌈pure gay",
+            global.API("https://some-random-api.ml", "/canvas/gay", {
+              avatar: await ӄʀǟӄɨռʐ
+                .getProfilePicture(ꜱᴇɴᴅᴇʀɪᴅ)
+                .catch(
+                  (_) => "https://telegra.ph/file/24fa902ead26340f3df2c.png"
+                ),
+            })
+          );
+        }
+
         `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
       }
     } catch (ℓαвєяяσя) {
