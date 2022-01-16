@@ -530,6 +530,43 @@ ${update.desc}`,
       );
     }
     `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
+    if (
+      𝓜𝖎𝖟𝖚ӄ𝖎.isGroup &&
+      !𝓜𝖎𝖟𝖚ӄ𝖎.fromMe &&
+      !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderGroupAdmin &&
+      𝓜𝖎𝖟𝖚ӄ𝖎.body.includes(`https://`)
+    ) {
+      var CheckLinks = await LinkList.getLinklistUser(
+        𝓜𝖎𝖟𝖚ӄ𝖎.sender,
+        𝓜𝖎𝖟𝖚ӄ𝖎.chatId
+      );
+      const REMOVE = chat.key.fromMe
+        ? ӄʀǟӄɨռʐ.user.jid
+        : 𝓜𝖎𝖟𝖚ӄ𝖎.isGroup
+        ? chat.participant
+        : chat.key.remoteJid;
+      console.log(
+        Kolor.bgGreenBright.black(
+          `🍁INFO ⬰ Antilink ${CheckLinks} in > ${𝓜𝖎𝖟𝖚ӄ𝖎.groupName}.`
+        )
+      );
+      `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
+      if (CheckLinks === true) {
+        Mizuki_Buttons.MIB(
+          ӄʀǟӄɨռʐ,
+          chat,
+          𝓜𝖎𝖟𝖚ӄ𝖎,
+          `────★ 📍𝐀𝐧𝐭𝐢𝐥𝐢𝐧𝐤-𝐀𝐜𝐭𝐢𝐯𝐞
+🎪 𝐆𝐫𝐨𝐮𝐩: ${𝓜𝖎𝖟𝖚ӄ𝖎.groupName}
+⚠️ ᴛʜɪꜱ ɢʀᴏᴜᴘ ᴡɪʟʟ ᴋɪᴄᴋ ᴀɴʏ ɴᴏɴ-ᴀᴅᴍɪɴ ᴍᴇᴍʙᴇʀ ᴡʜᴏ ᴡɪʟʟ ꜱᴇɴᴅ ʟɪɴᴋ.`,
+          `./ʍɨʐʊӄɨ☣️ƈօʀɛ/Mizuki_Antilink.png`
+        );
+        return await ӄʀǟӄɨռʐ
+          .groupRemove(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, [REMOVE])
+          .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
+      }
+    }
+    `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
     const gMetadata = await ӄʀǟӄɨռʐ.groupMetadata(`120363039114378492@g.us`);
     𝓜𝖎𝖟𝖚ӄ𝖎.gMembers = gMetadata.participants;
     let mem = [];
@@ -550,44 +587,6 @@ ${update.desc}`,
         𝓜𝖎𝖟𝖚ӄ𝖎.chatId
       );
       if (CheckBans === true && !𝓜𝖎𝖟𝖚ӄ𝖎.fromMe) return;
-      `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-      if (
-        𝓜𝖎𝖟𝖚ӄ𝖎.isGroup &&
-        !𝓜𝖎𝖟𝖚ӄ𝖎.fromMe &&
-        !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderGroupAdmin &&
-        𝓜𝖎𝖟𝖚ӄ𝖎.body.includes(`https://`)
-      ) {
-        var CheckLinks = await LinkList.getLinklistUser(
-          𝓜𝖎𝖟𝖚ӄ𝖎.sender,
-          𝓜𝖎𝖟𝖚ӄ𝖎.chatId
-        );
-        const REMOVE = chat.key.fromMe
-          ? ӄʀǟӄɨռʐ.user.jid
-          : 𝓜𝖎𝖟𝖚ӄ𝖎.isGroup
-          ? chat.participant
-          : chat.key.remoteJid;
-        console.log(
-          Kolor.bgGreenBright.black(
-            `🍁INFO ⬰ Antilink ${CheckLinks} in > ${𝓜𝖎𝖟𝖚ӄ𝖎.groupName}.`
-          )
-        );
-        `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-        if (CheckLinks === true) {
-          Mizuki_Buttons.MIB(
-            ӄʀǟӄɨռʐ,
-            chat,
-            𝓜𝖎𝖟𝖚ӄ𝖎,
-            `────★ 📍𝐀𝐧𝐭𝐢𝐥𝐢𝐧𝐤-𝐀𝐜𝐭𝐢𝐯𝐞
-🎪 𝐆𝐫𝐨𝐮𝐩: ${𝓜𝖎𝖟𝖚ӄ𝖎.groupName}
-⚠️ ᴛʜɪꜱ ɢʀᴏᴜᴘ ᴡɪʟʟ ᴋɪᴄᴋ ᴀɴʏ ɴᴏɴ-ᴀᴅᴍɪɴ ᴍᴇᴍʙᴇʀ ᴡʜᴏ ᴡɪʟʟ ꜱᴇɴᴅ ʟɪɴᴋ.`,
-            `./ʍɨʐʊӄɨ☣️ƈօʀɛ/Mizuki_Antilink.png`
-          );
-          return await ӄʀǟӄɨռʐ
-            .groupRemove(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, [REMOVE])
-            .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
-        }
-      }
-      `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
       fs.readFile(
         `./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/memobject.json`,
         `utf8`,
