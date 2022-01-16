@@ -38,30 +38,13 @@ module.exports = {
   name: newScpt,
   async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping, Timers) {
     try {
+      const MizukiCalm = require("../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/MizukiCalm");
+      await MizukiCalm.MizukiCalm(𝓜𝖎𝖟𝖚ӄ𝖎);
       var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
       var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
       const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
       const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
-      `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-      const jsoncool = JSON.parse(
-        fs.readFileSync(`./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`)
-      );
-      await jsoncool.push(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
-      fs.writeFileSync(
-        `./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`,
-        JSON.stringify(jsoncool)
-      );
-      console.log("ID Added " + 𝓜𝖎𝖟𝖚ӄ𝖎.sender);
-      setTimeout(async (error) => {
-        if (error) console.log(error);
-        await jsoncool.splice(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
-        fs.writeFileSync(
-          `./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`,
-          JSON.stringify(jsoncool)
-        );
-        console.log("ID Removed " + 𝓜𝖎𝖟𝖚ӄ𝖎.sender);
-      }, 20000);
-      `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
+      `🍁--------------------------------------------------------------------| 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ |`;
       if (!𝓜𝖎𝖟𝖚ӄ𝖎.isGroup) {
         try {
           return Mizuki_Buttons.MTB(
@@ -79,7 +62,7 @@ module.exports = {
           ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
         }
       }
-      `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
+      `🍁--------------------------------------------------------------------| 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ |`;
       const applyText = (canvas, text) => {
         const ctx = canvas.getContext(`2d`);
         let fontSize = 50;
@@ -95,7 +78,7 @@ module.exports = {
       } catch {
         𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = `https://i.postimg.cc/3wfrmmpB/NoPP.jpg`;
       }
-      `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
+      `🍁--------------------------------------------------------------------| 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ |`;
       UsersMizuki.findOne(
         {
           did: 𝓜𝖎𝖟𝖚ӄ𝖎.sender,
@@ -107,18 +90,18 @@ module.exports = {
             "https://i.postimg.cc/htTPpb6w/Rank.png"
           );
           ctx.drawImage(background, 0, 0, 1366, 768);
-          `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
+          `🍁--------------------------------------------------------------------| 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ |`;
           ctx.beginPath();
           ctx.fillStyle = `rgba(236,180,95, 0.5)`;
           ctx.fillRect(260, 80, 650, 160);
           ctx.closePath();
           ctx.stroke();
-          `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
+          `🍁--------------------------------------------------------------------| 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ |`;
           ctx.font = applyText(canvas, `User`);
           ctx.fillStyle = `#000`;
           ctx.font = `80px LobsterTwo-Bold`;
           ctx.fillText(`★Rank Check!★`, 280, 136);
-          `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
+          `🍁--------------------------------------------------------------------| 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ |`;
           let nxtlvl = 200 * Math.pow(2, users.level);
           var xpleft = nxtlvl - users.xp;
           ctx.font = `40px TheHeartOfEverythingDemo`;
@@ -128,7 +111,7 @@ module.exports = {
             280,
             180
           );
-          `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
+          `🍁--------------------------------------------------------------------| 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ |`;
           await Canvas.loadImage(𝕻𝕻𝖑𝖊𝖙𝖊𝖗).then((avatar) => {
             ctx.beginPath();
             ctx.arc(125, 140, 100, 0, Math.PI * 2);
@@ -164,7 +147,7 @@ module.exports = {
           });
         }
       );
-      `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
+      `🍁--------------------------------------------------------------------| 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ |`;
     } catch (ℓαвєяяσя) {
       ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
       console.log(ℓαвєяяσя);
