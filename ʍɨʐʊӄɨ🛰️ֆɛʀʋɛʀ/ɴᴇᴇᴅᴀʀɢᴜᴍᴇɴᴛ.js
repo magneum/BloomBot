@@ -8,29 +8,8 @@ const Mizuki_Buttons = require(`./Mizuki_Buttons`);
 const _𝔏𝔞𝔟_ = require(`./_𝔏𝔞𝔟_`);
 const ꜰᴜᴄᴋ = require(`./oShit`);
 const fs = require(`fs`);
-const moment = require(`moment-timezone`);
-require(`python-format-js`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
-const time2 = moment().tz(`Asia/Kolkata`).format(`HH:mm:ss`);
-if (time2 < `24:59:00`) {
-  var Timers = `𝐍𝐢𝐠𝐡𝐭😴`;
-}
-if (time2 < `19:00:00`) {
-  var Timers = `𝐄𝐯𝐞𝐧𝐢𝐧𝐠🌞`;
-}
-if (time2 < `18:00:00`) {
-  var Timers = `𝐀𝐟𝐭𝐞𝐫𝐧𝐨𝐨𝐧🌄`;
-}
-if (time2 < `15:00:00`) {
-  var Timers = `𝐀𝐟𝐭𝐞𝐫𝐧𝐨𝐨𝐧☀️`;
-}
-if (time2 < `11:00:00`) {
-  var Timers = `𝐌𝐨𝐫𝐧𝐢𝐧𝐠🌅`;
-}
-if (time2 < `05:00:00`) {
-  var Timers = `𝐍𝐢𝐠𝐡𝐭💤`;
-}
 `🍁`;
 `🍁`;
 `⬡  ⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
