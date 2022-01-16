@@ -29,7 +29,7 @@ var newScpt = str.slice(0, -3).toLowerCase();
 `🍁`;
 module.exports = {
   name: newScpt,
-  async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping, Timers) {
+  async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
     try {
       var Raw = await anime.blush();
       const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
@@ -120,7 +120,7 @@ module.exports = {
             );
             return await cleanRF.cleanRF(GiveFile, GotFile);
           });
-          `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
+        `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
       } else {
         ffmpeg(GotFile)
           .outputOptions([

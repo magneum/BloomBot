@@ -29,7 +29,7 @@ var newScpt = str.slice(0, -3).toLowerCase();
 `🍁`;
 module.exports = {
   name: newScpt,
-  async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping, Timers) {
+  async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
     try {
       var Raw = await anime.pat();
       const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
