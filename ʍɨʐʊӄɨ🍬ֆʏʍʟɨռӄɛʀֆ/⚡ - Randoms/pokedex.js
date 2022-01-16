@@ -48,20 +48,39 @@ module.exports = {
           𝓜𝖎𝖟𝖚ӄ𝖎.commandName,
           ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
         );
-      }
-      `⬡🍁⬡========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-      let res = await fetch(
-        API("https://some-random-api.ml", "/pokedex", {
-          pokemon: Needs.join(" "),
-        })
-      );
-      let json = await res.json();
-      `⬡🍁⬡========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-      Mizuki_Buttons.MIB(
-        ӄʀǟӄɨռʐ,
-        chat,
-        𝓜𝖎𝖟𝖚ӄ𝖎,
-        `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived},
+      } else {
+        `⬡🍁⬡========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
+        const jsoncool = JSON.parse(
+          fs.readFileSync(`./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`)
+        );
+        await jsoncool.push(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
+        fs.writeFileSync(
+          `./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`,
+          JSON.stringify(jsoncool)
+        );
+        console.log("ID Added " + 𝓜𝖎𝖟𝖚ӄ𝖎.sender);
+        setTimeout(async (error) => {
+          if (error) console.log(error);
+          await jsoncool.splice(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
+          fs.writeFileSync(
+            `./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`,
+            JSON.stringify(jsoncool)
+          );
+          console.log("ID Removed " + 𝓜𝖎𝖟𝖚ӄ𝖎.sender);
+        }, 20000);
+        `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
+        let res = await fetch(
+          API("https://some-random-api.ml", "/pokedex", {
+            pokemon: Needs.join(" "),
+          })
+        );
+        let json = await res.json();
+        `⬡🍁⬡========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
+        Mizuki_Buttons.MIB(
+          ӄʀǟӄɨռʐ,
+          chat,
+          𝓜𝖎𝖟𝖚ӄ𝖎,
+          `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived},
 
 ╔═══════🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 ║★𝗡𝗮𝗺𝗲: _${json.name}_
@@ -96,28 +115,10 @@ module.exports = {
 ║★${json.description}
 ╚════════════╝
 `.trim(),
-        json.sprites.animated
-      );
-      `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-      const jsoncool = JSON.parse(
-        fs.readFileSync(`./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`)
-      );
-      await jsoncool.push(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
-      fs.writeFileSync(
-        `./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`,
-        JSON.stringify(jsoncool)
-      );
-      console.log("ID Added " + 𝓜𝖎𝖟𝖚ӄ𝖎.sender);
-      setTimeout(async (error) => {
-        if (error) console.log(error);
-        await jsoncool.splice(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
-        fs.writeFileSync(
-          `./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`,
-          JSON.stringify(jsoncool)
+          json.sprites.animated
         );
-        console.log("ID Removed " + 𝓜𝖎𝖟𝖚ӄ𝖎.sender);
-      }, 20000);
-      `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
+        `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
+      }
     } catch (ℓαвєяяσя) {
       ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
       console.log(ℓαвєяяσя);

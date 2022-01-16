@@ -130,12 +130,6 @@ exports.resolve = function (messageInstance, ӄʀǟӄɨռʐ, groupMetadata) {
   𝓜𝖎𝖟𝖚ӄ𝖎.isSenderGroupAdmin = 𝓜𝖎𝖟𝖚ӄ𝖎.isGroup
     ? 𝓜𝖎𝖟𝖚ӄ𝖎.groupAdmins.includes(𝓜𝖎𝖟𝖚ӄ𝖎.sender)
     : false;
-  𝓜𝖎𝖟𝖚ӄ𝖎.Who =
-    𝓜𝖎𝖟𝖚ӄ𝖎.mentionedJid && 𝓜𝖎𝖟𝖚ӄ𝖎.mentionedJid[0]
-      ? 𝓜𝖎𝖟𝖚ӄ𝖎.mentionedJid[0]
-      : 𝓜𝖎𝖟𝖚ӄ𝖎.fromMe
-      ? ӄʀǟӄɨռʐ.user.jid
-      : 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
   return 𝓜𝖎𝖟𝖚ӄ𝖎;
 };
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡

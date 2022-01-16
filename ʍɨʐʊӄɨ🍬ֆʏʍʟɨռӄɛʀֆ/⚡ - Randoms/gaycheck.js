@@ -48,39 +48,48 @@ module.exports = {
           𝓜𝖎𝖟𝖚ӄ𝖎.commandName,
           ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
         );
-      }
-      `⬡🍁⬡========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-      Mizuki_Buttons.MIB(
-        ӄʀǟӄɨռʐ,
-        chat,
-        𝓜𝖎𝖟𝖚ӄ𝖎,
-        "🌈pure gay",
-        global.API("https://some-random-api.ml", "/canvas/gay", {
-          avatar: await ӄʀǟӄɨռʐ
-            .getProfilePicture(𝓜𝖎𝖟𝖚ӄ𝖎.Who)
-            .catch((_) => "https://telegra.ph/file/24fa902ead26340f3df2c.png"),
-        })
-      );
-      `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-      const jsoncool = JSON.parse(
-        fs.readFileSync(`./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`)
-      );
-      await jsoncool.push(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
-      fs.writeFileSync(
-        `./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`,
-        JSON.stringify(jsoncool)
-      );
-      console.log("ID Added " + 𝓜𝖎𝖟𝖚ӄ𝖎.sender);
-      setTimeout(async (error) => {
-        if (error) console.log(error);
-        await jsoncool.splice(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
+      } else {
+        `⬡🍁⬡========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
+        const jsoncool = JSON.parse(
+          fs.readFileSync(`./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`)
+        );
+        await jsoncool.push(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
         fs.writeFileSync(
           `./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`,
           JSON.stringify(jsoncool)
         );
-        console.log("ID Removed " + 𝓜𝖎𝖟𝖚ӄ𝖎.sender);
-      }, 20000);
-      `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
+        console.log("ID Added " + 𝓜𝖎𝖟𝖚ӄ𝖎.sender);
+        setTimeout(async (error) => {
+          if (error) console.log(error);
+          await jsoncool.splice(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
+          fs.writeFileSync(
+            `./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`,
+            JSON.stringify(jsoncool)
+          );
+          console.log("ID Removed " + 𝓜𝖎𝖟𝖚ӄ𝖎.sender);
+        }, 20000);
+        `⬡🍁⬡========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
+        let Who =
+          𝓜𝖎𝖟𝖚ӄ𝖎.mentionedJid && 𝓜𝖎𝖟𝖚ӄ𝖎.mentionedJid[0]
+            ? 𝓜𝖎𝖟𝖚ӄ𝖎.mentionedJid[0]
+            : 𝓜𝖎𝖟𝖚ӄ𝖎.fromMe
+            ? ӄʀǟӄɨռʐ.user.jid
+            : 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
+        Mizuki_Buttons.MIB(
+          ӄʀǟӄɨռʐ,
+          chat,
+          𝓜𝖎𝖟𝖚ӄ𝖎,
+          "🌈pure gay",
+          global.API("https://some-random-api.ml", "/canvas/gay", {
+            avatar: await ӄʀǟӄɨռʐ
+              .getProfilePicture(Who)
+              .catch(
+                (_) => "https://telegra.ph/file/24fa902ead26340f3df2c.png"
+              ),
+          })
+        );
+        `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
+      }
     } catch (ℓαвєяяσя) {
       ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
       console.log(ℓαвєяяσя);
