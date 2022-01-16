@@ -675,7 +675,7 @@ ${update.desc}`,
                           `Merged ${mergeSummary.merges.length} files`
                         );
                       } catch (ℓαвєяяσя) {
-                        console.ℓαвєяяσя(
+                        console.log(
                           `Merge resulted in ${Kolor.bgRedBright.black(
                             ℓαвєяяσя
                           )} conflicts`
