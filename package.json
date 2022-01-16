@@ -97,7 +97,7 @@
     "qrcode-reader": "^1.0.4",
     "qrcode-terminal": "^0.12.0",
     "qs": "^6.10.1",
-    "quick.eco": "^6.0.0",
+    "quick.eco": "^2.0.3",
     "ra-api": "^1.3.2",
     "random-greetings": "^1.0.5",
     "random-hex-color": "^1.0.1",
