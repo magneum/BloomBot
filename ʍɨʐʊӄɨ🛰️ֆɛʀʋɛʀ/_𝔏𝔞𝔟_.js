@@ -36,7 +36,7 @@ const env = {
   WAPI: `6729ac2b2e2bb5c686ff427a2f06df92`,
   ERROR: `https://i.postimg.cc/sDPF83Mx/Mizuki-Error.png`,
   INVL: `https://i.postimg.cc/q7k5WK9Z/Mizuki-Invalid.png`,
-  HASH: `https://chat.whatsapp.com/EKyTcSlzOmF20MELthQwgy`,
+  HASH: `https://chat.whatsapp.com/LKN8uVBd8ucHRHofz0jBSd`,
   DEV: `918436686758,19175804221`,
   HEROKU: process.env.HEROKU,
   MIZUKIQL: (process.env.MIZUKIQL =
