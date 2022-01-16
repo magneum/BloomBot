@@ -622,7 +622,8 @@ ${update.desc}`,
               ӄʀǟӄɨռʐ.sendMessage(
                 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
                 `*🚏CoolDown:* Wait For 15sec!`,
-                MessageType.text
+                MessageType.text,
+                { quoted: chat }
               );
               return;
             }
