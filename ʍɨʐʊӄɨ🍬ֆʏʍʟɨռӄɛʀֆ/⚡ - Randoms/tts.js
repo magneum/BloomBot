@@ -30,13 +30,30 @@ module.exports = {
 You can also reply to a text message with syntax  *${ᴋᴇɪ}tr <language>*  to translate text.`,
   async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping, Timers) {
     try {
-      const MizukiCalm = require("../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/MizukiCalm");
-      await MizukiCalm.MizukiCalm(𝓜𝖎𝖟𝖚ӄ𝖎);
       var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
       var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
       const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
       const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
-      `🍁--------------------------------------------------------------------| 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ |`;
+      `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
+      const jsoncool = JSON.parse(
+        fs.readFileSync(`./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`)
+      );
+      await jsoncool.push(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
+      fs.writeFileSync(
+        `./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`,
+        JSON.stringify(jsoncool)
+      );
+      console.log("ID Added " + 𝓜𝖎𝖟𝖚ӄ𝖎.sender);
+      setTimeout(async (error) => {
+        if (error) console.log(error);
+        await jsoncool.splice(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
+        fs.writeFileSync(
+          `./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`,
+          JSON.stringify(jsoncool)
+        );
+        console.log("ID Removed " + 𝓜𝖎𝖟𝖚ӄ𝖎.sender);
+      }, 20000);
+      `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
       if (Needs.length === 0) {
         var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(𝓜𝖎𝖟𝖚ӄ𝖎.commandName);
         var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
