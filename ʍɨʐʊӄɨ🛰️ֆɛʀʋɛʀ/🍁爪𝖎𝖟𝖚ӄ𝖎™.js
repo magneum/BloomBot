@@ -601,9 +601,10 @@ ${update.desc}`,
               `@${ꜱᴇɴᴅᴇʀeceived}
 
 ╔═══════ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ 
-║⬡ _First ioin the Mizuki GC._
-║⬡ _KrakinzLab Will Auto-Verify Your Account._
+║⬡ First ioin the Mizuki GC.
+║⬡ KrakinzLab Will Auto-Verify Your Account.
 ╚════════════╝
+
 🐙 𝐎𝐟𝐟𝐢𝐜𝐢𝐚𝐥: ${_𝔏𝔞𝔟_.HASH}`,
               MessageType.text,
               {
@@ -664,6 +665,11 @@ ${update.desc}`,
                       `⬡==========================⬡    🍁Starting Mizuki pull...`
                     )
                   );
+                  ӄʀǟӄɨռʐ.sendMessage(
+                    𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                    `════ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ Mizuki Auto Updated!`,
+                    MessageType.text
+                  );
                 })
                 .pull(async (ℓαвєяяσя, update) => {
                   if (ℓαвєяяσя) {
@@ -698,7 +704,7 @@ ${update.desc}`,
                 ӄʀǟӄɨռʐ,
                 chat,
                 𝓜𝖎𝖟𝖚ӄ𝖎,
-                `@${ꜱᴇɴᴅᴇʀeceived}\n*❌Wrong Command Executed!* _Read: ${ᴋᴇɪ}help_`
+                `*@${ꜱᴇɴᴅᴇʀeceived}, ❌Wrong Command Executed! Read: ${ᴋᴇɪ}help*`
               );
             } else {
               return ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ.handle(
