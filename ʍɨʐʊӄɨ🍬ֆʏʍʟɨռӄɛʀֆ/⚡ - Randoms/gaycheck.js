@@ -77,32 +77,34 @@ module.exports = {
         }, 20000);
         `⬡🍁⬡========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
         if (𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
+          try {
+            𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄʀǟӄɨռʐ.getProfilePicture(Receiver);
+          } catch {
+            𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = `https://i.postimg.cc/3wfrmmpB/NoPP.jpg`;
+          }
           Mizuki_Buttons.MIB(
             ӄʀǟӄɨռʐ,
             chat,
             𝓜𝖎𝖟𝖚ӄ𝖎,
             "🌈pure gay",
             global.API("https://some-random-api.ml", "/canvas/gay", {
-              avatar: await ӄʀǟӄɨռʐ
-                .getProfilePicture(Receiver)
-                .catch(
-                  (_) => "https://telegra.ph/file/24fa902ead26340f3df2c.png"
-                ),
+              avatar: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗,
             })
           );
           `⬡🍁⬡========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
         } else {
+          try {
+            𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄʀǟӄɨռʐ.getProfilePicture(ꜱᴇɴᴅᴇʀɪᴅ);
+          } catch {
+            𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = `https://i.postimg.cc/3wfrmmpB/NoPP.jpg`;
+          }
           Mizuki_Buttons.MIB(
             ӄʀǟӄɨռʐ,
             chat,
             𝓜𝖎𝖟𝖚ӄ𝖎,
             "🌈pure gay",
             global.API("https://some-random-api.ml", "/canvas/gay", {
-              avatar: await ӄʀǟӄɨռʐ
-                .getProfilePicture(ꜱᴇɴᴅᴇʀɪᴅ)
-                .catch(
-                  (_) => "https://telegra.ph/file/24fa902ead26340f3df2c.png"
-                ),
+              avatar: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗,
             })
           );
         }
