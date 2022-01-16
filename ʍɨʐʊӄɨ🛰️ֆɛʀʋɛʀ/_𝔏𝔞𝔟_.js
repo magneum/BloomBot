@@ -53,7 +53,7 @@ const env = {
             ssl: { require: true, rejectUnauthorized: false },
           },
         }),
-  MEE: `https://i.postimg.cc/3wSjYGF7/image.png`,
+  MEE: `https://i.postimg.cc/3r6MShnN/image.png`,
   PRIVACY: process.env.PRIVACY === undefined ? `public` : process.env.PRIVACY,
 };
 module.exports = env;
