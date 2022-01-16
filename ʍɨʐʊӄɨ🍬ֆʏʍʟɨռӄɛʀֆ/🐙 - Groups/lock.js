@@ -155,7 +155,7 @@ module.exports = {
       try {
         𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄʀǟӄɨռʐ.getProfilePicture(𝓜𝖎𝖟𝖚ӄ𝖎.chatId);
       } catch {
-        𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = `https://i.postimg.cc/3wfrmmpB/NoPP.jpg`;
+        𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = `https://i.postimg.cc/6QmT53dR/Npp.png`;
       }
 
       var duration;
