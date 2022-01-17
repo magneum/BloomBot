@@ -63,13 +63,7 @@ module.exports = {
             ӄʀǟӄɨռʐ,
             chat,
             𝓜𝖎𝖟𝖚ӄ𝖎,
-            `Who Is This Non-Admin •@${ꜱᴇɴᴅᴇʀeceived} Trying to Use Admin-Only Commands.
-
-────★ 🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧   
-❌ You Are Not Allowed!  
-🌶️𝐆𝐫𝐨𝐮𝐩𝐬: Admins & Devs!
-🌽𝐏𝐫𝐢𝐯𝐚𝐭𝐞 Everyone
-`,
+            `*❌ You Are Not Allowed!*`,
             _𝔏𝔞𝔟_.ɴᴏᴛᴀᴅᴍɪɴ
           );
         } catch (ℓαвєяяσя) {

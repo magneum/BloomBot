@@ -61,184 +61,59 @@ module.exports = {
             ӄʀǟӄɨռʐ,
             chat,
             𝓜𝖎𝖟𝖚ӄ𝖎,
-            `Who Is This Non-Admin •@${ꜱᴇɴᴅᴇʀeceived} Trying to Use Admin-Only Commands.
-
-────★ 🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧   
-❌ You Are Not Allowed!  
-🌶️𝐆𝐫𝐨𝐮𝐩𝐬: Admins & Devs!
-🌽𝐏𝐫𝐢𝐯𝐚𝐭𝐞 Everyone`,
+            `*❌ You Are Not Allowed!*`,
             _𝔏𝔞𝔟_.ɴᴏᴛᴀᴅᴍɪɴ
           );
         } catch (ℓαвєяяσя) {
           ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
         }
       }
-      try {
-        var Raw = await porno();
-        RawData = `https://tikporntok.com/` + Raw.video;
-        if (!RawData.endsWith(`.mp4`)) {
-          var Raw = await porno();
-          RawData = `https://tikporntok.com/` + Raw.video;
-          TikPork = RawData;
-        } else {
-          TikPork = RawData;
-        }
-        console.log(`────◆➤ ` + TikPork);
-        const downloader = await new Downloader({
-          url: TikPork,
-          directory: `./ʍɨʐʊӄɨ🗑️ȶɛʍք`,
-          fileName: `${FinalName}_${ꜱᴇɴᴅᴇʀeceived}.mp4`,
-          cloneFiles: false,
-        });
-        try {
-          await downloader.download();
-        } catch (ℓαвєяяσя) {
-          try {
-            return Mizuki_Buttons.MTB(
-              ӄʀǟӄɨռʐ,
-              chat,
-              𝓜𝖎𝖟𝖚ӄ𝖎,
-              `@${ꜱᴇɴᴅᴇʀeceived},
-
-🤧𝐎𝐩𝐩𝐬𝐢𝐞 𝘛𝘳𝘺 𝘈𝘨𝘢𝘪𝘯!
-_Server Didn't Send Any Response_`
-            );
-          } catch (ℓαвєяяσя) {
-            ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
-          }
-        }
-        let content = fs.readFileSync(
-          `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FinalName}_${ꜱᴇɴᴅᴇʀeceived}.mp4`
+      `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
+      var Raw = await porno();
+      RawData = `https://tikporntok.com/` + Raw.video;
+      if (!RawData.endsWith(`.mp4`)) {
+        return Mizuki_Buttons.MTB(
+          ӄʀǟӄɨռʐ,
+          chat,
+          𝓜𝖎𝖟𝖚ӄ𝖎,
+          `@${ꜱᴇɴᴅᴇʀeceived},
+  
+  ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+  ║🥺 𝐎𝐩𝐩𝐬𝐢𝐞 𝐓𝐫𝐲 𝐀𝐠𝐚𝐢𝐧!
+  ║🍁 𝐒𝐞𝐫𝐯𝐞𝐫 𝐃𝐢𝐝𝐧'𝐭 𝐑𝐞𝐬𝐩𝐨𝐧𝐝!
+  ╚════════════╝`
         );
-        const media = await ӄʀǟӄɨռʐ.prepareMessage(
-          𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-          content,
-          MessageType.video,
-          {
-            mimetype: Mimetype.mp4,
-          }
-        );
-        await ӄʀǟӄɨռʐ
-          .sendMessage(
-            𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            {
-              contentText: `@${ꜱᴇɴᴅᴇʀeceived},
-
-╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-📜𝐓𝐢𝐭𝐥𝐞: ${Raw.title}
-👀𝐕𝐢𝐞𝐰𝐬: ${Raw.views}
-🔸𝐓𝐚𝐠𝐬: ${Raw.tags}
-👍🏽‍𝐋𝐢𝐤𝐞𝐬: ${Raw.like}
-👎🏽‍𝐃𝐢𝐬𝐥𝐢𝐤𝐞𝐬: ${Raw.dislike}
-⭐𝐅𝐚𝐯𝐨𝐮𝐫𝐢𝐭𝐞: ${Raw.favorite}
-📤𝐔𝐩𝐥𝐨𝐚𝐝𝐞𝐝: ${Raw.upload}
-🖊️𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${Raw.desc}
-📥𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝: https://tikporntok.com/${TikPork.video}
-🔥𝐒𝐨𝐮𝐫𝐜𝐞: https://tikporntok.com/${TikPork.source}
-`,
-              footerText: `\n(c)𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 \n${Clock}`,
-              buttons: [
-                {
-                  buttonId: `${ᴋᴇɪ}menu`,
-                  buttonText: { displayText: `${ᴋᴇɪ}menu` },
-                  type: 1,
-                },
-              ],
-              headerType: 5,
-              videoMessage: media.message.videoMessage,
-            },
-            MessageType.buttonsMessage,
-            {
-              quoted: chat,
-              contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
-            }
-          )
-          .then(
-            cleanRF.cleanRF(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FinalName}_${ꜱᴇɴᴅᴇʀeceived}.mp4`)
-          )
-          .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
-      } catch {
-        var Raw = await porno();
-        RawData = `https://tikporntok.com/` + Raw.video;
-        if (RawData.endsWith(`.gif`)) {
-          var Raw = await porno();
-          RawData = `https://tikporntok.com/` + Raw.video;
-          TikPork = RawData;
-        } else if (RawData.endsWith(`.png`)) {
-          var Raw = await porno();
-          RawData = `https://tikporntok.com/` + Raw.video;
-          TikPork = RawData;
-        } else if (RawData.endsWith(`.jpg`)) {
-          var Raw = await porno();
-          RawData = `https://tikporntok.com/` + Raw.video;
-          TikPork = RawData;
-        } else if (RawData.endsWith(`.jpeg`)) {
-          var Raw = await porno();
-          RawData = `https://tikporntok.com/` + Raw.video;
-          TikPork = RawData;
-        } else {
-          TikPork = RawData;
-        }
-
-        console.log(`────◆➤ ` + TikPork);
-        const downloader = await new Downloader({
-          url: TikPork,
-          directory: `./ʍɨʐʊӄɨ🗑️ȶɛʍք`,
-          fileName: `${FinalName}_${ꜱᴇɴᴅᴇʀeceived}.mp4`,
-          cloneFiles: false,
-        });
-        await downloader.download();
-        let content = fs.readFileSync(
-          `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FinalName}_${ꜱᴇɴᴅᴇʀeceived}.mp4`
-        );
-        const media = await ӄʀǟӄɨռʐ.prepareMessage(
-          𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-          content,
-          MessageType.video,
-          {
-            mimetype: Mimetype.mp4,
-          }
-        );
-        await ӄʀǟӄɨռʐ
-          .sendMessage(
-            𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            {
-              contentText: `@${ꜱᴇɴᴅᴇʀeceived},
-
-╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-📜𝐓𝐢𝐭𝐥𝐞: ${Raw.title}
-👀𝐕𝐢𝐞𝐰𝐬: ${Raw.views}
-🔸𝐓𝐚𝐠𝐬: ${Raw.tags}
-👍🏽‍𝐋𝐢𝐤𝐞𝐬: ${Raw.like}
-👎🏽‍𝐃𝐢𝐬𝐥𝐢𝐤𝐞𝐬: ${Raw.dislike}
-⭐𝐅𝐚𝐯𝐨𝐮𝐫𝐢𝐭𝐞: ${Raw.favorite}
-📤𝐔𝐩𝐥𝐨𝐚𝐝𝐞𝐝: ${Raw.upload}
-🖊️𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${Raw.desc}
-📥𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝: https://tikporntok.com/${TikPork.video}
-🔥𝐒𝐨𝐮𝐫𝐜𝐞: https://tikporntok.com/${TikPork.source}
-`,
-              footerText: `\n(c)𝐌𝐢𝐳𝐮𝐤𝐢🍁𝐁𝐨𝐭 \n${Clock}`,
-              buttons: [
-                {
-                  buttonId: `${ᴋᴇɪ}menu`,
-                  buttonText: { displayText: `${ᴋᴇɪ}menu` },
-                  type: 1,
-                },
-              ],
-              headerType: 5,
-              videoMessage: media.message.videoMessage,
-            },
-            MessageType.buttonsMessage,
-            {
-              quoted: chat,
-              contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
-            }
-          )
-          .then(
-            cleanRF.cleanRF(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FinalName}_${ꜱᴇɴᴅᴇʀeceived}.mp4`)
-          )
-          .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
       }
+      `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
+      const downloader = await new Downloader({
+        url: RawData,
+        directory: `./ʍɨʐʊӄɨ🗑️ȶɛʍք`,
+        fileName: `${FinalName}_${ꜱᴇɴᴅᴇʀeceived}.mp4`,
+        cloneFiles: false,
+      });
+      await downloader.download();
+      Mizuki_Buttons.MVB(
+        ӄʀǟӄɨռʐ,
+        chat,
+        𝓜𝖎𝖟𝖚ӄ𝖎,
+        `@${ꜱᴇɴᴅᴇʀeceived},
+
+╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+║📜𝐓𝐢𝐭𝐥𝐞: ${Raw.title}
+║👀𝐕𝐢𝐞𝐰𝐬: ${Raw.views}
+║🔸𝐓𝐚𝐠𝐬: ${Raw.tags}
+║👍🏽‍𝐋𝐢𝐤𝐞𝐬: ${Raw.like}
+║👎🏽‍𝐃𝐢𝐬𝐥𝐢𝐤𝐞𝐬: ${Raw.dislike} 
+║⭐𝐅𝐚𝐯𝐨𝐮𝐫𝐢𝐭𝐞: ${Raw.favorite}
+║📤𝐔𝐩𝐥𝐨𝐚𝐝𝐞𝐝: ${Raw.upload}
+║🖊️𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${Raw.desc}
+╚════════════╝`,
+        `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FinalName}_${ꜱᴇɴᴅᴇʀeceived}.mp4`
+      );
+      return cleanRF.cleanRF(
+        `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FinalName}_${ꜱᴇɴᴅᴇʀeceived}.mp4`
+      );
+      `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
     } catch (ℓαвєяяσя) {
       ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
       console.log(ℓαвєяяσя);
