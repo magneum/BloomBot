@@ -171,11 +171,12 @@ async function 爪𝖎𝖟𝖚ӄ𝖎() {
       ӄʀǟӄɨռʐ.user.jid,
       `(𝐜)𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭 _${version}_
 
-━━━━━━━★
-🍁ᴘʀᴇꜰɪx: ${ᴋᴇɪ}
-🛰️𝐏𝐢𝐧𝐠: ${Ping}s
-📅𝐃𝐚𝐭𝐞: ${Clock}
-🛸𝐆𝐫𝐨𝐮𝐩: ${_𝔏𝔞𝔟_.HASH}`,
+╔═══════★
+║🍁ᴘʀᴇꜰɪx: ${ᴋᴇɪ}
+║🛰️𝐏𝐢𝐧𝐠: ${Ping}s
+║📅𝐃𝐚𝐭𝐞: ${Clock}
+║🛸𝐆𝐫𝐨𝐮𝐩: ${_𝔏𝔞𝔟_.HASH}
+╚════════════╝`,
       MessageType.text
     );
   });
@@ -194,13 +195,11 @@ async function 爪𝖎𝖟𝖚ӄ𝖎() {
               mimetype: `video/gif`,
               caption: `*🍁Attention Here Everyone In the Group!🍁*
 
-━━━━━━━★
-⛺𝐆𝐫𝐨𝐮𝐩 𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _*Open For All*_
-🎪𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${groupupdateID.subject}
-💞𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${groupupdateID.participants.length}
-
-⬡ 𝘎𝘳𝘰𝘶𝘱 𝘩𝘢𝘴 𝘣𝘦𝘦𝘯 𝘰𝘱𝘦𝘯𝘦𝘥 𝘣𝘺 𝘢𝘥𝘮𝘪𝘯 
-⬡ 𝘕𝘰𝘸 𝘢𝘭𝘭 𝘮𝘦𝘮𝘣𝘦𝘳𝘴 𝘤𝘢𝘯 𝘴𝘦𝘯𝘥 𝘮𝘦𝘴𝘴𝘢𝘨𝘦𝘴`,
+╔═══════★
+║⛺𝐆𝐫𝐨𝐮𝐩 𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _*Open For All*_
+║🎪𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${groupupdateID.subject}
+║💞𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${groupupdateID.participants.length}
+╚════════════╝`,
             }
           )
           .catch((ℓαвєяяσя) => console.log(ℓαвєяяσя));
@@ -215,13 +214,11 @@ async function 爪𝖎𝖟𝖚ӄ𝖎() {
               caption: `*🍁Attention Here Everyone In the Group!🍁*
 
 
-━━━━━━━★
-⛺𝐆𝐫𝐨𝐮𝐩 𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _*Admins-Only*_
-🎪𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${groupupdateID.subject}
-💞𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${groupupdateID.participants.length}
-
-⬡ 𝘎𝘳𝘰𝘶𝘱 𝘩𝘢𝘴 𝘣𝘦𝘦𝘯 𝘤𝘭𝘰𝘴𝘦𝘥 𝘣𝘺 𝘈𝘥𝘮𝘪𝘯𝘴
-⬡ 𝘕𝘰𝘸 _only_ 𝘈𝘥𝘮𝘪𝘯𝘴 𝘤𝘢𝘯 𝘴𝘦𝘯𝘥 𝘮𝘦𝘴𝘴𝘢𝘨𝘦𝘴`,
+╔═══════★
+║⛺𝐆𝐫𝐨𝐮𝐩 𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _*Admins-Only*_
+║🎪𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${groupupdateID.subject}
+║💞𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${groupupdateID.participants.length}
+╚════════════╝`,
             }
           )
           .catch((ℓαвєяяσя) => console.log(ℓαвєяяσя));
@@ -240,11 +237,12 @@ async function 爪𝖎𝖟𝖚ӄ𝖎() {
               caption: `*🍁Attention Here Everyone In the Group!🍁*
 
 
-━━━━━━━★
-⛺𝐆𝐫𝐨𝐮𝐩 𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _*New Description Added*_
-🎪𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${groupupdateID.subject}
-🍌𝐂𝐡𝐚𝐧𝐠𝐞𝐝 𝐁𝐲: @${update.descOwner.split(`@`)[0]}
-💞𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${groupupdateID.participants.length}
+╔═══════★
+║⛺𝐆𝐫𝐨𝐮𝐩 𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _*New Description Added*_
+║🎪𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${groupupdateID.subject}
+║🍌𝐂𝐡𝐚𝐧𝐠𝐞𝐝 𝐁𝐲: @${update.descOwner.split(`@`)[0]}
+║💞𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${groupupdateID.participants.length}
+╚════════════╝
 
 ★━━━━━★ 𝐍𝐞𝐰 𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧 ★━━━━━★
 ${update.desc}`,
@@ -262,13 +260,11 @@ ${update.desc}`,
               caption: `*🍁Attention Here Everyone In the Group!🍁*
 
 
-━━━━━━━★
-⛺𝐆𝐫𝐨𝐮𝐩 𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _*Info Edit Allowed For All*_
-🎪𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${groupupdateID.subject}
-💞𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${groupupdateID.participants.length}
-
-⬡ 𝘎𝘳𝘰𝘶𝘱 𝘐𝘯𝘧𝘰 𝘌𝘥𝘪𝘵 𝘏𝘢𝘴 𝘉𝘦𝘦𝘯 𝘖𝘱𝘦𝘯𝘦𝘥 𝘍𝘰𝘳 𝘌𝘷𝘦𝘳𝘺𝘰𝘯𝘦
-⬡ 𝘕𝘰𝘸 𝘈𝘭𝘭 𝘔𝘦𝘮𝘣𝘦𝘳𝘴 𝘊𝘢𝘯 𝘌𝘥𝘪𝘵 𝘎𝘳𝘰𝘶𝘱 𝘐𝘯𝘧𝘰`,
+╔═══════★
+║⛺𝐆𝐫𝐨𝐮𝐩 𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _*Info Edit Allowed For All*_
+║🎪𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${groupupdateID.subject}
+║💞𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${groupupdateID.participants.length}
+╚════════════╝`,
             }
           )
           .catch((ℓαвєяяσя) => console.log(ℓαвєяяσя));
@@ -283,13 +279,11 @@ ${update.desc}`,
               caption: `*🍁Attention Here Everyone In the Group!🍁*
 
 
-━━━━━━━★
-⛺𝐆𝐫𝐨𝐮𝐩 𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _*Info Edit Allowed For Admins-Only*_
-🎪𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${groupupdateID.subject}
-💞𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${groupupdateID.participants.length}
-
-⬡ 𝘎𝘳𝘰𝘶𝘱 𝘐𝘯𝘧𝘰 𝘌𝘥𝘪𝘵 𝘏𝘢𝘴 𝘉𝘦𝘦𝘯 𝘊𝘭𝘰𝘴𝘦𝘥 𝘍𝘰𝘳 𝘌𝘷𝘦𝘳𝘺𝘰𝘯𝘦
-⬡ 𝘕𝘰𝘸 𝘈𝘭𝘭 𝘈𝘥𝘮𝘪𝘯𝘴 𝘊𝘢𝘯 𝘌𝘥𝘪𝘵 𝘎𝘳𝘰𝘶𝘱 𝘐𝘯𝘧𝘰`,
+╔═══════★
+║⛺𝐆𝐫𝐨𝐮𝐩 𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _*Info Edit Allowed For Admins-Only*_
+║🎪𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${groupupdateID.subject}
+║💞𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${groupupdateID.participants.length}
+╚════════════╝`,
             }
           )
           .catch((ℓαвєяяσя) => console.log(ℓαвєяяσя));
@@ -320,12 +314,7 @@ ${update.desc}`,
           {
             contentText: `𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚👋🏻 ${Timers} ᴇᴠᴇʀʏᴏɴᴇ.
 ʙᴏᴛ ɪꜱ ʀᴇᴀᴅʏ ᴛᴏ ᴀꜱꜱɪꜱᴛ ʏᴏᴜ!
-ᴛʏᴘᴇ *${ᴋᴇɪ}help* ᴛᴏ ᴋɴᴏᴡ ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅꜱ!
-
-━━━━━━━★
-
-🔑𝐏𝐫𝐞𝐟𝐢𝐱: *${ᴋᴇɪ}*
-👑𝐎𝐰𝐧𝐞𝐫: _🐙KrakinzKon_`,
+ᴛʏᴘᴇ *${ᴋᴇɪ}help* ᴛᴏ ᴋɴᴏᴡ ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅꜱ!`,
             footerText: `(𝐜)𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭 \n${Clock}`,
             buttons: [
               {
@@ -346,14 +335,7 @@ ${update.desc}`,
         );
         return await PostDataBase.setWelcome(
           GroupID,
-          `𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚👋🏻 ⬡ ʙᴏᴛ ɪꜱ ʀᴇᴀᴅʏ ᴛᴏ ᴀꜱꜱɪꜱᴛ ʏᴏᴜ!
-
-──────────────★
-🔑 𝐏𝐫𝐞𝐟𝐢𝐱: *${ᴋᴇɪ}*
-🐙 𝐆𝐑𝐎𝐔𝐏: _${_𝔏𝔞𝔟_.HASH}_
-🍾 𝐆𝐞𝐭 𝐌𝐢𝐳𝐮𝐤𝐢: _${ᴋᴇɪ}request_
-
-🌱𝗣𝗿𝗲𝘀𝘀 𝗯𝗲𝗹𝗼𝘄 𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗦𝘁𝗮𝗿𝘁 𝘂𝘀𝗶𝗻𝗴 𝗠𝗶𝘇𝘂𝗸𝗶👇🏽‍ `
+          `𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚👋🏻\n🌱𝗣𝗿𝗲𝘀𝘀 𝗯𝗲𝗹𝗼𝘄 𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗦𝘁𝗮𝗿𝘁 𝘂𝘀𝗶𝗻𝗴 𝗠𝗶𝘇𝘂𝗸𝗶👇🏽‍ `
         );
       }
       if (update.action === `add` && !MemNum.includes(ӄʀǟӄɨռʐ.user.jid)) {
