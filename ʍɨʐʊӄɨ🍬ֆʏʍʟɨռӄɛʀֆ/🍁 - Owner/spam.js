@@ -70,7 +70,7 @@ module.exports = {
           ӄʀǟӄɨռʐ,
           chat,
           𝓜𝖎𝖟𝖚ӄ𝖎,
-          `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived},
+          `@${ꜱᴇɴᴅᴇʀeceived},
 
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
@@ -112,7 +112,7 @@ Spam Amount can't be zero.`,
           ӄʀǟӄɨռʐ,
           chat,
           𝓜𝖎𝖟𝖚ӄ𝖎,
-          `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived},
+          `@${ꜱᴇɴᴅᴇʀeceived},
 
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}

@@ -64,7 +64,7 @@ module.exports = {
           {
             mimetype: `video/gif`,
             contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
-            caption: `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived}, (owner)
+            caption: `@${ꜱᴇɴᴅᴇʀeceived}, (owner)
 
 *🍁爪𝖎𝖟𝖚ӄ𝖎™ ɪꜱ ɴᴏᴡ Rebooting._ᴘʟᴇᴀꜱᴇ ᴡᴀɪᴛ ꜰᴏʀ 30-60ꜱᴇᴄ_*`,
           }

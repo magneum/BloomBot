@@ -98,7 +98,7 @@ module.exports = {
               ӄʀǟӄɨռʐ,
               chat,
               𝓜𝖎𝖟𝖚ӄ𝖎,
-              `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived},
+              `@${ꜱᴇɴᴅᴇʀeceived},
 
 🤧𝐎𝐩𝐩𝐬𝐢𝐞 𝘛𝘳𝘺 𝘈𝘨𝘢𝘪𝘯!
 _Server Didn't Send Any Response_`
@@ -122,7 +122,7 @@ _Server Didn't Send Any Response_`
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
             {
-              contentText: `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived},
+              contentText: `@${ꜱᴇɴᴅᴇʀeceived},
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 📜𝐓𝐢𝐭𝐥𝐞: ${Raw.title}
@@ -203,7 +203,7 @@ _Server Didn't Send Any Response_`
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
             {
-              contentText: `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived},
+              contentText: `@${ꜱᴇɴᴅᴇʀeceived},
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 📜𝐓𝐢𝐭𝐥𝐞: ${Raw.title}
