@@ -127,20 +127,6 @@ async function 爪𝖎𝖟𝖚ӄ𝖎() {
       Kolor.bgGreenBright.black(`🍁INFO ⬰ 𝐋𝐢𝐧𝐤𝐢𝐧𝐠 𝐌𝐢𝐳𝐮𝐤𝐢 𝐖𝐢𝐭𝐡 𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞...✔️`)
     );
     try {
-      const ʍɨʐʊӄɨgoose = require("mongoose");
-      const Kolor = require(`chalk`);
-      ʍɨʐʊӄɨgoose
-        .connect(_𝔏𝔞𝔟_.MizukiMdb, {
-          useNewUrlParser: true,
-          useUnifiedTopology: true,
-          useCreateIndex: true,
-          useFindAndModify: false,
-        })
-        .then(console.log(Kolor.bgGreenBright.black(`ʍɨʐʊӄɨgoose Connected`)))
-        .catch((err) => {
-          console.log(Kolor.bgRedBright.black(`ʍɨʐʊӄɨgoose Error: \n${err}`));
-          process.exit(1);
-        });
       await 𝓜𝖎𝖟𝖚ӄ𝖎sql.authenticate();
       await 𝓜𝖎𝖟𝖚ӄ𝖎sql.validate();
       await 𝓜𝖎𝖟𝖚ӄ𝖎sql
@@ -368,23 +354,13 @@ ${update.desc}`,
       : ``;
     var 𝓜𝖎𝖟𝖚ӄ𝖎 = 𝓜𝖎𝖟𝖚ӄ𝖎ǟքք.resolve(chat, ӄʀǟӄɨռʐ, groupMetadata);
     `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-    if (𝓜𝖎𝖟𝖚ӄ𝖎.isGroup && !𝓜𝖎𝖟𝖚ӄ𝖎.fromMe) {
+    if (𝓜𝖎𝖟𝖚ӄ𝖎.isGroup) {
       var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
       var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
       const UsersMizuki = require(`../ʍɨʐʊӄɨ🍃goose/experience.js`);
       let xpAdd = Math.ceil(Math.random() * 10);
       let messageAdd = +1;
       `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-      const applyText = (canvas, text) => {
-        const ctx = canvas.getContext(`2d`);
-        let fontSize = 50;
-        do {
-          ctx.font = `${(fontSize -= 10)}px Symbola`;
-        } while (ctx.measureText(text).width > canvas.width - 300);
-        return ctx.font;
-      };
-      var canvas = Canvas.createCanvas(840, 300);
-      var ctx = canvas.getContext(`2d`);
       try {
         𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄʀǟӄɨռʐ.getProfilePicture(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
       } catch {
@@ -397,6 +373,7 @@ ${update.desc}`,
           serverID: 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
         },
         async (err, users) => {
+          console.log(users);
           if (err) console.log(err);
           if (!users) {
             var newUsers = new UsersMizuki({
@@ -405,77 +382,102 @@ ${update.desc}`,
               xp: xpAdd,
               level: 0,
               message: messageAdd,
-              avatarURL: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗,
             });
             newUsers.save().catch((ℓαвєяяσя) => console.log(ℓαвєяяσя));
           } else {
-            `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
             users.xp = users.xp + xpAdd;
             users.message = users.message + messageAdd;
-            users.avatarURL = 𝕻𝕻𝖑𝖊𝖙𝖊𝖗;
             let nxtlvl = 200 * Math.pow(2, users.level);
+            var xpleft = nxtlvl - users.xp;
             if (users.xp >= nxtlvl) {
               users.level = users.level + 1;
-              var background = await Canvas.loadImage(
-                "https://i.postimg.cc/htTPpb6w/Rank.png"
-              );
-              ctx.drawImage(background, 0, 0, Canvas.width, Canvas.height);
-              ctx.beginPath();
-              ctx.fillStyle = `rgba(236,180,95, 0.5)`;
-              ctx.fillRect(260, 80, 650, 160);
-              ctx.closePath();
-              ctx.stroke();
-              ctx.font = applyText(canvas, `User`);
-              ctx.fillStyle = `#000`;
-              ctx.font = `80px LobsterTwo-Bold`;
-              ctx.fillText(`★Level up!★`, 280, 136);
-              var xpleft = nxtlvl - users.xp;
-              ctx.font = `30px LobsterTwo-Bold`;
-              ctx.fillStyle = `#000`;
-              ctx.fillText(
-                `Level now ${users.level} - ${users.xp} XP`,
-                280,
-                180
-              );
-              ctx.font = `40px TheHeartOfEverythingDemo`;
-              ctx.fillStyle = `#000`;
-              ctx.fillText(`Next Level in ` + xpleft + `xp`, 280, 225);
-              await Canvas.loadImage(𝕻𝕻𝖑𝖊𝖙𝖊𝖗).then((avatar) => {
-                ctx.beginPath();
-                ctx.arc(125, 140, 100, 0, Math.PI * 2);
-                ctx.closePath();
-                ctx.clip();
-                ctx.drawImage(avatar, 25, 40, 200, 200);
-                const out = fs.createWriteStream(
-                  `${ꜱᴇɴᴅᴇʀeceived.toString()}_.jpeg`
-                );
-                const stream = canvas.createJPEGStream();
-                stream.pipe(out);
-                out.on(`finish`, () => {
-                  ӄʀǟӄɨռʐ.sendMessage(
-                    𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                    fs.readFileSync(`${ꜱᴇɴᴅᴇʀeceived.toString()}_.jpeg`),
-                    MessageType.image,
-                    {
-                      mimetype: Mimetype.jpeg,
-                      quoted: chat,
-                      contextInfo: { mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender] },
-                      caption: `✨𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬 @${𝓜𝖎𝖟𝖚ӄ𝖎.sender.substring(
-                        0,
-                        𝓜𝖎𝖟𝖚ӄ𝖎.sender.length - 15
-                      )}, 𝐘𝐨𝐮 𝐇𝐚𝐯𝐞 𝐋𝐞𝐯𝐞𝐥𝐞𝐝 𝐔𝐏!
+              const Economy = require(`../ʍɨʐʊӄɨ🍃goose/economy`);
+              Economy.findOne(
+                {
+                  did: 𝓜𝖎𝖟𝖚ӄ𝖎.sender,
+                },
+                async (err, userEco) => {
+                  console.log(userEco);
+                  if (err) console.log(err);
+                  if (!userEco) {
+                    var newUser = new Economy({
+                      did: 𝓜𝖎𝖟𝖚ӄ𝖎.sender,
+                      money: 200,
+                      daily: 0,
+                      timeout: 0,
+                    });
+                    newUser
+                      .save()
+                      .catch((ℓαвєяяσя) =>
+                        ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
+                      );
+                    ӄʀǟӄɨռʐ.sendMessage(
+                      𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                      { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 },
+                      MessageType.image,
+                      {
+                        mimetype: Mimetype.jpeg,
+                        quoted: chat,
+                        contextInfo: { mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender] },
+                        caption: `✨𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬 @${𝓜𝖎𝖟𝖚ӄ𝖎.sender.substring(
+                          0,
+                          𝓜𝖎𝖟𝖚ӄ𝖎.sender.length - 15
+                        )}, 𝐘𝐨𝐮 𝐇𝐚𝐯𝐞 𝐋𝐞𝐯𝐞𝐥𝐞𝐝 𝐔𝐏!
 
-╔═══════ 📜𝐑𝐚𝐧𝐤 𝐂𝐚𝐫𝐝
+╔════◇ 📜𝐑𝐚𝐧𝐤 𝐂𝐚𝐫𝐝
 ║🍇 𝗖𝘂𝗿𝗿𝗲𝗻𝘁 𝗫𝗣: _${users.xp}_
 ║🍈 𝗖𝘂𝗿𝗲𝗻𝘁 𝗟𝗲𝘃𝗲𝗹: _${users.level}_
 ║🍊 𝗡𝗲𝘅𝘁 𝗟𝗲𝘃𝗲𝗹 𝗶𝗻: _${xpleft}_
 ╚════════════╝
-🎉𝐓𝐡𝐞 𝐌𝐨𝐫𝐞 𝐘𝐨𝐮 𝐓𝐚𝐥𝐤, 𝐓𝐡𝐞 𝐌𝐨𝐫𝐞 𝐗𝐏 𝐘𝐨𝐮 𝐆𝐚𝐢𝐧. 𝐊𝐞𝐞𝐩 𝐔𝐩!🎉`,
-                    }
-                  );
-                  cleanRF.cleanRF(`${ꜱᴇɴᴅᴇʀeceived.toString()}_.jpeg`);
-                });
-              });
+
+╔════◇🌿𝐓𝐨𝐩𝐢𝐜: 🍁𝐌𝐢𝐳𝐮𝐤𝐢𝐁𝐚𝐧𝐤
+║🛵 𝐑𝐚𝐧𝐤 𝐁𝐨𝐧𝐮𝐬: 200       
+║🪙 𝗧𝗼𝘁𝗮𝗹 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _Just Opened Your Account!_
+╚════════════╝
+
+🎉𝐓𝐡𝐞 𝐌𝐨𝐫𝐞 𝐘𝐨𝐮 𝐓𝐚𝐥𝐤, 𝐓𝐡𝐞 𝐌𝐨𝐫𝐞 𝐗𝐏+𝐆𝐎𝐋𝐃 𝐘𝐨𝐮 𝐆𝐚𝐢𝐧. 
+🎉𝐊𝐞𝐞𝐩 𝐔𝐩!`,
+                      }
+                    );
+                  } else {
+                    var Ran = Math.floor(Math.random() * (100 - 50 + 1)) + 50;
+                    userEco.money = userEco.money + Ran;
+                    ӄʀǟӄɨռʐ.sendMessage(
+                      𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                      { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 },
+                      MessageType.image,
+                      {
+                        mimetype: Mimetype.jpeg,
+                        quoted: chat,
+                        contextInfo: { mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender] },
+                        caption: `✨𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬 @${𝓜𝖎𝖟𝖚ӄ𝖎.sender.substring(
+                          0,
+                          𝓜𝖎𝖟𝖚ӄ𝖎.sender.length - 15
+                        )}, 𝐘𝐨𝐮 𝐇𝐚𝐯𝐞 𝐋𝐞𝐯𝐞𝐥𝐞𝐝 𝐔𝐏!
+
+╔════◇ 📜𝐑𝐚𝐧𝐤 𝐂𝐚𝐫𝐝
+║🍇 𝗖𝘂𝗿𝗿𝗲𝗻𝘁 𝗫𝗣: _${users.xp}_
+║🍈 𝗖𝘂𝗿𝗲𝗻𝘁 𝗟𝗲𝘃𝗲𝗹: _${users.level}_
+║🍊 𝗡𝗲𝘅𝘁 𝗟𝗲𝘃𝗲𝗹 𝗶𝗻: _${xpleft}_
+╚════════════╝
+
+╔════◇🌿𝐓𝐨𝐩𝐢𝐜: 🍁𝐌𝐢𝐳𝐮𝐤𝐢𝐁𝐚𝐧𝐤
+║🛵 𝐑𝐚𝐧𝐤 𝐁𝐨𝐧𝐮𝐬: ${Ran} 
+║🪙 𝗧𝗼𝘁𝗮𝗹 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: ${userEco.money}
+╚════════════╝
+
+🎉𝐓𝐡𝐞 𝐌𝐨𝐫𝐞 𝐘𝐨𝐮 𝐓𝐚𝐥𝐤, 𝐓𝐡𝐞 𝐌𝐨𝐫𝐞 𝐗𝐏+𝐆𝐎𝐋𝐃 𝐘𝐨𝐮 𝐆𝐚𝐢𝐧. 
+🎉𝐊𝐞𝐞𝐩 𝐔𝐩!`,
+                      }
+                    );
+                    userEco
+                      .save()
+                      .catch((ℓαвєяяσя) =>
+                        ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
+                      );
+                  }
+                }
+              );
             }
             users.save().catch((ℓαвєяяσя) => console.log(ℓαвєяяσя));
           }

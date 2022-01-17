@@ -1,7 +1,7 @@
 {
   "name": "mizuki",
-  "vers": "v28.14",
-  "verold": "v28.13",
+  "vers": "v28.15",
+  "verold": "v28.14",
   "keywords": [
     "whatsapp",
     "js-whatsapp",
@@ -56,6 +56,7 @@
     "give-me-a-joke": "^0.5.1",
     "google-it": "^1.6.2",
     "google-tts-api": "^2.0.2",
+    "googleapis": "^92.0.0",
     "got": "^11.8.2",
     "heroku-client": "^3.1.0",
     "hubot-warframe-joke": "^1.0.7",

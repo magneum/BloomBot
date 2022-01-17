@@ -110,7 +110,6 @@ module.exports = {
               xp: xpAdd,
               level: 0,
               message: messageAdd,
-              avatarURL: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗,
             });
             newUsers.save().catch((ℓαвєяяσя) => console.log(ℓαвєяяσя));
           } else {
@@ -165,7 +164,9 @@ module.exports = {
 ║🍈 𝗖𝘂𝗿𝗲𝗻𝘁 𝗟𝗲𝘃𝗲𝗹: _${users.level}_
 ║🍊 𝗡𝗲𝘅𝘁 𝗟𝗲𝘃𝗲𝗹 𝗶𝗻: _${xpleft}_
 ╚════════════╝
-🎉𝐓𝐡𝐞 𝐌𝐨𝐫𝐞 𝐘𝐨𝐮 𝐓𝐚𝐥𝐤, 𝐓𝐡𝐞 𝐌𝐨𝐫𝐞 𝐗𝐏 𝐘𝐨𝐮 𝐆𝐚𝐢𝐧. 𝐊𝐞𝐞𝐩 𝐔𝐩!🎉`,
+
+🎉𝐓𝐡𝐞 𝐌𝐨𝐫𝐞 𝐘𝐨𝐮 𝐓𝐚𝐥𝐤, 𝐓𝐡𝐞 𝐌𝐨𝐫𝐞 𝐗𝐏+𝐆𝐎𝐋𝐃 𝐘𝐨𝐮 𝐆𝐚𝐢𝐧. 
+🎉𝐊𝐞𝐞𝐩 𝐔𝐩!`,
                   }
                 );
                 cleanRF.cleanRF(`${ꜱᴇɴᴅᴇʀeceived.toString()}_.jpeg`);
