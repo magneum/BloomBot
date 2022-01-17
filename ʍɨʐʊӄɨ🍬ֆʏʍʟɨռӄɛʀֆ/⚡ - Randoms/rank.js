@@ -79,7 +79,7 @@ module.exports = {
           ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
         }
       }
-      `🍁--------------------------------------------------------------------| 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ |`;
+      `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
       const applyText = (canvas, text) => {
         const ctx = canvas.getContext(`2d`);
         let fontSize = 50;
@@ -95,7 +95,7 @@ module.exports = {
       } catch {
         𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = `https://i.postimg.cc/3wfrmmpB/NoPP.jpg`;
       }
-      `🍁--------------------------------------------------------------------| 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ |`;
+      `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
       UsersMizuki.findOne(
         {
           did: 𝓜𝖎𝖟𝖚ӄ𝖎.sender,
@@ -103,53 +103,62 @@ module.exports = {
         },
         async (err, users) => {
           if (err) console.log(err);
-          var background = await Canvas.loadImage(
-            "https://i.postimg.cc/htTPpb6w/Rank.png"
-          );
-          ctx.drawImage(background, 0, 0, 1366, 768);
-          `🍁--------------------------------------------------------------------| 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ |`;
-          ctx.beginPath();
-          ctx.fillStyle = `rgba(236,180,95, 0.5)`;
-          ctx.fillRect(260, 80, 650, 160);
-          ctx.closePath();
-          ctx.stroke();
-          `🍁--------------------------------------------------------------------| 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ |`;
-          ctx.font = applyText(canvas, `User`);
-          ctx.fillStyle = `#000`;
-          ctx.font = `80px LobsterTwo-Bold`;
-          ctx.fillText(`★Rank Check!★`, 280, 136);
-          `🍁--------------------------------------------------------------------| 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ |`;
-          let nxtlvl = 200 * Math.pow(2, users.level);
-          var xpleft = nxtlvl - users.xp;
-          ctx.font = `40px TheHeartOfEverythingDemo`;
-          ctx.fillStyle = `#000`;
-          ctx.fillText(
-            `Level now ` + users.level + ` - ` + users.xp + ` XP`,
-            280,
-            180
-          );
-          `🍁--------------------------------------------------------------------| 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ |`;
-          await Canvas.loadImage(𝕻𝕻𝖑𝖊𝖙𝖊𝖗).then((avatar) => {
-            ctx.beginPath();
-            ctx.arc(125, 140, 100, 0, Math.PI * 2);
-            ctx.closePath();
-            ctx.clip();
-            ctx.drawImage(avatar, 25, 40, 200, 200);
-            const out = fs.createWriteStream(
-              `${ꜱᴇɴᴅᴇʀeceived.toString()}_.jpeg`
+          if (!users) {
+            var newUsers = new UsersMizuki({
+              did: 𝓜𝖎𝖟𝖚ӄ𝖎.sender,
+              serverID: 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+              xp: xpAdd,
+              level: 0,
+              message: messageAdd,
+              avatarURL: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗,
+            });
+            newUsers.save().catch((ℓαвєяяσя) => console.log(ℓαвєяяσя));
+          } else {
+            `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
+            var background = await Canvas.loadImage(
+              "https://i.postimg.cc/htTPpb6w/Rank.png"
             );
-            const stream = canvas.createJPEGStream();
-            stream.pipe(out);
-            out.on(`finish`, () => {
-              ӄʀǟӄɨռʐ.sendMessage(
-                𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                fs.readFileSync(`${ꜱᴇɴᴅᴇʀeceived.toString()}_.jpeg`),
-                MessageType.image,
-                {
-                  mimetype: Mimetype.jpeg,
-                  quoted: chat,
-                  contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
-                  caption: `@${ꜱᴇɴᴅᴇʀeceived}
+            ctx.drawImage(background, 0, 0, 1366, 768);
+            ctx.beginPath();
+            ctx.fillStyle = `rgba(236,180,95, 0.5)`;
+            ctx.fillRect(260, 80, 650, 160);
+            ctx.closePath();
+            ctx.stroke();
+            ctx.font = applyText(canvas, `User`);
+            ctx.fillStyle = `#000`;
+            ctx.font = `80px LobsterTwo-Bold`;
+            ctx.fillText(`★Rank Check!★`, 280, 136);
+            let nxtlvl = 200 * Math.pow(2, users.level);
+            var xpleft = nxtlvl - users.xp;
+            ctx.font = `40px TheHeartOfEverythingDemo`;
+            ctx.fillStyle = `#000`;
+            ctx.fillText(
+              `Level now ` + users.level + ` - ` + users.xp + ` XP`,
+              280,
+              180
+            );
+            `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
+            await Canvas.loadImage(𝕻𝕻𝖑𝖊𝖙𝖊𝖗).then((avatar) => {
+              ctx.beginPath();
+              ctx.arc(125, 140, 100, 0, Math.PI * 2);
+              ctx.closePath();
+              ctx.clip();
+              ctx.drawImage(avatar, 25, 40, 200, 200);
+              const out = fs.createWriteStream(
+                `${ꜱᴇɴᴅᴇʀeceived.toString()}_.jpeg`
+              );
+              const stream = canvas.createJPEGStream();
+              stream.pipe(out);
+              out.on(`finish`, () => {
+                ӄʀǟӄɨռʐ.sendMessage(
+                  𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                  fs.readFileSync(`${ꜱᴇɴᴅᴇʀeceived.toString()}_.jpeg`),
+                  MessageType.image,
+                  {
+                    mimetype: Mimetype.jpeg,
+                    quoted: chat,
+                    contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
+                    caption: `@${ꜱᴇɴᴅᴇʀeceived}
 
 ╔═══════ 📜𝐑𝐚𝐧𝐤 𝐂𝐚𝐫𝐝
 ║🍇 𝗖𝘂𝗿𝗿𝗲𝗻𝘁 𝗫𝗣: _${users.xp}_
@@ -157,14 +166,15 @@ module.exports = {
 ║🍊 𝗡𝗲𝘅𝘁 𝗟𝗲𝘃𝗲𝗹 𝗶𝗻: _${xpleft}_
 ╚════════════╝
 🎉𝐓𝐡𝐞 𝐌𝐨𝐫𝐞 𝐘𝐨𝐮 𝐓𝐚𝐥𝐤, 𝐓𝐡𝐞 𝐌𝐨𝐫𝐞 𝐗𝐏 𝐘𝐨𝐮 𝐆𝐚𝐢𝐧. 𝐊𝐞𝐞𝐩 𝐔𝐩!🎉`,
-                }
-              );
-              cleanRF.cleanRF(`${ꜱᴇɴᴅᴇʀeceived.toString()}_.jpeg`);
+                  }
+                );
+                cleanRF.cleanRF(`${ꜱᴇɴᴅᴇʀeceived.toString()}_.jpeg`);
+              });
             });
-          });
+          }
         }
       );
-      `🍁--------------------------------------------------------------------| 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ |`;
+      `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
     } catch (ℓαвєяяσя) {
       ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
       console.log(ℓαвєяяσя);
