@@ -497,33 +497,29 @@ ${update.desc}`,
         async (err, server) => {
           if (err) console.log(err);
           if (!server) return;
-          if (server.value == "ON") {
-            const REMOVE = chat.key.fromMe
-              ? ӄʀǟӄɨռʐ.user.jid
-              : 𝓜𝖎𝖟𝖚ӄ𝖎.isGroup
-              ? chat.participant
-              : chat.key.remoteJid;
-            await Mizuki_Buttons.MIB(
-              ӄʀǟӄɨռʐ,
-              chat,
-              𝓜𝖎𝖟𝖚ӄ𝖎,
-              `
-╔═══════  📍𝐀𝐧𝐭𝐢𝐥𝐢𝐧𝐤-𝐀𝐜𝐭𝐢𝐯𝐞
+          const REMOVE = chat.key.fromMe
+            ? ӄʀǟӄɨռʐ.user.jid
+            : 𝓜𝖎𝖟𝖚ӄ𝖎.isGroup
+            ? chat.participant
+            : chat.key.remoteJid;
+          await Mizuki_Buttons.MIB(
+            ӄʀǟӄɨռʐ,
+            chat,
+            𝓜𝖎𝖟𝖚ӄ𝖎,
+            `
+╔═══════  📍𝐀𝐧𝐭𝐢𝐥𝐢𝐧𝐤
 ║⚠️ You Sent Some Type Of link.
 ║⚠️ You Will Be Kicked!
 ╚════════════╝`,
-              `./ʍɨʐʊӄɨ☣️ƈօʀɛ/Mizuki_Antilink.png`
-            );
-            setTimeout(async (error) => {
-              if (error) console.log(error);
-              await ӄʀǟӄɨռʐ
-                .groupRemove(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, [REMOVE])
-                .catch((ℓαвєяяσя) =>
-                  ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
-                );
-            }, 6000);
-            return;
-          }
+            `./ʍɨʐʊӄɨ☣️ƈօʀɛ/Mizuki_Antilink.png`
+          );
+          setTimeout(async (error) => {
+            if (error) console.log(error);
+            await ӄʀǟӄɨռʐ
+              .groupRemove(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, [REMOVE])
+              .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
+          }, 6000);
+          return;
         }
       );
     }
