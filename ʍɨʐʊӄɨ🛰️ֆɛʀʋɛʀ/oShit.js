@@ -51,17 +51,22 @@ exports.catch = async (ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎
   var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
   const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
   const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
-
+  `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
   await ӄʀǟӄɨռʐ
     .sendMessage(
       𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
       {
-        contentText: `*◆ Try Again _${ᴋᴇɪ}${FinalName}_ Later!*`,
+        contentText: `*🍁 Try Again Later!*`,
         footerText: `(𝐜)𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭 \n${Clock}`,
         buttons: [
           {
             buttonId: `${ᴋᴇɪ}bugreport`,
             buttonText: { displayText: `${ᴋᴇɪ}bugreport` },
+            type: 1,
+          },
+          {
+            buttonId: `${ᴋᴇɪ}help`,
+            buttonText: { displayText: `${ᴋᴇɪ}help` },
             type: 1,
           },
         ],
@@ -74,20 +79,22 @@ exports.catch = async (ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎
       }
     )
     .then(console.log(ℓαвєяяσя));
-
+  `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
   return await ӄʀǟӄɨռʐ
     .sendMessage(
       𝓜𝖎𝖟𝖚ӄ𝖎.Myself,
       {
-        contentText: `⚡Try Command: _${ᴋᴇɪ}${FinalName}_ Again Later!`,
-        footerText: `(𝐜)𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭 \n${Clock}
-
-
-Error: ${ℓαвєяяσя}`,
+        contentText: `*🍁 Try Again Later!*\n\nError: ${ℓαвєяяσя}`,
+        footerText: `(𝐜)𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭 \n${Clock}`,
         buttons: [
           {
             buttonId: `${ᴋᴇɪ}bugreport`,
             buttonText: { displayText: `${ᴋᴇɪ}bugreport` },
+            type: 1,
+          },
+          {
+            buttonId: `${ᴋᴇɪ}help`,
+            buttonText: { displayText: `${ᴋᴇɪ}help` },
             type: 1,
           },
         ],
