@@ -39,12 +39,7 @@ module.exports = {
           ӄʀǟӄɨռʐ,
           chat,
           𝓜𝖎𝖟𝖚ӄ𝖎,
-          `Who Is This Dumbo •@${ꜱᴇɴᴅᴇʀeceived} Trying to Use Owner-Only Commands.
-
-
-────★ 🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧     
-❌ You Are Not Allowed! 
-`,
+          `*❌ You Are Not Allowed!*`,
           _𝔏𝔞𝔟_.ɴᴏᴛᴀᴅᴍɪɴ
         );
       } else if (Needs.length === 0) {
@@ -115,7 +110,7 @@ module.exports = {
         ӄʀǟӄɨռʐ,
         chat,
         𝓜𝖎𝖟𝖚ӄ𝖎,
-        `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 •@${ꜱᴇɴᴅᴇʀeceived} (Owner)
+        `@${ꜱᴇɴᴅᴇʀeceived} (Owner)
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 🛑 𝐆𝐫𝐨𝐮𝐩 𝐂𝐨𝐨𝐥𝐃𝐨𝐰𝐧: ${𝓜𝖎𝖟𝖚ӄ𝖎.groupName}
@@ -130,7 +125,7 @@ module.exports = {
           ӄʀǟӄɨռʐ,
           chat,
           𝓜𝖎𝖟𝖚ӄ𝖎,
-          `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 •@${ꜱᴇɴᴅᴇʀeceived} (Owner)
+          `@${ꜱᴇɴᴅᴇʀeceived} (Owner)
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 🛑 𝐆𝐫𝐨𝐮𝐩 𝐂𝐨𝐨𝐥𝐃𝐨𝐰𝐧: ${𝓜𝖎𝖟𝖚ӄ𝖎.groupName}

@@ -54,12 +54,7 @@ module.exports = {
           ӄʀǟӄɨռʐ,
           chat,
           𝓜𝖎𝖟𝖚ӄ𝖎,
-          `Who Is This •@${ꜱᴇɴᴅᴇʀeceived}?
-
-
-────★ 🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧   
-❌ You Are Not Allowed! 
-`,
+          `*❌ You Are Not Allowed!*`,
           _𝔏𝔞𝔟_.ɴᴏᴛᴀᴅᴍɪɴ
         );
       } else {

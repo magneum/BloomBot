@@ -37,7 +37,7 @@ const env = {
   ERROR: `https://i.postimg.cc/sDPF83Mx/Mizuki-Error.png`,
   INVL: `https://i.postimg.cc/q7k5WK9Z/Mizuki-Invalid.png`,
   HASH: `https://chat.whatsapp.com/LKN8uVBd8ucHRHofz0jBSd`,
-  DEV: `918436686758,19175804221`,
+  DEV: `918250889325,918436686758`,
   HEROKU: process.env.HEROKU,
   MIZUKIQL: (process.env.MIZUKIQL =
     process.env.MIZUKIQL === undefined
