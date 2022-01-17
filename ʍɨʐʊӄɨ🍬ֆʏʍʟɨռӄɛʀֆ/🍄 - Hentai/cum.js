@@ -74,7 +74,7 @@ module.exports = {
         );
       }
       `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-      if (!Raw.endsWith(`.png`)) {
+      if (!Raw.endsWith(`.png`) || !Raw.endsWith(`.jpeg`)) {
         return Mizuki_Buttons.MTB(
           ӄʀǟӄɨռʐ,
           chat,
