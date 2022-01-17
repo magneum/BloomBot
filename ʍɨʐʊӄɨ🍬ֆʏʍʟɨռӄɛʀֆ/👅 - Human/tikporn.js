@@ -91,7 +91,21 @@ module.exports = {
         fileName: `${FinalName}_${ꜱᴇɴᴅᴇʀeceived}.mp4`,
         cloneFiles: false,
       });
-      await downloader.download();
+      try {
+        await downloader.download();
+      } catch (ℓαвєяяσя) {
+        return Mizuki_Buttons.MTB(
+          ӄʀǟӄɨռʐ,
+          chat,
+          𝓜𝖎𝖟𝖚ӄ𝖎,
+          `@${ꜱᴇɴᴅᴇʀeceived},
+  
+  ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+  ║🥺 𝐎𝐩𝐩𝐬𝐢𝐞 𝐓𝐫𝐲 𝐀𝐠𝐚𝐢𝐧!
+  ║🍁 𝐒𝐞𝐫𝐯𝐞𝐫 𝐃𝐢𝐝𝐧'𝐭 𝐑𝐞𝐬𝐩𝐨𝐧𝐝!
+  ╚════════════╝`
+        );
+      }
       Mizuki_Buttons.MVB(
         ӄʀǟӄɨռʐ,
         chat,
