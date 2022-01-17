@@ -49,7 +49,7 @@ module.exports = {
             ӄʀǟӄɨռʐ,
             chat,
             𝓜𝖎𝖟𝖚ӄ𝖎,
-            `@${ꜱᴇɴᴅᴇʀeceived} (Owner)
+            `@${ꜱᴇɴᴅᴇʀeceived} 
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 ║👌🏽 ${ʀᴍʙᴀɴ.substring(0, ʀᴍʙᴀɴ.indexOf(`@`))}
@@ -65,7 +65,7 @@ module.exports = {
           ӄʀǟӄɨռʐ,
           chat,
           𝓜𝖎𝖟𝖚ӄ𝖎,
-          `@${ꜱᴇɴᴅᴇʀeceived} (Owner)
+          `@${ꜱᴇɴᴅᴇʀeceived} 
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 ║👌🏽‍𝐔𝐧𝐁𝐚𝐧𝐧𝐞𝐝: ${ʀᴍʙᴀɴ.substring(0, ʀᴍʙᴀɴ.indexOf(`@`))}
@@ -85,7 +85,7 @@ module.exports = {
               ӄʀǟӄɨռʐ,
               chat,
               𝓜𝖎𝖟𝖚ӄ𝖎,
-              `@${ꜱᴇɴᴅᴇʀeceived} (Owner)
+              `@${ꜱᴇɴᴅᴇʀeceived} 
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 ║👌🏽 ${ʀᴍʙᴀɴ.substring(0, ʀᴍʙᴀɴ.indexOf(`@`))}
@@ -101,7 +101,7 @@ module.exports = {
             ӄʀǟӄɨռʐ,
             chat,
             𝓜𝖎𝖟𝖚ӄ𝖎,
-            `@${ꜱᴇɴᴅᴇʀeceived} (Owner)
+            `@${ꜱᴇɴᴅᴇʀeceived} 
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 ║👌🏽‍𝐔𝐧𝐁𝐚𝐧𝐧𝐞𝐝: ${ʀᴍʙᴀɴ.substring(0, ʀᴍʙᴀɴ.indexOf(`@`))}
@@ -118,7 +118,7 @@ module.exports = {
               ӄʀǟӄɨռʐ,
               chat,
               𝓜𝖎𝖟𝖚ӄ𝖎,
-              `@${ꜱᴇɴᴅᴇʀeceived} (Owner)
+              `@${ꜱᴇɴᴅᴇʀeceived} 
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 ║👌🏽 ${ʀᴍʙᴀɴ.substring(0, ʀᴍʙᴀɴ.indexOf(`@`))}
@@ -134,7 +134,7 @@ module.exports = {
             ӄʀǟӄɨռʐ,
             chat,
             𝓜𝖎𝖟𝖚ӄ𝖎,
-            `@${ꜱᴇɴᴅᴇʀeceived} (Owner)
+            `@${ꜱᴇɴᴅᴇʀeceived} 
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 ║👌🏽 𝐔𝐧𝐁𝐚𝐧𝐧𝐞𝐝: ${ʀᴍʙᴀɴ.substring(0, ʀᴍʙᴀɴ.indexOf(`@`))}
@@ -150,7 +150,7 @@ module.exports = {
               ӄʀǟӄɨռʐ,
               chat,
               𝓜𝖎𝖟𝖚ӄ𝖎,
-              `@${ꜱᴇɴᴅᴇʀeceived} (Owner)
+              `@${ꜱᴇɴᴅᴇʀeceived} 
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 ║👌🏽 ${𝓜𝖎𝖟𝖚ӄ𝖎.groupName}
@@ -166,7 +166,7 @@ module.exports = {
             ӄʀǟӄɨռʐ,
             chat,
             𝓜𝖎𝖟𝖚ӄ𝖎,
-            `@${ꜱᴇɴᴅᴇʀeceived} (Owner)
+            `@${ꜱᴇɴᴅᴇʀeceived} 
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 ║👌🏽𝐆𝐫𝐨𝐮𝐩 𝐔𝐧𝐁𝐚𝐧𝐧𝐞𝐝: ${𝓜𝖎𝖟𝖚ӄ𝖎.groupName}
