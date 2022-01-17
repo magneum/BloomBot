@@ -75,8 +75,8 @@ module.exports = {
       }
       `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
       if (
-        !Raw.endsWith(`.png`) ||
-        !Raw.endsWith(`.jpeg`) ||
+        !Raw.endsWith(`.png`) &&
+        !Raw.endsWith(`.jpeg`) &&
         !Raw.endsWith(`.jpg`)
       ) {
         return Mizuki_Buttons.MTB(
