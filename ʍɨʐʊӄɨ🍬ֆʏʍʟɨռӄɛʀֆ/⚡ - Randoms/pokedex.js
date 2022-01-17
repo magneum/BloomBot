@@ -75,7 +75,7 @@ module.exports = {
         })
       );
       let json = await res.json();
-      Mizuki_Static.MGS(
+      Mizuki_Buttons.MVB(
         ӄʀǟӄɨռʐ,
         chat,
         𝓜𝖎𝖟𝖚ӄ𝖎,
