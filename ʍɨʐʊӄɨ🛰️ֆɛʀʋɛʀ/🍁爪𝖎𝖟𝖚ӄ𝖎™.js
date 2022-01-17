@@ -4,19 +4,20 @@
 `⬡🍁⬡`;
 `⬡🍁⬡`;
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
-const PostDataBase = require(`../ʍɨʐʊӄɨ🍃goose/greeting.js`);
 const LinkList = require(`../ʍɨʐʊӄɨ🍃goose/antilink`);
 const Mizuki_Buttons = require(`./Mizuki_Buttons`);
 const Mizuki_Static = require(`./Mizuki_Static`);
 const 𝓜𝖎𝖟𝖚ӄ𝖎ֆʏռօք = require(`./𝓜𝖎𝖟𝖚ӄ𝖎ᴢᴇɴ`);
 const moment = require(`moment-timezone`);
 const AutoKrakz = require(`./𝓜𝖎𝖟𝖚ӄ𝖎ɢɪᴛ`);
+const PostDataBase = require(`./postDb`);
 const speed = require(`performance-now`);
 const { ʄǟռƈʏ } = require(`../ʄǟռƈʏ`);
 const 𝓜𝖎𝖟𝖚ӄ𝖎ǟքք = require(`./helper`);
 const welbuts = require(`./welbuts`);
 const BanList = require(`./BanList`);
 const cleanRF = require(`./cleanRF`);
+const postDb = require(`./postDb`);
 const _𝔏𝔞𝔟_ = require(`./_𝔏𝔞𝔟_`);
 const ꜰᴜᴄᴋ = require(`./oShit`);
 const Kolor = require(`chalk`);
@@ -297,26 +298,27 @@ ${update.desc}`,
   });
   `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
   ӄʀǟӄɨռʐ.on(`group-participants-update`, async (update) => {
-    var GroupID = update.jid;
-    const GroupMemData = await ӄʀǟӄɨռʐ.groupMetadata(update.jid);
-    const GroupMemG = GroupMemData.participants.length;
-    const GroupMemBio = await ӄʀǟӄɨռʐ.getStatus(
-      update.participants[0],
-      MessageType.text
-    );
-    const MemNum = update.participants[0];
-    if (update.action == `add` && MemNum.includes(ӄʀǟӄɨռʐ.user.jid)) {
-      console.log(`⬡••••••••⬡    🍁 爪𝖎𝖟𝖚ӄ𝖎™ 🍁Added    ⬡••••••••⬡`);
-      const media = await ӄʀǟӄɨռʐ.prepareMessage(
-        GroupID,
-        { url: _𝔏𝔞𝔟_.MEE },
-        MessageType.image,
-        { mimetype: Mimetype.png }
+    try {
+      var GroupID = update.jid;
+      const GroupMemData = await ӄʀǟӄɨռʐ.groupMetadata(update.jid);
+      const GroupMemG = GroupMemData.participants.length;
+      const GroupMemBio = await ӄʀǟӄɨռʐ.getStatus(
+        update.participants[0],
+        MessageType.text
       );
-      await ӄʀǟӄɨռʐ.sendMessage(
-        GroupID,
-        {
-          contentText: `𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚👋🏻 ${Timers} ᴇᴠᴇʀʏᴏɴᴇ.
+      const MemNum = update.participants[0];
+      if (update.action == `add` && MemNum.includes(ӄʀǟӄɨռʐ.user.jid)) {
+        console.log(`⬡••••••••⬡    🍁 爪𝖎𝖟𝖚ӄ𝖎™ 🍁Added    ⬡••••••••⬡`);
+        const media = await ӄʀǟӄɨռʐ.prepareMessage(
+          GroupID,
+          { url: _𝔏𝔞𝔟_.MEE },
+          MessageType.image,
+          { mimetype: Mimetype.png }
+        );
+        await ӄʀǟӄɨռʐ.sendMessage(
+          GroupID,
+          {
+            contentText: `𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚👋🏻 ${Timers} ᴇᴠᴇʀʏᴏɴᴇ.
 ʙᴏᴛ ɪꜱ ʀᴇᴀᴅʏ ᴛᴏ ᴀꜱꜱɪꜱᴛ ʏᴏᴜ!
 ᴛʏᴘᴇ *${ᴋᴇɪ}help* ᴛᴏ ᴋɴᴏᴡ ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅꜱ!
 
@@ -324,71 +326,53 @@ ${update.desc}`,
 
 🔑𝐏𝐫𝐞𝐟𝐢𝐱: *${ᴋᴇɪ}*
 👑𝐎𝐰𝐧𝐞𝐫: _🐙KrakinzKon_`,
-          footerText: `(𝐜)𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭 \n${Clock}`,
-          buttons: [
-            {
-              buttonId: `${ᴋᴇɪ}help`,
-              buttonText: { displayText: `${ᴋᴇɪ}help` },
-              type: 1,
-            },
-            {
-              buttonId: `${ᴋᴇɪ}repo`,
-              buttonText: { displayText: `${ᴋᴇɪ}repo` },
-              type: 1,
-            },
-          ],
-          headerType: 4,
-          imageMessage: media.message.imageMessage,
-        },
-        MessageType.buttonsMessage
-      );
-      `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-      let serverFirstMsg = `👋🏻𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚\n🌱𝗣𝗿𝗲𝘀𝘀 𝗯𝗲𝗹𝗼𝘄 𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗦𝘁𝗮𝗿𝘁 𝘂𝘀𝗶𝗻𝗴 𝗠𝗶𝘇𝘂𝗸𝗶👇🏽‍`;
-      try {
-        𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄʀǟӄɨռʐ.getProfilePicture(GroupID);
-      } catch {
-        𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = `https://i.postimg.cc/6QmT53dR/Npp.png`;
+            footerText: `(𝐜)𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭 \n${Clock}`,
+            buttons: [
+              {
+                buttonId: `${ᴋᴇɪ}help`,
+                buttonText: { displayText: `${ᴋᴇɪ}help` },
+                type: 1,
+              },
+              {
+                buttonId: `${ᴋᴇɪ}repo`,
+                buttonText: { displayText: `${ᴋᴇɪ}repo` },
+                type: 1,
+              },
+            ],
+            headerType: 4,
+            imageMessage: media.message.imageMessage,
+          },
+          MessageType.buttonsMessage
+        );
+        return await PostDataBase.setWelcome(
+          GroupID,
+          `𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚👋🏻 ⬡ ʙᴏᴛ ɪꜱ ʀᴇᴀᴅʏ ᴛᴏ ᴀꜱꜱɪꜱᴛ ʏᴏᴜ!
+
+──────────────★
+🔑 𝐏𝐫𝐞𝐟𝐢𝐱: *${ᴋᴇɪ}*
+🐙 𝐆𝐑𝐎𝐔𝐏: _${_𝔏𝔞𝔟_.HASH}_
+🍾 𝐆𝐞𝐭 𝐌𝐢𝐳𝐮𝐤𝐢: _${ᴋᴇɪ}request_
+
+🌱𝗣𝗿𝗲𝘀𝘀 𝗯𝗲𝗹𝗼𝘄 𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗦𝘁𝗮𝗿𝘁 𝘂𝘀𝗶𝗻𝗴 𝗠𝗶𝘇𝘂𝗸𝗶👇🏽‍ `
+        );
       }
-      PostDataBase.findOne(
-        {
-          serverID: GroupID,
-        },
-        async (err, server) => {
-          if (err) console.log(err);
-          if (!server) {
-            var newServer = new PostDataBase({
-              serverID: GroupID,
-              message: serverFirstMsg,
-            });
-            newServer.save().catch((ℓαвєяяσя) => console.log(ℓαвєяяσя));
-          } else {
-            server.message = serverFirstMsg;
-          }
-          server.save().catch((ℓαвєяяσя) => console.log(ℓαвєяяσя));
-        }
-      );
-    }
-    `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-    if (update.action === `add` && !MemNum.includes(ӄʀǟӄɨռʐ.user.jid)) {
-      PostDataBase.findOne(
-        {
-          serverID: GroupID,
-        },
-        async (err, server) => {
-          if (err) console.log(err);
-          if (!server) return;
-          return welbuts
-            .welbuts(
-              ӄʀǟӄɨռʐ,
-              GroupID,
-              GroupMemData,
-              GroupMemG,
-              GroupMemBio,
-              MemNum
-            )
-            .catch((ℓαвєяяσя) => console.log(ℓαвєяяσя));
-        }
-      );
+      if (update.action === `add` && !MemNum.includes(ӄʀǟӄɨռʐ.user.jid)) {
+        var enable = await postDb.checkSettings(GroupID, `setwelcome`);
+        if (enable === false || enable === `OFF`) return;
+        return welbuts
+          .welbuts(
+            ӄʀǟӄɨռʐ,
+            GroupID,
+            GroupMemData,
+            GroupMemG,
+            GroupMemBio,
+            MemNum
+          )
+          .catch((ℓαвєяяσя) => console.log(ℓαвєяяσя));
+      }
+      if (update.action === `remove`) return;
+    } catch (ℓαвєяяσя) {
+      console.log(ℓαвєяяσя);
     }
   });
   `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;

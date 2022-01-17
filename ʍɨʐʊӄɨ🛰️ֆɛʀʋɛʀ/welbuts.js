@@ -4,9 +4,12 @@
 `🍁`;
 `🍁`;
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
-const PostDataBase = require(`../ʍɨʐʊӄɨ🍃goose/greeting.js`);
 const Downloader = require(`nodejs-file-downloader`);
+const vers = require(`../package.json`);
+const postDb = require(`./postDb`);
 const _𝔏𝔞𝔟_ = require(`./_𝔏𝔞𝔟_`);
+const ꜰᴜᴄᴋ = require(`./oShit`);
+require(`python-format-js`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 const speed = require(`performance-now`);
@@ -19,8 +22,6 @@ const cleanRF = require(`./cleanRF`);
 date.format(now, `ddd, MMM DD YYYY`);
 const pattern = date.compile(`ddd, MMM DD YYYY`);
 const Clock = date.format(now, pattern);
-const ꜰᴜᴄᴋ = require(`./oShit`);
-require(`python-format-js`);
 const fs = require(`fs`);
 var ᴛᴡᴇʟ = [
   `just joined the server!`,
@@ -36,6 +37,25 @@ var ᴛᴡᴇʟ = [
   `just slid into the server!`,
   `has spawned in the server!`,
   `just showed up in the server!`,
+];
+var ᴛʙʏᴇ = [
+  `ᴡɪʟʟ ʙᴇ ᴍɪꜱꜱᴇᴅ.`,
+  `ᴊᴜꜱᴛ ᴡᴇɴᴛ ᴏꜰꜰʟɪɴᴇ.`,
+  `ʜᴀꜱ ʟᴇꜰᴛ ᴛʜᴇ ʟᴏʙʙʏ.`,
+  `ʜᴀꜱ ʟᴇꜰᴛ ᴛʜᴇ ᴄʟᴀɴ.`,
+  `ʜᴀꜱ ʟᴇꜰᴛ ᴛʜᴇ ɢᴀᴍᴇ.`,
+  `ʜᴀꜱ ꜰʟᴇᴅ ᴛʜᴇ ᴀʀᴇᴀ.`,
+  `ɴɪᴄᴇ ᴋɴᴏᴡɪɴɢ ʏᴀ!`,
+  `ɪᴛ ᴡᴀꜱ ᴀ ꜰᴜɴ ᴛɪᴍᴇ.`,
+  `ɪ ᴅᴏɴᴜᴛ ᴡᴀɴᴛ ᴛᴏ ꜱᴀʏ ɢᴏᴏᴅʙʏᴇ.`,
+  `ᴡᴇ ʜᴏᴘᴇ ᴛᴏ ꜱᴇᴇ ʏᴏᴜ ᴀɢᴀɪɴ ꜱᴏᴏɴ.`,
+  `ʏᴏᴜ'ʀᴇ ʟᴇᴀᴠɪɴɢ, ? ʏᴀʀᴇ ʏᴀʀᴇ ᴅᴀᴢᴇ.`,
+  `ɢᴏᴏᴅʙʏᴇ ! ɢᴜᴇꜱꜱ ᴡʜᴏ'ꜱ ɢᴏɴɴᴀ ᴍɪꜱꜱ ʏᴏᴜ :')`,
+  `ɢᴏᴏᴅʙʏᴇ ! ɪᴛ'ꜱ ɢᴏɴɴᴀ ʙᴇ ʟᴏɴᴇʟʏ ᴡɪᴛʜᴏᴜᴛ ʏᴀ.`,
+  `ᴘʟᴇᴀꜱᴇ ᴅᴏɴ'ᴛ ʟᴇᴀᴠᴇ ᴍᴇ ᴀʟᴏɴᴇ ɪɴ ᴛʜɪꜱ ᴘʟᴀᴄᴇ!`,
+  `ɢᴏᴏᴅ ʟᴜᴄᴋ ꜰɪɴᴅɪɴɢ ʙᴇᴛᴛᴇʀ ꜱʜɪᴛ-ᴘᴏꜱᴛᴇʀꜱ ᴛʜᴀɴ ᴜꜱ!`,
+  `ʏᴏᴜ ᴋɴᴏᴡ ᴡᴇ'ʀᴇ ɢᴏɴɴᴀ ᴍɪꜱꜱ ʏᴏᴜ . ʀɪɢʜᴛ? ʀɪɢʜᴛ? ʀɪɢʜᴛ?`,
+  `ᴄᴏɴɢʀᴀᴛᴜʟᴀᴛɪᴏɴꜱ, ! ʏᴏᴜ'ʀᴇ ᴏꜰꜰɪᴄɪᴀʟʟʏ ꜰʀᴇᴇ ᴏꜰ ᴛʜɪꜱ ᴍᴇꜱꜱ.`,
 ];
 var Flower = [`💐`, `🌻`, `🌼`, `🌹`, `🌸`, `💮`];
 var People = [`👮`, `👳`, `🤱`, `🤰`, `💂`];
@@ -55,79 +75,73 @@ exports.welbuts = async (
   MemNum
 ) => {
   try {
+    var ꜰᴇᴛᴄʜᴇᴅᴡᴇʟᴄᴏᴍᴇ = await postDb.getMessage(GroupID, `setwelcome`);
     const ᴡᴇʟᴄᴏᴍᴇʀᴛxᴛ = ᴛᴡᴇʟ[Math.floor(Math.random() * ᴛᴡᴇʟ.length)];
     const FlowerWel = Flower[Math.floor(Math.random() * Flower.length)];
     const PeopleWel = People[Math.floor(Math.random() * People.length)];
     var ᴘᴘᴡᴇʟᴄᴏᴍᴇ = MemNum.substring(0, MemNum.length - 15);
+
     try {
-      𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄʀǟӄɨռʐ.getProfilePicture(GroupID);
+      𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄʀǟӄɨռʐ.getProfilePicture(`${MemNum.split(`@`)[0]}@c.us`);
     } catch {
       𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = `https://i.postimg.cc/6QmT53dR/Npp.png`;
     }
-    PostDataBase.findOne(
+
+    const downloader = await new Downloader({
+      url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗,
+      directory: `./ʍɨʐʊӄɨ🗑️ȶɛʍք`,
+      fileName: `${ᴘᴘᴡᴇʟᴄᴏᴍᴇ}_${FlowerWel}.png`,
+      cloneFiles: false,
+    });
+    await downloader.download();
+    let content = fs.readFileSync(
+      `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${ᴘᴘᴡᴇʟᴄᴏᴍᴇ}_${FlowerWel}.png`
+    );
+    const media = await ӄʀǟӄɨռʐ.prepareMessage(
+      GroupID,
+      content,
+      MessageType.image,
       {
-        serverID: GroupID,
-      },
-      async (err, server) => {
-        if (err) console.log(err);
-        if (!server) return;
-        const downloader = await new Downloader({
-          url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗,
-          directory: `./ʍɨʐʊӄɨ🗑️ȶɛʍք`,
-          fileName: `${ᴘᴘᴡᴇʟᴄᴏᴍᴇ}_${FlowerWel}.png`,
-          cloneFiles: false,
-        });
-        await downloader.download();
-        let content = fs.readFileSync(
-          `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${ᴘᴘᴡᴇʟᴄᴏᴍᴇ}_${FlowerWel}.png`
-        );
-        const media = await ӄʀǟӄɨռʐ.prepareMessage(
-          GroupID,
-          content,
-          MessageType.image,
-          {
-            mimetype: Mimetype.png,
-          }
-        );
-        await ӄʀǟӄɨռʐ
-          .sendMessage(
-            GroupID,
-            {
-              contentText: `@${ᴘᴘᴡᴇʟᴄᴏᴍᴇ}, ${ᴡᴇʟᴄᴏᴍᴇʀᴛxᴛ}
-
-╔══════════◆➤
-║${FlowerWel}𝗕𝗶𝗼: ${GroupMemBio.status}
-║${PeopleWel}𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${GroupMemG}
-║🎪𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${GroupMemData.subject}
-╚════════════╝
-
-╔══════════◆➤
-║${server.message}`,
-              footerText: `(𝐜)𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭 \n${Clock}`,
-              buttons: [
-                {
-                  buttonId: `${ᴋᴇɪ}help`,
-                  buttonText: { displayText: `${ᴋᴇɪ}help` },
-                  type: 1,
-                },
-                {
-                  buttonId: `${ᴋᴇɪ}repo`,
-                  buttonText: { displayText: `${ᴋᴇɪ}repo` },
-                  type: 1,
-                },
-              ],
-              headerType: 4,
-              imageMessage: media.message.imageMessage,
-            },
-            MessageType.buttonsMessage,
-            {
-              contextInfo: { mentionedJid: [MemNum] },
-            }
-          )
-          .then(cleanRF.cleanRF(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/${ᴘᴘᴡᴇʟᴄᴏᴍᴇ}_${FlowerWel}.png`))
-          .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
+        mimetype: Mimetype.png,
       }
     );
+    await ӄʀǟӄɨռʐ
+      .sendMessage(
+        GroupID,
+        {
+          contentText: `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 •@${ᴘᴘᴡᴇʟᴄᴏᴍᴇ} 
+${ᴡᴇʟᴄᴏᴍᴇʀᴛxᴛ}
+
+★━━━━━━━◆➤
+${FlowerWel}𝗕𝗶𝗼: ${GroupMemBio.status}
+${PeopleWel}𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${GroupMemG}
+🎪𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${GroupMemData.subject}
+★━━━━━━━━◆➤
+
+${ꜰᴇᴛᴄʜᴇᴅᴡᴇʟᴄᴏᴍᴇ.message}`,
+          footerText: `(𝐜)𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭 \n${Clock}`,
+          buttons: [
+            {
+              buttonId: `${ᴋᴇɪ}help`,
+              buttonText: { displayText: `${ᴋᴇɪ}help` },
+              type: 1,
+            },
+            {
+              buttonId: `${ᴋᴇɪ}repo`,
+              buttonText: { displayText: `${ᴋᴇɪ}repo` },
+              type: 1,
+            },
+          ],
+          headerType: 4,
+          imageMessage: media.message.imageMessage,
+        },
+        MessageType.buttonsMessage,
+        {
+          contextInfo: { mentionedJid: [MemNum] },
+        }
+      )
+      .then(cleanRF.cleanRF(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/${ᴘᴘᴡᴇʟᴄᴏᴍᴇ}_${FlowerWel}.png`))
+      .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
   } catch (ℓαвєяяσя) {
     await ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
     console.log(

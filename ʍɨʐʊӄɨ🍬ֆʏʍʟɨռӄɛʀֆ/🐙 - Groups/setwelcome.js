@@ -6,7 +6,7 @@
 const Mizuki_Buttons = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Mizuki_Buttons`);
 const Mizuki_Static = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Mizuki_Static`);
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
-const PostDataBase = require(`../../ʍɨʐʊӄɨ🍃goose/greeting`);
+const PostDataBase = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/postDb`);
 const _𝔏𝔞𝔟_ = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/_𝔏𝔞𝔟_`);
 const ꜰᴜᴄᴋ = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/oShit`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
@@ -24,7 +24,8 @@ var newScpt = scriptName.slice(0, -3).toLowerCase();
 `🍁`;
 module.exports = {
   name: newScpt,
-  𝓜𝓮𝓮6ʍօʀɛ: `*${ᴋᴇɪ}setwelcome* <message>`,
+  𝓜𝓮𝓮6ʍօʀɛ: `*${ᴋᴇɪ}setwelcome* (message)/(off)/(delete)
+🍁Do note, the setwelcome option is still enabled after you use the delete option.`,
   async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
     try {
       var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
@@ -71,7 +72,6 @@ module.exports = {
           _𝔏𝔞𝔟_.ɴᴏᴛᴀᴅᴍɪɴ
         );
       }
-      `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
       if (𝓜𝖎𝖟𝖚ӄ𝖎.isGroup && !𝓜𝖎𝖟𝖚ӄ𝖎.isBotGroupAdmin && !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderDev) {
         return Mizuki_Buttons.MTB(
           ӄʀǟӄɨռʐ,
@@ -83,7 +83,6 @@ module.exports = {
           _𝔏𝔞𝔟_.ɴᴏᴛᴍᴇᴀᴅᴍɪɴ
         );
       }
-      `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
       if (!𝓜𝖎𝖟𝖚ӄ𝖎.isGroup) {
         return Mizuki_Buttons.MTB(
           ӄʀǟӄɨռʐ,
@@ -97,81 +96,155 @@ module.exports = {
 `
         );
       }
-      `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-      if (Needs.length === 0) {
-        var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(𝓜𝖎𝖟𝖚ӄ𝖎.commandName);
-        var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
-          𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ === undefined ? `Null` : 𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ;
-        const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
-        return ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
-          ӄʀǟӄɨռʐ,
-          chat,
-          𝓜𝖎𝖟𝖚ӄ𝖎,
-          ꜱᴇɴᴅᴇʀɪᴅ,
-          ꜱᴇɴᴅᴇʀeceived,
-          𝓜𝖎𝖟𝖚ӄ𝖎.commandName,
-          ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
+
+      var ꜰᴇᴛᴄʜᴇᴅᴍꜱɢ = await PostDataBase.getMessage(
+        𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+        `setwelcome`
+      );
+      if (Needs.length == 0) {
+        var enabled = await PostDataBase.checkSettings(
+          𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+          `setwelcome`
         );
+        if (enabled === false || enabled === undefined) {
+          return Mizuki_Static.MGS(
+            ӄʀǟӄɨռʐ,
+            chat,
+            𝓜𝖎𝖟𝖚ӄ𝖎,
+            `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived},
+
+
+────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+🍁 Mizuki's Welcome Message needs to be added first!
+🍁 use *${ᴋᴇɪ}setwelcome* (message)`,
+            `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
+          );
+        } else if (enabled === `OFF`) {
+          return Mizuki_Static.MGS(
+            ӄʀǟӄɨռʐ,
+            chat,
+            𝓜𝖎𝖟𝖚ӄ𝖎,
+            `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived},
+
+
+────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+🍁 Mizuki Currently not greeting new members!
+`,
+            `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
+          );
+        } else {
+          return Mizuki_Static.MGS(
+            ӄʀǟӄɨռʐ,
+            chat,
+            𝓜𝖎𝖟𝖚ӄ𝖎,
+            `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived},
+
+
+────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+🍁 Mizuki Currently greeting new members!
+`,
+            `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
+          );
+        }
       } else {
-        `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-        let text = 𝓜𝖎𝖟𝖚ӄ𝖎.body.replace(
+        if (Needs[0] === `OFF` || Needs[0] === `off` || Needs[0] === `Off`) {
+          switched = `OFF`;
+          await PostDataBase.changeSettings(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, switched);
+          return Mizuki_Static.MGS(
+            ӄʀǟӄɨռʐ,
+            chat,
+            𝓜𝖎𝖟𝖚ӄ𝖎,
+            `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived},
+
+
+────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+🍁 Mizuki's Welcome Message has Been Disabled!`,
+            `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
+          );
+        }
+        if (Needs[0] === `ON` || Needs[0] === `on` || Needs[0] === `On`) {
+          switched = `ON`;
+          await PostDataBase.changeSettings(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, switched);
+          return Mizuki_Static.MGS(
+            ӄʀǟӄɨռʐ,
+            chat,
+            𝓜𝖎𝖟𝖚ӄ𝖎,
+            `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived},
+
+
+────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+🍁 Mizuki's Welcome Message has Been Enabled!
+`,
+            `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
+          );
+        }
+        if (Needs[0] === `delete`) {
+          var ꜰᴇᴛᴄʜᴇᴅᴍꜱɢ = await PostDataBase.deleteMessage(
+            𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+            `setwelcome`
+          );
+          if (ꜰᴇᴛᴄʜᴇᴅᴍꜱɢ === false || ꜰᴇᴛᴄʜᴇᴅᴍꜱɢ === undefined) {
+            return Mizuki_Static.MGS(
+              ӄʀǟӄɨռʐ,
+              chat,
+              𝓜𝖎𝖟𝖚ӄ𝖎,
+              `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived},
+
+
+────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+🍁 Mizuki's Welcome Message needs to be added first!
+🍁 use *${ᴋᴇɪ}setwelcome* (message)`,
+              `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
+            );
+          }
+          return Mizuki_Static.MGS(
+            ӄʀǟӄɨռʐ,
+            chat,
+            𝓜𝖎𝖟𝖚ӄ𝖎,
+            `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived},
+
+
+────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+🍁 Mizuki's Welcome Message has Been Removed!`,
+            `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
+          );
+        }
+        text = 𝓜𝖎𝖟𝖚ӄ𝖎.body.replace(
           𝓜𝖎𝖟𝖚ӄ𝖎.body[0] + 𝓜𝖎𝖟𝖚ӄ𝖎.commandName + ` `,
           ``
         );
-        try {
-          𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄʀǟӄɨռʐ.getProfilePicture(𝓜𝖎𝖟𝖚ӄ𝖎.chatId);
-        } catch {
-          𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = `https://i.postimg.cc/6QmT53dR/Npp.png`;
+
+        if (ꜰᴇᴛᴄʜᴇᴅᴍꜱɢ === false || ꜰᴇᴛᴄʜᴇᴅᴍꜱɢ === undefined) {
+          await PostDataBase.setWelcome(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, text);
+          return Mizuki_Static.MGS(
+            ӄʀǟӄɨռʐ,
+            chat,
+            𝓜𝖎𝖟𝖚ӄ𝖎,
+            `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived},
+
+
+────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+🍁 Mizuki's Welcome Message has Been Updated!
+`,
+            `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
+          );
+        } else {
+          await PostDataBase.deleteMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, `setwelcome`);
+          await PostDataBase.setWelcome(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, text);
+          return Mizuki_Static.MGS(
+            ӄʀǟӄɨռʐ,
+            chat,
+            𝓜𝖎𝖟𝖚ӄ𝖎,
+            `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived},
+
+
+────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+🍁 Mizuki's Welcome Message has Been Updated!
+`,
+            `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
+          );
         }
-        PostDataBase.findOne(
-          {
-            serverID: 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-          },
-          async (err, server) => {
-            if (err) console.log(err);
-            if (!server) {
-              var newServer = new PostDataBase({
-                serverID: 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                message: text,
-              });
-              newServer
-                .save()
-                .catch((ℓαвєяяσя) =>
-                  ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
-                );
-              return Mizuki_Static.MGS(
-                ӄʀǟӄɨռʐ,
-                chat,
-                𝓜𝖎𝖟𝖚ӄ𝖎,
-                `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived}, 
-
-╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-║🍁 _Mizuki Welcome Message has Been Added!_
-╚════════════╝`,
-                `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
-              );
-            } else {
-              server.message = text;
-              Mizuki_Static.MGS(
-                ӄʀǟӄɨռʐ,
-                chat,
-                𝓜𝖎𝖟𝖚ӄ𝖎,
-                `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived}, 
-
-
-╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-║🍁 _Mizuki Welcome Message has Been Updated!_
-╚════════════╝`,
-                `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
-              );
-            }
-            return server
-              .save()
-              .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
-          }
-        );
       }
-      `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
     } catch (ℓαвєяяσя) {
       ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
       console.log(ℓαвєяяσя);
