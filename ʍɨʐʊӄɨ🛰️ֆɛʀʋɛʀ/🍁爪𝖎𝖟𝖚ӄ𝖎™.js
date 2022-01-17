@@ -4,20 +4,19 @@
 `⬡🍁⬡`;
 `⬡🍁⬡`;
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
+const PostDataBase = require(`../ʍɨʐʊӄɨ🍃goose/greeting.js`);
+const LinkList = require(`../ʍɨʐʊӄɨ🍃goose/antilink`);
 const Mizuki_Buttons = require(`./Mizuki_Buttons`);
 const Mizuki_Static = require(`./Mizuki_Static`);
 const 𝓜𝖎𝖟𝖚ӄ𝖎ֆʏռօք = require(`./𝓜𝖎𝖟𝖚ӄ𝖎ᴢᴇɴ`);
 const moment = require(`moment-timezone`);
-const PostDataBase = require(`./postDb`);
 const AutoKrakz = require(`./𝓜𝖎𝖟𝖚ӄ𝖎ɢɪᴛ`);
 const speed = require(`performance-now`);
-const LinkList = require(`./LinkList`);
 const { ʄǟռƈʏ } = require(`../ʄǟռƈʏ`);
 const 𝓜𝖎𝖟𝖚ӄ𝖎ǟքք = require(`./helper`);
 const welbuts = require(`./welbuts`);
 const BanList = require(`./BanList`);
 const cleanRF = require(`./cleanRF`);
-const postDb = require(`./postDb`);
 const _𝔏𝔞𝔟_ = require(`./_𝔏𝔞𝔟_`);
 const ꜰᴜᴄᴋ = require(`./oShit`);
 const Kolor = require(`chalk`);
@@ -65,13 +64,7 @@ if (time2 < `05:00:00`) {
   var Timers = `𝐍𝐢𝐠𝐡𝐭💤`;
 }
 const version = vers.vers;
-`⬡🍁⬡`;
-`⬡🍁⬡`;
-`⬡🍁⬡===========================================================================⬡  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-`(𝐜)𝐌𝐢𝐳𝐮𝐤𝐢 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!`;
-`⬡🍁⬡===========================================================================⬡  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-`⬡🍁⬡`;
-`⬡🍁⬡`;
+`⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
 var ӄʀǟӄɨռʐ = 𝓜𝖎𝖟𝖚ӄ𝖎ֆʏռօք.WhatsApp;
 ӄʀǟӄɨռʐ.logger.level = `error`;
 async function 爪𝖎𝖟𝖚ӄ𝖎() {
@@ -108,13 +101,7 @@ async function 爪𝖎𝖟𝖚ӄ𝖎() {
     );
     process.exit(0);
   }
-  `⬡🍁⬡`;
-  `⬡🍁⬡`;
-  `⬡🍁⬡===========================================================================⬡  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-  `(𝐜)𝐌𝐢𝐳𝐮𝐤𝐢 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!`;
-  `⬡🍁⬡===========================================================================⬡  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-  `⬡🍁⬡`;
-  `⬡🍁⬡`;
+  `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
   ӄʀǟӄɨռʐ.on(`connecting`, async () => {
     console.log(
       Kolor.bgYellowBright.black(
@@ -127,13 +114,7 @@ async function 爪𝖎𝖟𝖚ӄ𝖎() {
       )
     );
   });
-  `⬡🍁⬡`;
-  `⬡🍁⬡`;
-  `⬡🍁⬡===========================================================================⬡  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-  `(𝐜)𝐌𝐢𝐳𝐮𝐤𝐢 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!`;
-  `⬡🍁⬡===========================================================================⬡  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-  `⬡🍁⬡`;
-  `⬡🍁⬡`;
+  `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
   ӄʀǟӄɨռʐ.on(`open`, async () => {
     console.log(Kolor.bgYellowBright.black(`🍁INFO ⬰ 🍁爪𝖎𝖟𝖚ӄ𝖎™ Connected✔️`));
     console.log(
@@ -145,6 +126,20 @@ async function 爪𝖎𝖟𝖚ӄ𝖎() {
       Kolor.bgGreenBright.black(`🍁INFO ⬰ 𝐋𝐢𝐧𝐤𝐢𝐧𝐠 𝐌𝐢𝐳𝐮𝐤𝐢 𝐖𝐢𝐭𝐡 𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞...✔️`)
     );
     try {
+      const ʍɨʐʊӄɨgoose = require("mongoose");
+      const Kolor = require(`chalk`);
+      ʍɨʐʊӄɨgoose
+        .connect(_𝔏𝔞𝔟_.MizukiMdb, {
+          useNewUrlParser: true,
+          useUnifiedTopology: true,
+          useCreateIndex: true,
+          useFindAndModify: false,
+        })
+        .then(console.log(Kolor.bgGreenBright.black(`ʍɨʐʊӄɨgoose Connected`)))
+        .catch((err) => {
+          console.log(Kolor.bgRedBright.black(`ʍɨʐʊӄɨgoose Error: \n${err}`));
+          process.exit(1);
+        });
       await 𝓜𝖎𝖟𝖚ӄ𝖎sql.authenticate();
       await 𝓜𝖎𝖟𝖚ӄ𝖎sql.validate();
       await 𝓜𝖎𝖟𝖚ӄ𝖎sql
@@ -183,13 +178,7 @@ async function 爪𝖎𝖟𝖚ӄ𝖎() {
       MessageType.text
     );
   });
-  `⬡🍁⬡`;
-  `⬡🍁⬡`;
-  `⬡🍁⬡===========================================================================⬡  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-  `(𝐜)𝐌𝐢𝐳𝐮𝐤𝐢 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!`;
-  `⬡🍁⬡===========================================================================⬡  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-  `⬡🍁⬡`;
-  `⬡🍁⬡`;
+  `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
   await ӄʀǟӄɨռʐ.connect().then(ʄǟռƈʏ(ꜱɪᴛʀᴀᴘ, commandUsage));
   ӄʀǟӄɨռʐ.on(`group-update`, async (update) => {
     try {
@@ -306,35 +295,28 @@ ${update.desc}`,
       }
     } catch {}
   });
-  `⬡🍁⬡`;
-  `⬡🍁⬡`;
-  `⬡🍁⬡===========================================================================⬡  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-  `(𝐜)𝐌𝐢𝐳𝐮𝐤𝐢 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!`;
-  `⬡🍁⬡===========================================================================⬡  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-  `⬡🍁⬡`;
-  `⬡🍁⬡`;
+  `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
   ӄʀǟӄɨռʐ.on(`group-participants-update`, async (update) => {
-    try {
-      var GroupID = update.jid;
-      const GroupMemData = await ӄʀǟӄɨռʐ.groupMetadata(update.jid);
-      const GroupMemG = GroupMemData.participants.length;
-      const GroupMemBio = await ӄʀǟӄɨռʐ.getStatus(
-        update.participants[0],
-        MessageType.text
+    var GroupID = update.jid;
+    const GroupMemData = await ӄʀǟӄɨռʐ.groupMetadata(update.jid);
+    const GroupMemG = GroupMemData.participants.length;
+    const GroupMemBio = await ӄʀǟӄɨռʐ.getStatus(
+      update.participants[0],
+      MessageType.text
+    );
+    const MemNum = update.participants[0];
+    if (update.action == `add` && MemNum.includes(ӄʀǟӄɨռʐ.user.jid)) {
+      console.log(`⬡••••••••⬡    🍁 爪𝖎𝖟𝖚ӄ𝖎™ 🍁Added    ⬡••••••••⬡`);
+      const media = await ӄʀǟӄɨռʐ.prepareMessage(
+        GroupID,
+        { url: _𝔏𝔞𝔟_.MEE },
+        MessageType.image,
+        { mimetype: Mimetype.png }
       );
-      const MemNum = update.participants[0];
-      if (update.action == `add` && MemNum.includes(ӄʀǟӄɨռʐ.user.jid)) {
-        console.log(`⬡••••••••⬡    🍁 爪𝖎𝖟𝖚ӄ𝖎™ 🍁Added    ⬡••••••••⬡`);
-        const media = await ӄʀǟӄɨռʐ.prepareMessage(
-          GroupID,
-          { url: _𝔏𝔞𝔟_.MEE },
-          MessageType.image,
-          { mimetype: Mimetype.png }
-        );
-        await ӄʀǟӄɨռʐ.sendMessage(
-          GroupID,
-          {
-            contentText: `𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚👋🏻 ${Timers} ᴇᴠᴇʀʏᴏɴᴇ.
+      await ӄʀǟӄɨռʐ.sendMessage(
+        GroupID,
+        {
+          contentText: `𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚👋🏻 ${Timers} ᴇᴠᴇʀʏᴏɴᴇ.
 ʙᴏᴛ ɪꜱ ʀᴇᴀᴅʏ ᴛᴏ ᴀꜱꜱɪꜱᴛ ʏᴏᴜ!
 ᴛʏᴘᴇ *${ᴋᴇɪ}help* ᴛᴏ ᴋɴᴏᴡ ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅꜱ!
 
@@ -342,62 +324,74 @@ ${update.desc}`,
 
 🔑𝐏𝐫𝐞𝐟𝐢𝐱: *${ᴋᴇɪ}*
 👑𝐎𝐰𝐧𝐞𝐫: _🐙KrakinzKon_`,
-            footerText: `(𝐜)𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭 \n${Clock}`,
-            buttons: [
-              {
-                buttonId: `${ᴋᴇɪ}help`,
-                buttonText: { displayText: `${ᴋᴇɪ}help` },
-                type: 1,
-              },
-              {
-                buttonId: `${ᴋᴇɪ}repo`,
-                buttonText: { displayText: `${ᴋᴇɪ}repo` },
-                type: 1,
-              },
-            ],
-            headerType: 4,
-            imageMessage: media.message.imageMessage,
-          },
-          MessageType.buttonsMessage
-        );
-        return await PostDataBase.setWelcome(
-          GroupID,
-          `𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚👋🏻 ⬡ ʙᴏᴛ ɪꜱ ʀᴇᴀᴅʏ ᴛᴏ ᴀꜱꜱɪꜱᴛ ʏᴏᴜ!
-
-──────────────★
-🔑 𝐏𝐫𝐞𝐟𝐢𝐱: *${ᴋᴇɪ}*
-🐙 𝐆𝐑𝐎𝐔𝐏: _${_𝔏𝔞𝔟_.HASH}_
-🍾 𝐆𝐞𝐭 𝐌𝐢𝐳𝐮𝐤𝐢: _${ᴋᴇɪ}request_
-
-🌱𝗣𝗿𝗲𝘀𝘀 𝗯𝗲𝗹𝗼𝘄 𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗦𝘁𝗮𝗿𝘁 𝘂𝘀𝗶𝗻𝗴 𝗠𝗶𝘇𝘂𝗸𝗶👇🏽‍ `
-        );
+          footerText: `(𝐜)𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭 \n${Clock}`,
+          buttons: [
+            {
+              buttonId: `${ᴋᴇɪ}help`,
+              buttonText: { displayText: `${ᴋᴇɪ}help` },
+              type: 1,
+            },
+            {
+              buttonId: `${ᴋᴇɪ}repo`,
+              buttonText: { displayText: `${ᴋᴇɪ}repo` },
+              type: 1,
+            },
+          ],
+          headerType: 4,
+          imageMessage: media.message.imageMessage,
+        },
+        MessageType.buttonsMessage
+      );
+      `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
+      let serverFirstMsg = `👋🏻𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚\n🌱𝗣𝗿𝗲𝘀𝘀 𝗯𝗲𝗹𝗼𝘄 𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗦𝘁𝗮𝗿𝘁 𝘂𝘀𝗶𝗻𝗴 𝗠𝗶𝘇𝘂𝗸𝗶👇🏽‍`;
+      try {
+        𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄʀǟӄɨռʐ.getProfilePicture(GroupID);
+      } catch {
+        𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = `https://i.postimg.cc/6QmT53dR/Npp.png`;
       }
-      if (update.action === `add` && !MemNum.includes(ӄʀǟӄɨռʐ.user.jid)) {
-        var enable = await postDb.checkSettings(GroupID, `setwelcome`);
-        if (enable === false || enable === `OFF`) return;
-        return welbuts
-          .welbuts(
-            ӄʀǟӄɨռʐ,
-            GroupID,
-            GroupMemData,
-            GroupMemG,
-            GroupMemBio,
-            MemNum
-          )
-          .catch((ℓαвєяяσя) => console.log(ℓαвєяяσя));
-      }
-      if (update.action === `remove`) return;
-    } catch (ℓαвєяяσя) {
-      console.log(ℓαвєяяσя);
+      PostDataBase.findOne(
+        {
+          serverID: GroupID,
+        },
+        async (err, server) => {
+          if (err) console.log(err);
+          if (!server) {
+            var newServer = new PostDataBase({
+              serverID: GroupID,
+              message: serverFirstMsg,
+            });
+            newServer.save().catch((ℓαвєяяσя) => console.log(ℓαвєяяσя));
+          } else {
+            server.message = serverFirstMsg;
+          }
+          server.save().catch((ℓαвєяяσя) => console.log(ℓαвєяяσя));
+        }
+      );
+    }
+    `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
+    if (update.action === `add` && !MemNum.includes(ӄʀǟӄɨռʐ.user.jid)) {
+      PostDataBase.findOne(
+        {
+          serverID: GroupID,
+        },
+        async (err, server) => {
+          if (err) console.log(err);
+          if (!server) return;
+          return welbuts
+            .welbuts(
+              ӄʀǟӄɨռʐ,
+              GroupID,
+              GroupMemData,
+              GroupMemG,
+              GroupMemBio,
+              MemNum
+            )
+            .catch((ℓαвєяяσя) => console.log(ℓαвєяяσя));
+        }
+      );
     }
   });
-  `⬡🍁⬡`;
-  `⬡🍁⬡`;
-  `⬡🍁⬡===========================================================================⬡  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-  `(𝐜)𝐌𝐢𝐳𝐮𝐤𝐢 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!`;
-  `⬡🍁⬡===========================================================================⬡  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-  `⬡🍁⬡`;
-  `⬡🍁⬡`;
+  `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
   ӄʀǟӄɨռʐ.on(`chat-update`, async (chat) => {
     if (!chat.hasNewMessage) return;
     if (!chat.messages) return;
@@ -407,17 +401,11 @@ ${update.desc}`,
       ? await ӄʀǟӄɨռʐ.groupMetadata(chat.key.remoteJid)
       : ``;
     var 𝓜𝖎𝖟𝖚ӄ𝖎 = 𝓜𝖎𝖟𝖚ӄ𝖎ǟքք.resolve(chat, ӄʀǟӄɨռʐ, groupMetadata);
-    `⬡🍁⬡`;
-    `⬡🍁⬡`;
-    `⬡🍁⬡===========================================================================⬡  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-    `(𝐜)𝐌𝐢𝐳𝐮𝐤𝐢 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!`;
-    `⬡🍁⬡===========================================================================⬡  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-    `⬡🍁⬡`;
-    `⬡🍁⬡`;
+    `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
     if (𝓜𝖎𝖟𝖚ӄ𝖎.isGroup) {
       var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
       var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
-      const UsersMizuki = require("./xp");
+      const UsersMizuki = require(`../ʍɨʐʊӄɨ🍃goose/experience.js`);
       let xpAdd = Math.ceil(Math.random() * 10);
       let messageAdd = +1;
       `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
@@ -536,38 +524,42 @@ ${update.desc}`,
       !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderGroupAdmin &&
       𝓜𝖎𝖟𝖚ӄ𝖎.body.includes(`https://`)
     ) {
-      var CheckLinks = await LinkList.getLinklistUser(
-        𝓜𝖎𝖟𝖚ӄ𝖎.sender,
-        𝓜𝖎𝖟𝖚ӄ𝖎.chatId
+      LinkList.findOne(
+        {
+          serverID: 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+        },
+        async (err, server) => {
+          if (err) console.log(err);
+          if (!server) return;
+          if (server.value == "ON") {
+            const REMOVE = chat.key.fromMe
+              ? ӄʀǟӄɨռʐ.user.jid
+              : 𝓜𝖎𝖟𝖚ӄ𝖎.isGroup
+              ? chat.participant
+              : chat.key.remoteJid;
+            await Mizuki_Buttons.MIB(
+              ӄʀǟӄɨռʐ,
+              chat,
+              𝓜𝖎𝖟𝖚ӄ𝖎,
+              `
+╔═══════  📍𝐀𝐧𝐭𝐢𝐥𝐢𝐧𝐤-𝐀𝐜𝐭𝐢𝐯𝐞
+║⚠️ You Sent Some Type Of link.
+║⚠️ You Will Be Kicked!
+╚════════════╝`,
+              `./ʍɨʐʊӄɨ☣️ƈօʀɛ/Mizuki_Antilink.png`
+            );
+            setTimeout(async (error) => {
+              if (error) console.log(error);
+              await ӄʀǟӄɨռʐ
+                .groupRemove(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, [REMOVE])
+                .catch((ℓαвєяяσя) =>
+                  ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
+                );
+            }, 6000);
+            return;
+          }
+        }
       );
-      const REMOVE = chat.key.fromMe
-        ? ӄʀǟӄɨռʐ.user.jid
-        : 𝓜𝖎𝖟𝖚ӄ𝖎.isGroup
-        ? chat.participant
-        : chat.key.remoteJid;
-      console.log(
-        Kolor.bgGreenBright.black(
-          `🍁INFO ⬰ Antilink ${CheckLinks} in > ${𝓜𝖎𝖟𝖚ӄ𝖎.groupName}.`
-        )
-      );
-      `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-      if (CheckLinks === true) {
-        await Mizuki_Buttons.MIB(
-          ӄʀǟӄɨռʐ,
-          chat,
-          𝓜𝖎𝖟𝖚ӄ𝖎,
-          `────★ 📍𝐀𝐧𝐭𝐢𝐥𝐢𝐧𝐤-𝐀𝐜𝐭𝐢𝐯𝐞
-🎪 𝐆𝐫𝐨𝐮𝐩: ${𝓜𝖎𝖟𝖚ӄ𝖎.groupName}
-⚠️ ᴛʜɪꜱ ɢʀᴏᴜᴘ ᴡɪʟʟ ᴋɪᴄᴋ ᴀɴʏ ɴᴏɴ-ᴀᴅᴍɪɴ ᴍᴇᴍʙᴇʀ ᴡʜᴏ ᴡɪʟʟ ꜱᴇɴᴅ ʟɪɴᴋ.`,
-          `./ʍɨʐʊӄɨ☣️ƈօʀɛ/Mizuki_Antilink.png`
-        );
-        setTimeout(async (error) => {
-          if (error) console.log(error);
-          await ӄʀǟӄɨռʐ
-            .groupRemove(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, [REMOVE])
-            .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
-        }, 6000);
-      }
     }
     `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
     if (𝓜𝖎𝖟𝖚ӄ𝖎.isCmd) {
@@ -632,9 +624,11 @@ ${update.desc}`,
             }
             `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
             console.log(
-              `⬡============⬡🍁爪𝖎𝖟𝖚ӄ𝖎™ Verified File: ` +
-                𝓜𝖎𝖟𝖚ӄ𝖎.commandName +
-                `✔️⬡============⬡`
+              Kolor.bgRedBright.black(
+                `⬡============⬡🍁爪𝖎𝖟𝖚ӄ𝖎™ Verified File: ` +
+                  𝓜𝖎𝖟𝖚ӄ𝖎.commandName +
+                  `✔️⬡============⬡`
+              )
             );
             console.log(chat);
             console.log(

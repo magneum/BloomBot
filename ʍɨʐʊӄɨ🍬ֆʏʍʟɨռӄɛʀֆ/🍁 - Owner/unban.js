@@ -56,7 +56,7 @@ module.exports = {
             𝓜𝖎𝖟𝖚ӄ𝖎,
             `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 •@${ꜱᴇɴᴅᴇʀeceived} (Owner)
 
-────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 👌🏽 ${ʀᴍʙᴀɴ.substring(0, ʀᴍʙᴀɴ.indexOf(`@`))}
 🔓𝐒𝐭𝐚𝐭𝐮𝐬: Was Not Banned!
 `,
@@ -71,7 +71,7 @@ module.exports = {
           𝓜𝖎𝖟𝖚ӄ𝖎,
           `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 •@${ꜱᴇɴᴅᴇʀeceived} (Owner)
 
-────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 👌🏽‍𝐔𝐧𝐁𝐚𝐧𝐧𝐞𝐝: ${ʀᴍʙᴀɴ.substring(0, ʀᴍʙᴀɴ.indexOf(`@`))}
 🛡️ꜱᴜᴅᴏ ᴜɴʙᴀɴ ᴀᴄᴄᴇᴘᴛᴇᴅ: _removed from BanList for all the chats._
 `,
@@ -90,7 +90,7 @@ module.exports = {
               𝓜𝖎𝖟𝖚ӄ𝖎,
               `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 •@${ꜱᴇɴᴅᴇʀeceived} (Owner)
 
-────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 👌🏽 ${ʀᴍʙᴀɴ.substring(0, ʀᴍʙᴀɴ.indexOf(`@`))}
 🔓𝐒𝐭𝐚𝐭𝐮𝐬: Was Not Banned!
 `,
@@ -105,7 +105,7 @@ module.exports = {
             𝓜𝖎𝖟𝖚ӄ𝖎,
             `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 •@${ꜱᴇɴᴅᴇʀeceived} (Owner)
 
-────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 👌🏽‍𝐔𝐧𝐁𝐚𝐧𝐧𝐞𝐝: ${ʀᴍʙᴀɴ.substring(0, ʀᴍʙᴀɴ.indexOf(`@`))}
 🛡️ꜱᴜᴅᴏ ᴜɴʙᴀɴ ᴀᴄᴄᴇᴘᴛᴇᴅ: _has been removed from the BanList for this group._
 `,
@@ -120,7 +120,7 @@ module.exports = {
               𝓜𝖎𝖟𝖚ӄ𝖎,
               `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 •@${ꜱᴇɴᴅᴇʀeceived} (Owner)
 
-────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 👌🏽 ${ʀᴍʙᴀɴ.substring(0, ʀᴍʙᴀɴ.indexOf(`@`))}
 🔓𝐒𝐭𝐚𝐭𝐮𝐬: Was Not Banned!
 `,
@@ -135,7 +135,7 @@ module.exports = {
             𝓜𝖎𝖟𝖚ӄ𝖎,
             `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 •@${ꜱᴇɴᴅᴇʀeceived} (Owner)
 
-────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 👌🏽 𝐔𝐧𝐁𝐚𝐧𝐧𝐞𝐝: ${ʀᴍʙᴀɴ.substring(0, ʀᴍʙᴀɴ.indexOf(`@`))}
 🛡️ꜱᴜᴅᴏ ᴜɴʙᴀɴ ᴀᴄᴄᴇᴘᴛᴇᴅ: _has been removed from the BanList for this group._
 `,
@@ -149,7 +149,7 @@ module.exports = {
               𝓜𝖎𝖟𝖚ӄ𝖎,
               `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 •@${ꜱᴇɴᴅᴇʀeceived} (Owner)
 
-────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 👌🏽 ${𝓜𝖎𝖟𝖚ӄ𝖎.groupName}
 🔓𝐒𝐭𝐚𝐭𝐮𝐬: Was Not Banned!
 `,
@@ -164,7 +164,7 @@ module.exports = {
             𝓜𝖎𝖟𝖚ӄ𝖎,
             `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 •@${ꜱᴇɴᴅᴇʀeceived} (Owner)
 
-────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 👌🏽𝐆𝐫𝐨𝐮𝐩 𝐔𝐧𝐁𝐚𝐧𝐧𝐞𝐝: ${𝓜𝖎𝖟𝖚ӄ𝖎.groupName}
 🛡️ꜱᴜᴅᴏ ᴜɴʙᴀɴ ᴀᴄᴄᴇᴘᴛᴇᴅ: _Bot has been enabled for the group_
 `,

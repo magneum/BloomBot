@@ -6,7 +6,7 @@
 const Mizuki_Buttons = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Mizuki_Buttons`);
 const Mizuki_Static = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Mizuki_Static`);
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
-const PostDataBase = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/postDb`);
+const PostDataBase = require(`../../ʍɨʐʊӄɨ🍃goose/greeting`);
 const ꜰᴜᴄᴋ = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/oShit`);
 const _𝔏𝔞𝔟_ = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/_𝔏𝔞𝔟_`);
 const fs = require(`fs`);
@@ -99,17 +99,40 @@ module.exports = {
               },
               caption: `(𝐜)𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭 
 
-────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 *•──[ Message From Owner  ]──•*
 ${Needs.join(` `)}`,
             }
           )
           .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
-
-        await PostDataBase.deleteMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, `setwelcome`);
-        await ӄʀǟӄɨռʐ
-          .groupLeave(𝓜𝖎𝖟𝖚ӄ𝖎.chatId)
-          .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
+        PostDataBase.findOne(
+          {
+            serverID: 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+          },
+          async (err, server) => {
+            if (err) console.log(err);
+            if (!server) {
+              await ӄʀǟӄɨռʐ
+                .groupLeave(𝓜𝖎𝖟𝖚ӄ𝖎.chatId)
+                .catch((ℓαвєяяσя) =>
+                  ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
+                );
+              return;
+            } else {
+              server
+                .delete()
+                .catch((ℓαвєяяσя) =>
+                  ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
+                );
+              await ӄʀǟӄɨռʐ
+                .groupLeave(𝓜𝖎𝖟𝖚ӄ𝖎.chatId)
+                .catch((ℓαвєяяσя) =>
+                  ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
+                );
+              return;
+            }
+          }
+        );
       }
     } catch (ℓαвєяяσя) {
       ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);

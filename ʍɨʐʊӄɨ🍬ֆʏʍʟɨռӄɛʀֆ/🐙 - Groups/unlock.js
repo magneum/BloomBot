@@ -124,7 +124,7 @@ module.exports = {
         `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived},
 
 
-────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 Chat permissions changed to  *all group members*${ᴋᴇɪ}`
       );
     } catch (ℓαвєяяσя) {

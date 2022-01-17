@@ -138,7 +138,7 @@ module.exports = {
               contentText: `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 •@${personreceived}, 
 
 
-────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 📜𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${groupData.subject}
 💞𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${groupData.participants.length}
 🍰 𝐆𝐫𝐨𝐮𝐩: https://chat.whatsapp.com/${code}
@@ -174,7 +174,7 @@ module.exports = {
               contentText: `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived}, 
 
 
-────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 📜𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${groupData.subject}
 💞𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${groupData.participants.length}
 🍰 𝐆𝐫𝐨𝐮𝐩: https://chat.whatsapp.com/${code}

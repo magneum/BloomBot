@@ -66,6 +66,7 @@ module.exports = {
             mimetype: Mimetype.png,
             caption: `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived},
 
+╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 *Here is the display image!*`,
             thumbnail: null,
           }

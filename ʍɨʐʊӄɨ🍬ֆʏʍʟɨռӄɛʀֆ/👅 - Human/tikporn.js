@@ -124,7 +124,7 @@ _Server Didn't Send Any Response_`
             {
               contentText: `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived},
 
-────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 📜𝐓𝐢𝐭𝐥𝐞: ${Raw.title}
 👀𝐕𝐢𝐞𝐰𝐬: ${Raw.views}
 🔸𝐓𝐚𝐠𝐬: ${Raw.tags}
@@ -205,7 +205,7 @@ _Server Didn't Send Any Response_`
             {
               contentText: `👋🏽𝐌𝐨𝐬𝐡𝐢-𝐌𝐨𝐬𝐡𝐢, @${ꜱᴇɴᴅᴇʀeceived},
 
-────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 📜𝐓𝐢𝐭𝐥𝐞: ${Raw.title}
 👀𝐕𝐢𝐞𝐰𝐬: ${Raw.views}
 🔸𝐓𝐚𝐠𝐬: ${Raw.tags}
