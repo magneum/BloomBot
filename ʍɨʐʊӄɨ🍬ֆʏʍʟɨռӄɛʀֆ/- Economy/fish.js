@@ -102,12 +102,7 @@ module.exports = {
               userEco.money = userEco.money + worth;
               userEco.fish = userEco.fish + 1;
               userEco.fishdone = Date.now();
-              userEco
-                .save()
-                .catch((ℓαвєяяσя) =>
-                  ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
-                );
-              return Mizuki_Static.MGS(
+              Mizuki_Static.MGS(
                 ӄʀǟӄɨռʐ,
                 chat,
                 𝓜𝖎𝖟𝖚ӄ𝖎,
@@ -123,6 +118,9 @@ module.exports = {
                 `./ʍɨʐʊӄɨ☣️ƈօʀɛ/MizukiFIshing.mp4`
               );
             }
+            userEco
+              .save()
+              .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
           }
         }
       );
