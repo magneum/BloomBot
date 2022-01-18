@@ -32,29 +32,26 @@ module.exports = {
       var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
       const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
       const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
-      `⬡  ⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-
-      try {
-        const jsoncool = JSON.parse(
-          fs.readFileSync(`./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`)
-        );
-        await jsoncool.push(𝓜𝖎𝖟𝖚ӄ𝖎.sender + "_" + 𝓜𝖎𝖟𝖚ӄ𝖎.commandName);
-        await fs.writeFileSync(
+      `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
+      const jsoncool = JSON.parse(
+        fs.readFileSync(`./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`)
+      );
+      await jsoncool.push(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
+      fs.writeFileSync(
+        `./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`,
+        JSON.stringify(jsoncool)
+      );
+      console.log("ID Added " + 𝓜𝖎𝖟𝖚ӄ𝖎.sender);
+      setTimeout(async (error) => {
+        if (error) console.log(error);
+        await jsoncool.splice(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
+        fs.writeFileSync(
           `./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`,
           JSON.stringify(jsoncool)
         );
-        await setTimeout(async (error) => {
-          if (error) console.log(error);
-          await jsoncool.splice(𝓜𝖎𝖟𝖚ӄ𝖎.sender + 𝓜𝖎𝖟𝖚ӄ𝖎.chatId);
-          await fs.writeFileSync(
-            `./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`,
-            JSON.stringify(jsoncool)
-          );
-        }, 20000);
-      } catch (ℓαвєяяσя) {
-        console.log(ℓαвєяяσя);
-      }
-
+        console.log("ID Removed " + 𝓜𝖎𝖟𝖚ӄ𝖎.sender);
+      }, 20000);
+      `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
       timestampe = speed();
       latensie = speed() - timestampe;
       try {
@@ -62,20 +59,14 @@ module.exports = {
           ӄʀǟӄɨռʐ,
           chat,
           𝓜𝖎𝖟𝖚ӄ𝖎,
-          `@${ꜱᴇɴᴅᴇʀeceived}, 
-*ʏᴏᴜʀ ᴀꜱꜱɪꜱꜱᴛᴀɴᴛ ꜰᴏʀ ᴍᴀᴋɪɴɢ ʙᴏʀɪɴɢ ᴡʜᴀᴛꜱᴀᴘᴘ ᴀ ʙᴇᴛᴛᴇʀ ᴀᴅᴠᴀɴᴄᴇ ᴀᴘᴘ!*
+          `@${ꜱᴇɴᴅᴇʀeceived}, ʏᴏᴜʀ ᴀꜱꜱɪꜱꜱᴛᴀɴᴛ ꜰᴏʀ ᴍᴀᴋɪɴɢ ʙᴏʀɪɴɢ ᴡʜᴀᴛꜱᴀᴘᴘ ᴀ ʙᴇᴛᴛᴇʀ ᴀᴅᴠᴀɴᴄᴇ ᴀᴘᴘ!
 
 
-────★ 𝐆𝐞𝐭 𝐌𝐢𝐳𝐮𝐤𝐢 𝐅𝐫𝐨𝐦
-
-*🎊 ɢɪᴛʜᴜʙ:* https://github.com/Krakinz
-*🎊 ɢɪᴛʜᴜʙ:* https://github.com/Krakinz/Mizuki
-
-
-────★ 𝐒𝐮𝐩𝐩𝐨𝐫𝐭
-
-*🔥 ɢʀᴏᴜᴘ:* ${_𝔏𝔞𝔟_.HASH}
-`,
+╔════◇🌿𝐓𝐨𝐩𝐢𝐜: 𝐆𝐞𝐭 𝐌𝐢𝐳𝐮𝐤𝐢 𝐅𝐫𝐨𝐦
+║💻 𝐆𝐢𝐭𝐇𝐮𝐛: https://github.com/Krakinz
+║📓 𝐑𝐞𝐩𝐨: https://github.com/Krakinz/Mizuki
+║⚙️ 𝐄𝐧𝐠𝐢𝐧𝐞: ⋊ʀʏᴏ
+╚════════════╝`,
           _𝔏𝔞𝔟_.MEE
         );
       } catch (ℓαвєяяσя) {

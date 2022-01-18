@@ -32,23 +32,26 @@ module.exports = {
       var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
       const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
       const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
-      `⬡  ⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
+      `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
       const jsoncool = JSON.parse(
         fs.readFileSync(`./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`)
       );
-      await jsoncool.push(𝓜𝖎𝖟𝖚ӄ𝖎.sender + `_` + 𝓜𝖎𝖟𝖚ӄ𝖎.commandName);
+      await jsoncool.push(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
       fs.writeFileSync(
         `./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`,
         JSON.stringify(jsoncool)
       );
+      console.log("ID Added " + 𝓜𝖎𝖟𝖚ӄ𝖎.sender);
       setTimeout(async (error) => {
         if (error) console.log(error);
-        await jsoncool.splice(𝓜𝖎𝖟𝖚ӄ𝖎.sender + `_` + 𝓜𝖎𝖟𝖚ӄ𝖎.commandName);
+        await jsoncool.splice(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
         fs.writeFileSync(
           `./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`,
           JSON.stringify(jsoncool)
         );
-      }, 10000);
+        console.log("ID Removed " + 𝓜𝖎𝖟𝖚ӄ𝖎.sender);
+      }, 20000);
+      `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
       if (!𝓜𝖎𝖟𝖚ӄ𝖎.fromMe && !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderDev) {
         return Mizuki_Buttons.MIB(
           ӄʀǟӄɨռʐ,
