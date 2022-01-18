@@ -68,7 +68,6 @@ module.exports = {
               did: 𝓜𝖎𝖟𝖚ӄ𝖎.sender,
               serverID: 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               money: 0,
-              fish: 0,
               fishdone: Date.now(),
               fishtimeout: 1800000,
             });
@@ -118,7 +117,6 @@ module.exports = {
                 Math.floor(Math.random() * (fishh.max - fishh.min + 1)) +
                 fishh.min;
               userEco.money = userEco.money + worth;
-              userEco.fish = userEco.fish + 1;
               userEco.fishdone = Date.now();
               Mizuki_Static.MGS(
                 ӄʀǟӄɨռʐ,
