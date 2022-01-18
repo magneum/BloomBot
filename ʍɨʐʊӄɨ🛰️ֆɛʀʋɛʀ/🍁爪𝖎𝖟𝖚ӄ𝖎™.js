@@ -453,9 +453,7 @@ ${update.desc}`,
               const avatar = await Canvas.loadImage(𝕻𝕻𝖑𝖊𝖙𝖊𝖗);
               ctx.drawImage(avatar, 25, 50, 200, 200);
               // Assembled the picture
-              const out = fs.createWriteStream(
-                `${𝓜𝖎𝖟𝖚ӄ𝖎.sender}_Rank_${Date.now()}_.png`
-              );
+              const out = fs.createWriteStream(`Rank_${Date.now()}_.png`);
               const stream = canvas.createPNGStream();
               stream.pipe(out);
               out.on(`finish`, async (err) => {
@@ -482,9 +480,7 @@ ${update.desc}`,
                       ӄʀǟӄɨռʐ.sendMessage(
                         𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
                         {
-                          url: fs.readFileSync(
-                            `${𝓜𝖎𝖟𝖚ӄ𝖎.sender}_Rank_${Date.now()}_.png`
-                          ),
+                          url: fs.readFileSync(`Rank_${Date.now()}_.png`),
                         },
                         MessageType.image,
                         {
@@ -517,9 +513,7 @@ ${update.desc}`,
                       ӄʀǟӄɨռʐ.sendMessage(
                         𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
                         {
-                          url: fs.readFileSync(
-                            `${𝓜𝖎𝖟𝖚ӄ𝖎.sender}_Rank_${Date.now()}_.png`
-                          ),
+                          url: fs.readFileSync(`Rank_${Date.now()}_.png`),
                         },
                         MessageType.image,
                         {

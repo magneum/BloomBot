@@ -1,4 +1,4 @@
-const fishes = require("../../JSON/fishes.json");
+const fishes = require("../JSON/fishes.json");
 let db = require("quick.db");
 const ms = require("parse-ms");
 const { randomRange } = require("../../functions");
