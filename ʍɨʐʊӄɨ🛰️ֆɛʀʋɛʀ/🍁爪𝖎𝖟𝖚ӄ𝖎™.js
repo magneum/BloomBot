@@ -403,29 +403,20 @@ ${update.desc}`,
               ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
               ctx.strokeStyle = "#74037b";
               ctx.strokeRect(0, 0, canvas.width, canvas.height);
-              // Display text
               ctx.font = "50px TheHeartOfEverythingDemo";
               ctx.fillStyle = "#1a1a1a";
               ctx.fillText(`Congrats You Ranked Up!`, 230, 120);
-              // Show White Bar
-              // Open a shape
               ctx.beginPath();
               ctx.lineWidth = 2;
               ctx.fillStyle = color;
-              // Draw a starting point to our shape
               ctx.moveTo(220, 135);
-              // Draw lines to our shape
               ctx.lineTo(690, 135);
-              // Drawing rounded lines to our shape
               ctx.quadraticCurveTo(710, 135, 710, 152.5);
               ctx.quadraticCurveTo(710, 170, 690, 170);
               ctx.lineTo(220, 170);
               ctx.lineTo(220, 135);
-              // Fill the shape with the color defined above
               ctx.fill();
-              // Close a shape
               ctx.closePath();
-              // Red bar
               ctx.beginPath();
               ctx.arc(130, 155, 110, 0, Math.PI * 2, true);
               ctx.lineWidth = 2;
@@ -442,18 +433,15 @@ ${update.desc}`,
                 162
               );
               ctx.closePath();
-              // Arc
               ctx.beginPath();
-              // Draw a circle
               ctx.arc(125, 150, 100, 0, Math.PI * 2, true);
               ctx.closePath();
-              // say that what is not in the circle will be cut which will give a rounded pp
               ctx.clip();
-              // Show member pp
               const avatar = await Canvas.loadImage(𝕻𝕻𝖑𝖊𝖙𝖊𝖗);
               ctx.drawImage(avatar, 25, 50, 200, 200);
-              // Assembled the picture
-              const out = fs.createWriteStream(`Rank_${Date.now()}_.png`);
+              const out = fs.createWriteStream(
+                `./ʍɨʐʊӄɨ🗑️ȶɛʍք/Rank_${Date.now()}_.png`
+              );
               const stream = canvas.createPNGStream();
               stream.pipe(out);
               out.on(`finish`, async (err) => {
@@ -483,7 +471,9 @@ ${update.desc}`,
                       ӄʀǟӄɨռʐ.sendMessage(
                         𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
                         {
-                          url: fs.readFileSync(`Rank_${Date.now()}_.png`),
+                          url: fs.readFileSync(
+                            `./ʍɨʐʊӄɨ🗑️ȶɛʍք/Rank_${Date.now()}_.png`
+                          ),
                         },
                         MessageType.image,
                         {
@@ -510,13 +500,18 @@ ${update.desc}`,
 🎉𝐊𝐞𝐞𝐩 𝐔𝐩!`,
                         }
                       );
+                      return await cleanRF.cleanRF(
+                        `./ʍɨʐʊӄɨ🗑️ȶɛʍք/Rank_${Date.now()}_.png`
+                      );
                     } else {
                       var Ran = Math.floor(Math.random() * (100 - 50 + 1)) + 50;
                       userEco.money = userEco.money + Ran;
                       ӄʀǟӄɨռʐ.sendMessage(
                         𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
                         {
-                          url: fs.readFileSync(`Rank_${Date.now()}_.png`),
+                          url: fs.readFileSync(
+                            `./ʍɨʐʊӄɨ🗑️ȶɛʍք/Rank_${Date.now()}_.png`
+                          ),
                         },
                         MessageType.image,
                         {
@@ -548,6 +543,9 @@ ${update.desc}`,
                         .catch((ℓαвєяяσя) =>
                           ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
                         );
+                      return await cleanRF.cleanRF(
+                        `./ʍɨʐʊӄɨ🗑️ȶɛʍք/Rank_${Date.now()}_.png`
+                      );
                     }
                   }
                 );
