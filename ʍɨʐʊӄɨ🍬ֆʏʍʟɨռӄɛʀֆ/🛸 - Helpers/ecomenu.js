@@ -57,6 +57,7 @@ module.exports = {
 ║• ${ᴋᴇɪ}fish: _Catch A Fish From A Vast Ocean_
 ║• ${ᴋᴇɪ}daily: _Gives You 200 per day_
 ║• ${ᴋᴇɪ}work: _Work to Earn Money_
+║• ${ᴋᴇɪ}balance: _Shows Current Balance (reply/own)_
 ╚════════════╝`;
       return Mizuki_Buttons.MIB(
         ӄʀǟӄɨռʐ,
