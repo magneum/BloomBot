@@ -4,6 +4,5 @@ var UsersMizukiSchema = new mongoose.Schema({
   serverID: String,
   xp: Number,
   level: Number,
-  message: Number,
 });
 module.exports = mongoose.model("Experience", UsersMizukiSchema);

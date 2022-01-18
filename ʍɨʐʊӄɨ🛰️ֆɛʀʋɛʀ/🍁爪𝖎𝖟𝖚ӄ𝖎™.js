@@ -374,6 +374,9 @@ ${update.desc}`,
         },
         async (err, users) => {
           console.log(users);
+          var randomMC = require("random-material-color");
+          const Canvas = require("canvas");
+          var color = randomMC.getColor();
           if (err) console.log(err);
           if (!users) {
             var newUsers = new UsersMizuki({
@@ -381,103 +384,177 @@ ${update.desc}`,
               serverID: 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               xp: xpAdd,
               level: 0,
-              message: messageAdd,
             });
             newUsers.save().catch((ℓαвєяяσя) => console.log(ℓαвєяяσя));
           } else {
+            var currentLvl = users.level;
+            var currentXP = users.xp;
+            let nxtlvl = 200 * Math.pow(2, currentLvl);
+            var xpleft = nxtlvl - currentXP;
             users.xp = users.xp + xpAdd;
-            users.message = users.message + messageAdd;
-            let nxtlvl = 200 * Math.pow(2, users.level);
-            var xpleft = nxtlvl - users.xp;
             if (users.xp >= nxtlvl) {
-              users.level = users.level + 1;
+              users.level = currentLvl + 1;
               const Economy = require(`../ʍɨʐʊӄɨ🍃goose/economy`);
-              Economy.findOne(
-                {
-                  did: 𝓜𝖎𝖟𝖚ӄ𝖎.sender,
-                },
-                async (err, userEco) => {
-                  console.log(userEco);
-                  if (err) console.log(err);
-                  if (!userEco) {
-                    var newUser = new Economy({
-                      did: 𝓜𝖎𝖟𝖚ӄ𝖎.sender,
-                      money: 200,
-                      daily: 0,
-                      timeout: 0,
-                    });
-                    newUser
-                      .save()
-                      .catch((ℓαвєяяσя) =>
-                        ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
-                      );
-                    ӄʀǟӄɨռʐ.sendMessage(
-                      𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                      { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 },
-                      MessageType.image,
-                      {
-                        mimetype: Mimetype.jpeg,
-                        quoted: chat,
-                        contextInfo: { mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender] },
-                        caption: `✨𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬 @${𝓜𝖎𝖟𝖚ӄ𝖎.sender.substring(
-                          0,
-                          𝓜𝖎𝖟𝖚ӄ𝖎.sender.length - 15
-                        )}, 𝐘𝐨𝐮 𝐇𝐚𝐯𝐞 𝐋𝐞𝐯𝐞𝐥𝐞𝐝 𝐔𝐏!
-
-╔════◇ 📜𝐑𝐚𝐧𝐤 𝐂𝐚𝐫𝐝
-║🍇 𝗖𝘂𝗿𝗿𝗲𝗻𝘁 𝗫𝗣: _${users.xp}_
-║🍈 𝗖𝘂𝗿𝗲𝗻𝘁 𝗟𝗲𝘃𝗲𝗹: _${users.level}_
-║🍊 𝗡𝗲𝘅𝘁 𝗟𝗲𝘃𝗲𝗹 𝗶𝗻: _${xpleft}_
-╚════════════╝
-
-╔════◇🌿𝐓𝐨𝐩𝐢𝐜: 🍁𝐌𝐢𝐳𝐮𝐤𝐢𝐁𝐚𝐧𝐤
-║🛵 𝐑𝐚𝐧𝐤 𝐁𝐨𝐧𝐮𝐬: 200       
-║🪙 𝗧𝗼𝘁𝗮𝗹 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _Just Opened Your Account!_
-╚════════════╝
-
-🎉𝐓𝐡𝐞 𝐌𝐨𝐫𝐞 𝐘𝐨𝐮 𝐓𝐚𝐥𝐤, 𝐓𝐡𝐞 𝐌𝐨𝐫𝐞 𝐗𝐏+𝐆𝐎𝐋𝐃 𝐘𝐨𝐮 𝐆𝐚𝐢𝐧. 
-🎉𝐊𝐞𝐞𝐩 𝐔𝐩!`,
-                      }
-                    );
-                  } else {
-                    var Ran = Math.floor(Math.random() * (100 - 50 + 1)) + 50;
-                    userEco.money = userEco.money + Ran;
-                    ӄʀǟӄɨռʐ.sendMessage(
-                      𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                      { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 },
-                      MessageType.image,
-                      {
-                        mimetype: Mimetype.jpeg,
-                        quoted: chat,
-                        contextInfo: { mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender] },
-                        caption: `✨𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬 @${𝓜𝖎𝖟𝖚ӄ𝖎.sender.substring(
-                          0,
-                          𝓜𝖎𝖟𝖚ӄ𝖎.sender.length - 15
-                        )}, 𝐘𝐨𝐮 𝐇𝐚𝐯𝐞 𝐋𝐞𝐯𝐞𝐥𝐞𝐝 𝐔𝐏!
-
-╔════◇ 📜𝐑𝐚𝐧𝐤 𝐂𝐚𝐫𝐝
-║🍇 𝗖𝘂𝗿𝗿𝗲𝗻𝘁 𝗫𝗣: _${users.xp}_
-║🍈 𝗖𝘂𝗿𝗲𝗻𝘁 𝗟𝗲𝘃𝗲𝗹: _${users.level}_
-║🍊 𝗡𝗲𝘅𝘁 𝗟𝗲𝘃𝗲𝗹 𝗶𝗻: _${xpleft}_
-╚════════════╝
-
-╔════◇🌿𝐓𝐨𝐩𝐢𝐜: 🍁𝐌𝐢𝐳𝐮𝐤𝐢𝐁𝐚𝐧𝐤
-║🛵 𝐑𝐚𝐧𝐤 𝐁𝐨𝐧𝐮𝐬: ${Ran} 
-║🪙 𝗧𝗼𝘁𝗮𝗹 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: ${userEco.money}
-╚════════════╝
-
-🎉𝐓𝐡𝐞 𝐌𝐨𝐫𝐞 𝐘𝐨𝐮 𝐓𝐚𝐥𝐤, 𝐓𝐡𝐞 𝐌𝐨𝐫𝐞 𝐗𝐏+𝐆𝐎𝐋𝐃 𝐘𝐨𝐮 𝐆𝐚𝐢𝐧. 
-🎉𝐊𝐞𝐞𝐩 𝐔𝐩!`,
-                      }
-                    );
-                    userEco
-                      .save()
-                      .catch((ℓαвєяяσя) =>
-                        ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
-                      );
-                  }
-                }
+              const canvas = Canvas.createCanvas(800, 300);
+              const ctx = canvas.getContext("2d");
+              const background = await Canvas.loadImage(
+                "https://cdn.discordapp.com/attachments/779452147326648360/803042845363011624/unknown.png"
               );
+              ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
+              ctx.strokeStyle = "#74037b";
+              ctx.strokeRect(0, 0, canvas.width, canvas.height);
+              // Display text
+              ctx.font = "50px TheHeartOfEverythingDemo";
+              ctx.fillStyle = "#1a1a1a";
+              ctx.fillText(`Congrats You Ranked Up!`, 230, 120);
+              // Show White Bar
+              // Open a shape
+              ctx.beginPath();
+              ctx.lineWidth = 2;
+              ctx.fillStyle = color;
+              // Draw a starting point to our shape
+              ctx.moveTo(220, 135);
+              // Draw lines to our shape
+              ctx.lineTo(690, 135);
+              // Drawing rounded lines to our shape
+              ctx.quadraticCurveTo(710, 135, 710, 152.5);
+              ctx.quadraticCurveTo(710, 170, 690, 170);
+              ctx.lineTo(220, 170);
+              ctx.lineTo(220, 135);
+              // Fill the shape with the color defined above
+              ctx.fill();
+              // Close a shape
+              ctx.closePath();
+              // Red bar
+              ctx.beginPath();
+              ctx.arc(130, 155, 110, 0, Math.PI * 2, true);
+              ctx.lineWidth = 2;
+              ctx.fillStyle = color;
+              ctx.moveTo(220, 135);
+              ctx.lineTo(220, 170);
+              ctx.lineTo(220, 135);
+              ctx.fill();
+              ctx.font = "30px LobsterTwo-Bold";
+              ctx.fillStyle = "#000";
+              ctx.fillText(
+                `${currentXP}/${xpleft} | Level: ${currentLvl}`,
+                250,
+                162
+              );
+              ctx.closePath();
+              // Arc
+              ctx.beginPath();
+              // Draw a circle
+              ctx.arc(125, 150, 100, 0, Math.PI * 2, true);
+              ctx.closePath();
+              // say that what is not in the circle will be cut which will give a rounded pp
+              ctx.clip();
+              // Show member pp
+              const avatar = await Canvas.loadImage(𝕻𝕻𝖑𝖊𝖙𝖊𝖗);
+              ctx.drawImage(avatar, 25, 50, 200, 200);
+              // Assembled the picture
+              const out = fs.createWriteStream(
+                `${𝓜𝖎𝖟𝖚ӄ𝖎.sender}_Rank_${Date.now()}_.png`
+              );
+              const stream = canvas.createPNGStream();
+              stream.pipe(out);
+              out.on(`finish`, async (err) => {
+                if (err) console.log(err);
+                Economy.findOne(
+                  {
+                    did: 𝓜𝖎𝖟𝖚ӄ𝖎.sender,
+                  },
+                  async (err, userEco) => {
+                    console.log(userEco);
+                    if (err) console.log(err);
+                    if (!userEco) {
+                      var newUser = new Economy({
+                        did: 𝓜𝖎𝖟𝖚ӄ𝖎.sender,
+                        money: 200,
+                        daily: 0,
+                        timeout: 0,
+                      });
+                      newUser
+                        .save()
+                        .catch((ℓαвєяяσя) =>
+                          ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
+                        );
+                      ӄʀǟӄɨռʐ.sendMessage(
+                        𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                        {
+                          url: fs.readFileSync(
+                            `${𝓜𝖎𝖟𝖚ӄ𝖎.sender}_Rank_${Date.now()}_.png`
+                          ),
+                        },
+                        MessageType.image,
+                        {
+                          mimetype: Mimetype.png,
+                          quoted: chat,
+                          contextInfo: { mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender] },
+                          caption: `✨𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬 @${𝓜𝖎𝖟𝖚ӄ𝖎.sender.substring(
+                            0,
+                            𝓜𝖎𝖟𝖚ӄ𝖎.sender.length - 15
+                          )}, 𝐘𝐨𝐮 𝐇𝐚𝐯𝐞 𝐋𝐞𝐯𝐞𝐥𝐞𝐝 𝐔𝐏!
+
+╔════◇ 📜𝐑𝐚𝐧𝐤 𝐂𝐚𝐫𝐝
+║🍇 𝗖𝘂𝗿𝗿𝗲𝗻𝘁_𝗫𝗣: ${currentXP}
+║🍈 𝗖𝘂𝗿𝗲𝗻𝘁_𝗟𝗲𝘃𝗲𝗹: ${currentLvl}
+║🍊 𝗡𝗲𝘅𝘁_𝗟𝗲𝘃𝗲𝗹: ${xpleft}xp
+╚════════════╝
+
+╔════◇🌿𝐓𝐨𝐩𝐢𝐜: 🍁𝐌𝐢𝐳𝐮𝐤𝐢𝐁𝐚𝐧𝐤
+║🛵 𝐑𝐚𝐧𝐤_𝐁𝐨𝐧𝐮𝐬: 200       
+║🪙 𝗧𝗼𝘁𝗮𝗹_𝗕𝗮𝗹𝗮𝗻𝗰𝗲: Just Opened Your Account!
+╚════════════╝
+
+🎉𝐓𝐡𝐞 𝐌𝐨𝐫𝐞 𝐘𝐨𝐮 𝐓𝐚𝐥𝐤, 𝐓𝐡𝐞 𝐌𝐨𝐫𝐞 𝐗𝐏+𝐆𝐎𝐋𝐃 𝐘𝐨𝐮 𝐆𝐚𝐢𝐧. 
+🎉𝐊𝐞𝐞𝐩 𝐔𝐩!`,
+                        }
+                      );
+                    } else {
+                      var Ran = Math.floor(Math.random() * (100 - 50 + 1)) + 50;
+                      userEco.money = userEco.money + Ran;
+                      ӄʀǟӄɨռʐ.sendMessage(
+                        𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                        {
+                          url: fs.readFileSync(
+                            `${𝓜𝖎𝖟𝖚ӄ𝖎.sender}_Rank_${Date.now()}_.png`
+                          ),
+                        },
+                        MessageType.image,
+                        {
+                          mimetype: Mimetype.png,
+                          quoted: chat,
+                          contextInfo: { mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender] },
+                          caption: `✨𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬 @${𝓜𝖎𝖟𝖚ӄ𝖎.sender.substring(
+                            0,
+                            𝓜𝖎𝖟𝖚ӄ𝖎.sender.length - 15
+                          )}, 𝐘𝐨𝐮 𝐇𝐚𝐯𝐞 𝐋𝐞𝐯𝐞𝐥𝐞𝐝 𝐔𝐏!
+
+╔════◇ 📜𝐑𝐚𝐧𝐤 𝐂𝐚𝐫𝐝
+║🍇 𝗖𝘂𝗿𝗿𝗲𝗻𝘁_𝗫𝗣: ${currentXP}
+║🍈 𝗖𝘂𝗿𝗲𝗻𝘁_𝗟𝗲𝘃𝗲𝗹: ${currentLvl}
+║🍊 𝗡𝗲𝘅𝘁_𝗟𝗲𝘃𝗲𝗹: ${xpleft}xp
+╚════════════╝
+
+╔════◇🌿𝐓𝐨𝐩𝐢𝐜: 🍁𝐌𝐢𝐳𝐮𝐤𝐢𝐁𝐚𝐧𝐤
+║🛵 𝐑𝐚𝐧𝐤_𝐁𝐨𝐧𝐮𝐬: ${Ran} 
+║🪙 𝗧𝗼𝘁𝗮𝗹_𝗕𝗮𝗹𝗮𝗻𝗰𝗲: ${userEco.money}
+╚════════════╝
+
+🎉𝐓𝐡𝐞 𝐌𝐨𝐫𝐞 𝐘𝐨𝐮 𝐓𝐚𝐥𝐤, 𝐓𝐡𝐞 𝐌𝐨𝐫𝐞 𝐗𝐏+𝐆𝐎𝐋𝐃 𝐘𝐨𝐮 𝐆𝐚𝐢𝐧. 
+🎉𝐊𝐞𝐞𝐩 𝐔𝐩!`,
+                        }
+                      );
+                      userEco
+                        .save()
+                        .catch((ℓαвєяяσя) =>
+                          ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
+                        );
+                    }
+                  }
+                );
+              });
             }
             users.save().catch((ℓαвєяяσя) => console.log(ℓαвєяяσя));
           }
