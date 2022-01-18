@@ -367,7 +367,7 @@ ${update.desc}`,
       }
       `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
       try {
-        UsersMizuki.findOne(
+        await UsersMizuki.findOne(
           {
             did: 𝓜𝖎𝖟𝖚ӄ𝖎.sender,
             serverID: 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
@@ -377,7 +377,6 @@ ${update.desc}`,
             var randomMC = require("random-material-color");
             const Canvas = require("canvas");
             var color = randomMC.getColor();
-            // return users.delete();
             if (err) console.log(err);
             if (!users) {
               var newUsers = new UsersMizuki({
@@ -390,7 +389,7 @@ ${update.desc}`,
             } else {
               var currentLvl = users.level;
               var currentXP = users.xp;
-              let nxtlvl = 50 * Math.pow(2, currentLvl);
+              let nxtlvl = 200 * Math.pow(2, currentLvl);
               var xpleft = nxtlvl - currentXP;
               users.xp = users.xp + xpAdd;
               if (users.xp >= nxtlvl) {
@@ -441,11 +440,12 @@ ${update.desc}`,
                 const avatar = await Canvas.loadImage(𝕻𝕻𝖑𝖊𝖙𝖊𝖗);
                 ctx.drawImage(avatar, 25, 50, 200, 200);
                 const out = fs.createWriteStream(
-                  `${Date.now().toString()}_.jpeg`
+                  `${ꜱᴇɴᴅᴇʀeceived.toString()}.jpeg`
                 );
                 const stream = canvas.createJPEGStream();
                 stream.pipe(out);
                 out.on(`finish`, () => {
+                  console.log("Saved!");
                   Economy.findOne(
                     {
                       did: 𝓜𝖎𝖟𝖚ӄ𝖎.sender,
@@ -463,14 +463,14 @@ ${update.desc}`,
                           fishdone: 0,
                           fishtimeout: 0,
                         });
-                        await newUser
+                        newUser
                           .save()
                           .catch((ℓαвєяяσя) =>
                             ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
                           );
-                        await ӄʀǟӄɨռʐ.sendMessage(
+                        ӄʀǟӄɨռʐ.sendMessage(
                           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                          fs.readFileSync(`${Date.now().toString()}_.jpeg`),
+                          fs.readFileSync(`${ꜱᴇɴᴅᴇʀeceived.toString()}.jpeg`),
                           MessageType.image,
                           {
                             mimetype: Mimetype.jpeg,
@@ -496,9 +496,7 @@ ${update.desc}`,
 🎉𝐊𝐞𝐞𝐩 𝐔𝐩!`,
                           }
                         );
-                        return await cleanRF.cleanRF(
-                          `${Date.now().toString()}_.jpeg`
-                        );
+                        cleanRF.cleanRF(`${ꜱᴇɴᴅᴇʀeceived.toString()}.jpeg`);
                       } else {
                         var Ran =
                           Math.floor(Math.random() * (100 - 50 + 1)) + 50;
@@ -510,7 +508,7 @@ ${update.desc}`,
                           );
                         ӄʀǟӄɨռʐ.sendMessage(
                           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                          fs.readFileSync(`${Date.now().toString()}_.jpeg`),
+                          fs.readFileSync(`${ꜱᴇɴᴅᴇʀeceived.toString()}.jpeg`),
                           MessageType.image,
                           {
                             mimetype: Mimetype.jpeg,
@@ -520,25 +518,23 @@ ${update.desc}`,
                               0,
                               𝓜𝖎𝖟𝖚ӄ𝖎.sender.length - 15
                             )}, 𝐘𝐨𝐮 𝐇𝐚𝐯𝐞 𝐋𝐞𝐯𝐞𝐥𝐞𝐝 𝐔𝐏!
-  
-  ╔════◇ 📜𝐑𝐚𝐧𝐤 𝐂𝐚𝐫𝐝
-  ║🍇 𝗖𝘂𝗿𝗿𝗲𝗻𝘁_𝗫𝗣: ${currentXP}
-  ║🍈 𝗖𝘂𝗿𝗲𝗻𝘁_𝗟𝗲𝘃𝗲𝗹: ${currentLvl}
-  ║🍊 𝗡𝗲𝘅𝘁_𝗟𝗲𝘃𝗲𝗹: ${xpleft}xp
-  ╚════════════╝
-  
-  ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: 🍁𝐌𝐢𝐳𝐮𝐤𝐢𝐁𝐚𝐧𝐤
-  ║🛵 𝐑𝐚𝐧𝐤_𝐁𝐨𝐧𝐮𝐬: ${Ran} 
-  ║🪙 𝗧𝗼𝘁𝗮𝗹_𝗕𝗮𝗹𝗮𝗻𝗰𝗲: ${userEco.money}
-  ╚════════════╝
-  
-  🎉𝐓𝐡𝐞 𝐌𝐨𝐫𝐞 𝐘𝐨𝐮 𝐓𝐚𝐥𝐤, 𝐓𝐡𝐞 𝐌𝐨𝐫𝐞 𝐗𝐏+𝐆𝐎𝐋𝐃 𝐘𝐨𝐮 𝐆𝐚𝐢𝐧. 
-  🎉𝐊𝐞𝐞𝐩 𝐔𝐩!`,
+
+╔════◇ 📜𝐑𝐚𝐧𝐤 𝐂𝐚𝐫𝐝
+║🍇 𝗖𝘂𝗿𝗿𝗲𝗻𝘁_𝗫𝗣: ${currentXP}
+║🍈 𝗖𝘂𝗿𝗲𝗻𝘁_𝗟𝗲𝘃𝗲𝗹: ${currentLvl}
+║🍊 𝗡𝗲𝘅𝘁_𝗟𝗲𝘃𝗲𝗹: ${xpleft}xp
+╚════════════╝
+
+╔════◇🌿𝐓𝐨𝐩𝐢𝐜: 🍁𝐌𝐢𝐳𝐮𝐤𝐢𝐁𝐚𝐧𝐤
+║🛵 𝐑𝐚𝐧𝐤_𝐁𝐨𝐧𝐮𝐬: ${Ran} 
+║🪙 𝗧𝗼𝘁𝗮𝗹_𝗕𝗮𝗹𝗮𝗻𝗰𝗲: ${userEco.money}
+╚════════════╝
+
+🎉𝐓𝐡𝐞 𝐌𝐨𝐫𝐞 𝐘𝐨𝐮 𝐓𝐚𝐥𝐤, 𝐓𝐡𝐞 𝐌𝐨𝐫𝐞 𝐗𝐏+𝐆𝐎𝐋𝐃 𝐘𝐨𝐮 𝐆𝐚𝐢𝐧. 
+🎉𝐊𝐞𝐞𝐩 𝐔𝐩!`,
                           }
                         );
-                        return cleanRF.cleanRF(
-                          `${Date.now().toString()}_.jpeg`
-                        );
+                        cleanRF.cleanRF(`${ꜱᴇɴᴅᴇʀeceived.toString()}.jpeg`);
                       }
                     }
                   );
