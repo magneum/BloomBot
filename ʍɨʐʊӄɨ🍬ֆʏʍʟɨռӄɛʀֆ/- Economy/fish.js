@@ -73,7 +73,7 @@ module.exports = {
               let time = ms(
                 userEco.fishtimeout - (Date.now() - userEco.fishdone)
               );
-              return Mizuki_Static.MGS(
+              Mizuki_Static.MGS(
                 ӄʀǟӄɨռʐ,
                 chat,
                 𝓜𝖎𝖟𝖚ӄ𝖎,
