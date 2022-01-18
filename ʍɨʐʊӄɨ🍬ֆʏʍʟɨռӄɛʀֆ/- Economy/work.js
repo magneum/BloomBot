@@ -1,12 +1,14 @@
 const Mizuki_Buttons = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Mizuki_Buttons`);
 const Mizuki_Static = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Mizuki_Static`);
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
+const Jwork = require("../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/FISH/works.json");
+const JworkR = Jwork[Math.floor(Math.random() * Jwork.length)];
 const Economy = require(`../../ʍɨʐʊӄɨ🍃goose/economy`);
-const ms = require("parse-ms");
 const _𝔏𝔞𝔟_ = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/_𝔏𝔞𝔟_`);
 const ꜰᴜᴄᴋ = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/oShit`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
+const ms = require("parse-ms");
 const fs = require(`fs`);
 var path = require(`path`);
 var scriptName = path.basename(__filename);
@@ -27,99 +29,78 @@ module.exports = {
       const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
       const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
       `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-      const jsoncool = JSON.parse(
-        fs.readFileSync(`./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`)
-      );
-      await jsoncool.push(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
-      fs.writeFileSync(
-        `./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`,
-        JSON.stringify(jsoncool)
-      );
-      console.log("ID Added " + 𝓜𝖎𝖟𝖚ӄ𝖎.sender);
-      setTimeout(async (error) => {
-        if (error) console.log(error);
-        await jsoncool.splice(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
-        fs.writeFileSync(
-          `./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`,
-          JSON.stringify(jsoncool)
-        );
-        console.log("ID Removed " + 𝓜𝖎𝖟𝖚ӄ𝖎.sender);
-      }, 20000);
-      `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-      if (!𝓜𝖎𝖟𝖚ӄ𝖎.isGroup) {
-        return Mizuki_Buttons.MTB(
-          ӄʀǟӄɨռʐ,
-          chat,
-          𝓜𝖎𝖟𝖚ӄ𝖎,
-          `@${ꜱᴇɴᴅᴇʀeceived}, ᴄᴏᴍᴍᴀɴᴅ ᴏɴʟʏ ꜰᴏʀ ɢʀᴏᴜᴘꜱ!`
-        );
-      }
-      `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
       Economy.findOne(
         {
           did: 𝓜𝖎𝖟𝖚ӄ𝖎.sender,
         },
         async (err, userEco) => {
-          console.log(userEco);
           if (err) console.log(err);
           if (!userEco) {
             var newUser = new Economy({
               did: 𝓜𝖎𝖟𝖚ӄ𝖎.sender,
-              money: 200,
-              daily: Date.now(),
-              timeout: 86400000,
+              money: 0,
+              daily: 0,
+              timeout: 0,
+              fish: 0,
+              fishdone: 0,
+              fishtimeout: 0,
+              workdone: Date.now(),
+              worktimeout: 900000,
             });
             newUser
               .save()
               .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
-            Mizuki_Buttons.MTB(
+            return Mizuki_Static.MGS(
               ӄʀǟӄɨռʐ,
               chat,
               𝓜𝖎𝖟𝖚ӄ𝖎,
               `@${ꜱᴇɴᴅᴇʀeceived}'𝘀 𝐌𝐢𝐳𝐮𝐤𝐢𝐁𝐚𝐧𝐤
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-║✅ 𝗗𝗮𝗶𝗹𝘆 𝗦𝘁𝗮𝘁𝘂𝘀: You've collected your daily reward!
-║💵 𝐃𝐚𝐢𝐥𝐲 𝐌𝐨𝐧𝐞𝐲:  200 
 ║🪙 𝗧𝗼𝘁𝗮𝗹 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: Just Opened Your Account!
-╚════════════╝`
+╚════════════╝`,
+              `./ʍɨʐʊӄɨ☣️ƈօʀɛ/MizukiFIshing.mp4`
             );
           } else {
-            if (userEco.timeout - (Date.now() - userEco.daily) > 0) {
-              let time = ms(userEco.timeout - (Date.now() - userEco.daily));
-              return Mizuki_Buttons.MTB(
+            if (userEco.worktimeout - (Date.now() - userEco.workdone) > 0) {
+              let time = ms(
+                userEco.worktimeout - (Date.now() - userEco.workdone)
+              );
+              Mizuki_Static.MGS(
                 ӄʀǟӄɨռʐ,
                 chat,
                 𝓜𝖎𝖟𝖚ӄ𝖎,
                 `@${ꜱᴇɴᴅᴇʀeceived}'𝘀 𝐌𝐢𝐳𝐮𝐤𝐢𝐁𝐚𝐧𝐤
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-║❌ 𝗗𝗮𝗶𝗹𝘆 𝗦𝘁𝗮𝘁𝘂𝘀: You've already collected your daily reward!
-║💵 𝗡𝗲𝘅𝘁 𝗗𝗮𝗶𝗹𝘆: ${time.hours}h ${time.minutes}m ${time.seconds}s
+║👔 𝗪𝗼𝗿𝗸_𝗦𝘁𝗮𝘁𝘂𝘀: ❌You have already worked recently. 
+║🕐 𝗪𝗼𝗿𝗸_𝗔𝗴𝗮𝗶𝗻: ${time.minutes}m ${time.seconds}s
 ║💰 𝗧𝗼𝘁𝗮𝗹 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: /balance 
-╚════════════╝`
+╚════════════╝`,
+                `./ʍɨʐʊӄɨ☣️ƈօʀɛ/MizukiFIshing.mp4`
               );
             } else {
-              userEco.daily = Date.now();
-              userEco.money = userEco.money + 200;
-              Mizuki_Buttons.MTB(
+              let amount = Math.floor(Math.random() * 80) + 1;
+              userEco.money = userEco.money + amount;
+              userEco.workdone = Date.now();
+              userEco.worktimeout = 900000;
+              Mizuki_Static.MGS(
                 ӄʀǟӄɨռʐ,
                 chat,
                 𝓜𝖎𝖟𝖚ӄ𝖎,
                 `@${ꜱᴇɴᴅᴇʀeceived}'𝘀 𝐌𝐢𝐳𝐮𝐤𝐢𝐁𝐚𝐧𝐤
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-║✅ 𝗗𝗮𝗶𝗹𝘆 𝗦𝘁𝗮𝘁𝘂𝘀: You've collected your daily reward!
-║💵 𝐃𝐚𝐢𝐥𝐲 𝐌𝐨𝐧𝐞𝐲:  200 
+║👔 𝗪𝗼𝗿𝗸_𝗦𝘁𝗮𝘁𝘂𝘀: ${JworkR}.
+║🪙 𝗘𝗮𝗿𝗻𝗲𝗱: ${amount}
 ║💰 𝗧𝗼𝘁𝗮𝗹 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: /balance 
-╚════════════╝`
+╚════════════╝`,
+                `./ʍɨʐʊӄɨ☣️ƈօʀɛ/MizukiFIshing.mp4`
               );
-              userEco
-                .save()
-                .catch((ℓαвєяяσя) =>
-                  ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
-                );
             }
+            userEco
+              .save()
+              .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
           }
         }
       );

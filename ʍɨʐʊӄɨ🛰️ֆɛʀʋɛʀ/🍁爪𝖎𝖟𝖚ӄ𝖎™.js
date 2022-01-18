@@ -462,6 +462,8 @@ ${update.desc}`,
                           fish: 0,
                           fishdone: 0,
                           fishtimeout: 0,
+                          workdone: 0,
+                          worktimeout: 0,
                         });
                         newUser
                           .save()
