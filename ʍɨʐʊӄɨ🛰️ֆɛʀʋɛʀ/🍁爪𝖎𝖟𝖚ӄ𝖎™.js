@@ -440,9 +440,9 @@ ${update.desc}`,
                 const avatar = await Canvas.loadImage(𝕻𝕻𝖑𝖊𝖙𝖊𝖗);
                 ctx.drawImage(avatar, 25, 50, 200, 200);
                 const out = fs.createWriteStream(
-                  `${ꜱᴇɴᴅᴇʀeceived.toString()}.jpeg`
+                  `${ꜱᴇɴᴅᴇʀeceived.toString()}.png`
                 );
-                const stream = canvas.createJPEGStream();
+                const stream = canvas.createPNGStream();
                 stream.pipe(out);
                 out.on(`finish`, () => {
                   console.log("Saved!");
@@ -470,10 +470,10 @@ ${update.desc}`,
                           );
                         ӄʀǟӄɨռʐ.sendMessage(
                           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                          fs.readFileSync(`${ꜱᴇɴᴅᴇʀeceived.toString()}.jpeg`),
+                          fs.readFileSync(`${ꜱᴇɴᴅᴇʀeceived.toString()}.png`),
                           MessageType.image,
                           {
-                            mimetype: Mimetype.jpeg,
+                            mimetype: Mimetype.png,
                             quoted: chat,
                             contextInfo: { mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender] },
                             caption: `✨𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬 @${𝓜𝖎𝖟𝖚ӄ𝖎.sender.substring(
@@ -496,7 +496,7 @@ ${update.desc}`,
 🎉𝐊𝐞𝐞𝐩 𝐔𝐩!`,
                           }
                         );
-                        cleanRF.cleanRF(`${ꜱᴇɴᴅᴇʀeceived.toString()}.jpeg`);
+                        cleanRF.cleanRF(`${ꜱᴇɴᴅᴇʀeceived.toString()}.png`);
                       } else {
                         var Ran =
                           Math.floor(Math.random() * (100 - 50 + 1)) + 50;
@@ -508,10 +508,10 @@ ${update.desc}`,
                           );
                         ӄʀǟӄɨռʐ.sendMessage(
                           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                          fs.readFileSync(`${ꜱᴇɴᴅᴇʀeceived.toString()}.jpeg`),
+                          fs.readFileSync(`${ꜱᴇɴᴅᴇʀeceived.toString()}.png`),
                           MessageType.image,
                           {
-                            mimetype: Mimetype.jpeg,
+                            mimetype: Mimetype.png,
                             quoted: chat,
                             contextInfo: { mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender] },
                             caption: `✨𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬 @${𝓜𝖎𝖟𝖚ӄ𝖎.sender.substring(
@@ -534,7 +534,7 @@ ${update.desc}`,
 🎉𝐊𝐞𝐞𝐩 𝐔𝐩!`,
                           }
                         );
-                        cleanRF.cleanRF(`${ꜱᴇɴᴅᴇʀeceived.toString()}.jpeg`);
+                        cleanRF.cleanRF(`${ꜱᴇɴᴅᴇʀeceived.toString()}.png`);
                       }
                     }
                   );
