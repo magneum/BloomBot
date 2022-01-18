@@ -59,15 +59,15 @@ module.exports = {
       Economy.findOne(
         {
           did: 𝓜𝖎𝖟𝖚ӄ𝖎.sender,
+          serverID: 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
         },
         async (err, userEco) => {
           if (err) console.log(err);
           if (!userEco) {
             var newUser = new Economy({
               did: 𝓜𝖎𝖟𝖚ӄ𝖎.sender,
+              serverID: 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               money: 0,
-              daily: 0,
-              timeout: 0,
               fish: 0,
               fishdone: Date.now(),
               fishtimeout: 1800000,

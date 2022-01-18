@@ -456,14 +456,8 @@ ${update.desc}`,
                       if (!userEco) {
                         var newUser = new Economy({
                           did: 𝓜𝖎𝖟𝖚ӄ𝖎.sender,
+                          serverID: 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
                           money: 200,
-                          daily: 0,
-                          timeout: 0,
-                          fish: 0,
-                          fishdone: 0,
-                          fishtimeout: 0,
-                          workdone: 0,
-                          worktimeout: 0,
                         });
                         newUser
                           .save()

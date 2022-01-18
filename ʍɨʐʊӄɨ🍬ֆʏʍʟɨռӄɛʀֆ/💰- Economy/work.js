@@ -60,18 +60,15 @@ module.exports = {
       Economy.findOne(
         {
           did: 𝓜𝖎𝖟𝖚ӄ𝖎.sender,
+          serverID: 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
         },
         async (err, userEco) => {
           if (err) console.log(err);
           if (!userEco) {
             var newUser = new Economy({
               did: 𝓜𝖎𝖟𝖚ӄ𝖎.sender,
+              serverID: 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               money: 0,
-              daily: 0,
-              timeout: 0,
-              fish: 0,
-              fishdone: 0,
-              fishtimeout: 0,
               workdone: Date.now(),
               worktimeout: 900000,
             });
@@ -112,7 +109,6 @@ module.exports = {
               let amount = Math.floor(Math.random() * 80) + 1;
               userEco.money = userEco.money + amount;
               userEco.workdone = Date.now();
-              userEco.worktimeout = 900000;
               Mizuki_Static.MGS(
                 ӄʀǟӄɨռʐ,
                 chat,

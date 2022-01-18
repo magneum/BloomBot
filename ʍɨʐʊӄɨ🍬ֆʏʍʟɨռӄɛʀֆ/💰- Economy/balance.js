@@ -63,6 +63,7 @@ module.exports = {
         Economy.findOne(
           {
             did: Receiver,
+            serverID: 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
           },
           async (err, userEco) => {
             if (err) console.log(err);
@@ -119,6 +120,7 @@ module.exports = {
         Economy.findOne(
           {
             did: ꜱᴇɴᴅᴇʀɪᴅ,
+            serverID: 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
           },
           async (err, userEco) => {
             if (err) console.log(err);
