@@ -366,117 +366,120 @@ ${update.desc}`,
         𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = `https://i.postimg.cc/6QmT53dR/Npp.png`;
       }
       `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-      UsersMizuki.findOne(
-        {
-          did: 𝓜𝖎𝖟𝖚ӄ𝖎.sender,
-          serverID: 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-        },
-        async (err, users) => {
-          console.log(users);
-          var randomMC = require("random-material-color");
-          const Canvas = require("canvas");
-          var color = randomMC.getColor();
-          // return users.delete();
-          if (err) console.log(err);
-          if (!users) {
-            var newUsers = new UsersMizuki({
-              did: 𝓜𝖎𝖟𝖚ӄ𝖎.sender,
-              serverID: 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              xp: xpAdd,
-              level: 0,
-            });
-            newUsers.save().catch((ℓαвєяяσя) => console.log(ℓαвєяяσя));
-          } else {
-            var currentLvl = users.level;
-            var currentXP = users.xp;
-            let nxtlvl = 50 * Math.pow(2, currentLvl);
-            var xpleft = nxtlvl - currentXP;
-            users.xp = users.xp + xpAdd;
-            if (users.xp >= nxtlvl) {
-              users.level = currentLvl + 1;
-              const Economy = require(`../ʍɨʐʊӄɨ🍃goose/economy`);
-              const canvas = Canvas.createCanvas(800, 300);
-              const ctx = canvas.getContext("2d");
-              const background = await Canvas.loadImage(
-                "https://cdn.discordapp.com/attachments/779452147326648360/803042845363011624/unknown.png"
-              );
-              ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
-              ctx.strokeStyle = "#74037b";
-              ctx.strokeRect(0, 0, canvas.width, canvas.height);
-              ctx.font = "50px TheHeartOfEverythingDemo";
-              ctx.fillStyle = "#1a1a1a";
-              ctx.fillText(`Congrats You Ranked Up!`, 230, 120);
-              ctx.beginPath();
-              ctx.lineWidth = 2;
-              ctx.fillStyle = color;
-              ctx.moveTo(220, 135);
-              ctx.lineTo(690, 135);
-              ctx.quadraticCurveTo(710, 135, 710, 152.5);
-              ctx.quadraticCurveTo(710, 170, 690, 170);
-              ctx.lineTo(220, 170);
-              ctx.lineTo(220, 135);
-              ctx.fill();
-              ctx.closePath();
-              ctx.beginPath();
-              ctx.arc(130, 155, 110, 0, Math.PI * 2, true);
-              ctx.lineWidth = 2;
-              ctx.fillStyle = color;
-              ctx.moveTo(220, 135);
-              ctx.lineTo(220, 170);
-              ctx.lineTo(220, 135);
-              ctx.fill();
-              ctx.font = "30px LobsterTwo-Bold";
-              ctx.fillStyle = "#000";
-              ctx.fillText(`${currentXP}cxp | Level: ${currentLvl}`, 250, 162);
-              ctx.closePath();
-              ctx.beginPath();
-              ctx.arc(125, 150, 100, 0, Math.PI * 2, true);
-              ctx.closePath();
-              ctx.clip();
-              const avatar = await Canvas.loadImage(𝕻𝕻𝖑𝖊𝖙𝖊𝖗);
-              ctx.drawImage(avatar, 25, 50, 200, 200);
-              const out = fs.createWriteStream(
-                `${ꜱᴇɴᴅᴇʀeceived.toString()}__${Date.now().toString()}_.jpeg`
-              );
-              const stream = canvas.createJPEGStream();
-              stream.pipe(out);
-              out.on(`finish`, () => {
-                Economy.findOne(
-                  {
-                    did: 𝓜𝖎𝖟𝖚ӄ𝖎.sender,
-                  },
-                  async (err, userEco) => {
-                    console.log(userEco);
-                    if (err) console.log(err);
-                    if (!userEco) {
-                      var newUser = new Economy({
-                        did: 𝓜𝖎𝖟𝖚ӄ𝖎.sender,
-                        money: 200,
-                        daily: 0,
-                        timeout: 0,
-                        fish: 0,
-                        fishdone: 0,
-                        fishtimeout: 0,
-                      });
-                      await newUser
-                        .save()
-                        .catch((ℓαвєяяσя) =>
-                          ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
-                        );
-                      await ӄʀǟӄɨռʐ.sendMessage(
-                        𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                        fs.readFileSync(
-                          `${ꜱᴇɴᴅᴇʀeceived.toString()}__${Date.now().toString()}_.jpeg`
-                        ),
-                        MessageType.image,
-                        {
-                          mimetype: Mimetype.jpeg,
-                          quoted: chat,
-                          contextInfo: { mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender] },
-                          caption: `✨𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬 @${𝓜𝖎𝖟𝖚ӄ𝖎.sender.substring(
-                            0,
-                            𝓜𝖎𝖟𝖚ӄ𝖎.sender.length - 15
-                          )}, 𝐘𝐨𝐮 𝐇𝐚𝐯𝐞 𝐋𝐞𝐯𝐞𝐥𝐞𝐝 𝐔𝐏!
+      try {
+        UsersMizuki.findOne(
+          {
+            did: 𝓜𝖎𝖟𝖚ӄ𝖎.sender,
+            serverID: 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+          },
+          async (err, users) => {
+            console.log(users);
+            var randomMC = require("random-material-color");
+            const Canvas = require("canvas");
+            var color = randomMC.getColor();
+            // return users.delete();
+            if (err) console.log(err);
+            if (!users) {
+              var newUsers = new UsersMizuki({
+                did: 𝓜𝖎𝖟𝖚ӄ𝖎.sender,
+                serverID: 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                xp: xpAdd,
+                level: 0,
+              });
+              newUsers.save().catch((ℓαвєяяσя) => console.log(ℓαвєяяσя));
+            } else {
+              var currentLvl = users.level;
+              var currentXP = users.xp;
+              let nxtlvl = 50 * Math.pow(2, currentLvl);
+              var xpleft = nxtlvl - currentXP;
+              users.xp = users.xp + xpAdd;
+              if (users.xp >= nxtlvl) {
+                users.level = currentLvl + 1;
+                const Economy = require(`../ʍɨʐʊӄɨ🍃goose/economy`);
+                const canvas = Canvas.createCanvas(800, 300);
+                const ctx = canvas.getContext("2d");
+                const background = await Canvas.loadImage(
+                  "https://cdn.discordapp.com/attachments/779452147326648360/803042845363011624/unknown.png"
+                );
+                ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
+                ctx.strokeStyle = "#74037b";
+                ctx.strokeRect(0, 0, canvas.width, canvas.height);
+                ctx.font = "50px TheHeartOfEverythingDemo";
+                ctx.fillStyle = "#1a1a1a";
+                ctx.fillText(`Congrats You Ranked Up!`, 230, 120);
+                ctx.beginPath();
+                ctx.lineWidth = 2;
+                ctx.fillStyle = color;
+                ctx.moveTo(220, 135);
+                ctx.lineTo(690, 135);
+                ctx.quadraticCurveTo(710, 135, 710, 152.5);
+                ctx.quadraticCurveTo(710, 170, 690, 170);
+                ctx.lineTo(220, 170);
+                ctx.lineTo(220, 135);
+                ctx.fill();
+                ctx.closePath();
+                ctx.beginPath();
+                ctx.arc(130, 155, 110, 0, Math.PI * 2, true);
+                ctx.lineWidth = 2;
+                ctx.fillStyle = color;
+                ctx.moveTo(220, 135);
+                ctx.lineTo(220, 170);
+                ctx.lineTo(220, 135);
+                ctx.fill();
+                ctx.font = "30px LobsterTwo-Bold";
+                ctx.fillStyle = "#000";
+                ctx.fillText(
+                  `${currentXP}cxp | Level: ${currentLvl}`,
+                  250,
+                  162
+                );
+                ctx.closePath();
+                ctx.beginPath();
+                ctx.arc(125, 150, 100, 0, Math.PI * 2, true);
+                ctx.closePath();
+                ctx.clip();
+                const avatar = await Canvas.loadImage(𝕻𝕻𝖑𝖊𝖙𝖊𝖗);
+                ctx.drawImage(avatar, 25, 50, 200, 200);
+                const out = fs.createWriteStream(
+                  `${Date.now().toString()}_.jpeg`
+                );
+                const stream = canvas.createJPEGStream();
+                stream.pipe(out);
+                out.on(`finish`, () => {
+                  Economy.findOne(
+                    {
+                      did: 𝓜𝖎𝖟𝖚ӄ𝖎.sender,
+                    },
+                    async (err, userEco) => {
+                      console.log(userEco);
+                      if (err) console.log(err);
+                      if (!userEco) {
+                        var newUser = new Economy({
+                          did: 𝓜𝖎𝖟𝖚ӄ𝖎.sender,
+                          money: 200,
+                          daily: 0,
+                          timeout: 0,
+                          fish: 0,
+                          fishdone: 0,
+                          fishtimeout: 0,
+                        });
+                        await newUser
+                          .save()
+                          .catch((ℓαвєяяσя) =>
+                            ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
+                          );
+                        await ӄʀǟӄɨռʐ.sendMessage(
+                          𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                          fs.readFileSync(`${Date.now().toString()}_.jpeg`),
+                          MessageType.image,
+                          {
+                            mimetype: Mimetype.jpeg,
+                            quoted: chat,
+                            contextInfo: { mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender] },
+                            caption: `✨𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬 @${𝓜𝖎𝖟𝖚ӄ𝖎.sender.substring(
+                              0,
+                              𝓜𝖎𝖟𝖚ӄ𝖎.sender.length - 15
+                            )}, 𝐘𝐨𝐮 𝐇𝐚𝐯𝐞 𝐋𝐞𝐯𝐞𝐥𝐞𝐝 𝐔𝐏!
 
 ╔════◇ 📜𝐑𝐚𝐧𝐤 𝐂𝐚𝐫𝐝
 ║🍇 𝗖𝘂𝗿𝗿𝗲𝗻𝘁_𝗫𝗣: ${currentXP}
@@ -491,33 +494,32 @@ ${update.desc}`,
 
 🎉𝐓𝐡𝐞 𝐌𝐨𝐫𝐞 𝐘𝐨𝐮 𝐓𝐚𝐥𝐤, 𝐓𝐡𝐞 𝐌𝐨𝐫𝐞 𝐗𝐏+𝐆𝐎𝐋𝐃 𝐘𝐨𝐮 𝐆𝐚𝐢𝐧. 
 🎉𝐊𝐞𝐞𝐩 𝐔𝐩!`,
-                        }
-                      );
-                      return await cleanRF.cleanRF(
-                        `${ꜱᴇɴᴅᴇʀeceived.toString()}__${Date.now().toString()}_.jpeg`
-                      );
-                    } else {
-                      var Ran = Math.floor(Math.random() * (100 - 50 + 1)) + 50;
-                      userEco.money = userEco.money + Ran;
-                      userEco
-                        .save()
-                        .catch((ℓαвєяяσя) =>
-                          ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
+                          }
                         );
-                      ӄʀǟӄɨռʐ.sendMessage(
-                        𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                        fs.readFileSync(
-                          `${ꜱᴇɴᴅᴇʀeceived.toString()}__${Date.now().toString()}_.jpeg`
-                        ),
-                        MessageType.image,
-                        {
-                          mimetype: Mimetype.jpeg,
-                          quoted: chat,
-                          contextInfo: { mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender] },
-                          caption: `✨𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬 @${𝓜𝖎𝖟𝖚ӄ𝖎.sender.substring(
-                            0,
-                            𝓜𝖎𝖟𝖚ӄ𝖎.sender.length - 15
-                          )}, 𝐘𝐨𝐮 𝐇𝐚𝐯𝐞 𝐋𝐞𝐯𝐞𝐥𝐞𝐝 𝐔𝐏!
+                        return await cleanRF.cleanRF(
+                          `${Date.now().toString()}_.jpeg`
+                        );
+                      } else {
+                        var Ran =
+                          Math.floor(Math.random() * (100 - 50 + 1)) + 50;
+                        userEco.money = userEco.money + Ran;
+                        userEco
+                          .save()
+                          .catch((ℓαвєяяσя) =>
+                            ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
+                          );
+                        ӄʀǟӄɨռʐ.sendMessage(
+                          𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                          fs.readFileSync(`${Date.now().toString()}_.jpeg`),
+                          MessageType.image,
+                          {
+                            mimetype: Mimetype.jpeg,
+                            quoted: chat,
+                            contextInfo: { mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender] },
+                            caption: `✨𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬 @${𝓜𝖎𝖟𝖚ӄ𝖎.sender.substring(
+                              0,
+                              𝓜𝖎𝖟𝖚ӄ𝖎.sender.length - 15
+                            )}, 𝐘𝐨𝐮 𝐇𝐚𝐯𝐞 𝐋𝐞𝐯𝐞𝐥𝐞𝐝 𝐔𝐏!
   
   ╔════◇ 📜𝐑𝐚𝐧𝐤 𝐂𝐚𝐫𝐝
   ║🍇 𝗖𝘂𝗿𝗿𝗲𝗻𝘁_𝗫𝗣: ${currentXP}
@@ -532,20 +534,23 @@ ${update.desc}`,
   
   🎉𝐓𝐡𝐞 𝐌𝐨𝐫𝐞 𝐘𝐨𝐮 𝐓𝐚𝐥𝐤, 𝐓𝐡𝐞 𝐌𝐨𝐫𝐞 𝐗𝐏+𝐆𝐎𝐋𝐃 𝐘𝐨𝐮 𝐆𝐚𝐢𝐧. 
   🎉𝐊𝐞𝐞𝐩 𝐔𝐩!`,
-                        }
-                      );
-                      return cleanRF.cleanRF(
-                        `${ꜱᴇɴᴅᴇʀeceived.toString()}__${Date.now().toString()}_.jpeg`
-                      );
+                          }
+                        );
+                        return cleanRF.cleanRF(
+                          `${Date.now().toString()}_.jpeg`
+                        );
+                      }
                     }
-                  }
-                );
-              });
+                  );
+                });
+              }
+              users.save().catch((ℓαвєяяσя) => console.log(ℓαвєяяσя));
             }
-            users.save().catch((ℓαвєяяσя) => console.log(ℓαвєяяσя));
           }
-        }
-      );
+        );
+      } catch (ℓαвєяяσя) {
+        console.log(ℓαвєяяσя);
+      }
     }
     `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
     if (
