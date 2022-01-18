@@ -636,10 +636,10 @@ ${update.desc}`,
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               `
 ╔═══════ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
-║🍁 You Need To Be In Mizuki GC So That Your Account Can Be Verified and Monitored For Spams!.
-╚════════════╝
-
-🐙 𝐎𝐟𝐟𝐢𝐜𝐢𝐚𝐥: ${_𝔏𝔞𝔟_.HASH}`,
+║🍁 You Need To Be In Mizuki GC.
+║🍁 So That Your Account Can Be Verified and Monitored For Anti-Spams!.
+║🐙 𝐎𝐟𝐟𝐢𝐜𝐢𝐚𝐥: ${_𝔏𝔞𝔟_.HASH}
+╚════════════╝`,
               MessageType.text,
               {
                 quoted: chat,
