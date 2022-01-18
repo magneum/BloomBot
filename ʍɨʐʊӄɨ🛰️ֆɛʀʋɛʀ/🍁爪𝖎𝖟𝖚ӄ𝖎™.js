@@ -471,6 +471,9 @@ ${update.desc}`,
                         money: 200,
                         daily: 0,
                         timeout: 0,
+                        fish: 0,
+                        fishdone: 0,
+                        fishtimeout: 0,
                       });
                       newUser
                         .save()

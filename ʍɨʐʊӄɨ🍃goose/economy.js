@@ -4,5 +4,8 @@ var EconomyMizukiSchema = new mongoose.Schema({
   money: Number,
   daily: Number,
   timeout: Number,
+  fish: Number,
+  fishdone: Number,
+  fishtimeout: Number,
 });
 module.exports = mongoose.model("Economy", EconomyMizukiSchema);

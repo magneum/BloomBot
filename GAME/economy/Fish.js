@@ -1,27 +1,18 @@
 const fishes = require("../JSON/fishes.json");
 let db = require("quick.db");
 const ms = require("parse-ms");
-const { randomRange } = require("../../functions");
 const { MessageEmbed } = require("discord.js");
 
 module.exports = {
   name: "fish",
-  aliases: ["catchfish"],
-  category: "economy",
   description: "Catch A Fish From A Vast Ocean",
-  usage: "[list | rewards] (optional)",
-  acessableby: "everyone",
   run: async (bot, message, args) => {
     let user = message.author;
-
     let bal = db.fetch(`money_${user.id}`);
-
     let fish = await db.fetch(`fish_${user.id}`);
     if (!args[0]) {
       if (bal === null) bal = 0;
-
       if (fish == null) fish = 0;
-
       const fishID = Math.floor(Math.random() * 10) + 1;
       let rarity;
       if (fishID < 5) rarity = "junk";
@@ -30,14 +21,12 @@ module.exports = {
       else if (fishID < 10) rarity = "rare";
       else rarity = "legendary";
       const fishh = fishes[rarity];
-      const worth = randomRange(fishh.min, fishh.max);
-
+      const worth =
+        Math.floor(Math.random() * (fishh.max - fishh.min + 1)) + fishh.min;
       let timeout = 1800000;
       let fishtime = await db.fetch(`fishtime_${user.id}`);
-
       if (fishtime !== null && timeout - (Date.now() - fishtime) > 0) {
         let time = ms(timeout - (Date.now() - fishtime));
-
         let timeEmbed = new MessageEmbed()
           .setColor("GREEN")
           .setDescription(
@@ -45,14 +34,12 @@ module.exports = {
           );
         return message.channel.send(timeEmbed);
       }
-
       let embed = new MessageEmbed()
         .setColor("GREEN")
         .setDescription(
           `**🎣 You Cast Out Your Line And Caught A ${fishh.symbol}, I Bet It'd Sell For Around ${worth}**!`
         );
       message.channel.send(embed);
-
       db.add(`money_${user.id}`, worth);
       db.add(`fish_${user.id}`, 1);
       db.set(`fishtime_${user.id}`, Date.now());
