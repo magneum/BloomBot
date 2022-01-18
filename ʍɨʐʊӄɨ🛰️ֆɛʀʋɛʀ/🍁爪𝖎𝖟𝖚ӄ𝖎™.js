@@ -354,12 +354,11 @@ ${update.desc}`,
       : ``;
     var 𝓜𝖎𝖟𝖚ӄ𝖎 = 𝓜𝖎𝖟𝖚ӄ𝖎ǟքք.resolve(chat, ӄʀǟӄɨռʐ, groupMetadata);
     `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-    if (𝓜𝖎𝖟𝖚ӄ𝖎.isGroup && !𝓜𝖎𝖟𝖚ӄ𝖎.fromMe) {
+    if (𝓜𝖎𝖟𝖚ӄ𝖎.isGroup && 𝓜𝖎𝖟𝖚ӄ𝖎.fromMe) {
       var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
       var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
       const UsersMizuki = require(`../ʍɨʐʊӄɨ🍃goose/experience.js`);
       let xpAdd = Math.ceil(Math.random() * 10);
-      let messageAdd = +1;
       `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
       try {
         𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄʀǟӄɨռʐ.getProfilePicture(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
@@ -389,7 +388,7 @@ ${update.desc}`,
           } else {
             var currentLvl = users.level;
             var currentXP = users.xp;
-            let nxtlvl = 200 * Math.pow(2, currentLvl);
+            let nxtlvl = 50 * Math.pow(2, currentLvl);
             var xpleft = nxtlvl - currentXP;
             users.xp = users.xp + xpAdd;
             if (users.xp >= nxtlvl) {
@@ -427,11 +426,7 @@ ${update.desc}`,
               ctx.fill();
               ctx.font = "30px LobsterTwo-Bold";
               ctx.fillStyle = "#000";
-              ctx.fillText(
-                `${currentXP}/${xpleft} | Level: ${currentLvl}`,
-                250,
-                162
-              );
+              ctx.fillText(`${currentXP}cxp | Level: ${currentLvl}`, 250, 162);
               ctx.closePath();
               ctx.beginPath();
               ctx.arc(125, 150, 100, 0, Math.PI * 2, true);
@@ -440,12 +435,11 @@ ${update.desc}`,
               const avatar = await Canvas.loadImage(𝕻𝕻𝖑𝖊𝖙𝖊𝖗);
               ctx.drawImage(avatar, 25, 50, 200, 200);
               const out = fs.createWriteStream(
-                `./ʍɨʐʊӄɨ🗑️ȶɛʍք/Rank_${Date.now()}_.png`
+                `${ꜱᴇɴᴅᴇʀeceived.toString()}_.jpeg`
               );
-              const stream = canvas.createPNGStream();
+              const stream = canvas.createJPEGStream();
               stream.pipe(out);
-              out.on(`finish`, async (err) => {
-                if (err) console.log(err);
+              out.on(`finish`, () => {
                 Economy.findOne(
                   {
                     did: 𝓜𝖎𝖟𝖚ӄ𝖎.sender,
@@ -470,14 +464,10 @@ ${update.desc}`,
                         );
                       ӄʀǟӄɨռʐ.sendMessage(
                         𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                        {
-                          url: fs.readFileSync(
-                            `./ʍɨʐʊӄɨ🗑️ȶɛʍք/Rank_${Date.now()}_.png`
-                          ),
-                        },
+                        fs.readFileSync(`${ꜱᴇɴᴅᴇʀeceived.toString()}_.jpeg`),
                         MessageType.image,
                         {
-                          mimetype: Mimetype.png,
+                          mimetype: Mimetype.jpeg,
                           quoted: chat,
                           contextInfo: { mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender] },
                           caption: `✨𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬 @${𝓜𝖎𝖟𝖚ӄ𝖎.sender.substring(
@@ -500,22 +490,18 @@ ${update.desc}`,
 🎉𝐊𝐞𝐞𝐩 𝐔𝐩!`,
                         }
                       );
-                      return await cleanRF.cleanRF(
-                        `./ʍɨʐʊӄɨ🗑️ȶɛʍք/Rank_${Date.now()}_.png`
+                      return cleanRF.cleanRF(
+                        `${ꜱᴇɴᴅᴇʀeceived.toString()}_.jpeg`
                       );
                     } else {
                       var Ran = Math.floor(Math.random() * (100 - 50 + 1)) + 50;
                       userEco.money = userEco.money + Ran;
                       ӄʀǟӄɨռʐ.sendMessage(
                         𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                        {
-                          url: fs.readFileSync(
-                            `./ʍɨʐʊӄɨ🗑️ȶɛʍք/Rank_${Date.now()}_.png`
-                          ),
-                        },
+                        fs.readFileSync(`${ꜱᴇɴᴅᴇʀeceived.toString()}_.jpeg`),
                         MessageType.image,
                         {
-                          mimetype: Mimetype.png,
+                          mimetype: Mimetype.jpeg,
                           quoted: chat,
                           contextInfo: { mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender] },
                           caption: `✨𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬 @${𝓜𝖎𝖟𝖚ӄ𝖎.sender.substring(
@@ -543,8 +529,8 @@ ${update.desc}`,
                         .catch((ℓαвєяяσя) =>
                           ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
                         );
-                      return await cleanRF.cleanRF(
-                        `./ʍɨʐʊӄɨ🗑️ȶɛʍք/Rank_${Date.now()}_.png`
+                      return cleanRF.cleanRF(
+                        `${ꜱᴇɴᴅᴇʀeceived.toString()}_.jpeg`
                       );
                     }
                   }
