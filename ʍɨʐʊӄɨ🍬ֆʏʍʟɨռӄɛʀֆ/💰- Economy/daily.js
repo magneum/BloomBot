@@ -70,6 +70,10 @@ module.exports = {
               money: 200,
               daily: Date.now(),
               timeout: 86400000,
+              fishdone: 0,
+              fishtimeout: 0,
+              workdone: 0,
+              worktimeout: 0,
             });
             newUser
               .save()

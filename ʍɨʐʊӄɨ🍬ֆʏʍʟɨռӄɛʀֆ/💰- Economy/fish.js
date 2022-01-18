@@ -68,8 +68,12 @@ module.exports = {
               did: 𝓜𝖎𝖟𝖚ӄ𝖎.sender,
               serverID: 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               money: 0,
+              daily: 0,
+              timeout: 0,
               fishdone: Date.now(),
               fishtimeout: 1800000,
+              workdone: 0,
+              worktimeout: 0,
             });
             newUser
               .save()
