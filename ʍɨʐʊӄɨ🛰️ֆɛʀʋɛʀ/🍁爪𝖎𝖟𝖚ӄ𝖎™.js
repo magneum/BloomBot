@@ -376,6 +376,7 @@ ${update.desc}`,
           var randomMC = require("random-material-color");
           const Canvas = require("canvas");
           var color = randomMC.getColor();
+          // return users.delete();
           if (err) console.log(err);
           if (!users) {
             var newUsers = new UsersMizuki({
@@ -435,7 +436,7 @@ ${update.desc}`,
               const avatar = await Canvas.loadImage(𝕻𝕻𝖑𝖊𝖙𝖊𝖗);
               ctx.drawImage(avatar, 25, 50, 200, 200);
               const out = fs.createWriteStream(
-                `${ꜱᴇɴᴅᴇʀeceived.toString()}_.jpeg`
+                `${ꜱᴇɴᴅᴇʀeceived.toString()}__${Date.now().toString()}_.jpeg`
               );
               const stream = canvas.createJPEGStream();
               stream.pipe(out);
@@ -457,14 +458,16 @@ ${update.desc}`,
                         fishdone: 0,
                         fishtimeout: 0,
                       });
-                      newUser
+                      await newUser
                         .save()
                         .catch((ℓαвєяяσя) =>
                           ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
                         );
-                      ӄʀǟӄɨռʐ.sendMessage(
+                      await ӄʀǟӄɨռʐ.sendMessage(
                         𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                        fs.readFileSync(`${ꜱᴇɴᴅᴇʀeceived.toString()}_.jpeg`),
+                        fs.readFileSync(
+                          `${ꜱᴇɴᴅᴇʀeceived.toString()}__${Date.now().toString()}_.jpeg`
+                        ),
                         MessageType.image,
                         {
                           mimetype: Mimetype.jpeg,
@@ -490,15 +493,22 @@ ${update.desc}`,
 🎉𝐊𝐞𝐞𝐩 𝐔𝐩!`,
                         }
                       );
-                      return cleanRF.cleanRF(
-                        `${ꜱᴇɴᴅᴇʀeceived.toString()}_.jpeg`
+                      return await cleanRF.cleanRF(
+                        `${ꜱᴇɴᴅᴇʀeceived.toString()}__${Date.now().toString()}_.jpeg`
                       );
                     } else {
                       var Ran = Math.floor(Math.random() * (100 - 50 + 1)) + 50;
                       userEco.money = userEco.money + Ran;
+                      userEco
+                        .save()
+                        .catch((ℓαвєяяσя) =>
+                          ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
+                        );
                       ӄʀǟӄɨռʐ.sendMessage(
                         𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                        fs.readFileSync(`${ꜱᴇɴᴅᴇʀeceived.toString()}_.jpeg`),
+                        fs.readFileSync(
+                          `${ꜱᴇɴᴅᴇʀeceived.toString()}__${Date.now().toString()}_.jpeg`
+                        ),
                         MessageType.image,
                         {
                           mimetype: Mimetype.jpeg,
@@ -508,29 +518,24 @@ ${update.desc}`,
                             0,
                             𝓜𝖎𝖟𝖚ӄ𝖎.sender.length - 15
                           )}, 𝐘𝐨𝐮 𝐇𝐚𝐯𝐞 𝐋𝐞𝐯𝐞𝐥𝐞𝐝 𝐔𝐏!
-
-╔════◇ 📜𝐑𝐚𝐧𝐤 𝐂𝐚𝐫𝐝
-║🍇 𝗖𝘂𝗿𝗿𝗲𝗻𝘁_𝗫𝗣: ${currentXP}
-║🍈 𝗖𝘂𝗿𝗲𝗻𝘁_𝗟𝗲𝘃𝗲𝗹: ${currentLvl}
-║🍊 𝗡𝗲𝘅𝘁_𝗟𝗲𝘃𝗲𝗹: ${xpleft}xp
-╚════════════╝
-
-╔════◇🌿𝐓𝐨𝐩𝐢𝐜: 🍁𝐌𝐢𝐳𝐮𝐤𝐢𝐁𝐚𝐧𝐤
-║🛵 𝐑𝐚𝐧𝐤_𝐁𝐨𝐧𝐮𝐬: ${Ran} 
-║🪙 𝗧𝗼𝘁𝗮𝗹_𝗕𝗮𝗹𝗮𝗻𝗰𝗲: ${userEco.money}
-╚════════════╝
-
-🎉𝐓𝐡𝐞 𝐌𝐨𝐫𝐞 𝐘𝐨𝐮 𝐓𝐚𝐥𝐤, 𝐓𝐡𝐞 𝐌𝐨𝐫𝐞 𝐗𝐏+𝐆𝐎𝐋𝐃 𝐘𝐨𝐮 𝐆𝐚𝐢𝐧. 
-🎉𝐊𝐞𝐞𝐩 𝐔𝐩!`,
+  
+  ╔════◇ 📜𝐑𝐚𝐧𝐤 𝐂𝐚𝐫𝐝
+  ║🍇 𝗖𝘂𝗿𝗿𝗲𝗻𝘁_𝗫𝗣: ${currentXP}
+  ║🍈 𝗖𝘂𝗿𝗲𝗻𝘁_𝗟𝗲𝘃𝗲𝗹: ${currentLvl}
+  ║🍊 𝗡𝗲𝘅𝘁_𝗟𝗲𝘃𝗲𝗹: ${xpleft}xp
+  ╚════════════╝
+  
+  ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: 🍁𝐌𝐢𝐳𝐮𝐤𝐢𝐁𝐚𝐧𝐤
+  ║🛵 𝐑𝐚𝐧𝐤_𝐁𝐨𝐧𝐮𝐬: ${Ran} 
+  ║🪙 𝗧𝗼𝘁𝗮𝗹_𝗕𝗮𝗹𝗮𝗻𝗰𝗲: ${userEco.money}
+  ╚════════════╝
+  
+  🎉𝐓𝐡𝐞 𝐌𝐨𝐫𝐞 𝐘𝐨𝐮 𝐓𝐚𝐥𝐤, 𝐓𝐡𝐞 𝐌𝐨𝐫𝐞 𝐗𝐏+𝐆𝐎𝐋𝐃 𝐘𝐨𝐮 𝐆𝐚𝐢𝐧. 
+  🎉𝐊𝐞𝐞𝐩 𝐔𝐩!`,
                         }
                       );
-                      userEco
-                        .save()
-                        .catch((ℓαвєяяσя) =>
-                          ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
-                        );
                       return cleanRF.cleanRF(
-                        `${ꜱᴇɴᴅᴇʀeceived.toString()}_.jpeg`
+                        `${ꜱᴇɴᴅᴇʀeceived.toString()}__${Date.now().toString()}_.jpeg`
                       );
                     }
                   }
