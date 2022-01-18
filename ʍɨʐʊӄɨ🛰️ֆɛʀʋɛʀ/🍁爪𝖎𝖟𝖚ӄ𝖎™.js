@@ -634,11 +634,13 @@ ${update.desc}`,
           if (!memjson.includes(𝓜𝖎𝖟𝖚ӄ𝖎.sender)) {
             return ӄʀǟӄɨռʐ.sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              `
+              `@${ꜱᴇɴᴅᴇʀeceived}, 
+
 ╔═══════ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
-║🍁 You Need To Be In Mizuki GC.
-║🍁 So That Your Account Can Be Verified and Monitored For *Anti-Spams* & *Auto-BugReports!*.
-║🐙 ${_𝔏𝔞𝔟_.HASH}
+║♨️ You Need To Be In *Mizuki GC.*
+║🚨 So That Your Account Can Be Verified and Monitored For *Anti-Spams & Auto-BugReports!*.
+║
+║${_𝔏𝔞𝔟_.HASH}
 ╚════════════╝`,
               MessageType.text,
               {
