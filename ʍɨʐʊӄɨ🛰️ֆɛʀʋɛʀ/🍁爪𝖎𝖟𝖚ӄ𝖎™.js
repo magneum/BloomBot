@@ -637,7 +637,7 @@ ${update.desc}`,
               `
 ╔═══════ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
 ║🍁 You Need To Be In Mizuki GC.
-║🍁 So That Your Account Can Be Verified and Monitored For Anti-Spams && Auto-BugReports!.
+║🍁 So That Your Account Can Be Verified and Monitored For *Anti-Spams* & *Auto-BugReports!*.
 ║🐙 ${_𝔏𝔞𝔟_.HASH}
 ╚════════════╝`,
               MessageType.text,
