@@ -75,7 +75,7 @@ module.exports = {
         } else {
           var where = "(ᴘʀɪᴠᴀᴛᴇ)";
         }
-
+        `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
         await got(`https://www.reddit.com/r/cumsluts/random.json`).then(
           async (newScpt) => {
             var file = JSON.parse(newScpt.body);
