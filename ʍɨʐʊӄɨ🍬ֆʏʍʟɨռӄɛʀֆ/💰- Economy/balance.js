@@ -105,7 +105,7 @@ module.exports = {
                 `@${ꜱᴇɴᴅᴇʀeceived}'𝘀 𝐌𝐢𝐳𝐮𝐤𝐢𝐁𝐚𝐧𝐤
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-║💰 𝗧𝗼𝘁𝗮𝗹 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: ${userEco.balance}
+║💰 𝗧𝗼𝘁𝗮𝗹 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: ${userEco.money}
 ║🤠 𝗔𝗰𝗰𝗼𝘂𝗻𝘁_𝗛𝗼𝗹𝗱𝗲𝗿: @${personreceived}
 ╚════════════╝`,
                 `./ʍɨʐʊӄɨ☣️ƈօʀɛ/MizukiFIshing.mp4`
@@ -162,7 +162,7 @@ module.exports = {
                 `@${ꜱᴇɴᴅᴇʀeceived}'𝘀 𝐌𝐢𝐳𝐮𝐤𝐢𝐁𝐚𝐧𝐤
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-║💰 𝗧𝗼𝘁𝗮𝗹 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: ${userEco.balance}
+║💰 𝗧𝗼𝘁𝗮𝗹 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: ${userEco.money}
 ║🤠 𝗔𝗰𝗰𝗼𝘂𝗻𝘁_𝗛𝗼𝗹𝗱𝗲𝗿: @${ꜱᴇɴᴅᴇʀeceived}
 ╚════════════╝`,
                 `./ʍɨʐʊӄɨ☣️ƈօʀɛ/MizukiFIshing.mp4`
