@@ -622,8 +622,8 @@ ${update.desc}`,
             return ӄʀǟӄɨռʐ.sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               `╔═══════ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
-║♨️ You Need To Be In *Mizuki GC.*
-║🚨 So That Your Account Can Be Verified and Monitored For *Anti-Spams & Auto-BugReports!*.
+║♨️ You Need To Be In Mizuki GC.
+║🚨 So That Your Account Can Be Verified and Monitored For Anti-Spams & Auto-BugReports!.
 ║
 ║${_𝔏𝔞𝔟_.HASH}
 ╚════════════╝`,
@@ -638,13 +638,21 @@ ${update.desc}`,
             fs.readFileSync(`./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`)
           );
           if (jsoncool.includes(𝓜𝖎𝖟𝖚ӄ𝖎.sender)) {
-            ӄʀǟӄɨռʐ.sendMessage(
-              𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              `*🚏CoolDown:* Wait For 15sec!`,
-              MessageType.text,
-              { quoted: chat }
-            );
-            return;
+            if (𝓜𝖎𝖟𝖚ӄ𝖎.fromMe) {
+              return ӄʀǟӄɨռʐ.sendMessage(
+                𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                `*Sir Please Wait For 15sec!*`,
+                MessageType.text,
+                { quoted: chat }
+              );
+            } else {
+              return ӄʀǟӄɨռʐ.sendMessage(
+                𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                `*🚏CoolDown:* Wait For 15sec!`,
+                MessageType.text,
+                { quoted: chat }
+              );
+            }
           }
           console.log(
             Kolor.bgRedBright.black(
@@ -707,7 +715,7 @@ ${update.desc}`,
               ӄʀǟӄɨռʐ,
               chat,
               𝓜𝖎𝖟𝖚ӄ𝖎,
-              `*@${ꜱᴇɴᴅᴇʀeceived}, ❌Wrong Command Executed! Read: ${ᴋᴇɪ}help*`
+              `*❌Wrong Command Executed!*\n_Read: ${ᴋᴇɪ}help_`
             );
           } else {
             return ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ.handle(

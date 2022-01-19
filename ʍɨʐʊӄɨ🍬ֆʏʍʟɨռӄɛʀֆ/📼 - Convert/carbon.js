@@ -43,6 +43,23 @@ or reply to a text message with
       const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
       const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
       `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
+      const jsoncool = await JSON.parse(
+        fs.readFileSync(`./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`)
+      );
+      await jsoncool.push(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
+      await fs.writeFileSync(
+        `./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`,
+        JSON.stringify(jsoncool)
+      );
+      setTimeout(async (error) => {
+        if (error) console.log(error);
+        await jsoncool.splice(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
+        await fs.writeFileSync(
+          `./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`,
+          JSON.stringify(jsoncool)
+        );
+      }, 15000);
+      `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
       let themes = [
         `3024 night`,
         `a11y dark`,
@@ -105,23 +122,6 @@ or reply to a text message with
         code = 𝓜𝖎𝖟𝖚ӄ𝖎.replyMessage;
         themeInput = themes[Math.floor(Math.random() * themes.length)];
       } else {
-        const jsoncool = JSON.parse(
-          fs.readFileSync(`./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`)
-        );
-        await jsoncool.push(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
-        await fs.writeFileSync(
-          `./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`,
-          JSON.stringify(jsoncool)
-        );
-        await setTimeout(async (error) => {
-          if (error) console.log(error);
-          await jsoncool.splice(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
-          await fs.writeFileSync(
-            `./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`,
-            JSON.stringify(jsoncool)
-          );
-        }, 20000);
-        `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
         try {
           var text = 𝓜𝖎𝖟𝖚ӄ𝖎.body.replace(
             𝓜𝖎𝖟𝖚ӄ𝖎.body[0] + 𝓜𝖎𝖟𝖚ӄ𝖎.commandName + ` `,

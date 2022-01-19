@@ -32,8 +32,24 @@ module.exports = {
       var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
       const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
       const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
-      `⬡  ⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-
+      `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
+      const jsoncool = await JSON.parse(
+        fs.readFileSync(`./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`)
+      );
+      await jsoncool.push(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
+      await fs.writeFileSync(
+        `./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`,
+        JSON.stringify(jsoncool)
+      );
+      setTimeout(async (error) => {
+        if (error) console.log(error);
+        await jsoncool.splice(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
+        await fs.writeFileSync(
+          `./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`,
+          JSON.stringify(jsoncool)
+        );
+      }, 15000);
+      `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
       if (Needs.length === 0) {
         var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(𝓜𝖎𝖟𝖚ӄ𝖎.commandName);
         var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
@@ -49,27 +65,6 @@ module.exports = {
           ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
         );
       }
-      `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-      const jsoncool = JSON.parse(
-        fs.readFileSync(`./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`)
-      );
-      await jsoncool.push(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
-      fs.writeFileSync(
-        `./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`,
-        JSON.stringify(jsoncool)
-      );
-      console.log("ID Added " + 𝓜𝖎𝖟𝖚ӄ𝖎.sender);
-      setTimeout(async (error) => {
-        if (error) console.log(error);
-        await jsoncool.splice(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
-        fs.writeFileSync(
-          `./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`,
-          JSON.stringify(jsoncool)
-        );
-        console.log("ID Removed " + 𝓜𝖎𝖟𝖚ӄ𝖎.sender);
-      }, 20000);
-      `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-
       let content = fs.readFileSync(`./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`);
       const media = await ӄʀǟӄɨռʐ.prepareMessage(
         𝓜𝖎𝖟𝖚ӄ𝖎.chatId,

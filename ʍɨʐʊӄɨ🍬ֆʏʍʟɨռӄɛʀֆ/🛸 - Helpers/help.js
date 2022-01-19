@@ -36,24 +36,22 @@ module.exports = {
       const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
       const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
       `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-      const jsoncool = JSON.parse(
+      const jsoncool = await JSON.parse(
         fs.readFileSync(`./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`)
       );
       await jsoncool.push(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
-      fs.writeFileSync(
+      await fs.writeFileSync(
         `./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`,
         JSON.stringify(jsoncool)
       );
-      console.log("ID Added " + 𝓜𝖎𝖟𝖚ӄ𝖎.sender);
       setTimeout(async (error) => {
         if (error) console.log(error);
         await jsoncool.splice(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
-        fs.writeFileSync(
+        await fs.writeFileSync(
           `./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`,
           JSON.stringify(jsoncool)
         );
-        console.log("ID Removed " + 𝓜𝖎𝖟𝖚ӄ𝖎.sender);
-      }, 20000);
+      }, 15000);
       `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
       const used = process.memoryUsage();
       const cpus = os.cpus().map((cpu) => {
