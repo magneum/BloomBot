@@ -113,7 +113,13 @@ module.exports = {
               let amount = Math.floor(Math.random() * 80) + 1;
               userEco.money = userEco.money + amount;
               userEco.workdone = Date.now();
-              Mizuki_Static.MGS(
+              userEco.worktimeout = 900000;
+              userEco
+                .save()
+                .catch((ℓαвєяяσя) =>
+                  ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
+                );
+              return Mizuki_Static.MGS(
                 ӄʀǟӄɨռʐ,
                 chat,
                 𝓜𝖎𝖟𝖚ӄ𝖎,
@@ -126,9 +132,6 @@ module.exports = {
                 `./ʍɨʐʊӄɨ☣️ƈօʀɛ/MizukiFIshing.mp4`
               );
             }
-            userEco
-              .save()
-              .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
           }
         }
       );

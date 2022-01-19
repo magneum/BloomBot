@@ -95,7 +95,7 @@ module.exports = {
               let time = ms(
                 userEco.fishtimeout - (Date.now() - userEco.fishdone)
               );
-              Mizuki_Static.MGS(
+              return Mizuki_Static.MGS(
                 ӄʀǟӄɨռʐ,
                 chat,
                 𝓜𝖎𝖟𝖚ӄ𝖎,
@@ -122,24 +122,27 @@ module.exports = {
                 fishh.min;
               userEco.money = userEco.money + worth;
               userEco.fishdone = Date.now();
-              Mizuki_Static.MGS(
+              userEco.fishtimeout = 1800000;
+              userEco
+                .save()
+                .catch((ℓαвєяяσя) =>
+                  ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
+                );
+              return Mizuki_Static.MGS(
                 ӄʀǟӄɨռʐ,
                 chat,
                 𝓜𝖎𝖟𝖚ӄ𝖎,
                 `@${ꜱᴇɴᴅᴇʀeceived}'𝘀 𝐌𝐢𝐳𝐮𝐤𝐢𝐁𝐚𝐧𝐤
-
-╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-║🎣 𝗜𝘁𝗲𝗺_𝗙𝗼𝘂𝗻𝗱: You Cast Out Your Line And Caught A ${fishh.symbol}.
-║💵 𝗪𝗼𝗿𝘁𝗵: I Bet It'd Sell For Around *${worth}*!
-║💍 𝗜𝘁𝗲𝗺_𝗧𝘆𝗽𝗲: ${rarity}
-╚════════════╝`,
+    
+    ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+    ║🎣 𝗜𝘁𝗲𝗺_𝗙𝗼𝘂𝗻𝗱: You Cast Out Your Line And Caught A ${fishh.symbol}.
+    ║💵 𝗪𝗼𝗿𝘁𝗵: I Bet It'd Sell For Around *${worth}*!
+    ║💍 𝗜𝘁𝗲𝗺_𝗧𝘆𝗽𝗲: ${rarity}
+    ╚════════════╝`,
                 `./ʍɨʐʊӄɨ☣️ƈօʀɛ/MizukiFIshing.mp4`
               );
             }
           }
-          userEco
-            .save()
-            .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
         }
       );
       `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
