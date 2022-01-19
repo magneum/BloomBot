@@ -62,13 +62,7 @@ module.exports = {
           ӄʀǟӄɨռʐ,
           chat,
           𝓜𝖎𝖟𝖚ӄ𝖎,
-          `Who Is This Non-Admin •@${ꜱᴇɴᴅᴇʀeceived} Trying to Use Admin-Only Commands.
-
-
-────★ 🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧   
-❌ You Are Not Allowed!  
-🌶️𝐆𝐫𝐨𝐮𝐩𝐬: Admins & Devs!
-🌽𝐏𝐫𝐢𝐯𝐚𝐭𝐞 Everyone`,
+          `*❌ Admins Only | You Are Not Allowed! ❌*`,
           _𝔏𝔞𝔟_.ɴᴏᴛᴀᴅᴍɪɴ
         );
       }
@@ -77,9 +71,10 @@ module.exports = {
           ӄʀǟӄɨռʐ,
           chat,
           𝓜𝖎𝖟𝖚ӄ𝖎,
-          `@${ꜱᴇɴᴅᴇʀeceived}, ❌ʜᴏᴡ ᴄᴀɴ ɪ ᴜꜱᴇ ᴀᴅᴍɪɴ ᴄᴏᴍᴍᴀɴᴅꜱ ᴡʜᴇɴ ɪ ᴀᴍ ɴᴏᴛ ᴀᴅᴍɪɴ?
+          `@${ꜱᴇɴᴅᴇʀeceived}, 
 
-💡𝐅𝐢𝐱: _Make Me Admin First_`,
+❌ How Can I Use Admin Only Commands If i am not admin?
+💡𝐅𝐢𝐱: Make Me Admin First`,
           _𝔏𝔞𝔟_.ɴᴏᴛᴍᴇᴀᴅᴍɪɴ
         );
       }

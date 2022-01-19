@@ -61,7 +61,7 @@ module.exports = {
             ӄʀǟӄɨռʐ,
             chat,
             𝓜𝖎𝖟𝖚ӄ𝖎,
-            `*❌ You Are Not Allowed!*`,
+            `*❌ Admins Only | You Are Not Allowed! ❌*`,
             _𝔏𝔞𝔟_.ɴᴏᴛᴀᴅᴍɪɴ
           );
         } catch (ℓαвєяяσя) {
@@ -75,7 +75,10 @@ module.exports = {
             ӄʀǟӄɨռʐ,
             chat,
             𝓜𝖎𝖟𝖚ӄ𝖎,
-            `*💡𝐅𝐢𝐱: _Make Me Admin First_*`,
+                      `@${ꜱᴇɴᴅᴇʀeceived}, 
+
+❌ How Can I Use Admin Only Commands If i am not admin?
+💡𝐅𝐢𝐱: Make Me Admin First`,
             _𝔏𝔞𝔟_.ɴᴏᴛᴍᴇᴀᴅᴍɪɴ
           );
         } catch (ℓαвєяяσя) {

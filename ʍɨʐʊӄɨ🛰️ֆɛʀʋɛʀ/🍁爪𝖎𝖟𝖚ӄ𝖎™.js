@@ -675,11 +675,6 @@ ${update.desc}`,
                     `⬡==========================⬡    🍁Starting Mizuki pull...`
                   )
                 );
-                ӄʀǟӄɨռʐ.sendMessage(
-                  𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                  `════ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ Mizuki Auto Updated!`,
-                  MessageType.text
-                );
               })
               .pull(async (ℓαвєяяσя, update) => {
                 if (ℓαвєяяσя) {
