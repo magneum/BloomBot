@@ -389,7 +389,7 @@ ${update.desc}`,
             } else {
               var currentLvl = users.level;
               var currentXP = users.xp;
-              let nxtlvl = 200 * Math.pow(2, currentLvl);
+              let nxtlvl = 100 * Math.pow(2, currentLvl);
               var xpleft = nxtlvl - currentXP;
               users.xp = users.xp + xpAdd;
               if (users.xp >= nxtlvl) {
