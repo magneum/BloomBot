@@ -99,14 +99,12 @@ module.exports = {
       UsersMizuki.findOne(
         {
           did: 𝓜𝖎𝖟𝖚ӄ𝖎.sender,
-          serverID: 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
         },
         async (err, users) => {
           if (err) console.log(err);
           if (!users) {
             var newUsers = new UsersMizuki({
               did: 𝓜𝖎𝖟𝖚ӄ𝖎.sender,
-              serverID: 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               xp: xpAdd,
               level: 0,
               message: messageAdd,
