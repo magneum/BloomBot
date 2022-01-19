@@ -70,7 +70,7 @@ module.exports = {
       }
       `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
       var Raw = await porno();
-      RawData = `https://tikporntok.com/` + Raw.video;
+      var RawData = `https://tikporntok.com/` + Raw.video;
       if (!RawData.endsWith(`.mp4`)) {
         return Mizuki_Buttons.MTB(
           ӄʀǟӄɨռʐ,
@@ -93,7 +93,7 @@ module.exports = {
       });
       try {
         await downloader.download();
-        Mizuki_Buttons.MVB(
+        await Mizuki_Buttons.MVB(
           ӄʀǟӄɨռʐ,
           chat,
           𝓜𝖎𝖟𝖚ӄ𝖎,
@@ -111,7 +111,7 @@ module.exports = {
 ╚════════════╝`,
           `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FinalName}_${Date.now.toString()}.mp4`
         );
-        return cleanRF.cleanRF(
+        return await cleanRF.cleanRF(
           `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FinalName}_${Date.now.toString()}.mp4`
         );
       } catch (ℓαвєяяσя) {
