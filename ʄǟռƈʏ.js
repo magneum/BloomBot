@@ -11,13 +11,13 @@ try {
   const _𝔏𝔞𝔟_ = require(`./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/_𝔏𝔞𝔟_`);
   // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
   function ʄǟռƈʏ(ꜱɪᴛʀᴀᴘ, commandUsage) {
-    const ᴍɪᴢᴜᴋɪᴅᴇʀꜱ = fs.readdirSync(`./ʍɨʐʊӄɨ🍬ֆʏʍʟɨռӄɛʀֆ`);
+    const ᴍɪᴢᴜᴋɪᴅᴇʀꜱ = fs.readdirSync(`./Mizuki🍁System`);
     for (const ʜᴏʟᴅᴇʀ of ᴍɪᴢᴜᴋɪᴅᴇʀꜱ) {
       const commandFiles = fs
-        .readdirSync(`./ʍɨʐʊӄɨ🍬ֆʏʍʟɨռӄɛʀֆ/${ʜᴏʟᴅᴇʀ}`)
+        .readdirSync(`./Mizuki🍁System/${ʜᴏʟᴅᴇʀ}`)
         .filter((ᴍɪꜱᴏ) => ᴍɪꜱᴏ.endsWith(`.js`));
       for (const ᴍɪꜱᴏ of commandFiles) {
-        const command = require(`./ʍɨʐʊӄɨ🍬ֆʏʍʟɨռӄɛʀֆ/${ʜᴏʟᴅᴇʀ}/${ᴍɪꜱᴏ}`);
+        const command = require(`./Mizuki🍁System/${ʜᴏʟᴅᴇʀ}/${ᴍɪꜱᴏ}`);
         ꜱɪᴛʀᴀᴘ.set(command.name, command);
         commandUsage.set(command.𝓜𝓮𝓮6ʍօʀɛ, command.description);
         if (_𝔏𝔞𝔟_.HEROKU === undefined) {
