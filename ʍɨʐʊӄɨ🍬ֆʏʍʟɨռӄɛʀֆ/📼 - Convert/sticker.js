@@ -32,18 +32,20 @@ module.exports = {
       var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
       const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
       const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
+      const FN = Date.now() / 10000;
+      const FileName = FN.toString();
+      console.log("FileName: " + FileName);
       `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-      const jsoncool = await JSON.parse(
+      const jsoncool = JSON.parse(
         fs.readFileSync(`./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`)
       );
-      await jsoncool.push(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
+      jsoncool.push(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
       fs.writeFileSync(
         `./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`,
         JSON.stringify(jsoncool)
       );
-      setTimeout(async (error) => {
-        if (error) console.log(error);
-        await jsoncool.splice(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
+      setTimeout(() => {
+        jsoncool.splice(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
         fs.writeFileSync(
           `./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`,
           JSON.stringify(jsoncool)
@@ -56,7 +58,7 @@ module.exports = {
         };
         var FileType = await ӄʀǟӄɨռʐ.downloadAndSaveMediaMessage(
           FILEOBJECT,
-          ꜱᴇɴᴅᴇʀeceived
+          FileName
         );
       } catch (ℓαвєяяσя) {
         var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(𝓜𝖎𝖟𝖚ӄ𝖎.commandName);
@@ -75,65 +77,65 @@ module.exports = {
       }
       if (FileType.endsWith(".jpeg")) {
         // ====================================================================================================== JPEG
-        ffmpeg(`${ꜱᴇɴᴅᴇʀeceived}.jpeg`)
+        ffmpeg(`${FileName}.jpeg`)
           .outputOptions([`-y`, `-vcodec libwebp`])
           .videoFilters(
             `scale=2000:2000:flags=lanczos:force_original_aspect_ratio=decrease`,
             `format=rgba`,
             `pad=2000:2000:(ow-iw)/2:(oh-ih)/2:color=#00000000,setsar=1`
           )
-          .save(`${ꜱᴇɴᴅᴇʀeceived}.webp`)
+          .save(`${FileName}.webp`)
           .on(`end`, (ℓαвєяяσя) => {
             if (ℓαвєяяσя) return console.log(ℓαвєяяσя);
             ӄʀǟӄɨռʐ.sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              fs.readFileSync(`${ꜱᴇɴᴅᴇʀeceived}.webp`),
+              fs.readFileSync(`${FileName}.webp`),
               MessageType.sticker,
               { quoted: chat }
             );
-            cleanRF.cleanRF(`${ꜱᴇɴᴅᴇʀeceived}.jpeg`, `${ꜱᴇɴᴅᴇʀeceived}.webp`);
+            cleanRF.cleanRF(`${FileName}.jpeg`, `${FileName}.webp`);
           })
           .on(`error`, (ℓαвєяяσя) => {
             console.log(ℓαвєяяσя);
           });
-        return console.log("FileType: " + FileType);
+        console.log("FileType: " + FileType);
       } else if (FileType.endsWith(".png")) {
         // ====================================================================================================== PNG
-        ffmpeg(`${ꜱᴇɴᴅᴇʀeceived}.png`)
+        ffmpeg(`${FileName}.png`)
           .outputOptions([`-y`, `-vcodec libwebp`])
           .videoFilters(
             `scale=2000:2000:flags=lanczos:force_original_aspect_ratio=decrease`,
             `format=rgba`,
             `pad=2000:2000:(ow-iw)/2:(oh-ih)/2:color=#00000000,setsar=1`
           )
-          .save(`${ꜱᴇɴᴅᴇʀeceived}.webp`)
+          .save(`${FileName}.webp`)
           .on(`end`, (ℓαвєяяσя) => {
             if (ℓαвєяяσя) return console.log(ℓαвєяяσя);
             ӄʀǟӄɨռʐ.sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              fs.readFileSync(`${ꜱᴇɴᴅᴇʀeceived}.webp`),
+              fs.readFileSync(`${FileName}.webp`),
               MessageType.sticker,
               { quoted: chat }
             );
-            cleanRF.cleanRF(`${ꜱᴇɴᴅᴇʀeceived}.mp4`, `${ꜱᴇɴᴅᴇʀeceived}.webp`);
+            cleanRF.cleanRF(`${FileName}.mp4`, `${FileName}.webp`);
           })
           .on(`error`, (ℓαвєяяσя) => {
             console.log(ℓαвєяяσя);
           });
-        return console.log("FileType: " + FileType);
+        console.log("FileType: " + FileType);
       } else if (FileType.endsWith(".webp")) {
         // ====================================================================================================== WEBP
         ӄʀǟӄɨռʐ.sendMessage(
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-          fs.readFileSync(`${ꜱᴇɴᴅᴇʀeceived}.webp`),
+          fs.readFileSync(`${FileName}.webp`),
           MessageType.sticker,
           { quoted: chat }
         );
-        cleanRF.cleanRF(`${ꜱᴇɴᴅᴇʀeceived}.webp`);
-        return console.log("FileType: " + FileType);
+        cleanRF.cleanRF(`${FileName}.webp`);
+        console.log("FileType: " + FileType);
       } else if (FileType.endsWith(".mp4")) {
         // ====================================================================================================== MP4
-        ffmpeg(`${ꜱᴇɴᴅᴇʀeceived}.mp4`)
+        ffmpeg(`${FileName}.mp4`)
           .duration(8)
           .outputOptions([
             `-y`,
@@ -149,20 +151,20 @@ module.exports = {
           .videoFilters(
             `scale=600:600:flags=lanczos:force_original_aspect_ratio=decrease,format=rgba,pad=600:600:(ow-iw)/2:(oh-ih)/2:color=#00000000,setsar=1`
           )
-          .save(`${ꜱᴇɴᴅᴇʀeceived}.webp`)
+          .save(`${FileName}.webp`)
           .on(`end`, () => {
             ӄʀǟӄɨռʐ.sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              fs.readFileSync(`${ꜱᴇɴᴅᴇʀeceived}.webp`),
+              fs.readFileSync(`${FileName}.webp`),
               MessageType.sticker,
               { quoted: chat }
             );
-            cleanRF.cleanRF(`${ꜱᴇɴᴅᴇʀeceived}.mp4`, `${ꜱᴇɴᴅᴇʀeceived}.webp`);
+            cleanRF.cleanRF(`${FileName}.mp4`, `${FileName}.webp`);
           })
           .on(`error`, (ℓαвєяяσя) => {
             console.log(ℓαвєяяσя);
           });
-        return console.log("FileType: " + FileType);
+        console.log("FileType: " + FileType);
       } else {
         // ====================================================================================================== UNKNOWN
         console.log("FileType: " + FileType);
