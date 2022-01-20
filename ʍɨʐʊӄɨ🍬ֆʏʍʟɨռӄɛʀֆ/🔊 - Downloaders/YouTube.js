@@ -105,7 +105,9 @@ module.exports = {
             youfound.thumbnail
           );
           const download = ytdl(youfound.url, { filter: "audioonly" });
-          const writeStream = fs.createWriteStream(youfound.title.toString());
+          const writeStream = fs.createWriteStream(
+            youfound.title.toString() + ".mp3"
+          );
           download.pipe(writeStream);
           await ӄʀǟӄɨռʐ
             .sendMessage(
