@@ -131,12 +131,12 @@ module.exports = {
                 chat,
                 𝓜𝖎𝖟𝖚ӄ𝖎,
                 `@${ꜱᴇɴᴅᴇʀeceived}'𝘀 𝐌𝐢𝐳𝐮𝐤𝐢𝐁𝐚𝐧𝐤
-    
-    ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-    ║🎣 𝗜𝘁𝗲𝗺_𝗙𝗼𝘂𝗻𝗱: You Cast Out Your Line And Caught A ${fishh.symbol}.
-    ║💵 𝗪𝗼𝗿𝘁𝗵: I Bet It'd Sell For Around *${worth}*!
-    ║💍 𝗜𝘁𝗲𝗺_𝗧𝘆𝗽𝗲: ${rarity}
-    ╚════════════╝`,
+
+╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+║🎣 𝗜𝘁𝗲𝗺_𝗙𝗼𝘂𝗻𝗱: You Cast Out Your Line And Caught A ${fishh.symbol}.
+║💵 𝗪𝗼𝗿𝘁𝗵: I Bet It'd Sell For Around *${worth}*!
+║💍 𝗜𝘁𝗲𝗺_𝗧𝘆𝗽𝗲: ${rarity}
+╚════════════╝`,
                 `./ʍɨʐʊӄɨ☣️ƈօʀɛ/MizukiFIshing.mp4`
               );
             }
