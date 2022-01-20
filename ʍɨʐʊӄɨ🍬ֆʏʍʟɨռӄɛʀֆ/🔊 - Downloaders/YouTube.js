@@ -86,7 +86,7 @@ module.exports = {
         `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
       } else {
         const Search = await yts(Needs.join(" "));
-        const YouTube = Search.YouTube.slice(0, 1);
+        const YouTube = Search.videos.slice(0, 1);
         YouTube.forEach(async function (youfound) {
           await Mizuki_Buttons.MIB(
             ӄʀǟӄɨռʐ,
