@@ -32,6 +32,7 @@ module.exports = {
 🔎𝐒𝐞𝐚𝐫𝐜𝐡 𝐘𝐨𝐮𝐓𝐮𝐛𝐞? _${ᴋᴇɪ}ytsearch_`,
   async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
     try {
+      let URL;
       var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
       var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
       const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
@@ -87,8 +88,9 @@ module.exports = {
       } else {
         const Search = await yts(Needs.join(" "));
         const YouTube = Search.videos.slice(0, 1);
-        YouTube.forEach(async function (youfound) {
-          await Mizuki_Buttons.MIB(
+        YouTube.forEach(function (youfound) {
+          URL = youfound.url;
+          Mizuki_Buttons.MIB(
             ӄʀǟӄɨռʐ,
             chat,
             𝓜𝖎𝖟𝖚ӄ𝖎,
@@ -100,28 +102,29 @@ module.exports = {
 ║⏰𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧: ${youfound.timestamp}
 ║✒️𝐀𝐮𝐭𝐡𝐨𝐫: ${youfound.author.name}
 ║📜𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${youfound.description.toString()}
-║🔗𝐋𝐢𝐧𝐤: ${youfound.url}
+║🔗𝐋𝐢𝐧𝐤: ${URL}
 ╚════════════╝`,
             youfound.thumbnail
           );
-          const download = ytdl(youfound.url, { filter: "audioonly" });
-          const writeStream = fs.createWriteStream(
-            `${ꜱᴇɴᴅᴇʀeceived.toString()}_${FinalName}.mp3`
-          );
-          download.pipe(writeStream);
-          await ӄʀǟӄɨռʐ
-            .sendMessage(
-              𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              fs.readFileSync(`${ꜱᴇɴᴅᴇʀeceived.toString()}_${FinalName}.mp3`),
-              MessageType.audio,
-              {
-                quoted: chat,
-                mimetype: "audio/mp4",
-              }
-            )
-            .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
-          cleanRF.cleanRF(`${ꜱᴇɴᴅᴇʀeceived.toString()}_${FinalName}.mp3`);
         });
+        console.log(YouTube);
+        const download = ytdl(URL, { filter: "audioonly" });
+        const writeStream = fs.createWriteStream(
+          `${ꜱᴇɴᴅᴇʀeceived.toString()}_${FinalName}.mp3`
+        );
+        download.pipe(writeStream);
+        await ӄʀǟӄɨռʐ
+          .sendMessage(
+            𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+            fs.readFileSync(`${ꜱᴇɴᴅᴇʀeceived.toString()}_${FinalName}.mp3`),
+            MessageType.audio,
+            {
+              quoted: chat,
+              mimetype: "audio/mp4",
+            }
+          )
+          .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
+        cleanRF.cleanRF(`${ꜱᴇɴᴅᴇʀeceived.toString()}_${FinalName}.mp3`);
       }
       `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
     } catch (ℓαвєяяσя) {
