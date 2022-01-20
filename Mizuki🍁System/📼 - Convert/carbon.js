@@ -49,10 +49,10 @@ or reply to a text message with
         {
           ID: 𝓜𝖎𝖟𝖚ӄ𝖎.sender,
         },
-        async (err, user) => {
-          // return user.delete();
+        async (err, userBadge) => {
+          // return userBadge.delete();
           if (err) return console.log(err);
-          if (!user) {
+          if (!userBadge) {
             var newUser = new Bagde({
               ID: 𝓜𝖎𝖟𝖚ӄ𝖎.sender,
               Badge: "🧵ʙᴀꜱɪᴄ",
@@ -64,33 +64,34 @@ or reply to a text message with
             newUser.save();
           } else {
             var clock =
-              user.PermanentLimitTime - (Date.now() - user.CurrentLimitTime);
-            if (clock > 0 && user.Limits == 0) {
-              user.value = "False";
-              user.save();
+              userBadge.PermanentLimitTime -
+              (Date.now() - userBadge.CurrentLimitTime);
+            if (clock > 0 && userBadge.Limits == 0) {
+              userBadge.value = "False";
+              userBadge.save();
             }
-            if (clock > 0 && !user.Limits == 0) {
-              user.Limits = user.Limits - 1;
-              user.value = "True";
-              user.save();
+            if (clock > 0 && !userBadge.Limits == 0) {
+              userBadge.Limits = userBadge.Limits - 1;
+              userBadge.value = "True";
+              userBadge.save();
             }
-            if (clock < 0 && user.Limits == 0) {
-              if (user.Badge === "🧵ʙᴀꜱɪᴄ") {
-                user.Limits = 10;
-              } else if (user.Badge === "🥉ʙʀᴏɴᴢᴇ") {
-                user.Limits = 20;
-              } else if (user.Badge === "🥈ꜱɪʟᴠᴇʀ") {
-                user.Limits = 40;
-              } else if (user.Badge === "🥇ɢᴏʟᴅ") {
-                user.Limits = 60;
-              } else if (user.Badge === "💍ᴘʟᴀᴛɪɴᴜᴍ") {
-                user.Limits = 80;
-              } else if (user.Badge === "💎ᴅɪᴀᴍᴏɴᴅ") {
-                user.Limits = 100;
+            if (clock < 0 && userBadge.Limits == 0) {
+              if (userBadge.Badge === "🧵ʙᴀꜱɪᴄ") {
+                userBadge.Limits = 10;
+              } else if (userBadge.Badge === "🥉ʙʀᴏɴᴢᴇ") {
+                userBadge.Limits = 20;
+              } else if (userBadge.Badge === "🥈ꜱɪʟᴠᴇʀ") {
+                userBadge.Limits = 40;
+              } else if (userBadge.Badge === "🥇ɢᴏʟᴅ") {
+                userBadge.Limits = 60;
+              } else if (userBadge.Badge === "💍ᴘʟᴀᴛɪɴᴜᴍ") {
+                userBadge.Limits = 80;
+              } else if (userBadge.Badge === "💎ᴅɪᴀᴍᴏɴᴅ") {
+                userBadge.Limits = 100;
               }
-              user.CurrentLimitTime = Date.now();
-              user.value = "True";
-              user.save();
+              userBadge.CurrentLimitTime = Date.now();
+              userBadge.value = "True";
+              userBadge.save();
             }
           }
           `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
@@ -110,11 +111,12 @@ or reply to a text message with
               JSON.stringify(jsoncool)
             );
           }, 15000);
-          console.log(user);
+          console.log(userBadge);
           `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-          if (!𝓜𝖎𝖟𝖚ӄ𝖎.fromMe && user.value === "False") {
+          if (!𝓜𝖎𝖟𝖚ӄ𝖎.fromMe && userBadge.value === "False") {
             let time = ms(
-              user.PermanentLimitTime - (Date.now() - user.CurrentLimitTime)
+              userBadge.PermanentLimitTime -
+                (Date.now() - userBadge.CurrentLimitTime)
             );
             return Mizuki_Buttons.MTB(
               ӄʀǟӄɨռʐ,
@@ -123,8 +125,8 @@ or reply to a text message with
               `💡𝐓𝐢𝐩: _Buy Higher Badges Using ${ᴋᴇɪ}shop_
 
 ╔═══════❗ 𝐈𝐦𝐩𝐨𝐫𝐭𝐚𝐧𝐭
-║⚔️ 𝗕𝗮𝗱𝗴𝗲: ${user.Badge}
-║⚡ 𝗗𝗮𝗶𝗹𝘆_𝗟𝗶𝗺𝗶𝘁: ${user.Limits} commands
+║⚔️ 𝗕𝗮𝗱𝗴𝗲: ${userBadge.Badge}
+║⚡ 𝗗𝗮𝗶𝗹𝘆_𝗟𝗶𝗺𝗶𝘁: ${userBadge.Limits} commands
 ║💤 𝗥𝗲𝗻𝗲𝘄𝘀_𝗜𝗻: ${time.hours}h ${time.minutes}m ${time.seconds}s
 ╚════════════╝`
             );
