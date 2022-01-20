@@ -15,6 +15,7 @@ const fs = require("fs");
 var path = require(`path`);
 const yts = require("yt-search");
 const ytdl = require("ytdl-core");
+const getVideoId = require("get-video-id");
 var scriptName = path.basename(__filename);
 var newScpt = scriptName.slice(0, -3).toLowerCase();
 `⬡🍁⬡`;
@@ -84,48 +85,42 @@ module.exports = {
           𝓜𝖎𝖟𝖚ӄ𝖎.commandName,
           ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
         );
-        `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-      } else {
-        const Search = await yts(Needs.join(" "));
-        const YouTube = Search.videos.slice(0, 1);
-        YouTube.forEach(function (youfound) {
-          var filename = `${Date.now.toString()}.mp3`;
-          URL = youfound.url;
-          Mizuki_Buttons.MIB(
-            ӄʀǟӄɨռʐ,
-            chat,
-            𝓜𝖎𝖟𝖚ӄ𝖎,
-            `⭕𝐀𝐮𝐝𝐢𝐨 @${ꜱᴇɴᴅᴇʀeceived}, 𝗣𝗹𝗲𝗮𝘀𝗲 𝘄𝗮𝗶𝘁 𝗳𝗼𝗿 𝘁𝗵𝗲 𝗱𝗲𝗹𝗶𝘃𝗲𝗿𝘆 𝗼𝗳 𝐀𝐮𝐝𝐢𝐨!
+      }
+      `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
+      const Search = await yts(Needs.join(" "));
+      const YouTube = Search.videos.slice(0, 1);
+      YouTube.forEach(async function (youfound) {
+        await Mizuki_Buttons.MIB(
+          ӄʀǟӄɨռʐ,
+          chat,
+          𝓜𝖎𝖟𝖚ӄ𝖎,
+          `⭕𝐀𝐮𝐝𝐢𝐨 @${ꜱᴇɴᴅᴇʀeceived}, 𝗣𝗹𝗲𝗮𝘀𝗲 𝘄𝗮𝗶𝘁 𝗳𝗼𝗿 𝘁𝗵𝗲 𝗱𝗲𝗹𝗶𝘃𝗲𝗿𝘆 𝗼𝗳 𝐀𝐮𝐝𝐢𝐨!
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-║🍻𝐓𝐢𝐭𝐥𝐞: ${youfound.title.toString()}
+║🍻𝐓𝐢𝐭𝐥𝐞: ${youfound.title}
 ║🙈𝐕𝐢𝐞𝐰𝐬: ${youfound.views}
 ║⏰𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧: ${youfound.timestamp}
 ║✒️𝐀𝐮𝐭𝐡𝐨𝐫: ${youfound.author.name}
-║📜𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${youfound.description.toString()}
-║🔗𝐋𝐢𝐧𝐤: ${URL}
+║📜𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${youfound.description}
+║🔗𝐋𝐢𝐧𝐤: ${youfound.url}
 ╚════════════╝`,
-            youfound.thumbnail
-          );
-          console.log(YouTube);
-          const download = ytdl(URL, { filter: "audioonly" });
-          const writeStream = fs.createWriteStream(filename);
-          download.pipe(writeStream);
-          ӄʀǟӄɨռʐ
-            .sendMessage(
-              𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              fs.readFileSync(filename),
-              MessageType.audio,
-              {
-                quoted: chat,
-                mimetype: "audio/mp4",
-              }
-            )
-            .then(cleanRF.cleanRF(filename))
-            .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
-        });
-      }
-      `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
+          youfound.thumbnail
+        );
+        const { id } = getVideoId(youfound.url);
+        await ytdl(youfound.url, { filter: "audioonly" }).pipe(
+          fs.createWriteStream(`${id}_${ꜱᴇɴᴅᴇʀeceived}.mp3`)
+        );
+        await ӄʀǟӄɨռʐ.sendMessage(
+          𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+          fs.readFileSync(`${id}_${ꜱᴇɴᴅᴇʀeceived}.mp3`),
+          MessageType.audio,
+          {
+            quoted: chat,
+            mimetype: "audio/mp4",
+          }
+        );
+        await cleanRF.cleanRF(`${id}_${ꜱᴇɴᴅᴇʀeceived}.mp3`);
+      });
     } catch (ℓαвєяяσя) {
       ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
       console.log(ℓαвєяяσя);
