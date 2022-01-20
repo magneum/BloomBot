@@ -108,11 +108,11 @@ module.exports = {
           );
         });
         console.log(YouTube);
-        const download = ytdl(URL, { filter: "audioonly" });
-        const writeStream = fs.createWriteStream(
+        const download = await ytdl(URL, { filter: "audioonly" });
+        const writeStream = await fs.createWriteStream(
           `${ꜱᴇɴᴅᴇʀeceived.toString()}_${FinalName}.mp3`
         );
-        download.pipe(writeStream);
+        await download.pipe(writeStream);
         await ӄʀǟӄɨռʐ
           .sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
@@ -124,7 +124,7 @@ module.exports = {
             }
           )
           .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
-        cleanRF.cleanRF(`${ꜱᴇɴᴅᴇʀeceived.toString()}_${FinalName}.mp3`);
+        await cleanRF.cleanRF(`${ꜱᴇɴᴅᴇʀeceived.toString()}_${FinalName}.mp3`);
       }
       `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
     } catch (ℓαвєяяσя) {
