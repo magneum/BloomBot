@@ -99,7 +99,7 @@ module.exports = {
               `./Mizuki🛰️Server/Coolist.json`,
               JSON.stringify(jsoncool)
             );
-          }, 15000);
+          }, 0);
           console.log(userBadge);
           `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
           if (!𝓜𝖎𝖟𝖚ӄ𝖎.fromMe && userBadge.value === "False") {
