@@ -89,6 +89,7 @@ module.exports = {
         const Search = await yts(Needs.join(" "));
         const YouTube = Search.videos.slice(0, 1);
         YouTube.forEach(function (youfound) {
+          var filename = `${Date.now.toString()}.mp3`;
           URL = youfound.url;
           Mizuki_Buttons.MIB(
             ӄʀǟӄɨռʐ,
@@ -108,19 +109,19 @@ module.exports = {
           );
           console.log(YouTube);
           const download = ytdl(URL, { filter: "audioonly" });
-          const writeStream = fs.createWriteStream(`_${Date.now.toString()}_`);
+          const writeStream = fs.createWriteStream(filename);
           download.pipe(writeStream);
           ӄʀǟӄɨռʐ
             .sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              fs.readFileSync(`_${Date.now.toString()}_`),
+              fs.readFileSync(filename),
               MessageType.audio,
               {
                 quoted: chat,
                 mimetype: "audio/mp4",
               }
             )
-            .then(cleanRF.cleanRF(`_${Date.now.toString()}_`))
+            .then(cleanRF.cleanRF(filename))
             .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
         });
       }
