@@ -372,7 +372,6 @@ ${update.desc}`,
             did: 𝓜𝖎𝖟𝖚ӄ𝖎.sender,
           },
           async (err, users) => {
-            console.log(users);
             var randomMC = require("random-material-color");
             const Canvas = require("canvas");
             var color = randomMC.getColor();
