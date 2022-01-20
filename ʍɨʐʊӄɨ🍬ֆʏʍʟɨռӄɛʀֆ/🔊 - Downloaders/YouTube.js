@@ -87,7 +87,7 @@ module.exports = {
       } else {
         const Search = await yts(Needs.join(" "));
         const YouTube = Search.YouTube.slice(0, 1);
-        YouTube.forEach(function async(youfound) {
+        YouTube.forEach(async function (youfound) {
           await Mizuki_Buttons.MIB(
             ӄʀǟӄɨռʐ,
             chat,
