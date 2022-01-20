@@ -5,6 +5,7 @@ var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 const fs = require(`fs`);
 var path = require(`path`);
+const ms = require("parse-ms");
 var scriptName = path.basename(__filename);
 var newScpt = scriptName.slice(0, -3).toLowerCase();
 module.exports = {
@@ -14,79 +15,60 @@ module.exports = {
       {
         id: 𝓜𝖎𝖟𝖚ӄ𝖎.sender,
       },
-      async (err, userLimit) => {
+      async (err, user) => {
+        // return user.delete();
         if (err) console.log(err);
-        if (!userLimit) {
+        if (!user) {
           var newUser = new Bagde({
             id: 𝓜𝖎𝖟𝖚ӄ𝖎.sender,
             badge: "basic",
             limits: 10,
             CurrentLimitTime: Date.now(),
-            TemporaryLimitTime: 0,
-            PermanentLimitTime: 86400000,
+            PermanentLimitTime: 60000,
           });
           newUser.save();
-          return Mizuki_Buttons.MTB(
-            ӄʀǟӄɨռʐ,
-            chat,
-            𝓜𝖎𝖟𝖚ӄ𝖎,
-            `*Allowed to Use:* _10-commands!_`
-          );
+          console.log(`Allowed to Use: 10-commands!`);
         } else {
-          console.log(userLimit);
-          var currentLimit = userLimit.limits;
-          var permanentLimit = userLimit.PermanentLimitTime;
-          var currentLimitTime = userLimit.CurrentLimitTime;
-          var Timeout = permanentLimit - (Date.now() - currentLimitTime);
-
-          if (currentLimit === 0 && Timeout > permanentLimit) {
-            return Mizuki_Buttons.MTB(
-              ӄʀǟӄɨռʐ,
-              chat,
-              𝓜𝖎𝖟𝖚ӄ𝖎,
-              `Daily Limit For *Basic-Badge(${currentLimit}commands)* is Over! _Buy more using ${ᴋᴇɪ}store_`
+          console.log(user);
+          var clock =
+            user.PermanentLimitTime - (Date.now() - user.CurrentLimitTime);
+          let time = ms(
+            user.PermanentLimitTime - (Date.now() - user.CurrentLimitTime)
+          );
+          console.log(clock);
+          console.log(time);
+          if (clock > 0 && user.limits == 0) {
+            console.log(
+              `Daily Limit For Basic-Badge-${user.limits}commands is Over!
+Renews In: ${time.hours}h ${time.minutes}m ${time.seconds}s ${time.milliseconds}ms`
             );
+            return;
           }
-
-          if (!currentLimit === 0 && Timeout < permanentLimit) {
-            currentLimitTime = Date.now();
-            currentLimit = currentLimit - 1;
-            userLimit.save();
-            return Mizuki_Buttons.MTB(
-              ӄʀǟӄɨռʐ,
-              chat,
-              𝓜𝖎𝖟𝖚ӄ𝖎,
-              `*Allowed to Use:* _${currentLimit}commands!_`
-            );
-          } else if (currentLimit === 0 && Timeout < permanentLimit) {
-            return Mizuki_Buttons.MTB(
-              ӄʀǟӄɨռʐ,
-              chat,
-              𝓜𝖎𝖟𝖚ӄ𝖎,
-              `*Not Allowed to Use:*  _${currentLimit}commands!_`
-            );
-          } else if (currentLimit === 0 && Timeout > permanentLimit) {
-            userLimit.TemporaryLimitTime = Date.now();
-            if (userLimit.badge === "basic") {
-              currentLimit = 10;
-            } else if (userLimit.badge === "bronze") {
-              currentLimit = 20;
-            } else if (userLimit.badge === "silver") {
-              currentLimit = 40;
-            } else if (userLimit.badge === "gold") {
-              currentLimit = 60;
-            } else if (userLimit.badge === "platinum") {
-              currentLimit = 80;
-            } else if (userLimit.badge === "diamond") {
-              currentLimit = 100;
+          if (clock > 0 && !user.limits == 0) {
+            user.limits = user.limits - 1;
+            user.save();
+            console.log(`Allowed to Use: ${user.limits}commands!
+Renews In: ${time.hours}h ${time.minutes}m ${time.seconds}s ${time.milliseconds}ms`);
+            return;
+          }
+          if (clock < 0 && user.limits == 0) {
+            if (user.badge === "basic") {
+              user.limits = 10;
+            } else if (user.badge === "bronze") {
+              user.limits = 20;
+            } else if (user.badge === "silver") {
+              user.limits = 40;
+            } else if (user.badge === "gold") {
+              user.limits = 60;
+            } else if (user.badge === "platinum") {
+              user.limits = 80;
+            } else if (user.badge === "diamond") {
+              user.limits = 100;
             }
-            userLimit.save();
-            return Mizuki_Buttons.MTB(
-              ӄʀǟӄɨռʐ,
-              chat,
-              𝓜𝖎𝖟𝖚ӄ𝖎,
-              `*Allowed to Use:* _${currentLimit}commands!_`
-            );
+            user.CurrentLimitTime = Date.now();
+            user.save();
+            console.log(`Allowed to Use: ${user.limits}commands!`);
+            return;
           }
         }
       }
