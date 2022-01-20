@@ -33,38 +33,60 @@ module.exports = {
             id: 𝓜𝖎𝖟𝖚ӄ𝖎.sender,
             badge: "basic",
             limits: 10,
-            timeout: Date.now(),
-            limitimeout: 86400000,
+            CurrentLimitTime: Date.now(),
+            TemporaryLimitTime: 0,
+            PermanentLimitTime: 86400000,
           });
           newUser
             .save()
             .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
         } else {
+          `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
           var currentLimit = userLimit.limits;
-          if (userEco.limitimeout - (Date.now() - userEco.timeout) < 24) {
-            let Time = ms(
-              userEco.limitimeout - (Date.now() - userEco.timeout) > 0
-            );
-            Mizuki_Buttons.MTB(
+          var Timeout =
+            userEco.PermanentLimitTime -
+            (Date.now() - userEco.CurrentLimitTime);
+          if (userLimit.limits === 0 && Timeout > 24) {
+            return Mizuki_Buttons.MTB(
               ӄʀǟӄɨռʐ,
               chat,
               𝓜𝖎𝖟𝖚ӄ𝖎,
-              `TimeOut: ${Time.hours}h ${Time.minutes}m ${Time.seconds}s`
+              `Daily Limit For *Basic-Badge(${userLimit.limits}commands)* is Over!`
             );
-          } else if (!userLimit.limits === 0 && userLimit.limits < 10) {
-            Mizuki_Buttons.MTB(
-              ӄʀǟӄɨռʐ,
-              chat,
-              𝓜𝖎𝖟𝖚ӄ𝖎,
-              `Allowed to Use: ${userLimit.limits}times!`
-            );
-            userLimit.timeout = Date.now();
+          }
+          `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
+          if (!userLimit.limits === 0 && Timeout < 24) {
+            userLimit.CurrentLimitTime = Date.now();
             userLimit.limits = currentLimit - 1;
             userLimit
               .save()
               .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
-          } else if (userLimit.limits === 0) {
-            Mizuki_Buttons.MTB(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, `Not Allowed to Use!`);
+            return Mizuki_Buttons.MTB(
+              ӄʀǟӄɨռʐ,
+              chat,
+              𝓜𝖎𝖟𝖚ӄ𝖎,
+              `Allowed to Use: ${userLimit.limits}commands!`
+            );
+            `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
+          } else if (userLimit.limits === 0 && Timeout < 24) {
+            return Mizuki_Buttons.MTB(
+              ӄʀǟӄɨռʐ,
+              chat,
+              𝓜𝖎𝖟𝖚ӄ𝖎,
+              `Not Allowed to Use!`
+            );
+          } else if (userLimit.limits === 0 && Timeout > 24) {
+            userLimit.TemporaryLimitTime = Date.now();
+            userLimit.limits = 10;
+            userLimit
+              .save()
+              .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
+            return Mizuki_Buttons.MTB(
+              ӄʀǟӄɨռʐ,
+              chat,
+              𝓜𝖎𝖟𝖚ӄ𝖎,
+              `Allowed to Use: ${userLimit.limits}commands!`
+            );
           }
         }
       }
