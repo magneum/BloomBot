@@ -16,7 +16,12 @@ var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 `⬡  ⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
 `🍁`;
 `🍁`;
+
 const clearance = async (ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎) => {
+  // if (𝓜𝖎𝖟𝖚ӄ𝖎.fromMe) {
+  //   value = "True";
+  //   return;
+  // }
   Bagde.findOne(
     {
       ID: 𝓜𝖎𝖟𝖚ӄ𝖎.sender,
@@ -28,12 +33,14 @@ const clearance = async (ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎) => {
         var newUser = new Bagde({
           ID: 𝓜𝖎𝖟𝖚ӄ𝖎.sender,
           Badge: "🧵ʙᴀꜱɪᴄ",
+          value: "True",
           Limits: 10,
           CurrentLimitTime: Date.now(),
           PermanentLimitTime: 86400000,
         });
         newUser.save();
-        return true;
+
+        return;
       } else {
         console.log(user);
         var clock =
@@ -56,12 +63,17 @@ const clearance = async (ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎) => {
             MessageType.text,
             { quoted: chat }
           );
-          return false;
+          user.value = "False";
+          user.save();
+
+          return;
         }
         if (clock > 0 && !user.Limits == 0) {
           user.Limits = user.Limits - 1;
+          user.value = "True";
           user.save();
-          return true;
+
+          return;
         }
         if (clock < 0 && user.Limits == 0) {
           if (user.Badge === "🧵ʙᴀꜱɪᴄ") {
@@ -78,11 +90,12 @@ const clearance = async (ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎) => {
             user.Limits = 100;
           }
           user.CurrentLimitTime = Date.now();
+          user.value = "True";
           user.save();
-          return true;
+
+          return;
         }
       }
-      return true;
     }
   );
 };

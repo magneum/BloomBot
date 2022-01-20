@@ -43,64 +43,134 @@ module.exports = {
       const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
       const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
       `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-      const jsoncool = await JSON.parse(
-        fs.readFileSync(`./Mizuki🛰️Server/Coolist.json`)
-      );
-      await jsoncool.push(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
-      await fs.writeFileSync(
-        `./Mizuki🛰️Server/Coolist.json`,
-        JSON.stringify(jsoncool)
-      );
-      setTimeout(async (error) => {
-        if (error) console.log(error);
-        await jsoncool.splice(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
-        await fs.writeFileSync(
-          `./Mizuki🛰️Server/Coolist.json`,
-          JSON.stringify(jsoncool)
-        );
-      }, 15000);
-      `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-      if (Needs.length === 0) {
-        var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(𝓜𝖎𝖟𝖚ӄ𝖎.commandName);
-        var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
-          𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ === undefined ? `Null` : 𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ;
-        const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../Mizuki🛰️Server/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
-        return ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
-          ӄʀǟӄɨռʐ,
-          chat,
-          𝓜𝖎𝖟𝖚ӄ𝖎,
-          ꜱᴇɴᴅᴇʀɪᴅ,
-          ꜱᴇɴᴅᴇʀeceived,
-          𝓜𝖎𝖟𝖚ӄ𝖎.commandName,
-          ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
-        );
-        `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-      } else if (!ytIdRegex.test(Needs[0])) {
-        var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(𝓜𝖎𝖟𝖚ӄ𝖎.commandName);
-        var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
-          𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ === undefined ? `Null` : 𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ;
-        const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../Mizuki🛰️Server/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
-        return ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
-          ӄʀǟӄɨռʐ,
-          chat,
-          𝓜𝖎𝖟𝖚ӄ𝖎,
-          ꜱᴇɴᴅᴇʀɪᴅ,
-          ꜱᴇɴᴅᴇʀeceived,
-          𝓜𝖎𝖟𝖚ӄ𝖎.commandName,
-          ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
-        );
-        `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-      } else {
-        const LinkForGroups = await yts(Needs.join(` `));
-        const GroupVideos = LinkForGroups.videos.slice(0, 1);
-        const filename = `./Mizuki🗑️Temp/${FinalName}_${Ping}_${ꜱᴇɴᴅᴇʀɪᴅ}`;
-        GroupVideos.forEach(async function (youfound) {
-          if (youfound.seconds > `1800`) {
-            return Mizuki_Buttons.MIB(
+      const Bagde = require("../../Mizuki🍃Goose/Badge");
+      const ms = require("parse-ms");
+      Bagde.findOne(
+        {
+          ID: 𝓜𝖎𝖟𝖚ӄ𝖎.sender,
+        },
+        async (err, user) => {
+          // return user.delete();
+          if (err) return console.log(err);
+          if (!user) {
+            var newUser = new Bagde({
+              ID: 𝓜𝖎𝖟𝖚ӄ𝖎.sender,
+              Badge: "🧵ʙᴀꜱɪᴄ",
+              value: "True",
+              Limits: 10,
+              CurrentLimitTime: Date.now(),
+              PermanentLimitTime: 86400000,
+            });
+            newUser.save();
+          } else {
+            var clock =
+              user.PermanentLimitTime - (Date.now() - user.CurrentLimitTime);
+            if (clock > 0 && user.Limits == 0) {
+              user.value = "False";
+              user.save();
+            }
+            if (clock > 0 && !user.Limits == 0) {
+              user.Limits = user.Limits - 1;
+              user.value = "True";
+              user.save();
+            }
+            if (clock < 0 && user.Limits == 0) {
+              if (user.Badge === "🧵ʙᴀꜱɪᴄ") {
+                user.Limits = 10;
+              } else if (user.Badge === "🥉ʙʀᴏɴᴢᴇ") {
+                user.Limits = 20;
+              } else if (user.Badge === "🥈ꜱɪʟᴠᴇʀ") {
+                user.Limits = 40;
+              } else if (user.Badge === "🥇ɢᴏʟᴅ") {
+                user.Limits = 60;
+              } else if (user.Badge === "💍ᴘʟᴀᴛɪɴᴜᴍ") {
+                user.Limits = 80;
+              } else if (user.Badge === "💎ᴅɪᴀᴍᴏɴᴅ") {
+                user.Limits = 100;
+              }
+              user.CurrentLimitTime = Date.now();
+              user.value = "True";
+              user.save();
+            }
+          }
+          `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
+          const jsoncool = await JSON.parse(
+            fs.readFileSync(`./Mizuki🛰️Server/Coolist.json`)
+          );
+          await jsoncool.push(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
+          fs.writeFileSync(
+            `./Mizuki🛰️Server/Coolist.json`,
+            JSON.stringify(jsoncool)
+          );
+          setTimeout((ℓαвєяяσя) => {
+            if (ℓαвєяяσя) return console.log(ℓαвєяяσя);
+            jsoncool.splice(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
+            fs.writeFileSync(
+              `./Mizuki🛰️Server/Coolist.json`,
+              JSON.stringify(jsoncool)
+            );
+          }, 15000);
+          console.log(user);
+          `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
+          if (!𝓜𝖎𝖟𝖚ӄ𝖎.fromMe && user.value === "False") {
+            let time = ms(
+              user.PermanentLimitTime - (Date.now() - user.CurrentLimitTime)
+            );
+            return Mizuki_Buttons.MTB(
               ӄʀǟӄɨռʐ,
               chat,
               𝓜𝖎𝖟𝖚ӄ𝖎,
-              `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚, @${ꜱᴇɴᴅᴇʀeceived}, ⭕𝐀𝐮𝐝𝐢𝐨
+              `💡𝐓𝐢𝐩: _Buy Higher Badges Using ${ᴋᴇɪ}shop_
+
+╔═══════❗ 𝐈𝐦𝐩𝐨𝐫𝐭𝐚𝐧𝐭
+║⚔️ 𝗕𝗮𝗱𝗴𝗲: ${user.Badge}
+║⚡ 𝗗𝗮𝗶𝗹𝘆_𝗟𝗶𝗺𝗶𝘁: ${user.Limits} commands
+║💤 𝗥𝗲𝗻𝗲𝘄𝘀_𝗜𝗻: ${time.hours}h ${time.minutes}m ${time.seconds}s
+╚════════════╝`
+            );
+          }
+          `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
+          if (Needs.length === 0) {
+            var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(𝓜𝖎𝖟𝖚ӄ𝖎.commandName);
+            var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
+              𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ === undefined ? `Null` : 𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ;
+            const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../Mizuki🛰️Server/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
+            return ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
+              ӄʀǟӄɨռʐ,
+              chat,
+              𝓜𝖎𝖟𝖚ӄ𝖎,
+              ꜱᴇɴᴅᴇʀɪᴅ,
+              ꜱᴇɴᴅᴇʀeceived,
+              𝓜𝖎𝖟𝖚ӄ𝖎.commandName,
+              ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
+            );
+            `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
+          } else if (!ytIdRegex.test(Needs[0])) {
+            var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(𝓜𝖎𝖟𝖚ӄ𝖎.commandName);
+            var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
+              𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ === undefined ? `Null` : 𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ;
+            const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../Mizuki🛰️Server/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
+            return ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
+              ӄʀǟӄɨռʐ,
+              chat,
+              𝓜𝖎𝖟𝖚ӄ𝖎,
+              ꜱᴇɴᴅᴇʀɪᴅ,
+              ꜱᴇɴᴅᴇʀeceived,
+              𝓜𝖎𝖟𝖚ӄ𝖎.commandName,
+              ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
+            );
+            `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
+          } else {
+            const LinkForGroups = await yts(Needs.join(` `));
+            const GroupVideos = LinkForGroups.videos.slice(0, 1);
+            const filename = `./Mizuki🗑️Temp/${FinalName}_${Ping}_${ꜱᴇɴᴅᴇʀɪᴅ}`;
+            GroupVideos.forEach(async function (youfound) {
+              if (youfound.seconds > `1800`) {
+                return Mizuki_Buttons.MIB(
+                  ӄʀǟӄɨռʐ,
+                  chat,
+                  𝓜𝖎𝖟𝖚ӄ𝖎,
+                  `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚, @${ꜱᴇɴᴅᴇʀeceived}, ⭕𝐀𝐮𝐝𝐢𝐨
 𝗣𝗹𝗲𝗮𝘀𝗲 𝗖𝗵𝗼𝗼𝘀𝗲 𝗙𝗶𝗹𝗲 𝗦𝗺𝗮𝗹𝗹𝗲𝗿 𝗧𝗵𝗲𝗻 𝟯𝟬𝗺𝗶𝗻𝘂𝘁𝗲𝘀!
 
 ────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
@@ -109,15 +179,15 @@ module.exports = {
 📜𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧⤞ ${youfound.description}
 🔗𝐋𝐢𝐧𝐤⤞ ${youfound.url}
 `,
-              youfound.thumbnail
-            );
-          }
-          `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-          Mizuki_Buttons.MIB(
-            ӄʀǟӄɨռʐ,
-            chat,
-            𝓜𝖎𝖟𝖚ӄ𝖎,
-            `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚, @${ꜱᴇɴᴅᴇʀeceived},
+                  youfound.thumbnail
+                );
+              }
+              `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
+              Mizuki_Buttons.MIB(
+                ӄʀǟӄɨռʐ,
+                chat,
+                𝓜𝖎𝖟𝖚ӄ𝖎,
+                `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚, @${ꜱᴇɴᴅᴇʀeceived},
 ⭕𝐀𝐮𝐝𝐢𝐨 𝗣𝗹𝗲𝗮𝘀𝗲 𝘄𝗮𝗶𝘁 𝗳𝗼𝗿 𝘁𝗵𝗲 𝗱𝗲𝗹𝗶𝘃𝗲𝗿𝘆 𝗼𝗳 𝐀𝐮𝐝𝐢𝐨!
 
 ────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
@@ -127,66 +197,69 @@ module.exports = {
 ✒️𝐀𝐮𝐭𝐡𝐨𝐫⤞ ${youfound.author.name}
 📜𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧⤞ ${youfound.description}
 🔗𝐋𝐢𝐧𝐤⤞ ${youfound.url}`,
-            youfound.thumbnail
-          );
-          URL = youfound.url;
-          `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-          try {
-            var ʏᴛᴀᴅᴏᴡɴʟᴏᴀᴅ = function (uri, filename, callback) {
-              request.head(uri, function (ℓαвєяяσя, ɢᴏᴛʀᴇꜱᴘ, body) {
-                mime = ɢᴏᴛʀᴇꜱᴘ.headers[`content-type`];
-                request(uri)
-                  .pipe(fs.createWriteStream(filename))
-                  .on(`close`, callback);
-              });
-            };
-            await YouTube_Music(URL).then(async (ɢᴏᴛʀᴇꜱᴘ) => {
-              const { dl_link, thumb, title, filesizeF, filesize } = ɢᴏᴛʀᴇꜱᴘ;
-              await axios
-                .get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
-                .then(async (a) => {
-                  ʏᴛᴀᴅᴏᴡɴʟᴏᴀᴅ(dl_link, filename, async function () {
-                    await ӄʀǟӄɨռʐ
-                      .sendMessage(
-                        𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                        fs.readFileSync(filename),
-                        MessageType.audio,
-                        {
-                          quoted: chat,
-                          mimetype: "audio/mp4",
-                        }
-                      )
-                      .catch((ℓαвєяяσя) =>
-                        ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
-                      );
-                    await cleanRF.cleanRF(filename);
+                youfound.thumbnail
+              );
+              URL = youfound.url;
+              `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
+              try {
+                var ʏᴛᴀᴅᴏᴡɴʟᴏᴀᴅ = function (uri, filename, callback) {
+                  request.head(uri, function (ℓαвєяяσя, ɢᴏᴛʀᴇꜱᴘ, body) {
+                    mime = ɢᴏᴛʀᴇꜱᴘ.headers[`content-type`];
+                    request(uri)
+                      .pipe(fs.createWriteStream(filename))
+                      .on(`close`, callback);
                   });
+                };
+                await YouTube_Music(URL).then(async (ɢᴏᴛʀᴇꜱᴘ) => {
+                  const { dl_link, thumb, title, filesizeF, filesize } =
+                    ɢᴏᴛʀᴇꜱᴘ;
+                  await axios
+                    .get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
+                    .then(async (a) => {
+                      ʏᴛᴀᴅᴏᴡɴʟᴏᴀᴅ(dl_link, filename, async function () {
+                        await ӄʀǟӄɨռʐ
+                          .sendMessage(
+                            𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                            fs.readFileSync(filename),
+                            MessageType.audio,
+                            {
+                              quoted: chat,
+                              mimetype: "audio/mp4",
+                            }
+                          )
+                          .catch((ℓαвєяяσя) =>
+                            ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
+                          );
+                        await cleanRF.cleanRF(filename);
+                      });
+                    });
                 });
-            });
-            `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-          } catch (ℓαвєяяσя) {
-            console.log(ℓαвєяяσя);
-            exec(
-              `youtube-dl --extract-audio --audio-format mp3 -o '${ꜱᴇɴᴅᴇʀeceived}_${youfound.title}.%(ext)s'  ${URL}`,
-              (err) => {
-                if (err) return console.log(err);
-                ӄʀǟӄɨռʐ.sendMessage(
-                  𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                  fs.readFileSync(`${ꜱᴇɴᴅᴇʀeceived}_${youfound.title}.mp3`),
-                  MessageType.audio,
-                  {
-                    mimetype: "audio/mp4",
-                    quoted: chat,
+                `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
+              } catch (ℓαвєяяσя) {
+                console.log(ℓαвєяяσя);
+                exec(
+                  `youtube-dl --extract-audio --audio-format mp3 -o '${ꜱᴇɴᴅᴇʀeceived}_${youfound.title}.%(ext)s'  ${URL}`,
+                  (err) => {
+                    if (err) return console.log(err);
+                    ӄʀǟӄɨռʐ.sendMessage(
+                      𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                      fs.readFileSync(`${ꜱᴇɴᴅᴇʀeceived}_${youfound.title}.mp3`),
+                      MessageType.audio,
+                      {
+                        mimetype: "audio/mp4",
+                        quoted: chat,
+                      }
+                    );
+                    cleanRF.cleanRF(`${ꜱᴇɴᴅᴇʀeceived}_${youfound.title}.mp3`);
                   }
                 );
-                cleanRF.cleanRF(`${ꜱᴇɴᴅᴇʀeceived}_${youfound.title}.mp3`);
+                // youtube-dl --extract-audio --audio-format mp3 -o '%(title)s.%(ext)s' https://youtu.be/L5CV53wCWO0
               }
-            );
-            // youtube-dl --extract-audio --audio-format mp3 -o '%(title)s.%(ext)s' https://youtu.be/L5CV53wCWO0
+            });
           }
-        });
-      }
-      `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
+          `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
+        }
+      );
     } catch (ℓαвєяяσя) {
       ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
       console.log(ℓαвєяяσя);

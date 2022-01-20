@@ -50,47 +50,104 @@ module.exports = {
         );
       }
       `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-      let CL;
-      if (!𝓜𝖎𝖟𝖚ӄ𝖎.fromMe && !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderDev) {
-        const clearance = require("../../Mizuki🛰️Server/clearance");
-        const cleared = await clearance(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎);
-        CL = cleared;
-      }
-      if (!CL) {
-        return;
-      }
-      `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-      const jsoncool = await JSON.parse(
-        fs.readFileSync(`./Mizuki🛰️Server/Coolist.json`)
-      );
-      await jsoncool.push(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
-      fs.writeFileSync(
-        `./Mizuki🛰️Server/Coolist.json`,
-        JSON.stringify(jsoncool)
-      );
-      setTimeout(
-        ((ℓαвєяяσя) => {
-          if (ℓαвєяяσя) return console.log(ℓαвєяяσя);
-          jsoncool.splice(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
+      const Bagde = require("../../Mizuki🍃Goose/Badge");
+      const ms = require("parse-ms");
+      Bagde.findOne(
+        {
+          ID: 𝓜𝖎𝖟𝖚ӄ𝖎.sender,
+        },
+        async (err, user) => {
+          // return user.delete();
+          if (err) return console.log(err);
+          if (!user) {
+            var newUser = new Bagde({
+              ID: 𝓜𝖎𝖟𝖚ӄ𝖎.sender,
+              Badge: "🧵ʙᴀꜱɪᴄ",
+              value: "True",
+              Limits: 10,
+              CurrentLimitTime: Date.now(),
+              PermanentLimitTime: 86400000,
+            });
+            newUser.save();
+          } else {
+            var clock =
+              user.PermanentLimitTime - (Date.now() - user.CurrentLimitTime);
+            if (clock > 0 && user.Limits == 0) {
+              user.value = "False";
+              user.save();
+            }
+            if (clock > 0 && !user.Limits == 0) {
+              user.Limits = user.Limits - 1;
+              user.value = "True";
+              user.save();
+            }
+            if (clock < 0 && user.Limits == 0) {
+              if (user.Badge === "🧵ʙᴀꜱɪᴄ") {
+                user.Limits = 10;
+              } else if (user.Badge === "🥉ʙʀᴏɴᴢᴇ") {
+                user.Limits = 20;
+              } else if (user.Badge === "🥈ꜱɪʟᴠᴇʀ") {
+                user.Limits = 40;
+              } else if (user.Badge === "🥇ɢᴏʟᴅ") {
+                user.Limits = 60;
+              } else if (user.Badge === "💍ᴘʟᴀᴛɪɴᴜᴍ") {
+                user.Limits = 80;
+              } else if (user.Badge === "💎ᴅɪᴀᴍᴏɴᴅ") {
+                user.Limits = 100;
+              }
+              user.CurrentLimitTime = Date.now();
+              user.value = "True";
+              user.save();
+            }
+          }
+          `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
+          const jsoncool = await JSON.parse(
+            fs.readFileSync(`./Mizuki🛰️Server/Coolist.json`)
+          );
+          await jsoncool.push(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
           fs.writeFileSync(
             `./Mizuki🛰️Server/Coolist.json`,
             JSON.stringify(jsoncool)
           );
-        },
-        15000)
-      );
-      `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-      let res = await fetch(
-        API("https://some-random-api.ml", "/pokedex", {
-          pokemon: Needs.join(" "),
-        })
-      );
-      let json = await res.json();
-      Mizuki_Buttons.MVB(
-        ӄʀǟӄɨռʐ,
-        chat,
-        𝓜𝖎𝖟𝖚ӄ𝖎,
-        `@${ꜱᴇɴᴅᴇʀeceived},
+          setTimeout((ℓαвєяяσя) => {
+            if (ℓαвєяяσя) return console.log(ℓαвєяяσя);
+            jsoncool.splice(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
+            fs.writeFileSync(
+              `./Mizuki🛰️Server/Coolist.json`,
+              JSON.stringify(jsoncool)
+            );
+          }, 15000);
+          console.log(user);
+          `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
+          if (!𝓜𝖎𝖟𝖚ӄ𝖎.fromMe && user.value === "False") {
+            let time = ms(
+              user.PermanentLimitTime - (Date.now() - user.CurrentLimitTime)
+            );
+            return Mizuki_Buttons.MTB(
+              ӄʀǟӄɨռʐ,
+              chat,
+              𝓜𝖎𝖟𝖚ӄ𝖎,
+              `💡𝐓𝐢𝐩: _Buy Higher Badges Using ${ᴋᴇɪ}shop_
+
+╔═══════❗ 𝐈𝐦𝐩𝐨𝐫𝐭𝐚𝐧𝐭
+║⚔️ 𝗕𝗮𝗱𝗴𝗲: ${user.Badge}
+║⚡ 𝗗𝗮𝗶𝗹𝘆_𝗟𝗶𝗺𝗶𝘁: ${user.Limits} commands
+║💤 𝗥𝗲𝗻𝗲𝘄𝘀_𝗜𝗻: ${time.hours}h ${time.minutes}m ${time.seconds}s
+╚════════════╝`
+            );
+          }
+          `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
+          let res = await fetch(
+            API("https://some-random-api.ml", "/pokedex", {
+              pokemon: Needs.join(" "),
+            })
+          );
+          let json = await res.json();
+          Mizuki_Buttons.MVB(
+            ӄʀǟӄɨռʐ,
+            chat,
+            𝓜𝖎𝖟𝖚ӄ𝖎,
+            `@${ꜱᴇɴᴅᴇʀeceived},
 
 ╔═══════🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 ║★𝗡𝗮𝗺𝗲: _${json.name}_
@@ -124,8 +181,10 @@ module.exports = {
 ║★${json.description}
 ╚════════════╝
 `.trim(),
-        json.sprites.animated
-      ).catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
+            json.sprites.animated
+          ).catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
+        }
+      );
       `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
     } catch (ℓαвєяяσя) {
       ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);

@@ -36,152 +36,226 @@ module.exports = {
       const FileName = FN.toString();
       console.log("FileName: " + FileName);
       `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-      const jsoncool = JSON.parse(
-        fs.readFileSync(`./Mizuki🛰️Server/Coolist.json`)
-      );
-      jsoncool.push(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
-      fs.writeFileSync(
-        `./Mizuki🛰️Server/Coolist.json`,
-        JSON.stringify(jsoncool)
-      );
-      setTimeout(() => {
-        jsoncool.splice(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
-        fs.writeFileSync(
-          `./Mizuki🛰️Server/Coolist.json`,
-          JSON.stringify(jsoncool)
-        );
-      }, 15000);
-      `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-      try {
-        var FILEOBJECT = {
-          message: chat.message.extendedTextMessage.contextInfo.quotedMessage,
-        };
-        var FileType = await ӄʀǟӄɨռʐ.downloadAndSaveMediaMessage(
-          FILEOBJECT,
-          FileName
-        );
-      } catch (ℓαвєяяσя) {
-        var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(𝓜𝖎𝖟𝖚ӄ𝖎.commandName);
-        var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
-          𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ === undefined ? `Null` : 𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ;
-        const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../Mizuki🛰️Server/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
-        return ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
-          ӄʀǟӄɨռʐ,
-          chat,
-          𝓜𝖎𝖟𝖚ӄ𝖎,
-          ꜱᴇɴᴅᴇʀɪᴅ,
-          ꜱᴇɴᴅᴇʀeceived,
-          𝓜𝖎𝖟𝖚ӄ𝖎.commandName,
-          ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
-        );
-      }
-      if (FileType.endsWith(".jpeg")) {
-        // ====================================================================================================== JPEG
-        ffmpeg(`${FileName}.jpeg`)
-          .outputOptions([`-y`, `-vcodec libwebp`])
-          .videoFilters(
-            `scale=2000:2000:flags=lanczos:force_original_aspect_ratio=decrease`,
-            `format=rgba`,
-            `pad=2000:2000:(ow-iw)/2:(oh-ih)/2:color=#00000000,setsar=1`
-          )
-          .save(`${FileName}.webp`)
-          .on(`end`, (ℓαвєяяσя) => {
+      const Bagde = require("../../Mizuki🍃Goose/Badge");
+      const ms = require("parse-ms");
+      Bagde.findOne(
+        {
+          ID: 𝓜𝖎𝖟𝖚ӄ𝖎.sender,
+        },
+        async (err, user) => {
+          // return user.delete();
+          if (err) return console.log(err);
+          if (!user) {
+            var newUser = new Bagde({
+              ID: 𝓜𝖎𝖟𝖚ӄ𝖎.sender,
+              Badge: "🧵ʙᴀꜱɪᴄ",
+              value: "True",
+              Limits: 10,
+              CurrentLimitTime: Date.now(),
+              PermanentLimitTime: 86400000,
+            });
+            newUser.save();
+          } else {
+            var clock =
+              user.PermanentLimitTime - (Date.now() - user.CurrentLimitTime);
+            if (clock > 0 && user.Limits == 0) {
+              user.value = "False";
+              user.save();
+            }
+            if (clock > 0 && !user.Limits == 0) {
+              user.Limits = user.Limits - 1;
+              user.value = "True";
+              user.save();
+            }
+            if (clock < 0 && user.Limits == 0) {
+              if (user.Badge === "🧵ʙᴀꜱɪᴄ") {
+                user.Limits = 10;
+              } else if (user.Badge === "🥉ʙʀᴏɴᴢᴇ") {
+                user.Limits = 20;
+              } else if (user.Badge === "🥈ꜱɪʟᴠᴇʀ") {
+                user.Limits = 40;
+              } else if (user.Badge === "🥇ɢᴏʟᴅ") {
+                user.Limits = 60;
+              } else if (user.Badge === "💍ᴘʟᴀᴛɪɴᴜᴍ") {
+                user.Limits = 80;
+              } else if (user.Badge === "💎ᴅɪᴀᴍᴏɴᴅ") {
+                user.Limits = 100;
+              }
+              user.CurrentLimitTime = Date.now();
+              user.value = "True";
+              user.save();
+            }
+          }
+          `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
+          const jsoncool = await JSON.parse(
+            fs.readFileSync(`./Mizuki🛰️Server/Coolist.json`)
+          );
+          await jsoncool.push(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
+          fs.writeFileSync(
+            `./Mizuki🛰️Server/Coolist.json`,
+            JSON.stringify(jsoncool)
+          );
+          setTimeout((ℓαвєяяσя) => {
             if (ℓαвєяяσя) return console.log(ℓαвєяяσя);
+            jsoncool.splice(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
+            fs.writeFileSync(
+              `./Mizuki🛰️Server/Coolist.json`,
+              JSON.stringify(jsoncool)
+            );
+          }, 15000);
+          console.log(user);
+          `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
+          if (!𝓜𝖎𝖟𝖚ӄ𝖎.fromMe && user.value === "False") {
+            let time = ms(
+              user.PermanentLimitTime - (Date.now() - user.CurrentLimitTime)
+            );
+            return Mizuki_Buttons.MTB(
+              ӄʀǟӄɨռʐ,
+              chat,
+              𝓜𝖎𝖟𝖚ӄ𝖎,
+              `💡𝐓𝐢𝐩: _Buy Higher Badges Using ${ᴋᴇɪ}shop_
+
+╔═══════❗ 𝐈𝐦𝐩𝐨𝐫𝐭𝐚𝐧𝐭
+║⚔️ 𝗕𝗮𝗱𝗴𝗲: ${user.Badge}
+║⚡ 𝗗𝗮𝗶𝗹𝘆_𝗟𝗶𝗺𝗶𝘁: ${user.Limits} commands
+║💤 𝗥𝗲𝗻𝗲𝘄𝘀_𝗜𝗻: ${time.hours}h ${time.minutes}m ${time.seconds}s
+╚════════════╝`
+            );
+          }
+          `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
+          try {
+            var FILEOBJECT = {
+              message:
+                chat.message.extendedTextMessage.contextInfo.quotedMessage,
+            };
+            var FileType = await ӄʀǟӄɨռʐ.downloadAndSaveMediaMessage(
+              FILEOBJECT,
+              FileName
+            );
+          } catch (ℓαвєяяσя) {
+            var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(𝓜𝖎𝖟𝖚ӄ𝖎.commandName);
+            var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
+              𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ === undefined ? `Null` : 𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ;
+            const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../Mizuki🛰️Server/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
+            return ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
+              ӄʀǟӄɨռʐ,
+              chat,
+              𝓜𝖎𝖟𝖚ӄ𝖎,
+              ꜱᴇɴᴅᴇʀɪᴅ,
+              ꜱᴇɴᴅᴇʀeceived,
+              𝓜𝖎𝖟𝖚ӄ𝖎.commandName,
+              ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
+            );
+          }
+          if (FileType.endsWith(".jpeg")) {
+            // ====================================================================================================== JPEG
+            ffmpeg(`${FileName}.jpeg`)
+              .outputOptions([`-y`, `-vcodec libwebp`])
+              .videoFilters(
+                `scale=2000:2000:flags=lanczos:force_original_aspect_ratio=decrease`,
+                `format=rgba`,
+                `pad=2000:2000:(ow-iw)/2:(oh-ih)/2:color=#00000000,setsar=1`
+              )
+              .save(`${FileName}.webp`)
+              .on(`end`, (ℓαвєяяσя) => {
+                if (ℓαвєяяσя) return console.log(ℓαвєяяσя);
+                ӄʀǟӄɨռʐ.sendMessage(
+                  𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                  fs.readFileSync(`${FileName}.webp`),
+                  MessageType.sticker,
+                  { quoted: chat }
+                );
+                cleanRF.cleanRF(`${FileName}.jpeg`, `${FileName}.webp`);
+              })
+              .on(`error`, (ℓαвєяяσя) => {
+                console.log(ℓαвєяяσя);
+              });
+            console.log("FileType: " + FileType);
+          } else if (FileType.endsWith(".png")) {
+            // ====================================================================================================== PNG
+            ffmpeg(`${FileName}.png`)
+              .outputOptions([`-y`, `-vcodec libwebp`])
+              .videoFilters(
+                `scale=2000:2000:flags=lanczos:force_original_aspect_ratio=decrease`,
+                `format=rgba`,
+                `pad=2000:2000:(ow-iw)/2:(oh-ih)/2:color=#00000000,setsar=1`
+              )
+              .save(`${FileName}.webp`)
+              .on(`end`, (ℓαвєяяσя) => {
+                if (ℓαвєяяσя) return console.log(ℓαвєяяσя);
+                ӄʀǟӄɨռʐ.sendMessage(
+                  𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                  fs.readFileSync(`${FileName}.webp`),
+                  MessageType.sticker,
+                  { quoted: chat }
+                );
+                cleanRF.cleanRF(`${FileName}.mp4`, `${FileName}.webp`);
+              })
+              .on(`error`, (ℓαвєяяσя) => {
+                console.log(ℓαвєяяσя);
+              });
+            console.log("FileType: " + FileType);
+          } else if (FileType.endsWith(".webp")) {
+            // ====================================================================================================== WEBP
             ӄʀǟӄɨռʐ.sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               fs.readFileSync(`${FileName}.webp`),
               MessageType.sticker,
               { quoted: chat }
             );
-            cleanRF.cleanRF(`${FileName}.jpeg`, `${FileName}.webp`);
-          })
-          .on(`error`, (ℓαвєяяσя) => {
-            console.log(ℓαвєяяσя);
-          });
-        console.log("FileType: " + FileType);
-      } else if (FileType.endsWith(".png")) {
-        // ====================================================================================================== PNG
-        ffmpeg(`${FileName}.png`)
-          .outputOptions([`-y`, `-vcodec libwebp`])
-          .videoFilters(
-            `scale=2000:2000:flags=lanczos:force_original_aspect_ratio=decrease`,
-            `format=rgba`,
-            `pad=2000:2000:(ow-iw)/2:(oh-ih)/2:color=#00000000,setsar=1`
-          )
-          .save(`${FileName}.webp`)
-          .on(`end`, (ℓαвєяяσя) => {
-            if (ℓαвєяяσя) return console.log(ℓαвєяяσя);
-            ӄʀǟӄɨռʐ.sendMessage(
-              𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              fs.readFileSync(`${FileName}.webp`),
-              MessageType.sticker,
-              { quoted: chat }
+            cleanRF.cleanRF(`${FileName}.webp`);
+            console.log("FileType: " + FileType);
+          } else if (FileType.endsWith(".mp4")) {
+            // ====================================================================================================== MP4
+            ffmpeg(`${FileName}.mp4`)
+              .duration(8)
+              .outputOptions([
+                `-y`,
+                `-vcodec libwebp`,
+                `-lossless 1`,
+                `-qscale 1`,
+                `-preset default`,
+                `-loop 0`,
+                `-an`,
+                `-vsync 0`,
+                `-s 600x600`,
+              ])
+              .videoFilters(
+                `scale=600:600:flags=lanczos:force_original_aspect_ratio=decrease,format=rgba,pad=600:600:(ow-iw)/2:(oh-ih)/2:color=#00000000,setsar=1`
+              )
+              .save(`${FileName}.webp`)
+              .on(`end`, () => {
+                ӄʀǟӄɨռʐ.sendMessage(
+                  𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                  fs.readFileSync(`${FileName}.webp`),
+                  MessageType.sticker,
+                  { quoted: chat }
+                );
+                cleanRF.cleanRF(`${FileName}.mp4`, `${FileName}.webp`);
+              })
+              .on(`error`, (ℓαвєяяσя) => {
+                console.log(ℓαвєяяσя);
+              });
+            console.log("FileType: " + FileType);
+          } else {
+            // ====================================================================================================== UNKNOWN
+            console.log("FileType: " + FileType);
+            var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(𝓜𝖎𝖟𝖚ӄ𝖎.commandName);
+            var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
+              𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ === undefined ? `Null` : 𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ;
+            const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../Mizuki🛰️Server/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
+            return ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
+              ӄʀǟӄɨռʐ,
+              chat,
+              𝓜𝖎𝖟𝖚ӄ𝖎,
+              ꜱᴇɴᴅᴇʀɪᴅ,
+              ꜱᴇɴᴅᴇʀeceived,
+              𝓜𝖎𝖟𝖚ӄ𝖎.commandName,
+              ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
             );
-            cleanRF.cleanRF(`${FileName}.mp4`, `${FileName}.webp`);
-          })
-          .on(`error`, (ℓαвєяяσя) => {
-            console.log(ℓαвєяяσя);
-          });
-        console.log("FileType: " + FileType);
-      } else if (FileType.endsWith(".webp")) {
-        // ====================================================================================================== WEBP
-        ӄʀǟӄɨռʐ.sendMessage(
-          𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-          fs.readFileSync(`${FileName}.webp`),
-          MessageType.sticker,
-          { quoted: chat }
-        );
-        cleanRF.cleanRF(`${FileName}.webp`);
-        console.log("FileType: " + FileType);
-      } else if (FileType.endsWith(".mp4")) {
-        // ====================================================================================================== MP4
-        ffmpeg(`${FileName}.mp4`)
-          .duration(8)
-          .outputOptions([
-            `-y`,
-            `-vcodec libwebp`,
-            `-lossless 1`,
-            `-qscale 1`,
-            `-preset default`,
-            `-loop 0`,
-            `-an`,
-            `-vsync 0`,
-            `-s 600x600`,
-          ])
-          .videoFilters(
-            `scale=600:600:flags=lanczos:force_original_aspect_ratio=decrease,format=rgba,pad=600:600:(ow-iw)/2:(oh-ih)/2:color=#00000000,setsar=1`
-          )
-          .save(`${FileName}.webp`)
-          .on(`end`, () => {
-            ӄʀǟӄɨռʐ.sendMessage(
-              𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              fs.readFileSync(`${FileName}.webp`),
-              MessageType.sticker,
-              { quoted: chat }
-            );
-            cleanRF.cleanRF(`${FileName}.mp4`, `${FileName}.webp`);
-          })
-          .on(`error`, (ℓαвєяяσя) => {
-            console.log(ℓαвєяяσя);
-          });
-        console.log("FileType: " + FileType);
-      } else {
-        // ====================================================================================================== UNKNOWN
-        console.log("FileType: " + FileType);
-        var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(𝓜𝖎𝖟𝖚ӄ𝖎.commandName);
-        var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
-          𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ === undefined ? `Null` : 𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ;
-        const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../Mizuki🛰️Server/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
-        return ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
-          ӄʀǟӄɨռʐ,
-          chat,
-          𝓜𝖎𝖟𝖚ӄ𝖎,
-          ꜱᴇɴᴅᴇʀɪᴅ,
-          ꜱᴇɴᴅᴇʀeceived,
-          𝓜𝖎𝖟𝖚ӄ𝖎.commandName,
-          ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
-        );
-      }
+          }
+        }
+      );
     } catch (ℓαвєяяσя) {
       ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
       console.log(ℓαвєяяσя);
