@@ -386,7 +386,29 @@ ${update.desc}`,
             } else {
               var currentLvl = users.level;
               var currentXP = users.xp;
-              let nxtlvl = 100 * Math.pow(2, currentLvl);
+              if (currentLvl >= 5) {
+                var nxtlvl = 50 * Math.pow(2, currentLvl);
+              } else if (currentLvl >= 10) {
+                var nxtlvl = 100 * Math.pow(2, currentLvl);
+              } else if (currentLvl >= 20) {
+                var nxtlvl = 200 * Math.pow(2, currentLvl);
+              } else if (currentLvl >= 30) {
+                var nxtlvl = 300 * Math.pow(2, currentLvl);
+              } else if (currentLvl >= 40) {
+                var nxtlvl = 400 * Math.pow(2, currentLvl);
+              } else if (currentLvl >= 50) {
+                var nxtlvl = 500 * Math.pow(2, currentLvl);
+              } else if (currentLvl >= 60) {
+                var nxtlvl = 600 * Math.pow(2, currentLvl);
+              } else if (currentLvl >= 70) {
+                var nxtlvl = 700 * Math.pow(2, currentLvl);
+              } else if (currentLvl >= 80) {
+                var nxtlvl = 800 * Math.pow(2, currentLvl);
+              } else if (currentLvl >= 90) {
+                var nxtlvl = 900 * Math.pow(2, currentLvl);
+              } else if (currentLvl >= 100) {
+                var nxtlvl = 1000 * Math.pow(2, currentLvl);
+              }
               var xpleft = nxtlvl - currentXP;
               users.xp = users.xp + xpAdd;
               if (users.xp >= nxtlvl) {
