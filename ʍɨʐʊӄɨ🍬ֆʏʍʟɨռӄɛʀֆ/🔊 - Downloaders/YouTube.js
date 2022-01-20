@@ -124,18 +124,18 @@ module.exports = {
           );
           const { id } = getVideoId(youfound.url);
           await ytdl(youfound.url, { filter: "audioonly" }).pipe(
-            fs.createWriteStream(`${id}_${ꜱᴇɴᴅᴇʀeceived}.mp3`)
+            fs.createWriteStream(`${id}.mp3`)
           );
           await ӄʀǟӄɨռʐ.sendMessage(
             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-            fs.readFileSync(`${id}_${ꜱᴇɴᴅᴇʀeceived}.mp3`),
+            fs.readFileSync(`${id}.mp3`),
             MessageType.audio,
             {
               quoted: chat,
               mimetype: "audio/mp4",
             }
           );
-          await cleanRF.cleanRF(`${id}_${ꜱᴇɴᴅᴇʀeceived}.mp3`);
+          await cleanRF.cleanRF(`${id}.mp3`);
         }
       });
       `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
