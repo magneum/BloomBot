@@ -47,14 +47,14 @@ exports.MizukiGM = async (ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎) => {
   }
   const link = MizukiTenorMaker(FinalName.toLowerCase());
   `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-  const jsoncool = JSON.parse(fs.readFileSync(`./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`));
+  const jsoncool = JSON.parse(fs.readFileSync(`./Mizuki🛰️Server/Coolist.json`));
   await jsoncool.push(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
-  fs.writeFileSync(`./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`, JSON.stringify(jsoncool));
+  fs.writeFileSync(`./Mizuki🛰️Server/Coolist.json`, JSON.stringify(jsoncool));
   console.log("ID Added " + 𝓜𝖎𝖟𝖚ӄ𝖎.sender);
   setTimeout(async (error) => {
     if (error) console.log(error);
     await jsoncool.splice(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
-    fs.writeFileSync(`./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`, JSON.stringify(jsoncool));
+    fs.writeFileSync(`./Mizuki🛰️Server/Coolist.json`, JSON.stringify(jsoncool));
     console.log("ID Removed " + 𝓜𝖎𝖟𝖚ӄ𝖎.sender);
   }, 10000);
   `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;

@@ -32,14 +32,10 @@ module.exports = {
       const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
       const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
       `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-      let CL;
       if (!𝓜𝖎𝖟𝖚ӄ𝖎.fromMe && !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderDev) {
         const clearance = require("../../Mizuki🛰️Server/clearance");
         const cleared = await clearance(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎);
-        CL = cleared;
-      }
-      if (!CL) {
-        return;
+        if (cleared) return;
       }
       `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
       const jsoncool = await JSON.parse(
@@ -50,17 +46,14 @@ module.exports = {
         `./Mizuki🛰️Server/Coolist.json`,
         JSON.stringify(jsoncool)
       );
-      setTimeout(
-        ((ℓαвєяяσя) => {
-          if (ℓαвєяяσя) return console.log(ℓαвєяяσя);
-          jsoncool.splice(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
-          fs.writeFileSync(
-            `./Mizuki🛰️Server/Coolist.json`,
-            JSON.stringify(jsoncool)
-          );
-        },
-        15000)
-      );
+      setTimeout((ℓαвєяяσя) => {
+        if (ℓαвєяяσя) return console.log(ℓαвєяяσя);
+        jsoncool.splice(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
+        fs.writeFileSync(
+          `./Mizuki🛰️Server/Coolist.json`,
+          JSON.stringify(jsoncool)
+        );
+      }, 15000);
       `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
       Mizuki_Buttons.MTB(
         ӄʀǟӄɨռʐ,

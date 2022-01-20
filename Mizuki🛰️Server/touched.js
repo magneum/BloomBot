@@ -9,7 +9,7 @@ var jsonObj = JSON.parse(jsonData);
 var jsonContent = JSON.stringify(jsonObj);
 console.log(jsonContent);
 fs.writeFile(
-  `./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`,
+  `./Mizuki🛰️Server/Coolist.json`,
   jsonContent,
   `utf8`,
   function (err) {

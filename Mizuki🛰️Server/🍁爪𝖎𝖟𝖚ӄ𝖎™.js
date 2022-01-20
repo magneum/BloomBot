@@ -36,13 +36,13 @@ var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 const fs = require(`fs`);
 const time2 = moment().tz(`Asia/Kolkata`).format(`HH:mm:ss`);
 const { registerFont } = require(`canvas`);
-registerFont(`./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/LobsterTwo-Bold.ttf`, {
+registerFont(`./Mizuki🛰️Server/LobsterTwo-Bold.ttf`, {
   family: `LobsterTwo-Bold`,
 });
-registerFont(`./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/SlouchybrushRegular-eZnEB.ttf`, {
+registerFont(`./Mizuki🛰️Server/SlouchybrushRegular-eZnEB.ttf`, {
   family: `SlouchybrushRegular`,
 });
-registerFont(`./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/TheHeartOfEverythingDemo-KRdD.ttf`, {
+registerFont(`./Mizuki🛰️Server/TheHeartOfEverythingDemo-KRdD.ttf`, {
   family: `TheHeartOfEverythingDemo`,
 });
 var Canvas = require(`canvas`);
@@ -626,7 +626,7 @@ ${update.desc}`,
         mem[i] = 𝓜𝖎𝖟𝖚ӄ𝖎.gMembers[i].jid;
       }
       fs.writeFile(
-        `./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/memobject.json`,
+        `./Mizuki🛰️Server/memobject.json`,
         JSON.stringify(mem),
         async (ℓαвєяяσя) => {
           if (ℓαвєяяσя) return console.error(ℓαвєяяσя);
@@ -635,7 +635,7 @@ ${update.desc}`,
       );
       `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
       fs.readFile(
-        `./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/memobject.json`,
+        `./Mizuki🛰️Server/memobject.json`,
         `utf8`,
         async (ℓαвєяяσя, memjson) => {
           if (ℓαвєяяσя) return console.log(ℓαвєяяσя);
@@ -656,7 +656,7 @@ ${update.desc}`,
           }
           `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
           const jsoncool = JSON.parse(
-            fs.readFileSync(`./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`)
+            fs.readFileSync(`./Mizuki🛰️Server/Coolist.json`)
           );
           if (jsoncool.includes(𝓜𝖎𝖟𝖚ӄ𝖎.sender)) {
             if (𝓜𝖎𝖟𝖚ӄ𝖎.fromMe) {
