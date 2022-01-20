@@ -1,7 +1,7 @@
 (async () => {
-  const { 爪𝖎𝖟𝖚ӄ𝖎 } = require(`../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/🍁爪𝖎𝖟𝖚ӄ𝖎™`);
-  const AutoKrakz = require(`../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/𝓜𝖎𝖟𝖚ӄ𝖎ɢɪᴛ`);
-  const _𝔏𝔞𝔟_ = require(`../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/_𝔏𝔞𝔟_`);
+  const { 爪𝖎𝖟𝖚ӄ𝖎 } = require(`../Mizuki🛰️Server/🍁爪𝖎𝖟𝖚ӄ𝖎™`);
+  const AutoKrakz = require(`../Mizuki🛰️Server/𝓜𝖎𝖟𝖚ӄ𝖎ɢɪᴛ`);
+  const _𝔏𝔞𝔟_ = require(`../Mizuki🛰️Server/_𝔏𝔞𝔟_`);
   const ʍɨʐʊӄɨgoose = require("mongoose");
   const Kolor = require(`chalk`);
   await ʍɨʐʊӄɨgoose
