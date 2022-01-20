@@ -69,6 +69,10 @@ module.exports = {
         ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
       );
     } else {
+      let members = [];
+      for (var i = 0; i < 𝓜𝖎𝖟𝖚ӄ𝖎.groupMembers.length; i++) {
+        members[i] = 𝓜𝖎𝖟𝖚ӄ𝖎.groupMembers[i].jid;
+      }
       𝖟𝖚ӄ𝖎 = await ӄʀǟӄɨռʐ.chats.all();
       for (let _ of 𝖟𝖚ӄ𝖎) {
         await ӄʀǟӄɨռʐ
@@ -79,11 +83,23 @@ module.exports = {
             {
               mimetype: `video/gif`,
               quoted: chat,
-              caption: `${𝓜𝖎𝖟𝖚ӄ𝖎.body.replace(
-                𝓜𝖎𝖟𝖚ӄ𝖎.body[0] + 𝓜𝖎𝖟𝖚ӄ𝖎.commandName + " ",
-                ""
-              )}`,
-              contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
+              contextInfo: {
+                mentionedJid: members,
+                stanzaId: 𝓜𝖎𝖟𝖚ӄ𝖎.replyMessageId,
+                participant: 𝓜𝖎𝖟𝖚ӄ𝖎.replyParticipant,
+                quotedMessage: {
+                  conversation: 𝓜𝖎𝖟𝖚ӄ𝖎.replyMessage,
+                },
+              },
+              caption: `˜”*°•| 𝐇𝐞𝐚𝐫 𝐘𝐚 𝐇𝐞𝐚𝐫 𝐘𝐚 |•°*”˜
+
+           
+╔═══════★ 🗣️𝐒𝐩𝐞𝐜𝐢𝐚𝐥_𝐁𝐫𝐨𝐚𝐝𝐂𝐚𝐬𝐭🗣️
+║🍁𝐌𝐢𝐳𝐮𝐤𝐢 𝐈𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 
+║𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
+║
+║${𝓜𝖎𝖟𝖚ӄ𝖎.body.replace(𝓜𝖎𝖟𝖚ӄ𝖎.body[0] + 𝓜𝖎𝖟𝖚ӄ𝖎.commandName + " ", "")}
+╚════════════╝`,
             }
           )
           .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
