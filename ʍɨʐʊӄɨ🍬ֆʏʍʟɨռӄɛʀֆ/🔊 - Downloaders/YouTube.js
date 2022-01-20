@@ -87,8 +87,8 @@ module.exports = {
       } else {
         const Search = await yts(Needs.join(" "));
         const YouTube = Search.videos.slice(0, 1);
-        YouTube.forEach(async function (youfound) {
-          await Mizuki_Buttons.MIB(
+        YouTube.forEach(function (youfound) {
+          Mizuki_Buttons.MIB(
             ӄʀǟӄɨռʐ,
             chat,
             𝓜𝖎𝖟𝖚ӄ𝖎,
@@ -109,7 +109,7 @@ module.exports = {
             youfound.title.toString() + ".mp3"
           );
           download.pipe(writeStream);
-          await ӄʀǟӄɨռʐ
+          ӄʀǟӄɨռʐ
             .sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               fs.readFileSync(writeStream),
@@ -120,7 +120,7 @@ module.exports = {
               }
             )
             .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
-          return await cleanRF.cleanRF(writeStream);
+          cleanRF.cleanRF(writeStream);
         });
       }
       `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
