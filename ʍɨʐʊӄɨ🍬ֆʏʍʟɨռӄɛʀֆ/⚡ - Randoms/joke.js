@@ -36,14 +36,14 @@ module.exports = {
         fs.readFileSync(`./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`)
       );
       await jsoncool.push(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
-      await fs.writeFileSync(
+      fs.writeFileSync(
         `./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`,
         JSON.stringify(jsoncool)
       );
       setTimeout(async (error) => {
         if (error) console.log(error);
         await jsoncool.splice(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
-        await fs.writeFileSync(
+        fs.writeFileSync(
           `./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`,
           JSON.stringify(jsoncool)
         );
