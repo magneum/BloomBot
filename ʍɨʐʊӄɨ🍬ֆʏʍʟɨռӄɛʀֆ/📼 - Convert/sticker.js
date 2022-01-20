@@ -176,55 +176,6 @@ module.exports = {
               });
           });
         `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-      } else if (𝓜𝖎𝖟𝖚ӄ𝖎.isReplyGIF) {
-        var VIDEOBJECT = {
-          message: chat.message.extendedTextMessage.contextInfo.quotedMessage,
-        };
-        var VIDEOID = chat.message.extendedTextMessage.contextInfo.stanzaId;
-        console.log(VIDEOBJECT);
-        await ӄʀǟӄɨռʐ
-          .downloadAndSaveMediaMessage(VIDEOBJECT, `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${VIDEOID}`)
-          .then(async () => {
-            ffmpeg(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/${VIDEOID}.mp4`)
-              .duration(8)
-              .outputOptions([
-                `-y`,
-                `-vcodec libwebp`,
-                `-lossless 1`,
-                `-qscale 1`,
-                `-preset default`,
-                `-loop 0`,
-                `-an`,
-                `-vsync 0`,
-                `-s 600x600`,
-              ])
-              .videoFilters(
-                `scale=600:600:flags=lanczos:force_original_aspect_ratio=decrease,format=rgba,pad=600:600:(ow-iw)/2:(oh-ih)/2:color=#00000000,setsar=1`
-              )
-              .save(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/${VIDEOID}.webp`)
-              .on(`end`, async () => {
-                await ӄʀǟӄɨռʐ
-                  .sendMessage(
-                    𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                    fs.readFileSync(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/${VIDEOID}.webp`),
-                    MessageType.sticker,
-                    { quoted: chat }
-                  )
-                  .then(
-                    cleanRF.cleanRF(
-                      `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${VIDEOID}.mp4`,
-                      `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FILEID}.webp`
-                    )
-                  )
-                  .catch((ℓαвєяяσя) =>
-                    ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
-                  );
-              })
-              .on(`error`, async (ℓαвєяяσя) => {
-                console.log(ℓαвєяяσя);
-              });
-          });
-        `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
       } else {
         var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(𝓜𝖎𝖟𝖚ӄ𝖎.commandName);
         var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
