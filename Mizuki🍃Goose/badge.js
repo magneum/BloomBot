@@ -1,8 +1,8 @@
 var mongoose = require("mongoose");
 var BadgeMizukiSchema = new mongoose.Schema({
-  id: String,
-  badge: String,
-  limits: Number,
+  ID: Number,
+  Badge: String,
+  Limits: Number,
   CurrentLimitTime: Number,
   PermanentLimitTime: Number,
 });
