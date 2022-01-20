@@ -61,26 +61,26 @@ exports.MizukiGM = async (ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎) => {
   if (𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
     const downloader = await new Downloader({
       url: link,
-      directory: `./ʍɨʐʊӄɨ🗑️ȶɛʍք`,
+      directory: `./Mizuki🗑️Temp`,
       fileName: `${FinalName}_${MizukiGMid}.gif`,
       cloneFiles: false,
     });
     try {
       await downloader.download();
-      await ffmpeg(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FinalName}_${MizukiGMid}.gif`)
+      await ffmpeg(`./Mizuki🗑️Temp/${FinalName}_${MizukiGMid}.gif`)
         .outputOptions([
           `-pix_fmt yuv420p`,
           `-c:v libx264`,
           `-movflags +faststart`,
           `-filter:v crop='floor(in_w/2)*2:floor(in_h/2)*2'`,
         ])
-        .save(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FinalName}_${MizukiGMid}.mp4`)
+        .save(`./Mizuki🗑️Temp/${FinalName}_${MizukiGMid}.mp4`)
         .on(`end`, async () => {
           console.log(`Finished`);
           await ӄʀǟӄɨռʐ
             .sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              fs.readFileSync(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FinalName}_${MizukiGMid}.mp4`),
+              fs.readFileSync(`./Mizuki🗑️Temp/${FinalName}_${MizukiGMid}.mp4`),
               MessageType.video,
               {
                 contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ, Receiver] },
@@ -95,8 +95,8 @@ exports.MizukiGM = async (ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎) => {
             )
             .then(
               cleanRF.cleanRF(
-                `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FinalName}_${MizukiGMid}.gif`,
-                `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FinalName}_${MizukiGMid}.mp4`
+                `./Mizuki🗑️Temp/${FinalName}_${MizukiGMid}.gif`,
+                `./Mizuki🗑️Temp/${FinalName}_${MizukiGMid}.mp4`
               )
             );
         })
@@ -111,26 +111,26 @@ exports.MizukiGM = async (ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎) => {
   if (!𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
     const downloader = await new Downloader({
       url: link,
-      directory: `./ʍɨʐʊӄɨ🗑️ȶɛʍք`,
+      directory: `./Mizuki🗑️Temp`,
       fileName: `${FinalName}_${MizukiGMid}.gif`,
       cloneFiles: false,
     });
     try {
       await downloader.download();
-      ffmpeg(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FinalName}_${MizukiGMid}.gif`)
+      ffmpeg(`./Mizuki🗑️Temp/${FinalName}_${MizukiGMid}.gif`)
         .outputOptions([
           `-pix_fmt yuv420p`,
           `-c:v libx264`,
           `-movflags +faststart`,
           `-filter:v crop='floor(in_w/2)*2:floor(in_h/2)*2'`,
         ])
-        .save(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FinalName}_${MizukiGMid}.mp4`)
+        .save(`./Mizuki🗑️Temp/${FinalName}_${MizukiGMid}.mp4`)
         .on(`end`, async () => {
           console.log(`Finished`);
           await ӄʀǟӄɨռʐ
             .sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-              fs.readFileSync(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FinalName}_${MizukiGMid}.mp4`),
+              fs.readFileSync(`./Mizuki🗑️Temp/${FinalName}_${MizukiGMid}.mp4`),
               MessageType.video,
               {
                 contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
@@ -144,8 +144,8 @@ exports.MizukiGM = async (ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎) => {
             )
             .then(
               cleanRF.cleanRF(
-                `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FinalName}_${MizukiGMid}.gif`,
-                `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FinalName}_${MizukiGMid}.mp4`
+                `./Mizuki🗑️Temp/${FinalName}_${MizukiGMid}.gif`,
+                `./Mizuki🗑️Temp/${FinalName}_${MizukiGMid}.mp4`
               )
             )
             .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));

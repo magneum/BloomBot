@@ -44,8 +44,8 @@ module.exports = {
         var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
         var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
       }
-      const GotFile = `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${Ping}_${FinalName}.gif`;
-      const GiveFile = `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${Ping}_${FinalName}.mp4`;
+      const GotFile = `./Mizuki🗑️Temp/${Ping}_${FinalName}.gif`;
+      const GiveFile = `./Mizuki🗑️Temp/${Ping}_${FinalName}.mp4`;
       `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
       const jsoncool = await JSON.parse(
         fs.readFileSync(`./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`)
@@ -74,7 +74,7 @@ module.exports = {
 
       const downloader = await new Downloader({
         url: ʟᴀʙᴛᴇꜱᴛ,
-        directory: `./ʍɨʐʊӄɨ🗑️ȶɛʍք`,
+        directory: `./Mizuki🗑️Temp`,
         fileName: `${Ping}_${FinalName}.gif`,
         cloneFiles: false,
       });

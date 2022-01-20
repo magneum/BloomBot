@@ -112,7 +112,7 @@ module.exports = {
       wikipedia(Needs.join(` `))
         .then((res) => {
           if (res.result.thumb.endsWith(`not-found.png`)) {
-            var thumbs = `./ʍɨʐʊӄɨ☣️ƈօʀɛ/Mizuki_Wikipedia.png`;
+            var thumbs = `./Mizuki☣️Reactor/Mizuki_Wikipedia.png`;
           } else {
             var thumbs = res.result.thumb;
           }

@@ -86,7 +86,7 @@ module.exports = {
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 Spam Amount can't be zero.`,
-          `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
+          `./Mizuki☣️Reactor/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
         );
         return 0;
       }
@@ -106,7 +106,7 @@ Spam Amount can't be zero.`,
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 No text found for spamming!!! Please read /help spam.`,
-          `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
+          `./Mizuki☣️Reactor/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
         );
       }
     } catch (ℓαвєяяσя) {

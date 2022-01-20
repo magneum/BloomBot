@@ -61,7 +61,7 @@ module.exports = {
         if (𝓜𝖎𝖟𝖚ӄ𝖎.isReplyImage) {
           var imageId = chat.key.id;
           const fileName =
-            `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${Ping}_${ꜱᴇɴᴅᴇʀɪᴅ}_${FinalName}_` + imageId;
+            `./Mizuki🗑️Temp/${Ping}_${ꜱᴇɴᴅᴇʀɪᴅ}_${FinalName}_` + imageId;
           filePath = await ӄʀǟӄɨռʐ.downloadAndSaveMediaMessage(
             {
               message:
@@ -87,7 +87,7 @@ module.exports = {
                   
 +sudo($req(+${Ping}+${Clock}))
 ${_𝔏𝔞𝔟_.HASH.replace(`https://chat.whatsapp.com/`, `/kryo/`)}${value.result}`,
-                  `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
+                  `./Mizuki☣️Reactor/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
                 );
               }
             };

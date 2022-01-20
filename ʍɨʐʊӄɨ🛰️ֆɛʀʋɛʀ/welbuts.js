@@ -89,13 +89,13 @@ exports.welbuts = async (
 
     const downloader = await new Downloader({
       url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗,
-      directory: `./ʍɨʐʊӄɨ🗑️ȶɛʍք`,
+      directory: `./Mizuki🗑️Temp`,
       fileName: `${ᴘᴘᴡᴇʟᴄᴏᴍᴇ}_${FlowerWel}.png`,
       cloneFiles: false,
     });
     await downloader.download();
     let content = fs.readFileSync(
-      `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${ᴘᴘᴡᴇʟᴄᴏᴍᴇ}_${FlowerWel}.png`
+      `./Mizuki🗑️Temp/${ᴘᴘᴡᴇʟᴄᴏᴍᴇ}_${FlowerWel}.png`
     );
     const media = await ӄʀǟӄɨռʐ.prepareMessage(
       GroupID,
@@ -140,7 +140,7 @@ ${ꜰᴇᴛᴄʜᴇᴅᴡᴇʟᴄᴏᴍᴇ.message}`,
           contextInfo: { mentionedJid: [MemNum] },
         }
       )
-      .then(cleanRF.cleanRF(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/${ᴘᴘᴡᴇʟᴄᴏᴍᴇ}_${FlowerWel}.png`))
+      .then(cleanRF.cleanRF(`./Mizuki🗑️Temp/${ᴘᴘᴡᴇʟᴄᴏᴍᴇ}_${FlowerWel}.png`))
       .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
   } catch (ℓαвєяяσя) {
     await ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);

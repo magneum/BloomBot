@@ -147,7 +147,7 @@ module.exports = {
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 ${contact} *promoted to admin*`,
-            `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
+            `./Mizuki☣️Reactor/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
           );
         } else {
           return Mizuki_Static.MGS(
@@ -159,7 +159,7 @@ ${contact} *promoted to admin*`,
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 ${contact} *is already an admin*`,
-            `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
+            `./Mizuki☣️Reactor/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
           );
         }
       }
@@ -175,7 +175,7 @@ ${contact} *is already an admin*`,
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 *Person not found.*`,
-            `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
+            `./Mizuki☣️Reactor/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
           );
         }
       }

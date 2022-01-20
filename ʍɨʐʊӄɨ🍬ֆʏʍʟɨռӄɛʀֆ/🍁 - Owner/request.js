@@ -99,7 +99,7 @@ _ɪꜰ ʏᴏᴜ ᴅᴏ ɴᴏᴛ ꜰᴏʟʟᴏᴡ/ᴜɴᴅᴇʀꜱᴛᴀɴᴅ ᴛ
       );
       qrcode.make();
       const output = qrcode.toDataURL().split(`,`)[1];
-      const imagePath = `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${Ping}_${ꜱᴇɴᴅᴇʀɪᴅ}_${FinalName}.png`;
+      const imagePath = `./Mizuki🗑️Temp/${Ping}_${ꜱᴇɴᴅᴇʀɪᴅ}_${FinalName}.png`;
       fs.writeFileSync(
         imagePath,
         output,

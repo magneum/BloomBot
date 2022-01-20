@@ -148,7 +148,7 @@ module.exports = {
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 ${contact} is the owner of the group`,
-          `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
+          `./Mizuki☣️Reactor/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
         );
       }
 
@@ -165,7 +165,7 @@ ${contact} is the owner of the group`,
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 ${contact} *is demoted from admin*`,
-            `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
+            `./Mizuki☣️Reactor/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
           );
         } else {
           return Mizuki_Static.MGS(
@@ -177,7 +177,7 @@ ${contact} *is demoted from admin*`,
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 ${contact} *was not an admin*`,
-            `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
+            `./Mizuki☣️Reactor/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
           );
         }
       }
@@ -193,7 +193,7 @@ ${contact} *was not an admin*`,
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 *Person not found.𝘛𝘳𝘺 𝘈𝘨𝘢𝘪𝘯!*`,
-            `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
+            `./Mizuki☣️Reactor/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
           );
         }
       }

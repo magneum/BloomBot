@@ -60,12 +60,12 @@ module.exports = {
         console.log(FILEOBJECT);
         await ӄʀǟӄɨռʐ.downloadAndSaveMediaMessage(
           FILEOBJECT,
-          `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FILEID}`
+          `./Mizuki🗑️Temp/${FILEID}`
         );
-        let gotTgh = await TelegraPh(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FILEID}.jpeg`);
+        let gotTgh = await TelegraPh(`./Mizuki🗑️Temp/${FILEID}.jpeg`);
         const media = await ӄʀǟӄɨռʐ.prepareMessage(
           𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-          { url: `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FILEID}.jpeg` },
+          { url: `./Mizuki🗑️Temp/${FILEID}.jpeg` },
           MessageType.image,
           { mimetype: Mimetype.png && Mimetype.jpeg }
         );
@@ -98,7 +98,7 @@ module.exports = {
             }
           )
 
-          .then(cleanRF.cleanRF(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FILEID}.jpeg`))
+          .then(cleanRF.cleanRF(`./Mizuki🗑️Temp/${FILEID}.jpeg`))
           .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
         `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
       } else {

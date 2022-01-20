@@ -4,7 +4,7 @@
 `⬡🍁⬡`;
 `⬡🍁⬡`;
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
-const LinkList = require(`../ʍɨʐʊӄɨ🍃goose/antilink`);
+const LinkList = require(`../Mizuki🍃Goose/antilink`);
 const Mizuki_Buttons = require(`./Mizuki_Buttons`);
 const Mizuki_Static = require(`./Mizuki_Static`);
 const 𝓜𝖎𝖟𝖚ӄ𝖎ֆʏռօք = require(`./𝓜𝖎𝖟𝖚ӄ𝖎ᴢᴇɴ`);
@@ -175,7 +175,7 @@ async function 爪𝖎𝖟𝖚ӄ𝖎() {
         return await ӄʀǟӄɨռʐ
           .sendMessage(
             groupupdateID.id,
-            { url: `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4` },
+            { url: `./Mizuki☣️Reactor/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4` },
             MessageType.video,
             {
               mimetype: `video/gif`,
@@ -193,7 +193,7 @@ async function 爪𝖎𝖟𝖚ӄ𝖎() {
         return await ӄʀǟӄɨռʐ
           .sendMessage(
             groupupdateID.id,
-            { url: `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4` },
+            { url: `./Mizuki☣️Reactor/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4` },
             MessageType.video,
             {
               mimetype: `video/gif`,
@@ -213,7 +213,7 @@ async function 爪𝖎𝖟𝖚ӄ𝖎() {
         return await ӄʀǟӄɨռʐ
           .sendMessage(
             groupupdateID.id,
-            { url: `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4` },
+            { url: `./Mizuki☣️Reactor/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4` },
             MessageType.video,
             {
               mimetype: `video/gif`,
@@ -239,7 +239,7 @@ ${update.desc}`,
         return await ӄʀǟӄɨռʐ
           .sendMessage(
             groupupdateID.id,
-            { url: `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4` },
+            { url: `./Mizuki☣️Reactor/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4` },
             MessageType.video,
             {
               mimetype: `video/gif`,
@@ -258,7 +258,7 @@ ${update.desc}`,
         return await ӄʀǟӄɨռʐ
           .sendMessage(
             groupupdateID.id,
-            { url: `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4` },
+            { url: `./Mizuki☣️Reactor/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4` },
             MessageType.video,
             {
               mimetype: `video/gif`,
@@ -357,7 +357,7 @@ ${update.desc}`,
     if (!𝓜𝖎𝖟𝖚ӄ𝖎.fromMe && 𝓜𝖎𝖟𝖚ӄ𝖎.isGroup) {
       var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
       var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
-      const UsersMizuki = require(`../ʍɨʐʊӄɨ🍃goose/experience.js`);
+      const UsersMizuki = require(`../Mizuki🍃Goose/experience.js`);
       let xpAdd = Math.ceil(Math.random() * 10);
       `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
       try {
@@ -413,7 +413,7 @@ ${update.desc}`,
               users.xp = users.xp + xpAdd;
               if (users.xp >= nxtlvl) {
                 users.level = currentLvl + 1;
-                const Economy = require(`../ʍɨʐʊӄɨ🍃goose/economy`);
+                const Economy = require(`../Mizuki🍃Goose/economy`);
                 const canvas = Canvas.createCanvas(800, 300);
                 const ctx = canvas.getContext("2d");
                 const background = await Canvas.loadImage(
@@ -597,7 +597,7 @@ ${update.desc}`,
 ║⚠️ You Sent Some Type Of link.
 ║⚠️ You Will Be Kicked!
 ╚════════════╝`,
-            `./ʍɨʐʊӄɨ☣️ƈօʀɛ/Mizuki_Antilink.png`
+            `./Mizuki☣️Reactor/Mizuki_Antilink.png`
           );
           setTimeout(async (error) => {
             if (error) console.log(error);

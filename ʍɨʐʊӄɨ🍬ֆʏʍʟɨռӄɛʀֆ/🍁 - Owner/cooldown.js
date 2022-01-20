@@ -116,7 +116,7 @@ module.exports = {
 ⏰ 𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧: ${CoolDown_Duration}
 🛡️ ꜱᴜᴅᴏ ᴄᴏᴏʟᴅᴏᴡɴ ᴇɴᴀʙʟᴇᴅ✔️
 `,
-        `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
+        `./Mizuki☣️Reactor/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
       );
       setTimeout(async () => {
         BanList.removeBanlistUser(``, 𝓜𝖎𝖟𝖚ӄ𝖎.chatId);
@@ -130,7 +130,7 @@ module.exports = {
 🛑 𝐆𝐫𝐨𝐮𝐩 𝐂𝐨𝐨𝐥𝐃𝐨𝐰𝐧: ${𝓜𝖎𝖟𝖚ӄ𝖎.groupName}
 🛡️ ꜱᴜᴅᴏ ᴄᴏᴏʟᴅᴏᴡɴ ᴅɪꜱᴀʙʟᴇᴅ⚠️
 `,
-          `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
+          `./Mizuki☣️Reactor/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
         );
       }, CoolDown_Duration);
     } catch (ℓαвєяяσя) {

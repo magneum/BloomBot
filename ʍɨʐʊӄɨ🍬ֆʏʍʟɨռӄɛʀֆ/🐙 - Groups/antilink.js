@@ -135,7 +135,7 @@ module.exports = {
                   );
                 const media = await ӄʀǟӄɨռʐ.prepareMessage(
                   𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                  fs.readFileSync(`./ʍɨʐʊӄɨ☣️ƈօʀɛ/Mizuki_Antilink.png`),
+                  fs.readFileSync(`./Mizuki☣️Reactor/Mizuki_Antilink.png`),
                   MessageType.image,
                   {
                     mimetype: Mimetype.png,
@@ -185,7 +185,7 @@ module.exports = {
                   );
                 const media = await ӄʀǟӄɨռʐ.prepareMessage(
                   𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                  fs.readFileSync(`./ʍɨʐʊӄɨ☣️ƈօʀɛ/Mizuki_Antilink.png`),
+                  fs.readFileSync(`./Mizuki☣️Reactor/Mizuki_Antilink.png`),
                   MessageType.image,
                   {
                     mimetype: Mimetype.png,
@@ -242,7 +242,7 @@ module.exports = {
               if (!server) {
                 const media = await ӄʀǟӄɨռʐ.prepareMessage(
                   𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                  fs.readFileSync(`./ʍɨʐʊӄɨ☣️ƈօʀɛ/Mizuki_Antilink.png`),
+                  fs.readFileSync(`./Mizuki☣️Reactor/Mizuki_Antilink.png`),
                   MessageType.image,
                   {
                     mimetype: Mimetype.png,
@@ -292,7 +292,7 @@ module.exports = {
                   );
                 const media = await ӄʀǟӄɨռʐ.prepareMessage(
                   𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-                  fs.readFileSync(`./ʍɨʐʊӄɨ☣️ƈօʀɛ/Mizuki_Antilink.png`),
+                  fs.readFileSync(`./Mizuki☣️Reactor/Mizuki_Antilink.png`),
                   MessageType.image,
                   {
                     mimetype: Mimetype.png,

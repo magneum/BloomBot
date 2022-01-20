@@ -85,7 +85,7 @@ module.exports = {
       `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
       const downloader = await new Downloader({
         url: RawData,
-        directory: `./ʍɨʐʊӄɨ🗑️ȶɛʍք`,
+        directory: `./Mizuki🗑️Temp`,
         fileName: `${FinalName}_${Date.now.toString()}.mp4`,
         cloneFiles: false,
       });
@@ -107,10 +107,10 @@ module.exports = {
 ║📤𝐔𝐩𝐥𝐨𝐚𝐝𝐞𝐝: ${Raw.upload}
 ║🖊️𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${Raw.desc}
 ╚════════════╝`,
-          `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FinalName}_${Date.now.toString()}.mp4`
+          `./Mizuki🗑️Temp/${FinalName}_${Date.now.toString()}.mp4`
         );
         return await cleanRF.cleanRF(
-          `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FinalName}_${Date.now.toString()}.mp4`
+          `./Mizuki🗑️Temp/${FinalName}_${Date.now.toString()}.mp4`
         );
       } catch (ℓαвєяяσя) {
         return Mizuki_Buttons.MTB(

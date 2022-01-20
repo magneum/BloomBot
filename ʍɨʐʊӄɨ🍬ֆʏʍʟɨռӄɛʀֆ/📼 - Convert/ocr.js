@@ -56,7 +56,7 @@ module.exports = {
           message: chat.message,
         };
         var imageId = chat.key.id;
-        const fileName = `./ʍɨʐʊӄɨ🗑️ȶɛʍք/img-` + imageId;
+        const fileName = `./Mizuki🗑️Temp/img-` + imageId;
         const filePath = await ӄʀǟӄɨռʐ.downloadAndSaveMediaMessage(
           replyChatObject,
           fileName
@@ -94,7 +94,7 @@ module.exports = {
           message: chat.message.extendedTextMessage.contextInfo.quotedMessage,
         };
         var imageId = chat.message.extendedTextMessage.contextInfo.stanzaId;
-        const fileName = `./ʍɨʐʊӄɨ🗑️ȶɛʍք/img-` + imageId;
+        const fileName = `./Mizuki🗑️Temp/img-` + imageId;
         const filePath = await ӄʀǟӄɨռʐ.downloadAndSaveMediaMessage(
           replyChatObject,
           fileName

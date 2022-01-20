@@ -83,7 +83,7 @@
 //         await ӄʀǟӄɨռʐ
 //           .sendMessage(
 //             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-//             fs.readFileSync(`./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`),
+//             fs.readFileSync(`./Mizuki☣️Reactor/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`),
 //             MessageType.video,
 //             {
 //               mimetype: `video/gif`,

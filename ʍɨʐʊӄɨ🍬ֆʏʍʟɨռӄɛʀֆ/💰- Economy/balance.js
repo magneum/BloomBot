@@ -3,7 +3,7 @@ const Mizuki_Static = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Mizuki_Stat
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const Jwork = require("../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/FISH/works.json");
 const JworkR = Jwork[Math.floor(Math.random() * Jwork.length)];
-const Economy = require(`../../ʍɨʐʊӄɨ🍃goose/economy`);
+const Economy = require(`../../Mizuki🍃Goose/economy`);
 const _𝔏𝔞𝔟_ = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/_𝔏𝔞𝔟_`);
 const ꜰᴜᴄᴋ = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/oShit`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
@@ -92,7 +92,7 @@ module.exports = {
 ║💰 𝗧𝗼𝘁𝗮𝗹 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: Just Opened Your Account!
 ║🤠 𝗔𝗰𝗰𝗼𝘂𝗻𝘁_𝗛𝗼𝗹𝗱𝗲𝗿: @${personreceived}
 ╚════════════╝`,
-                `./ʍɨʐʊӄɨ☣️ƈօʀɛ/MizukiFIshing.mp4`
+                `./Mizuki☣️Reactor/MizukiFIshing.mp4`
               );
               `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
             } else {
@@ -106,7 +106,7 @@ module.exports = {
 ║💰 𝗧𝗼𝘁𝗮𝗹 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: ${userEco.money}
 ║🤠 𝗔𝗰𝗰𝗼𝘂𝗻𝘁_𝗛𝗼𝗹𝗱𝗲𝗿: @${personreceived}
 ╚════════════╝`,
-                `./ʍɨʐʊӄɨ☣️ƈօʀɛ/MizukiFIshing.mp4`
+                `./Mizuki☣️Reactor/MizukiFIshing.mp4`
               );
             }
           }
@@ -149,7 +149,7 @@ module.exports = {
 ║💰 𝗧𝗼𝘁𝗮𝗹 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: Just Opened Your Account!
 ║🤠 𝗔𝗰𝗰𝗼𝘂𝗻𝘁_𝗛𝗼𝗹𝗱𝗲𝗿: @${ꜱᴇɴᴅᴇʀeceived}
 ╚════════════╝`,
-                `./ʍɨʐʊӄɨ☣️ƈօʀɛ/MizukiFIshing.mp4`
+                `./Mizuki☣️Reactor/MizukiFIshing.mp4`
               );
               `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
             } else {
@@ -163,7 +163,7 @@ module.exports = {
 ║💰 𝗧𝗼𝘁𝗮𝗹 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: ${userEco.money}
 ║🤠 𝗔𝗰𝗰𝗼𝘂𝗻𝘁_𝗛𝗼𝗹𝗱𝗲𝗿: @${ꜱᴇɴᴅᴇʀeceived}
 ╚════════════╝`,
-                `./ʍɨʐʊӄɨ☣️ƈօʀɛ/MizukiFIshing.mp4`
+                `./Mizuki☣️Reactor/MizukiFIshing.mp4`
               );
             }
           }

@@ -1,7 +1,7 @@
 const Mizuki_Buttons = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Mizuki_Buttons`);
 const Mizuki_Static = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Mizuki_Static`);
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
-const Economy = require(`../../ʍɨʐʊӄɨ🍃goose/economy`);
+const Economy = require(`../../Mizuki🍃Goose/economy`);
 const ms = require("parse-ms");
 const _𝔏𝔞𝔟_ = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/_𝔏𝔞𝔟_`);
 const ꜰᴜᴄᴋ = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/oShit`);

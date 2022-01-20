@@ -65,7 +65,7 @@ module.exports = {
         child.stdout.pipe(process.stdout);
         child.on(`exit`, async function () {
           process.exitCode = 1;
-          var data = fs.readFileSync(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/𝐇𝐞𝐫𝐨𝐤𝐮.txt`, `utf8`);
+          var data = fs.readFileSync(`./Mizuki🗑️Temp/𝐇𝐞𝐫𝐨𝐤𝐮.txt`, `utf8`);
           console.log(data.toString());
           return Mizuki_Buttons.MIB(
             ӄʀǟӄɨռʐ,

@@ -3,7 +3,7 @@ const Mizuki_Static = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Mizuki_Stat
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const Jwork = require("../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/FISH/works.json");
 const JworkR = Jwork[Math.floor(Math.random() * Jwork.length)];
-const Economy = require(`../../ʍɨʐʊӄɨ🍃goose/economy`);
+const Economy = require(`../../Mizuki🍃Goose/economy`);
 const _𝔏𝔞𝔟_ = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/_𝔏𝔞𝔟_`);
 const ꜰᴜᴄᴋ = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/oShit`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
@@ -86,7 +86,7 @@ module.exports = {
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 ║💰 𝗧𝗼𝘁𝗮𝗹 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: Just Opened Your Account!
 ╚════════════╝`,
-              `./ʍɨʐʊӄɨ☣️ƈօʀɛ/Mizuki_Work.mp4`
+              `./Mizuki☣️Reactor/Mizuki_Work.mp4`
             );
             `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
           } else {
@@ -104,7 +104,7 @@ module.exports = {
 ║👔 𝗪𝗼𝗿𝗸_𝗦𝘁𝗮𝘁𝘂𝘀: ❌You have already worked recently. 
 ║🕐 𝗪𝗼𝗿𝗸_𝗔𝗴𝗮𝗶𝗻: ${time.minutes}m ${time.seconds}s
 ╚════════════╝`,
-                `./ʍɨʐʊӄɨ☣️ƈօʀɛ/Mizuki_Work.mp4`
+                `./Mizuki☣️Reactor/Mizuki_Work.mp4`
               );
               `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
             } else {
@@ -127,7 +127,7 @@ module.exports = {
 ║👔 𝗪𝗼𝗿𝗸_𝗦𝘁𝗮𝘁𝘂𝘀: ${JworkR}.
 ║🪙 𝗘𝗮𝗿𝗻𝗲𝗱: ${amount}
 ╚════════════╝`,
-                `./ʍɨʐʊӄɨ☣️ƈօʀɛ/Mizuki_Work.mp4`
+                `./Mizuki☣️Reactor/Mizuki_Work.mp4`
               );
             }
           }

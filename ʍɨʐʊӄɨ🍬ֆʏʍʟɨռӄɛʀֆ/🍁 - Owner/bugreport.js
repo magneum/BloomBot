@@ -65,7 +65,7 @@ module.exports = {
           ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
         );
       }
-      let content = fs.readFileSync(`./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`);
+      let content = fs.readFileSync(`./Mizuki☣️Reactor/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`);
       const media = await ӄʀǟӄɨռʐ.prepareMessage(
         𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
         content,
@@ -113,7 +113,7 @@ _If Found the report was just for fun then you will be banned by the bot!_
       await ӄʀǟӄɨռʐ
         .sendMessage(
           `120363039360979234@g.us`,
-          fs.readFileSync(`./ʍɨʐʊӄɨ☣️ƈօʀɛ/Mizuki_Bug.mp4`),
+          fs.readFileSync(`./Mizuki☣️Reactor/Mizuki_Bug.mp4`),
           MessageType.video,
           {
             mentionedJid: members,
@@ -132,7 +132,7 @@ ${Needs.join(` `)}`,
       await ӄʀǟӄɨռʐ
         .sendMessage(
           `918250889325@s.whatsapp.net`,
-          fs.readFileSync(`./ʍɨʐʊӄɨ☣️ƈօʀɛ/Mizuki_Bug.mp4`),
+          fs.readFileSync(`./Mizuki☣️Reactor/Mizuki_Bug.mp4`),
           MessageType.video,
           {
             mimetype: `video/gif`,
@@ -150,7 +150,7 @@ ${Needs.join(` `)}`,
       await ӄʀǟӄɨռʐ
         .sendMessage(
           `918436686758@s.whatsapp.net`,
-          fs.readFileSync(`./ʍɨʐʊӄɨ☣️ƈօʀɛ/Mizuki_Bug.mp4`),
+          fs.readFileSync(`./Mizuki☣️Reactor/Mizuki_Bug.mp4`),
           MessageType.video,
           {
             mimetype: `video/gif`,
@@ -168,7 +168,7 @@ ${Needs.join(` `)}`,
       await ӄʀǟӄɨռʐ
         .sendMessage(
           `989035024059@s.whatsapp.net`,
-          fs.readFileSync(`./ʍɨʐʊӄɨ☣️ƈօʀɛ/Mizuki_Bug.mp4`),
+          fs.readFileSync(`./Mizuki☣️Reactor/Mizuki_Bug.mp4`),
           MessageType.video,
           {
             mimetype: `video/gif`,

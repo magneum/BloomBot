@@ -17,4 +17,4 @@ else:
     pass
 os.system('touch ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json')
 os.system('node ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/touched.js')
-os.system('node ʍɨʐʊӄɨ☣️ƈօʀɛ/🍁爪𝖎𝖟𝖚ӄ𝖎™.js')
+os.system('node Mizuki☣️Reactor/🍁爪𝖎𝖟𝖚ӄ𝖎™.js')

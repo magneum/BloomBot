@@ -111,7 +111,7 @@ module.exports = {
 ║🍁 Mizuki's Welcome Message needs to be added first!
 ║🍁 use *${ᴋᴇɪ}setwelcome* (message)
 ╚════════════╝`,
-            `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
+            `./Mizuki☣️Reactor/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
           );
         } else if (enabled === `OFF`) {
           return Mizuki_Static.MGS(
@@ -125,7 +125,7 @@ module.exports = {
 ║🍁 Mizuki Currently not greeting new members!
 ╚════════════╝
 `,
-            `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
+            `./Mizuki☣️Reactor/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
           );
         } else {
           return Mizuki_Static.MGS(
@@ -139,7 +139,7 @@ module.exports = {
 ║🍁 Mizuki Currently greeting new members!
 ╚════════════╝
 `,
-            `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
+            `./Mizuki☣️Reactor/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
           );
         }
       } else {
@@ -156,7 +156,7 @@ module.exports = {
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 ║🍁 Mizuki's Welcome Message has Been Disabled!
 ╚════════════╝`,
-            `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
+            `./Mizuki☣️Reactor/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
           );
         }
         if (Needs[0] === `ON` || Needs[0] === `on` || Needs[0] === `On`) {
@@ -173,7 +173,7 @@ module.exports = {
 ║🍁 Mizuki's Welcome Message has Been Enabled!
 ╚════════════╝
 `,
-            `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
+            `./Mizuki☣️Reactor/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
           );
         }
         if (Needs[0] === `delete`) {
@@ -193,7 +193,7 @@ module.exports = {
 ║🍁 Mizuki's Welcome Message needs to be added first!
 ║🍁 use *${ᴋᴇɪ}setwelcome* (message)
 ╚════════════╝`,
-              `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
+              `./Mizuki☣️Reactor/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
             );
           }
           return Mizuki_Static.MGS(
@@ -206,7 +206,7 @@ module.exports = {
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 ║🍁 Mizuki's Welcome Message has Been Removed!
 ╚════════════╝`,
-            `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
+            `./Mizuki☣️Reactor/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
           );
         }
         text = 𝓜𝖎𝖟𝖚ӄ𝖎.body.replace(
@@ -227,7 +227,7 @@ module.exports = {
 ║🍁 Mizuki's Welcome Message has Been Updated!
 ╚════════════╝
 `,
-            `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
+            `./Mizuki☣️Reactor/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
           );
         } else {
           await PostDataBase.deleteMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, `setwelcome`);
@@ -243,7 +243,7 @@ module.exports = {
 ║🍁 Mizuki's Welcome Message has Been Updated!
 ╚════════════╝
 `,
-            `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
+            `./Mizuki☣️Reactor/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
           );
         }
       }

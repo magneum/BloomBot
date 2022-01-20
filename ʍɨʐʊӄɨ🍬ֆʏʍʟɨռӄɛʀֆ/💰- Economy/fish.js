@@ -2,7 +2,7 @@ const Mizuki_Buttons = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Mizuki_But
 const Mizuki_Static = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Mizuki_Static`);
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const fishes = require("../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/FISH/fishes.json");
-const Economy = require(`../../ʍɨʐʊӄɨ🍃goose/economy`);
+const Economy = require(`../../Mizuki🍃Goose/economy`);
 const _𝔏𝔞𝔟_ = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/_𝔏𝔞𝔟_`);
 const ꜰᴜᴄᴋ = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/oShit`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
@@ -85,7 +85,7 @@ module.exports = {
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 ║💰 𝗧𝗼𝘁𝗮𝗹 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: Just Opened Your Account!
 ╚════════════╝`,
-              `./ʍɨʐʊӄɨ☣️ƈօʀɛ/MizukiFIshing.mp4`
+              `./Mizuki☣️Reactor/MizukiFIshing.mp4`
             );
             `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
           } else {
@@ -103,7 +103,7 @@ module.exports = {
 ║🎣 𝗜𝘁𝗲𝗺_𝗙𝗼𝘂𝗻𝗱: ❌You've Recently Casted A Line. 
 ║🕐 𝗙𝗶𝘀𝗵_𝗔𝗴𝗮𝗶𝗻: ${time.minutes}m ${time.seconds}s
 ╚════════════╝`,
-                `./ʍɨʐʊӄɨ☣️ƈօʀɛ/MizukiFIshing.mp4`
+                `./Mizuki☣️Reactor/MizukiFIshing.mp4`
               );
               `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
             } else {
@@ -137,7 +137,7 @@ module.exports = {
 ║💵 𝗪𝗼𝗿𝘁𝗵: I Bet It'd Sell For Around *${worth}*!
 ║💍 𝗜𝘁𝗲𝗺_𝗧𝘆𝗽𝗲: ${rarity}
 ╚════════════╝`,
-                `./ʍɨʐʊӄɨ☣️ƈօʀɛ/MizukiFIshing.mp4`
+                `./Mizuki☣️Reactor/MizukiFIshing.mp4`
               );
             }
           }

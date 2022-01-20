@@ -81,7 +81,7 @@ module.exports = {
         await ӄʀǟӄɨռʐ
           .sendMessage(
             _.jid,
-            { url: `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4` },
+            { url: `./Mizuki☣️Reactor/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4` },
             MessageType.video,
             {
               mimetype: `video/gif`,

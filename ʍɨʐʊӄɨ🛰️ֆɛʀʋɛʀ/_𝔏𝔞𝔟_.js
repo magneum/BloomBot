@@ -5,9 +5,9 @@
 `🍁`;
 const fs = require(`fs`);
 const { Sequelize } = require(`sequelize`);
-if (fs.existsSync(`ʍɨʐʊӄɨ☣️ƈօʀɛ.env`)) {
+if (fs.existsSync(`Mizuki☣️Reactor.env`)) {
   require(`dotenv`).config({
-    path: `./ʍɨʐʊӄɨ☣️ƈօʀɛ.env`,
+    path: `./Mizuki☣️Reactor.env`,
   });
 } else {
   require(`dotenv`);
@@ -31,8 +31,8 @@ const env = {
   CCD: process.env.CCD === undefined ? `91` : process.env.CCD,
   OCR: `9ffb44def388957`,
   TEN: `0G2R8PTUGMRP`,
-  ɴᴏᴛᴍᴇᴀᴅᴍɪɴ: `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎NotMeAdmin.png`,
-  ɴᴏᴛᴀᴅᴍɪɴ: `./ʍɨʐʊӄɨ☣️ƈօʀɛ/𝓜𝖎𝖟𝖚ӄ𝖎MemErr.png`,
+  ɴᴏᴛᴍᴇᴀᴅᴍɪɴ: `./Mizuki☣️Reactor/𝓜𝖎𝖟𝖚ӄ𝖎NotMeAdmin.png`,
+  ɴᴏᴛᴀᴅᴍɪɴ: `./Mizuki☣️Reactor/𝓜𝖎𝖟𝖚ӄ𝖎MemErr.png`,
   WAPI: `6729ac2b2e2bb5c686ff427a2f06df92`,
   ERROR: `https://i.postimg.cc/sDPF83Mx/Mizuki-Error.png`,
   INVL: `https://i.postimg.cc/q7k5WK9Z/Mizuki-Invalid.png`,
@@ -41,10 +41,10 @@ const env = {
   HEROKU: process.env.HEROKU,
   MIZUKIQL: (process.env.MIZUKIQL =
     process.env.MIZUKIQL === undefined
-      ? `./ʍɨʐʊӄɨ☣️ƈօʀɛ/ʍɨʐʊӄɨ☣️ƈօʀɛ.db`
+      ? `./Mizuki☣️Reactor/Mizuki☣️Reactor.db`
       : process.env.MIZUKIQL),
   POSTQL:
-    process.env.MIZUKIQL === `./ʍɨʐʊӄɨ☣️ƈօʀɛ/ʍɨʐʊӄɨ☣️ƈօʀɛ.db`
+    process.env.MIZUKIQL === `./Mizuki☣️Reactor/Mizuki☣️Reactor.db`
       ? new Sequelize({ dialect: `sqlite`, storage: process.env.MIZUKIQL })
       : new Sequelize(process.env.MIZUKIQL, {
           dialect: `postgres`,

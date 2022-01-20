@@ -107,7 +107,7 @@ module.exports = {
             } else if (amazeme.endsWith(`.gif`)) {
               const downloader = await new Downloader({
                 url: amazeme,
-                directory: `./ʍɨʐʊӄɨ🗑️ȶɛʍք`,
+                directory: `./Mizuki🗑️Temp`,
                 fileName: `${Ping}_${FinalName}.gif`,
                 cloneFiles: false,
               });
@@ -126,14 +126,14 @@ module.exports = {
 ╚════════════╝`
                 );
               }
-              ffmpeg(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/${Ping}_${FinalName}.gif`)
+              ffmpeg(`./Mizuki🗑️Temp/${Ping}_${FinalName}.gif`)
                 .outputOptions([
                   `-pix_fmt yuv420p`,
                   `-c:v libx264`,
                   `-movflags +faststart`,
                   `-filter:v crop='floor(in_w/2)*2:floor(in_h/2)*2'`,
                 ])
-                .save(`./ʍɨʐʊӄɨ🗑️ȶɛʍք/${Ping}_${FinalName}.mp4`)
+                .save(`./Mizuki🗑️Temp/${Ping}_${FinalName}.mp4`)
                 .on(`end`, async () => {
                   return Mizuki_Static.MSB(
                     ӄʀǟӄɨռʐ,
@@ -145,12 +145,12 @@ module.exports = {
 👅 𝐓𝐨𝐩𝐢𝐜: ${title}
 📞 𝐎𝐫𝐝𝐞𝐫𝐞𝐝𝐁𝐲: @${ꜱᴇɴᴅᴇʀeceived} ${where}
 `,
-                    `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${Ping}_${FinalName}.mp4`
+                    `./Mizuki🗑️Temp/${Ping}_${FinalName}.mp4`
                   )
                     .then(
                       cleanRF.cleanRF(
-                        `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${Ping}_${FinalName}.mp4`,
-                        `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${Ping}_${FinalName}.gif`
+                        `./Mizuki🗑️Temp/${Ping}_${FinalName}.mp4`,
+                        `./Mizuki🗑️Temp/${Ping}_${FinalName}.gif`
                       )
                     )
                     .catch((ℓαвєяяσя) =>

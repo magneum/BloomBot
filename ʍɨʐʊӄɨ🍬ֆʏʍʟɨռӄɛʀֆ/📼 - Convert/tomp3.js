@@ -59,10 +59,10 @@ module.exports = {
         console.log(FILEOBJECT);
         await ӄʀǟӄɨռʐ.downloadAndSaveMediaMessage(
           FILEOBJECT,
-          `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FILEID}`
+          `./Mizuki🗑️Temp/${FILEID}`
         );
-        var Convert_From = `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FILEID}.mp4`;
-        var Convert_To = `./ʍɨʐʊӄɨ🗑️ȶɛʍք/${FILEID}_${Math.floor(
+        var Convert_From = `./Mizuki🗑️Temp/${FILEID}.mp4`;
+        var Convert_To = `./Mizuki🗑️Temp/${FILEID}_${Math.floor(
           Math.random() * 10000
         )}.mp3`;
         exec(`ffmpeg -i ${Convert_From} ${Convert_To}`, async (err) => {
