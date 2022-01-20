@@ -4,6 +4,7 @@ const { default_prefix } = require("../../config");
 
 module.exports = {
   name: "buy",
+  
   noalias: [""],
   category: "economy",
   description: "buys items",
