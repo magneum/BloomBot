@@ -3,12 +3,12 @@
 `⬡  ⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
 `🍁`;
 `🍁`;
-const Mizuki_Buttons = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Mizuki_Buttons`);
-const Mizuki_Static = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Mizuki_Static`);
+const Mizuki_Buttons = require(`../../Mizuki🛰️Server/Mizuki_Buttons`);
+const Mizuki_Static = require(`../../Mizuki🛰️Server/Mizuki_Static`);
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
-const cleanRF = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/cleanRF`);
-const _𝔏𝔞𝔟_ = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/_𝔏𝔞𝔟_`);
-const ꜰᴜᴄᴋ = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/oShit`);
+const cleanRF = require(`../../Mizuki🛰️Server/cleanRF`);
+const _𝔏𝔞𝔟_ = require(`../../Mizuki🛰️Server/_𝔏𝔞𝔟_`);
+const ꜰᴜᴄᴋ = require(`../../Mizuki🛰️Server/oShit`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 const fetch = require(`node-fetch`);
@@ -36,18 +36,18 @@ module.exports = {
       const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
       `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
       const jsoncool = await JSON.parse(
-        fs.readFileSync(`./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`)
+        fs.readFileSync(`./Mizuki🛰️Server/Coolist.json`)
       );
       await jsoncool.push(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
       await fs.writeFileSync(
-        `./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`,
+        `./Mizuki🛰️Server/Coolist.json`,
         JSON.stringify(jsoncool)
       );
       setTimeout(async (error) => {
         if (error) console.log(error);
         await jsoncool.splice(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
         await fs.writeFileSync(
-          `./ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json`,
+          `./Mizuki🛰️Server/Coolist.json`,
           JSON.stringify(jsoncool)
         );
       }, 15000);
@@ -56,7 +56,7 @@ module.exports = {
         var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(𝓜𝖎𝖟𝖚ӄ𝖎.commandName);
         var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
           𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ === undefined ? `Null` : 𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ;
-        const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
+        const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../Mizuki🛰️Server/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
         return ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
           ӄʀǟӄɨռʐ,
           chat,

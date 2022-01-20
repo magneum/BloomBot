@@ -3,14 +3,12 @@
 `⬡  ⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
 `🍁`;
 `🍁`;
-const Mizuki_Buttons = require(`./Mizuki_Buttons`);
-const Mizuki_Static = require(`./Mizuki_Static`);
+const { MessageType } = require(`@adiwajshing/baileys`);
 const Bagde = require(`../Mizuki🍃Goose/Badge`);
 const _𝔏𝔞𝔟_ = require(`./_𝔏𝔞𝔟_`);
+const ms = require("parse-ms");
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
-const fs = require(`fs`);
-const ms = require("parse-ms");
 `🍁`;
 `🍁`;
 `⬡  ⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
@@ -19,34 +17,22 @@ const ms = require("parse-ms");
 `🍁`;
 `🍁`;
 const clearance = async (ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎) => {
-  var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
-  var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
-  `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
   Bagde.findOne(
     {
-      ID: ꜱᴇɴᴅᴇʀeceived,
+      ID: 𝓜𝖎𝖟𝖚ӄ𝖎.sender,
     },
     async (err, user) => {
-      if (err) console.log(err);
+      // return user.delete();
+      if (err) return console.log(err);
       if (!user) {
         var newUser = new Bagde({
-          ID: ꜱᴇɴᴅᴇʀeceived,
+          ID: 𝓜𝖎𝖟𝖚ӄ𝖎.sender,
           Badge: "🧵ʙᴀꜱɪᴄ",
           Limits: 10,
           CurrentLimitTime: Date.now(),
-          PermanentLimitTime: 60000,
+          PermanentLimitTime: 86400000,
         });
         newUser.save();
-        Mizuki_Buttons.MIB(
-          ӄʀǟӄɨռʐ,
-          chat,
-          𝓜𝖎𝖟𝖚ӄ𝖎,
-          `
-╔════════════╗
-║⚔️ 𝗕𝗮𝗱𝗴𝗲: _🧵ʙᴀꜱɪᴄ_
-║⚡ 𝗗𝗮𝗶𝗹𝘆_𝗟𝗶𝗺𝗶𝘁: _10 commands_
-╚════════════╝`
-        );
         return true;
       } else {
         console.log(user);
@@ -58,34 +44,23 @@ const clearance = async (ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎) => {
         console.log(clock);
         console.log(time);
         if (clock > 0 && user.Limits == 0) {
-          Mizuki_Buttons.MIB(
-            ӄʀǟӄɨռʐ,
-            chat,
-            𝓜𝖎𝖟𝖚ӄ𝖎,
+          ӄʀǟӄɨռʐ.sendMessage(
+            𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
             `💡𝐓𝐢𝐩: _Buy Higher Badges Using ${ᴋᴇɪ}shop_
 
 ╔═══════❗ 𝐈𝐦𝐩𝐨𝐫𝐭𝐚𝐧𝐭
-║⚔️ 𝗕𝗮𝗱𝗴𝗲: _${user.Badge}_
-║⚡ 𝗗𝗮𝗶𝗹𝘆_𝗟𝗶𝗺𝗶𝘁: _${user.Limits}commands_
-║💤 𝗥𝗲𝗻𝗲𝘄𝘀_𝗜𝗻: _${time.hours}h|${time.minutes}m|${time.seconds}s|${time.milliseconds}ms_
-╚════════════╝`
+║⚔️ 𝗕𝗮𝗱𝗴𝗲: ${user.Badge}
+║⚡ 𝗗𝗮𝗶𝗹𝘆_𝗟𝗶𝗺𝗶𝘁: ${user.Limits} commands
+║💤 𝗥𝗲𝗻𝗲𝘄𝘀_𝗜𝗻: ${time.hours}h ${time.minutes}m ${time.seconds}s
+╚════════════╝`,
+            MessageType.text,
+            { quoted: chat }
           );
           return false;
         }
         if (clock > 0 && !user.Limits == 0) {
           user.Limits = user.Limits - 1;
           user.save();
-          Mizuki_Buttons.MIB(
-            ӄʀǟӄɨռʐ,
-            chat,
-            𝓜𝖎𝖟𝖚ӄ𝖎,
-            `
-╔════════════╗
-║⚔️ 𝗕𝗮𝗱𝗴𝗲: _${user.Badge}_
-║⚡ 𝗗𝗮𝗶𝗹𝘆_𝗟𝗶𝗺𝗶𝘁: _${user.Limits}commands_
-║💤 𝗥𝗲𝗻𝗲𝘄𝘀_𝗜𝗻: _${time.hours}h|${time.minutes}m|${time.seconds}s|${time.milliseconds}ms_
-╚════════════╝`
-          );
           return true;
         }
         if (clock < 0 && user.Limits == 0) {
@@ -104,20 +79,10 @@ const clearance = async (ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎) => {
           }
           user.CurrentLimitTime = Date.now();
           user.save();
-          Mizuki_Buttons.MIB(
-            ӄʀǟӄɨռʐ,
-            chat,
-            𝓜𝖎𝖟𝖚ӄ𝖎,
-            `
-╔════════════╗
-║⚔️ 𝗕𝗮𝗱𝗴𝗲: _${user.Badge}_
-║⚡ 𝗗𝗮𝗶𝗹𝘆_𝗟𝗶𝗺𝗶𝘁: _${user.Limits}commands_
-║💤 𝗥𝗲𝗻𝗲𝘄𝘀_𝗜𝗻: _${time.hours}h|${time.minutes}m|${time.seconds}s|${time.milliseconds}ms_
-╚════════════╝`
-          );
           return true;
         }
       }
+      return true;
     }
   );
 };

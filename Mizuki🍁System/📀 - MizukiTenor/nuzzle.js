@@ -3,8 +3,8 @@
 `⬡🍁⬡===========================================================================⬡  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
 `⬡🍁⬡`;
 `⬡🍁⬡`;
-const { MizukiGM } = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/MizukiGM`);
-const ꜰᴜᴄᴋ = require(`../../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/oShit`);
+const { MizukiGM } = require(`../../Mizuki🛰️Server/MizukiGM`);
+const ꜰᴜᴄᴋ = require(`../../Mizuki🛰️Server/oShit`);
 var path = require(`path`);
 var scriptName = path.basename(__filename);
 var str = scriptName;
