@@ -46,7 +46,7 @@ module.exports = {
           if (!userBadge) {
             var newUser = new Bagde({
               ID: 𝓜𝖎𝖟𝖚ӄ𝖎.sender,
-              Badge: "🧵ʙᴀꜱɪᴄ",
+              Badge: "🧵ʙᴀꜱɪᴄ-10ᴄᴏᴍᴍᴀɴᴅꜱ",
               value: "True",
               Limits: 10,
               CurrentLimitTime: Date.now(),
@@ -67,17 +67,17 @@ module.exports = {
               userBadge.save();
             }
             if (clock < 0 && userBadge.Limits == 0) {
-              if (userBadge.Badge === "🧵ʙᴀꜱɪᴄ") {
+              if (userBadge.Badge === "🧵ʙᴀꜱɪᴄ-10ᴄᴏᴍᴍᴀɴᴅꜱ") {
                 userBadge.Limits = 10;
-              } else if (userBadge.Badge === "🥉ʙʀᴏɴᴢᴇ") {
+              } else if (userBadge.Badge === "🥉ʙʀᴏɴᴢᴇ-20ᴄᴏᴍᴍᴀɴᴅꜱ") {
                 userBadge.Limits = 20;
-              } else if (userBadge.Badge === "🥈ꜱɪʟᴠᴇʀ") {
+              } else if (userBadge.Badge === "🥈ꜱɪʟᴠᴇʀ-40ᴄᴏᴍᴍᴀɴᴅꜱ") {
                 userBadge.Limits = 40;
-              } else if (userBadge.Badge === "🥇ɢᴏʟᴅ") {
+              } else if (userBadge.Badge === "🥇ɢᴏʟᴅ-60ᴄᴏᴍᴍᴀɴᴅꜱ") {
                 userBadge.Limits = 60;
-              } else if (userBadge.Badge === "💍ᴘʟᴀᴛɪɴᴜᴍ") {
+              } else if (userBadge.Badge === "💍ᴘʟᴀᴛɪɴᴜᴍ-80ᴄᴏᴍᴍᴀɴᴅꜱ") {
                 userBadge.Limits = 80;
-              } else if (userBadge.Badge === "💎ᴅɪᴀᴍᴏɴᴅ") {
+              } else if (userBadge.Badge === "💎ᴅɪᴀᴍᴏɴᴅ-100ᴄᴏᴍᴍᴀɴᴅꜱ") {
                 userBadge.Limits = 100;
               }
               userBadge.CurrentLimitTime = Date.now();
@@ -117,7 +117,6 @@ module.exports = {
 
 ╔═══════❗ 𝐈𝐦𝐩𝐨𝐫𝐭𝐚𝐧𝐭
 ║⚔️ 𝗕𝗮𝗱𝗴𝗲: ${userBadge.Badge}
-║⚡ 𝗗𝗮𝗶𝗹𝘆_𝗟𝗶𝗺𝗶𝘁: ${userBadge.Limits} commands
 ║💤 𝗥𝗲𝗻𝗲𝘄𝘀_𝗜𝗻: ${time.hours}h ${time.minutes}m ${time.seconds}s
 ╚════════════╝`
             );
