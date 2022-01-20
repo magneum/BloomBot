@@ -87,8 +87,8 @@ module.exports = {
       } else {
         const Search = await yts(Needs.join(" "));
         const YouTube = Search.videos.slice(0, 1);
-        YouTube.forEach(function (youfound) {
-          Mizuki_Buttons.MIB(
+        YouTube.forEach(async function (youfound) {
+          await Mizuki_Buttons.MIB(
             ӄʀǟӄɨռʐ,
             chat,
             𝓜𝖎𝖟𝖚ӄ𝖎,
@@ -109,7 +109,7 @@ module.exports = {
             `${ꜱᴇɴᴅᴇʀeceived.toString()}_${FinalName}.mp3`
           );
           download.pipe(writeStream);
-          ӄʀǟӄɨռʐ
+          await ӄʀǟӄɨռʐ
             .sendMessage(
               𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
               fs.readFileSync(`${ꜱᴇɴᴅᴇʀeceived.toString()}_${FinalName}.mp3`),
