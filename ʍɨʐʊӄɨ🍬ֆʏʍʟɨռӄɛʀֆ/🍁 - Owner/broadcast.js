@@ -73,7 +73,10 @@ module.exports = {
       for (var i = 0; i < 𝓜𝖎𝖟𝖚ӄ𝖎.groupMembers.length; i++) {
         members[i] = 𝓜𝖎𝖟𝖚ӄ𝖎.groupMembers[i].jid;
       }
-      𝖟𝖚ӄ𝖎 = await ӄʀǟӄɨռʐ.chats.all();
+      let 𝖟𝖚ӄ𝖎 = ӄʀǟӄɨռʐ.chats
+        .all()
+        .filter((v) => v.jid.endsWith("g.us"))
+        .map((v) => v.jid);
       for (let _ of 𝖟𝖚ӄ𝖎) {
         await ӄʀǟӄɨռʐ
           .sendMessage(
