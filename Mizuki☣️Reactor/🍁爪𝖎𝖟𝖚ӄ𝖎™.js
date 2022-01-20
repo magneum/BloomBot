@@ -6,7 +6,7 @@ try {
       const _𝔏𝔞𝔟_ = require(`../ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/_𝔏𝔞𝔟_`);
       const ʍɨʐʊӄɨgoose = require("mongoose");
       const Kolor = require(`chalk`);
-      ʍɨʐʊӄɨgoose
+      await ʍɨʐʊӄɨgoose
         .connect(_𝔏𝔞𝔟_.MizukiMdb, {
           useNewUrlParser: true,
           useUnifiedTopology: true,
