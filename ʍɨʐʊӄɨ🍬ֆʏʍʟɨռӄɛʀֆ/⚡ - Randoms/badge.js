@@ -26,7 +26,6 @@ module.exports = {
         id: 𝓜𝖎𝖟𝖚ӄ𝖎.sender,
       },
       async (err, userLimit) => {
-        console.log(userLimit);
         if (err) console.log(err);
         if (!userLimit) {
           var newUser = new Bagde({
@@ -37,55 +36,67 @@ module.exports = {
             TemporaryLimitTime: 0,
             PermanentLimitTime: 86400000,
           });
-          newUser
-            .save()
-            .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
+          newUser.save();
+          return Mizuki_Buttons.MTB(
+            ӄʀǟӄɨռʐ,
+            chat,
+            𝓜𝖎𝖟𝖚ӄ𝖎,
+            `*Allowed to Use:* _10-commands!_`
+          );
         } else {
-          `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
+          console.log(userLimit);
           var currentLimit = userLimit.limits;
-          var Timeout =
-            userEco.PermanentLimitTime -
-            (Date.now() - userEco.CurrentLimitTime);
-          if (userLimit.limits === 0 && Timeout > 24) {
+          var permanentLimit = userLimit.PermanentLimitTime;
+          var currentLimitTime = userLimit.CurrentLimitTime;
+          var Timeout = permanentLimit - (Date.now() - currentLimitTime);
+
+          if (currentLimit === 0 && Timeout > permanentLimit) {
             return Mizuki_Buttons.MTB(
               ӄʀǟӄɨռʐ,
               chat,
               𝓜𝖎𝖟𝖚ӄ𝖎,
-              `Daily Limit For *Basic-Badge(${userLimit.limits}commands)* is Over!`
+              `Daily Limit For *Basic-Badge(${currentLimit}commands)* is Over! _Buy more using ${ᴋᴇɪ}store_`
             );
           }
-          `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-          if (!userLimit.limits === 0 && Timeout < 24) {
-            userLimit.CurrentLimitTime = Date.now();
-            userLimit.limits = currentLimit - 1;
-            userLimit
-              .save()
-              .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
+
+          if (!currentLimit === 0 && Timeout < permanentLimit) {
+            currentLimitTime = Date.now();
+            currentLimit = currentLimit - 1;
+            userLimit.save();
             return Mizuki_Buttons.MTB(
               ӄʀǟӄɨռʐ,
               chat,
               𝓜𝖎𝖟𝖚ӄ𝖎,
-              `Allowed to Use: ${userLimit.limits}commands!`
+              `*Allowed to Use:* _${currentLimit}commands!_`
             );
-            `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-          } else if (userLimit.limits === 0 && Timeout < 24) {
+          } else if (currentLimit === 0 && Timeout < permanentLimit) {
             return Mizuki_Buttons.MTB(
               ӄʀǟӄɨռʐ,
               chat,
               𝓜𝖎𝖟𝖚ӄ𝖎,
-              `Not Allowed to Use!`
+              `*Not Allowed to Use:*  _${currentLimit}commands!_`
             );
-          } else if (userLimit.limits === 0 && Timeout > 24) {
+          } else if (currentLimit === 0 && Timeout > permanentLimit) {
             userLimit.TemporaryLimitTime = Date.now();
-            userLimit.limits = 10;
-            userLimit
-              .save()
-              .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
+            if (userLimit.badge === "basic") {
+              currentLimit = 10;
+            } else if (userLimit.badge === "bronze") {
+              currentLimit = 20;
+            } else if (userLimit.badge === "silver") {
+              currentLimit = 40;
+            } else if (userLimit.badge === "gold") {
+              currentLimit = 60;
+            } else if (userLimit.badge === "platinum") {
+              currentLimit = 80;
+            } else if (userLimit.badge === "diamond") {
+              currentLimit = 100;
+            }
+            userLimit.save();
             return Mizuki_Buttons.MTB(
               ӄʀǟӄɨռʐ,
               chat,
               𝓜𝖎𝖟𝖚ӄ𝖎,
-              `Allowed to Use: ${userLimit.limits}commands!`
+              `*Allowed to Use:* _${currentLimit}commands!_`
             );
           }
         }
