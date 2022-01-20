@@ -447,7 +447,7 @@ ${update.desc}`,
                 ctx.font = "30px LobsterTwo-Bold";
                 ctx.fillStyle = "#000";
                 ctx.fillText(
-                  `${currentXP}cxp | Level: ${currentLvl}`,
+                  `${currentXP}XP |Lvl: ${currentLvl}`,
                   250,
                   162
                 );
