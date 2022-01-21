@@ -1,0 +1,54 @@
+{
+  "logo": "https://i.postimg.cc/sDXbg5xF/image.png",
+  "name": "𝓜𝖎𝖟𝖚ӄ𝖎™",
+  "repository": "https://github.com/Krakinz/Sakura.git",
+  "stack": "container",
+  "description": "ᴀᴅᴠᴀɴᴄᴇᴅ ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ 80+ ᴄᴏᴍᴍᴀɴᴅꜱ ꜰᴏʀ ʙᴏᴛʜ ᴘʀɪᴠᴀᴛᴇ ᴀɴᴅ ɢʀᴏᴜᴘ-ᴜꜱᴀɢᴇ",
+  "keywords": [
+    "whatsapp",
+    "js-whatsapp",
+    "whatsapp-api",
+    "whatsapp-web",
+    "whatsapp",
+    "whatsapp-chat",
+    "whatsapp-group",
+    "automation"
+  ],
+  "env": {
+    "SAKURA": {
+      "description": "Put Your Sakura Session Code.",
+      "required": true,
+      "value": "--------------------------------"
+    },
+    "HEROKU": {
+      "description": "Keep It Heroku!",
+      "required": true,
+      "value": "HEROKU"
+    },
+
+    "SakuraMdb": {
+      "description": "Your Localized MONGOOSE",
+      "required": true
+    },
+    "HEROKU_API_KEY": {
+      "description": "Put Your Heroku Api Code..",
+      "required": true,
+      "value": "get it from hhttps://dashboard.heroku.com/account"
+    },
+    "HEROKU_APP_NAME": {
+      "description": "Put Your App name",
+      "required": true,
+      "value": "App name you gave in the top most box.."
+    },
+    "CCD": {
+      "description": "Put Your Country Code",
+      "required": true,
+      "value": "--------------------------------"
+    },
+    "CODE": {
+      "description": "Top Secret KrakinzLab Code",
+      "required": true,
+      "value": "--------------------------------"
+    }
+  }
+}
