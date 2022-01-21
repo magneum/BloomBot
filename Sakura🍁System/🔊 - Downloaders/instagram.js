@@ -67,7 +67,6 @@ module.exports = {
           ID: ֆǟӄʊʀǟ.sender,
         },
         async (err, userBadge) => {
-          // return userBadge.delete();
           if (err) return console.log(err);
           if (!userBadge) {
             var newUser = new Bagde({
@@ -81,6 +80,13 @@ module.exports = {
             newUser
               .save()
               .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+            return Sakura_Buttons.MTB(
+              ӄʀǟӄɨռʐ,
+              chat,
+              ֆǟӄʊʀǟ,
+              `*@${ꜱᴇɴᴅᴇʀeceived}, Account Verified.Try Command Again!*`
+            );
+            //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
           } else {
             var clock =
               userBadge.PermanentLimitTime -
@@ -93,6 +99,7 @@ module.exports = {
                   ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
                 );
             }
+            //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
             if (clock > 0 && !userBadge.Limits == 0) {
               userBadge.Limits = userBadge.Limits - 1;
               userBadge.value = "True";
@@ -102,6 +109,7 @@ module.exports = {
                   ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
                 );
             }
+            //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
             if (clock < 0 && userBadge.Limits == 0) {
               if (userBadge.Badge === "🧵ʙᴀꜱɪᴄ-10ᴄᴏᴍᴍᴀɴᴅꜱ") {
                 userBadge.Limits = 10;
@@ -134,6 +142,7 @@ module.exports = {
             `./Sakura🛰️Server/Coolist.json`,
             JSON.stringify(jsoncool)
           );
+          console.log("Logged-ID: " + ֆǟӄʊʀǟ.sender);
           setTimeout((ℓαвєяяσя) => {
             if (ℓαвєяяσя) return console.log(ℓαвєяяσя);
             jsoncool.splice(ֆǟӄʊʀǟ.sender);
@@ -141,6 +150,7 @@ module.exports = {
               `./Sakura🛰️Server/Coolist.json`,
               JSON.stringify(jsoncool)
             );
+            console.log("Un-Logged-ID: " + ֆǟӄʊʀǟ.sender);
           }, 15000);
           console.log(userBadge);
           //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|

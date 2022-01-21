@@ -36,7 +36,6 @@ You can also reply to a text message with syntax  *${ᴋᴇɪ}tr <language>*  to
           ID: ֆǟӄʊʀǟ.sender,
         },
         async (err, userBadge) => {
-          // return userBadge.delete();
           if (err) return console.log(err);
           if (!userBadge) {
             var newUser = new Bagde({
@@ -50,6 +49,13 @@ You can also reply to a text message with syntax  *${ᴋᴇɪ}tr <language>*  to
             newUser
               .save()
               .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+            return Sakura_Buttons.MTB(
+              ӄʀǟӄɨռʐ,
+              chat,
+              ֆǟӄʊʀǟ,
+              `*@${ꜱᴇɴᴅᴇʀeceived}, Account Verified.Try Command Again!*`
+            );
+            //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
           } else {
             var clock =
               userBadge.PermanentLimitTime -
@@ -62,6 +68,7 @@ You can also reply to a text message with syntax  *${ᴋᴇɪ}tr <language>*  to
                   ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
                 );
             }
+            //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
             if (clock > 0 && !userBadge.Limits == 0) {
               userBadge.Limits = userBadge.Limits - 1;
               userBadge.value = "True";
@@ -71,6 +78,7 @@ You can also reply to a text message with syntax  *${ᴋᴇɪ}tr <language>*  to
                   ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
                 );
             }
+            //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
             if (clock < 0 && userBadge.Limits == 0) {
               if (userBadge.Badge === "🧵ʙᴀꜱɪᴄ-10ᴄᴏᴍᴍᴀɴᴅꜱ") {
                 userBadge.Limits = 10;

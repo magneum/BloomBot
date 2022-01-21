@@ -47,7 +47,6 @@ module.exports = {
           ID: ֆǟӄʊʀǟ.sender,
         },
         async (err, userBadge) => {
-          // return userBadge.delete();
           if (err) return console.log(err);
           if (!userBadge) {
             var newUser = new Bagde({
@@ -61,6 +60,13 @@ module.exports = {
             newUser
               .save()
               .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+            return Sakura_Buttons.MTB(
+              ӄʀǟӄɨռʐ,
+              chat,
+              ֆǟӄʊʀǟ,
+              `*@${ꜱᴇɴᴅᴇʀeceived}, Account Verified.Try Command Again!*`
+            );
+            //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
           } else {
             var clock =
               userBadge.PermanentLimitTime -
@@ -73,6 +79,7 @@ module.exports = {
                   ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
                 );
             }
+            //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
             if (clock > 0 && !userBadge.Limits == 0) {
               userBadge.Limits = userBadge.Limits - 1;
               userBadge.value = "True";
@@ -82,6 +89,7 @@ module.exports = {
                   ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
                 );
             }
+            //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
             if (clock < 0 && userBadge.Limits == 0) {
               if (userBadge.Badge === "🧵ʙᴀꜱɪᴄ-10ᴄᴏᴍᴍᴀɴᴅꜱ") {
                 userBadge.Limits = 10;
@@ -143,8 +151,7 @@ module.exports = {
 ╚════════════╝`
             );
           }
-          //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
-          var Raw = await porno();
+          //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|          var Raw = await porno();
           var RawData = `https://tikporntok.com/` + Raw.video;
           if (!RawData.endsWith(`.mp4`)) {
             return Sakura_Buttons.MTB(
