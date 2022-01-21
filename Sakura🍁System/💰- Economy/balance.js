@@ -85,7 +85,7 @@ module.exports = {
                 ӄʀǟӄɨռʐ,
                 chat,
                 ֆǟӄʊʀǟ,
-                `@${ꜱᴇɴᴅᴇʀeceived}'𝘀 𝐌𝐢𝐳𝐮𝐤𝐢𝐁𝐚𝐧𝐤
+                `@${ꜱᴇɴᴅᴇʀeceived}'𝘀 𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐚𝐧𝐤
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 ║💰 𝗧𝗼𝘁𝗮𝗹 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: Just Opened Your Account!
@@ -99,7 +99,7 @@ module.exports = {
                 ӄʀǟӄɨռʐ,
                 chat,
                 ֆǟӄʊʀǟ,
-                `@${ꜱᴇɴᴅᴇʀeceived}'𝘀 𝐌𝐢𝐳𝐮𝐤𝐢𝐁𝐚𝐧𝐤
+                `@${ꜱᴇɴᴅᴇʀeceived}'𝘀 𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐚𝐧𝐤
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 ║💰 𝗧𝗼𝘁𝗮𝗹 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: ${userEco.money}
@@ -142,7 +142,7 @@ module.exports = {
                 ӄʀǟӄɨռʐ,
                 chat,
                 ֆǟӄʊʀǟ,
-                `@${ꜱᴇɴᴅᴇʀeceived}'𝘀 𝐌𝐢𝐳𝐮𝐤𝐢𝐁𝐚𝐧𝐤
+                `@${ꜱᴇɴᴅᴇʀeceived}'𝘀 𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐚𝐧𝐤
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 ║💰 𝗧𝗼𝘁𝗮𝗹 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: Just Opened Your Account!
@@ -156,7 +156,7 @@ module.exports = {
                 ӄʀǟӄɨռʐ,
                 chat,
                 ֆǟӄʊʀǟ,
-                `@${ꜱᴇɴᴅᴇʀeceived}'𝘀 𝐌𝐢𝐳𝐮𝐤𝐢𝐁𝐚𝐧𝐤
+                `@${ꜱᴇɴᴅᴇʀeceived}'𝘀 𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐚𝐧𝐤
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 ║💰 𝗧𝗼𝘁𝗮𝗹 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: ${userEco.money}

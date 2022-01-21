@@ -146,7 +146,7 @@ module.exports = {
 📥𝗧𝗼: _Telegra.ph URL_
 
 🔗 𝐔𝐫𝐥: ${util.format(gotTgh)}`,
-                  footerText: `(𝐜)𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭 \n${Clock}`,
+                  footerText: `(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 \n${Clock}`,
                   buttons: [
                     {
                       buttonId: `${ᴋᴇɪ}help`,

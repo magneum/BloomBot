@@ -33,7 +33,7 @@ const Sakura_Text_But = (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, MainText) => {
   }
   const buttonMessage = {
     contentText: MainText,
-    footerText: `(𝐜)𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭 \n${Clock}`,
+    footerText: `(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 \n${Clock}`,
     buttons: [
       {
         buttonId: `${ᴋᴇɪ}help`,
@@ -74,7 +74,7 @@ const Sakura_Image_But = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, MainText, Me
       ֆǟӄʊʀǟ.chatId,
       {
         contentText: MainText,
-        footerText: `(𝐜)𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭 \n${Clock}`,
+        footerText: `(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 \n${Clock}`,
         buttons: [
           {
             buttonId: `${ᴋᴇɪ}help`,
@@ -117,7 +117,7 @@ const Sakura_Video_But = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, MainText, Me
       ֆǟӄʊʀǟ.chatId,
       {
         contentText: MainText,
-        footerText: `(𝐜)𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭 \n${Clock}`,
+        footerText: `(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 \n${Clock}`,
         buttons: [
           {
             buttonId: `${ᴋᴇɪ}help`,
@@ -160,7 +160,7 @@ const Sakura_GIF_But = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, MainText, Medi
       ֆǟӄʊʀǟ.chatId,
       {
         contentText: MainText,
-        footerText: `(𝐜)𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭 \n${Clock}`,
+        footerText: `(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 \n${Clock}`,
         buttons: [
           {
             buttonId: `${ᴋᴇɪ}help`,
@@ -207,7 +207,7 @@ const Sakura_VideoAudio_But = async (
   const buttonMessages = {
     videoMessage: media.message.videoMessage,
     contentText: MainText,
-    footerText: `(𝐜)𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭 \n${Clock}`,
+    footerText: `(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 \n${Clock}`,
     buttons: [
       {
         buttonId: `${ᴋᴇɪ}help`,
@@ -252,7 +252,7 @@ const Sakura_Location_But = async (
   const buttonMessages = {
     locationMessage: media.message.locationMessage,
     contentText: MainText,
-    footerText: `(𝐜)𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭 \n${Clock}`,
+    footerText: `(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 \n${Clock}`,
     buttons: [
       {
         buttonId: `${ᴋᴇɪ}help`,

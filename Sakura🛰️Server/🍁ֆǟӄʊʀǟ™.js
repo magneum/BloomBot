@@ -72,7 +72,7 @@ async function ֆǟӄʊʀǟ() {
   var ꜱɪᴛʀᴀᴘ = new Map();
   var commandUsage = new Map();
   console.log(
-    Kolor.bgYellowBright.black(`🍁INFO ⬰ 𝐒𝐲𝐦𝐥𝐢𝐧𝐤𝐢𝐧𝐠 𝐖𝐢𝐭𝐡 𝐌𝐢𝐳𝐮𝐤𝐢 𝐒𝐲𝐬𝐭𝐞𝐦...✔️`)
+    Kolor.bgYellowBright.black(`🍁INFO ⬰ 𝐒𝐲𝐦𝐥𝐢𝐧𝐤𝐢𝐧𝐠 𝐖𝐢𝐭𝐡 𝐒𝐚𝐤𝐮𝐫𝐚 𝐒𝐲𝐬𝐭𝐞𝐦...✔️`)
   );
   if (_𝔏𝔞𝔟_.HEROKU_API_KEY === `Null` || _𝔏𝔞𝔟_.HEROKU_APP_NAME === `Null`) {
     console.log(
@@ -124,7 +124,7 @@ async function ֆǟӄʊʀǟ() {
       )
     );
     console.log(
-      Kolor.bgGreenBright.black(`🍁INFO ⬰ 𝐋𝐢𝐧𝐤𝐢𝐧𝐠 𝐌𝐢𝐳𝐮𝐤𝐢 𝐖𝐢𝐭𝐡 𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞...✔️`)
+      Kolor.bgGreenBright.black(`🍁INFO ⬰ 𝐋𝐢𝐧𝐤𝐢𝐧𝐠 𝐒𝐚𝐤𝐮𝐫𝐚 𝐖𝐢𝐭𝐡 𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞...✔️`)
     );
     try {
       await ֆǟӄʊʀǟsql.authenticate();
@@ -155,7 +155,7 @@ async function ֆǟӄʊʀǟ() {
     );
     ӄʀǟӄɨռʐ.sendMessage(
       ӄʀǟӄɨռʐ.user.jid,
-      `(𝐜)𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭 _${version}_
+      `(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 _${version}_
 
 ╔═══════★
 ║🍁ᴘʀᴇꜰɪx: ${ᴋᴇɪ}
@@ -301,7 +301,7 @@ ${update.desc}`,
             contentText: `𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚👋🏻 ${Timers} ᴇᴠᴇʀʏᴏɴᴇ.
 ʙᴏᴛ ɪꜱ ʀᴇᴀᴅʏ ᴛᴏ ᴀꜱꜱɪꜱᴛ ʏᴏᴜ!
 ᴛʏᴘᴇ *${ᴋᴇɪ}help* ᴛᴏ ᴋɴᴏᴡ ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅꜱ!`,
-            footerText: `(𝐜)𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭 \n${Clock}`,
+            footerText: `(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 \n${Clock}`,
             buttons: [
               {
                 buttonId: `${ᴋᴇɪ}help`,
@@ -504,7 +504,7 @@ ${update.desc}`,
 ║🍊 𝗡𝗲𝘅𝘁_𝗟𝗲𝘃𝗲𝗹: ${xpleft}xp
 ╚════════════╝
 
-╔════◇🌿𝐓𝐨𝐩𝐢𝐜: 🍁𝐌𝐢𝐳𝐮𝐤𝐢𝐁𝐚𝐧𝐤
+╔════◇🌿𝐓𝐨𝐩𝐢𝐜: 🍁𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐚𝐧𝐤
 ║🛵 𝐑𝐚𝐧𝐤_𝐁𝐨𝐧𝐮𝐬: 200       
 ║🪙 𝗧𝗼𝘁𝗮𝗹_𝗕𝗮𝗹𝗮𝗻𝗰𝗲: Just Opened Your Account!
 ╚════════════╝
@@ -542,7 +542,7 @@ ${update.desc}`,
 ║🍊 𝗡𝗲𝘅𝘁_𝗟𝗲𝘃𝗲𝗹: ${xpleft}xp
 ╚════════════╝
 
-╔════◇🌿𝐓𝐨𝐩𝐢𝐜: 🍁𝐌𝐢𝐳𝐮𝐤𝐢𝐁𝐚𝐧𝐤
+╔════◇🌿𝐓𝐨𝐩𝐢𝐜: 🍁𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐚𝐧𝐤
 ║🛵 𝐑𝐚𝐧𝐤_𝐁𝐨𝐧𝐮𝐬: ${Ran} 
 ║🪙 𝗧𝗼𝘁𝗮𝗹_𝗕𝗮𝗹𝗮𝗻𝗰𝗲: ${userEco.money}
 ╚════════════╝

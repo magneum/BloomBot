@@ -130,7 +130,7 @@ module.exports = {
 💞𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${groupData.participants.length}
 🍰 𝐆𝐫𝐨𝐮𝐩: https://chat.whatsapp.com/${code}
 `,
-              footerText: `(𝐜)𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭 \n${Clock}`,
+              footerText: `(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 \n${Clock}`,
               buttons: [
                 {
                   buttonId: `${ᴋᴇɪ}help`,
@@ -166,7 +166,7 @@ module.exports = {
 💞𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${groupData.participants.length}
 🍰 𝐆𝐫𝐨𝐮𝐩: https://chat.whatsapp.com/${code}
 `,
-              footerText: `(𝐜)𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭 \n${Clock}`,
+              footerText: `(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 \n${Clock}`,
               buttons: [
                 {
                   buttonId: `${ᴋᴇɪ}help`,

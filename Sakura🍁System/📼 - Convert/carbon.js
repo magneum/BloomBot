@@ -176,7 +176,7 @@ or reply to a text message with
             await ӄʀǟӄɨռʐ
               .sendMessage(
                 ֆǟӄʊʀǟ.chatId,
-                `(𝐜)𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭  \n${Clock}\n\nThe replied message should be text.`,
+                `(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭  \n${Clock}\n\nThe replied message should be text.`,
                 MessageType.text,
                 { quoted: chat }
               )
@@ -195,7 +195,7 @@ or reply to a text message with
               if (text[0] === `-` && text[1] === `t`) {
                 if (text[2] == null) {
                   let counter = 1;
-                  var message = `(𝐜)𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
+                  var message = `(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭\n🛰️ᴘɪɴɢ: _${Ping.toFixed(
                     2
                   )}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${
                     vers.vers
@@ -222,7 +222,7 @@ or reply to a text message with
                   await ӄʀǟӄɨռʐ
                     .sendMessage(
                       ֆǟӄʊʀǟ.chatId,
-                      `(𝐜)𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭\n🛰️ᴘɪɴɢ: _${Ping}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n${Clock}\n\nNo input provided.
+                      `(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭\n🛰️ᴘɪɴɢ: _${Ping}s_\n🛸𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_\n${Clock}\n\nNo input provided.
 Please use the command  *${ᴋᴇɪ}carbon <text>*  or reply to a text message with  *${ᴋᴇɪ}carbon*  to carbonize the text.`,
                       MessageType.text,
                       { quoted: chat }
@@ -245,7 +245,7 @@ Please use the command  *${ᴋᴇɪ}carbon <text>*  or reply to a text message w
                 await ӄʀǟӄɨռʐ
                   .sendMessage(
                     ֆǟӄʊʀǟ.chatId,
-                    `(𝐜)𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭  \n${Clock}\n\nPlease enter a valid theme.
+                    `(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭  \n${Clock}\n\nPlease enter a valid theme.
 Do note that theme names are  *case sensitive*${ᴋᴇɪ}`,
                     MessageType.text,
                     { quoted: chat }
@@ -276,7 +276,7 @@ Do note that theme names are  *case sensitive*${ᴋᴇɪ}`,
             .sendMessage(ֆǟӄʊʀǟ.chatId, output, MessageType.image, {
               quoted: chat,
               mimetype: Mimetype.png,
-              caption: `(𝐜)𝐌𝐢𝐳𝐮𝐤𝐢 𝐁𝐨𝐭
+              caption: `(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭
 Colour Scheme: {}`.format(themeInput),
             })
             .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
