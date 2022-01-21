@@ -4,31 +4,23 @@
 `|🍁|`;
 `|🍁|`;
 const Sakura_Buttons = require(`../../Sakura🛰️Server/Sakura_Buttons`);
-const Sakura_Static = require(`../../Sakura🛰️Server/Sakura_Static`);
-const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
-const cleanRF = require(`../../Sakura🛰️Server/cleanRF`);
-const ꜰᴜᴄᴋ = require(`../../Sakura🛰️Server/oShit`);
+const { formatp, runtime } = require(`../../Sakura🛰️Server/mizu`);
 const _𝔏𝔞𝔟_ = require(`../../Sakura🛰️Server/_𝔏𝔞𝔟_`);
+const ꜰᴜᴄᴋ = require(`../../Sakura🛰️Server/oShit`);
+const { performance } = require(`perf_hooks`);
+const vers = require(`../../package.json`);
+const speed = require(`performance-now`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 const fs = require(`fs`);
+const os = require(`os`);
 var path = require(`path`);
 var scriptName = path.basename(__filename);
 var newScpt = scriptName.slice(0, -3).toLowerCase();
 //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
 module.exports = {
   name: newScpt,
-  async handle(
-    ӄʀǟӄɨռʐ,
-    chat,
-    ֆǟӄʊʀǟ,
-    Needs,
-    ꜱɪᴛʀᴀᴘ,
-    Clock,
-    Ping,
-    Timers,
-    version
-  ) {
+  async handle(ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping, Timers) {
     try {
       var ꜱᴇɴᴅᴇʀɪᴅ = ֆǟӄʊʀǟ.sender;
       var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
@@ -38,8 +30,55 @@ module.exports = {
       const hold = require("../../Sakura🛰️Server/Hold");
       hold.Hold(ֆǟӄʊʀǟ);
       //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
+      const used = process.memoryUsage();
+      const cpus = os.cpus().map((cpu) => {
+        cpu.total = Object.keys(cpu.times).reduce(
+          (last, type) => last + cpu.times[type],
+          0
+        );
+        return cpu;
+      });
+      const cpu = cpus.reduce(
+        (last, cpu, _, { length }) => {
+          last.total += cpu.total;
+          last.speed += cpu.speed / length;
+          last.times.user += cpu.times.user;
+          last.times.nice += cpu.times.nice;
+          last.times.sys += cpu.times.sys;
+          last.times.idle += cpu.times.idle;
+          last.times.irq += cpu.times.irq;
+          return last;
+        },
+        {
+          speed: 0,
+          total: 0,
+          times: {
+            user: 0,
+            nice: 0,
+            sys: 0,
+            idle: 0,
+            irq: 0,
+          },
+        }
+      );
+
+      let timestamp = speed();
+      let latensi = speed() - timestamp;
+      neww = performance.now();
+      oldd = performance.now();
+      //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
       var MediaUrl = `./Sakura☣️Reactor/ֆǟӄʊʀǟ.png`;
       var MainText = `${Timers} @${ꜱᴇɴᴅᴇʀeceived}, 🍁𝐒𝐚𝐤𝐮𝐫𝐚 𝐈𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
+
+
+╔═══════ ★ 𝐒𝐲𝐦𝐥𝐢𝐧𝐤 𝐈𝐧𝐟𝐨𝐬
+║シ︎ ⚙️𝐄𝐧𝐠𝐢𝐧𝐞: ${vers.vers}
+║シ︎ 💻𝐏𝐥𝐚𝐭𝐅𝐨𝐫𝐦: ${os.platform()}
+║シ︎ 🛰️𝐋𝐚𝐭𝐞𝐧𝐜𝐲: ${latensi.toFixed(4)}(s)
+║シ︎ ☕𝐔𝐩𝐓𝐢𝐦𝐞: ${runtime(process.uptime())}
+║シ︎ 🎮𝐑𝐀𝐌: ${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}
+╚════════════╝
+
 
 ╔════ 🔎 𝐒𝐞𝐚𝐫𝐜𝐡 ════╗
 ║▷ ${ᴋᴇɪ}ytsearc

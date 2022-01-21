@@ -3,20 +3,11 @@
 `|🍁|======================================================================================================⬡  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™`;
 `|🍁|`;
 `|🍁|`;
-const Sakura_Buttons = require(`../../Sakura🛰️Server/Sakura_Buttons`);
-const Sakura_Static = require(`../../Sakura🛰️Server/Sakura_Static`);
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
-const { formatp, runtime } = require(`../../Sakura🛰️Server/mizu`);
-const cleanRF = require(`../../Sakura🛰️Server/cleanRF`);
 const ꜰᴜᴄᴋ = require(`../../Sakura🛰️Server/oShit`);
-const speed = require(`performance-now`);
 const _𝔏𝔞𝔟_ = require(`../../Sakura🛰️Server/_𝔏𝔞𝔟_`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
-const { performance } = require(`perf_hooks`);
-const vers = require(`../../package.json`);
-const fs = require(`fs`);
-const os = require(`os`);
 var path = require(`path`);
 var scriptName = path.basename(__filename);
 var newScpt = scriptName.slice(0, -3).toLowerCase();
@@ -33,43 +24,6 @@ module.exports = {
       const hold = require("../../Sakura🛰️Server/Hold");
       hold.Hold(ֆǟӄʊʀǟ);
       //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
-      const used = process.memoryUsage();
-      const cpus = os.cpus().map((cpu) => {
-        cpu.total = Object.keys(cpu.times).reduce(
-          (last, type) => last + cpu.times[type],
-          0
-        );
-        return cpu;
-      });
-      const cpu = cpus.reduce(
-        (last, cpu, _, { length }) => {
-          last.total += cpu.total;
-          last.speed += cpu.speed / length;
-          last.times.user += cpu.times.user;
-          last.times.nice += cpu.times.nice;
-          last.times.sys += cpu.times.sys;
-          last.times.idle += cpu.times.idle;
-          last.times.irq += cpu.times.irq;
-          return last;
-        },
-        {
-          speed: 0,
-          total: 0,
-          times: {
-            user: 0,
-            nice: 0,
-            sys: 0,
-            idle: 0,
-            irq: 0,
-          },
-        }
-      );
-
-      let timestamp = speed();
-      let latensi = speed() - timestamp;
-      neww = performance.now();
-      oldd = performance.now();
-      //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
       const media = await ӄʀǟӄɨռʐ.prepareMessage(
         ֆǟӄʊʀǟ.chatId,
         { url: _𝔏𝔞𝔟_.MEE },
@@ -82,17 +36,11 @@ module.exports = {
         .sendMessage(
           ֆǟӄʊʀǟ.chatId,
           {
-            contentText: `@${ꜱᴇɴᴅᴇʀeceived}, 🍁𝐒𝐚𝐤𝐮𝐫𝐚 𝐈𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
-            
-╔═══════ ★ 𝐒𝐲𝐦𝐥𝐢𝐧𝐤 𝐈𝐧𝐟𝐨𝐬
-║シ︎ ⚙️𝐄𝐧𝐠𝐢𝐧𝐞: ${vers.vers}
-║シ︎ 💻𝐏𝐥𝐚𝐭𝐅𝐨𝐫𝐦: ${os.platform()}
-║シ︎ 🛰️𝐋𝐚𝐭𝐞𝐧𝐜𝐲: ${latensi.toFixed(4)}(s)
-║シ︎ ☕𝐔𝐩𝐓𝐢𝐦𝐞: ${runtime(process.uptime())}
-║シ︎ 🎮𝐑𝐀𝐌: ${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}
-╚════════════╝
+            contentText: `🍁𝐒𝐚𝐤𝐮𝐫𝐚 𝐈𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
+🐙 𝐎𝐟𝐟𝐢𝐜𝐢𝐚𝐥: ${_𝔏𝔞𝔟_.HASH}            
 
-╔═══════ 🌈𝐂𝐚𝐭𝐞𝐠𝐨𝐫𝐢𝐞𝐬*
+
+╔═══════ 🌈𝐂𝐚𝐭𝐞𝐠𝐨𝐫𝐢𝐞𝐬
 ║シ︎ 🍣${ᴋᴇɪ}animemenu
 ║シ︎ 💰${ᴋᴇɪ}ecomenu
 ║シ︎ 🐙${ᴋᴇɪ}ownermenu
@@ -105,7 +53,7 @@ module.exports = {
 ║シ︎ 🍄${ᴋᴇɪ}hentaimenu _(ᴀᴅᴍɪɴ-ᴏɴʟʏ)_
 ║シ︎ 🥃${ᴋᴇɪ}humanmenu _(ᴀᴅᴍɪɴ-ᴏɴʟʏ)_
 ╚════════════╝
-🐙 𝐎𝐟𝐟𝐢𝐜𝐢𝐚𝐥: ${_𝔏𝔞𝔟_.HASH}
+
 ☘️𝐏𝐫𝐞𝐬𝐬 𝐅𝐨𝐫 𝐒𝐚𝐤𝐮𝐫𝐚 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬👇🏽‍`,
             footerText: `(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 \n_${Clock}_`,
             buttons: [
@@ -115,8 +63,8 @@ module.exports = {
                 type: 1,
               },
               {
-                buttonId: `${ᴋᴇɪ}mizuki`,
-                buttonText: { displayText: `${ᴋᴇɪ}mizuki` },
+                buttonId: `${ᴋᴇɪ}repo`,
+                buttonText: { displayText: `${ᴋᴇɪ}repo` },
                 type: 1,
               },
             ],
