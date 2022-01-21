@@ -18,7 +18,7 @@ var newScpt = scriptName.slice(0, -3).toLowerCase();
 `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
 module.exports = {
   name: newScpt,
-  𝓜𝓮𝓮6ʍօʀɛ: `*${ᴋᴇɪ}promote* 9100000000
+  ֆǟӄʊʀǟӄǟɨʐօ: `*${ᴋᴇɪ}promote* 9100000000
 *${ᴋᴇɪ}promote* (tag)
 *${ᴋᴇɪ}promote* (reply to their text)
 🍁Use this module to demote a person from admin by entering the person's mobile number. `,
@@ -98,7 +98,7 @@ module.exports = {
       if (!ֆǟӄʊʀǟ.isReply && typeof Needs[0] == `undefined`) {
         var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(ֆǟӄʊʀǟ.commandName);
         var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
-          𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ === undefined ? `Null` : 𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ;
+          𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ === undefined ? `Null` : 𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ;
         const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../Sakura🛰️Server/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
         return ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
           ӄʀǟӄɨռʐ,

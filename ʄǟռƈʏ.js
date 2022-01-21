@@ -19,7 +19,7 @@ try {
       for (const ᴍɪꜱᴏ of commandFiles) {
         const command = require(`./Sakura🍁System/${ʜᴏʟᴅᴇʀ}/${ᴍɪꜱᴏ}`);
         ꜱɪᴛʀᴀᴘ.set(command.name, command);
-        commandUsage.set(command.𝓜𝓮𝓮6ʍօʀɛ, command.description);
+        commandUsage.set(command.ֆǟӄʊʀǟӄǟɨʐօ, command.description);
         if (_𝔏𝔞𝔟_.HEROKU === undefined) {
           try {
             ᴍɪᴢᴜᴋɪᴛᴀʙʟᴇ.addRow(

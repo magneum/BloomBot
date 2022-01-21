@@ -17,7 +17,7 @@ var newScpt = scriptName.slice(0, -3).toLowerCase();
 `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
 module.exports = {
   name: newScpt,
-  𝓜𝓮𝓮6ʍօʀɛ: `*${ᴋᴇɪ}tagall* (text) _or_ reply: *${ᴋᴇɪ}tagall* _or_ (no-text): *${ᴋᴇɪ}tagall*`,
+  ֆǟӄʊʀǟӄǟɨʐօ: `*${ᴋᴇɪ}tagall* (text) _or_ reply: *${ᴋᴇɪ}tagall* _or_ (no-text): *${ᴋᴇɪ}tagall*`,
   async handle(ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
     try {
       var ꜱᴇɴᴅᴇʀɪᴅ = ֆǟӄʊʀǟ.sender;
