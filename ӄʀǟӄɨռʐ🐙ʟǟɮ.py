@@ -9,7 +9,7 @@ from os import getenv
 import os
 from dotenv import load_dotenv
 
-load_dotenv("./Mizuki☣️Reactor.env")
+load_dotenv("./Sakura☣️Reactor.env")
 爪𝖟𝖚ӄ𝖎 = getenv("HEROKU", None)
 爪𝖎𝖟𝖚ӄ = getenv("HEROKU", None)
 爪𝖎𝖟𝖚ӄ𝖎 = getenv("CODE", None)
@@ -193,8 +193,8 @@ if 爪𝖎𝖟𝖚ӄ𝖎 is not None:
             os.remove("xp0e.aes")
             os.remove("xp0edoc.py")
             shutil.rmtree("__pycache__")
-            if os.path.exists("Mizuki🛰️Server/🐙ʟǟɮ.py"):
-                os.system("python3 Mizuki🛰️Server/🐙ʟǟɮ.py")
+            if os.path.exists("Sakura🛰️Server/🐙ʟǟɮ.py"):
+                os.system("python3 Sakura🛰️Server/🐙ʟǟɮ.py")
             else:
                 pass
         else:

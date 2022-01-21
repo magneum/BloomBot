@@ -8,16 +8,16 @@ try {
     `🍁𝗖𝗼𝗺𝗺𝗮𝗻𝗱 𝗙𝗼𝗹𝗱𝗲𝗿🍁`,
     `🍁𝐇𝐞𝐚𝐥𝐭𝐡🍁`
   );
-  const _𝔏𝔞𝔟_ = require(`./Mizuki🛰️Server/_𝔏𝔞𝔟_`);
+  const _𝔏𝔞𝔟_ = require(`./Sakura🛰️Server/_𝔏𝔞𝔟_`);
   // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
   function ʄǟռƈʏ(ꜱɪᴛʀᴀᴘ, commandUsage) {
-    const ᴍɪᴢᴜᴋɪᴅᴇʀꜱ = fs.readdirSync(`./Mizuki🍁System`);
+    const ᴍɪᴢᴜᴋɪᴅᴇʀꜱ = fs.readdirSync(`./Sakura🍁System`);
     for (const ʜᴏʟᴅᴇʀ of ᴍɪᴢᴜᴋɪᴅᴇʀꜱ) {
       const commandFiles = fs
-        .readdirSync(`./Mizuki🍁System/${ʜᴏʟᴅᴇʀ}`)
+        .readdirSync(`./Sakura🍁System/${ʜᴏʟᴅᴇʀ}`)
         .filter((ᴍɪꜱᴏ) => ᴍɪꜱᴏ.endsWith(`.js`));
       for (const ᴍɪꜱᴏ of commandFiles) {
-        const command = require(`./Mizuki🍁System/${ʜᴏʟᴅᴇʀ}/${ᴍɪꜱᴏ}`);
+        const command = require(`./Sakura🍁System/${ʜᴏʟᴅᴇʀ}/${ᴍɪꜱᴏ}`);
         ꜱɪᴛʀᴀᴘ.set(command.name, command);
         commandUsage.set(command.𝓜𝓮𝓮6ʍօʀɛ, command.description);
         if (_𝔏𝔞𝔟_.HEROKU === undefined) {

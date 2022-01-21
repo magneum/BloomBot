@@ -1,7 +1,7 @@
 {
   "logo": "https://i.postimg.cc/sDXbg5xF/image.png",
   "name": "𝓜𝖎𝖟𝖚ӄ𝖎™",
-  "repository": "https://github.com/Krakinz/Mizuki.git",
+  "repository": "https://github.com/Krakinz/Sakura.git",
   "stack": "container",
   "description": "ᴀᴅᴠᴀɴᴄᴇᴅ ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ 80+ ᴄᴏᴍᴍᴀɴᴅꜱ ꜰᴏʀ ʙᴏᴛʜ ᴘʀɪᴠᴀᴛᴇ ᴀɴᴅ ɢʀᴏᴜᴘ-ᴜꜱᴀɢᴇ",
   "keywords": [
@@ -16,7 +16,7 @@
   ],
   "env": {
     "MIZUKI": {
-      "description": "Put Your Mizuki Session Code.",
+      "description": "Put Your Sakura Session Code.",
       "required": true,
       "value": "--------------------------------"
     },
@@ -26,7 +26,7 @@
       "value": "HEROKU"
     },
 
-    "MizukiMdb": {
+    "SakuraMdb": {
       "description": "Your Localized MONGOOSE",
       "required": true
     },

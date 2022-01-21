@@ -1,7 +1,7 @@
 {
-  "name": "mizuki",
-  "vers": "v29",
-  "verold": "v28",
+  "name": "Sakura",
+  "vers": "v1",
+  "verold": "v0",
   "keywords": [
     "whatsapp",
     "js-whatsapp",
@@ -13,7 +13,7 @@
     "automation"
   ],
   "dependencies": {
-    "@adiwajshing/baileys": "^3.5.0",
+    "@adiwajshing/baileys": "^3.5.3",
     "@cicciosgamino/openweather-apis": "^5.0.1",
     "@ffmpeg-installer/ffmpeg": "^1.1.0",
     "@ffprobe-installer/ffprobe": "^1.3.0",
