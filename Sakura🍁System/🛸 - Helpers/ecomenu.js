@@ -32,6 +32,8 @@ module.exports = {
       var MainText = `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 •@${ꜱᴇɴᴅᴇʀeceived}, ${Timers}
 
 ╔═════════════💰 𝗘𝗰𝗼𝗻𝗼𝗺𝘆
+║• ${ᴋᴇɪ}store: _visit krakinzlab member store_
+║• ${ᴋᴇɪ}buy: _buy items from store_
 ║• ${ᴋᴇɪ}fish: _Catch A Fish From A Vast Ocean_
 ║• ${ᴋᴇɪ}daily: _Gives You 200 per day_
 ║• ${ᴋᴇɪ}work: _Work to Earn Money_
