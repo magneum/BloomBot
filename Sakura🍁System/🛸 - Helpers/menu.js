@@ -196,6 +196,8 @@ module.exports = {
 ╔════ 🔰 𝐆𝐫𝐨𝐮𝐩𝐬/𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧 ════╗
 ║▷ ${ᴋᴇɪ}promote
 ║▷ ${ᴋᴇɪ}demote
+║▷ ${ᴋᴇɪ}warn
+║▷ ${ᴋᴇɪ}unwarn
 ║▷ ${ᴋᴇɪ}invite
 ║▷ ${ᴋᴇɪ}lock
 ║▷ ${ᴋᴇɪ}unlock

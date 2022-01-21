@@ -49,6 +49,8 @@ module.exports = {
 ╔═════════════🔰 𝐆𝐫𝐨𝐮𝐩𝐬/𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧
 ║• ${ᴋᴇɪ}promote: _promote member to admin_
 ║• ${ᴋᴇɪ}demote: _demote member from admin_
+║• ${ᴋᴇɪ}warn: _warn a person_
+║• ${ᴋᴇɪ}unwarn: _remove warnings from a warned person_
 ║• ${ᴋᴇɪ}invite: _get group invite link_
 ║• ${ᴋᴇɪ}admins: _get all admins of a group_
 ║• ${ᴋᴇɪ}getdesc: _get group description_
