@@ -3,7 +3,7 @@
 <img align="left"  height="50" src="https://i.postimg.cc/pV6wfY7v/Sakura.png">
 <img align="right"  height="50" src="https://i.postimg.cc/pV6wfY7v/Sakura.png">
 
-# 🍁ֆǟӄʊʀǟ™
+# 🍹ֆǟӄʊʀǟ™
 
 <img align="left"  height="200" src="https://i.postimg.cc/4dQvSpCZ/image.gif">
 <img align="centre"  height="200" src="https://i.postimg.cc/4dQvSpCZ/image.gif">
