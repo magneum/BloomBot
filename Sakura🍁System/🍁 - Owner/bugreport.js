@@ -27,35 +27,8 @@ module.exports = {
       const defaultnm = ֆǟӄʊʀǟ.commandName;
       const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
       //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
-      let CL;
-      if (!ֆǟӄʊʀǟ.fromMe && !ֆǟӄʊʀǟ.isSenderDev) {
-        const clearance = require("../../Sakura🛰️Server/clearance");
-        const cleared = await clearance(ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ);
-        CL = cleared;
-      }
-      if (!CL) {
-        return;
-      }
-      //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
-      const jsoncool = await JSON.parse(
-        fs.readFileSync(`./Sakura🛰️Server/Coolist.json`)
-      );
-      await jsoncool.push(ֆǟӄʊʀǟ.sender);
-      fs.writeFileSync(
-        `./Sakura🛰️Server/Coolist.json`,
-        JSON.stringify(jsoncool)
-      );
-      console.log("Logged-ID: " + ֆǟӄʊʀǟ.sender);
-      setTimeout((ℓαвєяяσя) => {
-        if (ℓαвєяяσя) return console.log(ℓαвєяяσя);
-        jsoncool.splice(ֆǟӄʊʀǟ.sender);
-        fs.writeFileSync(
-          `./Sakura🛰️Server/Coolist.json`,
-          JSON.stringify(jsoncool)
-        );
-        console.log("Un-Logged-ID: " + ֆǟӄʊʀǟ.sender);
-      }, 15000);
-      console.log(userBadge);
+      const hold = require("../../Sakura🛰️Server/Hold");
+      hold.Hold(ֆǟӄʊʀǟ);
       //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
       if (Needs.length === 0) {
         var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(ֆǟӄʊʀǟ.commandName);
@@ -72,6 +45,7 @@ module.exports = {
           ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
         );
       }
+      //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
       let content = fs.readFileSync(`./Sakura☣️Reactor/ֆǟӄʊʀǟ™.mp4`);
       const media = await ӄʀǟӄɨռʐ.prepareMessage(
         ֆǟӄʊʀǟ.chatId,
@@ -112,7 +86,7 @@ _If Found the report was just for fun then you will be banned by the bot!_
           }
         )
         .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-
+      //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
       let members = [];
       for (var i = 0; i < ֆǟӄʊʀǟ.groupMembers.length; i++) {
         members[i] = ֆǟӄʊʀǟ.groupMembers[i].jid;

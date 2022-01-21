@@ -23,22 +23,8 @@ module.exports = {
     const defaultnm = ֆǟӄʊʀǟ.commandName;
     const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
     //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
-    const jsoncool = await JSON.parse(
-      fs.readFileSync(`./Sakura🛰️Server/Coolist.json`)
-    );
-    await jsoncool.push(ֆǟӄʊʀǟ.sender);
-    await fs.writeFileSync(
-      `./Sakura🛰️Server/Coolist.json`,
-      JSON.stringify(jsoncool)
-    );
-    setTimeout(async (error) => {
-      if (error) console.log(error);
-      await jsoncool.splice(ֆǟӄʊʀǟ.sender);
-      await fs.writeFileSync(
-        `./Sakura🛰️Server/Coolist.json`,
-        JSON.stringify(jsoncool)
-      );
-    }, 15000);
+    const hold = require("../../Sakura🛰️Server/Hold");
+    hold.Hold(ֆǟӄʊʀǟ);
     //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
     if (!ֆǟӄʊʀǟ.fromMe && !ֆǟӄʊʀǟ.isSenderDev) {
       return Sakura_Buttons.MIB(
@@ -51,7 +37,8 @@ module.exports = {
     }
     if (Needs.length === 0) {
       var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(ֆǟӄʊʀǟ.commandName);
-      var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ = 𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ === undefined ? `Null` : 𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ;
+      var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
+        𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ === undefined ? `Null` : 𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ;
       const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../Sakura🛰️Server/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
       return ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
         ӄʀǟӄɨռʐ,

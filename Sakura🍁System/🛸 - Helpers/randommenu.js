@@ -25,22 +25,8 @@ module.exports = {
       const defaultnm = ֆǟӄʊʀǟ.commandName;
       const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
       //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
-      const jsoncool = await JSON.parse(
-        fs.readFileSync(`./Sakura🛰️Server/Coolist.json`)
-      );
-      await jsoncool.push(ֆǟӄʊʀǟ.sender);
-      await fs.writeFileSync(
-        `./Sakura🛰️Server/Coolist.json`,
-        JSON.stringify(jsoncool)
-      );
-      setTimeout(async (error) => {
-        if (error) console.log(error);
-        await jsoncool.splice(ֆǟӄʊʀǟ.sender);
-        await fs.writeFileSync(
-          `./Sakura🛰️Server/Coolist.json`,
-          JSON.stringify(jsoncool)
-        );
-      }, 15000);
+      const hold = require("../../Sakura🛰️Server/Hold");
+      hold.Hold(ֆǟӄʊʀǟ);
       //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
       var MediaUrl = `./Sakura☣️Reactor/ֆǟӄʊʀǟ.png`;
       var MainText = `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 •@${ꜱᴇɴᴅᴇʀeceived}, ${Timers}

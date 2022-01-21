@@ -35,22 +35,8 @@ module.exports = {
       const defaultnm = ֆǟӄʊʀǟ.commandName;
       const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
       //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
-      const jsoncool = await JSON.parse(
-        fs.readFileSync(`./Sakura🛰️Server/Coolist.json`)
-      );
-      await jsoncool.push(ֆǟӄʊʀǟ.sender);
-      await fs.writeFileSync(
-        `./Sakura🛰️Server/Coolist.json`,
-        JSON.stringify(jsoncool)
-      );
-      setTimeout(async (error) => {
-        if (error) console.log(error);
-        await jsoncool.splice(ֆǟӄʊʀǟ.sender);
-        await fs.writeFileSync(
-          `./Sakura🛰️Server/Coolist.json`,
-          JSON.stringify(jsoncool)
-        );
-      }, 15000);
+      const hold = require("../../Sakura🛰️Server/Hold");
+      hold.Hold(ֆǟӄʊʀǟ);
       //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
       var MediaUrl = `./Sakura☣️Reactor/ֆǟӄʊʀǟ.png`;
       var MainText = `${Timers} @${ꜱᴇɴᴅᴇʀeceived}, 🍁𝐒𝐚𝐤𝐮𝐫𝐚 𝐈𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!

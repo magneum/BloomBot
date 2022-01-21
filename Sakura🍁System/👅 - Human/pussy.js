@@ -116,44 +116,11 @@ module.exports = {
             }
           }
           //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
-          const jsoncool = await JSON.parse(
-            fs.readFileSync(`./Sakura🛰️Server/Coolist.json`)
-          );
-          await jsoncool.push(ֆǟӄʊʀǟ.sender);
-          fs.writeFileSync(
-            `./Sakura🛰️Server/Coolist.json`,
-            JSON.stringify(jsoncool)
-          );
-          console.log("Logged-ID: " + ֆǟӄʊʀǟ.sender);
-          setTimeout((ℓαвєяяσя) => {
-            if (ℓαвєяяσя) return console.log(ℓαвєяяσя);
-            jsoncool.splice(ֆǟӄʊʀǟ.sender);
-            fs.writeFileSync(
-              `./Sakura🛰️Server/Coolist.json`,
-              JSON.stringify(jsoncool)
-            );
-            console.log("Un-Logged-ID: " + ֆǟӄʊʀǟ.sender);
-          }, 15000);
+          const hold = require("../../Sakura🛰️Server/Hold");
+          hold.Hold(ֆǟӄʊʀǟ);
           console.log(userBadge);
           //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
-          if (!ֆǟӄʊʀǟ.fromMe && userBadge.value === "False") {
-            let time = ms(
-              userBadge.PermanentLimitTime -
-                (Date.now() - userBadge.CurrentLimitTime)
-            );
-            return Sakura_Buttons.MTB(
-              ӄʀǟӄɨռʐ,
-              chat,
-              ֆǟӄʊʀǟ,
-              `💡𝐓𝐢𝐩: _Buy Higher Badges Using ${ᴋᴇɪ}shop_
-
-╔═══════❗ 𝐈𝐦𝐩𝐨𝐫𝐭𝐚𝐧𝐭
-║⚔️ 𝗕𝗮𝗱𝗴𝗲: ${userBadge.Badge}
-║💤 𝗥𝗲𝗻𝗲𝘄𝘀_𝗜𝗻: ${time.hours}h ${time.minutes}m ${time.seconds}s
-╚════════════╝`
-            );
-          }
-          //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|          if (ֆǟӄʊʀǟ.isGroup) {
+          if (ֆǟӄʊʀǟ.isGroup) {
             var where = "(ᴀᴅᴍɪɴ)";
           } else {
             var where = "(ᴘʀɪᴠᴀᴛᴇ)";

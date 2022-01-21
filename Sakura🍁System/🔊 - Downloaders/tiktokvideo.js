@@ -137,24 +137,8 @@ module.exports = {
             }
           }
           //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
-          const jsoncool = await JSON.parse(
-            fs.readFileSync(`./Sakura🛰️Server/Coolist.json`)
-          );
-          await jsoncool.push(ֆǟӄʊʀǟ.sender);
-          fs.writeFileSync(
-            `./Sakura🛰️Server/Coolist.json`,
-            JSON.stringify(jsoncool)
-          );
-          console.log("Logged-ID: " + ֆǟӄʊʀǟ.sender);
-          setTimeout((ℓαвєяяσя) => {
-            if (ℓαвєяяσя) return console.log(ℓαвєяяσя);
-            jsoncool.splice(ֆǟӄʊʀǟ.sender);
-            fs.writeFileSync(
-              `./Sakura🛰️Server/Coolist.json`,
-              JSON.stringify(jsoncool)
-            );
-            console.log("Un-Logged-ID: " + ֆǟӄʊʀǟ.sender);
-          }, 15000);
+          const hold = require("../../Sakura🛰️Server/Hold");
+          hold.Hold(ֆǟӄʊʀǟ);
           console.log(userBadge);
           //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
           if (!ֆǟӄʊʀǟ.fromMe && userBadge.value === "False") {
