@@ -31,6 +31,38 @@ module.exports = {
       const defaultnm = ֆǟӄʊʀǟ.commandName;
       const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
       //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
+      if (Needs.length === 0) {
+        var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(ֆǟӄʊʀǟ.commandName);
+        var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
+          𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ === undefined ? `Null` : 𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ;
+        const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../Sakura🛰️Server/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
+        return ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
+          ӄʀǟӄɨռʐ,
+          chat,
+          ֆǟӄʊʀǟ,
+          ꜱᴇɴᴅᴇʀɪᴅ,
+          ꜱᴇɴᴅᴇʀeceived,
+          ֆǟӄʊʀǟ.commandName,
+          ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
+        );
+      }
+      //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
+      if (!Needs[0].includes(`tiktok.com`)) {
+        var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(ֆǟӄʊʀǟ.commandName);
+        var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
+          𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ === undefined ? `Null` : 𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ;
+        const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../Sakura🛰️Server/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
+        return ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
+          ӄʀǟӄɨռʐ,
+          chat,
+          ֆǟӄʊʀǟ,
+          ꜱᴇɴᴅᴇʀɪᴅ,
+          ꜱᴇɴᴅᴇʀeceived,
+          ֆǟӄʊʀǟ.commandName,
+          ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
+        );
+      }
+      //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
       const Bagde = require("../../Sakura🍃Goose/Badge");
       const ms = require("parse-ms");
       Bagde.findOne(
@@ -119,55 +151,26 @@ module.exports = {
             );
           }
           //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
-          if (Needs.length === 0) {
-            var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(ֆǟӄʊʀǟ.commandName);
-            var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
-              𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ === undefined ? `Null` : 𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ;
-            const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../Sakura🛰️Server/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
-            return ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
-              ӄʀǟӄɨռʐ,
-              chat,
-              ֆǟӄʊʀǟ,
-              ꜱᴇɴᴅᴇʀɪᴅ,
-              ꜱᴇɴᴅᴇʀeceived,
-              ֆǟӄʊʀǟ.commandName,
-              ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
-            );
-          } else if (!Needs[0].includes(`tiktok.com`)) {
-            var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(ֆǟӄʊʀǟ.commandName);
-            var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
-              𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ === undefined ? `Null` : 𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ;
-            const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../Sakura🛰️Server/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
-            return ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
-              ӄʀǟӄɨռʐ,
-              chat,
-              ֆǟӄʊʀǟ,
-              ꜱᴇɴᴅᴇʀɪᴅ,
-              ꜱᴇɴᴅᴇʀeceived,
-              ֆǟӄʊʀǟ.commandName,
-              ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
-            );
-          } else {
-            hx.ttdownloader(Needs[0])
-              .then((result) => {
-                const { wm, nowm, audio } = result;
-                axios
-                  .get(`https://tinyurl.com/api-create.php?url=${audio}`)
-                  .then(async (a) => {
-                    let aud = await getBuffer(audio);
-                    await ӄʀǟӄɨռʐ.sendMessage(
-                      ֆǟӄʊʀǟ.chatId,
-                      aud,
-                      MessageType.audio,
-                      {
-                        mimetype: `audio/mp4`,
-                        quoted: chat,
-                      }
-                    );
-                  });
-              })
-              .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-          }
+
+          hx.ttdownloader(Needs[0])
+            .then((result) => {
+              const { wm, nowm, audio } = result;
+              axios
+                .get(`https://tinyurl.com/api-create.php?url=${audio}`)
+                .then(async (a) => {
+                  let aud = await getBuffer(audio);
+                  await ӄʀǟӄɨռʐ.sendMessage(
+                    ֆǟӄʊʀǟ.chatId,
+                    aud,
+                    MessageType.audio,
+                    {
+                      mimetype: `audio/mp4`,
+                      quoted: chat,
+                    }
+                  );
+                });
+            })
+            .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
         }
       );
     } catch (ℓαвєяяσя) {

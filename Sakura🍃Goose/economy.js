@@ -1,7 +1,6 @@
 var mongoose = require("mongoose");
 var EconomySakuraSchema = new mongoose.Schema({
-  did: String,
-  serverID: String,
+  ID: String,
   money: Number,
   daily: Number,
   timeout: Number,

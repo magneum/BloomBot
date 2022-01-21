@@ -28,6 +28,38 @@ module.exports = {
       const defaultnm = ֆǟӄʊʀǟ.commandName;
       const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
       //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
+      if (Needs.length === 0) {
+        var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(ֆǟӄʊʀǟ.commandName);
+        var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
+          𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ === undefined ? `Null` : 𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ;
+        const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../Sakura🛰️Server/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
+        return ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
+          ӄʀǟӄɨռʐ,
+          chat,
+          ֆǟӄʊʀǟ,
+          ꜱᴇɴᴅᴇʀɪᴅ,
+          ꜱᴇɴᴅᴇʀeceived,
+          ֆǟӄʊʀǟ.commandName,
+          ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
+        );
+        //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
+      }
+      if (!Needs[0].includes(`instagram.com`)) {
+        var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(ֆǟӄʊʀǟ.commandName);
+        var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
+          𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ === undefined ? `Null` : 𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ;
+        const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../Sakura🛰️Server/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
+        return ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
+          ӄʀǟӄɨռʐ,
+          chat,
+          ֆǟӄʊʀǟ,
+          ꜱᴇɴᴅᴇʀɪᴅ,
+          ꜱᴇɴᴅᴇʀeceived,
+          ֆǟӄʊʀǟ.commandName,
+          ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
+        );
+      }
+      //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
       const Bagde = require("../../Sakura🍃Goose/Badge");
       const ms = require("parse-ms");
       Bagde.findOne(
@@ -116,120 +148,88 @@ module.exports = {
             );
           }
           //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
-          if (Needs.length === 0) {
-            var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(ֆǟӄʊʀǟ.commandName);
-            var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
-              𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ === undefined ? `Null` : 𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ;
-            const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../Sakura🛰️Server/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
-            return ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
-              ӄʀǟӄɨռʐ,
-              chat,
-              ֆǟӄʊʀǟ,
-              ꜱᴇɴᴅᴇʀɪᴅ,
-              ꜱᴇɴᴅᴇʀeceived,
-              ֆǟӄʊʀǟ.commandName,
-              ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
-            );
-            //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
-          } else if (!Needs[0].includes(`instagram.com`)) {
-            var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(ֆǟӄʊʀǟ.commandName);
-            var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
-              𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ === undefined ? `Null` : 𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ;
-            const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../Sakura🛰️Server/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
-            return ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
-              ӄʀǟӄɨռʐ,
-              chat,
-              ֆǟӄʊʀǟ,
-              ꜱᴇɴᴅᴇʀɪᴅ,
-              ꜱᴇɴᴅᴇʀeceived,
-              ֆǟӄʊʀǟ.commandName,
-              ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
-            );
-          } else {
-            //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
-            await hx.igdl(Needs[0]).then(async (result) => {
-              for (let i of result.medias) {
-                if (i.url.includes(`mp4`)) {
-                  iglink = i.url;
-                  const media = await ӄʀǟӄɨռʐ.prepareMessage(
+          await hx.igdl(Needs[0]).then(async (result) => {
+            for (let i of result.medias) {
+              if (i.url.includes(`mp4`)) {
+                iglink = i.url;
+                const media = await ӄʀǟӄɨռʐ.prepareMessage(
+                  ֆǟӄʊʀǟ.chatId,
+                  { url: iglink },
+                  MessageType.video,
+                  { mimetype: Mimetype.mp4 }
+                );
+                return await ӄʀǟӄɨռʐ
+                  .sendMessage(
                     ֆǟӄʊʀǟ.chatId,
-                    { url: iglink },
-                    MessageType.video,
-                    { mimetype: Mimetype.mp4 }
-                  );
-                  return await ӄʀǟӄɨռʐ
-                    .sendMessage(
-                      ֆǟӄʊʀǟ.chatId,
-                      {
-                        contentText: `•✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚, @${ꜱᴇɴᴅᴇʀeceived},
+                    {
+                      contentText: `•✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚, @${ꜱᴇɴᴅᴇʀeceived},
   
   ────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}  
   🍠𝐒𝐨𝐮𝐫𝐜𝐞: _•Instagram_
   🧀𝐅𝐢𝐥𝐞 𝐓𝐲𝐩𝐞: ${i.type}
   `,
-                        footerText: `(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 \n${Clock}`,
-                        buttons: [
-                          {
-                            buttonId: `${ᴋᴇɪ}help`,
-                            buttonText: { displayText: `${ᴋᴇɪ}help` },
-                            type: 1,
-                          },
-                        ],
-                        headerType: 5,
-                        videoMessage: media.message.videoMessage,
-                      },
-                      MessageType.buttonsMessage,
-                      {
-                        quoted: chat,
-                        contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
-                      }
-                    )
-                    .catch((ℓαвєяяσя) =>
-                      ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
-                    );
-                  //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
-                } else {
-                  iglink = i.url;
-                  const media = await ӄʀǟӄɨռʐ.prepareMessage(
-                    ֆǟӄʊʀǟ.chatId,
-                    { url: iglink },
-                    MessageType.image,
-                    { mimetype: Mimetype.png && Mimetype.jpeg }
+                      footerText: `(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 \n${Clock}`,
+                      buttons: [
+                        {
+                          buttonId: `${ᴋᴇɪ}help`,
+                          buttonText: { displayText: `${ᴋᴇɪ}help` },
+                          type: 1,
+                        },
+                      ],
+                      headerType: 5,
+                      videoMessage: media.message.videoMessage,
+                    },
+                    MessageType.buttonsMessage,
+                    {
+                      quoted: chat,
+                      contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
+                    }
+                  )
+                  .catch((ℓαвєяяσя) =>
+                    ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
                   );
-                  return await ӄʀǟӄɨռʐ
-                    .sendMessage(
-                      ֆǟӄʊʀǟ.chatId,
-                      {
-                        contentText: `•✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚, @${ꜱᴇɴᴅᴇʀeceived},
+                //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
+              } else {
+                iglink = i.url;
+                const media = await ӄʀǟӄɨռʐ.prepareMessage(
+                  ֆǟӄʊʀǟ.chatId,
+                  { url: iglink },
+                  MessageType.image,
+                  { mimetype: Mimetype.png && Mimetype.jpeg }
+                );
+                return await ӄʀǟӄɨռʐ
+                  .sendMessage(
+                    ֆǟӄʊʀǟ.chatId,
+                    {
+                      contentText: `•✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚, @${ꜱᴇɴᴅᴇʀeceived},
   
   ────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}  
   🍠𝐒𝐨𝐮𝐫𝐜𝐞: _•Instagram_
   🧀𝐅𝐢𝐥𝐞 𝐓𝐲𝐩𝐞: ${i.type}
   `,
-                        footerText: `(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 \n${Clock}`,
-                        buttons: [
-                          {
-                            buttonId: `${ᴋᴇɪ}help`,
-                            buttonText: { displayText: `${ᴋᴇɪ}help` },
-                            type: 1,
-                          },
-                        ],
-                        headerType: 4,
-                        imageMessage: media.message.imageMessage,
-                      },
-                      MessageType.buttonsMessage,
-                      {
-                        quoted: chat,
-                        contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
-                      }
-                    )
-                    .catch((ℓαвєяяσя) =>
-                      ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
-                    );
-                }
+                      footerText: `(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 \n${Clock}`,
+                      buttons: [
+                        {
+                          buttonId: `${ᴋᴇɪ}help`,
+                          buttonText: { displayText: `${ᴋᴇɪ}help` },
+                          type: 1,
+                        },
+                      ],
+                      headerType: 4,
+                      imageMessage: media.message.imageMessage,
+                    },
+                    MessageType.buttonsMessage,
+                    {
+                      quoted: chat,
+                      contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
+                    }
+                  )
+                  .catch((ℓαвєяяσя) =>
+                    ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
+                  );
               }
-            });
-          }
+            }
+          });
           //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
         }
       );

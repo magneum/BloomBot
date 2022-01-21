@@ -26,23 +26,6 @@ module.exports = {
       const defaultnm = ֆǟӄʊʀǟ.commandName;
       const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
       //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
-      const jsoncool = await JSON.parse(
-        fs.readFileSync(`./Sakura🛰️Server/Coolist.json`)
-      );
-      await jsoncool.push(ֆǟӄʊʀǟ.sender);
-      await fs.writeFileSync(
-        `./Sakura🛰️Server/Coolist.json`,
-        JSON.stringify(jsoncool)
-      );
-      setTimeout(async (error) => {
-        if (error) console.log(error);
-        await jsoncool.splice(ֆǟӄʊʀǟ.sender);
-        await fs.writeFileSync(
-          `./Sakura🛰️Server/Coolist.json`,
-          JSON.stringify(jsoncool)
-        );
-      }, 15000);
-      //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
       if (!ֆǟӄʊʀǟ.isGroup) {
         return Sakura_Buttons.MTB(
           ӄʀǟӄɨռʐ,
@@ -52,18 +35,33 @@ module.exports = {
         );
       }
       //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
+      const jsoncool = await JSON.parse(
+        fs.readFileSync(`./Sakura🛰️Server/Coolist.json`)
+      );
+      await jsoncool.push(ֆǟӄʊʀǟ.sender);
+      fs.writeFileSync(
+        `./Sakura🛰️Server/Coolist.json`,
+        JSON.stringify(jsoncool)
+      );
+      setTimeout((ℓαвєяяσя) => {
+        if (ℓαвєяяσя) return console.log(ℓαвєяяσя);
+        jsoncool.splice(ֆǟӄʊʀǟ.sender);
+        fs.writeFileSync(
+          `./Sakura🛰️Server/Coolist.json`,
+          JSON.stringify(jsoncool)
+        );
+      }, 0);
+      //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
       Economy.findOne(
         {
-          did: ֆǟӄʊʀǟ.sender,
-          serverID: ֆǟӄʊʀǟ.chatId,
+          ID: ꜱᴇɴᴅᴇʀɪᴅ,
         },
         async (err, userEco) => {
           console.log(userEco);
           if (err) console.log(err);
           if (!userEco) {
             var newUser = new Economy({
-              did: ֆǟӄʊʀǟ.sender,
-              serverID: ֆǟӄʊʀǟ.chatId,
+              ID: ֆǟӄʊʀǟ.sender,
               money: 200,
               daily: Date.now(),
               timeout: 86400000,
@@ -79,7 +77,7 @@ module.exports = {
               ӄʀǟӄɨռʐ,
               chat,
               ֆǟӄʊʀǟ,
-              `@${ꜱᴇɴᴅᴇʀeceived}'𝘀 𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐚𝐧𝐤
+              `🍁𝐒𝐚𝐤𝐮𝐫𝐚🏦𝐁𝐚𝐧𝐤🍁
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 ║✅ 𝗗𝗮𝗶𝗹𝘆 𝗦𝘁𝗮𝘁𝘂𝘀: You've collected your daily reward!
@@ -95,7 +93,7 @@ module.exports = {
                 ӄʀǟӄɨռʐ,
                 chat,
                 ֆǟӄʊʀǟ,
-                `@${ꜱᴇɴᴅᴇʀeceived}'𝘀 𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐚𝐧𝐤
+                `🍁𝐒𝐚𝐤𝐮𝐫𝐚🏦𝐁𝐚𝐧𝐤🍁
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 ║❌ 𝗗𝗮𝗶𝗹𝘆 𝗦𝘁𝗮𝘁𝘂𝘀: You've already collected your daily reward!
@@ -110,7 +108,7 @@ module.exports = {
                 ӄʀǟӄɨռʐ,
                 chat,
                 ֆǟӄʊʀǟ,
-                `@${ꜱᴇɴᴅᴇʀeceived}'𝘀 𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐚𝐧𝐤
+                `🍁𝐒𝐚𝐤𝐮𝐫𝐚🏦𝐁𝐚𝐧𝐤🍁
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 ║✅ 𝗗𝗮𝗶𝗹𝘆 𝗦𝘁𝗮𝘁𝘂𝘀: You've collected your daily reward!

@@ -1,6 +1,6 @@
 var mongoose = require("mongoose");
 var UsersSakuraSchema = new mongoose.Schema({
-  did: String,
+  ID: String,
   xp: Number,
   level: Number,
 });

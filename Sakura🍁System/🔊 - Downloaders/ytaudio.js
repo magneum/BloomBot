@@ -37,6 +37,38 @@ module.exports = {
       const defaultnm = ֆǟӄʊʀǟ.commandName;
       const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
       //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
+      if (Needs.length === 0) {
+        var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(ֆǟӄʊʀǟ.commandName);
+        var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
+          𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ === undefined ? `Null` : 𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ;
+        const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../Sakura🛰️Server/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
+        return ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
+          ӄʀǟӄɨռʐ,
+          chat,
+          ֆǟӄʊʀǟ,
+          ꜱᴇɴᴅᴇʀɪᴅ,
+          ꜱᴇɴᴅᴇʀeceived,
+          ֆǟӄʊʀǟ.commandName,
+          ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
+        );
+      }
+      //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
+      if (!ytIdRegex.test(Needs[0])) {
+        var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(ֆǟӄʊʀǟ.commandName);
+        var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
+          𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ === undefined ? `Null` : 𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ;
+        const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../Sakura🛰️Server/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
+        return ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
+          ӄʀǟӄɨռʐ,
+          chat,
+          ֆǟӄʊʀǟ,
+          ꜱᴇɴᴅᴇʀɪᴅ,
+          ꜱᴇɴᴅᴇʀeceived,
+          ֆǟӄʊʀǟ.commandName,
+          ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
+        );
+      }
+      //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
       const Bagde = require("../../Sakura🍃Goose/Badge");
       const ms = require("parse-ms");
       Bagde.findOne(
@@ -125,47 +157,16 @@ module.exports = {
             );
           }
           //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
-          if (Needs.length === 0) {
-            var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(ֆǟӄʊʀǟ.commandName);
-            var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
-              𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ === undefined ? `Null` : 𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ;
-            const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../Sakura🛰️Server/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
-            return ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
-              ӄʀǟӄɨռʐ,
-              chat,
-              ֆǟӄʊʀǟ,
-              ꜱᴇɴᴅᴇʀɪᴅ,
-              ꜱᴇɴᴅᴇʀeceived,
-              ֆǟӄʊʀǟ.commandName,
-              ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
-            );
-            //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
-          } else if (!ytIdRegex.test(Needs[0])) {
-            var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(ֆǟӄʊʀǟ.commandName);
-            var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
-              𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ === undefined ? `Null` : 𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ;
-            const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../Sakura🛰️Server/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
-            return ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
-              ӄʀǟӄɨռʐ,
-              chat,
-              ֆǟӄʊʀǟ,
-              ꜱᴇɴᴅᴇʀɪᴅ,
-              ꜱᴇɴᴅᴇʀeceived,
-              ֆǟӄʊʀǟ.commandName,
-              ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
-            );
-            //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
-          } else {
-            const LinkForGroups = await yts(Needs.join(` `));
-            const GroupVideos = LinkForGroups.videos.slice(0, 1);
-            const filename = `./Sakura🗑️Temp/${FinalName}_${Ping}_${ꜱᴇɴᴅᴇʀɪᴅ}`;
-            GroupVideos.forEach(async function (youfound) {
-              if (youfound.seconds > `1800`) {
-                return Sakura_Buttons.MIB(
-                  ӄʀǟӄɨռʐ,
-                  chat,
-                  ֆǟӄʊʀǟ,
-                  `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚, @${ꜱᴇɴᴅᴇʀeceived}, ⭕𝐀𝐮𝐝𝐢𝐨
+          const LinkForGroups = await yts(Needs.join(` `));
+          const GroupVideos = LinkForGroups.videos.slice(0, 1);
+          const filename = `./Sakura🗑️Temp/${FinalName}_${Ping}_${ꜱᴇɴᴅᴇʀɪᴅ}`;
+          GroupVideos.forEach(async function (youfound) {
+            if (youfound.seconds > `1800`) {
+              return Sakura_Buttons.MIB(
+                ӄʀǟӄɨռʐ,
+                chat,
+                ֆǟӄʊʀǟ,
+                `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚, @${ꜱᴇɴᴅᴇʀeceived}, ⭕𝐀𝐮𝐝𝐢𝐨
 𝗣𝗹𝗲𝗮𝘀𝗲 𝗖𝗵𝗼𝗼𝘀𝗲 𝗙𝗶𝗹𝗲 𝗦𝗺𝗮𝗹𝗹𝗲𝗿 𝗧𝗵𝗲𝗻 𝟯𝟬𝗺𝗶𝗻𝘂𝘁𝗲𝘀!
 
 ────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
@@ -174,15 +175,15 @@ module.exports = {
 📜𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧⤞ ${youfound.description}
 🔗𝐋𝐢𝐧𝐤⤞ ${youfound.url}
 `,
-                  youfound.thumbnail
-                );
-              }
-              //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
-              Sakura_Buttons.MIB(
-                ӄʀǟӄɨռʐ,
-                chat,
-                ֆǟӄʊʀǟ,
-                `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚, @${ꜱᴇɴᴅᴇʀeceived},
+                youfound.thumbnail
+              );
+            }
+            //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
+            Sakura_Buttons.MIB(
+              ӄʀǟӄɨռʐ,
+              chat,
+              ֆǟӄʊʀǟ,
+              `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚, @${ꜱᴇɴᴅᴇʀeceived},
 ⭕𝐀𝐮𝐝𝐢𝐨 𝗣𝗹𝗲𝗮𝘀𝗲 𝘄𝗮𝗶𝘁 𝗳𝗼𝗿 𝘁𝗵𝗲 𝗱𝗲𝗹𝗶𝘃𝗲𝗿𝘆 𝗼𝗳 𝐀𝐮𝐝𝐢𝐨!
 
 ────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
@@ -192,66 +193,64 @@ module.exports = {
 ✒️𝐀𝐮𝐭𝐡𝐨𝐫⤞ ${youfound.author.name}
 📜𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧⤞ ${youfound.description}
 🔗𝐋𝐢𝐧𝐤⤞ ${youfound.url}`,
-                youfound.thumbnail
-              );
-              URL = youfound.url;
-              //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
-              try {
-                var ʏᴛᴀᴅᴏᴡɴʟᴏᴀᴅ = function (uri, filename, callback) {
-                  request.head(uri, function (ℓαвєяяσя, ɢᴏᴛʀᴇꜱᴘ, body) {
-                    mime = ɢᴏᴛʀᴇꜱᴘ.headers[`content-type`];
-                    request(uri)
-                      .pipe(fs.createWriteStream(filename))
-                      .on(`close`, callback);
-                  });
-                };
-                await YouTube_Music(URL).then(async (ɢᴏᴛʀᴇꜱᴘ) => {
-                  const { dl_link, thumb, title, filesizeF, filesize } =
-                    ɢᴏᴛʀᴇꜱᴘ;
-                  await axios
-                    .get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
-                    .then(async (a) => {
-                      ʏᴛᴀᴅᴏᴡɴʟᴏᴀᴅ(dl_link, filename, async function () {
-                        await ӄʀǟӄɨռʐ
-                          .sendMessage(
-                            ֆǟӄʊʀǟ.chatId,
-                            fs.readFileSync(filename),
-                            MessageType.audio,
-                            {
-                              quoted: chat,
-                              mimetype: "audio/mp4",
-                            }
-                          )
-                          .catch((ℓαвєяяσя) =>
-                            ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
-                          );
-                        await cleanRF.cleanRF(filename);
-                      });
-                    });
+              youfound.thumbnail
+            );
+            URL = youfound.url;
+            //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
+            try {
+              var ʏᴛᴀᴅᴏᴡɴʟᴏᴀᴅ = function (uri, filename, callback) {
+                request.head(uri, function (ℓαвєяяσя, ɢᴏᴛʀᴇꜱᴘ, body) {
+                  mime = ɢᴏᴛʀᴇꜱᴘ.headers[`content-type`];
+                  request(uri)
+                    .pipe(fs.createWriteStream(filename))
+                    .on(`close`, callback);
                 });
-                //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
-              } catch (ℓαвєяяσя) {
-                console.log(ℓαвєяяσя);
-                exec(
-                  `youtube-dl --extract-audio --audio-format mp3 -o '${ꜱᴇɴᴅᴇʀeceived}_${youfound.title}.%(ext)s'  ${URL}`,
-                  (err) => {
-                    if (err) return console.log(err);
-                    ӄʀǟӄɨռʐ.sendMessage(
-                      ֆǟӄʊʀǟ.chatId,
-                      fs.readFileSync(`${ꜱᴇɴᴅᴇʀeceived}_${youfound.title}.mp3`),
-                      MessageType.audio,
-                      {
-                        mimetype: "audio/mp4",
-                        quoted: chat,
-                      }
-                    );
-                    cleanRF.cleanRF(`${ꜱᴇɴᴅᴇʀeceived}_${youfound.title}.mp3`);
-                  }
-                );
-                // youtube-dl --extract-audio --audio-format mp3 -o '%(title)s.%(ext)s' https://youtu.be/L5CV53wCWO0
-              }
-            });
-          }
+              };
+              await YouTube_Music(URL).then(async (ɢᴏᴛʀᴇꜱᴘ) => {
+                const { dl_link, thumb, title, filesizeF, filesize } = ɢᴏᴛʀᴇꜱᴘ;
+                await axios
+                  .get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
+                  .then(async (a) => {
+                    ʏᴛᴀᴅᴏᴡɴʟᴏᴀᴅ(dl_link, filename, async function () {
+                      await ӄʀǟӄɨռʐ
+                        .sendMessage(
+                          ֆǟӄʊʀǟ.chatId,
+                          fs.readFileSync(filename),
+                          MessageType.audio,
+                          {
+                            quoted: chat,
+                            mimetype: "audio/mp4",
+                          }
+                        )
+                        .catch((ℓαвєяяσя) =>
+                          ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
+                        );
+                      await cleanRF.cleanRF(filename);
+                    });
+                  });
+              });
+              //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
+            } catch (ℓαвєяяσя) {
+              console.log(ℓαвєяяσя);
+              exec(
+                `youtube-dl --extract-audio --audio-format mp3 -o '${ꜱᴇɴᴅᴇʀeceived}_${youfound.title}.%(ext)s'  ${URL}`,
+                (err) => {
+                  if (err) return console.log(err);
+                  ӄʀǟӄɨռʐ.sendMessage(
+                    ֆǟӄʊʀǟ.chatId,
+                    fs.readFileSync(`${ꜱᴇɴᴅᴇʀeceived}_${youfound.title}.mp3`),
+                    MessageType.audio,
+                    {
+                      mimetype: "audio/mp4",
+                      quoted: chat,
+                    }
+                  );
+                  cleanRF.cleanRF(`${ꜱᴇɴᴅᴇʀeceived}_${youfound.title}.mp3`);
+                }
+              );
+              // youtube-dl --extract-audio --audio-format mp3 -o '%(title)s.%(ext)s' https://youtu.be/L5CV53wCWO0
+            }
+          });
           //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
         }
       );

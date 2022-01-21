@@ -369,7 +369,7 @@ ${update.desc}`,
       try {
         await UsersSakura.findOne(
           {
-            did: ֆǟӄʊʀǟ.sender,
+            ID: ֆǟӄʊʀǟ.sender,
           },
           async (err, users) => {
             var randomMC = require("random-material-color");
@@ -378,7 +378,7 @@ ${update.desc}`,
             if (err) console.log(err);
             if (!users) {
               var newUsers = new UsersSakura({
-                did: ֆǟӄʊʀǟ.sender,
+                ID: ֆǟӄʊʀǟ.sender,
                 xp: xpAdd,
                 level: 0,
               });
@@ -463,15 +463,14 @@ ${update.desc}`,
                   console.log("Saved!");
                   Economy.findOne(
                     {
-                      did: ֆǟӄʊʀǟ.sender,
+                      ID: ֆǟӄʊʀǟ.sender,
                     },
                     async (err, userEco) => {
                       console.log(userEco);
                       if (err) console.log(err);
                       if (!userEco) {
                         var newUser = new Economy({
-                          did: ֆǟӄʊʀǟ.sender,
-                          serverID: ֆǟӄʊʀǟ.chatId,
+                          ID: ֆǟӄʊʀǟ.sender,
                           money: 200,
                           daily: 0,
                           timeout: 86400000,
