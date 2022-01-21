@@ -132,6 +132,8 @@ module.exports = {
             var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
               𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ === undefined ? `Null` : 𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ;
             const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../Sakura🛰️Server/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
+            userBadge.Limits = userBadge.Limits + 1;
+            userBadge.save();
             return ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
               ӄʀǟӄɨռʐ,
               chat,
@@ -233,12 +235,12 @@ module.exports = {
               });
             console.log("FileType: " + FileType);
           } else {
-            // ====================================================================================================== UNKNOWN
-            console.log("FileType: " + FileType);
             var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(ֆǟӄʊʀǟ.commandName);
             var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
               𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ === undefined ? `Null` : 𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ;
             const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../Sakura🛰️Server/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
+            userBadge.Limits = userBadge.Limits + 1;
+            userBadge.save();
             return ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
               ӄʀǟӄɨռʐ,
               chat,

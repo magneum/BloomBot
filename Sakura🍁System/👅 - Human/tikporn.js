@@ -25,6 +25,21 @@ module.exports = {
       const defaultnm = ֆǟӄʊʀǟ.commandName;
       const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
       //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
+      if (
+        ֆǟӄʊʀǟ.isGroup &&
+        !ֆǟӄʊʀǟ.fromMe &&
+        !ֆǟӄʊʀǟ.isSenderDev &&
+        !ֆǟӄʊʀǟ.isSenderGroupAdmin
+      ) {
+        return Sakura_Buttons.MIB(
+          ӄʀǟӄɨռʐ,
+          chat,
+          ֆǟӄʊʀǟ,
+          `*❌ Admins Only | You Are Not Allowed! ❌*`,
+          _𝔏𝔞𝔟_.ɴᴏᴛᴀᴅᴍɪɴ
+        );
+      }
+      //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
       const Bagde = require("../../Sakura🍃Goose/Badge");
       const ms = require("parse-ms");
       Bagde.findOne(
@@ -85,6 +100,7 @@ module.exports = {
             `./Sakura🛰️Server/Coolist.json`,
             JSON.stringify(jsoncool)
           );
+          console.log("Logged-ID: " + ֆǟӄʊʀǟ.sender);
           setTimeout((ℓαвєяяσя) => {
             if (ℓαвєяяσя) return console.log(ℓαвєяяσя);
             jsoncool.splice(ֆǟӄʊʀǟ.sender);
@@ -92,6 +108,7 @@ module.exports = {
               `./Sakura🛰️Server/Coolist.json`,
               JSON.stringify(jsoncool)
             );
+            console.log("Un-Logged-ID: " + ֆǟӄʊʀǟ.sender);
           }, 15000);
           console.log(userBadge);
           //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
@@ -111,25 +128,6 @@ module.exports = {
 ║💤 𝗥𝗲𝗻𝗲𝘄𝘀_𝗜𝗻: ${time.hours}h ${time.minutes}m ${time.seconds}s
 ╚════════════╝`
             );
-          }
-          //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
-          if (
-            ֆǟӄʊʀǟ.isGroup &&
-            !ֆǟӄʊʀǟ.fromMe &&
-            !ֆǟӄʊʀǟ.isSenderDev &&
-            !ֆǟӄʊʀǟ.isSenderGroupAdmin
-          ) {
-            try {
-              return Sakura_Buttons.MIB(
-                ӄʀǟӄɨռʐ,
-                chat,
-                ֆǟӄʊʀǟ,
-                `*❌ Admins Only | You Are Not Allowed! ❌*`,
-                _𝔏𝔞𝔟_.ɴᴏᴛᴀᴅᴍɪɴ
-              );
-            } catch (ℓαвєяяσя) {
-              ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
-            }
           }
           //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
           var Raw = await porno();

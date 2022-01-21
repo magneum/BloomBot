@@ -196,17 +196,6 @@ module.exports = {
                 }
               };
           }
-          setTimeout(async () => {
-            await ӄʀǟӄɨռʐ
-              .sendMessage(
-                ֆǟӄʊʀǟ.chatId,
-                `Please tag a valid message.`,
-                MessageType.text,
-                { quoted: chat }
-              )
-              .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-            return;
-          }, 300000);
           await ӄʀǟӄɨռʐ
             .sendMessage(
               ֆǟӄʊʀǟ.chatId,
@@ -215,6 +204,8 @@ module.exports = {
               { quoted: chat }
             )
             .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+          userBadge.Limits = userBadge.Limits + 1;
+          userBadge.save();
         }
       );
     } catch (ℓαвєяяσя) {

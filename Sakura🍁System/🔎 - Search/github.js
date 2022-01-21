@@ -121,6 +121,8 @@ or replying  *${ᴋᴇɪ}github*`,
             user_name = ֆǟӄʊʀǟ.replyMessage;
           } else {
             if (Needs.length === 0) {
+              userBadge.Limits = userBadge.Limits + 1;
+              userBadge.save();
               var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(ֆǟӄʊʀǟ.commandName);
               var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
                 𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ === undefined ? `Null` : 𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ;

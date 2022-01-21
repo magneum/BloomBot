@@ -28,6 +28,22 @@ module.exports = {
       const defaultnm = ֆǟӄʊʀǟ.commandName;
       const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
       //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
+      if (Needs.length === 0) {
+        var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(ֆǟӄʊʀǟ.commandName);
+        var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
+          𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ === undefined ? `Null` : 𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ;
+        const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../Sakura🛰️Server/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
+        return ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
+          ӄʀǟӄɨռʐ,
+          chat,
+          ֆǟӄʊʀǟ,
+          ꜱᴇɴᴅᴇʀɪᴅ,
+          ꜱᴇɴᴅᴇʀeceived,
+          ֆǟӄʊʀǟ.commandName,
+          ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
+        );
+      }
+      //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
       const Bagde = require("../../Sakura🍃Goose/Badge");
       const ms = require("parse-ms");
       Bagde.findOne(
@@ -88,6 +104,7 @@ module.exports = {
             `./Sakura🛰️Server/Coolist.json`,
             JSON.stringify(jsoncool)
           );
+          console.log("Logged-ID: " + ֆǟӄʊʀǟ.sender);
           setTimeout((ℓαвєяяσя) => {
             if (ℓαвєяяσя) return console.log(ℓαвєяяσя);
             jsoncool.splice(ֆǟӄʊʀǟ.sender);
@@ -95,6 +112,7 @@ module.exports = {
               `./Sakura🛰️Server/Coolist.json`,
               JSON.stringify(jsoncool)
             );
+            console.log("Un-Logged-ID: " + ֆǟӄʊʀǟ.sender);
           }, 15000);
           console.log(userBadge);
           //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
@@ -116,21 +134,6 @@ module.exports = {
             );
           }
           //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
-          if (Needs.length === 0) {
-            var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(ֆǟӄʊʀǟ.commandName);
-            var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
-              𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ === undefined ? `Null` : 𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ;
-            const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../Sakura🛰️Server/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
-            return ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
-              ӄʀǟӄɨռʐ,
-              chat,
-              ֆǟӄʊʀǟ,
-              ꜱᴇɴᴅᴇʀɪᴅ,
-              ꜱᴇɴᴅᴇʀeceived,
-              ֆǟӄʊʀǟ.commandName,
-              ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
-            );
-          }
           let res = await fetch(
             API("https://some-random-api.ml", "/pokedex", {
               pokemon: Needs.join(" "),

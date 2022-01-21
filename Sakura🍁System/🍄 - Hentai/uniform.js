@@ -34,6 +34,21 @@ module.exports = {
       var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
       const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
       //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
+      if (
+        ֆǟӄʊʀǟ.isGroup &&
+        !ֆǟӄʊʀǟ.fromMe &&
+        !ֆǟӄʊʀǟ.isSenderDev &&
+        !ֆǟӄʊʀǟ.isSenderGroupAdmin
+      ) {
+        return Sakura_Buttons.MIB(
+          ӄʀǟӄɨռʐ,
+          chat,
+          ֆǟӄʊʀǟ,
+          `*❌ Admins Only | You Are Not Allowed! ❌*`,
+          _𝔏𝔞𝔟_.ɴᴏᴛᴀᴅᴍɪɴ
+        );
+      }
+      //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
       const Bagde = require("../../Sakura🍃Goose/Badge");
       const ms = require("parse-ms");
       Bagde.findOne(
@@ -94,6 +109,7 @@ module.exports = {
             `./Sakura🛰️Server/Coolist.json`,
             JSON.stringify(jsoncool)
           );
+          console.log("Logged-ID: " + ֆǟӄʊʀǟ.sender);
           setTimeout((ℓαвєяяσя) => {
             if (ℓαвєяяσя) return console.log(ℓαвєяяσя);
             jsoncool.splice(ֆǟӄʊʀǟ.sender);
@@ -101,6 +117,7 @@ module.exports = {
               `./Sakura🛰️Server/Coolist.json`,
               JSON.stringify(jsoncool)
             );
+            console.log("Un-Logged-ID: " + ֆǟӄʊʀǟ.sender);
           }, 15000);
           console.log(userBadge);
           //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
@@ -165,6 +182,8 @@ module.exports = {
               );
             }
           } catch (ℓαвєяяσя) {
+            userBadge.Limits = userBadge.Limits + 1;
+            userBadge.save();
             return Sakura_Buttons.MTB(
               ӄʀǟӄɨռʐ,
               chat,

@@ -27,6 +27,21 @@ module.exports = {
       var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
       const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
       //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
+      if (
+        ֆǟӄʊʀǟ.isGroup &&
+        !ֆǟӄʊʀǟ.fromMe &&
+        !ֆǟӄʊʀǟ.isSenderDev &&
+        !ֆǟӄʊʀǟ.isSenderGroupAdmin
+      ) {
+        return Sakura_Buttons.MIB(
+          ӄʀǟӄɨռʐ,
+          chat,
+          ֆǟӄʊʀǟ,
+          `*❌ Admins Only | You Are Not Allowed! ❌*`,
+          _𝔏𝔞𝔟_.ɴᴏᴛᴀᴅᴍɪɴ
+        );
+      }
+      //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
       const Bagde = require("../../Sakura🍃Goose/Badge");
       const ms = require("parse-ms");
       Bagde.findOne(
@@ -87,6 +102,7 @@ module.exports = {
             `./Sakura🛰️Server/Coolist.json`,
             JSON.stringify(jsoncool)
           );
+          console.log("Logged-ID: " + ֆǟӄʊʀǟ.sender);
           setTimeout((ℓαвєяяσя) => {
             if (ℓαвєяяσя) return console.log(ℓαвєяяσя);
             jsoncool.splice(ֆǟӄʊʀǟ.sender);
@@ -94,6 +110,7 @@ module.exports = {
               `./Sakura🛰️Server/Coolist.json`,
               JSON.stringify(jsoncool)
             );
+            console.log("Un-Logged-ID: " + ֆǟӄʊʀǟ.sender);
           }, 15000);
           console.log(userBadge);
           //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
@@ -115,114 +132,29 @@ module.exports = {
             );
           }
           //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
-          if (
-            ֆǟӄʊʀǟ.isGroup &&
-            !ֆǟӄʊʀǟ.fromMe &&
-            !ֆǟӄʊʀǟ.isSenderDev &&
-            !ֆǟӄʊʀǟ.isSenderGroupAdmin
-          ) {
-            try {
-              return Sakura_Buttons.MIB(
-                ӄʀǟӄɨռʐ,
-                chat,
-                ֆǟӄʊʀǟ,
-                `*❌ Admins Only | You Are Not Allowed! ❌*`,
-                _𝔏𝔞𝔟_.ɴᴏᴛᴀᴅᴍɪɴ
-              );
-            } catch (ℓαвєяяσя) {
-              ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
-            }
+          if (ֆǟӄʊʀǟ.isGroup) {
+            var where = "(ᴀᴅᴍɪɴ)";
           } else {
-            if (ֆǟӄʊʀǟ.isGroup) {
-              var where = "(ᴀᴅᴍɪɴ)";
-            } else {
-              var where = "(ᴘʀɪᴠᴀᴛᴇ)";
-            }
+            var where = "(ᴘʀɪᴠᴀᴛᴇ)";
+          }
 
-            await got(`https://www.reddit.com/r/pussy/random.json`).then(
-              async (newScpt) => {
-                var file = JSON.parse(newScpt.body);
-                var title = file[0].data.children[0].data.title;
-                var amazeme = file[0].data.children[0].data.url;
+          await got(`https://www.reddit.com/r/pussy/random.json`).then(
+            async (newScpt) => {
+              var file = JSON.parse(newScpt.body);
+              var title = file[0].data.children[0].data.title;
+              var amazeme = file[0].data.children[0].data.url;
 
-                if (
-                  !amazeme.endsWith(`.png`) &&
-                  !amazeme.endsWith(`.jpg`) &&
-                  !amazeme.endsWith(`.jpeg`)
-                ) {
-                  var amazeme = await got(
-                    `https://www.reddit.com/r/pussy/random.json`
-                  ).then(async (newScpt) => {
-                    var file = JSON.parse(newScpt.body);
-                    var title = file[0].data.children[0].data.title;
-                    var amazeme = file[0].data.children[0].data.url;
-                    return Sakura_Buttons.MIB(
-                      ӄʀǟӄɨռʐ,
-                      chat,
-                      ֆǟӄʊʀǟ,
-                      `
-────★ 🔞𝐇𝐮𝐦𝐚𝐧 𝐍𝐒𝐅𝐖
-
-👅 𝐓𝐨𝐩𝐢𝐜: ${title}
-📞 𝐎𝐫𝐝𝐞𝐫𝐞𝐝𝐁𝐲: @${ꜱᴇɴᴅᴇʀeceived} ${where}
-`,
-                      amazeme
-                    );
-                  });
-                } else if (amazeme.endsWith(`.gif`)) {
-                  const downloader = await new Downloader({
-                    url: amazeme,
-                    directory: `./Sakura🗑️Temp`,
-                    fileName: `${Ping}_${FinalName}.gif`,
-                    cloneFiles: false,
-                  });
-                  try {
-                    await downloader.download();
-                  } catch (ℓαвєяяσя) {
-                    return Sakura_Buttons.MTB(
-                      ӄʀǟӄɨռʐ,
-                      chat,
-                      ֆǟӄʊʀǟ,
-                      `@${ꜱᴇɴᴅᴇʀeceived},
-
-╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-║🥺 𝐎𝐩𝐩𝐬𝐢𝐞 𝐓𝐫𝐲 𝐀𝐠𝐚𝐢𝐧!
-║🍁 𝐒𝐞𝐫𝐯𝐞𝐫 𝐃𝐢𝐝𝐧'𝐭 𝐑𝐞𝐬𝐩𝐨𝐧𝐝!
-╚════════════╝`
-                    );
-                  }
-                  ffmpeg(`./Sakura🗑️Temp/${Ping}_${FinalName}.gif`)
-                    .outputOptions([
-                      `-pix_fmt yuv420p`,
-                      `-c:v libx264`,
-                      `-movflags +faststart`,
-                      `-filter:v crop='floor(in_w/2)*2:floor(in_h/2)*2'`,
-                    ])
-                    .save(`./Sakura🗑️Temp/${Ping}_${FinalName}.mp4`)
-                    .on(`end`, async () => {
-                      return Sakura_Static.MSB(
-                        ӄʀǟӄɨռʐ,
-                        chat,
-                        ֆǟӄʊʀǟ,
-                        `
-────★ 🔞𝐇𝐮𝐦𝐚𝐧 𝐍𝐒𝐅𝐖
-
-👅 𝐓𝐨𝐩𝐢𝐜: ${title}
-📞 𝐎𝐫𝐝𝐞𝐫𝐞𝐝𝐁𝐲: @${ꜱᴇɴᴅᴇʀeceived} ${where}
-`,
-                        `./Sakura🗑️Temp/${Ping}_${FinalName}.mp4`
-                      )
-                        .then(
-                          cleanRF.cleanRF(
-                            `./Sakura🗑️Temp/${Ping}_${FinalName}.mp4`,
-                            `./Sakura🗑️Temp/${Ping}_${FinalName}.gif`
-                          )
-                        )
-                        .catch((ℓαвєяяσя) =>
-                          ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
-                        );
-                    });
-                } else {
+              if (
+                !amazeme.endsWith(`.png`) &&
+                !amazeme.endsWith(`.jpg`) &&
+                !amazeme.endsWith(`.jpeg`)
+              ) {
+                var amazeme = await got(
+                  `https://www.reddit.com/r/pussy/random.json`
+                ).then(async (newScpt) => {
+                  var file = JSON.parse(newScpt.body);
+                  var title = file[0].data.children[0].data.title;
+                  var amazeme = file[0].data.children[0].data.url;
                   return Sakura_Buttons.MIB(
                     ӄʀǟӄɨռʐ,
                     chat,
@@ -235,10 +167,76 @@ module.exports = {
 `,
                     amazeme
                   );
+                });
+              } else if (amazeme.endsWith(`.gif`)) {
+                const downloader = await new Downloader({
+                  url: amazeme,
+                  directory: `./Sakura🗑️Temp`,
+                  fileName: `${Ping}_${FinalName}.gif`,
+                  cloneFiles: false,
+                });
+                try {
+                  await downloader.download();
+                } catch (ℓαвєяяσя) {
+                  return Sakura_Buttons.MTB(
+                    ӄʀǟӄɨռʐ,
+                    chat,
+                    ֆǟӄʊʀǟ,
+                    `@${ꜱᴇɴᴅᴇʀeceived},
+
+╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+║🥺 𝐎𝐩𝐩𝐬𝐢𝐞 𝐓𝐫𝐲 𝐀𝐠𝐚𝐢𝐧!
+║🍁 𝐒𝐞𝐫𝐯𝐞𝐫 𝐃𝐢𝐝𝐧'𝐭 𝐑𝐞𝐬𝐩𝐨𝐧𝐝!
+╚════════════╝`
+                  );
                 }
+                ffmpeg(`./Sakura🗑️Temp/${Ping}_${FinalName}.gif`)
+                  .outputOptions([
+                    `-pix_fmt yuv420p`,
+                    `-c:v libx264`,
+                    `-movflags +faststart`,
+                    `-filter:v crop='floor(in_w/2)*2:floor(in_h/2)*2'`,
+                  ])
+                  .save(`./Sakura🗑️Temp/${Ping}_${FinalName}.mp4`)
+                  .on(`end`, async () => {
+                    return Sakura_Static.MSB(
+                      ӄʀǟӄɨռʐ,
+                      chat,
+                      ֆǟӄʊʀǟ,
+                      `
+────★ 🔞𝐇𝐮𝐦𝐚𝐧 𝐍𝐒𝐅𝐖
+
+👅 𝐓𝐨𝐩𝐢𝐜: ${title}
+📞 𝐎𝐫𝐝𝐞𝐫𝐞𝐝𝐁𝐲: @${ꜱᴇɴᴅᴇʀeceived} ${where}
+`,
+                      `./Sakura🗑️Temp/${Ping}_${FinalName}.mp4`
+                    )
+                      .then(
+                        cleanRF.cleanRF(
+                          `./Sakura🗑️Temp/${Ping}_${FinalName}.mp4`,
+                          `./Sakura🗑️Temp/${Ping}_${FinalName}.gif`
+                        )
+                      )
+                      .catch((ℓαвєяяσя) =>
+                        ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
+                      );
+                  });
+              } else {
+                return Sakura_Buttons.MIB(
+                  ӄʀǟӄɨռʐ,
+                  chat,
+                  ֆǟӄʊʀǟ,
+                  `
+────★ 🔞𝐇𝐮𝐦𝐚𝐧 𝐍𝐒𝐅𝐖
+
+👅 𝐓𝐨𝐩𝐢𝐜: ${title}
+📞 𝐎𝐫𝐝𝐞𝐫𝐞𝐝𝐁𝐲: @${ꜱᴇɴᴅᴇʀeceived} ${where}
+`,
+                  amazeme
+                );
               }
-            );
-          }
+            }
+          );
         }
       );
     } catch (ℓαвєяяσя) {

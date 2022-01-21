@@ -116,49 +116,52 @@ module.exports = {
             );
           }
           //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
-      if (ֆǟӄʊʀǟ.isReplyAudio) {
-        var FILEOBJECT = {
-          message: chat.message.extendedTextMessage.contextInfo.quotedMessage,
-        };
-        var FILEID = chat.message.extendedTextMessage.contextInfo.stanzaId;
-        console.log(FILEOBJECT);
-        await ӄʀǟӄɨռʐ.downloadAndSaveMediaMessage(FILEOBJECT, `${FILEID}`);
-        var Convert_From = `${FILEID}.mp4`;
-        var Convert_To = `_${FILEID}_.mp4`;
-        exec(
-          `ffmpeg -i ${Convert_From} -af volume=12 ${Convert_To}`,
-          async (err) => {
-            cleanRF.cleanRF(Convert_From);
-            if (err) return console.log(err);
-            await ӄʀǟӄɨռʐ.sendMessage(
-              ֆǟӄʊʀǟ.chatId,
-              fs.readFileSync(Convert_To),
-              MessageType.audio,
-              {
-                mimetype: "audio/mp4",
-                quoted: chat,
+          if (ֆǟӄʊʀǟ.isReplyAudio) {
+            var FILEOBJECT = {
+              message:
+                chat.message.extendedTextMessage.contextInfo.quotedMessage,
+            };
+            var FILEID = chat.message.extendedTextMessage.contextInfo.stanzaId;
+            console.log(FILEOBJECT);
+            await ӄʀǟӄɨռʐ.downloadAndSaveMediaMessage(FILEOBJECT, `${FILEID}`);
+            var Convert_From = `${FILEID}.mp4`;
+            var Convert_To = `_${FILEID}_.mp4`;
+            exec(
+              `ffmpeg -i ${Convert_From} -af volume=12 ${Convert_To}`,
+              async (err) => {
+                cleanRF.cleanRF(Convert_From);
+                if (err) return console.log(err);
+                await ӄʀǟӄɨռʐ.sendMessage(
+                  ֆǟӄʊʀǟ.chatId,
+                  fs.readFileSync(Convert_To),
+                  MessageType.audio,
+                  {
+                    mimetype: "audio/mp4",
+                    quoted: chat,
+                  }
+                );
+                cleanRF.cleanRF(Convert_To);
               }
             );
-            cleanRF.cleanRF(Convert_To);
+            //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
+          } else {
+            var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(ֆǟӄʊʀǟ.commandName);
+            var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
+              𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ === undefined ? `Null` : 𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ;
+            const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../Sakura🛰️Server/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
+            userBadge.Limits = userBadge.Limits + 1;
+            userBadge.save();
+            return ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
+              ӄʀǟӄɨռʐ,
+              chat,
+              ֆǟӄʊʀǟ,
+              ꜱᴇɴᴅᴇʀɪᴅ,
+              ꜱᴇɴᴅᴇʀeceived,
+              ֆǟӄʊʀǟ.commandName,
+              ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
+            );
           }
-        );
-        //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
-      } else {
-        var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(ֆǟӄʊʀǟ.commandName);
-        var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
-          𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ === undefined ? `Null` : 𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ;
-        const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../Sakura🛰️Server/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
-        return ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
-          ӄʀǟӄɨռʐ,
-          chat,
-          ֆǟӄʊʀǟ,
-          ꜱᴇɴᴅᴇʀɪᴅ,
-          ꜱᴇɴᴅᴇʀeceived,
-          ֆǟӄʊʀǟ.commandName,
-          ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
-        );
-      }
-      //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
+          //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
         }
       );
     } catch (ℓαвєяяσя) {

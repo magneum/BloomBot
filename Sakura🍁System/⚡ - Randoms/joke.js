@@ -33,7 +33,6 @@ module.exports = {
           ID: ֆǟӄʊʀǟ.sender,
         },
         async (err, userBadge) => {
-          // return userBadge.delete();
           if (err) return console.log(err);
           if (!userBadge) {
             var newUser = new Bagde({
@@ -86,6 +85,7 @@ module.exports = {
             `./Sakura🛰️Server/Coolist.json`,
             JSON.stringify(jsoncool)
           );
+          console.log("Logged-ID: " + ֆǟӄʊʀǟ.sender);
           setTimeout((ℓαвєяяσя) => {
             if (ℓαвєяяσя) return console.log(ℓαвєяяσя);
             jsoncool.splice(ֆǟӄʊʀǟ.sender);
@@ -93,7 +93,8 @@ module.exports = {
               `./Sakura🛰️Server/Coolist.json`,
               JSON.stringify(jsoncool)
             );
-          }, 0);
+            console.log("Un-Logged-ID: " + ֆǟӄʊʀǟ.sender);
+          }, 15000);
           console.log(userBadge);
           //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
           if (!ֆǟӄʊʀǟ.fromMe && userBadge.value === "False") {

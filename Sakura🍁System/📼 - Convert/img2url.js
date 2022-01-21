@@ -172,6 +172,8 @@ module.exports = {
             var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
               𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ === undefined ? `Null` : 𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ;
             const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../Sakura🛰️Server/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
+            userBadge.Limits = userBadge.Limits + 1;
+            userBadge.save();
             return ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
               ӄʀǟӄɨռʐ,
               chat,

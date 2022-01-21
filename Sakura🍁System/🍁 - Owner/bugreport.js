@@ -45,17 +45,17 @@ module.exports = {
         `./Sakura🛰️Server/Coolist.json`,
         JSON.stringify(jsoncool)
       );
-      setTimeout(
-        ((ℓαвєяяσя) => {
-          if (ℓαвєяяσя) return console.log(ℓαвєяяσя);
-          jsoncool.splice(ֆǟӄʊʀǟ.sender);
-          fs.writeFileSync(
-            `./Sakura🛰️Server/Coolist.json`,
-            JSON.stringify(jsoncool)
-          );
-        },
-        15000)
-      );
+      console.log("Logged-ID: " + ֆǟӄʊʀǟ.sender);
+      setTimeout((ℓαвєяяσя) => {
+        if (ℓαвєяяσя) return console.log(ℓαвєяяσя);
+        jsoncool.splice(ֆǟӄʊʀǟ.sender);
+        fs.writeFileSync(
+          `./Sakura🛰️Server/Coolist.json`,
+          JSON.stringify(jsoncool)
+        );
+        console.log("Un-Logged-ID: " + ֆǟӄʊʀǟ.sender);
+      }, 15000);
+      console.log(userBadge);
       //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
       if (Needs.length === 0) {
         var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(ֆǟӄʊʀǟ.commandName);

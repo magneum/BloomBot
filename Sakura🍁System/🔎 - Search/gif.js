@@ -116,88 +116,94 @@ module.exports = {
             );
           }
           //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
-      if (Needs.length === 0) {
-        var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(ֆǟӄʊʀǟ.commandName);
-        var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
-          𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ === undefined ? `Null` : 𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ;
-        const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../Sakura🛰️Server/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
-        return ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
-          ӄʀǟӄɨռʐ,
-          chat,
-          ֆǟӄʊʀǟ,
-          ꜱᴇɴᴅᴇʀɪᴅ,
-          ꜱᴇɴᴅᴇʀeceived,
-          ֆǟӄʊʀǟ.commandName,
-          ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
-        );
-      }
-      //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
-      try {
-        let url = `https://api.tenor.com/v1/search?q=${Needs.join(` `)}&key=${
-          _𝔏𝔞𝔟_.TEN
-        }&limit=100`;
-        let response = await fetch(url);
-        let json = await response.json();
-        console.log(json);
-        //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
-        const MP4 =
-          json.results[Math.floor(Math.random() * json.results.length)].media[0]
-            .mp4.url;
-        const TINYMP4 =
-          json.results[Math.floor(Math.random() * json.results.length)].media[0]
-            .tinymp4.url;
-        const NANOMP4 =
-          json.results[Math.floor(Math.random() * json.results.length)].media[0]
-            .nanogif.url;
-        const LOOPEDMP4 =
-          json.results[Math.floor(Math.random() * json.results.length)].media[0]
-            .loopedmp4.url;
-        //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
-        const GIF =
-          json.results[Math.floor(Math.random() * json.results.length)].media[0]
-            .gif.url;
-        const NANOGIF =
-          json.results[Math.floor(Math.random() * json.results.length)].media[0]
-            .nanomp4.url;
-        const TINYGIF =
-          json.results[Math.floor(Math.random() * json.results.length)].media[0]
-            .tinygif.url;
-        const MEDIUMGIF =
-          json.results[Math.floor(Math.random() * json.results.length)].media[0]
-            .mediumgif.url;
+          if (Needs.length === 0) {
+            var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(ֆǟӄʊʀǟ.commandName);
+            var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
+              𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ === undefined ? `Null` : 𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ;
+            const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../Sakura🛰️Server/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
+            userBadge.Limits = userBadge.Limits + 1;
+            userBadge.save();
+            return ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
+              ӄʀǟӄɨռʐ,
+              chat,
+              ֆǟӄʊʀǟ,
+              ꜱᴇɴᴅᴇʀɪᴅ,
+              ꜱᴇɴᴅᴇʀeceived,
+              ֆǟӄʊʀǟ.commandName,
+              ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
+            );
+          }
+          //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
+          try {
+            let url = `https://api.tenor.com/v1/search?q=${Needs.join(
+              ` `
+            )}&key=${_𝔏𝔞𝔟_.TEN}&limit=100`;
+            let response = await fetch(url);
+            let json = await response.json();
+            console.log(json);
+            //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
+            const MP4 =
+              json.results[Math.floor(Math.random() * json.results.length)]
+                .media[0].mp4.url;
+            const TINYMP4 =
+              json.results[Math.floor(Math.random() * json.results.length)]
+                .media[0].tinymp4.url;
+            const NANOMP4 =
+              json.results[Math.floor(Math.random() * json.results.length)]
+                .media[0].nanogif.url;
+            const LOOPEDMP4 =
+              json.results[Math.floor(Math.random() * json.results.length)]
+                .media[0].loopedmp4.url;
+            //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
+            const GIF =
+              json.results[Math.floor(Math.random() * json.results.length)]
+                .media[0].gif.url;
+            const NANOGIF =
+              json.results[Math.floor(Math.random() * json.results.length)]
+                .media[0].nanomp4.url;
+            const TINYGIF =
+              json.results[Math.floor(Math.random() * json.results.length)]
+                .media[0].tinygif.url;
+            const MEDIUMGIF =
+              json.results[Math.floor(Math.random() * json.results.length)]
+                .media[0].mediumgif.url;
 
-        const WEBM =
-          json.results[Math.floor(Math.random() * json.results.length)].media[0]
-            .webm.url;
-        const TINYWEBM =
-          json.results[Math.floor(Math.random() * json.results.length)].media[0]
-            .tinywebm.url;
-        //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
-        await ӄʀǟӄɨռʐ
-          .sendMessage(ֆǟӄʊʀǟ.chatId, { url: MP4 }, MessageType.video, {
-            contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
-            quoted: chat,
-            mimetype: `video/gif`,
-            caption: `(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 \n${Clock}
+            const WEBM =
+              json.results[Math.floor(Math.random() * json.results.length)]
+                .media[0].webm.url;
+            const TINYWEBM =
+              json.results[Math.floor(Math.random() * json.results.length)]
+                .media[0].tinywebm.url;
+            //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
+            await ӄʀǟӄɨռʐ
+              .sendMessage(ֆǟӄʊʀǟ.chatId, { url: MP4 }, MessageType.video, {
+                contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
+                quoted: chat,
+                mimetype: `video/gif`,
+                caption: `(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 \n${Clock}
 
 ────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 🍯 𝐒𝐞𝐚𝐫𝐜𝐡𝐞𝐝: ${Needs.join(` `)}
 `,
-          })
-          .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-        //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
-      } catch (ℓαвєяяσя) {
-        return Sakura_Buttons.MTB(
-          ӄʀǟӄɨռʐ,
-          chat,
-          ֆǟӄʊʀǟ,
-          `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚, @${ꜱᴇɴᴅᴇʀeceived},
+              })
+              .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+            //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
+          } catch (ℓαвєяяσя) {
+            userBadge.Limits = userBadge.Limits + 1;
+            userBadge.save();
+            return Sakura_Buttons.MTB(
+              ӄʀǟӄɨռʐ,
+              chat,
+              ֆǟӄʊʀǟ,
+              `@${ꜱᴇɴᴅᴇʀeceived},
 
-🤧𝐎𝐩𝐩𝐬𝐢𝐞!
-𝘎𝘪𝘧 𝘕𝘰𝘵 𝘍𝘰𝘶𝘯𝘥.𝘛𝘳𝘺 𝘈𝘨𝘢𝘪𝘯!`
-        );
-      }
-      //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
+╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+║🥺 𝐎𝐩𝐩𝐬𝐢𝐞 𝐓𝐫𝐲 𝐀𝐠𝐚𝐢𝐧!
+║🍁 𝐒𝐞𝐫𝐯𝐞𝐫 𝐃𝐢𝐝𝐧'𝐭 𝐑𝐞𝐬𝐩𝐨𝐧𝐝!
+╚════════════╝`
+            );
+          }
+          //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
         }
       );
     } catch (ℓαвєяяσя) {

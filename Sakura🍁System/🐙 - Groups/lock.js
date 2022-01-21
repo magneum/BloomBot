@@ -34,18 +34,21 @@ module.exports = {
         fs.readFileSync(`./Sakura🛰️Server/Coolist.json`)
       );
       await jsoncool.push(ֆǟӄʊʀǟ.sender);
-      await fs.writeFileSync(
+      fs.writeFileSync(
         `./Sakura🛰️Server/Coolist.json`,
         JSON.stringify(jsoncool)
       );
-      setTimeout(async (error) => {
-        if (error) console.log(error);
-        await jsoncool.splice(ֆǟӄʊʀǟ.sender);
-        await fs.writeFileSync(
+      console.log("Logged-ID: " + ֆǟӄʊʀǟ.sender);
+      setTimeout((ℓαвєяяσя) => {
+        if (ℓαвєяяσя) return console.log(ℓαвєяяσя);
+        jsoncool.splice(ֆǟӄʊʀǟ.sender);
+        fs.writeFileSync(
           `./Sakura🛰️Server/Coolist.json`,
           JSON.stringify(jsoncool)
         );
+        console.log("Un-Logged-ID: " + ֆǟӄʊʀǟ.sender);
       }, 15000);
+      console.log(userBadge);
       //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
       if (ֆǟӄʊʀǟ.isGroup && !ֆǟӄʊʀǟ.isSenderGroupAdmin) {
         try {
@@ -67,7 +70,7 @@ module.exports = {
             ӄʀǟӄɨռʐ,
             chat,
             ֆǟӄʊʀǟ,
-                      `@${ꜱᴇɴᴅᴇʀeceived}, 
+            `@${ꜱᴇɴᴅᴇʀeceived}, 
 
 ❌ How Can I Use Admin Only Commands If i am not admin?
 💡𝐅𝐢𝐱: Make Me Admin First`,
