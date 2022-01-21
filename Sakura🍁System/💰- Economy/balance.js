@@ -35,22 +35,8 @@ module.exports = {
         );
       }
       //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
-      const jsoncool = await JSON.parse(
-        fs.readFileSync(`./Sakura🛰️Server/Coolist.json`)
-      );
-      await jsoncool.push(ֆǟӄʊʀǟ.sender);
-      fs.writeFileSync(
-        `./Sakura🛰️Server/Coolist.json`,
-        JSON.stringify(jsoncool)
-      );
-      setTimeout((ℓαвєяяσя) => {
-        if (ℓαвєяяσя) return console.log(ℓαвєяяσя);
-        jsoncool.splice(ֆǟӄʊʀǟ.sender);
-        fs.writeFileSync(
-          `./Sakura🛰️Server/Coolist.json`,
-          JSON.stringify(jsoncool)
-        );
-      }, 0);
+      const hold = require("../../Sakura🛰️Server/Hold");
+      hold.Hold(ֆǟӄʊʀǟ);
       //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
       if (ֆǟӄʊʀǟ.isReply) {
         var Receiver = chat.message.extendedTextMessage.contextInfo.participant;

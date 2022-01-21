@@ -652,9 +652,9 @@ ${update.desc}`,
           }
           //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
           const jsoncool = JSON.parse(
-            fs.readFileSync(`./Sakura🛰️Server/Coolist.json`)
+            fs.readFileSync("./Sakura🛰️Server/Coolist.json")
           );
-          if (jsoncool.includes(ֆǟӄʊʀǟ.sender)) {
+          if (jsoncool.ID.includes(ֆǟӄʊʀǟ.sender)) {
             if (ֆǟӄʊʀǟ.fromMe) {
               return ӄʀǟӄɨռʐ.sendMessage(
                 ֆǟӄʊʀǟ.chatId,
