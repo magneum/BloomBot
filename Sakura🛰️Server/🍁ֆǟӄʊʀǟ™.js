@@ -638,7 +638,8 @@ ${update.desc}`,
           if (!memjson.includes(ֆǟӄʊʀǟ.sender)) {
             return ӄʀǟӄɨռʐ.sendMessage(
               ֆǟӄʊʀǟ.chatId,
-              `╔═══════ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
+              `
+╔═══════ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
 ║♨️ You Need To Be In Sakura GC.
 ║🚨 So That Your Account Can Be Verified and Monitored For Anti-Spams & Auto-BugReports!.
 ║
