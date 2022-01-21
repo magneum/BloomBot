@@ -5,7 +5,7 @@
 `🍁`;
 (async () => {
   const { ֆǟӄʊʀǟ } = require(`../Sakura🛰️Server/🍁ֆǟӄʊʀǟ™`);
-  const AutoKrakz = require(`../Sakura🛰️Server/𝓜𝖎𝖟𝖚ӄ𝖎ɢɪᴛ`);
+  const AutoKrakz = require(`../Sakura🛰️Server/ֆǟӄʊʀǟɢɪᴛ`);
   const _𝔏𝔞𝔟_ = require(`../Sakura🛰️Server/_𝔏𝔞𝔟_`);
   const ʍɨʐʊӄɨgoose = require("mongoose");
   const Kolor = require(`chalk`);
