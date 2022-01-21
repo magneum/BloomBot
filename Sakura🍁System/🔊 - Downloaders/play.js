@@ -85,19 +85,29 @@ module.exports = {
               CurrentLimitTime: Date.now(),
               PermanentLimitTime: 86400000,
             });
-            newUser.save();
+            newUser
+              .save()
+              .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
           } else {
             var clock =
               userBadge.PermanentLimitTime -
               (Date.now() - userBadge.CurrentLimitTime);
             if (clock > 0 && userBadge.Limits == 0) {
               userBadge.value = "False";
-              userBadge.save();
+              userBadge
+                .save()
+                .catch((ℓαвєяяσя) =>
+                  ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
+                );
             }
             if (clock > 0 && !userBadge.Limits == 0) {
               userBadge.Limits = userBadge.Limits - 1;
               userBadge.value = "True";
-              userBadge.save();
+              userBadge
+                .save()
+                .catch((ℓαвєяяσя) =>
+                  ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
+                );
             }
             if (clock < 0 && userBadge.Limits == 0) {
               if (userBadge.Badge === "🧵ʙᴀꜱɪᴄ-10ᴄᴏᴍᴍᴀɴᴅꜱ") {
@@ -115,7 +125,11 @@ module.exports = {
               }
               userBadge.CurrentLimitTime = Date.now();
               userBadge.value = "True";
-              userBadge.save();
+              userBadge
+                .save()
+                .catch((ℓαвєяяσя) =>
+                  ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
+                );
             }
           }
           //|🍁  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍁|
