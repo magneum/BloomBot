@@ -1,145 +1,145 @@
 `⬡  ⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-` (c)爪𝖎𝖟𝖚ӄ𝖎 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!`;
+` (c)ֆǟӄʊʀǟ 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!`;
 `⬡  ⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
 `🍁`;
 `🍁`;
 const _𝔏𝔞𝔟_ = require(`./_𝔏𝔞𝔟_`);
-var ƈʏɮօʀɢƈʟǟ = require(`./𝓜𝖎𝖟𝖚ӄ𝖎ƈʟǟ`);
-// ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
+var ƈʏɮօʀɢƈʟǟ = require(`./ֆǟӄʊʀǟƈʟǟ`);
+// ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)ֆǟӄʊʀǟ 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
 exports.resolve = function (messageInstance, ӄʀǟӄɨռʐ, groupMetadata) {
   try {
     var DEVstring = _𝔏𝔞𝔟_.DEV;
-    var 𝓜𝖎𝖟𝖚ӄ𝖎 = new ƈʏɮօʀɢƈʟǟ();
+    var ֆǟӄʊʀǟ = new ƈʏɮօʀɢƈʟǟ();
     var prefix = _𝔏𝔞𝔟_.FOXTROT + `\\w+`;
     var prefixRegex = new RegExp(prefix, `g`);
     var jsonMessage = JSON.stringify(messageInstance);
-    // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
-    𝓜𝖎𝖟𝖚ӄ𝖎.chatId = messageInstance.key.remoteJid || ``;
-    𝓜𝖎𝖟𝖚ӄ𝖎.fromMe = messageInstance.key.fromMe;
-    𝓜𝖎𝖟𝖚ӄ𝖎.owner = ӄʀǟӄɨռʐ.user.jid || ``;
-    𝓜𝖎𝖟𝖚ӄ𝖎.mimeType = messageInstance.message
+    // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)ֆǟӄʊʀǟ 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
+    ֆǟӄʊʀǟ.chatId = messageInstance.key.remoteJid || ``;
+    ֆǟӄʊʀǟ.fromMe = messageInstance.key.fromMe;
+    ֆǟӄʊʀǟ.owner = ӄʀǟӄɨռʐ.user.jid || ``;
+    ֆǟӄʊʀǟ.mimeType = messageInstance.message
       ? Object.keys(messageInstance.message)[0]
       : null;
-    𝓜𝖎𝖟𝖚ӄ𝖎.type =
-      𝓜𝖎𝖟𝖚ӄ𝖎.mimeType === `imageMessage`
+    ֆǟӄʊʀǟ.type =
+      ֆǟӄʊʀǟ.mimeType === `imageMessage`
         ? `image`
-        : 𝓜𝖎𝖟𝖚ӄ𝖎.mimeType === `videoMessage`
+        : ֆǟӄʊʀǟ.mimeType === `videoMessage`
         ? `video`
-        : 𝓜𝖎𝖟𝖚ӄ𝖎.mimeType === `conversation` ||
-          𝓜𝖎𝖟𝖚ӄ𝖎.mimeType == `extendedTextMessage`
+        : ֆǟӄʊʀǟ.mimeType === `conversation` ||
+          ֆǟӄʊʀǟ.mimeType == `extendedTextMessage`
         ? `text`
-        : 𝓜𝖎𝖟𝖚ӄ𝖎.mimeType === `audioMessage`
+        : ֆǟӄʊʀǟ.mimeType === `audioMessage`
         ? `audio`
-        : 𝓜𝖎𝖟𝖚ӄ𝖎.mimeType === `stickerMessage`
+        : ֆǟӄʊʀǟ.mimeType === `stickerMessage`
         ? `sticker`
         : ``;
-    𝓜𝖎𝖟𝖚ӄ𝖎.isReply =
-      𝓜𝖎𝖟𝖚ӄ𝖎.mimeType === `extendedTextMessage` &&
+    ֆǟӄʊʀǟ.isReply =
+      ֆǟӄʊʀǟ.mimeType === `extendedTextMessage` &&
       messageInstance.message.extendedTextMessage.hasOwnProperty(
         `contextInfo`
       ) &&
       messageInstance.message.extendedTextMessage.contextInfo.hasOwnProperty(
         `stanzaId`
       );
-    𝓜𝖎𝖟𝖚ӄ𝖎.replyMessageId =
-      𝓜𝖎𝖟𝖚ӄ𝖎.isReply && messageInstance.message.extendedTextMessage.contextInfo
+    ֆǟӄʊʀǟ.replyMessageId =
+      ֆǟӄʊʀǟ.isReply && messageInstance.message.extendedTextMessage.contextInfo
         ? messageInstance.message.extendedTextMessage.contextInfo.stanzaId
         : ``;
-    𝓜𝖎𝖟𝖚ӄ𝖎.replyMessage =
-      𝓜𝖎𝖟𝖚ӄ𝖎.isReply && messageInstance.message.extendedTextMessage.contextInfo
+    ֆǟӄʊʀǟ.replyMessage =
+      ֆǟӄʊʀǟ.isReply && messageInstance.message.extendedTextMessage.contextInfo
         ? messageInstance.message.extendedTextMessage.contextInfo.quotedMessage
             .conversation
         : ``;
-    𝓜𝖎𝖟𝖚ӄ𝖎.replyParticipant =
-      𝓜𝖎𝖟𝖚ӄ𝖎.isReply && messageInstance.message.extendedTextMessage.contextInfo
+    ֆǟӄʊʀǟ.replyParticipant =
+      ֆǟӄʊʀǟ.isReply && messageInstance.message.extendedTextMessage.contextInfo
         ? messageInstance.message.extendedTextMessage.contextInfo.participant
         : ``;
-    𝓜𝖎𝖟𝖚ӄ𝖎.body =
-      𝓜𝖎𝖟𝖚ӄ𝖎.mimeType === `conversation`
+    ֆǟӄʊʀǟ.body =
+      ֆǟӄʊʀǟ.mimeType === `conversation`
         ? messageInstance.message.conversation
-        : 𝓜𝖎𝖟𝖚ӄ𝖎.mimeType == `imageMessage`
+        : ֆǟӄʊʀǟ.mimeType == `imageMessage`
         ? messageInstance.message.imageMessage.caption
-        : 𝓜𝖎𝖟𝖚ӄ𝖎.mimeType == `videoMessage`
+        : ֆǟӄʊʀǟ.mimeType == `videoMessage`
         ? messageInstance.message.videoMessage.caption
-        : 𝓜𝖎𝖟𝖚ӄ𝖎.mimeType == `extendedTextMessage`
+        : ֆǟӄʊʀǟ.mimeType == `extendedTextMessage`
         ? messageInstance.message.extendedTextMessage.text
-        : 𝓜𝖎𝖟𝖚ӄ𝖎.mimeType == `buttonsResponseMessage`
+        : ֆǟӄʊʀǟ.mimeType == `buttonsResponseMessage`
         ? messageInstance.message.buttonsResponseMessage.selectedDisplayText
         : ``;
-    𝓜𝖎𝖟𝖚ӄ𝖎.isCmd = prefixRegex.test(𝓜𝖎𝖟𝖚ӄ𝖎.body);
-    𝓜𝖎𝖟𝖚ӄ𝖎.commandName = 𝓜𝖎𝖟𝖚ӄ𝖎.isCmd
-      ? 𝓜𝖎𝖟𝖚ӄ𝖎.body.slice(1).trim().split(/ +/).shift().toLowerCase()
+    ֆǟӄʊʀǟ.isCmd = prefixRegex.test(ֆǟӄʊʀǟ.body);
+    ֆǟӄʊʀǟ.commandName = ֆǟӄʊʀǟ.isCmd
+      ? ֆǟӄʊʀǟ.body.slice(1).trim().split(/ +/).shift().toLowerCase()
       : ``;
-    𝓜𝖎𝖟𝖚ӄ𝖎.alias = 𝓜𝖎𝖟𝖚ӄ𝖎.isCmd
-      ? 𝓜𝖎𝖟𝖚ӄ𝖎.body.slice(1).trim().split(/ +/).shift().toLowerCase()
+    ֆǟӄʊʀǟ.alias = ֆǟӄʊʀǟ.isCmd
+      ? ֆǟӄʊʀǟ.body.slice(1).trim().split(/ +/).shift().toLowerCase()
       : ``;
-    𝓜𝖎𝖟𝖚ӄ𝖎.isImage = 𝓜𝖎𝖟𝖚ӄ𝖎.type === `image`;
-    𝓜𝖎𝖟𝖚ӄ𝖎.isReplyImage = 𝓜𝖎𝖟𝖚ӄ𝖎.isReply
+    ֆǟӄʊʀǟ.isImage = ֆǟӄʊʀǟ.type === `image`;
+    ֆǟӄʊʀǟ.isReplyImage = ֆǟӄʊʀǟ.isReply
       ? jsonMessage.indexOf(`imageMessage`) !== -1
       : false;
-    𝓜𝖎𝖟𝖚ӄ𝖎.imageCaption = 𝓜𝖎𝖟𝖚ӄ𝖎.isImage
+    ֆǟӄʊʀǟ.imageCaption = ֆǟӄʊʀǟ.isImage
       ? messageInstance.message.imageMessage.caption
       : ``;
-    𝓜𝖎𝖟𝖚ӄ𝖎.isGIF =
-      𝓜𝖎𝖟𝖚ӄ𝖎.type === `video` &&
+    ֆǟӄʊʀǟ.isGIF =
+      ֆǟӄʊʀǟ.type === `video` &&
       messageInstance.message.videoMessage.gifPlayback;
-    𝓜𝖎𝖟𝖚ӄ𝖎.isReplyGIF = 𝓜𝖎𝖟𝖚ӄ𝖎.isReply
+    ֆǟӄʊʀǟ.isReplyGIF = ֆǟӄʊʀǟ.isReply
       ? jsonMessage.indexOf(`videoMessage`) !== -1 &&
         messageInstance.message.extendedTextMessage.contextInfo.quotedMessage
           .videoMessage.gifPlayback
       : false;
-    𝓜𝖎𝖟𝖚ӄ𝖎.isSticker = 𝓜𝖎𝖟𝖚ӄ𝖎.type === `sticker`;
-    𝓜𝖎𝖟𝖚ӄ𝖎.isReplySticker = 𝓜𝖎𝖟𝖚ӄ𝖎.isReply
+    ֆǟӄʊʀǟ.isSticker = ֆǟӄʊʀǟ.type === `sticker`;
+    ֆǟӄʊʀǟ.isReplySticker = ֆǟӄʊʀǟ.isReply
       ? jsonMessage.indexOf(`stickerMessage`) !== -1
       : false;
-    𝓜𝖎𝖟𝖚ӄ𝖎.isReplyAnimatedSticker = 𝓜𝖎𝖟𝖚ӄ𝖎.isReplySticker
+    ֆǟӄʊʀǟ.isReplyAnimatedSticker = ֆǟӄʊʀǟ.isReplySticker
       ? messageInstance.message.extendedTextMessage.contextInfo.quotedMessage
           .stickerMessage.isAnimated
       : false;
-    𝓜𝖎𝖟𝖚ӄ𝖎.isVideo =
-      𝓜𝖎𝖟𝖚ӄ𝖎.type === `video` &&
+    ֆǟӄʊʀǟ.isVideo =
+      ֆǟӄʊʀǟ.type === `video` &&
       !messageInstance.message.videoMessage.gifPlayback;
-    𝓜𝖎𝖟𝖚ӄ𝖎.isReplyVideo = 𝓜𝖎𝖟𝖚ӄ𝖎.isReply
+    ֆǟӄʊʀǟ.isReplyVideo = ֆǟӄʊʀǟ.isReply
       ? jsonMessage.indexOf(`videoMessage`) !== -1 &&
         !messageInstance.message.extendedTextMessage.contextInfo.quotedMessage
           .videoMessage.gifPlayback
       : false;
-    𝓜𝖎𝖟𝖚ӄ𝖎.isAudio = 𝓜𝖎𝖟𝖚ӄ𝖎.type === `audio`;
-    𝓜𝖎𝖟𝖚ӄ𝖎.isReplyAudio = 𝓜𝖎𝖟𝖚ӄ𝖎.isReply
+    ֆǟӄʊʀǟ.isAudio = ֆǟӄʊʀǟ.type === `audio`;
+    ֆǟӄʊʀǟ.isReplyAudio = ֆǟӄʊʀǟ.isReply
       ? jsonMessage.indexOf(`audioMessage`) !== -1
       : false;
-    𝓜𝖎𝖟𝖚ӄ𝖎.Myself = ӄʀǟӄɨռʐ.user.jid || ``;
-    𝓜𝖎𝖟𝖚ӄ𝖎.isGroup = 𝓜𝖎𝖟𝖚ӄ𝖎.chatId.endsWith(`@g.us`);
-    𝓜𝖎𝖟𝖚ӄ𝖎.isPm = !𝓜𝖎𝖟𝖚ӄ𝖎.isGroup;
-    𝓜𝖎𝖟𝖚ӄ𝖎.sender =
-      𝓜𝖎𝖟𝖚ӄ𝖎.isGroup && messageInstance.message && 𝓜𝖎𝖟𝖚ӄ𝖎.fromMe
-        ? 𝓜𝖎𝖟𝖚ӄ𝖎.owner
-        : 𝓜𝖎𝖟𝖚ӄ𝖎.isGroup && messageInstance.message
+    ֆǟӄʊʀǟ.Myself = ӄʀǟӄɨռʐ.user.jid || ``;
+    ֆǟӄʊʀǟ.isGroup = ֆǟӄʊʀǟ.chatId.endsWith(`@g.us`);
+    ֆǟӄʊʀǟ.isPm = !ֆǟӄʊʀǟ.isGroup;
+    ֆǟӄʊʀǟ.sender =
+      ֆǟӄʊʀǟ.isGroup && messageInstance.message && ֆǟӄʊʀǟ.fromMe
+        ? ֆǟӄʊʀǟ.owner
+        : ֆǟӄʊʀǟ.isGroup && messageInstance.message
         ? messageInstance.participant
-        : !𝓜𝖎𝖟𝖚ӄ𝖎.isGroup
-        ? 𝓜𝖎𝖟𝖚ӄ𝖎.chatId
+        : !ֆǟӄʊʀǟ.isGroup
+        ? ֆǟӄʊʀǟ.chatId
         : ``;
-    𝓜𝖎𝖟𝖚ӄ𝖎.groupName = 𝓜𝖎𝖟𝖚ӄ𝖎.isGroup ? groupMetadata.subject : ``;
-    𝓜𝖎𝖟𝖚ӄ𝖎.groupMembers = 𝓜𝖎𝖟𝖚ӄ𝖎.isGroup ? groupMetadata.participants : ``;
-    𝓜𝖎𝖟𝖚ӄ𝖎.groupAdmins = 𝓜𝖎𝖟𝖚ӄ𝖎.isGroup
-      ? getGroupAdmins(𝓜𝖎𝖟𝖚ӄ𝖎.groupMembers)
+    ֆǟӄʊʀǟ.groupName = ֆǟӄʊʀǟ.isGroup ? groupMetadata.subject : ``;
+    ֆǟӄʊʀǟ.groupMembers = ֆǟӄʊʀǟ.isGroup ? groupMetadata.participants : ``;
+    ֆǟӄʊʀǟ.groupAdmins = ֆǟӄʊʀǟ.isGroup
+      ? getGroupAdmins(ֆǟӄʊʀǟ.groupMembers)
       : ``;
-    𝓜𝖎𝖟𝖚ӄ𝖎.groupId = 𝓜𝖎𝖟𝖚ӄ𝖎.isGroup ? groupMetadata.id : ``;
-    𝓜𝖎𝖟𝖚ӄ𝖎.isSenderDev = DEVstring.includes(
-      𝓜𝖎𝖟𝖚ӄ𝖎.sender.substring(0, 𝓜𝖎𝖟𝖚ӄ𝖎.sender.indexOf(`@`))
+    ֆǟӄʊʀǟ.groupId = ֆǟӄʊʀǟ.isGroup ? groupMetadata.id : ``;
+    ֆǟӄʊʀǟ.isSenderDev = DEVstring.includes(
+      ֆǟӄʊʀǟ.sender.substring(0, ֆǟӄʊʀǟ.sender.indexOf(`@`))
     );
-    𝓜𝖎𝖟𝖚ӄ𝖎.isBotGroupAdmin = 𝓜𝖎𝖟𝖚ӄ𝖎.isGroup
-      ? 𝓜𝖎𝖟𝖚ӄ𝖎.groupAdmins.includes(𝓜𝖎𝖟𝖚ӄ𝖎.owner)
+    ֆǟӄʊʀǟ.isBotGroupAdmin = ֆǟӄʊʀǟ.isGroup
+      ? ֆǟӄʊʀǟ.groupAdmins.includes(ֆǟӄʊʀǟ.owner)
       : false;
-    𝓜𝖎𝖟𝖚ӄ𝖎.isSenderGroupAdmin = 𝓜𝖎𝖟𝖚ӄ𝖎.isGroup
-      ? 𝓜𝖎𝖟𝖚ӄ𝖎.groupAdmins.includes(𝓜𝖎𝖟𝖚ӄ𝖎.sender)
+    ֆǟӄʊʀǟ.isSenderGroupAdmin = ֆǟӄʊʀǟ.isGroup
+      ? ֆǟӄʊʀǟ.groupAdmins.includes(ֆǟӄʊʀǟ.sender)
       : false;
-    return 𝓜𝖎𝖟𝖚ӄ𝖎;
+    return ֆǟӄʊʀǟ;
   } catch (ℓαвєяяσя) {
     console.log(ℓαвєяяσя);
   }
 };
-// ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)爪𝖎𝖟𝖚ӄ𝖎 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
+// ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍁 (c)ֆǟӄʊʀǟ 🍁    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
 function getGroupAdmins(participants) {
   var admins = [];
   for (var i in participants) {
@@ -150,5 +150,5 @@ function getGroupAdmins(participants) {
 `🍁`;
 `🍁`;
 `⬡  ⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-` (c)爪𝖎𝖟𝖚ӄ𝖎 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!`;
+` (c)ֆǟӄʊʀǟ 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!`;
 `⬡  ⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;

@@ -7,13 +7,13 @@ const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const LinkList = require(`../Sakura🍃Goose/antilink`);
 const Sakura_Buttons = require(`./Sakura_Buttons`);
 const Sakura_Static = require(`./Sakura_Static`);
-const 𝓜𝖎𝖟𝖚ӄ𝖎ֆʏռօք = require(`./𝓜𝖎𝖟𝖚ӄ𝖎ᴢᴇɴ`);
+const ֆǟӄʊʀǟֆʏռօք = require(`./ֆǟӄʊʀǟᴢᴇɴ`);
 const moment = require(`moment-timezone`);
-const AutoKrakz = require(`./𝓜𝖎𝖟𝖚ӄ𝖎ɢɪᴛ`);
+const AutoKrakz = require(`./ֆǟӄʊʀǟɢɪᴛ`);
 const PostDataBase = require(`./postDb`);
 const speed = require(`performance-now`);
 const { ʄǟռƈʏ } = require(`../ʄǟռƈʏ`);
-const 𝓜𝖎𝖟𝖚ӄ𝖎ǟքք = require(`./helper`);
+const ֆǟӄʊʀǟǟքք = require(`./helper`);
 const welbuts = require(`./welbuts`);
 const BanList = require(`./BanList`);
 const cleanRF = require(`./cleanRF`);
@@ -30,7 +30,7 @@ date.format(now, `ddd, MMM DD YYYY`);
 const pattern = date.compile(`ddd, MMM DD YYYY`);
 const Clock = date.format(now, pattern);
 const vers = require(`../package.json`);
-const 𝓜𝖎𝖟𝖚ӄ𝖎sql = _𝔏𝔞𝔟_.POSTQL;
+const ֆǟӄʊʀǟsql = _𝔏𝔞𝔟_.POSTQL;
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 const fs = require(`fs`);
@@ -66,9 +66,9 @@ if (time2 < `05:00:00`) {
 }
 const version = vers.vers;
 `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-var ӄʀǟӄɨռʐ = 𝓜𝖎𝖟𝖚ӄ𝖎ֆʏռօք.WhatsApp;
+var ӄʀǟӄɨռʐ = ֆǟӄʊʀǟֆʏռօք.WhatsApp;
 ӄʀǟӄɨռʐ.logger.level = `error`;
-async function 爪𝖎𝖟𝖚ӄ𝖎() {
+async function ֆǟӄʊʀǟ() {
   var ꜱɪᴛʀᴀᴘ = new Map();
   var commandUsage = new Map();
   console.log(
@@ -84,15 +84,15 @@ async function 爪𝖎𝖟𝖚ӄ𝖎() {
   }
   console.log(
     Kolor.bgYellowBright.black(
-      `⬡==========================⬡    🍁 爪𝖎𝖟𝖚ӄ𝖎™ 🍁    ⬡==========================⬡`
+      `⬡==========================⬡    🍁 ֆǟӄʊʀǟ™ 🍁    ⬡==========================⬡`
     )
   );
   console.log(
-    Kolor.bgYellowBright.black(`🍁INFO ⬰ Checking For 🍁爪𝖎𝖟𝖚ӄ𝖎™Updates ...✔️`)
+    Kolor.bgYellowBright.black(`🍁INFO ⬰ Checking For 🍁ֆǟӄʊʀǟ™Updates ...✔️`)
   );
   await AutoKrakz();
   try {
-    var session = 𝓜𝖎𝖟𝖚ӄ𝖎ֆʏռօք.Mee6reignite(_𝔏𝔞𝔟_.MIZUKI);
+    var session = ֆǟӄʊʀǟֆʏռօք.Mee6reignite(_𝔏𝔞𝔟_.SAKURA);
     ӄʀǟӄɨռʐ.loadAuthInfo(session);
   } catch (ℓαвєяяσя) {
     console.log(
@@ -106,34 +106,34 @@ async function 爪𝖎𝖟𝖚ӄ𝖎() {
   ӄʀǟӄɨռʐ.on(`connecting`, async () => {
     console.log(
       Kolor.bgYellowBright.black(
-        `⬡==========================⬡    🍁 爪𝖎𝖟𝖚ӄ𝖎™ 🍁    ⬡==========================⬡`
+        `⬡==========================⬡    🍁 ֆǟӄʊʀǟ™ 🍁    ⬡==========================⬡`
       )
     );
     console.log(
       Kolor.bgYellowBright.black(
-        `🍁INFO ⬰ Connecting to 🍁爪𝖎𝖟𝖚ӄ𝖎™ Whatsapp...🛸`
+        `🍁INFO ⬰ Connecting to 🍁ֆǟӄʊʀǟ™ Whatsapp...🛸`
       )
     );
   });
   `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
   ӄʀǟӄɨռʐ.on(`open`, async () => {
-    console.log(Kolor.bgYellowBright.black(`🍁INFO ⬰ 🍁爪𝖎𝖟𝖚ӄ𝖎™ Connected✔️`));
+    console.log(Kolor.bgYellowBright.black(`🍁INFO ⬰ 🍁ֆǟӄʊʀǟ™ Connected✔️`));
     console.log(
       Kolor.bgYellowBright.black(
-        `⬡==========================⬡    🍁 爪𝖎𝖟𝖚ӄ𝖎™ 🍁    ⬡==========================⬡`
+        `⬡==========================⬡    🍁 ֆǟӄʊʀǟ™ 🍁    ⬡==========================⬡`
       )
     );
     console.log(
       Kolor.bgGreenBright.black(`🍁INFO ⬰ 𝐋𝐢𝐧𝐤𝐢𝐧𝐠 𝐌𝐢𝐳𝐮𝐤𝐢 𝐖𝐢𝐭𝐡 𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞...✔️`)
     );
     try {
-      await 𝓜𝖎𝖟𝖚ӄ𝖎sql.authenticate();
-      await 𝓜𝖎𝖟𝖚ӄ𝖎sql.validate();
-      await 𝓜𝖎𝖟𝖚ӄ𝖎sql
+      await ֆǟӄʊʀǟsql.authenticate();
+      await ֆǟӄʊʀǟsql.validate();
+      await ֆǟӄʊʀǟsql
         .sync()
         .then(
           console.log(
-            Kolor.bgYellowBright.black(`🍁INFO ⬰ 🍁爪𝖎𝖟𝖚ӄ𝖎™ Connected✔️`)
+            Kolor.bgYellowBright.black(`🍁INFO ⬰ 🍁ֆǟӄʊʀǟ™ Connected✔️`)
           )
         );
     } catch (ℓαвєяяσя) {
@@ -144,14 +144,14 @@ async function 爪𝖎𝖟𝖚ӄ𝖎() {
     }
     console.log(
       Kolor.bgRedBright.black(`
-⬡==========================⬡    🍁 爪𝖎𝖟𝖚ӄ𝖎™ 🍁    ⬡==========================⬡
+⬡==========================⬡    🍁 ֆǟӄʊʀǟ™ 🍁    ⬡==========================⬡
 ███╗   ███╗██╗███████╗██╗   ██╗██╗  ██╗██╗
 ████╗ ████║██║╚══███╔╝██║   ██║██║ ██╔╝██║
 ██╔████╔██║██║  ███╔╝ ██║   ██║█████╔╝ ██║
 ██║╚██╔╝██║██║ ███╔╝  ██║   ██║██╔═██╗ ██║
 ██║ ╚═╝ ██║██║███████╗╚██████╔╝██║  ██╗██║
 ╚═╝     ╚═╝╚═╝╚══════╝ ╚═════╝ ╚═╝  ╚═╝╚═╝
-⬡==========================⬡    🍁 爪𝖎𝖟𝖚ӄ𝖎™ 🍁    ⬡==========================⬡`)
+⬡==========================⬡    🍁 ֆǟӄʊʀǟ™ 🍁    ⬡==========================⬡`)
     );
     ӄʀǟӄɨռʐ.sendMessage(
       ӄʀǟӄɨռʐ.user.jid,
@@ -175,7 +175,7 @@ async function 爪𝖎𝖟𝖚ӄ𝖎() {
         return await ӄʀǟӄɨռʐ
           .sendMessage(
             groupupdateID.id,
-            { url: `./Sakura☣️Reactor/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4` },
+            { url: `./Sakura☣️Reactor/ֆǟӄʊʀǟ™.mp4` },
             MessageType.video,
             {
               mimetype: `video/gif`,
@@ -193,7 +193,7 @@ async function 爪𝖎𝖟𝖚ӄ𝖎() {
         return await ӄʀǟӄɨռʐ
           .sendMessage(
             groupupdateID.id,
-            { url: `./Sakura☣️Reactor/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4` },
+            { url: `./Sakura☣️Reactor/ֆǟӄʊʀǟ™.mp4` },
             MessageType.video,
             {
               mimetype: `video/gif`,
@@ -213,7 +213,7 @@ async function 爪𝖎𝖟𝖚ӄ𝖎() {
         return await ӄʀǟӄɨռʐ
           .sendMessage(
             groupupdateID.id,
-            { url: `./Sakura☣️Reactor/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4` },
+            { url: `./Sakura☣️Reactor/ֆǟӄʊʀǟ™.mp4` },
             MessageType.video,
             {
               mimetype: `video/gif`,
@@ -239,7 +239,7 @@ ${update.desc}`,
         return await ӄʀǟӄɨռʐ
           .sendMessage(
             groupupdateID.id,
-            { url: `./Sakura☣️Reactor/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4` },
+            { url: `./Sakura☣️Reactor/ֆǟӄʊʀǟ™.mp4` },
             MessageType.video,
             {
               mimetype: `video/gif`,
@@ -258,7 +258,7 @@ ${update.desc}`,
         return await ӄʀǟӄɨռʐ
           .sendMessage(
             groupupdateID.id,
-            { url: `./Sakura☣️Reactor/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4` },
+            { url: `./Sakura☣️Reactor/ֆǟӄʊʀǟ™.mp4` },
             MessageType.video,
             {
               mimetype: `video/gif`,
@@ -288,7 +288,7 @@ ${update.desc}`,
       );
       const MemNum = update.participants[0];
       if (update.action == `add` && MemNum.includes(ӄʀǟӄɨռʐ.user.jid)) {
-        console.log(`⬡••••••••⬡    🍁 爪𝖎𝖟𝖚ӄ𝖎™ 🍁Added    ⬡••••••••⬡`);
+        console.log(`⬡••••••••⬡    🍁 ֆǟӄʊʀǟ™ 🍁Added    ⬡••••••••⬡`);
         const media = await ӄʀǟӄɨռʐ.prepareMessage(
           GroupID,
           { url: _𝔏𝔞𝔟_.MEE },
@@ -352,16 +352,16 @@ ${update.desc}`,
     const groupMetadata = sender.endsWith(`@g.us`)
       ? await ӄʀǟӄɨռʐ.groupMetadata(chat.key.remoteJid)
       : ``;
-    var 𝓜𝖎𝖟𝖚ӄ𝖎 = 𝓜𝖎𝖟𝖚ӄ𝖎ǟքք.resolve(chat, ӄʀǟӄɨռʐ, groupMetadata);
+    var ֆǟӄʊʀǟ = ֆǟӄʊʀǟǟքք.resolve(chat, ӄʀǟӄɨռʐ, groupMetadata);
     `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-    if (!𝓜𝖎𝖟𝖚ӄ𝖎.fromMe && 𝓜𝖎𝖟𝖚ӄ𝖎.isGroup) {
-      var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
+    if (!ֆǟӄʊʀǟ.fromMe && ֆǟӄʊʀǟ.isGroup) {
+      var ꜱᴇɴᴅᴇʀɪᴅ = ֆǟӄʊʀǟ.sender;
       var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
       const UsersSakura = require(`../Sakura🍃Goose/experience.js`);
       let xpAdd = Math.ceil(Math.random() * 10);
       `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
       try {
-        𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄʀǟӄɨռʐ.getProfilePicture(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
+        𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄʀǟӄɨռʐ.getProfilePicture(ֆǟӄʊʀǟ.sender);
       } catch {
         𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = `https://i.postimg.cc/6QmT53dR/Npp.png`;
       }
@@ -369,7 +369,7 @@ ${update.desc}`,
       try {
         await UsersSakura.findOne(
           {
-            did: 𝓜𝖎𝖟𝖚ӄ𝖎.sender,
+            did: ֆǟӄʊʀǟ.sender,
           },
           async (err, users) => {
             var randomMC = require("random-material-color");
@@ -378,7 +378,7 @@ ${update.desc}`,
             if (err) console.log(err);
             if (!users) {
               var newUsers = new UsersSakura({
-                did: 𝓜𝖎𝖟𝖚ӄ𝖎.sender,
+                did: ֆǟӄʊʀǟ.sender,
                 xp: xpAdd,
                 level: 0,
               });
@@ -446,11 +446,7 @@ ${update.desc}`,
                 ctx.fill();
                 ctx.font = "30px LobsterTwo-Bold";
                 ctx.fillStyle = "#000";
-                ctx.fillText(
-                  `${currentXP}XP |Lvl: ${currentLvl}`,
-                  250,
-                  162
-                );
+                ctx.fillText(`${currentXP}XP |Lvl: ${currentLvl}`, 250, 162);
                 ctx.closePath();
                 ctx.beginPath();
                 ctx.arc(125, 150, 100, 0, Math.PI * 2, true);
@@ -467,15 +463,15 @@ ${update.desc}`,
                   console.log("Saved!");
                   Economy.findOne(
                     {
-                      did: 𝓜𝖎𝖟𝖚ӄ𝖎.sender,
+                      did: ֆǟӄʊʀǟ.sender,
                     },
                     async (err, userEco) => {
                       console.log(userEco);
                       if (err) console.log(err);
                       if (!userEco) {
                         var newUser = new Economy({
-                          did: 𝓜𝖎𝖟𝖚ӄ𝖎.sender,
-                          serverID: 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                          did: ֆǟӄʊʀǟ.sender,
+                          serverID: ֆǟӄʊʀǟ.chatId,
                           money: 200,
                           daily: 0,
                           timeout: 86400000,
@@ -487,19 +483,19 @@ ${update.desc}`,
                         newUser
                           .save()
                           .catch((ℓαвєяяσя) =>
-                            ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
+                            ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
                           );
                         ӄʀǟӄɨռʐ.sendMessage(
-                          𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                          ֆǟӄʊʀǟ.chatId,
                           fs.readFileSync(`${ꜱᴇɴᴅᴇʀeceived.toString()}.jpeg`),
                           MessageType.image,
                           {
                             mimetype: Mimetype.jpeg,
                             quoted: chat,
-                            contextInfo: { mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender] },
-                            caption: `✨𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬 @${𝓜𝖎𝖟𝖚ӄ𝖎.sender.substring(
+                            contextInfo: { mentionedJid: [ֆǟӄʊʀǟ.sender] },
+                            caption: `✨𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬 @${ֆǟӄʊʀǟ.sender.substring(
                               0,
-                              𝓜𝖎𝖟𝖚ӄ𝖎.sender.length - 15
+                              ֆǟӄʊʀǟ.sender.length - 15
                             )}, 𝐘𝐨𝐮 𝐇𝐚𝐯𝐞 𝐋𝐞𝐯𝐞𝐥𝐞𝐝 𝐔𝐏!
 
 ╔════◇ 📜𝐑𝐚𝐧𝐤 𝐂𝐚𝐫𝐝
@@ -525,19 +521,19 @@ ${update.desc}`,
                         userEco
                           .save()
                           .catch((ℓαвєяяσя) =>
-                            ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
+                            ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
                           );
                         ӄʀǟӄɨռʐ.sendMessage(
-                          𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                          ֆǟӄʊʀǟ.chatId,
                           fs.readFileSync(`${ꜱᴇɴᴅᴇʀeceived.toString()}.jpeg`),
                           MessageType.image,
                           {
                             mimetype: Mimetype.jpeg,
                             quoted: chat,
-                            contextInfo: { mentionedJid: [𝓜𝖎𝖟𝖚ӄ𝖎.sender] },
-                            caption: `✨𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬 @${𝓜𝖎𝖟𝖚ӄ𝖎.sender.substring(
+                            contextInfo: { mentionedJid: [ֆǟӄʊʀǟ.sender] },
+                            caption: `✨𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬 @${ֆǟӄʊʀǟ.sender.substring(
                               0,
-                              𝓜𝖎𝖟𝖚ӄ𝖎.sender.length - 15
+                              ֆǟӄʊʀǟ.sender.length - 15
                             )}, 𝐘𝐨𝐮 𝐇𝐚𝐯𝐞 𝐋𝐞𝐯𝐞𝐥𝐞𝐝 𝐔𝐏!
 
 ╔════◇ 📜𝐑𝐚𝐧𝐤 𝐂𝐚𝐫𝐝
@@ -571,27 +567,27 @@ ${update.desc}`,
     }
     `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
     if (
-      𝓜𝖎𝖟𝖚ӄ𝖎.isGroup &&
-      !𝓜𝖎𝖟𝖚ӄ𝖎.fromMe &&
-      !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderGroupAdmin &&
-      𝓜𝖎𝖟𝖚ӄ𝖎.body.includes(`https://`)
+      ֆǟӄʊʀǟ.isGroup &&
+      !ֆǟӄʊʀǟ.fromMe &&
+      !ֆǟӄʊʀǟ.isSenderGroupAdmin &&
+      ֆǟӄʊʀǟ.body.includes(`https://`)
     ) {
       LinkList.findOne(
         {
-          serverID: 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+          serverID: ֆǟӄʊʀǟ.chatId,
         },
         async (err, server) => {
           if (err) console.log(err);
           if (!server) return;
           const REMOVE = chat.key.fromMe
             ? ӄʀǟӄɨռʐ.user.jid
-            : 𝓜𝖎𝖟𝖚ӄ𝖎.isGroup
+            : ֆǟӄʊʀǟ.isGroup
             ? chat.participant
             : chat.key.remoteJid;
           await Sakura_Buttons.MIB(
             ӄʀǟӄɨռʐ,
             chat,
-            𝓜𝖎𝖟𝖚ӄ𝖎,
+            ֆǟӄʊʀǟ,
             `
 ╔═══════  📍𝐀𝐧𝐭𝐢𝐥𝐢𝐧𝐤
 ║⚠️ You Sent Some Type Of link.
@@ -602,28 +598,28 @@ ${update.desc}`,
           setTimeout(async (error) => {
             if (error) console.log(error);
             await ӄʀǟӄɨռʐ
-              .groupRemove(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, [REMOVE])
-              .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
+              .groupRemove(ֆǟӄʊʀǟ.chatId, [REMOVE])
+              .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
           }, 6000);
           return;
         }
       );
     }
     `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-    if (𝓜𝖎𝖟𝖚ӄ𝖎.isCmd) {
-      var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
+    if (ֆǟӄʊʀǟ.isCmd) {
+      var ꜱᴇɴᴅᴇʀɪᴅ = ֆǟӄʊʀǟ.sender;
       var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
       var CheckBans = await BanList.getBanlistUser(
-        𝓜𝖎𝖟𝖚ӄ𝖎.sender,
-        𝓜𝖎𝖟𝖚ӄ𝖎.chatId
+        ֆǟӄʊʀǟ.sender,
+        ֆǟӄʊʀǟ.chatId
       );
-      if (CheckBans === true && !𝓜𝖎𝖟𝖚ӄ𝖎.fromMe) return;
+      if (CheckBans === true && !ֆǟӄʊʀǟ.fromMe) return;
       `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
       const gMetadata = await ӄʀǟӄɨռʐ.groupMetadata(`120363039223842047@g.us`);
-      𝓜𝖎𝖟𝖚ӄ𝖎.gMembers = gMetadata.participants;
+      ֆǟӄʊʀǟ.gMembers = gMetadata.participants;
       let mem = [];
-      for (var i = 0; i < 𝓜𝖎𝖟𝖚ӄ𝖎.gMembers.length; i++) {
-        mem[i] = 𝓜𝖎𝖟𝖚ӄ𝖎.gMembers[i].jid;
+      for (var i = 0; i < ֆǟӄʊʀǟ.gMembers.length; i++) {
+        mem[i] = ֆǟӄʊʀǟ.gMembers[i].jid;
       }
       fs.writeFile(
         `./Sakura🛰️Server/memobject.json`,
@@ -639,9 +635,9 @@ ${update.desc}`,
         `utf8`,
         async (ℓαвєяяσя, memjson) => {
           if (ℓαвєяяσя) return console.log(ℓαвєяяσя);
-          if (!memjson.includes(𝓜𝖎𝖟𝖚ӄ𝖎.sender)) {
+          if (!memjson.includes(ֆǟӄʊʀǟ.sender)) {
             return ӄʀǟӄɨռʐ.sendMessage(
-              𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+              ֆǟӄʊʀǟ.chatId,
               `╔═══════ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
 ║♨️ You Need To Be In Sakura GC.
 ║🚨 So That Your Account Can Be Verified and Monitored For Anti-Spams & Auto-BugReports!.
@@ -658,17 +654,17 @@ ${update.desc}`,
           const jsoncool = JSON.parse(
             fs.readFileSync(`./Sakura🛰️Server/Coolist.json`)
           );
-          if (jsoncool.includes(𝓜𝖎𝖟𝖚ӄ𝖎.sender)) {
-            if (𝓜𝖎𝖟𝖚ӄ𝖎.fromMe) {
+          if (jsoncool.includes(ֆǟӄʊʀǟ.sender)) {
+            if (ֆǟӄʊʀǟ.fromMe) {
               return ӄʀǟӄɨռʐ.sendMessage(
-                𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                ֆǟӄʊʀǟ.chatId,
                 `*Sir Please Wait For 15sec!*`,
                 MessageType.text,
                 { quoted: chat }
               );
             } else {
               return ӄʀǟӄɨռʐ.sendMessage(
-                𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                ֆǟӄʊʀǟ.chatId,
                 `*🚏CoolDown:* Wait For 15sec!`,
                 MessageType.text,
                 { quoted: chat }
@@ -678,15 +674,15 @@ ${update.desc}`,
           `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
           console.log(
             Kolor.bgRedBright.black(
-              `⬡============⬡🍁爪𝖎𝖟𝖚ӄ𝖎™ Verified File: ` +
-                𝓜𝖎𝖟𝖚ӄ𝖎.commandName +
+              `⬡============⬡🍁ֆǟӄʊʀǟ™ Verified File: ` +
+                ֆǟӄʊʀǟ.commandName +
                 `✔️⬡============⬡`
             )
           );
           console.log(chat);
           console.log(
             Kolor.bgRedBright.black(
-              `⬡==========================⬡    🍁 爪𝖎𝖟𝖚ӄ𝖎™ 🍁    ⬡==========================⬡`
+              `⬡==========================⬡    🍁 ֆǟӄʊʀǟ™ 🍁    ⬡==========================⬡`
             )
           );
           `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
@@ -728,22 +724,22 @@ ${update.desc}`,
               });
           }
           `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-          var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
+          var ꜱᴇɴᴅᴇʀɪᴅ = ֆǟӄʊʀǟ.sender;
           var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
-          const ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ = ꜱɪᴛʀᴀᴘ.get(𝓜𝖎𝖟𝖚ӄ𝖎.commandName);
-          var Needs = 𝓜𝖎𝖟𝖚ӄ𝖎.body.trim().split(/\s+/).slice(1);
+          const ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ = ꜱɪᴛʀᴀᴘ.get(ֆǟӄʊʀǟ.commandName);
+          var Needs = ֆǟӄʊʀǟ.body.trim().split(/\s+/).slice(1);
           if (!ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ) {
             return Sakura_Buttons.MTB(
               ӄʀǟӄɨռʐ,
               chat,
-              𝓜𝖎𝖟𝖚ӄ𝖎,
+              ֆǟӄʊʀǟ,
               `*❌Wrong Command Executed!*\n_Read: ${ᴋᴇɪ}help_`
             );
           } else {
             return ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ.handle(
               ӄʀǟӄɨռʐ,
               chat,
-              𝓜𝖎𝖟𝖚ӄ𝖎,
+              ֆǟӄʊʀǟ,
               Needs,
               ꜱɪᴛʀᴀᴘ,
               Clock,
@@ -757,7 +753,7 @@ ${update.desc}`,
     `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
   });
 }
-module.exports = { 爪𝖎𝖟𝖚ӄ𝖎 };
+module.exports = { ֆǟӄʊʀǟ };
 `⬡🍁⬡`;
 `⬡🍁⬡`;
 `⬡🍁⬡===========================================================================⬡  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;

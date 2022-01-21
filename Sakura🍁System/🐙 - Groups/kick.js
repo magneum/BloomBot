@@ -19,50 +19,50 @@ var newScpt = scriptName.slice(0, -3).toLowerCase();
 module.exports = {
   name: newScpt,
   𝓜𝓮𝓮6ʍօʀɛ: `${ᴋᴇɪ}kick (tag) or (reply to person's text)`,
-  async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
+  async handle(ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
     try {
-      var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
+      var ꜱᴇɴᴅᴇʀɪᴅ = ֆǟӄʊʀǟ.sender;
       var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
-      const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
+      const defaultnm = ֆǟӄʊʀǟ.commandName;
       const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
       `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
       const jsoncool = await JSON.parse(
         fs.readFileSync(`./Sakura🛰️Server/Coolist.json`)
       );
-      await jsoncool.push(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
+      await jsoncool.push(ֆǟӄʊʀǟ.sender);
       await fs.writeFileSync(
         `./Sakura🛰️Server/Coolist.json`,
         JSON.stringify(jsoncool)
       );
       setTimeout(async (error) => {
         if (error) console.log(error);
-        await jsoncool.splice(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
+        await jsoncool.splice(ֆǟӄʊʀǟ.sender);
         await fs.writeFileSync(
           `./Sakura🛰️Server/Coolist.json`,
           JSON.stringify(jsoncool)
         );
       }, 15000);
       `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-      if (𝓜𝖎𝖟𝖚ӄ𝖎.isGroup && !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderGroupAdmin) {
+      if (ֆǟӄʊʀǟ.isGroup && !ֆǟӄʊʀǟ.isSenderGroupAdmin) {
         try {
           return Sakura_Buttons.MIB(
             ӄʀǟӄɨռʐ,
             chat,
-            𝓜𝖎𝖟𝖚ӄ𝖎,
+            ֆǟӄʊʀǟ,
             `*❌ Admins Only | You Are Not Allowed! ❌*`,
             _𝔏𝔞𝔟_.ɴᴏᴛᴀᴅᴍɪɴ
           );
         } catch (ℓαвєяяσя) {
-          ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
+          ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
         }
       }
 
-      if (𝓜𝖎𝖟𝖚ӄ𝖎.isGroup && !𝓜𝖎𝖟𝖚ӄ𝖎.isBotGroupAdmin) {
+      if (ֆǟӄʊʀǟ.isGroup && !ֆǟӄʊʀǟ.isBotGroupAdmin) {
         try {
           return Sakura_Buttons.MTB(
             ӄʀǟӄɨռʐ,
             chat,
-            𝓜𝖎𝖟𝖚ӄ𝖎,
+            ֆǟӄʊʀǟ,
                       `@${ꜱᴇɴᴅᴇʀeceived}, 
 
 ❌ How Can I Use Admin Only Commands If i am not admin?
@@ -70,16 +70,16 @@ module.exports = {
             _𝔏𝔞𝔟_.ɴᴏᴛᴍᴇᴀᴅᴍɪɴ
           );
         } catch (ℓαвєяяσя) {
-          ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
+          ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
         }
       }
 
-      if (!𝓜𝖎𝖟𝖚ӄ𝖎.isGroup) {
+      if (!ֆǟӄʊʀǟ.isGroup) {
         try {
           return Sakura_Buttons.MTB(
             ӄʀǟӄɨռʐ,
             chat,
-            𝓜𝖎𝖟𝖚ӄ𝖎,
+            ֆǟӄʊʀǟ,
             `@${ꜱᴇɴᴅᴇʀeceived}, 
 
 ────★ 🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧   
@@ -88,40 +88,40 @@ module.exports = {
 `
           );
         } catch (ℓαвєяяσя) {
-          ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
+          ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
         }
       }
 
-      let owner = 𝓜𝖎𝖟𝖚ӄ𝖎.chatId.split(`-`)[0];
-      if (𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
+      let owner = ֆǟӄʊʀǟ.chatId.split(`-`)[0];
+      if (ֆǟӄʊʀǟ.isReply) {
         let PersonToRemove =
           chat.message.extendedTextMessage.contextInfo.participant;
         if (PersonToRemove === owner + `@s.whatsapp.net`) {
           return Sakura_Static.MGS(
             ӄʀǟӄɨռʐ,
             chat,
-            𝓜𝖎𝖟𝖚ӄ𝖎,
+            ֆǟӄʊʀǟ,
             `@${ꜱᴇɴᴅᴇʀeceived},
 
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 ${owner} ɪꜱ ᴛʜᴇ ᴏᴡɴᴇʀ ᴏꜰ ᴛʜᴇ ɢʀᴏᴜᴘ*`,
-            `./Sakura☣️Reactor/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
+            `./Sakura☣️Reactor/ֆǟӄʊʀǟ™.mp4`
           );
         }
 
-        if (PersonToRemove === 𝓜𝖎𝖟𝖚ӄ𝖎.owner) {
+        if (PersonToRemove === ֆǟӄʊʀǟ.owner) {
           return Sakura_Static.MGS(
             ӄʀǟӄɨռʐ,
             chat,
-            𝓜𝖎𝖟𝖚ӄ𝖎,
+            ֆǟӄʊʀǟ,
             `@${ꜱᴇɴᴅᴇʀeceived},
 
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 *ʀᴇQᴜᴇꜱᴛ ʀᴇᴊᴇᴄᴛᴇᴅ.* 😤
 ᴡʜʏ ᴡᴏᴜʟᴅ ʏᴏᴜ ᴜꜱᴇ ᴍʏ ᴘᴏᴡᴇʀꜱ ᴛᴏ ᴋɪᴄᴋ ᴍʏꜱᴇʟꜰ ꜰʀᴏᴍ ᴛʜᴇ ɢʀᴏᴜᴘ?!`,
-            `./Sakura☣️Reactor/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
+            `./Sakura☣️Reactor/ֆǟӄʊʀǟ™.mp4`
           );
         }
 
@@ -143,40 +143,40 @@ ${owner} ɪꜱ ᴛʜᴇ ᴏᴡɴᴇʀ ᴏꜰ ᴛʜᴇ ɢʀᴏᴜᴘ*`,
           return Sakura_Static.MGS(
             ӄʀǟӄɨռʐ,
             chat,
-            𝓜𝖎𝖟𝖚ӄ𝖎,
+            ֆǟӄʊʀǟ,
             `@${ꜱᴇɴᴅᴇʀeceived},
 
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 *ᴘᴇʀꜱᴏɴ ɪꜱ ɴᴏᴛ ɪɴ ᴛʜᴇ ɢʀᴏᴜᴘ*`,
-            `./Sakura☣️Reactor/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
+            `./Sakura☣️Reactor/ֆǟӄʊʀǟ™.mp4`
           );
         }
 
         if (PersonToRemove) {
-          if (𝓜𝖎𝖟𝖚ӄ𝖎.isGroup && 𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
+          if (ֆǟӄʊʀǟ.isGroup && ֆǟӄʊʀǟ.isReply) {
             var Receiver =
               chat.message.extendedTextMessage.contextInfo.participant;
             var personreceived = Receiver.substring(0, Receiver.length - 15);
             Sakura_Buttons.MTB(
               ӄʀǟӄɨռʐ,
               chat,
-              𝓜𝖎𝖟𝖚ӄ𝖎,
+              ֆǟӄʊʀǟ,
               `@${ꜱᴇɴᴅᴇʀeceived} ᴋɪᴄᴋᴇᴅ @${personreceived} ᴏᴜᴛᴛᴀ ᴛʜᴇ ɢʀᴏᴜᴘ!`
             );
             return await ӄʀǟӄɨռʐ
-              .groupRemove(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, [PersonToRemove])
-              .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
+              .groupRemove(ֆǟӄʊʀǟ.chatId, [PersonToRemove])
+              .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
           } else {
             Sakura_Buttons.MTB(
               ӄʀǟӄɨռʐ,
               chat,
-              𝓜𝖎𝖟𝖚ӄ𝖎,
+              ֆǟӄʊʀǟ,
               `@${ꜱᴇɴᴅᴇʀeceived} ᴋɪᴄᴋᴇᴅ ᴛʜᴀᴛ ᴘᴇʀꜱᴏɴ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ!`
             );
             return await ӄʀǟӄɨռʐ
-              .groupRemove(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, [PersonToRemove])
-              .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
+              .groupRemove(ֆǟӄʊʀǟ.chatId, [PersonToRemove])
+              .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
           }
         }
         return;
@@ -186,13 +186,13 @@ ${owner} ɪꜱ ᴛʜᴇ ᴏᴡɴᴇʀ ᴏꜰ ᴛʜᴇ ɢʀᴏᴜᴘ*`,
         return Sakura_Static.MGS(
           ӄʀǟӄɨռʐ,
           chat,
-          𝓜𝖎𝖟𝖚ӄ𝖎,
+          ֆǟӄʊʀǟ,
           `@${ꜱᴇɴᴅᴇʀeceived},
 
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 Reply to the person you want to kick or tag them.\n\nFor instance,  *${ᴋᴇɪ}kick @<person-to-kick>*  or reply using  *${ᴋᴇɪ}kick*${ᴋᴇɪ}`,
-          `./Sakura☣️Reactor/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
+          `./Sakura☣️Reactor/ֆǟӄʊʀǟ™.mp4`
         );
       }
 
@@ -202,54 +202,54 @@ Reply to the person you want to kick or tag them.\n\nFor instance,  *${ᴋᴇɪ}
           return Sakura_Static.MGS(
             ӄʀǟӄɨռʐ,
             chat,
-            𝓜𝖎𝖟𝖚ӄ𝖎,
+            ֆǟӄʊʀǟ,
             `@${ꜱᴇɴᴅᴇʀeceived},
 
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 Reply to the person you want to kick or tag them.\n\nFor instance,  *${ᴋᴇɪ}kick @<person-to-kick>*  or reply using  *${ᴋᴇɪ}kick*${ᴋᴇɪ}`,
-            `./Sakura☣️Reactor/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
+            `./Sakura☣️Reactor/ֆǟӄʊʀǟ™.mp4`
           );
         }
 
-        if (number + `@s.whatsapp.net` === 𝓜𝖎𝖟𝖚ӄ𝖎.owner) {
+        if (number + `@s.whatsapp.net` === ֆǟӄʊʀǟ.owner) {
           return Sakura_Static.MGS(
             ӄʀǟӄɨռʐ,
             chat,
-            𝓜𝖎𝖟𝖚ӄ𝖎,
+            ֆǟӄʊʀǟ,
             `@${ꜱᴇɴᴅᴇʀeceived},
 
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 *ʀᴇQᴜᴇꜱᴛ ʀᴇᴊᴇᴄᴛᴇᴅ.* 😤
 ᴡʜʏ ᴡᴏᴜʟᴅ ʏᴏᴜ ᴜꜱᴇ ᴍʏ ᴘᴏᴡᴇʀꜱ ᴛᴏ ᴋɪᴄᴋ ᴍʏꜱᴇʟꜰ ꜰʀᴏᴍ ᴛʜᴇ ɢʀᴏᴜᴘ?!`,
-            `./Sakura☣️Reactor/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
+            `./Sakura☣️Reactor/ֆǟӄʊʀǟ™.mp4`
           );
         }
 
         if (!(number === owner)) {
-          if (𝓜𝖎𝖟𝖚ӄ𝖎.isGroup && 𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
+          if (ֆǟӄʊʀǟ.isGroup && ֆǟӄʊʀǟ.isReply) {
             var Receiver =
               chat.message.extendedTextMessage.contextInfo.participant;
             var personreceived = Receiver.substring(0, Receiver.length - 15);
             Sakura_Buttons.MTB(
               ӄʀǟӄɨռʐ,
               chat,
-              𝓜𝖎𝖟𝖚ӄ𝖎,
+              ֆǟӄʊʀǟ,
               `@${ꜱᴇɴᴅᴇʀeceived} ᴋɪᴄᴋᴇᴅ @${personreceived} ᴏᴜᴛᴛᴀ ᴛʜᴇ ɢʀᴏᴜᴘ!`
             );
 
-            return await ӄʀǟӄɨռʐ.groupRemove(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, [
+            return await ӄʀǟӄɨռʐ.groupRemove(ֆǟӄʊʀǟ.chatId, [
               number + `@s.whatsapp.net`,
             ]);
           } else {
             Sakura_Buttons.MTB(
               ӄʀǟӄɨռʐ,
               chat,
-              𝓜𝖎𝖟𝖚ӄ𝖎,
+              ֆǟӄʊʀǟ,
               `@${ꜱᴇɴᴅᴇʀeceived} ᴋɪᴄᴋᴇᴅ ᴛʜᴀᴛ ᴘᴇʀꜱᴏɴ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ!`
             );
-            return await ӄʀǟӄɨռʐ.groupRemove(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, [
+            return await ӄʀǟӄɨռʐ.groupRemove(ֆǟӄʊʀǟ.chatId, [
               number + `@s.whatsapp.net`,
             ]);
           }
@@ -257,13 +257,13 @@ Reply to the person you want to kick or tag them.\n\nFor instance,  *${ᴋᴇɪ}
           return Sakura_Static.MGS(
             ӄʀǟӄɨռʐ,
             chat,
-            𝓜𝖎𝖟𝖚ӄ𝖎,
+            ֆǟӄʊʀǟ,
             `@${ꜱᴇɴᴅᴇʀeceived},
 
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 ${owner} ɪꜱ ᴛʜᴇ ᴏᴡɴᴇʀ ᴏꜰ ᴛʜᴇ ɢʀᴏᴜᴘ*`,
-            `./Sakura☣️Reactor/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
+            `./Sakura☣️Reactor/ֆǟӄʊʀǟ™.mp4`
           );
         }
       }
@@ -271,16 +271,16 @@ ${owner} ɪꜱ ᴛʜᴇ ᴏᴡɴᴇʀ ᴏꜰ ᴛʜᴇ ɢʀᴏᴜᴘ*`,
       return Sakura_Static.MGS(
         ӄʀǟӄɨռʐ,
         chat,
-        𝓜𝖎𝖟𝖚ӄ𝖎,
+        ֆǟӄʊʀǟ,
         `@${ꜱᴇɴᴅᴇʀeceived},
 
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 Reply to the person you want to kick or tag them.\n\nFor instance,  *${ᴋᴇɪ}kick @<person-to-kick>*  or reply using  *${ᴋᴇɪ}kick*${ᴋᴇɪ}`,
-        `./Sakura☣️Reactor/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
+        `./Sakura☣️Reactor/ֆǟӄʊʀǟ™.mp4`
       );
     } catch (ℓαвєяяσя) {
-      ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
+      ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
       console.log(ℓαвєяяσя);
     }
   },

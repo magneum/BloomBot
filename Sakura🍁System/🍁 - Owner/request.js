@@ -19,24 +19,24 @@ var newScpt = scriptName.slice(0, -3).toLowerCase();
 `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
 module.exports = {
   name: newScpt,
-  async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
+  async handle(ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
     try {
-      var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
+      var ꜱᴇɴᴅᴇʀɪᴅ = ֆǟӄʊʀǟ.sender;
       var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
-      const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
+      const defaultnm = ֆǟӄʊʀǟ.commandName;
       const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
       `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
       const jsoncool = await JSON.parse(
         fs.readFileSync(`./Sakura🛰️Server/Coolist.json`)
       );
-      await jsoncool.push(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
+      await jsoncool.push(ֆǟӄʊʀǟ.sender);
       await fs.writeFileSync(
         `./Sakura🛰️Server/Coolist.json`,
         JSON.stringify(jsoncool)
       );
       setTimeout(async (error) => {
         if (error) console.log(error);
-        await jsoncool.splice(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
+        await jsoncool.splice(ֆǟӄʊʀǟ.sender);
         await fs.writeFileSync(
           `./Sakura🛰️Server/Coolist.json`,
           JSON.stringify(jsoncool)
@@ -47,7 +47,7 @@ module.exports = {
         return Sakura_Buttons.MTB(
           ӄʀǟӄɨռʐ,
           chat,
-          𝓜𝖎𝖟𝖚ӄ𝖎,
+          ֆǟӄʊʀǟ,
           `@${ꜱᴇɴᴅᴇʀeceived},
 
 ╔════◇❓ 𝐇𝐨𝐰 𝐓𝐨 𝐆𝐞𝐭 𝐌𝐢𝐳𝐮𝐤𝐢?
@@ -59,13 +59,13 @@ _ɪꜰ ʏᴏᴜ ᴅᴏ ɴᴏᴛ ꜰᴏʟʟᴏᴡ/ᴜɴᴅᴇʀꜱᴛᴀɴᴅ ᴛ
         );
       }
       if (
-        !𝓜𝖎𝖟𝖚ӄ𝖎.body.includes(_𝔏𝔞𝔟_.HASH) &&
-        !𝓜𝖎𝖟𝖚ӄ𝖎.body.includes(`https://chat.whatsapp`)
+        !ֆǟӄʊʀǟ.body.includes(_𝔏𝔞𝔟_.HASH) &&
+        !ֆǟӄʊʀǟ.body.includes(`https://chat.whatsapp`)
       ) {
         return Sakura_Buttons.MTB(
           ӄʀǟӄɨռʐ,
           chat,
-          𝓜𝖎𝖟𝖚ӄ𝖎,
+          ֆǟӄʊʀǟ,
           `@${ꜱᴇɴᴅᴇʀeceived},
 
 ╔════◇❓ 𝐇𝐨𝐰 𝐓𝐨 𝐆𝐞𝐭 𝐌𝐢𝐳𝐮𝐤𝐢?
@@ -88,7 +88,7 @@ _ɪꜰ ʏᴏᴜ ᴅᴏ ɴᴏᴛ ꜰᴏʟʟᴏᴡ/ᴜɴᴅᴇʀꜱᴛᴀɴᴅ ᴛ
             `\n` +
             `*ReqBy:* @${ꜱᴇɴᴅᴇʀeceived}` +
             `\n` +
-            `*ChatID:* ${𝓜𝖎𝖟𝖚ӄ𝖎.chatId}`
+            `*ChatID:* ${ֆǟӄʊʀǟ.chatId}`
         )
       );
       qrcode.make();
@@ -103,7 +103,7 @@ _ɪꜰ ʏᴏᴜ ᴅᴏ ɴᴏᴛ ꜰᴏʟʟᴏᴡ/ᴜɴᴅᴇʀꜱᴛᴀɴᴅ ᴛ
             return Sakura_Buttons.MTB(
               ӄʀǟӄɨռʐ,
               chat,
-              𝓜𝖎𝖟𝖚ӄ𝖎,
+              ֆǟӄʊʀǟ,
               `@${ꜱᴇɴᴅᴇʀeceived},
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
@@ -117,7 +117,7 @@ _ɪꜰ ʏᴏᴜ ᴅᴏ ɴᴏᴛ ꜰᴏʟʟᴏᴡ/ᴜɴᴅᴇʀꜱᴛᴀɴᴅ ᴛ
       await Sakura_Buttons.MIB(
         ӄʀǟӄɨռʐ,
         chat,
-        𝓜𝖎𝖟𝖚ӄ𝖎,
+        ֆǟӄʊʀǟ,
         `@${ꜱᴇɴᴅᴇʀeceived},
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
@@ -133,7 +133,7 @@ _ɪꜰ ʏᴏᴜ ᴅᴏ ɴᴏᴛ ꜰᴏʟʟᴏᴡ/ᴜɴᴅᴇʀꜱᴛᴀɴᴅ ᴛ
         MessageType.text
       );
     } catch (ℓαвєяяσя) {
-      ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
+      ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
       console.log(ℓαвєяяσя);
     }
   },

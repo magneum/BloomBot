@@ -29,25 +29,25 @@ module.exports = {
 
 🔎𝐒𝐞𝐚𝐫𝐜𝐡 𝐘𝐨𝐮𝐓𝐮𝐛𝐞? _${ᴋᴇɪ}ytsearch_
 🔸𝐔𝐬𝐢𝐧𝐠 𝐒𝐨𝐧𝐠 𝐍𝐚𝐦𝐞? _${ᴋᴇɪ}watch_ *or* _${ᴋᴇɪ}stream_`,
-  async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
+  async handle(ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
     try {
-      var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
+      var ꜱᴇɴᴅᴇʀɪᴅ = ֆǟӄʊʀǟ.sender;
       var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
-      const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
+      const defaultnm = ֆǟӄʊʀǟ.commandName;
       const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
       `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
       const Bagde = require("../../Sakura🍃Goose/Badge");
       const ms = require("parse-ms");
       Bagde.findOne(
         {
-          ID: 𝓜𝖎𝖟𝖚ӄ𝖎.sender,
+          ID: ֆǟӄʊʀǟ.sender,
         },
         async (err, userBadge) => {
           // return userBadge.delete();
           if (err) return console.log(err);
           if (!userBadge) {
             var newUser = new Bagde({
-              ID: 𝓜𝖎𝖟𝖚ӄ𝖎.sender,
+              ID: ֆǟӄʊʀǟ.sender,
               Badge: "🧵ʙᴀꜱɪᴄ-10ᴄᴏᴍᴍᴀɴᴅꜱ",
               value: "True",
               Limits: 10,
@@ -91,14 +91,14 @@ module.exports = {
           const jsoncool = await JSON.parse(
             fs.readFileSync(`./Sakura🛰️Server/Coolist.json`)
           );
-          await jsoncool.push(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
+          await jsoncool.push(ֆǟӄʊʀǟ.sender);
           fs.writeFileSync(
             `./Sakura🛰️Server/Coolist.json`,
             JSON.stringify(jsoncool)
           );
           setTimeout((ℓαвєяяσя) => {
             if (ℓαвєяяσя) return console.log(ℓαвєяяσя);
-            jsoncool.splice(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
+            jsoncool.splice(ֆǟӄʊʀǟ.sender);
             fs.writeFileSync(
               `./Sakura🛰️Server/Coolist.json`,
               JSON.stringify(jsoncool)
@@ -106,7 +106,7 @@ module.exports = {
           }, 15000);
           console.log(userBadge);
           `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-          if (!𝓜𝖎𝖟𝖚ӄ𝖎.fromMe && userBadge.value === "False") {
+          if (!ֆǟӄʊʀǟ.fromMe && userBadge.value === "False") {
             let time = ms(
               userBadge.PermanentLimitTime -
                 (Date.now() - userBadge.CurrentLimitTime)
@@ -114,7 +114,7 @@ module.exports = {
             return Sakura_Buttons.MTB(
               ӄʀǟӄɨռʐ,
               chat,
-              𝓜𝖎𝖟𝖚ӄ𝖎,
+              ֆǟӄʊʀǟ,
               `💡𝐓𝐢𝐩: _Buy Higher Badges Using ${ᴋᴇɪ}shop_
 
 ╔═══════❗ 𝐈𝐦𝐩𝐨𝐫𝐭𝐚𝐧𝐭
@@ -125,31 +125,31 @@ module.exports = {
           }
           `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
           if (Needs.length === 0) {
-            var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(𝓜𝖎𝖟𝖚ӄ𝖎.commandName);
+            var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(ֆǟӄʊʀǟ.commandName);
             var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
               𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ === undefined ? `Null` : 𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ;
             const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../Sakura🛰️Server/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
             return ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
               ӄʀǟӄɨռʐ,
               chat,
-              𝓜𝖎𝖟𝖚ӄ𝖎,
+              ֆǟӄʊʀǟ,
               ꜱᴇɴᴅᴇʀɪᴅ,
               ꜱᴇɴᴅᴇʀeceived,
-              𝓜𝖎𝖟𝖚ӄ𝖎.commandName,
+              ֆǟӄʊʀǟ.commandName,
               ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
             );
           } else if (!RegexYouTube.test(Needs[0])) {
-            var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(𝓜𝖎𝖟𝖚ӄ𝖎.commandName);
+            var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(ֆǟӄʊʀǟ.commandName);
             var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
               𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ === undefined ? `Null` : 𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ;
             const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../Sakura🛰️Server/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
             return ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
               ӄʀǟӄɨռʐ,
               chat,
-              𝓜𝖎𝖟𝖚ӄ𝖎,
+              ֆǟӄʊʀǟ,
               ꜱᴇɴᴅᴇʀɪᴅ,
               ꜱᴇɴᴅᴇʀeceived,
-              𝓜𝖎𝖟𝖚ӄ𝖎.commandName,
+              ֆǟӄʊʀǟ.commandName,
               ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
             );
           } else {
@@ -177,7 +177,7 @@ module.exports = {
                   mime = Mimetype.mp4Audio;
                 }
                 await ӄʀǟӄɨռʐ
-                  .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, media, type, {
+                  .sendMessage(ֆǟӄʊʀǟ.chatId, media, type, {
                     quoted: chat,
                     contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
                     mimetype: mime,
@@ -192,7 +192,7 @@ module.exports = {
                 return Sakura_Buttons.MIB(
                   ӄʀǟӄɨռʐ,
                   chat,
-                  𝓜𝖎𝖟𝖚ӄ𝖎,
+                  ֆǟӄʊʀǟ,
                   `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚, @${ꜱᴇɴᴅᴇʀeceived}, 📺𝐕𝐢𝐝𝐞𝐨
 𝗣𝗹𝗲𝗮𝘀𝗲 𝗖𝗵𝗼𝗼𝘀𝗲 𝗙𝗶𝗹𝗲 𝗦𝗺𝗮𝗹𝗹𝗲𝗿 𝗧𝗵𝗲𝗻 𝟯𝟬𝗺𝗶𝗻𝘂𝘁𝗲𝘀!
 
@@ -229,7 +229,7 @@ module.exports = {
                   } catch (ℓαвєяяσя) {
                     console.log(ℓαвєяяσя);
                     ӄʀǟӄɨռʐ.sendMessage(
-                      𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                      ֆǟӄʊʀǟ.chatId,
                       `*No Song Found... Try Different Search Terms!*
 
 ────★𝙏𝙧𝙮 𝙊𝙩𝙝𝙚𝙧 𝘾𝙤𝙢𝙢𝙖𝙣𝙙𝙨:
@@ -251,7 +251,7 @@ ${ᴋᴇɪ}ytvideo (video link)
         }
       );
     } catch (ℓαвєяяσя) {
-      ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
+      ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
       console.log(ℓαвєяяσя);
     }
   },

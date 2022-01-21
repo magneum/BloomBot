@@ -2,7 +2,7 @@ import platform
 import psutil
 import os
 my_system = platform.uname()
-print('⬡==========================⬡    🍁 爪𝖎𝖟𝖚ӄ𝖎™ 🍁    ⬡==========================⬡')
+print('⬡==========================⬡    🍁 ֆǟӄʊʀǟ™ 🍁    ⬡==========================⬡')
 # print(f'🍁𝐒𝐲𝐬𝐭𝐞𝐦: {my_system.system}')
 # print(f'🍁𝐍𝐨𝐝𝐞 𝐍𝐚𝐦𝐞: {my_system.node}')
 # print(f'🍁𝐑𝐞𝐥𝐞𝐚𝐬𝐞: {my_system.release}')
@@ -17,4 +17,4 @@ else:
     pass
 os.system('touch ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/Coolist.json')
 os.system('node ʍɨʐʊӄɨ🛰️ֆɛʀʋɛʀ/touched.js')
-os.system('node Sakura☣️Reactor/🍁爪𝖎𝖟𝖚ӄ𝖎™.js')
+os.system('node Sakura☣️Reactor/🍁ֆǟӄʊʀǟ™.js')

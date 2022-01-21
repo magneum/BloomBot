@@ -20,24 +20,24 @@ module.exports = {
   name: newScpt,
   𝓜𝓮𝓮6ʍօʀɛ: `*${ᴋᴇɪ}setwelcome* (message)/(off)/(delete)
 🍁Do note, the setwelcome option is still enabled after you use the delete option.`,
-  async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
+  async handle(ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
     try {
-      var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
+      var ꜱᴇɴᴅᴇʀɪᴅ = ֆǟӄʊʀǟ.sender;
       var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
-      const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
+      const defaultnm = ֆǟӄʊʀǟ.commandName;
       const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
       `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
       const jsoncool = await JSON.parse(
         fs.readFileSync(`./Sakura🛰️Server/Coolist.json`)
       );
-      await jsoncool.push(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
+      await jsoncool.push(ֆǟӄʊʀǟ.sender);
       await fs.writeFileSync(
         `./Sakura🛰️Server/Coolist.json`,
         JSON.stringify(jsoncool)
       );
       setTimeout(async (error) => {
         if (error) console.log(error);
-        await jsoncool.splice(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
+        await jsoncool.splice(ֆǟӄʊʀǟ.sender);
         await fs.writeFileSync(
           `./Sakura🛰️Server/Coolist.json`,
           JSON.stringify(jsoncool)
@@ -45,24 +45,24 @@ module.exports = {
       }, 15000);
       `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
       if (
-        𝓜𝖎𝖟𝖚ӄ𝖎.isGroup &&
-        !𝓜𝖎𝖟𝖚ӄ𝖎.fromMe &&
-        !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderDev &&
-        !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderGroupAdmin
+        ֆǟӄʊʀǟ.isGroup &&
+        !ֆǟӄʊʀǟ.fromMe &&
+        !ֆǟӄʊʀǟ.isSenderDev &&
+        !ֆǟӄʊʀǟ.isSenderGroupAdmin
       ) {
         return Sakura_Buttons.MIB(
           ӄʀǟӄɨռʐ,
           chat,
-          𝓜𝖎𝖟𝖚ӄ𝖎,
+          ֆǟӄʊʀǟ,
           `*❌ Admins Only | You Are Not Allowed! ❌*`,
           _𝔏𝔞𝔟_.ɴᴏᴛᴀᴅᴍɪɴ
         );
       }
-      if (𝓜𝖎𝖟𝖚ӄ𝖎.isGroup && !𝓜𝖎𝖟𝖚ӄ𝖎.isBotGroupAdmin && !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderDev) {
+      if (ֆǟӄʊʀǟ.isGroup && !ֆǟӄʊʀǟ.isBotGroupAdmin && !ֆǟӄʊʀǟ.isSenderDev) {
         return Sakura_Buttons.MTB(
           ӄʀǟӄɨռʐ,
           chat,
-          𝓜𝖎𝖟𝖚ӄ𝖎,
+          ֆǟӄʊʀǟ,
           `@${ꜱᴇɴᴅᴇʀeceived}, 
 
 ❌ How Can I Use Admin Only Commands If i am not admin?
@@ -70,11 +70,11 @@ module.exports = {
           _𝔏𝔞𝔟_.ɴᴏᴛᴍᴇᴀᴅᴍɪɴ
         );
       }
-      if (!𝓜𝖎𝖟𝖚ӄ𝖎.isGroup) {
+      if (!ֆǟӄʊʀǟ.isGroup) {
         return Sakura_Buttons.MTB(
           ӄʀǟӄɨռʐ,
           chat,
-          𝓜𝖎𝖟𝖚ӄ𝖎,
+          ֆǟӄʊʀǟ,
           `@${ꜱᴇɴᴅᴇʀeceived}, 
 
 ────★ 🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧   
@@ -85,19 +85,19 @@ module.exports = {
       }
 
       var ꜰᴇᴛᴄʜᴇᴅᴍꜱɢ = await PostDataBase.getMessage(
-        𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+        ֆǟӄʊʀǟ.chatId,
         `setwelcome`
       );
       if (Needs.length == 0) {
         var enabled = await PostDataBase.checkSettings(
-          𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+          ֆǟӄʊʀǟ.chatId,
           `setwelcome`
         );
         if (enabled === false || enabled === undefined) {
           return Sakura_Static.MGS(
             ӄʀǟӄɨռʐ,
             chat,
-            𝓜𝖎𝖟𝖚ӄ𝖎,
+            ֆǟӄʊʀǟ,
             `@${ꜱᴇɴᴅᴇʀeceived},
 
 
@@ -105,13 +105,13 @@ module.exports = {
 ║🍁 Sakura's Welcome Message needs to be added first!
 ║🍁 use *${ᴋᴇɪ}setwelcome* (message)
 ╚════════════╝`,
-            `./Sakura☣️Reactor/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
+            `./Sakura☣️Reactor/ֆǟӄʊʀǟ™.mp4`
           );
         } else if (enabled === `OFF`) {
           return Sakura_Static.MGS(
             ӄʀǟӄɨռʐ,
             chat,
-            𝓜𝖎𝖟𝖚ӄ𝖎,
+            ֆǟӄʊʀǟ,
             `@${ꜱᴇɴᴅᴇʀeceived},
 
 
@@ -119,13 +119,13 @@ module.exports = {
 ║🍁 Sakura Currently not greeting new members!
 ╚════════════╝
 `,
-            `./Sakura☣️Reactor/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
+            `./Sakura☣️Reactor/ֆǟӄʊʀǟ™.mp4`
           );
         } else {
           return Sakura_Static.MGS(
             ӄʀǟӄɨռʐ,
             chat,
-            𝓜𝖎𝖟𝖚ӄ𝖎,
+            ֆǟӄʊʀǟ,
             `@${ꜱᴇɴᴅᴇʀeceived},
 
 
@@ -133,33 +133,33 @@ module.exports = {
 ║🍁 Sakura Currently greeting new members!
 ╚════════════╝
 `,
-            `./Sakura☣️Reactor/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
+            `./Sakura☣️Reactor/ֆǟӄʊʀǟ™.mp4`
           );
         }
       } else {
         if (Needs[0] === `OFF` || Needs[0] === `off` || Needs[0] === `Off`) {
           switched = `OFF`;
-          await PostDataBase.changeSettings(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, switched);
+          await PostDataBase.changeSettings(ֆǟӄʊʀǟ.chatId, switched);
           return Sakura_Static.MGS(
             ӄʀǟӄɨռʐ,
             chat,
-            𝓜𝖎𝖟𝖚ӄ𝖎,
+            ֆǟӄʊʀǟ,
             `@${ꜱᴇɴᴅᴇʀeceived},
 
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 ║🍁 Sakura's Welcome Message has Been Disabled!
 ╚════════════╝`,
-            `./Sakura☣️Reactor/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
+            `./Sakura☣️Reactor/ֆǟӄʊʀǟ™.mp4`
           );
         }
         if (Needs[0] === `ON` || Needs[0] === `on` || Needs[0] === `On`) {
           switched = `ON`;
-          await PostDataBase.changeSettings(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, switched);
+          await PostDataBase.changeSettings(ֆǟӄʊʀǟ.chatId, switched);
           return Sakura_Static.MGS(
             ӄʀǟӄɨռʐ,
             chat,
-            𝓜𝖎𝖟𝖚ӄ𝖎,
+            ֆǟӄʊʀǟ,
             `@${ꜱᴇɴᴅᴇʀeceived},
 
 
@@ -167,19 +167,19 @@ module.exports = {
 ║🍁 Sakura's Welcome Message has Been Enabled!
 ╚════════════╝
 `,
-            `./Sakura☣️Reactor/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
+            `./Sakura☣️Reactor/ֆǟӄʊʀǟ™.mp4`
           );
         }
         if (Needs[0] === `delete`) {
           var ꜰᴇᴛᴄʜᴇᴅᴍꜱɢ = await PostDataBase.deleteMessage(
-            𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+            ֆǟӄʊʀǟ.chatId,
             `setwelcome`
           );
           if (ꜰᴇᴛᴄʜᴇᴅᴍꜱɢ === false || ꜰᴇᴛᴄʜᴇᴅᴍꜱɢ === undefined) {
             return Sakura_Static.MGS(
               ӄʀǟӄɨռʐ,
               chat,
-              𝓜𝖎𝖟𝖚ӄ𝖎,
+              ֆǟӄʊʀǟ,
               `@${ꜱᴇɴᴅᴇʀeceived},
 
 
@@ -187,33 +187,33 @@ module.exports = {
 ║🍁 Sakura's Welcome Message needs to be added first!
 ║🍁 use *${ᴋᴇɪ}setwelcome* (message)
 ╚════════════╝`,
-              `./Sakura☣️Reactor/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
+              `./Sakura☣️Reactor/ֆǟӄʊʀǟ™.mp4`
             );
           }
           return Sakura_Static.MGS(
             ӄʀǟӄɨռʐ,
             chat,
-            𝓜𝖎𝖟𝖚ӄ𝖎,
+            ֆǟӄʊʀǟ,
             `@${ꜱᴇɴᴅᴇʀeceived},
 
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 ║🍁 Sakura's Welcome Message has Been Removed!
 ╚════════════╝`,
-            `./Sakura☣️Reactor/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
+            `./Sakura☣️Reactor/ֆǟӄʊʀǟ™.mp4`
           );
         }
-        text = 𝓜𝖎𝖟𝖚ӄ𝖎.body.replace(
-          𝓜𝖎𝖟𝖚ӄ𝖎.body[0] + 𝓜𝖎𝖟𝖚ӄ𝖎.commandName + ` `,
+        text = ֆǟӄʊʀǟ.body.replace(
+          ֆǟӄʊʀǟ.body[0] + ֆǟӄʊʀǟ.commandName + ` `,
           ``
         );
 
         if (ꜰᴇᴛᴄʜᴇᴅᴍꜱɢ === false || ꜰᴇᴛᴄʜᴇᴅᴍꜱɢ === undefined) {
-          await PostDataBase.setWelcome(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, text);
+          await PostDataBase.setWelcome(ֆǟӄʊʀǟ.chatId, text);
           return Sakura_Static.MGS(
             ӄʀǟӄɨռʐ,
             chat,
-            𝓜𝖎𝖟𝖚ӄ𝖎,
+            ֆǟӄʊʀǟ,
             `@${ꜱᴇɴᴅᴇʀeceived},
 
 
@@ -221,15 +221,15 @@ module.exports = {
 ║🍁 Sakura's Welcome Message has Been Updated!
 ╚════════════╝
 `,
-            `./Sakura☣️Reactor/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
+            `./Sakura☣️Reactor/ֆǟӄʊʀǟ™.mp4`
           );
         } else {
-          await PostDataBase.deleteMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, `setwelcome`);
-          await PostDataBase.setWelcome(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, text);
+          await PostDataBase.deleteMessage(ֆǟӄʊʀǟ.chatId, `setwelcome`);
+          await PostDataBase.setWelcome(ֆǟӄʊʀǟ.chatId, text);
           return Sakura_Static.MGS(
             ӄʀǟӄɨռʐ,
             chat,
-            𝓜𝖎𝖟𝖚ӄ𝖎,
+            ֆǟӄʊʀǟ,
             `@${ꜱᴇɴᴅᴇʀeceived},
 
 
@@ -237,12 +237,12 @@ module.exports = {
 ║🍁 Sakura's Welcome Message has Been Updated!
 ╚════════════╝
 `,
-            `./Sakura☣️Reactor/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`
+            `./Sakura☣️Reactor/ֆǟӄʊʀǟ™.mp4`
           );
         }
       }
     } catch (ℓαвєяяσя) {
-      ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
+      ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
       console.log(ℓαвєяяσя);
     }
   },

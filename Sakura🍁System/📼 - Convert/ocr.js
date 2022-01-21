@@ -21,25 +21,25 @@ var newScpt = scriptName.slice(0, -3).toLowerCase();
 module.exports = {
   name: newScpt,
   𝓜𝓮𝓮6ʍօʀɛ: `Use this command to obtain text from an image by  *${ᴋᴇɪ}space*  command.`,
-  async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
+  async handle(ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
     try {
-      var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
+      var ꜱᴇɴᴅᴇʀɪᴅ = ֆǟӄʊʀǟ.sender;
       var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
-      const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
+      const defaultnm = ֆǟӄʊʀǟ.commandName;
       const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
       `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
       const Bagde = require("../../Sakura🍃Goose/Badge");
       const ms = require("parse-ms");
       Bagde.findOne(
         {
-          ID: 𝓜𝖎𝖟𝖚ӄ𝖎.sender,
+          ID: ֆǟӄʊʀǟ.sender,
         },
         async (err, userBadge) => {
           // return userBadge.delete();
           if (err) return console.log(err);
           if (!userBadge) {
             var newUser = new Bagde({
-              ID: 𝓜𝖎𝖟𝖚ӄ𝖎.sender,
+              ID: ֆǟӄʊʀǟ.sender,
               Badge: "🧵ʙᴀꜱɪᴄ-10ᴄᴏᴍᴍᴀɴᴅꜱ",
               value: "True",
               Limits: 10,
@@ -83,14 +83,14 @@ module.exports = {
           const jsoncool = await JSON.parse(
             fs.readFileSync(`./Sakura🛰️Server/Coolist.json`)
           );
-          await jsoncool.push(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
+          await jsoncool.push(ֆǟӄʊʀǟ.sender);
           fs.writeFileSync(
             `./Sakura🛰️Server/Coolist.json`,
             JSON.stringify(jsoncool)
           );
           setTimeout((ℓαвєяяσя) => {
             if (ℓαвєяяσя) return console.log(ℓαвєяяσя);
-            jsoncool.splice(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
+            jsoncool.splice(ֆǟӄʊʀǟ.sender);
             fs.writeFileSync(
               `./Sakura🛰️Server/Coolist.json`,
               JSON.stringify(jsoncool)
@@ -98,7 +98,7 @@ module.exports = {
           }, 15000);
           console.log(userBadge);
           `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-          if (!𝓜𝖎𝖟𝖚ӄ𝖎.fromMe && userBadge.value === "False") {
+          if (!ֆǟӄʊʀǟ.fromMe && userBadge.value === "False") {
             let time = ms(
               userBadge.PermanentLimitTime -
                 (Date.now() - userBadge.CurrentLimitTime)
@@ -106,7 +106,7 @@ module.exports = {
             return Sakura_Buttons.MTB(
               ӄʀǟӄɨռʐ,
               chat,
-              𝓜𝖎𝖟𝖚ӄ𝖎,
+              ֆǟӄʊʀǟ,
               `💡𝐓𝐢𝐩: _Buy Higher Badges Using ${ᴋᴇɪ}shop_
 
 ╔═══════❗ 𝐈𝐦𝐩𝐨𝐫𝐭𝐚𝐧𝐭
@@ -116,7 +116,7 @@ module.exports = {
             );
           }
           `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-          if (𝓜𝖎𝖟𝖚ӄ𝖎.isImage) {
+          if (ֆǟӄʊʀǟ.isImage) {
             var replyChatObject = {
               message: chat.message,
             };
@@ -133,20 +133,20 @@ module.exports = {
             if (Msg === ``) {
               ӄʀǟӄɨռʐ
                 .sendMessage(
-                  𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                  ֆǟӄʊʀǟ.chatId,
                   `Couldn't find text in the image`,
                   MessageType.text,
                   { quoted: chat }
                 )
                 .catch((ℓαвєяяσя) =>
-                  ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
+                  ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
                 );
             }
             ӄʀǟӄɨռʐ
-              .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, Msg, MessageType.text, {
+              .sendMessage(ֆǟӄʊʀǟ.chatId, Msg, MessageType.text, {
                 quoted: chat,
               })
-              .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
+              .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
             fs.unlink(filePath),
               (ℓαвєяяσя) => {
                 if (ℓαвєяяσя) console.log(ℓαвєяяσя);
@@ -156,7 +156,7 @@ module.exports = {
               };
           }
 
-          if (𝓜𝖎𝖟𝖚ӄ𝖎.isReplyImage) {
+          if (ֆǟӄʊʀǟ.isReplyImage) {
             var replyChatObject = {
               message:
                 chat.message.extendedTextMessage.contextInfo.quotedMessage,
@@ -174,20 +174,20 @@ module.exports = {
             if (Msg === ``) {
               ӄʀǟӄɨռʐ
                 .sendMessage(
-                  𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                  ֆǟӄʊʀǟ.chatId,
                   `Couldn't find text in the image`,
                   MessageType.text,
                   { quoted: chat }
                 )
                 .catch((ℓαвєяяσя) =>
-                  ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
+                  ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
                 );
             }
             ӄʀǟӄɨռʐ
-              .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, Msg, MessageType.text, {
+              .sendMessage(ֆǟӄʊʀǟ.chatId, Msg, MessageType.text, {
                 quoted: chat,
               })
-              .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
+              .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
             fs.unlink(filePath),
               (ℓαвєяяσя) => {
                 if (ℓαвєяяσя) console.log(ℓαвєяяσя);
@@ -199,26 +199,26 @@ module.exports = {
           setTimeout(async () => {
             await ӄʀǟӄɨռʐ
               .sendMessage(
-                𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                ֆǟӄʊʀǟ.chatId,
                 `Please tag a valid message.`,
                 MessageType.text,
                 { quoted: chat }
               )
-              .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
+              .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
             return;
           }, 300000);
           await ӄʀǟӄɨռʐ
             .sendMessage(
-              𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+              ֆǟӄʊʀǟ.chatId,
               `Please tag a valid message.`,
               MessageType.text,
               { quoted: chat }
             )
-            .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
+            .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
         }
       );
     } catch (ℓαвєяяσя) {
-      ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
+      ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
       console.log(ℓαвєяяσя);
     }
   },

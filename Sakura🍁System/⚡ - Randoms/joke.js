@@ -18,26 +18,26 @@ var newScpt = scriptName.slice(0, -3).toLowerCase();
 `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
 module.exports = {
   name: newScpt,
-  async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
+  async handle(ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
     try {
-      var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
+      var ꜱᴇɴᴅᴇʀɪᴅ = ֆǟӄʊʀǟ.sender;
       const dadJoke = await getDadjoke();
       var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
-      const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
+      const defaultnm = ֆǟӄʊʀǟ.commandName;
       const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
       `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
       const Bagde = require("../../Sakura🍃Goose/Badge");
       const ms = require("parse-ms");
       Bagde.findOne(
         {
-          ID: 𝓜𝖎𝖟𝖚ӄ𝖎.sender,
+          ID: ֆǟӄʊʀǟ.sender,
         },
         async (err, userBadge) => {
           // return userBadge.delete();
           if (err) return console.log(err);
           if (!userBadge) {
             var newUser = new Bagde({
-              ID: 𝓜𝖎𝖟𝖚ӄ𝖎.sender,
+              ID: ֆǟӄʊʀǟ.sender,
               Badge: "🧵ʙᴀꜱɪᴄ-10ᴄᴏᴍᴍᴀɴᴅꜱ",
               value: "True",
               Limits: 10,
@@ -81,14 +81,14 @@ module.exports = {
           const jsoncool = await JSON.parse(
             fs.readFileSync(`./Sakura🛰️Server/Coolist.json`)
           );
-          await jsoncool.push(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
+          await jsoncool.push(ֆǟӄʊʀǟ.sender);
           fs.writeFileSync(
             `./Sakura🛰️Server/Coolist.json`,
             JSON.stringify(jsoncool)
           );
           setTimeout((ℓαвєяяσя) => {
             if (ℓαвєяяσя) return console.log(ℓαвєяяσя);
-            jsoncool.splice(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
+            jsoncool.splice(ֆǟӄʊʀǟ.sender);
             fs.writeFileSync(
               `./Sakura🛰️Server/Coolist.json`,
               JSON.stringify(jsoncool)
@@ -96,7 +96,7 @@ module.exports = {
           }, 0);
           console.log(userBadge);
           `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-          if (!𝓜𝖎𝖟𝖚ӄ𝖎.fromMe && userBadge.value === "False") {
+          if (!ֆǟӄʊʀǟ.fromMe && userBadge.value === "False") {
             let time = ms(
               userBadge.PermanentLimitTime -
                 (Date.now() - userBadge.CurrentLimitTime)
@@ -104,7 +104,7 @@ module.exports = {
             return Sakura_Buttons.MTB(
               ӄʀǟӄɨռʐ,
               chat,
-              𝓜𝖎𝖟𝖚ӄ𝖎,
+              ֆǟӄʊʀǟ,
               `💡𝐓𝐢𝐩: _Buy Higher Badges Using ${ᴋᴇɪ}shop_
 
 ╔═══════❗ 𝐈𝐦𝐩𝐨𝐫𝐭𝐚𝐧𝐭
@@ -117,7 +117,7 @@ module.exports = {
           Sakura_Buttons.MTB(
             ӄʀǟӄɨռʐ,
             chat,
-            𝓜𝖎𝖟𝖚ӄ𝖎,
+            ֆǟӄʊʀǟ,
             `@${ꜱᴇɴᴅᴇʀeceived},
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
@@ -129,7 +129,7 @@ module.exports = {
       );
       `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
     } catch (ℓαвєяяσя) {
-      ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
+      ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
       console.log(ℓαвєяяσя);
     }
   },

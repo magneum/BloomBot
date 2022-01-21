@@ -18,36 +18,36 @@ var newScpt = scriptName.slice(0, -3).toLowerCase();
 module.exports = {
   name: newScpt,
   𝓜𝓮𝓮6ʍօʀɛ: `*${ᴋᴇɪ}tagall* (text) _or_ reply: *${ᴋᴇɪ}tagall* _or_ (no-text): *${ᴋᴇɪ}tagall*`,
-  async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
+  async handle(ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
     try {
-      var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
+      var ꜱᴇɴᴅᴇʀɪᴅ = ֆǟӄʊʀǟ.sender;
       var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
-      const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
+      const defaultnm = ֆǟӄʊʀǟ.commandName;
       const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
       `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
       const jsoncool = await JSON.parse(
         fs.readFileSync(`./Sakura🛰️Server/Coolist.json`)
       );
-      await jsoncool.push(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
+      await jsoncool.push(ֆǟӄʊʀǟ.sender);
       await fs.writeFileSync(
         `./Sakura🛰️Server/Coolist.json`,
         JSON.stringify(jsoncool)
       );
       setTimeout(async (error) => {
         if (error) console.log(error);
-        await jsoncool.splice(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
+        await jsoncool.splice(ֆǟӄʊʀǟ.sender);
         await fs.writeFileSync(
           `./Sakura🛰️Server/Coolist.json`,
           JSON.stringify(jsoncool)
         );
       }, 15000);
       `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-      if (!𝓜𝖎𝖟𝖚ӄ𝖎.isGroup) {
+      if (!ֆǟӄʊʀǟ.isGroup) {
         try {
           return Sakura_Buttons.MTB(
             ӄʀǟӄɨռʐ,
             chat,
-            𝓜𝖎𝖟𝖚ӄ𝖎,
+            ֆǟӄʊʀǟ,
             `@${ꜱᴇɴᴅᴇʀeceived}, 
 
 ────★ 🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧   
@@ -56,30 +56,30 @@ module.exports = {
 `
           );
         } catch (ℓαвєяяσя) {
-          ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
+          ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
         }
       }
 
-      if (𝓜𝖎𝖟𝖚ӄ𝖎.isGroup && !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderGroupAdmin && !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderDev) {
+      if (ֆǟӄʊʀǟ.isGroup && !ֆǟӄʊʀǟ.isSenderGroupAdmin && !ֆǟӄʊʀǟ.isSenderDev) {
         try {
           return Sakura_Buttons.MIB(
             ӄʀǟӄɨռʐ,
             chat,
-            𝓜𝖎𝖟𝖚ӄ𝖎,
+            ֆǟӄʊʀǟ,
             `*❌ Admins Only | You Are Not Allowed! ❌*`,
             _𝔏𝔞𝔟_.ɴᴏᴛᴀᴅᴍɪɴ
           );
         } catch (ℓαвєяяσя) {
-          ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
+          ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
         }
       }
 
-      if (𝓜𝖎𝖟𝖚ӄ𝖎.isGroup && !𝓜𝖎𝖟𝖚ӄ𝖎.isBotGroupAdmin && !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderDev) {
+      if (ֆǟӄʊʀǟ.isGroup && !ֆǟӄʊʀǟ.isBotGroupAdmin && !ֆǟӄʊʀǟ.isSenderDev) {
         try {
           return Sakura_Buttons.MTB(
             ӄʀǟӄɨռʐ,
             chat,
-            𝓜𝖎𝖟𝖚ӄ𝖎,
+            ֆǟӄʊʀǟ,
                       `@${ꜱᴇɴᴅᴇʀeceived}, 
 
 ❌ How Can I Use Admin Only Commands If i am not admin?
@@ -87,29 +87,29 @@ module.exports = {
             _𝔏𝔞𝔟_.ɴᴏᴛᴍᴇᴀᴅᴍɪɴ
           );
         } catch (ℓαвєяяσя) {
-          ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
+          ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
         }
       }
 
       try {
-        𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄʀǟӄɨռʐ.getProfilePicture(𝓜𝖎𝖟𝖚ӄ𝖎.chatId);
+        𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄʀǟӄɨռʐ.getProfilePicture(ֆǟӄʊʀǟ.chatId);
       } catch {
         𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = `https://i.postimg.cc/6QmT53dR/Npp.png`;
       }
       let members = [];
-      for (var i = 0; i < 𝓜𝖎𝖟𝖚ӄ𝖎.groupMembers.length; i++) {
-        members[i] = 𝓜𝖎𝖟𝖚ӄ𝖎.groupMembers[i].jid;
+      for (var i = 0; i < ֆǟӄʊʀǟ.groupMembers.length; i++) {
+        members[i] = ֆǟӄʊʀǟ.groupMembers[i].jid;
       }
-      if (𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
+      if (ֆǟӄʊʀǟ.isReply) {
         await ӄʀǟӄɨռʐ
-          .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 }, MessageType.image, {
+          .sendMessage(ֆǟӄʊʀǟ.chatId, { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 }, MessageType.image, {
             mimetype: Mimetype.png,
             quoted: chat,
             contextInfo: {
-              stanzaId: 𝓜𝖎𝖟𝖚ӄ𝖎.replyMessageId,
-              participant: 𝓜𝖎𝖟𝖚ӄ𝖎.replyParticipant,
+              stanzaId: ֆǟӄʊʀǟ.replyMessageId,
+              participant: ֆǟӄʊʀǟ.replyParticipant,
               quotedMessage: {
-                conversation: 𝓜𝖎𝖟𝖚ӄ𝖎.replyMessage,
+                conversation: ֆǟӄʊʀǟ.replyMessage,
               },
               mentionedJid: members,
             },
@@ -123,13 +123,13 @@ module.exports = {
 *•──[ Message From Admin  ]──•*
 _⚠️Attention Everyone Here In the Group!_`,
           })
-          .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
+          .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
         return;
       }
 
-      if (!𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
+      if (!ֆǟӄʊʀǟ.isReply) {
         return await ӄʀǟӄɨռʐ
-          .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 }, MessageType.image, {
+          .sendMessage(ֆǟӄʊʀǟ.chatId, { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 }, MessageType.image, {
             mimetype: Mimetype.png,
             quoted: chat,
             contextInfo: {
@@ -143,12 +143,12 @@ _⚠️Attention Everyone Here In the Group!_`,
 
 
 *•──[ Message From Admin  ]──•*
-${𝓜𝖎𝖟𝖚ӄ𝖎.body.replace(𝓜𝖎𝖟𝖚ӄ𝖎.body[0] + 𝓜𝖎𝖟𝖚ӄ𝖎.commandName + " ", "")}`,
+${ֆǟӄʊʀǟ.body.replace(ֆǟӄʊʀǟ.body[0] + ֆǟӄʊʀǟ.commandName + " ", "")}`,
           })
-          .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
-      } else if (𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
+          .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+      } else if (ֆǟӄʊʀǟ.isReply) {
         return await ӄʀǟӄɨռʐ.sendMessage(
-          𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+          ֆǟӄʊʀǟ.chatId,
           { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 },
           MessageType.image,
           {
@@ -165,12 +165,12 @@ ${𝓜𝖎𝖟𝖚ӄ𝖎.body.replace(𝓜𝖎𝖟𝖚ӄ𝖎.body[0] + 𝓜𝖎�
 
 
 *•──[ Message From Admin  ]──•*
-${𝓜𝖎𝖟𝖚ӄ𝖎.replyMessage.replace(𝓜𝖎𝖟𝖚ӄ𝖎.body[0] + 𝓜𝖎𝖟𝖚ӄ𝖎.commandName + " ", "")}`,
+${ֆǟӄʊʀǟ.replyMessage.replace(ֆǟӄʊʀǟ.body[0] + ֆǟӄʊʀǟ.commandName + " ", "")}`,
           }
         );
       } else {
         return await ӄʀǟӄɨռʐ
-          .sendMessage(𝓜𝖎𝖟𝖚ӄ𝖎.chatId, { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 }, MessageType.image, {
+          .sendMessage(ֆǟӄʊʀǟ.chatId, { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 }, MessageType.image, {
             mimetype: Mimetype.png,
             quoted: chat,
             contextInfo: {
@@ -186,10 +186,10 @@ ${𝓜𝖎𝖟𝖚ӄ𝖎.replyMessage.replace(𝓜𝖎𝖟𝖚ӄ𝖎.body[0] + �
 *•──[ Message From Admin  ]──•*
 _⚠️Attention Everyone Here In the Group!_`,
           })
-          .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
+          .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
       }
     } catch (ℓαвєяяσя) {
-      ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
+      ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
       console.log(ℓαвєяяσя);
     }
   },

@@ -1,5 +1,5 @@
 `⬡  ⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-` (c)爪𝖎𝖟𝖚ӄ𝖎 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!`;
+` (c)ֆǟӄʊʀǟ 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!`;
 `⬡  ⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
 `🍁`;
 `🍁`;
@@ -28,18 +28,18 @@ const Clock = date.format(now, pattern);
 `🍁`;
 `🍁`;
 `⬡  ⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-` (c)爪𝖎𝖟𝖚ӄ𝖎 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!`;
+` (c)ֆǟӄʊʀǟ 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!`;
 `⬡  ⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
 `🍁`;
 `🍁`;
-exports.SakuraGM = async (ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎) => {
+exports.SakuraGM = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ) => {
   var SakuraGMid = chat.key.id;
-  var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
+  var ꜱᴇɴᴅᴇʀɪᴅ = ֆǟӄʊʀǟ.sender;
   var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
-  const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
+  const defaultnm = ֆǟӄʊʀǟ.commandName;
   const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
-  if (𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
-    var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
+  if (ֆǟӄʊʀǟ.isReply) {
+    var ꜱᴇɴᴅᴇʀɪᴅ = ֆǟӄʊʀǟ.sender;
     var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
     var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
     var personreceived = Receiver.substring(0, Receiver.length - 15);
@@ -48,17 +48,17 @@ exports.SakuraGM = async (ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎) => {
   const link = SakuraTenorMaker(FinalName.toLowerCase());
   `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
   const jsoncool = JSON.parse(fs.readFileSync(`./Sakura🛰️Server/Coolist.json`));
-  await jsoncool.push(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
+  await jsoncool.push(ֆǟӄʊʀǟ.sender);
   fs.writeFileSync(`./Sakura🛰️Server/Coolist.json`, JSON.stringify(jsoncool));
-  console.log("ID Added " + 𝓜𝖎𝖟𝖚ӄ𝖎.sender);
+  console.log("ID Added " + ֆǟӄʊʀǟ.sender);
   setTimeout(async (error) => {
     if (error) console.log(error);
-    await jsoncool.splice(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
+    await jsoncool.splice(ֆǟӄʊʀǟ.sender);
     fs.writeFileSync(`./Sakura🛰️Server/Coolist.json`, JSON.stringify(jsoncool));
-    console.log("ID Removed " + 𝓜𝖎𝖟𝖚ӄ𝖎.sender);
+    console.log("ID Removed " + ֆǟӄʊʀǟ.sender);
   }, 10000);
   `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-  if (𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
+  if (ֆǟӄʊʀǟ.isReply) {
     const downloader = await new Downloader({
       url: link,
       directory: `./Sakura🗑️Temp`,
@@ -79,7 +79,7 @@ exports.SakuraGM = async (ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎) => {
           console.log(`Finished`);
           await ӄʀǟӄɨռʐ
             .sendMessage(
-              𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+              ֆǟӄʊʀǟ.chatId,
               fs.readFileSync(`./Sakura🗑️Temp/${FinalName}_${SakuraGMid}.mp4`),
               MessageType.video,
               {
@@ -108,7 +108,7 @@ exports.SakuraGM = async (ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎) => {
     }
   }
 
-  if (!𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
+  if (!ֆǟӄʊʀǟ.isReply) {
     const downloader = await new Downloader({
       url: link,
       directory: `./Sakura🗑️Temp`,
@@ -129,7 +129,7 @@ exports.SakuraGM = async (ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎) => {
           console.log(`Finished`);
           await ӄʀǟӄɨռʐ
             .sendMessage(
-              𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+              ֆǟӄʊʀǟ.chatId,
               fs.readFileSync(`./Sakura🗑️Temp/${FinalName}_${SakuraGMid}.mp4`),
               MessageType.video,
               {
@@ -148,7 +148,7 @@ exports.SakuraGM = async (ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎) => {
                 `./Sakura🗑️Temp/${FinalName}_${SakuraGMid}.mp4`
               )
             )
-            .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
+            .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
         })
         .on(`error`, async (ℓαвєяяσя) => {
           console.log(ℓαвєяяσя);
@@ -161,5 +161,5 @@ exports.SakuraGM = async (ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎) => {
 `🍁`;
 `🍁`;
 `⬡  ⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-` (c)爪𝖎𝖟𝖚ӄ𝖎 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!`;
+` (c)ֆǟӄʊʀǟ 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!`;
 `⬡  ⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;

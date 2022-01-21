@@ -22,25 +22,25 @@ module.exports = {
   name: newScpt,
   𝓜𝓮𝓮6ʍօʀɛ: `Use  *${ᴋᴇɪ}tr <text> | <language>*  to translate text to the specified language. 
 You can also reply to a text message with syntax  *${ᴋᴇɪ}tr <language>*  to translate text.`,
-  async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
+  async handle(ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
     try {
-      var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
+      var ꜱᴇɴᴅᴇʀɪᴅ = ֆǟӄʊʀǟ.sender;
       var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
-      const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
+      const defaultnm = ֆǟӄʊʀǟ.commandName;
       const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
       `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
       const Bagde = require("../../Sakura🍃Goose/Badge");
       const ms = require("parse-ms");
       Bagde.findOne(
         {
-          ID: 𝓜𝖎𝖟𝖚ӄ𝖎.sender,
+          ID: ֆǟӄʊʀǟ.sender,
         },
         async (err, userBadge) => {
           // return userBadge.delete();
           if (err) return console.log(err);
           if (!userBadge) {
             var newUser = new Bagde({
-              ID: 𝓜𝖎𝖟𝖚ӄ𝖎.sender,
+              ID: ֆǟӄʊʀǟ.sender,
               Badge: "🧵ʙᴀꜱɪᴄ-10ᴄᴏᴍᴍᴀɴᴅꜱ",
               value: "True",
               Limits: 10,
@@ -84,14 +84,14 @@ You can also reply to a text message with syntax  *${ᴋᴇɪ}tr <language>*  to
           const jsoncool = await JSON.parse(
             fs.readFileSync(`./Sakura🛰️Server/Coolist.json`)
           );
-          await jsoncool.push(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
+          await jsoncool.push(ֆǟӄʊʀǟ.sender);
           fs.writeFileSync(
             `./Sakura🛰️Server/Coolist.json`,
             JSON.stringify(jsoncool)
           );
           setTimeout((ℓαвєяяσя) => {
             if (ℓαвєяяσя) return console.log(ℓαвєяяσя);
-            jsoncool.splice(𝓜𝖎𝖟𝖚ӄ𝖎.sender);
+            jsoncool.splice(ֆǟӄʊʀǟ.sender);
             fs.writeFileSync(
               `./Sakura🛰️Server/Coolist.json`,
               JSON.stringify(jsoncool)
@@ -99,7 +99,7 @@ You can also reply to a text message with syntax  *${ᴋᴇɪ}tr <language>*  to
           }, 15000);
           console.log(userBadge);
           `⬡🍁⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-          if (!𝓜𝖎𝖟𝖚ӄ𝖎.fromMe && userBadge.value === "False") {
+          if (!ֆǟӄʊʀǟ.fromMe && userBadge.value === "False") {
             let time = ms(
               userBadge.PermanentLimitTime -
                 (Date.now() - userBadge.CurrentLimitTime)
@@ -107,7 +107,7 @@ You can also reply to a text message with syntax  *${ᴋᴇɪ}tr <language>*  to
             return Sakura_Buttons.MTB(
               ӄʀǟӄɨռʐ,
               chat,
-              𝓜𝖎𝖟𝖚ӄ𝖎,
+              ֆǟӄʊʀǟ,
               `💡𝐓𝐢𝐩: _Buy Higher Badges Using ${ᴋᴇɪ}shop_
 
 ╔═══════❗ 𝐈𝐦𝐩𝐨𝐫𝐭𝐚𝐧𝐭
@@ -120,26 +120,26 @@ You can also reply to a text message with syntax  *${ᴋᴇɪ}tr <language>*  to
           var text = ``;
           var language = ``;
           if (Needs.length === 0) {
-            var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(𝓜𝖎𝖟𝖚ӄ𝖎.commandName);
+            var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(ֆǟӄʊʀǟ.commandName);
             var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
               𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ === undefined ? `Null` : 𝓜Usage.𝓜𝓮𝓮6ʍօʀɛ;
             const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../Sakura🛰️Server/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
             return ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
               ӄʀǟӄɨռʐ,
               chat,
-              𝓜𝖎𝖟𝖚ӄ𝖎,
+              ֆǟӄʊʀǟ,
               ꜱᴇɴᴅᴇʀɪᴅ,
               ꜱᴇɴᴅᴇʀeceived,
-              𝓜𝖎𝖟𝖚ӄ𝖎.commandName,
+              ֆǟӄʊʀǟ.commandName,
               ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
             );
           }
 
-          if (!𝓜𝖎𝖟𝖚ӄ𝖎.isReply) {
+          if (!ֆǟӄʊʀǟ.isReply) {
             try {
-              var body = 𝓜𝖎𝖟𝖚ӄ𝖎.body.split(`|`);
+              var body = ֆǟӄʊʀǟ.body.split(`|`);
               text = body[0].replace(
-                𝓜𝖎𝖟𝖚ӄ𝖎.body[0] + 𝓜𝖎𝖟𝖚ӄ𝖎.commandName + ` `,
+                ֆǟӄʊʀǟ.body[0] + ֆǟӄʊʀǟ.commandName + ` `,
                 ``
               );
               var i = 0;
@@ -149,56 +149,56 @@ You can also reply to a text message with syntax  *${ᴋᴇɪ}tr <language>*  to
               language = body[1].split(` `)[i];
             } catch (ℓαвєяяσя) {
               if (ℓαвєяяσя instanceof TypeError) {
-                text = 𝓜𝖎𝖟𝖚ӄ𝖎.body.replace(
-                  𝓜𝖎𝖟𝖚ӄ𝖎.body[0] + 𝓜𝖎𝖟𝖚ӄ𝖎.commandName + ` `,
+                text = ֆǟӄʊʀǟ.body.replace(
+                  ֆǟӄʊʀǟ.body[0] + ֆǟӄʊʀǟ.commandName + ` `,
                   ``
                 );
                 language = `English`;
               }
             }
-          } else if (𝓜𝖎𝖟𝖚ӄ𝖎.replyMessage) {
-            text = 𝓜𝖎𝖟𝖚ӄ𝖎.replyMessage;
+          } else if (ֆǟӄʊʀǟ.replyMessage) {
+            text = ֆǟӄʊʀǟ.replyMessage;
             language = Needs[0];
           } else {
             await ӄʀǟӄɨռʐ
               .sendMessage(
-                𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                ֆǟӄʊʀǟ.chatId,
                 `Please reply to a text message.`,
                 MessageType.text,
                 { quoted: chat }
               )
-              .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
+              .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
           }
 
           if (text.length > 4000) {
             await ӄʀǟӄɨռʐ
               .sendMessage(
-                𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                ֆǟӄʊʀǟ.chatId,
                 `*Total characters should be less than 4000.*\nTotal characters for current input were {}.`.format(
                   text.length
                 ),
                 MessageType.text,
                 { quoted: chat }
               )
-              .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
+              .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
           }
           await translate(text, {
             to: language,
           }).then((res) => {
             ӄʀǟӄɨռʐ
               .sendMessage(
-                𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+                ֆǟӄʊʀǟ.chatId,
                 `Translated From *${res.from.language.iso}* to> *${language}*
 ${res.text}`,
                 MessageType.text,
                 { quoted: chat }
               )
-              .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
+              .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
           });
         }
       );
     } catch (ℓαвєяяσя) {
-      ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
+      ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
       console.log(ℓαвєяяσя);
     }
   },

@@ -26,20 +26,20 @@
 // module.exports = {
 //   name: newScpt,
 //   𝓜𝓮𝓮6ʍօʀɛ: `OPTIONAL: ${ᴋᴇɪ}leave (reason)`,
-//   async handle(ӄʀǟӄɨռʐ, chat, 𝓜𝖎𝖟𝖚ӄ𝖎, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
+//   async handle(ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
 //     try {
-//       var ꜱᴇɴᴅᴇʀɪᴅ = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
+//       var ꜱᴇɴᴅᴇʀɪᴅ = ֆǟӄʊʀǟ.sender;
 //       var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
-//       const defaultnm = 𝓜𝖎𝖟𝖚ӄ𝖎.commandName;
+//       const defaultnm = ֆǟӄʊʀǟ.commandName;
 //       const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
 //       `⬡  ⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
 
-//       if (!𝓜𝖎𝖟𝖚ӄ𝖎.fromMe && !𝓜𝖎𝖟𝖚ӄ𝖎.isSenderDev) {
+//       if (!ֆǟӄʊʀǟ.fromMe && !ֆǟӄʊʀǟ.isSenderDev) {
 //         try {
 //           return Sakura_Buttons.MIB(
 //             ӄʀǟӄɨռʐ,
 //             chat,
-//             𝓜𝖎𝖟𝖚ӄ𝖎,
+//             ֆǟӄʊʀǟ,
 //             `Who Is This Dumbo •@${ꜱᴇɴᴅᴇʀeceived} Trying to Use Owner-Only Commands.
 
 // ────★ 🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧
@@ -48,16 +48,16 @@
 //             _𝔏𝔞𝔟_.ɴᴏᴛᴀᴅᴍɪɴ
 //           );
 //         } catch (ℓαвєяяσя) {
-//           ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
+//           ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
 //         }
 //       }
 
-//       if (!𝓜𝖎𝖟𝖚ӄ𝖎.isGroup) {
+//       if (!ֆǟӄʊʀǟ.isGroup) {
 //         try {
 //           return Sakura_Buttons.MTB(
 //             ӄʀǟӄɨռʐ,
 //             chat,
-//             𝓜𝖎𝖟𝖚ӄ𝖎,
+//             ֆǟӄʊʀǟ,
 //             `@${ꜱᴇɴᴅᴇʀeceived},
 
 // ────★ 🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧
@@ -66,33 +66,33 @@
 // `
 //           );
 //         } catch (ℓαвєяяσя) {
-//           ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
+//           ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
 //         }
 //       }
 
 //       if (Needs.length === 0) {
 //         await ӄʀǟӄɨռʐ
-//           .groupLeave(𝓜𝖎𝖟𝖚ӄ𝖎.chatId)
+//           .groupLeave(ֆǟӄʊʀǟ.chatId)
 //           .then((res) => console.log(res))
 //           .catch((err) => console.log(err));
 //       } else {
 //         let members = [];
-//         for (var i = 0; i < 𝓜𝖎𝖟𝖚ӄ𝖎.groupMembers.length; i++) {
-//           members[i] = 𝓜𝖎𝖟𝖚ӄ𝖎.groupMembers[i].jid;
+//         for (var i = 0; i < ֆǟӄʊʀǟ.groupMembers.length; i++) {
+//           members[i] = ֆǟӄʊʀǟ.groupMembers[i].jid;
 //         }
 //         await ӄʀǟӄɨռʐ
 //           .sendMessage(
-//             𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
-//             fs.readFileSync(`./Sakura☣️Reactor/𝓜𝖎𝖟𝖚ӄ𝖎™.mp4`),
+//             ֆǟӄʊʀǟ.chatId,
+//             fs.readFileSync(`./Sakura☣️Reactor/ֆǟӄʊʀǟ™.mp4`),
 //             MessageType.video,
 //             {
 //               mimetype: `video/gif`,
 //               quoted: chat,
 //               contextInfo: {
-//                 stanzaId: 𝓜𝖎𝖟𝖚ӄ𝖎.replyMessageId,
-//                 participant: 𝓜𝖎𝖟𝖚ӄ𝖎.replyParticipant,
+//                 stanzaId: ֆǟӄʊʀǟ.replyMessageId,
+//                 participant: ֆǟӄʊʀǟ.replyParticipant,
 //                 quotedMessage: {
-//                   conversation: 𝓜𝖎𝖟𝖚ӄ𝖎.replyMessage,
+//                   conversation: ֆǟӄʊʀǟ.replyMessage,
 //                 },
 //                 mentionedJid: members,
 //               },
@@ -103,30 +103,30 @@
 // ${Needs.join(` `)}`,
 //             }
 //           )
-//           .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat));
+//           .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
 //         PostDataBase.findOne(
 //           {
-//             serverID: 𝓜𝖎𝖟𝖚ӄ𝖎.chatId,
+//             serverID: ֆǟӄʊʀǟ.chatId,
 //           },
 //           async (err, server) => {
 //             if (err) console.log(err);
 //             if (!server) {
 //               await ӄʀǟӄɨռʐ
-//                 .groupLeave(𝓜𝖎𝖟𝖚ӄ𝖎.chatId)
+//                 .groupLeave(ֆǟӄʊʀǟ.chatId)
 //                 .catch((ℓαвєяяσя) =>
-//                   ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
+//                   ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
 //                 );
 //               return;
 //             } else {
 //               server
 //                 .delete()
 //                 .catch((ℓαвєяяσя) =>
-//                   ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
+//                   ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
 //                 );
 //               await ӄʀǟӄɨռʐ
-//                 .groupLeave(𝓜𝖎𝖟𝖚ӄ𝖎.chatId)
+//                 .groupLeave(ֆǟӄʊʀǟ.chatId)
 //                 .catch((ℓαвєяяσя) =>
-//                   ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat)
+//                   ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
 //                 );
 //               return;
 //             }
@@ -134,7 +134,7 @@
 //         );
 //       }
 //     } catch (ℓαвєяяσя) {
-//       ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, chat);
+//       ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
 //       console.log(ℓαвєяяσя);
 //     }
 //   },

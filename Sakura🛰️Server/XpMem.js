@@ -4,14 +4,14 @@
 // "🐙";
 // "🐙";
 // module.exports = {
-//   getMember: function (message, ӄʀǟӄɨռʐ, 𝓜𝖎𝖟𝖚ӄ𝖎, toFind = "") {
+//   getMember: function (message, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, toFind = "") {
 //     toFind = toFind.toLowerCase();
-//     let target = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
-//     if (!target) target = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
+//     let target = ֆǟӄʊʀǟ.sender;
+//     if (!target) target = ֆǟӄʊʀǟ.sender;
 //     if (!target && toFind) {
-//       target = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
+//       target = ֆǟӄʊʀǟ.sender;
 //     }
-//     if (!target) target = 𝓜𝖎𝖟𝖚ӄ𝖎.sender;
+//     if (!target) target = ֆǟӄʊʀǟ.sender;
 //     return target;
 //   },
 //   formatDate: function (date) {
