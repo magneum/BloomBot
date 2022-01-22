@@ -87,9 +87,6 @@ async function ֆǟӄʊʀǟ() {
       `⬡==========================⬡    🍹 ֆǟӄʊʀǟ™ 🍹    ⬡==========================⬡`
     )
   );
-  console.log(
-    Kolor.bgYellowBright.black(`🍹INFO ⬰ Checking For 🍹ֆǟӄʊʀǟ™Updates ...✔️`)
-  );
   await AutoKrakz();
   try {
     var session = ֆǟӄʊʀǟֆʏռօք.Mee6reignite(_𝔏𝔞𝔟_.SAKURA);

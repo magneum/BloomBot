@@ -9,8 +9,11 @@ const exec = require(`child_process`).exec;
 const gitPull = async () => {
   await git.fetch();
   var newCommits = await git.log([`KrakinzLab..origin/KrakinzLab`]);
+  console.log(
+    Kolor.bgYellowBright.black(`🍹INFO ⬰ 𝗖𝗵𝗲𝗰𝗸𝗶𝗻𝗴 𝗙𝗼𝗿 🍹ֆǟӄʊʀǟ™ 𝗨𝗽𝗱𝗮𝘁𝗲𝘀 ...`)
+  );
   if (newCommits.total) {
-    console.log(chalk.blueBright(`💡INFO ⬰ New Update pending, updating...`));
+    console.log(chalk.blueBright(`💡INFO ⬰ 𝗡𝗲𝘄 𝗨𝗽𝗱𝗮𝘁𝗲 𝗽𝗲𝗻𝗱𝗶𝗻𝗴, 𝘂𝗽𝗱𝗮𝘁𝗶𝗻𝗴...`));
     await git.pull(`origin`, `KrakinzLab`, (err, update) => {
       if (update && update.summary.changes) {
         if (update.files.includes(`package.json`)) {
@@ -31,9 +34,7 @@ const gitPull = async () => {
     });
   } else {
     console.log(
-      chalk.bgGreenBright.black(
-        `💡INFO ⬰ ⚡𝐒𝐚𝐤𝐮𝐫𝐚™ 𝗶𝘀 𝗮𝗹𝗿𝗲𝗮𝗱𝘆 𝗼𝗻 𝗹𝗮𝘁𝗲𝘀𝘁 𝘃𝗲𝗿𝘀𝗶𝗼𝗻.`
-      )
+      chalk.bgGreenBright.black(`💡INFO ⬰ ⚡𝐒𝐚𝐤𝐮𝐫𝐚™ 𝗶𝘀 𝗼𝗻 𝗹𝗮𝘁𝗲𝘀𝘁 𝘃𝗲𝗿𝘀𝗶𝗼𝗻.`)
     );
   }
 };
