@@ -127,12 +127,12 @@ chat,
 }
 //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
 try {
-var FILEOBJECT = {
+var OBJECT = {
 message:
 chat.message.extendedTextMessage.contextInfo.quotedMessage,
 };
 var FileType = await ӄʀǟӄɨռʐ.downloadAndSaveMediaMessage(
-FILEOBJECT,
+OBJECT,
 FileName
 );
 } catch (ℓαвєяяσя) {

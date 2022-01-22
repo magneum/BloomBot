@@ -211,7 +211,7 @@ thumbs
 }
 console.log(res.result.thumb);
 })
-.catch(() => {
+.catch(async() => {
 userBadge.Limits = userBadge.Limits + 1;
 await userBadge
 .save()
