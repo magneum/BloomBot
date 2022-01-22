@@ -72,7 +72,7 @@ async function ֆǟӄʊʀǟ() {
   var ꜱɪᴛʀᴀᴘ = new Map();
   var commandUsage = new Map();
   console.log(
-    Kolor.bgBlue.black(`🍹INFO ⬰ 𝐒𝐲𝐦𝐥𝐢𝐧𝐤𝐢𝐧𝐠 𝐖𝐢𝐭𝐡 𝐒𝐚𝐤𝐮𝐫𝐚 𝐒𝐲𝐬𝐭𝐞𝐦...✔️`)
+    Kolor.bgYellow.black(`🍹INFO ⬰ 𝐒𝐲𝐦𝐥𝐢𝐧𝐤𝐢𝐧𝐠 𝐖𝐢𝐭𝐡 𝐒𝐚𝐤𝐮𝐫𝐚 𝐒𝐲𝐬𝐭𝐞𝐦...✔️`)
   );
   if (_𝔏𝔞𝔟_.HEROKU_API_KEY === `Null` || _𝔏𝔞𝔟_.HEROKU_APP_NAME === `Null`) {
     console.log(
@@ -107,7 +107,9 @@ async function ֆǟӄʊʀǟ() {
       )
     );
     console.log(
-      Kolor.bgBlue.black(`🍹INFO ⬰ 𝗖𝗼𝗻𝗻𝗲𝗰𝘁𝗶𝗻𝗴 𝘁𝗼 🍹ֆǟӄʊʀǟ™ 𝗨𝘀𝗲𝗿-𝗪𝗵𝗮𝘁𝘀𝗮𝗽𝗽!...🛸`)
+      Kolor.bgYellow.black(
+        `🍹INFO ⬰ 𝗖𝗼𝗻𝗻𝗲𝗰𝘁𝗶𝗻𝗴 𝘁𝗼 🍹ֆǟӄʊʀǟ™ 𝗨𝘀𝗲𝗿-𝗪𝗵𝗮𝘁𝘀𝗮𝗽𝗽!...🛸`
+      )
     );
   });
   //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|

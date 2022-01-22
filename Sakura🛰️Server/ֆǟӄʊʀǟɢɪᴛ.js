@@ -13,7 +13,9 @@ const gitPull = async () => {
     chalk.bgYellow.black(`🍹INFO ⬰ 𝗖𝗵𝗲𝗰𝗸𝗶𝗻𝗴 𝗙𝗼𝗿 🍹ֆǟӄʊʀǟ™ 𝗨𝗽𝗱𝗮𝘁𝗲𝘀 ...`)
   );
   if (newCommits.total) {
-    console.log(chalk.bgBlue.black(`💡INFO ⬰ 𝗡𝗲𝘄 𝗨𝗽𝗱𝗮𝘁𝗲 𝗽𝗲𝗻𝗱𝗶𝗻𝗴, 𝘂𝗽𝗱𝗮𝘁𝗶𝗻𝗴...`));
+    console.log(
+      chalk.bgYellow.black(`💡INFO ⬰ 𝗡𝗲𝘄 𝗨𝗽𝗱𝗮𝘁𝗲 𝗽𝗲𝗻𝗱𝗶𝗻𝗴, 𝘂𝗽𝗱𝗮𝘁𝗶𝗻𝗴...`)
+    );
     await git.pull(`origin`, `KrakinzLab`, (err, update) => {
       if (update && update.summary.changes) {
         if (update.files.includes(`package.json`)) {
