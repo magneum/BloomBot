@@ -124,7 +124,8 @@ chat,
 }
 //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
 var Image = await anime.wallpaper();
-if (!Image) {
+console.log(Image);
+if (!Image || Image === undefined || Image === null) {
 userBadge.Limits = userBadge.Limits + 1;
 await userBadge
 .save()
