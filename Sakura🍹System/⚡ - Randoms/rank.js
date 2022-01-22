@@ -86,7 +86,6 @@ var newUsers = new UsersSakura({
 did: ֆǟӄʊʀǟ.sender,
 xp: xpAdd,
 level: 0,
-message: messageAdd,
 });
 newUsers.save().catch((ℓαвєяяσя) => console.log(ℓαвєяяσя));
 } else {

@@ -152,7 +152,7 @@ chat,
 //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
 const downloader = await new Downloader({
 url: RawData,
-directory: `./Sakura🗑️Temp`,
+directory: `${__dirname}`,
 fileName: `${FinalName}_${Date.now.toString()}.mp4`,
 cloneFiles: false,
 });
@@ -174,10 +174,10 @@ chat,
 ║📤𝐔𝐩𝐥𝐨𝐚𝐝𝐞𝐝: ${Raw.upload}
 ║🖊️𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${Raw.desc}
 ╚════════════╝`,
-`./Sakura🗑️Temp/${FinalName}_${Date.now.toString()}.mp4`
+`${__dirname}/${FinalName}_${Date.now.toString()}.mp4`
 );
 return await cleanRF.cleanRF(
-`./Sakura🗑️Temp/${FinalName}_${Date.now.toString()}.mp4`
+`${__dirname}/${FinalName}_${Date.now.toString()}.mp4`
 );
 } catch (ℓαвєяяσя) {
 return Sakura_Buttons.MTB(

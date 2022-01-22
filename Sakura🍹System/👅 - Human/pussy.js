@@ -159,7 +159,7 @@ amazeme
 } else if (amazeme.endsWith(`.gif`)) {
 const downloader = await new Downloader({
 url: amazeme,
-directory: `./Sakura🗑️Temp`,
+directory: `${__dirname}`,
 fileName: `${Ping}_${FinalName}.gif`,
 cloneFiles: false,
 });
@@ -178,14 +178,14 @@ chat,
 ╚════════════╝`
 );
 }
-ffmpeg(`./Sakura🗑️Temp/${Ping}_${FinalName}.gif`)
+ffmpeg(`${__dirname}/${Ping}_${FinalName}.gif`)
 .outputOptions([
 `-pix_fmt yuv420p`,
 `-c:v libx264`,
 `-movflags +faststart`,
 `-filter:v crop='floor(in_w/2)*2:floor(in_h/2)*2'`,
 ])
-.save(`./Sakura🗑️Temp/${Ping}_${FinalName}.mp4`)
+.save(`${__dirname}/${Ping}_${FinalName}.mp4`)
 .on(`end`, async () => {
 return Sakura_Static.MSB(
 ӄʀǟӄɨռʐ,
@@ -197,12 +197,12 @@ chat,
 👅 𝐓𝐨𝐩𝐢𝐜: ${title}
 📞 𝐎𝐫𝐝𝐞𝐫𝐞𝐝𝐁𝐲: @${ꜱᴇɴᴅᴇʀeceived} ${where}
 `,
-`./Sakura🗑️Temp/${Ping}_${FinalName}.mp4`
+`${__dirname}/${Ping}_${FinalName}.mp4`
 )
 .then(
 cleanRF.cleanRF(
-`./Sakura🗑️Temp/${Ping}_${FinalName}.mp4`,
-`./Sakura🗑️Temp/${Ping}_${FinalName}.gif`
+`${__dirname}/${Ping}_${FinalName}.mp4`,
+`${__dirname}/${Ping}_${FinalName}.gif`
 )
 )
 .catch((ℓαвєяяσя) =>
