@@ -5,10 +5,8 @@
 `|🍹|`;
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const Downloader = require(`nodejs-file-downloader`);
-const vers = require(`../package.json`);
 const postDb = require(`./postDb`);
 const _𝔏𝔞𝔟_ = require(`./_𝔏𝔞𝔟_`);
-const ꜰᴜᴄᴋ = require(`./oShit`);
 require(`python-format-js`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
@@ -55,13 +53,13 @@ exports.welbuts = async (
     const FlowerWel = Flower[Math.floor(Math.random() * Flower.length)];
     const PeopleWel = People[Math.floor(Math.random() * People.length)];
     var ᴘᴘᴡᴇʟᴄᴏᴍᴇ = MemNum.substring(0, MemNum.length - 15);
-
+    //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
     try {
       𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄʀǟӄɨռʐ.getProfilePicture(`${MemNum.split(`@`)[0]}@c.us`);
     } catch {
       𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = "./Sakura☣️Reactor/ֆǟӄʊʀǟ_Npp.png";
     }
-
+    //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
     const downloader = await new Downloader({
       url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗,
       directory: `./Sakura🗑️Temp`,
@@ -80,6 +78,7 @@ exports.welbuts = async (
         mimetype: Mimetype.png,
       }
     );
+    //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
     await ӄʀǟӄɨռʐ
       .sendMessage(
         GroupID,
@@ -116,9 +115,9 @@ ${ꜰᴇᴛᴄʜᴇᴅᴡᴇʟᴄᴏᴍᴇ.message}`,
         }
       )
       .then(cleanRF.cleanRF(`./Sakura🗑️Temp/${ᴘᴘᴡᴇʟᴄᴏᴍᴇ}_${FlowerWel}.png`))
-      .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+      .catch((ℓαвєяяσя) => console.log(ℓαвєяяσя));
+    //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
   } catch (ℓαвєяяσя) {
-    await ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
     console.log(
       `⬡==========================⬡    🍹 ` +
         ℓαвєяяσя +
