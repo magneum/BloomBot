@@ -3,17 +3,19 @@
 `|🍹|======================================================================================================⬡  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™`;
 `|🍹|`;
 `|🍹|`;
-const git = require(`simple-git`)();
 const chalk = require(`chalk`);
+const git = require(`simple-git`)();
 const exec = require(`child_process`).exec;
 const gitPull = async () => {
   await git.fetch();
   var newCommits = await git.log([`KrakinzLab..origin/KrakinzLab`]);
   console.log(
-    Kolor.bgYellowBright.black(`🍹INFO ⬰ 𝗖𝗵𝗲𝗰𝗸𝗶𝗻𝗴 𝗙𝗼𝗿 🍹ֆǟӄʊʀǟ™ 𝗨𝗽𝗱𝗮𝘁𝗲𝘀 ...`)
+    chalk.bgYellowBright.black(`🍹INFO ⬰ 𝗖𝗵𝗲𝗰𝗸𝗶𝗻𝗴 𝗙𝗼𝗿 🍹ֆǟӄʊʀǟ™ 𝗨𝗽𝗱𝗮𝘁𝗲𝘀 ...`)
   );
   if (newCommits.total) {
-    console.log(chalk.blueBright(`💡INFO ⬰ 𝗡𝗲𝘄 𝗨𝗽𝗱𝗮𝘁𝗲 𝗽𝗲𝗻𝗱𝗶𝗻𝗴, 𝘂𝗽𝗱𝗮𝘁𝗶𝗻𝗴...`));
+    console.log(
+      chalk.bgBlueBright.black(`💡INFO ⬰ 𝗡𝗲𝘄 𝗨𝗽𝗱𝗮𝘁𝗲 𝗽𝗲𝗻𝗱𝗶𝗻𝗴, 𝘂𝗽𝗱𝗮𝘁𝗶𝗻𝗴...`)
+    );
     await git.pull(`origin`, `KrakinzLab`, (err, update) => {
       if (update && update.summary.changes) {
         if (update.files.includes(`package.json`)) {
@@ -30,6 +32,7 @@ const gitPull = async () => {
             `❌ERROR ⬰ 𝗜𝗳 𝗶𝘁 𝘄𝗮𝘀 𝗮 𝗕𝗜𝗚 ⚡𝐒𝐚𝐤𝐮𝐫𝐚™ 𝘂𝗽𝗱𝗮𝘁𝗲 𝘁𝗵𝗲𝗻 𝗣𝗹𝗲𝗮𝘀𝗲 𝗿𝗲𝗱𝗲𝗽𝗹𝗼𝘆 𝘆𝗼𝘂𝗿 𝗯𝗼𝘁!`
           )
         );
+        process.exit(0);
       }
     });
   } else {
