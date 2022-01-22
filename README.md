@@ -2,7 +2,7 @@
 
 # 🍹(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭
 
-<img align="centre" height="100" width="100" src="https://i.postimg.cc/XqPBcyq0/image.png">
+<img align="centre" src="https://i.postimg.cc/XqPBcyq0/image.png">
 
 🔸[ᴡʜᴀᴛꜱᴀᴘᴘ](https://chat.whatsapp.com/LKN8uVBd8ucHRHofz0jBSd) 🔸[ᴅɪꜱᴄᴏʀᴅ](https://discord.gg/xcFN6NDHEV)
 
