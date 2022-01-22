@@ -29,7 +29,7 @@ You can also reply to a text message with syntax  *${ᴋᴇɪ}tr <language>*  to
       const defaultnm = ֆǟӄʊʀǟ.commandName;
       const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
       //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
-      const Bagde = require(`../../Sakura🍃Goose/Badge`);
+      const Bagde = require(`../../Sakura🍃Goose/badge`);
       const ms = require(`parse-ms`);
       Bagde.findOne(
         {

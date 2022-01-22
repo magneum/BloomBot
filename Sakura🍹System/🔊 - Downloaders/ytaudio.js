@@ -69,7 +69,7 @@ module.exports = {
         );
       }
       //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
-      const Bagde = require("../../Sakura🍃Goose/Badge");
+      const Bagde = require("../../Sakura🍃Goose/badge");
       const ms = require("parse-ms");
       Bagde.findOne(
         {

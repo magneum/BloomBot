@@ -7,9 +7,9 @@
   const { ֆǟӄʊʀǟ } = require(`../Sakura🛰️Server/🍹ֆǟӄʊʀǟ™`);
   const AutoKrakz = require(`../Sakura🛰️Server/ֆǟӄʊʀǟɢɪᴛ`);
   const _𝔏𝔞𝔟_ = require(`../Sakura🛰️Server/_𝔏𝔞𝔟_`);
-  const ʍɨʐʊӄɨgoose = require("mongoose");
+  const ֆǟӄʊʀǟgoose = require("mongoose");
   const Kolor = require(`chalk`);
-  ʍɨʐʊӄɨgoose
+  ֆǟӄʊʀǟgoose
     .connect(_𝔏𝔞𝔟_.SAKURAMDB, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
@@ -17,10 +17,10 @@
       useFindAndModify: false,
     })
     .catch((err) => {
-      console.log(Kolor.red(`🍹INFO ⬰ ʍɨʐʊӄɨgoose Error: \n${err}`));
+      console.log(Kolor.red(`🍹INFO ⬰ ֆǟӄʊʀǟgoose Error: \n${err}`));
       process.exit(0);
     });
-  console.log(Kolor.green(`🍹INFO ⬰ ʍɨʐʊӄɨgoose Connecting!`));
+  console.log(Kolor.green(`🍹INFO ⬰ ֆǟӄʊʀǟgoose Connecting!`));
   AutoKrakz();
   ֆǟӄʊʀǟ();
 })();
