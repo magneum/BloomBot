@@ -33,4 +33,4 @@
 
 # ☣️[𝕷𝖎𝖈𝖊𝖓𝖘𝖊](LICENSE)
 
-<img align="right" src="https://i.postimg.cc/4dQvSpCZ/image.gif">
+<img align="centre" src="https://i.postimg.cc/4dQvSpCZ/image.gif">
