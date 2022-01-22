@@ -26,8 +26,12 @@
       "required": true,
       "value": "HEROKU"
     },
-    "SakuraMdb": {
-      "description": "Your Localized MONGOOSE",
+    "SAKURAQL": {
+      "description": "Your Localized Postsqldb",
+      "required": true
+    },
+    "SAKURAMDB": {
+      "description": "Your Localized Mongoosedb",
       "required": true
     },
     "HEROKU_API_KEY": {

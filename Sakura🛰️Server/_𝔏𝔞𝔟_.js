@@ -15,8 +15,8 @@ if (fs.existsSync(`Sakura☣️Reactor.env`)) {
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍹 (c)ֆǟӄʊʀǟ 🍹    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
 const env = {
   SAKURA: process.env.SAKURA === undefined ? `Null` : process.env.SAKURA,
-  SakuraMdb:
-    process.env.SakuraMdb === undefined ? `Null` : process.env.SakuraMdb,
+  SAKURAMDB:
+    process.env.SAKURAMDB === undefined ? `Null` : process.env.SAKURAMDB,
   HEROKU_API_KEY:
     process.env.HEROKU_API_KEY === undefined
       ? `Null`

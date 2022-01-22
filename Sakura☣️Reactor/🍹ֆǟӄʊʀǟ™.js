@@ -10,7 +10,7 @@
   const ʍɨʐʊӄɨgoose = require("mongoose");
   const Kolor = require(`chalk`);
   await ʍɨʐʊӄɨgoose
-    .connect(_𝔏𝔞𝔟_.SakuraMdb, {
+    .connect(_𝔏𝔞𝔟_.SAKURAMDB, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
       useCreateIndex: true,
