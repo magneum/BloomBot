@@ -7,13 +7,16 @@ const fs = require(`fs`);
 var jsonData = `[]`;
 var jsonObj = JSON.parse(jsonData);
 var jsonContent = JSON.stringify(jsonObj);
-console.log(jsonContent);
 fs.writeFile(
   `./Sakura🛰️Server/Coolist.json`,
   jsonContent,
   `utf8`,
   function (err) {
     if (err) console.log(err);
+    console.log("💡INFO ⬰ Coolist.json Content: " + jsonContent);
+    console.log(
+      "⬡==========================⬡    🍹 ֆǟӄʊʀǟ™ 🍹    ⬡==========================⬡"
+    );
   }
 );
 `|🍹|`;
