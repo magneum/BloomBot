@@ -3,13 +3,13 @@
 `|🍹|======================================================================================================⬡  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™`;
 `|🍹|`;
 `|🍹|`;
-const Sakura_Buttons = require(`../../Sakura🛰️Server/Sakura_Buttons`);
-const Sakura_Static = require(`../../Sakura🛰️Server/Sakura_Static`);
-const { Instagram_Dwnloader } = require(`../../Sakura🛰️Server/youmaker`);
+const Sakura_Buttons = require(`../Sakura🛰️Server/Sakura_Buttons`);
+const Sakura_Static = require(`../Sakura🛰️Server/Sakura_Static`);
+const { Instagram_Dwnloader } = require(`../Sakura🛰️Server/youmaker`);
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
-const cleanRF = require(`../../Sakura🛰️Server/cleanRF`);
-const _𝔏𝔞𝔟_ = require(`../../Sakura🛰️Server/_𝔏𝔞𝔟_`);
-const ꜰᴜᴄᴋ = require(`../../Sakura🛰️Server/oShit`);
+const cleanRF = require(`../Sakura🛰️Server/cleanRF`);
+const _𝔏𝔞𝔟_ = require(`../Sakura🛰️Server/_𝔏𝔞𝔟_`);
+const ꜰᴜᴄᴋ = require(`../Sakura🛰️Server/oShit`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 const hx = require(`hxz-api`);
@@ -32,7 +32,7 @@ module.exports = {
         var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(ֆǟӄʊʀǟ.commandName);
         var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
           𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ === undefined ? `Null` : 𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ;
-        const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../Sakura🛰️Server/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
+        const ᴀʀɢᴜᴍᴇɴᴛ = require(`../Sakura🛰️Server/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
         return ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
           ӄʀǟӄɨռʐ,
           chat,
@@ -48,7 +48,7 @@ module.exports = {
         var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(ֆǟӄʊʀǟ.commandName);
         var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
           𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ === undefined ? `Null` : 𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ;
-        const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../Sakura🛰️Server/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
+        const ᴀʀɢᴜᴍᴇɴᴛ = require(`../Sakura🛰️Server/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
         return ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
           ӄʀǟӄɨռʐ,
           chat,
@@ -60,7 +60,7 @@ module.exports = {
         );
       }
       //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
-      const Bagde = require("../../Sakura🍃Goose/badge");
+      const Bagde = require("../Sakura🍃Goose/badge");
       const ms = require("parse-ms");
       Bagde.findOne(
         {
@@ -134,7 +134,7 @@ module.exports = {
             }
           }
           //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
-          const hold = require("../../Sakura🛰️Server/Hold");
+          const hold = require("../Sakura🛰️Server/Hold");
           hold.Hold(ֆǟӄʊʀǟ);
           console.log(userBadge);
           //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
