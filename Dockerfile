@@ -2,7 +2,7 @@ FROM python:latest
 ENV VIRTUAL_ENV "/venv"
 RUN python -m venv $VIRTUAL_ENV
 ENV PATH "$VIRTUAL_ENV/bin:$PATH"
-RUN apt update 
+RUN apt update
 RUN apt upgrade -y
 RUN apt install git -y
 RUN apt install curl -y
@@ -16,6 +16,7 @@ RUN apt install npm -y
 RUN npm i -g n
 RUN n i 16
 RUN path=path
+RUN hash -r
 RUN git clone https://github.com/Krakinz/Sakura.git
 RUN apt install nodejs -y
 RUN cd Sakura
