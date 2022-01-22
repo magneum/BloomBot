@@ -6,17 +6,29 @@
 exports.Hold = async (ֆǟӄʊʀǟ) => {
   const fs = require("fs");
   const File = "./Sakura🛰️Server/Coolist.json";
-  const jsoncool = await JSON.parse(fs.readFileSync(File));
-  await jsoncool.push(ֆǟӄʊʀǟ.sender);
-  fs.writeFileSync(File, JSON.stringify(jsoncool));
-  console.log("Logged-ID");
-  console.log(Time);
-  setTimeout((ℓαвєяяσя) => {
-    if (ℓαвєяяσя) return console.log(ℓαвєяяσя);
-    jsoncool.splice(ֆǟӄʊʀǟ.sender);
+  if (ֆǟӄʊʀǟ.fromMe) {
+    const jsoncool = await JSON.parse(fs.readFileSync(File));
+    await jsoncool.push(ֆǟӄʊʀǟ.sender);
     fs.writeFileSync(File, JSON.stringify(jsoncool));
-    console.log("Un-Logged-ID");
-  }, 15000);
+    console.log("Logged-ID " + ֆǟӄʊʀǟ.sender);
+    setTimeout((ℓαвєяяσя) => {
+      if (ℓαвєяяσя) return console.log(ℓαвєяяσя);
+      jsoncool.splice(ֆǟӄʊʀǟ.sender);
+      fs.writeFileSync(File, JSON.stringify(jsoncool));
+      console.log("Un-Logged-ID" + ֆǟӄʊʀǟ.sender);
+    }, 15000);
+  } else {
+    const jsoncool = await JSON.parse(fs.readFileSync(File));
+    await jsoncool.push(ֆǟӄʊʀǟ.sender);
+    fs.writeFileSync(File, JSON.stringify(jsoncool));
+    console.log("Logged-ID " + ֆǟӄʊʀǟ.sender);
+    setTimeout((ℓαвєяяσя) => {
+      if (ℓαвєяяσя) return console.log(ℓαвєяяσя);
+      jsoncool.splice(ֆǟӄʊʀǟ.sender);
+      fs.writeFileSync(File, JSON.stringify(jsoncool));
+      console.log("Un-Logged-ID" + ֆǟӄʊʀǟ.sender);
+    }, 15000);
+  }
 };
 `|🍹|`;
 `|🍹|`;
