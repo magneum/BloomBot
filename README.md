@@ -26,8 +26,8 @@
 <img align="left"  height="200" src="https://i.postimg.cc/4dQvSpCZ/image.gif">
 <img align="centre"  height="200" src="https://i.postimg.cc/4dQvSpCZ/image.gif">
 
-- ֆǟӄʊʀǟ™: Dont' Forget to turn on DYNO: worker && You on Your Own!
+(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 - 'ᴅᴏɴᴛ ꜰᴏʀɢᴇᴛ ᴛᴏ ᴛᴜʀɴ ᴏɴ ᴅʏɴᴏ: ᴡᴏʀᴋᴇʀ & ʏᴏᴜ ᴏɴ ʏᴏᴜʀ ᴏᴡɴ!'
 
-- [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Krakinz/Sakura.git/tree/KrakinzLab)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Krakinz/Sakura.git/tree/KrakinzLab)
 
 # ☣️ [`𝕷𝖎𝖈𝖊𝖓𝖘𝖊`](LICENSE)
