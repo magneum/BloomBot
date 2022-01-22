@@ -51,17 +51,26 @@
                 )
               );
             } catch (ℓαвєяяσя) {
-              Kolor.red(
-                `❌ERROR ⬰ 𝗠𝗲𝗿𝗴𝗲 𝗿𝗲𝘀𝘂𝗹𝘁𝗲𝗱 𝗶𝗻 ${Kolor.red(ℓαвєяяσя)} 𝗰𝗼𝗻𝗳𝗹𝗶𝗰𝘁𝘀!`
+              console.log(
+                Kolor.red(
+                  `❌ERROR ⬰ 𝗠𝗲𝗿𝗴𝗲 𝗿𝗲𝘀𝘂𝗹𝘁𝗲𝗱 𝗶𝗻 ${Kolor.red(
+                    ℓαвєяяσя
+                  )} 𝗰𝗼𝗻𝗳𝗹𝗶𝗰𝘁𝘀!`
+                )
               );
             }
           } else if (update && update.summary.changes) {
-            var child = require(`child_process`).exec(
-              `python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`
-            );
+            var child = require(`child_process`).exec(`npm i --force`);
             child.stdout.pipe(process.stdout);
             child.on(`exit`, async function () {
               process.exitCode = 1;
+              var child = require(`child_process`).exec(
+                `python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`
+              );
+              child.stdout.pipe(process.stdout);
+              child.on(`exit`, async function () {
+                process.exitCode = 1;
+              });
             });
           }
         });
