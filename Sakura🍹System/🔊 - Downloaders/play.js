@@ -180,10 +180,10 @@ chat,
 𝗣𝗹𝗲𝗮𝘀𝗲 𝗖𝗵𝗼𝗼𝘀𝗲 𝗦𝗺𝗮𝗹𝗹𝗲𝗿 𝐀𝐮𝐝𝐢𝐨 𝗧𝗵𝗲𝗻 10-𝗺𝗶𝗻𝘂𝘁𝗲𝘀!
 
 ────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-🍻𝐓𝐢𝐭𝐥𝐞⤞ ${youfound.title}
-⏰𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧⤞ ${youfound.timestamp}
-📜𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧⤞ ${youfound.description}
-🔗𝐋𝐢𝐧𝐤⤞ ${youfound.url}
+🍻𝐓𝐢𝐭𝐥𝐞: ${youfound.title}
+⏰𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧: ${youfound.timestamp}
+📜𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${youfound.description}
+🔗𝐋𝐢𝐧𝐤: ${youfound.url}
 `,
 youfound.thumbnail
 );
@@ -197,12 +197,12 @@ chat,
 ⭕𝐀𝐮𝐝𝐢𝐨 𝗣𝗹𝗲𝗮𝘀𝗲 𝘄𝗮𝗶𝘁 𝗳𝗼𝗿 𝘁𝗵𝗲 𝗱𝗲𝗹𝗶𝘃𝗲𝗿𝘆 𝗼𝗳 𝐀𝐮𝐝𝐢𝐨!
 
 ────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-🍻𝐓𝐢𝐭𝐥𝐞⤞ ${youfound.title}
-🙈𝐕𝐢𝐞𝐰𝐬⤞ ${youfound.views}
-⏰𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧⤞ ${youfound.timestamp}
-✒️𝐀𝐮𝐭𝐡𝐨𝐫⤞ ${youfound.author.name}
-📜𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧⤞ ${youfound.description}
-🔗𝐋𝐢𝐧𝐤⤞ ${youfound.url}`,
+🍻𝐓𝐢𝐭𝐥𝐞: ${youfound.title}
+🙈𝐕𝐢𝐞𝐰𝐬: ${youfound.views}
+⏰𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧: ${youfound.timestamp}
+✒️𝐀𝐮𝐭𝐡𝐨𝐫: ${youfound.author.name}
+📜𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${youfound.description}
+🔗𝐋𝐢𝐧𝐤: ${youfound.url}`,
 youfound.thumbnail
 );
 URL = youfound.url;
