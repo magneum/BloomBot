@@ -5,11 +5,10 @@
 `|🍹|`;
 (async () => {
   const { ֆǟӄʊʀǟ } = require(`../Sakura🛰️Server/🍹ֆǟӄʊʀǟ™`);
-  const AutoKrakz = require(`../Sakura🛰️Server/ֆǟӄʊʀǟɢɪᴛ`);
   const _𝔏𝔞𝔟_ = require(`../Sakura🛰️Server/_𝔏𝔞𝔟_`);
   const ֆǟӄʊʀǟgoose = require("mongoose");
   const Kolor = require(`chalk`);
-  ֆǟӄʊʀǟgoose
+  await ֆǟӄʊʀǟgoose
     .connect(_𝔏𝔞𝔟_.SAKURAMDB, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
@@ -21,8 +20,36 @@
       process.exit(0);
     });
   console.log(Kolor.green(`🍹INFO ⬰ ֆǟӄʊʀǟgoose Connecting!`));
-  AutoKrakz();
-  ֆǟӄʊʀǟ();
+  const ᴍɪᴢᴜᴋɪɢɪᴛ = require(`simple-git`)();
+  await ᴍɪᴢᴜᴋɪɢɪᴛ.fetch();
+  var ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ = await ᴍɪᴢᴜᴋɪɢɪᴛ.log([`KrakinzLab..origin/KrakinzLab`]);
+  if (ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total != 0) {
+    require(`simple-git`)()
+      .exec(async () => {
+        console.log(
+          Kolor.green(
+            `⬡==========================⬡    🍹Starting Sakura pull...`
+          )
+        );
+      })
+      .pull(async (ℓαвєяяσя, update) => {
+        if (ℓαвєяяσя) {
+          try {
+            const mergeSummary = await ᴍɪᴢᴜᴋɪɢɪᴛ.merge();
+            console.log(`Merged ${mergeSummary.merges.length} files`);
+          } catch (ℓαвєяяσя) {
+            console.log(`Merge resulted in ${Kolor.red(ℓαвєяяσя)} conflicts`);
+          }
+        } else if (update && update.summary.changes) {
+          var child = require(`child_process`).exec(`python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`);
+          child.stdout.pipe(process.stdout);
+          child.on(`exit`, async function () {
+            process.exitCode = 1;
+          });
+        }
+      });
+  }
+  await ֆǟӄʊʀǟ();
 })();
 `|🍹|`;
 `|🍹|`;

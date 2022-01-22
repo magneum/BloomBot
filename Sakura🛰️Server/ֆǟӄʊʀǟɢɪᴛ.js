@@ -10,11 +10,12 @@ const gitPull = async () => {
   await git.fetch();
   var newCommits = await git.log([`KrakinzLab..origin/KrakinzLab`]);
   if (newCommits.total) {
+    exec(`git config pull.rebase false`);
     console.log(chalk.blueBright(`💡INFO ⬰ 𝐍𝐞𝐰 𝐔𝐩𝐝𝐚𝐭𝐞 𝐩𝐞𝐧𝐝𝐢𝐧𝐠, 𝐮𝐩𝐝𝐚𝐭𝐢𝐧𝐠...`));
     await git.pull(`origin`, `KrakinzLab`, (err, update) => {
       if (update && update.summary.changes) {
         if (update.files.includes(`package.json`)) {
-          exec(`npm i --force`).stderr.pipe(process.stderr);
+          exec(`npm i --force`);
         }
         console.log(
           chalk.bgGreenBright.black(

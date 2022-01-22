@@ -9,7 +9,6 @@ const Sakura_Buttons = require(`./Sakura_Buttons`);
 const Sakura_Static = require(`./Sakura_Static`);
 const ֆǟӄʊʀǟֆʏռօք = require(`./ֆǟӄʊʀǟᴢᴇɴ`);
 const moment = require(`moment-timezone`);
-const AutoKrakz = require(`./ֆǟӄʊʀǟɢɪᴛ`);
 const PostDataBase = require(`./postDb`);
 const speed = require(`performance-now`);
 const { ʄǟռƈʏ } = require(`../ʄǟռƈʏ`);
@@ -85,7 +84,6 @@ async function ֆǟӄʊʀǟ() {
       `⬡==========================⬡    🍹 ֆǟӄʊʀǟ™ 🍹    ⬡==========================⬡`
     )
   );
-  await AutoKrakz();
   try {
     var session = ֆǟӄʊʀǟֆʏռօք.Mee6reignite(_𝔏𝔞𝔟_.SAKURA);
     ӄʀǟӄɨռʐ.loadAuthInfo(session);
