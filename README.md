@@ -18,8 +18,7 @@
 ║シ︎ ⚙️𝐄𝐧𝐠𝐢𝐧𝐞: ⋊ʀʏᴏ
 ║シ︎ 💻𝐏𝐥𝐚𝐭𝐅𝐨𝐫𝐦: python:latest (linux)
 ║シ︎ 🛰️𝐋𝐚𝐭𝐞𝐧𝐜𝐲: max 0.0098ms
-║シ︎ ☕𝐔𝐩𝐓𝐢𝐦𝐞: Forever
-║シ︎ 🎮𝐑𝐀𝐌: 60gb/User-Bot
+║シ︎ 🎮𝐑𝐀𝐌: 60gb/User-Bot (if heroku)
 ╚════════════╝
 ```
 
