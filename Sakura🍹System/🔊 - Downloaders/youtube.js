@@ -247,7 +247,7 @@ await userBadge
 .catch((ℓαвєяяσя) =>
 ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
 );
-await Sakura_Buttons.MTB(
+Sakura_Buttons.MTB(
 ӄʀǟӄɨռʐ,
 chat,
 ֆǟӄʊʀǟ,
