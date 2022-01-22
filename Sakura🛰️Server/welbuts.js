@@ -59,7 +59,7 @@ exports.welbuts = async (
     try {
       𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄʀǟӄɨռʐ.getProfilePicture(`${MemNum.split(`@`)[0]}@c.us`);
     } catch {
-      𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = `https://i.postimg.cc/6QmT53dR/Npp.png`;
+      𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = "./Sakura☣️Reactor/ֆǟӄʊʀǟ_Npp.png";
     }
 
     const downloader = await new Downloader({
