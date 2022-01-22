@@ -9,7 +9,7 @@ from os import getenv
 import os
 from dotenv import load_dotenv
 
-load_dotenv("./Sakura☣️Reactor.env")
+load_dotenv("./🍹ֆǟӄʊʀǟ™.env")
 爪𝖟𝖚ӄ𝖎 = getenv("HEROKU", None)
 爪𝖎𝖟𝖚ӄ = getenv("HEROKU", None)
 爪𝖎𝖟𝖚ӄ𝖎 = getenv("CODE", None)
