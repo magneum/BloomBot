@@ -23,7 +23,7 @@ var newScpt = scriptName.slice(0, -3).toLowerCase();
 //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
 module.exports = {
 name: newScpt,
-ֆǟӄʊʀǟӄǟɨʐօ: `*${ᴋᴇɪ}song* [name]
+ֆǟӄʊʀǟӄǟɨʐօ: `*${ᴋᴇɪ}youtube* [name]
 🔎𝐒𝐞𝐚𝐫𝐜𝐡 𝐘𝐨𝐮𝐓𝐮𝐛𝐞? _${ᴋᴇɪ}ytsearch_`,
 async handle(ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
 try {
@@ -163,7 +163,7 @@ var TubeSearch = await yts(Needs.join(" "));
 var Tube = TubeSearch.videos.slice(0, 1);
 console.log(Tube[0]);
 Tube.forEach(async function (Found) {
-if (Found.seconds > `1200`) {
+if (Found.seconds > `600`) {
 userBadge.Limits = userBadge.Limits + 1;
 await userBadge
 .save()
@@ -174,8 +174,8 @@ Sakura_Buttons.MIB(
 ӄʀǟӄɨռʐ,
 chat,
 ֆǟӄʊʀǟ,
-`⭕𝐀𝐮𝐝𝐢𝐨 @${ꜱᴇɴᴅᴇʀeceived}, 
-𝗣𝗹𝗲𝗮𝘀𝗲 𝗖𝗵𝗼𝗼𝘀𝗲 𝗦𝗺𝗮𝗹𝗹𝗲𝗿 𝐀𝐮𝐝𝐢𝐨 𝗧𝗵𝗲𝗻 20-𝗺𝗶𝗻𝘂𝘁𝗲𝘀!
+`📺𝐕𝐢𝐝𝐞𝐨 @${ꜱᴇɴᴅᴇʀeceived}, 
+𝗣𝗹𝗲𝗮𝘀𝗲 𝗖𝗵𝗼𝗼𝘀𝗲 𝗦𝗺𝗮𝗹𝗹𝗲𝗿 𝐕𝐢𝐝𝐞𝐨 𝗧𝗵𝗲𝗻 10-𝗺𝗶𝗻𝘂𝘁𝗲𝘀!
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 ║🍻 𝐓𝐢𝐭𝐥𝐞⤞ ${Found.title}
@@ -188,34 +188,21 @@ Found.thumbnail
 );
 return;
 }
-Sakura_Buttons.MIB(
+Sakura_Buttons.MTB(
 ӄʀǟӄɨռʐ,
 chat,
 ֆǟӄʊʀǟ,
-`⭕𝐀𝐮𝐝𝐢𝐨 @${ꜱᴇɴᴅᴇʀeceived}, 
-𝗣𝗹𝗲𝗮𝘀𝗲 𝘄𝗮𝗶𝘁 𝗳𝗼𝗿 𝘁𝗵𝗲 𝗱𝗲𝗹𝗶𝘃𝗲𝗿𝘆 𝗼𝗳 𝐀𝐮𝐝𝐢𝐨!
-
-╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-║🍻 𝐓𝐢𝐭𝐥𝐞: ${Found.title}
-║🙈 𝐕𝐢𝐞𝐰𝐬: ${Found.views}
-║⏰ 𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧: ${Found.timestamp}
-║✒️ 𝐀𝐮𝐭𝐡𝐨𝐫: ${Found.author.name}
-║📜 𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${Found.description}
-║🔗 𝐋𝐢𝐧𝐤: ${Found.url}
-╚════════════╝`,
-Found.thumbnail
+`📺𝐕𝐢𝐝𝐞𝐨 @${ꜱᴇɴᴅᴇʀeceived}, 𝗣𝗹𝗲𝗮𝘀𝗲 𝘄𝗮𝗶𝘁 𝗳𝗼𝗿 𝘁𝗵𝗲 𝗱𝗲𝗹𝗶𝘃𝗲𝗿𝘆 𝗼𝗳 𝐕𝐢𝐝𝐞𝐨!`
 ).catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
 //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
 const { id } = getVideoId(Found.url);
-let stream = ytdl(id, {
-quality: "highestaudio",
-});
+let stream = ytdl(id);
 let start = Date.now();
-let YouTY = `${id}${start.toString()}.mp3`;
+let YouTY = `${id}${start.toString()}.mp4`;
 //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
 try {
 ffmpeg(stream)
-.audioBitrate(128)
+.videoBitrate(128)
 .save(`${__dirname}/${YouTY}`)
 .on("progress", (p) => {
 readline.cursorTo(process.stdout, 0);
@@ -227,10 +214,20 @@ console.log(`\nTime Taken: ${(Date.now() - start) / 1000}s`);
 .sendMessage(
 ֆǟӄʊʀǟ.chatId,
 fs.readFileSync(`${__dirname}/${YouTY}`),
-MessageType.audio,
+MessageType.video,
 {
 quoted: chat,
 mimetype: "audio/mp4",
+caption: `📺𝐕𝐢𝐝𝐞𝐨 @${ꜱᴇɴᴅᴇʀeceived}, 
+
+╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+║🍻 𝐓𝐢𝐭𝐥𝐞: ${Found.title}
+║🙈 𝐕𝐢𝐞𝐰𝐬: ${Found.views}
+║⏰ 𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧: ${Found.timestamp}
+║✒️ 𝐀𝐮𝐭𝐡𝐨𝐫: ${Found.author.name}
+║📜 𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${Found.description}
+║🔗 𝐋𝐢𝐧𝐤: ${Found.url}
+╚════════════╝`,
 }
 )
 .catch((ℓαвєяяσя) =>
