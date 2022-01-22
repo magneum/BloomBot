@@ -162,7 +162,7 @@ chat,
 var TubeSearch = await yts(Needs.join(" "));
 var Tube = TubeSearch.videos.slice(0, 1);
 console.log(Tube[0]);
-Tube.forEach(function (Found) {
+Tube.forEach(async function (Found) {
 if (Found.seconds > `1800`) {
 userBadge.Limits = userBadge.Limits + 1;
 await userBadge
