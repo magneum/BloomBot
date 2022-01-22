@@ -38,10 +38,7 @@ const env = {
   INVL: `https://i.postimg.cc/XqPBcyq0/image.png`,
   MEE: `https://i.postimg.cc/XqPBcyq0/image.png`,
   HASH: `https://chat.whatsapp.com/LKN8uVBd8ucHRHofz0jBSd`,
-  DEV:
-    process.env.SUDO === undefined
-      ? `918436686758,917430922909`
-      : `918436686758,917430922909,` + process.env.SUDO,
+  DEV: `918436686758,917430922909`,
   HEROKU: process.env.HEROKU,
   SAKURAQL: (process.env.SAKURAQL =
     process.env.SAKURAQL === undefined
