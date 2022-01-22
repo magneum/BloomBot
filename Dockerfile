@@ -15,6 +15,7 @@ RUN apt install python3-pip -y
 RUN apt install npm -y
 RUN npm i -g n
 RUN n i 16
+RUN path=path
 RUN git clone https://github.com/Krakinz/Sakura.git
 RUN apt install nodejs -y
 RUN cd Sakura
