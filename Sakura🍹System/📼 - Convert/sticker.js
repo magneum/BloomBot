@@ -154,8 +154,8 @@ chat,
 ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
 );
 }
-if (FileType.endsWith(".jpeg")) {
 // ====================================================================================================== JPEG
+if (FileType.endsWith(".jpeg")) {
 ffmpeg(`${FileName}.jpeg`)
 .outputOptions([`-y`, `-vcodec libwebp`])
 .videoFilters(
