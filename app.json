@@ -1,6 +1,6 @@
 {
-  "logo": "https://i.postimg.cc/sDXbg5xF/image.png",
-  "name": "𝓜𝖎𝖟𝖚ӄ𝖎™",
+  "logo": "https://i.postimg.cc/XqPBcyq0/image.png",
+  "name": "🍹ֆǟӄʊʀǟ™",
   "repository": "https://github.com/Krakinz/Sakura.git",
   "stack": "container",
   "description": "ᴀᴅᴠᴀɴᴄᴇᴅ ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ 80+ ᴄᴏᴍᴍᴀɴᴅꜱ ꜰᴏʀ ʙᴏᴛʜ ᴘʀɪᴠᴀᴛᴇ ᴀɴᴅ ɢʀᴏᴜᴘ-ᴜꜱᴀɢᴇ",
@@ -17,8 +17,7 @@
   "env": {
     "SAKURA": {
       "description": "Put Your Sakura Session Code.",
-      "required": true,
-      "value": "--------------------------------"
+      "required": true
     },
 
     "HEROKU": {
@@ -46,13 +45,11 @@
     },
     "CCD": {
       "description": "Put Your Country Code",
-      "required": true,
-      "value": "--------------------------------"
+      "required": true
     },
     "CODE": {
       "description": "Top Secret KrakinzLab Code",
-      "required": true,
-      "value": "--------------------------------"
+      "required": true
     }
   }
 }

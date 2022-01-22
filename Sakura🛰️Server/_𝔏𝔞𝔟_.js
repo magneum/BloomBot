@@ -25,7 +25,6 @@ const env = {
     process.env.HEROKU_APP_NAME === undefined
       ? `Null`
       : process.env.HEROKU_APP_NAME,
-  Krakinz: process.env.Krakinz === undefined ? `Null` : process.env.Krakinz,
   IMDB: `5e36f0db`,
   FOXTROT: `^[/]`,
   CCD: process.env.CCD === undefined ? `91` : process.env.CCD,
