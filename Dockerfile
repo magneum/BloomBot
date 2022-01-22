@@ -12,7 +12,9 @@ RUN apt install python3 -y
 RUN apt install bpm-tools -y
 RUN apt install opus-tools -y
 RUN apt install python3-pip -y
-RUN curl -sL https://deb.nodesource.com/setup_16.x | bash -
+RUN apt install npm -y
+RUN npm i -g n
+RUN n i 16
 RUN git clone https://github.com/Krakinz/Sakura.git
 RUN apt install nodejs -y
 RUN cd Sakura
