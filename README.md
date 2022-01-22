@@ -2,7 +2,7 @@
 
 # 🍹(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭
 
-<img align="centre" width="50" src="https://i.postimg.cc/XqPBcyq0/image.png">
+<p align="centre"><img  width="80%" height="80%" img src="https://github.com/Krakinz/Sakura/blob/KrakinzLab/Sakura%E2%98%A3%EF%B8%8FReactor/%D6%86%C7%9F%D3%84%CA%8A%CA%80%C7%9F.png" /></p>
 
 🔸[ᴡʜᴀᴛꜱᴀᴘᴘ](https://chat.whatsapp.com/LKN8uVBd8ucHRHofz0jBSd) 🔸[ᴅɪꜱᴄᴏʀᴅ](https://discord.gg/xcFN6NDHEV)
 
