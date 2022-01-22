@@ -17,12 +17,12 @@
       useFindAndModify: false,
     })
     .then(async () => {
-      console.log(Kolor.bgGreenBright.black(`ʍɨʐʊӄɨgoose Connecting!`));
+      console.log(Kolor.green(`ʍɨʐʊӄɨgoose Connecting!`));
       await AutoKrakz();
       await ֆǟӄʊʀǟ();
     })
     .catch((err) => {
-      console.log(Kolor.bgRedBright.black(`ʍɨʐʊӄɨgoose Error: \n${err}`));
+      console.log(Kolor.red(`ʍɨʐʊӄɨgoose Error: \n${err}`));
       process.exit(1);
     });
 })();

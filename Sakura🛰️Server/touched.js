@@ -13,7 +13,7 @@ fs.writeFile(
   `utf8`,
   function (err) {
     if (err) console.log(err);
-    console.log("💡INFO ⬰ Coolist.json Content: " + jsonContent);
+    console.log("💡INFO ⬰ 𝗖𝗼𝗼𝗹𝗶𝘀𝘁.𝗷𝘀𝗼𝗻 𝗖𝗼𝗻𝘁𝗲𝗻𝘁: " + jsonContent);
     console.log(
       "⬡==========================⬡    🍹 ֆǟӄʊʀǟ™ 🍹    ⬡==========================⬡"
     );
