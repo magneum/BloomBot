@@ -343,7 +343,7 @@ const groupMetadata = sender.endsWith(`@g.us`)
 : ``;
 var ֆǟӄʊʀǟ = ֆǟӄʊʀǟǟքք.resolve(chat, ӄʀǟӄɨռʐ, groupMetadata);
 //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
-if (ֆǟӄʊʀǟ.isGroup && !ֆǟӄʊʀǟ.sender == ֆǟӄʊʀǟ.owner) {
+if (ֆǟӄʊʀǟ.isGroup) {
 var ꜱᴇɴᴅᴇʀɪᴅ = ֆǟӄʊʀǟ.sender;
 var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
 const UsersSakura = require(`../Sakura🍃Goose/experience.js`);
