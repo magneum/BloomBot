@@ -45,64 +45,60 @@ exports.catch = async (ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat) =>
   const defaultnm = ֆǟӄʊʀǟ.commandName;
   const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
   `⬡🍹⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-  await ӄʀǟӄɨռʐ
-    .sendMessage(
-      ֆǟӄʊʀǟ.chatId,
-      {
-        contentText: `*🍹 Try Again Later!*
-
-*Error:* ${ℓαвєяяσя}`,
-        footerText: `🍹(©️)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭\n${Clock}`,
-        buttons: [
-          {
-            buttonId: `${ᴋᴇɪ}bugreport`,
-            buttonText: { displayText: `${ᴋᴇɪ}bugreport` },
-            type: 1,
-          },
-          {
-            buttonId: `${ᴋᴇɪ}help`,
-            buttonText: { displayText: `${ᴋᴇɪ}help` },
-            type: 1,
-          },
-        ],
-        headerType: 1,
-      },
-      MessageType.buttonsMessage,
-      {
-        quoted: chat,
-        contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
-      }
-    )
-    .then(console.log(ℓαвєяяσя));
+  await ӄʀǟӄɨռʐ.sendMessage(
+    ֆǟӄʊʀǟ.chatId,
+    {
+      contentText: `*🍹 Try Again Later!*`,
+      footerText: `🍹(©️)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭\n${Clock}`,
+      buttons: [
+        {
+          buttonId: `${ᴋᴇɪ}bugreport`,
+          buttonText: { displayText: `${ᴋᴇɪ}bugreport` },
+          type: 1,
+        },
+        {
+          buttonId: `${ᴋᴇɪ}help`,
+          buttonText: { displayText: `${ᴋᴇɪ}help` },
+          type: 1,
+        },
+      ],
+      headerType: 1,
+    },
+    MessageType.buttonsMessage,
+    {
+      quoted: chat,
+      contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
+    }
+  );
   `⬡🍹⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-  return await ӄʀǟӄɨռʐ
-    .sendMessage(
-      ֆǟӄʊʀǟ.Myself,
-      {
-        contentText: `*🍹 Try Again Later!*
+  await ӄʀǟӄɨռʐ.sendMessage(
+    ֆǟӄʊʀǟ.Myself,
+    {
+      contentText: `*🍹 Try Again Later!*
 
 *Error:* ${ℓαвєяяσя}`,
-        footerText: `🍹(©️)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭\n${Clock}`,
-        buttons: [
-          {
-            buttonId: `${ᴋᴇɪ}bugreport`,
-            buttonText: { displayText: `${ᴋᴇɪ}bugreport` },
-            type: 1,
-          },
-          {
-            buttonId: `${ᴋᴇɪ}help`,
-            buttonText: { displayText: `${ᴋᴇɪ}help` },
-            type: 1,
-          },
-        ],
-        headerType: 1,
-      },
-      MessageType.buttonsMessage,
-      {
-        quoted: chat,
-      }
-    )
-    .then(console.log(ℓαвєяяσя));
+      footerText: `🍹(©️)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭\n${Clock}`,
+      buttons: [
+        {
+          buttonId: `${ᴋᴇɪ}bugreport`,
+          buttonText: { displayText: `${ᴋᴇɪ}bugreport` },
+          type: 1,
+        },
+        {
+          buttonId: `${ᴋᴇɪ}help`,
+          buttonText: { displayText: `${ᴋᴇɪ}help` },
+          type: 1,
+        },
+      ],
+      headerType: 1,
+    },
+    MessageType.buttonsMessage,
+    {
+      quoted: chat,
+    }
+  );
+  console.log(ℓαвєяяσя);
+  return;
 };
 `|🍹|`;
 `|🍹|`;
