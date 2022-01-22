@@ -6,14 +6,14 @@
 const Sakura_Buttons = require(`../../Sakura🛰️Server/Sakura_Buttons`);
 const Sakura_Static = require(`../../Sakura🛰️Server/Sakura_Static`);
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
-const Jwork = require("../../Sakura🛰️Server/FISH/works.json");
+const Jwork = require(`../../Sakura🛰️Server/FISH/works.json`);
 const JworkR = Jwork[Math.floor(Math.random() * Jwork.length)];
 const Economy = require(`../../Sakura🍃Goose/economy`);
 const _𝔏𝔞𝔟_ = require(`../../Sakura🛰️Server/_𝔏𝔞𝔟_`);
 const ꜰᴜᴄᴋ = require(`../../Sakura🛰️Server/oShit`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
-const ms = require("parse-ms");
+const ms = require(`parse-ms`);
 const fs = require(`fs`);
 var path = require(`path`);
 var scriptName = path.basename(__filename);
@@ -37,7 +37,7 @@ module.exports = {
         );
       }
       //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
-      const hold = require("../../Sakura🛰️Server/Hold");
+      const hold = require(`../../Sakura🛰️Server/Hold`);
       hold.Hold(ֆǟӄʊʀǟ);
       //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
       Economy.findOne(

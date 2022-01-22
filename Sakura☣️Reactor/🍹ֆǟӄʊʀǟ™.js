@@ -9,22 +9,20 @@
   const _𝔏𝔞𝔟_ = require(`../Sakura🛰️Server/_𝔏𝔞𝔟_`);
   const ʍɨʐʊӄɨgoose = require("mongoose");
   const Kolor = require(`chalk`);
-  await ʍɨʐʊӄɨgoose
+  ʍɨʐʊӄɨgoose
     .connect(_𝔏𝔞𝔟_.SAKURAMDB, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
       useCreateIndex: true,
       useFindAndModify: false,
     })
-    .then(async () => {
-      console.log(Kolor.green(`🍹INFO ⬰ ʍɨʐʊӄɨgoose Connecting!`));
-      await AutoKrakz();
-      await ֆǟӄʊʀǟ();
-    })
     .catch((err) => {
       console.log(Kolor.red(`🍹INFO ⬰ ʍɨʐʊӄɨgoose Error: \n${err}`));
-      process.exit(1);
+      process.exit(0);
     });
+  console.log(Kolor.green(`🍹INFO ⬰ ʍɨʐʊӄɨgoose Connecting!`));
+  AutoKrakz();
+  ֆǟӄʊʀǟ();
 })();
 `|🍹|`;
 `|🍹|`;

@@ -37,7 +37,7 @@ module.exports = {
       const defaultnm = ֆǟӄʊʀǟ.commandName;
       const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
       //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
-      const hold = require("../../Sakura🛰️Server/Hold");
+      const hold = require(`../../Sakura🛰️Server/Hold`);
       hold.Hold(ֆǟӄʊʀǟ);
       //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
       if (!ֆǟӄʊʀǟ.isGroup) {
@@ -71,7 +71,7 @@ module.exports = {
       try {
         𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄʀǟӄɨռʐ.getProfilePicture(ֆǟӄʊʀǟ.sender);
       } catch {
-        𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = "./Sakura☣️Reactor/ֆǟӄʊʀǟ_Npp.png";
+        𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = `./Sakura☣️Reactor/ֆǟӄʊʀǟ_Npp.png`;
       }
       //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
       UsersSakura.findOne(
@@ -91,7 +91,7 @@ module.exports = {
           } else {
             //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
             var background = await Canvas.loadImage(
-              "https://i.postimg.cc/htTPpb6w/Rank.png"
+              `https://i.postimg.cc/htTPpb6w/Rank.png`
             );
             ctx.drawImage(background, 0, 0, 1366, 768);
             ctx.beginPath();

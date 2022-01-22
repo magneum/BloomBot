@@ -7,7 +7,7 @@ const Sakura_Buttons = require(`../../Sakura🛰️Server/Sakura_Buttons`);
 const Sakura_Static = require(`../../Sakura🛰️Server/Sakura_Static`);
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const Economy = require(`../../Sakura🍃Goose/economy`);
-const ms = require("parse-ms");
+const ms = require(`parse-ms`);
 const _𝔏𝔞𝔟_ = require(`../../Sakura🛰️Server/_𝔏𝔞𝔟_`);
 const ꜰᴜᴄᴋ = require(`../../Sakura🛰️Server/oShit`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
@@ -35,7 +35,7 @@ module.exports = {
         );
       }
       //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
-      const hold = require("../../Sakura🛰️Server/Hold");
+      const hold = require(`../../Sakura🛰️Server/Hold`);
       hold.Hold(ֆǟӄʊʀǟ);
       //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
       Economy.findOne(
