@@ -2,7 +2,7 @@
 
 # 🍹ֆǟӄʊʀǟ™
 
-<img align="centre" height="60" src="https://i.postimg.cc/XqPBcyq0/image.png">
+<img align="centre" height="100" width="100" src="https://i.postimg.cc/XqPBcyq0/image.png">
 
 🔸[ᴡʜᴀᴛꜱᴀᴘᴘ](https://chat.whatsapp.com/LKN8uVBd8ucHRHofz0jBSd) 🔸[ᴅɪꜱᴄᴏʀᴅ](https://discord.gg/xcFN6NDHEV)
 
