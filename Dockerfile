@@ -10,6 +10,7 @@ RUN apt install -y bpm-tools
 RUN curl -sL https://deb.nodesource.com/setup_16.x | bash -
 RUN git clone https://github.com/Krakinz/Sakura.git
 RUN apt install -y nodejs
+RUN apt install -y npm
 RUN cd Sakura
 WORKDIR /Sakura
 RUN npm i --force
