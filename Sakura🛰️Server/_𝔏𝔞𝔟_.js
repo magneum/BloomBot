@@ -5,9 +5,9 @@
 `|🍹|`;
 const fs = require(`fs`);
 const { Sequelize } = require(`sequelize`);
-if (fs.existsSync(`Sakura☣️Reactor.env`)) {
+if (fs.existsSync(`🍹ֆǟӄʊʀǟ™.env`)) {
   require(`dotenv`).config({
-    path: `./Sakura☣️Reactor.env`,
+    path: `./🍹ֆǟӄʊʀǟ™.env`,
   });
 } else {
   require(`dotenv`);
@@ -42,10 +42,10 @@ const env = {
   HEROKU: process.env.HEROKU,
   SAKURAQL: (process.env.SAKURAQL =
     process.env.SAKURAQL === undefined
-      ? `./Sakura☣️Reactor/Sakura☣️Reactor.db`
+      ? `./Sakura☣️Reactor/🍹ֆǟӄʊʀǟ™.db`
       : process.env.SAKURAQL),
   POSTQL:
-    process.env.SAKURAQL === `./Sakura☣️Reactor/Sakura☣️Reactor.db`
+    process.env.SAKURAQL === `./Sakura☣️Reactor/🍹ֆǟӄʊʀǟ™.db`
       ? new Sequelize({ dialect: `sqlite`, storage: process.env.SAKURAQL })
       : new Sequelize(process.env.SAKURAQL, {
           dialect: `postgres`,
