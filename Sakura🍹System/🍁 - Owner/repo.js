@@ -45,7 +45,7 @@ chat,
 ║📓 𝐑𝐞𝐩𝐨: https://github.com/Krakinz/Sakura
 ║⚙️ 𝐄𝐧𝐠𝐢𝐧𝐞: ⋊ʀʏᴏ
 ╚════════════╝`,
-"./Sakura☣️Reactor/ֆǟӄʊʀǟ_Repo.png"
+"https://i.postimg.cc/CLGcLpZS/Repo.png"
 );
 } catch (ℓαвєяяσя) {
 ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
