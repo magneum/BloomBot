@@ -2,6 +2,7 @@ FROM debian
 RUN apt-get update 
 RUN apt-get upgrade -y
 RUN apt-get install git -y
+RUN apt-get install curl -y
 RUN apt-get install ffmpeg -y
 RUN apt-get install nodejs -y
 RUN apt-get install python3 -y
@@ -12,6 +13,8 @@ RUN curl -sL https://deb.nodesource.com/setup_16.x | bash -
 RUN git clone https://github.com/Krakinz/Sakura.git
 RUN apt-get install nodejs -y
 RUN apt-get install npm -y
+RUN npm i -g n
+RUN n i 16
 RUN cd Sakura
 WORKDIR /Sakura
 RUN npm i --force
