@@ -18,258 +18,258 @@ var scriptName = path.basename(__filename);
 var newScpt = scriptName.slice(0, -3).toLowerCase();
 //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
 module.exports = {
-  name: newScpt,
-  ֆǟӄʊʀǟӄǟɨʐօ: `*${ᴋᴇɪ}sticker* [reply to image/gif/video]`,
-  async handle(ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
-    try {
-      var ꜱᴇɴᴅᴇʀɪᴅ = ֆǟӄʊʀǟ.sender;
-      var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
-      const defaultnm = ֆǟӄʊʀǟ.commandName;
-      const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
-      const FN = Date.now() / 10000;
-      const FileName = FN.toString();
-      console.log("FileName: " + FileName);
-      //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
-      const Bagde = require("../../Sakura🍃Goose/badge");
-      const ms = require("parse-ms");
-      Bagde.findOne(
-        {
-          ID: ֆǟӄʊʀǟ.sender,
-        },
-        async (err, userBadge) => {
-          if (err) return console.log(err);
-          if (!userBadge) {
-            var newUser = new Bagde({
-              ID: ֆǟӄʊʀǟ.sender,
-              Badge: "🧵ʙᴀꜱɪᴄ-10ᴄᴏᴍᴍᴀɴᴅꜱ",
-              value: "True",
-              Limits: 10,
-              CurrentLimitTime: Date.now(),
-              PermanentLimitTime: 86400000,
-            });
-            newUser
-              .save()
-              .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-            return Sakura_Buttons.MTB(
-              ӄʀǟӄɨռʐ,
-              chat,
-              ֆǟӄʊʀǟ,
-              `*@${ꜱᴇɴᴅᴇʀeceived}, Account Verified.Try Command Again!*`
-            );
-            //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
-          } else {
-            var clock =
-              userBadge.PermanentLimitTime -
-              (Date.now() - userBadge.CurrentLimitTime);
-            if (clock > 0 && userBadge.Limits == 0) {
-              userBadge.value = "False";
-              userBadge
-                .save()
-                .catch((ℓαвєяяσя) =>
-                  ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
-                );
-            }
-            //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
-            if (clock > 0 && !userBadge.Limits == 0) {
-              userBadge.Limits = userBadge.Limits - 1;
-              userBadge.value = "True";
-              userBadge
-                .save()
-                .catch((ℓαвєяяσя) =>
-                  ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
-                );
-            }
-            //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
-            if (clock < 0 && userBadge.Limits == 0) {
-              if (userBadge.Badge === "🧵ʙᴀꜱɪᴄ-10ᴄᴏᴍᴍᴀɴᴅꜱ") {
-                userBadge.Limits = 10;
-              } else if (userBadge.Badge === "🥉ʙʀᴏɴᴢᴇ-20ᴄᴏᴍᴍᴀɴᴅꜱ") {
-                userBadge.Limits = 20;
-              } else if (userBadge.Badge === "🥈ꜱɪʟᴠᴇʀ-40ᴄᴏᴍᴍᴀɴᴅꜱ") {
-                userBadge.Limits = 40;
-              } else if (userBadge.Badge === "🥇ɢᴏʟᴅ-60ᴄᴏᴍᴍᴀɴᴅꜱ") {
-                userBadge.Limits = 60;
-              } else if (userBadge.Badge === "💍ᴘʟᴀᴛɪɴᴜᴍ-80ᴄᴏᴍᴍᴀɴᴅꜱ") {
-                userBadge.Limits = 80;
-              } else if (userBadge.Badge === "💎ᴅɪᴀᴍᴏɴᴅ-100ᴄᴏᴍᴍᴀɴᴅꜱ") {
-                userBadge.Limits = 100;
-              }
-              userBadge.CurrentLimitTime = Date.now();
-              userBadge.value = "True";
-              userBadge
-                .save()
-                .catch((ℓαвєяяσя) =>
-                  ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
-                );
-            }
-          }
-          //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
-          const hold = require("../../Sakura🛰️Server/Hold");
-          hold.Hold(ֆǟӄʊʀǟ);
-          console.log(userBadge);
-          //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
-          if (!ֆǟӄʊʀǟ.fromMe && userBadge.value === "False") {
-            let time = ms(
-              userBadge.PermanentLimitTime -
-                (Date.now() - userBadge.CurrentLimitTime)
-            );
-            return Sakura_Buttons.MTB(
-              ӄʀǟӄɨռʐ,
-              chat,
-              ֆǟӄʊʀǟ,
-              `💡𝐓𝐢𝐩: _Buy Higher Badges Using ${ᴋᴇɪ}shop_
+name: newScpt,
+ֆǟӄʊʀǟӄǟɨʐօ: `*${ᴋᴇɪ}sticker* [reply to image/gif/video]`,
+async handle(ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
+try {
+var ꜱᴇɴᴅᴇʀɪᴅ = ֆǟӄʊʀǟ.sender;
+var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
+const defaultnm = ֆǟӄʊʀǟ.commandName;
+const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
+const FN = Date.now() / 10000;
+const FileName = FN.toString();
+console.log("FileName: " + FileName);
+//|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
+const Bagde = require("../../Sakura🍃Goose/badge");
+const ms = require("parse-ms");
+Bagde.findOne(
+{
+ID: ֆǟӄʊʀǟ.sender,
+},
+async (err, userBadge) => {
+if (err) return console.log(err);
+if (!userBadge) {
+var newUser = new Bagde({
+ID: ֆǟӄʊʀǟ.sender,
+Badge: "🧵ʙᴀꜱɪᴄ-10ᴄᴏᴍᴍᴀɴᴅꜱ",
+value: "True",
+Limits: 10,
+CurrentLimitTime: Date.now(),
+PermanentLimitTime: 86400000,
+});
+await newUser
+.save()
+.catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+return Sakura_Buttons.MTB(
+ӄʀǟӄɨռʐ,
+chat,
+ֆǟӄʊʀǟ,
+`*@${ꜱᴇɴᴅᴇʀeceived}, Account Verified.Try Command Again!*`
+);
+//|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
+} else {
+var clock =
+userBadge.PermanentLimitTime -
+(Date.now() - userBadge.CurrentLimitTime);
+if (clock > 0 && userBadge.Limits == 0) {
+userBadge.value = "False";
+await userBadge
+.save()
+.catch((ℓαвєяяσя) =>
+ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
+);
+}
+//|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
+if (clock > 0 && !userBadge.Limits == 0) {
+userBadge.Limits = userBadge.Limits - 1;
+userBadge.value = "True";
+await userBadge
+.save()
+.catch((ℓαвєяяσя) =>
+ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
+);
+}
+//|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
+if (clock < 0 && userBadge.Limits == 0) {
+if (userBadge.Badge === "🧵ʙᴀꜱɪᴄ-10ᴄᴏᴍᴍᴀɴᴅꜱ") {
+userBadge.Limits = 10;
+} else if (userBadge.Badge === "🥉ʙʀᴏɴᴢᴇ-20ᴄᴏᴍᴍᴀɴᴅꜱ") {
+userBadge.Limits = 20;
+} else if (userBadge.Badge === "🥈ꜱɪʟᴠᴇʀ-40ᴄᴏᴍᴍᴀɴᴅꜱ") {
+userBadge.Limits = 40;
+} else if (userBadge.Badge === "🥇ɢᴏʟᴅ-60ᴄᴏᴍᴍᴀɴᴅꜱ") {
+userBadge.Limits = 60;
+} else if (userBadge.Badge === "💍ᴘʟᴀᴛɪɴᴜᴍ-80ᴄᴏᴍᴍᴀɴᴅꜱ") {
+userBadge.Limits = 80;
+} else if (userBadge.Badge === "💎ᴅɪᴀᴍᴏɴᴅ-100ᴄᴏᴍᴍᴀɴᴅꜱ") {
+userBadge.Limits = 100;
+}
+userBadge.CurrentLimitTime = Date.now();
+userBadge.value = "True";
+await userBadge
+.save()
+.catch((ℓαвєяяσя) =>
+ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
+);
+}
+}
+//|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
+const hold = require("../../Sakura🛰️Server/Hold");
+hold.Hold(ֆǟӄʊʀǟ);
+console.log(userBadge);
+//|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
+if (!ֆǟӄʊʀǟ.fromMe && userBadge.value === "False") {
+let time = ms(
+userBadge.PermanentLimitTime -
+(Date.now() - userBadge.CurrentLimitTime)
+);
+return Sakura_Buttons.MTB(
+ӄʀǟӄɨռʐ,
+chat,
+ֆǟӄʊʀǟ,
+`💡𝐓𝐢𝐩: _Buy Higher Badges Using ${ᴋᴇɪ}shop_
 
 ╔═══════❗ 𝐈𝐦𝐩𝐨𝐫𝐭𝐚𝐧𝐭
 ║⚔️ 𝗕𝗮𝗱𝗴𝗲: ${userBadge.Badge}
 ║💤 𝗥𝗲𝗻𝗲𝘄𝘀_𝗜𝗻: ${time.hours}h ${time.minutes}m ${time.seconds}s
 ╚════════════╝`
-            );
-          }
-          //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
-          try {
-            var FILEOBJECT = {
-              message:
-                chat.message.extendedTextMessage.contextInfo.quotedMessage,
-            };
-            var FileType = await ӄʀǟӄɨռʐ.downloadAndSaveMediaMessage(
-              FILEOBJECT,
-              FileName
-            );
-          } catch (ℓαвєяяσя) {
-            var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(ֆǟӄʊʀǟ.commandName);
-            var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
-              𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ === undefined ? `Null` : 𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ;
-            const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../Sakura🛰️Server/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
-            userBadge.Limits = userBadge.Limits + 1;
-            userBadge
-              .save()
-              .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-            return ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
-              ӄʀǟӄɨռʐ,
-              chat,
-              ֆǟӄʊʀǟ,
-              ꜱᴇɴᴅᴇʀɪᴅ,
-              ꜱᴇɴᴅᴇʀeceived,
-              ֆǟӄʊʀǟ.commandName,
-              ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
-            );
-          }
-          if (FileType.endsWith(".jpeg")) {
-            // ====================================================================================================== JPEG
-            ffmpeg(`${FileName}.jpeg`)
-              .outputOptions([`-y`, `-vcodec libwebp`])
-              .videoFilters(
-                `scale=2000:2000:flags=lanczos:force_original_aspect_ratio=decrease`,
-                `format=rgba`,
-                `pad=2000:2000:(ow-iw)/2:(oh-ih)/2:color=#00000000,setsar=1`
-              )
-              .save(`${FileName}.webp`)
-              .on(`end`, (ℓαвєяяσя) => {
-                if (ℓαвєяяσя) return console.log(ℓαвєяяσя);
-                ӄʀǟӄɨռʐ.sendMessage(
-                  ֆǟӄʊʀǟ.chatId,
-                  fs.readFileSync(`${FileName}.webp`),
-                  MessageType.sticker,
-                  { quoted: chat }
-                );
-                cleanRF.cleanRF(`${FileName}.jpeg`, `${FileName}.webp`);
-              })
-              .on(`error`, (ℓαвєяяσя) => {
-                console.log(ℓαвєяяσя);
-              });
-            console.log("FileType: " + FileType);
-          } else if (FileType.endsWith(".png")) {
-            // ====================================================================================================== PNG
-            ffmpeg(`${FileName}.png`)
-              .outputOptions([`-y`, `-vcodec libwebp`])
-              .videoFilters(
-                `scale=2000:2000:flags=lanczos:force_original_aspect_ratio=decrease`,
-                `format=rgba`,
-                `pad=2000:2000:(ow-iw)/2:(oh-ih)/2:color=#00000000,setsar=1`
-              )
-              .save(`${FileName}.webp`)
-              .on(`end`, (ℓαвєяяσя) => {
-                if (ℓαвєяяσя) return console.log(ℓαвєяяσя);
-                ӄʀǟӄɨռʐ.sendMessage(
-                  ֆǟӄʊʀǟ.chatId,
-                  fs.readFileSync(`${FileName}.webp`),
-                  MessageType.sticker,
-                  { quoted: chat }
-                );
-                cleanRF.cleanRF(`${FileName}.mp4`, `${FileName}.webp`);
-              })
-              .on(`error`, (ℓαвєяяσя) => {
-                console.log(ℓαвєяяσя);
-              });
-            console.log("FileType: " + FileType);
-          } else if (FileType.endsWith(".webp")) {
-            // ====================================================================================================== WEBP
-            ӄʀǟӄɨռʐ.sendMessage(
-              ֆǟӄʊʀǟ.chatId,
-              fs.readFileSync(`${FileName}.webp`),
-              MessageType.sticker,
-              { quoted: chat }
-            );
-            cleanRF.cleanRF(`${FileName}.webp`);
-            console.log("FileType: " + FileType);
-          } else if (FileType.endsWith(".mp4")) {
-            // ====================================================================================================== MP4
-            ffmpeg(`${FileName}.mp4`)
-              .duration(8)
-              .outputOptions([
-                `-y`,
-                `-vcodec libwebp`,
-                `-lossless 1`,
-                `-qscale 1`,
-                `-preset default`,
-                `-loop 0`,
-                `-an`,
-                `-vsync 0`,
-                `-s 600x600`,
-              ])
-              .videoFilters(
-                `scale=600:600:flags=lanczos:force_original_aspect_ratio=decrease,format=rgba,pad=600:600:(ow-iw)/2:(oh-ih)/2:color=#00000000,setsar=1`
-              )
-              .save(`${FileName}.webp`)
-              .on(`end`, () => {
-                ӄʀǟӄɨռʐ.sendMessage(
-                  ֆǟӄʊʀǟ.chatId,
-                  fs.readFileSync(`${FileName}.webp`),
-                  MessageType.sticker,
-                  { quoted: chat }
-                );
-                cleanRF.cleanRF(`${FileName}.mp4`, `${FileName}.webp`);
-              })
-              .on(`error`, (ℓαвєяяσя) => {
-                console.log(ℓαвєяяσя);
-              });
-            console.log("FileType: " + FileType);
-          } else {
-            var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(ֆǟӄʊʀǟ.commandName);
-            var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
-              𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ === undefined ? `Null` : 𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ;
-            const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../Sakura🛰️Server/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
-            userBadge.Limits = userBadge.Limits + 1;
-            userBadge
-              .save()
-              .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-            return ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
-              ӄʀǟӄɨռʐ,
-              chat,
-              ֆǟӄʊʀǟ,
-              ꜱᴇɴᴅᴇʀɪᴅ,
-              ꜱᴇɴᴅᴇʀeceived,
-              ֆǟӄʊʀǟ.commandName,
-              ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
-            );
-          }
-        }
-      );
-    } catch (ℓαвєяяσя) {
-      ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
-      console.log(ℓαвєяяσя);
-    }
-  },
+);
+}
+//|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
+try {
+var FILEOBJECT = {
+message:
+chat.message.extendedTextMessage.contextInfo.quotedMessage,
+};
+var FileType = await ӄʀǟӄɨռʐ.downloadAndSaveMediaMessage(
+FILEOBJECT,
+FileName
+);
+} catch (ℓαвєяяσя) {
+var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(ֆǟӄʊʀǟ.commandName);
+var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
+𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ === undefined ? `Null` : 𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ;
+const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../Sakura🛰️Server/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
+userBadge.Limits = userBadge.Limits + 1;
+await userBadge
+.save()
+.catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+return ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
+ӄʀǟӄɨռʐ,
+chat,
+ֆǟӄʊʀǟ,
+ꜱᴇɴᴅᴇʀɪᴅ,
+ꜱᴇɴᴅᴇʀeceived,
+ֆǟӄʊʀǟ.commandName,
+ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
+);
+}
+if (FileType.endsWith(".jpeg")) {
+// ====================================================================================================== JPEG
+ffmpeg(`${FileName}.jpeg`)
+.outputOptions([`-y`, `-vcodec libwebp`])
+.videoFilters(
+`scale=2000:2000:flags=lanczos:force_original_aspect_ratio=decrease`,
+`format=rgba`,
+`pad=2000:2000:(ow-iw)/2:(oh-ih)/2:color=#00000000,setsar=1`
+)
+.save(`${FileName}.webp`)
+.on(`end`, (ℓαвєяяσя) => {
+if (ℓαвєяяσя) return console.log(ℓαвєяяσя);
+ӄʀǟӄɨռʐ.sendMessage(
+ֆǟӄʊʀǟ.chatId,
+fs.readFileSync(`${FileName}.webp`),
+MessageType.sticker,
+{ quoted: chat }
+);
+cleanRF.cleanRF(`${FileName}.jpeg`, `${FileName}.webp`);
+})
+.on(`error`, (ℓαвєяяσя) => {
+console.log(ℓαвєяяσя);
+});
+console.log("FileType: " + FileType);
+} else if (FileType.endsWith(".png")) {
+// ====================================================================================================== PNG
+ffmpeg(`${FileName}.png`)
+.outputOptions([`-y`, `-vcodec libwebp`])
+.videoFilters(
+`scale=2000:2000:flags=lanczos:force_original_aspect_ratio=decrease`,
+`format=rgba`,
+`pad=2000:2000:(ow-iw)/2:(oh-ih)/2:color=#00000000,setsar=1`
+)
+.save(`${FileName}.webp`)
+.on(`end`, (ℓαвєяяσя) => {
+if (ℓαвєяяσя) return console.log(ℓαвєяяσя);
+ӄʀǟӄɨռʐ.sendMessage(
+ֆǟӄʊʀǟ.chatId,
+fs.readFileSync(`${FileName}.webp`),
+MessageType.sticker,
+{ quoted: chat }
+);
+cleanRF.cleanRF(`${FileName}.mp4`, `${FileName}.webp`);
+})
+.on(`error`, (ℓαвєяяσя) => {
+console.log(ℓαвєяяσя);
+});
+console.log("FileType: " + FileType);
+} else if (FileType.endsWith(".webp")) {
+// ====================================================================================================== WEBP
+ӄʀǟӄɨռʐ.sendMessage(
+ֆǟӄʊʀǟ.chatId,
+fs.readFileSync(`${FileName}.webp`),
+MessageType.sticker,
+{ quoted: chat }
+);
+cleanRF.cleanRF(`${FileName}.webp`);
+console.log("FileType: " + FileType);
+} else if (FileType.endsWith(".mp4")) {
+// ====================================================================================================== MP4
+ffmpeg(`${FileName}.mp4`)
+.duration(8)
+.outputOptions([
+`-y`,
+`-vcodec libwebp`,
+`-lossless 1`,
+`-qscale 1`,
+`-preset default`,
+`-loop 0`,
+`-an`,
+`-vsync 0`,
+`-s 600x600`,
+])
+.videoFilters(
+`scale=600:600:flags=lanczos:force_original_aspect_ratio=decrease,format=rgba,pad=600:600:(ow-iw)/2:(oh-ih)/2:color=#00000000,setsar=1`
+)
+.save(`${FileName}.webp`)
+.on(`end`, () => {
+ӄʀǟӄɨռʐ.sendMessage(
+ֆǟӄʊʀǟ.chatId,
+fs.readFileSync(`${FileName}.webp`),
+MessageType.sticker,
+{ quoted: chat }
+);
+cleanRF.cleanRF(`${FileName}.mp4`, `${FileName}.webp`);
+})
+.on(`error`, (ℓαвєяяσя) => {
+console.log(ℓαвєяяσя);
+});
+console.log("FileType: " + FileType);
+} else {
+var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(ֆǟӄʊʀǟ.commandName);
+var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
+𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ === undefined ? `Null` : 𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ;
+const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../Sakura🛰️Server/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
+userBadge.Limits = userBadge.Limits + 1;
+await userBadge
+.save()
+.catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+return ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
+ӄʀǟӄɨռʐ,
+chat,
+ֆǟӄʊʀǟ,
+ꜱᴇɴᴅᴇʀɪᴅ,
+ꜱᴇɴᴅᴇʀeceived,
+ֆǟӄʊʀǟ.commandName,
+ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
+);
+}
+}
+);
+} catch (ℓαвєяяσя) {
+ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
+console.log(ℓαвєяяσя);
+}
+},
 };
 `|🍹|`;
 `|🍹|`;

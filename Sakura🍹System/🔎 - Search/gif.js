@@ -19,210 +19,210 @@ var scriptName = path.basename(__filename);
 var newScpt = scriptName.slice(0, -3).toLowerCase();
 //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
 module.exports = {
-  name: newScpt,
-  ֆǟӄʊʀǟӄǟɨʐօ: `${ᴋᴇɪ}gif (gif name)`,
-  async handle(ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
-    try {
-      var ꜱᴇɴᴅᴇʀɪᴅ = ֆǟӄʊʀǟ.sender;
-      var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
-      const defaultnm = ֆǟӄʊʀǟ.commandName;
-      const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
-      //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
-      const Bagde = require("../../Sakura🍃Goose/badge");
-      const ms = require("parse-ms");
-      Bagde.findOne(
-        {
-          ID: ֆǟӄʊʀǟ.sender,
-        },
-        async (err, userBadge) => {
-          if (err) return console.log(err);
-          if (!userBadge) {
-            var newUser = new Bagde({
-              ID: ֆǟӄʊʀǟ.sender,
-              Badge: "🧵ʙᴀꜱɪᴄ-10ᴄᴏᴍᴍᴀɴᴅꜱ",
-              value: "True",
-              Limits: 10,
-              CurrentLimitTime: Date.now(),
-              PermanentLimitTime: 86400000,
-            });
-            newUser
-              .save()
-              .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-            return Sakura_Buttons.MTB(
-              ӄʀǟӄɨռʐ,
-              chat,
-              ֆǟӄʊʀǟ,
-              `*@${ꜱᴇɴᴅᴇʀeceived}, Account Verified.Try Command Again!*`
-            );
-            //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
-          } else {
-            var clock =
-              userBadge.PermanentLimitTime -
-              (Date.now() - userBadge.CurrentLimitTime);
-            if (clock > 0 && userBadge.Limits == 0) {
-              userBadge.value = "False";
-              userBadge
-                .save()
-                .catch((ℓαвєяяσя) =>
-                  ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
-                );
-            }
-            //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
-            if (clock > 0 && !userBadge.Limits == 0) {
-              userBadge.Limits = userBadge.Limits - 1;
-              userBadge.value = "True";
-              userBadge
-                .save()
-                .catch((ℓαвєяяσя) =>
-                  ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
-                );
-            }
-            //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
-            if (clock < 0 && userBadge.Limits == 0) {
-              if (userBadge.Badge === "🧵ʙᴀꜱɪᴄ-10ᴄᴏᴍᴍᴀɴᴅꜱ") {
-                userBadge.Limits = 10;
-              } else if (userBadge.Badge === "🥉ʙʀᴏɴᴢᴇ-20ᴄᴏᴍᴍᴀɴᴅꜱ") {
-                userBadge.Limits = 20;
-              } else if (userBadge.Badge === "🥈ꜱɪʟᴠᴇʀ-40ᴄᴏᴍᴍᴀɴᴅꜱ") {
-                userBadge.Limits = 40;
-              } else if (userBadge.Badge === "🥇ɢᴏʟᴅ-60ᴄᴏᴍᴍᴀɴᴅꜱ") {
-                userBadge.Limits = 60;
-              } else if (userBadge.Badge === "💍ᴘʟᴀᴛɪɴᴜᴍ-80ᴄᴏᴍᴍᴀɴᴅꜱ") {
-                userBadge.Limits = 80;
-              } else if (userBadge.Badge === "💎ᴅɪᴀᴍᴏɴᴅ-100ᴄᴏᴍᴍᴀɴᴅꜱ") {
-                userBadge.Limits = 100;
-              }
-              userBadge.CurrentLimitTime = Date.now();
-              userBadge.value = "True";
-              userBadge
-                .save()
-                .catch((ℓαвєяяσя) =>
-                  ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
-                );
-            }
-          }
-          //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
-          const hold = require("../../Sakura🛰️Server/Hold");
-          hold.Hold(ֆǟӄʊʀǟ);
-          console.log(userBadge);
-          //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
-          if (!ֆǟӄʊʀǟ.fromMe && userBadge.value === "False") {
-            let time = ms(
-              userBadge.PermanentLimitTime -
-                (Date.now() - userBadge.CurrentLimitTime)
-            );
-            return Sakura_Buttons.MTB(
-              ӄʀǟӄɨռʐ,
-              chat,
-              ֆǟӄʊʀǟ,
-              `💡𝐓𝐢𝐩: _Buy Higher Badges Using ${ᴋᴇɪ}shop_
+name: newScpt,
+ֆǟӄʊʀǟӄǟɨʐօ: `${ᴋᴇɪ}gif (gif name)`,
+async handle(ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
+try {
+var ꜱᴇɴᴅᴇʀɪᴅ = ֆǟӄʊʀǟ.sender;
+var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
+const defaultnm = ֆǟӄʊʀǟ.commandName;
+const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
+//|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
+const Bagde = require("../../Sakura🍃Goose/badge");
+const ms = require("parse-ms");
+Bagde.findOne(
+{
+ID: ֆǟӄʊʀǟ.sender,
+},
+async (err, userBadge) => {
+if (err) return console.log(err);
+if (!userBadge) {
+var newUser = new Bagde({
+ID: ֆǟӄʊʀǟ.sender,
+Badge: "🧵ʙᴀꜱɪᴄ-10ᴄᴏᴍᴍᴀɴᴅꜱ",
+value: "True",
+Limits: 10,
+CurrentLimitTime: Date.now(),
+PermanentLimitTime: 86400000,
+});
+await newUser
+.save()
+.catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+return Sakura_Buttons.MTB(
+ӄʀǟӄɨռʐ,
+chat,
+ֆǟӄʊʀǟ,
+`*@${ꜱᴇɴᴅᴇʀeceived}, Account Verified.Try Command Again!*`
+);
+//|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
+} else {
+var clock =
+userBadge.PermanentLimitTime -
+(Date.now() - userBadge.CurrentLimitTime);
+if (clock > 0 && userBadge.Limits == 0) {
+userBadge.value = "False";
+await userBadge
+.save()
+.catch((ℓαвєяяσя) =>
+ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
+);
+}
+//|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
+if (clock > 0 && !userBadge.Limits == 0) {
+userBadge.Limits = userBadge.Limits - 1;
+userBadge.value = "True";
+await userBadge
+.save()
+.catch((ℓαвєяяσя) =>
+ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
+);
+}
+//|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
+if (clock < 0 && userBadge.Limits == 0) {
+if (userBadge.Badge === "🧵ʙᴀꜱɪᴄ-10ᴄᴏᴍᴍᴀɴᴅꜱ") {
+userBadge.Limits = 10;
+} else if (userBadge.Badge === "🥉ʙʀᴏɴᴢᴇ-20ᴄᴏᴍᴍᴀɴᴅꜱ") {
+userBadge.Limits = 20;
+} else if (userBadge.Badge === "🥈ꜱɪʟᴠᴇʀ-40ᴄᴏᴍᴍᴀɴᴅꜱ") {
+userBadge.Limits = 40;
+} else if (userBadge.Badge === "🥇ɢᴏʟᴅ-60ᴄᴏᴍᴍᴀɴᴅꜱ") {
+userBadge.Limits = 60;
+} else if (userBadge.Badge === "💍ᴘʟᴀᴛɪɴᴜᴍ-80ᴄᴏᴍᴍᴀɴᴅꜱ") {
+userBadge.Limits = 80;
+} else if (userBadge.Badge === "💎ᴅɪᴀᴍᴏɴᴅ-100ᴄᴏᴍᴍᴀɴᴅꜱ") {
+userBadge.Limits = 100;
+}
+userBadge.CurrentLimitTime = Date.now();
+userBadge.value = "True";
+await userBadge
+.save()
+.catch((ℓαвєяяσя) =>
+ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
+);
+}
+}
+//|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
+const hold = require("../../Sakura🛰️Server/Hold");
+hold.Hold(ֆǟӄʊʀǟ);
+console.log(userBadge);
+//|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
+if (!ֆǟӄʊʀǟ.fromMe && userBadge.value === "False") {
+let time = ms(
+userBadge.PermanentLimitTime -
+(Date.now() - userBadge.CurrentLimitTime)
+);
+return Sakura_Buttons.MTB(
+ӄʀǟӄɨռʐ,
+chat,
+ֆǟӄʊʀǟ,
+`💡𝐓𝐢𝐩: _Buy Higher Badges Using ${ᴋᴇɪ}shop_
 
 ╔═══════❗ 𝐈𝐦𝐩𝐨𝐫𝐭𝐚𝐧𝐭
 ║⚔️ 𝗕𝗮𝗱𝗴𝗲: ${userBadge.Badge}
 ║💤 𝗥𝗲𝗻𝗲𝘄𝘀_𝗜𝗻: ${time.hours}h ${time.minutes}m ${time.seconds}s
 ╚════════════╝`
-            );
-          }
-          //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
-          if (Needs.length === 0) {
-            var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(ֆǟӄʊʀǟ.commandName);
-            var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
-              𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ === undefined ? `Null` : 𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ;
-            const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../Sakura🛰️Server/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
-            userBadge.Limits = userBadge.Limits + 1;
-            userBadge
-              .save()
-              .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-            return ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
-              ӄʀǟӄɨռʐ,
-              chat,
-              ֆǟӄʊʀǟ,
-              ꜱᴇɴᴅᴇʀɪᴅ,
-              ꜱᴇɴᴅᴇʀeceived,
-              ֆǟӄʊʀǟ.commandName,
-              ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
-            );
-          }
-          //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
-          try {
-            let url = `https://api.tenor.com/v1/search?q=${Needs.join(
-              ` `
-            )}&key=${_𝔏𝔞𝔟_.TEN}&limit=100`;
-            let response = await fetch(url);
-            let json = await response.json();
-            console.log(json);
-            //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
-            const MP4 =
-              json.results[Math.floor(Math.random() * json.results.length)]
-                .media[0].mp4.url;
-            const TINYMP4 =
-              json.results[Math.floor(Math.random() * json.results.length)]
-                .media[0].tinymp4.url;
-            const NANOMP4 =
-              json.results[Math.floor(Math.random() * json.results.length)]
-                .media[0].nanogif.url;
-            const LOOPEDMP4 =
-              json.results[Math.floor(Math.random() * json.results.length)]
-                .media[0].loopedmp4.url;
-            //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
-            const GIF =
-              json.results[Math.floor(Math.random() * json.results.length)]
-                .media[0].gif.url;
-            const NANOGIF =
-              json.results[Math.floor(Math.random() * json.results.length)]
-                .media[0].nanomp4.url;
-            const TINYGIF =
-              json.results[Math.floor(Math.random() * json.results.length)]
-                .media[0].tinygif.url;
-            const MEDIUMGIF =
-              json.results[Math.floor(Math.random() * json.results.length)]
-                .media[0].mediumgif.url;
+);
+}
+//|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
+if (Needs.length === 0) {
+var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(ֆǟӄʊʀǟ.commandName);
+var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
+𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ === undefined ? `Null` : 𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ;
+const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../Sakura🛰️Server/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
+userBadge.Limits = userBadge.Limits + 1;
+await userBadge
+.save()
+.catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+return ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
+ӄʀǟӄɨռʐ,
+chat,
+ֆǟӄʊʀǟ,
+ꜱᴇɴᴅᴇʀɪᴅ,
+ꜱᴇɴᴅᴇʀeceived,
+ֆǟӄʊʀǟ.commandName,
+ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
+);
+}
+//|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
+try {
+let url = `https://api.tenor.com/v1/search?q=${Needs.join(
+` `
+)}&key=${_𝔏𝔞𝔟_.TEN}&limit=100`;
+let response = await fetch(url);
+let json = await response.json();
+console.log(json);
+//|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
+const MP4 =
+json.results[Math.floor(Math.random() * json.results.length)]
+.media[0].mp4.url;
+const TINYMP4 =
+json.results[Math.floor(Math.random() * json.results.length)]
+.media[0].tinymp4.url;
+const NANOMP4 =
+json.results[Math.floor(Math.random() * json.results.length)]
+.media[0].nanogif.url;
+const LOOPEDMP4 =
+json.results[Math.floor(Math.random() * json.results.length)]
+.media[0].loopedmp4.url;
+//|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
+const GIF =
+json.results[Math.floor(Math.random() * json.results.length)]
+.media[0].gif.url;
+const NANOGIF =
+json.results[Math.floor(Math.random() * json.results.length)]
+.media[0].nanomp4.url;
+const TINYGIF =
+json.results[Math.floor(Math.random() * json.results.length)]
+.media[0].tinygif.url;
+const MEDIUMGIF =
+json.results[Math.floor(Math.random() * json.results.length)]
+.media[0].mediumgif.url;
 
-            const WEBM =
-              json.results[Math.floor(Math.random() * json.results.length)]
-                .media[0].webm.url;
-            const TINYWEBM =
-              json.results[Math.floor(Math.random() * json.results.length)]
-                .media[0].tinywebm.url;
-            //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
-            await ӄʀǟӄɨռʐ
-              .sendMessage(ֆǟӄʊʀǟ.chatId, { url: MP4 }, MessageType.video, {
-                contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
-                quoted: chat,
-                mimetype: `video/gif`,
-                caption: `🍹(©️)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭\n${Clock}
+const WEBM =
+json.results[Math.floor(Math.random() * json.results.length)]
+.media[0].webm.url;
+const TINYWEBM =
+json.results[Math.floor(Math.random() * json.results.length)]
+.media[0].tinywebm.url;
+//|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
+await ӄʀǟӄɨռʐ
+.sendMessage(ֆǟӄʊʀǟ.chatId, { url: MP4 }, MessageType.video, {
+contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
+quoted: chat,
+mimetype: `video/gif`,
+caption: `🍹(©️)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭\n${Clock}
 
 ────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 🍯 𝐒𝐞𝐚𝐫𝐜𝐡𝐞𝐝: ${Needs.join(` `)}
 `,
-              })
-              .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-            //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
-          } catch (ℓαвєяяσя) {
-            userBadge.Limits = userBadge.Limits + 1;
-            userBadge
-              .save()
-              .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-            return Sakura_Buttons.MTB(
-              ӄʀǟӄɨռʐ,
-              chat,
-              ֆǟӄʊʀǟ,
-              `@${ꜱᴇɴᴅᴇʀeceived},
+})
+.catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+//|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
+} catch (ℓαвєяяσя) {
+userBadge.Limits = userBadge.Limits + 1;
+await userBadge
+.save()
+.catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+return Sakura_Buttons.MTB(
+ӄʀǟӄɨռʐ,
+chat,
+ֆǟӄʊʀǟ,
+`@${ꜱᴇɴᴅᴇʀeceived},
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 ║🥺 𝐎𝐩𝐩𝐬𝐢𝐞 𝐓𝐫𝐲 𝐀𝐠𝐚𝐢𝐧!
 ║🍹 𝐒𝐞𝐫𝐯𝐞𝐫 𝐃𝐢𝐝𝐧'𝐭 𝐑𝐞𝐬𝐩𝐨𝐧𝐝!
 ╚════════════╝`
-            );
-          }
-          //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
-        }
-      );
-    } catch (ℓαвєяяσя) {
-      ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
-      console.log(ℓαвєяяσя);
-    }
-  },
+);
+}
+//|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
+}
+);
+} catch (ℓαвєяяσя) {
+ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
+console.log(ℓαвєяяσя);
+}
+},
 };
 `|🍹|`;
 `|🍹|`;
