@@ -64,11 +64,11 @@
             child.stdout.pipe(process.stdout);
             child.on(`exit`, async function () {
               process.exitCode = 1;
-              var child = require(`child_process`).exec(
+              var childs = require(`child_process`).exec(
                 `python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`
               );
-              child.stdout.pipe(process.stdout);
-              child.on(`exit`, async function () {
+              childs.stdout.pipe(process.stdout);
+              childs.on(`exit`, async function () {
                 process.exitCode = 1;
               });
             });

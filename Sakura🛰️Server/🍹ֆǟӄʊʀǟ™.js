@@ -79,11 +79,6 @@ async function ֆǟӄʊʀǟ() {
     );
     process.exit(0);
   }
-  console.log(
-    Kolor.yellow(
-      `⬡==========================⬡    🍹 ֆǟӄʊʀǟ™ 🍹    ⬡==========================⬡`
-    )
-  );
   try {
     var session = ֆǟӄʊʀǟֆʏռօք.Mee6reignite(_𝔏𝔞𝔟_.SAKURA);
     ӄʀǟӄɨռʐ.loadAuthInfo(session);
@@ -96,34 +91,23 @@ async function ֆǟӄʊʀǟ() {
   //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
   ӄʀǟӄɨռʐ.on(`connecting`, async () => {
     console.log(
-      Kolor.yellow(
-        `⬡==========================⬡    🍹 ֆǟӄʊʀǟ™ 🍹    ⬡==========================⬡`
-      )
-    );
-    console.log(
       Kolor.yellow(`🍹INFO ⬰ 𝗖𝗼𝗻𝗻𝗲𝗰𝘁𝗶𝗻𝗴 𝘁𝗼 🍹ֆǟӄʊʀǟ™ 𝗨𝘀𝗲𝗿-𝗪𝗵𝗮𝘁𝘀𝗮𝗽𝗽!...🛸`)
     );
   });
   //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
   ӄʀǟӄɨռʐ.on(`open`, async () => {
     console.log(Kolor.green(`🍹🍹ֆǟӄʊʀǟ™ 𝗖𝗼𝗻𝗻𝗲𝗰𝘁𝗲𝗱 𝗧𝗼 𝗨𝘀𝗲𝗿-𝗪𝗵𝗮𝘁𝘀𝗮𝗽𝗽!✔️`));
-    console.log(
-      Kolor.yellow(
-        `⬡==========================⬡    🍹 ֆǟӄʊʀǟ™ 🍹    ⬡==========================⬡`
-      )
-    );
     console.log(Kolor.green(`🍹INFO ⬰ 𝐋𝐢𝐧𝐤𝐢𝐧𝐠 𝐒𝐚𝐤𝐮𝐫𝐚 𝐖𝐢𝐭𝐡 𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞...✔️`));
     try {
       await ֆǟӄʊʀǟsql.authenticate();
       await ֆǟӄʊʀǟsql.validate();
-      await ֆǟӄʊʀǟsql
-        .sync()
-        .then(console.log(Kolor.yellow(`🍹INFO ⬰ 🍹ֆǟӄʊʀǟ™ Connected✔️`)));
+      await ֆǟӄʊʀǟsql.sync();
     } catch (ℓαвєяяσя) {
       console.ℓαвєяяσя(
         `❌ERROR ⬰  𝗨𝗻𝗮𝗯𝗹𝗲 𝘁𝗼 𝗰𝗼𝗻𝗻𝗲𝗰𝘁 𝘁𝗼 𝘁𝗵𝗲 𝗱𝗮𝘁𝗮𝗯𝗮𝘀𝗲:`,
         ℓαвєяяσя
       );
+      process.exit(0);
     }
     var child = require(`child_process`).exec(
       `python3 Sakura🛰️Server/Heroku.py`
@@ -723,21 +707,27 @@ ${update.desc}`,
                           `💡INFO ⬰ 𝗔𝘂𝘁𝗼-𝗨𝗽𝗱𝗮𝘁𝗲𝗱 ⚡𝐒𝐚𝐤𝐮𝐫𝐚™ 𝘄𝗶𝘁𝗵 𝗹𝗮𝘁𝗲𝘀𝘁 [${mergeSummary.merges.length}] 𝗰𝗵𝗮𝗻𝗴𝗲𝘀.`
                         )
                       );
-                      console.log(``);
                     } catch (ℓαвєяяσя) {
-                      Kolor.red(
-                        `❌ERROR ⬰ 𝗠𝗲𝗿𝗴𝗲 𝗿𝗲𝘀𝘂𝗹𝘁𝗲𝗱 𝗶𝗻 ${Kolor.red(
-                          ℓαвєяяσя
-                        )} 𝗰𝗼𝗻𝗳𝗹𝗶𝗰𝘁𝘀!`
+                      console.log(
+                        Kolor.red(
+                          `❌ERROR ⬰ 𝗠𝗲𝗿𝗴𝗲 𝗿𝗲𝘀𝘂𝗹𝘁𝗲𝗱 𝗶𝗻 ${Kolor.red(
+                            ℓαвєяяσя
+                          )} 𝗰𝗼𝗻𝗳𝗹𝗶𝗰𝘁𝘀!`
+                        )
                       );
                     }
                   } else if (update && update.summary.changes) {
-                    var child = require(`child_process`).exec(
-                      `python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`
-                    );
+                    var child = require(`child_process`).exec(`npm i --force`);
                     child.stdout.pipe(process.stdout);
                     child.on(`exit`, async function () {
                       process.exitCode = 1;
+                      var childs = require(`child_process`).exec(
+                        `python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`
+                      );
+                      childs.stdout.pipe(process.stdout);
+                      childs.on(`exit`, async function () {
+                        process.exitCode = 1;
+                      });
                     });
                   }
                 });
