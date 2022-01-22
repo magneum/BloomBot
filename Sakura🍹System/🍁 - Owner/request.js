@@ -18,23 +18,23 @@ var scriptName = path.basename(__filename);
 var newScpt = scriptName.slice(0, -3).toLowerCase();
 //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
 module.exports = {
-  name: newScpt,
-  async handle(ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
-    try {
-      var ꜱᴇɴᴅᴇʀɪᴅ = ֆǟӄʊʀǟ.sender;
-      var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
-      const defaultnm = ֆǟӄʊʀǟ.commandName;
-      const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
-      //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
-      const hold = require("../../Sakura🛰️Server/Hold");
-      hold.Hold(ֆǟӄʊʀǟ);
-      //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
-      if (Needs.length === 0) {
-        return Sakura_Buttons.MTB(
-          ӄʀǟӄɨռʐ,
-          chat,
-          ֆǟӄʊʀǟ,
-          `@${ꜱᴇɴᴅᴇʀeceived},
+name: newScpt,
+async handle(ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
+try {
+var ꜱᴇɴᴅᴇʀɪᴅ = ֆǟӄʊʀǟ.sender;
+var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
+const defaultnm = ֆǟӄʊʀǟ.commandName;
+const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
+//|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
+const hold = require("../../Sakura🛰️Server/Hold");
+hold.Hold(ֆǟӄʊʀǟ);
+//|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
+if (Needs.length === 0) {
+return Sakura_Buttons.MTB(
+ӄʀǟӄɨռʐ,
+chat,
+ֆǟӄʊʀǟ,
+`@${ꜱᴇɴᴅᴇʀeceived},
 
 ╔════◇❓ 𝐇𝐨𝐰 𝐓𝐨 𝐆𝐞𝐭 𝐒𝐚𝐤𝐮𝐫𝐚?
 
@@ -42,67 +42,67 @@ module.exports = {
 • ɪɴ ʙᴏᴛ'ꜱ ᴅᴍ: ${ᴋᴇɪ}ʀᴇQᴜᴇꜱᴛ _<ʏᴏᴜʀ ɢᴄ ʟɪɴᴋ>_
 
 _ɪꜰ ʏᴏᴜ ᴅᴏ ɴᴏᴛ ꜰᴏʟʟᴏᴡ/ᴜɴᴅᴇʀꜱᴛᴀɴᴅ ᴛʜᴇɴ ᴡᴇ *ᴋʀᴀᴋɪɴᴢʟᴀʙ ᴅᴇᴠꜱ* ᴅᴏɴᴏᴛ ᴄᴀʀᴇ!_`
-        );
-      }
-      if (
-        !ֆǟӄʊʀǟ.body.includes(_𝔏𝔞𝔟_.HASH) &&
-        !ֆǟӄʊʀǟ.body.includes(`https://chat.whatsapp`)
-      ) {
-        return Sakura_Buttons.MTB(
-          ӄʀǟӄɨռʐ,
-          chat,
-          ֆǟӄʊʀǟ,
-          `@${ꜱᴇɴᴅᴇʀeceived},
+);
+}
+if (
+!ֆǟӄʊʀǟ.body.includes(_𝔏𝔞𝔟_.HASH) &&
+!ֆǟӄʊʀǟ.body.includes(`https://chat.whatsapp`)
+) {
+return Sakura_Buttons.MTB(
+ӄʀǟӄɨռʐ,
+chat,
+ֆǟӄʊʀǟ,
+`@${ꜱᴇɴᴅᴇʀeceived},
 
 ╔════◇❓ 𝐇𝐨𝐰 𝐓𝐨 𝐆𝐞𝐭 𝐒𝐚𝐤𝐮𝐫𝐚?
 
 • ᴊᴏɪɴ ᴍɪᴢᴜᴋɪ ɢʀᴏᴜᴘ.
 • ɪɴ ʙᴏᴛ'ꜱ ᴅᴍ: ${ᴋᴇɪ}ʀᴇQᴜᴇꜱᴛ [ʏᴏᴜʀ ɢᴄ ʟɪɴᴋ]`
-        );
-      }
-      const qrcode = new Encoder();
-      qrcode.setEncodingHint(true);
-      qrcode.setErrorCorrectionLevel(ErrorCorrectionLevel.Q);
-      qrcode.write(
-        new QRByte(
-          `${Needs.join(` `).replace(
-            `https://chat.whatsapp.com/`,
-            `?verified/`
-          )}\n` +
-            `\n` +
-            `*ReqBy:* @${ꜱᴇɴᴅᴇʀeceived}` +
-            `\n` +
-            `*ChatID:* ${ֆǟӄʊʀǟ.chatId}`
-        )
-      );
-      qrcode.make();
-      const output = qrcode.toDataURL().split(`,`)[1];
-      const imagePath = `./Sakura🗑️Temp/${Ping}_${ꜱᴇɴᴅᴇʀɪᴅ}_${FinalName}.png`;
-      fs.writeFileSync(
-        imagePath,
-        output,
-        { encoding: `base64` },
-        async function (ℓαвєяяσя) {
-          if (ℓαвєяяσя) {
-            return Sakura_Buttons.MTB(
-              ӄʀǟӄɨռʐ,
-              chat,
-              ֆǟӄʊʀǟ,
-              `@${ꜱᴇɴᴅᴇʀeceived},
+);
+}
+const qrcode = new Encoder();
+qrcode.setEncodingHint(true);
+qrcode.setErrorCorrectionLevel(ErrorCorrectionLevel.Q);
+qrcode.write(
+new QRByte(
+`${Needs.join(` `).replace(
+`https://chat.whatsapp.com/`,
+`?verified/`
+)}\n` +
+`\n` +
+`*ReqBy:* @${ꜱᴇɴᴅᴇʀeceived}` +
+`\n` +
+`*ChatID:* ${ֆǟӄʊʀǟ.chatId}`
+)
+);
+qrcode.make();
+const output = qrcode.toDataURL().split(`,`)[1];
+const imagePath = `./Sakura🗑️Temp/${Ping}_${ꜱᴇɴᴅᴇʀɪᴅ}_${FinalName}.png`;
+fs.writeFileSync(
+imagePath,
+output,
+{ encoding: `base64` },
+async function (ℓαвєяяσя) {
+if (ℓαвєяяσя) {
+return Sakura_Buttons.MTB(
+ӄʀǟӄɨռʐ,
+chat,
+ֆǟӄʊʀǟ,
+`@${ꜱᴇɴᴅᴇʀeceived},
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 ║🥺 𝐎𝐩𝐩𝐬𝐢𝐞 𝐓𝐫𝐲 𝐀𝐠𝐚𝐢𝐧!
 ║🍹 𝐒𝐞𝐫𝐯𝐞𝐫 𝐃𝐢𝐝𝐧'𝐭 𝐑𝐞𝐬𝐩𝐨𝐧𝐝!
 ╚════════════╝`
-            );
-          }
-        }
-      );
-      await Sakura_Buttons.MIB(
-        ӄʀǟӄɨռʐ,
-        chat,
-        ֆǟӄʊʀǟ,
-        `@${ꜱᴇɴᴅᴇʀeceived},
+);
+}
+}
+);
+await Sakura_Buttons.MIB(
+ӄʀǟӄɨռʐ,
+chat,
+ֆǟӄʊʀǟ,
+`@${ꜱᴇɴᴅᴇʀeceived},
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 ║⬡ 𝐓𝐡𝐚𝐧𝐤 𝐲𝐨𝐮 𝐟𝐨𝐫 𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐢𝐧𝐠 𝐭𝐨 𝐚𝐝𝐝 𝐒𝐚𝐤𝐮𝐫𝐚🍹 𝐢𝐧 𝐲𝐨𝐮𝐫 𝐠𝐫𝐨𝐮𝐩!
@@ -110,22 +110,24 @@ _ɪꜰ ʏᴏᴜ ᴅᴏ ɴᴏᴛ ꜰᴏʟʟᴏᴡ/ᴜɴᴅᴇʀꜱᴛᴀɴᴅ ᴛ
 ║🐙 𝐆𝐑𝐎𝐔𝐏: ${_𝔏𝔞𝔟_.HASH}
 ║⚙️ 𝐄𝐧𝐠𝐢𝐧𝐞: ⋊ʀʏᴏ
 ╚════════════╝`,
-        imagePath
-      );
-      await cleanRF.cleanRF(imagePath);
-      return await ӄʀǟӄɨռʐ.sendMessage(
-        `19175804221@s.whatsapp.net`,
-        `🍪 𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐁𝐲: *${ꜱᴇɴᴅᴇʀɪᴅ}*\n🔗𝐋𝐢𝐧𝐤 ${Needs.join(` `)}`,
-        MessageType.text
-      );
-    } catch (ℓαвєяяσя) {
-      ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
-      console.log(ℓαвєяяσя);
-    }
-  },
+imagePath
+);
+await cleanRF.cleanRF(imagePath);
+return await ӄʀǟӄɨռʐ.sendMessage(
+`19175804221@s.whatsapp.net`,
+`🍪 𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐁𝐲: *${ꜱᴇɴᴅᴇʀɪᴅ}*\n🔗𝐋𝐢𝐧𝐤 ${Needs.join(` `)}`,
+MessageType.text
+);
+//|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
+} catch (ℓαвєяяσя) {
+ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
+return;
+}
+},
 };
 `|🍹|`;
 `|🍹|`;
 `|🍹|======================================================================================================⬡  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™`;
 `|🍹|      (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 | 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!       |`;
 `|🍹|======================================================================================================⬡  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™`;
+
