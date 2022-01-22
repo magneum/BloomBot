@@ -127,6 +127,18 @@ var MainText = `${Timers} @${ꜱᴇɴᴅᴇʀeceived}, 🍹𝐒𝐚𝐤𝐮𝐫�
 ╚════════════╝
 
 
+╔════ 📥 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫𝐬 ════╗
+║▷ ${ᴋᴇɪ}instagram
+║▷ ${ᴋᴇɪ}play
+║▷ ${ᴋᴇɪ}ytaudio
+║▷ ${ᴋᴇɪ}youtube
+║▷ ${ᴋᴇɪ}tiktokaudio
+║▷ ${ᴋᴇɪ}watch
+║▷ ${ᴋᴇɪ}ytvideo
+║▷ ${ᴋᴇɪ}tiktokvideo
+╚════════════╝
+
+
 ╔════ 🐙 𝐊𝐢𝐧𝐠/𝐎𝐰𝐧𝐞𝐫 ════╗
 ║▷ ${ᴋᴇɪ}dyno
 ║▷ ${ᴋᴇɪ}ban
@@ -271,13 +283,10 @@ var MainText = `${Timers} @${ꜱᴇɴᴅᴇʀeceived}, 🍹𝐒𝐚𝐤𝐮𝐫�
 ║▷ ${ᴋᴇɪ}uniform
 ║▷ ${ᴋᴇɪ}yuri
 ╚════════════╝`;
-return Sakura_Buttons.MIB(
-ӄʀǟӄɨռʐ,
-chat,
-ֆǟӄʊʀǟ,
-MainText,
-MediaUrl
-).catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+Sakura_Buttons.MIB(ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, MainText, MediaUrl).catch(
+(ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
+);
+return;
 //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
 } catch (ℓαвєяяσя) {
 ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
