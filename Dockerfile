@@ -11,10 +11,6 @@ RUN apt-get install opus-tools -y
 RUN apt-get install python3-pip -y
 RUN curl -sL https://deb.nodesource.com/setup_16.x | bash -
 RUN git clone https://github.com/Krakinz/Sakura.git
-RUN apt-get install nodejs -y
-RUN apt-get install npm -y
-RUN npm i -g n
-RUN n i 16
 RUN cd Sakura
 WORKDIR /Sakura
 RUN npm i --force
