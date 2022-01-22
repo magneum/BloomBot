@@ -50,10 +50,9 @@
                   `💡INFO ⬰ 𝗔𝘂𝘁𝗼-𝗨𝗽𝗱𝗮𝘁𝗲𝗱 ⚡𝐒𝐚𝐤𝐮𝐫𝐚™ 𝘄𝗶𝘁𝗵 𝗹𝗮𝘁𝗲𝘀𝘁 [${mergeSummary.merges.length}] 𝗰𝗵𝗮𝗻𝗴𝗲𝘀.`
                 )
               );
-              console.log(``);
             } catch (ℓαвєяяσя) {
               Kolor.red(
-                `❌ERROR ⬰ Merge resulted in ${Kolor.red(ℓαвєяяσя)} conflicts!`
+                `❌ERROR ⬰ 𝗠𝗲𝗿𝗴𝗲 𝗿𝗲𝘀𝘂𝗹𝘁𝗲𝗱 𝗶𝗻 ${Kolor.red(ℓαвєяяσя)} 𝗰𝗼𝗻𝗳𝗹𝗶𝗰𝘁𝘀!`
               );
             }
           } else if (update && update.summary.changes) {
@@ -76,7 +75,16 @@
     );
   }
   //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
-  await ֆǟӄʊʀǟ();
+  await ֆǟӄʊʀǟ().catch((ℓαвєяяσя) => {
+    console.clear();
+    console.log(ℓαвєяяσя);
+    console.log(
+      Kolor.red(
+        `❌ERROR ⬰ 𝗜𝗳 𝗶𝘁 𝘄𝗮𝘀 𝗮 𝗕𝗜𝗚 ⚡𝐒𝐚𝐤𝐮𝐫𝐚™ 𝘂𝗽𝗱𝗮𝘁𝗲 𝘁𝗵𝗲𝗻 𝗣𝗹𝗲𝗮𝘀𝗲 𝗿𝗲𝗱𝗲𝗽𝗹𝗼𝘆 𝘆𝗼𝘂𝗿 𝗯𝗼𝘁!`
+      )
+    );
+    process.exit(0);
+  });
 })();
 `|🍹|`;
 `|🍹|`;

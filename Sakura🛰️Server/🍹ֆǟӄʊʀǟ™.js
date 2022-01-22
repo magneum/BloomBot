@@ -726,9 +726,9 @@ ${update.desc}`,
                       console.log(``);
                     } catch (ℓαвєяяσя) {
                       Kolor.red(
-                        `❌ERROR ⬰ Merge resulted in ${Kolor.red(
+                        `❌ERROR ⬰ 𝗠𝗲𝗿𝗴𝗲 𝗿𝗲𝘀𝘂𝗹𝘁𝗲𝗱 𝗶𝗻 ${Kolor.red(
                           ℓαвєяяσя
-                        )} conflicts!`
+                        )} 𝗰𝗼𝗻𝗳𝗹𝗶𝗰𝘁𝘀!`
                       );
                     }
                   } else if (update && update.summary.changes) {
