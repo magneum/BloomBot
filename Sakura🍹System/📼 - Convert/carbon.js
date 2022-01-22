@@ -188,7 +188,7 @@ chat,
 await ӄʀǟӄɨռʐ
 .sendMessage(
 ֆǟӄʊʀǟ.chatId,
-`🍹(©️)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 \n${Clock}\n\nThe replied message should be text.`,
+`🍸(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 \n${Clock}\n\nThe replied message should be text.`,
 MessageType.text,
 { quoted: chat }
 )
@@ -272,7 +272,7 @@ if (!themes.includes(themeInput)) {
 await ӄʀǟӄɨռʐ
 .sendMessage(
 ֆǟӄʊʀǟ.chatId,
-`🍹(©️)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 \n${Clock}\n\nPlease enter a valid theme.
+`🍸(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 \n${Clock}\n\nPlease enter a valid theme.
 Do note that theme names are  *case sensitive*${ᴋᴇɪ}`,
 MessageType.text,
 { quoted: chat }

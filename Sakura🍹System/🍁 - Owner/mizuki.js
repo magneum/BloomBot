@@ -141,7 +141,7 @@ mimetype: Mimetype.png,
 contextInfo: {
 mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
 },
-caption: `🍹(©️)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭
+caption: `🍸(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭
 
 @${ꜱᴇɴᴅᴇʀeceived}, 
 ${respon}`,

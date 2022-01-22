@@ -49,7 +49,7 @@ exports.catch = async (ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat) =>
     ֆǟӄʊʀǟ.chatId,
     {
       contentText: `*🍹 Try Again Later!*`,
-      footerText: `🍹(©️)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭\n${Clock}`,
+      footerText: `🍸(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭\n${Clock}`,
       buttons: [
         {
           buttonId: `${ᴋᴇɪ}bugreport`,
@@ -77,7 +77,7 @@ exports.catch = async (ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat) =>
       contentText: `*🍹 Try Again Later!*
 
 *Error:* ${ℓαвєяяσя}`,
-      footerText: `🍹(©️)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭\n${Clock}`,
+      footerText: `🍸(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭\n${Clock}`,
       buttons: [
         {
           buttonId: `${ᴋᴇɪ}bugreport`,

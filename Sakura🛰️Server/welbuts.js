@@ -93,7 +93,7 @@ ${PeopleWel}𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${GroupMemG}
 ★━━━━━━━━◆➤
 
 ${ꜰᴇᴛᴄʜᴇᴅᴡᴇʟᴄᴏᴍᴇ.message}`,
-          footerText: `🍹(©️)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭\n${Clock}`,
+          footerText: `🍸(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭\n${Clock}`,
           buttons: [
             {
               buttonId: `${ᴋᴇɪ}help`,

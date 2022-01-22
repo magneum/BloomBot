@@ -99,7 +99,7 @@ conversation: ֆǟӄʊʀǟ.replyMessage,
 },
 mentionedJid: members,
 },
-caption: `🍹(©️)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭
+caption: `🍸(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 🥳𝐅𝐫𝐨𝐦: @${ꜱᴇɴᴅᴇʀeceived}
@@ -121,7 +121,7 @@ quoted: chat,
 contextInfo: {
 mentionedJid: members,
 },
-caption: `🍹(©️)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭
+caption: `🍸(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 🥳𝐅𝐫𝐨𝐦: @${ꜱᴇɴᴅᴇʀeceived}
@@ -143,7 +143,7 @@ quoted: chat,
 contextInfo: {
 mentionedJid: members,
 },
-caption: `🍹(©️)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭
+caption: `🍸(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 🥳𝐅𝐫𝐨𝐦: @${ꜱᴇɴᴅᴇʀeceived}
@@ -162,7 +162,7 @@ quoted: chat,
 contextInfo: {
 mentionedJid: members,
 },
-caption: `🍹(©️)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭
+caption: `🍸(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 🥳𝐅𝐫𝐨𝐦: @${ꜱᴇɴᴅᴇʀeceived}
