@@ -16,19 +16,15 @@
 ║ シ︎ ☕𝐔𝐩𝐓𝐢𝐦𝐞: Forever
 ║ シ︎ 🎮𝐑𝐀𝐌: 60gb
 ╚════════════╝
-```
 
-<img align="left"  height="200" src="https://i.postimg.cc/4dQvSpCZ/image.gif">
-<img align="centre"  height="200" src="https://i.postimg.cc/4dQvSpCZ/image.gif">
-
-# ❓ Why Made Sakura?
-
-```sh
 🔸 Use sakura in both public-groups and private
 🔸 So many commands that will blow up the every-day use of boring whatsapp.
 🔸 ᴀᴅᴠᴀɴᴄᴇᴅ ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ 100+ ᴄᴏᴍᴍᴀɴᴅꜱ ꜰᴏʀ ʙᴏᴛʜ ᴘʀɪᴠᴀᴛᴇ ᴀɴᴅ ɢʀᴏᴜᴘ-ᴜꜱᴀɢᴇ
 🔸 sakura is written in JavaScript and is by far the most advance Whatsapp Userbot.
 ```
+
+<img align="left"  height="200" src="https://i.postimg.cc/4dQvSpCZ/image.gif">
+<img align="centre"  height="200" src="https://i.postimg.cc/4dQvSpCZ/image.gif">
 
 - ֆǟӄʊʀǟ™: Dont' Forget to turn on DYNO: worker && You on Your Own!
 
