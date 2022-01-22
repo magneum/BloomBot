@@ -701,40 +701,54 @@ ${update.desc}`,
             )
           );
           //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
-          const ᴍɪᴢᴜᴋɪɢɪᴛ = require(`simple-git`)();
-          await ᴍɪᴢᴜᴋɪɢɪᴛ.fetch();
-          var ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ = await ᴍɪᴢᴜᴋɪɢɪᴛ.log([
-            `KrakinzLab..origin/KrakinzLab`,
-          ]);
-          if (ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total != 0) {
-            require(`simple-git`)()
-              .exec(async () => {
-                console.log(
-                  Kolor.green(
-                    `⬡==========================⬡    🍹Starting Sakura pull...`
-                  )
-                );
-              })
-              .pull(async (ℓαвєяяσя, update) => {
-                if (ℓαвєяяσя) {
-                  try {
-                    const mergeSummary = await ᴍɪᴢᴜᴋɪɢɪᴛ.merge();
-                    console.log(`Merged ${mergeSummary.merges.length} files`);
-                  } catch (ℓαвєяяσя) {
-                    console.log(
-                      `Merge resulted in ${Kolor.red(ℓαвєяяσя)} conflicts`
-                    );
-                  }
-                } else if (update && update.summary.changes) {
-                  var child = require(`child_process`).exec(
-                    `python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`
+          try {
+            const ᴍɪᴢᴜᴋɪɢɪᴛ = require(`simple-git`)();
+            await ᴍɪᴢᴜᴋɪɢɪᴛ.fetch();
+            var ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ = await ᴍɪᴢᴜᴋɪɢɪᴛ.log([
+              `KrakinzLab..origin/KrakinzLab`,
+            ]);
+            if (ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total != 0) {
+              require(`simple-git`)()
+                .exec(async () => {
+                  console.log(
+                    Kolor.yellow(`💡INFO ⬰ 𝐍𝐞𝐰 𝐔𝐩𝐝𝐚𝐭𝐞 𝐩𝐞𝐧𝐝𝐢𝐧𝐠, 𝐮𝐩𝐝𝐚𝐭𝐢𝐧𝐠...`)
                   );
-                  child.stdout.pipe(process.stdout);
-                  child.on(`exit`, async function () {
-                    process.exitCode = 1;
-                  });
-                }
-              });
+                })
+                .pull(async (ℓαвєяяσя, update) => {
+                  if (ℓαвєяяσя) {
+                    try {
+                      const mergeSummary = await ᴍɪᴢᴜᴋɪɢɪᴛ.merge();
+                      console.log(
+                        Kolor.green(
+                          `💡INFO ⬰ 𝗔𝘂𝘁𝗼-𝗨𝗽𝗱𝗮𝘁𝗲𝗱 ⚡𝐒𝐚𝐤𝐮𝐫𝐚™ 𝘄𝗶𝘁𝗵 𝗹𝗮𝘁𝗲𝘀𝘁 [${mergeSummary.merges.length}] 𝗰𝗵𝗮𝗻𝗴𝗲𝘀.`
+                        )
+                      );
+                      console.log(``);
+                    } catch (ℓαвєяяσя) {
+                      Kolor.red(
+                        `❌ERROR ⬰ Merge resulted in ${Kolor.red(
+                          ℓαвєяяσя
+                        )} conflicts!`
+                      );
+                    }
+                  } else if (update && update.summary.changes) {
+                    var child = require(`child_process`).exec(
+                      `python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`
+                    );
+                    child.stdout.pipe(process.stdout);
+                    child.on(`exit`, async function () {
+                      process.exitCode = 1;
+                    });
+                  }
+                });
+            }
+          } catch (ℓαвєяяσя) {
+            console.log(ℓαвєяяσя);
+            console.log(
+              Kolor.red(
+                `❌ERROR ⬰ 𝗜𝗳 𝗶𝘁 𝘄𝗮𝘀 𝗮 𝗕𝗜𝗚 ⚡𝐒𝐚𝐤𝐮𝐫𝐚™ 𝘂𝗽𝗱𝗮𝘁𝗲 𝘁𝗵𝗲𝗻 𝗣𝗹𝗲𝗮𝘀𝗲 𝗿𝗲𝗱𝗲𝗽𝗹𝗼𝘆 𝘆𝗼𝘂𝗿 𝗯𝗼𝘁!`
+              )
+            );
           }
           //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
           var ꜱᴇɴᴅᴇʀɪᴅ = ֆǟӄʊʀǟ.sender;
