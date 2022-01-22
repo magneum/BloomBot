@@ -4,8 +4,19 @@
 
 <img align="centre" height="60" src="https://i.postimg.cc/XqPBcyq0/image.png">
 
-ʏᴏᴜʀ ᴀꜱꜱɪꜱꜱᴛᴀɴᴛ ꜰᴏʀ ᴍᴀᴋɪɴɢ ʙᴏʀɪɴɢ ᴡʜᴀᴛꜱᴀᴘᴘ ᴀ ʙᴇᴛᴛᴇʀ ᴀᴅᴠᴀɴᴄᴇ ᴀᴘᴘ!
-🔸[`ᴡʜᴀᴛꜱᴀᴘᴘ`](https://chat.whatsapp.com/LKN8uVBd8ucHRHofz0jBSd) 🔸[`ᴅɪꜱᴄᴏʀᴅ`](https://discord.gg/xcFN6NDHEV)
+🔸[ᴡʜᴀᴛꜱᴀᴘᴘ](https://chat.whatsapp.com/LKN8uVBd8ucHRHofz0jBSd) 🔸[ᴅɪꜱᴄᴏʀᴅ](https://discord.gg/xcFN6NDHEV)
+
+```
+🍹𝐒𝐚𝐤𝐮𝐫𝐚 𝐈𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
+
+╔═══════ ★ 𝐒𝐲𝐦𝐥𝐢𝐧𝐤 𝐈𝐧𝐟𝐨𝐬
+║ シ︎ ⚙️𝐄𝐧𝐠𝐢𝐧𝐞: ⋊ʀʏᴏ
+║ シ︎ 💻𝐏𝐥𝐚𝐭𝐅𝐨𝐫𝐦: python:latest (linux)
+║ シ︎ 🛰️𝐋𝐚𝐭𝐞𝐧𝐜𝐲: max 0.0098ms
+║ シ︎ ☕𝐔𝐩𝐓𝐢𝐦𝐞: Forever
+║ シ︎ 🎮𝐑𝐀𝐌: 60gb
+╚════════════╝
+```
 
 <img align="left"  height="200" src="https://i.postimg.cc/4dQvSpCZ/image.gif">
 <img align="centre"  height="200" src="https://i.postimg.cc/4dQvSpCZ/image.gif">
