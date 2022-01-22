@@ -298,9 +298,7 @@ ${update.desc}`,
         await ӄʀǟӄɨռʐ.sendMessage(
           GroupID,
           {
-            contentText: `𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚👋🏻 ${Timers} ᴇᴠᴇʀʏᴏɴᴇ.
-ʙᴏᴛ ɪꜱ ʀᴇᴀᴅʏ ᴛᴏ ᴀꜱꜱɪꜱᴛ ʏᴏᴜ!
-ᴛʏᴘᴇ *${ᴋᴇɪ}help* ᴛᴏ ᴋɴᴏᴡ ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅꜱ!`,
+            contentText: `𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚👋🏻 ${Timers}\n🌱𝗣𝗿𝗲𝘀𝘀 𝗯𝗲𝗹𝗼𝘄 𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗦𝘁𝗮𝗿𝘁 𝘂𝘀𝗶𝗻𝗴 𝗠𝗶𝘇𝘂𝗸𝗶👇🏽`,
             footerText: `🍹(©️)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭\n${Clock}`,
             buttons: [
               {
@@ -313,6 +311,11 @@ ${update.desc}`,
                 buttonText: { displayText: `${ᴋᴇɪ}repo` },
                 type: 1,
               },
+              {
+                buttonId: `${ᴋᴇɪ}mizuki`,
+                buttonText: { displayText: `${ᴋᴇɪ}mizuki` },
+                type: 1,
+              },
             ],
             headerType: 4,
             imageMessage: media.message.imageMessage,
@@ -321,7 +324,7 @@ ${update.desc}`,
         );
         return await PostDataBase.setWelcome(
           GroupID,
-          `𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚👋🏻\n🌱𝗣𝗿𝗲𝘀𝘀 𝗯𝗲𝗹𝗼𝘄 𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗦𝘁𝗮𝗿𝘁 𝘂𝘀𝗶𝗻𝗴 𝗠𝗶𝘇𝘂𝗸𝗶👇🏽‍ `
+          `𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚👋🏻\n🌱𝗣𝗿𝗲𝘀𝘀 𝗯𝗲𝗹𝗼𝘄 𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗦𝘁𝗮𝗿𝘁 𝘂𝘀𝗶𝗻𝗴 𝗠𝗶𝘇𝘂𝗸𝗶👇🏽`
         );
       }
       if (update.action === `add` && !MemNum.includes(ӄʀǟӄɨռʐ.user.jid)) {
@@ -386,28 +389,30 @@ ${update.desc}`,
             } else {
               var currentLvl = users.level;
               var currentXP = users.xp;
-              if (currentLvl >= 5) {
+              if (currentLvl < 5) {
+                var nxtlvl = 25 * Math.pow(2, currentLvl);
+              } else if (currentLvl >= 5) {
                 var nxtlvl = 50 * Math.pow(2, currentLvl);
               } else if (currentLvl >= 10) {
                 var nxtlvl = 100 * Math.pow(2, currentLvl);
               } else if (currentLvl >= 20) {
-                var nxtlvl = 200 * Math.pow(2, currentLvl);
+                var nxtlvl = 150 * Math.pow(2, currentLvl);
               } else if (currentLvl >= 30) {
-                var nxtlvl = 300 * Math.pow(2, currentLvl);
+                var nxtlvl = 200 * Math.pow(2, currentLvl);
               } else if (currentLvl >= 40) {
-                var nxtlvl = 400 * Math.pow(2, currentLvl);
+                var nxtlvl = 200 * Math.pow(2, currentLvl);
               } else if (currentLvl >= 50) {
-                var nxtlvl = 500 * Math.pow(2, currentLvl);
+                var nxtlvl = 300 * Math.pow(2, currentLvl);
               } else if (currentLvl >= 60) {
-                var nxtlvl = 600 * Math.pow(2, currentLvl);
+                var nxtlvl = 350 * Math.pow(2, currentLvl);
               } else if (currentLvl >= 70) {
-                var nxtlvl = 700 * Math.pow(2, currentLvl);
+                var nxtlvl = 400 * Math.pow(2, currentLvl);
               } else if (currentLvl >= 80) {
-                var nxtlvl = 800 * Math.pow(2, currentLvl);
+                var nxtlvl = 450 * Math.pow(2, currentLvl);
               } else if (currentLvl >= 90) {
-                var nxtlvl = 900 * Math.pow(2, currentLvl);
+                var nxtlvl = 500 * Math.pow(2, currentLvl);
               } else if (currentLvl >= 100) {
-                var nxtlvl = 1000 * Math.pow(2, currentLvl);
+                var nxtlvl = 600 * Math.pow(2, currentLvl);
               }
               var xpleft = nxtlvl - currentXP;
               users.xp = users.xp + xpAdd;
