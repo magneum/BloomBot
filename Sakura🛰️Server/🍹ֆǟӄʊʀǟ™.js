@@ -574,6 +574,7 @@ ${update.desc}`,
       ֆǟӄʊʀǟ.isGroup &&
       !_𝔏𝔞𝔟_.HASH &&
       !ֆǟӄʊʀǟ.fromMe &&
+      !ֆǟӄʊʀǟ.isSenderDev &&
       !ֆǟӄʊʀǟ.isSenderGroupAdmin &&
       ֆǟӄʊʀǟ.body.includes(`https://`)
     ) {
