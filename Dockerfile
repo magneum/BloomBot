@@ -1,13 +1,15 @@
 FROM debian
 RUN apt update 
 RUN apt upgrade -y 
-RUN apt install git -y 
-RUN apt install python3 -y 
-RUN apt install python3-pip -y 
-RUN apt install -y ffmpeg opus-tools bpm-tools 
+RUN apt install -y github
+RUN apt install -y python3
+RUN apt install -y python3-pip 
+RUN apt install -y ffmpeg
+RUN apt install -y opus-tools
+RUN apt install -y bpm-tools 
 RUN curl -sL https://deb.nodesource.com/setup_16.x | bash -
-RUN apt install -y nodejs
 RUN git clone https://github.com/Krakinz/Sakura.git
+RUN apt install -y nodejs
 RUN cd Sakura
 WORKDIR /Sakura
 RUN npm i --force
