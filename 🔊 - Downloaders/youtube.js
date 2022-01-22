@@ -197,7 +197,7 @@ module.exports = {
                 youfound.thumbnail
               );
               const { id } = getVideoId(youfound.url);
-              await ytdl(youfound.url, { filter: "audioonly" }).pipe(
+              ytdl(youfound.url, { filter: "audioonly" }).pipe(
                 fs.createWriteStream(`${id}.mp3`)
               );
               await ӄʀǟӄɨռʐ.sendMessage(
