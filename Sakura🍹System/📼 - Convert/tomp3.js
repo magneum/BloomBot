@@ -133,10 +133,10 @@ var FILEID = chat.message.extendedTextMessage.contextInfo.stanzaId;
 console.log(FILEOBJECT);
 await ӄʀǟӄɨռʐ.downloadAndSaveMediaMessage(
 FILEOBJECT,
-`./Sakura🗑️Temp/${FILEID}`
+`${__dirname}/${FILEID}`
 );
-var Convert_From = `./Sakura🗑️Temp/${FILEID}.mp4`;
-var Convert_To = `./Sakura🗑️Temp/${FILEID}_${Math.floor(
+var Convert_From = `${__dirname}/${FILEID}.mp4`;
+var Convert_To = `${__dirname}/${FILEID}_${Math.floor(
 Math.random() * 10000
 )}.mp3`;
 exec(`ffmpeg -i ${Convert_From} ${Convert_To}`, async (err) => {

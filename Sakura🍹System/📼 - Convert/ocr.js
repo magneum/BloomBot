@@ -129,7 +129,7 @@ var replyChatObject = {
 message: chat.message,
 };
 var imageId = chat.key.id;
-const fileName = `./Sakura🗑️Temp/img-` + imageId;
+const fileName = `${__dirname}/img-` + imageId;
 const filePath = await ӄʀǟӄɨռʐ.downloadAndSaveMediaMessage(
 replyChatObject,
 fileName
@@ -170,7 +170,7 @@ message:
 chat.message.extendedTextMessage.contextInfo.quotedMessage,
 };
 var imageId = chat.message.extendedTextMessage.contextInfo.stanzaId;
-const fileName = `./Sakura🗑️Temp/img-` + imageId;
+const fileName = `${__dirname}/img-` + imageId;
 const filePath = await ӄʀǟӄɨռʐ.downloadAndSaveMediaMessage(
 replyChatObject,
 fileName

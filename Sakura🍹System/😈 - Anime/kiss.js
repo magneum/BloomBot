@@ -38,8 +38,8 @@ var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇ�
 var ꜱᴇɴᴅᴇʀɪᴅ = ֆǟӄʊʀǟ.sender;
 var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
 }
-const GotFile = `./Sakura🗑️Temp/${Ping}_${FinalName}.gif`;
-const GiveFile = `./Sakura🗑️Temp/${Ping}_${FinalName}.mp4`;
+const GotFile = `${__dirname}/${Ping}_${FinalName}.gif`;
+const GiveFile = `${__dirname}/${Ping}_${FinalName}.mp4`;
 //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
 const jsoncool = await JSON.parse(
 fs.readFileSync(`./Sakura🛰️Server/Coolist.json`)
@@ -68,7 +68,7 @@ console.log("🍹====⬡ " + ʟᴀʙᴛᴇꜱᴛ + " ⬡====🍹");
 
 const downloader = await new Downloader({
 url: ʟᴀʙᴛᴇꜱᴛ,
-directory: `./Sakura🗑️Temp`,
+directory: `${__dirname}`,
 fileName: `${Ping}_${FinalName}.gif`,
 cloneFiles: false,
 });

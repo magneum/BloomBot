@@ -134,12 +134,12 @@ var FILEID = chat.message.extendedTextMessage.contextInfo.stanzaId;
 console.log(FILEOBJECT);
 await ӄʀǟӄɨռʐ.downloadAndSaveMediaMessage(
 FILEOBJECT,
-`./Sakura🗑️Temp/${FILEID}`
+`${__dirname}/${FILEID}`
 );
-let gotTgh = await TelegraPh(`./Sakura🗑️Temp/${FILEID}.jpeg`);
+let gotTgh = await TelegraPh(`${__dirname}/${FILEID}.jpeg`);
 const media = await ӄʀǟӄɨռʐ.prepareMessage(
 ֆǟӄʊʀǟ.chatId,
-{ url: `./Sakura🗑️Temp/${FILEID}.jpeg` },
+{ url: `${__dirname}/${FILEID}.jpeg` },
 MessageType.image,
 { mimetype: Mimetype.png && Mimetype.jpeg }
 );
@@ -172,7 +172,7 @@ contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
 }
 )
 
-.then(cleanRF.cleanRF(`./Sakura🗑️Temp/${FILEID}.jpeg`))
+.then(cleanRF.cleanRF(`${__dirname}/${FILEID}.jpeg`))
 .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
 //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
 } else {

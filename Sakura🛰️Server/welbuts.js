@@ -62,13 +62,13 @@ exports.welbuts = async (
     //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
     const downloader = await new Downloader({
       url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗,
-      directory: `./Sakura🗑️Temp`,
+      directory: `${__dirname}`,
       fileName: `${ᴘᴘᴡᴇʟᴄᴏᴍᴇ}_${FlowerWel}.png`,
       cloneFiles: false,
     });
     await downloader.download();
     let content = fs.readFileSync(
-      `./Sakura🗑️Temp/${ᴘᴘᴡᴇʟᴄᴏᴍᴇ}_${FlowerWel}.png`
+      `${__dirname}/${ᴘᴘᴡᴇʟᴄᴏᴍᴇ}_${FlowerWel}.png`
     );
     const media = await ӄʀǟӄɨռʐ.prepareMessage(
       GroupID,
@@ -114,7 +114,7 @@ ${ꜰᴇᴛᴄʜᴇᴅᴡᴇʟᴄᴏᴍᴇ.message}`,
           contextInfo: { mentionedJid: [MemNum] },
         }
       )
-      .then(cleanRF.cleanRF(`./Sakura🗑️Temp/${ᴘᴘᴡᴇʟᴄᴏᴍᴇ}_${FlowerWel}.png`))
+      .then(cleanRF.cleanRF(`${__dirname}/${ᴘᴘᴡᴇʟᴄᴏᴍᴇ}_${FlowerWel}.png`))
       .catch((ℓαвєяяσя) => console.log(ℓαвєяяσя));
     //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
   } catch (ℓαвєяяσя) {

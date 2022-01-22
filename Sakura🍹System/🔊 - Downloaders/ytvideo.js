@@ -167,7 +167,7 @@ chat,
 const LinkForGroups = await yts(Needs.join(` `));
 const GroupVideos = LinkForGroups.videos.slice(0, 1);
 const DVideo = async (url, text = ``) => {
-const filename = `./Sakura🗑️Temp/${FinalName}_${ꜱᴇɴᴅᴇʀɪᴅ}_${Ping}`;
+const filename = `${__dirname}/${FinalName}_${ꜱᴇɴᴅᴇʀɪᴅ}_${Ping}`;
 let mime = ``;
 var download = function (uri, filename, callback) {
 request.head(uri, function (err, res, body) {

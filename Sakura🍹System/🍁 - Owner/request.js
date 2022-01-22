@@ -77,7 +77,7 @@ new QRByte(
 );
 qrcode.make();
 const output = qrcode.toDataURL().split(`,`)[1];
-const imagePath = `./Sakura🗑️Temp/${Ping}_${ꜱᴇɴᴅᴇʀɪᴅ}_${FinalName}.png`;
+const imagePath = `${__dirname}/${Ping}_${ꜱᴇɴᴅᴇʀɪᴅ}_${FinalName}.png`;
 fs.writeFileSync(
 imagePath,
 output,

@@ -55,26 +55,26 @@ exports.SakuraGM = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ) => {
   if (ֆǟӄʊʀǟ.isReply) {
     const downloader = await new Downloader({
       url: link,
-      directory: `./Sakura🗑️Temp`,
+      directory: `${__dirname}`,
       fileName: `${FinalName}_${SakuraGMid}.gif`,
       cloneFiles: false,
     });
     try {
       await downloader.download();
-      await ffmpeg(`./Sakura🗑️Temp/${FinalName}_${SakuraGMid}.gif`)
+      await ffmpeg(`${__dirname}/${FinalName}_${SakuraGMid}.gif`)
         .outputOptions([
           `-pix_fmt yuv420p`,
           `-c:v libx264`,
           `-movflags +faststart`,
           `-filter:v crop='floor(in_w/2)*2:floor(in_h/2)*2'`,
         ])
-        .save(`./Sakura🗑️Temp/${FinalName}_${SakuraGMid}.mp4`)
+        .save(`${__dirname}/${FinalName}_${SakuraGMid}.mp4`)
         .on(`end`, async () => {
           console.log(`Finished`);
           await ӄʀǟӄɨռʐ
             .sendMessage(
               ֆǟӄʊʀǟ.chatId,
-              fs.readFileSync(`./Sakura🗑️Temp/${FinalName}_${SakuraGMid}.mp4`),
+              fs.readFileSync(`${__dirname}/${FinalName}_${SakuraGMid}.mp4`),
               MessageType.video,
               {
                 contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ, Receiver] },
@@ -89,8 +89,8 @@ exports.SakuraGM = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ) => {
             )
             .then(
               cleanRF.cleanRF(
-                `./Sakura🗑️Temp/${FinalName}_${SakuraGMid}.gif`,
-                `./Sakura🗑️Temp/${FinalName}_${SakuraGMid}.mp4`
+                `${__dirname}/${FinalName}_${SakuraGMid}.gif`,
+                `${__dirname}/${FinalName}_${SakuraGMid}.mp4`
               )
             );
         })
@@ -105,26 +105,26 @@ exports.SakuraGM = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ) => {
   if (!ֆǟӄʊʀǟ.isReply) {
     const downloader = await new Downloader({
       url: link,
-      directory: `./Sakura🗑️Temp`,
+      directory: `${__dirname}`,
       fileName: `${FinalName}_${SakuraGMid}.gif`,
       cloneFiles: false,
     });
     try {
       await downloader.download();
-      ffmpeg(`./Sakura🗑️Temp/${FinalName}_${SakuraGMid}.gif`)
+      ffmpeg(`${__dirname}/${FinalName}_${SakuraGMid}.gif`)
         .outputOptions([
           `-pix_fmt yuv420p`,
           `-c:v libx264`,
           `-movflags +faststart`,
           `-filter:v crop='floor(in_w/2)*2:floor(in_h/2)*2'`,
         ])
-        .save(`./Sakura🗑️Temp/${FinalName}_${SakuraGMid}.mp4`)
+        .save(`${__dirname}/${FinalName}_${SakuraGMid}.mp4`)
         .on(`end`, async () => {
           console.log(`Finished`);
           await ӄʀǟӄɨռʐ
             .sendMessage(
               ֆǟӄʊʀǟ.chatId,
-              fs.readFileSync(`./Sakura🗑️Temp/${FinalName}_${SakuraGMid}.mp4`),
+              fs.readFileSync(`${__dirname}/${FinalName}_${SakuraGMid}.mp4`),
               MessageType.video,
               {
                 contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
@@ -138,8 +138,8 @@ exports.SakuraGM = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ) => {
             )
             .then(
               cleanRF.cleanRF(
-                `./Sakura🗑️Temp/${FinalName}_${SakuraGMid}.gif`,
-                `./Sakura🗑️Temp/${FinalName}_${SakuraGMid}.mp4`
+                `${__dirname}/${FinalName}_${SakuraGMid}.gif`,
+                `${__dirname}/${FinalName}_${SakuraGMid}.mp4`
               )
             )
             .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));

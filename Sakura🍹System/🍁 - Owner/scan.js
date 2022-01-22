@@ -41,7 +41,7 @@ var filePath;
 if (ֆǟӄʊʀǟ.isReplyImage) {
 var imageId = chat.key.id;
 const fileName =
-`./Sakura🗑️Temp/${Ping}_${ꜱᴇɴᴅᴇʀɪᴅ}_${FinalName}_` + imageId;
+`${__dirname}/${Ping}_${ꜱᴇɴᴅᴇʀɪᴅ}_${FinalName}_` + imageId;
 filePath = await ӄʀǟӄɨռʐ.downloadAndSaveMediaMessage(
 {
 message:
