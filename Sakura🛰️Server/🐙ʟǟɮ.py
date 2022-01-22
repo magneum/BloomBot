@@ -2,7 +2,6 @@ import platform
 import psutil
 import os
 my_system = platform.uname()
-print('⬡==========================⬡    🍹 ֆǟӄʊʀǟ™ 🍹    ⬡==========================⬡')
 if os.path.exists('Sakura🛰️Server/Coolist.json'):
     os.remove('Sakura🛰️Server/Coolist.json')
     print(f'''
