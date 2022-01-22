@@ -232,9 +232,6 @@ quoted: chat,
 mimetype: "audio/mp4",
 }
 )
-.catch((ℓαвєяяσя) =>
-ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
-);
 await cleanRF.cleanRF(filename);
 });
 });

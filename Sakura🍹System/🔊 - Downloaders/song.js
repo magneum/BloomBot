@@ -230,8 +230,7 @@ MessageType.audio,
 quoted: chat,
 mimetype: "audio/mp4",
 }
-)
-cleanRF.cleanRF(`${__dirname}/${YouTY}`);
+).then(cleanRF.cleanRF(`${__dirname}/${YouTY}`))
 return;
 });
 } catch (ℓαвєяяσя) {

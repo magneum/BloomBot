@@ -186,10 +186,14 @@ Found.thumbnail
 );
 return;
 }
-ӄʀǟӄɨռʐ.sendMessage(ֆǟӄʊʀǟ.chatId, MessageType.text, {
+await ӄʀǟӄɨռʐ.sendMessage(
+ֆǟӄʊʀǟ.chatId,
+`📺𝗣𝗹𝗲𝗮𝘀𝗲 𝘄𝗮𝗶𝘁 𝗳𝗼𝗿 𝘁𝗵𝗲 𝗱𝗲𝗹𝗶𝘃𝗲𝗿𝘆 𝗼𝗳 𝐕𝐢𝐝𝐞𝐨!`,
+MessageType.text,
+{
 quoted: chat,
-caption: `📺𝐕𝐢𝐝𝐞𝐨 @${ꜱᴇɴᴅᴇʀeceived}, 𝗣𝗹𝗲𝗮𝘀𝗲 𝘄𝗮𝗶𝘁 𝗳𝗼𝗿 𝘁𝗵𝗲 𝗱𝗲𝗹𝗶𝘃𝗲𝗿𝘆 𝗼𝗳 𝐕𝐢𝐝𝐞𝐨!`,
-});
+}
+);
 //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
 const { id } = getVideoId(Found.url);
 let stream = ytdl(id);
@@ -205,15 +209,17 @@ readline.cursorTo(process.stdout, 0);
 process.stdout.write(`${p.targetSize}kb downloaded`);
 })
 .on("end", () => {
+//|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
 console.log(`\nTime Taken: ${(Date.now() - start) / 1000}s`);
-ӄʀǟӄɨռʐ.sendMessage(
+ӄʀǟӄɨռʐ
+.sendMessage(
 ֆǟӄʊʀǟ.chatId,
 fs.readFileSync(`${__dirname}/${YouTY}`),
 MessageType.video,
 {
 quoted: chat,
 mimetype: Mimetype.mp4Audio,
-caption: `📺𝐕𝐢𝐝𝐞𝐨 @${ꜱᴇɴᴅᴇʀeceived}, 
+caption: `📺𝐕𝐢𝐝𝐞𝐨
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 ║🍻 𝐓𝐢𝐭𝐥𝐞: ${Found.title}
@@ -224,10 +230,11 @@ caption: `📺𝐕𝐢𝐝𝐞𝐨 @${ꜱᴇɴᴅᴇʀeceived},
 ║🔗 𝐋𝐢𝐧𝐤: ${Found.url}
 ╚════════════╝`,
 }
-);
-cleanRF.cleanRF(`${__dirname}/${YouTY}`);
+)
+.then(cleanRF.cleanRF(`${__dirname}/${YouTY}`));
 return;
 });
+//|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
 } catch (ℓαвєяяσя) {
 console.log(ℓαвєяяσя);
 userBadge.Limits = userBadge.Limits + 1;
