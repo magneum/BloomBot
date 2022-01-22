@@ -176,7 +176,7 @@ module.exports = {
   🍠𝐒𝐨𝐮𝐫𝐜𝐞: _•Instagram_
   🧀𝐅𝐢𝐥𝐞 𝐓𝐲𝐩𝐞: ${i.type}
   `,
-                      footerText: `(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 \n${Clock}`,
+                      footerText: `🍹(©️)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭\n${Clock}`,
                       buttons: [
                         {
                           buttonId: `${ᴋᴇɪ}help`,
@@ -215,7 +215,7 @@ module.exports = {
   🍠𝐒𝐨𝐮𝐫𝐜𝐞: _•Instagram_
   🧀𝐅𝐢𝐥𝐞 𝐓𝐲𝐩𝐞: ${i.type}
   `,
-                      footerText: `(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 \n${Clock}`,
+                      footerText: `🍹(©️)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭\n${Clock}`,
                       buttons: [
                         {
                           buttonId: `${ᴋᴇɪ}help`,

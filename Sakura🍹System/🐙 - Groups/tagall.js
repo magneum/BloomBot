@@ -99,7 +99,7 @@ module.exports = {
               },
               mentionedJid: members,
             },
-            caption: `(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 
+            caption: `🍹(©️)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 🥳𝐅𝐫𝐨𝐦: @${ꜱᴇɴᴅᴇʀeceived}
@@ -121,7 +121,7 @@ _⚠️Attention Everyone Here In the Group!_`,
             contextInfo: {
               mentionedJid: members,
             },
-            caption: `(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 
+            caption: `🍹(©️)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 🥳𝐅𝐫𝐨𝐦: @${ꜱᴇɴᴅᴇʀeceived}
@@ -143,7 +143,7 @@ ${ֆǟӄʊʀǟ.body.replace(ֆǟӄʊʀǟ.body[0] + ֆǟӄʊʀǟ.commandName + " 
             contextInfo: {
               mentionedJid: members,
             },
-            caption: `(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 
+            caption: `🍹(©️)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 🥳𝐅𝐫𝐨𝐦: @${ꜱᴇɴᴅᴇʀeceived}
@@ -162,7 +162,7 @@ ${ֆǟӄʊʀǟ.replyMessage.replace(ֆǟӄʊʀǟ.body[0] + ֆǟӄʊʀǟ.commandN
             contextInfo: {
               mentionedJid: members,
             },
-            caption: `(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 
+            caption: `🍹(©️)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 🥳𝐅𝐫𝐨𝐦: @${ꜱᴇɴᴅᴇʀeceived}

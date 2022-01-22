@@ -141,7 +141,7 @@ ${cpus
             contextInfo: {
               mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
             },
-            caption: `(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 
+            caption: `🍹(©️)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭
 
 @${ꜱᴇɴᴅᴇʀeceived}, 
 ${respon}`,

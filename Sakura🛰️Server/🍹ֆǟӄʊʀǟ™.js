@@ -155,7 +155,7 @@ async function ֆǟӄʊʀǟ() {
     );
     ӄʀǟӄɨռʐ.sendMessage(
       ӄʀǟӄɨռʐ.user.jid,
-      `(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 _${version}_
+      `🍹(©️)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭_${version}_
 
 ╔═══════★
 ║🍹ᴘʀᴇꜰɪx: ${ᴋᴇɪ}
@@ -301,7 +301,7 @@ ${update.desc}`,
             contentText: `𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚👋🏻 ${Timers} ᴇᴠᴇʀʏᴏɴᴇ.
 ʙᴏᴛ ɪꜱ ʀᴇᴀᴅʏ ᴛᴏ ᴀꜱꜱɪꜱᴛ ʏᴏᴜ!
 ᴛʏᴘᴇ *${ᴋᴇɪ}help* ᴛᴏ ᴋɴᴏᴡ ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅꜱ!`,
-            footerText: `(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 \n${Clock}`,
+            footerText: `🍹(©️)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭\n${Clock}`,
             buttons: [
               {
                 buttonId: `${ᴋᴇɪ}help`,
