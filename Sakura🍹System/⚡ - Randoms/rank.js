@@ -138,11 +138,21 @@ module.exports = {
 ╔═══════ 📜𝐑𝐚𝐧𝐤 𝐂𝐚𝐫𝐝
 ║🍇 𝗖𝘂𝗿𝗿𝗲𝗻𝘁 𝗫𝗣: _${users.xp}_
 ║🍈 𝗖𝘂𝗿𝗲𝗻𝘁 𝗟𝗲𝘃𝗲𝗹: _${users.level}_
-║🍊 𝗡𝗲𝘅𝘁 𝗟𝗲𝘃𝗲𝗹 𝗶𝗻: _${xpleft}_
 ╚════════════╝
 
-🎉𝐓𝐡𝐞 𝐌𝐨𝐫𝐞 𝐘𝐨𝐮 𝐓𝐚𝐥𝐤, 𝐓𝐡𝐞 𝐌𝐨𝐫𝐞 𝐗𝐏+𝐆𝐎𝐋𝐃 𝐘𝐨𝐮 𝐆𝐚𝐢𝐧. 
-🎉𝐊𝐞𝐞𝐩 𝐔𝐩!`,
+╔═══════ ⭕𝐋𝐞𝐯𝐞𝐥𝐬
+║*Level:* <5 | *Hardness:* 50%
+║*Level:* <10 | *Hardness:* 100%
+║*Level:* <20 | *Hardness:* 150%
+║*Level:* <30 | *Hardness:* 200%
+║*Level:* <40 | *Hardness:* 250%
+║*Level:* <50 | *Hardness:* 300%
+║*Level:* <60 | *Hardness:* 350%
+║*Level:* <70 | *Hardness:* 400%
+║*Level:* <80 | *Hardness:* 450%
+║*Level:* <90 | *Hardness:* 500%
+║*Level:* <100 | *Hardness:* 550%
+╚════════════╝`,
                   }
                 );
                 cleanRF.cleanRF(`${ꜱᴇɴᴅᴇʀeceived.toString()}_.jpeg`);
@@ -163,3 +173,28 @@ module.exports = {
 `|🍹|======================================================================================================⬡  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™`;
 `|🍹|      (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 | 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!       |`;
 `|🍹|======================================================================================================⬡  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™`;
+if (currentLvl < 5) {
+  var nxtlvl = 50 * Math.pow(2, currentLvl);
+} else if (currentLvl >= 5) {
+  var nxtlvl = 100 * Math.pow(2, currentLvl);
+} else if (currentLvl >= 10) {
+  var nxtlvl = 150 * Math.pow(2, currentLvl);
+} else if (currentLvl >= 20) {
+  var nxtlvl = 250 * Math.pow(2, currentLvl);
+} else if (currentLvl >= 30) {
+  var nxtlvl = 300 * Math.pow(2, currentLvl);
+} else if (currentLvl >= 40) {
+  var nxtlvl = 350 * Math.pow(2, currentLvl);
+} else if (currentLvl >= 50) {
+  var nxtlvl = 400 * Math.pow(2, currentLvl);
+} else if (currentLvl >= 60) {
+  var nxtlvl = 450 * Math.pow(2, currentLvl);
+} else if (currentLvl >= 70) {
+  var nxtlvl = 500 * Math.pow(2, currentLvl);
+} else if (currentLvl >= 80) {
+  var nxtlvl = 550 * Math.pow(2, currentLvl);
+} else if (currentLvl >= 90) {
+  var nxtlvl = 600 * Math.pow(2, currentLvl);
+} else if (currentLvl >= 100) {
+  var nxtlvl = 750 * Math.pow(2, currentLvl);
+}
