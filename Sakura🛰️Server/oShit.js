@@ -39,7 +39,7 @@ if (time2 < `11:00:00`) {
 if (time2 < `05:00:00`) {
   var Timers = `𝐍𝐢𝐠𝐡𝐭💤`;
 }
-exports.catch = async (ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat) => {
+exports.catch = async (Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat) => {
   var ꜱᴇɴᴅᴇʀɪᴅ = ֆǟӄʊʀǟ.sender;
   var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
   const defaultnm = ֆǟӄʊʀǟ.commandName;
@@ -76,7 +76,7 @@ exports.catch = async (ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat) =>
     {
       contentText: `*🍹 Try Again Later!*
 
-*Error:* ${ℓαвєяяσя}`,
+*Error:* ${Error}`,
       footerText: `🍸(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭\n${Clock}`,
       buttons: [
         {
@@ -97,7 +97,7 @@ exports.catch = async (ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat) =>
       quoted: chat,
     }
   );
-  console.log(ℓαвєяяσя);
+  console.log(Error);
   return;
 };
 `|🍹|`;

@@ -12,13 +12,13 @@ const ꜰᴜᴄᴋ = require(`../../Sakura🛰️Server/oShit`);
 const _𝔏𝔞𝔟_ = require(`../../Sakura🛰️Server/_𝔏𝔞𝔟_`);
 const { registerFont } = require(`canvas`);
 registerFont(`./Sakura🛰️Server/LobsterTwo-Bold.ttf`, {
-family: `LobsterTwo-Bold`,
+  family: `LobsterTwo-Bold`,
 });
 registerFont(`./Sakura🛰️Server/SlouchybrushRegular-eZnEB.ttf`, {
-family: `SlouchybrushRegular`,
+  family: `SlouchybrushRegular`,
 });
 registerFont(`./Sakura🛰️Server/TheHeartOfEverythingDemo-KRdD.ttf`, {
-family: `TheHeartOfEverythingDemo`,
+  family: `TheHeartOfEverythingDemo`,
 });
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
@@ -29,101 +29,105 @@ var scriptName = path.basename(__filename);
 var newScpt = scriptName.slice(0, -3).toLowerCase();
 `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
 module.exports = {
-name: newScpt,
-async handle(ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
-try {
-var ꜱᴇɴᴅᴇʀɪᴅ = ֆǟӄʊʀǟ.sender;
-var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
-const defaultnm = ֆǟӄʊʀǟ.commandName;
-const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
-`|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
-const hold = require(`../../Sakura🛰️Server/Hold`);
-hold.Hold(ֆǟӄʊʀǟ);
-`|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
-if (!ֆǟӄʊʀǟ.isGroup) {
-try {
-return Sakura_Buttons.MTB(
-ӄʀǟӄɨռʐ,
-chat,
-ֆǟӄʊʀǟ,
-`✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived}, 
+  name: newScpt,
+  async handle(ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
+    try {
+      var ꜱᴇɴᴅᴇʀɪᴅ = ֆǟӄʊʀǟ.sender;
+      var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
+      const defaultnm = ֆǟӄʊʀǟ.commandName;
+      const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
+      `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
+      const hold = require(`../../Sakura🛰️Server/Hold`);
+      hold.Hold(ֆǟӄʊʀǟ);
+      `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
+      if (!ֆǟӄʊʀǟ.isGroup) {
+        try {
+          return Sakura_Buttons.MTB(
+            ӄʀǟӄɨռʐ,
+            chat,
+            ֆǟӄʊʀǟ,
+            `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived}, 
 
 ────★ 🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧   
 
 ❗𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ᴋᴇɪ}${defaultnm}, 
 ᴄᴏᴍᴍᴀɴᴅ ᴏɴʟʏ ꜰᴏʀ ɢʀᴏᴜᴘꜱ!`
-);
-} catch (ℓαвєяяσя) {
-ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
-}
-}
-`|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
-const applyText = (canvas, text) => {
-const ctx = canvas.getContext(`2d`);
-let fontSize = 50;
-do {
-ctx.font = `${(fontSize -= 10)}px Symbola`;
-} while (ctx.measureText(text).width > canvas.width - 300);
-return ctx.font;
-};
-var canvas = Canvas.createCanvas(840, 300);
-var ctx = canvas.getContext(`2d`);
-try {
-𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄʀǟӄɨռʐ.getProfilePicture(ֆǟӄʊʀǟ.sender);
-} catch {
-𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = `./Sakura☣️Reactor/ֆǟӄʊʀǟ_Npp.png`;
-}
-let xpAdd = Math.ceil(Math.random() * 10);
-`|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
-UsersSakura.findOne(
-{
-did: ֆǟӄʊʀǟ.sender,
-},
-async (err, users) => {
-if (err) console.log(err);
-if (!users) {
-var newUsers = new UsersSakura({
-did: ֆǟӄʊʀǟ.sender,
-xp: xpAdd,
-level: 0,
-});
-newUsers.save().catch((ℓαвєяяσя) => console.log(ℓαвєяяσя));
-} else {
-`|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
-var background = await Canvas.loadImage(
-`https://i.postimg.cc/htTPpb6w/Rank.png`
-);
-ctx.drawImage(background, 0, 0, 1366, 768);
-ctx.beginPath();
-ctx.fillStyle = `rgba(236,180,95, 0.5)`;
-ctx.fillRect(260, 80, 650, 160);
-ctx.closePath();
-ctx.stroke();
-ctx.font = applyText(canvas, `User`);
-ctx.fillStyle = `#000`;
-ctx.font = `80px LobsterTwo-Bold`;
-ctx.fillText(`★Rank Check!★`, 280, 136);
-ctx.font = `40px TheHeartOfEverythingDemo`;
-ctx.fillStyle = `#000`;
-ctx.fillText(
-`Level now ` + users.level + ` - ` + users.xp + ` XP`,
-280,
-180
-);
-`|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
-await Canvas.loadImage(𝕻𝕻𝖑𝖊𝖙𝖊𝖗).then((avatar) => {
-ctx.beginPath();
-ctx.arc(125, 140, 100, 0, Math.PI * 2);
-ctx.closePath();
-ctx.clip();
-ctx.drawImage(avatar, 25, 40, 200, 200);
-const out = fs.createWriteStream(
-`${ꜱᴇɴᴅᴇʀeceived.toString()}_.jpeg`
-);
-const stream = canvas.createJPEGStream();
-stream.pipe(out);
-out.on(`finish`, () => {
-Sakura_Buttons.MIB(ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived}
+          );
+        } catch (Error) {
+          ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
+        }
+      }
+      `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
+      const applyText = (canvas, text) => {
+        const ctx = canvas.getContext(`2d`);
+        let fontSize = 50;
+        do {
+          ctx.font = `${(fontSize -= 10)}px Symbola`;
+        } while (ctx.measureText(text).width > canvas.width - 300);
+        return ctx.font;
+      };
+      var canvas = Canvas.createCanvas(840, 300);
+      var ctx = canvas.getContext(`2d`);
+      try {
+        𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄʀǟӄɨռʐ.getProfilePicture(ֆǟӄʊʀǟ.sender);
+      } catch {
+        𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = `./Sakura☣️Reactor/ֆǟӄʊʀǟ_Npp.png`;
+      }
+      let xpAdd = Math.ceil(Math.random() * 10);
+      `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
+      UsersSakura.findOne(
+        {
+          did: ֆǟӄʊʀǟ.sender,
+        },
+        async (err, users) => {
+          if (err) console.log(err);
+          if (!users) {
+            var newUsers = new UsersSakura({
+              did: ֆǟӄʊʀǟ.sender,
+              xp: xpAdd,
+              level: 0,
+            });
+            newUsers.save().catch((Error) => console.log(Error));
+          } else {
+            `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
+            var background = await Canvas.loadImage(
+              `https://i.postimg.cc/htTPpb6w/Rank.png`
+            );
+            ctx.drawImage(background, 0, 0, 1366, 768);
+            ctx.beginPath();
+            ctx.fillStyle = `rgba(236,180,95, 0.5)`;
+            ctx.fillRect(260, 80, 650, 160);
+            ctx.closePath();
+            ctx.stroke();
+            ctx.font = applyText(canvas, `User`);
+            ctx.fillStyle = `#000`;
+            ctx.font = `80px LobsterTwo-Bold`;
+            ctx.fillText(`★Rank Check!★`, 280, 136);
+            ctx.font = `40px TheHeartOfEverythingDemo`;
+            ctx.fillStyle = `#000`;
+            ctx.fillText(
+              `Level now ` + users.level + ` - ` + users.xp + ` XP`,
+              280,
+              180
+            );
+            `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
+            await Canvas.loadImage(𝕻𝕻𝖑𝖊𝖙𝖊𝖗).then((avatar) => {
+              ctx.beginPath();
+              ctx.arc(125, 140, 100, 0, Math.PI * 2);
+              ctx.closePath();
+              ctx.clip();
+              ctx.drawImage(avatar, 25, 40, 200, 200);
+              const out = fs.createWriteStream(
+                `${ꜱᴇɴᴅᴇʀeceived.toString()}_.jpeg`
+              );
+              const stream = canvas.createJPEGStream();
+              stream.pipe(out);
+              out.on(`finish`, () => {
+                Sakura_Buttons.MIB(
+                  ӄʀǟӄɨռʐ,
+                  chat,
+                  ֆǟӄʊʀǟ,
+                  `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived}
 
 ╔═══════ 📜𝐑𝐚𝐧𝐤 𝐂𝐚𝐫𝐝
 ║🍇 𝗖𝘂𝗿𝗿𝗲𝗻𝘁 𝗫𝗣: _${users.xp}_
@@ -142,19 +146,21 @@ Sakura_Buttons.MIB(ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, `✋🏽‍𝐊𝐨𝐧�
 ║*Level:* <80 | *Hardness:* 450%
 ║*Level:* <90 | *Hardness:* 500%
 ║*Level:* <100 | *Hardness:* 550%
-╚════════════╝`, fs.readFileSync(`${ꜱᴇɴᴅᴇʀeceived.toString()}_.jpeg`))
-cleanRF.cleanRF(`${ꜱᴇɴᴅᴇʀeceived.toString()}_.jpeg`);
-});
-});
-}
-}
-);
-`|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
-} catch (ℓαвєяяσя) {
-ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
-return;
-}
-},
+╚════════════╝`,
+                  fs.readFileSync(`${ꜱᴇɴᴅᴇʀeceived.toString()}_.jpeg`)
+                );
+                cleanRF.cleanRF(`${ꜱᴇɴᴅᴇʀeceived.toString()}_.jpeg`);
+              });
+            });
+          }
+        }
+      );
+      `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
+    } catch (Error) {
+      ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
+      return;
+    }
+  },
 };
 `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
 `|🍹|`;

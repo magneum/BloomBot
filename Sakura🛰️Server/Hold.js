@@ -11,8 +11,8 @@ exports.Hold = async (ֆǟӄʊʀǟ) => {
     await jsoncool.push(ֆǟӄʊʀǟ.sender);
     fs.writeFileSync(File, JSON.stringify(jsoncool));
     console.log("Logged-ID " + ֆǟӄʊʀǟ.sender);
-    setTimeout((ℓαвєяяσя) => {
-      if (ℓαвєяяσя) return console.log(ℓαвєяяσя);
+    setTimeout((Error) => {
+      if (Error) return console.log(Error);
       jsoncool.splice(ֆǟӄʊʀǟ.sender);
       fs.writeFileSync(File, JSON.stringify(jsoncool));
       console.log("Un-Logged-ID" + ֆǟӄʊʀǟ.sender);
@@ -22,8 +22,8 @@ exports.Hold = async (ֆǟӄʊʀǟ) => {
     await jsoncool.push(ֆǟӄʊʀǟ.sender);
     fs.writeFileSync(File, JSON.stringify(jsoncool));
     console.log("Logged-ID " + ֆǟӄʊʀǟ.sender);
-    setTimeout((ℓαвєяяσя) => {
-      if (ℓαвєяяσя) return console.log(ℓαвєяяσя);
+    setTimeout((Error) => {
+      if (Error) return console.log(Error);
       jsoncool.splice(ֆǟӄʊʀǟ.sender);
       fs.writeFileSync(File, JSON.stringify(jsoncool));
       console.log("Un-Logged-ID" + ֆǟӄʊʀǟ.sender);

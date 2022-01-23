@@ -9,8 +9,8 @@ const { window } = new JSDOM();
 exports.cleanRF = async (...ᴊᴜɴᴋꜱ) => {
   var startTime = window.performance.now();
   for (location of ᴊᴜɴᴋꜱ) {
-    fs.unlink(location, (ℓαвєяяσя) => {
-      if (ℓαвєяяσя) console.log(ℓαвєяяσя);
+    fs.unlink(location, (Error) => {
+      if (Error) console.log(Error);
       else {
         console.log(`𝚂𝚢𝚜𝚝𝚎𝚖 𝙹𝚞𝚗𝚔 𝙲𝚕𝚎𝚊𝚗𝚎𝚍🗑️ ` + location);
       }

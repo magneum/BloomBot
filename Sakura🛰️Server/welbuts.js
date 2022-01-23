@@ -67,9 +67,7 @@ exports.welbuts = async (
       cloneFiles: false,
     });
     await downloader.download();
-    let content = fs.readFileSync(
-      `${__dirname}/${ᴘᴘᴡᴇʟᴄᴏᴍᴇ}_${FlowerWel}.png`
-    );
+    let content = fs.readFileSync(`${__dirname}/${ᴘᴘᴡᴇʟᴄᴏᴍᴇ}_${FlowerWel}.png`);
     const media = await ӄʀǟӄɨռʐ.prepareMessage(
       GroupID,
       content,
@@ -115,12 +113,12 @@ ${ꜰᴇᴛᴄʜᴇᴅᴡᴇʟᴄᴏᴍᴇ.message}`,
         }
       )
       .then(cleanRF.cleanRF(`${__dirname}/${ᴘᴘᴡᴇʟᴄᴏᴍᴇ}_${FlowerWel}.png`))
-      .catch((ℓαвєяяσя) => console.log(ℓαвєяяσя));
+      .catch((Error) => console.log(Error));
     //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
-  } catch (ℓαвєяяσя) {
+  } catch (Error) {
     console.log(
       `⬡==========================⬡    🍹 ` +
-        ℓαвєяяσя +
+        Error +
         `🍹    ⬡==========================⬡`
     );
   }

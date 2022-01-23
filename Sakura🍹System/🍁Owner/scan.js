@@ -17,78 +17,78 @@ var scriptName = path.basename(__filename);
 var newScpt = scriptName.slice(0, -3).toLowerCase();
 `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
 module.exports = {
-name: newScpt,
-async handle(ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
-try {
-var ꜱᴇɴᴅᴇʀɪᴅ = ֆǟӄʊʀǟ.sender;
-var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
-const defaultnm = ֆǟӄʊʀǟ.commandName;
-const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
-`|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
-const hold = require("../../Sakura🛰️Server/Hold");
-hold.Hold(ֆǟӄʊʀǟ);
-`|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
-if (!ֆǟӄʊʀǟ.fromMe && !ֆǟӄʊʀǟ.isSenderDev) {
-return Sakura_Buttons.MIB(
-ӄʀǟӄɨռʐ,
-chat,
-ֆǟӄʊʀǟ,
-`*❌ Owner Only | You Are Not Allowed! ❌*`,
-_𝔏𝔞𝔟_.ɴᴏᴛᴀᴅᴍɪɴ
-);
-} else {
-var filePath;
-if (ֆǟӄʊʀǟ.isReplyImage) {
-var imageId = chat.key.id;
-const fileName =
-`${__dirname}/${Ping}_${ꜱᴇɴᴅᴇʀɪᴅ}_${FinalName}_` + imageId;
-filePath = await ӄʀǟӄɨռʐ.downloadAndSaveMediaMessage(
-{
-message:
-chat.message.extendedTextMessage.contextInfo.quotedMessage,
-},
-fileName
-);
-var buffer = fs.readFileSync(filePath);
-Jimp.read(buffer, function (ℓαвєяяσя, image) {
-if (ℓαвєяяσя) {
-console.error(ℓαвєяяσя);
-}
-let qrcode = new qrCode();
-qrcode.callback = async function (ℓαвєяяσя, value) {
-if (ℓαвєяяσя) {
-ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
-} else {
-return Sakura_Static.MGS(
-ӄʀǟӄɨռʐ,
-chat,
-ֆǟӄʊʀǟ,
-`✔️ ✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived}, *Sir Here Is The Verified Link!*
+  name: newScpt,
+  async handle(ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
+    try {
+      var ꜱᴇɴᴅᴇʀɪᴅ = ֆǟӄʊʀǟ.sender;
+      var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
+      const defaultnm = ֆǟӄʊʀǟ.commandName;
+      const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
+      `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
+      const hold = require("../../Sakura🛰️Server/Hold");
+      hold.Hold(ֆǟӄʊʀǟ);
+      `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
+      if (!ֆǟӄʊʀǟ.fromMe && !ֆǟӄʊʀǟ.isSenderDev) {
+        return Sakura_Buttons.MIB(
+          ӄʀǟӄɨռʐ,
+          chat,
+          ֆǟӄʊʀǟ,
+          `*❌ Owner Only | You Are Not Allowed! ❌*`,
+          _𝔏𝔞𝔟_.ɴᴏᴛᴀᴅᴍɪɴ
+        );
+      } else {
+        var filePath;
+        if (ֆǟӄʊʀǟ.isReplyImage) {
+          var imageId = chat.key.id;
+          const fileName =
+            `${__dirname}/${Ping}_${ꜱᴇɴᴅᴇʀɪᴅ}_${FinalName}_` + imageId;
+          filePath = await ӄʀǟӄɨռʐ.downloadAndSaveMediaMessage(
+            {
+              message:
+                chat.message.extendedTextMessage.contextInfo.quotedMessage,
+            },
+            fileName
+          );
+          var buffer = fs.readFileSync(filePath);
+          Jimp.read(buffer, function (Error, image) {
+            if (Error) {
+              console.error(Error);
+            }
+            let qrcode = new qrCode();
+            qrcode.callback = async function (Error, value) {
+              if (Error) {
+                ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
+              } else {
+                return Sakura_Static.MGS(
+                  ӄʀǟӄɨռʐ,
+                  chat,
+                  ֆǟӄʊʀǟ,
+                  `✔️ ✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived}, *Sir Here Is The Verified Link!*
 
 +sudo($req(+${Ping}+${Clock}))
 ${_𝔏𝔞𝔟_.HASH.replace(`https://chat.whatsapp.com/`, `/kryo/`)}${value.result}`,
-`./Sakura☣️Reactor/ֆǟӄʊʀǟ™.mp4`
-);
-}
-};
-qrcode.decode(image.bitmap);
-});
-await cleanRF.cleanRF(filePath);
-} else {
-return Sakura_Buttons.MTB(
-ӄʀǟӄɨռʐ,
-chat,
-ֆǟӄʊʀǟ,
-`✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived},\n*Sir Please Reply To _QR-Code_!*`
-);
-}
-}
-`|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
-} catch (ℓαвєяяσя) {
-ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
-return;
-}
-},
+                  `./Sakura☣️Reactor/ֆǟӄʊʀǟ™.mp4`
+                );
+              }
+            };
+            qrcode.decode(image.bitmap);
+          });
+          await cleanRF.cleanRF(filePath);
+        } else {
+          return Sakura_Buttons.MTB(
+            ӄʀǟӄɨռʐ,
+            chat,
+            ֆǟӄʊʀǟ,
+            `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived},\n*Sir Please Reply To _QR-Code_!*`
+          );
+        }
+      }
+      `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
+    } catch (Error) {
+      ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
+      return;
+    }
+  },
 };
 `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
 `|🍹|`;
