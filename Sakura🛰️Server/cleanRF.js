@@ -18,11 +18,9 @@ exports.cleanRF = async (...ᴊᴜɴᴋꜱ) => {
   }
   var endTime = window.performance.now();
   console.log(
-    `🍹 (c)ֆǟӄʊʀǟ 🍹
-
-⬡===========⚡ Execution time: ${
+    `⬡===========⚡ Execution time: ${
       (endTime - startTime) / 1000
-    }(s) ⚡===========⬡`
+    } ⚡===========⬡`
   );
 };
 `🍹`;
