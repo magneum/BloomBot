@@ -32,17 +32,17 @@ module.exports = {
       var MainText = `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 •@${ꜱᴇɴᴅᴇʀeceived}, ${Timers}
 
 ╔═════════════🔎 𝐒𝐞𝐚𝐫𝐜𝐡
-║• ${ᴋᴇɪ}lyrics: _find lyrics of songs_
-║• ${ᴋᴇɪ}wallpaper: _download wallpapers_
-║• ${ᴋᴇɪ}google: _search anything on google_
-║• ${ᴋᴇɪ}wikipedia: _search anything on wikipedia_
-║• ${ᴋᴇɪ}github: _fing any github profile_
-║• ${ᴋᴇɪ}pinterest: _search anything on pinterest_
-║• ${ᴋᴇɪ}ytsearch: _search anything on youtube_
-║• ${ᴋᴇɪ}weather: _get weather data_  
-║• ${ᴋᴇɪ}ud: _urban dictionary for crazy people_
-║• ${ᴋᴇɪ}tenor: _convert text to tenor gif_
-║• ${ᴋᴇɪ}gif: _convert text tenor gif_
+║⬡ *${ᴋᴇɪ}lyrics*  _find lyrics of songs_
+║⬡ *${ᴋᴇɪ}wallpaper*  _download wallpapers_
+║⬡ *${ᴋᴇɪ}google*  _search anything on google_
+║⬡ *${ᴋᴇɪ}wikipedia*  _search anything on wikipedia_
+║⬡ *${ᴋᴇɪ}github*  _fing any github profile_
+║⬡ *${ᴋᴇɪ}pinterest*  _search anything on pinterest_
+║⬡ *${ᴋᴇɪ}ytsearch*  _search anything on youtube_
+║⬡ *${ᴋᴇɪ}weather*  _get weather data_  
+║⬡ *${ᴋᴇɪ}ud*  _urban dictionary for crazy people_
+║⬡ *${ᴋᴇɪ}tenor*  _convert text to tenor gif_
+║⬡ *${ᴋᴇɪ}gif*  _convert text tenor gif_
 ╚════════════╝`;
       return Sakura_Buttons.MIB(
         ӄʀǟӄɨռʐ,

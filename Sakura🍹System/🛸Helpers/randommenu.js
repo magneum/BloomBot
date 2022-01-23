@@ -33,12 +33,12 @@ module.exports = {
 
 
 ╔═════════════🦄 𝐑𝐚𝐧𝐝𝐨𝐦𝐬
-║• ${ᴋᴇɪ}joke: _get random jokes_
-║• ${ᴋᴇɪ}meme: _get random memes_
-║• ${ᴋᴇɪ}tr: _language translater_
-║• ${ᴋᴇɪ}tts: _convert text to speech_
-║• ${ᴋᴇɪ}rank: _check  your rank in groups_
-║• ${ᴋᴇɪ}pokedex: _get any pokemon information_
+║⬡ *${ᴋᴇɪ}joke*  _get random jokes_
+║⬡ *${ᴋᴇɪ}meme*  _get random memes_
+║⬡ *${ᴋᴇɪ}tr*  _language translater_
+║⬡ *${ᴋᴇɪ}tts*  _convert text to speech_
+║⬡ *${ᴋᴇɪ}rank*  _check  your rank in groups_
+║⬡ *${ᴋᴇɪ}pokedex*  _get any pokemon information_
 ╚════════════╝`;
       return Sakura_Buttons.MIB(
         ӄʀǟӄɨռʐ,
