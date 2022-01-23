@@ -100,7 +100,7 @@ module.exports = {
                   quoted: chat,
                   mimetype: Mimetype.jpeg,
                   contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
-                  content: `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived}
+                  caption: `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived}
 
 ╔═══════ 📜𝐑𝐚𝐧𝐤 𝐂𝐚𝐫𝐝
 ║🍇 𝗖𝘂𝗿𝗿𝗲𝗻𝘁 𝗫𝗣: _${users.xp}_
