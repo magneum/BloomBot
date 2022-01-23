@@ -54,7 +54,8 @@ mimetype: `video/gif`,
 contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
 caption: `@${ꜱᴇɴᴅᴇʀeceived}, (owner)
 
-*🍹ֆǟӄʊʀǟ™ ɪꜱ ɴᴏᴡ Rebooting._ᴘʟᴇᴀꜱᴇ ᴡᴀɪᴛ ꜰᴏʀ 30-60ꜱᴇᴄ_*`,
+*🍹ֆǟӄʊʀǟ™ Is Now Rebooting...*
+_Wait For (10-30)s_`,
 }
 );
 await heroku
