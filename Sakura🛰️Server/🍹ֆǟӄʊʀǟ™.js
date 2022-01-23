@@ -663,7 +663,7 @@ MessageType.text,
 } else {
 return ӄʀǟӄɨռʐ.sendMessage(
 ֆǟӄʊʀǟ.chatId,
-`*🚏CoolDown:* Bruh Wait For 15s!`,
+`*🚏AntiSpam:* Bruh Wait For 15s!`,
 MessageType.text,
 { quoted: chat }
 );
