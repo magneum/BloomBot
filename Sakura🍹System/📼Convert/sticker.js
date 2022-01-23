@@ -27,7 +27,11 @@ var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇ�
 const defaultnm = ֆǟӄʊʀǟ.commandName;
 const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
 //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
-if (!ֆǟӄʊʀǟ.isReplyImage || !ֆǟӄʊʀǟ.isReplyVideo) {
+if (
+!ֆǟӄʊʀǟ.isReply &&
+(!ֆǟӄʊʀǟ.mimeType === `imageMessage` ||
+!ֆǟӄʊʀǟ.mimeType === `videoMessage`)
+) {
 var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(ֆǟӄʊʀǟ.commandName);
 var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
 𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ === undefined ? `Null` : 𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ;
