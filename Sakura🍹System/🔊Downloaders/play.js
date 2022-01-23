@@ -163,7 +163,7 @@ chat,
 //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
 const LinkForGroups = await yts(Needs.join(` `));
 const GroupVideos = LinkForGroups.videos.slice(0, 1);
-const filename = `${__dirname}/${FinalName}_${Ping}_${ꜱᴇɴᴅᴇʀɪᴅ}`;
+const filename = `${newScpt}/${FinalName}_${Ping}_${ꜱᴇɴᴅᴇʀɪᴅ}`;
 GroupVideos.forEach(async function (youfound) {
 if (youfound.seconds > `600`) {
 userBadge.Limits = userBadge.Limits + 1;

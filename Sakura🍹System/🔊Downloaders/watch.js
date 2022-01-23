@@ -203,7 +203,7 @@
 // try {
 // ffmpeg(stream)
 // .videoBitrate(128)
-// .save(`${__dirname}/${YouTY}`)
+// .save(`${newScpt}/${YouTY}`)
 // .on("progress", (p) => {
 // readline.cursorTo(process.stdout, 0);
 // process.stdout.write(`${p.targetSize}kb downloaded`);
@@ -214,7 +214,7 @@
 // ӄʀǟӄɨռʐ
 // .sendMessage(
 // ֆǟӄʊʀǟ.chatId,
-// fs.readFileSync(`${__dirname}/${YouTY}`),
+// fs.readFileSync(`${newScpt}/${YouTY}`),
 // MessageType.video,
 // {
 // quoted: chat,
@@ -231,7 +231,7 @@
 // ╚════════════╝`,
 // }
 // )
-// .then(cleanRF.cleanRF(`${__dirname}/${YouTY}`));
+// .then(cleanRF.cleanRF(`${newScpt}/${YouTY}`));
 // return;
 // });
 // //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|

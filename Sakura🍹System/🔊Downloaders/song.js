@@ -214,7 +214,7 @@ let YouTY = `${id}${start.toString()}.mp3`;
 try {
 ffmpeg(stream)
 .audioBitrate(128)
-.save(`${__dirname}/${YouTY}`)
+.save(`${newScpt}/${YouTY}`)
 .on("progress", (p) => {
 readline.cursorTo(process.stdout, 0);
 process.stdout.write(`${p.targetSize}kb downloaded`);
@@ -224,13 +224,13 @@ console.log(`\nTime Taken: ${(Date.now() - start) / 1000}s`);
 ӄʀǟӄɨռʐ
 .sendMessage(
 ֆǟӄʊʀǟ.chatId,
-fs.readFileSync(`${__dirname}/${YouTY}`),
+fs.readFileSync(`${newScpt}/${YouTY}`),
 MessageType.audio,
 {
 quoted: chat,
 mimetype: "audio/mp4",
 }
-).then(cleanRF.cleanRF(`${__dirname}/${YouTY}`))
+).then(cleanRF.cleanRF(`${newScpt}/${YouTY}`))
 return;
 });
 } catch (ℓαвєяяσя) {
