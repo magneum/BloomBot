@@ -75,19 +75,28 @@ ServerID: ֆǟӄʊʀǟ.chatId,
 async (err, userWarn) => {
 if (err) return console.log(err);
 if (!userWarn) {
-await ӄʀǟӄɨռʐ
-.sendMessage(ֆǟӄʊʀǟ.chatId, MessageType.text, {
-quoted: chat,
-content: `
+const buttonMessage = {
+contentText: `
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 ║♀️ 𝗣𝗲𝗿𝘀𝗼𝗻: @${personreceived}
 ║❗ 𝗪𝗮𝗿𝗻𝗶𝗻𝗴𝘀: Never Warned!
 ╚════════════╝`,
-contextInfo: { mentionedJid: [Receiver] },
+footerText: `🍸(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭\n${Clock}`,
+buttons: [
+{
+buttonId: `${ᴋᴇɪ}help`,
+buttonText: { displayText: `${ᴋᴇɪ}help` },
+type: 1,
+},
+],
+headerType: 1,
+};
+await ӄʀǟӄɨռʐ
+.sendMessage(ֆǟӄʊʀǟ.chatId, buttonMessage, MessageType.buttonsMessage, {
+quoted: chat,
+contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
 })
-.catch((ℓαвєяяσя) =>
-ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
-);
+.catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
 return;
 //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
 } else {
@@ -98,20 +107,29 @@ await userEco
 .catch((ℓαвєяяσя) =>
 ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
 );
-await ӄʀǟӄɨռʐ
-.sendMessage(ֆǟӄʊʀǟ.chatId, MessageType.text, {
-quoted: chat,
-content: `
+const buttonMessage = {
+contentText:  `
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 ║♀️ 𝗣𝗲𝗿𝘀𝗼𝗻: @${personreceived}
 ║❗ 𝗪𝗮𝗿𝗻𝗶𝗻𝗴𝘀: ${userWarn.warnings}
 ║💡 If Warnings = 3, You will be auto-removed!
 ╚════════════╝`,
-contextInfo: { mentionedJid: [Receiver] },
+footerText: `🍸(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭\n${Clock}`,
+buttons: [
+{
+buttonId: `${ᴋᴇɪ}help`,
+buttonText: { displayText: `${ᴋᴇɪ}help` },
+type: 1,
+},
+],
+headerType: 1,
+};
+await ӄʀǟӄɨռʐ
+.sendMessage(ֆǟӄʊʀǟ.chatId, buttonMessage, MessageType.buttonsMessage, {
+quoted: chat,
+contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
 })
-.catch((ℓαвєяяσя) =>
-ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
-);
+.catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
 return;
 }
 //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
@@ -121,19 +139,28 @@ await userEco
 .catch((ℓαвєяяσя) =>
 ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
 );
-await ӄʀǟӄɨռʐ
-.sendMessage(ֆǟӄʊʀǟ.chatId, MessageType.text, {
-quoted: chat,
-content: `
+const buttonMessage = {
+contentText:  `
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 ║♀️ 𝗣𝗲𝗿𝘀𝗼𝗻: @${personreceived}
 ║❗ 𝗪𝗮𝗿𝗻𝗶𝗻𝗴𝘀: All Warnings Removed!
 ╚════════════╝`,
-contextInfo: { mentionedJid: [Receiver] },
+footerText: `🍸(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭\n${Clock}`,
+buttons: [
+{
+buttonId: `${ᴋᴇɪ}help`,
+buttonText: { displayText: `${ᴋᴇɪ}help` },
+type: 1,
+},
+],
+headerType: 1,
+};
+await ӄʀǟӄɨռʐ
+.sendMessage(ֆǟӄʊʀǟ.chatId, buttonMessage, MessageType.buttonsMessage, {
+quoted: chat,
+contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
 })
-.catch((ℓαвєяяσя) =>
-ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
-);
+.catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
 return;
 }
 }
@@ -155,7 +182,6 @@ chat,
 ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
 );
 }
-//|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
 //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
 } catch (ℓαвєяяσя) {
 ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
