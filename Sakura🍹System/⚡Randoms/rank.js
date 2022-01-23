@@ -94,7 +94,9 @@ module.exports = {
             return await ӄʀǟӄɨռʐ
               .sendMessage(
                 ֆǟӄʊʀǟ.chatId,
-                { url: "https://i.postimg.cc/XqPBcyq0/image.png" },
+                {
+                  url: "https://i.postimg.cc/GtzHrQNr/Sakura-Rank-Catelog.png",
+                },
                 MessageType.image,
                 {
                   quoted: chat,
