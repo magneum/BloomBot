@@ -27,6 +27,54 @@ var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇ�
 const defaultnm = ֆǟӄʊʀǟ.commandName;
 const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
 //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
+if (ֆǟӄʊʀǟ.isReply) {
+var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(ֆǟӄʊʀǟ.commandName);
+var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
+𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ === undefined ? `Null` : 𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ;
+const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../Sakura🛰️Server/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
+ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
+ӄʀǟӄɨռʐ,
+chat,
+ֆǟӄʊʀǟ,
+ꜱᴇɴᴅᴇʀɪᴅ,
+ꜱᴇɴᴅᴇʀeceived,
+ֆǟӄʊʀǟ.commandName,
+ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
+);
+return;
+} 
+//|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
+let FileName = Date.now();
+let FileNameWebp = `${FileName}.webp`;
+let FileNameJpeg = `${FileName}.jpeg`;
+let FileNamePng = `${FileName}.png`;
+let FileNameMp4 = `${FileName}.mp4`;
+//|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
+try {
+var FileObject = {
+message: chat.message,
+};
+var FileType = await ӄʀǟӄɨռʐ.downloadAndSaveMediaMessage(
+FileObject,
+FileName
+);
+} catch (ℓαвєяяσя) {
+var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(ֆǟӄʊʀǟ.commandName);
+var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
+𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ === undefined ? `Null` : 𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ;
+const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../Sakura🛰️Server/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
+ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
+ӄʀǟӄɨռʐ,
+chat,
+ֆǟӄʊʀǟ,
+ꜱᴇɴᴅᴇʀɪᴅ,
+ꜱᴇɴᴅᴇʀeceived,
+ֆǟӄʊʀǟ.commandName,
+ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
+);
+return;
+}
+//|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
 const Bagde = require("../../Sakura🍃Goose/badge");
 const ms = require("parse-ms");
 Bagde.findOne(
@@ -123,65 +171,6 @@ chat,
 );
 }
 //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
-let FileName = Date.now();
-const NameWebp = `${FileName}.webp`;
-const NameJpeg = `${FileName}.jpeg`;
-const NamePng = `${FileName}.png`;
-const NameMp4 = `${FileName}.mp4`;
-//|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
-if (ֆǟӄʊʀǟ.isReply) {
-var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(ֆǟӄʊʀǟ.commandName);
-var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
-𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ === undefined ? `Null` : 𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ;
-const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../Sakura🛰️Server/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
-userBadge.Limits = userBadge.Limits + 1;
-await userBadge
-.save()
-.catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
-ӄʀǟӄɨռʐ,
-chat,
-ֆǟӄʊʀǟ,
-ꜱᴇɴᴅᴇʀɪᴅ,
-ꜱᴇɴᴅᴇʀeceived,
-ֆǟӄʊʀǟ.commandName,
-ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
-);
-return;
-} else {
-try {
-var FileObject = {
-message: chat.message,
-};
-var FileType = await ӄʀǟӄɨռʐ.downloadAndSaveMediaMessage(
-FileObject,
-FileName
-);
-} catch (ℓαвєяяσя) {
-var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(ֆǟӄʊʀǟ.commandName);
-var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
-𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ === undefined ? `Null` : 𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ;
-const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../Sakura🛰️Server/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
-userBadge.Limits = userBadge.Limits + 1;
-await userBadge
-.save()
-.catch((ℓαвєяяσя) =>
-ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
-);
-ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
-ӄʀǟӄɨռʐ,
-chat,
-ֆǟӄʊʀǟ,
-ꜱᴇɴᴅᴇʀɪᴅ,
-ꜱᴇɴᴅᴇʀeceived,
-ֆǟӄʊʀǟ.commandName,
-ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
-);
-return;
-}
-}
-
-//|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
 await setTimeout(async (ℓαвєяяσя) => {
 if (ℓαвєяяσя) {
 console.log(ℓαвєяяσя);
@@ -191,7 +180,7 @@ await userBadge
 .catch((ℓαвєяяσя) =>
 ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
 );
-await Sakura_Buttons.MTB(
+Sakura_Buttons.MTB(
 ӄʀǟӄɨռʐ,
 chat,
 ֆǟӄʊʀǟ,
@@ -210,14 +199,14 @@ console.log(FileObject);
 console.log("FileName: " + FileName);
 //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
 if (FileType.endsWith(".jpeg")) {
-await ffmpeg(NameJpeg)
+ffmpeg(FileNameJpeg)
 .outputOptions([`-y`, `-vcodec libwebp`])
 .videoFilters(
 `scale=2000:2000:flags=lanczos:force_original_aspect_ratio=decrease`,
 `format=rgba`,
 `pad=2000:2000:(ow-iw)/2:(oh-ih)/2:color=#00000000,setsar=1`
 )
-.save(NameWebp)
+.save(FileNameWebp)
 .on(`end`, async (ℓαвєяяσя) => {
 if (ℓαвєяяσя) {
 console.log(ℓαвєяяσя);
@@ -227,7 +216,7 @@ await userBadge
 .catch((ℓαвєяяσя) =>
 ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
 );
-await Sakura_Buttons.MTB(
+Sakura_Buttons.MTB(
 ӄʀǟӄɨռʐ,
 chat,
 ֆǟӄʊʀǟ,
@@ -242,11 +231,11 @@ return;
 }
 await ӄʀǟӄɨռʐ.sendMessage(
 ֆǟӄʊʀǟ.chatId,
-fs.readFileSync(NameWebp),
+fs.readFileSync(FileNameWebp),
 MessageType.sticker,
 { quoted: chat }
 );
-await cleanRF.cleanRF(NameJpeg, NameWebp);
+await cleanRF.cleanRF(FileNameJpeg, FileNameWebp);
 return;
 })
 .on(`error`, async (ℓαвєяяσя) => {
@@ -257,7 +246,7 @@ await userBadge
 .catch((ℓαвєяяσя) =>
 ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
 );
-await Sakura_Buttons.MTB(
+Sakura_Buttons.MTB(
 ӄʀǟӄɨռʐ,
 chat,
 ֆǟӄʊʀǟ,
@@ -272,14 +261,14 @@ return;
 });
 // ====================================================================================================== PNG
 } else if (FileType.endsWith(".png")) {
-await ffmpeg(NamePng)
+ffmpeg(FileNamePng)
 .outputOptions([`-y`, `-vcodec libwebp`])
 .videoFilters(
 `scale=2000:2000:flags=lanczos:force_original_aspect_ratio=decrease`,
 `format=rgba`,
 `pad=2000:2000:(ow-iw)/2:(oh-ih)/2:color=#00000000,setsar=1`
 )
-.save(NameWebp)
+.save(FileNameWebp)
 .on(`end`, async (ℓαвєяяσя) => {
 if (ℓαвєяяσя) {
 console.log(ℓαвєяяσя);
@@ -289,7 +278,7 @@ await userBadge
 .catch((ℓαвєяяσя) =>
 ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
 );
-await Sakura_Buttons.MTB(
+Sakura_Buttons.MTB(
 ӄʀǟӄɨռʐ,
 chat,
 ֆǟӄʊʀǟ,
@@ -304,11 +293,11 @@ return;
 }
 await ӄʀǟӄɨռʐ.sendMessage(
 ֆǟӄʊʀǟ.chatId,
-fs.readFileSync(NameWebp),
+fs.readFileSync(FileNameWebp),
 MessageType.sticker,
 { quoted: chat }
 );
-await cleanRF.cleanRF(NamePng, NameWebp);
+await cleanRF.cleanRF(FileNamePng, FileNameWebp);
 return;
 })
 .on(`error`, async (ℓαвєяяσя) => {
@@ -319,7 +308,7 @@ await userBadge
 .catch((ℓαвєяяσя) =>
 ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
 );
-await Sakura_Buttons.MTB(
+Sakura_Buttons.MTB(
 ӄʀǟӄɨռʐ,
 chat,
 ֆǟӄʊʀǟ,
@@ -336,15 +325,15 @@ return;
 } else if (FileType.endsWith(".webp")) {
 await ӄʀǟӄɨռʐ.sendMessage(
 ֆǟӄʊʀǟ.chatId,
-fs.readFileSync(NameWebp),
+fs.readFileSync(FileNameWebp),
 MessageType.sticker,
 { quoted: chat }
 );
-await cleanRF.cleanRF(NameWebp);
+await cleanRF.cleanRF(FileNameWebp);
 return;
 // ====================================================================================================== MP4
 } else if (FileType.endsWith(".mp4")) {
-await ffmpeg(NameMp4)
+ffmpeg(FileNameMp4)
 .duration(8)
 .outputOptions([
 `-y`,
@@ -360,7 +349,7 @@ await ffmpeg(NameMp4)
 .videoFilters(
 `scale=600:600:flags=lanczos:force_original_aspect_ratio=decrease,format=rgba,pad=600:600:(ow-iw)/2:(oh-ih)/2:color=#00000000,setsar=1`
 )
-.save(NameWebp)
+.save(FileNameWebp)
 .on(`end`, async (ℓαвєяяσя) => {
 if (ℓαвєяяσя) {
 console.log(ℓαвєяяσя);
@@ -370,7 +359,7 @@ await userBadge
 .catch((ℓαвєяяσя) =>
 ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
 );
-await Sakura_Buttons.MTB(
+Sakura_Buttons.MTB(
 ӄʀǟӄɨռʐ,
 chat,
 ֆǟӄʊʀǟ,
@@ -385,11 +374,11 @@ return;
 }
 await ӄʀǟӄɨռʐ.sendMessage(
 ֆǟӄʊʀǟ.chatId,
-fs.readFileSync(NameWebp),
+fs.readFileSync(FileNameWebp),
 MessageType.sticker,
 { quoted: chat }
 );
-await cleanRF.cleanRF(NameMp4, NameWebp);
+await cleanRF.cleanRF(FileNameMp4, FileNameWebp);
 return;
 })
 .on(`error`, async (ℓαвєяяσя) => {
@@ -400,7 +389,7 @@ await userBadge
 .catch((ℓαвєяяσя) =>
 ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
 );
-await Sakura_Buttons.MTB(
+Sakura_Buttons.MTB(
 ӄʀǟӄɨռʐ,
 chat,
 ֆǟӄʊʀǟ,
