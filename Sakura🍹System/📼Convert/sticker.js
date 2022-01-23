@@ -141,10 +141,10 @@ chat,
 }
 //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
 let FileName = Date.now();
-let FileNameWebp = `${FileName}.webp`;
-let FileNameJpeg = `${FileName}.jpeg`;
-let FileNamePng = `${FileName}.png`;
-let FileNameMp4 = `${FileName}.mp4`;
+let FileNameWebp = `${__dirname}/${FileName}.webp`;
+let FileNameJpeg = `${__dirname}/${FileName}.jpeg`;
+let FileNamePng = `${__dirname}/${FileName}.png`;
+let FileNameMp4 = `${__dirname}/${FileName}.mp4`;
 //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
 
 var FileObject = {
