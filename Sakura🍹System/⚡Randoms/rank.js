@@ -77,13 +77,13 @@ module.exports = {
       `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
       UsersSakura.findOne(
         {
-          did: ֆǟӄʊʀǟ.sender,
+          ID: ֆǟӄʊʀǟ.sender,
         },
         async (err, users) => {
           if (err) console.log(err);
           if (!users) {
             var newUsers = new UsersSakura({
-              did: ֆǟӄʊʀǟ.sender,
+              ID: ֆǟӄʊʀǟ.sender,
               xp: xpAdd,
               level: 0,
             });
