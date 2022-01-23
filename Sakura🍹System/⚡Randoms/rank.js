@@ -122,7 +122,20 @@ module.exports = {
               );
               const stream = canvas.createJPEGStream();
               stream.pipe(out);
-              out.on(`finish`, () => {
+              out.on(`finish`, async (Error) => {
+                if (Error) {
+                  return Sakura_Buttons.MTB(
+                    ӄʀǟӄɨռʐ,
+                    chat,
+                    ֆǟӄʊʀǟ,
+                    `@${ꜱᴇɴᴅᴇʀeceived} 🤙🏽‍𝐇𝐞𝐥𝐥𝐨,
+
+╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+║🥺 𝐎𝐩𝐩𝐬𝐢𝐞 𝐓𝐫𝐲 𝐀𝐠𝐚𝐢𝐧!
+║🍹 𝐒𝐞𝐫𝐯𝐞𝐫 𝐃𝐢𝐝𝐧'𝐭 𝐑𝐞𝐬𝐩𝐨𝐧𝐝!
+╚════════════╝`
+                  );
+                }
                 Sakura_Buttons.MIB(
                   ӄʀǟӄɨռʐ,
                   chat,
@@ -148,8 +161,8 @@ module.exports = {
 ║*Level:* <100 | *Hardness:* 550%
 ╚════════════╝`,
                   fs.readFileSync(`${ꜱᴇɴᴅᴇʀeceived.toString()}_.jpeg`)
-                );
-                cleanRF.cleanRF(`${ꜱᴇɴᴅᴇʀeceived.toString()}_.jpeg`);
+                ).catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+                await cleanRF.cleanRF(`${ꜱᴇɴᴅᴇʀeceived.toString()}_.jpeg`);
               });
             });
           }
