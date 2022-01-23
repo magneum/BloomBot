@@ -19,13 +19,31 @@ var newScpt = scriptName.slice(0, -3).toLowerCase();
 //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
 module.exports = {
 name: newScpt,
-ֆǟӄʊʀǟӄǟɨʐօ: `Send *image/video/gif* message along with *${ᴋᴇɪ}sticker* command in caption.`,
+ֆǟӄʊʀǟӄǟɨʐօ: `Reply _${ᴋᴇɪ}sticker_ to _image/video_`,
 async handle(ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
 try {
 var ꜱᴇɴᴅᴇʀɪᴅ = ֆǟӄʊʀǟ.sender;
 var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
 const defaultnm = ֆǟӄʊʀǟ.commandName;
 const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
+//|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
+if (!ֆǟӄʊʀǟ.isReplyImage ||
+    !ֆǟӄʊʀǟ.isReplyVideo) {
+var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(ֆǟӄʊʀǟ.commandName);
+var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
+𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ === undefined ? `Null` : 𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ;
+const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../Sakura🛰️Server/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
+ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
+ӄʀǟӄɨռʐ,
+chat,
+ֆǟӄʊʀǟ,
+ꜱᴇɴᴅᴇʀɪᴅ,
+ꜱᴇɴᴅᴇʀeceived,
+ֆǟӄʊʀǟ.commandName,
+ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
+);
+return;
+} 
 //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
 let FileName = Date.now();
 let FileNameWebp = `${FileName}.webp`;
@@ -35,14 +53,14 @@ let FileNameMp4 = `${FileName}.mp4`;
 //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
 try {
 var FileObject = {
-message: chat.message,
+message: chat.message.extendedTextMessage.contextInfo.quotedMessage
 };
 var FileType = await ӄʀǟӄɨռʐ.downloadAndSaveMediaMessage(
 FileObject,
 FileName
 );
 } catch (ℓαвєяяσя) {
-console.log(ℓαвєяяσя);
+console.log(ℓαвєяяσя)
 var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(ֆǟӄʊʀǟ.commandName);
 var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
 𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ === undefined ? `Null` : 𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ;
