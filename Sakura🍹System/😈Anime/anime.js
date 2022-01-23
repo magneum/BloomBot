@@ -52,7 +52,7 @@ return Sakura_Buttons.MTB(
 ӄʀǟӄɨռʐ,
 chat,
 ֆǟӄʊʀǟ,
-`*@${ꜱᴇɴᴅᴇʀeceived}, Account Verified.Try Command Again!*`
+`*✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived}, Account Verified.Try Command Again!*`
 );
 //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
 } else {
@@ -146,7 +146,7 @@ chat,
 //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
 const name = Needs.join(` `);
 malScraper.getInfoFromName(name).then(async (data) => {
-const AnimeInfos = `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚, @${ꜱᴇɴᴅᴇʀeceived},
+const AnimeInfos = `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived},
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 ║💡𝐓𝐢𝐭𝐥𝐞: *${data.title}*

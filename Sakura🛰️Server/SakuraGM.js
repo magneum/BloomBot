@@ -27,130 +27,130 @@ const pattern = date.compile(`ddd, MMM DD YYYY`);
 const Clock = date.format(now, pattern);
 `⬡🍹⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
 exports.SakuraGM = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ) => {
-  var SakuraGMid = chat.key.id;
-  var ꜱᴇɴᴅᴇʀɪᴅ = ֆǟӄʊʀǟ.sender;
-  var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
-  const defaultnm = ֆǟӄʊʀǟ.commandName;
-  const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
-  if (ֆǟӄʊʀǟ.isReply) {
-    var ꜱᴇɴᴅᴇʀɪᴅ = ֆǟӄʊʀǟ.sender;
-    var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
-    var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
-    var personreceived = Receiver.substring(0, Receiver.length - 15);
-    var SakuraGMid = chat.message.extendedTextMessage.contextInfo.stanzaId;
-  }
-  const link = SakuraTenorMaker(FinalName.toLowerCase());
-  `⬡🍹⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-  const jsoncool = JSON.parse(fs.readFileSync(`./Sakura🛰️Server/Coolist.json`));
-  await jsoncool.push(ֆǟӄʊʀǟ.sender);
-  fs.writeFileSync(`./Sakura🛰️Server/Coolist.json`, JSON.stringify(jsoncool));
-  console.log("ID Added " + ֆǟӄʊʀǟ.sender);
-  setTimeout(async (error) => {
-    if (error) console.log(error);
-    await jsoncool.splice(ֆǟӄʊʀǟ.sender);
-    fs.writeFileSync(`./Sakura🛰️Server/Coolist.json`, JSON.stringify(jsoncool));
-    console.log("ID Removed " + ֆǟӄʊʀǟ.sender);
-  }, 10000);
-  `⬡🍹⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-  if (ֆǟӄʊʀǟ.isReply) {
-    const downloader = await new Downloader({
-      url: link,
-      directory: `${__dirname}`,
-      fileName: `${FinalName}_${SakuraGMid}.gif`,
-      cloneFiles: false,
-    });
-    try {
-      await downloader.download();
-      await ffmpeg(`${__dirname}/${FinalName}_${SakuraGMid}.gif`)
-        .outputOptions([
-          `-pix_fmt yuv420p`,
-          `-c:v libx264`,
-          `-movflags +faststart`,
-          `-filter:v crop='floor(in_w/2)*2:floor(in_h/2)*2'`,
-        ])
-        .save(`${__dirname}/${FinalName}_${SakuraGMid}.mp4`)
-        .on(`end`, async () => {
-          console.log(`Finished`);
-          await ӄʀǟӄɨռʐ
-            .sendMessage(
-              ֆǟӄʊʀǟ.chatId,
-              fs.readFileSync(`${__dirname}/${FinalName}_${SakuraGMid}.mp4`),
-              MessageType.video,
-              {
-                contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ, Receiver] },
-                quoted: chat,
-                mimetype: `video/gif`,
-                caption: `🍸(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭\n${Clock} 
+var SakuraGMid = chat.key.id;
+var ꜱᴇɴᴅᴇʀɪᴅ = ֆǟӄʊʀǟ.sender;
+var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
+const defaultnm = ֆǟӄʊʀǟ.commandName;
+const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
+if (ֆǟӄʊʀǟ.isReply) {
+var ꜱᴇɴᴅᴇʀɪᴅ = ֆǟӄʊʀǟ.sender;
+var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
+var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
+var personreceived = Receiver.substring(0, Receiver.length - 15);
+var SakuraGMid = chat.message.extendedTextMessage.contextInfo.stanzaId;
+}
+const link = SakuraTenorMaker(FinalName.toLowerCase());
+`⬡🍹⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
+const jsoncool = JSON.parse(fs.readFileSync(`./Sakura🛰️Server/Coolist.json`));
+await jsoncool.push(ֆǟӄʊʀǟ.sender);
+fs.writeFileSync(`./Sakura🛰️Server/Coolist.json`, JSON.stringify(jsoncool));
+console.log("ID Added " + ֆǟӄʊʀǟ.sender);
+setTimeout(async (error) => {
+if (error) console.log(error);
+await jsoncool.splice(ֆǟӄʊʀǟ.sender);
+fs.writeFileSync(`./Sakura🛰️Server/Coolist.json`, JSON.stringify(jsoncool));
+console.log("ID Removed " + ֆǟӄʊʀǟ.sender);
+}, 10000);
+`⬡🍹⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
+if (ֆǟӄʊʀǟ.isReply) {
+const downloader = await new Downloader({
+url: link,
+directory: `${__dirname}`,
+fileName: `${FinalName}_${SakuraGMid}.gif`,
+cloneFiles: false,
+});
+try {
+await downloader.download();
+await ffmpeg(`${__dirname}/${FinalName}_${SakuraGMid}.gif`)
+.outputOptions([
+`-pix_fmt yuv420p`,
+`-c:v libx264`,
+`-movflags +faststart`,
+`-filter:v crop='floor(in_w/2)*2:floor(in_h/2)*2'`,
+])
+.save(`${__dirname}/${FinalName}_${SakuraGMid}.mp4`)
+.on(`end`, async () => {
+console.log(`Finished`);
+await ӄʀǟӄɨռʐ
+.sendMessage(
+ֆǟӄʊʀǟ.chatId,
+fs.readFileSync(`${__dirname}/${FinalName}_${SakuraGMid}.mp4`),
+MessageType.video,
+{
+contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ, Receiver] },
+quoted: chat,
+mimetype: `video/gif`,
+caption: `🍸(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭\n${Clock} 
 
 ────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-🍪 𝐅𝐫𝐨𝐦: @${ꜱᴇɴᴅᴇʀeceived}
+🍪 𝐅𝐫𝐨𝐦: ✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived}
 🍛 𝐓𝐨: @${personreceived}`,
-              }
-            )
-            .then(
-              cleanRF.cleanRF(
-                `${__dirname}/${FinalName}_${SakuraGMid}.gif`,
-                `${__dirname}/${FinalName}_${SakuraGMid}.mp4`
-              )
-            );
-        })
-        .on(`ℓαвєяяσя`, async (ℓαвєяяσя) => {
-          console.log(ℓαвєяяσя);
-        });
-    } catch (ℓαвєяяσя) {
-      console.log(ℓαвєяяσя);
-    }
-  }
+}
+)
+.then(
+cleanRF.cleanRF(
+`${__dirname}/${FinalName}_${SakuraGMid}.gif`,
+`${__dirname}/${FinalName}_${SakuraGMid}.mp4`
+)
+);
+})
+.on(`ℓαвєяяσя`, async (ℓαвєяяσя) => {
+console.log(ℓαвєяяσя);
+});
+} catch (ℓαвєяяσя) {
+console.log(ℓαвєяяσя);
+}
+}
 
-  if (!ֆǟӄʊʀǟ.isReply) {
-    const downloader = await new Downloader({
-      url: link,
-      directory: `${__dirname}`,
-      fileName: `${FinalName}_${SakuraGMid}.gif`,
-      cloneFiles: false,
-    });
-    try {
-      await downloader.download();
-      ffmpeg(`${__dirname}/${FinalName}_${SakuraGMid}.gif`)
-        .outputOptions([
-          `-pix_fmt yuv420p`,
-          `-c:v libx264`,
-          `-movflags +faststart`,
-          `-filter:v crop='floor(in_w/2)*2:floor(in_h/2)*2'`,
-        ])
-        .save(`${__dirname}/${FinalName}_${SakuraGMid}.mp4`)
-        .on(`end`, async () => {
-          console.log(`Finished`);
-          await ӄʀǟӄɨռʐ
-            .sendMessage(
-              ֆǟӄʊʀǟ.chatId,
-              fs.readFileSync(`${__dirname}/${FinalName}_${SakuraGMid}.mp4`),
-              MessageType.video,
-              {
-                contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
-                quoted: chat,
-                mimetype: `video/gif`,
-                caption: `🍸(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭\n${Clock} 
+if (!ֆǟӄʊʀǟ.isReply) {
+const downloader = await new Downloader({
+url: link,
+directory: `${__dirname}`,
+fileName: `${FinalName}_${SakuraGMid}.gif`,
+cloneFiles: false,
+});
+try {
+await downloader.download();
+ffmpeg(`${__dirname}/${FinalName}_${SakuraGMid}.gif`)
+.outputOptions([
+`-pix_fmt yuv420p`,
+`-c:v libx264`,
+`-movflags +faststart`,
+`-filter:v crop='floor(in_w/2)*2:floor(in_h/2)*2'`,
+])
+.save(`${__dirname}/${FinalName}_${SakuraGMid}.mp4`)
+.on(`end`, async () => {
+console.log(`Finished`);
+await ӄʀǟӄɨռʐ
+.sendMessage(
+ֆǟӄʊʀǟ.chatId,
+fs.readFileSync(`${__dirname}/${FinalName}_${SakuraGMid}.mp4`),
+MessageType.video,
+{
+contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
+quoted: chat,
+mimetype: `video/gif`,
+caption: `🍸(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭\n${Clock} 
 
 ────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-🍯𝐓𝐡𝐞𝐦𝐬𝐞𝐥𝐯𝐞: @${ꜱᴇɴᴅᴇʀeceived}`,
-              }
-            )
-            .then(
-              cleanRF.cleanRF(
-                `${__dirname}/${FinalName}_${SakuraGMid}.gif`,
-                `${__dirname}/${FinalName}_${SakuraGMid}.mp4`
-              )
-            )
-            .catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-        })
-        .on(`error`, async (ℓαвєяяσя) => {
-          console.log(ℓαвєяяσя);
-        });
-    } catch (ℓαвєяяσя) {
-      console.log(ℓαвєяяσя);
-    }
-  }
+🍯𝐓𝐡𝐞𝐦𝐬𝐞𝐥𝐯𝐞: ✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived}`,
+}
+)
+.then(
+cleanRF.cleanRF(
+`${__dirname}/${FinalName}_${SakuraGMid}.gif`,
+`${__dirname}/${FinalName}_${SakuraGMid}.mp4`
+)
+)
+.catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+})
+.on(`error`, async (ℓαвєяяσя) => {
+console.log(ℓαвєяяσя);
+});
+} catch (ℓαвєяяσя) {
+console.log(ℓαвєяяσя);
+}
+}
 };
 `|🍹|`;
 `|🍹|`;

@@ -51,7 +51,7 @@ return Sakura_Buttons.MIB(
 ӄʀǟӄɨռʐ,
 chat,
 ֆǟӄʊʀǟ,
-`@${ꜱᴇɴᴅᴇʀeceived} 🤙🏽‍𝐇𝐞𝐥𝐥𝐨 (Owner)\n\n${data.toString()}`,
+`✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived} (Owner)\n\n${data.toString()}`,
 _𝔏𝔞𝔟_.MEE
 );
 });
