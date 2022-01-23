@@ -141,10 +141,10 @@ chat,
 }
 `|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™-(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 |===========================================⬡  🍹|`;
 let Sticker_ = Date.now();
-var FileNameWebp = `${__dirname}/${Sticker_}.webp`;
-var FileNameJpeg = `${__dirname}/${Sticker_}.jpeg`;
-var FileNamePng = `${__dirname}/${Sticker_}.png`;
-var FileNameMp4 = `${__dirname}/${Sticker_}.mp4`;
+var FileNameWebp = `${Sticker_}.webp`;
+var FileNameJpeg = `${Sticker_}.jpeg`;
+var FileNamePng = `${Sticker_}.png`;
+var FileNameMp4 = `${Sticker_}.mp4`;
 `|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™-(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 |===========================================⬡  🍹|`;
 try {
 var FileObject = {
@@ -174,7 +174,7 @@ chat,
 return;
 }
 `|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™-(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 |===========================================⬡  🍹|`;
-if (FileType.endsWith(`${Sticker_}.jpeg`)) {
+if (FileType.endsWith(`.jpeg`)) {
 ffmpeg(FileNameJpeg)
 .outputOptions([`-y`, `-vcodec libwebp`])
 .videoFilters(
@@ -236,7 +236,7 @@ chat,
 return;
 });
 // ====================================================================================================== PNG
-} else if (FileType.endsWith(`${Sticker_}.png`)) {
+} else if (FileType.endsWith(`.png`)) {
 ffmpeg(FileNamePng)
 .outputOptions([`-y`, `-vcodec libwebp`])
 .videoFilters(
@@ -298,7 +298,7 @@ chat,
 return;
 });
 // ====================================================================================================== WEBP
-} else if (FileType.endsWith(`${Sticker_}.webp`)) {
+} else if (FileType.endsWith(`.webp`)) {
 await ӄʀǟӄɨռʐ.sendMessage(
 ֆǟӄʊʀǟ.chatId,
 fs.readFileSync(FileNameWebp),
@@ -308,7 +308,7 @@ MessageType.sticker,
 await cleanRF.cleanRF(FileNameWebp);
 return;
 // ====================================================================================================== MP4
-} else if (FileType.endsWith(`${Sticker_}.mp4`)) {
+} else if (FileType.endsWith(`.mp4`)) {
 ffmpeg(FileNameMp4)
 .duration(8)
 .outputOptions([
