@@ -6,63 +6,25 @@
 const Sakura_Buttons = require(`../../Sakura🛰️Server/Sakura_Buttons`);
 const Sakura_Static = require(`../../Sakura🛰️Server/Sakura_Static`);
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
-const cleanRF = require(`../../Sakura🛰️Server/cleanRF`);
-const _𝔏𝔞𝔟_ = require(`../../Sakura🛰️Server/_𝔏𝔞𝔟_`);
 const ꜰᴜᴄᴋ = require(`../../Sakura🛰️Server/oShit`);
+const _𝔏𝔞𝔟_ = require(`../../Sakura🛰️Server/_𝔏𝔞𝔟_`);
+const { getDadjoke } = require(`random-jokes`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
-const getVideoId = require("get-video-id");
-const ffmpeg = require("fluent-ffmpeg");
-const readline = require("readline");
-const ytdl = require("ytdl-core");
-const yts = require("yt-search");
+const Fetch = require("node-fetch");
 var path = require(`path`);
-const fs = require("fs");
+const fs = require(`fs`);
 var scriptName = path.basename(__filename);
 var newScpt = scriptName.slice(0, -3).toLowerCase();
 `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
 module.exports = {
 name: newScpt,
-ֆǟӄʊʀǟӄǟɨʐօ: `*${ᴋᴇɪ}song* [name]
-🔎𝐒𝐞𝐚𝐫𝐜𝐡 𝐘𝐨𝐮𝐓𝐮𝐛𝐞? _${ᴋᴇɪ}ytsearch_`,
 async handle(ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
 try {
 var ꜱᴇɴᴅᴇʀɪᴅ = ֆǟӄʊʀǟ.sender;
 var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
 const defaultnm = ֆǟӄʊʀǟ.commandName;
 const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
-`|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
-if (Needs.length === 0) {
-var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(ֆǟӄʊʀǟ.commandName);
-var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
-𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ === undefined ? `Null` : 𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ;
-const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../Sakura🛰️Server/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
-return ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
-ӄʀǟӄɨռʐ,
-chat,
-ֆǟӄʊʀǟ,
-ꜱᴇɴᴅᴇʀɪᴅ,
-ꜱᴇɴᴅᴇʀeceived,
-ֆǟӄʊʀǟ.commandName,
-ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
-);
-}
-`|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
-if (ֆǟӄʊʀǟ.body.includes(`http`)) {
-var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(ֆǟӄʊʀǟ.commandName);
-var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
-𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ === undefined ? `Null` : 𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ;
-const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../Sakura🛰️Server/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
-return ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
-ӄʀǟӄɨռʐ,
-chat,
-ֆǟӄʊʀǟ,
-ꜱᴇɴᴅᴇʀɪᴅ,
-ꜱᴇɴᴅᴇʀeceived,
-ֆǟӄʊʀǟ.commandName,
-ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
-);
-}
 `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
 const Bagde = require(`../../Sakura🍃Goose/badge`);
 const ms = require(`parse-ms`);
@@ -159,102 +121,53 @@ chat,
 );
 }
 `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
-var TubeSearch = await yts(Needs.join(" "));
-var Tube = TubeSearch.videos.slice(0, 1);
-console.log(Tube[0]);
-Tube.forEach(async function (Found) {
-if (Found.seconds > `1200`) {
+const Reds = [
+"memes",
+"me_irl",
+"dankmemes",
+"comedyheaven",
+"Animemes",
+];
+const Rads = Reds[Math.floor(Math.random() * Reds.length)];
+const res = await Fetch(
+`https://www.reddit.com/r/${Rads}/random/.json`
+);
+const json = await res.json();
+if (!json[0]) {
 userBadge.Limits = userBadge.Limits + 1;
 await userBadge
 .save()
-.catch((ℓαвєяяσя) =>
-ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
-);
-Sakura_Buttons.MIB(
-ӄʀǟӄɨռʐ,
-chat,
-ֆǟӄʊʀǟ,
-`⭕𝐀𝐮𝐝𝐢𝐨 ✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived}, 
-𝗣𝗹𝗲𝗮𝘀𝗲 𝗖𝗵𝗼𝗼𝘀𝗲 𝗦𝗺𝗮𝗹𝗹𝗲𝗿 𝐀𝐮𝐝𝐢𝐨 𝗧𝗵𝗲𝗻 20-𝗺𝗶𝗻𝘂𝘁𝗲𝘀!
-
-╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-║🍻 𝐓𝐢𝐭𝐥𝐞: ${Found.title}
-║⏰ 𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧: ${Found.timestamp}
-║🔗 𝐋𝐢𝐧𝐤: ${Found.url}
-╚════════════╝`,
-Found.thumbnail
-)
-return;
-}
-Sakura_Buttons.MIB(
-ӄʀǟӄɨռʐ,
-chat,
-ֆǟӄʊʀǟ,
-`⭕𝐀𝐮𝐝𝐢𝐨 ✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived}, 
-𝗣𝗹𝗲𝗮𝘀𝗲 𝘄𝗮𝗶𝘁 𝗳𝗼𝗿 𝘁𝗵𝗲 𝗱𝗲𝗹𝗶𝘃𝗲𝗿𝘆 𝗼𝗳 𝐀𝐮𝐝𝐢𝐨!
-
-╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-║🍻 𝐓𝐢𝐭𝐥𝐞: ${Found.title}
-║🙈 𝐕𝐢𝐞𝐰𝐬: ${Found.views}
-║⏰ 𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧: ${Found.timestamp}
-║✒️ 𝐀𝐮𝐭𝐡𝐨𝐫: ${Found.author.name}
-║📜 𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${Found.description}
-║🔗 𝐋𝐢𝐧𝐤: ${Found.url}
-╚════════════╝`,
-Found.thumbnail
-)
-`|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
-const { id } = getVideoId(Found.url);
-let stream = ytdl(id, {
-quality: "highestaudio",
-});
-let start = Date.now();
-let YouTY = `${id}${start.toString()}.mp3`;
-`|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
-try {
-ffmpeg(stream)
-.audioBitrate(128)
-.save(`${newScpt}/${YouTY}`)
-.on("progress", (p) => {
-readline.cursorTo(process.stdout, 0);
-process.stdout.write(`${p.targetSize}kb downloaded`);
-})
-.on("end", () => {
-console.log(`\nTime Taken: ${(Date.now() - start) / 1000}s`);
-ӄʀǟӄɨռʐ
-.sendMessage(
-ֆǟӄʊʀǟ.chatId,
-fs.readFileSync(`${newScpt}/${YouTY}`),
-MessageType.audio,
-{
-quoted: chat,
-mimetype: "audio/mp4",
-}
-).then(cleanRF.cleanRF(`${newScpt}/${YouTY}`))
-return;
-});
-} catch (ℓαвєяяσя) {
-console.log(ℓαвєяяσя);
-userBadge.Limits = userBadge.Limits + 1;
-await userBadge
-.save()
-.catch((ℓαвєяяσя) =>
-ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
-);
-Sakura_Buttons.MTB(
+.catch((ℓαвєяяσя) => ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+return Sakura_Buttons.MIB(
 ӄʀǟӄɨռʐ,
 chat,
 ֆǟӄʊʀǟ,
 `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived},
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-║🥺 𝐎𝐩𝐩𝐬𝐢𝐞 𝐓𝐫𝐲 𝐀𝐠𝐚𝐢𝐧!
-║🍹 𝐒𝐞𝐫𝐯𝐞𝐫 𝐃𝐢𝐝𝐧'𝐭 𝐑𝐞𝐬𝐩𝐨𝐧𝐝!
-╚════════════╝`
+║ _Your Life Lmfao!_
+╚════════════╝`,
+"https://i.postimg.cc/9Xkbbm7m/meme.png"
 );
-return;
+} else {
+const data = json[0].data.children[0].data;
+return Sakura_Buttons.MIB(
+ӄʀǟӄɨռʐ,
+chat,
+ֆǟӄʊʀǟ,
+`✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived},
+
+╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+║🥪 𝗧𝗶𝘁𝗹𝗲: ${data.title}
+║✒️ 𝗔𝘂𝘁𝗵𝗼𝗿: ${data.author}
+║👍🏽‍ 𝗨𝗽𝘀: ${data.ups || 0} 👍
+║👎🏽‍ 𝗗𝗼𝘄𝗻𝘀: ${data.downs || 0} 👎
+║💬 𝗖𝗼𝗺𝗺𝗲𝗻𝘁𝘀: ${data.num_comments || 0} 💬
+║🔎 𝗟𝗶𝗻𝗸: https://reddit.com${data.permalink}
+╚════════════╝`,
+data.url
+);
 }
-});
 }
 );
 `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
