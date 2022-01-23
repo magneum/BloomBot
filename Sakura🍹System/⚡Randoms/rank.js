@@ -117,9 +117,7 @@ module.exports = {
               ctx.closePath();
               ctx.clip();
               ctx.drawImage(avatar, 25, 40, 200, 200);
-              const out = fs.createWriteStream(
-                `${ꜱᴇɴᴅᴇʀeceived.toString()}_.jpeg`
-              );
+              const out = fs.createWriteStream(`${Date.now()}.jpeg`);
               const stream = canvas.createJPEGStream();
               stream.pipe(out);
               out.on(`finish`, async (Error) => {
@@ -136,11 +134,17 @@ module.exports = {
 ╚════════════╝`
                   );
                 }
-                Sakura_Buttons.MIB(
-                  ӄʀǟӄɨռʐ,
-                  chat,
-                  ֆǟӄʊʀǟ,
-                  `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived}
+                const media = await ӄʀǟӄɨռʐ.prepareMessage(
+                  ֆǟӄʊʀǟ.chatId,
+                  fs.readFileSync(`${Date.now()}.jpeg`),
+                  MessageType.image,
+                  { mimetype: Mimetype.jpeg }
+                );
+                await ӄʀǟӄɨռʐ
+                  .sendMessage(
+                    ֆǟӄʊʀǟ.chatId,
+                    {
+                      contentText: `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived}
 
 ╔═══════ 📜𝐑𝐚𝐧𝐤 𝐂𝐚𝐫𝐝
 ║🍇 𝗖𝘂𝗿𝗿𝗲𝗻𝘁 𝗫𝗣: _${users.xp}_
@@ -160,9 +164,25 @@ module.exports = {
 ║*Level:* <90 | *Hardness:* 500%
 ║*Level:* <100 | *Hardness:* 550%
 ╚════════════╝`,
-                  fs.readFileSync(`${ꜱᴇɴᴅᴇʀeceived.toString()}_.jpeg`)
-                ).catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-                await cleanRF.cleanRF(`${ꜱᴇɴᴅᴇʀeceived.toString()}_.jpeg`);
+                      footerText: `🍸(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭\n${Clock}`,
+                      buttons: [
+                        {
+                          buttonId: `${ᴋᴇɪ}help`,
+                          buttonText: { displayText: `${ᴋᴇɪ}help` },
+                          type: 1,
+                        },
+                      ],
+                      headerType: 4,
+                      imageMessage: media.message.imageMessage,
+                    },
+                    MessageType.buttonsMessage,
+                    {
+                      quoted: chat,
+                      contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
+                    }
+                  )
+                  .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+                return await cleanRF.cleanRF(`${Date.now()}.jpeg`);
               });
             });
           }
