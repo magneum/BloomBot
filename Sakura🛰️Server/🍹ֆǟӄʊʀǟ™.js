@@ -343,7 +343,7 @@ const groupMetadata = sender.endsWith(`@g.us`)
 : ``;
 var ֆǟӄʊʀǟ = ֆǟӄʊʀǟǟքք.resolve(chat, ӄʀǟӄɨռʐ, groupMetadata);
 //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
-if (ֆǟӄʊʀǟ.isGroup) {
+if (ֆǟӄʊʀǟ.isGroup && !ֆǟӄʊʀǟ.fromMe) {
 var ꜱᴇɴᴅᴇʀɪᴅ = ֆǟӄʊʀǟ.sender;
 var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
 const UsersSakura = require(`../Sakura🍃Goose/experience.js`);
@@ -400,7 +400,6 @@ var nxtlvl = 600 * Math.pow(2, currentLvl);
 } else if (currentLvl >= 100) {
 var nxtlvl = 750 * Math.pow(2, currentLvl);
 }
-var xpleft = nxtlvl - currentXP;
 users.xp = users.xp + xpAdd;
 if (users.xp >= nxtlvl) {
 users.level = currentLvl + 1;
@@ -554,12 +553,15 @@ console.log(ℓαвєяяσя);
 }
 }
 //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
+const RegexYouTube =
+/^((?:https?:)?\/\/)?((?:www|m)\.)?((?:youtube\.com|youtu.be))(\/(?:[\w\-]+\?v=|embed\/|v\/)?)([\w\-]+)(\S+)?$/;
 if (
 ֆǟӄʊʀǟ.isGroup &&
 !_𝔏𝔞𝔟_.HASH &&
 !ֆǟӄʊʀǟ.fromMe &&
 !ֆǟӄʊʀǟ.isSenderDev &&
 !ֆǟӄʊʀǟ.isSenderGroupAdmin &&
+!RegexYouTube.test(ֆǟӄʊʀǟ.body) &&
 ֆǟӄʊʀǟ.body.includes(`https://`)
 ) {
 LinkList.findOne(
@@ -580,16 +582,14 @@ chat,
 ֆǟӄʊʀǟ,
 `
 ╔════🌋  𝐀𝐧𝐭𝐢𝐥𝐢𝐧𝐤 𝐓𝐫𝐢𝐠𝐠𝐞𝐫𝐞𝐝 
-║🔻 𝗣𝘂𝗻𝗶𝘀𝗵𝗺𝗲𝗻𝘁: You Will Be Kicked! 
-║🔻 𝗞𝗶𝗰𝗸-𝗧𝗶𝗺𝗲: 6sec
+║🔻 𝗣𝘂𝗻𝗶𝘀𝗵𝗺𝗲𝗻𝘁: _You Will Be Kicked!_
+║🔻 𝗞𝗶𝗰𝗸-𝗧𝗶𝗺𝗲: _6sec_
 ╚════════════╝
 
 ╔════🤖 𝗩𝗲𝗿𝗶𝗳𝘆
-║✔️ 𝗜𝘀-𝗚𝗿𝗼𝘂𝗽: (Yes)
-║✔️ 𝗜𝘀-𝗗𝗲𝘃: (Never)
-║✔️ 𝗡𝗼𝗻-𝗔𝗱𝗺𝗶𝗻: (Yes)
-║✔️ 𝗠𝗲𝘀𝘀𝗮𝗴𝗲-𝗜𝗻𝗰𝗹𝘂𝗱𝗲𝘀-𝗟𝗶𝗻𝗸: (Yes)
-║✔️ 𝗙𝗿𝗼𝗺: (id-${REMOVE})
+║✔️ 𝗜𝘀-𝗚𝗿𝗼𝘂𝗽: _(Yes)_
+║✔️ 𝗡𝗼𝗻-𝗔𝗱𝗺𝗶𝗻: _(Yes)_
+║✔️ 𝗙𝗿𝗼𝗺: _(id-${REMOVE})_
 ╚════════════╝`,
 `./Sakura☣️Reactor/Sakura_Antilink.png`
 );
@@ -638,11 +638,11 @@ return ӄʀǟӄɨռʐ.sendMessage(
 ֆǟӄʊʀǟ.chatId,
 `
 ╔═══════ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
-║♨️ You Need To Be In Sakura GC.
-║🚨 So That Your Account Can Be Verified and Monitored For Anti-Spams & Auto-BugReports!.
-║
-║${_𝔏𝔞𝔟_.HASH}
-╚════════════╝`,
+║♨️ *You Need To Be a member of Sakura Group!*
+║🚨 _Your Account Will Be Monitored For AntiSpams & BugReports_
+╚════════════╝
+
+🐙 𝐎𝐟𝐟𝐢𝐜𝐢𝐚𝐥: ${_𝔏𝔞𝔟_.HASH}`,
 MessageType.text,
 {
 quoted: chat,
@@ -657,14 +657,14 @@ if (jsoncool.includes(ֆǟӄʊʀǟ.sender)) {
 if (ֆǟӄʊʀǟ.fromMe) {
 return ӄʀǟӄɨռʐ.sendMessage(
 ֆǟӄʊʀǟ.chatId,
-`*Sir Please Wait For 15sec!*`,
+`*🙏🏽‍Sir Please Wait For 5s!*`,
 MessageType.text,
 { quoted: chat }
 );
 } else {
 return ӄʀǟӄɨռʐ.sendMessage(
 ֆǟӄʊʀǟ.chatId,
-`*🚏CoolDown:* Wait For 15sec!`,
+`*🚏CoolDown:* Bruh Wait For 15s!`,
 MessageType.text,
 { quoted: chat }
 );
@@ -750,7 +750,8 @@ return Sakura_Buttons.MTB(
 ӄʀǟӄɨռʐ,
 chat,
 ֆǟӄʊʀǟ,
-`*❌Wrong Command Executed!*\n_Read: ${ᴋᴇɪ}help_`
+`*❌Baka Wrong Command Executed!*
+*Read:* ${ᴋᴇɪ}help/${ᴋᴇɪ}menu`
 );
 } else {
 return ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ.handle(
@@ -767,9 +768,9 @@ Timers
 }
 );
 }
-//|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
 });
 }
+//|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
 module.exports = { ֆǟӄʊʀǟ };
 `|🍹|`;
 `|🍹|`;

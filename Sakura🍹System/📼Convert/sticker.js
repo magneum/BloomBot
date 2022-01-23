@@ -19,16 +19,13 @@ var newScpt = scriptName.slice(0, -3).toLowerCase();
 //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
 module.exports = {
 name: newScpt,
-ֆǟӄʊʀǟӄǟɨʐօ: `*${ᴋᴇɪ}sticker* [reply to image/gif/video]`,
+ֆǟӄʊʀǟӄǟɨʐօ: `Send *image/video/gif* message along with *${ᴋᴇɪ}sticker* command in caption.`,
 async handle(ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
 try {
 var ꜱᴇɴᴅᴇʀɪᴅ = ֆǟӄʊʀǟ.sender;
 var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
 const defaultnm = ֆǟӄʊʀǟ.commandName;
 const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
-const FN = Date.now() / 10000;
-const FileName = FN.toString();
-console.log("FileName: " + FileName);
 //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
 const Bagde = require("../../Sakura🍃Goose/badge");
 const ms = require("parse-ms");
@@ -132,16 +129,7 @@ const NameJpeg = `${FileName}.jpeg`;
 const NamePng = `${FileName}.png`;
 const NameMp4 = `${FileName}.mp4`;
 //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
-try {
-var FileObject = {
-message:
-chat.message.extendedTextMessage.contextInfo.quotedMessage,
-};
-var FileType = await ӄʀǟӄɨռʐ.downloadAndSaveMediaMessage(
-FileObject,
-FileName
-);
-} catch (ℓαвєяяσя) {
+if (ֆǟӄʊʀǟ.isReply) {
 var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(ֆǟӄʊʀǟ.commandName);
 var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
 𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ === undefined ? `Null` : 𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ;
@@ -160,7 +148,39 @@ chat,
 ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
 );
 return;
+} else {
+try {
+var FileObject = {
+message: chat.message,
+};
+var FileType = await ӄʀǟӄɨռʐ.downloadAndSaveMediaMessage(
+FileObject,
+FileName
+);
+} catch (ℓαвєяяσя) {
+var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(ֆǟӄʊʀǟ.commandName);
+var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
+𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ === undefined ? `Null` : 𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ;
+const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../Sakura🛰️Server/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
+userBadge.Limits = userBadge.Limits + 1;
+await userBadge
+.save()
+.catch((ℓαвєяяσя) =>
+ꜰᴜᴄᴋ.catch(ℓαвєяяσя, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
+);
+ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
+ӄʀǟӄɨռʐ,
+chat,
+ֆǟӄʊʀǟ,
+ꜱᴇɴᴅᴇʀɪᴅ,
+ꜱᴇɴᴅᴇʀeceived,
+ֆǟӄʊʀǟ.commandName,
+ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
+);
+return;
 }
+}
+
 //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
 await setTimeout(async (ℓαвєяяσя) => {
 if (ℓαвєяяσя) {
@@ -419,7 +439,6 @@ return;
 }
 }, 3000);
 return;
-//|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
 }
 );
 //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
