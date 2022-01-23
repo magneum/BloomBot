@@ -749,8 +749,12 @@ return Sakura_Buttons.MTB(
 ӄʀǟӄɨռʐ,
 chat,
 ֆǟӄʊʀǟ,
-`*❌Baka Wrong Command Executed!*
-*Read:* ${ᴋᴇɪ}help/${ᴋᴇɪ}menu`
+`@${ꜱᴇɴᴅᴇʀeceived},
+
+╔════| 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
+║*❌Baka No Such Command in Database!*
+║✔️ *Type:* _${ᴋᴇɪ}help or ${ᴋᴇɪ}menu_
+╚════════════╝`
 );
 } else {
 return ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ.handle(
