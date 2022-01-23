@@ -55,6 +55,20 @@ module.exports = {
         }
       }
       `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
+      if (ֆǟӄʊʀǟ.isGroup && !ֆǟӄʊʀǟ.isSenderGroupAdmin) {
+        try {
+          return Sakura_Buttons.MIB(
+            ӄʀǟӄɨռʐ,
+            chat,
+            ֆǟӄʊʀǟ,
+            `*❌ Admins Only | You Are Not Allowed! ❌*`,
+            _𝔏𝔞𝔟_.ɴᴏᴛᴀᴅᴍɪɴ
+          );
+        } catch (Error) {
+          ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
+        }
+      }
+      `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
       if (ֆǟӄʊʀǟ.isReply) {
         var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
         var personreceived = Receiver.substring(0, Receiver.length - 15);
