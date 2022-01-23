@@ -18,8 +18,7 @@ var newScpt = scriptName.slice(0, -3).toLowerCase();
 //|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
 module.exports = {
 name: newScpt,
-ֆǟӄʊʀǟӄǟɨʐօ: `*${ᴋᴇɪ}setwelcome* (message)/(off)/(delete)
-🍹Do note, the setwelcome option is still enabled after you use the delete option.`,
+ֆǟӄʊʀǟӄǟɨʐօ: `*${ᴋᴇɪ}setwelcome* _message_`,
 async handle(ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
 try {
 var ꜱᴇɴᴅᴇʀɪᴅ = ֆǟӄʊʀǟ.sender;
@@ -49,7 +48,7 @@ return Sakura_Buttons.MTB(
 ӄʀǟӄɨռʐ,
 chat,
 ֆǟӄʊʀǟ,
-`@${ꜱᴇɴᴅᴇʀeceived}, 
+`@${ꜱᴇɴᴅᴇʀeceived} 🤙🏽‍𝐇𝐞𝐥𝐥𝐨, 
 
 ❌ How Can I Use Admin Only Commands If i am not admin?
 💡𝐅𝐢𝐱: Make Me Admin First`,
@@ -61,7 +60,7 @@ return Sakura_Buttons.MTB(
 ӄʀǟӄɨռʐ,
 chat,
 ֆǟӄʊʀǟ,
-`@${ꜱᴇɴᴅᴇʀeceived}, 
+`@${ꜱᴇɴᴅᴇʀeceived} 🤙🏽‍𝐇𝐞𝐥𝐥𝐨, 
 
 ────★ 🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧   
 ❗𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ᴋᴇɪ}${defaultnm}, 
@@ -84,7 +83,7 @@ return Sakura_Static.MGS(
 ӄʀǟӄɨռʐ,
 chat,
 ֆǟӄʊʀǟ,
-`@${ꜱᴇɴᴅᴇʀeceived},
+`@${ꜱᴇɴᴅᴇʀeceived} 🤙🏽‍𝐇𝐞𝐥𝐥𝐨,
 
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
@@ -98,7 +97,7 @@ return Sakura_Static.MGS(
 ӄʀǟӄɨռʐ,
 chat,
 ֆǟӄʊʀǟ,
-`@${ꜱᴇɴᴅᴇʀeceived},
+`@${ꜱᴇɴᴅᴇʀeceived} 🤙🏽‍𝐇𝐞𝐥𝐥𝐨,
 
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
@@ -112,7 +111,7 @@ return Sakura_Static.MGS(
 ӄʀǟӄɨռʐ,
 chat,
 ֆǟӄʊʀǟ,
-`@${ꜱᴇɴᴅᴇʀeceived},
+`@${ꜱᴇɴᴅᴇʀeceived} 🤙🏽‍𝐇𝐞𝐥𝐥𝐨,
 
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
@@ -123,84 +122,17 @@ chat,
 );
 }
 } else {
-if (Needs[0] === `OFF` || Needs[0] === `off` || Needs[0] === `Off`) {
-switched = `OFF`;
-await PostDataBase.changeSettings(ֆǟӄʊʀǟ.chatId, switched);
-return Sakura_Static.MGS(
-ӄʀǟӄɨռʐ,
-chat,
-ֆǟӄʊʀǟ,
-`@${ꜱᴇɴᴅᴇʀeceived},
-
-
-╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-║🍹 Sakura's Welcome Message has Been Disabled!
-╚════════════╝`,
-`./Sakura☣️Reactor/ֆǟӄʊʀǟ™.mp4`
-);
-}
-if (Needs[0] === `ON` || Needs[0] === `on` || Needs[0] === `On`) {
-switched = `ON`;
-await PostDataBase.changeSettings(ֆǟӄʊʀǟ.chatId, switched);
-return Sakura_Static.MGS(
-ӄʀǟӄɨռʐ,
-chat,
-ֆǟӄʊʀǟ,
-`@${ꜱᴇɴᴅᴇʀeceived},
-
-
-╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-║🍹 Sakura's Welcome Message has Been Enabled!
-╚════════════╝
-`,
-`./Sakura☣️Reactor/ֆǟӄʊʀǟ™.mp4`
-);
-}
-if (Needs[0] === `delete`) {
-var ꜰᴇᴛᴄʜᴇᴅᴍꜱɢ = await PostDataBase.deleteMessage(
-ֆǟӄʊʀǟ.chatId,
-`setwelcome`
-);
-if (ꜰᴇᴛᴄʜᴇᴅᴍꜱɢ === false || ꜰᴇᴛᴄʜᴇᴅᴍꜱɢ === undefined) {
-return Sakura_Static.MGS(
-ӄʀǟӄɨռʐ,
-chat,
-ֆǟӄʊʀǟ,
-`@${ꜱᴇɴᴅᴇʀeceived},
-
-
-╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-║🍹 Sakura's Welcome Message needs to be added first!
-║🍹 use *${ᴋᴇɪ}setwelcome* (message)
-╚════════════╝`,
-`./Sakura☣️Reactor/ֆǟӄʊʀǟ™.mp4`
-);
-}
-return Sakura_Static.MGS(
-ӄʀǟӄɨռʐ,
-chat,
-ֆǟӄʊʀǟ,
-`@${ꜱᴇɴᴅᴇʀeceived},
-
-
-╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-║🍹 Sakura's Welcome Message has Been Removed!
-╚════════════╝`,
-`./Sakura☣️Reactor/ֆǟӄʊʀǟ™.mp4`
-);
-}
 text = ֆǟӄʊʀǟ.body.replace(
 ֆǟӄʊʀǟ.body[0] + ֆǟӄʊʀǟ.commandName + ` `,
 ``
 );
-
 if (ꜰᴇᴛᴄʜᴇᴅᴍꜱɢ === false || ꜰᴇᴛᴄʜᴇᴅᴍꜱɢ === undefined) {
 await PostDataBase.setWelcome(ֆǟӄʊʀǟ.chatId, text);
 return Sakura_Static.MGS(
 ӄʀǟӄɨռʐ,
 chat,
 ֆǟӄʊʀǟ,
-`@${ꜱᴇɴᴅᴇʀeceived},
+`@${ꜱᴇɴᴅᴇʀeceived} 🤙🏽‍𝐇𝐞𝐥𝐥𝐨,
 
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
@@ -216,7 +148,7 @@ return Sakura_Static.MGS(
 ӄʀǟӄɨռʐ,
 chat,
 ֆǟӄʊʀǟ,
-`@${ꜱᴇɴᴅᴇʀeceived},
+`@${ꜱᴇɴᴅᴇʀeceived} 🤙🏽‍𝐇𝐞𝐥𝐥𝐨,
 
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
