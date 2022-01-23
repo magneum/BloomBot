@@ -348,7 +348,6 @@ var ꜱᴇɴᴅᴇʀɪᴅ = ֆǟӄʊʀǟ.sender;
 var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
 const UsersSakura = require(`../Sakura🍃Goose/experience.js`);
 let xpAdd = Math.ceil(Math.random() * 10);
-//|🍹  ⬡===========================================|  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™  |===========================================⬡  🍹|
 try {
 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄʀǟӄɨռʐ.getProfilePicture(ֆǟӄʊʀǟ.sender);
 } catch {
@@ -638,8 +637,8 @@ return ӄʀǟӄɨռʐ.sendMessage(
 ֆǟӄʊʀǟ.chatId,
 `
 ╔═══════ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
-║♨️ *You Need To Be a member of Sakura Group!*
-║🚨 _Your Account Will Be Monitored For AntiSpams & BugReports_
+║♨️ *First be a member of Sakura Group!*
+║🚨 *Why?* _Monitor AntiSpams & BugReports_
 ╚════════════╝
 
 🐙 𝐎𝐟𝐟𝐢𝐜𝐢𝐚𝐥: ${_𝔏𝔞𝔟_.HASH}`,
