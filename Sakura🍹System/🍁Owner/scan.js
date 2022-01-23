@@ -63,7 +63,7 @@ return Sakura_Static.MGS(
 ӄʀǟӄɨռʐ,
 chat,
 ֆǟӄʊʀǟ,
-`✔️ @${ꜱᴇɴᴅᴇʀeceived}, *Sir Here Is The Verified Link!*
+`✔️ @${ꜱᴇɴᴅᴇʀeceived} 🤙🏽‍𝐇𝐞𝐥𝐥𝐨, *Sir Here Is The Verified Link!*
 
 +sudo($req(+${Ping}+${Clock}))
 ${_𝔏𝔞𝔟_.HASH.replace(`https://chat.whatsapp.com/`, `/kryo/`)}${value.result}`,
@@ -79,7 +79,7 @@ return Sakura_Buttons.MTB(
 ӄʀǟӄɨռʐ,
 chat,
 ֆǟӄʊʀǟ,
-`@${ꜱᴇɴᴅᴇʀeceived},\n*Sir Please Reply To _QR-Code_!*`
+`@${ꜱᴇɴᴅᴇʀeceived} 🤙🏽‍𝐇𝐞𝐥𝐥𝐨,\n*Sir Please Reply To _QR-Code_!*`
 );
 }
 }

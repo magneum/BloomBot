@@ -52,7 +52,7 @@ MessageType.video,
 {
 mimetype: `video/gif`,
 contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
-caption: `@${ꜱᴇɴᴅᴇʀeceived}, (owner)
+caption: `@${ꜱᴇɴᴅᴇʀeceived} 🤙🏽‍𝐇𝐞𝐥𝐥𝐨, (owner)
 
 *🍹ֆǟӄʊʀǟ™ Is Now Rebooting...*
 _Wait For (10-30)s_`,

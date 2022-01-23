@@ -143,7 +143,7 @@ mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ],
 },
 caption: `🍸(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭
 
-@${ꜱᴇɴᴅᴇʀeceived}, 
+@${ꜱᴇɴᴅᴇʀeceived} 🤙🏽‍𝐇𝐞𝐥𝐥𝐨, 
 ${respon}`,
 }
 )

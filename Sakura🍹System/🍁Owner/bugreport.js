@@ -59,7 +59,7 @@ await ӄʀǟӄɨռʐ
 .sendMessage(
 ֆǟӄʊʀǟ.chatId,
 {
-contentText: `@${ꜱᴇɴᴅᴇʀeceived},
+contentText: `@${ꜱᴇɴᴅᴇʀeceived} 🤙🏽‍𝐇𝐞𝐥𝐥𝐨,
 *Thank you for reporting the bug to the Developers!*
 _If Found the report was just for fun then you will be banned by the bot!_
 

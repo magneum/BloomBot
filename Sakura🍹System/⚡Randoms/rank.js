@@ -46,7 +46,7 @@ return Sakura_Buttons.MTB(
 ӄʀǟӄɨռʐ,
 chat,
 ֆǟӄʊʀǟ,
-`@${ꜱᴇɴᴅᴇʀeceived}, 
+`@${ꜱᴇɴᴅᴇʀeceived} 🤙🏽‍𝐇𝐞𝐥𝐥𝐨, 
 
 ────★ 🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧   
 
@@ -123,15 +123,7 @@ const out = fs.createWriteStream(
 const stream = canvas.createJPEGStream();
 stream.pipe(out);
 out.on(`finish`, () => {
-ӄʀǟӄɨռʐ.sendMessage(
-ֆǟӄʊʀǟ.chatId,
-fs.readFileSync(`${ꜱᴇɴᴅᴇʀeceived.toString()}_.jpeg`),
-MessageType.image,
-{
-mimetype: Mimetype.jpeg,
-quoted: chat,
-contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
-caption: `@${ꜱᴇɴᴅᴇʀeceived}
+Sakura_Buttons.MIB(ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, `@${ꜱᴇɴᴅᴇʀeceived} 🤙🏽‍𝐇𝐞𝐥𝐥𝐨
 
 ╔═══════ 📜𝐑𝐚𝐧𝐤 𝐂𝐚𝐫𝐝
 ║🍇 𝗖𝘂𝗿𝗿𝗲𝗻𝘁 𝗫𝗣: _${users.xp}_
@@ -150,9 +142,7 @@ caption: `@${ꜱᴇɴᴅᴇʀeceived}
 ║*Level:* <80 | *Hardness:* 450%
 ║*Level:* <90 | *Hardness:* 500%
 ║*Level:* <100 | *Hardness:* 550%
-╚════════════╝`,
-}
-);
+╚════════════╝`, fs.readFileSync(`${ꜱᴇɴᴅᴇʀeceived.toString()}_.jpeg`))
 cleanRF.cleanRF(`${ꜱᴇɴᴅᴇʀeceived.toString()}_.jpeg`);
 });
 });
