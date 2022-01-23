@@ -87,7 +87,9 @@ module.exports = {
               xp: xpAdd,
               level: 0,
             });
-            newUsers.save().catch((Error) => console.log(Error));
+            return newUsers
+              .save()
+              .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
           } else {
             `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
             var background = await Canvas.loadImage(
@@ -117,7 +119,9 @@ module.exports = {
               ctx.closePath();
               ctx.clip();
               ctx.drawImage(avatar, 25, 40, 200, 200);
-              const out = fs.createWriteStream(`${Date.now()}.jpeg`);
+              const out = fs.createWriteStream(
+                `./Sakura🗑️Temp/${Date.now()}.jpeg`
+              );
               const stream = canvas.createJPEGStream();
               stream.pipe(out);
               out.on(`finish`, async (Error) => {
@@ -133,18 +137,17 @@ module.exports = {
 ║🍹 𝐒𝐞𝐫𝐯𝐞𝐫 𝐃𝐢𝐝𝐧'𝐭 𝐑𝐞𝐬𝐩𝐨𝐧𝐝!
 ╚════════════╝`
                   );
-                }
-                const media = await ӄʀǟӄɨռʐ.prepareMessage(
-                  ֆǟӄʊʀǟ.chatId,
-                  fs.readFileSync(`${Date.now()}.jpeg`),
-                  MessageType.image,
-                  { mimetype: Mimetype.jpeg }
-                );
-                await ӄʀǟӄɨռʐ
-                  .sendMessage(
-                    ֆǟӄʊʀǟ.chatId,
-                    {
-                      contentText: `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived}
+                } else {
+                  return await ӄʀǟӄɨռʐ
+                    .sendMessage(
+                      ֆǟӄʊʀǟ.chatId,
+                      fs.readFileSync(`./Sakura🗑️Temp/${Date.now()}.jpeg`),
+                      MessageType.image,
+                      {
+                        quoted: chat,
+                        mimetype: Mimetype.jpeg,
+                        contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
+                        content: `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived}
 
 ╔═══════ 📜𝐑𝐚𝐧𝐤 𝐂𝐚𝐫𝐝
 ║🍇 𝗖𝘂𝗿𝗿𝗲𝗻𝘁 𝗫𝗣: _${users.xp}_
@@ -164,25 +167,11 @@ module.exports = {
 ║*Level:* <90 | *Hardness:* 500%
 ║*Level:* <100 | *Hardness:* 550%
 ╚════════════╝`,
-                      footerText: `🍸(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭\n${Clock}`,
-                      buttons: [
-                        {
-                          buttonId: `${ᴋᴇɪ}help`,
-                          buttonText: { displayText: `${ᴋᴇɪ}help` },
-                          type: 1,
-                        },
-                      ],
-                      headerType: 4,
-                      imageMessage: media.message.imageMessage,
-                    },
-                    MessageType.buttonsMessage,
-                    {
-                      quoted: chat,
-                      contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
-                    }
-                  )
-                  .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-                return await cleanRF.cleanRF(`${Date.now()}.jpeg`);
+                      }
+                    )
+                    .then(cleanRF.cleanRF(`./Sakura🗑️Temp/${Date.now()}.jpeg`))
+                    .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+                }
               });
             });
           }
