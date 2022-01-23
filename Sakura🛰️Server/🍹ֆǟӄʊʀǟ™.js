@@ -657,7 +657,7 @@ ${update.desc}`,
           console.log(
             Kolor.red(
               `⬡============⬡🍹ֆǟӄʊʀǟ™ Verified File: ` +
-                ֆǟӄʊʀǟ.commandName +
+                ֆǟӄʊʀǟ.commandName.toUpperCase() +
                 `🍃⬡============⬡`
             )
           );
