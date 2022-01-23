@@ -91,63 +91,16 @@ module.exports = {
               .save()
               .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
           } else {
-            `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
-            var background = await Canvas.loadImage(
-              `https://i.postimg.cc/htTPpb6w/Rank.png`
-            );
-            ctx.drawImage(background, 0, 0, 1366, 768);
-            ctx.beginPath();
-            ctx.fillStyle = `rgba(236,180,95, 0.5)`;
-            ctx.fillRect(260, 80, 650, 160);
-            ctx.closePath();
-            ctx.stroke();
-            ctx.font = applyText(canvas, `User`);
-            ctx.fillStyle = `#000`;
-            ctx.font = `80px LobsterTwo-Bold`;
-            ctx.fillText(`★Rank Check!★`, 280, 136);
-            ctx.font = `40px TheHeartOfEverythingDemo`;
-            ctx.fillStyle = `#000`;
-            ctx.fillText(
-              `Level now ` + users.level + ` - ` + users.xp + ` XP`,
-              280,
-              180
-            );
-            `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
-            await Canvas.loadImage(𝕻𝕻𝖑𝖊𝖙𝖊𝖗).then((avatar) => {
-              ctx.beginPath();
-              ctx.arc(125, 140, 100, 0, Math.PI * 2);
-              ctx.closePath();
-              ctx.clip();
-              ctx.drawImage(avatar, 25, 40, 200, 200);
-              const out = fs.createWriteStream(
-                `./Sakura🗑️Temp/${Date.now()}.jpeg`
-              );
-              const stream = canvas.createJPEGStream();
-              stream.pipe(out);
-              out.on(`finish`, async (Error) => {
-                if (Error) {
-                  return Sakura_Buttons.MTB(
-                    ӄʀǟӄɨռʐ,
-                    chat,
-                    ֆǟӄʊʀǟ,
-                    `@${ꜱᴇɴᴅᴇʀeceived} 🤙🏽‍𝐇𝐞𝐥𝐥𝐨,
-
-╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-║🥺 𝐎𝐩𝐩𝐬𝐢𝐞 𝐓𝐫𝐲 𝐀𝐠𝐚𝐢𝐧!
-║🍹 𝐒𝐞𝐫𝐯𝐞𝐫 𝐃𝐢𝐝𝐧'𝐭 𝐑𝐞𝐬𝐩𝐨𝐧𝐝!
-╚════════════╝`
-                  );
-                } else {
-                  return await ӄʀǟӄɨռʐ
-                    .sendMessage(
-                      ֆǟӄʊʀǟ.chatId,
-                      fs.readFileSync(`./Sakura🗑️Temp/${Date.now()}.jpeg`),
-                      MessageType.image,
-                      {
-                        quoted: chat,
-                        mimetype: Mimetype.jpeg,
-                        contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
-                        content: `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived}
+            return await ӄʀǟӄɨռʐ
+              .sendMessage(
+                ֆǟӄʊʀǟ.chatId,
+                { url: "https://i.postimg.cc/XqPBcyq0/image.png" },
+                MessageType.image,
+                {
+                  quoted: chat,
+                  mimetype: Mimetype.jpeg,
+                  contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
+                  content: `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived}
 
 ╔═══════ 📜𝐑𝐚𝐧𝐤 𝐂𝐚𝐫𝐝
 ║🍇 𝗖𝘂𝗿𝗿𝗲𝗻𝘁 𝗫𝗣: _${users.xp}_
@@ -167,13 +120,9 @@ module.exports = {
 ║*Level:* <90 | *Hardness:* 500%
 ║*Level:* <100 | *Hardness:* 550%
 ╚════════════╝`,
-                      }
-                    )
-                    .then(cleanRF.cleanRF(`./Sakura🗑️Temp/${Date.now()}.jpeg`))
-                    .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
                 }
-              });
-            });
+              )
+              .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
           }
         }
       );
