@@ -32,17 +32,17 @@ module.exports = {
       var MainText = `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 •@${ꜱᴇɴᴅᴇʀeceived}, ${Timers}
 
 ╔═════════════📥 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫𝐬
-║⬡ *${ᴋᴇɪ}play*  _download youtube-audio max 10min_
-║⬡ *${ᴋᴇɪ}song*  _download youtube-audio max 20min_
-║⬡ *${ᴋᴇɪ}youtubeaudio*  _download youtube-audio max 30min_
+║⬡ *${ᴋᴇɪ}play*  _youtube-audio max 10min_
+║⬡ *${ᴋᴇɪ}song*  _youtube-audio max 20min_
+║⬡ *${ᴋᴇɪ}youtubeaudio*  _youtube-audio max 30min_
 ║
-║⬡ *${ᴋᴇɪ}watch*  _download youtube-video-max 10min_
-║⬡ *${ᴋᴇɪ}stream*  _download youtube-video-max 20min_
-║⬡ *${ᴋᴇɪ}youtubevideo*  _download youtube-video-max 30min_
+║⬡ *${ᴋᴇɪ}watch*  _youtube-video-max 10min_
+║⬡ *${ᴋᴇɪ}stream*  _youtube-video-max 20min_
+║⬡ *${ᴋᴇɪ}youtubevideo*  _youtube-video-max 30min_
 ║
-║⬡ *${ᴋᴇɪ}instagram*  _download image/video from ig_
-║⬡ *${ᴋᴇɪ}tiktokaudio*  _download tik-tok audio_
-║⬡ *${ᴋᴇɪ}tiktokvideo*  _download tik-tok video_
+║⬡ *${ᴋᴇɪ}instagram*  _image/video from ig_
+║⬡ *${ᴋᴇɪ}tiktokaudio*  _tik-tok audio_
+║⬡ *${ᴋᴇɪ}tiktokvideo*  _tik-tok video_
 ╚════════════╝`;
       return Sakura_Buttons.MIB(
         ӄʀǟӄɨռʐ,
