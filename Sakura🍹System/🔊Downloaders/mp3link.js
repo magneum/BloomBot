@@ -225,7 +225,6 @@ module.exports = {
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 ║🍻 𝐓𝐢𝐭𝐥𝐞: ${Found.title}
 ║⏰ 𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧: ${Found.timestamp}
-║🔗 𝐋𝐢𝐧𝐤: ${Found.url}
 ╚════════════╝`,
                 Found.thumbnail
               );
@@ -244,7 +243,6 @@ module.exports = {
 ║⏰ 𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧: ${Found.timestamp}
 ║✒️ 𝐀𝐮𝐭𝐡𝐨𝐫: ${Found.author.name}
 ║📜 𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${Found.description}
-║🔗 𝐋𝐢𝐧𝐤: ${Found.url}
 ╚════════════╝`,
               Found.thumbnail
             );
