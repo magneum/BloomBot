@@ -3,6 +3,7 @@
 `|🍹|======================================================================================================⬡  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™`;
 `|🍹|`;
 `|🍹|`;
+`|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
 const Sakura_Buttons = require(`../../Sakura🛰️Server/Sakura_Buttons`);
 const Sakura_Static = require(`../../Sakura🛰️Server/Sakura_Static`);
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
@@ -11,19 +12,19 @@ const _𝔏𝔞𝔟_ = require(`../../Sakura🛰️Server/_𝔏𝔞𝔟_`);
 const ꜰᴜᴄᴋ = require(`../../Sakura🛰️Server/oShit`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
-const getVideoId = require("get-video-id");
-const ffmpeg = require("fluent-ffmpeg");
-const readline = require("readline");
-const ytdl = require("ytdl-core");
-const yts = require("yt-search");
+const getVideoId = require(`get-video-id`);
+const ffmpeg = require(`fluent-ffmpeg`);
+const readline = require(`readline`);
+const ytdl = require(`ytdl-core`);
+const yts = require(`yt-search`);
 var path = require(`path`);
-const fs = require("fs");
+const fs = require(`fs`);
 var scriptName = path.basename(__filename);
 var newScpt = scriptName.slice(0, -3).toLowerCase();
 `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
 module.exports = {
   name: newScpt,
-  ֆǟӄʊʀǟӄǟɨʐօ: `*${ᴋᴇɪ}youtube* [name]
+  ֆǟӄʊʀǟӄǟɨʐօ: `*${ᴋᴇɪ}youtube* _song name_
 🔎𝐒𝐞𝐚𝐫𝐜𝐡 𝐘𝐨𝐮𝐓𝐮𝐛𝐞? _${ᴋᴇɪ}ytsearch_`,
   async handle(ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
     try {
@@ -153,7 +154,7 @@ module.exports = {
             );
           }
           `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
-          var TubeSearch = await yts(Needs.join(" "));
+          var TubeSearch = await yts(Needs.join(` `));
           var Tube = TubeSearch.videos.slice(0, 1);
           console.log(Tube[0]);
           Tube.forEach(async function (Found) {
@@ -196,55 +197,74 @@ module.exports = {
               Found.thumbnail
             );
             `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
-            const { id } = getVideoId(Found.url);
-            let stream = ytdl(id, {
-              quality: "highestaudio",
-            });
-            let start = Date.now();
-            let YouTY = `${id}${start.toString()}.mp3`;
-            `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
             try {
-              ffmpeg(stream)
-                .audioBitrate(128)
-                .save(`${newScpt}/${YouTY}`)
-                .on("progress", (p) => {
-                  readline.cursorTo(process.stdout, 0);
-                  process.stdout.write(`${p.targetSize}kb downloaded`);
-                })
-                .on("end", () => {
-                  console.log(`\nTime Taken: ${(Date.now() - start) / 1000}s`);
-                  ӄʀǟӄɨռʐ
-                    .sendMessage(
-                      ֆǟӄʊʀǟ.chatId,
-                      fs.readFileSync(`${newScpt}/${YouTY}`),
-                      MessageType.audio,
-                      {
-                        quoted: chat,
-                        mimetype: "audio/mp4",
-                      }
-                    )
-                    .then(cleanRF.cleanRF(`${newScpt}/${YouTY}`));
-                  return;
-                });
+              const Link = Found.url;
+              const { id } = getVideoId(Link);
+              var YouFile = Date.now() + `_` + id + `_` + `.mp3`;
+              var YouStream = ytdl(Link, {
+                quality: `highestaudio`,
+              });
             } catch (Error) {
-              console.log(Error);
+              console.log(
+                `|⬡=========================⬡|⭕𝐘𝐭𝐝𝐥-𝐂𝐨𝐫𝐞 𝐄𝐫𝐫𝐨𝐫: ` + Error
+              );
               userBadge.Limits = userBadge.Limits + 1;
               await userBadge
                 .save()
                 .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-              Sakura_Buttons.MTB(
-                ӄʀǟӄɨռʐ,
-                chat,
-                ֆǟӄʊʀǟ,
-                `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived},
-
-╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-║🤦🏻‍♀️ 𝐎𝐩𝐩𝐬𝐢𝐞: _Try Again Later._
-║🐞 𝗕𝘂𝗴: _Api Timeout._
-╚════════════╝`
-              );
-              return;
+              return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
             }
+            `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
+            try {
+              ffmpeg(YouStream)
+                .audioBitrate(128)
+                .save(YouFile)
+                .on(`progress`, (p) => {
+                  readline.cursorTo(process.stdout, 0);
+                  process.stdout.write(
+                    `|⬡=========================⬡|💯𝐏𝐫𝐨𝐠𝐫𝐞𝐬𝐬: ${p.targetSize}kb`
+                  );
+                })
+                .on(`end`, async () => {
+                  console.clear();
+                  console.log(
+                    `|⬡=========================⬡|🥂𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐅𝐢𝐧𝐢𝐬𝐞𝐝: ` +
+                      YouFile
+                  );
+                  return await ӄʀǟӄɨռʐ
+                    .sendMessage(
+                      ֆǟӄʊʀǟ.chatId,
+                      fs.readFileSync(YouFile),
+                      MessageType.audio,
+                      {
+                        quoted: chat,
+                        mimetype: `audio/mp4`,
+                      }
+                    )
+                    .then(cleanRF.cleanRF(YouFile))
+                    .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+                })
+                .on(`error`, async (Error) => {
+                  console.log(
+                    `|⬡=========================⬡|🐞𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐄𝐫𝐫𝐨𝐫: ` + Error
+                  );
+                  userBadge.Limits = userBadge.Limits + 1;
+                  await userBadge
+                    .save()
+                    .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+                  return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
+                });
+            } catch (Error) {
+              console.log(
+                `|⬡=========================⬡|🔺𝐅𝐅𝐦𝐩𝐞𝐠 𝐄𝐫𝐫𝐨𝐫: ` + Error
+              );
+              userBadge.Limits = userBadge.Limits + 1;
+              await userBadge
+                .save()
+                .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+              return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
+            }
+            `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
           });
         }
       );
@@ -255,7 +275,6 @@ module.exports = {
     }
   },
 };
-`|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
 `|🍹|`;
 `|🍹|`;
 `|🍹|======================================================================================================⬡  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™`;

@@ -3,6 +3,7 @@
 `|🍹|======================================================================================================⬡  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™`;
 `|🍹|`;
 `|🍹|`;
+`|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
 const Sakura_Buttons = require(`../../Sakura🛰️Server/Sakura_Buttons`);
 const Sakura_Static = require(`../../Sakura🛰️Server/Sakura_Static`);
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
@@ -11,9 +12,9 @@ const cleanRF = require(`../../Sakura🛰️Server/cleanRF`);
 const _𝔏𝔞𝔟_ = require(`../../Sakura🛰️Server/_𝔏𝔞𝔟_`);
 const ꜰᴜᴄᴋ = require(`../../Sakura🛰️Server/oShit`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
-const { exec } = require(`child_process`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
-const request = require(`request`);
+const ffmpeg = require(`fluent-ffmpeg`);
+const readline = require(`readline`);
 const yts = require(`yt-search`);
 const axios = require(`axios`);
 const fs = require(`fs`);
@@ -23,7 +24,7 @@ var newScpt = scriptName.slice(0, -3).toLowerCase();
 `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
 module.exports = {
   name: newScpt,
-  ֆǟӄʊʀǟӄǟɨʐօ: `*${ᴋᴇɪ}play* [name]
+  ֆǟӄʊʀǟӄǟɨʐօ: `*${ᴋᴇɪ}play* _song name_
 🔎𝐒𝐞𝐚𝐫𝐜𝐡 𝐘𝐨𝐮𝐓𝐮𝐛𝐞? _${ᴋᴇɪ}ytsearch_`,
   async handle(ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
     try {
@@ -154,11 +155,60 @@ module.exports = {
             );
           }
           `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
+          async function FFMPEG_GOT(Link, Title) {
+            console.log("|⬡=========================⬡|🔗𝐓𝐢𝐧𝐲 𝐔𝐑𝐋 " + Link);
+            var YouFile = `${Date.now()}_${Title}.mp3`;
+            try {
+              require(`child_process`).exec(
+                `ffmpeg -i '${Link}' '${YouFile}'`,
+                async (Error) => {
+                  if (Error) {
+                    console.log(
+                      `|⬡=========================⬡|🔺𝐅𝐅𝐦𝐩𝐞𝐠 𝐄𝐫𝐫𝐨𝐫: ` + Error
+                    );
+                    userBadge.Limits = userBadge.Limits + 1;
+                    await userBadge
+                      .save()
+                      .catch((Error) =>
+                        ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
+                      );
+                    return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
+                  }
+                  console.log(
+                    `|⬡=========================⬡|🥂𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐅𝐢𝐧𝐢𝐬𝐞𝐝: ` +
+                      YouFile
+                  );
+                  await ӄʀǟӄɨռʐ
+                    .sendMessage(
+                      ֆǟӄʊʀǟ.chatId,
+                      fs.readFileSync(YouFile),
+                      MessageType.audio,
+                      {
+                        quoted: chat,
+                        mimetype: "audio/mp4",
+                      }
+                    )
+                    .then(cleanRF.cleanRF(YouFile))
+                    .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+                }
+              );
+              return;
+            } catch (Error) {
+              console.log(
+                `|⬡=========================⬡|🐞𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐄𝐫𝐫𝐨𝐫: ` + Error
+              );
+              userBadge.Limits = userBadge.Limits + 1;
+              await userBadge
+                .save()
+                .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+              return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
+            }
+          }
+          `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
           const LinkForGroups = await yts(Needs.join(` `));
           const GroupVideos = LinkForGroups.videos.slice(0, 1);
-          const filename = `${newScpt}/${FinalName}_${Ping}_${ꜱᴇɴᴅᴇʀɪᴅ}`;
-          GroupVideos.forEach(async function (youfound) {
-            if (youfound.seconds > `600`) {
+          GroupVideos.forEach(async function (Found) {
+            if (Found.seconds > `600`) {
               userBadge.Limits = userBadge.Limits + 1;
               await userBadge
                 .save()
@@ -175,7 +225,7 @@ module.exports = {
 ║⏰ 𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧: ${Found.timestamp}
 ║🔗 𝐋𝐢𝐧𝐤: ${Found.url}
 ╚════════════╝`,
-                youfound.thumbnail
+                Found.thumbnail
               );
             }
             `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
@@ -194,60 +244,19 @@ module.exports = {
 ║📜 𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${Found.description}
 ║🔗 𝐋𝐢𝐧𝐤: ${Found.url}
 ╚════════════╝`,
-              youfound.thumbnail
+              Found.thumbnail
             );
             `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
-            try {
-              var ʏᴛᴀᴅᴏᴡɴʟᴏᴀᴅ = function (uri, filename, callback) {
-                request.head(uri, function (Error, ɢᴏᴛʀᴇꜱᴘ, body) {
-                  mime = ɢᴏᴛʀᴇꜱᴘ.headers[`content-type`];
-                  request(uri)
-                    .pipe(fs.createWriteStream(filename))
-                    .on(`close`, callback);
+            YouTube_Music(Found.url).then((res) => {
+              const { dl_link, thumb, title, filesizeF, filesize } = res;
+              return axios
+                .get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
+                .then(async (AxioData) => {
+                  return await FFMPEG_GOT(AxioData.data, title);
                 });
-              };
-              await YouTube_Music(youfound.url).then(async (ɢᴏᴛʀᴇꜱᴘ) => {
-                const { dl_link, thumb, title, filesizeF, filesize } = ɢᴏᴛʀᴇꜱᴘ;
-                await axios
-                  .get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
-                  .then(async (a) => {
-                    ʏᴛᴀᴅᴏᴡɴʟᴏᴀᴅ(dl_link, filename, async function () {
-                      await ӄʀǟӄɨռʐ.sendMessage(
-                        ֆǟӄʊʀǟ.chatId,
-                        fs.readFileSync(filename),
-                        MessageType.audio,
-                        {
-                          quoted: chat,
-                          mimetype: "audio/mp4",
-                        }
-                      );
-                      await cleanRF.cleanRF(filename);
-                    });
-                  });
-              });
-              `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
-            } catch (Error) {
-              console.log(Error);
-              exec(
-                `youtube-dl --extract-audio --audio-format mp3 -o '${ꜱᴇɴᴅᴇʀeceived}_${youfound.title}.%(ext)s'  ${youfound.url}`,
-                (Error) => {
-                  if (Error) return console.log(Error);
-                  ӄʀǟӄɨռʐ.sendMessage(
-                    ֆǟӄʊʀǟ.chatId,
-                    fs.readFileSync(`${ꜱᴇɴᴅᴇʀeceived}_${youfound.title}.mp3`),
-                    MessageType.audio,
-                    {
-                      mimetype: "audio/mp4",
-                      quoted: chat,
-                    }
-                  );
-                  cleanRF.cleanRF(`${ꜱᴇɴᴅᴇʀeceived}_${youfound.title}.mp3`);
-                }
-              );
-              // youtube-dl --extract-audio --audio-format mp3 -o '%(title)s.%(ext)s' https://youtu.be/L5CV53wCWO0
-            }
+            });
+            `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
           });
-          `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
         }
       );
     } catch (Error) {
@@ -256,6 +265,7 @@ module.exports = {
     }
   },
 };
+`|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
 `|🍹|`;
 `|🍹|`;
 `|🍹|======================================================================================================⬡  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™`;
