@@ -35,6 +35,7 @@ module.exports = {
 ║⬡ *${ᴋᴇɪ}play*  _download youtube-audio max 10min_
 ║⬡ *${ᴋᴇɪ}song*  _download youtube-audio max 20min_
 ║⬡ *${ᴋᴇɪ}youtube*  _download youtube-audio max 30min_
+║⬡ *${ᴋᴇɪ}watch*  _download youtube-video-max 10min_
 ║⬡ *${ᴋᴇɪ}ytaudio*  _download (using-links) yt-audio max 30min _ 
 ║⬡ *${ᴋᴇɪ}instagram*  _download image/video from ig_
 ║⬡ *${ᴋᴇɪ}tiktokaudio*  _download tik-tok audio_

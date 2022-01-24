@@ -131,6 +131,7 @@ module.exports = {
 ║▷ ${ᴋᴇɪ}play _max 10min_
 ║▷ ${ᴋᴇɪ}song _max 20min_
 ║▷ ${ᴋᴇɪ}youtube _max 30min_
+║▷ ${ᴋᴇɪ}watch _video-max 10min_
 ║▷ ${ᴋᴇɪ}instagram
 ║▷ ${ᴋᴇɪ}ytaudio
 ║▷ ${ᴋᴇɪ}tiktokaudio

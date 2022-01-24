@@ -110,17 +110,17 @@ module.exports = {
 ╚════════════╝
 
 ╔═══════ ⭕𝐋𝐞𝐯𝐞𝐥𝐬
-║*Level:* <5 | *Hardness:* 50%
-║*Level:* <10 | *Hardness:* 100%
-║*Level:* <20 | *Hardness:* 150%
-║*Level:* <30 | *Hardness:* 200%
-║*Level:* <40 | *Hardness:* 250%
-║*Level:* <50 | *Hardness:* 300%
-║*Level:* <60 | *Hardness:* 350%
-║*Level:* <70 | *Hardness:* 400%
-║*Level:* <80 | *Hardness:* 450%
-║*Level:* <90 | *Hardness:* 500%
-║*Level:* <100 | *Hardness:* 550%
+║ *Level:* <5 | *Hardness:* 50%
+║ *Level:* <10 | *Hardness:* 100%
+║ *Level:* <20 | *Hardness:* 150%
+║ *Level:* <30 | *Hardness:* 200%
+║ *Level:* <40 | *Hardness:* 250%
+║ *Level:* <50 | *Hardness:* 300%
+║ *Level:* <60 | *Hardness:* 350%
+║ *Level:* <70 | *Hardness:* 400%
+║ *Level:* <80 | *Hardness:* 450%
+║ *Level:* <90 | *Hardness:* 500%
+║ *Level:* <100 | *Hardness:* 550%
 ╚════════════╝`,
                 }
               )
