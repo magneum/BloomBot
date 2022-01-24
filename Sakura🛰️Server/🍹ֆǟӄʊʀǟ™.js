@@ -457,8 +457,8 @@ ${update.desc}`,
                           .catch((Error) =>
                             ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
                           );
-                        var groupData = await ӄʀǟӄɨռʐ.groupMetadata(
-                          ֆǟӄʊʀǟ.chatId
+                        var groupDataRank = await ӄʀǟӄɨռʐ.groupMetadata(
+                          chat.key.remoteJid
                         );
                         await ӄʀǟӄɨռʐ.sendMessage(
                           ֆǟӄʊʀǟ.chatId,
@@ -476,7 +476,7 @@ ${update.desc}`,
 ╔════◇ 📜𝐑𝐚𝐧𝐤 𝐂𝐚𝐫𝐝
 ║🍇𝗖𝘂𝗿𝗿𝗲𝗻𝘁_𝗫𝗣: ${currentXP}
 ║🍈𝗖𝘂𝗿𝗲𝗻𝘁_𝗟𝗲𝘃𝗲𝗹: ${currentLvl}
-║🎪𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${groupData.subject}
+║🎪𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${groupDataRank.subject}
 ╚════════════╝
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: 🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐚𝐧𝐤

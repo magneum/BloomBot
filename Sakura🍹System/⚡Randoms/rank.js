@@ -86,7 +86,7 @@ module.exports = {
               .save()
               .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
           } else {
-            var groupData = await ӄʀǟӄɨռʐ.groupMetadata(ֆǟӄʊʀǟ.chatId);
+            var groupDataRank = await ӄʀǟӄɨռʐ.groupMetadata(chat.key.remoteJid);
             return await ӄʀǟӄɨռʐ
               .sendMessage(
                 ֆǟӄʊʀǟ.chatId,
@@ -103,7 +103,7 @@ module.exports = {
 ╔═══════ 📜𝐑𝐚𝐧𝐤 𝐂𝐚𝐫𝐝
 ║🍇𝗖𝘂𝗿𝗿𝗲𝗻𝘁_𝗫𝗣: ${currentXP}
 ║🍈𝗖𝘂𝗿𝗲𝗻𝘁_𝗟𝗲𝘃𝗲𝗹: ${currentLvl}
-║🎪𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${groupData.subject}
+║🎪𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${groupDataRank.subject}
 ╚════════════╝
 
 ╔═══════ ⭕𝐋𝐞𝐯𝐞𝐥𝐬
