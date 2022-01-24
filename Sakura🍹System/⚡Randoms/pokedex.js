@@ -140,9 +140,6 @@ module.exports = {
             })
           );
           let json = await res.json();
-          var Pok = json.sprites.animated;
-          console.log(json);
-          console.log(Pok);
           `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
           try {
             exec(
