@@ -143,7 +143,9 @@ module.exports = {
           `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
           try {
             exec(
-              `ffmpeg -i '${Pok}' -pix_fmt yuv420p -c:v libx264 -movflags +faststart -filter:v crop='floor(in_w/2)*2:floor(in_h/2)*2' './Sakura🗑️Temp/${ꜱᴇɴᴅᴇʀeceived.toString()}.mp4'`,
+              `ffmpeg -i '${
+                json.sprites.animated
+              }' -pix_fmt yuv420p -c:v libx264 -movflags +faststart -filter:v crop='floor(in_w/2)*2:floor(in_h/2)*2' './Sakura🗑️Temp/${ꜱᴇɴᴅᴇʀeceived.toString()}.mp4'`,
               async (Error) => {
                 if (Error) {
                   userBadge.Limits = userBadge.Limits + 1;

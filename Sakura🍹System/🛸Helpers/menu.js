@@ -97,6 +97,7 @@ module.exports = {
 ╔════ 💰 𝗘𝗰𝗼𝗻𝗼𝗺𝘆 ════╗
 ║▷ ${ᴋᴇɪ}store
 ║▷ ${ᴋᴇɪ}buy
+║▷ ${ᴋᴇɪ}hunt
 ║▷ ${ᴋᴇɪ}fish
 ║▷ ${ᴋᴇɪ}daily
 ║▷ ${ᴋᴇɪ}work
@@ -131,14 +132,11 @@ module.exports = {
 ║▷ ${ᴋᴇɪ}play _audio-max 10min_
 ║▷ ${ᴋᴇɪ}song _audio-max 20min_
 ║▷ ${ᴋᴇɪ}youtubeaudio _audio-max 30min_
-║
 ║▷ ${ᴋᴇɪ}watch _video-max 10min_
 ║▷ ${ᴋᴇɪ}stream _video-max 20min_
 ║▷ ${ᴋᴇɪ}youtubevideo _video-max 30min_
-║
 ║▷ ${ᴋᴇɪ}mp3link _yt-audio-max 15min_
 ║▷ ${ᴋᴇɪ}mp4link _yt-video-max 15min_
-║
 ║▷ ${ᴋᴇɪ}instagram
 ║▷ ${ᴋᴇɪ}tiktokaudio
 ║▷ ${ᴋᴇɪ}tiktokvideo
