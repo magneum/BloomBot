@@ -40,12 +40,12 @@ module.exports = {
 
 ╔═══⬡ 𝐁𝐚𝐝𝐠𝐞🏷️𝐂𝐚𝐭𝐞𝐨𝐠𝐫𝐲
 ║
-║🧵Basic • _10commands/day_ (Free)
-║🥉Bronze • _20commands/day_ (20,000coins)
-║🥈Silver • _40commands/day_ (40,000coins)
-║🥇Gold • _60commands/day_ (60,000coins)
-║💍Platinum • _80commands/day_ (80,000coins)
-║💎Diamond • _100commands/day_ (100,000coins)
+║ *🧵Basic:* _10commands/day_ (Free)
+║ *🥉Bronze:* _20commands/day_ (20,000coins)
+║ *🥈Silver:* _40commands/day_ (40,000coins)
+║ *🥇Gold:* _60commands/day_ (60,000coins)
+║ *💍Platinum:* _80commands/day_ (80,000coins)
+║ *💎Diamond:* _100commands/day_ (100,000coins)
 ╚════════════╝
 
 ╔═══⬡ 𝐄𝐜𝐨𝐧𝐨𝐦𝐲🛸𝐂𝐚𝐭𝐞𝐠𝐨𝐫𝐲
