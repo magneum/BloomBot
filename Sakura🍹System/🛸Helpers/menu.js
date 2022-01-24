@@ -134,8 +134,6 @@ module.exports = {
 ║▷ ${ᴋᴇɪ}youtube
 ║▷ ${ᴋᴇɪ}ytaudio
 ║▷ ${ᴋᴇɪ}tiktokaudio
-║▷ ${ᴋᴇɪ}watch (turned-off)
-║▷ ${ᴋᴇɪ}ytvideo
 ║▷ ${ᴋᴇɪ}tiktokvideo
 ╚════════════╝
 

@@ -38,8 +38,6 @@ module.exports = {
 ║⬡ *${ᴋᴇɪ}youtube*  _download youtube-audio under 30min_
 ║⬡ *${ᴋᴇɪ}tiktokaudio*  _download tik-tok audio_
 ║⬡ *${ᴋᴇɪ}ytaudio*  _download youtube-link-audio under 30min_
-║⬡ *${ᴋᴇɪ}watch*  _download youtube-video under 10min_
-║⬡ *${ᴋᴇɪ}ytvideo*  _download youtube-link-video under 30min_
 ║⬡ *${ᴋᴇɪ}tiktokvideo*  _download tik-tok video_
 ╚════════════╝`;
       return Sakura_Buttons.MIB(
