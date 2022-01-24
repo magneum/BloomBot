@@ -19,8 +19,7 @@ var newScpt = scriptName.slice(0, -3).toLowerCase();
 `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
 module.exports = {
   name: newScpt,
-  ֆǟӄʊʀǟӄǟɨʐօ: `Get the github profile by command  *${ᴋᴇɪ}github <user>*  
-or replying  *${ᴋᴇɪ}github*`,
+  ֆǟӄʊʀǟӄǟɨʐօ: `*${ᴋᴇɪ}github* _user_  or replying *${ᴋᴇɪ}github*`,
   async handle(ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
     try {
       var ꜱᴇɴᴅᴇʀɪᴅ = ֆǟӄʊʀǟ.sender;

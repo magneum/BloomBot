@@ -17,8 +17,6 @@ var newScpt = scriptName.slice(0, -3).toLowerCase();
 `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
 module.exports = {
   name: newScpt,
-  ֆǟӄʊʀǟӄǟɨʐօ: `${ᴋᴇɪ}admins
-🍹Tag admins of a group (either as a reply to another message or a direct tag).`,
   async handle(ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
     try {
       var ꜱᴇɴᴅᴇʀɪᴅ = ֆǟӄʊʀǟ.sender;

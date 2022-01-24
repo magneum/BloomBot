@@ -20,8 +20,7 @@ var newScpt = scriptName.slice(0, -3).toLowerCase();
 `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
 module.exports = {
   name: newScpt,
-  ֆǟӄʊʀǟӄǟɨʐօ: `Use  *${ᴋᴇɪ}tr <text> | <language>*  to translate text to the specified language. 
-You can also reply to a text message with syntax  *${ᴋᴇɪ}tr <language>*  to translate text.`,
+  ֆǟӄʊʀǟӄǟɨʐօ: `*${ᴋᴇɪ}tr* _text_ | _language code_`,
   async handle(ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
     try {
       var ꜱᴇɴᴅᴇʀɪᴅ = ֆǟӄʊʀǟ.sender;

@@ -21,15 +21,9 @@ var newScpt = scriptName.slice(0, -3).toLowerCase();
 module.exports = {
   name: newScpt,
   ֆǟӄʊʀǟӄǟɨʐօ: `Example Usage,
-*${ᴋᴇɪ}carbon <text>* 
-*${ᴋᴇɪ}carbon*  and reply to a text message.
-Use the -t flag after  *${ᴋᴇɪ}carbon*  to get the list of themes availble.
-In order to specify the theme, use  *${ᴋᴇɪ}carbon <text> -t <theme>* .`,
-  more: `No input provided.
-Please use the command  
-*${ᴋᴇɪ}carbon <text> -t <theme>*  
-or reply to a text message with  
-*${ᴋᴇɪ}carbon*  to carbonize the text.`,
+*${ᴋᴇɪ}carbon* _text_ 
+*${ᴋᴇɪ}carbon*  _reply to a text message._
+*${ᴋᴇɪ}carbon* _text_ -t _theme_.`,
   async handle(ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
     try {
       var ꜱᴇɴᴅᴇʀɪᴅ = ֆǟӄʊʀǟ.sender;

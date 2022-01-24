@@ -18,9 +18,9 @@ var newScpt = scriptName.slice(0, -3).toLowerCase();
 `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
 module.exports = {
   name: newScpt,
-  ֆǟӄʊʀǟӄǟɨʐօ: `*${ᴋᴇɪ}promote* 9100000000
-*${ᴋᴇɪ}promote* (tag)
-*${ᴋᴇɪ}promote* (reply to their text)
+  ֆǟӄʊʀǟӄǟɨʐօ: `*${ᴋᴇɪ}promote* _9100000000_
+*${ᴋᴇɪ}promote* _tag_
+*${ᴋᴇɪ}promote* _reply to their text_
 🍁Use this module to demote a person from admin by entering the person's mobile number. `,
   async handle(ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
     try {
