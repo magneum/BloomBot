@@ -136,6 +136,9 @@ module.exports = {
 ║▷ ${ᴋᴇɪ}stream _video-max 20min_
 ║▷ ${ᴋᴇɪ}youtubevideo _video-max 30min_
 ║
+║▷ ${ᴋᴇɪ}mp3link _yt-audio-max 15min_
+║▷ ${ᴋᴇɪ}mp4link _yt-video-max 15min_
+║
 ║▷ ${ᴋᴇɪ}instagram
 ║▷ ${ᴋᴇɪ}tiktokaudio
 ║▷ ${ᴋᴇɪ}tiktokvideo

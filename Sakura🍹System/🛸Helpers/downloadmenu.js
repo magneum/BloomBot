@@ -40,6 +40,9 @@ module.exports = {
 ║⬡ *${ᴋᴇɪ}stream*  _youtube-video-max 20min_
 ║⬡ *${ᴋᴇɪ}youtubevideo*  _youtube-video-max 30min_
 ║
+║⬡ *${ᴋᴇɪ}mp3link _yt-audio-max 15min_
+║⬡ *${ᴋᴇɪ}mp4link _yt-video-max 15min_
+║
 ║⬡ *${ᴋᴇɪ}instagram*  _image/video from ig_
 ║⬡ *${ᴋᴇɪ}tiktokaudio*  _tik-tok audio_
 ║⬡ *${ᴋᴇɪ}tiktokvideo*  _tik-tok video_
