@@ -452,12 +452,15 @@ ${update.desc}`,
                           workdone: 0,
                           worktimeout: 900000,
                         });
-                        newUser
+                        await newUser
                           .save()
                           .catch((Error) =>
                             ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
                           );
-                        ӄʀǟӄɨռʐ.sendMessage(
+                        var groupData = await ӄʀǟӄɨռʐ.groupMetadata(
+                          chat.key.remoteJid
+                        );
+                        await ӄʀǟӄɨռʐ.sendMessage(
                           ֆǟӄʊʀǟ.chatId,
                           fs.readFileSync(`${ꜱᴇɴᴅᴇʀeceived.toString()}.jpeg`),
                           MessageType.image,
@@ -471,8 +474,9 @@ ${update.desc}`,
                             )}, 𝐘𝐨𝐮 𝐇𝐚𝐯𝐞 𝐋𝐞𝐯𝐞𝐥𝐞𝐝 𝐔𝐏!
 
 ╔════◇ 📜𝐑𝐚𝐧𝐤 𝐂𝐚𝐫𝐝
-║🍇 𝗖𝘂𝗿𝗿𝗲𝗻𝘁_𝗫𝗣: ${currentXP}
-║🍈 𝗖𝘂𝗿𝗲𝗻𝘁_𝗟𝗲𝘃𝗲𝗹: ${currentLvl}
+║🍇𝗖𝘂𝗿𝗿𝗲𝗻𝘁_𝗫𝗣: ${currentXP}
+║🍈𝗖𝘂𝗿𝗲𝗻𝘁_𝗟𝗲𝘃𝗲𝗹: ${currentLvl}
+║🎪𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${groupData.subject}
 ╚════════════╝
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: 🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐚𝐧𝐤
