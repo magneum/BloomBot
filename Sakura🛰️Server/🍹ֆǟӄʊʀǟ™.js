@@ -458,7 +458,7 @@ ${update.desc}`,
                             ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
                           );
                         var groupData = await ӄʀǟӄɨռʐ.groupMetadata(
-                          chat.key.remoteJid
+                          ֆǟӄʊʀǟ.chatId
                         );
                         await ӄʀǟӄɨռʐ.sendMessage(
                           ֆǟӄʊʀǟ.chatId,

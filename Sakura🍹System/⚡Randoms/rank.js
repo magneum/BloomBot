@@ -86,7 +86,7 @@ module.exports = {
               .save()
               .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
           } else {
-            var groupData = await ӄʀǟӄɨռʐ.groupMetadata(chat.key.remoteJid);
+            var groupData = await ӄʀǟӄɨռʐ.groupMetadata(ֆǟӄʊʀǟ.chatId);
             return await ӄʀǟӄɨռʐ
               .sendMessage(
                 ֆǟӄʊʀǟ.chatId,
