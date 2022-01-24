@@ -128,12 +128,15 @@ module.exports = {
 
 
 ╔════ 📥 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫𝐬 ════╗
-║▷ ${ᴋᴇɪ}play _max 10min_
-║▷ ${ᴋᴇɪ}song _max 20min_
-║▷ ${ᴋᴇɪ}youtube _max 30min_
+║▷ ${ᴋᴇɪ}play _audio-max 10min_
+║▷ ${ᴋᴇɪ}song _audio-max 20min_
+║▷ ${ᴋᴇɪ}youtubeaudio _audio-max 30min_
+║
 ║▷ ${ᴋᴇɪ}watch _video-max 10min_
+║▷ ${ᴋᴇɪ}stream _video-max 20min_
+║▷ ${ᴋᴇɪ}youtubevideo _video-max 30min_
+║
 ║▷ ${ᴋᴇɪ}instagram
-║▷ ${ᴋᴇɪ}ytaudio
 ║▷ ${ᴋᴇɪ}tiktokaudio
 ║▷ ${ᴋᴇɪ}tiktokvideo
 ╚════════════╝

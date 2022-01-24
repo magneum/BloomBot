@@ -34,9 +34,12 @@ module.exports = {
 ╔═════════════📥 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫𝐬
 ║⬡ *${ᴋᴇɪ}play*  _download youtube-audio max 10min_
 ║⬡ *${ᴋᴇɪ}song*  _download youtube-audio max 20min_
-║⬡ *${ᴋᴇɪ}youtube*  _download youtube-audio max 30min_
+║⬡ *${ᴋᴇɪ}youtubeaudio*  _download youtube-audio max 30min_
+║
 ║⬡ *${ᴋᴇɪ}watch*  _download youtube-video-max 10min_
-║⬡ *${ᴋᴇɪ}ytaudio*  _download (using-links) yt-audio max 30min _ 
+║⬡ *${ᴋᴇɪ}stream*  _download youtube-video-max 20min_
+║⬡ *${ᴋᴇɪ}youtubevideo*  _download youtube-video-max 30min_
+║
 ║⬡ *${ᴋᴇɪ}instagram*  _download image/video from ig_
 ║⬡ *${ᴋᴇɪ}tiktokaudio*  _download tik-tok audio_
 ║⬡ *${ᴋᴇɪ}tiktokvideo*  _download tik-tok video_
