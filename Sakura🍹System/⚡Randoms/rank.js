@@ -87,7 +87,7 @@ module.exports = {
               .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
           } else {
             var groupDataRank = await ӄʀǟӄɨռʐ.groupMetadata(chat.key.remoteJid);
-            return await ӄʀǟӄɨռʐ
+            await ӄʀǟӄɨռʐ
               .sendMessage(
                 ֆǟӄʊʀǟ.chatId,
                 {
@@ -100,13 +100,18 @@ module.exports = {
                   contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
                   caption: `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived}
 
-╔═══════ 📜𝐑𝐚𝐧𝐤 𝐂𝐚𝐫𝐝
-║🍇𝗖𝘂𝗿𝗿𝗲𝗻𝘁_𝗫𝗣: ${currentXP}
-║🍈𝗖𝘂𝗿𝗲𝗻𝘁_𝗟𝗲𝘃𝗲𝗹: ${currentLvl}
-║🎪𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${groupDataRank.subject}
+╔═══════📜𝐑𝐚𝐧𝐤 𝐂𝐚𝐫𝐝
+║🥂 𝗫𝗣: ${users.xp}
+║🍩 𝗟𝗲𝘃𝗲𝗹: ${users.level}
+║🎪 𝐆𝐫𝐨𝐮𝐩: ${groupDataRank.subject}
 ╚════════════╝
 
-╔═══════ ⭕𝐋𝐞𝐯𝐞𝐥𝐬
+╔════◇🌿
+║🎉The More You Talk, The More 𝐗𝐏+𝐂𝐨𝐢𝐧𝐬 You Gain. 
+║🎉You Can Spend The Coins in ${ᴋᴇɪ}store!
+╚════════════╝
+
+╔═══════⭕𝐋𝐞𝐯𝐞𝐥𝐬
 ║ *Level:* <5 | *Hardness:* 50%
 ║ *Level:* <10 | *Hardness:* 100%
 ║ *Level:* <20 | *Hardness:* 150%
@@ -122,6 +127,7 @@ module.exports = {
                 }
               )
               .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+            return;
           }
         }
       );
