@@ -48,8 +48,8 @@ module.exports = {
             ID: Receiver,
             serverID: ֆǟӄʊʀǟ.chatId,
           },
-          async (err, userEco) => {
-            if (err) console.log(err);
+          async (Error, userEco) => {
+            if (Error) console.log(Error);
             if (!userEco) {
               var newUser = new Economy({
                 ID: Receiver,
@@ -102,8 +102,8 @@ module.exports = {
           {
             ID: ꜱᴇɴᴅᴇʀɪᴅ,
           },
-          async (err, userEco) => {
-            if (err) console.log(err);
+          async (Error, userEco) => {
+            if (Error) console.log(Error);
             if (!userEco) {
               var newUser = new Economy({
                 ID: ꜱᴇɴᴅᴇʀɪᴅ,

@@ -71,8 +71,8 @@ module.exports = {
         {
           ID: ֆǟӄʊʀǟ.sender,
         },
-        async (err, userBadge) => {
-          if (err) return console.log(err);
+        async (Error, userBadge) => {
+          if (Error) return console.log(Error);
           if (!userBadge) {
             var newUser = new Bagde({
               ID: ֆǟӄʊʀǟ.sender,
@@ -232,8 +232,8 @@ module.exports = {
               console.log(Error);
               exec(
                 `youtube-dl --extract-audio --audio-format mp3 -o '${ꜱᴇɴᴅᴇʀeceived}_${youfound.title}.%(ext)s'  ${URL}`,
-                (err) => {
-                  if (err) return console.log(err);
+                (Error) => {
+                  if (Error) return console.log(Error);
                   ӄʀǟӄɨռʐ.sendMessage(
                     ֆǟӄʊʀǟ.chatId,
                     fs.readFileSync(`${ꜱᴇɴᴅᴇʀeceived}_${youfound.title}.mp3`),

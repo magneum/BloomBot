@@ -74,8 +74,8 @@ module.exports = {
         {
           ID: ֆǟӄʊʀǟ.sender,
         },
-        async (err, userBadge) => {
-          if (err) return console.log(err);
+        async (Error, userBadge) => {
+          if (Error) return console.log(Error);
           if (!userBadge) {
             var newUser = new Bagde({
               ID: ֆǟӄʊʀǟ.sender,
@@ -164,7 +164,7 @@ module.exports = {
             const filename = `${newScpt}/${FinalName}_${ꜱᴇɴᴅᴇʀɪᴅ}_${Ping}`;
             let mime = ``;
             var download = function (uri, filename, callback) {
-              request.head(uri, function (err, res, body) {
+              request.head(uri, function (Error, res, body) {
                 mime = res.headers[`content-type`];
                 request(uri)
                   .pipe(fs.createWriteStream(filename))

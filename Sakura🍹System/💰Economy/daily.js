@@ -42,9 +42,9 @@ module.exports = {
         {
           ID: ꜱᴇɴᴅᴇʀɪᴅ,
         },
-        async (err, userEco) => {
+        async (Error, userEco) => {
           console.log(userEco);
-          if (err) console.log(err);
+          if (Error) console.log(Error);
           if (!userEco) {
             var newUser = new Economy({
               ID: ֆǟӄʊʀǟ.sender,

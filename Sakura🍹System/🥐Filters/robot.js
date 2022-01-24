@@ -34,8 +34,8 @@ module.exports = {
         {
           ID: ֆǟӄʊʀǟ.sender,
         },
-        async (err, userBadge) => {
-          if (err) return console.log(err);
+        async (Error, userBadge) => {
+          if (Error) return console.log(Error);
           if (!userBadge) {
             var newUser = new Bagde({
               ID: ֆǟӄʊʀǟ.sender,
@@ -130,9 +130,25 @@ module.exports = {
             var Convert_To = `_${FILEID}_.mp4`;
             exec(
               `ffmpeg -i ${Convert_From} -filter_complex "afftfilt=real=\'hypot(re,im)*sin(0)\':imag=\'hypot(re,im)*cos(0)\':win_size=512:overlap=0.75" ${Convert_To}`,
-              async (err) => {
+              async (Error) => {
                 cleanRF.cleanRF(Convert_From);
-                if (err) return console.log(err);
+                if (Error) {
+                  userBadge.Limits = userBadge.Limits + 1;
+                  await userBadge
+                    .save()
+                    .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+                  return Sakura_Buttons.MTB(
+                    ӄʀǟӄɨռʐ,
+                    chat,
+                    ֆǟӄʊʀǟ,
+                    `@${ꜱᴇɴᴅᴇʀeceived} 🤙🏽‍𝐇𝐞𝐥𝐥𝐨,
+
+╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+║🤦🏻‍♀️ 𝐎𝐩𝐩𝐬𝐢𝐞: _Try Again Later._
+║🐞 𝗕𝘂𝗴: _Api Timeout._
+╚════════════╝`
+                  );
+                }
                 await ӄʀǟӄɨռʐ.sendMessage(
                   ֆǟӄʊʀǟ.chatId,
                   fs.readFileSync(Convert_To),

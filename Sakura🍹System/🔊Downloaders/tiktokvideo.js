@@ -69,8 +69,8 @@ module.exports = {
         {
           ID: ֆǟӄʊʀǟ.sender,
         },
-        async (err, userBadge) => {
-          if (err) return console.log(err);
+        async (Error, userBadge) => {
+          if (Error) return console.log(Error);
           if (!userBadge) {
             var newUser = new Bagde({
               ID: ֆǟӄʊʀǟ.sender,

@@ -48,9 +48,9 @@ module.exports = {
         {
           ID: ֆǟӄʊʀǟ.sender,
         },
-        async (err, userBadge) => {
+        async (Error, userBadge) => {
           // return userBadge.delete();
-          if (err) return console.log(err);
+          if (Error) return console.log(Error);
           if (!userBadge) {
             var newUser = new Bagde({
               ID: ֆǟӄʊʀǟ.sender,
@@ -181,8 +181,8 @@ module.exports = {
                     `@${ꜱᴇɴᴅᴇʀeceived} 🤙🏽‍𝐇𝐞𝐥𝐥𝐨,
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-║🥺 𝐎𝐩𝐩𝐬𝐢𝐞 𝐓𝐫𝐲 𝐀𝐠𝐚𝐢𝐧!
-║🍹 𝐒𝐞𝐫𝐯𝐞𝐫 𝐃𝐢𝐝𝐧'𝐭 𝐑𝐞𝐬𝐩𝐨𝐧𝐝!
+║🤦🏻‍♀️ 𝐎𝐩𝐩𝐬𝐢𝐞: _Try Again Later._
+║🐞 𝗕𝘂𝗴: _Api Timeout._
 ╚════════════╝`
                   );
                 }

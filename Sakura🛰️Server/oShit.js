@@ -48,17 +48,17 @@ exports.catch = async (Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat) => {
   await ӄʀǟӄɨռʐ.sendMessage(
     ֆǟӄʊʀǟ.chatId,
     {
-      contentText: `*🍹 Try Again Later!*`,
+      contentText: `@${ꜱᴇɴᴅᴇʀeceived} 🤙🏽‍𝐇𝐞𝐥𝐥𝐨,
+
+╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+║🤦🏻‍♀️ 𝐎𝐩𝐩𝐬𝐢𝐞: _Try Again Later._
+║🐞 𝗕𝘂𝗴: _Api Timeout._
+╚════════════╝`,
       footerText: `🍸(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭\n${Clock}`,
       buttons: [
         {
           buttonId: `${ᴋᴇɪ}bugreport`,
           buttonText: { displayText: `${ᴋᴇɪ}bugreport` },
-          type: 1,
-        },
-        {
-          buttonId: `${ᴋᴇɪ}help`,
-          buttonText: { displayText: `${ᴋᴇɪ}help` },
           type: 1,
         },
       ],
@@ -71,22 +71,15 @@ exports.catch = async (Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat) => {
     }
   );
   `⬡🍹⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-  await ӄʀǟӄɨռʐ.sendMessage(
+  return await ӄʀǟӄɨռʐ.sendMessage(
     ֆǟӄʊʀǟ.Myself,
     {
-      contentText: `*🍹 Try Again Later!*
-
-*Error:* ${Error}`,
+      contentText: `*🐞Error:* ${Error}`,
       footerText: `🍸(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭\n${Clock}`,
       buttons: [
         {
           buttonId: `${ᴋᴇɪ}bugreport`,
           buttonText: { displayText: `${ᴋᴇɪ}bugreport` },
-          type: 1,
-        },
-        {
-          buttonId: `${ᴋᴇɪ}help`,
-          buttonText: { displayText: `${ᴋᴇɪ}help` },
           type: 1,
         },
       ],
@@ -97,8 +90,6 @@ exports.catch = async (Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat) => {
       quoted: chat,
     }
   );
-  console.log(Error);
-  return;
 };
 `|🍹|`;
 `|🍹|`;

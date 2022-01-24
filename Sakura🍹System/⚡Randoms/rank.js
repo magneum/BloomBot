@@ -79,8 +79,8 @@ module.exports = {
         {
           ID: ֆǟӄʊʀǟ.sender,
         },
-        async (err, users) => {
-          if (err) console.log(err);
+        async (Error, users) => {
+          if (Error) console.log(Error);
           if (!users) {
             var newUsers = new UsersSakura({
               ID: ֆǟӄʊʀǟ.sender,

@@ -101,8 +101,8 @@ module.exports = {
             {
               serverID: ֆǟӄʊʀǟ.chatId,
             },
-            async (err, server) => {
-              if (err) console.log(err);
+            async (Error, server) => {
+              if (Error) console.log(Error);
               if (!server) {
                 var newServer = new LinkList({
                   serverID: ֆǟӄʊʀǟ.chatId,
@@ -209,8 +209,8 @@ module.exports = {
             {
               serverID: ֆǟӄʊʀǟ.chatId,
             },
-            async (err, server) => {
-              if (err) console.log(err);
+            async (Error, server) => {
+              if (Error) console.log(Error);
               if (!server) {
                 const media = await ӄʀǟӄɨռʐ.prepareMessage(
                   ֆǟӄʊʀǟ.chatId,

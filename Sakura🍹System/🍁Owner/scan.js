@@ -65,7 +65,7 @@ module.exports = {
                   ֆǟӄʊʀǟ,
                   `✔️ ✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived}, *Sir Here Is The Verified Link!*
 
-+sudo($req(+${Ping}+${Clock}))
++sudolnk($req%+${Ping}+${Clock}%)
 ${_𝔏𝔞𝔟_.HASH.replace(`https://chat.whatsapp.com/`, `/kryo/`)}${value.result}`,
                   `./Sakura☣️Reactor/ֆǟӄʊʀǟ™.mp4`
                 );

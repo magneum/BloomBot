@@ -95,15 +95,15 @@ module.exports = {
             ID: Receiver,
             ServerID: ֆǟӄʊʀǟ.chatId,
           },
-          async (err, userWarn) => {
-            if (err) return console.log(err);
+          async (Error, userWarn) => {
+            if (Error) return console.log(Error);
             if (!userWarn) {
               var newWarnUser = new Warning({
                 ID: Receiver,
                 ServerID: ֆǟӄʊʀǟ.chatId,
                 warnings: 1,
               });
-              newWarnUser
+              await newWarnUser
                 .save()
                 .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
 
@@ -124,7 +124,7 @@ module.exports = {
                 ],
                 headerType: 1,
               };
-              await ӄʀǟӄɨռʐ
+              return await ӄʀǟӄɨռʐ
                 .sendMessage(
                   ֆǟӄʊʀǟ.chatId,
                   buttonMessage,
@@ -135,7 +135,6 @@ module.exports = {
                   }
                 )
                 .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-              return;
               `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
             } else {
               if (userWarn.warnings < 4) {
@@ -160,7 +159,7 @@ module.exports = {
                   ],
                   headerType: 1,
                 };
-                await ӄʀǟӄɨռʐ
+                return await ӄʀǟӄɨռʐ
                   .sendMessage(
                     ֆǟӄʊʀǟ.chatId,
                     buttonMessage,
@@ -171,7 +170,6 @@ module.exports = {
                     }
                   )
                   .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-                return;
               }
               `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
               if (userWarn.warnings == 3) {
@@ -180,7 +178,7 @@ module.exports = {
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 ║♀️ 𝗣𝗲𝗿𝘀𝗼𝗻: @${personreceived}
 ║❗ 𝗪𝗮𝗿𝗻𝗶𝗻𝗴𝘀: ${userWarn.warnings}
-║💡 You Will be Auto-Removed in 8s!
+║💡 You Will be Auto-Removed!
 ╚════════════╝`,
                   footerText: `🍸(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭\n${Clock}`,
                   buttons: [
@@ -203,16 +201,12 @@ module.exports = {
                     }
                   )
                   .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-                setTimeout(async (error) => {
-                  if (error) console.log(error);
-                  await ӄʀǟӄɨռʐ
-                    .groupRemove(ֆǟӄʊʀǟ.chatId, [Receiver])
-                    .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-                  await userEco
-                    .delete()
-                    .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-                }, 8000);
-                return;
+                await ӄʀǟӄɨռʐ
+                  .groupRemove(ֆǟӄʊʀǟ.chatId, [Receiver])
+                  .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+                return await userEco
+                  .delete()
+                  .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
               }
             }
           }

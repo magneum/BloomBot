@@ -35,8 +35,8 @@ module.exports = {
         {
           ID: ֆǟӄʊʀǟ.sender,
         },
-        async (err, userBadge) => {
-          if (err) return console.log(err);
+        async (Error, userBadge) => {
+          if (Error) return console.log(Error);
           if (!userBadge) {
             var newUser = new Bagde({
               ID: ֆǟӄʊʀǟ.sender,
@@ -172,10 +172,10 @@ module.exports = {
                 };
                 return data;
               }
-            } catch (err) {
+            } catch (Error) {
               var notFond = {
                 status: link.status,
-                Pesan: err,
+                Pesan: Error,
               };
               return notFond;
             }

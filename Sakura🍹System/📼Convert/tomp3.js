@@ -34,8 +34,8 @@ module.exports = {
         {
           ID: ֆǟӄʊʀǟ.sender,
         },
-        async (err, userBadge) => {
-          if (err) return console.log(err);
+        async (Error, userBadge) => {
+          if (Error) return console.log(Error);
           if (!userBadge) {
             var newUser = new Bagde({
               ID: ֆǟӄʊʀǟ.sender,
@@ -133,10 +133,10 @@ module.exports = {
             var Convert_To = `${__dirname}/${FILEID}_${Math.floor(
               Math.random() * 10000
             )}.mp3`;
-            exec(`ffmpeg -i ${Convert_From} ${Convert_To}`, async (err) => {
+            exec(`ffmpeg -i ${Convert_From} ${Convert_To}`, async (Error) => {
               cleanRF.cleanRF(Convert_From);
-              if (err) {
-                return console.log(`Err: ${err}`);
+              if (Error) {
+                return console.log(`Err: ${Error}`);
               } else {
                 await ӄʀǟӄɨռʐ.sendMessage(
                   ֆǟӄʊʀǟ.chatId,

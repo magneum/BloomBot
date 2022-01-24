@@ -86,8 +86,8 @@ module.exports = {
             ID: Receiver,
             ServerID: ֆǟӄʊʀǟ.chatId,
           },
-          async (err, userWarn) => {
-            if (err) return console.log(err);
+          async (Error, userWarn) => {
+            if (Error) return console.log(Error);
             if (!userWarn) {
               const buttonMessage = {
                 contentText: `
