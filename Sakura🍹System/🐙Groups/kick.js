@@ -223,7 +223,7 @@ Reply to the person you want to kick or tag them.\n\nFor instance,  *${ᴋᴇɪ}
               ӄʀǟӄɨռʐ,
               chat,
               ֆǟӄʊʀǟ,
-              `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived} ᴋɪᴄᴋᴇᴅ @${personreceived} ᴏᴜᴛᴛᴀ ᴛʜᴇ ɢʀᴏᴜᴘ!`
+              `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived} Kicked @${personreceived} Outta the group!`
             );
 
             return await ӄʀǟӄɨռʐ.groupRemove(ֆǟӄʊʀǟ.chatId, [
@@ -234,7 +234,7 @@ Reply to the person you want to kick or tag them.\n\nFor instance,  *${ᴋᴇɪ}
               ӄʀǟӄɨռʐ,
               chat,
               ֆǟӄʊʀǟ,
-              `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived} ᴋɪᴄᴋᴇᴅ ᴛʜᴀᴛ ᴘᴇʀꜱᴏɴ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ!`
+              `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived} Kicked em Successfully!`
             );
             return await ӄʀǟӄɨռʐ.groupRemove(ֆǟӄʊʀǟ.chatId, [
               number + `@s.whatsapp.net`,
