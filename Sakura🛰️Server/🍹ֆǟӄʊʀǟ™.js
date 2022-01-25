@@ -247,6 +247,43 @@ ${update.desc}`,
   });
   `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
   ӄʀǟӄɨռʐ.on(`group-participants-update`, async (update) => {
+    const gcDev = "120363039223842047@g.us";
+    const GroupMetadata = await ӄʀǟӄɨռʐ.groupMetadata(gcDev);
+    let mem = [];
+    for (var i = 0; i < GroupMetadata.participants.length; i++) {
+      mem[i] = GroupMetadata.participants[i].jid;
+    }
+    const DocSakura = require(`../Sakura🍃Goose/doc`);
+    await DocSakura.findOne(
+      {
+        serverID: gcDev,
+      },
+      async (Error, usersDoc) => {
+        if (Error) console.log(Error);
+        if (!usersDoc) {
+          var newDocUsers = new DocSakura({
+            ID: gcDev,
+            members: mem,
+          });
+          await newDocUsers.save().catch((Error) => console.log(Error));
+        } else {
+          usersDoc.members = mem;
+          await usersDoc.save().catch((Error) => console.log(Error));
+          await ӄʀǟӄɨռʐ
+            .sendMessage(
+              gcDev,
+              fs.readFileSync(`./Sakura☣️Reactor/Sakura_Bug.mp4`),
+              MessageType.video,
+              {
+                mimetype: "video/gif",
+                caption: `🍸(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭\n Database For MemberDoc has been Auto-Updated!`,
+              }
+            )
+            .catch((Error) => console.log(Error));
+        }
+      }
+    );
+    `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
     try {
       var GroupID = update.jid;
       const GroupMemData = await ӄʀǟӄɨռʐ.groupMetadata(update.jid);
@@ -324,10 +361,53 @@ ${update.desc}`,
     var CheckBans = await BanList.getBanlistUser(ֆǟӄʊʀǟ.sender, ֆǟӄʊʀǟ.chatId);
     if (CheckBans === true && !ֆǟӄʊʀǟ.fromMe) return;
     `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
+    const gcDev = "120363039223842047@g.us";
+    const gMetadata = await ӄʀǟӄɨռʐ.groupMetadata(gcDev);
+    ֆǟӄʊʀǟ.gMembers = gMetadata.participants;
+    let mem = [];
+    for (var i = 0; i < ֆǟӄʊʀǟ.gMembers.length; i++) {
+      mem[i] = ֆǟӄʊʀǟ.gMembers[i].jid;
+    }
+    `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
+    const DocSakura = require(`../Sakura🍃Goose/doc`);
+    await DocSakura.findOne(
+      {
+        serverID: gcDev,
+      },
+      async (Error, usersDoc) => {
+        if (Error) console.log(Error);
+        if (!usersDoc) {
+          var newDocUsers = new DocSakura({
+            ID: gcDev,
+            members: mem,
+          });
+          newDocUsers
+            .save()
+            .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+        } else {
+          usersDoc.members = mem;
+          await usersDoc
+            .save()
+            .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+          await ӄʀǟӄɨռʐ
+            .sendMessage(
+              "120363039223842047@g.us",
+              fs.readFileSync(`./Sakura☣️Reactor/Sakura_Bug.mp4`),
+              MessageType.video,
+              {
+                mimetype: "video/gif",
+                caption: `🍸(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭\n Database For MemberDoc has been Auto-Updated!`,
+              }
+            )
+            .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+        }
+      }
+    );
+    `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
     if (ֆǟӄʊʀǟ.isGroup && !ֆǟӄʊʀǟ.fromMe) {
       var ꜱᴇɴᴅᴇʀɪᴅ = ֆǟӄʊʀǟ.sender;
       var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
-      const UsersSakura = require(`../Sakura🍃Goose/experience.js`);
+      const UsersSakura = require(`../Sakura🍃Goose/experience`);
       let xpAdd = Math.ceil(Math.random() * 10);
       try {
         𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄʀǟӄɨռʐ.getProfilePicture(ֆǟӄʊʀǟ.sender);
@@ -615,13 +695,6 @@ ${update.desc}`,
     if (ֆǟӄʊʀǟ.isCmd) {
       var ꜱᴇɴᴅᴇʀɪᴅ = ֆǟӄʊʀǟ.sender;
       var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
-      `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
-      const gMetadata = await ӄʀǟӄɨռʐ.groupMetadata(`120363039223842047@g.us`);
-      ֆǟӄʊʀǟ.gMembers = gMetadata.participants;
-      let mem = [];
-      for (var i = 0; i < ֆǟӄʊʀǟ.gMembers.length; i++) {
-        mem[i] = ֆǟӄʊʀǟ.gMembers[i].jid;
-      }
       `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
       fs.writeFile(
         `./Sakura🛰️Server/memobject.json`,
