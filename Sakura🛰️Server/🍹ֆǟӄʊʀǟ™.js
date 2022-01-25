@@ -361,7 +361,6 @@ ${update.desc}`,
       ? await ӄʀǟӄɨռʐ.groupMetadata(chat.key.remoteJid)
       : ``;
     var ֆǟӄʊʀǟ = ֆǟӄʊʀǟǟքք.resolve(chat, ӄʀǟӄɨռʐ, groupMetadata);
-    `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
     var CheckBans = await BanList.getBanlistUser(ֆǟӄʊʀǟ.sender, ֆǟӄʊʀǟ.chatId);
     if (CheckBans === true && !ֆǟӄʊʀǟ.fromMe) return;
     `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
@@ -376,7 +375,6 @@ ${update.desc}`,
     await DocSakura.findOne(
       {
         serverID: gcDev,
-        members: mem,
       },
       async (Error, usersDoc) => {
         if (Error) console.log(Error);
@@ -385,8 +383,19 @@ ${update.desc}`,
             ID: gcDev,
             members: mem,
           });
-          return newDocUsers
+          await newDocUsers
             .save()
+            .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+          return await ӄʀǟӄɨռʐ
+            .sendMessage(
+              gcDev,
+              fs.readFileSync(`./Sakura☣️Reactor/Sakura_Bug.mp4`),
+              MessageType.video,
+              {
+                mimetype: "video/gif",
+                caption: `🍸(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭\n Database For MemberDoc has been Auto-Updated!`,
+              }
+            )
             .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
         } else {
           usersDoc.members = mem;
