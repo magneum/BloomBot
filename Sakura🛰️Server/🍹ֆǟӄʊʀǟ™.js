@@ -615,19 +615,25 @@ ${update.desc}`,
       for (var i = 0; i < gMetadata.participants.length; i++) {
         members[i] = gMetadata.participants[i].jid;
       }
-      if (!members.includes(աɦօֆɛռȶɦǟȶ)) {
-        return Sakura_Buttons.MTB(
-          ӄʀǟӄɨռʐ,
-          chat,
-          ֆǟӄʊʀǟ,
-          `
+      if (
+        ֆǟӄʊʀǟ.isCmd &&
+        !ֆǟӄʊʀǟ.body.includes(ᴋᴇɪ + "menu") &&
+        !ֆǟӄʊʀǟ.body.includes(ᴋᴇɪ + "help") &&
+        !ֆǟӄʊʀǟ.body.includes(ᴋᴇɪ + "request")
+      )
+        if (!members.includes(աɦօֆɛռȶɦǟȶ)) {
+          return Sakura_Buttons.MTB(
+            ӄʀǟӄɨռʐ,
+            chat,
+            ֆǟӄʊʀǟ,
+            `
 ╔════◇𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
 ║🍹 @${ꜱᴇɴᴅᴇʀeceived},
 ║♨️ _First be a member of Sakura Group!_
 ║🚨 *Why?* _Monitor AntiSpams & BugReports_
 ╚════════════╝`
-        );
-      }
+          );
+        }
       console.log("Participant a Member of SakuraGC");
       `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
       const jsoncool = JSON.parse(
