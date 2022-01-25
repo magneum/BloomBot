@@ -622,7 +622,7 @@ ${update.desc}`,
           ֆǟӄʊʀǟ,
           `
 ╔════◇𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
-║ @${ꜱᴇɴᴅᴇʀeceived},
+║🍹 @${ꜱᴇɴᴅᴇʀeceived},
 ║♨️ _First be a member of Sakura Group!_
 ║🚨 *Why?* _Monitor AntiSpams & BugReports_
 ╚════════════╝`
