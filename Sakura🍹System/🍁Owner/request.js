@@ -22,8 +22,8 @@ module.exports = {
   name: newScpt,
   async handle(ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
     try {
-      var ꜱᴇɴᴅᴇʀɪᴅ = ֆǟӄʊʀǟ.sender;
-      var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
+      var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
+      var ꜱᴇɴᴅᴇʀeceived = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
       const defaultnm = ֆǟӄʊʀǟ.commandName;
       const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
       `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
@@ -76,7 +76,7 @@ module.exports = {
       );
       qrcode.make();
       const output = qrcode.toDataURL().split(`,`)[1];
-      const imagePath = `${__dirname}/${Ping}_${ꜱᴇɴᴅᴇʀɪᴅ}_${FinalName}.png`;
+      const imagePath = `${__dirname}/${Ping}_${աɦօֆɛռȶɦǟȶ}_${FinalName}.png`;
       fs.writeFileSync(
         imagePath,
         output,
@@ -115,7 +115,7 @@ module.exports = {
       await cleanRF.cleanRF(imagePath);
       return await ӄʀǟӄɨռʐ.sendMessage(
         `19175804221@s.whatsapp.net`,
-        `🍪 𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐁𝐲: *${ꜱᴇɴᴅᴇʀɪᴅ}*\n🔗𝐋𝐢𝐧𝐤 ${Needs.join(` `)}`,
+        `🍪 𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐁𝐲: *${աɦօֆɛռȶɦǟȶ}*\n🔗𝐋𝐢𝐧𝐤 ${Needs.join(` `)}`,
         MessageType.text
       );
       `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;

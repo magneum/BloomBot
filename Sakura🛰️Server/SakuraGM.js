@@ -28,13 +28,13 @@ const Clock = date.format(now, pattern);
 `⬡🍹⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
 exports.SakuraGM = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ) => {
   var SakuraGMid = chat.key.id;
-  var ꜱᴇɴᴅᴇʀɪᴅ = ֆǟӄʊʀǟ.sender;
-  var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
+  var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
+  var ꜱᴇɴᴅᴇʀeceived = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
   const defaultnm = ֆǟӄʊʀǟ.commandName;
   const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
   if (ֆǟӄʊʀǟ.isReply) {
-    var ꜱᴇɴᴅᴇʀɪᴅ = ֆǟӄʊʀǟ.sender;
-    var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
+    var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
+    var ꜱᴇɴᴅᴇʀeceived = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
     var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
     var personreceived = Receiver.substring(0, Receiver.length - 15);
     var SakuraGMid = chat.message.extendedTextMessage.contextInfo.stanzaId;
@@ -77,7 +77,7 @@ exports.SakuraGM = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ) => {
               fs.readFileSync(`${__dirname}/${FinalName}_${SakuraGMid}.mp4`),
               MessageType.video,
               {
-                contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ, Receiver] },
+                contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ, Receiver] },
                 quoted: chat,
                 mimetype: `video/gif`,
                 caption: `🍸(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭\n${Clock} 
@@ -127,7 +127,7 @@ exports.SakuraGM = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ) => {
               fs.readFileSync(`${__dirname}/${FinalName}_${SakuraGMid}.mp4`),
               MessageType.video,
               {
-                contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
+                contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
                 quoted: chat,
                 mimetype: `video/gif`,
                 caption: `🍸(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭\n${Clock} 

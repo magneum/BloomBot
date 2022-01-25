@@ -33,11 +33,11 @@ module.exports = {
       if (ֆǟӄʊʀǟ.isReply) {
         var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
         var personreceived = Receiver.substring(0, Receiver.length - 15);
-        var ꜱᴇɴᴅᴇʀɪᴅ = ֆǟӄʊʀǟ.sender;
-        var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
+        var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
+        var ꜱᴇɴᴅᴇʀeceived = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
       } else {
-        var ꜱᴇɴᴅᴇʀɪᴅ = ֆǟӄʊʀǟ.sender;
-        var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
+        var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
+        var ꜱᴇɴᴅᴇʀeceived = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
       }
       const GotFile = `${__dirname}/${Ping}_${FinalName}.gif`;
       const GiveFile = `${__dirname}/${Ping}_${FinalName}.mp4`;

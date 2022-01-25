@@ -42,8 +42,8 @@ module.exports = {
       if (ֆǟӄʊʀǟ.isReply) {
         var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
         var personreceived = Receiver.substring(0, Receiver.length - 15);
-        var ꜱᴇɴᴅᴇʀɪᴅ = ֆǟӄʊʀǟ.sender;
-        var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
+        var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
+        var ꜱᴇɴᴅᴇʀeceived = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
         Economy.findOne(
           {
             ID: Receiver,
@@ -96,17 +96,17 @@ module.exports = {
         );
         `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
       } else {
-        var ꜱᴇɴᴅᴇʀɪᴅ = ֆǟӄʊʀǟ.sender;
-        var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
+        var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
+        var ꜱᴇɴᴅᴇʀeceived = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
         Economy.findOne(
           {
-            ID: ꜱᴇɴᴅᴇʀɪᴅ,
+            ID: աɦօֆɛռȶɦǟȶ,
           },
           async (Error, userEco) => {
             if (Error) console.log(Error);
             if (!userEco) {
               var newUser = new Economy({
-                ID: ꜱᴇɴᴅᴇʀɪᴅ,
+                ID: աɦօֆɛռȶɦǟȶ,
                 money: 0,
                 daily: 0,
                 timeout: 0,

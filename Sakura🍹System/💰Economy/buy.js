@@ -24,9 +24,9 @@ module.exports = {
   ֆǟӄʊʀǟӄǟɨʐօ: `*${ᴋᴇɪ}buy* _item name_`,
   async handle(ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
     try {
-      var ꜱᴇɴᴅᴇʀɪᴅ = ֆǟӄʊʀǟ.sender;
+      var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
       const defaultnm = ֆǟӄʊʀǟ.commandName;
-      var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
+      var ꜱᴇɴᴅᴇʀeceived = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
       const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
       `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
       if (!ֆǟӄʊʀǟ.isGroup) {
@@ -61,7 +61,7 @@ module.exports = {
           ӄʀǟӄɨռʐ,
           chat,
           ֆǟӄʊʀǟ,
-          ꜱᴇɴᴅᴇʀɪᴅ,
+          աɦօֆɛռȶɦǟȶ,
           ꜱᴇɴᴅᴇʀeceived,
           ֆǟӄʊʀǟ.commandName,
           ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
@@ -138,13 +138,13 @@ module.exports = {
       );
       await Economy.findOne(
         {
-          ID: ꜱᴇɴᴅᴇʀɪᴅ,
+          ID: աɦօֆɛռȶɦǟȶ,
         },
         async (Error, userEco) => {
           if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
           await Bagde.findOne(
             {
-              ID: ꜱᴇɴᴅᴇʀɪᴅ,
+              ID: աɦօֆɛռȶɦǟȶ,
             },
             async (Error, userBadge) => {
               console.log(`⬡================🛸 𝐄𝐜𝐨𝐧𝐨𝐦𝐲 🛸================⬡‍`);
@@ -154,7 +154,7 @@ module.exports = {
               if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
               if (!userEco) {
                 var newEcoUser = new Economy({
-                  ID: ꜱᴇɴᴅᴇʀɪᴅ,
+                  ID: աɦօֆɛռȶɦǟȶ,
                   money: 0,
                   daily: 0,
                   timeout: 0,
@@ -184,7 +184,7 @@ module.exports = {
                 );
               } else if (!userBadge) {
                 var newBagdeUser = new Bagde({
-                  ID: ꜱᴇɴᴅᴇʀɪᴅ,
+                  ID: աɦօֆɛռȶɦǟȶ,
                   Badge: `🧵ʙᴀꜱɪᴄ-10ᴄᴏᴍᴍᴀɴᴅꜱ`,
                   value: `True`,
                   Limits: 10,

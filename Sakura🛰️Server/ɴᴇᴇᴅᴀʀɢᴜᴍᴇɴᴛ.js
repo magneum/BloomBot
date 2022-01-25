@@ -14,7 +14,7 @@ exports.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ = async (
   ӄʀǟӄɨռʐ,
   chat,
   ֆǟӄʊʀǟ,
-  ꜱᴇɴᴅᴇʀɪᴅ,
+  աɦօֆɛռȶɦǟȶ,
   ꜱᴇɴᴅᴇʀeceived,
   commandName,
   needs

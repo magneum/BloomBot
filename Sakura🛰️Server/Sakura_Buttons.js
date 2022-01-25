@@ -21,13 +21,13 @@ const Clock = date.format(now, pattern);
 `⬡🍹⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
 const Sakura_Text_But = (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, MainText) => {
   if (ֆǟӄʊʀǟ.isReply) {
-    var ꜱᴇɴᴅᴇʀɪᴅ = ֆǟӄʊʀǟ.sender;
-    var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
+    var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
+    var ꜱᴇɴᴅᴇʀeceived = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
     var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
     var personreceived = Receiver.substring(0, Receiver.length - 15);
   } else {
-    var ꜱᴇɴᴅᴇʀɪᴅ = ֆǟӄʊʀǟ.sender;
-    var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
+    var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
+    var ꜱᴇɴᴅᴇʀeceived = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
     const defaultnm = ֆǟӄʊʀǟ.commandName;
     const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
   }
@@ -46,20 +46,20 @@ const Sakura_Text_But = (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, MainText) => {
   ӄʀǟӄɨռʐ
     .sendMessage(ֆǟӄʊʀǟ.chatId, buttonMessage, MessageType.buttonsMessage, {
       quoted: chat,
-      contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
+      contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
     })
     .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
 };
 `⬡🍹⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
 const Sakura_Image_But = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, MainText, MediaUrl) => {
   if (ֆǟӄʊʀǟ.isReply) {
-    var ꜱᴇɴᴅᴇʀɪᴅ = ֆǟӄʊʀǟ.sender;
-    var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
+    var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
+    var ꜱᴇɴᴅᴇʀeceived = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
     var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
     var personreceived = Receiver.substring(0, Receiver.length - 15);
   } else {
-    var ꜱᴇɴᴅᴇʀɪᴅ = ֆǟӄʊʀǟ.sender;
-    var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
+    var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
+    var ꜱᴇɴᴅᴇʀeceived = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
     const defaultnm = ֆǟӄʊʀǟ.commandName;
     const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
   }
@@ -88,7 +88,7 @@ const Sakura_Image_But = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, MainText, Me
       MessageType.buttonsMessage,
       {
         quoted: chat,
-        contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
+        contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
       }
     )
     .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
@@ -96,13 +96,13 @@ const Sakura_Image_But = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, MainText, Me
 `⬡🍹⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
 const Sakura_Video_But = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, MainText, MediaUrl) => {
   if (ֆǟӄʊʀǟ.isReply) {
-    var ꜱᴇɴᴅᴇʀɪᴅ = ֆǟӄʊʀǟ.sender;
-    var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
+    var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
+    var ꜱᴇɴᴅᴇʀeceived = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
     var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
     var personreceived = Receiver.substring(0, Receiver.length - 15);
   } else {
-    var ꜱᴇɴᴅᴇʀɪᴅ = ֆǟӄʊʀǟ.sender;
-    var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
+    var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
+    var ꜱᴇɴᴅᴇʀeceived = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
     const defaultnm = ֆǟӄʊʀǟ.commandName;
     const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
   }
@@ -131,7 +131,7 @@ const Sakura_Video_But = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, MainText, Me
       MessageType.buttonsMessage,
       {
         quoted: chat,
-        contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
+        contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
       }
     )
     .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
@@ -139,13 +139,13 @@ const Sakura_Video_But = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, MainText, Me
 `⬡🍹⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
 const Sakura_GIF_But = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, MainText, MediaUrl) => {
   if (ֆǟӄʊʀǟ.isReply) {
-    var ꜱᴇɴᴅᴇʀɪᴅ = ֆǟӄʊʀǟ.sender;
-    var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
+    var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
+    var ꜱᴇɴᴅᴇʀeceived = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
     var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
     var personreceived = Receiver.substring(0, Receiver.length - 15);
   } else {
-    var ꜱᴇɴᴅᴇʀɪᴅ = ֆǟӄʊʀǟ.sender;
-    var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
+    var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
+    var ꜱᴇɴᴅᴇʀeceived = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
     const defaultnm = ֆǟӄʊʀǟ.commandName;
     const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
   }
@@ -174,7 +174,7 @@ const Sakura_GIF_But = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, MainText, Medi
       MessageType.buttonsMessage,
       {
         quoted: chat,
-        contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
+        contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
       }
     )
     .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
@@ -188,13 +188,13 @@ const Sakura_VideoAudio_But = async (
   MediaUrl
 ) => {
   if (ֆǟӄʊʀǟ.isReply) {
-    var ꜱᴇɴᴅᴇʀɪᴅ = ֆǟӄʊʀǟ.sender;
-    var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
+    var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
+    var ꜱᴇɴᴅᴇʀeceived = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
     var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
     var personreceived = Receiver.substring(0, Receiver.length - 15);
   } else {
-    var ꜱᴇɴᴅᴇʀɪᴅ = ֆǟӄʊʀǟ.sender;
-    var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
+    var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
+    var ꜱᴇɴᴅᴇʀeceived = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
     const defaultnm = ֆǟӄʊʀǟ.commandName;
     const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
   }
@@ -234,13 +234,13 @@ const Sakura_Location_But = async (
   MediaUrl
 ) => {
   if (ֆǟӄʊʀǟ.isReply) {
-    var ꜱᴇɴᴅᴇʀɪᴅ = ֆǟӄʊʀǟ.sender;
-    var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
+    var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
+    var ꜱᴇɴᴅᴇʀeceived = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
     var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
     var personreceived = Receiver.substring(0, Receiver.length - 15);
   } else {
-    var ꜱᴇɴᴅᴇʀɪᴅ = ֆǟӄʊʀǟ.sender;
-    var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
+    var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
+    var ꜱᴇɴᴅᴇʀeceived = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
     const defaultnm = ֆǟӄʊʀǟ.commandName;
     const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
   }
