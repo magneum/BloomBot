@@ -69,7 +69,7 @@ if (time2 < `05:00:00`) {
 const version = vers.vers;
 `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
 var ӄʀǟӄɨռʐ = ֆǟӄʊʀǟֆʏռօք.WhatsApp;
-ӄʀǟӄɨռʐ.logger.level = `error`;
+ӄʀǟӄɨռʐ.logger.level = `Error`;
 async function ֆǟӄʊʀǟ() {
   var ꜱɪᴛʀᴀᴘ = new Map();
   var commandUsage = new Map();
@@ -372,7 +372,6 @@ ${update.desc}`,
       mem[i] = ֆǟӄʊʀǟ.gMembers[i].jid;
     }
     `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
-
     await DocSakura.findOne(
       {
         serverID: gcDev,
@@ -684,8 +683,8 @@ ${update.desc}`,
 ╚════════════╝`,
             `./Sakura☣️Reactor/Sakura_Antilink.png`
           );
-          setTimeout(async (error) => {
-            if (error) console.log(error);
+          setTimeout(async (Error) => {
+            if (Error) console.log(Error);
             await ӄʀǟӄɨռʐ
               .groupRemove(ֆǟӄʊʀǟ.chatId, [REMOVE])
               .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
@@ -699,29 +698,21 @@ ${update.desc}`,
       var ꜱᴇɴᴅᴇʀɪᴅ = ֆǟӄʊʀǟ.sender;
       var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
       `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
-      fs.writeFile(
-        `./Sakura🛰️Server/memobject.json`,
-        JSON.stringify(mem),
-        async (Error) => {
-          if (Error) return console.error(Error);
-          console.log("🍹Member List Updated!");
-        }
-      );
-      fs.readFile(
-        `./Sakura🛰️Server/memobject.json`,
-        `utf8`,
-        async (Error, memjson) => {
-          if (Error) return console.log(Error);
-          if (!memjson.includes(ֆǟӄʊʀǟ.sender)) {
+      await DocSakura.findOne(
+        {
+          serverID: gcDev,
+        },
+        async (Error, usersDoc) => {
+          if (Error) console.log(Error);
+          if (!usersDoc.members.includes(ꜱᴇɴᴅᴇʀɪᴅ)) {
             return ӄʀǟӄɨռʐ.sendMessage(
               ֆǟӄʊʀǟ.chatId,
               `
 ╔═══════ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
-║♨️ *First be a member of Sakura Group!*
+║ @${ꜱᴇɴᴅᴇʀeceived}, 
+║♨️ _First be a member of Sakura Group!_
 ║🚨 *Why?* _Monitor AntiSpams & BugReports_
-╚════════════╝
-
-🐙 𝐎𝐟𝐟𝐢𝐜𝐢𝐚𝐥: ${_𝔏𝔞𝔟_.HASH}`,
+╚════════════╝`,
               MessageType.text,
               {
                 quoted: chat,
