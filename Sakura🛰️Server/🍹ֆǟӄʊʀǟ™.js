@@ -4,7 +4,10 @@
 `|🍹|`;
 `|🍹|`;
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
+const UsersSakura = require(`../Sakura🍃Goose/experience`);
 const LinkList = require(`../Sakura🍃Goose/antilink`);
+const Economy = require(`../Sakura🍃Goose/economy`);
+const DocSakura = require(`../Sakura🍃Goose/doc`);
 const Sakura_Buttons = require(`./Sakura_Buttons`);
 const Sakura_Static = require(`./Sakura_Static`);
 const ֆǟӄʊʀǟֆʏռօք = require(`./ֆǟӄʊʀǟᴢᴇɴ`);
@@ -253,7 +256,7 @@ ${update.desc}`,
     for (var i = 0; i < GroupMetadata.participants.length; i++) {
       mem[i] = GroupMetadata.participants[i].jid;
     }
-    const DocSakura = require(`../Sakura🍃Goose/doc`);
+
     await DocSakura.findOne(
       {
         serverID: gcDev,
@@ -369,7 +372,7 @@ ${update.desc}`,
       mem[i] = ֆǟӄʊʀǟ.gMembers[i].jid;
     }
     `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
-    const DocSakura = require(`../Sakura🍃Goose/doc`);
+
     await DocSakura.findOne(
       {
         serverID: gcDev,
@@ -391,7 +394,7 @@ ${update.desc}`,
             .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
           await ӄʀǟӄɨռʐ
             .sendMessage(
-              "120363039223842047@g.us",
+              gcDev,
               fs.readFileSync(`./Sakura☣️Reactor/Sakura_Bug.mp4`),
               MessageType.video,
               {
@@ -407,7 +410,7 @@ ${update.desc}`,
     if (ֆǟӄʊʀǟ.isGroup && !ֆǟӄʊʀǟ.fromMe) {
       var ꜱᴇɴᴅᴇʀɪᴅ = ֆǟӄʊʀǟ.sender;
       var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
-      const UsersSakura = require(`../Sakura🍃Goose/experience`);
+
       let xpAdd = Math.ceil(Math.random() * 10);
       try {
         𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄʀǟӄɨռʐ.getProfilePicture(ֆǟӄʊʀǟ.sender);
@@ -463,7 +466,7 @@ ${update.desc}`,
               users.xp = users.xp + xpAdd;
               if (users.xp >= nxtlvl) {
                 users.level = currentLvl + 1;
-                const Economy = require(`../Sakura🍃Goose/economy`);
+
                 const canvas = Canvas.createCanvas(800, 300);
                 const ctx = canvas.getContext("2d");
                 const background = await Canvas.loadImage(
