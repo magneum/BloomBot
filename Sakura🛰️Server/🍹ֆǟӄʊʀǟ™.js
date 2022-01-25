@@ -322,22 +322,22 @@ const groupMetadata = sender.endsWith(`@g.us`)
 ? await ӄʀǟӄɨռʐ.groupMetadata(chat.key.remoteJid)
 : ``;
 var ֆǟӄʊʀǟ = ֆǟӄʊʀǟǟքք.resolve(chat, ӄʀǟӄɨռʐ, groupMetadata);
-var CheckBans = await BanList.getBanlistUser(ֆǟӄʊʀǟ.sender, ֆǟӄʊʀǟ.chatId);
+var ꜱᴇɴᴅᴇʀɪᴅ = ֆǟӄʊʀǟ.sender;
+var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
+var CheckBans = await BanList.getBanlistUser(ꜱᴇɴᴅᴇʀɪᴅ, ֆǟӄʊʀǟ.chatId);
 if (CheckBans === true && !ֆǟӄʊʀǟ.fromMe) return;
 `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
 if (ֆǟӄʊʀǟ.isGroup && !ֆǟӄʊʀǟ.fromMe) {
-var ꜱᴇɴᴅᴇʀɪᴅ = ֆǟӄʊʀǟ.sender;
-var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
 let xpAdd = Math.ceil(Math.random() * 10);
 try {
-𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄʀǟӄɨռʐ.getProfilePicture(ֆǟӄʊʀǟ.sender);
+𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄʀǟӄɨռʐ.getProfilePicture(ꜱᴇɴᴅᴇʀɪᴅ);
 } catch {
 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = "https://i.postimg.cc/gcw6vq3X/Npp.png";
 }
 try {
 await UsersSakura.findOne(
 {
-ID: ֆǟӄʊʀǟ.sender,
+ID: ꜱᴇɴᴅᴇʀɪᴅ,
 },
 async (Error, users) => {
 var randomMC = require("random-material-color");
@@ -346,7 +346,7 @@ var color = randomMC.getColor();
 if (Error) return console.log(Error);
 if (!users) {
 var newUsers = new UsersSakura({
-ID: ֆǟӄʊʀǟ.sender,
+ID: ꜱᴇɴᴅᴇʀɪᴅ,
 xp: xpAdd,
 level: 0,
 });
@@ -431,14 +431,14 @@ console.log("Saved!");
 try {
 Economy.findOne(
 {
-ID: ֆǟӄʊʀǟ.sender,
+ID: ꜱᴇɴᴅᴇʀɪᴅ,
 },
 async (Error, userEco) => {
 console.log(userEco);
 if (Error) return console.log(Error);
 if (!userEco) {
 var newUser = new Economy({
-ID: ֆǟӄʊʀǟ.sender,
+ID: ꜱᴇɴᴅᴇʀɪᴅ,
 money: 200,
 daily: 0,
 timeout: 86400000,
@@ -463,10 +463,10 @@ MessageType.image,
 {
 mimetype: Mimetype.jpeg,
 quoted: chat,
-contextInfo: { mentionedJid: [ֆǟӄʊʀǟ.sender] },
-caption: `✨𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬 @${ֆǟӄʊʀǟ.sender.substring(
+contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
+caption: `✨𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬 @${ꜱᴇɴᴅᴇʀɪᴅ.substring(
 0,
-ֆǟӄʊʀǟ.sender.length - 15
+ꜱᴇɴᴅᴇʀɪᴅ.length - 15
 )}, 𝐘𝐨𝐮 𝐇𝐚𝐯𝐞 𝐋𝐞𝐯𝐞𝐥𝐞𝐝 𝐔𝐏!
 
 ╔════◇📜𝐑𝐚𝐧𝐤 𝐂𝐚𝐫𝐝
@@ -510,10 +510,10 @@ MessageType.image,
 {
 mimetype: Mimetype.jpeg,
 quoted: chat,
-contextInfo: { mentionedJid: [ֆǟӄʊʀǟ.sender] },
-caption: `✨𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬 @${ֆǟӄʊʀǟ.sender.substring(
+contextInfo: { mentionedJid: [ꜱᴇɴᴅᴇʀɪᴅ] },
+caption: `✨𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬 @${ꜱᴇɴᴅᴇʀɪᴅ.substring(
 0,
-ֆǟӄʊʀǟ.sender.length - 15
+ꜱᴇɴᴅᴇʀɪᴅ.length - 15
 )}, 𝐘𝐨𝐮 𝐇𝐚𝐯𝐞 𝐋𝐞𝐯𝐞𝐥𝐞𝐝 𝐔𝐏!
 
 ╔════◇📜𝐑𝐚𝐧𝐤 𝐂𝐚𝐫𝐝
@@ -609,19 +609,14 @@ return;
 }
 `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
 if (ֆǟӄʊʀǟ.isCmd) {
-var ꜱᴇɴᴅᴇʀɪᴅ = ֆǟӄʊʀǟ.sender;
-var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
-await DocSakura.findOne(
-{
-serverID: gcDev,
-},
-async (Error, usersDoc) => {
-if (Error) return console.log(Error);
-if (!usersDoc.members.includes(ꜱᴇɴᴅᴇʀɪᴅ)) {
+const gcDev = "120363039223842047@g.us";
+const gMetadata = await ӄʀǟӄɨռʐ.groupMetadata(gcDev);
+const ֆǟӄʊʀǟgc = gMetadata.participants;
+if (!ֆǟӄʊʀǟgc.includes(ꜱᴇɴᴅᴇʀɪᴅ)) {
 return ӄʀǟӄɨռʐ.sendMessage(
 ֆǟӄʊʀǟ.chatId,
 `
-╔═══════ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
+╔════◇𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
 ║ @${ꜱᴇɴᴅᴇʀeceived},
 ║♨️ _First be a member of Sakura Group!_
 ║🚨 *Why?* _Monitor AntiSpams & BugReports_
@@ -631,12 +626,12 @@ MessageType.text,
 quoted: chat,
 }
 );
-} else {
+}
 `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
 const jsoncool = JSON.parse(
 fs.readFileSync("./Sakura🛰️Server/Coolist.json")
 );
-if (jsoncool.includes(ֆǟӄʊʀǟ.sender)) {
+if (jsoncool.includes(ꜱᴇɴᴅᴇʀɪᴅ)) {
 if (ֆǟӄʊʀǟ.fromMe) {
 return ӄʀǟӄɨռʐ.sendMessage(
 ֆǟӄʊʀǟ.chatId,
@@ -700,8 +695,7 @@ Error
 );
 }
 } else if (update && update.summary.changes) {
-var child =
-require(`child_process`).exec(`npm i --force`);
+var child = require(`child_process`).exec(`npm i --force`);
 child.stdout.pipe(process.stdout);
 child.on(`exit`, async function () {
 process.exitCode = 1;
@@ -725,8 +719,7 @@ Kolor.red(
 );
 }
 `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
-var ꜱᴇɴᴅᴇʀɪᴅ = ֆǟӄʊʀǟ.sender;
-var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
+
 const ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ = ꜱɪᴛʀᴀᴘ.get(ֆǟӄʊʀǟ.commandName);
 var Needs = ֆǟӄʊʀǟ.body.trim().split(/\s+/).slice(1);
 if (!ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ) {
@@ -754,9 +747,6 @@ Ping,
 Timers
 );
 }
-}
-}
-);
 }
 });
 }
