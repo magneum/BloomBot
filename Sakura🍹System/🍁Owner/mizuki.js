@@ -142,7 +142,7 @@ ${cpus
             contextInfo: {
               mentionedJid: [աɦօֆɛռȶɦǟȶ],
             },
-            caption: `🍸(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭
+            caption: `| (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 |
 
 ✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived}, 
 ${respon}`,

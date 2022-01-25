@@ -177,7 +177,7 @@ module.exports = {
             await ӄʀǟӄɨռʐ
               .sendMessage(
                 ֆǟӄʊʀǟ.chatId,
-                `🍸(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 \n${Clock}\n\nThe replied message should be text.`,
+                `| (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 | \n${Clock}\n\nThe replied message should be text.`,
                 MessageType.text,
                 { quoted: chat }
               )
@@ -253,7 +253,7 @@ Please use the command  *${ᴋᴇɪ}carbon <text>*  or reply to a text message w
                 await ӄʀǟӄɨռʐ
                   .sendMessage(
                     ֆǟӄʊʀǟ.chatId,
-                    `🍸(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 \n${Clock}\n\nPlease enter a valid theme.
+                    `| (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 | \n${Clock}\n\nPlease enter a valid theme.
 Do note that theme names are  *case sensitive*${ᴋᴇɪ}`,
                     MessageType.text,
                     { quoted: chat }

@@ -115,7 +115,7 @@ _This Command is Only For Groups!_!
 💞𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${groupData.participants.length}
 🍰 𝐆𝐫𝐨𝐮𝐩: https://chat.whatsapp.com/${code}
 `,
-              footerText: `🍸(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭\n${Clock}`,
+              footerText: `| (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 |\n${Clock}`,
               buttons: [
                 {
                   buttonId: `${ᴋᴇɪ}help`,
@@ -151,7 +151,7 @@ _This Command is Only For Groups!_!
 💞𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${groupData.participants.length}
 🍰 𝐆𝐫𝐨𝐮𝐩: https://chat.whatsapp.com/${code}
 `,
-              footerText: `🍸(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭\n${Clock}`,
+              footerText: `| (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 |\n${Clock}`,
               buttons: [
                 {
                   buttonId: `${ᴋᴇɪ}help`,

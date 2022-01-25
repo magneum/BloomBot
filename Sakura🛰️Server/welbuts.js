@@ -92,7 +92,7 @@ ${ᴡᴇʟᴄᴏᴍᴇʀᴛxᴛ}
 
 
 ${ꜰᴇᴛᴄʜᴇᴅᴡᴇʟᴄᴏᴍᴇ.message}`,
-          footerText: `🍸(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭\n${Clock}`,
+          footerText: `| (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 |\n${Clock}`,
           buttons: [
             {
               buttonId: `${ᴋᴇɪ}help`,

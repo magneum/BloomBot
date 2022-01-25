@@ -67,7 +67,7 @@ _If Found the report was just for fun then you will be banned by the bot!_
 
 ────★ 𝐒𝐮𝐩𝐩𝐨𝐫𝐭
 *🔥 ɢʀᴏᴜᴘ:* ${_𝔏𝔞𝔟_.HASH}`,
-            footerText: `🍸(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭\n${Clock}`,
+            footerText: `| (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 |\n${Clock}`,
             buttons: [
               {
                 buttonId: `${ᴋᴇɪ}help`,
@@ -95,7 +95,7 @@ _If Found the report was just for fun then you will be banned by the bot!_
           MessageType.video,
           {
             mimetype: `video/gif`,
-            caption: `🍸(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭\n${Clock}
+            caption: `| (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 |\n${Clock}
 
 ⚡𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
 🐞𝐑𝐞𝐩𝐨𝐫𝐭𝐞𝐝 𝐁𝐲: *${աɦօֆɛռȶɦǟȶ}*
@@ -113,7 +113,7 @@ ${Needs.join(` `)}`,
           MessageType.video,
           {
             mimetype: `video/gif`,
-            caption: `🍸(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭\n${Clock}
+            caption: `| (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 |\n${Clock}
 
 ⚡𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
 🐞𝐑𝐞𝐩𝐨𝐫𝐭𝐞𝐝 𝐁𝐲: *${աɦօֆɛռȶɦǟȶ}*
@@ -131,7 +131,7 @@ ${Needs.join(` `)}`,
           MessageType.video,
           {
             mimetype: `video/gif`,
-            caption: `🍸(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭\n${Clock}
+            caption: `| (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 |\n${Clock}
 
 ⚡𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
 🐞𝐑𝐞𝐩𝐨𝐫𝐭𝐞𝐝 𝐁𝐲: *${աɦօֆɛռȶɦǟȶ}*

@@ -112,7 +112,7 @@ module.exports = {
 ║♀️ 𝗣𝗲𝗿𝘀𝗼𝗻: @${personreceived}
 ║❗ 𝗪𝗮𝗿𝗻𝗶𝗻𝗴𝘀: Never Warned!
 ╚════════════╝`,
-                footerText: `🍸(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭\n${Clock}`,
+                footerText: `| (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 |\n${Clock}`,
                 buttons: [
                   {
                     buttonId: `${ᴋᴇɪ}help`,
@@ -148,7 +148,7 @@ module.exports = {
 ║❗ 𝗪𝗮𝗿𝗻𝗶𝗻𝗴𝘀: ${userWarn.warnings}
 ║💡 If Warnings = 3, You will be auto-removed!
 ╚════════════╝`,
-                  footerText: `🍸(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭\n${Clock}`,
+                  footerText: `| (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 |\n${Clock}`,
                   buttons: [
                     {
                       buttonId: `${ᴋᴇɪ}help`,
@@ -182,7 +182,7 @@ module.exports = {
 ║♀️ 𝗣𝗲𝗿𝘀𝗼𝗻: @${personreceived}
 ║❗ 𝗪𝗮𝗿𝗻𝗶𝗻𝗴𝘀: No Warnings!
 ╚════════════╝`,
-                  footerText: `🍸(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭\n${Clock}`,
+                  footerText: `| (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 |\n${Clock}`,
                   buttons: [
                     {
                       buttonId: `${ᴋᴇɪ}help`,

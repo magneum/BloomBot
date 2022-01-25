@@ -183,7 +183,7 @@ module.exports = {
 
 𝐁𝐮𝐭𝐭𝐨𝐧 𝐓𝐨 𝐋𝐞𝐚𝐫𝐧 𝐌𝐨𝐫𝐞👇🏻
 `.trim(),
-                          footerText: `🍸(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭\n${Clock}`,
+                          footerText: `| (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 |\n${Clock}`,
                           buttons: [
                             {
                               buttonId: `${ᴋᴇɪ}pokedex ${BasePoke.toLowerCase()}`,
