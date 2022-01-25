@@ -3,6 +3,7 @@
 `|🍹|======================================================================================================⬡  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™`;
 `|🍹|`;
 `|🍹|`;
+`|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const UsersSakura = require(`../Sakura🍃Goose/experience`);
 const LinkList = require(`../Sakura🍃Goose/antilink`);
@@ -170,7 +171,6 @@ MessageType.video,
 mimetype: `video/gif`,
 caption: `*🍹Attention Here Everyone In the Group!🍹*
 
-
 ╔═══════★
 ║⛺𝐆𝐫𝐨𝐮𝐩 𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _Admins-Only_
 ║🎪𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${groupupdateID.subject}
@@ -192,7 +192,6 @@ contextInfo: {
 mentionedJid: [tag],
 },
 caption: `*🍹Attention Here Everyone In the Group!🍹*
-
 
 ╔═══════★
 ║⛺𝐆𝐫𝐨𝐮𝐩 𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _New Description Added_
@@ -216,7 +215,6 @@ MessageType.video,
 mimetype: `video/gif`,
 caption: `*🍹Attention Here Everyone In the Group!🍹*
 
-
 ╔═══════★
 ║⛺𝐆𝐫𝐨𝐮𝐩 𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _Info Edit Allowed For All_
 ║🎪𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${groupupdateID.subject}
@@ -234,7 +232,6 @@ MessageType.video,
 {
 mimetype: `video/gif`,
 caption: `*🍹Attention Here Everyone In the Group!🍹*
-
 
 ╔═══════★
 ║⛺𝐆𝐫𝐨𝐮𝐩 𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _Info Edit Admins-Only_
@@ -750,7 +747,6 @@ Timers
 }
 });
 }
-`|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
 module.exports = { ֆǟӄʊʀǟ };
 `|🍹|`;
 `|🍹|`;
