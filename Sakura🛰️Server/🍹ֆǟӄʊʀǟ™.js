@@ -325,58 +325,6 @@ var ֆǟӄʊʀǟ = ֆǟӄʊʀǟǟքք.resolve(chat, ӄʀǟӄɨռʐ, groupMetadat
 var CheckBans = await BanList.getBanlistUser(ֆǟӄʊʀǟ.sender, ֆǟӄʊʀǟ.chatId);
 if (CheckBans === true && !ֆǟӄʊʀǟ.fromMe) return;
 `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
-const gcDev = "120363039223842047@g.us";
-const gMetadata = await ӄʀǟӄɨռʐ.groupMetadata(gcDev);
-ֆǟӄʊʀǟ.gMembers = gMetadata.participants;
-let mem = [];
-for (var i = 0; i < ֆǟӄʊʀǟ.gMembers.length; i++) {
-mem[i] = ֆǟӄʊʀǟ.gMembers[i].jid;
-}
-`|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
-await DocSakura.findOne(
-{
-serverID: gcDev,
-},
-async (Error, usersDoc) => {
-if (Error) return console.log(Error);
-if (!usersDoc) {
-var newDocUsers = new DocSakura({
-ID: gcDev,
-members: mem,
-});
-await newDocUsers
-.save()
-.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-return await ӄʀǟӄɨռʐ
-.sendMessage(
-gcDev,
-fs.readFileSync(`./Sakura☣️Reactor/Sakura_Bug.mp4`),
-MessageType.video,
-{
-mimetype: "video/gif",
-caption: `🍸(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭\n Database For MemberDoc has been Auto-Updated!`,
-}
-)
-.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-}
-usersDoc.members = mem;
-await usersDoc
-.save()
-.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-return await ӄʀǟӄɨռʐ
-.sendMessage(
-gcDev,
-fs.readFileSync(`./Sakura☣️Reactor/Sakura_Bug.mp4`),
-MessageType.video,
-{
-mimetype: "video/gif",
-caption: `🍸(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭\n Database For MemberDoc has been Auto-Updated!`,
-}
-)
-.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-}
-);
-`|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
 if (ֆǟӄʊʀǟ.isGroup && !ֆǟӄʊʀǟ.fromMe) {
 var ꜱᴇɴᴅᴇʀɪᴅ = ֆǟӄʊʀǟ.sender;
 var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
@@ -475,9 +423,7 @@ ctx.closePath();
 ctx.clip();
 const avatar = await Canvas.loadImage(𝕻𝕻𝖑𝖊𝖙𝖊𝖗);
 ctx.drawImage(avatar, 25, 50, 200, 200);
-const out = fs.createWriteStream(
-`${ꜱᴇɴᴅᴇʀeceived.toString()}.jpeg`
-);
+const out = fs.createWriteStream(`${Date.now()}.jpeg`);
 const stream = canvas.createJPEGStream();
 stream.pipe(out);
 out.on(`finish`, () => {
@@ -512,9 +458,7 @@ chat.key.remoteJid
 );
 await ӄʀǟӄɨռʐ.sendMessage(
 ֆǟӄʊʀǟ.chatId,
-fs.readFileSync(
-`${ꜱᴇɴᴅᴇʀeceived.toString()}.jpeg`
-),
+fs.readFileSync(`${Date.now()}.jpeg`),
 MessageType.image,
 {
 mimetype: Mimetype.jpeg,
@@ -525,15 +469,15 @@ caption: `✨𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬 @${ֆǟӄʊʀǟ.sender.substring(
 ֆǟӄʊʀǟ.sender.length - 15
 )}, 𝐘𝐨𝐮 𝐇𝐚𝐯𝐞 𝐋𝐞𝐯𝐞𝐥𝐞𝐝 𝐔𝐏!
 
-╔════◇ 📜𝐑𝐚𝐧𝐤 𝐂𝐚𝐫𝐝
-║🥂 𝗫𝗣: ${currentXP}
-║🍩 𝗟𝗲𝘃𝗲𝗹: ${currentLvl}
-║🎪 𝐆𝐫𝐨𝐮𝐩: ${groupDataRank.subject}
+╔════◇📜𝐑𝐚𝐧𝐤 𝐂𝐚𝐫𝐝
+║🥂 *Xp:* ${currentXP}
+║🍩 *Level:* ${currentLvl}
+║🎪 *Group:* ${groupDataRank.subject}
 ╚════════════╝
 
-╔════◇🌿𝐓𝐨𝐩𝐢𝐜: 🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐚𝐧𝐤
-║🛵 𝐑𝐚𝐧𝐤_𝐁𝐨𝐧𝐮𝐬: 200
-║🪙 𝗧𝗼𝘁𝗮𝗹_𝗕𝗮𝗹𝗮𝗻𝗰𝗲: Just Opened Your Account!
+╔════◇🌿𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐚𝐧𝐤
+║🛵 *Rank Bonus:* 200
+║🪙 *Balance:* Just Opened Your Account!
 ╚════════════╝
 
 ╔════◇🌿
@@ -542,7 +486,7 @@ caption: `✨𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬 @${ֆǟӄʊʀǟ.sender.substring(
 ╚════════════╝`,
 }
 );
-cleanRF.cleanRF(`${ꜱᴇɴᴅᴇʀeceived.toString()}.jpeg`);
+cleanRF.cleanRF(`${Date.now()}.jpeg`);
 } catch (Error) {
 console.log(Error);
 }
@@ -561,9 +505,7 @@ userEco
 );
 ӄʀǟӄɨռʐ.sendMessage(
 ֆǟӄʊʀǟ.chatId,
-fs.readFileSync(
-`${ꜱᴇɴᴅᴇʀeceived.toString()}.jpeg`
-),
+fs.readFileSync(`${Date.now()}.jpeg`),
 MessageType.image,
 {
 mimetype: Mimetype.jpeg,
@@ -574,15 +516,15 @@ caption: `✨𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬 @${ֆǟӄʊʀǟ.sender.substring(
 ֆǟӄʊʀǟ.sender.length - 15
 )}, 𝐘𝐨𝐮 𝐇𝐚𝐯𝐞 𝐋𝐞𝐯𝐞𝐥𝐞𝐝 𝐔𝐏!
 
-╔════◇ 📜𝐑𝐚𝐧𝐤 𝐂𝐚𝐫𝐝
-║🥂 𝗫𝗣: ${currentXP}
-║🍩 𝗟𝗲𝘃𝗲𝗹: ${currentLvl}
-║🎪 𝐆𝐫𝐨𝐮𝐩: ${groupDataRank.subject}
+╔════◇📜𝐑𝐚𝐧𝐤 𝐂𝐚𝐫𝐝
+║🥂 *Xp:* ${currentXP}
+║🍩 *Level:* ${currentLvl}
+║🎪 *Group:* ${groupDataRank.subject}
 ╚════════════╝
 
-╔════◇🌿𝐓𝐨𝐩𝐢𝐜: 🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐚𝐧𝐤
-║🛵 𝐑𝐚𝐧𝐤_𝐁𝐨𝐧𝐮𝐬: ${Ran}
-║🪙 𝗧𝗼𝘁𝗮𝗹_𝗕𝗮𝗹𝗮𝗻𝗰𝗲: ${userEco.money}
+╔════◇🌿𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐚𝐧𝐤
+║🛵 *Rank Bonus:* ${Ran}
+║🪙 *Balance:* ${userEco.money}
 ╚════════════╝
 
 ╔════◇🌿
@@ -591,7 +533,7 @@ caption: `✨𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬 @${ֆǟӄʊʀǟ.sender.substring(
 ╚════════════╝`,
 }
 );
-cleanRF.cleanRF(`${ꜱᴇɴᴅᴇʀeceived.toString()}.jpeg`);
+cleanRF.cleanRF(`${Date.now()}.jpeg`);
 } catch (Error) {
 console.log(Error);
 }
@@ -643,21 +585,20 @@ await Sakura_Buttons.MIB(
 chat,
 ֆǟӄʊʀǟ,
 `
-╔════🌋  𝐀𝐧𝐭𝐢𝐥𝐢𝐧𝐤 𝐓𝐫𝐢𝐠𝐠𝐞𝐫𝐞𝐝
+╔════◇🌋  𝐀𝐧𝐭𝐢𝐥𝐢𝐧𝐤 𝐓𝐫𝐢𝐠𝐠𝐞𝐫𝐞𝐝
 ║🔻 𝗣𝘂𝗻𝗶𝘀𝗵𝗺𝗲𝗻𝘁: _You Will Be Kicked!_
 ║🔻 𝗞𝗶𝗰𝗸-𝗧𝗶𝗺𝗲: _6sec_
 ╚════════════╝
 
-╔════🤖 𝗩𝗲𝗿𝗶𝗳𝘆
+╔════◇🤖 𝗩𝗲𝗿𝗶𝗳𝘆
 ║🍃 𝗜𝘀-𝗚𝗿𝗼𝘂𝗽: _(Yes)_
 ║🍃 𝗡𝗼𝗻-𝗔𝗱𝗺𝗶𝗻: _(Yes)_
 ║🍃 𝗙𝗿𝗼𝗺: _(id-${REMOVE})_
 ╚════════════╝`,
 `./Sakura☣️Reactor/Sakura_Antilink.png`
 );
-setTimeout(async (Error) => {
-if (Error) return console.log(Error);
-await ӄʀǟӄɨռʐ
+setTimeout(() => {
+ӄʀǟӄɨռʐ
 .groupRemove(ֆǟӄʊʀǟ.chatId, [REMOVE])
 .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
 }, 6000);
