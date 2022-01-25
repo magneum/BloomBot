@@ -609,6 +609,7 @@ if (ֆǟӄʊʀǟ.isCmd) {
 const gcDev = "120363039223842047@g.us";
 const gMetadata = await ӄʀǟӄɨռʐ.groupMetadata(gcDev);
 const ֆǟӄʊʀǟgc = gMetadata.participants;
+console.log(ֆǟӄʊʀǟgc)
 if (!ֆǟӄʊʀǟgc.includes(ꜱᴇɴᴅᴇʀɪᴅ)) {
 return ӄʀǟӄɨռʐ.sendMessage(
 ֆǟӄʊʀǟ.chatId,
