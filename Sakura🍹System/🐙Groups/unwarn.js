@@ -87,9 +87,7 @@ module.exports = {
       }
       `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
       if (ֆǟӄʊʀǟ.isReply) {
-        var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
-        var personreceived = Receiver.substring(0, Receiver.length - 15);
-        if (ֆǟӄʊʀǟ.owner === Receiver) {
+        if (ֆǟӄʊʀǟ.owner === ֆǟӄʊʀǟ.replyParticipant) {
           return Sakura_Buttons.MTB(
             ӄʀǟӄɨռʐ,
             chat,
@@ -100,7 +98,7 @@ module.exports = {
         `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
         Warning.findOne(
           {
-            ID: Receiver,
+            ID: ֆǟӄʊʀǟ.replyParticipant,
             ServerID: ֆǟӄʊʀǟ.chatId,
           },
           async (Error, userWarn) => {
@@ -109,7 +107,7 @@ module.exports = {
               const buttonMessage = {
                 contentText: `
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-║♀️ 𝗣𝗲𝗿𝘀𝗼𝗻: @${personreceived}
+║♀️ 𝗣𝗲𝗿𝘀𝗼𝗻: @${ֆǟӄʊʀǟ.replyParticipant}
 ║❗ 𝗪𝗮𝗿𝗻𝗶𝗻𝗴𝘀: Never Warned!
 ╚════════════╝`,
                 footerText: `| (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 |\n${Clock}`,
@@ -144,7 +142,7 @@ module.exports = {
                 const buttonMessage = {
                   contentText: `
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-║♀️ 𝗣𝗲𝗿𝘀𝗼𝗻: @${personreceived}
+║♀️ 𝗣𝗲𝗿𝘀𝗼𝗻: @${ֆǟӄʊʀǟ.replyParticipant}
 ║❗ 𝗪𝗮𝗿𝗻𝗶𝗻𝗴𝘀: ${userWarn.warnings}
 ║💡 If Warnings = 3, You will be auto-removed!
 ╚════════════╝`,
@@ -179,7 +177,7 @@ module.exports = {
                 const buttonMessage = {
                   contentText: `
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-║♀️ 𝗣𝗲𝗿𝘀𝗼𝗻: @${personreceived}
+║♀️ 𝗣𝗲𝗿𝘀𝗼𝗻: @${ֆǟӄʊʀǟ.replyParticipant}
 ║❗ 𝗪𝗮𝗿𝗻𝗶𝗻𝗴𝘀: No Warnings!
 ╚════════════╝`,
                   footerText: `| (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 |\n${Clock}`,
