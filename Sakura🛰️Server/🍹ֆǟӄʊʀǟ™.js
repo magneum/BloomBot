@@ -256,10 +256,10 @@ ${update.desc}`,
     for (var i = 0; i < GroupMetadata.participants.length; i++) {
       mem[i] = GroupMetadata.participants[i].jid;
     }
-
     await DocSakura.findOne(
       {
         serverID: gcDev,
+        members: mem,
       },
       async (Error, usersDoc) => {
         if (Error) console.log(Error);
@@ -270,6 +270,7 @@ ${update.desc}`,
           });
           await newDocUsers.save().catch((Error) => console.log(Error));
         } else {
+          usersDoc.serverID = gcDev;
           usersDoc.members = mem;
           await usersDoc.save().catch((Error) => console.log(Error));
           await ӄʀǟӄɨռʐ
@@ -375,6 +376,7 @@ ${update.desc}`,
     await DocSakura.findOne(
       {
         serverID: gcDev,
+        members: mem,
       },
       async (Error, usersDoc) => {
         if (Error) console.log(Error);
@@ -701,6 +703,7 @@ ${update.desc}`,
       await DocSakura.findOne(
         {
           serverID: gcDev,
+          members: mem,
         },
         async (Error, usersDoc) => {
           if (Error) console.log(Error);
