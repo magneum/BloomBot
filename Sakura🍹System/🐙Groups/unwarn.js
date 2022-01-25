@@ -84,10 +84,9 @@ module.exports = {
           ֆǟӄʊʀǟ.commandName,
           ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
         );
-      }
-      `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
-      if (ֆǟӄʊʀǟ.isReply) {
-        if (ֆǟӄʊʀǟ.owner === ֆǟӄʊʀǟ.replyParticipant) {
+      } else if (ֆǟӄʊʀǟ.isReply) {
+        var person = ֆǟӄʊʀǟ.replyParticipant;
+        if (ֆǟӄʊʀǟ.owner === person) {
           return Sakura_Buttons.MTB(
             ӄʀǟӄɨռʐ,
             chat,
@@ -98,40 +97,22 @@ module.exports = {
         `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
         Warning.findOne(
           {
-            ID: ֆǟӄʊʀǟ.replyParticipant,
+            ID: person,
             ServerID: ֆǟӄʊʀǟ.chatId,
           },
           async (Error, userWarn) => {
             if (Error) return console.log(Error);
             if (!userWarn) {
-              const buttonMessage = {
-                contentText: `
+              return Sakura_Buttons.MTB(
+                ӄʀǟӄɨռʐ,
+                chat,
+                ֆǟӄʊʀǟ,
+                `
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-║♀️ 𝗣𝗲𝗿𝘀𝗼𝗻: @${ֆǟӄʊʀǟ.replyParticipant}
+║♀️ 𝗣𝗲𝗿𝘀𝗼𝗻: @${person}
 ║❗ 𝗪𝗮𝗿𝗻𝗶𝗻𝗴𝘀: Never Warned!
-╚════════════╝`,
-                footerText: `| (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 |\n${Clock}`,
-                buttons: [
-                  {
-                    buttonId: `${ᴋᴇɪ}help`,
-                    buttonText: { displayText: `${ᴋᴇɪ}help` },
-                    type: 1,
-                  },
-                ],
-                headerType: 1,
-              };
-              await ӄʀǟӄɨռʐ
-                .sendMessage(
-                  ֆǟӄʊʀǟ.chatId,
-                  buttonMessage,
-                  MessageType.buttonsMessage,
-                  {
-                    quoted: chat,
-                    contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
-                  }
-                )
-                .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-              return;
+╚════════════╝`
+              ).catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
               `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
             } else {
               if (userWarn.warnings > 0) {
@@ -139,75 +120,52 @@ module.exports = {
                 await userWarn
                   .save()
                   .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-                const buttonMessage = {
-                  contentText: `
+                return Sakura_Buttons.MTB(
+                  ӄʀǟӄɨռʐ,
+                  chat,
+                  ֆǟӄʊʀǟ,
+                  `
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-║♀️ 𝗣𝗲𝗿𝘀𝗼𝗻: @${ֆǟӄʊʀǟ.replyParticipant}
+║♀️ 𝗣𝗲𝗿𝘀𝗼𝗻: @${person}
 ║❗ 𝗪𝗮𝗿𝗻𝗶𝗻𝗴𝘀: ${userWarn.warnings}
-║💡 If Warnings = 3, You will be auto-removed!
-╚════════════╝`,
-                  footerText: `| (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 |\n${Clock}`,
-                  buttons: [
-                    {
-                      buttonId: `${ᴋᴇɪ}help`,
-                      buttonText: { displayText: `${ᴋᴇɪ}help` },
-                      type: 1,
-                    },
-                  ],
-                  headerType: 1,
-                };
-                await ӄʀǟӄɨռʐ
-                  .sendMessage(
-                    ֆǟӄʊʀǟ.chatId,
-                    buttonMessage,
-                    MessageType.buttonsMessage,
-                    {
-                      quoted: chat,
-                      contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
-                    }
-                  )
-                  .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-                return;
+╚════════════╝`
+                ).catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
               }
               `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
               if (userWarn.warnings == 0) {
-                await userWarn
+                Sakura_Buttons.MTB(
+                  ӄʀǟӄɨռʐ,
+                  chat,
+                  ֆǟӄʊʀǟ,
+                  `
+╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+║♀️ 𝗣𝗲𝗿𝘀𝗼𝗻: @${person}
+║❗ 𝗪𝗮𝗿𝗻𝗶𝗻𝗴𝘀: No Warnings!
+╚════════════╝`
+                ).catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+                return await userWarn
                   .delete()
                   .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-                const buttonMessage = {
-                  contentText: `
-╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-║♀️ 𝗣𝗲𝗿𝘀𝗼𝗻: @${ֆǟӄʊʀǟ.replyParticipant}
-║❗ 𝗪𝗮𝗿𝗻𝗶𝗻𝗴𝘀: No Warnings!
-╚════════════╝`,
-                  footerText: `| (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 |\n${Clock}`,
-                  buttons: [
-                    {
-                      buttonId: `${ᴋᴇɪ}help`,
-                      buttonText: { displayText: `${ᴋᴇɪ}help` },
-                      type: 1,
-                    },
-                  ],
-                  headerType: 1,
-                };
-                await ӄʀǟӄɨռʐ
-                  .sendMessage(
-                    ֆǟӄʊʀǟ.chatId,
-                    buttonMessage,
-                    MessageType.buttonsMessage,
-                    {
-                      quoted: chat,
-                      contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
-                    }
-                  )
-                  .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-                return;
               }
             }
           }
         );
+        `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
+      } else {
+        var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(ֆǟӄʊʀǟ.commandName);
+        var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
+          𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ === undefined ? `Null` : 𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ;
+        const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../Sakura🛰️Server/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
+        return ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
+          ӄʀǟӄɨռʐ,
+          chat,
+          ֆǟӄʊʀǟ,
+          աɦօֆɛռȶɦǟȶ,
+          ꜱᴇɴᴅᴇʀeceived,
+          ֆǟӄʊʀǟ.commandName,
+          ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
+        );
       }
-      `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
     } catch (Error) {
       ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
       return;

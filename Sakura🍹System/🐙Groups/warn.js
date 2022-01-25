@@ -150,7 +150,6 @@ module.exports = {
 ║❗ 𝗪𝗮𝗿𝗻𝗶𝗻𝗴𝘀: ${userWarn.warnings}
 ╚════════════╝`
                   ).catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-
                   await ӄʀǟӄɨռʐ
                     .groupRemove(ֆǟӄʊʀǟ.chatId, [person])
                     .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
