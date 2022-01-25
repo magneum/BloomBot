@@ -40,34 +40,26 @@ module.exports = {
       hold.Hold(ֆǟӄʊʀǟ);
       `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
       if (ֆǟӄʊʀǟ.isGroup && !ֆǟӄʊʀǟ.isBotGroupAdmin) {
-        try {
-          return Sakura_Buttons.MTB(
-            ӄʀǟӄɨռʐ,
-            chat,
-            ֆǟӄʊʀǟ,
-            `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived}, 
+        return Sakura_Buttons.MTB(
+          ӄʀǟӄɨռʐ,
+          chat,
+          ֆǟӄʊʀǟ,
+          `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived}, 
 
 ❌ How Can I Use Admin Only Commands If i am not admin?
 💡𝐅𝐢𝐱: Make Me Admin First`,
-            _𝔏𝔞𝔟_.ɴᴏᴛᴍᴇᴀᴅᴍɪɴ
-          );
-        } catch (Error) {
-          ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
-        }
+          _𝔏𝔞𝔟_.ɴᴏᴛᴍᴇᴀᴅᴍɪɴ
+        );
       }
       `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
       if (ֆǟӄʊʀǟ.isGroup && !ֆǟӄʊʀǟ.isSenderGroupAdmin) {
-        try {
-          return Sakura_Buttons.MIB(
-            ӄʀǟӄɨռʐ,
-            chat,
-            ֆǟӄʊʀǟ,
-            `*❌ Admins Only | You Are Not Allowed! ❌*`,
-            _𝔏𝔞𝔟_.ɴᴏᴛᴀᴅᴍɪɴ
-          );
-        } catch (Error) {
-          ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
-        }
+        return Sakura_Buttons.MIB(
+          ӄʀǟӄɨռʐ,
+          chat,
+          ֆǟӄʊʀǟ,
+          `*❌ Admins Only | You Are Not Allowed! ❌*`,
+          _𝔏𝔞𝔟_.ɴᴏᴛᴀᴅᴍɪɴ
+        );
       }
       `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
       if (!ֆǟӄʊʀǟ.isReply) {
@@ -84,10 +76,9 @@ module.exports = {
           ֆǟӄʊʀǟ.commandName,
           ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
         );
-      }
-      `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
-      if (ֆǟӄʊʀǟ.isReply) {
-        if (ֆǟӄʊʀǟ.owner === ֆǟӄʊʀǟ.replyParticipant) {
+      } else if (ֆǟӄʊʀǟ.isReply) {
+        var person = ֆǟӄʊʀǟ.replyParticipant;
+        if (ֆǟӄʊʀǟ.owner === person) {
           return Sakura_Buttons.MTB(
             ӄʀǟӄɨռʐ,
             chat,
@@ -96,47 +87,28 @@ module.exports = {
           );
         }
         `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
-        if (ֆǟӄʊʀǟ.groupAdmins.includes(ֆǟӄʊʀǟ.replyParticipant)) {
+        if (ֆǟӄʊʀǟ.groupAdmins.includes(person)) {
           return Sakura_Buttons.MTB(
             ӄʀǟӄɨռʐ,
             chat,
             ֆǟӄʊʀǟ,
             `*❌ Group Admins Can't Be Warned!*`
           );
-        }
-        `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
-        Warning.findOne(
-          {
-            ID: ֆǟӄʊʀǟ.replyParticipant,
-            ServerID: ֆǟӄʊʀǟ.chatId,
-          },
-          async (Error, userWarn) => {
-            if (Error) return console.log(Error);
-            if (!userWarn) {
-              var newWarnUser = new Warning({
-                ID: ֆǟӄʊʀǟ.replyParticipant,
-                ServerID: ֆǟӄʊʀǟ.chatId,
-                warnings: 1,
-              });
-              await newWarnUser
-                .save()
-                .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-              return Sakura_Buttons.MTB(
-                ӄʀǟӄɨռʐ,
-                chat,
-                ֆǟӄʊʀǟ,
-                `
-╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-║♀️ 𝗣𝗲𝗿𝘀𝗼𝗻: @${ֆǟӄʊʀǟ.replyParticipant}
-║❗ 𝗪𝗮𝗿𝗻𝗶𝗻𝗴𝘀: 1
-║💡 *Warnings 3?* You will be Removed!
-╚════════════╝`
-              ).catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-              `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
-            } else {
-              if (userWarn.warnings < 4) {
-                userWarn.warnings = userWarn.warnings + 1;
-                await userEco
+        } else {
+          await Warning.findOne(
+            {
+              ID: person,
+              ServerID: ֆǟӄʊʀǟ.chatId,
+            },
+            async (Error, userWarn) => {
+              if (Error) return console.log(Error);
+              if (!userWarn) {
+                var newWarnUser = new Warning({
+                  ID: person,
+                  ServerID: ֆǟӄʊʀǟ.chatId,
+                  warnings: 1,
+                });
+                await newWarnUser
                   .save()
                   .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
                 return Sakura_Buttons.MTB(
@@ -145,37 +117,67 @@ module.exports = {
                   ֆǟӄʊʀǟ,
                   `
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-║♀️ 𝗣𝗲𝗿𝘀𝗼𝗻: @${ֆǟӄʊʀǟ.replyParticipant}
-║❗ 𝗪𝗮𝗿𝗻𝗶𝗻𝗴𝘀: ${userWarn.warnings}
-║💡 *Warnings 3?* You will be Removed!
+║♀️ 𝗣𝗲𝗿𝘀𝗼𝗻: @${person}
+║❗ 𝗪𝗮𝗿𝗻𝗶𝗻𝗴𝘀: 1
 ╚════════════╝`
                 ).catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-              }
-              `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
-              if (userWarn.warnings == 3) {
-                Sakura_Buttons.MTB(
-                  ӄʀǟӄɨռʐ,
-                  chat,
-                  ֆǟӄʊʀǟ,
-                  `
+              } else {
+                console.log(userWarn);
+                if (userWarn.warnings < 3) {
+                  userWarn.warnings = userWarn.warnings + 1;
+                  await userWarn
+                    .save()
+                    .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+                  return Sakura_Buttons.MTB(
+                    ӄʀǟӄɨռʐ,
+                    chat,
+                    ֆǟӄʊʀǟ,
+                    `
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-║♀️ 𝗣𝗲𝗿𝘀𝗼𝗻: @${ֆǟӄʊʀǟ.replyParticipant}
+║♀️ 𝗣𝗲𝗿𝘀𝗼𝗻: @${person}
 ║❗ 𝗪𝗮𝗿𝗻𝗶𝗻𝗴𝘀: ${userWarn.warnings}
-║💡 You Will be Removed!
 ╚════════════╝`
-                ).catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-                await userEco
-                  .delete()
-                  .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-                return await ӄʀǟӄɨռʐ
-                  .groupRemove(ֆǟӄʊʀǟ.chatId, [ֆǟӄʊʀǟ.replyParticipant])
-                  .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+                  ).catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+                }
+                if (userWarn.warnings > 3) {
+                  Sakura_Buttons.MTB(
+                    ӄʀǟӄɨռʐ,
+                    chat,
+                    ֆǟӄʊʀǟ,
+                    `
+╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+║♀️ 𝗣𝗲𝗿𝘀𝗼𝗻: @${person}
+║❗ 𝗪𝗮𝗿𝗻𝗶𝗻𝗴𝘀: ${userWarn.warnings}
+╚════════════╝`
+                  ).catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+
+                  await ӄʀǟӄɨռʐ
+                    .groupRemove(ֆǟӄʊʀǟ.chatId, [person])
+                    .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+                  return await userWarn
+                    .delete()
+                    .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+                }
               }
             }
-          }
+          );
+        }
+        `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
+      } else {
+        var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(ֆǟӄʊʀǟ.commandName);
+        var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
+          𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ === undefined ? `Null` : 𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ;
+        const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../Sakura🛰️Server/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
+        return ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
+          ӄʀǟӄɨռʐ,
+          chat,
+          ֆǟӄʊʀǟ,
+          աɦօֆɛռȶɦǟȶ,
+          ꜱᴇɴᴅᴇʀeceived,
+          ֆǟӄʊʀǟ.commandName,
+          ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
         );
       }
-      `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
     } catch (Error) {
       ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
       return;

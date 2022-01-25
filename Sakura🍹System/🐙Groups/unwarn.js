@@ -136,7 +136,7 @@ module.exports = {
             } else {
               if (userWarn.warnings > 0) {
                 userWarn.warnings = userWarn.warnings - 1;
-                await userEco
+                await userWarn
                   .save()
                   .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
                 const buttonMessage = {
@@ -171,7 +171,7 @@ module.exports = {
               }
               `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
               if (userWarn.warnings == 0) {
-                await userEco
+                await userWarn
                   .delete()
                   .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
                 const buttonMessage = {
