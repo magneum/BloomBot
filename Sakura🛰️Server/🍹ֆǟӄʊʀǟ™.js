@@ -416,11 +416,12 @@ ${update.desc}`,
                 ctx.clip();
                 const avatar = await Canvas.loadImage(𝕻𝕻𝖑𝖊𝖙𝖊𝖗);
                 ctx.drawImage(avatar, 25, 50, 200, 200);
-                const out = fs.createWriteStream(`${Date.now()}.jpeg`);
+                const out = fs.createWriteStream(
+                  `${աɦօֆɛռȶɦǟȶ.toString()}.jpeg`
+                );
                 const stream = canvas.createJPEGStream();
                 stream.pipe(out);
                 out.on(`finish`, () => {
-                  console.log("Saved!");
                   try {
                     Economy.findOne(
                       {
@@ -449,18 +450,21 @@ ${update.desc}`,
                             var groupDataRank = await ӄʀǟӄɨռʐ.groupMetadata(
                               chat.key.remoteJid
                             );
-                            await ӄʀǟӄɨռʐ.sendMessage(
-                              ֆǟӄʊʀǟ.chatId,
-                              fs.readFileSync(`${Date.now()}.jpeg`),
-                              MessageType.image,
-                              {
-                                mimetype: Mimetype.jpeg,
-                                quoted: chat,
-                                contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
-                                caption: `✨𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬 @${աɦօֆɛռȶɦǟȶ.substring(
-                                  0,
-                                  աɦօֆɛռȶɦǟȶ.length - 15
-                                )}, 𝐘𝐨𝐮 𝐇𝐚𝐯𝐞 𝐋𝐞𝐯𝐞𝐥𝐞𝐝 𝐔𝐏!
+                            await ӄʀǟӄɨռʐ
+                              .sendMessage(
+                                ֆǟӄʊʀǟ.chatId,
+                                fs.readFileSync(
+                                  `${աɦօֆɛռȶɦǟȶ.toString()}.jpeg`
+                                ),
+                                MessageType.image,
+                                {
+                                  mimetype: Mimetype.jpeg,
+                                  quoted: chat,
+                                  contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
+                                  caption: `✨𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬 @${աɦօֆɛռȶɦǟȶ.substring(
+                                    0,
+                                    աɦօֆɛռȶɦǟȶ.length - 15
+                                  )}, 𝐘𝐨𝐮 𝐇𝐚𝐯𝐞 𝐋𝐞𝐯𝐞𝐥𝐞𝐝 𝐔𝐏!
 
 ╔════◇📜𝐑𝐚𝐧𝐤 𝐂𝐚𝐫𝐝
 ║🥂 *Xp:* ${currentXP}
@@ -477,9 +481,11 @@ ${update.desc}`,
 ║🎉The More You Talk, The More 𝐗𝐏+𝐂𝐨𝐢𝐧𝐬 You Gain.
 ║🎉You Can Spend The Coins in ${ᴋᴇɪ}store!
 ╚════════════╝`,
-                              }
-                            );
-                            cleanRF.cleanRF(`${Date.now()}.jpeg`);
+                                }
+                              )
+                              .then(
+                                cleanRF.cleanRF(`${աɦօֆɛռȶɦǟȶ.toString()}.jpeg`)
+                              );
                           } catch (Error) {
                             console.log(Error);
                           }
@@ -491,23 +497,26 @@ ${update.desc}`,
                             var Ran =
                               Math.floor(Math.random() * (100 - 50 + 1)) + 50;
                             userEco.money = userEco.money + Ran;
-                            userEco
+                            await userEco
                               .save()
                               .catch((Error) =>
                                 ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
                               );
-                            ӄʀǟӄɨռʐ.sendMessage(
-                              ֆǟӄʊʀǟ.chatId,
-                              fs.readFileSync(`${Date.now()}.jpeg`),
-                              MessageType.image,
-                              {
-                                mimetype: Mimetype.jpeg,
-                                quoted: chat,
-                                contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
-                                caption: `✨𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬 @${աɦօֆɛռȶɦǟȶ.substring(
-                                  0,
-                                  աɦօֆɛռȶɦǟȶ.length - 15
-                                )}, 𝐘𝐨𝐮 𝐇𝐚𝐯𝐞 𝐋𝐞𝐯𝐞𝐥𝐞𝐝 𝐔𝐏!
+                            await ӄʀǟӄɨռʐ
+                              .sendMessage(
+                                ֆǟӄʊʀǟ.chatId,
+                                fs.readFileSync(
+                                  `${աɦօֆɛռȶɦǟȶ.toString()}.jpeg`
+                                ),
+                                MessageType.image,
+                                {
+                                  mimetype: Mimetype.jpeg,
+                                  quoted: chat,
+                                  contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
+                                  caption: `✨𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬 @${աɦօֆɛռȶɦǟȶ.substring(
+                                    0,
+                                    աɦօֆɛռȶɦǟȶ.length - 15
+                                  )}, 𝐘𝐨𝐮 𝐇𝐚𝐯𝐞 𝐋𝐞𝐯𝐞𝐥𝐞𝐝 𝐔𝐏!
 
 ╔════◇📜𝐑𝐚𝐧𝐤 𝐂𝐚𝐫𝐝
 ║🥂 *Xp:* ${currentXP}
@@ -524,9 +533,11 @@ ${update.desc}`,
 ║🎉The More You Talk, The More 𝐗𝐏+𝐂𝐨𝐢𝐧𝐬 You Gain.
 ║🎉You Can Spend The Coins in ${ᴋᴇɪ}store!
 ╚════════════╝`,
-                              }
-                            );
-                            cleanRF.cleanRF(`${Date.now()}.jpeg`);
+                                }
+                              )
+                              .then(
+                                cleanRF.cleanRF(`${աɦօֆɛռȶɦǟȶ.toString()}.jpeg`)
+                              );
                           } catch (Error) {
                             console.log(Error);
                           }
