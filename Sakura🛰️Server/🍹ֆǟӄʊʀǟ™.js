@@ -712,7 +712,6 @@ ${update.desc}`,
       await DocSakura.findOne(
         {
           serverID: gcDev,
-          members: mem,
         },
         async (Error, usersDoc) => {
           if (Error) console.log(Error);
