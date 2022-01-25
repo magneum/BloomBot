@@ -320,8 +320,6 @@ ${update.desc}`,
     var ֆǟӄʊʀǟ = ֆǟӄʊʀǟǟքք.resolve(chat, ӄʀǟӄɨռʐ, groupMetadata);
     var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
     var ꜱᴇɴᴅᴇʀeceived = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
-    var CheckBans = await BanList.getBanlistUser(աɦօֆɛռȶɦǟȶ, ֆǟӄʊʀǟ.chatId);
-    if (CheckBans === true && !ֆǟӄʊʀǟ.fromMe) return;
     console.log(
       Kolor.green(
         `|⬡=========================⬡|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |⬡=========================⬡|`
@@ -609,6 +607,8 @@ ${update.desc}`,
     }
     `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
     if (ֆǟӄʊʀǟ.isCmd) {
+      var CheckBans = await BanList.getBanlistUser(աɦօֆɛռȶɦǟȶ, ֆǟӄʊʀǟ.chatId);
+      if (CheckBans === true && !ֆǟӄʊʀǟ.fromMe) return;
       const gcDev = "120363039223842047@g.us";
       const gMetadata = await ӄʀǟӄɨռʐ.groupMetadata(gcDev);
       let members = [];
@@ -617,7 +617,6 @@ ${update.desc}`,
       }
       if (
         ֆǟӄʊʀǟ.isCmd &&
-        !ֆǟӄʊʀǟ.body.includes(ᴋᴇɪ + "menu") &&
         !ֆǟӄʊʀǟ.body.includes(ᴋᴇɪ + "help") &&
         !ֆǟӄʊʀǟ.body.includes(ᴋᴇɪ + "request")
       )
