@@ -385,7 +385,7 @@ ${update.desc}`,
             ID: gcDev,
             members: mem,
           });
-          newDocUsers
+          return newDocUsers
             .save()
             .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
         } else {
