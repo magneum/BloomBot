@@ -62,7 +62,7 @@ module.exports = {
         );
       }
       `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
-      if (!ֆǟӄʊʀǟ.isReply) {
+      if (ֆǟӄʊʀǟ.isGroup && !ֆǟӄʊʀǟ.isReply) {
         var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(ֆǟӄʊʀǟ.commandName);
         var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
           𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ === undefined ? `Null` : 𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ;
@@ -76,38 +76,55 @@ module.exports = {
           ֆǟӄʊʀǟ.commandName,
           ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
         );
-      } else if (ֆǟӄʊʀǟ.isReply) {
-        var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
-        var personreceived = Receiver.substring(0, Receiver.length - 15);
-        if (ֆǟӄʊʀǟ.owner === Receiver) {
-          return Sakura_Buttons.MTB(
+      }
+      `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
+      if (ֆǟӄʊʀǟ.isGroup && ֆǟӄʊʀǟ.isReply) {
+        let owner = ֆǟӄʊʀǟ.chatId.split(`-`)[0];
+        let PersonToWarn =
+          chat.message.extendedTextMessage.contextInfo.participant;
+        if (PersonToWarn === owner + `@s.whatsapp.net`) {
+          return Sakura_Static.MGS(
             ӄʀǟӄɨռʐ,
             chat,
             ֆǟӄʊʀǟ,
-            `*❌ Owner Can't Be Warned!*`
+            `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived},
+
+╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+║❌ Group Admin Can't Be Warned!*
+╚════════════╝`,
+            `./Sakura☣️Reactor/ֆǟӄʊʀǟ™.mp4`
           );
         }
         `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
-        if (ֆǟӄʊʀǟ.groupAdmins.includes(Receiver)) {
-          return Sakura_Buttons.MTB(
+        if (PersonToWarn === ֆǟӄʊʀǟ.owner) {
+          return Sakura_Static.MGS(
             ӄʀǟӄɨռʐ,
             chat,
             ֆǟӄʊʀǟ,
-            `*❌ Group Admins Can't Be Warned!*`
+            `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived},
+
+
+╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+║😤 *Warn Rejected*
+║❌ *Owner Can't Be Warned!*
+╚════════════╝`,
+            `./Sakura☣️Reactor/ֆǟӄʊʀǟ™.mp4`
           );
-        } else {
-          await Warning.findOne(
+        }
+        `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
+        if (PersonToWarn) {
+          Warning.findOne(
             {
-              ID: Receiver,
+              ID: PersonToWarn,
               ServerID: ֆǟӄʊʀǟ.chatId,
             },
             async (Error, userWarn) => {
-              if (Error) return console.log(Error);
+              if (Error) console.log(Error);
               if (!userWarn) {
                 var newWarnUser = new Warning({
-                  ID: Receiver,
+                  ID: PersonToWarn,
                   ServerID: ֆǟӄʊʀǟ.chatId,
-                  warnings: 1,
+                  warns: 1,
                 });
                 await newWarnUser
                   .save()
@@ -118,14 +135,14 @@ module.exports = {
                   ֆǟӄʊʀǟ,
                   `
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-║♀️ 𝗣𝗲𝗿𝘀𝗼𝗻: @${Receiver}
 ║❗ 𝗪𝗮𝗿𝗻𝗶𝗻𝗴𝘀: 1
+║♀️ 𝗥𝗲𝗺𝗲𝗺𝗯𝗲𝗿: _warns>3 = kick_
 ╚════════════╝`
                 ).catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
               } else {
                 console.log(userWarn);
-                if (userWarn.warnings < 3) {
-                  userWarn.warnings = userWarn.warnings + 1;
+                if (userWarn.warns < 3) {
+                  userWarn.warns = userWarn.warns + 1;
                   await userWarn
                     .save()
                     .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
@@ -135,24 +152,25 @@ module.exports = {
                     ֆǟӄʊʀǟ,
                     `
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-║♀️ 𝗣𝗲𝗿𝘀𝗼𝗻: @${Receiver}
-║❗ 𝗪𝗮𝗿𝗻𝗶𝗻𝗴𝘀: ${userWarn.warnings}
+║❗ 𝗪𝗮𝗿𝗻𝗶𝗻𝗴𝘀: ${userWarn.warns}
+║♀️ 𝗥𝗲𝗺𝗲𝗺𝗯𝗲𝗿: _warns>3 = kick_
 ╚════════════╝`
                   ).catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
                 }
-                if (userWarn.warnings > 3) {
+                `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
+                if (userWarn.warns > 3) {
                   Sakura_Buttons.MTB(
                     ӄʀǟӄɨռʐ,
                     chat,
                     ֆǟӄʊʀǟ,
                     `
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-║♀️ 𝗣𝗲𝗿𝘀𝗼𝗻: @${Receiver}
-║❗ 𝗪𝗮𝗿𝗻𝗶𝗻𝗴𝘀: ${userWarn.warnings}
+║❗ 𝗪𝗮𝗿𝗻𝗶𝗻𝗴𝘀: ${userWarn.warns}
+║♀️ 𝗥𝗲𝗺𝗲𝗺𝗯𝗲𝗿: _warns>3 = kick_
 ╚════════════╝`
                   ).catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
                   await ӄʀǟӄɨռʐ
-                    .groupRemove(ֆǟӄʊʀǟ.chatId, [Receiver])
+                    .groupRemove(ֆǟӄʊʀǟ.chatId, [PersonToWarn])
                     .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
                   return await userWarn
                     .delete()
