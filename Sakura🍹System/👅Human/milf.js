@@ -50,7 +50,6 @@ module.exports = {
           ID: ֆǟӄʊʀǟ.sender,
         },
         async (Error, userBadge) => {
-          // return userBadge.delete();
           if (Error) return console.log(Error);
           if (!userBadge) {
             var newUser = new Bagde({
@@ -64,7 +63,15 @@ module.exports = {
             await newUser
               .save()
               .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+            return Sakura_Buttons.MTB(
+              ӄʀǟӄɨռʐ,
+              chat,
+              ֆǟӄʊʀǟ,
+              `*✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived}, Account Verified.Try Command Again!*`
+            );
           } else {
+            `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
+            console.log(userBadge);
             var clock =
               userBadge.PermanentLimitTime -
               (Date.now() - userBadge.CurrentLimitTime);
@@ -74,6 +81,7 @@ module.exports = {
                 .save()
                 .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
             }
+            `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
             if (clock > 0 && !userBadge.Limits == 0) {
               userBadge.Limits = userBadge.Limits - 1;
               userBadge.value = `True`;
@@ -81,6 +89,7 @@ module.exports = {
                 .save()
                 .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
             }
+            `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
             if (clock < 0 && userBadge.Limits == 0) {
               if (userBadge.Badge === `🧵ʙᴀꜱɪᴄ-10ᴄᴏᴍᴍᴀɴᴅꜱ`) {
                 userBadge.Limits = 10;
