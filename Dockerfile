@@ -1,7 +1,7 @@
 FROM python:latest
-ENV VIRTUAL_ENV "/venv"
-RUN python -m venv $VIRTUAL_ENV
-ENV PATH "$VIRTUAL_ENV/bin:$PATH"
+ENV KRAKINZ_LAB "/venv"
+RUN python -m venv $KRAKINZ_LAB
+ENV PATH "$KRAKINZ_LAB/bin:$PATH"
 RUN apt update
 RUN apt upgrade -y
 RUN apt install git -y
