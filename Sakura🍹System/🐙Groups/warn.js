@@ -77,8 +77,9 @@ module.exports = {
           ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
         );
       } else if (ֆǟӄʊʀǟ.isReply) {
-        var person = ֆǟӄʊʀǟ.replyParticipant;
-        if (ֆǟӄʊʀǟ.owner === person) {
+        var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
+        var personreceived = Receiver.substring(0, Receiver.length - 15);
+        if (ֆǟӄʊʀǟ.owner === Receiver) {
           return Sakura_Buttons.MTB(
             ӄʀǟӄɨռʐ,
             chat,
@@ -87,7 +88,7 @@ module.exports = {
           );
         }
         `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
-        if (ֆǟӄʊʀǟ.groupAdmins.includes(person)) {
+        if (ֆǟӄʊʀǟ.groupAdmins.includes(Receiver)) {
           return Sakura_Buttons.MTB(
             ӄʀǟӄɨռʐ,
             chat,
@@ -97,14 +98,14 @@ module.exports = {
         } else {
           await Warning.findOne(
             {
-              ID: person,
+              ID: Receiver,
               ServerID: ֆǟӄʊʀǟ.chatId,
             },
             async (Error, userWarn) => {
               if (Error) return console.log(Error);
               if (!userWarn) {
                 var newWarnUser = new Warning({
-                  ID: person,
+                  ID: Receiver,
                   ServerID: ֆǟӄʊʀǟ.chatId,
                   warnings: 1,
                 });
@@ -117,7 +118,7 @@ module.exports = {
                   ֆǟӄʊʀǟ,
                   `
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-║♀️ 𝗣𝗲𝗿𝘀𝗼𝗻: @${person}
+║♀️ 𝗣𝗲𝗿𝘀𝗼𝗻: @${Receiver}
 ║❗ 𝗪𝗮𝗿𝗻𝗶𝗻𝗴𝘀: 1
 ╚════════════╝`
                 ).catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
@@ -134,7 +135,7 @@ module.exports = {
                     ֆǟӄʊʀǟ,
                     `
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-║♀️ 𝗣𝗲𝗿𝘀𝗼𝗻: @${person}
+║♀️ 𝗣𝗲𝗿𝘀𝗼𝗻: @${Receiver}
 ║❗ 𝗪𝗮𝗿𝗻𝗶𝗻𝗴𝘀: ${userWarn.warnings}
 ╚════════════╝`
                   ).catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
@@ -146,12 +147,12 @@ module.exports = {
                     ֆǟӄʊʀǟ,
                     `
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-║♀️ 𝗣𝗲𝗿𝘀𝗼𝗻: @${person}
+║♀️ 𝗣𝗲𝗿𝘀𝗼𝗻: @${Receiver}
 ║❗ 𝗪𝗮𝗿𝗻𝗶𝗻𝗴𝘀: ${userWarn.warnings}
 ╚════════════╝`
                   ).catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
                   await ӄʀǟӄɨռʐ
-                    .groupRemove(ֆǟӄʊʀǟ.chatId, [person])
+                    .groupRemove(ֆǟӄʊʀǟ.chatId, [Receiver])
                     .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
                   return await userWarn
                     .delete()
