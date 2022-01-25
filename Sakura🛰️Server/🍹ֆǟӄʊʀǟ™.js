@@ -628,6 +628,7 @@ ${update.desc}`,
 ╚════════════╝`
         );
       }
+      console.log("Participant a Member of SakuraGC");
       `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
       const jsoncool = JSON.parse(
         fs.readFileSync("./Sakura🛰️Server/Coolist.json")
