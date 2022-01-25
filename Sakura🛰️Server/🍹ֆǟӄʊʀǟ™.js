@@ -250,43 +250,43 @@ ${update.desc}`,
   });
   `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
   ӄʀǟӄɨռʐ.on(`group-participants-update`, async (update) => {
-    const gcDev = "120363039223842047@g.us";
-    const GroupMetadata = await ӄʀǟӄɨռʐ.groupMetadata(gcDev);
-    let mem = [];
-    for (var i = 0; i < GroupMetadata.participants.length; i++) {
-      mem[i] = GroupMetadata.participants[i].jid;
-    }
-    await DocSakura.findOne(
-      {
-        serverID: gcDev,
-        members: mem,
-      },
-      async (Error, usersDoc) => {
-        if (Error) console.log(Error);
-        if (!usersDoc) {
-          var newDocUsers = new DocSakura({
-            ID: gcDev,
-            members: mem,
-          });
-          await newDocUsers.save().catch((Error) => console.log(Error));
-        } else {
-          usersDoc.serverID = gcDev;
-          usersDoc.members = mem;
-          await usersDoc.save().catch((Error) => console.log(Error));
-          await ӄʀǟӄɨռʐ
-            .sendMessage(
-              gcDev,
-              fs.readFileSync(`./Sakura☣️Reactor/Sakura_Bug.mp4`),
-              MessageType.video,
-              {
-                mimetype: "video/gif",
-                caption: `🍸(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭\n Database For MemberDoc has been Auto-Updated!`,
-              }
-            )
-            .catch((Error) => console.log(Error));
-        }
-      }
-    );
+    // const gcDev = "120363039223842047@g.us";
+    // const GroupMetadata = await ӄʀǟӄɨռʐ.groupMetadata(gcDev);
+    // let mem = [];
+    // for (var i = 0; i < GroupMetadata.participants.length; i++) {
+    //   mem[i] = GroupMetadata.participants[i].jid;
+    // }
+    // await DocSakura.findOne(
+    //   {
+    //     serverID: gcDev,
+    //     members: mem,
+    //   },
+    //   async (Error, usersDoc) => {
+    //     if (Error) console.log(Error);
+    //     if (!usersDoc) {
+    //       var newDocUsers = new DocSakura({
+    //         ID: gcDev,
+    //         members: mem,
+    //       });
+    //       await newDocUsers.save().catch((Error) => console.log(Error));
+    //     } else {
+    //       usersDoc.serverID = gcDev;
+    //       usersDoc.members = mem;
+    //       await usersDoc.save().catch((Error) => console.log(Error));
+    //       await ӄʀǟӄɨռʐ
+    //         .sendMessage(
+    //           gcDev,
+    //           fs.readFileSync(`./Sakura☣️Reactor/Sakura_Bug.mp4`),
+    //           MessageType.video,
+    //           {
+    //             mimetype: "video/gif",
+    //             caption: `🍸(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭\n Database For MemberDoc has been Auto-Updated!`,
+    //           }
+    //         )
+    //         .catch((Error) => console.log(Error));
+    //     }
+    //   }
+    // );
     `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
     try {
       var GroupID = update.jid;
