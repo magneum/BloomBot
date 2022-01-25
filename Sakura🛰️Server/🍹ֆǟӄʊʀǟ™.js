@@ -397,37 +397,34 @@ ${update.desc}`,
               }
             )
             .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-        } else {
-          usersDoc.members = mem;
-          await usersDoc
-            .save()
-            .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-          await ӄʀǟӄɨռʐ
-            .sendMessage(
-              gcDev,
-              fs.readFileSync(`./Sakura☣️Reactor/Sakura_Bug.mp4`),
-              MessageType.video,
-              {
-                mimetype: "video/gif",
-                caption: `🍸(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭\n Database For MemberDoc has been Auto-Updated!`,
-              }
-            )
-            .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
         }
+        usersDoc.members = mem;
+        await usersDoc
+          .save()
+          .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+        return await ӄʀǟӄɨռʐ
+          .sendMessage(
+            gcDev,
+            fs.readFileSync(`./Sakura☣️Reactor/Sakura_Bug.mp4`),
+            MessageType.video,
+            {
+              mimetype: "video/gif",
+              caption: `🍸(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭\n Database For MemberDoc has been Auto-Updated!`,
+            }
+          )
+          .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
       }
     );
     `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
     if (ֆǟӄʊʀǟ.isGroup && !ֆǟӄʊʀǟ.fromMe) {
       var ꜱᴇɴᴅᴇʀɪᴅ = ֆǟӄʊʀǟ.sender;
       var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
-
       let xpAdd = Math.ceil(Math.random() * 10);
       try {
         𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄʀǟӄɨռʐ.getProfilePicture(ֆǟӄʊʀǟ.sender);
       } catch {
         𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = "https://i.postimg.cc/gcw6vq3X/Npp.png";
       }
-      `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
       try {
         await UsersSakura.findOne(
           {
@@ -661,6 +658,7 @@ ${update.desc}`,
       !_𝔏𝔞𝔟_.HASH &&
       !ֆǟӄʊʀǟ.fromMe &&
       !ֆǟӄʊʀǟ.isSenderDev &&
+      ֆǟӄʊʀǟ.isBotGroupAdmin &&
       !ֆǟӄʊʀǟ.isSenderGroupAdmin &&
       !RegexYouTube.test(ֆǟӄʊʀǟ.body) &&
       ֆǟӄʊʀǟ.body.includes(`https://`)
@@ -671,17 +669,19 @@ ${update.desc}`,
         },
         async (Error, server) => {
           if (Error) console.log(Error);
-          if (!server) return;
-          const REMOVE = chat.key.fromMe
-            ? ӄʀǟӄɨռʐ.user.jid
-            : ֆǟӄʊʀǟ.isGroup
-            ? chat.participant
-            : chat.key.remoteJid;
-          await Sakura_Buttons.MIB(
-            ӄʀǟӄɨռʐ,
-            chat,
-            ֆǟӄʊʀǟ,
-            `
+          if (!server) {
+            return;
+          } else {
+            const REMOVE = chat.key.fromMe
+              ? ӄʀǟӄɨռʐ.user.jid
+              : ֆǟӄʊʀǟ.isGroup
+              ? chat.participant
+              : chat.key.remoteJid;
+            await Sakura_Buttons.MIB(
+              ӄʀǟӄɨռʐ,
+              chat,
+              ֆǟӄʊʀǟ,
+              `
 ╔════🌋  𝐀𝐧𝐭𝐢𝐥𝐢𝐧𝐤 𝐓𝐫𝐢𝐠𝐠𝐞𝐫𝐞𝐝 
 ║🔻 𝗣𝘂𝗻𝗶𝘀𝗵𝗺𝗲𝗻𝘁: _You Will Be Kicked!_
 ║🔻 𝗞𝗶𝗰𝗸-𝗧𝗶𝗺𝗲: _6sec_
@@ -692,15 +692,16 @@ ${update.desc}`,
 ║🍃 𝗡𝗼𝗻-𝗔𝗱𝗺𝗶𝗻: _(Yes)_
 ║🍃 𝗙𝗿𝗼𝗺: _(id-${REMOVE})_
 ╚════════════╝`,
-            `./Sakura☣️Reactor/Sakura_Antilink.png`
-          );
-          setTimeout(async (Error) => {
-            if (Error) console.log(Error);
-            await ӄʀǟӄɨռʐ
-              .groupRemove(ֆǟӄʊʀǟ.chatId, [REMOVE])
-              .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-          }, 6000);
-          return;
+              `./Sakura☣️Reactor/Sakura_Antilink.png`
+            );
+            setTimeout(async (Error) => {
+              if (Error) console.log(Error);
+              await ӄʀǟӄɨռʐ
+                .groupRemove(ֆǟӄʊʀǟ.chatId, [REMOVE])
+                .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+            }, 6000);
+            return;
+          }
         }
       );
     }
@@ -708,7 +709,6 @@ ${update.desc}`,
     if (ֆǟӄʊʀǟ.isCmd) {
       var ꜱᴇɴᴅᴇʀɪᴅ = ֆǟӄʊʀǟ.sender;
       var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
-      `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
       await DocSakura.findOne(
         {
           serverID: gcDev,
@@ -730,127 +730,129 @@ ${update.desc}`,
                 quoted: chat,
               }
             );
-          }
-          `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
-          const jsoncool = JSON.parse(
-            fs.readFileSync("./Sakura🛰️Server/Coolist.json")
-          );
-          if (jsoncool.includes(ֆǟӄʊʀǟ.sender)) {
-            if (ֆǟӄʊʀǟ.fromMe) {
-              return ӄʀǟӄɨռʐ.sendMessage(
-                ֆǟӄʊʀǟ.chatId,
-                `*🙏🏽‍Sir Please Wait For 5s!*`,
-                MessageType.text,
-                { quoted: chat }
-              );
-            } else {
-              return ӄʀǟӄɨռʐ.sendMessage(
-                ֆǟӄʊʀǟ.chatId,
-                `*AntiSpam🦋CoolDown:* _Wait For 15s!_`,
-                MessageType.text,
-                { quoted: chat }
-              );
-            }
-          }
-          `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
-          console.log(
-            Kolor.red(
-              `⬡============⬡🍹ֆǟӄʊʀǟ™ Verified File: ` +
-                ֆǟӄʊʀǟ.commandName.toUpperCase() +
-                `🍃⬡============⬡`
-            )
-          );
-          console.log(chat);
-          console.log(
-            Kolor.red(
-              `⬡==========================⬡    🍹 ֆǟӄʊʀǟ™ 🍹    ⬡==========================⬡`
-            )
-          );
-          `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
-          try {
-            const ᴍɪᴢᴜᴋɪɢɪᴛ = require(`simple-git`)();
-            await ᴍɪᴢᴜᴋɪɢɪᴛ.fetch();
-            var ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ = await ᴍɪᴢᴜᴋɪɢɪᴛ.log([
-              `KrakinzLab..origin/KrakinzLab`,
-            ]);
-            if (ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total != 0) {
-              require(`simple-git`)()
-                .exec(async () => {
-                  console.log(
-                    Kolor.yellow(`💡INFO ⬰ 𝐍𝐞𝐰 𝐔𝐩𝐝𝐚𝐭𝐞 𝐩𝐞𝐧𝐝𝐢𝐧𝐠, 𝐮𝐩𝐝𝐚𝐭𝐢𝐧𝐠...`)
-                  );
-                })
-                .pull(async (Error, update) => {
-                  if (Error) {
-                    try {
-                      const mergeSummary = await ᴍɪᴢᴜᴋɪɢɪᴛ.merge();
-                      console.log(
-                        Kolor.green(
-                          `💡INFO ⬰ 𝗔𝘂𝘁𝗼-𝗨𝗽𝗱𝗮𝘁𝗲𝗱 ⚡𝐒𝐚𝐤𝐮𝐫𝐚™ 𝘄𝗶𝘁𝗵 𝗹𝗮𝘁𝗲𝘀𝘁 [${mergeSummary.merges.length}] 𝗰𝗵𝗮𝗻𝗴𝗲𝘀.`
-                        )
-                      );
-                    } catch (Error) {
-                      console.log(
-                        Kolor.red(
-                          `❌ERROR ⬰ 𝗠𝗲𝗿𝗴𝗲 𝗿𝗲𝘀𝘂𝗹𝘁𝗲𝗱 𝗶𝗻 ${Kolor.red(
-                            Error
-                          )} 𝗰𝗼𝗻𝗳𝗹𝗶𝗰𝘁𝘀!`
-                        )
-                      );
-                    }
-                  } else if (update && update.summary.changes) {
-                    var child = require(`child_process`).exec(`npm i --force`);
-                    child.stdout.pipe(process.stdout);
-                    child.on(`exit`, async function () {
-                      process.exitCode = 1;
-                      var childs = require(`child_process`).exec(
-                        `python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`
-                      );
-                      childs.stdout.pipe(process.stdout);
-                      childs.on(`exit`, async function () {
-                        process.exitCode = 1;
-                      });
-                    });
-                  }
-                });
-            }
-          } catch (Error) {
-            console.log(Error);
-            console.log(
-              Kolor.red(
-                `❌ERROR ⬰ 𝗜𝗳 𝗶𝘁 𝘄𝗮𝘀 𝗮 𝗕𝗜𝗚 ⚡𝐒𝐚𝐤𝐮𝐫𝐚™ 𝘂𝗽𝗱𝗮𝘁𝗲 𝘁𝗵𝗲𝗻 𝗣𝗹𝗲𝗮𝘀𝗲 𝗿𝗲𝗱𝗲𝗽𝗹𝗼𝘆 𝘆𝗼𝘂𝗿 𝗯𝗼𝘁!`
-              )
-            );
-          }
-          `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
-          var ꜱᴇɴᴅᴇʀɪᴅ = ֆǟӄʊʀǟ.sender;
-          var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
-          const ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ = ꜱɪᴛʀᴀᴘ.get(ֆǟӄʊʀǟ.commandName);
-          var Needs = ֆǟӄʊʀǟ.body.trim().split(/\s+/).slice(1);
-          if (!ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ) {
-            return Sakura_Buttons.MTB(
-              ӄʀǟӄɨռʐ,
-              chat,
-              ֆǟӄʊʀǟ,
-              `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived},
-
-╔════| 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
-║❌ *Baka No Such Command in Database!*
-║🍃 𝐏𝐫𝐞𝐬𝐬 𝐅𝐨𝐫 𝐒𝐚𝐤𝐮𝐫𝐚 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬👇🏽
-╚════════════╝`
-            );
             `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
           } else {
-            return ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ.handle(
-              ӄʀǟӄɨռʐ,
-              chat,
-              ֆǟӄʊʀǟ,
-              Needs,
-              ꜱɪᴛʀᴀᴘ,
-              Clock,
-              Ping,
-              Timers
+            const jsoncool = JSON.parse(
+              fs.readFileSync("./Sakura🛰️Server/Coolist.json")
             );
+            if (jsoncool.includes(ֆǟӄʊʀǟ.sender)) {
+              if (ֆǟӄʊʀǟ.fromMe) {
+                return ӄʀǟӄɨռʐ.sendMessage(
+                  ֆǟӄʊʀǟ.chatId,
+                  `*🙏🏽‍Sir Please Wait For 5s!*`,
+                  MessageType.text,
+                  { quoted: chat }
+                );
+              } else {
+                return ӄʀǟӄɨռʐ.sendMessage(
+                  ֆǟӄʊʀǟ.chatId,
+                  `*AntiSpam🦋CoolDown:* _Wait For 15s!_`,
+                  MessageType.text,
+                  { quoted: chat }
+                );
+              }
+            }
+            `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
+            console.log(
+              Kolor.red(
+                `⬡============⬡🍹ֆǟӄʊʀǟ™ Verified File: ` +
+                  ֆǟӄʊʀǟ.commandName.toUpperCase() +
+                  `🍃⬡============⬡`
+              )
+            );
+            console.log(chat);
+            console.log(
+              Kolor.red(
+                `⬡==========================⬡    🍹 ֆǟӄʊʀǟ™ 🍹    ⬡==========================⬡`
+              )
+            );
+            `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
+            try {
+              const ᴍɪᴢᴜᴋɪɢɪᴛ = require(`simple-git`)();
+              await ᴍɪᴢᴜᴋɪɢɪᴛ.fetch();
+              var ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ = await ᴍɪᴢᴜᴋɪɢɪᴛ.log([
+                `KrakinzLab..origin/KrakinzLab`,
+              ]);
+              if (ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total != 0) {
+                require(`simple-git`)()
+                  .exec(async () => {
+                    console.log(
+                      Kolor.yellow(`💡INFO ⬰ 𝐍𝐞𝐰 𝐔𝐩𝐝𝐚𝐭𝐞 𝐩𝐞𝐧𝐝𝐢𝐧𝐠, 𝐮𝐩𝐝𝐚𝐭𝐢𝐧𝐠...`)
+                    );
+                  })
+                  .pull(async (Error, update) => {
+                    if (Error) {
+                      try {
+                        const mergeSummary = await ᴍɪᴢᴜᴋɪɢɪᴛ.merge();
+                        console.log(
+                          Kolor.green(
+                            `💡INFO ⬰ 𝗔𝘂𝘁𝗼-𝗨𝗽𝗱𝗮𝘁𝗲𝗱 ⚡𝐒𝐚𝐤𝐮𝐫𝐚™ 𝘄𝗶𝘁𝗵 𝗹𝗮𝘁𝗲𝘀𝘁 [${mergeSummary.merges.length}] 𝗰𝗵𝗮𝗻𝗴𝗲𝘀.`
+                          )
+                        );
+                      } catch (Error) {
+                        console.log(
+                          Kolor.red(
+                            `❌ERROR ⬰ 𝗠𝗲𝗿𝗴𝗲 𝗿𝗲𝘀𝘂𝗹𝘁𝗲𝗱 𝗶𝗻 ${Kolor.red(
+                              Error
+                            )} 𝗰𝗼𝗻𝗳𝗹𝗶𝗰𝘁𝘀!`
+                          )
+                        );
+                      }
+                    } else if (update && update.summary.changes) {
+                      var child =
+                        require(`child_process`).exec(`npm i --force`);
+                      child.stdout.pipe(process.stdout);
+                      child.on(`exit`, async function () {
+                        process.exitCode = 1;
+                        var childs = require(`child_process`).exec(
+                          `python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`
+                        );
+                        childs.stdout.pipe(process.stdout);
+                        childs.on(`exit`, async function () {
+                          process.exitCode = 1;
+                        });
+                      });
+                    }
+                  });
+              }
+            } catch (Error) {
+              console.log(Error);
+              console.log(
+                Kolor.red(
+                  `❌ERROR ⬰ 𝗜𝗳 𝗶𝘁 𝘄𝗮𝘀 𝗮 𝗕𝗜𝗚 ⚡𝐒𝐚𝐤𝐮𝐫𝐚™ 𝘂𝗽𝗱𝗮𝘁𝗲 𝘁𝗵𝗲𝗻 𝗣𝗹𝗲𝗮𝘀𝗲 𝗿𝗲𝗱𝗲𝗽𝗹𝗼𝘆 𝘆𝗼𝘂𝗿 𝗯𝗼𝘁!`
+                )
+              );
+            }
+            `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
+            var ꜱᴇɴᴅᴇʀɪᴅ = ֆǟӄʊʀǟ.sender;
+            var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
+            const ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ = ꜱɪᴛʀᴀᴘ.get(ֆǟӄʊʀǟ.commandName);
+            var Needs = ֆǟӄʊʀǟ.body.trim().split(/\s+/).slice(1);
+            if (!ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ) {
+              return Sakura_Buttons.MTB(
+                ӄʀǟӄɨռʐ,
+                chat,
+                ֆǟӄʊʀǟ,
+                `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived},
+
+╔════| 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
+║❌ *No Such Command in Database!*
+║🍃 𝐏𝐫𝐞𝐬𝐬 𝐅𝐨𝐫 𝐒𝐚𝐤𝐮𝐫𝐚 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬👇🏽
+╚════════════╝`
+              );
+              `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
+            } else {
+              return ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ.handle(
+                ӄʀǟӄɨռʐ,
+                chat,
+                ֆǟӄʊʀǟ,
+                Needs,
+                ꜱɪᴛʀᴀᴘ,
+                Clock,
+                Ping,
+                Timers
+              );
+            }
           }
         }
       );
