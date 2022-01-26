@@ -15,8 +15,15 @@ module.exports = {
   ֆǟӄʊʀǟӄǟɨʐօ: `*${ᴋᴇɪ}warn* _reply to person_`,
   async handle(ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
     try {
-      var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
-      var ꜱᴇɴᴅᴇʀeceived = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
+      if (ֆǟӄʊʀǟ.isReply) {
+        var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
+        var personreceived = Receiver.substring(0, Receiver.length - 15);
+        var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
+        var ꜱᴇɴᴅᴇʀeceived = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
+      } else {
+        var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
+        var ꜱᴇɴᴅᴇʀeceived = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
+      }
       const defaultnm = ֆǟӄʊʀǟ.commandName;
       const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
       `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
