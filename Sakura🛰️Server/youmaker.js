@@ -13,11 +13,6 @@ const ytIdRegex =
 
 //fucntion
 function YouTube_Post(url, formdata) {
-  console.log(
-    Object.keys(formdata)
-      .map((key) => `${key}=${encodeURIComponent(formdata[key])}`)
-      .join("&")
-  );
   return fetch(url, {
     method: "POST",
     headers: {
@@ -44,15 +39,10 @@ function YouTube_Music(url) {
         .then((res) => res.json())
         .then((res) => {
           let document = new JSDOM(res.result).window.document;
-          let type = document.querySelectorAll("td");
-          let filesize = type[type.length - 10].innerHTML;
           let id = /var k__id = "(.*?)"/.exec(document.body.innerHTML) || [
             "",
             "",
           ];
-          let thumb = document.querySelector("img").src;
-          let title = document.querySelector("b").innerHTML;
-
           YouTube_Post("https://www.y2mate.com/mates/en60/convert", {
             type: "youtube",
             _id: id[1],
@@ -64,13 +54,8 @@ function YouTube_Music(url) {
           })
             .then((res) => res.json())
             .then((res) => {
-              let KB = parseFloat(filesize) * (1000 * /MB$/.test(filesize));
               resolve({
-                dl_link: /<a.+?href="(.+?)"/.exec(res.result)[1],
-                thumb,
-                title,
-                filesizeF: filesize,
-                filesize: KB,
+                y2mate: /<a.+?href="(.+?)"/.exec(res.result)[1],
               });
             })
             .catch(reject);

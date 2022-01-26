@@ -5,9 +5,10 @@
 `|🍹|`;
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
 const Sakura_Buttons = require(`../../Sakura🛰️Server/Sakura_Buttons`);
+const { Fluent_Music } = require(`../../Sakura🛰️Server/Fluent_Music`);
 const Sakura_Static = require(`../../Sakura🛰️Server/Sakura_Static`);
-const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const { YouTube_Music } = require(`../../Sakura🛰️Server/youmaker`);
+const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const cleanRF = require(`../../Sakura🛰️Server/cleanRF`);
 const _𝔏𝔞𝔟_ = require(`../../Sakura🛰️Server/_𝔏𝔞𝔟_`);
 const ꜰᴜᴄᴋ = require(`../../Sakura🛰️Server/oShit`);
@@ -156,56 +157,6 @@ module.exports = {
             );
           }
           `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-          async function FFMPEG_GOT(Link, Title) {
-            console.log("|⬡=========================⬡|🔗𝐓𝐢𝐧𝐲 𝐔𝐑𝐋 " + Link);
-            var YouFile = `${Date.now()}_${աɦօֆɛռȶɦǟȶ.toString()}.mp3`;
-            try {
-              require(`child_process`).exec(
-                `ffmpeg -i '${Link}' '${YouFile}'`,
-                async (Error) => {
-                  if (Error) {
-                    console.log(
-                      `|⬡=========================⬡|🔺𝐅𝐅𝐦𝐩𝐞𝐠 𝐄𝐫𝐫𝐨𝐫: ` + Error
-                    );
-                    userBadge.Limits = userBadge.Limits + 1;
-                    await userBadge
-                      .save()
-                      .catch((Error) =>
-                        ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
-                      );
-                    return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
-                  }
-                  console.log(
-                    `|⬡=========================⬡|🥂𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐅𝐢𝐧𝐢𝐬𝐞𝐝: ` +
-                      YouFile
-                  );
-                  await ӄʀǟӄɨռʐ
-                    .sendMessage(
-                      ֆǟӄʊʀǟ.chatId,
-                      fs.readFileSync(YouFile),
-                      MessageType.audio,
-                      {
-                        quoted: chat,
-                        mimetype: "audio/mp4",
-                      }
-                    )
-                    .then(cleanRF.cleanRF(YouFile))
-                    .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-                }
-              );
-              return;
-            } catch (Error) {
-              console.log(
-                `|⬡=========================⬡|🐞𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐄𝐫𝐫𝐨𝐫: ` + Error
-              );
-              userBadge.Limits = userBadge.Limits + 1;
-              await userBadge
-                .save()
-                .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-              return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
-            }
-          }
-          `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
           const LinkForGroups = await yts(Needs.join(` `));
           const GroupVideos = LinkForGroups.videos.slice(0, 1);
           GroupVideos.forEach(async function (Found) {
@@ -248,18 +199,56 @@ module.exports = {
               Found.thumbnail
             );
             `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-            YouTube_Music(Found.url).then((res) => {
-              const { dl_link, thumb, title, filesizeF, filesize } = res;
-              return axios
-                .get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
-                .then(async (AxioData) => {
-                  return await FFMPEG_GOT(AxioData.data, title);
-                });
-            });
-            `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+            try {
+              var YouFile = `./${Date.now()}_${Found.videoId}.mp3`;
+              console.log(Found);
+              require(`child_process`).exec(
+                `youtube-dl -x --audio-format mp3 -o '${YouFile}' '${Found.url}'`,
+                async (Error) => {
+                  if (Error) {
+                    console.log(
+                      `|⬡══════════⬡|🔺𝐅𝐅𝐦𝐩𝐞𝐠 𝐄𝐫𝐫𝐨𝐫🔺|⬡══════════⬡|\n` + Error
+                    );
+                    userBadge.Limits = userBadge.Limits + 1;
+                    await userBadge
+                      .save()
+                      .catch((Error) =>
+                        ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
+                      );
+                    return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
+                  } else {
+                    console.log(
+                      `|⬡══════════⬡|🥂𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐅𝐢𝐧𝐢𝐬𝐞𝐝🥂|⬡══════════⬡|`
+                    );
+                    console.log("FileName: " + YouFile);
+                    await ӄʀǟӄɨռʐ
+                      .sendMessage(
+                        ֆǟӄʊʀǟ.chatId,
+                        fs.readFileSync(YouFile),
+                        MessageType.audio,
+                        {
+                          quoted: chat,
+                          mimetype: "audio/mp4",
+                        }
+                      )
+                      .catch((Error) =>
+                        ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
+                      );
+                    await cleanRF.cleanRF(YouFile);
+                  }
+                }
+              );
+            } catch (Error) {
+              userBadge.Limits = userBadge.Limits + 1;
+              await userBadge
+                .save()
+                .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+              return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
+            }
           });
         }
       );
+      `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
     } catch (Error) {
       ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
       console.log(Error);

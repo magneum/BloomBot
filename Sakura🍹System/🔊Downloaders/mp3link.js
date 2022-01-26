@@ -249,9 +249,9 @@ module.exports = {
             );
             `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
             YouTube_Music(Found.url).then((res) => {
-              const { dl_link, thumb, title, filesizeF, filesize } = res;
+              const { y2mate } = res;
               return axios
-                .get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
+                .get(`https://tinyurl.com/api-create.php?url=${y2mate}`)
                 .then(async (AxioData) => {
                   return await FFMPEG_GOT(AxioData.data, title);
                 });

@@ -41,6 +41,7 @@
     "dotenv": "^8.2.0",
     "download-file": "^0.1.5",
     "emoji-api": "^1.0.2",
+    "ffmpeg-static": "^4.4.1",
     "figlet": "^1.5.0",
     "file-type": "^16.3.0",
     "fluent-ffmpeg": "^2.1.2",
