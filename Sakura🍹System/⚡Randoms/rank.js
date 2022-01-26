@@ -109,7 +109,7 @@ module.exports = {
 
 ╔════◇🌿
 ║🎉The More You Talk, The More 𝐗𝐏+𝐂𝐨𝐢𝐧𝐬 You Gain. 
-║🎉You Can Spend The Coins in ${ᴋᴇɪ}store!
+║🎉You Can Spend The Coins in ${ᴋᴇɪ}shop!
 ╚════════════╝
 
 ╔═══════⭕𝐋𝐞𝐯𝐞𝐥𝐬
