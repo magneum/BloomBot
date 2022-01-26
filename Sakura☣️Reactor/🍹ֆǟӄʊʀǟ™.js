@@ -10,30 +10,6 @@
   const Kolor = require(`chalk`);
   `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
   try {
-    console.log(Kolor.yellow(`🍹INFO ⬰ ֆǟӄʊʀǟgoose Connecting!`));
-    await ֆǟӄʊʀǟgoose
-      .connect(_𝔏𝔞𝔟_.SAKURAMDB, {
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
-        useCreateIndex: true,
-        useFindAndModify: false,
-      })
-      .catch((err) => {
-        console.log(Kolor.red(`🍹INFO ⬰ ֆǟӄʊʀǟgoose Error: \n${err}`));
-        process.exit(0);
-      });
-    console.log(Kolor.green(`🍹INFO ⬰ ֆǟӄʊʀǟgoose Connected!`));
-  } catch (ℓαвєяяσя) {
-    console.log(ℓαвєяяσя);
-    console.log(
-      Kolor.red(
-        `❌ERROR ⬰ 𝗜𝗳 𝗶𝘁 𝘄𝗮𝘀 𝗮 𝗕𝗜𝗚 ⚡𝐒𝐚𝐤𝐮𝐫𝐚™ 𝘂𝗽𝗱𝗮𝘁𝗲 𝘁𝗵𝗲𝗻 𝗣𝗹𝗲𝗮𝘀𝗲 𝗿𝗲𝗱𝗲𝗽𝗹𝗼𝘆 𝘆𝗼𝘂𝗿 𝗯𝗼𝘁!`
-      )
-    );
-    process.exit(0);
-  }
-  `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-  try {
     const ᴍɪᴢᴜᴋɪɢɪᴛ = require(`simple-git`)();
     await ᴍɪᴢᴜᴋɪɢɪᴛ.fetch();
     var ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ = await ᴍɪᴢᴜᴋɪɢɪᴛ.log([`KrakinzLab..origin/KrakinzLab`]);
@@ -59,7 +35,6 @@
                   )} 𝗰𝗼𝗻𝗳𝗹𝗶𝗰𝘁𝘀!`
                 )
               );
-              process.exit(0);
             }
             `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
           } else if (update && update.summary.changes) {
@@ -86,7 +61,29 @@
         `❌ERROR ⬰ 𝗜𝗳 𝗶𝘁 𝘄𝗮𝘀 𝗮 𝗕𝗜𝗚 ⚡𝐒𝐚𝐤𝐮𝐫𝐚™ 𝘂𝗽𝗱𝗮𝘁𝗲 𝘁𝗵𝗲𝗻 𝗣𝗹𝗲𝗮𝘀𝗲 𝗿𝗲𝗱𝗲𝗽𝗹𝗼𝘆 𝘆𝗼𝘂𝗿 𝗯𝗼𝘁!`
       )
     );
-    process.exit(0);
+  }
+  `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+  try {
+    console.log(Kolor.yellow(`🍹INFO ⬰ ֆǟӄʊʀǟgoose Connecting!`));
+    await ֆǟӄʊʀǟgoose
+      .connect(_𝔏𝔞𝔟_.SAKURAMDB, {
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+        useCreateIndex: true,
+        useFindAndModify: false,
+      })
+      .catch((err) => {
+        console.log(Kolor.red(`🍹INFO ⬰ ֆǟӄʊʀǟgoose Error: \n${err}`));
+        process.exit(0);
+      });
+    console.log(Kolor.green(`🍹INFO ⬰ ֆǟӄʊʀǟgoose Connected!`));
+  } catch (ℓαвєяяσя) {
+    console.log(ℓαвєяяσя);
+    console.log(
+      Kolor.red(
+        `❌ERROR ⬰ 𝗜𝗳 𝗶𝘁 𝘄𝗮𝘀 𝗮 𝗕𝗜𝗚 ⚡𝐒𝐚𝐤𝐮𝐫𝐚™ 𝘂𝗽𝗱𝗮𝘁𝗲 𝘁𝗵𝗲𝗻 𝗣𝗹𝗲𝗮𝘀𝗲 𝗿𝗲𝗱𝗲𝗽𝗹𝗼𝘆 𝘆𝗼𝘂𝗿 𝗯𝗼𝘁!`
+      )
+    );
   }
   `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
   ӄʀǟӄɨռʐ.logger.level = "error";
