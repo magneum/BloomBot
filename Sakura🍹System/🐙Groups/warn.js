@@ -116,8 +116,10 @@ module.exports = {
             if (CurrentWarns > 0 && CurrentWarns >= 2) {
               userWarn.ID = RemoveTheSucker;
               userWarn.serverID = ֆǟӄʊʀǟ.chatId;
-              userWarn.warns = userWarn.warns + 1;
-              await userWarn.save();
+              userWarn.warns = CurrentWarns + 1;
+              await userWarn
+                .save()
+                .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
               return Sakura_Buttons.MTB(
                 ӄʀǟӄɨռʐ,
                 chat,
@@ -129,7 +131,7 @@ module.exports = {
 ╚◇═══════════════◇╝
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-║👿 𝗪𝗮𝗿𝗻𝗶𝗻𝗴𝘀: ${userWarn.warns}
+║👿 𝗪𝗮𝗿𝗻𝗶𝗻𝗴𝘀: ${CurrentWarns}
 ║💩 𝗪𝗮𝗿𝗻𝗲𝗱 𝗧𝗼: @${RemoveTheSucker}
 ║😎 𝗪𝗮𝗿𝗻𝗲𝗱 𝗕𝘆: @${աɦօֆɛռȶɦǟȶ}
 ╚════════════╝
@@ -142,7 +144,9 @@ module.exports = {
             }
             `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
             if (ֆǟӄʊʀǟ.isBotGroupAdmin && CurrentWarns <= 3) {
-              await userWarn.delete();
+              await userWarn
+                .delete()
+                .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
               Sakura_Buttons.MTB(
                 ӄʀǟӄɨռʐ,
                 chat,
@@ -154,7 +158,7 @@ module.exports = {
 ╚◇═══════════════◇╝
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-║👿 𝗪𝗮𝗿𝗻𝗶𝗻𝗴𝘀: ${userWarn.warns}
+║👿 𝗪𝗮𝗿𝗻𝗶𝗻𝗴𝘀: ${CurrentWarns}
 ║💩 𝗪𝗮𝗿𝗻𝗲𝗱 𝗧𝗼: @${RemoveTheSucker}
 ║😎 𝗪𝗮𝗿𝗻𝗲𝗱 𝗕𝘆: @${աɦօֆɛռȶɦǟȶ}
 ╚════════════╝
