@@ -696,9 +696,9 @@ ${update.desc}`,
             ӄʀǟӄɨռʐ,
             chat,
             ֆǟӄʊʀǟ,
-            `
+            `🍹 @${ꜱᴇɴᴅᴇʀeceived}, _Press Below Help Button For Link!_
+
 ╔════◇𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
-║🍹 @${ꜱᴇɴᴅᴇʀeceived},
 ║♨️ _First be a member of Sakura Group!_
 ║🚨 *Why?* _Monitor AntiSpams & BugReports_
 ╚════════════╝`
