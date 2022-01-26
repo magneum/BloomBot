@@ -139,8 +139,6 @@ module.exports = {
 ║▷ ${ᴋᴇɪ}mp3link _yt-audio-max 15min_
 ║▷ ${ᴋᴇɪ}mp4link _yt-video-max 15min_
 ║▷ ${ᴋᴇɪ}instagram
-║▷ ${ᴋᴇɪ}tiktokaudio
-║▷ ${ᴋᴇɪ}tiktokvideo
 ╚════════════╝
 
 

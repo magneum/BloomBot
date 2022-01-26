@@ -45,8 +45,6 @@ module.exports = {
 ║⬡ *${ᴋᴇɪ}mp4link _yt-video-max 15min_
 ║
 ║⬡ *${ᴋᴇɪ}instagram*  _image/video from ig_
-║⬡ *${ᴋᴇɪ}tiktokaudio*  _tik-tok audio_
-║⬡ *${ᴋᴇɪ}tiktokvideo*  _tik-tok video_
 ╚════════════╝`;
       return Sakura_Buttons.MIB(
         ӄʀǟӄɨռʐ,
