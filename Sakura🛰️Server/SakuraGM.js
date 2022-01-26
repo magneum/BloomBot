@@ -80,7 +80,7 @@ exports.SakuraGM = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ) => {
                 contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ, Receiver] },
                 quoted: chat,
                 mimetype: `video/gif`,
-                caption: `|(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭|👿𝐄𝐧𝐠𝐢𝐧𝐞: _KryoZen 3_\n${Clock} 
+                caption: `|(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 | 𝐄𝐧𝐠𝐢𝐧𝐞: _KryoZen 3_\n${Clock} 
 
 ────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 🍪 𝐅𝐫𝐨𝐦: ✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived}
@@ -130,7 +130,7 @@ exports.SakuraGM = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ) => {
                 contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
                 quoted: chat,
                 mimetype: `video/gif`,
-                caption: `|(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭|👿𝐄𝐧𝐠𝐢𝐧𝐞: _KryoZen 3_\n${Clock} 
+                caption: `|(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 | 𝐄𝐧𝐠𝐢𝐧𝐞: _KryoZen 3_\n${Clock} 
 
 ────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 🍯𝐓𝐡𝐞𝐦𝐬𝐞𝐥𝐯𝐞: ✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived}`,

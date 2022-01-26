@@ -71,11 +71,6 @@ module.exports = {
                 quoted: chat,
                 contextInfo: {
                   mentionedJid: members,
-                  stanzaId: ֆǟӄʊʀǟ.replyMessageId,
-                  participant: ֆǟӄʊʀǟ.replyParticipant,
-                  quotedMessage: {
-                    conversation: ֆǟӄʊʀǟ.replyMessage,
-                  },
                 },
                 caption: `˜”*°•| 𝐇𝐞𝐚𝐫 𝐘𝐚 𝐇𝐞𝐚𝐫 𝐘𝐚 |•°*”˜
 
