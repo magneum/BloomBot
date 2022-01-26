@@ -57,8 +57,8 @@ exports.catch = async (Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat) => {
       footerText: `|(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 | 𝐄𝐧𝐠𝐢𝐧𝐞: _KryoZen 3_\n${Clock}`,
       buttons: [
         {
-          buttonId: `${ᴋᴇɪ}bugreport`,
-          buttonText: { displayText: `${ᴋᴇɪ}bugreport` },
+          buttonId: `${ᴋᴇɪ}help`,
+          buttonText: { displayText: `${ᴋᴇɪ}help` },
           type: 1,
         },
       ],
