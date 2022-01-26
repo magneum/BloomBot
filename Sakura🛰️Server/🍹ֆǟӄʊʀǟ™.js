@@ -328,223 +328,212 @@ ${update.desc}`,
     var ֆǟӄʊʀǟ = ֆǟӄʊʀǟǟքք.resolve(chat, ӄʀǟӄɨռʐ, groupMetadata);
     var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
     var ꜱᴇɴᴅᴇʀeceived = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
-    var CheckBans = await BanList.getBanlistUser(աɦօֆɛռȶɦǟȶ, ֆǟӄʊʀǟ.chatId);
-    if (CheckBans === true && !ֆǟӄʊʀǟ.fromMe) {
+    console.log(
+      Kolor.green(
+        "|⬡═════════════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |═════════════════════════════════════════════════════⬡|"
+      )
+    );
+    try {
+      const ᴍɪᴢᴜᴋɪɢɪᴛ = require(`simple-git`)();
+      await ᴍɪᴢᴜᴋɪɢɪᴛ.fetch();
+      var ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ = await ᴍɪᴢᴜᴋɪɢɪᴛ.log([
+        `KrakinzLab..origin/KrakinzLab`,
+      ]);
+      if (ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total != 0) {
+        require(`simple-git`)()
+          .exec(async () => {
+            console.log(
+              Kolor.yellow(`💡INFO ⬰ 𝐍𝐞𝐰 𝐔𝐩𝐝𝐚𝐭𝐞 𝐩𝐞𝐧𝐝𝐢𝐧𝐠, 𝐮𝐩𝐝𝐚𝐭𝐢𝐧𝐠...`)
+            );
+          })
+          .pull(async (Error, update) => {
+            if (Error) {
+              try {
+                const mergeSummary = await ᴍɪᴢᴜᴋɪɢɪᴛ.merge();
+                console.log(
+                  Kolor.green(
+                    `💡INFO ⬰ 𝗔𝘂𝘁𝗼-𝗨𝗽𝗱𝗮𝘁𝗲𝗱 ⚡𝐒𝐚𝐤𝐮𝐫𝐚™ 𝘄𝗶𝘁𝗵 𝗹𝗮𝘁𝗲𝘀𝘁 [${mergeSummary.merges.length}] 𝗰𝗵𝗮𝗻𝗴𝗲𝘀.`
+                  )
+                );
+              } catch (Error) {
+                console.log(
+                  Kolor.red(
+                    `❌ERROR ⬰ 𝗠𝗲𝗿𝗴𝗲 𝗿𝗲𝘀𝘂𝗹𝘁𝗲𝗱 𝗶𝗻 ${Kolor.red(Error)} 𝗰𝗼𝗻𝗳𝗹𝗶𝗰𝘁𝘀!`
+                  )
+                );
+              }
+            } else if (update && update.summary.changes) {
+              var child = require(`child_process`).exec(`npm i --force`);
+              child.stdout.pipe(process.stdout);
+              child.on(`exit`, async function () {
+                process.exitCode = 1;
+                var childs = require(`child_process`).exec(
+                  `python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`
+                );
+                childs.stdout.pipe(process.stdout);
+                childs.on(`exit`, async function () {
+                  process.exitCode = 1;
+                });
+              });
+            }
+          });
+      }
+    } catch (Error) {
+      console.log(Error);
       console.log(
         Kolor.red(
-          "|⬡═════════════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |═════════════════════════════════════════════════════⬡|"
+          `❌ERROR ⬰ 𝗜𝗳 𝗶𝘁 𝘄𝗮𝘀 𝗮 𝗕𝗜𝗚 ⚡𝐒𝐚𝐤𝐮𝐫𝐚™ 𝘂𝗽𝗱𝗮𝘁𝗲 𝘁𝗵𝗲𝗻 𝗣𝗹𝗲𝗮𝘀𝗲 𝗿𝗲𝗱𝗲𝗽𝗹𝗼𝘆 𝘆𝗼𝘂𝗿 𝗯𝗼𝘁!`
         )
       );
-      return;
-    } else {
-      console.log(
-        Kolor.green(
-          "|⬡═════════════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |═════════════════════════════════════════════════════⬡|"
-        )
-      );
+    }
+    `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+    if (ֆǟӄʊʀǟ.isGroup && !ֆǟӄʊʀǟ.fromMe) {
+      let xpAdd = Math.ceil(Math.random() * 10);
       try {
-        const ᴍɪᴢᴜᴋɪɢɪᴛ = require(`simple-git`)();
-        await ᴍɪᴢᴜᴋɪɢɪᴛ.fetch();
-        var ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ = await ᴍɪᴢᴜᴋɪɢɪᴛ.log([
-          `KrakinzLab..origin/KrakinzLab`,
-        ]);
-        if (ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total != 0) {
-          require(`simple-git`)()
-            .exec(async () => {
-              console.log(
-                Kolor.yellow(`💡INFO ⬰ 𝐍𝐞𝐰 𝐔𝐩𝐝𝐚𝐭𝐞 𝐩𝐞𝐧𝐝𝐢𝐧𝐠, 𝐮𝐩𝐝𝐚𝐭𝐢𝐧𝐠...`)
-              );
-            })
-            .pull(async (Error, update) => {
-              if (Error) {
-                try {
-                  const mergeSummary = await ᴍɪᴢᴜᴋɪɢɪᴛ.merge();
-                  console.log(
-                    Kolor.green(
-                      `💡INFO ⬰ 𝗔𝘂𝘁𝗼-𝗨𝗽𝗱𝗮𝘁𝗲𝗱 ⚡𝐒𝐚𝐤𝐮𝐫𝐚™ 𝘄𝗶𝘁𝗵 𝗹𝗮𝘁𝗲𝘀𝘁 [${mergeSummary.merges.length}] 𝗰𝗵𝗮𝗻𝗴𝗲𝘀.`
-                    )
-                  );
-                } catch (Error) {
-                  console.log(
-                    Kolor.red(
-                      `❌ERROR ⬰ 𝗠𝗲𝗿𝗴𝗲 𝗿𝗲𝘀𝘂𝗹𝘁𝗲𝗱 𝗶𝗻 ${Kolor.red(
-                        Error
-                      )} 𝗰𝗼𝗻𝗳𝗹𝗶𝗰𝘁𝘀!`
-                    )
-                  );
-                }
-              } else if (update && update.summary.changes) {
-                var child = require(`child_process`).exec(`npm i --force`);
-                child.stdout.pipe(process.stdout);
-                child.on(`exit`, async function () {
-                  process.exitCode = 1;
-                  var childs = require(`child_process`).exec(
-                    `python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`
-                  );
-                  childs.stdout.pipe(process.stdout);
-                  childs.on(`exit`, async function () {
-                    process.exitCode = 1;
-                  });
-                });
-              }
-            });
-        }
-      } catch (Error) {
-        console.log(Error);
-        console.log(
-          Kolor.red(
-            `❌ERROR ⬰ 𝗜𝗳 𝗶𝘁 𝘄𝗮𝘀 𝗮 𝗕𝗜𝗚 ⚡𝐒𝐚𝐤𝐮𝐫𝐚™ 𝘂𝗽𝗱𝗮𝘁𝗲 𝘁𝗵𝗲𝗻 𝗣𝗹𝗲𝗮𝘀𝗲 𝗿𝗲𝗱𝗲𝗽𝗹𝗼𝘆 𝘆𝗼𝘂𝗿 𝗯𝗼𝘁!`
-          )
-        );
+        𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄʀǟӄɨռʐ.getProfilePicture(աɦօֆɛռȶɦǟȶ);
+      } catch {
+        𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = "https://i.postimg.cc/gcw6vq3X/Npp.png";
       }
-      `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-      if (ֆǟӄʊʀǟ.isGroup && !ֆǟӄʊʀǟ.fromMe) {
-        let xpAdd = Math.ceil(Math.random() * 10);
-        try {
-          𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄʀǟӄɨռʐ.getProfilePicture(աɦօֆɛռȶɦǟȶ);
-        } catch {
-          𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = "https://i.postimg.cc/gcw6vq3X/Npp.png";
-        }
-        try {
-          await UsersSakura.findOne(
-            {
-              ID: աɦօֆɛռȶɦǟȶ,
-            },
-            async (Error, users) => {
-              var randomMC = require("random-material-color");
-              const Canvas = require("canvas");
-              var color = randomMC.getColor();
-              console.log(users);
-              if (Error) return console.log(Error);
-              if (!users) {
-                var newUsers = new UsersSakura({
-                  ID: աɦօֆɛռȶɦǟȶ,
-                  xp: xpAdd,
-                  level: 0,
-                });
-                newUsers.save().catch((Error) => console.log(Error));
-              } else {
-                var currentLvl = users.level;
-                var currentXP = users.xp;
-                if (currentLvl < 5) {
-                  var nxtlvl = 50 * Math.pow(2, currentLvl);
-                } else if (currentLvl >= 5) {
-                  var nxtlvl = 100 * Math.pow(2, currentLvl);
-                } else if (currentLvl >= 10) {
-                  var nxtlvl = 150 * Math.pow(2, currentLvl);
-                } else if (currentLvl >= 20) {
-                  var nxtlvl = 250 * Math.pow(2, currentLvl);
-                } else if (currentLvl >= 30) {
-                  var nxtlvl = 300 * Math.pow(2, currentLvl);
-                } else if (currentLvl >= 40) {
-                  var nxtlvl = 350 * Math.pow(2, currentLvl);
-                } else if (currentLvl >= 50) {
-                  var nxtlvl = 400 * Math.pow(2, currentLvl);
-                } else if (currentLvl >= 60) {
-                  var nxtlvl = 450 * Math.pow(2, currentLvl);
-                } else if (currentLvl >= 70) {
-                  var nxtlvl = 500 * Math.pow(2, currentLvl);
-                } else if (currentLvl >= 80) {
-                  var nxtlvl = 550 * Math.pow(2, currentLvl);
-                } else if (currentLvl >= 90) {
-                  var nxtlvl = 600 * Math.pow(2, currentLvl);
-                } else if (currentLvl >= 100) {
-                  var nxtlvl = 750 * Math.pow(2, currentLvl);
-                }
-                users.xp = users.xp + xpAdd;
-                if (users.xp >= nxtlvl) {
-                  users.level = currentLvl + 1;
+      try {
+        await UsersSakura.findOne(
+          {
+            ID: աɦօֆɛռȶɦǟȶ,
+          },
+          async (Error, users) => {
+            var randomMC = require("random-material-color");
+            const Canvas = require("canvas");
+            var color = randomMC.getColor();
+            console.log(users);
+            if (Error) return console.log(Error);
+            if (!users) {
+              var newUsers = new UsersSakura({
+                ID: աɦօֆɛռȶɦǟȶ,
+                xp: xpAdd,
+                level: 0,
+              });
+              newUsers.save().catch((Error) => console.log(Error));
+            } else {
+              var currentLvl = users.level;
+              var currentXP = users.xp;
+              if (currentLvl < 5) {
+                var nxtlvl = 50 * Math.pow(2, currentLvl);
+              } else if (currentLvl >= 5) {
+                var nxtlvl = 100 * Math.pow(2, currentLvl);
+              } else if (currentLvl >= 10) {
+                var nxtlvl = 150 * Math.pow(2, currentLvl);
+              } else if (currentLvl >= 20) {
+                var nxtlvl = 250 * Math.pow(2, currentLvl);
+              } else if (currentLvl >= 30) {
+                var nxtlvl = 300 * Math.pow(2, currentLvl);
+              } else if (currentLvl >= 40) {
+                var nxtlvl = 350 * Math.pow(2, currentLvl);
+              } else if (currentLvl >= 50) {
+                var nxtlvl = 400 * Math.pow(2, currentLvl);
+              } else if (currentLvl >= 60) {
+                var nxtlvl = 450 * Math.pow(2, currentLvl);
+              } else if (currentLvl >= 70) {
+                var nxtlvl = 500 * Math.pow(2, currentLvl);
+              } else if (currentLvl >= 80) {
+                var nxtlvl = 550 * Math.pow(2, currentLvl);
+              } else if (currentLvl >= 90) {
+                var nxtlvl = 600 * Math.pow(2, currentLvl);
+              } else if (currentLvl >= 100) {
+                var nxtlvl = 750 * Math.pow(2, currentLvl);
+              }
+              users.xp = users.xp + xpAdd;
+              if (users.xp >= nxtlvl) {
+                users.level = currentLvl + 1;
 
-                  const canvas = Canvas.createCanvas(800, 300);
-                  const ctx = canvas.getContext("2d");
-                  const background = await Canvas.loadImage(
-                    "https://cdn.discordapp.com/attachments/779452147326648360/803042845363011624/unknown.png"
-                  );
-                  ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
-                  ctx.strokeStyle = "#74037b";
-                  ctx.strokeRect(0, 0, canvas.width, canvas.height);
-                  ctx.font = "50px TheHeartOfEverythingDemo";
-                  ctx.fillStyle = "#1a1a1a";
-                  ctx.fillText(`Congrats You Ranked Up!`, 230, 120);
-                  ctx.beginPath();
-                  ctx.lineWidth = 2;
-                  ctx.fillStyle = color;
-                  ctx.moveTo(220, 135);
-                  ctx.lineTo(690, 135);
-                  ctx.quadraticCurveTo(710, 135, 710, 152.5);
-                  ctx.quadraticCurveTo(710, 170, 690, 170);
-                  ctx.lineTo(220, 170);
-                  ctx.lineTo(220, 135);
-                  ctx.fill();
-                  ctx.closePath();
-                  ctx.beginPath();
-                  ctx.arc(130, 155, 110, 0, Math.PI * 2, true);
-                  ctx.lineWidth = 2;
-                  ctx.fillStyle = color;
-                  ctx.moveTo(220, 135);
-                  ctx.lineTo(220, 170);
-                  ctx.lineTo(220, 135);
-                  ctx.fill();
-                  ctx.font = "30px LobsterTwo-Bold";
-                  ctx.fillStyle = "#000";
-                  ctx.fillText(`${currentXP}XP |Lvl: ${currentLvl}`, 250, 162);
-                  ctx.closePath();
-                  ctx.beginPath();
-                  ctx.arc(125, 150, 100, 0, Math.PI * 2, true);
-                  ctx.closePath();
-                  ctx.clip();
-                  const avatar = await Canvas.loadImage(𝕻𝕻𝖑𝖊𝖙𝖊𝖗);
-                  ctx.drawImage(avatar, 25, 50, 200, 200);
-                  const out = fs.createWriteStream(
-                    `${աɦօֆɛռȶɦǟȶ.toString()}.jpeg`
-                  );
-                  `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-                  const stream = canvas.createJPEGStream();
-                  stream.pipe(out);
-                  out.on(`finish`, () => {
-                    try {
-                      Economy.findOne(
-                        {
-                          ID: աɦօֆɛռȶɦǟȶ,
-                        },
-                        async (Error, userEco) => {
-                          console.log(userEco);
-                          if (Error) return console.log(Error);
-                          if (!userEco) {
-                            var newUser = new Economy({
-                              ID: աɦօֆɛռȶɦǟȶ,
-                              money: 200,
-                              daily: 0,
-                              timeout: 86400000,
-                              fishdone: 0,
-                              fishtimeout: 1800000,
-                              workdone: 0,
-                              worktimeout: 900000,
-                            });
-                            await newUser
-                              .save()
-                              .catch((Error) =>
-                                ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
-                              );
-                            try {
-                              var groupDataRank = await ӄʀǟӄɨռʐ.groupMetadata(
-                                chat.key.remoteJid
-                              );
-                              await ӄʀǟӄɨռʐ
-                                .sendMessage(
-                                  ֆǟӄʊʀǟ.chatId,
-                                  fs.readFileSync(
-                                    `${աɦօֆɛռȶɦǟȶ.toString()}.jpeg`
-                                  ),
-                                  MessageType.image,
-                                  {
-                                    mimetype: Mimetype.jpeg,
-                                    quoted: chat,
-                                    contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
-                                    caption: `✨𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬 @${աɦօֆɛռȶɦǟȶ.substring(
-                                      0,
-                                      աɦօֆɛռȶɦǟȶ.length - 15
-                                    )}, 𝐘𝐨𝐮 𝐇𝐚𝐯𝐞 𝐋𝐞𝐯𝐞𝐥𝐞𝐝 𝐔𝐏!
+                const canvas = Canvas.createCanvas(800, 300);
+                const ctx = canvas.getContext("2d");
+                const background = await Canvas.loadImage(
+                  "https://cdn.discordapp.com/attachments/779452147326648360/803042845363011624/unknown.png"
+                );
+                ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
+                ctx.strokeStyle = "#74037b";
+                ctx.strokeRect(0, 0, canvas.width, canvas.height);
+                ctx.font = "50px TheHeartOfEverythingDemo";
+                ctx.fillStyle = "#1a1a1a";
+                ctx.fillText(`Congrats You Ranked Up!`, 230, 120);
+                ctx.beginPath();
+                ctx.lineWidth = 2;
+                ctx.fillStyle = color;
+                ctx.moveTo(220, 135);
+                ctx.lineTo(690, 135);
+                ctx.quadraticCurveTo(710, 135, 710, 152.5);
+                ctx.quadraticCurveTo(710, 170, 690, 170);
+                ctx.lineTo(220, 170);
+                ctx.lineTo(220, 135);
+                ctx.fill();
+                ctx.closePath();
+                ctx.beginPath();
+                ctx.arc(130, 155, 110, 0, Math.PI * 2, true);
+                ctx.lineWidth = 2;
+                ctx.fillStyle = color;
+                ctx.moveTo(220, 135);
+                ctx.lineTo(220, 170);
+                ctx.lineTo(220, 135);
+                ctx.fill();
+                ctx.font = "30px LobsterTwo-Bold";
+                ctx.fillStyle = "#000";
+                ctx.fillText(`${currentXP}XP |Lvl: ${currentLvl}`, 250, 162);
+                ctx.closePath();
+                ctx.beginPath();
+                ctx.arc(125, 150, 100, 0, Math.PI * 2, true);
+                ctx.closePath();
+                ctx.clip();
+                const avatar = await Canvas.loadImage(𝕻𝕻𝖑𝖊𝖙𝖊𝖗);
+                ctx.drawImage(avatar, 25, 50, 200, 200);
+                const out = fs.createWriteStream(
+                  `${աɦօֆɛռȶɦǟȶ.toString()}.jpeg`
+                );
+                `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+                const stream = canvas.createJPEGStream();
+                stream.pipe(out);
+                out.on(`finish`, () => {
+                  try {
+                    Economy.findOne(
+                      {
+                        ID: աɦօֆɛռȶɦǟȶ,
+                      },
+                      async (Error, userEco) => {
+                        console.log(userEco);
+                        if (Error) return console.log(Error);
+                        if (!userEco) {
+                          var newUser = new Economy({
+                            ID: աɦօֆɛռȶɦǟȶ,
+                            money: 200,
+                            daily: 0,
+                            timeout: 86400000,
+                            fishdone: 0,
+                            fishtimeout: 1800000,
+                            workdone: 0,
+                            worktimeout: 900000,
+                          });
+                          await newUser
+                            .save()
+                            .catch((Error) =>
+                              ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
+                            );
+                          try {
+                            var groupDataRank = await ӄʀǟӄɨռʐ.groupMetadata(
+                              chat.key.remoteJid
+                            );
+                            await ӄʀǟӄɨռʐ
+                              .sendMessage(
+                                ֆǟӄʊʀǟ.chatId,
+                                fs.readFileSync(
+                                  `${աɦօֆɛռȶɦǟȶ.toString()}.jpeg`
+                                ),
+                                MessageType.image,
+                                {
+                                  mimetype: Mimetype.jpeg,
+                                  quoted: chat,
+                                  contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
+                                  caption: `✨𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬 @${աɦօֆɛռȶɦǟȶ.substring(
+                                    0,
+                                    աɦօֆɛռȶɦǟȶ.length - 15
+                                  )}, 𝐘𝐨𝐮 𝐇𝐚𝐯𝐞 𝐋𝐞𝐯𝐞𝐥𝐞𝐝 𝐔𝐏!
 
 ╔════◇📜𝐑𝐚𝐧𝐤 𝐂𝐚𝐫𝐝
 ║🥂 *Xp:* ${currentXP}
@@ -561,45 +550,43 @@ ${update.desc}`,
 ║🎉The More You Talk, The More 𝐗𝐏+𝐂𝐨𝐢𝐧𝐬 You Gain.
 ║🎉You Can Spend The Coins in ${ᴋᴇɪ}store!
 ╚════════════╝`,
-                                  }
-                                )
-                                .then(
-                                  cleanRF.cleanRF(
-                                    `${աɦօֆɛռȶɦǟȶ.toString()}.jpeg`
-                                  )
-                                );
-                            } catch (Error) {
-                              console.log(Error);
-                            }
-                            `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-                          } else {
-                            try {
-                              var groupDataRank = await ӄʀǟӄɨռʐ.groupMetadata(
-                                chat.key.remoteJid
+                                }
+                              )
+                              .then(
+                                cleanRF.cleanRF(`${աɦօֆɛռȶɦǟȶ.toString()}.jpeg`)
                               );
-                              var Ran =
-                                Math.floor(Math.random() * (100 - 50 + 1)) + 50;
-                              userEco.money = userEco.money + Ran;
-                              await userEco
-                                .save()
-                                .catch((Error) =>
-                                  ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
-                                );
-                              await ӄʀǟӄɨռʐ
-                                .sendMessage(
-                                  ֆǟӄʊʀǟ.chatId,
-                                  fs.readFileSync(
-                                    `${աɦօֆɛռȶɦǟȶ.toString()}.jpeg`
-                                  ),
-                                  MessageType.image,
-                                  {
-                                    mimetype: Mimetype.jpeg,
-                                    quoted: chat,
-                                    contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
-                                    caption: `✨𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬 @${աɦօֆɛռȶɦǟȶ.substring(
-                                      0,
-                                      աɦօֆɛռȶɦǟȶ.length - 15
-                                    )}, 𝐘𝐨𝐮 𝐇𝐚𝐯𝐞 𝐋𝐞𝐯𝐞𝐥𝐞𝐝 𝐔𝐏!
+                          } catch (Error) {
+                            console.log(Error);
+                          }
+                          `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+                        } else {
+                          try {
+                            var groupDataRank = await ӄʀǟӄɨռʐ.groupMetadata(
+                              chat.key.remoteJid
+                            );
+                            var Ran =
+                              Math.floor(Math.random() * (100 - 50 + 1)) + 50;
+                            userEco.money = userEco.money + Ran;
+                            await userEco
+                              .save()
+                              .catch((Error) =>
+                                ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
+                              );
+                            await ӄʀǟӄɨռʐ
+                              .sendMessage(
+                                ֆǟӄʊʀǟ.chatId,
+                                fs.readFileSync(
+                                  `${աɦօֆɛռȶɦǟȶ.toString()}.jpeg`
+                                ),
+                                MessageType.image,
+                                {
+                                  mimetype: Mimetype.jpeg,
+                                  quoted: chat,
+                                  contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
+                                  caption: `✨𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬 @${աɦօֆɛռȶɦǟȶ.substring(
+                                    0,
+                                    աɦօֆɛռȶɦǟȶ.length - 15
+                                  )}, 𝐘𝐨𝐮 𝐇𝐚𝐯𝐞 𝐋𝐞𝐯𝐞𝐥𝐞𝐝 𝐔𝐏!
 
 ╔════◇📜𝐑𝐚𝐧𝐤 𝐂𝐚𝐫𝐝
 ║🥂 *Xp:* ${currentXP}
@@ -616,64 +603,62 @@ ${update.desc}`,
 ║🎉The More You Talk, The More 𝐗𝐏+𝐂𝐨𝐢𝐧𝐬 You Gain.
 ║🎉You Can Spend The Coins in ${ᴋᴇɪ}store!
 ╚════════════╝`,
-                                  }
-                                )
-                                .then(
-                                  cleanRF.cleanRF(
-                                    `${աɦօֆɛռȶɦǟȶ.toString()}.jpeg`
-                                  )
-                                );
-                            } catch (Error) {
-                              console.log(Error);
-                            }
+                                }
+                              )
+                              .then(
+                                cleanRF.cleanRF(`${աɦօֆɛռȶɦǟȶ.toString()}.jpeg`)
+                              );
+                          } catch (Error) {
+                            console.log(Error);
                           }
                         }
-                      );
-                    } catch (Error) {
-                      console.log(Error);
-                    }
-                  });
-                }
-                users.save().catch((Error) => console.log(Error));
+                      }
+                    );
+                  } catch (Error) {
+                    console.log(Error);
+                  }
+                });
               }
+              users.save().catch((Error) => console.log(Error));
             }
-          );
-        } catch (Error) {
-          console.log(Error);
-        }
+          }
+        );
+      } catch (Error) {
+        console.log(Error);
       }
-      `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-      const RegexYouTube =
-        /^((?:https?:)?\/\/)?((?:www|m)\.)?((?:youtube\.com|youtu.be))(\/(?:[\w\-]+\?v=|embed\/|v\/)?)([\w\-]+)(\S+)?$/;
-      if (
-        ֆǟӄʊʀǟ.isGroup &&
-        !_𝔏𝔞𝔟_.HASH &&
-        !ֆǟӄʊʀǟ.fromMe &&
-        !ֆǟӄʊʀǟ.isSenderDev &&
-        ֆǟӄʊʀǟ.isBotGroupAdmin &&
-        !ֆǟӄʊʀǟ.isSenderGroupAdmin &&
-        !RegexYouTube.test(ֆǟӄʊʀǟ.body) &&
-        ֆǟӄʊʀǟ.body.includes(`https://`)
-      ) {
-        LinkList.findOne(
-          {
-            serverID: ֆǟӄʊʀǟ.chatId,
-          },
-          async (Error, server) => {
-            if (Error) return console.log(Error);
-            if (!server) {
-              return;
-            } else {
-              const REMOVE = chat.key.fromMe
-                ? ӄʀǟӄɨռʐ.user.jid
-                : ֆǟӄʊʀǟ.isGroup
-                ? chat.participant
-                : chat.key.remoteJid;
-              await Sakura_Buttons.MIB(
-                ӄʀǟӄɨռʐ,
-                chat,
-                ֆǟӄʊʀǟ,
-                `
+    }
+    `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+    const RegexYouTube =
+      /^((?:https?:)?\/\/)?((?:www|m)\.)?((?:youtube\.com|youtu.be))(\/(?:[\w\-]+\?v=|embed\/|v\/)?)([\w\-]+)(\S+)?$/;
+    if (
+      ֆǟӄʊʀǟ.isGroup &&
+      !_𝔏𝔞𝔟_.HASH &&
+      !ֆǟӄʊʀǟ.fromMe &&
+      !ֆǟӄʊʀǟ.isSenderDev &&
+      ֆǟӄʊʀǟ.isBotGroupAdmin &&
+      !ֆǟӄʊʀǟ.isSenderGroupAdmin &&
+      !RegexYouTube.test(ֆǟӄʊʀǟ.body) &&
+      ֆǟӄʊʀǟ.body.includes(`https://`)
+    ) {
+      LinkList.findOne(
+        {
+          serverID: ֆǟӄʊʀǟ.chatId,
+        },
+        async (Error, server) => {
+          if (Error) return console.log(Error);
+          if (!server) {
+            return;
+          } else {
+            const REMOVE = chat.key.fromMe
+              ? ӄʀǟӄɨռʐ.user.jid
+              : ֆǟӄʊʀǟ.isGroup
+              ? chat.participant
+              : chat.key.remoteJid;
+            await Sakura_Buttons.MIB(
+              ӄʀǟӄɨռʐ,
+              chat,
+              ֆǟӄʊʀǟ,
+              `
 ╔════◇🌋  𝐀𝐧𝐭𝐢𝐥𝐢𝐧𝐤 𝐓𝐫𝐢𝐠𝐠𝐞𝐫𝐞𝐝
 ║🔻 𝗣𝘂𝗻𝗶𝘀𝗵𝗺𝗲𝗻𝘁: _You Will Be Kicked!_
 ║🔻 𝗞𝗶𝗰𝗸-𝗧𝗶𝗺𝗲: _6sec_
@@ -684,108 +669,109 @@ ${update.desc}`,
 ║🍃 𝗡𝗼𝗻-𝗔𝗱𝗺𝗶𝗻: _(Yes)_
 ║🍃 𝗙𝗿𝗼𝗺: _(id-${REMOVE})_
 ╚════════════╝`,
-                `./Sakura☣️Reactor/Sakura_Antilink.png`
-              );
-              setTimeout(() => {
-                ӄʀǟӄɨռʐ
-                  .groupRemove(ֆǟӄʊʀǟ.chatId, [REMOVE])
-                  .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-              }, 6000);
-              return;
-            }
+              `./Sakura☣️Reactor/Sakura_Antilink.png`
+            );
+            setTimeout(() => {
+              ӄʀǟӄɨռʐ
+                .groupRemove(ֆǟӄʊʀǟ.chatId, [REMOVE])
+                .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+            }, 6000);
+            return;
           }
-        );
-      }
-      `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-      if (ֆǟӄʊʀǟ.isCmd) {
-        const gcDev = "120363039223842047@g.us";
-        const gMetadata = await ӄʀǟӄɨռʐ.groupMetadata(gcDev);
-        let members = [];
-        for (var i = 0; i < gMetadata.participants.length; i++) {
-          members[i] = gMetadata.participants[i].jid;
         }
-        if (
-          ֆǟӄʊʀǟ.isCmd &&
-          !ֆǟӄʊʀǟ.body.includes(ᴋᴇɪ + "help") &&
-          !ֆǟӄʊʀǟ.body.includes(ᴋᴇɪ + "request")
-        )
-          if (!members.includes(աɦօֆɛռȶɦǟȶ)) {
-            return Sakura_Buttons.MTB(
-              ӄʀǟӄɨռʐ,
-              chat,
-              ֆǟӄʊʀǟ,
-              `
+      );
+    }
+    `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+    if (ֆǟӄʊʀǟ.isCmd) {
+      var CheckBans = await BanList.getBanlistUser(աɦօֆɛռȶɦǟȶ, ֆǟӄʊʀǟ.chatId);
+      if (CheckBans === true && !ֆǟӄʊʀǟ.fromMe) turn;
+      const gcDev = "120363039223842047@g.us";
+      const gMetadata = await ӄʀǟӄɨռʐ.groupMetadata(gcDev);
+      let members = [];
+      for (var i = 0; i < gMetadata.participants.length; i++) {
+        members[i] = gMetadata.participants[i].jid;
+      }
+      if (
+        ֆǟӄʊʀǟ.isCmd &&
+        !ֆǟӄʊʀǟ.body.includes(ᴋᴇɪ + "help") &&
+        !ֆǟӄʊʀǟ.body.includes(ᴋᴇɪ + "request")
+      )
+        if (!members.includes(աɦօֆɛռȶɦǟȶ)) {
+          return Sakura_Buttons.MTB(
+            ӄʀǟӄɨռʐ,
+            chat,
+            ֆǟӄʊʀǟ,
+            `
 ╔════◇𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
 ║🍹 @${ꜱᴇɴᴅᴇʀeceived},
 ║♨️ _First be a member of Sakura Group!_
 ║🚨 *Why?* _Monitor AntiSpams & BugReports_
 ╚════════════╝`
-            );
-          }
-        console.log("Participant a Member of SakuraGC");
-        `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-        const jsoncool = JSON.parse(
-          fs.readFileSync("./Sakura🛰️Server/Coolist.json")
-        );
-        if (jsoncool.includes(աɦօֆɛռȶɦǟȶ)) {
-          if (ֆǟӄʊʀǟ.fromMe) {
-            return ӄʀǟӄɨռʐ.sendMessage(
-              ֆǟӄʊʀǟ.chatId,
-              `*🙏🏽‍Sir Please Wait For 5s!*`,
-              MessageType.text,
-              { quoted: chat }
-            );
-          } else {
-            return ӄʀǟӄɨռʐ.sendMessage(
-              ֆǟӄʊʀǟ.chatId,
-              `*AntiSpam🦋CoolDown:* _Wait For 15s!_`,
-              MessageType.text,
-              { quoted: chat }
-            );
-          }
+          );
         }
-        `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-        console.log(
-          Kolor.red(
-            `⬡============⬡🍹ֆǟӄʊʀǟ™ Verified File: ` +
-              ֆǟӄʊʀǟ.commandName.toUpperCase() +
-              `🍃⬡============⬡`
-          )
-        );
-        console.log(chat);
-        console.log(
-          Kolor.red(
-            `⬡==========================⬡    🍹 ֆǟӄʊʀǟ™ 🍹    ⬡==========================⬡`
-          )
-        );
-        `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-        const ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ = ꜱɪᴛʀᴀᴘ.get(ֆǟӄʊʀǟ.commandName);
-        var Needs = ֆǟӄʊʀǟ.body.trim().split(/\s+/).slice(1);
-        if (!ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ) {
-          return Sakura_Buttons.MTB(
-            ӄʀǟӄɨռʐ,
-            chat,
-            ֆǟӄʊʀǟ,
-            `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived},
+      console.log("Participant a Member of SakuraGC");
+      `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+      const jsoncool = JSON.parse(
+        fs.readFileSync("./Sakura🛰️Server/Coolist.json")
+      );
+      if (jsoncool.includes(աɦօֆɛռȶɦǟȶ)) {
+        if (ֆǟӄʊʀǟ.fromMe) {
+          return ӄʀǟӄɨռʐ.sendMessage(
+            ֆǟӄʊʀǟ.chatId,
+            `*🙏🏽‍Sir Please Wait For 5s!*`,
+            MessageType.text,
+            { quoted: chat }
+          );
+        } else {
+          return ӄʀǟӄɨռʐ.sendMessage(
+            ֆǟӄʊʀǟ.chatId,
+            `*AntiSpam🦋CoolDown:* _Wait For 15s!_`,
+            MessageType.text,
+            { quoted: chat }
+          );
+        }
+      }
+      `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+      console.log(
+        Kolor.red(
+          `⬡============⬡🍹ֆǟӄʊʀǟ™ Verified File: ` +
+            ֆǟӄʊʀǟ.commandName.toUpperCase() +
+            `🍃⬡============⬡`
+        )
+      );
+      console.log(chat);
+      console.log(
+        Kolor.red(
+          `⬡==========================⬡    🍹 ֆǟӄʊʀǟ™ 🍹    ⬡==========================⬡`
+        )
+      );
+      `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+      const ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ = ꜱɪᴛʀᴀᴘ.get(ֆǟӄʊʀǟ.commandName);
+      var Needs = ֆǟӄʊʀǟ.body.trim().split(/\s+/).slice(1);
+      if (!ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ) {
+        return Sakura_Buttons.MTB(
+          ӄʀǟӄɨռʐ,
+          chat,
+          ֆǟӄʊʀǟ,
+          `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived},
 
 ╔════| 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
 ║❌ *No Such Command in Database!*
 ║🍃 𝐏𝐫𝐞𝐬𝐬 𝐅𝐨𝐫 𝐒𝐚𝐤𝐮𝐫𝐚 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬👇🏽
 ╚════════════╝`
-          );
-        } else {
-          `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-          return ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ.handle(
-            ӄʀǟӄɨռʐ,
-            chat,
-            ֆǟӄʊʀǟ,
-            Needs,
-            ꜱɪᴛʀᴀᴘ,
-            Clock,
-            Ping,
-            Timers
-          );
-        }
+        );
+      } else {
+        `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+        return ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ.handle(
+          ӄʀǟӄɨռʐ,
+          chat,
+          ֆǟӄʊʀǟ,
+          Needs,
+          ꜱɪᴛʀᴀᴘ,
+          Clock,
+          Ping,
+          Timers
+        );
       }
     }
   });
