@@ -53,7 +53,7 @@ module.exports = {
           {
             mimetype: `video/gif`,
             contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
-            caption: `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived}, (owner)
+            caption: `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived}, (owner)
 
 *🍹ֆǟӄʊʀǟ™ Is Now Rebooting...*
 _Wait For (10-30)s_`,

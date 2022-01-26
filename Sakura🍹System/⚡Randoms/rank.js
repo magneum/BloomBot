@@ -47,7 +47,7 @@ module.exports = {
             ӄʀǟӄɨռʐ,
             chat,
             ֆǟӄʊʀǟ,
-            `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived}, _This Command is Only For Groups!_!`
+            `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived}, _This Command is Only For Groups!_!`
           );
         } catch (Error) {
           ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
@@ -99,7 +99,7 @@ module.exports = {
                   quoted: chat,
                   mimetype: Mimetype.jpeg,
                   contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
-                  caption: `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived}
+                  caption: `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived}
 
 ╔═══════📜𝐑𝐚𝐧𝐤 𝐂𝐚𝐫𝐝
 ║🥂 𝗫𝗣: ${users.xp}

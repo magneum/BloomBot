@@ -33,7 +33,7 @@ module.exports = {
           ӄʀǟӄɨռʐ,
           chat,
           ֆǟӄʊʀǟ,
-          `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived}, 
+          `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived}, 
 
 ╔════◇🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧 
 ║💡 _This Command is Only For Groups!_
@@ -46,7 +46,7 @@ module.exports = {
           ӄʀǟӄɨռʐ,
           chat,
           ֆǟӄʊʀǟ,
-          `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived},
+          `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived},
 ╔════◇🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧 
 ║💡 *Admins Only*
 ║❌ _You Are Not Allowed!_
@@ -60,7 +60,7 @@ module.exports = {
           ӄʀǟӄɨռʐ,
           chat,
           ֆǟӄʊʀǟ,
-          `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived}, 
+          `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived}, 
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 ║❌ *How Can I Use Admin Only Commands If i am not admin?*
@@ -95,7 +95,7 @@ module.exports = {
             caption: `| (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 |
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-🥳𝐅𝐫𝐨𝐦: ✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived}
+🥳𝐅𝐫𝐨𝐦: 🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived}
 🤩𝐓𝐨: Everyone!
 
 
@@ -117,7 +117,7 @@ _⚠️Attention Everyone Here In the Group!_`,
             caption: `| (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 |
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-🥳𝐅𝐫𝐨𝐦: ✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived}
+🥳𝐅𝐫𝐨𝐦: 🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived}
 🤩𝐓𝐨: Everyone!
 
 
@@ -139,7 +139,7 @@ ${ֆǟӄʊʀǟ.body.replace(ֆǟӄʊʀǟ.body[0] + ֆǟӄʊʀǟ.commandName + " 
             caption: `| (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 |
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-🥳𝐅𝐫𝐨𝐦: ✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived}
+🥳𝐅𝐫𝐨𝐦: 🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived}
 🤩𝐓𝐨: Everyone!
 
 
@@ -158,7 +158,7 @@ ${ֆǟӄʊʀǟ.replyMessage.replace(ֆǟӄʊʀǟ.body[0] + ֆǟӄʊʀǟ.commandN
             caption: `| (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 |
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-🥳𝐅𝐫𝐨𝐦: ✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived}
+🥳𝐅𝐫𝐨𝐦: 🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived}
 🤩𝐓𝐨: Everyone!
 
 

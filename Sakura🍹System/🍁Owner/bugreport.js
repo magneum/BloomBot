@@ -60,7 +60,7 @@ module.exports = {
         .sendMessage(
           ֆǟӄʊʀǟ.chatId,
           {
-            contentText: `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived},
+            contentText: `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived},
 *Thank you for reporting the bug to the Developers!*
 _If Found the report was just for fun then you will be banned by the bot!_
 

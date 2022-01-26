@@ -89,7 +89,7 @@ module.exports = {
               ӄʀǟӄɨռʐ,
               chat,
               ֆǟӄʊʀǟ,
-              `*✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived}, Account Verified.Try Command Again!*`
+              `*🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived}, Account Verified.Try Command Again!*`
             );
           } else {
             `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
@@ -156,66 +156,6 @@ module.exports = {
             );
           }
           `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-          async function FFMPEG_GOT(Link, Title, Found) {
-            console.log("|⬡=========================⬡|🔗𝐓𝐢𝐧𝐲 𝐔𝐑𝐋 " + Link);
-            var YouFile = `${Date.now()}_${աɦօֆɛռȶɦǟȶ.toString()}.mp4`;
-            try {
-              require(`child_process`).exec(
-                `ffmpeg -i '${Link}' '${YouFile}'`,
-                async (Error) => {
-                  if (Error) {
-                    console.log(
-                      `|⬡=========================⬡|🔺𝐅𝐅𝐦𝐩𝐞𝐠 𝐄𝐫𝐫𝐨𝐫: ` + Error
-                    );
-                    userBadge.Limits = userBadge.Limits + 1;
-                    await userBadge
-                      .save()
-                      .catch((Error) =>
-                        ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
-                      );
-                    return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
-                  }
-                  console.log(
-                    `|⬡=========================⬡|🥂𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐅𝐢𝐧𝐢𝐬𝐞𝐝: ` +
-                      YouFile
-                  );
-                  await ӄʀǟӄɨռʐ
-                    .sendMessage(
-                      ֆǟӄʊʀǟ.chatId,
-                      fs.readFileSync(YouFile),
-                      MessageType.video,
-                      {
-                        quoted: chat,
-                        contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
-                        mimetype: "video/mp4",
-                        caption: `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived},
-╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-║🍻 𝐓𝐢𝐭𝐥𝐞: ${Found.title}
-║🙈 𝐕𝐢𝐞𝐰𝐬: ${Found.views}
-║⏰ 𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧: ${Found.timestamp}
-║✒️ 𝐀𝐮𝐭𝐡𝐨𝐫: ${Found.author.name}
-║📜 𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${Found.description}
-║🔗 𝐋𝐢𝐧𝐤: ${Found.url}
-╚════════════╝`,
-                      }
-                    )
-                    .then(cleanRF.cleanRF(YouFile))
-                    .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-                }
-              );
-              return;
-            } catch (Error) {
-              console.log(
-                `|⬡=========================⬡|🐞𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐄𝐫𝐫𝐨𝐫: ` + Error
-              );
-              userBadge.Limits = userBadge.Limits + 1;
-              await userBadge
-                .save()
-                .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-              return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
-            }
-          }
-          `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
           const LinkForGroups = await yts(Needs.join(` `));
           const GroupVideos = LinkForGroups.videos.slice(0, 1);
           GroupVideos.forEach(async function (Found) {
@@ -228,7 +168,7 @@ module.exports = {
                 ӄʀǟӄɨռʐ,
                 chat,
                 ֆǟӄʊʀǟ,
-                `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived}, 🎬𝐕𝐢𝐝𝐞𝐨
+                `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived}, 🎬𝐕𝐢𝐝𝐞𝐨
 𝗣𝗹𝗲𝗮𝘀𝗲 𝗖𝗵𝗼𝗼𝘀𝗲 𝗦𝗺𝗮𝗹𝗹𝗲𝗿 𝐕𝐢𝐝𝐞𝐨 𝗧𝗵𝗲𝗻 20-𝗺𝗶𝗻𝘂𝘁𝗲𝘀!
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
@@ -240,19 +180,79 @@ module.exports = {
               );
             }
             `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-            Sakura_Buttons.MTB(
-              ӄʀǟӄɨռʐ,
-              chat,
-              ֆǟӄʊʀǟ,
-              `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived}, 𝗣𝗹𝗲𝗮𝘀𝗲 𝘄𝗮𝗶𝘁 𝗳𝗼𝗿 𝘁𝗵𝗲 𝗱𝗲𝗹𝗶𝘃𝗲𝗿𝘆 𝗼𝗳 🎬𝐕𝐢𝐝𝐞𝐨!`
-            );
-            `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
             YouTube_Video(Found.url).then((res) => {
               const { dl_link, thumb, title, filesizeF, filesize } = res;
-              return axios
+              console.log(res);
+              axios
                 .get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
-                .then(async (AxioData) => {
-                  return await FFMPEG_GOT(AxioData.data, title, Found);
+                .then(async (a) => {
+                  Sakura_Buttons.MTB(
+                    ӄʀǟӄɨռʐ,
+                    chat,
+                    ֆǟӄʊʀǟ,
+                    `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived},\n𝗣𝗹𝗲𝗮𝘀𝗲 𝘄𝗮𝗶𝘁 𝗳𝗼𝗿 𝘁𝗵𝗲 𝗱𝗲𝗹𝗶𝘃𝗲𝗿𝘆 𝗼𝗳 🎬𝐕𝐢𝐝𝐞𝐨!`
+                  );
+                  try {
+                    var YouFile = `./${Found.videoId}_${Date.now()}.mp4`;
+                    console.log(Found);
+                    require(`child_process`).exec(
+                      `ffmpeg -i '${a.data}' '${YouFile}'`,
+                      async (Error) => {
+                        if (Error) {
+                          console.log(
+                            `|⬡══════════⬡|🔺𝐅𝐅𝐦𝐩𝐞𝐠 𝐄𝐫𝐫𝐨𝐫🔺|⬡══════════⬡|` +
+                              Error
+                          );
+                          userBadge.Limits = userBadge.Limits + 1;
+                          await userBadge
+                            .save()
+                            .catch((Error) =>
+                              ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
+                            );
+                          return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
+                        } else {
+                          console.log(
+                            `|⬡══════════⬡|🥂𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐅𝐢𝐧𝐢𝐬𝐞𝐝🥂|⬡══════════⬡|`
+                          );
+                          console.log("FileName: " + YouFile);
+                          await ӄʀǟӄɨռʐ
+                            .sendMessage(
+                              ֆǟӄʊʀǟ.chatId,
+                              fs.readFileSync(YouFile),
+                              MessageType.video,
+                              {
+                                quoted: chat,
+                                contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
+                                mimetype: "video/mp4",
+                                caption: `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived},
+
+╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+║🍻 𝐓𝐢𝐭𝐥𝐞: ${Found.title}
+║🙈 𝐕𝐢𝐞𝐰𝐬: ${Found.views}
+║⏰ 𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧: ${Found.timestamp}
+║✒️ 𝐀𝐮𝐭𝐡𝐨𝐫: ${Found.author.name}
+║🔗 𝐋𝐢𝐧𝐤: ${Found.url}
+║🦋 𝗧𝗶𝗻𝘆𝗨𝗿𝗹: ${a.data}
+║📜 𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${Found.description}
+╚════════════╝`,
+                              }
+                            )
+                            .catch((Error) =>
+                              ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
+                            );
+                          await cleanRF.cleanRF(YouFile);
+                        }
+                      }
+                    );
+                  } catch (Error) {
+                    userBadge.Limits = userBadge.Limits + 1;
+                    await userBadge
+                      .save()
+                      .catch((Error) =>
+                        ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
+                      );
+                    return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
+                  }
                 });
             });
             `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;

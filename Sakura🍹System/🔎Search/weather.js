@@ -53,7 +53,7 @@ module.exports = {
               ӄʀǟӄɨռʐ,
               chat,
               ֆǟӄʊʀǟ,
-              `*✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived}, Account Verified.Try Command Again!*`
+              `*🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived}, Account Verified.Try Command Again!*`
             );
           } else {
             `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
@@ -157,7 +157,7 @@ module.exports = {
                 ӄʀǟӄɨռʐ,
                 chat,
                 ֆǟӄʊʀǟ,
-                `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived},
+                `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived},
 
 ────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 🌸 𝐏𝐥𝐚𝐜𝐞: ${name}
@@ -181,7 +181,7 @@ module.exports = {
                 ӄʀǟӄɨռʐ,
                 chat,
                 ֆǟӄʊʀǟ,
-                `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived}, 
+                `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived}, 
 _Nothing Found For *${Needs.join(` `)}*_`
               );
             }

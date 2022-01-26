@@ -82,9 +82,10 @@ exports.SakuraGM = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ) => {
                 mimetype: `video/gif`,
                 caption: `|(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 | 𝐄𝐧𝐠𝐢𝐧𝐞: _KryoZen 3_\n${Clock} 
 
-────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-🍪 𝐅𝐫𝐨𝐦: ✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived}
-🍛 𝐓𝐨: @${personreceived}`,
+╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+║🍪 𝐅𝐫𝐨𝐦: @${ꜱᴇɴᴅᴇʀeceived}
+║🍛 𝐓𝐨: @${personreceived}
+╚════════════╝`,
               }
             )
             .then(
@@ -132,8 +133,9 @@ exports.SakuraGM = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ) => {
                 mimetype: `video/gif`,
                 caption: `|(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 | 𝐄𝐧𝐠𝐢𝐧𝐞: _KryoZen 3_\n${Clock} 
 
-────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-🍯𝐓𝐡𝐞𝐦𝐬𝐞𝐥𝐯𝐞: ✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived}`,
+╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+║🍪 𝐅𝐫𝐨𝐦: @${ꜱᴇɴᴅᴇʀeceived}
+╚════════════╝`,
               }
             )
             .then(

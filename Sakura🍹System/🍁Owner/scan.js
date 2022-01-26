@@ -64,7 +64,7 @@ module.exports = {
                   ӄʀǟӄɨռʐ,
                   chat,
                   ֆǟӄʊʀǟ,
-                  `✔️ ✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived}, *Sir Here Is The Verified Link!*
+                  `✔️ 🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived}, *Sir Here Is The Verified Link!*
 
 +sudolnk($req%+${Ping}+${Clock}%)
 ${_𝔏𝔞𝔟_.HASH.replace(`https://chat.whatsapp.com/`, `/kryo/`)}${value.result}`,
@@ -80,7 +80,7 @@ ${_𝔏𝔞𝔟_.HASH.replace(`https://chat.whatsapp.com/`, `/kryo/`)}${value.re
             ӄʀǟӄɨռʐ,
             chat,
             ֆǟӄʊʀǟ,
-            `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived},\n*Sir Please Reply To _QR-Code_!*`
+            `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived},\n*Sir Please Reply To _QR-Code_!*`
           );
         }
       }

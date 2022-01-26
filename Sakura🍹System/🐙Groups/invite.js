@@ -33,7 +33,7 @@ module.exports = {
           ӄʀǟӄɨռʐ,
           chat,
           ֆǟӄʊʀǟ,
-          `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived}, 
+          `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived}, 
 
 ╔════◇🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧 
 ║💡 _This Command is Only For Groups!_
@@ -46,7 +46,7 @@ module.exports = {
           ӄʀǟӄɨռʐ,
           chat,
           ֆǟӄʊʀǟ,
-          `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived},
+          `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived},
 ╔════◇🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧 
 ║💡 *Admins Only*
 ║❌ _You Are Not Allowed!_
@@ -60,7 +60,7 @@ module.exports = {
           ӄʀǟӄɨռʐ,
           chat,
           ֆǟӄʊʀǟ,
-          `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived}, 
+          `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived}, 
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 ║❌ *How Can I Use Admin Only Commands If i am not admin?*
@@ -85,7 +85,7 @@ module.exports = {
             ӄʀǟӄɨռʐ,
             chat,
             ֆǟӄʊʀǟ,
-            `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived}, _Invite link has been sent in their DM!_`
+            `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived}, _Invite link has been sent in their DM!_`
           );
         } catch (Error) {
           ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
@@ -100,7 +100,7 @@ module.exports = {
           .sendMessage(
             Receiver,
             {
-              contentText: `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 •@${personreceived}, 
+              contentText: `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 •@${personreceived}, 
 
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
@@ -136,7 +136,7 @@ module.exports = {
           .sendMessage(
             ֆǟӄʊʀǟ.chatId,
             {
-              contentText: `✋🏽‍𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived}, 
+              contentText: `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived}, 
 
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
