@@ -67,7 +67,7 @@ _If Found the report was just for fun then you will be banned by the bot!_
 
 ────★ 𝐒𝐮𝐩𝐩𝐨𝐫𝐭
 *🔥 ɢʀᴏᴜᴘ:* ${_𝔏𝔞𝔟_.HASH}`,
-            footerText: `| (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 |\n${Clock}`,
+            footerText: `|(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭|👿𝐄𝐧𝐠𝐢𝐧𝐞: _KryoZen 3_\n${Clock}`,
             buttons: [
               {
                 buttonId: `${ᴋᴇɪ}help`,
@@ -90,48 +90,12 @@ _If Found the report was just for fun then you will be banned by the bot!_
       `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
       await ӄʀǟӄɨռʐ
         .sendMessage(
-          `120363039223842047@g.us`,
-          fs.readFileSync(`./Sakura☣️Reactor/Sakura_Bug.mp4`),
-          MessageType.video,
-          {
-            mimetype: `video/gif`,
-            caption: `| (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 |\n${Clock}
-
-⚡𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
-🐞𝐑𝐞𝐩𝐨𝐫𝐭𝐞𝐝 𝐁𝐲: *${աɦօֆɛռȶɦǟȶ}*
-
-🐙=============🐙
-${Needs.join(` `)}`,
-          }
-        )
-        .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-
-      await ӄʀǟӄɨռʐ
-        .sendMessage(
-          `918250889325@s.whatsapp.net`,
-          fs.readFileSync(`./Sakura☣️Reactor/Sakura_Bug.mp4`),
-          MessageType.video,
-          {
-            mimetype: `video/gif`,
-            caption: `| (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 |\n${Clock}
-
-⚡𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
-🐞𝐑𝐞𝐩𝐨𝐫𝐭𝐞𝐝 𝐁𝐲: *${աɦօֆɛռȶɦǟȶ}*
-
-🐙=============🐙
-${Needs.join(` `)}`,
-          }
-        )
-        .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-
-      await ӄʀǟӄɨռʐ
-        .sendMessage(
           `918436686758@s.whatsapp.net`,
           fs.readFileSync(`./Sakura☣️Reactor/Sakura_Bug.mp4`),
           MessageType.video,
           {
             mimetype: `video/gif`,
-            caption: `| (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 |\n${Clock}
+            caption: `|(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭|👿𝐄𝐧𝐠𝐢𝐧𝐞: _KryoZen 3_\n${Clock}
 
 ⚡𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
 🐞𝐑𝐞𝐩𝐨𝐫𝐭𝐞𝐝 𝐁𝐲: *${աɦօֆɛռȶɦǟȶ}*

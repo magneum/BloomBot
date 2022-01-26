@@ -64,7 +64,7 @@ module.exports = {
 ╚════════════╝
 
 ☘️𝐏𝐫𝐞𝐬𝐬 𝐅𝐨𝐫 𝐒𝐚𝐤𝐮𝐫𝐚 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬👇🏽‍`,
-            footerText: `| (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 |\n_${Clock}_`,
+            footerText: `|(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭|👿𝐄𝐧𝐠𝐢𝐧𝐞: _KryoZen 3_\n${Clock}`,
             buttons: [
               {
                 buttonId: `${ᴋᴇɪ}menu`,
