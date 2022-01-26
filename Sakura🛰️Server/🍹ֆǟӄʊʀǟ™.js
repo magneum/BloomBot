@@ -683,19 +683,20 @@ ${update.desc}`,
       if (
         ֆǟӄʊʀǟ.isCmd &&
         !ֆǟӄʊʀǟ.body.includes(ᴋᴇɪ + "help") &&
-        !ֆǟӄʊʀǟ.body.includes(ᴋᴇɪ + "request")
+        !ֆǟӄʊʀǟ.body.includes(ᴋᴇɪ + "menu")
       )
         if (!members.includes(աɦօֆɛռȶɦǟȶ)) {
           return Sakura_Buttons.MTB(
             ӄʀǟӄɨռʐ,
             chat,
             ֆǟӄʊʀǟ,
-            `🍹 @${ꜱᴇɴᴅᴇʀeceived}, _Press Below Help Button For Link!_
+            `🍹 @${ꜱᴇɴᴅᴇʀeceived}, 
 
 ╔════◇𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
 ║♨️ _First be a member of Sakura Group!_
-║🚨 *Why?* _Monitor AntiSpams & BugReports_
-╚════════════╝`
+║🚨 *Why?* _Monitor AntiSpams & BugReports_ 
+╚════════════╝
+🐙 ${_𝔏𝔞𝔟_.HASH} `
           );
         }
       console.log("Participant a Member of SakuraGC");
