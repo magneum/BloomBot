@@ -63,14 +63,12 @@ module.exports = {
       ֆǟӄʊʀǟ.isBotGroupAdmin &&
       ֆǟӄʊʀǟ.isSenderGroupAdmin
     ) {
-      const RemoveTheSucker = chat.key.fromMe
-        ? ӄʀǟӄɨռʐ.user.jid
-        : ֆǟӄʊʀǟ.isGroup
-        ? chat.participant
-        : chat.key.remoteJid;
+      const RemoveTheSucker =
+        chat.message.extendedTextMessage.contextInfo.participant;
       Warning.findOne(
         {
           ID: RemoveTheSucker,
+          serverID: ֆǟӄʊʀǟ.chatId,
         },
         async (Error, userWarn) => {
           if (Error) console.log(Error);
@@ -80,10 +78,10 @@ module.exports = {
               serverID: ֆǟӄʊʀǟ.chatId,
               warns: 1,
             });
-            Sakura_Buttons.MTB(ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, "Warning: 1");
-            return await newUser
+            await newUser
               .save()
               .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+            return Sakura_Buttons.MTB(ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, "Warning: 1");
           }
           var CurrentWarns = userWarn.warns;
           if (CurrentWarns > 0 && CurrentWarns <= 3) {
