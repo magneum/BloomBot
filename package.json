@@ -127,6 +127,7 @@
     "urban-dictionary": "^3.0.2",
     "wallpaper": "^6.0.0",
     "weather-js": "^2.0.0",
+    "youtube-audio-stream": "^0.3.48",
     "youtube-duration": "^1.0.0",
     "youtube-metadata-from-url": "^1.0.3",
     "yt-search": "^2.10.3",

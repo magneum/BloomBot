@@ -1,4 +1,3 @@
-//external modules
 const { JSDOM } = require("jsdom");
 const fetch = require("node-fetch");
 const FormData = require("form-data");
@@ -12,7 +11,12 @@ const ytIdRegex =
   /(?:http(?:s|):\/\/|)(?:(?:www\.|)youtube(?:\-nocookie|)\.com\/(?:watch\?.*(?:|\&)v=|embed\/|v\/)|youtu\.be\/)([-_0-9A-Za-z]{11})/;
 
 //fucntion
-function YouTube_Post(url, formdata) {
+function post(url, formdata) {
+  console.log(
+    Object.keys(formdata)
+      .map((key) => `${key}=${encodeURIComponent(formdata[key])}`)
+      .join("&")
+  );
   return fetch(url, {
     method: "POST",
     headers: {
@@ -31,7 +35,7 @@ function YouTube_Music(url) {
     if (ytIdRegex.test(url)) {
       let ytId = ytIdRegex.exec(url);
       url = "https://youtu.be/" + ytId[1];
-      YouTube_Post("https://www.y2mate.com/mates/en60/analyze/ajax", {
+      post("https://www.y2mate.com/mates/en60/analyze/ajax", {
         url,
         q_auto: 0,
         ajax: 1,
@@ -39,11 +43,16 @@ function YouTube_Music(url) {
         .then((res) => res.json())
         .then((res) => {
           let document = new JSDOM(res.result).window.document;
+          let type = document.querySelectorAll("td");
+          let filesize = type[type.length - 10].innerHTML;
           let id = /var k__id = "(.*?)"/.exec(document.body.innerHTML) || [
             "",
             "",
           ];
-          YouTube_Post("https://www.y2mate.com/mates/en60/convert", {
+          let thumb = document.querySelector("img").src;
+          let title = document.querySelector("b").innerHTML;
+
+          post("https://www.y2mate.com/mates/en60/convert", {
             type: "youtube",
             _id: id[1],
             v_id: ytId[1],
@@ -54,8 +63,13 @@ function YouTube_Music(url) {
           })
             .then((res) => res.json())
             .then((res) => {
+              let KB = parseFloat(filesize) * (1000 * /MB$/.test(filesize));
               resolve({
-                y2mate: /<a.+?href="(.+?)"/.exec(res.result)[1],
+                dl_link: /<a.+?href="(.+?)"/.exec(res.result)[1],
+                thumb,
+                title,
+                filesizeF: filesize,
+                filesize: KB,
               });
             })
             .catch(reject);
@@ -90,7 +104,7 @@ function Instagram_Dwnloader(url_media) {
     };
 
     axios
-      .YouTube_Post(url, qs.stringify(requestBody), config)
+      .post(url, qs.stringify(requestBody), config)
       .then((result) => {
         let $ = cheerio.load(result.data),
           ig = [];
@@ -124,7 +138,7 @@ function YouTube_Video(url) {
     if (ytIdRegex.test(url)) {
       let ytId = ytIdRegex.exec(url);
       url = "https://youtu.be/" + ytId[1];
-      YouTube_Post("https://www.y2mate.com/mates/en60/analyze/ajax", {
+      post("https://www.y2mate.com/mates/en60/analyze/ajax", {
         url,
         q_auto: 0,
         ajax: 1,
@@ -138,7 +152,7 @@ function YouTube_Video(url) {
           thumb = document.querySelector("img").src;
           title = document.querySelector("b").innerHTML;
 
-          YouTube_Post("https://www.y2mate.com/mates/en60/convert", {
+          post("https://www.y2mate.com/mates/en60/convert", {
             type: "youtube",
             _id: id[1],
             v_id: ytId[1],
