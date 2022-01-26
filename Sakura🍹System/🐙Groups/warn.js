@@ -80,6 +80,7 @@ module.exports = {
               serverID: ֆǟӄʊʀǟ.chatId,
               warns: 1,
             });
+            Sakura_Buttons.MTB(ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, "Warning: 1");
             return await newUser
               .save()
               .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
@@ -89,10 +90,23 @@ module.exports = {
             userWarn.ID = RemoveTheSucker;
             userWarn.serverID = ֆǟӄʊʀǟ.chatId;
             userWarn.warns = userWarn.warns + 1;
+            await userWarn.save();
+            return Sakura_Buttons.MTB(
+              ӄʀǟӄɨռʐ,
+              chat,
+              ֆǟӄʊʀǟ,
+              "Warning: " + userWarn.warns
+            );
           }
 
           if (ֆǟӄʊʀǟ.isBotGroupAdmin && CurrentWarns >= 3) {
-            await userWarn.delet();
+            await userWarn.delete();
+            Sakura_Buttons.MTB(
+              ӄʀǟӄɨռʐ,
+              chat,
+              ֆǟӄʊʀǟ,
+              "Kick In 6s __ Warning: " + userWarn.warns
+            );
             setTimeout(async () => {
               await ӄʀǟӄɨռʐ
                 .groupRemove(ֆǟӄʊʀǟ.chatId, [RemoveTheSucker])
