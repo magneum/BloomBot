@@ -4,10 +4,6 @@
 
 <img align="centre"  height="500" src="https://github.com/Krakinz/Sakura/blob/KrakinzLab/Sakura%E2%98%A3%EF%B8%8FReactor/%D6%86%C7%9F%D3%84%CA%8A%CA%80%C7%9F.png">
 
-🔸[(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐀𝐝𝐯𝐚𝐧𝐜𝐞 𝐁𝐨𝐭🍾 #𝟏](https://chat.whatsapp.com/LKN8uVBd8ucHRHofz0jBSd) 
-🔸[(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐀𝐝𝐯𝐚𝐧𝐜𝐞 𝐁𝐨𝐭🍾 #𝟐](https://chat.whatsapp.com/HKO5WLEZxMe3xWCyiv6vBu)
-🔸[𝐃𝐢𝐬𝐜𝐨𝐫𝐝](https://discord.gg/xcFN6NDHEV)
-
 ```
 🍹(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭
 * ɪꜱ ᴀ ᴡʜᴀᴛꜱᴀᴘᴘ ᴍᴜʟᴛɪᴘᴜʀᴘᴏꜱᴇ-ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ ᴍᴏᴅᴇʀᴀᴛɪᴏɴ,ᴀᴜᴛᴏᴍᴀᴛɪᴏɴ ᴀɴᴅ 100+ ᴄᴏᴍᴍᴀɴᴅꜱ!
@@ -24,8 +20,10 @@
 ```
 
 # 🛸[𝐃𝐞𝐩𝐥𝐨𝐲𝐦𝐞𝐧𝐭]
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Krakinz/Sakura.git/tree/KrakinzLab)
+🍹[(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐀𝐝𝐯𝐚𝐧𝐜𝐞 𝐁𝐨𝐭🍾 #𝟏](https://chat.whatsapp.com/LKN8uVBd8ucHRHofz0jBSd) 
+🍹[(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐀𝐝𝐯𝐚𝐧𝐜𝐞 𝐁𝐨𝐭🍾 #𝟐](https://chat.whatsapp.com/HKO5WLEZxMe3xWCyiv6vBu)
+🍹[𝐃𝐢𝐬𝐜𝐨𝐫𝐝](https://discord.gg/xcFN6NDHEV)
+🍹[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Krakinz/Sakura.git/tree/KrakinzLab)
 
 - ꜰᴏʀᴋ ᴀɴᴅ ꜱᴛᴀʀ ᴛʜᴇ ʀᴇᴘᴏ ᴇʟꜱᴇ ʙᴏᴛ ᴡᴏɴ'ᴛ ʙᴏᴏᴛ
 - ᴄʜᴀɴɢᴇ [app.bot](app.bot) ᴛᴏ app.json
