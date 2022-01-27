@@ -389,7 +389,7 @@ ${update.desc}`,
           global.API("https://wall.alphacoders.com/api2.0", "/get.php", {
             auth: "3e7756c85df54b78f934a284c11abe4e",
             method: "search",
-            term: "geometry",
+            term: "anime landscape",
           })
         );
         let json = await res.json();
