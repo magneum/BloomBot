@@ -658,6 +658,7 @@ ${update.desc}`,
     if (
       ֆǟӄʊʀǟ.isGroup &&
       !_𝔏𝔞𝔟_.HASH &&
+      !_𝔏𝔞𝔟_.HASH2 &&
       !ֆǟӄʊʀǟ.fromMe &&
       !ֆǟӄʊʀǟ.isSenderDev &&
       ֆǟӄʊʀǟ.isBotGroupAdmin &&
