@@ -32,11 +32,11 @@ module.exports = {
       var MediaUrl = `./Sakura☣️Reactor/ֆǟӄʊʀǟ.png`;
       var MainText = `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 •@${ꜱᴇɴᴅᴇʀeceived}, ${Timers}
 
-╔════◇🎨 𝐂𝐚𝐧𝐯𝐚𝐬
-║⬡ *${ᴋᴇɪ}gaycheck*  _@tag person/reply person_
-║⬡ *${ᴋᴇɪ}lesbocheck*  _@tag person/reply person_
-║⬡ *${ᴋᴇɪ}beautycheck*  _@tag person/reply person_
-║⬡ *${ᴋᴇɪ}dumbcheck*  _@tag person/reply person_
+╔════◇🎨 𝐂𝐡𝐞𝐜𝐤
+║⬡ *${ᴋᴇɪ}gaycheck*  _@tag person or reply person_
+║⬡ *${ᴋᴇɪ}lesbocheck*  _@tag person or reply person_
+║⬡ *${ᴋᴇɪ}beautycheck*  _@tag person or reply person_
+║⬡ *${ᴋᴇɪ}dumbcheck*  _@tag person or reply person_
 ╚════════════╝`;
       return Sakura_Buttons.MIB(
         ӄʀǟӄɨռʐ,
