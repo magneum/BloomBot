@@ -433,12 +433,20 @@ nxtlvl = 750 * Math.pow(2, currentLvl);
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
 users.xp = users.xp + xpAdd;
 if (users.xp >= nxtlvl) {
+let Res = await fetch(
+global.API("https://wall.alphacoders.com/api2.0", "/get.php", {
+auth: "3e7756c85df54b78f934a284c11abe4e",
+method: "search",
+term: "anime landscape",
+})
+);
+let Bson = await Res.json();
+let Img =
+Bson.wallpapers[Math.floor(Math.random() * Bson.wallpapers.length)];
 users.level = currentLvl + 1;
 const canvas = Canvas.createCanvas(800, 300);
 const ctx = canvas.getContext("2d");
-const background = await Canvas.loadImage(
-"https://i.postimg.cc/QdqLYYc2/2341297.jpg"
-);
+const background = await Canvas.loadImage(Img.url_image);
 ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
 ctx.strokeStyle = "#74037b";
 ctx.strokeRect(0, 0, canvas.width, canvas.height);
@@ -693,13 +701,17 @@ return Sakura_Buttons.MTB(
 ӄʀǟӄɨռʐ,
 chat,
 ֆǟӄʊʀǟ,
-`🍹 @${ꜱᴇɴᴅᴇʀeceived}, 
+`🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived},
 
 ╔════◇𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
 ║♨️ _First be a member of Any Sakura Group!_
 ║🚨 *Why?* _Monitor AntiSpams & BugReports_ 
 ╚════════════╝
-🐙 𝐎𝐟𝐟𝐢𝐜𝐢𝐚𝐥: _${_𝔏𝔞𝔟_.HASH}_ *or* _${_𝔏𝔞𝔟_.HASH2}_`
+
+╔════◇🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜)
+║🍾 (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 #𝟏: _${_𝔏𝔞𝔟_.HASH2}_
+║🍾 (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 #2: _${_𝔏𝔞𝔟_.HASH}_
+╚════════════╝`
 );
 }
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
