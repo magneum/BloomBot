@@ -47,19 +47,19 @@ module.exports = {
         ? chat.message.extendedTextMessage.text
         : "";
     `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-    var GayCheck = GayBody.slice(1);
-    var Tag = GayCheck.split(" ").join("");
-    var ToRm = ᴋᴇɪ + newScpt;
-    var Num = ToRm.length;
-    var Mention = Tag.substring(Num);
-    var MentionPerson = Mention + "@s.whatsapp.net";
+    const GayCheck = GayBody.slice(1);
+    const Tag = GayCheck.split(" ").join("");
+    const ToRm = ᴋᴇɪ + newScpt;
+    const Num = ToRm.length;
+    const Mention = Tag.substring(Num);
+    const MentionPerson = Mention + "@s.whatsapp.net";
     const FinalGay = Math.ceil(Math.random() * 100);
     `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
     const buttonMessage = {
       contentText: `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-║ 𝗚𝗮𝘆 𝗠𝗲𝗺𝗯𝗲𝗿: _@${Mention}_
+║ 𝗚𝗮𝘆 𝗠𝗲𝗺𝗯𝗲𝗿: _${Mention}_
 ║ 𝗔𝘀𝗸𝗲𝗱 𝗕𝘆: _@${ꜱᴇɴᴅᴇʀeceived}_
 ║ 𝗣𝗲𝗿𝗰𝗲𝗻𝘁𝗮𝗴𝗲: _${FinalGay}%_
 ╚════════════╝`,
