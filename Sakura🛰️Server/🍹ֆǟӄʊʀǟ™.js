@@ -4,6 +4,7 @@
 `|🍹|`;
 `|🍹|`;
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+require(`./konfs`);
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const UsersSakura = require(`../Sakura🍃Goose/experience`);
 const LinkList = require(`../Sakura🍃Goose/antilink`);
@@ -19,6 +20,7 @@ const ֆǟӄʊʀǟǟքք = require(`./helper`);
 const welbuts = require(`./welbuts`);
 const BanList = require(`./BanList`);
 const cleanRF = require(`./cleanRF`);
+const fetch = require(`node-fetch`);
 const postDb = require(`./postDb`);
 const _𝔏𝔞𝔟_ = require(`./_𝔏𝔞𝔟_`);
 const ꜰᴜᴄᴋ = require(`./oShit`);
@@ -383,6 +385,23 @@ ${update.desc}`,
       } catch {
         𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = "https://i.postimg.cc/gcw6vq3X/Npp.png";
       }
+      `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+      let Fotu = "";
+      try {
+        let res = await fetch(
+          global.API("https://wall.alphacoders.com/api2.0", "/get.php", {
+            auth: "3e7756c85df54b78f934a284c11abe4e",
+            method: "search",
+            term: "geometry",
+          })
+        );
+        let json = await res.json();
+        Fotu =
+          json.wallpapers[Math.floor(Math.random() * json.wallpapers.length)];
+      } catch {
+        Fotu = "https://i.postimg.cc/QdqLYYc2/2341297.jpg";
+      }
+      console.log("════════════════════════| " + Fotu);
       try {
         await UsersSakura.findOne(
           {
@@ -400,8 +419,29 @@ ${update.desc}`,
                 xp: xpAdd,
                 level: 0,
               });
-              newUsers.save().catch((Error) => console.log(Error));
+              await newUsers.save().catch((Error) => console.log(Error));
+              return await ӄʀǟӄɨռʐ.sendMessage(
+                ֆǟӄʊʀǟ.chatId,
+                { url: Fotu },
+                MessageType.image,
+                {
+                  mimetype: Mimetype.jpeg,
+                  quoted: chat,
+                  contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
+                  caption: `✨@${աɦօֆɛռȶɦǟȶ.substring(
+                    0,
+                    աɦօֆɛռȶɦǟȶ.length - 15
+                  )}, 
+
+╔════◇📜𝐑𝐚𝐧𝐤 𝐂𝐚𝐫𝐝
+║🥂 *Xp:* 0
+║🍩 *Level:* 0
+║🎪 *Group:* ${groupDataRank.subject}
+╚════════════╝`,
+                }
+              );
             } else {
+              `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
               var currentLvl = users.level;
               var currentXP = users.xp;
               if (currentLvl < 5) {
@@ -429,15 +469,13 @@ ${update.desc}`,
               } else if (currentLvl >= 100) {
                 var nxtlvl = 750 * Math.pow(2, currentLvl);
               }
+              `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
               users.xp = users.xp + xpAdd;
               if (users.xp >= nxtlvl) {
                 users.level = currentLvl + 1;
-
                 const canvas = Canvas.createCanvas(800, 300);
                 const ctx = canvas.getContext("2d");
-                const background = await Canvas.loadImage(
-                  "https://cdn.discordapp.com/attachments/779452147326648360/803042845363011624/unknown.png"
-                );
+                const background = await Canvas.loadImage(Fotu);
                 ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
                 ctx.strokeStyle = "#74037b";
                 ctx.strokeRect(0, 0, canvas.width, canvas.height);
