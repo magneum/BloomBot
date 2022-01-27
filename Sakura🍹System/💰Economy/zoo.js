@@ -5,7 +5,7 @@
 `|🍹|`;
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
 const Sakura_Buttons = require(`../../Sakura🛰️Server/Sakura_Buttons`);
-const Sakura_Buttons = require(`../../Sakura🛰️Server/Sakura_Buttons`);
+const Sakura_Static = require(`../../Sakura🛰️Server/Sakura_Static`);
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const animals = require(`../../Sakura🛰️Server/FISH/animals.json`);
 const Economy = require(`../../Sakura🍃Goose/economy`);
@@ -83,7 +83,7 @@ module.exports = {
                 if (Error) console.log(Error);
                 if (!userZoo) {
                   var newUser = new Zoology({
-                    ID: ֆǟӄʊʀǟ.sender,
+                    ID: աɦօֆɛռȶɦǟȶ,
                     zoodone: Date.now(),
                     zootimeout: 1800000,
                   });
