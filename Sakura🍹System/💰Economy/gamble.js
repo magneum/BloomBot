@@ -278,6 +278,12 @@ module.exports = {
                   if (Amount == 1 && Color == 2) {
                     money *= 15;
                     userEco.money = userEco.money + money;
+                    userGamble.Gambledone = Date.now();
+                    await userGamble
+                      .save()
+                      .catch((Error) =>
+                        ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
+                      );
                     await userEco
                       .save()
                       .catch((Error) =>
@@ -303,6 +309,12 @@ module.exports = {
                   } else if (isOdd(Amount) && Color == 1) {
                     money = parseInt(money * 1.5);
                     userEco.money = userEco.money + money;
+                    userGamble.Gambledone = Date.now();
+                    await userGamble
+                      .save()
+                      .catch((Error) =>
+                        ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
+                      );
                     await userEco
                       .save()
                       .catch((Error) =>
@@ -328,6 +340,12 @@ module.exports = {
                   } else if (!isOdd(Amount) && Color == 0) {
                     money = parseInt(money * 2);
                     userEco.money = userEco.money + money;
+                    userGamble.Gambledone = Date.now();
+                    await userGamble
+                      .save()
+                      .catch((Error) =>
+                        ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
+                      );
                     await userEco
                       .save()
                       .catch((Error) =>
@@ -352,6 +370,12 @@ module.exports = {
                   } else {
                     `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
                     userEco.money = userEco.money - money;
+                    userGamble.Gambledone = Date.now();
+                    await userGamble
+                      .save()
+                      .catch((Error) =>
+                        ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
+                      );
                     await userEco
                       .save()
                       .catch((Error) =>
