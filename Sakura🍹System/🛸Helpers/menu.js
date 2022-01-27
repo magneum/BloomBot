@@ -252,10 +252,10 @@ module.exports = {
 ╚════════════╝
 
 ╔════◇🎨 𝐂𝐚𝐧𝐯𝐚𝐬 ════╗
-║▷ ${ᴋᴇɪ}gaycheck  _@tag_
-║▷ ${ᴋᴇɪ}lesbocheck  _@tag_
-║▷ ${ᴋᴇɪ}beautycheck  _@tag_
-║▷ ${ᴋᴇɪ}dumbcheck  _@tag_
+║▷ ${ᴋᴇɪ}gaycheck  _@tag/reply_
+║▷ ${ᴋᴇɪ}lesbocheck  _@tag/reply_
+║▷ ${ᴋᴇɪ}beautycheck  _@tag/reply_
+║▷ ${ᴋᴇɪ}dumbcheck  _@tag/reply_
 ╚════════════╝
 
 

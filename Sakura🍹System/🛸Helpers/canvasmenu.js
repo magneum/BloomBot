@@ -33,10 +33,10 @@ module.exports = {
       var MainText = `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 •@${ꜱᴇɴᴅᴇʀeceived}, ${Timers}
 
 ╔════◇🎨 𝐂𝐚𝐧𝐯𝐚𝐬
-║⬡ *${ᴋᴇɪ}gaycheck*  _@tag person_
-║⬡ *${ᴋᴇɪ}lesbocheck*  _@tag person_
-║⬡ *${ᴋᴇɪ}beautycheck*  _@tag person_
-║⬡ *${ᴋᴇɪ}dumbcheck*  _@tag person_
+║⬡ *${ᴋᴇɪ}gaycheck*  _@tag person/reply person_
+║⬡ *${ᴋᴇɪ}lesbocheck*  _@tag person/reply person_
+║⬡ *${ᴋᴇɪ}beautycheck*  _@tag person/reply person_
+║⬡ *${ᴋᴇɪ}dumbcheck*  _@tag person/reply person_
 ╚════════════╝`;
       return Sakura_Buttons.MIB(
         ӄʀǟӄɨռʐ,

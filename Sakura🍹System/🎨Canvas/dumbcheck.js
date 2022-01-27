@@ -19,66 +19,88 @@ var newScpt = scriptName.slice(0, -3).toLowerCase();
 module.exports = {
   name: newScpt,
   async handle(ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
-    var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
+    if (ֆǟӄʊʀǟ.isReply) {
+      var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
+      var personreceived = Receiver.substring(0, Receiver.length - 15);
+      var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
+      var ꜱᴇɴᴅᴇʀeceived = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
+    } else {
+      var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
+      var ꜱᴇɴᴅᴇʀeceived = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
+    }
     const defaultnm = ֆǟӄʊʀǟ.commandName;
-    var ꜱᴇɴᴅᴇʀeceived = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
     const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
     `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
     const hold = require(`../../Sakura🛰️Server/Hold`);
     hold.Hold(ֆǟӄʊʀǟ);
     `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-    const Type = Object.keys(chat.message)[0];
-    const DumbBody =
-      Type === "listResponseMessage" && chat.message.listResponseMessage.title
-        ? chat.message.listResponseMessage.title
-        : Type === "buttonsResponseMessage" &&
-          chat.message.buttonsResponseMessage.selectedButtonId
-        ? chat.message.buttonsResponseMessage.selectedButtonId
-        : Type === "conversation" && chat.message.conversation.startsWith(ᴋᴇɪ)
-        ? chat.message.conversation
-        : Type == "imageMessage" &&
-          chat.message.imageMessage.caption.startsWith(ᴋᴇɪ)
-        ? chat.message.imageMessage.caption
-        : Type == "videoMessage" &&
-          chat.message.videoMessage.caption.startsWith(ᴋᴇɪ)
-        ? chat.message.videoMessage.caption
-        : Type == "extendedTextMessage" &&
-          chat.message.extendedTextMessage.text.startsWith(ᴋᴇɪ)
-        ? chat.message.extendedTextMessage.text
-        : "";
-    `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-    var DumbCheck = DumbBody.slice(1);
-    var Tag = DumbCheck.split(" ").join("");
-    var ToRm = ᴋᴇɪ + newScpt;
-    var Num = ToRm.length;
-    var Mention = Tag.substring(Num);
-    var MentionPerson = Mention + "@s.whatsapp.net";
-    const FinalDumb = Math.ceil(Math.random() * 100);
-    `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-    const buttonMessage = {
-      contentText: `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚
+    if (ֆǟӄʊʀǟ.isReply) {
+      return Sakura_Buttons.MTB(
+        ӄʀǟӄɨռʐ,
+        chat,
+        ֆǟӄʊʀǟ,
+        `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚
+
+╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+║ 𝗗𝘂𝗺𝗯 𝗠𝗲𝗺𝗯𝗲𝗿: _@${personreceived}_
+║ 𝗔𝘀𝗸𝗲𝗱 𝗕𝘆: _@${ꜱᴇɴᴅᴇʀeceived}_
+║ 𝗣𝗲𝗿𝗰𝗲𝗻𝘁𝗮𝗴𝗲: _${FinalGay}%_
+╚════════════╝`
+      );
+    } else {
+      const Type = Object.keys(chat.message)[0];
+      const DumbBody =
+        Type === "listResponseMessage" && chat.message.listResponseMessage.title
+          ? chat.message.listResponseMessage.title
+          : Type === "buttonsResponseMessage" &&
+            chat.message.buttonsResponseMessage.selectedButtonId
+          ? chat.message.buttonsResponseMessage.selectedButtonId
+          : Type === "conversation" && chat.message.conversation.startsWith(ᴋᴇɪ)
+          ? chat.message.conversation
+          : Type == "imageMessage" &&
+            chat.message.imageMessage.caption.startsWith(ᴋᴇɪ)
+          ? chat.message.imageMessage.caption
+          : Type == "videoMessage" &&
+            chat.message.videoMessage.caption.startsWith(ᴋᴇɪ)
+          ? chat.message.videoMessage.caption
+          : Type == "extendedTextMessage" &&
+            chat.message.extendedTextMessage.text.startsWith(ᴋᴇɪ)
+          ? chat.message.extendedTextMessage.text
+          : "";
+      `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+      var DumbCheck = DumbBody.slice(1);
+      var Tag = DumbCheck.split(" ").join("");
+      var ToRm = ᴋᴇɪ + newScpt;
+      var Num = ToRm.length;
+      var Mention = Tag.substring(Num);
+      var MentionPerson = Mention + "@s.whatsapp.net";
+      const FinalDumb = Math.ceil(Math.random() * 100);
+      `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+      const buttonMessage = {
+        contentText: `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 ║ 𝗗𝘂𝗺𝗯 𝗠𝗲𝗺𝗯𝗲𝗿: _@${Mention}_
 ║ 𝗔𝘀𝗸𝗲𝗱 𝗕𝘆: _@${ꜱᴇɴᴅᴇʀeceived}_
 ║ 𝗣𝗲𝗿𝗰𝗲𝗻𝘁𝗮𝗴𝗲: _${FinalDumb}%_
 ╚════════════╝`,
-      footerText: `(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 | 𝐄𝐧𝐠𝐢𝐧𝐞: _KryoZen 3_\n${Clock} | ${Ping}ms`,
-      buttons: [
-        {
-          buttonId: `${ᴋᴇɪ}help`,
-          buttonText: { displayText: `${ᴋᴇɪ}help` },
-          type: 1,
-        },
-      ],
-      headerType: 1,
-    };
-    return await ӄʀǟӄɨռʐ
-      .sendMessage(ֆǟӄʊʀǟ.chatId, buttonMessage, MessageType.buttonsMessage, {
-        quoted: chat,
-        contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ, MentionPerson] },
-      })
-      .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+        footerText: `(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 | 𝐄𝐧𝐠𝐢𝐧𝐞: _KryoZen 3_\n${Clock} | ${Ping}ms`,
+        buttons: [
+          {
+            buttonId: `${ᴋᴇɪ}help`,
+            buttonText: { displayText: `${ᴋᴇɪ}help` },
+            type: 1,
+          },
+        ],
+        headerType: 1,
+      };
+      return await ӄʀǟӄɨռʐ
+        .sendMessage(ֆǟӄʊʀǟ.chatId, buttonMessage, MessageType.buttonsMessage, {
+          quoted: chat,
+          contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ, MentionPerson] },
+        })
+        .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+    }
   },
 };
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
