@@ -1,0 +1,28 @@
+{
+    "small": {
+      "symbol": "🐜",
+      "max": 30,
+      "min": 10
+    },
+    "medium": {
+      "symbol": "🦌",
+      "max": 70,
+      "min": 30
+    },
+    "big": {
+      "symbol": "🐠",
+      "max": 90,
+      "min": 50
+    },
+    "large": {
+      "symbol": "🐘",
+      "max": 175,
+      "min": 130
+    },
+    "legendary": {
+      "symbol": "🐉",
+      "max": 500,
+      "min": 100
+    }
+  }
+  
