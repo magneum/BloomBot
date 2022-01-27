@@ -377,6 +377,12 @@ Kolor.red(
 }
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
 if (ֆǟӄʊʀǟ.isGroup && !ֆǟӄʊʀǟ.fromMe) {
+var xpAdd = Math.ceil(Math.random() * 10);
+try {
+𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄʀǟӄɨռʐ.getProfilePicture(աɦօֆɛռȶɦǟȶ);
+} catch {
+𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = "https://i.postimg.cc/gcw6vq3X/Npp.png";
+}
 try {
 await UsersSakura.findOne(
 {
@@ -389,92 +395,40 @@ var color = randomMC.getColor();
 console.log(users);
 if (Error) return console.log(Error);
 if (!users) {
-try {
-𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄʀǟӄɨռʐ.getProfilePicture(աɦօֆɛռȶɦǟȶ);
-} catch {
-𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = "https://i.postimg.cc/gcw6vq3X/Npp.png";
-}
 var newUsers = new UsersSakura({
 ID: աɦօֆɛռȶɦǟȶ,
 xp: xpAdd,
 level: 0,
 });
 await newUsers.save().catch((Error) => console.log(Error));
-return await ӄʀǟӄɨռʐ.sendMessage(
-ֆǟӄʊʀǟ.chatId,
-{ url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 },
-MessageType.image,
-{
-mimetype: Mimetype.jpeg,
-quoted: chat,
-contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
-caption: `✨@${աɦօֆɛռȶɦǟȶ.substring(
-0,
-աɦօֆɛռȶɦǟȶ.length - 15
-)}, 
-
-╔════◇📜𝐑𝐚𝐧𝐤 𝐂𝐚𝐫𝐝
-║🥂 *Xp:* 0
-║🍩 *Level:* 0
-║🎪 *Group:* ${groupDataRank.subject}
-╚════════════╝`,
-}
-);
 } else {
-let xpAdd = Math.ceil(Math.random() * 10);
-try {
-𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄʀǟӄɨռʐ.getProfilePicture(աɦօֆɛռȶɦǟȶ);
-} catch {
-𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = "https://i.postimg.cc/gcw6vq3X/Npp.png";
-}
-try {
-let res = await fetch(
-global.API(
-"https://wall.alphacoders.com/api2.0",
-"/get.php",
-{
-auth: "3e7756c85df54b78f934a284c11abe4e",
-method: "search",
-term: "anime landscape",
-}
-)
-);
-let json = await res.json();
-var Tu =
-json.wallpapers[
-Math.floor(Math.random() * json.wallpapers.length)
-];
-Fotu = Tu.url_image;
-} catch {
-Fotu = "https://i.postimg.cc/QdqLYYc2/2341297.jpg";
-}
-`|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
 var currentLvl = users.level;
 var currentXP = users.xp;
+let nxtlvl = "";
 if (currentLvl < 5) {
-var nxtlvl = 50 * Math.pow(2, currentLvl);
+nxtlvl = 50 * Math.pow(2, currentLvl);
 } else if (currentLvl >= 5) {
-var nxtlvl = 100 * Math.pow(2, currentLvl);
+nxtlvl = 100 * Math.pow(2, currentLvl);
 } else if (currentLvl >= 10) {
-var nxtlvl = 150 * Math.pow(2, currentLvl);
+nxtlvl = 150 * Math.pow(2, currentLvl);
 } else if (currentLvl >= 20) {
-var nxtlvl = 250 * Math.pow(2, currentLvl);
+nxtlvl = 250 * Math.pow(2, currentLvl);
 } else if (currentLvl >= 30) {
-var nxtlvl = 300 * Math.pow(2, currentLvl);
+nxtlvl = 300 * Math.pow(2, currentLvl);
 } else if (currentLvl >= 40) {
-var nxtlvl = 350 * Math.pow(2, currentLvl);
+nxtlvl = 350 * Math.pow(2, currentLvl);
 } else if (currentLvl >= 50) {
-var nxtlvl = 400 * Math.pow(2, currentLvl);
+nxtlvl = 400 * Math.pow(2, currentLvl);
 } else if (currentLvl >= 60) {
-var nxtlvl = 450 * Math.pow(2, currentLvl);
+nxtlvl = 450 * Math.pow(2, currentLvl);
 } else if (currentLvl >= 70) {
-var nxtlvl = 500 * Math.pow(2, currentLvl);
+nxtlvl = 500 * Math.pow(2, currentLvl);
 } else if (currentLvl >= 80) {
-var nxtlvl = 550 * Math.pow(2, currentLvl);
+nxtlvl = 550 * Math.pow(2, currentLvl);
 } else if (currentLvl >= 90) {
-var nxtlvl = 600 * Math.pow(2, currentLvl);
+nxtlvl = 600 * Math.pow(2, currentLvl);
 } else if (currentLvl >= 100) {
-var nxtlvl = 750 * Math.pow(2, currentLvl);
+nxtlvl = 750 * Math.pow(2, currentLvl);
 }
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
 users.xp = users.xp + xpAdd;
@@ -482,7 +436,9 @@ if (users.xp >= nxtlvl) {
 users.level = currentLvl + 1;
 const canvas = Canvas.createCanvas(800, 300);
 const ctx = canvas.getContext("2d");
-const background = await Canvas.loadImage(Fotu);
+const background = await Canvas.loadImage(
+"https://i.postimg.cc/QdqLYYc2/2341297.jpg"
+);
 ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
 ctx.strokeStyle = "#74037b";
 ctx.strokeRect(0, 0, canvas.width, canvas.height);
@@ -521,10 +477,10 @@ ctx.drawImage(avatar, 25, 50, 200, 200);
 const out = fs.createWriteStream(
 `${աɦօֆɛռȶɦǟȶ.toString()}.jpeg`
 );
-`|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
 const stream = canvas.createJPEGStream();
 stream.pipe(out);
 out.on(`finish`, () => {
+`|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
 try {
 Economy.findOne(
 {
@@ -553,12 +509,9 @@ try {
 var groupDataRank = await ӄʀǟӄɨռʐ.groupMetadata(
 chat.key.remoteJid
 );
-await ӄʀǟӄɨռʐ
-.sendMessage(
+await ӄʀǟӄɨռʐ.sendMessage(
 ֆǟӄʊʀǟ.chatId,
-fs.readFileSync(
-`${աɦօֆɛռȶɦǟȶ.toString()}.jpeg`
-),
+fs.readFileSync(`${աɦօֆɛռȶɦǟȶ.toString()}.jpeg`),
 MessageType.image,
 {
 mimetype: Mimetype.jpeg,
@@ -585,9 +538,9 @@ caption: `✨𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬 @${աɦօֆɛռȶɦǟȶ.substring(
 ║🎉You Can Spend The Coins in *${ᴋᴇɪ}shop!*
 ╚════════════╝`,
 }
-)
-.then(
-cleanRF.cleanRF(`${աɦօֆɛռȶɦǟȶ.toString()}.jpeg`)
+);
+await cleanRF.cleanRF(
+`${աɦօֆɛռȶɦǟȶ.toString()}.jpeg`
 );
 } catch (Error) {
 console.log(Error);
@@ -787,7 +740,7 @@ chat,
 `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived},
 
 ╔════| 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
-║❌ *No Such Command in Database!*
+║❌ 𝐍𝐨 𝐒𝐮𝐜𝐡 𝐂𝐨𝐦𝐦𝐚𝐧𝐝 𝐢𝐧 𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞!
 ║🍃 𝐏𝐫𝐞𝐬𝐬 𝐅𝐨𝐫 𝐒𝐚𝐤𝐮𝐫𝐚 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬👇🏽
 ╚════════════╝`
 );
