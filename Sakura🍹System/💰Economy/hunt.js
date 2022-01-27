@@ -36,7 +36,11 @@ module.exports = {
           ӄʀǟӄɨռʐ,
           chat,
           ֆǟӄʊʀǟ,
-          `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived}, ᴄᴏᴍᴍᴀɴᴅ ᴏɴʟʏ ꜰᴏʀ ɢʀᴏᴜᴘꜱ!`
+          `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived}, 
+
+╔════◇🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧 
+║💡 _This Command is Only For Groups!_
+╚════════════╝`
         );
       }
       `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
@@ -62,7 +66,7 @@ module.exports = {
             await newPokeUser
               .save()
               .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-            return Sakura_Buttons.MTB(
+            return Sakura_Buttons.MIB(
               ӄʀǟӄɨռʐ,
               chat,
               ֆǟӄʊʀǟ,
@@ -74,7 +78,8 @@ module.exports = {
 ╔════◇🌿𝗡𝗮𝗺𝗲: Hunted First Time!
 ║◇ *Type:* Poop
 ║◇ *Worth:* -1coins lmao
-╚════════════╝`
+╚════════════╝`,
+              `./Sakura☣️Reactor/Sakura_Hunting.png`
             );
           } else {
             Economy.findOne(
@@ -98,7 +103,7 @@ module.exports = {
                   await newUser
                     .save()
                     .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-                  return Sakura_Buttons.MTB(
+                  return Sakura_Buttons.MIB(
                     ӄʀǟӄɨռʐ,
                     chat,
                     ֆǟӄʊʀǟ,
@@ -111,7 +116,8 @@ module.exports = {
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 ║💰 𝗧𝗼𝘁𝗮𝗹 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: Just Opened Your Account!
 ║🤠 𝗔𝗰𝗰𝗼𝘂𝗻𝘁_𝗛𝗼𝗹𝗱𝗲𝗿: @${personreceived}
-╚════════════╝`
+╚════════════╝`,
+                    `./Sakura☣️Reactor/Sakura_Hunting.png`
                   );
                 } else {
                   let res = await fetch(
@@ -131,7 +137,7 @@ module.exports = {
                       userPoke.PermanentLimitTime -
                         (Date.now() - userPoke.CurrentLimitTime)
                     );
-                    return Sakura_Buttons.MTB(
+                    return Sakura_Buttons.MIB(
                       ӄʀǟӄɨռʐ,
                       chat,
                       ֆǟӄʊʀǟ,
@@ -143,7 +149,8 @@ module.exports = {
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 ║❌ 𝗛𝘂𝗻𝘁𝗶𝗻𝗴 𝗦𝘁𝗮𝘁𝘂𝘀: You've recently went in a forest!
 ║🪵 𝗡𝗲𝘅𝘁 𝗛𝘂𝗻𝘁𝗶𝗻𝗴: ${time.hours}h ${time.minutes}m ${time.seconds}s
-╚════════════╝`
+╚════════════╝`,
+                      `./Sakura☣️Reactor/Sakura_Hunting.png`
                     );
                     `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
                   } else {

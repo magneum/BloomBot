@@ -80,7 +80,7 @@ module.exports = {
       }
       `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
       if (Needs[1] > 4000) {
-        return Sakura_Buttons.MTB(
+        return Sakura_Buttons.MIB(
           ӄʀǟӄɨռʐ,
           chat,
           ֆǟӄʊʀǟ,
@@ -88,12 +88,13 @@ module.exports = {
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}  
 ║❌ 𝗘𝗿𝗿𝗼𝗿: _Gamble Money Should be less then 4000 or 4k!_
-╚════════════╝`
+╚════════════╝`,
+          `./Sakura☣️Reactor/Sakura_Hunting.png`
         );
       }
       `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
       if (Needs[1] < 50) {
-        return Sakura_Buttons.MTB(
+        return Sakura_Buttons.MIB(
           ӄʀǟӄɨռʐ,
           chat,
           ֆǟӄʊʀǟ,
@@ -125,7 +126,7 @@ module.exports = {
             await newUser
               .save()
               .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-            return Sakura_Buttons.MTB(
+            return Sakura_Buttons.MIB(
               ӄʀǟӄɨռʐ,
               chat,
               ֆǟӄʊʀǟ,
@@ -158,7 +159,7 @@ module.exports = {
                   await newUser
                     .save()
                     .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-                  return Sakura_Buttons.MTB(
+                  return Sakura_Buttons.MIB(
                     ӄʀǟӄɨռʐ,
                     chat,
                     ֆǟӄʊʀǟ,
@@ -180,7 +181,7 @@ module.exports = {
                       userGamble.Gambletimeout -
                         (Date.now() - userGamble.Gambledone)
                     );
-                    return Sakura_Buttons.MTB(
+                    return Sakura_Buttons.MIB(
                       ӄʀǟӄɨռʐ,
                       chat,
                       ֆǟӄʊʀǟ,
@@ -207,7 +208,7 @@ module.exports = {
                   let Amount = Math.floor(Math.random() * 10);
                   `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
                   if (!Color) {
-                    return Sakura_Buttons.MTB(
+                    return Sakura_Buttons.MIB(
                       ӄʀǟӄɨռʐ,
                       chat,
                       ֆǟӄʊʀǟ,
@@ -233,7 +234,7 @@ module.exports = {
                   `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
                   Color = Color.toLowerCase();
                   if (!money) {
-                    return Sakura_Buttons.MTB(
+                    return Sakura_Buttons.MIB(
                       ӄʀǟӄɨռʐ,
                       chat,
                       ֆǟӄʊʀǟ,
@@ -251,7 +252,7 @@ module.exports = {
                   }
                   `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
                   if (money > CurrentMoney) {
-                    return Sakura_Buttons.MTB(
+                    return Sakura_Buttons.MIB(
                       ӄʀǟӄɨռʐ,
                       chat,
                       ֆǟӄʊʀǟ,
@@ -272,7 +273,7 @@ module.exports = {
                   else if (Color == "r" || Color.includes("red")) Color = 1;
                   else if (Color == "p" || Color.includes("purple")) Color = 2;
                   else
-                    return Sakura_Buttons.MTB(
+                    return Sakura_Buttons.MIB(
                       ӄʀǟӄɨռʐ,
                       chat,
                       ֆǟӄʊʀǟ,
@@ -309,7 +310,7 @@ module.exports = {
                       .catch((Error) =>
                         ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
                       );
-                    return Sakura_Buttons.MTB(
+                    return Sakura_Buttons.MIB(
                       ӄʀǟӄɨռʐ,
                       chat,
                       ֆǟӄʊʀǟ,
@@ -339,7 +340,7 @@ module.exports = {
                       .catch((Error) =>
                         ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
                       );
-                    return Sakura_Buttons.MTB(
+                    return Sakura_Buttons.MIB(
                       ӄʀǟӄɨռʐ,
                       chat,
                       ֆǟӄʊʀǟ,
@@ -369,7 +370,7 @@ module.exports = {
                       .catch((Error) =>
                         ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
                       );
-                    return Sakura_Buttons.MTB(
+                    return Sakura_Buttons.MIB(
                       ӄʀǟӄɨռʐ,
                       chat,
                       ֆǟӄʊʀǟ,
@@ -398,7 +399,7 @@ module.exports = {
                       .catch((Error) =>
                         ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
                       );
-                    return Sakura_Buttons.MTB(
+                    return Sakura_Buttons.MIB(
                       ӄʀǟӄɨռʐ,
                       chat,
                       ֆǟӄʊʀǟ,

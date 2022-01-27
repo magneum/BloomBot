@@ -30,7 +30,7 @@ module.exports = {
       const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
       `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
       if (!ֆǟӄʊʀǟ.isGroup) {
-        return Sakura_Buttons.MTB(
+        return Sakura_Buttons.MIB(
           ӄʀǟӄɨռʐ,
           chat,
           ֆǟӄʊʀǟ,
@@ -61,7 +61,7 @@ module.exports = {
             await newUser
               .save()
               .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-            return Sakura_Buttons.MTB(
+            return Sakura_Buttons.MIB(
               ӄʀǟӄɨռʐ,
               chat,
               ֆǟӄʊʀǟ,
@@ -71,7 +71,8 @@ module.exports = {
 ╚◇══════════════◇╝
 ╔════◇🌿𝗡𝗮𝗺𝗲: _Just Bought A Zoo!_
 ║◇ *Type:* _Nothing in It_
-╚════════════╝`
+╚════════════╝`,
+              `./Sakura☣️Reactor/Sakura_Zoo.png`
             );
           } else {
             Zoology.findOne(
@@ -89,7 +90,7 @@ module.exports = {
                   await newUser
                     .save()
                     .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-                  return Sakura_Buttons.MTB(
+                  return Sakura_Buttons.MIB(
                     ӄʀǟӄɨռʐ,
                     chat,
                     ֆǟӄʊʀǟ,
@@ -99,14 +100,15 @@ module.exports = {
 ╚◇══════════════◇╝
 ╔════◇🌿𝗡𝗮𝗺𝗲: _Amature Zoo Keeper!_
 ║◇ *Type:* _Nothing Found_
-╚════════════╝`
+╚════════════╝`,
+                    `./Sakura☣️Reactor/Sakura_Zoo.png`
                   );
                 } else {
                   if (userZoo.zootimeout - (Date.now() - userZoo.zoodone) > 0) {
                     let time = ms(
                       userZoo.zootimeout - (Date.now() - userZoo.zoodone)
                     );
-                    return Sakura_Buttons.MTB(
+                    return Sakura_Buttons.MIB(
                       ӄʀǟӄɨռʐ,
                       chat,
                       ֆǟӄʊʀǟ,
@@ -117,7 +119,8 @@ module.exports = {
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 ║🐆 𝗜𝘁𝗲𝗺_𝗙𝗼𝘂𝗻𝗱: ❌You've Recently Bought a New Animal. 
 ║🐓 𝗭𝗼𝗼_𝗔𝗴𝗮𝗶𝗻: ${time.minutes}m ${time.seconds}s
-╚════════════╝`
+╚════════════╝`,
+                      `./Sakura☣️Reactor/Sakura_Zoo.png`
                     );
                   } else {
                     const zooID = Math.floor(Math.random() * 10) + 1;
@@ -139,7 +142,7 @@ module.exports = {
                       .catch((Error) =>
                         ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
                       );
-                    return Sakura_Buttons.MTB(
+                    return Sakura_Buttons.MIB(
                       ӄʀǟӄɨռʐ,
                       chat,
                       ֆǟӄʊʀǟ,
@@ -151,7 +154,8 @@ module.exports = {
 ║🐆 𝗜𝘁𝗲𝗺_𝗙𝗼𝘂𝗻𝗱: _You Added ${anim.symbol} in your Zoo!_
 ║💵 𝗪𝗼𝗿𝘁𝗵: _People paid you *${worth}* to see._
 ║💍 𝗜𝘁𝗲𝗺 𝗥𝗮𝗿𝗶𝘁𝘆: _${rarity}_
-╚════════════╝`
+╚════════════╝`,
+                      `./Sakura☣️Reactor/Sakura_Zoo.png`
                     );
                   }
                 }
