@@ -20,7 +20,8 @@
 ```
 
 # 🛸[𝐃𝐞𝐩𝐥𝐨𝐲𝐦𝐞𝐧𝐭]
-🍹[(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐀𝐝𝐯𝐚𝐧𝐜𝐞 𝐁𝐨𝐭🍾 #𝟏](https://chat.whatsapp.com/LKN8uVBd8ucHRHofz0jBSd) 
+
+🍹[(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐀𝐝𝐯𝐚𝐧𝐜𝐞 𝐁𝐨𝐭🍾 #𝟏](https://chat.whatsapp.com/LKN8uVBd8ucHRHofz0jBSd)
 🍹[(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐀𝐝𝐯𝐚𝐧𝐜𝐞 𝐁𝐨𝐭🍾 #𝟐](https://chat.whatsapp.com/HKO5WLEZxMe3xWCyiv6vBu)
 🍹[𝐃𝐢𝐬𝐜𝐨𝐫𝐝](https://discord.gg/xcFN6NDHEV)
 
