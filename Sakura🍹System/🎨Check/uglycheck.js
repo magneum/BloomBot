@@ -35,7 +35,9 @@ module.exports = {
       `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
       const hold = require(`../../Sakura🛰️Server/Hold`);
       hold.Hold(ֆǟӄʊʀǟ);
-      let url = `https://api.tenor.com/v1/search?q=beauty&key=${_𝔏𝔞𝔟_.TEN}&limit=100`;
+      const key = _𝔏𝔞𝔟_.TEN;
+      const cue = "beauty";
+      let url = `https://api.tenor.com/v1/search?q=${cue}&key=${key}&limit=100`;
       let response = await fetch(url);
       let json = await response.json();
       const MP4 =
