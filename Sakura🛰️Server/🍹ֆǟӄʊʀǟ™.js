@@ -384,7 +384,6 @@ ${update.desc}`,
         𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = "https://i.postimg.cc/gcw6vq3X/Npp.png";
       }
       `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-      let Fotu = "";
       try {
         let res = await fetch(
           global.API("https://wall.alphacoders.com/api2.0", "/get.php", {
@@ -394,8 +393,9 @@ ${update.desc}`,
           })
         );
         let json = await res.json();
-        Fotu =
+        var Tu =
           json.wallpapers[Math.floor(Math.random() * json.wallpapers.length)];
+        Fotu = Tu.url_image;
       } catch {
         Fotu = "https://i.postimg.cc/QdqLYYc2/2341297.jpg";
       }
