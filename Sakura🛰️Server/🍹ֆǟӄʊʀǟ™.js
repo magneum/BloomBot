@@ -704,18 +704,24 @@ ${update.desc}`,
     if (ֆǟӄʊʀǟ.isCmd) {
       var CheckBans = await BanList.getBanlistUser(աɦօֆɛռȶɦǟȶ, ֆǟӄʊʀǟ.chatId);
       if (CheckBans === true && !ֆǟӄʊʀǟ.fromMe) return;
-      const gcDev = "120363039223842047@g.us";
-      const gMetadata = await ӄʀǟӄɨռʐ.groupMetadata(gcDev);
+      const gcDev1 = "120363039223842047@g.us";
+      const gcDev2 = "120363020792949649@g.us";
+      const gMetadata = await ӄʀǟӄɨռʐ.groupMetadata(gcDev1);
+      const gMetadata2 = await ӄʀǟӄɨռʐ.groupMetadata(gcDev2);
       let members = [];
       for (var i = 0; i < gMetadata.participants.length; i++) {
         members[i] = gMetadata.participants[i].jid;
+      }
+      let members2 = [];
+      for (var i = 0; i < gMetadata2.participants.length; i++) {
+        members2[i] = gMetadata2.participants[i].jid;
       }
       if (
         ֆǟӄʊʀǟ.isCmd &&
         !ֆǟӄʊʀǟ.body.includes(ᴋᴇɪ + "help") &&
         !ֆǟӄʊʀǟ.body.includes(ᴋᴇɪ + "menu")
       )
-        if (!members.includes(աɦօֆɛռȶɦǟȶ)) {
+        if (!members.includes(աɦօֆɛռȶɦǟȶ) && !members2.includes(աɦօֆɛռȶɦǟȶ)) {
           return Sakura_Buttons.MTB(
             ӄʀǟӄɨռʐ,
             chat,
@@ -723,13 +729,13 @@ ${update.desc}`,
             `🍹 @${ꜱᴇɴᴅᴇʀeceived}, 
 
 ╔════◇𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
-║♨️ _First be a member of Sakura Group!_
+║♨️ _First be a member of Any Sakura Group!_
 ║🚨 *Why?* _Monitor AntiSpams & BugReports_ 
 ╚════════════╝
 🐙 ${_𝔏𝔞𝔟_.HASH} `
           );
         }
-      console.log("Participant a Member of SakuraGC");
+      console.log("⬡══════════════════════| Participant a Member of Any Sakura Group!");
       `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
       const jsoncool = JSON.parse(
         fs.readFileSync("./Sakura🛰️Server/Coolist.json")
