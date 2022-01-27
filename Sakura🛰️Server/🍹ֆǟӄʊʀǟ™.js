@@ -627,8 +627,6 @@ const RegexYouTube =
 /^((?:https?:)?\/\/)?((?:www|m)\.)?((?:youtube\.com|youtu.be))(\/(?:[\w\-]+\?v=|embed\/|v\/)?)([\w\-]+)(\S+)?$/;
 if (
 ֆǟӄʊʀǟ.isGroup &&
-!_𝔏𝔞𝔟_.HASH &&
-!_𝔏𝔞𝔟_.HASH2 &&
 !ֆǟӄʊʀǟ.fromMe &&
 !ֆǟӄʊʀǟ.isSenderDev &&
 ֆǟӄʊʀǟ.isBotGroupAdmin &&
