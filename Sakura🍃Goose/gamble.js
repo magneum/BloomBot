@@ -4,13 +4,13 @@
 `|🍹|`;
 `|🍹|`;
 var mongoose = require("mongoose");
-var UsersSakuraSchema = new mongoose.Schema({
+var GambleSakuraSchema = new mongoose.Schema({
   ID: String,
   serverID: String,
   Gambledone: Number,
   Gambletimeout: Number,
 });
-module.exports = mongoose.model("Experience", UsersSakuraSchema);
+module.exports = mongoose.model("Gamble", GambleSakuraSchema);
 `|🍹|`;
 `|🍹|`;
 `|🍹|======================================================================================================⬡  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™`;
