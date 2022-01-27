@@ -732,7 +732,7 @@ ${update.desc}`,
 ║♨️ _First be a member of Any Sakura Group!_
 ║🚨 *Why?* _Monitor AntiSpams & BugReports_ 
 ╚════════════╝
-🐙 ${_𝔏𝔞𝔟_.HASH} `
+🐙 𝐎𝐟𝐟𝐢𝐜𝐢𝐚𝐥: _${_𝔏𝔞𝔟_.HASH}_ *or* _${_𝔏𝔞𝔟_.HASH2}_`
           );
         }
       console.log("⬡══════════════════════| Participant a Member of Any Sakura Group!");
