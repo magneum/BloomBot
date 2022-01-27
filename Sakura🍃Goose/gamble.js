@@ -7,8 +7,8 @@ var mongoose = require("mongoose");
 var UsersSakuraSchema = new mongoose.Schema({
   ID: String,
   serverID: String,
-  Gambledone: 0,
-  Gambletimeout: 750000,
+  Gambledone: Number,
+  Gambletimeout: Number,
 });
 module.exports = mongoose.model("Experience", UsersSakuraSchema);
 `|🍹|`;
