@@ -37,6 +37,7 @@ module.exports = {
 ║⬡ *${ᴋᴇɪ}buy*  _buy items from store_
 ║⬡ *${ᴋᴇɪ}hunt*  _catch pokemon in forest_
 ║⬡ *${ᴋᴇɪ}zoo*  _make a zoo_
+║⬡ *${ᴋᴇɪ}gamble* _gamble with AI_
 ║⬡ *${ᴋᴇɪ}fish*  _Catch A Fish From A Vast Ocean_
 ║⬡ *${ᴋᴇɪ}daily*  _Gives You 200 per day_
 ║⬡ *${ᴋᴇɪ}work*  _Work to Earn Money_
