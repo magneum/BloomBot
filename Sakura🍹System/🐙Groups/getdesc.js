@@ -69,7 +69,7 @@ module.exports = {
 📜𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${groupData.subject}
 💞𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${groupData.participants.length}
 📝𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${groupData.desc}`,
-            footerText: `(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 | 𝐄𝐧𝐠𝐢𝐧𝐞: _KryoZen 3_\n${Clock} | ${Ping}ms`,
+            footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 • 𝐄𝐧𝐠𝐢𝐧𝐞: kryozen3 ⏋\n⎿ ${Clock} • ${Ping}ms ⏋`,
             buttons: [
               {
                 buttonId: `${ᴋᴇɪ}help`,

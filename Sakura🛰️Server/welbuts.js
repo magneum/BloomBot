@@ -92,7 +92,7 @@ ${ᴡᴇʟᴄᴏᴍᴇʀᴛxᴛ}
 ╚════════════╝
 
 ${ꜰᴇᴛᴄʜᴇᴅᴡᴇʟᴄᴏᴍᴇ.message}`,
-footerText: `(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 | 𝐄𝐧𝐠𝐢𝐧𝐞: _KryoZen 3_\n${Clock} | ${Ping}ms`,
+footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 • 𝐄𝐧𝐠𝐢𝐧𝐞: kryozen3 ⏋\n⎿ ${Clock} • ${Ping}ms ⏋`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,

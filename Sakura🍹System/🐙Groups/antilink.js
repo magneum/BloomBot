@@ -123,7 +123,7 @@ module.exports = {
 ║⚙️𝐄𝐧𝐠𝐢𝐧𝐞: ⋊ʀʏᴏ
 ╚════════════╝
 🌱𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗧𝗼𝗴𝗴𝗹𝗲 𝗔𝗻𝘁𝗶𝗹𝗶𝗻𝗸👇🏽‍`,
-                      footerText: `(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 | 𝐄𝐧𝐠𝐢𝐧𝐞: _KryoZen 3_\n${Clock} | ${Ping}ms`,
+                      footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 • 𝐄𝐧𝐠𝐢𝐧𝐞: kryozen3 ⏋\n⎿ ${Clock} • ${Ping}ms ⏋`,
                       buttons: [
                         {
                           buttonId: `${ᴋᴇɪ}antilink on`,
@@ -169,7 +169,7 @@ module.exports = {
 ║⚙️𝐄𝐧𝐠𝐢𝐧𝐞: ⋊ʀʏᴏ
 ╚════════════╝
 🌱𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗧𝗼𝗴𝗴𝗹𝗲 𝗔𝗻𝘁𝗶𝗹𝗶𝗻𝗸👇🏽‍`,
-                      footerText: `(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 | 𝐄𝐧𝐠𝐢𝐧𝐞: _KryoZen 3_\n${Clock} | ${Ping}ms`,
+                      footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 • 𝐄𝐧𝐠𝐢𝐧𝐞: kryozen3 ⏋\n⎿ ${Clock} • ${Ping}ms ⏋`,
                       buttons: [
                         {
                           buttonId: `${ᴋᴇɪ}antilink on`,
@@ -224,7 +224,7 @@ module.exports = {
 ║⚙️𝐄𝐧𝐠𝐢𝐧𝐞: ⋊ʀʏᴏ
 ╚════════════╝
 🌱𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗧𝗼𝗴𝗴𝗹𝗲 𝗔𝗻𝘁𝗶𝗹𝗶𝗻𝗸👇🏽‍`,
-                      footerText: `(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 | 𝐄𝐧𝐠𝐢𝐧𝐞: _KryoZen 3_\n${Clock} | ${Ping}ms`,
+                      footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 • 𝐄𝐧𝐠𝐢𝐧𝐞: kryozen3 ⏋\n⎿ ${Clock} • ${Ping}ms ⏋`,
                       buttons: [
                         {
                           buttonId: `${ᴋᴇɪ}antilink on`,
@@ -270,7 +270,7 @@ module.exports = {
 ║⚙️𝐄𝐧𝐠𝐢𝐧𝐞: ⋊ʀʏᴏ
 ╚════════════╝
 🌱𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗧𝗼𝗴𝗴𝗹𝗲 𝗔𝗻𝘁𝗶𝗹𝗶𝗻𝗸👇🏽‍`,
-                      footerText: `(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 | 𝐄𝐧𝐠𝐢𝐧𝐞: _KryoZen 3_\n${Clock} | ${Ping}ms`,
+                      footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 • 𝐄𝐧𝐠𝐢𝐧𝐞: kryozen3 ⏋\n⎿ ${Clock} • ${Ping}ms ⏋`,
                       buttons: [
                         {
                           buttonId: `${ᴋᴇɪ}antilink on`,
