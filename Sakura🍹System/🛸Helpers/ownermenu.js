@@ -32,7 +32,7 @@ module.exports = {
       var MediaUrl = `./Sakura☣️Reactor/ֆǟӄʊʀǟ.png`;
       var MainText = `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 •@${ꜱᴇɴᴅᴇʀeceived}, ${Timers}
 
-╔═════════════🐙 𝐊𝐢𝐧𝐠/𝐎𝐰𝐧𝐞𝐫
+╔════◇🐙 𝐊𝐢𝐧𝐠/𝐎𝐰𝐧𝐞𝐫
 ║⬡ *${ᴋᴇɪ}dyno*  _check heroku usage_
 ║⬡ *${ᴋᴇɪ}ban*  _ban bot in group/user_
 ║⬡ *${ᴋᴇɪ}unban*  _unban bot in group/user_

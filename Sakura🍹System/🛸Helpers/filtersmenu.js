@@ -32,7 +32,7 @@ module.exports = {
       var MediaUrl = `./Sakura☣️Reactor/ֆǟӄʊʀǟ.png`;
       var MainText = `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 •@${ꜱᴇɴᴅᴇʀeceived}, ${Timers}
 
-╔═════════════🏝️ 𝐅𝐢𝐥𝐭𝐞𝐫𝐬/𝐀𝐮𝐝𝐢𝐨
+╔════◇🏝️ 𝐅𝐢𝐥𝐭𝐞𝐫𝐬/𝐀𝐮𝐝𝐢𝐨
 ║⬡ *${ᴋᴇɪ}bass*  _audio filter_
 ║⬡ *${ᴋᴇɪ}blown*  _audio filter_
 ║⬡ *${ᴋᴇɪ}deep*  _audio filter_

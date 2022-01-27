@@ -32,7 +32,7 @@ module.exports = {
       var MediaUrl = `./Sakura☣️Reactor/ֆǟӄʊʀǟ.png`;
       var MainText = `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 •@${ꜱᴇɴᴅᴇʀeceived}, ${Timers}
 
-╔═════════════🔎 𝐒𝐞𝐚𝐫𝐜𝐡
+╔════◇🔎 𝐒𝐞𝐚𝐫𝐜𝐡
 ║⬡ *${ᴋᴇɪ}lyrics*  _find lyrics of songs_
 ║⬡ *${ᴋᴇɪ}wallpaper*  _download wallpapers_
 ║⬡ *${ᴋᴇɪ}google*  _search anything on google_

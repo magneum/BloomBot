@@ -32,8 +32,7 @@ module.exports = {
       var MediaUrl = `./Sakura☣️Reactor/ֆǟӄʊʀǟ.png`;
       var MainText = `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 •@${ꜱᴇɴᴅᴇʀeceived}, ${Timers}
 
-
-╔═════════════🔰 𝐆𝐫𝐨𝐮𝐩𝐬/𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧
+╔════◇🔰 𝐆𝐫𝐨𝐮𝐩𝐬/𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧
 ║⬡ *${ᴋᴇɪ}promote*  _promote member to admin_
 ║⬡ *${ᴋᴇɪ}demote*  _demote member from admin_
 ║⬡ *${ᴋᴇɪ}warn*  _warn a person_

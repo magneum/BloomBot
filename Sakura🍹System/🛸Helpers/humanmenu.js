@@ -32,8 +32,7 @@ module.exports = {
       var MediaUrl = `./Sakura☣️Reactor/ֆǟӄʊʀǟ.png`;
       var MainText = `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 •@${ꜱᴇɴᴅᴇʀeceived}, ${Timers}
 
-
-╔═════════════🥃 🔞𝐇𝐮𝐦𝐚𝐧 𝐍𝐒𝐅𝐖
+╔════◇🥃 🔞𝐇𝐮𝐦𝐚𝐧 𝐍𝐒𝐅𝐖
 ║⬡ *${ᴋᴇɪ}4k*  _get random 4kporn img/gif_
 ║⬡ *${ᴋᴇɪ}blowjob*  _get random blowjob img/gif_
 ║⬡ *${ᴋᴇɪ}milf*  _get random milf img/gif_
