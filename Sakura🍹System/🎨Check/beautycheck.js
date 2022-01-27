@@ -38,37 +38,39 @@ module.exports = {
       let url = `https://api.tenor.com/v1/search?q=beauty&key=${_𝔏𝔞𝔟_.TEN}&limit=100`;
       let response = await fetch(url);
       let json = await response.json();
+      const MP4 =
+        json.results[Math.floor(Math.random() * json.results.length)].media[0]
+          .mp4.url;
       `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
       if (ֆǟӄʊʀǟ.isReply) {
         if (!json[0]) {
-          return Sakura_Buttons.MIB(
+          return Sakura_Buttons.MTB(
             ӄʀǟӄɨռʐ,
             chat,
             ֆǟӄʊʀǟ,
             `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived},
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-║ _Your Face Lmfao!_
-╚════════════╝`,
-            "https://i.postimg.cc/9Xkbbm7m/meme.png"
+║ Your Face Lmfao!
+╚════════════╝`
           );
-        }
-        `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-        return Sakura_Buttons.MVB(
-          ӄʀǟӄɨռʐ,
-          chat,
-          ֆǟӄʊʀǟ,
-          `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚
+        } else {
+          return Sakura_Buttons.MVB(
+            ӄʀǟӄɨռʐ,
+            chat,
+            ֆǟӄʊʀǟ,
+            `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-║ 𝗕𝗲𝗮𝘂𝘁𝘆 𝗠𝗲𝗺𝗯𝗲𝗿: _@${personreceived}_
-║ 𝗔𝘀𝗸𝗲𝗱 𝗕𝘆: _@${ꜱᴇɴᴅᴇʀeceived}_
-║ 𝗣𝗲𝗿𝗰𝗲𝗻𝘁𝗮𝗴𝗲: _${FinalGay}%_
+║ 𝗕𝗲𝗮𝘂𝘁𝘆 𝗖𝗵𝗲𝗰𝗸: @${personreceived}
+║ 𝗔𝘀𝗸𝗲𝗱 𝗕𝘆: @${ꜱᴇɴᴅᴇʀeceived}
+║ 𝗣𝗲𝗿𝗰𝗲𝗻𝘁𝗮𝗴𝗲: ${FinalGay}%
 ╚════════════╝`,
-          json.results[Math.floor(Math.random() * json.results.length)].media[0]
-            .mp4.url
-        );
+            MP4
+          );
+        }
       } else {
+        `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
         const Type = Object.keys(chat.message)[0];
         const BeautyBody =
           Type === "listResponseMessage" &&
@@ -100,15 +102,14 @@ module.exports = {
         const FinalBeauty = Math.ceil(Math.random() * 100);
         `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
         if (!json[0]) {
-
-          return Sakura_Buttons.MIB(
+          return Sakura_Buttons.MTB(
             ӄʀǟӄɨռʐ,
             chat,
             ֆǟӄʊʀǟ,
             `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived},
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-║ 𝗕𝗲𝗮𝘂𝘁𝘆 𝗠𝗲𝗺𝗯𝗲𝗿: _Your Face Lmfao!_
+║ 𝗕𝗲𝗮𝘂𝘁𝘆 𝗖𝗵𝗲𝗰𝗸: Your Face Lmfao!
 ╚════════════╝`,
             "https://i.postimg.cc/9Xkbbm7m/meme.png"
           );
@@ -123,6 +124,7 @@ module.exports = {
           MessageType.video,
           { mimetype: `video/mp4` }
         );
+        `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
         return await ӄʀǟӄɨռʐ
           .sendMessage(
             ֆǟӄʊʀǟ.chatId,
@@ -130,9 +132,9 @@ module.exports = {
               contentText: `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-║ 𝗕𝗲𝗮𝘂𝘁𝘆 𝗠𝗲𝗺𝗯𝗲𝗿: _@${Mention}_
-║ 𝗔𝘀𝗸𝗲𝗱 𝗕𝘆: _@${ꜱᴇɴᴅᴇʀeceived}_
-║ 𝗣𝗲𝗿𝗰𝗲𝗻𝘁𝗮𝗴𝗲: _${FinalBeauty}%_
+║ 𝗕𝗲𝗮𝘂𝘁𝘆 𝗖𝗵𝗲𝗰𝗸: @${Mention}
+║ 𝗔𝘀𝗸𝗲𝗱 𝗕𝘆: @${ꜱᴇɴᴅᴇʀeceived}
+║ 𝗣𝗲𝗿𝗰𝗲𝗻𝘁𝗮𝗴𝗲: ${FinalBeauty}%_
 ╚════════════╝`,
               footerText: `|(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 | 𝐄𝐧𝐠𝐢𝐧𝐞: _KryoZen 3_\n${Clock}`,
               buttons: [
@@ -148,11 +150,12 @@ module.exports = {
             MessageType.buttonsMessage,
             {
               quoted: chat,
-              contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
+              contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ, MentionPerson] },
             }
           )
           .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
       }
+      `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
     } catch (Error) {
       ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
       return;
