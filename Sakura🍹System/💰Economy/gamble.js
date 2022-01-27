@@ -109,7 +109,6 @@ module.exports = {
 ┊   🤑𝐆𝐚𝐦𝐛𝐥𝐞𝐫
 ╚◇══════════════◇╝
 
-
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 ║💰 𝗧𝗼𝘁𝗮𝗹 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: Just Opened Your Account!
 ║🤠 𝗔𝗰𝗰𝗼𝘂𝗻𝘁_𝗛𝗼𝗹𝗱𝗲𝗿: @${personreceived}
@@ -165,7 +164,6 @@ module.exports = {
 ┊   🤑𝐆𝐚𝐦𝐛𝐥𝐞𝐫
 ╚◇══════════════◇╝
 
-
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 ║🤑 𝗚𝗮𝗺𝗯𝗹𝗲 𝗖𝗼𝗼𝗹𝗱𝗼𝘄𝗻: _❌You've Recently Gambled!_
 ║🕐 𝗚𝗮𝗺𝗯𝗹𝗲 𝗔𝗴𝗮𝗶𝗻: ${time.minutes}m ${time.seconds}s
@@ -193,7 +191,6 @@ module.exports = {
 ┊   🤑𝐆𝐚𝐦𝐛𝐥𝐞𝐫
 ╚◇══════════════◇╝
 
-
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 ║❌ 𝗘𝗿𝗿𝗼𝗿: *Specify a color!*
 ║❣️ 𝗨𝘀𝗮𝗴𝗲: ${ᴋᴇɪ}${newScpt}  _red/black/purple money_
@@ -220,7 +217,6 @@ module.exports = {
 ┊   🤑𝐆𝐚𝐦𝐛𝐥𝐞𝐫
 ╚◇══════════════◇╝
 
-
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 ║❌ 𝗘𝗿𝗿𝗼𝗿: _Specify an amount to gamble!_
 ║❣️ 𝗨𝘀𝗮𝗴𝗲: ${ᴋᴇɪ}${newScpt}  _red/black/purple money_
@@ -238,7 +234,6 @@ module.exports = {
 ┊ 𝐑𝐮𝐬𝐬𝐢𝐚𝐧🎡𝐑𝐨𝐮𝐥𝐥𝐞𝐭𝐞
 ┊   🤑𝐆𝐚𝐦𝐛𝐥𝐞𝐫
 ╚◇══════════════◇╝
-
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 ║❌ 𝗘𝗿𝗿𝗼𝗿: _You are betting more than you have!_
@@ -260,7 +255,6 @@ module.exports = {
 ┊ 𝐑𝐮𝐬𝐬𝐢𝐚𝐧🎡𝐑𝐨𝐮𝐥𝐥𝐞𝐭𝐞
 ┊   🤑𝐆𝐚𝐦𝐛𝐥𝐞𝐫
 ╚◇══════════════◇╝
-
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 ║❌ 𝗘𝗿𝗿𝗼𝗿: *Specify a color*
@@ -299,7 +293,6 @@ module.exports = {
 ┊   🤑𝐆𝐚𝐦𝐛𝐥𝐞𝐫
 ╚◇══════════════◇╝
 
-
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 ║🟣 𝗘𝗮𝗿𝗻𝗲𝗱: You won ${money} coins.
 ║⭐ 𝗠𝘂𝗹𝘁𝗶𝗽𝗹𝗶𝗲𝗿: _15x_
@@ -329,7 +322,6 @@ module.exports = {
 ┊ 𝐑𝐮𝐬𝐬𝐢𝐚𝐧🎡𝐑𝐨𝐮𝐥𝐥𝐞𝐭𝐞
 ┊   🤑𝐆𝐚𝐦𝐛𝐥𝐞𝐫
 ╚◇══════════════◇╝
-
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 ║🔴 𝗘𝗮𝗿𝗻𝗲𝗱: _You won ${money} coins!_
@@ -361,7 +353,6 @@ module.exports = {
 ┊   🤑𝐆𝐚𝐦𝐛𝐥𝐞𝐫
 ╚◇══════════════◇╝
 
-
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 ║⚫ 𝗘𝗮𝗿𝗻𝗲𝗱: _You won ${money} coins!_
 ║⭐ 𝗠𝘂𝗹𝘁𝗶𝗽𝗹𝗶𝗲𝗿: _2x_
@@ -390,7 +381,6 @@ module.exports = {
 ┊ 𝐑𝐮𝐬𝐬𝐢𝐚𝐧🎡𝐑𝐨𝐮𝐥𝐥𝐞𝐭𝐞
 ┊   🤑𝐆𝐚𝐦𝐛𝐥𝐞𝐫
 ╚◇══════════════◇╝
-
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 ║💀 𝗥𝗲𝘀𝘂𝗹𝘁: _You lost ${money} coins!_
