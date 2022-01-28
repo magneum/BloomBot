@@ -89,7 +89,7 @@ module.exports = {
               ӄʀǟӄɨռʐ,
               chat,
               ֆǟӄʊʀǟ,
-             `*🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived},*
+              `*🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived},*
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}  
 ║🤖 *User Added To Database For First Time!*
@@ -189,8 +189,11 @@ module.exports = {
               ӄʀǟӄɨռʐ,
               chat,
               ֆǟӄʊʀǟ,
-              `⭕𝐀𝐮𝐝𝐢𝐨 🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived}, 
-𝗣𝗹𝗲𝗮𝘀𝗲 𝘄𝗮𝗶𝘁 𝗳𝗼𝗿 𝘁𝗵𝗲 𝗱𝗲𝗹𝗶𝘃𝗲𝗿𝘆 𝗼𝗳 𝐀𝐮𝐝𝐢𝐨!
+              `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived},
+╔════◇ 𝗣𝗹𝗲𝗮𝘀𝗲 𝘄𝗮𝗶𝘁!
+║⭕ 𝗙𝗶𝗹𝗲 𝗧𝘆𝗽𝗲: 𝐀𝐮𝐝𝐢𝐨!
+║⏰ 𝗪𝗮𝗶𝘁 𝗧𝗶𝗺𝗲: _Depends on Length of file._
+╚════════════╝
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 ║🍻 𝐓𝐢𝐭𝐥𝐞: ${Found.title}
