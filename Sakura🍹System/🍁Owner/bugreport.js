@@ -24,7 +24,7 @@ module.exports = {
   async handle(ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
     try {
       var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
-      var ꜱᴇɴᴅᴇʀeceived = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
+      var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
       const defaultnm = ֆǟӄʊʀǟ.commandName;
       const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
       `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
@@ -41,7 +41,7 @@ module.exports = {
           chat,
           ֆǟӄʊʀǟ,
           աɦօֆɛռȶɦǟȶ,
-          ꜱᴇɴᴅᴇʀeceived,
+          աɦօֆɛռȶɦǟȶռʊʍ,
           ֆǟӄʊʀǟ.commandName,
           ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
         );
@@ -60,7 +60,7 @@ module.exports = {
         .sendMessage(
           ֆǟӄʊʀǟ.chatId,
           {
-            contentText: `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived},
+            contentText: `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
 *Thank you for reporting the bug to the Developers!*
 _If Found the report was just for fun then you will be banned by the bot!_
 

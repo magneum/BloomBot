@@ -25,10 +25,10 @@ module.exports = {
         var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
         var personreceived = Receiver.substring(0, Receiver.length - 15);
         var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
-        var ꜱᴇɴᴅᴇʀeceived = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
+        var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
       } else {
         var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
-        var ꜱᴇɴᴅᴇʀeceived = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
+        var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
       }
       const defaultnm = ֆǟӄʊʀǟ.commandName;
       const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
@@ -55,7 +55,7 @@ module.exports = {
           `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-║ @${ꜱᴇɴᴅᴇʀeceived}, Your Face Lmfao!
+║ @${աɦօֆɛռȶɦǟȶռʊʍ}, Your Face Lmfao!
 ╚════════════╝`
         );
       }
@@ -69,7 +69,7 @@ module.exports = {
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 ║ 𝐔𝐠𝐥𝐲 𝗖𝗵𝗲𝗰𝗸: @${personreceived}
-║ 𝗔𝘀𝗸𝗲𝗱 𝗕𝘆: @${ꜱᴇɴᴅᴇʀeceived}
+║ 𝗔𝘀𝗸𝗲𝗱 𝗕𝘆: @${աɦօֆɛռȶɦǟȶռʊʍ}
 ║ 𝗣𝗲𝗿𝗰𝗲𝗻𝘁𝗮𝗴𝗲: ${Amount}%
 ╚════════════╝`,
           Video
@@ -122,7 +122,7 @@ module.exports = {
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 ║ 𝐔𝐠𝐥𝐲 𝗖𝗵𝗲𝗰𝗸: @${Mention}
-║ 𝗔𝘀𝗸𝗲𝗱 𝗕𝘆: @${ꜱᴇɴᴅᴇʀeceived}
+║ 𝗔𝘀𝗸𝗲𝗱 𝗕𝘆: @${աɦօֆɛռȶɦǟȶռʊʍ}
 ║ 𝗣𝗲𝗿𝗰𝗲𝗻𝘁𝗮𝗴𝗲: ${Amount}%_
 ╚════════════╝`,
               footerText: `(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 | 𝐄𝐧𝐠𝐢𝐧𝐞: _KryoZen 3_\n${Clock} | ${Ping}ms`,

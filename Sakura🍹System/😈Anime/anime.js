@@ -25,7 +25,7 @@ module.exports = {
   async handle(ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
     try {
       var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
-      var ꜱᴇɴᴅᴇʀeceived = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
+      var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
       const defaultnm = ֆǟӄʊʀǟ.commandName;
       const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
       `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
@@ -53,7 +53,7 @@ module.exports = {
               ӄʀǟӄɨռʐ,
               chat,
               ֆǟӄʊʀǟ,
-             `*🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived},*
+             `*🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},*
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}  
 ║🤖 *User Added To Database For First Time!*
@@ -139,7 +139,7 @@ module.exports = {
               chat,
               ֆǟӄʊʀǟ,
               աɦօֆɛռȶɦǟȶ,
-              ꜱᴇɴᴅᴇʀeceived,
+              աɦօֆɛռȶɦǟȶռʊʍ,
               ֆǟӄʊʀǟ.commandName,
               ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
             );
@@ -147,7 +147,7 @@ module.exports = {
           `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
           const name = Needs.join(` `);
           malScraper.getInfoFromName(name).then(async (data) => {
-            const AnimeInfos = `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived},
+            const AnimeInfos = `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 ║💡𝐓𝐢𝐭𝐥𝐞: *${data.title}*

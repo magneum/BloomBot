@@ -22,7 +22,7 @@ module.exports = {
   async handle(ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
     try {
       var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
-      var ꜱᴇɴᴅᴇʀeceived = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
+      var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
       const defaultnm = ֆǟӄʊʀǟ.commandName;
       const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
       `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
@@ -64,7 +64,7 @@ module.exports = {
                   ӄʀǟӄɨռʐ,
                   chat,
                   ֆǟӄʊʀǟ,
-                  `✔️ 🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived}, *Sir Here Is The Verified Link!*
+                  `✔️ 🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ}, *Sir Here Is The Verified Link!*
 
 +sudolnk($req%+${Ping}+${Clock}%)
 ${_𝔏𝔞𝔟_.HASH.replace(`https://chat.whatsapp.com/`, `/kryo/`)}${value.result}`,
@@ -80,7 +80,7 @@ ${_𝔏𝔞𝔟_.HASH.replace(`https://chat.whatsapp.com/`, `/kryo/`)}${value.re
             ӄʀǟӄɨռʐ,
             chat,
             ֆǟӄʊʀǟ,
-            `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived},\n*Sir Please Reply To _QR-Code_!*`
+            `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},\n*Sir Please Reply To _QR-Code_!*`
           );
         }
       }

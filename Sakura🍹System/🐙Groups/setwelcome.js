@@ -23,7 +23,7 @@ module.exports = {
   async handle(ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
     try {
       var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
-      var ꜱᴇɴᴅᴇʀeceived = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
+      var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
       const defaultnm = ֆǟӄʊʀǟ.commandName;
       const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
       `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
@@ -35,7 +35,7 @@ module.exports = {
           ӄʀǟӄɨռʐ,
           chat,
           ֆǟӄʊʀǟ,
-          `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived}, 
+          `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ}, 
 
 ╔════◇🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧 
 ║💡 _This Command is Only For Groups!_
@@ -48,7 +48,7 @@ module.exports = {
           ӄʀǟӄɨռʐ,
           chat,
           ֆǟӄʊʀǟ,
-          `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived},
+          `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
 ╔════◇🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧 
 ║💡 *Admins Only*
 ║❌ _You Are Not Allowed!_
@@ -62,7 +62,7 @@ module.exports = {
           ӄʀǟӄɨռʐ,
           chat,
           ֆǟӄʊʀǟ,
-          `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived}, 
+          `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ}, 
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 ║❌ *How Can I Use Admin Only Commands If i am not admin?*
@@ -86,7 +86,7 @@ module.exports = {
             ӄʀǟӄɨռʐ,
             chat,
             ֆǟӄʊʀǟ,
-            `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived},
+            `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
 
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
@@ -100,7 +100,7 @@ module.exports = {
             ӄʀǟӄɨռʐ,
             chat,
             ֆǟӄʊʀǟ,
-            `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived},
+            `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
 
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
@@ -114,7 +114,7 @@ module.exports = {
             ӄʀǟӄɨռʐ,
             chat,
             ֆǟӄʊʀǟ,
-            `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived},
+            `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
 
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
@@ -135,7 +135,7 @@ module.exports = {
             ӄʀǟӄɨռʐ,
             chat,
             ֆǟӄʊʀǟ,
-            `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived},
+            `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
 
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
@@ -151,7 +151,7 @@ module.exports = {
             ӄʀǟӄɨռʐ,
             chat,
             ֆǟӄʊʀǟ,
-            `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived},
+            `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
 
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}

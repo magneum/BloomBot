@@ -1,0 +1,116 @@
+const Sakura_Buttons = require(`../../Sakura🛰️Server/Sakura_Buttons`);
+const Sakura_Static = require(`../../Sakura🛰️Server/Sakura_Static`);
+const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
+const cleanRF = require(`../../Sakura🛰️Server/cleanRF`);
+const ffmpeg = require(`fluent-ffmpeg`);
+const _𝔏𝔞𝔟_ = require(`../../Sakura🛰️Server/_𝔏𝔞𝔟_`);
+const ꜰᴜᴄᴋ = require(`../../Sakura🛰️Server/oShit`);
+var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
+var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
+const Downloader = require(`nodejs-file-downloader`);
+const anime = require(`anime-actions`);
+const fs = require(`fs`);
+const vers = require(`../../package.json`);
+var path = require(`path`);
+var scriptName = path.basename(__filename);
+var str = scriptName;
+var newScpt = str.slice(0, -3).toLowerCase();
+`|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+module.exports = {
+  name: newScpt,
+  async handle(ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
+    `⬡  ⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
+    if (ֆǟӄʊʀǟ.isReply) {
+      var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
+      var personreceived = Receiver.substring(0, Receiver.length - 15);
+      var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
+      var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
+    } else {
+      var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
+      var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
+    }
+    `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+    if (chat.quoted && chat.quoted.sender) {
+      chat.mentionedJid.push(chat.quoted.sender);
+    } else {
+      chat.mentionedJid.push(chat.sender);
+    }
+    `⬡  ⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
+    const hold = require("../../Sakura🛰️Server/Hold");
+    hold.Hold(ֆǟӄʊʀǟ);
+    console.log(userBadge);
+    `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+    const Raw = await anime.bite();
+    const defaultnm = ֆǟӄʊʀǟ.commandName;
+    const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
+    if (!Raw.endsWith(`.gif`) && !Raw.endsWith(`.mp4`)) {
+      ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
+      return;
+    } else {
+      console.log("🍹════════| " + Raw + " |════════🍹");
+      const GotFile = `./Sakura🗑️Temp/${Date.now()}_${աɦօֆɛռȶɦǟȶ.toString()}.gif`;
+      const GiveFile = `./Sakura🗑️Temp/${Date.now()}_${աɦօֆɛռȶɦǟȶ.toString()}.mp4`;
+      const downloader = await new Downloader({
+        url: Raw,
+        directory: `./Sakura🗑️Temp`,
+        fileName: `${Date.now()}_${աɦօֆɛռȶɦǟȶ.toString()}.gif`,
+        cloneFiles: false,
+      });
+      try {
+        await downloader.download();
+      } catch (Error) {
+        ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
+        return;
+      }
+      `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+      if (ֆǟӄʊʀǟ.isReply) {
+        ffmpeg(GotFile)
+          .outputOptions([
+            `-movflags faststart -pix_fmt yuv420p -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2"`,
+          ])
+          .save(GiveFile)
+          .on(`end`, async () => {
+            await Sakura_Static.MGS(
+              ӄʀǟӄɨռʐ,
+              chat,
+              ֆǟӄʊʀǟ,
+              `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚,
+
+╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+║🍕𝐅𝐫𝐨𝐦: @${աɦօֆɛռȶɦǟȶռʊʍ}
+║🌭𝐓𝐨: @${personreceived}
+╚════════════╝`,
+              GiveFile
+            );
+            return await cleanRF.cleanRF(GiveFile, GotFile);
+          });
+        `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+      }
+      ffmpeg(GotFile)
+        .outputOptions([
+          `-movflags faststart -pix_fmt yuv420p -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2"`,
+        ])
+        .save(GiveFile)
+        .on(`end`, async () => {
+          await ӄʀǟӄɨռʐ.sendMessage(ֆǟӄʊʀǟ.chatId, GiveFile, "videoMessage", {
+            mimetype: "video/gif",
+            quoted: chat,
+            caption: `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚,
+
+╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+║🍕𝐅𝐫𝐨𝐦: @${աɦօֆɛռȶɦǟȶռʊʍ}
+║🌭𝐓𝐨: ${chat.mentionedJid
+              .map((user) =>
+                user === chat.sender ? "Themselves " : `@${user.split("@")[0]}`
+              )
+              .join(", ")}
+╚════════════╝`,
+            contextInfo: {
+              mentionedJid: [...chat.mentionedJid, chat.sender],
+            },
+          });
+          return await cleanRF.cleanRF(GiveFile, GotFile);
+        });
+    }
+  },
+};
