@@ -33,6 +33,7 @@ module.exports = {
       var MainText = `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 •@${ꜱᴇɴᴅᴇʀeceived}, ${Timers}
 
 ╔════◇📥 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫𝐬
+║⬡ *${ᴋᴇɪ}yt*  _youtube-audio max 10min_
 ║⬡ *${ᴋᴇɪ}play*  _youtube-audio max 10min_
 ║⬡ *${ᴋᴇɪ}song*  _youtube-audio max 20min_
 ║⬡ *${ᴋᴇɪ}youtubeaudio*  _youtube-audio max 30min_
