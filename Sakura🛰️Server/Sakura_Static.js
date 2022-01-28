@@ -20,37 +20,37 @@ var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 `⬡🍹⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
 const Sakura_GIF_Static = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, MainText, MediaUrl) => {
-  const defaultnm = ֆǟӄʊʀǟ.commandName;
-  const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
-  if (ֆǟӄʊʀǟ.isReply) {
-    var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
-    var ꜱᴇɴᴅᴇʀeceived = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
-    var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
-    var personreceived = Receiver.substring(0, Receiver.length - 15);
-    return await ӄʀǟӄɨռʐ
-      .sendMessage(ֆǟӄʊʀǟ.chatId, { url: MediaUrl }, MessageType.video, {
-        mimetype: `video/gif`,
-        quoted: chat,
-        caption: MainText,
-        contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ, Receiver] },
-      })
-      .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-  } else {
-    var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
-    var ꜱᴇɴᴅᴇʀeceived = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
-    return await ӄʀǟӄɨռʐ
-      .sendMessage(ֆǟӄʊʀǟ.chatId, { url: MediaUrl }, MessageType.video, {
-        mimetype: `video/gif`,
-        quoted: chat,
-        caption: MainText,
-        contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
-      })
-      .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-  }
+const defaultnm = ֆǟӄʊʀǟ.commandName;
+const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
+if (ֆǟӄʊʀǟ.isReply) {
+var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
+var ꜱᴇɴᴅᴇʀeceived = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
+var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
+var personreceived = Receiver.substring(0, Receiver.length - 15);
+return await ӄʀǟӄɨռʐ
+.sendMessage(ֆǟӄʊʀǟ.chatId, { url: MediaUrl }, MessageType.video, {
+mimetype: `video/gif`,
+quoted: chat,
+caption: MainText,
+contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ, Receiver] },
+})
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+} else {
+var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
+var ꜱᴇɴᴅᴇʀeceived = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
+return await ӄʀǟӄɨռʐ
+.sendMessage(ֆǟӄʊʀǟ.chatId, { url: MediaUrl }, MessageType.video, {
+mimetype: `video/gif`,
+quoted: chat,
+caption: MainText,
+contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
+})
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+}
 };
 
 module.exports = {
-  MGS: Sakura_GIF_Static,
+MGS: Sakura_GIF_Static,
 };
 `|🍹|`;
 `|🍹|`;
