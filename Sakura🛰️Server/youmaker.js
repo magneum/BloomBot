@@ -5,18 +5,12 @@ const axios = require("axios");
 const cheerio = require("cheerio");
 const qs = require("qs");
 const { fromBuffer } = require("file-type");
-
 //varuable
 const ytIdRegex =
   /(?:http(?:s|):\/\/|)(?:(?:www\.|)youtube(?:\-nocookie|)\.com\/(?:watch\?.*(?:|\&)v=|embed\/|v\/)|youtu\.be\/)([-_0-9A-Za-z]{11})/;
 
 //fucntion
 function post(url, formdata) {
-  console.log(
-    Object.keys(formdata)
-      .map((key) => `${key}=${encodeURIComponent(formdata[key])}`)
-      .join("&")
-  );
   return fetch(url, {
     method: "POST",
     headers: {
