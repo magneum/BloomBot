@@ -1,7 +1,7 @@
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
 const { YouTube_Music } = require(`./Sakura🛰️Server/youmaker`);
 const FFmpeg = require("fluent-FFmpeg");
-const readline = require(`readline`);
+const Readline = require(`readline`);
 const TinyURL = require("tinyurl");
 const FFmpegProc = new FFmpeg();
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
@@ -13,7 +13,7 @@ YouTube_Music("https://youtu.be/UKunvvN2iCk").then((res) => {
         .output("./" + title.trim().toString() + ".mp3")
         .format("mp3")
         .on(`progress`, (p) => {
-          readline.cursorTo(process.stdout, 0);
+          Readline.cursorTo(process.stdout, 0);
           process.stdout.write(`⬡═════| 💯𝐏𝐫𝐨𝐠𝐫𝐞𝐬𝐬: ${p.targetSize}kb`);
         })
         .on("error", (Error) =>
