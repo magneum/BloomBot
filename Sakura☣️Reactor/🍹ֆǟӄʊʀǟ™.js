@@ -4,37 +4,37 @@
 `|🍹|`;
 `|🍹|`;
 (async () => {
-const { ֆǟӄʊʀǟ, ӄʀǟӄɨռʐ } = require(`../Sakura🛰️Server/🍹ֆǟӄʊʀǟ™`);
-const _𝔏𝔞𝔟_ = require(`../Sakura🛰️Server/_𝔏𝔞𝔟_`);
-const ֆǟӄʊʀǟgoose = require("mongoose");
-const Kolor = require(`chalk`);
-`|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-try {
-console.log(Kolor.yellow(`🍹INFO ⬰ SakuraGoose Connecting!`));
-await ֆǟӄʊʀǟgoose
-.connect(_𝔏𝔞𝔟_.SAKURAMDB, {
-useNewUrlParser: true,
-useUnifiedTopology: true,
-useCreateIndex: true,
-useFindAndModify: false,
-})
-.catch((err) => {
-console.log(Kolor.red(`🍹INFO ⬰ SakuraGoose Error: \n${err}`));
-process.exit(0);
-});
-console.log(Kolor.green(`🍹INFO ⬰ SakuraGoose Connected!`));
-} catch (ℓαвєяяσя) {
-console.log(ℓαвєяяσя);
-console.log(Kolor.red(`❌ERROR ⬰ 𝗣𝗹𝗲𝗮𝘀𝗲 𝗿𝗲𝗱𝗲𝗽𝗹𝗼𝘆 𝘆𝗼𝘂𝗿 𝗯𝗼𝘁!`));
-process.exit(1);
-}
-`|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-ӄʀǟӄɨռʐ.logger.level = "error";
-await ֆǟӄʊʀǟ().catch((ℓαвєяяσя) => {
-console.log(ℓαвєяяσя);
-console.log(Kolor.red(`❌ERROR ⬰ 𝗣𝗹𝗲𝗮𝘀𝗲 𝗿𝗲𝗱𝗲𝗽𝗹𝗼𝘆 𝘆𝗼𝘂𝗿 𝗯𝗼𝘁!`));
-process.exit(1);
-});
+  const { ֆǟӄʊʀǟ, ӄʀǟӄɨռʐ } = require(`../Sakura🛰️Server/🍹ֆǟӄʊʀǟ™`);
+  const _𝔏𝔞𝔟_ = require(`../Sakura🛰️Server/_𝔏𝔞𝔟_`);
+  const ֆǟӄʊʀǟgoose = require("mongoose");
+  const Kolor = require(`chalk`);
+  `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+  try {
+    console.log(Kolor.yellow(`🍹INFO ⬰ SakuraGoose Connecting!`));
+    await ֆǟӄʊʀǟgoose
+      .connect(_𝔏𝔞𝔟_.SAKURAMDB, {
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+        useCreateIndex: true,
+        useFindAndModify: false,
+      })
+      .catch((err) => {
+        console.log(Kolor.red(`🍹INFO ⬰ SakuraGoose Error: \n${err}`));
+        process.exit(0);
+      });
+    console.log(Kolor.green(`🍹INFO ⬰ SakuraGoose Connected!`));
+  } catch (ℓαвєяяσя) {
+    console.log(ℓαвєяяσя);
+    console.log(Kolor.red(`❌ERROR ⬰ 𝗣𝗹𝗲𝗮𝘀𝗲 𝗿𝗲𝗱𝗲𝗽𝗹𝗼𝘆 𝘆𝗼𝘂𝗿 𝗯𝗼𝘁!`));
+    process.exit(1);
+  }
+  `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+  ӄʀǟӄɨռʐ.logger.level = "error";
+  await ֆǟӄʊʀǟ().catch((ℓαвєяяσя) => {
+    console.log(ℓαвєяяσя);
+    console.log(Kolor.red(`❌ERROR ⬰ 𝗣𝗹𝗲𝗮𝘀𝗲 𝗿𝗲𝗱𝗲𝗽𝗹𝗼𝘆 𝘆𝗼𝘂𝗿 𝗯𝗼𝘁!`));
+    process.exit(1);
+  });
 })();
 `|🍹|`;
 `|🍹|`;
