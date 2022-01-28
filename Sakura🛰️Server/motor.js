@@ -25,7 +25,7 @@ exports.nomentioncontact = async (args, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ) => {
     } else {
       ӄʀǟӄɨռʐ.sendMessage(
         ֆǟӄʊʀǟ.chatId,
-        `(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 | 𝐄𝐧𝐠𝐢𝐧𝐞:\n${Clock}
+        `(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 | 𝐄𝐧𝐠𝐢𝐧𝐞: kryozen${vers.vers}\n${Clock}
 
 *Enter valid contact number.* Approved Syntax:
 1. XXXXXXXXXX 
@@ -42,7 +42,7 @@ _(YY- Country Code, without zeros)_`,
   if (jidNumber.length < 8 || jidNumber.length > 13) {
     ӄʀǟӄɨռʐ.sendMessage(
       ֆǟӄʊʀǟ.chatId,
-      `(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 | 𝐄𝐧𝐠𝐢𝐧𝐞:\n${Clock}
+      `(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 | 𝐄𝐧𝐠𝐢𝐧𝐞: kryozen${vers.vers}\n${Clock}
 
 *Enter valid contact number.* Approved Syntax:
 1. XXXXXXXXXX 

@@ -18,6 +18,7 @@ const now = new Date();
 date.format(now, `ddd, MMM DD YYYY`);
 const pattern = date.compile(`ddd, MMM DD YYYY`);
 const Clock = date.format(now, pattern);
+const vers = require(`../package.json`);
 `⬡🍹⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
 const Sakura_Text_But = (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, MainText) => {
   if (ֆǟӄʊʀǟ.isReply) {
@@ -27,7 +28,7 @@ const Sakura_Text_But = (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, MainText) => {
     var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
     const buttonMessage = {
       contentText: MainText,
-      footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 • 𝐄𝐧𝐠𝐢𝐧𝐞: kryozen3 ⏋\n⎿ ${Clock} • ${Ping}ms ⏋`,
+      footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 • 𝐄𝐧𝐠𝐢𝐧𝐞: kryozen${vers.vers} ⏋\n⎿ ${Clock} • ${Ping}ms ⏋`,
       buttons: [
         {
           buttonId: `${ᴋᴇɪ}help`,
@@ -50,7 +51,7 @@ const Sakura_Text_But = (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, MainText) => {
     const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
     const buttonMessage = {
       contentText: MainText,
-      footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 • 𝐄𝐧𝐠𝐢𝐧𝐞: kryozen3 ⏋\n⎿ ${Clock} • ${Ping}ms ⏋`,
+      footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 • 𝐄𝐧𝐠𝐢𝐧𝐞: kryozen${vers.vers} ⏋\n⎿ ${Clock} • ${Ping}ms ⏋`,
       buttons: [
         {
           buttonId: `${ᴋᴇɪ}help`,
@@ -86,7 +87,7 @@ const Sakura_Image_But = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, MainText, Me
         ֆǟӄʊʀǟ.chatId,
         {
           contentText: MainText,
-          footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 • 𝐄𝐧𝐠𝐢𝐧𝐞: kryozen3 ⏋\n⎿ ${Clock} • ${Ping}ms ⏋`,
+          footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 • 𝐄𝐧𝐠𝐢𝐧𝐞: kryozen${vers.vers} ⏋\n⎿ ${Clock} • ${Ping}ms ⏋`,
           buttons: [
             {
               buttonId: `${ᴋᴇɪ}help`,
@@ -120,7 +121,7 @@ const Sakura_Image_But = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, MainText, Me
         ֆǟӄʊʀǟ.chatId,
         {
           contentText: MainText,
-          footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 • 𝐄𝐧𝐠𝐢𝐧𝐞: kryozen3 ⏋\n⎿ ${Clock} • ${Ping}ms ⏋`,
+          footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 • 𝐄𝐧𝐠𝐢𝐧𝐞: kryozen${vers.vers} ⏋\n⎿ ${Clock} • ${Ping}ms ⏋`,
           buttons: [
             {
               buttonId: `${ᴋᴇɪ}help`,
@@ -158,7 +159,7 @@ const Sakura_Video_But = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, MainText, Me
         ֆǟӄʊʀǟ.chatId,
         {
           contentText: MainText,
-          footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 • 𝐄𝐧𝐠𝐢𝐧𝐞: kryozen3 ⏋\n⎿ ${Clock} • ${Ping}ms ⏋`,
+          footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 • 𝐄𝐧𝐠𝐢𝐧𝐞: kryozen${vers.vers} ⏋\n⎿ ${Clock} • ${Ping}ms ⏋`,
           buttons: [
             {
               buttonId: `${ᴋᴇɪ}help`,
@@ -192,7 +193,7 @@ const Sakura_Video_But = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, MainText, Me
         ֆǟӄʊʀǟ.chatId,
         {
           contentText: MainText,
-          footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 • 𝐄𝐧𝐠𝐢𝐧𝐞: kryozen3 ⏋\n⎿ ${Clock} • ${Ping}ms ⏋`,
+          footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 • 𝐄𝐧𝐠𝐢𝐧𝐞: kryozen${vers.vers} ⏋\n⎿ ${Clock} • ${Ping}ms ⏋`,
           buttons: [
             {
               buttonId: `${ᴋᴇɪ}help`,
@@ -230,7 +231,7 @@ const Sakura_GIF_But = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, MainText, Medi
         ֆǟӄʊʀǟ.chatId,
         {
           contentText: MainText,
-          footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 • 𝐄𝐧𝐠𝐢𝐧𝐞: kryozen3 ⏋\n⎿ ${Clock} • ${Ping}ms ⏋`,
+          footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 • 𝐄𝐧𝐠𝐢𝐧𝐞: kryozen${vers.vers} ⏋\n⎿ ${Clock} • ${Ping}ms ⏋`,
           buttons: [
             {
               buttonId: `${ᴋᴇɪ}help`,
@@ -264,7 +265,7 @@ const Sakura_GIF_But = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, MainText, Medi
         ֆǟӄʊʀǟ.chatId,
         {
           contentText: MainText,
-          footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 • 𝐄𝐧𝐠𝐢𝐧𝐞: kryozen3 ⏋\n⎿ ${Clock} • ${Ping}ms ⏋`,
+          footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 • 𝐄𝐧𝐠𝐢𝐧𝐞: kryozen${vers.vers} ⏋\n⎿ ${Clock} • ${Ping}ms ⏋`,
           buttons: [
             {
               buttonId: `${ᴋᴇɪ}help`,
@@ -312,7 +313,7 @@ const Sakura_VideoAudio_But = async (
   const buttonMessages = {
     videoMessage: media.message.videoMessage,
     contentText: MainText,
-    footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 • 𝐄𝐧𝐠𝐢𝐧𝐞: kryozen3 ⏋\n⎿ ${Clock} • ${Ping}ms ⏋`,
+    footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 • 𝐄𝐧𝐠𝐢𝐧𝐞: kryozen${vers.vers} ⏋\n⎿ ${Clock} • ${Ping}ms ⏋`,
     buttons: [
       {
         buttonId: `${ᴋᴇɪ}help`,
@@ -357,7 +358,7 @@ const Sakura_Location_But = async (
   const buttonMessages = {
     locationMessage: media.message.locationMessage,
     contentText: MainText,
-    footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 • 𝐄𝐧𝐠𝐢𝐧𝐞: kryozen3 ⏋\n⎿ ${Clock} • ${Ping}ms ⏋`,
+    footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 • 𝐄𝐧𝐠𝐢𝐧𝐞: kryozen${vers.vers} ⏋\n⎿ ${Clock} • ${Ping}ms ⏋`,
     buttons: [
       {
         buttonId: `${ᴋᴇɪ}help`,

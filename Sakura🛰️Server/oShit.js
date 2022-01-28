@@ -54,7 +54,7 @@ exports.catch = async (Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat) => {
 ║🤦🏻‍♀️ 𝐎𝐩𝐩𝐬𝐢𝐞: _Try Again Later._
 ║🐞 𝗕𝘂𝗴: _Api Timeout._
 ╚════════════╝`,
-      footerText: `|(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 | 𝐄𝐧𝐠𝐢𝐧𝐞: _KryoZen 3_\n${Clock}`,
+      footerText: `|(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 | 𝐄𝐧𝐠𝐢𝐧𝐞: kryozen${vers.vers}\n${Clock}`,
       buttons: [
         {
           buttonId: `${ᴋᴇɪ}help`,
@@ -75,7 +75,7 @@ exports.catch = async (Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat) => {
     ֆǟӄʊʀǟ.Myself,
     {
       contentText: `*🐞Error:* ${Error}`,
-      footerText: `|(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 | 𝐄𝐧𝐠𝐢𝐧𝐞: _KryoZen 3_\n${Clock}`,
+      footerText: `|(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 | 𝐄𝐧𝐠𝐢𝐧𝐞: kryozen${vers.vers}\n${Clock}`,
       buttons: [
         {
           buttonId: `${ᴋᴇɪ}bugreport`,
