@@ -2,15 +2,15 @@ const Sakura_Buttons = require(`../../Sakura🛰️Server/Sakura_Buttons`);
 const Sakura_Static = require(`../../Sakura🛰️Server/Sakura_Static`);
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const cleanRF = require(`../../Sakura🛰️Server/cleanRF`);
-const ffmpeg = require(`fluent-ffmpeg`);
+const Downloader = require(`nodejs-file-downloader`);
 const _𝔏𝔞𝔟_ = require(`../../Sakura🛰️Server/_𝔏𝔞𝔟_`);
 const ꜰᴜᴄᴋ = require(`../../Sakura🛰️Server/oShit`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
-const Downloader = require(`nodejs-file-downloader`);
+const ffmpeg = require(`fluent-ffmpeg`);
 const anime = require(`anime-actions`);
+const readline = require(`readline`);
 const fs = require(`fs`);
-const vers = require(`../../package.json`);
 var path = require(`path`);
 var scriptName = path.basename(__filename);
 var str = scriptName;
@@ -67,6 +67,14 @@ if (ֆǟӄʊʀǟ.isReply) {
 ffmpeg(GotFile)
 .outputOptions([`-movflags faststart -pix_fmt yuv420p -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2"`])
 .save(GiveFile)
+.on(`progress`, (p) => {
+readline.cursorTo(process.stdout, 0);
+process.stdout.write(`═════⬡|💯𝐏𝐫𝐨𝐠𝐫𝐞𝐬𝐬: ${p.targetSize}kb`);
+})
+.on(`error`, async (Error) => {
+console.log(`═════⬡|🐞𝐄𝐫𝐫𝐨𝐫: ` + Error);
+return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
+})
 .on(`end`, async () => {
 await Sakura_Static.MGS(
 ӄʀǟӄɨռʐ,
@@ -88,6 +96,14 @@ return;
 ffmpeg(GotFile)
 .outputOptions([`-movflags faststart -pix_fmt yuv420p -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2"`])
 .save(GiveFile)
+.on(`progress`, (p) => {
+readline.cursorTo(process.stdout, 0);
+process.stdout.write(`═════⬡|💯𝐏𝐫𝐨𝐠𝐫𝐞𝐬𝐬: ${p.targetSize}kb`);
+})
+.on(`error`, async (Error) => {
+console.log(`═════⬡|🐞𝐄𝐫𝐫𝐨𝐫: ` + Error);
+return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
+})
 .on(`end`, async () => {
 await ӄʀǟӄɨռʐ.sendMessage(ֆǟӄʊʀǟ.chatId, GiveFile, "videoMessage", {
 mimetype: "video/gif",
