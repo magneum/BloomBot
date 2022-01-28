@@ -15,7 +15,7 @@ const ֆǟӄʊʀǟֆʏռօք = require(`./ֆǟӄʊʀǟᴢᴇɴ`);
 const moment = require(`moment-timezone`);
 const PostDataBase = require(`./postDb`);
 const speed = require(`performance-now`);
-const { ʄǟռƈʏ } = require(`../ʄǟռƈʏ`);
+const { Tǟɮʟɛɨȶ } = require(`../Tǟɮʟɛɨȶ`);
 const ֆǟӄʊʀǟǟքք = require(`./helper`);
 const welbuts = require(`./welbuts`);
 const BanList = require(`./BanList`);
@@ -132,7 +132,7 @@ MessageType.text
 );
 });
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-ӄʀǟӄɨռʐ.connect().then(ʄǟռƈʏ(ꜱɪᴛʀᴀᴘ, commandUsage));
+ӄʀǟӄɨռʐ.connect().then(Tǟɮʟɛɨȶ(ꜱɪᴛʀᴀᴘ, commandUsage));
 ӄʀǟӄɨռʐ.on(`group-update`, async (update) => {
 try {
 const groupupdateID = await ӄʀǟӄɨռʐ.groupMetadata(update.jid);

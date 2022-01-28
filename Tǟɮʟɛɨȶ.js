@@ -26,16 +26,12 @@ function ʄǟռƈʏ(ꜱɪᴛʀᴀᴘ, commandUsage) {
       if (_𝔏𝔞𝔟_.HEROKU === undefined) {
         try {
           ᴍɪᴢᴜᴋɪᴛᴀʙʟᴇ.addRow(
-            Kolor.green(command.name.toUpperCase()),
+            command.name.toUpperCase(),
             ʜᴏʟᴅᴇʀ,
             `✔️   𝘚𝘺𝘮-𝘓𝘪𝘯𝘬𝘦𝘥`
           );
         } catch {
-          ᴍɪᴢᴜᴋɪᴛᴀʙʟᴇ.addRow(
-            Kolor.green(command.name),
-            ʜᴏʟᴅᴇʀ,
-            `✔️   𝘚𝘺𝘮-𝘓𝘪𝘯𝘬𝘦𝘥`
-          );
+          ᴍɪᴢᴜᴋɪᴛᴀʙʟᴇ.addRow(command.name), ʜᴏʟᴅᴇʀ, `✔️   𝘚𝘺𝘮-𝘓𝘪𝘯𝘬𝘦𝘥`;
         }
         console.log(ᴍɪᴢᴜᴋɪᴛᴀʙʟᴇ.toString());
       }
