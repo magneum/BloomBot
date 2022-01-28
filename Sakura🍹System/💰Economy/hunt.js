@@ -90,7 +90,7 @@ module.exports = {
                 if (Error) console.log(Error);
                 if (!userEco) {
                   var newUser = new Economy({
-                    ID: Receiver,
+                    ID: աɦօֆɛռȶɦǟȶ,
                     money: 0,
                     daily: 0,
                     timeout: 0,
