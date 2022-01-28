@@ -12,7 +12,6 @@ if (fs.existsSync(`🍹ֆǟӄʊʀǟ™.env`)) {
 } else {
   require(`dotenv`);
 }
-// ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍹 (c)ֆǟӄʊʀǟ 🍹    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
 const env = {
   SAKURA: process.env.SAKURA === undefined ? `Null` : process.env.SAKURA,
   SAKURAMDB:

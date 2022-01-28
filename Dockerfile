@@ -16,7 +16,7 @@ RUN apt install npm -y
 RUN npm install --global n
 RUN path=path
 RUN hash -r
-RUN n install 16
+RUN n install 17
 RUN git clone https://github.com/Krakinz/Sakura.git
 RUN cd Sakura
 WORKDIR /Sakura
