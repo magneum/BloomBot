@@ -111,7 +111,6 @@ module.exports = {
 ║▷ ${ᴋᴇɪ}tomp3
 ║▷ ${ᴋᴇɪ}img2url
 ║▷ ${ᴋᴇɪ}ocr
-║▷ ${ᴋᴇɪ}sticker
 ║▷ ${ᴋᴇɪ}carbon
 ╚════════════╝
 

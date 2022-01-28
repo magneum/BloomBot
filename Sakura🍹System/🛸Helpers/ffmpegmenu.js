@@ -37,7 +37,6 @@ module.exports = {
 ║⬡ *${ᴋᴇɪ}tomp3*  _convert video to music_
 ║⬡ *${ᴋᴇɪ}img2url*  _convert image to url_
 ║⬡ *${ᴋᴇɪ}ocr*  _read text written on tagged image_
-║⬡ *${ᴋᴇɪ}sticker*  _convert image/video to sticker_
 ║⬡ *${ᴋᴇɪ}carbon*  _convert text to carbonized image_
 ╚════════════╝`;
       return Sakura_Buttons.MIB(

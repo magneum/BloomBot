@@ -13,11 +13,8 @@ const _𝔏𝔞𝔟_ = require(`../../Sakura🛰️Server/_𝔏𝔞𝔟_`);
 const ꜰᴜᴄᴋ = require(`../../Sakura🛰️Server/oShit`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
-const ffmpeg = require(`fluent-ffmpeg`);
-const readline = require(`readline`);
-const request = require(`request`);
+const TinyURL = require("tinyurl");
 const yts = require(`yt-search`);
-const axios = require(`axios`);
 const fs = require(`fs`);
 var path = require(`path`);
 var scriptName = path.basename(__filename);
@@ -90,7 +87,7 @@ module.exports = {
               ӄʀǟӄɨռʐ,
               chat,
               ֆǟӄʊʀǟ,
-             `*🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived},*
+              `*🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived},*
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}  
 ║🤖 *User Added To Database For First Time!*
@@ -184,9 +181,9 @@ module.exports = {
             `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
             YouTube_Music(Found.url).then((res) => {
               const { dl_link, thumb, title, filesizeF, filesize } = res;
-              axios
-                .get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
-                .then(async (a) => {
+              TinyURL.shorten(dl_link).then(
+                async function (gotTiny) {
+                  console.log(gotTiny);
                   await Sakura_Buttons.MIB(
                     ӄʀǟӄɨռʐ,
                     chat,
@@ -200,7 +197,7 @@ module.exports = {
 ║⏰ 𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧: ${Found.timestamp}
 ║✒️ 𝐀𝐮𝐭𝐡𝐨𝐫: ${Found.author.name}
 ║🔗 𝐋𝐢𝐧𝐤: ${Found.url}
-║🦋 𝗧𝗶𝗻𝘆𝗨𝗿𝗹: ${a.data}
+║🦋 𝗧𝗶𝗻𝘆𝗨𝗿𝗹: ${gotTiny}
 ║📜 𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${Found.description}
 ╚════════════╝`,
                     Found.thumbnail
@@ -209,7 +206,7 @@ module.exports = {
                     var YouFile = `./${Found.videoId}_${Date.now()}.mp3`;
                     console.log(Found);
                     require(`child_process`).exec(
-                      `ffmpeg -i '${a.data}' '${YouFile}'`,
+                      `ffmpeg -i '${gotTiny}' '${YouFile}'`,
                       async (Error) => {
                         if (Error) {
                           console.log(
@@ -245,6 +242,7 @@ module.exports = {
                         }
                       }
                     );
+                    `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
                   } catch (Error) {
                     userBadge.Limits = userBadge.Limits + 1;
                     await userBadge
@@ -254,9 +252,16 @@ module.exports = {
                       );
                     return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
                   }
-                });
+                },
+                async function (Error) {
+                  userBadge.Limits = userBadge.Limits + 1;
+                  await userBadge
+                    .save()
+                    .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+                  return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
+                }
+              );
             });
-            `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
           });
         }
       );

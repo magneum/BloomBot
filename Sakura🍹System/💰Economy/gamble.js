@@ -205,6 +205,9 @@ module.exports = {
                   function isOdd(num) {
                     if (num % 2 == 0) return false;
                     else if (num % 2 == 1) return true;
+                    else if (num % 3 == 0) return false;
+                    else if (num % 4 == 1) return true;
+                    else return false;
                   }
                   let Color = Needs[0];
                   let money = parseInt(Needs[1]);

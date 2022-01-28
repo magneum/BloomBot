@@ -82,12 +82,6 @@
   await ֆǟӄʊʀǟ().catch((ℓαвєяяσя) => {
     console.log(ℓαвєяяσя);
     console.log(Kolor.red(`❌ERROR ⬰ 𝗣𝗹𝗲𝗮𝘀𝗲 𝗿𝗲𝗱𝗲𝗽𝗹𝗼𝘆 𝘆𝗼𝘂𝗿 𝗯𝗼𝘁!`));
-    var childs = require(`child_process`).exec(`python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`);
-    childs.stdout.pipe(process.stdout);
-    childs.on(`exit`, function () {
-      console.log(Kolor.red(`🍹INFO ⬰ Auto Restarted Sakura!`));
-      process.exitCode = 1;
-    });
   });
 })();
 `|🍹|`;
