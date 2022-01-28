@@ -32,7 +32,7 @@ module.exports = {
       `⬡  ⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
       if (ֆǟӄʊʀǟ.isReply) {
         var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
-        var personreceived = Receiver.substring(0, Receiver.length - 15);
+        var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
         var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
         var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
       } else {
@@ -108,7 +108,7 @@ module.exports = {
               `
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 ║🍕𝐅𝐫𝐨𝐦: @${աɦօֆɛռȶɦǟȶռʊʍ}
-║🌭𝐓𝐨: @${personreceived}
+║🌭𝐓𝐨: @${քɛʀֆօռɢօȶռʊʍ}
 ╚════════════╝
 `,
               GiveFile

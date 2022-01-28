@@ -137,12 +137,12 @@ ${owner} ɪꜱ ᴛʜᴇ ᴏᴡɴᴇʀ ᴏꜰ ᴛʜᴇ ɢʀᴏᴜᴘ*`,
           if (ֆǟӄʊʀǟ.isGroup && ֆǟӄʊʀǟ.isReply) {
             var Receiver =
               chat.message.extendedTextMessage.contextInfo.participant;
-            var personreceived = Receiver.substring(0, Receiver.length - 15);
+            var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
             Sakura_Buttons.MTB(
               ӄʀǟӄɨռʐ,
               chat,
               ֆǟӄʊʀǟ,
-              `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ} ᴋɪᴄᴋᴇᴅ @${personreceived} ᴏᴜᴛᴛᴀ ᴛʜᴇ ɢʀᴏᴜᴘ!`
+              `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ} ᴋɪᴄᴋᴇᴅ @${քɛʀֆօռɢօȶռʊʍ} ᴏᴜᴛᴛᴀ ᴛʜᴇ ɢʀᴏᴜᴘ!`
             );
             return await ӄʀǟӄɨռʐ
               .groupRemove(ֆǟӄʊʀǟ.chatId, [PersonToRemove])
@@ -211,12 +211,12 @@ Reply to the person you want to kick or tag them.\n\nFor instance,  *${ᴋᴇɪ}
           if (ֆǟӄʊʀǟ.isGroup && ֆǟӄʊʀǟ.isReply) {
             var Receiver =
               chat.message.extendedTextMessage.contextInfo.participant;
-            var personreceived = Receiver.substring(0, Receiver.length - 15);
+            var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
             Sakura_Buttons.MTB(
               ӄʀǟӄɨռʐ,
               chat,
               ֆǟӄʊʀǟ,
-              `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ} Kicked @${personreceived} Outta the group!`
+              `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ} Kicked @${քɛʀֆօռɢօȶռʊʍ} Outta the group!`
             );
 
             return await ӄʀǟӄɨռʐ.groupRemove(ֆǟӄʊʀǟ.chatId, [

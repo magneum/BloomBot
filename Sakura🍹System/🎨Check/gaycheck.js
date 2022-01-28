@@ -23,7 +23,7 @@ module.exports = {
     try {
       if (ֆǟӄʊʀǟ.isReply) {
         var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
-        var personreceived = Receiver.substring(0, Receiver.length - 15);
+        var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
         var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
         var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
       } else {
@@ -68,7 +68,7 @@ module.exports = {
           `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-║ 𝗚𝗮𝘆 𝗖𝗵𝗲𝗰𝗸: @${personreceived}
+║ 𝗚𝗮𝘆 𝗖𝗵𝗲𝗰𝗸: @${քɛʀֆօռɢօȶռʊʍ}
 ║ 𝗔𝘀𝗸𝗲𝗱 𝗕𝘆: @${աɦօֆɛռȶɦǟȶռʊʍ}
 ║ 𝗣𝗲𝗿𝗰𝗲𝗻𝘁𝗮𝗴𝗲: ${Amount}%
 ╚════════════╝`,

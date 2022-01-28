@@ -36,7 +36,7 @@ exports.SakuraGM = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ) => {
     var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
     var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
     var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
-    var personreceived = Receiver.substring(0, Receiver.length - 15);
+    var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
     var SakuraGMid = chat.message.extendedTextMessage.contextInfo.stanzaId;
   }
   const link = SakuraTenorMaker(FinalName.toLowerCase());
@@ -84,7 +84,7 @@ exports.SakuraGM = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ) => {
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 ║🍪 𝐅𝐫𝐨𝐦: @${աɦօֆɛռȶɦǟȶռʊʍ}
-║🍛 𝐓𝐨: @${personreceived}
+║🍛 𝐓𝐨: @${քɛʀֆօռɢօȶռʊʍ}
 ╚════════════╝`,
               }
             )

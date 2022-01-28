@@ -26,7 +26,7 @@ const Sakura_GIF_Static = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, MainText, M
     var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
     var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
     var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
-    var personreceived = Receiver.substring(0, Receiver.length - 15);
+    var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
     return await ӄʀǟӄɨռʐ
       .sendMessage(ֆǟӄʊʀǟ.chatId, { url: MediaUrl }, MessageType.video, {
         mimetype: `video/gif`,

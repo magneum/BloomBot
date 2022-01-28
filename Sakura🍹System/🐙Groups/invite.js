@@ -79,7 +79,7 @@ module.exports = {
       }
       if (ֆǟӄʊʀǟ.isReply) {
         var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
-        var personreceived = Receiver.substring(0, Receiver.length - 15);
+        var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
         try {
           Sakura_Buttons.MTB(
             ӄʀǟӄɨռʐ,
@@ -100,7 +100,7 @@ module.exports = {
           .sendMessage(
             Receiver,
             {
-              contentText: `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 •@${personreceived}, 
+              contentText: `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 •@${քɛʀֆօռɢօȶռʊʍ}, 
 
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
