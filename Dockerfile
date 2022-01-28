@@ -14,6 +14,7 @@ RUN apt install opus-tools -y
 RUN apt install python3-pip -y
 RUN apt install npm -y
 RUN npm install --global n
+RUN npm install --global npm@8.4.0
 RUN path=path
 RUN hash -r
 RUN n install 17
