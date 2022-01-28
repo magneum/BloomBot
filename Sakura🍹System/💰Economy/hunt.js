@@ -147,7 +147,7 @@ module.exports = {
 ┊ 𝐌𝐢𝐧𝐞𝐜𝐫𝐚𝐟𝐭 🪵 𝐄𝐝𝐢𝐭𝐢𝐨𝐧
 ╚◇══════════════◇╝
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-║❌ 𝗛𝘂𝗻𝘁𝗶𝗻𝗴 𝗦𝘁𝗮𝘁𝘂𝘀: You've recently went in a forest!
+║❌ 𝗘𝗿𝗿𝗼𝗿: You've recently went in a forest!
 ║🪵 𝗡𝗲𝘅𝘁 𝗛𝘂𝗻𝘁𝗶𝗻𝗴: ${time.hours}h ${time.minutes}m ${time.seconds}s
 ╚════════════╝`,
                       `./Sakura☣️Reactor/Sakura_Hunting.png`

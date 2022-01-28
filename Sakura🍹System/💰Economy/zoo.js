@@ -124,7 +124,7 @@ module.exports = {
 ╚◇══════════════◇╝
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-║🐆 𝗜𝘁𝗲𝗺_𝗙𝗼𝘂𝗻𝗱: ❌You've Recently Bought a New Animal. 
+║❌ 𝗘𝗿𝗿𝗼𝗿: You've Recently Bought a New Animal. 
 ║🐓 𝗭𝗼𝗼_𝗔𝗴𝗮𝗶𝗻: ${time.minutes}m ${time.seconds}s
 ╚════════════╝`,
                       `./Sakura☣️Reactor/Sakura_Zoo.png`

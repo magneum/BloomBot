@@ -95,7 +95,7 @@ module.exports = {
 
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-║❌ 𝗗𝗮𝗶𝗹𝘆 𝗦𝘁𝗮𝘁𝘂𝘀: You've already collected your daily reward!
+║❌ 𝗘𝗿𝗿𝗼𝗿: You've already collected your daily reward!
 ║💵 𝗡𝗲𝘅𝘁 𝗗𝗮𝗶𝗹𝘆: ${time.hours}h ${time.minutes}m ${time.seconds}s
 ╚════════════╝`
               );

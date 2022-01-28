@@ -96,7 +96,7 @@ module.exports = {
 
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-║👔 𝗪𝗼𝗿𝗸_𝗦𝘁𝗮𝘁𝘂𝘀: ❌You have already worked recently. 
+║❌ 𝗘𝗿𝗿𝗼𝗿: _You have already worked recently._ 
 ║🕐 𝗪𝗼𝗿𝗸_𝗔𝗴𝗮𝗶𝗻: ${time.minutes}m ${time.seconds}s
 ╚════════════╝`
               );

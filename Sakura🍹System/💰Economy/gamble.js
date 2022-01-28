@@ -195,7 +195,7 @@ module.exports = {
 ╚◇══════════════◇╝
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-║🤑 𝗚𝗮𝗺𝗯𝗹𝗲 𝗖𝗼𝗼𝗹𝗱𝗼𝘄𝗻: _❌You've Recently Gambled!_
+║❌ 𝗘𝗿𝗿𝗼𝗿: _You've Recently Gambled!_
 ║🕐 𝗚𝗮𝗺𝗯𝗹𝗲 𝗔𝗴𝗮𝗶𝗻: ${time.minutes}m ${time.seconds}s
 ╚════════════╝`,
                       `./Sakura☣️Reactor/Sakura_Gambling.png`
