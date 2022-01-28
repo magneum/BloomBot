@@ -4,15 +4,9 @@
 `|🍹|`;
 `|🍹|`;
 const fs = require(`fs`);
-const Kolor = require(`chalk`);
 const ascii = require(`ascii-table`);
-const _𝔏𝔞𝔟_ = require(`./Sakura🛰️Server/_𝔏𝔞𝔟_`);
 function Tǟɮʟɛɨȶ(ꜱɪᴛʀᴀᴘ, commandUsage) {
-  const ᴛᴀʙʟᴇ = new ascii().setHeading(
-    `🍹𝐂𝐨𝐦𝐦𝐚𝐧 𝐍𝐚𝐦𝐞🍹`,
-    `🍹𝗖𝗼𝗺𝗺𝗮𝗻𝗱 𝗙𝗼𝗹𝗱𝗲𝗿🍹`,
-    `🍹𝐇𝐞𝐚𝐥𝐭𝐡🍹`
-  );
+  const ᴛᴀʙʟᴇ = new ascii().setHeading("✭𝐒𝐚𝐤𝐮𝐫𝐚✭", "✭𝐁𝐨𝐭✭");
   const ᴅᴇʀꜱ = fs.readdirSync(`./Sakura🍹System`);
   for (const ʟᴅᴇʀ of ᴅᴇʀꜱ) {
     const cmdF = fs
@@ -22,15 +16,12 @@ function Tǟɮʟɛɨȶ(ꜱɪᴛʀᴀᴘ, commandUsage) {
       const command = require(`./Sakura🍹System/${ʟᴅᴇʀ}/${ɪꜱᴏ}`);
       ꜱɪᴛʀᴀᴘ.set(command.name, command);
       commandUsage.set(command.ֆǟӄʊʀǟӄǟɨʐօ, command.description);
-      if (_𝔏𝔞𝔟_.HEROKU === undefined) {
-        try {
-          ᴛᴀʙʟᴇ.addRow(command.name.toUpperCase(), ʟᴅᴇʀ, `✔️   𝘚𝘺𝘮-𝘓𝘪𝘯𝘬𝘦𝘥`);
-          console.log(ᴛᴀʙʟᴇ);
-        } catch {
-          ᴛᴀʙʟᴇ.addRow(command.name), ʟᴅᴇʀ, `✔️   𝘚𝘺𝘮-𝘓𝘪𝘯𝘬𝘦𝘥`;
-          console.log(ᴛᴀʙʟᴇ);
-        }
+      try {
+        ᴛᴀʙʟᴇ.addRow("⚡ " + command.name.toUpperCase(), ʟᴅᴇʀ);
+      } catch {
+        ᴛᴀʙʟᴇ.addRow("⚡ " + command.name, ʟᴅᴇʀ);
       }
+      console.log(ᴛᴀʙʟᴇ);
     }
   }
 }
