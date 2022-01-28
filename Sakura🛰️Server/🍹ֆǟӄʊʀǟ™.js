@@ -322,60 +322,78 @@ ${update.desc}`,
     var ֆǟӄʊʀǟ = ֆǟӄʊʀǟǟքք.resolve(chat, ӄʀǟӄɨռʐ, groupMetadata);
     var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
     var ꜱᴇɴᴅᴇʀeceived = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
-    try {
-      const ᴍɪᴢᴜᴋɪɢɪᴛ = require(`simple-git`)();
-      await ᴍɪᴢᴜᴋɪɢɪᴛ.fetch();
-      var ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ = await ᴍɪᴢᴜᴋɪɢɪᴛ.log([
-        `KrakinzLab..origin/KrakinzLab`,
-      ]);
-      if (ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total != 0) {
-        require(`simple-git`)()
-          .exec(async () => {
-            console.log(
-              Kolor.yellow(`💡INFO ⬰ 𝐍𝐞𝐰 𝐔𝐩𝐝𝐚𝐭𝐞 𝐩𝐞𝐧𝐝𝐢𝐧𝐠, 𝐮𝐩𝐝𝐚𝐭𝐢𝐧𝐠...`)
-            );
-          })
-          .pull(async (Error, update) => {
-            if (Error) {
-              try {
-                const mergeSummary = await ᴍɪᴢᴜᴋɪɢɪᴛ.merge();
-                console.log(
-                  Kolor.green(
-                    `💡INFO ⬰ 𝗔𝘂𝘁𝗼-𝗨𝗽𝗱𝗮𝘁𝗲𝗱 ⚡𝐒𝐚𝐤𝐮𝐫𝐚™ 𝘄𝗶𝘁𝗵 𝗹𝗮𝘁𝗲𝘀𝘁 [${mergeSummary.merges.length}] 𝗰𝗵𝗮𝗻𝗴𝗲𝘀.`
-                  )
-                );
-              } catch (Error) {
-                console.log(
-                  Kolor.red(
-                    `❌ERROR ⬰ 𝗠𝗲𝗿𝗴𝗲 𝗿𝗲𝘀𝘂𝗹𝘁𝗲𝗱 𝗶𝗻 ${Kolor.red(Error)} 𝗰𝗼𝗻𝗳𝗹𝗶𝗰𝘁𝘀!`
-                  )
-                );
-              }
-            } else if (update && update.summary.changes) {
-              var child = require(`child_process`).exec(`npm i --force`);
-              child.stdout.pipe(process.stdout);
-              child.on(`exit`, async function () {
-                process.exitCode = 1;
-                var childs = require(`child_process`).exec(
-                  `python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`
-                );
-                childs.stdout.pipe(process.stdout);
-                childs.on(`exit`, async function () {
-                  process.exitCode = 1;
-                });
-              });
-            }
-          });
-      }
-    } catch (Error) {
-      console.log(Error);
-      console.log(
-        Kolor.red(
-          `❌ERROR ⬰ 𝗜𝗳 𝗶𝘁 𝘄𝗮𝘀 𝗮 𝗕𝗜𝗚 ⚡𝐒𝐚𝐤𝐮𝐫𝐚™ 𝘂𝗽𝗱𝗮𝘁𝗲 𝘁𝗵𝗲𝗻 𝗣𝗹𝗲𝗮𝘀𝗲 𝗿𝗲𝗱𝗲𝗽𝗹𝗼𝘆 𝘆𝗼𝘂𝗿 𝗯𝗼𝘁!`
-        )
-      );
-    }
     `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+    if (ֆǟӄʊʀǟ.fromMe) {
+      try {
+        const ᴍɪᴢᴜᴋɪɢɪᴛ = require(`simple-git`)();
+        await ᴍɪᴢᴜᴋɪɢɪᴛ.fetch();
+        var ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ = await ᴍɪᴢᴜᴋɪɢɪᴛ.log([
+          `KrakinzLab..origin/KrakinzLab`,
+        ]);
+        if (ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total != 0) {
+          require(`simple-git`)()
+            .exec(async () => {
+              console.log(
+                Kolor.yellow(`💡INFO ⬰ 𝐍𝐞𝐰 𝐔𝐩𝐝𝐚𝐭𝐞 𝐩𝐞𝐧𝐝𝐢𝐧𝐠, 𝐮𝐩𝐝𝐚𝐭𝐢𝐧𝐠...`)
+              );
+              Sakura_Buttons.MTB(
+                ӄʀǟӄɨռʐ,
+                chat,
+                ֆǟӄʊʀǟ,
+                `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived}, (Owner)
+
+╔════◇🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜)
+║💡INFO ⬰ 𝐍𝐞𝐰 𝐔𝐩𝐝𝐚𝐭𝐞 𝐩𝐞𝐧𝐝𝐢𝐧𝐠, 𝐮𝐩𝐝𝐚𝐭𝐢𝐧𝐠...
+╚════════════╝`
+              );
+            })
+            .pull(async (Error, update) => {
+              if (Error) {
+                try {
+                  const mergeSummary = await ᴍɪᴢᴜᴋɪɢɪᴛ.merge();
+                  console.log(
+                    Kolor.green(
+                      `💡INFO ⬰ 𝗔𝘂𝘁𝗼-𝗨𝗽𝗱𝗮𝘁𝗲𝗱 ⚡𝐒𝐚𝐤𝐮𝐫𝐚™ 𝘄𝗶𝘁𝗵 𝗹𝗮𝘁𝗲𝘀𝘁 [${mergeSummary.merges.length}] 𝗰𝗵𝗮𝗻𝗴𝗲𝘀.`
+                    )
+                  );
+                } catch (Error) {
+                  console.log(
+                    Kolor.red(
+                      `❌ERROR ⬰ 𝗠𝗲𝗿𝗴𝗲 𝗿𝗲𝘀𝘂𝗹𝘁𝗲𝗱 𝗶𝗻 ${Kolor.red(
+                        Error
+                      )} 𝗰𝗼𝗻𝗳𝗹𝗶𝗰𝘁𝘀!`
+                    )
+                  );
+                }
+              } else if (update && update.summary.changes) {
+                var child = require(`child_process`).exec(`npm i --force`);
+                child.stdout.pipe(process.stdout);
+                child.on(`exit`, async function () {
+                  process.exitCode = 1;
+                  Sakura_Buttons.MTB(
+                    ӄʀǟӄɨռʐ,
+                    chat,
+                    ֆǟӄʊʀǟ,
+                    `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${ꜱᴇɴᴅᴇʀeceived}, (Owner)
+
+╔════◇🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜)
+║💡INFO ⬰ 𝗔𝘂𝘁𝗼 𝗨𝗽𝗱𝗮𝘁𝗲𝗱...
+╚════════════╝`
+                  );
+                });
+              }
+            });
+        }
+      } catch (Error) {
+        console.log(Error);
+        console.log(
+          Kolor.red(
+            `❌ERROR ⬰ 𝗜𝗳 𝗶𝘁 𝘄𝗮𝘀 𝗮 𝗕𝗜𝗚 ⚡𝐒𝐚𝐤𝐮𝐫𝐚™ 𝘂𝗽𝗱𝗮𝘁𝗲 𝘁𝗵𝗲𝗻 𝗣𝗹𝗲𝗮𝘀𝗲 𝗿𝗲𝗱𝗲𝗽𝗹𝗼𝘆 𝘆𝗼𝘂𝗿 𝗯𝗼𝘁!`
+          )
+        );
+      }
+      `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+    }
     if (ֆǟӄʊʀǟ.isGroup && !ֆǟӄʊʀǟ.fromMe) {
       var xpAdd = Math.ceil(Math.random() * 10);
       try {
