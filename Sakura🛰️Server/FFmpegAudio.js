@@ -14,7 +14,8 @@ exports.FFmpegAudio = async (ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat, Found, userBadg
     console.log(Found);
     var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
     const defaultnm = ֆǟӄʊʀǟ.commandName;
-    var Stream = "./Sakura🗑️Temp/" + Date.now() + ".mp3";
+    var Stream = "./Sakura🗑️Temp/" + Date.now();
+    var Stream2 = "./Sakura🗑️Temp/" + Date.now() + ".mp3";
     var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
     const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
     `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
@@ -99,7 +100,7 @@ exports.FFmpegAudio = async (ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat, Found, userBadg
         TinyURL.shorten(dl_link).then(
           async function (DirectFile) {
             require(`child_process`).exec(
-              `ffmpeg -i "${DirectFile}" "${Stream}"`,
+              `ffmpeg -i "${DirectFile}" "${Stream2}"`,
               async (Error) => {
                 if (Error) {
                   console.log(
@@ -115,11 +116,11 @@ exports.FFmpegAudio = async (ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat, Found, userBadg
                   console.log(
                     `⬡═══════════════════| 🥂𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐅𝐢𝐧𝐢𝐬𝐞𝐝🥂 |═══════════════════⬡`
                   );
-                  console.log("FileName: " + Stream);
+                  console.log("FileName: " + Stream2);
                   await ӄʀǟӄɨռʐ
                     .sendMessage(
                       ֆǟӄʊʀǟ.chatId,
-                      fs.readFileSync(Stream),
+                      fs.readFileSync(Stream2),
                       MessageType.audio,
                       {
                         quoted: chat,
@@ -127,7 +128,7 @@ exports.FFmpegAudio = async (ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat, Found, userBadg
                       }
                     )
                     .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-                  await cleanRF.cleanRF(Stream);
+                  await cleanRF.cleanRF(Stream2);
                 }
               }
             );
