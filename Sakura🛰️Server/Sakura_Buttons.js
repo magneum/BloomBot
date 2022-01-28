@@ -46,7 +46,7 @@ const Sakura_Text_But = (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, MainText) => {
   ӄʀǟӄɨռʐ
     .sendMessage(ֆǟӄʊʀǟ.chatId, buttonMessage, MessageType.buttonsMessage, {
       quoted: chat,
-      contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
+      contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ, Receiver] },
     })
     .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
 };
