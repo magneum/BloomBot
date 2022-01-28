@@ -13,6 +13,7 @@ const _𝔏𝔞𝔟_ = require(`../../Sakura🛰️Server/_𝔏𝔞𝔟_`);
 const ꜰᴜᴄᴋ = require(`../../Sakura🛰️Server/oShit`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
+const vers = require(`../../package.json`);
 const ffmpeg = require(`fluent-ffmpeg`);
 const readline = require(`readline`);
 const TinyURL = require("tinyurl");
@@ -287,31 +288,48 @@ module.exports = {
                             `|⬡══════════⬡|🥂𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐅𝐢𝐧𝐢𝐬𝐞𝐝🥂|⬡══════════⬡|`
                           );
                           console.log("FileName: " + YouFile);
+                          const media = await ӄʀǟӄɨռʐ.prepareMessage(
+                            ֆǟӄʊʀǟ.chatId,
+                            fs.readFileSync(YouFile),
+                            MessageType.video,
+                            { mimetype: "video/mp4" }
+                          );
                           await ӄʀǟӄɨռʐ
                             .sendMessage(
                               ֆǟӄʊʀǟ.chatId,
-                              fs.readFileSync(YouFile),
-                              MessageType.video,
                               {
-                                quoted: chat,
-                                contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
-                                mimetype: "video/mp4",
-                                caption: `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
+                                contentText: `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 ║🍻 𝐓𝐢𝐭𝐥𝐞: ${Found.title}
 ║🙈 𝐕𝐢𝐞𝐰𝐬: ${Found.views}
 ║⏰ 𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧: ${Found.timestamp}
 ║✒️ 𝐀𝐮𝐭𝐡𝐨𝐫: ${Found.author.name}
 ║📜 𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${Found.description}
-║🦋 𝗧𝗶𝗻𝘆𝗨𝗿𝗹: ${gotTiny}
+║🦋 𝐃𝐢𝐫𝐞𝐜𝐭 𝐃𝐋: ${gotTiny}
 ║🔗 𝐋𝐢𝐧𝐤: ${Found.url}
 ╚════════════╝`,
+                                footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 • 𝐄𝐧𝐠𝐢𝐧𝐞: kryozen${vers.vers} ⏋\n⎿ ${Clock} • ${Ping}ms ⏋`,
+                                buttons: [
+                                  {
+                                    buttonId: `${ᴋᴇɪ}help`,
+                                    buttonText: { displayText: `${ᴋᴇɪ}help` },
+                                    type: 1,
+                                  },
+                                ],
+                                headerType: 5,
+                                videoMessage: media.message.videoMessage,
+                              },
+                              MessageType.buttonsMessage,
+                              {
+                                quoted: chat,
+                                contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
                               }
                             )
                             .catch((Error) =>
                               ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
                             );
                           await cleanRF.cleanRF(YouFile);
+                          return;
                         }
                       }
                     );
