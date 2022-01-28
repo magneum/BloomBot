@@ -15,6 +15,7 @@ var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 const ffmpeg = require(`fluent-ffmpeg`);
 const readline = require(`readline`);
+const TinyURL = require("tinyurl");
 const yts = require(`yt-search`);
 const axios = require(`axios`);
 const fs = require(`fs`);
