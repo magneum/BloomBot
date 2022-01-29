@@ -63,7 +63,7 @@ contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
 } catch (Error) {
 console.log(Error);
 var childs = require(`child_process`).exec(
-`node Sakura☣️Reactor/🍹ֆǟӄʊʀǟ™.js`
+`python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`
 );
 childs.stdout.pipe(process.stdout);
 childs.on(`exit`, async function () {

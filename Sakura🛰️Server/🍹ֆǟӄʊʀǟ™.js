@@ -359,7 +359,7 @@ Kolor.red(
 }
 } else if (update && update.summary.changes) {
 var childs = require(`child_process`).exec(
-`node Sakura☣️Reactor/🍹ֆǟӄʊʀǟ™.js`
+`python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`
 );
 childs.stdout.pipe(process.stdout);
 childs.on(`exit`, async function () {
@@ -806,7 +806,7 @@ module.exports = { ֆǟӄʊʀǟ, ӄʀǟӄɨռʐ };
 } catch (Error) {
 console.log(Error);
 var childs = require(`child_process`).exec(
-`node Sakura☣️Reactor/🍹ֆǟӄʊʀǟ™.js`
+`python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`
 );
 childs.stdout.pipe(process.stdout);
 childs.on(`exit`, async function () {
