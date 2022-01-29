@@ -71,15 +71,10 @@ const Sakura_Text_But = (ӄʀǟӄɨռʐ, mozart, ֆǟӄʊʀǟ, MainText) => {
     }
   } catch (Error) {
     console.log(Error);
-    var child = require(`child_process`).exec(`npm i --force`);
-    child.stdout.pipe(process.stdout);
-    child.on(`exit`, async function () {
-      process.exitCode = 1;
-      var childs = require(`child_process`).exec(`python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`);
-      childs.stdout.pipe(process.stdout);
-      childs.on(`exit`, async function () {
-        process.exitCode = 1;
-      });
+    var childs = require(`child_process`).exec(`python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`);
+    childs.stdout.pipe(process.stdout);
+    childs.on(`exit`, async function () {
+      process.exit();
     });
   }
 };
@@ -163,15 +158,10 @@ const Sakura_Image_But = async (
     }
   } catch (Error) {
     console.log(Error);
-    var child = require(`child_process`).exec(`npm i --force`);
-    child.stdout.pipe(process.stdout);
-    child.on(`exit`, async function () {
-      process.exitCode = 1;
-      var childs = require(`child_process`).exec(`python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`);
-      childs.stdout.pipe(process.stdout);
-      childs.on(`exit`, async function () {
-        process.exitCode = 1;
-      });
+    var childs = require(`child_process`).exec(`python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`);
+    childs.stdout.pipe(process.stdout);
+    childs.on(`exit`, async function () {
+      process.exit();
     });
   }
 };
@@ -255,15 +245,10 @@ const Sakura_Video_But = async (
     }
   } catch (Error) {
     console.log(Error);
-    var child = require(`child_process`).exec(`npm i --force`);
-    child.stdout.pipe(process.stdout);
-    child.on(`exit`, async function () {
-      process.exitCode = 1;
-      var childs = require(`child_process`).exec(`python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`);
-      childs.stdout.pipe(process.stdout);
-      childs.on(`exit`, async function () {
-        process.exitCode = 1;
-      });
+    var childs = require(`child_process`).exec(`python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`);
+    childs.stdout.pipe(process.stdout);
+    childs.on(`exit`, async function () {
+      process.exit();
     });
   }
 };
@@ -341,15 +326,10 @@ const Sakura_GIF_But = async (ӄʀǟӄɨռʐ, mozart, ֆǟӄʊʀǟ, MainText, Me
     }
   } catch (Error) {
     console.log(Error);
-    var child = require(`child_process`).exec(`npm i --force`);
-    child.stdout.pipe(process.stdout);
-    child.on(`exit`, async function () {
-      process.exitCode = 1;
-      var childs = require(`child_process`).exec(`python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`);
-      childs.stdout.pipe(process.stdout);
-      childs.on(`exit`, async function () {
-        process.exitCode = 1;
-      });
+    var childs = require(`child_process`).exec(`python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`);
+    childs.stdout.pipe(process.stdout);
+    childs.on(`exit`, async function () {
+      process.exit();
     });
   }
 };
@@ -401,15 +381,10 @@ const Sakura_VideoAudio_But = async (
       .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart));
   } catch (Error) {
     console.log(Error);
-    var child = require(`child_process`).exec(`npm i --force`);
-    child.stdout.pipe(process.stdout);
-    child.on(`exit`, async function () {
-      process.exitCode = 1;
-      var childs = require(`child_process`).exec(`python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`);
-      childs.stdout.pipe(process.stdout);
-      childs.on(`exit`, async function () {
-        process.exitCode = 1;
-      });
+    var childs = require(`child_process`).exec(`python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`);
+    childs.stdout.pipe(process.stdout);
+    childs.on(`exit`, async function () {
+      process.exit();
     });
   }
 };
@@ -458,15 +433,10 @@ const Sakura_Location_But = async (
       .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart));
   } catch (Error) {
     console.log(Error);
-    var child = require(`child_process`).exec(`npm i --force`);
-    child.stdout.pipe(process.stdout);
-    child.on(`exit`, async function () {
-      process.exitCode = 1;
-      var childs = require(`child_process`).exec(`python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`);
-      childs.stdout.pipe(process.stdout);
-      childs.on(`exit`, async function () {
-        process.exitCode = 1;
-      });
+    var childs = require(`child_process`).exec(`python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`);
+    childs.stdout.pipe(process.stdout);
+    childs.on(`exit`, async function () {
+      process.exit();
     });
   }
 };
