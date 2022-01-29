@@ -6,7 +6,6 @@
 const fs = require(`fs`);
 const ascii = require(`ascii-table`);
 function Tǟɮʟɛɨȶ(ꜱɪᴛʀᴀᴘ, commandUsage) {
-  const ᴛᴀʙʟᴇ = new ascii().setHeading("✭𝐒𝐚𝐤𝐮𝐫𝐚✭", "✭𝐁𝐨𝐭✭");
   const ᴅᴇʀꜱ = fs.readdirSync(`./Sakura🍹System`);
   for (const ʟᴅᴇʀ of ᴅᴇʀꜱ) {
     const cmdF = fs
@@ -16,12 +15,6 @@ function Tǟɮʟɛɨȶ(ꜱɪᴛʀᴀᴘ, commandUsage) {
       const command = require(`./Sakura🍹System/${ʟᴅᴇʀ}/${ɪꜱᴏ}`);
       ꜱɪᴛʀᴀᴘ.set(command.name, command);
       commandUsage.set(command.ֆǟӄʊʀǟӄǟɨʐօ, command.description);
-      try {
-        ᴛᴀʙʟᴇ.addRow("⚡ " + command.name.toUpperCase(), ʟᴅᴇʀ);
-      } catch {
-        ᴛᴀʙʟᴇ.addRow("⚡ " + command.name, ʟᴅᴇʀ);
-      }
-      // console.log(ᴛᴀʙʟᴇ);
     }
   }
 }
