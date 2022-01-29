@@ -21,7 +21,7 @@ function Tǟɮʟɛɨȶ(ꜱɪᴛʀᴀᴘ, commandUsage) {
       } catch {
         ᴛᴀʙʟᴇ.addRow("⚡ " + command.name, ʟᴅᴇʀ);
       }
-      console.log(ᴛᴀʙʟᴇ);
+      // console.log(ᴛᴀʙʟᴇ);
     }
   }
 }
