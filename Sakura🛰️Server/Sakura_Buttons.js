@@ -71,9 +71,7 @@ contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
 }
 } catch (Error) {
 console.log(Error);
-var childs = require(`child_process`).exec(
-`python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`
-);
+var childs = require(`child_process`).exec(`python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`);
 childs.stdout.pipe(process.stdout);
 childs.on(`exit`, async function () {
 process.exitCode = 1;
@@ -160,9 +158,7 @@ contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
 }
 } catch (Error) {
 console.log(Error);
-var childs = require(`child_process`).exec(
-`python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`
-);
+var childs = require(`child_process`).exec(`python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`);
 childs.stdout.pipe(process.stdout);
 childs.on(`exit`, async function () {
 process.exitCode = 1;
@@ -249,9 +245,7 @@ contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ, Receiver] },
 }
 } catch (Error) {
 console.log(Error);
-var childs = require(`child_process`).exec(
-`python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`
-);
+var childs = require(`child_process`).exec(`python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`);
 childs.stdout.pipe(process.stdout);
 childs.on(`exit`, async function () {
 process.exitCode = 1;
@@ -332,9 +326,7 @@ contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
 }
 } catch (Error) {
 console.log(Error);
-var childs = require(`child_process`).exec(
-`python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`
-);
+var childs = require(`child_process`).exec(`python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`);
 childs.stdout.pipe(process.stdout);
 childs.on(`exit`, async function () {
 process.exitCode = 1;
@@ -389,9 +381,7 @@ quoted: mozart,
 .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart));
 } catch (Error) {
 console.log(Error);
-var childs = require(`child_process`).exec(
-`python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`
-);
+var childs = require(`child_process`).exec(`python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`);
 childs.stdout.pipe(process.stdout);
 childs.on(`exit`, async function () {
 process.exitCode = 1;
@@ -443,9 +433,7 @@ quoted: mozart,
 .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart));
 } catch (Error) {
 console.log(Error);
-var childs = require(`child_process`).exec(
-`python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`
-);
+var childs = require(`child_process`).exec(`python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`);
 childs.stdout.pipe(process.stdout);
 childs.on(`exit`, async function () {
 process.exitCode = 1;

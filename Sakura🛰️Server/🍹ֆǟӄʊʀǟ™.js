@@ -473,41 +473,65 @@ ${update.desc}`,
                               var groupDataRank = await ӄʀǟӄɨռʐ.groupMetadata(
                                 mozart.key.remoteJid
                               );
-                              await ӄʀǟӄɨռʐ.sendMessage(
+                              const media = await ӄʀǟӄɨռʐ.prepareMessage(
                                 ֆǟӄʊʀǟ.chatId,
                                 fs.readFileSync(
                                   `${աɦօֆɛռȶɦǟȶ.toString()}.jpeg`
                                 ),
                                 MessageType.image,
-                                {
-                                  mimetype: Mimetype.jpeg,
-                                  quoted: mozart,
-                                  contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
-                                  caption: `✨𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬 @${աɦօֆɛռȶɦǟȶ.substring(
-                                    0,
-                                    աɦօֆɛռȶɦǟȶ.length - 15
-                                  )}, 𝐘𝐨𝐮 𝐇𝐚𝐯𝐞 𝐋𝐞𝐯𝐞𝐥𝐞𝐝 𝐔𝐏!
+                                { mimetype: Mimetype.jpeg }
+                              );
+                              return await ӄʀǟӄɨռʐ
+                                .sendMessage(
+                                  ֆǟӄʊʀǟ.chatId,
+                                  {
+                                    contentText: `✨𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬 @${աɦօֆɛռȶɦǟȶռʊʍ} 𝐋𝐞𝐯𝐞𝐥𝐞𝐝 𝐔𝐏 ,
+╔◇══════════════◇╗
+┊ 𝐑𝐚𝐧𝐤𝐢𝐧𝐠📜𝐒𝐲𝐬𝐭𝐞𝐦
+╚◇══════════════◇╝
 
 ╔════◇📜𝐑𝐚𝐧𝐤 𝐂𝐚𝐫𝐝
-║🥂 *Xp:* ${currentXP}
-║🍩 *Level:* ${currentLvl}
-║🎪 *Group:* ${groupDataRank.subject}
+║🥂 𝗫𝗽: ${currentXP}
+║🍩 𝗟𝗲𝘃𝗲𝗹: ${currentLvl}
+║🎪 𝗚𝗿𝗼𝘂𝗽: ${groupDataRank.subject}
 ╚════════════╝
 
 ╔════◇🌿𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐚𝐧𝐤
-║🛵 *Rank Bonus:* 200
-║🪙 *Balance:* Just Opened Your Account!
+║🛵 𝗕𝗼𝗻𝘂𝘀: 200coins
+║🪙 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: Just Opened Your Account!
 ╚════════════╝
 
 ╔════◇🌿
-║🎉The More You Talk, The More 𝐗𝐏+𝐂𝐨𝐢𝐧𝐬 You Gain.
-║🎉You Can Spend The Coins in *${ᴋᴇɪ}shop!*
+║♠ The More You Talk, The More *Xp+Coins* You Gain.
+║♠ You Can Spend The Coins in *${ᴋᴇɪ}shop!*
 ╚════════════╝`,
-                                }
-                              );
-                              await cleanRF.cleanRF(
-                                `${աɦօֆɛռȶɦǟȶ.toString()}.jpeg`
-                              );
+                                    footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 • 𝐄𝐧𝐠𝐢𝐧𝐞: kryozen${vers.vers} ⏋\n⎿ ${Clock} • ${Ping}ms ⏋`,
+                                    buttons: [
+                                      {
+                                        buttonId: `${ᴋᴇɪ}rank`,
+                                        buttonText: {
+                                          displayText: `${ᴋᴇɪ}rank`,
+                                        },
+                                        type: 1,
+                                      },
+                                    ],
+                                    headerType: 4,
+                                    imageMessage: media.message.imageMessage,
+                                  },
+                                  MessageType.buttonsMessage,
+                                  {
+                                    quoted: mozart,
+                                    contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
+                                  }
+                                )
+                                .then(
+                                  cleanRF.cleanRF(
+                                    `${աɦօֆɛռȶɦǟȶ.toString()}.jpeg`
+                                  )
+                                )
+                                .catch((Error) =>
+                                  ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart)
+                                );
                             } catch (Error) {
                               console.log(Error);
                             }
@@ -525,43 +549,64 @@ ${update.desc}`,
                                 .catch((Error) =>
                                   ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart)
                                 );
-                              await ӄʀǟӄɨռʐ
+                              const media = await ӄʀǟӄɨռʐ.prepareMessage(
+                                ֆǟӄʊʀǟ.chatId,
+                                fs.readFileSync(
+                                  `${աɦօֆɛռȶɦǟȶ.toString()}.jpeg`
+                                ),
+                                MessageType.image,
+                                { mimetype: Mimetype.jpeg }
+                              );
+                              return await ӄʀǟӄɨռʐ
                                 .sendMessage(
                                   ֆǟӄʊʀǟ.chatId,
-                                  fs.readFileSync(
-                                    `${աɦօֆɛռȶɦǟȶ.toString()}.jpeg`
-                                  ),
-                                  MessageType.image,
                                   {
-                                    mimetype: Mimetype.jpeg,
-                                    quoted: mozart,
-                                    contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
-                                    caption: `✨𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬 @${աɦօֆɛռȶɦǟȶ.substring(
-                                      0,
-                                      աɦօֆɛռȶɦǟȶ.length - 15
-                                    )}, 𝐘𝐨𝐮 𝐇𝐚𝐯𝐞 𝐋𝐞𝐯𝐞𝐥𝐞𝐝 𝐔𝐏!
+                                    contentText: `✨𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬 @${աɦօֆɛռȶɦǟȶռʊʍ} 𝐋𝐞𝐯𝐞𝐥𝐞𝐝 𝐔𝐏 ,
+╔◇══════════════◇╗
+┊ 𝐑𝐚𝐧𝐤𝐢𝐧𝐠📜𝐒𝐲𝐬𝐭𝐞𝐦
+╚◇══════════════◇╝
 
-╔════◇📜𝐑𝐚𝐧𝐤 𝐂𝐚𝐫𝐝
-║🥂 *Xp:* ${currentXP}
-║🍩 *Level:* ${currentLvl}
-║🎪 *Group:* ${groupDataRank.subject}
+╔════◇📜𝐑𝐚𝐧𝐤
+║🥂 𝗫𝗽: ${currentXP}
+║🍩 𝗟𝗲𝘃𝗲𝗹: ${currentLvl}
+║🎪 𝗚𝗿𝗼𝘂𝗽: ${groupDataRank.subject}
 ╚════════════╝
 
 ╔════◇🌿𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐚𝐧𝐤
-║🛵 *Rank Bonus:* ${Ran}
-║🪙 *Balance:* ${userEco.money}
+║🛵 𝗕𝗼𝗻𝘂𝘀: ${Ran}coins
+║🪙 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: ${userEco.money}coins
 ╚════════════╝
 
 ╔════◇🌿
-║🎉The More You Talk, The More 𝐗𝐏+𝐂𝐨𝐢𝐧𝐬 You Gain.
-║🎉You Can Spend The Coins in *${ᴋᴇɪ}shop!*
+║♠ The More You Talk, The More *Xp+Coins* You Gain.
+║♠ You Can Spend The Coins in *${ᴋᴇɪ}shop!*
 ╚════════════╝`,
+                                    footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 • 𝐄𝐧𝐠𝐢𝐧𝐞: kryozen${vers.vers} ⏋\n⎿ ${Clock} • ${Ping}ms ⏋`,
+                                    buttons: [
+                                      {
+                                        buttonId: `${ᴋᴇɪ}rank`,
+                                        buttonText: {
+                                          displayText: `${ᴋᴇɪ}rank`,
+                                        },
+                                        type: 1,
+                                      },
+                                    ],
+                                    headerType: 4,
+                                    imageMessage: media.message.imageMessage,
+                                  },
+                                  MessageType.buttonsMessage,
+                                  {
+                                    quoted: mozart,
+                                    contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
                                   }
                                 )
                                 .then(
                                   cleanRF.cleanRF(
                                     `${աɦօֆɛռȶɦǟȶ.toString()}.jpeg`
                                   )
+                                )
+                                .catch((Error) =>
+                                  ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart)
                                 );
                             } catch (Error) {
                               console.log(Error);
@@ -758,13 +803,8 @@ ${update.desc}`,
               ӄʀǟӄɨռʐ,
               mozart,
               ֆǟӄʊʀǟ,
-              `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ}, 
-╔◇══════════════◇╗
-┊   𝐀𝐧𝐭𝐢🤖𝐒𝐩𝐚𝐦
-┊ _Sir Wait For 5s_
-╚◇══════════════◇╝`
+              `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ}, _Sir Wait For 5s_`
             );
-            return;
           } else {
             return Sakura_Buttons.MTB(
               ӄʀǟӄɨռʐ,
