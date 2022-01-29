@@ -48,10 +48,6 @@ exports.FFmpegAudio = async (ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart, Found, userBa
           await FFmpegProc.addInput(DirectFile)
             .output(Stream)
             .format("mp3")
-            // .on(`progress`, (p) => {
-            //   Readline.cursorTo(process.stdout, 0);
-            //   process.stdout.write(`💯𝐏𝐫𝐨𝐠𝐫𝐞𝐬𝐬: ${p.targetSize}kb`);
-            // })
             .on("error", async (Error) => {
               console.log(`⬡═══════════════════| 🔺𝐅𝐅𝐦𝐩𝐞𝐠 𝐄𝐫𝐫𝐨𝐫: ` + Error);
               userBadge.Limits = userBadge.Limits + 1;

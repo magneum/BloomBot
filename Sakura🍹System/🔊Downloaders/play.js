@@ -7,7 +7,6 @@
 const Sakura_Buttons = require(`../../Sakura🛰️Server/Sakura_Buttons`);
 const Sakura_Static = require(`../../Sakura🛰️Server/Sakura_Static`);
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
-const FFmpegAudio = require(`../../Sakura🛰️Server/FFmpegAudio`);
 const _𝔏𝔞𝔟_ = require(`../../Sakura🛰️Server/_𝔏𝔞𝔟_`);
 const ꜰᴜᴄᴋ = require(`../../Sakura🛰️Server/oShit`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
@@ -81,18 +80,18 @@ module.exports = {
             await newUser
               .save()
               .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart));
-                  return Sakura_Buttons.MIB(
-                    ӄʀǟӄɨռʐ,
-                    mozart,
-                    ֆǟӄʊʀǟ,
-                    `*🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},*
+            return Sakura_Buttons.MIB(
+              ӄʀǟӄɨռʐ,
+              mozart,
+              ֆǟӄʊʀǟ,
+              `*🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},*
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}  
 ║🤖 *User Added To Database For First Time!*
 ║🦋 _Try ${ᴋᴇɪ}${defaultnm} Again!_
 ╚════════════╝`,
-                    `./Sakura☣️Reactor/Sakura_Mongo.png`
-                  );
+              `./Sakura☣️Reactor/Sakura_Mongo.png`
+            );
           } else {
             `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
             console.log(userBadge);
@@ -154,6 +153,7 @@ module.exports = {
             );
           }
           `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+          var Stream = "./" + Date.now() + աɦօֆɛռȶɦǟȶ.toString() + ".mp3";
           const LinkForGroups = await yts(Needs.join(` `));
           const GroupVideos = LinkForGroups.videos.slice(0, 1);
           GroupVideos.forEach(async function (Found) {
@@ -177,13 +177,81 @@ module.exports = {
                 Found.thumbnail
               );
             } else {
-              await FFmpegAudio.FFmpegAudio(
+              Sakura_Buttons.MIB(
                 ӄʀǟӄɨռʐ,
-                ֆǟӄʊʀǟ,
                 mozart,
-                Found,
-                userBadge
+                ֆǟӄʊʀǟ,
+                `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
+              
+          ╔════◇🌿𝗣𝗹𝗲𝗮𝘀𝗲 𝘄𝗮𝗶𝘁!
+          ║⭕ 𝗙𝗶𝗹𝗲 𝗧𝘆𝗽𝗲: _Audio_
+          ║⏰ 𝗪𝗮𝗶𝘁 𝗧𝗶𝗺𝗲: _Depends on Length of file._
+          ╚════════════╝
+          
+          ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+          ║🍻 𝐓𝐢𝐭𝐥𝐞: ${Found.title}
+          ║🙈 𝐕𝐢𝐞𝐰𝐬: ${Found.views}
+          ║⏰ 𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧: ${Found.timestamp}
+          ║✒️ 𝐀𝐮𝐭𝐡𝐨𝐫: ${Found.author.name}
+          ║🔗 𝐋𝐢𝐧𝐤: ${Found.url}
+          ║📜 𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${Found.description}
+          ╚════════════╝`,
+                Found.thumbnail
               );
+              `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+              YouTube_Music(Found.url).then((res) => {
+                const { dl_link, thumb, title, filesizeF, filesize } = res;
+                TinyURL.shorten(dl_link).then(
+                  async function (DirectFile) {
+                    await FFmpegProc.addInput(DirectFile)
+                      .output(Stream)
+                      .format("mp3")
+                      .on("end", async () => {
+                        console.log(
+                          `\n⬡═══════════════════| 🥂𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐅𝐢𝐧𝐢𝐬𝐞𝐝 |═══════════════════⬡`
+                        );
+                        return await ӄʀǟӄɨռʐ
+                          .sendMessage(
+                            ֆǟӄʊʀǟ.chatId,
+                            fs.readFileSync(Stream),
+                            MessageType.audio,
+                            {
+                              quoted: mozart,
+                              mimetype: "audio/mp4",
+                            }
+                          )
+                          .then(cleanRF.cleanRF(Stream))
+                          .catch((Error) =>
+                            ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart)
+                          );
+                      })
+                      .on("error", async (Error) => {
+                        console.log(
+                          `⬡═══════════════════| 🔺𝐅𝐅𝐦𝐩𝐞𝐠 𝐄𝐫𝐫𝐨𝐫: ` + Error
+                        );
+                        userBadge.Limits = userBadge.Limits + 1;
+                        await userBadge
+                          .save()
+                          .catch((Error) =>
+                            ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart)
+                          );
+                        return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart);
+                      });
+                    FFmpegProc.run();
+                  },
+                  async function (Error) {
+                    console.log(`⬡═══════════════════| 🐞𝐄𝐫𝐫𝐨𝐫: ` + Error);
+                    userBadge.Limits = userBadge.Limits + 1;
+                    await userBadge
+                      .save()
+                      .catch((Error) =>
+                        ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart)
+                      );
+                    return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart);
+                  }
+                );
+              });
+              return;
             }
           });
         }
