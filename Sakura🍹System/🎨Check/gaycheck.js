@@ -22,7 +22,8 @@ module.exports = {
   async handle(ӄʀǟӄɨռʐ, mozart, ֆǟӄʊʀǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
     try {
       if (ֆǟӄʊʀǟ.isReply) {
-        var Receiver = mozart.message.extendedTextMessage.contextInfo.participant;
+        var Receiver =
+          mozart.message.extendedTextMessage.contextInfo.participant;
         var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
         var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
         var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
@@ -76,29 +77,7 @@ module.exports = {
         );
       } else {
         `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-        const Type = Object.keys(mozart.message)[0];
-        const BeautyBody =
-          Type === "listResponseMessage" &&
-          mozart.message.listResponseMessage.title
-            ? mozart.message.listResponseMessage.title
-            : Type === "buttonsResponseMessage" &&
-              mozart.message.buttonsResponseMessage.selectedButtonId
-            ? mozart.message.buttonsResponseMessage.selectedButtonId
-            : Type === "conversation" &&
-              mozart.message.conversation.startsWith(ᴋᴇɪ)
-            ? mozart.message.conversation
-            : Type == "imageMessage" &&
-              mozart.message.imageMessage.caption.startsWith(ᴋᴇɪ)
-            ? mozart.message.imageMessage.caption
-            : Type == "videoMessage" &&
-              mozart.message.videoMessage.caption.startsWith(ᴋᴇɪ)
-            ? mozart.message.videoMessage.caption
-            : Type == "extendedTextMessage" &&
-              mozart.message.extendedTextMessage.text.startsWith(ᴋᴇɪ)
-            ? mozart.message.extendedTextMessage.text
-            : "";
-        `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-        var BeautyCheck = BeautyBody.slice(1);
+        var BeautyCheck = ֆǟӄʊʀǟ.body.slice(1);
         var Tag = BeautyCheck.split(" ").join("");
         var ToRm = ᴋᴇɪ + newScpt;
         var Num = ToRm.length;
