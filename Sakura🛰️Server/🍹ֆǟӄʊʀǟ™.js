@@ -685,7 +685,7 @@ ${update.desc}`,
           );
           return;
         }
-        if (!ֆǟӄʊʀǟ.isGroup && !ֆǟӄʊʀǟ.fromMe) {
+        if (!ֆǟӄʊʀǟ.isGroup && !ֆǟӄʊʀǟ.fromMe && !ֆǟӄʊʀǟ.isSenderDev) {
           return Sakura_Buttons.MTB(
             ӄʀǟӄɨռʐ,
             mozart,
