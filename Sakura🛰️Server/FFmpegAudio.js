@@ -74,8 +74,9 @@ exports.FFmpegAudio = async (ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart, Found, userBa
                     mimetype: "audio/mp4",
                   }
                 )
+                .then(cleanRF.cleanRF(Stream))
                 .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart));
-              await cleanRF.cleanRF(Stream);
+              return;
             });
           FFmpegProc.run();
         },
