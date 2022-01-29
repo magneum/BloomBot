@@ -310,16 +310,24 @@ ${update.desc}`,
         }
         `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
         if (update.action === `add` && !MemNum.includes(ӄʀǟӄɨռʐ.user.jid)) {
-          return welbuts
-            .welbuts(
-              ӄʀǟӄɨռʐ,
-              GroupID,
-              GroupMemData,
-              GroupMemG,
-              GroupMemBio,
-              MemNum
-            )
-            .catch((Error) => console.log(Error));
+          Welcome.findOne(
+            {
+              ID: GroupID,
+            },
+            async (Error, userWel) => {
+              if (Error) console.log(Error);
+              if (!userWel) return;
+              return welbuts.welbuts(
+                ӄʀǟӄɨռʐ,
+                GroupID,
+                GroupMemData,
+                GroupMemG,
+                GroupMemBio,
+                MemNum,
+                userWel.message
+              );
+            }
+          );
         }
         if (update.action === `remove`) return;
       } catch (Error) {

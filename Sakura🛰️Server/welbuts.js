@@ -4,7 +4,6 @@
 `|🍹|`;
 `|🍹|`;
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
-const Welcome = require(`../Sakura🍃Goose/setwelcome`);
 const Downloader = require(`nodejs-file-downloader`);
 const _𝔏𝔞𝔟_ = require(`./_𝔏𝔞𝔟_`);
 require(`python-format-js`);
@@ -22,21 +21,6 @@ date.format(now, `ddd, MMM DD YYYY`);
 const pattern = date.compile(`ddd, MMM DD YYYY`);
 const Clock = date.format(now, pattern);
 const fs = require(`fs`);
-var ᴛᴡᴇʟ = [
-  `just joined the server!`,
-  `just joined. Everyone,look busy!`,
-  `just joined!`,
-  `joined the party!`,
-  `we were expecting you to join!`,
-  `we hope you bought pizza for us!`,
-  `leave your weapons by the door!`,
-  `Swooosh! Just landed.`,
-  `just joined. Hide your bananas!`,
-  `just joined. Seems OP, please nerf!`,
-  `just slid into the server!`,
-  `has spawned in the server!`,
-  `just showed up in the server!`,
-];
 var Flower = [`💐`, `🌻`, `🌼`, `🌹`, `🌸`, `💮`];
 var People = [`👮`, `👳`, `🤱`, `🤰`, `💂`];
 `⬡🍹⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
@@ -46,48 +30,41 @@ exports.welbuts = async (
   GroupMemData,
   GroupMemG,
   GroupMemBio,
-  MemNum
+  MemNum,
+  Message
 ) => {
   try {
-    const ᴡᴇʟᴄᴏᴍᴇʀᴛxᴛ = ᴛᴡᴇʟ[Math.floor(Math.random() * ᴛᴡᴇʟ.length)];
     const FlowerWel = Flower[Math.floor(Math.random() * Flower.length)];
     const PeopleWel = People[Math.floor(Math.random() * People.length)];
     var ᴘᴘᴡᴇʟᴄᴏᴍᴇ = MemNum.substring(0, MemNum.length - 15);
+    let 𝕻𝕻𝖑𝖊𝖙𝖊𝖗;
+    try {
+      𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄʀǟӄɨռʐ.getProfilePicture(`${MemNum.split(`@`)[0]}@c.us`);
+    } catch {
+      𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = "https://i.postimg.cc/gcw6vq3X/Npp.png";
+    }
     `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-    Welcome.findOne(
-      {
-        ID: GroupID,
-      },
-      async (Error, userWel) => {
-        if (Error) console.log(Error);
-        if (!userWel) return;
-        try {
-          𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄʀǟӄɨռʐ.getProfilePicture(
-            `${MemNum.split(`@`)[0]}@c.us`
-          );
-        } catch {
-          𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = "https://i.postimg.cc/gcw6vq3X/Npp.png";
+    const downloader = await new Downloader({
+      url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗,
+      directory: `./`,
+      fileName: `${Date.now().toString()}.png`,
+      cloneFiles: false,
+    });
+    try {
+      await downloader.download();
+      const media = await ӄʀǟӄɨռʐ.prepareMessage(
+        GroupID,
+        fs.readFileSync(`./${Date.now().toString()}.png`),
+        MessageType.image,
+        {
+          mimetype: Mimetype.png,
         }
-        const downloader = await new Downloader({
-          url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗,
-          directory: `./`,
-          fileName: `${ᴡᴇʟᴄᴏᴍᴇʀᴛxᴛ}_${Date.now().toString()}.png`,
-          cloneFiles: false,
-        });
-        await downloader.download();
-        const media = await ӄʀǟӄɨռʐ.prepareMessage(
+      );
+      await ӄʀǟӄɨռʐ
+        .sendMessage(
           GroupID,
-          fs.readFileSync(`./${ᴡᴇʟᴄᴏᴍᴇʀᴛxᴛ}_${Date.now().toString()}.png`),
-          MessageType.image,
           {
-            mimetype: Mimetype.png,
-          }
-        );
-        await ӄʀǟӄɨռʐ
-          .sendMessage(
-            GroupID,
-            {
-              contentText: `
+            contentText: `
 ╔◇══════════════◇╗
 ┊  🥞𝐖𝐞𝐥𝐜𝐨𝐦𝐞𝐫🥞
 ╚◇══════════════◇╝
@@ -98,33 +75,78 @@ exports.welbuts = async (
 ║🎪 𝐆𝐫𝐨𝐮𝐩: ${GroupMemData.subject}
 ╚════════════╝
 
-${userWel.message}`,
-              footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 ◈ 𝐄𝐧𝐠𝐢𝐧𝐞: _kryozen${vers.vers}_ ⏋\n⎿ 𝐃𝐚𝐭𝐞: _${Clock}_ ⏋\n⎿ 𝐏𝐢𝐧𝐠: _${Ping}ms_ ⏋`,
-              buttons: [
-                {
-                  buttonId: `${ᴋᴇɪ}help`,
-                  buttonText: { displayText: `${ᴋᴇɪ}help` },
-                  type: 1,
-                },
-                {
-                  buttonId: `${ᴋᴇɪ}menu`,
-                  buttonText: { displayText: `${ᴋᴇɪ}menu` },
-                  type: 1,
-                },
-              ],
-              headerType: 4,
-              imageMessage: media.message.imageMessage,
-            },
-            MessageType.buttonsMessage,
-            {
-              contextInfo: { mentionedJid: [MemNum] },
-            }
-          )
-          .catch((Error) => console.log(Error));
-        await cleanRF.cleanRF(`./${ᴡᴇʟᴄᴏᴍᴇʀᴛxᴛ}_${Date.now().toString()}.png`);
-        return;
-      }
-    );
+${Message}`,
+            footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 ◈ 𝐄𝐧𝐠𝐢𝐧𝐞: _kryozen${vers.vers}_ ⏋\n⎿ 𝐃𝐚𝐭𝐞: _${Clock}_ ⏋\n⎿ 𝐏𝐢𝐧𝐠: _${Ping}ms_ ⏋`,
+            buttons: [
+              {
+                buttonId: `${ᴋᴇɪ}help`,
+                buttonText: { displayText: `${ᴋᴇɪ}help` },
+                type: 1,
+              },
+              {
+                buttonId: `${ᴋᴇɪ}menu`,
+                buttonText: { displayText: `${ᴋᴇɪ}menu` },
+                type: 1,
+              },
+            ],
+            headerType: 4,
+            imageMessage: media.message.imageMessage,
+          },
+          MessageType.buttonsMessage,
+          {
+            contextInfo: { mentionedJid: [MemNum] },
+          }
+        )
+        .catch((Error) => console.log(Error));
+      return await cleanRF.cleanRF(`./${Date.now().toString()}.png`);
+    } catch (Error) {
+      const media = await ӄʀǟӄɨռʐ.prepareMessage(
+        GroupID,
+        { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 },
+        MessageType.image,
+        {
+          mimetype: Mimetype.png,
+        }
+      );
+      await ӄʀǟӄɨռʐ
+        .sendMessage(
+          GroupID,
+          {
+            contentText: `
+╔◇══════════════◇╗
+┊  🥞𝐖𝐞𝐥𝐜𝐨𝐦𝐞𝐫🥞
+╚◇══════════════◇╝
+
+╔════◇❣️𝗠𝗲𝗻𝘁𝗶𝗼𝗻: @${ᴘᴘᴡᴇʟᴄᴏᴍᴇ}
+║${FlowerWel} 𝗕𝗶𝗼: ${GroupMemBio.status}
+║${PeopleWel} 𝐌𝐞𝐦𝐛𝐞𝐫𝐳: ${GroupMemG}
+║🎪 𝐆𝐫𝐨𝐮𝐩: ${GroupMemData.subject}
+╚════════════╝
+
+${Message}`,
+            footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 ◈ 𝐄𝐧𝐠𝐢𝐧𝐞: _kryozen${vers.vers}_ ⏋\n⎿ 𝐃𝐚𝐭𝐞: _${Clock}_ ⏋\n⎿ 𝐏𝐢𝐧𝐠: _${Ping}ms_ ⏋`,
+            buttons: [
+              {
+                buttonId: `${ᴋᴇɪ}help`,
+                buttonText: { displayText: `${ᴋᴇɪ}help` },
+                type: 1,
+              },
+              {
+                buttonId: `${ᴋᴇɪ}menu`,
+                buttonText: { displayText: `${ᴋᴇɪ}menu` },
+                type: 1,
+              },
+            ],
+            headerType: 4,
+            imageMessage: media.message.imageMessage,
+          },
+          MessageType.buttonsMessage,
+          {
+            contextInfo: { mentionedJid: [MemNum] },
+          }
+        )
+        .catch((Error) => console.log(Error));
+    }
   } catch (Error) {
     console.log(Error);
   }
