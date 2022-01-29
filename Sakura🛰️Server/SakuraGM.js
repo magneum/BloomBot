@@ -19,6 +19,7 @@ const fs = require(`fs`);
 const speed = require(`performance-now`);
 let Timestamp = speed();
 const Pong = speed() - Timestamp;
+const vers = require(`../package.json`);
 const Ping = Pong.toFixed(4);
 const date = require(`date-and-time`);
 const now = new Date();

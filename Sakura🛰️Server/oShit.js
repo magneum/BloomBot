@@ -17,6 +17,7 @@ const Pong = speed() - Timestamp;
 const Ping = Pong.toFixed(4);
 const date = require(`date-and-time`);
 const now = new Date();
+const vers = require(`../package.json`);
 date.format(now, `ddd, MMM DD YYYY`);
 const pattern = date.compile(`ddd, MMM DD YYYY`);
 const Clock = date.format(now, pattern);

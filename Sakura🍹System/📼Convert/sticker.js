@@ -7,7 +7,6 @@
 const Sakura_Buttons = require(`../../Sakura🛰️Server/Sakura_Buttons`);
 const Sakura_Static = require(`../../Sakura🛰️Server/Sakura_Static`);
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
-const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../Sakura🛰️Server/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
 const cleanRF = require(`../../Sakura🛰️Server/cleanRF`);
 const _𝔏𝔞𝔟_ = require(`../../Sakura🛰️Server/_𝔏𝔞𝔟_`);
 const ꜰᴜᴄᴋ = require(`../../Sakura🛰️Server/oShit`);
@@ -128,156 +127,101 @@ module.exports = {
             );
           }
           `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-          if (ֆǟӄʊʀǟ.isReply) {
-            var FileObject = {
-              message:
-                chat.message.extendedTextMessage.contextInfo.quotedMessage,
-            };
-            var FileId = chat.message.extendedTextMessage.contextInfo.stanzaId;
-            console.log(FileObject);
-            console.log(FileId);
-            var FileJpeg = FileId + `.jpeg`;
-            var FileWebp = FileId + `.webp`;
-            var FilePng = FileId + `.png`;
-            var FileMp4 = FileId + `.mp4`;
-            var StickerName = FileId + `FromConvertedTo` + `.webp`;
-            `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-            try {
-              await ӄʀǟӄɨռʐ
-                .downloadAndSaveMediaMessage(FileObject, FileId)
-                .then(() => {
-                  if (fs.existsSync(FileId + `.jpeg`)) {
-                    console.log(`============|❓𝐅𝐢𝐥𝐞 𝐄𝐱𝐭𝐞𝐧𝐬𝐢𝐨𝐧: ` + `.jpeg`);
-                    ffmpeg(FileJpeg)
-                      .outputOptions([`-y`, `-vcodec libwebp`])
-                      .videoFilters(
-                        `scale=2000:2000:flags=lanczos:force_original_aspect_ratio=decrease`,
-                        `format=rgba`,
-                        `pad=2000:2000:(ow-iw)/2:(oh-ih)/2:color=#00000000,setsar=1`
-                      )
-                      .save(StickerName)
-                      .on(`end`, async () => {
-                        await ӄʀǟӄɨռʐ
-                          .sendMessage(
-                            ֆǟӄʊʀǟ.chatId,
-                            fs.readFileSync(StickerName),
-                            MessageType.sticker,
-                            { quoted: chat }
-                          )
-                          .then(cleanRF.cleanRF(FileJpeg, StickerName))
-                          .catch((Error) =>
-                            ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
-                          );
-                      })
-                      .on(`error`, async (Error) => {
-                        userBadge.Limits = userBadge.Limits + 1;
-                        await userBadge
-                          .save()
-                          .catch((Error) =>
-                            ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
-                          );
-                        return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
-                      });
-                  }
-                  `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-                  if (fs.existsSync(FileId + `.png`)) {
-                    console.log(`============|❓𝐅𝐢𝐥𝐞 𝐄𝐱𝐭𝐞𝐧𝐬𝐢𝐨𝐧: ` + `.png`);
-                    ffmpeg(FilePng)
-                      .outputOptions([`-y`, `-vcodec libwebp`])
-                      .videoFilters(
-                        `scale=2000:2000:flags=lanczos:force_original_aspect_ratio=decrease`,
-                        `format=rgba`,
-                        `pad=2000:2000:(ow-iw)/2:(oh-ih)/2:color=#00000000,setsar=1`
-                      )
-                      .save(StickerName)
-                      .on(`end`, async () => {
-                        await ӄʀǟӄɨռʐ
-                          .sendMessage(
-                            ֆǟӄʊʀǟ.chatId,
-                            fs.readFileSync(StickerName),
-                            MessageType.sticker,
-                            { quoted: chat }
-                          )
-                          .then(cleanRF.cleanRF(FilePng, StickerName))
-                          .catch((Error) =>
-                            ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
-                          );
-                      })
-                      .on(`error`, async (Error) => {
-                        userBadge.Limits = userBadge.Limits + 1;
-                        await userBadge
-                          .save()
-                          .catch((Error) =>
-                            ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
-                          );
-                        return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
-                      });
-                  }
-                  `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-                  if (fs.existsSync(FileId + `.webp`)) {
-                    console.log(`============|❓𝐅𝐢𝐥𝐞 𝐄𝐱𝐭𝐞𝐧𝐬𝐢𝐨𝐧: ` + `.webp`);
-                    return ӄʀǟӄɨռʐ
-                      .sendMessage(
-                        ֆǟӄʊʀǟ.chatId,
-                        fs.readFileSync(FileWebp),
-                        MessageType.sticker,
-                        { quoted: chat }
-                      )
-                      .then(cleanRF.cleanRF(FileWebp))
+          try {
+            const convertToSticker = async (FileID, RepliedFile) => {
+              const fileName = "./converter-" + FileID;
+              const FilePath = await ӄʀǟӄɨռʐ.downloadAndSaveMediaMessage(
+                RepliedFile,
+                fileName
+              );
+              const stickerPath = "./sticker-" + FileID + ".webp";
+              `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+              if (ֆǟӄʊʀǟ.type === "image" || ֆǟӄʊʀǟ.isReplyImage) {
+                ffmpeg(FilePath)
+                  .outputOptions(["-y", "-vcodec libwebp"])
+                  .videoFilters(
+                    "scale=2000:2000:flags=lanczos:force_original_aspect_ratio=decrease,format=rgba,pad=2000:2000:(ow-iw)/2:(oh-ih)/2:color=#00000000,setsar=1"
+                  )
+                  .save(stickerPath)
+                  .on("end", async () => {
+                    await ӄʀǟӄɨռʐ.sendMessage(
+                      ֆǟӄʊʀǟ.chatId,
+                      fs.readFileSync(stickerPath),
+                      MessageType.sticker
+                    );
+                    await cleanRF.cleanRF(FilePath, stickerPath);
+                  })
+                  .on(`error`, async (Error) => {
+                    userBadge.Limits = userBadge.Limits + 1;
+                    await userBadge
+                      .save()
                       .catch((Error) =>
                         ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
                       );
-                  }
-                  `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-                  if (fs.existsSync(FileId + `.mp4`)) {
-                    console.log(`============|❓𝐅𝐢𝐥𝐞 𝐄𝐱𝐭𝐞𝐧𝐬𝐢𝐨𝐧: ` + `.mp4`);
-                    ffmpeg(FileMp4)
-                      .duration(8)
-                      .outputOptions([
-                        `-y`,
-                        `-vcodec libwebp`,
-                        `-lossless 1`,
-                        `-qscale 1`,
-                        `-preset default`,
-                        `-loop 0`,
-                        `-an`,
-                        `-vsync 0`,
-                        `-s 600x600`,
-                      ])
-                      .videoFilters(
-                        `scale=600:600:flags=lanczos:force_original_aspect_ratio=decrease,format=rgba,pad=600:600:(ow-iw)/2:(oh-ih)/2:color=#00000000,setsar=1`
-                      )
-                      .save(StickerName)
-                      .on(`end`, async () => {
-                        await ӄʀǟӄɨռʐ
-                          .sendMessage(
-                            ֆǟӄʊʀǟ.chatId,
-                            fs.readFileSync(StickerName),
-                            MessageType.sticker,
-                            { quoted: chat }
-                          )
-                          .then(cleanRF.cleanRF(FileMp4, StickerName))
-                          .catch((Error) =>
-                            ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
-                          );
-                      })
-                      .on(`error`, async (Error) => {
-                        userBadge.Limits = userBadge.Limits + 1;
-                        await userBadge
-                          .save()
-                          .catch((Error) =>
-                            ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
-                          );
-                        return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
-                      });
-                  }
-                });
+                    return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
+                  });
+                return;
+              }
               `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-            } catch (Error) {
+              ffmpeg(FilePath)
+                .duration(8)
+                .outputOptions([
+                  "-y",
+                  "-vcodec libwebp",
+                  "-lossless 1",
+                  "-qscale 1",
+                  "-preset default",
+                  "-loop 0",
+                  "-an",
+                  "-vsync 0",
+                  "-s 600x600",
+                ])
+                .videoFilters(
+                  "scale=600:600:flags=lanczos:force_original_aspect_ratio=decrease,format=rgba,pad=600:600:(ow-iw)/2:(oh-ih)/2:color=#00000000,setsar=1"
+                )
+                .save(stickerPath)
+                .on("end", async () => {
+                  await ӄʀǟӄɨռʐ.sendMessage(
+                    ֆǟӄʊʀǟ.chatId,
+                    fs.readFileSync(stickerPath),
+                    MessageType.sticker
+                  );
+                  await cleanRF.cleanRF(FilePath, stickerPath);
+                })
+                .on(`error`, async (Error) => {
+                  userBadge.Limits = userBadge.Limits + 1;
+                  await userBadge
+                    .save()
+                    .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+                  return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
+                });
+              return;
+            };
+            `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+            if (ֆǟӄʊʀǟ.isImage || ֆǟӄʊʀǟ.isGIF || ֆǟӄʊʀǟ.isVideo) {
+              var replyChatObject = {
+                message: chat.message,
+              };
+              var FileID = chat.key.id;
+              await convertToSticker(FileID, replyChatObject);
+            } else if (
+              ֆǟӄʊʀǟ.isReplyImage ||
+              ֆǟӄʊʀǟ.isReplyGIF ||
+              ֆǟӄʊʀǟ.isReplyVideo
+            ) {
+              var replyChatObject = {
+                message:
+                  chat.message.extendedTextMessage.contextInfo.quotedMessage,
+              };
+              var FileID =
+                chat.message.extendedTextMessage.contextInfo.stanzaId;
+              await convertToSticker(FileID, replyChatObject);
+            } else {
               userBadge.Limits = userBadge.Limits + 1;
               await userBadge
                 .save()
                 .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+              const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../Sakura🛰️Server/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
               var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(ֆǟӄʊʀǟ.commandName);
               var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
                 𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ === undefined ? `Null` : 𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ;
@@ -292,24 +236,16 @@ module.exports = {
               );
               return;
             }
-          } else {
-            var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(ֆǟӄʊʀǟ.commandName);
-            var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
-              𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ === undefined ? `Null` : 𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ;
-            ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
-              ӄʀǟӄɨռʐ,
-              chat,
-              ֆǟӄʊʀǟ,
-              աɦօֆɛռȶɦǟȶ,
-              աɦօֆɛռȶɦǟȶռʊʍ,
-              ֆǟӄʊʀǟ.commandName,
-              ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
-            );
-            return;
+            `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+          } catch (Error) {
+            userBadge.Limits = userBadge.Limits + 1;
+            await userBadge
+              .save()
+              .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+            return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
           }
         }
       );
-      `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
     } catch (Error) {
       ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
       return;
