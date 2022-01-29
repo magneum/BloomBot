@@ -71,7 +71,9 @@ const Sakura_Text_But = (ӄʀǟӄɨռʐ, mozart, ֆǟӄʊʀǟ, MainText) => {
     }
   } catch (Error) {
     console.log(Error);
-    var childs = require(`child_process`).exec(`python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`);
+    var childs = require(`child_process`).exec(
+      `node Sakura☣️Reactor/🍹ֆǟӄʊʀǟ™.js`
+    );
     childs.stdout.pipe(process.stdout);
     childs.on(`exit`, async function () {
       process.exit();
@@ -158,7 +160,9 @@ const Sakura_Image_But = async (
     }
   } catch (Error) {
     console.log(Error);
-    var childs = require(`child_process`).exec(`python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`);
+    var childs = require(`child_process`).exec(
+      `node Sakura☣️Reactor/🍹ֆǟӄʊʀǟ™.js`
+    );
     childs.stdout.pipe(process.stdout);
     childs.on(`exit`, async function () {
       process.exit();
@@ -245,7 +249,9 @@ const Sakura_Video_But = async (
     }
   } catch (Error) {
     console.log(Error);
-    var childs = require(`child_process`).exec(`python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`);
+    var childs = require(`child_process`).exec(
+      `node Sakura☣️Reactor/🍹ֆǟӄʊʀǟ™.js`
+    );
     childs.stdout.pipe(process.stdout);
     childs.on(`exit`, async function () {
       process.exit();
@@ -326,7 +332,9 @@ const Sakura_GIF_But = async (ӄʀǟӄɨռʐ, mozart, ֆǟӄʊʀǟ, MainText, Me
     }
   } catch (Error) {
     console.log(Error);
-    var childs = require(`child_process`).exec(`python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`);
+    var childs = require(`child_process`).exec(
+      `node Sakura☣️Reactor/🍹ֆǟӄʊʀǟ™.js`
+    );
     childs.stdout.pipe(process.stdout);
     childs.on(`exit`, async function () {
       process.exit();
@@ -381,7 +389,9 @@ const Sakura_VideoAudio_But = async (
       .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart));
   } catch (Error) {
     console.log(Error);
-    var childs = require(`child_process`).exec(`python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`);
+    var childs = require(`child_process`).exec(
+      `node Sakura☣️Reactor/🍹ֆǟӄʊʀǟ™.js`
+    );
     childs.stdout.pipe(process.stdout);
     childs.on(`exit`, async function () {
       process.exit();
@@ -433,7 +443,9 @@ const Sakura_Location_But = async (
       .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart));
   } catch (Error) {
     console.log(Error);
-    var childs = require(`child_process`).exec(`python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`);
+    var childs = require(`child_process`).exec(
+      `node Sakura☣️Reactor/🍹ֆǟӄʊʀǟ™.js`
+    );
     childs.stdout.pipe(process.stdout);
     childs.on(`exit`, async function () {
       process.exit();
