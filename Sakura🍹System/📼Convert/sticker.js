@@ -192,7 +192,9 @@ module.exports = {
                   userBadge.Limits = userBadge.Limits + 1;
                   await userBadge
                     .save()
-                    .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart));
+                    .catch((Error) =>
+                      ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart)
+                    );
                   return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart);
                 });
               return;
@@ -247,7 +249,19 @@ module.exports = {
         }
       );
     } catch (Error) {
-      ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart);
+      const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../Sakura🛰️Server/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
+      var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(ֆǟӄʊʀǟ.commandName);
+      var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
+        𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ === undefined ? `Null` : 𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ;
+      ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
+        ӄʀǟӄɨռʐ,
+        mozart,
+        ֆǟӄʊʀǟ,
+        աɦօֆɛռȶɦǟȶ,
+        աɦօֆɛռȶɦǟȶռʊʍ,
+        ֆǟӄʊʀǟ.commandName,
+        ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
+      );
       return;
     }
   },
