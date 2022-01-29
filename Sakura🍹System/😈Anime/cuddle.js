@@ -27,20 +27,18 @@ module.exports = {
   async handle(ӄʀǟӄɨռʐ, mozart, ֆǟӄʊʀǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
     try {
       var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
-      var AnimeLink = await anime.cuddle();
       const defaultnm = ֆǟӄʊʀǟ.commandName;
       var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
       `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
       const hold = require("../../Sakura🛰️Server/Hold");
       hold.Hold(ֆǟӄʊʀǟ);
-      console.log(userBadge);
       `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
       let FinalLink;
-      var AnimeLink = await anime.hug();
+      var AnimeLink = await anime.cuddle();
       const GotFile = `./${Date.now()}.gif`;
       const GiveFile = `./${Date.now()}.mp4`;
       if (!AnimeLink.endsWith(`.gif`) && !AnimeLink.endsWith(`.mp4`)) {
-        FinalLink = await anime.hug();
+        FinalLink = await anime.cuddle();
         console.log("═════⬡|Second Try: " + FinalLink);
       } else {
         FinalLink = AnimeLink;
