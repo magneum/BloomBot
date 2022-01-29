@@ -12,6 +12,7 @@ const cleanRF = require(`../../Sakura🛰️Server/cleanRF`);
 const _𝔏𝔞𝔟_ = require(`../../Sakura🛰️Server/_𝔏𝔞𝔟_`);
 const ꜰᴜᴄᴋ = require(`../../Sakura🛰️Server/oShit`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
+const vers = require(`../../package.json`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 const { exec } = require(`child_process`);
 const fetch = require(`node-fetch`);
@@ -66,18 +67,18 @@ module.exports = {
             await newUser
               .save()
               .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart));
-                  return Sakura_Buttons.MIB(
-                    ӄʀǟӄɨռʐ,
-                    mozart,
-                    ֆǟӄʊʀǟ,
-                    `*🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},*
+            return Sakura_Buttons.MIB(
+              ӄʀǟӄɨռʐ,
+              mozart,
+              ֆǟӄʊʀǟ,
+              `*🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},*
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}  
 ║🤖 *User Added To Database For First Time!*
 ║🦋 _Try ${ᴋᴇɪ}${defaultnm} Again!_
 ╚════════════╝`,
-                    `./Sakura☣️Reactor/Sakura_Mongo.png`
-                  );
+              `./Sakura☣️Reactor/Sakura_Mongo.png`
+            );
           } else {
             `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
             console.log(userBadge);
@@ -159,7 +160,9 @@ module.exports = {
                   userBadge.Limits = userBadge.Limits + 1;
                   await userBadge
                     .save()
-                    .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart));
+                    .catch((Error) =>
+                      ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart)
+                    );
                   return Sakura_Buttons.MTB(
                     ӄʀǟӄɨռʐ,
                     mozart,
@@ -218,7 +221,9 @@ module.exports = {
                     {
                       mimetype: `video/gif`,
                       quoted: mozart,
-                      caption: PokeInfo,
+                      caption:
+                        `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 • 𝐄𝐧𝐠𝐢𝐧𝐞: kryozen${vers.vers} ⏋\n⎿ ${Clock} • ${Ping}ms ⏋\n\n` +
+                        PokeInfo,
                       contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
                     }
                   )
