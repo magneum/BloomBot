@@ -39,24 +39,25 @@ module.exports = {
           `*❌ Owner Only | You Are Not Allowed! ❌*`,
           _𝔏𝔞𝔟_.ɴᴏᴛᴀᴅᴍɪɴ
         );
-      } else {
-        var child = require(`child_process`).exec(
-          `python3 Sakura🛰️Server/Heroku.py`
-        );
-        child.stdout.pipe(process.stdout);
-        child.on(`exit`, async function () {
-          process.exitCode = 1;
-          var data = fs.readFileSync(`./Sakura🗑️Temp/𝐇𝐞𝐫𝐨𝐤𝐮.txt`, `utf8`);
-          console.log(data.toString());
-          return Sakura_Buttons.MIB(
-            ӄʀǟӄɨռʐ,
-            mozart,
-            ֆǟӄʊʀǟ,
-            `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ} (Owner)\n\n${data.toString()}`,
-            _𝔏𝔞𝔟_.MEE
-          );
-        });
       }
+      `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+      var child = require(`child_process`).exec(
+        `python3 Sakura🛰️Server/Heroku.py`
+      );
+      child.stdout.pipe(process.stdout);
+      child.on(`exit`, async function () {
+        process.exitCode = 1;
+        var data = fs.readFileSync(`./Sakura🗑️Temp/𝐇𝐞𝐫𝐨𝐤𝐮.txt`, `utf8`);
+        console.log(data.toString());
+        return Sakura_Buttons.MIB(
+          ӄʀǟӄɨռʐ,
+          mozart,
+          ֆǟӄʊʀǟ,
+          `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ} (Owner)\n\n${data.toString()}`,
+          _𝔏𝔞𝔟_.MEE
+        );
+      });
+
       `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
     } catch (Error) {
       ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart);

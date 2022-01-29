@@ -37,53 +37,54 @@ module.exports = {
           `*❌ Owner Only | You Are Not Allowed! ❌*`,
           _𝔏𝔞𝔟_.ɴᴏᴛᴀᴅᴍɪɴ
         );
-      } else {
-        var filePath;
-        if (ֆǟӄʊʀǟ.isReplyImage) {
-          var imageId = mozart.key.id;
-          const fileName =
-            `${__dirname}/${Ping}_${աɦօֆɛռȶɦǟȶ}_${FinalName}_` + imageId;
-          filePath = await ӄʀǟӄɨռʐ.downloadAndSaveMediaMessage(
-            {
-              message:
-                mozart.message.extendedTextMessage.contextInfo.quotedMessage,
-            },
-            fileName
-          );
-          var buffer = fs.readFileSync(filePath);
-          Jimp.read(buffer, function (Error, image) {
+      }
+      `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+      var filePath;
+      if (ֆǟӄʊʀǟ.isReplyImage) {
+        var imageId = mozart.key.id;
+        const fileName =
+          `${__dirname}/${Ping}_${աɦօֆɛռȶɦǟȶ}_${FinalName}_` + imageId;
+        filePath = await ӄʀǟӄɨռʐ.downloadAndSaveMediaMessage(
+          {
+            message:
+              mozart.message.extendedTextMessage.contextInfo.quotedMessage,
+          },
+          fileName
+        );
+        var buffer = fs.readFileSync(filePath);
+        Jimp.read(buffer, function (Error, image) {
+          if (Error) {
+            console.error(Error);
+          }
+          let qrcode = new qrCode();
+          qrcode.callback = async function (Error, value) {
             if (Error) {
-              console.error(Error);
-            }
-            let qrcode = new qrCode();
-            qrcode.callback = async function (Error, value) {
-              if (Error) {
-                ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart);
-              } else {
-                return Sakura_Static.MGS(
-                  ӄʀǟӄɨռʐ,
-                  mozart,
-                  ֆǟӄʊʀǟ,
-                  `✔️ 🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ}, *Sir Here Is The Verified Link!*
+              ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart);
+            } else {
+              return Sakura_Static.MGS(
+                ӄʀǟӄɨռʐ,
+                mozart,
+                ֆǟӄʊʀǟ,
+                `✔️ 🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ}, *Sir Here Is The Verified Link!*
 
 +sudolnk($req%+${Ping}+${Clock}%)
 ${_𝔏𝔞𝔟_.HASH.replace(`https://mozart.whatsapp.com/`, `/kryo/`)}${value.result}`,
-                  `./Sakura☣️Reactor/ֆǟӄʊʀǟ™.mp4`
-                );
-              }
-            };
-            qrcode.decode(image.bitmap);
-          });
-          await cleanRF.cleanRF(filePath);
-        } else {
-          return Sakura_Buttons.MTB(
-            ӄʀǟӄɨռʐ,
-            mozart,
-            ֆǟӄʊʀǟ,
-            `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},\n*Sir Please Reply To _QR-Code_!*`
-          );
-        }
+                `./Sakura☣️Reactor/ֆǟӄʊʀǟ™.mp4`
+              );
+            }
+          };
+          qrcode.decode(image.bitmap);
+        });
+        await cleanRF.cleanRF(filePath);
+      } else {
+        return Sakura_Buttons.MTB(
+          ӄʀǟӄɨռʐ,
+          mozart,
+          ֆǟӄʊʀǟ,
+          `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},\n*Sir Please Reply To _QR-Code_!*`
+        );
       }
+
       `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
     } catch (Error) {
       ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart);

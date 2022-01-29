@@ -32,37 +32,34 @@ module.exports = {
       const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
       `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
       if (!ֆǟӄʊʀǟ.fromMe && !ֆǟӄʊʀǟ.isSenderDev) {
-        try {
-          return Sakura_Buttons.MIB(
-            ӄʀǟӄɨռʐ,
-            mozart,
-            ֆǟӄʊʀǟ,
-            `*❌ Owner Only | You Are Not Allowed! ❌*`,
-            _𝔏𝔞𝔟_.ɴᴏᴛᴀᴅᴍɪɴ
-          );
-        } catch (Error) {
-          ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart);
-        }
-      } else {
-        await ӄʀǟӄɨռʐ.sendMessage(
-          ֆǟӄʊʀǟ.chatId,
-          {
-            url: `./Sakura☣️Reactor/ֆǟӄʊʀǟ™.mp4`,
-          },
-          MessageType.video,
-          {
-            mimetype: `video/gif`,
-            contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
-            caption: `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ}, (owner)
+        return Sakura_Buttons.MIB(
+          ӄʀǟӄɨռʐ,
+          mozart,
+          ֆǟӄʊʀǟ,
+          `*❌ Owner Only | You Are Not Allowed! ❌*`,
+          _𝔏𝔞𝔟_.ɴᴏᴛᴀᴅᴍɪɴ
+        );
+      }
+      `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+      await ӄʀǟӄɨռʐ.sendMessage(
+        ֆǟӄʊʀǟ.chatId,
+        {
+          url: `./Sakura☣️Reactor/ֆǟӄʊʀǟ™.mp4`,
+        },
+        MessageType.video,
+        {
+          mimetype: `video/gif`,
+          contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
+          caption: `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ}, (owner)
 
 *🍹ֆǟӄʊʀǟ™ Is Now Rebooting...*
 _Wait For (10-30)s_`,
-          }
-        );
-        await heroku
-          .delete(`/apps/` + _𝔏𝔞𝔟_.HEROKU_APP_NAME + `/dynos/` + `worker`)
-          .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart));
-      }
+        }
+      );
+      await heroku
+        .delete(`/apps/` + _𝔏𝔞𝔟_.HEROKU_APP_NAME + `/dynos/` + `worker`)
+        .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart));
+
       `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
     } catch (Error) {
       ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart);
