@@ -160,7 +160,9 @@ module.exports = {
                   });
                   await newUser
                     .save()
-                    .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart));
+                    .catch((Error) =>
+                      ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart)
+                    );
                   return Sakura_Buttons.MIB(
                     ӄʀǟӄɨռʐ,
                     mozart,
@@ -369,7 +371,7 @@ module.exports = {
                       `./Sakura☣️Reactor/Sakura_Gambling.png`
                     );
                     `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-                  } else if (!isOdd(Amount) && Color == 0) {
+                  } else if (Amount == 2 && Color == 0) {
                     money = parseInt(money * 2);
                     userEco.money = userEco.money + money;
                     userGamble.Gambledone = Date.now();
