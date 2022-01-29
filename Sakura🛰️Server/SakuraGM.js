@@ -62,7 +62,7 @@ exports.SakuraGM = async (ӄʀǟӄɨռʐ, mozart, ֆǟӄʊʀǟ) => {
     });
     try {
       await downloader.download();
-      await ffmpeg(`${__dirname}/${FinalName}_${SakuraGMid}.gif`)
+      ffmpeg(`${__dirname}/${FinalName}_${SakuraGMid}.gif`)
         .outputOptions([
           `-pix_fmt yuv420p`,
           `-c:v libx264`,

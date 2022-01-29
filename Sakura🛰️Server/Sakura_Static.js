@@ -38,7 +38,6 @@ const Sakura_GIF_Static = async (
         mimetype: `video/gif`,
         quoted: mozart,
         caption: MainText,
-        footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 • 𝐄𝐧𝐠𝐢𝐧𝐞: kryozen${vers.vers} ⏋\n⎿ ${Clock} • ${Ping}ms ⏋`,
         contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ, Receiver] },
       })
       .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart));
@@ -50,7 +49,6 @@ const Sakura_GIF_Static = async (
         mimetype: `video/gif`,
         quoted: mozart,
         caption: MainText,
-        footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 • 𝐄𝐧𝐠𝐢𝐧𝐞: kryozen${vers.vers} ⏋\n⎿ ${Clock} • ${Ping}ms ⏋`,
         contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
       })
       .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart));

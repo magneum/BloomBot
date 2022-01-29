@@ -16,6 +16,7 @@ var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 const vers = require(`../../package.json`);
 const ffmpeg = require(`fluent-ffmpeg`);
 const anime = require(`anime-actions`);
+const anime2 = require(`anime-actions`);
 var path = require(`path`);
 const fs = require(`fs`);
 var scriptName = path.basename(__filename);
@@ -36,10 +37,10 @@ module.exports = {
       `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
       let FinalLink;
       var AnimeLink = await anime.pat();
-      const GotFile = `./${Date.now()}.gif`;
-      const GiveFile = `./${Date.now()}.mp4`;
+      const GotFile = `./${FinalName}${Date.now()}.gif`;
+      const GiveFile = `./${FinalName}${Date.now()}.mp4`;
       if (!AnimeLink.endsWith(`.gif`) && !AnimeLink.endsWith(`.mp4`)) {
-        FinalLink = await anime.pat();
+        FinalLink = await anime2.pat();
         console.log("═════⬡|Second Try: " + FinalLink);
       } else {
         FinalLink = AnimeLink;
@@ -106,7 +107,7 @@ module.exports = {
             var Mention = Tag.substring(Num);
             var MentionPerson = Mention + "@s.whatsapp.net";
             if (!Needs[0]) {
-              return await ӄʀǟӄɨռʐ
+              await ӄʀǟӄɨռʐ
                 .sendMessage(
                   ֆǟӄʊʀǟ.chatId,
                   { url: GiveFile },
@@ -114,18 +115,21 @@ module.exports = {
                   {
                     mimetype: `video/gif`,
                     quoted: mozart,
-                    caption: `
+                    caption: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 • 𝐄𝐧𝐠𝐢𝐧𝐞: kryozen${vers.vers} ⏋\n⎿ ${Clock} • ${Ping}ms ⏋
+
+
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 ║🍕 𝐅𝐫𝐨𝐦: @${աɦօֆɛռȶɦǟȶռʊʍ}
 ║🌭 𝐓𝐨: Themselves
 ╚════════════╝`,
-                    footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 • 𝐄𝐧𝐠𝐢𝐧𝐞: kryozen${vers.vers} ⏋\n⎿ ${Clock} • ${Ping}ms ⏋`,
                     contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
                   }
                 )
                 .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart));
+              await cleanRF.cleanRF(GiveFile, GotFile);
+              return;
             } else {
-              return await ӄʀǟӄɨռʐ
+              await ӄʀǟӄɨռʐ
                 .sendMessage(
                   ֆǟӄʊʀǟ.chatId,
                   { url: GiveFile },
@@ -133,16 +137,19 @@ module.exports = {
                   {
                     mimetype: `video/gif`,
                     quoted: mozart,
-                    caption: `
+                    caption: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 • 𝐄𝐧𝐠𝐢𝐧𝐞: kryozen${vers.vers} ⏋\n⎿ ${Clock} • ${Ping}ms ⏋
+
+
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 ║🍕 𝐅𝐫𝐨𝐦: @${աɦօֆɛռȶɦǟȶռʊʍ}
 ║🌭 𝐓𝐨: @${Mention}
 ╚════════════╝`,
-                    footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 • 𝐄𝐧𝐠𝐢𝐧𝐞: kryozen${vers.vers} ⏋\n⎿ ${Clock} • ${Ping}ms ⏋`,
                     contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ, MentionPerson] },
                   }
                 )
                 .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart));
+              await cleanRF.cleanRF(GiveFile, GotFile);
+              return;
             }
           });
       }

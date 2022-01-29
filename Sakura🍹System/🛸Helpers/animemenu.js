@@ -39,67 +39,67 @@ module.exports = {
 ╔════◇🍣 𝐀𝐧𝐢𝐦𝐞
 ║⬡ *${ᴋᴇɪ}anime*  _search any anime_
 ║⬡ *${ᴋᴇɪ}ranimewall*  _get random anime wallpaper_
-║⬡ *${ᴋᴇɪ}smile*  _(gif)_ 
-║⬡ *${ᴋᴇɪ}yes*  _(gif)_
-║⬡ *${ᴋᴇɪ}bite*  _(gif)_
-║⬡ *${ᴋᴇɪ}blush*  _(gif)_
-║⬡ *${ᴋᴇɪ}bored*  _(gif)_
-║⬡ *${ᴋᴇɪ}confused*  _(gif)_
-║⬡ *${ᴋᴇɪ}cry*  _(gif)_
-║⬡ *${ᴋᴇɪ}goodnight*  _(gif)_
-║⬡ *${ᴋᴇɪ}happy*  _(gif)_
-║⬡ *${ᴋᴇɪ}hi5*  _(gif)_
-║⬡ *${ᴋᴇɪ}poke*  _(gif)_
-║⬡ *${ᴋᴇɪ}sad*  _(gif)_
-║⬡ *${ᴋᴇɪ}thinking*  _(gif)_
-║⬡ *${ᴋᴇɪ}cuddle*  _(gif)_
-║⬡ *${ᴋᴇɪ}hug*  _(gif)_
-║⬡ *${ᴋᴇɪ}pat*  _(gif)_
-║⬡ *${ᴋᴇɪ}slap*  _(gif)_ 
-║⬡ *${ᴋᴇɪ}wink*  _(gif)_
-║⬡ *${ᴋᴇɪ}angry*  _(gif)_
-║⬡ *${ᴋᴇɪ}baka*  _(gif)_
-║⬡ *${ᴋᴇɪ}bonk*  _(gif)_
-║⬡ *${ᴋᴇɪ}bully*  _(gif)_
-║⬡ *${ᴋᴇɪ}bye*  _(gif)_
-║⬡ *${ᴋᴇɪ}chase*  _(gif)_
-║⬡ *${ᴋᴇɪ}cheer*  _(gif)_
-║⬡ *${ᴋᴇɪ}cringe*  _(gif)_
-║⬡ *${ᴋᴇɪ}dab*  _(gif)_
-║⬡ *${ᴋᴇɪ}dance*  _(gif)_
-║⬡ *${ᴋᴇɪ}die*  _(gif)_
-║⬡ *${ᴋᴇɪ}facepalm*  _(gif)_
-║⬡ *${ᴋᴇɪ}feed*  _(gif)_
-║⬡ *${ᴋᴇɪ}glomp*  _(gif)_
-║⬡ *${ᴋᴇɪ}hold*  _(gif)_
-║⬡ *${ᴋᴇɪ}hate*  _(gif)_
-║⬡ *${ᴋᴇɪ}hi*  _(gif)_
-║⬡ *${ᴋᴇɪ}kill*  _(gif)_
-║⬡ *${ᴋᴇɪ}laugh*  _(gif)_
-║⬡ *${ᴋᴇɪ}lick*  _(gif)_
-║⬡ *${ᴋᴇɪ}love*  _(gif)_
-║⬡ *${ᴋᴇɪ}lurk*  _(gif)_
-║⬡ *${ᴋᴇɪ}nervous*  _(gif)_
-║⬡ *${ᴋᴇɪ}nope*  _(gif)_
-║⬡ *${ᴋᴇɪ}nom*  _(gif)_
-║⬡ *${ᴋᴇɪ}nuzzle*  _(gif)_
-║⬡ *${ᴋᴇɪ}panic*  _(gif)_
-║⬡ *${ᴋᴇɪ}peck*  _(gif)_
-║⬡ *${ᴋᴇɪ}poke*  _(gif)_
-║⬡ *${ᴋᴇɪ}pout*  _(gif)_
-║⬡ *${ᴋᴇɪ}run*  _(gif)_
-║⬡ *${ᴋᴇɪ}sip*  _(gif)_
-║⬡ *${ᴋᴇɪ}shoot*  _(gif)_
-║⬡ *${ᴋᴇɪ}shrug*  _(gif)_
-║⬡ *${ᴋᴇɪ}sleep*  _(gif)_
-║⬡ *${ᴋᴇɪ}smug*  _(gif)_
-║⬡ *${ᴋᴇɪ}stab*  _(gif)_
-║⬡ *${ᴋᴇɪ}stare*  _(gif)_
-║⬡ *${ᴋᴇɪ}tease*  _(gif)_
-║⬡ *${ᴋᴇɪ}tickle*  _(gif)_
-║⬡ *${ᴋᴇɪ}thumbsup*  _(gif)_
-║⬡ *${ᴋᴇɪ}triggered*  _(gif)_
-║⬡ *${ᴋᴇɪ}wag*  _(gif)_
+║⬡ *${ᴋᴇɪ}smile*  _@tag or reply_ 
+║⬡ *${ᴋᴇɪ}yes*  _@tag or reply_
+║⬡ *${ᴋᴇɪ}bite*  _@tag or reply_
+║⬡ *${ᴋᴇɪ}blush*  _@tag or reply_
+║⬡ *${ᴋᴇɪ}bored*  _@tag or reply_
+║⬡ *${ᴋᴇɪ}confused*  _@tag or reply_
+║⬡ *${ᴋᴇɪ}cry*  _@tag or reply_
+║⬡ *${ᴋᴇɪ}goodnight*  _@tag or reply_
+║⬡ *${ᴋᴇɪ}happy*  _@tag or reply_
+║⬡ *${ᴋᴇɪ}hi5*  _@tag or reply_
+║⬡ *${ᴋᴇɪ}poke*  _@tag or reply_
+║⬡ *${ᴋᴇɪ}sad*  _@tag or reply_
+║⬡ *${ᴋᴇɪ}thinking*  _@tag or reply_
+║⬡ *${ᴋᴇɪ}cuddle*  _@tag or reply_
+║⬡ *${ᴋᴇɪ}hug*  _@tag or reply_
+║⬡ *${ᴋᴇɪ}pat*  _@tag or reply_
+║⬡ *${ᴋᴇɪ}slap*  _@tag or reply_ 
+║⬡ *${ᴋᴇɪ}wink*  _@tag or reply_
+║⬡ *${ᴋᴇɪ}angry*  _@tag or reply_
+║⬡ *${ᴋᴇɪ}baka*  _@tag or reply_
+║⬡ *${ᴋᴇɪ}bonk*  _@tag or reply_
+║⬡ *${ᴋᴇɪ}bully*  _@tag or reply_
+║⬡ *${ᴋᴇɪ}bye*  _@tag or reply_
+║⬡ *${ᴋᴇɪ}chase*  _@tag or reply_
+║⬡ *${ᴋᴇɪ}cheer*  _@tag or reply_
+║⬡ *${ᴋᴇɪ}cringe*  _@tag or reply_
+║⬡ *${ᴋᴇɪ}dab*  _@tag or reply_
+║⬡ *${ᴋᴇɪ}dance*  _@tag or reply_
+║⬡ *${ᴋᴇɪ}die*  _@tag or reply_
+║⬡ *${ᴋᴇɪ}facepalm*  _@tag or reply_
+║⬡ *${ᴋᴇɪ}feed*  _@tag or reply_
+║⬡ *${ᴋᴇɪ}glomp*  _@tag or reply_
+║⬡ *${ᴋᴇɪ}hold*  _@tag or reply_
+║⬡ *${ᴋᴇɪ}hate*  _@tag or reply_
+║⬡ *${ᴋᴇɪ}hi*  _@tag or reply_
+║⬡ *${ᴋᴇɪ}kill*  _@tag or reply_
+║⬡ *${ᴋᴇɪ}laugh*  _@tag or reply_
+║⬡ *${ᴋᴇɪ}lick*  _@tag or reply_
+║⬡ *${ᴋᴇɪ}love*  _@tag or reply_
+║⬡ *${ᴋᴇɪ}lurk*  _@tag or reply_
+║⬡ *${ᴋᴇɪ}nervous*  _@tag or reply_
+║⬡ *${ᴋᴇɪ}nope*  _@tag or reply_
+║⬡ *${ᴋᴇɪ}nom*  _@tag or reply_
+║⬡ *${ᴋᴇɪ}nuzzle*  _@tag or reply_
+║⬡ *${ᴋᴇɪ}panic*  _@tag or reply_
+║⬡ *${ᴋᴇɪ}peck*  _@tag or reply_
+║⬡ *${ᴋᴇɪ}poke*  _@tag or reply_
+║⬡ *${ᴋᴇɪ}pout*  _@tag or reply_
+║⬡ *${ᴋᴇɪ}run*  _@tag or reply_
+║⬡ *${ᴋᴇɪ}sip*  _@tag or reply_
+║⬡ *${ᴋᴇɪ}shoot*  _@tag or reply_
+║⬡ *${ᴋᴇɪ}shrug*  _@tag or reply_
+║⬡ *${ᴋᴇɪ}sleep*  _@tag or reply_
+║⬡ *${ᴋᴇɪ}smug*  _@tag or reply_
+║⬡ *${ᴋᴇɪ}stab*  _@tag or reply_
+║⬡ *${ᴋᴇɪ}stare*  _@tag or reply_
+║⬡ *${ᴋᴇɪ}tease*  _@tag or reply_
+║⬡ *${ᴋᴇɪ}tickle*  _@tag or reply_
+║⬡ *${ᴋᴇɪ}thumbsup*  _@tag or reply_
+║⬡ *${ᴋᴇɪ}triggered*  _@tag or reply_
+║⬡ *${ᴋᴇɪ}wag*  _@tag or reply_
 ╚════════════╝`,
         `./Sakura☣️Reactor/ֆǟӄʊʀǟ.png`
       );
