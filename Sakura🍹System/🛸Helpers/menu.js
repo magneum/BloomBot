@@ -269,7 +269,6 @@ module.exports = {
 ║▷ ${ᴋᴇɪ}milk
 ║▷ ${ᴋᴇɪ}pussy
 ║▷ ${ᴋᴇɪ}slut
-║▷ ${ᴋᴇɪ}tikporn
 ╚════════════╝
 
 
