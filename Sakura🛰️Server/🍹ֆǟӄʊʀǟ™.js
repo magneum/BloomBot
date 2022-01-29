@@ -367,7 +367,7 @@ ${Error}`)
               var child = require(`child_process`).exec(`npm i --force`);
               child.stdout.pipe(process.stdout);
               child.on(`exit`, async function () {
-                process.exitCode(1);
+                process.exitCode = 1;
                 console.log(
                   Kolor.red(`🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @Owner
 
