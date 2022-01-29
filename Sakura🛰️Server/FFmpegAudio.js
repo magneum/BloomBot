@@ -15,6 +15,8 @@ exports.FFmpegAudio = async (ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart, Found, userBa
     var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
     const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
     `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+    const { YouTube_Music } = require(`./youmaker`);
+    const TinyURL = require("tinyurl");
     Sakura_Buttons.MIB(
       ӄʀǟӄɨռʐ,
       mozart,

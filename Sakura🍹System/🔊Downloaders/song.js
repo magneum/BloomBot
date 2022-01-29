@@ -227,10 +227,6 @@ module.exports = {
               ffmpeg(YouStream)
                 .audioBitrate(128)
                 .save(YouFile)
-                .on(`progress`, (p) => {
-                  readline.cursorTo(process.stdout, 0);
-                  process.stdout.write(`═════⬡|💯𝐏𝐫𝐨𝐠𝐫𝐞𝐬𝐬: ${p.targetSize}kb`);
-                })
                 .on(`end`, async () => {
                   console.clear();
                   console.log(`═════⬡|🥂𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐅𝐢𝐧𝐢𝐬𝐞𝐝: ` + YouFile);
