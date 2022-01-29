@@ -14,7 +14,6 @@ try {
   const Sakura_Static = require(`./Sakura_Static`);
   const ֆǟӄʊʀǟֆʏռօք = require(`./ֆǟӄʊʀǟᴢᴇɴ`);
   const moment = require(`moment-timezone`);
-  const PostDataBase = require(`./postDb`);
   const speed = require(`performance-now`);
   const { Tǟɮʟɛɨȶ } = require(`../Tǟɮʟɛɨȶ`);
   const ֆǟӄʊʀǟǟքք = require(`./helper`);
@@ -22,13 +21,12 @@ try {
   const BanList = require(`./BanList`);
   const cleanRF = require(`./cleanRF`);
   const fetch = require(`node-fetch`);
-  const postDb = require(`./postDb`);
   const _𝔏𝔞𝔟_ = require(`./_𝔏𝔞𝔟_`);
   const ꜰᴜᴄᴋ = require(`./oShit`);
   const Kolor = require(`chalk`);
   let Timestamp = speed();
   const Pong = (speed() - Timestamp) * 60;
-  const Ping = Pong.toFixed(4);
+  const Ping = Pong.toFixed(4) * 60;
   const date = require(`date-and-time`);
   const now = new Date();
   date.format(now, `ddd, MMM DD YYYY`);
@@ -270,7 +268,7 @@ ${update.desc}`,
             GroupID,
             {
               contentText: `𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚👋🏻 ${Timers}\n🌱𝗣𝗿𝗲𝘀𝘀 𝗯𝗲𝗹𝗼𝘄 𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗦𝘁𝗮𝗿𝘁 𝘂𝘀𝗶𝗻𝗴 𝗠𝗶𝘇𝘂𝗸𝗶👇🏽`,
-              footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 • 𝐄𝐧𝐠𝐢𝐧𝐞: kryozen3 ⏋\n⎿ ${Clock} • ${Ping}ms ⏋`,
+              footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 ◈ 𝐄𝐧𝐠𝐢𝐧𝐞: _kryozen${vers.vers}_ ⏋\n⎿ 𝐃𝐚𝐭𝐞: _${Clock}_ ⏋\n⎿ 𝐏𝐢𝐧𝐠: _${Ping}ms_ ⏋`,
               buttons: [
                 {
                   buttonId: `${ᴋᴇɪ}help`,
@@ -288,15 +286,32 @@ ${update.desc}`,
             },
             MessageType.buttonsMessage
           );
-          return await PostDataBase.setWelcome(
-            GroupID,
-            `𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚👋🏻\n🌱𝗣𝗿𝗲𝘀𝘀 𝗯𝗲𝗹𝗼𝘄 𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗦𝘁𝗮𝗿𝘁 𝘂𝘀𝗶𝗻𝗴 𝗠𝗶𝘇𝘂𝗸𝗶👇🏽`
+          Welcome.findOne(
+            {
+              ID: GroupID,
+            },
+            async (Error, userWel) => {
+              if (Error) console.log(Error);
+              if (!userWel) {
+                var newServer = new Welcome({
+                  ServerID: GroupID,
+                  message:
+                    "𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚👋🏻\n🌱𝗣𝗿𝗲𝘀𝘀 𝗯𝗲𝗹𝗼𝘄 𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗦𝘁𝗮𝗿𝘁 𝘂𝘀𝗶𝗻𝗴 𝗠𝗶𝘇𝘂𝗸𝗶👇🏽",
+                });
+                await newServer.save().catch((Error) => console.log(Error));
+                return;
+              } else {
+                userWel.message =
+                  "𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚👋🏻\n🌱𝗣𝗿𝗲𝘀𝘀 𝗯𝗲𝗹𝗼𝘄 𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗦𝘁𝗮𝗿𝘁 𝘂𝘀𝗶𝗻𝗴 𝗠𝗶𝘇𝘂𝗸𝗶👇🏽";
+                return await userWel
+                  .save()
+                  .catch((Error) => console.log(Error));
+              }
+            }
           );
         }
         `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
         if (update.action === `add` && !MemNum.includes(ӄʀǟӄɨռʐ.user.jid)) {
-          var enable = await postDb.checkSettings(GroupID, `setwelcome`);
-          if (enable === false || enable === `OFF`) return;
           return welbuts
             .welbuts(
               ӄʀǟӄɨռʐ,
@@ -505,7 +520,7 @@ ${update.desc}`,
 ║♠ The More You Talk, The More *Xp+Coins* You Gain.
 ║♠ You Can Spend The Coins in *${ᴋᴇɪ}shop!*
 ╚════════════╝`,
-                                    footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚◈𝐄𝐧𝐠𝐢𝐧𝐞: _kryozen${vers.vers}_ ⏋\n⎿ 𝐃𝐚𝐭𝐞: _${Clock}_◈𝐏𝐢𝐧𝐠: _${Ping}ms_ ⏋`,
+                                    footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 ◈ 𝐄𝐧𝐠𝐢𝐧𝐞: _kryozen${vers.vers}_ ⏋\n⎿ 𝐃𝐚𝐭𝐞: _${Clock}_ ⏋\n⎿ 𝐏𝐢𝐧𝐠: _${Ping}ms_ ⏋`,
                                     buttons: [
                                       {
                                         buttonId: `${ᴋᴇɪ}rank`,
@@ -581,7 +596,7 @@ ${update.desc}`,
 ║♠ The More You Talk, The More *Xp+Coins* You Gain.
 ║♠ You Can Spend The Coins in *${ᴋᴇɪ}shop!*
 ╚════════════╝`,
-                                    footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚◈𝐄𝐧𝐠𝐢𝐧𝐞: _kryozen${vers.vers}_ ⏋\n⎿ 𝐃𝐚𝐭𝐞: _${Clock}_◈𝐏𝐢𝐧𝐠: _${Ping}ms_ ⏋`,
+                                    footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 ◈ 𝐄𝐧𝐠𝐢𝐧𝐞: _kryozen${vers.vers}_ ⏋\n⎿ 𝐃𝐚𝐭𝐞: _${Clock}_ ⏋\n⎿ 𝐏𝐢𝐧𝐠: _${Ping}ms_ ⏋`,
                                     buttons: [
                                       {
                                         buttonId: `${ᴋᴇɪ}rank`,
@@ -751,32 +766,29 @@ ${update.desc}`,
             mozart,
             ֆǟӄʊʀǟ,
             `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ}, 🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) _Only In Groups!_
-
-╔════◇𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
-🍾 (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 #𝟏: ${_𝔏𝔞𝔟_.HASH2}
-🍾 (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 #2: ${_𝔏𝔞𝔟_.HASH}`
+🍾 (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 #𝟏: ${_𝔏𝔞𝔟_.HASH}`
           );
         }
         `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
         const gcDev1 = "120363039223842047@g.us";
-        const gcDev2 = "120363020792949649@g.us";
+        // const gcDev2 = "120363020792949649@g.us";
         const gMetadata = await ӄʀǟӄɨռʐ.groupMetadata(gcDev1);
         const gMetadata2 = await ӄʀǟӄɨռʐ.groupMetadata(gcDev2);
         let members = [];
         for (var i = 0; i < gMetadata.participants.length; i++) {
           members[i] = gMetadata.participants[i].jid;
         }
-        let members2 = [];
-        for (var i = 0; i < gMetadata2.participants.length; i++) {
-          members2[i] = gMetadata2.participants[i].jid;
-        }
+        // let members2 = [];
+        // for (var i = 0; i < gMetadata2.participants.length; i++) {
+        //   members2[i] = gMetadata2.participants[i].jid;
+        // }
         `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
         if (
           ֆǟӄʊʀǟ.isCmd &&
           !ֆǟӄʊʀǟ.body.includes(ᴋᴇɪ + "help") &&
           !ֆǟӄʊʀǟ.body.includes(ᴋᴇɪ + "menu")
         )
-          if (!members.includes(աɦօֆɛռȶɦǟȶ) && !members2.includes(աɦօֆɛռȶɦǟȶ)) {
+          if (!members.includes(աɦօֆɛռȶɦǟȶ)) {
             return Sakura_Buttons.MTB(
               ӄʀǟӄɨռʐ,
               mozart,
@@ -784,12 +796,11 @@ ${update.desc}`,
               `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
 
 ╔════◇𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
-║♨️ _First be a member of Any Sakura Group!_
+║♨️ _First be a member of Sakura Group!_
 ║🚨 *Why?* _Monitor AntiSpams & BugReports_ 
 ╚════════════╝
 
 ╔════◇𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
-🍾 (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 #𝟏: ${_𝔏𝔞𝔟_.HASH2}
 🍾 (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 #2: ${_𝔏𝔞𝔟_.HASH}`
             );
           }

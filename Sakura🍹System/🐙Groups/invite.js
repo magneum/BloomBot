@@ -110,7 +110,7 @@ module.exports = {
 💞𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${groupData.participants.length}
 🍰 𝐆𝐫𝐨𝐮𝐩: https://mozart.whatsapp.com/${code}
 `,
-              footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚◈𝐄𝐧𝐠𝐢𝐧𝐞: _kryozen${vers.vers}_ ⏋\n⎿ 𝐃𝐚𝐭𝐞: _${Clock}_◈𝐏𝐢𝐧𝐠: _${Ping}ms_ ⏋`,
+              footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 ◈ 𝐄𝐧𝐠𝐢𝐧𝐞: _kryozen${vers.vers}_ ⏋\n⎿ 𝐃𝐚𝐭𝐞: _${Clock}_ ⏋\n⎿ 𝐏𝐢𝐧𝐠: _${Ping}ms_ ⏋`,
               buttons: [
                 {
                   buttonId: `${ᴋᴇɪ}help`,
@@ -146,7 +146,7 @@ module.exports = {
 💞𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${groupData.participants.length}
 🍰 𝐆𝐫𝐨𝐮𝐩: https://mozart.whatsapp.com/${code}
 `,
-              footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚◈𝐄𝐧𝐠𝐢𝐧𝐞: _kryozen${vers.vers}_ ⏋\n⎿ 𝐃𝐚𝐭𝐞: _${Clock}_◈𝐏𝐢𝐧𝐠: _${Ping}ms_ ⏋`,
+              footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 ◈ 𝐄𝐧𝐠𝐢𝐧𝐞: _kryozen${vers.vers}_ ⏋\n⎿ 𝐃𝐚𝐭𝐞: _${Clock}_ ⏋\n⎿ 𝐏𝐢𝐧𝐠: _${Ping}ms_ ⏋`,
               buttons: [
                 {
                   buttonId: `${ᴋᴇɪ}help`,

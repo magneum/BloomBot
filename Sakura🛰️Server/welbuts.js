@@ -5,7 +5,7 @@
 `|🍹|`;
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const Downloader = require(`nodejs-file-downloader`);
-const postDb = require(`./postDb`);
+const Welcome = require(`../Sakura🍃Goose/welcome`);
 const _𝔏𝔞𝔟_ = require(`./_𝔏𝔞𝔟_`);
 require(`python-format-js`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
@@ -13,7 +13,7 @@ var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 const speed = require(`performance-now`);
 let Timestamp = speed();
 const Pong = speed() - Timestamp;
-const Ping = Pong.toFixed(4);
+const Ping = Pong.toFixed(4) * 60;
 const date = require(`date-and-time`);
 const now = new Date();
 const cleanRF = require(`./cleanRF`);
@@ -48,78 +48,87 @@ exports.welbuts = async (
   MemNum
 ) => {
   try {
-    var ꜰᴇᴛᴄʜᴇᴅᴡᴇʟᴄᴏᴍᴇ = await postDb.getMessage(GroupID, `setwelcome`);
     const ᴡᴇʟᴄᴏᴍᴇʀᴛxᴛ = ᴛᴡᴇʟ[Math.floor(Math.random() * ᴛᴡᴇʟ.length)];
     const FlowerWel = Flower[Math.floor(Math.random() * Flower.length)];
     const PeopleWel = People[Math.floor(Math.random() * People.length)];
-    `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
     var ᴘᴘᴡᴇʟᴄᴏᴍᴇ = MemNum.substring(0, MemNum.length - 15);
-    `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
-    try {
-      𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄʀǟӄɨռʐ.getProfilePicture(`${MemNum.split(`@`)[0]}@c.us`);
-    } catch {
-      𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = "https://i.postimg.cc/gcw6vq3X/Npp.png";
-    }
-    `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
-    const downloader = await new Downloader({
-      url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗,
-      directory: `${__dirname}`,
-      fileName: `${ᴘᴘᴡᴇʟᴄᴏᴍᴇ}_${FlowerWel}.png`,
-      cloneFiles: false,
-    });
-    await downloader.download();
-    let content = fs.readFileSync(`${__dirname}/${ᴘᴘᴡᴇʟᴄᴏᴍᴇ}_${FlowerWel}.png`);
-    const media = await ӄʀǟӄɨռʐ.prepareMessage(
-      GroupID,
-      content,
-      MessageType.image,
+    `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+    Welcome.findOne(
       {
-        mimetype: Mimetype.png,
-      }
-    );
-    `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
-    await ӄʀǟӄɨռʐ
-      .sendMessage(
-        GroupID,
-        {
-          contentText: `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 •@${ᴘᴘᴡᴇʟᴄᴏᴍᴇ} 
-${ᴡᴇʟᴄᴏᴍᴇʀᴛxᴛ}
-
-╔════◇
+        ID: ֆǟӄʊʀǟ.chatID,
+      },
+      async (Error, userWel) => {
+        if (Error) console.log(Error);
+        if (!userWel) {
+          return;
+        } else {
+          `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+          try {
+            𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄʀǟӄɨռʐ.getProfilePicture(
+              MemNum.split(`@`)[0] + "@c.us"
+            );
+          } catch {
+            𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = "https://i.postimg.cc/gcw6vq3X/Npp.jpeg";
+          }
+          const downloader = await new Downloader({
+            url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗,
+            directory: `./Sakura🗑️Temp`,
+            fileName: `${ᴘᴘᴡᴇʟᴄᴏᴍᴇ.toString()}__${Date.now()}_.jpeg`,
+            cloneFiles: false,
+          });
+          await downloader.download();
+          `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+          const media = await ӄʀǟӄɨռʐ.prepareMessage(
+            GroupID,
+            fs.readFileSync(
+              `./Sakura🗑️Temp/${ᴘᴘᴡᴇʟᴄᴏᴍᴇ.toString()}__${Date.now()}_.jpeg`
+            ),
+            MessageType.image,
+            {
+              mimetype: Mimetype.jpeg,
+            }
+          );
+          await ӄʀǟӄɨռʐ
+            .sendMessage(
+              GroupID,
+              {
+                contentText: `
+╔════◇🥞 🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ}, 
 ║${FlowerWel}𝗕𝗶𝗼: ${GroupMemBio.status}
 ║${PeopleWel}𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${GroupMemG}
 ║🎪𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${GroupMemData.subject}
 ╚════════════╝
 
-${ꜰᴇᴛᴄʜᴇᴅᴡᴇʟᴄᴏᴍᴇ.message}`,
-          footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 • 𝐄𝐧𝐠𝐢𝐧𝐞: kryozen3 ⏋\n⎿ ${Clock} • ${Ping}ms ⏋`,
-          buttons: [
-            {
-              buttonId: `${ᴋᴇɪ}help`,
-              buttonText: { displayText: `${ᴋᴇɪ}help` },
-              type: 1,
-            },
-            {
-              buttonId: `${ᴋᴇɪ}menu`,
-              buttonText: { displayText: `${ᴋᴇɪ}menu` },
-              type: 1,
-            },
-            {
-              buttonId: `${ᴋᴇɪ}repo`,
-              buttonText: { displayText: `${ᴋᴇɪ}repo` },
-              type: 1,
-            },
-          ],
-          headerType: 4,
-          imageMessage: media.message.imageMessage,
-        },
-        MessageType.buttonsMessage,
-        {
-          contextInfo: { mentionedJid: [MemNum] },
+${userWel.message}`,
+                footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 ◈ 𝐄𝐧𝐠𝐢𝐧𝐞: _kryozen${vers.vers}_ ⏋\n⎿ 𝐃𝐚𝐭𝐞: _${Clock}_ ⏋\n⎿ 𝐏𝐢𝐧𝐠: _${Ping}ms_ ⏋`,
+                buttons: [
+                  {
+                    buttonId: `${ᴋᴇɪ}help`,
+                    buttonText: { displayText: `${ᴋᴇɪ}help` },
+                    type: 1,
+                  },
+                  {
+                    buttonId: `${ᴋᴇɪ}menu`,
+                    buttonText: { displayText: `${ᴋᴇɪ}menu` },
+                    type: 1,
+                  },
+                ],
+                headerType: 4,
+                imageMessage: media.message.imageMessage,
+              },
+              MessageType.buttonsMessage,
+              {
+                contextInfo: { mentionedJid: [MemNum] },
+              }
+            )
+            .catch((Error) => console.log(Error));
+          await cleanRF.cleanRF(
+            `./Sakura🗑️Temp/${ᴘᴘᴡᴇʟᴄᴏᴍᴇ.toString()}__${Date.now()}_.jpeg`
+          );
+          return;
         }
-      )
-      .then(cleanRF.cleanRF(`${__dirname}/${ᴘᴘᴡᴇʟᴄᴏᴍᴇ}_${FlowerWel}.png`))
-      .catch((Error) => console.log(Error));
+      }
+    );
     `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
   } catch (Error) {
     console.log(
