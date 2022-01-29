@@ -85,7 +85,7 @@ module.exports = {
           ֆǟӄʊʀǟ,
           `*🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},*
 
-╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}  
+╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_  
 ║❌ 𝗘𝗿𝗿𝗼𝗿: _Money Amount!_
 ║💡 𝗟𝗶𝗺𝗶𝘁: _min 50coins needed to gamble_
 ╚════════════╝`,
@@ -100,7 +100,7 @@ module.exports = {
           ֆǟӄʊʀǟ,
           `*🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},*
 
-╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}  
+╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_  
 ║❌ 𝗘𝗿𝗿𝗼𝗿: _Money Amount!_
 ║💡 𝗟𝗶𝗺𝗶𝘁: _max 800coins for gamble_
 ╚════════════╝`,
@@ -118,7 +118,7 @@ module.exports = {
           ֆǟӄʊʀǟ,
           `*🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},*
 
-╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}  
+╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_  
 ║❌ 𝗘𝗿𝗿𝗼𝗿: _Money For Red!_
 ║💡 𝗟𝗶𝗺𝗶𝘁: _max 200coins_
 ╚════════════╝`,
@@ -138,7 +138,7 @@ module.exports = {
           ֆǟӄʊʀǟ,
           `*🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},*
 
-╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}  
+╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_  
 ║❌ 𝗘𝗿𝗿𝗼𝗿: _Money For Black!_
 ║⚫ 𝗟𝗶𝗺𝗶𝘁: _max 500coins_
 ╚════════════╝`,
@@ -158,7 +158,7 @@ module.exports = {
           ֆǟӄʊʀǟ,
           `*🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},*
 
-╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}  
+╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_  
 ║❌ 𝗘𝗿𝗿𝗼𝗿: _Money For Purple!_
 ║🟣 𝗟𝗶𝗺𝗶𝘁: _max 800coins_
 ╚════════════╝`,
@@ -196,7 +196,7 @@ module.exports = {
 ┊   🤑𝐆𝐚𝐦𝐛𝐥𝐞𝐫
 ╚◇══════════════◇╝
 
-╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
 ║💰 𝗧𝗼𝘁𝗮𝗹 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: Just Opened Your Account!
 ║🤠 𝗔𝗰𝗰𝗼𝘂𝗻𝘁_𝗛𝗼𝗹𝗱𝗲𝗿: @${քɛʀֆօռɢօȶռʊʍ}
 ╚════════════╝`,
@@ -228,7 +228,7 @@ module.exports = {
                     ֆǟӄʊʀǟ,
                     `*🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},*
 
-╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}  
+╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_  
 ║🤖 *User Added To Database For First Time!*
 ║🦋 _Try ${ᴋᴇɪ}${defaultnm} Again!_
 ╚════════════╝`,
@@ -255,7 +255,7 @@ module.exports = {
 ┊   🤑𝐆𝐚𝐦𝐛𝐥𝐞𝐫
 ╚◇══════════════◇╝
 
-╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
 ║❌ 𝗘𝗿𝗿𝗼𝗿: _You've Recently Gambled!_
 ║🕐 𝗚𝗮𝗺𝗯𝗹𝗲 𝗔𝗴𝗮𝗶𝗻: ${time.minutes}m ${time.seconds}s
 ╚════════════╝`,
@@ -286,7 +286,7 @@ module.exports = {
 ┊   🤑𝐆𝐚𝐦𝐛𝐥𝐞𝐫
 ╚◇══════════════◇╝
 
-╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
 ║❌ 𝗘𝗿𝗿𝗼𝗿: *Specify a color!*
 ║❣️ 𝗨𝘀𝗮𝗴𝗲: ${ᴋᴇɪ}${newScpt}  _red/black/purple money_
 ╚════════════╝
@@ -313,7 +313,7 @@ module.exports = {
 ┊   🤑𝐆𝐚𝐦𝐛𝐥𝐞𝐫
 ╚◇══════════════◇╝
 
-╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
 ║❌ 𝗘𝗿𝗿𝗼𝗿: _Specify an amount to gamble!_
 ║❣️ 𝗨𝘀𝗮𝗴𝗲: ${ᴋᴇɪ}${newScpt}  _red/black/purple money_
 ╚════════════╝`,
@@ -332,7 +332,7 @@ module.exports = {
 ┊   🤑𝐆𝐚𝐦𝐛𝐥𝐞𝐫
 ╚◇══════════════◇╝
 
-╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
 ║❌ 𝗘𝗿𝗿𝗼𝗿: _You are betting more than you have!_
 ║❣️ 𝗨𝘀𝗮𝗴𝗲: ${ᴋᴇɪ}${newScpt}  _red/black/purple money_
 ╚════════════╝`,
@@ -354,7 +354,7 @@ module.exports = {
 ┊   🤑𝐆𝐚𝐦𝐛𝐥𝐞𝐫
 ╚◇══════════════◇╝
 
-╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
 ║❌ 𝗘𝗿𝗿𝗼𝗿: *Specify a color*
 ║❣️ 𝗨𝘀𝗮𝗴𝗲: ${ᴋᴇɪ}${newScpt}  _red/black/purple money_
 ╚════════════╝
@@ -392,7 +392,7 @@ module.exports = {
 ┊   🤑𝐆𝐚𝐦𝐛𝐥𝐞𝐫
 ╚◇══════════════◇╝
 
-╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
 ║🟣 𝗘𝗮𝗿𝗻𝗲𝗱: You won *${money}* coins.
 ║⭐ 𝗠𝘂𝗹𝘁𝗶𝗽𝗹𝗶𝗲𝗿: _15x_
 ╚════════════╝`,
@@ -423,7 +423,7 @@ module.exports = {
 ┊   🤑𝐆𝐚𝐦𝐛𝐥𝐞𝐫
 ╚◇══════════════◇╝
 
-╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
 ║🔴 𝗘𝗮𝗿𝗻𝗲𝗱: _You won *${money}* coins!_
 ║⭐ 𝗠𝘂𝗹𝘁𝗶𝗽𝗹𝗶𝗲𝗿: _1.5x_
 ╚════════════╝`,
@@ -454,7 +454,7 @@ module.exports = {
 ┊   🤑𝐆𝐚𝐦𝐛𝐥𝐞𝐫
 ╚◇══════════════◇╝
 
-╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
 ║⚫ 𝗘𝗮𝗿𝗻𝗲𝗱: _You won *${money}* coins!_
 ║⭐ 𝗠𝘂𝗹𝘁𝗶𝗽𝗹𝗶𝗲𝗿: _2x_
 ╚════════════╝`,
@@ -484,7 +484,7 @@ module.exports = {
 ┊   🤑𝐆𝐚𝐦𝐛𝐥𝐞𝐫
 ╚◇══════════════◇╝
 
-╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
 ║💀 𝗥𝗲𝘀𝘂𝗹𝘁: _You lost *${money}* coins!_
 ║⭐ 𝗠𝘂𝗹𝘁𝗶𝗽𝗹𝗶𝗲𝗿: _0x_
 ╚════════════╝`,

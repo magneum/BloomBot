@@ -63,7 +63,7 @@ module.exports = {
           ֆǟӄʊʀǟ,
           `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ}, 
 
-╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
 ║❌ *How Can I Use Admin Only Commands If i am not admin?*
 ║💡 𝐅𝐢𝐱: _Make Me Admin First!_
 ╚════════════╝`,
@@ -105,7 +105,7 @@ module.exports = {
               contentText: `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 •@${քɛʀֆօռɢօȶռʊʍ}, 
 
 
-╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
 📜𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${groupData.subject}
 💞𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${groupData.participants.length}
 🍰 𝐆𝐫𝐨𝐮𝐩: https://mozart.whatsapp.com/${code}
@@ -141,7 +141,7 @@ module.exports = {
               contentText: `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ}, 
 
 
-╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
 📜𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${groupData.subject}
 💞𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${groupData.participants.length}
 🍰 𝐆𝐫𝐨𝐮𝐩: https://mozart.whatsapp.com/${code}

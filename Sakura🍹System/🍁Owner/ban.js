@@ -46,7 +46,7 @@ module.exports = {
           ֆǟӄʊʀǟ,
           `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ} 
 
-╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
 ║🛑𝐁𝐚𝐧𝐧𝐞𝐝: ${ᴀᴅᴅʙᴀɴ.substring(0, ᴀᴅᴅʙᴀɴ.indexOf(`@`))}
 ║🛡️𝐒𝐮𝐝𝐨 𝐁𝐚𝐧: _Banlisted from using the bot!_
 ║⚙️𝐄𝐧𝐠𝐢𝐧𝐞: ⋊ʀʏᴏ
@@ -75,7 +75,7 @@ module.exports = {
             ֆǟӄʊʀǟ,
             `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ} 
 
-╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
 ║🛑𝐁𝐚𝐧𝐧𝐞𝐝: ${ᴀᴅᴅʙᴀɴ.substring(0, ᴀᴅᴅʙᴀɴ.indexOf(`@`))}
 ║🛡️𝐒𝐮𝐝𝐨 𝐁𝐚𝐧: _Banlisted from using the bot in this group!_
 ║⚙️𝐄𝐧𝐠𝐢𝐧𝐞: ⋊ʀʏᴏ
@@ -102,7 +102,7 @@ module.exports = {
             ֆǟӄʊʀǟ,
             `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ} 
 
-╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
 ║🛑𝐁𝐚𝐧𝐧𝐞𝐝: ${ᴀᴅᴅʙᴀɴ.substring(0, ᴀᴅᴅʙᴀɴ.indexOf(`@`))}
 ║🛡️𝐒𝐮𝐝𝐨 𝐁𝐚𝐧: _Banlisted from using the bot in this group!_
 ║⚙️𝐄𝐧𝐠𝐢𝐧𝐞: ⋊ʀʏᴏ
@@ -118,7 +118,7 @@ module.exports = {
             ֆǟӄʊʀǟ,
             `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ} 
 
-╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
 ║🛑𝐆𝐫𝐨𝐮𝐩 𝐁𝐚𝐧𝐧𝐞𝐝: ${ֆǟӄʊʀǟ.groupName}
 ║🛡️𝐒𝐮𝐝𝐨 𝐁𝐚𝐧: _Bot has been disabled for the group!_
 ║⚙️𝐄𝐧𝐠𝐢𝐧𝐞: ⋊ʀʏᴏ

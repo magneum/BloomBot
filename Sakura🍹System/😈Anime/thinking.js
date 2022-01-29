@@ -81,7 +81,7 @@ module.exports = {
               mozart,
               ֆǟӄʊʀǟ,
               `
-╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
 ║🍕𝐅𝐫𝐨𝐦: @${աɦօֆɛռȶɦǟȶռʊʍ}
 ║🌭𝐓𝐨: @${քɛʀֆօռɢօȶռʊʍ}
 ╚════════════╝`,
@@ -118,7 +118,7 @@ module.exports = {
                     caption: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 • 𝐄𝐧𝐠𝐢𝐧𝐞: kryozen${vers.vers} ⏋\n⎿ ${Clock} • ${Ping}ms ⏋
 
 
-╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
 ║🍕 𝐅𝐫𝐨𝐦: @${աɦօֆɛռȶɦǟȶռʊʍ}
 ║🌭 𝐓𝐨: Themselves
 ╚════════════╝`,
@@ -140,7 +140,7 @@ module.exports = {
                     caption: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 • 𝐄𝐧𝐠𝐢𝐧𝐞: kryozen${vers.vers} ⏋\n⎿ ${Clock} • ${Ping}ms ⏋
 
 
-╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
 ║🍕 𝐅𝐫𝐨𝐦: @${աɦօֆɛռȶɦǟȶռʊʍ}
 ║🌭 𝐓𝐨: @${Mention}
 ╚════════════╝`,

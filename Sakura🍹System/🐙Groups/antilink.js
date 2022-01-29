@@ -66,7 +66,7 @@ module.exports = {
           ֆǟӄʊʀǟ,
           `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ}, 
 
-╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
 ║❌ *How Can I Use Admin Only Commands If i am not admin?*
 ║💡 𝐅𝐢𝐱: _Make Me Admin First!_
 ╚════════════╝`,
@@ -118,7 +118,7 @@ module.exports = {
                     ֆǟӄʊʀǟ.chatId,
                     {
                       contentText: `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},  (admin)
-╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
 ║📜𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${ֆǟӄʊʀǟ.groupName}
 ║🔗𝐀𝐧𝐭𝐢𝐥𝐢𝐧𝐤: ✅On
 ║⚙️𝐄𝐧𝐠𝐢𝐧𝐞: ⋊ʀʏᴏ
@@ -164,7 +164,7 @@ module.exports = {
                     ֆǟӄʊʀǟ.chatId,
                     {
                       contentText: `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},  (admin)
-╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
 ║📜𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${ֆǟӄʊʀǟ.groupName}
 ║🔗𝐀𝐧𝐭𝐢𝐥𝐢𝐧𝐤: ✅On
 ║⚙️𝐄𝐧𝐠𝐢𝐧𝐞: ⋊ʀʏᴏ
@@ -219,7 +219,7 @@ module.exports = {
                     ֆǟӄʊʀǟ.chatId,
                     {
                       contentText: `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},  (admin)
-╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
 ║📜𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${ֆǟӄʊʀǟ.groupName}
 ║🔗𝐀𝐧𝐭𝐢𝐥𝐢𝐧𝐤: ❌OFF
 ║⚙️𝐄𝐧𝐠𝐢𝐧𝐞: ⋊ʀʏᴏ
@@ -265,7 +265,7 @@ module.exports = {
                     ֆǟӄʊʀǟ.chatId,
                     {
                       contentText: `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},  (admin)
-╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
 ║📜𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${ֆǟӄʊʀǟ.groupName}
 ║🔗𝐀𝐧𝐭𝐢𝐥𝐢𝐧𝐤: ❌OFF
 ║⚙️𝐄𝐧𝐠𝐢𝐧𝐞: ⋊ʀʏᴏ

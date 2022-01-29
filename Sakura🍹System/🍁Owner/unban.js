@@ -46,7 +46,7 @@ module.exports = {
             ֆǟӄʊʀǟ,
             `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ} 
 
-╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
 ║👌🏽 ${ʀᴍʙᴀɴ.substring(0, ʀᴍʙᴀɴ.indexOf(`@`))}
 ║🔓𝐒𝐭𝐚𝐭𝐮𝐬: Was Not Banned!
 ║⚙️𝐄𝐧𝐠𝐢𝐧𝐞: ⋊ʀʏᴏ
@@ -62,7 +62,7 @@ module.exports = {
           ֆǟӄʊʀǟ,
           `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ} 
 
-╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
 ║👌🏽‍𝐔𝐧𝐁𝐚𝐧𝐧𝐞𝐝: ${ʀᴍʙᴀɴ.substring(0, ʀᴍʙᴀɴ.indexOf(`@`))}
 ║🛡️𝐒𝐮𝐝𝐨 𝐔𝐧𝐁𝐚𝐧: removed from BanList for all the chats.
 ║⚙️𝐄𝐧𝐠𝐢𝐧𝐞: ⋊ʀʏᴏ
@@ -82,7 +82,7 @@ module.exports = {
               ֆǟӄʊʀǟ,
               `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ} 
 
-╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
 ║👌🏽 ${ʀᴍʙᴀɴ.substring(0, ʀᴍʙᴀɴ.indexOf(`@`))}
 ║🔓𝐒𝐭𝐚𝐭𝐮𝐬: Was Not Banned!
 ║⚙️𝐄𝐧𝐠𝐢𝐧𝐞: ⋊ʀʏᴏ
@@ -98,7 +98,7 @@ module.exports = {
             ֆǟӄʊʀǟ,
             `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ} 
 
-╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
 ║👌🏽‍𝐔𝐧𝐁𝐚𝐧𝐧𝐞𝐝: ${ʀᴍʙᴀɴ.substring(0, ʀᴍʙᴀɴ.indexOf(`@`))}
 ║🛡️𝐒𝐮𝐝𝐨 𝐔𝐧𝐁𝐚𝐧: has been removed from the BanList for this group.
 ║⚙️𝐄𝐧𝐠𝐢𝐧𝐞: ⋊ʀʏᴏ
@@ -115,7 +115,7 @@ module.exports = {
               ֆǟӄʊʀǟ,
               `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ} 
 
-╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
 ║👌🏽 ${ʀᴍʙᴀɴ.substring(0, ʀᴍʙᴀɴ.indexOf(`@`))}
 ║🔓𝐒𝐭𝐚𝐭𝐮𝐬: Was Not Banned!
 ║⚙️𝐄𝐧𝐠𝐢𝐧𝐞: ⋊ʀʏᴏ
@@ -131,7 +131,7 @@ module.exports = {
             ֆǟӄʊʀǟ,
             `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ} 
 
-╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
 ║👌🏽 𝐔𝐧𝐁𝐚𝐧𝐧𝐞𝐝: ${ʀᴍʙᴀɴ.substring(0, ʀᴍʙᴀɴ.indexOf(`@`))}
 ║🛡️𝐒𝐮𝐝𝐨 𝐔𝐧𝐁𝐚𝐧: has been removed from the BanList for this group.
 ║⚙️𝐄𝐧𝐠𝐢𝐧𝐞: ⋊ʀʏᴏ
@@ -147,7 +147,7 @@ module.exports = {
               ֆǟӄʊʀǟ,
               `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ} 
 
-╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
 ║👌🏽 ${ֆǟӄʊʀǟ.groupName}
 ║🔓𝐒𝐭𝐚𝐭𝐮𝐬: Was Not Banned!
 ║⚙️𝐄𝐧𝐠𝐢𝐧𝐞: ⋊ʀʏᴏ
@@ -163,7 +163,7 @@ module.exports = {
             ֆǟӄʊʀǟ,
             `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ} 
 
-╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
 ║👌🏽𝐆𝐫𝐨𝐮𝐩 𝐔𝐧𝐁𝐚𝐧𝐧𝐞𝐝: ${ֆǟӄʊʀǟ.groupName}
 ║🛡️𝐒𝐮𝐝𝐨 𝐔𝐧𝐁𝐚𝐧: Bot has been enabled for the group
 ║⚙️𝐄𝐧𝐠𝐢𝐧𝐞: ⋊ʀʏᴏ

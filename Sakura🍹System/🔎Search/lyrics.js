@@ -58,7 +58,7 @@ module.exports = {
                     ֆǟӄʊʀǟ,
                     `*🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},*
 
-╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}  
+╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_  
 ║🤖 *User Added To Database For First Time!*
 ║🦋 _Try ${ᴋᴇɪ}${defaultnm} Again!_
 ╚════════════╝`,
@@ -161,7 +161,7 @@ module.exports = {
                 ֆǟӄʊʀǟ,
                 `•🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
 
-────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+────◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
 📜 𝗟𝘆𝗿𝗶𝗰𝘀 𝗙𝗼𝘂𝗻𝗱 𝗙𝗼𝗿: _${Song}_
 🎹 𝐓𝐢𝐭𝐥𝐞: *${GeniusSong.raw.title}*
 💡 𝗟𝘆𝗿𝗶𝗰𝘀 𝗦𝗼𝘂𝗿𝗰𝗲: _Genius-Lyrics_
@@ -182,7 +182,7 @@ ${Geniuslyrics}`,
                   ֆǟӄʊʀǟ,
                   `•🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
 
-────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+────◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
 📜 𝗟𝘆𝗿𝗶𝗰𝘀 𝗙𝗼𝘂𝗻𝗱 𝗙𝗼𝗿: _${Song}_
 💡 𝗟𝘆𝗿𝗶𝗰𝘀 𝗦𝗼𝘂𝗿𝗰𝗲: ${lyricssong.source.name}
 🔗 𝗟𝘆𝗿𝗶𝗰𝘀 𝗨𝗿𝗹: ${lyricssong.source.link}
@@ -205,7 +205,7 @@ ${lyricssong.lyrics}`
                     ֆǟӄʊʀǟ,
                     `•🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
 
-────◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+────◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
 📜 𝗟𝘆𝗿𝗶𝗰𝘀 𝗙𝗼𝘂𝗻𝗱 𝗙𝗼𝗿: _${Song}_
 🍹𝗟𝘆𝗿𝗶𝗰𝘀🍹
 ${lyric}`
