@@ -222,7 +222,7 @@ module.exports = {
                       mimetype: `video/gif`,
                       quoted: mozart,
                       caption:
-                        `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 • 𝐄𝐧𝐠𝐢𝐧𝐞: kryozen${vers.vers} ⏋\n⎿ ${Clock} • ${Ping}ms ⏋\n\n` +
+                        `⎿(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚◈𝐄𝐧𝐠𝐢𝐧𝐞:_kryozen${vers.vers}_⏋\n⎿𝐃𝐚𝐭𝐞:_${Clock}_◈𝐏𝐢𝐧𝐠:_${Ping}ms_⏋\n\n` +
                         PokeInfo,
                       contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
                     }

@@ -11,6 +11,7 @@ const { porno } = require(`../../Sakura🛰️Server/scraper`);
 const cleanRF = require(`../../Sakura🛰️Server/cleanRF`);
 const ꜰᴜᴄᴋ = require(`../../Sakura🛰️Server/oShit`);
 const _𝔏𝔞𝔟_ = require(`../../Sakura🛰️Server/_𝔏𝔞𝔟_`);
+const vers = require(`../../package.json`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 const FFmpeg = require("fluent-ffmpeg");
 const Readline = require(`readline`);
@@ -206,7 +207,7 @@ module.exports = {
 ║📤 𝐔𝐩𝐥𝐨𝐚𝐝𝐞𝐝: ${res.upload}
 ║🖊️ 𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${res.desc}
 ╚════════════╝`,
-                      footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 • 𝐄𝐧𝐠𝐢𝐧𝐞: kryozen${vers.vers} ⏋\n⎿ ${Clock} • ${Ping}ms ⏋`,
+                      footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚◈𝐄𝐧𝐠𝐢𝐧𝐞: _kryozen${vers.vers}_ ⏋\n⎿ 𝐃𝐚𝐭𝐞: _${Clock}_◈𝐏𝐢𝐧𝐠: _${Ping}ms_ ⏋`,
                       buttons: [
                         {
                           buttonId: `${ᴋᴇɪ}help`,

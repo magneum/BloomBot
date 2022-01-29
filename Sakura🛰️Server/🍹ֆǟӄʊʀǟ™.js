@@ -505,7 +505,7 @@ ${update.desc}`,
 ║♠ The More You Talk, The More *Xp+Coins* You Gain.
 ║♠ You Can Spend The Coins in *${ᴋᴇɪ}shop!*
 ╚════════════╝`,
-                                    footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 • 𝐄𝐧𝐠𝐢𝐧𝐞: kryozen${vers.vers} ⏋\n⎿ ${Clock} • ${Ping}ms ⏋`,
+                                    footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚◈𝐄𝐧𝐠𝐢𝐧𝐞: _kryozen${vers.vers}_ ⏋\n⎿ 𝐃𝐚𝐭𝐞: _${Clock}_◈𝐏𝐢𝐧𝐠: _${Ping}ms_ ⏋`,
                                     buttons: [
                                       {
                                         buttonId: `${ᴋᴇɪ}rank`,
@@ -581,7 +581,7 @@ ${update.desc}`,
 ║♠ The More You Talk, The More *Xp+Coins* You Gain.
 ║♠ You Can Spend The Coins in *${ᴋᴇɪ}shop!*
 ╚════════════╝`,
-                                    footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 • 𝐄𝐧𝐠𝐢𝐧𝐞: kryozen${vers.vers} ⏋\n⎿ ${Clock} • ${Ping}ms ⏋`,
+                                    footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚◈𝐄𝐧𝐠𝐢𝐧𝐞: _kryozen${vers.vers}_ ⏋\n⎿ 𝐃𝐚𝐭𝐞: _${Clock}_◈𝐏𝐢𝐧𝐠: _${Ping}ms_ ⏋`,
                                     buttons: [
                                       {
                                         buttonId: `${ᴋᴇɪ}rank`,
