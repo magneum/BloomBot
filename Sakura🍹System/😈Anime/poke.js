@@ -1,6 +1,6 @@
-`|🍹|======================================================================================================⬡  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™`;
+`|⬡════════════════════════════════════════════|                            |════════════════════════════════════════════⬡|`;
 `|🍹|      (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 | 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!       |`;
-`|🍹|======================================================================================================⬡  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™`;
+`|⬡════════════════════════════════════════════|                            |════════════════════════════════════════════⬡|`;
 `|🍹|`;
 `|🍹|`;
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
@@ -8,6 +8,7 @@ const Sakura_Buttons = require(`../../Sakura🛰️Server/Sakura_Buttons`);
 const Sakura_Static = require(`../../Sakura🛰️Server/Sakura_Static`);
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const cleanRF = require(`../../Sakura🛰️Server/cleanRF`);
+const Downloader = require(`nodejs-file-downloader`);
 const _𝔏𝔞𝔟_ = require(`../../Sakura🛰️Server/_𝔏𝔞𝔟_`);
 const ꜰᴜᴄᴋ = require(`../../Sakura🛰️Server/oShit`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
@@ -15,7 +16,6 @@ var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 const vers = require(`../../package.json`);
 const ffmpeg = require(`fluent-ffmpeg`);
 const anime = require(`anime-actions`);
-const request = require("request");
 var path = require(`path`);
 const fs = require(`fs`);
 var scriptName = path.basename(__filename);
@@ -30,18 +30,33 @@ module.exports = {
       var AnimeLink = await anime.poke();
       const defaultnm = ֆǟӄʊʀǟ.commandName;
       var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
-      const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
       `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+      const hold = require("../../Sakura🛰️Server/Hold");
+      hold.Hold(ֆǟӄʊʀǟ);
+      console.log(userBadge);
+      `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+      let FinalLink;
+      var AnimeLink = await anime.hug();
       const GotFile = `./${Date.now()}.gif`;
       const GiveFile = `./${Date.now()}.mp4`;
       if (!AnimeLink.endsWith(`.gif`) && !AnimeLink.endsWith(`.mp4`)) {
-        ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart);
-        return;
+        FinalLink = await anime.hug();
+        console.log("═════⬡|Second Try: " + FinalLink);
+      } else {
+        FinalLink = AnimeLink;
+        console.log("═════⬡|First Try: " + FinalLink);
       }
+      `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+      const downloader = await new Downloader({
+        url: FinalLink,
+        directory: `./`,
+        fileName: GotFile,
+        cloneFiles: false,
+      });
       try {
-        console.log("🍹====⬡ " + AnimeLink + " ⬡====🍹");
-        request(AnimeLink).pipe(fs.createWriteStream(GotFile));
+        await downloader.download();
       } catch (Error) {
+        console.log(`═════⬡|🐞𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐄𝐫𝐫𝐨𝐫: ` + Error);
         ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart);
         return;
       }
