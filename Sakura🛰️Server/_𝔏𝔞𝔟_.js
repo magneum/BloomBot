@@ -37,7 +37,10 @@ const env = {
   MEE: `https://i.postimg.cc/XqPBcyq0/image.png`,
   HASH: `https://chat.whatsapp.com/LKN8uVBd8ucHRHofz0jBSd`,
   HASH2: `https://chat.whatsapp.com/HKO5WLEZxMe3xWCyiv6vBu`,
-  DEV: `918436686758,917430922909,918250889325`,
+  Kate:
+    process.env.CCD === undefined
+      ? `918436686758,917430922909,918250889325`
+      : process.env.CCD,
   HEROKU: process.env.HEROKU,
   SAKURAQL: (process.env.SAKURAQL =
     process.env.SAKURAQL === undefined

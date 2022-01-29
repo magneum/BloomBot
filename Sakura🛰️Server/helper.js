@@ -8,7 +8,7 @@ var ƈʏɮօʀɢƈʟǟ = require(`./ֆǟӄʊʀǟƈʟǟ`);
 // ⬡ ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳 ⬡==========================⬡    🍹 (c)ֆǟӄʊʀǟ 🍹    ⬡==========================⬡ 𝐋𝐚𝐛™ ⬡
 exports.resolve = function (messageInstance, ӄʀǟӄɨռʐ, groupMetadata) {
   try {
-    var DEVstring = _𝔏𝔞𝔟_.DEV;
+    var DEVstring = _𝔏𝔞𝔟_.Kate;
     var ֆǟӄʊʀǟ = new ƈʏɮօʀɢƈʟǟ();
     var prefix = _𝔏𝔞𝔟_.FOXTROT + `\\w+`;
     var prefixRegex = new RegExp(prefix, `g`);

@@ -6,7 +6,7 @@
 exports.Hold = async (ֆǟӄʊʀǟ) => {
   const fs = require("fs");
   const File = "./Sakura🛰️Server/Coolist.json";
-  if (ֆǟӄʊʀǟ.fromMe) {
+  if (ֆǟӄʊʀǟ.isSenderDev) {
     const jsoncool = await JSON.parse(fs.readFileSync(File));
     await jsoncool.push(ֆǟӄʊʀǟ.sender);
     fs.writeFileSync(File, JSON.stringify(jsoncool));
