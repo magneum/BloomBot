@@ -603,11 +603,6 @@ ${update.desc}`,
             if (!server) {
               return;
             } else {
-              const REMOVE = mozart.key.fromMe
-                ? ӄʀǟӄɨռʐ.user.jid
-                : ֆǟӄʊʀǟ.isGroup
-                ? mozart.participant
-                : mozart.key.remoteJid;
               await Sakura_Buttons.MIB(
                 ӄʀǟӄɨռʐ,
                 mozart,
@@ -621,7 +616,7 @@ ${update.desc}`,
               );
               setTimeout(() => {
                 ӄʀǟӄɨռʐ
-                  .groupRemove(ֆǟӄʊʀǟ.chatId, [REMOVE])
+                  .groupRemove(ֆǟӄʊʀǟ.chatId, [ֆǟӄʊʀǟ.sender])
                   .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart));
               }, 6000);
               return;
