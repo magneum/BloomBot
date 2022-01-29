@@ -122,7 +122,7 @@ module.exports = {
               fishdone: 0,
               fishtimeout: 1800000,
               workdone: 0,
-              worktimeout: 900000,
+              worktimeout: 600000,
             });
             await newUser
               .save()
