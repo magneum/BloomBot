@@ -334,7 +334,7 @@ ${update.desc}`,
         ]);
         if (ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total != 0) {
           require(`simple-git`)()
-            .exec(async () => {
+            .exec(() => {
               console.log(
                 Kolor.yellow(`💡INFO ⬰ 𝐍𝐞𝐰 𝐔𝐩𝐝𝐚𝐭𝐞 𝐩𝐞𝐧𝐝𝐢𝐧𝐠, 𝐮𝐩𝐝𝐚𝐭𝐢𝐧𝐠...`)
               );
