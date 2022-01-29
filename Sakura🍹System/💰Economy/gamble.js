@@ -19,10 +19,9 @@ module.exports = {
   ֆǟӄʊʀǟӄǟɨʐօ: `*${ᴋᴇɪ}${newScpt}* _red/black/purple money_
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: 🤑Gamble With the AI
-║ *Red =* _[1.5x] (normal)_
-║ *Black =* _[2x] (hard)_ 
-║ *Purple =* _[15x] (rare)_
-║❣️ 𝗨𝘀𝗮𝗴𝗲: ${ᴋᴇɪ}${newScpt}  _red/black/purple money_
+║ *Red:* _even out of 10_ (medium)
+║ *Black:* _2 out of 10_ (hard)
+║ *Purple:* _1 out of 10_ (god)
 ╚════════════╝`,
   async handle(ӄʀǟӄɨռʐ, mozart, ֆǟӄʊʀǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
     try {
@@ -234,9 +233,9 @@ module.exports = {
 
 
 ╔════◇❣️𝐂𝐨𝐥𝐨𝐫𝐬
-║ *Red =* _[1.5x] (normal)_
-║ *Black =* _[2x] (hard)_ 
-║ *Purple =* _[15x] (rare)_
+║ *Red:* _even out of 10_ (medium)
+║ *Black:* _2 out of 10_ (hard)
+║ *Purple:* _1 out of 10_ (god)
 ╚════════════╝`,
                       `./Sakura☣️Reactor/Sakura_Gambling.png`
                     );
@@ -302,9 +301,9 @@ module.exports = {
 
 
 ╔════◇❣️𝐂𝐨𝐥𝐨𝐫𝐬
-║ *Red =* _[1.5x] (normal)_
-║ *Black =* _[2x] (hard)_ 
-║ *Purple =* _[15x] (rare)_
+║ *Red:* _even out of 10_ (medium)
+║ *Black:* _2 out of 10_ (hard)
+║ *Purple:* _1 out of 10_ (god)
 ╚════════════╝`,
                       `./Sakura☣️Reactor/Sakura_Gambling.png`
                     );
@@ -340,7 +339,7 @@ module.exports = {
                       `./Sakura☣️Reactor/Sakura_Gambling.png`
                     );
                     `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-                  } else if (isOdd(Amount) && Color == 1) {
+                  } else if (!isOdd(Amount) && Color == 1) {
                     money = parseInt(money * 1.5);
                     userEco.money = userEco.money + money;
                     userGamble.Gambledone = Date.now();
