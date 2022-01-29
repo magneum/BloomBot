@@ -14,7 +14,7 @@ RUN apt-get install opus-tools -y
 RUN apt-get install python3-pip -y
 RUN apt-get install npm -y
 RUN npm install --global n
-RUN n install 16
+RUN n install lts
 RUN path=path
 RUN hash -r
 RUN git clone https://github.com/Krakinz/Sakura.git
