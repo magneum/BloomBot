@@ -66,13 +66,13 @@ module.exports = {
       }
       Welcome.findOne(
         {
-          serverID: ֆǟӄʊʀǟ.chatID,
+          ID: ֆǟӄʊʀǟ.chatID,
         },
         async (Error, userWel) => {
           if (Error) console.log(Error);
           if (!userWel) {
             var newServer = new Welcome({
-              ServerID: ֆǟӄʊʀǟ.chatID,
+              ID: ֆǟӄʊʀǟ.chatID,
               message: Needs.join(" "),
             });
             await newServer

@@ -5,7 +5,7 @@
 `|🍹|`;
 var mongoose = require("mongoose");
 var WelcomeSakuraSchema = new mongoose.Schema({
-  serverID: String,
+  ID: String,
   message: String,
 });
 module.exports = mongoose.model("Welcome", WelcomeSakuraSchema);

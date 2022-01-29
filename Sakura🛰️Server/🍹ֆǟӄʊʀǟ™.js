@@ -288,13 +288,13 @@ ${update.desc}`,
           );
           Welcome.findOne(
             {
-              serverID: GroupID,
+              ID: GroupID,
             },
             async (Error, userWel) => {
               if (Error) console.log(Error);
               if (!userWel) {
                 var newServer = new Welcome({
-                  ServerID: GroupID,
+                  ID: GroupID,
                   message:
                     "𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚👋🏻\n🌱𝗣𝗿𝗲𝘀𝘀 𝗯𝗲𝗹𝗼𝘄 𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗦𝘁𝗮𝗿𝘁 𝘂𝘀𝗶𝗻𝗴 𝗠𝗶𝘇𝘂𝗸𝗶👇🏽",
                 });
