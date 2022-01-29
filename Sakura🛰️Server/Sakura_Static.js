@@ -13,6 +13,8 @@ const ꜰᴜᴄᴋ = require(`./oShit`);
 let Timestamp = speed();
 const now = new Date();
 const fs = require(`fs`);
+const Pong = speed() - Timestamp;
+const Ping = Pong.toFixed(4);
 date.format(now, `ddd, MMM DD YYYY`);
 const pattern = date.compile(`ddd, MMM DD YYYY`);
 const Clock = date.format(now, pattern);
@@ -37,7 +39,9 @@ const Sakura_GIF_Static = async (
       .sendMessage(ֆǟӄʊʀǟ.chatId, { url: MediaUrl }, MessageType.video, {
         mimetype: `video/gif`,
         quoted: mozart,
-        caption: MainText,
+        caption:
+          `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 • 𝐄𝐧𝐠𝐢𝐧𝐞: kryozen${vers.vers} ⏋\n⎿ ${Clock} • ${Ping}ms ⏋\n\n` +
+          MainText,
         contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ, Receiver] },
       })
       .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart));
@@ -48,7 +52,9 @@ const Sakura_GIF_Static = async (
       .sendMessage(ֆǟӄʊʀǟ.chatId, { url: MediaUrl }, MessageType.video, {
         mimetype: `video/gif`,
         quoted: mozart,
-        caption: MainText,
+        caption:
+          `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 • 𝐄𝐧𝐠𝐢𝐧𝐞: kryozen${vers.vers} ⏋\n⎿ ${Clock} • ${Ping}ms ⏋\n\n` +
+          MainText,
         contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
       })
       .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart));

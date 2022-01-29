@@ -6,6 +6,7 @@
 require(`python-format-js`);
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const { SakuraTenorMaker } = require(`./SakuraTenorMaker`);
+const Sakura_Static = require(`./Sakura_Static`);
 const _𝔏𝔞𝔟_ = require(`./_𝔏𝔞𝔟_`);
 const ffmpeg = require(`fluent-ffmpeg`);
 const cleanRF = require(`./cleanRF`);
