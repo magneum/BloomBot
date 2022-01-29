@@ -4,73 +4,73 @@
 `|🍹|`;
 `|🍹|`;
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-require(`./konfs`);
-const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
-const UsersSakura = require(`../Sakura🍃Goose/experience`);
-const LinkList = require(`../Sakura🍃Goose/antilink`);
-const Economy = require(`../Sakura🍃Goose/economy`);
-const Sakura_Buttons = require(`./Sakura_Buttons`);
-const Sakura_Static = require(`./Sakura_Static`);
-const ֆǟӄʊʀǟֆʏռօք = require(`./ֆǟӄʊʀǟᴢᴇɴ`);
-const moment = require(`moment-timezone`);
-const PostDataBase = require(`./postDb`);
-const speed = require(`performance-now`);
-const { Tǟɮʟɛɨȶ } = require(`../Tǟɮʟɛɨȶ`);
-const ֆǟӄʊʀǟǟքք = require(`./helper`);
-const welbuts = require(`./welbuts`);
-const BanList = require(`./BanList`);
-const cleanRF = require(`./cleanRF`);
-const fetch = require(`node-fetch`);
-const postDb = require(`./postDb`);
-const _𝔏𝔞𝔟_ = require(`./_𝔏𝔞𝔟_`);
-const ꜰᴜᴄᴋ = require(`./oShit`);
-const Kolor = require(`chalk`);
-let Timestamp = speed();
-const Pong = (speed() - Timestamp) * 60;
-const Ping = Pong.toFixed(4);
-const date = require(`date-and-time`);
-const now = new Date();
-date.format(now, `ddd, MMM DD YYYY`);
-const pattern = date.compile(`ddd, MMM DD YYYY`);
-const Clock = date.format(now, pattern);
-const vers = require(`../package.json`);
-const ֆǟӄʊʀǟsql = _𝔏𝔞𝔟_.POSTQL;
-var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
-var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
-const fs = require(`fs`);
-const time2 = moment().tz(`Asia/Kolkata`).format(`HH:mm:ss`);
-const { registerFont } = require(`canvas`);
-registerFont(`./Sakura🛰️Server/LobsterTwo-Bold.ttf`, {
-  family: `LobsterTwo-Bold`,
-});
-registerFont(`./Sakura🛰️Server/SlouchybrushRegular-eZnEB.ttf`, {
-  family: `SlouchybrushRegular`,
-});
-registerFont(`./Sakura🛰️Server/TheHeartOfEverythingDemo-KRdD.ttf`, {
-  family: `TheHeartOfEverythingDemo`,
-});
-var Canvas = require(`canvas`);
-if (time2 < `24:59:00`) {
-  var Timers = `𝐍𝐢𝐠𝐡𝐭😴`;
-}
-if (time2 < `19:00:00`) {
-  var Timers = `𝐄𝐯𝐞𝐧𝐢𝐧𝐠🌞`;
-}
-if (time2 < `18:00:00`) {
-  var Timers = `𝐀𝐟𝐭𝐞𝐫𝐧𝐨𝐨𝐧🌄`;
-}
-if (time2 < `15:00:00`) {
-  var Timers = `𝐀𝐟𝐭𝐞𝐫𝐧𝐨𝐨𝐧☀️`;
-}
-if (time2 < `11:00:00`) {
-  var Timers = `𝐌𝐨𝐫𝐧𝐢𝐧𝐠🌅`;
-}
-if (time2 < `05:00:00`) {
-  var Timers = `𝐍𝐢𝐠𝐡𝐭💤`;
-}
-const version = vers.vers;
-`|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
 try {
+  require(`./konfs`);
+  const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
+  const UsersSakura = require(`../Sakura🍃Goose/experience`);
+  const LinkList = require(`../Sakura🍃Goose/antilink`);
+  const Economy = require(`../Sakura🍃Goose/economy`);
+  const Sakura_Buttons = require(`./Sakura_Buttons`);
+  const Sakura_Static = require(`./Sakura_Static`);
+  const ֆǟӄʊʀǟֆʏռօք = require(`./ֆǟӄʊʀǟᴢᴇɴ`);
+  const moment = require(`moment-timezone`);
+  const PostDataBase = require(`./postDb`);
+  const speed = require(`performance-now`);
+  const { Tǟɮʟɛɨȶ } = require(`../Tǟɮʟɛɨȶ`);
+  const ֆǟӄʊʀǟǟքք = require(`./helper`);
+  const welbuts = require(`./welbuts`);
+  const BanList = require(`./BanList`);
+  const cleanRF = require(`./cleanRF`);
+  const fetch = require(`node-fetch`);
+  const postDb = require(`./postDb`);
+  const _𝔏𝔞𝔟_ = require(`./_𝔏𝔞𝔟_`);
+  const ꜰᴜᴄᴋ = require(`./oShit`);
+  const Kolor = require(`chalk`);
+  let Timestamp = speed();
+  const Pong = (speed() - Timestamp) * 60;
+  const Ping = Pong.toFixed(4);
+  const date = require(`date-and-time`);
+  const now = new Date();
+  date.format(now, `ddd, MMM DD YYYY`);
+  const pattern = date.compile(`ddd, MMM DD YYYY`);
+  const Clock = date.format(now, pattern);
+  const vers = require(`../package.json`);
+  const ֆǟӄʊʀǟsql = _𝔏𝔞𝔟_.POSTQL;
+  var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
+  var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
+  const fs = require(`fs`);
+  const time2 = moment().tz(`Asia/Kolkata`).format(`HH:mm:ss`);
+  const { registerFont } = require(`canvas`);
+  registerFont(`./Sakura🛰️Server/LobsterTwo-Bold.ttf`, {
+    family: `LobsterTwo-Bold`,
+  });
+  registerFont(`./Sakura🛰️Server/SlouchybrushRegular-eZnEB.ttf`, {
+    family: `SlouchybrushRegular`,
+  });
+  registerFont(`./Sakura🛰️Server/TheHeartOfEverythingDemo-KRdD.ttf`, {
+    family: `TheHeartOfEverythingDemo`,
+  });
+  var Canvas = require(`canvas`);
+  if (time2 < `24:59:00`) {
+    var Timers = `𝐍𝐢𝐠𝐡𝐭😴`;
+  }
+  if (time2 < `19:00:00`) {
+    var Timers = `𝐄𝐯𝐞𝐧𝐢𝐧𝐠🌞`;
+  }
+  if (time2 < `18:00:00`) {
+    var Timers = `𝐀𝐟𝐭𝐞𝐫𝐧𝐨𝐨𝐧🌄`;
+  }
+  if (time2 < `15:00:00`) {
+    var Timers = `𝐀𝐟𝐭𝐞𝐫𝐧𝐨𝐨𝐧☀️`;
+  }
+  if (time2 < `11:00:00`) {
+    var Timers = `𝐌𝐨𝐫𝐧𝐢𝐧𝐠🌅`;
+  }
+  if (time2 < `05:00:00`) {
+    var Timers = `𝐍𝐢𝐠𝐡𝐭💤`;
+  }
+  const version = vers.vers;
+  `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
   var ӄʀǟӄɨռʐ = ֆǟӄʊʀǟֆʏռօք.WhatsApp;
   async function ֆǟӄʊʀǟ() {
     var ꜱɪᴛʀᴀᴘ = new Map();
@@ -740,6 +740,7 @@ ${update.desc}`,
       }
     });
   }
+  module.exports = { ֆǟӄʊʀǟ, ӄʀǟӄɨռʐ };
 } catch (Error) {
   console.log(Error);
   var child = require(`child_process`).exec(`npm i --force`);
@@ -753,7 +754,6 @@ ${update.desc}`,
     });
   });
 }
-module.exports = { ֆǟӄʊʀǟ, ӄʀǟӄɨռʐ };
 `|🍹|`;
 `|🍹|`;
 `|🍹|======================================================================================================⬡  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™`;
