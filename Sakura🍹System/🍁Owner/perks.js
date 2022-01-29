@@ -64,7 +64,6 @@ module.exports = {
 ║
 ║- 𝗥𝘂𝗻𝗻𝗶𝗻𝗴 𝘂𝗻𝗱𝗲𝗿 𝗽𝗼𝗿𝘁𝗮𝗹: _kzenKraby ${vers.vers}apb_
 ║- 𝗪𝗮𝗶𝘁 𝗧𝗶𝗺𝗲 𝗶𝘀 𝗻𝗼𝘄: _5seconds_
-║- 𝗠𝗼𝗻𝗲𝘆 𝗚𝗶𝗳𝘁𝗲𝗱: 20k _(don't forget to buy Bronze Badge)_
 ║- 𝗚𝗿𝗼𝘂𝗽𝘀 + 𝗣𝗿𝗶𝘃𝗮𝘁𝗲 𝗨𝘀𝗮𝗴𝗲: _On_
 ║- 𝗔𝘂𝘁𝗼-𝗚𝗲𝘁 𝗕𝘂𝗴𝗿𝗲𝗽𝗼𝗿𝘁𝘀: _Make Sure to inform to Devs_
 ║- _Allowed to be a contributer in sakura Krakinz branch_
