@@ -19,7 +19,13 @@ const Clock = date.format(now, pattern);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 `⬡🍹⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-const Sakura_GIF_Static = async (ӄʀǟӄɨռʐ, mozart, ֆǟӄʊʀǟ, MainText, MediaUrl) => {
+const Sakura_GIF_Static = async (
+  ӄʀǟӄɨռʐ,
+  mozart,
+  ֆǟӄʊʀǟ,
+  MainText,
+  MediaUrl
+) => {
   const defaultnm = ֆǟӄʊʀǟ.commandName;
   const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
   if (ֆǟӄʊʀǟ.isReply) {
@@ -32,6 +38,7 @@ const Sakura_GIF_Static = async (ӄʀǟӄɨռʐ, mozart, ֆǟӄʊʀǟ, MainText,
         mimetype: `video/gif`,
         quoted: mozart,
         caption: MainText,
+        footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 • 𝐄𝐧𝐠𝐢𝐧𝐞: kryozen${vers.vers} ⏋\n⎿ ${Clock} • ${Ping}ms ⏋`,
         contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ, Receiver] },
       })
       .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart));
@@ -43,6 +50,7 @@ const Sakura_GIF_Static = async (ӄʀǟӄɨռʐ, mozart, ֆǟӄʊʀǟ, MainText,
         mimetype: `video/gif`,
         quoted: mozart,
         caption: MainText,
+        footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 • 𝐄𝐧𝐠𝐢𝐧𝐞: kryozen${vers.vers} ⏋\n⎿ ${Clock} • ${Ping}ms ⏋`,
         contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
       })
       .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart));
