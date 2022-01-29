@@ -14,8 +14,8 @@ exports.FFmpegAudio = async (ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart, Found, userBa
     console.log(Found);
     var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
     const defaultnm = ֆǟӄʊʀǟ.commandName;
-    var Stream = "./Sakura🗑️Temp/" + Date.now();
-    var Stream2 = "./Sakura🗑️Temp/" + Date.now() + ".mp3";
+    var Stream = Date.now() + աɦօֆɛռȶɦǟȶ.toString();
+    var Stream2 = Date.now() + աɦօֆɛռȶɦǟȶ.toString() + ".mp3";
     var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
     const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
     `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
@@ -41,107 +41,110 @@ exports.FFmpegAudio = async (ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart, Found, userBa
       Found.thumbnail
     );
     `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-    try {
-      YouTube_Music(Found.url).then((res) => {
-        const { dl_link, thumb, title, filesizeF, filesize } = res;
-        TinyURL.shorten(dl_link).then(
-          async function (DirectFile) {
-            await FFmpegProc.addInput(DirectFile)
-              .output(Stream)
-              .format("mp3")
-              .on(`progress`, (p) => {
-                Readline.cursorTo(process.stdout, 0);
-                process.stdout.write(`💯𝐏𝐫𝐨𝐠𝐫𝐞𝐬𝐬: ${p.targetSize}kb`);
-              })
-              .on("error", async (Error) => {
-                console.log(`⬡═══════════════════| 🔺𝐅𝐅𝐦𝐩𝐞𝐠 𝐄𝐫𝐫𝐨𝐫: ` + Error);
-                userBadge.Limits = userBadge.Limits + 1;
-                await userBadge
-                  .save()
-                  .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart));
-                return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart);
-              })
-              .on("end", async () => {
-                console.log(
-                  `\n⬡═══════════════════| 🥂𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐅𝐢𝐧𝐢𝐬𝐞𝐝 |═══════════════════⬡`
-                );
-                await ӄʀǟӄɨռʐ
-                  .sendMessage(
-                    ֆǟӄʊʀǟ.chatId,
-                    fs.readFileSync(Stream),
-                    MessageType.audio,
-                    {
-                      quoted: mozart,
-                      mimetype: "audio/mp4",
-                    }
-                  )
-                  .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart));
-                await cleanRF.cleanRF(Stream);
-              });
-            FFmpegProc.run();
-          },
-          async function (Error) {
-            console.log(`⬡═══════════════════| 🐞𝐄𝐫𝐫𝐨𝐫: ` + Error);
-            userBadge.Limits = userBadge.Limits + 1;
-            await userBadge
-              .save()
-              .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart));
-            return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart);
-          }
-        );
-      });
-      `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-    } catch (Error) {
-      console.log(Error);
-      YouTube_Music(Found.url).then((res) => {
-        const { dl_link, thumb, title, filesizeF, filesize } = res;
-        TinyURL.shorten(dl_link).then(
-          async function (DirectFile) {
-            require(`child_process`).exec(
-              `ffmpeg -i "${DirectFile}" "${Stream2}"`,
-              async (Error) => {
-                if (Error) {
-                  console.log(
-                    `⬡═══════════════════| 🔺𝐅𝐅𝐦𝐩𝐞𝐠 𝐄𝐫𝐫𝐨𝐫🔺 |═══════════════════⬡` +
-                      Error
-                  );
-                  userBadge.Limits = userBadge.Limits + 1;
-                  await userBadge
-                    .save()
-                    .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart));
-                  return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart);
-                } else {
-                  console.log(
-                    `⬡═══════════════════| 🥂𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐅𝐢𝐧𝐢𝐬𝐞𝐝🥂 |═══════════════════⬡`
-                  );
-                  console.log("FileName: " + Stream2);
-                  await ӄʀǟӄɨռʐ
-                    .sendMessage(
-                      ֆǟӄʊʀǟ.chatId,
-                      fs.readFileSync(Stream2),
-                      MessageType.audio,
-                      {
-                        quoted: mozart,
-                        mimetype: "audio/mp4",
-                      }
-                    )
-                    .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart));
-                  await cleanRF.cleanRF(Stream2);
-                }
-              }
-            );
-          },
-          async function (Error) {
-            console.log(`⬡═══════════════════| 🐞𝐄𝐫𝐫𝐨𝐫: ` + Error);
-            userBadge.Limits = userBadge.Limits + 1;
-            await userBadge
-              .save()
-              .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart));
-            return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart);
-          }
-        );
-      });
-    }
+    YouTube_Music(Found.url).then((res) => {
+      const { dl_link, thumb, title, filesizeF, filesize } = res;
+      TinyURL.shorten(dl_link).then(
+        async function (DirectFile) {
+          await FFmpegProc.addInput(DirectFile)
+            .output(Stream)
+            .format("mp3")
+            // .on(`progress`, (p) => {
+            //   Readline.cursorTo(process.stdout, 0);
+            //   process.stdout.write(`💯𝐏𝐫𝐨𝐠𝐫𝐞𝐬𝐬: ${p.targetSize}kb`);
+            // })
+            .on("error", async (Error) => {
+              console.log(`⬡═══════════════════| 🔺𝐅𝐅𝐦𝐩𝐞𝐠 𝐄𝐫𝐫𝐨𝐫: ` + Error);
+              userBadge.Limits = userBadge.Limits + 1;
+              await userBadge
+                .save()
+                .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart));
+              return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart);
+            })
+            .on("end", async () => {
+              console.log(
+                `\n⬡═══════════════════| 🥂𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐅𝐢𝐧𝐢𝐬𝐞𝐝 |═══════════════════⬡`
+              );
+              await ӄʀǟӄɨռʐ
+                .sendMessage(
+                  ֆǟӄʊʀǟ.chatId,
+                  fs.readFileSync(Stream),
+                  MessageType.audio,
+                  {
+                    quoted: mozart,
+                    mimetype: "audio/mp4",
+                  }
+                )
+                .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart));
+              await cleanRF.cleanRF(Stream);
+            });
+          FFmpegProc.run();
+        },
+        async function (Error) {
+          console.log(`⬡═══════════════════| 🐞𝐄𝐫𝐫𝐨𝐫: ` + Error);
+          userBadge.Limits = userBadge.Limits + 1;
+          await userBadge
+            .save()
+            .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart));
+          return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart);
+        }
+      );
+    });
+    `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+    // } catch (Error) {
+    //   console.log(Error);
+    //   YouTube_Music(Found.url).then((res) => {
+    //     const { dl_link, thumb, title, filesizeF, filesize } = res;
+    //     TinyURL.shorten(dl_link).then(
+    //       async function (DirectFile) {
+    //         require(`child_process`).exec(
+    //           `ffmpeg -i "${DirectFile}" "${Stream2}"`,
+    //           async (Error) => {
+    //             if (Error) {
+    //               console.log(
+    //                 `⬡═══════════════════| 🔺𝐅𝐅𝐦𝐩𝐞𝐠 𝐄𝐫𝐫𝐨𝐫🔺 |═══════════════════⬡` +
+    //                   Error
+    //               );
+    //               userBadge.Limits = userBadge.Limits + 1;
+    //               await userBadge
+    //                 .save()
+    //                 .catch((Error) =>
+    //                   ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart)
+    //                 );
+    //               return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart);
+    //             } else {
+    //               console.log(
+    //                 `⬡═══════════════════| 🥂𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐅𝐢𝐧𝐢𝐬𝐞𝐝🥂 |═══════════════════⬡`
+    //               );
+    //               console.log("FileName: " + Stream2);
+    //               await ӄʀǟӄɨռʐ
+    //                 .sendMessage(
+    //                   ֆǟӄʊʀǟ.chatId,
+    //                   fs.readFileSync(Stream2),
+    //                   MessageType.audio,
+    //                   {
+    //                     quoted: mozart,
+    //                     mimetype: "audio/mp4",
+    //                   }
+    //                 )
+    //                 .catch((Error) =>
+    //                   ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart)
+    //                 );
+    //               await cleanRF.cleanRF(Stream2);
+    //             }
+    //           }
+    //         );
+    //       },
+    //       async function (Error) {
+    //         console.log(`⬡═══════════════════| 🐞𝐄𝐫𝐫𝐨𝐫: ` + Error);
+    //         userBadge.Limits = userBadge.Limits + 1;
+    //         await userBadge
+    //           .save()
+    //           .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart));
+    //         return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart);
+    //       }
+    //     );
+    //   });
+    // }
   } catch (Error) {
     console.log(`⬡═══════════════════| 🐞𝐄𝐫𝐫𝐨𝐫: ` + Error);
     userBadge.Limits = userBadge.Limits + 1;
