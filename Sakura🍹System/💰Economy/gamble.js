@@ -156,7 +156,7 @@ module.exports = {
                     ID: աɦօֆɛռȶɦǟȶ,
                     serverID: ֆǟӄʊʀǟ.chatId,
                     Gambledone: 0,
-                    Gambletimeout: 600000,
+                    Gambletimeout: 360000,
                   });
                   await newUser
                     .save()
