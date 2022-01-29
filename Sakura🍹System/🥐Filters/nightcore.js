@@ -49,18 +49,18 @@ module.exports = {
             await newUser
               .save()
               .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart));
-                  return Sakura_Buttons.MIB(
-                    ӄʀǟӄɨռʐ,
-                    mozart,
-                    ֆǟӄʊʀǟ,
-                    `*🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},*
+            return Sakura_Buttons.MIB(
+              ӄʀǟӄɨռʐ,
+              mozart,
+              ֆǟӄʊʀǟ,
+              `*🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},*
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}  
 ║🤖 *User Added To Database For First Time!*
 ║🦋 _Try ${ᴋᴇɪ}${defaultnm} Again!_
 ╚════════════╝`,
-                    `./Sakura☣️Reactor/Sakura_Mongo.png`
-                  );
+              `./Sakura☣️Reactor/Sakura_Mongo.png`
+            );
           } else {
             `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
             console.log(userBadge);
@@ -127,11 +127,25 @@ module.exports = {
           }
           `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
           if (ֆǟӄʊʀǟ.isReplyAudio) {
+            Sakura_Buttons.MIB(
+              ӄʀǟӄɨռʐ,
+              mozart,
+              ֆǟӄʊʀǟ,
+              `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
+
+╔════◇🌿𝗣𝗹𝗲𝗮𝘀𝗲 𝘄𝗮𝗶𝘁!
+║⭕ 𝗙𝗶𝗹𝗲 𝗧𝘆𝗽𝗲: _${newScpt} Audio-Filter_
+║⏰ 𝗪𝗮𝗶𝘁 𝗧𝗶𝗺𝗲: _Depends on Length of file._
+╚════════════╝`,
+              "./Sakura☣️Reactor/Sakura_Ffmpeg.png"
+            );
+            `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
             var FILEOBJECT = {
               message:
                 mozart.message.extendedTextMessage.contextInfo.quotedMessage,
             };
-            var FILEID = mozart.message.extendedTextMessage.contextInfo.stanzaId;
+            var FILEID =
+              mozart.message.extendedTextMessage.contextInfo.stanzaId;
             console.log(FILEOBJECT);
             await ӄʀǟӄɨռʐ.downloadAndSaveMediaMessage(FILEOBJECT, `${FILEID}`);
             var Convert_From = `${FILEID}.mp4`;
@@ -144,18 +158,11 @@ module.exports = {
                   userBadge.Limits = userBadge.Limits + 1;
                   await userBadge
                     .save()
-                    .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart));
-                  return Sakura_Buttons.MTB(
-                    ӄʀǟӄɨռʐ,
-                    mozart,
-                    ֆǟӄʊʀǟ,
-                    `@${աɦօֆɛռȶɦǟȶռʊʍ} 🤙🏽‍𝐇𝐞𝐥𝐥𝐨,
-
-╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-║🤦🏻‍♀️ 𝐎𝐩𝐩𝐬𝐢𝐞: _Try Again Later._
-║🐞 𝗕𝘂𝗴: _Api Timeout._
-╚════════════╝`
-                  );
+                    .catch((Error) =>
+                      ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart)
+                    );
+                  ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart);
+                  return;
                 }
                 await ӄʀǟӄɨռʐ.sendMessage(
                   ֆǟӄʊʀǟ.chatId,
@@ -166,7 +173,7 @@ module.exports = {
                     quoted: mozart,
                   }
                 );
-                cleanRF.cleanRF(Convert_To);
+                await cleanRF.cleanRF(Convert_To);
               }
             );
             `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
