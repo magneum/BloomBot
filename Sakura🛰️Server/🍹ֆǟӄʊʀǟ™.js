@@ -288,7 +288,7 @@ MessageType.buttonsMessage
 );
 Welcome.findOne(
 {
-ID: GroupID,
+serverID: GroupID,
 },
 async (Error, userWel) => {
 if (Error) console.log(Error);

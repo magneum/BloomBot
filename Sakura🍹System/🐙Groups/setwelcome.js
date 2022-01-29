@@ -66,7 +66,7 @@ module.exports = {
       }
       Welcome.findOne(
         {
-          ID: ֆǟӄʊʀǟ.chatID,
+          serverID: ֆǟӄʊʀǟ.chatID,
         },
         async (Error, userWel) => {
           if (Error) console.log(Error);
