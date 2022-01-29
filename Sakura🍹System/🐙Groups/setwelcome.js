@@ -7,7 +7,7 @@
 const Sakura_Buttons = require(`../../Sakura🛰️Server/Sakura_Buttons`);
 const Sakura_Static = require(`../../Sakura🛰️Server/Sakura_Static`);
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
-const Welcome = require(`../../Sakura🍃Goose/welcome`);
+const Welcome = require(`../../Sakura🍃Goose/setwelcome`);
 const _𝔏𝔞𝔟_ = require(`../../Sakura🛰️Server/_𝔏𝔞𝔟_`);
 const ꜰᴜᴄᴋ = require(`../../Sakura🛰️Server/oShit`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
@@ -66,13 +66,13 @@ module.exports = {
       }
       Welcome.findOne(
         {
-          ID: ֆǟӄʊʀǟ.chatID,
+          ID: ֆǟӄʊʀǟ.chatId,
         },
         async (Error, userWel) => {
           if (Error) console.log(Error);
           if (!userWel) {
             var newServer = new Welcome({
-              ID: ֆǟӄʊʀǟ.chatID,
+              ID: ֆǟӄʊʀǟ.chatId,
               message: Needs.join(" "),
             });
             await newServer

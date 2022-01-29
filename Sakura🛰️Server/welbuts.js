@@ -4,8 +4,8 @@
 `|🍹|`;
 `|🍹|`;
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
+const Welcome = require(`../Sakura🍃Goose/setwelcome`);
 const Downloader = require(`nodejs-file-downloader`);
-const Welcome = require(`../Sakura🍃Goose/welcome`);
 const _𝔏𝔞𝔟_ = require(`./_𝔏𝔞𝔟_`);
 require(`python-format-js`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
@@ -27,9 +27,9 @@ var ᴛᴡᴇʟ = [
   `just joined. Everyone,look busy!`,
   `just joined!`,
   `joined the party!`,
-  `welcome, we were expecting you to join!`,
-  `welcome, we hope you bought pizza for us!`,
-  `welcome, leave your weapons by the door!`,
+  `we were expecting you to join!`,
+  `we hope you bought pizza for us!`,
+  `leave your weapons by the door!`,
   `Swooosh! Just landed.`,
   `just joined. Hide your bananas!`,
   `just joined. Seems OP, please nerf!`,
