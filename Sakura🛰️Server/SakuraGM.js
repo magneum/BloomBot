@@ -27,8 +27,8 @@ date.format(now, `ddd, MMM DD YYYY`);
 const pattern = date.compile(`ddd, MMM DD YYYY`);
 const Clock = date.format(now, pattern);
 `⬡🍹⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-exports.SakuraGM = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ) => {
-  var SakuraGMid = chat.key.id;
+exports.SakuraGM = async (ӄʀǟӄɨռʐ, mozart, ֆǟӄʊʀǟ) => {
+  var SakuraGMid = mozart.key.id;
   var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
   var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
   const defaultnm = ֆǟӄʊʀǟ.commandName;
@@ -36,9 +36,9 @@ exports.SakuraGM = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ) => {
   if (ֆǟӄʊʀǟ.isReply) {
     var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
     var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
-    var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
+    var Receiver = mozart.message.extendedTextMessage.contextInfo.participant;
     var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
-    var SakuraGMid = chat.message.extendedTextMessage.contextInfo.stanzaId;
+    var SakuraGMid = mozart.message.extendedTextMessage.contextInfo.stanzaId;
   }
   const link = SakuraTenorMaker(FinalName.toLowerCase());
   `⬡🍹⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
@@ -79,7 +79,7 @@ exports.SakuraGM = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ) => {
               MessageType.video,
               {
                 contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ, Receiver] },
-                quoted: chat,
+                quoted: mozart,
                 mimetype: `video/gif`,
                 caption: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 • 𝐄𝐧𝐠𝐢𝐧𝐞: kryozen${vers.vers} ⏋\n⎿ ${Clock} • ${Ping}ms ⏋ 
 
@@ -130,7 +130,7 @@ exports.SakuraGM = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ) => {
               MessageType.video,
               {
                 contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
-                quoted: chat,
+                quoted: mozart,
                 mimetype: `video/gif`,
                 caption: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 • 𝐄𝐧𝐠𝐢𝐧𝐞: kryozen${vers.vers} ⏋\n⎿ ${Clock} • ${Ping}ms ⏋ 
 
@@ -145,7 +145,7 @@ exports.SakuraGM = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ) => {
                 `${__dirname}/${FinalName}_${SakuraGMid}.mp4`
               )
             )
-            .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+            .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart));
         })
         .on(`error`, async (Error) => {
           console.log(Error);

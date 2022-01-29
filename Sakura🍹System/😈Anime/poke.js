@@ -24,14 +24,14 @@ var newScpt = str.slice(0, -3).toLowerCase();
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
 module.exports = {
   name: newScpt,
-  async handle(ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
+  async handle(ӄʀǟӄɨռʐ, mozart, ֆǟӄʊʀǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
     try {
       var Raw = await anime.poke();
       const defaultnm = ֆǟӄʊʀǟ.commandName;
       const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
       `⬡  ⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
       if (ֆǟӄʊʀǟ.isReply) {
-        var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
+        var Receiver = mozart.message.extendedTextMessage.contextInfo.participant;
         var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
         var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
         var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
@@ -78,7 +78,7 @@ module.exports = {
       } catch (Error) {
         return Sakura_Buttons.MTB(
           ӄʀǟӄɨռʐ,
-          chat,
+          mozart,
           ֆǟӄʊʀǟ,
           `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚, @${աɦօֆɛռȶɦǟȶռʊʍ},
 
@@ -101,7 +101,7 @@ module.exports = {
           .on(`end`, async () => {
             await Sakura_Static.MGS(
               ӄʀǟӄɨռʐ,
-              chat,
+              mozart,
               ֆǟӄʊʀǟ,
               `
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
@@ -125,7 +125,7 @@ module.exports = {
           .on(`end`, async () => {
             await Sakura_Static.MGS(
               ӄʀǟӄɨռʐ,
-              chat,
+              mozart,
               ֆǟӄʊʀǟ,
               `
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
@@ -139,7 +139,7 @@ module.exports = {
       }
       `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
     } catch (Error) {
-      ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
+      ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart);
       return;
     }
   },

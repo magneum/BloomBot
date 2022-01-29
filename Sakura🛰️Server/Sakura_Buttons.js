@@ -20,11 +20,11 @@ const pattern = date.compile(`ddd, MMM DD YYYY`);
 const Clock = date.format(now, pattern);
 const vers = require(`../package.json`);
 `⬡🍹⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-const Sakura_Text_But = (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, MainText) => {
+const Sakura_Text_But = (ӄʀǟӄɨռʐ, mozart, ֆǟӄʊʀǟ, MainText) => {
   if (ֆǟӄʊʀǟ.isReply) {
     var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
     var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
-    var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
+    var Receiver = mozart.message.extendedTextMessage.contextInfo.participant;
     var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
     const buttonMessage = {
       contentText: MainText,
@@ -40,10 +40,10 @@ const Sakura_Text_But = (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, MainText) => {
     };
     ӄʀǟӄɨռʐ
       .sendMessage(ֆǟӄʊʀǟ.chatId, buttonMessage, MessageType.buttonsMessage, {
-        quoted: chat,
+        quoted: mozart,
         contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ, Receiver] },
       })
-      .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+      .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart));
   } else {
     var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
     var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
@@ -63,18 +63,18 @@ const Sakura_Text_But = (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, MainText) => {
     };
     ӄʀǟӄɨռʐ
       .sendMessage(ֆǟӄʊʀǟ.chatId, buttonMessage, MessageType.buttonsMessage, {
-        quoted: chat,
+        quoted: mozart,
         contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
       })
-      .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+      .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart));
   }
 };
 `⬡🍹⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-const Sakura_Image_But = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, MainText, MediaUrl) => {
+const Sakura_Image_But = async (ӄʀǟӄɨռʐ, mozart, ֆǟӄʊʀǟ, MainText, MediaUrl) => {
   if (ֆǟӄʊʀǟ.isReply) {
     var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
     var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
-    var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
+    var Receiver = mozart.message.extendedTextMessage.contextInfo.participant;
     var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
     const media = await ӄʀǟӄɨռʐ.prepareMessage(
       ֆǟӄʊʀǟ.chatId,
@@ -100,11 +100,11 @@ const Sakura_Image_But = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, MainText, Me
         },
         MessageType.buttonsMessage,
         {
-          quoted: chat,
+          quoted: mozart,
           contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ, Receiver] },
         }
       )
-      .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+      .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart));
   } else {
     var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
     var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
@@ -134,19 +134,19 @@ const Sakura_Image_But = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, MainText, Me
         },
         MessageType.buttonsMessage,
         {
-          quoted: chat,
+          quoted: mozart,
           contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
         }
       )
-      .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+      .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart));
   }
 };
 `⬡🍹⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-const Sakura_Video_But = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, MainText, MediaUrl) => {
+const Sakura_Video_But = async (ӄʀǟӄɨռʐ, mozart, ֆǟӄʊʀǟ, MainText, MediaUrl) => {
   if (ֆǟӄʊʀǟ.isReply) {
     var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
     var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
-    var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
+    var Receiver = mozart.message.extendedTextMessage.contextInfo.participant;
     var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
     const media = await ӄʀǟӄɨռʐ.prepareMessage(
       ֆǟӄʊʀǟ.chatId,
@@ -172,11 +172,11 @@ const Sakura_Video_But = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, MainText, Me
         },
         MessageType.buttonsMessage,
         {
-          quoted: chat,
+          quoted: mozart,
           contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
         }
       )
-      .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+      .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart));
   } else {
     var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
     var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
@@ -206,19 +206,19 @@ const Sakura_Video_But = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, MainText, Me
         },
         MessageType.buttonsMessage,
         {
-          quoted: chat,
+          quoted: mozart,
           contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ, Receiver] },
         }
       )
-      .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+      .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart));
   }
 };
 `⬡🍹⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-const Sakura_GIF_But = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, MainText, MediaUrl) => {
+const Sakura_GIF_But = async (ӄʀǟӄɨռʐ, mozart, ֆǟӄʊʀǟ, MainText, MediaUrl) => {
   if (ֆǟӄʊʀǟ.isReply) {
     var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
     var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
-    var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
+    var Receiver = mozart.message.extendedTextMessage.contextInfo.participant;
     var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
     const media = await ӄʀǟӄɨռʐ.prepareMessage(
       ֆǟӄʊʀǟ.chatId,
@@ -244,11 +244,11 @@ const Sakura_GIF_But = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, MainText, Medi
         },
         MessageType.buttonsMessage,
         {
-          quoted: chat,
+          quoted: mozart,
           contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ, Receiver] },
         }
       )
-      .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+      .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart));
   } else {
     var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
     var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
@@ -278,17 +278,17 @@ const Sakura_GIF_But = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, MainText, Medi
         },
         MessageType.buttonsMessage,
         {
-          quoted: chat,
+          quoted: mozart,
           contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
         }
       )
-      .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+      .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart));
   }
 };
 `⬡🍹⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
 const Sakura_VideoAudio_But = async (
   ӄʀǟӄɨռʐ,
-  chat,
+  mozart,
   ֆǟӄʊʀǟ,
   MainText,
   MediaUrl
@@ -296,7 +296,7 @@ const Sakura_VideoAudio_But = async (
   if (ֆǟӄʊʀǟ.isReply) {
     var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
     var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
-    var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
+    var Receiver = mozart.message.extendedTextMessage.contextInfo.participant;
     var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
   } else {
     var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
@@ -327,14 +327,14 @@ const Sakura_VideoAudio_But = async (
     .sendMessage(ֆǟӄʊʀǟ.chatId, buttonMessages, MessageType.buttonsMessage, {
       mimetype: Mimetype.mp4Audio,
 
-      quoted: chat,
+      quoted: mozart,
     })
-    .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+    .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart));
 };
 `⬡🍹⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
 const Sakura_Location_But = async (
   ӄʀǟӄɨռʐ,
-  chat,
+  mozart,
   ֆǟӄʊʀǟ,
   MainText,
   MediaUrl
@@ -342,7 +342,7 @@ const Sakura_Location_But = async (
   if (ֆǟӄʊʀǟ.isReply) {
     var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
     var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
-    var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
+    var Receiver = mozart.message.extendedTextMessage.contextInfo.participant;
     var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
   } else {
     var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
@@ -370,9 +370,9 @@ const Sakura_Location_But = async (
   };
   ӄʀǟӄɨռʐ
     .sendMessage(ֆǟӄʊʀǟ.chatId, buttonMessages, MessageType.buttonsMessage, {
-      quoted: chat,
+      quoted: mozart,
     })
-    .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+    .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart));
 };
 `⬡🍹⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
 module.exports = {

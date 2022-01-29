@@ -19,10 +19,10 @@ var newScpt = scriptName.slice(0, -3).toLowerCase();
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
 module.exports = {
   name: newScpt,
-  async handle(ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
+  async handle(ӄʀǟӄɨռʐ, mozart, ֆǟӄʊʀǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
     try {
       if (ֆǟӄʊʀǟ.isReply) {
-        var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
+        var Receiver = mozart.message.extendedTextMessage.contextInfo.participant;
         var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
         var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
         var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
@@ -50,7 +50,7 @@ module.exports = {
       if (!json) {
         return Sakura_Buttons.MTB(
           ӄʀǟӄɨռʐ,
-          chat,
+          mozart,
           ֆǟӄʊʀǟ,
           `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚
 
@@ -63,7 +63,7 @@ module.exports = {
       if (ֆǟӄʊʀǟ.isReply) {
         return Sakura_Buttons.MVB(
           ӄʀǟӄɨռʐ,
-          chat,
+          mozart,
           ֆǟӄʊʀǟ,
           `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚
 
@@ -76,26 +76,26 @@ module.exports = {
         );
       } else {
         `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-        const Type = Object.keys(chat.message)[0];
+        const Type = Object.keys(mozart.message)[0];
         const BeautyBody =
           Type === "listResponseMessage" &&
-          chat.message.listResponseMessage.title
-            ? chat.message.listResponseMessage.title
+          mozart.message.listResponseMessage.title
+            ? mozart.message.listResponseMessage.title
             : Type === "buttonsResponseMessage" &&
-              chat.message.buttonsResponseMessage.selectedButtonId
-            ? chat.message.buttonsResponseMessage.selectedButtonId
+              mozart.message.buttonsResponseMessage.selectedButtonId
+            ? mozart.message.buttonsResponseMessage.selectedButtonId
             : Type === "conversation" &&
-              chat.message.conversation.startsWith(ᴋᴇɪ)
-            ? chat.message.conversation
+              mozart.message.conversation.startsWith(ᴋᴇɪ)
+            ? mozart.message.conversation
             : Type == "imageMessage" &&
-              chat.message.imageMessage.caption.startsWith(ᴋᴇɪ)
-            ? chat.message.imageMessage.caption
+              mozart.message.imageMessage.caption.startsWith(ᴋᴇɪ)
+            ? mozart.message.imageMessage.caption
             : Type == "videoMessage" &&
-              chat.message.videoMessage.caption.startsWith(ᴋᴇɪ)
-            ? chat.message.videoMessage.caption
+              mozart.message.videoMessage.caption.startsWith(ᴋᴇɪ)
+            ? mozart.message.videoMessage.caption
             : Type == "extendedTextMessage" &&
-              chat.message.extendedTextMessage.text.startsWith(ᴋᴇɪ)
-            ? chat.message.extendedTextMessage.text
+              mozart.message.extendedTextMessage.text.startsWith(ᴋᴇɪ)
+            ? mozart.message.extendedTextMessage.text
             : "";
         `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
         var BeautyCheck = BeautyBody.slice(1);
@@ -138,15 +138,15 @@ module.exports = {
             },
             MessageType.buttonsMessage,
             {
-              quoted: chat,
+              quoted: mozart,
               contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ, MentionPerson] },
             }
           )
-          .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+          .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart));
       }
       `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
     } catch (Error) {
-      ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
+      ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart);
       return;
     }
   },

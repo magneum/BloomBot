@@ -22,67 +22,67 @@ const pattern = date.compile(`ddd, MMM DD YYYY`);
 const Clock = date.format(now, pattern);
 const fs = require(`fs`);
 var ᴛᴡᴇʟ = [
-`just joined the server!`,
-`just joined. Everyone,look busy!`,
-`just joined!`,
-`joined the party!`,
-`welcome, we were expecting you to join!`,
-`welcome, we hope you bought pizza for us!`,
-`welcome, leave your weapons by the door!`,
-`Swooosh! Just landed.`,
-`just joined. Hide your bananas!`,
-`just joined. Seems OP, please nerf!`,
-`just slid into the server!`,
-`has spawned in the server!`,
-`just showed up in the server!`,
+  `just joined the server!`,
+  `just joined. Everyone,look busy!`,
+  `just joined!`,
+  `joined the party!`,
+  `welcome, we were expecting you to join!`,
+  `welcome, we hope you bought pizza for us!`,
+  `welcome, leave your weapons by the door!`,
+  `Swooosh! Just landed.`,
+  `just joined. Hide your bananas!`,
+  `just joined. Seems OP, please nerf!`,
+  `just slid into the server!`,
+  `has spawned in the server!`,
+  `just showed up in the server!`,
 ];
 var Flower = [`💐`, `🌻`, `🌼`, `🌹`, `🌸`, `💮`];
 var People = [`👮`, `👳`, `🤱`, `🤰`, `💂`];
 `⬡🍹⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
 exports.welbuts = async (
-ӄʀǟӄɨռʐ,
-GroupID,
-GroupMemData,
-GroupMemG,
-GroupMemBio,
-MemNum
+  ӄʀǟӄɨռʐ,
+  GroupID,
+  GroupMemData,
+  GroupMemG,
+  GroupMemBio,
+  MemNum
 ) => {
-try {
-var ꜰᴇᴛᴄʜᴇᴅᴡᴇʟᴄᴏᴍᴇ = await postDb.getMessage(GroupID, `setwelcome`);
-const ᴡᴇʟᴄᴏᴍᴇʀᴛxᴛ = ᴛᴡᴇʟ[Math.floor(Math.random() * ᴛᴡᴇʟ.length)];
-const FlowerWel = Flower[Math.floor(Math.random() * Flower.length)];
-const PeopleWel = People[Math.floor(Math.random() * People.length)];
-`|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
-var ᴘᴘᴡᴇʟᴄᴏᴍᴇ = MemNum.substring(0, MemNum.length - 15);
-`|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
-try {
-𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄʀǟӄɨռʐ.getProfilePicture(`${MemNum.split(`@`)[0]}@c.us`);
-} catch {
-𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = "https://i.postimg.cc/gcw6vq3X/Npp.png";
-}
-`|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
-const downloader = await new Downloader({
-url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗,
-directory: `${__dirname}`,
-fileName: `${ᴘᴘᴡᴇʟᴄᴏᴍᴇ}_${FlowerWel}.png`,
-cloneFiles: false,
-});
-await downloader.download();
-let content = fs.readFileSync(`${__dirname}/${ᴘᴘᴡᴇʟᴄᴏᴍᴇ}_${FlowerWel}.png`);
-const media = await ӄʀǟӄɨռʐ.prepareMessage(
-GroupID,
-content,
-MessageType.image,
-{
-mimetype: Mimetype.png,
-}
-);
-`|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
-await ӄʀǟӄɨռʐ
-.sendMessage(
-GroupID,
-{
-contentText: `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 •@${ᴘᴘᴡᴇʟᴄᴏᴍᴇ} 
+  try {
+    var ꜰᴇᴛᴄʜᴇᴅᴡᴇʟᴄᴏᴍᴇ = await postDb.getMessage(GroupID, `setwelcome`);
+    const ᴡᴇʟᴄᴏᴍᴇʀᴛxᴛ = ᴛᴡᴇʟ[Math.floor(Math.random() * ᴛᴡᴇʟ.length)];
+    const FlowerWel = Flower[Math.floor(Math.random() * Flower.length)];
+    const PeopleWel = People[Math.floor(Math.random() * People.length)];
+    `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
+    var ᴘᴘᴡᴇʟᴄᴏᴍᴇ = MemNum.substring(0, MemNum.length - 15);
+    `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
+    try {
+      𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄʀǟӄɨռʐ.getProfilePicture(`${MemNum.split(`@`)[0]}@c.us`);
+    } catch {
+      𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = "https://i.postimg.cc/gcw6vq3X/Npp.png";
+    }
+    `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
+    const downloader = await new Downloader({
+      url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗,
+      directory: `${__dirname}`,
+      fileName: `${ᴘᴘᴡᴇʟᴄᴏᴍᴇ}_${FlowerWel}.png`,
+      cloneFiles: false,
+    });
+    await downloader.download();
+    let content = fs.readFileSync(`${__dirname}/${ᴘᴘᴡᴇʟᴄᴏᴍᴇ}_${FlowerWel}.png`);
+    const media = await ӄʀǟӄɨռʐ.prepareMessage(
+      GroupID,
+      content,
+      MessageType.image,
+      {
+        mimetype: Mimetype.png,
+      }
+    );
+    `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
+    await ӄʀǟӄɨռʐ
+      .sendMessage(
+        GroupID,
+        {
+          contentText: `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 •@${ᴘᴘᴡᴇʟᴄᴏᴍᴇ} 
 ${ᴡᴇʟᴄᴏᴍᴇʀᴛxᴛ}
 
 ╔════◇
@@ -92,42 +92,42 @@ ${ᴡᴇʟᴄᴏᴍᴇʀᴛxᴛ}
 ╚════════════╝
 
 ${ꜰᴇᴛᴄʜᴇᴅᴡᴇʟᴄᴏᴍᴇ.message}`,
-footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 • 𝐄𝐧𝐠𝐢𝐧𝐞: kryozen3 ⏋\n⎿ ${Clock} • ${Ping}ms ⏋`,
-buttons: [
-{
-buttonId: `${ᴋᴇɪ}help`,
-buttonText: { displayText: `${ᴋᴇɪ}help` },
-type: 1,
-},
-{
-buttonId: `${ᴋᴇɪ}menu`,
-buttonText: { displayText: `${ᴋᴇɪ}menu` },
-type: 1,
-},
-{
-buttonId: `${ᴋᴇɪ}repo`,
-buttonText: { displayText: `${ᴋᴇɪ}repo` },
-type: 1,
-},
-],
-headerType: 4,
-imageMessage: media.message.imageMessage,
-},
-MessageType.buttonsMessage,
-{
-contextInfo: { mentionedJid: [MemNum] },
-}
-)
-.then(cleanRF.cleanRF(`${__dirname}/${ᴘᴘᴡᴇʟᴄᴏᴍᴇ}_${FlowerWel}.png`))
-.catch((Error) => console.log(Error));
-`|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
-} catch (Error) {
-console.log(
-`⬡==========================⬡    🍹 ` +
-Error +
-`🍹    ⬡==========================⬡`
-);
-}
+          footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 • 𝐄𝐧𝐠𝐢𝐧𝐞: kryozen3 ⏋\n⎿ ${Clock} • ${Ping}ms ⏋`,
+          buttons: [
+            {
+              buttonId: `${ᴋᴇɪ}help`,
+              buttonText: { displayText: `${ᴋᴇɪ}help` },
+              type: 1,
+            },
+            {
+              buttonId: `${ᴋᴇɪ}menu`,
+              buttonText: { displayText: `${ᴋᴇɪ}menu` },
+              type: 1,
+            },
+            {
+              buttonId: `${ᴋᴇɪ}repo`,
+              buttonText: { displayText: `${ᴋᴇɪ}repo` },
+              type: 1,
+            },
+          ],
+          headerType: 4,
+          imageMessage: media.message.imageMessage,
+        },
+        MessageType.buttonsMessage,
+        {
+          contextInfo: { mentionedJid: [MemNum] },
+        }
+      )
+      .then(cleanRF.cleanRF(`${__dirname}/${ᴘᴘᴡᴇʟᴄᴏᴍᴇ}_${FlowerWel}.png`))
+      .catch((Error) => console.log(Error));
+    `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
+  } catch (Error) {
+    console.log(
+      `⬡==========================⬡    🍹 ` +
+        Error +
+        `🍹    ⬡==========================⬡`
+    );
+  }
 };
 `|🍹|`;
 `|🍹|`;
