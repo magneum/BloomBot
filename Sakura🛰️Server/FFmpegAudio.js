@@ -11,7 +11,7 @@ exports.FFmpegAudio = async (ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart, Found, userBa
     console.log(Found);
     var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
     const defaultnm = ֆǟӄʊʀǟ.commandName;
-    var Stream = Date.now() + աɦօֆɛռȶɦǟȶ.toString() + ".mp3";
+    var Stream = `${Date.now()}${աɦօֆɛռȶɦǟȶ.toString()}.mp3`;
     var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
     const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
     `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
@@ -60,7 +60,6 @@ exports.FFmpegAudio = async (ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart, Found, userBa
                 console.log(
                   `⬡═══════════════════| 🥂𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐅𝐢𝐧𝐢𝐬𝐞𝐝🥂 |═══════════════════⬡`
                 );
-                console.log("FileName: " + Stream);
                 await ӄʀǟӄɨռʐ
                   .sendMessage(
                     ֆǟӄʊʀǟ.chatId,

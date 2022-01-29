@@ -186,17 +186,14 @@ module.exports = {
               );
             }
             `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-            const { YouTube_Music } = require(`../../Sakura🛰️Server/youmaker`);
-            const TinyURL = require("tinyurl");
             Sakura_Buttons.MIB(
               ӄʀǟӄɨռʐ,
               mozart,
               ֆǟӄʊʀǟ,
               `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
-
-╔════◇🌿𝗣𝗹𝗲𝗮𝘀𝗲 𝘄𝗮𝗶𝘁!
-║⭕ 𝗙𝗶𝗹𝗲 𝗧𝘆𝗽𝗲: _Audio_
-║⏰ 𝗪𝗮𝗶𝘁 𝗧𝗶𝗺𝗲: _Depends on Length of file._
+╔════◇ 𝗣𝗹𝗲𝗮𝘀𝗲 𝘄𝗮𝗶𝘁!
+║⭕ 𝗙𝗶𝗹𝗲𝗧𝘆𝗽𝗲: _Audio_
+║⏰ 𝗪𝗮𝗶𝘁𝗧𝗶𝗺𝗲: _Depends on Length of file._
 ╚════════════╝
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
@@ -204,48 +201,73 @@ module.exports = {
 ║🙈 𝐕𝐢𝐞𝐰𝐬: ${Found.views}
 ║⏰ 𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧: ${Found.timestamp}
 ║✒️ 𝐀𝐮𝐭𝐡𝐨𝐫: ${Found.author.name}
-║🔗 𝐋𝐢𝐧𝐤: ${Found.url}
 ║📜 𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${Found.description}
+║🔗 𝐋𝐢𝐧𝐤: ${Found.url}
 ╚════════════╝`,
               Found.thumbnail
             );
             `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-            YouTube_Music(Found.url).then((res) => {
-              const { dl_link, thumb, title, filesizeF, filesize } = res;
-              TinyURL.shorten(dl_link).then((res) => {
-                const YouFile = Date.now() + աɦօֆɛռȶɦǟȶ.toString() + ".mp3";
-                ffmpeg(res)
-                  .save(YouFile)
-                  .on(`end`, async () => {
-                    console.log(`═════⬡|🥂𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐅𝐢𝐧𝐢𝐬𝐞𝐝: ` + YouFile);
-                    await ӄʀǟӄɨռʐ
-                      .sendMessage(
-                        ֆǟӄʊʀǟ.chatId,
-                        fs.readFileSync(YouFile),
-                        MessageType.audio,
-                        {
-                          quoted: mozart,
-                          mimetype: `audio/mp4`,
-                        }
-                      )
-                      .catch((Error) =>
-                        ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart)
-                      );
-                    await cleanRF.cleanRF(YouFile);
-                    return;
-                  })
-                  .on(`error`, async (Error) => {
-                    console.log(`═════⬡|🐞𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐄𝐫𝐫𝐨𝐫: ` + Error);
-                    userBadge.Limits = userBadge.Limits + 1;
-                    await userBadge
-                      .save()
-                      .catch((Error) =>
-                        ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart)
-                      );
-                    return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart);
-                  });
+            try {
+              const Link = Found.url;
+              const { id } = getVideoId(Link);
+              var YouFile = Date.now() + `_` + id + `_` + `.mp3`;
+              var YouStream = ytdl(Link, {
+                quality: `highestaudio`,
               });
-            });
+            } catch (Error) {
+              console.log(`═════⬡|⭕𝐘𝐭𝐝𝐥-𝐂𝐨𝐫𝐞 𝐄𝐫𝐫𝐨𝐫: ` + Error);
+              userBadge.Limits = userBadge.Limits + 1;
+              await userBadge
+                .save()
+                .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart));
+              return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart);
+            }
+            `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+            try {
+              ffmpeg(YouStream)
+                .audioBitrate(128)
+                .save(YouFile)
+                .on(`progress`, (p) => {
+                  readline.cursorTo(process.stdout, 0);
+                  process.stdout.write(`═════⬡|💯𝐏𝐫𝐨𝐠𝐫𝐞𝐬𝐬: ${p.targetSize}kb`);
+                })
+                .on(`end`, async () => {
+                  console.clear();
+                  console.log(`═════⬡|🥂𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐅𝐢𝐧𝐢𝐬𝐞𝐝: ` + YouFile);
+                  return await ӄʀǟӄɨռʐ
+                    .sendMessage(
+                      ֆǟӄʊʀǟ.chatId,
+                      fs.readFileSync(YouFile),
+                      MessageType.audio,
+                      {
+                        quoted: mozart,
+                        mimetype: `audio/mp4`,
+                      }
+                    )
+                    .then(cleanRF.cleanRF(YouFile))
+                    .catch((Error) =>
+                      ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart)
+                    );
+                })
+                .on(`error`, async (Error) => {
+                  console.log(`═════⬡|🐞𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐄𝐫𝐫𝐨𝐫: ` + Error);
+                  userBadge.Limits = userBadge.Limits + 1;
+                  await userBadge
+                    .save()
+                    .catch((Error) =>
+                      ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart)
+                    );
+                  return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart);
+                });
+            } catch (Error) {
+              console.log(`═════⬡|🔺𝐅𝐅𝐦𝐩𝐞𝐠 𝐄𝐫𝐫𝐨𝐫: ` + Error);
+              userBadge.Limits = userBadge.Limits + 1;
+              await userBadge
+                .save()
+                .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart));
+              return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart);
+            }
+            `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
           });
         }
       );

@@ -71,13 +71,13 @@ exports.welbuts = async (
         const downloader = await new Downloader({
           url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗,
           directory: `./`,
-          fileName: `${ᴡᴇʟᴄᴏᴍᴇʀᴛxᴛ}_${Date.now()}.png`,
+          fileName: `${ᴡᴇʟᴄᴏᴍᴇʀᴛxᴛ}_${Date.now().toString()}.png`,
           cloneFiles: false,
         });
         await downloader.download();
         const media = await ӄʀǟӄɨռʐ.prepareMessage(
           GroupID,
-          fs.readFileSync(`./${ᴡᴇʟᴄᴏᴍᴇʀᴛxᴛ}_${Date.now()}.png`),
+          fs.readFileSync(`./${ᴡᴇʟᴄᴏᴍᴇʀᴛxᴛ}_${Date.now().toString()}.png`),
           MessageType.image,
           {
             mimetype: Mimetype.png,
@@ -121,7 +121,7 @@ ${userWel.message}`,
             }
           )
           .catch((Error) => console.log(Error));
-        await cleanRF.cleanRF(`./${ᴡᴇʟᴄᴏᴍᴇʀᴛxᴛ}_${Date.now()}.png`);
+        await cleanRF.cleanRF(`./${ᴡᴇʟᴄᴏᴍᴇʀᴛxᴛ}_${Date.now().toString()}.png`);
         return;
       }
     );
