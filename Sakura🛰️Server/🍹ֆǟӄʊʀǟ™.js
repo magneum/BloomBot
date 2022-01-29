@@ -772,7 +772,7 @@ mozart,
 const gcDev1 = "120363039223842047@g.us";
 // const gcDev2 = "120363020792949649@g.us";
 const gMetadata = await ӄʀǟӄɨռʐ.groupMetadata(gcDev1);
-const gMetadata2 = await ӄʀǟӄɨռʐ.groupMetadata(gcDev2);
+// const gMetadata2 = await ӄʀǟӄɨռʐ.groupMetadata(gcDev2);
 let members = [];
 for (var i = 0; i < gMetadata.participants.length; i++) {
 members[i] = gMetadata.participants[i].jid;
