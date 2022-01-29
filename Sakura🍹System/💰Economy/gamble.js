@@ -122,7 +122,7 @@ module.exports = {
               fishdone: 0,
               fishtimeout: 1800000,
               workdone: 0,
-              worktimeout: 600000,
+              worktimeout: 900000,
             });
             await newUser
               .save()
@@ -156,7 +156,7 @@ module.exports = {
                     ID: աɦօֆɛռȶɦǟȶ,
                     serverID: ֆǟӄʊʀǟ.chatId,
                     Gambledone: 0,
-                    Gambletimeout: 900000,
+                    Gambletimeout: 600000,
                   });
                   await newUser
                     .save()
