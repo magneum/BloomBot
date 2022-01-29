@@ -92,6 +92,7 @@ module.exports = {
               𝕻𝕻𝖑𝖊𝖙𝖊𝖗
             );
           } else {
+            userWel.serverID = ֆǟӄʊʀǟ.chatID;
             userWel.message = Needs.join(" ");
             await userWel
               .save()
