@@ -14,6 +14,7 @@ var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 const vers = require(`../../package.json`);
 const ffmpeg = require(`fluent-ffmpeg`);
+const request = require("request");
 const anime = require(`anime-actions`);
 var path = require(`path`);
 const fs = require(`fs`);

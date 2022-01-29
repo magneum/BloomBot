@@ -15,6 +15,7 @@ var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 const vers = require(`../../package.json`);
 const ffmpeg = require(`fluent-ffmpeg`);
 const anime = require(`anime-actions`);
+const request = require("request");
 var path = require(`path`);
 const fs = require(`fs`);
 var scriptName = path.basename(__filename);
