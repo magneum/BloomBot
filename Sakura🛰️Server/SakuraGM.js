@@ -3,18 +3,16 @@
 `|🍹|======================================================================================================⬡  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™`;
 `|🍹|`;
 `|🍹|`;
+require(`python-format-js`);
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const { SakuraTenorMaker } = require(`./SakuraTenorMaker`);
 const _𝔏𝔞𝔟_ = require(`./_𝔏𝔞𝔟_`);
-const ℓιєηт = require(`./oShit`);
 const ffmpeg = require(`fluent-ffmpeg`);
 const cleanRF = require(`./cleanRF`);
-require(`python-format-js`);
 const ꜰᴜᴄᴋ = require(`./oShit`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 const Downloader = require(`nodejs-file-downloader`);
-const anime = require(`anime-actions`);
 const fs = require(`fs`);
 const speed = require(`performance-now`);
 let Timestamp = speed();
@@ -27,132 +25,133 @@ date.format(now, `ddd, MMM DD YYYY`);
 const pattern = date.compile(`ddd, MMM DD YYYY`);
 const Clock = date.format(now, pattern);
 `⬡🍹⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-exports.SakuraGM = async (ӄʀǟӄɨռʐ, mozart, ֆǟӄʊʀǟ) => {
-  var SakuraGMid = mozart.key.id;
-  var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
-  var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
-  const defaultnm = ֆǟӄʊʀǟ.commandName;
-  const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
-  if (ֆǟӄʊʀǟ.isReply) {
+exports.SakuraGM = async (ӄʀǟӄɨռʐ, mozart, ֆǟӄʊʀǟ, newScpt, Needs) => {
+  try {
+    var SakuraGMid = mozart.key.id;
     var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
     var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
-    var Receiver = mozart.message.extendedTextMessage.contextInfo.participant;
-    var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
-    var SakuraGMid = mozart.message.extendedTextMessage.contextInfo.stanzaId;
-  }
-  const link = SakuraTenorMaker(FinalName.toLowerCase());
-  `⬡🍹⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-  const jsoncool = JSON.parse(fs.readFileSync(`./Sakura🛰️Server/Coolist.json`));
-  await jsoncool.push(ֆǟӄʊʀǟ.sender);
-  fs.writeFileSync(`./Sakura🛰️Server/Coolist.json`, JSON.stringify(jsoncool));
-  console.log("ID Added " + ֆǟӄʊʀǟ.sender);
-  setTimeout(async (error) => {
-    if (error) console.log(error);
-    await jsoncool.splice(ֆǟӄʊʀǟ.sender);
-    fs.writeFileSync(`./Sakura🛰️Server/Coolist.json`, JSON.stringify(jsoncool));
-    console.log("ID Removed " + ֆǟӄʊʀǟ.sender);
-  }, 10000);
-  `⬡🍹⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-  if (ֆǟӄʊʀǟ.isReply) {
+    const defaultnm = ֆǟӄʊʀǟ.commandName;
+    const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
+    const link = SakuraTenorMaker(FinalName.toLowerCase());
+    `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+    const hold = require("./Hold");
+    hold.Hold(ֆǟӄʊʀǟ);
+    `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+    let FinalLink;
+    var AnimeLink = link;
+    const GotFile = `./${FinalName}${Date.now()}.gif`;
+    const GiveFile = `./${FinalName}${Date.now()}.mp4`;
+    FinalLink = AnimeLink;
+    console.log("═════⬡|First Try: " + FinalLink);
+    `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
     const downloader = await new Downloader({
-      url: link,
-      directory: `${__dirname}`,
-      fileName: `${FinalName}_${SakuraGMid}.gif`,
+      url: FinalLink,
+      directory: `./`,
+      fileName: GotFile,
       cloneFiles: false,
     });
     try {
       await downloader.download();
-      ffmpeg(`${__dirname}/${FinalName}_${SakuraGMid}.gif`)
+    } catch (Error) {
+      console.log(`═════⬡|🐞𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐄𝐫𝐫𝐨𝐫: ` + Error);
+      ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart);
+      return;
+    }
+    `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+    if (ֆǟӄʊʀǟ.isReply) {
+      var Receiver = mozart.message.extendedTextMessage.contextInfo.participant;
+      var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
+      var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
+      var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
+      ffmpeg(GotFile)
         .outputOptions([
           `-pix_fmt yuv420p`,
           `-c:v libx264`,
           `-movflags +faststart`,
           `-filter:v crop='floor(in_w/2)*2:floor(in_h/2)*2'`,
         ])
-        .save(`${__dirname}/${FinalName}_${SakuraGMid}.mp4`)
+        .save(GiveFile)
         .on(`end`, async () => {
-          console.log(`Finished`);
-          await ӄʀǟӄɨռʐ
-            .sendMessage(
-              ֆǟӄʊʀǟ.chatId,
-              fs.readFileSync(`${__dirname}/${FinalName}_${SakuraGMid}.mp4`),
-              MessageType.video,
-              {
-                contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ, Receiver] },
-                quoted: mozart,
-                mimetype: `video/gif`,
-                caption: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 • 𝐄𝐧𝐠𝐢𝐧𝐞: kryozen${vers.vers} ⏋\n⎿ ${Clock} • ${Ping}ms ⏋ 
-
+          await Sakura_Static.MGS(
+            ӄʀǟӄɨռʐ,
+            mozart,
+            ֆǟӄʊʀǟ,
+            `
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-║🍪 𝐅𝐫𝐨𝐦: @${աɦօֆɛռȶɦǟȶռʊʍ}
-║🍛 𝐓𝐨: @${քɛʀֆօռɢօȶռʊʍ}
+║🍕𝐅𝐫𝐨𝐦: @${աɦօֆɛռȶɦǟȶռʊʍ}
+║🌭𝐓𝐨: @${քɛʀֆօռɢօȶռʊʍ}
 ╚════════════╝`,
-              }
-            )
-            .then(
-              cleanRF.cleanRF(
-                `${__dirname}/${FinalName}_${SakuraGMid}.gif`,
-                `${__dirname}/${FinalName}_${SakuraGMid}.mp4`
-              )
-            );
-        })
-        .on(`Error`, async (Error) => {
-          console.log(Error);
+            GiveFile
+          );
+          await cleanRF.cleanRF(GiveFile, GotFile);
+          return;
         });
-    } catch (Error) {
-      console.log(Error);
-    }
-  }
-
-  if (!ֆǟӄʊʀǟ.isReply) {
-    const downloader = await new Downloader({
-      url: link,
-      directory: `${__dirname}`,
-      fileName: `${FinalName}_${SakuraGMid}.gif`,
-      cloneFiles: false,
-    });
-    try {
-      await downloader.download();
-      ffmpeg(`${__dirname}/${FinalName}_${SakuraGMid}.gif`)
+    } else {
+      ffmpeg(GotFile)
         .outputOptions([
           `-pix_fmt yuv420p`,
           `-c:v libx264`,
           `-movflags +faststart`,
           `-filter:v crop='floor(in_w/2)*2:floor(in_h/2)*2'`,
         ])
-        .save(`${__dirname}/${FinalName}_${SakuraGMid}.mp4`)
+        .save(GiveFile)
         .on(`end`, async () => {
-          console.log(`Finished`);
-          await ӄʀǟӄɨռʐ
-            .sendMessage(
-              ֆǟӄʊʀǟ.chatId,
-              fs.readFileSync(`${__dirname}/${FinalName}_${SakuraGMid}.mp4`),
-              MessageType.video,
-              {
-                contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
-                quoted: mozart,
-                mimetype: `video/gif`,
-                caption: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 • 𝐄𝐧𝐠𝐢𝐧𝐞: kryozen${vers.vers} ⏋\n⎿ ${Clock} • ${Ping}ms ⏋ 
+          var Check = ֆǟӄʊʀǟ.body.slice(1);
+          var Tag = Check.split(" ").join("");
+          var ToRm = ᴋᴇɪ + newScpt;
+          var Num = ToRm.length;
+          var Mention = Tag.substring(Num);
+          var MentionPerson = Mention + "@s.whatsapp.net";
+          if (!Needs[0]) {
+            await ӄʀǟӄɨռʐ
+              .sendMessage(
+                ֆǟӄʊʀǟ.chatId,
+                { url: GiveFile },
+                MessageType.video,
+                {
+                  mimetype: `video/gif`,
+                  quoted: mozart,
+                  caption: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 • 𝐄𝐧𝐠𝐢𝐧𝐞: kryozen${vers.vers} ⏋\n⎿ ${Clock} • ${Ping}ms ⏋
+
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-║🍪 𝐅𝐫𝐨𝐦: @${աɦօֆɛռȶɦǟȶռʊʍ}
+║🍕 𝐅𝐫𝐨𝐦: @${աɦօֆɛռȶɦǟȶռʊʍ}
+║🌭 𝐓𝐨: Themselves
 ╚════════════╝`,
-              }
-            )
-            .then(
-              cleanRF.cleanRF(
-                `${__dirname}/${FinalName}_${SakuraGMid}.gif`,
-                `${__dirname}/${FinalName}_${SakuraGMid}.mp4`
+                  contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
+                }
               )
-            )
-            .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart));
-        })
-        .on(`error`, async (Error) => {
-          console.log(Error);
+              .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart));
+            await cleanRF.cleanRF(GiveFile, GotFile);
+            return;
+          } else {
+            await ӄʀǟӄɨռʐ
+              .sendMessage(
+                ֆǟӄʊʀǟ.chatId,
+                { url: GiveFile },
+                MessageType.video,
+                {
+                  mimetype: `video/gif`,
+                  quoted: mozart,
+                  caption: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 • 𝐄𝐧𝐠𝐢𝐧𝐞: kryozen${vers.vers} ⏋\n⎿ ${Clock} • ${Ping}ms ⏋
+
+
+╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+║🍕 𝐅𝐫𝐨𝐦: @${աɦօֆɛռȶɦǟȶռʊʍ}
+║🌭 𝐓𝐨: @${Mention}
+╚════════════╝`,
+                  contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ, MentionPerson] },
+                }
+              )
+              .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart));
+            await cleanRF.cleanRF(GiveFile, GotFile);
+            return;
+          }
         });
-    } catch (Error) {
-      console.log(Error);
     }
+  } catch (Error) {
+    ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart);
+    console.log(Error);
   }
 };
 `|🍹|`;

@@ -15,7 +15,7 @@ module.exports = {
   name: newScpt,
   async handle(ӄʀǟӄɨռʐ, mozart, ֆǟӄʊʀǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
     try {
-      return SakuraGM(ӄʀǟӄɨռʐ, mozart, ֆǟӄʊʀǟ);
+      return SakuraGM(ӄʀǟӄɨռʐ, mozart, ֆǟӄʊʀǟ, newScpt, Needs);
     } catch (Error) {
       ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart);
       console.log(Error);
