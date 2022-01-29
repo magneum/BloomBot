@@ -314,7 +314,7 @@ console.log(Error);
 ӄʀǟӄɨռʐ.on(`chat-update`, async (chat) => {
 if (!chat.hasNewMessage) return;
 if (!chat.messages) return;
-let mozart = chat.messages.all()[0];
+mozart = chat.messages.all()[0];
 const sender = mozart.key.remoteJid;
 const groupMetadata = sender.endsWith(`@g.us`)
 ? await ӄʀǟӄɨռʐ.groupMetadata(mozart.key.remoteJid)
