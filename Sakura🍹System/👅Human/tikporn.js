@@ -11,7 +11,6 @@ const { porno } = require(`../../Sakura🛰️Server/scraper`);
 const cleanRF = require(`../../Sakura🛰️Server/cleanRF`);
 const ꜰᴜᴄᴋ = require(`../../Sakura🛰️Server/oShit`);
 const _𝔏𝔞𝔟_ = require(`../../Sakura🛰️Server/_𝔏𝔞𝔟_`);
-const vers = require(`../../package.json`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 const FFmpeg = require("fluent-ffmpeg");
 const Readline = require(`readline`);
