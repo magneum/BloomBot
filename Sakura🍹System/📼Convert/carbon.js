@@ -244,7 +244,11 @@ module.exports = {
                 ֆǟӄʊʀǟ,
                 `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ}, 
 
-❌𝗘𝗿𝗿𝗼𝗿: _Do note that theme names are  *case sensitive*_`,
+╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
+║❌𝗘𝗿𝗿𝗼𝗿: _Wrong Theme Name_
+║ *Do note that theme names are  case sensitive*
+║ _Type ${ᴋᴇɪ}${FinalName}_
+╚════════════╝`,
                 output
               );
             }
