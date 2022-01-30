@@ -34,8 +34,8 @@ module.exports = {
   async handle(ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
     try {
       var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
-      var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
       const defaultnm = ֆǟӄʊʀǟ.commandName;
+      var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
       const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
       `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
       const hold = require(`../../Sakura🛰️Server/Hold`);
@@ -100,30 +100,19 @@ module.exports = {
                   mimetype: Mimetype.jpeg,
                   contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
                   caption: `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ}
+                  ╔◇══════════════◇╗
+                  ┊ 𝐑𝐚𝐧𝐤𝐢𝐧𝐠📜𝐒𝐲𝐬𝐭𝐞𝐦
+                  ╚◇══════════════◇╝
 
-╔═══════📜𝐑𝐚𝐧𝐤 𝐂𝐚𝐫𝐝
-║🥂 𝗫𝗣: ${users.xp}
+╔════◇📜𝐑𝐚𝐧𝐤
+║🥂 𝗫𝗽: ${users.xp}
 ║🍩 𝗟𝗲𝘃𝗲𝗹: ${users.level}
-║🎪 𝐆𝐫𝐨𝐮𝐩: ${groupDataRank.subject}
+║🎪 𝗚𝗿𝗼𝘂𝗽: ${groupDataRank.subject}
 ╚════════════╝
 
 ╔════◇🌿
-║🎉The More You Talk, The More 𝐗𝐏+𝐂𝐨𝐢𝐧𝐬 You Gain. 
-║🎉You Can Spend The Coins in ${ᴋᴇɪ}shop!
-╚════════════╝
-
-╔═══════⭕𝐋𝐞𝐯𝐞𝐥𝐬
-║ *Level:* <5 | *Hardness:* 50%
-║ *Level:* <10 | *Hardness:* 100%
-║ *Level:* <20 | *Hardness:* 150%
-║ *Level:* <30 | *Hardness:* 200%
-║ *Level:* <40 | *Hardness:* 250%
-║ *Level:* <50 | *Hardness:* 300%
-║ *Level:* <60 | *Hardness:* 350%
-║ *Level:* <70 | *Hardness:* 400%
-║ *Level:* <80 | *Hardness:* 450%
-║ *Level:* <90 | *Hardness:* 500%
-║ *Level:* <100 | *Hardness:* 550%
+║♠ The More You Talk, The More *Xp+Coins* You Gain.
+║♠ You Can Spend The Coins in *${ᴋᴇɪ}shop!*
 ╚════════════╝`,
                 }
               )

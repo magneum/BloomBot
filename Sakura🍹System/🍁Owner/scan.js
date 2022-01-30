@@ -22,8 +22,8 @@ module.exports = {
   async handle(ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
     try {
       var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
-      var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
       const defaultnm = ֆǟӄʊʀǟ.commandName;
+      var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
       const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
       `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
       const hold = require("../../Sakura🛰️Server/Hold");
@@ -39,43 +39,44 @@ module.exports = {
         );
       }
       `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-      var filePath;
       if (ֆǟӄʊʀǟ.isReplyImage) {
-        var imageId = chat.key.id;
-        const fileName =
-          `${__dirname}/${Ping}_${աɦօֆɛռȶɦǟȶ}_${FinalName}_` + imageId;
-        filePath = await ӄʀǟӄɨռʐ.downloadAndSaveMediaMessage(
-          {
-            message:
-              chat.message.extendedTextMessage.contextInfo.quotedMessage,
-          },
-          fileName
-        );
-        var buffer = fs.readFileSync(filePath);
-        Jimp.read(buffer, function (Error, image) {
-          if (Error) {
-            console.error(Error);
-          }
-          let qrcode = new qrCode();
-          qrcode.callback = async function (Error, value) {
-            if (Error) {
-              ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
-            } else {
-              return Sakura_Static.MGS(
-                ӄʀǟӄɨռʐ,
-                chat,
-                ֆǟӄʊʀǟ,
-                `✔️ 🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ}, *Sir Here Is The Verified Link!*
+        var FileObject = {
+          message: chat.message.extendedTextMessage.contextInfo.quotedMessage,
+        };
+        var FileId = chat.message.extendedTextMessage.contextInfo.stanzaId;
+        var File = FileId + `.jpeg`;
+        await ӄʀǟӄɨռʐ
+          .downloadAndSaveMediaMessage(FileObject, FileId)
+          .then(() => {
+            var buffer = fs.readFileSync(File);
+            Jimp.read(buffer, async function (Error, image) {
+              if (Error) {
+                console.log(Error);
+                return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
+              }
+              let qrcode = new qrCode();
+              qrcode.callback = async function (Error, value) {
+                if (Error) {
+                  console.log(Error);
+                  return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
+                }
+                qrcode.decode(image.bitmap);
+                Sakura_Buttons.MTB(
+                  ӄʀǟӄɨռʐ,
+                  chat,
+                  ֆǟӄʊʀǟ,
+                  `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ}, 
+*Sir Here Is The Verified KrakinzLab Link!*
 
 +sudolnk($req%+${Ping}+${Clock}%)
-${_𝔏𝔞𝔟_.HASH.replace(`https://chat.whatsapp.com/`, `/kryo/`)}${value.result}`,
-                `./Sakura☣️Reactor/ֆǟӄʊʀǟ™.mp4`
-              );
-            }
-          };
-          qrcode.decode(image.bitmap);
-        });
-        await cleanRF.cleanRF(filePath);
+${_𝔏𝔞𝔟_.HASH.replace(`https://chat.whatsapp.com/`, `/kryo/`)}${value.result}`
+                );
+                await cleanRF.cleanRF(File);
+                return;
+              };
+            });
+          });
+        `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
       } else {
         return Sakura_Buttons.MTB(
           ӄʀǟӄɨռʐ,
@@ -84,11 +85,9 @@ ${_𝔏𝔞𝔟_.HASH.replace(`https://chat.whatsapp.com/`, `/kryo/`)}${value.re
           `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},\n*Sir Please Reply To _QR-Code_!*`
         );
       }
-
-      `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
     } catch (Error) {
-      ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
-      return;
+      console.log(Error);
+      return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
     }
   },
 };
