@@ -285,7 +285,7 @@ Do note that theme names are  *case sensitive*${ᴋᴇɪ}`,
           }
           `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
           const carbon = new Carbon.createCarbon()
-            .setCode(code)
+            .setCode(code.replace(/[^\p{L}\p{N}\p{P}\p{Z}^$\n]/gu, ""))
             .setPrettify(true)
             .setTheme(themeInput);
           const output = await Carbon.generateCarbon(carbon);
