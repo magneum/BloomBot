@@ -536,7 +536,7 @@ chat,
 `
 ╔════◇𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
 ║
-║♨️ _First be a member of Sakura Group._
+║☣️ *First Join Sakura Group.*
 ║🚨 *Why?* _Monitor AntiSpams & BugReports._ 
 ║🍹 *Perks?* _Use All Commands in Any Group._
 ╚════════════╝
@@ -803,7 +803,7 @@ chat,
 `
 ╔════◇𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
 ║
-║♨️ _First be a member of Sakura Group._
+║☣️ *First Join Sakura Group.*
 ║🚨 *Why?* _Monitor AntiSpams & BugReports._ 
 ║🍹 *Perks?* _Use All Commands in Any Group._
 ╚════════════╝
@@ -1050,7 +1050,7 @@ chat,
 `
 ╔════◇𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
 ║
-║♨️ _First be a member of Sakura Group._
+║☣️ *First Join Sakura Group.*
 ║🚨 *Why?* _Monitor AntiSpams & BugReports._ 
 ║🍹 *Perks?* _Use All Commands in Any Group._
 ╚════════════╝
