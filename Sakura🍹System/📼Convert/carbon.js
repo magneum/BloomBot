@@ -23,9 +23,9 @@ module.exports = {
   name: newScpt,
   ֆǟӄʊʀǟӄǟɨʐօ: `
 ╔════◇ *Example*
-║*${ᴋᴇɪ}carbon* text
-║*${ᴋᴇɪ}carbon*  reply to a text message
-║*${ᴋᴇɪ}carbon* text -t theme_name
+║ *${ᴋᴇɪ}carbon* text
+║ *${ᴋᴇɪ}carbon*  reply to a text message
+║ *${ᴋᴇɪ}carbon* text -t theme_name
 ╚════════════╝
 
 ╔════◇🌈 𝗧𝗵𝗲𝗺𝗲𝐬
