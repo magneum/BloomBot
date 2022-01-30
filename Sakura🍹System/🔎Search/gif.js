@@ -152,7 +152,6 @@ module.exports = {
             )}&key=${_𝔏𝔞𝔟_.TEN}&limit=100`;
             let response = await fetch(url);
             let json = await response.json();
-            console.log(json);
             `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
             const MP4 =
               json.results[Math.floor(Math.random() * json.results.length)]
