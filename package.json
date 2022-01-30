@@ -1,7 +1,7 @@
 {
   "name": "sakura",
-  "vers": "v6.3",
-  "verold": "v6.2",
+  "vers": "v6.",
+  "verold": "v6.3",
   "keywords": [
     "whatsapp",
     "js-whatsapp",
@@ -13,7 +13,6 @@
     "automation"
   ],
   "dependencies": {
-    "@adiwajshing/baileys": "^3.5.3",
     "@cicciosgamino/openweather-apis": "^5.0.1",
     "@ffmpeg-installer/ffmpeg": "^1.1.0",
     "@ffprobe-installer/ffprobe": "^1.3.0",
@@ -68,6 +67,7 @@
     "image-to-base64": "^2.2.0",
     "imdb-api": "^4.4.1",
     "insta-fetcher": "^1.2.3",
+    "@adiwajshing/baileys": "^3.5.3",
     "js-file-download": "^0.4.12",
     "jsdom": "^16.5.2",
     "kasu.nhentaiapi.js": "^2.9.2",
