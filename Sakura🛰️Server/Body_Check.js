@@ -41,6 +41,8 @@ function Body_Check(Argument) {
     return true;
   } else if (Argument.includes("https://chat.whatsapp")) {
     return true;
+  } else if (Argument.includes("wa.me/")) {
+    return true;
   }
   return false;
 }
