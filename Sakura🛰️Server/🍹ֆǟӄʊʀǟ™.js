@@ -647,46 +647,49 @@ ${update.desc}`,
         }
       }
       `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-      const RegexYouTube =
-        /^((?:https?:)?\/\/)?((?:www|chat)\.)?((?:youtube\.com|youtu.be))(\/(?:[\w\-]+\?v=|embed\/|v\/)?)([\w\-]+)(\S+)?$/;
+      const { Regex } = require("../Sakura☣️Reactor/Regex");
       if (
-        ֆǟӄʊʀǟ.isGroup &&
-        !ֆǟӄʊʀǟ.fromMe &&
-        !ֆǟӄʊʀǟ.isSenderDev &&
-        ֆǟӄʊʀǟ.isBotGroupAdmin &&
-        !ֆǟӄʊʀǟ.isSenderGroupAdmin &&
-        !RegexYouTube.test(ֆǟӄʊʀǟ.body) &&
-        ֆǟӄʊʀǟ.body.includes(`https://`)
+        !Regex.VideoURL.test(ֆǟӄʊʀǟ.body) &&
+        !Regex.VideoID.test(ֆǟӄʊʀǟ.body)
       ) {
-        LinkList.findOne(
-          {
-            serverID: ֆǟӄʊʀǟ.chatId,
-          },
-          async (Error, server) => {
-            if (Error) return console.log(Error);
-            if (!server) {
-              return;
-            } else {
-              await Sakura_Buttons.MIB(
-                ӄʀǟӄɨռʐ,
-                chat,
-                ֆǟӄʊʀǟ,
-                `
+        if (
+          ֆǟӄʊʀǟ.isGroup &&
+          !ֆǟӄʊʀǟ.fromMe &&
+          !ֆǟӄʊʀǟ.isSenderDev &&
+          ֆǟӄʊʀǟ.isBotGroupAdmin &&
+          !ֆǟӄʊʀǟ.isSenderGroupAdmin &&
+          ֆǟӄʊʀǟ.body.includes(`https://`)
+        ) {
+          LinkList.findOne(
+            {
+              serverID: ֆǟӄʊʀǟ.chatId,
+            },
+            async (Error, server) => {
+              if (Error) return console.log(Error);
+              if (!server) {
+                return;
+              } else {
+                await Sakura_Buttons.MIB(
+                  ӄʀǟӄɨռʐ,
+                  chat,
+                  ֆǟӄʊʀǟ,
+                  `
 ╔════◇🌋  𝐀𝐧𝐭𝐢𝐥𝐢𝐧𝐤 𝐓𝐫𝐢𝐠𝐠𝐞𝐫𝐞𝐝
 ║🔻 𝗣𝘂𝗻𝗶𝘀𝗵𝗺𝗲𝗻𝘁: _You Will Be Kicked!_
 ║🔻 𝗞𝗶𝗰𝗸-𝗧𝗶𝗺𝗲: _1sec_
 ╚════════════╝`,
-                `./Sakura☣️Reactor/Sakura_Antilink.png`
-              );
-              setTimeout(() => {
-                ӄʀǟӄɨռʐ
-                  .groupRemove(ֆǟӄʊʀǟ.chatId, [ֆǟӄʊʀǟ.sender])
-                  .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-              }, 1000);
-              return;
+                  `./Sakura☣️Reactor/Sakura_Antilink.png`
+                );
+                setTimeout(() => {
+                  ӄʀǟӄɨռʐ
+                    .groupRemove(ֆǟӄʊʀǟ.chatId, [ֆǟӄʊʀǟ.sender])
+                    .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+                }, 1000);
+                return;
+              }
             }
-          }
-        );
+          );
+        }
       }
       `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
       if (ֆǟӄʊʀǟ.isCmd) {
