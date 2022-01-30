@@ -35,6 +35,7 @@ module.exports = {
 ╔════◇💰 𝗘𝗰𝗼𝗻𝗼𝗺𝘆
 ║⬡ *${ᴋᴇɪ}shop*  _visit krakinzlab member store_
 ║⬡ *${ᴋᴇɪ}buy*  _buy items from store_
+║⬡ *${ᴋᴇɪ}pay*  _reply to person to pay money_
 ║⬡ *${ᴋᴇɪ}hunt*  _catch pokemon in forest_
 ║⬡ *${ᴋᴇɪ}zoo*  _make a zoo_
 ║⬡ *${ᴋᴇɪ}gamble* _gamble with AI_
