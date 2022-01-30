@@ -426,7 +426,19 @@ if (
 !ֆǟӄʊʀǟ.fromMe &&
 !ֆǟӄʊʀǟ.isSenderDev &&
 !ֆǟӄʊʀǟ.body.includes(ᴋᴇɪ + "help") &&
-!ֆǟӄʊʀǟ.body.includes(ᴋᴇɪ + "request")
+!ֆǟӄʊʀǟ.body.includes(ᴋᴇɪ + "request") &&
+!ֆǟӄʊʀǟ.body.includes(ᴋᴇɪ + "animemenu") &&
+!ֆǟӄʊʀǟ.body.includes(ᴋᴇɪ + "checkmenu") &&
+!ֆǟӄʊʀǟ.body.includes(ᴋᴇɪ + "downloadmenu") &&
+!ֆǟӄʊʀǟ.body.includes(ᴋᴇɪ + "ffmpegmenu") &&
+!ֆǟӄʊʀǟ.body.includes(ᴋᴇɪ + "filtersmenu") &&
+!ֆǟӄʊʀǟ.body.includes(ᴋᴇɪ + "gamemenu") &&
+!ֆǟӄʊʀǟ.body.includes(ᴋᴇɪ + "hentaimenu") &&
+!ֆǟӄʊʀǟ.body.includes(ᴋᴇɪ + "humanmenu") &&
+!ֆǟӄʊʀǟ.body.includes(ᴋᴇɪ + "ownermenu") &&
+!ֆǟӄʊʀǟ.body.includes(ᴋᴇɪ + "randommenu") &&
+!ֆǟӄʊʀǟ.body.includes(ᴋᴇɪ + "searchmenu") &&
+!ֆǟӄʊʀǟ.body.includes(ᴋᴇɪ + "groupmenu")
 ) {
 return Sakura_Buttons.MIB(
 ӄʀǟӄɨռʐ,
@@ -693,7 +705,19 @@ if (
 !ֆǟӄʊʀǟ.fromMe &&
 !ֆǟӄʊʀǟ.isSenderDev &&
 !ֆǟӄʊʀǟ.body.includes(ᴋᴇɪ + "help") &&
-!ֆǟӄʊʀǟ.body.includes(ᴋᴇɪ + "request")
+!ֆǟӄʊʀǟ.body.includes(ᴋᴇɪ + "request") &&
+!ֆǟӄʊʀǟ.body.includes(ᴋᴇɪ + "animemenu") &&
+!ֆǟӄʊʀǟ.body.includes(ᴋᴇɪ + "checkmenu") &&
+!ֆǟӄʊʀǟ.body.includes(ᴋᴇɪ + "downloadmenu") &&
+!ֆǟӄʊʀǟ.body.includes(ᴋᴇɪ + "ffmpegmenu") &&
+!ֆǟӄʊʀǟ.body.includes(ᴋᴇɪ + "filtersmenu") &&
+!ֆǟӄʊʀǟ.body.includes(ᴋᴇɪ + "gamemenu") &&
+!ֆǟӄʊʀǟ.body.includes(ᴋᴇɪ + "hentaimenu") &&
+!ֆǟӄʊʀǟ.body.includes(ᴋᴇɪ + "humanmenu") &&
+!ֆǟӄʊʀǟ.body.includes(ᴋᴇɪ + "ownermenu") &&
+!ֆǟӄʊʀǟ.body.includes(ᴋᴇɪ + "randommenu") &&
+!ֆǟӄʊʀǟ.body.includes(ᴋᴇɪ + "searchmenu") &&
+!ֆǟӄʊʀǟ.body.includes(ᴋᴇɪ + "groupmenu")
 ) {
 return Sakura_Buttons.MIB(
 ӄʀǟӄɨռʐ,
@@ -940,7 +964,19 @@ if (
 !ֆǟӄʊʀǟ.fromMe &&
 !ֆǟӄʊʀǟ.isSenderDev &&
 !ֆǟӄʊʀǟ.body.includes(ᴋᴇɪ + "help") &&
-!ֆǟӄʊʀǟ.body.includes(ᴋᴇɪ + "request")
+!ֆǟӄʊʀǟ.body.includes(ᴋᴇɪ + "request") &&
+!ֆǟӄʊʀǟ.body.includes(ᴋᴇɪ + "animemenu") &&
+!ֆǟӄʊʀǟ.body.includes(ᴋᴇɪ + "checkmenu") &&
+!ֆǟӄʊʀǟ.body.includes(ᴋᴇɪ + "downloadmenu") &&
+!ֆǟӄʊʀǟ.body.includes(ᴋᴇɪ + "ffmpegmenu") &&
+!ֆǟӄʊʀǟ.body.includes(ᴋᴇɪ + "filtersmenu") &&
+!ֆǟӄʊʀǟ.body.includes(ᴋᴇɪ + "gamemenu") &&
+!ֆǟӄʊʀǟ.body.includes(ᴋᴇɪ + "hentaimenu") &&
+!ֆǟӄʊʀǟ.body.includes(ᴋᴇɪ + "humanmenu") &&
+!ֆǟӄʊʀǟ.body.includes(ᴋᴇɪ + "ownermenu") &&
+!ֆǟӄʊʀǟ.body.includes(ᴋᴇɪ + "randommenu") &&
+!ֆǟӄʊʀǟ.body.includes(ᴋᴇɪ + "searchmenu") &&
+!ֆǟӄʊʀǟ.body.includes(ᴋᴇɪ + "groupmenu")
 ) {
 return Sakura_Buttons.MIB(
 ӄʀǟӄɨռʐ,
