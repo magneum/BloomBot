@@ -78,6 +78,7 @@ module.exports = {
           }
         );
       } else if (ֆǟӄʊʀǟ.isGroup && !ֆǟӄʊʀǟ.isReply) {
+        var groupData = await ӄʀǟӄɨռʐ.groupMetadata(chat.key.remoteJid);
         Ban.findOne(
           {
             ID: ֆǟӄʊʀǟ.chatId,
