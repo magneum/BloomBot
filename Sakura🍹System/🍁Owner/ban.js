@@ -97,8 +97,6 @@ module.exports = {
           }
         );
       } else if (ֆǟӄʊʀǟ.isGroup && !ֆǟӄʊʀǟ.isReply) {
-        var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
-        var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
         Ban.findOne(
           {
             ID: ֆǟӄʊʀǟ.chatId,
