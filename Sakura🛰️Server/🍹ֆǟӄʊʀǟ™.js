@@ -377,7 +377,7 @@ ${update.desc}`,
 ║• Join Sakura Group.
 ║• Your Group Should Have *10 members* atleast.
 ║• Turn Disappearing Message *Off* in your Gc.
-║• *Private:* use ${ᴋᴇɪ}request _yout gc link_
+║• *Private:* use ${ᴋᴇɪ}request _your gc link_
 ╚════════════╝`,
           "./Sakura☣️Reactor/ֆǟӄʊʀǟ.png"
         );
