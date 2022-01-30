@@ -10,6 +10,8 @@ const Regex = {
   SCPlaylist:
     /^https?:\/\/(soundcloud\.com|snd\.sc)\/([A-Za-z0-9_-]+)\/sets\/([A-Za-z0-9_-]+)\/?$/,
   Spotify: /^(spotify:|https:\/\/[a-z]+\.spotify\.com\/)/,
+  Whatsapp:
+    /^(https?:\/\/)?chat\.whatsapp\.com\/(?:invite\/)?([a-zA-Z0-9_-]{22})$/,
 };
 
 module.exports = {

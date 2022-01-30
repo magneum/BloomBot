@@ -29,7 +29,7 @@ const Sakura_Text_But = (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, MainText) => {
       var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
       const buttonMessage = {
         contentText: MainText,
-        footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 ◈ 𝐄𝐧𝐠𝐢𝐧𝐞: _kryozen${vers.vers}_ ⏋\n⎿ 𝐃𝐚𝐭𝐞: _${Clock}_ ⏋\n⎿ 𝐏𝐢𝐧𝐠: _${Ping}ms_ ⏋`,
+        footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 ◈𝐄𝐧𝐠𝐢𝐧𝐞: kryozen${vers.vers} ⏋\n⎿ ◈𝐃𝐚𝐭𝐞: ${Clock} ⏋\n⎿ ◈𝐏𝐢𝐧𝐠: ${Ping}ms ⏋`,
         buttons: [
           {
             buttonId: `${ᴋᴇɪ}help`,
@@ -52,7 +52,7 @@ const Sakura_Text_But = (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, MainText) => {
       const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
       const buttonMessage = {
         contentText: MainText,
-        footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 ◈ 𝐄𝐧𝐠𝐢𝐧𝐞: _kryozen${vers.vers}_ ⏋\n⎿ 𝐃𝐚𝐭𝐞: _${Clock}_ ⏋\n⎿ 𝐏𝐢𝐧𝐠: _${Ping}ms_ ⏋`,
+        footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 ◈𝐄𝐧𝐠𝐢𝐧𝐞: kryozen${vers.vers} ⏋\n⎿ ◈𝐃𝐚𝐭𝐞: ${Clock} ⏋\n⎿ ◈𝐏𝐢𝐧𝐠: ${Ping}ms ⏋`,
         buttons: [
           {
             buttonId: `${ᴋᴇɪ}help`,
@@ -79,13 +79,7 @@ const Sakura_Text_But = (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, MainText) => {
   }
 };
 `⬡🍹⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-const Sakura_Image_But = async (
-  ӄʀǟӄɨռʐ,
-  chat,
-  ֆǟӄʊʀǟ,
-  MainText,
-  MediaUrl
-) => {
+const Sakura_Image_But = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, MainText, MediaUrl) => {
   try {
     if (ֆǟӄʊʀǟ.isReply) {
       var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
@@ -103,7 +97,7 @@ const Sakura_Image_But = async (
           ֆǟӄʊʀǟ.chatId,
           {
             contentText: MainText,
-            footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 ◈ 𝐄𝐧𝐠𝐢𝐧𝐞: _kryozen${vers.vers}_ ⏋\n⎿ 𝐃𝐚𝐭𝐞: _${Clock}_ ⏋\n⎿ 𝐏𝐢𝐧𝐠: _${Ping}ms_ ⏋`,
+            footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 ◈𝐄𝐧𝐠𝐢𝐧𝐞: kryozen${vers.vers} ⏋\n⎿ ◈𝐃𝐚𝐭𝐞: ${Clock} ⏋\n⎿ ◈𝐏𝐢𝐧𝐠: ${Ping}ms ⏋`,
             buttons: [
               {
                 buttonId: `${ᴋᴇɪ}help`,
@@ -137,7 +131,7 @@ const Sakura_Image_But = async (
           ֆǟӄʊʀǟ.chatId,
           {
             contentText: MainText,
-            footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 ◈ 𝐄𝐧𝐠𝐢𝐧𝐞: _kryozen${vers.vers}_ ⏋\n⎿ 𝐃𝐚𝐭𝐞: _${Clock}_ ⏋\n⎿ 𝐏𝐢𝐧𝐠: _${Ping}ms_ ⏋`,
+            footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 ◈𝐄𝐧𝐠𝐢𝐧𝐞: kryozen${vers.vers} ⏋\n⎿ ◈𝐃𝐚𝐭𝐞: ${Clock} ⏋\n⎿ ◈𝐏𝐢𝐧𝐠: ${Ping}ms ⏋`,
             buttons: [
               {
                 buttonId: `${ᴋᴇɪ}help`,
@@ -166,13 +160,7 @@ const Sakura_Image_But = async (
   }
 };
 `⬡🍹⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-const Sakura_Video_But = async (
-  ӄʀǟӄɨռʐ,
-  chat,
-  ֆǟӄʊʀǟ,
-  MainText,
-  MediaUrl
-) => {
+const Sakura_Video_But = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, MainText, MediaUrl) => {
   try {
     if (ֆǟӄʊʀǟ.isReply) {
       var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
@@ -190,7 +178,7 @@ const Sakura_Video_But = async (
           ֆǟӄʊʀǟ.chatId,
           {
             contentText: MainText,
-            footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 ◈ 𝐄𝐧𝐠𝐢𝐧𝐞: _kryozen${vers.vers}_ ⏋\n⎿ 𝐃𝐚𝐭𝐞: _${Clock}_ ⏋\n⎿ 𝐏𝐢𝐧𝐠: _${Ping}ms_ ⏋`,
+            footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 ◈𝐄𝐧𝐠𝐢𝐧𝐞: kryozen${vers.vers} ⏋\n⎿ ◈𝐃𝐚𝐭𝐞: ${Clock} ⏋\n⎿ ◈𝐏𝐢𝐧𝐠: ${Ping}ms ⏋`,
             buttons: [
               {
                 buttonId: `${ᴋᴇɪ}help`,
@@ -224,7 +212,7 @@ const Sakura_Video_But = async (
           ֆǟӄʊʀǟ.chatId,
           {
             contentText: MainText,
-            footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 ◈ 𝐄𝐧𝐠𝐢𝐧𝐞: _kryozen${vers.vers}_ ⏋\n⎿ 𝐃𝐚𝐭𝐞: _${Clock}_ ⏋\n⎿ 𝐏𝐢𝐧𝐠: _${Ping}ms_ ⏋`,
+            footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 ◈𝐄𝐧𝐠𝐢𝐧𝐞: kryozen${vers.vers} ⏋\n⎿ ◈𝐃𝐚𝐭𝐞: ${Clock} ⏋\n⎿ ◈𝐏𝐢𝐧𝐠: ${Ping}ms ⏋`,
             buttons: [
               {
                 buttonId: `${ᴋᴇɪ}help`,
@@ -271,7 +259,7 @@ const Sakura_GIF_But = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, MainText, Medi
           ֆǟӄʊʀǟ.chatId,
           {
             contentText: MainText,
-            footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 ◈ 𝐄𝐧𝐠𝐢𝐧𝐞: _kryozen${vers.vers}_ ⏋\n⎿ 𝐃𝐚𝐭𝐞: _${Clock}_ ⏋\n⎿ 𝐏𝐢𝐧𝐠: _${Ping}ms_ ⏋`,
+            footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 ◈𝐄𝐧𝐠𝐢𝐧𝐞: kryozen${vers.vers} ⏋\n⎿ ◈𝐃𝐚𝐭𝐞: ${Clock} ⏋\n⎿ ◈𝐏𝐢𝐧𝐠: ${Ping}ms ⏋`,
             buttons: [
               {
                 buttonId: `${ᴋᴇɪ}help`,
@@ -305,7 +293,7 @@ const Sakura_GIF_But = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, MainText, Medi
           ֆǟӄʊʀǟ.chatId,
           {
             contentText: MainText,
-            footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 ◈ 𝐄𝐧𝐠𝐢𝐧𝐞: _kryozen${vers.vers}_ ⏋\n⎿ 𝐃𝐚𝐭𝐞: _${Clock}_ ⏋\n⎿ 𝐏𝐢𝐧𝐠: _${Ping}ms_ ⏋`,
+            footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 ◈𝐄𝐧𝐠𝐢𝐧𝐞: kryozen${vers.vers} ⏋\n⎿ ◈𝐃𝐚𝐭𝐞: ${Clock} ⏋\n⎿ ◈𝐏𝐢𝐧𝐠: ${Ping}ms ⏋`,
             buttons: [
               {
                 buttonId: `${ᴋᴇɪ}help`,
@@ -362,7 +350,7 @@ const Sakura_VideoAudio_But = async (
     const buttonMessages = {
       videoMessage: media.message.videoMessage,
       contentText: MainText,
-      footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 ◈ 𝐄𝐧𝐠𝐢𝐧𝐞: _kryozen${vers.vers}_ ⏋\n⎿ 𝐃𝐚𝐭𝐞: _${Clock}_ ⏋\n⎿ 𝐏𝐢𝐧𝐠: _${Ping}ms_ ⏋`,
+      footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 ◈𝐄𝐧𝐠𝐢𝐧𝐞: kryozen${vers.vers} ⏋\n⎿ ◈𝐃𝐚𝐭𝐞: ${Clock} ⏋\n⎿ ◈𝐏𝐢𝐧𝐠: ${Ping}ms ⏋`,
       buttons: [
         {
           buttonId: `${ᴋᴇɪ}help`,
@@ -416,7 +404,7 @@ const Sakura_Location_But = async (
     const buttonMessages = {
       locationMessage: media.message.locationMessage,
       contentText: MainText,
-      footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 ◈ 𝐄𝐧𝐠𝐢𝐧𝐞: _kryozen${vers.vers}_ ⏋\n⎿ 𝐃𝐚𝐭𝐞: _${Clock}_ ⏋\n⎿ 𝐏𝐢𝐧𝐠: _${Ping}ms_ ⏋`,
+      footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 ◈𝐄𝐧𝐠𝐢𝐧𝐞: kryozen${vers.vers} ⏋\n⎿ ◈𝐃𝐚𝐭𝐞: ${Clock} ⏋\n⎿ ◈𝐏𝐢𝐧𝐠: ${Ping}ms ⏋`,
       buttons: [
         {
           buttonId: `${ᴋᴇɪ}help`,

@@ -41,7 +41,7 @@ const Sakura_GIF_Static = async (
           mimetype: `video/gif`,
           quoted: chat,
           caption:
-            `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 ◈ 𝐄𝐧𝐠𝐢𝐧𝐞: _kryozen${vers.vers}_ ⏋\n⎿ 𝐃𝐚𝐭𝐞: _${Clock}_ ⏋\n⎿ 𝐏𝐢𝐧𝐠: _${Ping}ms_ ⏋\n\n` +
+            `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 ◈𝐄𝐧𝐠𝐢𝐧𝐞: kryozen${vers.vers} ⏋\n⎿ ◈𝐃𝐚𝐭𝐞: ${Clock} ⏋\n⎿ ◈𝐏𝐢𝐧𝐠: ${Ping}ms ⏋\n\n` +
             MainText,
           contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ, Receiver] },
         })
@@ -54,7 +54,7 @@ const Sakura_GIF_Static = async (
           mimetype: `video/gif`,
           quoted: chat,
           caption:
-            `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 ◈ 𝐄𝐧𝐠𝐢𝐧𝐞: _kryozen${vers.vers}_ ⏋\n⎿ 𝐃𝐚𝐭𝐞: _${Clock}_ ⏋\n⎿ 𝐏𝐢𝐧𝐠: _${Ping}ms_ ⏋\n\n` +
+            `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 ◈𝐄𝐧𝐠𝐢𝐧𝐞: kryozen${vers.vers} ⏋\n⎿ ◈𝐃𝐚𝐭𝐞: ${Clock} ⏋\n⎿ ◈𝐏𝐢𝐧𝐠: ${Ping}ms ⏋\n\n` +
             MainText,
           contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
         })
