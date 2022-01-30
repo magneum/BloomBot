@@ -28,8 +28,6 @@ const env = {
   CCD: process.env.CCD === undefined ? `91` : process.env.CCD,
   OCR: `9ffb44def388957`,
   TEN: `0G2R8PTUGMRP`,
-  ɴᴏᴛᴍᴇᴀᴅᴍɪɴ: `./Sakura☣️Reactor/ֆǟӄʊʀǟNotMeAdmin.png`,
-  ɴᴏᴛᴀᴅᴍɪɴ: `./Sakura☣️Reactor/ֆǟӄʊʀǟMemErr.png`,
   WAPI: `6729ac2b2e2bb5c686ff427a2f06df92`,
   ERROR: `https://i.postimg.cc/XqPBcyq0/image.png`,
   INVL: `https://i.postimg.cc/XqPBcyq0/image.png`,
