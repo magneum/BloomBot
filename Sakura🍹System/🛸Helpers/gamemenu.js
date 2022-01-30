@@ -43,6 +43,7 @@ module.exports = {
 ║⬡ *${ᴋᴇɪ}daily*  _Gives You 200 per day_
 ║⬡ *${ᴋᴇɪ}work*  _Work to Earn Money_
 ║⬡ *${ᴋᴇɪ}balance*  _Shows Current Balance (reply/own)_
+║⬡ *${ᴋᴇɪ}bank*  _Shows Current Balance (reply/own)_
 ╚════════════╝`;
       return Sakura_Buttons.MIB(
         ӄʀǟӄɨռʐ,
