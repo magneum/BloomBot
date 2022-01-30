@@ -4,7 +4,6 @@
 `|🍹|`;
 `|🍹|`;
 const fs = require(`fs`);
-const { Sequelize } = require(`sequelize`);
 if (fs.existsSync(`🍹ֆǟӄʊʀǟ™.env`)) {
   require(`dotenv`).config({
     path: `./🍹ֆǟӄʊʀǟ™.env`,
@@ -46,16 +45,6 @@ const env = {
     process.env.SAKURAQL === undefined
       ? `./Sakura☣️Reactor/🍹ֆǟӄʊʀǟ™.db`
       : process.env.SAKURAQL),
-  POSTQL:
-    process.env.SAKURAQL === `./Sakura☣️Reactor/🍹ֆǟӄʊʀǟ™.db`
-      ? new Sequelize({ dialect: `sqlite`, storage: process.env.SAKURAQL })
-      : new Sequelize(process.env.SAKURAQL, {
-          dialect: `postgres`,
-          protocol: `postgres`,
-          dialectOptions: {
-            ssl: { require: true, rejectUnauthorized: false },
-          },
-        }),
   PRIVACY: process.env.PRIVACY === undefined ? `public` : process.env.PRIVACY,
 };
 module.exports = env;

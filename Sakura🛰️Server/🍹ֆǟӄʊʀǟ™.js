@@ -34,7 +34,6 @@ try {
   const pattern = date.compile(`ddd, MMM DD YYYY`);
   const Clock = date.format(now, pattern);
   const vers = require(`../package.json`);
-  const ֆǟӄʊʀǟsql = _𝔏𝔞𝔟_.POSTQL;
   var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
   var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
   const fs = require(`fs`);
@@ -104,14 +103,6 @@ try {
     ӄʀǟӄɨռʐ.on(`open`, async () => {
       console.log(Kolor.green(`🍹ֆǟӄʊʀǟ™ 𝗖𝗼𝗻𝗻𝗲𝗰𝘁𝗲𝗱 𝗧𝗼 𝗨𝘀𝗲𝗿-𝗪𝗵𝗮𝘁𝘀𝗮𝗽𝗽!🍃`));
       console.log(Kolor.green(`💡INFO ⬰ 𝐋𝐢𝐧𝐤𝐢𝐧𝐠 𝐒𝐚𝐤𝐮𝐫𝐚 𝐖𝐢𝐭𝐡 𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞...🍃`));
-      try {
-        await ֆǟӄʊʀǟsql.authenticate();
-        await ֆǟӄʊʀǟsql.validate();
-        await ֆǟӄʊʀǟsql.sync();
-      } catch (Error) {
-        console.Error(`❌ERROR ⬰  𝗨𝗻𝗮𝗯𝗹𝗲 𝘁𝗼 𝗰𝗼𝗻𝗻𝗲𝗰𝘁 𝘁𝗼 𝘁𝗵𝗲 𝗱𝗮𝘁𝗮𝗯𝗮𝘀𝗲:`, Error);
-        process.exit(0);
-      }
       console.log(
         Kolor.green(`|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|
 ɪꜱ ᴀ ᴡʜᴀᴛꜱᴀᴘᴘ ᴍᴜʟᴛɪᴘᴜʀᴘᴏꜱᴇ-ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ ᴍᴏᴅᴇʀᴀᴛɪᴏɴ,ᴀᴜᴛᴏᴍᴀᴛɪᴏɴ ᴀɴᴅ 100+ ᴄᴏᴍᴍᴀɴᴅꜱ!
