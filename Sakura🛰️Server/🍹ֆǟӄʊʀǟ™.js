@@ -460,7 +460,7 @@ ${update.desc}`,
       }
       `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
       if (ֆǟӄʊʀǟ.isGroup && !ֆǟӄʊʀǟ.fromMe) {
-        var xpAdd = Math.ceil(Math.random() * 10);
+        let xpAdd;
         try {
           𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄʀǟӄɨռʐ.getProfilePicture(աɦօֆɛռȶɦǟȶ);
         } catch {
@@ -479,7 +479,7 @@ ${update.desc}`,
               if (!users) {
                 var newUsers = new UsersSakura({
                   ID: աɦօֆɛռȶɦǟȶ,
-                  xp: xpAdd,
+                  xp: Math.ceil(Math.random() * 40),
                   level: 0,
                 });
                 await newUsers.save().catch((Error) => console.log(Error));
@@ -488,28 +488,40 @@ ${update.desc}`,
                 var currentXP = users.xp;
                 let nxtlvl = "";
                 if (currentLvl < 5) {
+                  xpAdd = Math.ceil(Math.random() * 40);
                   nxtlvl = 50 * Math.pow(2, currentLvl);
                 } else if (currentLvl >= 5) {
+                  xpAdd = Math.ceil(Math.random() * 38);
                   nxtlvl = 100 * Math.pow(2, currentLvl);
                 } else if (currentLvl >= 10) {
+                  xpAdd = Math.ceil(Math.random() * 36);
                   nxtlvl = 150 * Math.pow(2, currentLvl);
                 } else if (currentLvl >= 20) {
+                  xpAdd = Math.ceil(Math.random() * 25);
                   nxtlvl = 250 * Math.pow(2, currentLvl);
                 } else if (currentLvl >= 30) {
+                  xpAdd = Math.ceil(Math.random() * 20);
                   nxtlvl = 300 * Math.pow(2, currentLvl);
                 } else if (currentLvl >= 40) {
+                  xpAdd = Math.ceil(Math.random() * 15);
                   nxtlvl = 350 * Math.pow(2, currentLvl);
                 } else if (currentLvl >= 50) {
+                  xpAdd = Math.ceil(Math.random() * 13);
                   nxtlvl = 400 * Math.pow(2, currentLvl);
                 } else if (currentLvl >= 60) {
+                  xpAdd = Math.ceil(Math.random() * 10);
                   nxtlvl = 450 * Math.pow(2, currentLvl);
                 } else if (currentLvl >= 70) {
+                  xpAdd = Math.ceil(Math.random() * 8);
                   nxtlvl = 500 * Math.pow(2, currentLvl);
                 } else if (currentLvl >= 80) {
+                  xpAdd = Math.ceil(Math.random() * 6);
                   nxtlvl = 550 * Math.pow(2, currentLvl);
                 } else if (currentLvl >= 90) {
+                  xpAdd = Math.ceil(Math.random() * 4);
                   nxtlvl = 600 * Math.pow(2, currentLvl);
                 } else if (currentLvl >= 100) {
+                  xpAdd = Math.ceil(Math.random() * 2);
                   nxtlvl = 750 * Math.pow(2, currentLvl);
                 }
                 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
