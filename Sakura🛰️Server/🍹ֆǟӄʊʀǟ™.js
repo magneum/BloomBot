@@ -13,13 +13,13 @@ try {
   const Economy = require(`../Sakura🍃Goose/economy`);
   const Sakura_Buttons = require(`./Sakura_Buttons`);
   const Sakura_Static = require(`./Sakura_Static`);
+  const Ban = require(`../Sakura🍃Goose/ban`);
   const ֆǟӄʊʀǟֆʏռօք = require(`./ֆǟӄʊʀǟᴢᴇɴ`);
   const moment = require(`moment-timezone`);
   const speed = require(`performance-now`);
   const { Tǟɮʟɛɨȶ } = require(`../Tǟɮʟɛɨȶ`);
   const ֆǟӄʊʀǟǟքք = require(`./helper`);
   const welbuts = require(`./welbuts`);
-  const BanList = require(`./BanList`);
   const cleanRF = require(`./cleanRF`);
   const fetch = require(`node-fetch`);
   const _𝔏𝔞𝔟_ = require(`./_𝔏𝔞𝔟_`);
@@ -351,507 +351,200 @@ ${update.desc}`,
       var ֆǟӄʊʀǟ = ֆǟӄʊʀǟǟքք.resolve(chat, ӄʀǟӄɨռʐ, groupMetadata);
       var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
       var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
-      var CheckBans = await BanList.getBanlistUser(աɦօֆɛռȶɦǟȶ, ֆǟӄʊʀǟ.chatId);
-      console.log(
-        Kolor.yellow("═══════════════| 🔎Verify Database🔎 |═══════════════")
-      );
-      if (CheckBans === true && !ֆǟӄʊʀǟ.fromMe && !ֆǟӄʊʀǟ.isSenderDev) {
-        console.log(
-          Kolor.red("═══════════════| 🔻Banned Group/user🔻 |═══════════════")
-        );
-        return;
-      }
       `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-      try {
-        const ᴍɪᴢᴜᴋɪɢɪᴛ = require(`simple-git`)();
-        await ᴍɪᴢᴜᴋɪɢɪᴛ.fetch();
-        var ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ = await ᴍɪᴢᴜᴋɪɢɪᴛ.log([
-          `KrakinzLab..origin/KrakinzLab`,
-        ]);
-        if (ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total != 0) {
-          require(`simple-git`)()
-            .exec(() => {
-              Sakura_Buttons.MTB(
-                ӄʀǟӄɨռʐ,
-                chat,
-                ֆǟӄʊʀǟ,
-                `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
+      if (ֆǟӄʊʀǟ.isGroup) {
+        Ban.findOne(
+          {
+            ID: ֆǟӄʊʀǟ.chatId,
+            serverID: ֆǟӄʊʀǟ.chatId,
+          },
+          async (Error, userBan) => {
+            if (Error) {
+              ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
+              return;
+            }
+            if (userBan) {
+              console.log(userBan);
+              console.log(
+                Kolor.red(
+                  "═══════════════| 🔻Banned Group/user🔻 |═══════════════"
+                )
+              );
+              return;
+            }
+            `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+            try {
+              const ᴍɪᴢᴜᴋɪɢɪᴛ = require(`simple-git`)();
+              await ᴍɪᴢᴜᴋɪɢɪᴛ.fetch();
+              var ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ = await ᴍɪᴢᴜᴋɪɢɪᴛ.log([
+                `KrakinzLab..origin/KrakinzLab`,
+              ]);
+              if (ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total != 0) {
+                require(`simple-git`)()
+                  .exec(() => {
+                    Sakura_Buttons.MTB(
+                      ӄʀǟӄɨռʐ,
+                      chat,
+                      ֆǟӄʊʀǟ,
+                      `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
 
 ╔════| 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
 ║💡INFO ⬰ New Updates Pending. Auto Updating...
 ╚════════════╝`
-              );
-              console.log(
-                Kolor.yellow(`💡INFO ⬰ 𝐍𝐞𝐰 𝐔𝐩𝐝𝐚𝐭𝐞 𝐩𝐞𝐧𝐝𝐢𝐧𝐠, 𝐮𝐩𝐝𝐚𝐭𝐢𝐧𝐠...`)
-              );
-            })
-            .pull(async (ℓαвєяяσя, update) => {
-              if (ℓαвєяяσя) {
-                try {
-                  const mergeSummary = await ᴍɪᴢᴜᴋɪɢɪᴛ.merge();
-                  Sakura_Buttons.MTB(
-                    ӄʀǟӄɨռʐ,
-                    chat,
-                    ֆǟӄʊʀǟ,
-                    `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
+                    );
+                    console.log(
+                      Kolor.yellow(`💡INFO ⬰ 𝐍𝐞𝐰 𝐔𝐩𝐝𝐚𝐭𝐞 𝐩𝐞𝐧𝐝𝐢𝐧𝐠, 𝐮𝐩𝐝𝐚𝐭𝐢𝐧𝐠...`)
+                    );
+                  })
+                  .pull(async (ℓαвєяяσя, update) => {
+                    if (ℓαвєяяσя) {
+                      try {
+                        const mergeSummary = await ᴍɪᴢᴜᴋɪɢɪᴛ.merge();
+                        Sakura_Buttons.MTB(
+                          ӄʀǟӄɨռʐ,
+                          chat,
+                          ֆǟӄʊʀǟ,
+                          `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
 
 ╔════| 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
 ║💡INFO ⬰ Auto Updated Sakura With Latest *[${mergeSummary.merges.length}]* Changes.
 ╚════════════╝`
-                  );
-                  console.log(
-                    Kolor.green(
-                      `💡INFO ⬰ 𝗔𝘂𝘁𝗼-𝗨𝗽𝗱𝗮𝘁𝗲𝗱 ⚡𝐒𝐚𝐤𝐮𝐫𝐚™ 𝘄𝗶𝘁𝗵 𝗹𝗮𝘁𝗲𝘀𝘁 [${mergeSummary.merges.length}] 𝗰𝗵𝗮𝗻𝗴𝗲𝘀.`
-                    )
-                  );
-                } catch (ℓαвєяяσя) {
-                  console.log(
-                    Kolor.red(
-                      `❌ERROR ⬰ 𝗠𝗲𝗿𝗴𝗲 𝗿𝗲𝘀𝘂𝗹𝘁𝗲𝗱 𝗶𝗻 ${Kolor.red(
-                        ℓαвєяяσя
-                      )} 𝗰𝗼𝗻𝗳𝗹𝗶𝗰𝘁𝘀!`
-                    )
-                  );
-                }
-              } else if (update && update.summary.changes) {
-                var childs = require(`child_process`).exec(
-                  `python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`
-                );
-                childs.stdout.pipe(process.stdout);
-                childs.on(`exit`, async function () {
-                  process.exitCode = 1;
-                });
+                        );
+                        console.log(
+                          Kolor.green(
+                            `💡INFO ⬰ 𝗔𝘂𝘁𝗼-𝗨𝗽𝗱𝗮𝘁𝗲𝗱 ⚡𝐒𝐚𝐤𝐮𝐫𝐚™ 𝘄𝗶𝘁𝗵 𝗹𝗮𝘁𝗲𝘀𝘁 [${mergeSummary.merges.length}] 𝗰𝗵𝗮𝗻𝗴𝗲𝘀.`
+                          )
+                        );
+                      } catch (ℓαвєяяσя) {
+                        console.log(
+                          Kolor.red(
+                            `❌ERROR ⬰ 𝗠𝗲𝗿𝗴𝗲 𝗿𝗲𝘀𝘂𝗹𝘁𝗲𝗱 𝗶𝗻 ${Kolor.red(
+                              ℓαвєяяσя
+                            )} 𝗰𝗼𝗻𝗳𝗹𝗶𝗰𝘁𝘀!`
+                          )
+                        );
+                      }
+                    } else if (update && update.summary.changes) {
+                      var childs = require(`child_process`).exec(
+                        `python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`
+                      );
+                      childs.stdout.pipe(process.stdout);
+                      childs.on(`exit`, async function () {
+                        process.exitCode = 1;
+                      });
+                    }
+                  });
               }
-            });
-        }
-      } catch (Error) {
-        console.log(Error);
-        console.log(Kolor.red(`❌ERROR ⬰ 𝗣𝗹𝗲𝗮𝘀𝗲 𝗿𝗲𝗱𝗲𝗽𝗹𝗼𝘆 𝘆𝗼𝘂𝗿 𝗯𝗼𝘁!`));
-      }
-      `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-      if (
-        ֆǟӄʊʀǟ.isCmd &&
-        !ֆǟӄʊʀǟ.isGroup &&
-        !ֆǟӄʊʀǟ.fromMe &&
-        !ֆǟӄʊʀǟ.isSenderDev &&
-        !ֆǟӄʊʀǟ.body.includes(ᴋᴇɪ + "help") &&
-        !ֆǟӄʊʀǟ.body.includes(ᴋᴇɪ + "request")
-      ) {
-        return Sakura_Buttons.MIB(
-          ӄʀǟӄɨռʐ,
-          chat,
-          ֆǟӄʊʀǟ,
-          `
-╔════◇🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ}, 
-║💼 𝐆𝐫𝐨𝐮𝐩: ${_𝔏𝔞𝔟_.HASH}
-║💼 𝐆𝐫𝐨𝐮𝐩: ${_𝔏𝔞𝔟_.HASHS}
-║💻 𝐆𝐢𝐭𝐡𝐮𝐛: https://github.com/Krakinz/Sakura
-╚════════════╝
-
-
+            } catch (Error) {
+              console.log(Error);
+              console.log(Kolor.red(`❌ERROR ⬰ 𝗣𝗹𝗲𝗮𝘀𝗲 𝗿𝗲𝗱𝗲𝗽𝗹𝗼𝘆 𝘆𝗼𝘂𝗿 𝗯𝗼𝘁!`));
+            }
+            `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+            if (
+              ֆǟӄʊʀǟ.isCmd &&
+              !ֆǟӄʊʀǟ.isGroup &&
+              !ֆǟӄʊʀǟ.fromMe &&
+              !ֆǟӄʊʀǟ.isSenderDev &&
+              !ֆǟӄʊʀǟ.body.includes(ᴋᴇɪ + "help") &&
+              !ֆǟӄʊʀǟ.body.includes(ᴋᴇɪ + "request")
+            ) {
+              return Sakura_Buttons.MIB(
+                ӄʀǟӄɨռʐ,
+                chat,
+                ֆǟӄʊʀǟ,
+                `
 ╔════◇❓ 𝐇𝐨𝐰 𝐓𝐨 𝐆𝐞𝐭 𝐒𝐚𝐤𝐮𝐫𝐚?
 ║• Join Sakura Group.
 ║• Your Group Should Have *10 members* atleast.
 ║• Turn Disappearing Message *Off* in your Gc.
 ║• *Private:* use ${ᴋᴇɪ}request _your gc link_
+╚════════════╝
+
+╔════◇🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ}, 
+║💼 𝐆𝐫𝐨𝐮𝐩: ${_𝔏𝔞𝔟_.HASH}
+║💼 𝐆𝐫𝐨𝐮𝐩: ${_𝔏𝔞𝔟_.HASHS}
+║💻 𝐆𝐢𝐭𝐡𝐮𝐛: https://github.com/Krakinz/Sakura
 ╚════════════╝`,
-          "./Sakura☣️Reactor/ֆǟӄʊʀǟ.png"
-        );
-      }
-      //       `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-      //       if (ֆǟӄʊʀǟ.isGroup && !ֆǟӄʊʀǟ.fromMe) {
-      //         let xpAdd;
-      //         try {
-      //           𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄʀǟӄɨռʐ.getProfilePicture(աɦօֆɛռȶɦǟȶ);
-      //         } catch {
-      //           𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = "https://i.postimg.cc/gcw6vq3X/Npp.png";
-      //         }
-      //         try {
-      //           await UsersSakura.findOne(
-      //             {
-      //               ID: աɦօֆɛռȶɦǟȶ,
-      //               serverID: ֆǟӄʊʀǟ.chatId,
-      //             },
-      //             async (Error, users) => {
-      //               var randomMC = require("random-material-color");
-      //               const Canvas = require("canvas");
-      //               var color = randomMC.getColor();
-      //               if (Error) return console.log(Error);
-      //               if (!users) {
-      //                 var newUsers = new UsersSakura({
-      //                   ID: աɦօֆɛռȶɦǟȶ,
-      //                   serverID: ֆǟӄʊʀǟ.chatId,
-      //                   xp: Math.ceil(Math.random() * 40),
-      //                   level: 0,
-      //                 });
-      //                 await newUsers.save().catch((Error) => console.log(Error));
-      //               } else {
-      //                 console.log(users);
-      //                 console.log(
-      //                   Kolor.green("═══════════════| 💡 Ranks 💡 |═══════════════")
-      //                 );
-      //                 var currentLvl = users.level;
-      //                 var currentXP = users.xp;
-      //                 let nxtlvl = "";
-      //                 if (currentLvl < 5) {
-      //                   xpAdd = Math.ceil(Math.random() * 40);
-      //                   nxtlvl = 50 * Math.pow(2, currentLvl);
-      //                 } else if (currentLvl >= 5) {
-      //                   xpAdd = Math.ceil(Math.random() * 38);
-      //                   nxtlvl = 100 * Math.pow(2, currentLvl);
-      //                 } else if (currentLvl >= 10) {
-      //                   xpAdd = Math.ceil(Math.random() * 36);
-      //                   nxtlvl = 150 * Math.pow(2, currentLvl);
-      //                 } else if (currentLvl >= 20) {
-      //                   xpAdd = Math.ceil(Math.random() * 25);
-      //                   nxtlvl = 250 * Math.pow(2, currentLvl);
-      //                 } else if (currentLvl >= 30) {
-      //                   xpAdd = Math.ceil(Math.random() * 20);
-      //                   nxtlvl = 300 * Math.pow(2, currentLvl);
-      //                 } else if (currentLvl >= 40) {
-      //                   xpAdd = Math.ceil(Math.random() * 15);
-      //                   nxtlvl = 350 * Math.pow(2, currentLvl);
-      //                 } else if (currentLvl >= 50) {
-      //                   xpAdd = Math.ceil(Math.random() * 13);
-      //                   nxtlvl = 400 * Math.pow(2, currentLvl);
-      //                 } else if (currentLvl >= 60) {
-      //                   xpAdd = Math.ceil(Math.random() * 10);
-      //                   nxtlvl = 450 * Math.pow(2, currentLvl);
-      //                 } else if (currentLvl >= 70) {
-      //                   xpAdd = Math.ceil(Math.random() * 8);
-      //                   nxtlvl = 500 * Math.pow(2, currentLvl);
-      //                 } else if (currentLvl >= 80) {
-      //                   xpAdd = Math.ceil(Math.random() * 6);
-      //                   nxtlvl = 550 * Math.pow(2, currentLvl);
-      //                 } else if (currentLvl >= 90) {
-      //                   xpAdd = Math.ceil(Math.random() * 4);
-      //                   nxtlvl = 600 * Math.pow(2, currentLvl);
-      //                 } else if (currentLvl >= 100) {
-      //                   xpAdd = Math.ceil(Math.random() * 2);
-      //                   nxtlvl = 750 * Math.pow(2, currentLvl);
-      //                 }
-      //                 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-      //                 users.xp = users.xp + xpAdd;
-      //                 if (users.xp >= nxtlvl) {
-      //                   let Res = await fetch(
-      //                     global.API(
-      //                       "https://wall.alphacoders.com/api2.0",
-      //                       "/get.php",
-      //                       {
-      //                         auth: "3e7756c85df54b78f934a284c11abe4e",
-      //                         method: "search",
-      //                         term: "anime landscape",
-      //                       }
-      //                     )
-      //                   );
-      //                   let Bson = await Res.json();
-      //                   let Img =
-      //                     Bson.wallpapers[
-      //                       Math.floor(Math.random() * Bson.wallpapers.length)
-      //                     ];
-      //                   users.level = currentLvl + 1;
-      //                   const canvas = Canvas.createCanvas(800, 300);
-      //                   const ctx = canvas.getContext("2d");
-      //                   const background = await Canvas.loadImage(Img.url_image);
-      //                   ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
-      //                   ctx.strokeStyle = "#74037b";
-      //                   ctx.strokeRect(0, 0, canvas.width, canvas.height);
-      //                   ctx.font = "50px TheHeartOfEverythingDemo";
-      //                   ctx.fillStyle = "#1a1a1a";
-      //                   ctx.fillText(`Congrats You Ranked Up!`, 230, 120);
-      //                   ctx.beginPath();
-      //                   ctx.lineWidth = 2;
-      //                   ctx.fillStyle = color;
-      //                   ctx.moveTo(220, 135);
-      //                   ctx.lineTo(690, 135);
-      //                   ctx.quadraticCurveTo(710, 135, 710, 152.5);
-      //                   ctx.quadraticCurveTo(710, 170, 690, 170);
-      //                   ctx.lineTo(220, 170);
-      //                   ctx.lineTo(220, 135);
-      //                   ctx.fill();
-      //                   ctx.closePath();
-      //                   ctx.beginPath();
-      //                   ctx.arc(130, 155, 110, 0, Math.PI * 2, true);
-      //                   ctx.lineWidth = 2;
-      //                   ctx.fillStyle = color;
-      //                   ctx.moveTo(220, 135);
-      //                   ctx.lineTo(220, 170);
-      //                   ctx.lineTo(220, 135);
-      //                   ctx.fill();
-      //                   ctx.font = "30px LobsterTwo-Bold";
-      //                   ctx.fillStyle = "#000";
-      //                   ctx.fillText(`${currentXP}XP |Lvl: ${currentLvl}`, 250, 162);
-      //                   ctx.closePath();
-      //                   ctx.beginPath();
-      //                   ctx.arc(125, 150, 100, 0, Math.PI * 2, true);
-      //                   ctx.closePath();
-      //                   ctx.clip();
-      //                   const avatar = await Canvas.loadImage(𝕻𝕻𝖑𝖊𝖙𝖊𝖗);
-      //                   ctx.drawImage(avatar, 25, 50, 200, 200);
-      //                   const out = fs.createWriteStream(
-      //                     `${աɦօֆɛռȶɦǟȶ.toString()}.jpeg`
-      //                   );
-      //                   const stream = canvas.createJPEGStream();
-      //                   stream.pipe(out);
-      //                   out.on(`finish`, () => {
-      //                     `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-      //                     try {
-      //                       Economy.findOne(
-      //                         {
-      //                           ID: աɦօֆɛռȶɦǟȶ,
-      //                         },
-      //                         async (Error, userEco) => {
-      //                           if (Error) return console.log(Error);
-      //                           if (!userEco) {
-      //                             var newUser = new Economy({
-      //                               ID: աɦօֆɛռȶɦǟȶ,
-      //                               money: 200,
-      //                               daily: 0,
-      //                               timeout: 86400000,
-      //                               fishdone: 0,
-      //                               fishtimeout: 1800000,
-      //                               workdone: 0,
-      //                               worktimeout: 900000,
-      //                             });
-      //                             await newUser
-      //                               .save()
-      //                               .catch((Error) =>
-      //                                 ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
-      //                               );
-      //                             try {
-      //                               var groupDataRank = await ӄʀǟӄɨռʐ.groupMetadata(
-      //                                 chat.key.remoteJid
-      //                               );
-      //                               const media = await ӄʀǟӄɨռʐ.prepareMessage(
-      //                                 ֆǟӄʊʀǟ.chatId,
-      //                                 fs.readFileSync(
-      //                                   `${աɦօֆɛռȶɦǟȶ.toString()}.jpeg`
-      //                                 ),
-      //                                 MessageType.image,
-      //                                 { mimetype: Mimetype.jpeg }
-      //                               );
-      //                               return await ӄʀǟӄɨռʐ
-      //                                 .sendMessage(
-      //                                   ֆǟӄʊʀǟ.chatId,
-      //                                   {
-      //                                     contentText: `✨𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬 @${աɦօֆɛռȶɦǟȶռʊʍ} 𝐋𝐞𝐯𝐞𝐥𝐞𝐝 𝐔𝐏 ,
-      // ╔◇══════════════◇╗
-      // ┊ 𝐑𝐚𝐧𝐤𝐢𝐧𝐠📜𝐒𝐲𝐬𝐭𝐞𝐦
-      // ╚◇══════════════◇╝
-
-      // *⚠️ Sorry We Had To Remake Ranking. So Old Datas Are Lost!*
-
-      // ╔════◇📜𝐑𝐚𝐧𝐤 𝐂𝐚𝐫𝐝
-      // ║🥂 𝗫𝗽: ${currentXP}
-      // ║🍩 𝗟𝗲𝘃𝗲𝗹: ${currentLvl}
-      // ║🎪 𝗚𝗿𝗼𝘂𝗽: ${groupDataRank.subject}
-      // ╚════════════╝
-
-      // ╔════◇🌿𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐚𝐧𝐤
-      // ║🛵 𝗕𝗼𝗻𝘂𝘀: 200coins
-      // ║🪙 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: Just Opened Your Account!
-      // ╚════════════╝
-
-      // ╔════◇🌿
-      // ║♠ The More You Talk, The More *Xp+Coins* You Gain.
-      // ║♠ You Can Spend The Coins in *${ᴋᴇɪ}shop!*
-      // ╚════════════╝`,
-      //                                     footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 ◈𝐄𝐧𝐠𝐢𝐧𝐞: kryozen${vers.vers} ⏋\n⎿ ◈𝐃𝐚𝐭𝐞: ${Clock} ⏋\n⎿ ◈𝐏𝐢𝐧𝐠: ${Ping}ms ⏋`,
-      //                                     buttons: [
-      //                                       {
-      //                                         buttonId: `${ᴋᴇɪ}rank`,
-      //                                         buttonText: {
-      //                                           displayText: `${ᴋᴇɪ}rank`,
-      //                                         },
-      //                                         type: 1,
-      //                                       },
-      //                                     ],
-      //                                     headerType: 4,
-      //                                     imageMessage: media.message.imageMessage,
-      //                                   },
-      //                                   MessageType.buttonsMessage,
-      //                                   {
-      //                                     quoted: chat,
-      //                                     contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
-      //                                   }
-      //                                 )
-      //                                 .then(
-      //                                   cleanRF.cleanRF(
-      //                                     `${աɦօֆɛռȶɦǟȶ.toString()}.jpeg`
-      //                                   )
-      //                                 )
-      //                                 .catch((Error) =>
-      //                                   ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
-      //                                 );
-      //                             } catch (Error) {
-      //                               console.log(Error);
-      //                             }
-      //                             `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-      //                           } else {
-      //                             try {
-      //                               var groupDataRank = await ӄʀǟӄɨռʐ.groupMetadata(
-      //                                 chat.key.remoteJid
-      //                               );
-      //                               var Ran =
-      //                                 Math.floor(Math.random() * (100 - 50 + 1)) + 50;
-      //                               userEco.money = userEco.money + Ran;
-      //                               await userEco
-      //                                 .save()
-      //                                 .catch((Error) =>
-      //                                   ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
-      //                                 );
-      //                               const media = await ӄʀǟӄɨռʐ.prepareMessage(
-      //                                 ֆǟӄʊʀǟ.chatId,
-      //                                 fs.readFileSync(
-      //                                   `${աɦօֆɛռȶɦǟȶ.toString()}.jpeg`
-      //                                 ),
-      //                                 MessageType.image,
-      //                                 { mimetype: Mimetype.jpeg }
-      //                               );
-      //                               return await ӄʀǟӄɨռʐ
-      //                                 .sendMessage(
-      //                                   ֆǟӄʊʀǟ.chatId,
-      //                                   {
-      //                                     contentText: `✨𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬 @${աɦօֆɛռȶɦǟȶռʊʍ} 𝐋𝐞𝐯𝐞𝐥𝐞𝐝 𝐔𝐏 ,
-      // ╔◇══════════════◇╗
-      // ┊ 𝐑𝐚𝐧𝐤𝐢𝐧𝐠📜𝐒𝐲𝐬𝐭𝐞𝐦
-      // ╚◇══════════════◇╝
-
-      // *⚠️ Sorry We Had To Remake Ranking. So Old Datas Are Lost!*
-
-      // ╔════◇📜𝐑𝐚𝐧𝐤
-      // ║🥂 𝗫𝗽: ${currentXP}
-      // ║🍩 𝗟𝗲𝘃𝗲𝗹: ${currentLvl}
-      // ║🎪 𝗚𝗿𝗼𝘂𝗽: ${groupDataRank.subject}
-      // ╚════════════╝
-
-      // ╔════◇🌿𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐚𝐧𝐤
-      // ║🛵 𝗕𝗼𝗻𝘂𝘀: ${Ran}coins
-      // ║🪙 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: ${userEco.money}coins
-      // ╚════════════╝
-
-      // ╔════◇🌿
-      // ║♠ The More You Talk, The More *Xp+Coins* You Gain.
-      // ║♠ You Can Spend The Coins in *${ᴋᴇɪ}shop!*
-      // ╚════════════╝`,
-      //                                     footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 ◈𝐄𝐧𝐠𝐢𝐧𝐞: kryozen${vers.vers} ⏋\n⎿ ◈𝐃𝐚𝐭𝐞: ${Clock} ⏋\n⎿ ◈𝐏𝐢𝐧𝐠: ${Ping}ms ⏋`,
-      //                                     buttons: [
-      //                                       {
-      //                                         buttonId: `${ᴋᴇɪ}rank`,
-      //                                         buttonText: {
-      //                                           displayText: `${ᴋᴇɪ}rank`,
-      //                                         },
-      //                                         type: 1,
-      //                                       },
-      //                                     ],
-      //                                     headerType: 4,
-      //                                     imageMessage: media.message.imageMessage,
-      //                                   },
-      //                                   MessageType.buttonsMessage,
-      //                                   {
-      //                                     quoted: chat,
-      //                                     contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
-      //                                   }
-      //                                 )
-      //                                 .then(
-      //                                   cleanRF.cleanRF(
-      //                                     `${աɦօֆɛռȶɦǟȶ.toString()}.jpeg`
-      //                                   )
-      //                                 )
-      //                                 .catch((Error) =>
-      //                                   ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
-      //                                 );
-      //                             } catch (Error) {
-      //                               console.log(Error);
-      //                             }
-      //                           }
-      //                         }
-      //                       );
-      //                     } catch (Error) {
-      //                       console.log(Error);
-      //                     }
-      //                   });
-      //                 }
-      //                 users.save().catch((Error) => console.log(Error));
-      //               }
-      //             }
-      //           );
-      //         } catch (Error) {
-      //           console.log(Error);
-      //         }
-      //       }
-      //       `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-      if (
-        ֆǟӄʊʀǟ.isGroup &&
-        !ֆǟӄʊʀǟ.fromMe &&
-        !ֆǟӄʊʀǟ.isSenderDev &&
-        ֆǟӄʊʀǟ.isBotGroupAdmin &&
-        !ֆǟӄʊʀǟ.isSenderGroupAdmin
-      ) {
-        LinkList.findOne(
-          {
-            serverID: ֆǟӄʊʀǟ.chatId,
-          },
-          async (Error, server) => {
-            if (Error) return console.log(Error);
-            if (!server) {
-              return;
-            } else {
-              const { Body_Check } = require(`./Body_Check`);
-              if (Body_Check(ֆǟӄʊʀǟ.body) === true) {
-                await Sakura_Buttons.MIB(
-                  ӄʀǟӄɨռʐ,
-                  chat,
-                  ֆǟӄʊʀǟ,
-                  `
+                "./Sakura☣️Reactor/ֆǟӄʊʀǟ.png"
+              );
+            }
+            `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+            if (
+              ֆǟӄʊʀǟ.isGroup &&
+              !ֆǟӄʊʀǟ.fromMe &&
+              !ֆǟӄʊʀǟ.isSenderDev &&
+              ֆǟӄʊʀǟ.isBotGroupAdmin &&
+              !ֆǟӄʊʀǟ.isSenderGroupAdmin
+            ) {
+              LinkList.findOne(
+                {
+                  serverID: ֆǟӄʊʀǟ.chatId,
+                },
+                async (Error, server) => {
+                  if (Error) return console.log(Error);
+                  if (!server) {
+                    return;
+                  } else {
+                    const { Body_Check } = require(`./Body_Check`);
+                    if (Body_Check(ֆǟӄʊʀǟ.body) === true) {
+                      await Sakura_Buttons.MIB(
+                        ӄʀǟӄɨռʐ,
+                        chat,
+                        ֆǟӄʊʀǟ,
+                        `
 ╔════◇🌋  𝐀𝐧𝐭𝐢𝐥𝐢𝐧𝐤 𝐓𝐫𝐢𝐠𝐠𝐞𝐫𝐞𝐝
 ║🔻 𝗣𝘂𝗻𝗶𝘀𝗵𝗺𝗲𝗻𝘁: _You Will Be Kicked!_
 ║🔻 𝗞𝗶𝗰𝗸-𝗧𝗶𝗺𝗲: _2seconds_
 ╚════════════╝`,
-                  `./Sakura☣️Reactor/Sakura_Antilink.png`
-                );
-                setTimeout(async () => {
-                  return await ӄʀǟӄɨռʐ
-                    .groupRemove(ֆǟӄʊʀǟ.chatId, [ֆǟӄʊʀǟ.sender])
-                    .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-                }, 2000);
-              } else {
-                console.log(
-                  "|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|"
-                );
-              }
+                        `./Sakura☣️Reactor/Sakura_Antilink.png`
+                      );
+                      setTimeout(async () => {
+                        return await ӄʀǟӄɨռʐ
+                          .groupRemove(ֆǟӄʊʀǟ.chatId, [ֆǟӄʊʀǟ.sender])
+                          .catch((Error) =>
+                            ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
+                          );
+                      }, 2000);
+                    } else {
+                      console.log(
+                        "|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|"
+                      );
+                    }
+                  }
+                }
+              );
             }
-          }
-        );
-      }
-      `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-      if (ֆǟӄʊʀǟ.isCmd) {
-        const gMetadata = await ӄʀǟӄɨռʐ.groupMetadata(
-          "120363039223842047@g.us"
-        );
-        const gMetadataa = await ӄʀǟӄɨռʐ.groupMetadata(
-          "120363020792949649@g.us"
-        );
-        let members = [];
-        for (var i = 0; i < gMetadata.participants.length; i++) {
-          members[i] = gMetadata.participants[i].jid;
-        }
-        let memberss = [];
-        for (var i = 0; i < gMetadataa.participants.length; i++) {
-          memberss[i] = gMetadataa.participants[i].jid;
-        }
-        `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-        if (
-          ֆǟӄʊʀǟ.isCmd &&
-          !ֆǟӄʊʀǟ.body.includes(ᴋᴇɪ + "help") &&
-          !ֆǟӄʊʀǟ.body.includes(ᴋᴇɪ + "menu")
-        )
-          if (!members.includes(աɦօֆɛռȶɦǟȶ) && !memberss.includes(աɦօֆɛռȶɦǟȶ)) {
-            return Sakura_Buttons.MTB(
-              ӄʀǟӄɨռʐ,
-              chat,
-              ֆǟӄʊʀǟ,
-              `
+            `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+            if (ֆǟӄʊʀǟ.isCmd) {
+              const gMetadata = await ӄʀǟӄɨռʐ.groupMetadata(
+                "120363039223842047@g.us"
+              );
+              const gMetadataa = await ӄʀǟӄɨռʐ.groupMetadata(
+                "120363020792949649@g.us"
+              );
+              let members = [];
+              for (var i = 0; i < gMetadata.participants.length; i++) {
+                members[i] = gMetadata.participants[i].jid;
+              }
+              let memberss = [];
+              for (var i = 0; i < gMetadataa.participants.length; i++) {
+                memberss[i] = gMetadataa.participants[i].jid;
+              }
+              `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+              if (
+                ֆǟӄʊʀǟ.isCmd &&
+                !ֆǟӄʊʀǟ.body.includes(ᴋᴇɪ + "help") &&
+                !ֆǟӄʊʀǟ.body.includes(ᴋᴇɪ + "menu")
+              )
+                if (
+                  !members.includes(աɦօֆɛռȶɦǟȶ) &&
+                  !memberss.includes(աɦօֆɛռȶɦǟȶ)
+                ) {
+                  return Sakura_Buttons.MTB(
+                    ӄʀǟӄɨռʐ,
+                    chat,
+                    ֆǟӄʊʀǟ,
+                    `
 ╔════◇𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
 ║♨️ _First be a member of Sakura Group._
 ║🚨 *Why?* _Monitor AntiSpams & BugReports._ 
@@ -863,69 +556,346 @@ ${update.desc}`,
 ║💼 𝐆𝐫𝐨𝐮𝐩: ${_𝔏𝔞𝔟_.HASHS}
 ║💻 𝐆𝐢𝐭𝐡𝐮𝐛: https://github.com/Krakinz/Sakura
 ╚════════════╝`
-            );
-          }
-        `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-        const jsoncool = JSON.parse(
-          fs.readFileSync("./Sakura🛰️Server/Coolist.json")
-        );
-        if (jsoncool.includes(աɦօֆɛռȶɦǟȶ)) {
-          if (ֆǟӄʊʀǟ.isSenderDev) {
-            return Sakura_Buttons.MTB(
-              ӄʀǟӄɨռʐ,
-              chat,
-              ֆǟӄʊʀǟ,
-              `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ}, _Sir Wait For 5s_`
-            );
-          } else {
-            return Sakura_Buttons.MTB(
-              ӄʀǟӄɨռʐ,
-              chat,
-              ֆǟӄʊʀǟ,
-              `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
+                  );
+                }
+              `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+              const jsoncool = JSON.parse(
+                fs.readFileSync("./Sakura🛰️Server/Coolist.json")
+              );
+              if (jsoncool.includes(աɦօֆɛռȶɦǟȶ)) {
+                if (ֆǟӄʊʀǟ.isSenderDev) {
+                  return Sakura_Buttons.MTB(
+                    ӄʀǟӄɨռʐ,
+                    chat,
+                    ֆǟӄʊʀǟ,
+                    `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ}, _Sir Wait For 5s_`
+                  );
+                } else {
+                  return Sakura_Buttons.MTB(
+                    ӄʀǟӄɨռʐ,
+                    chat,
+                    ֆǟӄʊʀǟ,
+                    `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
 ╔◇══════════════◇╗
 ┊   𝐀𝐧𝐭𝐢🤖𝐒𝐩𝐚𝐦
 ┊  _Wait For 15s_
 ╚◇══════════════◇╝`
-            );
-          }
-        }
-        `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-        console.log(
-          Kolor.green(
-            `═════════════|🍃𝐒𝐚𝐤𝐮𝐫𝐚 𝐕𝐞𝐫𝐢𝐟𝐢𝐞𝐝 𝐅𝐢𝐥𝐞: ` +
-              ֆǟӄʊʀǟ.commandName.toUpperCase()
-          )
-        );
-        console.log(chat);
-        console.log(Kolor.green(`══════════════| ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜)`));
-        const ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ = ꜱɪᴛʀᴀᴘ.get(ֆǟӄʊʀǟ.commandName);
-        var Needs = ֆǟӄʊʀǟ.body.trim().split(/\s+/).slice(1);
-        if (!ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ) {
-          return Sakura_Buttons.MTB(
-            ӄʀǟӄɨռʐ,
-            chat,
-            ֆǟӄʊʀǟ,
-            `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
+                  );
+                }
+              }
+              `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+              console.log(
+                Kolor.green(
+                  `═════════════|🍃𝐒𝐚𝐤𝐮𝐫𝐚 𝐕𝐞𝐫𝐢𝐟𝐢𝐞𝐝 𝐅𝐢𝐥𝐞: ` +
+                    ֆǟӄʊʀǟ.commandName.toUpperCase()
+                )
+              );
+              console.log(chat);
+              console.log(
+                Kolor.green(`══════════════| ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜)`)
+              );
+              const ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ = ꜱɪᴛʀᴀᴘ.get(ֆǟӄʊʀǟ.commandName);
+              var Needs = ֆǟӄʊʀǟ.body.trim().split(/\s+/).slice(1);
+              if (!ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ) {
+                return Sakura_Buttons.MTB(
+                  ӄʀǟӄɨռʐ,
+                  chat,
+                  ֆǟӄʊʀǟ,
+                  `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
 
 ╔════| 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
 ║❌ 𝐍𝐨 𝐒𝐮𝐜𝐡 𝐂𝐨𝐦𝐦𝐚𝐧𝐝 𝐢𝐧 𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞!
 ║🍃 𝐏𝐫𝐞𝐬𝐬 𝐅𝐨𝐫 𝐒𝐚𝐤𝐮𝐫𝐚 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬👇🏽
 ╚════════════╝`
-          );
-          `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-        } else {
-          return ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ.handle(
-            ӄʀǟӄɨռʐ,
-            chat,
-            ֆǟӄʊʀǟ,
-            Needs,
-            ꜱɪᴛʀᴀᴘ,
-            Clock,
-            Ping,
-            Timers
-          );
-        }
+                );
+                `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+              } else {
+                return ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ.handle(
+                  ӄʀǟӄɨռʐ,
+                  chat,
+                  ֆǟӄʊʀǟ,
+                  Needs,
+                  ꜱɪᴛʀᴀᴘ,
+                  Clock,
+                  Ping,
+                  Timers
+                );
+              }
+            }
+          }
+        );
+      } else {
+        Ban.findOne(
+          {
+            ID: աɦօֆɛռȶɦǟȶ,
+            serverID: ֆǟӄʊʀǟ.chatId,
+          },
+          async (Error, userBan) => {
+            if (Error) {
+              ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
+              return;
+            }
+            if (userBan) {
+              console.log(userBan);
+              console.log(
+                Kolor.red(
+                  "═══════════════| 🔻Banned Group/user🔻 |═══════════════"
+                )
+              );
+              return;
+            }
+            `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+            try {
+              const ᴍɪᴢᴜᴋɪɢɪᴛ = require(`simple-git`)();
+              await ᴍɪᴢᴜᴋɪɢɪᴛ.fetch();
+              var ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ = await ᴍɪᴢᴜᴋɪɢɪᴛ.log([
+                `KrakinzLab..origin/KrakinzLab`,
+              ]);
+              if (ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total != 0) {
+                require(`simple-git`)()
+                  .exec(() => {
+                    Sakura_Buttons.MTB(
+                      ӄʀǟӄɨռʐ,
+                      chat,
+                      ֆǟӄʊʀǟ,
+                      `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
+
+╔════| 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
+║💡INFO ⬰ New Updates Pending. Auto Updating...
+╚════════════╝`
+                    );
+                    console.log(
+                      Kolor.yellow(`💡INFO ⬰ 𝐍𝐞𝐰 𝐔𝐩𝐝𝐚𝐭𝐞 𝐩𝐞𝐧𝐝𝐢𝐧𝐠, 𝐮𝐩𝐝𝐚𝐭𝐢𝐧𝐠...`)
+                    );
+                  })
+                  .pull(async (ℓαвєяяσя, update) => {
+                    if (ℓαвєяяσя) {
+                      try {
+                        const mergeSummary = await ᴍɪᴢᴜᴋɪɢɪᴛ.merge();
+                        Sakura_Buttons.MTB(
+                          ӄʀǟӄɨռʐ,
+                          chat,
+                          ֆǟӄʊʀǟ,
+                          `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
+
+╔════| 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
+║💡INFO ⬰ Auto Updated Sakura With Latest *[${mergeSummary.merges.length}]* Changes.
+╚════════════╝`
+                        );
+                        console.log(
+                          Kolor.green(
+                            `💡INFO ⬰ 𝗔𝘂𝘁𝗼-𝗨𝗽𝗱𝗮𝘁𝗲𝗱 ⚡𝐒𝐚𝐤𝐮𝐫𝐚™ 𝘄𝗶𝘁𝗵 𝗹𝗮𝘁𝗲𝘀𝘁 [${mergeSummary.merges.length}] 𝗰𝗵𝗮𝗻𝗴𝗲𝘀.`
+                          )
+                        );
+                      } catch (ℓαвєяяσя) {
+                        console.log(
+                          Kolor.red(
+                            `❌ERROR ⬰ 𝗠𝗲𝗿𝗴𝗲 𝗿𝗲𝘀𝘂𝗹𝘁𝗲𝗱 𝗶𝗻 ${Kolor.red(
+                              ℓαвєяяσя
+                            )} 𝗰𝗼𝗻𝗳𝗹𝗶𝗰𝘁𝘀!`
+                          )
+                        );
+                      }
+                    } else if (update && update.summary.changes) {
+                      var childs = require(`child_process`).exec(
+                        `python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`
+                      );
+                      childs.stdout.pipe(process.stdout);
+                      childs.on(`exit`, async function () {
+                        process.exitCode = 1;
+                      });
+                    }
+                  });
+              }
+            } catch (Error) {
+              console.log(Error);
+              console.log(Kolor.red(`❌ERROR ⬰ 𝗣𝗹𝗲𝗮𝘀𝗲 𝗿𝗲𝗱𝗲𝗽𝗹𝗼𝘆 𝘆𝗼𝘂𝗿 𝗯𝗼𝘁!`));
+            }
+            `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+            if (
+              ֆǟӄʊʀǟ.isCmd &&
+              !ֆǟӄʊʀǟ.isGroup &&
+              !ֆǟӄʊʀǟ.fromMe &&
+              !ֆǟӄʊʀǟ.isSenderDev &&
+              !ֆǟӄʊʀǟ.body.includes(ᴋᴇɪ + "help") &&
+              !ֆǟӄʊʀǟ.body.includes(ᴋᴇɪ + "request")
+            ) {
+              return Sakura_Buttons.MIB(
+                ӄʀǟӄɨռʐ,
+                chat,
+                ֆǟӄʊʀǟ,
+                `
+╔════◇❓ 𝐇𝐨𝐰 𝐓𝐨 𝐆𝐞𝐭 𝐒𝐚𝐤𝐮𝐫𝐚?
+║• Join Sakura Group.
+║• Your Group Should Have *10 members* atleast.
+║• Turn Disappearing Message *Off* in your Gc.
+║• *Private:* use ${ᴋᴇɪ}request _your gc link_
+╚════════════╝
+
+╔════◇🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ}, 
+║💼 𝐆𝐫𝐨𝐮𝐩: ${_𝔏𝔞𝔟_.HASH}
+║💼 𝐆𝐫𝐨𝐮𝐩: ${_𝔏𝔞𝔟_.HASHS}
+║💻 𝐆𝐢𝐭𝐡𝐮𝐛: https://github.com/Krakinz/Sakura
+╚════════════╝`,
+                "./Sakura☣️Reactor/ֆǟӄʊʀǟ.png"
+              );
+            }
+            `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+            if (
+              ֆǟӄʊʀǟ.isGroup &&
+              !ֆǟӄʊʀǟ.fromMe &&
+              !ֆǟӄʊʀǟ.isSenderDev &&
+              ֆǟӄʊʀǟ.isBotGroupAdmin &&
+              !ֆǟӄʊʀǟ.isSenderGroupAdmin
+            ) {
+              LinkList.findOne(
+                {
+                  serverID: ֆǟӄʊʀǟ.chatId,
+                },
+                async (Error, server) => {
+                  if (Error) return console.log(Error);
+                  if (!server) {
+                    return;
+                  } else {
+                    const { Body_Check } = require(`./Body_Check`);
+                    if (Body_Check(ֆǟӄʊʀǟ.body) === true) {
+                      await Sakura_Buttons.MIB(
+                        ӄʀǟӄɨռʐ,
+                        chat,
+                        ֆǟӄʊʀǟ,
+                        `
+╔════◇🌋  𝐀𝐧𝐭𝐢𝐥𝐢𝐧𝐤 𝐓𝐫𝐢𝐠𝐠𝐞𝐫𝐞𝐝
+║🔻 𝗣𝘂𝗻𝗶𝘀𝗵𝗺𝗲𝗻𝘁: _You Will Be Kicked!_
+║🔻 𝗞𝗶𝗰𝗸-𝗧𝗶𝗺𝗲: _2seconds_
+╚════════════╝`,
+                        `./Sakura☣️Reactor/Sakura_Antilink.png`
+                      );
+                      setTimeout(async () => {
+                        return await ӄʀǟӄɨռʐ
+                          .groupRemove(ֆǟӄʊʀǟ.chatId, [ֆǟӄʊʀǟ.sender])
+                          .catch((Error) =>
+                            ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
+                          );
+                      }, 2000);
+                    } else {
+                      console.log(
+                        "|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|"
+                      );
+                    }
+                  }
+                }
+              );
+            }
+            `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+            if (ֆǟӄʊʀǟ.isCmd) {
+              const gMetadata = await ӄʀǟӄɨռʐ.groupMetadata(
+                "120363039223842047@g.us"
+              );
+              const gMetadataa = await ӄʀǟӄɨռʐ.groupMetadata(
+                "120363020792949649@g.us"
+              );
+              let members = [];
+              for (var i = 0; i < gMetadata.participants.length; i++) {
+                members[i] = gMetadata.participants[i].jid;
+              }
+              let memberss = [];
+              for (var i = 0; i < gMetadataa.participants.length; i++) {
+                memberss[i] = gMetadataa.participants[i].jid;
+              }
+              `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+              if (
+                ֆǟӄʊʀǟ.isCmd &&
+                !ֆǟӄʊʀǟ.body.includes(ᴋᴇɪ + "help") &&
+                !ֆǟӄʊʀǟ.body.includes(ᴋᴇɪ + "menu")
+              )
+                if (
+                  !members.includes(աɦօֆɛռȶɦǟȶ) &&
+                  !memberss.includes(աɦօֆɛռȶɦǟȶ)
+                ) {
+                  return Sakura_Buttons.MTB(
+                    ӄʀǟӄɨռʐ,
+                    chat,
+                    ֆǟӄʊʀǟ,
+                    `
+╔════◇𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
+║♨️ _First be a member of Sakura Group._
+║🚨 *Why?* _Monitor AntiSpams & BugReports._ 
+║🍹 *Perks?* _Use All Commands in Any Group._
+╚════════════╝
+
+╔════◇🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ}, 
+║💼 𝐆𝐫𝐨𝐮𝐩: ${_𝔏𝔞𝔟_.HASH}
+║💼 𝐆𝐫𝐨𝐮𝐩: ${_𝔏𝔞𝔟_.HASHS}
+║💻 𝐆𝐢𝐭𝐡𝐮𝐛: https://github.com/Krakinz/Sakura
+╚════════════╝`
+                  );
+                }
+              `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+              const jsoncool = JSON.parse(
+                fs.readFileSync("./Sakura🛰️Server/Coolist.json")
+              );
+              if (jsoncool.includes(աɦօֆɛռȶɦǟȶ)) {
+                if (ֆǟӄʊʀǟ.isSenderDev) {
+                  return Sakura_Buttons.MTB(
+                    ӄʀǟӄɨռʐ,
+                    chat,
+                    ֆǟӄʊʀǟ,
+                    `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ}, _Sir Wait For 5s_`
+                  );
+                } else {
+                  return Sakura_Buttons.MTB(
+                    ӄʀǟӄɨռʐ,
+                    chat,
+                    ֆǟӄʊʀǟ,
+                    `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
+╔◇══════════════◇╗
+┊   𝐀𝐧𝐭𝐢🤖𝐒𝐩𝐚𝐦
+┊  _Wait For 15s_
+╚◇══════════════◇╝`
+                  );
+                }
+              }
+              `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+              console.log(
+                Kolor.green(
+                  `═════════════|🍃𝐒𝐚𝐤𝐮𝐫𝐚 𝐕𝐞𝐫𝐢𝐟𝐢𝐞𝐝 𝐅𝐢𝐥𝐞: ` +
+                    ֆǟӄʊʀǟ.commandName.toUpperCase()
+                )
+              );
+              console.log(chat);
+              console.log(
+                Kolor.green(`══════════════| ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜)`)
+              );
+              const ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ = ꜱɪᴛʀᴀᴘ.get(ֆǟӄʊʀǟ.commandName);
+              var Needs = ֆǟӄʊʀǟ.body.trim().split(/\s+/).slice(1);
+              if (!ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ) {
+                return Sakura_Buttons.MTB(
+                  ӄʀǟӄɨռʐ,
+                  chat,
+                  ֆǟӄʊʀǟ,
+                  `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
+
+╔════| 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
+║❌ 𝐍𝐨 𝐒𝐮𝐜𝐡 𝐂𝐨𝐦𝐦𝐚𝐧𝐝 𝐢𝐧 𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞!
+║🍃 𝐏𝐫𝐞𝐬𝐬 𝐅𝐨𝐫 𝐒𝐚𝐤𝐮𝐫𝐚 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬👇🏽
+╚════════════╝`
+                );
+                `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+              } else {
+                return ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ.handle(
+                  ӄʀǟӄɨռʐ,
+                  chat,
+                  ֆǟӄʊʀǟ,
+                  Needs,
+                  ꜱɪᴛʀᴀᴘ,
+                  Clock,
+                  Ping,
+                  Timers
+                );
+              }
+            }
+          }
+        );
       }
     });
   }
