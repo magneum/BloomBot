@@ -1,7 +1,5 @@
-var format = /^[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]*$/;
-const File = " silver";
-if (File.match(format)) {
-  console.log("True");
-} else {
-  console.log("False");
+var format = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;
+string = "*59884";
+if (format.test(string)) {
+  console.log("Return");
 }
