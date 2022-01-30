@@ -43,6 +43,8 @@ function Body_Check(Argument) {
     return true;
   } else if (Argument.includes("wa.me/")) {
     return true;
+  } else if (Argument.includes("www.")) {
+    return true;
   }
   return false;
 }
