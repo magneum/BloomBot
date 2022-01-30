@@ -52,6 +52,7 @@ module.exports = {
 
 ╔════◇🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ}, 
 ║💼 𝐆𝐫𝐨𝐮𝐩: ${_𝔏𝔞𝔟_.HASH}
+║💼 𝐆𝐫𝐨𝐮𝐩: ${_𝔏𝔞𝔟_.HASHS}
 ║💻 𝐆𝐢𝐭𝐡𝐮𝐛: github.com/krakinz/sakura
 ╚════════════╝`
         );
@@ -100,6 +101,7 @@ module.exports = {
 
 ╔════◇🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ}, 
 ║💼 𝐆𝐫𝐨𝐮𝐩: ${_𝔏𝔞𝔟_.HASH}
+║💼 𝐆𝐫𝐨𝐮𝐩: ${_𝔏𝔞𝔟_.HASHS}
 ║💻 𝐆𝐢𝐭𝐡𝐮𝐛: github.com/krakinz/sakura
 ╚════════════╝`,
         OutPutResult

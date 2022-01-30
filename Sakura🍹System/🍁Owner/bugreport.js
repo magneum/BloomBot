@@ -67,7 +67,7 @@ _If Found the report was just for fun then you will be banned by the bot!_
 
 ────★ 𝐒𝐮𝐩𝐩𝐨𝐫𝐭
 *🔥 ɢʀᴏᴜᴘ:* ${_𝔏𝔞𝔟_.HASH}`,
-            footerText: `|(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭|👿𝐄𝐧𝐠𝐢𝐧𝐞: _KryoZen 3_\n${Clock}`,
+            footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚◈𝐄𝐧𝐠𝐢𝐧𝐞: _kryozen${vers.vers}_ ⏋\n⎿ 𝐃𝐚𝐭𝐞: _${Clock}_◈𝐏𝐢𝐧𝐠: _${Ping}ms_ ⏋`,
             buttons: [
               {
                 buttonId: `${ᴋᴇɪ}help`,
@@ -95,7 +95,7 @@ _If Found the report was just for fun then you will be banned by the bot!_
           MessageType.video,
           {
             mimetype: `video/gif`,
-            caption: `|(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭|👿𝐄𝐧𝐠𝐢𝐧𝐞: _KryoZen 3_\n${Clock}
+            caption: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚◈𝐄𝐧𝐠𝐢𝐧𝐞: _kryozen${vers.vers}_ ⏋\n⎿ 𝐃𝐚𝐭𝐞: _${Clock}_◈𝐏𝐢𝐧𝐠: _${Ping}ms_ ⏋
 
 ⚡𝐓𝐨𝐩𝐢𝐜: _*${FinalName}*_
 🐞𝐑𝐞𝐩𝐨𝐫𝐭𝐞𝐝 𝐁𝐲: *${աɦօֆɛռȶɦǟȶ}*
