@@ -137,15 +137,20 @@ try {
     ӄʀǟӄɨռʐ.connect().then(Tǟɮʟɛɨȶ(ꜱɪᴛʀᴀᴘ, commandUsage));
     ӄʀǟӄɨռʐ.on(`group-update`, async (update) => {
       try {
+        𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄʀǟӄɨռʐ.getProfilePicture(update.jid);
+      } catch {
+        𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = "https://i.postimg.cc/gcw6vq3X/Npp.png";
+      }
+      try {
         const groupupdateID = await ӄʀǟӄɨռʐ.groupMetadata(update.jid);
         if (update.announce == `false`) {
           return await ӄʀǟӄɨռʐ
             .sendMessage(
               groupupdateID.id,
-              { url: `./Sakura☣️Reactor/ֆǟӄʊʀǟ™.mp4` },
-              MessageType.video,
+              { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 },
+              MessageType.image,
               {
-                mimetype: `video/gif`,
+                mimetype: Mimetype.png,
                 caption: `*🍹Attention Here Everyone In the Group!🍹*
 
 ╔═══════★
@@ -161,10 +166,10 @@ try {
           return await ӄʀǟӄɨռʐ
             .sendMessage(
               groupupdateID.id,
-              { url: `./Sakura☣️Reactor/ֆǟӄʊʀǟ™.mp4` },
-              MessageType.video,
+              { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 },
+              MessageType.image,
               {
-                mimetype: `video/gif`,
+                mimetype: Mimetype.png,
                 caption: `*🍹Attention Here Everyone In the Group!🍹*
 
 ╔═══════★
@@ -181,10 +186,10 @@ try {
           return await ӄʀǟӄɨռʐ
             .sendMessage(
               groupupdateID.id,
-              { url: `./Sakura☣️Reactor/ֆǟӄʊʀǟ™.mp4` },
-              MessageType.video,
+              { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 },
+              MessageType.image,
               {
-                mimetype: `video/gif`,
+                mimetype: Mimetype.png,
                 contextInfo: {
                   mentionedJid: [tag],
                 },
@@ -207,10 +212,10 @@ ${update.desc}`,
           return await ӄʀǟӄɨռʐ
             .sendMessage(
               groupupdateID.id,
-              { url: `./Sakura☣️Reactor/ֆǟӄʊʀǟ™.mp4` },
-              MessageType.video,
+              { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 },
+              MessageType.image,
               {
-                mimetype: `video/gif`,
+                mimetype: Mimetype.png,
                 caption: `*🍹Attention Here Everyone In the Group!🍹*
 
 ╔═══════★
@@ -226,10 +231,10 @@ ${update.desc}`,
           return await ӄʀǟӄɨռʐ
             .sendMessage(
               groupupdateID.id,
-              { url: `./Sakura☣️Reactor/ֆǟӄʊʀǟ™.mp4` },
-              MessageType.video,
+              { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 },
+              MessageType.image,
               {
-                mimetype: `video/gif`,
+                mimetype: Mimetype.png,
                 caption: `*🍹Attention Here Everyone In the Group!🍹*
 
 ╔═══════★
