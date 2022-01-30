@@ -73,13 +73,15 @@ module.exports = {
       `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
       UsersSakura.findOne(
         {
-          ID: ֆǟӄʊʀǟ.sender,
+          ID: աɦօֆɛռȶɦǟȶ,
+          serverID: ֆǟӄʊʀǟ.chatId,
         },
         async (Error, users) => {
           if (Error) console.log(Error);
           if (!users) {
             var newUsers = new UsersSakura({
-              ID: ֆǟӄʊʀǟ.sender,
+              ID: աɦօֆɛռȶɦǟȶ,
+              serverID: ֆǟӄʊʀǟ.chatId,
               xp: xpAdd,
               level: 0,
             });
@@ -109,6 +111,8 @@ module.exports = {
 ║🍩 𝗟𝗲𝘃𝗲𝗹: ${users.level}
 ║🎪 𝗚𝗿𝗼𝘂𝗽: ${groupDataRank.subject}
 ╚════════════╝
+
+*⚠️ Sorry We Had To Remake Ranking. So Old Datas Are Lost!*
 
 ╔════◇🌿
 ║♠ The More You Talk, The More *Xp+Coins* You Gain.

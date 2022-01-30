@@ -470,6 +470,7 @@ ${update.desc}`,
           await UsersSakura.findOne(
             {
               ID: աɦօֆɛռȶɦǟȶ,
+              serverID: ֆǟӄʊʀǟ.chatId,
             },
             async (Error, users) => {
               var randomMC = require("random-material-color");
@@ -479,6 +480,7 @@ ${update.desc}`,
               if (!users) {
                 var newUsers = new UsersSakura({
                   ID: աɦօֆɛռȶɦǟȶ,
+                  serverID: ֆǟӄʊʀǟ.chatId,
                   xp: Math.ceil(Math.random() * 40),
                   level: 0,
                 });
