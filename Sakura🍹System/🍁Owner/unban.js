@@ -37,7 +37,7 @@ module.exports = {
         var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
         var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
         if (Receiver === աɦօֆɛռȶɦǟȶ) {
-          return Sakura_Buttons.MTB(
+          return Sakura_Buttons.MIB(
             ӄʀǟӄɨռʐ,
             chat,
             ֆǟӄʊʀǟ,
@@ -46,7 +46,8 @@ module.exports = {
 ╔════◇🛡️𝐒𝐮𝐝𝐨 𝐔𝐧𝐁𝐚𝐧:
 ║🍕 𝐅𝐫𝐨𝐦: @${աɦօֆɛռȶɦǟȶռʊʍ}
 ║🔓 𝐒𝐭𝐚𝐭𝐮𝐬: _Can't Use On My-Self_
-╚════════════╝`
+╚════════════╝`,
+            "./Sakura☣️Reactor/Sakura_Bans.png"
           );
         }
       }
@@ -63,7 +64,7 @@ module.exports = {
               return;
             }
             if (!userBan) {
-              return Sakura_Buttons.MTB(
+              return Sakura_Buttons.MIB(
                 ӄʀǟӄɨռʐ,
                 chat,
                 ֆǟӄʊʀǟ,
@@ -72,13 +73,14 @@ module.exports = {
 ╔════◇🛡️𝐒𝐮𝐝𝐨 𝐔𝐧𝐁𝐚𝐧:
 ║🍕 𝐅𝐫𝐨𝐦: @${աɦօֆɛռȶɦǟȶռʊʍ}
 ║🔓 𝐒𝐭𝐚𝐭𝐮𝐬: @${քɛʀֆօռɢօȶռʊʍ} _Was Not Banned!_
-╚════════════╝`
+╚════════════╝`,
+                "./Sakura☣️Reactor/Sakura_Bans.png"
               );
             }
             await userBan
               .delete()
               .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-            return Sakura_Buttons.MTB(
+            return Sakura_Buttons.MIB(
               ӄʀǟӄɨռʐ,
               chat,
               ֆǟӄʊʀǟ,
@@ -87,7 +89,8 @@ module.exports = {
 ╔════◇🛡️𝐒𝐮𝐝𝐨 𝐔𝐧𝐁𝐚𝐧:
 ║🍕 𝐅𝐫𝐨𝐦: @${աɦօֆɛռȶɦǟȶռʊʍ}
 ║🔓 𝐒𝐭𝐚𝐭𝐮𝐬: @${քɛʀֆօռɢօȶռʊʍ} _Has Been Un-Banned!_
-╚════════════╝`
+╚════════════╝`,
+              "./Sakura☣️Reactor/Sakura_Bans.png"
             );
           }
         );
@@ -104,7 +107,7 @@ module.exports = {
               return;
             }
             if (!userBan) {
-              return Sakura_Buttons.MTB(
+              return Sakura_Buttons.MIB(
                 ӄʀǟӄɨռʐ,
                 chat,
                 ֆǟӄʊʀǟ,
@@ -113,13 +116,14 @@ module.exports = {
 ╔════◇🛡️𝐒𝐮𝐝𝐨 𝐔𝐧𝐁𝐚𝐧:
 ║🍕 𝐅𝐫𝐨𝐦: @${աɦօֆɛռȶɦǟȶռʊʍ}
 ║🔓 𝐒𝐭𝐚𝐭𝐮𝐬: ${groupData.subject} _Was Not Banned!_
-╚════════════╝`
+╚════════════╝`,
+                "./Sakura☣️Reactor/Sakura_Bans.png"
               );
             }
             await userBan
               .delete()
               .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-            return Sakura_Buttons.MTB(
+            return Sakura_Buttons.MIB(
               ӄʀǟӄɨռʐ,
               chat,
               ֆǟӄʊʀǟ,
@@ -128,7 +132,8 @@ module.exports = {
 ╔════◇🛡️𝐒𝐮𝐝𝐨 𝐔𝐧𝐁𝐚𝐧:
 ║🍕 𝐅𝐫𝐨𝐦: @${աɦօֆɛռȶɦǟȶռʊʍ}
 ║🔓 𝐒𝐭𝐚𝐭𝐮𝐬: ${groupData.subject} _Has Been Un-Banned!_
-╚════════════╝`
+╚════════════╝`,
+              "./Sakura☣️Reactor/Sakura_Bans.png"
             );
           }
         );
@@ -146,7 +151,7 @@ module.exports = {
               return;
             }
             if (!userBan) {
-              return Sakura_Buttons.MTB(
+              return Sakura_Buttons.MIB(
                 ӄʀǟӄɨռʐ,
                 chat,
                 ֆǟӄʊʀǟ,
@@ -155,13 +160,14 @@ module.exports = {
 ╔════◇🛡️𝐒𝐮𝐝𝐨 𝐔𝐧𝐁𝐚𝐧:
 ║🍕 𝐅𝐫𝐨𝐦: @${աɦօֆɛռȶɦǟȶռʊʍ}
 ║🔓 𝐒𝐭𝐚𝐭𝐮𝐬: @${քɛʀֆօռɢօȶռʊʍ} _Was Not Banned!_
-╚════════════╝`
+╚════════════╝`,
+                "./Sakura☣️Reactor/Sakura_Bans.png"
               );
             }
             await userBan
               .delete()
               .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-            return Sakura_Buttons.MTB(
+            return Sakura_Buttons.MIB(
               ӄʀǟӄɨռʐ,
               chat,
               ֆǟӄʊʀǟ,
@@ -170,7 +176,8 @@ module.exports = {
 ╔════◇🛡️𝐒𝐮𝐝𝐨 𝐔𝐧𝐁𝐚𝐧:
 ║🍕 𝐅𝐫𝐨𝐦: @${աɦօֆɛռȶɦǟȶռʊʍ}
 ║🔓 𝐒𝐭𝐚𝐭𝐮𝐬: @${քɛʀֆօռɢօȶռʊʍ} _Has Been Un-Banned!_
-╚════════════╝`
+╚════════════╝`,
+              "./Sakura☣️Reactor/Sakura_Bans.png"
             );
           }
         );
