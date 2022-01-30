@@ -40,7 +40,7 @@ if (time2 < `11:00:00`) {
 if (time2 < `05:00:00`) {
   var Timers = `𝐍𝐢𝐠𝐡𝐭💤`;
 }
-exports.catch = async (Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart) => {
+exports.catch = async (Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat) => {
   var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
   var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
   const defaultnm = ֆǟӄʊʀǟ.commandName;
@@ -67,7 +67,7 @@ exports.catch = async (Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart) => {
     },
     MessageType.buttonsMessage,
     {
-      quoted: mozart,
+      quoted: chat,
       contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
     }
   );
@@ -88,7 +88,7 @@ exports.catch = async (Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart) => {
     },
     MessageType.buttonsMessage,
     {
-      quoted: mozart,
+      quoted: chat,
     }
   );
 };

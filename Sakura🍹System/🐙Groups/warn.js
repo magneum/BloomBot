@@ -20,7 +20,7 @@ var newScpt = scriptName.slice(0, -3).toLowerCase();
 module.exports = {
   name: newScpt,
   ֆǟӄʊʀǟӄǟɨʐօ: `${ᴋᴇɪ}warn _reply to person_`,
-  async handle(ӄʀǟӄɨռʐ, mozart, ֆǟӄʊʀǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
+  async handle(ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
     try {
       var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
       const defaultnm = ֆǟӄʊʀǟ.commandName;
@@ -30,7 +30,7 @@ module.exports = {
       if (!ֆǟӄʊʀǟ.isGroup) {
         return Sakura_Buttons.MTB(
           ӄʀǟӄɨռʐ,
-          mozart,
+          chat,
           ֆǟӄʊʀǟ,
           `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ}, _This Command is Only For Groups!_!`
         );
@@ -39,7 +39,7 @@ module.exports = {
       if (ֆǟӄʊʀǟ.isGroup && !ֆǟӄʊʀǟ.isSenderGroupAdmin) {
         return Sakura_Buttons.MIB(
           ӄʀǟӄɨռʐ,
-          mozart,
+          chat,
           ֆǟӄʊʀǟ,
           `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
 ╔════◇🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧 
@@ -53,7 +53,7 @@ module.exports = {
       if (ֆǟӄʊʀǟ.isGroup && !ֆǟӄʊʀǟ.isBotGroupAdmin) {
         return Sakura_Buttons.MTB(
           ӄʀǟӄɨռʐ,
-          mozart,
+          chat,
           ֆǟӄʊʀǟ,
           `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ}, 
 
@@ -72,7 +72,7 @@ module.exports = {
         ֆǟӄʊʀǟ.isSenderGroupAdmin
       ) {
         const RemoveTheSucker =
-          mozart.message.extendedTextMessage.contextInfo.participant;
+          chat.message.extendedTextMessage.contextInfo.participant;
         Warning.findOne(
           {
             ID: RemoveTheSucker,
@@ -88,10 +88,10 @@ module.exports = {
               });
               await newUser
                 .save()
-                .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart));
+                .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
               return Sakura_Buttons.MTB(
                 ӄʀǟӄɨռʐ,
-                mozart,
+                chat,
                 ֆǟӄʊʀǟ,
                 `
 ╔◇═══════════════◇╗
@@ -119,10 +119,10 @@ module.exports = {
               userWarn.warns = CurrentWarns + 1;
               await userWarn
                 .save()
-                .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart));
+                .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
               return Sakura_Buttons.MTB(
                 ӄʀǟӄɨռʐ,
-                mozart,
+                chat,
                 ֆǟӄʊʀǟ,
                 `
 ╔◇═══════════════◇╗
@@ -146,10 +146,10 @@ module.exports = {
             if (ֆǟӄʊʀǟ.isBotGroupAdmin && CurrentWarns <= 3) {
               await userWarn
                 .delete()
-                .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart));
+                .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
               Sakura_Buttons.MTB(
                 ӄʀǟӄɨռʐ,
-                mozart,
+                chat,
                 ֆǟӄʊʀǟ,
                 `
 ╔◇═══════════════◇╗
@@ -171,7 +171,7 @@ module.exports = {
               setTimeout(async () => {
                 await ӄʀǟӄɨռʐ
                   .groupRemove(ֆǟӄʊʀǟ.chatId, [RemoveTheSucker])
-                  .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart));
+                  .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
                 return;
               }, 6000);
             }
@@ -185,7 +185,7 @@ module.exports = {
         const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../Sakura🛰️Server/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
         return ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
           ӄʀǟӄɨռʐ,
-          mozart,
+          chat,
           ֆǟӄʊʀǟ,
           աɦօֆɛռȶɦǟȶ,
           աɦօֆɛռȶɦǟȶռʊʍ,
@@ -194,7 +194,7 @@ module.exports = {
         );
       }
     } catch (Error) {
-      ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart);
+      ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
       return;
     }
   },

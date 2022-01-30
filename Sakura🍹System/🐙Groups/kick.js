@@ -20,7 +20,7 @@ var newScpt = scriptName.slice(0, -3).toLowerCase();
 module.exports = {
   name: newScpt,
   ֆǟӄʊʀǟӄǟɨʐօ: `*${ᴋᴇɪ}kick* _tag_ or _reply to person's text_`,
-  async handle(ӄʀǟӄɨռʐ, mozart, ֆǟӄʊʀǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
+  async handle(ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
     try {
       var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
       var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
@@ -33,7 +33,7 @@ module.exports = {
       if (!ֆǟӄʊʀǟ.isGroup) {
         return Sakura_Buttons.MTB(
           ӄʀǟӄɨռʐ,
-          mozart,
+          chat,
           ֆǟӄʊʀǟ,
           `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ}, 
 
@@ -46,7 +46,7 @@ module.exports = {
       if (ֆǟӄʊʀǟ.isGroup && !ֆǟӄʊʀǟ.isSenderGroupAdmin) {
         return Sakura_Buttons.MIB(
           ӄʀǟӄɨռʐ,
-          mozart,
+          chat,
           ֆǟӄʊʀǟ,
           `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
 ╔════◇🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧 
@@ -60,7 +60,7 @@ module.exports = {
       if (ֆǟӄʊʀǟ.isGroup && !ֆǟӄʊʀǟ.isBotGroupAdmin) {
         return Sakura_Buttons.MTB(
           ӄʀǟӄɨռʐ,
-          mozart,
+          chat,
           ֆǟӄʊʀǟ,
           `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ}, 
 
@@ -75,11 +75,11 @@ module.exports = {
       let owner = ֆǟӄʊʀǟ.chatId.split(`-`)[0];
       if (ֆǟӄʊʀǟ.isReply) {
         let PersonToRemove =
-          mozart.message.extendedTextMessage.contextInfo.participant;
+          chat.message.extendedTextMessage.contextInfo.participant;
         if (PersonToRemove === owner + `@s.whatsapp.net`) {
           return Sakura_Static.MGS(
             ӄʀǟӄɨռʐ,
-            mozart,
+            chat,
             ֆǟӄʊʀǟ,
             `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
 
@@ -93,7 +93,7 @@ ${owner} ɪꜱ ᴛʜᴇ ᴏᴡɴᴇʀ ᴏꜰ ᴛʜᴇ ɢʀᴏᴜᴘ*`,
         if (PersonToRemove === ֆǟӄʊʀǟ.owner) {
           return Sakura_Static.MGS(
             ӄʀǟӄɨռʐ,
-            mozart,
+            chat,
             ֆǟӄʊʀǟ,
             `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
 
@@ -122,7 +122,7 @@ ${owner} ɪꜱ ᴛʜᴇ ᴏᴡɴᴇʀ ᴏꜰ ᴛʜᴇ ɢʀᴏᴜᴘ*`,
         if (!isMember) {
           return Sakura_Static.MGS(
             ӄʀǟӄɨռʐ,
-            mozart,
+            chat,
             ֆǟӄʊʀǟ,
             `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
 
@@ -136,27 +136,27 @@ ${owner} ɪꜱ ᴛʜᴇ ᴏᴡɴᴇʀ ᴏꜰ ᴛʜᴇ ɢʀᴏᴜᴘ*`,
         if (PersonToRemove) {
           if (ֆǟӄʊʀǟ.isGroup && ֆǟӄʊʀǟ.isReply) {
             var Receiver =
-              mozart.message.extendedTextMessage.contextInfo.participant;
+              chat.message.extendedTextMessage.contextInfo.participant;
             var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
             Sakura_Buttons.MTB(
               ӄʀǟӄɨռʐ,
-              mozart,
+              chat,
               ֆǟӄʊʀǟ,
               `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ} Kicked @${քɛʀֆօռɢօȶռʊʍ} Outta Group!`
             );
             return await ӄʀǟӄɨռʐ
               .groupRemove(ֆǟӄʊʀǟ.chatId, [PersonToRemove])
-              .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart));
+              .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
           } else {
             Sakura_Buttons.MTB(
               ӄʀǟӄɨռʐ,
-              mozart,
+              chat,
               ֆǟӄʊʀǟ,
               `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ} Kicked Em Successfully!`
             );
             return await ӄʀǟӄɨռʐ
               .groupRemove(ֆǟӄʊʀǟ.chatId, [PersonToRemove])
-              .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart));
+              .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
           }
         }
         return;
@@ -165,7 +165,7 @@ ${owner} ɪꜱ ᴛʜᴇ ᴏᴡɴᴇʀ ᴏꜰ ᴛʜᴇ ɢʀᴏᴜᴘ*`,
       if (!Needs[0]) {
         return Sakura_Static.MGS(
           ӄʀǟӄɨռʐ,
-          mozart,
+          chat,
           ֆǟӄʊʀǟ,
           `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
 
@@ -181,7 +181,7 @@ Reply to the person you want to kick or tag them.\n\nFor instance,  *${ᴋᴇɪ}
         if (isNaN(number)) {
           return Sakura_Static.MGS(
             ӄʀǟӄɨռʐ,
-            mozart,
+            chat,
             ֆǟӄʊʀǟ,
             `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
 
@@ -195,7 +195,7 @@ Reply to the person you want to kick or tag them.\n\nFor instance,  *${ᴋᴇɪ}
         if (number + `@s.whatsapp.net` === ֆǟӄʊʀǟ.owner) {
           return Sakura_Static.MGS(
             ӄʀǟӄɨռʐ,
-            mozart,
+            chat,
             ֆǟӄʊʀǟ,
             `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
 
@@ -210,11 +210,11 @@ Reply to the person you want to kick or tag them.\n\nFor instance,  *${ᴋᴇɪ}
         if (!(number === owner)) {
           if (ֆǟӄʊʀǟ.isGroup && ֆǟӄʊʀǟ.isReply) {
             var Receiver =
-              mozart.message.extendedTextMessage.contextInfo.participant;
+              chat.message.extendedTextMessage.contextInfo.participant;
             var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
             Sakura_Buttons.MTB(
               ӄʀǟӄɨռʐ,
-              mozart,
+              chat,
               ֆǟӄʊʀǟ,
               `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ} Kicked @${քɛʀֆօռɢօȶռʊʍ} Outta the group!`
             );
@@ -225,7 +225,7 @@ Reply to the person you want to kick or tag them.\n\nFor instance,  *${ᴋᴇɪ}
           } else {
             Sakura_Buttons.MTB(
               ӄʀǟӄɨռʐ,
-              mozart,
+              chat,
               ֆǟӄʊʀǟ,
               `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ} Kicked em Successfully!`
             );
@@ -236,7 +236,7 @@ Reply to the person you want to kick or tag them.\n\nFor instance,  *${ᴋᴇɪ}
         } else {
           return Sakura_Static.MGS(
             ӄʀǟӄɨռʐ,
-            mozart,
+            chat,
             ֆǟӄʊʀǟ,
             `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
 
@@ -250,7 +250,7 @@ ${owner} ɪꜱ ᴛʜᴇ ᴏᴡɴᴇʀ ᴏꜰ ᴛʜᴇ ɢʀᴏᴜᴘ*`,
 
       return Sakura_Static.MGS(
         ӄʀǟӄɨռʐ,
-        mozart,
+        chat,
         ֆǟӄʊʀǟ,
         `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
 
@@ -261,7 +261,7 @@ Reply to the person you want to kick or tag them.\n\nFor instance,  *${ᴋᴇɪ}
       );
       `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
     } catch (Error) {
-      ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart);
+      ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
       return;
     }
   },

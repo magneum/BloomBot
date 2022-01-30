@@ -22,7 +22,7 @@ var newScpt = scriptName.slice(0, -3).toLowerCase();
 module.exports = {
   name: newScpt,
   ֆǟӄʊʀǟӄǟɨʐօ: `*${ᴋᴇɪ}buy* _item name_`,
-  async handle(ӄʀǟӄɨռʐ, mozart, ֆǟӄʊʀǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
+  async handle(ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
     try {
       var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
       const defaultnm = ֆǟӄʊʀǟ.commandName;
@@ -32,7 +32,7 @@ module.exports = {
       if (!ֆǟӄʊʀǟ.isGroup) {
         return Sakura_Buttons.MTB(
           ӄʀǟӄɨռʐ,
-          mozart,
+          chat,
           ֆǟӄʊʀǟ,
           `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ}, 
 
@@ -63,7 +63,7 @@ module.exports = {
         const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../Sakura🛰️Server/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
         return ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
           ӄʀǟӄɨռʐ,
-          mozart,
+          chat,
           ֆǟӄʊʀǟ,
           աɦօֆɛռȶɦǟȶ,
           աɦօֆɛռȶɦǟȶռʊʍ,
@@ -74,7 +74,7 @@ module.exports = {
       } else if (Needs[0] === `basic` || Needs[0] === `Basic`) {
         return Sakura_Buttons.MTB(
           ӄʀǟӄɨռʐ,
-          mozart,
+          chat,
           ֆǟӄʊʀǟ,
           `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
 ╔◇══════════════◇╗
@@ -116,7 +116,7 @@ module.exports = {
       } else {
         return Sakura_Buttons.MIB(
           ӄʀǟӄɨռʐ,
-          mozart,
+          chat,
           ֆǟӄʊʀǟ,
           `*🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ}, Items Available in shop are below!*
 
@@ -149,7 +149,7 @@ module.exports = {
           ID: աɦօֆɛռȶɦǟȶ,
         },
         async (Error, userEco) => {
-          if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart);
+          if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
           await Bagde.findOne(
             {
               ID: աɦօֆɛռȶɦǟȶ,
@@ -159,7 +159,7 @@ module.exports = {
               console.log(userEco);
               console.log(userBadge);
               console.log(`⬡================🏷️ 𝐁𝐚𝐝𝐠𝐞 🏷️================⬡‍`);
-              if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart);
+              if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
               if (!userEco) {
                 var newEcoUser = new Economy({
                   ID: աɦօֆɛռȶɦǟȶ,
@@ -174,10 +174,10 @@ module.exports = {
                 });
                 newEcoUser
                   .save()
-                  .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart));
+                  .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
                 return Sakura_Buttons.MTB(
                   ӄʀǟӄɨռʐ,
-                  mozart,
+                  chat,
                   ֆǟӄʊʀǟ,
                   `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
 ╔◇══════════════◇╗
@@ -205,10 +205,10 @@ module.exports = {
                 });
                 newBagdeUser
                   .save()
-                  .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart));
+                  .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
                 return Sakura_Buttons.MTB(
                   ӄʀǟӄɨռʐ,
-                  mozart,
+                  chat,
                   ֆǟӄʊʀǟ,
                   `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
 ╔◇══════════════◇╗
@@ -229,7 +229,7 @@ module.exports = {
                 if (userEco.money < ItemPrice) {
                   return Sakura_Buttons.MTB(
                     ӄʀǟӄɨռʐ,
-                    mozart,
+                    chat,
                     ֆǟӄʊʀǟ,
                     `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
 ╔◇══════════════◇╗
@@ -250,7 +250,7 @@ module.exports = {
                 if (BadgeCatelog.includes(Item) && userBadge.Badge === Item) {
                   return Sakura_Buttons.MTB(
                     ӄʀǟӄɨռʐ,
-                    mozart,
+                    chat,
                     ֆǟӄʊʀǟ,
                     `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
 ╔◇══════════════◇╗
@@ -275,13 +275,13 @@ module.exports = {
                   userBadge.Badge = Item;
                   await userEco
                     .save()
-                    .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart));
+                    .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
                   await userBadge
                     .save()
-                    .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart));
+                    .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
                   return Sakura_Buttons.MTB(
                     ӄʀǟӄɨռʐ,
-                    mozart,
+                    chat,
                     ֆǟӄʊʀǟ,
                     `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
 ╔◇══════════════◇╗
@@ -305,7 +305,7 @@ module.exports = {
       );
       `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
     } catch (Error) {
-      ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart);
+      ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
       return;
     }
   },

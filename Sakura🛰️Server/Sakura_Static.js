@@ -23,7 +23,7 @@ var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 `⬡🍹⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
 const Sakura_GIF_Static = async (
   ӄʀǟӄɨռʐ,
-  mozart,
+  chat,
   ֆǟӄʊʀǟ,
   MainText,
   MediaUrl
@@ -34,31 +34,31 @@ const Sakura_GIF_Static = async (
     if (ֆǟӄʊʀǟ.isReply) {
       var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
       var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
-      var Receiver = mozart.message.extendedTextMessage.contextInfo.participant;
+      var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
       var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
       return await ӄʀǟӄɨռʐ
         .sendMessage(ֆǟӄʊʀǟ.chatId, { url: MediaUrl }, MessageType.video, {
           mimetype: `video/gif`,
-          quoted: mozart,
+          quoted: chat,
           caption:
             `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 ◈ 𝐄𝐧𝐠𝐢𝐧𝐞: _kryozen${vers.vers}_ ⏋\n⎿ 𝐃𝐚𝐭𝐞: _${Clock}_ ⏋\n⎿ 𝐏𝐢𝐧𝐠: _${Ping}ms_ ⏋\n\n` +
             MainText,
           contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ, Receiver] },
         })
-        .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart));
+        .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
     } else {
       var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
       var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
       return await ӄʀǟӄɨռʐ
         .sendMessage(ֆǟӄʊʀǟ.chatId, { url: MediaUrl }, MessageType.video, {
           mimetype: `video/gif`,
-          quoted: mozart,
+          quoted: chat,
           caption:
             `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 ◈ 𝐄𝐧𝐠𝐢𝐧𝐞: _kryozen${vers.vers}_ ⏋\n⎿ 𝐃𝐚𝐭𝐞: _${Clock}_ ⏋\n⎿ 𝐏𝐢𝐧𝐠: _${Ping}ms_ ⏋\n\n` +
             MainText,
           contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
         })
-        .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart));
+        .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
     }
   } catch (Error) {
     console.log(Error);

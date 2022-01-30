@@ -25,7 +25,7 @@ var newScpt = str.slice(0, -3).toLowerCase();
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
 module.exports = {
   name: newScpt,
-  async handle(ӄʀǟӄɨռʐ, mozart, ֆǟӄʊʀǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
+  async handle(ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
     try {
       var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
       const defaultnm = ֆǟӄʊʀǟ.commandName;
@@ -57,13 +57,13 @@ module.exports = {
         await downloader.download();
       } catch (Error) {
         console.log(`═════⬡|🐞𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐄𝐫𝐫𝐨𝐫: ` + Error);
-        ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart);
+        ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
         return;
       }
       `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
       if (ֆǟӄʊʀǟ.isReply) {
         var Receiver =
-          mozart.message.extendedTextMessage.contextInfo.participant;
+          chat.message.extendedTextMessage.contextInfo.participant;
         var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
         var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
         var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
@@ -78,7 +78,7 @@ module.exports = {
           .on(`end`, async () => {
             await Sakura_Static.MGS(
               ӄʀǟӄɨռʐ,
-              mozart,
+              chat,
               ֆǟӄʊʀǟ,
               `
 ╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
@@ -114,7 +114,7 @@ module.exports = {
                   MessageType.video,
                   {
                     mimetype: `video/gif`,
-                    quoted: mozart,
+                    quoted: chat,
                     caption: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 • 𝐄𝐧𝐠𝐢𝐧𝐞: kryozen${vers.vers} ⏋\n⎿ ${Clock} • ${Ping}ms ⏋
 
 
@@ -125,7 +125,7 @@ module.exports = {
                     contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
                   }
                 )
-                .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart));
+                .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
               await cleanRF.cleanRF(GiveFile, GotFile);
               return;
             } else {
@@ -136,7 +136,7 @@ module.exports = {
                   MessageType.video,
                   {
                     mimetype: `video/gif`,
-                    quoted: mozart,
+                    quoted: chat,
                     caption: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 • 𝐄𝐧𝐠𝐢𝐧𝐞: kryozen${vers.vers} ⏋\n⎿ ${Clock} • ${Ping}ms ⏋
 
 
@@ -147,14 +147,14 @@ module.exports = {
                     contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ, MentionPerson] },
                   }
                 )
-                .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart));
+                .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
               await cleanRF.cleanRF(GiveFile, GotFile);
               return;
             }
           });
       }
     } catch (Error) {
-      ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart);
+      ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
       return;
     }
   },

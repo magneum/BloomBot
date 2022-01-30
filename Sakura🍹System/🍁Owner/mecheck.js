@@ -18,7 +18,7 @@ var newScpt = scriptName.slice(0, -3).toLowerCase();
 module.exports = {
   name: newScpt,
   ֆǟӄʊʀǟӄǟɨʐօ: `${ᴋᴇɪ}bugreport <feature> <Describe Error>`,
-  async handle(ӄʀǟӄɨռʐ, mozart, ֆǟӄʊʀǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
+  async handle(ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
     try {
       var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
       var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
@@ -28,7 +28,7 @@ module.exports = {
       if (!ֆǟӄʊʀǟ.isSenderDev) {
         return Sakura_Buttons.MIB(
           ӄʀǟӄɨռʐ,
-          mozart,
+          chat,
           ֆǟӄʊʀǟ,
           `*❌ Owner Only | You Are Not Allowed! ❌*`,
           _𝔏𝔞𝔟_.ɴᴏᴛᴀᴅᴍɪɴ
@@ -36,7 +36,7 @@ module.exports = {
       } else if (ֆǟӄʊʀǟ.isGroup) {
         return Sakura_Buttons.MTB(
           ӄʀǟӄɨռʐ,
-          mozart,
+          chat,
           ֆǟӄʊʀǟ,
           `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ}, 
 
@@ -47,7 +47,7 @@ module.exports = {
       } else if (ֆǟӄʊʀǟ.isSenderDev && !ֆǟӄʊʀǟ.isGroup) {
         Sakura_Buttons.MTB(
           ӄʀǟӄɨռʐ,
-          mozart,
+          chat,
           ֆǟӄʊʀǟ,
           `
 ╔════| 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ by _Krakinz🐙kon_ 
@@ -82,7 +82,7 @@ module.exports = {
       } else {
         return Sakura_Buttons.MIB(
           ӄʀǟӄɨռʐ,
-          mozart,
+          chat,
           ֆǟӄʊʀǟ,
           `*❌ Owner Only | You Are Not Allowed! ❌*`,
           _𝔏𝔞𝔟_.ɴᴏᴛᴀᴅᴍɪɴ
@@ -90,7 +90,7 @@ module.exports = {
       }
       `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
     } catch (Error) {
-      ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart);
+      ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
       return;
     }
   },

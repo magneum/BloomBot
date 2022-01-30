@@ -20,7 +20,7 @@ var newScpt = scriptName.slice(0, -3).toLowerCase();
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
 module.exports = {
   name: newScpt,
-  async handle(ӄʀǟӄɨռʐ, mozart, ֆǟӄʊʀǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
+  async handle(ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
     try {
       var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
       var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
@@ -30,7 +30,7 @@ module.exports = {
       if (!ֆǟӄʊʀǟ.fromMe && !ֆǟӄʊʀǟ.isSenderDev) {
         return Sakura_Buttons.MIB(
           ӄʀǟӄɨռʐ,
-          mozart,
+          chat,
           ֆǟӄʊʀǟ,
           `*❌ Owner Only | You Are Not Allowed! ❌*`,
           _𝔏𝔞𝔟_.ɴᴏᴛᴀᴅᴍɪɴ
@@ -42,7 +42,7 @@ module.exports = {
         BanList.addBanlistUser(ᴀᴅᴅʙᴀɴ, ``);
         return Sakura_Static.MGS(
           ӄʀǟӄɨռʐ,
-          mozart,
+          chat,
           ֆǟӄʊʀǟ,
           `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ} 
 
@@ -61,7 +61,7 @@ module.exports = {
           if (ֆǟӄʊʀǟ.owner === ᴀᴅᴅʙᴀɴ) {
             return Sakura_Buttons.MIB(
               ӄʀǟӄɨռʐ,
-              mozart,
+              chat,
               ֆǟӄʊʀǟ,
               `*❌ Owner Only | You Are Not Allowed! ❌*`,
               _𝔏𝔞𝔟_.ɴᴏᴛᴀᴅᴍɪɴ
@@ -71,7 +71,7 @@ module.exports = {
           BanList.addBanlistUser(ᴀᴅᴅʙᴀɴ, ֆǟӄʊʀǟ.chatId);
           return Sakura_Static.MGS(
             ӄʀǟӄɨռʐ,
-            mozart,
+            chat,
             ֆǟӄʊʀǟ,
             `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ} 
 
@@ -88,7 +88,7 @@ module.exports = {
           if (ֆǟӄʊʀǟ.owner === ᴀᴅᴅʙᴀɴ) {
             return Sakura_Buttons.MIB(
               ӄʀǟӄɨռʐ,
-              mozart,
+              chat,
               ֆǟӄʊʀǟ,
               `*❌ Owner Only | You Are Not Allowed! ❌*`,
               _𝔏𝔞𝔟_.ɴᴏᴛᴀᴅᴍɪɴ
@@ -98,7 +98,7 @@ module.exports = {
           BanList.addBanlistUser(ᴀᴅᴅʙᴀɴ, ֆǟӄʊʀǟ.chatId);
           return Sakura_Static.MGS(
             ӄʀǟӄɨռʐ,
-            mozart,
+            chat,
             ֆǟӄʊʀǟ,
             `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ} 
 
@@ -114,7 +114,7 @@ module.exports = {
           BanList.addBanlistUser(``, ֆǟӄʊʀǟ.chatId);
           return Sakura_Static.MGS(
             ӄʀǟӄɨռʐ,
-            mozart,
+            chat,
             ֆǟӄʊʀǟ,
             `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ} 
 
@@ -128,7 +128,7 @@ module.exports = {
         }
       }
     } catch (Error) {
-      ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart);
+      ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
       return;
     }
   },

@@ -26,9 +26,9 @@ date.format(now, `ddd, MMM DD YYYY`);
 const pattern = date.compile(`ddd, MMM DD YYYY`);
 const Clock = date.format(now, pattern);
 `⬡🍹⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-exports.SakuraGM = async (ӄʀǟӄɨռʐ, mozart, ֆǟӄʊʀǟ, newScpt, Needs) => {
+exports.SakuraGM = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, newScpt, Needs) => {
   try {
-    var SakuraGMid = mozart.key.id;
+    var SakuraGMid = chat.key.id;
     var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
     var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
     const defaultnm = ֆǟӄʊʀǟ.commandName;
@@ -55,12 +55,12 @@ exports.SakuraGM = async (ӄʀǟӄɨռʐ, mozart, ֆǟӄʊʀǟ, newScpt, Needs) 
       await downloader.download();
     } catch (Error) {
       console.log(`═════⬡|🐞𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐄𝐫𝐫𝐨𝐫: ` + Error);
-      ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart);
+      ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
       return;
     }
     `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
     if (ֆǟӄʊʀǟ.isReply) {
-      var Receiver = mozart.message.extendedTextMessage.contextInfo.participant;
+      var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
       var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
       var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
       var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
@@ -75,7 +75,7 @@ exports.SakuraGM = async (ӄʀǟӄɨռʐ, mozart, ֆǟӄʊʀǟ, newScpt, Needs) 
         .on(`end`, async () => {
           await Sakura_Static.MGS(
             ӄʀǟӄɨռʐ,
-            mozart,
+            chat,
             ֆǟӄʊʀǟ,
             `
 ╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
@@ -111,7 +111,7 @@ exports.SakuraGM = async (ӄʀǟӄɨռʐ, mozart, ֆǟӄʊʀǟ, newScpt, Needs) 
                 MessageType.video,
                 {
                   mimetype: `video/gif`,
-                  quoted: mozart,
+                  quoted: chat,
                   caption: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 ◈ 𝐄𝐧𝐠𝐢𝐧𝐞: _kryozen${vers.vers}_ ⏋\n⎿ 𝐃𝐚𝐭𝐞: _${Clock}_ ⏋\n⎿ 𝐏𝐢𝐧𝐠: _${Ping}ms_ ⏋
 
 
@@ -122,7 +122,7 @@ exports.SakuraGM = async (ӄʀǟӄɨռʐ, mozart, ֆǟӄʊʀǟ, newScpt, Needs) 
                   contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
                 }
               )
-              .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart));
+              .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
             await cleanRF.cleanRF(GiveFile, GotFile);
             return;
           } else {
@@ -133,7 +133,7 @@ exports.SakuraGM = async (ӄʀǟӄɨռʐ, mozart, ֆǟӄʊʀǟ, newScpt, Needs) 
                 MessageType.video,
                 {
                   mimetype: `video/gif`,
-                  quoted: mozart,
+                  quoted: chat,
                   caption: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 ◈ 𝐄𝐧𝐠𝐢𝐧𝐞: _kryozen${vers.vers}_ ⏋\n⎿ 𝐃𝐚𝐭𝐞: _${Clock}_ ⏋\n⎿ 𝐏𝐢𝐧𝐠: _${Ping}ms_ ⏋
 
 
@@ -144,14 +144,14 @@ exports.SakuraGM = async (ӄʀǟӄɨռʐ, mozart, ֆǟӄʊʀǟ, newScpt, Needs) 
                   contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ, MentionPerson] },
                 }
               )
-              .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart));
+              .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
             await cleanRF.cleanRF(GiveFile, GotFile);
             return;
           }
         });
     }
   } catch (Error) {
-    ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart);
+    ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
     console.log(Error);
   }
 };

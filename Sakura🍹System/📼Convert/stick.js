@@ -22,12 +22,12 @@
 //   name: newScpt,
 //   ֆǟӄʊʀǟӄǟɨʐօ: `*Reply With:* _${ᴋᴇɪ}${newScpt}_
 // *Supported Media:* _Image/Video/Gif/Mp4/Jpeg/Png_`,
-//   async handle(ӄʀǟӄɨռʐ, mozart, ֆǟӄʊʀǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
+//   async handle(ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
 //     if (ֆǟӄʊʀǟ.isReply) {
 //       var FileObject = {
-//         message: mozart.message.extendedTextMessage.contextInfo.quotedMessage,
+//         message: chat.message.extendedTextMessage.contextInfo.quotedMessage,
 //       };
-//       var FileId = mozart.message.extendedTextMessage.contextInfo.stanzaId;
+//       var FileId = chat.message.extendedTextMessage.contextInfo.stanzaId;
 //       console.log(FileObject);
 //       console.log(FileId);
 //       var FileJpeg = FileId + `.jpeg`;
@@ -56,17 +56,17 @@
 //                       ֆǟӄʊʀǟ.chatId,
 //                       fs.readFileSync(StickerName),
 //                       MessageType.sticker,
-//                       { quoted: mozart }
+//                       { quoted: chat }
 //                     )
 //                     .then(cleanRF.cleanRF(FileJpeg, StickerName))
-//                     .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart));
+//                     .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
 //                 })
 //                 .on(`error`, async (Error) => {
 //                   userBadge.Limits = userBadge.Limits + 1;
 //                   await userBadge
 //                     .save()
-//                     .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart));
-//                   return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart);
+//                     .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+//                   return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
 //                 });
 //             }
 //             `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
@@ -86,17 +86,17 @@
 //                       ֆǟӄʊʀǟ.chatId,
 //                       fs.readFileSync(StickerName),
 //                       MessageType.sticker,
-//                       { quoted: mozart }
+//                       { quoted: chat }
 //                     )
 //                     .then(cleanRF.cleanRF(FilePng, StickerName))
-//                     .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart));
+//                     .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
 //                 })
 //                 .on(`error`, async (Error) => {
 //                   userBadge.Limits = userBadge.Limits + 1;
 //                   await userBadge
 //                     .save()
-//                     .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart));
-//                   return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart);
+//                     .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+//                   return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
 //                 });
 //             }
 //             `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
@@ -107,10 +107,10 @@
 //                   ֆǟӄʊʀǟ.chatId,
 //                   fs.readFileSync(FileWebp),
 //                   MessageType.sticker,
-//                   { quoted: mozart }
+//                   { quoted: chat }
 //                 )
 //                 .then(cleanRF.cleanRF(FileWebp))
-//                 .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart));
+//                 .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
 //             }
 //             `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
 //             if (fs.existsSync(FileId + `.mp4`)) {
@@ -138,17 +138,17 @@
 //                       ֆǟӄʊʀǟ.chatId,
 //                       fs.readFileSync(StickerName),
 //                       MessageType.sticker,
-//                       { quoted: mozart }
+//                       { quoted: chat }
 //                     )
 //                     .then(cleanRF.cleanRF(FileMp4, StickerName))
-//                     .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart));
+//                     .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
 //                 })
 //                 .on(`error`, async (Error) => {
 //                   userBadge.Limits = userBadge.Limits + 1;
 //                   await userBadge
 //                     .save()
-//                     .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart));
-//                   return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart);
+//                     .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+//                   return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
 //                 });
 //             }
 //           });
@@ -157,13 +157,13 @@
 //         userBadge.Limits = userBadge.Limits + 1;
 //         await userBadge
 //           .save()
-//           .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart));
+//           .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
 //         var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(ֆǟӄʊʀǟ.commandName);
 //         var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
 //           𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ === undefined ? `Null` : 𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ;
 //         ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
 //           ӄʀǟӄɨռʐ,
-//           mozart,
+//           chat,
 //           ֆǟӄʊʀǟ,
 //           աɦօֆɛռȶɦǟȶ,
 //           աɦօֆɛռȶɦǟȶռʊʍ,
@@ -179,7 +179,7 @@
 //         𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ === undefined ? `Null` : 𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ;
 //       ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
 //         ӄʀǟӄɨռʐ,
-//         mozart,
+//         chat,
 //         ֆǟӄʊʀǟ,
 //         աɦօֆɛռȶɦǟȶ,
 //         աɦօֆɛռȶɦǟȶռʊʍ,

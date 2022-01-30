@@ -22,7 +22,7 @@ module.exports = {
   ֆǟӄʊʀǟӄǟɨʐօ: `*${ᴋᴇɪ}demote* _9100000000_
 *${ᴋᴇɪ}demote* _tag_
 *${ᴋᴇɪ}demote* _reply to their text_`,
-  async handle(ӄʀǟӄɨռʐ, mozart, ֆǟӄʊʀǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
+  async handle(ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
     try {
       var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
       var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
@@ -35,7 +35,7 @@ module.exports = {
       if (!ֆǟӄʊʀǟ.isGroup) {
         return Sakura_Buttons.MTB(
           ӄʀǟӄɨռʐ,
-          mozart,
+          chat,
           ֆǟӄʊʀǟ,
           `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ}, 
 
@@ -48,7 +48,7 @@ module.exports = {
       if (ֆǟӄʊʀǟ.isGroup && !ֆǟӄʊʀǟ.isSenderGroupAdmin) {
         return Sakura_Buttons.MIB(
           ӄʀǟӄɨռʐ,
-          mozart,
+          chat,
           ֆǟӄʊʀǟ,
           `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
 ╔════◇🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧 
@@ -62,7 +62,7 @@ module.exports = {
       if (ֆǟӄʊʀǟ.isGroup && !ֆǟӄʊʀǟ.isBotGroupAdmin) {
         return Sakura_Buttons.MTB(
           ӄʀǟӄɨռʐ,
-          mozart,
+          chat,
           ֆǟӄʊʀǟ,
           `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ}, 
 
@@ -81,7 +81,7 @@ module.exports = {
         const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../Sakura🛰️Server/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
         return ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
           ӄʀǟӄɨռʐ,
-          mozart,
+          chat,
           ֆǟӄʊʀǟ,
           աɦօֆɛռȶɦǟȶ,
           աɦօֆɛռȶɦǟȶռʊʍ,
@@ -91,7 +91,7 @@ module.exports = {
       }
 
       if (ֆǟӄʊʀǟ.isReply) {
-        const reply = mozart.message.extendedTextMessage;
+        const reply = chat.message.extendedTextMessage;
         var contact = reply.contextInfo.participant.split(`@`)[0];
         var contactmen = reply.contextInfo.participant + `@s.whatsapp.net`;
         console.log(contactmen);
@@ -114,7 +114,7 @@ module.exports = {
       if (contact === owner) {
         return Sakura_Static.MGS(
           ӄʀǟӄɨռʐ,
-          mozart,
+          chat,
           ֆǟӄʊʀǟ,
           `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
 
@@ -131,7 +131,7 @@ ${contact} is the owner of the group`,
           await ӄʀǟӄɨռʐ.groupDemoteAdmin(ֆǟӄʊʀǟ.chatId, arr);
           return Sakura_Static.MGS(
             ӄʀǟӄɨռʐ,
-            mozart,
+            chat,
             ֆǟӄʊʀǟ,
             `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
 
@@ -143,7 +143,7 @@ ${contact} *is demoted from admin*`,
         } else {
           return Sakura_Static.MGS(
             ӄʀǟӄɨռʐ,
-            mozart,
+            chat,
             ֆǟӄʊʀǟ,
             `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
 
@@ -159,7 +159,7 @@ ${contact} *was not an admin*`,
         if (contact === undefined) {
           return Sakura_Static.MGS(
             ӄʀǟӄɨռʐ,
-            mozart,
+            chat,
             ֆǟӄʊʀǟ,
             `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
 
@@ -172,7 +172,7 @@ ${contact} *was not an admin*`,
       }
       `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
     } catch (Error) {
-      ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart);
+      ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
       return;
     }
   },

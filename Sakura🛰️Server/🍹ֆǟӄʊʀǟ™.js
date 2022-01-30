@@ -338,12 +338,12 @@ ${update.desc}`,
     ӄʀǟӄɨռʐ.on(`chat-update`, async (chat) => {
       if (!chat.hasNewMessage) return;
       if (!chat.messages) return;
-      mozart = chat.messages.all()[0];
-      const sender = mozart.key.remoteJid;
+      chat = chat.messages.all()[0];
+      const sender = chat.key.remoteJid;
       const groupMetadata = sender.endsWith(`@g.us`)
-        ? await ӄʀǟӄɨռʐ.groupMetadata(mozart.key.remoteJid)
+        ? await ӄʀǟӄɨռʐ.groupMetadata(chat.key.remoteJid)
         : ``;
-      var ֆǟӄʊʀǟ = ֆǟӄʊʀǟǟքք.resolve(mozart, ӄʀǟӄɨռʐ, groupMetadata);
+      var ֆǟӄʊʀǟ = ֆǟӄʊʀǟǟքք.resolve(chat, ӄʀǟӄɨռʐ, groupMetadata);
       var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
       var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
       `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
@@ -486,11 +486,11 @@ ${update.desc}`,
                             await newUser
                               .save()
                               .catch((Error) =>
-                                ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart)
+                                ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
                               );
                             try {
                               var groupDataRank = await ӄʀǟӄɨռʐ.groupMetadata(
-                                mozart.key.remoteJid
+                                chat.key.remoteJid
                               );
                               const media = await ӄʀǟӄɨռʐ.prepareMessage(
                                 ֆǟӄʊʀǟ.chatId,
@@ -539,7 +539,7 @@ ${update.desc}`,
                                   },
                                   MessageType.buttonsMessage,
                                   {
-                                    quoted: mozart,
+                                    quoted: chat,
                                     contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
                                   }
                                 )
@@ -549,7 +549,7 @@ ${update.desc}`,
                                   )
                                 )
                                 .catch((Error) =>
-                                  ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart)
+                                  ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
                                 );
                             } catch (Error) {
                               console.log(Error);
@@ -558,7 +558,7 @@ ${update.desc}`,
                           } else {
                             try {
                               var groupDataRank = await ӄʀǟӄɨռʐ.groupMetadata(
-                                mozart.key.remoteJid
+                                chat.key.remoteJid
                               );
                               var Ran =
                                 Math.floor(Math.random() * (100 - 50 + 1)) + 50;
@@ -566,7 +566,7 @@ ${update.desc}`,
                               await userEco
                                 .save()
                                 .catch((Error) =>
-                                  ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart)
+                                  ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
                                 );
                               const media = await ӄʀǟӄɨռʐ.prepareMessage(
                                 ֆǟӄʊʀǟ.chatId,
@@ -615,7 +615,7 @@ ${update.desc}`,
                                   },
                                   MessageType.buttonsMessage,
                                   {
-                                    quoted: mozart,
+                                    quoted: chat,
                                     contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
                                   }
                                 )
@@ -625,7 +625,7 @@ ${update.desc}`,
                                   )
                                 )
                                 .catch((Error) =>
-                                  ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart)
+                                  ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
                                 );
                             } catch (Error) {
                               console.log(Error);
@@ -648,7 +648,7 @@ ${update.desc}`,
       }
       `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
       const RegexYouTube =
-        /^((?:https?:)?\/\/)?((?:www|mozart)\.)?((?:youtube\.com|youtu.be))(\/(?:[\w\-]+\?v=|embed\/|v\/)?)([\w\-]+)(\S+)?$/;
+        /^((?:https?:)?\/\/)?((?:www|chat)\.)?((?:youtube\.com|youtu.be))(\/(?:[\w\-]+\?v=|embed\/|v\/)?)([\w\-]+)(\S+)?$/;
       if (
         ֆǟӄʊʀǟ.isGroup &&
         !ֆǟӄʊʀǟ.fromMe &&
@@ -669,7 +669,7 @@ ${update.desc}`,
             } else {
               await Sakura_Buttons.MIB(
                 ӄʀǟӄɨռʐ,
-                mozart,
+                chat,
                 ֆǟӄʊʀǟ,
                 `
 ╔════◇🌋  𝐀𝐧𝐭𝐢𝐥𝐢𝐧𝐤 𝐓𝐫𝐢𝐠𝐠𝐞𝐫𝐞𝐝
@@ -681,7 +681,7 @@ ${update.desc}`,
               setTimeout(() => {
                 ӄʀǟӄɨռʐ
                   .groupRemove(ֆǟӄʊʀǟ.chatId, [ֆǟӄʊʀǟ.sender])
-                  .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, mozart));
+                  .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
               }, 6000);
               return;
             }
@@ -708,7 +708,7 @@ ${update.desc}`,
               .exec(() => {
                 Sakura_Buttons.MTB(
                   ӄʀǟӄɨռʐ,
-                  mozart,
+                  chat,
                   ֆǟӄʊʀǟ,
                   `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
 
@@ -726,7 +726,7 @@ ${update.desc}`,
                     const mergeSummary = await ᴍɪᴢᴜᴋɪɢɪᴛ.merge();
                     Sakura_Buttons.MTB(
                       ӄʀǟӄɨռʐ,
-                      mozart,
+                      chat,
                       ֆǟӄʊʀǟ,
                       `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
 
@@ -767,7 +767,7 @@ ${update.desc}`,
         if (!ֆǟӄʊʀǟ.isGroup && !ֆǟӄʊʀǟ.fromMe && !ֆǟӄʊʀǟ.isSenderDev) {
           return Sakura_Buttons.MTB(
             ӄʀǟӄɨռʐ,
-            mozart,
+            chat,
             ֆǟӄʊʀǟ,
             `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ}, 🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) _Only In Groups!_
 🍾 (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 #𝟏: ${_𝔏𝔞𝔟_.HASH}`
@@ -795,7 +795,7 @@ ${update.desc}`,
           if (!members.includes(աɦօֆɛռȶɦǟȶ)) {
             return Sakura_Buttons.MTB(
               ӄʀǟӄɨռʐ,
-              mozart,
+              chat,
               ֆǟӄʊʀǟ,
               `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
 
@@ -816,14 +816,14 @@ ${update.desc}`,
           if (ֆǟӄʊʀǟ.isSenderDev) {
             return Sakura_Buttons.MTB(
               ӄʀǟӄɨռʐ,
-              mozart,
+              chat,
               ֆǟӄʊʀǟ,
               `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ}, _Sir Wait For 5s_`
             );
           } else {
             return Sakura_Buttons.MTB(
               ӄʀǟӄɨռʐ,
-              mozart,
+              chat,
               ֆǟӄʊʀǟ,
               `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
 ╔◇══════════════◇╗
@@ -840,14 +840,14 @@ ${update.desc}`,
               ֆǟӄʊʀǟ.commandName.toUpperCase()
           )
         );
-        console.log(mozart);
+        console.log(chat);
         console.log(Kolor.green(`══════════════| ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜)`));
         const ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ = ꜱɪᴛʀᴀᴘ.get(ֆǟӄʊʀǟ.commandName);
         var Needs = ֆǟӄʊʀǟ.body.trim().split(/\s+/).slice(1);
         if (!ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ) {
           return Sakura_Buttons.MTB(
             ӄʀǟӄɨռʐ,
-            mozart,
+            chat,
             ֆǟӄʊʀǟ,
             `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
 
@@ -860,7 +860,7 @@ ${update.desc}`,
         } else {
           return ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ.handle(
             ӄʀǟӄɨռʐ,
-            mozart,
+            chat,
             ֆǟӄʊʀǟ,
             Needs,
             ꜱɪᴛʀᴀᴘ,
