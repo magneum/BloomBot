@@ -14,7 +14,7 @@ let Timestamp = speed();
 const now = new Date();
 const fs = require(`fs`);
 const Pong = speed() - Timestamp;
-const Ping = Pong.toFixed(4) * 60;
+const Ping = Pong.toFixed(3) 
 date.format(now, `ddd, MMM DD YYYY`);
 const pattern = date.compile(`ddd, MMM DD YYYY`);
 const Clock = date.format(now, pattern);
