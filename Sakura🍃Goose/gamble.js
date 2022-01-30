@@ -5,10 +5,10 @@
 `|🍹|`;
 var mongoose = require("mongoose");
 var GambleSakuraSchema = new mongoose.Schema({
-  ID: String,
-  serverID: String,
-  Gambledone: Number,
-  Gambletimeout: Number,
+ID: String,
+serverID: String,
+Gambledone: Number,
+Gambletimeout: Number,
 });
 module.exports = mongoose.model("Gamble", GambleSakuraSchema);
 `|🍹|`;

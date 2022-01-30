@@ -5,10 +5,10 @@
 `|🍹|`;
 var mongoose = require("mongoose");
 var PokemonSakuraSchema = new mongoose.Schema({
-  ID: String,
-  Pokemons: Number,
-  CurrentLimitTime: Number,
-  PermanentLimitTime: Number,
+ID: String,
+Pokemons: Number,
+CurrentLimitTime: Number,
+PermanentLimitTime: Number,
 });
 module.exports = mongoose.model("Pokemon", PokemonSakuraSchema);
 `|🍹|`;

@@ -5,9 +5,9 @@
 `|🍹|`;
 var mongoose = require("mongoose");
 var ZooSakuraSchema = new mongoose.Schema({
-  ID: String,
-  zoodone: Number,
-  zootimeout: Number,
+ID: String,
+zoodone: Number,
+zootimeout: Number,
 });
 module.exports = mongoose.model("Zoo", ZooSakuraSchema);
 `|🍹|`;
