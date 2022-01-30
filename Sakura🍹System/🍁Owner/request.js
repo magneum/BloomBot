@@ -3,7 +3,7 @@
 `|🍹|======================================================================================================⬡  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™`;
 `|🍹|`;
 `|🍹|`;
-const { Encoder, QRByte, ErrorCorrectionLevel } = require(`@nuintun/qrcode`);
+const { Encoder, QRByte, ErrorCorrectionLevel } = require("@nuintun/qrcode");
 const Sakura_Buttons = require(`../../Sakura🛰️Server/Sakura_Buttons`);
 const Sakura_Static = require(`../../Sakura🛰️Server/Sakura_Static`);
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
@@ -21,15 +21,18 @@ module.exports = {
   name: newScpt,
   async handle(ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
     try {
-      var ꜱᴇɴᴅᴇʀɪᴅ = ֆǟӄʊʀǟ.sender;
-      var ꜱᴇɴᴅᴇʀeceived = ꜱᴇɴᴅᴇʀɪᴅ.substring(0, ꜱᴇɴᴅᴇʀɪᴅ.length - 15);
+      var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
       const defaultnm = ֆǟӄʊʀǟ.commandName;
+      var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
       const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
       `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
       const hold = require("../../Sakura🛰️Server/Hold");
       hold.Hold(ֆǟӄʊʀǟ);
       `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-      if (Needs.length === 0) {
+      if (
+        Needs.length === 0 &&
+        !ֆǟӄʊʀǟ.body.includes(`https://chat.whatsapp`)
+      ) {
         return Sakura_Buttons.MTB(
           ӄʀǟӄɨռʐ,
           chat,
@@ -40,51 +43,16 @@ module.exports = {
 ┊     𝐔𝐬𝐚𝐠𝐞
 ╚◇══════════════◇╝
 
-
-╔════◇🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ}, 
-║🔱 𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
-║💼 𝐆𝐫𝐨𝐮𝐩: ${_𝔏𝔞𝔟_.HASH}
-║💻 𝐆𝐢𝐭𝐡𝐮𝐛: github.com/krakinz/sakura
-╚════════════╝
-
-
 ╔════◇❓ 𝐇𝐨𝐰 𝐓𝐨 𝐆𝐞𝐭 𝐒𝐚𝐤𝐮𝐫𝐚?
 ║• Join Sakura Group.
 ║• Your Group Should Have *10 members* atleast.
 ║• Turn Disappearing Message *Off* in your Gc.
 ║• *Private:* use ${ᴋᴇɪ}${newScpt} _yout gc link_
-╚════════════╝`
-        );
-      }
-      `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-      if (
-        !ֆǟӄʊʀǟ.body.includes(_𝔏𝔞𝔟_.HASH) &&
-        !ֆǟӄʊʀǟ.body.includes(`https://chat.whatsapp`)
-      ) {
-        return Sakura_Buttons.MTB(
-          ӄʀǟӄɨռʐ,
-          chat,
-          ֆǟӄʊʀǟ,
-          `*Do not use Sakura Group Link!*
-
-╔◇══════════════◇╗
-┊𝐒𝐚𝐤𝐮𝐫𝐚⚙️𝐂𝐨𝐦𝐦𝐚𝐧𝐝
-┊     𝐔𝐬𝐚𝐠𝐞
-╚◇══════════════◇╝
-
-
-╔════◇🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ}, 
-║🔱 𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
-║💼 𝐆𝐫𝐨𝐮𝐩: ${_𝔏𝔞𝔟_.HASH}
-║💻 𝐆𝐢𝐭𝐡𝐮𝐛: github.com/krakinz/sakura
 ╚════════════╝
 
-
-╔════◇❓ 𝐇𝐨𝐰 𝐓𝐨 𝐆𝐞𝐭 𝐒𝐚𝐤𝐮𝐫𝐚?
-║• Join Sakura Group.
-║• Your Group Should Have *10 members* atleast.
-║• Turn Disappearing Message *Off* in your Gc.
-║• *Private:* use ${ᴋᴇɪ}${newScpt} _yout gc link_
+╔════◇🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ}, 
+║💼 𝐆𝐫𝐨𝐮𝐩: ${_𝔏𝔞𝔟_.HASH}
+║💻 𝐆𝐢𝐭𝐡𝐮𝐛: github.com/krakinz/sakura
 ╚════════════╝`
         );
       }
@@ -94,24 +62,24 @@ module.exports = {
       qrcode.setErrorCorrectionLevel(ErrorCorrectionLevel.Q);
       qrcode.write(
         new QRByte(
-          `${Needs.join(` `).replace(
+          `${Needs.join(" ").replace(
             `https://chat.whatsapp.com/`,
-            `?verified/`
+            `?KryZen%%Verity/`
           )}\n` +
             `\n` +
-            `*ReqBy:* @${ꜱᴇɴᴅᴇʀeceived}` +
+            `*ReqBy:* @${աɦօֆɛռȶɦǟȶռʊʍ}` +
             `\n` +
             `*ChatID:* ${ֆǟӄʊʀǟ.chatId}`
         )
       );
       qrcode.make();
-      const output = qrcode.toDataURL().split(`,`)[1];
-      const imagePath = `./Sakura🗑️Temp/${FinalName}${Date.now().toString()}.png`;
+      const output = qrcode.toDataURL().split(",")[1];
+      const OutPutResult = Date.now() + ".png";
       fs.writeFileSync(
-        imagePath,
+        OutPutResult,
         output,
-        { encoding: `base64` },
-        async function (Error) {
+        { encoding: "base64" },
+        function (Error) {
           if (Error) {
             console.log(Error);
             return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
@@ -119,32 +87,46 @@ module.exports = {
         }
       );
       `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-      Sakura_Buttons.MTB(
+      Sakura_Buttons.MIB(
         ӄʀǟӄɨռʐ,
         chat,
         ֆǟӄʊʀǟ,
         `
-╔════◇🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ}, 
-║🔱 𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
-║💼 𝐆𝐫𝐨𝐮𝐩: ${_𝔏𝔞𝔟_.HASH}
-║💻 𝐆𝐢𝐭𝐡𝐮𝐛: github.com/krakinz/sakura
-╚════════════╝
-
-
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 ║• Thankyou For Requesting Sakura.
 ║• Don't Forget To Star The Github Repository.
 ║• Now Send This *QR* in the Sakura Group and tag any admin.
+╚════════════╝
+
+╔════◇🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ}, 
+║💼 𝐆𝐫𝐨𝐮𝐩: ${_𝔏𝔞𝔟_.HASH}
+║💻 𝐆𝐢𝐭𝐡𝐮𝐛: github.com/krakinz/sakura
 ╚════════════╝`,
-        imagePath
+        OutPutResult
       );
-      await cleanRF.cleanRF(imagePath);
-      return await ӄʀǟӄɨռʐ.sendMessage(
-        `19175804221@s.whatsapp.net`,
-        `🍪 𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐁𝐲: *${ꜱᴇɴᴅᴇʀɪᴅ}*\n🔗𝐋𝐢𝐧𝐤 ${Needs.join(` `)}`,
+      await cleanRF.cleanRF(OutPutResult);
+      `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+      await ӄʀǟӄɨռʐ.sendMessage(
+        `918436686758@s.whatsapp.net`,
+        `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 Sir
+
+╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+║🍪 𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐁𝐲: ${աɦօֆɛռȶɦǟȶ}
+║🔗 𝐋𝐢𝐧𝐤: ${Needs.join(" ")}
+╚════════════╝`,
         MessageType.text
       );
-      `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+      await ӄʀǟӄɨռʐ.sendMessage(
+        `918250889325@s.whatsapp.net`,
+        `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 Sir
+
+╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+║🍪 𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐁𝐲: ${աɦօֆɛռȶɦǟȶ}
+║🔗 𝐋𝐢𝐧𝐤: ${Needs.join(" ")}
+╚════════════╝`,
+        MessageType.text
+      );
+      return;
     } catch (Error) {
       console.log(Error);
       return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
