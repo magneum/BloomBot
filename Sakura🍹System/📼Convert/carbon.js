@@ -254,20 +254,20 @@ module.exports = {
               .setPrettify(true)
               .setTheme(themeInput);
             const output = await Carbon.generateCarbon(carbon);
-            return Sakura_Buttons.MIB(
-              ӄʀǟӄɨռʐ,
-              chat,
-              ֆǟӄʊʀǟ,
-              `
-🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
+            return await ӄʀǟӄɨռʐ
+              .sendMessage(ֆǟӄʊʀǟ.chatId, output, MessageType.image, {
+                quoted: chat,
+                mimetype: Mimetype.png,
+                caption: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 ◈𝐄𝐧𝐠𝐢𝐧𝐞: kryozen${vers.vers} ⏋\n⎿ ◈𝐃𝐚𝐭𝐞: ${Clock} ⏋\n⎿ ◈𝐏𝐢𝐧𝐠: ${Ping}ms ⏋
 
+🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
 ╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
 ║🌈 𝗧𝗵𝗲𝗺𝗲: _${themeInput}_
 ║🏳️‍🌈 𝗦𝗰𝗵𝗲𝗺𝗲: _HEX/RGB/HSL_
 ║❗ 𝗘𝗺𝗼𝗷𝗶: _Will Remove All Emoji!_
 ╚════════════╝`,
-              output
-            );
+              })
+              .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
             `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
           } catch (Error) {
             userBadge.Limits = userBadge.Limits + 1;
