@@ -165,12 +165,11 @@ module.exports = {
                   ID: աɦօֆɛռȶɦǟȶ,
                   money: 0,
                   daily: 0,
-                  timeout: 0,
-                  fish: 0,
+                  timeout: 86400000,
                   fishdone: 0,
-                  fishtimeout: 0,
+                  fishtimeout: 1800000,
                   workdone: 0,
-                  worktimeout: 0,
+                  worktimeout: 900000,
                 });
                 newEcoUser
                   .save()

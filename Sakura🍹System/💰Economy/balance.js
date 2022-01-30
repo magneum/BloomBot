@@ -53,16 +53,18 @@ module.exports = {
             ID: Receiver,
           },
           async (Error, userEco) => {
-            if (Error) console.log(Error);
+            if (Error) {
+              ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
+              return;
+            }
             if (!userEco) {
               var newUser = new Economy({
                 ID: Receiver,
                 money: 0,
                 daily: 0,
-                timeout: 0,
-                fish: 0,
+                timeout: 86400000,
                 fishdone: 0,
-                fishtimeout: 0,
+                fishtimeout: 1800000,
                 workdone: Date.now(),
                 worktimeout: 900000,
               });
@@ -111,16 +113,18 @@ module.exports = {
             ID: աɦօֆɛռȶɦǟȶ,
           },
           async (Error, userEco) => {
-            if (Error) console.log(Error);
+            if (Error) {
+              ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
+              return;
+            }
             if (!userEco) {
               var newUser = new Economy({
                 ID: աɦօֆɛռȶɦǟȶ,
                 money: 0,
                 daily: 0,
-                timeout: 0,
-                fish: 0,
+                timeout: 86400000,
                 fishdone: 0,
-                fishtimeout: 0,
+                fishtimeout: 1800000,
                 workdone: Date.now(),
                 worktimeout: 900000,
               });

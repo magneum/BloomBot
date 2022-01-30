@@ -50,7 +50,10 @@ module.exports = {
           ID: աɦօֆɛռȶɦǟȶ,
         },
         async (Error, userEco) => {
-          if (Error) console.log(Error);
+          if (Error) {
+            ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
+            return;
+          }
           if (!userEco) {
             var newUser = new Economy({
               ID: աɦօֆɛռȶɦǟȶ,
@@ -85,7 +88,10 @@ module.exports = {
                 ID: աɦօֆɛռȶɦǟȶ,
               },
               async (Error, userZoo) => {
-                if (Error) console.log(Error);
+                if (Error) {
+                  ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
+                  return;
+                }
                 if (!userZoo) {
                   var newUser = new Zoology({
                     ID: աɦօֆɛռȶɦǟȶ,

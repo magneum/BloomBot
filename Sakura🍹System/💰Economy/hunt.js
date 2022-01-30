@@ -55,7 +55,10 @@ module.exports = {
         },
         async (Error, userPoke) => {
           console.log(userPoke);
-          if (Error) console.log(Error);
+          if (Error) {
+            ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
+            return;
+          }
           if (!userPoke) {
             var newPokeUser = new Pokemon({
               ID: աɦօֆɛռȶɦǟȶ,
@@ -87,18 +90,20 @@ module.exports = {
                 ID: աɦօֆɛռȶɦǟȶ,
               },
               async (Error, userEco) => {
-                if (Error) console.log(Error);
+                if (Error) {
+                  ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
+                  return;
+                }
                 if (!userEco) {
                   var newUser = new Economy({
                     ID: աɦօֆɛռȶɦǟȶ,
                     money: 0,
                     daily: 0,
-                    timeout: 0,
-                    fish: 0,
+                    timeout: 86400000,
                     fishdone: 0,
-                    fishtimeout: 0,
+                    fishtimeout: 1800000,
                     workdone: 0,
-                    worktimeout: 0,
+                    worktimeout: 900000,
                   });
                   await newUser
                     .save()

@@ -49,7 +49,10 @@ module.exports = {
         },
         async (Error, userEco) => {
           console.log(userEco);
-          if (Error) console.log(Error);
+          if (Error) {
+            ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
+            return;
+          }
           if (!userEco) {
             var newUser = new Economy({
               ID: ֆǟӄʊʀǟ.sender,
@@ -57,9 +60,9 @@ module.exports = {
               daily: Date.now(),
               timeout: 86400000,
               fishdone: 0,
-              fishtimeout: 0,
+              fishtimeout: 1800000,
               workdone: 0,
-              worktimeout: 0,
+              worktimeout: 900000,
             });
             await newUser
               .save()
