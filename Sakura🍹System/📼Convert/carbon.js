@@ -267,6 +267,7 @@ module.exports = {
               .sendMessage(ֆǟӄʊʀǟ.chatId, output, MessageType.image, {
                 quoted: chat,
                 mimetype: Mimetype.png,
+                contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
                 caption: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 ◈𝐄𝐧𝐠𝐢𝐧𝐞: kryozen${vers.vers} ⏋\n⎿ ◈𝐃𝐚𝐭𝐞: ${Clock} ⏋\n⎿ ◈𝐏𝐢𝐧𝐠: ${Ping}ms ⏋
 
 🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
