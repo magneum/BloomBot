@@ -484,6 +484,10 @@ ${update.desc}`,
                 });
                 await newUsers.save().catch((Error) => console.log(Error));
               } else {
+                console.log(users);
+                console.log(
+                  Kolor.green("═══════════════| 💡 Ranks 💡 |═══════════════")
+                );
                 var currentLvl = users.level;
                 var currentXP = users.xp;
                 let nxtlvl = "";
@@ -633,6 +637,8 @@ ${update.desc}`,
 ┊ 𝐑𝐚𝐧𝐤𝐢𝐧𝐠📜𝐒𝐲𝐬𝐭𝐞𝐦
 ╚◇══════════════◇╝
 
+*⚠️ Sorry We Had To Remake Ranking. So Old Datas Are Lost!*
+
 ╔════◇📜𝐑𝐚𝐧𝐤 𝐂𝐚𝐫𝐝
 ║🥂 𝗫𝗽: ${currentXP}
 ║🍩 𝗟𝗲𝘃𝗲𝗹: ${currentLvl}
@@ -708,6 +714,8 @@ ${update.desc}`,
 ╔◇══════════════◇╗
 ┊ 𝐑𝐚𝐧𝐤𝐢𝐧𝐠📜𝐒𝐲𝐬𝐭𝐞𝐦
 ╚◇══════════════◇╝
+
+*⚠️ Sorry We Had To Remake Ranking. So Old Datas Are Lost!*
 
 ╔════◇📜𝐑𝐚𝐧𝐤
 ║🥂 𝗫𝗽: ${currentXP}
