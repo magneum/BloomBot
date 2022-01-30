@@ -29,34 +29,34 @@ module.exports = {
 ╚════════════╝
 
 ╔════◇🌈 𝗧𝗵𝗲𝗺𝗲𝐬
-║3024 night
-║a11y dark
-║blackboard
-║base 16 (dark)
-║base 16 (light)
-║cobalt
-║duotone
-║hopscotch
-║lucario
-║material
-║monokai
-║night owl
-║nord
-║oceanic next
-║one light
-║one dark
-║panda
-║paraiso
-║seti
-║shades of purple
-║solarized (dark)
-║solarized (light)
-║synthwave 84
-║twilight
-║verminal
-║vscode
-║yeti
-║zenburn
+║ 3024 night
+║ a11y dark
+║ blackboard
+║ base 16 (dark)
+║ base 16 (light)
+║ cobalt
+║ duotone
+║ hopscotch
+║ lucario
+║ material
+║ monokai
+║ night owl
+║ nord
+║ oceanic next
+║ one light
+║ one dark
+║ panda
+║ paraiso
+║ seti
+║ shades of purple
+║ solarized (dark)
+║ solarized (light)
+║ synthwave 84
+║ twilight
+║ verminal
+║ vscode
+║ yeti
+║ zenburn
 ╚════════════╝`,
   async handle(ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
     try {
