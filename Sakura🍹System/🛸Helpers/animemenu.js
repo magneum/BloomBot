@@ -98,7 +98,6 @@ module.exports = {
 ║⬡ *${ᴋᴇɪ}tease*  _@tag or reply_
 ║⬡ *${ᴋᴇɪ}tickle*  _@tag or reply_
 ║⬡ *${ᴋᴇɪ}thumbsup*  _@tag or reply_
-║⬡ *${ᴋᴇɪ}triggered*  _@tag or reply_
 ║⬡ *${ᴋᴇɪ}wag*  _@tag or reply_
 ╚════════════╝`,
         `./Sakura☣️Reactor/ֆǟӄʊʀǟ.png`

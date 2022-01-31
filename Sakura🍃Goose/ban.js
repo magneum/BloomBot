@@ -6,7 +6,6 @@
 var mongoose = require("mongoose");
 var BanSakuraSchema = new mongoose.Schema({
 ID: String,
-serverID: String,
 });
 module.exports = mongoose.model("Ban", BanSakuraSchema);
 `|🍹|`;
