@@ -13,21 +13,15 @@ const ꜰᴜᴄᴋ = require(`./oShit`);
 let Timestamp = speed();
 const now = new Date();
 const fs = require(`fs`);
-const Pong = speed() - Timestamp;
-const Ping = Pong.toFixed(3) 
+const Pong = (speed() - Timestamp) * 120;
+const Ping = Pong.toFixed(3);
 date.format(now, `ddd, MMM DD YYYY`);
 const pattern = date.compile(`ddd, MMM DD YYYY`);
 const Clock = date.format(now, pattern);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 `⬡🍹⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-const Sakura_GIF_Static = async (
-  ӄʀǟӄɨռʐ,
-  chat,
-  ֆǟӄʊʀǟ,
-  MainText,
-  MediaUrl
-) => {
+const Sakura_GIF_Static = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, MainText, MediaUrl) => {
   try {
     const defaultnm = ֆǟӄʊʀǟ.commandName;
     const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);

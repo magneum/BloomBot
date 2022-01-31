@@ -27,7 +27,7 @@ try {
   const ꜰᴜᴄᴋ = require(`./oShit`);
   const Kolor = require(`chalk`);
   let Timestamp = speed();
-  const Pong = speed() - Timestamp;
+  const Pong = (speed() - Timestamp) * 120;
   const Ping = Pong.toFixed(3);
   const date = require(`date-and-time`);
   const now = new Date();

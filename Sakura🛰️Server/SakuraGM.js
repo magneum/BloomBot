@@ -17,9 +17,9 @@ const Downloader = require(`nodejs-file-downloader`);
 const fs = require(`fs`);
 const speed = require(`performance-now`);
 let Timestamp = speed();
-const Pong = speed() - Timestamp;
+const Pong = (speed() - Timestamp) * 120;
 const vers = require(`../package.json`);
-const Ping = Pong.toFixed(3) 
+const Ping = Pong.toFixed(3);
 const date = require(`date-and-time`);
 const now = new Date();
 date.format(now, `ddd, MMM DD YYYY`);
