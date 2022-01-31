@@ -5,7 +5,7 @@
 `|🍹|`;
 const fs = require(`fs`);
 const ascii = require(`ascii-table`);
-function Tǟɮʟɛɨȶ(ꜱɪᴛʀᴀᴘ, commandUsage) {
+async function Tǟɮʟɛɨȶ(ꜱɪᴛʀᴀᴘ, commandUsage) {
   const ᴅᴇʀꜱ = fs.readdirSync(`./Sakura🍹System`);
   for (const ʟᴅᴇʀ of ᴅᴇʀꜱ) {
     const cmdF = fs
