@@ -390,7 +390,6 @@ return;
 console.log("═══════════════| 🔻Banned Group🔻");
 return;
 } else {
-console.log("═══════════════| 🍹 𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) 🍹");
 await Ranker.findOne(
 {
 ID: ֆǟӄʊʀǟ.chatId,
