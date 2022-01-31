@@ -50,10 +50,10 @@ module.exports = {
         {
           mimetype: `video/gif`,
           contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
-          caption: `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ}, (owner)
+          caption: `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
 
-*🍹ֆǟӄʊʀǟ™ Is Now Rebooting...*
-_Wait For (10-30)s_`,
+(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 by ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹 
+_Is Now Rebooting.Wait For (10-30)s_`,
         }
       );
       await heroku
