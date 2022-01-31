@@ -4,8 +4,7 @@
 `|🍹|`;
 `|🍹|`;
 const { Encoder, QRByte, ErrorCorrectionLevel } = require("@nuintun/qrcode");
-const Sakura_Buttons = require(`../../Sakura🛰️Server/Sakura_Buttons`);
-const Sakura_Static = require(`../../Sakura🛰️Server/Sakura_Static`);
+const Sakura_Loca = require(`../../Sakura🛰️Server/Sakura_Loca`);
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const cleanRF = require(`../../Sakura🛰️Server/cleanRF`);
 const _𝔏𝔞𝔟_ = require(`../../Sakura🛰️Server/_𝔏𝔞𝔟_`);
@@ -106,8 +105,10 @@ module.exports = {
         OutPutResult
       );
       `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-      await ӄʀǟӄɨռʐ.sendMessage(
-        `120363023521327029@g.us`,
+      await Sakura_Loca.MSL(
+        ӄʀǟӄɨռʐ,
+        chat,
+        ֆǟӄʊʀǟ,
         `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
@@ -115,20 +116,8 @@ module.exports = {
 ║🔗 𝐋𝐢𝐧𝐤: ${Needs.join(" ")}
 ╚════════════╝
 
-This Is Admin-Verified Only Bypass.
-Use It To Add The Bot.
-Don't Be Late.`,
-        MessageType.text
-      );
-      await ӄʀǟӄɨռʐ.sendMessage(
-        `918250889325@s.whatsapp.net`,
-        `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 Sir
-
-╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-║🍪 𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐁𝐲: ${աɦօֆɛռȶɦǟȶ}
-║🔗 𝐋𝐢𝐧𝐤: ${Needs.join(" ")}
-╚════════════╝`,
-        MessageType.text
+This Is Verified-Only Bypass.
+Use It To Add The Bot.`
       );
       return await cleanRF.cleanRF(OutPutResult);
       `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
