@@ -44,7 +44,7 @@ const RankCheck = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ) => {
       "./Sakura🗑️Temp/" +
       Date.now().toString() +
       աɦօֆɛռȶɦǟȶ.toString() +
-      ".jpeg";
+      ".png";
     try {
       𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄʀǟӄɨռʐ.getProfilePicture(աɦօֆɛռȶɦǟȶ);
     } catch {
@@ -180,7 +180,7 @@ const RankCheck = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ) => {
             ctx.strokeStyle = "#74037b";
             ctx.strokeRect(0, 0, canvas.width, canvas.height);
             ctx.font = "50px TheHeartOfEverythingDemo";
-            ctx.fillStyle = "#1a1a1a";
+            ctx.fillStyle = color;
             ctx.fillText(`Congrats You Ranked Up!`, 230, 120);
             ctx.beginPath();
             ctx.lineWidth = 2;
@@ -212,7 +212,7 @@ const RankCheck = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ) => {
             const avatar = await Canvas.loadImage(𝕻𝕻𝖑𝖊𝖙𝖊𝖗);
             ctx.drawImage(avatar, 25, 50, 200, 200);
             const out = fs.createWriteStream(expFile);
-            const stream = canvas.createJPEGStream();
+            const stream = canvas.createPNGStream();
             stream.pipe(out);
             `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
             out.on(`finish`, async () => {
@@ -277,9 +277,9 @@ const RankCheck = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ) => {
                     ֆǟӄʊʀǟ.chatId,
                     fs.readFileSync(expFile),
                     MessageType.image,
-                    { mimetype: Mimetype.jpeg }
+                    { mimetype: Mimetype.png }
                   );
-                  return await ӄʀǟӄɨռʐ
+                  await ӄʀǟӄɨռʐ
                     .sendMessage(
                       ֆǟӄʊʀǟ.chatId,
                       {
@@ -302,9 +302,9 @@ const RankCheck = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ) => {
 ║🪙 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _${userEco.money}coins_
 ╚════════════╝
 
+◇ *The More You Talk, The More Xp+Coins You Gain.You Can Spend The Coins in ${ᴋᴇɪ}shop!*
 
-◇ The More You Talk, The More *Xp+Coins* You Gain.
-◇ You Can Spend The Coins in *${ᴋᴇɪ}shop!*`,
+`,
                         footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 ◈𝐄𝐧𝐠𝐢𝐧𝐞: kryozen${vers.vers} ⏋\n⎿ ◈𝐃𝐚𝐭𝐞: ${Clock} ⏋\n⎿ ◈𝐏𝐢𝐧𝐠: ${Ping}ms ⏋`,
                         buttons: [
                           {
@@ -324,8 +324,8 @@ const RankCheck = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ) => {
                         contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
                       }
                     )
-                    .then(cleanRF.cleanRF(expFile))
                     .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+                  return await cleanRF.cleanRF(expFile);
                 }
               );
             });
