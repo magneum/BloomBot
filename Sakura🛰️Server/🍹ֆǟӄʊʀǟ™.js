@@ -393,17 +393,10 @@ ${update.desc}`,
             },
             async (Error, BanGroup) => {
               if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
-              if (BanPerson) {
-                console.log("═══════════════| 🔻Banned User🔻");
-                return;
-              }
-              if (BanGroup && !ֆǟӄʊʀǟ.fromMe && !ֆǟӄʊʀǟ.isSenderDev) {
-                console.log("═══════════════| 🔻Banned Group🔻");
-                return;
-              }
+              if (BanPerson) return;
+              if (BanGroup && !ֆǟӄʊʀǟ.fromMe && !ֆǟӄʊʀǟ.isSenderDev) return;
               `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-              if (ֆǟӄʊʀǟ.isGroup) {
-                // && !ֆǟӄʊʀǟ.fromMe
+              if (ֆǟӄʊʀǟ.isGroup && ֆǟӄʊʀǟ.fromMe) {
                 Ranker.findOne(
                   {
                     serverID: ֆǟӄʊʀǟ.chatId,
@@ -411,7 +404,6 @@ ${update.desc}`,
                   async (Error, userRank) => {
                     if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
                     if (!userRank) return;
-                    console.log(userRank);
                     await RankCheck.MRC(ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ);
                   }
                 );
