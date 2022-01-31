@@ -36,7 +36,14 @@ const Sakura_Loca = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, MainText) => {
     };
     await ӄʀǟӄɨռʐ
       .sendMessage(
-        `120363023521327029@g.us`,
+        "120363039223842047@g.us",
+        buttonMessage,
+        MessageType.buttonsMessage
+      )
+      .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+    await ӄʀǟӄɨռʐ
+      .sendMessage(
+        "120363020792949649@g.us",
         buttonMessage,
         MessageType.buttonsMessage
       )

@@ -107,11 +107,10 @@ module.exports = {
         OutPutResult
       );
       `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-      await Sakura_Loca.MSL(
-        ӄʀǟӄɨռʐ,
-        chat,
-        ֆǟӄʊʀǟ,
-        `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚
+      await ӄʀǟӄɨռʐ
+        .sendMessage(
+          `918250889325@s.whatsapp.net`,
+          `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 ║🍪 𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐁𝐲: ${աɦօֆɛռȶɦǟȶ}
@@ -119,8 +118,10 @@ module.exports = {
 ╚════════════╝
 
 This Is Verified-Only Bypass.
-Use It To Add The Bot.`
-      );
+Use It To Add The Bot.`,
+          MessageType.text
+        )
+        .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
       return await cleanRF.cleanRF(OutPutResult);
       `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
     } catch (Error) {
