@@ -107,7 +107,9 @@ module.exports = {
                 .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
               const media = await ӄʀǟӄɨռʐ.prepareMessage(
                 ֆǟӄʊʀǟ.chatId,
-                fs.readFileSync(`./Sakura☣️Reactor/Sakura_Autorank.png`),
+                {
+                  url: "https://i.postimg.cc/GtzHrQNr/Sakura-Rank-Catelog.png",
+                },
                 MessageType.image,
                 {
                   mimetype: Mimetype.png,
@@ -156,7 +158,9 @@ module.exports = {
                 .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
               const media = await ӄʀǟӄɨռʐ.prepareMessage(
                 ֆǟӄʊʀǟ.chatId,
-                fs.readFileSync(`./Sakura☣️Reactor/Sakura_Autorank.png`),
+                {
+                  url: "https://i.postimg.cc/GtzHrQNr/Sakura-Rank-Catelog.png",
+                },
                 MessageType.image,
                 {
                   mimetype: Mimetype.png,
@@ -212,7 +216,9 @@ module.exports = {
             if (!server) {
               const media = await ӄʀǟӄɨռʐ.prepareMessage(
                 ֆǟӄʊʀǟ.chatId,
-                fs.readFileSync(`./Sakura☣️Reactor/Sakura_Autorank.png`),
+                {
+                  url: "https://i.postimg.cc/GtzHrQNr/Sakura-Rank-Catelog.png",
+                },
                 MessageType.image,
                 {
                   mimetype: Mimetype.png,
@@ -260,7 +266,9 @@ module.exports = {
                 .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
               const media = await ӄʀǟӄɨռʐ.prepareMessage(
                 ֆǟӄʊʀǟ.chatId,
-                fs.readFileSync(`./Sakura☣️Reactor/Sakura_Autorank.png`),
+                {
+                  url: "https://i.postimg.cc/GtzHrQNr/Sakura-Rank-Catelog.png",
+                },
                 MessageType.image,
                 {
                   mimetype: Mimetype.png,
