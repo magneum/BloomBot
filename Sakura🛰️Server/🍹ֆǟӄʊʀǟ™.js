@@ -381,11 +381,16 @@ ${update.desc}`,
                       `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚
 
 ╔════| 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
-║💡INFO ⬰ 𝐍𝐞𝐰 𝐔𝐩𝐝𝐚𝐭𝐞 𝐩𝐞𝐧𝐝𝐢𝐧𝐠, 𝐮𝐩𝐝𝐚𝐭𝐢𝐧𝐠...
+║💡 𝐊𝐳𝐧 𝐈𝐧𝐟𝐨⬰ _New Updates Pending! Auto-Pulling && Updating!_
+║💡 𝐃𝐞𝐯 𝐓𝐚𝐠⬰ _By KrakinzLab Dev #${Math.floor(
+                        Math.random() * (100 - 5 + 1) + 5
+                      )}_
 ╚════════════╝`
                     );
                     console.log(
-                      Kolor.yellow(`💡INFO ⬰ 𝐍𝐞𝐰 𝐔𝐩𝐝𝐚𝐭𝐞 𝐩𝐞𝐧𝐝𝐢𝐧𝐠, 𝐮𝐩𝐝𝐚𝐭𝐢𝐧𝐠...`)
+                      Kolor.yellow(
+                        `💡INFO ⬰ New Updates Pending! Auto-Pulling && Updating!`
+                      )
                     );
                   })
                   .pull(async (Error, update) => {
@@ -399,7 +404,12 @@ ${update.desc}`,
                           `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚
 
 ╔════| 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
-║💡INFO ⬰ Auto Updated Sakura With Latest *[${mergeSummary.merges.length}]* Changes.
+║💡 𝐊𝐳𝐧 𝐈𝐧𝐟𝐨⬰ _Auto Updated Sakura With Latest *[${
+                            mergeSummary.merges.length
+                          }]* Changes._
+║💡 𝐃𝐞𝐯 𝐓𝐚𝐠⬰ _By KrakinzLab Dev #${Math.floor(
+                            Math.random() * (100 - 5 + 1) + 5
+                          )}_
 ╚════════════╝`
                         );
                         console.log(
@@ -415,7 +425,10 @@ ${update.desc}`,
                           `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚
 
 ╔════| 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
-║❌ERROR ⬰ 𝗠𝗲𝗿𝗴𝗲 𝗿𝗲𝘀𝘂𝗹𝘁𝗲𝗱 𝗶𝗻 𝗰𝗼𝗻𝗳𝗹𝗶𝗰𝘁𝘀!
+║⚠️ERROR ⬰ _Auto-Merge With Git resulted in conflicts!_
+║💡 𝐃𝐞𝐯 𝐓𝐚𝐠⬰ _By KrakinzLab Dev #${Math.floor(
+                            Math.random() * (100 - 5 + 1) + 5
+                          )}_
 ╚════════════╝
 ${Error} `
                         );
@@ -442,6 +455,9 @@ ${Error} `
 
 ╔════| 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
 ║💡INFO ⬰ Bot Rebooted Asynchronously using child_process
+║💡 𝐃𝐞𝐯 𝐓𝐚𝐠⬰ _By KrakinzLab Dev #${Math.floor(
+                            Math.random() * (100 - 5 + 1) + 5
+                          )}_
 ╚════════════╝`
                         );
                       });
@@ -691,11 +707,16 @@ ${Error} `
                       `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚
 
 ╔════| 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
-║💡INFO ⬰ 𝐍𝐞𝐰 𝐔𝐩𝐝𝐚𝐭𝐞 𝐩𝐞𝐧𝐝𝐢𝐧𝐠, 𝐮𝐩𝐝𝐚𝐭𝐢𝐧𝐠...
+║💡 𝐊𝐳𝐧 𝐈𝐧𝐟𝐨⬰ _New Updates Pending! Auto-Pulling && Updating!_
+║💡 𝐃𝐞𝐯 𝐓𝐚𝐠⬰ _By KrakinzLab Dev #${Math.floor(
+                        Math.random() * (100 - 5 + 1) + 5
+                      )}_
 ╚════════════╝`
                     );
                     console.log(
-                      Kolor.yellow(`💡INFO ⬰ 𝐍𝐞𝐰 𝐔𝐩𝐝𝐚𝐭𝐞 𝐩𝐞𝐧𝐝𝐢𝐧𝐠, 𝐮𝐩𝐝𝐚𝐭𝐢𝐧𝐠...`)
+                      Kolor.yellow(
+                        `💡INFO ⬰ New Updates Pending! Auto-Pulling && Updating!`
+                      )
                     );
                   })
 
@@ -710,7 +731,12 @@ ${Error} `
                           `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚
 
 ╔════| 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
-║💡INFO ⬰ Auto Updated Sakura With Latest *[${mergeSummary.merges.length}]* Changes.
+║💡 𝐊𝐳𝐧 𝐈𝐧𝐟𝐨⬰ _Auto Updated Sakura With Latest *[${
+                            mergeSummary.merges.length
+                          }]* Changes._
+║💡 𝐃𝐞𝐯 𝐓𝐚𝐠⬰ _By KrakinzLab Dev #${Math.floor(
+                            Math.random() * (100 - 5 + 1) + 5
+                          )}_
 ╚════════════╝`
                         );
                         console.log(
@@ -726,7 +752,10 @@ ${Error} `
                           `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚
 
 ╔════| 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
-║❌ERROR ⬰ 𝗠𝗲𝗿𝗴𝗲 𝗿𝗲𝘀𝘂𝗹𝘁𝗲𝗱 𝗶𝗻 𝗰𝗼𝗻𝗳𝗹𝗶𝗰𝘁𝘀!
+║⚠️ERROR ⬰ _Auto-Merge With Git resulted in conflicts!_
+║💡 𝐃𝐞𝐯 𝐓𝐚𝐠⬰ _By KrakinzLab Dev #${Math.floor(
+                            Math.random() * (100 - 5 + 1) + 5
+                          )}_
 ╚════════════╝
 ${Error} `
                         );
@@ -753,6 +782,9 @@ ${Error} `
 
 ╔════| 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
 ║💡INFO ⬰ Bot Rebooted Asynchronously using child_process
+║💡 𝐃𝐞𝐯 𝐓𝐚𝐠⬰ _By KrakinzLab Dev #${Math.floor(
+                            Math.random() * (100 - 5 + 1) + 5
+                          )}_
 ╚════════════╝`
                         );
                       });
@@ -982,11 +1014,16 @@ ${Error} `
                   `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚
 
 ╔════| 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
-║💡INFO ⬰ 𝐍𝐞𝐰 𝐔𝐩𝐝𝐚𝐭𝐞 𝐩𝐞𝐧𝐝𝐢𝐧𝐠, 𝐮𝐩𝐝𝐚𝐭𝐢𝐧𝐠...
+║💡 𝐊𝐳𝐧 𝐈𝐧𝐟𝐨⬰ _New Updates Pending! Auto-Pulling && Updating!_
+║💡 𝐃𝐞𝐯 𝐓𝐚𝐠⬰ _By KrakinzLab Dev #${Math.floor(
+                    Math.random() * (100 - 5 + 1) + 5
+                  )}_
 ╚════════════╝`
                 );
                 console.log(
-                  Kolor.yellow(`💡INFO ⬰ 𝐍𝐞𝐰 𝐔𝐩𝐝𝐚𝐭𝐞 𝐩𝐞𝐧𝐝𝐢𝐧𝐠, 𝐮𝐩𝐝𝐚𝐭𝐢𝐧𝐠...`)
+                  Kolor.yellow(
+                    `💡INFO ⬰ New Updates Pending! Auto-Pulling && Updating!`
+                  )
                 );
               })
               .pull(async (Error, update) => {
@@ -1000,7 +1037,12 @@ ${Error} `
                       `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚
 
 ╔════| 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
-║💡INFO ⬰ Auto Updated Sakura With Latest *[${mergeSummary.merges.length}]* Changes.
+║💡 𝐊𝐳𝐧 𝐈𝐧𝐟𝐨⬰ _Auto Updated Sakura With Latest *[${
+                        mergeSummary.merges.length
+                      }]* Changes._
+║💡 𝐃𝐞𝐯 𝐓𝐚𝐠⬰ _By KrakinzLab Dev #${Math.floor(
+                        Math.random() * (100 - 5 + 1) + 5
+                      )}_
 ╚════════════╝`
                     );
                     console.log(
@@ -1016,7 +1058,10 @@ ${Error} `
                       `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚
 
 ╔════| 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
-║❌ERROR ⬰ 𝗠𝗲𝗿𝗴𝗲 𝗿𝗲𝘀𝘂𝗹𝘁𝗲𝗱 𝗶𝗻 𝗰𝗼𝗻𝗳𝗹𝗶𝗰𝘁𝘀!
+║⚠️ERROR ⬰ _Auto-Merge With Git resulted in conflicts!_
+║💡 𝐃𝐞𝐯 𝐓𝐚𝐠⬰ _By KrakinzLab Dev #${Math.floor(
+                        Math.random() * (100 - 5 + 1) + 5
+                      )}_
 ╚════════════╝
 ${Error} `
                     );
@@ -1043,6 +1088,9 @@ ${Error} `
 
 ╔════| 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
 ║💡INFO ⬰ Bot Rebooted Asynchronously using child_process
+║💡 𝐃𝐞𝐯 𝐓𝐚𝐠⬰ _By KrakinzLab Dev #${Math.floor(
+                        Math.random() * (100 - 5 + 1) + 5
+                      )}_
 ╚════════════╝`
                     );
                   });
