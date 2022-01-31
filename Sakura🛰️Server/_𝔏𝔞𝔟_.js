@@ -12,6 +12,7 @@ if (fs.existsSync(`🍹ֆǟӄʊʀǟ™.env`)) {
   require(`dotenv`);
 }
 const env = {
+  DEVL: process.env.DEVL === undefined ? `No` : process.env.DEVL,
   SAKURA: process.env.SAKURA === undefined ? `Null` : process.env.SAKURA,
   SAKURAMDB:
     process.env.SAKURAMDB === undefined ? `Null` : process.env.SAKURAMDB,
