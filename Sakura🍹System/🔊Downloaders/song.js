@@ -7,18 +7,14 @@
 const Sakura_Buttons = require(`../../Sakura🛰️Server/Sakura_Buttons`);
 const Sakura_Static = require(`../../Sakura🛰️Server/Sakura_Static`);
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
-const cleanRF = require(`../../Sakura🛰️Server/cleanRF`);
+const FFmpegAudio = require(`../../Sakura🛰️Server/FFmpegAudio`);
 const _𝔏𝔞𝔟_ = require(`../../Sakura🛰️Server/_𝔏𝔞𝔟_`);
 const ꜰᴜᴄᴋ = require(`../../Sakura🛰️Server/oShit`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
-const getVideoId = require(`get-video-id`);
-const ffmpeg = require(`fluent-ffmpeg`);
-const readline = require(`readline`);
-const ytdl = require(`ytdl-core`);
 const yts = require(`yt-search`);
-var path = require(`path`);
 const fs = require(`fs`);
+var path = require(`path`);
 var scriptName = path.basename(__filename);
 var newScpt = scriptName.slice(0, -3).toLowerCase();
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
@@ -140,10 +136,7 @@ module.exports = {
             }
           }
           `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-          const hold = require(`../../Sakura🛰️Server/Hold`);
-          hold.Hold(ֆǟӄʊʀǟ);
-          `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-          if (!ֆǟӄʊʀǟ.fromMe && userBadge.value === `False`) {
+          if (!ֆǟӄʊʀǟ.fromMe && userBadge.value === "False") {
             let time = ms(
               userBadge.PermanentLimitTime -
                 (Date.now() - userBadge.CurrentLimitTime)
@@ -161,10 +154,9 @@ module.exports = {
             );
           }
           `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-          var TubeSearch = await yts(Needs.join(` `));
-          var Tube = TubeSearch.videos.slice(0, 1);
-          console.log(Tube[0]);
-          Tube.forEach(async function (Found) {
+          const LinkForGroups = await yts(Needs.join(` `));
+          const GroupVideos = LinkForGroups.videos.slice(0, 1);
+          GroupVideos.forEach(async function (Found) {
             if (Found.seconds > `1200`) {
               userBadge.Limits = userBadge.Limits + 1;
               await userBadge
@@ -174,8 +166,8 @@ module.exports = {
                 ӄʀǟӄɨռʐ,
                 chat,
                 ֆǟӄʊʀǟ,
-                `⭕𝐀𝐮𝐝𝐢𝐨 🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ}, 
-𝗣𝗹𝗲𝗮𝘀𝗲 𝗖𝗵𝗼𝗼𝘀𝗲 𝗦𝗺𝗮𝗹𝗹𝗲𝗿 𝐀𝐮𝐝𝐢𝐨 𝗧𝗵𝗲𝗻 20-𝗺𝗶𝗻𝘂𝘁𝗲𝘀!
+                `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ}, 
+⭕𝗣𝗹𝗲𝗮𝘀𝗲 𝗖𝗵𝗼𝗼𝘀𝗲 𝗦𝗺𝗮𝗹𝗹𝗲𝗿 𝐀𝐮𝐝𝐢𝐨 𝗧𝗵𝗲𝗻 20-𝗺𝗶𝗻𝘂𝘁𝗲𝘀!
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 ║🍻 𝐓𝐢𝐭𝐥𝐞: ${Found.title}
@@ -184,100 +176,26 @@ module.exports = {
 ╚════════════╝`,
                 Found.thumbnail
               );
+            } else {
+              await FFmpegAudio.FFmpegAudio(
+                ӄʀǟӄɨռʐ,
+                ֆǟӄʊʀǟ,
+                chat,
+                Found,
+                userBadge
+              );
             }
-            `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-            Sakura_Buttons.MIB(
-              ӄʀǟӄɨռʐ,
-              chat,
-              ֆǟӄʊʀǟ,
-              `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
-╔════◇ 𝗣𝗹𝗲𝗮𝘀𝗲 𝘄𝗮𝗶𝘁!
-║⭕ 𝗙𝗶𝗹𝗲𝗧𝘆𝗽𝗲: _Audio_
-║⏰ 𝗪𝗮𝗶𝘁𝗧𝗶𝗺𝗲: _Depends on Length of file._
-╚════════════╝
-
-╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-║🍻 𝐓𝐢𝐭𝐥𝐞: ${Found.title}
-║🙈 𝐕𝐢𝐞𝐰𝐬: ${Found.views}
-║⏰ 𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧: ${Found.timestamp}
-║✒️ 𝐀𝐮𝐭𝐡𝐨𝐫: ${Found.author.name}
-║📜 𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${Found.description}
-║🔗 𝐋𝐢𝐧𝐤: ${Found.url}
-╚════════════╝`,
-              Found.thumbnail
-            );
-            `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-            try {
-              const Link = Found.url;
-              const { id } = getVideoId(Link);
-              var YouFile = Date.now() + `_` + id + `_` + `.mp3`;
-              var YouStream = ytdl(Link, {
-                quality: `highestaudio`,
-              });
-            } catch (Error) {
-              console.log(`═════⬡|⭕𝐘𝐭𝐝𝐥-𝐂𝐨𝐫𝐞 𝐄𝐫𝐫𝐨𝐫: ` + Error);
-              userBadge.Limits = userBadge.Limits + 1;
-              await userBadge
-                .save()
-                .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-              return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
-            }
-            `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-            try {
-              ffmpeg(YouStream)
-                .audioBitrate(128)
-                .save(YouFile)
-                .on(`progress`, (p) => {
-                  readline.cursorTo(process.stdout, 0);
-                  process.stdout.write(`═════⬡|💯𝐏𝐫𝐨𝐠𝐫𝐞𝐬𝐬: ${p.targetSize}kb`);
-                })
-                .on(`end`, async () => {
-                  console.clear();
-                  console.log(`═════⬡|🥂𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐅𝐢𝐧𝐢𝐬𝐞𝐝: ` + YouFile);
-                  return await ӄʀǟӄɨռʐ
-                    .sendMessage(
-                      ֆǟӄʊʀǟ.chatId,
-                      fs.readFileSync(YouFile),
-                      MessageType.audio,
-                      {
-                        quoted: chat,
-                        mimetype: `audio/mp4`,
-                      }
-                    )
-                    .then(cleanRF.cleanRF(YouFile))
-                    .catch((Error) =>
-                      ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
-                    );
-                })
-                .on(`error`, async (Error) => {
-                  console.log(`═════⬡|🐞𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐄𝐫𝐫𝐨𝐫: ` + Error);
-                  userBadge.Limits = userBadge.Limits + 1;
-                  await userBadge
-                    .save()
-                    .catch((Error) =>
-                      ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
-                    );
-                  return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
-                });
-            } catch (Error) {
-              console.log(`═════⬡|🔺𝐅𝐅𝐦𝐩𝐞𝐠 𝐄𝐫𝐫𝐨𝐫: ` + Error);
-              userBadge.Limits = userBadge.Limits + 1;
-              await userBadge
-                .save()
-                .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-              return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
-            }
-            `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
           });
         }
       );
       `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
     } catch (Error) {
       ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
-      return;
+      console.log(Error);
     }
   },
 };
+`|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
 `|🍹|`;
 `|🍹|`;
 `|🍹|======================================================================================================⬡  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™`;
