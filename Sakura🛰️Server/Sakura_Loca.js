@@ -21,51 +21,51 @@ const Clock = date.format(now, pattern);
 const vers = require(`../package.json`);
 `⬡🍹⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
 const Sakura_Loca = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, MainText) => {
-  try {
-    const buttonMessage = {
-      contentText: MainText,
-      footerText: `⎿(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚: _kryozen${vers.vers}_⏋\n⎿𝐃𝐚𝐭𝐞: _${Clock}_⏋\n⎿𝐏𝐢𝐧𝐠: _${Ping}ms_⏋`,
-      buttons: [
-        {
-          buttonId: `${ᴋᴇɪ}help`,
-          buttonText: { displayText: `${ᴋᴇɪ}help` },
-          type: 1,
-        },
-      ],
-      headerType: 1,
-    };
-    await ӄʀǟӄɨռʐ
-      .sendMessage(
-        "120363039223842047@g.us",
-        buttonMessage,
-        MessageType.buttonsMessage
-      )
-      .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-    await ӄʀǟӄɨռʐ
-      .sendMessage(
-        "120363020792949649@g.us",
-        buttonMessage,
-        MessageType.buttonsMessage
-      )
-      .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-    await ӄʀǟӄɨռʐ
-      .sendMessage(
-        `918250889325@s.whatsapp.net`,
-        buttonMessage,
-        MessageType.buttonsMessage
-      )
-      .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-    return;
-  } catch (Error) {
-    console.log(Error);
-    var childs = require(`child_process`).exec(`python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`);
-    childs.stdout.pipe(process.stdout);
-    childs.on(`exit`, async function () {
-      process.exitCode = 1;
-    });
-  }
+try {
+const buttonMessage = {
+contentText: MainText,
+footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚: kryozen${vers.vers} ⏋\n⎿ 𝐃𝐚𝐭𝐞: ${Clock} ⏋\n⎿ 𝐏𝐢𝐧𝐠: ${Ping}s ⏋`,
+buttons: [
+{
+buttonId: `${ᴋᴇɪ}help`,
+buttonText: { displayText: `${ᴋᴇɪ}help` },
+type: 1,
+},
+],
+headerType: 1,
+};
+await ӄʀǟӄɨռʐ
+.sendMessage(
+"120363039223842047@g.us",
+buttonMessage,
+MessageType.buttonsMessage
+)
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+await ӄʀǟӄɨռʐ
+.sendMessage(
+"120363020792949649@g.us",
+buttonMessage,
+MessageType.buttonsMessage
+)
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+await ӄʀǟӄɨռʐ
+.sendMessage(
+`918250889325@s.whatsapp.net`,
+buttonMessage,
+MessageType.buttonsMessage
+)
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+return;
+} catch (Error) {
+console.log(Error);
+var childs = require(`child_process`).exec(`python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`);
+childs.stdout.pipe(process.stdout);
+childs.on(`exit`, async function () {
+process.exitCode = 1;
+});
+}
 };
 `⬡🍹⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
 module.exports = {
-  MSL: Sakura_Loca,
+MSL: Sakura_Loca,
 };

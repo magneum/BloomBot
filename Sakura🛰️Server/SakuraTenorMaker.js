@@ -5,17 +5,17 @@
 `|🍹|`;
 const tenors = require(`./SakuraTenor`);
 module.exports = {
-  SakuraTenorMaker(option) {
-    let TenorGot;
-    Object.keys(tenors).filter((key) => {
-      if (key === option) TenorGot = tenors[key];
-    });
-    if (TenorGot) {
-      return TenorGot[Math.floor(Math.random() * TenorGot.length)];
-    } else {
-      return `Invalid Request`;
-    }
-  },
+SakuraTenorMaker(option) {
+let TenorGot;
+Object.keys(tenors).filter((key) => {
+if (key === option) TenorGot = tenors[key];
+});
+if (TenorGot) {
+return TenorGot[Math.floor(Math.random() * TenorGot.length)];
+} else {
+return `Invalid Request`;
+}
+},
 };
 `|🍹|`;
 `|🍹|`;

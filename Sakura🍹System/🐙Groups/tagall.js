@@ -93,7 +93,7 @@ module.exports = {
               },
               mentionedJid: members,
             },
-            caption: `⎿(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚: _kryozen${vers.vers}_⏋\n⎿𝐃𝐚𝐭𝐞: _${Clock}_⏋\n⎿𝐏𝐢𝐧𝐠: _${Ping}ms_⏋
+            caption: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚: kryozen${vers.vers} ⏋\n⎿ 𝐃𝐚𝐭𝐞: ${Clock} ⏋\n⎿ 𝐏𝐢𝐧𝐠: ${Ping}s ⏋
 
 ╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
 🥳𝐅𝐫𝐨𝐦: 🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ}
@@ -160,7 +160,7 @@ ${ֆǟӄʊʀǟ.replyMessage.replace(ֆǟӄʊʀǟ.body[0] + ֆǟӄʊʀǟ.commandN
             contextInfo: {
               mentionedJid: members,
             },
-            caption: `⎿(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚: _kryozen${vers.vers}_⏋\n⎿𝐃𝐚𝐭𝐞: _${Clock}_⏋\n⎿𝐏𝐢𝐧𝐠: _${Ping}ms_⏋
+            caption: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚: kryozen${vers.vers} ⏋\n⎿ 𝐃𝐚𝐭𝐞: ${Clock} ⏋\n⎿ 𝐏𝐢𝐧𝐠: ${Ping}s ⏋
 
 ╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
 🥳𝐅𝐫𝐨𝐦: 🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ}
