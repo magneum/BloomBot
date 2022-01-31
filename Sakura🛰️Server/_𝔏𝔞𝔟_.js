@@ -30,9 +30,9 @@ const env = {
   OCR: `9ffb44def388957`,
   TEN: `0G2R8PTUGMRP`,
   WAPI: `6729ac2b2e2bb5c686ff427a2f06df92`,
-  ERROR: `https://i.postimg.cc/XqPBcyq0/image.png`,
-  INVL: `https://i.postimg.cc/XqPBcyq0/image.png`,
-  MEE: `https://i.postimg.cc/XqPBcyq0/image.png`,
+  ERROR: `./Sakura☣️Reactor/ֆǟӄʊʀǟ.png`,
+  INVL: `./Sakura☣️Reactor/ֆǟӄʊʀǟ.png`,
+  MEE: `./Sakura☣️Reactor/ֆǟӄʊʀǟ.png`,
   HASH: `https://chat.whatsapp.com/LKN8uVBd8ucHRHofz0jBSd`,
   HASHS: `https://chat.whatsapp.com/HKO5WLEZxMe3xWCyiv6vBu`,
   Kate:
