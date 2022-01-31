@@ -4,8 +4,10 @@
 `|🍹|`;
 `|🍹|`;
 const { Encoder, QRByte, ErrorCorrectionLevel } = require("@nuintun/qrcode");
-const Sakura_Loca = require(`../../Sakura🛰️Server/Sakura_Loca`);
+const Sakura_Buttons = require(`../../Sakura🛰️Server/Sakura_Buttons`);
+const Sakura_Static = require(`../../Sakura🛰️Server/Sakura_Static`);
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
+const Sakura_Loca = require(`../../Sakura🛰️Server/Sakura_Loca`);
 const cleanRF = require(`../../Sakura🛰️Server/cleanRF`);
 const _𝔏𝔞𝔟_ = require(`../../Sakura🛰️Server/_𝔏𝔞𝔟_`);
 const ꜰᴜᴄᴋ = require(`../../Sakura🛰️Server/oShit`);
