@@ -19,7 +19,7 @@ function Body_Check(Argument) {
     return true;
   } else if (Regex.VideoURL.test(Argument)) {
     return false;
-  } else if (Regex.VideoURL.test(Argument)) {
+  } else if (Regex.VideoID.test(Argument)) {
     return false;
   } else if (Regex.PlaylistID.test(Argument)) {
     return false;
@@ -44,6 +44,17 @@ function Body_Check(Argument) {
   } else if (Argument.includes("wa.me/")) {
     return true;
   } else if (Argument.includes("www.")) {
+    return true;
+  } else if (
+    Argument.includes("https:") &&
+    !Regex.VideoURL.test(Argument) &&
+    !Regex.VideoID.test(Argument) &&
+    !Regex.PlaylistID.test(Argument) &&
+    !Regex.PlaylistURL.test(Argument) &&
+    !Regex.SCTrack.test(Argument) &&
+    !Regex.SCPlaylist.test(Argument) &&
+    !Regex.Spotify.test(Argument)
+  ) {
     return true;
   }
   return false;
