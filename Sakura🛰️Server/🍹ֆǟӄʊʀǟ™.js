@@ -113,37 +113,58 @@ async function ֆǟӄʊʀǟ() {
     await ӄʀǟӄɨռʐ
       .sendMessage(
         "120363039223842047@g.us",
-        `(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 by 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
+        { url: "./Sakura☣️Reactor/Sakura_KrakinzLab.png" },
+        MessageType.image,
+        {
+          caption: `(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 by 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
 
-╔═══════★🔥 *BACK ONLINE*
+╔════◇🚀 *BACK ONLINE*
 ║🛰️ 𝐏𝐢𝐧𝐠: _${Ping}s_
 ║📅 𝐃𝐚𝐭𝐞: _${Clock}_
+║💼 𝐆𝐫𝐨𝐮𝐩: _${_𝔏𝔞𝔟_.HASHS}_
+║💼 𝐆𝐫𝐨𝐮𝐩: _${_𝔏𝔞𝔟_.HASH}_
+║💻 𝐆𝐢𝐭𝐡𝐮𝐛: _https://github.com/Krakinz/Sakura_
 ╚════════════╝`,
-        MessageType.text
+          mime: Mimetype.png,
+        }
       )
       .catch((Error) => console.log(Error));
     await ӄʀǟӄɨռʐ
       .sendMessage(
         "120363020792949649@g.us",
-        `(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 by 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
+        { url: "./Sakura☣️Reactor/Sakura_KrakinzLab.png" },
+        MessageType.image,
+        {
+          caption: `(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 by 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
 
-╔═══════★🔥 *BACK ONLINE*
+╔════◇🚀 *BACK ONLINE*
 ║🛰️ 𝐏𝐢𝐧𝐠: _${Ping}s_
 ║📅 𝐃𝐚𝐭𝐞: _${Clock}_
+║💼 𝐆𝐫𝐨𝐮𝐩: _${_𝔏𝔞𝔟_.HASHS}_
+║💼 𝐆𝐫𝐨𝐮𝐩: _${_𝔏𝔞𝔟_.HASH}_
+║💻 𝐆𝐢𝐭𝐡𝐮𝐛: _https://github.com/Krakinz/Sakura_
 ╚════════════╝`,
-        MessageType.text
+          mime: Mimetype.png,
+        }
       )
       .catch((Error) => console.log(Error));
     await ӄʀǟӄɨռʐ
       .sendMessage(
         ӄʀǟӄɨռʐ.user.jid,
-        `(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 by 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
+        { url: "./Sakura☣️Reactor/Sakura_KrakinzLab.png" },
+        MessageType.image,
+        {
+          caption: `(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 by 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
 
-╔═══════★🔥 *BACK ONLINE*
+╔════◇🚀 *BACK ONLINE*
 ║🛰️ 𝐏𝐢𝐧𝐠: _${Ping}s_
 ║📅 𝐃𝐚𝐭𝐞: _${Clock}_
+║💼 𝐆𝐫𝐨𝐮𝐩: _${_𝔏𝔞𝔟_.HASHS}_
+║💼 𝐆𝐫𝐨𝐮𝐩: _${_𝔏𝔞𝔟_.HASH}_
+║💻 𝐆𝐢𝐭𝐡𝐮𝐛: _https://github.com/Krakinz/Sakura_
 ╚════════════╝`,
-        MessageType.text
+          mime: Mimetype.png,
+        }
       )
       .catch((Error) => console.log(Error));
   });
