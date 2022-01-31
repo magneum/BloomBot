@@ -379,38 +379,38 @@ Kolor.yellow(`💡INFO ⬰ 𝐍𝐞𝐰 𝐔𝐩𝐝𝐚𝐭𝐞 𝐩𝐞𝐧�
 .pull(async (ℓαвєяяσя, update) => {
 if (ℓαвєяяσя) {
 try {
-  const mergeSummary = await ᴍɪᴢᴜᴋɪɢɪᴛ.merge();
-  Sakura_Buttons.MTB(
-    ӄʀǟӄɨռʐ,
-    chat,
-    ֆǟӄʊʀǟ,
-    `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
+const mergeSummary = await ᴍɪᴢᴜᴋɪɢɪᴛ.merge();
+Sakura_Buttons.MTB(
+ӄʀǟӄɨռʐ,
+chat,
+ֆǟӄʊʀǟ,
+`🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
 
 ╔════| 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
 ║💡INFO ⬰ Auto Updated Sakura With Latest *[${mergeSummary.merges.length}]* Changes.
 ╚════════════╝`
-  );
-  console.log(
-    Kolor.green(
-      `💡INFO ⬰ 𝗔𝘂𝘁𝗼-𝗨𝗽𝗱𝗮𝘁𝗲𝗱 ⚡𝐒𝐚𝐤𝐮𝐫𝐚™ 𝘄𝗶𝘁𝗵 𝗹𝗮𝘁𝗲𝘀𝘁 [${mergeSummary.merges.length}] 𝗰𝗵𝗮𝗻𝗴𝗲𝘀.`
-    )
-  );
+);
+console.log(
+Kolor.green(
+`💡INFO ⬰ 𝗔𝘂𝘁𝗼-𝗨𝗽𝗱𝗮𝘁𝗲𝗱 ⚡𝐒𝐚𝐤𝐮𝐫𝐚™ 𝘄𝗶𝘁𝗵 𝗹𝗮𝘁𝗲𝘀𝘁 [${mergeSummary.merges.length}] 𝗰𝗵𝗮𝗻𝗴𝗲𝘀.`
+)
+);
 } catch (ℓαвєяяσя) {
-  console.log(
-    Kolor.red(
-      `❌ERROR ⬰ 𝗠𝗲𝗿𝗴𝗲 𝗿𝗲𝘀𝘂𝗹𝘁𝗲𝗱 𝗶𝗻 ${Kolor.red(
-        ℓαвєяяσя
-      )} 𝗰𝗼𝗻𝗳𝗹𝗶𝗰𝘁𝘀!`
-    )
-  );
+console.log(
+Kolor.red(
+`❌ERROR ⬰ 𝗠𝗲𝗿𝗴𝗲 𝗿𝗲𝘀𝘂𝗹𝘁𝗲𝗱 𝗶𝗻 ${Kolor.red(
+ℓαвєяяσя
+)} 𝗰𝗼𝗻𝗳𝗹𝗶𝗰𝘁𝘀!`
+)
+);
 }
 } else if (update && update.summary.changes) {
 var childs = require(`child_process`).exec(
-  `python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`
+`python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`
 );
 childs.stdout.pipe(process.stdout);
 childs.on(`exit`, async function () {
-  process.exitCode = 1;
+process.exitCode = 1;
 });
 }
 });
@@ -481,22 +481,22 @@ return;
 const { Body_Check } = require(`./Body_Check`);
 if (Body_Check(ֆǟӄʊʀǟ.body) === true) {
 await Sakura_Buttons.MIB(
-  ӄʀǟӄɨռʐ,
-  chat,
-  ֆǟӄʊʀǟ,
-  `
+ӄʀǟӄɨռʐ,
+chat,
+ֆǟӄʊʀǟ,
+`
 ╔════◇🌋  𝐀𝐧𝐭𝐢𝐥𝐢𝐧𝐤 𝐓𝐫𝐢𝐠𝐠𝐞𝐫𝐞𝐝
 ║🔻 𝗣𝘂𝗻𝗶𝘀𝗵𝗺𝗲𝗻𝘁: _You Will Be Kicked!_
 ║🔻 𝗞𝗶𝗰𝗸-𝗧𝗶𝗺𝗲: _2seconds_
 ╚════════════╝`,
-  `./Sakura☣️Reactor/Sakura_Antilink.png`
+`./Sakura☣️Reactor/Sakura_Antilink.png`
 );
 setTimeout(async () => {
-  return await ӄʀǟӄɨռʐ
-    .groupRemove(ֆǟӄʊʀǟ.chatId, [ֆǟӄʊʀǟ.sender])
-    .catch((Error) =>
-      ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
-    );
+return await ӄʀǟӄɨռʐ
+.groupRemove(ֆǟӄʊʀǟ.chatId, [ֆǟӄʊʀǟ.sender])
+.catch((Error) =>
+ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
+);
 }, 2000);
 }
 }
@@ -529,7 +529,7 @@ if (
 !members.includes(աɦօֆɛռȶɦǟȶ) &&
 !memberss.includes(աɦօֆɛռȶɦǟȶ)
 ) {
-return Sakura_Buttons.MTB(
+return Sakura_Buttons.MIB(
 ӄʀǟӄɨռʐ,
 chat,
 ֆǟӄʊʀǟ,
@@ -545,7 +545,8 @@ chat,
 ║💼 𝐆𝐫𝐨𝐮𝐩: ${_𝔏𝔞𝔟_.HASH}
 ║💼 𝐆𝐫𝐨𝐮𝐩: ${_𝔏𝔞𝔟_.HASHS}
 ║💻 𝐆𝐢𝐭𝐡𝐮𝐛: https://github.com/Krakinz/Sakura
-╚════════════╝`
+╚════════════╝`,
+"./Sakura☣️Reactor/Sakura_Verify.png"
 );
 }
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
@@ -657,38 +658,38 @@ Kolor.yellow(`💡INFO ⬰ 𝐍𝐞𝐰 𝐔𝐩𝐝𝐚𝐭𝐞 𝐩𝐞𝐧�
 .pull(async (ℓαвєяяσя, update) => {
 if (ℓαвєяяσя) {
 try {
-  const mergeSummary = await ᴍɪᴢᴜᴋɪɢɪᴛ.merge();
-  Sakura_Buttons.MTB(
-    ӄʀǟӄɨռʐ,
-    chat,
-    ֆǟӄʊʀǟ,
-    `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
+const mergeSummary = await ᴍɪᴢᴜᴋɪɢɪᴛ.merge();
+Sakura_Buttons.MTB(
+ӄʀǟӄɨռʐ,
+chat,
+ֆǟӄʊʀǟ,
+`🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
 
 ╔════| 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
 ║💡INFO ⬰ Auto Updated Sakura With Latest *[${mergeSummary.merges.length}]* Changes.
 ╚════════════╝`
-  );
-  console.log(
-    Kolor.green(
-      `💡INFO ⬰ 𝗔𝘂𝘁𝗼-𝗨𝗽𝗱𝗮𝘁𝗲𝗱 ⚡𝐒𝐚𝐤𝐮𝐫𝐚™ 𝘄𝗶𝘁𝗵 𝗹𝗮𝘁𝗲𝘀𝘁 [${mergeSummary.merges.length}] 𝗰𝗵𝗮𝗻𝗴𝗲𝘀.`
-    )
-  );
+);
+console.log(
+Kolor.green(
+`💡INFO ⬰ 𝗔𝘂𝘁𝗼-𝗨𝗽𝗱𝗮𝘁𝗲𝗱 ⚡𝐒𝐚𝐤𝐮𝐫𝐚™ 𝘄𝗶𝘁𝗵 𝗹𝗮𝘁𝗲𝘀𝘁 [${mergeSummary.merges.length}] 𝗰𝗵𝗮𝗻𝗴𝗲𝘀.`
+)
+);
 } catch (ℓαвєяяσя) {
-  console.log(
-    Kolor.red(
-      `❌ERROR ⬰ 𝗠𝗲𝗿𝗴𝗲 𝗿𝗲𝘀𝘂𝗹𝘁𝗲𝗱 𝗶𝗻 ${Kolor.red(
-        ℓαвєяяσя
-      )} 𝗰𝗼𝗻𝗳𝗹𝗶𝗰𝘁𝘀!`
-    )
-  );
+console.log(
+Kolor.red(
+`❌ERROR ⬰ 𝗠𝗲𝗿𝗴𝗲 𝗿𝗲𝘀𝘂𝗹𝘁𝗲𝗱 𝗶𝗻 ${Kolor.red(
+ℓαвєяяσя
+)} 𝗰𝗼𝗻𝗳𝗹𝗶𝗰𝘁𝘀!`
+)
+);
 }
 } else if (update && update.summary.changes) {
 var childs = require(`child_process`).exec(
-  `python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`
+`python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`
 );
 childs.stdout.pipe(process.stdout);
 childs.on(`exit`, async function () {
-  process.exitCode = 1;
+process.exitCode = 1;
 });
 }
 });
@@ -759,22 +760,22 @@ return;
 const { Body_Check } = require(`./Body_Check`);
 if (Body_Check(ֆǟӄʊʀǟ.body) === true) {
 await Sakura_Buttons.MIB(
-  ӄʀǟӄɨռʐ,
-  chat,
-  ֆǟӄʊʀǟ,
-  `
+ӄʀǟӄɨռʐ,
+chat,
+ֆǟӄʊʀǟ,
+`
 ╔════◇🌋  𝐀𝐧𝐭𝐢𝐥𝐢𝐧𝐤 𝐓𝐫𝐢𝐠𝐠𝐞𝐫𝐞𝐝
 ║🔻 𝗣𝘂𝗻𝗶𝘀𝗵𝗺𝗲𝗻𝘁: _You Will Be Kicked!_
 ║🔻 𝗞𝗶𝗰𝗸-𝗧𝗶𝗺𝗲: _2seconds_
 ╚════════════╝`,
-  `./Sakura☣️Reactor/Sakura_Antilink.png`
+`./Sakura☣️Reactor/Sakura_Antilink.png`
 );
 setTimeout(async () => {
-  return await ӄʀǟӄɨռʐ
-    .groupRemove(ֆǟӄʊʀǟ.chatId, [ֆǟӄʊʀǟ.sender])
-    .catch((Error) =>
-      ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
-    );
+return await ӄʀǟӄɨռʐ
+.groupRemove(ֆǟӄʊʀǟ.chatId, [ֆǟӄʊʀǟ.sender])
+.catch((Error) =>
+ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
+);
 }, 2000);
 }
 }
@@ -807,7 +808,7 @@ if (
 !members.includes(աɦօֆɛռȶɦǟȶ) &&
 !memberss.includes(աɦօֆɛռȶɦǟȶ)
 ) {
-return Sakura_Buttons.MTB(
+return Sakura_Buttons.MIB(
 ӄʀǟӄɨռʐ,
 chat,
 ֆǟӄʊʀǟ,
@@ -823,7 +824,8 @@ chat,
 ║💼 𝐆𝐫𝐨𝐮𝐩: ${_𝔏𝔞𝔟_.HASH}
 ║💼 𝐆𝐫𝐨𝐮𝐩: ${_𝔏𝔞𝔟_.HASHS}
 ║💻 𝐆𝐢𝐭𝐡𝐮𝐛: https://github.com/Krakinz/Sakura
-╚════════════╝`
+╚════════════╝`,
+"./Sakura☣️Reactor/Sakura_Verify.png"
 );
 }
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
@@ -928,15 +930,15 @@ chat,
 );
 console.log(
 Kolor.green(
-  `💡INFO ⬰ 𝗔𝘂𝘁𝗼-𝗨𝗽𝗱𝗮𝘁𝗲𝗱 ⚡𝐒𝐚𝐤𝐮𝐫𝐚™ 𝘄𝗶𝘁𝗵 𝗹𝗮𝘁𝗲𝘀𝘁 [${mergeSummary.merges.length}] 𝗰𝗵𝗮𝗻𝗴𝗲𝘀.`
+`💡INFO ⬰ 𝗔𝘂𝘁𝗼-𝗨𝗽𝗱𝗮𝘁𝗲𝗱 ⚡𝐒𝐚𝐤𝐮𝐫𝐚™ 𝘄𝗶𝘁𝗵 𝗹𝗮𝘁𝗲𝘀𝘁 [${mergeSummary.merges.length}] 𝗰𝗵𝗮𝗻𝗴𝗲𝘀.`
 )
 );
 } catch (ℓαвєяяσя) {
 console.log(
 Kolor.red(
-  `❌ERROR ⬰ 𝗠𝗲𝗿𝗴𝗲 𝗿𝗲𝘀𝘂𝗹𝘁𝗲𝗱 𝗶𝗻 ${Kolor.red(
-    ℓαвєяяσя
-  )} 𝗰𝗼𝗻𝗳𝗹𝗶𝗰𝘁𝘀!`
+`❌ERROR ⬰ 𝗠𝗲𝗿𝗴𝗲 𝗿𝗲𝘀𝘂𝗹𝘁𝗲𝗱 𝗶𝗻 ${Kolor.red(
+ℓαвєяяσя
+)} 𝗰𝗼𝗻𝗳𝗹𝗶𝗰𝘁𝘀!`
 )
 );
 }
@@ -1031,7 +1033,7 @@ setTimeout(async () => {
 return await ӄʀǟӄɨռʐ
 .groupRemove(ֆǟӄʊʀǟ.chatId, [ֆǟӄʊʀǟ.sender])
 .catch((Error) =>
-  ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
+ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
 );
 }, 2000);
 }
@@ -1065,7 +1067,7 @@ if (
 !members.includes(աɦօֆɛռȶɦǟȶ) &&
 !memberss.includes(աɦօֆɛռȶɦǟȶ)
 ) {
-return Sakura_Buttons.MTB(
+return Sakura_Buttons.MIB(
 ӄʀǟӄɨռʐ,
 chat,
 ֆǟӄʊʀǟ,
@@ -1081,7 +1083,8 @@ chat,
 ║💼 𝐆𝐫𝐨𝐮𝐩: ${_𝔏𝔞𝔟_.HASH}
 ║💼 𝐆𝐫𝐨𝐮𝐩: ${_𝔏𝔞𝔟_.HASHS}
 ║💻 𝐆𝐢𝐭𝐡𝐮𝐛: https://github.com/Krakinz/Sakura
-╚════════════╝`
+╚════════════╝`,
+"./Sakura☣️Reactor/Sakura_Verify.png"
 );
 }
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
