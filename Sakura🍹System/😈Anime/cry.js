@@ -115,7 +115,7 @@ module.exports = {
                   {
                     mimetype: `video/gif`,
                     quoted: chat,
-                    caption: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 • 𝐄𝐧𝐠𝐢𝐧𝐞: kryozen${vers.vers} ⏋\n⎿ ${Clock} • ${Ping}ms ⏋
+                    caption: `⎿(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚: _kryozen${vers.vers}_⏋\n⎿𝐃𝐚𝐭𝐞: _${Clock}_⏋\n⎿𝐏𝐢𝐧𝐠: _${Ping}ms_⏋
 
 
 ╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
@@ -137,7 +137,7 @@ module.exports = {
                   {
                     mimetype: `video/gif`,
                     quoted: chat,
-                    caption: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭 • 𝐄𝐧𝐠𝐢𝐧𝐞: kryozen${vers.vers} ⏋\n⎿ ${Clock} • ${Ping}ms ⏋
+                    caption: `⎿(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚: _kryozen${vers.vers}_⏋\n⎿𝐃𝐚𝐭𝐞: _${Clock}_⏋\n⎿𝐏𝐢𝐧𝐠: _${Ping}ms_⏋
 
 
 ╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_

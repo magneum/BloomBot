@@ -6,22 +6,19 @@
 const fs = require(`fs`);
 const { JSDOM } = require(`jsdom`);
 const { window } = new JSDOM();
+const Kolor = require(`chalk`);
 exports.cleanRF = async (...ᴊᴜɴᴋꜱ) => {
   var startTime = window.performance.now();
   for (location of ᴊᴜɴᴋꜱ) {
     fs.unlink(location, (Error) => {
       if (Error) console.log(Error);
-      else {
-        console.log(`𝚂𝚢𝚜𝚝𝚎𝚖 𝙹𝚞𝚗𝚔 𝙲𝚕𝚎𝚊𝚗𝚎𝚍🗑️ ` + location);
-      }
     });
   }
   var endTime = window.performance.now();
-  console.log(
-    `⬡===========⚡ Execution time: ${
-      (endTime - startTime) / 1000
-    } ⚡===========⬡`
-  );
+  console.log(`⬡===========⚡ Execution time: `);
+  console.log((endTime - startTime) / 1000);
+  console.log(`⬡===========🗑️ 𝙹𝚞𝚗𝚔 𝙲𝚕𝚎𝚊𝚗𝚎𝚍: `);
+  console.log(Kolor.blue(ᴊᴜɴᴋꜱ));
 };
 `🍹`;
 `🍹`;

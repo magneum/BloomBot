@@ -3,9 +3,8 @@
 `|🍹|======================================================================================================⬡  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™`;
 `|🍹|`;
 `|🍹|`;
+const fs = require(`fs`);
 global.APIs = {
-  // API Prefix
-  // name: 'https://website'
   nrtm: "https://nurutomo.herokuapp.com",
   dzx: "https://api.dhamzxploit.my.id",
   xteam: "https://api.xteam.xyz",
@@ -15,14 +14,15 @@ global.APIs = {
   LeysCoder: "https://leyscoders-api.herokuapp.com",
 };
 global.APIKeys = {
-  // APIKey Here
-  // 'https://website': 'apikey'
   "https://api.xteam.xyz": "d90a9e986e18778b",
   "https://zahirr-web.herokuapp.com": "zahirgans",
   "https://api.zeks.xyz": "apivinz",
   "https://pencarikode.xyz": "pais",
   "https://leyscoders-api.herokuapp.com": "dappakntlll",
 };
+
+global.packname = "KrakinzLab";
+global.author = "(c)Sakura";
 
 global.API = (name, path = "/", query = {}, apikeyqueryname) =>
   (name in global.APIs ? global.APIs[name] : name) +
