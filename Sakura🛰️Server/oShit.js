@@ -72,10 +72,33 @@ exports.catch = async (Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat) => {
     }
   );
   `⬡🍹⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-  return await ӄʀǟӄɨռʐ.sendMessage(
+  await ӄʀǟӄɨռʐ.sendMessage(
     ֆǟӄʊʀǟ.Myself,
     {
-      contentText: `*🐞Error:* ${Error}`,
+      contentText: `🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_\n\n*🐞Error:* ${Error}`,
+      footerText: `╚(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐄𝐧𝐠𝐢𝐧𝐞: kryozen${vers.vers}╝\n╚◈𝐃𝐚𝐭𝐞: ${Clock}╝\n╚◈𝐏𝐢𝐧𝐠: ${Ping}ms╝`,
+      buttons: [
+        {
+          buttonId: `${ᴋᴇɪ}bugreport`,
+          buttonText: { displayText: `${ᴋᴇɪ}bugreport` },
+          type: 1,
+        },
+      ],
+      headerType: 1,
+    },
+    MessageType.buttonsMessage,
+    {
+      quoted: chat,
+    }
+  );
+  `⬡🍹⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
+  return await ӄʀǟӄɨռʐ.sendMessage(
+    "120363039223842047@g.us",
+    {
+      contentText: `
+╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
+║🐞 𝗕𝘂𝗴: _${Error}_
+╚════════════╝`,
       footerText: `╚(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐄𝐧𝐠𝐢𝐧𝐞: kryozen${vers.vers}╝\n╚◈𝐃𝐚𝐭𝐞: ${Clock}╝\n╚◈𝐏𝐢𝐧𝐠: ${Ping}ms╝`,
       buttons: [
         {
@@ -92,6 +115,7 @@ exports.catch = async (Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat) => {
     }
   );
 };
+`⬡🍹⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
 `|🍹|`;
 `|🍹|`;
 `|🍹|======================================================================================================⬡  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™`;

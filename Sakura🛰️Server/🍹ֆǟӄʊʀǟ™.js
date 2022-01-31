@@ -14,6 +14,7 @@ const Economy = require(`../Sakura🍃Goose/economy`);
 const Sakura_Buttons = require(`./Sakura_Buttons`);
 const Sakura_Static = require(`./Sakura_Static`);
 const Ban = require(`../Sakura🍃Goose/ban`);
+const Sakura_Loca = require(`./Sakura_Loca`);
 const ֆǟӄʊʀǟֆʏռօք = require(`./ֆǟӄʊʀǟᴢᴇɴ`);
 const moment = require(`moment-timezone`);
 const speed = require(`performance-now`);
@@ -371,20 +372,30 @@ var ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ = await ᴍɪᴢᴜᴋɪɢɪᴛ.log([
 ]);
 if (ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total != 0) {
 require(`simple-git`)()
-.exec(() => {
+.exec(async () => {
+await Sakura_Loca.MSL(
+ӄʀǟӄɨռʐ,
+chat,
+ֆǟӄʊʀǟ,
+`🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚
+
+╔════| 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
+║💡INFO ⬰ 𝐍𝐞𝐰 𝐔𝐩𝐝𝐚𝐭𝐞 𝐩𝐞𝐧𝐝𝐢𝐧𝐠, 𝐮𝐩𝐝𝐚𝐭𝐢𝐧𝐠...
+╚════════════╝`
+);
 console.log(
 Kolor.yellow(`💡INFO ⬰ 𝐍𝐞𝐰 𝐔𝐩𝐝𝐚𝐭𝐞 𝐩𝐞𝐧𝐝𝐢𝐧𝐠, 𝐮𝐩𝐝𝐚𝐭𝐢𝐧𝐠...`)
 );
 })
-.pull(async (ℓαвєяяσя, update) => {
-if (ℓαвєяяσя) {
+.pull(async (Error, update) => {
+if (Error) {
 try {
 const mergeSummary = await ᴍɪᴢᴜᴋɪɢɪᴛ.merge();
-Sakura_Buttons.MTB(
+await Sakura_Loca.MSL(
 ӄʀǟӄɨռʐ,
 chat,
 ֆǟӄʊʀǟ,
-`🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
+`🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚
 
 ╔════| 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
 ║💡INFO ⬰ Auto Updated Sakura With Latest *[${mergeSummary.merges.length}]* Changes.
@@ -395,11 +406,22 @@ Kolor.green(
 `💡INFO ⬰ 𝗔𝘂𝘁𝗼-𝗨𝗽𝗱𝗮𝘁𝗲𝗱 ⚡𝐒𝐚𝐤𝐮𝐫𝐚™ 𝘄𝗶𝘁𝗵 𝗹𝗮𝘁𝗲𝘀𝘁 [${mergeSummary.merges.length}] 𝗰𝗵𝗮𝗻𝗴𝗲𝘀.`
 )
 );
-} catch (ℓαвєяяσя) {
+} catch (Error) {
+await Sakura_Loca.MSL(
+ӄʀǟӄɨռʐ,
+chat,
+ֆǟӄʊʀǟ,
+`🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚
+
+╔════| 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
+║❌ERROR ⬰ 𝗠𝗲𝗿𝗴𝗲 𝗿𝗲𝘀𝘂𝗹𝘁𝗲𝗱 𝗶𝗻 𝗰𝗼𝗻𝗳𝗹𝗶𝗰𝘁𝘀!
+╚════════════╝
+${Error} `
+);
 console.log(
 Kolor.red(
 `❌ERROR ⬰ 𝗠𝗲𝗿𝗴𝗲 𝗿𝗲𝘀𝘂𝗹𝘁𝗲𝗱 𝗶𝗻 ${Kolor.red(
-ℓαвєяяσя
+Error
 )} 𝗰𝗼𝗻𝗳𝗹𝗶𝗰𝘁𝘀!`
 )
 );
@@ -411,6 +433,16 @@ var childs = require(`child_process`).exec(
 childs.stdout.pipe(process.stdout);
 childs.on(`exit`, async function () {
 process.exitCode = 1;
+await Sakura_Loca.MSL(
+ӄʀǟӄɨռʐ,
+chat,
+ֆǟӄʊʀǟ,
+`🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚
+
+╔════| 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
+║💡INFO ⬰ Bot Rebooted After Error!.
+╚════════════╝`
+);
 });
 }
 });
@@ -650,20 +682,31 @@ var ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ = await ᴍɪᴢᴜᴋɪɢɪᴛ.log([
 ]);
 if (ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total != 0) {
 require(`simple-git`)()
-.exec(() => {
+.exec(async () => {
+await Sakura_Loca.MSL(
+ӄʀǟӄɨռʐ,
+chat,
+ֆǟӄʊʀǟ,
+`🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚
+
+╔════| 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
+║💡INFO ⬰ 𝐍𝐞𝐰 𝐔𝐩𝐝𝐚𝐭𝐞 𝐩𝐞𝐧𝐝𝐢𝐧𝐠, 𝐮𝐩𝐝𝐚𝐭𝐢𝐧𝐠...
+╚════════════╝`
+);
 console.log(
 Kolor.yellow(`💡INFO ⬰ 𝐍𝐞𝐰 𝐔𝐩𝐝𝐚𝐭𝐞 𝐩𝐞𝐧𝐝𝐢𝐧𝐠, 𝐮𝐩𝐝𝐚𝐭𝐢𝐧𝐠...`)
 );
 })
-.pull(async (ℓαвєяяσя, update) => {
-if (ℓαвєяяσя) {
+
+.pull(async (Error, update) => {
+if (Error) {
 try {
 const mergeSummary = await ᴍɪᴢᴜᴋɪɢɪᴛ.merge();
-Sakura_Buttons.MTB(
+await Sakura_Loca.MSL(
 ӄʀǟӄɨռʐ,
 chat,
 ֆǟӄʊʀǟ,
-`🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
+`🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚
 
 ╔════| 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
 ║💡INFO ⬰ Auto Updated Sakura With Latest *[${mergeSummary.merges.length}]* Changes.
@@ -674,11 +717,22 @@ Kolor.green(
 `💡INFO ⬰ 𝗔𝘂𝘁𝗼-𝗨𝗽𝗱𝗮𝘁𝗲𝗱 ⚡𝐒𝐚𝐤𝐮𝐫𝐚™ 𝘄𝗶𝘁𝗵 𝗹𝗮𝘁𝗲𝘀𝘁 [${mergeSummary.merges.length}] 𝗰𝗵𝗮𝗻𝗴𝗲𝘀.`
 )
 );
-} catch (ℓαвєяяσя) {
+} catch (Error) {
+await Sakura_Loca.MSL(
+ӄʀǟӄɨռʐ,
+chat,
+ֆǟӄʊʀǟ,
+`🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚
+
+╔════| 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
+║❌ERROR ⬰ 𝗠𝗲𝗿𝗴𝗲 𝗿𝗲𝘀𝘂𝗹𝘁𝗲𝗱 𝗶𝗻 𝗰𝗼𝗻𝗳𝗹𝗶𝗰𝘁𝘀!
+╚════════════╝
+${Error} `
+);
 console.log(
 Kolor.red(
 `❌ERROR ⬰ 𝗠𝗲𝗿𝗴𝗲 𝗿𝗲𝘀𝘂𝗹𝘁𝗲𝗱 𝗶𝗻 ${Kolor.red(
-ℓαвєяяσя
+Error
 )} 𝗰𝗼𝗻𝗳𝗹𝗶𝗰𝘁𝘀!`
 )
 );
@@ -690,6 +744,16 @@ var childs = require(`child_process`).exec(
 childs.stdout.pipe(process.stdout);
 childs.on(`exit`, async function () {
 process.exitCode = 1;
+await Sakura_Loca.MSL(
+ӄʀǟӄɨռʐ,
+chat,
+ֆǟӄʊʀǟ,
+`🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚
+
+╔════| 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
+║💡INFO ⬰ Bot Rebooted After Error!.
+╚════════════╝`
+);
 });
 }
 });
@@ -909,20 +973,30 @@ var ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ = await ᴍɪᴢᴜᴋɪɢɪᴛ.log([
 ]);
 if (ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total != 0) {
 require(`simple-git`)()
-.exec(() => {
+.exec(async () => {
+await Sakura_Loca.MSL(
+ӄʀǟӄɨռʐ,
+chat,
+ֆǟӄʊʀǟ,
+`🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚
+
+╔════| 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
+║💡INFO ⬰ 𝐍𝐞𝐰 𝐔𝐩𝐝𝐚𝐭𝐞 𝐩𝐞𝐧𝐝𝐢𝐧𝐠, 𝐮𝐩𝐝𝐚𝐭𝐢𝐧𝐠...
+╚════════════╝`
+);
 console.log(
 Kolor.yellow(`💡INFO ⬰ 𝐍𝐞𝐰 𝐔𝐩𝐝𝐚𝐭𝐞 𝐩𝐞𝐧𝐝𝐢𝐧𝐠, 𝐮𝐩𝐝𝐚𝐭𝐢𝐧𝐠...`)
 );
 })
-.pull(async (ℓαвєяяσя, update) => {
-if (ℓαвєяяσя) {
+.pull(async (Error, update) => {
+if (Error) {
 try {
 const mergeSummary = await ᴍɪᴢᴜᴋɪɢɪᴛ.merge();
-Sakura_Buttons.MTB(
+await Sakura_Loca.MSL(
 ӄʀǟӄɨռʐ,
 chat,
 ֆǟӄʊʀǟ,
-`🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
+`🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚
 
 ╔════| 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
 ║💡INFO ⬰ Auto Updated Sakura With Latest *[${mergeSummary.merges.length}]* Changes.
@@ -933,11 +1007,22 @@ Kolor.green(
 `💡INFO ⬰ 𝗔𝘂𝘁𝗼-𝗨𝗽𝗱𝗮𝘁𝗲𝗱 ⚡𝐒𝐚𝐤𝐮𝐫𝐚™ 𝘄𝗶𝘁𝗵 𝗹𝗮𝘁𝗲𝘀𝘁 [${mergeSummary.merges.length}] 𝗰𝗵𝗮𝗻𝗴𝗲𝘀.`
 )
 );
-} catch (ℓαвєяяσя) {
+} catch (Error) {
+await Sakura_Loca.MSL(
+ӄʀǟӄɨռʐ,
+chat,
+ֆǟӄʊʀǟ,
+`🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚
+
+╔════| 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
+║❌ERROR ⬰ 𝗠𝗲𝗿𝗴𝗲 𝗿𝗲𝘀𝘂𝗹𝘁𝗲𝗱 𝗶𝗻 𝗰𝗼𝗻𝗳𝗹𝗶𝗰𝘁𝘀!
+╚════════════╝
+${Error} `
+);
 console.log(
 Kolor.red(
 `❌ERROR ⬰ 𝗠𝗲𝗿𝗴𝗲 𝗿𝗲𝘀𝘂𝗹𝘁𝗲𝗱 𝗶𝗻 ${Kolor.red(
-ℓαвєяяσя
+Error
 )} 𝗰𝗼𝗻𝗳𝗹𝗶𝗰𝘁𝘀!`
 )
 );
@@ -949,6 +1034,16 @@ var childs = require(`child_process`).exec(
 childs.stdout.pipe(process.stdout);
 childs.on(`exit`, async function () {
 process.exitCode = 1;
+await Sakura_Loca.MSL(
+ӄʀǟӄɨռʐ,
+chat,
+ֆǟӄʊʀǟ,
+`🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚
+
+╔════| 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
+║💡INFO ⬰ Bot Rebooted After Error!.
+╚════════════╝`
+);
 });
 }
 });
