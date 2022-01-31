@@ -619,7 +619,6 @@ ${Error} `
                         `🙏🏽‍: @${աɦօֆɛռȶɦǟȶռʊʍ}, Sir Wait For 5seconds`,
                         MessageType.text,
                         {
-                          quoted: chat,
                           contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
                         }
                       )
@@ -634,7 +633,6 @@ ${Error} `
                         `𝐀𝐧𝐭𝐢🤖𝐒𝐩𝐚𝐦: @${աɦօֆɛռȶɦǟȶռʊʍ}, Wait For 15seconds`,
                         MessageType.text,
                         {
-                          quoted: chat,
                           contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
                         }
                       )
