@@ -630,7 +630,7 @@ ${Error} `
                     await ӄʀǟӄɨռʐ
                       .sendMessage(
                         ֆǟӄʊʀǟ.chatId,
-                        `𝐀𝐧𝐭𝐢🤖𝐒𝐩𝐚𝐦: @${աɦօֆɛռȶɦǟȶռʊʍ}, Wait For 15seconds`,
+                        `𝐀𝐧𝐭𝐢🤖𝐒𝐩𝐚𝐦: @${աɦօֆɛռȶɦǟȶռʊʍ}, Baka Wait For 15seconds`,
                         MessageType.text,
                         {
                           contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
