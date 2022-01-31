@@ -15,6 +15,7 @@ const ꜰᴜᴄᴋ = require(`../../Sakura🛰️Server/oShit`);
 const fetch = require(`node-fetch`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
+const vers = require(`../package.json`);
 const ms = require(`parse-ms`);
 const fs = require(`fs`);
 var path = require(`path`);
@@ -195,7 +196,7 @@ module.exports = {
 
 𝐁𝐮𝐭𝐭𝐨𝐧 𝐓𝐨 𝐋𝐞𝐚𝐫𝐧 𝐌𝐨𝐫𝐞👇🏻
 `.trim(),
-                          footerText: `| (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 |\n${Clock}`,
+                          footerText: `╚(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐄𝐧𝐠𝐢𝐧𝐞: _kryozen${vers.vers}_╝\n╚◈𝐃𝐚𝐭𝐞: _${Clock}_╝\n╚◈𝐏𝐢𝐧𝐠: _${Ping}ms_╝`,
                           buttons: [
                             {
                               buttonId: `${ᴋᴇɪ}pokedex ${BasePoke.toLowerCase()}`,

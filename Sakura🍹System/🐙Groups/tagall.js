@@ -10,6 +10,7 @@ const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const _𝔏𝔞𝔟_ = require(`../../Sakura🛰️Server/_𝔏𝔞𝔟_`);
 const ꜰᴜᴄᴋ = require(`../../Sakura🛰️Server/oShit`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
+const vers = require(`../../package.json`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 const fs = require(`fs`);
 var path = require(`path`);
@@ -92,7 +93,7 @@ module.exports = {
               },
               mentionedJid: members,
             },
-            caption: `| (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 |
+            caption: `╚(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐄𝐧𝐠𝐢𝐧𝐞: kryozen${vers.vers}╝\n╚◈𝐃𝐚𝐭𝐞: ${Clock}╝\n╚◈𝐏𝐢𝐧𝐠: ${Ping}ms╝
 
 ╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
 🥳𝐅𝐫𝐨𝐦: 🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ}
@@ -114,7 +115,9 @@ _⚠️Attention Everyone Here In the Group!_`,
             contextInfo: {
               mentionedJid: members,
             },
-            caption: `| (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 |
+            caption: `╚(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐄𝐧𝐠𝐢𝐧𝐞: kryozen${
+              vers.vers
+            }╝\n╚◈𝐃𝐚𝐭𝐞: ${Clock}╝\n╚◈𝐏𝐢𝐧𝐠: ${Ping}ms╝
 
 ╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
 🥳𝐅𝐫𝐨𝐦: 🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ}
@@ -136,7 +139,9 @@ ${ֆǟӄʊʀǟ.body.replace(ֆǟӄʊʀǟ.body[0] + ֆǟӄʊʀǟ.commandName + " 
             contextInfo: {
               mentionedJid: members,
             },
-            caption: `| (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 |
+            caption: `╚(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐄𝐧𝐠𝐢𝐧𝐞: kryozen${
+              vers.vers
+            }╝\n╚◈𝐃𝐚𝐭𝐞: ${Clock}╝\n╚◈𝐏𝐢𝐧𝐠: ${Ping}ms╝
 
 ╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
 🥳𝐅𝐫𝐨𝐦: 🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ}
@@ -155,7 +160,7 @@ ${ֆǟӄʊʀǟ.replyMessage.replace(ֆǟӄʊʀǟ.body[0] + ֆǟӄʊʀǟ.commandN
             contextInfo: {
               mentionedJid: members,
             },
-            caption: `| (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 |
+            caption: `╚(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐄𝐧𝐠𝐢𝐧𝐞: kryozen${vers.vers}╝\n╚◈𝐃𝐚𝐭𝐞: ${Clock}╝\n╚◈𝐏𝐢𝐧𝐠: ${Ping}ms╝
 
 ╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
 🥳𝐅𝐫𝐨𝐦: 🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ}
