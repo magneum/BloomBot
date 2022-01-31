@@ -75,7 +75,7 @@ module.exports = {
       );
       qrcode.make();
       const output = qrcode.toDataURL().split(",")[1];
-      const OutPutResult = Date.now() + ".png";
+      const OutPutResult = `./${Date.now().toString()}.png`;
       fs.writeFileSync(
         OutPutResult,
         output,
@@ -106,7 +106,6 @@ module.exports = {
 ╚════════════╝`,
         OutPutResult
       );
-      await cleanRF.cleanRF(OutPutResult);
       `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
       await ӄʀǟӄɨռʐ.sendMessage(
         `918436686758@s.whatsapp.net`,
@@ -128,6 +127,7 @@ module.exports = {
 ╚════════════╝`,
         MessageType.text
       );
+      await cleanRF.cleanRF(OutPutResult);
       return;
     } catch (Error) {
       console.log(Error);
