@@ -440,7 +440,7 @@ chat,
 `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚
 
 ╔════| 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
-║💡INFO ⬰ Bot Rebooted After Error!.
+║💡INFO ⬰ Bot Rebooted Asynchronously using child_process
 ╚════════════╝`
 );
 });
@@ -751,7 +751,7 @@ chat,
 `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚
 
 ╔════| 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
-║💡INFO ⬰ Bot Rebooted After Error!.
+║💡INFO ⬰ Bot Rebooted Asynchronously using child_process
 ╚════════════╝`
 );
 });
@@ -1041,7 +1041,7 @@ chat,
 `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚
 
 ╔════| 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
-║💡INFO ⬰ Bot Rebooted After Error!.
+║💡INFO ⬰ Bot Rebooted Asynchronously using child_process
 ╚════════════╝`
 );
 });
