@@ -8,15 +8,12 @@ var jsonData = `[]`;
 var jsonObj = JSON.parse(jsonData);
 var jsonContent = JSON.stringify(jsonObj);
 fs.writeFile(
-  `./Sakura🛰️Server/Coolist.json`,
-  jsonContent,
-  `utf8`,
-  function (err) {
-    if (err) console.log(err);
-    console.log(
-      "⬡==========================⬡    🍹 ֆǟӄʊʀǟ™ 🍹    ⬡==========================⬡"
-    );
-  }
+`./Sakura🛰️Server/Coolist.json`,
+jsonContent,
+`utf8`,
+function (err) {
+if (err) console.log(err);
+}
 );
 `|🍹|`;
 `|🍹|`;
