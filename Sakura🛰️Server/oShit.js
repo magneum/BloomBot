@@ -23,78 +23,77 @@ const pattern = date.compile(`ddd, MMM DD YYYY`);
 const Clock = date.format(now, pattern);
 const time2 = moment().tz(`Asia/Kolkata`).format(`HH:mm:ss`);
 if (time2 < `24:59:00`) {
-var Timers = `𝐍𝐢𝐠𝐡𝐭😴`;
+  var Timers = `𝐍𝐢𝐠𝐡𝐭😴`;
 }
 if (time2 < `19:00:00`) {
-var Timers = `𝐄𝐯𝐞𝐧𝐢𝐧𝐠🌞`;
+  var Timers = `𝐄𝐯𝐞𝐧𝐢𝐧𝐠🌞`;
 }
 if (time2 < `18:00:00`) {
-var Timers = `𝐀𝐟𝐭𝐞𝐫𝐧𝐨𝐨𝐧🌄`;
+  var Timers = `𝐀𝐟𝐭𝐞𝐫𝐧𝐨𝐨𝐧🌄`;
 }
 if (time2 < `15:00:00`) {
-var Timers = `𝐀𝐟𝐭𝐞𝐫𝐧𝐨𝐨𝐧☀️`;
+  var Timers = `𝐀𝐟𝐭𝐞𝐫𝐧𝐨𝐨𝐧☀️`;
 }
 if (time2 < `11:00:00`) {
-var Timers = `𝐌𝐨𝐫𝐧𝐢𝐧𝐠🌅`;
+  var Timers = `𝐌𝐨𝐫𝐧𝐢𝐧𝐠🌅`;
 }
 if (time2 < `05:00:00`) {
-var Timers = `𝐍𝐢𝐠𝐡𝐭💤`;
+  var Timers = `𝐍𝐢𝐠𝐡𝐭💤`;
 }
 exports.catch = async (Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat) => {
-var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
-var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
-const defaultnm = ֆǟӄʊʀǟ.commandName;
-const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
-`⬡🍹⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-await ӄʀǟӄɨռʐ.sendMessage(
-ֆǟӄʊʀǟ.chatId,
-{
-contentText: `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
+  var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
+  var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
+  const defaultnm = ֆǟӄʊʀǟ.commandName;
+  const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
+  `⬡🍹⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
+  await ӄʀǟӄɨռʐ.sendMessage(
+    ֆǟӄʊʀǟ.chatId,
+    {
+      contentText: `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
 
 ╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
-║❌ 𝗘𝗿𝗿𝗼𝗿: _Try Again Later!_
-║🐞 𝗕𝘂𝗴: _Api Timeout._
+║❌ 𝗘𝗿𝗿𝗼𝗿: _Api Timeout.Try Again Later!_
 ╚════════════╝`,
-footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚: kryozen${vers.vers} ⏋`,
-buttons: [
-{
-buttonId: `${ᴋᴇɪ}help`,
-buttonText: { displayText: `${ᴋᴇɪ}help` },
-type: 1,
-},
-],
-headerType: 1,
-},
-MessageType.buttonsMessage,
-{
-quoted: chat,
-contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
-}
-);
-`⬡🍹⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-return await ӄʀǟӄɨռʐ.sendMessage(
-ӄʀǟӄɨռʐ.user.jid,
-{
-contentText: `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚
+      footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚: kryozen${vers.vers} ⏋`,
+      buttons: [
+        {
+          buttonId: `${ᴋᴇɪ}bugreport`,
+          buttonText: { displayText: `${ᴋᴇɪ}bugreport` },
+          type: 1,
+        },
+      ],
+      headerType: 1,
+    },
+    MessageType.buttonsMessage,
+    {
+      quoted: chat,
+      contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
+    }
+  );
+  `⬡🍹⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
+  return await ӄʀǟӄɨռʐ.sendMessage(
+    ӄʀǟӄɨռʐ.user.jid,
+    {
+      contentText: `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚
 
 ╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
 ║🐞 𝗕𝘂𝗴: _${Error}_
 ╚════════════╝`,
-footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚: kryozen${vers.vers} ⏋`,
-buttons: [
-{
-buttonId: `${ᴋᴇɪ}bugreport`,
-buttonText: { displayText: `${ᴋᴇɪ}bugreport` },
-type: 1,
-},
-],
-headerType: 1,
-},
-MessageType.buttonsMessage,
-{
-quoted: chat,
-}
-);
+      footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚: kryozen${vers.vers} ⏋`,
+      buttons: [
+        {
+          buttonId: `${ᴋᴇɪ}bugreport`,
+          buttonText: { displayText: `${ᴋᴇɪ}bugreport` },
+          type: 1,
+        },
+      ],
+      headerType: 1,
+    },
+    MessageType.buttonsMessage,
+    {
+      quoted: chat,
+    }
+  );
 };
 `⬡🍹⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
 `|🍹|`;

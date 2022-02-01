@@ -15,18 +15,18 @@ let start = Date.now();
 let YouTY = `${start}_${id}.mp4`;
 `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
 ffmpeg(stream)
-.videoBitrate(128)
-.save(`${__dirname}/${YouTY}`)
-.on("progress", (progress) => {
-readline.cursorTo(process.stdout, 0);
-process.stdout.write(`${progress.targetSize}kb downloaded`);
-})
-.on("end", () => {
-console.log(`Download Done In: ${(Date.now() - start) / 1000}s`);
-const Content = fs.readFileSync(YouTY);
-console.log(Content);
-return;
-});
+  .videoBitrate(128)
+  .save(`${__dirname}/${YouTY}`)
+  .on("progress", (progress) => {
+    readline.cursorTo(process.stdout, 0);
+    process.stdout.write(`${progress.targetSize}kb downloaded`);
+  })
+  .on("end", () => {
+    console.log(`Download Done In: ${(Date.now() - start) / 1000}s`);
+    const Content = fs.readFileSync(YouTY);
+    console.log(Content);
+    return;
+  });
 `|🍹|`;
 `|🍹|`;
 `|🍹|======================================================================================================⬡  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™`;
