@@ -67,7 +67,7 @@
     "image-to-base64": "^2.2.0",
     "imdb-api": "^4.4.1",
     "insta-fetcher": "^1.2.3",
-    "@adiwajshing/baileys": "^3.5.3",
+    "@adiwajshing/baileys": "^3.5.0",
     "js-file-download": "^0.4.12",
     "jsdom": "^16.5.2",
     "kasu.nhentaiapi.js": "^2.9.2",
