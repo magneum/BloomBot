@@ -645,7 +645,6 @@ await ӄʀǟӄɨռʐ
 `🙏🏽‍: @${աɦօֆɛռȶɦǟȶռʊʍ}, Sir Wait For 5seconds`,
 MessageType.text,
 {
-quoted: chat,
 contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
 }
 )
@@ -657,10 +656,9 @@ return;
 await ӄʀǟӄɨռʐ
 .sendMessage(
 ֆǟӄʊʀǟ.chatId,
-`𝐀𝐧𝐭𝐢🤖𝐒𝐩𝐚𝐦: @${աɦօֆɛռȶɦǟȶռʊʍ}, Baka Wait For 15seconds`,
+`🥶𝐂𝐨𝐨𝐥𝐝𝐨𝐰𝐧: @${աɦօֆɛռȶɦǟȶռʊʍ}, Baka Wait For 15seconds`,
 MessageType.text,
 {
-quoted: chat,
 contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
 }
 )
