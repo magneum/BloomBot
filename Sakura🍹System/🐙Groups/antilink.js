@@ -96,7 +96,7 @@ LinkList.findOne(
 serverID: ֆǟӄʊʀǟ.chatId,
 },
 async (Error, server) => {
-if (Error) console.log(Error);
+if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
 if (!server) {
 var newServer = new LinkList({
 serverID: ֆǟӄʊʀǟ.chatId,
@@ -204,7 +204,7 @@ LinkList.findOne(
 serverID: ֆǟӄʊʀǟ.chatId,
 },
 async (Error, server) => {
-if (Error) console.log(Error);
+if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
 if (!server) {
 const media = await ӄʀǟӄɨռʐ.prepareMessage(
 ֆǟӄʊʀǟ.chatId,
