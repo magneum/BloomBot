@@ -9,7 +9,7 @@ const _𝔏𝔞𝔟_ = require(`../Sakura🛰️Server/_𝔏𝔞𝔟_`);
 const ֆǟӄʊʀǟgoose = require("mongoose");
 const Kolor = require(`chalk`);
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-console.log(Kolor.yellow(`💡INFO ⬰ SakuraGoose Connecting!`));
+console.log(Kolor.yellow(`🧀 𝐈𝐧𝐟𝐨⬰ SakuraGoose Connecting!`));
 await ֆǟӄʊʀǟgoose
 .connect(_𝔏𝔞𝔟_.SAKURAMDB, {
 useNewUrlParser: true,
@@ -18,10 +18,10 @@ useCreateIndex: true,
 useFindAndModify: false,
 })
 .catch((err) => {
-console.log(Kolor.red(`💡INFO ⬰ SakuraGoose Error: \n${err}`));
+console.log(Kolor.red(`🧀 𝐈𝐧𝐟𝐨⬰ SakuraGoose Error: \n${err}`));
 process.exit(0);
 });
-console.log(Kolor.green(`💡INFO ⬰ SakuraGoose Connected!`));
+console.log(Kolor.green(`🧀 𝐈𝐧𝐟𝐨⬰ SakuraGoose Connected!`));
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
 try {
 const ᴍɪᴢᴜᴋɪɢɪᴛ = require(`simple-git`)();
@@ -31,7 +31,7 @@ if (ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total != 0) {
 require(`simple-git`)()
 .exec(async () => {
 console.log(
-Kolor.yellow(`💡INFO ⬰ Updating Sakura System With Latest Patch...`)
+Kolor.yellow(`🧀 𝐈𝐧𝐟𝐨⬰ Updating Sakura System With Latest Patch...`)
 );
 })
 .pull(async (Error, update) => {
@@ -40,13 +40,13 @@ try {
 const mergeSummary = await ᴍɪᴢᴜᴋɪɢɪᴛ.merge();
 console.log(
 Kolor.green(
-`💡INFO ⬰ Auto-Updating Finished. Total Changes: [${mergeSummary.merges.length}]`
+`🧀 𝐈𝐧𝐟𝐨⬰ Auto-Updating Finished. Total Changes: [${mergeSummary.merges.length}]`
 )
 );
 } catch (Error) {
 console.log(
 Kolor.red(
-`❌ERROR ⬰ Merge Resulted with Total-Conflicts: ${Kolor.red(
+`❌ 𝐄𝐫𝐫𝐨𝐫⬰ Merge Resulted with Total-Conflicts: ${Kolor.red(
 Error
 )} `
 )
@@ -65,7 +65,7 @@ process.exitCode = 1;
 }
 } catch (Error) {
 console.log(Error);
-console.log(Kolor.red(`❌ERROR ⬰ 𝗣𝗹𝗲𝗮𝘀𝗲 𝗿𝗲𝗱𝗲𝗽𝗹𝗼𝘆 𝘆𝗼𝘂𝗿 𝗯𝗼𝘁!`));
+console.log(Kolor.red(`❌ 𝐄𝐫𝐫𝐨𝐫⬰ 𝗣𝗹𝗲𝗮𝘀𝗲 𝗿𝗲𝗱𝗲𝗽𝗹𝗼𝘆 𝘆𝗼𝘂𝗿 𝗯𝗼𝘁!`));
 }
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
 ӄʀǟӄɨռʐ.logger.level = "error";

@@ -65,26 +65,26 @@ var ӄʀǟӄɨռʐ = ֆǟӄʊʀǟֆʏռօք.WhatsApp;
 async function ֆǟӄʊʀǟ() {
 var ꜱɪᴛʀᴀᴘ = new Map();
 var commandUsage = new Map();
-console.log(Kolor.yellow(`💡INFO ⬰ Symlinking With Sakura System Files...`));
+console.log(Kolor.yellow(`🧀 𝐈𝐧𝐟𝐨⬰ ⬰ Symlinking With Sakura System Files...`));
 if (_𝔏𝔞𝔟_.HEROKU_API_KEY === `Null` || _𝔏𝔞𝔟_.HEROKU_APP_NAME === `Null`) {
-console.log(Kolor.yellow(`❌ERROR ⬰  Heroku Vars Are Wrong!`));
+console.log(Kolor.yellow(`❌ 𝐄𝐫𝐫𝐨𝐫⬰  Heroku Vars Are Wrong!`));
 process.exit(0);
 }
 try {
 var session = ֆǟӄʊʀǟֆʏռօք.Mee6reignite(_𝔏𝔞𝔟_.SAKURA);
 ӄʀǟӄɨռʐ.loadAuthInfo(session);
 } catch (Error) {
-console.log(Kolor.red(`💡INFO ⬰ Sakura Web Code is Wrong. Re-Auth!`));
+console.log(Kolor.red(`🧀 𝐈𝐧𝐟𝐨⬰ ⬰ Sakura Web Code is Wrong. Re-Auth!`));
 process.exit(0);
 }
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
 ӄʀǟӄɨռʐ.on(`connecting`, async () => {
-console.log(Kolor.yellow(`💡INFO ⬰ Connecting With User's Whatsapp Web..`));
+console.log(Kolor.yellow(`🧀 𝐈𝐧𝐟𝐨⬰ ⬰ Connecting With User's Whatsapp Web..`));
 });
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
 ӄʀǟӄɨռʐ.on(`open`, async () => {
 try {
-console.log(Kolor.green(`💡INFO ⬰ Connected With User's Whatsapp Web..`));
+console.log(Kolor.green(`🧀 𝐈𝐧𝐟𝐨⬰ ⬰ Connected With User's Whatsapp Web..`));
 console.log(
 Kolor.green(`
 |⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|
@@ -418,13 +418,13 @@ chat,
 `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚
 
 ╔════| 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
-║💡 𝐈𝐧𝐟𝐨⬰ _New Updates Pending! Auto-Pulling && Updating!_
+║🧀 𝐈𝐧𝐟𝐨⬰ _New Updates Pending! Auto-Pulling && Updating!_
 ║💡 𝐓𝐚𝐠⬰ _Dev #${Math.floor(Math.random() * (50 - 20 + 1) + 20)}_
 ╚════════════╝`
 );
 console.log(
 Kolor.yellow(
-`💡INFO ⬰ New Updates Pending! Auto-Pulling && Updating!`
+`🧀 𝐈𝐧𝐟𝐨⬰ ⬰ New Updates Pending! Auto-Pulling && Updating!`
 )
 );
 })
@@ -439,7 +439,7 @@ chat,
 `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚
 
 ╔════| 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
-║💡 𝐈𝐧𝐟𝐨⬰ _Auto Updated Sakura With Latest *[${
+║🧀 𝐈𝐧𝐟𝐨⬰ _Auto Updated Sakura With Latest *[${
 mergeSummary.merges.length
 }]* Changes._
 ║💡 𝐓𝐚𝐠⬰ _Dev #${Math.floor(Math.random() * (50 - 20 + 1) + 20)}_
@@ -447,7 +447,7 @@ mergeSummary.merges.length
 );
 console.log(
 Kolor.green(
-`💡INFO ⬰ 𝗔𝘂𝘁𝗼-𝗨𝗽𝗱𝗮𝘁𝗲𝗱 ⚡𝐒𝐚𝐤𝐮𝐫𝐚™ 𝘄𝗶𝘁𝗵 𝗹𝗮𝘁𝗲𝘀𝘁 [${mergeSummary.merges.length}] 𝗰𝗵𝗮𝗻𝗴𝗲𝘀.`
+`🧀 𝐈𝐧𝐟𝐨⬰ ⬰ 𝗔𝘂𝘁𝗼-𝗨𝗽𝗱𝗮𝘁𝗲𝗱 ⚡𝐒𝐚𝐤𝐮𝐫𝐚™ 𝘄𝗶𝘁𝗵 𝗹𝗮𝘁𝗲𝘀𝘁 [${mergeSummary.merges.length}] 𝗰𝗵𝗮𝗻𝗴𝗲𝘀.`
 )
 );
 } catch (Error) {
@@ -465,7 +465,7 @@ ${Error} `
 );
 console.log(
 Kolor.red(
-`❌ERROR ⬰ 𝗠𝗲𝗿𝗴𝗲 𝗿𝗲𝘀𝘂𝗹𝘁𝗲𝗱 𝗶𝗻 ${Kolor.red(
+`❌ 𝐄𝐫𝐫𝐨𝐫⬰ 𝗠𝗲𝗿𝗴𝗲 𝗿𝗲𝘀𝘂𝗹𝘁𝗲𝗱 𝗶𝗻 ${Kolor.red(
 Error
 )} 𝗰𝗼𝗻𝗳𝗹𝗶𝗰𝘁𝘀!`
 )
@@ -485,7 +485,7 @@ chat,
 `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚
 
 ╔════| 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
-║💡INFO ⬰ Bot Rebooted Asynchronously using child_process
+║🧀 𝐈𝐧𝐟𝐨⬰ ⬰ Bot Rebooted Asynchronously using child_process
 ║💡 𝐓𝐚𝐠⬰ _Dev #${Math.floor(Math.random() * (50 - 20 + 1) + 20)}_
 ╚════════════╝`
 );
@@ -495,7 +495,7 @@ chat,
 }
 } catch (Error) {
 console.log(Error);
-console.log(Kolor.red(`❌ERROR ⬰ 𝗣𝗹𝗲𝗮𝘀𝗲 𝗿𝗲𝗱𝗲𝗽𝗹𝗼𝘆 𝘆𝗼𝘂𝗿 𝗯𝗼𝘁!`));
+console.log(Kolor.red(`❌ 𝐄𝐫𝐫𝐨𝐫⬰ 𝗣𝗹𝗲𝗮𝘀𝗲 𝗿𝗲𝗱𝗲𝗽𝗹𝗼𝘆 𝘆𝗼𝘂𝗿 𝗯𝗼𝘁!`));
 }
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
 if (
