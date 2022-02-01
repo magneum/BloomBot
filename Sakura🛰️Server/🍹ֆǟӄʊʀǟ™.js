@@ -65,37 +65,29 @@ var ӄʀǟӄɨռʐ = ֆǟӄʊʀǟֆʏռօք.WhatsApp;
 async function ֆǟӄʊʀǟ() {
 var ꜱɪᴛʀᴀᴘ = new Map();
 var commandUsage = new Map();
-console.log(Kolor.yellow(`💡INFO ⬰ 𝐒𝐲𝐦𝐥𝐢𝐧𝐤𝐢𝐧𝐠 𝐖𝐢𝐭𝐡 𝐒𝐚𝐤𝐮𝐫𝐚 𝐒𝐲𝐬𝐭𝐞𝐦...🍃`));
+console.log(Kolor.yellow(`💡INFO ⬰ Symlinking With Sakura System Files...`));
 if (_𝔏𝔞𝔟_.HEROKU_API_KEY === `Null` || _𝔏𝔞𝔟_.HEROKU_APP_NAME === `Null`) {
-console.log(
-Kolor.yellow(
-`❌ERROR ⬰  𝐒𝐞𝐞𝐦𝐬 𝐥𝐢𝐤𝐞 𝐇𝐞𝐫𝐨𝐤𝐮 𝐯𝐚𝐫𝐬 𝐚𝐫𝐞 𝐢𝐧𝐯𝐚𝐥𝐢𝐝.𝐏𝐥𝐞𝐚𝐬𝐞 𝐜𝐡𝐞𝐜𝐤 𝐚𝐧𝐝 𝐫𝐞𝐭𝐫𝐲!`
-)
-);
+console.log(Kolor.yellow(`❌ERROR ⬰  Heroku Vars Are Wrong!`));
 process.exit(0);
 }
 try {
 var session = ֆǟӄʊʀǟֆʏռօք.Mee6reignite(_𝔏𝔞𝔟_.SAKURA);
 ӄʀǟӄɨռʐ.loadAuthInfo(session);
 } catch (Error) {
-console.log(
-Kolor.red(`💡INFO ⬰ 𝗦𝗮𝗸𝘂𝗿𝗮 𝗖𝗼𝗱𝗲 𝗜𝘀 𝗪𝗿𝗼𝗻𝗴. 𝗣𝗹𝗲𝗮𝘀𝗲 𝗥𝗲-𝗔𝘂𝘁𝗵 𝘂𝘀𝗶𝗻𝗴 𝘄𝗵𝗮𝘁𝘀𝗮𝗽𝗽!`)
-);
+console.log(Kolor.red(`💡INFO ⬰ Sakura Web Code is Wrong. Re-Auth!`));
 process.exit(0);
 }
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
 ӄʀǟӄɨռʐ.on(`connecting`, async () => {
-console.log(
-Kolor.yellow(`💡INFO ⬰ 𝗖𝗼𝗻𝗻𝗲𝗰𝘁𝗶𝗻𝗴 𝘁𝗼 🍹ֆǟӄʊʀǟ™ 𝗨𝘀𝗲𝗿-𝗪𝗵𝗮𝘁𝘀𝗮𝗽𝗽!...🛸`)
-);
+console.log(Kolor.yellow(`💡INFO ⬰ Connecting With User's Whatsapp Web..`));
 });
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
 ӄʀǟӄɨռʐ.on(`open`, async () => {
 try {
-console.log(Kolor.green(`🍹ֆǟӄʊʀǟ™ 𝗖𝗼𝗻𝗻𝗲𝗰𝘁𝗲𝗱 𝗧𝗼 𝗨𝘀𝗲𝗿-𝗪𝗵𝗮𝘁𝘀𝗮𝗽𝗽!🍃`));
-console.log(Kolor.green(`💡INFO ⬰ 𝐋𝐢𝐧𝐤𝐢𝐧𝐠 𝐒𝐚𝐤𝐮𝐫𝐚 𝐖𝐢𝐭𝐡 𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞...🍃`));
+console.log(Kolor.green(`💡INFO ⬰ Connected With User's Whatsapp Web..`));
 console.log(
-Kolor.green(`|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|
+Kolor.green(`
+|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|
 ɪꜱ ᴀ ᴡʜᴀᴛꜱᴀᴘᴘ ᴍᴜʟᴛɪᴘᴜʀᴘᴏꜱᴇ-ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ ᴍᴏᴅᴇʀᴀᴛɪᴏɴ,ᴀᴜᴛᴏᴍᴀᴛɪᴏɴ ᴀɴᴅ 100+ ᴄᴏᴍᴍᴀɴᴅꜱ!
 ᴜꜱᴇ ꜱᴀᴋᴜʀᴀ ɪɴ ʙᴏᴛʜ ᴘᴜʙʟɪᴄ-ɢʀᴏᴜᴘꜱ ᴀɴᴅ ᴘʀɪᴠᴀᴛᴇ.
 ꜱᴏ ᴍᴀɴʏ ᴄᴏᴍᴍᴀɴᴅꜱ ᴛʜᴀᴛ ᴡɪʟʟ ʙʟᴏᴡ ᴜᴘ ᴛʜᴇ ᴇᴠᴇʀʏ-ᴅᴀʏ ᴜꜱᴇ ᴏꜰ ʙᴏʀɪɴɢ ᴡʜᴀᴛꜱᴀᴘᴘ.
