@@ -173,8 +173,9 @@ contentText: `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռ
 ╔◇══════════════◇╗
 ┊ 𝐏𝐨𝐤𝐞𝐦𝐨𝐧🦋𝐇𝐮𝐧𝐭𝐢𝐧𝐠
 ┊ 𝐌𝐢𝐧𝐞𝐜𝐫𝐚𝐟𝐭 🪵 𝐄𝐝𝐢𝐭𝐢𝐨𝐧
-╚◇══════════════◇╝
-╔════◇🌿𝗡𝗮𝗺𝗲: ${PokemonData.name.toString().toUpperCase()}
+╚◇║
+╔◇║🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
+║◇ *Name*: ${PokemonData.name.toString().toUpperCase()}
 ║◇ *Type:* ${PokemonData.type}
 ║◇ *Abilities:* ${PokemonData.abilities}
 ║◇ *Base Exp:* ${PokemonData.base_experience}
