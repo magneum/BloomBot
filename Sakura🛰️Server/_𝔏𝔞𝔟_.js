@@ -38,7 +38,7 @@ HASHS: `https://chat.whatsapp.com/HKO5WLEZxMe3xWCyiv6vBu`,
 HASHREQ: `https://chat.whatsapp.com/EIn3YFShFmkJ3fvAqf2rpn`,
 Kate:
 process.env.Kate === undefined
-? `918436686758,917430922909,918250889325`
+? `918436686758,917430922909`
 : process.env.Kate,
 HEROKU: process.env.HEROKU,
 SAKURAQL: (process.env.SAKURAQL =
