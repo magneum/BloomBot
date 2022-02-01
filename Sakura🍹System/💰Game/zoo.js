@@ -92,7 +92,7 @@ zootimeout: 1800000,
 await newUser
 .save()
 .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-return Sakura_Buttons.MIB(
+return Sakura_Buttons.MTB(
 ӄʀǟӄɨռʐ,
 chat,
 ֆǟӄʊʀǟ,
@@ -103,15 +103,14 @@ chat,
 
 ╔════◇🌿𝗡𝗮𝗺𝗲: _Amature Zoo Keeper!_
 ║◇ *Type:* _Nothing Found_
-╚════════════╝`,
-`./Sakura☣️Reactor/Sakura_Zoo.png`
+╚════════════╝`
 );
 } else {
 if (userZoo.zootimeout - (Date.now() - userZoo.zoodone) > 0) {
 let time = ms(
 userZoo.zootimeout - (Date.now() - userZoo.zoodone)
 );
-return Sakura_Buttons.MIB(
+return Sakura_Buttons.MTB(
 ӄʀǟӄɨռʐ,
 chat,
 ֆǟӄʊʀǟ,
@@ -123,8 +122,7 @@ chat,
 ╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
 ║❌ 𝗘𝗿𝗿𝗼𝗿: You've Recently Bought a New Animal. 
 ║🐓 𝗭𝗼𝗼_𝗔𝗴𝗮𝗶𝗻: ${time.minutes}m ${time.seconds}s
-╚════════════╝`,
-`./Sakura☣️Reactor/Sakura_Zoo.png`
+╚════════════╝`
 );
 } else {
 const zooID = Math.floor(Math.random() * 10) + 1;
@@ -146,7 +144,7 @@ await userZoo
 .catch((Error) =>
 ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
 );
-return Sakura_Buttons.MIB(
+return Sakura_Buttons.MTB(
 ӄʀǟӄɨռʐ,
 chat,
 ֆǟӄʊʀǟ,
@@ -159,8 +157,7 @@ chat,
 ║🐆 𝗜𝘁𝗲𝗺_𝗙𝗼𝘂𝗻𝗱: _You Added ${anim.symbol} in your Zoo!_
 ║💵 𝗪𝗼𝗿𝘁𝗵: _People paid you *${worth}* to see._
 ║💍 𝗜𝘁𝗲𝗺 𝗥𝗮𝗿𝗶𝘁𝘆: _${rarity}_
-╚════════════╝`,
-`./Sakura☣️Reactor/Sakura_Zoo.png`
+╚════════════╝`
 );
 }
 }

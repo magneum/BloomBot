@@ -81,7 +81,7 @@ if (userEco.fishtimeout - (Date.now() - userEco.fishdone) > 0) {
 let time = ms(
 userEco.fishtimeout - (Date.now() - userEco.fishdone)
 );
-return Sakura_Buttons.MIB(
+return Sakura_Buttons.MTB(
 ӄʀǟӄɨռʐ,
 chat,
 ֆǟӄʊʀǟ,
@@ -94,8 +94,7 @@ chat,
 ╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
 ║❌ 𝗘𝗿𝗿𝗼𝗿: You've Recently Casted A Line. 
 ║🕐 𝗙𝗶𝘀𝗵_𝗔𝗴𝗮𝗶𝗻: ${time.minutes}m ${time.seconds}s
-╚════════════╝`,
-`./Sakura☣️Reactor/Sakura_Fishing.png`
+╚════════════╝`
 );
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
 } else {
@@ -116,7 +115,7 @@ userEco.fishtimeout = 1800000;
 userEco
 .save()
 .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-return Sakura_Buttons.MIB(
+return Sakura_Buttons.MTB(
 ӄʀǟӄɨռʐ,
 chat,
 ֆǟӄʊʀǟ,
@@ -130,8 +129,7 @@ chat,
 ║🎣 𝗜𝘁𝗲𝗺_𝗙𝗼𝘂𝗻𝗱: You Cast Out Your Line And Caught A ${fishh.symbol}.
 ║💵 𝗪𝗼𝗿𝘁𝗵: It'd Sell For Around *${worth}*!
 ║💍 𝗜𝘁𝗲𝗺 𝗥𝗮𝗿𝗶𝘁𝘆: ${rarity}
-╚════════════╝`,
-`./Sakura☣️Reactor/Sakura_Fishing.png`
+╚════════════╝`
 );
 }
 }
