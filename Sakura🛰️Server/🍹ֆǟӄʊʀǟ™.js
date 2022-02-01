@@ -427,7 +427,7 @@ ${update.desc}`,
 
 ╔════| 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
 ║💡 𝐈𝐧𝐟𝐨⬰ _New Updates Pending! Auto-Pulling && Updating!_
-║💡 𝐓𝐚𝐠⬰ _Dev #${Math.floor(Math.random() * (100 - 5 + 1) + 5)}_
+║💡 𝐓𝐚𝐠⬰ _Dev #${Math.floor(Math.random() * (50 - 20 + 1) + 20)}_
 ╚════════════╝`
                       );
                       console.log(
@@ -450,7 +450,7 @@ ${update.desc}`,
 ║💡 𝐈𝐧𝐟𝐨⬰ _Auto Updated Sakura With Latest *[${
                               mergeSummary.merges.length
                             }]* Changes._
-║💡 𝐓𝐚𝐠⬰ _Dev #${Math.floor(Math.random() * (100 - 5 + 1) + 5)}_
+║💡 𝐓𝐚𝐠⬰ _Dev #${Math.floor(Math.random() * (50 - 20 + 1) + 20)}_
 ╚════════════╝`
                           );
                           console.log(
@@ -467,7 +467,7 @@ ${update.desc}`,
 
 ╔════| 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
 ║⚠️ERROR ⬰ _Auto-Merge With Git resulted in conflicts!_
-║💡 𝐓𝐚𝐠⬰ _Dev #${Math.floor(Math.random() * (100 - 5 + 1) + 5)}_
+║💡 𝐓𝐚𝐠⬰ _Dev #${Math.floor(Math.random() * (50 - 20 + 1) + 20)}_
 ╚════════════╝
 ${Error} `
                           );
@@ -494,7 +494,7 @@ ${Error} `
 
 ╔════| 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
 ║💡INFO ⬰ Bot Rebooted Asynchronously using child_process
-║💡 𝐓𝐚𝐠⬰ _Dev #${Math.floor(Math.random() * (100 - 5 + 1) + 5)}_
+║💡 𝐓𝐚𝐠⬰ _Dev #${Math.floor(Math.random() * (50 - 20 + 1) + 20)}_
 ╚════════════╝`
                           );
                         });
