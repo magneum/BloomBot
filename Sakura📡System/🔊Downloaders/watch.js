@@ -185,11 +185,7 @@ chat,
 Found.thumbnail
 );
 }
-`|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-var Stream = `${Date.now()}${աɦօֆɛռȶɦǟȶ.toString()}.mp4`;
-YouTube_Video(Found.url).then((res) => {
-const { dl_link, thumb, title, filesizeF, filesize } = res;
-Sakura_Buttons.MTB(
+await Sakura_Buttons.MTB(
 ӄʀǟӄɨռʐ,
 chat,
 ֆǟӄʊʀǟ,
@@ -201,6 +197,9 @@ chat,
 ╚════════════╝`
 );
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+var Stream = `${Date.now()}${աɦօֆɛռȶɦǟȶ.toString()}.mp4`;
+YouTube_Video(Found.url).then((res) => {
+const { dl_link, thumb, title, filesizeF, filesize } = res;
 TinyURL.shorten(dl_link).then(
 async function (DirectFile) {
 require(`child_process`).exec(
