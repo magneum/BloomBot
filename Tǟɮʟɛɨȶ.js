@@ -6,17 +6,17 @@
 const fs = require(`fs`);
 const ascii = require(`ascii-table`);
 async function Tǟɮʟɛɨȶ(ꜱɪᴛʀᴀᴘ, commandUsage) {
-  const ᴅᴇʀꜱ = fs.readdirSync(`./Sakura🍹System`);
-  for (const ʟᴅᴇʀ of ᴅᴇʀꜱ) {
-    const cmdF = fs
-      .readdirSync(`./Sakura🍹System/${ʟᴅᴇʀ}`)
-      .filter((ɪꜱᴏ) => ɪꜱᴏ.endsWith(`.js`));
-    for (const ɪꜱᴏ of cmdF) {
-      const command = require(`./Sakura🍹System/${ʟᴅᴇʀ}/${ɪꜱᴏ}`);
-      ꜱɪᴛʀᴀᴘ.set(command.name, command);
-      commandUsage.set(command.ֆǟӄʊʀǟӄǟɨʐօ, command.description);
-    }
-  }
+const ᴅᴇʀꜱ = fs.readdirSync(`./Sakura📡System`);
+for (const ʟᴅᴇʀ of ᴅᴇʀꜱ) {
+const cmdF = fs
+.readdirSync(`./Sakura📡System/${ʟᴅᴇʀ}`)
+.filter((ɪꜱᴏ) => ɪꜱᴏ.endsWith(`.js`));
+for (const ɪꜱᴏ of cmdF) {
+const command = require(`./Sakura📡System/${ʟᴅᴇʀ}/${ɪꜱᴏ}`);
+ꜱɪᴛʀᴀᴘ.set(command.name, command);
+commandUsage.set(command.ֆǟӄʊʀǟӄǟɨʐօ, command.description);
+}
+}
 }
 module.exports = { Tǟɮʟɛɨȶ };
 `|🍹|`;

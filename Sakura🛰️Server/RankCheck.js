@@ -41,7 +41,7 @@ const RankCheck = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ) => {
     var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
     var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
     var expFile =
-      "./Sakura🗑️Temp/" +
+      "./Sakura☕Shop/" +
       Date.now().toString() +
       աɦօֆɛռȶɦǟȶ.toString() +
       ".png";
