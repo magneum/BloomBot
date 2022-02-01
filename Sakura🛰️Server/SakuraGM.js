@@ -112,7 +112,7 @@ exports.SakuraGM = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, newScpt, Needs) =>
                 {
                   mimetype: `video/gif`,
                   quoted: chat,
-                  caption: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚: kryozen${vers.vers} ⏋\n⎿ 𝐃𝐚𝐭𝐞: ${Clock} ⏋\n⎿ 𝐏𝐢𝐧𝐠: ${Ping}s ⏋
+                  caption: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚: kryozen${vers.vers} ⏋
 
 
 ╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
@@ -134,7 +134,7 @@ exports.SakuraGM = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, newScpt, Needs) =>
                 {
                   mimetype: `video/gif`,
                   quoted: chat,
-                  caption: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚: kryozen${vers.vers} ⏋\n⎿ 𝐃𝐚𝐭𝐞: ${Clock} ⏋\n⎿ 𝐏𝐢𝐧𝐠: ${Ping}s ⏋
+                  caption: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚: kryozen${vers.vers} ⏋
 
 
 ╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_

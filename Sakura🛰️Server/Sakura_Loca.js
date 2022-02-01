@@ -24,7 +24,7 @@ const Sakura_Loca = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, MainText) => {
   try {
     const buttonMessage = {
       contentText: MainText,
-      footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚: kryozen${vers.vers} ⏋\n⎿ 𝐃𝐚𝐭𝐞: ${Clock} ⏋\n⎿ 𝐏𝐢𝐧𝐠: ${Ping}s ⏋`,
+      footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚: kryozen${vers.vers} ⏋`,
       buttons: [
         {
           buttonId: `${ᴋᴇɪ}help`,

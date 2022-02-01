@@ -109,7 +109,7 @@ contentText: `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 •@${քɛʀֆօռɢօȶ�
 ║💞𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${groupData.participants.length}
 ║🍰 𝐆𝐫𝐨𝐮𝐩: https://chat.whatsapp.com/${code}
 ╚════════════╝`,
-footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚: kryozen${vers.vers} ⏋\n⎿ 𝐃𝐚𝐭𝐞: ${Clock} ⏋\n⎿ 𝐏𝐢𝐧𝐠: ${Ping}s ⏋`,
+footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚: kryozen${vers.vers} ⏋`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
@@ -145,7 +145,7 @@ contentText: `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռ
 ║💞𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${groupData.participants.length}
 ║🍰 𝐆𝐫𝐨𝐮𝐩: https://chat.whatsapp.com/${code}
 ╚════════════╝`,
-footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚: kryozen${vers.vers} ⏋\n⎿ 𝐃𝐚𝐭𝐞: ${Clock} ⏋\n⎿ 𝐏𝐢𝐧𝐠: ${Ping}s ⏋`,
+footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚: kryozen${vers.vers} ⏋`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,

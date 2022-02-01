@@ -1,12 +1,12 @@
-const slotItems = ["🍇", "🍉", "🍌", "🍎", "🍒"];
+const betItems = ["🍇", "🍉", "🍌", "🍎", "🍒"];
 const db = require("quick.db");
 const { MessageEmbed } = require("discord.js");
 
 module.exports = {
-  name: "slots",
+  name: "bet",
   aliases: ["sl"],
   category: "economy",
-  description: "Slot game | 9x - rare | 3x - common",
+  description: "bet game | 9x - rare | 3x - common",
   usage: "<amount>",
   accessableby: "",
   run: async (bot, message, args) => {
@@ -28,7 +28,7 @@ module.exports = {
 
     let number = [];
     for (let i = 0; i < 3; i++) {
-      number[i] = Math.floor(Math.random() * slotItems.length);
+      number[i] = Math.floor(Math.random() * betItems.length);
     }
 
     if (number[0] == number[1] && number[1] == number[2]) {
@@ -43,24 +43,24 @@ module.exports = {
       win = true;
     }
     if (win) {
-      let slotsEmbed1 = new MessageEmbed()
+      let betsEmbed1 = new MessageEmbed()
         .setDescription(
-          `${slotItems[number[0]]} | ${slotItems[number[1]]} | ${
-            slotItems[number[2]]
+          `${betItems[number[0]]} | ${betItems[number[1]]} | ${
+            betItems[number[2]]
           }\n\nYou won ${money} coins`
         )
         .setColor("GREEN");
-      message.channel.send(slotsEmbed1);
+      message.channel.send(betsEmbed1);
       db.add(`money_${user.id}`, money);
     } else {
-      let slotsEmbed = new MessageEmbed()
+      let betsEmbed = new MessageEmbed()
         .setDescription(
-          `${slotItems[number[0]]} | ${slotItems[number[1]]} | ${
-            slotItems[number[2]]
+          `${betItems[number[0]]} | ${betItems[number[1]]} | ${
+            betItems[number[2]]
           }\n\nYou lost ${money} coins`
         )
         .setColor("GREEN");
-      message.channel.send(slotsEmbed);
+      message.channel.send(betsEmbed);
       db.subtract(`money_${user.id}`, money);
     }
   },

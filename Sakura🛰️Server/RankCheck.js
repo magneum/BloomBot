@@ -75,7 +75,7 @@ const RankCheck = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ) => {
               ֆǟӄʊʀǟ.chatId,
               {
                 contentText: `📜𝐑𝐚𝐧𝐤: @${աɦօֆɛռȶɦǟȶռʊʍ}, Auto-Ranking has Started!`,
-                footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚: kryozen${vers.vers} ⏋\n⎿ 𝐃𝐚𝐭𝐞: ${Clock} ⏋\n⎿ 𝐏𝐢𝐧𝐠: ${Ping}s ⏋`,
+                footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚: kryozen${vers.vers} ⏋`,
                 buttons: [
                   {
                     buttonId: `${ᴋᴇɪ}help`,
@@ -243,7 +243,7 @@ const RankCheck = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ) => {
                         ֆǟӄʊʀǟ.chatId,
                         {
                           contentText: `𝐒𝐚𝐤𝐮𝐫𝐚💵𝐁𝐚𝐧𝐤: @${աɦօֆɛռȶɦǟȶռʊʍ}, Auto-Opened Your Account!`,
-                          footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚: kryozen${vers.vers} ⏋\n⎿ 𝐃𝐚𝐭𝐞: ${Clock} ⏋\n⎿ 𝐏𝐢𝐧𝐠: ${Ping}s ⏋`,
+                          footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚: kryozen${vers.vers} ⏋`,
                           buttons: [
                             {
                               buttonId: `${ᴋᴇɪ}help`,
