@@ -642,7 +642,7 @@ if (ֆǟӄʊʀǟ.isSenderDev) {
 await ӄʀǟӄɨռʐ
 .sendMessage(
 ֆǟӄʊʀǟ.chatId,
-`🙏🏽‍: @${աɦօֆɛռȶɦǟȶռʊʍ}, Sir Wait For 5seconds`,
+`🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ}, Sir Wait For 5seconds`,
 MessageType.text,
 {
 contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
@@ -656,7 +656,7 @@ return;
 await ӄʀǟӄɨռʐ
 .sendMessage(
 ֆǟӄʊʀǟ.chatId,
-`🥶𝐂𝐨𝐨𝐥𝐝𝐨𝐰𝐧: @${աɦօֆɛռȶɦǟȶռʊʍ}, Baka Wait For 15seconds`,
+`🚩𝐂𝐨𝐨𝐥𝐝𝐨𝐰𝐧: @${աɦօֆɛռȶɦǟȶռʊʍ}, Baka Wait For 15seconds`,
 MessageType.text,
 {
 contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
