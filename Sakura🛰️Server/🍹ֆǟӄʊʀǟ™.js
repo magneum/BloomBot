@@ -391,9 +391,12 @@ chat,
 ║• _${_𝔏𝔞𝔟_.HASHREQ}_
 ║• Your Group Should Have *10 members* atleast.
 ║• Turn Disappearing Message *Off* in your Gc.
-╚════════════╝
-
-╔════◇
+║
+╚═◇║
+╔═◇║
+║
+║💼 𝐆𝐫𝐨𝐮𝐩: ${_𝔏𝔞𝔟_.HASH}
+║💼 𝐆𝐫𝐨𝐮𝐩: ${_𝔏𝔞𝔟_.HASHS}
 ║💻 𝐆𝐢𝐭𝐡𝐮𝐛: https://github.com/Krakinz/Sakura
 ╚════════════╝`
 );
