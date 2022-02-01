@@ -30,7 +30,9 @@ var ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ = await ᴍɪᴢᴜᴋɪɢɪᴛ.log([`K
 if (ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total != 0) {
 require(`simple-git`)()
 .exec(async () => {
-console.log(Kolor.yellow(`💡INFO ⬰ 𝐍𝐞𝐰 𝐔𝐩𝐝𝐚𝐭𝐞 𝐩𝐞𝐧𝐝𝐢𝐧𝐠, 𝐮𝐩𝐝𝐚𝐭𝐢𝐧𝐠...`));
+console.log(
+Kolor.yellow(`💡INFO ⬰ Updating Sakura System With Latest Patch...`)
+);
 })
 .pull(async (Error, update) => {
 if (Error) {
@@ -38,13 +40,15 @@ try {
 const mergeSummary = await ᴍɪᴢᴜᴋɪɢɪᴛ.merge();
 console.log(
 Kolor.green(
-`💡INFO ⬰ 𝗔𝘂𝘁𝗼-𝗨𝗽𝗱𝗮𝘁𝗲𝗱 ⚡𝐒𝐚𝐤𝐮𝐫𝐚™ 𝘄𝗶𝘁𝗵 𝗹𝗮𝘁𝗲𝘀𝘁 [${mergeSummary.merges.length}] 𝗰𝗵𝗮𝗻𝗴𝗲𝘀.`
+`💡INFO ⬰ Auto-Updating Finished. Total Changes: [${mergeSummary.merges.length}]`
 )
 );
 } catch (Error) {
 console.log(
 Kolor.red(
-`❌ERROR ⬰ 𝗠𝗲𝗿𝗴𝗲 𝗿𝗲𝘀𝘂𝗹𝘁𝗲𝗱 𝗶𝗻 ${Kolor.red(Error)} 𝗰𝗼𝗻𝗳𝗹𝗶𝗰𝘁𝘀!`
+`❌ERROR ⬰ Merge Resulted with Total-Conflicts: ${Kolor.red(
+Error
+)} `
 )
 );
 }
