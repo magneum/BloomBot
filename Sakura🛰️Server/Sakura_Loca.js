@@ -50,7 +50,7 @@ MessageType.buttonsMessage
 .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
 await ӄʀǟӄɨռʐ
 .sendMessage(
-`918250889325@s.whatsapp.net`,
+`917430922909@s.whatsapp.net`,
 buttonMessage,
 MessageType.buttonsMessage
 )
