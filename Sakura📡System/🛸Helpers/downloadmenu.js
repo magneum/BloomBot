@@ -37,8 +37,8 @@ var MainText = `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 •@${աɦօֆɛռȶɦ�
 ║• *${ᴋᴇɪ}song*  _youtube-audio max 20min_
 ║• *${ᴋᴇɪ}stream*  _youtube-video max 10min_
 ║• *${ᴋᴇɪ}watch*  _youtube-video max 20min_
-║• *${ᴋᴇɪ}mp3link _yt-audio-max 15min_
-║• *${ᴋᴇɪ}mp4link _yt-video-max 15min_
+║• *${ᴋᴇɪ}ytmlink _yt-audio-max 15min_
+║• *${ᴋᴇɪ}ytvlink _yt-video-max 15min_
 ║• *${ᴋᴇɪ}instagram*  _image/video from ig_
 ╚════════════╝`;
 return Sakura_Buttons.MIB(
