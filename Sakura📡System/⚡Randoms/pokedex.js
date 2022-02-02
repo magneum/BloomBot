@@ -219,7 +219,7 @@ MessageType.video,
 mimetype: `video/gif`,
 quoted: chat,
 caption:
-`⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚: kryozen${vers.vers} ⏋\n\n` +
+`⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐁𝐨𝐭 ⏋\n⎿ 𝐄𝐧𝐠𝐢𝐧𝐞: _kryozenV${vers.vers}_ ⏋\n\n` +
 PokeInfo,
 contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
 }

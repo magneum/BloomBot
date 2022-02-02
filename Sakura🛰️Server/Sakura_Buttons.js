@@ -29,7 +29,7 @@ var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
 var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
 const buttonMessage = {
 contentText: MainText,
-footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚: kryozen${vers.vers} ⏋`,
+footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐁𝐨𝐭 ⏋\n⎿ 𝐄𝐧𝐠𝐢𝐧𝐞: _kryozenV${vers.vers}_ ⏋`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
@@ -52,7 +52,7 @@ const defaultnm = ֆǟӄʊʀǟ.commandName;
 const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
 const buttonMessage = {
 contentText: MainText,
-footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚: kryozen${vers.vers} ⏋`,
+footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐁𝐨𝐭 ⏋\n⎿ 𝐄𝐧𝐠𝐢𝐧𝐞: _kryozenV${vers.vers}_ ⏋`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
@@ -97,7 +97,7 @@ return await ӄʀǟӄɨռʐ
 ֆǟӄʊʀǟ.chatId,
 {
 contentText: MainText,
-footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚: kryozen${vers.vers} ⏋`,
+footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐁𝐨𝐭 ⏋\n⎿ 𝐄𝐧𝐠𝐢𝐧𝐞: _kryozenV${vers.vers}_ ⏋`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
@@ -131,7 +131,7 @@ return await ӄʀǟӄɨռʐ
 ֆǟӄʊʀǟ.chatId,
 {
 contentText: MainText,
-footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚: kryozen${vers.vers} ⏋`,
+footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐁𝐨𝐭 ⏋\n⎿ 𝐄𝐧𝐠𝐢𝐧𝐞: _kryozenV${vers.vers}_ ⏋`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
@@ -178,7 +178,7 @@ return await ӄʀǟӄɨռʐ
 ֆǟӄʊʀǟ.chatId,
 {
 contentText: MainText,
-footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚: kryozen${vers.vers} ⏋`,
+footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐁𝐨𝐭 ⏋\n⎿ 𝐄𝐧𝐠𝐢𝐧𝐞: _kryozenV${vers.vers}_ ⏋`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
@@ -212,7 +212,7 @@ return await ӄʀǟӄɨռʐ
 ֆǟӄʊʀǟ.chatId,
 {
 contentText: MainText,
-footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚: kryozen${vers.vers} ⏋`,
+footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐁𝐨𝐭 ⏋\n⎿ 𝐄𝐧𝐠𝐢𝐧𝐞: _kryozenV${vers.vers}_ ⏋`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
@@ -259,7 +259,7 @@ return await ӄʀǟӄɨռʐ
 ֆǟӄʊʀǟ.chatId,
 {
 contentText: MainText,
-footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚: kryozen${vers.vers} ⏋`,
+footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐁𝐨𝐭 ⏋\n⎿ 𝐄𝐧𝐠𝐢𝐧𝐞: _kryozenV${vers.vers}_ ⏋`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
@@ -293,7 +293,7 @@ return await ӄʀǟӄɨռʐ
 ֆǟӄʊʀǟ.chatId,
 {
 contentText: MainText,
-footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚: kryozen${vers.vers} ⏋`,
+footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐁𝐨𝐭 ⏋\n⎿ 𝐄𝐧𝐠𝐢𝐧𝐞: _kryozenV${vers.vers}_ ⏋`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
@@ -350,7 +350,7 @@ MessageType.mp4Audio,
 const buttonMessages = {
 videoMessage: media.message.videoMessage,
 contentText: MainText,
-footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚: kryozen${vers.vers} ⏋`,
+footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐁𝐨𝐭 ⏋\n⎿ 𝐄𝐧𝐠𝐢𝐧𝐞: _kryozenV${vers.vers}_ ⏋`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
@@ -404,7 +404,7 @@ MessageType.location
 const buttonMessages = {
 locationMessage: media.message.locationMessage,
 contentText: MainText,
-footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚: kryozen${vers.vers} ⏋`,
+footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐁𝐨𝐭 ⏋\n⎿ 𝐄𝐧𝐠𝐢𝐧𝐞: _kryozenV${vers.vers}_ ⏋`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
