@@ -32,10 +32,8 @@ var MainText = `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶ
 ║• Send Your Group Link In: _${_𝔏𝔞𝔟_.HASHREQ}_
 ║• Your Group Should Have *10 members* atleast.
 ║• Turn Disappearing Message *Off* in your Gc.
-║
 ╚════◇║
 ╔════◇║  𝐎𝐟𝐟𝐢𝐜𝐢𝐚𝐥 𝐆𝐫𝐨𝐮𝐩👇🏽‍
-║
 ║💼 𝐆𝐫𝐨𝐮𝐩: _${_𝔏𝔞𝔟_.HASH}_
 ║💼 𝐆𝐫𝐨𝐮𝐩: _${_𝔏𝔞𝔟_.HASHS}_
 ║💻 𝐆𝐢𝐭𝐡𝐮𝐛: _https://github.com/Krakinz/Sakura_
