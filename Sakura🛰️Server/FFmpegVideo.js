@@ -8,13 +8,12 @@ const Sakura_Buttons = require(`./Sakura_Buttons`);
 const vers = require(`../package.json`);
 const cleanRF = require(`./cleanRF`);
 const readline = require("readline");
-const fs = require("fs");
 const ytdl = require("ytdl-core");
-const fs = require(`fs`);
 const _𝔏𝔞𝔟_ = require(`./_𝔏𝔞𝔟_`);
 const ꜰᴜᴄᴋ = require(`./oShit`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
+const fs = require("fs");
 /* 
 strings: highest/lowest/highestaudio/lowestaudio/highestvideo/lowestvideo. 
 highestaudio/lowestaudio try to minimize video bitrate for equally good audio formats 
