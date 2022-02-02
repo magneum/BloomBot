@@ -120,7 +120,7 @@ daily: 0,
 timeout: 86400000,
 fishdone: 0,
 fishtimeout: 1800000,
-workdone: Date.now(),
+workdone: 0,
 worktimeout: 900000,
 });
 await newUser
