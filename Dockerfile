@@ -2,7 +2,29 @@ FROM python:latest
 ENV KRAKINZ_LAB "/venv"
 RUN python -m venv $KRAKINZ_LAB
 ENV PATH "$KRAKINZ_LAB/bin:$PATH"
-RUN apt-get update && apt-get upgrade -y && apt-get install git -y && apt-get install curl -y && apt-get install ffmpeg -y && apt-get install nodejs -y && apt-get install python3 -y && apt-get install bpm-tools -y && apt-get install opus-tools -y  && apt-get install python3-pip -y && apt-get install npm -y && npm install --global n && n install 16 && path=path && hash -r && git clone https://github.com/Krakinz/Sakura.git && cd Sakura
+RUN apt-get update 
+RUN apt-get upgrade -y 
+RUN apt-get install git -y 
+RUN apt-get install curl -y 
+RUN apt-get install ffmpeg -y 
+RUN apt-get install nodejs -y 
+RUN apt-get install python3 -y 
+RUN apt-get install bpm-tools -y 
+RUN apt-get install opus-tools -y  
+RUN apt-get install python3-pip -y 
+RUN apt-get install npm -y 
+RUN npm install --global n 
+RUN n install 16 
+RUN path=path 
+RUN hash -r 
+WORKDIR /
+COPY . /Sakura
 WORKDIR /Sakura
-RUN pip install -r Sakura☣️Reactor/ӄʀǟӄɨռʐ🐙ʟǟɮ.txt && npm install --force
+RUN git init --initial-branch=KrakinzLab
+RUN git remote add origin https://github.com/Krakinz/Sakura.git
+RUN git fetch origin KrakinzLab
+RUN git reset --hard origin/KrakinzLab
+RUN pip install -r Sakura☣️Reactor/ӄʀǟӄɨռʐ🐙ʟǟɮ.txt 
+RUN npm install --force
 CMD python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py
+
