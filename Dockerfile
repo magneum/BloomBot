@@ -12,6 +12,7 @@ RUN apt-get install python3 -y
 RUN apt-get install bpm-tools -y 
 RUN apt-get install opus-tools -y  
 RUN apt-get install python3-pip -y 
+RUN apt-get install imagemagick -y
 RUN apt-get install npm -y 
 RUN npm install --global n 
 RUN n install 16 
