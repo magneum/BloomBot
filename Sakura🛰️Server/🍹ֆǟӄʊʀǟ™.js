@@ -588,9 +588,7 @@ chat,
 ╚◇║*@${աɦօֆɛռȶɦǟȶռʊʍ},not verified.*
 ╔◇║_First Join Sakura Group._
 ║
-║💼 𝐆𝐫𝐨𝐮𝐩: ${_𝔏𝔞𝔟_.HASH}
-║💼 𝐆𝐫𝐨𝐮𝐩: ${_𝔏𝔞𝔟_.HASHS}
-║💻 𝐆𝐢𝐭𝐡𝐮𝐛: https://github.com/Krakinz/Sakura
+║💼 *Need Link?* _type /help in my private_
 ╚════════════╝`,
 "./Sakura☣️Reactor/Sakura_Verify.png"
 );
