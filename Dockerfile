@@ -26,5 +26,6 @@ RUN git fetch origin KrakinzLab
 RUN git reset --hard origin/KrakinzLab
 RUN pip install -r Sakura☣️Reactor/ӄʀǟӄɨռʐ🐙ʟǟɮ.txt 
 RUN npm install --force
+RUN npm test
 CMD python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py
 
