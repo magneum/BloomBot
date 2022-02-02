@@ -115,9 +115,7 @@ quoted: chat,
 contextInfo: {
 mentionedJid: members,
 },
-caption: `╚(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐄𝐧𝐠𝐢𝐧𝐞: kryozen${
-vers.vers
-}╝\n╚◈𝐃𝐚𝐭𝐞: ${Clock}╝\n╚◈𝐏𝐢𝐧𝐠: ${Ping}ms╝
+caption: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚: kryozen${vers.vers} ⏋
 
 ╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
 ║🥳 𝐅𝐫𝐨𝐦: @${աɦօֆɛռȶɦǟȶռʊʍ}
@@ -140,9 +138,7 @@ quoted: chat,
 contextInfo: {
 mentionedJid: members,
 },
-caption: `╚(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐄𝐧𝐠𝐢𝐧𝐞: kryozen${
-vers.vers
-}╝\n╚◈𝐃𝐚𝐭𝐞: ${Clock}╝\n╚◈𝐏𝐢𝐧𝐠: ${Ping}ms╝
+caption: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚: kryozen${vers.vers} ⏋
 
 ╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
 ║🥳 𝐅𝐫𝐨𝐦: @${աɦօֆɛռȶɦǟȶռʊʍ}
