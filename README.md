@@ -4,7 +4,7 @@
 
 <img align="centre"  height="500" src="https://github.com/Krakinz/Sakura/blob/KrakinzLab/Sakura%E2%98%A3%EF%B8%8FReactor/%D6%86%C7%9F%D3%84%CA%8A%CA%80%C7%9F.png">
 
-```sh
+```
 🍹(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭
 * ɪꜱ ᴀ ᴡʜᴀᴛꜱᴀᴘᴘ ᴍᴜʟᴛɪᴘᴜʀᴘᴏꜱᴇ-ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ ᴍᴏᴅᴇʀᴀᴛɪᴏɴ,ᴀᴜᴛᴏᴍᴀᴛɪᴏɴ ᴀɴᴅ 100+ ᴄᴏᴍᴍᴀɴᴅꜱ!
 * ᴜꜱᴇ ꜱᴀᴋᴜʀᴀ ɪɴ ʙᴏᴛʜ ᴘᴜʙʟɪᴄ-ɢʀᴏᴜᴘꜱ ᴀɴᴅ ᴘʀɪᴠᴀᴛᴇ.
@@ -14,7 +14,7 @@
 ╔════◇⚡ 𝐅𝐫𝐞𝐪𝐮𝐞𝐧𝐭𝐥𝐲 𝐀𝐬𝐤𝐞𝐝 𝐐𝐮𝐞𝐬𝐭𝐢𝐨𝐧𝐬
 ║
 ║ 1. What is the reason/topic for this group?
-║ _Sakura is an Advance Whatsapp User-Bot. You Can Use The Bot in this group or in your respective groups._
+║ Sakura is an Advance Whatsapp User-Bot. You Can Use The Bot in this group or in your respective groups.
 ║
 ║ 2. How Do I add Sakura In My Group?
 ║   -Send Your Group Link In: https://chat.whatsapp.com/EIn3YFShFmkJ3fvAqf2rpn
@@ -24,10 +24,10 @@
 ║   -Turn Disappearing Message Off in your Gc.
 ║
 ║ 3. I want to know how to deploy Sakura.
-║ _Not Allowed anymore!_
+║ Not Allowed anymore!
 ║
 ║ 4. Please Help Me Out With The Commands.
-║ _You can find all commands in the /menu and their respective category in /help.
+║ You can find all commands in the /menu and their respective category in /help.
 ║
 ║ 5. I do not want to understand. I am stupid and dumb.
 ║ Click on top right corner and press leave.
