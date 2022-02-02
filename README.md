@@ -11,11 +11,48 @@
 * ꜱᴏ ᴍᴀɴʏ ᴄᴏᴍᴍᴀɴᴅꜱ ᴛʜᴀᴛ ᴡɪʟʟ ʙʟᴏᴡ ᴜᴘ ᴛʜᴇ ᴇᴠᴇʀʏ-ᴅᴀʏ ᴜꜱᴇ ᴏꜰ ʙᴏʀɪɴɢ ᴡʜᴀᴛꜱᴀᴘᴘ.
 * ꜱᴀᴋᴜʀᴀ ɪꜱ ᴡʀɪᴛᴛᴇɴ ɪɴ [ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ & ᴘʏᴛʜᴏɴ] ᴀɴᴅ ɪꜱ ʙʏ ꜰᴀʀ ᴛʜᴇ ᴏɴᴇ ᴏꜰ ᴍᴏꜱᴛ ᴀᴅᴠᴀɴᴄᴇ ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ.
 
-╔═══════ ★ 𝐒𝐲𝐦𝐥𝐢𝐧𝐤 𝐈𝐧𝐟𝐨𝐬
-║シ︎ ⚙️𝐄𝐧𝐠𝐢𝐧𝐞: ⋊ʀʏᴏ
-║シ︎ 💻𝐏𝐥𝐚𝐭𝐅𝐨𝐫𝐦: python:latest (linux)
-║シ︎ 🛰️𝐋𝐚𝐭𝐞𝐧𝐜𝐲: max 0.0098ms
-║シ︎ 🎮𝐑𝐀𝐌: 60gb/User-Bot (if heroku)
+╔════◇⚡ 𝐅𝐫𝐞𝐪𝐮𝐞𝐧𝐭𝐥𝐲 𝐀𝐬𝐤𝐞𝐝 𝐐𝐮𝐞𝐬𝐭𝐢𝐨𝐧𝐬
+║
+║ 1. What is the reason/topic for this group?
+║ _Sakura is an Advance Whatsapp User-Bot. You Can Use The Bot in this group or in your respective groups._
+║
+║ 2. How Do I add Sakura In My Group?
+║   -Send Your Group Link In: _${_𝔏𝔞𝔟_.HASHREQ}
+║   -Tag any in that group and ask them to use /join command.
+║   -Remember No commands will work in that group!
+║   -Your Group Should Have 10 members atleast.
+║   -Turn Disappearing Message Off in your Gc.
+║
+║ 3. I want to know how to deploy Sakura.
+║ _Not Allowed anymore!_
+║
+║ 4. Please Help Me Out With The Commands.
+║ _You can find all commands in the /menu and their respective category in /help.
+║
+║ 5. I do not want to understand. I am stupid and dumb.
+║ Click on top right corner and press leave.
+║
+║ 6. Can i send any link?
+║ Allowed Links: YouTube. Anything else = bot will kick you.
+║
+║ 7. Who made Sakura?
+║ KrakinzLab
+║
+║ 8. License and Copyright?*
+║ Visit: http://github.com/krakinzlab/sakura
+╚════════════╝
+
+╔════◇💡 𝐀𝐥𝐥 𝐂𝐨𝐦𝐦𝐚𝐧𝐝 𝐂𝐚𝐭𝐞𝐠𝐨𝐫𝐢𝐞𝐬 𝐁𝐫𝐢𝐞𝐟𝐥𝐲 𝐄𝐱𝐩𝐥𝐚𝐢𝐧𝐞𝐝
+║
+║ 1. Animemenu = search anime, get anime gifs,get random anime wallpapers.
+║ 2. Checkmenu = tag or reply to someone to check what category they are.
+║ 3. Downloadmenu = download videos and audio files from YouTube,Instagram.
+║ 4. Filtermenu = add custom audio filter to mp4 files.
+║ 5. Gamemenu = play random games on whatsapp.
+║ 6. Searchmenu = surf the internet within whatsapp.
+║ 7. Randommenu = some random stuffs look yourself.
+║ 8. Hentaimenu = not safe for work adult stuffs!
+║ 9. Humanmenu = not safe for work adult stuffs!
 ╚════════════╝
 ```
 
@@ -34,5 +71,3 @@
 - ʀᴇᴍᴇᴍʙᴇʀ ɴᴏ ʜᴇʟᴘ ᴀɴᴅ ᴄᴏᴅᴇꜱ ᴡɪʟʟ ʙᴇ ꜱʜᴀʀᴇᴅ ʙʏ ᴍᴇ ᴀꜱ ʙᴏᴛ ɴᴏᴛ ꜰᴏʀ ᴘᴜʙʟɪᴄꜱ ᴀɴʏᴍᴏʀᴇ
 
 # ☣️[𝕷𝖎𝖈𝖊𝖓𝖘𝖊](LICENSE)
-
-<img align="centre" src="https://i.postimg.cc/4dQvSpCZ/image.gif">
