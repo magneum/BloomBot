@@ -4,7 +4,7 @@
 
 <img align="centre"  height="500" src="https://github.com/Krakinz/Sakura/blob/KrakinzLab/Sakura%E2%98%A3%EF%B8%8FReactor/%D6%86%C7%9F%D3%84%CA%8A%CA%80%C7%9F.png">
 
-```
+```sh
 🍹(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐁𝐨𝐭
 * ɪꜱ ᴀ ᴡʜᴀᴛꜱᴀᴘᴘ ᴍᴜʟᴛɪᴘᴜʀᴘᴏꜱᴇ-ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ ᴍᴏᴅᴇʀᴀᴛɪᴏɴ,ᴀᴜᴛᴏᴍᴀᴛɪᴏɴ ᴀɴᴅ 100+ ᴄᴏᴍᴍᴀɴᴅꜱ!
 * ᴜꜱᴇ ꜱᴀᴋᴜʀᴀ ɪɴ ʙᴏᴛʜ ᴘᴜʙʟɪᴄ-ɢʀᴏᴜᴘꜱ ᴀɴᴅ ᴘʀɪᴠᴀᴛᴇ.
@@ -17,7 +17,7 @@
 ║ _Sakura is an Advance Whatsapp User-Bot. You Can Use The Bot in this group or in your respective groups._
 ║
 ║ 2. How Do I add Sakura In My Group?
-║   -Send Your Group Link In: _${_𝔏𝔞𝔟_.HASHREQ}
+║   -Send Your Group Link In: https://chat.whatsapp.com/EIn3YFShFmkJ3fvAqf2rpn
 ║   -Tag any in that group and ask them to use /join command.
 ║   -Remember No commands will work in that group!
 ║   -Your Group Should Have 10 members atleast.
