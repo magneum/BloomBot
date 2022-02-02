@@ -32,18 +32,19 @@ var MediaUrl = `./Sakura☣️Reactor/ֆǟӄʊʀǟ.png`;
 var MainText = `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 •@${աɦօֆɛռȶɦǟȶռʊʍ}, ${Timers}
 
 ╔════◇💰 𝗚𝗮𝗺𝗲𝘀
-║⬡ *${ᴋᴇɪ}shop*  _visit krakinzlab member store_
-║⬡ *${ᴋᴇɪ}buy*  _buy items from store_
-║⬡ *${ᴋᴇɪ}pay*  _reply to person to pay money_
-║⬡ *${ᴋᴇɪ}hunt*  _catch pokemon in forest_
-║⬡ *${ᴋᴇɪ}zoo*  _make a zoo_
-║⬡ *${ᴋᴇɪ}gamble* _gamble with AI_
-║⬡ *${ᴋᴇɪ}fish*  _Catch A Fish From A Vast Ocean_
-║⬡ *${ᴋᴇɪ}daily*  _Gives You 200 per day_
-║⬡ *${ᴋᴇɪ}work*  _Work to Earn Money_
-║⬡ *${ᴋᴇɪ}balance*  _Shows Current Balance (reply/own)_
-║⬡ *${ᴋᴇɪ}bank*  _Shows Current Balance (reply/own)_
-║⬡ *${ᴋᴇɪ}truthdare*  _get random truth/dare query_
+║
+║• *${ᴋᴇɪ}shop*  _visit krakinzlab member store_
+║• *${ᴋᴇɪ}buy*  _buy items from store_
+║• *${ᴋᴇɪ}pay*  _reply to person to pay money_
+║• *${ᴋᴇɪ}hunt*  _catch pokemon in forest_
+║• *${ᴋᴇɪ}zoo*  _make a zoo_
+║• *${ᴋᴇɪ}gamble* _gamble with AI_
+║• *${ᴋᴇɪ}fish*  _Catch A Fish From A Vast Ocean_
+║• *${ᴋᴇɪ}daily*  _Gives You 200 per day_
+║• *${ᴋᴇɪ}work*  _Work to Earn Money_
+║• *${ᴋᴇɪ}balance*  _Shows Current Balance (reply/own)_
+║• *${ᴋᴇɪ}bank*  _Shows Current Balance (reply/own)_
+║• *${ᴋᴇɪ}truthdare*  _get random truth/dare query_
 ╚════════════╝`;
 return Sakura_Buttons.MIB(
 ӄʀǟӄɨռʐ,

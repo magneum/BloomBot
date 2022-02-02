@@ -32,16 +32,17 @@ var MediaUrl = `./Sakura☣️Reactor/ֆǟӄʊʀǟ.png`;
 var MainText = `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 •@${աɦօֆɛռȶɦǟȶռʊʍ}, ${Timers}
 
 ╔════◇🐙 𝐊𝐢𝐧𝐠/𝐎𝐰𝐧𝐞𝐫
-║⬡ *${ᴋᴇɪ}join*  _join any valid group_
-║⬡ *${ᴋᴇɪ}dyno*  _check heroku usage_
-║⬡ *${ᴋᴇɪ}ban*  _ban bot in group/user_
-║⬡ *${ᴋᴇɪ}unban*  _unban bot in group/user_
-║⬡ *${ᴋᴇɪ}reboot*  _reboot sakura server_
-║⬡ *${ᴋᴇɪ}bugreport*  _ꜱᴇɴᴅ bug report to devs._
-║⬡ *${ᴋᴇɪ}leave*  _leave groups with/without sending text._
-║⬡ *${ᴋᴇɪ}spam*  _spam messsage in group/private_
-║⬡ *${ᴋᴇɪ}help*  _basic help command_
-║⬡ *${ᴋᴇɪ}sakura*  _check sakura system health config_
+║
+║• *${ᴋᴇɪ}join*  _join any valid group_
+║• *${ᴋᴇɪ}dyno*  _check heroku usage_
+║• *${ᴋᴇɪ}ban*  _ban bot in group/user_
+║• *${ᴋᴇɪ}unban*  _unban bot in group/user_
+║• *${ᴋᴇɪ}reboot*  _reboot sakura server_
+║• *${ᴋᴇɪ}bugreport*  _ꜱᴇɴᴅ bug report to devs._
+║• *${ᴋᴇɪ}leave*  _leave groups with/without sending text._
+║• *${ᴋᴇɪ}spam*  _spam messsage in group/private_
+║• *${ᴋᴇɪ}help*  _basic help command_
+║• *${ᴋᴇɪ}sakura*  _check sakura system health config_
 ╚════════════╝`;
 return Sakura_Buttons.MIB(
 ӄʀǟӄɨռʐ,
