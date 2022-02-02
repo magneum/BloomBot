@@ -6,17 +6,12 @@
 const Sakura_Buttons = require(`../../Sakura🛰️Server/Sakura_Buttons`);
 const Sakura_Static = require(`../../Sakura🛰️Server/Sakura_Static`);
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
-const { YouTube_Video } = require(`../../Sakura🛰️Server/youmaker`);
-const cleanRF = require(`../../Sakura🛰️Server/cleanRF`);
+const FFmpegVideo = require(`../../Sakura🛰️Server/FFmpegVideo`);
 const _𝔏𝔞𝔟_ = require(`../../Sakura🛰️Server/_𝔏𝔞𝔟_`);
 const ꜰᴜᴄᴋ = require(`../../Sakura🛰️Server/oShit`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
-const vers = require(`../../package.json`);
-const ffmpeg = require(`fluent-ffmpeg`);
-const readline = require(`readline`);
 const yts = require(`yt-search`);
-const axios = require(`axios`);
 const fs = require(`fs`);
 var path = require(`path`);
 var scriptName = path.basename(__filename);
@@ -255,7 +250,7 @@ chat,
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
 const GroupVideos = LinkForGroups.videos.slice(0, 1);
 GroupVideos.forEach(async function (Found) {
-if (Found.seconds > `1200`) {
+if (Found.seconds > `900`) {
 userBadge.Limits = userBadge.Limits + 1;
 await userBadge
 .save()
@@ -273,24 +268,15 @@ chat,
 ╚════════════╝`,
 Found.thumbnail
 );
-}
-`|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-Sakura_Buttons.MTB(
+} else {
+await FFmpegVideo.FFmpegVideo(
 ӄʀǟӄɨռʐ,
-chat,
 ֆǟӄʊʀǟ,
-`🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ}, 𝗣𝗹𝗲𝗮𝘀𝗲 𝘄𝗮𝗶𝘁 𝗳𝗼𝗿 𝘁𝗵𝗲 𝗱𝗲𝗹𝗶𝘃𝗲𝗿𝘆 𝗼𝗳 🎬𝐕𝐢𝐝𝐞𝐨!`
+chat,
+Found,
+userBadge
 );
-`|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-YouTube_Video(Found.url).then((res) => {
-const { dl_link, thumb, title, filesizeF, filesize } = res;
-return axios
-.get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
-.then(async (AxioData) => {
-return await FFMPEG_GOT(AxioData.data, title, Found);
-});
-});
-`|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+}
 });
 }
 );

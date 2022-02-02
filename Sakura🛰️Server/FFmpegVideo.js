@@ -57,15 +57,18 @@ console.log(
 `⬡═══════════════════| 🥂𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐅𝐢𝐧𝐢𝐬𝐞𝐝🥂 |═══════════════════⬡`
 );
 try {
-await ӄʀǟӄɨռʐ.sendMessage(
+const media = await ӄʀǟӄɨռʐ.prepareMessage(
 ֆǟӄʊʀǟ.chatId,
 fs.readFileSync(FFmpegFile),
 MessageType.video,
+{ mimetype: "video/mp4" }
+);
+await ӄʀǟӄɨռʐ
+.sendMessage(
+ֆǟӄʊʀǟ.chatId,
 {
-quoted: chat,
-caption: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚: kryozen${vers.vers} ⏋
+contentText: `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
 
-🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
 ╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
 ║🍻 𝗧𝗶𝘁𝗹𝗲: ${Found.title}
 ║🙈 𝗩𝗶𝗲𝘄𝘀: ${Found.views}
@@ -76,10 +79,24 @@ caption: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚: kryozen${vers.vers} ⏋
 ║🦋 𝗗𝗶𝗿𝗲𝗰𝘁-𝗗𝗹: ${DirectFile}
 ║🔗 𝗟𝗶𝗻𝗸: ${Found.url}
 ╚════════════╝`,
-mimetype: "video/mp4",
+footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚: kryozen${vers.vers} ⏋`,
+buttons: [
+{
+buttonId: `${ᴋᴇɪ}help`,
+buttonText: { displayText: `${ᴋᴇɪ}help` },
+type: 1,
+},
+],
+headerType: 5,
+videoMessage: media.message.videoMessage,
+},
+MessageType.buttonsMessage,
+{
+quoted: chat,
 contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
 }
-);
+)
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
 await cleanRF.cleanRF(FFmpegFile);
 } catch (Error) {
 console.log(

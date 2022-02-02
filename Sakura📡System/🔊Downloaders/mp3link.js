@@ -6,16 +6,12 @@
 const Sakura_Buttons = require(`../../Sakura🛰️Server/Sakura_Buttons`);
 const Sakura_Static = require(`../../Sakura🛰️Server/Sakura_Static`);
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
-const { YouTube_Music } = require(`../../Sakura🛰️Server/youmaker`);
-const cleanRF = require(`../../Sakura🛰️Server/cleanRF`);
+const FFmpegAudio = require(`../../Sakura🛰️Server/FFmpegAudio`);
 const _𝔏𝔞𝔟_ = require(`../../Sakura🛰️Server/_𝔏𝔞𝔟_`);
 const ꜰᴜᴄᴋ = require(`../../Sakura🛰️Server/oShit`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
-const ffmpeg = require(`fluent-ffmpeg`);
-const readline = require(`readline`);
 const yts = require(`yt-search`);
-const axios = require(`axios`);
 const fs = require(`fs`);
 var path = require(`path`);
 var scriptName = path.basename(__filename);
@@ -246,37 +242,15 @@ chat,
 ╚════════════╝`,
 Found.thumbnail
 );
-}
-`|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-Sakura_Buttons.MIB(
+} else {
+await FFmpegAudio.FFmpegAudio(
 ӄʀǟӄɨռʐ,
-chat,
 ֆǟӄʊʀǟ,
-`🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
-╔════◇ 𝗣𝗹𝗲𝗮𝘀𝗲 𝘄𝗮𝗶𝘁!
-║⭕ 𝗙𝗶𝗹𝗲𝗧𝘆𝗽𝗲: _Audio_
-║⏰ 𝗪𝗮𝗶𝘁𝗧𝗶𝗺𝗲: _Depends on Length of file._
-╚════════════╝
-
-╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
-║🍻 𝐓𝐢𝐭𝐥𝐞: ${Found.title}
-║🙈 𝐕𝐢𝐞𝐰𝐬: ${Found.views}
-║⏰ 𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧: ${Found.timestamp}
-║✒️ 𝐀𝐮𝐭𝐡𝐨𝐫: ${Found.author.name}
-║📜 𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${Found.description}
-╚════════════╝`,
-Found.thumbnail
+chat,
+Found,
+userBadge
 );
-`|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-YouTube_Music(Found.url).then((res) => {
-const { y2mate } = res;
-return axios
-.get(`https://tinyurl.com/api-create.php?url=${y2mate}`)
-.then(async (AxioData) => {
-return await FFMPEG_GOT(AxioData.data, title);
-});
-});
-`|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+}
 });
 }
 );
