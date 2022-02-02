@@ -2,6 +2,14 @@
   "name": "sakura",
   "vers": "v7.6",
   "verold": "v7.5",
+  "depecrated": false,
+  "directories": {
+    "Sakura☕Shop": "Sakura☕Shop",
+    "Sakura☣️Reactor": "Sakura☣️Reactor",
+    "Sakura🍃Goose": "Sakura🍃Goose",
+    "Sakura📡System": "Sakura📡System",
+    "Sakura🛰️Server": "Sakura🛰️Server"
+  },
   "keywords": [
     "whatsapp",
     "js-whatsapp",
@@ -13,12 +21,21 @@
     "automation"
   ],
   "description": "(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!",
-  "main": "python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py",
   "scripts": {
     "test": "echo \"(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭-No test specified\" && exit 1",
-    "start": "python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py"
+    "start": "npx nodemon"
   },
-  "author": "KrakinzLab",
+  "homepage": "https://github.com/Nurutomo/Sakura",
+  "author": {
+    "name": "KrakinzLab"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Krakinz/Sakura.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Nurutomo/Sakura/issues"
+  },
   "license": "Apache",
   "dependencies": {
     "@cicciosgamino/openweather-apis": "^5.0.1",
