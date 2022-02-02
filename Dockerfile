@@ -18,13 +18,18 @@ RUN npm install --global n
 RUN n install 16 
 RUN path=path 
 RUN hash -r 
-WORKDIR /
-COPY . /Sakura
+RUN path=path 
+RUN hash -r 
+RUN git clone https://github.com/Krakinz/Sakura.git 
+RUN cd Sakura
 WORKDIR /Sakura
-RUN git init --initial-branch=KrakinzLab
-RUN git remote add origin https://github.com/Krakinz/Sakura.git
-RUN git fetch origin KrakinzLab
-RUN git reset --hard origin/KrakinzLab
+# WORKDIR /
+# COPY . /Sakura
+# WORKDIR /Sakura
+# RUN git init --initial-branch=KrakinzLab
+# RUN git remote add origin https://github.com/Krakinz/Sakura.git
+# RUN git fetch origin KrakinzLab
+# RUN git reset --hard origin/KrakinzLab
 RUN pip install -r Sakura☣️Reactor/ӄʀǟӄɨռʐ🐙ʟǟɮ.txt 
 RUN npm install --force
 RUN npm test
