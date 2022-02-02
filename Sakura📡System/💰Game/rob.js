@@ -336,8 +336,11 @@ chat,
 );
 }
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-if (Victim.padlock === 1) {
-Victim.padlock = 0;
+if (
+VVictim.padlock > 0 &&
+Victim.padlock < 2
+) {
+Victim.padlock = Victim.padlock - 1;
 CulpritEconomy.money =
 CulpritEconomy.money - PadLockRem;
 Culprit.CurrentRobberyTime = Date.now();
@@ -376,8 +379,11 @@ chat,
 );
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
 }
-if (Victim.sword === 1) {
-Victim.sword = 0;
+if (
+Victim.sword > 0 &&
+Victim.sword < 2
+) {
+Victim.sword = Victim.sword - 1;
 CulpritEconomy.money =
 CulpritEconomy.money - swordRem;
 Culprit.CurrentRobberyTime = Date.now();
@@ -416,8 +422,11 @@ chat,
 );
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
 }
-if (Victim.laptop === 1) {
-Victim.laptop = 0;
+if (
+Victim.laptop > 0 &&
+Victim.laptop < 2
+) {
+Victim.laptop = Victim.laptop - 1;
 CulpritEconomy.money =
 CulpritEconomy.money - LaptopRem;
 Culprit.CurrentRobberyTime = Date.now();
@@ -454,8 +463,11 @@ chat,
 ║💰 𝗧𝗼𝘁𝗮𝗹 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _${CulpritEconomy.money}gold_
 ╚════════════╝`
 );
-} else if (Victim.charm === 1) {
-Victim.charm = 0;
+} else if (
+Victim.charm > 0 &&
+Victim.charm < 2
+) {
+Victim.charm = Victim.charm - 1;
 CulpritEconomy.money =
 CulpritEconomy.money - charmRem;
 Culprit.CurrentRobberyTime = Date.now();
