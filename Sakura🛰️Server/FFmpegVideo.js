@@ -3,7 +3,7 @@
 `|        (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!            |`;
 `|                                                                                                                        |`;
 `|⬡════════════════════════════════════════════|                            |═══════════════════════════════════════════⬡|`;
-const { MessageType } = require(`@adiwajshing/baileys`);
+const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const Sakura_Buttons = require(`./Sakura_Buttons`);
 const vers = require(`../package.json`);
 const cleanRF = require(`./cleanRF`);
@@ -25,9 +25,9 @@ exports.FFmpegVideo = async (ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat, Found, userBadg
   try {
     var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
     const defaultnm = ֆǟӄʊʀǟ.commandName;
+    var FFmpegFile = `${Date.now()}.mp4`;
     var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
     const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
-    var FFmpegFile = `./Sakura☕Shop/${Date.now().toString()}_${աɦօֆɛռȶɦǟȶ.toString()}.mp4`;
     `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
     await Sakura_Buttons.MTB(
       ӄʀǟӄɨռʐ,
@@ -41,38 +41,38 @@ exports.FFmpegVideo = async (ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat, Found, userBadg
 ╚════════════╝`
     );
     `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-    const video = ytdl(Found.url, { quality: "lowestvideo", format: "mp4" });
+    const video = ytdl(Found.url, { quality: "highest", format: "mp4" });
     let starttime;
     video.pipe(fs.createWriteStream(FFmpegFile));
     video.once("response", () => {
       starttime = Date.now();
     });
-    video.on("progress", (chunkLength, downloaded, total) => {
-      const percent = downloaded / total;
-      const downloadedMinutes = (Date.now() - starttime) / 1000 / 60;
-      const estimatedDownloadTime =
-        downloadedMinutes / percent - downloadedMinutes;
-      readline.cursorTo(process.stdout, 0);
-      process.stdout.write(`${(percent * 100).toFixed(2)}% downloaded `);
-      process.stdout.write(
-        `(${(downloaded / 1024 / 1024).toFixed(2)}MB of ${(
-          total /
-          1024 /
-          1024
-        ).toFixed(2)}MB)\n`
-      );
-      process.stdout.write(
-        `running for: ${downloadedMinutes.toFixed(2)}minutes`
-      );
-      process.stdout.write(
-        `, estimated time left: ${estimatedDownloadTime.toFixed(2)}minutes `
-      );
-      readline.moveCursor(process.stdout, 0, -1);
-    });
+    // video.on("progress", (chunkLength, downloaded, total) => {
+    //   const percent = downloaded / total;
+    //   const downloadedMinutes = (Date.now() - starttime) / 1000 / 60;
+    //   const estimatedDownloadTime =
+    //     downloadedMinutes / percent - downloadedMinutes;
+    //   readline.cursorTo(process.stdout, 0);
+    //   process.stdout.write(`${(percent * 100).toFixed(2)}% downloaded `);
+    //   process.stdout.write(
+    //     `(${(downloaded / 1024 / 1024).toFixed(2)}MB of ${(
+    //       total /
+    //       1024 /
+    //       1024
+    //     ).toFixed(2)}MB)\n`
+    //   );
+    //   process.stdout.write(
+    //     `running for: ${downloadedMinutes.toFixed(2)}minutes`
+    //   );
+    //   process.stdout.write(
+    //     `, estimated time left: ${estimatedDownloadTime.toFixed(2)}minutes `
+    //   );
+    //   readline.moveCursor(process.stdout, 0, -1);
+    // });
     video.on("end", async () => {
       process.stdout.write("\n\n");
-      await ӄʀǟӄɨռʐ
-        .sendMessage(
+      try {
+        await ӄʀǟӄɨռʐ.sendMessage(
           ֆǟӄʊʀǟ.chatId,
           fs.readFileSync(FFmpegFile),
           MessageType.video,
@@ -88,17 +88,24 @@ exports.FFmpegVideo = async (ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat, Found, userBadg
 ║✒️ 𝗔𝘂𝘁𝗵𝗼𝗿: ${Found.author.name}
 ║✒️ 𝗥𝗲𝗹𝗲𝗮𝘀𝗲𝗱: ${Found.ago}
 ║📜 𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${Found.description}
-║🦋 𝗗𝗶𝗿𝗲𝗰𝘁-𝗗𝗹: ${DirectFile}
 ║🔗 𝗟𝗶𝗻𝗸: ${Found.url}
 ╚════════════╝`,
             mimetype: "video/mp4",
+            contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
           }
-        )
-        .then(cleanRF.cleanRF(FFmpegFile))
-        .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-      return;
+        );
+        await cleanRF.cleanRF(FFmpegFile);
+      } catch (Error) {
+        console.log(
+          `⬡═══════════════════| 🔺𝐅𝐅𝐦𝐩𝐞𝐠 𝐄𝐫𝐫𝐨𝐫🔺 |═══════════════════⬡` + Error
+        );
+        userBadge.Limits = userBadge.Limits + 1;
+        await userBadge
+          .save()
+          .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+        return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
+      }
     });
-    `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
   } catch (Error) {
     console.log(
       `⬡═══════════════════| 🔺𝐅𝐅𝐦𝐩𝐞𝐠 𝐄𝐫𝐫𝐨𝐫🔺 |═══════════════════⬡` + Error
