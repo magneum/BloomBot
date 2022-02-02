@@ -57,7 +57,7 @@ Badge: `🧵ʙᴀꜱɪᴄ-10ᴄᴏᴍᴍᴀɴᴅꜱ`,
 value: `True`,
 Limits: 10,
 CurrentLimitTime: Date.now(),
-PermanentLimitTime: 86400000,
+PermanentLimitTime: 43200000
 });
 await newUser
 .save()
