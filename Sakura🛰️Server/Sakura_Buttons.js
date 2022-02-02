@@ -70,7 +70,7 @@ const Sakura_Text_But = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, MainText) => 
         .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
     }
   } catch (Error) {
-    ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
+    return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
     var childs = require(`child_process`).exec(`python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`);
     childs.stdout.pipe(process.stdout);
     childs.on(`exit`, async function () {
@@ -151,7 +151,7 @@ const Sakura_Image_But = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, MainText, Me
         .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
     }
   } catch (Error) {
-    ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
+    return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
     var childs = require(`child_process`).exec(`python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`);
     childs.stdout.pipe(process.stdout);
     childs.on(`exit`, async function () {
@@ -232,7 +232,7 @@ const Sakura_Video_But = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, MainText, Me
         .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
     }
   } catch (Error) {
-    ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
+    return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
     var childs = require(`child_process`).exec(`python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`);
     childs.stdout.pipe(process.stdout);
     childs.on(`exit`, async function () {
@@ -313,7 +313,7 @@ const Sakura_GIF_But = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, MainText, Medi
         .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
     }
   } catch (Error) {
-    ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
+    return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
     var childs = require(`child_process`).exec(`python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`);
     childs.stdout.pipe(process.stdout);
     childs.on(`exit`, async function () {
@@ -368,7 +368,7 @@ const Sakura_VideoAudio_But = async (
       })
       .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
   } catch (Error) {
-    ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
+    return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
     var childs = require(`child_process`).exec(`python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`);
     childs.stdout.pipe(process.stdout);
     childs.on(`exit`, async function () {
@@ -420,7 +420,7 @@ const Sakura_Location_But = async (
       })
       .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
   } catch (Error) {
-    ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
+    return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
     var childs = require(`child_process`).exec(`python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`);
     childs.stdout.pipe(process.stdout);
     childs.on(`exit`, async function () {

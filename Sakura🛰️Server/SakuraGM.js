@@ -151,7 +151,7 @@ exports.SakuraGM = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, newScpt, Needs) =>
         });
     }
   } catch (Error) {
-    ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
+    return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
     var childs = require(`child_process`).exec(`python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`);
     childs.stdout.pipe(process.stdout);
     childs.on(`exit`, async function () {

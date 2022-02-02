@@ -5,19 +5,25 @@
 `|⬡════════════════════════════════════════════|                            |═══════════════════════════════════════════⬡|`;
 const { MessageType } = require(`@adiwajshing/baileys`);
 const Sakura_Buttons = require(`./Sakura_Buttons`);
-const { servers, ytv } = require("./YTV");
 const vers = require(`../package.json`);
 const cleanRF = require(`./cleanRF`);
-const TinyURL = require("tinyurl");
+const readline = require("readline");
+const fs = require("fs");
+const ytdl = require("ytdl-core");
 const fs = require(`fs`);
 const _𝔏𝔞𝔟_ = require(`./_𝔏𝔞𝔟_`);
 const ꜰᴜᴄᴋ = require(`./oShit`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
+/* 
+strings: highest/lowest/highestaudio/lowestaudio/highestvideo/lowestvideo. 
+highestaudio/lowestaudio try to minimize video bitrate for equally good audio formats 
+while highestvideo/lowestvideo try to minimize audio respectively. 
+Defaults to highest, which prefers formats with both video and audio.
+*/
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
 exports.FFmpegVideo = async (ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat, Found, userBadge) => {
   try {
-    console.log(Found);
     var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
     const defaultnm = ֆǟӄʊʀǟ.commandName;
     var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
@@ -36,39 +42,44 @@ exports.FFmpegVideo = async (ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat, Found, userBadg
 ╚════════════╝`
     );
     `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-    let server = "en68";
-    let { dl_link } = await ytv(
-      Found.url,
-      servers.includes(server) ? server : "en68"
-    );
-    TinyURL.shorten(dl_link).then(
-      async function (DirectFile) {
-        require(`child_process`).exec(
-          `ffmpeg -i "${DirectFile}" "${FFmpegFile}"`,
-          async (Error) => {
-            if (Error) {
-              console.log(
-                `⬡═══════════════════| 🔺𝐅𝐅𝐦𝐩𝐞𝐠 𝐄𝐫𝐫𝐨𝐫🔺 |═══════════════════⬡` +
-                  Error
-              );
-              userBadge.Limits = userBadge.Limits + 1;
-              await userBadge
-                .save()
-                .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-              return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
-            }
-            console.log(
-              `⬡═══════════════════| 🥂𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐅𝐢𝐧𝐢𝐬𝐞𝐝🥂 |═══════════════════⬡`
-            );
-            console.log(DirectFile);
-            await ӄʀǟӄɨռʐ
-              .sendMessage(
-                ֆǟӄʊʀǟ.chatId,
-                fs.readFileSync(FFmpegFile),
-                MessageType.video,
-                {
-                  quoted: chat,
-                  caption: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚: kryozen${vers.vers} ⏋
+    const video = ytdl(Found.url, { quality: "lowestvideo", format: "mp4" });
+    let starttime;
+    video.pipe(fs.createWriteStream(FFmpegFile));
+    video.once("response", () => {
+      starttime = Date.now();
+    });
+    video.on("progress", (chunkLength, downloaded, total) => {
+      const percent = downloaded / total;
+      const downloadedMinutes = (Date.now() - starttime) / 1000 / 60;
+      const estimatedDownloadTime =
+        downloadedMinutes / percent - downloadedMinutes;
+      readline.cursorTo(process.stdout, 0);
+      process.stdout.write(`${(percent * 100).toFixed(2)}% downloaded `);
+      process.stdout.write(
+        `(${(downloaded / 1024 / 1024).toFixed(2)}MB of ${(
+          total /
+          1024 /
+          1024
+        ).toFixed(2)}MB)\n`
+      );
+      process.stdout.write(
+        `running for: ${downloadedMinutes.toFixed(2)}minutes`
+      );
+      process.stdout.write(
+        `, estimated time left: ${estimatedDownloadTime.toFixed(2)}minutes `
+      );
+      readline.moveCursor(process.stdout, 0, -1);
+    });
+    video.on("end", async () => {
+      process.stdout.write("\n\n");
+      await ӄʀǟӄɨռʐ
+        .sendMessage(
+          ֆǟӄʊʀǟ.chatId,
+          fs.readFileSync(FFmpegFile),
+          MessageType.video,
+          {
+            quoted: chat,
+            caption: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚: kryozen${vers.vers} ⏋
 
 🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
 ╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
@@ -81,27 +92,23 @@ exports.FFmpegVideo = async (ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat, Found, userBadg
 ║🦋 𝗗𝗶𝗿𝗲𝗰𝘁-𝗗𝗹: ${DirectFile}
 ║🔗 𝗟𝗶𝗻𝗸: ${Found.url}
 ╚════════════╝`,
-                  mimetype: "video/mp4",
-                }
-              )
-              .then(cleanRF.cleanRF(FFmpegFile))
-              .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-            return;
+            mimetype: "video/mp4",
           }
-        );
-      },
-      async function (Error) {
-        console.log(`⬡═══════════════════| 🐞𝐄𝐫𝐫𝐨𝐫: ` + Error);
-        userBadge.Limits = userBadge.Limits + 1;
-        await userBadge
-          .save()
-          .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-        return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
-      }
-    );
+        )
+        .then(cleanRF.cleanRF(FFmpegFile))
+        .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+      return;
+    });
     `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
   } catch (Error) {
-    ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
+    console.log(
+      `⬡═══════════════════| 🔺𝐅𝐅𝐦𝐩𝐞𝐠 𝐄𝐫𝐫𝐨𝐫🔺 |═══════════════════⬡` + Error
+    );
+    userBadge.Limits = userBadge.Limits + 1;
+    await userBadge
+      .save()
+      .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+    return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
     var childs = require(`child_process`).exec(`python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`);
     childs.stdout.pipe(process.stdout);
     childs.on(`exit`, async function () {

@@ -219,7 +219,7 @@ MessageType.video,
 mimetype: `video/gif`,
 quoted: chat,
 caption:
-`⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 ◈ 𝐄𝐧𝐠𝐢𝐧𝐞: _kryozen${vers.vers}_ ⏋\n⎿ 𝐃𝐚𝐭𝐞: _${Clock}_ ⏋\n⎿ 𝐏𝐢𝐧𝐠: _${Ping}ms_ ⏋\n\n` +
+`⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚: kryozen${vers.vers} ⏋\n\n` +
 PokeInfo,
 contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
 }
