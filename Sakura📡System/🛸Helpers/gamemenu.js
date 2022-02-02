@@ -42,6 +42,7 @@ var MainText = `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 •@${աɦօֆɛռȶɦ�
 ║• *${ᴋᴇɪ}fish*  _Catch A Fish From A Vast Ocean_
 ║• *${ᴋᴇɪ}daily*  _Gives You 200 per day_
 ║• *${ᴋᴇɪ}work*  _Work to Earn Money_
+║• *${ᴋᴇɪ}rob*  _rob someone_
 ║• *${ᴋᴇɪ}balance*  _Shows Current Balance (reply/own)_
 ║• *${ᴋᴇɪ}bank*  _Shows Current Balance (reply/own)_
 ║• *${ᴋᴇɪ}truthdare*  _get random truth/dare query_
