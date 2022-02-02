@@ -340,6 +340,8 @@ module.exports = {
                                         Victim.padlock > 0 &&
                                         Victim.padlock < 2
                                       ) {
+                                        VictimEconomy.money =
+                                          VictimEconomy.money + MoneyRobbed;
                                         Victim.padlock = Victim.padlock - 1;
                                         CulpritEconomy.money =
                                           CulpritEconomy.money - PadLockRem;
@@ -383,6 +385,8 @@ module.exports = {
                                         Victim.sword > 0 &&
                                         Victim.sword < 2
                                       ) {
+                                        VictimEconomy.money =
+                                          VictimEconomy.money + MoneyRobbed;
                                         Victim.sword = Victim.sword - 1;
                                         CulpritEconomy.money =
                                           CulpritEconomy.money - swordRem;
@@ -426,6 +430,8 @@ module.exports = {
                                         Victim.laptop > 0 &&
                                         Victim.laptop < 2
                                       ) {
+                                        VictimEconomy.money =
+                                          VictimEconomy.money + MoneyRobbed;
                                         Victim.laptop = Victim.laptop - 1;
                                         CulpritEconomy.money =
                                           CulpritEconomy.money - LaptopRem;
@@ -467,6 +473,8 @@ module.exports = {
                                         Victim.charm > 0 &&
                                         Victim.charm < 2
                                       ) {
+                                        VictimEconomy.money =
+                                          VictimEconomy.money + MoneyRobbed;
                                         Victim.charm = Victim.charm - 1;
                                         CulpritEconomy.money =
                                           CulpritEconomy.money - charmRem;
