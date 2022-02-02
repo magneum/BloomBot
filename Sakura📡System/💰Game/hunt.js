@@ -182,7 +182,7 @@ contentText: `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռ
 ║◇ *Abilities:* ${PokemonData.abilities}
 ║◇ *Base Exp:* ${PokemonData.base_experience}
 ║◇ *Gender:* ${PokemonData.gender}
-║◇ *Worth:* ${Worth}coins
+║◇ *Worth:* ${Worth}gold
 ╚════════════╝
 
 𝐁𝐮𝐭𝐭𝐨𝐧 𝐓𝐨 𝐋𝐞𝐚𝐫𝐧 𝐌𝐨𝐫𝐞👇🏻

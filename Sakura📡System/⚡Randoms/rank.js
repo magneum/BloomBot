@@ -99,7 +99,7 @@ caption: `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ
 ║🎪 𝗚𝗿𝗼𝘂𝗽: ${groupDataRank.subject}
 ╚════════════╝
 
-◇ *The More You Talk, The More Xp+Coins You Gain.You Can Spend The Coins in ${ᴋᴇɪ}shop!*`,
+◇ *The More You Talk, The More Xp+Gold You Gain.You Can Spend The gold in ${ᴋᴇɪ}shop!*`,
 }
 )
 .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));

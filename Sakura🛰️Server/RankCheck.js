@@ -298,11 +298,11 @@ contentText: `✨𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬 @${աɦօֆɛռȶɦǟȶռʊʍ}
 ┊  𝐒𝐚𝐤𝐮𝐫𝐚💵𝐁𝐚𝐧𝐤
 ╚◇║
 ╔◇║
-║🛵𝗕𝗼𝗻𝘂𝘀: _${Bonus}coins_
-║🪙 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _${userEco.money}coins_
+║🛵𝗕𝗼𝗻𝘂𝘀: _${Bonus}gold_
+║🪙 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _${userEco.money}gold_
 ╚════════════╝
 
-◇ *The More You Talk, The More Xp+Coins You Gain.You Can Spend The Coins in ${ᴋᴇɪ}shop!*
+◇ *The More You Talk, The More Xp+Gold You Gain.You Can Spend The gold in ${ᴋᴇɪ}shop!*
 
 `,
 footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐁𝐨𝐭 ⏋\n⎿ 𝐄𝐧𝐠𝐢𝐧𝐞: _kryozenV${vers.vers}_ ⏋`,
