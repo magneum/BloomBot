@@ -225,7 +225,7 @@ if (Error) return console.log(Error);
 if (!userEco) {
 var newUser = new Economy({
 ID: աɦօֆɛռȶɦǟȶ,
-money: 200,
+money: 1000,
 daily: 0,
 timeout: 86400000,
 fishdone: 0,
