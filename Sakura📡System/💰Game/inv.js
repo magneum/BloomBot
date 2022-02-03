@@ -42,7 +42,8 @@ chat,
 
 ╔════◇🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧 
 ║💡 _This Command is Only For Groups!_
-╚════════════╝`
+╚════════════╝`,
+Needs
 );
 }
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
@@ -81,7 +82,8 @@ chat,
 ║🤖 *User Added To Database For First Time!*
 ║🦋 _Try ${ᴋᴇɪ}${defaultnm} Again!_
 ╚════════════╝`,
-`./Sakura☣️Reactor/Sakura_Mongo.png`
+`./Sakura☣️Reactor/Sakura_Mongo.png`,
+Needs
 );
 } else {
 return Sakura_Buttons.MIB(
@@ -101,7 +103,8 @@ chat,
 ║💻 *laptop:* _${userRob.laptop}_
 ║🔮 *charm:* _${userRob.charm}_
 ╚════════════╝`,
-`./Sakura☣️Reactor/sakura_bank.png`
+`./Sakura☣️Reactor/sakura_bank.png`,
+Needs
 );
 }
 }
@@ -136,7 +139,8 @@ chat,
 ║🤖 *User Added To Database For First Time!*
 ║🦋 _Try ${ᴋᴇɪ}${defaultnm} Again!_
 ╚════════════╝`,
-`./Sakura☣️Reactor/Sakura_Mongo.png`
+`./Sakura☣️Reactor/Sakura_Mongo.png`,
+Needs
 );
 } else {
 return Sakura_Buttons.MIB(
@@ -156,7 +160,8 @@ chat,
 ║💻 *laptop:* _${userRob.laptop}_
 ║🔮 *charm:* _${userRob.charm}_
 ╚════════════╝`,
-`./Sakura☣️Reactor/sakura_bank.png`
+`./Sakura☣️Reactor/sakura_bank.png`,
+Needs
 );
 }
 }

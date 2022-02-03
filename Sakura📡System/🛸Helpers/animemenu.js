@@ -107,7 +107,8 @@ chat,
 ║• *${ᴋᴇɪ}thumbsup*  _@tag or reply_
 ║• *${ᴋᴇɪ}wag*  _@tag or reply_
 ╚════════════╝`,
-`./Sakura☣️Reactor/ֆǟӄʊʀǟ.png`
+`./Sakura☣️Reactor/ֆǟӄʊʀǟ.png`,
+Needs
 );
 } catch (Error) {
 ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);

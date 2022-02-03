@@ -44,7 +44,8 @@ chat,
 
 ╔════◇🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧 
 ║💡 _This Command is Only For Groups!_
-╚════════════╝`
+╚════════════╝`,
+Needs
 );
 }
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
@@ -81,7 +82,8 @@ chat,
 ║🤖 *User Added To Database For First Time!*
 ║◇ *Type:* _Just Bought A Zoo!_
 ╚════════════╝`,
-`./Sakura☣️Reactor/Sakura_Mongo.png`
+`./Sakura☣️Reactor/Sakura_Mongo.png`,
+Needs
 );
 } else {
 Zoology.findOne(
@@ -111,7 +113,8 @@ chat,
 ╔════◇🌿𝗡𝗮𝗺𝗲: _Amature Zoo Keeper!_
 ║◇ *Type:* _Nothing Found_
 ╚════════════╝`,
-`./Sakura☣️Reactor/Sakura_Zoo.png`
+`./Sakura☣️Reactor/Sakura_Zoo.png`,
+Needs
 );
 } else {
 if (userZoo.zootimeout - (Date.now() - userZoo.zoodone) > 0) {
@@ -130,7 +133,8 @@ chat,
 ║❌ 𝗘𝗿𝗿𝗼𝗿: You've Recently Bought a New Animal. 
 ║🐓 𝗭𝗼𝗼_𝗔𝗴𝗮𝗶𝗻: ${time.minutes}m ${time.seconds}s
 ╚════════════╝`,
-`./Sakura☣️Reactor/Sakura_Zoo.png`
+`./Sakura☣️Reactor/Sakura_Zoo.png`,
+Needs
 );
 } else {
 const zooID = Math.floor(Math.random() * 10) + 1;
@@ -165,7 +169,8 @@ chat,
 ║💵 𝗪𝗼𝗿𝘁𝗵: _People paid you *${worth}* to see._
 ║💍 𝗜𝘁𝗲𝗺 𝗥𝗮𝗿𝗶𝘁𝘆: _${rarity}_
 ╚════════════╝`,
-`./Sakura☣️Reactor/Sakura_Zoo.png`
+`./Sakura☣️Reactor/Sakura_Zoo.png`,
+Needs
 );
 }
 }
