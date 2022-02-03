@@ -31,6 +31,10 @@ name: newScpt,
 ║ _read /ecomenu_
 ║
 ╚═══◇║
+╔═══◇║❓ 𝗛𝗼𝘄 𝗟𝗼𝗻𝗴 𝗜𝘁𝗲𝗺𝘀 𝗟𝗮𝘀𝘁?
+║ _per robbery_
+║
+╚═══◇║
 ╔═══◇║❓ 𝗜 𝗱𝗼𝗻'𝘁 𝗵𝗮𝘃𝗲 𝗮𝗻𝘆 𝘀𝗮𝗳𝗲𝘁𝘆 𝗶𝗻 𝗺𝘆 𝗮𝗰𝗰𝗼𝘂𝗻𝘁! 𝗛𝗼𝘄 𝗺𝘂𝗰𝗵 𝗺𝗼𝗻𝗲𝘆 𝗰𝗮𝗻 𝗯𝗲 𝗿𝗼𝗯𝗯𝗲𝗱?
 ║ _In that case buy using /buy. Max-Money-Robbed when no safety: random(250-500)_
 ║
@@ -40,28 +44,28 @@ name: newScpt,
 ║
 ║🛸 𝗧𝘆𝗽𝗲: _The basic account safe mode. 
 ║🧀 𝗚𝗼𝗹𝗱: _To buy padlock you will need to have 500gold. 
-║⚡ 𝗣𝗲𝗿𝗸𝘀: _If robbery attempt was made on your account, a padlock will save your entire balance and will be automatically deduct random(350-500) from Culprit's account and add it to your account!_
+║⚡ 𝗣𝗲𝗿𝗸𝘀: _If robbery attempt was made on your account, a padlock will save your entire balance and will automatically deduct random(350-500) from Culprit's account and add it to your account!_
 ║
 ╚═══◇║
 ╔═══◇║⚔️ 𝐒𝐰𝐨𝐫𝐝
 ║
 ║🛸 𝗧𝘆𝗽𝗲: _The medium account safe mode. 
 ║🧀 𝗚𝗼𝗹𝗱: _To buy sword you will need to have 1500gold._ 
-║⚡ 𝗣𝗲𝗿𝗸𝘀: _If robbery attempt was made on your account, a sword will save your entire balance and will be automatically deduct random(1000-1500) from Culprit's account and add it to your account!_
+║⚡ 𝗣𝗲𝗿𝗸𝘀: _If robbery attempt was made on your account, a sword will save your entire balance and will automatically deduct random(1000-1500) from Culprit's account and add it to your account!_
 ║
 ╚═══◇║
 ╔═══◇║💻 𝐋𝐚𝐩𝐭𝐨𝐩
 ║
 ║🛸 𝗧𝘆𝗽𝗲: _The hard account safe mode._ 
 ║🧀 𝗚𝗼𝗹𝗱: _To buy laptop you will need to have 2000gold._ 
-║⚡ 𝗣𝗲𝗿𝗸𝘀: _If robbery attempt was made on your account, a laptop will save your entire balance and will be automatically deduct random(1500-2000) from Culprit's account and add it to your account!_
+║⚡ 𝗣𝗲𝗿𝗸𝘀: _If robbery attempt was made on your account, a laptop will save your entire balance and will automatically deduct random(1500-2000) from Culprit's account and add it to your account!_
 ║
 ╚═══◇║
 ╔═══◇║🔮 𝐂𝐡𝐚𝐫𝐦
 ║
 ║🛸 𝗧𝘆𝗽𝗲: _The devil account safe mode._ 
 ║🧀 𝗚𝗼𝗹𝗱: _To buy laptop you will need to have 3000gold._ 
-║⚡ 𝗣𝗲𝗿𝗸𝘀: _If robbery attempt was made on your account, a charm will save your entire balance and will be automatically deduct random(2500-3000) from Culprit's account and add it to your account!_
+║⚡ 𝗣𝗲𝗿𝗸𝘀: _If robbery attempt was made on your account, a charm will save your entire balance and will automatically deduct random(2500-3000) from Culprit's account and add it to your account!_
 ║
 ╚════════════╝`,
 async handle(ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
