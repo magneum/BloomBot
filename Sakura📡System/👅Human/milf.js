@@ -26,7 +26,7 @@ var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
 var defaultnm = ֆǟӄʊʀǟ.commandName;
 var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
 var FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
-if (Needs[0].includes("@")) {
+if (Needs.length > 0 && Needs[0].startsWith("@")) {
 var TagPerson = ֆǟӄʊʀǟ.body.replace(
 ֆǟӄʊʀǟ.body[0] + ֆǟӄʊʀǟ.commandName + " ",
 ""
