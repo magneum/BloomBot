@@ -355,6 +355,26 @@ victim.padlock = victim.padlock - 1;
 vEconomy.money = vEconomy.money + MoRb;
 cEconomy.money = cEconomy.money - MoPl;
 culprit.CurrentRobberyTime = Date.now();
+await victim
+.save()
+.catch((Error) =>
+ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
+);
+await culprit
+.save()
+.catch((Error) =>
+ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
+);
+await vEconomy
+.save()
+.catch((Error) =>
+ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
+);
+await cEconomy
+.save()
+.catch((Error) =>
+ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
+);
 return Sakura_Buttons.MIB(
 ӄʀǟӄɨռʐ,
 chat,
@@ -378,6 +398,26 @@ victim.sword = victim.sword - 1;
 vEconomy.money = vEconomy.money + MoSs;
 cEconomy.money = cEconomy.money - MoSs;
 culprit.CurrentRobberyTime = Date.now();
+await victim
+.save()
+.catch((Error) =>
+ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
+);
+await culprit
+.save()
+.catch((Error) =>
+ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
+);
+await vEconomy
+.save()
+.catch((Error) =>
+ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
+);
+await cEconomy
+.save()
+.catch((Error) =>
+ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
+);
 return Sakura_Buttons.MIB(
 ӄʀǟӄɨռʐ,
 chat,
@@ -402,6 +442,21 @@ vEconomy.money = vEconomy.money + MoLp;
 cEconomy.money = cEconomy.money - MoLp;
 culprit.CurrentRobberyTime = Date.now();
 await victim
+.save()
+.catch((Error) =>
+ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
+);
+await culprit
+.save()
+.catch((Error) =>
+ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
+);
+await vEconomy
+.save()
+.catch((Error) =>
+ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
+);
+await cEconomy
 .save()
 .catch((Error) =>
 ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
@@ -434,6 +489,21 @@ await victim
 .catch((Error) =>
 ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
 );
+await culprit
+.save()
+.catch((Error) =>
+ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
+);
+await vEconomy
+.save()
+.catch((Error) =>
+ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
+);
+await cEconomy
+.save()
+.catch((Error) =>
+ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
+);
 return Sakura_Buttons.MIB(
 ӄʀǟӄɨռʐ,
 chat,
@@ -456,12 +526,12 @@ chat,
 vEconomy.money = vEconomy.money - MoRb;
 cEconomy.money = cEconomy.money + MoRb;
 culprit.CurrentRobberyTime = Date.now();
-await victim
+await vEconomy
 .save()
 .catch((Error) =>
 ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
 );
-await culprit
+await cEconomy
 .save()
 .catch((Error) =>
 ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
