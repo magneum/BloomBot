@@ -36,7 +36,7 @@ module.exports = {
 ║
 ╚═══◇║
 ╔═══◇║❓ 𝗜 𝗱𝗼𝗻'𝘁 𝗵𝗮𝘃𝗲 𝗮𝗻𝘆 𝘀𝗮𝗳𝗲𝘁𝘆 𝗶𝗻 𝗺𝘆 𝗮𝗰𝗰𝗼𝘂𝗻𝘁! 𝗛𝗼𝘄 𝗺𝘂𝗰𝗵 𝗺𝗼𝗻𝗲𝘆 𝗰𝗮𝗻 𝗯𝗲 𝗿𝗼𝗯𝗯𝗲𝗱?
-║ _In that case buy using /buy. Max-Money-Robbed when no safety: random(50-300)_
+║ _In that case buy using /buy. Max-Money-Robbed when no safety: random(1000-2000)_
 ║
 ╚════════════╝
 
@@ -107,7 +107,7 @@ module.exports = {
         var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
         var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
         var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
-        const MoRb = Math.floor(Math.random() * (300 - 50 + 1)) + 50;
+        const MoRb = Math.floor(Math.random() * (2000 - 1000 + 1)) + 1000;
         const MoLp = Math.floor(Math.random() * (2000 - 1500 + 1)) + 1500;
         const MoCs = Math.floor(Math.random() * (3000 - 2500 + 1)) + 2500;
         const MoPl = Math.floor(Math.random() * (500 - 350 + 1)) + 350;
@@ -547,8 +547,14 @@ module.exports = {
                               );
                               `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
                             } else {
-                              vEconomy.money = vEconomy.money - MoRb;
-                              cEconomy.money = cEconomy.money + MoRb;
+                              if (vEconomy.money < 2000) {
+                                vEconomy.money = 0;
+                                cEconomy.money =
+                                  cEconomy.money + vEconomy.money;
+                              } else {
+                                vEconomy.money = vEconomy.money - MoRb;
+                                cEconomy.money = cEconomy.money + MoRb;
+                              }
                               culprit.CurrentRobberyTime = Date.now();
                               await vEconomy
                                 .save()
