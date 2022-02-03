@@ -59,7 +59,7 @@ chat,
 ║🔒 *padlock:* _500gold/robbery_
 ║⚔️ *sword:* _1500gold/robbery_
 ║💻 *laptop:* _2000gold/robbery_
-║🔮 *charm:* _3000gold/robbery_
+║🔮 *charm:* _5000gold/robbery_
 ╚════════════╝`,
 `./Sakura☣️Reactor/ֆǟӄʊʀǟ_shop.png`
 );
