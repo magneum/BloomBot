@@ -92,6 +92,10 @@ try {
 } catch {
 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = "https://i.postimg.cc/gcw6vq3X/Npp.png";
 }
+var WelcomeNote = ֆǟӄʊʀǟ.body.replace(
+ֆǟӄʊʀǟ.body[0] + ֆǟӄʊʀǟ.commandName + " ",
+""
+);
 Welcome.findOne(
 {
 ID: ֆǟӄʊʀǟ.chatId,
@@ -101,7 +105,7 @@ if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
 if (!userWel) {
 var newServer = new Welcome({
 ID: ֆǟӄʊʀǟ.chatId,
-message: Needs.join(" "),
+message: WelcomeNote,
 });
 await newServer
 .save()
@@ -119,7 +123,7 @@ chat,
 );
 return;
 } else {
-userWel.message = Needs.join(" ");
+userWel.message = WelcomeNote;
 await userWel
 .save()
 .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
