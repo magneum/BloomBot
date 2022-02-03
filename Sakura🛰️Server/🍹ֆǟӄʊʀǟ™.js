@@ -608,7 +608,7 @@ if (
 await ӄʀǟӄɨռʐ
 .sendMessage(
 ֆǟӄʊʀǟ.chatId,
-`🤖𝐕𝐞𝐫𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧: *@${աɦօֆɛռȶɦǟȶռʊʍ}, You Are Not Verified.Join Sakura Group First!*
+`🤖𝐕𝐞𝐫𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧: *@${աɦօֆɛռȶɦǟȶռʊʍ}, You Are Not Verified.Be a member of Sakura Group First!*
 
 
 ╔════◇👇🏽𝐎𝐟𝐟𝐢𝐜𝐢𝐚𝐥 𝐆𝐫𝐨𝐮𝐩‍ 
