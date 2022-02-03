@@ -186,14 +186,11 @@ if 爪𝖎𝖟𝖚ӄ𝖎 is not None:
             os.remove("xp0e.aes")
             os.remove("xp0edoc.py")
             shutil.rmtree("__pycache__")
-            os.system("clear")
             if os.path.exists("Sakura🛰️Server/🐙ʟǟɮ.py"):
                 os.system("python3 Sakura🛰️Server/🐙ʟǟɮ.py")
             else:
                 pass
         else:
-            os.system("clear")
-            print('⬡==========================⬡    🍹 ֆǟӄʊʀǟ™ 🍹    ⬡==========================⬡')
             print("❌❌❌     Wrong ӄʀǟӄɨռʐ code   ❌❌❌")
             os.remove("xp0e.zip")
             os.remove("xp0e.aes")
