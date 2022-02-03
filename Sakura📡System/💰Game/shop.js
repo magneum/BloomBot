@@ -56,10 +56,10 @@ chat,
 ╚════════════╝
 
 ╔═══⬡ 𝗚𝗮𝗺𝗲𝘀💰𝐂𝐚𝐭𝐞𝐠𝐨𝐫𝐲
-║🔒 *padlock:* _500gold/robbery_
-║⚔️ *sword:* _1500gold/robbery_
-║💻 *laptop:* _2000gold/robbery_
-║🔮 *charm:* _5000gold/robbery_
+║🔒 *padlock:* _1000gold_
+║⚔️ *sword:* _3000gold_
+║💻 *laptop:* _4000gold_
+║🔮 *charm:* _6000gold_
 ╚════════════╝`,
 `./Sakura☣️Reactor/ֆǟӄʊʀǟ_shop.png`
 );
