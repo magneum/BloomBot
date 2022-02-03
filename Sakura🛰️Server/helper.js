@@ -12,99 +12,102 @@ exports.resolve = function (messageInstance, ӄʀǟӄɨռʐ, groupMetadata) {
     var prefix = _𝔏𝔞𝔟_.FOXTROT + `\\w+`;
     var prefixRegex = new RegExp(prefix, `g`);
     var jsonMessage = JSON.stringify(messageInstance);
-    ֆǟӄʊʀǟ.chatId = messageInstance.key.remoteJid || "";
+    ֆǟӄʊʀǟ.chatId = messageInstance.key.remoteJid || ``;
     ֆǟӄʊʀǟ.fromMe = messageInstance.key.fromMe;
-    ֆǟӄʊʀǟ.owner = client.user.jid || "";
+    ֆǟӄʊʀǟ.owner = ӄʀǟӄɨռʐ.user.jid || ``;
     ֆǟӄʊʀǟ.mimeType = messageInstance.message
       ? Object.keys(messageInstance.message)[0]
       : null;
     ֆǟӄʊʀǟ.type =
-      ֆǟӄʊʀǟ.mimeType === "imageMessage"
-        ? "image"
-        : ֆǟӄʊʀǟ.mimeType === "videoMessage"
-        ? "video"
-        : ֆǟӄʊʀǟ.mimeType === "conversation" ||
-          ֆǟӄʊʀǟ.mimeType == "extendedTextMessage"
-        ? "text"
-        : ֆǟӄʊʀǟ.mimeType === "audioMessage"
-        ? "audio"
-        : ֆǟӄʊʀǟ.mimeType === "stickerMessage"
-        ? "sticker"
-        : "";
+      ֆǟӄʊʀǟ.mimeType === `imageMessage`
+        ? `image`
+        : ֆǟӄʊʀǟ.mimeType === `videoMessage`
+        ? `video`
+        : ֆǟӄʊʀǟ.mimeType === `conversation` ||
+          ֆǟӄʊʀǟ.mimeType == `extendedTextMessage`
+        ? `text`
+        : ֆǟӄʊʀǟ.mimeType === `audioMessage`
+        ? `audio`
+        : ֆǟӄʊʀǟ.mimeType === `stickerMessage`
+        ? `sticker`
+        : ``;
     ֆǟӄʊʀǟ.isReply =
-      ֆǟӄʊʀǟ.mimeType === "extendedTextMessage" &&
+      ֆǟӄʊʀǟ.mimeType === `extendedTextMessage` &&
       messageInstance.message.extendedTextMessage.hasOwnProperty(
-        "contextInfo"
+        `contextInfo`
       ) &&
       messageInstance.message.extendedTextMessage.contextInfo.hasOwnProperty(
-        "stanzaId"
+        `stanzaId`
       );
     ֆǟӄʊʀǟ.replyMessageId =
       ֆǟӄʊʀǟ.isReply && messageInstance.message.extendedTextMessage.contextInfo
         ? messageInstance.message.extendedTextMessage.contextInfo.stanzaId
-        : "";
+        : ``;
     ֆǟӄʊʀǟ.replyMessage =
       ֆǟӄʊʀǟ.isReply && messageInstance.message.extendedTextMessage.contextInfo
         ? messageInstance.message.extendedTextMessage.contextInfo.quotedMessage
             .conversation
-        : "";
+        : ``;
     ֆǟӄʊʀǟ.replyParticipant =
       ֆǟӄʊʀǟ.isReply && messageInstance.message.extendedTextMessage.contextInfo
         ? messageInstance.message.extendedTextMessage.contextInfo.participant
-        : "";
+        : ``;
     ֆǟӄʊʀǟ.body =
-      ֆǟӄʊʀǟ.mimeType === "conversation"
+      ֆǟӄʊʀǟ.mimeType === `conversation`
         ? messageInstance.message.conversation
-        : ֆǟӄʊʀǟ.mimeType == "imageMessage"
+        : ֆǟӄʊʀǟ.mimeType == `imageMessage`
         ? messageInstance.message.imageMessage.caption
-        : ֆǟӄʊʀǟ.mimeType == "videoMessage"
+        : ֆǟӄʊʀǟ.mimeType == `videoMessage`
         ? messageInstance.message.videoMessage.caption
-        : ֆǟӄʊʀǟ.mimeType == "extendedTextMessage"
+        : ֆǟӄʊʀǟ.mimeType == `extendedTextMessage`
         ? messageInstance.message.extendedTextMessage.text
-        : ֆǟӄʊʀǟ.mimeType == "buttonsResponseMessage"
+        : ֆǟӄʊʀǟ.mimeType == `buttonsResponseMessage`
         ? messageInstance.message.buttonsResponseMessage.selectedDisplayText
-        : "";
+        : ``;
     ֆǟӄʊʀǟ.isCmd = prefixRegex.test(ֆǟӄʊʀǟ.body);
     ֆǟӄʊʀǟ.commandName = ֆǟӄʊʀǟ.isCmd
       ? ֆǟӄʊʀǟ.body.slice(1).trim().split(/ +/).shift().toLowerCase()
-      : "";
-    ֆǟӄʊʀǟ.isImage = ֆǟӄʊʀǟ.type === "image";
+      : ``;
+    ֆǟӄʊʀǟ.alias = ֆǟӄʊʀǟ.isCmd
+      ? ֆǟӄʊʀǟ.body.slice(1).trim().split(/ +/).shift().toLowerCase()
+      : ``;
+    ֆǟӄʊʀǟ.isImage = ֆǟӄʊʀǟ.type === `image`;
     ֆǟӄʊʀǟ.isReplyImage = ֆǟӄʊʀǟ.isReply
-      ? jsonMessage.indexOf("imageMessage") !== -1
+      ? jsonMessage.indexOf(`imageMessage`) !== -1
       : false;
     ֆǟӄʊʀǟ.imageCaption = ֆǟӄʊʀǟ.isImage
       ? messageInstance.message.imageMessage.caption
-      : "";
+      : ``;
     ֆǟӄʊʀǟ.isGIF =
-      ֆǟӄʊʀǟ.type === "video" &&
+      ֆǟӄʊʀǟ.type === `video` &&
       messageInstance.message.videoMessage.gifPlayback;
     ֆǟӄʊʀǟ.isReplyGIF = ֆǟӄʊʀǟ.isReply
-      ? jsonMessage.indexOf("videoMessage") !== -1 &&
+      ? jsonMessage.indexOf(`videoMessage`) !== -1 &&
         messageInstance.message.extendedTextMessage.contextInfo.quotedMessage
           .videoMessage.gifPlayback
       : false;
-    ֆǟӄʊʀǟ.isSticker = ֆǟӄʊʀǟ.type === "sticker";
+    ֆǟӄʊʀǟ.isSticker = ֆǟӄʊʀǟ.type === `sticker`;
     ֆǟӄʊʀǟ.isReplySticker = ֆǟӄʊʀǟ.isReply
-      ? jsonMessage.indexOf("stickerMessage") !== -1
+      ? jsonMessage.indexOf(`stickerMessage`) !== -1
       : false;
     ֆǟӄʊʀǟ.isReplyAnimatedSticker = ֆǟӄʊʀǟ.isReplySticker
       ? messageInstance.message.extendedTextMessage.contextInfo.quotedMessage
           .stickerMessage.isAnimated
       : false;
     ֆǟӄʊʀǟ.isVideo =
-      ֆǟӄʊʀǟ.type === "video" &&
+      ֆǟӄʊʀǟ.type === `video` &&
       !messageInstance.message.videoMessage.gifPlayback;
     ֆǟӄʊʀǟ.isReplyVideo = ֆǟӄʊʀǟ.isReply
-      ? jsonMessage.indexOf("videoMessage") !== -1 &&
+      ? jsonMessage.indexOf(`videoMessage`) !== -1 &&
         !messageInstance.message.extendedTextMessage.contextInfo.quotedMessage
           .videoMessage.gifPlayback
       : false;
-    ֆǟӄʊʀǟ.isAudio = ֆǟӄʊʀǟ.type === "audio";
+    ֆǟӄʊʀǟ.isAudio = ֆǟӄʊʀǟ.type === `audio`;
     ֆǟӄʊʀǟ.isReplyAudio = ֆǟӄʊʀǟ.isReply
-      ? jsonMessage.indexOf("audioMessage") !== -1
+      ? jsonMessage.indexOf(`audioMessage`) !== -1
       : false;
-    ֆǟӄʊʀǟ.logGroup = client.user.jid || "";
-    ֆǟӄʊʀǟ.isGroup = ֆǟӄʊʀǟ.chatId.endsWith("@g.us");
+    ֆǟӄʊʀǟ.Myself = ӄʀǟӄɨռʐ.user.jid || ``;
+    ֆǟӄʊʀǟ.isGroup = ֆǟӄʊʀǟ.chatId.endsWith(`@g.us`);
     ֆǟӄʊʀǟ.isPm = !ֆǟӄʊʀǟ.isGroup;
     ֆǟӄʊʀǟ.sender =
       ֆǟӄʊʀǟ.isGroup && messageInstance.message && ֆǟӄʊʀǟ.fromMe
@@ -113,15 +116,15 @@ exports.resolve = function (messageInstance, ӄʀǟӄɨռʐ, groupMetadata) {
         ? messageInstance.participant
         : !ֆǟӄʊʀǟ.isGroup
         ? ֆǟӄʊʀǟ.chatId
-        : "";
-    ֆǟӄʊʀǟ.groupName = ֆǟӄʊʀǟ.isGroup ? groupMetadata.subject : "";
-    ֆǟӄʊʀǟ.groupMembers = ֆǟӄʊʀǟ.isGroup ? groupMetadata.participants : "";
+        : ``;
+    ֆǟӄʊʀǟ.groupName = ֆǟӄʊʀǟ.isGroup ? groupMetadata.subject : ``;
+    ֆǟӄʊʀǟ.groupMembers = ֆǟӄʊʀǟ.isGroup ? groupMetadata.participants : ``;
     ֆǟӄʊʀǟ.groupAdmins = ֆǟӄʊʀǟ.isGroup
       ? getGroupAdmins(ֆǟӄʊʀǟ.groupMembers)
-      : "";
-    ֆǟӄʊʀǟ.groupId = ֆǟӄʊʀǟ.isGroup ? groupMetadata.id : "";
+      : ``;
+    ֆǟӄʊʀǟ.groupId = ֆǟӄʊʀǟ.isGroup ? groupMetadata.id : ``;
     ֆǟӄʊʀǟ.isSenderDev = DEVstring.includes(
-      ֆǟӄʊʀǟ.sender.substring(0, ֆǟӄʊʀǟ.sender.indexOf("@"))
+      ֆǟӄʊʀǟ.sender.substring(0, ֆǟӄʊʀǟ.sender.indexOf(`@`))
     );
     ֆǟӄʊʀǟ.isBotGroupAdmin = ֆǟӄʊʀǟ.isGroup
       ? ֆǟӄʊʀǟ.groupAdmins.includes(ֆǟӄʊʀǟ.owner)
@@ -131,6 +134,7 @@ exports.resolve = function (messageInstance, ӄʀǟӄɨռʐ, groupMetadata) {
       : false;
     return ֆǟӄʊʀǟ;
   } catch (Error) {
+    ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
     var childs = require(`child_process`).exec(`python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`);
     childs.stdout.pipe(process.stdout);
     childs.on(`exit`, async function () {
