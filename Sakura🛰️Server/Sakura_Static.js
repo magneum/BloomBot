@@ -21,7 +21,14 @@ const Clock = date.format(now, pattern);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 `⬡🍹⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-const Sakura_GIF_Static = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, MainText, MediaUrl) => {
+const Sakura_GIF_Static = async (
+ӄʀǟӄɨռʐ,
+chat,
+ֆǟӄʊʀǟ,
+MainText,
+MediaUrl,
+Needs
+) => {
 try {
 const defaultnm = ֆǟӄʊʀǟ.commandName;
 const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
@@ -34,8 +41,28 @@ return await ӄʀǟӄɨռʐ
 .sendMessage(ֆǟӄʊʀǟ.chatId, { url: MediaUrl }, MessageType.video, {
 mimetype: `video/gif`,
 quoted: chat,
-caption: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐁𝐨𝐭 ⏋\n⎿ 𝐄𝐧𝐠𝐢𝐧𝐞: _kryozenV${vers.vers}_ ⏋\n\n` + MainText,
+caption:
+`⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐁𝐨𝐭 ⏋\n⎿ 𝐄𝐧𝐠𝐢𝐧𝐞: _kryozenV${vers.vers}_ ⏋\n\n` +
+MainText,
 contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ, Receiver] },
+})
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+} else if (Needs.length > 0 && Needs[0].startsWith("@")) {
+var TagPerson = ֆǟӄʊʀǟ.body.replace(
+ֆǟӄʊʀǟ.body[0] + ֆǟӄʊʀǟ.commandName + " ",
+""
+);
+var TagMention = TagPerson + "@s.whatsapp.net";
+var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
+var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
+return await ӄʀǟӄɨռʐ
+.sendMessage(ֆǟӄʊʀǟ.chatId, { url: MediaUrl }, MessageType.video, {
+mimetype: `video/gif`,
+quoted: chat,
+caption:
+`⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐁𝐨𝐭 ⏋\n⎿ 𝐄𝐧𝐠𝐢𝐧𝐞: _kryozenV${vers.vers}_ ⏋\n\n` +
+MainText,
+contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ, TagMention] },
 })
 .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
 } else {
@@ -45,7 +72,9 @@ return await ӄʀǟӄɨռʐ
 .sendMessage(ֆǟӄʊʀǟ.chatId, { url: MediaUrl }, MessageType.video, {
 mimetype: `video/gif`,
 quoted: chat,
-caption: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐁𝐨𝐭 ⏋\n⎿ 𝐄𝐧𝐠𝐢𝐧𝐞: _kryozenV${vers.vers}_ ⏋\n\n` + MainText,
+caption:
+`⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐁𝐨𝐭 ⏋\n⎿ 𝐄𝐧𝐠𝐢𝐧𝐞: _kryozenV${vers.vers}_ ⏋\n\n` +
+MainText,
 contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
 })
 .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));

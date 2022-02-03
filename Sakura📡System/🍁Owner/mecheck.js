@@ -37,7 +37,8 @@ return Sakura_Buttons.MIB(
 chat,
 ֆǟӄʊʀǟ,
 `*❌ Owner Only | You Are Not Allowed! ❌*`,
-`./Sakura☣️Reactor/ֆǟӄʊʀǟMemErr.png`
+`./Sakura☣️Reactor/ֆǟӄʊʀǟMemErr.png`,
+Needs
 );
 } else if (ֆǟӄʊʀǟ.isGroup) {
 return Sakura_Buttons.MTB(
@@ -82,7 +83,8 @@ chat,
 ║
 ║- 𝐒𝐚𝐤𝐮𝐫𝐚 #𝟏: ${_𝔏𝔞𝔟_.HASHS}
 ║- 𝐒𝐚𝐤𝐮𝐫𝐚 #2: ${_𝔏𝔞𝔟_.HASH}
-╚════════════╝`
+╚════════════╝`,
+Needs
 );
 return;
 } else {
@@ -91,7 +93,8 @@ return Sakura_Buttons.MIB(
 chat,
 ֆǟӄʊʀǟ,
 `*❌ Owner Only | You Are Not Allowed! ❌*`,
-`./Sakura☣️Reactor/ֆǟӄʊʀǟMemErr.png`
+`./Sakura☣️Reactor/ֆǟӄʊʀǟMemErr.png`,
+Needs
 );
 }
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;

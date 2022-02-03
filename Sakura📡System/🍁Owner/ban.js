@@ -24,9 +24,16 @@ name: newScpt,
 async handle(ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
 try {
 var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
+var defaultnm = ֆǟӄʊʀǟ.commandName;
 var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
-const defaultnm = ֆǟӄʊʀǟ.commandName;
-const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
+var FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
+if (Needs.length > 0 && Needs[0].startsWith("@")) {
+var TagPerson = ֆǟӄʊʀǟ.body.replace(
+ֆǟӄʊʀǟ.body[0] + ֆǟӄʊʀǟ.commandName + " ",
+""
+);
+var TagMention = TagPerson + "@s.whatsapp.net";
+}
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
 if (!ֆǟӄʊʀǟ.fromMe && !ֆǟӄʊʀǟ.isSenderDev) {
 return Sakura_Buttons.MIB(
@@ -34,7 +41,8 @@ return Sakura_Buttons.MIB(
 chat,
 ֆǟӄʊʀǟ,
 `*❌ Owner Only | You Are Not Allowed! ❌*`,
-`./Sakura☣️Reactor/ֆǟӄʊʀǟMemErr.png`
+`./Sakura☣️Reactor/ֆǟӄʊʀǟMemErr.png`,
+Needs
 );
 }
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
@@ -52,7 +60,8 @@ chat,
 ║🍕 𝐅𝐫𝐨𝐦: *@${աɦօֆɛռȶɦǟȶռʊʍ}*
 ║❌ 𝗘𝗿𝗿𝗼𝗿: _Can't Ban My-Self_
 ╚════════════╝`,
-"./Sakura☣️Reactor/Sakura_Bans.png"
+"./Sakura☣️Reactor/Sakura_Bans.png",
+Needs
 );
 }
 }
@@ -66,7 +75,8 @@ chat,
 
 ╔════◇🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧 
 ║💡 _This Command is Only For Groups!_
-╚════════════╝`
+╚════════════╝`,
+Needs
 );
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
 } else if (ֆǟӄʊʀǟ.isGroup && !ֆǟӄʊʀǟ.isReply) {
@@ -97,7 +107,8 @@ chat,
 ║🍕 𝐅𝐫𝐨𝐦: *@${աɦօֆɛռȶɦǟȶռʊʍ}*
 ║🔒 𝐒𝐭𝐚𝐭𝐮𝐬: *${groupData.subject}* = is now banned from using Sakura.
 ╚════════════╝`,
-"./Sakura☣️Reactor/Sakura_Bans.png"
+"./Sakura☣️Reactor/Sakura_Bans.png",
+Needs
 );
 } else {
 return Sakura_Buttons.MIB(
@@ -110,7 +121,8 @@ chat,
 ║🍕 𝐅𝐫𝐨𝐦: *@${աɦօֆɛռȶɦǟȶռʊʍ}*
 ║❌ 𝗘𝗿𝗿𝗼𝗿: *${groupData.subject}* = Already banned!
 ╚════════════╝`,
-"./Sakura☣️Reactor/Sakura_Bans.png"
+"./Sakura☣️Reactor/Sakura_Bans.png",
+Needs
 );
 }
 }
@@ -144,7 +156,8 @@ chat,
 ╔════◇🛡️𝐒𝐮𝐝𝐨 𝐁𝐚𝐧
 ║🔒 𝐒𝐭𝐚𝐭𝐮𝐬: *@${քɛʀֆօռɢօȶռʊʍ}* = is now banned from using Sakura.
 ╚════════════╝`,
-"./Sakura☣️Reactor/Sakura_Bans.png"
+"./Sakura☣️Reactor/Sakura_Bans.png",
+Needs
 );
 } else {
 return Sakura_Buttons.MIB(
@@ -156,7 +169,8 @@ chat,
 ╔════◇🛡️𝐒𝐮𝐝𝐨 𝐁𝐚𝐧
 ║❌ 𝗘𝗿𝗿𝗼𝗿: *@${քɛʀֆօռɢօȶռʊʍ}* = Already banned!
 ╚════════════╝`,
-"./Sakura☣️Reactor/Sakura_Bans.png"
+"./Sakura☣️Reactor/Sakura_Bans.png",
+Needs
 );
 }
 }

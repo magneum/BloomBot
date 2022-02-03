@@ -20,7 +20,7 @@ const pattern = date.compile(`ddd, MMM DD YYYY`);
 const Clock = date.format(now, pattern);
 const vers = require(`../package.json`);
 `⬡🍹⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-const Sakura_Text_But = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, MainText) => {
+const Sakura_Text_But = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, MainText, Needs) => {
 try {
 if (ֆǟӄʊʀǟ.isReply) {
 var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
@@ -48,6 +48,68 @@ headerType: 1,
 .sendMessage(ֆǟӄʊʀǟ.chatId, buttonMessage, MessageType.buttonsMessage, {
 quoted: chat,
 contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ, Receiver] },
+})
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+} else if (Needs.length > 0 && Needs[0].startsWith("@")) {
+var TagPerson = ֆǟӄʊʀǟ.body.replace(
+ֆǟӄʊʀǟ.body[0] + ֆǟӄʊʀǟ.commandName + " ",
+""
+);
+var TagMention = TagPerson + "@s.whatsapp.net";
+const buttonMessage = {
+contentText: MainText,
+footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐁𝐨𝐭 ⏋\n⎿ 𝐄𝐧𝐠𝐢𝐧𝐞: _kryozenV${vers.vers}_ ⏋`,
+buttons: [
+{
+buttonId: `${ᴋᴇɪ}help`,
+buttonText: { displayText: `${ᴋᴇɪ}help` },
+type: 1,
+},
+{
+buttonId: `${ᴋᴇɪ}menu`,
+buttonText: { displayText: `${ᴋᴇɪ}menu` },
+type: 1,
+},
+],
+headerType: 1,
+};
+ӄʀǟӄɨռʐ
+.sendMessage(ֆǟӄʊʀǟ.chatId, buttonMessage, MessageType.buttonsMessage, {
+quoted: chat,
+contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ, TagMention] },
+})
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+} else if (Needs.length > 0 && Needs[0].startsWith("@")) {
+var TagPerson = ֆǟӄʊʀǟ.body.replace(
+ֆǟӄʊʀǟ.body[0] + ֆǟӄʊʀǟ.commandName + " ",
+""
+);
+var TagMention = TagPerson + "@s.whatsapp.net";
+var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
+var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
+const defaultnm = ֆǟӄʊʀǟ.commandName;
+const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
+const buttonMessage = {
+contentText: MainText,
+footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐁𝐨𝐭 ⏋\n⎿ 𝐄𝐧𝐠𝐢𝐧𝐞: _kryozenV${vers.vers}_ ⏋`,
+buttons: [
+{
+buttonId: `${ᴋᴇɪ}help`,
+buttonText: { displayText: `${ᴋᴇɪ}help` },
+type: 1,
+},
+{
+buttonId: `${ᴋᴇɪ}menu`,
+buttonText: { displayText: `${ᴋᴇɪ}menu` },
+type: 1,
+},
+],
+headerType: 1,
+};
+ӄʀǟӄɨռʐ
+.sendMessage(ֆǟӄʊʀǟ.chatId, buttonMessage, MessageType.buttonsMessage, {
+quoted: chat,
+contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ, TagMention] },
 })
 .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
 } else {
@@ -89,7 +151,14 @@ process.exitCode = 1;
 }
 };
 `⬡🍹⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-const Sakura_Image_But = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, MainText, MediaUrl) => {
+const Sakura_Image_But = async (
+ӄʀǟӄɨռʐ,
+chat,
+ֆǟӄʊʀǟ,
+MainText,
+MediaUrl,
+Needs
+) => {
 try {
 if (ֆǟӄʊʀǟ.isReply) {
 var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
@@ -127,6 +196,46 @@ MessageType.buttonsMessage,
 {
 quoted: chat,
 contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ, Receiver] },
+}
+)
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+} else if (Needs.length > 0 && Needs[0].startsWith("@")) {
+var TagPerson = ֆǟӄʊʀǟ.body.replace(
+ֆǟӄʊʀǟ.body[0] + ֆǟӄʊʀǟ.commandName + " ",
+""
+);
+var TagMention = TagPerson + "@s.whatsapp.net";
+const media = await ӄʀǟӄɨռʐ.prepareMessage(
+ֆǟӄʊʀǟ.chatId,
+{ url: MediaUrl },
+MessageType.image,
+{ mimetype: Mimetype.png }
+);
+return await ӄʀǟӄɨռʐ
+.sendMessage(
+ֆǟӄʊʀǟ.chatId,
+{
+contentText: MainText,
+footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐁𝐨𝐭 ⏋\n⎿ 𝐄𝐧𝐠𝐢𝐧𝐞: _kryozenV${vers.vers}_ ⏋`,
+buttons: [
+{
+buttonId: `${ᴋᴇɪ}help`,
+buttonText: { displayText: `${ᴋᴇɪ}help` },
+type: 1,
+},
+{
+buttonId: `${ᴋᴇɪ}menu`,
+buttonText: { displayText: `${ᴋᴇɪ}menu` },
+type: 1,
+},
+],
+headerType: 4,
+imageMessage: media.message.imageMessage,
+},
+MessageType.buttonsMessage,
+{
+quoted: chat,
+contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ, TagMention] },
 }
 )
 .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
@@ -180,7 +289,14 @@ process.exitCode = 1;
 }
 };
 `⬡🍹⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-const Sakura_Video_But = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, MainText, MediaUrl) => {
+const Sakura_Video_But = async (
+ӄʀǟӄɨռʐ,
+chat,
+ֆǟӄʊʀǟ,
+MainText,
+MediaUrl,
+Needs
+) => {
 try {
 if (ֆǟӄʊʀǟ.isReply) {
 var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
@@ -218,6 +334,50 @@ MessageType.buttonsMessage,
 {
 quoted: chat,
 contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
+}
+)
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+} else if (Needs.length > 0 && Needs[0].startsWith("@")) {
+var TagPerson = ֆǟӄʊʀǟ.body.replace(
+ֆǟӄʊʀǟ.body[0] + ֆǟӄʊʀǟ.commandName + " ",
+""
+);
+var TagMention = TagPerson + "@s.whatsapp.net";
+var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
+var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
+const defaultnm = ֆǟӄʊʀǟ.commandName;
+const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
+const media = await ӄʀǟӄɨռʐ.prepareMessage(
+ֆǟӄʊʀǟ.chatId,
+{ url: MediaUrl },
+MessageType.video,
+{ mimetype: `video/mp4` }
+);
+return await ӄʀǟӄɨռʐ
+.sendMessage(
+ֆǟӄʊʀǟ.chatId,
+{
+contentText: MainText,
+footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐁𝐨𝐭 ⏋\n⎿ 𝐄𝐧𝐠𝐢𝐧𝐞: _kryozenV${vers.vers}_ ⏋`,
+buttons: [
+{
+buttonId: `${ᴋᴇɪ}help`,
+buttonText: { displayText: `${ᴋᴇɪ}help` },
+type: 1,
+},
+{
+buttonId: `${ᴋᴇɪ}menu`,
+buttonText: { displayText: `${ᴋᴇɪ}menu` },
+type: 1,
+},
+],
+headerType: 5,
+videoMessage: media.message.videoMessage,
+},
+MessageType.buttonsMessage,
+{
+quoted: chat,
+contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ, TagMention] },
 }
 )
 .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
@@ -271,7 +431,14 @@ process.exitCode = 1;
 }
 };
 `⬡🍹⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
-const Sakura_GIF_But = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, MainText, MediaUrl) => {
+const Sakura_GIF_But = async (
+ӄʀǟӄɨռʐ,
+chat,
+ֆǟӄʊʀǟ,
+MainText,
+MediaUrl,
+Needs
+) => {
 try {
 if (ֆǟӄʊʀǟ.isReply) {
 var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
@@ -312,6 +479,12 @@ contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ, Receiver] },
 }
 )
 .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+} else if (Needs.length > 0 && Needs[0].startsWith("@")) {
+var TagPerson = ֆǟӄʊʀǟ.body.replace(
+ֆǟӄʊʀǟ.body[0] + ֆǟӄʊʀǟ.commandName + " ",
+""
+);
+var TagMention = TagPerson + "@s.whatsapp.net";
 } else {
 var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
 var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
@@ -367,7 +540,8 @@ const Sakura_VideoAudio_But = async (
 chat,
 ֆǟӄʊʀǟ,
 MainText,
-MediaUrl
+MediaUrl,
+Needs
 ) => {
 try {
 if (ֆǟӄʊʀǟ.isReply) {
@@ -427,7 +601,8 @@ const Sakura_Location_But = async (
 chat,
 ֆǟӄʊʀǟ,
 MainText,
-MediaUrl
+MediaUrl,
+Needs
 ) => {
 try {
 if (ֆǟӄʊʀǟ.isReply) {

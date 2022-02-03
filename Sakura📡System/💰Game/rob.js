@@ -72,6 +72,13 @@ async handle(ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock,
 try {
 const defaultnm = ֆǟӄʊʀǟ.commandName;
 const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
+if (Needs.length > 0 && Needs[0].startsWith("@")) {
+var TagPerson = ֆǟӄʊʀǟ.body.replace(
+ֆǟӄʊʀǟ.body[0] + ֆǟӄʊʀǟ.commandName + " ",
+""
+);
+var TagMention = TagPerson + "@s.whatsapp.net";
+}
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
 if (!ֆǟӄʊʀǟ.isGroup) {
 return Sakura_Buttons.MTB(
