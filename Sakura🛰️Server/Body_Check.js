@@ -26,17 +26,17 @@ function Body_Check(Argument) {
     !Regex.Spotify.test(Argument)
   ) {
     return true;
-  } else if (
-    Argument.includes("https:") &&
-    Argument.includes("www.") &&
-    Argument.includes("wa.me/") &&
-    Argument.includes("https://chat.whatsapp") &&
-    Argument.includes("/t.me/") &&
-    Argument.includes("https://t.me/") &&
-    Argument.includes("discord.com") &&
-    Argument.includes("discord.gg")
-  ) {
-    return true;
+    // } else if (
+    //   Argument.includes("https:") &&
+    //   Argument.includes("www.") &&
+    //   Argument.includes("wa.me/") &&
+    //   Argument.includes("https://chat.whatsapp") &&
+    //   Argument.includes("/t.me/") &&
+    //   Argument.includes("https://t.me/") &&
+    //   Argument.includes("discord.com") &&
+    //   Argument.includes("discord.gg")
+    // ) {
+    // return true;
   } else {
     return false;
   }
