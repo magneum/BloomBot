@@ -218,7 +218,7 @@ module.exports = {
                       laptop: 0,
                       charm: 0,
                       CurrentRobberyTime: 0,
-                      PermanentRobberyTime: 3600000,
+                      PermanentRobberyTime: 1200000,
                     });
                     await newUser
                       .save()
