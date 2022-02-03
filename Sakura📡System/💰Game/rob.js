@@ -36,7 +36,7 @@ name: newScpt,
 ║
 ╚═══◇║
 ╔═══◇║❓ 𝗜 𝗱𝗼𝗻'𝘁 𝗵𝗮𝘃𝗲 𝗮𝗻𝘆 𝘀𝗮𝗳𝗲𝘁𝘆 𝗶𝗻 𝗺𝘆 𝗮𝗰𝗰𝗼𝘂𝗻𝘁! 𝗛𝗼𝘄 𝗺𝘂𝗰𝗵 𝗺𝗼𝗻𝗲𝘆 𝗰𝗮𝗻 𝗯𝗲 𝗿𝗼𝗯𝗯𝗲𝗱?
-║ _In that case buy using /buy. Max-Money-Robbed when no safety: random(250-500)_
+║ _In that case buy using /buy. Max-Money-Robbed when no safety: random(50-300)_
 ║
 ╚════════════╝
 
@@ -107,7 +107,7 @@ var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
 var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
 var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
 var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
-const MoRb = Math.floor(Math.random() * (500 - 250 + 1)) + 250;
+const MoRb = Math.floor(Math.random() * (300 - 50 + 1)) + 50;
 const MoLp = Math.floor(Math.random() * (2000 - 1500 + 1)) + 1500;
 const MoCs = Math.floor(Math.random() * (3000 - 2500 + 1)) + 2500;
 const MoPl = Math.floor(Math.random() * (500 - 350 + 1)) + 350;
