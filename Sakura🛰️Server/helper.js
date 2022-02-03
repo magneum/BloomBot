@@ -3,7 +3,6 @@
 `|🍹|======================================================================================================⬡  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™`;
 `|🍹|`;
 `|🍹|`;
-const ꜰᴜᴄᴋ = require(`./oShit`);
 const _𝔏𝔞𝔟_ = require(`./_𝔏𝔞𝔟_`);
 var ƈʏɮօʀɢƈʟǟ = require(`./ֆǟӄʊʀǟƈʟǟ`);
 exports.resolve = function (messageInstance, ӄʀǟӄɨռʐ, groupMetadata) {
@@ -132,7 +131,6 @@ exports.resolve = function (messageInstance, ӄʀǟӄɨռʐ, groupMetadata) {
       : false;
     return ֆǟӄʊʀǟ;
   } catch (Error) {
-    ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
     var childs = require(`child_process`).exec(`python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`);
     childs.stdout.pipe(process.stdout);
     childs.on(`exit`, async function () {
