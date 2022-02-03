@@ -9,8 +9,8 @@ const { fromBuffer } = require("file-type");
 const ytIdRegex =
   /(?:http(?:s|):\/\/|)(?:(?:www\.|)youtube(?:\-nocookie|)\.com\/(?:watch\?.*(?:|\&)v=|embed\/|v\/)|youtu\.be\/)([-_0-9A-Za-z]{11})/;
 `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
-function post(url, formdata) {
-  try {
+try {
+  function post(url, formdata) {
     return fetch(url, {
       method: "POST",
       headers: {
@@ -22,18 +22,18 @@ function post(url, formdata) {
         .map((key) => `${key}=${encodeURIComponent(formdata[key])}`)
         .join("&"),
     });
-  } catch (Error) {
-    console.log("Error: " + Error);
-    var childs = require(`child_process`).exec(`python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`);
-    childs.stdout.pipe(process.stdout);
-    childs.on(`exit`, async function () {
-      process.exitCode = 1;
-    });
   }
+} catch (Error) {
+  console.log("Error: " + Error);
+  var childs = require(`child_process`).exec(`python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`);
+  childs.stdout.pipe(process.stdout);
+  childs.on(`exit`, async function () {
+    process.exitCode = 1;
+  });
 }
 `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
-function YouTube_Music(url) {
-  try {
+try {
+  function YouTube_Music(url) {
     return new Promise((resolve, reject) => {
       if (ytIdRegex.test(url)) {
         let ytId = ytIdRegex.exec(url);
@@ -80,18 +80,18 @@ function YouTube_Music(url) {
           .catch(reject);
       } else reject("URL INVALID");
     });
-  } catch (Error) {
-    console.log("Error: " + Error);
-    var childs = require(`child_process`).exec(`python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`);
-    childs.stdout.pipe(process.stdout);
-    childs.on(`exit`, async function () {
-      process.exitCode = 1;
-    });
   }
+} catch (Error) {
+  console.log("Error: " + Error);
+  var childs = require(`child_process`).exec(`python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`);
+  childs.stdout.pipe(process.stdout);
+  childs.on(`exit`, async function () {
+    process.exitCode = 1;
+  });
 }
 `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
-function Instagram_Dwnloader(url_media) {
-  try {
+try {
+  function Instagram_Dwnloader(url_media) {
     return new Promise((resolve, reject) => {
       url_media = url_media.replace("reel", "p");
       var url = "https://igram.io/i/";
@@ -143,18 +143,18 @@ function Instagram_Dwnloader(url_media) {
           reject(err);
         });
     });
-  } catch (Error) {
-    console.log("Error: " + Error);
-    var childs = require(`child_process`).exec(`python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`);
-    childs.stdout.pipe(process.stdout);
-    childs.on(`exit`, async function () {
-      process.exitCode = 1;
-    });
   }
+} catch (Error) {
+  console.log("Error: " + Error);
+  var childs = require(`child_process`).exec(`python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`);
+  childs.stdout.pipe(process.stdout);
+  childs.on(`exit`, async function () {
+    process.exitCode = 1;
+  });
 }
 `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
-function YouTube_Video(url) {
-  try {
+try {
+  function YouTube_Video(url) {
     return new Promise((resolve, reject) => {
       if (ytIdRegex.test(url)) {
         let ytId = ytIdRegex.exec(url);
@@ -201,18 +201,18 @@ function YouTube_Video(url) {
           .catch(reject);
       } else reject("URL INVALID");
     });
-  } catch (Error) {
-    console.log("Error: " + Error);
-    var childs = require(`child_process`).exec(`python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`);
-    childs.stdout.pipe(process.stdout);
-    childs.on(`exit`, async function () {
-      process.exitCode = 1;
-    });
   }
+} catch (Error) {
+  console.log("Error: " + Error);
+  var childs = require(`child_process`).exec(`python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`);
+  childs.stdout.pipe(process.stdout);
+  childs.on(`exit`, async function () {
+    process.exitCode = 1;
+  });
 }
 `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
-function upload(media) {
-  try {
+try {
+  function upload(media) {
     return new Promise(async (resolve, reject) => {
       try {
         let { ext } = await fromBuffer(media);
@@ -233,18 +233,18 @@ function upload(media) {
         return console.log(e);
       }
     });
-  } catch (Error) {
-    console.log("Error: " + Error);
-    var childs = require(`child_process`).exec(`python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`);
-    childs.stdout.pipe(process.stdout);
-    childs.on(`exit`, async function () {
-      process.exitCode = 1;
-    });
   }
+} catch (Error) {
+  console.log("Error: " + Error);
+  var childs = require(`child_process`).exec(`python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`);
+  childs.stdout.pipe(process.stdout);
+  childs.on(`exit`, async function () {
+    process.exitCode = 1;
+  });
 }
 `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
-function formatDate(n, locale = "id") {
-  try {
+try {
+  function formatDate(n, locale = "id") {
     let d = new Date(n);
     return d.toLocaleDateString(locale, {
       weekday: "long",
@@ -255,14 +255,14 @@ function formatDate(n, locale = "id") {
       minute: "numeric",
       second: "numeric",
     });
-  } catch (Error) {
-    console.log("Error: " + Error);
-    var childs = require(`child_process`).exec(`python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`);
-    childs.stdout.pipe(process.stdout);
-    childs.on(`exit`, async function () {
-      process.exitCode = 1;
-    });
   }
+} catch (Error) {
+  console.log("Error: " + Error);
+  var childs = require(`child_process`).exec(`python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`);
+  childs.stdout.pipe(process.stdout);
+  childs.on(`exit`, async function () {
+    process.exitCode = 1;
+  });
 }
 `|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |===========================================⬡|`;
 module.exports.YouTube_Music = YouTube_Music;

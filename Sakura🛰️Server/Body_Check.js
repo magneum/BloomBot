@@ -15,38 +15,8 @@ const Regex = {
 };
 
 function Body_Check(Argument) {
-  if (Regex.Whatsapp.test(Argument)) {
-    return true;
-  } else if (Regex.VideoURL.test(Argument)) {
-    return false;
-  } else if (Regex.VideoID.test(Argument)) {
-    return false;
-  } else if (Regex.PlaylistID.test(Argument)) {
-    return false;
-  } else if (Regex.PlaylistURL.test(Argument)) {
-    return false;
-  } else if (Regex.SCTrack.test(Argument)) {
-    return false;
-  } else if (Regex.SCPlaylist.test(Argument)) {
-    return false;
-  } else if (Regex.Spotify.test(Argument)) {
-    return false;
-  } else if (Argument.includes("discord.gg")) {
-    return true;
-  } else if (Argument.includes("discord.com")) {
-    return true;
-  } else if (Argument.includes("https://t.me/")) {
-    return true;
-  } else if (Argument.includes("/t.me/")) {
-    return true;
-  } else if (Argument.includes("https://chat.whatsapp")) {
-    return true;
-  } else if (Argument.includes("wa.me/")) {
-    return true;
-  } else if (Argument.includes("www.")) {
-    return true;
-  } else if (
-    Argument.includes("https:") &&
+  if (
+    !Regex.Whatsapp.test(Argument) &&
     !Regex.VideoURL.test(Argument) &&
     !Regex.VideoID.test(Argument) &&
     !Regex.PlaylistID.test(Argument) &&
@@ -56,7 +26,19 @@ function Body_Check(Argument) {
     !Regex.Spotify.test(Argument)
   ) {
     return true;
+  } else if (
+    Argument.includes("https:") &&
+    Argument.includes("www.") &&
+    Argument.includes("wa.me/") &&
+    Argument.includes("https://chat.whatsapp") &&
+    Argument.includes("/t.me/") &&
+    Argument.includes("https://t.me/") &&
+    Argument.includes("discord.com") &&
+    Argument.includes("discord.gg")
+  ) {
+    return true;
+  } else {
+    return false;
   }
-  return false;
 }
 module.exports.Body_Check = Body_Check;
