@@ -1,7 +1,7 @@
 {
   "name": "sakura",
-  "vers": "7.8",
-  "verold": "7.7",
+  "vers": "8",
+  "verold": "7.8",
   "depecrated": false,
   "directories": {
     "Sakura☕Shop": "Sakura☕Shop",
