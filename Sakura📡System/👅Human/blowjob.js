@@ -23,9 +23,16 @@ name: newScpt,
 async handle(ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
 try {
 var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
-const defaultnm = ֆǟӄʊʀǟ.commandName;
+var defaultnm = ֆǟӄʊʀǟ.commandName;
 var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
-const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
+var FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
+if (Needs[0].startsWith("@")) {
+var TagPerson = ֆǟӄʊʀǟ.body.replace(
+ֆǟӄʊʀǟ.body[0] + ֆǟӄʊʀǟ.commandName + " ",
+""
+);
+var TagMention = TagPerson + "@s.whatsapp.net";
+}
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
 if (
 ֆǟӄʊʀǟ.isGroup &&
