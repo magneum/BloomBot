@@ -13,6 +13,7 @@ var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 const cleanRF = require(`./cleanRF`);
 const TinyURL = require("tinyurl");
+const ytdl = require("ytdl-core");
 const fs = require(`fs`);
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
 try {
@@ -45,54 +46,78 @@ try {
       Found.thumbnail
     );
     `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-    YouTube_Music(Found.url).then((res) => {
-      const { dl_link, thumb, title, filesizeF, filesize } = res;
-      TinyURL.shorten(dl_link).then(
-        async function (DirectFile) {
-          require(`child_process`).exec(
-            `ffmpeg -i "${DirectFile}" "${FFmpegFile}"`,
-            async (Error) => {
-              if (Error) {
-                console.log(
-                  `⬡═══════════════════| 🔺𝐅𝐅𝐦𝐩𝐞𝐠 𝐄𝐫𝐫𝐨𝐫🔺 |═══════════════════⬡` +
-                    Error
-                );
-                userBadge.Limits = userBadge.Limits + 1;
-                await userBadge
-                  .save()
-                  .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-                return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
-              } else {
-                console.log(
-                  `⬡═══════════════════| 🥂𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐅𝐢𝐧𝐢𝐬𝐞𝐝🥂 |═══════════════════⬡`
-                );
-                await ӄʀǟӄɨռʐ
-                  .sendMessage(
-                    ֆǟӄʊʀǟ.chatId,
-                    fs.readFileSync(FFmpegFile),
-                    MessageType.audio,
-                    {
-                      quoted: chat,
-                      mimetype: "audio/mp4",
-                    }
-                  )
-                  .then(cleanRF.cleanRF(FFmpegFile))
-                  .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-                return;
+    try {
+      YouTube_Music(Found.url).then((res) => {
+        const { dl_link, thumb, title, filesizeF, filesize } = res;
+        TinyURL.shorten(dl_link).then(
+          async function (DirectFile) {
+            require(`child_process`).exec(
+              `ffmpeg -i "${DirectFile}" "${FFmpegFile}"`,
+              async (Error) => {
+                if (Error) {
+                  console.log(
+                    `⬡═══════════════════| 🔺𝐅𝐅𝐦𝐩𝐞𝐠 𝐄𝐫𝐫𝐨𝐫🔺 |═══════════════════⬡` +
+                      Error
+                  );
+                  userBadge.Limits = userBadge.Limits + 1;
+                  await userBadge
+                    .save()
+                    .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+                  return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
+                } else {
+                  console.log(
+                    `⬡═══════════════════| 🥂𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐅𝐢𝐧𝐢𝐬𝐞𝐝🥂 |═══════════════════⬡`
+                  );
+                  await ӄʀǟӄɨռʐ
+                    .sendMessage(
+                      ֆǟӄʊʀǟ.chatId,
+                      fs.readFileSync(FFmpegFile),
+                      MessageType.audio,
+                      {
+                        quoted: chat,
+                        mimetype: "audio/mp4",
+                      }
+                    )
+                    .then(cleanRF.cleanRF(FFmpegFile))
+                    .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+                  return;
+                }
               }
+            );
+          },
+          async function (Error) {
+            console.log(`⬡═══════════════════| 🐞𝐄𝐫𝐫𝐨𝐫: ` + Error);
+            userBadge.Limits = userBadge.Limits + 1;
+            await userBadge
+              .save()
+              .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+            return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
+          }
+        );
+      });
+    } catch (error) {
+      const downloadFFmpegFile = ytdl(Found.url, { filter: "audioonly" });
+      const writeStream = fs.createWriteStream(FFmpegFile);
+      downloadFFmpegFile.pipe(writeStream);
+      downloadFFmpegFile.on("end", () => {
+        console.log(
+          `⬡═══════════════════| 🥂𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐅𝐢𝐧𝐢𝐬𝐞𝐝🥂 |═══════════════════⬡`
+        );
+        ӄʀǟӄɨռʐ
+          .sendMessage(
+            ֆǟӄʊʀǟ.chatId,
+            fs.readFileSync(FFmpegFile),
+            MessageType.audio,
+            {
+              quoted: chat,
+              mimetype: "audio/mp4",
             }
-          );
-        },
-        async function (Error) {
-          console.log(`⬡═══════════════════| 🐞𝐄𝐫𝐫𝐨𝐫: ` + Error);
-          userBadge.Limits = userBadge.Limits + 1;
-          await userBadge
-            .save()
-            .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-          return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
-        }
-      );
-    });
+          )
+          .then(cleanRF.cleanRF(FFmpegFile))
+          .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+        return;
+      });
+    }
   };
 } catch (Error) {
   ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
