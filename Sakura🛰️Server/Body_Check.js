@@ -18,7 +18,6 @@ function Body_Check(Argument) {
   if (
     !Regex.Whatsapp.test(Argument) &&
     !Regex.VideoURL.test(Argument) &&
-    !Regex.VideoID.test(Argument) &&
     !Regex.PlaylistID.test(Argument) &&
     !Regex.PlaylistURL.test(Argument) &&
     !Regex.SCTrack.test(Argument) &&
@@ -42,3 +41,17 @@ function Body_Check(Argument) {
   }
 }
 module.exports.Body_Check = Body_Check;
+// if (Regex.VideoID.test(GotBody) === true) {
+//   console.log(Regex.VideoID.test(GotBody));
+// } else if (Regex.VideoURL.test(GotBody) === true) {
+//   console.log(Regex.VideoURL.test(GotBody));
+// } else if (Regex.PlaylistID.test(GotBody) === true) {
+//   console.log(Regex.PlaylistID.test(GotBody));
+// } else if (Regex.PlaylistURL.test(GotBody) === true) {
+//   console.log(Regex.PlaylistURL.test(GotBody));
+// } else if (Regex.SCTrack.test(GotBody) === true) {
+//   console.log(Regex.SCTrack.test(GotBody));
+// } else if (Regex.SCPlaylist.test(GotBody) === true) {
+//   console.log(Regex.SCPlaylist.test(GotBody));
+// } else if (Regex.Spotify.test(GotBody) === true) {
+//   console.log(Regex.Spotify.test(GotBody));
