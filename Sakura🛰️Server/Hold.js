@@ -10,23 +10,19 @@ if (ֆǟӄʊʀǟ.isSenderDev) {
 const jsoncool = await JSON.parse(fs.readFileSync(File));
 await jsoncool.push(ֆǟӄʊʀǟ.sender);
 fs.writeFileSync(File, JSON.stringify(jsoncool));
-console.log("⬡═══════════════════|✏️ 𝐋𝐨𝐠𝐠𝐞𝐝: " + ֆǟӄʊʀǟ.sender);
 setTimeout((Error) => {
 if (Error) return console.log(Error);
 jsoncool.splice(ֆǟӄʊʀǟ.sender);
 fs.writeFileSync(File, JSON.stringify(jsoncool));
-console.log("⬡═══════════════════|✏️ 𝐔𝐧𝐋𝐨𝐠𝐠𝐞𝐝: " + ֆǟӄʊʀǟ.sender);
 }, 5000);
 } else {
 const jsoncool = await JSON.parse(fs.readFileSync(File));
 await jsoncool.push(ֆǟӄʊʀǟ.sender);
 fs.writeFileSync(File, JSON.stringify(jsoncool));
-console.log("⬡═══════════════════|✏️ 𝐋𝐨𝐠𝐠𝐞𝐝: " + ֆǟӄʊʀǟ.sender);
 setTimeout((Error) => {
 if (Error) return console.log(Error);
 jsoncool.splice(ֆǟӄʊʀǟ.sender);
 fs.writeFileSync(File, JSON.stringify(jsoncool));
-console.log("⬡═══════════════════|✏️ 𝐔𝐧𝐋𝐨𝐠𝐠𝐞𝐝: " + ֆǟӄʊʀǟ.sender);
 }, 15000);
 }
 };
