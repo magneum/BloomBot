@@ -4,27 +4,27 @@
 `|🍹|`;
 `|🍹|`;
 exports.Hold = async (ֆǟӄʊʀǟ) => {
-const fs = require("fs");
-const File = "./Sakura🛰️Server/Coolist.json";
-if (ֆǟӄʊʀǟ.isSenderDev) {
-const jsoncool = await JSON.parse(fs.readFileSync(File));
-await jsoncool.push(ֆǟӄʊʀǟ.sender);
-fs.writeFileSync(File, JSON.stringify(jsoncool));
-setTimeout((Error) => {
-if (Error) return console.log(Error);
-jsoncool.splice(ֆǟӄʊʀǟ.sender);
-fs.writeFileSync(File, JSON.stringify(jsoncool));
-}, 5000);
-} else {
-const jsoncool = await JSON.parse(fs.readFileSync(File));
-await jsoncool.push(ֆǟӄʊʀǟ.sender);
-fs.writeFileSync(File, JSON.stringify(jsoncool));
-setTimeout((Error) => {
-if (Error) return console.log(Error);
-jsoncool.splice(ֆǟӄʊʀǟ.sender);
-fs.writeFileSync(File, JSON.stringify(jsoncool));
-}, 15000);
-}
+  const fs = require("fs");
+  const File = "./Sakura🛰️Server/Coolist.json";
+  if (ֆǟӄʊʀǟ.isSenderDev) {
+    const jsoncool = await JSON.parse(fs.readFileSync(File));
+    await jsoncool.push(ֆǟӄʊʀǟ.sender);
+    fs.writeFileSync(File, JSON.stringify(jsoncool));
+    setTimeout((Error) => {
+      if (Error) return console.log(Error);
+      jsoncool.splice(ֆǟӄʊʀǟ.sender);
+      fs.writeFileSync(File, JSON.stringify(jsoncool));
+    }, 5000);
+  } else {
+    const jsoncool = await JSON.parse(fs.readFileSync(File));
+    await jsoncool.push(ֆǟӄʊʀǟ.sender);
+    fs.writeFileSync(File, JSON.stringify(jsoncool));
+    setTimeout((Error) => {
+      if (Error) return console.log(Error);
+      jsoncool.splice(ֆǟӄʊʀǟ.sender);
+      fs.writeFileSync(File, JSON.stringify(jsoncool));
+    }, 15000);
+  }
 };
 `|🍹|`;
 `|🍹|`;

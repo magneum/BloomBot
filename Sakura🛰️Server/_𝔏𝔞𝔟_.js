@@ -5,41 +5,41 @@
 `|🍹|`;
 const fs = require(`fs`);
 if (fs.existsSync(`🍹ֆǟӄʊʀǟ™.env`)) {
-require(`dotenv`).config({
-path: `./🍹ֆǟӄʊʀǟ™.env`,
-});
+  require(`dotenv`).config({
+    path: `./🍹ֆǟӄʊʀǟ™.env`,
+  });
 } else {
-require(`dotenv`);
+  require(`dotenv`);
 }
 const env = {
-DEVL: process.env.DEVL === undefined ? `No` : process.env.DEVL,
-SAKURA: process.env.SAKURA === undefined ? `Null` : process.env.SAKURA,
-SAKURAMDB:
-process.env.SAKURAMDB === undefined ? `Null` : process.env.SAKURAMDB,
-HEROKU_API_KEY:
-process.env.HEROKU_API_KEY === undefined
-? `Null`
-: process.env.HEROKU_API_KEY,
-HEROKU_APP_NAME:
-process.env.HEROKU_APP_NAME === undefined
-? `Null`
-: process.env.HEROKU_APP_NAME,
-IMDB: process.env.IMDB,
-FOXTROT: `^[${process.env.FOXTROT}]`,
-CCD: process.env.CCD,
-OCR: process.env.OCR,
-TEN: process.env.TEN,
-WAPI: process.env.WAPI,
-MEE: `./Sakura☣️Reactor/ֆǟӄʊʀǟ.png`,
-HASH: `https://chat.whatsapp.com/LKN8uVBd8ucHRHofz0jBSd`,
-HASHS: `https://chat.whatsapp.com/HKO5WLEZxMe3xWCyiv6vBu`,
-HASHREQ: `https://chat.whatsapp.com/EIn3YFShFmkJ3fvAqf2rpn`,
-Kate:
-process.env.Kate === undefined
-? `918436686758,917430922909`
-: process.env.Kate,
-HEROKU: process.env.HEROKU,
-PRIVACY: process.env.PRIVACY === undefined ? `public` : process.env.PRIVACY,
+  DEVL: process.env.DEVL === undefined ? `No` : process.env.DEVL,
+  SAKURA: process.env.SAKURA === undefined ? `Null` : process.env.SAKURA,
+  SAKURAMDB:
+    process.env.SAKURAMDB === undefined ? `Null` : process.env.SAKURAMDB,
+  HEROKU_API_KEY:
+    process.env.HEROKU_API_KEY === undefined
+      ? `Null`
+      : process.env.HEROKU_API_KEY,
+  HEROKU_APP_NAME:
+    process.env.HEROKU_APP_NAME === undefined
+      ? `Null`
+      : process.env.HEROKU_APP_NAME,
+  IMDB: process.env.IMDB,
+  FOXTROT: `^[${process.env.FOXTROT}]`,
+  CCD: process.env.CCD,
+  OCR: process.env.OCR,
+  TEN: process.env.TEN,
+  WAPI: process.env.WAPI,
+  MEE: `./Sakura☣️Reactor/ֆǟӄʊʀǟ.png`,
+  HASH: `https://chat.whatsapp.com/LKN8uVBd8ucHRHofz0jBSd`,
+  HASHS: `https://chat.whatsapp.com/HKO5WLEZxMe3xWCyiv6vBu`,
+  HASHREQ: `https://chat.whatsapp.com/EIn3YFShFmkJ3fvAqf2rpn`,
+  Kate:
+    process.env.Kate === undefined
+      ? `918436686758,917430922909`
+      : process.env.Kate,
+  HEROKU: process.env.HEROKU,
+  PRIVACY: process.env.PRIVACY === undefined ? `public` : process.env.PRIVACY,
 };
 module.exports = env;
 `|🍹|`;

@@ -16,58 +16,60 @@ const TinyURL = require("tinyurl");
 const fs = require(`fs`);
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
 exports.FFmpegVideo = async (ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat, Found, userBadge) => {
-try {
-var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
-const defaultnm = ֆǟӄʊʀǟ.commandName;
-var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15).replace(/[+ ]/g, "");
-const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
-var FFmpegFile = `./Sakura☕Shop/${Date.now().toString()}_${աɦօֆɛռȶɦǟȶ.toString()}.mp4`;
-`|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-await Sakura_Buttons.MTB(
-ӄʀǟӄɨռʐ,
-chat,
-ֆǟӄʊʀǟ,
-`🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
+  try {
+    var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
+    const defaultnm = ֆǟӄʊʀǟ.commandName;
+    var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ
+      .substring(0, աɦօֆɛռȶɦǟȶ.length - 15)
+      .replace(/[+ ]/g, "");
+    const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
+    var FFmpegFile = `./Sakura☕Shop/${Date.now().toString()}_${աɦօֆɛռȶɦǟȶ.toString()}.mp4`;
+    `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+    await Sakura_Buttons.MTB(
+      ӄʀǟӄɨռʐ,
+      chat,
+      ֆǟӄʊʀǟ,
+      `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
 
 ╔════◇🌿𝗣𝗹𝗲𝗮𝘀𝗲 𝘄𝗮𝗶𝘁!
 ║🎬 𝗙𝗶𝗹𝗲 𝗧𝘆𝗽𝗲: _Video_
 ║⏰ 𝗪𝗮𝗶𝘁 𝗧𝗶𝗺𝗲: _Depends on Length of file._
 ╚════════════╝`
-);
-`|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-YouTube_Video(Found.url).then((res) => {
-const { dl_link, thumb, title, filesizeF, filesize } = res;
-TinyURL.shorten(dl_link).then(
-async function (DirectFile) {
-require(`child_process`).exec(
-`ffmpeg -i '${DirectFile}' '${FFmpegFile}'`,
-async (Error) => {
-if (Error) {
-console.log(
-`⬡═══════════════════| 🔺𝐅𝐅𝐦𝐩𝐞𝐠 𝐄𝐫𝐫𝐨𝐫🔺 |═══════════════════⬡` +
-Error
-);
-userBadge.Limits = userBadge.Limits + 1;
-await userBadge
-.save()
-.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
-} else {
-console.log(
-`⬡═══════════════════| 🥂𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐅𝐢𝐧𝐢𝐬𝐞𝐝🥂 |═══════════════════⬡`
-);
-try {
-const media = await ӄʀǟӄɨռʐ.prepareMessage(
-ֆǟӄʊʀǟ.chatId,
-fs.readFileSync(FFmpegFile),
-MessageType.video,
-{ mimetype: "video/mp4" }
-);
-await ӄʀǟӄɨռʐ
-.sendMessage(
-ֆǟӄʊʀǟ.chatId,
-{
-contentText: `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
+    );
+    `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+    YouTube_Video(Found.url).then((res) => {
+      const { dl_link, thumb, title, filesizeF, filesize } = res;
+      TinyURL.shorten(dl_link).then(
+        async function (DirectFile) {
+          require(`child_process`).exec(
+            `ffmpeg -i '${DirectFile}' '${FFmpegFile}'`,
+            async (Error) => {
+              if (Error) {
+                console.log(
+                  `⬡═══════════════════| 🔺𝐅𝐅𝐦𝐩𝐞𝐠 𝐄𝐫𝐫𝐨𝐫🔺 |═══════════════════⬡` +
+                    Error
+                );
+                userBadge.Limits = userBadge.Limits + 1;
+                await userBadge
+                  .save()
+                  .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+                return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
+              } else {
+                console.log(
+                  `⬡═══════════════════| 🥂𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐅𝐢𝐧𝐢𝐬𝐞𝐝🥂 |═══════════════════⬡`
+                );
+                try {
+                  const media = await ӄʀǟӄɨռʐ.prepareMessage(
+                    ֆǟӄʊʀǟ.chatId,
+                    fs.readFileSync(FFmpegFile),
+                    MessageType.video,
+                    { mimetype: "video/mp4" }
+                  );
+                  await ӄʀǟӄɨռʐ
+                    .sendMessage(
+                      ֆǟӄʊʀǟ.chatId,
+                      {
+                        contentText: `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
 
 ╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
 ║🍻 𝗧𝗶𝘁𝗹𝗲: ${Found.title}
@@ -79,63 +81,63 @@ contentText: `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռ
 ║🦋 𝗗𝗶𝗿𝗲𝗰𝘁-𝗗𝗹: ${DirectFile}
 ║🔗 𝗟𝗶𝗻𝗸: ${Found.url}
 ╚════════════╝`,
-footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐁𝐨𝐭 ⏋\n⎿ 𝐄𝐧𝐠𝐢𝐧𝐞: ᴋʀʏᴛᴇᴋ-v${vers.vers} ⏋`,
-buttons: [
-{
-buttonId: `${ᴋᴇɪ}help`,
-buttonText: { displayText: `${ᴋᴇɪ}help` },
-type: 1,
-},
-],
-headerType: 5,
-videoMessage: media.message.videoMessage,
-},
-MessageType.buttonsMessage,
-{
-quoted: chat,
-contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
-}
-)
-.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-await cleanRF.cleanRF(FFmpegFile);
-} catch (Error) {
-console.log(
-`⬡═══════════════════| 🔺𝐅𝐅𝐦𝐩𝐞𝐠 𝐄𝐫𝐫𝐨𝐫🔺 |═══════════════════⬡` +
-Error
-);
-userBadge.Limits = userBadge.Limits + 1;
-await userBadge
-.save()
-.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
-}
-}
-}
-);
-},
-async function (Error) {
-console.log(`⬡═══════════════════| 🐞𝐄𝐫𝐫𝐨𝐫: ` + Error);
-userBadge.Limits = userBadge.Limits + 1;
-await userBadge
-.save()
-.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
-}
-);
-});
-`|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-} catch (Error) {
-userBadge.Limits = userBadge.Limits + 1;
-await userBadge
-.save()
-.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
-var childs = require(`child_process`).exec(`python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`);
-childs.stdout.pipe(process.stdout);
-childs.on(`exit`, async function () {
-process.exitCode = 1;
-});
-}
+                        footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐁𝐨𝐭 ⏋\n⎿ 𝐄𝐧𝐠𝐢𝐧𝐞: ᴋʀʏᴛᴇᴋ-v${vers.vers} ⏋`,
+                        buttons: [
+                          {
+                            buttonId: `${ᴋᴇɪ}help`,
+                            buttonText: { displayText: `${ᴋᴇɪ}help` },
+                            type: 1,
+                          },
+                        ],
+                        headerType: 5,
+                        videoMessage: media.message.videoMessage,
+                      },
+                      MessageType.buttonsMessage,
+                      {
+                        quoted: chat,
+                        contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
+                      }
+                    )
+                    .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+                  await cleanRF.cleanRF(FFmpegFile);
+                } catch (Error) {
+                  console.log(
+                    `⬡═══════════════════| 🔺𝐅𝐅𝐦𝐩𝐞𝐠 𝐄𝐫𝐫𝐨𝐫🔺 |═══════════════════⬡` +
+                      Error
+                  );
+                  userBadge.Limits = userBadge.Limits + 1;
+                  await userBadge
+                    .save()
+                    .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+                  return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
+                }
+              }
+            }
+          );
+        },
+        async function (Error) {
+          console.log(`⬡═══════════════════| 🐞𝐄𝐫𝐫𝐨𝐫: ` + Error);
+          userBadge.Limits = userBadge.Limits + 1;
+          await userBadge
+            .save()
+            .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+          return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
+        }
+      );
+    });
+    `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+  } catch (Error) {
+    userBadge.Limits = userBadge.Limits + 1;
+    await userBadge
+      .save()
+      .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+    return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
+    var childs = require(`child_process`).exec(`python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`);
+    childs.stdout.pipe(process.stdout);
+    childs.on(`exit`, async function () {
+      process.exitCode = 1;
+    });
+  }
 };
 `|⬡════════════════════════════════════════════|                            |═══════════════════════════════════════════⬡|`;
 `|                                                                                                                        |`;
