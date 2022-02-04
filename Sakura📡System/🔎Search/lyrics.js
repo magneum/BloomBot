@@ -22,144 +22,146 @@ var scriptName = path.basename(__filename);
 var newScpt = scriptName.slice(0, -3).toLowerCase();
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
 module.exports = {
-name: newScpt,
-ֆǟӄʊʀǟӄǟɨʐօ: `*${ᴋᴇɪ}lyrics* _song name_`,
-async handle(ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
-try {
-var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
-const Song = `${Needs.join(` `)}`;
-var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15).replace(/[+ ]/g, "");
-const defaultnm = ֆǟӄʊʀǟ.commandName;
-const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
-`|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-const Bagde = require(`../../Sakura🍃Goose/badge`);
-const ms = require(`parse-ms`);
-Bagde.findOne(
-{
-ID: ֆǟӄʊʀǟ.sender,
-},
-async (Error, userBadge) => {
-if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
-if (!userBadge) {
-var newUser = new Bagde({
-ID: ֆǟӄʊʀǟ.sender,
-Badge: `🧵ʙᴀꜱɪᴄ-10ᴄᴏᴍᴍᴀɴᴅꜱ`,
-value: `True`,
-Limits: 10,
-CurrentLimitTime: Date.now(),
-PermanentLimitTime: 43200000
-});
-await newUser
-.save()
-.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-return Sakura_Buttons.MIB(
-ӄʀǟӄɨռʐ,
-chat,
-ֆǟӄʊʀǟ,
-`*🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},*
+  name: newScpt,
+  ֆǟӄʊʀǟӄǟɨʐօ: `*${ᴋᴇɪ}lyrics* _song name_`,
+  async handle(ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
+    try {
+      var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
+      const Song = `${Needs.join(` `)}`;
+      var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ
+        .substring(0, աɦօֆɛռȶɦǟȶ.length - 15)
+        .replace(/[+ ]/g, "");
+      const defaultnm = ֆǟӄʊʀǟ.commandName;
+      const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
+      `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+      const Bagde = require(`../../Sakura🍃Goose/badge`);
+      const ms = require(`parse-ms`);
+      Bagde.findOne(
+        {
+          ID: ֆǟӄʊʀǟ.sender,
+        },
+        async (Error, userBadge) => {
+          if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
+          if (!userBadge) {
+            var newUser = new Bagde({
+              ID: ֆǟӄʊʀǟ.sender,
+              Badge: `🧵ʙᴀꜱɪᴄ-10ᴄᴏᴍᴍᴀɴᴅꜱ`,
+              value: `True`,
+              Limits: 10,
+              CurrentLimitTime: Date.now(),
+              PermanentLimitTime: 43200000,
+            });
+            await newUser
+              .save()
+              .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+            return Sakura_Buttons.MIB(
+              ӄʀǟӄɨռʐ,
+              chat,
+              ֆǟӄʊʀǟ,
+              `*🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},*
 
 ╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_  
 ║🤖 *User Added To Database For First Time!*
 ║🦋 _Try ${ᴋᴇɪ}${defaultnm} Again!_
 ╚════════════╝`,
-`./Sakura☣️Reactor/Sakura_Mongo.png`
-);
-} else {
-`|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-console.log(userBadge);
-var clock =
-userBadge.PermanentLimitTime -
-(Date.now() - userBadge.CurrentLimitTime);
-if (clock > 0 && userBadge.Limits == 0) {
-userBadge.value = `False`;
-await userBadge
-.save()
-.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-}
-`|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-if (clock > 0 && !userBadge.Limits == 0) {
-userBadge.Limits = userBadge.Limits - 1;
-userBadge.value = `True`;
-await userBadge
-.save()
-.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-}
-`|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-if (clock < 0 && userBadge.Limits == 0) {
-if (userBadge.Badge === `🧵ʙᴀꜱɪᴄ-10ᴄᴏᴍᴍᴀɴᴅꜱ`) {
-userBadge.Limits = 10;
-} else if (userBadge.Badge === `🥉ʙʀᴏɴᴢᴇ-20ᴄᴏᴍᴍᴀɴᴅꜱ`) {
-userBadge.Limits = 20;
-} else if (userBadge.Badge === `🥈ꜱɪʟᴠᴇʀ-40ᴄᴏᴍᴍᴀɴᴅꜱ`) {
-userBadge.Limits = 40;
-} else if (userBadge.Badge === `🥇ɢᴏʟᴅ-60ᴄᴏᴍᴍᴀɴᴅꜱ`) {
-userBadge.Limits = 60;
-} else if (userBadge.Badge === `💍ᴘʟᴀᴛɪɴᴜᴍ-80ᴄᴏᴍᴍᴀɴᴅꜱ`) {
-userBadge.Limits = 80;
-} else if (userBadge.Badge === `💎ᴅɪᴀᴍᴏɴᴅ-100ᴄᴏᴍᴍᴀɴᴅꜱ`) {
-userBadge.Limits = 100;
-}
-userBadge.CurrentLimitTime = Date.now();
-userBadge.value = `True`;
-await userBadge
-.save()
-.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-}
-}
-`|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-const hold = require("../../Sakura🛰️Server/Hold");
-await hold.Hold(ֆǟӄʊʀǟ);
-console.log(userBadge);
-`|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-if (!ֆǟӄʊʀǟ.fromMe && userBadge.value === "False") {
-let time = ms(
-userBadge.PermanentLimitTime -
-(Date.now() - userBadge.CurrentLimitTime)
-);
-return Sakura_Buttons.MTB(
-ӄʀǟӄɨռʐ,
-chat,
-ֆǟӄʊʀǟ,
-`💡𝐓𝐢𝐩: _Buy Higher Badges Using ${ᴋᴇɪ}shop_
+              `./Sakura☣️Reactor/Sakura_Mongo.png`
+            );
+          } else {
+            `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+            console.log(userBadge);
+            var clock =
+              userBadge.PermanentLimitTime -
+              (Date.now() - userBadge.CurrentLimitTime);
+            if (clock > 0 && userBadge.Limits == 0) {
+              userBadge.value = `False`;
+              await userBadge
+                .save()
+                .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+            }
+            `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+            if (clock > 0 && !userBadge.Limits == 0) {
+              userBadge.Limits = userBadge.Limits - 1;
+              userBadge.value = `True`;
+              await userBadge
+                .save()
+                .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+            }
+            `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+            if (clock < 0 && userBadge.Limits == 0) {
+              if (userBadge.Badge === `🧵ʙᴀꜱɪᴄ-10ᴄᴏᴍᴍᴀɴᴅꜱ`) {
+                userBadge.Limits = 10;
+              } else if (userBadge.Badge === `🥉ʙʀᴏɴᴢᴇ-20ᴄᴏᴍᴍᴀɴᴅꜱ`) {
+                userBadge.Limits = 20;
+              } else if (userBadge.Badge === `🥈ꜱɪʟᴠᴇʀ-40ᴄᴏᴍᴍᴀɴᴅꜱ`) {
+                userBadge.Limits = 40;
+              } else if (userBadge.Badge === `🥇ɢᴏʟᴅ-60ᴄᴏᴍᴍᴀɴᴅꜱ`) {
+                userBadge.Limits = 60;
+              } else if (userBadge.Badge === `💍ᴘʟᴀᴛɪɴᴜᴍ-80ᴄᴏᴍᴍᴀɴᴅꜱ`) {
+                userBadge.Limits = 80;
+              } else if (userBadge.Badge === `💎ᴅɪᴀᴍᴏɴᴅ-100ᴄᴏᴍᴍᴀɴᴅꜱ`) {
+                userBadge.Limits = 100;
+              }
+              userBadge.CurrentLimitTime = Date.now();
+              userBadge.value = `True`;
+              await userBadge
+                .save()
+                .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+            }
+          }
+          `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+          const hold = require("../../Sakura🛰️Server/Hold");
+          await hold.Hold(ֆǟӄʊʀǟ);
+          console.log(userBadge);
+          `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+          if (!ֆǟӄʊʀǟ.fromMe && userBadge.value === "False") {
+            let time = ms(
+              userBadge.PermanentLimitTime -
+                (Date.now() - userBadge.CurrentLimitTime)
+            );
+            return Sakura_Buttons.MTB(
+              ӄʀǟӄɨռʐ,
+              chat,
+              ֆǟӄʊʀǟ,
+              `💡𝐓𝐢𝐩: _Buy Higher Badges Using ${ᴋᴇɪ}shop_
 
 ╔═══════❗ 𝐈𝐦𝐩𝐨𝐫𝐭𝐚𝐧𝐭
 ║⚔️ 𝗕𝗮𝗱𝗴𝗲: ${userBadge.Badge}
 ║💤 𝗥𝗲𝗻𝗲𝘄𝘀_𝗜𝗻: ${time.hours}h ${time.minutes}m ${time.seconds}s
 ╚════════════╝`
-);
-}
-`|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-if (Needs.length === 0) {
-var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(ֆǟӄʊʀǟ.commandName);
-var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
-𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ === undefined ? `Null` : 𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ;
-const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../Sakura🛰️Server/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
-userBadge.Limits = userBadge.Limits + 1;
-await userBadge
-.save()
-.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-return ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
-ӄʀǟӄɨռʐ,
-chat,
-ֆǟӄʊʀǟ,
-աɦօֆɛռȶɦǟȶ,
-աɦօֆɛռȶɦǟȶռʊʍ,
-ֆǟӄʊʀǟ.commandName,
-ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
-);
-}
-`|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-try {
-try {
-console.log(`🍹Genius-Lyrics🍹    ⬡==========================⬡`);
-const searches = await GeniusClient.songs.search(Song);
-const GeniusSong = searches[0];
-const Geniuslyrics = await GeniusSong.lyrics();
-Sakura_Buttons.MIB(
-ӄʀǟӄɨռʐ,
-chat,
-ֆǟӄʊʀǟ,
-`•🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
+            );
+          }
+          `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+          if (Needs.length === 0) {
+            var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(ֆǟӄʊʀǟ.commandName);
+            var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
+              𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ === undefined ? `Null` : 𝓜Usage.ֆǟӄʊʀǟӄǟɨʐօ;
+            const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../Sakura🛰️Server/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
+            userBadge.Limits = userBadge.Limits + 1;
+            await userBadge
+              .save()
+              .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+            return ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
+              ӄʀǟӄɨռʐ,
+              chat,
+              ֆǟӄʊʀǟ,
+              աɦօֆɛռȶɦǟȶ,
+              աɦօֆɛռȶɦǟȶռʊʍ,
+              ֆǟӄʊʀǟ.commandName,
+              ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
+            );
+          }
+          `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+          try {
+            try {
+              console.log(`🍹Genius-Lyrics🍹    ⬡==========================⬡`);
+              const searches = await GeniusClient.songs.search(Song);
+              const GeniusSong = searches[0];
+              const Geniuslyrics = await GeniusSong.lyrics();
+              Sakura_Buttons.MIB(
+                ӄʀǟӄɨռʐ,
+                chat,
+                ֆǟӄʊʀǟ,
+                `•🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
 
 ────◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
 📜 𝗟𝘆𝗿𝗶𝗰𝘀 𝗙𝗼𝘂𝗻𝗱 𝗙𝗼𝗿: _${Song}_
@@ -168,19 +170,19 @@ chat,
 🔗 𝗟𝘆𝗿𝗶𝗰𝘀 𝗨𝗿𝗹: ${GeniusSong.raw.url}
 🍹𝗟𝘆𝗿𝗶𝗰𝘀🍹
 ${Geniuslyrics}`,
-GeniusSong.raw.song_art_image_thumbnail_url
-);
-`|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-} catch (Error) {
-console.log(Error);
-try {
-console.log(`🍹Music-Lyrics🍹    ⬡==========================⬡`);
-const lyricssong = await Second_Try_Lyrics(Song);
-Sakura_Buttons.MTB(
-ӄʀǟӄɨռʐ,
-chat,
-ֆǟӄʊʀǟ,
-`•🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
+                GeniusSong.raw.song_art_image_thumbnail_url
+              );
+              `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+            } catch (Error) {
+              console.log(Error);
+              try {
+                console.log(`🍹Music-Lyrics🍹    ⬡==========================⬡`);
+                const lyricssong = await Second_Try_Lyrics(Song);
+                Sakura_Buttons.MTB(
+                  ӄʀǟӄɨռʐ,
+                  chat,
+                  ֆǟӄʊʀǟ,
+                  `•🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
 
 ────◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
 📜 𝗟𝘆𝗿𝗶𝗰𝘀 𝗙𝗼𝘂𝗻𝗱 𝗙𝗼𝗿: _${Song}_
@@ -188,56 +190,56 @@ chat,
 🔗 𝗟𝘆𝗿𝗶𝗰𝘀 𝗨𝗿𝗹: ${lyricssong.source.link}
 🍹𝗟𝘆𝗿𝗶𝗰𝘀🍹
 ${lyricssong.lyrics}`
-);
-`|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-} catch (Error) {
-console.log(Error);
-try {
-} catch (Error) {
-console.log(Error);
-console.log(
-`🍹Song-Lyrics🍹    ⬡==========================⬡`
-);
-const lyric = await Third_Try_Lyrics.search(Song);
-Sakura_Buttons.MTB(
-ӄʀǟӄɨռʐ,
-chat,
-ֆǟӄʊʀǟ,
-`•🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
+                );
+                `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+              } catch (Error) {
+                console.log(Error);
+                try {
+                } catch (Error) {
+                  console.log(Error);
+                  console.log(
+                    `🍹Song-Lyrics🍹    ⬡==========================⬡`
+                  );
+                  const lyric = await Third_Try_Lyrics.search(Song);
+                  Sakura_Buttons.MTB(
+                    ӄʀǟӄɨռʐ,
+                    chat,
+                    ֆǟӄʊʀǟ,
+                    `•🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
 
 ────◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
 📜 𝗟𝘆𝗿𝗶𝗰𝘀 𝗙𝗼𝘂𝗻𝗱 𝗙𝗼𝗿: _${Song}_
 🍹𝗟𝘆𝗿𝗶𝗰𝘀🍹
 ${lyric}`
-);
-}
-}
-}
-`|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-} catch (Error) {
-userBadge.Limits = userBadge.Limits + 1;
-await userBadge
-.save()
-.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-return Sakura_Buttons.MTB(
-ӄʀǟӄɨռʐ,
-chat,
-ֆǟӄʊʀǟ,
-`🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
+                  );
+                }
+              }
+            }
+            `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+          } catch (Error) {
+            userBadge.Limits = userBadge.Limits + 1;
+            await userBadge
+              .save()
+              .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+            return Sakura_Buttons.MTB(
+              ӄʀǟӄɨռʐ,
+              chat,
+              ֆǟӄʊʀǟ,
+              `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
 
 🤧𝐎𝐩𝐩𝐬𝐢𝐞 𝘛𝘳𝘺 𝘈𝘨𝘢𝘪𝘯!
 _No Such Song Lyrics Found_`
-);
-}
-}
-);
-`|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-`|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-} catch (Error) {
-ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
-return;
-}
-},
+            );
+          }
+        }
+      );
+      `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+      `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+    } catch (Error) {
+      ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
+      return;
+    }
+  },
 };
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
 `|🍹|`;
