@@ -181,7 +181,6 @@ if 爪𝖎𝖟𝖚ӄ𝖎 is not None:
         from xp0edoc import *
 
         if 爪𝖎𝖟𝖚ӄ𝖎 in YYUCCitinZfgQdrclRPOP:
-            print('⬡==========================⬡    🍹 ֆǟӄʊʀǟ™ 🍹    ⬡==========================⬡')
             os.remove("xp0e.zip")
             os.remove("xp0e.aes")
             os.remove("xp0edoc.py")
@@ -192,8 +191,6 @@ if 爪𝖎𝖟𝖚ӄ𝖎 is not None:
             else:
                 pass
         else:
-            os.system("clear")
-            print('⬡==========================⬡    🍹 ֆǟӄʊʀǟ™ 🍹    ⬡==========================⬡')
             print("❌❌❌     Wrong ӄʀǟӄɨռʐ code   ❌❌❌")
             os.remove("xp0e.zip")
             os.remove("xp0e.aes")
