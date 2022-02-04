@@ -1,0 +1,1 @@
+apt-get update &&  apt-get upgrade -y && apt-get install git -y && apt-get install curl -y && apt-get install ffmpeg -y && apt-get install nodejs -y && apt-get install python3 -y && apt-get install bpm-tools -y && apt-get install opus-tools -y &&  apt-get install python3-pip -y && apt-get install npm -y && npm install --global n && n install lts && path=path && hash -r
