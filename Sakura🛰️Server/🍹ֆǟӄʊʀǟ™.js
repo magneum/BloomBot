@@ -598,7 +598,8 @@ memberss[i] = gMetadataa.participants[i].jid;
 if (
 ֆǟӄʊʀǟ.isCmd &&
 !ֆǟӄʊʀǟ.isSenderDev &&
-!ֆǟӄʊʀǟ.body.includes(ᴋᴇɪ + "help")
+!ֆǟӄʊʀǟ.body.includes(ᴋᴇɪ + "help") &&
+!ֆǟӄʊʀǟ.body.includes(ᴋᴇɪ + "menu")
 )
 if (
 !members.includes(աɦօֆɛռȶɦǟȶ) &&
