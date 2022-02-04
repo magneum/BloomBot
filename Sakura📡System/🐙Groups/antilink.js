@@ -101,7 +101,7 @@ module.exports = {
                   serverID: ֆǟӄʊʀǟ.chatId,
                   value: "ON",
                 });
-                newServer
+                await newServer
                   .save()
                   .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
                 const media = await ӄʀǟӄɨռʐ.prepareMessage(
@@ -146,9 +146,6 @@ module.exports = {
                   )
                   .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
               } else {
-                server
-                  .save()
-                  .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
                 const media = await ӄʀǟӄɨռʐ.prepareMessage(
                   ֆǟӄʊʀǟ.chatId,
                   fs.readFileSync(`./Sakura☣️Reactor/Sakura_Antilink.png`),
@@ -245,7 +242,7 @@ module.exports = {
                   )
                   .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
               } else {
-                server
+                await server
                   .delete()
                   .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
                 const media = await ӄʀǟӄɨռʐ.prepareMessage(
