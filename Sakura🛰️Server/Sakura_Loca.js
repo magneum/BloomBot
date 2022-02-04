@@ -32,8 +32,8 @@ const Sakura_Loca = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, MainText) => {
           type: 1,
         },
         {
-          buttonId: `${ᴋᴇɪ}menu`,
-          buttonText: { displayText: `${ᴋᴇɪ}menu` },
+          buttonId: `${ᴋᴇɪ}faq`,
+          buttonText: { displayText: `${ᴋᴇɪ}faq` },
           type: 1,
         },
       ],
