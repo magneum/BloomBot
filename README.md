@@ -17,11 +17,9 @@
 ║ Sakura is an Advance Whatsapp User-Bot. You Can Use The Bot in this group or in your respective groups.
 ║
 ║ 2. How Do I add Sakura In My Group?
-║   -Send Your Group Link In: https://chat.whatsapp.com/EIn3YFShFmkJ3fvAqf2rpn
-║   -Tag any in that group and ask them to use /join command.
-║   -Remember No commands will work in that group!
 ║   -Your Group Should Have 10 members atleast.
 ║   -Turn Disappearing Message Off in your Gc.
+║   -Ask Any Admins Of Any Sakura-Groups!.
 ║
 ║ 3. I want to know how to deploy Sakura.
 ║ Not Allowed anymore!
