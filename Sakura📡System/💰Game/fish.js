@@ -93,7 +93,7 @@ module.exports = {
             },
             async (Error, userTime) => {
               if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
-              if (userTime && userTime.GotTime > 0) {
+              if (userTime.GotTime > 0) {
                 userTime.GotTime = 0;
                 Twaitup = userEco.fishdone - userTime.GotTime;
                 Redu = ms(userTime.GotTime);

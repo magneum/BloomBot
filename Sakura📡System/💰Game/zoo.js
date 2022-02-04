@@ -20,93 +20,95 @@ var scriptName = path.basename(__filename);
 var newScpt = scriptName.slice(0, -3).toLowerCase();
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
 module.exports = {
-name: newScpt,
-async handle(ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
-try {
-var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
-var defaultnm = ֆǟӄʊʀǟ.commandName;
-var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15).replace(/[+ ]/g, "");
-var FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
-if (Needs.length > 0 && Needs[0].startsWith("@")) {
-var TagPerson = ֆǟӄʊʀǟ.body.replace(
-ֆǟӄʊʀǟ.body[0] + ֆǟӄʊʀǟ.commandName + " ",
-""
-);
-var TagMention = TagPerson + "@s.whatsapp.net";
-}
-`|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-if (!ֆǟӄʊʀǟ.isGroup) {
-return Sakura_Buttons.MTB(
-ӄʀǟӄɨռʐ,
-chat,
-ֆǟӄʊʀǟ,
-`🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ}, 
+  name: newScpt,
+  async handle(ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
+    try {
+      var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
+      var defaultnm = ֆǟӄʊʀǟ.commandName;
+      var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ
+        .substring(0, աɦօֆɛռȶɦǟȶ.length - 15)
+        .replace(/[+ ]/g, "");
+      var FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
+      if (Needs.length > 0 && Needs[0].startsWith("@")) {
+        var TagPerson = ֆǟӄʊʀǟ.body.replace(
+          ֆǟӄʊʀǟ.body[0] + ֆǟӄʊʀǟ.commandName + " ",
+          ""
+        );
+        var TagMention = TagPerson + "@s.whatsapp.net";
+      }
+      `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+      if (!ֆǟӄʊʀǟ.isGroup) {
+        return Sakura_Buttons.MTB(
+          ӄʀǟӄɨռʐ,
+          chat,
+          ֆǟӄʊʀǟ,
+          `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ}, 
 
 ╔════◇🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧 
 ║💡 _This Command is Only For Groups!_
 ╚════════════╝`,
-Needs
-);
-}
-`|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-const hold = require(`../../Sakura🛰️Server/Hold`);
-await hold.Hold(ֆǟӄʊʀǟ);
-`|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-Economy.findOne(
-{
-ID: աɦօֆɛռȶɦǟȶ,
-},
-async (Error, userEco) => {
-if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
-if (!userEco) {
-var newUser = new Economy({
-ID: աɦօֆɛռȶɦǟȶ,
-money: 0,
-daily: 0,
-timeout: 86400000,
-fishdone: 0,
-fishtimeout: 1800000,
-workdone: 0,
-worktimeout: 900000,
-});
-await newUser
-.save()
-.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-return Sakura_Buttons.MIB(
-ӄʀǟӄɨռʐ,
-chat,
-ֆǟӄʊʀǟ,
-`*🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},*
+          Needs
+        );
+      }
+      `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+      const hold = require(`../../Sakura🛰️Server/Hold`);
+      await hold.Hold(ֆǟӄʊʀǟ);
+      `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+      Economy.findOne(
+        {
+          ID: աɦօֆɛռȶɦǟȶ,
+        },
+        async (Error, userEco) => {
+          if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
+          if (!userEco) {
+            var newUser = new Economy({
+              ID: աɦօֆɛռȶɦǟȶ,
+              money: 0,
+              daily: 0,
+              timeout: 86400000,
+              fishdone: 0,
+              fishtimeout: 1800000,
+              workdone: 0,
+              worktimeout: 900000,
+            });
+            await newUser
+              .save()
+              .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+            return Sakura_Buttons.MIB(
+              ӄʀǟӄɨռʐ,
+              chat,
+              ֆǟӄʊʀǟ,
+              `*🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},*
 
 ╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_  
 ║🤖 *User Added To Database For First Time!*
 ║◇ *Type:* _Just Bought A Zoo!_
 ╚════════════╝`,
-`./Sakura☣️Reactor/Sakura_Mongo.png`,
-Needs
-);
-}
+              `./Sakura☣️Reactor/Sakura_Mongo.png`,
+              Needs
+            );
+          }
 
-Zoology.findOne(
-{
-ID: աɦօֆɛռȶɦǟȶ,
-},
-async (Error, userZoo) => {
-if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
-if (!userZoo) {
-var newUser = new Zoology({
-ID: աɦօֆɛռȶɦǟȶ,
-zoodone: Date.now(),
-zootimeout: 1800000,
-});
-await newUser
-.save()
-.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-return Sakura_Buttons.MIB(
-ӄʀǟӄɨռʐ,
-chat,
-ֆǟӄʊʀǟ,
-`🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
+          Zoology.findOne(
+            {
+              ID: աɦօֆɛռȶɦǟȶ,
+            },
+            async (Error, userZoo) => {
+              if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
+              if (!userZoo) {
+                var newUser = new Zoology({
+                  ID: աɦօֆɛռȶɦǟȶ,
+                  zoodone: Date.now(),
+                  zootimeout: 1800000,
+                });
+                await newUser
+                  .save()
+                  .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+                return Sakura_Buttons.MIB(
+                  ӄʀǟӄɨռʐ,
+                  chat,
+                  ֆǟӄʊʀǟ,
+                  `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
 ╔◇══════════════◇╗
 ┊    𝐙𝐨𝐨🐆𝐎𝐰𝐧𝐞𝐫
 ╚◇══════════════◇╝
@@ -114,37 +116,37 @@ chat,
 ╔════◇🌿𝗡𝗮𝗺𝗲: _Amature Zoo Keeper!_
 ║◇ *Type:* _Nothing Found_
 ╚════════════╝`,
-`./Sakura☣️Reactor/Sakura_Zoo.png`,
-Needs
-);
-}
-`|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-const GotTime = require(`../../Sakura🍃Goose/time`);
-GotTime.findOne(
-{
-ID: աɦօֆɛռȶɦǟȶ,
-},
-async (Error, userTime) => {
-if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
-if (userTime && userTime.GotTime > 0) {
-userTime.GotTime = 0;
-Twaitup = userZoo.zoodone - userTime.GotTime;
-Redu = ms(userTime.GotTime);
-Reduced = `_${Redu.minutes}m ${Redu.seconds}s_`;
-if (userZoo.zootimeout - (Date.now() - Twaitup) > 0) {
-let Time = ms(
-userZoo.zootimeout - (Date.now() - Twaitup)
-);
-await userTime
-.save()
-.catch((Error) =>
-ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
-);
-return Sakura_Buttons.MTB(
-ӄʀǟӄɨռʐ,
-chat,
-ֆǟӄʊʀǟ,
-`🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
+                  `./Sakura☣️Reactor/Sakura_Zoo.png`,
+                  Needs
+                );
+              }
+              `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+              const GotTime = require(`../../Sakura🍃Goose/time`);
+              GotTime.findOne(
+                {
+                  ID: աɦօֆɛռȶɦǟȶ,
+                },
+                async (Error, userTime) => {
+                  if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
+                  if (userTime.GotTime > 0) {
+                    userTime.GotTime = 0;
+                    Twaitup = userZoo.zoodone - userTime.GotTime;
+                    Redu = ms(userTime.GotTime);
+                    Reduced = `_${Redu.minutes}m ${Redu.seconds}s_`;
+                    if (userZoo.zootimeout - (Date.now() - Twaitup) > 0) {
+                      let Time = ms(
+                        userZoo.zootimeout - (Date.now() - Twaitup)
+                      );
+                      await userTime
+                        .save()
+                        .catch((Error) =>
+                          ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
+                        );
+                      return Sakura_Buttons.MTB(
+                        ӄʀǟӄɨռʐ,
+                        chat,
+                        ֆǟӄʊʀǟ,
+                        `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
 ╔◇══════════════◇╗
 ┊    𝐙𝐨𝐨🐆𝐎𝐰𝐧𝐞𝐫
 ╚◇║
@@ -153,25 +155,25 @@ chat,
 ║🐓 𝗭𝗼𝗼 𝗔𝗴𝗮𝗶𝗻: ${Time.minutes}m ${Time.seconds}s
 ║⚡ 𝗧𝗶𝗺𝗲 𝗥𝗲𝗱𝘂𝗰𝗲𝗱: _${Reduced}_
 ╚════════════╝`,
-Needs
-);
-}
-}
-`|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-if (userZoo.zootimeout - (Date.now() - userZoo.zoodone) > 0) {
-let Time = ms(
-userZoo.zootimeout - (Date.now() - userZoo.zoodone)
-);
-await userTime
-.save()
-.catch((Error) =>
-ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
-);
-return Sakura_Buttons.MTB(
-ӄʀǟӄɨռʐ,
-chat,
-ֆǟӄʊʀǟ,
-`🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
+                        Needs
+                      );
+                    }
+                  }
+                  `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+                  if (userZoo.zootimeout - (Date.now() - userZoo.zoodone) > 0) {
+                    let Time = ms(
+                      userZoo.zootimeout - (Date.now() - userZoo.zoodone)
+                    );
+                    await userTime
+                      .save()
+                      .catch((Error) =>
+                        ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
+                      );
+                    return Sakura_Buttons.MTB(
+                      ӄʀǟӄɨռʐ,
+                      chat,
+                      ֆǟӄʊʀǟ,
+                      `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
 ╔◇══════════════◇╗
 ┊    𝐙𝐨𝐨🐆𝐎𝐰𝐧𝐞𝐫
 ╚◇║
@@ -180,33 +182,33 @@ chat,
 ║🐓 𝗭𝗼𝗼 𝗔𝗴𝗮𝗶𝗻: ${Time.minutes}m ${Time.seconds}s
 ║⚡ 𝗧𝗶𝗺𝗲 𝗥𝗲𝗱𝘂𝗰𝗲𝗱: _no time reducers in account_
 ╚════════════╝`,
-Needs
-);
-}
+                      Needs
+                    );
+                  }
 
-`|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-const zooID = Math.floor(Math.random() * 10) + 1;
-let rarity;
-if (zooID < 5) rarity = `small`;
-else if (zooID < 8) rarity = `medium`;
-else if (zooID < 9) rarity = `big`;
-else if (zooID < 10) rarity = `large`;
-else rarity = `legendary`;
-const anim = animals[rarity];
-const worth =
-Math.floor(Math.random() * (anim.max - anim.min + 1)) +
-anim.min;
-userEco.money = userEco.money + worth;
-userZoo.zoodone = Date.now();
-userZoo.zootimeout = 1800000;
-await userZoo
-.save()
-.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-return Sakura_Buttons.MIB(
-ӄʀǟӄɨռʐ,
-chat,
-ֆǟӄʊʀǟ,
-`🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
+                  `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+                  const zooID = Math.floor(Math.random() * 10) + 1;
+                  let rarity;
+                  if (zooID < 5) rarity = `small`;
+                  else if (zooID < 8) rarity = `medium`;
+                  else if (zooID < 9) rarity = `big`;
+                  else if (zooID < 10) rarity = `large`;
+                  else rarity = `legendary`;
+                  const anim = animals[rarity];
+                  const worth =
+                    Math.floor(Math.random() * (anim.max - anim.min + 1)) +
+                    anim.min;
+                  userEco.money = userEco.money + worth;
+                  userZoo.zoodone = Date.now();
+                  userZoo.zootimeout = 1800000;
+                  await userZoo
+                    .save()
+                    .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+                  return Sakura_Buttons.MIB(
+                    ӄʀǟӄɨռʐ,
+                    chat,
+                    ֆǟӄʊʀǟ,
+                    `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
 ╔◇══════════════◇╗
 ┊    𝐙𝐨𝐨🐆𝐎𝐰𝐧𝐞𝐫
 ╚◇║
@@ -215,21 +217,21 @@ chat,
 ║💵 𝗪𝗼𝗿𝘁𝗵: _People paid you *${worth}* to see._
 ║💍 𝗜𝘁𝗲𝗺 𝗥𝗮𝗿𝗶𝘁𝘆: _${rarity}_
 ╚════════════╝`,
-`./Sakura☣️Reactor/Sakura_Zoo.png`,
-Needs
-);
-}
-);
-}
-);
-}
-);
-`|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-} catch (Error) {
-ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
-return;
-}
-},
+                    `./Sakura☣️Reactor/Sakura_Zoo.png`,
+                    Needs
+                  );
+                }
+              );
+            }
+          );
+        }
+      );
+      `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+    } catch (Error) {
+      ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
+      return;
+    }
+  },
 };
 `|⬡════════════════════════════════════════════|                            |═══════════════════════════════════════════⬡|`;
 `|                                                                                                                        |`;
