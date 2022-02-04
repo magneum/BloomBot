@@ -24,7 +24,7 @@ const Sakura_Loca = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, MainText) => {
 try {
 const buttonMessage = {
 contentText: MainText,
-footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐁𝐨𝐭 ⏋\n⎿ 𝐄𝐧𝐠𝐢𝐧𝐞: _kryozenV${vers.vers}_ ⏋`,
+footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐁𝐨𝐭 ⏋\n⎿ 𝐄𝐧𝐠𝐢𝐧𝐞: ᴋʀʏᴛᴇᴋ-v${vers.vers} ⏋`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
