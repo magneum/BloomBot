@@ -34,7 +34,7 @@ const defaultnm = ֆǟӄʊʀǟ.commandName;
 const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
 if (ֆǟӄʊʀǟ.isReply) {
 var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
-var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
+var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15).replace(/[+ ]/g, "");
 var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
 var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
 return await ӄʀǟӄɨռʐ
@@ -54,7 +54,7 @@ var TagPerson = ֆǟӄʊʀǟ.body.replace(
 );
 var TagMention = TagPerson + "@s.whatsapp.net";
 var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
-var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
+var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15).replace(/[+ ]/g, "");
 return await ӄʀǟӄɨռʐ
 .sendMessage(ֆǟӄʊʀǟ.chatId, { url: MediaUrl }, MessageType.video, {
 mimetype: `video/gif`,
@@ -67,7 +67,7 @@ contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ, TagMention] },
 .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
 } else {
 var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
-var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
+var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15).replace(/[+ ]/g, "");
 return await ӄʀǟӄɨռʐ
 .sendMessage(ֆǟӄʊʀǟ.chatId, { url: MediaUrl }, MessageType.video, {
 mimetype: `video/gif`,

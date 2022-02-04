@@ -36,7 +36,7 @@ Message
 try {
 const FlowerWel = Flower[Math.floor(Math.random() * Flower.length)];
 const PeopleWel = People[Math.floor(Math.random() * People.length)];
-var ᴘᴘᴡᴇʟᴄᴏᴍᴇ = MemNum.substring(0, MemNum.length - 15);
+var ᴘᴘᴡᴇʟᴄᴏᴍᴇ = MemNum.substring(0, MemNum.length - 15).replace(/[+ ]/g, "");
 let 𝕻𝕻𝖑𝖊𝖙𝖊𝖗;
 try {
 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄʀǟӄɨռʐ.getProfilePicture(`${MemNum.split(`@`)[0]}@c.us`);

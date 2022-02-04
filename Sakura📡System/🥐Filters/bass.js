@@ -25,7 +25,7 @@ async handle(ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock,
 try {
 var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
 var defaultnm = ֆǟӄʊʀǟ.commandName;
-var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
+var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15).replace(/[+ ]/g, "");
 var FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
 if (Needs.length > 0 && Needs[0].startsWith("@")) {
 var TagPerson = ֆǟӄʊʀǟ.body.replace(
