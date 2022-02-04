@@ -36,7 +36,7 @@ name: newScpt,
 ║
 ╚═══◇║
 ╔═══◇║❓ 𝗜 𝗱𝗼𝗻'𝘁 𝗵𝗮𝘃𝗲 𝗮𝗻𝘆 𝘀𝗮𝗳𝗲𝘁𝘆 𝗶𝗻 𝗺𝘆 𝗮𝗰𝗰𝗼𝘂𝗻𝘁! 𝗛𝗼𝘄 𝗺𝘂𝗰𝗵 𝗺𝗼𝗻𝗲𝘆 𝗰𝗮𝗻 𝗯𝗲 𝗿𝗼𝗯𝗯𝗲𝗱?
-║ _In that case buy using /buy. Max-Money-Robbed when no safety: random(1000-2000)_
+║ _In that case buy using /buy. Max-Money-Robbed when no safety: random(1500-2000)_
 ║
 ╚════════════╝
 
@@ -116,7 +116,7 @@ var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
 var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
 var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
 const MoneyRandom =
-Math.floor(Math.random() * (2000 - 1000 + 1)) + 1000;
+Math.floor(Math.random() * (2000 - 1500 + 1)) + 1500;
 const MoneyLaptop =
 Math.floor(Math.random() * (4000 - 3000 + 1)) + 3000;
 const MoneyCharm = Math.floor(Math.random() * (6000 - 5000 + 1)) + 5000;
