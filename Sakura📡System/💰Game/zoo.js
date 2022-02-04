@@ -117,11 +117,34 @@ chat,
 Needs
 );
 } else {
-if (userZoo.zootimeout - (Date.now() - userZoo.zoodone) > 0) {
-let time = ms(
-userZoo.zootimeout - (Date.now() - userZoo.zoodone)
+const GotTime = require(`../../Sakura🍃Goose/time`);
+let Treducer = 0;
+let Reduced;
+GotTime.findOne(
+{
+ID: աɦօֆɛռȶɦǟȶ,
+},
+async (Error, userTime) => {
+if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
+if (!userTime) return;
+Treducer = userTime.GotTime;
+userTime.GotTime = 0;
+await userTime
+.save()
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+}
 );
-return Sakura_Buttons.MIB(
+if (Treducer > 0) {
+Twaitup = userZoo.zoodone - Treducer;
+Redu = ms(Twaitup);
+Reduced = `_${Redu.minutes}m ${Redu.seconds}s_`;
+} else {
+Twaitup = userZoo.zoodone;
+Reduced = "_no time reducer in account_";
+}
+if (userZoo.zootimeout - (Date.now() - Twaitup) > 0) {
+let Time = ms(userZoo.zootimeout - (Date.now() - Twaitup));
+return Sakura_Buttons.MTB(
 ӄʀǟӄɨռʐ,
 chat,
 ֆǟӄʊʀǟ,
@@ -131,9 +154,9 @@ chat,
 ╚◇║
 ╔◇║
 ║❌ 𝗘𝗿𝗿𝗼𝗿: You've Recently Bought a New Animal. 
-║🐓 𝗭𝗼𝗼_𝗔𝗴𝗮𝗶𝗻: ${time.minutes}m ${time.seconds}s
+║🐓 𝗭𝗼𝗼 𝗔𝗴𝗮𝗶𝗻: ${Time.minutes}m ${Time.seconds}s
+║⚡ 𝗧𝗶𝗺𝗲 𝗥𝗲𝗱𝘂𝗰𝗲𝗱: _${Reduced}_
 ╚════════════╝`,
-`./Sakura☣️Reactor/Sakura_Zoo.png`,
 Needs
 );
 } else {

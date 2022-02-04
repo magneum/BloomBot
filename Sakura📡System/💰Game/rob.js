@@ -341,16 +341,34 @@ Needs
 );
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
 } else {
-if (
-culprit.PermanentRobberyTime -
-(Date.now() - culprit.CurrentRobberyTime) >
-0
-) {
-let Time = ms(
-culprit.PermanentRobberyTime -
-(Date.now() - culprit.CurrentRobberyTime)
+const GotTime = require(`../../Sakura🍃Goose/time`);
+let Treducer = 0;
+let Reduced;
+GotTime.findOne(
+{
+ID: աɦօֆɛռȶɦǟȶ,
+},
+async (Error, userTime) => {
+if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
+if (!userTime) return;
+Treducer = userTime.GotTime;
+userTime.GotTime = 0;
+await userTime
+.save()
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+}
 );
-return Sakura_Buttons.MIB(
+if (Treducer > 0) {
+Twaitup = culprit.CurrentRobberyTime - Treducer;
+Redu = ms(Twaitup);
+Reduced = `_${Redu.minutes}m ${Redu.seconds}s_`;
+} else {
+Twaitup = culprit.CurrentRobberyTime;
+Reduced = "_no time reducer in account_";
+}
+if (culprit.PermanentRobberyTime - (Date.now() - Twaitup) > 0) {
+let Time = ms(culprit.PermanentRobberyTime - (Date.now() - Twaitup));
+return Sakura_Buttons.MTB(
 ӄʀǟӄɨռʐ,
 chat,
 ֆǟӄʊʀǟ,
@@ -361,8 +379,8 @@ chat,
 ╔═══◇║
 ║❌ 𝗘𝗿𝗿𝗼𝗿: _You've Recently Tried Robbing Someone!._
 ║🕐 𝐑𝐨𝐛 𝗔𝗴𝗮𝗶𝗻: _${Time.minutes}m ${Time.seconds}s._
+║⚡ 𝗧𝗶𝗺𝗲 𝗥𝗲𝗱𝘂𝗰𝗲𝗱: _${Reduced}_
 ╚════════════╝`,
-`./Sakura☣️Reactor/sakura_rob.png`,
 Needs
 );
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;

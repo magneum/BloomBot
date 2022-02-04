@@ -87,11 +87,34 @@ Needs
 );
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
 } else {
-if (userEco.worktimeout - (Date.now() - userEco.workdone) > 0) {
-let time = ms(
-userEco.worktimeout - (Date.now() - userEco.workdone)
+const GotTime = require(`../../Sakura🍃Goose/time`);
+let Treducer = 0;
+let Reduced;
+GotTime.findOne(
+{
+ID: աɦօֆɛռȶɦǟȶ,
+},
+async (Error, userTime) => {
+if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
+if (!userTime) return;
+Treducer = userTime.GotTime;
+userTime.GotTime = 0;
+await userTime
+.save()
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+}
 );
-Sakura_Buttons.MIB(
+if (Treducer > 0) {
+Twaitup = userEco.workdone - Treducer;
+Redu = ms(Twaitup);
+Reduced = `_${Redu.minutes}m ${Redu.seconds}s_`;
+} else {
+Twaitup = userEco.workdone;
+Reduced = "_no time reducer in account_";
+}
+if (userEco.worktimeout - (Date.now() - Twaitup) > 0) {
+let Time = ms(userEco.worktimeout - (Date.now() - Twaitup));
+return Sakura_Buttons.MTB(
 ӄʀǟӄɨռʐ,
 chat,
 ֆǟӄʊʀǟ,
@@ -101,9 +124,9 @@ chat,
 ╚◇║
 ╔◇║
 ║❌ 𝗘𝗿𝗿𝗼𝗿: _You have already worked recently._ 
-║🕐 𝗪𝗼𝗿𝗸_𝗔𝗴𝗮𝗶𝗻: ${time.minutes}m ${time.seconds}s
+║🕐 𝗪𝗼𝗿𝗸_𝗔𝗴𝗮𝗶𝗻: ${Time.minutes}m ${Time.seconds}s
+║⚡ 𝗧𝗶𝗺𝗲 𝗥𝗲𝗱𝘂𝗰𝗲𝗱: _${Reduced}_
 ╚════════════╝`,
-`./Sakura☣️Reactor/sakura_work.png`,
 Needs
 );
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;

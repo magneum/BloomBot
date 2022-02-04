@@ -68,7 +68,7 @@ if (!userPoke) {
 var newPokeUser = new Pokemon({
 ID: աɦօֆɛռȶɦǟȶ,
 Pokemons: 0,
-CurrentLimitTime: Date.now(),
+CurrentLimitTime: 0,
 PermanentLimitTime: 21600000,
 });
 await newPokeUser
@@ -133,16 +133,34 @@ pokemon: BasePoke.toLowerCase(),
 );
 let PokemonData = await res.json();
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-if (
-userPoke.PermanentLimitTime -
-(Date.now() - userPoke.CurrentLimitTime) >
-0
-) {
-let time = ms(
-userPoke.PermanentLimitTime -
-(Date.now() - userPoke.CurrentLimitTime)
+const GotTime = require(`../../Sakura🍃Goose/time`);
+let Treducer = 0;
+let Reduced;
+GotTime.findOne(
+{
+ID: աɦօֆɛռȶɦǟȶ,
+},
+async (Error, userTime) => {
+if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
+if (!userTime) return;
+Treducer = userTime.GotTime;
+userTime.GotTime = 0;
+await userTime
+.save()
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+}
 );
-return Sakura_Buttons.MIB(
+if (Treducer > 0) {
+Twaitup = userPoke.CurrentLimitTime - Treducer;
+Redu = ms(Twaitup);
+Reduced = `_${Redu.minutes}m ${Redu.seconds}s_`;
+} else {
+Twaitup = userPoke.CurrentLimitTime;
+Reduced = "_no time reducer in account_";
+}
+if (userPoke.PermanentLimitTime - (Date.now() - Twaitup) > 0) {
+let Time = ms(userPoke.PermanentLimitTime - (Date.now() - Twaitup));
+return Sakura_Buttons.MTB(
 ӄʀǟӄɨռʐ,
 chat,
 ֆǟӄʊʀǟ,
@@ -150,12 +168,12 @@ chat,
 ╔◇══════════════◇╗
 ┊ 𝐏𝐨𝐤𝐞𝐦𝐨𝐧🦋𝐇𝐮𝐧𝐭𝐢𝐧𝐠
 ┊ 𝐌𝐢𝐧𝐞𝐜𝐫𝐚𝐟𝐭 🪵 𝐄𝐝𝐢𝐭𝐢𝐨𝐧
-╚◇══════════════◇╝
-╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
+╚◇║
+╔◇║
 ║❌ 𝗘𝗿𝗿𝗼𝗿: You've recently went in a forest!
-║🪵 𝗡𝗲𝘅𝘁 𝗛𝘂𝗻𝘁𝗶𝗻𝗴: ${time.hours}h ${time.minutes}m ${time.seconds}s
+║🪵 𝗡𝗲𝘅𝘁 𝗛𝘂𝗻𝘁𝗶𝗻𝗴: ${Time.hours}h ${Time.minutes}m ${Time.seconds}s
+║⚡ 𝗧𝗶𝗺𝗲 𝗥𝗲𝗱𝘂𝗰𝗲𝗱: _${Reduced}_
 ╚════════════╝`,
-`./Sakura☣️Reactor/Sakura_Hunting.png`,
 Needs
 );
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;

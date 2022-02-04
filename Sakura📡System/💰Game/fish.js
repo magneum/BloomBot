@@ -86,11 +86,34 @@ Needs
 );
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
 } else {
-if (userEco.fishtimeout - (Date.now() - userEco.fishdone) > 0) {
-let time = ms(
-userEco.fishtimeout - (Date.now() - userEco.fishdone)
+const GotTime = require(`../../Sakura🍃Goose/time`);
+let Treducer = 0;
+let Reduced;
+GotTime.findOne(
+{
+ID: աɦօֆɛռȶɦǟȶ,
+},
+async (Error, userTime) => {
+if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
+if (!userTime) return;
+Treducer = userTime.GotTime;
+userTime.GotTime = 0;
+await userTime
+.save()
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+}
 );
-return Sakura_Buttons.MIB(
+if (Treducer > 0) {
+Twaitup = userEco.fishdone - Treducer;
+Redu = ms(Twaitup);
+Reduced = `_${Redu.minutes}m ${Redu.seconds}s_`;
+} else {
+Twaitup = userEco.fishdone;
+Reduced = "_no time reducer in account_";
+}
+if (userEco.fishtimeout - (Date.now() - Twaitup) > 0) {
+let Time = ms(userEco.fishtimeout - (Date.now() - Twaitup));
+return Sakura_Buttons.MTB(
 ӄʀǟӄɨռʐ,
 chat,
 ֆǟӄʊʀǟ,
@@ -99,10 +122,10 @@ chat,
 ┊  𝐒𝐚𝐤𝐮𝐫𝐚🐡𝐏𝐨𝐧𝐝
 ╚◇║
 ╔◇║
-║❌ 𝗘𝗿𝗿𝗼𝗿: You've Recently Casted A Line. 
-║🕐 𝗙𝗶𝘀𝗵_𝗔𝗴𝗮𝗶𝗻: ${time.minutes}m ${time.seconds}s
+║❌ 𝗘𝗿𝗿𝗼𝗿: _You've Recently Went Fishing!_
+║🕐 𝗙𝗶𝘀𝗵 𝗔𝗴𝗮𝗶𝗻: _${Time.minutes}m ${Time.seconds}s_
+║⚡ 𝗧𝗶𝗺𝗲 𝗥𝗲𝗱𝘂𝗰𝗲𝗱: _${Reduced}_
 ╚════════════╝`,
-`./Sakura☣️Reactor/Sakura_Fishing.png`,
 Needs
 );
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
@@ -121,7 +144,7 @@ fishh.min;
 userEco.money = userEco.money + worth;
 userEco.fishdone = Date.now();
 userEco.fishtimeout = 1800000;
-userEco
+await userEco
 .save()
 .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
 return Sakura_Buttons.MIB(

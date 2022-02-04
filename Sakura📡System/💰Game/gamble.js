@@ -269,16 +269,34 @@ Needs
 );
 } else {
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-if (
-userGamble.Gambletimeout -
-(Date.now() - userGamble.Gambledone) >
-0
-) {
-let time = ms(
-userGamble.Gambletimeout -
-(Date.now() - userGamble.Gambledone)
+const GotTime = require(`../../Sakura🍃Goose/time`);
+let Treducer = 0;
+let Reduced;
+GotTime.findOne(
+{
+ID: աɦօֆɛռȶɦǟȶ,
+},
+async (Error, userTime) => {
+if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
+if (!userTime) return;
+Treducer = userTime.GotTime;
+userTime.GotTime = 0;
+await userTime
+.save()
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+}
 );
-return Sakura_Buttons.MIB(
+if (Treducer > 0) {
+Twaitup = userGamble.Gambledone - Treducer;
+Redu = ms(Twaitup);
+Reduced = `_${Redu.minutes}m ${Redu.seconds}s_`;
+} else {
+Twaitup = userGamble.Gambledone;
+Reduced = "_no time reducer in account_";
+}
+if (userGamble.Gambletimeout- (Date.now() - Twaitup) > 0) {
+let Time = ms(userGamble.Gambletimeout - (Date.now() - Twaitup));
+return Sakura_Buttons.MTB(
 ӄʀǟӄɨռʐ,
 chat,
 ֆǟӄʊʀǟ,
@@ -289,9 +307,9 @@ chat,
 ╚◇║
 ╔◇║
 ║❌ 𝗘𝗿𝗿𝗼𝗿: _You've Recently Gambled!_
-║🕐 𝗚𝗮𝗺𝗯𝗹𝗲 𝗔𝗴𝗮𝗶𝗻: ${time.minutes}m ${time.seconds}s
+║🕐 𝗚𝗮𝗺𝗯𝗹𝗲 𝗔𝗴𝗮𝗶𝗻: _${Time.minutes}m ${Time.seconds}s_
+║⚡ 𝗧𝗶𝗺𝗲 𝗥𝗲𝗱𝘂𝗰𝗲𝗱: _${Reduced}_
 ╚════════════╝`,
-`./Sakura☣️Reactor/Sakura_Gambling.png`,
 Needs
 );
 }
