@@ -6,7 +6,6 @@
 var mongoose = require("mongoose");
 var PokemonSakuraSchema = new mongoose.Schema({
   ID: String,
-  Pokemons: Number,
   CurrentLimitTime: Number,
   PermanentLimitTime: Number,
 });
