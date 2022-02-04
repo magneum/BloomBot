@@ -83,7 +83,6 @@ console.log(Kolor.yellow(`🧀 𝐈𝐧𝐟𝐨⬰ Connecting With User's Whatsa
 });
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
 ӄʀǟӄɨռʐ.on(`open`, async () => {
-try {
 console.log(Kolor.green(`🧀 𝐈𝐧𝐟𝐨⬰ Connected With User's Whatsapp Web..`));
 console.log(
 Kolor.green(`
@@ -94,48 +93,42 @@ Kolor.green(`
 ꜱᴀᴋᴜʀᴀ ɪꜱ ᴡʀɪᴛᴛᴇɴ ɪɴ [ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ & ᴘʏᴛʜᴏɴ] ᴀɴᴅ ɪꜱ ʙʏ ꜰᴀʀ ᴛʜᴇ ᴏɴᴇ ᴏꜰ ᴍᴏꜱᴛ ᴀᴅᴠᴀɴᴄᴇ ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ.
 |⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`)
 );
-// await ӄʀǟӄɨռʐ
-// .sendMessage(
-// "120363039223842047@g.us",
-// { url: "./Sakura☣️Reactor/Sakura_KrakinzLab.png" },
-// MessageType.image,
-// {
-// caption: `(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 by 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
+await ӄʀǟӄɨռʐ
+.sendMessage(
+"120363039223842047@g.us",
+{ url: "./Sakura☣️Reactor/ֆǟӄʊʀǟ.png" },
+MessageType.image,
+{
+caption: `(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 by 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
 
-// ╔════◇🚀 *BACK ONLINE*
-// ║🛰️ 𝐏𝐢𝐧𝐠: _${Ping}s_
-// ║📅 𝐃𝐚𝐭𝐞: _${Clock}_
-// ║💼 𝐆𝐫𝐨𝐮𝐩: _${_𝔏𝔞𝔟_.HASHS}_
-// ║💼 𝐆𝐫𝐨𝐮𝐩: _${_𝔏𝔞𝔟_.HASH}_
-// ║💻 𝐆𝐢𝐭𝐡𝐮𝐛: _https://github.com/Krakinz/Sakura_
-// ╚════════════╝`,
-// mime: Mimetype.png,
-// }
-// )
-// .catch((Error) => console.log(Error));
-// await ӄʀǟӄɨռʐ
-// .sendMessage(
-// "120363020792949649@g.us",
-// { url: "./Sakura☣️Reactor/Sakura_KrakinzLab.png" },
-// MessageType.image,
-// {
-// caption: `(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 by 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
+╔════◇🚀 *BACK ONLINE*
+║🛰️ 𝐏𝐢𝐧𝐠: _${Ping}s_
+║📅 𝐃𝐚𝐭𝐞: _${Clock}_
+╚════════════╝`,
+mime: Mimetype.png,
+}
+)
+.catch((Error) => console.log(Error));
+await ӄʀǟӄɨռʐ
+.sendMessage(
+"120363020792949649@g.us",
+{ url: "./Sakura☣️Reactor/ֆǟӄʊʀǟ.png" },
+MessageType.image,
+{
+caption: `(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 by 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
 
-// ╔════◇🚀 *BACK ONLINE*
-// ║🛰️ 𝐏𝐢𝐧𝐠: _${Ping}s_
-// ║📅 𝐃𝐚𝐭𝐞: _${Clock}_
-// ║💼 𝐆𝐫𝐨𝐮𝐩: _${_𝔏𝔞𝔟_.HASHS}_
-// ║💼 𝐆𝐫𝐨𝐮𝐩: _${_𝔏𝔞𝔟_.HASH}_
-// ║💻 𝐆𝐢𝐭𝐡𝐮𝐛: _https://github.com/Krakinz/Sakura_
-// ╚════════════╝`,
-// mime: Mimetype.png,
-// }
-// )
-// .catch((Error) => console.log(Error));
+╔════◇🚀 *BACK ONLINE*
+║🛰️ 𝐏𝐢𝐧𝐠: _${Ping}s_
+║📅 𝐃𝐚𝐭𝐞: _${Clock}_
+╚════════════╝`,
+mime: Mimetype.png,
+}
+)
+.catch((Error) => console.log(Error));
 await ӄʀǟӄɨռʐ
 .sendMessage(
 ӄʀǟӄɨռʐ.user.jid,
-{ url: "./Sakura☣️Reactor/Sakura_KrakinzLab.png" },
+{ url: "./Sakura☣️Reactor/ֆǟӄʊʀǟ.png" },
 MessageType.image,
 {
 caption: `(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 by 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
@@ -151,14 +144,6 @@ mime: Mimetype.png,
 }
 )
 .catch((Error) => console.log(Error));
-} catch (Error) {
-console.log(Error);
-var childs = require(`child_process`).exec(`python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`);
-childs.stdout.pipe(process.stdout);
-childs.on(`exit`, async function () {
-process.exitCode = 1;
-});
-}
 });
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
 ӄʀǟӄɨռʐ.connect();
@@ -169,7 +154,6 @@ try {
 } catch {
 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = "https://i.postimg.cc/gcw6vq3X/Npp.png";
 }
-try {
 const groupupdateID = await ӄʀǟӄɨռʐ.groupMetadata(update.jid);
 if (update.announce == `false`) {
 return await ӄʀǟӄɨռʐ
@@ -249,18 +233,9 @@ caption: `*🍹Attention Here Everyone In the Group!🍹*
 })
 .catch((Error) => console.log(Error));
 }
-} catch (Error) {
-console.log(Error);
-var childs = require(`child_process`).exec(`python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`);
-childs.stdout.pipe(process.stdout);
-childs.on(`exit`, async function () {
-process.exitCode = 1;
-});
-}
 });
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
 ӄʀǟӄɨռʐ.on(`group-participants-update`, async (update) => {
-try {
 var GroupID = update.jid;
 const GroupMemData = await ӄʀǟӄɨռʐ.groupMetadata(update.jid);
 const GroupMemG = GroupMemData.participants.length;
@@ -351,14 +326,6 @@ userWel.message
 );
 }
 if (update.action === `remove`) return;
-} catch (Error) {
-console.log(Error);
-var childs = require(`child_process`).exec(`python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`);
-childs.stdout.pipe(process.stdout);
-childs.on(`exit`, async function () {
-process.exitCode = 1;
-});
-}
 });
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
 ӄʀǟӄɨռʐ.on(`chat-update`, async (chat) => {
@@ -409,7 +376,6 @@ console.log(Error);
 console.log(Kolor.red(`❌ 𝐄𝐫𝐫𝐨𝐫⬰ 𝗣𝗹𝗲𝗮𝘀𝗲 𝗿𝗲𝗱𝗲𝗽𝗹𝗼𝘆 𝘆𝗼𝘂𝗿 𝗯𝗼𝘁!`));
 }
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-try {
 if (!chat.hasNewMessage) return;
 if (!chat.messages) return;
 chat = chat.messages.all()[0];
@@ -419,7 +385,9 @@ const groupMetadata = sender.endsWith(`@g.us`)
 : ``;
 var ֆǟӄʊʀǟ = ֆǟӄʊʀǟǟքք.resolve(chat, ӄʀǟӄɨռʐ, groupMetadata);
 var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
-var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15).replace(/[+ ]/g, "");
+var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ
+.substring(0, աɦօֆɛռȶɦǟȶ.length - 15)
+.replace(/[+ ]/g, "");
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
 if (!ֆǟӄʊʀǟ.isGroup && !ֆǟӄʊʀǟ.fromMe && !ֆǟӄʊʀǟ.isSenderDev) {
 return await Sakura_Buttons.MTB(
@@ -484,19 +452,13 @@ if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
 if (BanPerson) return;
 if (BanGroup && !ֆǟӄʊʀǟ.fromMe && !ֆǟӄʊʀǟ.isSenderDev) return;
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-if (
-!BanPerson &&
-!BanGroup &&
-ֆǟӄʊʀǟ.isGroup &&
-!ֆǟӄʊʀǟ.fromMe
-) {
+if (!BanPerson && !BanGroup && ֆǟӄʊʀǟ.isGroup && !ֆǟӄʊʀǟ.fromMe) {
 Ranker.findOne(
 {
 serverID: ֆǟӄʊʀǟ.chatId,
 },
 async (Error, userRank) => {
-if (Error)
-return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
+if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
 if (!userRank) return;
 await RankCheck.MRC(ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ);
 }
@@ -515,8 +477,7 @@ LinkList.findOne(
 serverID: ֆǟӄʊʀǟ.chatId,
 },
 async (Error, server) => {
-if (Error)
-return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
+if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
 if (!server) return;
 var Kkp =
@@ -609,7 +570,7 @@ await ӄʀǟӄɨռʐ
 .sendMessage(
 ֆǟӄʊʀǟ.chatId,
 `🤖𝐕𝐞𝐫𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧: @${աɦօֆɛռȶɦǟȶռʊʍ}, 
-_You Are Not Verified.Join Sakura Group First!_
+_You Are Not Verified.Join Sakura Group and Verify Yourself First!_
 
 
 ╔◇║👇🏽𝐎𝐟𝐟𝐢𝐜𝐢𝐚𝐥 𝐆𝐫𝐨𝐮𝐩‍ 
@@ -691,7 +652,6 @@ chat,
 
 ╔════◇🍹𝐒𝐚𝐤𝐮𝐫𝐚 by 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛
 ║❌ _No Such Command In Database!_
-║🍃 *Press Below Button For Commands.*
 ╚════════════╝`
 );
 } else {
@@ -711,14 +671,6 @@ Timers
 );
 }
 );
-}
-} catch (Error) {
-console.log(Error);
-var childs = require(`child_process`).exec(`python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`);
-childs.stdout.pipe(process.stdout);
-childs.on(`exit`, async function () {
-process.exitCode = 1;
-});
 }
 });
 }
