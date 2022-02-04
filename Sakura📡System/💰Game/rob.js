@@ -36,42 +36,49 @@ module.exports = {
 ║
 ╚═══◇║
 ╔═══◇║❓ 𝗜 𝗱𝗼𝗻'𝘁 𝗵𝗮𝘃𝗲 𝗮𝗻𝘆 𝘀𝗮𝗳𝗲𝘁𝘆 𝗶𝗻 𝗺𝘆 𝗮𝗰𝗰𝗼𝘂𝗻𝘁! 𝗛𝗼𝘄 𝗺𝘂𝗰𝗵 𝗺𝗼𝗻𝗲𝘆 𝗰𝗮𝗻 𝗯𝗲 𝗿𝗼𝗯𝗯𝗲𝗱?
-║ _In that case buy using /buy. Max-Money-Robbed when no safety: random(50-300)_
+║ _In that case buy using /buy. Max-Money-Robbed when no safety: random(1500-2000)_
 ║
 ╚════════════╝
 
 ╔═══⬡🔒 𝐏𝐚𝐝𝐥𝐨𝐜𝐤
 ║
 ║🛸 𝗧𝘆𝗽𝗲: _The basic account safe mode. 
-║🧀 𝗚𝗼𝗹𝗱: _To buy padlock you will need to have 500gold. 
-║⚡ 𝗣𝗲𝗿𝗸𝘀: _If robbery attempt was made on your account, a padlock will save your entire balance and will automatically deduct random(350-500) from Culprit's account and add it to your account!_
+║🧀 𝗚𝗼𝗹𝗱: _To buy padlock you will need to have 1000gold. 
+║⚡ 𝗣𝗲𝗿𝗸𝘀: _If robbery attempt was made on your account, a padlock will save your entire balance and will automatically deduct random(500-1000) from Culprit's account and add it to your account!_
 ║
 ╚═══◇║
 ╔═══◇║⚔️ 𝐒𝐰𝐨𝐫𝐝
 ║
 ║🛸 𝗧𝘆𝗽𝗲: _The medium account safe mode. 
-║🧀 𝗚𝗼𝗹𝗱: _To buy sword you will need to have 1500gold._ 
-║⚡ 𝗣𝗲𝗿𝗸𝘀: _If robbery attempt was made on your account, a sword will save your entire balance and will automatically deduct random(1000-1500) from Culprit's account and add it to your account!_
+║🧀 𝗚𝗼𝗹𝗱: _To buy sword you will need to have 4000gold._ 
+║⚡ 𝗣𝗲𝗿𝗸𝘀: _If robbery attempt was made on your account, a sword will save your entire balance and will automatically deduct random(2000-3000) from Culprit's account and add it to your account!_
 ║
 ╚═══◇║
 ╔═══◇║💻 𝐋𝐚𝐩𝐭𝐨𝐩
 ║
 ║🛸 𝗧𝘆𝗽𝗲: _The hard account safe mode._ 
-║🧀 𝗚𝗼𝗹𝗱: _To buy laptop you will need to have 2000gold._ 
-║⚡ 𝗣𝗲𝗿𝗸𝘀: _If robbery attempt was made on your account, a laptop will save your entire balance and will automatically deduct random(1500-2000) from Culprit's account and add it to your account!_
+║🧀 𝗚𝗼𝗹𝗱: _To buy laptop you will need to have 3000gold._ 
+║⚡ 𝗣𝗲𝗿𝗸𝘀: _If robbery attempt was made on your account, a laptop will save your entire balance and will automatically deduct random(3000-4000) from Culprit's account and add it to your account!_
 ║
 ╚═══◇║
 ╔═══◇║🔮 𝐂𝐡𝐚𝐫𝐦
 ║
 ║🛸 𝗧𝘆𝗽𝗲: _The devil account safe mode._ 
-║🧀 𝗚𝗼𝗹𝗱: _To buy laptop you will need to have 3000gold._ 
-║⚡ 𝗣𝗲𝗿𝗸𝘀: _If robbery attempt was made on your account, a charm will save your entire balance and will automatically deduct random(2500-3000) from Culprit's account and add it to your account!_
+║🧀 𝗚𝗼𝗹𝗱: _To buy laptop you will need to have 6000gold._ 
+║⚡ 𝗣𝗲𝗿𝗸𝘀: _If robbery attempt was made on your account, a charm will save your entire balance and will automatically deduct random(5000-6000) from Culprit's account and add it to your account!_
 ║
 ╚════════════╝`,
   async handle(ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
     try {
       const defaultnm = ֆǟӄʊʀǟ.commandName;
       const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
+      if (Needs.length > 0 && Needs[0].startsWith("@")) {
+        var TagPerson = ֆǟӄʊʀǟ.body.replace(
+          ֆǟӄʊʀǟ.body[0] + ֆǟӄʊʀǟ.commandName + " ",
+          ""
+        );
+        var TagMention = TagPerson + "@s.whatsapp.net";
+      }
       `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
       if (!ֆǟӄʊʀǟ.isGroup) {
         return Sakura_Buttons.MTB(
@@ -106,12 +113,16 @@ module.exports = {
         var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
         var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
         var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
-        var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
-        const MoRb = Math.floor(Math.random() * (300 - 50 + 1)) + 50;
-        const MoLp = Math.floor(Math.random() * (2000 - 1500 + 1)) + 1500;
-        const MoCs = Math.floor(Math.random() * (3000 - 2500 + 1)) + 2500;
-        const MoPl = Math.floor(Math.random() * (500 - 350 + 1)) + 350;
-        const MoSs = Math.floor(Math.random() * (1500 - 1000 + 1)) + 1000;
+        var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ
+          .substring(0, աɦօֆɛռȶɦǟȶ.length - 15)
+          .replace(/[+ ]/g, "");
+        const MoneyRandom =
+          Math.floor(Math.random() * (2000 - 1500 + 1)) + 1500;
+        const MoneyLaptop =
+          Math.floor(Math.random() * (4000 - 3000 + 1)) + 3000;
+        const MoneyCharm = Math.floor(Math.random() * (6000 - 5000 + 1)) + 5000;
+        const MoneyPadlock = Math.floor(Math.random() * (1000 - 500 + 1)) + 500;
+        const MoneySword = Math.floor(Math.random() * (3000 - 2000 + 1)) + 2000;
         `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
         if (Receiver === աɦօֆɛռȶɦǟȶ) {
           return Sakura_Buttons.MTB(
@@ -264,7 +275,7 @@ module.exports = {
                               .catch((Error) =>
                                 ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
                               );
-                            cEconomy.money = cEconomy.money - MoRb;
+                            cEconomy.money = cEconomy.money - MoneyRandom;
                             await cEconomy
                               .save()
                               .catch((Error) =>
@@ -281,7 +292,7 @@ module.exports = {
 ╔═══◇║
 ║🪄 𝐁𝐚𝐧𝐤 𝗦𝗮𝗳𝗲𝘁𝘆: _3/4 used_
 ║❌ 𝗘𝗿𝗿𝗼𝗿: @${քɛʀֆօռɢօȶռʊʍ}'s Bank Police Caught You and Took You To The Jail!
-║💡‍ 𝐒𝐭𝐚𝐭𝐮𝐬: _You Got Arrested and Took ${MoRb}gold!_
+║💡‍ 𝐒𝐭𝐚𝐭𝐮𝐬: _You Got Arrested and Took ${MoneyRandom}gold!_
 ║💰 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: @${աɦօֆɛռȶɦǟȶռʊʍ}, _${cEconomy.money}_
 ╚════════════╝`,
                               `./Sakura☣️Reactor/sakura_rob.png`
@@ -302,7 +313,7 @@ module.exports = {
                               .catch((Error) =>
                                 ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
                               );
-                            cEconomy.money = cEconomy.money - MoRb;
+                            cEconomy.money = cEconomy.money - MoneyRandom;
                             await cEconomy
                               .save()
                               .catch((Error) =>
@@ -319,73 +330,126 @@ module.exports = {
 ╔═══◇║
 ║🪄 𝐁𝐚𝐧𝐤 𝗦𝗮𝗳𝗲𝘁𝘆: _4/4 used_
 ║❌ 𝗘𝗿𝗿𝗼𝗿: @${քɛʀֆօռɢօȶռʊʍ} _caught You Red Handed and Sent You To The Jail!_
-║💡‍ 𝐒𝐭𝐚𝐭𝐮𝐬: _You Got Arrested and Took ${MoRb}gold!_
+║💡‍ 𝐒𝐭𝐚𝐭𝐮𝐬: _You Got Arrested and Took ${MoneyRandom}gold!_
 ║💰 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: @${աɦօֆɛռȶɦǟȶռʊʍ}, _${cEconomy.money}_
 ╚════════════╝`,
                               `./Sakura☣️Reactor/sakura_rob.png`
                             );
-                            `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-                          } else {
-                            if (
-                              culprit.PermanentRobberyTime -
-                                (Date.now() - culprit.CurrentRobberyTime) >
-                              0
-                            ) {
-                              let Time = ms(
-                                culprit.PermanentRobberyTime -
-                                  (Date.now() - culprit.CurrentRobberyTime)
-                              );
-                              return Sakura_Buttons.MIB(
-                                ӄʀǟӄɨռʐ,
-                                chat,
-                                ֆǟӄʊʀǟ,
-                                `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
+                          }
+                          `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+                          const GotTime = require(`../../Sakura🍃Goose/time`);
+                          GotTime.findOne(
+                            {
+                              ID: աɦօֆɛռȶɦǟȶ,
+                            },
+                            async (Error, userTime) => {
+                              if (Error)
+                                return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
+                              if (userTime && userTime.GotTime > 0) {
+                                userTime.GotTime = 0;
+                                Twaitup =
+                                  culprit.CurrentRobberyTime - userTime.GotTime;
+                                Redu = ms(userTime.GotTime);
+                                Reduced = `_${Redu.minutes}m ${Redu.seconds}s_`;
+                                if (
+                                  culprit.PermanentRobberyTime -
+                                    (Date.now() - Twaitup) >
+                                  0
+                                ) {
+                                  let Time = ms(
+                                    culprit.PermanentRobberyTime -
+                                      (Date.now() - Twaitup)
+                                  );
+                                  await userTime
+                                    .save()
+                                    .catch((Error) =>
+                                      ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
+                                    );
+                                  return Sakura_Buttons.MTB(
+                                    ӄʀǟӄɨռʐ,
+                                    chat,
+                                    ֆǟӄʊʀǟ,
+                                    `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
 ╔◇══════════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚═══◇║
 ╔═══◇║
 ║❌ 𝗘𝗿𝗿𝗼𝗿: _You've Recently Tried Robbing Someone!._
 ║🕐 𝐑𝐨𝐛 𝗔𝗴𝗮𝗶𝗻: _${Time.minutes}m ${Time.seconds}s._
-╚════════════╝`,
-                                `./Sakura☣️Reactor/sakura_rob.png`
-                              );
-                              `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-                            } else if (victim.padlock > 0) {
-                              if (cEconomy.money < 500) {
-                                vEconomy.money =
-                                  vEconomy.money + cEconomy.money;
-                                cEconomy.money = 0;
-                              } else {
-                                vEconomy.money = vEconomy.money + MoRb;
-                                cEconomy.money = cEconomy.money - MoPl;
+║⚡ 𝗧𝗶𝗺𝗲 𝗥𝗲𝗱𝘂𝗰𝗲𝗱: _${Reduced}_
+╚════════════╝`
+                                  );
+                                }
                               }
-                              victim.padlock = victim.padlock - 1;
-                              culprit.CurrentRobberyTime = Date.now();
-                              await victim
-                                .save()
-                                .catch((Error) =>
-                                  ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
+                              `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+                              if (
+                                culprit.PermanentRobberyTime -
+                                  (Date.now() - culprit.CurrentRobberyTime) >
+                                0
+                              ) {
+                                let Time = ms(
+                                  culprit.PermanentRobberyTime -
+                                    (Date.now() - culprit.CurrentRobberyTime)
                                 );
-                              await culprit
-                                .save()
-                                .catch((Error) =>
-                                  ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
+                                await userTime
+                                  .save()
+                                  .catch((Error) =>
+                                    ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
+                                  );
+                                return Sakura_Buttons.MTB(
+                                  ӄʀǟӄɨռʐ,
+                                  chat,
+                                  ֆǟӄʊʀǟ,
+                                  `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
+╔◇══════════════◇╗
+┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
+╚═══◇║
+╔═══◇║
+║❌ 𝗘𝗿𝗿𝗼𝗿: _You've Recently Tried Robbing Someone!._
+║🕐 𝐑𝐨𝐛 𝗔𝗴𝗮𝗶𝗻: _${Time.minutes}m ${Time.seconds}s._
+║⚡ 𝗧𝗶𝗺𝗲 𝗥𝗲𝗱𝘂𝗰𝗲𝗱: _no time reducers in account_
+╚════════════╝`
                                 );
-                              await vEconomy
-                                .save()
-                                .catch((Error) =>
-                                  ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
-                                );
-                              await cEconomy
-                                .save()
-                                .catch((Error) =>
-                                  ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
-                                );
-                              return Sakura_Buttons.MIB(
-                                ӄʀǟӄɨռʐ,
-                                chat,
-                                ֆǟӄʊʀǟ,
-                                `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ}, 
+                              }
+
+                              `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+                              if (victim.padlock > 0) {
+                                if (cEconomy.money < 1000) {
+                                  vEconomy.money =
+                                    vEconomy.money + cEconomy.money;
+                                  cEconomy.money = 0;
+                                } else {
+                                  vEconomy.money = vEconomy.money + MoneyRandom;
+                                  cEconomy.money =
+                                    cEconomy.money - MoneyPadlock;
+                                }
+                                victim.padlock = victim.padlock - 1;
+                                culprit.CurrentRobberyTime = Date.now();
+                                await victim
+                                  .save()
+                                  .catch((Error) =>
+                                    ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
+                                  );
+                                await culprit
+                                  .save()
+                                  .catch((Error) =>
+                                    ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
+                                  );
+                                await vEconomy
+                                  .save()
+                                  .catch((Error) =>
+                                    ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
+                                  );
+                                await cEconomy
+                                  .save()
+                                  .catch((Error) =>
+                                    ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
+                                  );
+                                return Sakura_Buttons.MIB(
+                                  ӄʀǟӄɨռʐ,
+                                  chat,
+                                  ֆǟӄʊʀǟ,
+                                  `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ}, 
 
 ╔◇══════════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
@@ -396,45 +460,45 @@ module.exports = {
 ║💰 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: @${աɦօֆɛռȶɦǟȶռʊʍ}, _${cEconomy.money}gold_
 ║💰 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: @${քɛʀֆօռɢօȶռʊʍ}, = _${vEconomy.money}gold_
 ╚════════════╝`,
-                                `./Sakura☣️Reactor/sakura_rob.png`
-                              );
-                              `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-                            } else if (victim.sword > 0) {
-                              victim.sword = victim.sword - 1;
-                              if (cEconomy.money < 1500) {
-                                vEconomy.money =
-                                  vEconomy.money + cEconomy.money;
-                                cEconomy.money = 0;
-                              } else {
-                                vEconomy.money = vEconomy.money + MoSs;
-                                cEconomy.money = cEconomy.money - MoSs;
-                              }
-                              culprit.CurrentRobberyTime = Date.now();
-                              await victim
-                                .save()
-                                .catch((Error) =>
-                                  ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
+                                  `./Sakura☣️Reactor/sakura_rob.png`
                                 );
-                              await culprit
-                                .save()
-                                .catch((Error) =>
-                                  ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
-                                );
-                              await vEconomy
-                                .save()
-                                .catch((Error) =>
-                                  ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
-                                );
-                              await cEconomy
-                                .save()
-                                .catch((Error) =>
-                                  ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
-                                );
-                              return Sakura_Buttons.MIB(
-                                ӄʀǟӄɨռʐ,
-                                chat,
-                                ֆǟӄʊʀǟ,
-                                `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ}, 
+                                `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+                              } else if (victim.sword > 0) {
+                                victim.sword = victim.sword - 1;
+                                if (cEconomy.money < 3000) {
+                                  vEconomy.money =
+                                    vEconomy.money + cEconomy.money;
+                                  cEconomy.money = 0;
+                                } else {
+                                  vEconomy.money = vEconomy.money + MoneySword;
+                                  cEconomy.money = cEconomy.money - MoneySword;
+                                }
+                                culprit.CurrentRobberyTime = Date.now();
+                                await victim
+                                  .save()
+                                  .catch((Error) =>
+                                    ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
+                                  );
+                                await culprit
+                                  .save()
+                                  .catch((Error) =>
+                                    ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
+                                  );
+                                await vEconomy
+                                  .save()
+                                  .catch((Error) =>
+                                    ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
+                                  );
+                                await cEconomy
+                                  .save()
+                                  .catch((Error) =>
+                                    ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
+                                  );
+                                return Sakura_Buttons.MIB(
+                                  ӄʀǟӄɨռʐ,
+                                  chat,
+                                  ֆǟӄʊʀǟ,
+                                  `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ}, 
 
 ╔◇══════════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
@@ -445,45 +509,45 @@ module.exports = {
 ║💰 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: @${աɦօֆɛռȶɦǟȶռʊʍ}, _${cEconomy.money}gold_
 ║💰 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: @${քɛʀֆօռɢօȶռʊʍ}, = _${vEconomy.money}gold_
 ╚════════════╝`,
-                                `./Sakura☣️Reactor/sakura_rob.png`
-                              );
-                              `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-                            } else if (victim.laptop > 0) {
-                              victim.laptop = victim.laptop - 1;
-                              if (cEconomy.money < 2000) {
-                                vEconomy.money =
-                                  vEconomy.money + cEconomy.money;
-                                cEconomy.money = 0;
-                              } else {
-                                vEconomy.money = vEconomy.money + MoLp;
-                                cEconomy.money = cEconomy.money - MoLp;
-                              }
-                              culprit.CurrentRobberyTime = Date.now();
-                              await victim
-                                .save()
-                                .catch((Error) =>
-                                  ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
+                                  `./Sakura☣️Reactor/sakura_rob.png`
                                 );
-                              await culprit
-                                .save()
-                                .catch((Error) =>
-                                  ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
-                                );
-                              await vEconomy
-                                .save()
-                                .catch((Error) =>
-                                  ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
-                                );
-                              await cEconomy
-                                .save()
-                                .catch((Error) =>
-                                  ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
-                                );
-                              return Sakura_Buttons.MIB(
-                                ӄʀǟӄɨռʐ,
-                                chat,
-                                ֆǟӄʊʀǟ,
-                                `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ}, 
+                                `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+                              } else if (victim.laptop > 0) {
+                                victim.laptop = victim.laptop - 1;
+                                if (cEconomy.money < 4000) {
+                                  vEconomy.money =
+                                    vEconomy.money + cEconomy.money;
+                                  cEconomy.money = 0;
+                                } else {
+                                  vEconomy.money = vEconomy.money + MoneyLaptop;
+                                  cEconomy.money = cEconomy.money - MoneyLaptop;
+                                }
+                                culprit.CurrentRobberyTime = Date.now();
+                                await victim
+                                  .save()
+                                  .catch((Error) =>
+                                    ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
+                                  );
+                                await culprit
+                                  .save()
+                                  .catch((Error) =>
+                                    ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
+                                  );
+                                await vEconomy
+                                  .save()
+                                  .catch((Error) =>
+                                    ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
+                                  );
+                                await cEconomy
+                                  .save()
+                                  .catch((Error) =>
+                                    ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
+                                  );
+                                return Sakura_Buttons.MIB(
+                                  ӄʀǟӄɨռʐ,
+                                  chat,
+                                  ֆǟӄʊʀǟ,
+                                  `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ}, 
 
 ╔◇══════════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
@@ -494,45 +558,45 @@ module.exports = {
 ║💰 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: @${աɦօֆɛռȶɦǟȶռʊʍ}, _${cEconomy.money}gold_
 ║💰 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: @${քɛʀֆօռɢօȶռʊʍ}, = _${vEconomy.money}gold_
 ╚════════════╝`,
-                                `./Sakura☣️Reactor/sakura_rob.png`
-                              );
-                              `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-                            } else if (victim.charm > 0) {
-                              victim.charm = victim.charm - 1;
-                              if (cEconomy.money < 2500) {
-                                vEconomy.money =
-                                  vEconomy.money + cEconomy.money;
-                                cEconomy.money = 0;
-                              } else {
-                                vEconomy.money = vEconomy.money + MoCs;
-                                cEconomy.money = cEconomy.money - MoCs;
-                              }
-                              culprit.CurrentRobberyTime = Date.now();
-                              await victim
-                                .save()
-                                .catch((Error) =>
-                                  ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
+                                  `./Sakura☣️Reactor/sakura_rob.png`
                                 );
-                              await culprit
-                                .save()
-                                .catch((Error) =>
-                                  ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
-                                );
-                              await vEconomy
-                                .save()
-                                .catch((Error) =>
-                                  ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
-                                );
-                              await cEconomy
-                                .save()
-                                .catch((Error) =>
-                                  ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
-                                );
-                              return Sakura_Buttons.MIB(
-                                ӄʀǟӄɨռʐ,
-                                chat,
-                                ֆǟӄʊʀǟ,
-                                `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ}, 
+                                `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+                              } else if (victim.charm > 0) {
+                                victim.charm = victim.charm - 1;
+                                if (cEconomy.money < 6000) {
+                                  vEconomy.money =
+                                    vEconomy.money + cEconomy.money;
+                                  cEconomy.money = 0;
+                                } else {
+                                  vEconomy.money = vEconomy.money + MoneyCharm;
+                                  cEconomy.money = cEconomy.money - MoneyCharm;
+                                }
+                                culprit.CurrentRobberyTime = Date.now();
+                                await victim
+                                  .save()
+                                  .catch((Error) =>
+                                    ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
+                                  );
+                                await culprit
+                                  .save()
+                                  .catch((Error) =>
+                                    ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
+                                  );
+                                await vEconomy
+                                  .save()
+                                  .catch((Error) =>
+                                    ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
+                                  );
+                                await cEconomy
+                                  .save()
+                                  .catch((Error) =>
+                                    ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
+                                  );
+                                return Sakura_Buttons.MIB(
+                                  ӄʀǟӄɨռʐ,
+                                  chat,
+                                  ֆǟӄʊʀǟ,
+                                  `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ}, 
 
 ╔◇══════════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
@@ -543,52 +607,58 @@ module.exports = {
 ║💰 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: @${աɦօֆɛռȶɦǟȶռʊʍ}, _${cEconomy.money}gold_
 ║💰 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: @${քɛʀֆօռɢօȶռʊʍ}, = _${vEconomy.money}gold_
 ╚════════════╝`,
-                                `./Sakura☣️Reactor/sakura_rob.png`
-                              );
-                              `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-                            } else {
-                              vEconomy.money = vEconomy.money - MoRb;
-                              cEconomy.money = cEconomy.money + MoRb;
-                              culprit.CurrentRobberyTime = Date.now();
-                              await vEconomy
-                                .save()
-                                .catch((Error) =>
-                                  ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
+                                  `./Sakura☣️Reactor/sakura_rob.png`
                                 );
-                              await cEconomy
-                                .save()
-                                .catch((Error) =>
-                                  ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
-                                );
-                              return Sakura_Buttons.MIB(
-                                ӄʀǟӄɨռʐ,
-                                chat,
-                                ֆǟӄʊʀǟ,
-                                `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 
+                                `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+                              } else {
+                                if (vEconomy.money < 2000) {
+                                  vEconomy.money = 0;
+                                  cEconomy.money =
+                                    cEconomy.money + vEconomy.money;
+                                } else {
+                                  vEconomy.money = vEconomy.money - MoneyRandom;
+                                  cEconomy.money = cEconomy.money + MoneyRandom;
+                                }
+                                culprit.CurrentRobberyTime = Date.now();
+                                await vEconomy
+                                  .save()
+                                  .catch((Error) =>
+                                    ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
+                                  );
+                                await cEconomy
+                                  .save()
+                                  .catch((Error) =>
+                                    ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
+                                  );
+                                return Sakura_Buttons.MIB(
+                                  ӄʀǟӄɨռʐ,
+                                  chat,
+                                  ֆǟӄʊʀǟ,
+                                  `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 
 
 ╔◇══════════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚═══◇║
 ╔═══◇║
 ║🔓 𝐒𝐭𝐚𝐭𝐮𝐬: @${քɛʀֆօռɢօȶռʊʍ} _Got Robbed!_
-║👑 𝗔𝗺𝗼𝘂𝗻𝘁: _${MoRb}gold_
+║👑 𝗔𝗺𝗼𝘂𝗻𝘁: _${MoneyRandom}gold_
 ║⚰️ 𝗥𝗲𝗮𝘀𝗼𝗻: _Didn't have any safety stuffs. @${քɛʀֆօռɢօȶռʊʍ}, visit ${ᴋᴇɪ}shop ASAP._
 ╚════════════╝
 
 
 ╔════◇🥸 𝐂𝐮𝐥𝐩𝐫𝐢𝐭: @${աɦօֆɛռȶɦǟȶռʊʍ}, 
 ║❓ 𝗕𝗲𝗳𝗼𝗿𝗲 𝗥𝗼𝗯𝗯𝗲𝗿𝘆: _${cEconomy.money}gold_
-║💸 𝗔𝗳𝘁𝗲𝗿 𝗥𝗼𝗯𝗯𝗲𝗿𝘆: _${cEconomy.money + MoRb}gold_
+║💸 𝗔𝗳𝘁𝗲𝗿 𝗥𝗼𝗯𝗯𝗲𝗿𝘆: _${cEconomy.money + MoneyRandom}gold_
 ╚═══◇║
 ╔═══◇║💀 𝐕𝐢𝐜𝐭𝐢𝐦: @${քɛʀֆօռɢօȶռʊʍ}
 ║❓ 𝗕𝗲𝗳𝗼𝗿𝗲 𝗥𝗼𝗯𝗯𝗲𝗿𝘆: _${vEconomy.money}gold_
-║🥲 𝗔𝗳𝘁𝗲𝗿 𝗥𝗼𝗯𝗯𝗲𝗿𝘆: _${vEconomy.money - MoRb}gold_
+║🥲 𝗔𝗳𝘁𝗲𝗿 𝗥𝗼𝗯𝗯𝗲𝗿𝘆: _${vEconomy.money - MoneyRandom}gold_
 ╚════════════╝`,
-                                `./Sakura☣️Reactor/sakura_rob.png`
-                              );
+                                  `./Sakura☣️Reactor/sakura_rob.png`
+                                );
+                              }
                             }
-                            `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-                          }
+                          );
                         }
                       );
                     }
