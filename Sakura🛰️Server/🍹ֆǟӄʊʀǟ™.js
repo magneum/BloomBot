@@ -95,38 +95,6 @@ Kolor.green(`
 );
 await ӄʀǟӄɨռʐ
 .sendMessage(
-"120363039223842047@g.us",
-{ url: "./Sakura☣️Reactor/ֆǟӄʊʀǟ.png" },
-MessageType.image,
-{
-caption: `(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 by 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
-
-╔════◇🚀 *BACK ONLINE*
-║🛰️ 𝐏𝐢𝐧𝐠: _${Ping}s_
-║📅 𝐃𝐚𝐭𝐞: _${Clock}_
-╚════════════╝`,
-mime: Mimetype.png,
-}
-)
-.catch((Error) => console.log(Error));
-await ӄʀǟӄɨռʐ
-.sendMessage(
-"120363020792949649@g.us",
-{ url: "./Sakura☣️Reactor/ֆǟӄʊʀǟ.png" },
-MessageType.image,
-{
-caption: `(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭 by 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
-
-╔════◇🚀 *BACK ONLINE*
-║🛰️ 𝐏𝐢𝐧𝐠: _${Ping}s_
-║📅 𝐃𝐚𝐭𝐞: _${Clock}_
-╚════════════╝`,
-mime: Mimetype.png,
-}
-)
-.catch((Error) => console.log(Error));
-await ӄʀǟӄɨռʐ
-.sendMessage(
 ӄʀǟӄɨռʐ.user.jid,
 { url: "./Sakura☣️Reactor/ֆǟӄʊʀǟ.png" },
 MessageType.image,
