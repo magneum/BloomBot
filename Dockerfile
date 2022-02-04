@@ -17,7 +17,7 @@ RUN apt-get install imagemagick -y
 # RUN chmod a+rx /usr/local/bin/youtube-dl
 RUN apt-get install npm -y 
 RUN npm install --global n 
-RUN n install 16 
+RUN n install 17 
 RUN path=path 
 RUN hash -r 
 RUN path=path 
