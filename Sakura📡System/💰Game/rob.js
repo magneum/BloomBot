@@ -568,11 +568,11 @@ let Note;
 if (vEconomy.money < 2000) {
 vEconomy.money = 0;
 cEconomy.money =cEconomy.money + vEconomy.money;
-Note = "*Seems Like The Victim Had Gold<2000. You Got All Their Golds!*"
+Note = `*Seems Like The Victim Had Gold<2000. _You Got All Their Golds ${vEconomy.money}!*_`
 } else {
 vEconomy.money = vEconomy.money - MoneyRandom;
 cEconomy.money = cEconomy.money + MoneyRandom;
-Note = "*You Got All The Golds!*"
+Note = `You Got _${MoneyRandom}gold_!`
 }
 culprit.CurrentRobberyTime = Date.now();
 await vEconomy
@@ -589,14 +589,14 @@ return Sakura_Buttons.MIB(
 ӄʀǟӄɨռʐ,
 chat,
 ֆǟӄʊʀǟ,
-`🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚, ${Note}
+`🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚,
 
 ╔◇══════════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚═══◇║
 ╔═══◇║
 ║🔓 𝐒𝐭𝐚𝐭𝐮𝐬: @${քɛʀֆօռɢօȶռʊʍ} _Got Robbed!_
-║👑 𝗔𝗺𝗼𝘂𝗻𝘁: _${MoneyRandom}gold_
+║👑 𝗔𝗺𝗼𝘂𝗻𝘁: ${Note}
 ║⚰️ 𝗥𝗲𝗮𝘀𝗼𝗻: _Didn't have any safety stuffs. @${քɛʀֆօռɢօȶռʊʍ}, visit ${ᴋᴇɪ}shop ASAP._
 ╚════════════╝
 
