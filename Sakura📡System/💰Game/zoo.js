@@ -85,7 +85,8 @@ chat,
 `./Sakura☣️Reactor/Sakura_Mongo.png`,
 Needs
 );
-} else {
+}
+
 Zoology.findOne(
 {
 ID: աɦօֆɛռȶɦǟȶ,
@@ -116,34 +117,29 @@ chat,
 `./Sakura☣️Reactor/Sakura_Zoo.png`,
 Needs
 );
-} else {
+}
+`|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
 const GotTime = require(`../../Sakura🍃Goose/time`);
-let Treducer = 0;
-let Reduced;
 GotTime.findOne(
 {
 ID: աɦօֆɛռȶɦǟȶ,
 },
 async (Error, userTime) => {
 if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
-if (!userTime) return;
-Treducer = userTime.GotTime;
+if (userTime && userTime.GotTime > 0) {
 userTime.GotTime = 0;
+Twaitup = userZoo.zoodone - userTime.GotTime;
+Redu = ms(userTime.GotTime);
+Reduced = `_${Redu.minutes}m ${Redu.seconds}s_`;
+if (userZoo.zootimeout - (Date.now() - Twaitup) > 0) {
+let Time = ms(
+userZoo.zootimeout - (Date.now() - Twaitup)
+);
 await userTime
 .save()
-.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-}
+.catch((Error) =>
+ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
 );
-if (Treducer > 0) {
-Twaitup = userZoo.zoodone - Treducer;
-Redu = ms(Twaitup);
-Reduced = `_${Redu.minutes}m ${Redu.seconds}s_`;
-} else {
-Twaitup = userZoo.zoodone;
-Reduced = "_no time reducer in account_";
-}
-if (userZoo.zootimeout - (Date.now() - Twaitup) > 0) {
-let Time = ms(userZoo.zootimeout - (Date.now() - Twaitup));
 return Sakura_Buttons.MTB(
 ӄʀǟӄɨռʐ,
 chat,
@@ -159,7 +155,36 @@ chat,
 ╚════════════╝`,
 Needs
 );
-} else {
+}
+}
+`|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+if (userZoo.zootimeout - (Date.now() - userZoo.zoodone) > 0) {
+let Time = ms(
+userZoo.zootimeout - (Date.now() - userZoo.zoodone)
+);
+await userTime
+.save()
+.catch((Error) =>
+ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
+);
+return Sakura_Buttons.MTB(
+ӄʀǟӄɨռʐ,
+chat,
+ֆǟӄʊʀǟ,
+`🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
+╔◇══════════════◇╗
+┊    𝐙𝐨𝐨🐆𝐎𝐰𝐧𝐞𝐫
+╚◇║
+╔◇║
+║❌ 𝗘𝗿𝗿𝗼𝗿: You've Recently Bought a New Animal. 
+║🐓 𝗭𝗼𝗼 𝗔𝗴𝗮𝗶𝗻: ${Time.minutes}m ${Time.seconds}s
+║⚡ 𝗧𝗶𝗺𝗲 𝗥𝗲𝗱𝘂𝗰𝗲𝗱: _no time reducers in account_
+╚════════════╝`,
+Needs
+);
+}
+
+`|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
 const zooID = Math.floor(Math.random() * 10) + 1;
 let rarity;
 if (zooID < 5) rarity = `small`;
@@ -176,9 +201,7 @@ userZoo.zoodone = Date.now();
 userZoo.zootimeout = 1800000;
 await userZoo
 .save()
-.catch((Error) =>
-ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
-);
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
 return Sakura_Buttons.MIB(
 ӄʀǟӄɨռʐ,
 chat,
@@ -196,10 +219,9 @@ chat,
 Needs
 );
 }
-}
-}
 );
 }
+);
 }
 );
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;

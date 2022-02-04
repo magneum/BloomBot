@@ -87,7 +87,7 @@ chat,
 `./Sakura☣️Reactor/Sakura_Mongo.png`,
 Needs
 );
-} else {
+}
 Economy.findOne(
 {
 ID: աɦօֆɛռȶɦǟȶ,
@@ -125,41 +125,32 @@ chat,
 `./Sakura☣️Reactor/Sakura_Hunting.png`,
 Needs
 );
-} else {
-let res = await fetch(
-API(`https://some-random-api.ml`, `/pokedex`, {
-pokemon: BasePoke.toLowerCase(),
-})
-);
-let PokemonData = await res.json();
+}
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
 const GotTime = require(`../../Sakura🍃Goose/time`);
-let Treducer = 0;
-let Reduced;
 GotTime.findOne(
 {
 ID: աɦօֆɛռȶɦǟȶ,
 },
 async (Error, userTime) => {
 if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
-if (!userTime) return;
-Treducer = userTime.GotTime;
+if (userTime && userTime.GotTime > 0) {
 userTime.GotTime = 0;
+Twaitup = userPoke.CurrentLimitTime - userTime.GotTime;
+Redu = ms(userTime.GotTime);
+Reduced = `_${Redu.minutes}m ${Redu.seconds}s_`;
+if (
+userPoke.PermanentLimitTime - (Date.now() - Twaitup) >
+0
+) {
+let Time = ms(
+userPoke.PermanentLimitTime - (Date.now() - Twaitup)
+);
 await userTime
 .save()
-.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-}
+.catch((Error) =>
+ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
 );
-if (Treducer > 0) {
-Twaitup = userPoke.CurrentLimitTime - Treducer;
-Redu = ms(Twaitup);
-Reduced = `_${Redu.minutes}m ${Redu.seconds}s_`;
-} else {
-Twaitup = userPoke.CurrentLimitTime;
-Reduced = "_no time reducer in account_";
-}
-if (userPoke.PermanentLimitTime - (Date.now() - Twaitup) > 0) {
-let Time = ms(userPoke.PermanentLimitTime - (Date.now() - Twaitup));
 return Sakura_Buttons.MTB(
 ӄʀǟӄɨռʐ,
 chat,
@@ -176,20 +167,57 @@ chat,
 ╚════════════╝`,
 Needs
 );
+}
+}
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-} else {
+if (
+userPoke.PermanentLimitTime -
+(Date.now() - userPoke.CurrentLimitTime) >
+0
+) {
+let Time = ms(
+userPoke.PermanentLimitTime -
+(Date.now() - userPoke.CurrentLimitTime)
+);
+await userTime
+.save()
+.catch((Error) =>
+ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
+);
+return Sakura_Buttons.MTB(
+ӄʀǟӄɨռʐ,
+chat,
+ֆǟӄʊʀǟ,
+`🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
+╔◇══════════════◇╗
+┊ 𝐏𝐨𝐤𝐞𝐦𝐨𝐧🦋𝐇𝐮𝐧𝐭𝐢𝐧𝐠
+┊ 𝐌𝐢𝐧𝐞𝐜𝐫𝐚𝐟𝐭 🪵 𝐄𝐝𝐢𝐭𝐢𝐨𝐧
+╚◇║
+╔◇║
+║❌ 𝗘𝗿𝗿𝗼𝗿: You've recently went in a forest!
+║🪵 𝗡𝗲𝘅𝘁 𝗛𝘂𝗻𝘁𝗶𝗻𝗴: ${Time.hours}h ${Time.minutes}m ${Time.seconds}s
+║⚡ 𝗧𝗶𝗺𝗲 𝗥𝗲𝗱𝘂𝗰𝗲𝗱: _no time reducers in account_
+╚════════════╝`,
+Needs
+);
+}
+
+`|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+let res = await fetch(
+API(`https://some-random-api.ml`, `/pokedex`, {
+pokemon: BasePoke.toLowerCase(),
+})
+);
+let PokemonData = await res.json();
+`|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
 userEco.money = userEco.money + Worth;
 userPoke.CurrentLimitTime = Date.now();
 await userEco
 .save()
-.catch((Error) =>
-ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
-);
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
 await userPoke
 .save()
-.catch((Error) =>
-ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
-);
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
 const media = await ӄʀǟӄɨռʐ.prepareMessage(
 ֆǟӄʊʀǟ.chatId,
 { url: PokemonData.sprites.normal },
@@ -216,7 +244,7 @@ contentText: `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռ
 
 𝐁𝐮𝐭𝐭𝐨𝐧 𝐓𝐨 𝐋𝐞𝐚𝐫𝐧 𝐌𝐨𝐫𝐞👇🏻
 `.trim(),
-footerText: `╚(𝐜)𝐒𝐚𝐤𝐮𝐫𝐚𝐄𝐧𝐠𝐢𝐧𝐞: _kryozen${vers.vers}_╝\n╚◈𝐃𝐚𝐭𝐞: _${Clock}_╝\n╚◈𝐏𝐢𝐧𝐠: _${Ping}ms_╝`,
+footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐁𝐨𝐭 ⏋\n⎿ 𝐄𝐧𝐠𝐢𝐧𝐞: _kryozenV${vers.vers}_ ⏋`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}pokedex ${BasePoke.toLowerCase()}`,
@@ -235,14 +263,11 @@ quoted: chat,
 contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
 }
 )
-.catch((Error) =>
-ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
-);
-}
-}
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
 }
 );
 }
+);
 }
 );
 } catch (Error) {

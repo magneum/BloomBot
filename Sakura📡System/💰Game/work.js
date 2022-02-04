@@ -85,35 +85,25 @@ chat,
 `./Sakura☣️Reactor/Sakura_Mongo.png`,
 Needs
 );
+}
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-} else {
 const GotTime = require(`../../Sakura🍃Goose/time`);
-let Treducer = 0;
-let Reduced;
 GotTime.findOne(
 {
 ID: աɦօֆɛռȶɦǟȶ,
 },
 async (Error, userTime) => {
 if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
-if (!userTime) return;
-Treducer = userTime.GotTime;
+if (userTime && userTime.GotTime > 0) {
 userTime.GotTime = 0;
+Twaitup = userEco.workdone - userTime.GotTime;
+Redu = ms(userTime.GotTime);
+Reduced = `_${Redu.minutes}m ${Redu.seconds}s_`;
+if (userEco.worktimeout - (Date.now() - Twaitup) > 0) {
+let Time = ms(userEco.worktimeout - (Date.now() - Twaitup));
 await userTime
 .save()
 .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-}
-);
-if (Treducer > 0) {
-Twaitup = userEco.workdone - Treducer;
-Redu = ms(Twaitup);
-Reduced = `_${Redu.minutes}m ${Redu.seconds}s_`;
-} else {
-Twaitup = userEco.workdone;
-Reduced = "_no time reducer in account_";
-}
-if (userEco.worktimeout - (Date.now() - Twaitup) > 0) {
-let Time = ms(userEco.worktimeout - (Date.now() - Twaitup));
 return Sakura_Buttons.MTB(
 ӄʀǟӄɨռʐ,
 chat,
@@ -129,8 +119,33 @@ chat,
 ╚════════════╝`,
 Needs
 );
+}
+}
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-} else {
+if (userEco.worktimeout - (Date.now() - userEco.workdone) > 0) {
+let Time = ms(
+userEco.worktimeout - (Date.now() - userEco.workdone)
+);
+await userTime
+.save()
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+return Sakura_Buttons.MTB(
+ӄʀǟӄɨռʐ,
+chat,
+ֆǟӄʊʀǟ,
+`🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
+╔◇══════════════◇╗
+┊  𝐒𝐚𝐤𝐮𝐫𝐚💵𝐁𝐚𝐧𝐤
+╚◇║
+╔◇║
+║❌ 𝗘𝗿𝗿𝗼𝗿: _You have already worked recently._ 
+║🕐 𝗪𝗼𝗿𝗸_𝗔𝗴𝗮𝗶𝗻: ${Time.minutes}m ${Time.seconds}s
+║⚡ 𝗧𝗶𝗺𝗲 𝗥𝗲𝗱𝘂𝗰𝗲𝗱: _no time reducers in account_
+╚════════════╝`,
+Needs
+);
+}
+`|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
 let amount = Math.floor(Math.random() * 80) + 1;
 userEco.money = userEco.money + amount;
 userEco.workdone = Date.now();
@@ -154,7 +169,7 @@ chat,
 Needs
 );
 }
-}
+);
 }
 );
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;

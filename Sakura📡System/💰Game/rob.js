@@ -115,8 +115,10 @@ var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
 var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
 var աɦօֆɛռȶɦǟȶ = ֆǟӄʊʀǟ.sender;
 var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
-const MoneyRandom =Math.floor(Math.random() * (2000 - 1000 + 1)) + 1000;
-const MoneyLaptop =Math.floor(Math.random() * (4000 - 3000 + 1)) + 3000;
+const MoneyRandom =
+Math.floor(Math.random() * (2000 - 1000 + 1)) + 1000;
+const MoneyLaptop =
+Math.floor(Math.random() * (4000 - 3000 + 1)) + 3000;
 const MoneyCharm = Math.floor(Math.random() * (6000 - 5000 + 1)) + 5000;
 const MoneyPadlock = Math.floor(Math.random() * (1000 - 500 + 1)) + 500;
 const MoneySword = Math.floor(Math.random() * (3000 - 2000 + 1)) + 2000;
@@ -339,35 +341,36 @@ chat,
 `./Sakura☣️Reactor/sakura_rob.png`,
 Needs
 );
+}
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-} else {
 const GotTime = require(`../../Sakura🍃Goose/time`);
-let Treducer = 0;
-let Reduced;
 GotTime.findOne(
 {
 ID: աɦօֆɛռȶɦǟȶ,
 },
 async (Error, userTime) => {
-if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
-if (!userTime) return;
-Treducer = userTime.GotTime;
+if (Error)
+return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
+if (userTime && userTime.GotTime > 0) {
 userTime.GotTime = 0;
+Twaitup =
+culprit.CurrentRobberyTime - userTime.GotTime;
+Redu = ms(userTime.GotTime);
+Reduced = `_${Redu.minutes}m ${Redu.seconds}s_`;
+if (
+culprit.PermanentRobberyTime -
+(Date.now() - Twaitup) >
+0
+) {
+let Time = ms(
+culprit.PermanentRobberyTime -
+(Date.now() - Twaitup)
+);
 await userTime
 .save()
-.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-}
+.catch((Error) =>
+ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
 );
-if (Treducer > 0) {
-Twaitup = culprit.CurrentRobberyTime - Treducer;
-Redu = ms(Twaitup);
-Reduced = `_${Redu.minutes}m ${Redu.seconds}s_`;
-} else {
-Twaitup = culprit.CurrentRobberyTime;
-Reduced = "_no time reducer in account_";
-}
-if (culprit.PermanentRobberyTime - (Date.now() - Twaitup) > 0) {
-let Time = ms(culprit.PermanentRobberyTime - (Date.now() - Twaitup));
 return Sakura_Buttons.MTB(
 ӄʀǟӄɨռʐ,
 chat,
@@ -383,15 +386,50 @@ chat,
 ╚════════════╝`,
 Needs
 );
+}
+}
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-} else if (victim.padlock > 0) {
+if (
+culprit.PermanentRobberyTime -
+(Date.now() - culprit.CurrentRobberyTime) >
+0
+) {
+let Time = ms(
+culprit.PermanentRobberyTime -
+(Date.now() - culprit.CurrentRobberyTime)
+);
+await userTime
+.save()
+.catch((Error) =>
+ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
+);
+return Sakura_Buttons.MTB(
+ӄʀǟӄɨռʐ,
+chat,
+ֆǟӄʊʀǟ,
+`🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
+╔◇══════════════◇╗
+┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
+╚═══◇║
+╔═══◇║
+║❌ 𝗘𝗿𝗿𝗼𝗿: _You've Recently Tried Robbing Someone!._
+║🕐 𝐑𝐨𝐛 𝗔𝗴𝗮𝗶𝗻: _${Time.minutes}m ${Time.seconds}s._
+║⚡ 𝗧𝗶𝗺𝗲 𝗥𝗲𝗱𝘂𝗰𝗲𝗱: _no time reducers in account_
+╚════════════╝`,
+Needs
+);
+}
+
+`|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+if (victim.padlock > 0) {
 if (cEconomy.money < 1000) {
 vEconomy.money =
 vEconomy.money + cEconomy.money;
 cEconomy.money = 0;
 } else {
 vEconomy.money = vEconomy.money + MoneyRandom;
-cEconomy.money = cEconomy.money - MoneyPadlock;
+cEconomy.money =
+cEconomy.money - MoneyPadlock;
 }
 victim.padlock = victim.padlock - 1;
 culprit.CurrentRobberyTime = Date.now();
@@ -632,8 +670,8 @@ chat,
 Needs
 );
 }
-`|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
 }
+);
 }
 );
 }

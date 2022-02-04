@@ -236,7 +236,7 @@ chat,
 `./Sakura☣️Reactor/Sakura_Gambling.png`,
 Needs
 );
-} else {
+}
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
 Gamble.findOne(
 {
@@ -267,35 +267,29 @@ chat,
 `./Sakura☣️Reactor/Sakura_Mongo.png`,
 Needs
 );
-} else {
+}
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
 const GotTime = require(`../../Sakura🍃Goose/time`);
-let Treducer = 0;
-let Reduced;
 GotTime.findOne(
 {
 ID: աɦօֆɛռȶɦǟȶ,
 },
 async (Error, userTime) => {
 if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
-if (!userTime) return;
-Treducer = userTime.GotTime;
+if (userTime && userTime.GotTime > 0) {
 userTime.GotTime = 0;
+Twaitup = userGamble.Gambledone - userTime.GotTime;
+Redu = ms(userTime.GotTime);
+Reduced = `_${Redu.minutes}m ${Redu.seconds}s_`;
+if (userGamble.Gambletimeout - (Date.now() - Twaitup) > 0) {
+let Time = ms(
+userGamble.Gambletimeout - (Date.now() - Twaitup)
+);
 await userTime
 .save()
-.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-}
+.catch((Error) =>
+ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
 );
-if (Treducer > 0) {
-Twaitup = userGamble.Gambledone - Treducer;
-Redu = ms(Twaitup);
-Reduced = `_${Redu.minutes}m ${Redu.seconds}s_`;
-} else {
-Twaitup = userGamble.Gambledone;
-Reduced = "_no time reducer in account_";
-}
-if (userGamble.Gambletimeout- (Date.now() - Twaitup) > 0) {
-let Time = ms(userGamble.Gambletimeout - (Date.now() - Twaitup));
 return Sakura_Buttons.MTB(
 ӄʀǟӄɨռʐ,
 chat,
@@ -313,12 +307,39 @@ chat,
 Needs
 );
 }
+}
+`|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+if (
+userGamble.Gambletimeout -
+(Date.now() - userGamble.Gambledone) >
+0
+) {
+let Time = ms(
+userGamble.Gambletimeout -
+(Date.now() - userGamble.Gambledone)
+);
+return Sakura_Buttons.MTB(
+ӄʀǟӄɨռʐ,
+chat,
+ֆǟӄʊʀǟ,
+`🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
+╔◇══════════════◇╗
+┊ 𝐑𝐮𝐬𝐬𝐢𝐚𝐧🎡𝐑𝐨𝐮𝐥𝐥𝐞𝐭𝐞
+┊   🤑𝐆𝐚𝐦𝐛𝐥𝐞𝐫
+╚◇║
+╔◇║
+║❌ 𝗘𝗿𝗿𝗼𝗿: _You've Recently Gambled!_
+║🕐 𝗚𝗮𝗺𝗯𝗹𝗲 𝗔𝗴𝗮𝗶𝗻: _${Time.minutes}m ${Time.seconds}s_
+║⚡ 𝗧𝗶𝗺𝗲 𝗥𝗲𝗱𝘂𝗰𝗲𝗱: _no time reducer in account_
+╚════════════╝`,
+Needs
+);
+}
+
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
 function isOdd(num) {
 if (num % 2 == 0) return false;
 else if (num % 2 == 1) return true;
-// else if (num % 3 == 0) return false;
-// else if (num % 4 == 1) return true;
 else return false;
 }
 let Color = Needs[0];
@@ -543,9 +564,9 @@ Needs
 );
 }
 }
-}
 );
 }
+);
 }
 );
 } catch (Error) {
