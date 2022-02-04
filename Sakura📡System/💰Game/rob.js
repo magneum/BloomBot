@@ -564,13 +564,15 @@ chat,
 );
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
 } else {
+let Note;
 if (vEconomy.money < 2000) {
 vEconomy.money = 0;
-cEconomy.money =
-cEconomy.money + vEconomy.money;
+cEconomy.money =cEconomy.money + vEconomy.money;
+Note = "*Seems Like The Victim Had Gold<2000. You Got All Their Golds!*"
 } else {
 vEconomy.money = vEconomy.money - MoneyRandom;
 cEconomy.money = cEconomy.money + MoneyRandom;
+Note = "*You Got All The Golds!*"
 }
 culprit.CurrentRobberyTime = Date.now();
 await vEconomy
@@ -587,7 +589,7 @@ return Sakura_Buttons.MIB(
 ӄʀǟӄɨռʐ,
 chat,
 ֆǟӄʊʀǟ,
-`🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 
+`🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚, ${Note}
 
 ╔◇══════════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
