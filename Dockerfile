@@ -17,9 +17,7 @@ RUN apt-get install imagemagick -y
 # RUN chmod a+rx /usr/local/bin/youtube-dl
 RUN apt-get install npm -y 
 RUN npm install --global n 
-RUN n install 17 
-RUN path=path 
-RUN hash -r 
+RUN n install lts 
 RUN path=path 
 RUN hash -r 
 RUN git clone https://github.com/Krakinz/Sakura.git 
