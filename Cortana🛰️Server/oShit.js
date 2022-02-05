@@ -51,11 +51,9 @@ const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
 await ӄʀǟӄɨռʐ.sendMessage(
 ƈօʀȶǟռǟ.chatId,
 {
-contentText: `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
+contentText: `𝐇𝐚𝐥𝐨🤖𝐔𝐬𝐞𝐫: @${աɦօֆɛռȶɦǟȶռʊʍ},
 
-╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
-║❌ 𝗘𝗿𝗿𝗼𝗿: _Api Timeout.Try Again Later!_
-╚════════════╝`,
+❌ 𝗘𝗿𝗿𝗼𝗿: _Api Timeout.Try Again Later!_`,
 footerText: `⎿ (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐀𝐈 ⏋\n⎿ 𝐄𝐧𝐠𝐢𝐧𝐞: ᴋʀʏᴛᴇᴋ-v${vers.vers} ⏋`,
 buttons: [
 {

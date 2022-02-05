@@ -52,7 +52,7 @@ return Cortana_Buttons.MIB(
 ӄʀǟӄɨռʐ,
 chat,
 ƈօʀȶǟռǟ,
-`🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ} (Owner)\n\n${data.toString()}`,
+`𝐇𝐚𝐥𝐨🤖𝐔𝐬𝐞𝐫: @${աɦօֆɛռȶɦǟȶռʊʍ} (Owner)\n\n${data.toString()}`,
 _𝔏𝔞𝔟_.MEE
 );
 });
