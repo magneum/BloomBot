@@ -222,7 +222,7 @@ const MemNum = update.participants[0];
 if (update.action == `add` && MemNum.includes(ӄʀǟӄɨռʐ.user.jid)) {
 const media = await ӄʀǟӄɨռʐ.prepareMessage(
 GroupID,
-{ url: _𝔏𝔞𝔟_.MEE },
+{ url: "./Cortana☣️Reactor/CortanaWelcome.png" },
 MessageType.image,
 { mimetype: Mimetype.png }
 );
