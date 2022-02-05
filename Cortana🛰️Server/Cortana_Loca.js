@@ -24,7 +24,7 @@ const Cortana_Loca = async (ӄʀǟӄɨռʐ, chat, ƈօʀȶǟռǟ, MainText) => {
 try {
 const buttonMessage = {
 contentText: MainText,
-footerText: `⎿ (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐀𝐈 ⏋\n⎿ 𝐄𝐧𝐠𝐢𝐧𝐞: ᴋʀʏᴛᴇᴋ-v${vers.vers} ⏋`,
+footerText: `⎿ ©️ 𝐂𝐨𝐫𝐭𝐚𝐧𝐚 𝐀𝐈 ⏋`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
