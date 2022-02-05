@@ -346,11 +346,6 @@ module.exports = {
                               culprit.PermanentRobberyTime -
                                 (Date.now() - culprit.CurrentRobberyTime)
                             );
-                            await userTime
-                              .save()
-                              .catch((Error) =>
-                                ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
-                              );
                             return Sakura_Buttons.MTB(
                               ӄʀǟӄɨռʐ,
                               chat,
