@@ -30,7 +30,7 @@ await hold.Hold(ƈօʀȶǟռǟ);
 try {
 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄʀǟӄɨռʐ.getProfilePicture(ƈօʀȶǟռǟ.chatId);
 } catch {
-𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = "https://i.postimg.cc/gcw6vq3X/Npp.png";
+𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = "https://i.postimg.cc/wxWL9G8F/no-profile-picture-300x216.png";
 }
 await ӄʀǟӄɨռʐ
 .sendMessage(
