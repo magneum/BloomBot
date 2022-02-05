@@ -76,7 +76,7 @@ if (ƈօʀȶǟռǟ.isReply) {
 let PersonToRemove =
 chat.message.extendedTextMessage.contextInfo.participant;
 if (PersonToRemove === owner + `@s.whatsapp.net`) {
-return Cortana_Static.MGS(
+return Cortana_Buttons.MTB(
 ӄʀǟӄɨռʐ,
 chat,
 ƈօʀȶǟռǟ,
@@ -84,13 +84,12 @@ chat,
 
 
 ╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
-${owner} ɪꜱ ᴛʜᴇ ᴏᴡɴᴇʀ ᴏꜰ ᴛʜᴇ ɢʀᴏᴜᴘ*`,
-`./Cortana☣️Reactor/ƈօʀȶǟռǟ™.mp4`
+${owner} ɪꜱ ᴛʜᴇ ᴏᴡɴᴇʀ ᴏꜰ ᴛʜᴇ ɢʀᴏᴜᴘ*`
 );
 }
 
 if (PersonToRemove === ƈօʀȶǟռǟ.owner) {
-return Cortana_Static.MGS(
+return Cortana_Buttons.MTB(
 ӄʀǟӄɨռʐ,
 chat,
 ƈօʀȶǟռǟ,
@@ -99,8 +98,7 @@ chat,
 
 ╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
 *ʀᴇQᴜᴇꜱᴛ ʀᴇᴊᴇᴄᴛᴇᴅ.* 😤
-ᴡʜʏ ᴡᴏᴜʟᴅ ʏᴏᴜ ᴜꜱᴇ ᴍʏ ᴘᴏᴡᴇʀꜱ ᴛᴏ ᴋɪᴄᴋ ᴍʏꜱᴇʟꜰ ꜰʀᴏᴍ ᴛʜᴇ ɢʀᴏᴜᴘ?!`,
-`./Cortana☣️Reactor/ƈօʀȶǟռǟ™.mp4`
+ᴡʜʏ ᴡᴏᴜʟᴅ ʏᴏᴜ ᴜꜱᴇ ᴍʏ ᴘᴏᴡᴇʀꜱ ᴛᴏ ᴋɪᴄᴋ ᴍʏꜱᴇʟꜰ ꜰʀᴏᴍ ᴛʜᴇ ɢʀᴏᴜᴘ?!`
 );
 }
 
@@ -119,7 +117,7 @@ return isMember;
 };
 
 if (!isMember) {
-return Cortana_Static.MGS(
+return Cortana_Buttons.MTB(
 ӄʀǟӄɨռʐ,
 chat,
 ƈօʀȶǟռǟ,
@@ -127,8 +125,7 @@ chat,
 
 
 ╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
-*ᴘᴇʀꜱᴏɴ ɪꜱ ɴᴏᴛ ɪɴ ᴛʜᴇ ɢʀᴏᴜᴘ*`,
-`./Cortana☣️Reactor/ƈօʀȶǟռǟ™.mp4`
+*ᴘᴇʀꜱᴏɴ ɪꜱ ɴᴏᴛ ɪɴ ᴛʜᴇ ɢʀᴏᴜᴘ*`
 );
 }
 
@@ -162,7 +159,7 @@ return;
 }
 
 if (!Needs[0]) {
-return Cortana_Static.MGS(
+return Cortana_Buttons.MTB(
 ӄʀǟӄɨռʐ,
 chat,
 ƈօʀȶǟռǟ,
@@ -170,15 +167,14 @@ chat,
 
 
 ╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
-Reply to the person you want to kick or tag them.\n\nFor instance,  *${ᴋᴇɪ}kick @<person-to-kick>*  or reply using  *${ᴋᴇɪ}kick*${ᴋᴇɪ}`,
-`./Cortana☣️Reactor/ƈօʀȶǟռǟ™.mp4`
+Reply to the person you want to kick or tag them.\n\nFor instance,  *${ᴋᴇɪ}kick @<person-to-kick>*  or reply using  *${ᴋᴇɪ}kick*${ᴋᴇɪ}`
 );
 }
 
 if (Needs[0][0] == `@`) {
 const number = Needs[0].substring(1);
 if (isNaN(number)) {
-return Cortana_Static.MGS(
+return Cortana_Buttons.MTB(
 ӄʀǟӄɨռʐ,
 chat,
 ƈօʀȶǟռǟ,
@@ -186,13 +182,12 @@ chat,
 
 
 ╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
-Reply to the person you want to kick or tag them.\n\nFor instance,  *${ᴋᴇɪ}kick @<person-to-kick>*  or reply using  *${ᴋᴇɪ}kick*${ᴋᴇɪ}`,
-`./Cortana☣️Reactor/ƈօʀȶǟռǟ™.mp4`
+Reply to the person you want to kick or tag them.\n\nFor instance,  *${ᴋᴇɪ}kick @<person-to-kick>*  or reply using  *${ᴋᴇɪ}kick*${ᴋᴇɪ}`
 );
 }
 
 if (number + `@s.whatsapp.net` === ƈօʀȶǟռǟ.owner) {
-return Cortana_Static.MGS(
+return Cortana_Buttons.MTB(
 ӄʀǟӄɨռʐ,
 chat,
 ƈօʀȶǟռǟ,
@@ -201,8 +196,7 @@ chat,
 
 ╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
 *ʀᴇQᴜᴇꜱᴛ ʀᴇᴊᴇᴄᴛᴇᴅ.* 😤
-ᴡʜʏ ᴡᴏᴜʟᴅ ʏᴏᴜ ᴜꜱᴇ ᴍʏ ᴘᴏᴡᴇʀꜱ ᴛᴏ ᴋɪᴄᴋ ᴍʏꜱᴇʟꜰ ꜰʀᴏᴍ ᴛʜᴇ ɢʀᴏᴜᴘ?!`,
-`./Cortana☣️Reactor/ƈօʀȶǟռǟ™.mp4`
+ᴡʜʏ ᴡᴏᴜʟᴅ ʏᴏᴜ ᴜꜱᴇ ᴍʏ ᴘᴏᴡᴇʀꜱ ᴛᴏ ᴋɪᴄᴋ ᴍʏꜱᴇʟꜰ ꜰʀᴏᴍ ᴛʜᴇ ɢʀᴏᴜᴘ?!`
 );
 }
 
@@ -233,7 +227,7 @@ number + `@s.whatsapp.net`,
 ]);
 }
 } else {
-return Cortana_Static.MGS(
+return Cortana_Buttons.MTB(
 ӄʀǟӄɨռʐ,
 chat,
 ƈօʀȶǟռǟ,
@@ -242,12 +236,11 @@ chat,
 
 ╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
 ${owner} ɪꜱ ᴛʜᴇ ᴏᴡɴᴇʀ ᴏꜰ ᴛʜᴇ ɢʀᴏᴜᴘ*
-╚════════════╝`,
-`./Cortana☣️Reactor/ƈօʀȶǟռǟ™.mp4`
+╚════════════╝`
 );
 }
 }
-return Cortana_Static.MGS(
+return Cortana_Buttons.MTB(
 ӄʀǟӄɨռʐ,
 chat,
 ƈօʀȶǟռǟ,
@@ -255,8 +248,7 @@ chat,
 
 
 ╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
-Reply to the person you want to kick or tag them.\n\nFor instance,  *${ᴋᴇɪ}kick @<person-to-kick>*  or reply using  *${ᴋᴇɪ}kick*${ᴋᴇɪ}`,
-`./Cortana☣️Reactor/ƈօʀȶǟռǟ™.mp4`
+Reply to the person you want to kick or tag them.\n\nFor instance,  *${ᴋᴇɪ}kick @<person-to-kick>*  or reply using  *${ᴋᴇɪ}kick*${ᴋᴇɪ}`
 );
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🛸𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈(𝐜) |════════════════════════════════════════════⬡|`;
 } catch (Error) {

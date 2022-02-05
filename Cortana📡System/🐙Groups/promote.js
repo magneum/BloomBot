@@ -98,7 +98,10 @@ var contact = await motor.nomentioncontact(Needs, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ
 }
 
 var admin = false;
-var isMember = await motor.onwhatsappserver(contact, ƈօʀȶǟռǟ.groupMembers);
+var isMember = await motor.onwhatsappserver(
+contact,
+ƈօʀȶǟռǟ.groupMembers
+);
 for (const index in ƈօʀȶǟռǟ.groupMembers) {
 if (contact == ƈօʀȶǟռǟ.groupMembers[index].jid.split(`@`)[0]) {
 if (ƈօʀȶǟռǟ.groupMembers[index].isAdmin) {
@@ -111,7 +114,7 @@ if (isMember) {
 if (!admin == true) {
 const arr = [contact + `@s.whatsapp.net`];
 ӄʀǟӄɨռʐ.groupMakeAdmin(ƈօʀȶǟռǟ.chatId, arr);
-return Cortana_Static.MGS(
+return Cortana_Buttons.MTB(
 ӄʀǟӄɨռʐ,
 chat,
 ƈօʀȶǟռǟ,
@@ -119,11 +122,10 @@ chat,
 
 
 ╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
-${contact} *promoted to admin*`,
-`./Cortana☣️Reactor/ƈօʀȶǟռǟ™.mp4`
+${contact} *promoted to admin*`
 );
 } else {
-return Cortana_Static.MGS(
+return Cortana_Buttons.MTB(
 ӄʀǟӄɨռʐ,
 chat,
 ƈօʀȶǟռǟ,
@@ -131,15 +133,14 @@ chat,
 
 
 ╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
-${contact} *is already an admin*`,
-`./Cortana☣️Reactor/ƈօʀȶǟռǟ™.mp4`
+${contact} *is already an admin*`
 );
 }
 }
 
 if (!isMember) {
 if (contact === undefined) {
-return Cortana_Static.MGS(
+return Cortana_Buttons.MTB(
 ӄʀǟӄɨռʐ,
 chat,
 ƈօʀȶǟռǟ,
@@ -147,8 +148,7 @@ chat,
 
 
 ╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
-*Person not found.*`,
-`./Cortana☣️Reactor/ƈօʀȶǟռǟ™.mp4`
+*Person not found.*`
 );
 }
 }

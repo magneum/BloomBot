@@ -100,7 +100,10 @@ var contactmen = await motor.nomentioncontact(Needs, ӄʀǟӄɨռʐ, ƈօʀȶǟ�
 }
 
 var admin = false;
-var isMember = await motor.onwhatsappserver(contact, ƈօʀȶǟռǟ.groupMembers);
+var isMember = await motor.onwhatsappserver(
+contact,
+ƈօʀȶǟռǟ.groupMembers
+);
 var owner = ƈօʀȶǟռǟ.chatId.split(`-`)[0];
 for (const index in ƈօʀȶǟռǟ.groupMembers) {
 if (contact == ƈօʀȶǟռǟ.groupMembers[index].jid.split(`@`)[0]) {
@@ -111,7 +114,7 @@ admin = true;
 }
 
 if (contact === owner) {
-return Cortana_Static.MGS(
+return Cortana_Buttons.MTB(
 ӄʀǟӄɨռʐ,
 chat,
 ƈօʀȶǟռǟ,
@@ -119,8 +122,7 @@ chat,
 
 
 ╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
-${contact} is the owner of the group`,
-`./Cortana☣️Reactor/ƈօʀȶǟռǟ™.mp4`
+${contact} is the owner of the group`
 );
 }
 
@@ -128,7 +130,7 @@ if (isMember) {
 if (admin == true) {
 const arr = [contact + `@s.whatsapp.net`];
 await ӄʀǟӄɨռʐ.groupDemoteAdmin(ƈօʀȶǟռǟ.chatId, arr);
-return Cortana_Static.MGS(
+return Cortana_Buttons.MTB(
 ӄʀǟӄɨռʐ,
 chat,
 ƈօʀȶǟռǟ,
@@ -136,11 +138,10 @@ chat,
 
 
 ╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
-${contact} *is demoted from admin*`,
-`./Cortana☣️Reactor/ƈօʀȶǟռǟ™.mp4`
+${contact} *is demoted from admin*`
 );
 } else {
-return Cortana_Static.MGS(
+return Cortana_Buttons.MTB(
 ӄʀǟӄɨռʐ,
 chat,
 ƈօʀȶǟռǟ,
@@ -148,15 +149,14 @@ chat,
 
 
 ╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
-${contact} *was not an admin*`,
-`./Cortana☣️Reactor/ƈօʀȶǟռǟ™.mp4`
+${contact} *was not an admin*`
 );
 }
 }
 
 if (!isMember) {
 if (contact === undefined) {
-return Cortana_Static.MGS(
+return Cortana_Buttons.MTB(
 ӄʀǟӄɨռʐ,
 chat,
 ƈօʀȶǟռǟ,
@@ -164,8 +164,7 @@ chat,
 
 
 ╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
-*Person not found.𝘛𝘳𝘺 𝘈𝘨𝘢𝘪𝘯!*`,
-`./Cortana☣️Reactor/ƈօʀȶǟռǟ™.mp4`
+*Person not found.𝘛𝘳𝘺 𝘈𝘨𝘢𝘪𝘯!*`
 );
 }
 }

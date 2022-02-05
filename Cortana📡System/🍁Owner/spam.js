@@ -59,7 +59,7 @@ chat,
 if (count > 0) {
 count = parseInt(count);
 } else {
-Cortana_Static.MGS(
+Cortana_Buttons.MTB(
 ӄʀǟӄɨռʐ,
 chat,
 ƈօʀȶǟռǟ,
@@ -67,8 +67,7 @@ chat,
 
 
 ╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
-Spam Amount can't be zero.`,
-`./Cortana☣️Reactor/ƈօʀȶǟռǟ™.mp4`
+Spam Amount can't be zero.`
 );
 return 0;
 }
@@ -79,7 +78,7 @@ await ӄʀǟӄɨռʐ
 .sendMessage(ƈօʀȶǟռǟ.chatId, text, MessageType.text)
 .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat));
 } else {
-return Cortana_Static.MGS(
+return Cortana_Buttons.MTB(
 ӄʀǟӄɨռʐ,
 chat,
 ƈօʀȶǟռǟ,
@@ -87,8 +86,7 @@ chat,
 
 
 ╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
-No text found for spamming!!! Please read /help spam.`,
-`./Cortana☣️Reactor/ƈօʀȶǟռǟ™.mp4`
+No text found for spamming!!! Please read /help spam.`
 );
 }
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🛸𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈(𝐜) |════════════════════════════════════════════⬡|`;

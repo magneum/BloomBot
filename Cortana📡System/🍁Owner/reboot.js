@@ -11,7 +11,7 @@ const Heroku = require(`heroku-client`);
 const ꜰᴜᴄᴋ = require(`../../Cortana🛰️Server/oShit`);
 const _𝔏𝔞𝔟_ = require(`../../Cortana🛰️Server/_𝔏𝔞𝔟_`);
 var heroku = new Heroku({
-token: _𝔏𝔞𝔟_.HEROKU_API_KEY,
+  token: _𝔏𝔞𝔟_.HEROKU_API_KEY,
 });
 const vers = require(`../../package.json`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
@@ -22,51 +22,46 @@ var scriptName = path.basename(__filename);
 var newScpt = scriptName.slice(0, -3).toLowerCase();
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🛸𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈(𝐜) |════════════════════════════════════════════⬡|`;
 module.exports = {
-name: newScpt,
-async handle(ӄʀǟӄɨռʐ, chat, ƈօʀȶǟռǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
-try {
-var աɦօֆɛռȶɦǟȶ = ƈօʀȶǟռǟ.sender;
-const defaultnm = ƈօʀȶǟռǟ.commandName;
-var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ
-.substring(0, աɦօֆɛռȶɦǟȶ.length - 15)
-.replace(/[+ ]/g, "");
-const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
-`|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🛸𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈(𝐜) |════════════════════════════════════════════⬡|`;
-if (!ƈօʀȶǟռǟ.fromMe && !ƈօʀȶǟռǟ.isSenderDev) {
-return Cortana_Buttons.MIB(
-ӄʀǟӄɨռʐ,
-chat,
-ƈօʀȶǟռǟ,
-`*❌ Owner Only | You Are Not Allowed! ❌*`,
-`./Cortana☣️Reactor/ƈօʀȶǟռǟMemErr.png`
-);
-}
-`|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🛸𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈(𝐜) |════════════════════════════════════════════⬡|`;
-await ӄʀǟӄɨռʐ.sendMessage(
-ƈօʀȶǟռǟ.chatId,
-{
-url: `./Cortana☣️Reactor/ƈօʀȶǟռǟ™.mp4`,
-},
-MessageType.video,
-{
-mimetype: `video/gif`,
-contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
-caption: `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
+  name: newScpt,
+  async handle(ӄʀǟӄɨռʐ, chat, ƈօʀȶǟռǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
+    try {
+      var աɦօֆɛռȶɦǟȶ = ƈօʀȶǟռǟ.sender;
+      const defaultnm = ƈօʀȶǟռǟ.commandName;
+      var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ
+        .substring(0, աɦօֆɛռȶɦǟȶ.length - 15)
+        .replace(/[+ ]/g, "");
+      const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
+      `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🛸𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈(𝐜) |════════════════════════════════════════════⬡|`;
+      if (!ƈօʀȶǟռǟ.fromMe && !ƈօʀȶǟռǟ.isSenderDev) {
+        return Cortana_Buttons.MIB(
+          ӄʀǟӄɨռʐ,
+          chat,
+          ƈօʀȶǟռǟ,
+          `*❌ Owner Only | You Are Not Allowed! ❌*`,
+          `./Cortana☣️Reactor/ƈօʀȶǟռǟMemErr.png`
+        );
+      }
+      `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🛸𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈(𝐜) |════════════════════════════════════════════⬡|`;
+      Cortana_Buttons.MIB(
+        ӄʀǟӄɨռʐ,
+        chat,
+        ƈօʀȶǟռǟ,
+        `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
 
 (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈 by ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🛸 
 _Is Now Rebooting.Wait For (10-30)s_`,
-}
-);
-await heroku
-.delete(`/apps/` + _𝔏𝔞𝔟_.HEROKU_APP_NAME + `/dynos/` + `worker`)
-.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat));
+        "./Cortana☣️Reactor/ƈօʀȶǟռǟ.png"
+      );
+      await heroku
+        .delete(`/apps/` + _𝔏𝔞𝔟_.HEROKU_APP_NAME + `/dynos/` + `worker`)
+        .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat));
 
-`|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🛸𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈(𝐜) |════════════════════════════════════════════⬡|`;
-} catch (Error) {
-ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat);
-return;
-}
-},
+      `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🛸𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈(𝐜) |════════════════════════════════════════════⬡|`;
+    } catch (Error) {
+      ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat);
+      return;
+    }
+  },
 };
 `|⬡════════════════════════════════════════════|                            |═══════════════════════════════════════════⬡|`;
 `|                                                                                                                        |`;
