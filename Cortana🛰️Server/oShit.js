@@ -51,7 +51,7 @@ const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
 await ӄʀǟӄɨռʐ.sendMessage(
 ƈօʀȶǟռǟ.chatId,
 {
-contentText: `𝐇𝐚𝐥𝐨🤖𝐔𝐬𝐞𝐫: @${աɦօֆɛռȶɦǟȶռʊʍ},
+contentText: `🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ},
 
 ❌ 𝗘𝗿𝗿𝗼𝗿: _Api Timeout.Try Again Later!_`,
 footerText: `⎿ ©️ 𝐂𝐨𝐫𝐭𝐚𝐧𝐚 𝐀𝐈 ⏋`,

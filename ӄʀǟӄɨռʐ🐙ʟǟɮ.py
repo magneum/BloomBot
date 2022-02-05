@@ -185,7 +185,6 @@ if 爪𝖎𝖟𝖚ӄ𝖎 is not None:
             os.remove("xp0e.aes")
             os.remove("xp0edoc.py")
             shutil.rmtree("__pycache__")
-            os.system("clear")
             print("⬡==========================⬡    🛸 ƈօʀȶǟռǟ™ 🛸    ⬡==========================⬡")
             if os.path.exists("Cortana🛰️Server/🐙ʟǟɮ.py"):
                 os.system("python3 Cortana🛰️Server/🐙ʟǟɮ.py")
