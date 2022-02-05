@@ -2,7 +2,7 @@
 
 # (𝐜)Cortana Bot 📡 version-debug-10 
 
-<img align="centre"  height="500" src="https://github.com/Krakinz/Cortana/blob/KrakinzLab/Cortana%E2%98%A3%EF%B8%8FReactor/%D6%86%C7%9F%D3%84%CA%8A%CA%80%C7%9F.png">
+<img align="centre"  height="500" src="https://github.com/Krakinz/Cortana/blob/KrakinzLab/Cortana%E2%98%A3%EF%B8%8FReactor/%C6%88%D6%85%CA%80%C8%B6%C7%9F%D5%BC%C7%9F.png">
 
 ```
 🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚
