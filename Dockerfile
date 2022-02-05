@@ -20,17 +20,17 @@ RUN npm install --global n
 RUN n install lts 
 RUN path=path 
 RUN hash -r 
-RUN git clone https://github.com/Krakinz/Sakura.git 
-RUN cd Sakura
-WORKDIR /Sakura
+RUN git clone https://github.com/Krakinz/Cortana.git 
+RUN cd Cortana
+WORKDIR /Cortana
 # WORKDIR /
-# COPY . /Sakura
-# WORKDIR /Sakura
+# COPY . /Cortana
+# WORKDIR /Cortana
 # RUN git init --initial-branch=KrakinzLab
-# RUN git remote add origin https://github.com/Krakinz/Sakura.git
+# RUN git remote add origin https://github.com/Krakinz/Cortana.git
 # RUN git fetch origin KrakinzLab
 # RUN git reset --hard origin/KrakinzLab
-RUN pip install -r Sakura☣️Reactor/ӄʀǟӄɨռʐ🐙ʟǟɮ.txt 
+RUN pip install -r Cortana☣️Reactor/ӄʀǟӄɨռʐ🐙ʟǟɮ.txt 
 RUN npm install --force
 RUN npm test
 CMD python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py
