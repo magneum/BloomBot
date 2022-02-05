@@ -52,45 +52,46 @@ module.exports = {
 ╚◇║
 ╔◇║⚡ 𝐅𝐫𝐞𝐪𝐮𝐞𝐧𝐭𝐥𝐲 𝐀𝐬𝐤𝐞𝐝 𝐐𝐮𝐞𝐬𝐭𝐢𝐨𝐧𝐬
 ║
-║ 1. What is the reason/topic for this group?
+║◇ ❓*What is the reason/topic for this group?*
 ║ Sakura is an Advance Whatsapp User-Bot. You Can Use The Bot in this group or in your respective groups.
 ║
-║ 2. How Do I add Sakura In My Group?
+║◇ *❓How Do I add Sakura In My Group?*
 ║   -Send Your Group Link In: https://chat.whatsapp.com/EIn3YFShFmkJ3fvAqf2rpn
 ║   -Tag any in that group and ask them to use /join command.
 ║   -Remember No commands will work in that group!
 ║   -Your Group Should Have 10 members atleast.
 ║   -Turn Disappearing Message Off in your Gc.
 ║
-║ 3. I want to know how to deploy Sakura.
+║◇ *❓I want to know how to deploy Sakura.*
 ║ Not Allowed anymore!
 ║
-║ 4. Please Help Me Out With The Commands.
+║◇ *❓Please Help Me Out With The Commands.*
 ║ You can find all commands in the /menu and their respective category in /help.
 ║
-║ 5. I do not want to understand. I am stupid and dumb.
+║◇ *❓I do not want to understand. I am stupid and dumb.*
 ║ Click on top right corner and press leave.
 ║
-║ 6. Can i send any link?
+║◇ *❓Can i send any link?*
 ║ Allowed Links: YouTube. Anything else = bot will kick you.
 ║
-║ 7. Who made Sakura?
+║◇ *❓Who made Sakura?*
 ║ KrakinzLab
 ║
-║ 8. License and Copyright?*
+║◇ *❓License and Copyright?*
 ║ Visit: http://github.com/krakinzlab/sakura
+║
 ╚◇║
 ╔◇║💡 𝐀𝐥𝐥 𝐂𝐨𝐦𝐦𝐚𝐧𝐝 𝐂𝐚𝐭𝐞𝐠𝐨𝐫𝐢𝐞𝐬 𝐁𝐫𝐢𝐞𝐟𝐥𝐲 𝐄𝐱𝐩𝐥𝐚𝐢𝐧𝐞𝐝
 ║
-║ 1. Animemenu = search anime, get anime gifs,get random anime wallpapers.
-║ 2. Checkmenu = tag or reply to someone to check what category they are.
-║ 3. Downloadmenu = download videos and audio files from YouTube,Instagram.
-║ 4. Filtermenu = add custom audio filter to mp4 files.
-║ 5. Gamemenu = play random games on whatsapp.
-║ 6. Searchmenu = surf the internet within whatsapp.
-║ 7. Randommenu = some random stuffs look yourself.
-║ 8. Hentaimenu = not safe for work adult stuffs!
-║ 9. Humanmenu = not safe for work adult stuffs!
+║◇  Animemenu = search anime, get anime gifs,get random anime wallpapers.
+║◇  Checkmenu = tag or reply to someone to check what category they are.
+║◇  Downloadmenu = download videos and audio files from YouTube,Instagram.
+║◇  Filtermenu = add custom audio filter to mp4 files.
+║◇  Gamemenu = play random games on whatsapp.
+║◇  Searchmenu = surf the internet within whatsapp.
+║◇  Randommenu = some random stuffs look yourself.
+║◇  Hentaimenu = not safe for work adult stuffs!
+║◇  Humanmenu = not safe for work adult stuffs!
 ╚════════════╝`,
         "./Sakura☣️Reactor/ֆǟӄʊʀǟ.png"
       );
