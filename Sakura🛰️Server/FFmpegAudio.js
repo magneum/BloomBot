@@ -23,7 +23,7 @@ exports.FFmpegAudio = async (ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat, Found, userBadg
     .substring(0, աɦօֆɛռȶɦǟȶ.length - 15)
     .replace(/[+ ]/g, "");
   const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
-  var FFmpegFile = `./Sakura☕Shop/${Date.now().toString()}_${աɦօֆɛռȶɦǟȶ.toString()}.mp3`;
+  var FFmpegFile = `./Sakura☕Shop/${Date.now().toString()}_${chat.key.id}.mp3`;
   `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
   Sakura_Buttons.MIB(
     ӄʀǟӄɨռʐ,
