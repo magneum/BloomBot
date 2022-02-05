@@ -192,55 +192,13 @@ module.exports = {
                 Found.thumbnail
               );
             } else {
-              Sakura_Buttons.MIB(
+              await FFmpegAudio.FFmpegAudio(
                 ӄʀǟӄɨռʐ,
-                chat,
                 ֆǟӄʊʀǟ,
-                `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
-
-╔════◇🌿𝗣𝗹𝗲𝗮𝘀𝗲 𝘄𝗮𝗶𝘁!
-║⭕ 𝗙𝗶𝗹𝗲 𝗧𝘆𝗽𝗲: _Audio_
-║⏰ 𝗪𝗮𝗶𝘁 𝗧𝗶𝗺𝗲: _Depends on Length of file._
-╚════════════╝
-
-╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
-║🍻 𝐓𝐢𝐭𝐥𝐞: ${Found.title}
-║🙈 𝐕𝐢𝐞𝐰𝐬: ${Found.views}
-║⏰ 𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧: ${Found.timestamp}
-║✒️ 𝐀𝐮𝐭𝐡𝐨𝐫: ${Found.author.name}
-║🔗 𝐋𝐢𝐧𝐤: ${Found.url}
-║📜 𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${Found.description}
-╚════════════╝`,
-                Found.thumbnail
+                chat,
+                Found,
+                userBadge
               );
-              var FFmpegFile = `./Sakura☕Shop/${Date.now().toString()}_${աɦօֆɛռȶɦǟȶ.toString()}.mp3`;
-              const ffmpeg = require("fluent-ffmpeg");
-              const ytdl = require("ytdl-core");
-              var Stream = ytdl(Found.url, {
-                quality: "highestaudio",
-              });
-              ffmpeg(Stream)
-                .audioBitrate(128)
-                .toFormat("ipod")
-                .saveToFile(FFmpegFile)
-                .on("end", async () => {
-                  console.log(
-                    `⬡═══════════════════| 🥂𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐅𝐢𝐧𝐢𝐬𝐞𝐝🥂 |═══════════════════⬡`
-                  );
-                  await ӄʀǟӄɨռʐ
-                    .sendMessage(
-                      ֆǟӄʊʀǟ.chatId,
-                      fs.readFileSync(FFmpegFile),
-                      MessageType.audio,
-                      {
-                        quoted: chat,
-                        mimetype: "audio/mp4",
-                      }
-                    )
-                    .then(cleanRF.cleanRF(FFmpegFile))
-                    .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-                  return;
-                });
             }
           });
         }
