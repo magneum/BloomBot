@@ -346,9 +346,9 @@ chat,
 );
 }
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-if (Color == "b" || Color.includes("black")) Color = 0;
-else if (Color == "r" || Color.includes("red")) Color = 1;
-else if (Color == "p" || Color.includes("purple")) Color = 2;
+if (Color.includes("black")) Color = 0;
+else if (Color.includes("red")) Color = 1;
+else if (Color.includes("purple")) Color = 2;
 else
 return Sakura_Buttons.MTB(
 ӄʀǟӄɨռʐ,
