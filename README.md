@@ -7,7 +7,7 @@
 ```
 🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚
 
-╔════◇🍹 (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚 𝐀𝐈
+╔════◇🛸 (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚 𝐀𝐈
 ║- ɪꜱ ᴀ ᴡʜᴀᴛꜱᴀᴘᴘ ᴍᴜʟᴛɪᴘᴜʀᴘᴏꜱᴇ-ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ ᴍᴏᴅᴇʀᴀᴛɪᴏɴ,ᴀᴜᴛᴏᴍᴀᴛɪᴏɴ ᴀɴᴅ 100+ ᴄᴏᴍᴍᴀɴᴅꜱ!
 ║- ᴜꜱᴇ ꜱᴀᴋᴜʀᴀ ɪɴ ʙᴏᴛʜ ᴘᴜʙʟɪᴄ-ɢʀᴏᴜᴘꜱ ᴀɴᴅ ᴘʀɪᴠᴀᴛᴇ.
 ║- ꜱᴏ ᴍᴀɴʏ ᴄᴏᴍᴍᴀɴᴅꜱ ᴛʜᴀᴛ ᴡɪʟʟ ʙʟᴏᴡ ᴜᴘ ᴛʜᴇ ᴇᴠᴇʀʏ-ᴅᴀʏ ᴜꜱᴇ ᴏꜰ ʙᴏʀɪɴɢ ᴡʜᴀᴛꜱᴀᴘᴘ.
@@ -67,12 +67,12 @@
 
 # 🛸[𝐃𝐞𝐩𝐥𝐨𝐲𝐦𝐞𝐧𝐭]
 
-🍹[`(𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚 𝐀𝐝𝐯𝐚𝐧𝐜𝐞 𝐀𝐈🍾 #A`](https://chat.whatsapp.com/LKN8uVBd8ucHRHofz0jBSd)
-🍹[`(𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚 𝐀𝐝𝐯𝐚𝐧𝐜𝐞 𝐀𝐈🍾 #B`](https://chat.whatsapp.com/HKO5WLEZxMe3xWCyiv6vBu)
-🍹[`(𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚 𝐀𝐝𝐯𝐚𝐧𝐜𝐞 𝐀𝐈🍾 #C`](https://chat.whatsapp.com/EIn3YFShFmkJ3fvAqf2rpn)
-🍹[`𝐃𝐢𝐬𝐜𝐨𝐫𝐝`](https://discord.gg/xcFN6NDHEV)
+🛸[`(𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚 𝐀𝐝𝐯𝐚𝐧𝐜𝐞 𝐀𝐈🍾 #A`](https://chat.whatsapp.com/LKN8uVBd8ucHRHofz0jBSd)
+🛸[`(𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚 𝐀𝐝𝐯𝐚𝐧𝐜𝐞 𝐀𝐈🍾 #B`](https://chat.whatsapp.com/HKO5WLEZxMe3xWCyiv6vBu)
+🛸[`(𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚 𝐀𝐝𝐯𝐚𝐧𝐜𝐞 𝐀𝐈🍾 #C`](https://chat.whatsapp.com/EIn3YFShFmkJ3fvAqf2rpn)
+🛸[`𝐃𝐢𝐬𝐜𝐨𝐫𝐝`](https://discord.gg/xcFN6NDHEV)
 
-🍹[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Krakinz/Cortana.git/tree/KrakinzLab)
+🛸[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Krakinz/Cortana.git/tree/KrakinzLab)
 
 - ꜰᴏʀᴋ ᴀɴᴅ ꜱᴛᴀʀ ᴛʜᴇ ʀᴇᴘᴏ ᴇʟꜱᴇ ʙᴏᴛ ᴡᴏɴ'ᴛ ʙᴏᴏᴛ
 - ᴄʜᴀɴɢᴇ [app.bot](app.bot) ᴛᴏ app.json
