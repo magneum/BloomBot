@@ -1,3 +1,4 @@
+//external modules
 const { JSDOM } = require("jsdom");
 const fetch = require("node-fetch");
 const FormData = require("form-data");
@@ -5,12 +6,18 @@ const axios = require("axios");
 const cheerio = require("cheerio");
 const qs = require("qs");
 const { fromBuffer } = require("file-type");
+
 //varuable
 const ytIdRegex =
 /(?:http(?:s|):\/\/|)(?:(?:www\.|)youtube(?:\-nocookie|)\.com\/(?:watch\?.*(?:|\&)v=|embed\/|v\/)|youtu\.be\/)([-_0-9A-Za-z]{11})/;
-`|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🛸𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈(𝐜) |===========================================⬡|`;
 
+//fucntion
 function post(url, formdata) {
+console.log(
+Object.keys(formdata)
+.map((key) => `${key}=${encodeURIComponent(formdata[key])}`)
+.join("&")
+);
 return fetch(url, {
 method: "POST",
 headers: {
@@ -23,8 +30,6 @@ body: Object.keys(formdata)
 .join("&"),
 });
 }
-
-`|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🛸𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈(𝐜) |===========================================⬡|`;
 
 function YouTube_Music(url) {
 return new Promise((resolve, reject) => {
@@ -74,8 +79,6 @@ filesize: KB,
 } else reject("URL INVALID");
 });
 }
-
-`|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🛸𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈(𝐜) |===========================================⬡|`;
 
 function Instagram_Dwnloader(url_media) {
 return new Promise((resolve, reject) => {
@@ -131,8 +134,6 @@ reject(err);
 });
 }
 
-`|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🛸𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈(𝐜) |===========================================⬡|`;
-
 function YouTube_Video(url) {
 return new Promise((resolve, reject) => {
 if (ytIdRegex.test(url)) {
@@ -178,9 +179,6 @@ filesize: KB,
 } else reject("URL INVALID");
 });
 }
-
-`|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🛸𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈(𝐜) |===========================================⬡|`;
-
 function upload(media) {
 return new Promise(async (resolve, reject) => {
 try {
@@ -204,8 +202,6 @@ return console.log(e);
 });
 }
 
-`|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🛸𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈(𝐜) |===========================================⬡|`;
-
 function formatDate(n, locale = "id") {
 let d = new Date(n);
 return d.toLocaleDateString(locale, {
@@ -218,11 +214,8 @@ minute: "numeric",
 second: "numeric",
 });
 }
-
-`|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🛸𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈(𝐜) |===========================================⬡|`;
 module.exports.YouTube_Music = YouTube_Music;
 module.exports.YouTube_Video = YouTube_Video;
 module.exports.Instagram_Dwnloader = Instagram_Dwnloader;
 module.exports.upload = upload;
 module.exports.formatDate = formatDate;
-`|⬡===========================================|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🛸𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈(𝐜) |===========================================⬡|`;
