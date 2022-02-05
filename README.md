@@ -1,6 +1,6 @@
 [![Open Source Love svg3](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)<img align="centre" src="https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg" alt="Krakinz"/><img align="centre" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"/>
 
-# (𝐜)Cortana Bot 📡 version-debug-10 
+# (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈 🛸stable-yet-debug
 
 <img align="centre"  height="500" src="https://github.com/Krakinz/Cortana/blob/KrakinzLab/Cortana%E2%98%A3%EF%B8%8FReactor/%C6%88%D6%85%CA%80%C8%B6%C7%9F%D5%BC%C7%9F.png">
 
