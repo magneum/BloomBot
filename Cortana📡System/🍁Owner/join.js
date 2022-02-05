@@ -27,7 +27,7 @@ var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ
 .substring(0, աɦօֆɛռȶɦǟȶ.length - 15)
 .replace(/[+ ]/g, "");
 const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
-`|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈(𝐜) |════════════════════════════════════════════⬡|`;
+`|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🛸𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈(𝐜) |════════════════════════════════════════════⬡|`;
 if (!ƈօʀȶǟռǟ.fromMe && !ƈօʀȶǟռǟ.isSenderDev) {
 return Cortana_Buttons.MIB(
 ӄʀǟӄɨռʐ,
@@ -45,10 +45,10 @@ chat,
 `*Sir Please Don't Reply To any Message.*\n\n *Use:* ${ᴋᴇɪ}${newScpt} _Invite Link_`
 );
 }
-`|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈(𝐜) |════════════════════════════════════════════⬡|`;
+`|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🛸𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈(𝐜) |════════════════════════════════════════════⬡|`;
 const hold = require(`../../Cortana🛰️Server/Hold`);
 await hold.Hold(ƈօʀȶǟռǟ);
-`|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈(𝐜) |════════════════════════════════════════════⬡|`;
+`|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🛸𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈(𝐜) |════════════════════════════════════════════⬡|`;
 let linkRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i;
 var InvLink = Needs.join(" ");
 let [_, code] = InvLink.match(linkRegex) || [];
@@ -64,7 +64,7 @@ chat,
 ╚════════════╝`
 );
 }
-`|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈(𝐜) |════════════════════════════════════════════⬡|`;
+`|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🛸𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈(𝐜) |════════════════════════════════════════════⬡|`;
 try {
 await ӄʀǟӄɨռʐ.acceptInvite(code).then(async (res) => {
 return Cortana_Buttons.MTB(
@@ -83,7 +83,7 @@ chat,
 console.log(Error);
 return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat);
 }
-`|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈(𝐜) |════════════════════════════════════════════⬡|`;
+`|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🛸𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈(𝐜) |════════════════════════════════════════════⬡|`;
 } catch (Error) {
 console.log(Error);
 return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat);
