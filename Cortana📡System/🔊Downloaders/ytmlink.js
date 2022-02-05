@@ -7,11 +7,14 @@ const Cortana_Buttons = require(`../../Cortana🛰️Server/Cortana_Buttons`);
 const Cortana_Static = require(`../../Cortana🛰️Server/Cortana_Static`);
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const FFmpegAudio = require(`../../Cortana🛰️Server/FFmpegAudio`);
+const cleanRF = require(`../../Cortana🛰️Server/cleanRF`);
 const _𝔏𝔞𝔟_ = require(`../../Cortana🛰️Server/_𝔏𝔞𝔟_`);
 const ꜰᴜᴄᴋ = require(`../../Cortana🛰️Server/oShit`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
-const yts = require(`yt-search`);
+const ffmpeg = require("fluent-ffmpeg");
+const ytdl = require("ytdl-core");
+const yts = require("yt-search");
 const fs = require(`fs`);
 var path = require(`path`);
 var scriptName = path.basename(__filename);
@@ -31,6 +34,9 @@ var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ
 .replace(/[+ ]/g, "");
 const defaultnm = ƈօʀȶǟռǟ.commandName;
 const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
+var FFmpegFile = `./Cortana☕Shop/${Date.now().toString()}_${
+chat.key.id
+}.mp3`;
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🛸𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈(𝐜) |════════════════════════════════════════════⬡|`;
 if (Needs.length === 0) {
 var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(ƈօʀȶǟռǟ.commandName);
@@ -195,7 +201,9 @@ mimetype: "audio/mp4",
 }
 )
 .then(cleanRF.cleanRF(YouFile))
-.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat));
+.catch((Error) =>
+ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat)
+);
 }
 );
 return;
@@ -243,13 +251,76 @@ chat,
 Found.thumbnail
 );
 } else {
-await FFmpegAudio.FFmpegAudio(
+Cortana_Buttons.MIB(
 ӄʀǟӄɨռʐ,
-ƈօʀȶǟռǟ,
 chat,
-Found,
-userBadge
+ƈօʀȶǟռǟ,
+`🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ},
+
+╔════◇🌿𝗣𝗹𝗲𝗮𝘀𝗲 𝘄𝗮𝗶𝘁!
+║⭕ 𝗙𝗶𝗹𝗲 𝗧𝘆𝗽𝗲: _Audio_
+║⏰ 𝗪𝗮𝗶𝘁 𝗧𝗶𝗺𝗲: _Depends on Length of file._
+╚════════════╝
+
+╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+║🍻 𝐓𝐢𝐭𝐥𝐞: ${Found.title}
+║🙈 𝐕𝐢𝐞𝐰𝐬: ${Found.views}
+║⏰ 𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧: ${Found.timestamp}
+║✒️ 𝐀𝐮𝐭𝐡𝐨𝐫: ${Found.author.name}
+║🔗 𝐋𝐢𝐧𝐤: ${Found.url}
+║📜 𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${Found.description}
+╚════════════╝`,
+Found.thumbnail
 );
+try {
+var stream = ytdl(Found.url, {
+filter: "audioonly",
+});
+ffmpeg(stream)
+.audioBitrate(128)
+.toFormat("ipod")
+.saveToFile(`./Cortana☕Shop/${chat.key.id}.mp3`)
+.on("end", async () => {
+await ӄʀǟӄɨռʐ.sendMessage(
+ƈօʀȶǟռǟ.chatId,
+fs.readFileSync(`./Cortana☕Shop/${chat.key.id}.mp3`),
+MessageType.audio,
+{
+quoted: chat,
+mimetype: Mimetype.mp4Audio,
+}
+);
+return await cleanRF.cleanRF(
+`Cortana☕Shop/${chat.key.id}.mp3`
+);
+});
+} catch (Error) {
+const downloadFFmpegFile = ytdl(Found.url, {
+filter: "audioonly",
+});
+const writeStream = fs.createWriteStream(FFmpegFile);
+downloadFFmpegFile.pipe(writeStream);
+downloadFFmpegFile.on("end", () => {
+console.log(
+`⬡═══════════════════| 🥂𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐅𝐢𝐧𝐢𝐬𝐞𝐝🥂 |═══════════════════⬡`
+);
+ӄʀǟӄɨռʐ
+.sendMessage(
+ƈօʀȶǟռǟ.chatId,
+fs.readFileSync(FFmpegFile),
+MessageType.audio,
+{
+quoted: chat,
+mimetype: "audio/mp4",
+}
+)
+.then(cleanRF.cleanRF(FFmpegFile))
+.catch((Error) =>
+ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat)
+);
+return;
+});
+}
 }
 });
 }
