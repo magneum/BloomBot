@@ -101,8 +101,9 @@ async function ֆǟӄʊʀǟ() {
 ╔════◇🚀 *BACK ONLINE*
 ║🛰️ 𝐏𝐢𝐧𝐠: _${Ping}s_
 ║📅 𝐃𝐚𝐭𝐞: _${Clock}_
-║💼 𝐆𝐫𝐨𝐮𝐩: _${_𝔏𝔞𝔟_.HASHS}_
 ║💼 𝐆𝐫𝐨𝐮𝐩: _${_𝔏𝔞𝔟_.HASH}_
+║💼 𝐆𝐫𝐨𝐮𝐩: _${_𝔏𝔞𝔟_.HASHS}_
+║💼 𝐆𝐫𝐨𝐮𝐩: _${_𝔏𝔞𝔟_.HASHSH}_
 ║💻 𝐆𝐢𝐭𝐡𝐮𝐛: _https://github.com/Krakinz/Sakura_
 ╚════════════╝`,
         MessageType.text
@@ -422,6 +423,9 @@ ${update.desc}`,
                   }
                   `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
                   if (
+                    !ֆǟӄʊʀǟ.body.includes(_𝔏𝔞𝔟_.HASH) &&
+                    !ֆǟӄʊʀǟ.body.includes(_𝔏𝔞𝔟_.HASHS) &&
+                    !ֆǟӄʊʀǟ.body.includes(_𝔏𝔞𝔟_.HASHSH) &&
                     ֆǟӄʊʀǟ.body.includes("www.") &&
                     ֆǟӄʊʀǟ.body.includes("https://") &&
                     ֆǟӄʊʀǟ.body.includes("wa.me/") &&
@@ -457,19 +461,26 @@ ${update.desc}`,
             }
             `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
             if (ֆǟӄʊʀǟ.isCmd) {
-              const gMetadata = await ӄʀǟӄɨռʐ.groupMetadata(
+              const gMetadata1 = await ӄʀǟӄɨռʐ.groupMetadata(
                 "120363039223842047@g.us"
               );
-              const gMetadataa = await ӄʀǟӄɨռʐ.groupMetadata(
+              const gMetadata2 = await ӄʀǟӄɨռʐ.groupMetadata(
                 "120363020792949649@g.us"
               );
-              let members = [];
-              for (var i = 0; i < gMetadata.participants.length; i++) {
-                members[i] = gMetadata.participants[i].jid;
+              const gMetadata3 = await ӄʀǟӄɨռʐ.groupMetadata(
+                "120363024871653603@g.us"
+              );
+              let member1 = [];
+              for (var i = 0; i < gMetadata1.participants.length; i++) {
+                member1[i] = gMetadata1.participants[i].jid;
               }
-              let memberss = [];
-              for (var i = 0; i < gMetadataa.participants.length; i++) {
-                memberss[i] = gMetadataa.participants[i].jid;
+              let member2 = [];
+              for (var i = 0; i < gMetadata2.participants.length; i++) {
+                member2[i] = gMetadata2.participants[i].jid;
+              }
+              let member3 = [];
+              for (var i = 0; i < gMetadata3.participants.length; i++) {
+                member3[i] = gMetadata3.participants[i].jid;
               }
               `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
               if (
@@ -480,8 +491,9 @@ ${update.desc}`,
                 !ֆǟӄʊʀǟ.body.includes(ᴋᴇɪ + "faq")
               )
                 if (
-                  !members.includes(աɦօֆɛռȶɦǟȶ) &&
-                  !memberss.includes(աɦօֆɛռȶɦǟȶ)
+                  !member1.includes(աɦօֆɛռȶɦǟȶ) &&
+                  !member2.includes(աɦօֆɛռȶɦǟȶ) &&
+                  !member3.includes(աɦօֆɛռȶɦǟȶ)
                 ) {
                   return Sakura_Buttons.MIB(
                     ӄʀǟӄɨռʐ,
