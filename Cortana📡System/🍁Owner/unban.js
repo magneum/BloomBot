@@ -31,12 +31,11 @@ const defaultnm = ƈօʀȶǟռǟ.commandName;
 const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🛸𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈(𝐜) |════════════════════════════════════════════⬡|`;
 if (!ƈօʀȶǟռǟ.fromMe && !ƈօʀȶǟռǟ.isSenderDev) {
-return Cortana_Buttons.MIB(
+return Cortana_Buttons.MTB(
 ӄʀǟӄɨռʐ,
 chat,
 ƈօʀȶǟռǟ,
-`*❌ Owner Only | You Are Not Allowed! ❌*`,
-`./Cortana☣️Reactor/ƈօʀȶǟռǟMemErr.png`
+`❌𝐃𝐞𝐧𝐢𝐞𝐝: _Owner/Dev Only.You Are Not Allowed!_`
 );
 }
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🛸𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈(𝐜) |════════════════════════════════════════════⬡|`;
@@ -44,7 +43,7 @@ if (ƈօʀȶǟռǟ.isReply) {
 var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
 var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
 if (Receiver === աɦօֆɛռȶɦǟȶ) {
-return Cortana_Buttons.MIB(
+return Cortana_Buttons.MTB(
 ӄʀǟӄɨռʐ,
 chat,
 ƈօʀȶǟռǟ,
@@ -53,8 +52,7 @@ chat,
 ╔════◇🛡️𝐒𝐮𝐝𝐨 𝐔𝐧𝐁𝐚𝐧:
 ║🍕 𝐅𝐫𝐨𝐦: *@${աɦօֆɛռȶɦǟȶռʊʍ}*
 ║🔓 𝐒𝐭𝐚𝐭𝐮𝐬: _Can't Use On My-Self_
-╚════════════╝`,
-"./Cortana☣️Reactor/Cortana_Bans.png"
+╚════════════╝`
 );
 }
 }
@@ -80,7 +78,7 @@ ID: ƈօʀȶǟռǟ.chatId,
 async (Error, userBan) => {
 if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat);
 if (!userBan) {
-return Cortana_Buttons.MIB(
+return Cortana_Buttons.MTB(
 ӄʀǟӄɨռʐ,
 chat,
 ƈօʀȶǟռǟ,
@@ -89,14 +87,13 @@ chat,
 ╔════◇🛡️𝐒𝐮𝐝𝐨 𝐔𝐧𝐁𝐚𝐧:
 ║🍕 𝐅𝐫𝐨𝐦: *@${աɦօֆɛռȶɦǟȶռʊʍ}*
 ║🔓 𝐒𝐭𝐚𝐭𝐮𝐬: *${groupData.subject}* = Was Not Banned!
-╚════════════╝`,
-"./Cortana☣️Reactor/Cortana_Bans.png"
+╚════════════╝`
 );
 }
 await userBan
 .delete()
 .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat));
-return Cortana_Buttons.MIB(
+return Cortana_Buttons.MTB(
 ӄʀǟӄɨռʐ,
 chat,
 ƈօʀȶǟռǟ,
@@ -105,8 +102,7 @@ chat,
 ╔════◇🛡️𝐒𝐮𝐝𝐨 𝐔𝐧𝐁𝐚𝐧:
 ║🍕 𝐅𝐫𝐨𝐦: *@${աɦօֆɛռȶɦǟȶռʊʍ}*
 ║🔓 𝐒𝐭𝐚𝐭𝐮𝐬: *${groupData.subject}* = Has Been Un-Banned!
-╚════════════╝`,
-"./Cortana☣️Reactor/Cortana_Bans.png"
+╚════════════╝`
 );
 }
 );
@@ -121,7 +117,7 @@ ID: Receiver,
 async (Error, userBan) => {
 if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat);
 if (!userBan) {
-return Cortana_Buttons.MIB(
+return Cortana_Buttons.MTB(
 ӄʀǟӄɨռʐ,
 chat,
 ƈօʀȶǟռǟ,
@@ -130,14 +126,13 @@ chat,
 ╔════◇🛡️𝐒𝐮𝐝𝐨 𝐔𝐧𝐁𝐚𝐧:
 ║🍕 𝐅𝐫𝐨𝐦: *@${աɦօֆɛռȶɦǟȶռʊʍ}*
 ║🔓 𝐒𝐭𝐚𝐭𝐮𝐬: *@${քɛʀֆօռɢօȶռʊʍ}* = Was Not Banned!
-╚════════════╝`,
-"./Cortana☣️Reactor/Cortana_Bans.png"
+╚════════════╝`
 );
 }
 await userBan
 .delete()
 .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat));
-return Cortana_Buttons.MIB(
+return Cortana_Buttons.MTB(
 ӄʀǟӄɨռʐ,
 chat,
 ƈօʀȶǟռǟ,
@@ -146,8 +141,7 @@ chat,
 ╔════◇🛡️𝐒𝐮𝐝𝐨 𝐔𝐧𝐁𝐚𝐧:
 ║🍕 𝐅𝐫𝐨𝐦: *@${աɦօֆɛռȶɦǟȶռʊʍ}*
 ║🔓 𝐒𝐭𝐚𝐭𝐮𝐬: *@${քɛʀֆօռɢօȶռʊʍ}* = Has Been Un-Banned!
-╚════════════╝`,
-"./Cortana☣️Reactor/Cortana_Bans.png"
+╚════════════╝`
 );
 }
 );
