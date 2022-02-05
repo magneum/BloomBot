@@ -83,15 +83,22 @@ module.exports = {
 ╚◇║
 ╔◇║💡 𝐀𝐥𝐥 𝐂𝐨𝐦𝐦𝐚𝐧𝐝 𝐂𝐚𝐭𝐞𝐠𝐨𝐫𝐢𝐞𝐬 𝐁𝐫𝐢𝐞𝐟𝐥𝐲 𝐄𝐱𝐩𝐥𝐚𝐢𝐧𝐞𝐝
 ║
-║◇  Animemenu = search anime, get anime gifs,get random anime wallpapers.
-║◇  Checkmenu = tag or reply to someone to check what category they are.
-║◇  Downloadmenu = download videos and audio files from YouTube,Instagram.
-║◇  Filtermenu = add custom audio filter to mp4 files.
-║◇  Gamemenu = play random games on whatsapp.
-║◇  Searchmenu = surf the internet within whatsapp.
-║◇  Randommenu = some random stuffs look yourself.
-║◇  Hentaimenu = not safe for work adult stuffs!
-║◇  Humanmenu = not safe for work adult stuffs!
+◇══════║ 👇🏽𝐄𝐯𝐞𝐫𝐲𝐨𝐧𝐞 
+║🍣 _${ᴋᴇɪ}animemenu_ = search anime, get anime gifs,get random anime wallpapers.
+║💰 _${ᴋᴇɪ}gamemenu_ = play random games on whatsapp.
+║📥 _${ᴋᴇɪ}downloadmenu_ = download videos and audio files from YouTube,Instagram.
+║🔰 _${ᴋᴇɪ}groupmenu_ = group moderation and automation.
+║🦄 _${ᴋᴇɪ}randommenu_ = some random stuffs look yourself.
+║🔎 _${ᴋᴇɪ}searchmenu_ = surf the internet within whatsapp.
+║🗂️ _${ᴋᴇɪ}ffmpegmenu_ = convertion using ffmpeg. 
+║🏝️ _${ᴋᴇɪ}filtersmenu_ = add custom audio filter to mp3 files.
+║🎨 _${ᴋᴇɪ}checkmenu_ = tag or reply to someone to check what category they are.
+║
+◇══════║ 👇🏽𝐀𝐝𝐦𝐢𝐧-𝐎𝐧𝐥𝐲
+║🔰 _${ᴋᴇɪ}groupmenu_ = not safe for work adult stuffs!
+║🍄 _${ᴋᴇɪ}hentaimenu_ = not safe for work adult stuffs! 
+║🥃 _${ᴋᴇɪ}humanmenu_ = not safe for work adult stuffs!  
+║🐙 _${ᴋᴇɪ}ownermenu_ = owner/dev only! 
 ╚════════════╝`,
         "./Sakura☣️Reactor/ֆǟӄʊʀǟ.png"
       );
