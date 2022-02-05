@@ -67,6 +67,7 @@ module.exports = {
           ֆǟӄʊʀǟ.commandName,
           ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
         );
+        `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
       } else if (!parseInt(Needs[1])) {
         var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(ֆǟӄʊʀǟ.commandName);
         var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
@@ -81,6 +82,7 @@ module.exports = {
           ֆǟӄʊʀǟ.commandName,
           ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
         );
+        `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
       } else if (
         Needs[1].includes("p") &&
         Needs[1].includes("b") &&
@@ -99,6 +101,7 @@ module.exports = {
           ֆǟӄʊʀǟ.commandName,
           ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
         );
+        `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
       } else if (!Needs[1]) {
         var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(ֆǟӄʊʀǟ.commandName);
         var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
@@ -113,6 +116,7 @@ module.exports = {
           ֆǟӄʊʀǟ.commandName,
           ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
         );
+        `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
       } else if (Needs[1] < 50) {
         return Sakura_Buttons.MTB(
           ӄʀǟӄɨռʐ,
@@ -125,6 +129,7 @@ module.exports = {
 ║💡 𝗟𝗶𝗺𝗶𝘁: _min 50gold needed to gamble_
 ╚════════════╝`
         );
+        `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
       } else if (Needs[1] > 800) {
         return Sakura_Buttons.MTB(
           ӄʀǟӄɨռʐ,
@@ -137,6 +142,7 @@ module.exports = {
 ║💡 𝗟𝗶𝗺𝗶𝘁: _max 800gold for gamble_
 ╚════════════╝`
         );
+        `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
       } else if (Needs[0] === "red" && Needs[1] > 200) {
         return Sakura_Buttons.MTB(
           ӄʀǟӄɨռʐ,
@@ -149,6 +155,7 @@ module.exports = {
 ║💡 𝗟𝗶𝗺𝗶𝘁: _max 200gold_
 ╚════════════╝`
         );
+        `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
       } else if (Needs[0] === "black" && Needs[1] > 500) {
         return Sakura_Buttons.MTB(
           ӄʀǟӄɨռʐ,
@@ -161,6 +168,7 @@ module.exports = {
 ║⚫ 𝗟𝗶𝗺𝗶𝘁: _max 500gold_
 ╚════════════╝`
         );
+        `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
       } else if (Needs[0] === "purple" && Needs[1] > 800) {
         return Sakura_Buttons.MTB(
           ӄʀǟӄɨռʐ,
@@ -173,8 +181,8 @@ module.exports = {
 ║🟣 𝗟𝗶𝗺𝗶𝘁: _max 800gold_
 ╚════════════╝`
         );
-      } else {
         `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+      } else {
         Economy.findOne(
           {
             ID: աɦօֆɛռȶɦǟȶ,
@@ -209,54 +217,53 @@ module.exports = {
 ║🤠 𝗔𝗰𝗰𝗼𝘂𝗻𝘁_𝗛𝗼𝗹𝗱𝗲𝗿: @${աɦօֆɛռȶɦǟȶռʊʍ},
 ╚════════════╝`
               );
-            } else {
-              `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-              Gamble.findOne(
-                {
-                  ID: աɦօֆɛռȶɦǟȶ,
-                },
-                async (Error, userGamble) => {
-                  if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
-                  if (!userGamble) {
-                    var newUser = new Gamble({
-                      ID: աɦօֆɛռȶɦǟȶ,
-                      serverID: ֆǟӄʊʀǟ.chatId,
-                      Gambledone: 0,
-                      Gambletimeout: 240000,
-                    });
-                    await newUser
-                      .save()
-                      .catch((Error) =>
-                        ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
-                      );
-                    return Sakura_Buttons.MIB(
-                      ӄʀǟӄɨռʐ,
-                      chat,
-                      ֆǟӄʊʀǟ,
-                      `*🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},*
+            }
+
+            `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+            Gamble.findOne(
+              {
+                ID: աɦօֆɛռȶɦǟȶ,
+              },
+              async (Error, userGamble) => {
+                if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
+                if (!userGamble) {
+                  var newUser = new Gamble({
+                    ID: աɦօֆɛռȶɦǟȶ,
+                    serverID: ֆǟӄʊʀǟ.chatId,
+                    Gambledone: 0,
+                    Gambletimeout: 480000,
+                  });
+                  await newUser
+                    .save()
+                    .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+                  return Sakura_Buttons.MIB(
+                    ӄʀǟӄɨռʐ,
+                    chat,
+                    ֆǟӄʊʀǟ,
+                    `*🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},*
 
 ╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_  
 ║🤖 *User Added To Database For First Time!*
 ║🦋 _Try ${ᴋᴇɪ}${defaultnm} Again!_
 ╚════════════╝`,
-                      `./Sakura☣️Reactor/Sakura_Mongo.png`
-                    );
-                  } else {
-                    `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-                    if (
+                    `./Sakura☣️Reactor/Sakura_Mongo.png`
+                  );
+                } else {
+                  `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+                  if (
+                    userGamble.Gambletimeout -
+                      (Date.now() - userGamble.Gambledone) >
+                    0
+                  ) {
+                    let time = ms(
                       userGamble.Gambletimeout -
-                        (Date.now() - userGamble.Gambledone) >
-                      0
-                    ) {
-                      let time = ms(
-                        userGamble.Gambletimeout -
-                          (Date.now() - userGamble.Gambledone)
-                      );
-                      return Sakura_Buttons.MTB(
-                        ӄʀǟӄɨռʐ,
-                        chat,
-                        ֆǟӄʊʀǟ,
-                        `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
+                        (Date.now() - userGamble.Gambledone)
+                    );
+                    return Sakura_Buttons.MTB(
+                      ӄʀǟӄɨռʐ,
+                      chat,
+                      ֆǟӄʊʀǟ,
+                      `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
 ╔◇══════════════◇╗
 ┊ 𝐑𝐮𝐬𝐬𝐢𝐚𝐧🎡𝐑𝐨𝐮𝐥𝐥𝐞𝐭𝐞
 ┊   🤑𝐆𝐚𝐦𝐛𝐥𝐞𝐫
@@ -265,27 +272,27 @@ module.exports = {
 ║❌ 𝗘𝗿𝗿𝗼𝗿: _You've Recently Gambled!_
 ║🕐 𝗚𝗮𝗺𝗯𝗹𝗲 𝗔𝗴𝗮𝗶𝗻: ${time.minutes}m ${time.seconds}s
 ╚════════════╝`
-                      );
-                    }
-                    `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-                    function isOdd(num) {
-                      if (num % 2 == 0) return false;
-                      else if (num % 2 == 1) return true;
-                      else if (num % 3 == 0) return false;
-                      else if (num % 4 == 1) return true;
-                      else return false;
-                    }
-                    let Color = Needs[0];
-                    let money = parseInt(Needs[1]);
-                    let CurrentMoney = userEco.money;
-                    let Amount = Math.floor(Math.random() * 10);
-                    `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-                    if (!Color) {
-                      return Sakura_Buttons.MTB(
-                        ӄʀǟӄɨռʐ,
-                        chat,
-                        ֆǟӄʊʀǟ,
-                        `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
+                    );
+                  }
+                  `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+                  function isOdd(num) {
+                    if (num % 2 == 0) return false;
+                    else if (num % 2 == 1) return true;
+                    else if (num % 3 == 0) return false;
+                    else if (num % 4 == 1) return true;
+                    else return false;
+                  }
+                  let Color = Needs[0];
+                  let money = parseInt(Needs[1]);
+                  let CurrentMoney = userEco.money;
+                  let Amount = Math.floor(Math.random() * 10);
+                  `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+                  if (!Color) {
+                    return Sakura_Buttons.MTB(
+                      ӄʀǟӄɨռʐ,
+                      chat,
+                      ֆǟӄʊʀǟ,
+                      `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
 ╔◇══════════════◇╗
 ┊ 𝐑𝐮𝐬𝐬𝐢𝐚𝐧🎡𝐑𝐨𝐮𝐥𝐥𝐞𝐭𝐞
 ┊   🤑𝐆𝐚𝐦𝐛𝐥𝐞𝐫
@@ -301,16 +308,16 @@ module.exports = {
 ║ (hard) *Black:* _2 out of 10_ 
 ║ (god) *Purple:* _1 out of 10_ 
 ╚════════════╝`
-                      );
-                    }
-                    `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-                    Color = Color.toLowerCase();
-                    if (!money) {
-                      return Sakura_Buttons.MTB(
-                        ӄʀǟӄɨռʐ,
-                        chat,
-                        ֆǟӄʊʀǟ,
-                        `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
+                    );
+                  }
+                  `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+                  Color = Color.toLowerCase();
+                  if (!money) {
+                    return Sakura_Buttons.MTB(
+                      ӄʀǟӄɨռʐ,
+                      chat,
+                      ֆǟӄʊʀǟ,
+                      `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
 ╔◇══════════════◇╗
 ┊ 𝐑𝐮𝐬𝐬𝐢𝐚𝐧🎡𝐑𝐨𝐮𝐥𝐥𝐞𝐭𝐞
 ┊   🤑𝐆𝐚𝐦𝐛𝐥𝐞𝐫
@@ -319,15 +326,15 @@ module.exports = {
 ║❌ 𝗘𝗿𝗿𝗼𝗿: _Specify an amount to gamble!_
 ║❣️ 𝗨𝘀𝗮𝗴𝗲: ${ᴋᴇɪ}${newScpt}  _red/black/purple money_
 ╚════════════╝`
-                      );
-                    }
-                    `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-                    if (money > CurrentMoney) {
-                      return Sakura_Buttons.MTB(
-                        ӄʀǟӄɨռʐ,
-                        chat,
-                        ֆǟӄʊʀǟ,
-                        `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
+                    );
+                  }
+                  `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+                  if (money > CurrentMoney) {
+                    return Sakura_Buttons.MTB(
+                      ӄʀǟӄɨռʐ,
+                      chat,
+                      ֆǟӄʊʀǟ,
+                      `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
 ╔◇══════════════◇╗
 ┊ 𝐑𝐮𝐬𝐬𝐢𝐚𝐧🎡𝐑𝐨𝐮𝐥𝐥𝐞𝐭𝐞
 ┊   🤑𝐆𝐚𝐦𝐛𝐥𝐞𝐫
@@ -336,18 +343,18 @@ module.exports = {
 ║❌ 𝗘𝗿𝗿𝗼𝗿: _You are betting more than you have!_
 ║❣️ 𝗨𝘀𝗮𝗴𝗲: ${ᴋᴇɪ}${newScpt}  _red/black/purple money_
 ╚════════════╝`
-                      );
-                    }
-                    `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-                    if (Color.includes("black")) Color = 0;
-                    else if (Color.includes("red")) Color = 1;
-                    else if (Color.includes("purple")) Color = 2;
-                    else
-                      return Sakura_Buttons.MTB(
-                        ӄʀǟӄɨռʐ,
-                        chat,
-                        ֆǟӄʊʀǟ,
-                        `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
+                    );
+                  }
+                  `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+                  if (Color.includes("black")) Color = 0;
+                  else if (Color.includes("red")) Color = 1;
+                  else if (Color.includes("purple")) Color = 2;
+                  else
+                    return Sakura_Buttons.MTB(
+                      ӄʀǟӄɨռʐ,
+                      chat,
+                      ֆǟӄʊʀǟ,
+                      `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
 ╔◇══════════════◇╗
 ┊ 𝐑𝐮𝐬𝐬𝐢𝐚𝐧🎡𝐑𝐨𝐮𝐥𝐥𝐞𝐭𝐞
 ┊   🤑𝐆𝐚𝐦𝐛𝐥𝐞𝐫
@@ -363,27 +370,27 @@ module.exports = {
 ║ (hard) *Black:* _2 out of 10_ 
 ║ (god) *Purple:* _1 out of 10_ 
 ╚════════════╝`
+                    );
+                  `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+                  if (Amount == 1 && Color == 2) {
+                    money *= 15;
+                    userEco.money = userEco.money + money;
+                    userGamble.Gambledone = Date.now();
+                    await userGamble
+                      .save()
+                      .catch((Error) =>
+                        ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
                       );
-                    `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-                    if (Amount == 1 && Color == 2) {
-                      money *= 15;
-                      userEco.money = userEco.money + money;
-                      userGamble.Gambledone = Date.now();
-                      await userGamble
-                        .save()
-                        .catch((Error) =>
-                          ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
-                        );
-                      await userEco
-                        .save()
-                        .catch((Error) =>
-                          ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
-                        );
-                      return Sakura_Buttons.MTB(
-                        ӄʀǟӄɨռʐ,
-                        chat,
-                        ֆǟӄʊʀǟ,
-                        `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
+                    await userEco
+                      .save()
+                      .catch((Error) =>
+                        ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
+                      );
+                    return Sakura_Buttons.MTB(
+                      ӄʀǟӄɨռʐ,
+                      chat,
+                      ֆǟӄʊʀǟ,
+                      `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
 ╔◇══════════════◇╗
 ┊ 𝐑𝐮𝐬𝐬𝐢𝐚𝐧🎡𝐑𝐨𝐮𝐥𝐥𝐞𝐭𝐞
 ┊   🤑𝐆𝐚𝐦𝐛𝐥𝐞𝐫
@@ -392,27 +399,27 @@ module.exports = {
 ║🟣 𝗘𝗮𝗿𝗻𝗲𝗱: You won *${money}* gold.
 ║⭐ 𝗠𝘂𝗹𝘁𝗶𝗽𝗹𝗶𝗲𝗿: _15x_
 ╚════════════╝`
+                    );
+                    `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+                  } else if (!isOdd(Amount) && Color == 1) {
+                    money = parseInt(money * 1.5);
+                    userEco.money = userEco.money + money;
+                    userGamble.Gambledone = Date.now();
+                    await userGamble
+                      .save()
+                      .catch((Error) =>
+                        ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
                       );
-                      `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-                    } else if (!isOdd(Amount) && Color == 1) {
-                      money = parseInt(money * 1.5);
-                      userEco.money = userEco.money + money;
-                      userGamble.Gambledone = Date.now();
-                      await userGamble
-                        .save()
-                        .catch((Error) =>
-                          ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
-                        );
-                      await userEco
-                        .save()
-                        .catch((Error) =>
-                          ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
-                        );
-                      return Sakura_Buttons.MTB(
-                        ӄʀǟӄɨռʐ,
-                        chat,
-                        ֆǟӄʊʀǟ,
-                        `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
+                    await userEco
+                      .save()
+                      .catch((Error) =>
+                        ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
+                      );
+                    return Sakura_Buttons.MTB(
+                      ӄʀǟӄɨռʐ,
+                      chat,
+                      ֆǟӄʊʀǟ,
+                      `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
 ╔◇══════════════◇╗
 ┊ 𝐑𝐮𝐬𝐬𝐢𝐚𝐧🎡𝐑𝐨𝐮𝐥𝐥𝐞𝐭𝐞
 ┊   🤑𝐆𝐚𝐦𝐛𝐥𝐞𝐫
@@ -421,27 +428,27 @@ module.exports = {
 ║🔴 𝗘𝗮𝗿𝗻𝗲𝗱: _You won *${money}* gold!_
 ║⭐ 𝗠𝘂𝗹𝘁𝗶𝗽𝗹𝗶𝗲𝗿: _1.5x_
 ╚════════════╝`
+                    );
+                    `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+                  } else if (isOdd(Amount) && Color == 0) {
+                    money = parseInt(money * 2);
+                    userEco.money = userEco.money + money;
+                    userGamble.Gambledone = Date.now();
+                    await userGamble
+                      .save()
+                      .catch((Error) =>
+                        ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
                       );
-                      `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-                    } else if (isOdd(Amount) && Color == 0) {
-                      money = parseInt(money * 2);
-                      userEco.money = userEco.money + money;
-                      userGamble.Gambledone = Date.now();
-                      await userGamble
-                        .save()
-                        .catch((Error) =>
-                          ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
-                        );
-                      await userEco
-                        .save()
-                        .catch((Error) =>
-                          ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
-                        );
-                      return Sakura_Buttons.MTB(
-                        ӄʀǟӄɨռʐ,
-                        chat,
-                        ֆǟӄʊʀǟ,
-                        `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
+                    await userEco
+                      .save()
+                      .catch((Error) =>
+                        ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
+                      );
+                    return Sakura_Buttons.MTB(
+                      ӄʀǟӄɨռʐ,
+                      chat,
+                      ֆǟӄʊʀǟ,
+                      `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
 ╔◇══════════════◇╗
 ┊ 𝐑𝐮𝐬𝐬𝐢𝐚𝐧🎡𝐑𝐨𝐮𝐥𝐥𝐞𝐭𝐞
 ┊   🤑𝐆𝐚𝐦𝐛𝐥𝐞𝐫
@@ -450,26 +457,26 @@ module.exports = {
 ║⚫ 𝗘𝗮𝗿𝗻𝗲𝗱: _You won *${money}* gold!_
 ║⭐ 𝗠𝘂𝗹𝘁𝗶𝗽𝗹𝗶𝗲𝗿: _2x_
 ╚════════════╝`
+                    );
+                  } else {
+                    `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
+                    userEco.money = userEco.money - money;
+                    userGamble.Gambledone = Date.now();
+                    await userGamble
+                      .save()
+                      .catch((Error) =>
+                        ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
                       );
-                    } else {
-                      `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
-                      userEco.money = userEco.money - money;
-                      userGamble.Gambledone = Date.now();
-                      await userGamble
-                        .save()
-                        .catch((Error) =>
-                          ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
-                        );
-                      await userEco
-                        .save()
-                        .catch((Error) =>
-                          ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
-                        );
-                      return Sakura_Buttons.MTB(
-                        ӄʀǟӄɨռʐ,
-                        chat,
-                        ֆǟӄʊʀǟ,
-                        `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
+                    await userEco
+                      .save()
+                      .catch((Error) =>
+                        ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat)
+                      );
+                    return Sakura_Buttons.MTB(
+                      ӄʀǟӄɨռʐ,
+                      chat,
+                      ֆǟӄʊʀǟ,
+                      `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ},
 ╔◇══════════════◇╗
 ┊ 𝐑𝐮𝐬𝐬𝐢𝐚𝐧🎡𝐑𝐨𝐮𝐥𝐥𝐞𝐭𝐞
 ┊   🤑𝐆𝐚𝐦𝐛𝐥𝐞𝐫
@@ -478,12 +485,11 @@ module.exports = {
 ║💀 𝗥𝗲𝘀𝘂𝗹𝘁: _You lost *${money}* gold!_
 ║⭐ 𝗠𝘂𝗹𝘁𝗶𝗽𝗹𝗶𝗲𝗿: _0x_
 ╚════════════╝`
-                      );
-                    }
+                    );
                   }
                 }
-              );
-            }
+              }
+            );
           }
         );
       }
