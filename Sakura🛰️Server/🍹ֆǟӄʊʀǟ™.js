@@ -459,20 +459,6 @@ ${update.desc}`,
                 }
               );
             }
-            return Sakura_Buttons.MTB(
-              ӄʀǟӄɨռʐ,
-              chat,
-              ֆǟӄʊʀǟ,
-              `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ}, 
-
-╔════◇🔒 *LOCKED*
-║💡 Taken Down For Fixing Bugs_
-║📌 *How Long?* IST-12pm-5pm
-║📌 *Bot Offline?* No, but commands offline!
-║📌 *Antilink?* ON
-║📌 *Autorank?* OFF
-╚════════════╝`
-            );
             `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
             if (ֆǟӄʊʀǟ.isCmd) {
               const gMetadata = await ӄʀǟӄɨռʐ.groupMetadata(
@@ -578,6 +564,26 @@ _You Are Not Verified.Join Sakura Group and Verify Yourself First!_
               const ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ = ꜱɪᴛʀᴀᴘ.get(ֆǟӄʊʀǟ.commandName);
               var Needs = ֆǟӄʊʀǟ.body.trim().split(/\s+/).slice(1);
               if (!ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ) {
+                await ӄʀǟӄɨռʐ
+                  .sendMessage(
+                    ֆǟӄʊʀǟ.chatId,
+                    `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ}, 
+
+╔════◇🔒 *LOCKED*
+║💡 Taken Down For Fixing Bugs_
+║📌 *How Long?* IST-12pm-5pm
+║📌 *Bot Offline?* No, but commands offline!
+║📌 *Antilink?* ON
+║📌 *Autorank?* OFF
+╚════════════╝`,
+                    MessageType.text,
+                    {
+                      quoted: chat,
+                      contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
+                    }
+                  )
+                  .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+                return;
                 return await Sakura_Buttons.MTB(
                   ӄʀǟӄɨռʐ,
                   chat,
@@ -589,6 +595,26 @@ _You Are Not Verified.Join Sakura Group and Verify Yourself First!_
 ╚════════════╝`
                 );
               } else {
+                await ӄʀǟӄɨռʐ
+                  .sendMessage(
+                    ֆǟӄʊʀǟ.chatId,
+                    `🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚 @${աɦօֆɛռȶɦǟȶռʊʍ}, 
+
+╔════◇🔒 *LOCKED*
+║💡 Taken Down For Fixing Bugs_
+║📌 *How Long?* IST-12pm-5pm
+║📌 *Bot Offline?* No, but commands offline!
+║📌 *Antilink?* ON
+║📌 *Autorank?* OFF
+╚════════════╝`,
+                    MessageType.text,
+                    {
+                      quoted: chat,
+                      contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
+                    }
+                  )
+                  .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+                return;
                 return ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ.handle(
                   ӄʀǟӄɨռʐ,
                   chat,
