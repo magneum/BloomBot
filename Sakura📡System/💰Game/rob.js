@@ -357,6 +357,7 @@ chat,
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🍹𝐒𝐚𝐤𝐮𝐫𝐚𝐁𝐨𝐭(𝐜) |════════════════════════════════════════════⬡|`;
 if (victim.padlock > 0) {
 if (cEconomy.money < 1000) {
+culprit.PermanentRobberyTime = 480000,
 vEconomy.money = vEconomy.money + cEconomy.money;
 cEconomy.money = 0;
 } else {
@@ -411,6 +412,7 @@ cEconomy.money = 0;
 vEconomy.money = vEconomy.money + MoneySword;
 cEconomy.money = cEconomy.money - MoneySword;
 }
+culprit.PermanentRobberyTime = 480000,
 culprit.CurrentRobberyTime = Date.now();
 await victim
 .save()
@@ -458,6 +460,7 @@ cEconomy.money = 0;
 vEconomy.money = vEconomy.money + MoneyLaptop;
 cEconomy.money = cEconomy.money - MoneyLaptop;
 }
+culprit.PermanentRobberyTime = 480000,
 culprit.CurrentRobberyTime = Date.now();
 await victim
 .save()
@@ -505,6 +508,7 @@ cEconomy.money = 0;
 vEconomy.money = vEconomy.money + MoneyCharm;
 cEconomy.money = cEconomy.money - MoneyCharm;
 }
+culprit.PermanentRobberyTime = 480000,
 culprit.CurrentRobberyTime = Date.now();
 await victim
 .save()
@@ -554,6 +558,7 @@ vEconomy.money = vEconomy.money - MoneyRandom;
 cEconomy.money = cEconomy.money + MoneyRandom;
 Note = `You Got _${MoneyRandom}gold_!`;
 }
+culprit.PermanentRobberyTime = 480000,
 culprit.CurrentRobberyTime = Date.now();
 await vEconomy
 .save()
