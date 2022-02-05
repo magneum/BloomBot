@@ -21,51 +21,51 @@ const Clock = date.format(now, pattern);
 const vers = require(`../package.json`);
 `⬡🍹⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
 const Sakura_Loca = async (ӄʀǟӄɨռʐ, chat, ֆǟӄʊʀǟ, MainText) => {
-  try {
-    const buttonMessage = {
-      contentText: MainText,
-      footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐁𝐨𝐭 ⏋\n⎿ 𝐄𝐧𝐠𝐢𝐧𝐞: ᴋʀʏᴛᴇᴋ-v${vers.vers} ⏋`,
-      buttons: [
-        {
-          buttonId: `${ᴋᴇɪ}help`,
-          buttonText: { displayText: `${ᴋᴇɪ}help` },
-          type: 1,
-        },
-        {
-          buttonId: `${ᴋᴇɪ}faq`,
-          buttonText: { displayText: `${ᴋᴇɪ}faq` },
-          type: 1,
-        },
-      ],
-      headerType: 1,
-    };
-    await ӄʀǟӄɨռʐ
-      .sendMessage(
-        "120363039223842047@g.us",
-        buttonMessage,
-        MessageType.buttonsMessage
-      )
-      .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-    await ӄʀǟӄɨռʐ
-      .sendMessage(
-        "120363020792949649@g.us",
-        buttonMessage,
-        MessageType.buttonsMessage
-      )
-      .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-    await ӄʀǟӄɨռʐ
-      .sendMessage(
-        `917430922909@s.whatsapp.net`,
-        buttonMessage,
-        MessageType.buttonsMessage
-      )
-      .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
-    return;
-  } catch (Error) {
-    return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
-  }
+try {
+const buttonMessage = {
+contentText: MainText,
+footerText: `⎿ (𝐜)𝐒𝐚𝐤𝐮𝐫𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐁𝐨𝐭 ⏋\n⎿ 𝐄𝐧𝐠𝐢𝐧𝐞: ᴋʀʏᴛᴇᴋ-v${vers.vers} ⏋`,
+buttons: [
+{
+buttonId: `${ᴋᴇɪ}help`,
+buttonText: { displayText: `${ᴋᴇɪ}help` },
+type: 1,
+},
+{
+buttonId: `${ᴋᴇɪ}faq`,
+buttonText: { displayText: `${ᴋᴇɪ}faq` },
+type: 1,
+},
+],
+headerType: 1,
+};
+await ӄʀǟӄɨռʐ
+.sendMessage(
+"120363039223842047@g.us",
+buttonMessage,
+MessageType.buttonsMessage
+)
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+await ӄʀǟӄɨռʐ
+.sendMessage(
+"120363020792949649@g.us",
+buttonMessage,
+MessageType.buttonsMessage
+)
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+await ӄʀǟӄɨռʐ
+.sendMessage(
+`917430922909@s.whatsapp.net`,
+buttonMessage,
+MessageType.buttonsMessage
+)
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat));
+return;
+} catch (Error) {
+return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ֆǟӄʊʀǟ, chat);
+}
 };
 `⬡🍹⬡=========================================================================================⬡ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⬡`;
 module.exports = {
-  MSL: Sakura_Loca,
+MSL: Sakura_Loca,
 };
