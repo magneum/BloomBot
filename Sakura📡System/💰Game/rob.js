@@ -264,7 +264,7 @@ sword: 0,
 laptop: 0,
 charm: 0,
 CurrentRobberyTime: Date.now(),
-PermanentRobberyTime: 1200000,
+PermanentRobberyTime: 480000,
 });
 await newUser
 .save()
@@ -301,7 +301,7 @@ sword: 0,
 laptop: 0,
 charm: 0,
 CurrentRobberyTime: Date.now(),
-PermanentRobberyTime: 1200000,
+PermanentRobberyTime: 480000,
 });
 await newUser
 .save()
