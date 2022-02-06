@@ -54,7 +54,7 @@ await ӄʀǟӄɨռʐ.sendMessage(
 contentText: `🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ},
 
 ❌ 𝗘𝗿𝗿𝗼𝗿: _Api Timeout.Try Again Later!_`,
-footerText: `⎿ © 𝐂𝐨𝐫𝐭𝐚𝐧𝐚 𝐀𝐈 ⏋`,
+footerText: `⎿ ©𝐂𝐨𝐫𝐭𝐚𝐧𝐚 • 𝐄𝐧𝐕𝐞𝐫: ${vers.vers} ⏋`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
@@ -76,7 +76,7 @@ await ӄʀǟӄɨռʐ.sendMessage(
 contentText: `🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ},
 
 ❌ 𝗘𝗿𝗿𝗼𝗿: ${Error}_`,
-footerText: `⎿ © 𝐂𝐨𝐫𝐭𝐚𝐧𝐚 𝐀𝐈 ⏋`,
+footerText: `⎿ ©𝐂𝐨𝐫𝐭𝐚𝐧𝐚 • 𝐄𝐧𝐕𝐞𝐫: ${vers.vers} ⏋`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,

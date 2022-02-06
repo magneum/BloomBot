@@ -79,7 +79,7 @@ contentText: `
 ╚════════════╝
 
 ${Message}`,
-footerText: `⎿ © 𝐂𝐨𝐫𝐭𝐚𝐧𝐚 𝐀𝐈 ⏋`,
+footerText: `⎿ ©𝐂𝐨𝐫𝐭𝐚𝐧𝐚 • 𝐄𝐧𝐕𝐞𝐫: ${vers.vers} ⏋`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
@@ -126,7 +126,7 @@ contentText: `🪶 𝐇𝐞𝐲: @${ᴘᴘᴡᴇʟᴄᴏᴍᴇ}
 ╚════════════╝
 
 ${Message}`,
-footerText: `⎿ © 𝐂𝐨𝐫𝐭𝐚𝐧𝐚 𝐀𝐈 ⏋`,
+footerText: `⎿ ©𝐂𝐨𝐫𝐭𝐚𝐧𝐚 • 𝐄𝐧𝐕𝐞𝐫: ${vers.vers} ⏋`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
