@@ -43,6 +43,7 @@ var MainText = `🪶 𝐇𝐞𝐲: •@${աɦօֆɛռȶɦǟȶռʊʍ}, ${Timers}
 ║• *${ᴋᴇɪ}ytmlink _yt-audio-max 15min_
 ║• *${ᴋᴇɪ}ytvlink _yt-video-max 15min_
 ║• *${ᴋᴇɪ}instagram*  _image/video from ig_
+║• *${ᴋᴇɪ}facebook*  _video from fb_
 ╚════════════╝`;
 return Cortana_Buttons.MIB(
 ӄʀǟӄɨռʐ,

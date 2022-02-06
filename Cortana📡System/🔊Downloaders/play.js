@@ -260,7 +260,6 @@ quoted: chat,
 mimetype: "audio/mp4",
 }
 )
-
 .catch((Error) =>
 ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat)
 );
