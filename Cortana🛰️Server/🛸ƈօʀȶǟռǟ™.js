@@ -91,54 +91,54 @@ Kolor.green(`
 ꜱᴀᴋᴜʀᴀ ɪꜱ ᴡʀɪᴛᴛᴇɴ ɪɴ [ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ & ᴘʏᴛʜᴏɴ] ᴀɴᴅ ɪꜱ ʙʏ ꜰᴀʀ ᴛʜᴇ ᴏɴᴇ ᴏꜰ ᴍᴏꜱᴛ ᴀᴅᴠᴀɴᴄᴇ ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ.
 |⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🛸𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈(𝐜) |════════════════════════════════════════════⬡|`)
 );
-await ӄʀǟӄɨռʐ
-.sendMessage(
-"120363039223842047@g.us",
-`(𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈 by 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
+// await ӄʀǟӄɨռʐ
+// .sendMessage(
+// "120363039223842047@g.us",
+// `(𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈 by 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
 
-╔════◇🚀 *BACK ONLINE*
-║🛰️ 𝐏𝐢𝐧𝐠: _${Ping}s_
-║📅 𝐃𝐚𝐭𝐞: _${Clock}_
-╚════════════╝`,
-MessageType.text
-)
-.catch((Error) => console.log(Error));
-await ӄʀǟӄɨռʐ
-.sendMessage(
-"120363020792949649@g.us",
-`(𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈 by 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
+// ╔════◇🚀 *BACK ONLINE*
+// ║🛰️ 𝐏𝐢𝐧𝐠: _${Ping}s_
+// ║📅 𝐃𝐚𝐭𝐞: _${Clock}_
+// ╚════════════╝`,
+// MessageType.text
+// )
+// .catch((Error) => console.log(Error));
+// await ӄʀǟӄɨռʐ
+// .sendMessage(
+// "120363020792949649@g.us",
+// `(𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈 by 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
 
-╔════◇🚀 *BACK ONLINE*
-║🛰️ 𝐏𝐢𝐧𝐠: _${Ping}s_
-║📅 𝐃𝐚𝐭𝐞: _${Clock}_
-╚════════════╝`,
-MessageType.text
-)
-.catch((Error) => console.log(Error));
-await ӄʀǟӄɨռʐ
-.sendMessage(
-"120363024871653603@g.us",
-`(𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈 by 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
+// ╔════◇🚀 *BACK ONLINE*
+// ║🛰️ 𝐏𝐢𝐧𝐠: _${Ping}s_
+// ║📅 𝐃𝐚𝐭𝐞: _${Clock}_
+// ╚════════════╝`,
+// MessageType.text
+// )
+// .catch((Error) => console.log(Error));
+// await ӄʀǟӄɨռʐ
+// .sendMessage(
+// "120363024871653603@g.us",
+// `(𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈 by 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
 
-╔════◇🚀 *BACK ONLINE*
-║🛰️ 𝐏𝐢𝐧𝐠: _${Ping}s_
-║📅 𝐃𝐚𝐭𝐞: _${Clock}_
-╚════════════╝`,
-MessageType.text
-)
-.catch((Error) => console.log(Error));
-await ӄʀǟӄɨռʐ
-.sendMessage(
-ӄʀǟӄɨռʐ.user.jid,
-`(𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈 by 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
+// ╔════◇🚀 *BACK ONLINE*
+// ║🛰️ 𝐏𝐢𝐧𝐠: _${Ping}s_
+// ║📅 𝐃𝐚𝐭𝐞: _${Clock}_
+// ╚════════════╝`,
+// MessageType.text
+// )
+// .catch((Error) => console.log(Error));
+// await ӄʀǟӄɨռʐ
+// .sendMessage(
+// ӄʀǟӄɨռʐ.user.jid,
+// `(𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈 by 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
 
-╔════◇🚀 *BACK ONLINE*
-║🛰️ 𝐏𝐢𝐧𝐠: _${Ping}s_
-║📅 𝐃𝐚𝐭𝐞: _${Clock}_
-╚════════════╝`,
-MessageType.text
-)
-.catch((Error) => console.log(Error));
+// ╔════◇🚀 *BACK ONLINE*
+// ║🛰️ 𝐏𝐢𝐧𝐠: _${Ping}s_
+// ║📅 𝐃𝐚𝐭𝐞: _${Clock}_
+// ╚════════════╝`,
+// MessageType.text
+// )
+// .catch((Error) => console.log(Error));
 });
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 ӄʀǟӄɨռʐ.connect();

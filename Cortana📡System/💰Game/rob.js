@@ -645,11 +645,17 @@ await newUser
 .catch((Error) =>
 ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat)
 );
-return Cortana_Buttons.MIB(
-ӄʀǟӄɨռʐ,
-chat,
-ƈօʀȶǟռǟ,
-`🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ}, 
+const media = await ӄʀǟӄɨռʐ.prepareMessage(
+ƈօʀȶǟռǟ.chatId,
+{ url: "./Cortana☣️Reactor/Cortana_Univ.png" },
+MessageType.image,
+{ mimetype: Mimetype.png }
+);
+return await ӄʀǟӄɨռʐ
+.sendMessage(
+ƈօʀȶǟռǟ.chatId,
+{
+contentText: `🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ}, 
 
 ╔◇══════════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
@@ -659,7 +665,30 @@ chat,
 ║❌ 𝗘𝗿𝗿𝗼𝗿: @${TagPerson}'s Bank Guard Caught You and Took You To The Jail!
 ║💡‍ 𝐒𝐭𝐚𝐭𝐮𝐬: _You Got Arrested and Took 0gold.ReTry Again!_
 ╚════════════╝`,
-"./Cortana☣️Reactor/Cortana_Univ.png"
+footerText: `⎿ ©𝐂𝐨𝐫𝐭𝐚𝐧𝐚 • 𝐄𝐧𝐕𝐞𝐫: ${vers.vers} ⏋`,
+buttons: [
+{
+buttonId: `${ᴋᴇɪ}help`,
+buttonText: { displayText: `${ᴋᴇɪ}help` },
+type: 1,
+},
+{
+buttonId: `${ᴋᴇɪ}faq`,
+buttonText: { displayText: `${ᴋᴇɪ}faq` },
+type: 1,
+},
+],
+headerType: 4,
+imageMessage: media.message.imageMessage,
+},
+MessageType.buttonsMessage,
+{
+quoted: chat,
+contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ, TagMention] },
+}
+)
+.catch((Error) =>
+ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat)
 );
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 } else if (!cEconomy) {
@@ -678,11 +707,17 @@ await newUser
 .catch((Error) =>
 ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat)
 );
-return Cortana_Buttons.MIB(
-ӄʀǟӄɨռʐ,
-chat,
-ƈօʀȶǟռǟ,
-`🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ}, 
+const media = await ӄʀǟӄɨռʐ.prepareMessage(
+ƈօʀȶǟռǟ.chatId,
+{ url: "./Cortana☣️Reactor/Cortana_Univ.png" },
+MessageType.image,
+{ mimetype: Mimetype.png }
+);
+return await ӄʀǟӄɨռʐ
+.sendMessage(
+ƈօʀȶǟռǟ.chatId,
+{
+contentText: `🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ}, 
 
 ╔◇══════════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
@@ -692,7 +727,30 @@ chat,
 ║❌ 𝗘𝗿𝗿𝗼𝗿: _You are the worst robber._
 ║🍌‍ 𝗥𝗲𝗮𝘀𝗼𝗻:  _Fell On a pool and died!.ReTry Again!_
 ╚════════════╝`,
-"./Cortana☣️Reactor/Cortana_Univ.png"
+footerText: `⎿ ©𝐂𝐨𝐫𝐭𝐚𝐧𝐚 • 𝐄𝐧𝐕𝐞𝐫: ${vers.vers} ⏋`,
+buttons: [
+{
+buttonId: `${ᴋᴇɪ}help`,
+buttonText: { displayText: `${ᴋᴇɪ}help` },
+type: 1,
+},
+{
+buttonId: `${ᴋᴇɪ}faq`,
+buttonText: { displayText: `${ᴋᴇɪ}faq` },
+type: 1,
+},
+],
+headerType: 4,
+imageMessage: media.message.imageMessage,
+},
+MessageType.buttonsMessage,
+{
+quoted: chat,
+contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
+}
+)
+.catch((Error) =>
+ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat)
 );
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 } else if (cEconomy.money < 1000) {
@@ -713,11 +771,17 @@ chat,
 );
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 } else if (vEconomy.money < 1000) {
-return Cortana_Buttons.MIB(
-ӄʀǟӄɨռʐ,
-chat,
-ƈօʀȶǟռǟ,
-`🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ}, 
+const media = await ӄʀǟӄɨռʐ.prepareMessage(
+ƈօʀȶǟռǟ.chatId,
+{ url: "./Cortana☣️Reactor/Cortana_Univ.png" },
+MessageType.image,
+{ mimetype: Mimetype.png }
+);
+return await ӄʀǟӄɨռʐ
+.sendMessage(
+ƈօʀȶǟռǟ.chatId,
+{
+contentText: `🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ}, 
 
 ╔◇══════════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
@@ -726,7 +790,30 @@ chat,
 ║❌ 𝗘𝗿𝗿𝗼𝗿: @${TagPerson}, _needs atleast 1000gold in their account before you can rob them!_
 ║🍌‍ 𝗥𝗲𝗮𝘀𝗼𝗻: _Broke AF! Leave This Begger Alone!_
 ╚════════════╝`,
-"./Cortana☣️Reactor/Cortana_Univ.png"
+footerText: `⎿ ©𝐂𝐨𝐫𝐭𝐚𝐧𝐚 • 𝐄𝐧𝐕𝐞𝐫: ${vers.vers} ⏋`,
+buttons: [
+{
+buttonId: `${ᴋᴇɪ}help`,
+buttonText: { displayText: `${ᴋᴇɪ}help` },
+type: 1,
+},
+{
+buttonId: `${ᴋᴇɪ}faq`,
+buttonText: { displayText: `${ᴋᴇɪ}faq` },
+type: 1,
+},
+],
+headerType: 4,
+imageMessage: media.message.imageMessage,
+},
+MessageType.buttonsMessage,
+{
+quoted: chat,
+contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ, TagMention] },
+}
+)
+.catch((Error) =>
+ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat)
 );
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 } else {
@@ -765,11 +852,17 @@ await cEconomy
 .catch((Error) =>
 ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat)
 );
-return Cortana_Buttons.MIB(
-ӄʀǟӄɨռʐ,
-chat,
-ƈօʀȶǟռǟ,
-`🪶 𝐇𝐞𝐲:
+const media = await ӄʀǟӄɨռʐ.prepareMessage(
+ƈօʀȶǟռǟ.chatId,
+{ url: "./Cortana☣️Reactor/Cortana_Univ.png" },
+MessageType.image,
+{ mimetype: Mimetype.png }
+);
+return await ӄʀǟӄɨռʐ
+.sendMessage(
+ƈօʀȶǟռǟ.chatId,
+{
+contentText: `🪶 𝐇𝐞𝐲:
 ╔◇══════════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚═══◇║
@@ -779,7 +872,32 @@ chat,
 ║💡‍ 𝐒𝐭𝐚𝐭𝐮𝐬: _You Got Arrested and Took ${MoneyRandom}gold!_
 ║💰 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: @${աɦօֆɛռȶɦǟȶռʊʍ}, _${cEconomy.money}_
 ╚════════════╝`,
-"./Cortana☣️Reactor/Cortana_Univ.png"
+footerText: `⎿ ©𝐂𝐨𝐫𝐭𝐚𝐧𝐚 • 𝐄𝐧𝐕𝐞𝐫: ${vers.vers} ⏋`,
+buttons: [
+{
+buttonId: `${ᴋᴇɪ}help`,
+buttonText: { displayText: `${ᴋᴇɪ}help` },
+type: 1,
+},
+{
+buttonId: `${ᴋᴇɪ}faq`,
+buttonText: { displayText: `${ᴋᴇɪ}faq` },
+type: 1,
+},
+],
+headerType: 4,
+imageMessage: media.message.imageMessage,
+},
+MessageType.buttonsMessage,
+{
+quoted: chat,
+contextInfo: {
+mentionedJid: [աɦօֆɛռȶɦǟȶ, TagMention],
+},
+}
+)
+.catch((Error) =>
+ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat)
 );
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 } else if (!culprit) {
@@ -803,11 +921,17 @@ await cEconomy
 .catch((Error) =>
 ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat)
 );
-return Cortana_Buttons.MIB(
-ӄʀǟӄɨռʐ,
-chat,
-ƈօʀȶǟռǟ,
-`🪶 𝐇𝐞𝐲:
+const media = await ӄʀǟӄɨռʐ.prepareMessage(
+ƈօʀȶǟռǟ.chatId,
+{ url: "./Cortana☣️Reactor/Cortana_Univ.png" },
+MessageType.image,
+{ mimetype: Mimetype.png }
+);
+return await ӄʀǟӄɨռʐ
+.sendMessage(
+ƈօʀȶǟռǟ.chatId,
+{
+contentText: `🪶 𝐇𝐞𝐲:
 ╔◇══════════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚═══◇║
@@ -817,7 +941,32 @@ chat,
 ║💡‍ 𝐒𝐭𝐚𝐭𝐮𝐬: _You Got Arrested and Took ${MoneyRandom}gold!_
 ║💰 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: @${աɦօֆɛռȶɦǟȶռʊʍ}, _${cEconomy.money}_
 ╚════════════╝`,
-"./Cortana☣️Reactor/Cortana_Univ.png"
+footerText: `⎿ ©𝐂𝐨𝐫𝐭𝐚𝐧𝐚 • 𝐄𝐧𝐕𝐞𝐫: ${vers.vers} ⏋`,
+buttons: [
+{
+buttonId: `${ᴋᴇɪ}help`,
+buttonText: { displayText: `${ᴋᴇɪ}help` },
+type: 1,
+},
+{
+buttonId: `${ᴋᴇɪ}faq`,
+buttonText: { displayText: `${ᴋᴇɪ}faq` },
+type: 1,
+},
+],
+headerType: 4,
+imageMessage: media.message.imageMessage,
+},
+MessageType.buttonsMessage,
+{
+quoted: chat,
+contextInfo: {
+mentionedJid: [աɦօֆɛռȶɦǟȶ, TagMention],
+},
+}
+)
+.catch((Error) =>
+ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat)
 );
 }
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
@@ -878,11 +1027,17 @@ await cEconomy
 .catch((Error) =>
 ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat)
 );
-return Cortana_Buttons.MIB(
-ӄʀǟӄɨռʐ,
-chat,
-ƈօʀȶǟռǟ,
-`🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ}, 
+const media = await ӄʀǟӄɨռʐ.prepareMessage(
+ƈօʀȶǟռǟ.chatId,
+{ url: "./Cortana☣️Reactor/Cortana_Univ.png" },
+MessageType.image,
+{ mimetype: Mimetype.png }
+);
+return await ӄʀǟӄɨռʐ
+.sendMessage(
+ƈօʀȶǟռǟ.chatId,
+{
+contentText: `🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ}, 
 
 ╔◇══════════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
@@ -893,7 +1048,32 @@ chat,
 ║💰 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: @${աɦօֆɛռȶɦǟȶռʊʍ}, _${cEconomy.money}gold_
 ║💰 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: @${TagPerson}, = _${vEconomy.money}gold_
 ╚════════════╝`,
-"./Cortana☣️Reactor/Cortana_Univ.png"
+footerText: `⎿ ©𝐂𝐨𝐫𝐭𝐚𝐧𝐚 • 𝐄𝐧𝐕𝐞𝐫: ${vers.vers} ⏋`,
+buttons: [
+{
+buttonId: `${ᴋᴇɪ}help`,
+buttonText: { displayText: `${ᴋᴇɪ}help` },
+type: 1,
+},
+{
+buttonId: `${ᴋᴇɪ}faq`,
+buttonText: { displayText: `${ᴋᴇɪ}faq` },
+type: 1,
+},
+],
+headerType: 4,
+imageMessage: media.message.imageMessage,
+},
+MessageType.buttonsMessage,
+{
+quoted: chat,
+contextInfo: {
+mentionedJid: [աɦօֆɛռȶɦǟȶ, TagMention],
+},
+}
+)
+.catch((Error) =>
+ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat)
 );
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 } else if (victim.sword > 0) {
@@ -927,11 +1107,17 @@ await cEconomy
 .catch((Error) =>
 ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat)
 );
-return Cortana_Buttons.MIB(
-ӄʀǟӄɨռʐ,
-chat,
-ƈօʀȶǟռǟ,
-`🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ}, 
+const media = await ӄʀǟӄɨռʐ.prepareMessage(
+ƈօʀȶǟռǟ.chatId,
+{ url: "./Cortana☣️Reactor/Cortana_Univ.png" },
+MessageType.image,
+{ mimetype: Mimetype.png }
+);
+return await ӄʀǟӄɨռʐ
+.sendMessage(
+ƈօʀȶǟռǟ.chatId,
+{
+contentText: `🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ}, 
 
 ╔◇══════════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
@@ -942,7 +1128,32 @@ chat,
 ║💰 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: @${աɦօֆɛռȶɦǟȶռʊʍ}, _${cEconomy.money}gold_
 ║💰 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: @${TagPerson}, = _${vEconomy.money}gold_
 ╚════════════╝`,
-"./Cortana☣️Reactor/Cortana_Univ.png"
+footerText: `⎿ ©𝐂𝐨𝐫𝐭𝐚𝐧𝐚 • 𝐄𝐧𝐕𝐞𝐫: ${vers.vers} ⏋`,
+buttons: [
+{
+buttonId: `${ᴋᴇɪ}help`,
+buttonText: { displayText: `${ᴋᴇɪ}help` },
+type: 1,
+},
+{
+buttonId: `${ᴋᴇɪ}faq`,
+buttonText: { displayText: `${ᴋᴇɪ}faq` },
+type: 1,
+},
+],
+headerType: 4,
+imageMessage: media.message.imageMessage,
+},
+MessageType.buttonsMessage,
+{
+quoted: chat,
+contextInfo: {
+mentionedJid: [աɦօֆɛռȶɦǟȶ, TagMention],
+},
+}
+)
+.catch((Error) =>
+ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat)
 );
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 } else if (victim.laptop > 0) {
@@ -976,11 +1187,17 @@ await cEconomy
 .catch((Error) =>
 ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat)
 );
-return Cortana_Buttons.MIB(
-ӄʀǟӄɨռʐ,
-chat,
-ƈօʀȶǟռǟ,
-`🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ}, 
+const media = await ӄʀǟӄɨռʐ.prepareMessage(
+ƈօʀȶǟռǟ.chatId,
+{ url: "./Cortana☣️Reactor/Cortana_Univ.png" },
+MessageType.image,
+{ mimetype: Mimetype.png }
+);
+return await ӄʀǟӄɨռʐ
+.sendMessage(
+ƈօʀȶǟռǟ.chatId,
+{
+contentText: `🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ}, 
 
 ╔◇══════════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
@@ -991,7 +1208,32 @@ chat,
 ║💰 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: @${աɦօֆɛռȶɦǟȶռʊʍ}, _${cEconomy.money}gold_
 ║💰 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: @${TagPerson}, = _${vEconomy.money}gold_
 ╚════════════╝`,
-"./Cortana☣️Reactor/Cortana_Univ.png"
+footerText: `⎿ ©𝐂𝐨𝐫𝐭𝐚𝐧𝐚 • 𝐄𝐧𝐕𝐞𝐫: ${vers.vers} ⏋`,
+buttons: [
+{
+buttonId: `${ᴋᴇɪ}help`,
+buttonText: { displayText: `${ᴋᴇɪ}help` },
+type: 1,
+},
+{
+buttonId: `${ᴋᴇɪ}faq`,
+buttonText: { displayText: `${ᴋᴇɪ}faq` },
+type: 1,
+},
+],
+headerType: 4,
+imageMessage: media.message.imageMessage,
+},
+MessageType.buttonsMessage,
+{
+quoted: chat,
+contextInfo: {
+mentionedJid: [աɦօֆɛռȶɦǟȶ, TagMention],
+},
+}
+)
+.catch((Error) =>
+ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat)
 );
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 } else if (victim.charm > 0) {
@@ -1025,11 +1267,17 @@ await cEconomy
 .catch((Error) =>
 ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat)
 );
-return Cortana_Buttons.MIB(
-ӄʀǟӄɨռʐ,
-chat,
-ƈօʀȶǟռǟ,
-`🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ}, 
+const media = await ӄʀǟӄɨռʐ.prepareMessage(
+ƈօʀȶǟռǟ.chatId,
+{ url: "./Cortana☣️Reactor/Cortana_Univ.png" },
+MessageType.image,
+{ mimetype: Mimetype.png }
+);
+return await ӄʀǟӄɨռʐ
+.sendMessage(
+ƈօʀȶǟռǟ.chatId,
+{
+contentText: `🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ}, 
 
 ╔◇══════════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
@@ -1040,7 +1288,32 @@ chat,
 ║💰 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: @${աɦօֆɛռȶɦǟȶռʊʍ}, _${cEconomy.money}gold_
 ║💰 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: @${TagPerson}, = _${vEconomy.money}gold_
 ╚════════════╝`,
-"./Cortana☣️Reactor/Cortana_Univ.png"
+footerText: `⎿ ©𝐂𝐨𝐫𝐭𝐚𝐧𝐚 • 𝐄𝐧𝐕𝐞𝐫: ${vers.vers} ⏋`,
+buttons: [
+{
+buttonId: `${ᴋᴇɪ}help`,
+buttonText: { displayText: `${ᴋᴇɪ}help` },
+type: 1,
+},
+{
+buttonId: `${ᴋᴇɪ}faq`,
+buttonText: { displayText: `${ᴋᴇɪ}faq` },
+type: 1,
+},
+],
+headerType: 4,
+imageMessage: media.message.imageMessage,
+},
+MessageType.buttonsMessage,
+{
+quoted: chat,
+contextInfo: {
+mentionedJid: [աɦօֆɛռȶɦǟȶ, TagMention],
+},
+}
+)
+.catch((Error) =>
+ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat)
 );
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 } else {
@@ -1066,11 +1339,17 @@ await cEconomy
 .catch((Error) =>
 ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat)
 );
-return Cortana_Buttons.MIB(
-ӄʀǟӄɨռʐ,
-chat,
-ƈօʀȶǟռǟ,
-`🪶 𝐇𝐞𝐲:,
+const media = await ӄʀǟӄɨռʐ.prepareMessage(
+ƈօʀȶǟռǟ.chatId,
+{ url: "./Cortana☣️Reactor/Cortana_Univ.png" },
+MessageType.image,
+{ mimetype: Mimetype.png }
+);
+return await ӄʀǟӄɨռʐ
+.sendMessage(
+ƈօʀȶǟռǟ.chatId,
+{
+contentText: `🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ}, 
 
 ╔◇══════════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
@@ -1090,7 +1369,32 @@ chat,
 ║❓ 𝗕𝗲𝗳𝗼𝗿𝗲 𝗥𝗼𝗯𝗯𝗲𝗿𝘆: _${vEconomy.money}gold_
 ║🥲 𝗔𝗳𝘁𝗲𝗿 𝗥𝗼𝗯𝗯𝗲𝗿𝘆: _${vEconomy.money - MoneyRandom}gold_
 ╚════════════╝`,
-"./Cortana☣️Reactor/Cortana_Univ.png"
+footerText: `⎿ ©𝐂𝐨𝐫𝐭𝐚𝐧𝐚 • 𝐄𝐧𝐕𝐞𝐫: ${vers.vers} ⏋`,
+buttons: [
+{
+buttonId: `${ᴋᴇɪ}help`,
+buttonText: { displayText: `${ᴋᴇɪ}help` },
+type: 1,
+},
+{
+buttonId: `${ᴋᴇɪ}faq`,
+buttonText: { displayText: `${ᴋᴇɪ}faq` },
+type: 1,
+},
+],
+headerType: 4,
+imageMessage: media.message.imageMessage,
+},
+MessageType.buttonsMessage,
+{
+quoted: chat,
+contextInfo: {
+mentionedJid: [աɦօֆɛռȶɦǟȶ, TagMention],
+},
+}
+)
+.catch((Error) =>
+ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat)
 );
 }
 }
