@@ -10,6 +10,7 @@ const Robbery = require(`../../Cortana🍃Goose/robbery`);
 const _𝔏𝔞𝔟_ = require(`../../Cortana🛰️Server/_𝔏𝔞𝔟_`);
 const ꜰᴜᴄᴋ = require(`../../Cortana🛰️Server/oShit`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
+const vers = require(`../../package.json`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 const ms = require(`parse-ms`);
 const fs = require(`fs`);
