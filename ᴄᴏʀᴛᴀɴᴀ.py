@@ -1,7 +1,5 @@
  # ⬡==========================⬡    🛸 ƈօʀȶǟռǟ™ 🛸    ⬡==========================⬡
 import os
-os.system('pip install -r Cortana☣️Reactor/ӄʀǟӄɨռʐ🐙ʟǟɮ.txt')
-os.system('npm install --force')
 os.system('node validate.js')
 os.system("git init --initial-branch=KrakinzLab")
 os.system("git remote add origin https://github.com/Krakinz/Cortana.git")
