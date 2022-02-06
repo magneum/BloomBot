@@ -223,7 +223,7 @@ caption: `*🛸Attention Here Everyone In the Group!🛸*
 }
 } catch (Error) {
 console.log(Error);
-var childs = require(`child_process`).exec(`python3 Cortana.py`);
+var childs = require(`child_process`).exec(`python3 ᴄᴏʀᴛᴀɴᴀ.py`);
 childs.stdout.pipe(process.stdout);
 childs.on(`exit`, async function () {
 process.exit();
@@ -330,7 +330,7 @@ userWel.message
 if (update.action === `remove`) return;
 } catch (Error) {
 console.log(Error);
-var childs = require(`child_process`).exec(`python3 Cortana.py`);
+var childs = require(`child_process`).exec(`python3 ᴄᴏʀᴛᴀɴᴀ.py`);
 childs.stdout.pipe(process.stdout);
 childs.on(`exit`, async function () {
 process.exit();
@@ -770,7 +770,7 @@ Timers
 );
 } catch (Error) {
 console.log(Error);
-var childs = require(`child_process`).exec(`python3 Cortana.py`);
+var childs = require(`child_process`).exec(`python3 ᴄᴏʀᴛᴀɴᴀ.py`);
 childs.stdout.pipe(process.stdout);
 childs.on(`exit`, async function () {
 process.exit();

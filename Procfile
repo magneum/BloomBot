@@ -1,1 +1,1 @@
-worker: python3 Cortana.py
+worker: python3 ᴄᴏʀᴛᴀɴᴀ.py
