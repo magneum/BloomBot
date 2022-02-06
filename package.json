@@ -1,7 +1,7 @@
 {
   "name": "cortana",
-  "vers": "12",
-  "verold": "version-debug-11",
+  "vers": "13",
+  "verold": "version-debug-12",
   "depecrated": false,
   "directories": {
     "Cortana☕Shop": "Cortana☕Shop",

@@ -1,4 +1,8 @@
-//external modules
+`|⬡════════════════════════════════════════════|                            |═══════════════════════════════════════════⬡|`;
+`|                                                                                                                        |`;
+`|        (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!            |`;
+`|                                                                                                                        |`;
+`|⬡════════════════════════════════════════════|                            |═══════════════════════════════════════════⬡|`;
 const { JSDOM } = require("jsdom");
 const fetch = require("node-fetch");
 const FormData = require("form-data");
@@ -6,12 +10,9 @@ const axios = require("axios");
 const cheerio = require("cheerio");
 const qs = require("qs");
 const { fromBuffer } = require("file-type");
-
-//varuable
 const ytIdRegex =
 /(?:http(?:s|):\/\/|)(?:(?:www\.|)youtube(?:\-nocookie|)\.com\/(?:watch\?.*(?:|\&)v=|embed\/|v\/)|youtu\.be\/)([-_0-9A-Za-z]{11})/;
-
-//fucntion
+`|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 function post(url, formdata) {
 console.log(
 Object.keys(formdata)
@@ -30,7 +31,7 @@ body: Object.keys(formdata)
 .join("&"),
 });
 }
-
+`|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 function YouTube_Music(url) {
 return new Promise((resolve, reject) => {
 if (ytIdRegex.test(url)) {
@@ -52,7 +53,6 @@ let id = /var k__id = "(.*?)"/.exec(document.body.innerHTML) || [
 ];
 let thumb = document.querySelector("img").src;
 let title = document.querySelector("b").innerHTML;
-
 post("https://www.y2mate.com/mates/en60/convert", {
 type: "youtube",
 _id: id[1],
@@ -79,7 +79,7 @@ filesize: KB,
 } else reject("URL INVALID");
 });
 }
-
+`|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 function Instagram_Dwnloader(url_media) {
 return new Promise((resolve, reject) => {
 url_media = url_media.replace("reel", "p");
@@ -88,7 +88,6 @@ const requestBody = {
 url: url_media.replace("reel", "p"),
 lang_code: "en",
 };
-
 const config = {
 headers: {
 "User-Agent":
@@ -103,7 +102,6 @@ referer: " https://igram.io/en/dl/",
 Cookie: "__cfduid=d4c2ddc2229a4d74c28b6ba25cdcd2a181618175605",
 },
 };
-
 axios
 .post(url, qs.stringify(requestBody), config)
 .then((result) => {
@@ -121,7 +119,6 @@ let cheerioElement = $(element);
 ig.push(cheerioElement.attr("src"));
 }
 );
-
 resolve({
 results_number: ig.length,
 url_list: ig,
@@ -133,7 +130,7 @@ reject(err);
 });
 });
 }
-
+`|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 function YouTube_Video(url) {
 return new Promise((resolve, reject) => {
 if (ytIdRegex.test(url)) {
@@ -152,7 +149,6 @@ filesize = yaha[yaha.length - 23].innerHTML;
 id = /var k__id = "(.*?)"/.exec(document.body.innerHTML) || ["", ""];
 thumb = document.querySelector("img").src;
 title = document.querySelector("b").innerHTML;
-
 post("https://www.y2mate.com/mates/en60/convert", {
 type: "youtube",
 _id: id[1],
@@ -179,6 +175,7 @@ filesize: KB,
 } else reject("URL INVALID");
 });
 }
+`|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 function upload(media) {
 return new Promise(async (resolve, reject) => {
 try {
@@ -201,7 +198,7 @@ return console.log(e);
 }
 });
 }
-
+`|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 function formatDate(n, locale = "id") {
 let d = new Date(n);
 return d.toLocaleDateString(locale, {
@@ -219,3 +216,8 @@ module.exports.YouTube_Video = YouTube_Video;
 module.exports.Instagram_Dwnloader = Instagram_Dwnloader;
 module.exports.upload = upload;
 module.exports.formatDate = formatDate;
+`|⬡════════════════════════════════════════════|                            |═══════════════════════════════════════════⬡|`;
+`|                                                                                                                        |`;
+`|        (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!            |`;
+`|                                                                                                                        |`;
+`|⬡════════════════════════════════════════════|                            |═══════════════════════════════════════════⬡|`;
