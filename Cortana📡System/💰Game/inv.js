@@ -101,6 +101,124 @@ chat,
 }
 }
 );
+} else if (Needs[0]) {
+var TagPerson = Needs[0].replace(/[^0-9]/g, "");
+var TagMention = TagPerson + "@s.whatsapp.net";
+await Robbery.findOne(
+{
+ID: TagMention,
+},
+async (Error, userRob) => {
+if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat);
+if (!userRob) {
+var newUser = new Robbery({
+ID: TagMention,
+lock: 0,
+sword: 0,
+laptop: 0,
+charm: 0,
+CurrentRobberyTime: 0,
+PermanentRobberyTime: 480000,
+});
+await newUser
+.save()
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat));
+
+const media = await ӄʀǟӄɨռʐ.prepareMessage(
+ƈօʀȶǟռǟ.chatId,
+{ url: "./Cortana☣️Reactor/Cortana_Mongo.png" },
+MessageType.image,
+{ mimetype: Mimetype.png }
+);
+return await ӄʀǟӄɨռʐ
+.sendMessage(
+ƈօʀȶǟռǟ.chatId,
+{
+contentText: `*🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ},*
+
+╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_  
+║🤖 *@${TagPerson} Added To Database For First Time!*
+║🦋 _Try ${ᴋᴇɪ}${defaultnm} Again!_
+╚════════════╝`,
+footerText: `⎿ ©𝐂𝐨𝐫𝐭𝐚𝐧𝐚 • 𝐄𝐧𝐕𝐞𝐫: ${vers.vers} ⏋`,
+buttons: [
+{
+buttonId: `${ᴋᴇɪ}help`,
+buttonText: { displayText: `${ᴋᴇɪ}help` },
+type: 1,
+},
+{
+buttonId: `${ᴋᴇɪ}faq`,
+buttonText: { displayText: `${ᴋᴇɪ}faq` },
+type: 1,
+},
+],
+headerType: 4,
+imageMessage: media.message.imageMessage,
+},
+MessageType.buttonsMessage,
+{
+quoted: chat,
+contextInfo: {
+mentionedJid: [աɦօֆɛռȶɦǟȶ, TagMention],
+},
+}
+)
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat));
+} else {
+const media = await ӄʀǟӄɨռʐ.prepareMessage(
+ƈօʀȶǟռǟ.chatId,
+{ url: "./Cortana☣️Reactor/Cortana_Univ.png" },
+MessageType.image,
+{ mimetype: Mimetype.png }
+);
+return await ӄʀǟӄɨռʐ
+.sendMessage(
+ƈօʀȶǟռǟ.chatId,
+{
+contentText: `🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ}, 
+
+╔◇══════════════◇╗
+┊   💼𝐈𝐧𝐯𝐞𝐧𝐭𝐨𝐫𝐲💼
+┊
+╚══◇║🤠𝗔𝗰𝗰𝗼𝘂𝗻𝘁: @${քɛʀֆօռɢօȶռʊʍ}
+╔══◇║🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_  
+║
+║🔒 *lock:* _${userRob.lock}_
+║⚔️ *sword:* _${userRob.sword}_
+║💻 *laptop:* _${userRob.laptop}_
+║🔮 *charm:* _${userRob.charm}_
+╚════════════╝`,
+footerText: `⎿ ©𝐂𝐨𝐫𝐭𝐚𝐧𝐚 • 𝐄𝐧𝐕𝐞𝐫: ${vers.vers} ⏋`,
+buttons: [
+{
+buttonId: `${ᴋᴇɪ}help`,
+buttonText: { displayText: `${ᴋᴇɪ}help` },
+type: 1,
+},
+{
+buttonId: `${ᴋᴇɪ}faq`,
+buttonText: { displayText: `${ᴋᴇɪ}faq` },
+type: 1,
+},
+],
+headerType: 4,
+imageMessage: media.message.imageMessage,
+},
+MessageType.buttonsMessage,
+{
+quoted: chat,
+contextInfo: {
+mentionedJid: [աɦօֆɛռȶɦǟȶ, TagMention],
+},
+}
+)
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat));
+}
+}
+);
+
+`|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 } else {
 await Robbery.findOne(
 {
