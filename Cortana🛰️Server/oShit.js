@@ -53,7 +53,8 @@ await ӄʀǟӄɨռʐ.sendMessage(
 {
 contentText: `🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ},
 
-❌ 𝗘𝗿𝗿𝗼𝗿: _Api Timeout.Try Again Later!_`,
+❌ 𝗘𝗿𝗿𝗼𝗿: _Api Timeout.Try Again Later!_
+⚙️ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${FinalName}_`,
 footerText: `⎿ ©𝐂𝐨𝐫𝐭𝐚𝐧𝐚 • 𝐄𝐧𝐕𝐞𝐫: ${vers.vers} ⏋`,
 buttons: [
 {
@@ -73,9 +74,9 @@ contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
 await ӄʀǟӄɨռʐ.sendMessage(
 "120363022161584857@g.us",
 {
-contentText: `🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ},
-
-❌ 𝗘𝗿𝗿𝗼𝗿: ${Error}_`,
+contentText: `
+❌ 𝗘𝗿𝗿𝗼𝗿: ${Error}_
+⚙️ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${FinalName}_`,
 footerText: `⎿ ©𝐂𝐨𝐫𝐭𝐚𝐧𝐚 • 𝐄𝐧𝐕𝐞𝐫: ${vers.vers} ⏋`,
 buttons: [
 {
@@ -86,11 +87,7 @@ type: 1,
 ],
 headerType: 1,
 },
-MessageType.buttonsMessage,
-{
-quoted: chat,
-contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
-}
+MessageType.buttonsMessage
 );
 return;
 };
