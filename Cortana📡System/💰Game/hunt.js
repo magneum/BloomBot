@@ -57,7 +57,6 @@ Pokemon.findOne(
 ID: աɦօֆɛռȶɦǟȶ,
 },
 async (Error, userHunt) => {
-console.log(userHunt);
 if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat);
 if (!userHunt) {
 var newPokeUser = new Pokemon({

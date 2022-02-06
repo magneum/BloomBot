@@ -69,9 +69,6 @@ fs.readFileSync(`./Cortana🛰️Server/FISH/dare.json`)
 What = DareGet[Math.floor(Math.random() * DareGet.length)];
 Ques = `║👼🏽‍ 𝗗𝗮𝗿𝗲`;
 }
-console.log(What);
-console.log(Ques);
-console.log(Amount);
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 if (!ƈօʀȶǟռǟ.isReply) {
 return Cortana_Buttons.MIB(

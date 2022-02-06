@@ -50,7 +50,6 @@ Economy.findOne(
 ID: աɦօֆɛռȶɦǟȶ,
 },
 async (Error, userEco) => {
-console.log(userEco);
 if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat);
 if (!userEco) {
 var newUser = new Economy({
