@@ -56,7 +56,7 @@ if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat
 if (!userRob) {
 var newUser = new Robbery({
 ID: Receiver,
-padlock: 0,
+lock: 0,
 sword: 0,
 laptop: 0,
 charm: 0,
@@ -91,7 +91,7 @@ chat,
 ╚══◇║🤠𝗔𝗰𝗰𝗼𝘂𝗻𝘁: @${քɛʀֆօռɢօȶռʊʍ}
 ╔══◇║🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_  
 ║
-║🔒 *padlock:* _${userRob.padlock}_
+║🔒 *lock:* _${userRob.lock}_
 ║⚔️ *sword:* _${userRob.sword}_
 ║💻 *laptop:* _${userRob.laptop}_
 ║🔮 *charm:* _${userRob.charm}_
@@ -111,7 +111,7 @@ if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat
 if (!userRob) {
 var newUser = new Robbery({
 ID: աɦօֆɛռȶɦǟȶ,
-padlock: 0,
+lock: 0,
 sword: 0,
 laptop: 0,
 charm: 0,
@@ -146,7 +146,7 @@ chat,
 ╚══◇║🤠𝗔𝗰𝗰𝗼𝘂𝗻𝘁: @${աɦօֆɛռȶɦǟȶռʊʍ}, 
 ╔══◇║🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_  
 ║
-║🔒 *padlock:* _${userRob.padlock}_
+║🔒 *lock:* _${userRob.padlock}_
 ║⚔️ *sword:* _${userRob.sword}_
 ║💻 *laptop:* _${userRob.laptop}_
 ║🔮 *charm:* _${userRob.charm}_

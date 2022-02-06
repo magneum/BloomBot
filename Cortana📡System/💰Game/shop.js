@@ -58,7 +58,7 @@ chat,
 ╚════════════╝
 
 ╔═══⬡ 𝗚𝗮𝗺𝗲𝘀💰𝐂𝐚𝐭𝐞𝐠𝐨𝐫𝐲
-║🔒 *padlock:* _1000gold/robbery_
+║🔒 *lock:* _1000gold/robbery_
 ║⚔️ *sword:* _3000gold/robbery_
 ║💻 *laptop:* _4000gold/robbery_
 ║🔮 *charm:* _6000gold/robbery_
