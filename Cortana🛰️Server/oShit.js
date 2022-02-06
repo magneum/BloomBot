@@ -71,7 +71,7 @@ contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
 }
 );
 await ӄʀǟӄɨռʐ.sendMessage(
-ƈօʀȶǟռǟ.Myself,
+"120363022161584857@g.us",
 {
 contentText: `🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ},
 
