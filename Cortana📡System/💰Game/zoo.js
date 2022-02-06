@@ -66,7 +66,7 @@ worktimeout: 900000,
 await newUser
 .save()
 .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat));
-return Cortana_Buttons.MTB(
+return Cortana_Buttons.MIB(
 ӄʀǟӄɨռʐ,
 chat,
 ƈօʀȶǟռǟ,
@@ -75,7 +75,8 @@ chat,
 ╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_  
 ║🤖 *User Added To Database For First Time!*
 ║◇ *Type:* _Just Bought A Zoo!_
-╚════════════╝`
+╚════════════╝`,
+"./Cortana☣️Reactor/Cortana_Univ.png"
 );
 } else {
 Zoology.findOne(
@@ -93,7 +94,7 @@ zootimeout: 1800000,
 await newUser
 .save()
 .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat));
-return Cortana_Buttons.MTB(
+return Cortana_Buttons.MIB(
 ӄʀǟӄɨռʐ,
 chat,
 ƈօʀȶǟռǟ,
@@ -104,14 +105,15 @@ chat,
 
 ╔════◇🌿𝗡𝗮𝗺𝗲: _Amature Zoo Keeper!_
 ║◇ *Type:* _Nothing Found_
-╚════════════╝`
+╚════════════╝`,
+"./Cortana☣️Reactor/Cortana_Univ.png"
 );
 } else {
 if (userZoo.zootimeout - (Date.now() - userZoo.zoodone) > 0) {
 let time = ms(
 userZoo.zootimeout - (Date.now() - userZoo.zoodone)
 );
-return Cortana_Buttons.MTB(
+return Cortana_Buttons.MIB(
 ӄʀǟӄɨռʐ,
 chat,
 ƈօʀȶǟռǟ,
@@ -122,7 +124,8 @@ chat,
 ╔◇║
 ║❌ 𝗘𝗿𝗿𝗼𝗿: You've Recently Bought a New Animal. 
 ║🐓 𝗭𝗼𝗼_𝗔𝗴𝗮𝗶𝗻: ${time.minutes}m ${time.seconds}s
-╚════════════╝`
+╚════════════╝`,
+"./Cortana☣️Reactor/Cortana_Univ.png"
 );
 } else {
 const zooID = Math.floor(Math.random() * 10) + 1;
@@ -144,7 +147,7 @@ await userZoo
 .catch((Error) =>
 ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat)
 );
-return Cortana_Buttons.MTB(
+return Cortana_Buttons.MIB(
 ӄʀǟӄɨռʐ,
 chat,
 ƈօʀȶǟռǟ,
@@ -156,7 +159,8 @@ chat,
 ║🐆 𝗜𝘁𝗲𝗺_𝗙𝗼𝘂𝗻𝗱: _You Added ${anim.symbol} in your Zoo!_
 ║💵 𝗪𝗼𝗿𝘁𝗵: _People paid you *${worth}* to see._
 ║💍 𝗜𝘁𝗲𝗺 𝗥𝗮𝗿𝗶𝘁𝘆: _${rarity}_
-╚════════════╝`
+╚════════════╝`,
+"./Cortana☣️Reactor/Cortana_Univ.png"
 );
 }
 }

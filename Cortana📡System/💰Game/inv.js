@@ -79,7 +79,7 @@ chat,
 `./Cortana☣️Reactor/Cortana_Mongo.png`
 );
 } else {
-return Cortana_Buttons.MTB(
+return Cortana_Buttons.MIB(
 ӄʀǟӄɨռʐ,
 chat,
 ƈօʀȶǟռǟ,
@@ -95,7 +95,8 @@ chat,
 ║⚔️ *sword:* _${userRob.sword}_
 ║💻 *laptop:* _${userRob.laptop}_
 ║🔮 *charm:* _${userRob.charm}_
-╚════════════╝`
+╚════════════╝`,
+"./Cortana☣️Reactor/Cortana_Univ.png"
 );
 }
 }
@@ -133,7 +134,7 @@ chat,
 `./Cortana☣️Reactor/Cortana_Mongo.png`
 );
 } else {
-return Cortana_Buttons.MTB(
+return Cortana_Buttons.MIB(
 ӄʀǟӄɨռʐ,
 chat,
 ƈօʀȶǟռǟ,
@@ -149,7 +150,8 @@ chat,
 ║⚔️ *sword:* _${userRob.sword}_
 ║💻 *laptop:* _${userRob.laptop}_
 ║🔮 *charm:* _${userRob.charm}_
-╚════════════╝`
+╚════════════╝`,
+"./Cortana☣️Reactor/Cortana_Univ.png"
 );
 }
 }

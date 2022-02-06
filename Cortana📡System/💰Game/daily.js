@@ -83,7 +83,7 @@ chat,
 } else {
 if (userEco.timeout - (Date.now() - userEco.daily) > 0) {
 let time = ms(userEco.timeout - (Date.now() - userEco.daily));
-return Cortana_Buttons.MTB(
+return Cortana_Buttons.MIB(
 ӄʀǟӄɨռʐ,
 chat,
 ƈօʀȶǟռǟ,
@@ -94,13 +94,14 @@ chat,
 ╔◇║
 ║❌ 𝗘𝗿𝗿𝗼𝗿: You've already collected your daily reward!
 ║💵 𝗡𝗲𝘅𝘁 𝗗𝗮𝗶𝗹𝘆: ${time.hours}h ${time.minutes}m ${time.seconds}s
-╚════════════╝`
+╚════════════╝`,
+"./Cortana☣️Reactor/Cortana_Univ.png"
 );
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 } else {
 userEco.daily = Date.now();
 userEco.money = userEco.money + 1000;
-Cortana_Buttons.MTB(
+Cortana_Buttons.MIB(
 ӄʀǟӄɨռʐ,
 chat,
 ƈօʀȶǟռǟ,
@@ -111,7 +112,8 @@ chat,
 ╔◇║
 ║✅ 𝗗𝗮𝗶𝗹𝘆 𝗦𝘁𝗮𝘁𝘂𝘀: You've collected your daily reward!
 ║💵 𝐃𝐚𝐢𝐥𝐲 𝐌𝐨𝐧𝐞𝐲:  1000 
-╚════════════╝`
+╚════════════╝`,
+"./Cortana☣️Reactor/Cortana_Univ.png"
 );
 userEco
 .save()
