@@ -403,8 +403,7 @@ cEconomy.money = 0;
 vEconomy.money = vEconomy.money + MoneySword;
 cEconomy.money = cEconomy.money - MoneySword;
 }
-(culprit.PermanentRobberyTime = 480000),
-(culprit.CurrentRobberyTime = Date.now());
+culprit.CurrentRobberyTime = Date.now();
 await victim
 .save()
 .catch((Error) =>
@@ -452,8 +451,7 @@ cEconomy.money = 0;
 vEconomy.money = vEconomy.money + MoneyLaptop;
 cEconomy.money = cEconomy.money - MoneyLaptop;
 }
-(culprit.PermanentRobberyTime = 480000),
-(culprit.CurrentRobberyTime = Date.now());
+culprit.CurrentRobberyTime = Date.now();
 await victim
 .save()
 .catch((Error) =>
@@ -501,8 +499,7 @@ cEconomy.money = 0;
 vEconomy.money = vEconomy.money + MoneyCharm;
 cEconomy.money = cEconomy.money - MoneyCharm;
 }
-(culprit.PermanentRobberyTime = 480000),
-(culprit.CurrentRobberyTime = Date.now());
+culprit.CurrentRobberyTime = Date.now();
 await victim
 .save()
 .catch((Error) =>
@@ -552,8 +549,7 @@ vEconomy.money = vEconomy.money - MoneyRandom;
 cEconomy.money = cEconomy.money + MoneyRandom;
 Note = `You Got _${MoneyRandom}gold_!`;
 }
-(culprit.PermanentRobberyTime = 480000),
-(culprit.CurrentRobberyTime = Date.now());
+culprit.CurrentRobberyTime = Date.now();
 await vEconomy
 .save()
 .catch((Error) =>
@@ -1071,8 +1067,7 @@ cEconomy.money = 0;
 vEconomy.money = vEconomy.money + MoneySword;
 cEconomy.money = cEconomy.money - MoneySword;
 }
-(culprit.PermanentRobberyTime = 480000),
-(culprit.CurrentRobberyTime = Date.now());
+culprit.CurrentRobberyTime = Date.now();
 await victim
 .save()
 .catch((Error) =>
@@ -1151,8 +1146,7 @@ cEconomy.money = 0;
 vEconomy.money = vEconomy.money + MoneyLaptop;
 cEconomy.money = cEconomy.money - MoneyLaptop;
 }
-(culprit.PermanentRobberyTime = 480000),
-(culprit.CurrentRobberyTime = Date.now());
+culprit.CurrentRobberyTime = Date.now();
 await victim
 .save()
 .catch((Error) =>
@@ -1231,8 +1225,7 @@ cEconomy.money = 0;
 vEconomy.money = vEconomy.money + MoneyCharm;
 cEconomy.money = cEconomy.money - MoneyCharm;
 }
-(culprit.PermanentRobberyTime = 480000),
-(culprit.CurrentRobberyTime = Date.now());
+culprit.CurrentRobberyTime = Date.now();
 await victim
 .save()
 .catch((Error) =>
@@ -1313,8 +1306,7 @@ vEconomy.money = vEconomy.money - MoneyRandom;
 cEconomy.money = cEconomy.money + MoneyRandom;
 Note = `You Got _${MoneyRandom}gold_!`;
 }
-(culprit.PermanentRobberyTime = 480000),
-(culprit.CurrentRobberyTime = Date.now());
+culprit.CurrentRobberyTime = Date.now();
 await vEconomy
 .save()
 .catch((Error) =>
