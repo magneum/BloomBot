@@ -31,7 +31,7 @@ var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
 var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
 const buttonMessage = {
 contentText: MainText,
-footerText: `⎿ ©𝐂𝐨𝐫𝐭𝐚𝐧𝐚 • 𝐄𝐧𝐕𝐞𝐫: ${vers.vers} ⏋`,
+footerText: `⎿ ©𝐂𝐨𝐫𝐭𝐚𝐧𝐚 ʙʏ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⏋`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
@@ -66,7 +66,7 @@ const defaultnm = ƈօʀȶǟռǟ.commandName;
 const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
 const buttonMessage = {
 contentText: MainText,
-footerText: `⎿ ©𝐂𝐨𝐫𝐭𝐚𝐧𝐚 • 𝐄𝐧𝐕𝐞𝐫: ${vers.vers} ⏋`,
+footerText: `⎿ ©𝐂𝐨𝐫𝐭𝐚𝐧𝐚 ʙʏ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⏋`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
@@ -124,7 +124,7 @@ return await ӄʀǟӄɨռʐ
 ƈօʀȶǟռǟ.chatId,
 {
 contentText: MainText,
-footerText: `⎿ ©𝐂𝐨𝐫𝐭𝐚𝐧𝐚 • 𝐄𝐧𝐕𝐞𝐫: ${vers.vers} ⏋`,
+footerText: `⎿ ©𝐂𝐨𝐫𝐭𝐚𝐧𝐚 ʙʏ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⏋`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
@@ -165,7 +165,7 @@ return await ӄʀǟӄɨռʐ
 ƈօʀȶǟռǟ.chatId,
 {
 contentText: MainText,
-footerText: `⎿ ©𝐂𝐨𝐫𝐭𝐚𝐧𝐚 • 𝐄𝐧𝐕𝐞𝐫: ${vers.vers} ⏋`,
+footerText: `⎿ ©𝐂𝐨𝐫𝐭𝐚𝐧𝐚 ʙʏ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⏋`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
@@ -220,7 +220,7 @@ return await ӄʀǟӄɨռʐ
 ƈօʀȶǟռǟ.chatId,
 {
 contentText: MainText,
-footerText: `⎿ ©𝐂𝐨𝐫𝐭𝐚𝐧𝐚 • 𝐄𝐧𝐕𝐞𝐫: ${vers.vers} ⏋`,
+footerText: `⎿ ©𝐂𝐨𝐫𝐭𝐚𝐧𝐚 ʙʏ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⏋`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
@@ -261,7 +261,7 @@ return await ӄʀǟӄɨռʐ
 ƈօʀȶǟռǟ.chatId,
 {
 contentText: MainText,
-footerText: `⎿ ©𝐂𝐨𝐫𝐭𝐚𝐧𝐚 • 𝐄𝐧𝐕𝐞𝐫: ${vers.vers} ⏋`,
+footerText: `⎿ ©𝐂𝐨𝐫𝐭𝐚𝐧𝐚 ʙʏ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⏋`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
@@ -310,7 +310,7 @@ return await ӄʀǟӄɨռʐ
 ƈօʀȶǟռǟ.chatId,
 {
 contentText: MainText,
-footerText: `⎿ ©𝐂𝐨𝐫𝐭𝐚𝐧𝐚 • 𝐄𝐧𝐕𝐞𝐫: ${vers.vers} ⏋`,
+footerText: `⎿ ©𝐂𝐨𝐫𝐭𝐚𝐧𝐚 ʙʏ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⏋`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
@@ -351,7 +351,7 @@ return await ӄʀǟӄɨռʐ
 ƈօʀȶǟռǟ.chatId,
 {
 contentText: MainText,
-footerText: `⎿ ©𝐂𝐨𝐫𝐭𝐚𝐧𝐚 • 𝐄𝐧𝐕𝐞𝐫: ${vers.vers} ⏋`,
+footerText: `⎿ ©𝐂𝐨𝐫𝐭𝐚𝐧𝐚 ʙʏ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⏋`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
@@ -412,7 +412,7 @@ MessageType.mp4Audio,
 const buttonMessages = {
 videoMessage: media.message.videoMessage,
 contentText: MainText,
-footerText: `⎿ ©𝐂𝐨𝐫𝐭𝐚𝐧𝐚 • 𝐄𝐧𝐕𝐞𝐫: ${vers.vers} ⏋`,
+footerText: `⎿ ©𝐂𝐨𝐫𝐭𝐚𝐧𝐚 ʙʏ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⏋`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
@@ -470,7 +470,7 @@ MessageType.location
 const buttonMessages = {
 locationMessage: media.message.locationMessage,
 contentText: MainText,
-footerText: `⎿ ©𝐂𝐨𝐫𝐭𝐚𝐧𝐚 • 𝐄𝐧𝐕𝐞𝐫: ${vers.vers} ⏋`,
+footerText: `⎿ ©𝐂𝐨𝐫𝐭𝐚𝐧𝐚 ʙʏ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⏋`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,

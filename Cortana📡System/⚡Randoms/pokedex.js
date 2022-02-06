@@ -221,7 +221,7 @@ MessageType.video,
 mimetype: `video/gif`,
 quoted: chat,
 caption:
-`⎿ ©𝐂𝐨𝐫𝐭𝐚𝐧𝐚 • 𝐄𝐧𝐕𝐞𝐫: ${vers.vers} ⏋\n\n` +
+`⎿ ©𝐂𝐨𝐫𝐭𝐚𝐧𝐚 ʙʏ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⏋\n\n` +
 PokeInfo,
 contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
 }

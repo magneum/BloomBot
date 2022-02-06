@@ -24,7 +24,7 @@ const Cortana_Loca = async (ӄʀǟӄɨռʐ, chat, ƈօʀȶǟռǟ, MainText) => {
 try {
 const buttonMessage = {
 contentText: MainText,
-footerText: `⎿ ©𝐂𝐨𝐫𝐭𝐚𝐧𝐚 • 𝐄𝐧𝐕𝐞𝐫: ${vers.vers} ⏋`,
+footerText: `⎿ ©𝐂𝐨𝐫𝐭𝐚𝐧𝐚 ʙʏ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⏋`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
