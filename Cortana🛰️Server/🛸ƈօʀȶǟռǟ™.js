@@ -421,15 +421,76 @@ var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ
 .substring(0, աɦօֆɛռȶɦǟȶ.length - 15)
 .replace(/[+ ]/g, "");
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-if(!ƈօʀȶǟռǟ.isGroup &&!ƈօʀȶǟռǟ.fromMe && !ƈօʀȶǟռǟ.isSenderDev){
+// if (!ƈօʀȶǟռǟ.isGroup && !ƈօʀȶǟռǟ.fromMe && !ƈօʀȶǟռǟ.isSenderDev) {
+// await antipm.findOne(
+// {
+// ID: աɦօֆɛռȶɦǟȶ,
+// },
+// async (Error, valuePM) => {
+// if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat);
+// if (!valuePM) return;
+// if (valuePM.Amount < 10) {
+// valuePM.Amount = valuePM.Amount + 1;
+// await valuePM
+// .save()
+// .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat));
+// return Cortana_Buttons.MIB(
+// ӄʀǟӄɨռʐ,
+// chat,
+// ƈօʀȶǟռǟ,
+// `🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ},
+
+// ╔◇║⚠️ *Using Cortana In Private Is No longer Allowed!*
+// ║
+// ║ ❗𝗪𝗮𝗿𝗻𝗶𝗻𝗴𝘀: _${valuePM.Amount}/10_
+// ╚════════════╝
+
+// ╔◇║ 👇🏽 𝗝𝗼𝗶𝗻 𝗔𝗻𝘆 𝗖𝗼𝗿𝘁𝗮𝗻𝗮 𝗔𝗜 𝗚𝗿𝗼𝘂𝗽 👇🏽
+// ║
+// ║💼 𝐆𝐫𝐨𝐮𝐩: _${_𝔏𝔞𝔟_.HASH}_
+// ║💼 𝐆𝐫𝐨𝐮𝐩: _${_𝔏𝔞𝔟_.HASHS}_
+// ║💼 𝐆𝐫𝐨𝐮𝐩: _${_𝔏𝔞𝔟_.HASHSH}_
+// ╚════════════╝`,
+// "./Cortana☣️Reactor/Krakinz-NoVerity.png"
+// );
+// } else {
+// await ӄʀǟӄɨռʐ
+// .blockUser(
+// աɦօֆɛռȶɦǟȶ.replace(/[^0-9]/g, "") + "@s.whatsapp.net",
+// "add"
+// )
+// .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat));
+// await ӄʀǟӄɨռʐ
+// .sendMessage(
+// ӄʀǟӄɨռʐ.user.jid,
+// `(𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈 by 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
+
+// ◇║ *Blocked User:* ${աɦօֆɛռȶɦǟȶ}`,
+// MessageType.text
+// )
+// .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat));
+// return await valuePM
+// .delete()
+// .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat));
+// }
+// }
+// );
+// }
+`|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
+if (!ƈօʀȶǟռǟ.isGroup && !ƈօʀȶǟռǟ.fromMe && !ƈօʀȶǟռǟ.isSenderDev) {
 return Cortana_Buttons.MIB(
 ӄʀǟӄɨռʐ,
 chat,
 ƈօʀȶǟռǟ,
-`🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ}, Using Cortana In Private Is No longer Allowed!
+`🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ}, 
+
+╔◇║ ❗𝗪𝗮𝗿𝗻𝗶𝗻𝗴
+║ *Using Cortana In Private Is No longer Allowed!*
+╚════════════╝
 
 
 ╔◇║ 👇🏽 𝗝𝗼𝗶𝗻 𝗔𝗻𝘆 𝗖𝗼𝗿𝘁𝗮𝗻𝗮 𝗔𝗜 𝗚𝗿𝗼𝘂𝗽 👇🏽
+║
 ║💼 𝐆𝐫𝐨𝐮𝐩: _${_𝔏𝔞𝔟_.HASH}_
 ║💼 𝐆𝐫𝐨𝐮𝐩: _${_𝔏𝔞𝔟_.HASHS}_
 ║💼 𝐆𝐫𝐨𝐮𝐩: _${_𝔏𝔞𝔟_.HASHSH}_
