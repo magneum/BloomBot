@@ -567,7 +567,7 @@ return Cortana_Buttons.MIB(
 chat,
 ƈօʀȶǟռǟ,
 `🤖𝐕𝐞𝐫𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧: @${աɦօֆɛռȶɦǟȶռʊʍ}, 
-_You Are Not Verified.Join Cortana Group and Verify Yourself First!_
+_You Are Not Verified.Join Any Cortana Group and Verify Yourself First!_
 
 
 ╔════◇𝐖𝐡𝐲 𝐃𝐨 𝐈 𝐍𝐞𝐞𝐝 𝐓𝐨 𝐁𝐞 𝐕𝐞𝐫𝐢𝐟𝐢𝐞𝐝?
