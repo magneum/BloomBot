@@ -21,487 +21,487 @@ const Clock = date.format(now, pattern);
 const vers = require(`../package.json`);
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 const Cortana_Text_But = async (ӄʀǟӄɨռʐ, chat, ƈօʀȶǟռǟ, MainText) => {
-  try {
-    if (ƈօʀȶǟռǟ.isReply) {
-      var աɦօֆɛռȶɦǟȶ = ƈօʀȶǟռǟ.sender;
-      var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ
-        .substring(0, աɦօֆɛռȶɦǟȶ.length - 15)
-        .replace(/[+ ]/g, "");
-      var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
-      var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
-      const buttonMessage = {
-        contentText: MainText,
-        footerText: `⎿ ©𝐂𝐨𝐫𝐭𝐚𝐧𝐚 • 𝐄𝐧𝐕𝐞𝐫: ${vers.vers} ⏋`,
-        buttons: [
-          {
-            buttonId: `${ᴋᴇɪ}help`,
-            buttonText: { displayText: `${ᴋᴇɪ}help` },
-            type: 1,
-          },
-          {
-            buttonId: `${ᴋᴇɪ}faq`,
-            buttonText: { displayText: `${ᴋᴇɪ}faq` },
-            type: 1,
-          },
-        ],
-        headerType: 1,
-      };
-      ӄʀǟӄɨռʐ
-        .sendMessage(
-          ƈօʀȶǟռǟ.chatId,
-          buttonMessage,
-          MessageType.buttonsMessage,
-          {
-            quoted: chat,
-            contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ, Receiver] },
-          }
-        )
-        .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat));
-    } else {
-      var աɦօֆɛռȶɦǟȶ = ƈօʀȶǟռǟ.sender;
-      var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ
-        .substring(0, աɦօֆɛռȶɦǟȶ.length - 15)
-        .replace(/[+ ]/g, "");
-      const defaultnm = ƈօʀȶǟռǟ.commandName;
-      const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
-      const buttonMessage = {
-        contentText: MainText,
-        footerText: `⎿ ©𝐂𝐨𝐫𝐭𝐚𝐧𝐚 • 𝐄𝐧𝐕𝐞𝐫: ${vers.vers} ⏋`,
-        buttons: [
-          {
-            buttonId: `${ᴋᴇɪ}help`,
-            buttonText: { displayText: `${ᴋᴇɪ}help` },
-            type: 1,
-          },
-          {
-            buttonId: `${ᴋᴇɪ}faq`,
-            buttonText: { displayText: `${ᴋᴇɪ}faq` },
-            type: 1,
-          },
-        ],
-        headerType: 1,
-      };
-      ӄʀǟӄɨռʐ
-        .sendMessage(
-          ƈօʀȶǟռǟ.chatId,
-          buttonMessage,
-          MessageType.buttonsMessage,
-          {
-            quoted: chat,
-            contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
-          }
-        )
-        .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat));
-    }
-  } catch (Error) {
-    return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat);
-  }
+try {
+if (ƈօʀȶǟռǟ.isReply) {
+var աɦօֆɛռȶɦǟȶ = ƈօʀȶǟռǟ.sender;
+var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ
+.substring(0, աɦօֆɛռȶɦǟȶ.length - 15)
+.replace(/[+ ]/g, "");
+var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
+var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
+const buttonMessage = {
+contentText: MainText,
+footerText: `⎿ ©𝐂𝐨𝐫𝐭𝐚𝐧𝐚 • 𝐄𝐧𝐕𝐞𝐫: ${vers.vers} ⏋`,
+buttons: [
+{
+buttonId: `${ᴋᴇɪ}help`,
+buttonText: { displayText: `${ᴋᴇɪ}help` },
+type: 1,
+},
+{
+buttonId: `${ᴋᴇɪ}faq`,
+buttonText: { displayText: `${ᴋᴇɪ}faq` },
+type: 1,
+},
+],
+headerType: 1,
+};
+ӄʀǟӄɨռʐ
+.sendMessage(
+ƈօʀȶǟռǟ.chatId,
+buttonMessage,
+MessageType.buttonsMessage,
+{
+quoted: chat,
+contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ, Receiver] },
+}
+)
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat));
+} else {
+var աɦօֆɛռȶɦǟȶ = ƈօʀȶǟռǟ.sender;
+var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ
+.substring(0, աɦօֆɛռȶɦǟȶ.length - 15)
+.replace(/[+ ]/g, "");
+const defaultnm = ƈօʀȶǟռǟ.commandName;
+const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
+const buttonMessage = {
+contentText: MainText,
+footerText: `⎿ ©𝐂𝐨𝐫𝐭𝐚𝐧𝐚 • 𝐄𝐧𝐕𝐞𝐫: ${vers.vers} ⏋`,
+buttons: [
+{
+buttonId: `${ᴋᴇɪ}help`,
+buttonText: { displayText: `${ᴋᴇɪ}help` },
+type: 1,
+},
+{
+buttonId: `${ᴋᴇɪ}faq`,
+buttonText: { displayText: `${ᴋᴇɪ}faq` },
+type: 1,
+},
+],
+headerType: 1,
+};
+ӄʀǟӄɨռʐ
+.sendMessage(
+ƈօʀȶǟռǟ.chatId,
+buttonMessage,
+MessageType.buttonsMessage,
+{
+quoted: chat,
+contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
+}
+)
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat));
+}
+} catch (Error) {
+return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat);
+}
 };
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 const Cortana_Image_But = async (
-  ӄʀǟӄɨռʐ,
-  chat,
-  ƈօʀȶǟռǟ,
-  MainText,
-  MediaUrl
+ӄʀǟӄɨռʐ,
+chat,
+ƈօʀȶǟռǟ,
+MainText,
+MediaUrl
 ) => {
-  try {
-    if (ƈօʀȶǟռǟ.isReply) {
-      var աɦօֆɛռȶɦǟȶ = ƈօʀȶǟռǟ.sender;
-      var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ
-        .substring(0, աɦօֆɛռȶɦǟȶ.length - 15)
-        .replace(/[+ ]/g, "");
-      var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
-      var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
-      const media = await ӄʀǟӄɨռʐ.prepareMessage(
-        ƈօʀȶǟռǟ.chatId,
-        { url: MediaUrl },
-        MessageType.image,
-        { mimetype: Mimetype.png }
-      );
-      return await ӄʀǟӄɨռʐ
-        .sendMessage(
-          ƈօʀȶǟռǟ.chatId,
-          {
-            contentText: MainText,
-            footerText: `⎿ ©𝐂𝐨𝐫𝐭𝐚𝐧𝐚 • 𝐄𝐧𝐕𝐞𝐫: ${vers.vers} ⏋`,
-            buttons: [
-              {
-                buttonId: `${ᴋᴇɪ}help`,
-                buttonText: { displayText: `${ᴋᴇɪ}help` },
-                type: 1,
-              },
-              {
-                buttonId: `${ᴋᴇɪ}faq`,
-                buttonText: { displayText: `${ᴋᴇɪ}faq` },
-                type: 1,
-              },
-            ],
-            headerType: 4,
-            imageMessage: media.message.imageMessage,
-          },
-          MessageType.buttonsMessage,
-          {
-            quoted: chat,
-            contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ, Receiver] },
-          }
-        )
-        .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat));
-    } else {
-      var աɦօֆɛռȶɦǟȶ = ƈօʀȶǟռǟ.sender;
-      var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ
-        .substring(0, աɦօֆɛռȶɦǟȶ.length - 15)
-        .replace(/[+ ]/g, "");
-      const defaultnm = ƈօʀȶǟռǟ.commandName;
-      const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
-      const media = await ӄʀǟӄɨռʐ.prepareMessage(
-        ƈօʀȶǟռǟ.chatId,
-        { url: MediaUrl },
-        MessageType.image,
-        { mimetype: Mimetype.png }
-      );
-      return await ӄʀǟӄɨռʐ
-        .sendMessage(
-          ƈօʀȶǟռǟ.chatId,
-          {
-            contentText: MainText,
-            footerText: `⎿ ©𝐂𝐨𝐫𝐭𝐚𝐧𝐚 • 𝐄𝐧𝐕𝐞𝐫: ${vers.vers} ⏋`,
-            buttons: [
-              {
-                buttonId: `${ᴋᴇɪ}help`,
-                buttonText: { displayText: `${ᴋᴇɪ}help` },
-                type: 1,
-              },
-              {
-                buttonId: `${ᴋᴇɪ}faq`,
-                buttonText: { displayText: `${ᴋᴇɪ}faq` },
-                type: 1,
-              },
-            ],
-            headerType: 4,
-            imageMessage: media.message.imageMessage,
-          },
-          MessageType.buttonsMessage,
-          {
-            quoted: chat,
-            contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
-          }
-        )
-        .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat));
-    }
-  } catch (Error) {
-    return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat);
-  }
+try {
+if (ƈօʀȶǟռǟ.isReply) {
+var աɦօֆɛռȶɦǟȶ = ƈօʀȶǟռǟ.sender;
+var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ
+.substring(0, աɦօֆɛռȶɦǟȶ.length - 15)
+.replace(/[+ ]/g, "");
+var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
+var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
+const media = await ӄʀǟӄɨռʐ.prepareMessage(
+ƈօʀȶǟռǟ.chatId,
+{ url: MediaUrl },
+MessageType.image,
+{ mimetype: Mimetype.png }
+);
+return await ӄʀǟӄɨռʐ
+.sendMessage(
+ƈօʀȶǟռǟ.chatId,
+{
+contentText: MainText,
+footerText: `⎿ ©𝐂𝐨𝐫𝐭𝐚𝐧𝐚 • 𝐄𝐧𝐕𝐞𝐫: ${vers.vers} ⏋`,
+buttons: [
+{
+buttonId: `${ᴋᴇɪ}help`,
+buttonText: { displayText: `${ᴋᴇɪ}help` },
+type: 1,
+},
+{
+buttonId: `${ᴋᴇɪ}faq`,
+buttonText: { displayText: `${ᴋᴇɪ}faq` },
+type: 1,
+},
+],
+headerType: 4,
+imageMessage: media.message.imageMessage,
+},
+MessageType.buttonsMessage,
+{
+quoted: chat,
+contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ, Receiver] },
+}
+)
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat));
+} else {
+var աɦօֆɛռȶɦǟȶ = ƈօʀȶǟռǟ.sender;
+var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ
+.substring(0, աɦօֆɛռȶɦǟȶ.length - 15)
+.replace(/[+ ]/g, "");
+const defaultnm = ƈօʀȶǟռǟ.commandName;
+const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
+const media = await ӄʀǟӄɨռʐ.prepareMessage(
+ƈօʀȶǟռǟ.chatId,
+{ url: MediaUrl },
+MessageType.image,
+{ mimetype: Mimetype.png }
+);
+return await ӄʀǟӄɨռʐ
+.sendMessage(
+ƈօʀȶǟռǟ.chatId,
+{
+contentText: MainText,
+footerText: `⎿ ©𝐂𝐨𝐫𝐭𝐚𝐧𝐚 • 𝐄𝐧𝐕𝐞𝐫: ${vers.vers} ⏋`,
+buttons: [
+{
+buttonId: `${ᴋᴇɪ}help`,
+buttonText: { displayText: `${ᴋᴇɪ}help` },
+type: 1,
+},
+{
+buttonId: `${ᴋᴇɪ}faq`,
+buttonText: { displayText: `${ᴋᴇɪ}faq` },
+type: 1,
+},
+],
+headerType: 4,
+imageMessage: media.message.imageMessage,
+},
+MessageType.buttonsMessage,
+{
+quoted: chat,
+contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
+}
+)
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat));
+}
+} catch (Error) {
+return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat);
+}
 };
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 const Cortana_Video_But = async (
-  ӄʀǟӄɨռʐ,
-  chat,
-  ƈօʀȶǟռǟ,
-  MainText,
-  MediaUrl
+ӄʀǟӄɨռʐ,
+chat,
+ƈօʀȶǟռǟ,
+MainText,
+MediaUrl
 ) => {
-  try {
-    if (ƈօʀȶǟռǟ.isReply) {
-      var աɦօֆɛռȶɦǟȶ = ƈօʀȶǟռǟ.sender;
-      var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ
-        .substring(0, աɦօֆɛռȶɦǟȶ.length - 15)
-        .replace(/[+ ]/g, "");
-      var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
-      var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
-      const media = await ӄʀǟӄɨռʐ.prepareMessage(
-        ƈօʀȶǟռǟ.chatId,
-        { url: MediaUrl },
-        MessageType.video,
-        { mimetype: `video/mp4` }
-      );
-      return await ӄʀǟӄɨռʐ
-        .sendMessage(
-          ƈօʀȶǟռǟ.chatId,
-          {
-            contentText: MainText,
-            footerText: `⎿ ©𝐂𝐨𝐫𝐭𝐚𝐧𝐚 • 𝐄𝐧𝐕𝐞𝐫: ${vers.vers} ⏋`,
-            buttons: [
-              {
-                buttonId: `${ᴋᴇɪ}help`,
-                buttonText: { displayText: `${ᴋᴇɪ}help` },
-                type: 1,
-              },
-              {
-                buttonId: `${ᴋᴇɪ}faq`,
-                buttonText: { displayText: `${ᴋᴇɪ}faq` },
-                type: 1,
-              },
-            ],
-            headerType: 5,
-            videoMessage: media.message.videoMessage,
-          },
-          MessageType.buttonsMessage,
-          {
-            quoted: chat,
-            contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
-          }
-        )
-        .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat));
-    } else {
-      var աɦօֆɛռȶɦǟȶ = ƈօʀȶǟռǟ.sender;
-      var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ
-        .substring(0, աɦօֆɛռȶɦǟȶ.length - 15)
-        .replace(/[+ ]/g, "");
-      const defaultnm = ƈօʀȶǟռǟ.commandName;
-      const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
-      const media = await ӄʀǟӄɨռʐ.prepareMessage(
-        ƈօʀȶǟռǟ.chatId,
-        { url: MediaUrl },
-        MessageType.video,
-        { mimetype: `video/mp4` }
-      );
-      return await ӄʀǟӄɨռʐ
-        .sendMessage(
-          ƈօʀȶǟռǟ.chatId,
-          {
-            contentText: MainText,
-            footerText: `⎿ ©𝐂𝐨𝐫𝐭𝐚𝐧𝐚 • 𝐄𝐧𝐕𝐞𝐫: ${vers.vers} ⏋`,
-            buttons: [
-              {
-                buttonId: `${ᴋᴇɪ}help`,
-                buttonText: { displayText: `${ᴋᴇɪ}help` },
-                type: 1,
-              },
-              {
-                buttonId: `${ᴋᴇɪ}faq`,
-                buttonText: { displayText: `${ᴋᴇɪ}faq` },
-                type: 1,
-              },
-            ],
-            headerType: 5,
-            videoMessage: media.message.videoMessage,
-          },
-          MessageType.buttonsMessage,
-          {
-            quoted: chat,
-            contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
-          }
-        )
-        .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat));
-    }
-  } catch (Error) {
-    return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat);
-  }
+try {
+if (ƈօʀȶǟռǟ.isReply) {
+var աɦօֆɛռȶɦǟȶ = ƈօʀȶǟռǟ.sender;
+var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ
+.substring(0, աɦօֆɛռȶɦǟȶ.length - 15)
+.replace(/[+ ]/g, "");
+var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
+var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
+const media = await ӄʀǟӄɨռʐ.prepareMessage(
+ƈօʀȶǟռǟ.chatId,
+{ url: MediaUrl },
+MessageType.video,
+{ mimetype: `video/mp4` }
+);
+return await ӄʀǟӄɨռʐ
+.sendMessage(
+ƈօʀȶǟռǟ.chatId,
+{
+contentText: MainText,
+footerText: `⎿ ©𝐂𝐨𝐫𝐭𝐚𝐧𝐚 • 𝐄𝐧𝐕𝐞𝐫: ${vers.vers} ⏋`,
+buttons: [
+{
+buttonId: `${ᴋᴇɪ}help`,
+buttonText: { displayText: `${ᴋᴇɪ}help` },
+type: 1,
+},
+{
+buttonId: `${ᴋᴇɪ}faq`,
+buttonText: { displayText: `${ᴋᴇɪ}faq` },
+type: 1,
+},
+],
+headerType: 5,
+videoMessage: media.message.videoMessage,
+},
+MessageType.buttonsMessage,
+{
+quoted: chat,
+contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
+}
+)
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat));
+} else {
+var աɦօֆɛռȶɦǟȶ = ƈօʀȶǟռǟ.sender;
+var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ
+.substring(0, աɦօֆɛռȶɦǟȶ.length - 15)
+.replace(/[+ ]/g, "");
+const defaultnm = ƈօʀȶǟռǟ.commandName;
+const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
+const media = await ӄʀǟӄɨռʐ.prepareMessage(
+ƈօʀȶǟռǟ.chatId,
+{ url: MediaUrl },
+MessageType.video,
+{ mimetype: `video/mp4` }
+);
+return await ӄʀǟӄɨռʐ
+.sendMessage(
+ƈօʀȶǟռǟ.chatId,
+{
+contentText: MainText,
+footerText: `⎿ ©𝐂𝐨𝐫𝐭𝐚𝐧𝐚 • 𝐄𝐧𝐕𝐞𝐫: ${vers.vers} ⏋`,
+buttons: [
+{
+buttonId: `${ᴋᴇɪ}help`,
+buttonText: { displayText: `${ᴋᴇɪ}help` },
+type: 1,
+},
+{
+buttonId: `${ᴋᴇɪ}faq`,
+buttonText: { displayText: `${ᴋᴇɪ}faq` },
+type: 1,
+},
+],
+headerType: 5,
+videoMessage: media.message.videoMessage,
+},
+MessageType.buttonsMessage,
+{
+quoted: chat,
+contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
+}
+)
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat));
+}
+} catch (Error) {
+return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat);
+}
 };
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 const Cortana_GIF_But = async (ӄʀǟӄɨռʐ, chat, ƈօʀȶǟռǟ, MainText, MediaUrl) => {
-  try {
-    if (ƈօʀȶǟռǟ.isReply) {
-      var աɦօֆɛռȶɦǟȶ = ƈօʀȶǟռǟ.sender;
-      var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ
-        .substring(0, աɦօֆɛռȶɦǟȶ.length - 15)
-        .replace(/[+ ]/g, "");
-      var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
-      var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
-      const media = await ӄʀǟӄɨռʐ.prepareMessage(
-        ƈօʀȶǟռǟ.chatId,
-        { url: MediaUrl },
-        MessageType.video,
-        { mimetype: `video/gif` }
-      );
-      return await ӄʀǟӄɨռʐ
-        .sendMessage(
-          ƈօʀȶǟռǟ.chatId,
-          {
-            contentText: MainText,
-            footerText: `⎿ ©𝐂𝐨𝐫𝐭𝐚𝐧𝐚 • 𝐄𝐧𝐕𝐞𝐫: ${vers.vers} ⏋`,
-            buttons: [
-              {
-                buttonId: `${ᴋᴇɪ}help`,
-                buttonText: { displayText: `${ᴋᴇɪ}help` },
-                type: 1,
-              },
-              {
-                buttonId: `${ᴋᴇɪ}faq`,
-                buttonText: { displayText: `${ᴋᴇɪ}faq` },
-                type: 1,
-              },
-            ],
-            headerType: 5,
-            videoMessage: media.message.videoMessage,
-          },
-          MessageType.buttonsMessage,
-          {
-            quoted: chat,
-            contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ, Receiver] },
-          }
-        )
-        .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat));
-    } else {
-      var աɦօֆɛռȶɦǟȶ = ƈօʀȶǟռǟ.sender;
-      var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ
-        .substring(0, աɦօֆɛռȶɦǟȶ.length - 15)
-        .replace(/[+ ]/g, "");
-      const defaultnm = ƈօʀȶǟռǟ.commandName;
-      const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
-      const media = await ӄʀǟӄɨռʐ.prepareMessage(
-        ƈօʀȶǟռǟ.chatId,
-        { url: MediaUrl },
-        MessageType.video,
-        { mimetype: `video/gif` }
-      );
-      return await ӄʀǟӄɨռʐ
-        .sendMessage(
-          ƈօʀȶǟռǟ.chatId,
-          {
-            contentText: MainText,
-            footerText: `⎿ ©𝐂𝐨𝐫𝐭𝐚𝐧𝐚 • 𝐄𝐧𝐕𝐞𝐫: ${vers.vers} ⏋`,
-            buttons: [
-              {
-                buttonId: `${ᴋᴇɪ}help`,
-                buttonText: { displayText: `${ᴋᴇɪ}help` },
-                type: 1,
-              },
-              {
-                buttonId: `${ᴋᴇɪ}faq`,
-                buttonText: { displayText: `${ᴋᴇɪ}faq` },
-                type: 1,
-              },
-            ],
-            headerType: 5,
-            videoMessage: media.message.videoMessage,
-          },
-          MessageType.buttonsMessage,
-          {
-            quoted: chat,
-            contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
-          }
-        )
-        .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat));
-    }
-  } catch (Error) {
-    return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat);
-  }
+try {
+if (ƈօʀȶǟռǟ.isReply) {
+var աɦօֆɛռȶɦǟȶ = ƈօʀȶǟռǟ.sender;
+var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ
+.substring(0, աɦօֆɛռȶɦǟȶ.length - 15)
+.replace(/[+ ]/g, "");
+var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
+var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
+const media = await ӄʀǟӄɨռʐ.prepareMessage(
+ƈօʀȶǟռǟ.chatId,
+{ url: MediaUrl },
+MessageType.video,
+{ mimetype: `video/gif` }
+);
+return await ӄʀǟӄɨռʐ
+.sendMessage(
+ƈօʀȶǟռǟ.chatId,
+{
+contentText: MainText,
+footerText: `⎿ ©𝐂𝐨𝐫𝐭𝐚𝐧𝐚 • 𝐄𝐧𝐕𝐞𝐫: ${vers.vers} ⏋`,
+buttons: [
+{
+buttonId: `${ᴋᴇɪ}help`,
+buttonText: { displayText: `${ᴋᴇɪ}help` },
+type: 1,
+},
+{
+buttonId: `${ᴋᴇɪ}faq`,
+buttonText: { displayText: `${ᴋᴇɪ}faq` },
+type: 1,
+},
+],
+headerType: 5,
+videoMessage: media.message.videoMessage,
+},
+MessageType.buttonsMessage,
+{
+quoted: chat,
+contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ, Receiver] },
+}
+)
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat));
+} else {
+var աɦօֆɛռȶɦǟȶ = ƈօʀȶǟռǟ.sender;
+var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ
+.substring(0, աɦօֆɛռȶɦǟȶ.length - 15)
+.replace(/[+ ]/g, "");
+const defaultnm = ƈօʀȶǟռǟ.commandName;
+const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
+const media = await ӄʀǟӄɨռʐ.prepareMessage(
+ƈօʀȶǟռǟ.chatId,
+{ url: MediaUrl },
+MessageType.video,
+{ mimetype: `video/gif` }
+);
+return await ӄʀǟӄɨռʐ
+.sendMessage(
+ƈօʀȶǟռǟ.chatId,
+{
+contentText: MainText,
+footerText: `⎿ ©𝐂𝐨𝐫𝐭𝐚𝐧𝐚 • 𝐄𝐧𝐕𝐞𝐫: ${vers.vers} ⏋`,
+buttons: [
+{
+buttonId: `${ᴋᴇɪ}help`,
+buttonText: { displayText: `${ᴋᴇɪ}help` },
+type: 1,
+},
+{
+buttonId: `${ᴋᴇɪ}faq`,
+buttonText: { displayText: `${ᴋᴇɪ}faq` },
+type: 1,
+},
+],
+headerType: 5,
+videoMessage: media.message.videoMessage,
+},
+MessageType.buttonsMessage,
+{
+quoted: chat,
+contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
+}
+)
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat));
+}
+} catch (Error) {
+return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat);
+}
 };
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 const Cortana_VideoAudio_But = async (
-  ӄʀǟӄɨռʐ,
-  chat,
-  ƈօʀȶǟռǟ,
-  MainText,
-  MediaUrl
+ӄʀǟӄɨռʐ,
+chat,
+ƈօʀȶǟռǟ,
+MainText,
+MediaUrl
 ) => {
-  try {
-    if (ƈօʀȶǟռǟ.isReply) {
-      var աɦօֆɛռȶɦǟȶ = ƈօʀȶǟռǟ.sender;
-      var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ
-        .substring(0, աɦօֆɛռȶɦǟȶ.length - 15)
-        .replace(/[+ ]/g, "");
-      var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
-      var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
-    } else {
-      var աɦօֆɛռȶɦǟȶ = ƈօʀȶǟռǟ.sender;
-      var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ
-        .substring(0, աɦօֆɛռȶɦǟȶ.length - 15)
-        .replace(/[+ ]/g, "");
-      const defaultnm = ƈօʀȶǟռǟ.commandName;
-      const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
-    }
-    const media = ӄʀǟӄɨռʐ.prepareMessage(
-      ƈօʀȶǟռǟ.chatId,
-      { url: MediaUrl },
-      MessageType.mp4Audio,
-      { mimetype: `audio/mp4` }
-    );
-    const buttonMessages = {
-      videoMessage: media.message.videoMessage,
-      contentText: MainText,
-      footerText: `⎿ ©𝐂𝐨𝐫𝐭𝐚𝐧𝐚 • 𝐄𝐧𝐕𝐞𝐫: ${vers.vers} ⏋`,
-      buttons: [
-        {
-          buttonId: `${ᴋᴇɪ}help`,
-          buttonText: { displayText: `${ᴋᴇɪ}help` },
-          type: 1,
-        },
-        {
-          buttonId: `${ᴋᴇɪ}faq`,
-          buttonText: { displayText: `${ᴋᴇɪ}faq` },
-          type: 1,
-        },
-      ],
-      headerType: 5,
-    };
-    ӄʀǟӄɨռʐ
-      .sendMessage(ƈօʀȶǟռǟ.chatId, buttonMessages, MessageType.buttonsMessage, {
-        mimetype: Mimetype.mp4Audio,
+try {
+if (ƈօʀȶǟռǟ.isReply) {
+var աɦօֆɛռȶɦǟȶ = ƈօʀȶǟռǟ.sender;
+var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ
+.substring(0, աɦօֆɛռȶɦǟȶ.length - 15)
+.replace(/[+ ]/g, "");
+var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
+var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
+} else {
+var աɦօֆɛռȶɦǟȶ = ƈօʀȶǟռǟ.sender;
+var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ
+.substring(0, աɦօֆɛռȶɦǟȶ.length - 15)
+.replace(/[+ ]/g, "");
+const defaultnm = ƈօʀȶǟռǟ.commandName;
+const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
+}
+const media = ӄʀǟӄɨռʐ.prepareMessage(
+ƈօʀȶǟռǟ.chatId,
+{ url: MediaUrl },
+MessageType.mp4Audio,
+{ mimetype: `audio/mp4` }
+);
+const buttonMessages = {
+videoMessage: media.message.videoMessage,
+contentText: MainText,
+footerText: `⎿ ©𝐂𝐨𝐫𝐭𝐚𝐧𝐚 • 𝐄𝐧𝐕𝐞𝐫: ${vers.vers} ⏋`,
+buttons: [
+{
+buttonId: `${ᴋᴇɪ}help`,
+buttonText: { displayText: `${ᴋᴇɪ}help` },
+type: 1,
+},
+{
+buttonId: `${ᴋᴇɪ}faq`,
+buttonText: { displayText: `${ᴋᴇɪ}faq` },
+type: 1,
+},
+],
+headerType: 5,
+};
+ӄʀǟӄɨռʐ
+.sendMessage(ƈօʀȶǟռǟ.chatId, buttonMessages, MessageType.buttonsMessage, {
+mimetype: Mimetype.mp4Audio,
 
-        quoted: chat,
-      })
-      .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat));
-  } catch (Error) {
-    return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat);
-  }
+quoted: chat,
+})
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat));
+} catch (Error) {
+return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat);
+}
 };
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 const Cortana_Location_But = async (
-  ӄʀǟӄɨռʐ,
-  chat,
-  ƈօʀȶǟռǟ,
-  MainText,
-  MediaUrl
+ӄʀǟӄɨռʐ,
+chat,
+ƈօʀȶǟռǟ,
+MainText,
+MediaUrl
 ) => {
-  try {
-    if (ƈօʀȶǟռǟ.isReply) {
-      var աɦօֆɛռȶɦǟȶ = ƈօʀȶǟռǟ.sender;
-      var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ
-        .substring(0, աɦօֆɛռȶɦǟȶ.length - 15)
-        .replace(/[+ ]/g, "");
-      var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
-      var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
-    } else {
-      var աɦօֆɛռȶɦǟȶ = ƈօʀȶǟռǟ.sender;
-      var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ
-        .substring(0, աɦօֆɛռȶɦǟȶ.length - 15)
-        .replace(/[+ ]/g, "");
-      const defaultnm = ƈօʀȶǟռǟ.commandName;
-      const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
-    }
-    const media = ӄʀǟӄɨռʐ.prepareMessage(
-      ƈօʀȶǟռǟ.chatId,
-      { url: MediaUrl },
-      MessageType.location
-    );
-    const buttonMessages = {
-      locationMessage: media.message.locationMessage,
-      contentText: MainText,
-      footerText: `⎿ ©𝐂𝐨𝐫𝐭𝐚𝐧𝐚 • 𝐄𝐧𝐕𝐞𝐫: ${vers.vers} ⏋`,
-      buttons: [
-        {
-          buttonId: `${ᴋᴇɪ}help`,
-          buttonText: { displayText: `${ᴋᴇɪ}help` },
-          type: 1,
-        },
-        {
-          buttonId: `${ᴋᴇɪ}faq`,
-          buttonText: { displayText: `${ᴋᴇɪ}faq` },
-          type: 1,
-        },
-      ],
-      headerType: 6,
-    };
-    ӄʀǟӄɨռʐ
-      .sendMessage(ƈօʀȶǟռǟ.chatId, buttonMessages, MessageType.buttonsMessage, {
-        quoted: chat,
-      })
-      .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat));
-  } catch (Error) {
-    return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat);
-  }
+try {
+if (ƈօʀȶǟռǟ.isReply) {
+var աɦօֆɛռȶɦǟȶ = ƈօʀȶǟռǟ.sender;
+var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ
+.substring(0, աɦօֆɛռȶɦǟȶ.length - 15)
+.replace(/[+ ]/g, "");
+var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
+var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
+} else {
+var աɦօֆɛռȶɦǟȶ = ƈօʀȶǟռǟ.sender;
+var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ
+.substring(0, աɦօֆɛռȶɦǟȶ.length - 15)
+.replace(/[+ ]/g, "");
+const defaultnm = ƈօʀȶǟռǟ.commandName;
+const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
+}
+const media = ӄʀǟӄɨռʐ.prepareMessage(
+ƈօʀȶǟռǟ.chatId,
+{ url: MediaUrl },
+MessageType.location
+);
+const buttonMessages = {
+locationMessage: media.message.locationMessage,
+contentText: MainText,
+footerText: `⎿ ©𝐂𝐨𝐫𝐭𝐚𝐧𝐚 • 𝐄𝐧𝐕𝐞𝐫: ${vers.vers} ⏋`,
+buttons: [
+{
+buttonId: `${ᴋᴇɪ}help`,
+buttonText: { displayText: `${ᴋᴇɪ}help` },
+type: 1,
+},
+{
+buttonId: `${ᴋᴇɪ}faq`,
+buttonText: { displayText: `${ᴋᴇɪ}faq` },
+type: 1,
+},
+],
+headerType: 6,
+};
+ӄʀǟӄɨռʐ
+.sendMessage(ƈօʀȶǟռǟ.chatId, buttonMessages, MessageType.buttonsMessage, {
+quoted: chat,
+})
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat));
+} catch (Error) {
+return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat);
+}
 };
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 module.exports = {
-  MTB: Cortana_Text_But,
-  MGB: Cortana_GIF_But,
-  MIB: Cortana_Image_But,
-  MVB: Cortana_Video_But,
-  MLB: Cortana_Location_But,
-  MAB: Cortana_VideoAudio_But,
+MTB: Cortana_Text_But,
+MGB: Cortana_GIF_But,
+MIB: Cortana_Image_But,
+MVB: Cortana_Video_But,
+MLB: Cortana_Location_But,
+MAB: Cortana_VideoAudio_But,
 };
 `|⬡════════════════════════════════════════════|                            |═══════════════════════════════════════════⬡|`;
 `|                                                                                                                        |`;
