@@ -136,6 +136,7 @@ MessageType.text
 await Tǟɮʟɛɨȶ(ꜱɪᴛʀᴀᴘ, commandUsage);
 ӄʀǟӄɨռʐ.on(`group-update`, async (update) => {
 try {
+try {
 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄʀǟӄɨռʐ.getProfilePicture(update.jid);
 } catch {
 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 =
@@ -220,9 +221,29 @@ caption: `*🛸Attention Here Everyone In the Group!🛸*
 })
 .catch((Error) => console.log(Error));
 }
+} catch (Error) {
+// var childs = require(`child_process`).exec(`python3 ᴄᴏʀᴛᴀɴᴀ.py`);
+// childs.stdout.pipe(process.stdout);
+// childs.on(`exit`, async function () {
+// process.exitCode = 1;
+// });
+console.log(`Error: ${Error}`);
+const { spawn } = require("child_process");
+const child = spawn("python3", ["ᴄᴏʀᴛᴀɴᴀ.py"], { shell: true });
+child.stdout.on("data", (data) => {
+console.log(`stdout: ${data}`);
+});
+child.stderr.on("data", (data) => {
+console.error(`stderr: ${data}`);
+});
+child.on("close", (code) => {
+console.log(`child process exited with code ${code}`);
+});
+}
 });
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 ӄʀǟӄɨռʐ.on(`group-participants-update`, async (update) => {
+try {
 var GroupID = update.jid;
 const GroupMemData = await ӄʀǟӄɨռʐ.groupMetadata(update.jid);
 const GroupMemG = GroupMemData.participants.length;
@@ -318,9 +339,29 @@ userWel.message
 );
 }
 if (update.action === `remove`) return;
+} catch (Error) {
+// var childs = require(`child_process`).exec(`python3 ᴄᴏʀᴛᴀɴᴀ.py`);
+// childs.stdout.pipe(process.stdout);
+// childs.on(`exit`, async function () {
+// process.exitCode = 1;
+// });
+console.log(`Error: ${Error}`);
+const { spawn } = require("child_process");
+const child = spawn("python3", ["ᴄᴏʀᴛᴀɴᴀ.py"], { shell: true });
+child.stdout.on("data", (data) => {
+console.log(`stdout: ${data}`);
+});
+child.stderr.on("data", (data) => {
+console.error(`stderr: ${data}`);
+});
+child.on("close", (code) => {
+console.log(`child process exited with code ${code}`);
+});
+}
 });
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 ӄʀǟӄɨռʐ.on(`chat-update`, async (chat) => {
+try {
 try {
 const ᴍɪᴢᴜᴋɪɢɪᴛ = require(`simple-git`)();
 await ᴍɪᴢᴜᴋɪɢɪᴛ.fetch();
@@ -749,6 +790,25 @@ Timers
 );
 }
 );
+} catch (Error) {
+// var childs = require(`child_process`).exec(`python3 ᴄᴏʀᴛᴀɴᴀ.py`);
+// childs.stdout.pipe(process.stdout);
+// childs.on(`exit`, async function () {
+// process.exitCode = 1;
+// });
+console.log(`Error: ${Error}`);
+const { spawn } = require("child_process");
+const child = spawn("python3", ["ᴄᴏʀᴛᴀɴᴀ.py"], { shell: true });
+child.stdout.on("data", (data) => {
+console.log(`stdout: ${data}`);
+});
+child.stderr.on("data", (data) => {
+console.error(`stderr: ${data}`);
+});
+child.on("close", (code) => {
+console.log(`child process exited with code ${code}`);
+});
+}
 });
 }
 module.exports = { ƈօʀȶǟռǟ, ӄʀǟӄɨռʐ };
