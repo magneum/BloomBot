@@ -54,7 +54,29 @@ await ӄʀǟӄɨռʐ.sendMessage(
 contentText: `🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ},
 
 ❌ 𝗘𝗿𝗿𝗼𝗿: _Api Timeout.Try Again Later!_`,
-footerText: `⎿ ©️ 𝐂𝐨𝐫𝐭𝐚𝐧𝐚 𝐀𝐈 ⏋`,
+footerText: `⎿ © 𝐂𝐨𝐫𝐭𝐚𝐧𝐚 𝐀𝐈 ⏋`,
+buttons: [
+{
+buttonId: `${ᴋᴇɪ}help`,
+buttonText: { displayText: `${ᴋᴇɪ}help` },
+type: 1,
+},
+],
+headerType: 1,
+},
+MessageType.buttonsMessage,
+{
+quoted: chat,
+contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
+}
+);
+await ӄʀǟӄɨռʐ.sendMessage(
+ƈօʀȶǟռǟ.Myself,
+{
+contentText: `🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ},
+
+❌ 𝗘𝗿𝗿𝗼𝗿: ${Error}_`,
+footerText: `⎿ © 𝐂𝐨𝐫𝐭𝐚𝐧𝐚 𝐀𝐈 ⏋`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,

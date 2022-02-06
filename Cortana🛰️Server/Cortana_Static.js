@@ -37,7 +37,7 @@ return await ӄʀǟӄɨռʐ
 mimetype: `video/gif`,
 quoted: chat,
 caption:
-`⎿ ©️ 𝐂𝐨𝐫𝐭𝐚𝐧𝐚 𝐀𝐈 ⏋\n\n` +
+`⎿ © 𝐂𝐨𝐫𝐭𝐚𝐧𝐚 𝐀𝐈 ⏋\n\n` +
 MainText,
 contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ, Receiver] },
 })
@@ -52,7 +52,7 @@ return await ӄʀǟӄɨռʐ
 mimetype: `video/gif`,
 quoted: chat,
 caption:
-`⎿ ©️ 𝐂𝐨𝐫𝐭𝐚𝐧𝐚 𝐀𝐈 ⏋\n\n` +
+`⎿ © 𝐂𝐨𝐫𝐭𝐚𝐧𝐚 𝐀𝐈 ⏋\n\n` +
 MainText,
 contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
 })

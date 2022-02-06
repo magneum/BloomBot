@@ -102,7 +102,7 @@ contentText: `🪶 𝐇𝐞𝐲: •@${քɛʀֆօռɢօȶռʊʍ},
 ║💞𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${groupData.participants.length}
 ║🍰 𝐆𝐫𝐨𝐮𝐩: https://chat.whatsapp.com/${code}
 ╚════════════╝`,
-footerText: `⎿ ©️ 𝐂𝐨𝐫𝐭𝐚𝐧𝐚 𝐀𝐈 ⏋`,
+footerText: `⎿ © 𝐂𝐨𝐫𝐭𝐚𝐧𝐚 𝐀𝐈 ⏋`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
@@ -138,7 +138,7 @@ contentText: `🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ},
 ║💞𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${groupData.participants.length}
 ║🍰 𝐆𝐫𝐨𝐮𝐩: https://chat.whatsapp.com/${code}
 ╚════════════╝`,
-footerText: `⎿ ©️ 𝐂𝐨𝐫𝐭𝐚𝐧𝐚 𝐀𝐈 ⏋`,
+footerText: `⎿ © 𝐂𝐨𝐫𝐭𝐚𝐧𝐚 𝐀𝐈 ⏋`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
