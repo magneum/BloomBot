@@ -31,7 +31,7 @@ var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ
 .replace(/[+ ]/g, "");
 const defaultnm = ƈօʀȶǟռǟ.commandName;
 const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
-var FFmpegFile = `./Cortana☕Shop/${Date.now().toString()}_${
+var FFmpegFile = `./Cortana☕Shop/${Date.now().replace(/[^0-9]/g, "")}_${
 chat.key.id
 }.mp3`;
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;

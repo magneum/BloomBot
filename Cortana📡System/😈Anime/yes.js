@@ -37,8 +37,8 @@ await hold.Hold(ƈօʀȶǟռǟ);
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 let FinalLink;
 var AnimeLink = await anime.yes();
-const GotFile = `./${chat.key.id}${Date.now()}.gif`;
-const GiveFile = `./${chat.key.id}${Date.now()}.mp4`;
+const GotFile = `./${chat.key.id}${Date.now().replace(/[^0-9]/g, "")}.gif`;
+const GiveFile = `./${chat.key.id}${Date.now().replace(/[^0-9]/g, "")}.mp4`;
 if (!AnimeLink.endsWith(`.gif`) && !AnimeLink.endsWith(`.mp4`)) {
 const anime2 = require(`anime-actions`);
 FinalLink = await anime2.yes();
