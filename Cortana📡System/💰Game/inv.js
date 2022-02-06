@@ -140,7 +140,7 @@ chat,
 ╚══◇║🤠𝗔𝗰𝗰𝗼𝘂𝗻𝘁: @${աɦօֆɛռȶɦǟȶռʊʍ}, 
 ╔══◇║🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_  
 ║
-║🔒 *padlock:* _${userRob.padlock}_
+║🔒 *lock:* _${userRob.padlock}_
 ║⚔️ *sword:* _${userRob.sword}_
 ║💻 *laptop:* _${userRob.laptop}_
 ║🔮 *charm:* _${userRob.charm}_
