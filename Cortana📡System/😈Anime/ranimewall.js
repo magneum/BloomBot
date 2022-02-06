@@ -43,7 +43,7 @@ ID: ƈօʀȶǟռǟ.sender,
 Badge: `🧵ʙᴀꜱɪᴄ-10ᴄᴏᴍᴍᴀɴᴅꜱ`,
 value: `True`,
 Limits: 10,
-CurrentLimitTime: Date.now().replace(/[^0-9]/g, ""),
+CurrentLimitTime: Date.now(),
 PermanentLimitTime: 43200000,
 });
 await newUser
@@ -66,7 +66,7 @@ chat,
 console.log(userBadge);
 var clock =
 userBadge.PermanentLimitTime -
-(Date.now().replace(/[^0-9]/g, "") - userBadge.CurrentLimitTime);
+(Date.now() - userBadge.CurrentLimitTime);
 if (clock > 0 && userBadge.Limits == 0) {
 userBadge.value = `False`;
 await userBadge
@@ -96,7 +96,7 @@ userBadge.Limits = 80;
 } else if (userBadge.Badge === `💎ᴅɪᴀᴍᴏɴᴅ-100ᴄᴏᴍᴍᴀɴᴅꜱ`) {
 userBadge.Limits = 100;
 }
-userBadge.CurrentLimitTime = Date.now().replace(/[^0-9]/g, "");
+userBadge.CurrentLimitTime = Date.now();
 userBadge.value = `True`;
 await userBadge
 .save()
@@ -111,7 +111,7 @@ console.log(userBadge);
 if (!ƈօʀȶǟռǟ.fromMe && userBadge.value === "False") {
 let time = ms(
 userBadge.PermanentLimitTime -
-(Date.now().replace(/[^0-9]/g, "") - userBadge.CurrentLimitTime)
+(Date.now() - userBadge.CurrentLimitTime)
 );
 return Cortana_Buttons.MTB(
 ӄʀǟӄɨռʐ,

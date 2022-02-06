@@ -22,7 +22,7 @@ var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ
 .substring(0, աɦօֆɛռȶɦǟȶ.length - 15)
 .replace(/[+ ]/g, "");
 const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
-var FFmpegFile = `./Cortana☕Shop/${chat.key.id}${Date.now().replace(/[^0-9]/g, "")}.mp4`;
+var FFmpegFile = `./Cortana☕Shop/${chat.key.id}${Date.now()}.mp4`;
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 await Cortana_Buttons.MTB(
 ӄʀǟӄɨռʐ,
