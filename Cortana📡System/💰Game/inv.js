@@ -10,7 +10,6 @@ const Robbery = require(`../../Cortana🍃Goose/robbery`);
 const _𝔏𝔞𝔟_ = require(`../../Cortana🛰️Server/_𝔏𝔞𝔟_`);
 const ꜰᴜᴄᴋ = require(`../../Cortana🛰️Server/oShit`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
-const vers = require(`../../package.json`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 const ms = require(`parse-ms`);
 const fs = require(`fs`);
@@ -30,16 +29,14 @@ var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ
 const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 if (!ƈօʀȶǟռǟ.isGroup) {
-return Cortana_Buttons.MIB(
+return Cortana_Buttons.MTB(
 ӄʀǟӄɨռʐ,
 chat,
 ƈօʀȶǟռǟ,
 `🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ}, 
-
 ╔════◇🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧 
 ║💡 _This Command is Only For Groups!_
-╚════════════╝`,
-"./Cortana☣️Reactor/Cortana_Univ.png"
+╚════════════╝`
 );
 }
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
@@ -58,7 +55,7 @@ if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat
 if (!userRob) {
 var newUser = new Robbery({
 ID: Receiver,
-lock: 0,
+padlock: 0,
 sword: 0,
 laptop: 0,
 charm: 0,
@@ -73,7 +70,6 @@ return Cortana_Buttons.MIB(
 chat,
 ƈօʀȶǟռǟ,
 `*🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ},*
-
 ╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_  
 ║🤖 *User Added To Database For First Time!*
 ║🦋 _Try ${ᴋᴇɪ}${defaultnm} Again!_
@@ -81,146 +77,26 @@ chat,
 `./Cortana☣️Reactor/Cortana_Mongo.png`
 );
 } else {
-return Cortana_Buttons.MIB(
+return Cortana_Buttons.MTB(
 ӄʀǟӄɨռʐ,
 chat,
 ƈօʀȶǟռǟ,
 `🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ}, 
-
 ╔◇══════════════◇╗
 ┊   💼𝐈𝐧𝐯𝐞𝐧𝐭𝐨𝐫𝐲💼
 ┊
 ╚══◇║🤠𝗔𝗰𝗰𝗼𝘂𝗻𝘁: @${քɛʀֆօռɢօȶռʊʍ}
 ╔══◇║🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_  
 ║
-║🔒 *lock:* _${userRob.padlock}_
+║🔒 *padlock:* _${userRob.padlock}_
 ║⚔️ *sword:* _${userRob.sword}_
 ║💻 *laptop:* _${userRob.laptop}_
 ║🔮 *charm:* _${userRob.charm}_
-╚════════════╝`,
-"./Cortana☣️Reactor/Cortana_Univ.png"
+╚════════════╝`
 );
 }
 }
 );
-} else if (Needs[0] && Needs[0].startsWith("@")) {
-var TagPerson = Needs[0].replace(/[^0-9]/g, "");
-var TagMention = TagPerson + "@s.whatsapp.net";
-await Robbery.findOne(
-{
-ID: TagMention,
-},
-async (Error, userRob) => {
-if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat);
-if (!userRob) {
-var newUser = new Robbery({
-ID: TagMention,
-lock: 0,
-sword: 0,
-laptop: 0,
-charm: 0,
-CurrentRobberyTime: 0,
-PermanentRobberyTime: 480000,
-});
-await newUser
-.save()
-.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat));
-
-const media = await ӄʀǟӄɨռʐ.prepareMessage(
-ƈօʀȶǟռǟ.chatId,
-{ url: "./Cortana☣️Reactor/Cortana_Mongo.png" },
-MessageType.image,
-{ mimetype: Mimetype.png }
-);
-return await ӄʀǟӄɨռʐ
-.sendMessage(
-ƈօʀȶǟռǟ.chatId,
-{
-contentText: `*🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ},*
-
-╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_  
-║🤖 *@${TagPerson} Added To Database For First Time!*
-║🦋 _Try ${ᴋᴇɪ}${defaultnm} Again!_
-╚════════════╝`,
-footerText: `⎿ ©𝐂𝐨𝐫𝐭𝐚𝐧𝐚 • 𝐄𝐧𝐕𝐞𝐫: ${vers.vers} ⏋`,
-buttons: [
-{
-buttonId: `${ᴋᴇɪ}help`,
-buttonText: { displayText: `${ᴋᴇɪ}help` },
-type: 1,
-},
-{
-buttonId: `${ᴋᴇɪ}faq`,
-buttonText: { displayText: `${ᴋᴇɪ}faq` },
-type: 1,
-},
-],
-headerType: 4,
-imageMessage: media.message.imageMessage,
-},
-MessageType.buttonsMessage,
-{
-quoted: chat,
-contextInfo: {
-mentionedJid: [աɦօֆɛռȶɦǟȶ, TagMention],
-},
-}
-)
-.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat));
-} else {
-const media = await ӄʀǟӄɨռʐ.prepareMessage(
-ƈօʀȶǟռǟ.chatId,
-{ url: "./Cortana☣️Reactor/Cortana_Univ.png" },
-MessageType.image,
-{ mimetype: Mimetype.png }
-);
-return await ӄʀǟӄɨռʐ
-.sendMessage(
-ƈօʀȶǟռǟ.chatId,
-{
-contentText: `🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ}, 
-
-╔◇══════════════◇╗
-┊   💼𝐈𝐧𝐯𝐞𝐧𝐭𝐨𝐫𝐲💼
-┊
-╚══◇║🤠𝗔𝗰𝗰𝗼𝘂𝗻𝘁: @${քɛʀֆօռɢօȶռʊʍ}
-╔══◇║🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_  
-║
-║🔒 *lock:* _${userRob.padlock}_
-║⚔️ *sword:* _${userRob.sword}_
-║💻 *laptop:* _${userRob.laptop}_
-║🔮 *charm:* _${userRob.charm}_
-╚════════════╝`,
-footerText: `⎿ ©𝐂𝐨𝐫𝐭𝐚𝐧𝐚 • 𝐄𝐧𝐕𝐞𝐫: ${vers.vers} ⏋`,
-buttons: [
-{
-buttonId: `${ᴋᴇɪ}help`,
-buttonText: { displayText: `${ᴋᴇɪ}help` },
-type: 1,
-},
-{
-buttonId: `${ᴋᴇɪ}faq`,
-buttonText: { displayText: `${ᴋᴇɪ}faq` },
-type: 1,
-},
-],
-headerType: 4,
-imageMessage: media.message.imageMessage,
-},
-MessageType.buttonsMessage,
-{
-quoted: chat,
-contextInfo: {
-mentionedJid: [աɦօֆɛռȶɦǟȶ, TagMention],
-},
-}
-)
-.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat));
-}
-}
-);
-
-`|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 } else {
 await Robbery.findOne(
 {
@@ -231,7 +107,7 @@ if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat
 if (!userRob) {
 var newUser = new Robbery({
 ID: աɦօֆɛռȶɦǟȶ,
-lock: 0,
+padlock: 0,
 sword: 0,
 laptop: 0,
 charm: 0,
@@ -246,7 +122,6 @@ return Cortana_Buttons.MIB(
 chat,
 ƈօʀȶǟռǟ,
 `*🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ},*
-
 ╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_  
 ║🤖 *User Added To Database For First Time!*
 ║🦋 _Try ${ᴋᴇɪ}${defaultnm} Again!_
@@ -254,24 +129,22 @@ chat,
 `./Cortana☣️Reactor/Cortana_Mongo.png`
 );
 } else {
-return Cortana_Buttons.MIB(
+return Cortana_Buttons.MTB(
 ӄʀǟӄɨռʐ,
 chat,
 ƈօʀȶǟռǟ,
 `🪶 𝐇𝐞𝐲:
-
 ╔◇══════════════◇╗
 ┊   💼𝐈𝐧𝐯𝐞𝐧𝐭𝐨𝐫𝐲💼
 ┊
 ╚══◇║🤠𝗔𝗰𝗰𝗼𝘂𝗻𝘁: @${աɦօֆɛռȶɦǟȶռʊʍ}, 
 ╔══◇║🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_  
 ║
-║🔒 *lock:* _${userRob.padlock}_
+║🔒 *padlock:* _${userRob.padlock}_
 ║⚔️ *sword:* _${userRob.sword}_
 ║💻 *laptop:* _${userRob.laptop}_
 ║🔮 *charm:* _${userRob.charm}_
-╚════════════╝`,
-"./Cortana☣️Reactor/Cortana_Univ.png"
+╚════════════╝`
 );
 }
 }
