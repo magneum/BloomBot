@@ -117,7 +117,7 @@ MessageType.text
 .catch((Error) => console.log(Error));
 await ӄʀǟӄɨռʐ
 .sendMessage(
-"120363039223842047@g.us",
+"120363024871653603@g.us",
 `(𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈 by 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
 
 ╔════◇🚀 *BACK ONLINE*
