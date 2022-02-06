@@ -116,7 +116,8 @@ try {
 try {
 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄʀǟӄɨռʐ.getProfilePicture(update.jid);
 } catch {
-𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = "https://i.postimg.cc/wxWL9G8F/no-profile-picture-300x216.png";
+𝕻𝕻𝖑𝖊𝖙𝖊𝖗 =
+"https://i.postimg.cc/wxWL9G8F/no-profile-picture-300x216.png";
 }
 const groupupdateID = await ӄʀǟӄɨռʐ.groupMetadata(update.jid);
 if (update.announce == `false`) {
@@ -203,6 +204,11 @@ var childs = require(`child_process`).exec(`python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`
 childs.stdout.pipe(process.stdout);
 childs.on(`exit`, async function () {
 process.exitCode = 1;
+var childs = require(`child_process`).exec(`npm install --force`);
+childs.stdout.pipe(process.stdout);
+childs.on(`exit`, async function () {
+process.exitCode = 1;
+});
 });
 }
 });
@@ -305,6 +311,11 @@ var childs = require(`child_process`).exec(`python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`
 childs.stdout.pipe(process.stdout);
 childs.on(`exit`, async function () {
 process.exitCode = 1;
+var childs = require(`child_process`).exec(`npm install --force`);
+childs.stdout.pipe(process.stdout);
+childs.on(`exit`, async function () {
+process.exitCode = 1;
+});
 });
 }
 });
@@ -388,7 +399,12 @@ if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat
 if (BanPerson) return;
 if (BanGroup && !ƈօʀȶǟռǟ.fromMe && !ƈօʀȶǟռǟ.isSenderDev) return;
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-if (!BanPerson && !BanGroup && ƈօʀȶǟռǟ.isGroup && !ƈօʀȶǟռǟ.fromMe) {
+if (
+!BanPerson &&
+!BanGroup &&
+ƈօʀȶǟռǟ.isGroup &&
+!ƈօʀȶǟռǟ.fromMe
+) {
 Ranker.findOne(
 {
 serverID: ƈօʀȶǟռǟ.chatId,
@@ -583,17 +599,16 @@ console.log(chat);
 console.log(
 Kolor.green(
 "⬡═════════════|🍃𝐂𝐨𝐫𝐭𝐚𝐧𝐚> " +
-ƈօʀȶǟռǟ.commandName.toUpperCase() +
-" <𝐕𝐞𝐫𝐢𝐟𝐢𝐞𝐝 𝐅𝐢𝐥𝐞|═════════════"
+ƈօʀȶǟռǟ.commandName.toUpperCase()
 )
 );
 const ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ = ꜱɪᴛʀᴀᴘ.get(ƈօʀȶǟռǟ.commandName);
 var Needs = ƈօʀȶǟռǟ.body.trim().split(/\s+/).slice(1);
 if (!ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ) {
-//                 await ӄʀǟӄɨռʐ
-//                   .sendMessage(
-//                     ƈօʀȶǟռǟ.chatId,
-//                     `🪶 𝐇𝐞𝐲:: @${աɦօֆɛռȶɦǟȶռʊʍ},
+// await ӄʀǟӄɨռʐ
+// .sendMessage(
+// ƈօʀȶǟռǟ.chatId,
+// `🪶 𝐇𝐞𝐲:: @${աɦօֆɛռȶɦǟȶռʊʍ},
 
 // ╔════◇🔒 *LOCKED*
 // ║💡 Taken Down For Fixing Bugs_
@@ -602,14 +617,14 @@ if (!ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ) {
 // ║📌 *Antilink?* ON
 // ║📌 *Autorank?* OFF
 // ╚════════════╝`,
-//                     MessageType.text,
-//                     {
-//                       quoted: chat,
-//                       contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
-//                     }
-//                   )
-//                   .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat));
-//                 return;
+// MessageType.text,
+// {
+// quoted: chat,
+// contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
+// }
+// )
+// .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat));
+// return;
 return await Cortana_Buttons.MTB(
 ӄʀǟӄɨռʐ,
 chat,
@@ -621,10 +636,10 @@ chat,
 ╚════════════╝`
 );
 } else {
-//                 await ӄʀǟӄɨռʐ
-//                   .sendMessage(
-//                     ƈօʀȶǟռǟ.chatId,
-//                     `🪶 𝐇𝐞𝐲:: @${աɦօֆɛռȶɦǟȶռʊʍ},
+// await ӄʀǟӄɨռʐ
+// .sendMessage(
+// ƈօʀȶǟռǟ.chatId,
+// `🪶 𝐇𝐞𝐲:: @${աɦօֆɛռȶɦǟȶռʊʍ},
 
 // ╔════◇🔒 *LOCKED*
 // ║💡 Taken Down For Fixing Bugs_
@@ -633,14 +648,14 @@ chat,
 // ║📌 *Antilink?* ON
 // ║📌 *Autorank?* OFF
 // ╚════════════╝`,
-//                     MessageType.text,
-//                     {
-//                       quoted: chat,
-//                       contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
-//                     }
-//                   )
-//                   .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat));
-//                 return;
+// MessageType.text,
+// {
+// quoted: chat,
+// contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
+// }
+// )
+// .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat));
+// return;
 return ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ.handle(
 ӄʀǟӄɨռʐ,
 chat,
@@ -663,6 +678,11 @@ var childs = require(`child_process`).exec(`python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`
 childs.stdout.pipe(process.stdout);
 childs.on(`exit`, async function () {
 process.exitCode = 1;
+var childs = require(`child_process`).exec(`npm install --force`);
+childs.stdout.pipe(process.stdout);
+childs.on(`exit`, async function () {
+process.exitCode = 1;
+});
 });
 }
 });
