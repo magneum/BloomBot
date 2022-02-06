@@ -226,7 +226,7 @@ console.log(Error);
 var childs = require(`child_process`).exec(`python3 ᴄᴏʀᴛᴀɴᴀ.py`);
 childs.stdout.pipe(process.stdout);
 childs.on(`exit`, async function () {
-process.exit();
+process.exitCode = 1;
 });
 }
 });
@@ -333,7 +333,7 @@ console.log(Error);
 var childs = require(`child_process`).exec(`python3 ᴄᴏʀᴛᴀɴᴀ.py`);
 childs.stdout.pipe(process.stdout);
 childs.on(`exit`, async function () {
-process.exit();
+process.exitCode = 1;
 });
 }
 });
@@ -379,7 +379,7 @@ var childs = require(`child_process`).exec(
 );
 childs.stdout.pipe(process.stdout);
 childs.on(`exit`, async function () {
-process.exit();
+process.exitCode = 1;
 });
 }
 });
@@ -773,7 +773,7 @@ console.log(Error);
 var childs = require(`child_process`).exec(`python3 ᴄᴏʀᴛᴀɴᴀ.py`);
 childs.stdout.pipe(process.stdout);
 childs.on(`exit`, async function () {
-process.exit();
+process.exitCode = 1;
 });
 }
 });
