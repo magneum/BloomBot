@@ -23,6 +23,8 @@ RUN hash -r
 RUN git clone https://github.com/Krakinz/Cortana.git 
 RUN cd Cortana
 WORKDIR /Cortana
+RUN pip install -r Cortana☣️Reactor/ӄʀǟӄɨռʐ🐙ʟǟɮ.txt
+RUN npm install --force
 # WORKDIR /
 # COPY . /Cortana
 # WORKDIR /Cortana
