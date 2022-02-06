@@ -610,13 +610,13 @@ async (Error, cEconomy) => {
 if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat);
 Economy.findOne(
 {
-ID: "@" + TagMention,
+ID: TagMention,
 },
 async (Error, vEconomy) => {
 if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat);
 if (!vEconomy) {
 var newUser = new Economy({
-ID: "@" + TagMention,
+ID: TagMention,
 money: 0,
 daily: 0,
 timeout: 86400000,
@@ -811,14 +811,14 @@ if (Error)
 return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat);
 Robbery.findOne(
 {
-ID: "@" + TagMention,
+ID: TagMention,
 },
 async (Error, victim) => {
 if (Error)
 return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat);
 if (!victim) {
 var newUser = new Robbery({
-ID: "@" + TagMention,
+ID: TagMention,
 padlock: 0,
 sword: 0,
 laptop: 0,
