@@ -84,7 +84,7 @@ await ӄʀǟӄɨռʐ
 .sendMessage(
 ƈօʀȶǟռǟ.chatId,
 {
-url: "./Cortana☣️Reactor/Cortana_Rank_Catelog.png",
+url: "https://i.postimg.cc/MHZv3FkY/Cortana-Rank-Catelog.png",
 },
 MessageType.image,
 {

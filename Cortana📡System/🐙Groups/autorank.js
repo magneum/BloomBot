@@ -100,7 +100,7 @@ await newServer
 const media = await ӄʀǟӄɨռʐ.prepareMessage(
 ƈօʀȶǟռǟ.chatId,
 {
-url: "https://i.postimg.cc/GtzHrQNr/Cortana-Rank-Catelog.png",
+url: "https://i.postimg.cc/MHZv3FkY/Cortana-Rank-Catelog.png",
 },
 MessageType.image,
 {
