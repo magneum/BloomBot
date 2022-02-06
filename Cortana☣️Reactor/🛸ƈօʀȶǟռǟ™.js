@@ -4,7 +4,6 @@
 `|                                                                                                                        |`;
 `|⬡════════════════════════════════════════════|                            |═══════════════════════════════════════════⬡|`;
 (async () => {
-try {
 const { ƈօʀȶǟռǟ, ӄʀǟӄɨռʐ } = require(`../Cortana🛰️Server/🛸ƈօʀȶǟռǟ™`);
 const _𝔏𝔞𝔟_ = require(`../Cortana🛰️Server/_𝔏𝔞𝔟_`);
 const ƈօʀȶǟռǟgoose = require("mongoose");
@@ -13,9 +12,7 @@ const Kolor = require(`chalk`);
 try {
 const ᴍɪᴢᴜᴋɪɢɪᴛ = require(`simple-git`)();
 await ᴍɪᴢᴜᴋɪɢɪᴛ.fetch();
-var ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ = await ᴍɪᴢᴜᴋɪɢɪᴛ.log([
-`KrakinzLab..origin/KrakinzLab`,
-]);
+var ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ = await ᴍɪᴢᴜᴋɪɢɪᴛ.log([`KrakinzLab..origin/KrakinzLab`]);
 if (ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total != 0) {
 require(`simple-git`)()
 .exec(async () => {
@@ -44,9 +41,7 @@ Error
 );
 }
 } else if (update && update.summary.changes) {
-var childs = require(`child_process`).exec(
-`python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`
-);
+var childs = require(`child_process`).exec(`python3 Cortana.py`);
 childs.stdout.pipe(process.stdout);
 childs.on(`exit`, async function () {
 process.exitCode = 1;
@@ -73,22 +68,15 @@ process.exit(0);
 });
 console.log(Kolor.green(`💡 𝐈𝐧𝐟𝐨⬰ CortanaGoose Connected!`));
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
+try {
 ӄʀǟӄɨռʐ.logger.level = "error";
-await ƈօʀȶǟռǟ().catch((Error) => {
-console.log(Error);
-process.exit(0);
-});
+ƈօʀȶǟռǟ();
 } catch (Error) {
 console.log(Error);
-var childs = require(`child_process`).exec(`python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`);
+var childs = require(`child_process`).exec(`python3 Cortana.py`);
 childs.stdout.pipe(process.stdout);
 childs.on(`exit`, async function () {
 process.exitCode = 1;
-var childs = require(`child_process`).exec(`npm install --force`);
-childs.stdout.pipe(process.stdout);
-childs.on(`exit`, async function () {
-process.exitCode = 1;
-});
 });
 }
 })();

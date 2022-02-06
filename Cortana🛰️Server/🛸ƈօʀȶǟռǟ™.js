@@ -82,15 +82,6 @@ console.log(Kolor.yellow(`💡 𝐈𝐧𝐟𝐨⬰ Connecting With User's Whatsa
 });
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 ӄʀǟӄɨռʐ.on(`open`, async () => {
-console.log(
-Kolor.green(`
-|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🛸𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈(𝐜) |════════════════════════════════════════════⬡|
-ɪꜱ ᴀ ᴡʜᴀᴛꜱᴀᴘᴘ ᴍᴜʟᴛɪᴘᴜʀᴘᴏꜱᴇ-ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ ᴍᴏᴅᴇʀᴀᴛɪᴏɴ,ᴀᴜᴛᴏᴍᴀᴛɪᴏɴ ᴀɴᴅ 100+ ᴄᴏᴍᴍᴀɴᴅꜱ!
-ᴜꜱᴇ ꜱᴀᴋᴜʀᴀ ɪɴ ʙᴏᴛʜ ᴘᴜʙʟɪᴄ-ɢʀᴏᴜᴘꜱ ᴀɴᴅ ᴘʀɪᴠᴀᴛᴇ.
-ꜱᴏ ᴍᴀɴʏ ᴄᴏᴍᴍᴀɴᴅꜱ ᴛʜᴀᴛ ᴡɪʟʟ ʙʟᴏᴡ ᴜᴘ ᴛʜᴇ ᴇᴠᴇʀʏ-ᴅᴀʏ ᴜꜱᴇ ᴏꜰ ʙᴏʀɪɴɢ ᴡʜᴀᴛꜱᴀᴘᴘ.
-ꜱᴀᴋᴜʀᴀ ɪꜱ ᴡʀɪᴛᴛᴇɴ ɪɴ [ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ & ᴘʏᴛʜᴏɴ] ᴀɴᴅ ɪꜱ ʙʏ ꜰᴀʀ ᴛʜᴇ ᴏɴᴇ ᴏꜰ ᴍᴏꜱᴛ ᴀᴅᴠᴀɴᴄᴇ ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ.
-|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🛸𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈(𝐜) |════════════════════════════════════════════⬡|`)
-);
 // await ӄʀǟӄɨռʐ
 // .sendMessage(
 // "120363039223842047@g.us",
@@ -232,15 +223,10 @@ caption: `*🛸Attention Here Everyone In the Group!🛸*
 }
 } catch (Error) {
 console.log(Error);
-var childs = require(`child_process`).exec(`python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`);
+var childs = require(`child_process`).exec(`python3 Cortana.py`);
 childs.stdout.pipe(process.stdout);
 childs.on(`exit`, async function () {
 process.exitCode = 1;
-var childs = require(`child_process`).exec(`npm install --force`);
-childs.stdout.pipe(process.stdout);
-childs.on(`exit`, async function () {
-process.exitCode = 1;
-});
 });
 }
 });
@@ -344,15 +330,10 @@ userWel.message
 if (update.action === `remove`) return;
 } catch (Error) {
 console.log(Error);
-var childs = require(`child_process`).exec(`python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`);
+var childs = require(`child_process`).exec(`python3 Cortana.py`);
 childs.stdout.pipe(process.stdout);
 childs.on(`exit`, async function () {
 process.exitCode = 1;
-var childs = require(`child_process`).exec(`npm install --force`);
-childs.stdout.pipe(process.stdout);
-childs.on(`exit`, async function () {
-process.exitCode = 1;
-});
 });
 }
 });
@@ -789,15 +770,10 @@ Timers
 );
 } catch (Error) {
 console.log(Error);
-var childs = require(`child_process`).exec(`python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`);
+var childs = require(`child_process`).exec(`python3 Cortana.py`);
 childs.stdout.pipe(process.stdout);
 childs.on(`exit`, async function () {
 process.exitCode = 1;
-var childs = require(`child_process`).exec(`npm install --force`);
-childs.stdout.pipe(process.stdout);
-childs.on(`exit`, async function () {
-process.exitCode = 1;
-});
 });
 }
 });
