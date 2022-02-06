@@ -101,6 +101,13 @@ chat,
 if (ƈօʀȶǟռǟ.isReply) {
 var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
 var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
+function isOdd(num) {
+if (num % 2 == 0) return false;
+else if (num % 2 == 1) return true;
+else if (num % 3 == 0) return false;
+else if (num % 4 == 1) return true;
+else return false;
+}
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 if (Receiver === աɦօֆɛռȶɦǟȶ) {
 return Cortana_Buttons.MTB(
@@ -346,9 +353,7 @@ chat,
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 if (victim.padlock > 0) {
 if (cEconomy.money < 1000) {
-(culprit.PermanentRobberyTime = 480000),
-(vEconomy.money =
-vEconomy.money + cEconomy.money);
+vEconomy.money = vEconomy.money + cEconomy.money;
 cEconomy.money = 0;
 } else {
 vEconomy.money = vEconomy.money + MoneyRandom;
@@ -538,6 +543,52 @@ chat,
 "./Cortana☣️Reactor/Cortana_Univ.png"
 );
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
+} else if (!isOdd(Amount)) {
+if (cEconomy.money < 1000) {
+vEconomy.money = vEconomy.money + cEconomy.money;
+cEconomy.money = 0;
+} else {
+vEconomy.money = vEconomy.money + MoneyRandom;
+cEconomy.money = cEconomy.money - MoneyRandom;
+}
+culprit.CurrentRobberyTime = Date.now();
+await victim
+.save()
+.catch((Error) =>
+ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat)
+);
+await culprit
+.save()
+.catch((Error) =>
+ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat)
+);
+await vEconomy
+.save()
+.catch((Error) =>
+ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat)
+);
+await cEconomy
+.save()
+.catch((Error) =>
+ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat)
+);
+return Cortana_Buttons.MIB(
+ӄʀǟӄɨռʐ,
+chat,
+ƈօʀȶǟռǟ,
+`🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ}, 
+
+╔◇══════════════◇╗
+┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
+╚═══◇║
+╔═══◇║
+║❌ 𝗘𝗿𝗿𝗼𝗿: @${քɛʀֆօռɢօȶռʊʍ} _Caught You!_
+║💡‍ 𝐒𝐭𝐚𝐭𝐮𝐬: _You Got Arrested!_
+║💰 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: @${աɦօֆɛռȶɦǟȶռʊʍ}, _${cEconomy.money}gold_
+║💰 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: @${քɛʀֆօռɢօȶռʊʍ}, = _${vEconomy.money}gold_
+╚════════════╝`,
+"./Cortana☣️Reactor/Cortana_Univ.png"
+);
 } else {
 let Note;
 if (vEconomy.money < 2000) {
@@ -979,9 +1030,7 @@ chat,
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 if (victim.padlock > 0) {
 if (cEconomy.money < 1000) {
-(culprit.PermanentRobberyTime = 480000),
-(vEconomy.money =
-vEconomy.money + cEconomy.money);
+vEconomy.money = vEconomy.money + cEconomy.money;
 cEconomy.money = 0;
 } else {
 vEconomy.money = vEconomy.money + MoneyRandom;
