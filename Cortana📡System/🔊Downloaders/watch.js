@@ -7,6 +7,7 @@ const Cortana_Buttons = require(`../../Cortana🛰️Server/Cortana_Buttons`);
 const Cortana_Static = require(`../../Cortana🛰️Server/Cortana_Static`);
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const FFmpegVideo = require(`../../Cortana🛰️Server/FFmpegVideo`);
+const cleanRF = require(`../../Cortana🛰️Server/cleanRF`);
 const _𝔏𝔞𝔟_ = require(`../../Cortana🛰️Server/_𝔏𝔞𝔟_`);
 const ꜰᴜᴄᴋ = require(`../../Cortana🛰️Server/oShit`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
