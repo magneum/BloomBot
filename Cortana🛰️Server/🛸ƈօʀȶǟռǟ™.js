@@ -19,7 +19,6 @@ const { Tǟɮʟɛɨȶ } = require(`../Tǟɮʟɛɨȶ`);
 const moment = require(`moment-timezone`);
 const RankCheck = require(`./RankCheck`);
 const speed = require(`performance-now`);
-const ƈօʀȶǟռǟgoose = require("mongoose");
 const ӄʀʏօȶɛӄ = require(`./ӄʀʏօȶɛӄ`);
 const welbuts = require(`./welbuts`);
 const cleanRF = require(`./cleanRF`);
@@ -60,19 +59,6 @@ if (time2 < `05:00:00`) {
 var Timers = `𝐍𝐢𝐠𝐡𝐭💤`;
 }
 const version = vers.vers;
-`|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-ƈօʀȶǟռǟgoose
-.connect(_𝔏𝔞𝔟_.CORTANAMDB, {
-useNewUrlParser: true,
-useUnifiedTopology: true,
-useCreateIndex: true,
-useFindAndModify: false,
-})
-.catch((err) => {
-console.log(Kolor.red(`💡 𝐈𝐧𝐟𝐨⬰ CortanaGoose Error: \n${err}`));
-process.exit(0);
-});
-console.log(Kolor.green(`💡 𝐈𝐧𝐟𝐨⬰ CortanaGoose Connected!`));
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 var ӄʀǟӄɨռʐ = ƈօʀȶǟռǟֆʏռօք.WhatsApp;
 ӄʀǟӄɨռʐ.logger.level = "error";
