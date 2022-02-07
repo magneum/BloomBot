@@ -45,8 +45,8 @@ name: newScpt,
 ╔═══⬡🔒 𝐏𝐚𝐝𝐥𝐨𝐜𝐤
 ║
 ║🛸 𝗧𝘆𝗽𝗲: _The basic account safe mode. 
-║🧀 𝗚𝗼𝗹𝗱: _To buy padlock you will need to have 1000gold. 
-║⚡ 𝗣𝗲𝗿𝗸𝘀: _If robbery attempt was made on your account, a padlock will save your entire balance and will automatically deduct random(500-1000) from Culprit's account and add it to your account!_
+║🧀 𝗚𝗼𝗹𝗱: _To buy guard you will need to have 1000gold. 
+║⚡ 𝗣𝗲𝗿𝗸𝘀: _If robbery attempt was made on your account, a guard will save your entire balance and will automatically deduct random(500-1000) from Culprit's account and add it to your account!_
 ║
 ╚═══◇║
 ╔═══◇║⚔️ 𝐒𝐰𝐨𝐫𝐝
@@ -245,7 +245,7 @@ return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat);
 if (!victim) {
 var newUser = new Robbery({
 ID: Receiver,
-padlock: 0,
+guard: 0,
 sword: 0,
 laptop: 0,
 charm: 0,
@@ -283,7 +283,7 @@ chat,
 } else if (!culprit) {
 var newUser = new Robbery({
 ID: աɦօֆɛռȶɦǟȶ,
-padlock: 0,
+guard: 0,
 sword: 0,
 laptop: 0,
 charm: 0,
@@ -344,7 +344,7 @@ chat,
 );
 }
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-if (victim.padlock > 0) {
+if (victim.guard > 0) {
 if (cEconomy.money < 1000) {
 vEconomy.money = vEconomy.money + cEconomy.money;
 cEconomy.money = 0;
@@ -352,7 +352,7 @@ cEconomy.money = 0;
 vEconomy.money = vEconomy.money + MoneyRandom;
 cEconomy.money = cEconomy.money - MoneyPadlock;
 }
-victim.padlock = victim.padlock - 1;
+victim.guard = victim.guard - 1;
 culprit.CurrentRobberyTime = Date.now();
 await victim
 .save()
@@ -814,7 +814,7 @@ return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat);
 if (!victim) {
 var newUser = new Robbery({
 ID: TagMention,
-padlock: 0,
+guard: 0,
 sword: 0,
 laptop: 0,
 charm: 0,
@@ -883,7 +883,7 @@ mentionedJid: [աɦօֆɛռȶɦǟȶ, TagMention],
 } else if (!culprit) {
 var newUser = new Robbery({
 ID: աɦօֆɛռȶɦǟȶ,
-padlock: 0,
+guard: 0,
 sword: 0,
 laptop: 0,
 charm: 0,
@@ -975,7 +975,7 @@ chat,
 );
 }
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-if (victim.padlock > 0) {
+if (victim.guard > 0) {
 if (cEconomy.money < 1000) {
 vEconomy.money = vEconomy.money + cEconomy.money;
 cEconomy.money = 0;
@@ -983,7 +983,7 @@ cEconomy.money = 0;
 vEconomy.money = vEconomy.money + MoneyRandom;
 cEconomy.money = cEconomy.money - MoneyPadlock;
 }
-victim.padlock = victim.padlock - 1;
+victim.guard = victim.guard - 1;
 culprit.CurrentRobberyTime = Date.now();
 await victim
 .save()

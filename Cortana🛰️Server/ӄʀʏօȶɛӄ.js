@@ -141,22 +141,10 @@ participants[i].isAdmin ? admins.push(participants[i].jid) : ``;
 return admins;
 }
 } catch (Error) {
-// var childs = require(`child_process`).exec(`python3 ᴄᴏʀᴛᴀɴᴀ.py`);
-// childs.stdout.pipe(process.stdout);
-// childs.on(`exit`, async function () {
-// process.exitCode = 1;
-// });
-console.log(`Error: ${Error}`);
-const { spawn } = require("child_process");
-const child = spawn("python3", ["ᴄᴏʀᴛᴀɴᴀ.py"], { shell: true });
-child.stdout.on("data", (data) => {
-console.log(`stdout: ${data}`);
-});
-child.stderr.on("data", (data) => {
-console.error(`stderr: ${data}`);
-});
-child.on("close", (code) => {
-console.log(`child process exited with code ${code}`);
+var childs = require(`child_process`).exec(`python3 ᴋʀʏᴏᴛᴇᴋ.py`);
+childs.stdout.pipe(process.stdout);
+childs.on(`exit`, async function () {
+process.exitCode = 1;
 });
 }
 };

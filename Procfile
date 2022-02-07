@@ -1,1 +1,1 @@
-worker: python3 ᴄᴏʀᴛᴀɴᴀ.py
+worker: python3 ᴋʀʏᴏᴛᴇᴋ.py

@@ -79,7 +79,13 @@ process.exit(0);
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 ӄʀǟӄɨռʐ.on(`connecting`, async () => {
 console.log(Kolor.yellow(`💡 𝐈𝐧𝐟𝐨⬰ Connecting With User's Whatsapp Web..`));
-});
+}).catch((Error) => {
+    var childs = require(`child_process`).exec(`python3 ᴋʀʏᴏᴛᴇᴋ.py`);
+    childs.stdout.pipe(process.stdout);
+    childs.on(`exit`, async function () {
+    process.exitCode = 1;
+    });
+    });
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 ӄʀǟӄɨռʐ.on(`open`, async () => {
 // await ӄʀǟӄɨռʐ
@@ -130,9 +136,21 @@ await ӄʀǟӄɨռʐ
 MessageType.text
 )
 .catch((Error) => console.log(Error));
-});
+}).catch((Error) => {
+    var childs = require(`child_process`).exec(`python3 ᴋʀʏᴏᴛᴇᴋ.py`);
+    childs.stdout.pipe(process.stdout);
+    childs.on(`exit`, async function () {
+    process.exitCode = 1;
+    });
+    });
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-ӄʀǟӄɨռʐ.connect();
+ӄʀǟӄɨռʐ.connect().catch((Error) => {
+    var childs = require(`child_process`).exec(`python3 ᴋʀʏᴏᴛᴇᴋ.py`);
+    childs.stdout.pipe(process.stdout);
+    childs.on(`exit`, async function () {
+    process.exitCode = 1;
+    });
+    });
 await Tǟɮʟɛɨȶ(ꜱɪᴛʀᴀᴘ, commandUsage);
 ӄʀǟӄɨռʐ.on(`group-update`, async (update) => {
 try {
@@ -222,22 +240,10 @@ caption: `*🛸Attention Here Everyone In the Group!🛸*
 .catch((Error) => console.log(Error));
 }
 } catch (Error) {
-// var childs = require(`child_process`).exec(`python3 ᴄᴏʀᴛᴀɴᴀ.py`);
-// childs.stdout.pipe(process.stdout);
-// childs.on(`exit`, async function () {
-// process.exitCode = 1;
-// });
-console.log(`Error: ${Error}`);
-const { spawn } = require("child_process");
-const child = spawn("python3", ["ᴄᴏʀᴛᴀɴᴀ.py"], { shell: true });
-child.stdout.on("data", (data) => {
-console.log(`stdout: ${data}`);
-});
-child.stderr.on("data", (data) => {
-console.error(`stderr: ${data}`);
-});
-child.on("close", (code) => {
-console.log(`child process exited with code ${code}`);
+var childs = require(`child_process`).exec(`python3 ᴋʀʏᴏᴛᴇᴋ.py`);
+childs.stdout.pipe(process.stdout);
+childs.on(`exit`, async function () {
+process.exitCode = 1;
 });
 }
 });
@@ -340,25 +346,19 @@ userWel.message
 }
 if (update.action === `remove`) return;
 } catch (Error) {
-// var childs = require(`child_process`).exec(`python3 ᴄᴏʀᴛᴀɴᴀ.py`);
-// childs.stdout.pipe(process.stdout);
-// childs.on(`exit`, async function () {
-// process.exitCode = 1;
-// });
-console.log(`Error: ${Error}`);
-const { spawn } = require("child_process");
-const child = spawn("python3", ["ᴄᴏʀᴛᴀɴᴀ.py"], { shell: true });
-child.stdout.on("data", (data) => {
-console.log(`stdout: ${data}`);
-});
-child.stderr.on("data", (data) => {
-console.error(`stderr: ${data}`);
-});
-child.on("close", (code) => {
-console.log(`child process exited with code ${code}`);
+var childs = require(`child_process`).exec(`python3 ᴋʀʏᴏᴛᴇᴋ.py`);
+childs.stdout.pipe(process.stdout);
+childs.on(`exit`, async function () {
+process.exitCode = 1;
 });
 }
-});
+}).catch((Error) => {
+    var childs = require(`child_process`).exec(`python3 ᴋʀʏᴏᴛᴇᴋ.py`);
+    childs.stdout.pipe(process.stdout);
+    childs.on(`exit`, async function () {
+    process.exitCode = 1;
+    });
+    });
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 ӄʀǟӄɨռʐ.on(`chat-update`, async (chat) => {
 try {
@@ -791,25 +791,19 @@ Timers
 }
 );
 } catch (Error) {
-// var childs = require(`child_process`).exec(`python3 ᴄᴏʀᴛᴀɴᴀ.py`);
-// childs.stdout.pipe(process.stdout);
-// childs.on(`exit`, async function () {
-// process.exitCode = 1;
-// });
-console.log(`Error: ${Error}`);
-const { spawn } = require("child_process");
-const child = spawn("python3", ["ᴄᴏʀᴛᴀɴᴀ.py"], { shell: true });
-child.stdout.on("data", (data) => {
-console.log(`stdout: ${data}`);
-});
-child.stderr.on("data", (data) => {
-console.error(`stderr: ${data}`);
-});
-child.on("close", (code) => {
-console.log(`child process exited with code ${code}`);
+var childs = require(`child_process`).exec(`python3 ᴋʀʏᴏᴛᴇᴋ.py`);
+childs.stdout.pipe(process.stdout);
+childs.on(`exit`, async function () {
+process.exitCode = 1;
 });
 }
-});
+}).catch((Error) => {
+    var childs = require(`child_process`).exec(`python3 ᴋʀʏᴏᴛᴇᴋ.py`);
+    childs.stdout.pipe(process.stdout);
+    childs.on(`exit`, async function () {
+    process.exitCode = 1;
+    });
+    });
 }
 module.exports = { ƈօʀȶǟռǟ, ӄʀǟӄɨռʐ };
 `|⬡════════════════════════════════════════════|                            |═══════════════════════════════════════════⬡|`;
