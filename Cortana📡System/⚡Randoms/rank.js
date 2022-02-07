@@ -50,7 +50,7 @@ chat,
 `🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ}, _This Command is Only For Groups!_!`
 );
 }
-if (!ƈօʀȶǟռǟ.fromMe) {
+if (ƈօʀȶǟռǟ.fromMe) {
 return Cortana_Buttons.MTB(
 ӄʀǟӄɨռʐ,
 chat,
