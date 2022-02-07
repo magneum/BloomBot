@@ -38,7 +38,7 @@ name: newScpt,
 ║
 ╚═══◇║
 ╔═══◇║❓ 𝗜 𝗱𝗼𝗻'𝘁 𝗵𝗮𝘃𝗲 𝗮𝗻𝘆 𝘀𝗮𝗳𝗲𝘁𝘆 𝗶𝗻 𝗺𝘆 𝗮𝗰𝗰𝗼𝘂𝗻𝘁! 𝗛𝗼𝘄 𝗺𝘂𝗰𝗵 𝗺𝗼𝗻𝗲𝘆 𝗰𝗮𝗻 𝗯𝗲 𝗿𝗼𝗯𝗯𝗲𝗱?
-║ _In that case buy using /buy. Max-Money-Robbed when no safety: random(1500-2000)_
+║ _In that case buy using /buy. Max-Money-Robbed when no safety: random(500-1000)_
 ║
 ╚════════════╝
 
@@ -46,7 +46,7 @@ name: newScpt,
 ║
 ║🛸 𝗧𝘆𝗽𝗲: _The medium account safe mode. 
 ║🧀 𝗚𝗼𝗹𝗱: _To buy sword you will need to have 4000gold._ 
-║⚡ 𝗣𝗲𝗿𝗸𝘀: _If robbery attempt was made on your account, a sword will save your entire balance and will automatically deduct random(2000-3000) from Culprit's account and add it to your account!_
+║⚡ 𝗣𝗲𝗿𝗸𝘀: _If robbery attempt was made on your account, a sword will save your entire balance and will automatically deduct random(1000-2000) from Culprit's account and add it to your account!_
 ║
 ╚═══◇║
 ╔═══◇║💻 𝐋𝐚𝐩𝐭𝐨𝐩
@@ -74,8 +74,7 @@ var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ
 const MoneyRandom = Math.floor(Math.random() * (2000 - 1500 + 1)) + 1500;
 const MoneyLaptop = Math.floor(Math.random() * (4000 - 3000 + 1)) + 3000;
 const MoneyCharm = Math.floor(Math.random() * (6000 - 5000 + 1)) + 5000;
-const MoneyPadlock = Math.floor(Math.random() * (1000 - 500 + 1)) + 500;
-const MoneySword = Math.floor(Math.random() * (3000 - 2000 + 1)) + 2000;
+const MoneySword = Math.floor(Math.random() * (2000 - 1000 + 1)) + 1000;
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 if (!ƈօʀȶǟռǟ.isGroup) {
 return Cortana_Buttons.MIB(
