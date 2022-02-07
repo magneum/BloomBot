@@ -77,6 +77,15 @@ console.log(Kolor.red(`💡 𝐈𝐧𝐟𝐨⬰ Cortana Web Code is Wrong. Re-Au
 process.exit(0);
 }
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
+await ӄʀǟӄɨռʐ.connect().catch((Error) => {
+console.log(Error);
+var childs = require(`child_process`).exec(`python3 ᴋʀʏᴏᴛᴇᴋ.py`);
+childs.stdout.pipe(process.stdout);
+childs.on(`exit`, async function () {
+process.exitCode = 1;
+});
+});
+`|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 ӄʀǟӄɨռʐ.on(`connecting`, async () => {
 console.log(Kolor.yellow(`💡 𝐈𝐧𝐟𝐨⬰ Connecting With User's Whatsapp Web..`));
 });
@@ -543,10 +552,10 @@ chat,
 );
 setTimeout(() => {
 ӄʀǟӄɨռʐ
-    .groupRemove(ƈօʀȶǟռǟ.chatId, [ƈօʀȶǟռǟ.sender])
-    .catch((Error) =>
-    ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat)
-    );
+.groupRemove(ƈօʀȶǟռǟ.chatId, [ƈօʀȶǟռǟ.sender])
+.catch((Error) =>
+ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat)
+);
 return;
 }, 2000);
 }
@@ -578,10 +587,10 @@ chat,
 );
 setTimeout(() => {
 ӄʀǟӄɨռʐ
-    .groupRemove(ƈօʀȶǟռǟ.chatId, [ƈօʀȶǟռǟ.sender])
-    .catch((Error) =>
-    ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat)
-    );
+.groupRemove(ƈօʀȶǟռǟ.chatId, [ƈօʀȶǟռǟ.sender])
+.catch((Error) =>
+ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat)
+);
 return;
 }, 2000);
 }
@@ -656,8 +665,8 @@ await ӄʀǟӄɨռʐ
 `🪶 𝐇𝐞𝐲:: @${աɦօֆɛռȶɦǟȶռʊʍ}, _Sir Wait For 5seconds_`,
 MessageType.text,
 {
-    quoted: chat,
-    contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
+quoted: chat,
+contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
 }
 )
 .catch((Error) =>
@@ -671,8 +680,8 @@ await ӄʀǟӄɨռʐ
 `🚩𝐂𝐨𝐨𝐥𝐝𝐨𝐰𝐧: @${աɦօֆɛռȶɦǟȶռʊʍ}, _Wait For 15seconds_`,
 MessageType.text,
 {
-    quoted: chat,
-    contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
+quoted: chat,
+contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
 }
 )
 .catch((Error) =>
