@@ -699,12 +699,6 @@ Kolor.green(
 )
 );
 console.log(chat);
-console.log(
-Kolor.green(
-"⬡═════════════|🍃𝐂𝐨𝐫𝐭𝐚𝐧𝐚> " +
-ƈօʀȶǟռǟ.commandName.toUpperCase()
-)
-);
 const ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ = ꜱɪᴛʀᴀᴘ.get(ƈօʀȶǟռǟ.commandName);
 var Needs = ƈօʀȶǟռǟ.body.trim().split(/\s+/).slice(1);
 if (!ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ) {
