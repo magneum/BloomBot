@@ -32,5 +32,5 @@ RUN npm install --force
 # RUN git remote add origin https://github.com/Krakinz/Cortana.git
 # RUN git fetch origin KrakinzLab
 # RUN git reset --hard origin/KrakinzLab
-CMD python3 🐙ᴋʀʏᴏᴛᴇᴋ.py
+CMD npm start
 
