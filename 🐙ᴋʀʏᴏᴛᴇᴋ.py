@@ -1,6 +1,9 @@
 #|🛸|======================================================================================================⬡  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™`;
 #|🛸|      (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈 | 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!       |`;
 #|🛸|======================================================================================================⬡  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™`;
+import os
+import psutil
+import platform
 import logging
 from loguru import *
 from zipfile import ZipFile
@@ -9,7 +12,6 @@ from termcolor import *
 import shutil
 from datetime import *
 from os import getenv
-import os
 from dotenv import load_dotenv
 
 load_dotenv("./🛸ƈօʀȶǟռǟ™.env")
@@ -164,18 +166,6 @@ if 爪𝖎𝖟𝖚ӄ𝖎 is not None:
             os.remove("xp0e.aes")
             os.remove("xp0edoc.py")
             shutil.rmtree("__pycache__")
-            os.system('clear')
-            print("""
-|⬡══════════════════════⬡|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |⬡══════════════════════⬡|
-ɪꜱ ᴀ ᴡʜᴀᴛꜱᴀᴘᴘ ᴍᴜʟᴛɪᴘᴜʀᴘᴏꜱᴇ-ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ ᴍᴏᴅᴇʀᴀᴛɪᴏɴ,ᴀᴜᴛᴏᴍᴀᴛɪᴏɴ ᴀɴᴅ 100+ ᴄᴏᴍᴍᴀɴᴅꜱ!
-ᴜꜱᴇ ꜱᴀᴋᴜʀᴀ ɪɴ ʙᴏᴛʜ ᴘᴜʙʟɪᴄ-ɢʀᴏᴜᴘꜱ ᴀɴᴅ ᴘʀɪᴠᴀᴛᴇ.
-ꜱᴏ ᴍᴀɴʏ ᴄᴏᴍᴍᴀɴᴅꜱ ᴛʜᴀᴛ ᴡɪʟʟ ʙʟᴏᴡ ᴜᴘ ᴛʜᴇ ᴇᴠᴇʀʏ-ᴅᴀʏ ᴜꜱᴇ ᴏꜰ ʙᴏʀɪɴɢ ᴡʜᴀᴛꜱᴀᴘᴘ.
-ꜱᴀᴋᴜʀᴀ ɪꜱ ᴡʀɪᴛᴛᴇɴ ɪɴ [ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ & ᴘʏᴛʜᴏɴ] ᴀɴᴅ ɪꜱ ʙʏ ꜰᴀʀ ᴛʜᴇ ᴏɴᴇ ᴏꜰ ᴍᴏꜱᴛ ᴀᴅᴠᴀɴᴄᴇ ᴡʜᴀᴛꜱᴀᴘᴘ ᴜꜱᴇʀʙᴏᴛ.
-|⬡══════════════════════⬡|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |⬡══════════════════════⬡|""")
-            import platform
-            import psutil
-            import os
-            my_system = platform.uname()
             if os.path.exists('Cortana🛰️Server/Coolist.json'):
                 os.remove('Cortana🛰️Server/Coolist.json')
             else:
@@ -184,7 +174,6 @@ if 爪𝖎𝖟𝖚ӄ𝖎 is not None:
             os.system('node Cortana🛰️Server/touched.js')
             os.system('node Cortana☣️Reactor/🛸ƈօʀȶǟռǟ™.js')
         else:
-            print("⬡==========================⬡    🛸 ƈօʀȶǟռǟ™ 🛸    ⬡==========================⬡")
             print("❌❌❌     Wrong ӄʀǟӄɨռʐ code   ❌❌❌")
             os.remove("xp0e.zip")
             os.remove("xp0e.aes")
