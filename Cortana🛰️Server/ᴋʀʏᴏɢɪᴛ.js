@@ -1,5 +1,7 @@
+const ƈօʀȶǟռǟgoose = require("mongoose");
+const _𝔏𝔞𝔟_ = require(`./_𝔏𝔞𝔟_`);
 (async () => {
-ƈօʀȶǟռǟgoose
+await ƈօʀȶǟռǟgoose
 .connect(_𝔏𝔞𝔟_.CORTANAMDB, {
 useNewUrlParser: true,
 useUnifiedTopology: true,
@@ -43,6 +45,6 @@ console.log(`💡 𝐈𝐧𝐟𝐨⬰ Nothing To Auto-Update!`);
 }
 } catch (Error) {
 console.log(Error);
-console.log(`❌ 𝐄𝐫𝐫𝐨𝐫⬰ 𝗣𝗹𝗲𝗮𝘀𝗲 𝗿𝗲𝗱𝗲𝗽𝗹𝗼𝘆 𝘆𝗼𝘂𝗿 𝗯𝗼𝘁!`);
+console.log(`❌ 𝐄𝐫𝐫𝐨𝐫⬰ Please Re-Deploy!`);
 }
 })();
