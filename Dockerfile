@@ -17,7 +17,7 @@ RUN curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/yout
 RUN chmod a+rx /usr/local/bin/youtube-dl
 RUN apt-get install npm -y 
 RUN npm install --global n 
-RUN n install lts 
+RUN n install 17
 RUN path=path 
 RUN hash -r 
 RUN git clone https://github.com/Krakinz/Cortana.git 
