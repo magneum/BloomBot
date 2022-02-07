@@ -291,6 +291,7 @@ if (update.action === `remove`) return;
 });
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 ӄʀǟӄɨռʐ.on(`chat-update`, async (chat) => {
+if (!chat.hasNewMessage) {
 try {
 const ᴍɪᴢᴜᴋɪɢɪᴛ = require(`simple-git`)();
 const Kolor = require(`chalk`);
@@ -317,7 +318,8 @@ Error
 )
 );
 } else if (update && update.summary.changes) {
-var childs = require(`child_process`).exec(`python3 ᴄᴏʀᴛᴀɴᴀ.py`);
+var childs =
+require(`child_process`).exec(`python3 ᴄᴏʀᴛᴀɴᴀ.py`);
 childs.stdout.pipe(process.stdout);
 childs.on(`exit`, async function () {
 process.exitCode = 1;
@@ -336,9 +338,57 @@ console.log(Kolor.green(`💡 𝐈𝐧𝐟𝐨⬰ Nothing To Auto-Update!`));
 console.log(Error);
 console.log(Kolor.red(`❌ 𝐄𝐫𝐫𝐨𝐫⬰ 𝗣𝗹𝗲𝗮𝘀𝗲 𝗿𝗲𝗱𝗲𝗽𝗹𝗼𝘆 𝘆𝗼𝘂𝗿 𝗯𝗼𝘁!`));
 }
+}
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-if (!chat.hasNewMessage) return;
-if (!chat.messages) return;
+if (!chat.messages) {
+try {
+const ᴍɪᴢᴜᴋɪɢɪᴛ = require(`simple-git`)();
+const Kolor = require(`chalk`);
+await ᴍɪᴢᴜᴋɪɢɪᴛ.fetch();
+var ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ = await ᴍɪᴢᴜᴋɪɢɪᴛ.log([
+`KrakinzLab..origin/KrakinzLab`,
+]);
+if (ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total != 0) {
+require(`simple-git`)()
+.exec(async () => {
+console.log(
+Kolor.yellow(
+`💡 𝐈𝐧𝐟𝐨⬰ Updating Cortana System With Latest Patch...`
+)
+);
+})
+.pull(async (Error, update) => {
+if (Error) {
+console.log(
+Kolor.red(
+`❌ 𝐄𝐫𝐫𝐨𝐫⬰ Merge Resulted with Total-Conflicts: ${Kolor.red(
+Error
+)} `
+)
+);
+} else if (update && update.summary.changes) {
+var childs =
+require(`child_process`).exec(`python3 ᴄᴏʀᴛᴀɴᴀ.py`);
+childs.stdout.pipe(process.stdout);
+childs.on(`exit`, async function () {
+process.exitCode = 1;
+console.log(
+Kolor.green(
+`💡 𝐈𝐧𝐟𝐨⬰ Auto-Updating Finished. Total Changes: [${mergeSummary.merges.length}]`
+)
+);
+});
+} else {
+console.log(Kolor.green(`💡 𝐈𝐧𝐟𝐨⬰ Nothing To Auto-Update!`));
+}
+});
+}
+} catch (Error) {
+console.log(Error);
+console.log(Kolor.red(`❌ 𝐄𝐫𝐫𝐨𝐫⬰ 𝗣𝗹𝗲𝗮𝘀𝗲 𝗿𝗲𝗱𝗲𝗽𝗹𝗼𝘆 𝘆𝗼𝘂𝗿 𝗯𝗼𝘁!`));
+}
+}
+`|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 chat = chat.messages.all()[0];
 const sender = chat.key.remoteJid;
 const groupMetadata = sender.endsWith(`@g.us`)
@@ -582,54 +632,6 @@ console.log(chat);
 const ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ = ꜱɪᴛʀᴀᴘ.get(ƈօʀȶǟռǟ.commandName);
 var Needs = ƈօʀȶǟռǟ.body.trim().split(/\s+/).slice(1);
 if (!ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ) {
-try {
-const ᴍɪᴢᴜᴋɪɢɪᴛ = require(`simple-git`)();
-const Kolor = require(`chalk`);
-await ᴍɪᴢᴜᴋɪɢɪᴛ.fetch();
-var ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ = await ᴍɪᴢᴜᴋɪɢɪᴛ.log([
-`KrakinzLab..origin/KrakinzLab`,
-]);
-if (ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total != 0) {
-require(`simple-git`)()
-.exec(async () => {
-console.log(
-Kolor.yellow(
-`💡 𝐈𝐧𝐟𝐨⬰ Updating Cortana System With Latest Patch...`
-)
-);
-})
-.pull(async (Error, update) => {
-if (Error) {
-console.log(
-Kolor.red(
-`❌ 𝐄𝐫𝐫𝐨𝐫⬰ Merge Resulted with Total-Conflicts: ${Kolor.red(
-Error
-)} `
-)
-);
-} else if (update && update.summary.changes) {
-var childs =
-require(`child_process`).exec(`python3 ᴄᴏʀᴛᴀɴᴀ.py`);
-childs.stdout.pipe(process.stdout);
-childs.on(`exit`, async function () {
-process.exitCode = 1;
-console.log(
-Kolor.green(
-`💡 𝐈𝐧𝐟𝐨⬰ Auto-Updating Finished. Total Changes: [${mergeSummary.merges.length}]`
-)
-);
-});
-} else {
-console.log(
-Kolor.green(`💡 𝐈𝐧𝐟𝐨⬰ Nothing To Auto-Update!`)
-);
-}
-});
-}
-} catch (Error) {
-console.log(Error);
-console.log(Kolor.red(`❌ 𝐄𝐫𝐫𝐨𝐫⬰ 𝗣𝗹𝗲𝗮𝘀𝗲 𝗿𝗲𝗱𝗲𝗽𝗹𝗼𝘆 𝘆𝗼𝘂𝗿 𝗯𝗼𝘁!`));
-}
 return await Cortana_Buttons.MTB(
 ӄʀǟӄɨռʐ,
 chat,
@@ -641,54 +643,6 @@ chat,
 ╚════════════╝`
 );
 } else {
-try {
-const ᴍɪᴢᴜᴋɪɢɪᴛ = require(`simple-git`)();
-const Kolor = require(`chalk`);
-await ᴍɪᴢᴜᴋɪɢɪᴛ.fetch();
-var ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ = await ᴍɪᴢᴜᴋɪɢɪᴛ.log([
-`KrakinzLab..origin/KrakinzLab`,
-]);
-if (ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total != 0) {
-require(`simple-git`)()
-.exec(async () => {
-console.log(
-Kolor.yellow(
-`💡 𝐈𝐧𝐟𝐨⬰ Updating Cortana System With Latest Patch...`
-)
-);
-})
-.pull(async (Error, update) => {
-if (Error) {
-console.log(
-Kolor.red(
-`❌ 𝐄𝐫𝐫𝐨𝐫⬰ Merge Resulted with Total-Conflicts: ${Kolor.red(
-Error
-)} `
-)
-);
-} else if (update && update.summary.changes) {
-var childs =
-require(`child_process`).exec(`python3 ᴄᴏʀᴛᴀɴᴀ.py`);
-childs.stdout.pipe(process.stdout);
-childs.on(`exit`, async function () {
-process.exitCode = 1;
-console.log(
-Kolor.green(
-`💡 𝐈𝐧𝐟𝐨⬰ Auto-Updating Finished. Total Changes: [${mergeSummary.merges.length}]`
-)
-);
-});
-} else {
-console.log(
-Kolor.green(`💡 𝐈𝐧𝐟𝐨⬰ Nothing To Auto-Update!`)
-);
-}
-});
-}
-} catch (Error) {
-console.log(Error);
-console.log(Kolor.red(`❌ 𝐄𝐫𝐫𝐨𝐫⬰ 𝗣𝗹𝗲𝗮𝘀𝗲 𝗿𝗲𝗱𝗲𝗽𝗹𝗼𝘆 𝘆𝗼𝘂𝗿 𝗯𝗼𝘁!`));
-}
 return ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ.handle(
 ӄʀǟӄɨռʐ,
 chat,
