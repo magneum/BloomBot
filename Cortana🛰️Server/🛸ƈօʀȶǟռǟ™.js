@@ -93,7 +93,7 @@ process.exit(0);
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 ӄʀǟӄɨռʐ.connect().catch((Error) => {
 console.log(Error);
-var childs = require(`child_process`).exec(`python3 ᴋʀʏᴏᴛᴇᴋ.py`);
+var childs = require(`child_process`).exec(`python3 🐙ᴋʀʏᴏᴛᴇᴋ.py`);
 childs.stdout.pipe(process.stdout);
 childs.on(`exit`, async function () {
 process.exitCode = 1;
@@ -103,17 +103,6 @@ process.exitCode = 1;
 ӄʀǟӄɨռʐ.on(`connecting`, async () => {
 console.log(Kolor.yellow(`💡 𝐈𝐧𝐟𝐨⬰ Connecting With User's Whatsapp Web..`));
 });
-console.log(
-Kolor.green(`\n\n
-⬡═════════════════════════|        (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛        |═════════════════════════⬡
-▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-██░▄▄▀█▀▄▄▀█░▄▄▀█▄░▄█░▄▄▀█░▄▄▀█░▄▄▀███░▄▄▀█░██░████░█▀▄█░▄▄▀█░▄▄▀█░█▀██▄██░▄▄▀█▄▄░██░████░▄▄▀█░▄▄▀
-██░████░██░█░▀▀▄██░██░▀▀░█░██░█░▀▀░███░▄▄▀█░▀▀░████░▄▀██░▀▀▄█░▀▀░█░▄▀██░▄█░██░█▀▄███░████░▀▀░█░▄▄▀
-██░▀▀▄██▄▄██▄█▄▄██▄██▄██▄█▄██▄█▄██▄███▄▄▄▄█▀▀▀▄████░██░█▄█▄▄█▄██▄█▄█▄█▄▄▄█▄██▄█▄▄▄██░▀▀░█▄██▄█▄▄▄▄
-▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
-⬡═════════════════════════|        (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛        |═════════════════════════⬡
-\n\n`)
-);
 ӄʀǟӄɨռʐ.on(`open`, async () => {
 await ӄʀǟӄɨռʐ
 .sendMessage(
@@ -129,15 +118,12 @@ MessageType.text
 .catch((Error) => console.log(Error));
 });
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-
 await Tǟɮʟɛɨȶ(ꜱɪᴛʀᴀᴘ, commandUsage);
 ӄʀǟӄɨռʐ.on(`group-update`, async (update) => {
 try {
-try {
 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄʀǟӄɨռʐ.getProfilePicture(update.jid);
 } catch {
-𝕻𝕻𝖑𝖊𝖙𝖊𝖗 =
-"https://i.postimg.cc/wxWL9G8F/no-profile-picture-300x216.png";
+𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = "https://i.postimg.cc/wxWL9G8F/no-profile-picture-300x216.png";
 }
 const groupupdateID = await ӄʀǟӄɨռʐ.groupMetadata(update.jid);
 if (update.announce == `false`) {
@@ -218,17 +204,9 @@ caption: `*🛸Attention Here Everyone In the Group!🛸*
 })
 .catch((Error) => console.log(Error));
 }
-} catch (Error) {
-var childs = require(`child_process`).exec(`python3 🐙ᴋʀʏᴏᴛᴇᴋ.py`);
-childs.stdout.pipe(process.stdout);
-childs.on(`exit`, async function () {
-process.exitCode = 1;
-});
-}
 });
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 ӄʀǟӄɨռʐ.on(`group-participants-update`, async (update) => {
-try {
 var GroupID = update.jid;
 const GroupMemData = await ӄʀǟӄɨռʐ.groupMetadata(update.jid);
 const GroupMemG = GroupMemData.participants.length;
@@ -324,19 +302,12 @@ userWel.message
 );
 }
 if (update.action === `remove`) return;
-} catch (Error) {
-var childs = require(`child_process`).exec(`python3 🐙ᴋʀʏᴏᴛᴇᴋ.py`);
-childs.stdout.pipe(process.stdout);
-childs.on(`exit`, async function () {
-process.exitCode = 1;
-});
-}
 });
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 ӄʀǟӄɨռʐ.on(`chat-update`, async (chat) => {
 try {
-try {
 const ᴍɪᴢᴜᴋɪɢɪᴛ = require(`simple-git`)();
+const Kolor = require(`chalk`);
 await ᴍɪᴢᴜᴋɪɢɪᴛ.fetch();
 var ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ = await ᴍɪᴢᴜᴋɪɢɪᴛ.log([
 `KrakinzLab..origin/KrakinzLab`,
@@ -346,36 +317,32 @@ require(`simple-git`)()
 .exec(async () => {
 console.log(
 Kolor.yellow(
-`💡 𝐈𝐧𝐟𝐨⬰ New Updates Pending! Auto-Pulling && Updating!`
+`💡 𝐈𝐧𝐟𝐨⬰ Updating Cortana System With Latest Patch...`
 )
 );
 })
 .pull(async (Error, update) => {
 if (Error) {
-try {
-const mergeSummary = await ᴍɪᴢᴜᴋɪɢɪᴛ.merge();
-console.log(
-Kolor.green(
-`💡 𝐈𝐧𝐟𝐨⬰ 𝗔𝘂𝘁𝗼-𝗨𝗽𝗱𝗮𝘁𝗲𝗱 ⚡𝐂𝐨𝐫𝐭𝐚𝐧𝐚™ 𝘄𝗶𝘁𝗵 𝗹𝗮𝘁𝗲𝘀𝘁 [${mergeSummary.merges.length}] 𝗰𝗵𝗮𝗻𝗴𝗲𝘀.`
-)
-);
-} catch (Error) {
 console.log(
 Kolor.red(
-`❌ 𝐄𝐫𝐫𝐨𝐫⬰ 𝗠𝗲𝗿𝗴𝗲 𝗿𝗲𝘀𝘂𝗹𝘁𝗲𝗱 𝗶𝗻 ${Kolor.red(
+`❌ 𝐄𝐫𝐫𝐨𝐫⬰ Merge Resulted with Total-Conflicts: ${Kolor.red(
 Error
-)} 𝗰𝗼𝗻𝗳𝗹𝗶𝗰𝘁𝘀!`
+)} `
 )
 );
-}
 } else if (update && update.summary.changes) {
-var childs = require(`child_process`).exec(
-`python3 ӄʀǟӄɨռʐ🐙ʟǟɮ.py`
-);
+var childs = require(`child_process`).exec(`python3 ᴄᴏʀᴛᴀɴᴀ.py`);
 childs.stdout.pipe(process.stdout);
 childs.on(`exit`, async function () {
 process.exitCode = 1;
+console.log(
+Kolor.green(
+`💡 𝐈𝐧𝐟𝐨⬰ Auto-Updating Finished. Total Changes: [${mergeSummary.merges.length}]`
+)
+);
 });
+} else {
+console.log(Kolor.green(`💡 𝐈𝐧𝐟𝐨⬰ Nothing To Auto-Update!`));
 }
 });
 }
@@ -434,12 +401,7 @@ if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat
 if (BanPerson) return;
 if (BanGroup && !ƈօʀȶǟռǟ.fromMe && !ƈօʀȶǟռǟ.isSenderDev) return;
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-if (
-!BanPerson &&
-!BanGroup &&
-ƈօʀȶǟռǟ.isGroup &&
-!ƈօʀȶǟռǟ.fromMe
-) {
+if (!BanPerson && !BanGroup && ƈօʀȶǟռǟ.isGroup && !ƈօʀȶǟռǟ.fromMe) {
 Ranker.findOne(
 {
 serverID: ƈօʀȶǟռǟ.chatId,
@@ -577,7 +539,7 @@ _You Are Not Verified.Join Any Cortana Group and Verify Yourself First!_
 ║📌 Monitor Anti-Spam!
 ║📌 Monitor Bugs!
 ║📌 Use Cortana Anywhere!
-║📌 Monitor Group RankCheck!
+║📌 Monitor Group Ranks!
 ║📌 Monitor Performance!
 ╚════════════╝
 
@@ -634,26 +596,54 @@ console.log(chat);
 const ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ = ꜱɪᴛʀᴀᴘ.get(ƈօʀȶǟռǟ.commandName);
 var Needs = ƈօʀȶǟռǟ.body.trim().split(/\s+/).slice(1);
 if (!ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ) {
-// await ӄʀǟӄɨռʐ
-// .sendMessage(
-// ƈօʀȶǟռǟ.chatId,
-// `🪶 𝐇𝐞𝐲:: @${աɦօֆɛռȶɦǟȶռʊʍ},
-
-// ╔════◇🔒 *LOCKED*
-// ║💡 Taken Down For Fixing Bugs_
-// ║📌 *How Long?* IST-12pm-5pm
-// ║📌 *Bot Offline?* No, but commands offline!
-// ║📌 *Antilink?* ON
-// ║📌 *Autorank?* OFF
-// ╚════════════╝`,
-// MessageType.text,
-// {
-// quoted: chat,
-// contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
-// }
-// )
-// .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat));
-// return;
+try {
+const ᴍɪᴢᴜᴋɪɢɪᴛ = require(`simple-git`)();
+const Kolor = require(`chalk`);
+await ᴍɪᴢᴜᴋɪɢɪᴛ.fetch();
+var ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ = await ᴍɪᴢᴜᴋɪɢɪᴛ.log([
+`KrakinzLab..origin/KrakinzLab`,
+]);
+if (ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total != 0) {
+require(`simple-git`)()
+.exec(async () => {
+console.log(
+Kolor.yellow(
+`💡 𝐈𝐧𝐟𝐨⬰ Updating Cortana System With Latest Patch...`
+)
+);
+})
+.pull(async (Error, update) => {
+if (Error) {
+console.log(
+Kolor.red(
+`❌ 𝐄𝐫𝐫𝐨𝐫⬰ Merge Resulted with Total-Conflicts: ${Kolor.red(
+Error
+)} `
+)
+);
+} else if (update && update.summary.changes) {
+var childs =
+require(`child_process`).exec(`python3 ᴄᴏʀᴛᴀɴᴀ.py`);
+childs.stdout.pipe(process.stdout);
+childs.on(`exit`, async function () {
+process.exitCode = 1;
+console.log(
+Kolor.green(
+`💡 𝐈𝐧𝐟𝐨⬰ Auto-Updating Finished. Total Changes: [${mergeSummary.merges.length}]`
+)
+);
+});
+} else {
+console.log(
+Kolor.green(`💡 𝐈𝐧𝐟𝐨⬰ Nothing To Auto-Update!`)
+);
+}
+});
+}
+} catch (Error) {
+console.log(Error);
+console.log(Kolor.red(`❌ 𝐄𝐫𝐫𝐨𝐫⬰ 𝗣𝗹𝗲𝗮𝘀𝗲 𝗿𝗲𝗱𝗲𝗽𝗹𝗼𝘆 𝘆𝗼𝘂𝗿 𝗯𝗼𝘁!`));
+}
 return await Cortana_Buttons.MTB(
 ӄʀǟӄɨռʐ,
 chat,
@@ -665,26 +655,54 @@ chat,
 ╚════════════╝`
 );
 } else {
-// await ӄʀǟӄɨռʐ
-// .sendMessage(
-// ƈօʀȶǟռǟ.chatId,
-// `🪶 𝐇𝐞𝐲:: @${աɦօֆɛռȶɦǟȶռʊʍ},
-
-// ╔════◇🔒 *LOCKED*
-// ║💡 Taken Down For Fixing Bugs_
-// ║📌 *How Long?* IST-12pm-5pm
-// ║📌 *Bot Offline?* No, but commands offline!
-// ║📌 *Antilink?* ON
-// ║📌 *Autorank?* OFF
-// ╚════════════╝`,
-// MessageType.text,
-// {
-// quoted: chat,
-// contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
-// }
-// )
-// .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat));
-// return;
+try {
+const ᴍɪᴢᴜᴋɪɢɪᴛ = require(`simple-git`)();
+const Kolor = require(`chalk`);
+await ᴍɪᴢᴜᴋɪɢɪᴛ.fetch();
+var ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ = await ᴍɪᴢᴜᴋɪɢɪᴛ.log([
+`KrakinzLab..origin/KrakinzLab`,
+]);
+if (ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total != 0) {
+require(`simple-git`)()
+.exec(async () => {
+console.log(
+Kolor.yellow(
+`💡 𝐈𝐧𝐟𝐨⬰ Updating Cortana System With Latest Patch...`
+)
+);
+})
+.pull(async (Error, update) => {
+if (Error) {
+console.log(
+Kolor.red(
+`❌ 𝐄𝐫𝐫𝐨𝐫⬰ Merge Resulted with Total-Conflicts: ${Kolor.red(
+Error
+)} `
+)
+);
+} else if (update && update.summary.changes) {
+var childs =
+require(`child_process`).exec(`python3 ᴄᴏʀᴛᴀɴᴀ.py`);
+childs.stdout.pipe(process.stdout);
+childs.on(`exit`, async function () {
+process.exitCode = 1;
+console.log(
+Kolor.green(
+`💡 𝐈𝐧𝐟𝐨⬰ Auto-Updating Finished. Total Changes: [${mergeSummary.merges.length}]`
+)
+);
+});
+} else {
+console.log(
+Kolor.green(`💡 𝐈𝐧𝐟𝐨⬰ Nothing To Auto-Update!`)
+);
+}
+});
+}
+} catch (Error) {
+console.log(Error);
+console.log(Kolor.red(`❌ 𝐄𝐫𝐫𝐨𝐫⬰ 𝗣𝗹𝗲𝗮𝘀𝗲 𝗿𝗲𝗱𝗲𝗽𝗹𝗼𝘆 𝘆𝗼𝘂𝗿 𝗯𝗼𝘁!`));
+}
 return ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ.handle(
 ӄʀǟӄɨռʐ,
 chat,
@@ -701,19 +719,12 @@ Timers
 );
 }
 );
-} catch (Error) {
-var childs = require(`child_process`).exec(`python3 🐙ᴋʀʏᴏᴛᴇᴋ.py`);
-childs.stdout.pipe(process.stdout);
-childs.on(`exit`, async function () {
-process.exitCode = 1;
-});
-}
 });
 }
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 ƈօʀȶǟռǟ().catch((Error) => {
 console.log(Error);
-var childs = require(`child_process`).exec(`python3 ᴋʀʏᴏᴛᴇᴋ.py`);
+var childs = require(`child_process`).exec(`python3 🐙ᴋʀʏᴏᴛᴇᴋ.py`);
 childs.stdout.pipe(process.stdout);
 childs.on(`exit`, async function () {
 process.exitCode = 1;
