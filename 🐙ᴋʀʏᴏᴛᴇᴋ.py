@@ -180,10 +180,6 @@ if 爪𝖎𝖟𝖚ӄ𝖎 is not None:
                 os.remove('Cortana🛰️Server/Coolist.json')
             else:
                 pass
-            # os.system("git init --initial-branch=KrakinzLab")
-            # os.system("git remote add origin https://github.com/Krakinz/Cortana.git")
-            # os.system("git fetch origin KrakinzLab")
-            # os.system("git reset --hard origin/KrakinzLab")
             os.system('touch Cortana🛰️Server/Coolist.json')
             os.system('node Cortana🛰️Server/touched.js')
             os.system('node Cortana☣️Reactor/🛸ƈօʀȶǟռǟ™.js')
