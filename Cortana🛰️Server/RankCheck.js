@@ -244,6 +244,12 @@ await newUser
 .catch((Error) =>
 ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat)
 );
+const media = await ӄʀǟӄɨռʐ.prepareMessage(
+ƈօʀȶǟռǟ.chatId,
+fs.readFileSync(expFile),
+MessageType.image,
+{ mimetype: Mimetype.png }
+);
 await ӄʀǟӄɨռʐ
 .sendMessage(
 ƈօʀȶǟռǟ.chatId,
