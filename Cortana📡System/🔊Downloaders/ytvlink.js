@@ -6,11 +6,13 @@
 const Cortana_Buttons = require(`../../Cortana🛰️Server/Cortana_Buttons`);
 const Cortana_Static = require(`../../Cortana🛰️Server/Cortana_Static`);
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
-const FFmpegVideo = require(`../../Cortana🛰️Server/FFmpegVideo`);
+const cleanRF = require(`../../Cortana🛰️Server/cleanRF`);
 const _𝔏𝔞𝔟_ = require(`../../Cortana🛰️Server/_𝔏𝔞𝔟_`);
 const ꜰᴜᴄᴋ = require(`../../Cortana🛰️Server/oShit`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
+const ffmpeg = require("fluent-ffmpeg");
+const ytdl = require("ytdl-core");
 const yts = require(`yt-search`);
 const fs = require(`fs`);
 var path = require(`path`);
@@ -30,6 +32,7 @@ var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ
 .substring(0, աɦօֆɛռȶɦǟȶ.length - 15)
 .replace(/[+ ]/g, "");
 const defaultnm = ƈօʀȶǟռǟ.commandName;
+var FFmpegFile = `./Cortana☕Shop/${chat.key.id}${Date.now()}.mp4`;
 const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 if (Needs.length === 0) {
@@ -222,7 +225,9 @@ quoted: chat,
 contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
 }
 )
-.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat));
+.catch((Error) =>
+ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat)
+);
 await cleanRF.cleanRF(YouFile);
 return;
 }
@@ -271,14 +276,142 @@ chat,
 ╚════════════╝`,
 Found.thumbnail
 );
-} else {
-await FFmpegVideo.FFmpegVideo(
-ӄʀǟӄɨռʐ,
-ƈօʀȶǟռǟ,
-chat,
-Found,
-userBadge
+}
+`|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
+try {
+var stream = ytdl(Found.url, {
+quality: "highest",
+});
+ffmpeg(stream)
+.videoBitrate(360)
+.toFormat("mp4")
+.saveToFile(FFmpegFile)
+.on("end", async () => {
+try {
+const media = await ӄʀǟӄɨռʐ.prepareMessage(
+ƈօʀȶǟռǟ.chatId,
+fs.readFileSync(FFmpegFile),
+MessageType.video,
+{ mimetype: "video/mp4" }
 );
+await ӄʀǟӄɨռʐ
+.sendMessage(
+ƈօʀȶǟռǟ.chatId,
+{
+contentText: `🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ},
+
+╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
+║🍻 𝗧𝗶𝘁𝗹𝗲: ${Found.title}
+║🙈 𝗩𝗶𝗲𝘄𝘀: ${Found.views}
+║⏰ 𝗗𝘂𝗿𝗮𝘁𝗶𝗼𝗻: ${Found.timestamp}
+║✒️ 𝗔𝘂𝘁𝗵𝗼𝗿: ${Found.author.name}
+║✒️ 𝗥𝗲𝗹𝗲𝗮𝘀𝗲𝗱: ${Found.ago}
+║📜 𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${Found.description}
+║🔗 𝗟𝗶𝗻𝗸: ${Found.url}
+╚════════════╝`,
+footerText: `⎿ ©𝐂𝐨𝐫𝐭𝐚𝐧𝐚 ʙʏ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⏋`,
+buttons: [
+{
+buttonId: `${ᴋᴇɪ}help`,
+buttonText: { displayText: `${ᴋᴇɪ}help` },
+type: 1,
+},
+],
+headerType: 5,
+videoMessage: media.message.videoMessage,
+},
+MessageType.buttonsMessage,
+{
+quoted: chat,
+contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
+}
+)
+.catch((Error) =>
+ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat)
+);
+await cleanRF.cleanRF(FFmpegFile);
+} catch (Error) {
+console.log(
+`⬡═══════════════════| 🔺𝐅𝐅𝐦𝐩𝐞𝐠 𝐄𝐫𝐫𝐨𝐫🔺 |═══════════════════⬡` +
+Error
+);
+userBadge.Limits = userBadge.Limits + 1;
+await userBadge
+.save()
+.catch((Error) =>
+ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat)
+);
+return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat);
+}
+});
+`|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
+} catch (Error) {
+const downloadFFmpegFile = ytdl(Found.url, {
+quality: "highest",
+});
+const writeStream = fs.createWriteStream(FFmpegFile);
+downloadFFmpegFile.pipe(writeStream);
+downloadFFmpegFile.on("end", async () => {
+console.log(
+`⬡═══════════════════| 🥂𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐅𝐢𝐧𝐢𝐬𝐞𝐝🥂 |═══════════════════⬡`
+);
+try {
+const media = await ӄʀǟӄɨռʐ.prepareMessage(
+ƈօʀȶǟռǟ.chatId,
+fs.readFileSync(FFmpegFile),
+MessageType.video,
+{ mimetype: "video/mp4" }
+);
+await ӄʀǟӄɨռʐ
+.sendMessage(
+ƈօʀȶǟռǟ.chatId,
+{
+contentText: `🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ},
+
+╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
+║🍻 𝗧𝗶𝘁𝗹𝗲: ${Found.title}
+║🙈 𝗩𝗶𝗲𝘄𝘀: ${Found.views}
+║⏰ 𝗗𝘂𝗿𝗮𝘁𝗶𝗼𝗻: ${Found.timestamp}
+║✒️ 𝗔𝘂𝘁𝗵𝗼𝗿: ${Found.author.name}
+║✒️ 𝗥𝗲𝗹𝗲𝗮𝘀𝗲𝗱: ${Found.ago}
+║📜 𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${Found.description}
+║🔗 𝗟𝗶𝗻𝗸: ${Found.url}
+╚════════════╝`,
+footerText: `⎿ ©𝐂𝐨𝐫𝐭𝐚𝐧𝐚 ʙʏ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⏋`,
+buttons: [
+{
+buttonId: `${ᴋᴇɪ}help`,
+buttonText: { displayText: `${ᴋᴇɪ}help` },
+type: 1,
+},
+],
+headerType: 5,
+videoMessage: media.message.videoMessage,
+},
+MessageType.buttonsMessage,
+{
+quoted: chat,
+contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
+}
+)
+.catch((Error) =>
+ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat)
+);
+await cleanRF.cleanRF(FFmpegFile);
+} catch (Error) {
+console.log(
+`⬡═══════════════════| 🔺𝐅𝐅𝐦𝐩𝐞𝐠 𝐄𝐫𝐫𝐨𝐫🔺 |═══════════════════⬡` +
+Error
+);
+userBadge.Limits = userBadge.Limits + 1;
+await userBadge
+.save()
+.catch((Error) =>
+ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat)
+);
+return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat);
+}
+});
 }
 });
 }
