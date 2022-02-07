@@ -6,7 +6,6 @@
 var mongoose = require("mongoose");
 var RobberySakuraSchema = new mongoose.Schema({
 ID: String,
-guard: Number,
 sword: Number,
 laptop: Number,
 charm: Number,

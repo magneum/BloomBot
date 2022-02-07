@@ -42,13 +42,6 @@ name: newScpt,
 ║
 ╚════════════╝
 
-╔═══⬡🔒 𝐏𝐚𝐝𝐥𝐨𝐜𝐤
-║
-║🛸 𝗧𝘆𝗽𝗲: _The basic account safe mode. 
-║🧀 𝗚𝗼𝗹𝗱: _To buy guard you will need to have 1000gold. 
-║⚡ 𝗣𝗲𝗿𝗸𝘀: _If robbery attempt was made on your account, a guard will save your entire balance and will automatically deduct random(500-1000) from Culprit's account and add it to your account!_
-║
-╚═══◇║
 ╔═══◇║⚔️ 𝐒𝐰𝐨𝐫𝐝
 ║
 ║🛸 𝗧𝘆𝗽𝗲: _The medium account safe mode. 
@@ -245,7 +238,6 @@ return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat);
 if (!victim) {
 var newUser = new Robbery({
 ID: Receiver,
-guard: 0,
 sword: 0,
 laptop: 0,
 charm: 0,
@@ -283,7 +275,6 @@ chat,
 } else if (!culprit) {
 var newUser = new Robbery({
 ID: աɦօֆɛռȶɦǟȶ,
-guard: 0,
 sword: 0,
 laptop: 0,
 charm: 0,
@@ -344,55 +335,7 @@ chat,
 );
 }
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-if (victim.guard > 0) {
-if (cEconomy.money < 1000) {
-vEconomy.money = vEconomy.money + cEconomy.money;
-cEconomy.money = 0;
-} else {
-vEconomy.money = vEconomy.money + MoneyRandom;
-cEconomy.money = cEconomy.money - MoneyPadlock;
-}
-victim.guard = victim.guard - 1;
-culprit.CurrentRobberyTime = Date.now();
-await victim
-.save()
-.catch((Error) =>
-ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat)
-);
-await culprit
-.save()
-.catch((Error) =>
-ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat)
-);
-await vEconomy
-.save()
-.catch((Error) =>
-ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat)
-);
-await cEconomy
-.save()
-.catch((Error) =>
-ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat)
-);
-return Cortana_Buttons.MIB(
-ӄʀǟӄɨռʐ,
-chat,
-ƈօʀȶǟռǟ,
-`🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ}, 
-
-╔◇══════════════◇╗
-┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
-╚═══◇║
-╔═══◇║
-║❌ 𝗘𝗿𝗿𝗼𝗿: @${քɛʀֆօռɢօȶռʊʍ} _had a 🔒padlock in their bank!_
-║💡‍ 𝐒𝐭𝐚𝐭𝐮𝐬: _You Got Arrested!_
-║💰 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: @${աɦօֆɛռȶɦǟȶռʊʍ}, _${cEconomy.money}gold_
-║💰 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: @${քɛʀֆօռɢօȶռʊʍ}, = _${vEconomy.money}gold_
-╚════════════╝`,
-"./Cortana☣️Reactor/Cortana_Univ.png"
-);
-`|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-} else if (victim.sword > 0) {
+if (victim.sword > 0) {
 victim.sword = victim.sword - 1;
 if (cEconomy.money < 3000) {
 vEconomy.money = vEconomy.money + cEconomy.money;
@@ -814,7 +757,6 @@ return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat);
 if (!victim) {
 var newUser = new Robbery({
 ID: TagMention,
-guard: 0,
 sword: 0,
 laptop: 0,
 charm: 0,
@@ -883,7 +825,6 @@ mentionedJid: [աɦօֆɛռȶɦǟȶ, TagMention],
 } else if (!culprit) {
 var newUser = new Robbery({
 ID: աɦօֆɛռȶɦǟȶ,
-guard: 0,
 sword: 0,
 laptop: 0,
 charm: 0,
@@ -975,86 +916,7 @@ chat,
 );
 }
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-if (victim.guard > 0) {
-if (cEconomy.money < 1000) {
-vEconomy.money = vEconomy.money + cEconomy.money;
-cEconomy.money = 0;
-} else {
-vEconomy.money = vEconomy.money + MoneyRandom;
-cEconomy.money = cEconomy.money - MoneyPadlock;
-}
-victim.guard = victim.guard - 1;
-culprit.CurrentRobberyTime = Date.now();
-await victim
-.save()
-.catch((Error) =>
-ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat)
-);
-await culprit
-.save()
-.catch((Error) =>
-ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat)
-);
-await vEconomy
-.save()
-.catch((Error) =>
-ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat)
-);
-await cEconomy
-.save()
-.catch((Error) =>
-ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat)
-);
-const media = await ӄʀǟӄɨռʐ.prepareMessage(
-ƈօʀȶǟռǟ.chatId,
-{ url: "./Cortana☣️Reactor/Cortana_Univ.png" },
-MessageType.image,
-{ mimetype: Mimetype.png }
-);
-return await ӄʀǟӄɨռʐ
-.sendMessage(
-ƈօʀȶǟռǟ.chatId,
-{
-contentText: `🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ}, 
-
-╔◇══════════════◇╗
-┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
-╚═══◇║
-╔═══◇║
-║❌ 𝗘𝗿𝗿𝗼𝗿: @${TagPerson} _had a 🔒padlock in their bank!_
-║💡‍ 𝐒𝐭𝐚𝐭𝐮𝐬: _You Got Arrested!_
-║💰 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: @${աɦօֆɛռȶɦǟȶռʊʍ}, _${cEconomy.money}gold_
-║💰 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: @${TagPerson}, = _${vEconomy.money}gold_
-╚════════════╝`,
-footerText: `⎿ ©𝐂𝐨𝐫𝐭𝐚𝐧𝐚 • 𝐄𝐧𝐕𝐞𝐫: ${vers.vers} ⏋`,
-buttons: [
-{
-buttonId: `${ᴋᴇɪ}help`,
-buttonText: { displayText: `${ᴋᴇɪ}help` },
-type: 1,
-},
-{
-buttonId: `${ᴋᴇɪ}faq`,
-buttonText: { displayText: `${ᴋᴇɪ}faq` },
-type: 1,
-},
-],
-headerType: 4,
-imageMessage: media.message.imageMessage,
-},
-MessageType.buttonsMessage,
-{
-quoted: chat,
-contextInfo: {
-mentionedJid: [աɦօֆɛռȶɦǟȶ, TagMention],
-},
-}
-)
-.catch((Error) =>
-ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat)
-);
-`|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-} else if (victim.sword > 0) {
+if (victim.sword > 0) {
 victim.sword = victim.sword - 1;
 if (cEconomy.money < 3000) {
 vEconomy.money = vEconomy.money + cEconomy.money;
