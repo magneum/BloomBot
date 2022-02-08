@@ -2,7 +2,7 @@
 
 # (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈 🛸stable-yet-debug
 
-<img align="centre"  height="500" src="https://github.com/Krakinz/Corlexa/blob/KrakinzLab/%E1%B4%84%E1%B4%8F%CA%80%CA%9F%E1%B4%87x%E1%B4%80%E2%98%A3%EF%B8%8FReactor/%C6%88%D6%85%CA%80%C8%B6%C7%9F%D5%BC%C7%9F.png">
+<img align="centre"  height="400" src="https://github.com/Krakinz/Corlexa/blob/KrakinzLab/%E1%B4%84%E1%B4%8F%CA%80%CA%9F%E1%B4%87x%E1%B4%80%E2%98%A3%EF%B8%8FReactor/%F0%9D%96%88%F0%9D%96%94%F0%9D%96%97%F0%9D%96%91%F0%9D%96%8A%F0%9D%96%9D%F0%9D%96%86.png">
 
 ```
 🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚
