@@ -6,17 +6,18 @@
 (async () => {
 const ƈօʀȶǟռǟgoose = require("mongoose");
 const _𝔏𝔞𝔟_ = require(`./_𝔏𝔞𝔟_`);
-ƈօʀȶǟռǟgoose
-.connect(_𝔏𝔞𝔟_.CORTANAMDB, {
+try {
+ƈօʀȶǟռǟgoose.connect(_𝔏𝔞𝔟_.CORTANAMDB, {
 useNewUrlParser: true,
 useUnifiedTopology: true,
 useCreateIndex: true,
 useFindAndModify: false,
-})
-.catch((err) => {
-console.log(`💡 𝐈𝐧𝐟𝐨⬰ CortanaGoose Error: \n${err}`);
-process.exit(0);
 });
+console.log("💡 𝐈𝐧𝐟𝐨⬰ CortanaGoose Ready!");
+} catch (Error) {
+console.log(`💡 𝐈𝐧𝐟𝐨⬰ CortanaGoose Error: \n${Error}`);
+process.exit(0);
+}
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 try {
 const ᴍɪᴢᴜᴋɪɢɪᴛ = require(`simple-git`)();
