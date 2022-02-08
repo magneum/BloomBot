@@ -1,0 +1,8 @@
+FROM python:latest
+ENV KRAKINZ_LAB "/venv"
+RUN python -m venv $KRAKINZ_LAB
+ENV PATH "$KRAKINZ_LAB/bin:$PATH"
+RUN apt-get update &&  apt-get upgrade -y && apt-get install git -y && apt-get install curl -y && apt-get install ffmpeg -y && apt-get install nodejs -y && apt-get install python3 -y && apt-get install bpm-tools -y && apt-get install opus-tools -y &&  apt-get install python3-pip -y && apt-get install npm -y && npm install --global n && n install lts && path=path && hash -r
+RUN curl https://cli-assets.heroku.com/install.sh | sh
+RUN heroku plugins:install heroku-builds
+RUN heroku builds:cancel -a YOUR_HEROKU_APP_NAME
