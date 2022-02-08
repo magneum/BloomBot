@@ -237,7 +237,7 @@ const MemNum = update.participants[0];
 if (update.action == `add` && MemNum.includes(ӄʀǟӄɨռʐ.user.jid)) {
 const media = await ӄʀǟӄɨռʐ.prepareMessage(
 GroupID,
-{ url: "./ᴄᴏʀʟᴇxᴀ☣️Reactor/ᴄᴏʀʟᴇxᴀWelcome.png" },
+{ url: "./ᴄᴏʀʟᴇxᴀ☣️Reactor/𝖈𝖔𝖗𝖑𝖊𝖝𝖆_base.png" },
 MessageType.image,
 { mimetype: Mimetype.png }
 );
