@@ -29,9 +29,9 @@ RUN npm install --force
 # WORKDIR /
 # COPY . /Cortana
 # WORKDIR /Cortana
-RUN git init --initial-branch=KrakinzLab
-RUN git remote add origin https://github.com/Krakinz/Cortana.git
-RUN git fetch origin KrakinzLab
-RUN git reset --hard origin/KrakinzLab
+# RUN git init --initial-branch=KrakinzLab
+# RUN git remote add origin https://github.com/Krakinz/Cortana.git
+# RUN git fetch origin KrakinzLab
+# RUN git reset --hard origin/KrakinzLab
 CMD npm start
 
