@@ -3,9 +3,21 @@
 `|        (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!            |`;
 `|                                                                                                                        |`;
 `|⬡════════════════════════════════════════════|                            |═══════════════════════════════════════════⬡|`;
+(async () => {
 const ƈօʀȶǟռǟgoose = require("mongoose");
 const _𝔏𝔞𝔟_ = require(`./_𝔏𝔞𝔟_`);
-(async () => {
+ƈօʀȶǟռǟgoose
+.connect(_𝔏𝔞𝔟_.CORTANAMDB, {
+useNewUrlParser: true,
+useUnifiedTopology: true,
+useCreateIndex: true,
+useFindAndModify: false,
+})
+.catch((err) => {
+console.log(`💡 𝐈𝐧𝐟𝐨⬰ CortanaGoose Error: \n${err}`);
+process.exit(0);
+});
+`|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 try {
 const ᴍɪᴢᴜᴋɪɢɪᴛ = require(`simple-git`)();
 await ᴍɪᴢᴜᴋɪɢɪᴛ.fetch();
@@ -36,18 +48,6 @@ console.log(`💡 𝐈𝐧𝐟𝐨⬰ Nothing To Auto-Update!`);
 console.log(Error);
 console.log(`❌ 𝐄𝐫𝐫𝐨𝐫⬰ Please Re-Deploy!`);
 }
-`|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-await ƈօʀȶǟռǟgoose
-.connect(_𝔏𝔞𝔟_.CORTANAMDB, {
-useNewUrlParser: true,
-useUnifiedTopology: true,
-useCreateIndex: true,
-useFindAndModify: false,
-})
-.catch((err) => {
-console.log(`💡 𝐈𝐧𝐟𝐨⬰ CortanaGoose Error: \n${err}`);
-process.exit(0);
-});
 })();
 `|⬡════════════════════════════════════════════|                            |═══════════════════════════════════════════⬡|`;
 `|                                                                                                                        |`;

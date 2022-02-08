@@ -292,101 +292,10 @@ if (update.action === `remove`) return;
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 ӄʀǟӄɨռʐ.on(`chat-update`, async (chat) => {
 if (!chat.hasNewMessage) {
-try {
-const ᴍɪᴢᴜᴋɪɢɪᴛ = require(`simple-git`)();
-const Kolor = require(`chalk`);
-await ᴍɪᴢᴜᴋɪɢɪᴛ.fetch();
-var ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ = await ᴍɪᴢᴜᴋɪɢɪᴛ.log([
-`KrakinzLab..origin/KrakinzLab`,
-]);
-if (ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total != 0) {
-require(`simple-git`)()
-.exec(async () => {
-console.log(
-Kolor.yellow(
-  `💡 𝐈𝐧𝐟𝐨⬰ Updating Cortana System With Latest Patch...`
-)
-);
-})
-.pull(async (Error, update) => {
-if (Error) {
-console.log(
-  Kolor.red(
-    `❌ 𝐄𝐫𝐫𝐨𝐫⬰ Merge Resulted with Total-Conflicts: ${Kolor.red(
-      Error
-    )} `
-  )
-);
-} else if (update && update.summary.changes) {
-var childs =
-  require(`child_process`).exec(`python3 ᴄᴏʀᴛᴀɴᴀ.py`);
-childs.stdout.pipe(process.stdout);
-childs.on(`exit`, async function () {
-  process.exitCode = 1;
-  console.log(
-    Kolor.green(
-      `💡 𝐈𝐧𝐟𝐨⬰ Auto-Updating Finished. Total Changes: [${mergeSummary.merges.length}]`
-    )
-  );
-});
-} else {
-console.log(Kolor.green(`💡 𝐈𝐧𝐟𝐨⬰ Nothing To Auto-Update!`));
+return;
 }
-});
-}
-} catch (Error) {
-console.log(Error);
-console.log(Kolor.red(`❌ 𝐄𝐫𝐫𝐨𝐫⬰ 𝗣𝗹𝗲𝗮𝘀𝗲 𝗿𝗲𝗱𝗲𝗽𝗹𝗼𝘆 𝘆𝗼𝘂𝗿 𝗯𝗼𝘁!`));
-}
-}
-`|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 if (!chat.messages) {
-try {
-const ᴍɪᴢᴜᴋɪɢɪᴛ = require(`simple-git`)();
-const Kolor = require(`chalk`);
-await ᴍɪᴢᴜᴋɪɢɪᴛ.fetch();
-var ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ = await ᴍɪᴢᴜᴋɪɢɪᴛ.log([
-`KrakinzLab..origin/KrakinzLab`,
-]);
-if (ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total != 0) {
-require(`simple-git`)()
-.exec(async () => {
-console.log(
-Kolor.yellow(
-  `💡 𝐈𝐧𝐟𝐨⬰ Updating Cortana System With Latest Patch...`
-)
-);
-})
-.pull(async (Error, update) => {
-if (Error) {
-console.log(
-  Kolor.red(
-    `❌ 𝐄𝐫𝐫𝐨𝐫⬰ Merge Resulted with Total-Conflicts: ${Kolor.red(
-      Error
-    )} `
-  )
-);
-} else if (update && update.summary.changes) {
-var childs =
-  require(`child_process`).exec(`python3 ᴄᴏʀᴛᴀɴᴀ.py`);
-childs.stdout.pipe(process.stdout);
-childs.on(`exit`, async function () {
-  process.exitCode = 1;
-  console.log(
-    Kolor.green(
-      `💡 𝐈𝐧𝐟𝐨⬰ Auto-Updating Finished. Total Changes: [${mergeSummary.merges.length}]`
-    )
-  );
-});
-} else {
-console.log(Kolor.green(`💡 𝐈𝐧𝐟𝐨⬰ Nothing To Auto-Update!`));
-}
-});
-}
-} catch (Error) {
-console.log(Error);
-console.log(Kolor.red(`❌ 𝐄𝐫𝐫𝐨𝐫⬰ 𝗣𝗹𝗲𝗮𝘀𝗲 𝗿𝗲𝗱𝗲𝗽𝗹𝗼𝘆 𝘆𝗼𝘂𝗿 𝗯𝗼𝘁!`));
-}
+return;
 }
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 chat = chat.messages.all()[0];
@@ -440,12 +349,12 @@ if (BanGroup && !ƈօʀȶǟռǟ.fromMe && !ƈօʀȶǟռǟ.isSenderDev) return;
 if (!BanPerson && !BanGroup && ƈօʀȶǟռǟ.isGroup && !ƈօʀȶǟռǟ.fromMe) {
 Ranker.findOne(
 {
-  serverID: ƈօʀȶǟռǟ.chatId,
+serverID: ƈօʀȶǟռǟ.chatId,
 },
 async (Error, userRank) => {
-  if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat);
-  if (!userRank) return;
-  await RankCheck.MRC(ӄʀǟӄɨռʐ, chat, ƈօʀȶǟռǟ);
+if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat);
+if (!userRank) return;
+await RankCheck.MRC(ӄʀǟӄɨռʐ, chat, ƈօʀȶǟռǟ);
 }
 );
 }
@@ -459,71 +368,71 @@ if (
 ) {
 LinkList.findOne(
 {
-  serverID: ƈօʀȶǟռǟ.chatId,
+serverID: ƈօʀȶǟռǟ.chatId,
 },
 async (Error, server) => {
-  if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat);
-  `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-  if (!server) return;
-  var Kkp =
-    /^(https?:\/\/)?chat\.whatsapp\.com\/(?:invite\/)?([a-zA-Z0-9_-]{22})$/;
-  if (Kkp.test(ƈօʀȶǟռǟ.body) === true) {
-    await Cortana_Buttons.MIB(
-      ӄʀǟӄɨռʐ,
-      chat,
-      ƈօʀȶǟռǟ,
-      `
+if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat);
+`|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
+if (!server) return;
+var Kkp =
+/^(https?:\/\/)?chat\.whatsapp\.com\/(?:invite\/)?([a-zA-Z0-9_-]{22})$/;
+if (Kkp.test(ƈօʀȶǟռǟ.body) === true) {
+await Cortana_Buttons.MIB(
+ӄʀǟӄɨռʐ,
+chat,
+ƈօʀȶǟռǟ,
+`
 ╔════◇🌋  𝐀𝐧𝐭𝐢𝐥𝐢𝐧𝐤 𝐓𝐫𝐢𝐠𝐠𝐞𝐫𝐞𝐝
 ║
 ║⬡ 𝗣𝘂𝗻𝗶𝘀𝗵𝗺𝗲𝗻𝘁: _You Will Be Kicked!_
 ║⬡ 𝗞𝗶𝗰𝗸-𝗧𝗶𝗺𝗲: _2seconds_
 ╚════════════╝`,
-      `./Cortana☣️Reactor/Cortana_Antilink.png`
-    );
-    setTimeout(() => {
-      ӄʀǟӄɨռʐ
-        .groupRemove(ƈօʀȶǟռǟ.chatId, [ƈօʀȶǟռǟ.sender])
-        .catch((Error) =>
-          ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat)
-        );
-      return;
-    }, 2000);
-  }
-  `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-  if (
-    !ƈօʀȶǟռǟ.body.includes(_𝔏𝔞𝔟_.HASH) &&
-    !ƈօʀȶǟռǟ.body.includes(_𝔏𝔞𝔟_.HASHS) &&
-    !ƈօʀȶǟռǟ.body.includes(_𝔏𝔞𝔟_.HASHSH) &&
-    ƈօʀȶǟռǟ.body.includes("www.") &&
-    ƈօʀȶǟռǟ.body.includes("https://") &&
-    ƈօʀȶǟռǟ.body.includes("wa.me/") &&
-    ƈօʀȶǟռǟ.body.includes("/t.me/") &&
-    ƈօʀȶǟռǟ.body.includes("discord.gg") &&
-    ƈօʀȶǟռǟ.body.includes("discord.com") &&
-    ƈօʀȶǟռǟ.body.includes("https://t.me/") &&
-    ƈօʀȶǟռǟ.body.includes("https://chat.whatsapp")
-  ) {
-    await Cortana_Buttons.MIB(
-      ӄʀǟӄɨռʐ,
-      chat,
-      ƈօʀȶǟռǟ,
-      `
+`./Cortana☣️Reactor/Cortana_Antilink.png`
+);
+setTimeout(() => {
+ӄʀǟӄɨռʐ
+.groupRemove(ƈօʀȶǟռǟ.chatId, [ƈօʀȶǟռǟ.sender])
+.catch((Error) =>
+ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat)
+);
+return;
+}, 2000);
+}
+`|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
+if (
+!ƈօʀȶǟռǟ.body.includes(_𝔏𝔞𝔟_.HASH) &&
+!ƈօʀȶǟռǟ.body.includes(_𝔏𝔞𝔟_.HASHS) &&
+!ƈօʀȶǟռǟ.body.includes(_𝔏𝔞𝔟_.HASHSH) &&
+ƈօʀȶǟռǟ.body.includes("www.") &&
+ƈօʀȶǟռǟ.body.includes("https://") &&
+ƈօʀȶǟռǟ.body.includes("wa.me/") &&
+ƈօʀȶǟռǟ.body.includes("/t.me/") &&
+ƈօʀȶǟռǟ.body.includes("discord.gg") &&
+ƈօʀȶǟռǟ.body.includes("discord.com") &&
+ƈօʀȶǟռǟ.body.includes("https://t.me/") &&
+ƈօʀȶǟռǟ.body.includes("https://chat.whatsapp")
+) {
+await Cortana_Buttons.MIB(
+ӄʀǟӄɨռʐ,
+chat,
+ƈօʀȶǟռǟ,
+`
 ╔════◇🌋  𝐀𝐧𝐭𝐢𝐥𝐢𝐧𝐤 𝐓𝐫𝐢𝐠𝐠𝐞𝐫𝐞𝐝
 ║
 ║⬡ 𝗣𝘂𝗻𝗶𝘀𝗵𝗺𝗲𝗻𝘁: _You Will Be Kicked!_
 ║⬡ 𝗞𝗶𝗰𝗸-𝗧𝗶𝗺𝗲: _2seconds_
 ╚════════════╝`,
-      `./Cortana☣️Reactor/Cortana_Antilink.png`
-    );
-    setTimeout(() => {
-      ӄʀǟӄɨռʐ
-        .groupRemove(ƈօʀȶǟռǟ.chatId, [ƈօʀȶǟռǟ.sender])
-        .catch((Error) =>
-          ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat)
-        );
-      return;
-    }, 2000);
-  }
+`./Cortana☣️Reactor/Cortana_Antilink.png`
+);
+setTimeout(() => {
+ӄʀǟӄɨռʐ
+.groupRemove(ƈօʀȶǟռǟ.chatId, [ƈօʀȶǟռǟ.sender])
+.catch((Error) =>
+ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat)
+);
+return;
+}, 2000);
+}
 }
 );
 }
@@ -559,15 +468,15 @@ if (
 !ƈօʀȶǟռǟ.body.includes(ᴋᴇɪ + "faq")
 )
 if (
-  !member1.includes(աɦօֆɛռȶɦǟȶ) &&
-  !member2.includes(աɦօֆɛռȶɦǟȶ) &&
-  !member3.includes(աɦօֆɛռȶɦǟȶ)
+!member1.includes(աɦօֆɛռȶɦǟȶ) &&
+!member2.includes(աɦօֆɛռȶɦǟȶ) &&
+!member3.includes(աɦօֆɛռȶɦǟȶ)
 ) {
-  return Cortana_Buttons.MIB(
-    ӄʀǟӄɨռʐ,
-    chat,
-    ƈօʀȶǟռǟ,
-    `🤖𝐕𝐞𝐫𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧: @${աɦօֆɛռȶɦǟȶռʊʍ}, 
+return Cortana_Buttons.MIB(
+ӄʀǟӄɨռʐ,
+chat,
+ƈօʀȶǟռǟ,
+`🤖𝐕𝐞𝐫𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧: @${աɦօֆɛռȶɦǟȶռʊʍ}, 
 _You Are Not Verified.Join Any Cortana Group and Verify Yourself First!_
 
 
@@ -580,8 +489,8 @@ _You Are Not Verified.Join Any Cortana Group and Verify Yourself First!_
 ╚════════════╝
 
 👇🏽‍𝗣𝗿𝗲𝘀𝘀 𝗙𝗔𝗤 𝗳𝗼𝗿 𝗹𝗶𝗻𝗸!👇🏽‍`,
-    "./Cortana☣️Reactor/Krakinz-NoVerity.png"
-  );
+"./Cortana☣️Reactor/Krakinz-NoVerity.png"
+);
 }
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 const jsoncool = JSON.parse(
@@ -589,43 +498,43 @@ fs.readFileSync("./Cortana🛰️Server/Coolist.json")
 );
 if (jsoncool.includes(աɦօֆɛռȶɦǟȶ)) {
 if (ƈօʀȶǟռǟ.isSenderDev) {
-  await ӄʀǟӄɨռʐ
-    .sendMessage(
-      ƈօʀȶǟռǟ.chatId,
-      `🪶 𝐇𝐞𝐲:: @${աɦօֆɛռȶɦǟȶռʊʍ}, _Sir Wait For 5seconds_`,
-      MessageType.text,
-      {
-        quoted: chat,
-        contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
-      }
-    )
-    .catch((Error) =>
-      ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat)
-    );
-  return;
+await ӄʀǟӄɨռʐ
+.sendMessage(
+ƈօʀȶǟռǟ.chatId,
+`🪶 𝐇𝐞𝐲:: @${աɦօֆɛռȶɦǟȶռʊʍ}, _Sir Wait For 5seconds_`,
+MessageType.text,
+{
+quoted: chat,
+contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
+}
+)
+.catch((Error) =>
+ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat)
+);
+return;
 } else {
-  await ӄʀǟӄɨռʐ
-    .sendMessage(
-      ƈօʀȶǟռǟ.chatId,
-      `🚩𝐂𝐨𝐨𝐥𝐝𝐨𝐰𝐧: @${աɦօֆɛռȶɦǟȶռʊʍ}, _Wait For 15seconds_`,
-      MessageType.text,
-      {
-        quoted: chat,
-        contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
-      }
-    )
-    .catch((Error) =>
-      ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat)
-    );
-  return;
+await ӄʀǟӄɨռʐ
+.sendMessage(
+ƈօʀȶǟռǟ.chatId,
+`🚩𝐂𝐨𝐨𝐥𝐝𝐨𝐰𝐧: @${աɦօֆɛռȶɦǟȶռʊʍ}, _Wait For 15seconds_`,
+MessageType.text,
+{
+quoted: chat,
+contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
+}
+)
+.catch((Error) =>
+ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat)
+);
+return;
 }
 }
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 console.log(
 Kolor.green(
-  "⬡═════════════|🍃𝐂𝐨𝐫𝐭𝐚𝐧𝐚> " +
-    ƈօʀȶǟռǟ.commandName.toUpperCase() +
-    " <𝐕𝐞𝐫𝐢𝐟𝐢𝐞𝐝 𝐅𝐢𝐥𝐞|═════════════"
+"⬡═════════════|🍃𝐂𝐨𝐫𝐭𝐚𝐧𝐚> " +
+ƈօʀȶǟռǟ.commandName.toUpperCase() +
+" <𝐕𝐞𝐫𝐢𝐟𝐢𝐞𝐝 𝐅𝐢𝐥𝐞|═════════════"
 )
 );
 console.log(chat);
@@ -633,10 +542,10 @@ const ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ = ꜱɪᴛʀᴀᴘ.get(ƈօʀȶǟռǟ
 var Needs = ƈօʀȶǟռǟ.body.trim().split(/\s+/).slice(1);
 if (!ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ) {
 return await Cortana_Buttons.MTB(
-  ӄʀǟӄɨռʐ,
-  chat,
-  ƈօʀȶǟռǟ,
-  `🪶 𝐇𝐞𝐲:: @${աɦօֆɛռȶɦǟȶռʊʍ},
+ӄʀǟӄɨռʐ,
+chat,
+ƈօʀȶǟռǟ,
+`🪶 𝐇𝐞𝐲:: @${աɦօֆɛռȶɦǟȶռʊʍ},
 
 ╔════◇🛸𝐂𝐨𝐫𝐭𝐚𝐧𝐚 by 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛
 ║❌ _No Such Command In Database!_
@@ -644,14 +553,14 @@ return await Cortana_Buttons.MTB(
 );
 } else {
 return ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ.handle(
-  ӄʀǟӄɨռʐ,
-  chat,
-  ƈօʀȶǟռǟ,
-  Needs,
-  ꜱɪᴛʀᴀᴘ,
-  Clock,
-  Ping,
-  Timers
+ӄʀǟӄɨռʐ,
+chat,
+ƈօʀȶǟռǟ,
+Needs,
+ꜱɪᴛʀᴀᴘ,
+Clock,
+Ping,
+Timers
 );
 }
 }
