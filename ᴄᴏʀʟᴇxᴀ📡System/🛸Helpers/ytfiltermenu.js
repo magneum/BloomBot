@@ -36,11 +36,23 @@ var MainText = `🪶 𝐇𝐞𝐲: •@${աɦօֆɛռȶɦǟȶռʊʍ}, ${Timers}
 
 ╔════◇⭕ 𝐘𝐨𝐮𝐓𝐮𝐛𝐞/𝐅𝐢𝐥𝐭𝐞𝐫
 ║
+║• *${ᴋᴇɪ}yt8d*  _download yt audio with filter_
 ║• *${ᴋᴇɪ}ytbassboost*  _download yt audio with filter_
 ║• *${ᴋᴇɪ}ytdeep*  _download yt audio with filter_
+║• *${ᴋᴇɪ}ytecho*  _download yt audio with filter_
 ║• *${ᴋᴇɪ}ytfast*  _download yt audio with filter_
-║• *${ᴋᴇɪ}ytreverse*  _download yt audio with filter_
+║• *${ᴋᴇɪ}ytflanger*  _download yt audio with filter_
 ║• *${ᴋᴇɪ}ytnightcore*  _download yt audio with filter_
+║• *${ᴋᴇɪ}ytphaser*  _download yt audio with filter_
+║• *${ᴋᴇɪ}ytreverse*  _download yt audio with filter_
+║• *${ᴋᴇɪ}ytslow*  _download yt audio with filter_
+║• *${ᴋᴇɪ}ytspeed*  _download yt audio with filter_
+║• *${ᴋᴇɪ}ytsubboost*  _download yt audio with filter_
+║• *${ᴋᴇɪ}ytsuperslow*  _download yt audio with filter_
+║• *${ᴋᴇɪ}ytsuperspeed*  _download yt audio with filter_
+║• *${ᴋᴇɪ}ytsurround*  _download yt audio with filter_
+║• *${ᴋᴇɪ}ytvaporwave*  _download yt audio with filter_
+║• *${ᴋᴇɪ}ytvibrato*  _download yt audio with filter_
 ╚════════════╝`;
 return ᴄᴏʀʟᴇxᴀ_Buttons.MIB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
