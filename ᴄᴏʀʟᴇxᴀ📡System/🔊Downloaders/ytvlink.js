@@ -292,7 +292,7 @@ chat,
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 try {
 var FFmpegStream = ytdl(Found.url, {
-quality: "highest",
+quality: "highestaudio",
 });
 ffmpeg(FFmpegStream)
 .videoBitrate(360)
@@ -359,7 +359,7 @@ return ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔�
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 } catch (Error) {
 const downloadFFmpegFile = ytdl(Found.url, {
-quality: "highest",
+quality: "highestaudio",
 });
 const writeStream = fs.createWriteStream(FFmpegFile);
 downloadFFmpegFile.pipe(writeStream);
