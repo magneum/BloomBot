@@ -16,7 +16,8 @@ RUN apt-get install imagemagick -y
 RUN curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
 RUN chmod a+rx /usr/local/bin/youtube-dl
 RUN apt-get install npm -y 
-RUN npm install --global n 
+RUN npm install --global n
+RUN npm install --global npm 
 RUN n install 16
 RUN path=path 
 RUN hash -r 
