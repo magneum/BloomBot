@@ -48,13 +48,16 @@ var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ
 const defaultnm = 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.commandName;
 const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
+await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
+.sendMessage(
 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
 {
-contentText: `🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ},
+contentText: `🪶 𝐇𝐞𝐲: @${քɛʀֆօռɢօȶռʊʍ}
 
-❌ 𝗘𝗿𝗿𝗼𝗿: _Api Timeout.Try Again Later!_
-⚙️ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${FinalName}_`,
+╔════◇🛸𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ᴋᴇɪ}${FinalName}
+║❌ 𝗘𝗿𝗿𝗼𝗿: _Api Timeout.Try Again Later!_
+║⚡ 𝐅𝐫𝐨𝐦: _Corlexa Dev Team_
+╚════════════╝`,
 footerText: `◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 ◇ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™◥`,
 buttons: [
 {
@@ -70,8 +73,18 @@ MessageType.buttonsMessage,
 quoted: chat,
 contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
 }
-);
-await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
+)
+.catch((Error) => {
+console.log(Error);
+var childs = require(`child_process`).exec(`python3 🐙ᴋʀʏᴏᴛᴇᴋ.py`);
+childs.stdout.pipe(process.stdout);
+childs.on(`exit`, async function () {
+process.exitCode = 1;
+});
+});
+`|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
+return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
+.sendMessage(
 "120363022161584857@g.us",
 {
 contentText: `
@@ -88,8 +101,15 @@ type: 1,
 headerType: 1,
 },
 MessageType.buttonsMessage
-);
-return;
+)
+.catch((Error) => {
+console.log(Error);
+var childs = require(`child_process`).exec(`python3 🐙ᴋʀʏᴏᴛᴇᴋ.py`);
+childs.stdout.pipe(process.stdout);
+childs.on(`exit`, async function () {
+process.exitCode = 1;
+});
+});
 };
 `|⬡════════════════════════════════════════════|                            |═══════════════════════════════════════════⬡|`;
 `|                                                                                                                        |`;
