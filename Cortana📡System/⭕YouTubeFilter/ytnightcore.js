@@ -226,7 +226,7 @@ ffmpeg(FFmpegStream)
 .saveToFile(FFmpegFile)
 .on("end", () => {
 require("child_process").exec(
-`ffmpeg -i ${FFmpegFile} -filter:a atempo=1.06,asetrate=44100*1.25 ${FilteredAudio}`,
+`ffmpeg -i ${FFmpegFile} -af "aresample=48000,asetrate=48000*1.25" ${FilteredAudio}`,
 async (Error) => {
 if (Error) {
 userBadge.Limits = userBadge.Limits + 1;
