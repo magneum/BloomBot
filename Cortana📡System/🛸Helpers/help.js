@@ -84,7 +84,7 @@ await ӄʀǟӄɨռʐ
 contentText: `🪶 𝐇𝐞𝐲: •@${աɦօֆɛռȶɦǟȶռʊʍ}, ${Timers}
 🛸𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈: _ɪꜱ ᴀ ᴡʜᴀᴛꜱᴀᴘᴘ ᴍᴜʟᴛɪᴘᴜʀᴘᴏꜱᴇ-ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ ᴍᴏᴅᴇʀᴀᴛɪᴏɴ,ᴀᴜᴛᴏᴍᴀᴛɪᴏɴ ᴀɴᴅ 100+ ᴄᴏᴍᴍᴀɴᴅꜱ!_
 
-╔════◇║ 👇🏽𝐒𝐲𝐦𝐥𝐢𝐧𝐤 𝐈𝐧𝐟𝐨𝐬👇🏽
+╔══◇꧁༺ 👇🏽𝐒𝐲𝐦𝐥𝐢𝐧𝐤👇🏽 ༻꧂  
 ║
 ║シ︎⚙️ *Engine:* _${vers.vers}_
 ║シ︎💻 *Platform:* _${os.platform()}_
@@ -92,8 +92,8 @@ contentText: `🪶 𝐇𝐞𝐲: •@${աɦօֆɛռȶɦǟȶռʊʍ}, ${Timers}
 ║シ︎☕ *Uptime:* _${runtime(process.uptime())}_
 ║シ︎🎮 *Ram:* _${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}_ (29-User-Bot)
 ║
-╚◇║
-╔◇║ 👇🏽𝐄𝐯𝐞𝐫𝐲𝐨𝐧𝐞👇🏽 
+╚◇╗
+╔◇╜꧁༺ 👇🏽𝐄𝐯𝐞𝐫𝐲𝐨𝐧𝐞👇🏽 ༻꧂  
 ║
 ║🍣 _${ᴋᴇɪ}animemenu_
 ║💰 _${ᴋᴇɪ}gamemenu_
@@ -105,8 +105,8 @@ contentText: `🪶 𝐇𝐞𝐲: •@${աɦօֆɛռȶɦǟȶռʊʍ}, ${Timers}
 ║🏝️ _${ᴋᴇɪ}filtersmenu_
 ║🎨 _${ᴋᴇɪ}checkmenu_
 ║
-╚◇║
-╔◇║ 👇🏽𝐀𝐝𝐦𝐢𝐧-𝐎𝐧𝐥𝐲👇🏽
+╚◇╗
+╔◇╜꧁༺ 👇🏽𝐀𝐝𝐦𝐢𝐧-𝐎𝐧𝐥𝐲👇🏽 ༻꧂  
 ║
 ║🔰 _${ᴋᴇɪ}groupmenu_
 ║🍄 _${ᴋᴇɪ}hentaimenu_ 
