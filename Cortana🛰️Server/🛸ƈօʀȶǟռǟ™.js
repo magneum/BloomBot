@@ -65,7 +65,7 @@ var ӄʀǟӄɨռʐ = ƈօʀȶǟռǟֆʏռօք.WhatsApp;
 ӄʀǟӄɨռʐ.logger.level = "error";
 async function ƈօʀȶǟռǟ() {
   try {
-    ƈօʀȶǟռǟgoose.connect(_𝔏𝔞𝔟_.CORTANAMDB, {
+    await ƈօʀȶǟռǟgoose.connect(_𝔏𝔞𝔟_.CORTANAMDB, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
       useCreateIndex: true,
