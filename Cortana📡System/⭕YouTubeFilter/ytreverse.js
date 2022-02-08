@@ -228,7 +228,7 @@ ffmpeg(stream)
 .saveToFile(FFmpegFile)
 .on("end", () => {
 require("child_process").exec(
-`ffmpeg -i ${FFmpegFile} -af equalizer=f=94:width_type=o:width=2:g=30 ${FilteredAudio}`,
+`ffmpeg -i ${FFmpegFile} -filter_complex "areverse" ${FilteredAudio}`,
 async (Error) => {
 if (Error) {
 userBadge.Limits = userBadge.Limits + 1;

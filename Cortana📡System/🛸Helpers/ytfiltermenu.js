@@ -34,19 +34,13 @@ var MediaUrl = `./Cortana☣️Reactor/ƈօʀȶǟռǟ.png`;
 var MainText = `🪶 𝐇𝐞𝐲: •@${աɦօֆɛռȶɦǟȶռʊʍ}, ${Timers}
 🛸𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈: _ɪꜱ ᴀ ᴡʜᴀᴛꜱᴀᴘᴘ ᴍᴜʟᴛɪᴘᴜʀᴘᴏꜱᴇ-ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ ᴍᴏᴅᴇʀᴀᴛɪᴏɴ,ᴀᴜᴛᴏᴍᴀᴛɪᴏɴ ᴀɴᴅ 100+ ᴄᴏᴍᴍᴀɴᴅꜱ!_
 
-╔════◇🏝️ 𝐅𝐢𝐥𝐭𝐞𝐫𝐬/𝐀𝐮𝐝𝐢𝐨
+╔════◇⭕ 𝐘𝐨𝐮𝐓𝐮𝐛𝐞/𝐅𝐢𝐥𝐭𝐞𝐫
 ║
-║• *${ᴋᴇɪ}bass*  _audio filter_
-║• *${ᴋᴇɪ}blown*  _audio filter_
-║• *${ᴋᴇɪ}deep*  _audio filter_
-║• *${ᴋᴇɪ}earrape*  _audio filter_
-║• *${ᴋᴇɪ}fast*  _audio filter_
-║• *${ᴋᴇɪ}fat*  _audio filter_
-║• *${ᴋᴇɪ}nightcore*  _audio filter_
-║• *${ᴋᴇɪ}reverse*  _audio filter_
-║• *${ᴋᴇɪ}robot*  _audio filter_
-║• *${ᴋᴇɪ}slow*  _audio filter_
-║• *${ᴋᴇɪ}smooth*  _audio filter_
+║• *${ᴋᴇɪ}bass*  _download yt audio with filter_
+║• *${ᴋᴇɪ}deep*  _download yt audio with filter_
+║• *${ᴋᴇɪ}fast*  _download yt audio with filter_
+║• *${ᴋᴇɪ}reverse*  _download yt audio with filter_
+║• *${ᴋᴇɪ}nightcore*  _download yt audio with filter_
 ╚════════════╝`;
 return Cortana_Buttons.MIB(
 ӄʀǟӄɨռʐ,
@@ -55,7 +49,6 @@ chat,
 MainText,
 MediaUrl
 ).catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat));
-`|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 } catch (Error) {
 ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat);
