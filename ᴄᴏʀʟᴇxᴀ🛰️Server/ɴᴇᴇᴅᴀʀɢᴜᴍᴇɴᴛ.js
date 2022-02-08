@@ -23,9 +23,7 @@ return ᴄᴏʀʟᴇxᴀ_Buttons.MIB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 𝖈𝖔𝖗𝖑𝖊𝖝𝖆,
-`◇══════════════════◇\n𝐂𝐨𝐦𝐦𝐚𝐧𝐝⚙️𝐔𝐬𝐚𝐠𝐞\n◇══════════════════◇
-🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ}
-
+`🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ} Read The Usage Dumbo!
 
 ${needs === undefined ? `null` : needs}`,
 "./ᴄᴏʀʟᴇxᴀ☣️Reactor/ᴄᴏʀʟᴇxᴀ_Univ.png"

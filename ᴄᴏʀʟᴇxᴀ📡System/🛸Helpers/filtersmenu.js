@@ -36,17 +36,23 @@ var MainText = `🪶 𝐇𝐞𝐲: •@${աɦօֆɛռȶɦǟȶռʊʍ}, ${Timers}
 
 ╔════◇🏝️ 𝐅𝐢𝐥𝐭𝐞𝐫𝐬/𝐀𝐮𝐝𝐢𝐨
 ║
+║• *${ᴋᴇɪ}8d*  _audio filter_
 ║• *${ᴋᴇɪ}bassboost*  _audio filter_
-║• *${ᴋᴇɪ}blown*  _audio filter_
 ║• *${ᴋᴇɪ}deep*  _audio filter_
-║• *${ᴋᴇɪ}earrape*  _audio filter_
+║• *${ᴋᴇɪ}echo*  _audio filter_
 ║• *${ᴋᴇɪ}fast*  _audio filter_
-║• *${ᴋᴇɪ}fat*  _audio filter_
+║• *${ᴋᴇɪ}flanger*  _audio filter_
 ║• *${ᴋᴇɪ}nightcore*  _audio filter_
+║• *${ᴋᴇɪ}phaser*  _audio filter_
 ║• *${ᴋᴇɪ}reverse*  _audio filter_
-║• *${ᴋᴇɪ}robot*  _audio filter_
 ║• *${ᴋᴇɪ}slow*  _audio filter_
-║• *${ᴋᴇɪ}smooth*  _audio filter_
+║• *${ᴋᴇɪ}speed*  _audio filter_
+║• *${ᴋᴇɪ}subboost*  _audio filter_
+║• *${ᴋᴇɪ}superslow*  _audio filter_
+║• *${ᴋᴇɪ}superspeed*  _audio filter_
+║• *${ᴋᴇɪ}surround*  _audio filter_
+║• *${ᴋᴇɪ}vaporwave*  _audio filter_
+║• *${ᴋᴇɪ}vibrato*  _audio filter_
 ╚════════════╝`;
 return ᴄᴏʀʟᴇxᴀ_Buttons.MIB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,

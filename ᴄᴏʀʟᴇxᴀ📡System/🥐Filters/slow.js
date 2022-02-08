@@ -135,8 +135,8 @@ chat,
 `🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ},
 
 ╔════◇🌿𝗣𝗹𝗲𝗮𝘀𝗲 𝘄𝗮𝗶𝘁!
-║⭕ 𝗙𝗶𝗹𝗲 𝗧𝘆𝗽𝗲: _${newScpt} Audio-Filter_
-║⏰ 𝗪𝗮𝗶𝘁 𝗧𝗶𝗺𝗲: _Depends on Length of file._
+║🎹 𝗙𝗶𝗹𝘁𝗲𝗿 𝗧𝘆𝗽𝗲: _${FinalName}_
+║⏰ 𝗪𝗮𝗶𝘁 𝗧𝗶𝗺𝗲: _Depends on Filter Type._
 ╚════════════╝`,
 "./ᴄᴏʀʟᴇxᴀ☣️Reactor/ᴄᴏʀʟᴇxᴀ_Ffmpeg.png"
 );
@@ -151,7 +151,7 @@ await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.downloadAndSaveMediaMessage(FILEOBJEC
 var Convert_From = `${FILEID}.mp4`;
 var Convert_To = `_${FILEID}_.mp4`;
 exec(
-`ffmpeg -i ${Convert_From} -filter:a "atempo=0.7,asetrate=44100" ${Convert_To}`,
+`ffmpeg -i ${Convert_From} -af "atempo=0.8" ${Convert_To}`,
 async (Error) => {
 cleanRF.cleanRF(Convert_From);
 if (Error) {
