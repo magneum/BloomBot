@@ -172,8 +172,8 @@ if 爪𝖎𝖟𝖚ӄ𝖎 is not None:
                 pass
             os.system('touch Cortana🛰️Server/Coolist.json')
             os.system('node Cortana🛰️Server/touched.js')
-            os.system('node Cortana☣️Reactor/🛸ᴄᴏʀᴛᴀɴᴀ™.js')
             os.system('node Cortana🛰️Server/ᴋʀʏᴏɢɪᴛ.js')
+            os.system('node Cortana🛰️Server/🛸ƈօʀȶǟռǟ™.js')
         else:
             print("❌❌❌     Wrong ӄʀǟӄɨռʐ code   ❌❌❌")
             os.remove("xp0e.zip")
