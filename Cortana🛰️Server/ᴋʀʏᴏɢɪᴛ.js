@@ -35,14 +35,13 @@ console.log(
 );
 }
 if (update && update.summary.changes) {
-var childs = require(`child_process`).exec(`python3 ᴄᴏʀᴛᴀɴᴀ.py`);
+var childs = require(`child_process`).exec(`python3 🐙ᴋʀʏᴏᴛᴇᴋ.py`);
 childs.stdout.pipe(process.stdout);
 childs.on(`exit`, async function () {
 process.exitCode = 1;
 console.log(`💡 𝐈𝐧𝐟𝐨⬰ Auto-Updating Finished!`);
 });
 }
-console.log(`💡 𝐈𝐧𝐟𝐨⬰ Nothing To Auto-Update!`);
 });
 }
 } catch (Error) {
