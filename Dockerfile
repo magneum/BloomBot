@@ -12,7 +12,7 @@ RUN apt-get install python3 -y
 RUN apt-get install bpm-tools -y 
 RUN apt-get install opus-tools -y  
 RUN apt-get install python3-pip -y 
-RUN apt-get install imagemagick -y
+# RUN apt-get install imagemagick -y
 RUN curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
 RUN chmod a+rx /usr/local/bin/youtube-dl
 RUN apt-get install npm -y 
