@@ -85,21 +85,22 @@ chat,
 ╔◇║💡 𝐀𝐥𝐥 𝐂𝐨𝐦𝐦𝐚𝐧𝐝 𝐂𝐚𝐭𝐞𝐠𝐨𝐫𝐢𝐞𝐬 𝐁𝐫𝐢𝐞𝐟𝐥𝐲 𝐄𝐱𝐩𝐥𝐚𝐢𝐧𝐞𝐝
 ║
 ◇══════║ 👇🏽𝐄𝐯𝐞𝐫𝐲𝐨𝐧𝐞 
-║🍣 _${ᴋᴇɪ}animemenu_ = search anime, get anime gifs,get random anime wallpapers.
-║💰 _${ᴋᴇɪ}gamemenu_ = play random games on whatsapp.
-║📥 _${ᴋᴇɪ}downloadmenu_ = download videos and audio files from YouTube,Instagram.
-║🔰 _${ᴋᴇɪ}groupmenu_ = group moderation and automation.
-║🦄 _${ᴋᴇɪ}randommenu_ = some random stuffs look yourself.
-║🔎 _${ᴋᴇɪ}searchmenu_ = surf the internet within whatsapp.
-║🗂️ _${ᴋᴇɪ}ffmpegmenu_ = convertion using ffmpeg. 
-║🏝️ _${ᴋᴇɪ}filtersmenu_ = add custom audio filter to mp3 files.
-║🎨 _${ᴋᴇɪ}checkmenu_ = tag or reply to someone to check what category they are.
+║🍣 *${ᴋᴇɪ}animemenu* = search anime, get anime gifs,get random anime wallpapers.
+║💰 *${ᴋᴇɪ}gamemenu* = play random games on whatsapp.
+║⭕ *${ᴋᴇɪ}ytfiltermenu* = download yt audio with filters pre-applied.
+║📥 *${ᴋᴇɪ}downloadmenu* = download videos and audio files from YouTube,Instagram.
+║🔰 *${ᴋᴇɪ}groupmenu* = group moderation and automation.
+║🦄 *${ᴋᴇɪ}randommenu* = some random stuffs look yourself.
+║🔎 *${ᴋᴇɪ}searchmenu* = surf the internet within whatsapp.
+║🗂️ *${ᴋᴇɪ}ffmpegmenu* = convertion using ffmpeg. 
+║🏝️ *${ᴋᴇɪ}filtersmenu* = add custom audio filter to mp3 files.
+║🎨 *${ᴋᴇɪ}checkmenu* = tag or reply to someone to check what category they are.
 ║
 ◇══════║ 👇🏽𝐀𝐝𝐦𝐢𝐧-𝐎𝐧𝐥𝐲
-║🔰 _${ᴋᴇɪ}groupmenu_ = not safe for work adult stuffs!
-║🍄 _${ᴋᴇɪ}hentaimenu_ = not safe for work adult stuffs! 
-║🥃 _${ᴋᴇɪ}humanmenu_ = not safe for work adult stuffs!  
-║🐙 _${ᴋᴇɪ}ownermenu_ = owner/dev only! 
+║🔰 *${ᴋᴇɪ}groupmenu* = not safe for work adult stuffs!
+║🍄 *${ᴋᴇɪ}hentaimenu* = not safe for work adult stuffs! 
+║🥃 *${ᴋᴇɪ}humanmenu* = not safe for work adult stuffs!  
+║🐙 *${ᴋᴇɪ}ownermenu* = owner/dev only! 
 ╚════════════╝`,
 "./ᴄᴏʀʟᴇxᴀ☣️Reactor/𝖈𝖔𝖗𝖑𝖊𝖝𝖆.png"
 );

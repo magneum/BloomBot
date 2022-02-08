@@ -4,6 +4,11 @@
 
 <img align="centre"  height="400" src="https://github.com/Krakinz/Corlexa/blob/KrakinzLab/%E1%B4%84%E1%B4%8F%CA%80%CA%9F%E1%B4%87x%E1%B4%80%E2%98%A3%EF%B8%8FReactor/%F0%9D%96%88%F0%9D%96%94%F0%9D%96%97%F0%9D%96%91%F0%9D%96%8A%F0%9D%96%9D%F0%9D%96%86.png">
 
+🛸[`(𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚 𝐀𝐝𝐯𝐚𝐧𝐜𝐞 𝐀𝐈🍾 #A`](https://chat.whatsapp.com/LKN8uVBd8ucHRHofz0jBSd)
+🛸[`(𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚 𝐀𝐝𝐯𝐚𝐧𝐜𝐞 𝐀𝐈🍾 #B`](https://chat.whatsapp.com/HKO5WLEZxMe3xWCyiv6vBu)
+🛸[`(𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚 𝐀𝐝𝐯𝐚𝐧𝐜𝐞 𝐀𝐈🍾 #C`](https://chat.whatsapp.com/EIn3YFShFmkJ3fvAqf2rpn)
+🛸[`𝐃𝐢𝐬𝐜𝐨𝐫𝐝`](https://discord.gg/xcFN6NDHEV)
+
 ```
 🦋𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚
 
@@ -15,62 +20,66 @@
 ╚◇║
 ╔◇║⚡ 𝐅𝐫𝐞𝐪𝐮𝐞𝐧𝐭𝐥𝐲 𝐀𝐬𝐤𝐞𝐝 𝐐𝐮𝐞𝐬𝐭𝐢𝐨𝐧𝐬
 ║
-║◇ ❓*What is the reason/topic for this group?*
+╚◇║
+╔◇║❓What is the reason/topic for this group?
 ║ ᴄᴏʀʟᴇxᴀ is an Advance Whatsapp User-Bot. You Can Use The Bot in this group or in your respective groups.
 ║
-║◇ *❓How Do I add ᴄᴏʀʟᴇxᴀ In My Group?*
+╚◇║
+╔◇║❓How Do I add ᴄᴏʀʟᴇxᴀ In My Group?
 ║   -Send Your Group Link In: https://chat.whatsapp.com/EIn3YFShFmkJ3fvAqf2rpn
 ║   -Tag any in that group and ask them to use /join command.
 ║   -Remember No commands will work in that group!
 ║   -Your Group Should Have 10 members atleast.
 ║   -Turn Disappearing Message Off in your Gc.
 ║
-║◇ *❓I want to know how to deploy ᴄᴏʀʟᴇxᴀ.*
+╚◇║
+╔◇║❓I want to know how to deploy ᴄᴏʀʟᴇxᴀ.
 ║ Not Allowed anymore!
 ║
-║◇ *❓Please Help Me Out With The Commands.*
+╚◇║
+╔◇║❓Please Help Me Out With The Commands.
 ║ You can find all commands in the /menu and their respective category in /help.
 ║
-║◇ *❓I do not want to understand. I am stupid and dumb.*
+╚◇║
+╔◇║❓I do not want to understand. I am stupid and dumb.
 ║ Click on top right corner and press leave.
 ║
-║◇ *❓Can i send any link?*
+╚◇║
+╔◇║❓Can i send any link?
 ║ Allowed Links: YouTube. Anything else = bot will kick you.
 ║
-║◇ *❓Who made ᴄᴏʀʟᴇxᴀ?*
+║◇ ❓Who made ᴄᴏʀʟᴇxᴀ?
 ║ KrakinzLab
-║
-║◇ *❓License and Copyright?*
+╚◇║
+╔◇║ ❓License and Copyright?
 ║ Visit: http://github.com/krakinzlab/ᴄᴏʀʟᴇxᴀ
 ║
 ╚◇║
 ╔◇║💡 𝐀𝐥𝐥 𝐂𝐨𝐦𝐦𝐚𝐧𝐝 𝐂𝐚𝐭𝐞𝐠𝐨𝐫𝐢𝐞𝐬 𝐁𝐫𝐢𝐞𝐟𝐥𝐲 𝐄𝐱𝐩𝐥𝐚𝐢𝐧𝐞𝐝
 ║
-◇══════║ 👇🏽𝐄𝐯𝐞𝐫𝐲𝐨𝐧𝐞 
-║🍣 _${ᴋᴇɪ}animemenu_ = search anime, get anime gifs,get random anime wallpapers.
-║💰 _${ᴋᴇɪ}gamemenu_ = play random games on whatsapp.
-║📥 _${ᴋᴇɪ}downloadmenu_ = download videos and audio files from YouTube,Instagram.
-║🔰 _${ᴋᴇɪ}groupmenu_ = group moderation and automation.
-║🦄 _${ᴋᴇɪ}randommenu_ = some random stuffs look yourself.
-║🔎 _${ᴋᴇɪ}searchmenu_ = surf the internet within whatsapp.
-║🗂️ _${ᴋᴇɪ}ffmpegmenu_ = convertion using ffmpeg. 
-║🏝️ _${ᴋᴇɪ}filtersmenu_ = add custom audio filter to mp3 files.
-║🎨 _${ᴋᴇɪ}checkmenu_ = tag or reply to someone to check what category they are.
+╚◇║
+╔◇║ 👇🏽𝐄𝐯𝐞𝐫𝐲𝐨𝐧𝐞
+║🍣 /animemenu = search anime, get anime gifs,get random anime wallpapers.
+║💰 /gamemenu = play random games on whatsapp.
+║⭕ /ytfiltermenu = download yt audio with filters pre-applied.
+║📥 /downloadmenu = download videos and audio files from YouTube,Instagram.
+║🔰 /groupmenu = group moderation and automation.
+║🦄 /randommenu = some random stuffs look yourself.
+║🔎 /searchmenu = surf the internet within whatsapp.
+║🗂️ /ffmpegmenu = convertion using ffmpeg.
+║🏝️ /filtersmenu = add custom audio filter to mp3 files.
+║🎨 /checkmenu = tag or reply to someone to check what category they are.
 ║
-◇══════║ 👇🏽𝐀𝐝𝐦𝐢𝐧-𝐎𝐧𝐥𝐲
-║🔰 _${ᴋᴇɪ}groupmenu_ = not safe for work adult stuffs!
-║🍄 _${ᴋᴇɪ}hentaimenu_ = not safe for work adult stuffs! 
-║🥃 _${ᴋᴇɪ}humanmenu_ = not safe for work adult stuffs!  
-║🐙 _${ᴋᴇɪ}ownermenu_ = owner/dev only! 
+╚◇║
+╔◇║ 👇🏽𝐀𝐝𝐦𝐢𝐧-𝐎𝐧𝐥𝐲
+║🔰 /groupmenu = not safe for work adult stuffs!
+║🍄 /hentaimenu = not safe for work adult stuffs!
+║🥃 /humanmenu = not safe for work adult stuffs!
+║🐙 /ownermenu = owner/dev only!
 ╚════════════╝
 ```
 
 # 🛸[𝐃𝐞𝐩𝐥𝐨𝐲𝐦𝐞𝐧𝐭]
-
-🛸[`(𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚 𝐀𝐝𝐯𝐚𝐧𝐜𝐞 𝐀𝐈🍾 #A`](https://chat.whatsapp.com/LKN8uVBd8ucHRHofz0jBSd)
-🛸[`(𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚 𝐀𝐝𝐯𝐚𝐧𝐜𝐞 𝐀𝐈🍾 #B`](https://chat.whatsapp.com/HKO5WLEZxMe3xWCyiv6vBu)
-🛸[`(𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚 𝐀𝐝𝐯𝐚𝐧𝐜𝐞 𝐀𝐈🍾 #C`](https://chat.whatsapp.com/EIn3YFShFmkJ3fvAqf2rpn)
-🛸[`𝐃𝐢𝐬𝐜𝐨𝐫𝐝`](https://discord.gg/xcFN6NDHEV)
 
 🛸[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Krakinz/ᴄᴏʀʟᴇxᴀ.git/tree/KrakinzLab)
 
