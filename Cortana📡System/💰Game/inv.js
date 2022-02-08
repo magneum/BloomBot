@@ -43,59 +43,6 @@ chat,
 const hold = require(`../../Cortana🛰️Server/Hold`);
 await hold.Hold(ƈօʀȶǟռǟ);
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-if (ƈօʀȶǟռǟ.isReply) {
-var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
-var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
-await Robbery.findOne(
-{
-ID: Receiver,
-},
-async (Error, userRob) => {
-if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat);
-if (!userRob) {
-var newUser = new Robbery({
-ID: Receiver,
-sword: 0,
-laptop: 0,
-charm: 0,
-CurrentRobberyTime: 0,
-PermanentRobberyTime: 480000,
-});
-await newUser
-.save()
-.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat));
-return Cortana_Buttons.MIB(
-ӄʀǟӄɨռʐ,
-chat,
-ƈօʀȶǟռǟ,
-`*🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ},*
-╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_  
-║🤖 *User Added To Database For First Time!*
-║🦋 _Try ${ᴋᴇɪ}${defaultnm} Again!_
-╚════════════╝`,
-`./Cortana☣️Reactor/Cortana_Mongo.png`
-);
-} else {
-return Cortana_Buttons.MTB(
-ӄʀǟӄɨռʐ,
-chat,
-ƈօʀȶǟռǟ,
-`🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ}, 
-╔◇══════════════◇╗
-┊   💼𝐈𝐧𝐯𝐞𝐧𝐭𝐨𝐫𝐲💼
-┊
-╚══◇║🤠𝗔𝗰𝗰𝗼𝘂𝗻𝘁: @${քɛʀֆօռɢօȶռʊʍ}
-╔══◇║🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_  
-║
-║⚔️ *sword:* _${userRob.sword}_
-║💻 *laptop:* _${userRob.laptop}_
-║🔮 *charm:* _${userRob.charm}_
-╚════════════╝`
-);
-}
-}
-);
-} else {
 await Robbery.findOne(
 {
 ID: աɦօֆɛռȶɦǟȶ,
@@ -145,7 +92,6 @@ chat,
 }
 }
 );
-}
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 } catch (Error) {
 ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat);
