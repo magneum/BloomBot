@@ -36,11 +36,11 @@ var MainText = `🪶 𝐇𝐞𝐲: •@${աɦօֆɛռȶɦǟȶռʊʍ}, ${Timers}
 
 ╔════◇⭕ 𝐘𝐨𝐮𝐓𝐮𝐛𝐞/𝐅𝐢𝐥𝐭𝐞𝐫
 ║
-║• *${ᴋᴇɪ}bass*  _download yt audio with filter_
-║• *${ᴋᴇɪ}deep*  _download yt audio with filter_
-║• *${ᴋᴇɪ}fast*  _download yt audio with filter_
-║• *${ᴋᴇɪ}reverse*  _download yt audio with filter_
-║• *${ᴋᴇɪ}nightcore*  _download yt audio with filter_
+║• *${ᴋᴇɪ}ytbass*  _download yt audio with filter_
+║• *${ᴋᴇɪ}ytdeep*  _download yt audio with filter_
+║• *${ᴋᴇɪ}ytfast*  _download yt audio with filter_
+║• *${ᴋᴇɪ}ytreverse*  _download yt audio with filter_
+║• *${ᴋᴇɪ}ytnightcore*  _download yt audio with filter_
 ╚════════════╝`;
 return Cortana_Buttons.MIB(
 ӄʀǟӄɨռʐ,
