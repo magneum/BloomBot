@@ -576,7 +576,6 @@ const jsoncool = JSON.parse(
 fs.readFileSync("./ᴄᴏʀʟᴇxᴀ🛰️Server/Coolist.json")
 );
 if (jsoncool.includes(աɦօֆɛռȶɦǟȶ)) {
-return;
 if (𝖈𝖔𝖗𝖑𝖊𝖝𝖆.isSenderDev) {
 await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .sendMessage(
