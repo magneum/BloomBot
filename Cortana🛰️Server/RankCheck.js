@@ -81,7 +81,7 @@ return await ӄʀǟӄɨռʐ
 ƈօʀȶǟռǟ.chatId,
 {
 contentText: `📜𝐑𝐚𝐧𝐤: @${աɦօֆɛռȶɦǟȶռʊʍ}, Auto-Ranking has Started!`,
-footerText: `◤Ⓒ𝐂𝐨𝐫𝐭𝐚𝐧𝐚 ◇ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™◥`,
+footerText: `◤Ⓒ𝐂𝐨𝐫𝐭𝐚𝐧𝐚 ⧱ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⧱ 𝟐𝟎𝟐𝟐◥`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
@@ -255,7 +255,7 @@ await ӄʀǟӄɨռʐ
 ƈօʀȶǟռǟ.chatId,
 {
 contentText: `✨𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬 @${աɦօֆɛռȶɦǟȶռʊʍ}, _𝐋𝐞𝐯𝐞𝐥𝐞𝐝-𝐔𝐏!_`,
-footerText: `◤Ⓒ𝐂𝐨𝐫𝐭𝐚𝐧𝐚 ◇ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™◥`,
+footerText: `◤Ⓒ𝐂𝐨𝐫𝐭𝐚𝐧𝐚 ⧱ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⧱ 𝟐𝟎𝟐𝟐◥`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
@@ -300,7 +300,7 @@ await ӄʀǟӄɨռʐ
 ƈօʀȶǟռǟ.chatId,
 {
 contentText: `✨𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬 @${աɦօֆɛռȶɦǟȶռʊʍ}, _𝐋𝐞𝐯𝐞𝐥𝐞𝐝-𝐔𝐏!_`,
-footerText: `◤Ⓒ𝐂𝐨𝐫𝐭𝐚𝐧𝐚 ◇ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™◥`,
+footerText: `◤Ⓒ𝐂𝐨𝐫𝐭𝐚𝐧𝐚 ⧱ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⧱ 𝟐𝟎𝟐𝟐◥`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,

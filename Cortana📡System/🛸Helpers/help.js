@@ -69,19 +69,12 @@ let latensi = speed() - timestamp;
 neww = performance.now();
 oldd = performance.now();
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-const media = await ӄʀǟӄɨռʐ.prepareMessage(
-ƈօʀȶǟռǟ.chatId,
-{ url: _𝔏𝔞𝔟_.MEE },
-MessageType.image,
-{
-mimetype: Mimetype.png,
-}
-);
-await ӄʀǟӄɨռʐ
-.sendMessage(
-ƈօʀȶǟռǟ.chatId,
-{
-contentText: `🪶 𝐇𝐞𝐲: •@${աɦօֆɛռȶɦǟȶռʊʍ}, ${Timers}
+var MediaUrl = `./Cortana☣️Reactor/ƈօʀȶǟռǟ.png`;
+return Cortana_Buttons.MIB(
+ӄʀǟӄɨռʐ,
+chat,
+ƈօʀȶǟռǟ,
+`🪶 𝐇𝐞𝐲: •@${աɦօֆɛռȶɦǟȶռʊʍ}, ${Timers}
 🛸𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈: _ɪꜱ ᴀ ᴡʜᴀᴛꜱᴀᴘᴘ ᴍᴜʟᴛɪᴘᴜʀᴘᴏꜱᴇ-ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ ᴍᴏᴅᴇʀᴀᴛɪᴏɴ,ᴀᴜᴛᴏᴍᴀᴛɪᴏɴ ᴀɴᴅ 100+ ᴄᴏᴍᴍᴀɴᴅꜱ!_
 
 ╔══◇꧁༺ 👇🏽𝐒𝐲𝐦𝐥𝐢𝐧𝐤👇🏽 ༻꧂
@@ -90,7 +83,9 @@ contentText: `🪶 𝐇𝐞𝐲: •@${աɦօֆɛռȶɦǟȶռʊʍ}, ${Timers}
 ║シ︎💻 *Platform:* _${os.platform()}_
 ║シ︎🛰️ *Latency:* _${latensi.toFixed(4)}(s)_
 ║シ︎☕ *Uptime:* _${runtime(process.uptime())}_
-║シ︎🎮 *Ram:* _${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}_ (29-User-Bot)
+║シ︎🎮 *Ram:* _${formatp(os.totalmem() - os.freemem())} / ${formatp(
+os.totalmem()
+)}_ (29-User-Bot)
 ║
 ╚◇╗
 ╔◇╜꧁༺ 👇🏽𝐄𝐯𝐞𝐫𝐲𝐨𝐧𝐞👇🏽 ༻꧂
@@ -350,24 +345,8 @@ contentText: `🪶 𝐇𝐞𝐲: •@${աɦօֆɛռȶɦǟȶռʊʍ}, ${Timers}
 ║🍄•  ${ᴋᴇɪ}uniform
 ║🍄•  ${ᴋᴇɪ}yuri
 ╚════════════╝`,
-footerText: `⎿ ©️ 𝐂𝐨𝐫𝐭𝐚𝐧𝐚 𝐀𝐈 ⏋`,
-buttons: [
-{
-buttonId: `${ᴋᴇɪ}faq`,
-buttonText: { displayText: `${ᴋᴇɪ}faq` },
-type: 1,
-},
-],
-headerType: 4,
-imageMessage: media.message.imageMessage,
-},
-MessageType.buttonsMessage,
-{
-quoted: chat,
-contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
-}
-)
-.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat));
+MediaUrl
+).catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat));
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 } catch (Error) {
 ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat);
