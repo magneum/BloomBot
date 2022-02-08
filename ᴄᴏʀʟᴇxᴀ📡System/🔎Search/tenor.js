@@ -192,7 +192,7 @@ await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
 quoted: chat,
 mimetype: `video/gif`,
-caption: `| (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈 |\n${Clock}
+caption: `◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ • 𝟐𝟎𝟐𝟐◥n\n
 
 ────◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
 🍯 𝐒𝐞𝐚𝐫𝐜𝐡𝐞𝐝: ${Needs.join(` `)}
