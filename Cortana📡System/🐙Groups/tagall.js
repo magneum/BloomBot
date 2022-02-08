@@ -91,7 +91,7 @@ conversation: ƈօʀȶǟռǟ.replyMessage,
 },
 mentionedJid: members,
 },
-caption: `⎿ ©𝐂𝐨𝐫𝐭𝐚𝐧𝐚 ʙʏ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⏋
+caption: `⌜Ⓒ𝐂𝐨𝐫𝐭𝐚𝐧𝐚 ⧊ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™⌝
 
 ╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
 ║🥳 𝐅𝐫𝐨𝐦: @${աɦօֆɛռȶɦǟȶռʊʍ}
@@ -114,7 +114,7 @@ quoted: chat,
 contextInfo: {
 mentionedJid: members,
 },
-caption: `⎿ ©𝐂𝐨𝐫𝐭𝐚𝐧𝐚 ʙʏ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⏋
+caption: `⌜Ⓒ𝐂𝐨𝐫𝐭𝐚𝐧𝐚 ⧊ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™⌝
 
 ╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
 ║🥳 𝐅𝐫𝐨𝐦: @${աɦօֆɛռȶɦǟȶռʊʍ}
@@ -137,7 +137,7 @@ quoted: chat,
 contextInfo: {
 mentionedJid: members,
 },
-caption: `⎿ ©𝐂𝐨𝐫𝐭𝐚𝐧𝐚 ʙʏ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⏋
+caption: `⌜Ⓒ𝐂𝐨𝐫𝐭𝐚𝐧𝐚 ⧊ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™⌝
 
 ╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
 ║🥳 𝐅𝐫𝐨𝐦: @${աɦօֆɛռȶɦǟȶռʊʍ}
@@ -157,7 +157,7 @@ quoted: chat,
 contextInfo: {
 mentionedJid: members,
 },
-caption: `⎿ ©𝐂𝐨𝐫𝐭𝐚𝐧𝐚 ʙʏ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⏋
+caption: `⌜Ⓒ𝐂𝐨𝐫𝐭𝐚𝐧𝐚 ⧊ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™⌝
 
 ╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
 ║🥳 𝐅𝐫𝐨𝐦: @${աɦօֆɛռȶɦǟȶռʊʍ}

@@ -80,7 +80,7 @@ contentText: `🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ},
 ║🦋 𝗗𝗶𝗿𝗲𝗰𝘁-𝗗𝗹: ${DirectFile}
 ║🔗 𝗟𝗶𝗻𝗸: ${Found.url}
 ╚════════════╝`,
-footerText: `⎿ ©𝐂𝐨𝐫𝐭𝐚𝐧𝐚 ʙʏ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⏋`,
+footerText: `⌜Ⓒ𝐂𝐨𝐫𝐭𝐚𝐧𝐚 ⧊ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™⌝`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,

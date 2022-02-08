@@ -37,7 +37,7 @@ return await ӄʀǟӄɨռʐ
 mimetype: `video/gif`,
 quoted: chat,
 caption:
-`⎿ ©𝐂𝐨𝐫𝐭𝐚𝐧𝐚 ʙʏ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⏋\n\n` +
+`⌜Ⓒ𝐂𝐨𝐫𝐭𝐚𝐧𝐚 ⧊ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™⌝\n\n` +
 MainText,
 contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ, Receiver] },
 })
@@ -52,7 +52,7 @@ return await ӄʀǟӄɨռʐ
 mimetype: `video/gif`,
 quoted: chat,
 caption:
-`⎿ ©𝐂𝐨𝐫𝐭𝐚𝐧𝐚 ʙʏ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⏋\n\n` +
+`⌜Ⓒ𝐂𝐨𝐫𝐭𝐚𝐧𝐚 ⧊ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™⌝\n\n` +
 MainText,
 contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
 })
