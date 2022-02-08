@@ -36,7 +36,7 @@ var MainText = `🪶 𝐇𝐞𝐲: •@${աɦօֆɛռȶɦǟȶռʊʍ}, ${Timers}
 
 ╔════◇⭕ 𝐘𝐨𝐮𝐓𝐮𝐛𝐞/𝐅𝐢𝐥𝐭𝐞𝐫
 ║
-║• *${ᴋᴇɪ}ytbass*  _download yt audio with filter_
+║• *${ᴋᴇɪ}ytbassboost*  _download yt audio with filter_
 ║• *${ᴋᴇɪ}ytdeep*  _download yt audio with filter_
 ║• *${ᴋᴇɪ}ytfast*  _download yt audio with filter_
 ║• *${ᴋᴇɪ}ytreverse*  _download yt audio with filter_

@@ -36,7 +36,7 @@ var MainText = `🪶 𝐇𝐞𝐲: •@${աɦօֆɛռȶɦǟȶռʊʍ}, ${Timers}
 
 ╔════◇🏝️ 𝐅𝐢𝐥𝐭𝐞𝐫𝐬/𝐀𝐮𝐝𝐢𝐨
 ║
-║• *${ᴋᴇɪ}bass*  _audio filter_
+║• *${ᴋᴇɪ}bassboost*  _audio filter_
 ║• *${ᴋᴇɪ}blown*  _audio filter_
 ║• *${ᴋᴇɪ}deep*  _audio filter_
 ║• *${ᴋᴇɪ}earrape*  _audio filter_

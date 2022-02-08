@@ -151,7 +151,7 @@ await ӄʀǟӄɨռʐ.downloadAndSaveMediaMessage(FILEOBJECT, `${FILEID}`);
 var Convert_From = `${FILEID}.mp4`;
 var Convert_To = `_${FILEID}_.mp4`;
 exec(
-`ffmpeg -i ${Convert_From} -af equalizer=f=94:width_type=o:width=2:g=30 ${Convert_To}`,
+`ffmpeg -i ${Convert_From} -af "bass=g=10,dynaudnorm=f=150" ${Convert_To}`,
 async (Error) => {
 cleanRF.cleanRF(Convert_From);
 if (Error) {
