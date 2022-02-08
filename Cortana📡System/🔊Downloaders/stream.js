@@ -210,10 +210,10 @@ chat,
 );
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 try {
-var stream = ytdl(Found.url, {
+var FFmpegStream = ytdl(Found.url, {
 quality: "highest",
 });
-ffmpeg(stream)
+ffmpeg(FFmpegStream)
 .videoBitrate(360)
 .toFormat("mp4")
 .saveToFile(FFmpegFile)

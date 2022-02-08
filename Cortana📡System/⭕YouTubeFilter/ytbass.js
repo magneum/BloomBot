@@ -30,7 +30,7 @@ var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ
 .substring(0, աɦօֆɛռȶɦǟȶ.length - 15)
 .replace(/[+ ]/g, "");
 const defaultnm = ƈօʀȶǟռǟ.commandName;
-var FilteredAudio = chat.key.id + "_Filtered_" + ".mp3";
+var FilteredAudio = Date.now() + "_Filtered_" + ".mp3";
 var FFmpegFile = `./Cortana☕Shop/${Date.now()}_${chat.key.id}.mp3`;
 const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
@@ -222,8 +222,11 @@ try {
 var FFmpegStream = ytdl(Found.url, {
 filter: "audioonly",
 });
+ffmpeg(FFmpegStream)
+.saveToFile(FFmpegFile)
+.on("end", () => {
 require("child_process").exec(
-`ffmpeg -i ${FFmpegStream}.mp3 -af equalizer=f=94:width_type=o:width=2:g=30 ${FilteredAudio}`,
+`ffmpeg -i ${FFmpegFile} -af equalizer=f=94:width_type=o:width=2:g=30 ${FilteredAudio}`,
 async (Error) => {
 if (Error) {
 userBadge.Limits = userBadge.Limits + 1;
@@ -244,9 +247,10 @@ quoted: chat,
 mimetype: Mimetype.mp4Audio,
 }
 );
-return await cleanRF.cleanRF(FFmpegStream, FilteredAudio);
+return await cleanRF.cleanRF(FFmpegFile, FilteredAudio);
 }
 );
+});
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 } catch (Error) {
 userBadge.Limits = userBadge.Limits + 1;

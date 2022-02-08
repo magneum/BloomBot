@@ -220,10 +220,10 @@ Found.thumbnail
 );
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐭𝐚𝐧𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 try {
-var stream = ytdl(Found.url, {
+var FFmpegStream = ytdl(Found.url, {
 filter: "audioonly",
 });
-ffmpeg(stream)
+ffmpeg(FFmpegStream)
 .audioBitrate(128)
 .toFormat("ipod")
 .saveToFile(FFmpegFile)
