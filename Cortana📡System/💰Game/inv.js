@@ -81,8 +81,8 @@ chat,
 ╔◇══════════════◇╗
 ┊   💼𝐈𝐧𝐯𝐞𝐧𝐭𝐨𝐫𝐲💼
 ┊
-╚◇╗
-╔◇╜🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_  
+╚══◇╗
+╔══◇╜🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_  
 ║
 ║⚔️ *sword:* _${userRob.sword}_
 ║💻 *laptop:* _${userRob.laptop}_
