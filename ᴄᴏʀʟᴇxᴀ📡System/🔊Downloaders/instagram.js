@@ -21,7 +21,7 @@ var newScpt = scriptName.slice(0, -3).toLowerCase();
 module.exports = {
 name: newScpt,
 𝖈𝖔𝖗𝖑𝖊𝖝𝖆ӄǟɨʐօ: `*${ᴋᴇɪ}instagram* _ig video/image link_`,
-async handle(ӄʀǟӄɨռʐ, chat, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
+async handle(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, chat, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
 try {
 var աɦօֆɛռȶɦǟȶ = 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.sender;
 var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ
@@ -36,7 +36,7 @@ var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
 𝓜Usage.𝖈𝖔𝖗𝖑𝖊𝖝𝖆ӄǟɨʐօ === undefined ? `Null` : 𝓜Usage.𝖈𝖔𝖗𝖑𝖊𝖝𝖆ӄǟɨʐօ;
 const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../ᴄᴏʀʟᴇxᴀ🛰️Server/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
 return ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
-ӄʀǟӄɨռʐ,
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 𝖈𝖔𝖗𝖑𝖊𝖝𝖆,
 աɦօֆɛռȶɦǟȶ,
@@ -52,7 +52,7 @@ var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
 𝓜Usage.𝖈𝖔𝖗𝖑𝖊𝖝𝖆ӄǟɨʐօ === undefined ? `Null` : 𝓜Usage.𝖈𝖔𝖗𝖑𝖊𝖝𝖆ӄǟɨʐօ;
 const ᴀʀɢᴜᴍᴇɴᴛ = require(`../ᴄᴏʀʟᴇxᴀ🛰️Server/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
 return ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
-ӄʀǟӄɨռʐ,
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 𝖈𝖔𝖗𝖑𝖊𝖝𝖆,
 աɦօֆɛռȶɦǟȶ,
@@ -69,7 +69,7 @@ Bagde.findOne(
 ID: 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.sender,
 },
 async (Error, userBadge) => {
-if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat);
+if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat);
 if (!userBadge) {
 var newUser = new Bagde({
 ID: 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.sender,
@@ -81,9 +81,9 @@ PermanentLimitTime: 43200000,
 });
 await newUser
 .save()
-.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
 return ᴄᴏʀʟᴇxᴀ_Buttons.MIB(
-ӄʀǟӄɨռʐ,
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 𝖈𝖔𝖗𝖑𝖊𝖝𝖆,
 `*🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ},*
@@ -104,7 +104,7 @@ if (clock > 0 && userBadge.Limits == 0) {
 userBadge.value = `False`;
 await userBadge
 .save()
-.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
 }
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 if (clock > 0 && !userBadge.Limits == 0) {
@@ -112,7 +112,7 @@ userBadge.Limits = userBadge.Limits - 1;
 userBadge.value = `True`;
 await userBadge
 .save()
-.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
 }
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 if (clock < 0 && userBadge.Limits == 0) {
@@ -133,7 +133,7 @@ userBadge.CurrentLimitTime = Date.now();
 userBadge.value = `True`;
 await userBadge
 .save()
-.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
 }
 }
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
@@ -147,7 +147,7 @@ userBadge.PermanentLimitTime -
 (Date.now() - userBadge.CurrentLimitTime)
 );
 return ᴄᴏʀʟᴇxᴀ_Buttons.MTB(
-ӄʀǟӄɨռʐ,
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 𝖈𝖔𝖗𝖑𝖊𝖝𝖆,
 `💡𝐓𝐢𝐩: _Buy Higher Badges Using ${ᴋᴇɪ}shop_
@@ -163,13 +163,13 @@ await hx.igdl(Needs[0]).then(async (result) => {
 for (let i of result.medias) {
 if (i.url.includes(`mp4`)) {
 iglink = i.url;
-const media = await ӄʀǟӄɨռʐ.prepareMessage(
+const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
 { url: iglink },
 MessageType.video,
 { mimetype: Mimetype.mp4 }
 );
-return await ӄʀǟӄɨռʐ
+return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .sendMessage(
 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
 {
@@ -196,17 +196,17 @@ quoted: chat,
 contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
 }
 )
-.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 } else {
 iglink = i.url;
-const media = await ӄʀǟӄɨռʐ.prepareMessage(
+const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
 { url: iglink },
 MessageType.image,
 { mimetype: Mimetype.png && Mimetype.jpeg }
 );
-return await ӄʀǟӄɨռʐ
+return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .sendMessage(
 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
 {
@@ -233,7 +233,7 @@ quoted: chat,
 contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
 }
 )
-.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
 }
 }
 });
@@ -241,7 +241,7 @@ contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
 }
 );
 } catch (Error) {
-ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat);
+ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat);
 console.log(Error);
 }
 },

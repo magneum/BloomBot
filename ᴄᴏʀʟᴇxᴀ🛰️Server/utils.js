@@ -5,7 +5,7 @@
 `|⬡════════════════════════════════════════════|                            |═══════════════════════════════════════════⬡|`;
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 class Handlers {
-constructor(ӄʀǟӄɨռʐ) {
+constructor(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇) {
 this.sendMsessage = this.sendMsessage;
 }
 sendMsessage(id, content) {

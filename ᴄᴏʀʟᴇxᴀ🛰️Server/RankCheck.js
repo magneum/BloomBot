@@ -40,7 +40,7 @@ var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 const fs = require(`fs`);
 var color = randomMC.getColor();
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-const RankCheck = async (ӄʀǟӄɨռʐ, chat, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆) => {
+const RankCheck = async (ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, chat, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆) => {
 try {
 var աɦօֆɛռȶɦǟȶ = 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.sender;
 var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ
@@ -52,7 +52,7 @@ Date.now().toString() +
 աɦօֆɛռȶɦǟȶ.toString() +
 ".png";
 try {
-𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄʀǟӄɨռʐ.getProfilePicture(աɦօֆɛռȶɦǟȶ);
+𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.getProfilePicture(աɦօֆɛռȶɦǟȶ);
 } catch {
 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = "https://i.postimg.cc/wxWL9G8F/no-profile-picture-300x216.png";
 }
@@ -75,8 +75,8 @@ level: 0,
 });
 await newUsers
 .save()
-.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
-return await ӄʀǟӄɨռʐ
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
+return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .sendMessage(
 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
 {
@@ -102,7 +102,7 @@ quoted: chat,
 contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
 }
 )
-.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 } else {
 let ToNxtLvl;
@@ -161,7 +161,7 @@ let Img;
 users.level = users.level + 1;
 await users
 .save()
-.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
 try {
 var ResGot = await fetch(
 global.API("https://wall.alphacoders.com/api2.0", "/get.php", {
@@ -242,15 +242,15 @@ worktimeout: 900000,
 await newUser
 .save()
 .catch((Error) =>
-ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat)
+ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat)
 );
-const media = await ӄʀǟӄɨռʐ.prepareMessage(
+const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
 fs.readFileSync(expFile),
 MessageType.image,
 { mimetype: Mimetype.png }
 );
-await ӄʀǟӄɨռʐ
+await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .sendMessage(
 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
 {
@@ -278,7 +278,7 @@ contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
 }
 )
 .catch((Error) =>
-ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat)
+ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat)
 );
 return await cleanRF.cleanRF(expFile);
 }
@@ -287,15 +287,15 @@ userEco.money = userEco.money + Bonus;
 await userEco
 .save()
 .catch((Error) =>
-ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat)
+ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat)
 );
-const media = await ӄʀǟӄɨռʐ.prepareMessage(
+const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
 fs.readFileSync(expFile),
 MessageType.image,
 { mimetype: Mimetype.png }
 );
-await ӄʀǟӄɨռʐ
+await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .sendMessage(
 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
 {
@@ -323,7 +323,7 @@ contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
 }
 )
 .catch((Error) =>
-ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat)
+ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat)
 );
 return await cleanRF.cleanRF(expFile);
 }
@@ -333,12 +333,12 @@ return await cleanRF.cleanRF(expFile);
 users.xp = users.xp + xpAdd;
 return await users
 .save()
-.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
 }
 }
 );
 } catch (Error) {
-ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat);
+ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat);
 }
 };
 module.exports = {

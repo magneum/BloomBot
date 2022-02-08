@@ -15,7 +15,7 @@ const cleanRF = require(`./cleanRF`);
 const TinyURL = require("tinyurl");
 const fs = require(`fs`);
 `|⬡════════════════════════════════════════════|   ◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 ⧱ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⧱ 𝟐𝟎𝟐𝟐◥   |═══════════════════════════════════════════⬡|`;
-exports.FFmpegVideo = async (ӄʀǟӄɨռʐ, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat, Found, userBadge) => {
+exports.FFmpegVideo = async (ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat, Found, userBadge) => {
 var աɦօֆɛռȶɦǟȶ = 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.sender;
 const defaultnm = 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.commandName;
 var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ
@@ -25,7 +25,7 @@ const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
 var FFmpegFile = `./ᴄᴏʀʟᴇxᴀ☕Shop/${chat.key.id}${Date.now()}.mp4`;
 `|⬡════════════════════════════════════════════|   ◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 ⧱ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⧱ 𝟐𝟎𝟐𝟐◥   |═══════════════════════════════════════════⬡|`;
 await ᴄᴏʀʟᴇxᴀ_Buttons.MTB(
-ӄʀǟӄɨռʐ,
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 𝖈𝖔𝖗𝖑𝖊𝖝𝖆,
 `🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ},
@@ -51,20 +51,20 @@ Error
 userBadge.Limits = userBadge.Limits + 1;
 await userBadge
 .save()
-.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
-return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat);
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
+return ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat);
 } else {
 console.log(
 `⬡═══════════════════| 🥂𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐅𝐢𝐧𝐢𝐬𝐞𝐝🥂 |═══════════════════⬡`
 );
 try {
-const media = await ӄʀǟӄɨռʐ.prepareMessage(
+const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
 fs.readFileSync(FFmpegFile),
 MessageType.video,
 { mimetype: "video/mp4" }
 );
-await ӄʀǟӄɨռʐ
+await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .sendMessage(
 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
 {
@@ -97,7 +97,7 @@ quoted: chat,
 contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
 }
 )
-.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
 await cleanRF.cleanRF(FFmpegFile);
 } catch (Error) {
 console.log(
@@ -107,8 +107,8 @@ Error
 userBadge.Limits = userBadge.Limits + 1;
 await userBadge
 .save()
-.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
-return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat);
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
+return ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat);
 }
 }
 }
@@ -119,8 +119,8 @@ console.log(`⬡═══════════════════| 🐞�
 userBadge.Limits = userBadge.Limits + 1;
 await userBadge
 .save()
-.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
-return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat);
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
+return ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat);
 }
 );
 });

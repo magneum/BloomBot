@@ -21,7 +21,7 @@ module.exports = {
 name: newScpt,
 𝖈𝖔𝖗𝖑𝖊𝖝𝖆ӄǟɨʐօ: `*${ᴋᴇɪ}${newScpt}* _reply to person to ban_
 *${ᴋᴇɪ}${newScpt}* _don't reply to anyone and group will be banned_`,
-async handle(ӄʀǟӄɨռʐ, chat, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
+async handle(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, chat, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
 try {
 var աɦօֆɛռȶɦǟȶ = 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.sender;
 var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ
@@ -32,7 +32,7 @@ const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 if (!𝖈𝖔𝖗𝖑𝖊𝖝𝖆.fromMe && !𝖈𝖔𝖗𝖑𝖊𝖝𝖆.isSenderDev) {
 return ᴄᴏʀʟᴇxᴀ_Buttons.MTB(
-ӄʀǟӄɨռʐ,
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 𝖈𝖔𝖗𝖑𝖊𝖝𝖆,
 `❌𝐃𝐞𝐧𝐢𝐞𝐝: _Owner/Dev Only.You Are Not Allowed!_`
@@ -44,7 +44,7 @@ var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
 var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
 if (Receiver === աɦօֆɛռȶɦǟȶ) {
 return ᴄᴏʀʟᴇxᴀ_Buttons.MTB(
-ӄʀǟӄɨռʐ,
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 𝖈𝖔𝖗𝖑𝖊𝖝𝖆,
 `🪶 𝐇𝐞𝐲: 
@@ -59,7 +59,7 @@ chat,
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 if (!𝖈𝖔𝖗𝖑𝖊𝖝𝖆.isGroup) {
 return ᴄᴏʀʟᴇxᴀ_Buttons.MTB(
-ӄʀǟӄɨռʐ,
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 𝖈𝖔𝖗𝖑𝖊𝖝𝖆,
 `🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ}, 
@@ -70,14 +70,14 @@ chat,
 );
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 } else if (𝖈𝖔𝖗𝖑𝖊𝖝𝖆.isGroup && !𝖈𝖔𝖗𝖑𝖊𝖝𝖆.isReply) {
-var groupData = await ӄʀǟӄɨռʐ.groupMetadata(chat.key.remoteJid);
+var groupData = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.groupMetadata(chat.key.remoteJid);
 Ban.findOne(
 {
 ID: 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
 },
 async (Error, userBan) => {
 if (Error) {
-ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat);
+ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat);
 return;
 }
 if (!userBan) {
@@ -86,9 +86,9 @@ ID: 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
 });
 await newUser
 .save()
-.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
 return ᴄᴏʀʟᴇxᴀ_Buttons.MTB(
-ӄʀǟӄɨռʐ,
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 𝖈𝖔𝖗𝖑𝖊𝖝𝖆,
 `🪶 𝐇𝐞𝐲: 
@@ -100,7 +100,7 @@ chat,
 );
 } else {
 return ᴄᴏʀʟᴇxᴀ_Buttons.MTB(
-ӄʀǟӄɨռʐ,
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 𝖈𝖔𝖗𝖑𝖊𝖝𝖆,
 `🪶 𝐇𝐞𝐲: 
@@ -123,7 +123,7 @@ ID: Receiver,
 },
 async (Error, userBan) => {
 if (Error) {
-ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat);
+ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat);
 return;
 }
 if (!userBan) {
@@ -132,9 +132,9 @@ ID: Receiver,
 });
 await newUser
 .save()
-.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
 return ᴄᴏʀʟᴇxᴀ_Buttons.MTB(
-ӄʀǟӄɨռʐ,
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 𝖈𝖔𝖗𝖑𝖊𝖝𝖆,
 `🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ}, 
@@ -145,7 +145,7 @@ chat,
 );
 } else {
 return ᴄᴏʀʟᴇxᴀ_Buttons.MTB(
-ӄʀǟӄɨռʐ,
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 𝖈𝖔𝖗𝖑𝖊𝖝𝖆,
 `🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ}, 
@@ -164,7 +164,7 @@ var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
 𝓜Usage.𝖈𝖔𝖗𝖑𝖊𝖝𝖆ӄǟɨʐօ === undefined ? `Null` : 𝓜Usage.𝖈𝖔𝖗𝖑𝖊𝖝𝖆ӄǟɨʐօ;
 const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../ᴄᴏʀʟᴇxᴀ🛰️Server/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
 return ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
-ӄʀǟӄɨռʐ,
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 𝖈𝖔𝖗𝖑𝖊𝖝𝖆,
 աɦօֆɛռȶɦǟȶ,
@@ -174,7 +174,7 @@ chat,
 );
 }
 } catch (Error) {
-ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat);
+ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat);
 return;
 }
 },

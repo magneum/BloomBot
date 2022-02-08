@@ -5,7 +5,7 @@
 `|⬡════════════════════════════════════════════|                            |═══════════════════════════════════════════⬡|`;
 const _𝔏𝔞𝔟_ = require(`./_𝔏𝔞𝔟_`);
 var ӄʀʏօȶɛӄ = require(`./𝖈𝖔𝖗𝖑𝖊𝖝𝖆ƈʟǟ`);
-exports.resolve = function (messageInstance, ӄʀǟӄɨռʐ, groupMetadata) {
+exports.resolve = function (messageInstance, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, groupMetadata) {
 try {
 var DEVstring = _𝔏𝔞𝔟_.Kate;
 var 𝖈𝖔𝖗𝖑𝖊𝖝𝖆 = new ӄʀʏօȶɛӄ();
@@ -14,7 +14,7 @@ var prefixRegex = new RegExp(prefix, `g`);
 var jsonMessage = JSON.stringify(messageInstance);
 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId = messageInstance.key.remoteJid || ``;
 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.fromMe = messageInstance.key.fromMe;
-𝖈𝖔𝖗𝖑𝖊𝖝𝖆.owner = ӄʀǟӄɨռʐ.user.jid || ``;
+𝖈𝖔𝖗𝖑𝖊𝖝𝖆.owner = ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.user.jid || ``;
 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.mimeType = messageInstance.message
 ? Object.keys(messageInstance.message)[0]
 : null;
@@ -106,7 +106,7 @@ messageInstance.message.extendedTextMessage.contextInfo.quotedMessage
 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.isReplyAudio = 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.isReply
 ? jsonMessage.indexOf(`audioMessage`) !== -1
 : false;
-𝖈𝖔𝖗𝖑𝖊𝖝𝖆.Myself = ӄʀǟӄɨռʐ.user.jid || ``;
+𝖈𝖔𝖗𝖑𝖊𝖝𝖆.Myself = ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.user.jid || ``;
 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.isGroup = 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId.endsWith(`@g.us`);
 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.isPm = !𝖈𝖔𝖗𝖑𝖊𝖝𝖆.isGroup;
 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.sender =

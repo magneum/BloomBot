@@ -25,7 +25,7 @@ var Flower = [`💐`, `🌻`, `🌼`, `🌹`, `🌸`, `💮`];
 var People = [`👮`, `👳`, `🤱`, `🤰`, `💂`];
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 exports.welbuts = async (
-ӄʀǟӄɨռʐ,
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 GroupID,
 GroupMemData,
 GroupMemG,
@@ -42,7 +42,7 @@ var ᴘᴘᴡᴇʟᴄᴏᴍᴇ = MemNum.substring(0, MemNum.length - 15).replace
 );
 let 𝕻𝕻𝖑𝖊𝖙𝖊𝖗;
 try {
-𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄʀǟӄɨռʐ.getProfilePicture(`${MemNum.split(`@`)[0]}@c.us`);
+𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.getProfilePicture(`${MemNum.split(`@`)[0]}@c.us`);
 } catch {
 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = "https://i.postimg.cc/wxWL9G8F/no-profile-picture-300x216.png";
 }
@@ -55,7 +55,7 @@ cloneFiles: false,
 });
 try {
 await downloader.download();
-const media = await ӄʀǟӄɨռʐ.prepareMessage(
+const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
 GroupID,
 fs.readFileSync(`./${Date.now().toString()}.png`),
 MessageType.image,
@@ -63,7 +63,7 @@ MessageType.image,
 mimetype: Mimetype.png,
 }
 );
-await ӄʀǟӄɨռʐ
+await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .sendMessage(
 GroupID,
 {
@@ -103,7 +103,7 @@ contextInfo: { mentionedJid: [MemNum] },
 .catch((Error) => console.log(Error));
 return await cleanRF.cleanRF(`./${Date.now().toString()}.png`);
 } catch (Error) {
-const media = await ӄʀǟӄɨռʐ.prepareMessage(
+const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
 GroupID,
 { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 },
 MessageType.image,
@@ -111,7 +111,7 @@ MessageType.image,
 mimetype: Mimetype.png,
 }
 );
-await ӄʀǟӄɨռʐ
+await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .sendMessage(
 GroupID,
 {
