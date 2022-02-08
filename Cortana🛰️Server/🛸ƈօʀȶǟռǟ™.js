@@ -329,6 +329,35 @@ return;
 if (!chat.messages) {
 return;
 }
+try {
+const ᴍɪᴢᴜᴋɪɢɪᴛ = require(`simple-git`)();
+await ᴍɪᴢᴜᴋɪɢɪᴛ.fetch();
+var ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ = await ᴍɪᴢᴜᴋɪɢɪᴛ.log([`KrakinzLab..origin/KrakinzLab`]);
+if (ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total != 0) {
+require(`simple-git`)()
+.exec(async () => {
+console.log(`💡 𝐈𝐧𝐟𝐨⬰ Updating Cortana System With Latest Patch...`);
+})
+.pull(async (Error, update) => {
+if (Error) {
+console.log(
+`❌ 𝐄𝐫𝐫𝐨𝐫⬰ Merge Resulted with Total-Conflicts: ` + Error
+);
+}
+if (update && update.summary.changes) {
+var childs = require(`child_process`).exec(`python3 🐙ᴋʀʏᴏᴛᴇᴋ.py`);
+childs.stdout.pipe(process.stdout);
+childs.on(`exit`, async function () {
+process.exitCode = 1;
+console.log(`💡 𝐈𝐧𝐟𝐨⬰ Auto-Updating Finished!`);
+});
+}
+});
+}
+} catch (Error) {
+console.log(Error);
+console.log(`❌ 𝐄𝐫𝐫𝐨𝐫⬰ Please Re-Deploy!`);
+}
 `|⬡════════════════════════════════════════════|   ⌜Ⓒ𝐂𝐨𝐫𝐭𝐚𝐧𝐚 ⧊ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™⌝   |═══════════════════════════════════════════⬡|`;
 chat = chat.messages.all()[0];
 const sender = chat.key.remoteJid;
