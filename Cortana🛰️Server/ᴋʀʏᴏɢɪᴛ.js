@@ -20,20 +20,18 @@
         .pull(async (Error, update) => {
           if (Error) {
             console.log(
-              `❌ 𝐄𝐫𝐫𝐨𝐫⬰ Merge Resulted with Total-Conflicts: ${Kolor.red(
-                Error
-              )} `
+              `❌ 𝐄𝐫𝐫𝐨𝐫⬰ Merge Resulted with Total-Conflicts: ` + Error
             );
-          } else if (update && update.summary.changes) {
+          }
+          if (update && update.summary.changes) {
             var childs = require(`child_process`).exec(`python3 ᴄᴏʀᴛᴀɴᴀ.py`);
             childs.stdout.pipe(process.stdout);
             childs.on(`exit`, async function () {
               process.exitCode = 1;
               console.log(`💡 𝐈𝐧𝐟𝐨⬰ Auto-Updating Finished!`);
             });
-          } else {
-            console.log(`💡 𝐈𝐧𝐟𝐨⬰ Nothing To Auto-Update!`);
           }
+          console.log(`💡 𝐈𝐧𝐟𝐨⬰ Nothing To Auto-Update!`);
         });
     }
   } catch (Error) {
