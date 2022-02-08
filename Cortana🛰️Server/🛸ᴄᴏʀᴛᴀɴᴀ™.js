@@ -332,11 +332,15 @@ return;
 try {
 const ᴍɪᴢᴜᴋɪɢɪᴛ = require(`simple-git`)();
 await ᴍɪᴢᴜᴋɪɢɪᴛ.fetch();
-var ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ = await ᴍɪᴢᴜᴋɪɢɪᴛ.log([`KrakinzLab..origin/KrakinzLab`]);
+var ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ = await ᴍɪᴢᴜᴋɪɢɪᴛ.log([
+`KrakinzLab..origin/KrakinzLab`,
+]);
 if (ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total != 0) {
 require(`simple-git`)()
 .exec(async () => {
-console.log(`💡 𝐈𝐧𝐟𝐨⬰ Updating Cortana System With Latest Patch...`);
+console.log(
+`💡 𝐈𝐧𝐟𝐨⬰ Updating Cortana System With Latest Patch...`
+);
 })
 .pull(async (Error, update) => {
 if (Error) {
@@ -345,7 +349,8 @@ console.log(
 );
 }
 if (update && update.summary.changes) {
-var childs = require(`child_process`).exec(`python3 🐙ᴋʀʏᴏᴛᴇᴋ.py`);
+var childs =
+require(`child_process`).exec(`python3 🐙ᴋʀʏᴏᴛᴇᴋ.py`);
 childs.stdout.pipe(process.stdout);
 childs.on(`exit`, async function () {
 process.exitCode = 1;
@@ -457,18 +462,15 @@ chat,
 ╔════◇🌋  𝐀𝐧𝐭𝐢𝐥𝐢𝐧𝐤 𝐓𝐫𝐢𝐠𝐠𝐞𝐫𝐞𝐝
 ║
 ║⬡ 𝗣𝘂𝗻𝗶𝘀𝗵𝗺𝗲𝗻𝘁: _You Will Be Kicked!_
-║⬡ 𝗞𝗶𝗰𝗸-𝗧𝗶𝗺𝗲: _2seconds_
 ╚════════════╝`,
 `./Cortana☣️Reactor/Cortana_Antilink.png`
 );
-setTimeout(() => {
-ӄʀǟӄɨռʐ
+await ӄʀǟӄɨռʐ
 .groupRemove(ƈօʀȶǟռǟ.chatId, [ƈօʀȶǟռǟ.sender])
 .catch((Error) =>
 ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat)
 );
 return;
-}, 2000);
 }
 `|⬡════════════════════════════════════════════|   ⌜Ⓒ𝐂𝐨𝐫𝐭𝐚𝐧𝐚 ⧊ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™⌝   |═══════════════════════════════════════════⬡|`;
 if (
@@ -492,18 +494,14 @@ chat,
 ╔════◇🌋  𝐀𝐧𝐭𝐢𝐥𝐢𝐧𝐤 𝐓𝐫𝐢𝐠𝐠𝐞𝐫𝐞𝐝
 ║
 ║⬡ 𝗣𝘂𝗻𝗶𝘀𝗵𝗺𝗲𝗻𝘁: _You Will Be Kicked!_
-║⬡ 𝗞𝗶𝗰𝗸-𝗧𝗶𝗺𝗲: _2seconds_
 ╚════════════╝`,
 `./Cortana☣️Reactor/Cortana_Antilink.png`
 );
-setTimeout(() => {
-ӄʀǟӄɨռʐ
+await ӄʀǟӄɨռʐ
 .groupRemove(ƈօʀȶǟռǟ.chatId, [ƈօʀȶǟռǟ.sender])
 .catch((Error) =>
 ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat)
 );
-return;
-}, 2000);
 }
 }
 );
