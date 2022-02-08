@@ -350,6 +350,17 @@ childs.stdout.pipe(process.stdout);
 childs.on(`exit`, async function () {
 process.exitCode = 1;
 console.log(`💡 𝐈𝐧𝐟𝐨⬰ Auto-Updating Finished!`);
+Cortana_Buttons.MTB(
+ӄʀǟӄɨռʐ,
+chat,
+ƈօʀȶǟռǟ,
+`🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ}, 
+
+╔◇║ ⌜Ⓒ𝐂𝐨𝐫𝐭𝐚𝐧𝐚 ⧊ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™⌝
+║
+║💡 𝐈𝐧𝐟𝐨⬰ Auto-Updating Finished!
+╚════════════╝`
+);
 });
 }
 });
