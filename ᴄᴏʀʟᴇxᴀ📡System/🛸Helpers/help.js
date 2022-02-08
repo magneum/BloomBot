@@ -7,7 +7,7 @@ const ᴄᴏʀʟᴇxᴀ_Buttons = require(`../../ᴄᴏʀʟᴇxᴀ🛰️Server/
 const ᴄᴏʀʟᴇxᴀ_Static = require(`../../ᴄᴏʀʟᴇxᴀ🛰️Server/ᴄᴏʀʟᴇxᴀ_Static`);
 const { formatp, runtime } = require(`../../ᴄᴏʀʟᴇxᴀ🛰️Server/mizu`);
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
-const _𝔏𝔞𝔟_ = require(`../../ᴄᴏʀʟᴇxᴀ🛰️Server/_𝔏𝔞𝔟_`);
+const  _𝔏𝔞𝔟_ = require(`../../ᴄᴏʀʟᴇxᴀ🛰️Server/_𝔏𝔞𝔟_`);
 const ꜰᴜᴄᴋ = require(`../../ᴄᴏʀʟᴇxᴀ🛰️Server/oShit`);
 const { performance } = require(`perf_hooks`);
 const vers = require(`../../package.json`);
@@ -43,7 +43,7 @@ cpu.total = Object.keys(cpu.times).reduce(
 return cpu;
 });
 const cpu = cpus.reduce(
-(last, cpu, _, { length }) => {
+(last, cpu,  _, { length }) => {
 last.total += cpu.total;
 last.speed += cpu.speed / length;
 last.times.user += cpu.times.user;
@@ -77,39 +77,39 @@ return ᴄᴏʀʟᴇxᴀ_Buttons.MIB(
 chat,
 𝖈𝖔𝖗𝖑𝖊𝖝𝖆,
 `🪶 𝐇𝐞𝐲: •@${աɦօֆɛռȶɦǟȶռʊʍ}, ${Timers}
-🛸𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈: _ɪꜱ ᴀ ᴡʜᴀᴛꜱᴀᴘᴘ ᴍᴜʟᴛɪᴘᴜʀᴘᴏꜱᴇ-ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ ᴍᴏᴅᴇʀᴀᴛɪᴏɴ,ᴀᴜᴛᴏᴍᴀᴛɪᴏɴ ᴀɴᴅ 100+ ᴄᴏᴍᴍᴀɴᴅꜱ!_
+🛸𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈:  _ɪꜱ ᴀ ᴡʜᴀᴛꜱᴀᴘᴘ ᴍᴜʟᴛɪᴘᴜʀᴘᴏꜱᴇ-ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ ᴍᴏᴅᴇʀᴀᴛɪᴏɴ,ᴀᴜᴛᴏᴍᴀᴛɪᴏɴ ᴀɴᴅ 100+ ᴄᴏᴍᴍᴀɴᴅꜱ!_
 
 ╔══◇꧁༺ 👇🏽𝐒𝐲𝐦𝐥𝐢𝐧𝐤👇🏽 ༻꧂
 ║
-║シ︎⚙️ *Engine:* _${vers.vers}_
-║シ︎💻 *Platform:* _${os.platform()}_
-║シ︎🛰️ *Latency:* _${latensi.toFixed(4)}(s)_
-║シ︎☕ *Uptime:* _${runtime(process.uptime())}_
-║シ︎🎮 *Ram:* _${formatp(os.totalmem() - os.freemem())} / ${formatp(
+║シ︎⚙️ *Engine:*  _${vers.vers}_
+║シ︎💻 *Platform:*  _${os.platform()}_
+║シ︎🛰️ *Latency:*  _${latensi.toFixed(4)}(s)_
+║シ︎☕ *Uptime:*  _${runtime(process.uptime())}_
+║シ︎🎮 *Ram:*  _${formatp(os.totalmem() - os.freemem())} / ${formatp(
 os.totalmem()
 )}_ (29-User-Bot)
 ║
 ╚◇╗
 ╔◇╜꧁༺ 👇🏽𝐄𝐯𝐞𝐫𝐲𝐨𝐧𝐞👇🏽 ༻꧂
 ║
-║🍣 _${ᴋᴇɪ}animemenu_
-║💰 _${ᴋᴇɪ}gamemenu_
-║⭕ _${ᴋᴇɪ}ytfiltermenu
-║📥 _${ᴋᴇɪ}downloadmenu_
-║🔰 _${ᴋᴇɪ}groupmenu_
-║🦄 _${ᴋᴇɪ}randommenu_
-║🔎 _${ᴋᴇɪ}searchmenu_
-║🗂️ _${ᴋᴇɪ}ffmpegmenu_
-║🏝️ _${ᴋᴇɪ}filtersmenu_
-║🎨 _${ᴋᴇɪ}checkmenu_
+║🍣  _${ᴋᴇɪ}animemenu_
+║💰  _${ᴋᴇɪ}gamemenu_
+║⭕  _${ᴋᴇɪ}ytfiltermenu
+║📥  _${ᴋᴇɪ}downloadmenu_
+║🔰  _${ᴋᴇɪ}groupmenu_
+║🦄  _${ᴋᴇɪ}randommenu_
+║🔎  _${ᴋᴇɪ}searchmenu_
+║🗂️  _${ᴋᴇɪ}ffmpegmenu_
+║🏝️  _${ᴋᴇɪ}filtersmenu_
+║🎨  _${ᴋᴇɪ}checkmenu_
 ║
 ╚◇╗
 ╔◇╜꧁༺ 👇🏽𝐀𝐝𝐦𝐢𝐧-𝐎𝐧𝐥𝐲👇🏽 ༻꧂
 ║
-║🔰 _${ᴋᴇɪ}groupmenu_
-║🍄 _${ᴋᴇɪ}hentaimenu_ 
-║🥃 _${ᴋᴇɪ}humanmenu_ 
-║🐙 _${ᴋᴇɪ}ownermenu_
+║🔰  _${ᴋᴇɪ}groupmenu_
+║🍄  _${ᴋᴇɪ}hentaimenu_ 
+║🥃  _${ᴋᴇɪ}humanmenu_ 
+║🐙  _${ᴋᴇɪ}ownermenu_
 ║
 ╚◇╗
 ╔◇╜
@@ -128,7 +128,7 @@ os.totalmem()
 ║💰•  ${ᴋᴇɪ}daily
 ║💰•  ${ᴋᴇɪ}work
 ║💰•  ${ᴋᴇɪ}balance
-║💰•  ${ᴋᴇɪ}rob _(beta)_
+║💰•  ${ᴋᴇɪ}rob  _(beta)_
 ║💰•  ${ᴋᴇɪ}truthdare
 ║
 ╚◇╗
