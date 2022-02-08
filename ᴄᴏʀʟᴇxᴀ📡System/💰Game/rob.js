@@ -480,15 +480,9 @@ chat,
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 } else {
 let Note;
-if (vEconomy.money < 2000) {
+if (vEconomy.money < 1000) {
 vEconomy.money = 0;
 cEconomy.money = cEconomy.money + vEconomy.money;
-Note = `*Seems Like The Victim Had Gold<2000. _You Got All Their Golds ${vEconomy.money}!*_`;
-} else {
-vEconomy.money = vEconomy.money - MoneyRandom;
-cEconomy.money = cEconomy.money + MoneyRandom;
-Note = `You Got _${MoneyRandom}gold_!`;
-}
 culprit.CurrentRobberyTime = Date.now();
 await vEconomy
 .save()
@@ -511,7 +505,9 @@ chat,
 ╚◇╗
 ╔◇╜
 ║🔓 𝐒𝐭𝐚𝐭𝐮𝐬: @${քɛʀֆօռɢօȶռʊʍ} _Got Robbed!_
-║👑 𝗔𝗺𝗼𝘂𝗻𝘁: ${Note}
+║👑 𝗔𝗺𝗼𝘂𝗻𝘁: *Seems Like The Victim Had Gold<1000. _You Got All Their Golds ${
+vEconomy.money
+}!*_
 ║⚰️ 𝗥𝗲𝗮𝘀𝗼𝗻: _Didn't have any safety stuffs. @${քɛʀֆօռɢօȶռʊʍ}, visit ${ᴋᴇɪ}shop ASAP._
 ╚════════════╝
 
@@ -526,6 +522,47 @@ chat,
 ╚════════════╝`,
 "./ᴄᴏʀʟᴇxᴀ☣️Reactor/ᴄᴏʀʟᴇxᴀ_Univ.png"
 );
+} else {
+vEconomy.money = vEconomy.money - MoneyRandom;
+cEconomy.money = cEconomy.money + MoneyRandom;
+culprit.CurrentRobberyTime = Date.now();
+await vEconomy
+.save()
+.catch((Error) =>
+ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat)
+);
+await cEconomy
+.save()
+.catch((Error) =>
+ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat)
+);
+return ᴄᴏʀʟᴇxᴀ_Buttons.MIB(
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+chat,
+𝖈𝖔𝖗𝖑𝖊𝖝𝖆,
+`🪶 𝐇𝐞𝐲:,
+
+╔◇══════════════◇╗
+┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
+╚◇╗
+╔◇╜
+║🔓 𝐒𝐭𝐚𝐭𝐮𝐬: @${քɛʀֆօռɢօȶռʊʍ} _Got Robbed!_
+║👑 𝗔𝗺𝗼𝘂𝗻𝘁: You Got _${MoneyRandom}gold_!
+║⚰️ 𝗥𝗲𝗮𝘀𝗼𝗻: _Didn't have any safety stuffs. @${քɛʀֆօռɢօȶռʊʍ}, visit ${ᴋᴇɪ}shop ASAP._
+╚════════════╝
+
+
+╔════◇🥸 𝐂𝐮𝐥𝐩𝐫𝐢𝐭: @${աɦօֆɛռȶɦǟȶռʊʍ}, 
+║❓ 𝗕𝗲𝗳𝗼𝗿𝗲 𝗥𝗼𝗯𝗯𝗲𝗿𝘆: _${cEconomy.money}gold_
+║💸 𝗔𝗳𝘁𝗲𝗿 𝗥𝗼𝗯𝗯𝗲𝗿𝘆: _${cEconomy.money + MoneyRandom}gold_
+╚◇╗
+╔◇╜💀 𝐕𝐢𝐜𝐭𝐢𝐦: @${քɛʀֆօռɢօȶռʊʍ}
+║❓ 𝗕𝗲𝗳𝗼𝗿𝗲 𝗥𝗼𝗯𝗯𝗲𝗿𝘆: _${vEconomy.money}gold_
+║🥲 𝗔𝗳𝘁𝗲𝗿 𝗥𝗼𝗯𝗯𝗲𝗿𝘆: _${vEconomy.money - MoneyRandom}gold_
+╚════════════╝`,
+"./ᴄᴏʀʟᴇxᴀ☣️Reactor/ᴄᴏʀʟᴇxᴀ_Univ.png"
+);
+}
 }
 }
 );
@@ -1154,15 +1191,9 @@ mentionedJid: [աɦօֆɛռȶɦǟȶ, TagMention],
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 } else {
 let Note;
-if (vEconomy.money < 2000) {
+if (vEconomy.money < 1000) {
 vEconomy.money = 0;
 cEconomy.money = cEconomy.money + vEconomy.money;
-Note = `*Seems Like The Victim Had Gold<2000. _You Got All Their Golds ${vEconomy.money}!*_`;
-} else {
-vEconomy.money = vEconomy.money - MoneyRandom;
-cEconomy.money = cEconomy.money + MoneyRandom;
-Note = `You Got _${MoneyRandom}gold_!`;
-}
 culprit.CurrentRobberyTime = Date.now();
 await vEconomy
 .save()
@@ -1191,7 +1222,9 @@ contentText: `🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ},
 ╚◇╗
 ╔◇╜
 ║🔓 𝐒𝐭𝐚𝐭𝐮𝐬: @${TagPerson} _Got Robbed!_
-║👑 𝗔𝗺𝗼𝘂𝗻𝘁: ${Note}
+║👑 𝗔𝗺𝗼𝘂𝗻𝘁: *Seems Like The Victim Had Gold<1000. _You Got All Their Golds ${
+vEconomy.money
+}!*_
 ║⚰️ 𝗥𝗲𝗮𝘀𝗼𝗻: _Didn't have any safety stuffs. @${TagPerson}, visit ${ᴋᴇɪ}shop ASAP._
 ╚════════════╝
 
@@ -1208,12 +1241,16 @@ footerText: `⎿ ©𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • 𝐄𝐧𝐕𝐞𝐫: ${vers
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
-buttonText: { displayText: `${ᴋᴇɪ}help` },
+buttonText: {
+displayText: `${ᴋᴇɪ}help`,
+},
 type: 1,
 },
 {
 buttonId: `${ᴋᴇɪ}faq`,
-buttonText: { displayText: `${ᴋᴇɪ}faq` },
+buttonText: {
+displayText: `${ᴋᴇɪ}faq`,
+},
 type: 1,
 },
 ],
@@ -1231,6 +1268,82 @@ mentionedJid: [աɦօֆɛռȶɦǟȶ, TagMention],
 .catch((Error) =>
 ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat)
 );
+} else {
+vEconomy.money = vEconomy.money - MoneyRandom;
+cEconomy.money = cEconomy.money + MoneyRandom;
+culprit.CurrentRobberyTime = Date.now();
+await vEconomy
+.save()
+.catch((Error) =>
+ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat)
+);
+await cEconomy
+.save()
+.catch((Error) =>
+ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat)
+);
+const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
+𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
+{ url: "./ᴄᴏʀʟᴇxᴀ☣️Reactor/ᴄᴏʀʟᴇxᴀ_Univ.png" },
+MessageType.image,
+{ mimetype: Mimetype.png }
+);
+return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
+.sendMessage(
+𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
+{
+contentText: `🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ}, 
+
+╔◇══════════════◇╗
+┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
+╚◇╗
+╔◇╜
+║🔓 𝐒𝐭𝐚𝐭𝐮𝐬: @${TagPerson} _Got Robbed!_
+║👑 𝗔𝗺𝗼𝘂𝗻𝘁: You Got _${MoneyRandom}gold_!
+║⚰️ 𝗥𝗲𝗮𝘀𝗼𝗻: _Didn't have any safety stuffs. @${TagPerson}, visit ${ᴋᴇɪ}shop ASAP._
+╚════════════╝
+
+
+╔════◇🥸 𝐂𝐮𝐥𝐩𝐫𝐢𝐭: @${աɦօֆɛռȶɦǟȶռʊʍ}, 
+║❓ 𝗕𝗲𝗳𝗼𝗿𝗲 𝗥𝗼𝗯𝗯𝗲𝗿𝘆: _${cEconomy.money}gold_
+║💸 𝗔𝗳𝘁𝗲𝗿 𝗥𝗼𝗯𝗯𝗲𝗿𝘆: _${cEconomy.money + MoneyRandom}gold_
+╚◇╗
+╔◇╜💀 𝐕𝐢𝐜𝐭𝐢𝐦: @${TagPerson}
+║❓ 𝗕𝗲𝗳𝗼𝗿𝗲 𝗥𝗼𝗯𝗯𝗲𝗿𝘆: _${vEconomy.money}gold_
+║🥲 𝗔𝗳𝘁𝗲𝗿 𝗥𝗼𝗯𝗯𝗲𝗿𝘆: _${vEconomy.money - MoneyRandom}gold_
+╚════════════╝`,
+footerText: `⎿ ©𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • 𝐄𝐧𝐕𝐞𝐫: ${vers.vers} ⏋`,
+buttons: [
+{
+buttonId: `${ᴋᴇɪ}help`,
+buttonText: {
+displayText: `${ᴋᴇɪ}help`,
+},
+type: 1,
+},
+{
+buttonId: `${ᴋᴇɪ}faq`,
+buttonText: {
+displayText: `${ᴋᴇɪ}faq`,
+},
+type: 1,
+},
+],
+headerType: 4,
+imageMessage: media.message.imageMessage,
+},
+MessageType.buttonsMessage,
+{
+quoted: chat,
+contextInfo: {
+mentionedJid: [աɦօֆɛռȶɦǟȶ, TagMention],
+},
+}
+)
+.catch((Error) =>
+ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat)
+);
+}
 }
 }
 );
