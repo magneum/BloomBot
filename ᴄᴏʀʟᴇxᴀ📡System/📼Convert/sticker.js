@@ -21,28 +21,28 @@ var newScpt = scriptName.slice(0, -3).toLowerCase();
 // if (!/image\/(jpe?g|png)/.test(mime)) throw `Meme ${mime} not supported`
 module.exports = {
 name: newScpt,
-ƈօʀȶǟռǟӄǟɨʐօ: `*Reply Media With:* _${ᴋᴇɪ}${newScpt}_
+𝖈𝖔𝖗𝖑𝖊𝖝𝖆ӄǟɨʐօ: `*Reply Media With:* _${ᴋᴇɪ}${newScpt}_
 *Supported Media Types:* _Image/Video/Gif/Mp4/Jpeg/Png_`,
-async handle(ӄʀǟӄɨռʐ, chat, ƈօʀȶǟռǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
+async handle(ӄʀǟӄɨռʐ, chat, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
 try {
-var աɦօֆɛռȶɦǟȶ = ƈօʀȶǟռǟ.sender;
+var աɦօֆɛռȶɦǟȶ = 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.sender;
 var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ
 .substring(0, աɦօֆɛռȶɦǟȶ.length - 15)
 .replace(/[+ ]/g, "");
-const defaultnm = ƈօʀȶǟռǟ.commandName;
+const defaultnm = 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.commandName;
 const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 const Bagde = require(`../../ᴄᴏʀʟᴇxᴀ🍃Goose/badge`);
 const ms = require(`parse-ms`);
 Bagde.findOne(
 {
-ID: ƈօʀȶǟռǟ.sender,
+ID: 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.sender,
 },
 async (Error, userBadge) => {
-if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat);
+if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat);
 if (!userBadge) {
 var newUser = new Bagde({
-ID: ƈօʀȶǟռǟ.sender,
+ID: 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.sender,
 Badge: `🧵ʙᴀꜱɪᴄ-10ᴄᴏᴍᴍᴀɴᴅꜱ`,
 value: `True`,
 Limits: 10,
@@ -51,11 +51,11 @@ PermanentLimitTime: 43200000,
 });
 await newUser
 .save()
-.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat));
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
 return ᴄᴏʀʟᴇxᴀ_Buttons.MIB(
 ӄʀǟӄɨռʐ,
 chat,
-ƈօʀȶǟռǟ,
+𝖈𝖔𝖗𝖑𝖊𝖝𝖆,
 `*🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ},*
 
 ╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_  
@@ -74,7 +74,7 @@ if (clock > 0 && userBadge.Limits == 0) {
 userBadge.value = `False`;
 await userBadge
 .save()
-.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat));
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
 }
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 if (clock > 0 && !userBadge.Limits == 0) {
@@ -82,7 +82,7 @@ userBadge.Limits = userBadge.Limits - 1;
 userBadge.value = `True`;
 await userBadge
 .save()
-.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat));
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
 }
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 if (clock < 0 && userBadge.Limits == 0) {
@@ -103,15 +103,15 @@ userBadge.CurrentLimitTime = Date.now();
 userBadge.value = `True`;
 await userBadge
 .save()
-.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat));
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
 }
 }
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 const hold = require("../../ᴄᴏʀʟᴇxᴀ🛰️Server/Hold");
-await hold.Hold(ƈօʀȶǟռǟ);
+await hold.Hold(𝖈𝖔𝖗𝖑𝖊𝖝𝖆);
 
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-if (!ƈօʀȶǟռǟ.fromMe && userBadge.value === "False") {
+if (!𝖈𝖔𝖗𝖑𝖊𝖝𝖆.fromMe && userBadge.value === "False") {
 let time = ms(
 userBadge.PermanentLimitTime -
 (Date.now() - userBadge.CurrentLimitTime)
@@ -119,7 +119,7 @@ userBadge.PermanentLimitTime -
 return ᴄᴏʀʟᴇxᴀ_Buttons.MTB(
 ӄʀǟӄɨռʐ,
 chat,
-ƈօʀȶǟռǟ,
+𝖈𝖔𝖗𝖑𝖊𝖝𝖆,
 `💡𝐓𝐢𝐩: _Buy Higher Badges Using ${ᴋᴇɪ}shop_
 
 ╔═══════❗ 𝐈𝐦𝐩𝐨𝐫𝐭𝐚𝐧𝐭
@@ -138,7 +138,7 @@ fileName
 );
 const stickerPath = "./sticker-" + FileID + ".webp";
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-if (ƈօʀȶǟռǟ.type === "image" || ƈօʀȶǟռǟ.isReplyImage) {
+if (𝖈𝖔𝖗𝖑𝖊𝖝𝖆.type === "image" || 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.isReplyImage) {
 ffmpeg(FilePath)
 .outputOptions(["-y", "-vcodec libwebp"])
 .videoFilters(
@@ -147,7 +147,7 @@ ffmpeg(FilePath)
 .save(stickerPath)
 .on("end", async () => {
 await ӄʀǟӄɨռʐ.sendMessage(
-ƈօʀȶǟռǟ.chatId,
+𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
 fs.readFileSync(stickerPath),
 MessageType.sticker
 );
@@ -158,9 +158,9 @@ userBadge.Limits = userBadge.Limits + 1;
 await userBadge
 .save()
 .catch((Error) =>
-ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat)
+ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat)
 );
-return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat);
+return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat);
 });
 return;
 }
@@ -184,7 +184,7 @@ ffmpeg(FilePath)
 .save(stickerPath)
 .on("end", async () => {
 await ӄʀǟӄɨռʐ.sendMessage(
-ƈօʀȶǟռǟ.chatId,
+𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
 fs.readFileSync(stickerPath),
 MessageType.sticker
 );
@@ -194,22 +194,22 @@ await cleanRF.cleanRF(FilePath, stickerPath);
 userBadge.Limits = userBadge.Limits + 1;
 await userBadge
 .save()
-.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat));
-return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat);
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
+return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat);
 });
 return;
 };
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-if (ƈօʀȶǟռǟ.isImage || ƈօʀȶǟռǟ.isGIF || ƈօʀȶǟռǟ.isVideo) {
+if (𝖈𝖔𝖗𝖑𝖊𝖝𝖆.isImage || 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.isGIF || 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.isVideo) {
 var replyChatObject = {
 message: chat.message,
 };
 var FileID = chat.key.id;
 await convertToSticker(FileID, replyChatObject);
 } else if (
-ƈօʀȶǟռǟ.isReplyImage ||
-ƈօʀȶǟռǟ.isReplyGIF ||
-ƈօʀȶǟռǟ.isReplyVideo
+𝖈𝖔𝖗𝖑𝖊𝖝𝖆.isReplyImage ||
+𝖈𝖔𝖗𝖑𝖊𝖝𝖆.isReplyGIF ||
+𝖈𝖔𝖗𝖑𝖊𝖝𝖆.isReplyVideo
 ) {
 var replyChatObject = {
 message:
@@ -222,18 +222,18 @@ await convertToSticker(FileID, replyChatObject);
 userBadge.Limits = userBadge.Limits + 1;
 await userBadge
 .save()
-.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat));
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
 const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../ᴄᴏʀʟᴇxᴀ🛰️Server/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
-var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(ƈօʀȶǟռǟ.commandName);
+var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(𝖈𝖔𝖗𝖑𝖊𝖝𝖆.commandName);
 var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
-𝓜Usage.ƈօʀȶǟռǟӄǟɨʐօ === undefined ? `Null` : 𝓜Usage.ƈօʀȶǟռǟӄǟɨʐօ;
+𝓜Usage.𝖈𝖔𝖗𝖑𝖊𝖝𝖆ӄǟɨʐօ === undefined ? `Null` : 𝓜Usage.𝖈𝖔𝖗𝖑𝖊𝖝𝖆ӄǟɨʐօ;
 ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
 ӄʀǟӄɨռʐ,
 chat,
-ƈօʀȶǟռǟ,
+𝖈𝖔𝖗𝖑𝖊𝖝𝖆,
 աɦօֆɛռȶɦǟȶ,
 աɦօֆɛռȶɦǟȶռʊʍ,
-ƈօʀȶǟռǟ.commandName,
+𝖈𝖔𝖗𝖑𝖊𝖝𝖆.commandName,
 ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
 );
 return;
@@ -243,18 +243,18 @@ return;
 userBadge.Limits = userBadge.Limits + 1;
 await userBadge
 .save()
-.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat));
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
 const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../ᴄᴏʀʟᴇxᴀ🛰️Server/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
-var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(ƈօʀȶǟռǟ.commandName);
+var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(𝖈𝖔𝖗𝖑𝖊𝖝𝖆.commandName);
 var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
-𝓜Usage.ƈօʀȶǟռǟӄǟɨʐօ === undefined ? `Null` : 𝓜Usage.ƈօʀȶǟռǟӄǟɨʐօ;
+𝓜Usage.𝖈𝖔𝖗𝖑𝖊𝖝𝖆ӄǟɨʐօ === undefined ? `Null` : 𝓜Usage.𝖈𝖔𝖗𝖑𝖊𝖝𝖆ӄǟɨʐօ;
 ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
 ӄʀǟӄɨռʐ,
 chat,
-ƈօʀȶǟռǟ,
+𝖈𝖔𝖗𝖑𝖊𝖝𝖆,
 աɦօֆɛռȶɦǟȶ,
 աɦօֆɛռȶɦǟȶռʊʍ,
-ƈօʀȶǟռǟ.commandName,
+𝖈𝖔𝖗𝖑𝖊𝖝𝖆.commandName,
 ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
 );
 return;
@@ -263,16 +263,16 @@ return;
 );
 } catch (Error) {
 const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../ᴄᴏʀʟᴇxᴀ🛰️Server/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
-var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(ƈօʀȶǟռǟ.commandName);
+var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(𝖈𝖔𝖗𝖑𝖊𝖝𝖆.commandName);
 var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
-𝓜Usage.ƈօʀȶǟռǟӄǟɨʐօ === undefined ? `Null` : 𝓜Usage.ƈօʀȶǟռǟӄǟɨʐօ;
+𝓜Usage.𝖈𝖔𝖗𝖑𝖊𝖝𝖆ӄǟɨʐօ === undefined ? `Null` : 𝓜Usage.𝖈𝖔𝖗𝖑𝖊𝖝𝖆ӄǟɨʐօ;
 ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
 ӄʀǟӄɨռʐ,
 chat,
-ƈօʀȶǟռǟ,
+𝖈𝖔𝖗𝖑𝖊𝖝𝖆,
 աɦօֆɛռȶɦǟȶ,
 աɦօֆɛռȶɦǟȶռʊʍ,
-ƈօʀȶǟռǟ.commandName,
+𝖈𝖔𝖗𝖑𝖊𝖝𝖆.commandName,
 ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
 );
 return;

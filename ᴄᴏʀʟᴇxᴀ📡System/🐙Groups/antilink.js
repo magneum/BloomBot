@@ -20,22 +20,22 @@ var newScpt = scriptName.slice(0, -3).toLowerCase();
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 module.exports = {
 name: newScpt,
-ƈօʀȶǟռǟӄǟɨʐօ: `${ᴋᴇɪ}antilink _on/off_`,
-async handle(ӄʀǟӄɨռʐ, chat, ƈօʀȶǟռǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
+𝖈𝖔𝖗𝖑𝖊𝖝𝖆ӄǟɨʐօ: `${ᴋᴇɪ}antilink _on/off_`,
+async handle(ӄʀǟӄɨռʐ, chat, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
 try {
-var աɦօֆɛռȶɦǟȶ = ƈօʀȶǟռǟ.sender;
-const defaultnm = ƈօʀȶǟռǟ.commandName;
+var աɦօֆɛռȶɦǟȶ = 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.sender;
+const defaultnm = 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.commandName;
 var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
 const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 const hold = require("../../ᴄᴏʀʟᴇxᴀ🛰️Server/Hold");
-await hold.Hold(ƈօʀȶǟռǟ);
+await hold.Hold(𝖈𝖔𝖗𝖑𝖊𝖝𝖆);
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-if (!ƈօʀȶǟռǟ.isGroup) {
+if (!𝖈𝖔𝖗𝖑𝖊𝖝𝖆.isGroup) {
 return ᴄᴏʀʟᴇxᴀ_Buttons.MTB(
 ӄʀǟӄɨռʐ,
 chat,
-ƈօʀȶǟռǟ,
+𝖈𝖔𝖗𝖑𝖊𝖝𝖆,
 `🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ}, 
 
 ╔════◇🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧 
@@ -44,20 +44,20 @@ chat,
 );
 }
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-if (ƈօʀȶǟռǟ.isGroup && !ƈօʀȶǟռǟ.isSenderGroupAdmin) {
+if (𝖈𝖔𝖗𝖑𝖊𝖝𝖆.isGroup && !𝖈𝖔𝖗𝖑𝖊𝖝𝖆.isSenderGroupAdmin) {
 return ᴄᴏʀʟᴇxᴀ_Buttons.MTB(
 ӄʀǟӄɨռʐ,
 chat,
-ƈօʀȶǟռǟ,
+𝖈𝖔𝖗𝖑𝖊𝖝𝖆,
 `❌𝐃𝐞𝐧𝐢𝐞𝐝: _Admins/Dev Only.You Are Not Allowed!_`
 );
 }
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-if (ƈօʀȶǟռǟ.isGroup && !ƈօʀȶǟռǟ.isBotGroupAdmin) {
+if (𝖈𝖔𝖗𝖑𝖊𝖝𝖆.isGroup && !𝖈𝖔𝖗𝖑𝖊𝖝𝖆.isBotGroupAdmin) {
 return ᴄᴏʀʟᴇxᴀ_Buttons.MTB(
 ӄʀǟӄɨռʐ,
 chat,
-ƈօʀȶǟռǟ,
+𝖈𝖔𝖗𝖑𝖊𝖝𝖆,
 `🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ}, 
 
 ╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
@@ -68,17 +68,17 @@ chat,
 }
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 if (Needs.length === 0) {
-var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(ƈօʀȶǟռǟ.commandName);
+var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(𝖈𝖔𝖗𝖑𝖊𝖝𝖆.commandName);
 var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
-𝓜Usage.ƈօʀȶǟռǟӄǟɨʐօ === undefined ? `Null` : 𝓜Usage.ƈօʀȶǟռǟӄǟɨʐօ;
+𝓜Usage.𝖈𝖔𝖗𝖑𝖊𝖝𝖆ӄǟɨʐօ === undefined ? `Null` : 𝓜Usage.𝖈𝖔𝖗𝖑𝖊𝖝𝖆ӄǟɨʐօ;
 const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../ᴄᴏʀʟᴇxᴀ🛰️Server/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
 return ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
 ӄʀǟӄɨռʐ,
 chat,
-ƈօʀȶǟռǟ,
+𝖈𝖔𝖗𝖑𝖊𝖝𝖆,
 աɦօֆɛռȶɦǟȶ,
 աɦօֆɛռȶɦǟȶռʊʍ,
-ƈօʀȶǟռǟ.commandName,
+𝖈𝖔𝖗𝖑𝖊𝖝𝖆.commandName,
 ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
 );
 } else {
@@ -86,20 +86,20 @@ chat,
 if (Needs[0] === `ON` || Needs[0] === `on` || Needs[0] === `On`) {
 LinkList.findOne(
 {
-serverID: ƈօʀȶǟռǟ.chatId,
+serverID: 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
 },
 async (Error, server) => {
-if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat);
+if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat);
 if (!server) {
 var newServer = new LinkList({
-serverID: ƈօʀȶǟռǟ.chatId,
+serverID: 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
 value: "ON",
 });
 await newServer
 .save()
-.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat));
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
 const media = await ӄʀǟӄɨռʐ.prepareMessage(
-ƈօʀȶǟռǟ.chatId,
+𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
 fs.readFileSync(`./ᴄᴏʀʟᴇxᴀ☣️Reactor/ᴄᴏʀʟᴇxᴀ_Antilink.png`),
 MessageType.image,
 {
@@ -108,11 +108,11 @@ mimetype: Mimetype.png,
 );
 await ӄʀǟӄɨռʐ
 .sendMessage(
-ƈօʀȶǟռǟ.chatId,
+𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
 {
 contentText: `🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ},  (admin)
 ╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
-║📜𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${ƈօʀȶǟռǟ.groupName}
+║📜𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${𝖈𝖔𝖗𝖑𝖊𝖝𝖆.groupName}
 ║🔗𝐀𝐧𝐭𝐢𝐥𝐢𝐧𝐤: ✅On
 ╚════════════╝
 🌱𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗧𝗼𝗴𝗴𝗹𝗲 𝗔𝗻𝘁𝗶𝗹𝗶𝗻𝗸👇🏽‍`,
@@ -138,10 +138,10 @@ quoted: chat,
 contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
 }
 )
-.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat));
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
 } else {
 const media = await ӄʀǟӄɨռʐ.prepareMessage(
-ƈօʀȶǟռǟ.chatId,
+𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
 fs.readFileSync(`./ᴄᴏʀʟᴇxᴀ☣️Reactor/ᴄᴏʀʟᴇxᴀ_Antilink.png`),
 MessageType.image,
 {
@@ -150,11 +150,11 @@ mimetype: Mimetype.png,
 );
 await ӄʀǟӄɨռʐ
 .sendMessage(
-ƈօʀȶǟռǟ.chatId,
+𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
 {
 contentText: `🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ},  (admin)
 ╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
-║📜𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${ƈօʀȶǟռǟ.groupName}
+║📜𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${𝖈𝖔𝖗𝖑𝖊𝖝𝖆.groupName}
 ║🔗𝐀𝐧𝐭𝐢𝐥𝐢𝐧𝐤: ✅On
 ╚════════════╝
 🌱𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗧𝗼𝗴𝗴𝗹𝗲 𝗔𝗻𝘁𝗶𝗹𝗶𝗻𝗸👇🏽‍`,
@@ -180,7 +180,7 @@ quoted: chat,
 contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
 }
 )
-.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat));
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
 }
 }
 );
@@ -189,13 +189,13 @@ contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
 if (Needs[0] === `OFF` || Needs[0] === `off` || Needs[0] === `Off`) {
 LinkList.findOne(
 {
-serverID: ƈօʀȶǟռǟ.chatId,
+serverID: 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
 },
 async (Error, server) => {
-if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat);
+if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat);
 if (!server) {
 const media = await ӄʀǟӄɨռʐ.prepareMessage(
-ƈօʀȶǟռǟ.chatId,
+𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
 fs.readFileSync(`./ᴄᴏʀʟᴇxᴀ☣️Reactor/ᴄᴏʀʟᴇxᴀ_Antilink.png`),
 MessageType.image,
 {
@@ -204,11 +204,11 @@ mimetype: Mimetype.png,
 );
 await ӄʀǟӄɨռʐ
 .sendMessage(
-ƈօʀȶǟռǟ.chatId,
+𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
 {
 contentText: `🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ},  (admin)
 ╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
-║📜𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${ƈօʀȶǟռǟ.groupName}
+║📜𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${𝖈𝖔𝖗𝖑𝖊𝖝𝖆.groupName}
 ║🔗𝐀𝐧𝐭𝐢𝐥𝐢𝐧𝐤: ❌OFF
 ╚════════════╝
 🌱𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗧𝗼𝗴𝗴𝗹𝗲 𝗔𝗻𝘁𝗶𝗹𝗶𝗻𝗸👇🏽‍`,
@@ -234,13 +234,13 @@ quoted: chat,
 contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
 }
 )
-.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat));
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
 } else {
 await server
 .delete()
-.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat));
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
 const media = await ӄʀǟӄɨռʐ.prepareMessage(
-ƈօʀȶǟռǟ.chatId,
+𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
 fs.readFileSync(`./ᴄᴏʀʟᴇxᴀ☣️Reactor/ᴄᴏʀʟᴇxᴀ_Antilink.png`),
 MessageType.image,
 {
@@ -249,11 +249,11 @@ mimetype: Mimetype.png,
 );
 await ӄʀǟӄɨռʐ
 .sendMessage(
-ƈօʀȶǟռǟ.chatId,
+𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
 {
 contentText: `🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ},  (admin)
 ╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
-║📜𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${ƈօʀȶǟռǟ.groupName}
+║📜𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${𝖈𝖔𝖗𝖑𝖊𝖝𝖆.groupName}
 ║🔗𝐀𝐧𝐭𝐢𝐥𝐢𝐧𝐤: ❌OFF
 ╚════════════╝
 🌱𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗧𝗼𝗴𝗴𝗹𝗲 𝗔𝗻𝘁𝗶𝗹𝗶𝗻𝗸👇🏽‍`,
@@ -279,7 +279,7 @@ quoted: chat,
 contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
 }
 )
-.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat));
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
 }
 }
 );
@@ -287,7 +287,7 @@ contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
 }
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 } catch (Error) {
-ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat);
+ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat);
 return;
 }
 },

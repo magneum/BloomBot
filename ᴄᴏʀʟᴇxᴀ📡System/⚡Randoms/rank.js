@@ -30,37 +30,37 @@ var newScpt = scriptName.slice(0, -3).toLowerCase();
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 module.exports = {
 name: newScpt,
-async handle(ӄʀǟӄɨռʐ, chat, ƈօʀȶǟռǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
+async handle(ӄʀǟӄɨռʐ, chat, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
 try {
-var աɦօֆɛռȶɦǟȶ = ƈօʀȶǟռǟ.sender;
-const defaultnm = ƈօʀȶǟռǟ.commandName;
+var աɦօֆɛռȶɦǟȶ = 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.sender;
+const defaultnm = 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.commandName;
 var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ
 .substring(0, աɦօֆɛռȶɦǟȶ.length - 15)
 .replace(/[+ ]/g, "");
 const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 const hold = require(`../../ᴄᴏʀʟᴇxᴀ🛰️Server/Hold`);
-hold.Hold(ƈօʀȶǟռǟ);
+hold.Hold(𝖈𝖔𝖗𝖑𝖊𝖝𝖆);
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-if (!ƈօʀȶǟռǟ.isGroup) {
+if (!𝖈𝖔𝖗𝖑𝖊𝖝𝖆.isGroup) {
 return ᴄᴏʀʟᴇxᴀ_Buttons.MTB(
 ӄʀǟӄɨռʐ,
 chat,
-ƈօʀȶǟռǟ,
+𝖈𝖔𝖗𝖑𝖊𝖝𝖆,
 `🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ}, _This Command is Only For Groups!_!`
 );
 }
-if (ƈօʀȶǟռǟ.fromMe) {
+if (𝖈𝖔𝖗𝖑𝖊𝖝𝖆.fromMe) {
 return ᴄᴏʀʟᴇxᴀ_Buttons.MTB(
 ӄʀǟӄɨռʐ,
 chat,
-ƈօʀȶǟռǟ,
+𝖈𝖔𝖗𝖑𝖊𝖝𝖆,
 `🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ}, _This Command is Only For Members and Not You ᴄᴏʀʟᴇxᴀ-User-Bots!_!`
 );
 }
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 try {
-𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄʀǟӄɨռʐ.getProfilePicture(ƈօʀȶǟռǟ.sender);
+𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄʀǟӄɨռʐ.getProfilePicture(𝖈𝖔𝖗𝖑𝖊𝖝𝖆.sender);
 } catch {
 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = `https://i.postimg.cc/wxWL9G8F/no-profile-picture-300x216.png`;
 }
@@ -68,15 +68,15 @@ try {
 Usersᴄᴏʀʟᴇxᴀ.findOne(
 {
 ID: աɦօֆɛռȶɦǟȶ,
-serverID: ƈօʀȶǟռǟ.chatId,
+serverID: 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
 },
 async (Error, users) => {
-if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat);
+if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat);
 if (!users) {
 return ᴄᴏʀʟᴇxᴀ_Buttons.MTB(
 ӄʀǟӄɨռʐ,
 chat,
-ƈօʀȶǟռǟ,
+𝖈𝖔𝖗𝖑𝖊𝖝𝖆,
 `🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ}, 
 
 
@@ -90,7 +90,7 @@ chat,
 var groupDataRank = await ӄʀǟӄɨռʐ.groupMetadata(chat.key.remoteJid);
 await ӄʀǟӄɨռʐ
 .sendMessage(
-ƈօʀȶǟռǟ.chatId,
+𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
 {
 url: "https://i.postimg.cc/MHZv3FkY/ᴄᴏʀʟᴇxᴀ-Rank-Catelog.png",
 },
@@ -113,14 +113,14 @@ caption: `🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ}
 ◇ *The More You Talk, The More Xp+Gold You Gain.You Can Spend The gold in ${ᴋᴇɪ}shop!*`,
 }
 )
-.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat));
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
 return;
 }
 }
 );
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 } catch (Error) {
-ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat);
+ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat);
 return;
 }
 },

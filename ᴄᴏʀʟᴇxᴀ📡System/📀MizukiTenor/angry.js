@@ -23,18 +23,18 @@ var newScpt = str.slice(0, -3).toLowerCase();
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 module.exports = {
 name: newScpt,
-async handle(ӄʀǟӄɨռʐ, chat, ƈօʀȶǟռǟ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
+async handle(ӄʀǟӄɨռʐ, chat, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
 try {
-var աɦօֆɛռȶɦǟȶ = ƈօʀȶǟռǟ.sender;
+var աɦօֆɛռȶɦǟȶ = 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.sender;
 var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ
 .substring(0, աɦօֆɛռȶɦǟȶ.length - 15)
 .replace(/[+ ]/g, "");
-const defaultnm = ƈօʀȶǟռǟ.commandName;
+const defaultnm = 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.commandName;
 const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
 const AniLink = ᴄᴏʀʟᴇxᴀTenorMaker(FinalName.toLowerCase());
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 const hold = require("../../ᴄᴏʀʟᴇxᴀ🛰️Server/Hold");
-await hold.Hold(ƈօʀȶǟռǟ);
+await hold.Hold(𝖈𝖔𝖗𝖑𝖊𝖝𝖆);
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 const GotFile = `./${chat.key.id}${Date.now()}.gif`;
 const GiveFile = `./${chat.key.id}${Date.now()}.mp4`;
@@ -48,7 +48,7 @@ try {
 await downloader.download();
 } catch (Error) {
 console.log(`═════⬡|🐞𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐄𝐫𝐫𝐨𝐫: ` + Error);
-return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat);
+return ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat);
 }
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 if (Needs[0] && Needs[0].startsWith("@")) {
@@ -65,7 +65,7 @@ ffmpeg(GotFile)
 .on(`end`, async () => {
 await ӄʀǟӄɨռʐ
 .sendMessage(
-ƈօʀȶǟռǟ.chatId,
+𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
 fs.readFileSync(GiveFile),
 MessageType.video,
 {
@@ -81,11 +81,11 @@ caption: `╔════◇🛸𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ᴋᴇɪ}${Final
 contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ, TagMention] },
 }
 )
-.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat));
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
 return await cleanRF.cleanRF(GiveFile, GotFile);
 });
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-} else if (ƈօʀȶǟռǟ.isReply) {
+} else if (𝖈𝖔𝖗𝖑𝖊𝖝𝖆.isReply) {
 var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
 var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
 if (Receiver === աɦօֆɛռȶɦǟȶ) {
@@ -100,7 +100,7 @@ ffmpeg(GotFile)
 .on(`end`, async () => {
 await ӄʀǟӄɨռʐ
 .sendMessage(
-ƈօʀȶǟռǟ.chatId,
+𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
 fs.readFileSync(GiveFile),
 MessageType.video,
 {
@@ -115,7 +115,7 @@ caption: `╔════◇🛸𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ᴋᴇɪ}${Final
 contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
 }
 )
-.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat));
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
 return await cleanRF.cleanRF(GiveFile, GotFile);
 });
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
@@ -131,7 +131,7 @@ ffmpeg(GotFile)
 .on(`end`, async () => {
 await ӄʀǟӄɨռʐ
 .sendMessage(
-ƈօʀȶǟռǟ.chatId,
+𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
 fs.readFileSync(GiveFile),
 MessageType.video,
 {
@@ -147,7 +147,7 @@ caption: `╔════◇🛸𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ᴋᴇɪ}${Final
 contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ, Receiver] },
 }
 )
-.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat));
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
 return await cleanRF.cleanRF(GiveFile, GotFile);
 });
 }
@@ -164,7 +164,7 @@ ffmpeg(GotFile)
 .on(`end`, async () => {
 await ӄʀǟӄɨռʐ
 .sendMessage(
-ƈօʀȶǟռǟ.chatId,
+𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
 fs.readFileSync(GiveFile),
 MessageType.video,
 {
@@ -179,13 +179,13 @@ caption: `╔════◇🛸𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ᴋᴇɪ}${Final
 contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
 }
 )
-.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat));
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
 return await cleanRF.cleanRF(GiveFile, GotFile);
 });
 }
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 } catch (Error) {
-ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ, chat);
+ꜰᴜᴄᴋ.catch(Error, ӄʀǟӄɨռʐ, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat);
 return;
 }
 },

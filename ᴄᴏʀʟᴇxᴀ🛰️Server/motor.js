@@ -16,7 +16,7 @@ const fs = require(`fs`);
 date.format(now, `ddd, MMM DD YYYY`);
 const pattern = date.compile(`ddd, MMM DD YYYY`);
 const Clock = date.format(now, pattern);
-exports.nomentioncontact = async (args, ӄʀǟӄɨռʐ, ƈօʀȶǟռǟ) => {
+exports.nomentioncontact = async (args, ӄʀǟӄɨռʐ, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆) => {
 var jidNumber = ``;
 var countryCode = _𝔏𝔞𝔟_.CCD;
 if (isNaN(args[0]) || args[0][0] === `+`) {
@@ -24,7 +24,7 @@ if (args[0][0] === `@` || args[0][0] === `+`) {
 jidNumber = args[0].substring(1, args[0].length + 1);
 } else {
 ӄʀǟӄɨռʐ.sendMessage(
-ƈօʀȶǟռǟ.chatId,
+𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
 `(𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈 | 𝐄𝐧𝐠𝐢𝐧𝐞: kryozen${vers.vers}\n${Clock}
 
 *Enter valid contact number.* Approved Syntax:
@@ -41,7 +41,7 @@ jidNumber = args[0];
 
 if (jidNumber.length < 8 || jidNumber.length > 13) {
 ӄʀǟӄɨռʐ.sendMessage(
-ƈօʀȶǟռǟ.chatId,
+𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
 `(𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈 | 𝐄𝐧𝐠𝐢𝐧𝐞: kryozen${vers.vers}\n${Clock}
 
 *Enter valid contact number.* Approved Syntax:

@@ -13,7 +13,7 @@ var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 exports.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ = async (
 ӄʀǟӄɨռʐ,
 chat,
-ƈօʀȶǟռǟ,
+𝖈𝖔𝖗𝖑𝖊𝖝𝖆,
 աɦօֆɛռȶɦǟȶ,
 աɦօֆɛռȶɦǟȶռʊʍ,
 commandName,
@@ -22,7 +22,7 @@ needs
 return ᴄᴏʀʟᴇxᴀ_Buttons.MIB(
 ӄʀǟӄɨռʐ,
 chat,
-ƈօʀȶǟռǟ,
+𝖈𝖔𝖗𝖑𝖊𝖝𝖆,
 `◇══════════════════◇\n𝐂𝐨𝐦𝐦𝐚𝐧𝐝⚙️𝐔𝐬𝐚𝐠𝐞\n◇══════════════════◇
 🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ}
 
