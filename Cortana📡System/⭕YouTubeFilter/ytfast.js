@@ -223,8 +223,6 @@ var stream = ytdl(Found.url, {
 filter: "audioonly",
 });
 ffmpeg(stream)
-.audioBitrate(128)
-.toFormat("ipod")
 .saveToFile(FFmpegFile)
 .on("end", () => {
 require("child_process").exec(
