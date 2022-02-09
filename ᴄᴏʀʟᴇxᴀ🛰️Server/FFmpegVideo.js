@@ -22,7 +22,7 @@ const defaultnm = 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.commandName;
 var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ
 .substring(0, աɦօֆɛռȶɦǟȶ.length - 15)
 .replace(/[+ ]/g, "");
-var FFmpegFile = `${chat.key.id}${Date.now()}.mp4`;
+var FFmpegFile = `./ᴄᴏʀʟᴇxᴀ☕ꜱʜᴏᴘ/${chat.key.id}.mp4`;
 const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
 `|⬡════════════════════════════════════════════|   ◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 ⧱ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⧱ 𝟐𝟎𝟐𝟐◢   |═══════════════════════════════════════════⬡|`;
 YouTube_Video(Found.url).then((res) => {
@@ -31,8 +31,8 @@ TinyURL.shorten(dl_link).then(
 async function (DirectFile) {
 const downloader = await new Downloader({
 url: DirectFile,
-directory: `${__dirname}`,
-fileName: FFmpegFile,
+directory: `ᴄᴏʀʟᴇxᴀ☕ꜱʜᴏᴘ`,
+fileName: `${chat.key.id}.mp4`,
 cloneFiles: false,
 });
 try {
@@ -40,6 +40,15 @@ await downloader.download();
 console.log(
 `⬡═══════════════════| 🥂𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐅𝐢𝐧𝐢𝐬𝐞𝐝🥂 |═══════════════════⬡`
 );
+} catch (Error) {
+console.log(`⬡═══════════════════| 🐞𝐄𝐫𝐫𝐨𝐫: ` + Error);
+userBadge.Limits = userBadge.Limits + 1;
+await userBadge
+.save()
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
+return ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat);
+}
+`|⬡════════════════════════════════════════════|   ◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 ⧱ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⧱ 𝟐𝟎𝟐𝟐◢   |═══════════════════════════════════════════⬡|`;
 try {
 const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
@@ -82,14 +91,6 @@ contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
 )
 .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
 await cleanRF.cleanRF(FFmpegFile);
-} catch (Error) {
-console.log(`⬡═══════════════════| 🐞𝐄𝐫𝐫𝐨𝐫: ` + Error);
-userBadge.Limits = userBadge.Limits + 1;
-await userBadge
-.save()
-.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
-return ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat);
-}
 } catch (Error) {
 console.log(`⬡═══════════════════| 🐞𝐄𝐫𝐫𝐨𝐫: ` + Error);
 userBadge.Limits = userBadge.Limits + 1;
