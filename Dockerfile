@@ -20,7 +20,7 @@ RUN chmod a+rx /usr/local/bin/youtube-dl
 RUN heroku plugins:install heroku-builds
 RUN apt-get install npm -y 
 RUN npm install --global n
-RUN npm install npm@8.4.1
+RUN npm install npm
 RUN n install 16
 RUN path=path 
 RUN hash -r 
