@@ -199,7 +199,7 @@ chat,
 ║🍻 𝐓𝐢𝐭𝐥𝐞: ${SpotFound.title}
 ║⏰ 𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧: ${formatDuration(SpotFound.duration)}
 ║✒️ 𝐀𝐮𝐭𝐡𝐨𝐫: ${SpotFound.artist}
-║🔗 𝐋𝐢𝐧𝐤: ${Found.url}
+║🔗 𝐋𝐢𝐧𝐤: ${SpotFound.url}
 ╚════════════╝`,
 SpotFound.thumbnail
 );
