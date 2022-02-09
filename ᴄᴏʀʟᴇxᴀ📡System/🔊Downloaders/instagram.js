@@ -179,7 +179,7 @@ contentText: `•🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ},
 🍠𝐒𝐨𝐮𝐫𝐜𝐞: _•Instagram_
 🧀𝐅𝐢𝐥𝐞 𝐓𝐲𝐩𝐞: ${i.type}
 `,
-footerText: `| (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈 |\n${Clock}`,
+footerText: `◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • _𝟐𝟎𝟐𝟐_ • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™◢`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
@@ -216,7 +216,7 @@ contentText: `•🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ},
 🍠𝐒𝐨𝐮𝐫𝐜𝐞: _•Instagram_
 🧀𝐅𝐢𝐥𝐞 𝐓𝐲𝐩𝐞: ${i.type}
 `,
-footerText: `| (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈 |\n${Clock}`,
+footerText: `◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • _𝟐𝟎𝟐𝟐_ • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™◢`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
