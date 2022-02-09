@@ -6,7 +6,7 @@
 const ᴄᴏʀʟᴇxᴀ_Buttons = require(`../../ᴄᴏʀʟᴇxᴀ🛰️Server/ᴄᴏʀʟᴇxᴀ_Buttons`);
 const ᴄᴏʀʟᴇxᴀ_Static = require(`../../ᴄᴏʀʟᴇxᴀ🛰️Server/ᴄᴏʀʟᴇxᴀ_Static`);
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
-const FFmpegAudio = require(`../../ᴄᴏʀʟᴇxᴀ🛰️Server/FFmpegAudio`);
+const FFmpegSpot = require(`../../ᴄᴏʀʟᴇxᴀ🛰️Server/FFmpegSpot`);
 const cleanRF = require(`../../ᴄᴏʀʟᴇxᴀ🛰️Server/cleanRF`);
 const _𝔏𝔞𝔟_ = require(`../../ᴄᴏʀʟᴇxᴀ🛰️Server/_𝔏𝔞𝔟_`);
 const ꜰᴜᴄᴋ = require(`../../ᴄᴏʀʟᴇxᴀ🛰️Server/oShit`);
@@ -33,7 +33,7 @@ var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ
 .replace(/[+ ]/g, "");
 const defaultnm = 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.commandName;
 const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
-var FFmpegFile = `./ᴄᴏʀʟᴇxᴀ☕ꜱʜᴏᴘ/${Date.now()}_${chat.key.id}.mp3`;
+var FFmpegFile = `./ᴄᴏʀʟᴇxᴀ☕ꜱʜᴏᴘ/${Date.now()}s${chat.key.id}.mp3`;
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 if (Needs.length === 0) {
 var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(𝖈𝖔𝖗𝖑𝖊𝖝𝖆.commandName);
@@ -218,26 +218,29 @@ chat,
 ╚════════════╝`,
 SpotFound.thumbnail
 );
-spdl(SpotFound.url).then(async (stream) => {
-stream.on("end", () =>
-ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
-.sendMessage(
-𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
-fs.readFileSync(FFmpegFile),
-MessageType.audio,
-{
-quoted: chat,
-mimetype: "audio/mp4",
-}
-)
-.catch((Error) =>
-ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat)
-)
-.then(cleanRF.cleanRF(FFmpegFile))
+`|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
+const spotifyToYT = require("spotify-to-yt");
+var gotSpot = spotifyToYT.trackGet(Needs.join(" "));
+if (!gotSpot) {
+return ᴄᴏʀʟᴇxᴀ_Buttons.MTB(
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+chat,
+𝖈𝖔𝖗𝖑𝖊𝖝𝖆,
+`🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ}, 
+❌𝗘𝗿𝗿𝗼𝗿: No Audio Found!`
 );
-stream.pipe(fs.createWriteStream(FFmpegFile));
+}
+`|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
+await FFmpegSpot.FFmpegSpot(
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+𝖈𝖔𝖗𝖑𝖊𝖝𝖆,
+chat,
+gotSpot,
+userBadge
+);
+return;
 });
-});
+`|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 } catch (Error) {
 console.log(`⬡═══════════════════| 🐞𝐄𝐫𝐫𝐨𝐫: ` + Error);
 userBadge.Limits = userBadge.Limits + 1;
