@@ -9,6 +9,11 @@ const ᴍɪᴢᴜᴋɪɢɪᴛ = require(`simple-git`)();
 await ᴍɪᴢᴜᴋɪɢɪᴛ.fetch();
 var ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ = await ᴍɪᴢᴜᴋɪɢɪᴛ.log([`KrakinzLab..origin/KrakinzLab`]);
 if (ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total != 0) {
+var child = require(`child_process`).exec("git config pull.rebase false");
+child.stdout.pipe(process.stdout);
+child.on(`exit`, async function () {
+process.exitCode = 1;
+});
 require(`simple-git`)()
 .exec(async () => {
 console.log(`💡 𝐈𝐧𝐟𝐨⬰ Updating ᴄᴏʀʟᴇxᴀ System With Latest Patch...`);
