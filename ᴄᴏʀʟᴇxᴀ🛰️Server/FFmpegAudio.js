@@ -7,14 +7,17 @@ const { MessageType } = require(`@adiwajshing/baileys`);
 const Downloader = require(`nodejs-file-downloader`);
 const ᴄᴏʀʟᴇxᴀ_Buttons = require(`./ᴄᴏʀʟᴇxᴀ_Buttons`);
 const { YouTube_Music } = require(`./youmaker`);
-const _𝔏𝔞𝔟_ = require(`./_𝔏𝔞𝔟_`);
-const ꜰᴜᴄᴋ = require(`./oShit`);
+const ffmpeg = require("fluent-ffmpeg");
 const vers = require(`../package.json`);
-var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
-var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 const cleanRF = require(`./cleanRF`);
 const TinyURL = require("tinyurl");
+const ytdl = require("ytdl-core");
+const yts = require("yt-search");
+const _𝔏𝔞𝔟_ = require(`./_𝔏𝔞𝔟_`);
+const ꜰᴜᴄᴋ = require(`./oShit`);
 const fs = require(`fs`);
+var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
+var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 `|⬡════════════════════════════════════════════|   ◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 ⧱ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⧱ 𝟐𝟎𝟐𝟐◢   |═══════════════════════════════════════════⬡|`;
 exports.FFmpegAudio = async (ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat, Found, userBadge) => {
 var աɦօֆɛռȶɦǟȶ = 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.sender;
@@ -26,6 +29,7 @@ var FFmpegFile = `./ᴄᴏʀʟᴇxᴀ☕ꜱʜᴏᴘ/${chat.key.id}.mp3`;
 const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
 `|⬡════════════════════════════════════════════|   ◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 ⧱ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⧱ 𝟐𝟎𝟐𝟐◢   |═══════════════════════════════════════════⬡|`;
 YouTube_Music(Found.url).then((res) => {
+try {
 const { dl_link, thumb, title, filesizeF, filesize } = res;
 TinyURL.shorten(dl_link).then(
 async function (DirectFile) {
@@ -80,6 +84,31 @@ await userBadge
 return ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat);
 }
 );
+`|⬡════════════════════════════════════════════|   ◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 ⧱ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⧱ 𝟐𝟎𝟐𝟐◢   |═══════════════════════════════════════════⬡|`;
+} catch (Error) {
+const downloadFFmpegFile = ytdl(Found.url, {
+filter: "audioonly",
+});
+const writeStream = fs.createWriteStream(FFmpegFile);
+downloadFFmpegFile.pipe(writeStream);
+downloadFFmpegFile.on("end", async () => {
+console.log(
+`⬡═══════════════════| 🥂𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐅𝐢𝐧𝐢𝐬𝐞𝐝🥂 |═══════════════════⬡`
+);
+await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
+.sendMessage(
+𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
+fs.readFileSync(FFmpegFile),
+MessageType.audio,
+{
+quoted: chat,
+mimetype: "audio/mp4",
+}
+)
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
+return await cleanRF.cleanRF(FFmpegFile);
+});
+}
 });
 };
 `|⬡════════════════════════════════════════════|                            |═══════════════════════════════════════════⬡|`;
