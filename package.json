@@ -144,6 +144,7 @@
     "simple-git": "^2.47.0",
     "songlyrics": "^2.2.4",
     "soyultro": "^4.8.5",
+    "spdl-core": "^2.0.2",
     "spinnies": "^0.5.1",
     "spotify-to-yt": "^1.1.1",
     "sqlite3": "^5.0.2",
