@@ -113,7 +113,7 @@
     "node-fetch": "^2.6.1",
     "nodejs-file-downloader": "^4.8.1",
     "nodemon": "^2.0.15",
-    "npm": "^8.3.0",
+    "npm": "^8.4.1",
     "ocr-space-api-wrapper": "^1.0.6",
     "parse-ms": "^2.1.0",
     "path": "^0.12.7",
