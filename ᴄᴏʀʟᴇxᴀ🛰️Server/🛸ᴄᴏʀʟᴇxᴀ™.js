@@ -396,11 +396,7 @@ return ᴄᴏʀʟᴇxᴀ_Buttons.MTB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 𝖈𝖔𝖗𝖑𝖊𝖝𝖆,
-`🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ}, 
-
-╔◇║ ❗𝗪𝗮𝗿𝗻𝗶𝗻𝗴
-║ *Using ᴄᴏʀʟᴇxᴀ In Private Is No longer Allowed!*
-╚════════════╝
+`🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ}, *Using ᴄᴏʀʟᴇxᴀ In Private Is No longer Allowed!*
 
 
 ╔◇║ 👇🏽 𝗝𝗼𝗶𝗻 𝗔𝗻𝘆 𝗖𝗼𝗿𝘁𝗮𝗻𝗮 𝗔𝗜 𝗚𝗿𝗼𝘂𝗽 👇🏽
