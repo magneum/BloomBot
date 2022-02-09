@@ -555,19 +555,23 @@ return ᴄᴏʀʟᴇxᴀ_Buttons.MIB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 𝖈𝖔𝖗𝖑𝖊𝖝𝖆,
-`🤖𝐕𝐞𝐫𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧: @${աɦօֆɛռȶɦǟȶռʊʍ}, 
-_You Are Not Verified.Join Any ᴄᴏʀʟᴇxᴀ Group and Verify Yourself First!_
+`🤖𝐕𝐞𝐫𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧: @${աɦօֆɛռȶɦǟȶռʊʍ}, _You Are Not Verified.Join Any Corlexa Group and Verify Yourself First!_
 
-
-╔════◇𝐖𝐡𝐲 𝐃𝐨 𝐈 𝐍𝐞𝐞𝐝 𝐓𝐨 𝐁𝐞 𝐕𝐞𝐫𝐢𝐟𝐢𝐞𝐝?
+╔════◇ 𝐎𝐟𝐟𝐢𝐜𝐢𝐚𝐥👇🏽‍ 
+║💼 𝐆𝐫𝐨𝐮𝐩: _${_𝔏𝔞𝔟_.HASH}_
+║💼 𝐆𝐫𝐨𝐮𝐩: _${_𝔏𝔞𝔟_.HASHS}_
+║💼 𝐆𝐫𝐨𝐮𝐩: _${_𝔏𝔞𝔟_.HASHSH}_
+║
+╚◇║‍
+╔◇║◇𝐖𝐡𝐲 𝐃𝐨 𝐈 𝐍𝐞𝐞𝐝 𝐓𝐨 𝐁𝐞 𝐕𝐞𝐫𝐢𝐟𝐢𝐞𝐝?
+║
 ║📌 Monitor Anti-Spam!
 ║📌 Monitor Bugs!
 ║📌 Use ᴄᴏʀʟᴇxᴀ Anywhere!
 ║📌 Monitor Group Ranks!
 ║📌 Monitor Performance!
-╚════════════╝
-
-👇🏽‍𝗣𝗿𝗲𝘀𝘀 𝗙𝗔𝗤 𝗳𝗼𝗿 𝗹𝗶𝗻𝗸!👇🏽‍`,
+║
+╚◇║`,
 "./ᴄᴏʀʟᴇxᴀ☣️Reactor/ᴄᴏʀʟᴇxᴀ_NoVerity.png"
 );
 }
