@@ -399,17 +399,17 @@ chat,
 `🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ}, *Using ᴄᴏʀʟᴇxᴀ In Private Is No longer Allowed!*
 
 
-╔◇║ 👇🏽 𝗝𝗼𝗶𝗻 𝗔𝗻𝘆 𝗖𝗼𝗿𝘁𝗮𝗻𝗮 𝗔𝗜 𝗚𝗿𝗼𝘂𝗽 👇🏽
+╔◇║👇🏽𝗝𝗼𝗶𝗻 𝗔𝗻𝘆 𝗖𝗼𝗿𝘁𝗮𝗻𝗮-𝗔𝗜 𝗚𝗿𝗼𝘂𝗽👇🏽
 ║
 ║💼 𝐆𝐫𝐨𝐮𝐩: _${_𝔏𝔞𝔟_.HASH}_
 ║💼 𝐆𝐫𝐨𝐮𝐩: _${_𝔏𝔞𝔟_.HASHS}_
 ║💼 𝐆𝐫𝐨𝐮𝐩: _${_𝔏𝔞𝔟_.HASHSH}_
 ╚════════════╝
 
-╔◇║🏮 *Corlexa Rules*
+╔◇║🏮𝐂𝐨𝐫𝐥𝐞𝐱𝐚 𝐑𝐮𝐥𝐞𝐬
 ║
 ║🔖 _Do not call bot, if you do then you'll get blocked by bot._
-║🔖 _Do not spam bot with commands, if bot is not responding then it means either bot is off or there's internet issue at owner's end._
+║🔖 _Do not spam bot with commands, if bot is not responding then it means either bot is off or there's internet issue at server end._
 ║🔖 _Do not abuse/disrespect bot and its owner._
 ║🔖 _If you see any bug/error in bot then report it to devs in the above group chats._
 ║🔖 _If you want this bot in your group then contact devs._
