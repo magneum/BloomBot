@@ -7,7 +7,7 @@ const ᴄᴏʀʟᴇxᴀ_Buttons = require(`../../ᴄᴏʀʟᴇxᴀ🛰️Server/
 const ᴄᴏʀʟᴇxᴀ_Static = require(`../../ᴄᴏʀʟᴇxᴀ🛰️Server/ᴄᴏʀʟᴇxᴀ_Static`);
 const { formatp, runtime } = require(`../../ᴄᴏʀʟᴇxᴀ🛰️Server/mizu`);
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
-const  _𝔏𝔞𝔟_ = require(`../../ᴄᴏʀʟᴇxᴀ🛰️Server/_𝔏𝔞𝔟_`);
+const _𝔏𝔞𝔟_ = require(`../../ᴄᴏʀʟᴇxᴀ🛰️Server/_𝔏𝔞𝔟_`);
 const ꜰᴜᴄᴋ = require(`../../ᴄᴏʀʟᴇxᴀ🛰️Server/oShit`);
 const { performance } = require(`perf_hooks`);
 const vers = require(`../../package.json`);
@@ -43,7 +43,7 @@ cpu.total = Object.keys(cpu.times).reduce(
 return cpu;
 });
 const cpu = cpus.reduce(
-(last, cpu,  _, { length }) => {
+(last, cpu, _, { length }) => {
 last.total += cpu.total;
 last.speed += cpu.speed / length;
 last.times.user += cpu.times.user;
@@ -72,7 +72,8 @@ neww = performance.now();
 oldd = performance.now();
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 var MediaUrl = `./ᴄᴏʀʟᴇxᴀ☣️Reactor/𝖈𝖔𝖗𝖑𝖊𝖝𝖆.png`;
-return ᴄᴏʀʟᴇxᴀ_Buttons.MIB(
+return ᴄᴏʀʟᴇxᴀ_Buttons
+.MIB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 𝖈𝖔𝖗𝖑𝖊𝖝𝖆,
@@ -87,7 +88,7 @@ chat,
 ║シ︎☕ *Uptime:*  _${runtime(process.uptime())}_
 ║シ︎🎮 *Ram:*  _${formatp(os.totalmem() - os.freemem())} / ${formatp(
 os.totalmem()
-)}_ (29-User-Bot)
+)}_ (31-User-Bots)
 ║
 ╚◇╗
 ╔◇╜꧁༺ 👇🏽𝐄𝐯𝐞𝐫𝐲𝐨𝐧𝐞👇🏽 ༻꧂
@@ -365,7 +366,8 @@ os.totalmem()
 ║🍄•  ${ᴋᴇɪ}yuri
 ╚════════════╝`,
 MediaUrl
-).catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
+)
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 } catch (Error) {
 ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat);
