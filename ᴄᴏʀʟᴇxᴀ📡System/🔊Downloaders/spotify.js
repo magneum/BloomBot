@@ -203,7 +203,7 @@ chat,
 ╚════════════╝`,
 SpotFound.thumbnail
 );
-spdl(SpotFound.url).then((stream) => {
+await spdl(SpotFound.url).then(async (stream) => {
 stream.on("end", async () => {});
 stream.pipe(fs.createWriteStream(FFmpegFile));
 await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
