@@ -5,9 +5,9 @@
 `|⬡════════════════════════════════════════════|                            |═══════════════════════════════════════════⬡|`;
 const ᴄᴏʀʟᴇxᴀ_Buttons = require(`../../ᴄᴏʀʟᴇxᴀ🛰️Server/ᴄᴏʀʟᴇxᴀ_Buttons`);
 const ᴄᴏʀʟᴇxᴀ_Static = require(`../../ᴄᴏʀʟᴇxᴀ🛰️Server/ᴄᴏʀʟᴇxᴀ_Static`);
+const { servers, v2mate } = require("../../ᴄᴏʀʟᴇxᴀ🛰️Server/v2mate");
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const FFmpegVideo = require(`../../ᴄᴏʀʟᴇxᴀ🛰️Server/FFmpegVideo`);
-const { servers, ytv } = require("../../ᴄᴏʀʟᴇxᴀ🛰️Server/v2mate");
 const cleanRF = require(`../../ᴄᴏʀʟᴇxᴀ🛰️Server/cleanRF`);
 const _𝔏𝔞𝔟_ = require(`../../ᴄᴏʀʟᴇxᴀ🛰️Server/_𝔏𝔞𝔟_`);
 const ꜰᴜᴄᴋ = require(`../../ᴄᴏʀʟᴇxᴀ🛰️Server/oShit`);
@@ -211,13 +211,10 @@ chat,
 ╚════════════╝`
 );
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-let server = (Needs[1] || servers[0]).toLowerCase();
-let server = (Needs[1] || servers[0]).toLowerCase();
-let { dl_link, thumb, title, filesize, filesizeF } = await ytv(
-Needs[0],
-servers.includes(server) ? server : servers[0]
+let { dl_link, thumb, title, filesize, filesizeF } = await v2mate(
+Found.url,
+"en68"
 );
-const { dl_link, thumb, title, filesizeF, filesize } = res;
 try {
 TinyURL.shorten(dl_link).then(
 async function (DirectFile) {
