@@ -47,7 +47,7 @@ var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ
 .substring(0, աɦօֆɛռȶɦǟȶ.length - 15)
 .replace(/[+ ]/g, "");
 var expFile =
-"./ᴄᴏʀʟᴇxᴀ☕Shop/" +
+"./ᴄᴏʀʟᴇxᴀ☕ꜱʜᴏᴘ/" +
 Date.now().toString() +
 աɦօֆɛռȶɦǟȶ.toString() +
 ".png";

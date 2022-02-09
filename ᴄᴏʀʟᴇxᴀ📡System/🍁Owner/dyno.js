@@ -46,7 +46,7 @@ var child = require(`child_process`).exec(
 child.stdout.pipe(process.stdout);
 child.on(`exit`, async function () {
 process.exitCode = 1;
-var data = fs.readFileSync(`./ᴄᴏʀʟᴇxᴀ☕Shop/𝐇𝐞𝐫𝐨𝐤𝐮.txt`, `utf8`);
+var data = fs.readFileSync(`./ᴄᴏʀʟᴇxᴀ☕ꜱʜᴏᴘ/𝐇𝐞𝐫𝐨𝐤𝐮.txt`, `utf8`);
 console.log(data.toString());
 return ᴄᴏʀʟᴇxᴀ_Buttons.MIB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,

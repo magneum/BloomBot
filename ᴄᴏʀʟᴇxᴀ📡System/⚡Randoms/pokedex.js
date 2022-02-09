@@ -165,7 +165,7 @@ try {
 exec(
 `ffmpeg -i '${
 json.sprites.animated
-}' -pix_fmt yuv420p -c:v libx264 -movflags +faststart -filter:v crop='floor(in_w/2)*2:floor(in_h/2)*2' './ᴄᴏʀʟᴇxᴀ☕Shop/${աɦօֆɛռȶɦǟȶռʊʍ.toString()}.mp4'`,
+}' -pix_fmt yuv420p -c:v libx264 -movflags +faststart -filter:v crop='floor(in_w/2)*2:floor(in_h/2)*2' './ᴄᴏʀʟᴇxᴀ☕ꜱʜᴏᴘ/${աɦօֆɛռȶɦǟȶռʊʍ.toString()}.mp4'`,
 async (Error) => {
 if (Error) {
 userBadge.Limits = userBadge.Limits + 1;
@@ -217,7 +217,7 @@ await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .sendMessage(
 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
 fs.readFileSync(
-`./ᴄᴏʀʟᴇxᴀ☕Shop/${աɦօֆɛռȶɦǟȶռʊʍ.toString()}.mp4`
+`./ᴄᴏʀʟᴇxᴀ☕ꜱʜᴏᴘ/${աɦօֆɛռȶɦǟȶռʊʍ.toString()}.mp4`
 ),
 MessageType.video,
 {
@@ -229,7 +229,7 @@ contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
 )
 .then(
 cleanRF.cleanRF(
-`./ᴄᴏʀʟᴇxᴀ☕Shop/${աɦօֆɛռȶɦǟȶռʊʍ.toString()}.mp4`
+`./ᴄᴏʀʟᴇxᴀ☕ꜱʜᴏᴘ/${աɦօֆɛռȶɦǟȶռʊʍ.toString()}.mp4`
 )
 )
 .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
