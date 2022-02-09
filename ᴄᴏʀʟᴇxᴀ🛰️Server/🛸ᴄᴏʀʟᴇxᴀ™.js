@@ -42,69 +42,69 @@ const fs = require(`fs`);
 const time2 = moment().tz(`Asia/Kolkata`).format(`HH:mm:ss`);
 `|⬡════════════════════════════════════════════|   ◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ • 𝟐𝟎𝟐𝟐◢   |═══════════════════════════════════════════⬡|`;
 if (time2 < `24:59:00`) {
-var Timers = `𝐍𝐢𝐠𝐡𝐭😴`;
+  var Timers = `𝐍𝐢𝐠𝐡𝐭😴`;
 }
 if (time2 < `19:00:00`) {
-var Timers = `𝐄𝐯𝐞𝐧𝐢𝐧𝐠🌞`;
+  var Timers = `𝐄𝐯𝐞𝐧𝐢𝐧𝐠🌞`;
 }
 if (time2 < `18:00:00`) {
-var Timers = `𝐀𝐟𝐭𝐞𝐫𝐧𝐨𝐨𝐧🌄`;
+  var Timers = `𝐀𝐟𝐭𝐞𝐫𝐧𝐨𝐨𝐧🌄`;
 }
 if (time2 < `15:00:00`) {
-var Timers = `𝐀𝐟𝐭𝐞𝐫𝐧𝐨𝐨𝐧☀️`;
+  var Timers = `𝐀𝐟𝐭𝐞𝐫𝐧𝐨𝐨𝐧☀️`;
 }
 if (time2 < `11:00:00`) {
-var Timers = `𝐌𝐨𝐫𝐧𝐢𝐧𝐠🌅`;
+  var Timers = `𝐌𝐨𝐫𝐧𝐢𝐧𝐠🌅`;
 }
 if (time2 < `05:00:00`) {
-var Timers = `𝐍𝐢𝐠𝐡𝐭💤`;
+  var Timers = `𝐍𝐢𝐠𝐡𝐭💤`;
 }
 const version = vers.vers;
 `|⬡════════════════════════════════════════════|   ◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ • 𝟐𝟎𝟐𝟐◢   |═══════════════════════════════════════════⬡|`;
 var ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇 = 𝖈𝖔𝖗𝖑𝖊𝖝𝖆ֆʏռօք.WhatsApp;
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.logger.level = "error";
 async function 𝖈𝖔𝖗𝖑𝖊𝖝𝖆() {
-try {
-await 𝖈𝖔𝖗𝖑𝖊𝖝𝖆goose.connect(_𝔏𝔞𝔟_.CORLEXAMDB, {
-useNewUrlParser: true,
-useUnifiedTopology: true,
-useCreateIndex: true,
-useFindAndModify: false,
-});
-console.log("💡 𝐈𝐧𝐟𝐨⬰ ᴄᴏʀʟᴇxᴀGoose Ready!");
-} catch (Error) {
-console.log(`💡 𝐈𝐧𝐟𝐨⬰ ᴄᴏʀʟᴇxᴀGoose Error: \n${Error}`);
-process.exit(0);
-}
-var ꜱɪᴛʀᴀᴘ = new Map();
-var commandUsage = new Map();
-if (_𝔏𝔞𝔟_.HEROKU_API_KEY === `Null` || _𝔏𝔞𝔟_.HEROKU_APP_NAME === `Null`) {
-console.log(Kolor.yellow(`❌ 𝐄𝐫𝐫𝐨𝐫⬰  Heroku Vars Are Wrong!`));
-process.exit(0);
-}
-try {
-var session = 𝖈𝖔𝖗𝖑𝖊𝖝𝖆ֆʏռօք.ᴄᴏʀʟᴇxᴀReIgnite(_𝔏𝔞𝔟_.CORLEXA);
-ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.loadAuthInfo(session);
-} catch (Error) {
-console.log(Kolor.red(`💡 𝐈𝐧𝐟𝐨⬰ ᴄᴏʀʟᴇxᴀ Web Code is Wrong. Re-Auth!`));
-process.exit(0);
-}
-`|⬡════════════════════════════════════════════|   ◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ • 𝟐𝟎𝟐𝟐◢   |═══════════════════════════════════════════⬡|`;
-ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.connect().catch((Error) => {
-console.log(Error);
-var childs = require(`child_process`).exec(`python3 🐙ᴋʀʏᴏᴛᴇᴋ.py`);
-childs.stdout.pipe(process.stdout);
-childs.on(`exit`, async function () {
-process.exitCode = 1;
-});
-});
-`|⬡════════════════════════════════════════════|   ◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ • 𝟐𝟎𝟐𝟐◢   |═══════════════════════════════════════════⬡|`;
-ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.on(`connecting`, async () => {
-console.log(Kolor.yellow(`💡 𝐈𝐧𝐟𝐨⬰ Connecting With User's Whatsapp Web..`));
-});
-ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.on(`open`, async () => {
-console.log(
-Kolor.green(`
+  try {
+    await 𝖈𝖔𝖗𝖑𝖊𝖝𝖆goose.connect(_𝔏𝔞𝔟_.CORLEXAMDB, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+      useCreateIndex: true,
+      useFindAndModify: false,
+    });
+    console.log("💡 𝐈𝐧𝐟𝐨⬰ ᴄᴏʀʟᴇxᴀGoose Ready!");
+  } catch (Error) {
+    console.log(`💡 𝐈𝐧𝐟𝐨⬰ ᴄᴏʀʟᴇxᴀGoose Error: \n${Error}`);
+    process.exit(0);
+  }
+  var ꜱɪᴛʀᴀᴘ = new Map();
+  var commandUsage = new Map();
+  if (_𝔏𝔞𝔟_.HEROKU_API_KEY === `Null` || _𝔏𝔞𝔟_.HEROKU_APP_NAME === `Null`) {
+    console.log(Kolor.yellow(`❌ 𝐄𝐫𝐫𝐨𝐫⬰  Heroku Vars Are Wrong!`));
+    process.exit(0);
+  }
+  try {
+    var session = 𝖈𝖔𝖗𝖑𝖊𝖝𝖆ֆʏռօք.ᴄᴏʀʟᴇxᴀReIgnite(_𝔏𝔞𝔟_.CORLEXA);
+    ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.loadAuthInfo(session);
+  } catch (Error) {
+    console.log(Kolor.red(`💡 𝐈𝐧𝐟𝐨⬰ ᴄᴏʀʟᴇxᴀ Web Code is Wrong. Re-Auth!`));
+    process.exit(0);
+  }
+  `|⬡════════════════════════════════════════════|   ◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ • 𝟐𝟎𝟐𝟐◢   |═══════════════════════════════════════════⬡|`;
+  ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.connect().catch((Error) => {
+    console.log(Error);
+    var childs = require(`child_process`).exec(`python3 🐙ᴋʀʏᴏᴛᴇᴋ.py`);
+    childs.stdout.pipe(process.stdout);
+    childs.on(`exit`, async function () {
+      process.exitCode = 1;
+    });
+  });
+  `|⬡════════════════════════════════════════════|   ◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ • 𝟐𝟎𝟐𝟐◢   |═══════════════════════════════════════════⬡|`;
+  ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.on(`connecting`, async () => {
+    console.log(Kolor.yellow(`💡 𝐈𝐧𝐟𝐨⬰ Connecting With User's Whatsapp Web..`));
+  });
+  ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.on(`open`, async () => {
+    console.log(
+      Kolor.green(`
 |⬡════════════════════════════════════════════|◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ • 𝟐𝟎𝟐𝟐◢
 
 ░█████╗░░█████╗░██████╗░██╗░░░░░███████╗██╗░░██╗░█████╗░  ██████╗░██╗░░░██╗
@@ -121,66 +121,66 @@ Kolor.green(`
 ██║░╚██╗██║░░██║██║░░██║██║░╚██╗██║██║░╚███║███████╗███████╗██║░░██║██████╦╝
 ╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░╚═╝╚═╝╚═╝░░╚══╝╚══════╝╚══════╝╚═╝░░╚═╝╚═════╝░
 |⬡════════════════════════════════════════════|◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ • 𝟐𝟎𝟐𝟐◢`)
-);
-await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
-.sendMessage(
-ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.user.jid,
-`(𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈 by 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
+    );
+    await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
+      .sendMessage(
+        ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.user.jid,
+        `(𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈 by 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
 
 ╔════◇🚀 *BACK ONLINE*
 ║🛰️ 𝐏𝐢𝐧𝐠: _${Ping}s_
 ║📅 𝐃𝐚𝐭𝐞: _${Clock}_
 ╚════════════╝`,
-MessageType.text
-)
-.catch((Error) => console.log(Error));
-});
-`|⬡════════════════════════════════════════════|   ◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ • 𝟐𝟎𝟐𝟐◢   |═══════════════════════════════════════════⬡|`;
-Tǟɮʟɛɨȶ(ꜱɪᴛʀᴀᴘ, commandUsage);
-ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.on(`group-update`, async (update) => {
-try {
-𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.getProfilePicture(update.jid);
-} catch {
-𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = "https://i.postimg.cc/wxWL9G8F/no-profile-picture-300x216.png";
-}
-const groupupdateID = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.groupMetadata(update.jid);
-if (update.announce == `false`) {
-return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
-.sendMessage(groupupdateID.id, { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 }, MessageType.image, {
-mimetype: Mimetype.png,
-caption: `*🛸Attention Here Everyone In the Group!🛸*
+        MessageType.text
+      )
+      .catch((Error) => console.log(Error));
+  });
+  `|⬡════════════════════════════════════════════|   ◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ • 𝟐𝟎𝟐𝟐◢   |═══════════════════════════════════════════⬡|`;
+  Tǟɮʟɛɨȶ(ꜱɪᴛʀᴀᴘ, commandUsage);
+  ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.on(`group-update`, async (update) => {
+    try {
+      𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.getProfilePicture(update.jid);
+    } catch {
+      𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = "https://i.postimg.cc/wxWL9G8F/no-profile-picture-300x216.png";
+    }
+    const groupupdateID = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.groupMetadata(update.jid);
+    if (update.announce == `false`) {
+      return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
+        .sendMessage(groupupdateID.id, { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 }, MessageType.image, {
+          mimetype: Mimetype.png,
+          caption: `*🛸Attention Here Everyone In the Group!🛸*
 
 ╔═══════★
 ║⛺𝐆𝐫𝐨𝐮𝐩 𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _Open For All_
 ║🎪𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${groupupdateID.subject}
 ║💞𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${groupupdateID.participants.length}
 ╚════════════╝`,
-})
-.catch((Error) => console.log(Error));
-`|⬡════════════════════════════════════════════|   ◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ • 𝟐𝟎𝟐𝟐◢   |═══════════════════════════════════════════⬡|`;
-} else if (update.announce == `true`) {
-return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
-.sendMessage(groupupdateID.id, { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 }, MessageType.image, {
-mimetype: Mimetype.png,
-caption: `*🛸Attention Here Everyone In the Group!🛸*
+        })
+        .catch((Error) => console.log(Error));
+      `|⬡════════════════════════════════════════════|   ◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ • 𝟐𝟎𝟐𝟐◢   |═══════════════════════════════════════════⬡|`;
+    } else if (update.announce == `true`) {
+      return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
+        .sendMessage(groupupdateID.id, { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 }, MessageType.image, {
+          mimetype: Mimetype.png,
+          caption: `*🛸Attention Here Everyone In the Group!🛸*
 
 ╔═══════★
 ║⛺𝐆𝐫𝐨𝐮𝐩 𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _Admins-Only_
 ║🎪𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${groupupdateID.subject}
 ║💞𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${groupupdateID.participants.length}
 ╚════════════╝`,
-})
-.catch((Error) => console.log(Error));
-`|⬡════════════════════════════════════════════|   ◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ • 𝟐𝟎𝟐𝟐◢   |═══════════════════════════════════════════⬡|`;
-} else if (!update.desc == ``) {
-tag = update.descOwner.split(`@`)[0] + `@s.whatsapp.net`;
-return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
-.sendMessage(groupupdateID.id, { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 }, MessageType.image, {
-mimetype: Mimetype.png,
-contextInfo: {
-mentionedJid: [tag],
-},
-caption: `*🛸Attention Here Everyone In the Group!🛸*
+        })
+        .catch((Error) => console.log(Error));
+      `|⬡════════════════════════════════════════════|   ◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ • 𝟐𝟎𝟐𝟐◢   |═══════════════════════════════════════════⬡|`;
+    } else if (!update.desc == ``) {
+      tag = update.descOwner.split(`@`)[0] + `@s.whatsapp.net`;
+      return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
+        .sendMessage(groupupdateID.id, { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 }, MessageType.image, {
+          mimetype: Mimetype.png,
+          contextInfo: {
+            mentionedJid: [tag],
+          },
+          caption: `*🛸Attention Here Everyone In the Group!🛸*
 
 ╔═══════★
 ║⛺𝐆𝐫𝐨𝐮𝐩 𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _New Description Added_
@@ -191,60 +191,60 @@ caption: `*🛸Attention Here Everyone In the Group!🛸*
 
 ★━━━━━★ 𝐍𝐞𝐰 𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧 ★━━━━━★
 ${update.desc}`,
-})
-.catch((Error) => console.log(Error));
-`|⬡════════════════════════════════════════════|   ◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ • 𝟐𝟎𝟐𝟐◢   |═══════════════════════════════════════════⬡|`;
-} else if (update.restrict == `false`) {
-return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
-.sendMessage(groupupdateID.id, { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 }, MessageType.image, {
-mimetype: Mimetype.png,
-caption: `*🛸Attention Here Everyone In the Group!🛸*
+        })
+        .catch((Error) => console.log(Error));
+      `|⬡════════════════════════════════════════════|   ◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ • 𝟐𝟎𝟐𝟐◢   |═══════════════════════════════════════════⬡|`;
+    } else if (update.restrict == `false`) {
+      return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
+        .sendMessage(groupupdateID.id, { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 }, MessageType.image, {
+          mimetype: Mimetype.png,
+          caption: `*🛸Attention Here Everyone In the Group!🛸*
 
 ╔═══════★
 ║⛺𝐆𝐫𝐨𝐮𝐩 𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _Info Edit Allowed For All_
 ║🎪𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${groupupdateID.subject}
 ║💞𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${groupupdateID.participants.length}
 ╚════════════╝`,
-})
-.catch((Error) => console.log(Error));
-`|⬡════════════════════════════════════════════|   ◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ • 𝟐𝟎𝟐𝟐◢   |═══════════════════════════════════════════⬡|`;
-} else if (update.restrict == `true`) {
-return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
-.sendMessage(groupupdateID.id, { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 }, MessageType.image, {
-mimetype: Mimetype.png,
-caption: `*🛸Attention Here Everyone In the Group!🛸*
+        })
+        .catch((Error) => console.log(Error));
+      `|⬡════════════════════════════════════════════|   ◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ • 𝟐𝟎𝟐𝟐◢   |═══════════════════════════════════════════⬡|`;
+    } else if (update.restrict == `true`) {
+      return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
+        .sendMessage(groupupdateID.id, { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 }, MessageType.image, {
+          mimetype: Mimetype.png,
+          caption: `*🛸Attention Here Everyone In the Group!🛸*
 
 ╔═══════★
 ║⛺𝐆𝐫𝐨𝐮𝐩 𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _Info Edit Admins-Only_
 ║🎪𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${groupupdateID.subject}
 ║💞𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${groupupdateID.participants.length}
 ╚════════════╝`,
-})
-.catch((Error) => console.log(Error));
-}
-});
-`|⬡════════════════════════════════════════════|   ◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ • 𝟐𝟎𝟐𝟐◢   |═══════════════════════════════════════════⬡|`;
-ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.on(`group-participants-update`, async (update) => {
-var GroupID = update.jid;
-const GroupMemData = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.groupMetadata(update.jid);
-const GroupMemG = GroupMemData.participants.length;
-const GroupMemBio = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.getStatus(
-update.participants[0],
-MessageType.text
-);
-const MemNum = update.participants[0];
-`|⬡════════════════════════════════════════════|   ◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ • 𝟐𝟎𝟐𝟐◢   |═══════════════════════════════════════════⬡|`;
-if (update.action == `add` && MemNum.includes(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.user.jid)) {
-const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
-GroupID,
-{ url: "./ᴄᴏʀʟᴇxᴀ☣️Reactor/𝖈𝖔𝖗𝖑𝖊𝖝𝖆_base.png" },
-MessageType.image,
-{ mimetype: Mimetype.png }
-);
-await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
-GroupID,
-{
-contentText: `👋🏻𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚 𝐄𝐯𝐞𝐫𝐲𝐨𝐧𝐞, ${Timers}
+        })
+        .catch((Error) => console.log(Error));
+    }
+  });
+  `|⬡════════════════════════════════════════════|   ◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ • 𝟐𝟎𝟐𝟐◢   |═══════════════════════════════════════════⬡|`;
+  ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.on(`group-participants-update`, async (update) => {
+    var GroupID = update.jid;
+    const GroupMemData = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.groupMetadata(update.jid);
+    const GroupMemG = GroupMemData.participants.length;
+    const GroupMemBio = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.getStatus(
+      update.participants[0],
+      MessageType.text
+    );
+    const MemNum = update.participants[0];
+    `|⬡════════════════════════════════════════════|   ◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ • 𝟐𝟎𝟐𝟐◢   |═══════════════════════════════════════════⬡|`;
+    if (update.action == `add` && MemNum.includes(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.user.jid)) {
+      const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
+        GroupID,
+        { url: "./ᴄᴏʀʟᴇxᴀ☣️Reactor/𝖈𝖔𝖗𝖑𝖊𝖝𝖆_base.png" },
+        MessageType.image,
+        { mimetype: Mimetype.png }
+      );
+      await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
+        GroupID,
+        {
+          contentText: `👋🏻𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚 𝐄𝐯𝐞𝐫𝐲𝐨𝐧𝐞, ${Timers}
 *To Admins Of This Group!*
 _Some Of Your Members Requested Our Corlexa HQ to Add Our Bot In This Group.Have Fun!_
 
@@ -254,145 +254,146 @@ _Some Of Your Members Requested Our Corlexa HQ to Add Our Bot In This Group.Have
 ╚════════════╝
 
 👇🏽𝗣𝗿𝗲𝘀𝘀 𝗯𝗲𝗹𝗼𝘄 𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗦𝘁𝗮𝗿𝘁👇🏽`,
-footerText: `◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ • 𝟐𝟎𝟐𝟐◢`,
-buttons: [
-{
-buttonId: `${ᴋᴇɪ}help`,
-buttonText: { displayText: `${ᴋᴇɪ}help` },
-type: 1,
-},
-{
-buttonId: `${ᴋᴇɪ}faq`,
-buttonText: { displayText: `${ᴋᴇɪ}faq` },
-type: 1,
-},
-],
-headerType: 4,
-imageMessage: media.message.imageMessage,
-},
-MessageType.buttonsMessage
-);
-Welcome.findOne(
-{
-ID: GroupID,
-},
-async (Error, userWel) => {
-if (Error) console.log(Error);
-if (!userWel) {
-var newServer = new Welcome({
-ID: GroupID,
-message: `👋🏻𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚 ${Timers}
+          footerText: `◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ • 𝟐𝟎𝟐𝟐◢`,
+          buttons: [
+            {
+              buttonId: `${ᴋᴇɪ}help`,
+              buttonText: { displayText: `${ᴋᴇɪ}help` },
+              type: 1,
+            },
+            {
+              buttonId: `${ᴋᴇɪ}faq`,
+              buttonText: { displayText: `${ᴋᴇɪ}faq` },
+              type: 1,
+            },
+          ],
+          headerType: 4,
+          imageMessage: media.message.imageMessage,
+        },
+        MessageType.buttonsMessage
+      );
+      Welcome.findOne(
+        {
+          ID: GroupID,
+        },
+        async (Error, userWel) => {
+          if (Error) console.log(Error);
+          if (!userWel) {
+            var newServer = new Welcome({
+              ID: GroupID,
+              message: `👋🏻𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚 ${Timers}
 🛸𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈: _ɪꜱ ᴀ ᴡʜᴀᴛꜱᴀᴘᴘ ᴍᴜʟᴛɪᴘᴜʀᴘᴏꜱᴇ-ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ ᴍᴏᴅᴇʀᴀᴛɪᴏɴ,ᴀᴜᴛᴏᴍᴀᴛɪᴏɴ ᴀɴᴅ 100+ ᴄᴏᴍᴍᴀɴᴅꜱ!_
 
 
 👇🏽𝗣𝗿𝗲𝘀𝘀 𝗯𝗲𝗹𝗼𝘄 𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗦𝘁𝗮𝗿𝘁👇🏽`,
-});
-await newServer.save().catch((Error) => console.log(Error));
-} else {
-userWel.message = `👋🏻𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚 ${Timers}
+            });
+            await newServer.save().catch((Error) => console.log(Error));
+          } else {
+            userWel.message = `👋🏻𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚 ${Timers}
 🛸𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈: _ɪꜱ ᴀ ᴡʜᴀᴛꜱᴀᴘᴘ ᴍᴜʟᴛɪᴘᴜʀᴘᴏꜱᴇ-ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ ᴍᴏᴅᴇʀᴀᴛɪᴏɴ,ᴀᴜᴛᴏᴍᴀᴛɪᴏɴ ᴀɴᴅ 100+ ᴄᴏᴍᴍᴀɴᴅꜱ!_
 
 
 👇🏽𝗣𝗿𝗲𝘀𝘀 𝗯𝗲𝗹𝗼𝘄 𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗦𝘁𝗮𝗿𝘁👇🏽`;
-await userWel.save().catch((Error) => console.log(Error));
-}
-}
-);
-}
-`|⬡════════════════════════════════════════════|   ◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ • 𝟐𝟎𝟐𝟐◢   |═══════════════════════════════════════════⬡|`;
-if (update.action === `add` && !MemNum.includes(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.user.jid)) {
-Welcome.findOne(
-{
-ID: GroupID,
-},
-async (Error, userWel) => {
-if (Error) console.log(Error);
-if (!userWel) return;
-return welbuts.welbuts(
-ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
-GroupID,
-GroupMemData,
-GroupMemG,
-GroupMemBio,
-MemNum,
-userWel.message
-);
-}
-);
-}
-if (update.action === `remove`) return;
-});
-`|⬡════════════════════════════════════════════|   ◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ • 𝟐𝟎𝟐𝟐◢   |═══════════════════════════════════════════⬡|`;
-ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.on(`chat-update`, async (chat) => {
-if (!chat.hasNewMessage) {
-return;
-}
-if (!chat.messages) {
-return;
-}
-try {
-const ᴍɪᴢᴜᴋɪɢɪᴛ = require(`simple-git`)();
-await ᴍɪᴢᴜᴋɪɢɪᴛ.fetch();
-var ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ = await ᴍɪᴢᴜᴋɪɢɪᴛ.log([
-`KrakinzLab..origin/KrakinzLab`,
-]);
-if (ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total != 0) {
-require(`simple-git`)()
-.exec(async () => {
-console.log(
-`💡 𝐈𝐧𝐟𝐨⬰ Updating ᴄᴏʀʟᴇxᴀ System With Latest Patch...`
-);
-})
-.pull(async (Error, update) => {
-if (Error) {
-console.log(
-`❌ 𝐄𝐫𝐫𝐨𝐫⬰ Merge Resulted with Total-Conflicts: ` + Error
-);
-}
-if (update && update.summary.changes) {
-var childs =
-require(`child_process`).exec(`python3 🐙ᴋʀʏᴏᴛᴇᴋ.py`);
-childs.stdout.pipe(process.stdout);
-childs.on(`exit`, async function () {
-process.exitCode = 1;
-console.log(`💡 𝐈𝐧𝐟𝐨⬰ Auto-Updating Finished!`);
-ᴄᴏʀʟᴇxᴀ_Buttons.MTB(
-ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
-chat,
-𝖈𝖔𝖗𝖑𝖊𝖝𝖆,
-`🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ}, 
+            await userWel.save().catch((Error) => console.log(Error));
+          }
+        }
+      );
+    }
+    `|⬡════════════════════════════════════════════|   ◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ • 𝟐𝟎𝟐𝟐◢   |═══════════════════════════════════════════⬡|`;
+    if (update.action === `add` && !MemNum.includes(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.user.jid)) {
+      Welcome.findOne(
+        {
+          ID: GroupID,
+        },
+        async (Error, userWel) => {
+          if (Error) console.log(Error);
+          if (!userWel) return;
+          return welbuts.welbuts(
+            ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+            GroupID,
+            GroupMemData,
+            GroupMemG,
+            GroupMemBio,
+            MemNum,
+            userWel.message
+          );
+        }
+      );
+    }
+    if (update.action === `remove`) return;
+  });
+  `|⬡════════════════════════════════════════════|   ◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ • 𝟐𝟎𝟐𝟐◢   |═══════════════════════════════════════════⬡|`;
+  ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.on(`chat-update`, async (chat) => {
+    if (!chat.hasNewMessage) {
+      return;
+    }
+    if (!chat.messages) {
+      return;
+    }
+    try {
+      const ᴍɪᴢᴜᴋɪɢɪᴛ = require(`simple-git`)();
+      await ᴍɪᴢᴜᴋɪɢɪᴛ.fetch();
+      var ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ = await ᴍɪᴢᴜᴋɪɢɪᴛ.log([
+        `KrakinzLab..origin/KrakinzLab`,
+      ]);
+      if (ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total != 0) {
+        require(`simple-git`)()
+          .exec(async () => {
+            // require("child_process").exec("git config pull.rebase false")
+            console.log(
+              `💡 𝐈𝐧𝐟𝐨⬰ Updating ᴄᴏʀʟᴇxᴀ System With Latest Patch...`
+            );
+          })
+          .pull(async (Error, update) => {
+            if (Error) {
+              console.log(
+                `❌ 𝐄𝐫𝐫𝐨𝐫⬰ Merge Resulted with Total-Conflicts: ` + Error
+              );
+            }
+            if (update && update.summary.changes) {
+              var childs =
+                require(`child_process`).exec(`python3 🐙ᴋʀʏᴏᴛᴇᴋ.py`);
+              childs.stdout.pipe(process.stdout);
+              childs.on(`exit`, async function () {
+                process.exitCode = 1;
+                console.log(`💡 𝐈𝐧𝐟𝐨⬰ Auto-Updating Finished!`);
+                ᴄᴏʀʟᴇxᴀ_Buttons.MTB(
+                  ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+                  chat,
+                  𝖈𝖔𝖗𝖑𝖊𝖝𝖆,
+                  `🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ}, 
 
 ╔◇║ ◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ • 𝟐𝟎𝟐𝟐◢
 ║
 ║💡 𝐈𝐧𝐟𝐨⬰ Auto-Updating Finished!
 ╚════════════╝`
-);
-});
-}
-});
-}
-} catch (Error) {
-console.log(Error);
-console.log(`❌ 𝐄𝐫𝐫𝐨𝐫⬰ Please Re-Deploy!`);
-}
-`|⬡════════════════════════════════════════════|   ◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ • 𝟐𝟎𝟐𝟐◢   |═══════════════════════════════════════════⬡|`;
-chat = chat.messages.all()[0];
-const sender = chat.key.remoteJid;
-const groupMetadata = sender.endsWith(`@g.us`)
-? await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.groupMetadata(chat.key.remoteJid)
-: ``;
-var 𝖈𝖔𝖗𝖑𝖊𝖝𝖆 = ӄʀʏօȶɛӄ.resolve(chat, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, groupMetadata);
-var աɦօֆɛռȶɦǟȶ = 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.sender;
-var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ
-.substring(0, աɦօֆɛռȶɦǟȶ.length - 15)
-.replace(/[+ ]/g, "");
-`|⬡════════════════════════════════════════════|   ◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ • 𝟐𝟎𝟐𝟐◢   |═══════════════════════════════════════════⬡|`;
-if (!𝖈𝖔𝖗𝖑𝖊𝖝𝖆.fromMe && !𝖈𝖔𝖗𝖑𝖊𝖝𝖆.isGroup && !𝖈𝖔𝖗𝖑𝖊𝖝𝖆.isSenderDev) {
-return ᴄᴏʀʟᴇxᴀ_Buttons.MTB(
-ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
-chat,
-𝖈𝖔𝖗𝖑𝖊𝖝𝖆,
-`🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ}, _Using ᴄᴏʀʟᴇxᴀ In Private Is No longer Allowed!_
+                );
+              });
+            }
+          });
+      }
+    } catch (Error) {
+      console.log(Error);
+      console.log(`❌ 𝐄𝐫𝐫𝐨𝐫⬰ Please Re-Deploy!`);
+    }
+    `|⬡════════════════════════════════════════════|   ◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ • 𝟐𝟎𝟐𝟐◢   |═══════════════════════════════════════════⬡|`;
+    chat = chat.messages.all()[0];
+    const sender = chat.key.remoteJid;
+    const groupMetadata = sender.endsWith(`@g.us`)
+      ? await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.groupMetadata(chat.key.remoteJid)
+      : ``;
+    var 𝖈𝖔𝖗𝖑𝖊𝖝𝖆 = ӄʀʏօȶɛӄ.resolve(chat, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, groupMetadata);
+    var աɦօֆɛռȶɦǟȶ = 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.sender;
+    var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ
+      .substring(0, աɦօֆɛռȶɦǟȶ.length - 15)
+      .replace(/[+ ]/g, "");
+    `|⬡════════════════════════════════════════════|   ◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ • 𝟐𝟎𝟐𝟐◢   |═══════════════════════════════════════════⬡|`;
+    if (!𝖈𝖔𝖗𝖑𝖊𝖝𝖆.fromMe && !𝖈𝖔𝖗𝖑𝖊𝖝𝖆.isGroup && !𝖈𝖔𝖗𝖑𝖊𝖝𝖆.isSenderDev) {
+      return ᴄᴏʀʟᴇxᴀ_Buttons.MTB(
+        ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+        chat,
+        𝖈𝖔𝖗𝖑𝖊𝖝𝖆,
+        `🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ}, _Using ᴄᴏʀʟᴇxᴀ In Private Is No longer Allowed!_
 *Needs Corlexa? Send Your Group Link In My Private*
 
 ╔◇║👇🏽𝗝𝗼𝗶𝗻 𝗔𝗻𝘆 𝗖𝗼𝗿𝘁𝗮𝗻𝗮-𝗔𝗜 𝗚𝗿𝗼𝘂𝗽👇🏽
@@ -411,120 +412,120 @@ chat,
 ║🔖 _If you want this bot in your group then contact devs._
 ║🔖 _Enjoy the bot and have fun._
 ╚════════════╝`
-);
-}
-`|⬡════════════════════════════════════════════|   ◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ • 𝟐𝟎𝟐𝟐◢   |═══════════════════════════════════════════⬡|`;
-await BanPerson.findOne(
-{
-ID: աɦօֆɛռȶɦǟȶ,
-},
-async (Error, BanPerson) => {
-if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat);
-BanGroup.findOne(
-{
-ID: 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
-},
-async (Error, BanGroup) => {
-if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat);
-if (BanPerson) return;
-if (BanGroup && !𝖈𝖔𝖗𝖑𝖊𝖝𝖆.fromMe && !𝖈𝖔𝖗𝖑𝖊𝖝𝖆.isSenderDev) return;
-`|⬡════════════════════════════════════════════|   ◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ • 𝟐𝟎𝟐𝟐◢   |═══════════════════════════════════════════⬡|`;
-if (!BanPerson && !BanGroup && 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.isGroup && !𝖈𝖔𝖗𝖑𝖊𝖝𝖆.fromMe) {
-Ranker.findOne(
-{
-serverID: 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
-},
-async (Error, userRank) => {
-if (Error)
-return ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat);
-if (!userRank) return;
-await RankCheck.MRC(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, chat, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆);
-}
-);
-}
-`|⬡════════════════════════════════════════════|   ◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ • 𝟐𝟎𝟐𝟐◢   |═══════════════════════════════════════════⬡|`;
-if (
-𝖈𝖔𝖗𝖑𝖊𝖝𝖆.isGroup &&
-!𝖈𝖔𝖗𝖑𝖊𝖝𝖆.fromMe &&
-!𝖈𝖔𝖗𝖑𝖊𝖝𝖆.isSenderDev &&
-𝖈𝖔𝖗𝖑𝖊𝖝𝖆.isBotGroupAdmin &&
-!𝖈𝖔𝖗𝖑𝖊𝖝𝖆.isSenderGroupAdmin
-) {
-LinkList.findOne(
-{
-serverID: 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
-},
-async (Error, server) => {
-if (Error)
-return ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat);
-`|⬡════════════════════════════════════════════|   ◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ • 𝟐𝟎𝟐𝟐◢   |═══════════════════════════════════════════⬡|`;
-if (!server) return;
-const Body_Check = require("./Body_Check");
-if (Body_Check.Body_Check(𝖈𝖔𝖗𝖑𝖊𝖝𝖆.body) === true) {
-await ᴄᴏʀʟᴇxᴀ_Buttons.MIB(
-ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
-chat,
-𝖈𝖔𝖗𝖑𝖊𝖝𝖆,
-`
+      );
+    }
+    `|⬡════════════════════════════════════════════|   ◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ • 𝟐𝟎𝟐𝟐◢   |═══════════════════════════════════════════⬡|`;
+    await BanPerson.findOne(
+      {
+        ID: աɦօֆɛռȶɦǟȶ,
+      },
+      async (Error, BanPerson) => {
+        if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat);
+        BanGroup.findOne(
+          {
+            ID: 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
+          },
+          async (Error, BanGroup) => {
+            if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat);
+            if (BanPerson) return;
+            if (BanGroup && !𝖈𝖔𝖗𝖑𝖊𝖝𝖆.fromMe && !𝖈𝖔𝖗𝖑𝖊𝖝𝖆.isSenderDev) return;
+            `|⬡════════════════════════════════════════════|   ◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ • 𝟐𝟎𝟐𝟐◢   |═══════════════════════════════════════════⬡|`;
+            if (𝖈𝖔𝖗𝖑𝖊𝖝𝖆.fromMe) {
+              Ranker.findOne(
+                {
+                  serverID: 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
+                },
+                async (Error, userRank) => {
+                  if (Error)
+                    return ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat);
+                  if (!userRank) return;
+                  await RankCheck.MRC(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, chat, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆);
+                }
+              );
+            }
+            `|⬡════════════════════════════════════════════|   ◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ • 𝟐𝟎𝟐𝟐◢   |═══════════════════════════════════════════⬡|`;
+            if (
+              𝖈𝖔𝖗𝖑𝖊𝖝𝖆.isGroup &&
+              !𝖈𝖔𝖗𝖑𝖊𝖝𝖆.fromMe &&
+              !𝖈𝖔𝖗𝖑𝖊𝖝𝖆.isSenderDev &&
+              𝖈𝖔𝖗𝖑𝖊𝖝𝖆.isBotGroupAdmin &&
+              !𝖈𝖔𝖗𝖑𝖊𝖝𝖆.isSenderGroupAdmin
+            ) {
+              LinkList.findOne(
+                {
+                  serverID: 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
+                },
+                async (Error, server) => {
+                  if (Error)
+                    return ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat);
+                  `|⬡════════════════════════════════════════════|   ◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ • 𝟐𝟎𝟐𝟐◢   |═══════════════════════════════════════════⬡|`;
+                  if (!server) return;
+                  const Body_Check = require("./Body_Check");
+                  if (Body_Check.Body_Check(𝖈𝖔𝖗𝖑𝖊𝖝𝖆.body) === true) {
+                    await ᴄᴏʀʟᴇxᴀ_Buttons.MIB(
+                      ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+                      chat,
+                      𝖈𝖔𝖗𝖑𝖊𝖝𝖆,
+                      `
 ╔════◇🌋  𝐀𝐧𝐭𝐢𝐥𝐢𝐧𝐤 𝐓𝐫𝐢𝐠𝐠𝐞𝐫𝐞𝐝
 ║
 ║⚰️ 𝗣𝘂𝗻𝗶𝘀𝗵𝗺𝗲𝗻𝘁: _You Will Be Kicked!_
 ╚════════════╝`,
-`./ᴄᴏʀʟᴇxᴀ☣️Reactor/ᴄᴏʀʟᴇxᴀ_Antilink.png`
-);
-await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
-.groupRemove(𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId, [𝖈𝖔𝖗𝖑𝖊𝖝𝖆.sender])
-.catch((Error) =>
-ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat)
-);
-return;
-}
-}
-);
-}
-`|⬡════════════════════════════════════════════|   ◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ • 𝟐𝟎𝟐𝟐◢   |═══════════════════════════════════════════⬡|`;
-if (𝖈𝖔𝖗𝖑𝖊𝖝𝖆.isCmd) {
-const gMetadata1 = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.groupMetadata(
-"120363039223842047@g.us"
-);
-const gMetadata2 = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.groupMetadata(
-"120363020792949649@g.us"
-);
-const gMetadata3 = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.groupMetadata(
-"120363024871653603@g.us"
-);
-let member1 = [];
-for (var i = 0; i < gMetadata1.participants.length; i++) {
-member1[i] = gMetadata1.participants[i].jid;
-}
-let member2 = [];
-for (var i = 0; i < gMetadata2.participants.length; i++) {
-member2[i] = gMetadata2.participants[i].jid;
-}
-let member3 = [];
-for (var i = 0; i < gMetadata3.participants.length; i++) {
-member3[i] = gMetadata3.participants[i].jid;
-}
-`|⬡════════════════════════════════════════════|   ◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ • 𝟐𝟎𝟐𝟐◢   |═══════════════════════════════════════════⬡|`;
-if (
-𝖈𝖔𝖗𝖑𝖊𝖝𝖆.isCmd &&
-!𝖈𝖔𝖗𝖑𝖊𝖝𝖆.isSenderDev &&
-!𝖈𝖔𝖗𝖑𝖊𝖝𝖆.body.includes(ᴋᴇɪ + "help") &&
-!𝖈𝖔𝖗𝖑𝖊𝖝𝖆.body.includes(ᴋᴇɪ + "profile") &&
-!𝖈𝖔𝖗𝖑𝖊𝖝𝖆.body.includes(ᴋᴇɪ + "faq") &&
-!𝖈𝖔𝖗𝖑𝖊𝖝𝖆.body.includes(ᴋᴇɪ + "verify") &&
-!𝖈𝖔𝖗𝖑𝖊𝖝𝖆.body.includes(ᴋᴇɪ + "kick")
-)
-if (
-!member1.includes(աɦօֆɛռȶɦǟȶ) &&
-!member2.includes(աɦօֆɛռȶɦǟȶ) &&
-!member3.includes(աɦօֆɛռȶɦǟȶ)
-) {
-return ᴄᴏʀʟᴇxᴀ_Buttons.MIB(
-ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
-chat,
-𝖈𝖔𝖗𝖑𝖊𝖝𝖆,
-`🤖𝐕𝐞𝐫𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧: @${աɦօֆɛռȶɦǟȶռʊʍ}, _You Are Not Verified.Join Any Corlexa Group and Verify Yourself First!_
+                      `./ᴄᴏʀʟᴇxᴀ☣️Reactor/ᴄᴏʀʟᴇxᴀ_Antilink.png`
+                    );
+                    await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
+                      .groupRemove(𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId, [𝖈𝖔𝖗𝖑𝖊𝖝𝖆.sender])
+                      .catch((Error) =>
+                        ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat)
+                      );
+                    return;
+                  }
+                }
+              );
+            }
+            `|⬡════════════════════════════════════════════|   ◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ • 𝟐𝟎𝟐𝟐◢   |═══════════════════════════════════════════⬡|`;
+            if (𝖈𝖔𝖗𝖑𝖊𝖝𝖆.isCmd) {
+              const gMetadata1 = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.groupMetadata(
+                "120363039223842047@g.us"
+              );
+              const gMetadata2 = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.groupMetadata(
+                "120363020792949649@g.us"
+              );
+              const gMetadata3 = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.groupMetadata(
+                "120363024871653603@g.us"
+              );
+              let member1 = [];
+              for (var i = 0; i < gMetadata1.participants.length; i++) {
+                member1[i] = gMetadata1.participants[i].jid;
+              }
+              let member2 = [];
+              for (var i = 0; i < gMetadata2.participants.length; i++) {
+                member2[i] = gMetadata2.participants[i].jid;
+              }
+              let member3 = [];
+              for (var i = 0; i < gMetadata3.participants.length; i++) {
+                member3[i] = gMetadata3.participants[i].jid;
+              }
+              `|⬡════════════════════════════════════════════|   ◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ • 𝟐𝟎𝟐𝟐◢   |═══════════════════════════════════════════⬡|`;
+              if (
+                𝖈𝖔𝖗𝖑𝖊𝖝𝖆.isCmd &&
+                !𝖈𝖔𝖗𝖑𝖊𝖝𝖆.isSenderDev &&
+                !𝖈𝖔𝖗𝖑𝖊𝖝𝖆.body.includes(ᴋᴇɪ + "help") &&
+                !𝖈𝖔𝖗𝖑𝖊𝖝𝖆.body.includes(ᴋᴇɪ + "profile") &&
+                !𝖈𝖔𝖗𝖑𝖊𝖝𝖆.body.includes(ᴋᴇɪ + "faq") &&
+                !𝖈𝖔𝖗𝖑𝖊𝖝𝖆.body.includes(ᴋᴇɪ + "verify") &&
+                !𝖈𝖔𝖗𝖑𝖊𝖝𝖆.body.includes(ᴋᴇɪ + "kick")
+              )
+                if (
+                  !member1.includes(աɦօֆɛռȶɦǟȶ) &&
+                  !member2.includes(աɦօֆɛռȶɦǟȶ) &&
+                  !member3.includes(աɦօֆɛռȶɦǟȶ)
+                ) {
+                  return ᴄᴏʀʟᴇxᴀ_Buttons.MIB(
+                    ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+                    chat,
+                    𝖈𝖔𝖗𝖑𝖊𝖝𝖆,
+                    `🤖𝐕𝐞𝐫𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧: @${աɦօֆɛռȶɦǟȶռʊʍ}, _You Are Not Verified.Join Any Corlexa Group and Verify Yourself First!_
 
 ╔════◇ 𝐎𝐟𝐟𝐢𝐜𝐢𝐚𝐥👇🏽‍
 ║💼 𝐆𝐫𝐨𝐮𝐩: _${_𝔏𝔞𝔟_.HASH}_
@@ -541,99 +542,99 @@ chat,
 ║📌 Monitor Performance!
 ║
 ╚◇║`,
-"./ᴄᴏʀʟᴇxᴀ☣️Reactor/ᴄᴏʀʟᴇxᴀ_NoVerity.png"
-);
-}
-`|⬡════════════════════════════════════════════|   ◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ • 𝟐𝟎𝟐𝟐◢   |═══════════════════════════════════════════⬡|`;
-const jsoncool = JSON.parse(
-fs.readFileSync("./ᴄᴏʀʟᴇxᴀ🛰️Server/Coolist.json")
-);
-if (jsoncool.includes(աɦօֆɛռȶɦǟȶ)) {
-if (𝖈𝖔𝖗𝖑𝖊𝖝𝖆.isSenderDev) {
-await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
-.sendMessage(
-𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
-`🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ}, _Sir Wait For 5seconds_`,
-MessageType.text,
-{
-contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
-}
-)
-.catch((Error) =>
-ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat)
-);
-return;
-} else {
-await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
-.sendMessage(
-𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
-`🚩𝐂𝐨𝐨𝐥𝐝𝐨𝐰𝐧: @${աɦօֆɛռȶɦǟȶռʊʍ}, _Wait For 15seconds and DoNot Spam!_`,
-MessageType.text,
-{
-contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
-}
-)
-.catch((Error) =>
-ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat)
-);
-return;
-}
-}
-`|⬡════════════════════════════════════════════|   ◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ • 𝟐𝟎𝟐𝟐◢   |═══════════════════════════════════════════⬡|`;
-console.log(
-Kolor.green(
-"⬡═════════════|🍃𝐂𝐨𝐫𝐥𝐞𝐱𝐚> " +
-𝖈𝖔𝖗𝖑𝖊𝖝𝖆.commandName.toUpperCase() +
-" <𝐕𝐞𝐫𝐢𝐟𝐢𝐞𝐝 𝐅𝐢𝐥𝐞🍃|═════════════"
-)
-);
-console.log(chat);
-console.log(
-Kolor.green(
-"⬡═══════════════════|   ◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ • 𝟐𝟎𝟐𝟐◢   |═══════════════════"
-)
-);
-const ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ = ꜱɪᴛʀᴀᴘ.get(𝖈𝖔𝖗𝖑𝖊𝖝𝖆.commandName);
-var Needs = 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.body.trim().split(/\s+/).slice(1);
-if (!ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ) {
-return await ᴄᴏʀʟᴇxᴀ_Buttons.MTB(
-ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
-chat,
-𝖈𝖔𝖗𝖑𝖊𝖝𝖆,
-`🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ},
+                    "./ᴄᴏʀʟᴇxᴀ☣️Reactor/ᴄᴏʀʟᴇxᴀ_NoVerity.png"
+                  );
+                }
+              `|⬡════════════════════════════════════════════|   ◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ • 𝟐𝟎𝟐𝟐◢   |═══════════════════════════════════════════⬡|`;
+              const jsoncool = JSON.parse(
+                fs.readFileSync("./ᴄᴏʀʟᴇxᴀ🛰️Server/Coolist.json")
+              );
+              if (jsoncool.includes(աɦօֆɛռȶɦǟȶ)) {
+                if (𝖈𝖔𝖗𝖑𝖊𝖝𝖆.isSenderDev) {
+                  await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
+                    .sendMessage(
+                      𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
+                      `🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ}, _Sir Wait For 5seconds_`,
+                      MessageType.text,
+                      {
+                        contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
+                      }
+                    )
+                    .catch((Error) =>
+                      ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat)
+                    );
+                  return;
+                } else {
+                  await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
+                    .sendMessage(
+                      𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
+                      `🚩𝐂𝐨𝐨𝐥𝐝𝐨𝐰𝐧: @${աɦօֆɛռȶɦǟȶռʊʍ}, _Wait For 15seconds and DoNot Spam!_`,
+                      MessageType.text,
+                      {
+                        contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
+                      }
+                    )
+                    .catch((Error) =>
+                      ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat)
+                    );
+                  return;
+                }
+              }
+              `|⬡════════════════════════════════════════════|   ◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ • 𝟐𝟎𝟐𝟐◢   |═══════════════════════════════════════════⬡|`;
+              console.log(
+                Kolor.green(
+                  "⬡═════════════|🍃𝐂𝐨𝐫𝐥𝐞𝐱𝐚> " +
+                    𝖈𝖔𝖗𝖑𝖊𝖝𝖆.commandName.toUpperCase() +
+                    " <𝐕𝐞𝐫𝐢𝐟𝐢𝐞𝐝 𝐅𝐢𝐥𝐞🍃|═════════════"
+                )
+              );
+              console.log(chat);
+              console.log(
+                Kolor.green(
+                  "⬡═══════════════════|   ◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ • 𝟐𝟎𝟐𝟐◢   |═══════════════════"
+                )
+              );
+              const ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ = ꜱɪᴛʀᴀᴘ.get(𝖈𝖔𝖗𝖑𝖊𝖝𝖆.commandName);
+              var Needs = 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.body.trim().split(/\s+/).slice(1);
+              if (!ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ) {
+                return await ᴄᴏʀʟᴇxᴀ_Buttons.MTB(
+                  ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+                  chat,
+                  𝖈𝖔𝖗𝖑𝖊𝖝𝖆,
+                  `🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ},
 
 ╔════◇🛸𝐂𝐨𝐫𝐥𝐞𝐱𝐚 by 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛
 ║❌ _No Such Command In Database!_
 ╚════════════╝
 👇🏽𝗣𝗿𝗲𝘀𝘀 𝗯𝗲𝗹𝗼𝘄 𝗕𝘂𝘁𝘁𝗼𝗻𝘀👇🏽`
-);
-} else {
-return ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ.handle(
-ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
-chat,
-𝖈𝖔𝖗𝖑𝖊𝖝𝖆,
-Needs,
-ꜱɪᴛʀᴀᴘ,
-Clock,
-Ping,
-Timers
-);
-}
-}
-}
-);
-}
-);
-});
+                );
+              } else {
+                return ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ.handle(
+                  ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+                  chat,
+                  𝖈𝖔𝖗𝖑𝖊𝖝𝖆,
+                  Needs,
+                  ꜱɪᴛʀᴀᴘ,
+                  Clock,
+                  Ping,
+                  Timers
+                );
+              }
+            }
+          }
+        );
+      }
+    );
+  });
 }
 `|⬡════════════════════════════════════════════|   ◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ • 𝟐𝟎𝟐𝟐◢   |═══════════════════════════════════════════⬡|`;
 𝖈𝖔𝖗𝖑𝖊𝖝𝖆().catch((Error) => {
-console.log(Error);
-var childs = require(`child_process`).exec(`python3 🐙ᴋʀʏᴏᴛᴇᴋ.py`);
-childs.stdout.pipe(process.stdout);
-childs.on(`exit`, async function () {
-process.exitCode = 1;
-});
+  console.log(Error);
+  var childs = require(`child_process`).exec(`python3 🐙ᴋʀʏᴏᴛᴇᴋ.py`);
+  childs.stdout.pipe(process.stdout);
+  childs.on(`exit`, async function () {
+    process.exitCode = 1;
+  });
 });
 `|⬡════════════════════════════════════════════|                            |═══════════════════════════════════════════⬡|`;
 `|                                                                                                                        |`;
