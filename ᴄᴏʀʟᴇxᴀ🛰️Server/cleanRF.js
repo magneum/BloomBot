@@ -18,7 +18,7 @@ var endTime = window.performance.now();
 console.log(`═════════════════════|⚡ Execution time: `);
 console.log((endTime - startTime) / 1000);
 console.log(`═════════════════════|🗑️ 𝙹𝚞𝚗𝚔 𝙲𝚕𝚎𝚊𝚗𝚎𝚍: `);
-console.log(Kolor.blue(ᴊᴜɴᴋꜱ));
+console.log(ᴊᴜɴᴋꜱ);
 };
 `|⬡════════════════════════════════════════════|                            |═══════════════════════════════════════════⬡|`;
 `|                                                                                                                        |`;

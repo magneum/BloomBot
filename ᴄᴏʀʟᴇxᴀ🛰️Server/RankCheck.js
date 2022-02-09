@@ -79,7 +79,7 @@ return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
 {
 contentText: `📜𝐑𝐚𝐧𝐤: @${աɦօֆɛռȶɦǟȶռʊʍ}, Auto-Ranking has Started!`,
-footerText: `◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ • 𝟐𝟎𝟐𝟐◢`,
+footerText: `◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚•_𝟐𝟎𝟐𝟐_•𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™◢`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}rank`,
@@ -234,7 +234,7 @@ await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
 {
 contentText: `✨𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬 @${աɦօֆɛռȶɦǟȶռʊʍ}, _𝐋𝐞𝐯𝐞𝐥𝐞𝐝-𝐔𝐏!_`,
-footerText: `◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ • 𝟐𝟎𝟐𝟐◢`,
+footerText: `◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚•_𝟐𝟎𝟐𝟐_•𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™◢`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}rank`,
@@ -274,7 +274,7 @@ await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
 {
 contentText: `✨𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬 @${աɦօֆɛռȶɦǟȶռʊʍ}, _𝐋𝐞𝐯𝐞𝐥𝐞𝐝-𝐔𝐏!_`,
-footerText: `◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ • 𝟐𝟎𝟐𝟐◢`,
+footerText: `◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚•_𝟐𝟎𝟐𝟐_•𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™◢`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,

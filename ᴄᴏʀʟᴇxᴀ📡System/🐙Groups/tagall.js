@@ -92,7 +92,7 @@ conversation: 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.replyMessage,
 },
 mentionedJid: members,
 },
-caption: `◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ • 𝟐𝟎𝟐𝟐◢
+caption: `◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚•_𝟐𝟎𝟐𝟐_•𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™◢
 
 ╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
 ║⚡ 𝐅𝐫𝐨𝐦: @${աɦօֆɛռȶɦǟȶռʊʍ}
@@ -112,7 +112,7 @@ quoted: chat,
 contextInfo: {
 mentionedJid: members,
 },
-caption: `◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ • 𝟐𝟎𝟐𝟐◢
+caption: `◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚•_𝟐𝟎𝟐𝟐_•𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™◢
 
 ╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
 ║⚡ 𝐅𝐫𝐨𝐦: @${աɦօֆɛռȶɦǟȶռʊʍ}
@@ -132,7 +132,7 @@ quoted: chat,
 contextInfo: {
 mentionedJid: members,
 },
-caption: `◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ • 𝟐𝟎𝟐𝟐◢
+caption: `◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚•_𝟐𝟎𝟐𝟐_•𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™◢
 
 ╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
 ║⚡ 𝐅𝐫𝐨𝐦: @${աɦօֆɛռȶɦǟȶռʊʍ}
@@ -152,7 +152,7 @@ quoted: chat,
 contextInfo: {
 mentionedJid: members,
 },
-caption: `◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ • 𝟐𝟎𝟐𝟐◢
+caption: `◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚•_𝟐𝟎𝟐𝟐_•𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™◢
 
 ╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
 ║⚡ 𝐅𝐫𝐨𝐦: @${աɦօֆɛռȶɦǟȶռʊʍ}
