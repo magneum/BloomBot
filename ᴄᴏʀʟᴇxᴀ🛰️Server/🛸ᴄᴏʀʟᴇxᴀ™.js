@@ -321,8 +321,14 @@ if (ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total != 0) {
 require(`simple-git`)()
 .exec(async () => {
 // require("child_process").exec("git config pull.rebase false")
-console.log(
-`💡 𝐈𝐧𝐟𝐨⬰ Updating ᴄᴏʀʟᴇxᴀ System With Latest Patch...`
+ᴄᴏʀʟᴇxᴀ_Buttons.MTB(
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+chat,
+𝖈𝖔𝖗𝖑𝖊𝖝𝖆,
+`╔◇║ ◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚•_𝟐𝟎𝟐𝟐_•𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™◢
+║
+║💡 𝐈𝐧𝐟𝐨⬰ Auto-Updating ᴄᴏʀʟᴇxᴀ System With Latest Patch...!
+╚════════════╝`
 );
 })
 .pull(async (Error, update) => {
