@@ -63,7 +63,6 @@ ID: աɦօֆɛռȶɦǟȶ,
 serverID: 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
 },
 async (Error, user) => {
-console.log(user);
 if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat);
 if (!user) {
 var newUsers = new CorlexaExp({
