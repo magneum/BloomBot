@@ -17,23 +17,32 @@ var scriptName = path.basename(__filename);
 var newScpt = scriptName.slice(0, -3).toLowerCase();
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 module.exports = {
-name: newScpt,
-async handle(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, chat, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
-console.log(𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId);
-console.log(chat.message.extendedTextMessage.contextInfo.stanzaId);
-console.log(chat.message.extendedTextMessage.contextInfo.quotedMessage);
-return;
-await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
-.deleteMessage(𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId, {
-fromMe: true,
-id: chat.message.extendedTextMessage.contextInfo.stanzaId,
-remoteJid: 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
-})
-.catch((err) => {
-console.log(err.message);
-console.log("The message was not sent by a bot!");
-});
-},
+  name: newScpt,
+  𝖈𝖔𝖗𝖑𝖊𝖝𝖆ӄǟɨʐօ: `*${ᴋᴇɪ}${newScpt}* _reply to bot's text_`,
+  async handle(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, chat, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
+    if (𝖈𝖔𝖗𝖑𝖊𝖝𝖆.isReply) {
+      var ThisDelete = 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.replyMessageId;
+      ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.deleteMessage(𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId, {
+        id: ThisDelete,
+        remoteJid: 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
+        fromMe: true,
+      });
+    } else {
+      var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(𝖈𝖔𝖗𝖑𝖊𝖝𝖆.commandName);
+      var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
+        𝓜Usage.𝖈𝖔𝖗𝖑𝖊𝖝𝖆ӄǟɨʐօ === undefined ? `Null` : 𝓜Usage.𝖈𝖔𝖗𝖑𝖊𝖝𝖆ӄǟɨʐօ;
+      const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../ᴄᴏʀʟᴇxᴀ🛰️Server/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
+      return ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
+        ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+        chat,
+        𝖈𝖔𝖗𝖑𝖊𝖝𝖆,
+        աɦօֆɛռȶɦǟȶ,
+        աɦօֆɛռȶɦǟȶռʊʍ,
+        𝖈𝖔𝖗𝖑𝖊𝖝𝖆.commandName,
+        ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
+      );
+    }
+  },
 };
 `|⬡════════════════════════════════════════════|                            |═══════════════════════════════════════════⬡|`;
 `|                                                                                                                        |`;
