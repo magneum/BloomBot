@@ -7,4 +7,3 @@ requests
 pyAesCrypt
 termcolor
 python-dotenv
-youtube-dl
