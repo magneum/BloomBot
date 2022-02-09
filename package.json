@@ -95,7 +95,7 @@
     "imdb-api": "^4.4.1",
     "insta-fetcher": "^1.2.3",
     "js-file-download": "^0.4.12",
-    "jsdom": "^16.5.2",
+    "jsdom": "^16.6.0",
     "kasu.nhentaiapi.js": "^2.9.2",
     "lyrics-finder": "^21.7.0",
     "mal-scraper": "^2.11.3",
