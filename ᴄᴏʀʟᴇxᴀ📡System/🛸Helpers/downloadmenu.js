@@ -42,15 +42,12 @@ var MainText = `🪶 𝐇𝐞𝐲: •@${աɦօֆɛռȶɦǟȶռʊʍ}, ${Timers}
 ║• *${ᴋᴇɪ}watch*  _youtube-video max 20min_
 ║• *${ᴋᴇɪ}ytmlink _yt-audio-max 15min_
 ║• *${ᴋᴇɪ}ytvlink _yt-video-max 15min_
+║• *${ᴋᴇɪ}spotify*  _spotify single download_
 ║• *${ᴋᴇɪ}instagram*  _image/video from ig_
 ╚════════════╝`;
-return ᴄᴏʀʟᴇxᴀ_Buttons.MIB(
-ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
-chat,
-𝖈𝖔𝖗𝖑𝖊𝖝𝖆,
-MainText,
-MediaUrl
-).catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
+return ᴄᴏʀʟᴇxᴀ_Buttons
+.MIB(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, chat, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, MainText, MediaUrl)
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 } catch (Error) {
 ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat);
