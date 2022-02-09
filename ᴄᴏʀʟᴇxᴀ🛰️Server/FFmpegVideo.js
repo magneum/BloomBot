@@ -4,6 +4,7 @@
 `|                                                                                                                        |`;
 `|⬡════════════════════════════════════════════|                            |═══════════════════════════════════════════⬡|`;
 const { MessageType } = require(`@adiwajshing/baileys`);
+const Downloader = require(`nodejs-file-downloader`);
 const ᴄᴏʀʟᴇxᴀ_Buttons = require(`./ᴄᴏʀʟᴇxᴀ_Buttons`);
 const { YouTube_Video } = require(`./youmaker`);
 const _𝔏𝔞𝔟_ = require(`./_𝔏𝔞𝔟_`);
@@ -21,39 +22,21 @@ const defaultnm = 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.commandName;
 var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ
 .substring(0, աɦօֆɛռȶɦǟȶ.length - 15)
 .replace(/[+ ]/g, "");
-var FFmpegFile = `./ᴄᴏʀʟᴇxᴀ☕ꜱʜᴏᴘ/${chat.key.id}${Date.now()}.mp4`;
+var FFmpegFile = `${chat.key.id}${Date.now()}.mp4`;
 const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
-`|⬡════════════════════════════════════════════|   ◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 ⧱ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⧱ 𝟐𝟎𝟐𝟐◢   |═══════════════════════════════════════════⬡|`;
-await ᴄᴏʀʟᴇxᴀ_Buttons.MTB(
-ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
-chat,
-𝖈𝖔𝖗𝖑𝖊𝖝𝖆,
-`🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ},
-
-╔════◇🌿𝗣𝗹𝗲𝗮𝘀𝗲 𝘄𝗮𝗶𝘁!
-║🎬 𝗙𝗶𝗹𝗲 𝗧𝘆𝗽𝗲: _Video_
-║⏰ 𝗪𝗮𝗶𝘁 𝗧𝗶𝗺𝗲: _Depends on Length of file._
-╚════════════╝`
-);
 `|⬡════════════════════════════════════════════|   ◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 ⧱ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⧱ 𝟐𝟎𝟐𝟐◢   |═══════════════════════════════════════════⬡|`;
 YouTube_Video(Found.url).then((res) => {
 const { dl_link, thumb, title, filesizeF, filesize } = res;
 TinyURL.shorten(dl_link).then(
 async function (DirectFile) {
-require(`child_process`).exec(
-`ffmpeg -i '${DirectFile}' '${FFmpegFile}'`,
-async (Error) => {
-if (Error) {
-console.log(
-`⬡═══════════════════| 🔺𝐅𝐅𝐦𝐩𝐞𝐠 𝐄𝐫𝐫𝐨𝐫🔺 |═══════════════════⬡` +
-Error
-);
-userBadge.Limits = userBadge.Limits + 1;
-await userBadge
-.save()
-.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
-return ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat);
-} else {
+const downloader = await new Downloader({
+url: DirectFile,
+directory: `${__dirname}`,
+fileName: FFmpegFile,
+cloneFiles: false,
+});
+try {
+await downloader.download();
 console.log(
 `⬡═══════════════════| 🥂𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐅𝐢𝐧𝐢𝐬𝐞𝐝🥂 |═══════════════════⬡`
 );
@@ -100,19 +83,21 @@ contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
 .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
 await cleanRF.cleanRF(FFmpegFile);
 } catch (Error) {
-console.log(
-`⬡═══════════════════| 🔺𝐅𝐅𝐦𝐩𝐞𝐠 𝐄𝐫𝐫𝐨𝐫🔺 |═══════════════════⬡` +
-Error
-);
+console.log(`⬡═══════════════════| 🐞𝐄𝐫𝐫𝐨𝐫: ` + Error);
 userBadge.Limits = userBadge.Limits + 1;
 await userBadge
 .save()
 .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
 return ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat);
 }
+} catch (Error) {
+console.log(`⬡═══════════════════| 🐞𝐄𝐫𝐫𝐨𝐫: ` + Error);
+userBadge.Limits = userBadge.Limits + 1;
+await userBadge
+.save()
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
+return ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat);
 }
-}
-);
 },
 async function (Error) {
 console.log(`⬡═══════════════════| 🐞𝐄𝐫𝐫𝐨𝐫: ` + Error);
