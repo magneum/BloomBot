@@ -1,5 +1,5 @@
 const fs = require("fs");
-const spdl = require('spdl-core').default;
+const spdl = require("spdl-core").default;
 
 spdl
   .getInfo(
