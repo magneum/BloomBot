@@ -235,10 +235,6 @@ MessageType.text
 const MemNum = update.participants[0];
 `|⬡════════════════════════════════════════════|   ◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ • 𝟐𝟎𝟐𝟐◢   |═══════════════════════════════════════════⬡|`;
 if (update.action == `add` && MemNum.includes(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.user.jid)) {
-let members = [];
-for (var i = 0; i < GroupMemG; i++) {
-members[i] = GroupMemData.participants[i].jid;
-}
 const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
 GroupID,
 { url: "./ᴄᴏʀʟᴇxᴀ☣️Reactor/𝖈𝖔𝖗𝖑𝖊𝖝𝖆_base.png" },
@@ -274,12 +270,7 @@ type: 1,
 headerType: 4,
 imageMessage: media.message.imageMessage,
 },
-MessageType.buttonsMessage,
-{
-contextInfo: {
-mentionedJid: members,
-},
-}
+MessageType.buttonsMessage
 );
 Welcome.findOne(
 {
