@@ -5,6 +5,7 @@
 `|⬡════════════════════════════════════════════|                            |═══════════════════════════════════════════⬡|`;
 const ᴄᴏʀʟᴇxᴀ_Buttons = require(`../../ᴄᴏʀʟᴇxᴀ🛰️Server/ᴄᴏʀʟᴇxᴀ_Buttons`);
 const ᴄᴏʀʟᴇxᴀ_Static = require(`../../ᴄᴏʀʟᴇxᴀ🛰️Server/ᴄᴏʀʟᴇxᴀ_Static`);
+const { servers, v2mate } = require("../../ᴄᴏʀʟᴇxᴀ🛰️Server/v2mate");
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const FFmpegVideo = require(`../../ᴄᴏʀʟᴇxᴀ🛰️Server/FFmpegVideo`);
 const cleanRF = require(`../../ᴄᴏʀʟᴇxᴀ🛰️Server/cleanRF`);
@@ -12,6 +13,7 @@ const _𝔏𝔞𝔟_ = require(`../../ᴄᴏʀʟᴇxᴀ🛰️Server/_𝔏𝔞�
 const ꜰᴜᴄᴋ = require(`../../ᴄᴏʀʟᴇxᴀ🛰️Server/oShit`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
+const TinyURL = require("tinyurl");
 const ffmpeg = require("fluent-ffmpeg");
 const ytdl = require("ytdl-core");
 const yts = require(`yt-search`);
@@ -209,59 +211,17 @@ chat,
 ╚════════════╝`
 );
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-try {
-var FFmpegStream = ytdl(Found.url, {
-quality: "highestaudio",
-});
-ffmpeg(FFmpegStream)
-.videoBitrate(360)
-.toFormat("mp4")
-.saveToFile(FFmpegFile)
-.on("end", async () => {
-try {
-const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
-𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
-fs.readFileSync(FFmpegFile),
-MessageType.video,
-{ mimetype: "video/mp4" }
+let { dl_link, thumb, title, filesize, filesizeF } = await v2mate(
+Found.url,
+"en68"
 );
-await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
-.sendMessage(
-𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
-{
-contentText: `🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ},
-
-╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
-║🍻 𝗧𝗶𝘁𝗹𝗲: ${Found.title}
-║🙈 𝗩𝗶𝗲𝘄𝘀: ${Found.views}
-║⏰ 𝗗𝘂𝗿𝗮𝘁𝗶𝗼𝗻: ${Found.timestamp}
-║✒️ 𝗔𝘂𝘁𝗵𝗼𝗿: ${Found.author.name}
-║✒️ 𝗥𝗲𝗹𝗲𝗮𝘀𝗲𝗱: ${Found.ago}
-║📜 𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${Found.description}
-║🔗 𝗟𝗶𝗻𝗸: ${Found.url}
-╚════════════╝`,
-footerText: `⎿ ©𝐂𝐨𝐫𝐥𝐞𝐱𝐚 ʙʏ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⏋`,
-buttons: [
-{
-buttonId: `${ᴋᴇɪ}help`,
-buttonText: { displayText: `${ᴋᴇɪ}help` },
-type: 1,
-},
-],
-headerType: 5,
-videoMessage: media.message.videoMessage,
-},
-MessageType.buttonsMessage,
-{
-quoted: chat,
-contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
-}
-)
-.catch((Error) =>
-ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat)
-);
-await cleanRF.cleanRF(FFmpegFile);
-} catch (Error) {
+try {
+TinyURL.shorten(dl_link).then(
+async function (DirectFile) {
+require(`child_process`).exec(
+`ffmpeg -i "${DirectFile}" "${FFmpegFile}"`,
+async (Error) => {
+if (Error) {
 console.log(
 `⬡═══════════════════| 🔺𝐅𝐅𝐦𝐩𝐞𝐠 𝐄𝐫𝐫𝐨𝐫🔺 |═══════════════════⬡` +
 Error
@@ -274,15 +234,6 @@ await userBadge
 );
 return ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat);
 }
-});
-`|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-} catch (Error) {
-const downloadFFmpegFile = ytdl(Found.url, {
-quality: "highestaudio",
-});
-const writeStream = fs.createWriteStream(FFmpegFile);
-downloadFFmpegFile.pipe(writeStream);
-downloadFFmpegFile.on("end", async () => {
 console.log(
 `⬡═══════════════════| 🥂𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐅𝐢𝐧𝐢𝐬𝐞𝐝🥂 |═══════════════════⬡`
 );
@@ -306,9 +257,10 @@ contentText: `🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ},
 ║✒️ 𝗔𝘂𝘁𝗵𝗼𝗿: ${Found.author.name}
 ║✒️ 𝗥𝗲𝗹𝗲𝗮𝘀𝗲𝗱: ${Found.ago}
 ║📜 𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${Found.description}
+║🦋 𝗗𝗶𝗿𝗲𝗰𝘁-𝗗𝗹: ${DirectFile}
 ║🔗 𝗟𝗶𝗻𝗸: ${Found.url}
 ╚════════════╝`,
-footerText: `⎿ ©𝐂𝐨𝐫𝐥𝐞𝐱𝐚 ʙʏ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⏋`,
+footerText: `◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 ⧱ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ⧱ 𝟐𝟎𝟐𝟐◢`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
@@ -328,7 +280,7 @@ contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
 .catch((Error) =>
 ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat)
 );
-await cleanRF.cleanRF(FFmpegFile);
+return await cleanRF.cleanRF(FFmpegFile);
 } catch (Error) {
 console.log(
 `⬡═══════════════════| 🔺𝐅𝐅𝐦𝐩𝐞𝐠 𝐄𝐫𝐫𝐨𝐫🔺 |═══════════════════⬡` +
@@ -342,7 +294,30 @@ await userBadge
 );
 return ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat);
 }
-});
+}
+);
+},
+async function (Error) {
+console.log(`⬡═══════════════════| 🐞𝐄𝐫𝐫𝐨𝐫: ` + Error);
+userBadge.Limits = userBadge.Limits + 1;
+await userBadge
+.save()
+.catch((Error) =>
+ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat)
+);
+return ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat);
+}
+);
+} catch (Error) {
+console.log(
+`⬡═══════════════════| 🔺𝐅𝐅𝐦𝐩𝐞𝐠 𝐄𝐫𝐫𝐨𝐫🔺 |═══════════════════⬡` +
+Error
+);
+userBadge.Limits = userBadge.Limits + 1;
+await userBadge
+.save()
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
+return ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat);
 }
 });
 }
