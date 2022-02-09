@@ -318,7 +318,9 @@ var ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ = await ᴍɪᴢᴜᴋɪɢɪᴛ.log([
 `KrakinzLab..origin/KrakinzLab`,
 ]);
 if (ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total != 0) {
-var child =require(`child_process`).exec("git config pull.rebase false");
+var child = require(`child_process`).exec(
+"git config pull.rebase false"
+);
 child.stdout.pipe(process.stdout);
 child.on(`exit`, async function () {
 process.exitCode = 1;
@@ -379,7 +381,12 @@ var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ
 .substring(0, աɦօֆɛռȶɦǟȶ.length - 15)
 .replace(/[+ ]/g, "");
 `|⬡════════════════════════════════════════════|   ◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • _𝟐𝟎𝟐𝟐_ • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™◢   |═══════════════════════════════════════════⬡|`;
-if (!𝖈𝖔𝖗𝖑𝖊𝖝𝖆.fromMe && !𝖈𝖔𝖗𝖑𝖊𝖝𝖆.isGroup && !𝖈𝖔𝖗𝖑𝖊𝖝𝖆.isSenderDev) {
+if (
+𝖈𝖔𝖗𝖑𝖊𝖝𝖆.isCmd &&
+!𝖈𝖔𝖗𝖑𝖊𝖝𝖆.fromMe &&
+!𝖈𝖔𝖗𝖑𝖊𝖝𝖆.isGroup &&
+!𝖈𝖔𝖗𝖑𝖊𝖝𝖆.isSenderDev
+) {
 return ᴄᴏʀʟᴇxᴀ_Buttons.MTB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
