@@ -235,6 +235,10 @@ MessageType.text
 const MemNum = update.participants[0];
 `|⬡════════════════════════════════════════════|   ◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ • 𝟐𝟎𝟐𝟐◢   |═══════════════════════════════════════════⬡|`;
 if (update.action == `add` && MemNum.includes(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.user.jid)) {
+let members = [];
+for (var i = 0; i < GroupMemG; i++) {
+members[i] = GroupMemData.participants[i].jid;
+}
 const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
 GroupID,
 { url: "./ᴄᴏʀʟᴇxᴀ☣️Reactor/𝖈𝖔𝖗𝖑𝖊𝖝𝖆_base.png" },
@@ -248,8 +252,8 @@ contentText: `👋🏻𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚 𝐄𝐯𝐞𝐫�
 🛸𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈: _ɪꜱ ᴀ ᴡʜᴀᴛꜱᴀᴘᴘ ᴍᴜʟᴛɪᴘᴜʀᴘᴏꜱᴇ-ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ ᴍᴏᴅᴇʀᴀᴛɪᴏɴ,ᴀᴜᴛᴏᴍᴀᴛɪᴏɴ ᴀɴᴅ 100+ ᴄᴏᴍᴍᴀɴᴅꜱ!_
 
 ╔════◇⭕𝐅𝐨𝐫 𝐀𝐝𝐦𝐢𝐧𝐬
-║ *antilink* _on/off_
-║ *autorank* _on/off_
+║◇ *antilink:* _on/off_
+║◇ *autorank:* _on/off_
 ╚════════════╝
 
 👇🏽𝗣𝗿𝗲𝘀𝘀 𝗯𝗲𝗹𝗼𝘄 𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗦𝘁𝗮𝗿𝘁👇🏽`,
@@ -269,7 +273,12 @@ type: 1,
 headerType: 4,
 imageMessage: media.message.imageMessage,
 },
-MessageType.buttonsMessage
+MessageType.buttonsMessage,
+{
+contextInfo: {
+mentionedJid: members,
+},
+}
 );
 Welcome.findOne(
 {
