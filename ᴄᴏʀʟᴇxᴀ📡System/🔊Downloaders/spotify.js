@@ -160,7 +160,6 @@ await userBadge
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 const hold = require("../../ᴄᴏʀʟᴇxᴀ🛰️Server/Hold");
 await hold.Hold(𝖈𝖔𝖗𝖑𝖊𝖝𝖆);
-
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 if (!𝖈𝖔𝖗𝖑𝖊𝖝𝖆.fromMe && userBadge.value === "False") {
 let time = ms(
@@ -187,7 +186,7 @@ return `${Math.floor(seconds / 60)}m ${Math.floor(
 seconds % 60
 )}s`;
 }
-spdl.getInfo(Needs.join(" ")).then((SpotFound) => {
+spdl.getInfo(Needs.join(" ")).then(async (SpotFound) => {
 if (!SpotFound) {
 return ᴄᴏʀʟᴇxᴀ_Buttons.MTB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
@@ -219,10 +218,9 @@ chat,
 ╚════════════╝`,
 SpotFound.thumbnail
 );
-await spdl(SpotFound.url).then(async (stream) => {
-stream.on("end", async () => {});
-stream.pipe(fs.createWriteStream(FFmpegFile));
-await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
+spdl(SpotFound.url).then(async (stream) => {
+stream.on("end", () =>
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .sendMessage(
 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
 fs.readFileSync(FFmpegFile),
@@ -234,8 +232,10 @@ mimetype: "audio/mp4",
 )
 .catch((Error) =>
 ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat)
+)
+.then(cleanRF.cleanRF(FFmpegFile))
 );
-return await cleanRF.cleanRF(FFmpegFile);
+stream.pipe(fs.createWriteStream(FFmpegFile));
 });
 });
 } catch (Error) {
