@@ -312,10 +312,6 @@ var ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ = await ᴍɪᴢᴜᴋɪɢɪᴛ.log([
 `KrakinzLab..origin/KrakinzLab`,
 ]);
 if (ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total != 0) {
-child.stdout.pipe(process.stdout);
-child.on(`exit`, async function () {
-process.exitCode = 1;
-});
 require(`simple-git`)()
 .exec(async () => {
 console.log(
