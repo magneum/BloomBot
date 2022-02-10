@@ -35,9 +35,19 @@ console.log(`💡 𝐈𝐧𝐟𝐨⬰ Auto-Updating Finished!`);
 });
 }
 } catch (Error) {
-console.log(Error);
-console.log(`❌ 𝐄𝐫𝐫𝐨𝐫⬰ Please Re-Deploy!`);
+console.log(Error.message);
+console.log(`❌ 𝐄𝐫𝐫𝐨𝐫⬰ ReDeployment Is Needed!`);
+let { execSync } = require("child_process");
+let res = execSync("python3 🐙ᴋʀʏᴏᴛᴇᴋ.py");
+console.log(res.toString());
 }
+// } catch (Error) {
+// var childs = require(`child_process`).exec(`python3 🐙ᴋʀʏᴏᴛᴇᴋ.py`);
+// childs.stdout.pipe(process.stdout);
+// childs.on(`exit`, async function () {
+// process.exitCode = 1;
+// });
+// }
 })();
 `|⬡════════════════════════════════════════════|                            |═══════════════════════════════════════════⬡|`;
 `|                                                                                                                        |`;
