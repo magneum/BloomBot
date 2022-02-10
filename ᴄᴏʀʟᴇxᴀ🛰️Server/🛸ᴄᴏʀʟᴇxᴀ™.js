@@ -519,28 +519,30 @@ if (
 !member2.includes(աɦօֆɛռȶɦǟȶ) &&
 !member3.includes(աɦօֆɛռȶɦǟȶ)
 ) {
-return ᴄᴏʀʟᴇxᴀ_Buttons.MIB(
-ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
-chat,
-𝖈𝖔𝖗𝖑𝖊𝖝𝖆,
-`🤖𝐕𝐞𝐫𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧: @${աɦօֆɛռȶɦǟȶռʊʍ}, _You Are Not Verified.Join Any Corlexa Group and Verify Yourself First!_
-
-╔════◇ 𝐎𝐟𝐟𝐢𝐜𝐢𝐚𝐥👇🏽‍
-║💼 𝐆𝐫𝐨𝐮𝐩: _${_𝔏𝔞𝔟_.HASH}_
-║💼 𝐆𝐫𝐨𝐮𝐩: _${_𝔏𝔞𝔟_.HASHS}_
-║💼 𝐆𝐫𝐨𝐮𝐩: _${_𝔏𝔞𝔟_.HASHSH}_
-║
-╚◇║‍
-╔◇║◇𝐖𝐡𝐲 𝐃𝐨 𝐈 𝐍𝐞𝐞𝐝 𝐓𝐨 𝐁𝐞 𝐕𝐞𝐫𝐢𝐟𝐢𝐞𝐝?
-║
-║📌 Monitor Anti-Spam!
-║📌 Monitor Bugs!
-║📌 Use ᴄᴏʀʟᴇxᴀ Anywhere!
-║📌 Monitor Group Ranks!
-║📌 Monitor Performance!
-║
-╚◇║`,
-"./ᴄᴏʀʟᴇxᴀ☣️Reactor/ᴄᴏʀʟᴇxᴀ_NoVerity.png"
+const buttonMessage = {
+contentText: `🤖𝐕𝐞𝐫𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧: *@${աɦօֆɛռȶɦǟȶռʊʍ}, You Are Not Verified!*`,
+footerText: `◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • ${vers.vers}◢\n◤𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ • 𝟐𝟎𝟐𝟐◢`,
+buttons: [
+{
+buttonId: `${ᴋᴇɪ}verify`,
+buttonText: { displayText: `${ᴋᴇɪ}verify` },
+type: 1,
+},
+],
+headerType: 1,
+};
+return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
+.sendMessage(
+𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
+buttonMessage,
+MessageType.buttonsMessage,
+{
+quoted: chat,
+contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ, Receiver] },
+}
+)
+.catch((Error) =>
+ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat)
 );
 }
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
