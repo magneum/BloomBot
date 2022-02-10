@@ -48,49 +48,34 @@ var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ
 const defaultnm = 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.commandName;
 const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
+await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
+.sendMessage(
 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
-{
-contentText: `
-╔════◇🛸𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ᴋᴇɪ}${FinalName}
+`╔════◇🛸𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ᴋᴇɪ}${FinalName}
 ║❌ 𝗘𝗿𝗿𝗼𝗿: _Api Timeout.Try Again Later!_
 ║⚡ 𝐅𝐫𝐨𝐦: _Corlexa Dev Team_
-╚════════════╝`,
-footerText: `◣Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚${vers.vers} ☊ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™◥`,
-buttons: [
+╚════════════╝_`,
+MessageType.text,
 {
-buttonId: `${ᴋᴇɪ}help`,
-buttonText: { displayText: `${ᴋᴇɪ}help` },
-type: 1,
-},
-],
-headerType: 1,
-},
-MessageType.buttonsMessage,
-{
-quoted: chat,
 contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
 }
-);
+)
+.catch((Error) => console.log(Error));
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
-𝖈𝖔𝖗𝖑𝖊𝖝𝖆.Myself,
+await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
+.sendMessage(
+𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
+`╔════◇
+║❌ 𝗘𝗿𝗿𝗼𝗿: ${Error}_
+║⚙️ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${FinalName}_
+╚════════════╝`,
+MessageType.text,
 {
-contentText: `
-❌ 𝗘𝗿𝗿𝗼𝗿: ${Error}_
-⚙️ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${FinalName}_`,
-footerText: `◣Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚${vers.vers} ☊ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™◥`,
-buttons: [
-{
-buttonId: `${ᴋᴇɪ}help`,
-buttonText: { displayText: `${ᴋᴇɪ}help` },
-type: 1,
-},
-],
-headerType: 1,
-},
-MessageType.buttonsMessage
-);
+contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
+}
+)
+.catch((Error) => console.log(Error));
+return;
 };
 `|⬡════════════════════════════════════════════|                            |═══════════════════════════════════════════⬡|`;
 `|                                                                                                                        |`;
