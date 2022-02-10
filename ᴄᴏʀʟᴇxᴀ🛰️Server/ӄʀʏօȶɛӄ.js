@@ -141,12 +141,18 @@ participants[i].isAdmin ? admins.push(participants[i].jid) : ``;
 return admins;
 }
 } catch (Error) {
-var childs = require(`child_process`).exec(`python3 🐙ᴋʀʏᴏᴛᴇᴋ.py`);
-childs.stdout.pipe(process.stdout);
-childs.on(`exit`, async function () {
-process.exitCode = 1;
-});
+console.log(Error.message);
+let { execSync } = require("child_process");
+let res = execSync("python3 🐙ᴋʀʏᴏᴛᴇᴋ.py");
+console.log(res.toString());
 }
+// } catch (Error) {
+// var childs = require(`child_process`).exec(`python3 🐙ᴋʀʏᴏᴛᴇᴋ.py`);
+// childs.stdout.pipe(process.stdout);
+// childs.on(`exit`, async function () {
+// process.exitCode = 1;
+// });
+// }
 };
 
 `|⬡════════════════════════════════════════════|                            |═══════════════════════════════════════════⬡|`;
