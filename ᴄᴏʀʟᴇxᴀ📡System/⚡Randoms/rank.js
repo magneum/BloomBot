@@ -10,6 +10,7 @@ const Usersᴄᴏʀʟᴇxᴀ = require(`../../ᴄᴏʀʟᴇxᴀ🍃Goose/experie
 const cleanRF = require(`../../ᴄᴏʀʟᴇxᴀ🛰️Server/cleanRF`);
 const ꜰᴜᴄᴋ = require(`../../ᴄᴏʀʟᴇxᴀ🛰️Server/oShit`);
 const _𝔏𝔞𝔟_ = require(`../../ᴄᴏʀʟᴇxᴀ🛰️Server/_𝔏𝔞𝔟_`);
+var randomMC = require("random-material-color");
 const { registerFont } = require(`canvas`);
 registerFont(`./ᴄᴏʀʟᴇxᴀ🛰️Server/LobsterTwo-Bold.ttf`, {
 family: `LobsterTwo-Bold`,
@@ -24,9 +25,11 @@ var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 const fs = require(`fs`);
 var path = require(`path`);
-var Canvas = require(`canvas`);
+var color = randomMC.getColor();
+const canvacord = require("canvacord");
 var scriptName = path.basename(__filename);
 var newScpt = scriptName.slice(0, -3).toLowerCase();
+var expFile = `./ᴄᴏʀʟᴇxᴀ☕ꜱʜᴏᴘ/${Date.now()}r${chat.key.id}.png`;
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 module.exports = {
 name: newScpt,
@@ -59,20 +62,14 @@ chat,
 );
 }
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-try {
-𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.getProfilePicture(𝖈𝖔𝖗𝖑𝖊𝖝𝖆.sender);
-} catch {
-𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = `https://i.postimg.cc/wxWL9G8F/no-profile-picture-300x216.png`;
-}
-`|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 Usersᴄᴏʀʟᴇxᴀ.findOne(
 {
 ID: աɦօֆɛռȶɦǟȶ,
 serverID: 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
 },
-async (Error, users) => {
+async (Error, user) => {
 if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat);
-if (!users) {
+if (!user) {
 return ᴄᴏʀʟᴇxᴀ_Buttons.MTB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
@@ -85,39 +82,77 @@ chat,
 ║💡 𝐅𝐢𝐱: Ask Them To Turn it On First!
 ╚════════════╝`
 );
+}
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-} else {
+try {
+𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.getProfilePicture(𝖈𝖔𝖗𝖑𝖊𝖝𝖆.sender);
+} catch {
+𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = `https://i.postimg.cc/wxWL9G8F/no-profile-picture-300x216.png`;
+}
+let maxXP = 0;
+if (user.level < 10) {
+maxXP = 500;
+} else if (user.level >= 15) {
+maxXP = 1000;
+} else if (user.level >= 20) {
+maxXP = 1500;
+} else if (user.level >= 25) {
+maxXP = 2000;
+} else if (user.level >= 30) {
+maxXP = 2500;
+} else if (user.level >= 35) {
+maxXP = 3000;
+} else if (user.level >= 40) {
+maxXP = 3500;
+} else if (user.level >= 45) {
+maxXP = 4000;
+} else if (user.level >= 50) {
+maxXP = 4500;
+} else if (user.level >= 55) {
+maxXP = 5000;
+} else if (user.level >= 80) {
+maxXP = 8000;
+} else if (user.level >= 100) {
+maxXP = 10000;
+}
+`|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
+const rank = new canvacord.Rank()
+.setStatus("online")
+.setAvatar(𝕻𝕻𝖑𝖊𝖙𝖊𝖗)
+.setRequiredXP(maxXP)
+.setLevel(user.level)
+.setCurrentXP(user.xp)
+.setUsername("Rank Check!")
+.setBackground("IMAGE", "https://i.postimg.cc/jSNkwsNH/550500.png")
+.setDiscriminator(`${աɦօֆɛ}`)
+.setProgressBar(color, "COLOR");
+rank.build().then(async (data) => {
+fs.writeFile(expFile, data, async (Error) => {
+if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat);
 var groupDataRank = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.groupMetadata(
 chat.key.remoteJid
 );
-await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
-.sendMessage(
-𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
-{
-url: "https://i.postimg.cc/MHZv3FkY/ᴄᴏʀʟᴇxᴀ-Rank-Catelog.png",
-},
-MessageType.image,
-{
-quoted: chat,
-mimetype: Mimetype.png,
-contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
-caption: `🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ}
+ᴄᴏʀʟᴇxᴀ_Buttons.MIB(
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+chat,
+𝖈𝖔𝖗𝖑𝖊𝖝𝖆,
+`🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ}
 
 ╔◇══════════════◇╗
 ┊ 𝐑𝐚𝐧𝐤𝐢𝐧𝐠📜𝐒𝐲𝐬𝐭𝐞𝐦
 ╚◇║
 ╔◇║
-║🥂 𝗖𝘂𝗿𝗿𝗲𝗻𝘁 𝗫𝗣: _${users.xp}xp_
-║🍰 𝗖𝘂𝗿𝗿𝗲𝗻𝘁 𝗟𝗲𝘃𝗲𝗹: _${users.level}_
+║🥂 𝗖𝘂𝗿𝗿𝗲𝗻𝘁 𝗫𝗣: _${user.xp}xp_
+║🍰 𝗖𝘂𝗿𝗿𝗲𝗻𝘁 𝗟𝗲𝘃𝗲𝗹: _${user.level}_
 ║🎪 𝗚𝗿𝗼𝘂𝗽: ${groupDataRank.subject}
 ╚════════════╝
 
 ◇ *The More You Talk, The More Xp+Gold You Gain.You Can Spend The gold in ${ᴋᴇɪ}shop!*`,
-}
-)
-.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
-return;
-}
+expFile
+);
+return await cleanRF.cleanRF(expFile);
+});
+});
 }
 );
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
