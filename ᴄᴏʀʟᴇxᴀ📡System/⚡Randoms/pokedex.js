@@ -223,7 +223,7 @@ MessageType.video,
 {
 mimetype: `video/gif`,
 quoted: chat,
-caption: `◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • _𝟐𝟎𝟐𝟐_ • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™◢\n\n` + PokeInfo,
+caption: `◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • ${vers.vers}◢\n◤𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ • 𝟐𝟎𝟐𝟐◢\n\n` + PokeInfo,
 contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
 }
 )
