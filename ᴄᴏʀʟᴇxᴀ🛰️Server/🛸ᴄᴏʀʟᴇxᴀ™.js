@@ -520,7 +520,18 @@ if (
 !member3.includes(աɦօֆɛռȶɦǟȶ)
 ) {
 const buttonMessage = {
-contentText: `🤖𝐕𝐞𝐫𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧: *@${աɦօֆɛռȶɦǟȶռʊʍ}, You Are Not Verified!*`,
+contentText: `🤖𝐕𝐞𝐫𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧: *@${աɦօֆɛռȶɦǟȶռʊʍ}, You Are Not Verified!*
+
+┌◇ 𝐖𝐡𝐲 𝐓𝐨 𝐁𝐞 𝐕𝐞𝐫𝐢𝐟𝐢𝐞𝐝?
+│
+│📌 _Monitor Bugs!_
+│📌 _Monitor Anti-Spams!_
+│📌 _Monitor Anti-Links!_
+│📌 _Monitor Anti-Virtex!_
+│📌 _Monitor Group Ranks!_
+│📌 _Monitor Performance!_
+│📌 _Use Corlexa-Premium Anywhere!_
+└────────────┘`,
 footerText: `◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • ${vers.vers}◢\n◤𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ • 𝟐𝟎𝟐𝟐◢`,
 buttons: [
 {

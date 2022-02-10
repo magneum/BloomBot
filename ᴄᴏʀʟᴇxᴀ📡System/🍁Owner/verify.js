@@ -68,12 +68,22 @@ chat,
 𝖈𝖔𝖗𝖑𝖊𝖝𝖆,
 `🤖𝐕𝐞𝐫𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧: *@${աɦօֆɛռȶɦǟȶռʊʍ}* As Long As You Are A Member Of Corlexa Group Chat, You Will Be Auto-Verified!
 
-╔◇║👇🏽𝗝𝗼𝗶𝗻 𝗔𝗻𝘆 𝗖𝗼𝗿𝘁𝗮𝗻𝗮-𝗔𝗜 𝗚𝗿𝗼𝘂𝗽👇🏽
-║
-║💼 𝐆𝐫𝐨𝐮𝐩: _${_𝔏𝔞𝔟_.HASH}_
-║💼 𝐆𝐫𝐨𝐮𝐩: _${_𝔏𝔞𝔟_.HASHS}_
-║💼 𝐆𝐫𝐨𝐮𝐩: _${_𝔏𝔞𝔟_.HASHSH}_
-╚════════════╝`
+┌◇│👇🏽𝗝𝗼𝗶𝗻 𝗔𝗻𝘆 𝗖𝗼𝗿𝘁𝗮𝗻𝗮-𝗔𝗜 𝗚𝗿𝗼𝘂𝗽👇🏽
+│
+│💼 𝐆𝐫𝐨𝐮𝐩: _${_𝔏𝔞𝔟_.HASH}_
+│💼 𝐆𝐫𝐨𝐮𝐩: _${_𝔏𝔞𝔟_.HASHS}_
+│💼 𝐆𝐫𝐨𝐮𝐩: _${_𝔏𝔞𝔟_.HASHSH}_
+└◇┐
+┌◇┘ 𝐖𝐡𝐲 𝐓𝐨 𝐁𝐞 𝐕𝐞𝐫𝐢𝐟𝐢𝐞𝐝?
+│
+│📌 _Monitor Bugs!_
+│📌 _Monitor Anti-Spams!_
+│📌 _Monitor Anti-Links!_
+│📌 _Monitor Anti-Virtex!_
+│📌 _Monitor Group Ranks!_
+│📌 _Monitor Performance!_
+│📌 _Use Corlexa-Premium Anywhere!_
+└────────────┘`
 );
 } else {
 return ᴄᴏʀʟᴇxᴀ_Buttons.MTB(
