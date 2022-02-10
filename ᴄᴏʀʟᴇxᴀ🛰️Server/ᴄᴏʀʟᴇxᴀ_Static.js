@@ -37,7 +37,7 @@ return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 mimetype: `video/gif`,
 quoted: chat,
 caption:
-`◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚${vers.vers} • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ◢\n\n` +
+`◣ Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚${vers.vers} ⋗ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ◢\n\n` +
 MainText,
 contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ, Receiver] },
 })
@@ -52,7 +52,7 @@ return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 mimetype: `video/gif`,
 quoted: chat,
 caption:
-`◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚${vers.vers} • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ◢\n\n` +
+`◣ Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚${vers.vers} ⋗ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ◢\n\n` +
 MainText,
 contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
 })

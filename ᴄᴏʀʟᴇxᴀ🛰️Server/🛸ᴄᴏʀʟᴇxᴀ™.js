@@ -235,7 +235,7 @@ _Some Of Your Members Requested Our Corlexa HQ to Add Our Bot In This Group.Have
 ╚════════════╝
 
 👇🏽𝗣𝗿𝗲𝘀𝘀 𝗯𝗲𝗹𝗼𝘄 𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗦𝘁𝗮𝗿𝘁👇🏽`,
-footerText: `◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚${vers.vers} • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ◢`,
+footerText: `◣ Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚${vers.vers} ⋗ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ◢`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
@@ -319,7 +319,7 @@ process.exitCode = 1;
 require(`simple-git`)()
 .exec(async () => {
 console.log(
-`╔◇║ ◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚${vers.vers} • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ◢
+`╔◇║ ◣ Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚${vers.vers} ⋗ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ◢
 ║
 ║💡 𝐈𝐧𝐟𝐨⬰ Auto-Updating ᴄᴏʀʟᴇxᴀ System With Latest Patch...!
 ╚════════════╝`
@@ -509,7 +509,7 @@ contentText: `🤖𝐕𝐞𝐫𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧: *@${աɦօֆ
 ║📌 _Monitor Performance!_
 ║📌 _Use Corlexa-Premium Anywhere!_
 └════════════┘`,
-footerText: `◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚${vers.vers} • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ◢`,
+footerText: `◣ Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚${vers.vers} ⋗ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ◢`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}verify`,
