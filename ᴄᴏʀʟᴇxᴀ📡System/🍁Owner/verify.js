@@ -62,28 +62,41 @@ if (
 !member2.includes(աɦօֆɛռȶɦǟȶ) &&
 !member3.includes(աɦօֆɛռȶɦǟȶ)
 ) {
-return ᴄᴏʀʟᴇxᴀ_Buttons.MTB(
-ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
-chat,
-𝖈𝖔𝖗𝖑𝖊𝖝𝖆,
-`🤖𝐕𝐞𝐫𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧: *@${աɦօֆɛռȶɦǟȶռʊʍ}* As Long As You Are A Member Of Corlexa Group Chat, You Will Be Auto-Verified!
+const buttonMessage = {
+contentText: `🤖𝐕𝐞𝐫𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧: *@${աɦօֆɛռȶɦǟȶռʊʍ}* As Long As You Are A Member Of Corlexa Group Chat, You Will Be Auto-Verified!*
 
-┌◇│👇🏽𝗝𝗼𝗶𝗻 𝗔𝗻𝘆 𝗖𝗼𝗿𝘁𝗮𝗻𝗮-𝗔𝗜 𝗚𝗿𝗼𝘂𝗽👇🏽
-│
-│💼 𝐆𝐫𝐨𝐮𝐩: _${_𝔏𝔞𝔟_.HASH}_
-│💼 𝐆𝐫𝐨𝐮𝐩: _${_𝔏𝔞𝔟_.HASHS}_
-│💼 𝐆𝐫𝐨𝐮𝐩: _${_𝔏𝔞𝔟_.HASHSH}_
-└◇┐
-┌◇┘ 𝐖𝐡𝐲 𝐓𝐨 𝐁𝐞 𝐕𝐞𝐫𝐢𝐟𝐢𝐞𝐝?
-│
-│📌 _Monitor Bugs!_
-│📌 _Monitor Anti-Spams!_
-│📌 _Monitor Anti-Links!_
-│📌 _Monitor Anti-Virtex!_
-│📌 _Monitor Group Ranks!_
-│📌 _Monitor Performance!_
-│📌 _Use Corlexa-Premium Anywhere!_
-└────────────┘`
+┌◇ 𝐖𝐡𝐲 𝐓𝐨 𝐁𝐞 𝐕𝐞𝐫𝐢𝐟𝐢𝐞𝐝?
+║
+║📌 _Monitor Bugs!_
+║📌 _Monitor Anti-Spams!_
+║📌 _Monitor Anti-Links!_
+║📌 _Monitor Anti-Virtex!_
+║📌 _Monitor Group Ranks!_
+║📌 _Monitor Performance!_
+║📌 _Use Corlexa-Premium Anywhere!_
+└════════════┘`,
+footerText: `◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • ${vers.vers}◢\n◤𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ • 𝟐𝟎𝟐𝟐◢`,
+buttons: [
+{
+buttonId: `${ᴋᴇɪ}verify`,
+buttonText: { displayText: `${ᴋᴇɪ}verify` },
+type: 1,
+},
+],
+headerType: 1,
+};
+return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
+.sendMessage(
+𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
+buttonMessage,
+MessageType.buttonsMessage,
+{
+quoted: chat,
+contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ, Receiver] },
+}
+)
+.catch((Error) =>
+ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat)
 );
 } else {
 return ᴄᴏʀʟᴇxᴀ_Buttons.MTB(
