@@ -174,7 +174,7 @@ MessageType.video,
 {
 mimetype: `video/gif`,
 quoted: chat,
-caption: `⎿(𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐄𝐧𝐠𝐢𝐧𝐞: kryozen${vers.vers}⏋\n⎿◈𝐃𝐚𝐭𝐞: ${Clock}⏋\n⎿◈𝐏𝐢𝐧𝐠: ${Ping}ms⏋
+caption: `◣Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚${vers.vers} ☊ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™◥
 
 
 ╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
@@ -236,7 +236,7 @@ MessageType.video,
 {
 mimetype: `video/gif`,
 quoted: chat,
-caption: `⎿(𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐄𝐧𝐠𝐢𝐧𝐞: kryozen${vers.vers}⏋\n⎿◈𝐃𝐚𝐭𝐞: ${Clock}⏋\n⎿◈𝐏𝐢𝐧𝐠: ${Ping}ms⏋
+caption: `◣Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚${vers.vers} ☊ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™◥
 
 
 ╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
