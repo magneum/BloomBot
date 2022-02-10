@@ -31,7 +31,7 @@ var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
 var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
 const buttonMessage = {
 contentText: MainText,
-footerText: `◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • ${vers.vers}◢\n◤𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ • 𝟐𝟎𝟐𝟐◢`,
+footerText: `◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚${vers.vers} • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ◢`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
@@ -61,7 +61,7 @@ const defaultnm = 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.commandName;
 const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
 const buttonMessage = {
 contentText: MainText,
-footerText: `◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • ${vers.vers}◢\n◤𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ • 𝟐𝟎𝟐𝟐◢`,
+footerText: `◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚${vers.vers} • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ◢`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
@@ -114,7 +114,7 @@ return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
 {
 contentText: MainText,
-footerText: `◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • ${vers.vers}◢\n◤𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ • 𝟐𝟎𝟐𝟐◢`,
+footerText: `◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚${vers.vers} • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ◢`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
@@ -150,7 +150,7 @@ return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
 {
 contentText: MainText,
-footerText: `◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • ${vers.vers}◢\n◤𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ • 𝟐𝟎𝟐𝟐◢`,
+footerText: `◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚${vers.vers} • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ◢`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
@@ -200,7 +200,7 @@ return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
 {
 contentText: MainText,
-footerText: `◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • ${vers.vers}◢\n◤𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ • 𝟐𝟎𝟐𝟐◢`,
+footerText: `◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚${vers.vers} • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ◢`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
@@ -236,7 +236,7 @@ return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
 {
 contentText: MainText,
-footerText: `◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • ${vers.vers}◢\n◤𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ • 𝟐𝟎𝟐𝟐◢`,
+footerText: `◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚${vers.vers} • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ◢`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
@@ -286,7 +286,7 @@ return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
 {
 contentText: MainText,
-footerText: `◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • ${vers.vers}◢\n◤𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ • 𝟐𝟎𝟐𝟐◢`,
+footerText: `◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚${vers.vers} • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ◢`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
@@ -322,7 +322,7 @@ return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
 {
 contentText: MainText,
-footerText: `◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • ${vers.vers}◢\n◤𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ • 𝟐𝟎𝟐𝟐◢`,
+footerText: `◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚${vers.vers} • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ◢`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
@@ -378,7 +378,7 @@ MessageType.mp4Audio,
 const buttonMessages = {
 videoMessage: media.message.videoMessage,
 contentText: MainText,
-footerText: `◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • ${vers.vers}◢\n◤𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ • 𝟐𝟎𝟐𝟐◢`,
+footerText: `◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚${vers.vers} • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ◢`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
@@ -431,7 +431,7 @@ MessageType.location
 const buttonMessages = {
 locationMessage: media.message.locationMessage,
 contentText: MainText,
-footerText: `◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • ${vers.vers}◢\n◤𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ • 𝟐𝟎𝟐𝟐◢`,
+footerText: `◤Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚${vers.vers} • 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ◢`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
