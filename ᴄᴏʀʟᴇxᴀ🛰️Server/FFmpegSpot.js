@@ -54,7 +54,6 @@ MessageType.audio,
 .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
 });
 } catch (Error) {
-console.log(`⬡═══════════════════| 🐞𝐄𝐫𝐫𝐨𝐫: ` + Error);
 const downloadFFmpegFile = ytdl(Found.url, { filter: "audioonly" });
 const writeStream = fs.createWriteStream(FFmpegFile);
 downloadFFmpegFile.pipe(writeStream);
