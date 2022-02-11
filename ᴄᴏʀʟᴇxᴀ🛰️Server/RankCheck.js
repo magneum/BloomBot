@@ -183,9 +183,14 @@ try {
 } catch {
 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = "https://i.postimg.cc/wxWL9G8F/no-profile-picture-300x216.png";
 }
-var աɦօֆɛ = աɦօֆɛռȶɦǟȶռʊʍ
+let աɦօֆɛ
+try{
+աɦօֆɛ = աɦօֆɛռȶɦǟȶռʊʍ
 .substring(2, աɦօֆɛռȶɦǟȶռʊʍ.length - 6)
 .replace(/[+ ]/g, "");
+} catch {
+աɦօֆɛ = Math.floor(1000 + Math.random() * 9000);
+}
 var expFile = `./ᴄᴏʀʟᴇxᴀ☕ꜱʜᴏᴘ/${Date.now()}r${chat.key.id}.png`;
 const rank = new canvacord.Rank()
 .setStatus("online")
@@ -195,7 +200,7 @@ const rank = new canvacord.Rank()
 .setCurrentXP(user.xp)
 .setUsername("Ranked Up!")
 .setBackground("IMAGE", Img)
-.setDiscriminator(`${աɦօֆɛ}`)
+.setDiscriminator(աɦօֆɛ)
 .setProgressBar(color, "COLOR");
 rank.build().then(async (data) => {
 fs.writeFile(expFile, data, async (Error) => {

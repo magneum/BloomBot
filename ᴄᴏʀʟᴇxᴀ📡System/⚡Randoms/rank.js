@@ -111,9 +111,14 @@ maxXP = 8000;
 maxXP = 10000;
 }
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-var աɦօֆɛ = աɦօֆɛռȶɦǟȶռʊʍ
+let աɦօֆɛ
+try{
+աɦօֆɛ = աɦօֆɛռȶɦǟȶռʊʍ
 .substring(2, աɦօֆɛռȶɦǟȶռʊʍ.length - 6)
 .replace(/[+ ]/g, "");
+} catch {
+աɦօֆɛ = Math.floor(1000 + Math.random() * 9000);
+}
 try {
 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.getProfilePicture(𝖈𝖔𝖗𝖑𝖊𝖝𝖆.sender);
 } catch {
@@ -128,7 +133,7 @@ const rank = new canvacord.Rank()
 .setCurrentXP(user.xp)
 .setUsername("Rank Check!")
 .setBackground("IMAGE", "https://i.postimg.cc/jSNkwsNH/550500.png")
-.setDiscriminator(`${աɦօֆɛ}`)
+.setDiscriminator(աɦօֆɛ)
 .setProgressBar(color, "COLOR");
 rank.build().then(async (data) => {
 fs.writeFile(expFile, data, async (Error) => {
