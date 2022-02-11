@@ -20,7 +20,13 @@ const fs = require(`fs`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-exports.FFmpegCorlexa = async (ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat, CorlexaYt, userBadge) => {
+exports.FFmpegCorlexa = async (
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+𝖈𝖔𝖗𝖑𝖊𝖝𝖆,
+chat,
+CorlexaYt,
+userBadge
+) => {
 var աɦօֆɛռȶɦǟȶ = 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.sender;
 const defaultnm = 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.commandName;
 var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ
@@ -29,7 +35,7 @@ var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ
 var FFmpegFile = `./ᴄᴏʀʟᴇxᴀ☕ꜱʜᴏᴘ/${chat.key.id}.mp3`;
 const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-await YouTube_Music(CorlexaYt).then((res) => {
+await YouTube_Music(CorlexaYt).then(async (res) => {
 const { dl_link, thumb, title, filesizeF, filesize } = res;
 TinyURL.shorten(dl_link).then(
 async function (TUrl) {
@@ -55,25 +61,12 @@ MessageType.audio,
 });
 } catch (Error) {
 console.log(`⬡═══════════════════| 🐞𝐄𝐫𝐫𝐨𝐫: ` + Error);
-const buttonMessage = {
-contentText: "🐞𝐄𝐫𝐫𝐨𝐫: Seems Like YouTube Denied The Corlexa Request!Trying Second Server!",
-footerText: `◣Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚${vers.vers} ☊ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™◥`,
-buttons: [
-{
-buttonId: `${ᴋᴇɪ}help`,
-buttonText: { displayText: `${ᴋᴇɪ}help` },
-type: 1,
-},
-],
-headerType: 1,
-};
 await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .sendMessage(
 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
-buttonMessage,
-MessageType.buttonsMessage,
+"🐞𝐄𝐫𝐫𝐨𝐫: Seems Like YouTube Denied The Corlexa Request!Trying Alternate Corlexa Servers!",
+MessageType.text,
 {
-quoted: chat,
 contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
 }
 )

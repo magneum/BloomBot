@@ -103,6 +103,7 @@ process.exitCode = 1;
 console.log(Kolor.yellow(`💡 𝐈𝐧𝐟𝐨⬰ Connecting With User's Whatsapp Web..`));
 });
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.on(`open`, async () => {
+console.log(Kolor.green(`💡 𝐈𝐧𝐟𝐨⬰ Connected With User's Whatsapp Web..`));
 await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .sendMessage(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.user.jid,
