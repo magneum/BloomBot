@@ -158,16 +158,16 @@ chat,
 ║🍻 𝐓𝐢𝐭𝐥𝐞: ${data.snippet.title}
 ║📅 𝗣𝘂𝗯𝗹𝗶𝘀𝗵𝗲𝗱𝗔𝘁: ${data.snippet.publishedAt} | ${data.snippet.publishTime}
 ║🏷️ 𝗖𝗵𝗮𝗻𝗻𝗲𝗹𝗧𝗶𝘁𝗹𝗲: ${data.snippet.channelTitle}
-║🔗 𝐋𝐢𝐧𝐤: https://youtu.be/${data.id.videoId}
 ║📜 𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${data.snippet.description}
 ╚════════════╝`,
 data.snippet.thumbnails.high.url
 );
+var IDs = data.id.videoId
 return await FFmpegCorlexa.FFmpegCorlexa(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 𝖈𝖔𝖗𝖑𝖊𝖝𝖆,
 chat,
-`https://youtu.be/${data.id.videoId}`,
+IDs,
 userBadge
 );
 }
