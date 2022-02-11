@@ -21,7 +21,7 @@ RUN apt-get install python-is-python3
 # RUN heroku plugins:install heroku-builds
 RUN apt-get install npm -y 
 RUN npm install --global n
-RUN n install 15
+RUN n install 14
 RUN path=path 
 RUN hash -r 
 RUN git clone https://github.com/Krakinz/Cortana.git 
