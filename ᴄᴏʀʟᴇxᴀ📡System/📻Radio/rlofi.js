@@ -145,6 +145,28 @@ return ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔�
 const LinkForGroups = await yts(data.id.videoId);
 const GroupVideos = LinkForGroups.videos.slice(0, 1);
 GroupVideos.forEach(async function (Found) {
+if (Found.seconds > `3600`) {
+userBadge.Limits = userBadge.Limits + 1;
+await userBadge
+.save()
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
+return ᴄᴏʀʟᴇxᴀ_Buttons.MIB(
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+chat,
+𝖈𝖔𝖗𝖑𝖊𝖝𝖆,
+`🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ}, Sorry Server Sent File More Then 1hour! 
+Please Try Again!
+
+╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
+║
+║🍻 𝐓𝐢𝐭𝐥𝐞: ${Found.title}
+║⏰ 𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧: ${Found.timestamp}
+║🔗 𝐋𝐢𝐧𝐤: ${Found.url}
+╚════════════╝`,
+Found.thumbnail
+);
+}
+`|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 ᴄᴏʀʟᴇxᴀ_Buttons.MIB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
