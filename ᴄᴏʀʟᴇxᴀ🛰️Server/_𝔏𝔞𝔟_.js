@@ -12,8 +12,6 @@ path: `./🛸ᴄᴏʀʟᴇxᴀ™.env`,
 require(`dotenv`);
 }
 const env = {
-CORLEXAYT:
-process.env.CORLEXAYT === undefined ? `Null` : process.env.CORLEXAYT,
 DEVL: process.env.DEVL === undefined ? `No` : process.env.DEVL,
 CORLEXA: process.env.CORLEXA === undefined ? `Null` : process.env.CORLEXA,
 CORLEXAMDB:
@@ -28,6 +26,7 @@ process.env.HEROKU_APP_NAME === undefined
 : process.env.HEROKU_APP_NAME,
 IMDB: process.env.IMDB,
 FOXTROT: `^[${process.env.FOXTROT}]`,
+CORLEXAYT: process.env.CORLEXAYT,
 CCD: process.env.CCD,
 OCR: process.env.OCR,
 TEN: process.env.TEN,

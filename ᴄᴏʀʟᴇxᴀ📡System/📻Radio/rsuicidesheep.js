@@ -130,7 +130,7 @@ chat,
 const CorlexaYouTube = require("random-youtube-video-by-keyword");
 CorlexaYouTube.getRandomVid(
 _𝔏𝔞𝔟_.CORLEXAYT,
-"suicide sheep",
+"suicidesheep",
 async function (Error, data) {
 if (Error) {
 userBadge.Limits = userBadge.Limits + 1;
@@ -141,6 +141,20 @@ await userBadge
 );
 return ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat);
 }
+`|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
+const LinkForGroups = await yts(data.id.videoId);
+if (!LinkForGroups) {
+return ᴄᴏʀʟᴇxᴀ_Buttons.MTB(
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+chat,
+𝖈𝖔𝖗𝖑𝖊𝖝𝖆,
+`🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ}, 
+❌𝗘𝗿𝗿𝗼𝗿: No Audio Found!`
+);
+}
+`|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
+const GroupVideos = LinkForGroups.videos.slice(0, 1);
+GroupVideos.forEach(async function (Found) {
 ᴄᴏʀʟᴇxᴀ_Buttons.MIB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
@@ -162,14 +176,14 @@ chat,
 ╚════════════╝`,
 data.snippet.thumbnails.high.url
 );
-var IDs = data.id.videoId
 return await FFmpegCorlexa.FFmpegCorlexa(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 𝖈𝖔𝖗𝖑𝖊𝖝𝖆,
 chat,
-IDs,
+Found.url,
 userBadge
 );
+});
 }
 );
 }
