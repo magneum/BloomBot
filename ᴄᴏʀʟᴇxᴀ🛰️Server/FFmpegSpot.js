@@ -74,7 +74,7 @@ buttonMessage,
 MessageType.buttonsMessage,
 {
 quoted: chat,
-contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ, Receiver] },
+contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
 }
 )
 .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));

@@ -12,6 +12,8 @@ path: `./🛸ᴄᴏʀʟᴇxᴀ™.env`,
 require(`dotenv`);
 }
 const env = {
+CORLEXAYT:
+process.env.CORLEXAYT === undefined ? `Null` : process.env.CORLEXAYT,
 DEVL: process.env.DEVL === undefined ? `No` : process.env.DEVL,
 CORLEXA: process.env.CORLEXA === undefined ? `Null` : process.env.CORLEXA,
 CORLEXAMDB:
