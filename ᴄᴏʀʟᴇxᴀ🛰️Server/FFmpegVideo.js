@@ -83,6 +83,31 @@ contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
 .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
 });
 } catch (Error) {
+console.log(`⬡═══════════════════| 🐞𝐄𝐫𝐫𝐨𝐫: ` + Error);
+const buttonMessage = {
+contentText:
+"🐞𝐄𝐫𝐫𝐨𝐫: Seems Like YouTube Denied The Corlexa Request!Trying Second Server!",
+footerText: `◣Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚${vers.vers} ☊ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™◥`,
+buttons: [
+{
+buttonId: `${ᴋᴇɪ}help`,
+buttonText: { displayText: `${ᴋᴇɪ}help` },
+type: 1,
+},
+],
+headerType: 1,
+};
+await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
+.sendMessage(
+𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
+buttonMessage,
+MessageType.buttonsMessage,
+{
+quoted: chat,
+contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ, Receiver] },
+}
+)
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
 let { dl_link, thumb, title, filesize, filesizeF } = await v2mate(
 Found.url,
 "en68"
