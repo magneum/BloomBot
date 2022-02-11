@@ -68,21 +68,9 @@ await newUsers
 return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .sendMessage(
 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
+`📜𝐑𝐚𝐧𝐤: @${աɦօֆɛռȶɦǟȶռʊʍ}, Auto-Ranking has Started!`,
+MessageType.text,
 {
-contentText: `📜𝐑𝐚𝐧𝐤: @${աɦօֆɛռȶɦǟȶռʊʍ}, Auto-Ranking has Started!`,
-footerText: `◣Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚${vers.vers} ☊ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™◥`,
-buttons: [
-{
-buttonId: `${ᴋᴇɪ}rank`,
-buttonText: { displayText: `${ᴋᴇɪ}rank` },
-type: 1,
-},
-],
-headerType: 1,
-},
-MessageType.buttonsMessage,
-{
-quoted: chat,
 contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
 }
 )
@@ -181,10 +169,11 @@ Img = "https://i.postimg.cc/Kc65RLnX/Full.png";
 try {
 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.getProfilePicture(աɦօֆɛռȶɦǟȶ);
 } catch {
-𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = "https://i.postimg.cc/wxWL9G8F/no-profile-picture-300x216.png";
+𝕻𝕻𝖑𝖊𝖙𝖊𝖗 =
+"https://i.postimg.cc/wxWL9G8F/no-profile-picture-300x216.png";
 }
-let աɦօֆɛ
-try{
+let աɦօֆɛ;
+try {
 աɦօֆɛ = աɦօֆɛռȶɦǟȶռʊʍ
 .substring(2, աɦօֆɛռȶɦǟȶռʊʍ.length - 6)
 .replace(/[+ ]/g, "");
