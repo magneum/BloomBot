@@ -49,11 +49,11 @@ chat,
 
 ╔════◇*❓How Do I add Corlexa In My Group?*
 ║
-║ -Send Your Group Link In My Private!
-║ -Your Group Should Have 10 members atleast.
-║ -Turn Disappearing Message Off in your Gc.
-║ -If Any Member OF Your Group Kicks The Bot For Dumb/No Reason, Corlexa Support Team Will PermaLock Your Group.
-║ -Every Member Should Be Verified First Before They Can Use Corlexa.
+║❗ _Send Your Group Link In My Private!_
+║❗ _Your Group Should Have 10 members atleast._
+║❗ _Turn Disappearing Message Off in your Gc._
+║❗ _If Any Member OF Your Group Kicks The Bot For Dumb/No Reason, Corlexa Support Team Will PermaLock Your Group._
+║❗ _Every Member Should Be Verified First Before They Can Use Corlexa._
 ╚════════════╝`,
 "./ᴄᴏʀʟᴇxᴀ☣️Reactor/𝖈𝖔𝖗𝖑𝖊𝖝𝖆.png"
 );
