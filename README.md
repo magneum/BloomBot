@@ -81,7 +81,7 @@
 
 # 🛸[𝐃𝐞𝐩𝐥𝐨𝐲𝐦𝐞𝐧𝐭]
 
-🛸[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Krakinz/ᴄᴏʀʟᴇxᴀ.git/tree/KrakinzLab)
+🛸[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Krakinz/Corlexa.git/tree/KrakinzLab)
 
 - ꜰᴏʀᴋ ᴀɴᴅ ꜱᴛᴀʀ ᴛʜᴇ ʀᴇᴘᴏ ᴇʟꜱᴇ ʙᴏᴛ ᴡᴏɴ'ᴛ ʙᴏᴏᴛ
 - ᴄʜᴀɴɢᴇ [app.bot](app.bot) ᴛᴏ app.json
