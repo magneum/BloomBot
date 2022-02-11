@@ -5,14 +5,19 @@
 `|⬡════════════════════════════════════════════|                            |═══════════════════════════════════════════⬡|`;
 (async () => {
 try {
-const ᴍɪᴢᴜᴋɪɢɪᴛ = require(`simple-git`)();
-await ᴍɪᴢᴜᴋɪɢɪᴛ.fetch();
-var ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ = await ᴍɪᴢᴜᴋɪɢɪᴛ.log([`KrakinzLab..origin/KrakinzLab`]);
+const 𝖗𝖊𝖖𝖈𝖔𝖗𝖑𝖊𝖝𝖆𝖌𝖎𝖙 = require(`simple-git`)();
+await 𝖗𝖊𝖖𝖈𝖔𝖗𝖑𝖊𝖝𝖆𝖌𝖎𝖙.fetch();
+var ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ = await 𝖗𝖊𝖖𝖈𝖔𝖗𝖑𝖊𝖝𝖆𝖌𝖎𝖙.log([
+`KrakinzLab..origin/KrakinzLab`,
+]);
 if (ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total != 0) {
-require(`child_process`).exec(`git config pull.rebase false`);
+var rebase = require(`child_process`).exec(
+`git config pull.rebase false`
+);
+rebase.stdout.pipe(process.stdout);
 require(`simple-git`)()
 .exec(async () => {
-console.log(`💡 𝐈𝐧𝐟𝐨⬰ Updating ᴄᴏʀʟᴇxᴀ System With Latest Patch...`);
+console.log(`💡 𝐈𝐧𝐟𝐨⬰ Updating Corlexa System With Latest Patch...`);
 })
 .pull(async (Error, update) => {
 if (Error) {

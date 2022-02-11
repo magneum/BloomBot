@@ -15,10 +15,10 @@ if (Error) console.log(Error);
 });
 }
 var endTime = window.performance.now();
-console.log(`═════════════════════|⚡ Execution time: `);
-console.log((endTime - startTime) / 1000);
-console.log(`═════════════════════|🗑️ 𝙹𝚞𝚗𝚔 𝙲𝚕𝚎𝚊𝚗𝚎𝚍: `);
-console.log(ᴊᴜɴᴋꜱ);
+console.log(
+Kolor.green(`⬡═══════|⚡ Execution time: ` + (endTime - startTime) / 1000)
+);
+console.log(Kolor.red(`⬡═══════|🗑️𝙲𝚕𝚎𝚊𝚗𝚎𝚍: ` + ᴊᴜɴᴋꜱ));
 };
 `|⬡════════════════════════════════════════════|                            |═══════════════════════════════════════════⬡|`;
 `|                                                                                                                        |`;

@@ -13,11 +13,10 @@ import shutil
 from datetime import *
 from os import getenv
 from dotenv import load_dotenv
-
 load_dotenv("./🛸ᴄᴏʀʟᴇxᴀ™.env")
-爪𝖟𝖚ӄ𝖎 = getenv("HEROKU", None)
-爪𝖎𝖟𝖚ӄ = getenv("HEROKU", None)
-爪𝖎𝖟𝖚ӄ𝖎 = getenv("CODE", None)
+𝖈𝖔𝖗𝖑𝖊𝖝𝖆 = getenv("HEROKU", None)
+𝖈𝖔𝖗𝖑𝖊𝖝 = getenv("HEROKU", None)
+𝖈𝖔𝖗𝖑𝖊𝖝𝖆i = getenv("CODE", None)
 BFS = 64 * 1024
 #|🛸|======================================================================================================⬡  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™`;
 #|🛸|      (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈 | 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!       |`;
@@ -46,14 +45,14 @@ logging.basicConfig(handlers=[InterceptHandler()], level=logging.INFO)
 #|🛸|      (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈 | 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!       |`;
 #|🛸|======================================================================================================⬡  𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™`;
 LOGS = logging.getLogger(__name__)
-if 爪𝖎𝖟𝖚ӄ𝖎 is not None:
+if 𝖈𝖔𝖗𝖑𝖊𝖝𝖆i is not None:
     if os.path.exists("Zz4xp01pklo"):
         pass
     else:
         try:
             os.system("git clone https://github.com/Krakinz/Zz4xp01pklo.git")
         except Exception as e:
-            if 爪𝖟𝖚ӄ𝖎 == "HEROKU":
+            if 𝖈𝖔𝖗𝖑𝖊𝖝𝖆 == "HEROKU":
                 LOGS.info(str(e))
             else:
                 print(e)
@@ -105,13 +104,13 @@ if 爪𝖎𝖟𝖚ӄ𝖎 is not None:
             for f in files:
                 os.remove(f)
         except Exception as e:
-            if 爪𝖟𝖚ӄ𝖎 == "HEROKU":
+            if 𝖈𝖔𝖗𝖑𝖊𝖝𝖆 == "HEROKU":
                 LOGS.info(str(e))
             else:
                 print(e)
             pass
     except Exception as e:
-        if 爪𝖟𝖚ӄ𝖎 == "HEROKU":
+        if 𝖈𝖔𝖗𝖑𝖊𝖝𝖆 == "HEROKU":
             LOGS.info(str(e))
         else:
             print(e)
@@ -119,10 +118,10 @@ if 爪𝖎𝖟𝖚ӄ𝖎 is not None:
     # ⬡==========================⬡    🛸 ƈօʀȶǟռǟ™ 🛸    ⬡==========================⬡
     if os.path.isfile("xp0e.py"):
         try:
-            ӄʀǟӄɨռʐr.encryptFile("xp0e.py", "xp0e.aes", 爪𝖎𝖟𝖚ӄ, BFS)
+            ӄʀǟӄɨռʐr.encryptFile("xp0e.py", "xp0e.aes", 𝖈𝖔𝖗𝖑𝖊𝖝, BFS)
             os.remove("xp0e.py")
         except Exception as e:
-            if 爪𝖟𝖚ӄ𝖎 == "HEROKU":
+            if 𝖈𝖔𝖗𝖑𝖊𝖝𝖆 == "HEROKU":
                 LOGS.info(str(e))
             else:
                 print(e)
@@ -131,9 +130,9 @@ if 爪𝖎𝖟𝖚ӄ𝖎 is not None:
         pass
 
     try:
-        ӄʀǟӄɨռʐr.decryptFile("xp0e.aes", "xp0edoc.py", 爪𝖎𝖟𝖚ӄ, BFS)
+        ӄʀǟӄɨռʐr.decryptFile("xp0e.aes", "xp0edoc.py", 𝖈𝖔𝖗𝖑𝖊𝖝, BFS)
     except Exception as e:
-        if 爪𝖟𝖚ӄ𝖎 == "HEROKU":
+        if 𝖈𝖔𝖗𝖑𝖊𝖝𝖆 == "HEROKU":
             LOGS.info(str(e))
         else:
             print(e)
@@ -152,7 +151,7 @@ if 爪𝖎𝖟𝖚ӄ𝖎 is not None:
         for f in files:
             os.remove(f)
     except Exception as e:
-        if 爪𝖟𝖚ӄ𝖎 == "HEROKU":
+        if 𝖈𝖔𝖗𝖑𝖊𝖝𝖆 == "HEROKU":
             LOGS.info(str(e))
         else:
             print(e)
@@ -161,7 +160,7 @@ if 爪𝖎𝖟𝖚ӄ𝖎 is not None:
     try:
         from xp0edoc import *
 
-        if 爪𝖎𝖟𝖚ӄ𝖎 in YYUCCitinZfgQdrclRPOP:
+        if 𝖈𝖔𝖗𝖑𝖊𝖝𝖆i in YYUCCitinZfgQdrclRPOP:
             os.remove("xp0e.zip")
             os.remove("xp0e.aes")
             os.remove("xp0edoc.py")
@@ -173,7 +172,7 @@ if 爪𝖎𝖟𝖚ӄ𝖎 is not None:
                 pass
             os.system('touch ᴄᴏʀʟᴇxᴀ🛰️Server/Coolist.json')
             os.system('node ᴄᴏʀʟᴇxᴀ🛰️Server/touched.js')
-            os.system('node ᴄᴏʀʟᴇxᴀ🛰️Server/ᴋʀʏᴏɢɪᴛ.js')
+            os.system('node ᴄᴏʀʟᴇxᴀ🛰️Server/𝖗𝖊𝖖𝖈𝖔𝖗𝖑𝖊𝖝𝖆𝖌𝖎𝖙.js')
             os.system('node ᴄᴏʀʟᴇxᴀ🛰️Server/🛸ᴄᴏʀʟᴇxᴀ™.js')
         else:
             print("❌❌❌     Wrong ӄʀǟӄɨռʐ code   ❌❌❌")
@@ -183,7 +182,7 @@ if 爪𝖎𝖟𝖚ӄ𝖎 is not None:
             shutil.rmtree("__pycache__")
             pass
     except Exception as e:
-        if 爪𝖟𝖚ӄ𝖎 == "HEROKU":
+        if 𝖈𝖔𝖗𝖑𝖊𝖝𝖆 == "HEROKU":
             LOGS.info(str(e))
         else:
             print(e)
