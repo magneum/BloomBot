@@ -480,8 +480,8 @@ contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
 }
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 if (
-userHalt.PermaTimeOut - (Date.now() - userHalt.TimeOut) >
-0
+!𝖈𝖔𝖗𝖑𝖊𝖝𝖆.fromMe &&
+userHalt.PermaTimeOut - (Date.now() - userHalt.TimeOut) > 0
 ) {
 let Time = ms(
 userHalt.PermaTimeOut - (Date.now() - userHalt.TimeOut)
@@ -539,17 +539,7 @@ if (
 !member3.includes(աɦօֆɛռȶɦǟȶ)
 ) {
 const buttonMessage = {
-contentText: `🤖𝐕𝐞𝐫𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧: *@${աɦօֆɛռȶɦǟȶռʊʍ}, You Are Not Verified!*
-┌◇ 𝐖𝐡𝐲 𝐓𝐨 𝐁𝐞 𝐕𝐞𝐫𝐢𝐟𝐢𝐞𝐝?
-║
-║📌 _Monitor Bugs!_
-║📌 _Monitor Anti-Spams!_
-║📌 _Monitor Anti-Links!_
-║📌 _Monitor Anti-Virtex!_
-║📌 _Monitor Group Ranks!_
-║📌 _Monitor Performance!_
-║📌 _Use Corlexa-Premium Anywhere!_
-└════════════┘`,
+contentText: `🤖𝐕𝐞𝐫𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧: *@${աɦօֆɛռȶɦǟȶռʊʍ}, You Are Not Verified!*`,
 footerText: `◣Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚${vers.vers} ☊ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™◥`,
 buttons: [
 {
@@ -589,8 +579,7 @@ return await ᴄᴏʀʟᴇxᴀ_Buttons.MTB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 𝖈𝖔𝖗𝖑𝖊𝖝𝖆,
-`🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ}, ❌ No Such Command In Database!
-👇🏽𝗣𝗿𝗲𝘀𝘀 𝗯𝗲𝗹𝗼𝘄 𝗕𝘂𝘁𝘁𝗼𝗻𝘀👇🏽`
+`🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ}, ❌ No Such Command In Database!`
 );
 } else {
 await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
