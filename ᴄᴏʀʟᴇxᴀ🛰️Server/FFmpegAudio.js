@@ -29,65 +29,58 @@ var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ
 var FFmpegFile = `./ᴄᴏʀʟᴇxᴀ☕ꜱʜᴏᴘ/${chat.key.id}.mp3`;
 const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-YouTube_Music(Found.url).then(async (res) => {
+YouTube_Music(Found.url).then((res) => {
 const { dl_link, thumb, title, filesizeF, filesize } = res;
-// TinyURL.shorten(dl_link).then(async function(res) {
-// }, async function (Error) {
-// console.log(`⬡═══════════════════| 🐞𝐄𝐫𝐫𝐨𝐫: ` + Error);
-// userBadge.Limits = userBadge.Limits + 1;
-// await userBadge
-// .save()
-// .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
-// return ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat);
-// })
-`|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-const TUrl = await Tinyurl(dl_link);
+TinyURL.shorten(dl_link).then(
+async function (TUrl) {
 const downloader = await new Downloader({
 url: TUrl,
 directory: `ᴄᴏʀʟᴇxᴀ☕ꜱʜᴏᴘ`,
 fileName: `${chat.key.id}.mp3`,
 cloneFiles: false,
 });
+`|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 try {
 await downloader.download().then(async () => {
+console.log(`⬡═════════| 🥂𝐍𝐨𝐝𝐞 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐅𝐢𝐧𝐢𝐬𝐞𝐝🥂 |════════⬡`);
 return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .sendMessage(
 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
 fs.readFileSync(FFmpegFile),
 MessageType.audio,
-{
-quoted: chat,
-mimetype: "audio/mp4",
-}
+{ quoted: chat, mimetype: "audio/mp4" }
 )
 .then(cleanRF.cleanRF(FFmpegFile))
 .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
 });
-console.log(`⬡════════════| 🥂𝐍𝐨𝐝𝐞 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐅𝐢𝐧𝐢𝐬𝐞𝐝🥂 |════════════⬡`);
 } catch (Error) {
-const downloadFFmpegFile = ytdl(Found.url, {
-filter: "audioonly",
-});
+`|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
+const downloadFFmpegFile = ytdl(Found.url, { filter: "audioonly" });
 const writeStream = fs.createWriteStream(FFmpegFile);
 downloadFFmpegFile.pipe(writeStream);
 downloadFFmpegFile.on("end", async () => {
-console.log(
-`⬡════════════| ⭐𝐘𝐓𝐃𝐋 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐅𝐢𝐧𝐢𝐬𝐞𝐝⭐ |════════════⬡`
-);
+console.log(`⬡════════| ⭐𝐘𝐓𝐃𝐋 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐅𝐢𝐧𝐢𝐬𝐞𝐝⭐ |════════⬡`);
 return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .sendMessage(
 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
 fs.readFileSync(FFmpegFile),
 MessageType.audio,
-{
-quoted: chat,
-mimetype: "audio/mp4",
-}
+{ quoted: chat, mimetype: "audio/mp4" }
 )
 .then(cleanRF.cleanRF(FFmpegFile))
 .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
 });
 }
+},
+async function (Error) {
+console.log(`⬡═══════════════════| 🐞𝐄𝐫𝐫𝐨𝐫: ` + Error);
+userBadge.Limits = userBadge.Limits + 1;
+await userBadge
+.save()
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
+return ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat);
+}
+);
 });
 };
 `|⬡════════════════════════════════════════════|                            |═══════════════════════════════════════════⬡|`;
