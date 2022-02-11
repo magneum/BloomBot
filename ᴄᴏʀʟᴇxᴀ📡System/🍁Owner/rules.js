@@ -37,13 +37,6 @@ chat,
 𝖈𝖔𝖗𝖑𝖊𝖝𝖆,
 `🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ},
 
-╔════◇*❓How Do I add ᴄᴏʀʟᴇxᴀ In My Group?*
-║
-║ -Send Your Group Link In My Private!
-║ -Your Group Should Have 10 members atleast.
-║ -Turn Disappearing Message Off in your Gc.
-╚════════════╝
-
 ╔◇║🏮𝐂𝐨𝐫𝐥𝐞𝐱𝐚 𝐑𝐮𝐥𝐞𝐬
 ║
 ║🔖 _Do not call bot, if you do then you'll get blocked by bot._
@@ -52,6 +45,15 @@ chat,
 ║🔖 _If you see any bug/error in bot then report it to devs in the above group chats._
 ║🔖 _If you want this bot in your group then contact devs._
 ║🔖 _Enjoy the bot and have fun._
+╚════════════╝
+
+╔════◇*❓How Do I add Corlexa In My Group?*
+║
+║ -Send Your Group Link In My Private!
+║ -Your Group Should Have 10 members atleast.
+║ -Turn Disappearing Message Off in your Gc.
+║ -If Any Member OF Your Group Kicks The Bot For Dumb/No Reason, Corlexa Support Team Will PermaLock Your Group.
+║ -Every Member Should Be Verified First Before They Can Use Corlexa.
 ╚════════════╝`,
 "./ᴄᴏʀʟᴇxᴀ☣️Reactor/𝖈𝖔𝖗𝖑𝖊𝖝𝖆.png"
 );
