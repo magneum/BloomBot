@@ -9,6 +9,7 @@ const ᴄᴏʀʟᴇxᴀ_Buttons = require(`./ᴄᴏʀʟᴇxᴀ_Buttons`);
 const { YouTube_Music } = require(`./youmaker`);
 const ffmpeg = require("fluent-ffmpeg");
 const vers = require(`../package.json`);
+const Tinyurl = require("tinyurl-api");
 const cleanRF = require(`./cleanRF`);
 const TinyURL = require("tinyurl");
 const ytdl = require("ytdl-core");
@@ -19,7 +20,7 @@ const fs = require(`fs`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-exports.FFmpegSpot = async (ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat, SpotFound, userBadge) => {
+exports.FFmpegSpot = async (ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat, Found, userBadge) => {
 var աɦօֆɛռȶɦǟȶ = 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.sender;
 const defaultnm = 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.commandName;
 var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ
@@ -28,51 +29,47 @@ var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ
 var FFmpegFile = `./ᴄᴏʀʟᴇxᴀ☕ꜱʜᴏᴘ/${chat.key.id}.mp3`;
 const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-YouTube_Music(SpotFound).then(async (res) => {
-try {
+YouTube_Music(Found.url).then((res) => {
 const { dl_link, thumb, title, filesizeF, filesize } = res;
 TinyURL.shorten(dl_link).then(
-async function (DirectFile) {
+async function (TUrl) {
 const downloader = await new Downloader({
-url: DirectFile,
+url: TUrl,
 directory: `ᴄᴏʀʟᴇxᴀ☕ꜱʜᴏᴘ`,
 fileName: `${chat.key.id}.mp3`,
 cloneFiles: false,
 });
-try {
-await downloader.download();
-console.log(
-`⬡═══════════════════| 🥂𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐅𝐢𝐧𝐢𝐬𝐞𝐝🥂 |═══════════════════⬡`
-);
-} catch (Error) {
-console.log(`⬡═══════════════════| 🐞𝐄𝐫𝐫𝐨𝐫: ` + Error);
-userBadge.Limits = userBadge.Limits + 1;
-await userBadge
-.save()
-.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
-return ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat);
-}
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 try {
-await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
+await downloader.download().then(async () => {
+console.log(`⬡═════════| 🥂𝐍𝐨𝐝𝐞 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐅𝐢𝐧𝐢𝐬𝐞𝐝🥂 |════════⬡`);
+return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .sendMessage(
 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
 fs.readFileSync(FFmpegFile),
 MessageType.audio,
-{
-quoted: chat,
-mimetype: "audio/mp4",
-}
+{ quoted: chat, mimetype: "audio/mp4" }
 )
+.then(cleanRF.cleanRF(FFmpegFile))
 .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
-return await cleanRF.cleanRF(FFmpegFile);
+});
 } catch (Error) {
-console.log(`⬡═══════════════════| 🐞𝐄𝐫𝐫𝐨𝐫: ` + Error);
-userBadge.Limits = userBadge.Limits + 1;
-await userBadge
-.save()
+`|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
+const downloadFFmpegFile = ytdl(Found.url, { filter: "audioonly" });
+const writeStream = fs.createWriteStream(FFmpegFile);
+downloadFFmpegFile.pipe(writeStream);
+downloadFFmpegFile.on("end", async () => {
+console.log(`⬡════════| ⭐𝐘𝐓𝐃𝐋 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐅𝐢𝐧𝐢𝐬𝐞𝐝⭐ |════════⬡`);
+return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
+.sendMessage(
+𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
+fs.readFileSync(FFmpegFile),
+MessageType.audio,
+{ quoted: chat, mimetype: "audio/mp4" }
+)
+.then(cleanRF.cleanRF(FFmpegFile))
 .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
-return ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat);
+});
 }
 },
 async function (Error) {
@@ -84,31 +81,6 @@ await userBadge
 return ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat);
 }
 );
-`|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-} catch (Error) {
-const downloadFFmpegFile = ytdl(SpotFound, {
-filter: "audioonly",
-});
-const writeStream = fs.createWriteStream(FFmpegFile);
-downloadFFmpegFile.pipe(writeStream);
-downloadFFmpegFile.on("end", async () => {
-console.log(
-`⬡═══════════════════| 🥂𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐅𝐢𝐧𝐢𝐬𝐞𝐝🥂 |═══════════════════⬡`
-);
-await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
-.sendMessage(
-𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
-fs.readFileSync(FFmpegFile),
-MessageType.audio,
-{
-quoted: chat,
-mimetype: "audio/mp4",
-}
-)
-.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
-return await cleanRF.cleanRF(FFmpegFile);
-});
-}
 });
 };
 `|⬡════════════════════════════════════════════|                            |═══════════════════════════════════════════⬡|`;
