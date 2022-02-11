@@ -56,6 +56,10 @@
 "description": "Your Localized Postsqldb API Link!",
 "required": true
 },
+"CORLEXAYT": {
+"description": "Your Localized YouTube Api v3!",
+"required": true
+},
 "CORLEXAMDB": {
 "description": "Your Localized Mongoosedb server connect API Link!",
 "required": true
