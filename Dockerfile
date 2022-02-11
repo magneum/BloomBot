@@ -14,10 +14,10 @@ RUN apt-get install bpm-tools -y
 RUN apt-get install opus-tools -y  
 RUN apt-get install python3-pip -y 
 RUN apt-get install python-is-python3
-RUN wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/local/bin/youtube-dl
-RUN curl https://cli-assets.heroku.com/install.sh | sh
-RUN chmod a+rx /usr/local/bin/youtube-dl
-RUN heroku plugins:install heroku-builds
+# RUN wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/local/bin/youtube-dl
+# RUN curl https://cli-assets.heroku.com/install.sh | sh
+# RUN chmod a+rx /usr/local/bin/youtube-dl
+# RUN heroku plugins:install heroku-builds
 RUN apt-get install npm -y 
 RUN npm install --global n
 RUN n install lts
