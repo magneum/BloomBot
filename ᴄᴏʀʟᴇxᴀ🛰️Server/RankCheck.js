@@ -189,7 +189,7 @@ try{
 .substring(2, աɦօֆɛռȶɦǟȶռʊʍ.length - 6)
 .replace(/[+ ]/g, "");
 } catch {
-աɦօֆɛ = Math.floor(1000 + Math.random() * 9000);
+աɦօֆɛ = Math.floor(5000 + Math.random() * 70000);
 }
 var expFile = `./ᴄᴏʀʟᴇxᴀ☕ꜱʜᴏᴘ/${Date.now()}r${chat.key.id}.png`;
 const rank = new canvacord.Rank()

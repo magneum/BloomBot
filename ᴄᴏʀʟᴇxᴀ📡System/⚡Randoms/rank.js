@@ -117,7 +117,7 @@ try{
 .substring(2, աɦօֆɛռȶɦǟȶռʊʍ.length - 6)
 .replace(/[+ ]/g, "");
 } catch {
-աɦօֆɛ = Math.floor(1000 + Math.random() * 9000);
+աɦօֆɛ = Math.floor(5000 + Math.random() * 70000);
 }
 try {
 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.getProfilePicture(𝖈𝖔𝖗𝖑𝖊𝖝𝖆.sender);
