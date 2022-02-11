@@ -462,21 +462,14 @@ if (!userHalt) {
 var newHalt = new Halt({
 ID: 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.sender,
 TimeOut: Date.now(),
-PermaTimeOut: 15000,
+PermaTimeOut: 8000,
 });
 await newHalt
 .save()
 .catch((Error) =>
 ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat)
 );
-return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
-𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
-`🚔 *Auto User Monitoring Has Started For @${աɦօֆɛռȶɦǟȶռʊʍ} !*\n_💡Try Again in 15seconds!_`,
-MessageType.text,
-{
-contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
-}
-);
+return;
 }
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 if (
@@ -488,7 +481,7 @@ userHalt.PermaTimeOut - (Date.now() - userHalt.TimeOut)
 );
 return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
-`✘ @${աɦօֆɛռȶɦǟȶռʊʍ}, *Wait For [${Time.seconds}/15]seconds!*`,
+`✘ @${աɦօֆɛռȶɦǟȶռʊʍ}, *Wait For [${Time.seconds}/8]seconds!*`,
 MessageType.text,
 {
 contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
