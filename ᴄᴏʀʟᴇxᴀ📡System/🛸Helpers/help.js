@@ -160,21 +160,6 @@ module.exports = {
 ║📥•  ${ᴋᴇɪ}instagram
 ╚══════════༻꧂
 
-╔◇꧁༺ 𝐑𝐚𝐝𝐢𝐨 ༻꧂
-║
-║📻•  ${ᴋᴇɪ}redm
-║📻•  ${ᴋᴇɪ}rpop
-║📻•  ${ᴋᴇɪ}rlofi
-║📻•  ${ᴋᴇɪ}rjazz
-║📻•  ${ᴋᴇɪ}rblues
-║📻•  ${ᴋᴇɪ}rtechno
-║📻•  ${ᴋᴇɪ}rmetal 
-║📻•  ${ᴋᴇɪ}rhiphop
-║📻•  ${ᴋᴇɪ}rdubstep
-║📻•  ${ᴋᴇɪ}rchilledcow
-║📻•  ${ᴋᴇɪ}rsuicidesheep
-╚══════════༻꧂
-
 ╔◇꧁༺ 𝐅𝐅𝐦𝐩𝐞𝐠 ༻꧂
 ║
 ║🗂️•  ${ᴋᴇɪ}tomp3
