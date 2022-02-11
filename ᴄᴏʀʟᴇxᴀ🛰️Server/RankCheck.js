@@ -200,7 +200,7 @@ const rank = new canvacord.Rank()
 .setCurrentXP(user.xp)
 .setUsername("Ranked Up!")
 .setBackground("IMAGE", Img)
-.setDiscriminator(աɦօֆɛ)
+.setDiscriminator(`${աɦօֆɛ}`)
 .setProgressBar(color, "COLOR");
 rank.build().then(async (data) => {
 fs.writeFile(expFile, data, async (Error) => {
