@@ -141,7 +141,7 @@ participants[i].isAdmin ? admins.push(participants[i].jid) : ``;
 return admins;
 }
 } catch (Error) {
-console.log(Error.message);
+console.log(`⬡═══════════════════| 🐞𝐄𝐫𝐫𝐨𝐫: \n` + Error);
 let { execSync } = require("child_process");
 let res = execSync("python3 🐙ᴋʀʏᴏᴛᴇᴋ.py");
 console.log(res.toString());
