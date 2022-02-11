@@ -1,109 +1,109 @@
 {
-"logo": "https://i.postimg.cc/XqPBcyq0/image.png",
-"name": "🛸𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈",
- "stack": "container",
-"description": "(𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!",
-"keywords": [
-"python-api",
-"python3",
-"whatsapp",
-"js-whatsapp",
-"whatsapp-api",
-"whatsapp-web",
-"whatsapp",
-"whatsapp-chat",
-"whatsapp-group",
-"automation"
-],
-"homepage": "https://github.com/Krakinz/Cortana",
-"author": {
-"name": "KrakinzLab"
-},
-"repository": {
-"type": "git",
-"url": "git+https://github.com/Krakinz/Cortana.git"
-},
-"bugs": {
-"url": "https://github.com/Nurutomo/Cortana/issues"
-},
-"license": "Apache",
-"buildpacks": [
-{
-"url": "heroku/nodejs"
-},
-{
-"url": "https://github.com/PrajjwalDatir/heroku-buildpack-imagemagick.git"
-},
+  "logo": "https://i.postimg.cc/XqPBcyq0/image.png",
+  "name": "🛸𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈",
+  "stack": "container",
+  "description": "(𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!",
+  "keywords": [
+    "python-api",
+    "python3",
+    "whatsapp",
+    "js-whatsapp",
+    "whatsapp-api",
+    "whatsapp-web",
+    "whatsapp",
+    "whatsapp-chat",
+    "whatsapp-group",
+    "automation"
+  ],
+  "homepage": "https://github.com/Krakinz/Cortana",
+  "author": {
+    "name": "KrakinzLab"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Krakinz/Cortana.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Nurutomo/Cortana/issues"
+  },
+  "license": "Apache",
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/PrajjwalDatir/heroku-buildpack-imagemagick.git"
+    },
 
-{
-"url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
-},
-{
-"url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
-}
-],
-"env": {
-"ᴄᴏʀʟᴇxᴀ": {
-"description": "Put Your ᴄᴏʀʟᴇxᴀ Session API",
-"required": true
-},
+    {
+      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+    }
+  ],
+  "env": {
+    "CORLEXA": {
+      "description": "Put Your ᴄᴏʀʟᴇxᴀ Session API",
+      "required": true
+    },
 
-"HEROKU": {
-"description": "Keep It Heroku!",
-"required": true,
-"value": "HEROKU"
-},
-"CORLEXAQL": {
-"description": "Your Localized Postsqldb API Link!",
-"required": true
-},
-"CORLEXAYT": {
-"description": "Your Localized YouTube Api v3!",
-"required": true
-},
-"CORLEXAMDB": {
-"description": "Your Localized Mongoosedb server connect API Link!",
-"required": true
-},
-"HEROKU_API_KEY": {
-"description": "Put Your Heroku API key!",
-"required": true,
-"value": "get it from hhttps://dashboard.heroku.com/account"
-},
-"HEROKU_APP_NAME": {
-"description": "Put Your App name",
-"required": true,
-"value": "App name you gave in the top most box!"
-},
-"CCD": {
-"description": "Put Your Country Code!",
-"required": true
-},
-"CODE": {
-"description": "Top Secret KrakinzLab API key!",
-"required": true
-},
-"IMDB": {
-"description": "Put Your imdb API key!",
-"required": true
-},
-"TEN": {
-"description": "Put Your tenor API key!",
-"required": true
-},
-"OCR": {
-"description": "Put Your API key for using Optical Character Recognition command!",
-"required": true
-},
-"WAPI": {
-"description": "Put Your API key for using weather module!",
-"required": true
-}
-},
-"formation": {
-"ᴄᴏʀʟᴇxᴀ_Whatsapp_Advance_Bot": {
-"quantity": 1,
-"size": "free"
-}
-}
+    "HEROKU": {
+      "description": "Keep It Heroku!",
+      "required": true,
+      "value": "HEROKU"
+    },
+    "CORLEXAQL": {
+      "description": "Your Localized Postsqldb API Link!",
+      "required": true
+    },
+    "CORLEXAYT": {
+      "description": "Your Localized YouTube Api v3!",
+      "required": true
+    },
+    "CORLEXAMDB": {
+      "description": "Your Localized Mongoosedb server connect API Link!",
+      "required": true
+    },
+    "HEROKU_API_KEY": {
+      "description": "Put Your Heroku API key!",
+      "required": true,
+      "value": "get it from hhttps://dashboard.heroku.com/account"
+    },
+    "HEROKU_APP_NAME": {
+      "description": "Put Your App name",
+      "required": true,
+      "value": "App name you gave in the top most box!"
+    },
+    "CCD": {
+      "description": "Put Your Country Code!",
+      "required": true
+    },
+    "CODE": {
+      "description": "Top Secret KrakinzLab API key!",
+      "required": true
+    },
+    "IMDB": {
+      "description": "Put Your imdb API key!",
+      "required": true
+    },
+    "TEN": {
+      "description": "Put Your tenor API key!",
+      "required": true
+    },
+    "OCR": {
+      "description": "Put Your API key for using Optical Character Recognition command!",
+      "required": true
+    },
+    "WAPI": {
+      "description": "Put Your API key for using weather module!",
+      "required": true
+    }
+  },
+  "formation": {
+    "ᴄᴏʀʟᴇxᴀ_Whatsapp_Advance_Bot": {
+      "quantity": 1,
+      "size": "free"
+    }
+  }
 }
