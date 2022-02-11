@@ -13,7 +13,7 @@ const { fromBuffer } = require("file-type");
 const ytIdRegex =
 /(?:http(?:s|):\/\/|)(?:(?:www\.|)youtube(?:\-nocookie|)\.com\/(?:watch\?.*(?:|\&)v=|embed\/|v\/)|youtu\.be\/)([-_0-9A-Za-z]{11})/;
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-async function post(url, formdata) {
+function post(url, formdata) {
 console.log(
 Object.keys(formdata)
 .map((key) => `${key}=${encodeURIComponent(formdata[key])}`)
@@ -32,7 +32,7 @@ body: Object.keys(formdata)
 });
 }
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-async function YouTube_Music(url) {
+function YouTube_Music(url) {
 return new Promise((resolve, reject) => {
 if (ytIdRegex.test(url)) {
 let ytId = ytIdRegex.exec(url);
@@ -80,7 +80,7 @@ filesize: KB,
 });
 }
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-async function Instagram_Dwnloader(url_media) {
+function Instagram_Dwnloader(url_media) {
 return new Promise((resolve, reject) => {
 url_media = url_media.replace("reel", "p");
 var url = "https://igram.io/i/";
@@ -131,7 +131,7 @@ reject(err);
 });
 }
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-async function YouTube_Video(url) {
+function YouTube_Video(url) {
 return new Promise((resolve, reject) => {
 if (ytIdRegex.test(url)) {
 let ytId = ytIdRegex.exec(url);
@@ -176,7 +176,7 @@ filesize: KB,
 });
 }
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-async function upload(media) {
+function upload(media) {
 return new Promise(async (resolve, reject) => {
 try {
 let { ext } = await fromBuffer(media);
@@ -199,7 +199,7 @@ return console.log(e);
 });
 }
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-async function formatDate(n, locale = "id") {
+function formatDate(n, locale = "id") {
 let d = new Date(n);
 return d.toLocaleDateString(locale, {
 weekday: "long",
