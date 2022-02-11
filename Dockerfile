@@ -1,7 +1,8 @@
-FROM python:latest
-ENV KRAKINZ_LAB "/venv"
-RUN python -m venv $KRAKINZ_LAB
-ENV PATH "$KRAKINZ_LAB/bin:$PATH"
+# FROM python:latest
+# ENV KRAKINZ_LAB "/venv"
+# RUN python -m venv $KRAKINZ_LAB
+# ENV PATH "$KRAKINZ_LAB/bin:$PATH"
+FROM kalilinux/kali-bleeding-edge
 RUN apt-get update 
 RUN apt-get upgrade -y 
 RUN apt-get install git -y 
