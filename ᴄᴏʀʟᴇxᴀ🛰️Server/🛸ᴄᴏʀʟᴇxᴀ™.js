@@ -482,7 +482,7 @@ await newHalt
 );
 return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
-`🚔 *Auto User Monitoring Has Started For @${աɦօֆɛռȶɦǟȶռʊʍ}!*\n_💡Try Again!_`,
+`🚔 *Auto User Monitoring Has Started For @${աɦօֆɛռȶɦǟȶռʊʍ} !*\n_💡Try Again!_`,
 MessageType.text,
 {
 contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
@@ -499,7 +499,7 @@ userHalt.PermaTimeOut - (Date.now() - userHalt.TimeOut)
 );
 return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
-`☣️@${աɦօֆɛռȶɦǟȶռʊʍ}, _Wait For ${Time.seconds}s!_`,
+`✘ @${աɦօֆɛռȶɦǟȶռʊʍ}, _Wait For ${Time.seconds}s!_`,
 MessageType.text,
 {
 contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
