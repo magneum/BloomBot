@@ -99,7 +99,6 @@ module.exports = {
 ║📥  _${ᴋᴇɪ}downloadmenu_
 ║🔰  _${ᴋᴇɪ}groupmenu_
 ║🦄  _${ᴋᴇɪ}randommenu_
-║📻  _${ᴋᴇɪ}radiomenu_
 ║🔎  _${ᴋᴇɪ}searchmenu_
 ║🗂️  _${ᴋᴇɪ}ffmpegmenu_
 ║🍰  _${ᴋᴇɪ}filtersmenu_
