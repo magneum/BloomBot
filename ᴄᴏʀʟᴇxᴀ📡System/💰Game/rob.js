@@ -90,8 +90,45 @@ chat,
 );
 }
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
+const Halt = require(`../../ᴄᴏʀʟᴇxᴀ🍃Goose/halt`);
+const ms = require(`parse-ms`);
+Halt.findOne(
+{
+ID: 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.sender,
+},
+async (Error, userHalt) => {
+if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat);
+if (!userHalt) {
+var newHalt = new Halt({
+ID: 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.sender,
+TimeOut: Date.now(),
+PermaTimeOut: 15000,
+});
+await newHalt
+.save()
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
+}
+if (userHalt.PermaTimeOut - (Date.now() - userHalt.TimeOut) > 0) {
+let Time = ms(
+userHalt.PermaTimeOut - (Date.now() - userHalt.TimeOut)
+);
+return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
+𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
+`☣️@${աɦօֆɛռȶɦǟȶռʊʍ}, _Wait For ${Time.seconds}s!_`,
+MessageType.text,
+{
+contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
+}
+);
+}
+userHalt.TimeOut = Date.now();
+await userHalt
+.save()
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
+`|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 if (𝖈𝖔𝖗𝖑𝖊𝖝𝖆.isReply) {
-var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
+var Receiver =
+chat.message.extendedTextMessage.contextInfo.participant;
 var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 if (Receiver === աɦօֆɛռȶɦǟȶ) {
@@ -118,7 +155,8 @@ Economy.findOne(
 ID: Receiver,
 },
 async (Error, vEconomy) => {
-if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat);
+if (Error)
+return ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat);
 if (!vEconomy) {
 var newUser = new Economy({
 ID: Receiver,
@@ -233,7 +271,12 @@ ID: Receiver,
 },
 async (Error, victim) => {
 if (Error)
-return ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat);
+return ꜰᴜᴄᴋ.catch(
+Error,
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+𝖈𝖔𝖗𝖑𝖊𝖝𝖆,
+chat
+);
 if (!victim) {
 var newUser = new Robbery({
 ID: Receiver,
@@ -337,7 +380,8 @@ chat,
 if (victim.sword > 0) {
 victim.sword = victim.sword - 1;
 if (cEconomy.money < 3000) {
-vEconomy.money = vEconomy.money + cEconomy.money;
+vEconomy.money =
+vEconomy.money + cEconomy.money;
 cEconomy.money = 0;
 } else {
 vEconomy.money = vEconomy.money + MoneySword;
@@ -385,7 +429,8 @@ chat,
 } else if (victim.laptop > 0) {
 victim.laptop = victim.laptop - 1;
 if (cEconomy.money < 4000) {
-vEconomy.money = vEconomy.money + cEconomy.money;
+vEconomy.money =
+vEconomy.money + cEconomy.money;
 cEconomy.money = 0;
 } else {
 vEconomy.money = vEconomy.money + MoneyLaptop;
@@ -433,7 +478,8 @@ chat,
 } else if (victim.charm > 0) {
 victim.charm = victim.charm - 1;
 if (cEconomy.money < 6000) {
-vEconomy.money = vEconomy.money + cEconomy.money;
+vEconomy.money =
+vEconomy.money + cEconomy.money;
 cEconomy.money = 0;
 } else {
 vEconomy.money = vEconomy.money + MoneyCharm;
@@ -482,17 +528,28 @@ chat,
 let Note;
 if (vEconomy.money < 1000) {
 vEconomy.money = 0;
-cEconomy.money = cEconomy.money + vEconomy.money;
+cEconomy.money =
+cEconomy.money + vEconomy.money;
 culprit.CurrentRobberyTime = Date.now();
 await vEconomy
 .save()
 .catch((Error) =>
-ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat)
+ꜰᴜᴄᴋ.catch(
+Error,
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+𝖈𝖔𝖗𝖑𝖊𝖝𝖆,
+chat
+)
 );
 await cEconomy
 .save()
 .catch((Error) =>
-ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat)
+ꜰᴜᴄᴋ.catch(
+Error,
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+𝖈𝖔𝖗𝖑𝖊𝖝𝖆,
+chat
+)
 );
 return ᴄᴏʀʟᴇxᴀ_Buttons.MIB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
@@ -529,12 +586,22 @@ culprit.CurrentRobberyTime = Date.now();
 await vEconomy
 .save()
 .catch((Error) =>
-ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat)
+ꜰᴜᴄᴋ.catch(
+Error,
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+𝖈𝖔𝖗𝖑𝖊𝖝𝖆,
+chat
+)
 );
 await cEconomy
 .save()
 .catch((Error) =>
-ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat)
+ꜰᴜᴄᴋ.catch(
+Error,
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+𝖈𝖔𝖗𝖑𝖊𝖝𝖆,
+chat
+)
 );
 return ᴄᴏʀʟᴇxᴀ_Buttons.MIB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
@@ -587,7 +654,8 @@ Economy.findOne(
 ID: TagMention,
 },
 async (Error, vEconomy) => {
-if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat);
+if (Error)
+return ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat);
 if (!vEconomy) {
 var newUser = new Economy({
 ID: TagMention,
@@ -643,7 +711,9 @@ imageMessage: media.message.imageMessage,
 MessageType.buttonsMessage,
 {
 quoted: chat,
-contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ, TagMention] },
+contextInfo: {
+mentionedJid: [աɦօֆɛռȶɦǟȶ, TagMention],
+},
 }
 )
 .catch((Error) =>
@@ -768,7 +838,9 @@ imageMessage: media.message.imageMessage,
 MessageType.buttonsMessage,
 {
 quoted: chat,
-contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ, TagMention] },
+contextInfo: {
+mentionedJid: [աɦօֆɛռȶɦǟȶ, TagMention],
+},
 }
 )
 .catch((Error) =>
@@ -789,7 +861,12 @@ ID: TagMention,
 },
 async (Error, victim) => {
 if (Error)
-return ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat);
+return ꜰᴜᴄᴋ.catch(
+Error,
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+𝖈𝖔𝖗𝖑𝖊𝖝𝖆,
+chat
+);
 if (!victim) {
 var newUser = new Robbery({
 ID: TagMention,
@@ -812,7 +889,9 @@ await cEconomy
 );
 const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
-{ url: "./ᴄᴏʀʟᴇxᴀ☣️Reactor/ᴄᴏʀʟᴇxᴀ_Univ.png" },
+{
+url: "./ᴄᴏʀʟᴇxᴀ☣️Reactor/ᴄᴏʀʟᴇxᴀ_Univ.png",
+},
 MessageType.image,
 { mimetype: Mimetype.png }
 );
@@ -834,12 +913,16 @@ footerText: `⎿ ©𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • 𝐄𝐧𝐕𝐞𝐫: ${vers
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
-buttonText: { displayText: `${ᴋᴇɪ}help` },
+buttonText: {
+displayText: `${ᴋᴇɪ}help`,
+},
 type: 1,
 },
 {
 buttonId: `${ᴋᴇɪ}faq`,
-buttonText: { displayText: `${ᴋᴇɪ}faq` },
+buttonText: {
+displayText: `${ᴋᴇɪ}faq`,
+},
 type: 1,
 },
 ],
@@ -880,7 +963,9 @@ await cEconomy
 );
 const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
-{ url: "./ᴄᴏʀʟᴇxᴀ☣️Reactor/ᴄᴏʀʟᴇxᴀ_Univ.png" },
+{
+url: "./ᴄᴏʀʟᴇxᴀ☣️Reactor/ᴄᴏʀʟᴇxᴀ_Univ.png",
+},
 MessageType.image,
 { mimetype: Mimetype.png }
 );
@@ -902,12 +987,16 @@ footerText: `⎿ ©𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • 𝐄𝐧𝐕𝐞𝐫: ${vers
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
-buttonText: { displayText: `${ᴋᴇɪ}help` },
+buttonText: {
+displayText: `${ᴋᴇɪ}help`,
+},
 type: 1,
 },
 {
 buttonId: `${ᴋᴇɪ}faq`,
-buttonText: { displayText: `${ᴋᴇɪ}faq` },
+buttonText: {
+displayText: `${ᴋᴇɪ}faq`,
+},
 type: 1,
 },
 ],
@@ -955,7 +1044,8 @@ chat,
 if (victim.sword > 0) {
 victim.sword = victim.sword - 1;
 if (cEconomy.money < 3000) {
-vEconomy.money = vEconomy.money + cEconomy.money;
+vEconomy.money =
+vEconomy.money + cEconomy.money;
 cEconomy.money = 0;
 } else {
 vEconomy.money = vEconomy.money + MoneySword;
@@ -984,7 +1074,9 @@ await cEconomy
 );
 const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
-{ url: "./ᴄᴏʀʟᴇxᴀ☣️Reactor/ᴄᴏʀʟᴇxᴀ_Univ.png" },
+{
+url: "./ᴄᴏʀʟᴇxᴀ☣️Reactor/ᴄᴏʀʟᴇxᴀ_Univ.png",
+},
 MessageType.image,
 { mimetype: Mimetype.png }
 );
@@ -1007,12 +1099,16 @@ footerText: `⎿ ©𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • 𝐄𝐧𝐕𝐞𝐫: ${vers
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
-buttonText: { displayText: `${ᴋᴇɪ}help` },
+buttonText: {
+displayText: `${ᴋᴇɪ}help`,
+},
 type: 1,
 },
 {
 buttonId: `${ᴋᴇɪ}faq`,
-buttonText: { displayText: `${ᴋᴇɪ}faq` },
+buttonText: {
+displayText: `${ᴋᴇɪ}faq`,
+},
 type: 1,
 },
 ],
@@ -1034,7 +1130,8 @@ mentionedJid: [աɦօֆɛռȶɦǟȶ, TagMention],
 } else if (victim.laptop > 0) {
 victim.laptop = victim.laptop - 1;
 if (cEconomy.money < 4000) {
-vEconomy.money = vEconomy.money + cEconomy.money;
+vEconomy.money =
+vEconomy.money + cEconomy.money;
 cEconomy.money = 0;
 } else {
 vEconomy.money = vEconomy.money + MoneyLaptop;
@@ -1063,7 +1160,9 @@ await cEconomy
 );
 const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
-{ url: "./ᴄᴏʀʟᴇxᴀ☣️Reactor/ᴄᴏʀʟᴇxᴀ_Univ.png" },
+{
+url: "./ᴄᴏʀʟᴇxᴀ☣️Reactor/ᴄᴏʀʟᴇxᴀ_Univ.png",
+},
 MessageType.image,
 { mimetype: Mimetype.png }
 );
@@ -1086,12 +1185,16 @@ footerText: `⎿ ©𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • 𝐄𝐧𝐕𝐞𝐫: ${vers
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
-buttonText: { displayText: `${ᴋᴇɪ}help` },
+buttonText: {
+displayText: `${ᴋᴇɪ}help`,
+},
 type: 1,
 },
 {
 buttonId: `${ᴋᴇɪ}faq`,
-buttonText: { displayText: `${ᴋᴇɪ}faq` },
+buttonText: {
+displayText: `${ᴋᴇɪ}faq`,
+},
 type: 1,
 },
 ],
@@ -1113,7 +1216,8 @@ mentionedJid: [աɦօֆɛռȶɦǟȶ, TagMention],
 } else if (victim.charm > 0) {
 victim.charm = victim.charm - 1;
 if (cEconomy.money < 6000) {
-vEconomy.money = vEconomy.money + cEconomy.money;
+vEconomy.money =
+vEconomy.money + cEconomy.money;
 cEconomy.money = 0;
 } else {
 vEconomy.money = vEconomy.money + MoneyCharm;
@@ -1142,7 +1246,9 @@ await cEconomy
 );
 const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
-{ url: "./ᴄᴏʀʟᴇxᴀ☣️Reactor/ᴄᴏʀʟᴇxᴀ_Univ.png" },
+{
+url: "./ᴄᴏʀʟᴇxᴀ☣️Reactor/ᴄᴏʀʟᴇxᴀ_Univ.png",
+},
 MessageType.image,
 { mimetype: Mimetype.png }
 );
@@ -1165,12 +1271,16 @@ footerText: `⎿ ©𝐂𝐨𝐫𝐥𝐞𝐱𝐚 • 𝐄𝐧𝐕𝐞𝐫: ${vers
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
-buttonText: { displayText: `${ᴋᴇɪ}help` },
+buttonText: {
+displayText: `${ᴋᴇɪ}help`,
+},
 type: 1,
 },
 {
 buttonId: `${ᴋᴇɪ}faq`,
-buttonText: { displayText: `${ᴋᴇɪ}faq` },
+buttonText: {
+displayText: `${ᴋᴇɪ}faq`,
+},
 type: 1,
 },
 ],
@@ -1193,21 +1303,34 @@ mentionedJid: [աɦօֆɛռȶɦǟȶ, TagMention],
 let Note;
 if (vEconomy.money < 1000) {
 vEconomy.money = 0;
-cEconomy.money = cEconomy.money + vEconomy.money;
+cEconomy.money =
+cEconomy.money + vEconomy.money;
 culprit.CurrentRobberyTime = Date.now();
 await vEconomy
 .save()
 .catch((Error) =>
-ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat)
+ꜰᴜᴄᴋ.catch(
+Error,
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+𝖈𝖔𝖗𝖑𝖊𝖝𝖆,
+chat
+)
 );
 await cEconomy
 .save()
 .catch((Error) =>
-ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat)
+ꜰᴜᴄᴋ.catch(
+Error,
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+𝖈𝖔𝖗𝖑𝖊𝖝𝖆,
+chat
+)
 );
 const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
-{ url: "./ᴄᴏʀʟᴇxᴀ☣️Reactor/ᴄᴏʀʟᴇxᴀ_Univ.png" },
+{
+url: "./ᴄᴏʀʟᴇxᴀ☣️Reactor/ᴄᴏʀʟᴇxᴀ_Univ.png",
+},
 MessageType.image,
 { mimetype: Mimetype.png }
 );
@@ -1255,18 +1378,27 @@ type: 1,
 },
 ],
 headerType: 4,
-imageMessage: media.message.imageMessage,
+imageMessage:
+media.message.imageMessage,
 },
 MessageType.buttonsMessage,
 {
 quoted: chat,
 contextInfo: {
-mentionedJid: [աɦօֆɛռȶɦǟȶ, TagMention],
+mentionedJid: [
+աɦօֆɛռȶɦǟȶ,
+TagMention,
+],
 },
 }
 )
 .catch((Error) =>
-ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat)
+ꜰᴜᴄᴋ.catch(
+Error,
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+𝖈𝖔𝖗𝖑𝖊𝖝𝖆,
+chat
+)
 );
 } else {
 vEconomy.money = vEconomy.money - MoneyRandom;
@@ -1275,16 +1407,28 @@ culprit.CurrentRobberyTime = Date.now();
 await vEconomy
 .save()
 .catch((Error) =>
-ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat)
+ꜰᴜᴄᴋ.catch(
+Error,
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+𝖈𝖔𝖗𝖑𝖊𝖝𝖆,
+chat
+)
 );
 await cEconomy
 .save()
 .catch((Error) =>
-ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat)
+ꜰᴜᴄᴋ.catch(
+Error,
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+𝖈𝖔𝖗𝖑𝖊𝖝𝖆,
+chat
+)
 );
 const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
-{ url: "./ᴄᴏʀʟᴇxᴀ☣️Reactor/ᴄᴏʀʟᴇxᴀ_Univ.png" },
+{
+url: "./ᴄᴏʀʟᴇxᴀ☣️Reactor/ᴄᴏʀʟᴇxᴀ_Univ.png",
+},
 MessageType.image,
 { mimetype: Mimetype.png }
 );
@@ -1330,18 +1474,27 @@ type: 1,
 },
 ],
 headerType: 4,
-imageMessage: media.message.imageMessage,
+imageMessage:
+media.message.imageMessage,
 },
 MessageType.buttonsMessage,
 {
 quoted: chat,
 contextInfo: {
-mentionedJid: [աɦօֆɛռȶɦǟȶ, TagMention],
+mentionedJid: [
+աɦօֆɛռȶɦǟȶ,
+TagMention,
+],
 },
 }
 )
 .catch((Error) =>
-ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat)
+ꜰᴜᴄᴋ.catch(
+Error,
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+𝖈𝖔𝖗𝖑𝖊𝖝𝖆,
+chat
+)
 );
 }
 }
@@ -1369,9 +1522,11 @@ chat,
 ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
 );
 }
+}
+);
+`|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 } catch (Error) {
-ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat);
-return;
+return ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat);
 }
 },
 };

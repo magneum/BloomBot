@@ -38,8 +38,41 @@ var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ
 const defaultnm = 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.commandName;
 const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-const hold = require(`../../ᴄᴏʀʟᴇxᴀ🛰️Server/Hold`);
-await hold.Hold(𝖈𝖔𝖗𝖑𝖊𝖝𝖆);
+const Halt = require(`../../ᴄᴏʀʟᴇxᴀ🍃Goose/halt`);
+const ms = require(`parse-ms`);
+Halt.findOne(
+{
+ID: 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.sender,
+},
+async (Error, userHalt) => {
+if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat);
+if (!userHalt) {
+var newHalt = new Halt({
+ID: 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.sender,
+TimeOut: Date.now(),
+PermaTimeOut: 15000,
+});
+await newHalt
+.save()
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
+}
+if (userHalt.PermaTimeOut - (Date.now() - userHalt.TimeOut) > 0) {
+let Time = ms(
+userHalt.PermaTimeOut - (Date.now() - userHalt.TimeOut)
+);
+return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
+𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
+`☣️@${աɦօֆɛռȶɦǟȶռʊʍ}, _Wait For ${Time.seconds}s!_`,
+MessageType.text,
+{
+contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
+}
+);
+}
+userHalt.TimeOut = Date.now();
+await userHalt
+.save()
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 const key = _𝔏𝔞𝔟_.TEN;
 const cue = "gay";
@@ -47,8 +80,8 @@ let url = `https://api.tenor.com/v1/search?q=${cue}&key=${key}&limit=100`;
 let response = await fetch(url);
 let json = await response.json();
 const Video =
-json.results[Math.floor(Math.random() * json.results.length)].media[0]
-.mp4.url;
+json.results[Math.floor(Math.random() * json.results.length)]
+.media[0].mp4.url;
 console.log(Video);
 const Amount = Math.ceil(Math.random() * 100);
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
@@ -133,10 +166,11 @@ contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ, MentionPerson] },
 )
 .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
 }
+}
+);
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 } catch (Error) {
-ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat);
-return;
+return ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat);
 }
 },
 };

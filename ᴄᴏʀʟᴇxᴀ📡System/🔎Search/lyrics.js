@@ -108,8 +108,43 @@ await userBadge
 }
 }
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-const hold = require("../../ᴄᴏʀʟᴇxᴀ🛰️Server/Hold");
-await hold.Hold(𝖈𝖔𝖗𝖑𝖊𝖝𝖆);
+const Halt = require(`../../ᴄᴏʀʟᴇxᴀ🍃Goose/halt`);
+const ms = require(`parse-ms`);
+Halt.findOne(
+{
+ID: 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.sender,
+},
+async (Error, userHalt) => {
+if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat);
+if (!userHalt) {
+var newHalt = new Halt({
+ID: 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.sender,
+TimeOut: Date.now(),
+PermaTimeOut: 15000,
+});
+await newHalt
+.save()
+.catch((Error) =>
+ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat)
+);
+}
+if (userHalt.PermaTimeOut - (Date.now() - userHalt.TimeOut) > 0) {
+let Time = ms(
+userHalt.PermaTimeOut - (Date.now() - userHalt.TimeOut)
+);
+return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
+𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
+`☣️@${աɦօֆɛռȶɦǟȶռʊʍ}, _Wait For ${Time.seconds}s!_`,
+MessageType.text,
+{
+contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
+}
+);
+}
+userHalt.TimeOut = Date.now();
+await userHalt
+.save()
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
 
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 if (!𝖈𝖔𝖗𝖑𝖊𝖝𝖆.fromMe && userBadge.value === "False") {
@@ -210,10 +245,11 @@ _No Such Song Lyrics Found_`
 }
 }
 );
+}
+);
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 } catch (Error) {
-ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat);
-return;
+return ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat);
 }
 },
 };
@@ -222,24 +258,3 @@ return;
 `|        (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!            |`;
 `|                                                                                                                        |`;
 `|⬡════════════════════════════════════════════|                            |═══════════════════════════════════════════⬡|`;
-// } catch (Error) {
-//     console.log(Error);
-//     try {
-//     } catch (Error) {
-//     console.log(Error);
-//     console.log(
-//     `🛸Song-Lyrics🛸    ⬡==========================⬡`
-//     );
-//     const lyric = await Third_Try_Lyrics.search(Song);
-//     ᴄᴏʀʟᴇxᴀ_Buttons.MTB(
-//     ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
-//     chat,
-//     𝖈𝖔𝖗𝖑𝖊𝖝𝖆,
-//     `•🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ},
-    
-//     ────◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
-//     📜 𝗟𝘆𝗿𝗶𝗰𝘀 𝗙𝗼𝘂𝗻𝗱 𝗙𝗼𝗿: _${Song}_
-//     🛸𝗟𝘆𝗿𝗶𝗰𝘀🛸
-//     ${lyric}`
-//     );
-//     }
