@@ -61,17 +61,6 @@ MessageType.audio,
 });
 } catch (Error) {
 console.log(`⬡═══════════════════| 🐞𝐄𝐫𝐫𝐨𝐫: ` + Error);
-await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
-.sendMessage(
-𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
-"🐞𝐄𝐫𝐫𝐨𝐫: Seems Like YouTube Denied The Corlexa Request!Trying Alternate Corlexa Servers!",
-MessageType.text,
-{
-contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
-}
-)
-.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
-`|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 const downloadFFmpegFile = ytdl(CorlexaYt, { filter: "audioonly" });
 const writeStream = fs.createWriteStream(FFmpegFile);
 downloadFFmpegFile.pipe(writeStream);

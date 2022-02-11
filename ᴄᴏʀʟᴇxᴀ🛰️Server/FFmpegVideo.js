@@ -84,16 +84,6 @@ contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
 });
 } catch (Error) {
 console.log(`⬡═══════════════════| 🐞𝐄𝐫𝐫𝐨𝐫: ` + Error);
-await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
-.sendMessage(
-𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
-"🐞𝐄𝐫𝐫𝐨𝐫: Seems Like YouTube Denied The Corlexa Request!Trying Alternate Corlexa Servers!",
-MessageType.text,
-{
-contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
-}
-)
-.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
 let { dl_link, thumb, title, filesize, filesizeF } = await v2mate(
 Found.url,
 "en68"
