@@ -312,6 +312,7 @@ var ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ = await ᴍɪᴢᴜᴋɪɢɪᴛ.log([
 `KrakinzLab..origin/KrakinzLab`,
 ]);
 if (ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total != 0) {
+require(`child_process`).exec(`git config pull.rebase false`);
 require(`simple-git`)()
 .exec(async () => {
 console.log(
@@ -326,6 +327,9 @@ if (Error) {
 console.log(
 `❌ 𝐄𝐫𝐫𝐨𝐫⬰ Merge Resulted with Total-Conflicts: ` + Error
 );
+}
+if (update.files.includes(`package.json`)) {
+require(`child_process`).exec(`npm i --force`);
 }
 if (update && update.summary.changes) {
 var childs =
