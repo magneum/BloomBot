@@ -5,7 +5,7 @@
 # ☣️[𝕷𝖎𝖈𝖊𝖓𝖘𝖊](LICENSE)
 
 <p align="centre">
-<img  width="80%" height="80%" img src="https://github.com/Kryknz/Vlkyre/blob/KryTek/%E1%B4%A0%CA%9F%E1%B4%8B%CA%80%E1%B4%87%F0%9F%94%8Ccord/%E1%B4%A0%CA%9F%E1%B4%8B%CA%8F%CA%80%E1%B4%87.png" />
+<img  width="80%" height="80%" img src="https://github.com/Kryknz/Vlkyre/blob/KryTek/%E1%B4%A0%CA%9F%E1%B4%8B%CA%8F%CA%80%E1%B4%87%F0%9F%94%8Ccord/%E1%B4%A0%CA%9F%E1%B4%8B%CA%8F%CA%80%E1%B4%87.png" />
 </p>
 
 🍂[`(𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐝𝐯𝐚𝐧𝐜𝐞 𝐀𝐈🍾 #A`](https://chat.whatsapp.com/LKN8uVBd8ucHRHofz0jBSd)
@@ -34,7 +34,7 @@
 ```
 
 <p align="centre">
-<img  width="80%" height="80%" img src="https://github.com/Kryknz/Vlkyre/blob/KryTek/%E1%B4%A0%CA%9F%E1%B4%8B%CA%80%E1%B4%87%F0%9F%94%8Ccord/%E1%B4%A0%CA%9F%E1%B4%8B%CA%8F%CA%80%E1%B4%87git.png" />
+<img  width="80%" height="80%" img src="https://github.com/Kryknz/Vlkyre/blob/KryTek/%E1%B4%A0%CA%9F%E1%B4%8B%CA%8F%CA%80%E1%B4%87%F0%9F%94%8Ccord/%E1%B4%A0%CA%9F%E1%B4%8B%CA%8F%CA%80%E1%B4%87git.png" />
 </p>
 
 # 🍂𝐃𝐢𝐬𝐜𝐥𝐚𝐢𝐦𝐞𝐫
