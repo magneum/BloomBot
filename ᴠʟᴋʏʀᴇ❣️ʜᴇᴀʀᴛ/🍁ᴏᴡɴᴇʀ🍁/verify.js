@@ -60,7 +60,7 @@ if (
 !member3.includes(աɦօֆɛռȶɦǟȶ)
 ) {
 const buttonMessage = {
-contentText: `🤖𝐕𝐞𝐫𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧: *@${աɦօֆɛռȶɦǟȶռʊʍ}* As Long As You Are A Member Of Corlexa Group Chat, You Will Be Auto-Verified!*
+contentText: `🤖𝐕𝐞𝐫𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧: *@${աɦօֆɛռȶɦǟȶռʊʍ}* As Long As You Are A Member Of Vlkyre Group Chat, You Will Be Auto-Verified!*
 
 ╔◇ 𝐖𝐡𝐲 𝐓𝐨 𝐁𝐞 𝐕𝐞𝐫𝐢𝐟𝐢𝐞𝐝?
 ║
@@ -71,7 +71,7 @@ contentText: `🤖𝐕𝐞𝐫𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧: *@${աɦօֆ
 ║📌 _Monitor Anti-Virtex!_
 ║📌 _Monitor Group Ranks!_
 ║📌 _Monitor Performance!_
-║📌 _Use Corlexa-Premium Anywhere!_
+║📌 _Use Vlkyre-Premium Anywhere!_
 ╚════════════╝
 
 ╔◇║👇🏽𝗝𝗼𝗶𝗻 𝗔𝗻𝘆 𝐕𝐥𝐤𝐲𝐫𝐞 𝗚𝗿𝗼𝘂𝗽👇🏽
