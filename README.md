@@ -80,7 +80,7 @@
 
 # 🛸𝐃𝐢𝐬𝐜𝐥𝐚𝐢𝐦𝐞𝐫
 
-```sh
+```
 - We won't be responsible for any kind of ban due to this bot.
 - Kordapp was made for fun purpose and to make group management easier.
 - It's your concern if you spam and gets your account banned.
