@@ -1,15 +1,17 @@
 [![Open Source Love svg3](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)<img align="centre" src="https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg" alt="KryKnz"/><img align="centre" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"/>
 
 # (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞
+
 # ☣️[𝕷𝖎𝖈𝖊𝖓𝖘𝖊](LICENSE)
-https://github.com/Kryknz/Vlkyre/blob/KryTek/%E1%B4%A0%CA%9F%E1%B4%8B%CA%80%E1%B4%87%F0%9F%94%8Ccord/%E1%B4%A0%CA%9F%E1%B4%8B%CA%8F%CA%80%E1%B4%87.png
 
+<p align="centre">
+<img  width="80%" height="80%" img src="https://github.com/Kryknz/Vlkyre/blob/KryTek/%E1%B4%A0%CA%9F%E1%B4%8B%CA%80%E1%B4%87%F0%9F%94%8Ccord/%E1%B4%A0%CA%9F%E1%B4%8B%CA%8F%CA%80%E1%B4%87.png" />
+</p>
 
-
-🛸[`(𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐝𝐯𝐚𝐧𝐜𝐞 𝐀𝐈🍾 #A`](https://chat.whatsapp.com/LKN8uVBd8ucHRHofz0jBSd)
-🛸[`(𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐝𝐯𝐚𝐧𝐜𝐞 𝐀𝐈🍾 #B`](https://chat.whatsapp.com/HKO5WLEZxMe3xWCyiv6vBu)
-🛸[`(𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐝𝐯𝐚𝐧𝐜𝐞 𝐀𝐈🍾 #C`](https://chat.whatsapp.com/EIn3YFShFmkJ3fvAqf2rpn)
-🛸[`𝐃𝐢𝐬𝐜𝐨𝐫𝐝`](https://discord.gg/xcFN6NDHEV)
+🍂[`(𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐝𝐯𝐚𝐧𝐜𝐞 𝐀𝐈🍾 #A`](https://chat.whatsapp.com/LKN8uVBd8ucHRHofz0jBSd)
+🍂[`(𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐝𝐯𝐚𝐧𝐜𝐞 𝐀𝐈🍾 #B`](https://chat.whatsapp.com/HKO5WLEZxMe3xWCyiv6vBu)
+🍂[`(𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐝𝐯𝐚𝐧𝐜𝐞 𝐀𝐈🍾 #C`](https://chat.whatsapp.com/EIn3YFShFmkJ3fvAqf2rpn)
+🍂[`𝐃𝐢𝐬𝐜𝐨𝐫𝐝`](https://discord.gg/xcFN6NDHEV)
 
 ```
 🦋𝐕𝐥𝐤𝐲𝐫𝐞
@@ -50,7 +52,7 @@ https://github.com/Kryknz/Vlkyre/blob/KryTek/%E1%B4%A0%CA%9F%E1%B4%8B%CA%80%E1%B
 ╚════════════╝
 ```
 
-# 🛸𝐃𝐢𝐬𝐜𝐥𝐚𝐢𝐦𝐞𝐫
+# 🍂𝐃𝐢𝐬𝐜𝐥𝐚𝐢𝐦𝐞𝐫
 
 ```
 - We won't be responsible for any kind of ban due to this bot.
@@ -62,7 +64,7 @@ https://github.com/Kryknz/Vlkyre/blob/KryTek/%E1%B4%A0%CA%9F%E1%B4%8B%CA%80%E1%B
 - In short, Fork At Your Own Risk.
 ```
 
-# 🛸𝐃𝐞𝐩𝐥𝐨𝐲𝐦𝐞𝐧𝐭
+# 🍂𝐃𝐞𝐩𝐥𝐨𝐲𝐦𝐞𝐧𝐭
 
 <a href="https://heroku.com/deploy">
   <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
