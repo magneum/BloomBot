@@ -92,6 +92,7 @@
 # 🛸[𝐃𝐞𝐩𝐥𝐨𝐲𝐦𝐞𝐧𝐭]
 
 - https://railway.app?referralCode=B6ZmKf
+
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https%3A%2F%2Fgithub.com%2FKrakinz%2FCorlexa.git&envs=CORLEXA%2CHEROKU%2CCORLEXAYT%2CCORLEXAMDB%2CHEROKU_API_KEY%2CHEROKU_APP_NAME%2CCCD%2CCODE%2CIMDB%2CTEN%2COCR%2CWAPI&CORLEXADesc=Put+Your+%E1%B4%84%E1%B4%8F%CA%80%CA%9F%E1%B4%87x%E1%B4%80+Session+API%21&HEROKUDesc=Keep+It+Heroku+To+Bypass+Ytdl+bs%21&CORLEXAYTDesc=Your+Localized+YouTube+Api+v3%21&CORLEXAMDBDesc=Your+Localized+Mongoosedb+server+connect+API+Link%21&HEROKU_API_KEYDesc=HEROKU_API_KEY&HEROKU_APP_NAMEDesc=HEROKU_APP_NAME&CCDDesc=Put+Your+Country+Code%21&CODEDesc=Top+Secret+KrakinzLab+API+key%21&IMDBDesc=Put+Your+imdb+API+key%21&TENDesc=Put+Your+tenor+API+key%21&OCRDesc=Put+Your+API+key+for+using+Optical+Character+Recognition+command%21&WAPIDesc=Put+Your+API+key+for+using+weather+module%21&HEROKU_API_KEYDefault=HEROKU_API_KEY&HEROKU_APP_NAMEDefault=HEROKU_APP_NAME)
 
 <a href="https://heroku.com/deploy">
