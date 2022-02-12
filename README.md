@@ -2,6 +2,9 @@
 
 # (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞
 # ☣️[𝕷𝖎𝖈𝖊𝖓𝖘𝖊](LICENSE)
+https://github.com/Kryknz/Vlkyre/blob/KryTek/%E1%B4%A0%CA%9F%E1%B4%8B%CA%80%E1%B4%87%F0%9F%94%8Ccord/%E1%B4%A0%CA%9F%E1%B4%8B%CA%8F%CA%80%E1%B4%87.png
+
+
 
 🛸[`(𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐝𝐯𝐚𝐧𝐜𝐞 𝐀𝐈🍾 #A`](https://chat.whatsapp.com/LKN8uVBd8ucHRHofz0jBSd)
 🛸[`(𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐝𝐯𝐚𝐧𝐜𝐞 𝐀𝐈🍾 #B`](https://chat.whatsapp.com/HKO5WLEZxMe3xWCyiv6vBu)
