@@ -26,7 +26,7 @@ const defaultnm = ᴠʟᴋʏʀᴇ.commandName;
 var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ
 .substring(0, աɦօֆɛռȶɦǟȶ.length - 15)
 .replace(/[+ ]/g, "");
-var FFmpegFile = `./ᴠʟᴋʏʀᴇ☕ꜱʜᴏᴘ/${chat.key.id}.mp3`;
+var FFmpegFile = `./ᴠʟᴋʏʀᴇ🀄ᴇxʜᴀᴜꜱᴛ/${chat.key.id}.mp3`;
 const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
 `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 YouTube_Music(Found.url).then((res) => {
@@ -35,7 +35,7 @@ TinyURL.shorten(dl_link).then(
 async function (TUrl) {
 const downloader = await new Downloader({
 url: TUrl,
-directory: `ᴠʟᴋʏʀᴇ☕ꜱʜᴏᴘ`,
+directory: `ᴠʟᴋʏʀᴇ🀄ᴇxʜᴀᴜꜱᴛ`,
 fileName: `${chat.key.id}.mp3`,
 cloneFiles: false,
 });

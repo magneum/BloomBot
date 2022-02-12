@@ -124,7 +124,7 @@ try {
 } catch {
 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = `https://i.postimg.cc/wxWL9G8F/no-profile-picture-300x216.png`;
 }
-var expFile = `./ᴠʟᴋʏʀᴇ☕ꜱʜᴏᴘ/${Date.now()}r${chat.key.id}.png`;
+var expFile = `./ᴠʟᴋʏʀᴇ🀄ᴇxʜᴀᴜꜱᴛ/${Date.now()}r${chat.key.id}.png`;
 const rank = new canvacord.Rank()
 .setStatus("online")
 .setAvatar(𝕻𝕻𝖑𝖊𝖙𝖊𝖗)
