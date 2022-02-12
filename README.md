@@ -80,6 +80,7 @@
 
 # 🛸𝐃𝐢𝐬𝐜𝐥𝐚𝐢𝐦𝐞𝐫
 
+```sh
 - We won't be responsible for any kind of ban due to this bot.
 - Kordapp was made for fun purpose and to make group management easier.
 - It's your concern if you spam and gets your account banned.
@@ -87,6 +88,7 @@
 - If you fork this repo and edit plugins, it's your concern for further updates.
 - Forking Repo is fine. But if you edit something we will not provide any help.
 - In short, Fork At Your Own Risk.
+```
 
 # 🛸𝐃𝐞𝐩𝐥𝐨𝐲𝐦𝐞𝐧𝐭
 
