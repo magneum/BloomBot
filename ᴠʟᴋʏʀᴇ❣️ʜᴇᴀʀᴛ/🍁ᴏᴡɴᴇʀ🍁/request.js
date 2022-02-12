@@ -47,7 +47,7 @@ chat,
 await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.acceptInvite(code).then(async (res) => {
 const gMd = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.groupMetadata(res.gid);
 if (gMd.participants.length < 15) {
-await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.groupRemove(ᴠʟᴋʏʀᴇ.chatId, [ᴠʟᴋʏʀᴇ.Myself]);
+await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.groupRemove(res.gid, [ᴠʟᴋʏʀᴇ.Myself]);
 return ᴠʟᴋʏʀᴇ_Buttons.MTB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
