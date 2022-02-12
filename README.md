@@ -2,7 +2,7 @@
 
 # (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈 🛸stable-yet-debug
 
-<img align="centre"  height="400" src="https://github.com/Krakinz/Corlexa/blob/KrakinzLab/%E1%B4%84%E1%B4%8F%CA%80%CA%9F%E1%B4%87x%E1%B4%80%E2%98%A3%EF%B8%8FReactor/%F0%9D%96%88%F0%9D%96%94%F0%9D%96%97%F0%9D%96%91%F0%9D%96%8A%F0%9D%96%9D%F0%9D%96%86.png">
+<img align="centre"  height="400" src="">
 
 🛸[`(𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚 𝐀𝐝𝐯𝐚𝐧𝐜𝐞 𝐀𝐈🍾 #A`](https://chat.whatsapp.com/LKN8uVBd8ucHRHofz0jBSd)
 🛸[`(𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚 𝐀𝐝𝐯𝐚𝐧𝐜𝐞 𝐀𝐈🍾 #B`](https://chat.whatsapp.com/HKO5WLEZxMe3xWCyiv6vBu)
@@ -82,7 +82,7 @@
 # 🛸[Disclaimer]
 
 - We won't be responsible for any kind of ban due to this bot.
-- Corlexa was made for fun purpose and to make group management easier.
+- Kordapp was made for fun purpose and to make group management easier.
 - It's your concern if you spam and gets your account banned.
 - Also, Forks won't be entertained.
 - If you fork this repo and edit plugins, it's your concern for further updates.
@@ -90,10 +90,6 @@
 - In short, Fork At Your Own Risk.
 
 # 🛸[𝐃𝐞𝐩𝐥𝐨𝐲𝐦𝐞𝐧𝐭]
-
-- https://railway.app?referralCode=B6ZmKf
-
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https%3A%2F%2Fgithub.com%2FKrakinz%2FCorlexa.git&envs=CORLEXA%2CHEROKU%2CCORLEXAYT%2CCORLEXAMDB%2CHEROKU_API_KEY%2CHEROKU_APP_NAME%2CCCD%2CCODE%2CIMDB%2CTEN%2COCR%2CWAPI&CORLEXADesc=Put+Your+%E1%B4%84%E1%B4%8F%CA%80%CA%9F%E1%B4%87x%E1%B4%80+Session+API%21&HEROKUDesc=Keep+It+Heroku+To+Bypass+Ytdl+bs%21&CORLEXAYTDesc=Your+Localized+YouTube+Api+v3%21&CORLEXAMDBDesc=Your+Localized+Mongoosedb+server+connect+API+Link%21&HEROKU_API_KEYDesc=HEROKU_API_KEY&HEROKU_APP_NAMEDesc=HEROKU_APP_NAME&CCDDesc=Put+Your+Country+Code%21&CODEDesc=Top+Secret+KrakinzLab+API+key%21&IMDBDesc=Put+Your+imdb+API+key%21&TENDesc=Put+Your+tenor+API+key%21&OCRDesc=Put+Your+API+key+for+using+Optical+Character+Recognition+command%21&WAPIDesc=Put+Your+API+key+for+using+weather+module%21&HEROKU_API_KEYDefault=HEROKU_API_KEY&HEROKU_APP_NAMEDefault=HEROKU_APP_NAME)
 
 <a href="https://heroku.com/deploy">
   <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">

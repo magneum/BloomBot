@@ -7,3 +7,5 @@ requests
 pyAesCrypt
 termcolor
 python-dotenv
+
+
