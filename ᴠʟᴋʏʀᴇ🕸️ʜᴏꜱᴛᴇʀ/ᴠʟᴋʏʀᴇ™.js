@@ -65,7 +65,7 @@ var ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇 = ᴠʟᴋʏʀᴇֆʏռօք.WhatsApp;
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.logger.level = "error";
 async function ᴠʟᴋʏʀᴇ() {
 try {
-await ᴠʟᴋʏʀᴇgoose.connect(_𝔏𝔞𝔟_.CORLEXAMDB, {
+await ᴠʟᴋʏʀᴇgoose.connect(_𝔏𝔞𝔟_.VLKYREMDB, {
 useNewUrlParser: true,
 useUnifiedTopology: true,
 useCreateIndex: true,
@@ -83,7 +83,7 @@ console.log(Kolor.yellow(`❌ 𝐄𝐫𝐫𝐨𝐫⬰  Heroku Vars Are Wrong!`))
 process.exit(0);
 }
 try {
-var session = ᴠʟᴋʏʀᴇֆʏռօք.ᴠʟᴋʏʀᴇReIgnite(_𝔏𝔞𝔟_.CORLEXA);
+var session = ᴠʟᴋʏʀᴇֆʏռօք.ᴠʟᴋʏʀᴇReIgnite(_𝔏𝔞𝔟_.VLKYRE);
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.loadAuthInfo(session);
 } catch (Error) {
 console.log(Kolor.red(`💡 𝐈𝐧𝐟𝐨⬰ ᴠʟᴋʏʀᴇ Web Code is Wrong. Re-Auth!`));
