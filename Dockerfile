@@ -25,14 +25,14 @@ RUN n install 16
 RUN path=path 
 RUN hash -r 
 RUN git clone https://github.com/KryKnz/Vlkyre.git 
-# RUN git init --initial-branch=KryKnzLab
+# RUN git init --initial-branch=KryTek
 # RUN git remote add origin https://github.com/KryKnz/Vlkyre.git
-# RUN git fetch origin KryKnzLab
-# RUN git reset --hard origin/KryKnzLab
-# RUN git init --initial-branch=KryKnzLab
+# RUN git fetch origin KryTek
+# RUN git reset --hard origin/KryTek
+# RUN git init --initial-branch=KryTek
 # RUN git remote add origin https://github.com/KryKnz/Vlkyre.git
-# RUN git fetch origin KryKnzLab
-# RUN git reset --hard origin/KryKnzLab
+# RUN git fetch origin KryTek
+# RUN git reset --hard origin/KryTek
 RUN cd Vlkyre
 WORKDIR /Vlkyre
 RUN pip install -r кгץкภչ.txt

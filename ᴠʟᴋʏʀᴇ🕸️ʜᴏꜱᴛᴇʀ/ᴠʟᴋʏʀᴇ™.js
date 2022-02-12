@@ -301,7 +301,7 @@ try {
 const ᴍɪᴢᴜᴋɪɢɪᴛ = require(`simple-git`)();
 await ᴍɪᴢᴜᴋɪɢɪᴛ.fetch();
 var ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ = await ᴍɪᴢᴜᴋɪɢɪᴛ.log([
-`KrakinzLab..origin/KrakinzLab`,
+`KryTek..origin/KryTek`,
 ]);
 if (ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total != 0) {
 require(`child_process`).exec(`git config pull.rebase false`);

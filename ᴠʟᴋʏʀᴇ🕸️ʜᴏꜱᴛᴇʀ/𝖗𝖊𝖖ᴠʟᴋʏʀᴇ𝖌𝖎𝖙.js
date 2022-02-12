@@ -8,7 +8,7 @@ try {
 const 𝖗𝖊𝖖ᴠʟᴋʏʀᴇ𝖌𝖎𝖙 = require(`simple-git`)();
 await 𝖗𝖊𝖖ᴠʟᴋʏʀᴇ𝖌𝖎𝖙.fetch();
 var ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ = await 𝖗𝖊𝖖ᴠʟᴋʏʀᴇ𝖌𝖎𝖙.log([
-`KrakinzLab..origin/KrakinzLab`,
+`KryTek..origin/KryTek`,
 ]);
 if (ꜰᴇᴛᴄʜᴇᴅᴍɪᴢᴜᴋɪ.total != 0) {
 var rebase = require(`child_process`).exec(
