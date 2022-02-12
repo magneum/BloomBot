@@ -222,7 +222,7 @@ GroupID,
 {
 contentText: `👋🏻𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚 𝐄𝐯𝐞𝐫𝐲𝐨𝐧𝐞, ${Timers}
 *To Admins Of This Group!*
-_Some Of Your Members Requested Our Corlexa HQ to Add Our Bot In This Group.Have Fun!_
+_Some Of Your Members Requested Our Vlkyre HQ to Add Our Bot In This Group.Have Fun!_
 ╔════◇⭕𝐅𝐨𝐫 𝐀𝐝𝐦𝐢𝐧𝐬
 ║◇ *antilink:* _on/off_
 ║◇ *autorank:* _on/off_
@@ -376,12 +376,13 @@ return ᴠʟᴋʏʀᴇ_Buttons.MTB(
 chat,
 ᴠʟᴋʏʀᴇ,
 `🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ}, _Using ᴠʟᴋʏʀᴇ In Private Is No longer Allowed!_
-*Needs Corlexa? Send Your Group Link In My Private*
-╔◇║👇🏽𝗝𝗼𝗶𝗻 𝗔𝗻𝘆 𝗖𝗼𝗿𝘁𝗮𝗻𝗮-𝗔𝗜 𝗚𝗿𝗼𝘂𝗽👇🏽
+*Needs Vlkyre? Send Your Group Link In My Private*
+
+╔◇║👇🏽𝗝𝗼𝗶𝗻 𝗔𝗻𝘆 𝐕𝐥𝐤𝐲𝐫𝐞 𝗚𝗿𝗼𝘂𝗽👇🏽
 ║
-║💼 𝐆𝐫𝐨𝐮𝐩: _${_𝔏𝔞𝔟_.HASH}_
-║💼 𝐆𝐫𝐨𝐮𝐩: _${_𝔏𝔞𝔟_.HASHS}_
-║💼 𝐆𝐫𝐨𝐮𝐩: _${_𝔏𝔞𝔟_.HASHSH}_
+║🍾 𝐕𝐥𝐤𝐲𝐫𝐞 𝐎𝐟𝐟𝐢𝐜𝐢𝐚𝐥 /𝟏: _${_𝔏𝔞𝔟_.HASH}_
+║🍾 𝐕𝐥𝐤𝐲𝐫𝐞 𝐎𝐟𝐟𝐢𝐜𝐢𝐚𝐥 /𝟐: _${_𝔏𝔞𝔟_.HASHS}_
+║🍾 𝐕𝐥𝐤𝐲𝐫𝐞 𝐎𝐟𝐟𝐢𝐜𝐢𝐚𝐥 /𝟑: _${_𝔏𝔞𝔟_.HASHSH}_
 ╚════════════╝
 ╔◇║🏮𝐕𝐥𝐤𝐲𝐫𝐞 𝐑𝐮𝐥𝐞𝐬
 ║
