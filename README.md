@@ -30,25 +30,6 @@
 ╔◇║❓Please Help Me Out With The Commands.
 ║ You can find all commands in the /menu and their respective category in /help.
 ║
-╚◇║💡 𝐀𝐥𝐥 𝐂𝐨𝐦𝐦𝐚𝐧𝐝 𝐂𝐚𝐭𝐞𝐠𝐨𝐫𝐢𝐞𝐬 𝐁𝐫𝐢𝐞𝐟𝐥𝐲 𝐄𝐱𝐩𝐥𝐚𝐢𝐧𝐞𝐝
-╔◇║ 👇🏽𝐄𝐯𝐞𝐫𝐲𝐨𝐧𝐞
-║🍣 /animemenu = search anime, get anime gifs,get random anime wallpapers.
-║💰 /gamemenu = play random games on whatsapp.
-║⭕ /ytfiltermenu = download yt audio with filters pre-applied.
-║📥 /downloadmenu = download videos and audio files from YouTube,Instagram.
-║🔰 /groupmenu = group moderation and automation.
-║🦄 /randommenu = some random stuffs look yourself.
-║🔎 /searchmenu = surf the internet within whatsapp.
-║🗂️ /ffmpegmenu = convertion using ffmpeg.
-║🏝️ /filtersmenu = add custom audio filter to mp3 files.
-║🎨 /checkmenu = tag or reply to someone to check what category they are.
-║
-╚◇║
-╔◇║ 👇🏽𝐀𝐝𝐦𝐢𝐧-𝐎𝐧𝐥𝐲
-║🔰 /groupmenu = not safe for work adult stuffs!
-║🍄 /hentaimenu = not safe for work adult stuffs!
-║🥃 /humanmenu = not safe for work adult stuffs!
-║🐙 /ownermenu = owner/dev only!
 ╚════════════╝
 ```
 
