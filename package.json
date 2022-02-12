@@ -1,5 +1,5 @@
 {
-  "name": "ZenApp",
+  "name": "Vlkyre",
   "vers": ": 17.3",
   "verold": "🛰️𝖈𝖔𝖗𝖑𝖊𝖝𝖆 • 𝕾𝖙𝖆𝖇𝖑𝖊 17.2bradio🛰️",
   "depecrated": false,
@@ -25,16 +25,16 @@
     "test": "node validate.js",
     "start": "python3 🐙ᴋʀʏᴏᴛᴇᴋ.py"
   },
-  "homepage": "https://github.com/KryKnz/ZenApp",
+  "homepage": "https://github.com/KryKnz/Vlkyre",
   "author": {
     "name": "KryKnzLab"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/KryKnz/ZenApp.git"
+    "url": "git+https://github.com/KryKnz/Vlkyre.git"
   },
   "bugs": {
-    "url": "https://github.com/Nurutomo/ZenApp/issues"
+    "url": "https://github.com/Nurutomo/Vlkyre/issues"
   },
   "license": "Apache",
   "dependencies": {

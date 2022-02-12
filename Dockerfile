@@ -23,20 +23,20 @@ RUN npm install --global n
 RUN n install 16
 RUN path=path 
 RUN hash -r 
-RUN git clone https://github.com/KryKnz/ZenApp.git 
-RUN cd ZenApp
-WORKDIR /ZenApp
+RUN git clone https://github.com/KryKnz/Vlkyre.git 
+RUN cd Vlkyre
+WORKDIR /Vlkyre
 RUN pip install -r ӄʀǟӄɨռʐ🐙ʟǟɮ.txt
 RUN npm install --force
 # WORKDIR /
-# COPY . /ZenApp
-# WORKDIR /ZenApp
+# COPY . /Vlkyre
+# WORKDIR /Vlkyre
 # RUN git init --initial-branch=KryKnzLab
-# RUN git remote add origin https://github.com/KryKnz/ZenApp.git
+# RUN git remote add origin https://github.com/KryKnz/Vlkyre.git
 # RUN git fetch origin KryKnzLab
 # RUN git reset --hard origin/KryKnzLab
 # RUN git init --initial-branch=KryKnzLab
-# RUN git remote add origin https://github.com/KryKnz/ZenApp.git
+# RUN git remote add origin https://github.com/KryKnz/Vlkyre.git
 # RUN git fetch origin KryKnzLab
 # RUN git reset --hard origin/KryKnzLab
 CMD npm start
