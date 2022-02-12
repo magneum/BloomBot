@@ -18,6 +18,7 @@ RUN wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/local/bin/youtube
 RUN curl https://cli-assets.heroku.com/install.sh | sh
 RUN chmod a+rx /usr/local/bin/youtube-dl
 RUN heroku plugins:install heroku-builds
+RUN /venv/bin/python -m pip install --upgrade pip
 RUN apt-get install npm -y 
 RUN npm install --global npm@8.5.0
 RUN npm install --global n
