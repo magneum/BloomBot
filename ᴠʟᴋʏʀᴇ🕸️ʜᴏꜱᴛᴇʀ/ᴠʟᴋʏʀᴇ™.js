@@ -131,6 +131,8 @@ return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .sendMessage(groupupdateID.id, { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 }, MessageType.image, {
 mimetype: Mimetype.png,
 caption: `*🛸Attention Here Everyone In the Group!🛸*
+
+
 ╔═══════★
 ║⛺𝐆𝐫𝐨𝐮𝐩 𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _Open For All_
 ║🎪𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${groupupdateID.subject}
@@ -144,6 +146,8 @@ return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .sendMessage(groupupdateID.id, { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 }, MessageType.image, {
 mimetype: Mimetype.png,
 caption: `*🛸Attention Here Everyone In the Group!🛸*
+
+
 ╔═══════★
 ║⛺𝐆𝐫𝐨𝐮𝐩 𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _Admins-Only_
 ║🎪𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${groupupdateID.subject}
@@ -161,6 +165,8 @@ contextInfo: {
 mentionedJid: [tag],
 },
 caption: `*🛸Attention Here Everyone In the Group!🛸*
+
+
 ╔═══════★
 ║⛺𝐆𝐫𝐨𝐮𝐩 𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _New Description Added_
 ║🎪𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${groupupdateID.subject}
@@ -177,6 +183,8 @@ return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .sendMessage(groupupdateID.id, { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 }, MessageType.image, {
 mimetype: Mimetype.png,
 caption: `*🛸Attention Here Everyone In the Group!🛸*
+
+
 ╔═══════★
 ║⛺𝐆𝐫𝐨𝐮𝐩 𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _Info Edit Allowed For All_
 ║🎪𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${groupupdateID.subject}
@@ -190,6 +198,8 @@ return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .sendMessage(groupupdateID.id, { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 }, MessageType.image, {
 mimetype: Mimetype.png,
 caption: `*🛸Attention Here Everyone In the Group!🛸*
+
+
 ╔═══════★
 ║⛺𝐆𝐫𝐨𝐮𝐩 𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _Info Edit Admins-Only_
 ║🎪𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${groupupdateID.subject}
@@ -221,12 +231,16 @@ await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
 GroupID,
 {
 contentText: `👋🏻𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚 𝐄𝐯𝐞𝐫𝐲𝐨𝐧𝐞, ${Timers}
-*To Admins Of This Group!*
+*To Admins Of This Group:*
 _Some Of Your Members Requested Our Vlkyre HQ to Add Our Bot In This Group.Have Fun!_
+
+
 ╔════◇⭕𝐅𝐨𝐫 𝐀𝐝𝐦𝐢𝐧𝐬
+║
 ║◇ *antilink:* _on/off_
 ║◇ *autorank:* _on/off_
 ╚════════════╝
+
 👇🏽𝗣𝗿𝗲𝘀𝘀 𝗯𝗲𝗹𝗼𝘄 𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗦𝘁𝗮𝗿𝘁👇🏽`,
 footerText: `◣Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers} ☊ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™◥`,
 buttons: [
