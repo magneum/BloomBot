@@ -6,7 +6,7 @@
 const ᴠʟᴋʏʀᴇ_Buttons = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/ᴠʟᴋʏʀᴇ_Buttons`);
 const ᴠʟᴋʏʀᴇ_Static = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/ᴠʟᴋʏʀᴇ_Static`);
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
-const nsfwList = require(`../../ᴠʟᴋʏʀᴇ🥠ᴘᴏʀᴛ/nsfw`);
+const antinsfwList = require(`../../ᴠʟᴋʏʀᴇ🥠ᴘᴏʀᴛ/nsfw`);
 const _𝔏𝔞𝔟_ = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/_𝔏𝔞𝔟_`);
 const ꜰᴜᴄᴋ = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/oShit`);
 const motor = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/motor`);
@@ -20,7 +20,7 @@ var newScpt = scriptName.slice(0, -3).toLowerCase();
 `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 module.exports = {
 name: newScpt,
-ᴠʟᴋʏʀᴇӄǟɨʐօ: `${ᴋᴇɪ}nsfw _on/off_`,
+ᴠʟᴋʏʀᴇӄǟɨʐօ: `${ᴋᴇɪ}antinsfw _on/off_`,
 async handle(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, chat, ᴠʟᴋʏʀᴇ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
 try {
 var աɦօֆɛռȶɦǟȶ = ᴠʟᴋʏʀᴇ.sender;
@@ -81,14 +81,14 @@ chat,
 } else {
 `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 if (Needs[0] === `ON` || Needs[0] === `on` || Needs[0] === `On`) {
-nsfwList.findOne(
+antinsfwList.findOne(
 {
 serverID: ᴠʟᴋʏʀᴇ.chatId,
 },
 async (Error, server) => {
 if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
 if (!server) {
-var newServer = new nsfwList({
+var newServer = new antinsfwList({
 serverID: ᴠʟᴋʏʀᴇ.chatId,
 value: "ON",
 });
@@ -116,13 +116,13 @@ contentText: `🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ},  (admin)
 footerText: `◣Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers} ☊ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™◥`,
 buttons: [
 {
-buttonId: `${ᴋᴇɪ}nsfw on`,
-buttonText: { displayText: `${ᴋᴇɪ}nsfw on` },
+buttonId: `${ᴋᴇɪ}antinsfw on`,
+buttonText: { displayText: `${ᴋᴇɪ}antinsfw on` },
 type: 1,
 },
 {
-buttonId: `${ᴋᴇɪ}nsfw off`,
-buttonText: { displayText: `${ᴋᴇɪ}nsfw off` },
+buttonId: `${ᴋᴇɪ}antinsfw off`,
+buttonText: { displayText: `${ᴋᴇɪ}antinsfw off` },
 type: 1,
 },
 ],
@@ -158,13 +158,13 @@ contentText: `🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ},  (admin)
 footerText: `◣Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers} ☊ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™◥`,
 buttons: [
 {
-buttonId: `${ᴋᴇɪ}nsfw on`,
-buttonText: { displayText: `${ᴋᴇɪ}nsfw on` },
+buttonId: `${ᴋᴇɪ}antinsfw on`,
+buttonText: { displayText: `${ᴋᴇɪ}antinsfw on` },
 type: 1,
 },
 {
-buttonId: `${ᴋᴇɪ}nsfw off`,
-buttonText: { displayText: `${ᴋᴇɪ}nsfw off` },
+buttonId: `${ᴋᴇɪ}antinsfw off`,
+buttonText: { displayText: `${ᴋᴇɪ}antinsfw off` },
 type: 1,
 },
 ],
@@ -184,7 +184,7 @@ contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
 }
 `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 if (Needs[0] === `OFF` || Needs[0] === `off` || Needs[0] === `Off`) {
-nsfwList.findOne(
+antinsfwList.findOne(
 {
 serverID: ᴠʟᴋʏʀᴇ.chatId,
 },
@@ -212,13 +212,13 @@ contentText: `🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ},  (admin)
 footerText: `◣Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers} ☊ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™◥`,
 buttons: [
 {
-buttonId: `${ᴋᴇɪ}nsfw on`,
-buttonText: { displayText: `${ᴋᴇɪ}nsfw on` },
+buttonId: `${ᴋᴇɪ}antinsfw on`,
+buttonText: { displayText: `${ᴋᴇɪ}antinsfw on` },
 type: 1,
 },
 {
-buttonId: `${ᴋᴇɪ}nsfw off`,
-buttonText: { displayText: `${ᴋᴇɪ}nsfw off` },
+buttonId: `${ᴋᴇɪ}antinsfw off`,
+buttonText: { displayText: `${ᴋᴇɪ}antinsfw off` },
 type: 1,
 },
 ],
@@ -257,13 +257,13 @@ contentText: `🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ},  (admin)
 footerText: `◣Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers} ☊ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™◥`,
 buttons: [
 {
-buttonId: `${ᴋᴇɪ}nsfw on`,
-buttonText: { displayText: `${ᴋᴇɪ}nsfw on` },
+buttonId: `${ᴋᴇɪ}antinsfw on`,
+buttonText: { displayText: `${ᴋᴇɪ}antinsfw on` },
 type: 1,
 },
 {
-buttonId: `${ᴋᴇɪ}nsfw off`,
-buttonText: { displayText: `${ᴋᴇɪ}nsfw off` },
+buttonId: `${ᴋᴇɪ}antinsfw off`,
+buttonText: { displayText: `${ᴋᴇɪ}antinsfw off` },
 type: 1,
 },
 ],

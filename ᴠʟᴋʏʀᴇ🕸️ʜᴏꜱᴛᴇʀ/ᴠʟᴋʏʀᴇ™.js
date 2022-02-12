@@ -245,7 +245,7 @@ _Some Of Your Members Requested Our Vlkyre HQ to Add Our Bot In This Group.Have 
 ║
 ║◇ *antilink:* _on/off_
 ║◇ *autorank:* _on/off_
-║◇ *nsfw:* _on/off_
+║◇ *antinsfw:* _on/off_
 ╚════════════༻꧂
 
 👇🏽𝗣𝗿𝗲𝘀𝘀 𝗯𝗲𝗹𝗼𝘄 𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗦𝘁𝗮𝗿𝘁👇🏽`,
