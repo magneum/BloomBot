@@ -397,24 +397,7 @@ return ᴠʟᴋʏʀᴇ_Buttons.MTB(
 chat,
 ᴠʟᴋʏʀᴇ,
 `🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ}, _Using ᴠʟᴋʏʀᴇ In Private Is No longer Allowed!_
-*Needs Vlkyre? Send Your Group Link In My Private*
-
-╔◇║👇🏽𝗝𝗼𝗶𝗻 𝗔𝗻𝘆 𝐕𝐥𝐤𝐲𝐫𝐞 𝗚𝗿𝗼𝘂𝗽👇🏽
-║
-║🍾 𝐕𝐥𝐤𝐲𝐫𝐞 𝐎𝐟𝐟𝐢𝐜𝐢𝐚𝐥 /𝟏: _${_𝔏𝔞𝔟_.HASH}_
-║🍾 𝐕𝐥𝐤𝐲𝐫𝐞 𝐎𝐟𝐟𝐢𝐜𝐢𝐚𝐥 /𝟐: _${_𝔏𝔞𝔟_.HASHS}_
-║🍾 𝐕𝐥𝐤𝐲𝐫𝐞 𝐎𝐟𝐟𝐢𝐜𝐢𝐚𝐥 /𝟑: _${_𝔏𝔞𝔟_.HASHSH}_
-╚════════════༻꧂
-
-╔◇║🏮𝐕𝐥𝐤𝐲𝐫𝐞 𝐑𝐮𝐥𝐞𝐬
-║
-║🔖 _Do not call bot, if you do then you'll get blocked by bot._
-║🔖 _Do not spam bot with commands, if bot is not responding then it means either bot is off or there's internet issue at server end._
-║🔖 _Do not abuse/disrespect bot and its owner._
-║🔖 _If you see any bug/error in bot then report it to devs in the above group chats._
-║🔖 _If you want this bot in your group then contact devs._
-║🔖 _Enjoy the bot and have fun._
-╚════════════༻꧂`
+*If You Need Vlkyre In Your Group Then Type: ${ᴋᴇɪ}request _(your group link)_ !*`
 );
 }
 `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
