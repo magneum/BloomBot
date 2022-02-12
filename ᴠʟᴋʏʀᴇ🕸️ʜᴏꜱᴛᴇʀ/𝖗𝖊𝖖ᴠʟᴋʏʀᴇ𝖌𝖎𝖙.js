@@ -17,7 +17,7 @@ var rebase = require(`child_process`).exec(
 rebase.stdout.pipe(process.stdout);
 require(`simple-git`)()
 .exec(async () => {
-console.log(`💡 𝐈𝐧𝐟𝐨⬰ Updating Corlexa System With Latest Patch...`);
+console.log(`💡 𝐈𝐧𝐟𝐨⬰ Updating Vlkyre System With Latest Patch...`);
 })
 .pull(async (Error, update) => {
 if (Error) {
@@ -26,21 +26,14 @@ console.log(
 );
 }
 if (update && update.summary.changes) {
-var childs = require(`child_process`).exec(`python3 🐙ᴋʀʏᴏᴛᴇᴋ.py`);
-childs.stdout.pipe(process.stdout);
-childs.on(`exit`, async function () {
-process.exitCode = 1;
-console.log(`💡 𝐈𝐧𝐟𝐨⬰ Auto-Updating Finished!`);
-});
+require("child_process").execSync("python3 🐙ᴋʀʏᴏᴛᴇᴋ.py");
 }
 });
 }
 } catch (Error) {
 console.log(`⬡═══════════════════| 🐞𝐄𝐫𝐫𝐨𝐫: \n` + Error);
 console.log(`❌ 𝐄𝐫𝐫𝐨𝐫⬰ ReDeployment Is Needed!`);
-let { execSync } = require("child_process");
-let res = execSync("python3 🐙ᴋʀʏᴏᴛᴇᴋ.py");
-console.log(res.toString());
+require("child_process").execSync("python3 🐙ᴋʀʏᴏᴛᴇᴋ.py");
 }
 })();
 `|⬡════════════════════════════════════════════|                            |═══════════════════════════════════════════⬡|`;
