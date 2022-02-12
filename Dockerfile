@@ -1,8 +1,7 @@
-# FROM python:latest
-# ENV KRAKINZ_LAB "/venv"
-# RUN python -m venv $KRAKINZ_LAB
-# ENV PATH "$KRAKINZ_LAB/bin:$PATH"
-FROM kalilinux/kali-bleeding-edge
+FROM python:latest
+ENV KRAKINZ_LAB "/venv"
+RUN python -m venv $KRAKINZ_LAB
+ENV PATH "$KRAKINZ_LAB/bin:$PATH"
 RUN apt-get update 
 RUN apt-get upgrade -y 
 RUN apt-get install git -y 
@@ -15,32 +14,29 @@ RUN apt-get install bpm-tools -y
 RUN apt-get install opus-tools -y  
 RUN apt-get install python3-pip -y 
 RUN apt-get install python-is-python3
-# RUN wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/local/bin/youtube-dl
-# RUN curl https://cli-assets.heroku.com/install.sh | sh
-# RUN chmod a+rx /usr/local/bin/youtube-dl
-# RUN heroku plugins:install heroku-builds
+RUN wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/local/bin/youtube-dl
+RUN curl https://cli-assets.heroku.com/install.sh | sh
+RUN chmod a+rx /usr/local/bin/youtube-dl
+RUN heroku plugins:install heroku-builds
 RUN apt-get install npm -y 
 RUN npm install --global n
 RUN n install 16
 RUN path=path 
 RUN hash -r 
-RUN git clone https://github.com/Krakinz/Kordapp.git 
-RUN cd Kordapp
-WORKDIR /Kordapp
+RUN git clone https://github.com/Krakinz/ZenApp.git 
+RUN cd ZenApp
+WORKDIR /ZenApp
 RUN pip install -r ӄʀǟӄɨռʐ🐙ʟǟɮ.txt
 RUN npm install --force
 # WORKDIR /
-# COPY . /Kordapp
-# WORKDIR /Kordapp
+# COPY . /ZenApp
+# WORKDIR /ZenApp
 # RUN git init --initial-branch=KrakinzLab
-# RUN git remote add origin https://github.com/Krakinz/Kordapp.git
+# RUN git remote add origin https://github.com/Krakinz/ZenApp.git
 # RUN git fetch origin KrakinzLab
 # RUN git reset --hard origin/KrakinzLab
-# COPY . /Kordapp
-# RUN cd /Kordapp
-# WORKDIR /Kordapp
 # RUN git init --initial-branch=KrakinzLab
-# RUN git remote add origin https://github.com/Krakinz/Kordapp.git
+# RUN git remote add origin https://github.com/Krakinz/ZenApp.git
 # RUN git fetch origin KrakinzLab
 # RUN git reset --hard origin/KrakinzLab
 CMD npm start
