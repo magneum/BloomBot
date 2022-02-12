@@ -35,7 +35,7 @@ return ᴠʟᴋʏʀᴇ_Buttons.MIB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 ᴠʟᴋʏʀᴇ,
-`❌𝐃𝐞𝐧𝐢𝐞𝐝: _Owner/Dev Only.You Are Not Allowed!_`,
+`🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ},\n❌𝐃𝐞𝐧𝐢𝐞𝐝: _Owner/Dev Only.You Are Not Allowed!_`,
 "./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_OwnerOnly.png"
 );
 }
