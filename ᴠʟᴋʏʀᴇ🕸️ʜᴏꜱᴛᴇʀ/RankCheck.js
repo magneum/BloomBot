@@ -17,8 +17,8 @@ family: `TheHeartOfEverythingDemo`,
 });
 const Canvas = require("canvas");
 var randomMC = require("random-material-color");
-const Economy = require(`../ᴠʟᴋʀᴇ🥠ᴘᴏʀᴛ/economy`);
-const CorlexaExp = require(`../ᴠʟᴋʀᴇ🥠ᴘᴏʀᴛ/experience`);
+const Economy = require(`../ᴠʟᴋʏʀᴇ🥠ᴘᴏʀᴛ/economy`);
+const CorlexaExp = require(`../ᴠʟᴋʏʀᴇ🥠ᴘᴏʀᴛ/experience`);
 const cleanRF = require(`./cleanRF`);
 const fetch = require(`node-fetch`);
 const _𝔏𝔞𝔟_ = require(`./_𝔏𝔞𝔟_`);

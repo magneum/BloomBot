@@ -6,7 +6,7 @@
 const ᴠʟᴋʏʀᴇ_Buttons = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/ᴠʟᴋʏʀᴇ_Buttons`);
 const ᴠʟᴋʏʀᴇ_Static = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/ᴠʟᴋʏʀᴇ_Static`);
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
-const LinkList = require(`../../ᴠʟᴋʀᴇ🥠ᴘᴏʀᴛ/antilink`);
+const LinkList = require(`../../ᴠʟᴋʏʀᴇ🥠ᴘᴏʀᴛ/antilink`);
 const _𝔏𝔞𝔟_ = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/_𝔏𝔞𝔟_`);
 const ꜰᴜᴄᴋ = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/oShit`);
 const motor = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/motor`);
@@ -100,7 +100,7 @@ await newServer
 .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
 const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
 ᴠʟᴋʏʀᴇ.chatId,
-fs.readFileSync(`./ᴠʟᴋʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_Antilink.png`),
+fs.readFileSync(`./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_Antilink.png`),
 MessageType.image,
 {
 mimetype: Mimetype.png,
@@ -142,7 +142,7 @@ contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
 } else {
 const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
 ᴠʟᴋʏʀᴇ.chatId,
-fs.readFileSync(`./ᴠʟᴋʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_Antilink.png`),
+fs.readFileSync(`./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_Antilink.png`),
 MessageType.image,
 {
 mimetype: Mimetype.png,
@@ -196,7 +196,7 @@ if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 if (!server) {
 const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
 ᴠʟᴋʏʀᴇ.chatId,
-fs.readFileSync(`./ᴠʟᴋʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_Antilink.png`),
+fs.readFileSync(`./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_Antilink.png`),
 MessageType.image,
 {
 mimetype: Mimetype.png,
@@ -241,7 +241,7 @@ await server
 .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
 const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
 ᴠʟᴋʏʀᴇ.chatId,
-fs.readFileSync(`./ᴠʟᴋʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_Antilink.png`),
+fs.readFileSync(`./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_Antilink.png`),
 MessageType.image,
 {
 mimetype: Mimetype.png,

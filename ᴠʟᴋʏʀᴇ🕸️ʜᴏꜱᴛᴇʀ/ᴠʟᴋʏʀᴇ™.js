@@ -6,12 +6,12 @@
 require(`./konfs`);
 // ⎿(𝐜)𝐕𝐥𝐤𝐲𝐫𝐞: _kryozen${vers.vers}_⏋\n⎿𝐃𝐚𝐭𝐞: _${Clock}_⏋\n⎿𝐏𝐢𝐧𝐠: _${Ping}ms_⏋
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
-const Welcome = require(`../ᴠʟᴋʀᴇ🥠ᴘᴏʀᴛ/setwelcome`);
-const LinkList = require(`../ᴠʟᴋʀᴇ🥠ᴘᴏʀᴛ/antilink`);
-const Ranker = require(`../ᴠʟᴋʀᴇ🥠ᴘᴏʀᴛ/autorank`);
+const Welcome = require(`../ᴠʟᴋʏʀᴇ🥠ᴘᴏʀᴛ/setwelcome`);
+const LinkList = require(`../ᴠʟᴋʏʀᴇ🥠ᴘᴏʀᴛ/antilink`);
+const Ranker = require(`../ᴠʟᴋʏʀᴇ🥠ᴘᴏʀᴛ/autorank`);
 const ᴠʟᴋʏʀᴇ_Buttons = require(`./ᴠʟᴋʏʀᴇ_Buttons`);
-const BanPerson = require(`../ᴠʟᴋʀᴇ🥠ᴘᴏʀᴛ/ban`);
-const BanGroup = require(`../ᴠʟᴋʀᴇ🥠ᴘᴏʀᴛ/ban`);
+const BanPerson = require(`../ᴠʟᴋʏʀᴇ🥠ᴘᴏʀᴛ/ban`);
+const BanGroup = require(`../ᴠʟᴋʏʀᴇ🥠ᴘᴏʀᴛ/ban`);
 const ᴠʟᴋʏʀᴇ_Static = require(`./ᴠʟᴋʏʀᴇ_Static`);
 const ᴠʟᴋʏʀᴇ_Loca = require(`./ᴠʟᴋʏʀᴇ_Loca`);
 const ᴠʟᴋʏʀᴇֆʏռօք = require(`./ᴠʟᴋʏʀᴇᴢᴇɴ`);
@@ -212,7 +212,7 @@ const MemNum = update.participants[0];
 if (update.action == `add` && MemNum.includes(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.user.jid)) {
 const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
 GroupID,
-{ url: "./ᴠʟᴋʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_base.png" },
+{ url: "./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_base.png" },
 MessageType.image,
 { mimetype: Mimetype.png }
 );
@@ -436,7 +436,7 @@ chat,
 ║
 ║⚰️ 𝗣𝘂𝗻𝗶𝘀𝗵𝗺𝗲𝗻𝘁: _You Will Be Kicked!_
 ╚════════════╝`,
-`./ᴠʟᴋʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_Antilink.png`
+`./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_Antilink.png`
 );
 await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .groupRemove(ᴠʟᴋʏʀᴇ.chatId, [ᴠʟᴋʏʀᴇ.sender])
@@ -450,7 +450,7 @@ return;
 }
 `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 if (ᴠʟᴋʏʀᴇ.isCmd) {
-const Halt = require(`../ᴠʟᴋʀᴇ🥠ᴘᴏʀᴛ/halt`);
+const Halt = require(`../ᴠʟᴋʏʀᴇ🥠ᴘᴏʀᴛ/halt`);
 const ms = require(`parse-ms`);
 Halt.findOne(
 {

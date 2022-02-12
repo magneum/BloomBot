@@ -49,7 +49,7 @@ chat,
 
 (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 by ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🛸 
 _Is Now Rebooting.Wait For (10-30)s_`,
-"./ᴠʟᴋʀᴇ🔌cord/ᴠʟᴋʏʀᴇ.png"
+"./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ.png"
 );
 await heroku
 .delete(`/apps/` + _𝔏𝔞𝔟_.HEROKU_APP_NAME + `/dynos/` + `worker`)
