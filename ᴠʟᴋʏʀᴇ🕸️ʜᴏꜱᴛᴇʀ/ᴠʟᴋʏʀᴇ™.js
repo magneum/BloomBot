@@ -485,7 +485,7 @@ await newHalt
 );
 return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
 ᴠʟᴋʏʀᴇ.chatId,
-`🚔 *Auto User Monitoring Has Started For @${աɦօֆɛռȶɦǟȶռʊʍ} !*\n_💡Try Again in 15seconds!_`,
+`🚔 *Auto User Monitoring Has Started For @${աɦօֆɛռȶɦǟȶռʊʍ} !*\n_💡Try Again in 8seconds!_`,
 MessageType.text,
 {
 contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
