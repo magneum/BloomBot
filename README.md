@@ -20,7 +20,7 @@
 ║
 ╚◇║
 ╔◇║❓What is the reason/topic for this group?
-║ ᴠʟᴋʏʀᴇ is an Advance Whatsapp User-Bot. You Can Use The Bot in this group or in your respective groups.
+║ ᴠʟᴋʏʀᴇ is an Advance Whatsapp User-Bot. You Can Use The Bot in your respective groups.
 ║
 ╚◇║
 ╔◇║❓I want to know how to deploy ᴠʟᴋʏʀᴇ.
