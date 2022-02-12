@@ -319,9 +319,6 @@ console.log(
 `❌ 𝐄𝐫𝐫𝐨𝐫⬰ Merge Resulted with Total-Conflicts: ` + Error
 );
 }
-if (update.files.includes(`package.json`)) {
-require(`child_process`).exec(`npm i --force`);
-}
 if (update && update.summary.changes) {
 var childs =
 require(`child_process`).exec(`python3 🐙ᴋʀʏᴏᴛᴇᴋ.py`);
