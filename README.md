@@ -1,7 +1,7 @@
 [![Open Source Love svg3](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)<img align="centre" src="https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg" alt="Krakinz"/><img align="centre" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"/>
 
-# (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈 🛸stable-yet-debug
-
+# (𝐜)𝐙𝐞𝐧𝐀𝐩𝐩
+# ☣️[𝕷𝖎𝖈𝖊𝖓𝖘𝖊](LICENSE)
 
 🛸[`(𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚 𝐀𝐝𝐯𝐚𝐧𝐜𝐞 𝐀𝐈🍾 #A`](https://chat.whatsapp.com/LKN8uVBd8ucHRHofz0jBSd)
 🛸[`(𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚 𝐀𝐝𝐯𝐚𝐧𝐜𝐞 𝐀𝐈🍾 #B`](https://chat.whatsapp.com/HKO5WLEZxMe3xWCyiv6vBu)
@@ -78,7 +78,7 @@
 ╚════════════╝
 ```
 
-# 🛸[Disclaimer]
+# 🛸𝐃𝐢𝐬𝐜𝐥𝐚𝐢𝐦𝐞𝐫
 
 - We won't be responsible for any kind of ban due to this bot.
 - Kordapp was made for fun purpose and to make group management easier.
@@ -88,10 +88,8 @@
 - Forking Repo is fine. But if you edit something we will not provide any help.
 - In short, Fork At Your Own Risk.
 
-# 🛸[𝐃𝐞𝐩𝐥𝐨𝐲𝐦𝐞𝐧𝐭]
+# 🛸𝐃𝐞𝐩𝐥𝐨𝐲𝐦𝐞𝐧𝐭
 
 <a href="https://heroku.com/deploy">
   <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
 </a>
-
-# ☣️[𝕷𝖎𝖈𝖊𝖓𝖘𝖊](LICENSE)
