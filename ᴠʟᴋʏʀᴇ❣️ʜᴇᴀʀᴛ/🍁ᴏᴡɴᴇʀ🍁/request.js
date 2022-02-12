@@ -47,7 +47,7 @@ chat,
 await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.acceptInvite(code).then(async (res) => {
 const gMd = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.groupMetadata(res.gid);
 const gD = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.groupMetadata(res.gid);
-if (gMd.participants.length < 15) {
+if (!ᴠʟᴋʏʀᴇ.isSenderDev && gMd.participants.length < 15) {
 await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.groupRemove(res.gid, [ᴠʟᴋʏʀᴇ.Myself]);
 return ᴠʟᴋʏʀᴇ_Buttons.MTB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
@@ -58,10 +58,9 @@ chat,
 ╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
 ║
 ║❌ 𝗘𝗿𝗿𝗼𝗿: _Group Has ${gMd.participants.length}/15 members needed. Leaving Group!_
-║
-║📜𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${gD.subject}
-║💞𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${gD.participants.length}
-║📝𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${gD.desc}
+║📜 𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${gD.subject}
+║💞 𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${gD.participants.length}
+║📝 𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${gD.desc}
 ╚════════════╝`
 );
 } else {
@@ -74,10 +73,9 @@ chat,
 ╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
 ║
 ║🔓 𝐒𝐭𝐚𝐭𝐮𝐬: _Joined Group!_
-║
-║📜𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${gD.subject}
-║💞𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${gD.participants.length}
-║📝𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${gD.desc}
+║📜 𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${gD.subject}
+║💞 𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${gD.participants.length}
+║📝 𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${gD.desc}
 ╚════════════╝`
 );
 }
