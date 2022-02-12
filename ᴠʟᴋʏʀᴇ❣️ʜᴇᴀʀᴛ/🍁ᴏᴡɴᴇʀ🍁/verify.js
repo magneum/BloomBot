@@ -67,6 +67,7 @@ contentText: `🤖𝐕𝐞𝐫𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧: *@${աɦօֆ
 ║📌 _Monitor Bugs!_
 ║📌 _Monitor Anti-Spams!_
 ║📌 _Monitor Anti-Links!_
+║📌 _Monitor Anti-NSFW!_
 ║📌 _Monitor Anti-Virtex!_
 ║📌 _Monitor Group Ranks!_
 ║📌 _Monitor Performance!_
