@@ -33,9 +33,6 @@
 "HEROKU": {
 "description": "Keep It Heroku!"
 },
-"CORLEXAQL": {
-"description": "Your Localized Postsqldb API Link!"
-},
 "CORLEXAYT": {
 "description": "Your Localized YouTube Api v3!"
 },
