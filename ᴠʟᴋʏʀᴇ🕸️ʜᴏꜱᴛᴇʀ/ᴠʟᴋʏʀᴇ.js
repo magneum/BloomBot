@@ -23,19 +23,14 @@ console.log(
 `❌ 𝐄𝐫𝐫𝐨𝐫⬰ Merge Resulted with Total-Conflicts: ` + Error
 );
 if (update && update.summary.changes)
-require("child_process").execSync("python3 🐙ᴋʀʏᴏᴛᴇᴋ.py");
+require("child_process").exec("python3 🐙ᴋʀʏᴏᴛᴇᴋ.py");
 });
 }
 } catch (Error) {
 console.log(`⬡═══════════════════| 🐞𝐄𝐫𝐫𝐨𝐫: \n` + Error);
-console.log(`❌ 𝐄𝐫𝐫𝐨𝐫⬰ ReDeployment Is Needed!`);
-require("child_process").execSync("python3 🐙ᴋʀʏᴏᴛᴇᴋ.py");
 }
-const ᴠʟᴋʏʀᴇ = require("./ᴠʟᴋʏʀᴇ™");
-await ᴠʟᴋʏʀᴇ().catch((Error) => {
-console.log(`⬡═══════════════════| 🐞𝐄𝐫𝐫𝐨𝐫: \n` + Error);
-require("child_process").execSync("python3 🐙ᴋʀʏᴏᴛᴇᴋ.py");
-});
+const { ᴠʟᴋʏʀᴇ } = require("./ᴠʟᴋʏʀᴇ™");
+await ᴠʟᴋʏʀᴇ();
 })();
 `|⬡════════════════════════════════════════════|                            |═══════════════════════════════════════════⬡|`;
 `|                                                                                                                        |`;
