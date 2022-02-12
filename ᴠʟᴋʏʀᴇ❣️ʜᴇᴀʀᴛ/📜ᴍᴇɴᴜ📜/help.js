@@ -289,7 +289,7 @@ os.totalmem()
 ╔◇꧁༺ 𝐆𝐫𝐨𝐮𝐩𝐬/𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧 ༻꧂
 ║
 ║🔰•  ${ᴋᴇɪ}antilink
-║🔰•  ${ᴋᴇɪ}nsfw
+║🔰•  ${ᴋᴇɪ}antinsfw
 ║🔰•  ${ᴋᴇɪ}autorank
 ║🔰•  ${ᴋᴇɪ}setwelcome
 ║🔰•  ${ᴋᴇɪ}promote

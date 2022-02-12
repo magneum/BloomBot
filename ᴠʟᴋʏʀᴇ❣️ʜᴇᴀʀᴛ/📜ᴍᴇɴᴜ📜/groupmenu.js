@@ -33,7 +33,7 @@ var MainText = `🪶 𝐇𝐞𝐲: •@${աɦօֆɛռȶɦǟȶռʊʍ},
 ╔════◇🔰 𝐆𝐫𝐨𝐮𝐩𝐬/𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧
 ║
 ║• *${ᴋᴇɪ}antilink:*  _remove any person who sends any links_
-║• *${ᴋᴇɪ}nsfw:* _turn nsfw on or off_
+║• *${ᴋᴇɪ}antinsfw:* _turn antinsfw on or off_
 ║• *${ᴋᴇɪ}autorank:*  _turn on auto ranking per gc_
 ║• *${ᴋᴇɪ}setwelcome:*  _welcome new members with custom message_
 ║• *${ᴋᴇɪ}promote:*  _promote member to admin_
