@@ -61,7 +61,7 @@ chat,
 ║🤖 *User Added To Database For First Time!*
 ║🦋 _Try ${ᴋᴇɪ}${defaultnm} Again!_
 ╚════════════╝`,
-`./ᴄᴏʀʟᴇxᴀ☣️Reactor/ᴄᴏʀʟᴇxᴀ_Mongo.png`
+`./ᴠʟᴋʀᴇ🔌cord/ᴄᴏʀʟᴇxᴀ_Mongo.png`
 );
 } else {
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
@@ -193,7 +193,7 @@ return notFond;
 wikipedia(Needs.join(` `))
 .then((res) => {
 if (res.result.thumb.endsWith(`not-found.png`)) {
-var thumbs = `./ᴄᴏʀʟᴇxᴀ☣️Reactor/ᴄᴏʀʟᴇxᴀ_Wikipedia.png`;
+var thumbs = `./ᴠʟᴋʀᴇ🔌cord/ᴄᴏʀʟᴇxᴀ_Wikipedia.png`;
 } else {
 var thumbs = res.result.thumb;
 }

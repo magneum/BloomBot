@@ -70,7 +70,7 @@ chat,
 ║🤖 *User Added To Database For First Time!*
 ║🦋 _Try ${ᴋᴇɪ}${defaultnm} Again!_
 ╚════════════╝`,
-`./ᴄᴏʀʟᴇxᴀ☣️Reactor/ᴄᴏʀʟᴇxᴀ_Mongo.png`
+`./ᴠʟᴋʀᴇ🔌cord/ᴄᴏʀʟᴇxᴀ_Mongo.png`
 );
 } else {
 return ᴄᴏʀʟᴇxᴀ_Buttons.MTB(

@@ -212,7 +212,7 @@ const MemNum = update.participants[0];
 if (update.action == `add` && MemNum.includes(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.user.jid)) {
 const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
 GroupID,
-{ url: "./vlkre🔌cord/𝖈𝖔𝖗𝖑𝖊𝖝𝖆_base.png" },
+{ url: "./ᴠʟᴋʀᴇ🔌cord/𝖈𝖔𝖗𝖑𝖊𝖝𝖆_base.png" },
 MessageType.image,
 { mimetype: Mimetype.png }
 );
@@ -436,7 +436,7 @@ chat,
 ║
 ║⚰️ 𝗣𝘂𝗻𝗶𝘀𝗵𝗺𝗲𝗻𝘁: _You Will Be Kicked!_
 ╚════════════╝`,
-`./vlkre🔌cord/ᴄᴏʀʟᴇxᴀ_Antilink.png`
+`./ᴠʟᴋʀᴇ🔌cord/ᴄᴏʀʟᴇxᴀ_Antilink.png`
 );
 await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .groupRemove(𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId, [𝖈𝖔𝖗𝖑𝖊𝖝𝖆.sender])
