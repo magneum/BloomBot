@@ -27,7 +27,7 @@ RUN hash -r
 RUN git clone https://github.com/KryKnz/Vlkyre.git 
 RUN cd Vlkyre
 WORKDIR /Vlkyre
-RUN pip install -r ӄʀǟӄɨռʐ🐙ʟǟɮ.txt
+RUN pip install -r кгץкภչ.txt
 RUN npm install --force
 # WORKDIR /
 # COPY . /Vlkyre

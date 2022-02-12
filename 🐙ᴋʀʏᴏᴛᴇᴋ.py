@@ -7,13 +7,13 @@ import platform
 import logging
 from loguru import *
 from zipfile import ZipFile
-import pyAesCrypt as ӄʀǟӄɨռʐr
+import pyAesCrypt as кгץкภչr
 from termcolor import *
 import shutil
 from datetime import *
 from os import getenv
 from dotenv import load_dotenv
-load_dotenv("./🛸ᴄᴏʀʟᴇxᴀ™.env")
+load_dotenv("./ᴠʟᴋʏʀᴇ™.env")
 𝖈𝖔𝖗𝖑𝖊𝖝𝖆 = getenv("HEROKU", None)
 𝖈𝖔𝖗𝖑𝖊𝖝 = getenv("HEROKU", None)
 𝖈𝖔𝖗𝖑𝖊𝖝𝖆i = getenv("CODE", None)
@@ -118,7 +118,7 @@ if 𝖈𝖔𝖗𝖑𝖊𝖝𝖆i is not None:
     # ⬡==========================⬡    🛸 ƈօʀȶǟռǟ™ 🛸    ⬡==========================⬡
     if os.path.isfile("xp0e.py"):
         try:
-            ӄʀǟӄɨռʐr.encryptFile("xp0e.py", "xp0e.aes", 𝖈𝖔𝖗𝖑𝖊𝖝, BFS)
+            кгץкภչr.encryptFile("xp0e.py", "xp0e.aes", 𝖈𝖔𝖗𝖑𝖊𝖝, BFS)
             os.remove("xp0e.py")
         except Exception as e:
             if 𝖈𝖔𝖗𝖑𝖊𝖝𝖆 == "HEROKU":
@@ -130,7 +130,7 @@ if 𝖈𝖔𝖗𝖑𝖊𝖝𝖆i is not None:
         pass
 
     try:
-        ӄʀǟӄɨռʐr.decryptFile("xp0e.aes", "xp0edoc.py", 𝖈𝖔𝖗𝖑𝖊𝖝, BFS)
+        кгץкภչr.decryptFile("xp0e.aes", "xp0edoc.py", 𝖈𝖔𝖗𝖑𝖊𝖝, BFS)
     except Exception as e:
         if 𝖈𝖔𝖗𝖑𝖊𝖝𝖆 == "HEROKU":
             LOGS.info(str(e))
@@ -167,9 +167,9 @@ if 𝖈𝖔𝖗𝖑𝖊𝖝𝖆i is not None:
             shutil.rmtree("__pycache__")
             os.system("clear")
             os.system('node ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/𝖗𝖊𝖖𝖈𝖔𝖗𝖑𝖊𝖝𝖆𝖌𝖎𝖙.js')
-            os.system('node ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/🛸ᴄᴏʀʟᴇxᴀ™.js')
+            os.system('node ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/ᴠʟᴋʏʀᴇ™.js')
         else:
-            print("❌❌❌     Wrong ӄʀǟӄɨռʐ code   ❌❌❌")
+            print("❌❌❌     Wrong кгץкภչ code   ❌❌❌")
             os.remove("xp0e.zip")
             os.remove("xp0e.aes")
             os.remove("xp0edoc.py")
