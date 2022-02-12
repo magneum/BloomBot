@@ -167,7 +167,7 @@ if ᴠʟᴋʏʀᴇi is not None:
             shutil.rmtree("__pycache__")
             os.system("clear")
             os.system('node ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/𝖗𝖊𝖖ᴠʟᴋʏʀᴇ𝖌𝖎𝖙.js')
-            # os.system('node ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/ᴠʟᴋʏʀᴇ™.js')
+            os.system('node ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/ᴠʟᴋʏʀᴇ™.js')
         else:
             print("❌❌❌     Wrong кгץкภչ code   ❌❌❌")
             os.remove("xp0e.zip")
