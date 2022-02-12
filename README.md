@@ -1,4 +1,4 @@
-[![Open Source Love svg3](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)<img align="centre" src="https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg" alt="Krakinz"/><img align="centre" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"/>
+[![Open Source Love svg3](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)<img align="centre" src="https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg" alt="KryKnz"/><img align="centre" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"/>
 
 # (𝐜)𝐙𝐞𝐧𝐀𝐩𝐩
 # ☣️[𝕷𝖎𝖈𝖊𝖓𝖘𝖊](LICENSE)
@@ -46,13 +46,6 @@
 ╚◇║
 ╔◇║❓Can i send any link?
 ║ Allowed Links: YouTube. Anything else = bot will kick you.
-║
-║◇ ❓Who made ᴄᴏʀʟᴇxᴀ?
-║ KrakinzLab
-╚◇║
-╔◇║ ❓License and Copyright?
-║ Visit: http://github.com/krakinzlab/ᴄᴏʀʟᴇxᴀ
-║
 ╚◇║
 ╔◇║💡 𝐀𝐥𝐥 𝐂𝐨𝐦𝐦𝐚𝐧𝐝 𝐂𝐚𝐭𝐞𝐠𝐨𝐫𝐢𝐞𝐬 𝐁𝐫𝐢𝐞𝐟𝐥𝐲 𝐄𝐱𝐩𝐥𝐚𝐢𝐧𝐞𝐝
 ║

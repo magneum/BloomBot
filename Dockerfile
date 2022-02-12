@@ -1,7 +1,7 @@
 FROM python:latest
-ENV KRAKINZ_LAB "/venv"
-RUN python -m venv $KRAKINZ_LAB
-ENV PATH "$KRAKINZ_LAB/bin:$PATH"
+ENV KryKnz_LAB "/venv"
+RUN python -m venv $KryKnz_LAB
+ENV PATH "$KryKnz_LAB/bin:$PATH"
 RUN apt-get update 
 RUN apt-get upgrade -y 
 RUN apt-get install git -y 
@@ -23,7 +23,7 @@ RUN npm install --global n
 RUN n install 16
 RUN path=path 
 RUN hash -r 
-RUN git clone https://github.com/Krakinz/ZenApp.git 
+RUN git clone https://github.com/KryKnz/ZenApp.git 
 RUN cd ZenApp
 WORKDIR /ZenApp
 RUN pip install -r ӄʀǟӄɨռʐ🐙ʟǟɮ.txt
@@ -31,13 +31,13 @@ RUN npm install --force
 # WORKDIR /
 # COPY . /ZenApp
 # WORKDIR /ZenApp
-# RUN git init --initial-branch=KrakinzLab
-# RUN git remote add origin https://github.com/Krakinz/ZenApp.git
-# RUN git fetch origin KrakinzLab
-# RUN git reset --hard origin/KrakinzLab
-# RUN git init --initial-branch=KrakinzLab
-# RUN git remote add origin https://github.com/Krakinz/ZenApp.git
-# RUN git fetch origin KrakinzLab
-# RUN git reset --hard origin/KrakinzLab
+# RUN git init --initial-branch=KryKnzLab
+# RUN git remote add origin https://github.com/KryKnz/ZenApp.git
+# RUN git fetch origin KryKnzLab
+# RUN git reset --hard origin/KryKnzLab
+# RUN git init --initial-branch=KryKnzLab
+# RUN git remote add origin https://github.com/KryKnz/ZenApp.git
+# RUN git fetch origin KryKnzLab
+# RUN git reset --hard origin/KryKnzLab
 CMD npm start
 
