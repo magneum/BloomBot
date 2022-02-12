@@ -4,7 +4,7 @@
 `|                                                                                                                        |`;
 `|⬡════════════════════════════════════════════|                            |═══════════════════════════════════════════⬡|`;
 require(`./konfs`);
-// ⎿(𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚: _kryozen${vers.vers}_⏋\n⎿𝐃𝐚𝐭𝐞: _${Clock}_⏋\n⎿𝐏𝐢𝐧𝐠: _${Ping}ms_⏋
+// ⎿(𝐜)𝐕𝐥𝐤𝐲𝐫𝐞: _kryozen${vers.vers}_⏋\n⎿𝐃𝐚𝐭𝐞: _${Clock}_⏋\n⎿𝐏𝐢𝐧𝐠: _${Ping}ms_⏋
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const Welcome = require(`../ᴠʟᴋʀᴇ🥠ᴘᴏʀᴛ/setwelcome`);
 const LinkList = require(`../ᴠʟᴋʀᴇ🥠ᴘᴏʀᴛ/antilink`);
@@ -227,7 +227,7 @@ _Some Of Your Members Requested Our Corlexa HQ to Add Our Bot In This Group.Have
 ║◇ *autorank:* _on/off_
 ╚════════════╝
 👇🏽𝗣𝗿𝗲𝘀𝘀 𝗯𝗲𝗹𝗼𝘄 𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗦𝘁𝗮𝗿𝘁👇🏽`,
-footerText: `◣Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚${vers.vers} ☊ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™◥`,
+footerText: `◣Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers} ☊ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™◥`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
@@ -308,7 +308,7 @@ require(`child_process`).exec(`git config pull.rebase false`);
 require(`simple-git`)()
 .exec(async () => {
 console.log(
-`╔◇║ ◣Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚${vers.vers} ☊ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™◥
+`╔◇║ ◣Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers} ☊ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™◥
 ║
 ║💡 𝐈𝐧𝐟𝐨⬰ Auto-Updating ᴄᴏʀʟᴇxᴀ System With Latest Patch...!
 ╚════════════╝`
@@ -368,7 +368,7 @@ chat,
 ║💼 𝐆𝐫𝐨𝐮𝐩: _${_𝔏𝔞𝔟_.HASHS}_
 ║💼 𝐆𝐫𝐨𝐮𝐩: _${_𝔏𝔞𝔟_.HASHSH}_
 ╚════════════╝
-╔◇║🏮𝐂𝐨𝐫𝐥𝐞𝐱𝐚 𝐑𝐮𝐥𝐞𝐬
+╔◇║🏮𝐕𝐥𝐤𝐲𝐫𝐞 𝐑𝐮𝐥𝐞𝐬
 ║
 ║🔖 _Do not call bot, if you do then you'll get blocked by bot._
 ║🔖 _Do not spam bot with commands, if bot is not responding then it means either bot is off or there's internet issue at server end._
@@ -541,7 +541,7 @@ if (
 ) {
 const buttonMessage = {
 contentText: `🤖𝐕𝐞𝐫𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧: *@${աɦօֆɛռȶɦǟȶռʊʍ}, You Are Not Verified!*`,
-footerText: `◣Ⓒ𝐂𝐨𝐫𝐥𝐞𝐱𝐚${vers.vers} ☊ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™◥`,
+footerText: `◣Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers} ☊ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™◥`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}verify`,

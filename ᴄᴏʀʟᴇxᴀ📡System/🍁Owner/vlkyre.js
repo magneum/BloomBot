@@ -8,9 +8,14 @@ const ᴄᴏʀʟᴇxᴀ_Static = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱ�
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const cleanRF = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/cleanRF`);
 const ꜰᴜᴄᴋ = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/oShit`);
+const speed = require(`performance-now`);
+const { performance } = require(`perf_hooks`);
+const vers = require(`../../package.json`);
 const _𝔏𝔞𝔟_ = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/_𝔏𝔞𝔟_`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
+const os = require(`os`);
+const { formatp, runtime } = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/mizu`);
 const fs = require(`fs`);
 var path = require(`path`);
 var scriptName = path.basename(__filename);
@@ -18,44 +23,125 @@ var newScpt = scriptName.slice(0, -3).toLowerCase();
 `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 module.exports = {
 name: newScpt,
-async handle(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, chat, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping, Timers) {
+async handle(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, chat, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
 try {
 var աɦօֆɛռȶɦǟȶ = 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.sender;
+const defaultnm = 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.commandName;
 var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ
 .substring(0, աɦօֆɛռȶɦǟȶ.length - 15)
 .replace(/[+ ]/g, "");
-const defaultnm = 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.commandName;
 const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
 `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-const hold = require("../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/Hold");
+const hold = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/Hold`);
 await hold.Hold(𝖈𝖔𝖗𝖑𝖊𝖝𝖆);
 `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-var MediaUrl = `./ᴠʟᴋʀᴇ🔌cord/𝖈𝖔𝖗𝖑𝖊𝖝𝖆.png`;
-var MainText = `🪶 𝐇𝐞𝐲: •@${աɦօֆɛռȶɦǟȶռʊʍ}, ${Timers}
-🛸𝐕𝐥𝐤𝐲𝐫𝐞: _ɪꜱ ᴀ ᴡʜᴀᴛꜱᴀᴘᴘ ᴍᴜʟᴛɪᴘᴜʀᴘᴏꜱᴇ-ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ ᴍᴏᴅᴇʀᴀᴛɪᴏɴ,ᴀᴜᴛᴏᴍᴀᴛɪᴏɴ ᴀɴᴅ 100+ ᴄᴏᴍᴍᴀɴᴅꜱ!_
+const used = process.memoryUsage();
+const cpus = os.cpus().map((cpu) => {
+cpu.total = Object.keys(cpu.times).reduce(
+(last, type) => last + cpu.times[type],
+0
+);
+return cpu;
+});
+const cpu = cpus.reduce(
+(last, cpu, _, { length }) => {
+last.total += cpu.total;
+last.speed += cpu.speed / length;
+last.times.user += cpu.times.user;
+last.times.nice += cpu.times.nice;
+last.times.sys += cpu.times.sys;
+last.times.idle += cpu.times.idle;
+last.times.irq += cpu.times.irq;
+return last;
+},
+{
+speed: 0,
+total: 0,
+times: {
+user: 0,
+nice: 0,
+sys: 0,
+idle: 0,
+irq: 0,
+},
+}
+);
 
-╔════◇⭕ 𝐘𝐨𝐮𝐓𝐮𝐛𝐞/𝐅𝐢𝐥𝐭𝐞𝐫
-║
-║• *${ᴋᴇɪ}yt8d:*  _download yt audio with filter_
-║• *${ᴋᴇɪ}ytbassboost:*  _download yt audio with filter_
-║• *${ᴋᴇɪ}ytdeep:*  _download yt audio with filter_
-║• *${ᴋᴇɪ}ytecho:*  _download yt audio with filter_
-║• *${ᴋᴇɪ}ytfast:*  _download yt audio with filter_
-║• *${ᴋᴇɪ}ytflanger:*  _download yt audio with filter_
-║• *${ᴋᴇɪ}ytnightcore:*  _download yt audio with filter_
-║• *${ᴋᴇɪ}ytphaser:*  _download yt audio with filter_
-║• *${ᴋᴇɪ}ytreverse:*  _download yt audio with filter_
-║• *${ᴋᴇɪ}ytslow:*  _download yt audio with filter_
-║• *${ᴋᴇɪ}ytspeed:*  _download yt audio with filter_
-║• *${ᴋᴇɪ}ytsubboost:*  _download yt audio with filter_
-║• *${ᴋᴇɪ}ytsuperslow:*  _download yt audio with filter_
-║• *${ᴋᴇɪ}ytsuperspeed:*  _download yt audio with filter_
-║• *${ᴋᴇɪ}ytsurround:*  _download yt audio with filter_
-║• *${ᴋᴇɪ}ytvaporwave:*  _download yt audio with filter_
-║• *${ᴋᴇɪ}ytvibrato:*  _download yt audio with filter_
-╚════════════╝`;
-return ᴄᴏʀʟᴇxᴀ_Buttons
-.MIB(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, chat, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, MainText, MediaUrl)
+let timestamp = speed();
+let latensi = speed() - timestamp;
+neww = performance.now();
+oldd = performance.now();
+respon = `
+╔═══════★ 𝐒𝐲𝐦𝐥𝐢𝐧𝐤 𝐈𝐧𝐟𝐨𝐬
+║シ︎⚙️ᴇɴɢɪɴᴇ: ${vers.vers}
+║シ︎💻ᴘʟᴀᴛꜰᴏʀᴍ: ${os.platform()}
+║シ︎🛰️ʟᴀᴛᴇɴᴄʏ: ${latensi.toFixed(4)}(s)
+║シ︎☕ᴜᴘᴛɪᴍᴇ: ${runtime(process.uptime())}
+║シ︎🎮ʀᴀᴍ: ${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}
+╚════════════╝
+
+
+────★ 𝐍𝐨𝐝𝐞𝐉𝐒 𝐌𝐞𝐦-𝐔𝐬𝐚𝐠𝐞:
+${Object.keys(used)
+.map(
+(key, _, arr) =>
+`${key.padEnd(Math.max(...arr.map((v) => v.length)), ` `)}: ${formatp(
+used[key]
+)}`
+)
+.join(`\n`)}
+
+────★ ${
+cpus[0]
+? `𝐓𝐨𝐭𝐚𝐥 𝐂𝐏𝐔 𝐔𝐬𝐚𝐠𝐞
+${cpus[0].model.trim()} (${cpu.speed} ᴍʜᴢ)${Object.keys(cpu.times)
+.map(
+(type) =>
+`- *${(type + `*`).padEnd(6)}: ${(
+(100 * cpu.times[type]) /
+cpu.total
+).toFixed(2)}%`
+)
+.join(`\n`)}
+
+
+────★ 𝐂𝐏𝐔 𝐂𝐨𝐫𝐞(𝐬) 𝐔𝐬𝐚𝐠𝐞 (_${cpus.length}_ 𝐂𝐨𝐫𝐞 𝐂𝐏𝐔)
+${cpus
+.map(
+(cpu, i) =>
+`${i + 1}. ${cpu.model.trim()} (${cpu.speed} ᴍʜᴢ)${Object.keys(cpu.times)
+.map(
+(type) =>
+`- *${(type + `*`).padEnd(6)}: ${(
+(100 * cpu.times[type]) /
+cpu.total
+).toFixed(2)}%`
+)
+.join(`\n`)}`
+)
+.join(`\n\n`)}`
+: ``
+}`.trim();
+
+await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
+.sendMessage(
+𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
+{
+url: _𝔏𝔞𝔟_.MEE,
+},
+MessageType.image,
+{
+quoted: chat,
+mimetype: Mimetype.png,
+contextInfo: {
+mentionedJid: [աɦօֆɛռȶɦǟȶ],
+},
+caption: `| (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 |
+
+🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ}, 
+${respon}`,
+}
+)
 .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
 `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 } catch (Error) {
