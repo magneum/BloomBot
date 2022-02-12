@@ -576,16 +576,9 @@ contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
 );
 }
 `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-console.log(chat);
-console.log(
-Kolor.green(
-"⬡═══════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════⬡"
-)
-);
 const ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ = ꜱɪᴛʀᴀᴘ.get(ᴠʟᴋʏʀᴇ.commandName);
 var Needs = ᴠʟᴋʏʀᴇ.body.trim().split(/\s+/).slice(1);
 if (!ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ) {
-if (!ᴠʟᴋʏʀᴇ.fromMe) {
 return await ᴠʟᴋʏʀᴇ_Buttons.MTB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
@@ -593,16 +586,12 @@ chat,
 `🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ}, ❌ No Such Command In Database!`
 );
 } else {
-await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
-.sendMessage(ᴠʟᴋʏʀᴇ.chatId, `❌`, MessageType.text, {
-contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
-})
-.catch((Error) =>
-ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
+console.log(chat);
+console.log(
+Kolor.green(
+"⬡═══════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════⬡"
+)
 );
-return;
-}
-} else {
 return ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ.handle(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
@@ -626,9 +615,7 @@ Timers
 `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 ᴠʟᴋʏʀᴇ().catch((Error) => {
 console.log(`⬡═══════════════════| 🐞𝐄𝐫𝐫𝐨𝐫: \n` + Error);
-let { execSync } = require("child_process");
-let res = execSync("python3 🐙ᴋʀʏᴏᴛᴇᴋ.py");
-console.log(res.toString());
+require("child_process").execSync("python3 🐙ᴋʀʏᴏᴛᴇᴋ.py");
 });
 `|⬡════════════════════════════════════════════|                            |═══════════════════════════════════════════⬡|`;
 `|                                                                                                                        |`;
