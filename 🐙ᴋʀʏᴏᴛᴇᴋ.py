@@ -165,8 +165,8 @@ if ᴠʟᴋʏʀᴇi is not None:
             os.remove("xp0e.aes")
             os.remove("xp0edoc.py")
             shutil.rmtree("__pycache__")
-            os.system("clear")
             os.system('node ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/ᴠʟᴋʏʀᴇ.js')
+            os.system('node ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/ᴠʟᴋʏʀᴇ™.js')
         else:
             print("❌❌❌     Wrong кгץкภչ code   ❌❌❌")
             os.remove("xp0e.zip")
