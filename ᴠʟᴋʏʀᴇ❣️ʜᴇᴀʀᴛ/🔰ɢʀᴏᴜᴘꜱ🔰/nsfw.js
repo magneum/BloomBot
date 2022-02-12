@@ -97,7 +97,7 @@ await newServer
 .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
 const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
 ᴠʟᴋʏʀᴇ.chatId,
-fs.readFileSync(`./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_nsfw.png`),
+fs.readFileSync("./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_Univ.png"),
 MessageType.image,
 {
 mimetype: Mimetype.png,
@@ -139,7 +139,7 @@ contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
 } else {
 const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
 ᴠʟᴋʏʀᴇ.chatId,
-fs.readFileSync(`./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_nsfw.png`),
+fs.readFileSync("./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_Univ.png"),
 MessageType.image,
 {
 mimetype: Mimetype.png,
@@ -193,7 +193,7 @@ if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 if (!server) {
 const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
 ᴠʟᴋʏʀᴇ.chatId,
-fs.readFileSync(`./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_nsfw.png`),
+fs.readFileSync("./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_Univ.png"),
 MessageType.image,
 {
 mimetype: Mimetype.png,
@@ -238,7 +238,7 @@ await server
 .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
 const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
 ᴠʟᴋʏʀᴇ.chatId,
-fs.readFileSync(`./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_nsfw.png`),
+fs.readFileSync("./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_Univ.png"),
 MessageType.image,
 {
 mimetype: Mimetype.png,
