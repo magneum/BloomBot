@@ -15,10 +15,10 @@
 ║
 ╚◇║
 ╔◇║❓What is the reason/topic for this group?
-║ ᴄᴏʀʟᴇxᴀ is an Advance Whatsapp User-Bot. You Can Use The Bot in this group or in your respective groups.
+║ ᴠʟᴋʏʀᴇ is an Advance Whatsapp User-Bot. You Can Use The Bot in this group or in your respective groups.
 ║
 ╚◇║
-╔◇║❓How Do I add ᴄᴏʀʟᴇxᴀ In My Group?
+╔◇║❓How Do I add ᴠʟᴋʏʀᴇ In My Group?
 ║   -Send Your Group Link In: https://chat.whatsapp.com/EIn3YFShFmkJ3fvAqf2rpn
 ║   -Tag any in that group and ask them to use /join command.
 ║   -Remember No commands will work in that group!
@@ -26,7 +26,7 @@
 ║   -Turn Disappearing Message Off in your Gc.
 ║
 ╚◇║
-╔◇║❓I want to know how to deploy ᴄᴏʀʟᴇxᴀ.
+╔◇║❓I want to know how to deploy ᴠʟᴋʏʀᴇ.
 ║ Not Allowed anymore!
 ║
 ╚◇║

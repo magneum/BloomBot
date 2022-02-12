@@ -6,13 +6,13 @@
 const fs = require(`fs`);
 const ascii = require(`ascii-table`);
 async function Tǟɮʟɛɨȶ(ꜱɪᴛʀᴀᴘ, commandUsage) {
-const ᴅᴇʀꜱ = fs.readdirSync(`./ᴄᴏʀʟᴇxᴀ📡System`);
+const ᴅᴇʀꜱ = fs.readdirSync(`./ᴠʟᴋʏʀᴇ📡System`);
 for (const ʟᴅᴇʀ of ᴅᴇʀꜱ) {
 const cmdF = fs
-.readdirSync(`./ᴄᴏʀʟᴇxᴀ📡System/${ʟᴅᴇʀ}`)
+.readdirSync(`./ᴠʟᴋʏʀᴇ📡System/${ʟᴅᴇʀ}`)
 .filter((ɪꜱᴏ) => ɪꜱᴏ.endsWith(`.js`));
 for (const ɪꜱᴏ of cmdF) {
-const command = require(`./ᴄᴏʀʟᴇxᴀ📡System/${ʟᴅᴇʀ}/${ɪꜱᴏ}`);
+const command = require(`./ᴠʟᴋʏʀᴇ📡System/${ʟᴅᴇʀ}/${ɪꜱᴏ}`);
 ꜱɪᴛʀᴀᴘ.set(command.name, command);
 commandUsage.set(command.ƈօʀȶǟռǟӄǟɨʐօ, command.description);
 }
