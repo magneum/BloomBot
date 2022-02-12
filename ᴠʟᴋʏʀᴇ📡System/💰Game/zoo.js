@@ -3,8 +3,8 @@
 `|        (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!            |`;
 `|                                                                                                                        |`;
 `|⬡════════════════════════════════════════════|                            |═══════════════════════════════════════════⬡|`;
-const ᴄᴏʀʟᴇxᴀ_Buttons = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/ᴄᴏʀʟᴇxᴀ_Buttons`);
-const ᴄᴏʀʟᴇxᴀ_Static = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/ᴄᴏʀʟᴇxᴀ_Static`);
+const ᴠʟᴋʏʀᴇ_Buttons = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/ᴠʟᴋʏʀᴇ_Buttons`);
+const ᴠʟᴋʏʀᴇ_Static = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/ᴠʟᴋʏʀᴇ_Static`);
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const animals = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/FISH/animals.json`);
 const Economy = require(`../../ᴠʟᴋʀᴇ🥠ᴘᴏʀᴛ/economy`);
@@ -31,7 +31,7 @@ const defaultnm = ᴠʟᴋʏʀᴇ.commandName;
 const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
 `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 if (!ᴠʟᴋʏʀᴇ.isGroup) {
-return ᴄᴏʀʟᴇxᴀ_Buttons.MIB(
+return ᴠʟᴋʏʀᴇ_Buttons.MIB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 ᴠʟᴋʏʀᴇ,
@@ -40,7 +40,7 @@ chat,
 ╔════◇🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧 
 ║💡 _This Command is Only For Groups!_
 ╚════════════╝`,
-"./ᴠʟᴋʀᴇ🔌cord/ᴄᴏʀʟᴇxᴀ_Univ.png"
+"./ᴠʟᴋʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_Univ.png"
 );
 }
 `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
@@ -67,7 +67,7 @@ worktimeout: 900000,
 await newUser
 .save()
 .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
-return ᴄᴏʀʟᴇxᴀ_Buttons.MIB(
+return ᴠʟᴋʏʀᴇ_Buttons.MIB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 ᴠʟᴋʏʀᴇ,
@@ -77,7 +77,7 @@ chat,
 ║🤖 *User Added To Database For First Time!*
 ║◇ *Type:* _Just Bought A Zoo!_
 ╚════════════╝`,
-"./ᴠʟᴋʀᴇ🔌cord/ᴄᴏʀʟᴇxᴀ_Univ.png"
+"./ᴠʟᴋʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_Univ.png"
 );
 } else {
 Zoology.findOne(
@@ -95,7 +95,7 @@ zootimeout: 1800000,
 await newUser
 .save()
 .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
-return ᴄᴏʀʟᴇxᴀ_Buttons.MIB(
+return ᴠʟᴋʏʀᴇ_Buttons.MIB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 ᴠʟᴋʏʀᴇ,
@@ -107,14 +107,14 @@ chat,
 ╔════◇🌿𝗡𝗮𝗺𝗲: _Amature Zoo Keeper!_
 ║◇ *Type:* _Nothing Found_
 ╚════════════╝`,
-"./ᴠʟᴋʀᴇ🔌cord/ᴄᴏʀʟᴇxᴀ_Univ.png"
+"./ᴠʟᴋʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_Univ.png"
 );
 } else {
 if (userZoo.zootimeout - (Date.now() - userZoo.zoodone) > 0) {
 let time = ms(
 userZoo.zootimeout - (Date.now() - userZoo.zoodone)
 );
-return ᴄᴏʀʟᴇxᴀ_Buttons.MIB(
+return ᴠʟᴋʏʀᴇ_Buttons.MIB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 ᴠʟᴋʏʀᴇ,
@@ -126,7 +126,7 @@ chat,
 ║❌ 𝗘𝗿𝗿𝗼𝗿: You've Recently Bought a New Animal. 
 ║🐓 𝗭𝗼𝗼_𝗔𝗴𝗮𝗶𝗻: ${time.minutes}m ${time.seconds}s
 ╚════════════╝`,
-"./ᴠʟᴋʀᴇ🔌cord/ᴄᴏʀʟᴇxᴀ_Univ.png"
+"./ᴠʟᴋʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_Univ.png"
 );
 } else {
 const zooID = Math.floor(Math.random() * 10) + 1;
@@ -148,7 +148,7 @@ await userZoo
 .catch((Error) =>
 ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
 );
-return ᴄᴏʀʟᴇxᴀ_Buttons.MIB(
+return ᴠʟᴋʏʀᴇ_Buttons.MIB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 ᴠʟᴋʏʀᴇ,
@@ -161,7 +161,7 @@ chat,
 ║💵 𝗪𝗼𝗿𝘁𝗵: _People paid you *${worth}* to see._
 ║💍 𝗜𝘁𝗲𝗺 𝗥𝗮𝗿𝗶𝘁𝘆: _${rarity}_
 ╚════════════╝`,
-"./ᴠʟᴋʀᴇ🔌cord/ᴄᴏʀʟᴇxᴀ_Univ.png"
+"./ᴠʟᴋʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_Univ.png"
 );
 }
 }

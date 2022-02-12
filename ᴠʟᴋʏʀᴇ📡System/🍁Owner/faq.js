@@ -3,8 +3,8 @@
 `|        (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!            |`;
 `|                                                                                                                        |`;
 `|⬡════════════════════════════════════════════|                            |═══════════════════════════════════════════⬡|`;
-const ᴄᴏʀʟᴇxᴀ_Buttons = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/ᴄᴏʀʟᴇxᴀ_Buttons`);
-const ᴄᴏʀʟᴇxᴀ_Static = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/ᴄᴏʀʟᴇxᴀ_Static`);
+const ᴠʟᴋʏʀᴇ_Buttons = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/ᴠʟᴋʏʀᴇ_Buttons`);
+const ᴠʟᴋʏʀᴇ_Static = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/ᴠʟᴋʏʀᴇ_Static`);
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const cleanRF = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/cleanRF`);
 const _𝔏𝔞𝔟_ = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/_𝔏𝔞𝔟_`);
@@ -31,14 +31,14 @@ const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
 const hold = require("../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/Hold");
 await hold.Hold(ᴠʟᴋʏʀᴇ);
 `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-return await ᴄᴏʀʟᴇxᴀ_Buttons.MIB(
+return await ᴠʟᴋʏʀᴇ_Buttons.MIB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 ᴠʟᴋʏʀᴇ,
 `🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ},
 
 ╔════◇🛸 (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚 𝐀𝐈
-║• *Visit:* github.com/Krakinz/ᴄᴏʀʟᴇxᴀ
+║• *Visit:* github.com/Krakinz/ᴠʟᴋʏʀᴇ
 ╚◇║
 ╔◇║ 𝐎𝐟𝐟𝐢𝐜𝐢𝐚𝐥👇🏽‍ 
 ║💼 𝐆𝐫𝐨𝐮𝐩: _${_𝔏𝔞𝔟_.HASH}_
@@ -54,16 +54,16 @@ chat,
 ╔◇║⚡ 𝐅𝐫𝐞𝐪𝐮𝐞𝐧𝐭𝐥𝐲 𝐀𝐬𝐤𝐞𝐝 𝐐𝐮𝐞𝐬𝐭𝐢𝐨𝐧𝐬
 ║
 ║◇ ❓*What is the reason/topic for this group?*
-║ ᴄᴏʀʟᴇxᴀ is an Advance Whatsapp User-Bot. You Can Use The Bot in this group or in your respective groups.
+║ ᴠʟᴋʏʀᴇ is an Advance Whatsapp User-Bot. You Can Use The Bot in this group or in your respective groups.
 ║
-║◇ *❓How Do I add ᴄᴏʀʟᴇxᴀ In My Group?*
+║◇ *❓How Do I add ᴠʟᴋʏʀᴇ In My Group?*
 ║   -Send Your Group Link In: https://chat.whatsapp.com/EIn3YFShFmkJ3fvAqf2rpn
 ║   -Tag any in that group and ask them to use /join command.
 ║   -Remember No commands will work in that group!
 ║   -Your Group Should Have 10 members atleast.
 ║   -Turn Disappearing Message Off in your Gc.
 ║
-║◇ *❓I want to know how to deploy ᴄᴏʀʟᴇxᴀ.*
+║◇ *❓I want to know how to deploy ᴠʟᴋʏʀᴇ.*
 ║ Not Allowed anymore!
 ║
 ║◇ *❓Please Help Me Out With The Commands.*
@@ -75,7 +75,7 @@ chat,
 ║◇ *❓Can i send any link?*
 ║ Allowed Links: YouTube. Anything else = bot will kick you.
 ║
-║◇ *❓Who made ᴄᴏʀʟᴇxᴀ?*
+║◇ *❓Who made ᴠʟᴋʏʀᴇ?*
 ║ KrakinzLab
 ║
 ║◇ *❓License and Copyright?*

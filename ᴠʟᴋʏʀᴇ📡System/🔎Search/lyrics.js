@@ -3,8 +3,8 @@
 `|        (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!            |`;
 `|                                                                                                                        |`;
 `|⬡════════════════════════════════════════════|                            |═══════════════════════════════════════════⬡|`;
-const ᴄᴏʀʟᴇxᴀ_Buttons = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/ᴄᴏʀʟᴇxᴀ_Buttons`);
-const ᴄᴏʀʟᴇxᴀ_Static = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/ᴄᴏʀʟᴇxᴀ_Static`);
+const ᴠʟᴋʏʀᴇ_Buttons = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/ᴠʟᴋʏʀᴇ_Buttons`);
+const ᴠʟᴋʏʀᴇ_Static = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/ᴠʟᴋʏʀᴇ_Static`);
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const Second_Try_Lyrics = require(`songlyrics`).default;
 const First_Try_Lyrics = require(`genius-lyrics`);
@@ -53,7 +53,7 @@ PermanentLimitTime: 43200000,
 await newUser
 .save()
 .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
-return ᴄᴏʀʟᴇxᴀ_Buttons.MIB(
+return ᴠʟᴋʏʀᴇ_Buttons.MIB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 ᴠʟᴋʏʀᴇ,
@@ -63,7 +63,7 @@ chat,
 ║🤖 *User Added To Database For First Time!*
 ║🦋 _Try ${ᴋᴇɪ}${defaultnm} Again!_
 ╚════════════╝`,
-`./ᴠʟᴋʀᴇ🔌cord/ᴄᴏʀʟᴇxᴀ_Mongo.png`
+`./ᴠʟᴋʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_Mongo.png`
 );
 } else {
 `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
@@ -117,7 +117,7 @@ let time = ms(
 userBadge.PermanentLimitTime -
 (Date.now() - userBadge.CurrentLimitTime)
 );
-return ᴄᴏʀʟᴇxᴀ_Buttons.MTB(
+return ᴠʟᴋʏʀᴇ_Buttons.MTB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 ᴠʟᴋʏʀᴇ,
@@ -156,7 +156,7 @@ console.log(`🛸Genius-Lyrics🛸    ⬡==========================⬡`);
 const searches = await GeniusClient.songs.search(Song);
 const GeniusSong = searches[0];
 const Geniuslyrics = await GeniusSong.lyrics();
-ᴄᴏʀʟᴇxᴀ_Buttons.MIB(
+ᴠʟᴋʏʀᴇ_Buttons.MIB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 ᴠʟᴋʏʀᴇ,
@@ -176,7 +176,7 @@ GeniusSong.raw.song_art_image_thumbnail_url
 } catch (Error) {
 console.log(`🛸Music-Lyrics🛸    ⬡==========================⬡`);
 const lyricssong = await Second_Try_Lyrics(Song);
-ᴄᴏʀʟᴇxᴀ_Buttons.MTB(
+ᴠʟᴋʏʀᴇ_Buttons.MTB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 ᴠʟᴋʏʀᴇ,
@@ -198,7 +198,7 @@ userBadge.Limits = userBadge.Limits + 1;
 await userBadge
 .save()
 .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
-return ᴄᴏʀʟᴇxᴀ_Buttons.MTB(
+return ᴠʟᴋʏʀᴇ_Buttons.MTB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 ᴠʟᴋʏʀᴇ,
@@ -231,7 +231,7 @@ return;
 //     `🛸Song-Lyrics🛸    ⬡==========================⬡`
 //     );
 //     const lyric = await Third_Try_Lyrics.search(Song);
-//     ᴄᴏʀʟᴇxᴀ_Buttons.MTB(
+//     ᴠʟᴋʏʀᴇ_Buttons.MTB(
 //     ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 //     chat,
 //     ᴠʟᴋʏʀᴇ,

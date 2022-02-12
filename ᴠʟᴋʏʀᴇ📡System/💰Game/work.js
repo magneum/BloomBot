@@ -3,8 +3,8 @@
 `|        (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!            |`;
 `|                                                                                                                        |`;
 `|⬡════════════════════════════════════════════|                            |═══════════════════════════════════════════⬡|`;
-const ᴄᴏʀʟᴇxᴀ_Buttons = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/ᴄᴏʀʟᴇxᴀ_Buttons`);
-const ᴄᴏʀʟᴇxᴀ_Static = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/ᴄᴏʀʟᴇxᴀ_Static`);
+const ᴠʟᴋʏʀᴇ_Buttons = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/ᴠʟᴋʏʀᴇ_Buttons`);
+const ᴠʟᴋʏʀᴇ_Static = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/ᴠʟᴋʏʀᴇ_Static`);
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const Jwork = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/FISH/works.json`);
 const JworkR = Jwork[Math.floor(Math.random() * Jwork.length)];
@@ -31,7 +31,7 @@ const defaultnm = ᴠʟᴋʏʀᴇ.commandName;
 const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
 `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 if (!ᴠʟᴋʏʀᴇ.isGroup) {
-return ᴄᴏʀʟᴇxᴀ_Buttons.MIB(
+return ᴠʟᴋʏʀᴇ_Buttons.MIB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 ᴠʟᴋʏʀᴇ,
@@ -40,7 +40,7 @@ chat,
 ╔════◇🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧 
 ║💡 _This Command is Only For Groups!_
 ╚════════════╝`,
-"./ᴠʟᴋʀᴇ🔌cord/ᴄᴏʀʟᴇxᴀ_Univ.png"
+"./ᴠʟᴋʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_Univ.png"
 );
 }
 `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
@@ -67,7 +67,7 @@ worktimeout: 900000,
 await newUser
 .save()
 .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
-return ᴄᴏʀʟᴇxᴀ_Buttons.MIB(
+return ᴠʟᴋʏʀᴇ_Buttons.MIB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 ᴠʟᴋʏʀᴇ,
@@ -77,7 +77,7 @@ chat,
 ║🤖 *User Added To Database For First Time!*
 ║💰 𝗧𝗼𝘁𝗮𝗹 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: Just Opened Your Account!
 ╚════════════╝`,
-"./ᴠʟᴋʀᴇ🔌cord/ᴄᴏʀʟᴇxᴀ_Univ.png"
+"./ᴠʟᴋʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_Univ.png"
 );
 `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 } else {
@@ -85,7 +85,7 @@ if (userEco.worktimeout - (Date.now() - userEco.workdone) > 0) {
 let time = ms(
 userEco.worktimeout - (Date.now() - userEco.workdone)
 );
-ᴄᴏʀʟᴇxᴀ_Buttons.MIB(
+ᴠʟᴋʏʀᴇ_Buttons.MIB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 ᴠʟᴋʏʀᴇ,
@@ -97,7 +97,7 @@ chat,
 ║❌ 𝗘𝗿𝗿𝗼𝗿: _You have already worked recently._ 
 ║🕐 𝗪𝗼𝗿𝗸_𝗔𝗴𝗮𝗶𝗻: ${time.minutes}m ${time.seconds}s
 ╚════════════╝`,
-"./ᴠʟᴋʀᴇ🔌cord/ᴄᴏʀʟᴇxᴀ_Univ.png"
+"./ᴠʟᴋʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_Univ.png"
 );
 `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 } else {
@@ -108,7 +108,7 @@ userEco.worktimeout = 900000;
 userEco
 .save()
 .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
-return ᴄᴏʀʟᴇxᴀ_Buttons.MIB(
+return ᴠʟᴋʏʀᴇ_Buttons.MIB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 ᴠʟᴋʏʀᴇ,
@@ -120,7 +120,7 @@ chat,
 ║👔 𝗪𝗼𝗿𝗸_𝗦𝘁𝗮𝘁𝘂𝘀: ${JworkR}.
 ║🪙 𝗘𝗮𝗿𝗻𝗲𝗱: ${amount}
 ╚════════════╝`,
-"./ᴠʟᴋʀᴇ🔌cord/ᴄᴏʀʟᴇxᴀ_Univ.png"
+"./ᴠʟᴋʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_Univ.png"
 );
 }
 }
