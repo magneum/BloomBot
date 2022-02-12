@@ -24,23 +24,23 @@ RUN npm install --global n
 RUN n install 16
 RUN path=path 
 RUN hash -r 
-RUN git clone https://github.com/Krakinz/Cortana.git 
-RUN cd Cortana
-WORKDIR /Cortana
+RUN git clone https://github.com/Krakinz/Corlexa.git 
+RUN cd Corlexa
+WORKDIR /Corlexa
 RUN pip install -r ӄʀǟӄɨռʐ🐙ʟǟɮ.txt
 RUN npm install --force
 # WORKDIR /
-# COPY . /Cortana
-# WORKDIR /Cortana
+# COPY . /Corlexa
+# WORKDIR /Corlexa
 # RUN git init --initial-branch=KrakinzLab
-# RUN git remote add origin https://github.com/Krakinz/Cortana.git
+# RUN git remote add origin https://github.com/Krakinz/Corlexa.git
 # RUN git fetch origin KrakinzLab
 # RUN git reset --hard origin/KrakinzLab
-# COPY . /Cortana
-# RUN cd /Cortana
-# WORKDIR /Cortana
+# COPY . /Corlexa
+# RUN cd /Corlexa
+# WORKDIR /Corlexa
 # RUN git init --initial-branch=KrakinzLab
-# RUN git remote add origin https://github.com/Krakinz/Cortana.git
+# RUN git remote add origin https://github.com/Krakinz/Corlexa.git
 # RUN git fetch origin KrakinzLab
 # RUN git reset --hard origin/KrakinzLab
 CMD npm start
