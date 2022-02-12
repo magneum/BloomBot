@@ -641,8 +641,20 @@ if (
 serverNsfw &&
 !ᴠʟᴋʏʀᴇ.isSenderDev &&
 NSFWL.includes(Needs.join(" "))
-)
-return;
+) {
+return ᴠʟᴋʏʀᴇ_Buttons.MTB(
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+chat,
+ᴠʟᴋʏʀᴇ,
+`🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ}, 
+
+╔════◇🔞𝐍𝐒𝐅𝐖
+║
+║❌ 𝗘𝗿𝗿𝗼𝗿: Seems Like This Group's Admin Turned-Off NSFW. 
+║💡 𝐅𝐢𝐱: Ask Them To Turn it On First!
+╚════════════╝`
+);
+}
 return ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ.handle(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
