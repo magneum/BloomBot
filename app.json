@@ -21,83 +21,52 @@
 },
 "repository": {
 "type": "git",
-"url": "git+https://github.com/Krakinz/Corlexa.git"
+"url": "https://github.com/Krakinz/Corlexa.git"
 },
 "bugs": {
 "url": "https://github.com/Nurutomo/Corlexa/issues"
 },
 "license": "Apache",
-"buildpacks": [
-{
-"url": "heroku/nodejs"
-},
-{
-"url": "https://github.com/PrajjwalDatir/heroku-buildpack-imagemagick.git"
-},
-
-{
-"url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
-},
-{
-"url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
-}
-],
 "env": {
 "CORLEXA": {
-"description": "Put Your ᴄᴏʀʟᴇxᴀ Session API",
-"required": true
+"description": "Put Your ᴄᴏʀʟᴇxᴀ Session API"
 },
-
 "HEROKU": {
-"description": "Keep It Heroku!",
-"required": true,
-"value": "HEROKU"
+"description": "Keep It Heroku!"
 },
 "CORLEXAQL": {
-"description": "Your Localized Postsqldb API Link!",
-"required": true
+"description": "Your Localized Postsqldb API Link!"
 },
 "CORLEXAYT": {
-"description": "Your Localized YouTube Api v3!",
-"required": true
+"description": "Your Localized YouTube Api v3!"
 },
 "CORLEXAMDB": {
-"description": "Your Localized Mongoosedb server connect API Link!",
-"required": true
+"description": "Your Localized Mongoosedb server connect API Link!"
 },
 "HEROKU_API_KEY": {
-"description": "Put Your Heroku API key!",
-"required": true,
-"value": "get it from hhttps://dashboard.heroku.com/account"
+"description": "Put Your Heroku API key!"
 },
 "HEROKU_APP_NAME": {
-"description": "Put Your App name",
-"required": true,
-"value": "App name you gave in the top most box!"
+"description": "Put Your App name"
 },
 "CCD": {
-"description": "Put Your Country Code!",
-"required": true
+"description": "Put Your Country Code!"
 },
 "CODE": {
-"description": "Top Secret KrakinzLab API key!",
-"required": true
+"description": "Top Secret KrakinzLab API key!"
 },
 "IMDB": {
-"description": "Put Your imdb API key!",
-"required": true
+"description": "Put Your imdb API key!"
 },
 "TEN": {
-"description": "Put Your tenor API key!",
-"required": true
+"description": "Put Your tenor API key!"
 },
 "OCR": {
 "description": "Put Your API key for using Optical Character Recognition command!",
 "required": true
 },
 "WAPI": {
-"description": "Put Your API key for using weather module!",
-"required": true
+"description": "Put Your API key for using weather module!"
 }
 }
 }
