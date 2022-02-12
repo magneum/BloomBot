@@ -26,7 +26,7 @@ var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ
 var FFmpegFile = `./ᴄᴏʀʟᴇxᴀ☕ꜱʜᴏᴘ/${chat.key.id}.mp4`;
 const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-YouTube_Video(Found.url).then(async (res) => {
+YouTube_Video(Found.url).then((res) => {
 const { dl_link, thumb, title, filesizeF, filesize } = res;
 TinyURL.shorten(dl_link).then(
 async function (DirectFile) {
@@ -82,6 +82,7 @@ contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
 .then(cleanRF.cleanRF(FFmpegFile))
 .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
 });
+`|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 } catch (Error) {
 let { dl_link, thumb, title, filesize, filesizeF } = await v2mate(
 Found.url,
@@ -90,11 +91,11 @@ Found.url,
 TinyURL.shorten(dl_link).then(
 async function (DirectFile) {
 require(`child_process`).exec(
-`ffmpeg -i "${DirectFile}" "${FFmpegFile}"`,
+`ffmpeg -i '${DirectFile}' '${FFmpegFile}'`,
 async (Error) => {
 if (Error) {
 console.log(
-`⬡══════════| 🔺𝐅𝐅𝐦𝐩𝐞𝐠 𝐄𝐫𝐫𝐨𝐫🔺 |══════════⬡` + Error
+`⬡══════════| 🔺𝐅𝐅𝐦𝐩𝐞𝐠 𝐄𝐫𝐫𝐨𝐫🔺 |══════════⬡ \n` + Error
 );
 userBadge.Limits = userBadge.Limits + 1;
 await userBadge
@@ -104,6 +105,7 @@ await userBadge
 );
 return ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat);
 }
+`|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 console.log(`⬡══════════| 🥂𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐅𝐢𝐧𝐢𝐬𝐞𝐝🥂 |══════════⬡`);
 const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
@@ -153,7 +155,7 @@ contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
 );
 },
 async function (Error) {
-console.log(`⬡══════════| 🐞𝐄𝐫𝐫𝐨𝐫: ` + Error);
+console.log(`⬡══════════| 🐞𝐄𝐫𝐫𝐨𝐫: \n` + Error);
 userBadge.Limits = userBadge.Limits + 1;
 await userBadge
 .save()
