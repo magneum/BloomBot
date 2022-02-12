@@ -166,14 +166,8 @@ if 𝖈𝖔𝖗𝖑𝖊𝖝𝖆i is not None:
             os.remove("xp0edoc.py")
             shutil.rmtree("__pycache__")
             os.system("clear")
-            if os.path.exists('ᴄᴏʀʟᴇxᴀ🛰️Server/Coolist.json'):
-                os.remove('ᴄᴏʀʟᴇxᴀ🛰️Server/Coolist.json')
-            else:
-                pass
-            os.system('touch ᴄᴏʀʟᴇxᴀ🛰️Server/Coolist.json')
-            os.system('node ᴄᴏʀʟᴇxᴀ🛰️Server/touched.js')
-            os.system('node ᴄᴏʀʟᴇxᴀ🛰️Server/𝖗𝖊𝖖𝖈𝖔𝖗𝖑𝖊𝖝𝖆𝖌𝖎𝖙.js')
-            os.system('node ᴄᴏʀʟᴇxᴀ🛰️Server/🛸ᴄᴏʀʟᴇxᴀ™.js')
+            os.system('node ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/𝖗𝖊𝖖𝖈𝖔𝖗𝖑𝖊𝖝𝖆𝖌𝖎𝖙.js')
+            os.system('node ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/🛸ᴄᴏʀʟᴇxᴀ™.js')
         else:
             print("❌❌❌     Wrong ӄʀǟӄɨռʐ code   ❌❌❌")
             os.remove("xp0e.zip")

@@ -3,23 +3,23 @@
 `|        (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!            |`;
 `|                                                                                                                        |`;
 `|⬡════════════════════════════════════════════|                            |═══════════════════════════════════════════⬡|`;
-const ᴄᴏʀʟᴇxᴀ_Buttons = require(`../../ᴄᴏʀʟᴇxᴀ🛰️Server/ᴄᴏʀʟᴇxᴀ_Buttons`);
-const ᴄᴏʀʟᴇxᴀ_Static = require(`../../ᴄᴏʀʟᴇxᴀ🛰️Server/ᴄᴏʀʟᴇxᴀ_Static`);
+const ᴄᴏʀʟᴇxᴀ_Buttons = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/ᴄᴏʀʟᴇxᴀ_Buttons`);
+const ᴄᴏʀʟᴇxᴀ_Static = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/ᴄᴏʀʟᴇxᴀ_Static`);
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
-const Usersᴄᴏʀʟᴇxᴀ = require(`../../ᴄᴏʀʟᴇxᴀ🍃Goose/experience`);
-const cleanRF = require(`../../ᴄᴏʀʟᴇxᴀ🛰️Server/cleanRF`);
-const ꜰᴜᴄᴋ = require(`../../ᴄᴏʀʟᴇxᴀ🛰️Server/oShit`);
-const _𝔏𝔞𝔟_ = require(`../../ᴄᴏʀʟᴇxᴀ🛰️Server/_𝔏𝔞𝔟_`);
+const Usersᴄᴏʀʟᴇxᴀ = require(`../../ᴠʟᴋʀᴇ🥠ᴘᴏʀᴛ/experience`);
+const cleanRF = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/cleanRF`);
+const ꜰᴜᴄᴋ = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/oShit`);
+const _𝔏𝔞𝔟_ = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/_𝔏𝔞𝔟_`);
 const vers = require("../../package.json");
 var randomMC = require("random-material-color");
 const { registerFont } = require(`canvas`);
-registerFont(`./ᴄᴏʀʟᴇxᴀ🛰️Server/LobsterTwo-Bold.ttf`, {
+registerFont(`./ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/LobsterTwo-Bold.ttf`, {
 family: `LobsterTwo-Bold`,
 });
-registerFont(`./ᴄᴏʀʟᴇxᴀ🛰️Server/SlouchybrushRegular-eZnEB.ttf`, {
+registerFont(`./ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/SlouchybrushRegular-eZnEB.ttf`, {
 family: `SlouchybrushRegular`,
 });
-registerFont(`./ᴄᴏʀʟᴇxᴀ🛰️Server/TheHeartOfEverythingDemo-KRdD.ttf`, {
+registerFont(`./ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/TheHeartOfEverythingDemo-KRdD.ttf`, {
 family: `TheHeartOfEverythingDemo`,
 });
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
@@ -42,7 +42,7 @@ var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ
 .replace(/[+ ]/g, "");
 const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-const hold = require(`../../ᴄᴏʀʟᴇxᴀ🛰️Server/Hold`);
+const hold = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/Hold`);
 hold.Hold(𝖈𝖔𝖗𝖑𝖊𝖝𝖆);
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 if (!𝖈𝖔𝖗𝖑𝖊𝖝𝖆.isGroup) {
