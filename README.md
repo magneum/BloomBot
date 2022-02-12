@@ -2,7 +2,6 @@
 
 # (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈 🛸stable-yet-debug
 
-<img align="centre"  height="400" src="">
 
 🛸[`(𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚 𝐀𝐝𝐯𝐚𝐧𝐜𝐞 𝐀𝐈🍾 #A`](https://chat.whatsapp.com/LKN8uVBd8ucHRHofz0jBSd)
 🛸[`(𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚 𝐀𝐝𝐯𝐚𝐧𝐜𝐞 𝐀𝐈🍾 #B`](https://chat.whatsapp.com/HKO5WLEZxMe3xWCyiv6vBu)
