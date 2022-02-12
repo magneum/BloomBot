@@ -38,6 +38,7 @@ var MainText = `🪶 𝐇𝐞𝐲: •@${աɦօֆɛռȶɦǟȶռʊʍ},
 ║• *${ᴋᴇɪ}ocr:*  _read text written on tagged image_
 ║• *${ᴋᴇɪ}sticker:*  _convert image/video to sticker_
 ║• *${ᴋᴇɪ}carbon:*  _convert text to carbonized image_
+║• *${ᴋᴇɪ}tinyurl:*  _shrink any long url_
 ╚════════════╝`;
 return ᴠʟᴋʏʀᴇ_Buttons
 .MIB(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, chat, ᴠʟᴋʏʀᴇ, MainText, MediaUrl)
