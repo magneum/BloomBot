@@ -55,7 +55,7 @@ chat,
 ║❗ _If Any Member OF Your Group Kicks The Bot For Dumb/No Reason, Corlexa Support Team Will PermaLock Your Group._
 ║❗ _Every Member Should Be Verified First Before They Can Use Corlexa._
 ╚════════════╝`,
-"./vlkre🔌cord/𝖈𝖔𝖗𝖑𝖊𝖝𝖆.png"
+"./ᴠʟᴋʀᴇ🔌cord/𝖈𝖔𝖗𝖑𝖊𝖝𝖆.png"
 );
 `|⬡════════════════════════════════════════════|   (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 } catch (Error) {

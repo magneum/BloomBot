@@ -49,7 +49,7 @@ chat,
 
 (𝐜)𝐂𝐨𝐫𝐥𝐞𝐱𝐚𝐀𝐈 by ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🛸 
 _Is Now Rebooting.Wait For (10-30)s_`,
-"./vlkre🔌cord/𝖈𝖔𝖗𝖑𝖊𝖝𝖆.png"
+"./ᴠʟᴋʀᴇ🔌cord/𝖈𝖔𝖗𝖑𝖊𝖝𝖆.png"
 );
 await heroku
 .delete(`/apps/` + _𝔏𝔞𝔟_.HEROKU_APP_NAME + `/dynos/` + `worker`)

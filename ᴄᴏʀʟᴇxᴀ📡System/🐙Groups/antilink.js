@@ -100,7 +100,7 @@ await newServer
 .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
 const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
-fs.readFileSync(`./vlkre🔌cord/ᴄᴏʀʟᴇxᴀ_Antilink.png`),
+fs.readFileSync(`./ᴠʟᴋʀᴇ🔌cord/ᴄᴏʀʟᴇxᴀ_Antilink.png`),
 MessageType.image,
 {
 mimetype: Mimetype.png,
@@ -142,7 +142,7 @@ contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
 } else {
 const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
-fs.readFileSync(`./vlkre🔌cord/ᴄᴏʀʟᴇxᴀ_Antilink.png`),
+fs.readFileSync(`./ᴠʟᴋʀᴇ🔌cord/ᴄᴏʀʟᴇxᴀ_Antilink.png`),
 MessageType.image,
 {
 mimetype: Mimetype.png,
@@ -196,7 +196,7 @@ if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 if (!server) {
 const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
-fs.readFileSync(`./vlkre🔌cord/ᴄᴏʀʟᴇxᴀ_Antilink.png`),
+fs.readFileSync(`./ᴠʟᴋʀᴇ🔌cord/ᴄᴏʀʟᴇxᴀ_Antilink.png`),
 MessageType.image,
 {
 mimetype: Mimetype.png,
@@ -241,7 +241,7 @@ await server
 .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, 𝖈𝖔𝖗𝖑𝖊𝖝𝖆, chat));
 const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
 𝖈𝖔𝖗𝖑𝖊𝖝𝖆.chatId,
-fs.readFileSync(`./vlkre🔌cord/ᴄᴏʀʟᴇxᴀ_Antilink.png`),
+fs.readFileSync(`./ᴠʟᴋʀᴇ🔌cord/ᴄᴏʀʟᴇxᴀ_Antilink.png`),
 MessageType.image,
 {
 mimetype: Mimetype.png,
