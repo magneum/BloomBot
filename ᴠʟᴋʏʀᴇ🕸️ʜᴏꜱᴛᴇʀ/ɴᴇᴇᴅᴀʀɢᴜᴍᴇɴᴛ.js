@@ -24,6 +24,7 @@ return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
 `*@${աɦօֆɛռȶɦǟȶռʊʍ}:* \n${needs === undefined ? `null` : needs}`,
 MessageType.text,
 {
+quoted: chat,
 contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
 }
 );
