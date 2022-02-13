@@ -19,6 +19,14 @@ chat,
 commandName,
 needs
 ) => {
+return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
+ᴠʟᴋʏʀᴇ.chatId,
+`*@${աɦօֆɛռȶɦǟȶռʊʍ}:* \n${needs === undefined ? `null` : needs}`,
+MessageType.text,
+{
+contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
+}
+);
 return ᴠʟᴋʏʀᴇ_Buttons.MTB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
