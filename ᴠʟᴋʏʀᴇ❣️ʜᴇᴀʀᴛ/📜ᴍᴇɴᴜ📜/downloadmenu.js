@@ -32,14 +32,12 @@ var MainText = `🪶 𝐇𝐞𝐲: •@${աɦօֆɛռȶɦǟȶռʊʍ},
 
 ╔════◇📥 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫𝐬
 ║
-║• *${ᴋᴇɪ}play:*  _youtube-audio max 10min_
-║• *${ᴋᴇɪ}song:*  _youtube-audio max 20min_
-║• *${ᴋᴇɪ}stream:*  _youtube-video max 10min_
-║• *${ᴋᴇɪ}watch:*  _youtube-video max 20min_
-║• *${ᴋᴇɪ}ytmlink _yt-audio-max 15min_
-║• *${ᴋᴇɪ}ytvlink _yt-video-max 15min_
-║• *${ᴋᴇɪ}spotify:*  _spotify single download_
-║• *${ᴋᴇɪ}instagram:*  _image/video from ig_
+║•  ${ᴋᴇɪ}yt: _5m youtube music download (fastest)_
+║•  ${ᴋᴇɪ}play: _10m youtube music download (fastest)_
+║•  ${ᴋᴇɪ}song: _20m youtube music download (fastest)_
+║•  ${ᴋᴇɪ}youtube: _30m youtube music download (longest)_
+║•  ${ᴋᴇɪ}spotify: _download using spotify link_
+║•  ${ᴋᴇɪ}instagram: _download using ig link_
 ╚════════════╝`;
 return ᴠʟᴋʏʀᴇ_Buttons
 .MIB(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, chat, ᴠʟᴋʏʀᴇ, MainText, MediaUrl)
