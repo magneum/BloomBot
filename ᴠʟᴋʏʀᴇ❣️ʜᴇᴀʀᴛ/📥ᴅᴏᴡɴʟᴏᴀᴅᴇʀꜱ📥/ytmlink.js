@@ -161,60 +161,8 @@ chat,
 );
 }
 `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-async function FFMPEG_GOT(Link, Title) {
-console.log("|⬡=========================⬡|🔗𝐓𝐢𝐧𝐲 𝐔𝐑𝐋 " + Link);
-var YouFile = `${Date.now()}_${chat.key.id}.mp3`;
-try {
-require(`child_process`).exec(
-`ffmpeg -i '${Link}' '${YouFile}'`,
-async (Error) => {
-if (Error) {
-console.log(
-`|⬡=========================⬡|🔺𝐅𝐅𝐦𝐩𝐞𝐠 𝐄𝐫𝐫𝐨𝐫: ` + Error
-);
-userBadge.Limits = userBadge.Limits + 1;
-await userBadge
-.save()
-.catch((Error) =>
-ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
-);
-return ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
-}
-console.log(
-`|⬡=========================⬡|🥂𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐅𝐢𝐧𝐢𝐬𝐞𝐝: ` +
-YouFile
-);
-await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
-.sendMessage(
-ᴠʟᴋʏʀᴇ.chatId,
-fs.readFileSync(YouFile),
-MessageType.audio,
-{
-quoted: chat,
-mimetype: "audio/mp4",
-}
-)
-.then(cleanRF.cleanRF(YouFile))
-.catch((Error) =>
-ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
-);
-}
-);
-return;
-} catch (Error) {
-console.log(
-`|⬡=========================⬡|🐞𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐄𝐫𝐫𝐨𝐫: ` + Error
-);
-userBadge.Limits = userBadge.Limits + 1;
-await userBadge
-.save()
-.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
-return ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
-}
-}
-`|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-const LinkForGroups = await yts(Needs.join(` `));
-if (!LinkForGroups) {
+const LinkFound = await yts(Needs.join(` `));
+if (!LinkFound) {
 return ᴠʟᴋʏʀᴇ_Buttons.MTB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
@@ -224,8 +172,8 @@ chat,
 );
 }
 `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-const GroupVideos = LinkForGroups.videos.slice(0, 1);
-GroupVideos.forEach(async function (Found) {
+const Videos = LinkFound.videos.slice(0, 1);
+Videos.forEach(async function (Found) {
 if (Found.seconds > `900`) {
 userBadge.Limits = userBadge.Limits + 1;
 await userBadge
@@ -278,53 +226,6 @@ Found,
 userBadge
 );
 return;
-`|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-try {
-var FFmpegStream = ytdl(Found.url, {
-filter: "audioonly",
-});
-ffmpeg(FFmpegStream)
-.saveToFile(FFmpegFile)
-.on("end", async () => {
-await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
-ᴠʟᴋʏʀᴇ.chatId,
-fs.readFileSync(FFmpegFile),
-MessageType.audio,
-{
-quoted: chat,
-mimetype: Mimetype.mp4Audio,
-}
-);
-return await cleanRF.cleanRF(FFmpegFile);
-});
-`|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-} catch (Error) {
-const downloadFFmpegFile = ytdl(Found.url, {
-filter: "audioonly",
-});
-const writeStream = fs.createWriteStream(FFmpegFile);
-downloadFFmpegFile.pipe(writeStream);
-downloadFFmpegFile.on("end", async () => {
-console.log(
-`⬡═══════════════════| 🥂𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐅𝐢𝐧𝐢𝐬𝐞𝐝🥂 |═══════════════════⬡`
-);
-await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
-.sendMessage(
-ᴠʟᴋʏʀᴇ.chatId,
-fs.readFileSync(FFmpegFile),
-MessageType.audio,
-{
-quoted: chat,
-mimetype: "audio/mp4",
-}
-)
-
-.catch((Error) =>
-ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
-);
-return await cleanRF.cleanRF(FFmpegFile);
-});
-}
 }
 });
 }

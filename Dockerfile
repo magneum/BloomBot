@@ -18,7 +18,7 @@ RUN curl https://cli-assets.heroku.com/install.sh | sh
 RUN heroku plugins:install heroku-builds
 RUN /venv/bin/python -m pip install --upgrade pip
 RUN apt-get install npm -y 
-RUN npm install --global npm@8.5.0
+RUN npm install npm@8.5.0
 RUN npm install --global n
 RUN n install 16
 RUN path=path 
