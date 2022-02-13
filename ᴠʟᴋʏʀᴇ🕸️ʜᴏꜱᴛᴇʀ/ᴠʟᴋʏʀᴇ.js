@@ -9,10 +9,6 @@ const VlkyreGit = require(`simple-git`)();
 await VlkyreGit.fetch();
 var VlkyreFetched = await VlkyreGit.log([`KryTek..origin/KryTek`]);
 if (VlkyreFetched.total != 0) {
-var rebase = require(`child_process`).exec(
-`git config pull.rebase false`
-);
-rebase.stdout.pipe(process.stdout);
 require(`simple-git`)()
 .exec(() =>
 console.log(`💡 𝐈𝐧𝐟𝐨⬰ Updating Vlkyre System With Latest Patch...`)
