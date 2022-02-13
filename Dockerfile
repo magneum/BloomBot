@@ -17,8 +17,7 @@ RUN apt-get install python-is-python3
 RUN curl https://cli-assets.heroku.com/install.sh | sh
 RUN heroku plugins:install heroku-builds
 RUN /venv/bin/python -m pip install --upgrade pip
-RUN apt-get install npm -y 
-RUN npm install npm@8.5.0
+RUN apt-get install npm -y
 RUN npm install --global n
 RUN n install 16
 RUN path=path 
