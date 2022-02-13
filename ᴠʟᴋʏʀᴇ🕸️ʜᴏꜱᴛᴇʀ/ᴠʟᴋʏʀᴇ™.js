@@ -537,7 +537,7 @@ if (
 !ᴠʟᴋʏʀᴇ.body.includes(ᴋᴇɪ + "rules") &&
 !ᴠʟᴋʏʀᴇ.body.includes(ᴋᴇɪ + "faq") &&
 !ᴠʟᴋʏʀᴇ.body.includes(ᴋᴇɪ + "verify") &&
-!ᴠʟᴋʏʀᴇ.body.includes(ᴋᴇɪ + "kick")
+!ᴠʟᴋʏʀᴇ.body.includes(ᴋᴇɪ + "request")
 )
 if (
 !member1.includes(աɦօֆɛռȶɦǟȶ) &&
