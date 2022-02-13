@@ -444,7 +444,7 @@ chat,
 ║
 ║⚰️ 𝗣𝘂𝗻𝗶𝘀𝗵𝗺𝗲𝗻𝘁: _You Will Be Kicked!_
 ╚════════════༻꧂`,
-`./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_AntiLink.png`
+`./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_ᴀɴᴛɪʟɪɴᴋ.png`
 );
 await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .groupRemove(ᴠʟᴋʏʀᴇ.chatId, [ᴠʟᴋʏʀᴇ.sender])
