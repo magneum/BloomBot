@@ -74,39 +74,42 @@ return ᴠʟᴋʏʀᴇ_Buttons
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 ᴠʟᴋʏʀᴇ,
-`🪶 𝐇𝐞𝐲: •@${աɦօֆɛռȶɦǟȶռʊʍ}, *If You Need Vlkyre In Your Group Then Type: ${ᴋᴇɪ}request _(your group link)_ !*
-
+`╔══◇🪶 𝐇𝐞𝐲: •@${աɦօֆɛռȶɦǟȶռʊʍ}, ༻꧂
+║
+║⚡ _If You Need Vlkyre In Your Group Then Type:_
+║⚡ *${ᴋᴇɪ}request _(your group link)_*
+╚══════════༻꧂
 
 ╔══◇꧁༺ 👇🏽𝐒𝐲𝐦𝐥𝐢𝐧𝐤👇🏽 ༻꧂
 ║
-║シ︎⚙️ *Engine:*  _${vers.vers}_
-║シ︎💻 *Platform:*  _${os.platform()}_
-║シ︎🛰️ *Latency:*  _${latensi.toFixed(4)}(s)_
-║シ︎☕ *Uptime:*  _${runtime(process.uptime())}_
-║シ︎🎮 *Ram:*  _${formatp(os.totalmem() - os.freemem())} / ${formatp(
+║シ︎⚙️ *Engine:*  ${vers.vers}
+║シ︎💻 *Platform:*  ${os.platform()}
+║シ︎🛰️ *Latency:*  ${latensi.toFixed(4)}(s)
+║シ︎☕ *Uptime:*  ${runtime(process.uptime())}
+║シ︎🎮 *Ram:*  ${formatp(os.totalmem() - os.freemem())} / ${formatp(
 os.totalmem()
 )}_
 ╚══════════༻꧂
 
 ╔◇꧁༺ 👇🏽𝐄𝐯𝐞𝐫𝐲𝐨𝐧𝐞👇🏽 ༻꧂
 ║
-║🍣  _${ᴋᴇɪ}animemenu_
-║💰  _${ᴋᴇɪ}gamemenu_
-║⭕  _${ᴋᴇɪ}ytfiltermenu
-║📥  _${ᴋᴇɪ}downloadmenu_
-║🔰  _${ᴋᴇɪ}groupmenu_
-║🦄  _${ᴋᴇɪ}randommenu_
-║🔎  _${ᴋᴇɪ}searchmenu_
-║🗂️  _${ᴋᴇɪ}ffmpegmenu_
-║🍰  _${ᴋᴇɪ}filtersmenu_
-║🎨  _${ᴋᴇɪ}checkmenu_
+║🍣  ${ᴋᴇɪ}animemenu
+║💰  ${ᴋᴇɪ}gamemenu
+║⭕  ${ᴋᴇɪ}ytfiltermenu
+║📥  ${ᴋᴇɪ}downloadmenu
+║🔰  ${ᴋᴇɪ}groupmenu
+║🦄  ${ᴋᴇɪ}randommenu
+║🔎  ${ᴋᴇɪ}searchmenu
+║🗂️  ${ᴋᴇɪ}ffmpegmenu
+║🍰  ${ᴋᴇɪ}filtersmenu
+║🎨  ${ᴋᴇɪ}checkmenu
 ╚◇┐
 ╔◇╝꧁༺ 👇🏽𝐀𝐝𝐦𝐢𝐧-𝐎𝐧𝐥𝐲👇🏽 ༻꧂
 ║
-║🔰  _${ᴋᴇɪ}groupmenu_
-║🍄  _${ᴋᴇɪ}hentaimenu_ 
-║🥃  _${ᴋᴇɪ}humanmenu_ 
-║🐙  _${ᴋᴇɪ}ownermenu_
+║🔰  ${ᴋᴇɪ}groupmenu
+║🍄  ${ᴋᴇɪ}hentaimenu
+║🥃  ${ᴋᴇɪ}humanmenu
+║🐙  ${ᴋᴇɪ}ownermenu
 ╚════════════╝
 
 
