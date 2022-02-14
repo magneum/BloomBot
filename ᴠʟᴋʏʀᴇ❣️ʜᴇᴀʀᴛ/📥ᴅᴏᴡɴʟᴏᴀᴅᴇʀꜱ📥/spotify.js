@@ -6,12 +6,18 @@
 const ᴠʟᴋʏʀᴇ_Buttons = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/ᴠʟᴋʏʀᴇ_Buttons`);
 const ᴠʟᴋʏʀᴇ_Static = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/ᴠʟᴋʏʀᴇ_Static`);
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
+const FFmpegAudio = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/FFmpegAudio`);
 const cleanRF = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/cleanRF`);
-const SpDl = require("spdl-core").default;
 const _𝔏𝔞𝔟_ = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/_𝔏𝔞𝔟_`);
 const ꜰᴜᴄᴋ = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/oShit`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
+const SpDl = require("spdl-core").default;
+var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
+var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
+const ffmpeg = require("fluent-ffmpeg");
+const ytdl = require("ytdl-core");
+const yts = require("yt-search");
 const fs = require(`fs`);
 var path = require(`path`);
 var scriptName = path.basename(__filename);
@@ -190,6 +196,42 @@ return `${Math.floor(seconds / 60)}m ${Math.floor(
 seconds % 60
 )}s`;
 }
+`|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
+const LinkFound = await yts(SpotFound.title);
+if (!LinkFound) {
+return ᴠʟᴋʏʀᴇ_Buttons.MTB(
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+chat,
+ᴠʟᴋʏʀᴇ,
+`🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ}, 
+❌𝗘𝗿𝗿𝗼𝗿: No Music Found!`
+);
+}
+`|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
+const Videos = LinkFound.videos.slice(0, 1);
+Videos.forEach(async function (Found) {
+if (Found.seconds > `600`) {
+userBadge.Limits = userBadge.Limits + 1;
+await userBadge
+.save()
+.catch((Error) =>
+ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
+);
+return ᴠʟᴋʏʀᴇ_Buttons.MIB(
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+chat,
+ᴠʟᴋʏʀᴇ,
+`🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ},
+❌𝗘𝗿𝗿𝗼𝗿: 𝗣𝗹𝗲𝗮𝘀𝗲 𝗖𝗵𝗼𝗼𝘀𝗲 𝗦𝗺𝗮𝗹𝗹𝗲𝗿 𝐀𝐮𝐝𝐢𝐨 𝗧𝗵𝗲𝗻 10-𝗺𝗶𝗻𝘂𝘁𝗲𝘀!
+
+╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
+║
+║🍻 𝐓𝐢𝐭𝐥𝐞: ${Found.title}
+║⏰ 𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧: ${Found.timestamp}
+╚════════════╝`,
+Found.thumbnail
+);
+} else {
 ᴠʟᴋʏʀᴇ_Buttons.MIB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
@@ -204,7 +246,7 @@ chat,
 
 ╔════◇🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
 ║
-║🍻 𝐓𝐢𝐭𝐥𝐞: ${SpotFound.title}
+║🍻 𝐓𝐢𝐭𝐥𝐞: ${Found.title}
 ║⏰ 𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧: ${formatDuration(SpotFound.duration)}
 ║✒️ 𝐀𝐮𝐭𝐡𝐨𝐫: ${SpotFound.artist}
 ║🔗 𝐋𝐢𝐧𝐤: ${SpotFound.url}
@@ -212,21 +254,15 @@ chat,
 SpotFound.thumbnail
 );
 `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-SpDl(SpotFound.url).then((stream) => {
-stream.on("end", () =>
-ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
-.sendMessage(
-ᴠʟᴋʏʀᴇ.chatId,
-fs.readFileSync(FFmpegFile),
-MessageType.audio,
-{ quoted: chat, mimetype: "audio/mp4" }
-)
-.then(cleanRF.cleanRF(FFmpegFile))
-.catch((Error) =>
-ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
-)
+await FFmpegAudio.FFmpegAudio(
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+ᴠʟᴋʏʀᴇ,
+chat,
+Found,
+userBadge
 );
-stream.pipe(fs.createWriteStream(FFmpegFile));
+return;
+}
 });
 });
 `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
