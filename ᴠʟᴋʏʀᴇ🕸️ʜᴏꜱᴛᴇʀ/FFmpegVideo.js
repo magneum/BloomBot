@@ -37,7 +37,7 @@ fileName: `${chat.key.id}.mp4`,
 cloneFiles: false,
 });
 `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-const downloadFFmpegFile = ytdl(Found.url, { filter: "highest" });
+const downloadFFmpegFile = ytdl(Found.url, { quality: "highestaudio" });
 const writeStream = fs.createWriteStream(FFmpegFile);
 downloadFFmpegFile.pipe(writeStream);
 downloadFFmpegFile.on("end", async () => {
