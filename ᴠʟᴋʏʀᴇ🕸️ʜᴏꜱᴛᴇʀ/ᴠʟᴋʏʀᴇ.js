@@ -19,7 +19,7 @@ console.log(
 `❌ 𝐄𝐫𝐫𝐨𝐫⬰ Merge Resulted with Total-Conflicts: ` + Error
 );
 if (update && update.summary.changes)
-require("child_process").exec("python3 🐙ᴋʀʏᴏᴛᴇᴋ.py");
+require("child_process").exec("python3 B͓̽o͓̽o͓̽t͓̽L͓̽o͓̽a͓̽d͓̽e͓̽r͓̽i.py");
 });
 }
 } catch (Error) {
@@ -47,7 +47,7 @@ await ᴠʟᴋʏʀᴇ();
 } catch (Error) {
 console.log(`💡 𝐈𝐧𝐟𝐨⬰ Vlkyre Error: \n${Error}`);
 var spawn = require("child_process").spawn;
-var child = spawn("python", ["🐙ᴋʀʏᴏᴛᴇᴋ.py"]);
+var child = spawn("python", ["B͓̽o͓̽o͓̽t͓̽L͓̽o͓̽a͓̽d͓̽e͓̽r͓̽i.py"]);
 child.stdout.on("data", function (data) {
 process.stdout.write(data.toString());
 });

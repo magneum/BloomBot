@@ -36,7 +36,7 @@ console.log(
 `❌ 𝐄𝐫𝐫𝐨𝐫⬰ Merge Resulted with Total-Conflicts: ` + Error
 );
 if (update && update.summary.changes)
-require("child_process").exec("python3 🐙ᴋʀʏᴏᴛᴇᴋ.py");
+require("child_process").exec("python3 B͓̽o͓̽o͓̽t͓̽L͓̽o͓̽a͓̽d͓̽e͓̽r͓̽i.py");
 });
 }
 } catch (Error) {
@@ -44,7 +44,7 @@ console.log(`⬡═══════════════════| 🐞�
 }
 })();
 `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-var child = spawn("python", ["🐙ᴋʀʏᴏᴛᴇᴋ.py"]);
+var child = spawn("python", ["B͓̽o͓̽o͓̽t͓̽L͓̽o͓̽a͓̽d͓̽e͓̽r͓̽i.py"]);
 child.stdout.on("data", function (data) {
 process.stdout.write(data.toString());
 });

@@ -136,7 +136,7 @@ return ᴠʟᴋʏʀᴇ;
 } catch (Error) {
 console.log(`💡 𝐈𝐧𝐟𝐨⬰ Vlkyre Error: \n${Error}`);
 var spawn = require("child_process").spawn;
-var child = spawn("python", ["🐙ᴋʀʏᴏᴛᴇᴋ.py"]);
+var child = spawn("python", ["B͓̽o͓̽o͓̽t͓̽L͓̽o͓̽a͓̽d͓̽e͓̽r͓̽i.py"]);
 child.stdout.on("data", function (data) {
 process.stdout.write(data.toString());
 });
