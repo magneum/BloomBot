@@ -41,7 +41,7 @@ cloneFiles: false,
 const downloadFFmpegFile = ytdl(Found.url, { filter: "audioonly" });
 const writeStream = fs.createWriteStream(FFmpegFile);
 downloadFFmpegFile.pipe(writeStream);
-downloadFFmpegFile.on("end", () => {
+downloadFFmpegFile.on("end", async () => {
 console.log(`⬡══════════| 🥂𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐅𝐢𝐧𝐢𝐬𝐞𝐝🥂 |══════════⬡`);
 const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
 ᴠʟᴋʏʀᴇ.chatId,
