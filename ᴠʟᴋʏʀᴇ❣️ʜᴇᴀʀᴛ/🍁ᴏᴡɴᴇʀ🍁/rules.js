@@ -44,13 +44,13 @@ chat,
 ║🔖 _Enjoy the bot and have fun._
 ╚════════════╝
 
-╔════◇*❓How Do I add Corlexa In My Group?*
+╔════◇*❓How Do I add Vlkyre In My Group?*
 ║
 ║❗ _Send Your Group Link In My Private!_
 ║❗ _Your Group Should Have 10 members atleast._
 ║❗ _Turn Disappearing Message Off in your Gc._
-║❗ _If Any Member OF Your Group Kicks The Bot For Dumb/No Reason, Corlexa Support Team Will PermaLock Your Group._
-║❗ _Every Member Should Be Verified First Before They Can Use Corlexa._
+║❗ _If Any Member OF Your Group Kicks The Bot For Dumb/No Reason, Vlkyre Support Team Will PermaLock Your Group._
+║❗ _Every Member Should Be Verified First Before They Can Use Vlkyre._
 ╚════════════╝`,
 "./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ.png"
 );

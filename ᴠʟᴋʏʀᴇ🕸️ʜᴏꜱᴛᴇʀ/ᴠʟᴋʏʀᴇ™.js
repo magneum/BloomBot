@@ -243,8 +243,8 @@ buttonText: { displayText: `${ᴋᴇɪ}help` },
 type: 1,
 },
 {
-buttonId: `${ᴋᴇɪ}request`,
-buttonText: { displayText: `${ᴋᴇɪ}request` },
+buttonId: `${ᴋᴇɪ}rules`,
+buttonText: { displayText: `${ᴋᴇɪ}rules` },
 type: 1,
 },
 {
