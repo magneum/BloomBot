@@ -216,22 +216,28 @@ const MemNum = update.participants[0];
 if (update.action == `add` && MemNum.includes(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.user.jid)) {
 const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
 GroupID,
-{ url: "./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_base.png" },
+{ url: "./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ.png" },
 MessageType.image,
 { mimetype: Mimetype.png }
 );
 await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
 GroupID,
 {
-contentText: `👋🏻𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚 𝐄𝐯𝐞𝐫𝐲𝐨𝐧𝐞, ${Timers}
-*To Admins Of This Group:*
-_Some Of Your Members Requested Our Vlkyre HQ to Add Our Bot In This Group.Have Fun!_
+contentText: `👋🏻𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚, *To Admins Of This Group: Some Of Your Members Requested Our Vlkyre HQ to Add Our Bot In This Group.Have Fun!*
 
 
 ╔════◇⭕𝐅𝐨𝐫 𝐀𝐝𝐦𝐢𝐧𝐬
-║
 ║◇ *antilink:* _on/off_
 ║◇ *autorank:* _on/off_
+╚════════════༻꧂
+
+
+╔════◇🧀 𝐃𝐞𝐟𝐚𝐮𝐥𝐭 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
+║ *${ᴋᴇɪ}help:* _read all commands of Vlkyre!_
+║ *${ᴋᴇɪ}rules:* _read rules of Vlkyre!_
+║ *${ᴋᴇɪ}faq:* _read frequesntly asked questions!_
+║ *${ᴋᴇɪ}request:* _add vlkyre in your groups!_
+║ *${ᴋᴇɪ}verify:* _verify yourself to use Vlkyre!_
 ╚════════════༻꧂
 
 👇🏽𝗣𝗿𝗲𝘀𝘀 𝗯𝗲𝗹𝗼𝘄 𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗦𝘁𝗮𝗿𝘁👇🏽`,
