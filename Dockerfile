@@ -15,6 +15,7 @@ RUN apt-get install opus-tools -y
 RUN apt-get install python3-pip -y 
 RUN apt-get install python-is-python3
 RUN curl https://cli-assets.heroku.com/install.sh | sh
+RUN curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl && chmod a+rx /usr/local/bin/youtube-dl
 RUN heroku plugins:install heroku-builds
 RUN /venv/bin/python -m pip install --upgrade pip
 RUN apt-get install npm -y

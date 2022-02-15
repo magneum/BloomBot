@@ -7,13 +7,13 @@ require(`./konfs`);
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const { registerFont } = require(`canvas`);
 registerFont(`./ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/LobsterTwo-Bold.ttf`, {
-family: `LobsterTwo-Bold`,
+  family: `LobsterTwo-Bold`,
 });
 registerFont(`./ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/SlouchybrushRegular-eZnEB.ttf`, {
-family: `SlouchybrushRegular`,
+  family: `SlouchybrushRegular`,
 });
 registerFont(`./ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/TheHeartOfEverythingDemo-KRdD.ttf`, {
-family: `TheHeartOfEverythingDemo`,
+  family: `TheHeartOfEverythingDemo`,
 });
 const Canvas = require("canvas");
 var randomMC = require("random-material-color");
@@ -42,277 +42,276 @@ var color = randomMC.getColor();
 const canvacord = require("canvacord");
 `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 const RankCheck = async (ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, chat, ᴠʟᴋʏʀᴇ) => {
-try {
-var աɦօֆɛռȶɦǟȶ = ᴠʟᴋʏʀᴇ.sender;
-var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ
-.substring(0, աɦօֆɛռȶɦǟȶ.length - 15)
-.replace(/[+ ]/g, "");
-`|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-CorlexaExp.findOne(
-{
-ID: աɦօֆɛռȶɦǟȶ,
-serverID: ᴠʟᴋʏʀᴇ.chatId,
-},
-async (Error, user) => {
-if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
-if (!user) {
-var newUsers = new CorlexaExp({
-ID: աɦօֆɛռȶɦǟȶ,
-serverID: ᴠʟᴋʏʀᴇ.chatId,
-xp: Math.ceil(Math.random() * 1),
-level: 1,
-});
-await newUsers
-.save()
-.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
-return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
-.sendMessage(
-ᴠʟᴋʏʀᴇ.chatId,
-`📜𝐑𝐚𝐧𝐤: @${աɦօֆɛռȶɦǟȶռʊʍ}, Auto-Ranking has Started!`,
-MessageType.text,
-{
-contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
-}
-)
-.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
-}
-`|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-let maxXP = 0;
-let xpAdd = 0;
-let Bonus = 0;
-let ToNxtLvl = 0;
-if (user.level < 10) {
-maxXP = 500;
-xpAdd = Math.ceil(Math.random() * user.level + 2);
-ToNxtLvl = 50 * Math.pow(2, user.level);
-Bonus = Math.floor(Math.random() * (100 - 10 + 1)) + 10;
-} else if (user.level >= 15) {
-maxXP = 1000;
-xpAdd = Math.ceil(Math.random() * user.level + 2);
-ToNxtLvl = 60 * Math.pow(2, user.level);
-Bonus = Math.floor(Math.random() * (90 - 10 + 1)) + 10;
-} else if (user.level >= 20) {
-maxXP = 1500;
-xpAdd = Math.ceil(Math.random() * user.level + 2);
-ToNxtLvl = 70 * Math.pow(2, user.level);
-Bonus = Math.floor(Math.random() * (80 - 10 + 1)) + 10;
-} else if (user.level >= 25) {
-maxXP = 2000;
-xpAdd = Math.ceil(Math.random() * user.level + 2);
-ToNxtLvl = 80 * Math.pow(2, user.level);
-Bonus = Math.floor(Math.random() * (70 - 10 + 1)) + 10;
-} else if (user.level >= 30) {
-maxXP = 2500;
-xpAdd = Math.ceil(Math.random() * user.level + 2);
-ToNxtLvl = 90 * Math.pow(2, user.level);
-Bonus = Math.floor(Math.random() * (60 - 10 + 1)) + 10;
-} else if (user.level >= 35) {
-maxXP = 3000;
-xpAdd = Math.ceil(Math.random() * user.level + 2);
-ToNxtLvl = 100 * Math.pow(2, user.level);
-Bonus = Math.floor(Math.random() * (50 - 10 + 1)) + 10;
-} else if (user.level >= 40) {
-maxXP = 3500;
-xpAdd = Math.ceil(Math.random() * user.level + 2);
-ToNxtLvl = 150 * Math.pow(2, user.level);
-Bonus = Math.floor(Math.random() * (40 - 10 + 1)) + 10;
-} else if (user.level >= 45) {
-maxXP = 4000;
-xpAdd = Math.ceil(Math.random() * user.level + 2);
-ToNxtLvl = 160 * Math.pow(2, user.level);
-Bonus = Math.floor(Math.random() * (30 - 10 + 1)) + 10;
-} else if (user.level >= 50) {
-maxXP = 4500;
-xpAdd = Math.ceil(Math.random() * user.level + 2);
-ToNxtLvl = 170 * Math.pow(2, user.level);
-Bonus = Math.floor(Math.random() * (20 - 10 + 1)) + 10;
-} else if (user.level >= 55) {
-maxXP = 5000;
-xpAdd = Math.ceil(Math.random() * user.level + 2);
-ToNxtLvl = 180 * Math.pow(2, user.level);
-Bonus = Math.floor(Math.random() * (18 - 10 + 1)) + 10;
-} else if (user.level >= 80) {
-maxXP = 8000;
-xpAdd = Math.ceil(Math.random() * user.level + 2);
-ToNxtLvl = 190 * Math.pow(2, user.level);
-Bonus = Math.floor(Math.random() * (15 - 10 + 1)) + 10;
-} else if (user.level >= 100) {
-maxXP = 10000;
-xpAdd = Math.ceil(Math.random() * user.level + 2);
-ToNxtLvl = 200 * Math.pow(2, user.level);
-Bonus = Math.floor(Math.random() * (14 - 10 + 1)) + 10;
-}
-`|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-if (user.xp >= ToNxtLvl) {
-let Img;
-user.level = user.level + 1;
-await user
-.save()
-.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
-try {
-var ResGot = await fetch(
-global.API("https://wall.alphacoders.com/api2.0", "/get.php", {
-auth: "3e7756c85df54b78f934a284c11abe4e",
-method: "search",
-term: "anime landscape",
-})
-);
-var Bson = await ResGot.json();
-var ImgBson =
-Bson.wallpapers[
-Math.floor(Math.random() * Bson.wallpapers.length)
-];
-Img = ImgBson.url_image;
-} catch {
-Img = "https://i.postimg.cc/Kc65RLnX/Full.png";
-}
-try {
-𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.getProfilePicture(աɦօֆɛռȶɦǟȶ);
-} catch {
-𝕻𝕻𝖑𝖊𝖙𝖊𝖗 =
-"https://i.postimg.cc/wxWL9G8F/no-profile-picture-300x216.png";
-}
-let աɦօֆɛ;
-try {
-աɦօֆɛ = աɦօֆɛռȶɦǟȶռʊʍ
-.substring(2, աɦօֆɛռȶɦǟȶռʊʍ.length - 6)
-.replace(/[+ ]/g, "");
-} catch {
-աɦօֆɛ = Math.floor(0001 + Math.random() * 9999);
-}
-var expFile = `./ᴠʟᴋʏʀᴇ🀄ᴇxʜᴀᴜꜱᴛ/${Date.now()}r${chat.key.id}.png`;
-const rank = new canvacord.Rank()
-.setStatus("online")
-.setAvatar(𝕻𝕻𝖑𝖊𝖙𝖊𝖗)
-.setRequiredXP(maxXP)
-.setLevel(user.level)
-.setCurrentXP(user.xp)
-.setUsername("Ranked Up!")
-.setBackground("IMAGE", Img)
-.setDiscriminator(`${աɦօֆɛ}`)
-.setProgressBar(color, "COLOR");
-rank.build().then(async (data) => {
-fs.writeFile(expFile, data, async (Error) => {
-if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
-Economy.findOne(
-{
-ID: աɦօֆɛռȶɦǟȶ,
-},
-async (Error, userEco) => {
-if (Error)
-return ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
-if (!userEco) {
-var newUser = new Economy({
-ID: աɦօֆɛռȶɦǟȶ,
-money: 0,
-daily: 0,
-timeout: 86400000,
-fishdone: 0,
-fishtimeout: 1800000,
-workdone: 0,
-worktimeout: 900000,
-});
-await newUser
-.save()
-.catch((Error) =>
-ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
-);
-const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
-ᴠʟᴋʏʀᴇ.chatId,
-fs.readFileSync(expFile),
-MessageType.image,
-{ mimetype: Mimetype.png }
-);
-await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
-.sendMessage(
-ᴠʟᴋʏʀᴇ.chatId,
-{
-contentText: `✨𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬 @${աɦօֆɛռȶɦǟȶռʊʍ}, _𝐋𝐞𝐯𝐞𝐥𝐞𝐝-𝐔𝐏!_`,
-footerText: `꧁ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 v${vers.vers} ꧂\n☊ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
-buttons: [
-{
-buttonId: `${ᴋᴇɪ}rank`,
-buttonText: { displayText: `${ᴋᴇɪ}rank` },
-type: 1,
-},
-],
-headerType: 4,
-imageMessage: media.message.imageMessage,
-},
-MessageType.buttonsMessage,
-{
-quoted: chat,
-contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
-}
-)
-.catch((Error) =>
-ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
-);
-return await cleanRF.cleanRF(expFile);
-`|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-} else {
-userEco.money = userEco.money + Bonus;
-await userEco
-.save()
-.catch((Error) =>
-ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
-);
-const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
-ᴠʟᴋʏʀᴇ.chatId,
-fs.readFileSync(expFile),
-MessageType.image,
-{ mimetype: Mimetype.png }
-);
-await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
-.sendMessage(
-ᴠʟᴋʏʀᴇ.chatId,
-{
-contentText: `✨𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬 @${աɦօֆɛռȶɦǟȶռʊʍ}, _𝐋𝐞𝐯𝐞𝐥𝐞𝐝-𝐔𝐏!_`,
-footerText: `꧁ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 v${vers.vers} ꧂\n☊ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
-buttons: [
-{
-buttonId: `${ᴋᴇɪ}help`,
-buttonText: { displayText: `${ᴋᴇɪ}help` },
-type: 1,
-},
-{
-buttonId: `${ᴋᴇɪ}rank`,
-buttonText: { displayText: `${ᴋᴇɪ}rank` },
-type: 1,
-},
-],
-headerType: 4,
-imageMessage: media.message.imageMessage,
-},
-MessageType.buttonsMessage,
-{
-quoted: chat,
-contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
-}
-)
-.catch((Error) =>
-ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
-);
-return await cleanRF.cleanRF(expFile);
-}
-}
-);
-});
-});
-}
-user.xp = user.xp + xpAdd;
-await user
-.save()
-.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
-}
-);
-`|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-} catch (Error) {
-ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
-}
+  try {
+    var աɦօֆɛռȶɦǟȶ = ᴠʟᴋʏʀᴇ.sender;
+    var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ
+      .substring(0, աɦօֆɛռȶɦǟȶ.length - 15)
+      .replace(/[+ ]/g, "");
+    `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
+    CorlexaExp.findOne(
+      {
+        ID: աɦօֆɛռȶɦǟȶ,
+        serverID: ᴠʟᴋʏʀᴇ.chatId,
+      },
+      async (Error, user) => {
+        if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
+        if (!user) {
+          var newUsers = new CorlexaExp({
+            ID: աɦօֆɛռȶɦǟȶ,
+            serverID: ᴠʟᴋʏʀᴇ.chatId,
+            xp: Math.ceil(Math.random() * 1),
+            level: 1,
+          });
+          await newUsers
+            .save()
+            .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
+          return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
+            .sendMessage(
+              ᴠʟᴋʏʀᴇ.chatId,
+              `📜𝐑𝐚𝐧𝐤: @${աɦօֆɛռȶɦǟȶռʊʍ}, Auto-Ranking has Started!`,
+              MessageType.text,
+              {
+                contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
+              }
+            )
+            .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
+        }
+        `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
+        let maxXP = 0;
+        let xpAdd = 0;
+        let Bonus = 0;
+        let ToNxtLvl = 0;
+        if (user.level < 10) {
+          maxXP = 500;
+          xpAdd = Math.ceil(Math.random() * user.level + 2);
+          ToNxtLvl = 50 * Math.pow(2, user.level);
+          Bonus = Math.floor(Math.random() * (100 - 10 + 1)) + 10;
+        } else if (user.level >= 15) {
+          maxXP = 1000;
+          xpAdd = Math.ceil(Math.random() * user.level + 2);
+          ToNxtLvl = 60 * Math.pow(2, user.level);
+          Bonus = Math.floor(Math.random() * (90 - 10 + 1)) + 10;
+        } else if (user.level >= 20) {
+          maxXP = 1500;
+          xpAdd = Math.ceil(Math.random() * user.level + 2);
+          ToNxtLvl = 70 * Math.pow(2, user.level);
+          Bonus = Math.floor(Math.random() * (80 - 10 + 1)) + 10;
+        } else if (user.level >= 25) {
+          maxXP = 2000;
+          xpAdd = Math.ceil(Math.random() * user.level + 2);
+          ToNxtLvl = 80 * Math.pow(2, user.level);
+          Bonus = Math.floor(Math.random() * (70 - 10 + 1)) + 10;
+        } else if (user.level >= 30) {
+          maxXP = 2500;
+          xpAdd = Math.ceil(Math.random() * user.level + 2);
+          ToNxtLvl = 90 * Math.pow(2, user.level);
+          Bonus = Math.floor(Math.random() * (60 - 10 + 1)) + 10;
+        } else if (user.level >= 35) {
+          maxXP = 3000;
+          xpAdd = Math.ceil(Math.random() * user.level + 2);
+          ToNxtLvl = 100 * Math.pow(2, user.level);
+          Bonus = Math.floor(Math.random() * (50 - 10 + 1)) + 10;
+        } else if (user.level >= 40) {
+          maxXP = 3500;
+          xpAdd = Math.ceil(Math.random() * user.level + 2);
+          ToNxtLvl = 150 * Math.pow(2, user.level);
+          Bonus = Math.floor(Math.random() * (40 - 10 + 1)) + 10;
+        } else if (user.level >= 45) {
+          maxXP = 4000;
+          xpAdd = Math.ceil(Math.random() * user.level + 2);
+          ToNxtLvl = 160 * Math.pow(2, user.level);
+          Bonus = Math.floor(Math.random() * (30 - 10 + 1)) + 10;
+        } else if (user.level >= 50) {
+          maxXP = 4500;
+          xpAdd = Math.ceil(Math.random() * user.level + 2);
+          ToNxtLvl = 170 * Math.pow(2, user.level);
+          Bonus = Math.floor(Math.random() * (20 - 10 + 1)) + 10;
+        } else if (user.level >= 55) {
+          maxXP = 5000;
+          xpAdd = Math.ceil(Math.random() * user.level + 2);
+          ToNxtLvl = 180 * Math.pow(2, user.level);
+          Bonus = Math.floor(Math.random() * (18 - 10 + 1)) + 10;
+        } else if (user.level >= 80) {
+          maxXP = 8000;
+          xpAdd = Math.ceil(Math.random() * user.level + 2);
+          ToNxtLvl = 190 * Math.pow(2, user.level);
+          Bonus = Math.floor(Math.random() * (15 - 10 + 1)) + 10;
+        } else if (user.level >= 100) {
+          maxXP = 10000;
+          xpAdd = Math.ceil(Math.random() * user.level + 2);
+          ToNxtLvl = 200 * Math.pow(2, user.level);
+          Bonus = Math.floor(Math.random() * (14 - 10 + 1)) + 10;
+        }
+        `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
+        if (user.xp >= ToNxtLvl) {
+          let Img;
+          user.level = user.level + 1;
+          await user
+            .save()
+            .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
+          try {
+            var ResGot = await fetch(
+              global.API("https://wall.alphacoders.com/api2.0", "/get.php", {
+                auth: "3e7756c85df54b78f934a284c11abe4e",
+                method: "search",
+                term: "anime landscape",
+              })
+            );
+            var Bson = await ResGot.json();
+            var ImgBson =
+              Bson.wallpapers[
+                Math.floor(Math.random() * Bson.wallpapers.length)
+              ];
+            Img = ImgBson.url_image;
+          } catch {
+            Img = "https://i.postimg.cc/Kc65RLnX/Full.png";
+          }
+          try {
+            𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.getProfilePicture(աɦօֆɛռȶɦǟȶ);
+          } catch {
+            𝕻𝕻𝖑𝖊𝖙𝖊𝖗 =
+              "https://i.postimg.cc/wxWL9G8F/no-profile-picture-300x216.png";
+          }
+          let աɦօֆɛ;
+          try {
+            աɦօֆɛ = աɦօֆɛռȶɦǟȶռʊʍ
+              .substring(2, աɦօֆɛռȶɦǟȶռʊʍ.length - 6)
+              .replace(/[+ ]/g, "");
+          } catch {
+            աɦօֆɛ = Math.floor(0001 + Math.random() * 9999);
+          }
+          var expFile = `./ᴠʟᴋʏʀᴇ🀄ᴇxʜᴀᴜꜱᴛ/${Date.now()}r${chat.key.id}.png`;
+          const rank = new canvacord.Rank()
+            .setStatus("online")
+            .setAvatar(𝕻𝕻𝖑𝖊𝖙𝖊𝖗)
+            .setRequiredXP(maxXP)
+            .setLevel(user.level)
+            .setCurrentXP(user.xp)
+            .setUsername("Ranked Up!")
+            .setBackground("IMAGE", Img)
+            .setDiscriminator(`${աɦօֆɛ}`)
+            .setProgressBar(color, "COLOR");
+          rank.build().then(async (data) => {
+            fs.writeFile(expFile, data, async (Error) => {
+              if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
+              Economy.findOne(
+                {
+                  ID: աɦօֆɛռȶɦǟȶ,
+                },
+                async (Error, userEco) => {
+                  if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
+                  if (!userEco) {
+                    var newUser = new Economy({
+                      ID: աɦօֆɛռȶɦǟȶ,
+                      money: 0,
+                      daily: 0,
+                      timeout: 86400000,
+                      fishdone: 0,
+                      fishtimeout: 1800000,
+                      workdone: 0,
+                      worktimeout: 900000,
+                    });
+                    await newUser
+                      .save()
+                      .catch((Error) =>
+                        ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
+                      );
+                    const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
+                      ᴠʟᴋʏʀᴇ.chatId,
+                      fs.readFileSync(expFile),
+                      MessageType.image,
+                      { mimetype: Mimetype.png }
+                    );
+                    await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
+                      .sendMessage(
+                        ᴠʟᴋʏʀᴇ.chatId,
+                        {
+                          contentText: `✨𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬 @${աɦօֆɛռȶɦǟȶռʊʍ}, _𝐋𝐞𝐯𝐞𝐥𝐞𝐝-𝐔𝐏!_`,
+                          footerText: `꧁ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 v${vers.vers} ꧂\n☊ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+                          buttons: [
+                            {
+                              buttonId: `${ᴋᴇɪ}rank`,
+                              buttonText: { displayText: `${ᴋᴇɪ}rank` },
+                              type: 1,
+                            },
+                          ],
+                          headerType: 4,
+                          imageMessage: media.message.imageMessage,
+                        },
+                        MessageType.buttonsMessage,
+                        {
+                          quoted: chat,
+                          contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
+                        }
+                      )
+                      .catch((Error) =>
+                        ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
+                      );
+                    return await cleanRF.cleanRF(expFile);
+                    `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
+                  } else {
+                    userEco.money = userEco.money + Bonus;
+                    await userEco
+                      .save()
+                      .catch((Error) =>
+                        ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
+                      );
+                    const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
+                      ᴠʟᴋʏʀᴇ.chatId,
+                      fs.readFileSync(expFile),
+                      MessageType.image,
+                      { mimetype: Mimetype.png }
+                    );
+                    await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
+                      .sendMessage(
+                        ᴠʟᴋʏʀᴇ.chatId,
+                        {
+                          contentText: `✨𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬 @${աɦօֆɛռȶɦǟȶռʊʍ}, _𝐋𝐞𝐯𝐞𝐥𝐞𝐝-𝐔𝐏!_`,
+                          footerText: `꧁ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 v${vers.vers} ꧂\n☊ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+                          buttons: [
+                            {
+                              buttonId: `${ᴋᴇɪ}help`,
+                              buttonText: { displayText: `${ᴋᴇɪ}help` },
+                              type: 1,
+                            },
+                            {
+                              buttonId: `${ᴋᴇɪ}rank`,
+                              buttonText: { displayText: `${ᴋᴇɪ}rank` },
+                              type: 1,
+                            },
+                          ],
+                          headerType: 4,
+                          imageMessage: media.message.imageMessage,
+                        },
+                        MessageType.buttonsMessage,
+                        {
+                          quoted: chat,
+                          contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
+                        }
+                      )
+                      .catch((Error) =>
+                        ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
+                      );
+                    return await cleanRF.cleanRF(expFile);
+                  }
+                }
+              );
+            });
+          });
+        }
+        user.xp = user.xp + xpAdd;
+        await user
+          .save()
+          .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
+      }
+    );
+    `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
+  } catch (Error) {
+    ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
+  }
 };
 module.exports = {
-MRC: RankCheck,
+  MRC: RankCheck,
 };
 `|⬡════════════════════════════════════════════|                            |═══════════════════════════════════════════⬡|`;
 `|                                                                                                                        |`;

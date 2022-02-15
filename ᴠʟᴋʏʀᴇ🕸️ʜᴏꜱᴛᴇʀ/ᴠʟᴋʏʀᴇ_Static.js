@@ -21,50 +21,54 @@ const Clock = date.format(now, pattern);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-const ᴠʟᴋʏʀᴇ_GIF_Static = async (ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, chat, ᴠʟᴋʏʀᴇ, MainText, MediaUrl) => {
-try {
-const defaultnm = ᴠʟᴋʏʀᴇ.commandName;
-const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
-if (ᴠʟᴋʏʀᴇ.isReply) {
-var աɦօֆɛռȶɦǟȶ = ᴠʟᴋʏʀᴇ.sender;
-var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ
-.substring(0, աɦօֆɛռȶɦǟȶ.length - 15)
-.replace(/[+ ]/g, "");
-var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
-var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
-return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
-.sendMessage(ᴠʟᴋʏʀᴇ.chatId, { url: MediaUrl }, MessageType.video, {
-mimetype: `video/gif`,
-quoted: chat,
-caption:
-`꧁ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 v${vers.vers} ꧂\n☊ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™\n\n` +
-MainText,
-contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ, Receiver] },
-})
-.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
-} else {
-var աɦօֆɛռȶɦǟȶ = ᴠʟᴋʏʀᴇ.sender;
-var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ
-.substring(0, աɦօֆɛռȶɦǟȶ.length - 15)
-.replace(/[+ ]/g, "");
-return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
-.sendMessage(ᴠʟᴋʏʀᴇ.chatId, { url: MediaUrl }, MessageType.video, {
-mimetype: `video/gif`,
-quoted: chat,
-caption:
-`꧁ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 v${vers.vers} ꧂\n☊ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™\n\n` +
-MainText,
-contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
-})
-.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
-}
-} catch (Error) {
-return ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
-}
+const ᴠʟᴋʏʀᴇ_GIF_Static = async (
+  ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+  chat,
+  ᴠʟᴋʏʀᴇ,
+  MainText,
+  MediaUrl
+) => {
+  try {
+    const defaultnm = ᴠʟᴋʏʀᴇ.commandName;
+    const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
+    if (ᴠʟᴋʏʀᴇ.isReply) {
+      var աɦօֆɛռȶɦǟȶ = ᴠʟᴋʏʀᴇ.sender;
+      var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ
+        .substring(0, աɦօֆɛռȶɦǟȶ.length - 15)
+        .replace(/[+ ]/g, "");
+      var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
+      var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
+      return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
+        .sendMessage(ᴠʟᴋʏʀᴇ.chatId, { url: MediaUrl }, MessageType.video, {
+          mimetype: `video/gif`,
+          quoted: chat,
+          caption:
+            `꧁ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 v${vers.vers} ꧂\n☊ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™\n\n` + MainText,
+          contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ, Receiver] },
+        })
+        .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
+    } else {
+      var աɦօֆɛռȶɦǟȶ = ᴠʟᴋʏʀᴇ.sender;
+      var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ
+        .substring(0, աɦօֆɛռȶɦǟȶ.length - 15)
+        .replace(/[+ ]/g, "");
+      return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
+        .sendMessage(ᴠʟᴋʏʀᴇ.chatId, { url: MediaUrl }, MessageType.video, {
+          mimetype: `video/gif`,
+          quoted: chat,
+          caption:
+            `꧁ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 v${vers.vers} ꧂\n☊ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™\n\n` + MainText,
+          contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
+        })
+        .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
+    }
+  } catch (Error) {
+    return ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
+  }
 };
 
 module.exports = {
-MGS: ᴠʟᴋʏʀᴇ_GIF_Static,
+  MGS: ᴠʟᴋʏʀᴇ_GIF_Static,
 };
 `|⬡════════════════════════════════════════════|                            |═══════════════════════════════════════════⬡|`;
 `|                                                                                                                        |`;

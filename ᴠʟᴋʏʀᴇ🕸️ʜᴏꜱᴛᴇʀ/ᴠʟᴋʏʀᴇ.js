@@ -4,60 +4,60 @@
 `|                                                                                                                        |`;
 `|⬡════════════════════════════════════════════|                            |═══════════════════════════════════════════⬡|`;
 (async () => {
-try {
-const VlkyreGit = require(`simple-git`)();
-await VlkyreGit.fetch();
-var VlkyreFetched = await VlkyreGit.log([`KryTek..origin/KryTek`]);
-if (VlkyreFetched.total != 0) {
-require(`simple-git`)()
-.exec(() =>
-console.log(`💡 𝐈𝐧𝐟𝐨⬰ Updating Vlkyre System With Latest Patch...`)
-)
-.pull((Error, update) => {
-if (Error)
-console.log(
-`❌ 𝐄𝐫𝐫𝐨𝐫⬰ Merge Resulted with Total-Conflicts: ` + Error
-);
-if (update && update.summary.changes)
-require("child_process").exec("python3 B͓̽o͓̽o͓̽t͓̽L͓̽o͓̽a͓̽d͓̽e͓̽r͓̽i.py");
-});
-}
-} catch (Error) {
-console.log(`⬡═══════════════════| 🐞𝐄𝐫𝐫𝐨𝐫: \n` + Error);
-}
-`|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-try {
-const ᴠʟᴋʏʀᴇgoose = require("mongoose");
-const _𝔏𝔞𝔟_ = require(`./_𝔏𝔞𝔟_`);
-await ᴠʟᴋʏʀᴇgoose.connect(_𝔏𝔞𝔟_.VLKYREMDB, {
-useNewUrlParser: true,
-useUnifiedTopology: true,
-useCreateIndex: true,
-useFindAndModify: false,
-});
-console.log("💡 𝐈𝐧𝐟𝐨⬰ VlkyreDB Ready!");
-} catch (Error) {
-console.log(`💡 𝐈𝐧𝐟𝐨⬰ VlkyreDB Error: \n${Error}`);
-process.exit(0);
-}
-`|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-try {
-const { ᴠʟᴋʏʀᴇ } = require("./ᴠʟᴋʏʀᴇ™.js");
-await ᴠʟᴋʏʀᴇ();
-} catch (Error) {
-console.log(`💡 𝐈𝐧𝐟𝐨⬰ Vlkyre Error: \n${Error}`);
-var spawn = require("child_process").spawn;
-var child = spawn("python", ["B͓̽o͓̽o͓̽t͓̽L͓̽o͓̽a͓̽d͓̽e͓̽r͓̽i.py"]);
-child.stdout.on("data", function (data) {
-process.stdout.write(data.toString());
-});
-child.stderr.on("data", function (data) {
-process.stdout.write(data.toString());
-});
-child.on("close", function (code) {
-console.log("Finished with code " + code);
-});
-}
+  try {
+    const VlkyreGit = require(`simple-git`)();
+    await VlkyreGit.fetch();
+    var VlkyreFetched = await VlkyreGit.log([`KryTek..origin/KryTek`]);
+    if (VlkyreFetched.total != 0) {
+      require(`simple-git`)()
+        .exec(() =>
+          console.log(`💡 𝐈𝐧𝐟𝐨⬰ Updating Vlkyre System With Latest Patch...`)
+        )
+        .pull((Error, update) => {
+          if (Error)
+            console.log(
+              `❌ 𝐄𝐫𝐫𝐨𝐫⬰ Merge Resulted with Total-Conflicts: ` + Error
+            );
+          if (update && update.summary.changes)
+            require("child_process").exec("python3 B͓̽o͓̽o͓̽t͓̽L͓̽o͓̽a͓̽d͓̽e͓̽r͓̽i.py");
+        });
+    }
+  } catch (Error) {
+    console.log(`⬡═══════════════════| 🐞𝐄𝐫𝐫𝐨𝐫: \n` + Error);
+  }
+  `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
+  try {
+    const ᴠʟᴋʏʀᴇgoose = require("mongoose");
+    const _𝔏𝔞𝔟_ = require(`./_𝔏𝔞𝔟_`);
+    await ᴠʟᴋʏʀᴇgoose.connect(_𝔏𝔞𝔟_.VLKYREMDB, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+      useCreateIndex: true,
+      useFindAndModify: false,
+    });
+    console.log("💡 𝐈𝐧𝐟𝐨⬰ VlkyreDB Ready!");
+  } catch (Error) {
+    console.log(`💡 𝐈𝐧𝐟𝐨⬰ VlkyreDB Error: \n${Error}`);
+    process.exit(0);
+  }
+  `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
+  try {
+    const { ᴠʟᴋʏʀᴇ } = require("./ᴠʟᴋʏʀᴇ™.js");
+    await ᴠʟᴋʏʀᴇ();
+  } catch (Error) {
+    console.log(`💡 𝐈𝐧𝐟𝐨⬰ Vlkyre Error: \n${Error}`);
+    var spawn = require("child_process").spawn;
+    var child = spawn("python", ["B͓̽o͓̽o͓̽t͓̽L͓̽o͓̽a͓̽d͓̽e͓̽r͓̽i.py"]);
+    child.stdout.on("data", function (data) {
+      process.stdout.write(data.toString());
+    });
+    child.stderr.on("data", function (data) {
+      process.stdout.write(data.toString());
+    });
+    child.on("close", function (code) {
+      console.log("Finished with code " + code);
+    });
+  }
 })();
 `|⬡════════════════════════════════════════════|                            |═══════════════════════════════════════════⬡|`;
 `|                                                                                                                        |`;

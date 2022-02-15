@@ -5,17 +5,17 @@
 `|⬡════════════════════════════════════════════|                            |═══════════════════════════════════════════⬡|`;
 const tenors = require(`./ᴠʟᴋʏʀᴇTenor`);
 module.exports = {
-ᴠʟᴋʏʀᴇTenorMaker(option) {
-let TenorGot;
-Object.keys(tenors).filter((key) => {
-if (key === option) TenorGot = tenors[key];
-});
-if (TenorGot) {
-return TenorGot[Math.floor(Math.random() * TenorGot.length)];
-} else {
-return `Invalid Request`;
-}
-},
+  ᴠʟᴋʏʀᴇTenorMaker(option) {
+    let TenorGot;
+    Object.keys(tenors).filter((key) => {
+      if (key === option) TenorGot = tenors[key];
+    });
+    if (TenorGot) {
+      return TenorGot[Math.floor(Math.random() * TenorGot.length)];
+    } else {
+      return `Invalid Request`;
+    }
+  },
 };
 `|⬡════════════════════════════════════════════|                            |═══════════════════════════════════════════⬡|`;
 `|                                                                                                                        |`;

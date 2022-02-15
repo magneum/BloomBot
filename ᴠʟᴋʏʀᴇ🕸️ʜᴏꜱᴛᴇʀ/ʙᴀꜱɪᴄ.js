@@ -6,19 +6,19 @@
 const Need = "silver";
 var Item;
 if (Need === "basic" || Need === "Basic") {
-Item = "🧵ʙᴀꜱɪᴄ-10ᴄᴏᴍᴍᴀɴᴅꜱ";
+  Item = "🧵ʙᴀꜱɪᴄ-10ᴄᴏᴍᴍᴀɴᴅꜱ";
 } else if (Need === "bronze" || Need === "Bronze") {
-Item = "🥉ʙʀᴏɴᴢᴇ-20ᴄᴏᴍᴍᴀɴᴅꜱ";
+  Item = "🥉ʙʀᴏɴᴢᴇ-20ᴄᴏᴍᴍᴀɴᴅꜱ";
 } else if (Need === "silver" || Need === "Silver") {
-Item = "🥈ꜱɪʟᴠᴇʀ-40ᴄᴏᴍᴍᴀɴᴅꜱ";
+  Item = "🥈ꜱɪʟᴠᴇʀ-40ᴄᴏᴍᴍᴀɴᴅꜱ";
 } else if (Need === "gold" || Need === "Gold") {
-Item = "🥇ɢᴏʟᴅ-60ᴄᴏᴍᴍᴀɴᴅꜱ";
+  Item = "🥇ɢᴏʟᴅ-60ᴄᴏᴍᴍᴀɴᴅꜱ";
 } else if (Need === "platinum" || Need === "Platinum") {
-Item = "💍ᴘʟᴀᴛɪɴᴜᴍ-80ᴄᴏᴍᴍᴀɴᴅꜱ";
+  Item = "💍ᴘʟᴀᴛɪɴᴜᴍ-80ᴄᴏᴍᴍᴀɴᴅꜱ";
 } else if (Need === "diamond" || Need === "Diamond") {
-Item = "💎ᴅɪᴀᴍᴏɴᴅ-100ᴄᴏᴍᴍᴀɴᴅꜱ";
+  Item = "💎ᴅɪᴀᴍᴏɴᴅ-100ᴄᴏᴍᴍᴀɴᴅꜱ";
 } else {
-Item = "🧵ʙᴀꜱɪᴄ-10ᴄᴏᴍᴍᴀɴᴅꜱ";
+  Item = "🧵ʙᴀꜱɪᴄ-10ᴄᴏᴍᴍᴀɴᴅꜱ";
 }
 console.log(Item);
 return;

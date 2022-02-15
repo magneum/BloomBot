@@ -216,7 +216,7 @@ ${update.desc}`,
     if (update.action == `add` && MemNum.includes(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.user.jid)) {
       const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
         GroupID,
-        { url: "./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ.png" },
+        { url: "./ᴠʟᴋʏʀᴇ🔌cord/кгץкภչ.png" },
         MessageType.image,
         { mimetype: Mimetype.png }
       );
