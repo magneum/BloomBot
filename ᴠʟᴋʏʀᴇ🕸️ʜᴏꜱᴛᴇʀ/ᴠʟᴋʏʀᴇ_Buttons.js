@@ -31,7 +31,7 @@ const ᴠʟᴋʏʀᴇ_Text_But = async (ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ch
       var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
       const buttonMessage = {
         contentText: MainText,
-        footerText: `꧁ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 v${vers.vers} ꧂\n☊ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+        footerText: `∵ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 え ${vers.vers} ∴\n☊ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
         buttons: [
           {
             buttonId: `${ᴋᴇɪ}help`,
@@ -61,7 +61,7 @@ const ᴠʟᴋʏʀᴇ_Text_But = async (ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ch
       const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
       const buttonMessage = {
         contentText: MainText,
-        footerText: `꧁ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 v${vers.vers} ꧂\n☊ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+        footerText: `∵ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 え ${vers.vers} ∴\n☊ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
         buttons: [
           {
             buttonId: `${ᴋᴇɪ}help`,
@@ -114,7 +114,7 @@ const ᴠʟᴋʏʀᴇ_Image_But = async (
           ᴠʟᴋʏʀᴇ.chatId,
           {
             contentText: MainText,
-            footerText: `꧁ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 v${vers.vers} ꧂\n☊ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+            footerText: `∵ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 え ${vers.vers} ∴\n☊ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
             buttons: [
               {
                 buttonId: `${ᴋᴇɪ}help`,
@@ -155,7 +155,7 @@ const ᴠʟᴋʏʀᴇ_Image_But = async (
           ᴠʟᴋʏʀᴇ.chatId,
           {
             contentText: MainText,
-            footerText: `꧁ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 v${vers.vers} ꧂\n☊ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+            footerText: `∵ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 え ${vers.vers} ∴\n☊ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
             buttons: [
               {
                 buttonId: `${ᴋᴇɪ}help`,
@@ -210,7 +210,7 @@ const ᴠʟᴋʏʀᴇ_Video_But = async (
           ᴠʟᴋʏʀᴇ.chatId,
           {
             contentText: MainText,
-            footerText: `꧁ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 v${vers.vers} ꧂\n☊ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+            footerText: `∵ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 え ${vers.vers} ∴\n☊ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
             buttons: [
               {
                 buttonId: `${ᴋᴇɪ}help`,
@@ -251,7 +251,7 @@ const ᴠʟᴋʏʀᴇ_Video_But = async (
           ᴠʟᴋʏʀᴇ.chatId,
           {
             contentText: MainText,
-            footerText: `꧁ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 v${vers.vers} ꧂\n☊ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+            footerText: `∵ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 え ${vers.vers} ∴\n☊ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
             buttons: [
               {
                 buttonId: `${ᴋᴇɪ}help`,
@@ -300,7 +300,7 @@ const ᴠʟᴋʏʀᴇ_GIF_But = async (ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, cha
           ᴠʟᴋʏʀᴇ.chatId,
           {
             contentText: MainText,
-            footerText: `꧁ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 v${vers.vers} ꧂\n☊ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+            footerText: `∵ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 え ${vers.vers} ∴\n☊ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
             buttons: [
               {
                 buttonId: `${ᴋᴇɪ}help`,
@@ -341,7 +341,7 @@ const ᴠʟᴋʏʀᴇ_GIF_But = async (ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, cha
           ᴠʟᴋʏʀᴇ.chatId,
           {
             contentText: MainText,
-            footerText: `꧁ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 v${vers.vers} ꧂\n☊ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+            footerText: `∵ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 え ${vers.vers} ∴\n☊ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
             buttons: [
               {
                 buttonId: `${ᴋᴇɪ}help`,
@@ -402,7 +402,7 @@ const ᴠʟᴋʏʀᴇ_VideoAudio_But = async (
     const buttonMessages = {
       videoMessage: media.message.videoMessage,
       contentText: MainText,
-      footerText: `꧁ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 v${vers.vers} ꧂\n☊ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+      footerText: `∵ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 え ${vers.vers} ∴\n☊ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
       buttons: [
         {
           buttonId: `${ᴋᴇɪ}help`,
@@ -460,7 +460,7 @@ const ᴠʟᴋʏʀᴇ_Location_But = async (
     const buttonMessages = {
       locationMessage: media.message.locationMessage,
       contentText: MainText,
-      footerText: `꧁ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 v${vers.vers} ꧂\n☊ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+      footerText: `∵ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 え ${vers.vers} ∴\n☊ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
       buttons: [
         {
           buttonId: `${ᴋᴇɪ}help`,

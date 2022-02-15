@@ -85,6 +85,7 @@
     "crypto": "^1.0.1",
     "date-and-time": "^2.0.1",
     "dhn-api": "^1.1.3",
+    "discord-ytdl-core": "^5.0.2",
     "dotenv": "^8.2.0",
     "download-file": "^0.1.5",
     "emoji-api": "^1.0.2",
@@ -162,9 +163,6 @@
     "request": "^2.88.2",
     "scraper-instagram": "^1.0.17",
     "search-image": "^1.0.3",
-    "discord-ytdl-core": "^5.0.2",
-    "spotify-url-info": "^2.2.0",
-    "youtube-sr": "^4.0.1",
     "sequelize": "^6.7.0",
     "similarity": "^1.2.1",
     "simple-git": "^2.47.0",
@@ -172,6 +170,7 @@
     "soyultro": "^4.8.5",
     "spinnies": "^0.5.1",
     "spotify-to-yt": "^1.1.1",
+    "spotify-url-info": "^2.2.0",
     "sqlite3": "^5.0.2",
     "tenorjs": "^1.0.8",
     "text-to-image": "^4.1.1",
@@ -185,6 +184,7 @@
     "youtube-audio-stream": "^0.3.48",
     "youtube-duration": "^1.0.0",
     "youtube-metadata-from-url": "^1.0.3",
+    "youtube-sr": "^4.0.1",
     "yt-search": "^2.10.3",
     "ytdl-core": "^4.10.1"
   }
