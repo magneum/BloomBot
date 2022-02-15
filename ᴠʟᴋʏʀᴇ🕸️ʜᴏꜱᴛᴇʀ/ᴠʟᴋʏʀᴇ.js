@@ -36,27 +36,11 @@
       useFindAndModify: false,
     });
     console.log("💡 𝐈𝐧𝐟𝐨⬰ VlkyreDB Ready!");
-  } catch (Error) {
-    console.log(`💡 𝐈𝐧𝐟𝐨⬰ VlkyreDB Error: \n${Error}`);
-    process.exit(0);
-  }
-  `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-  try {
     const { ᴠʟᴋʏʀᴇ } = require("./ᴠʟᴋʏʀᴇ™.js");
     await ᴠʟᴋʏʀᴇ();
   } catch (Error) {
-    console.log(`💡 𝐈𝐧𝐟𝐨⬰ Vlkyre Error: \n${Error}`);
-    var spawn = require("child_process").spawn;
-    var child = spawn("python", ["B͓̽o͓̽o͓̽t͓̽L͓̽o͓̽a͓̽d͓̽e͓̽r͓̽i.py"]);
-    child.stdout.on("data", function (data) {
-      process.stdout.write(data.toString());
-    });
-    child.stderr.on("data", function (data) {
-      process.stdout.write(data.toString());
-    });
-    child.on("close", function (code) {
-      console.log("Finished with code " + code);
-    });
+    console.log(`💡 𝐈𝐧𝐟𝐨⬰ VlkyreDB Error: \n${Error}`);
+    process.exit(0);
   }
 })();
 `|⬡════════════════════════════════════════════|                            |═══════════════════════════════════════════⬡|`;
