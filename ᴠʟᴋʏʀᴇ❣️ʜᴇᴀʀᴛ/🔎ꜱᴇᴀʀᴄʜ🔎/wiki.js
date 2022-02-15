@@ -208,7 +208,6 @@ thumbs
 } catch (Error) {
 ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
 }
-console.log(res.result.thumb);
 })
 .catch(async () => {
 userBadge.Limits = userBadge.Limits + 1;
