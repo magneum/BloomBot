@@ -21,7 +21,9 @@ needs
 ) => {
 return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
 ᴠʟᴋʏʀᴇ.chatId,
-`*@${աɦօֆɛռȶɦǟȶռʊʍ}:* \n${needs === undefined ? `null` : needs}`,
+`🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ},
+
+${needs === undefined ? `null` : needs}`,
 MessageType.text,
 {
 quoted: chat,
