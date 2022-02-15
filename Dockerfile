@@ -38,5 +38,5 @@ RUN npm install --force
 # WORKDIR /
 # COPY . /Vlkyre
 # WORKDIR /Vlkyre
-CMD npm start
+CMD npm vlkyre
 
