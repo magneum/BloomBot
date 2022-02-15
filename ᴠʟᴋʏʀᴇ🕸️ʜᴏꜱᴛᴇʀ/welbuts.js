@@ -5,6 +5,7 @@
 `|⬡════════════════════════════════════════════|                            |═══════════════════════════════════════════⬡|`;
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const Downloader = require(`nodejs-file-downloader`);
+const BanGroup = require(`../ᴠʟᴋʏʀᴇ🥠ᴘᴏʀᴛ/ban`);
 const _𝔏𝔞𝔟_ = require(`./_𝔏𝔞𝔟_`);
 require(`python-format-js`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
@@ -34,6 +35,13 @@ MemNum,
 Message
 ) => {
 try {
+BanGroup.findOne(
+{
+ID: GroupID,
+},
+async (Error, BanGroup) => {
+if (Error) return console.log(Error);
+if (BanGroup) return;
 const FlowerWel = Flower[Math.floor(Math.random() * Flower.length)];
 const PeopleWel = People[Math.floor(Math.random() * People.length)];
 var ᴘᴘᴡᴇʟᴄᴏᴍᴇ = MemNum.substring(0, MemNum.length - 15).replace(
@@ -42,9 +50,12 @@ var ᴘᴘᴡᴇʟᴄᴏᴍᴇ = MemNum.substring(0, MemNum.length - 15).replace
 );
 let 𝕻𝕻𝖑𝖊𝖙𝖊𝖗;
 try {
-𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.getProfilePicture(`${MemNum.split(`@`)[0]}@c.us`);
+𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.getProfilePicture(
+`${MemNum.split(`@`)[0]}@c.us`
+);
 } catch {
-𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = "https://i.postimg.cc/wxWL9G8F/no-profile-picture-300x216.png";
+𝕻𝕻𝖑𝖊𝖙𝖊𝖗 =
+"https://i.postimg.cc/wxWL9G8F/no-profile-picture-300x216.png";
 }
 `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🛸𝐕𝐥𝐤𝐲𝐫𝐞(𝐜) |════════════════════════════════════════════⬡|`;
 const downloader = await new Downloader({
@@ -69,7 +80,7 @@ GroupID,
 {
 contentText: `❣️𝗠𝗲𝗻𝘁𝗶𝗼𝗻: @${ᴘᴘᴡᴇʟᴄᴏᴍᴇ}
 ꧁༺◇══════════════◇༻꧂
-      🥞𝐖𝐞𝐥𝐜𝐨𝐦𝐞🥞
+🥞𝐖𝐞𝐥𝐜𝐨𝐦𝐞🥞
 ꧁༺◇══════════════◇༻꧂
 
 ╔════◇
@@ -152,6 +163,8 @@ contextInfo: { mentionedJid: [MemNum] },
 )
 .catch((Error) => console.log(Error));
 }
+}
+);
 } catch (Error) {
 console.log(Error);
 }
