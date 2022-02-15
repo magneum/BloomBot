@@ -153,6 +153,8 @@ os.totalmem()
 ║📥  ${ᴋᴇɪ}youtube: 30m (longest) 
 ║📥  ${ᴋᴇɪ}spotify
 ║📥  ${ᴋᴇɪ}instagram
+║📥  ${ᴋᴇɪ}watch: 5m (fastest)
+║📥  ${ᴋᴇɪ}stream: 20m (longest) 
 ╚══════════༻꧂
 
 

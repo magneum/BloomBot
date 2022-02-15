@@ -38,6 +38,8 @@ var MainText = `🪶 𝐇𝐞𝐲: •@${աɦօֆɛռȶɦǟȶռʊʍ},
 ║•  ${ᴋᴇɪ}youtube: _30m youtube music download (longest)_
 ║•  ${ᴋᴇɪ}spotify: _download using spotify link_
 ║•  ${ᴋᴇɪ}instagram: _download using ig link_
+║•  ${ᴋᴇɪ}watch: _5m youtube video download (fastest)_
+║•  ${ᴋᴇɪ}stream: _20m youtube video download (longest)_
 ╚════════════╝`;
 return ᴠʟᴋʏʀᴇ_Buttons
 .MIB(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, chat, ᴠʟᴋʏʀᴇ, MainText, MediaUrl)
