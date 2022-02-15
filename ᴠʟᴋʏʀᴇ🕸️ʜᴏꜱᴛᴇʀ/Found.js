@@ -13,11 +13,6 @@ const ytIdRegex =
 
 //fucntion
 function post(url, formdata) {
-console.log(
-Object.keys(formdata)
-.map((key) => `${key}=${encodeURIComponent(formdata[key])}`)
-.join("&")
-);
 return fetch(url, {
 method: "POST",
 headers: {
