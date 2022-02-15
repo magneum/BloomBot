@@ -263,7 +263,6 @@ os.totalmem()
 ║🍣  ${ᴋᴇɪ}hate
 ║🍣  ${ᴋᴇɪ}hi
 ║🍣  ${ᴋᴇɪ}kill
-║🍣  ${ᴋᴇɪ}laugh
 ║🍣  ${ᴋᴇɪ}lick
 ║🍣  ${ᴋᴇɪ}love
 ║🍣  ${ᴋᴇɪ}lurk

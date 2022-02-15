@@ -74,7 +74,6 @@ chat,
 ║• *${ᴋᴇɪ}hate:*  _@tag or reply_
 ║• *${ᴋᴇɪ}hi:*  _@tag or reply_
 ║• *${ᴋᴇɪ}kill:*  _@tag or reply_
-║• *${ᴋᴇɪ}laugh:*  _@tag or reply_
 ║• *${ᴋᴇɪ}lick:*  _@tag or reply_
 ║• *${ᴋᴇɪ}love:*  _@tag or reply_
 ║• *${ᴋᴇɪ}lurk:*  _@tag or reply_
