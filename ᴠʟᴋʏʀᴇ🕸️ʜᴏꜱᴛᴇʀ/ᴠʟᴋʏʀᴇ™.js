@@ -232,7 +232,6 @@ _Some Of Your Members Requested Our Vlkyre HQ to Add Our Bot In This Group.Have 
 ║
 ║◇ *antilink:* _on/off_
 ║◇ *autorank:* _on/off_
-║◇ *antinsfw:* _on/off_
 ╚════════════༻꧂
 
 👇🏽𝗣𝗿𝗲𝘀𝘀 𝗯𝗲𝗹𝗼𝘄 𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗦𝘁𝗮𝗿𝘁👇🏽`,
@@ -603,60 +602,6 @@ Kolor.green(
 );
 
 `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-var NSFWL = [
-"ass",
-"bdsm",
-"cum",
-"doujin",
-"feet",
-"femdom",
-"foxgirl",
-"glasses",
-"hentai",
-"maid",
-"masturbation",
-"netorare",
-"orgy",
-"panties",
-"school",
-"tentacles",
-"thighs",
-"uniform",
-"yuri",
-"4k",
-"blowjob",
-"milf",
-"milk",
-"pussy",
-"slut",
-"tikporn",
-];
-NsfwList.findOne(
-{
-serverID: ᴠʟᴋʏʀᴇ.chatId,
-},
-async (Error, serverNsfw) => {
-if (Error)
-return ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
-if (
-serverNsfw &&
-!ᴠʟᴋʏʀᴇ.isSenderDev &&
-NSFWL.includes(Needs.join(" "))
-) {
-return ᴠʟᴋʏʀᴇ_Buttons.MIB(
-ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
-chat,
-ᴠʟᴋʏʀᴇ,
-`🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ}, 
-
-╔════◇🔞𝐍𝐒𝐅𝐖
-║
-║❌ 𝗘𝗿𝗿𝗼𝗿: Seems Like This Group's Admin Turned-Off NSFW. 
-║💡 𝐅𝐢𝐱: Ask Them To Turn it On First!
-╚════════════╝`,
-"./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_AntiNSFW.png"
-);
-}
 return ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ.handle(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
@@ -666,8 +611,6 @@ Needs,
 Clock,
 Ping,
 Timers
-);
-}
 );
 }
 }
