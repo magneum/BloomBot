@@ -65,7 +65,7 @@ chat,
 ║ Not Allowed anymore!
 ║
 ║◇ *❓Please Help Me Out With The Commands.*
-║ You can find all commands in the /menu and their respective category in /help.
+║ You can find all commands in ${ᴋᴇɪ}help.
 ║
 ║◇ *❓I do not want to understand. I am stupid and dumb.*
 ║ Click on top right corner and press leave.

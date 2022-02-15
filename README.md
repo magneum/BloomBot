@@ -28,7 +28,7 @@
 ║
 ╚◇║
 ╔◇║❓Please Help Me Out With The Commands.
-║ You can find all commands in the /menu and their respective category in /help.
+║ You can find all commands in #help.
 ║
 ╚════════════╝
 ```
