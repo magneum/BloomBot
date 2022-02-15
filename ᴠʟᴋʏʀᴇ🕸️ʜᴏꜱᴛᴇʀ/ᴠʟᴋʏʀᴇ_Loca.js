@@ -24,11 +24,16 @@ const ᴠʟᴋʏʀᴇ_Loca = async (ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, chat, 
 try {
 const buttonMessage = {
 contentText: MainText,
-footerText: `꧁Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers} ☊ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™꧂`,
+footerText: `꧁Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⧉ ${vers.vers}꧂\n _☊ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™_`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
 buttonText: { displayText: `${ᴋᴇɪ}help` },
+type: 1,
+},
+{
+buttonId: `${ᴋᴇɪ}request`,
+buttonText: { displayText: `${ᴋᴇɪ}request` },
 type: 1,
 },
 ],

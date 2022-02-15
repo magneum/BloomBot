@@ -235,11 +235,16 @@ _Some Of Your Members Requested Our Vlkyre HQ to Add Our Bot In This Group.Have 
 ╚════════════༻꧂
 
 👇🏽𝗣𝗿𝗲𝘀𝘀 𝗯𝗲𝗹𝗼𝘄 𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗦𝘁𝗮𝗿𝘁👇🏽`,
-footerText: `꧁Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers} ☊ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™꧂`,
+footerText: `꧁Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⧉ ${vers.vers}꧂\n _☊ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™_`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
 buttonText: { displayText: `${ᴋᴇɪ}help` },
+type: 1,
+},
+{
+buttonId: `${ᴋᴇɪ}request`,
+buttonText: { displayText: `${ᴋᴇɪ}request` },
 type: 1,
 },
 {
@@ -316,7 +321,7 @@ require(`simple-git`)()
 .exec(async () => {
 console.log(
 `
-╔◇║ ꧁Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers} ☊ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™꧂
+╔◇║ ꧁Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⧉ ${vers.vers}꧂\n _☊ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™_
 ║
 ║💡 𝐈𝐧𝐟𝐨⬰ Auto-Updating ᴠʟᴋʏʀᴇ System With Latest Patch...!
 ╚════════════༻꧂`
@@ -559,7 +564,7 @@ if (
 ) {
 const buttonMessage = {
 contentText: `🤖𝐕𝐞𝐫𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧: *@${աɦօֆɛռȶɦǟȶռʊʍ}, You Are Not Verified!*`,
-footerText: `꧁Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers} ☊ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™꧂`,
+footerText: `꧁Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⧉ ${vers.vers}꧂\n _☊ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™_`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}verify`,

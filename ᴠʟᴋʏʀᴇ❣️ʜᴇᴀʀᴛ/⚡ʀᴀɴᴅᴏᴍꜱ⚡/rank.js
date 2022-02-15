@@ -160,11 +160,16 @@ contentText: `🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ}
 ╚════════════╝
 
 ◇ *The More You Talk, The More Xp+Gold You Gain.You Can Spend The gold in ${ᴋᴇɪ}shop!*`,
-footerText: `꧁Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers} ☊ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™꧂`,
+footerText: `꧁Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⧉ ${vers.vers}꧂\n _☊ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™_`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
 buttonText: { displayText: `${ᴋᴇɪ}help` },
+type: 1,
+},
+{
+buttonId: `${ᴋᴇɪ}request`,
+buttonText: { displayText: `${ᴋᴇɪ}request` },
 type: 1,
 },
 ],
