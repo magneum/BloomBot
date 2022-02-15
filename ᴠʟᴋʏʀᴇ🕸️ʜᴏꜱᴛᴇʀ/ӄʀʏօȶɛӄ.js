@@ -6,6 +6,7 @@
 const _𝔏𝔞𝔟_ = require(`./_𝔏𝔞𝔟_`);
 var ӄʀʏօȶɛӄ = require(`./ᴠʟᴋʏʀᴇƈʟǟ`);
 exports.resolve = function (messageInstance, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, groupMetadata) {
+try {
 var DEVstring = _𝔏𝔞𝔟_.KATE;
 var ᴠʟᴋʏʀᴇ = new ӄʀʏօȶɛӄ();
 var prefix = _𝔏𝔞𝔟_.FOXTROT + `\\w+`;
@@ -132,6 +133,20 @@ messageInstance.message.extendedTextMessage.contextInfo.quotedMessage
 ? ᴠʟᴋʏʀᴇ.groupAdmins.includes(ᴠʟᴋʏʀᴇ.sender)
 : false;
 return ᴠʟᴋʏʀᴇ;
+} catch (Error) {
+console.log(`💡 𝐈𝐧𝐟𝐨⬰ Vlkyre Error: \n${Error}`);
+var spawn = require("child_process").spawn;
+var child = spawn("python", ["🐙ᴋʀʏᴏᴛᴇᴋ.py"]);
+child.stdout.on("data", function (data) {
+process.stdout.write(data.toString());
+});
+child.stderr.on("data", function (data) {
+process.stdout.write(data.toString());
+});
+child.on("close", function (code) {
+console.log("Finished with code " + code);
+});
+}
 function getGroupAdmins(participants) {
 var admins = [];
 for (var i in participants) {
