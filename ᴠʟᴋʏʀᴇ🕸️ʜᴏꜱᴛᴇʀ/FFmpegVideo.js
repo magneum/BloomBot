@@ -7,7 +7,6 @@ const { MessageType } = require(`@adiwajshing/baileys`);
 const Downloader = require(`nodejs-file-downloader`);
 const ᴠʟᴋʏʀᴇ_Buttons = require(`./ᴠʟᴋʏʀᴇ_Buttons`);
 const { YouTube_Video } = require(`./Found`);
-const { servers, v2mate } = require("./v2mate");
 const vers = require(`../package.json`);
 const cleanRF = require(`./cleanRF`);
 const TinyURL = require("tinyurl");
