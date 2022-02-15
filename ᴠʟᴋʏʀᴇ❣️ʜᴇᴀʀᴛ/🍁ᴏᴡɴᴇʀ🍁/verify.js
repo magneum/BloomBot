@@ -80,13 +80,8 @@ contentText: `🤖𝐕𝐞𝐫𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧: *@${աɦօֆ
 ║🍾 𝐕𝐥𝐤𝐲𝐫𝐞 𝐎𝐟𝐟𝐢𝐜𝐢𝐚𝐥 /𝟐: _${_𝔏𝔞𝔟_.HASHS}_
 ║🍾 𝐕𝐥𝐤𝐲𝐫𝐞 𝐎𝐟𝐟𝐢𝐜𝐢𝐚𝐥 /𝟑: _${_𝔏𝔞𝔟_.HASHSH}_
 ╚════════════╝`,
-footerText: `꧁ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⧉ v${vers.vers} ꧂\n☊ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+footerText: `꧁ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 v${vers.vers} ꧂\n☊ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
 buttons: [
-{
-buttonId: `${ᴋᴇɪ}verify`,
-buttonText: { displayText: `${ᴋᴇɪ}verify` },
-type: 1,
-},
 {
 buttonId: `${ᴋᴇɪ}request`,
 buttonText: { displayText: `${ᴋᴇɪ}request` },

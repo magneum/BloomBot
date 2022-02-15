@@ -220,7 +220,7 @@ MessageType.video,
 {
 mimetype: `video/gif`,
 quoted: chat,
-caption: `꧁ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⧉ v${vers.vers} ꧂\n☊ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™\n\n` + PokeInfo,
+caption: `꧁ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 v${vers.vers} ꧂\n☊ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™\n\n` + PokeInfo,
 contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
 }
 )

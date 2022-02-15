@@ -160,7 +160,7 @@ contentText: `🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ}
 ╚════════════╝
 
 ◇ *The More You Talk, The More Xp+Gold You Gain.You Can Spend The gold in ${ᴋᴇɪ}shop!*`,
-footerText: `꧁ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⧉ v${vers.vers} ꧂\n☊ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+footerText: `꧁ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 v${vers.vers} ꧂\n☊ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,

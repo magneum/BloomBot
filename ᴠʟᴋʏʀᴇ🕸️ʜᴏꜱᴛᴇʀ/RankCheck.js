@@ -228,7 +228,7 @@ await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 ᴠʟᴋʏʀᴇ.chatId,
 {
 contentText: `✨𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬 @${աɦօֆɛռȶɦǟȶռʊʍ}, _𝐋𝐞𝐯𝐞𝐥𝐞𝐝-𝐔𝐏!_`,
-footerText: `꧁ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⧉ v${vers.vers} ꧂\n☊ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+footerText: `꧁ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 v${vers.vers} ꧂\n☊ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}rank`,
@@ -268,7 +268,7 @@ await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 ᴠʟᴋʏʀᴇ.chatId,
 {
 contentText: `✨𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬 @${աɦօֆɛռȶɦǟȶռʊʍ}, _𝐋𝐞𝐯𝐞𝐥𝐞𝐝-𝐔𝐏!_`,
-footerText: `꧁ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⧉ v${vers.vers} ꧂\n☊ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+footerText: `꧁ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 v${vers.vers} ꧂\n☊ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
