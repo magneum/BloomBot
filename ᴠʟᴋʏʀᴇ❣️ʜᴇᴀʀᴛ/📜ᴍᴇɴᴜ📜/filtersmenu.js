@@ -30,7 +30,7 @@ const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
 var MediaUrl = `./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ.png`;
 var MainText = `🪶 𝐇𝐞𝐲: •@${աɦօֆɛռȶɦǟȶռʊʍ},
 
-╔════◇🍰 𝐅𝐢𝐥𝐭𝐞𝐫𝐬/𝐀𝐮𝐝𝐢𝐨
+╔════⧉🍰 𝐅𝐢𝐥𝐭𝐞𝐫𝐬/𝐀𝐮𝐝𝐢𝐨
 ║
 ║• *${ᴋᴇɪ}8d:*  _audio filter_
 ║• *${ᴋᴇɪ}bassboost:*  _audio filter_

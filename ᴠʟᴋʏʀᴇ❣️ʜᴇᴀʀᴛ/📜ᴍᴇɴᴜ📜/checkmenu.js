@@ -30,7 +30,7 @@ const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
 var MediaUrl = `./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ.png`;
 var MainText = `🪶 𝐇𝐞𝐲: •@${աɦօֆɛռȶɦǟȶռʊʍ},
 
-╔════◇🎨 𝐂𝐡𝐞𝐜𝐤
+╔════⧉🎨 𝐂𝐡𝐞𝐜𝐤
 ║
 ║• *${ᴋᴇɪ}gaycheck:*  _@tag person or reply person_
 ║• *${ᴋᴇɪ}lesbocheck:*  _@tag person or reply person_

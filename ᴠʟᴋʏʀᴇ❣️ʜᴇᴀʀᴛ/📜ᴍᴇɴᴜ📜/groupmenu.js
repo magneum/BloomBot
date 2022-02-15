@@ -30,7 +30,7 @@ const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
 var MediaUrl = `./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ.png`;
 var MainText = `🪶 𝐇𝐞𝐲: •@${աɦօֆɛռȶɦǟȶռʊʍ},
 
-╔════◇🔰 𝐆𝐫𝐨𝐮𝐩𝐬/𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧
+╔════⧉🔰 𝐆𝐫𝐨𝐮𝐩𝐬/𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧
 ║
 ║• *${ᴋᴇɪ}antilink:*  _remove any person who sends any links_
 ║• *${ᴋᴇɪ}autorank:*  _turn on auto ranking per gc_

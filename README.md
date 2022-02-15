@@ -19,7 +19,7 @@
 ╔◇║⚡ 𝐅𝐫𝐞𝐪𝐮𝐞𝐧𝐭𝐥𝐲 𝐀𝐬𝐤𝐞𝐝 𝐐𝐮𝐞𝐬𝐭𝐢𝐨𝐧𝐬
 ║
 ╚◇║
-╔◇║❓What is the reason/topic for this group?
+╔◇║❓What is the reason/topic for this?
 ║ ᴠʟᴋʏʀᴇ is an Advance Whatsapp User-Bot. You Can Use The Bot in your respective groups.
 ║
 ╚◇║

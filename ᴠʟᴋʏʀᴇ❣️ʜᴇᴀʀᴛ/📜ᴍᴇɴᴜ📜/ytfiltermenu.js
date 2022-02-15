@@ -30,7 +30,7 @@ const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
 var MediaUrl = `./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ.png`;
 var MainText = `🪶 𝐇𝐞𝐲: •@${աɦօֆɛռȶɦǟȶռʊʍ},
 
-╔════◇⭕ 𝐘𝐨𝐮𝐓𝐮𝐛𝐞/𝐅𝐢𝐥𝐭𝐞𝐫
+╔════⧉⭕ 𝐘𝐨𝐮𝐓𝐮𝐛𝐞/𝐅𝐢𝐥𝐭𝐞𝐫
 ║
 ║• *${ᴋᴇɪ}yt8d:*  _download yt audio with filter_
 ║• *${ᴋᴇɪ}ytbassboost:*  _download yt audio with filter_

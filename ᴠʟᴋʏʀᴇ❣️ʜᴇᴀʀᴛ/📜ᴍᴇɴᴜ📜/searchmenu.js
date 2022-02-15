@@ -30,7 +30,7 @@ const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
 var MediaUrl = `./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ.png`;
 var MainText = `🪶 𝐇𝐞𝐲: •@${աɦօֆɛռȶɦǟȶռʊʍ},
 
-╔════◇🔎 𝐒𝐞𝐚𝐫𝐜𝐡
+╔════⧉🔎 𝐒𝐞𝐚𝐫𝐜𝐡
 ║
 ║• *${ᴋᴇɪ}lyrics:*  _find lyrics of songs_
 ║• *${ᴋᴇɪ}wallpaper:*  _download wallpapers_

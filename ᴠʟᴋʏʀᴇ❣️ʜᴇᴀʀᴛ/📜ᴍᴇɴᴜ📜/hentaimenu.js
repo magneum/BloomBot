@@ -30,7 +30,7 @@ const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
 var MediaUrl = `./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ.png`;
 var MainText = `🪶 𝐇𝐞𝐲: •@${աɦօֆɛռȶɦǟȶռʊʍ},
 
-╔════◇🍄 𝐇𝐞𝐧𝐭𝐚𝐢 𝐍𝐒𝐅𝐖
+╔════⧉🍄 𝐇𝐞𝐧𝐭𝐚𝐢 𝐍𝐒𝐅𝐖
 ║
 ║• *${ᴋᴇɪ}ass:*  _ɪ ᴋɴᴏᴡ ʏᴏᴜ ʟɪᴋᴇ ᴀɴɪᴍᴇ ᴀꜱꜱ~_
 ║• *${ᴋᴇɪ}bdsm:*  _ɪꜰ ʏᴏᴜ ᴅᴏɴ'ᴛ ᴋɴᴏᴡ ᴡʜᴀᴛ ɪᴛ ɪꜱ, ꜱᴇᴀʀᴄʜ ɪᴛ ᴜᴘ_

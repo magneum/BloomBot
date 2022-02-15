@@ -30,7 +30,7 @@ const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
 var MediaUrl = `./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ.png`;
 var MainText = `🪶 𝐇𝐞𝐲: •@${աɦօֆɛռȶɦǟȶռʊʍ},
 
-╔════◇🥃 𝐇𝐮𝐦𝐚𝐧 𝐍𝐒𝐅𝐖
+╔════⧉🥃 𝐇𝐮𝐦𝐚𝐧 𝐍𝐒𝐅𝐖
 ║
 ║• *${ᴋᴇɪ}4k:*  _get random 4kporn img/gif_
 ║• *${ᴋᴇɪ}blowjob:*  _get random blowjob img/gif_

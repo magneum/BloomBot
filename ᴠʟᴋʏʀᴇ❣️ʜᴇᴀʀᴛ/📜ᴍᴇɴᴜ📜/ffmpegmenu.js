@@ -30,7 +30,7 @@ const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
 var MediaUrl = `./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ.png`;
 var MainText = `🪶 𝐇𝐞𝐲: •@${աɦօֆɛռȶɦǟȶռʊʍ},
 
-╔════◇🗂️ 𝐅𝐅𝐦𝐩𝐞𝐠
+╔════⧉🗂️ 𝐅𝐅𝐦𝐩𝐞𝐠
 ║
 ║• *${ᴋᴇɪ}vid2url:*  _convert video to url_ 
 ║• *${ᴋᴇɪ}tomp3:*  _convert video to music_

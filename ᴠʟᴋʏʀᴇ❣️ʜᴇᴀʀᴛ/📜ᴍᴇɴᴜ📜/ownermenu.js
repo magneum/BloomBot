@@ -30,7 +30,7 @@ const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
 var MediaUrl = `./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ.png`;
 var MainText = `🪶 𝐇𝐞𝐲: •@${աɦօֆɛռȶɦǟȶռʊʍ},
 
-╔════◇🐙 𝐊𝐢𝐧𝐠/𝐎𝐰𝐧𝐞𝐫
+╔════⧉🐙 𝐊𝐢𝐧𝐠/𝐎𝐰𝐧𝐞𝐫
 ║
 ║• *${ᴋᴇɪ}join:*  _join any valid group_
 ║• *${ᴋᴇɪ}dyno:*  _check heroku usage_

@@ -30,7 +30,7 @@ const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
 var MediaUrl = `./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ.png`;
 var MainText = `🪶 𝐇𝐞𝐲: •@${աɦօֆɛռȶɦǟȶռʊʍ},
 
-╔════◇💰 𝗚𝗮𝗺𝗲𝘀
+╔════⧉💰 𝗚𝗮𝗺𝗲𝘀
 ║
 ║• *${ᴋᴇɪ}shop:*  _visit krakinzlab member store_
 ║• ${ᴋᴇɪ}inv:*  _check your inventory or replied person's_

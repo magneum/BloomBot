@@ -30,7 +30,7 @@ const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
 var MediaUrl = `./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ.png`;
 var MainText = `🪶 𝐇𝐞𝐲: •@${աɦօֆɛռȶɦǟȶռʊʍ},
 
-╔════◇🦄 𝐑𝐚𝐧𝐝𝐨𝐦𝐬
+╔════⧉🦄 𝐑𝐚𝐧𝐝𝐨𝐦𝐬
 ║
 ║• *${ᴋᴇɪ}joke:*  _get random jokes_
 ║• *${ᴋᴇɪ}meme:*  _get random memes_
