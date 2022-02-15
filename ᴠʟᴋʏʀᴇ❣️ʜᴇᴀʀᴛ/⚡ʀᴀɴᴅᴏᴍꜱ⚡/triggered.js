@@ -168,7 +168,7 @@ MessageType.video,
 {
 mimetype: `video/gif`,
 quoted: chat,
-caption: `◣Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers} ☊ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™◥
+caption: `꧁Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers} ☊ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™꧂
 
 
 ╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
@@ -230,7 +230,7 @@ MessageType.video,
 {
 mimetype: `video/gif`,
 quoted: chat,
-caption: `◣Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers} ☊ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™◥
+caption: `꧁Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers} ☊ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™꧂
 
 
 ╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_

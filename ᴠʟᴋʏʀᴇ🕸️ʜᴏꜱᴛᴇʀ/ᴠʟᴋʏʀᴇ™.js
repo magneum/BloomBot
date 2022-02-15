@@ -236,7 +236,7 @@ _Some Of Your Members Requested Our Vlkyre HQ to Add Our Bot In This Group.Have 
 ╚════════════༻꧂
 
 👇🏽𝗣𝗿𝗲𝘀𝘀 𝗯𝗲𝗹𝗼𝘄 𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗦𝘁𝗮𝗿𝘁👇🏽`,
-footerText: `◣Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers} ☊ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™◥`,
+footerText: `꧁Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers} ☊ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™꧂`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
@@ -317,7 +317,7 @@ require(`simple-git`)()
 .exec(async () => {
 console.log(
 `
-╔◇║ ◣Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers} ☊ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™◥
+╔◇║ ꧁Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers} ☊ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™꧂
 ║
 ║💡 𝐈𝐧𝐟𝐨⬰ Auto-Updating ᴠʟᴋʏʀᴇ System With Latest Patch...!
 ╚════════════༻꧂`
@@ -560,7 +560,7 @@ if (
 ) {
 const buttonMessage = {
 contentText: `🤖𝐕𝐞𝐫𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧: *@${աɦօֆɛռȶɦǟȶռʊʍ}, You Are Not Verified!*`,
-footerText: `◣Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers} ☊ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™◥`,
+footerText: `꧁Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers} ☊ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™꧂`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}verify`,
