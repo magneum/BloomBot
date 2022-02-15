@@ -379,7 +379,12 @@ if (
 ᴠʟᴋʏʀᴇ.isCmd &&
 !ᴠʟᴋʏʀᴇ.fromMe &&
 !ᴠʟᴋʏʀᴇ.isGroup &&
-!ᴠʟᴋʏʀᴇ.isSenderDev
+!ᴠʟᴋʏʀᴇ.isSenderDev &&
+!ᴠʟᴋʏʀᴇ.body.includes(ᴋᴇɪ + "help") &&
+!ᴠʟᴋʏʀᴇ.body.includes(ᴋᴇɪ + "rules") &&
+!ᴠʟᴋʏʀᴇ.body.includes(ᴋᴇɪ + "faq") &&
+!ᴠʟᴋʏʀᴇ.body.includes(ᴋᴇɪ + "verify") &&
+!ᴠʟᴋʏʀᴇ.body.includes(ᴋᴇɪ + "request")
 ) {
 return ᴠʟᴋʏʀᴇ_Buttons.MTB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
