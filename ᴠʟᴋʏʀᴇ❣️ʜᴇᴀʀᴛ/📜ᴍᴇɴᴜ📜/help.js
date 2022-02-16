@@ -68,25 +68,30 @@ let latensi = speed() - timestamp;
 neww = performance.now();
 oldd = performance.now();
 `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-var MediaUrl = `./ᴠʟᴋʏʀᴇ🔌cord/кгץкภչ.png`;
-return ᴠʟᴋʏʀᴇ_Buttons
-.MIB(
-ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
-chat,
-ᴠʟᴋʏʀᴇ,
-`꧁| @${աɦօֆɛռȶɦǟȶռʊʍ} |꧂, 
+const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
+ᴠʟᴋʏʀᴇ.chatId,
+{ url: `./ᴠʟᴋʏʀᴇ🔌cord/кгץкภչ.png` },
+MessageType.image,
+{ mimetype: Mimetype.png }
+);
+return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
+.sendMessage(
+ᴠʟᴋʏʀᴇ.chatId,
+{
+contentText: `꧁| @${աɦօֆɛռȶɦǟȶռʊʍ} |꧂
+╔⧉༻ 
+║
+║🍂 𝐕𝐥𝐤𝐲𝐫𝐞: Is an Advande Whatsapp User-Bot!
+║🍂 𝐆𝐢𝐭𝐡𝐮𝐛: https://github.com/Kryknz/Vlkyre_
+║🍂 𝐀𝐝𝐝 𝐕𝐥𝐤𝐲𝐫𝐞: ${ᴋᴇɪ}request _(your group link)_
+╚══════════༻꧂
 
 
-〲🍂𝐕𝐥𝐤𝐲𝐫𝐞: _Is an Advande Whatsapp User-Bot!_
-〲🍂𝐆𝐢𝐭𝐡𝐮𝐛: _https://github.com/Kryknz/Vlkyre_
-〲🍂𝐀𝐝𝐝 𝐕𝐥𝐤𝐲𝐫𝐞: _${ᴋᴇɪ}request (your group link)_
-
-
-╔══⧉꧁༺ 👇🏽𝐒𝐲𝐦𝐥𝐢𝐧𝐤👇🏽꧂
+╔⧉༻ 👇🏽𝐒𝐲𝐦𝐥𝐢𝐧𝐤👇🏽꧂
 ║
 ║⚙️ *Engine:*  ${vers.vers}
 ║💻 *Platform:*  ${os.platform()}
-║🛰️ *Latency:*  ${latensi.toFixed(4)}(s)
+║🛰️ *Latency:*  ${latensi.toFixed(4)}ms
 ║☕ *Uptime:*  ${runtime(process.uptime())}
 ║🎮 *Ram:*  ${formatp(os.totalmem() - os.freemem())} / ${formatp(
 os.totalmem()
@@ -94,6 +99,7 @@ os.totalmem()
 ╚══════════༻꧂
 
 ╔⧉༻ 𝐄𝐯𝐞𝐫𝐲𝐨𝐧𝐞👇🏽꧂
+║
 ║🍣  ${ᴋᴇɪ}animemenu
 ║💰  ${ᴋᴇɪ}gamemenu
 ║⭕  ${ᴋᴇɪ}ytfiltermenu
@@ -107,260 +113,35 @@ os.totalmem()
 ╚════════════╝
 
 ╔⧉༻ 𝐀𝐝𝐦𝐢𝐧-𝐎𝐧𝐥𝐲👇🏽꧂
+║
 ║🔰  ${ᴋᴇɪ}groupmenu
 ║🍄  ${ᴋᴇɪ}hentaimenu
 ║🥃  ${ᴋᴇɪ}humanmenu
 ║🐙  ${ᴋᴇɪ}ownermenu
 ╚════════════╝
 
-
-╔⧉༻ 𝗚𝗮𝗺𝗲𝘀👇🏽꧂
-║💰  ${ᴋᴇɪ}shop
-║💰  ${ᴋᴇɪ}zoo
-║💰  ${ᴋᴇɪ}inv
-║💰  ${ᴋᴇɪ}buy
-║💰  ${ᴋᴇɪ}pay
-║💰  ${ᴋᴇɪ}hunt
-║💰  ${ᴋᴇɪ}gamble
-║💰  ${ᴋᴇɪ}fish
-║💰  ${ᴋᴇɪ}daily
-║💰  ${ᴋᴇɪ}work
-║💰  ${ᴋᴇɪ}balance
-║💰  ${ᴋᴇɪ}rob  _(beta)_
-║💰  ${ᴋᴇɪ}truthdare
-╚══════════༻꧂
-
-
-╔⧉༻ 𝐒𝐞𝐚𝐫𝐜𝐡👇🏽꧂
-║🔎  ${ᴋᴇɪ}ytsearch
-║🔎  ${ᴋᴇɪ}lyrics
-║🔎  ${ᴋᴇɪ}github
-║🔎  ${ᴋᴇɪ}pinterest
-║🔎  ${ᴋᴇɪ}weather
-║🔎  ${ᴋᴇɪ}google 
-║🔎  ${ᴋᴇɪ}wikipedia
-║🔎  ${ᴋᴇɪ}ud
-║🔎  ${ᴋᴇɪ}tenor
-║🔎  ${ᴋᴇɪ}gif
-║🔎  ${ᴋᴇɪ}wallpaper
-╚══════════༻꧂
-
-
-╔⧉༻ 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫𝐬👇🏽꧂
-║📥  ${ᴋᴇɪ}yt: 5m (fastest)
-║📥  ${ᴋᴇɪ}play: 10m
-║📥  ${ᴋᴇɪ}song: 20m
-║📥  ${ᴋᴇɪ}youtube: 30m (longest) 
-║📥  ${ᴋᴇɪ}spotify
-║📥  ${ᴋᴇɪ}instagram
-║📥  ${ᴋᴇɪ}watch: 5m (fastest)
-║📥  ${ᴋᴇɪ}stream: 20m (longest) 
-╚══════════༻꧂
-
-
-╔⧉༻ 𝐅𝐅𝐦𝐩𝐞𝐠👇🏽꧂
-║🗂️  ${ᴋᴇɪ}tomp3
-║🗂️  ${ᴋᴇɪ}img2url
-║🗂️  ${ᴋᴇɪ}ocr
-║🗂️  ${ᴋᴇɪ}sticker
-║🗂️  ${ᴋᴇɪ}carbon
-║🗂️  ${ᴋᴇɪ}tinyurl
-╚══════════༻꧂
-
-
-╔⧉༻ 𝐘𝐨𝐮𝐓𝐮𝐛𝐞+𝐅𝐢𝐥𝐭𝐞𝐫👇🏽꧂
-║⭕  ${ᴋᴇɪ}yt8d
-║⭕  ${ᴋᴇɪ}ytbassboost
-║⭕  ${ᴋᴇɪ}ytecho
-║⭕  ${ᴋᴇɪ}ytfast
-║⭕  ${ᴋᴇɪ}ytflanger
-║⭕  ${ᴋᴇɪ}ytnightcore
-║⭕  ${ᴋᴇɪ}ytphaser
-║⭕  ${ᴋᴇɪ}ytreverse
-║⭕  ${ᴋᴇɪ}ytslow
-║⭕  ${ᴋᴇɪ}ytspeed
-║⭕  ${ᴋᴇɪ}ytsubboost
-║⭕  ${ᴋᴇɪ}ytsuperslow
-║⭕  ${ᴋᴇɪ}ytsuperspeed
-║⭕  ${ᴋᴇɪ}ytsurround
-║⭕  ${ᴋᴇɪ}ytvaporwave
-║⭕  ${ᴋᴇɪ}ytvibrato
-╚══════════༻꧂
-
-
-╔⧉༻ 𝐅𝐢𝐥𝐭𝐞𝐫𝐬/𝐀𝐮𝐝𝐢𝐨👇🏽꧂
-║🍰  ${ᴋᴇɪ}8d
-║🍰  ${ᴋᴇɪ}bassboost
-║🍰  ${ᴋᴇɪ}echo
-║🍰  ${ᴋᴇɪ}fast
-║🍰  ${ᴋᴇɪ}flanger
-║🍰  ${ᴋᴇɪ}nightcore
-║🍰  ${ᴋᴇɪ}phaser
-║🍰  ${ᴋᴇɪ}reverse
-║🍰  ${ᴋᴇɪ}slow
-║🍰  ${ᴋᴇɪ}speed
-║🍰  ${ᴋᴇɪ}subboost
-║🍰  ${ᴋᴇɪ}superslow
-║🍰  ${ᴋᴇɪ}superspeed
-║🍰  ${ᴋᴇɪ}surround
-║🍰  ${ᴋᴇɪ}vaporwave
-║🍰  ${ᴋᴇɪ}vibrato
-╚══════════༻꧂
-
-
-╔⧉༻ 𝐎𝐰𝐧𝐞𝐫👇🏽꧂
-║🐙  ${ᴋᴇɪ}join
-║🐙  ${ᴋᴇɪ}dyno
-║🐙  ${ᴋᴇɪ}ban
-║🐙  ${ᴋᴇɪ}unban
-║🐙  ${ᴋᴇɪ}broadcast
-║🐙  ${ᴋᴇɪ}bugreport
-║🐙  ${ᴋᴇɪ}help
-║🐙  ${ᴋᴇɪ}vlkyre
-║🐙  ${ᴋᴇɪ}reboot
-║🐙  ${ᴋᴇɪ}broadcast
-║🐙  ${ᴋᴇɪ}leave
-║🐙  ${ᴋᴇɪ}spam
-╚══════════༻꧂
-
-
-╔⧉༻ 𝐀𝐧𝐢𝐦𝐞👇🏽꧂
-║🍣  ${ᴋᴇɪ}anime
-║🍣  ${ᴋᴇɪ}ranimewall
-║🍣  ${ᴋᴇɪ}smile
-║🍣  ${ᴋᴇɪ}yes
-║🍣  ${ᴋᴇɪ}bite
-║🍣  ${ᴋᴇɪ}blush
-║🍣  ${ᴋᴇɪ}bored
-║🍣  ${ᴋᴇɪ}confused
-║🍣  ${ᴋᴇɪ}cry
-║🍣  ${ᴋᴇɪ}goodnight
-║🍣  ${ᴋᴇɪ}happy
-║🍣  ${ᴋᴇɪ}hi5
-║🍣  ${ᴋᴇɪ}poke
-║🍣  ${ᴋᴇɪ}sad
-║🍣  ${ᴋᴇɪ}thinking
-║🍣  ${ᴋᴇɪ}cuddle
-║🍣  ${ᴋᴇɪ}hug
-║🍣  ${ᴋᴇɪ}pat
-║🍣  ${ᴋᴇɪ}slap
-║🍣  ${ᴋᴇɪ}wink
-║🍣  ${ᴋᴇɪ}angry
-║🍣  ${ᴋᴇɪ}baka
-║🍣  ${ᴋᴇɪ}bonk
-║🍣  ${ᴋᴇɪ}bully
-║🍣  ${ᴋᴇɪ}bye
-║🍣  ${ᴋᴇɪ}chase
-║🍣  ${ᴋᴇɪ}cheer
-║🍣  ${ᴋᴇɪ}cringe
-║🍣  ${ᴋᴇɪ}dab
-║🍣  ${ᴋᴇɪ}dance
-║🍣  ${ᴋᴇɪ}die
-║🍣  ${ᴋᴇɪ}facepalm
-║🍣  ${ᴋᴇɪ}feed
-║🍣  ${ᴋᴇɪ}glomp
-║🍣  ${ᴋᴇɪ}hold
-║🍣  ${ᴋᴇɪ}hate
-║🍣  ${ᴋᴇɪ}hi
-║🍣  ${ᴋᴇɪ}kill
-║🍣  ${ᴋᴇɪ}lick
-║🍣  ${ᴋᴇɪ}love
-║🍣  ${ᴋᴇɪ}lurk
-║🍣  ${ᴋᴇɪ}nervous
-║🍣  ${ᴋᴇɪ}nope
-║🍣  ${ᴋᴇɪ}nom
-║🍣  ${ᴋᴇɪ}nuzzle
-║🍣  ${ᴋᴇɪ}panic
-║🍣  ${ᴋᴇɪ}peck
-║🍣  ${ᴋᴇɪ}pout
-║🍣  ${ᴋᴇɪ}run
-║🍣  ${ᴋᴇɪ}sip
-║🍣  ${ᴋᴇɪ}shoot
-║🍣  ${ᴋᴇɪ}shrug
-║🍣  ${ᴋᴇɪ}sleep
-║🍣  ${ᴋᴇɪ}smug
-║🍣  ${ᴋᴇɪ}stab
-║🍣  ${ᴋᴇɪ}stare
-║🍣  ${ᴋᴇɪ}tease
-║🍣  ${ᴋᴇɪ}tickle
-║🍣  ${ᴋᴇɪ}thumbsup
-║🍣  ${ᴋᴇɪ}wag
-╚══════════༻꧂
-
-
-╔⧉༻ 𝐆𝐫𝐨𝐮𝐩𝐬/𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧👇🏽꧂
-║🔰  ${ᴋᴇɪ}antilink
-║🔰  ${ᴋᴇɪ}autorank
-║🔰  ${ᴋᴇɪ}setwelcome
-║🔰  ${ᴋᴇɪ}promote
-║🔰  ${ᴋᴇɪ}demote
-║🔰  ${ᴋᴇɪ}warn
-║🔰  ${ᴋᴇɪ}unwarn
-║🔰  ${ᴋᴇɪ}invite
-║🔰  ${ᴋᴇɪ}lock
-║🔰  ${ᴋᴇɪ}unlock
-║🔰  ${ᴋᴇɪ}admins
-║🔰  ${ᴋᴇɪ}groupdp
-║🔰  ${ᴋᴇɪ}kick
-║🔰  ${ᴋᴇɪ}getdesc
-║🔰  ${ᴋᴇɪ}getdp
-║🔰  ${ᴋᴇɪ}tagall
-╚══════════༻꧂
-
-
-╔⧉༻ 𝐑𝐚𝐧𝐝𝐨𝐦𝐬👇🏽꧂
-║🦄  ${ᴋᴇɪ}rank
-║🦄  ${ᴋᴇɪ}joke
-║🦄  ${ᴋᴇɪ}meme
-║🦄  ${ᴋᴇɪ}tr
-║🦄  ${ᴋᴇɪ}tts
-║🦄  ${ᴋᴇɪ}pokedex
-║🦄  ${ᴋᴇɪ}triggered
-╚══════════༻꧂
-
-
-╔⧉༻ 𝐂𝐡𝐞𝐜𝐤👇🏽꧂
-║🎨  ${ᴋᴇɪ}gaycheck
-║🎨  ${ᴋᴇɪ}lesbocheck
-║🎨  ${ᴋᴇɪ}beautycheck
-║🎨  ${ᴋᴇɪ}dumbcheck
-╚══════════༻꧂
-
-
-╔⧉༻ 𝐇𝐮𝐦𝐚𝐧+𝐍𝐒𝐅𝐖👇🏽꧂
-║🥃  ${ᴋᴇɪ}4k
-║🥃  ${ᴋᴇɪ}blowjob
-║🥃  ${ᴋᴇɪ}milf
-║🥃  ${ᴋᴇɪ}milk
-║🥃  ${ᴋᴇɪ}pussy
-║🥃  ${ᴋᴇɪ}slut
-║🥃  ${ᴋᴇɪ}tikporn
-╚══════════༻꧂
-
-
-╔⧉༻ 𝐇𝐞𝐧𝐭𝐚𝐢+𝐍𝐒𝐅𝐖👇🏽꧂
-║🍄  ${ᴋᴇɪ}ass
-║🍄  ${ᴋᴇɪ}bdsm
-║🍄  ${ᴋᴇɪ}cum  
-║🍄  ${ᴋᴇɪ}doujin
-║🍄  ${ᴋᴇɪ}feet  
-║🍄  ${ᴋᴇɪ}femdom  
-║🍄  ${ᴋᴇɪ}foxgirl  
-║🍄  ${ᴋᴇɪ}glasses  
-║🍄  ${ᴋᴇɪ}hentai
-║🍄  ${ᴋᴇɪ}maid 
-║🍄  ${ᴋᴇɪ}masturbation
-║🍄  ${ᴋᴇɪ}netorare  
-║🍄  ${ᴋᴇɪ}orgy
-║🍄  ${ᴋᴇɪ}panties
-║🍄  ${ᴋᴇɪ}pussy
-║🍄  ${ᴋᴇɪ}school
-║🍄  ${ᴋᴇɪ}tentacles
-║🍄  ${ᴋᴇɪ}thighs
-║🍄  ${ᴋᴇɪ}uniform
-║🍄  ${ᴋᴇɪ}yuri
-╚════════════╝`,
-MediaUrl
+⚡𝐏𝐫𝐞𝐬𝐬 𝐁𝐞𝐥𝐨𝐰👇🏽‍𝐅𝐨𝐫 𝐅𝐮𝐥𝐥 𝐋𝐢𝐬𝐭⚡`,
+footerText: `∵ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 え ${vers.vers} ∴\n☊ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+buttons: [
+{
+buttonId: `${ᴋᴇɪ}help`,
+buttonText: { displayText: `${ᴋᴇɪ}help` },
+type: 1,
+},
+{
+buttonId: `${ᴋᴇɪ}menu`,
+buttonText: { displayText: `${ᴋᴇɪ}menu` },
+type: 1,
+},
+],
+headerType: 4,
+imageMessage: media.message.imageMessage,
+},
+MessageType.buttonsMessage,
+{
+quoted: chat,
+contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
+}
 )
 .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
 `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
