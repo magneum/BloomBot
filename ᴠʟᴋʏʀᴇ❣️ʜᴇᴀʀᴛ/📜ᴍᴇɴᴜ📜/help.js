@@ -124,13 +124,13 @@ os.totalmem()
 footerText: `∵ ©𝐕𝐥𝐤𝐲𝐫𝐞 え ${vers.vers} ∴\n☊ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
 buttons: [
 {
-buttonId: `${ᴋᴇɪ}help`,
-buttonText: { displayText: `${ᴋᴇɪ}help` },
+buttonId: `${ᴋᴇɪ}menu`,
+buttonText: { displayText: `${ᴋᴇɪ}menu` },
 type: 1,
 },
 {
-buttonId: `${ᴋᴇɪ}menu`,
-buttonText: { displayText: `${ᴋᴇɪ}menu` },
+buttonId: `${ᴋᴇɪ}rules`,
+buttonText: { displayText: `${ᴋᴇɪ}rules` },
 type: 1,
 },
 ],
