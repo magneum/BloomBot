@@ -32,10 +32,9 @@ var MainText = `🪶 𝐇𝐞𝐲: •@${աɦօֆɛռȶɦǟȶռʊʍ},
 
 ╔════⧉📥 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫𝐬
 ║
-║•  ${ᴋᴇɪ}yt: _5m youtube music download (fastest)_
-║•  ${ᴋᴇɪ}play: _10m youtube music download (fastest)_
-║•  ${ᴋᴇɪ}song: _20m youtube music download (fastest)_
-║•  ${ᴋᴇɪ}youtube: _30m youtube music download (longest)_
+║•  ${ᴋᴇɪ}play: _5m youtube music download (fastest)_
+║•  ${ᴋᴇɪ}song: _20m youtube music download_
+║•  ${ᴋᴇɪ}youtube:_30m youtube music download (longest)_
 ║•  ${ᴋᴇɪ}spotify: _download using spotify link_
 ║•  ${ᴋᴇɪ}instagram: _download using ig link_
 ║•  ${ᴋᴇɪ}watch: _5m youtube video download (fastest)_
