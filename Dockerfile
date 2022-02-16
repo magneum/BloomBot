@@ -21,7 +21,6 @@ RUN /venv/bin/python -m pip install --upgrade pip
 RUN apt-get install npm -y
 RUN npm install --global n
 RUN n install 16
-RUN path=path 
 RUN hash -r 
 RUN git clone https://github.com/KryKnz/Vlkyre.git 
 # RUN git init --initial-branch=KryTek
