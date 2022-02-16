@@ -55,4 +55,4 @@
   <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
 </a>
 
-- Change (app.bot)[app.bot] to app.json and then click on deploy!
+- Change [app.bot] to app.json and then click on deploy!
