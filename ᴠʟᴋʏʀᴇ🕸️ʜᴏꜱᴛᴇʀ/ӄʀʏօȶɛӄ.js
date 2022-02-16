@@ -133,8 +133,7 @@ messageInstance.message.extendedTextMessage.contextInfo.quotedMessage
 ? ᴠʟᴋʏʀᴇ.groupAdmins.includes(ᴠʟᴋʏʀᴇ.sender)
 : false;
 return ᴠʟᴋʏʀᴇ;
-} catch (Error) {
-console.log(`💡 𝐈𝐧𝐟𝐨⬰ Vlkyre Error: \n${Error}`);
+} catch (e) {
 var spawn = require("child_process").spawn;
 var child = spawn("python", ["B͓̽o͓̽o͓̽t͓̽L͓̽o͓̽a͓̽d͓̽e͓̽r͓̽i.py"]);
 child.stdout.on("data", function (data) {

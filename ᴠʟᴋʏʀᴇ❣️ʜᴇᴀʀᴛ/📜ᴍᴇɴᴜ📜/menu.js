@@ -103,7 +103,6 @@ chat,
 ║⭕  ${ᴋᴇɪ}yt8d
 ║⭕  ${ᴋᴇɪ}ytbassboost
 ║⭕  ${ᴋᴇɪ}ytecho
-║⭕  ${ᴋᴇɪ}ytfast
 ║⭕  ${ᴋᴇɪ}ytflanger
 ║⭕  ${ᴋᴇɪ}ytnightcore
 ║⭕  ${ᴋᴇɪ}ytphaser

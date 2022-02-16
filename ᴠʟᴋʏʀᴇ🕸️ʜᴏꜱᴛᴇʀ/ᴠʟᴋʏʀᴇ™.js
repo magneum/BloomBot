@@ -74,13 +74,13 @@ process.exit(0);
 try {
 var session = ᴠʟᴋʏʀᴇֆʏռօք.ᴠʟᴋʏʀᴇReIgnite(_𝔏𝔞𝔟_.VLKYRE);
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.loadAuthInfo(session);
-} catch (Error) {
+} catch (e) {
 console.log(Kolor.red(`💡 𝐈𝐧𝐟𝐨⬰ ᴠʟᴋʏʀᴇ Web Code is Wrong. Re-Auth!`));
 process.exit(0);
 }
 `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.connect().catch((Error) => {
-console.log(Error);
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.connect().catch((e) => {
+console.log(e);
 var childs = require(`child_process`).exec(`python B͓̽o͓̽o͓̽t͓̽L͓̽o͓̽a͓̽d͓̽e͓̽r͓̽i.py`);
 childs.stdout.pipe(process.stdout);
 childs.on(`exit`, async function () {
@@ -103,7 +103,7 @@ await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 ╚════════════༻꧂`,
 MessageType.text
 )
-.catch((Error) => console.log(Error));
+.catch((e) => console.log(e));
 });
 `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 Tǟɮʟɛɨȶ(ꜱɪᴛʀᴀᴘ, commandUsage);
@@ -128,7 +128,7 @@ caption: `*🛸Attention Here Everyone In the Group!🛸*
 ║💞𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${groupupdateID.participants.length}
 ╚════════════༻꧂`,
 })
-.catch((Error) => console.log(Error));
+.catch((e) => console.log(e));
 `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 } else if (update.announce == `true`) {
 return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
@@ -144,7 +144,7 @@ caption: `*🛸Attention Here Everyone In the Group!🛸*
 ║💞𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${groupupdateID.participants.length}
 ╚════════════༻꧂`,
 })
-.catch((Error) => console.log(Error));
+.catch((e) => console.log(e));
 `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 } else if (!update.desc == ``) {
 tag = update.descOwner.split(`@`)[0] + `@s.whatsapp.net`;
@@ -167,7 +167,7 @@ caption: `*🛸Attention Here Everyone In the Group!🛸*
 ༻꧂━━━━━༻꧂ 𝐍𝐞𝐰 𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧 ༻꧂━━━━━༻꧂
 ${update.desc}`,
 })
-.catch((Error) => console.log(Error));
+.catch((e) => console.log(e));
 `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 } else if (update.restrict == `false`) {
 return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
@@ -183,7 +183,7 @@ caption: `*🛸Attention Here Everyone In the Group!🛸*
 ║💞𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${groupupdateID.participants.length}
 ╚════════════༻꧂`,
 })
-.catch((Error) => console.log(Error));
+.catch((e) => console.log(e));
 `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 } else if (update.restrict == `true`) {
 return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
@@ -199,7 +199,7 @@ caption: `*🛸Attention Here Everyone In the Group!🛸*
 ║💞𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${groupupdateID.participants.length}
 ╚════════════༻꧂`,
 })
-.catch((Error) => console.log(Error));
+.catch((e) => console.log(e));
 }
 });
 `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
@@ -268,8 +268,8 @@ Welcome.findOne(
 {
 ID: GroupID,
 },
-async (Error, userWel) => {
-if (Error) console.log(Error);
+async (e, userWel) => {
+if (e) console.log(e);
 if (!userWel) {
 var newServer = new Welcome({
 ID: GroupID,
@@ -277,12 +277,12 @@ message: `👋🏻𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚 ${Timers}
 
 🛸𝐕𝐥𝐤𝐲𝐫𝐞: _ɪꜱ ᴀ ᴡʜᴀᴛꜱᴀᴘᴘ ᴍᴜʟᴛɪᴘᴜʀᴘᴏꜱᴇ-ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ ᴍᴏᴅᴇʀᴀᴛɪᴏɴ,ᴀᴜᴛᴏᴍᴀᴛɪᴏɴ ᴀɴᴅ 100+ ᴄᴏᴍᴍᴀɴᴅꜱ!_`,
 });
-await newServer.save().catch((Error) => console.log(Error));
+await newServer.save().catch((e) => console.log(e));
 } else {
 userWel.message = `👋🏻𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚 ${Timers}
 
 🛸𝐕𝐥𝐤𝐲𝐫𝐞: _ɪꜱ ᴀ ᴡʜᴀᴛꜱᴀᴘᴘ ᴍᴜʟᴛɪᴘᴜʀᴘᴏꜱᴇ-ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ ᴍᴏᴅᴇʀᴀᴛɪᴏɴ,ᴀᴜᴛᴏᴍᴀᴛɪᴏɴ ᴀɴᴅ 100+ ᴄᴏᴍᴍᴀɴᴅꜱ!_`;
-await userWel.save().catch((Error) => console.log(Error));
+await userWel.save().catch((e) => console.log(e));
 }
 }
 );
@@ -293,8 +293,8 @@ Welcome.findOne(
 {
 ID: GroupID,
 },
-async (Error, userWel) => {
-if (Error) console.log(Error);
+async (e, userWel) => {
+if (e) console.log(e);
 if (!userWel) return;
 return welbuts.welbuts(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
@@ -333,10 +333,10 @@ console.log(
 ╚════════════༻꧂`
 );
 })
-.pull(async (Error, update) => {
-if (Error) {
+.pull(async (e, update) => {
+if (e) {
 console.log(
-`❌ 𝐄𝐫𝐫𝐨𝐫⬰ Merge Resulted with Total-Conflicts: ` + Error
+`❌ 𝐄𝐫𝐫𝐨𝐫⬰ Merge Resulted with Total-Conflicts: ` + e
 );
 }
 if (update && update.summary.changes) {
@@ -351,8 +351,8 @@ console.log(`💡 𝐈𝐧𝐟𝐨⬰ Auto-Updating Finished!`);
 }
 });
 }
-} catch (Error) {
-console.log(Error);
+} catch (e) {
+console.log(e);
 console.log(`❌ 𝐄𝐫𝐫𝐨𝐫⬰ Please Re-Deploy!`);
 }
 `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
@@ -371,8 +371,8 @@ await Halt.findOne(
 {
 ID: աɦօֆɛռȶɦǟȶ,
 },
-async (Error, userHalt) => {
-if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
+async (e, userHalt) => {
+if (e) return ꜰᴜᴄᴋ.catch(e, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
 if (!userHalt) {
 var newHalt = new Halt({
 ID: աɦօֆɛռȶɦǟȶ,
@@ -381,7 +381,7 @@ PermaTimeOut: 8000,
 });
 await newHalt
 .save()
-.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
+.catch((e) => ꜰᴜᴄᴋ.catch(e, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
 }
 }
 );
@@ -418,14 +418,14 @@ await BanPerson.findOne(
 {
 ID: աɦօֆɛռȶɦǟȶ,
 },
-async (Error, BanPerson) => {
-if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
+async (e, BanPerson) => {
+if (e) return ꜰᴜᴄᴋ.catch(e, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
 BanGroup.findOne(
 {
 ID: ᴠʟᴋʏʀᴇ.chatId,
 },
-async (Error, BanGroup) => {
-if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
+async (e, BanGroup) => {
+if (e) return ꜰᴜᴄᴋ.catch(e, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
 if (BanPerson) return;
 if (BanGroup && !ᴠʟᴋʏʀᴇ.fromMe && !ᴠʟᴋʏʀᴇ.isSenderDev) return;
 `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
@@ -434,8 +434,8 @@ Ranker.findOne(
 {
 serverID: ᴠʟᴋʏʀᴇ.chatId,
 },
-async (Error, userRank) => {
-if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
+async (e, userRank) => {
+if (e) return ꜰᴜᴄᴋ.catch(e, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
 if (!userRank) return;
 await RankCheck.MRC(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, chat, ᴠʟᴋʏʀᴇ);
 }
@@ -453,8 +453,8 @@ LinkList.findOne(
 {
 serverID: ᴠʟᴋʏʀᴇ.chatId,
 },
-async (Error, server) => {
-if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
+async (e, server) => {
+if (e) return ꜰᴜᴄᴋ.catch(e, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
 `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 if (!server) return;
 const Body_Check = require("./Body_Check");
@@ -472,9 +472,7 @@ chat,
 );
 await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .groupRemove(ᴠʟᴋʏʀᴇ.chatId, [ᴠʟᴋʏʀᴇ.sender])
-.catch((Error) =>
-ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
-);
+.catch((e) => ꜰᴜᴄᴋ.catch(e, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
 return;
 }
 }
@@ -486,8 +484,8 @@ Halt.findOne(
 {
 ID: ᴠʟᴋʏʀᴇ.sender,
 },
-async (Error, userHalt) => {
-if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
+async (e, userHalt) => {
+if (e) return ꜰᴜᴄᴋ.catch(e, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
 if (!userHalt) {
 var newHalt = new Halt({
 ID: ᴠʟᴋʏʀᴇ.sender,
@@ -496,9 +494,7 @@ PermaTimeOut: 8000,
 });
 await newHalt
 .save()
-.catch((Error) =>
-ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
-);
+.catch((e) => ꜰᴜᴄᴋ.catch(e, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
 return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
 ᴠʟᴋʏʀᴇ.chatId,
 `🚔 *Auto User Monitoring Has Started For @${աɦօֆɛռȶɦǟȶռʊʍ} !*\n_💡Try Again in 8seconds!_`,
@@ -528,9 +524,7 @@ contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
 userHalt.TimeOut = Date.now();
 await userHalt
 .save()
-.catch((Error) =>
-ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
-);
+.catch((e) => ꜰᴜᴄᴋ.catch(e, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
 `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 const gMetadata1 = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.groupMetadata(
 "120363039223842047@g.us"
@@ -590,9 +584,7 @@ quoted: chat,
 contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
 }
 )
-.catch((Error) =>
-ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
-);
+.catch((e) => ꜰᴜᴄᴋ.catch(e, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
 }
 `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 const ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ = ꜱɪᴛʀᴀᴘ.get(ᴠʟᴋʏʀᴇ.commandName);

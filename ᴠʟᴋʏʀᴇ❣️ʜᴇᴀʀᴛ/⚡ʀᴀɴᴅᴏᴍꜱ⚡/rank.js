@@ -64,8 +64,8 @@ Usersᴠʟᴋʏʀᴇ.findOne(
 ID: աɦօֆɛռȶɦǟȶ,
 serverID: ᴠʟᴋʏʀᴇ.chatId,
 },
-async (Error, user) => {
-if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
+async (e, user) => {
+if (e) return ꜰᴜᴄᴋ.catch(e, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
 if (!user) {
 return ᴠʟᴋʏʀᴇ_Buttons.MTB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
@@ -108,8 +108,8 @@ maxXP = 8000;
 maxXP = 10000;
 }
 `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-let աɦօֆɛ
-try{
+let աɦօֆɛ;
+try {
 աɦօֆɛ = աɦօֆɛռȶɦǟȶռʊʍ
 .substring(2, աɦօֆɛռȶɦǟȶռʊʍ.length - 6)
 .replace(/[+ ]/g, "");
@@ -133,8 +133,8 @@ const rank = new canvacord.Rank()
 .setDiscriminator(`${աɦօֆɛ}`)
 .setProgressBar(color, "COLOR");
 rank.build().then(async (data) => {
-fs.writeFile(expFile, data, async (Error) => {
-if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
+fs.writeFile(expFile, data, async (e) => {
+if (e) return ꜰᴜᴄᴋ.catch(e, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
 var groupDataRank = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.groupMetadata(
 chat.key.remoteJid
 );
@@ -182,15 +182,15 @@ quoted: chat,
 contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
 }
 )
-.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
+.catch((e) => ꜰᴜᴄᴋ.catch(e, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
 return await cleanRF.cleanRF(expFile);
 });
 });
 }
 );
 `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-} catch (Error) {
-ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
+} catch (e) {
+ꜰᴜᴄᴋ.catch(e, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
 return;
 }
 },

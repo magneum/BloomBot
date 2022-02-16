@@ -36,7 +36,6 @@ var MainText = `🪶 𝐇𝐞𝐲: •@${աɦօֆɛռȶɦǟȶռʊʍ},
 ║• *${ᴋᴇɪ}ytbassboost:*  _download yt audio with filter_
 ║• *${ᴋᴇɪ}ytdeep:*  _download yt audio with filter_
 ║• *${ᴋᴇɪ}ytecho:*  _download yt audio with filter_
-║• *${ᴋᴇɪ}ytfast:*  _download yt audio with filter_
 ║• *${ᴋᴇɪ}ytflanger:*  _download yt audio with filter_
 ║• *${ᴋᴇɪ}ytnightcore:*  _download yt audio with filter_
 ║• *${ᴋᴇɪ}ytphaser:*  _download yt audio with filter_
