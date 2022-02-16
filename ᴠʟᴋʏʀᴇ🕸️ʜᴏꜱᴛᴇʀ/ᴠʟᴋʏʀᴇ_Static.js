@@ -43,7 +43,7 @@ const ᴠʟᴋʏʀᴇ_GIF_Static = async (
           mimetype: `video/gif`,
           quoted: chat,
           caption:
-            `∵ ©𝐕𝐥𝐤𝐲𝐫𝐞 え ${vers.vers} ∴\n☊ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™\n\n` + MainText,
+            `∵ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 え ${vers.vers} ∴\n☊ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™\n\n` + MainText,
           contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ, Receiver] },
         })
         .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
@@ -57,7 +57,7 @@ const ᴠʟᴋʏʀᴇ_GIF_Static = async (
           mimetype: `video/gif`,
           quoted: chat,
           caption:
-            `∵ ©𝐕𝐥𝐤𝐲𝐫𝐞 え ${vers.vers} ∴\n☊ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™\n\n` + MainText,
+            `∵ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 え ${vers.vers} ∴\n☊ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™\n\n` + MainText,
           contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
         })
         .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
