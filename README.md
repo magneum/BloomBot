@@ -54,3 +54,5 @@
 <a href="https://heroku.com/deploy">
   <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
 </a>
+
+- Change (app.bot)[app.bot] to app.json and then click on deploy!
