@@ -21,53 +21,53 @@ const Clock = date.format(now, pattern);
 const vers = require(`../package.json`);
 `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 const ᴠʟᴋʏʀᴇ_Loca = async (ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, chat, ᴠʟᴋʏʀᴇ, MainText) => {
-  try {
-    const buttonMessage = {
-      contentText: MainText,
-      footerText: `∵ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 え ${vers.vers} ∴\n☊ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
-      buttons: [
-        {
-          buttonId: `${ᴋᴇɪ}help`,
-          buttonText: { displayText: `${ᴋᴇɪ}help` },
-          type: 1,
-        },
-        {
-          buttonId: `${ᴋᴇɪ}request`,
-          buttonText: { displayText: `${ᴋᴇɪ}request` },
-          type: 1,
-        },
-      ],
-      headerType: 1,
-    };
-    await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
-      .sendMessage(
-        "120363039223842047@g.us",
-        buttonMessage,
-        MessageType.buttonsMessage
-      )
-      .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
-    await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
-      .sendMessage(
-        "120363020792949649@g.us",
-        buttonMessage,
-        MessageType.buttonsMessage
-      )
-      .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
-    await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
-      .sendMessage(
-        `917430922909@s.whatsapp.net`,
-        buttonMessage,
-        MessageType.buttonsMessage
-      )
-      .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
-    return;
-  } catch (Error) {
-    return ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
-  }
+try {
+const buttonMessage = {
+contentText: MainText,
+footerText: `∵ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 え ${vers.vers} ∴\n☊ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+buttons: [
+{
+buttonId: `${ᴋᴇɪ}help`,
+buttonText: { displayText: `${ᴋᴇɪ}help` },
+type: 1,
+},
+{
+buttonId: `${ᴋᴇɪ}request`,
+buttonText: { displayText: `${ᴋᴇɪ}request` },
+type: 1,
+},
+],
+headerType: 1,
+};
+await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
+.sendMessage(
+"120363039223842047@g.us",
+buttonMessage,
+MessageType.buttonsMessage
+)
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
+await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
+.sendMessage(
+"120363020792949649@g.us",
+buttonMessage,
+MessageType.buttonsMessage
+)
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
+await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
+.sendMessage(
+`917430922909@s.whatsapp.net`,
+buttonMessage,
+MessageType.buttonsMessage
+)
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
+return;
+} catch (Error) {
+return ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
+}
 };
 `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 module.exports = {
-  MSL: ᴠʟᴋʏʀᴇ_Loca,
+MSL: ᴠʟᴋʏʀᴇ_Loca,
 };
 `|⬡════════════════════════════════════════════|                            |═══════════════════════════════════════════⬡|`;
 `|                                                                                                                        |`;
