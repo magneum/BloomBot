@@ -40,7 +40,7 @@ chat,
 `꧁| @${աɦօֆɛռȶɦǟȶռʊʍ} |꧂
 ╔⧉༻ 
 ║
-║🍂 𝐕𝐥𝐤𝐲𝐫𝐞: Is an Advande Whatsapp User-Bot!
+║🍂 𝐕𝐥𝐤𝐲𝐫𝐞: Is an Advance Whatsapp User-Bot!
 ║🍂 𝐆𝐢𝐭𝐡𝐮𝐛: https://github.com/Kryknz/Vlkyre_
 ║🍂 𝐀𝐝𝐝 𝐕𝐥𝐤𝐲𝐫𝐞: ${ᴋᴇɪ}request _(your group link)_
 ╚══════════༻꧂
