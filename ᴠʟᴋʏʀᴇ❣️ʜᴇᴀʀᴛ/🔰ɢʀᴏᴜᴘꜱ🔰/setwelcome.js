@@ -18,7 +18,11 @@ var newScpt = scriptName.slice(0, -3).toLowerCase();
 `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 module.exports = {
 name: newScpt,
-ᴠʟᴋʏʀᴇӄǟɨʐօ: `*${ᴋᴇɪ}${newScpt}* _message_`,
+ᴠʟᴋʏʀᴇӄǟɨʐօ: `⬡ *${ᴋᴇɪ}${newScpt}* _welcome custom message_
+⬡ *${ᴋᴇɪ}${newScpt}* _ON_
+⬡ *${ᴋᴇɪ}${newScpt}* _OFF_
+
+⬡ *OFF* => _(deletes from database)_`,
 async handle(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, chat, ᴠʟᴋʏʀᴇ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
 try {
 var աɦօֆɛռȶɦǟȶ = ᴠʟᴋʏʀᴇ.sender;
@@ -86,16 +90,23 @@ try {
 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 =
 "https://i.postimg.cc/wxWL9G8F/no-profile-picture-300x216.png";
 }
-var WelcomeNote = ᴠʟᴋʏʀᴇ.body.replace(
+let WelcomeNote;
+try {
+WelcomeNote = ᴠʟᴋʏʀᴇ.body.replace(
 ᴠʟᴋʏʀᴇ.body[0] + ᴠʟᴋʏʀᴇ.commandName + " ",
 ""
 );
+} catch {
+WelcomeNote = `👋🏻𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚\n👇🏽𝗣𝗿𝗲𝘀𝘀 𝗯𝗲𝗹𝗼𝘄 𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗦𝘁𝗮𝗿𝘁👇🏽`;
+}
+`|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 Welcome.findOne(
 {
 ID: ᴠʟᴋʏʀᴇ.chatId,
 },
 async (Error, userWel) => {
 if (Error) return ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
+if (Needs[0] === `ON` || Needs[0] === `on` || Needs[0] === `On`) {
 if (!userWel) {
 var newServer = new Welcome({
 ID: ᴠʟᴋʏʀᴇ.chatId,
@@ -120,6 +131,7 @@ ${WelcomeNote}`,
 𝕻𝕻𝖑𝖊𝖙𝖊𝖗
 );
 return;
+`|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 } else {
 userWel.message = WelcomeNote;
 await userWel
@@ -141,6 +153,57 @@ ${WelcomeNote}`,
 𝕻𝕻𝖑𝖊𝖙𝖊𝖗
 );
 return;
+}
+`|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
+} else if (
+Needs[0] === `OFF` ||
+Needs[0] === `off` ||
+Needs[0] === `Off`
+) {
+if (!userWel) {
+ᴠʟᴋʏʀᴇ_Buttons.MTB(
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+chat,
+ᴠʟᴋʏʀᴇ,
+`🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ}, 
+
+╔════◇🥞 𝐖𝐞𝐥𝐜𝐨𝐦𝐞𝐫
+║🍰 𝗪𝗲𝗹𝗰𝗼𝗺𝗲 𝗦𝘁𝗮𝘁𝘂𝘀: _Not Set!_
+╚════════════╝`
+);
+return;
+`|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
+} else {
+await userWel
+.delete()
+.catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
+ᴠʟᴋʏʀᴇ_Buttons.MTB(
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+chat,
+ᴠʟᴋʏʀᴇ,
+`🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ}, 
+
+╔════◇🥞 𝐖𝐞𝐥𝐜𝐨𝐦𝐞𝐫
+║🍰 𝗪𝗲𝗹𝗰𝗼𝗺𝗲 𝗦𝘁𝗮𝘁𝘂𝘀: _Deleted_
+╚════════════╝`
+);
+return;
+}
+`|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
+} else {
+var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(ᴠʟᴋʏʀᴇ.commandName);
+var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
+𝓜Usage.ᴠʟᴋʏʀᴇӄǟɨʐօ === undefined ? `Null` : 𝓜Usage.ᴠʟᴋʏʀᴇӄǟɨʐօ;
+const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
+return ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+chat,
+ᴠʟᴋʏʀᴇ,
+աɦօֆɛռȶɦǟȶ,
+աɦօֆɛռȶɦǟȶռʊʍ,
+ᴠʟᴋʏʀᴇ.commandName,
+ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
+);
 }
 }
 );
