@@ -14,23 +14,20 @@
 🍂[`𝐃𝐢𝐬𝐜𝐨𝐫𝐝`](https://discord.gg/xcFN6NDHEV)
 
 ```
-🦋𝐕𝐥𝐤𝐲𝐫𝐞
-
-╔◇║⚡ 𝐅𝐫𝐞𝐪𝐮𝐞𝐧𝐭𝐥𝐲 𝐀𝐬𝐤𝐞𝐝 𝐐𝐮𝐞𝐬𝐭𝐢𝐨𝐧𝐬
+╔⧉༻ ⚡𝐅𝐫𝐞𝐪𝐮𝐞𝐧𝐭𝐥𝐲 𝐀𝐬𝐤𝐞𝐝 𝐐𝐮𝐞𝐬𝐭𝐢𝐨𝐧𝐬
 ║
-╚◇║
-╔◇║❓What is the reason/topic for this?
+╚◇⧉
+╔⧉༻ ❓What is the reason/topic for this?
 ║ ᴠʟᴋʏʀᴇ is an Advance Whatsapp User-Bot. You Can Use The Bot in your respective groups.
 ║
-╚◇║
-╔◇║❓I want to know how to deploy ᴠʟᴋʏʀᴇ.
+╚◇⧉
+╔⧉༻ ❓I want to know how to deploy ᴠʟᴋʏʀᴇ.
 ║ Not Allowed anymore!
 ║
-╚◇║
-╔◇║❓Please Help Me Out With The Commands.
+╚◇⧉
+╔⧉༻ ❓Please Help Me Out With The Commands.
 ║ You can find all commands in #help.
-║
-╚════════════╝
+╚════════════꧂
 ```
 
 <p align="centre">
@@ -40,7 +37,7 @@
 # 🍂𝐃𝐢𝐬𝐜𝐥𝐚𝐢𝐦𝐞𝐫
 
 ```
-╔⧉༻ 
+╔⧉༻ 🦋𝐕𝐥𝐤𝐲𝐫𝐞
 ║ We won't be responsible for any kind of ban due to this bot.
 ║ Vlkyre was made for fun purpose and to make group management easier.
 ║ It's your concern if you spam and gets your account banned.
