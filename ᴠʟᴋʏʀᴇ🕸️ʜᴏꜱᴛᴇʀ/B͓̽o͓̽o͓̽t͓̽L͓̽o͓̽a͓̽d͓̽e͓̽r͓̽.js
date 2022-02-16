@@ -30,7 +30,7 @@ const fs = require("fs");
 const path = require("path");
 const assert = require("assert");
 const { spawn } = require("child_process");
-let folders = [".", ...Object.keys(require("./package.json").directories)];
+let folders = [".", ...Object.keys(require("../package.json").directories)];
 let files = [];
 for (let folder of folders)
 for (let file of fs.readdirSync(folder).filter((v) => v.endsWith(".js")))
