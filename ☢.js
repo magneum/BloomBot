@@ -45,7 +45,7 @@ process.exitCode = 1;
 });
 }
 console.log(`
-╔◇║ ∵ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 え ☊ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™
+╔◇║ ⌜Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞〨⌟\n❝ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™❞
 ║
 ║💡 𝐈𝐧𝐟𝐨⬰ Auto-Updating ᴠʟᴋʏʀᴇ System With Latest Patch...!
 ╚════════════༻꧂`
