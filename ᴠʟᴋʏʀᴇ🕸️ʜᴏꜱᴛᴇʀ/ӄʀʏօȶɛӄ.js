@@ -6,6 +6,7 @@
 const _𝔏𝔞𝔟_ = require(`./_𝔏𝔞𝔟_`);
 var ӄʀʏօȶɛӄ = require(`./ᴠʟᴋʏʀᴇƈʟǟ`);
 exports.resolve = function (messageInstance, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, groupMetadata) {
+try {
 var DEVstring = _𝔏𝔞𝔟_.KATE;
 var ᴠʟᴋʏʀᴇ = new ӄʀʏօȶɛӄ();
 var prefix = _𝔏𝔞𝔟_.FOXTROT + `\\w+`;
@@ -136,6 +137,14 @@ for (var i in participants) {
 participants[i].isAdmin ? admins.push(participants[i].jid) : ``;
 }
 return admins;
+}
+} catch (e) {
+console.log(e);
+var ᴠʟᴋʏ = require(`child_process`).exec(`python3 𝕭𝖔𝖔𝖙☢𝕷𝖔𝖆𝖉𝖊𝖗.py`);
+ᴠʟᴋʏ.stdout.pipe(process.stdout);
+ᴠʟᴋʏ.on(`exit`, async function () {
+process.exitCode = 1;
+});
 }
 };
 `|⬡════════════════════════════════════════════|                            |═══════════════════════════════════════════⬡|`;
