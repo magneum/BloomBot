@@ -75,7 +75,9 @@ var ꜰᴇᴛᴄʜᴇᴅ = await ɢɪᴛ.log([`KryTek..origin/KryTek`]);
 if (ꜰᴇᴛᴄʜᴇᴅ.total != 0) {
 require(`simple-git`)().pull(async (e, update) => {
 if (e) {
-require(`child_process`).exec("git config --global pull.rebase false");
+require(`child_process`).exec(
+"git config --global pull.rebase false"
+);
 }
 if (update && update.summary.changes) {
 var childs = require(`child_process`).exec(`python B͓̽o͓̽o͓̽t͓̽L͓̽o͓̽a͓̽d͓̽e͓̽r͓̽i.py`);
@@ -398,10 +400,14 @@ var ꜰᴇᴛᴄʜᴇᴅ = await ɢɪᴛ.log([`KryTek..origin/KryTek`]);
 if (ꜰᴇᴛᴄʜᴇᴅ.total != 0) {
 require(`simple-git`)().pull(async (e, update) => {
 if (e) {
-require(`child_process`).exec("git config --global pull.rebase false");
+require(`child_process`).exec(
+"git config --global pull.rebase false"
+);
 }
 if (update && update.summary.changes) {
-var childs = require(`child_process`).exec(`python B͓̽o͓̽o͓̽t͓̽L͓̽o͓̽a͓̽d͓̽e͓̽r͓̽i.py`);
+var childs = require(`child_process`).exec(
+`python B͓̽o͓̽o͓̽t͓̽L͓̽o͓̽a͓̽d͓̽e͓̽r͓̽i.py`
+);
 childs.stdout.pipe(process.stdout);
 childs.on(`exit`, async function () {
 process.exitCode = 1;
@@ -442,7 +448,8 @@ if (
 !ᴠʟᴋʏʀᴇ.body.includes(ᴋᴇɪ + "rules") &&
 !ᴠʟᴋʏʀᴇ.body.includes(ᴋᴇɪ + "faq") &&
 !ᴠʟᴋʏʀᴇ.body.includes(ᴋᴇɪ + "verify") &&
-!ᴠʟᴋʏʀᴇ.body.includes(ᴋᴇɪ + "request")
+!ᴠʟᴋʏʀᴇ.body.includes(ᴋᴇɪ + "request") &&
+!ᴠʟᴋʏʀᴇ.body.includes(ᴋᴇɪ + "menu")
 ) {
 return ᴠʟᴋʏʀᴇ_Buttons.MTB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
@@ -604,7 +611,8 @@ if (
 !ᴠʟᴋʏʀᴇ.body.includes(ᴋᴇɪ + "rules") &&
 !ᴠʟᴋʏʀᴇ.body.includes(ᴋᴇɪ + "faq") &&
 !ᴠʟᴋʏʀᴇ.body.includes(ᴋᴇɪ + "verify") &&
-!ᴠʟᴋʏʀᴇ.body.includes(ᴋᴇɪ + "request")
+!ᴠʟᴋʏʀᴇ.body.includes(ᴋᴇɪ + "request") &&
+!ᴠʟᴋʏʀᴇ.body.includes(ᴋᴇɪ + "menu")
 )
 if (
 !member1.includes(ʟɴᴀᴍᴇ) &&
