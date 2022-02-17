@@ -55,7 +55,7 @@ const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
 MessageType.image,
 { mimetype: Mimetype.png }
 );
-return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
+await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .sendMessage(
 ᴠʟᴋʏʀᴇ.chatId,
 {
@@ -64,7 +64,7 @@ contentText: `
 ║
 ║❌ 𝗘𝗿𝗿𝗼𝗿: _Api Timeout.Try Again Later!_
 ╚════════════༻꧂`,
-footerText: `∵ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 え ${vers.vers} ∴\n☊ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+footerText: `⌜Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞〨${vers.vers}⌟\n❝ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™❞`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
