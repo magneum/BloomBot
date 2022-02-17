@@ -23,16 +23,16 @@ RUN npm install --global n
 RUN n install 16
 RUN hash -r 
 RUN git clone https://github.com/KryKnz/Vlkyre.git 
-RUN git config pull.rebase false
-# RUN git init --initial-branch=KryTek
-# RUN git remote add origin https://github.com/KryKnz/Vlkyre.git
-# RUN git fetch origin KryTek
-# RUN git reset --hard origin/KryTek
-# RUN git init --initial-branch=KryTek
-# RUN git remote add origin https://github.com/KryKnz/Vlkyre.git
-# RUN git fetch origin KryTek
-# RUN git reset --hard origin/KryTek
 RUN cd Vlkyre
+RUN git init --initial-branch=KryTek
+RUN git config pull.rebase false
+# RUN git remote add origin https://github.com/KryKnz/Vlkyre.git
+# RUN git fetch origin KryTek
+# RUN git reset --hard origin/KryTek
+# RUN git init --initial-branch=KryTek
+# RUN git remote add origin https://github.com/KryKnz/Vlkyre.git
+# RUN git fetch origin KryTek
+# RUN git reset --hard origin/KryTek
 WORKDIR /Vlkyre
 RUN pip install -r кгץкภչ.txt
 RUN npm install --force
