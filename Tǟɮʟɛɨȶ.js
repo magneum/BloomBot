@@ -10,8 +10,7 @@ const ᴅᴇʀꜱ = fs.readdirSync(`./ᴠʟᴋʏʀᴇ❣️ʜᴇᴀʀᴛ`);
 for (const ʟᴅᴇʀ of ᴅᴇʀꜱ) {
 const cmdF = fs
 .readdirSync(`./ᴠʟᴋʏʀᴇ❣️ʜᴇᴀʀᴛ/${ʟᴅᴇʀ}`)
-.filter((ɪꜱᴏ) =>
-ɪꜱᴏ.endsWith(`.js`) && ɪꜱᴏ.endsWith(`.mjs`) && ɪꜱᴏ.endsWith(`.ts`));
+.filter((ɪꜱᴏ) => ɪꜱᴏ.endsWith(`.js`));
 for (const ɪꜱᴏ of cmdF) {
 const command = require(`./ᴠʟᴋʏʀᴇ❣️ʜᴇᴀʀᴛ/${ʟᴅᴇʀ}/${ɪꜱᴏ}`);
 ꜱɪᴛʀᴀᴘ.set(command.name, command);

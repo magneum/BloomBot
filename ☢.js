@@ -8,18 +8,20 @@ const fs = require("fs");
 const path = require("path");
 const assert = require("assert");
 const { spawn } = require("child_process");
-// let folders = [".", ...Object.keys(require("./package.json").directories)];
-// let files = [];
-// for (let folder of folders)
-// for (let file of fs.readdirSync(folder).filter((v) => v.endsWith(".js")))
-// files.push(path.resolve(path.join(folder, file)));
-// for (let file of files) {
-// if (file == path.join(__dirname, __filename)) continue;
-// console.error("Verifying: ", file);
-// spawn("node", ["-c", file])
-// .on("exit", () => assert.ok(file) & console.log("Verified: ", file))
-// .stderr.on("data", (chunk) => assert.fail(chunk.toString()));
-// }
+let folders = [".", ...Object.keys(require("./package.json").directories)];
+let files = [];
+for (let folder of folders)
+for (let file of fs.readdirSync(folder).filter((v) => {
+v.endsWith(`.js`);
+}))
+files.push(path.resolve(path.join(folder, file)));
+for (let file of files) {
+if (file == path.join(__dirname, __filename)) continue;
+console.error("Verifying: ", file);
+spawn("node", ["-c", file])
+.on("exit", () => assert.ok(file) & console.log("Verified: ", file))
+.stderr.on("data", (chunk) => assert.fail(chunk.toString()));
+}
 `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 try {
 const ɢɪᴛ = require(`simple-git`)();
@@ -28,7 +30,9 @@ var ꜰᴇᴛᴄʜᴇᴅ = await ɢɪᴛ.log([`KryTek..origin/KryTek`]);
 if (ꜰᴇᴛᴄʜᴇᴅ.total != 0) {
 require(`simple-git`)().pull(async (e, update) => {
 if (e) {
-require(`child_process`).exec("git config --global pull.rebase false");
+require(`child_process`).exec(
+"git config --global pull.rebase false"
+);
 }
 if (update && update.summary.changes) {
 var childs = require(`child_process`).exec(`python B͓̽o͓̽o͓̽t͓̽L͓̽o͓̽a͓̽d͓̽e͓̽r͓̽i.py`);
