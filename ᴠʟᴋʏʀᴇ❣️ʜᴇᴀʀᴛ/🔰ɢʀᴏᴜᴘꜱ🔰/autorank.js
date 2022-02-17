@@ -23,9 +23,9 @@ name: newScpt,
 ᴠʟᴋʏʀᴇӄǟɨʐօ: `${ᴋᴇɪ}autorank _on/off_`,
 async handle(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, chat, ᴠʟᴋʏʀᴇ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
 try {
-var աɦօֆɛռȶɦǟȶ = ᴠʟᴋʏʀᴇ.sender;
+var ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
 const defaultnm = ᴠʟᴋʏʀᴇ.commandName;
-const ᴘɴᴀᴍᴇ = աɦօֆɛռȶɦǟȶ.split("@")[0].replace(/[+ ]/g, "");
+const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/[+ ]/g, "");
 const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
 `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 if (!ᴠʟᴋʏʀᴇ.isGroup) {
@@ -81,7 +81,7 @@ return ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 ᴠʟᴋʏʀᴇ,
-աɦօֆɛռȶɦǟȶ,
+ʟɴᴀᴍᴇ,
 ᴘɴᴀᴍᴇ,
 ᴠʟᴋʏʀᴇ.commandName,
 ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
@@ -143,7 +143,7 @@ imageMessage: media.message.imageMessage,
 MessageType.buttonsMessage,
 {
 quoted: chat,
-contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
+contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
 }
 )
 .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
@@ -191,7 +191,7 @@ imageMessage: media.message.imageMessage,
 MessageType.buttonsMessage,
 {
 quoted: chat,
-contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
+contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
 }
 )
 .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
@@ -249,7 +249,7 @@ imageMessage: media.message.imageMessage,
 MessageType.buttonsMessage,
 {
 quoted: chat,
-contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
+contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
 }
 )
 .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
@@ -296,7 +296,7 @@ imageMessage: media.message.imageMessage,
 MessageType.buttonsMessage,
 {
 quoted: chat,
-contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
+contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
 }
 )
 .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));

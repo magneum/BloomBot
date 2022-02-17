@@ -25,9 +25,9 @@ module.exports = {
 name: newScpt,
 async handle(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, chat, ᴠʟᴋʏʀᴇ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
 try {
-var աɦօֆɛռȶɦǟȶ = ᴠʟᴋʏʀᴇ.sender;
+var ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
 const defaultnm = ᴠʟᴋʏʀᴇ.commandName;
-const ᴘɴᴀᴍᴇ = աɦօֆɛռȶɦǟȶ.split("@")[0].replace(/[+ ]/g, "");
+const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/[+ ]/g, "");
 const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
 `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 if (ᴠʟᴋʏʀᴇ.isReply) {
@@ -81,7 +81,7 @@ caption: `⌜Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ${vers.vers}⌟\n❝ᴘᴏᴡᴇʀ�
 ║🍕 𝐅𝐫𝐨𝐦: @${ᴘɴᴀᴍᴇ}
 ║🌭 𝐓𝐨: @${քɛʀֆօռɢօȶռʊʍ}
 ╚════════════╝`,
-contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ, Receiver] },
+contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ, Receiver] },
 }
 )
 .catch((e) => ꜰᴜᴄᴋ.catch(e, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
@@ -94,7 +94,7 @@ return;
 `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 } else {
 try {
-𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.getProfilePicture(աɦօֆɛռȶɦǟȶ);
+𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.getProfilePicture(ʟɴᴀᴍᴇ);
 } catch {
 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 =
 "https://i.postimg.cc/wxWL9G8F/no-profile-picture-300x216.png";
@@ -139,7 +139,7 @@ caption: `⌜Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ${vers.vers}⌟\n❝ᴘᴏᴡᴇʀ�
 ╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
 ║🍕 𝐅𝐫𝐨𝐦: @${ᴘɴᴀᴍᴇ}
 ╚════════════╝`,
-contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
+contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
 }
 )
 .catch((e) => ꜰᴜᴄᴋ.catch(e, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));

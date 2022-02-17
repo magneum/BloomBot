@@ -25,9 +25,9 @@ module.exports = {
 name: newScpt,
 async handle(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, chat, ᴠʟᴋʏʀᴇ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
 try {
-var աɦօֆɛռȶɦǟȶ = ᴠʟᴋʏʀᴇ.sender;
+var ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
 const defaultnm = ᴠʟᴋʏʀᴇ.commandName;
-const ᴘɴᴀᴍᴇ = աɦօֆɛռȶɦǟȶ.split("@")[0].replace(/[+ ]/g, "");
+const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/[+ ]/g, "");
 const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
 `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 const gMetadata1 = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.groupMetadata(
@@ -53,24 +53,12 @@ member3[i] = gMetadata3.participants[i].jid;
 }
 `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 if (
-!member1.includes(աɦօֆɛռȶɦǟȶ) &&
-!member2.includes(աɦօֆɛռȶɦǟȶ) &&
-!member3.includes(աɦօֆɛռȶɦǟȶ)
+!member1.includes(ʟɴᴀᴍᴇ) &&
+!member2.includes(ʟɴᴀᴍᴇ) &&
+!member3.includes(ʟɴᴀᴍᴇ)
 ) {
 const buttonMessage = {
 contentText: `🤖𝐕𝐞𝐫𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧: *@${ᴘɴᴀᴍᴇ}* As Long As You Are A Member Of Vlkyre Group Chat, You Will Be Auto-Verified!*
-
-╔◇ 𝐖𝐡𝐲 𝐓𝐨 𝐁𝐞 𝐕𝐞𝐫𝐢𝐟𝐢𝐞𝐝?
-║
-║📌 _Monitor Bugs!_
-║📌 _Monitor Anti-Spams!_
-║📌 _Monitor Anti-Links!_
-║📌 _Monitor Anti-NSFW!_
-║📌 _Monitor Anti-Virtex!_
-║📌 _Monitor Group Ranks!_
-║📌 _Monitor Performance!_
-║📌 _Use Vlkyre-Premium Anywhere!_
-╚════════════╝
 
 ╔◇║👇🏽𝗝𝗼𝗶𝗻 𝗔𝗻𝘆 𝐕𝐥𝐤𝐲𝐫𝐞 𝗚𝗿𝗼𝘂𝗽👇🏽
 ║
@@ -95,7 +83,7 @@ buttonMessage,
 MessageType.buttonsMessage,
 {
 quoted: chat,
-contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
+contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
 }
 )
 .catch((e) =>

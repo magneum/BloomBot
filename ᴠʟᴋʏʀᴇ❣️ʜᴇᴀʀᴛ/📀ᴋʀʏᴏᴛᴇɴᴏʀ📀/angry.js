@@ -25,9 +25,9 @@ module.exports = {
 name: newScpt,
 async handle(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, chat, ᴠʟᴋʏʀᴇ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
 try {
-var աɦօֆɛռȶɦǟȶ = ᴠʟᴋʏʀᴇ.sender;
+const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
 const defaultnm = ᴠʟᴋʏʀᴇ.commandName;
-const ᴘɴᴀᴍᴇ = աɦօֆɛռȶɦǟȶ.split("@")[0].replace(/[+ ]/g, "");
+const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/[+ ]/g, "");
 const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
 const AniLink = ᴠʟᴋʏʀᴇTenorMaker(FinalName.toLowerCase());
 `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
@@ -73,7 +73,7 @@ caption: `╔════◇🛸𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ᴋᴇɪ}${Final
 ╚════════════╝
 
 ⌜Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ${vers.vers}⌟\n❝ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™❞`,
-contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ, TagMention] },
+contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ, TagMention] },
 }
 )
 .catch((e) => ꜰᴜᴄᴋ.catch(e, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
@@ -83,7 +83,7 @@ return await cleanRF.cleanRF(GiveFile, GotFile);
 } else if (ᴠʟᴋʏʀᴇ.isReply) {
 var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
 var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
-if (Receiver === աɦօֆɛռȶɦǟȶ) {
+if (Receiver === ʟɴᴀᴍᴇ) {
 ffmpeg(GotFile)
 .outputOptions([
 `-pix_fmt yuv420p`,
@@ -107,7 +107,7 @@ caption: `╔════◇🛸𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ᴋᴇɪ}${Final
 ╚════════════╝
 
 ⌜Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ${vers.vers}⌟\n❝ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™❞`,
-contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
+contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
 }
 )
 .catch((e) => ꜰᴜᴄᴋ.catch(e, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
@@ -139,7 +139,7 @@ caption: `╔════◇🛸𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ᴋᴇɪ}${Final
 ╚════════════╝
 
 ⌜Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ${vers.vers}⌟\n❝ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™❞`,
-contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ, Receiver] },
+contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ, Receiver] },
 }
 )
 .catch((e) => ꜰᴜᴄᴋ.catch(e, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
@@ -171,7 +171,7 @@ caption: `╔════◇🛸𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ᴋᴇɪ}${Final
 ╚════════════╝
 
 ⌜Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ${vers.vers}⌟\n❝ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™❞`,
-contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
+contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
 }
 )
 .catch((e) => ꜰᴜᴄᴋ.catch(e, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));

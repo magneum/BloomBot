@@ -43,19 +43,19 @@ const canvacord = require("canvacord");
 `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 const RankCheck = async (ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, chat, ᴠʟᴋʏʀᴇ) => {
 try {
-var աɦօֆɛռȶɦǟȶ = ᴠʟᴋʏʀᴇ.sender;
-const ᴘɴᴀᴍᴇ = աɦօֆɛռȶɦǟȶ.split("@")[0].replace(/[+ ]/g, "");
+var ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
+const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/[+ ]/g, "");
 `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 CorlexaExp.findOne(
 {
-ID: աɦօֆɛռȶɦǟȶ,
+ID: ʟɴᴀᴍᴇ,
 serverID: ᴠʟᴋʏʀᴇ.chatId,
 },
 async (e, user) => {
 if (e) return ꜰᴜᴄᴋ.catch(e, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
 if (!user) {
 var newUsers = new CorlexaExp({
-ID: աɦօֆɛռȶɦǟȶ,
+ID: ʟɴᴀᴍᴇ,
 serverID: ᴠʟᴋʏʀᴇ.chatId,
 xp: Math.ceil(Math.random() * 1),
 level: 1,
@@ -69,7 +69,7 @@ return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 `📜𝐑𝐚𝐧𝐤: @${ᴘɴᴀᴍᴇ}, Auto-Ranking has Started!`,
 MessageType.text,
 {
-contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
+contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
 }
 )
 .catch((e) => ꜰᴜᴄᴋ.catch(e, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
@@ -165,7 +165,7 @@ Img = ImgBson.url_image;
 Img = "https://i.postimg.cc/Kc65RLnX/Full.png";
 }
 try {
-𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.getProfilePicture(աɦօֆɛռȶɦǟȶ);
+𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.getProfilePicture(ʟɴᴀᴍᴇ);
 } catch {
 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 =
 "https://i.postimg.cc/wxWL9G8F/no-profile-picture-300x216.png";
@@ -194,13 +194,13 @@ fs.writeFile(expFile, data, async (e) => {
 if (e) return ꜰᴜᴄᴋ.catch(e, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
 Economy.findOne(
 {
-ID: աɦօֆɛռȶɦǟȶ,
+ID: ʟɴᴀᴍᴇ,
 },
 async (e, userEco) => {
 if (e) return ꜰᴜᴄᴋ.catch(e, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
 if (!userEco) {
 var newUser = new Economy({
-ID: աɦօֆɛռȶɦǟȶ,
+ID: ʟɴᴀᴍᴇ,
 money: 0,
 daily: 0,
 timeout: 86400000,
@@ -237,7 +237,7 @@ imageMessage: media.message.imageMessage,
 MessageType.buttonsMessage,
 {
 quoted: chat,
-contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
+contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
 }
 )
 .catch((e) => ꜰᴜᴄᴋ.catch(e, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
@@ -278,7 +278,7 @@ imageMessage: media.message.imageMessage,
 MessageType.buttonsMessage,
 {
 quoted: chat,
-contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
+contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
 }
 )
 .catch((e) => ꜰᴜᴄᴋ.catch(e, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));

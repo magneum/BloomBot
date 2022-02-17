@@ -375,8 +375,8 @@ const groupMetadata = sender.endsWith(`@g.us`)
 ? await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.groupMetadata(chat.key.remoteJid)
 : ``;
 var ᴠʟᴋʏʀᴇ = ӄʀʏօȶɛӄ.resolve(chat, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, groupMetadata);
-var աɦօֆɛռȶɦǟȶ = ᴠʟᴋʏʀᴇ.sender;
-const ᴘɴᴀᴍᴇ = աɦօֆɛռȶɦǟȶ.split("@")[0].replace(/[+ ]/g, "");
+var ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
+const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/[+ ]/g, "");
 `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 try {
 const ɢɪᴛ = require(`simple-git`)();
@@ -408,13 +408,13 @@ console.log(`❌ 𝐄𝐫𝐫𝐨𝐫⬰ Please Re-Deploy!`);
 `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 await Halt.findOne(
 {
-ID: աɦօֆɛռȶɦǟȶ,
+ID: ʟɴᴀᴍᴇ,
 },
 async (e, userHalt) => {
 if (e) return ꜰᴜᴄᴋ.catch(e, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
 if (!userHalt) {
 var newHalt = new Halt({
-ID: աɦօֆɛռȶɦǟȶ,
+ID: ʟɴᴀᴍᴇ,
 TimeOut: 0,
 PermaTimeOut: 8000,
 });
@@ -456,7 +456,7 @@ _⚠️ 𝗨𝘀𝗶𝗻𝗴 𝗩𝗹𝗸𝘆𝗿𝗲 𝗜𝗻 𝗣𝗿𝗶𝘃�
 `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 await BanPerson.findOne(
 {
-ID: աɦօֆɛռȶɦǟȶ,
+ID: ʟɴᴀᴍᴇ,
 },
 async (e, BanPerson) => {
 if (e) return ꜰᴜᴄᴋ.catch(e, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
@@ -540,7 +540,7 @@ return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
 `🚔 *Auto User Monitoring Has Started For @${ᴘɴᴀᴍᴇ} !*\n_💡Try Again in 8seconds!_`,
 MessageType.text,
 {
-contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
+contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
 }
 );
 }
@@ -558,7 +558,7 @@ return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
 `✘ @${ᴘɴᴀᴍᴇ}, *Wait For [${Time.seconds}/8]seconds!*`,
 MessageType.text,
 {
-contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
+contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
 }
 );
 }
@@ -599,12 +599,24 @@ if (
 !ᴠʟᴋʏʀᴇ.body.includes(ᴋᴇɪ + "request")
 )
 if (
-!member1.includes(աɦօֆɛռȶɦǟȶ) &&
-!member2.includes(աɦօֆɛռȶɦǟȶ) &&
-!member3.includes(աɦօֆɛռȶɦǟȶ)
+!member1.includes(ʟɴᴀᴍᴇ) &&
+!member2.includes(ʟɴᴀᴍᴇ) &&
+!member3.includes(ʟɴᴀᴍᴇ)
 ) {
 const buttonMessage = {
-contentText: `🤖𝐕𝐞𝐫𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧: *@${ᴘɴᴀᴍᴇ}, You Are Not Verified!*`,
+contentText: `🤖𝐕𝐞𝐫𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧: *@${ᴘɴᴀᴍᴇ}, You Are Not Verified!*
+
+╔◇ 𝐖𝐡𝐲 𝐓𝐨 𝐁𝐞 𝐕𝐞𝐫𝐢𝐟𝐢𝐞𝐝?
+║
+║📌 _Monitor Bugs!_
+║📌 _Monitor Anti-Spams!_
+║📌 _Monitor Anti-Links!_
+║📌 _Monitor Anti-NSFW!_
+║📌 _Monitor Anti-Virtex!_
+║📌 _Monitor Group Ranks!_
+║📌 _Monitor Performance!_
+║📌 _Use Vlkyre-Premium Anywhere!_
+╚════════════╝`,
 footerText: `⌜Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ${vers.vers}⌟\n❝ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™❞`,
 buttons: [
 {
@@ -622,7 +634,7 @@ buttonMessage,
 MessageType.buttonsMessage,
 {
 quoted: chat,
-contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
+contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
 }
 )
 .catch((e) =>

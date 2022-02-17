@@ -67,8 +67,8 @@ async handle(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, chat, ᴠʟᴋʏʀᴇ, Needs,
 try {
 const defaultnm = ᴠʟᴋʏʀᴇ.commandName;
 const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
-var աɦօֆɛռȶɦǟȶ = ᴠʟᴋʏʀᴇ.sender;
-const ᴘɴᴀᴍᴇ = աɦօֆɛռȶɦǟȶ.split("@")[0].replace(/[+ ]/g, "");
+var ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
+const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/[+ ]/g, "");
 const MoneyRandom = Math.floor(Math.random() * (2000 - 1500 + 1)) + 1500;
 const MoneyLaptop = Math.floor(Math.random() * (4000 - 3000 + 1)) + 3000;
 const MoneyCharm = Math.floor(Math.random() * (6000 - 5000 + 1)) + 5000;
@@ -94,7 +94,7 @@ if (ᴠʟᴋʏʀᴇ.isReply) {
 var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
 var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
 `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-if (Receiver === աɦօֆɛռȶɦǟȶ) {
+if (Receiver === ʟɴᴀᴍᴇ) {
 return ᴠʟᴋʏʀᴇ_Buttons.MTB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
@@ -111,7 +111,7 @@ chat,
 `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 Economy.findOne(
 {
-ID: աɦօֆɛռȶɦǟȶ,
+ID: ʟɴᴀᴍᴇ,
 },
 async (e, cEconomy) => {
 if (e) return ꜰᴜᴄᴋ.catch(e, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
@@ -156,7 +156,7 @@ chat,
 `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 } else if (!cEconomy) {
 var newUser = new Economy({
-ID: աɦօֆɛռȶɦǟȶ,
+ID: ʟɴᴀᴍᴇ,
 money: 0,
 daily: 0,
 timeout: 86400000,
@@ -228,7 +228,7 @@ chat,
 } else {
 Robbery.findOne(
 {
-ID: աɦօֆɛռȶɦǟȶ,
+ID: ʟɴᴀᴍᴇ,
 },
 async (e, culprit) => {
 if (e) return ꜰᴜᴄᴋ.catch(e, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
@@ -277,7 +277,7 @@ chat,
 `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 } else if (!culprit) {
 var newUser = new Robbery({
-ID: աɦօֆɛռȶɦǟȶ,
+ID: ʟɴᴀᴍᴇ,
 sword: 0,
 laptop: 0,
 charm: 0,
@@ -590,7 +590,7 @@ var TagPerson = Needs[0].replace(/[^0-9]/g, "");
 var TagMention = TagPerson + "@s.whatsapp.net";
 Economy.findOne(
 {
-ID: աɦօֆɛռȶɦǟȶ,
+ID: ʟɴᴀᴍᴇ,
 },
 async (e, cEconomy) => {
 if (e) return ꜰᴜᴄᴋ.catch(e, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
@@ -655,14 +655,14 @@ imageMessage: media.message.imageMessage,
 MessageType.buttonsMessage,
 {
 quoted: chat,
-contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ, TagMention] },
+contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ, TagMention] },
 }
 )
 .catch((e) => ꜰᴜᴄᴋ.catch(e, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
 `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 } else if (!cEconomy) {
 var newUser = new Economy({
-ID: աɦօֆɛռȶɦǟȶ,
+ID: ʟɴᴀᴍᴇ,
 money: 0,
 daily: 0,
 timeout: 86400000,
@@ -715,7 +715,7 @@ imageMessage: media.message.imageMessage,
 MessageType.buttonsMessage,
 {
 quoted: chat,
-contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
+contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
 }
 )
 .catch((e) => ꜰᴜᴄᴋ.catch(e, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
@@ -780,7 +780,7 @@ imageMessage: media.message.imageMessage,
 MessageType.buttonsMessage,
 {
 quoted: chat,
-contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ, TagMention] },
+contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ, TagMention] },
 }
 )
 .catch((e) => ꜰᴜᴄᴋ.catch(e, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
@@ -788,7 +788,7 @@ contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ, TagMention] },
 } else {
 Robbery.findOne(
 {
-ID: աɦօֆɛռȶɦǟȶ,
+ID: ʟɴᴀᴍᴇ,
 },
 async (e, culprit) => {
 if (e) return ꜰᴜᴄᴋ.catch(e, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
@@ -858,7 +858,7 @@ MessageType.buttonsMessage,
 {
 quoted: chat,
 contextInfo: {
-mentionedJid: [աɦօֆɛռȶɦǟȶ, TagMention],
+mentionedJid: [ʟɴᴀᴍᴇ, TagMention],
 },
 }
 )
@@ -868,7 +868,7 @@ mentionedJid: [աɦօֆɛռȶɦǟȶ, TagMention],
 `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 } else if (!culprit) {
 var newUser = new Robbery({
-ID: աɦօֆɛռȶɦǟȶ,
+ID: ʟɴᴀᴍᴇ,
 sword: 0,
 laptop: 0,
 charm: 0,
@@ -926,7 +926,7 @@ MessageType.buttonsMessage,
 {
 quoted: chat,
 contextInfo: {
-mentionedJid: [աɦօֆɛռȶɦǟȶ, TagMention],
+mentionedJid: [ʟɴᴀᴍᴇ, TagMention],
 },
 }
 )
@@ -1035,7 +1035,7 @@ MessageType.buttonsMessage,
 {
 quoted: chat,
 contextInfo: {
-mentionedJid: [աɦօֆɛռȶɦǟȶ, TagMention],
+mentionedJid: [ʟɴᴀᴍᴇ, TagMention],
 },
 }
 )
@@ -1116,7 +1116,7 @@ MessageType.buttonsMessage,
 {
 quoted: chat,
 contextInfo: {
-mentionedJid: [աɦօֆɛռȶɦǟȶ, TagMention],
+mentionedJid: [ʟɴᴀᴍᴇ, TagMention],
 },
 }
 )
@@ -1197,7 +1197,7 @@ MessageType.buttonsMessage,
 {
 quoted: chat,
 contextInfo: {
-mentionedJid: [աɦօֆɛռȶɦǟȶ, TagMention],
+mentionedJid: [ʟɴᴀᴍᴇ, TagMention],
 },
 }
 )
@@ -1279,7 +1279,7 @@ MessageType.buttonsMessage,
 {
 quoted: chat,
 contextInfo: {
-mentionedJid: [աɦօֆɛռȶɦǟȶ, TagMention],
+mentionedJid: [ʟɴᴀᴍᴇ, TagMention],
 },
 }
 )
@@ -1356,7 +1356,7 @@ MessageType.buttonsMessage,
 {
 quoted: chat,
 contextInfo: {
-mentionedJid: [աɦօֆɛռȶɦǟȶ, TagMention],
+mentionedJid: [ʟɴᴀᴍᴇ, TagMention],
 },
 }
 )
@@ -1383,7 +1383,7 @@ return ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 ᴠʟᴋʏʀᴇ,
-աɦօֆɛռȶɦǟȶ,
+ʟɴᴀᴍᴇ,
 ᴘɴᴀᴍᴇ,
 ᴠʟᴋʏʀᴇ.commandName,
 ᴍɪᴢᴜᴋɪᴍᴏʀᴇ

@@ -23,9 +23,9 @@
 // ᴠʟᴋʏʀᴇӄǟɨʐօ: `${ᴋᴇɪ}antinsfw _on/off_`,
 // async handle(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, chat, ᴠʟᴋʏʀᴇ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
 // try {
-// var աɦօֆɛռȶɦǟȶ = ᴠʟᴋʏʀᴇ.sender;
+// var ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
 // const defaultnm = ᴠʟᴋʏʀᴇ.commandName;
-// var ᴘɴᴀᴍᴇ = աɦօֆɛռȶɦǟȶ.substring(0, աɦօֆɛռȶɦǟȶ.length - 15);
+// var ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.substring(0, ʟɴᴀᴍᴇ.length - 15);
 // const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
 // `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 // if (!ᴠʟᴋʏʀᴇ.isGroup) {
@@ -75,7 +75,7 @@
 // ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 // chat,
 // ᴠʟᴋʏʀᴇ,
-// աɦօֆɛռȶɦǟȶ,
+// ʟɴᴀᴍᴇ,
 // ᴘɴᴀᴍᴇ,
 // ᴠʟᴋʏʀᴇ.commandName,
 // ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
@@ -134,7 +134,7 @@
 // MessageType.buttonsMessage,
 // {
 // quoted: chat,
-// contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
+// contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
 // }
 // )
 // .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
@@ -176,7 +176,7 @@
 // MessageType.buttonsMessage,
 // {
 // quoted: chat,
-// contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
+// contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
 // }
 // )
 // .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
@@ -230,7 +230,7 @@
 // MessageType.buttonsMessage,
 // {
 // quoted: chat,
-// contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
+// contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
 // }
 // )
 // .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
@@ -275,7 +275,7 @@
 // MessageType.buttonsMessage,
 // {
 // quoted: chat,
-// contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
+// contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
 // }
 // )
 // .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));

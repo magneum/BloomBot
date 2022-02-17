@@ -26,8 +26,8 @@ module.exports = {
 name: newScpt,
 async handle(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, chat, ᴠʟᴋʏʀᴇ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
 try {
-var աɦօֆɛռȶɦǟȶ = ᴠʟᴋʏʀᴇ.sender;
-const ᴘɴᴀᴍᴇ = աɦօֆɛռȶɦǟȶ.split("@")[0].replace(/[+ ]/g, "");
+var ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
+const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/[+ ]/g, "");
 const defaultnm = ᴠʟᴋʏʀᴇ.commandName;
 const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
 `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
@@ -51,13 +51,13 @@ let BasePoke = PokeList[Math.floor(Math.random() * PokeList.length)];
 let Worth = Math.ceil(Math.random() * 500);
 Pokemon.findOne(
 {
-ID: աɦօֆɛռȶɦǟȶ,
+ID: ʟɴᴀᴍᴇ,
 },
 async (e, userHunt) => {
 if (e) return ꜰᴜᴄᴋ.catch(e, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
 if (!userHunt) {
 var newPokeUser = new Pokemon({
-ID: աɦօֆɛռȶɦǟȶ,
+ID: ʟɴᴀᴍᴇ,
 CurrentLimitTime: 0,
 PermanentLimitTime: 21600000,
 });
@@ -81,13 +81,13 @@ chat,
 `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 Economy.findOne(
 {
-ID: աɦօֆɛռȶɦǟȶ,
+ID: ʟɴᴀᴍᴇ,
 },
 async (e, userEco) => {
 if (e) return ꜰᴜᴄᴋ.catch(e, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
 if (!userEco) {
 var newUser = new Economy({
-ID: աɦօֆɛռȶɦǟȶ,
+ID: ʟɴᴀᴍᴇ,
 money: 0,
 daily: 0,
 timeout: 86400000,
@@ -217,7 +217,7 @@ imageMessage: media.message.imageMessage,
 MessageType.buttonsMessage,
 {
 quoted: chat,
-contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
+contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
 }
 )
 .catch((e) => ꜰᴜᴄᴋ.catch(e, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));

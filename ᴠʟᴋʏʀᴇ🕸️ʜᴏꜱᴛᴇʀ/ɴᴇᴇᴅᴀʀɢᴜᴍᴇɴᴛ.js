@@ -14,7 +14,7 @@ exports.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ = async (
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 ᴠʟᴋʏʀᴇ,
-աɦօֆɛռȶɦǟȶ,
+ʟɴᴀᴍᴇ,
 ᴘɴᴀᴍᴇ,
 commandName,
 needs
@@ -27,7 +27,7 @@ ${needs === undefined ? `null` : needs}`,
 MessageType.text,
 {
 quoted: chat,
-contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
+contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
 }
 );
 return ᴠʟᴋʏʀᴇ_Buttons.MTB(
