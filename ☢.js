@@ -26,17 +26,12 @@ const ɢɪᴛ = require(`simple-git`)();
 await ɢɪᴛ.fetch();
 var ꜰᴇᴛᴄʜᴇᴅ = await ɢɪᴛ.log([`KryTek..origin/KryTek`]);
 if (ꜰᴇᴛᴄʜᴇᴅ.total != 0) {
-require(`simple-git`)()
-.pull(async (e, update) => {
+require(`simple-git`)().pull(async (e, update) => {
 if (e) {
-console.log(
-`❌ 𝐄𝐫𝐫𝐨𝐫⬰ Merge Resulted with Total-Conflicts: ` + e
-);
+require(`child_process`).exec("git config pull.rebase false");
 }
 if (update && update.summary.changes) {
-var childs = require(`child_process`).exec(
-`python B͓̽o͓̽o͓̽t͓̽L͓̽o͓̽a͓̽d͓̽e͓̽r͓̽i.py`
-);
+var childs = require(`child_process`).exec(`python B͓̽o͓̽o͓̽t͓̽L͓̽o͓̽a͓̽d͓̽e͓̽r͓̽i.py`);
 childs.stdout.pipe(process.stdout);
 childs.on(`exit`, async function () {
 process.exitCode = 1;
@@ -45,11 +40,10 @@ process.exitCode = 1;
 });
 }
 console.log(`
-╔◇║ ⌜Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞〨⌟\n❝ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™❞
+╔◇║ ⌜Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬⌟\n❝ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™❞
 ║
 ║💡 𝐈𝐧𝐟𝐨⬰ Auto-Updating ᴠʟᴋʏʀᴇ System With Latest Patch...!
-╚════════════༻꧂`
-);
+╚════════════༻꧂`);
 } catch (e) {
 console.log(e);
 console.log(`❌ 𝐄𝐫𝐫𝐨𝐫⬰ Please Re-Deploy!`);
