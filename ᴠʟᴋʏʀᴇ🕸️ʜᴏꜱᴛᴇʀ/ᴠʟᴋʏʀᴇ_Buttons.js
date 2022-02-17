@@ -24,9 +24,7 @@ const ᴠʟᴋʏʀᴇ_Text_But = async (ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ch
 try {
 if (ᴠʟᴋʏʀᴇ.isReply) {
 var աɦօֆɛռȶɦǟȶ = ᴠʟᴋʏʀᴇ.sender;
-var ᴘɴᴀᴍᴇ = աɦօֆɛռȶɦǟȶ
-.substring(0, աɦօֆɛռȶɦǟȶ.length - 15)
-.replace(/[+ ]/g, "");
+const ᴘɴᴀᴍᴇ = աɦօֆɛռȶɦǟȶ.split("@")[0].replace(/[+ ]/g, "");
 var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
 var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
 const buttonMessage = {
@@ -54,9 +52,7 @@ contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ, Receiver] },
 .catch((e) => ꜰᴜᴄᴋ.catch(e, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
 } else {
 var աɦօֆɛռȶɦǟȶ = ᴠʟᴋʏʀᴇ.sender;
-var ᴘɴᴀᴍᴇ = աɦօֆɛռȶɦǟȶ
-.substring(0, աɦօֆɛռȶɦǟȶ.length - 15)
-.replace(/[+ ]/g, "");
+const ᴘɴᴀᴍᴇ = աɦօֆɛռȶɦǟȶ.split("@")[0].replace(/[+ ]/g, "");
 const defaultnm = ᴠʟᴋʏʀᴇ.commandName;
 const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
 const buttonMessage = {
@@ -98,9 +94,7 @@ MediaUrl
 try {
 if (ᴠʟᴋʏʀᴇ.isReply) {
 var աɦօֆɛռȶɦǟȶ = ᴠʟᴋʏʀᴇ.sender;
-var ᴘɴᴀᴍᴇ = աɦօֆɛռȶɦǟȶ
-.substring(0, աɦօֆɛռȶɦǟȶ.length - 15)
-.replace(/[+ ]/g, "");
+const ᴘɴᴀᴍᴇ = աɦօֆɛռȶɦǟȶ.split("@")[0].replace(/[+ ]/g, "");
 var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
 var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
 const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
@@ -139,9 +133,7 @@ contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ, Receiver] },
 .catch((e) => ꜰᴜᴄᴋ.catch(e, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
 } else {
 var աɦօֆɛռȶɦǟȶ = ᴠʟᴋʏʀᴇ.sender;
-var ᴘɴᴀᴍᴇ = աɦօֆɛռȶɦǟȶ
-.substring(0, աɦօֆɛռȶɦǟȶ.length - 15)
-.replace(/[+ ]/g, "");
+const ᴘɴᴀᴍᴇ = աɦօֆɛռȶɦǟȶ.split("@")[0].replace(/[+ ]/g, "");
 const defaultnm = ᴠʟᴋʏʀᴇ.commandName;
 const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
 const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
@@ -194,9 +186,7 @@ MediaUrl
 try {
 if (ᴠʟᴋʏʀᴇ.isReply) {
 var աɦօֆɛռȶɦǟȶ = ᴠʟᴋʏʀᴇ.sender;
-var ᴘɴᴀᴍᴇ = աɦօֆɛռȶɦǟȶ
-.substring(0, աɦօֆɛռȶɦǟȶ.length - 15)
-.replace(/[+ ]/g, "");
+const ᴘɴᴀᴍᴇ = աɦօֆɛռȶɦǟȶ.split("@")[0].replace(/[+ ]/g, "");
 var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
 var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
 const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
@@ -235,9 +225,7 @@ contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
 .catch((e) => ꜰᴜᴄᴋ.catch(e, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
 } else {
 var աɦօֆɛռȶɦǟȶ = ᴠʟᴋʏʀᴇ.sender;
-var ᴘɴᴀᴍᴇ = աɦօֆɛռȶɦǟȶ
-.substring(0, աɦօֆɛռȶɦǟȶ.length - 15)
-.replace(/[+ ]/g, "");
+const ᴘɴᴀᴍᴇ = աɦօֆɛռȶɦǟȶ.split("@")[0].replace(/[+ ]/g, "");
 const defaultnm = ᴠʟᴋʏʀᴇ.commandName;
 const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
 const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
@@ -284,9 +272,7 @@ const ᴠʟᴋʏʀᴇ_GIF_But = async (ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, cha
 try {
 if (ᴠʟᴋʏʀᴇ.isReply) {
 var աɦօֆɛռȶɦǟȶ = ᴠʟᴋʏʀᴇ.sender;
-var ᴘɴᴀᴍᴇ = աɦօֆɛռȶɦǟȶ
-.substring(0, աɦօֆɛռȶɦǟȶ.length - 15)
-.replace(/[+ ]/g, "");
+const ᴘɴᴀᴍᴇ = աɦօֆɛռȶɦǟȶ.split("@")[0].replace(/[+ ]/g, "");
 var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
 var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
 const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
@@ -325,9 +311,7 @@ contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ, Receiver] },
 .catch((e) => ꜰᴜᴄᴋ.catch(e, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
 } else {
 var աɦօֆɛռȶɦǟȶ = ᴠʟᴋʏʀᴇ.sender;
-var ᴘɴᴀᴍᴇ = աɦօֆɛռȶɦǟȶ
-.substring(0, աɦօֆɛռȶɦǟȶ.length - 15)
-.replace(/[+ ]/g, "");
+const ᴘɴᴀᴍᴇ = աɦօֆɛռȶɦǟȶ.split("@")[0].replace(/[+ ]/g, "");
 const defaultnm = ᴠʟᴋʏʀᴇ.commandName;
 const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
 const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
@@ -380,16 +364,12 @@ MediaUrl
 try {
 if (ᴠʟᴋʏʀᴇ.isReply) {
 var աɦօֆɛռȶɦǟȶ = ᴠʟᴋʏʀᴇ.sender;
-var ᴘɴᴀᴍᴇ = աɦօֆɛռȶɦǟȶ
-.substring(0, աɦօֆɛռȶɦǟȶ.length - 15)
-.replace(/[+ ]/g, "");
+const ᴘɴᴀᴍᴇ = աɦօֆɛռȶɦǟȶ.split("@")[0].replace(/[+ ]/g, "");
 var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
 var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
 } else {
 var աɦօֆɛռȶɦǟȶ = ᴠʟᴋʏʀᴇ.sender;
-var ᴘɴᴀᴍᴇ = աɦօֆɛռȶɦǟȶ
-.substring(0, աɦօֆɛռȶɦǟȶ.length - 15)
-.replace(/[+ ]/g, "");
+const ᴘɴᴀᴍᴇ = աɦօֆɛռȶɦǟȶ.split("@")[0].replace(/[+ ]/g, "");
 const defaultnm = ᴠʟᴋʏʀᴇ.commandName;
 const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
 }
@@ -439,16 +419,12 @@ MediaUrl
 try {
 if (ᴠʟᴋʏʀᴇ.isReply) {
 var աɦօֆɛռȶɦǟȶ = ᴠʟᴋʏʀᴇ.sender;
-var ᴘɴᴀᴍᴇ = աɦօֆɛռȶɦǟȶ
-.substring(0, աɦօֆɛռȶɦǟȶ.length - 15)
-.replace(/[+ ]/g, "");
+const ᴘɴᴀᴍᴇ = աɦօֆɛռȶɦǟȶ.split("@")[0].replace(/[+ ]/g, "");
 var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
 var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
 } else {
 var աɦօֆɛռȶɦǟȶ = ᴠʟᴋʏʀᴇ.sender;
-var ᴘɴᴀᴍᴇ = աɦօֆɛռȶɦǟȶ
-.substring(0, աɦօֆɛռȶɦǟȶ.length - 15)
-.replace(/[+ ]/g, "");
+const ᴘɴᴀᴍᴇ = աɦօֆɛռȶɦǟȶ.split("@")[0].replace(/[+ ]/g, "");
 const defaultnm = ᴠʟᴋʏʀᴇ.commandName;
 const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
 }

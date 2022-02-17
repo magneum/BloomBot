@@ -26,10 +26,8 @@ name: newScpt,
 async handle(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, chat, ᴠʟᴋʏʀᴇ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
 try {
 var աɦօֆɛռȶɦǟȶ = ᴠʟᴋʏʀᴇ.sender;
-var ᴘɴᴀᴍᴇ = աɦօֆɛռȶɦǟȶ
-.substring(0, աɦօֆɛռȶɦǟȶ.length - 15)
-.replace(/[+ ]/g, "");
 const defaultnm = ᴠʟᴋʏʀᴇ.commandName;
+const ᴘɴᴀᴍᴇ = աɦօֆɛռȶɦǟȶ.split("@")[0].replace(/[+ ]/g, "");
 var FFmpegFile = `./ᴠʟᴋʏʀᴇ🀄ᴇxʜᴀᴜꜱᴛ/${Date.now()}${chat.key.id}.mp3`;
 var FilteredAudio = `./ᴠʟᴋʏʀᴇ🀄ᴇxʜᴀᴜꜱᴛ/${Date.now()}f${chat.key.id}.mp3`;
 const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);

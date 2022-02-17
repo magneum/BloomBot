@@ -68,9 +68,7 @@ try {
 const defaultnm = ᴠʟᴋʏʀᴇ.commandName;
 const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
 var աɦօֆɛռȶɦǟȶ = ᴠʟᴋʏʀᴇ.sender;
-var ᴘɴᴀᴍᴇ = աɦօֆɛռȶɦǟȶ
-.substring(0, աɦօֆɛռȶɦǟȶ.length - 15)
-.replace(/[+ ]/g, "");
+const ᴘɴᴀᴍᴇ = աɦօֆɛռȶɦǟȶ.split("@")[0].replace(/[+ ]/g, "");
 const MoneyRandom = Math.floor(Math.random() * (2000 - 1500 + 1)) + 1500;
 const MoneyLaptop = Math.floor(Math.random() * (4000 - 3000 + 1)) + 3000;
 const MoneyCharm = Math.floor(Math.random() * (6000 - 5000 + 1)) + 5000;

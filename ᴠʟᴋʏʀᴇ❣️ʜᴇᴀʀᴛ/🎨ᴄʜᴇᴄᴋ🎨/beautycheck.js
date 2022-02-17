@@ -26,14 +26,10 @@ if (ᴠʟᴋʏʀᴇ.isReply) {
 var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
 var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
 var աɦօֆɛռȶɦǟȶ = ᴠʟᴋʏʀᴇ.sender;
-var ᴘɴᴀᴍᴇ = աɦօֆɛռȶɦǟȶ
-.substring(0, աɦօֆɛռȶɦǟȶ.length - 15)
-.replace(/[+ ]/g, "");
+const ᴘɴᴀᴍᴇ = աɦօֆɛռȶɦǟȶ.split("@")[0].replace(/[+ ]/g, "");
 } else {
 var աɦօֆɛռȶɦǟȶ = ᴠʟᴋʏʀᴇ.sender;
-var ᴘɴᴀᴍᴇ = աɦօֆɛռȶɦǟȶ
-.substring(0, աɦօֆɛռȶɦǟȶ.length - 15)
-.replace(/[+ ]/g, "");
+const ᴘɴᴀᴍᴇ = աɦօֆɛռȶɦǟȶ.split("@")[0].replace(/[+ ]/g, "");
 }
 const defaultnm = ᴠʟᴋʏʀᴇ.commandName;
 const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);

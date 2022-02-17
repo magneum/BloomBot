@@ -22,14 +22,13 @@ var newScpt = scriptName.slice(0, -3).toLowerCase();
 module.exports = {
 name: newScpt,
 ᴠʟᴋʏʀᴇӄǟɨʐօ: `*Reply Media With:* _${ᴋᴇɪ}${newScpt}_
-*Supported Media Types:* _Image/Video/Gif/Mp4/Jpeg/Png_`,
+
+*Supported Media Types:* Image/Video/Gif/Mp4/Jpeg/Png`,
 async handle(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, chat, ᴠʟᴋʏʀᴇ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
 try {
 var աɦօֆɛռȶɦǟȶ = ᴠʟᴋʏʀᴇ.sender;
-var ᴘɴᴀᴍᴇ = աɦօֆɛռȶɦǟȶ
-.substring(0, աɦօֆɛռȶɦǟȶ.length - 15)
-.replace(/[+ ]/g, "");
 const defaultnm = ᴠʟᴋʏʀᴇ.commandName;
+const ᴘɴᴀᴍᴇ = աɦօֆɛռȶɦǟȶ.split("@")[0].replace(/[+ ]/g, "");
 const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
 `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 const Bagde = require(`../../ᴠʟᴋʏʀᴇ🥠ᴘᴏʀᴛ/badge`);
