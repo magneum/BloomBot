@@ -22,18 +22,19 @@ name: newScpt,
 async handle(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, chat, ᴠʟᴋʏʀᴇ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
 `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 try {
-let ᴘɴᴀᴍᴇ;
-if (ᴠʟᴋʏʀᴇ.isReply) {
-var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
-var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
-var ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
-ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/[+ ]/g, "");
-} else {
-var ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
-ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/[+ ]/g, "");
-}
-const defaultnm = ᴠʟᴋʏʀᴇ.commandName;
-const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
+    let ᴘɴᴀᴍᴇ;
+    var ʟɴᴀᴍᴇ;
+    if (ᴠʟᴋʏʀᴇ.isReply) {
+    var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
+    var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
+    ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
+    ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/[+ ]/g, "");
+    } else {
+    ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
+    ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/[+ ]/g, "");
+    }
+    const defaultnm = ᴠʟᴋʏʀᴇ.commandName;
+    const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
 `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
 const key = _𝔏𝔞𝔟_.TEN;
 const cue = "gay";
