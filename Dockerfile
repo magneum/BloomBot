@@ -24,7 +24,6 @@ RUN n install 16
 RUN hash -r 
 RUN git clone https://github.com/KryKnz/Vlkyre.git 
 RUN cd Vlkyre
-RUN git init --initial-branch=KryTek
 # RUN git remote add origin https://github.com/KryKnz/Vlkyre.git
 # RUN git fetch origin KryTek
 # RUN git reset --hard origin/KryTek
