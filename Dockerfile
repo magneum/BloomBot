@@ -33,7 +33,7 @@ RUN cd Vlkyre
 # RUN git fetch origin KryTek
 # RUN git reset --hard origin/KryTek
 WORKDIR /Vlkyre
-RUN pip install -r кгץкภչ.txt
+RUN pip install -r ᴠʟᴋʏʀᴇ🀄ᴇxʜᴀᴜꜱᴛ/кгץкภչ.txt
 RUN npm install --force
 # WORKDIR /
 # COPY . /Vlkyre
