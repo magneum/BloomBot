@@ -283,7 +283,7 @@ const MemNum = update.participants[0];
 if (update.action == `add` && MemNum.includes(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.user.jid)) {
 const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
 GroupID,
-{ url: "./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_dever.png" },
+{ url: "./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_Univ.png" },
 MessageType.image,
 { mimetype: Mimetype.png }
 );
