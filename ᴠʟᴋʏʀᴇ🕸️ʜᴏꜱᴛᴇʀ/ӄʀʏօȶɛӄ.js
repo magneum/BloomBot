@@ -118,9 +118,7 @@ messageInstance.message.extendedTextMessage.contextInfo.quotedMessage
 : ``;
 ᴠʟᴋʏʀᴇ.groupName = ᴠʟᴋʏʀᴇ.isGroup ? groupMetadata.subject : ``;
 ᴠʟᴋʏʀᴇ.groupMembers = ᴠʟᴋʏʀᴇ.isGroup ? groupMetadata.participants : ``;
-ᴠʟᴋʏʀᴇ.groupAdmins = ᴠʟᴋʏʀᴇ.isGroup
-? getGroupAdmins(ᴠʟᴋʏʀᴇ.groupMembers)
-: ``;
+ᴠʟᴋʏʀᴇ.groupAdmins = ᴠʟᴋʏʀᴇ.isGroup ? fetchGad(ᴠʟᴋʏʀᴇ.groupMembers) : ``;
 ᴠʟᴋʏʀᴇ.groupId = ᴠʟᴋʏʀᴇ.isGroup ? groupMetadata.id : ``;
 ᴠʟᴋʏʀᴇ.isSenderDev = DEVstring.includes(
 ᴠʟᴋʏʀᴇ.sender.substring(0, ᴠʟᴋʏʀᴇ.sender.indexOf(`@`))
@@ -132,7 +130,7 @@ messageInstance.message.extendedTextMessage.contextInfo.quotedMessage
 ? ᴠʟᴋʏʀᴇ.groupAdmins.includes(ᴠʟᴋʏʀᴇ.sender)
 : false;
 return ᴠʟᴋʏʀᴇ;
-function getGroupAdmins(participants) {
+function fetchGad(participants) {
 var admins = [];
 for (var i in participants) {
 participants[i].isAdmin ? admins.push(participants[i].jid) : ``;

