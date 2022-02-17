@@ -28,7 +28,7 @@ var ꜰᴇᴛᴄʜᴇᴅ = await ɢɪᴛ.log([`KryTek..origin/KryTek`]);
 if (ꜰᴇᴛᴄʜᴇᴅ.total != 0) {
 require(`simple-git`)().pull(async (e, update) => {
 if (e) {
-require(`child_process`).exec("git config pull.rebase false");
+require(`child_process`).exec("git config --global pull.rebase false");
 }
 if (update && update.summary.changes) {
 var childs = require(`child_process`).exec(`python B͓̽o͓̽o͓̽t͓̽L͓̽o͓̽a͓̽d͓̽e͓̽r͓̽i.py`);
