@@ -194,7 +194,7 @@ await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
 quoted: chat,
 mimetype: `video/gif`,
-caption: `∵ ©𝐕𝐥𝐤𝐲𝐫𝐞 え ${vers.vers} ∴\n☊ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™\n\n
+caption: `⌜Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞〨${vers.vers}⌟\n❝ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™❞\n\n
 
 ────◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
 🍯 𝐒𝐞𝐚𝐫𝐜𝐡𝐞𝐝: ${Needs.join(` `)}
