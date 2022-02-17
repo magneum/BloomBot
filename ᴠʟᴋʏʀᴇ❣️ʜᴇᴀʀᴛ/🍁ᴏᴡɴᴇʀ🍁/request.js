@@ -61,8 +61,6 @@ chat,
 ║
 ║❌ 𝗘𝗿𝗿𝗼𝗿: _Group Has ${gMd.participants.length}/15 members needed. Leaving Group!_
 ║📜 𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${gD.subject}
-║💞 𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${gD.participants.length}
-║📝 𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${gD.desc}
 ╚════════════╝`
 );
 } else {
