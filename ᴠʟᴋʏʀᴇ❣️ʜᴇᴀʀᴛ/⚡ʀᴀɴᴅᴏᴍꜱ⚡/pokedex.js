@@ -27,7 +27,7 @@ async handle(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, chat, ᴠʟᴋʏʀᴇ, Needs,
 try {
 var աɦօֆɛռȶɦǟȶ = ᴠʟᴋʏʀᴇ.sender;
 const defaultnm = ᴠʟᴋʏʀᴇ.commandName;
-var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ
+var ᴘɴᴀᴍᴇ = աɦօֆɛռȶɦǟȶ
 .substring(0, աɦօֆɛռȶɦǟȶ.length - 15)
 .replace(/[+ ]/g, "");
 const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
@@ -42,7 +42,7 @@ return ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
 chat,
 ᴠʟᴋʏʀᴇ,
 աɦօֆɛռȶɦǟȶ,
-աɦօֆɛռȶɦǟȶռʊʍ,
+ᴘɴᴀᴍᴇ,
 ᴠʟᴋʏʀᴇ.commandName,
 ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
 );
@@ -65,14 +65,14 @@ try {
 exec(
 `ffmpeg -i '${
 json.sprites.animated
-}' -pix_fmt yuv420p -c:v libx264 -movflags +faststart -filter:v crop='floor(in_w/2)*2:floor(in_h/2)*2' './ᴠʟᴋʏʀᴇ🀄ᴇxʜᴀᴜꜱᴛ/${աɦօֆɛռȶɦǟȶռʊʍ.toString()}.mp4'`,
+}' -pix_fmt yuv420p -c:v libx264 -movflags +faststart -filter:v crop='floor(in_w/2)*2:floor(in_h/2)*2' './ᴠʟᴋʏʀᴇ🀄ᴇxʜᴀᴜꜱᴛ/${ᴘɴᴀᴍᴇ.toString()}.mp4'`,
 async (e) => {
 if (e) {
 ꜰᴜᴄᴋ.catch(e, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
 return;
 }
 `|⬡════════════════════════════════════════════|   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞  🛸  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛   |═══════════════════════════════════════════⬡|`;
-var PokeInfo = `꧁⧉  👋🏻𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚, *${աɦօֆɛռȶɦǟȶռʊʍ}* ⧉꧂
+var PokeInfo = `꧁⧉  👋🏻𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚, *${ᴘɴᴀᴍᴇ}* ⧉꧂
 
 
 ╔═══════🌿𝐓𝐨𝐩𝐢𝐜: ${FinalName}
@@ -112,7 +112,7 @@ await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .sendMessage(
 ᴠʟᴋʏʀᴇ.chatId,
 fs.readFileSync(
-`./ᴠʟᴋʏʀᴇ🀄ᴇxʜᴀᴜꜱᴛ/${աɦօֆɛռȶɦǟȶռʊʍ.toString()}.mp4`
+`./ᴠʟᴋʏʀᴇ🀄ᴇxʜᴀᴜꜱᴛ/${ᴘɴᴀᴍᴇ.toString()}.mp4`
 ),
 MessageType.video,
 {
@@ -126,7 +126,7 @@ contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
 )
 .then(
 cleanRF.cleanRF(
-`./ᴠʟᴋʏʀᴇ🀄ᴇxʜᴀᴜꜱᴛ/${աɦօֆɛռȶɦǟȶռʊʍ.toString()}.mp4`
+`./ᴠʟᴋʏʀᴇ🀄ᴇxʜᴀᴜꜱᴛ/${ᴘɴᴀᴍᴇ.toString()}.mp4`
 )
 )
 .catch((e) => ꜰᴜᴄᴋ.catch(e, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));

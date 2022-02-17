@@ -60,7 +60,7 @@ async handle(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, chat, ᴠʟᴋʏʀᴇ, Needs,
 try {
 var աɦօֆɛռȶɦǟȶ = ᴠʟᴋʏʀᴇ.sender;
 const defaultnm = ᴠʟᴋʏʀᴇ.commandName;
-var աɦօֆɛռȶɦǟȶռʊʍ = աɦօֆɛռȶɦǟȶ
+var ᴘɴᴀᴍᴇ = աɦօֆɛռȶɦǟȶ
 .substring(0, աɦօֆɛռȶɦǟȶ.length - 15)
 .replace(/[+ ]/g, "");
 const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
@@ -75,7 +75,7 @@ return ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
 chat,
 ᴠʟᴋʏʀᴇ,
 աɦօֆɛռȶɦǟȶ,
-աɦօֆɛռȶɦǟȶռʊʍ,
+ᴘɴᴀᴍᴇ,
 ᴠʟᴋʏʀᴇ.commandName,
 ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
 );
@@ -91,7 +91,7 @@ return ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
 chat,
 ᴠʟᴋʏʀᴇ,
 աɦօֆɛռȶɦǟȶ,
-աɦօֆɛռȶɦǟȶռʊʍ,
+ᴘɴᴀᴍᴇ,
 ᴠʟᴋʏʀᴇ.commandName,
 ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
 );
@@ -121,7 +121,7 @@ return ᴠʟᴋʏʀᴇ_Buttons.MIB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 ᴠʟᴋʏʀᴇ,
-`꧁⧉  👋🏻𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚, *${աɦօֆɛռȶɦǟȶռʊʍ}* ⧉꧂
+`꧁⧉  👋🏻𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚, *${ᴘɴᴀᴍᴇ}* ⧉꧂
 
 
 ╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_  
@@ -239,7 +239,7 @@ return ᴠʟᴋʏʀᴇ_Buttons.MTB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 ᴠʟᴋʏʀᴇ,
-`🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ}, 
+`🪶 𝐇𝐞𝐲: @${ᴘɴᴀᴍᴇ}, 
 
 ╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
 ║❌𝗘𝗿𝗿𝗼𝗿: _max 20 letters_
@@ -263,7 +263,7 @@ return ᴠʟᴋʏʀᴇ_Buttons.MIB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 ᴠʟᴋʏʀᴇ,
-`🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ}, 
+`🪶 𝐇𝐞𝐲: @${ᴘɴᴀᴍᴇ}, 
 
 ╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
 ║❌𝗘𝗿𝗿𝗼𝗿: _Wrong Theme Name_
@@ -286,7 +286,7 @@ mimetype: Mimetype.png,
 contextInfo: { mentionedJid: [աɦօֆɛռȶɦǟȶ] },
 caption: `⎿ (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 ◈𝐄𝐧𝐠𝐢𝐧𝐞: kryozen${vers.vers} ⏋\n⎿ ◈𝐃𝐚𝐭𝐞: ${Clock} ⏋\n⎿ ◈𝐏𝐢𝐧𝐠: ${Ping}ms ⏋
 
-🪶 𝐇𝐞𝐲: @${աɦօֆɛռȶɦǟȶռʊʍ},
+🪶 𝐇𝐞𝐲: @${ᴘɴᴀᴍᴇ},
 ╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
 ║🌈 𝗧𝗵𝗲𝗺𝗲: _${themeInput}_
 ║🏳️‍🌈 𝗦𝗰𝗵𝗲𝗺𝗲: _HEX/RGB/HSL_
