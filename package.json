@@ -89,6 +89,7 @@
     "dotenv": "^8.2.0",
     "download-file": "^0.1.5",
     "emoji-api": "^1.0.2",
+    "express": "^4.17.3",
     "ffmpeg-static": "^4.4.1",
     "figlet": "^1.5.0",
     "file-type": "^16.3.0",
