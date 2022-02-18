@@ -81,7 +81,7 @@ contentText: `꧁⧉  👋🏻𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚, *${ᴘɴ
 ║
 ║🍂 𝐕𝐥𝐤𝐲𝐫𝐞: Is an Advance Whatsapp User-Bot!
 ║🍂 𝐆𝐢𝐭𝐡𝐮𝐛: https://github.com/Kryknz/Vlkyre_
-║🍂 𝐀𝐝𝐝: ${ᴋᴇɪ}request _(your group link)_
+║🍂 𝐀𝐝𝐝: ${ᴋᴇɪ}request _your group link_
 ║
 ╚◇╗꧂
 ╔◇╜⧉༻ 🏮𝐑𝐮𝐥𝐞𝐬
