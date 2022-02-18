@@ -26,7 +26,14 @@ spawn("node", ["-c", file])
 await ʋʟӄʏʀɛքʊʟʟ();
 const { ᴠʟᴋʏʀᴇ } = require("./ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/𝕭𝖔𝖔𝖙☢𝕷𝖔𝖆𝖉𝖊𝖗.js");
 try {
-await ᴠʟᴋʏʀᴇ();
+await ᴠʟᴋʏʀᴇ().catch((e) => {
+console.log(e);
+var ᴠʟᴋʏ = require(`child_process`).exec(`python3 𝕭𝖔𝖔𝖙☢𝕷𝖔𝖆𝖉𝖊𝖗.py`);
+ᴠʟᴋʏ.stdout.pipe(process.stdout);
+ᴠʟᴋʏ.on(`exit`, async function () {
+process.exitCode = 1;
+});
+});
 } catch (e) {
 console.log(e);
 var ᴠʟᴋʏ = require(`child_process`).exec(`python3 𝕭𝖔𝖔𝖙☢𝕷𝖔𝖆𝖉𝖊𝖗.py`);
