@@ -170,14 +170,7 @@ try {
 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 =
 "https://i.postimg.cc/wxWL9G8F/no-profile-picture-300x216.png";
 }
-let աɦօֆɛ;
-try {
-աɦօֆɛ = ᴘɴᴀᴍᴇ
-.substring(2, ᴘɴᴀᴍᴇ.length - 6)
-.replace(/[+ ]/g, "");
-} catch {
-աɦօֆɛ = Math.floor(0001 + Math.random() * 9999);
-}
+var աɦօֆɛ = Math.floor(0001 + Math.random() * 9999);
 var expFile = `./ᴠʟᴋʏʀᴇ🀄ᴇxʜᴀᴜꜱᴛ/${Date.now()}r${chat.key.id}.png`;
 const rank = new canvacord.Rank()
 .setStatus("online")
