@@ -63,6 +63,7 @@ contentText: `
 ╔════◇🛸𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ᴋᴇɪ}${FinalName}
 ║
 ║❌ 𝗘𝗿𝗿𝗼𝗿: _Api Timeout.Try Again Later!_
+║🔌 *As You Are A Verified Member, Auto-Report Has Been Sent To Devs!*
 ╚════════════༻꧂`,
 footerText: `⌜Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞〨${vers.vers}⌟\n❝ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™❞`,
 buttons: [
