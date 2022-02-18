@@ -254,6 +254,7 @@ MessageType.text
 const MemNum = update.participants[0];
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 if (update.action == `add` && MemNum.includes(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.user.jid)) {
+if (GroupMemG > 15) {
 const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
 GroupID,
 { url: "./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_Univ.png" },
@@ -266,18 +267,19 @@ GroupID,
 contentText: `👋🏻𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚, *To Admins Of This Group: Some Of Your Members Requested Our Vlkyre HQ to Add Our Bot In This Group.Have Fun!*
 
 
-╔════◇⭕𝐅𝐨𝐫 𝐀𝐝𝐦𝐢𝐧𝐬
+╔⧉༻ ⭕𝐅𝐨𝐫 𝐀𝐝𝐦𝐢𝐧𝐬 ꧂
+║
 ║◇ *antilink:* _on/off_
 ║◇ *autorank:* _on/off_
-╚════════════༻꧂
-
-
-╔════◇🧀 𝐃𝐞𝐟𝐚𝐮𝐥𝐭 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
-║ *${ᴋᴇɪ}help:* _read all commands of Vlkyre!_
-║ *${ᴋᴇɪ}rules:* _read rules of Vlkyre!_
-║ *${ᴋᴇɪ}faq:* _read frequesntly asked questions!_
-║ *${ᴋᴇɪ}request:* _add vlkyre in your groups!_
-║ *${ᴋᴇɪ}verify:* _verify yourself to use Vlkyre!_
+║
+╚◇╗꧂
+╔◇╜⧉༻🧀 𝐃𝐞𝐟𝐚𝐮𝐥𝐭 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬! ꧂
+║
+║◇ *${ᴋᴇɪ}help:* _read all commands of Vlkyre!_
+║◇ *${ᴋᴇɪ}rules:* _read rules of Vlkyre!_
+║◇ *${ᴋᴇɪ}faq:* _read frequesntly asked questions!_
+║◇ *${ᴋᴇɪ}request:* _add vlkyre in your groups!_
+║◇ *${ᴋᴇɪ}verify:* _verify yourself to use Vlkyre!_
 ╚════════════༻꧂
 
 👇🏽𝗣𝗿𝗲𝘀𝘀 𝗯𝗲𝗹𝗼𝘄 𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗦𝘁𝗮𝗿𝘁👇🏽`,
@@ -291,11 +293,6 @@ type: 1,
 {
 buttonId: `${ᴋᴇɪ}rules`,
 buttonText: { displayText: `${ᴋᴇɪ}rules` },
-type: 1,
-},
-{
-buttonId: `${ᴋᴇɪ}faq`,
-buttonText: { displayText: `${ᴋᴇɪ}faq` },
 type: 1,
 },
 ],
@@ -313,19 +310,29 @@ if (e) console.log(e);
 if (!userWel) {
 var newServer = new Welcome({
 ID: GroupID,
-message: `👋🏻𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚 ${Timers}
-
-🛸𝐕𝐥𝐤𝐲𝐫𝐞: _ɪꜱ ᴀ ᴡʜᴀᴛꜱᴀᴘᴘ ᴍᴜʟᴛɪᴘᴜʀᴘᴏꜱᴇ-ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ ᴍᴏᴅᴇʀᴀᴛɪᴏɴ,ᴀᴜᴛᴏᴍᴀᴛɪᴏɴ ᴀɴᴅ 100+ ᴄᴏᴍᴍᴀɴᴅꜱ!_`,
+message: `👋🏻𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚`,
 });
 await newServer.save().catch((e) => console.log(e));
-} else {
-userWel.message = `👋🏻𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚 ${Timers}
-
-🛸𝐕𝐥𝐤𝐲𝐫𝐞: _ɪꜱ ᴀ ᴡʜᴀᴛꜱᴀᴘᴘ ᴍᴜʟᴛɪᴘᴜʀᴘᴏꜱᴇ-ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ ᴍᴏᴅᴇʀᴀᴛɪᴏɴ,ᴀᴜᴛᴏᴍᴀᴛɪᴏɴ ᴀɴᴅ 100+ ᴄᴏᴍᴍᴀɴᴅꜱ!_`;
-await userWel.save().catch((e) => console.log(e));
 }
+// else {
+// userWel.message = `👋🏻𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚
+
+// ╔◇╜⧉༻ 🏮𝐑𝐮𝐥𝐞𝐬
+// ║
+// ║🔖 _Do not call bot, if you do then you'll get blocked by bot._
+// ║🔖 _Do not spam bot with commands, if bot is not responding then it means either bot is off or there's internet issue at server end._
+// ║🔖 _Do not abuse/disrespect bot and its owner._
+// ║🔖 _If you see any bug/error in bot then report it to devs in the above group chats._
+// ║🔖 _If you want this bot in your group then contact devs._
+// ║🔖 _Enjoy the bot and have fun._
+// ╚════════════༻꧂`;
+// await userWel.save().catch((e) => console.log(e));
+// }
 }
 );
+} else {
+return;
+}
 }
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 if (update.action === `add` && !MemNum.includes(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.user.jid)) {
