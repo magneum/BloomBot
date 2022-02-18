@@ -62,9 +62,20 @@ contentText: `🤖𝐕𝐞𝐫𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧: *@${ᴘɴᴀ
 
 ╔◇║👇🏽𝗝𝗼𝗶𝗻 𝗔𝗻𝘆 𝐕𝐥𝐤𝐲𝐫𝐞 𝗚𝗿𝗼𝘂𝗽👇🏽
 ║
-║🍾 𝐕𝐥𝐤𝐲𝐫𝐞 𝐎𝐟𝐟𝐢𝐜𝐢𝐚𝐥 /𝟏: _${_𝔏𝔞𝔟_.HASH}_
-║🍾 𝐕𝐥𝐤𝐲𝐫𝐞 𝐎𝐟𝐟𝐢𝐜𝐢𝐚𝐥 /𝟐: _${_𝔏𝔞𝔟_.HASHS}_
-║🍾 𝐕𝐥𝐤𝐲𝐫𝐞 𝐎𝐟𝐟𝐢𝐜𝐢𝐚𝐥 /𝟑: _${_𝔏𝔞𝔟_.HASHSH}_
+║🍾 𝐕𝐥𝐤𝐲𝐫𝐞/𝟏: _${_𝔏𝔞𝔟_.HASH}_
+║🍾 𝐕𝐥𝐤𝐲𝐫𝐞/𝟐: _${_𝔏𝔞𝔟_.HASHS}_
+║🍾 𝐕𝐥𝐤𝐲𝐫𝐞/𝟑: _${_𝔏𝔞𝔟_.HASHSH}_
+╚════════════╝
+╔◇ 𝐖𝐡𝐲 𝐓𝐨 𝐁𝐞 𝐕𝐞𝐫𝐢𝐟𝐢𝐞𝐝?
+║
+║📌 _Monitor Bugs!_
+║📌 _Monitor Anti-Spams!_
+║📌 _Monitor Anti-Links!_
+║📌 _Monitor Anti-NSFW!_
+║📌 _Monitor Anti-Virtex!_
+║📌 _Monitor Group Ranks!_
+║📌 _Monitor Performance!_
+║📌 _Use Vlkyre-Premium Anywhere!_
 ╚════════════╝`,
 footerText: `⌜Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ${vers.vers}⌟\n❝ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™❞`,
 buttons: [
