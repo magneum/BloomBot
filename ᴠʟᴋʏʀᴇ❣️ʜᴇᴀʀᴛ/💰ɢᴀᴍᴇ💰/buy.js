@@ -27,9 +27,9 @@ name: newScpt,
 async handle(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, chat, ᴠʟᴋʏʀᴇ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
 try {
 const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
-var defaultnm = ᴠʟᴋʏʀᴇ.commandName;
+var ᴅꜰɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.commandName;
 const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/[+ ]/g, "");
-var FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
+var FinalName = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
 if (Needs.length > 0 && Needs[0].startsWith("@")) {
 var TagPerson = ᴠʟᴋʏʀᴇ.body.replace(
 ᴠʟᴋʏʀᴇ.body[0] + ᴠʟᴋʏʀᴇ.commandName + " ",
@@ -210,7 +210,7 @@ chat,
 
 ╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_  
 ║🧈 *Added To DB for _${newScpt}_ command First Time!*
-║🦋 _Try ${ᴋᴇɪ}${defaultnm} Again!_
+║🦋 _Try ${ᴋᴇɪ}${ᴅꜰɴᴀᴍᴇ} Again!_
 ╚════════════╝`,
 `./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_Mongo.png`
 );
