@@ -22,6 +22,7 @@ name: newScpt,
 ᴠʟᴋʏʀᴇӄǟɨʐօ: `*Reply-Person:* ${ᴋᴇɪ}${newScpt} _amount(number)_`,
 async handle(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, chat, ᴠʟᴋʏʀᴇ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
 try {
+var ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
 const defaultnm = ᴠʟᴋʏʀᴇ.commandName;
 const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/[+ ]/g, "");
 const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
@@ -111,8 +112,6 @@ if (ᴠʟᴋʏʀᴇ.isReply) {
 var Amount = parseInt(Needs.join(" "));
 var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
 var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
-var ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
-const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/[+ ]/g, "");
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 if (Receiver === ʟɴᴀᴍᴇ) {
 return ᴠʟᴋʏʀᴇ_Buttons.MTB(
