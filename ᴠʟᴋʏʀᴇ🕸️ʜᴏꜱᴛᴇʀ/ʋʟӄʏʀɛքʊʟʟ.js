@@ -8,7 +8,6 @@ const git = require("simple-git")();
 const exec = require("child_process").exec;
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 const ʋʟӄʏʀɛքʊʟʟ = async () => {
-console.log(Kolor.yellow.bold("💡 𝐈𝐧𝐟𝐨⬰ Checking for updates..."));
 await git.fetch();
 var Commits = await git.log(["KryTek..origin/KryTek"]);
 if (Commits.total) {
