@@ -8,6 +8,7 @@ const git = require("simple-git")();
 const exec = require("child_process").exec;
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 const ʋʟӄʏʀɛքʊʟʟ = async () => {
+try {
 await git.fetch();
 var Commits = await git.log(["KryTek..origin/KryTek"]);
 if (Commits.total) {
@@ -22,11 +23,16 @@ Kolor.blue(`
 await git.pull("origin", "KryTek", (e, update) => {
 if (update && update.summary.changes) {
 exec("npm install").stderr.pipe(process.stderr);
-} else if (e) {
+}
+if (e) {
 console.log(Kolor.red.bold("❌ 𝐄𝐫𝐫𝐨𝐫⬰ Please Re-Deploy!"));
 console.log(e);
 }
 });
+}
+} catch (e) {
+console.log(Kolor.red.bold("❌ 𝐄𝐫𝐫𝐨𝐫⬰ Please Re-Deploy!"));
+console.log(e);
 }
 };
 module.exports = ʋʟӄʏʀɛքʊʟʟ;
