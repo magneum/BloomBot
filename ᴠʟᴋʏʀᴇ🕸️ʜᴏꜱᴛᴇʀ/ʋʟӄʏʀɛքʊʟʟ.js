@@ -18,9 +18,6 @@ console.log(Kolor.blue(`
 ║💡 𝐈𝐧𝐟𝐨⬰ Vlkyre System Synced Latest Patch...
 ╚════════════༻꧂`));
 await git.pull("origin", "KryTek", (e, update) => {
-require(`child_process`)
-.exec("git config --global pull.rebase false")
-.stderr.pipe(process.stderr);
 if (update && update.summary.changes) {
 if (update.files.includes("package.json")) {
 exec("npm install").stderr.pipe(process.stderr);
