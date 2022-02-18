@@ -25,7 +25,7 @@ try {
 const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
 const ᴅꜰɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.commandName;
 const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/[+ ]/g, "");
-const FinalName = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
+const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 if (ᴠʟᴋʏʀᴇ.isGroup && !ᴠʟᴋʏʀᴇ.isSenderGroupAdmin && !ᴠʟᴋʏʀᴇ.isSenderDev) {
 return ᴠʟᴋʏʀᴇ_Buttons.MIB(
@@ -48,7 +48,7 @@ chat,
 
  
 
-╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
+╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
 ║❌𝐃𝐞𝐧𝐢𝐞𝐝: _How Can I Use Admin Only Commands If i am not admin?_
 ║💡 𝐅𝐢𝐱: _Make Me Admin First!_
 ╚════════════╝`,
@@ -83,7 +83,7 @@ chat,
 `꧁⧉  👋🏻𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚, *${ᴘɴᴀᴍᴇ}* ⧉꧂
 
 
-╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_  
+╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_  
 ║🧈 *Added To DB for _${newScpt}_ command First Time!*
 ║🦋 _Try ${ᴋᴇɪ}${ᴅꜰɴᴀᴍᴇ} Again!_
 ╚════════════╝`,
@@ -174,7 +174,7 @@ chat,
 `꧁⧉  👋🏻𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚, *${ᴘɴᴀᴍᴇ}* ⧉꧂
 
 
-╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
+╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
 ║👅 𝐓𝐨𝐩𝐢𝐜: ${title}
 ║📞 𝐀𝐝𝐦𝐢𝐧-𝐎𝐧𝐥𝐲: @${ᴘɴᴀᴍᴇ} 
 ╚════════════╝`,
@@ -185,7 +185,7 @@ amazeme
 const downloader = await new Downloader({
 url: amazeme,
 directory: `${__dirname}`,
-fileName: `${Ping}_${FinalName}.gif`,
+fileName: `${Ping}_${ꜰɪɴᴀᴍᴇ}.gif`,
 cloneFiles: false,
 });
 try {
@@ -198,14 +198,14 @@ await userBadge
 ꜰᴜᴄᴋ.catch(e, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
 return;
 }
-ffmpeg(`${__dirname}/${Ping}_${FinalName}.gif`)
+ffmpeg(`${__dirname}/${Ping}_${ꜰɪɴᴀᴍᴇ}.gif`)
 .outputOptions([
 `-pix_fmt yuv420p`,
 `-c:v libx264`,
 `-movflags +faststart`,
 `-filter:v crop='floor(in_w/2)*2:floor(in_h/2)*2'`,
 ])
-.save(`${__dirname}/${Ping}_${FinalName}.mp4`)
+.save(`${__dirname}/${Ping}_${ꜰɪɴᴀᴍᴇ}.mp4`)
 .on(`end`, async () => {
 return ᴠʟᴋʏʀᴇ_Static.MSB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
@@ -214,16 +214,16 @@ chat,
 `꧁⧉  👋🏻𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚, *${ᴘɴᴀᴍᴇ}* ⧉꧂
 
 
-╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
+╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
 ║👅 𝐓𝐨𝐩𝐢𝐜: ${title}
 ║📞 𝐀𝐝𝐦𝐢𝐧-𝐎𝐧𝐥𝐲: @${ᴘɴᴀᴍᴇ} 
 ╚════════════╝`,
-`${__dirname}/${Ping}_${FinalName}.mp4`
+`${__dirname}/${Ping}_${ꜰɪɴᴀᴍᴇ}.mp4`
 )
 .then(
 cleanRF.cleanRF(
-`${__dirname}/${Ping}_${FinalName}.mp4`,
-`${__dirname}/${Ping}_${FinalName}.gif`
+`${__dirname}/${Ping}_${ꜰɪɴᴀᴍᴇ}.mp4`,
+`${__dirname}/${Ping}_${ꜰɪɴᴀᴍᴇ}.gif`
 )
 )
 .catch((e) =>
@@ -238,7 +238,7 @@ chat,
 `꧁⧉  👋🏻𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚, *${ᴘɴᴀᴍᴇ}* ⧉꧂
 
 
-╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${FinalName}_
+╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
 ║👅 𝐓𝐨𝐩𝐢𝐜: ${title}
 ║📞 𝐀𝐝𝐦𝐢𝐧-𝐎𝐧𝐥𝐲: @${ᴘɴᴀᴍᴇ} 
 ╚════════════╝`,

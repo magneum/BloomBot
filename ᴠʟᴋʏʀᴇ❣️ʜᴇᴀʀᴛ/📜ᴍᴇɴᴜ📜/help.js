@@ -27,7 +27,7 @@ try {
 const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
 const ᴅꜰɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.commandName;
 const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/[+ ]/g, "");
-const FinalName = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
+const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 const used = process.memoryUsage();
 const cpus = os.cpus().map((cpu) => {
@@ -82,16 +82,6 @@ contentText: `꧁⧉  👋🏻𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚, *${ᴘɴ
 ║🍂 𝐕𝐥𝐤𝐲𝐫𝐞: Is an Advance Whatsapp User-Bot!
 ║🍂 𝐆𝐢𝐭𝐡𝐮𝐛: https://github.com/Kryknz/Vlkyre_
 ║🍂 𝐀𝐝𝐝: ${ᴋᴇɪ}request _your group link_
-║
-╚◇╗꧂
-╔◇╜⧉༻ 🏮𝐑𝐮𝐥𝐞𝐬
-║
-║🔖 _Do not call bot, if you do then you'll get blocked by bot._
-║🔖 _Do not spam bot with commands, if bot is not responding then it means either bot is off or there's internet issue at server end._
-║🔖 _Do not abuse/disrespect bot and its owner._
-║🔖 _If you see any bug/error in bot then report it to devs in the above group chats._
-║🔖 _If you want this bot in your group then contact devs._
-║🔖 _Enjoy the bot and have fun._
 ║
 ╚◇╗꧂
 ╔◇╜⧉༻ 👇🏽𝐒𝐲𝐦𝐥𝐢𝐧𝐤👇🏽꧂
