@@ -10,16 +10,14 @@ const exec = require("child_process").exec;
 const ʋʟӄʏʀɛքʊʟʟ = async () => {
 console.log(Kolor.yellow.bold("💡 𝐈𝐧𝐟𝐨⬰ Checking for updates..."));
 await git.fetch();
-var newCommits = await git.log(["KryTek..origin/KryTek"]);
-if (newCommits.total) {
-console.log(
-Kolor.blue(`
+var Commits = await git.log(["KryTek..origin/KryTek"]);
+if (Commits.total) {
+console.log(Kolor.blue(`
 ╔◇║ ⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟
 ║
 ║💡 𝐈𝐧𝐟𝐨⬰ New Update pending, updating...
-║💡 𝐈𝐧𝐟𝐨⬰ Vlkyre System Synced Latest Patch...!
-╚════════════༻꧂`)
-);
+║💡 𝐈𝐧𝐟𝐨⬰ Vlkyre System Synced Latest Patch...
+╚════════════༻꧂`));
 await git.pull("origin", "KryTek", (e, update) => {
 require(`child_process`)
 .exec("git config --global pull.rebase false")

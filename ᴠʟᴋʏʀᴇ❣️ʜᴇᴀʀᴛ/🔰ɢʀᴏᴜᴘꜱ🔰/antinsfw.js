@@ -23,7 +23,7 @@
 // ᴠʟᴋʏʀᴇӄǟɨʐօ: `${ᴋᴇɪ}antinsfw _on/off_`,
 // async handle(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, chat, ᴠʟᴋʏʀᴇ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
 // try {
-// var ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
+// const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
 // const defaultnm = ᴠʟᴋʏʀᴇ.commandName;
 // var ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.substring(0, ʟɴᴀᴍᴇ.length - 15);
 // const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
