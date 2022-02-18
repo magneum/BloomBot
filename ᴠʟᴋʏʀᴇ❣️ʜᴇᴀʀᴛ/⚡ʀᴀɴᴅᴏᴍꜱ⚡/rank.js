@@ -35,7 +35,7 @@ module.exports = {
 name: newScpt,
 async handle(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, chat, ᴠʟᴋʏʀᴇ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
 try {
-var ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
+const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
 const defaultnm = ᴠʟᴋʏʀᴇ.commandName;
 var աɦօֆɛ = Math.floor(1000 + Math.random() * 9000);
 const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/[+ ]/g, "");

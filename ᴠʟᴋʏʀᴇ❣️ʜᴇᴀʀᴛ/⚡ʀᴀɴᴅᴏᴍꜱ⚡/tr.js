@@ -23,7 +23,7 @@ name: newScpt,
 ᴠʟᴋʏʀᴇӄǟɨʐօ: `*${ᴋᴇɪ}tr* _text_ | _language code_`,
 async handle(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, chat, ᴠʟᴋʏʀᴇ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
 try {
-var ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
+const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
 const defaultnm = ᴠʟᴋʏʀᴇ.commandName;
 const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/[+ ]/g, "");
 const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);

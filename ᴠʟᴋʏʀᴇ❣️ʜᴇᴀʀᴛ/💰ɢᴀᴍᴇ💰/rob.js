@@ -67,7 +67,7 @@ async handle(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, chat, ᴠʟᴋʏʀᴇ, Needs,
 try {
 const defaultnm = ᴠʟᴋʏʀᴇ.commandName;
 const FinalName = defaultnm.charAt(0).toUpperCase() + defaultnm.slice(1);
-var ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
+const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
 const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/[+ ]/g, "");
 const MoneyRandom = Math.floor(Math.random() * (2000 - 1500 + 1)) + 1500;
 const MoneyLaptop = Math.floor(Math.random() * (4000 - 3000 + 1)) + 3000;

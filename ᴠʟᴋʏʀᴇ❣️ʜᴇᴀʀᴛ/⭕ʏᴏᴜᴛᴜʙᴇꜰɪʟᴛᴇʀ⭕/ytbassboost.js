@@ -25,7 +25,7 @@ name: newScpt,
 🔎𝐒𝐞𝐚𝐫𝐜𝐡 𝐘𝐨𝐮𝐓𝐮𝐛𝐞? _${ᴋᴇɪ}ytsearch_`,
 async handle(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, chat, ᴠʟᴋʏʀᴇ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
 try {
-var ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
+const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
 const defaultnm = ᴠʟᴋʏʀᴇ.commandName;
 const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/[+ ]/g, "");
 var FFmpegFile = `./ᴠʟᴋʏʀᴇ🀄ᴇxʜᴀᴜꜱᴛ/${Date.now()}${chat.key.id}.mp3`;

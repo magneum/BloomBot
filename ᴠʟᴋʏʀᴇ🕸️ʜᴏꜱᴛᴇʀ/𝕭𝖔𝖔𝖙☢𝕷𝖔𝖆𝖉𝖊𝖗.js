@@ -121,9 +121,7 @@ process.exitCode = 1;
 });
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.on(`connecting`, async () => {
-console.log(
-Kolor.yellow(`💡 𝐈𝐧𝐟𝐨⬰ Connecting With User's Whatsapp Web..`)
-);
+console.log(Kolor.yellow(`💡 𝐈𝐧𝐟𝐨⬰ Connecting With User's Whatsapp Web..`));
 });
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.on(`open`, async () => {
 console.log(
@@ -153,8 +151,7 @@ Tǟɮʟɛɨȶ(ꜱɪᴛʀᴀᴘ, commandUsage);
 try {
 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.getProfilePicture(update.jid);
 } catch {
-𝕻𝕻𝖑𝖊𝖙𝖊𝖗 =
-"https://i.postimg.cc/wxWL9G8F/no-profile-picture-300x216.png";
+𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = "https://i.postimg.cc/wxWL9G8F/no-profile-picture-300x216.png";
 }
 const groupupdateID = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.groupMetadata(update.jid);
 if (update.announce == `false`) {
@@ -355,8 +352,8 @@ if (update.action === `remove`) return;
 });
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.on(`chat-update`, async (chat) => {
-if (!chat.hasNewMessage) await ʋʟӄʏʀɛքʊʟʟ();;
-if (!chat.messages) await ʋʟӄʏʀɛքʊʟʟ();;
+if (!chat.hasNewMessage) return await ʋʟӄʏʀɛքʊʟʟ();
+if (!chat.messages) return await ʋʟӄʏʀɛքʊʟʟ();
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 chat = chat.messages.all()[0];
 const sender = chat.key.remoteJid;
@@ -364,7 +361,7 @@ const groupMetadata = sender.endsWith(`@g.us`)
 ? await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.groupMetadata(chat.key.remoteJid)
 : ``;
 var ᴠʟᴋʏʀᴇ = ӄʀʏօȶɛӄ.resolve(chat, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, groupMetadata);
-var ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
+const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
 const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/[+ ]/g, "");
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 await Halt.findOne(
@@ -508,8 +505,7 @@ contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 if (
 !ᴠʟᴋʏʀᴇ.fromMe &&
-userHalt.PermaTimeOut - (Date.now() - userHalt.TimeOut) >
-0
+userHalt.PermaTimeOut - (Date.now() - userHalt.TimeOut) > 0
 ) {
 let Time = ms(
 userHalt.PermaTimeOut - (Date.now() - userHalt.TimeOut)
@@ -591,9 +587,7 @@ quoted: chat,
 contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
 }
 )
-.catch((e) =>
-ꜰᴜᴄᴋ.catch(e, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
-);
+.catch((e) => ꜰᴜᴄᴋ.catch(e, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
 }
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 const ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ = ꜱɪᴛʀᴀᴘ.get(ᴠʟᴋʏʀᴇ.commandName);
