@@ -60,7 +60,7 @@ chat,
 
 ╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
 ║
-║❌ 𝗘𝗿𝗿𝗼𝗿: _Group Has ${gMd.participants.length}/15 members needed. Leaving Group!_
+║❌ 𝗘𝗿𝗿𝗼𝗿: _${gMd.participants.length}/15 members!_
 ║📜 𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${gD.subject}
 ╚════════════╝`
 );
@@ -84,6 +84,7 @@ chat,
 }
 });
 } catch (e) {
+console.log(e);
 return ᴠʟᴋʏʀᴇ_Buttons.MTB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
