@@ -148,7 +148,7 @@ const videos = FetchedLink.videos.slice(0, 8);
 var Fetched = ``;
 videos.forEach(function (youfound) {
 const { id } = getVideoId(youfound.url);
-Fetched =
+Fetched = "";
 Fetched +
 `
 ────★🥳𝐓𝐢𝐭𝐥𝐞: ${youfound.title}
