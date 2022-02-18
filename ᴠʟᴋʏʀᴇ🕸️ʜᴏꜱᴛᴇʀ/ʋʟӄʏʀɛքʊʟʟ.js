@@ -11,17 +11,17 @@ const ʋʟӄʏʀɛքʊʟʟ = async () => {
 await git.fetch();
 var Commits = await git.log(["KryTek..origin/KryTek"]);
 if (Commits.total) {
-console.log(Kolor.blue(`
+console.log(
+Kolor.blue(`
 ╔◇║ ⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟
 ║
 ║💡 𝐈𝐧𝐟𝐨⬰ New Update pending, updating...
 ║💡 𝐈𝐧𝐟𝐨⬰ Vlkyre System Synced Latest Patch...
-╚════════════༻꧂`));
+╚════════════༻꧂`)
+);
 await git.pull("origin", "KryTek", (e, update) => {
 if (update && update.summary.changes) {
-if (update.files.includes("package.json")) {
 exec("npm install").stderr.pipe(process.stderr);
-}
 } else if (e) {
 console.log(Kolor.red.bold("❌ 𝐄𝐫𝐫𝐨𝐫⬰ Please Re-Deploy!"));
 console.log(e);
