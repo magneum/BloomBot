@@ -140,11 +140,14 @@ return admins;
 }
 } catch (e) {
 console.log(e);
-var ᴠʟᴋʏ = require(`child_process`).exec(`node ☢.js`);
-ᴠʟᴋʏ.stdout.pipe(process.stdout);
-ᴠʟᴋʏ.on(`exit`, async function () {
+var ᴠʟᴋʟ = require(`child_process`).exec(
+`git config --global pull.rebase false`
+);
+ᴠʟᴋʟ.stdout.pipe(process.stdout);
+ᴠʟᴋʟ.on(`exit`, async function () {
 process.exitCode = 1;
 });
+console.log(Kolor.red("❌ 𝐄𝐫𝐫𝐨𝐫⬰ Please Re-Deploy!"));
 }
 };
 `|⬡════════════════════════════════════════════|                            |═══════════════════════════════════════════⬡|`;

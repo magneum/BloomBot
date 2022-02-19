@@ -68,9 +68,13 @@ var ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇 = ᴠʟᴋʏʀᴇֆʏռօք.WhatsApp;
 async function ᴠʟᴋʏʀᴇ() {
 await ʋʟӄʏʀɛքʊʟʟ().catch((e) => {
 console.log(e);
-require(`child_process`)
-.exec(`git config --global pull.rebase false`)
-.stdout.pipe(process.stdout);
+var ᴠʟᴋʟ = require(`child_process`).exec(
+`git config --global pull.rebase false`
+);
+ᴠʟᴋʟ.stdout.pipe(process.stdout);
+ᴠʟᴋʟ.on(`exit`, async function () {
+process.exitCode = 1;
+});
 });
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 const path = require("path");
@@ -129,9 +133,13 @@ process.exitCode = 1;
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.on(`connecting`, async () => {
 await ʋʟӄʏʀɛքʊʟʟ().catch((e) => {
 console.log(e);
-require(`child_process`)
-.exec(`git config --global pull.rebase false`)
-.stdout.pipe(process.stdout);
+var ᴠʟᴋʟ = require(`child_process`).exec(
+`git config --global pull.rebase false`
+);
+ᴠʟᴋʟ.stdout.pipe(process.stdout);
+ᴠʟᴋʟ.on(`exit`, async function () {
+process.exitCode = 1;
+});
 });
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 console.log(Kolor.yellow(`💡 𝐈𝐧𝐟𝐨⬰ Connecting With User's Whatsapp Web..`));
@@ -139,9 +147,13 @@ console.log(Kolor.yellow(`💡 𝐈𝐧𝐟𝐨⬰ Connecting With User's Whatsa
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.on(`open`, async () => {
 await ʋʟӄʏʀɛքʊʟʟ().catch((e) => {
 console.log(e);
-require(`child_process`)
-.exec(`git config --global pull.rebase false`)
-.stdout.pipe(process.stdout);
+var ᴠʟᴋʟ = require(`child_process`).exec(
+`git config --global pull.rebase false`
+);
+ᴠʟᴋʟ.stdout.pipe(process.stdout);
+ᴠʟᴋʟ.on(`exit`, async function () {
+process.exitCode = 1;
+});
 });
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 console.log(
@@ -382,9 +394,13 @@ if (!chat.messages) return;
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 await ʋʟӄʏʀɛքʊʟʟ().catch((e) => {
 console.log(e);
-require(`child_process`)
-.exec(`git config --global pull.rebase false`)
-.stdout.pipe(process.stdout);
+var ᴠʟᴋʟ = require(`child_process`).exec(
+`git config --global pull.rebase false`
+);
+ᴠʟᴋʟ.stdout.pipe(process.stdout);
+ᴠʟᴋʟ.on(`exit`, async function () {
+process.exitCode = 1;
+});
 });
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 chat = chat.messages.all()[0];
@@ -625,9 +641,13 @@ var Needs = ᴠʟᴋʏʀᴇ.body.trim().split(/\s+/).slice(1);
 if (!ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ) {
 await ʋʟӄʏʀɛքʊʟʟ().catch((e) => {
 console.log(e);
-require(`child_process`)
-.exec(`git config --global pull.rebase false`)
-.stdout.pipe(process.stdout);
+var ᴠʟᴋʟ = require(`child_process`).exec(
+`git config --global pull.rebase false`
+);
+ᴠʟᴋʟ.stdout.pipe(process.stdout);
+ᴠʟᴋʟ.on(`exit`, async function () {
+process.exitCode = 1;
+});
 });
 return await ᴠʟᴋʏʀᴇ_Buttons.MTB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
@@ -645,9 +665,13 @@ Kolor.green(
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 await ʋʟӄʏʀɛքʊʟʟ().catch((e) => {
 console.log(e);
-require(`child_process`)
-.exec(`git config --global pull.rebase false`)
-.stdout.pipe(process.stdout);
+var ᴠʟᴋʟ = require(`child_process`).exec(
+`git config --global pull.rebase false`
+);
+ᴠʟᴋʟ.stdout.pipe(process.stdout);
+ᴠʟᴋʟ.on(`exit`, async function () {
+process.exitCode = 1;
+});
 });
 return ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ.handle(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,

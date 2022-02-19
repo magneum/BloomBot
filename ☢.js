@@ -26,9 +26,11 @@ spawn("node", ["-c", file])
 const { ᴠʟᴋʏʀᴇ } = require("./ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/𝕭𝖔𝖔𝖙☢𝕷𝖔𝖆𝖉𝖊𝖗.js");
 ʋʟӄʏʀɛքʊʟʟ().catch((e) => {
 console.log(e);
-require(`child_process`)
-.exec(`git config --global pull.rebase false`)
-.stdout.pipe(process.stdout);
+var ᴠʟᴋʟ = require(`child_process`).exec(`git config --global pull.rebase false`);
+ᴠʟᴋʟ.stdout.pipe(process.stdout);
+ᴠʟᴋʟ.on(`exit`, async function () {
+process.exitCode = 1;
+});
 });
 ᴠʟᴋʏʀᴇ().catch((e) => {
 console.log(e);
