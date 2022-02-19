@@ -39,7 +39,7 @@ MessageType.image,
 {
 quoted: chat,
 mimetype: Mimetype.png,
-caption: `꧁⧉  👋🏻𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚, *${ᴘɴᴀᴍᴇ}* ⧉꧂
+caption: `꧁*${ᴘɴᴀᴍᴇ}*꧂
 
 
 
