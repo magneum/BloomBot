@@ -25,14 +25,20 @@ if (update && update.summary.changes) {
 exec("npm install").stderr.pipe(process.stderr);
 }
 if (e) {
-console.log(Kolor.red.bold("❌ 𝐄𝐫𝐫𝐨𝐫⬰ Please Re-Deploy!"));
 console.log(e);
+require(`child_process`)
+.exec(`git config --global pull.rebase false`)
+.stdout.pipe(process.stdout);
+console.log(Kolor.red("❌ 𝐄𝐫𝐫𝐨𝐫⬰ Please Re-Deploy!"));
 }
 });
 }
 } catch (e) {
-console.log(Kolor.red.bold("❌ 𝐄𝐫𝐫𝐨𝐫⬰ Please Re-Deploy!"));
 console.log(e);
+require(`child_process`)
+.exec(`git config --global pull.rebase false`)
+.stdout.pipe(process.stdout);
+console.log(Kolor.red("❌ 𝐄𝐫𝐫𝐨𝐫⬰ Please Re-Deploy!"));
 }
 };
 module.exports = ʋʟӄʏʀɛքʊʟʟ;
