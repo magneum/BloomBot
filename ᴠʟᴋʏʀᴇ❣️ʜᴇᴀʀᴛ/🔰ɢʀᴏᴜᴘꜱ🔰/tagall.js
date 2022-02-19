@@ -103,13 +103,10 @@ conversation: ᴠʟᴋʏʀᴇ.replyMessage,
 },
 mentionedJid: members,
 },
-caption: `❮ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ${vers.vers} ❯\n❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞
+caption: `❮ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❯\n❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢ⌬ʟᴀʙ™ ❞
 
-╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
-║⚡ 𝐅𝐫𝐨𝐦: @${ᴘɴᴀᴍᴇ}
-╚════════════╝
-
-_⚠️Attention Everyone Here In the Group!_`,
+⚡ 𝐅𝐫𝐨𝐦: @${ᴘɴᴀᴍᴇ}
+⚠️Attention Everyone Here In the Group!`,
 })
 .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
 return;
@@ -123,12 +120,9 @@ quoted: chat,
 contextInfo: {
 mentionedJid: members,
 },
-caption: `❮ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ${vers.vers} ❯\n❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞
+caption: `❮ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❯\n❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢ⌬ʟᴀʙ™ ❞
 
-╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
-║⚡ 𝐅𝐫𝐨𝐦: @${ᴘɴᴀᴍᴇ}
-╚════════════╝
-
+⚡ 𝐅𝐫𝐨𝐦: @${ᴘɴᴀᴍᴇ}
 ${ᴠʟᴋʏʀᴇ.body.replace(ᴠʟᴋʏʀᴇ.body[0] + ᴠʟᴋʏʀᴇ.commandName + " ", "")}`,
 })
 .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
@@ -143,12 +137,9 @@ quoted: chat,
 contextInfo: {
 mentionedJid: members,
 },
-caption: `❮ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ${vers.vers} ❯\n❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞
+caption: `❮ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❯\n❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢ⌬ʟᴀʙ™ ❞
 
-╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
-║⚡ 𝐅𝐫𝐨𝐦: @${ᴘɴᴀᴍᴇ}
-╚════════════╝
-
+⚡ 𝐅𝐫𝐨𝐦: @${ᴘɴᴀᴍᴇ}
 ${ᴠʟᴋʏʀᴇ.replyMessage.replace(
 ᴠʟᴋʏʀᴇ.body[0] + ᴠʟᴋʏʀᴇ.commandName + " ",
 ""
@@ -163,13 +154,10 @@ quoted: chat,
 contextInfo: {
 mentionedJid: members,
 },
-caption: `❮ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ${vers.vers} ❯\n❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞
+caption: `❮ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❯\n❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢ⌬ʟᴀʙ™ ❞
 
-╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
-║⚡ 𝐅𝐫𝐨𝐦: @${ᴘɴᴀᴍᴇ}
-╚════════════╝
-
-_⚠️Attention Everyone Here In the Group!_`,
+⚡ 𝐅𝐫𝐨𝐦: @${ᴘɴᴀᴍᴇ}
+⚠️Attention Everyone Here In the Group!`,
 })
 .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
 }

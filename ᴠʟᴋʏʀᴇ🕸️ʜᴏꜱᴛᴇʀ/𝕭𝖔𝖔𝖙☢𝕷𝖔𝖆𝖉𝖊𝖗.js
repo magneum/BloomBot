@@ -313,7 +313,7 @@ contentText: `👋🏻𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚, *To Admins Of Th
 ╚════════════༻꧂
 
 👇🏽𝗣𝗿𝗲𝘀𝘀 𝗯𝗲𝗹𝗼𝘄 𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗦𝘁𝗮𝗿𝘁👇🏽`,
-footerText: `❮ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ${vers.vers} ❯\n❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞`,
+footerText: `❮ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❯\n❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢ⌬ʟᴀʙ™ ❞`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
@@ -613,7 +613,7 @@ contentText: `꧁⧉  👋🏻𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚, *${ᴘɴ
 
 𝐑𝐄𝐀𝐃 + 𝐃𝐎 𝐍𝐎𝐓 𝐒𝐏𝐀𝐌!
 𝐏𝐫𝐞𝐬𝐬 𝐁𝐞𝐥𝐨𝐰 𝐓𝐨 𝐕𝐞𝐫𝐢𝐟𝐲`,
-footerText: `❮ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ${vers.vers} ❯\n❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞`,
+footerText: `❮ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❯\n❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢ⌬ʟᴀʙ™ ❞`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}verify`,

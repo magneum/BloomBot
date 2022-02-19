@@ -187,11 +187,10 @@ await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
 quoted: chat,
 mimetype: `video/gif`,
-caption: `⌜Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞〨${vers.vers}⌟\n❝ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™❞\n\n
+caption: `❮ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❯\n❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢ⌬ʟᴀʙ™ ❞\n\n
 
-────◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
+🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
 🍯 𝐒𝐞𝐚𝐫𝐜𝐡𝐞𝐝: ${Needs.join(` `)}
-
 🌐𝐋𝐢𝐧𝐤: ${MP4}`,
 })
 .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
