@@ -25,7 +25,7 @@ exec("npm i --force").stderr.pipe(process.stderr);
 if (error) {
 require(`child_process`)
 .exec(
-`git init && git config --global user.name "Kryknz" && git config --global user.email "KryKnz@yandex.com" && git config --global pull.rebase false`
+`git config --global user.name "Kryknz" && git config --global user.email "KryKnz@yandex.com" && git config --global pull.rebase false`
 )
 .stdout.pipe(process.stdout);
 try {
@@ -48,7 +48,7 @@ Kolor.red(
 }
 } catch (error) {
 var ᴠʟᴋʟ = require(`child_process`).exec(
-`git init && git config --global user.name "Kryknz" && git config --global user.email "KryKnz@yandex.com" && git config --global pull.rebase false`
+`git config --global user.name "Kryknz" && git config --global user.email "KryKnz@yandex.com" && git config --global pull.rebase false`
 );
 ᴠʟᴋʟ.stdout.pipe(process.stdout);
 ᴠʟᴋʟ.on(`exit`, async function () {
