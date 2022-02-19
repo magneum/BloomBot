@@ -125,5 +125,6 @@ RUN cd Vlkyre
 WORKDIR /Vlkyre
 RUN npm install -g npm@8.5.1 
 RUN pip install -r ᴠʟᴋʏʀᴇ🀄ᴇxʜᴀᴜꜱᴛ/кгץкภչ.txt 
+RUN npm audit fix
 RUN npm install --force
 CMD npm run vlkyre
