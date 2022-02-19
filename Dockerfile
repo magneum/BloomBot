@@ -106,9 +106,9 @@ RUN apt-get install python3 -y
 RUN apt-get install bpm-tools -y 
 RUN apt-get install opus-tools -y 
 RUN apt-get install python3-pip -y 
-RUN apt-get install python-is-python3 -y
-RUN hash -r 
 RUN /venv/bin/python -m pip install --upgrade pip 
+RUN hash -r 
+RUN apt-get install python-is-python3 -y
 RUN hash -r 
 RUN npm install -g n 
 RUN n install lts 
