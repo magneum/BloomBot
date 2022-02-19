@@ -23,15 +23,7 @@ const mergeSummary = await git.merge();
 console.log(
 Kolor.blue(`💡 𝐈𝐧𝐟𝐨⬰ Changes: [${mergeSummary.merges.length}]`)
 );
-} catch (error) {
-console.log(
-Kolor.red(
-`❌ 𝐄𝐫𝐫𝐨𝐫⬰ Merge Resulted with Total-Conflicts: ${Kolor.red(
-error
-)}`
-)
-);
-}
+} catch (error) {}
 }
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 if (update && update.summary.changes) {
@@ -41,15 +33,7 @@ const mergeSummary = await git.merge();
 console.log(
 Kolor.blue(`💡 𝐈𝐧𝐟𝐨⬰ Changes: [${mergeSummary.merges.length}]`)
 );
-} catch (error) {
-console.log(
-Kolor.red(
-`❌ 𝐄𝐫𝐫𝐨𝐫⬰ Merge Resulted with Total-Conflicts: ${Kolor.red(
-error
-)}`
-)
-);
-}
+} catch (error) {}
 }
 });
 } catch (error) {
