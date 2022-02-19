@@ -13,7 +13,8 @@ await git.fetch();
 await git.log(["KryTek..origin/KryTek"]);
 await git.pull("origin", "KryTek", async (error, update) => {
 if (error) {
-exec(`git config --global user.name "Kryknz" && git config --global user.email "KryKnz@yandex.com" && git config --global pull.rebase false`
+exec(
+`git config --global user.name "Kryknz" && git config --global user.email "KryKnz@yandex.com" && git fetch --all && git config --global pull.rebase false`
 ).stdout.pipe(process.stdout);
 try {
 const mergeSummary = await git.merge();
