@@ -278,7 +278,6 @@ contentText: `👋🏻𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚, *To Admins Of Th
 ║◇ *${ᴋᴇɪ}help:* _read all commands of Vlkyre!_
 ║◇ *${ᴋᴇɪ}rules:* _read rules of Vlkyre!_
 ║◇ *${ᴋᴇɪ}faq:* _read frequesntly asked questions!_
-║◇ *${ᴋᴇɪ}request:* _add vlkyre in your groups!_
 ║◇ *${ᴋᴇɪ}verify:* _verify yourself to use Vlkyre!_
 ╚════════════༻꧂
 
@@ -399,7 +398,6 @@ if (
 !ᴠʟᴋʏʀᴇ.body.includes(ᴋᴇɪ + "rules") &&
 !ᴠʟᴋʏʀᴇ.body.includes(ᴋᴇɪ + "faq") &&
 !ᴠʟᴋʏʀᴇ.body.includes(ᴋᴇɪ + "verify") &&
-!ᴠʟᴋʏʀᴇ.body.includes(ᴋᴇɪ + "request") &&
 !ᴠʟᴋʏʀᴇ.body.includes(ᴋᴇɪ + "menu")
 ) {
 return ᴠʟᴋʏʀᴇ_Buttons.MTB(
@@ -414,7 +412,6 @@ _⚠️ 𝗨𝘀𝗶𝗻𝗴 𝗩𝗹𝗸𝘆𝗿𝗲 𝗜𝗻 𝗣𝗿𝗶𝘃�
 ║ *${ᴋᴇɪ}help:* _read all commands of Vlkyre!_
 ║ *${ᴋᴇɪ}rules:* _read rules of Vlkyre!_
 ║ *${ᴋᴇɪ}faq:* _read frequesntly asked questions!_
-║ *${ᴋᴇɪ}request:* _add vlkyre in your groups!_
 ║ *${ᴋᴇɪ}verify:* _verify yourself to use Vlkyre!_
 ╚════════════༻꧂`
 );
@@ -561,7 +558,6 @@ if (
 !ᴠʟᴋʏʀᴇ.body.includes(ᴋᴇɪ + "rules") &&
 !ᴠʟᴋʏʀᴇ.body.includes(ᴋᴇɪ + "faq") &&
 !ᴠʟᴋʏʀᴇ.body.includes(ᴋᴇɪ + "verify") &&
-!ᴠʟᴋʏʀᴇ.body.includes(ᴋᴇɪ + "request") &&
 !ᴠʟᴋʏʀᴇ.body.includes(ᴋᴇɪ + "menu")
 )
 if (
