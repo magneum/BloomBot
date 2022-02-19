@@ -3,27 +3,11 @@
 # |        (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!               |
 # |                                                                                                                        |
 # |⬡════════════════════════════════════════════|                            |═══════════════════════════════════════════⬡|
-# FROM python:latest
-# ENV ᴋʀʏᴋɴᴢ_ᴋʀᴀᴋɪɴᴢʟᴀʙ "/venv"
-# RUN python -m venv $ᴋʀʏᴋɴᴢ_ᴋʀᴀᴋɪɴᴢʟᴀʙ
-# ENV PATH "$ᴋʀʏᴋɴᴢ_ᴋʀᴀᴋɪɴᴢʟᴀʙ/bin:$PATH"
-
-#
 # NOTE: THIS DOCKERFILE IS GENERATED VIA "apply-templates.sh"
-#
 # PLEASE DO NOT EDIT IT DIRECTLY.
-#
-
 FROM buildpack-deps:bullseye
-
-# ensure local python is preferred over distribution python
 ENV PATH /usr/local/bin:$PATH
-
-# http://bugs.python.org/issue19846
-# > At the moment, setting "LANG=C" on a Linux system *fundamentally breaks Python 3*, and that's not OK.
 ENV LANG C.UTF-8
-
-# runtime dependencies
 RUN set -eux; \
 	apt-get update; \
 	apt-get install -y --no-install-recommends \
@@ -32,10 +16,8 @@ RUN set -eux; \
 		uuid-dev \
 	; \
 	rm -rf /var/lib/apt/lists/*
-
 ENV GPG_KEY A035C8C19219BA821ECEA86B64E628F8D684696D
 ENV PYTHON_VERSION 3.11.0a5
-
 RUN set -eux; \
 	\
 	wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz"; \
@@ -79,8 +61,6 @@ RUN set -eux; \
 	ldconfig; \
 	\
 	python3 --version
-
-# make some useful symlinks that are expected to exist ("/usr/local/bin/python" and friends)
 RUN set -eux; \
 	for src in idle3 pydoc3 python3 python3-config; do \
 		dst="$(echo "$src" | tr -d 3)"; \
@@ -88,15 +68,10 @@ RUN set -eux; \
 		[ ! -e "/usr/local/bin/$dst" ]; \
 		ln -svT "/usr/local/bin/$src" "/usr/local/bin/$dst"; \
 	done
-
-# if this is called "PIP_VERSION", pip explodes with "ValueError: invalid truth value '<VERSION>'"
 ENV PYTHON_PIP_VERSION 21.2.4
-# https://github.com/docker-library/python/issues/365
 ENV PYTHON_SETUPTOOLS_VERSION 58.1.0
-# https://github.com/pypa/get-pip
 ENV PYTHON_GET_PIP_URL https://github.com/pypa/get-pip/raw/2caf84b14febcda8077e59e9b8a6ef9a680aa392/public/get-pip.py
 ENV PYTHON_GET_PIP_SHA256 7c5239cea323cadae36083079a5ee6b2b3d56f25762a0c060d2867b89e5e06c5
-
 RUN set -eux; \
 	\
 	wget -O get-pip.py "$PYTHON_GET_PIP_URL"; \
@@ -118,7 +93,7 @@ RUN set -eux; \
 		\) -exec rm -rf '{}' + \
 	; \
 	rm -f get-pip.py
-
+# |⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|
 RUN apt update && apt upgrade -y && apt install git -y && apt install curl -y && apt install wget -y && apt install ffmpeg -y && apt install nodejs -y && apt install npm -y && hash -r && apt install python3 -y && apt install bpm-tools -y && apt install opus-tools -y && apt install python3-pip -y && apt install python-is-python3 -y && apt install python3-venv -y
 RUN /venv/bin/python -m pip install --upgrade pip && path=path && npm install -g n && n install lts && path=path && npm install -g npm@8.5.1 && hash -r 
 RUN curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl && chmod a+rx /usr/local/bin/youtube-dl
