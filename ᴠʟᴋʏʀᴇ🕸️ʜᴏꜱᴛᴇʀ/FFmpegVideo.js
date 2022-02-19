@@ -88,16 +88,16 @@ contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
 }
 )
 .then(cleanRF.cleanRF(FFmpegFile))
-.catch((e) => ꜰᴜᴄᴋ.catch(e, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
+.catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
 });
 },
-async function (e) {
-console.log(`⬡══════════| 🐞𝐄𝐫𝐫𝐨𝐫: ` + e);
+async function (error) {
+console.log(`⬡══════════| 🐞𝐄𝐫𝐫𝐨𝐫: ` + error);
 userBadge.Limits = userBadge.Limits + 1;
 await userBadge
 .save()
-.catch((e) => ꜰᴜᴄᴋ.catch(e, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
-return ꜰᴜᴄᴋ.catch(e, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
+.catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
+return ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
 }
 );
 });

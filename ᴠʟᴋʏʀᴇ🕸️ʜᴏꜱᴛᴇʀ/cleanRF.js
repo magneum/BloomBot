@@ -10,8 +10,8 @@ const Kolor = require(`chalk`);
 exports.cleanRF = async (...ᴊᴜɴᴋꜱ) => {
 var startTime = window.performance.now();
 for (location of ᴊᴜɴᴋꜱ) {
-fs.unlink(location, (e) => {
-if (e) console.log(e);
+fs.unlink(location, (error) => {
+if (error) console.log(error);
 });
 }
 var endTime = window.performance.now();

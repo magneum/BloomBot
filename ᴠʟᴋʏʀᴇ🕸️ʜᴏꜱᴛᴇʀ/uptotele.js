@@ -27,8 +27,8 @@ resolve("https://telegra.ph" + res[0].src);
 console.log("ok success");
 })
 .catch((err) => reject(err));
-} catch (e) {
-return console.log(e);
+} catch (error) {
+return console.log(error);
 }
 });
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
@@ -46,8 +46,8 @@ DNT: 1,
 responseType: "arraybuffer",
 });
 return res.data;
-} catch (e) {
-console.log(`Error : ${e}`);
+} catch (error) {
+console.log(`Error : ${error}`);
 }
 };
 

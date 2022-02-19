@@ -195,8 +195,8 @@ if (res.error) return reject(res.error);
 resolve("https://telegra.ph" + res[0].src);
 })
 .catch((err) => reject(err));
-} catch (e) {
-return console.log(e);
+} catch (error) {
+return console.log(error);
 }
 });
 }

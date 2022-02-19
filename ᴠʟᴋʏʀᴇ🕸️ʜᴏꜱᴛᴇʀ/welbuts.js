@@ -39,8 +39,8 @@ BanGroup.findOne(
 {
 ID: GroupID,
 },
-async (e, BanGroup) => {
-if (e) return console.log(e);
+async (error, BanGroup) => {
+if (error) return console.log(error);
 if (BanGroup) return;
 const FlowerWel = Flower[Math.floor(Math.random() * Flower.length)];
 const PeopleWel = People[Math.floor(Math.random() * People.length)];
@@ -109,9 +109,9 @@ MessageType.buttonsMessage,
 contextInfo: { mentionedJid: [MemNum] },
 }
 )
-.catch((e) => console.log(e));
+.catch((error) => console.log(error));
 return await cleanRF.cleanRF(`./${Date.now().toString()}.png`);
-} catch (e) {
+} catch (error) {
 const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
 GroupID,
 { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 },
@@ -158,12 +158,12 @@ MessageType.buttonsMessage,
 contextInfo: { mentionedJid: [MemNum] },
 }
 )
-.catch((e) => console.log(e));
+.catch((error) => console.log(error));
 }
 }
 );
-} catch (e) {
-console.log(e);
+} catch (error) {
+console.log(error);
 }
 };
 `|⬡════════════════════════════════════════════|                            |═══════════════════════════════════════════⬡|`;

@@ -23,11 +23,11 @@ process.stdout.write(`${progress.targetSize}kb downloaded!`);
 .on("end", () => {
 require("child_process").exec(
 `ffmpeg -i ${BAudio} -af equalizer=f=94:width_type=o:width=2:g=30 ${AAudio}`,
-async (e) => {
-fs.unlink(BAudio, (e) => {
-if (e) return console.log(e);
+async (error) => {
+fs.unlink(BAudio, (error) => {
+if (error) return console.log(error);
 });
-if (e) return console.log(e);
+if (error) return console.log(error);
 console.log("\nFiltered Done!");
 }
 );

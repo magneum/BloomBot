@@ -65,8 +65,8 @@ Usersᴠʟᴋʏʀᴇ.findOne(
 ID: ʟɴᴀᴍᴇ,
 serverID: ᴠʟᴋʏʀᴇ.chatId,
 },
-async (e, user) => {
-if (e) return ꜰᴜᴄᴋ.catch(e, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
+async (error, user) => {
+if (error) return ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
 if (!user) {
 return ᴠʟᴋʏʀᴇ_Buttons.MTB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
@@ -127,8 +127,8 @@ const rank = new canvacord.Rank()
 .setDiscriminator(աɦօֆɛ)
 .setProgressBar(color, "COLOR");
 rank.build().then(async (data) => {
-fs.writeFile(expFile, data, async (e) => {
-if (e) return ꜰᴜᴄᴋ.catch(e, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
+fs.writeFile(expFile, data, async (error) => {
+if (error) return ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
 var groupDataRank = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.groupMetadata(
 chat.key.remoteJid
 );
@@ -176,15 +176,15 @@ quoted: chat,
 contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
 }
 )
-.catch((e) => ꜰᴜᴄᴋ.catch(e, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
+.catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
 return await cleanRF.cleanRF(expFile);
 });
 });
 }
 );
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-} catch (e) {
-ꜰᴜᴄᴋ.catch(e, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
+} catch (error) {
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
 return;
 }
 },

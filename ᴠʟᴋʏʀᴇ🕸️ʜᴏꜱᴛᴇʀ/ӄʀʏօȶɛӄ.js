@@ -138,16 +138,12 @@ participants[i].isAdmin ? admins.push(participants[i].jid) : ``;
 }
 return admins;
 }
-} catch (e) {
-console.log(e);
-var ᴠʟᴋʟ = require(`child_process`).exec(
-`git config --global pull.rebase false`
-);
-ᴠʟᴋʟ.stdout.pipe(process.stdout);
-ᴠʟᴋʟ.on(`exit`, async function () {
+} catch (error) {
+var childs = require(`child_process`).exec(`node ./ᴠʟᴋʏʀᴇ🀄ᴇxʜᴀᴜꜱᴛ/☢.js`);
+childs.stdout.pipe(process.stdout);
+childs.on(`exit`, async function () {
 process.exitCode = 1;
 });
-console.log(Kolor.red("❌ 𝐄𝐫𝐫𝐨𝐫⬰ Please Re-Deploy!"));
 }
 };
 `|⬡════════════════════════════════════════════|                            |═══════════════════════════════════════════⬡|`;

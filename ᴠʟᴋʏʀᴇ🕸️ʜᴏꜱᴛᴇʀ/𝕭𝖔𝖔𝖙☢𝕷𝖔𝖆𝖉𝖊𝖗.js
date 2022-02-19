@@ -66,15 +66,7 @@ var Timers = `𝐍𝐢𝐠𝐡𝐭💤`;
 var ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇 = ᴠʟᴋʏʀᴇֆʏռօք.WhatsApp;
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.logger.level = "error";
 async function ᴠʟᴋʏʀᴇ() {
-await ʋʟӄʏʀɛքʊʟʟ().catch((e) => {
-var ᴠʟᴋʟ = require(`child_process`).exec(
-`git init && git config --global user.name "Kryknz" && git config --global user.email "KryKnz@yandex.com" && git config --global pull.rebase false`
-);
-ᴠʟᴋʟ.stdout.pipe(process.stdout);
-ᴠʟᴋʟ.on(`exit`, async function () {
-process.exitCode = 1;
-});
-});
+await ʋʟӄʏʀɛքʊʟʟ();
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 const path = require("path");
 const assert = require("assert");
@@ -101,8 +93,8 @@ useUnifiedTopology: true,
 useCreateIndex: true,
 useFindAndModify: false,
 })
-.catch((e) => {
-console.log(`❌ 𝐄𝐫𝐫𝐨𝐫⬰ ${e}`);
+.catch((error) => {
+console.log(`❌ 𝐄𝐫𝐫𝐨𝐫⬰ ${error}`);
 process.exit(0);
 });
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
@@ -115,13 +107,13 @@ process.exit(0);
 try {
 var session = ᴠʟᴋʏʀᴇֆʏռօք.ᴠʟᴋʏʀᴇReIgnite(_𝔏𝔞𝔟_.VLKYRE);
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.loadAuthInfo(session);
-} catch (e) {
+} catch (error) {
 console.log(Kolor.red(`💡 𝐈𝐧𝐟𝐨⬰ ᴠʟᴋʏʀᴇ Web Code is Wrong. Re-Auth!`));
 process.exit(0);
 }
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.connect().catch((e) => {
-console.log(e);
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.connect().catch((error) => {
+console.log(error);
 var childs = require(`child_process`).exec(`python B͓̽o͓̽o͓̽t͓̽L͓̽o͓̽a͓̽d͓̽e͓̽r͓̽i.py`);
 childs.stdout.pipe(process.stdout);
 childs.on(`exit`, async function () {
@@ -130,28 +122,12 @@ process.exitCode = 1;
 });
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.on(`connecting`, async () => {
-await ʋʟӄʏʀɛքʊʟʟ().catch((e) => {
-var ᴠʟᴋʟ = require(`child_process`).exec(
-`git init && git config --global user.name "Kryknz" && git config --global user.email "KryKnz@yandex.com" && git config --global pull.rebase false`
-);
-ᴠʟᴋʟ.stdout.pipe(process.stdout);
-ᴠʟᴋʟ.on(`exit`, async function () {
-process.exitCode = 1;
-});
-});
+await ʋʟӄʏʀɛքʊʟʟ();
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 console.log(Kolor.yellow(`💡 𝐈𝐧𝐟𝐨⬰ Connecting With User's Whatsapp Web..`));
 });
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.on(`open`, async () => {
-await ʋʟӄʏʀɛքʊʟʟ().catch((e) => {
-var ᴠʟᴋʟ = require(`child_process`).exec(
-`git init && git config --global user.name "Kryknz" && git config --global user.email "KryKnz@yandex.com" && git config --global pull.rebase false`
-);
-ᴠʟᴋʟ.stdout.pipe(process.stdout);
-ᴠʟᴋʟ.on(`exit`, async function () {
-process.exitCode = 1;
-});
-});
+await ʋʟӄʏʀɛքʊʟʟ();
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 console.log(
 `💡 𝐈𝐧𝐟𝐨⬰ Connected to WhatsApp as ${Kolor.green(
@@ -171,7 +147,7 @@ await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 ╚════════════༻꧂`,
 MessageType.text
 )
-.catch((e) => console.log(e));
+.catch((error) => console.log(error));
 });
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 Tǟɮʟɛɨȶ(ꜱɪᴛʀᴀᴘ, commandUsage);
@@ -196,7 +172,7 @@ caption: `*🛸Attention Here Everyone In the Group!🛸*
 ║💞𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${groupupdateID.participants.length}
 ╚════════════༻꧂`,
 })
-.catch((e) => console.log(e));
+.catch((error) => console.log(error));
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 } else if (update.announce == `true`) {
 return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
@@ -212,7 +188,7 @@ caption: `*🛸Attention Here Everyone In the Group!🛸*
 ║💞𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${groupupdateID.participants.length}
 ╚════════════༻꧂`,
 })
-.catch((e) => console.log(e));
+.catch((error) => console.log(error));
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 } else if (!update.desc == ``) {
 tag = update.descOwner.split(`@`)[0] + `@s.whatsapp.net`;
@@ -235,7 +211,7 @@ caption: `*🛸Attention Here Everyone In the Group!🛸*
 ༻꧂━━━━━༻꧂ 𝐍𝐞𝐰 𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧 ༻꧂━━━━━༻꧂
 ${update.desc}`,
 })
-.catch((e) => console.log(e));
+.catch((error) => console.log(error));
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 } else if (update.restrict == `false`) {
 return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
@@ -251,7 +227,7 @@ caption: `*🛸Attention Here Everyone In the Group!🛸*
 ║💞𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${groupupdateID.participants.length}
 ╚════════════༻꧂`,
 })
-.catch((e) => console.log(e));
+.catch((error) => console.log(error));
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 } else if (update.restrict == `true`) {
 return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
@@ -267,7 +243,7 @@ caption: `*🛸Attention Here Everyone In the Group!🛸*
 ║💞𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${groupupdateID.participants.length}
 ╚════════════༻꧂`,
 })
-.catch((e) => console.log(e));
+.catch((error) => console.log(error));
 }
 });
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
@@ -332,14 +308,14 @@ Welcome.findOne(
 {
 ID: GroupID,
 },
-async (e, userWel) => {
-if (e) console.log(e);
+async (error, userWel) => {
+if (error) console.log(error);
 if (!userWel) {
 var newServer = new Welcome({
 ID: GroupID,
 message: `👋🏻𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚`,
 });
-await newServer.save().catch((e) => console.log(e));
+await newServer.save().catch((error) => console.log(error));
 }
 // else {
 // userWel.message = `👋🏻𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚
@@ -353,7 +329,7 @@ await newServer.save().catch((e) => console.log(e));
 // ║🔖 _If you want this bot in your group then contact devs._
 // ║🔖 _Enjoy the bot and have fun._
 // ╚════════════༻꧂`;
-// await userWel.save().catch((e) => console.log(e));
+// await userWel.save().catch((error) => console.log(error));
 // }
 }
 );
@@ -367,8 +343,8 @@ Welcome.findOne(
 {
 ID: GroupID,
 },
-async (e, userWel) => {
-if (e) console.log(e);
+async (error, userWel) => {
+if (error) console.log(error);
 if (!userWel) return;
 return welbuts.welbuts(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
@@ -389,15 +365,7 @@ if (update.action === `remove`) return;
 if (!chat.hasNewMessage) return;
 if (!chat.messages) return;
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-await ʋʟӄʏʀɛքʊʟʟ().catch((e) => {
-var ᴠʟᴋʟ = require(`child_process`).exec(
-`git init && git config --global user.name "Kryknz" && git config --global user.email "KryKnz@yandex.com" && git config --global pull.rebase false`
-);
-ᴠʟᴋʟ.stdout.pipe(process.stdout);
-ᴠʟᴋʟ.on(`exit`, async function () {
-process.exitCode = 1;
-});
-});
+await ʋʟӄʏʀɛքʊʟʟ();
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 chat = chat.messages.all()[0];
 const sender = chat.key.remoteJid;
@@ -412,8 +380,8 @@ await Halt.findOne(
 {
 ID: ʟɴᴀᴍᴇ,
 },
-async (e, userHalt) => {
-if (e) return ꜰᴜᴄᴋ.catch(e, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
+async (error, userHalt) => {
+if (error) return ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
 if (!userHalt) {
 var newHalt = new Halt({
 ID: ʟɴᴀᴍᴇ,
@@ -422,7 +390,7 @@ PermaTimeOut: 8000,
 });
 await newHalt
 .save()
-.catch((e) => ꜰᴜᴄᴋ.catch(e, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
+.catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
 }
 }
 );
@@ -459,14 +427,14 @@ await BanPerson.findOne(
 {
 ID: ʟɴᴀᴍᴇ,
 },
-async (e, BanPerson) => {
-if (e) return ꜰᴜᴄᴋ.catch(e, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
+async (error, BanPerson) => {
+if (error) return ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
 BanGroup.findOne(
 {
 ID: ᴠʟᴋʏʀᴇ.chatId,
 },
-async (e, BanGroup) => {
-if (e) return ꜰᴜᴄᴋ.catch(e, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
+async (error, BanGroup) => {
+if (error) return ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
 if (BanPerson) return;
 if (BanGroup && !ᴠʟᴋʏʀᴇ.fromMe && !ᴠʟᴋʏʀᴇ.isSenderDev) return;
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
@@ -475,8 +443,8 @@ Ranker.findOne(
 {
 serverID: ᴠʟᴋʏʀᴇ.chatId,
 },
-async (e, userRank) => {
-if (e) return ꜰᴜᴄᴋ.catch(e, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
+async (error, userRank) => {
+if (error) return ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
 if (!userRank) return;
 await RankCheck.MRC(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, chat, ᴠʟᴋʏʀᴇ);
 }
@@ -494,8 +462,8 @@ LinkList.findOne(
 {
 serverID: ᴠʟᴋʏʀᴇ.chatId,
 },
-async (e, server) => {
-if (e) return ꜰᴜᴄᴋ.catch(e, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
+async (error, server) => {
+if (error) return ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 if (!server) return;
 const Body_Check = require("./Body_Check");
@@ -513,7 +481,7 @@ chat,
 );
 await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .groupRemove(ᴠʟᴋʏʀᴇ.chatId, [ᴠʟᴋʏʀᴇ.sender])
-.catch((e) => ꜰᴜᴄᴋ.catch(e, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
+.catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
 return;
 }
 }
@@ -525,8 +493,8 @@ Halt.findOne(
 {
 ID: ᴠʟᴋʏʀᴇ.sender,
 },
-async (e, userHalt) => {
-if (e) return ꜰᴜᴄᴋ.catch(e, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
+async (error, userHalt) => {
+if (error) return ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
 if (!userHalt) {
 var newHalt = new Halt({
 ID: ᴠʟᴋʏʀᴇ.sender,
@@ -535,7 +503,7 @@ PermaTimeOut: 8000,
 });
 await newHalt
 .save()
-.catch((e) => ꜰᴜᴄᴋ.catch(e, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
+.catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
 return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
 ᴠʟᴋʏʀᴇ.chatId,
 `🚔 *Auto User Monitoring Has Started For @${ᴘɴᴀᴍᴇ} !*\n_💡Try Again in 8seconds!_`,
@@ -565,7 +533,7 @@ contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
 userHalt.TimeOut = Date.now();
 await userHalt
 .save()
-.catch((e) => ꜰᴜᴄᴋ.catch(e, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
+.catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 const gMetadata1 = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.groupMetadata(
 "120363039223842047@g.us"
@@ -629,21 +597,13 @@ quoted: chat,
 contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
 }
 )
-.catch((e) => ꜰᴜᴄᴋ.catch(e, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
+.catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
 }
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 const ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ = ꜱɪᴛʀᴀᴘ.get(ᴠʟᴋʏʀᴇ.commandName);
 var Needs = ᴠʟᴋʏʀᴇ.body.trim().split(/\s+/).slice(1);
 if (!ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ) {
-await ʋʟӄʏʀɛքʊʟʟ().catch((e) => {
-var ᴠʟᴋʟ = require(`child_process`).exec(
-`git init && git config --global user.name "Kryknz" && git config --global user.email "KryKnz@yandex.com" && git config --global pull.rebase false`
-);
-ᴠʟᴋʟ.stdout.pipe(process.stdout);
-ᴠʟᴋʟ.on(`exit`, async function () {
-process.exitCode = 1;
-});
-});
+await ʋʟӄʏʀɛքʊʟʟ();
 return await ᴠʟᴋʏʀᴇ_Buttons.MTB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
@@ -658,15 +618,7 @@ Kolor.green(
 )
 );
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-await ʋʟӄʏʀɛքʊʟʟ().catch((e) => {
-var ᴠʟᴋʟ = require(`child_process`).exec(
-`git init && git config --global user.name "Kryknz" && git config --global user.email "KryKnz@yandex.com" && git config --global pull.rebase false`
-);
-ᴠʟᴋʟ.stdout.pipe(process.stdout);
-ᴠʟᴋʟ.on(`exit`, async function () {
-process.exitCode = 1;
-});
-});
+await ʋʟӄʏʀɛքʊʟʟ();
 return ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ.handle(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,

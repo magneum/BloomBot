@@ -19,12 +19,12 @@ cloneFiles: false,
 });
 try {
 await downloader.download();
-} catch (e) {
-console.log(`⬡═══════════════════| 🐞𝐄𝐫𝐫𝐨𝐫: ` + e);
+} catch (error) {
+console.log(`⬡═══════════════════| 🐞𝐄𝐫𝐫𝐨𝐫: ` + error);
 }
 },
-async function (e) {
-console.log(`⬡═══════════════════| 🐞𝐄𝐫𝐫𝐨𝐫: ` + e);
+async function (error) {
+console.log(`⬡═══════════════════| 🐞𝐄𝐫𝐫𝐨𝐫: ` + error);
 }
 );
 });

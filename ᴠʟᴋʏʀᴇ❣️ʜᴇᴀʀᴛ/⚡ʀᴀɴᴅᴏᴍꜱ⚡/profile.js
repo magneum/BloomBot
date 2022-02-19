@@ -58,12 +58,12 @@ for (var i = 0; i < gMetadata3.participants.length; i++) {
 member3[i] = gMetadata3.participants[i].jid;
 }
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-await UserBadge.findOne({ ID: ʟɴᴀᴍᴇ }, async (e, UBadge) => {
-if (e) return ꜰᴜᴄᴋ.catch(e, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
-await UserInventory.findOne({ ID: ʟɴᴀᴍᴇ }, async (e, UInv) => {
-if (e) return ꜰᴜᴄᴋ.catch(e, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
-await UserEconomy.findOne({ ID: ʟɴᴀᴍᴇ }, async (e, UEco) => {
-if (e) return ꜰᴜᴄᴋ.catch(e, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
+await UserBadge.findOne({ ID: ʟɴᴀᴍᴇ }, async (error, UBadge) => {
+if (error) return ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
+await UserInventory.findOne({ ID: ʟɴᴀᴍᴇ }, async (error, UInv) => {
+if (error) return ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
+await UserEconomy.findOne({ ID: ʟɴᴀᴍᴇ }, async (error, UEco) => {
+if (error) return ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
 if (!UBadge) {
 var newUBadge = new UserBadge({
 ID: ʟɴᴀᴍᴇ,
@@ -168,8 +168,8 @@ chat,
 });
 });
 });
-} catch (e) {
-ꜰᴜᴄᴋ.catch(e, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
+} catch (error) {
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
 return;
 }
 },

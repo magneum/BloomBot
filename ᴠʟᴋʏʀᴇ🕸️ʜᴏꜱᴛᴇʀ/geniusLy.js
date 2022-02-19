@@ -22,7 +22,7 @@ ${GeniusSong.raw.url}
 ${GeniusSong.raw.song_art_image_thumbnail_url}
 ${Geniuslyrics}`
 );
-} catch (e) {
+} catch (error) {
 try {
 console.log(`🛸Music-Lyrics🛸    ⬡==========================⬡`);
 const lyricssong = await Second_Try_Lyrics(Song);
@@ -31,17 +31,17 @@ console.log(
 ${lyricssong.source.link}
 ${lyricssong.lyrics}`
 );
-} catch (e) {
+} catch (error) {
 try {
-} catch (e) {
+} catch (error) {
 console.log(`🛸Song-Lyrics🛸    ⬡==========================⬡`);
 const lyric = await Third_Try_Lyrics.search(Song);
 console.log(lyric);
 }
 }
 }
-} catch (e) {
-console.log(e);
+} catch (error) {
+console.log(error);
 }
 })();
 `|⬡════════════════════════════════════════════|                            |═══════════════════════════════════════════⬡|`;

@@ -34,8 +34,8 @@ DNT: 1,
 responseType: "arraybuffer",
 });
 return res.data;
-} catch (e) {
-console.log(`Error : ${e}`);
+} catch (error) {
+console.log(`Error : ${error}`);
 }
 };
 const randomBytes = (length) => {

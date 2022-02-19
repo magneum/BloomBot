@@ -38,8 +38,8 @@ chat,
 ╚════════════╝`,
 "./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_Univ.png"
 );
-} catch (e) {
-ꜰᴜᴄᴋ.catch(e, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
+} catch (error) {
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
 return;
 }
 },

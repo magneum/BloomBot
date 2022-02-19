@@ -15,27 +15,38 @@ if (Commits.total) {
 console.log(
 Kolor.blue(`
 ╔◇║ ⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟
-║
-║💡 𝐈𝐧𝐟𝐨⬰ New Update pending, updating...
 ║💡 𝐈𝐧𝐟𝐨⬰ Vlkyre System Synced Latest Patch...
 ╚════════════༻꧂`)
 );
-await git.pull("origin", "KryTek", (e, update) => {
+await git.pull("origin", "KryTek", async (error, update) => {
 if (update && update.summary.changes) {
 exec("npm i --force").stderr.pipe(process.stderr);
 }
-if (e) {
-var ᴠʟᴋʟ = require(`child_process`).exec(
+if (error) {
+require(`child_process`)
+.exec(
 `git init && git config --global user.name "Kryknz" && git config --global user.email "KryKnz@yandex.com" && git config --global pull.rebase false`
+)
+.stdout.pipe(process.stdout);
+try {
+const mergeSummary = await git.merge();
+console.log(
+Kolor.blue(`
+╔◇║ ⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟
+║💡 𝐈𝐧𝐟𝐨⬰ Changes: [${mergeSummary.merges.length}]
+╚════════════༻꧂`)
 );
-ᴠʟᴋʟ.stdout.pipe(process.stdout);
-ᴠʟᴋʟ.on(`exit`, async function () {
-process.exitCode = 1;
-});
+} catch (error) {
+console.log(
+Kolor.red(
+`❌ 𝐄𝐫𝐫𝐨𝐫⬰ Merge Resulted with Total-Conflicts: ${Kolor.red(error)}`
+)
+);
+}
 }
 });
 }
-} catch (e) {
+} catch (error) {
 var ᴠʟᴋʟ = require(`child_process`).exec(
 `git init && git config --global user.name "Kryknz" && git config --global user.email "KryKnz@yandex.com" && git config --global pull.rebase false`
 );
