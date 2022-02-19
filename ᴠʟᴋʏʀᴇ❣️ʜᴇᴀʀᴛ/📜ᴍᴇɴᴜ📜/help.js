@@ -76,7 +76,7 @@ return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .sendMessage(
 ᴠʟᴋʏʀᴇ.chatId,
 {
-contentText: `╔⧉༻ *${ᴘɴᴀᴍᴇ}* ⧉꧂
+contentText: `╔⧉༻ *@${ᴘɴᴀᴍᴇ}* ꧂
 ║🍂 𝐕𝐥𝐤𝐲𝐫𝐞: Is an Advance Whatsapp User-Bot!
 ║🍂 𝐆𝐢𝐭𝐡𝐮𝐛: https://github.com/Kryknz/Vlkyre_
 ║🍂 𝐀𝐝𝐝: ${ᴋᴇɪ}request _your group link_
