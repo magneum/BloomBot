@@ -7,7 +7,6 @@ FROM python:latest
 ENV ᴋʀʏᴋɴᴢ⌬ᴋʀᴀᴋɪɴᴢʟᴀʙ "/venv"
 RUN python3 -m venv $ᴋʀʏᴋɴᴢ⌬ᴋʀᴀᴋɪɴᴢʟᴀʙ
 ENV PATH "$ᴋʀʏᴋɴᴢ⌬ᴋʀᴀᴋɪɴᴢʟᴀʙ/bin:$PATH"
-RUN mkdir ᴋʀʏᴋɴᴢ⌬ᴋʀᴀᴋɪɴᴢʟᴀʙ && cd ᴋʀʏᴋɴᴢ⌬ᴋʀᴀᴋɪɴᴢʟᴀʙ
 RUN apt-get update && apt-get upgrade -y && apt-get install git -y && apt-get install curl -y && apt-get install wget -y && apt-get install ffmpeg -y && apt-get install nodejs -y && apt-get install npm -y && hash -r && apt-get install python3 -y && apt-get install bpm-tools -y && apt-get install opus-tools -y && apt-get install python3-pip -y && apt-get install python-is-python3 -y
 RUN /venv/bin/python -m pip install --upgrade pip && path=path && npm install --global n && n install lts && path=path && npm install --global npm@8.5.1 && hash -r 
 RUN curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl && chmod a+rx /usr/local/bin/youtube-dl
