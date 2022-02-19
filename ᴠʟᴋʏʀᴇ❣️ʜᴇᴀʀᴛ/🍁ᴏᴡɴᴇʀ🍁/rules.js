@@ -33,7 +33,6 @@ chat,
 `꧁ *@${ᴘɴᴀᴍᴇ}* ꧂
 
 
-
 ╔◇║🏮𝐕𝐥𝐤𝐲𝐫𝐞 𝐑𝐮𝐥𝐞𝐬
 ║
 ║🔖 _Do not call bot, if you do then you'll get blocked by bot._

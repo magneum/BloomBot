@@ -39,7 +39,7 @@ MessageType.image,
 {
 quoted: chat,
 mimetype: Mimetype.png,
-caption: `꧁*${ᴘɴᴀᴍᴇ}*꧂
+caption: `꧁ *@${ᴘɴᴀᴍᴇ}* ꧂
 
 
 

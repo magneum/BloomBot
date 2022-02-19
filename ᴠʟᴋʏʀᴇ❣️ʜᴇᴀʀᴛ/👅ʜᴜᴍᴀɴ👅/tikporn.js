@@ -33,7 +33,6 @@ return ᴠʟᴋʏʀᴇ_Buttons.MIB(
 chat,
 ᴠʟᴋʏʀᴇ,
 `꧁ *@${ᴘɴᴀᴍᴇ}* ꧂
-
 \n❌𝐃𝐞𝐧𝐢𝐞𝐝: _Admins/Dev Only.You Are Not Allowed!_`,
 "./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_NotAdmin.png"
 );
@@ -45,7 +44,6 @@ return ᴠʟᴋʏʀᴇ_Buttons.MIB(
 chat,
 ᴠʟᴋʏʀᴇ,
 `꧁ *@${ᴘɴᴀᴍᴇ}* ꧂
-
  
 
 ╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
@@ -81,7 +79,6 @@ return ᴠʟᴋʏʀᴇ_Buttons.MIB(
 chat,
 ᴠʟᴋʏʀᴇ,
 `꧁ *@${ᴘɴᴀᴍᴇ}* ꧂
-
 
 ╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_  
 ║🧈 *Added To DB for _${newScpt}_ command First Time!*
@@ -167,7 +164,6 @@ chat,
 `꧁ *@${ᴘɴᴀᴍᴇ}* ꧂
 
 
-
 ╔════◇🌿𝗣𝗹𝗲𝗮𝘀𝗲 𝘄𝗮𝗶𝘁!
 ║🎬 𝗙𝗶𝗹𝗲 𝗧𝘆𝗽𝗲: _Video_
 ║⏰ 𝗪𝗮𝗶𝘁 𝗧𝗶𝗺𝗲: _Depends on Length of file._
@@ -208,7 +204,6 @@ await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 ᴠʟᴋʏʀᴇ.chatId,
 {
 contentText: `꧁ *@${ᴘɴᴀᴍᴇ}* ꧂
-
 
 ╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
 ║📞 𝐀𝐝𝐦𝐢𝐧-𝐎𝐧𝐥𝐲: @${ᴘɴᴀᴍᴇ} 

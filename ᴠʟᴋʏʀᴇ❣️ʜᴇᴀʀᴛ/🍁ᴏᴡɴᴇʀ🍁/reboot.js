@@ -36,7 +36,6 @@ return ᴠʟᴋʏʀᴇ_Buttons.MIB(
 chat,
 ᴠʟᴋʏʀᴇ,
 `꧁ *@${ᴘɴᴀᴍᴇ}* ꧂
-
 \n❌𝐃𝐞𝐧𝐢𝐞𝐝: _Owner/Dev Only.You Are Not Allowed!_`,
 "./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_OwnerOnly.png"
 );
@@ -47,7 +46,6 @@ chat,
 chat,
 ᴠʟᴋʏʀᴇ,
 `꧁ *@${ᴘɴᴀᴍᴇ}* ꧂
-
 
 
 (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 by ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🛸 

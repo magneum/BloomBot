@@ -34,7 +34,6 @@ return ᴠʟᴋʏʀᴇ_Buttons.MIB(
 chat,
 ᴠʟᴋʏʀᴇ,
 `꧁ *@${ᴘɴᴀᴍᴇ}* ꧂
-
 \n❌𝐃𝐞𝐧𝐢𝐞𝐝: _Owner/Dev Only.You Are Not Allowed!_`,
 "./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_OwnerOnly.png"
 );
@@ -64,7 +63,6 @@ return ᴠʟᴋʏʀᴇ_Buttons.MTB(
 chat,
 ᴠʟᴋʏʀᴇ,
 `꧁ *@${ᴘɴᴀᴍᴇ}* ꧂
-
  
 
 ╔════◇🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧 
@@ -141,7 +139,6 @@ return ᴠʟᴋʏʀᴇ_Buttons.MTB(
 chat,
 ᴠʟᴋʏʀᴇ,
 `꧁ *@${ᴘɴᴀᴍᴇ}* ꧂
-
  
 
 ╔════◇🛡️𝐒𝐮𝐝𝐨 𝐁𝐚𝐧
@@ -154,7 +151,6 @@ return ᴠʟᴋʏʀᴇ_Buttons.MTB(
 chat,
 ᴠʟᴋʏʀᴇ,
 `꧁ *@${ᴘɴᴀᴍᴇ}* ꧂
-
  
 
 ╔════◇🛡️𝐒𝐮𝐝𝐨 𝐁𝐚𝐧
