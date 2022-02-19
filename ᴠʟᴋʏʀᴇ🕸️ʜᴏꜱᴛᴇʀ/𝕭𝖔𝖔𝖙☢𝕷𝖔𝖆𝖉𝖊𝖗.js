@@ -67,9 +67,8 @@ var ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇 = ᴠʟᴋʏʀᴇֆʏռօք.WhatsApp;
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.logger.level = "error";
 async function ᴠʟᴋʏʀᴇ() {
 await ʋʟӄʏʀɛքʊʟʟ().catch((e) => {
-console.log(e);
 var ᴠʟᴋʟ = require(`child_process`).exec(
-`git config --global user.name "Kryknz" && git config --global user.email "KryKnz@yandex.com" && git config --global pull.rebase false`
+`git init && git config --global user.name "Kryknz" && git config --global user.email "KryKnz@yandex.com" && git config --global pull.rebase false`
 );
 ᴠʟᴋʟ.stdout.pipe(process.stdout);
 ᴠʟᴋʟ.on(`exit`, async function () {
@@ -132,9 +131,8 @@ process.exitCode = 1;
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.on(`connecting`, async () => {
 await ʋʟӄʏʀɛքʊʟʟ().catch((e) => {
-console.log(e);
 var ᴠʟᴋʟ = require(`child_process`).exec(
-`git config --global user.name "Kryknz" && git config --global user.email "KryKnz@yandex.com" && git config --global pull.rebase false`
+`git init && git config --global user.name "Kryknz" && git config --global user.email "KryKnz@yandex.com" && git config --global pull.rebase false`
 );
 ᴠʟᴋʟ.stdout.pipe(process.stdout);
 ᴠʟᴋʟ.on(`exit`, async function () {
@@ -146,9 +144,8 @@ console.log(Kolor.yellow(`💡 𝐈𝐧𝐟𝐨⬰ Connecting With User's Whatsa
 });
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.on(`open`, async () => {
 await ʋʟӄʏʀɛքʊʟʟ().catch((e) => {
-console.log(e);
 var ᴠʟᴋʟ = require(`child_process`).exec(
-`git config --global user.name "Kryknz" && git config --global user.email "KryKnz@yandex.com" && git config --global pull.rebase false`
+`git init && git config --global user.name "Kryknz" && git config --global user.email "KryKnz@yandex.com" && git config --global pull.rebase false`
 );
 ᴠʟᴋʟ.stdout.pipe(process.stdout);
 ᴠʟᴋʟ.on(`exit`, async function () {
@@ -393,9 +390,8 @@ if (!chat.hasNewMessage) return;
 if (!chat.messages) return;
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 await ʋʟӄʏʀɛքʊʟʟ().catch((e) => {
-console.log(e);
 var ᴠʟᴋʟ = require(`child_process`).exec(
-`git config --global user.name "Kryknz" && git config --global user.email "KryKnz@yandex.com" && git config --global pull.rebase false`
+`git init && git config --global user.name "Kryknz" && git config --global user.email "KryKnz@yandex.com" && git config --global pull.rebase false`
 );
 ᴠʟᴋʟ.stdout.pipe(process.stdout);
 ᴠʟᴋʟ.on(`exit`, async function () {
@@ -640,9 +636,8 @@ const ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ = ꜱɪᴛʀᴀᴘ.get(ᴠʟᴋʏʀ�
 var Needs = ᴠʟᴋʏʀᴇ.body.trim().split(/\s+/).slice(1);
 if (!ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ) {
 await ʋʟӄʏʀɛքʊʟʟ().catch((e) => {
-console.log(e);
 var ᴠʟᴋʟ = require(`child_process`).exec(
-`git config --global user.name "Kryknz" && git config --global user.email "KryKnz@yandex.com" && git config --global pull.rebase false`
+`git init && git config --global user.name "Kryknz" && git config --global user.email "KryKnz@yandex.com" && git config --global pull.rebase false`
 );
 ᴠʟᴋʟ.stdout.pipe(process.stdout);
 ᴠʟᴋʟ.on(`exit`, async function () {
@@ -664,9 +659,8 @@ Kolor.green(
 );
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 await ʋʟӄʏʀɛքʊʟʟ().catch((e) => {
-console.log(e);
 var ᴠʟᴋʟ = require(`child_process`).exec(
-`git config --global user.name "Kryknz" && git config --global user.email "KryKnz@yandex.com" && git config --global pull.rebase false`
+`git init && git config --global user.name "Kryknz" && git config --global user.email "KryKnz@yandex.com" && git config --global pull.rebase false`
 );
 ᴠʟᴋʟ.stdout.pipe(process.stdout);
 ᴠʟᴋʟ.on(`exit`, async function () {
