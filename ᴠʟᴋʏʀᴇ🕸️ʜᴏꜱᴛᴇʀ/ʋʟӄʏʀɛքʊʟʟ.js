@@ -13,11 +13,9 @@ await git.fetch();
 await git.log(["KryTek..origin/KryTek"]);
 await git.pull("origin", "KryTek", async (error, update) => {
 if (error) {
-exec(
-`git config --global user.name "Kryknz" && git config --global user.email "KryKnz@yandex.com" && git config --global pull.rebase false`
+exec(`git config --global user.name "Kryknz" && git config --global user.email "KryKnz@yandex.com" && git config --global pull.rebase false`
 ).stdout.pipe(process.stdout);
 try {
-exec("npm i --force").stderr.pipe(process.stderr);
 const mergeSummary = await git.merge();
 console.log(
 Kolor.blue(`💡 𝐈𝐧𝐟𝐨⬰ Changes: [${mergeSummary.merges.length}]`)
@@ -26,7 +24,6 @@ Kolor.blue(`💡 𝐈𝐧𝐟𝐨⬰ Changes: [${mergeSummary.merges.length}]`)
 }
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 if (update) {
-exec("npm i --force").stderr.pipe(process.stderr);
 try {
 const mergeSummary = await git.merge();
 console.log(
