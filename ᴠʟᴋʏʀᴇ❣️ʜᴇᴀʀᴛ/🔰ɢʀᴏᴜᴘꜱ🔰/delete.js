@@ -75,14 +75,11 @@ chat,
 }
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 try {
-var Fl = ᴘɴᴀᴍᴇ + "-" + ᴠʟᴋʏʀᴇ.chatId;
-await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
-.deleteMessage(ᴠʟᴋʏʀᴇ.chatId, {
+await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.deleteMessage(ᴠʟᴋʏʀᴇ.chatId, {
 id: ᴠʟᴋʏʀᴇ.replyMessageId,
-remoteJid: Fl,
+remoteJid: ᴠʟᴋʏʀᴇ.chatId,
 fromMe: true,
-})
-.catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
+});
 } catch (e) {
 return ᴠʟᴋʏʀᴇ_Buttons.MIB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
