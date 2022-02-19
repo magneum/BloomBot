@@ -190,6 +190,6 @@
 "youtube-metadata-from-url": "^1.0.3",
 "youtube-sr": "^4.0.1",
 "yt-search": "^2.10.3",
-"ytdl-core": "^4.10.1"
+"ytdl-core": "^4.9.1"
 }
 }
