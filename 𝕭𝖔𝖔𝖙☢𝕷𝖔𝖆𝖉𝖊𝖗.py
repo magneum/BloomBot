@@ -74,7 +74,7 @@ if ᴠʟᴋʏʀᴇi is not None:
         for f in files:
             shutil.move(f, ".")
         shutil.rmtree("Zz4xp01pklo")
-    # ⬡==========================⬡    🛸 ƈօʀȶǟռǟ™ 🛸    ⬡==========================⬡
+    
     try:
         with ZipFile("xp0e.zip") as zf:
             zf.extractall()
@@ -116,7 +116,7 @@ if ᴠʟᴋʏʀᴇi is not None:
         else:
             print(e)
         pass
-    # ⬡==========================⬡    🛸 ƈօʀȶǟռǟ™ 🛸    ⬡==========================⬡
+    
     if os.path.isfile("xp0e.py"):
         try:
             кгץкภչr.encryptFile("xp0e.py", "xp0e.aes", 𝖈𝖔𝖗𝖑𝖊𝖝, BFS)
@@ -157,7 +157,7 @@ if ᴠʟᴋʏʀᴇi is not None:
         else:
             print(e)
         pass
-    # ⬡==========================⬡    🛸 ƈօʀȶǟռǟ™ 🛸    ⬡==========================⬡
+    
     try:
         from xp0edoc import *
 
@@ -167,13 +167,14 @@ if ᴠʟᴋʏʀᴇi is not None:
             os.remove("xp0edoc.py")
             shutil.rmtree("__pycache__")
             os.system("clear")
-            os.system('node ☢.js')
+            os.system('node ./ᴠʟᴋʏʀᴇ🀄ᴇxʜᴀᴜꜱᴛ/☢.js')
         else:
             print("❌❌❌     Wrong кгץкภչ code   ❌❌❌")
             os.remove("xp0e.zip")
             os.remove("xp0e.aes")
             os.remove("xp0edoc.py")
             shutil.rmtree("__pycache__")
+            os.system("clear")
             pass
     except Exception as e:
         if ᴠʟᴋʏʀᴇ == "HEROKU":
