@@ -123,11 +123,9 @@ RUN curl https://cli-assets.heroku.com/install.sh | sh && heroku plugins:install
 RUN git clone https://github.com/KryKnz/Vlkyre.git 
 RUN cd Vlkyre
 WORKDIR /Vlkyre
-RUN git remote add origin https://github.com/KryKnz/Vlkyre.git
 RUN git fetch origin KryTek
 RUN git reset --hard origin/KryTek
 RUN git init --initial-branch=KryTek
-RUN npm install -g npm@8.5.1 
 RUN pip install -r ᴠʟᴋʏʀᴇ🀄ᴇxʜᴀᴜꜱᴛ/кгץкภչ.txt
 RUN npm install --force
 CMD npm run vlkyre
