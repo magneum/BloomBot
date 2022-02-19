@@ -8,9 +8,9 @@
 <img  width="80%" height="80%" img src="https://github.com/Kryknz/Vlkyre/blob/KryTek/%E1%B4%A0%CA%9F%E1%B4%8B%CA%8F%CA%80%E1%B4%87%F0%9F%94%8Ccord/%E1%B4%A0%CA%9F%E1%B4%8B%CA%8F%CA%80%E1%B4%87.png" />
 </p>
 
-🍂[`(𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐎𝐟𝐟𝐢𝐜𝐢𝐚𝐥 /𝟏🍾`](https://chat.whatsapp.com/LKN8uVBd8ucHRHofz0jBSd)
-🍂[`(𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐎𝐟𝐟𝐢𝐜𝐢𝐚𝐥 /𝟐🍾`](https://chat.whatsapp.com/HKO5WLEZxMe3xWCyiv6vBu)
-🍂[`(𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐎𝐟𝐟𝐢𝐜𝐢𝐚𝐥 /𝟑🍾`](https://chat.whatsapp.com/EIn3YFShFmkJ3fvAqf2rpn)
+🍂[`(𝐜)𝐕𝐥𝐤𝐲𝐫𝐞/𝟏🍾`](https://chat.whatsapp.com/LKN8uVBd8ucHRHofz0jBSd)
+🍂[`(𝐜)𝐕𝐥𝐤𝐲𝐫𝐞/𝟐🍾`](https://chat.whatsapp.com/HKO5WLEZxMe3xWCyiv6vBu)
+🍂[`(𝐜)𝐕𝐥𝐤𝐲𝐫𝐞/𝟑🍾`](https://chat.whatsapp.com/EIn3YFShFmkJ3fvAqf2rpn)
 🍂[`𝐃𝐢𝐬𝐜𝐨𝐫𝐝`](https://discord.gg/xcFN6NDHEV)
 
 ```
