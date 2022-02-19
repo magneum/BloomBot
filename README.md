@@ -11,7 +11,6 @@
 🍂[`(𝐜)𝐕𝐥𝐤𝐲𝐫𝐞/𝟏🍾`](https://chat.whatsapp.com/LKN8uVBd8ucHRHofz0jBSd)
 🍂[`(𝐜)𝐕𝐥𝐤𝐲𝐫𝐞/𝟐🍾`](https://chat.whatsapp.com/HKO5WLEZxMe3xWCyiv6vBu)
 🍂[`(𝐜)𝐕𝐥𝐤𝐲𝐫𝐞/𝟑🍾`](https://chat.whatsapp.com/EIn3YFShFmkJ3fvAqf2rpn)
-🍂[`𝐃𝐢𝐬𝐜𝐨𝐫𝐝`](https://discord.gg/xcFN6NDHEV)
 
 ```
 ╔⧉༻ ⚡𝐅𝐫𝐞𝐪𝐮𝐞𝐧𝐭𝐥𝐲 𝐀𝐬𝐤𝐞𝐝 𝐐𝐮𝐞𝐬𝐭𝐢𝐨𝐧𝐬
