@@ -46,7 +46,7 @@ return ᴠʟᴋʏʀᴇ_Buttons.MTB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 ᴠʟᴋʏʀᴇ,
-`꧁⧉  👋🏻𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚, *${ᴘɴᴀᴍᴇ}* ⧉꧂
+`꧁*${ᴘɴᴀᴍᴇ}*꧂
  _This Command is Only For Groups!_!`
 );
 }
@@ -55,7 +55,7 @@ return ᴠʟᴋʏʀᴇ_Buttons.MTB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 ᴠʟᴋʏʀᴇ,
-`꧁⧉  👋🏻𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚, *${ᴘɴᴀᴍᴇ}* ⧉꧂
+`꧁*${ᴘɴᴀᴍᴇ}*꧂
  _This Command is Only For Members and Not You ᴠʟᴋʏʀᴇ-User-Bots!_!`
 );
 }
@@ -72,7 +72,7 @@ return ᴠʟᴋʏʀᴇ_Buttons.MTB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 ᴠʟᴋʏʀᴇ,
-`꧁⧉  👋🏻𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚, *${ᴘɴᴀᴍᴇ}* ⧉꧂
+`꧁*${ᴘɴᴀᴍᴇ}*꧂
  
 
 
