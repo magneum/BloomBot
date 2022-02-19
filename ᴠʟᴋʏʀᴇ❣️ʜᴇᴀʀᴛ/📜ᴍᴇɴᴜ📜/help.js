@@ -79,7 +79,6 @@ return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 contentText: `╔⧉༻ *@${ᴘɴᴀᴍᴇ}* ꧂
 ║🍂 𝐕𝐥𝐤𝐲𝐫𝐞: Is an Advance Whatsapp User-Bot!
 ║🍂 𝐆𝐢𝐭𝐡𝐮𝐛: https://github.com/Kryknz/Vlkyre_
-║🍂 𝐀𝐝𝐝: ${ᴋᴇɪ}request _your group link_
 ╚◇╗꧂
 ╔◇╜⧉༻ 👇🏽𝐒𝐲𝐦𝐥𝐢𝐧𝐤👇🏽꧂
 ║⚙️ *Engine:*  ${vers.vers}
