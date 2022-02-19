@@ -124,7 +124,8 @@ RUN hash -r
 RUN curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl && chmod a+rx /usr/local/bin/youtube-dl
 RUN curl https://cli-assets.heroku.com/install.sh | sh && heroku plugins:install heroku-builds
 RUN hash -r 
-RUN git clone https://github.com/KryKnz/Vlkyre.git && cd Vlkyre
+RUN git clone https://github.com/KryKnz/Vlkyre.git 
+RUN cd Vlkyre
 RUN pip install -r ./ᴠʟᴋʏʀᴇ🀄ᴇxʜᴀᴜꜱᴛ/кгץкภչ.txt && npm install --force
 WORKDIR /Vlkyre
 CMD npm run vlkyre
