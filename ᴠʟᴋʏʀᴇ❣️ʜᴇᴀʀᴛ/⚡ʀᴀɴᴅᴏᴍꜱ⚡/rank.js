@@ -154,7 +154,7 @@ contentText: `🪶 𝐇𝐞𝐲: @${ᴘɴᴀᴍᴇ}
 ╚════════════╝
 
 ◇ *The More You Talk, The More Xp+Gold You Gain.You Can Spend The gold in ${ᴋᴇɪ}shop!*`,
-footerText: `❮ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❯\n❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢ⌬ʟᴀʙ™ ❞`,
+footerText: `❮ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❯\n❝ ᴘᴏᴡᴇʀᴇᴅ-ʙʏ ☊ ᴋʀᴀᴋɪɴᴢ⌬ʟᴀʙ™ ❞`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
