@@ -43,7 +43,7 @@ chat,
 await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .deleteMessage(ᴠʟᴋʏʀᴇ.chatId, {
 id: ᴠʟᴋʏʀᴇ.replyMessageId,
-remoteJid: ᴠʟᴋʏʀᴇ.chatId,
+remoteJid: ʟɴᴀᴍᴇ,
 fromMe: true,
 })
 .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
