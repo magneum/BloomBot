@@ -5,7 +5,7 @@
 # |⬡════════════════════════════════════════════|                            |═══════════════════════════════════════════⬡|
 FROM python:latest
 ENV ᴋʀʏᴋɴᴢ_ᴋʀᴀᴋɪɴᴢʟᴀʙ "/venv"
-RUN python -m venv $ᴋʀʏᴋɴᴢ_ᴋʀᴀᴋɪɴᴢʟᴀʙ
+RUN python3 -m venv $ᴋʀʏᴋɴᴢ_ᴋʀᴀᴋɪɴᴢʟᴀʙ
 ENV PATH "$ᴋʀʏᴋɴᴢ_ᴋʀᴀᴋɪɴᴢʟᴀʙ/bin:$PATH"
 RUN apt update && apt upgrade -y && apt install git -y && apt install curl -y && apt install wget -y && apt install ffmpeg -y && apt install nodejs -y && apt install npm -y && hash -r && apt install python3 -y && apt install bpm-tools -y && apt install opus-tools -y && apt install python3-pip -y && apt install python-is-python3 -y && apt install python3-venv -y
 RUN /venv/bin/python3 -m pip install --upgrade pip && path=path && npm install -g n && n install lts && path=path && npm install -g npm@8.5.1 && hash -r 
