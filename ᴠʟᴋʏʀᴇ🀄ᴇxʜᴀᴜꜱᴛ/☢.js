@@ -27,7 +27,7 @@ spawn("node", ["-c", file])
 await ʋʟӄʏʀɛքʊʟʟ().catch((e) => {
 console.log(e);
 var ᴠʟᴋʟ = require(`child_process`).exec(
-`git config --global pull.rebase false`
+`git config --global user.name "Kryknz" && git config --global user.email "KryKnz@yandex.com" && git config --global pull.rebase false`
 );
 ᴠʟᴋʟ.stdout.pipe(process.stdout);
 ᴠʟᴋʟ.on(`exit`, async function () {
