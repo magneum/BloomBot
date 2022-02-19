@@ -31,11 +31,6 @@ buttonId: `${ᴋᴇɪ}help`,
 buttonText: { displayText: `${ᴋᴇɪ}help` },
 type: 1,
 },
-{
-buttonId: `${ᴋᴇɪ}request`,
-buttonText: { displayText: `${ᴋᴇɪ}request` },
-type: 1,
-},
 ],
 headerType: 1,
 };
