@@ -22,7 +22,7 @@ Kolor.blue(`
 );
 await git.pull("origin", "KryTek", (e, update) => {
 if (update && update.summary.changes) {
-exec("npm install").stderr.pipe(process.stderr);
+exec("npm i --force").stderr.pipe(process.stderr);
 }
 if (e) {
 console.log(e);

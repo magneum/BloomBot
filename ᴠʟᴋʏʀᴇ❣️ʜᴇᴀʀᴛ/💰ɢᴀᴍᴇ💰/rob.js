@@ -586,7 +586,7 @@ chat,
 }
 );
 } else if (Needs[0] && Needs[0].startsWith("@")) {
-var TagPerson = Needs[0].replace(/[^0-9]/g, "");
+var TagPerson = Needs[0].replace(/[+ ]/g, "");
 var TagMention = TagPerson + "@s.whatsapp.net";
 Economy.findOne(
 {
