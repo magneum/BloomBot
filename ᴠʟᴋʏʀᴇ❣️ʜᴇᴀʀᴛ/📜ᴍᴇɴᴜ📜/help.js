@@ -77,15 +77,15 @@ return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 ᴠʟᴋʏʀᴇ.chatId,
 {
 contentText: `╔⧉༻ *@${ᴘɴᴀᴍᴇ}* ꧂
-║🍂 𝐕𝐥𝐤𝐲𝐫𝐞: Is an Advance Whatsapp User-Bot!
-║🍂 𝐆𝐢𝐭𝐡𝐮𝐛: https://github.com/Kryknz/Vlkyre_
+║🍂 𝐕𝐥𝐤𝐲𝐫𝐞: _Is an Advance Whatsapp User-Bot!_
+║🍂 𝐆𝐢𝐭𝐡𝐮𝐛: _https://github.com/Kryknz/Vlkyre_
 ╚◇╗꧂
 ╔◇╜⧉༻ 👇🏽𝐒𝐲𝐦𝐥𝐢𝐧𝐤👇🏽꧂
-║⚙️ *Engine:*  ${vers.vers}
-║💻 *Platform:*  ${os.platform()}
-║🛰️ *Latency:*  ${latensi.toFixed(4)}ms
-║☕ *Uptime:*  ${runtime(process.uptime())}
-║🎮 *Ram:*  ${formatp(os.totalmem() - os.freemem())} / ${formatp(
+║⚙️ *Engine:*  _${vers.vers}_
+║💻 *Platform:*  _${os.platform()}_
+║🛰️ *Latency:*  _${latensi.toFixed(4)}ms_
+║☕ *Uptime:*  _${runtime(process.uptime())}_
+║🎮 *Ram:*  _${formatp(os.totalmem() - os.freemem())} / ${formatp(
 os.totalmem()
 )}_
 ╚◇╗꧂
