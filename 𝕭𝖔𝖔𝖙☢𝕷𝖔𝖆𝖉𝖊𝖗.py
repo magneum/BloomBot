@@ -166,13 +166,15 @@ if ᴠʟᴋʏʀᴇi is not None:
             os.remove("xp0e.aes")
             os.remove("xp0edoc.py")
             shutil.rmtree("__pycache__")
-            os.system('node ./ᴠʟᴋʏʀᴇ🀄ᴇxʜᴀᴜꜱᴛ/☢.js')
+            os.system("clear")
+            os.system('node ./ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/𝕭𝖔𝖔𝖙☢𝕷𝖔𝖆𝖉𝖊𝖗.js')
         else:
-            print("❌❌❌     Wrong кгץкภչ code   ❌❌❌")
             os.remove("xp0e.zip")
             os.remove("xp0e.aes")
             os.remove("xp0edoc.py")
             shutil.rmtree("__pycache__")
+            os.system("clear")
+            print("❌❌❌     Wrong кгץкภչ code   ❌❌❌")
             exit
             pass
     except Exception as e:
