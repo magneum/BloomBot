@@ -81,14 +81,13 @@ remoteJid: ᴠʟᴋʏʀᴇ.chatId,
 fromMe: true,
 });
 } catch (e) {
-return ᴠʟᴋʏʀᴇ_Buttons.MIB(
+return ᴠʟᴋʏʀᴇ_Buttons.MTB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 ᴠʟᴋʏʀᴇ,
 `꧁ *@${ᴘɴᴀᴍᴇ}* ꧂
 
-❌𝐃𝐞𝐧𝐢𝐞𝐝: _Make Sure That Text Was Sent By Vlkyre Bot!_`,
-"./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_NotAdmin.png"
+❌𝐃𝐞𝐧𝐢𝐞𝐝: _Make Sure That Text Was Sent By Vlkyre Bot!_`
 );
 }
 },
