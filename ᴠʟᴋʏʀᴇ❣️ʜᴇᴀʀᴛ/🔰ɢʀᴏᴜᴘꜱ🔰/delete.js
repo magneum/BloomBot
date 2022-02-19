@@ -59,9 +59,9 @@ chat,
 }
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
-.deleteMessage(ʟɴᴀᴍᴇ, {
+.deleteMessage(ᴠʟᴋʏʀᴇ.chatId, {
 id: chat.quoted.message.stanzaId,
-remoteJid: ʟɴᴀᴍᴇ,
+remoteJid: ᴠʟᴋʏʀᴇ.chatId,
 fromMe: true,
 })
 .catch((Error) => ꜰᴜᴄᴋ.catch(Error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
