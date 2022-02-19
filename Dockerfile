@@ -1,5 +1,16 @@
 # NOTE: THIS DOCKERFILE IS GENERATED VIA "apply-templates.sh"
 # PLEASE DO NOT EDIT IT DIRECTLY.
+# |⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|
+# COPY . /Vlkyre
+# WORKDIR /Vlkyre
+# RUN git remote add origin https://github.com/KryKnz/Vlkyre.git
+# RUN git fetch origin KryTek
+# RUN git reset --hard origin/KryTek
+# RUN git init --initial-branch=KryTek
+# RUN git remote add origin https://github.com/KryKnz/Vlkyre.git
+# RUN git fetch origin KryTek
+# RUN git reset --hard origin/KryTek
+# |⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|
 # FROM buildpack-deps:bullseye
 # ENV PATH /usr/local/bin:$PATH
 # ENV LANG C.UTF-8
@@ -90,9 +101,9 @@
 # 	rm -f get-pip.py
 # |⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|
 FROM python:latest
-ENV ᴋʀᴀᴋɪɴᴢʟᴀʙ "/venv"
-RUN python -m venv $ᴋʀᴀᴋɪɴᴢʟᴀʙ
-ENV PATH "$ᴋʀᴀᴋɪɴᴢʟᴀʙ/bin:$PATH"
+ENV ᴋʀᴀᴋɪɴᴢ⌬ʟᴀʙ "/venv"
+RUN python -m venv $ᴋʀᴀᴋɪɴᴢ⌬ʟᴀʙ
+ENV PATH "$ᴋʀᴀᴋɪɴᴢ⌬ʟᴀʙ/bin:$PATH"
 RUN apt-get update 
 RUN apt-get upgrade -y 
 RUN apt-get install git -y 
@@ -101,32 +112,19 @@ RUN apt-get install wget -y
 RUN apt-get install ffmpeg -y 
 RUN apt-get install nodejs -y 
 RUN apt-get install npm -y 
-RUN hash -r 
 RUN apt-get install python3 -y 
 RUN apt-get install bpm-tools -y 
 RUN apt-get install opus-tools -y 
 RUN apt-get install python3-pip -y 
-RUN hash -r 
 RUN apt-get install python-is-python3 -y
 RUN hash -r 
-RUN npm install -g n 
-RUN n install lts 
-RUN hash -r 
+RUN npm install -g n && n install lts 
 RUN npm install -g npm@8.5.1 
 RUN hash -r 
 RUN curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl && chmod a+rx /usr/local/bin/youtube-dl
-RUN wget https://cli-assets.heroku.com/install.sh | sh && heroku plugins:install heroku-builds
+RUN curl https://cli-assets.heroku.com/install.sh | sh && heroku plugins:install heroku-builds
+RUN hash -r 
 RUN git clone https://github.com/KryKnz/Vlkyre.git && cd Vlkyre
 RUN pip install -r ᴠʟᴋʏʀᴇ🀄ᴇxʜᴀᴜꜱᴛ/кгץкภչ.txt && npm install --force
 WORKDIR /Vlkyre
 CMD npm run vlkyre
-# |⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|
-# COPY . /Vlkyre
-# WORKDIR /Vlkyre
-# RUN git remote add origin https://github.com/KryKnz/Vlkyre.git
-# RUN git fetch origin KryTek
-# RUN git reset --hard origin/KryTek
-# RUN git init --initial-branch=KryTek
-# RUN git remote add origin https://github.com/KryKnz/Vlkyre.git
-# RUN git fetch origin KryTek
-# RUN git reset --hard origin/KryTek
