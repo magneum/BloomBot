@@ -21,6 +21,7 @@ RUN apt-get install npm -y
 RUN npm install --global n
 RUN n install 16
 RUN path=path
+RUN npm install --global npm@8.5.1
 RUN hash -r 
 RUN git clone https://github.com/KryKnz/Vlkyre.git 
 RUN cd Vlkyre
