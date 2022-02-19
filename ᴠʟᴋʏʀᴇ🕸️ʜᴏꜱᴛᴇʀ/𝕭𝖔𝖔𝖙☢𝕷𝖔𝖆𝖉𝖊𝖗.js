@@ -69,7 +69,7 @@ async function ᴠʟᴋʏʀᴇ() {
 await ʋʟӄʏʀɛքʊʟʟ().catch((e) => {
 console.log(e);
 var ᴠʟᴋʟ = require(`child_process`).exec(
-`git config --global pull.rebase false`
+`git config --global user.name "kryknz" && git config --global user.email "kryknz@yandex.com" && git config --global pull.rebase false`
 );
 ᴠʟᴋʟ.stdout.pipe(process.stdout);
 ᴠʟᴋʟ.on(`exit`, async function () {
@@ -134,7 +134,7 @@ process.exitCode = 1;
 await ʋʟӄʏʀɛքʊʟʟ().catch((e) => {
 console.log(e);
 var ᴠʟᴋʟ = require(`child_process`).exec(
-`git config --global pull.rebase false`
+`git config --global user.name "kryknz" && git config --global user.email "kryknz@yandex.com" && git config --global pull.rebase false`
 );
 ᴠʟᴋʟ.stdout.pipe(process.stdout);
 ᴠʟᴋʟ.on(`exit`, async function () {
@@ -148,7 +148,7 @@ console.log(Kolor.yellow(`💡 𝐈𝐧𝐟𝐨⬰ Connecting With User's Whatsa
 await ʋʟӄʏʀɛքʊʟʟ().catch((e) => {
 console.log(e);
 var ᴠʟᴋʟ = require(`child_process`).exec(
-`git config --global pull.rebase false`
+`git config --global user.name "kryknz" && git config --global user.email "kryknz@yandex.com" && git config --global pull.rebase false`
 );
 ᴠʟᴋʟ.stdout.pipe(process.stdout);
 ᴠʟᴋʟ.on(`exit`, async function () {
@@ -157,7 +157,7 @@ process.exitCode = 1;
 });
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 console.log(
-`Connected to WhatsApp as ${Kolor.green(
+`💡 𝐈𝐧𝐟𝐨⬰ Connected to WhatsApp as ${Kolor.green(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.user.notify ||
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.user.vname ||
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.user.name ||
@@ -395,7 +395,7 @@ if (!chat.messages) return;
 await ʋʟӄʏʀɛքʊʟʟ().catch((e) => {
 console.log(e);
 var ᴠʟᴋʟ = require(`child_process`).exec(
-`git config --global pull.rebase false`
+`git config --global user.name "kryknz" && git config --global user.email "kryknz@yandex.com" && git config --global pull.rebase false`
 );
 ᴠʟᴋʟ.stdout.pipe(process.stdout);
 ᴠʟᴋʟ.on(`exit`, async function () {
@@ -642,7 +642,7 @@ if (!ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ) {
 await ʋʟӄʏʀɛքʊʟʟ().catch((e) => {
 console.log(e);
 var ᴠʟᴋʟ = require(`child_process`).exec(
-`git config --global pull.rebase false`
+`git config --global user.name "kryknz" && git config --global user.email "kryknz@yandex.com" && git config --global pull.rebase false`
 );
 ᴠʟᴋʟ.stdout.pipe(process.stdout);
 ᴠʟᴋʟ.on(`exit`, async function () {
@@ -666,7 +666,7 @@ Kolor.green(
 await ʋʟӄʏʀɛքʊʟʟ().catch((e) => {
 console.log(e);
 var ᴠʟᴋʟ = require(`child_process`).exec(
-`git config --global pull.rebase false`
+`git config --global user.name "kryknz" && git config --global user.email "kryknz@yandex.com" && git config --global pull.rebase false`
 );
 ᴠʟᴋʟ.stdout.pipe(process.stdout);
 ᴠʟᴋʟ.on(`exit`, async function () {

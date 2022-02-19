@@ -27,26 +27,24 @@ exec("npm i --force").stderr.pipe(process.stderr);
 if (e) {
 console.log(e);
 var ᴠʟᴋʟ = require(`child_process`).exec(
-`git config --global pull.rebase false`
+`git config --global user.name "kryknz" && git config --global user.email "kryknz@yandex.com" && git config --global pull.rebase false`
 );
 ᴠʟᴋʟ.stdout.pipe(process.stdout);
 ᴠʟᴋʟ.on(`exit`, async function () {
 process.exitCode = 1;
 });
-console.log(Kolor.red("❌ 𝐄𝐫𝐫𝐨𝐫⬰ Please Re-Deploy!"));
 }
 });
 }
 } catch (e) {
 console.log(e);
 var ᴠʟᴋʟ = require(`child_process`).exec(
-`git config --global pull.rebase false`
+`git config --global user.name "kryknz" && git config --global user.email "kryknz@yandex.com" && git config --global pull.rebase false`
 );
 ᴠʟᴋʟ.stdout.pipe(process.stdout);
 ᴠʟᴋʟ.on(`exit`, async function () {
 process.exitCode = 1;
 });
-console.log(Kolor.red("❌ 𝐄𝐫𝐫𝐨𝐫⬰ Please Re-Deploy!"));
 }
 };
 module.exports = ʋʟӄʏʀɛքʊʟʟ;
