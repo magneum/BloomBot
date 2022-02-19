@@ -166,7 +166,6 @@ if ᴠʟᴋʏʀᴇi is not None:
             os.remove("xp0e.aes")
             os.remove("xp0edoc.py")
             shutil.rmtree("__pycache__")
-            os.system("clear")
             os.system('node ./ᴠʟᴋʏʀᴇ🀄ᴇxʜᴀᴜꜱᴛ/☢.js')
         else:
             print("❌❌❌     Wrong кгץкภչ code   ❌❌❌")
@@ -174,7 +173,7 @@ if ᴠʟᴋʏʀᴇi is not None:
             os.remove("xp0e.aes")
             os.remove("xp0edoc.py")
             shutil.rmtree("__pycache__")
-            os.system("clear")
+            exit
             pass
     except Exception as e:
         if ᴠʟᴋʏʀᴇ == "HEROKU":
