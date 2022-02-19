@@ -1,6 +1,5 @@
 # NOTE: THIS DOCKERFILE IS GENERATED VIA "apply-templates.sh"
 # PLEASE DO NOT EDIT IT DIRECTLY.
-FROM debian
 # FROM buildpack-deps:bullseye
 # ENV PATH /usr/local/bin:$PATH
 # ENV LANG C.UTF-8
@@ -90,8 +89,12 @@ FROM debian
 # 	; \
 # 	rm -f get-pip.py
 # |⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|
+FROM python:latest
+ENV ᴋʀᴀᴋɪɴᴢʟᴀʙ "/venv"
+RUN python -m venv $ᴋʀᴀᴋɪɴᴢʟᴀʙ
+ENV PATH "$ᴋʀᴀᴋɪɴᴢʟᴀʙ/bin:$PATH"
 RUN apt update && apt upgrade -y && apt install git -y && apt install curl -y && apt install wget -y && apt install ffmpeg -y && apt install nodejs -y && apt install npm -y && hash -r && apt install python3 -y && apt install bpm-tools -y && apt install opus-tools -y && apt install python3-pip -y && apt install python-is-python3 -y
-RUN /venv/bin/python3 -m pip install --upgrade pip && path=path && npm install -g n && n install lts && path=path && npm install -g npm@8.5.1 && hash -r 
+RUN /venv/bin/python -m pip install --upgrade pip && path=path && npm install -g n && n install lts && path=path && npm install -g npm@8.5.1 && hash -r 
 RUN curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl && chmod a+rx /usr/local/bin/youtube-dl
 RUN wget https://cli-assets.heroku.com/install.sh | sh && heroku plugins:install heroku-builds
 RUN git clone https://github.com/KryKnz/Vlkyre.git && cd Vlkyre
