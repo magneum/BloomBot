@@ -4,13 +4,13 @@
 # ENV PATH /usr/local/bin:$PATH
 # ENV LANG C.UTF-8
 # RUN set -eux; \
-# 	apt-get update; \
-# 	apt-get install -y --no-install-recommends \
+# 	apt-get-get update; \
+# 	apt-get-get install -y --no-install-recommends \
 # 		libbluetooth-dev \
 # 		tk-dev \
 # 		uuid-dev \
 # 	; \
-# 	rm -rf /var/lib/apt/lists/*
+# 	rm -rf /var/lib/apt-get/lists/*
 # ENV GPG_KEY A035C8C19219BA821ECEA86B64E628F8D684696D
 # ENV PYTHON_VERSION 3.11.0a5
 # RUN set -eux; \
@@ -93,8 +93,28 @@ FROM python:latest
 ENV ᴋʀᴀᴋɪɴᴢʟᴀʙ "/venv"
 RUN python -m venv $ᴋʀᴀᴋɪɴᴢʟᴀʙ
 ENV PATH "$ᴋʀᴀᴋɪɴᴢʟᴀʙ/bin:$PATH"
-RUN apt update && apt upgrade -y && apt install git -y && apt install curl -y && apt install wget -y && apt install ffmpeg -y && apt install nodejs -y && apt install npm -y && hash -r && apt install python3 -y && apt install bpm-tools -y && apt install opus-tools -y && apt install python3-pip -y && apt install python-is-python3 -y
-RUN /venv/bin/python -m pip install --upgrade pip && path=path && npm install -g n && n install lts && path=path && npm install -g npm@8.5.1 && hash -r 
+RUN apt-get update 
+RUN apt-get upgrade -y 
+RUN apt-get install git -y 
+RUN apt-get install curl -y 
+RUN apt-get install wget -y 
+RUN apt-get install ffmpeg -y 
+RUN apt-get install nodejs -y 
+RUN apt-get install npm -y 
+RUN hash -r 
+RUN apt-get install python3 -y 
+RUN apt-get install bpm-tools -y 
+RUN apt-get install opus-tools -y 
+RUN apt-get install python3-pip -y 
+RUN apt-get install python-is-python3 -y
+RUN hash -r 
+RUN /venv/bin/python -m pip install --upgrade pip 
+RUN hash -r 
+RUN npm install -g n 
+RUN n install lts 
+RUN hash -r 
+RUN npm install -g npm@8.5.1 
+RUN hash -r 
 RUN curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl && chmod a+rx /usr/local/bin/youtube-dl
 RUN wget https://cli-assets.heroku.com/install.sh | sh && heroku plugins:install heroku-builds
 RUN git clone https://github.com/KryKnz/Vlkyre.git && cd Vlkyre
