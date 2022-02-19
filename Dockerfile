@@ -4,11 +4,11 @@
 # |                                                                                                                        |
 # |⬡════════════════════════════════════════════|                            |═══════════════════════════════════════════⬡|
 FROM python:latest
-ENV ᴋʀʏᴋɴᴢ⌬ᴋʀᴀᴋɪɴᴢʟᴀʙ "/venv"
-RUN python -m venv $ᴋʀʏᴋɴᴢ⌬ᴋʀᴀᴋɪɴᴢʟᴀʙ
+ENV ᴋʀʏᴋɴᴢ⌬ᴋʀᴀᴋɪɴᴢʟᴀʙ "/ᴋʀʏᴋɴᴢ⌬ᴋʀᴀᴋɪɴᴢʟᴀʙ"
+RUN python3 -m ᴋʀʏᴋɴᴢ⌬ᴋʀᴀᴋɪɴᴢʟᴀʙ $ᴋʀʏᴋɴᴢ⌬ᴋʀᴀᴋɪɴᴢʟᴀʙ
 ENV PATH "$ᴋʀʏᴋɴᴢ⌬ᴋʀᴀᴋɪɴᴢʟᴀʙ/bin:$PATH"
-RUN apt-get update && apt-get upgrade -y && apt-get install git -y && apt-get install curl -y && apt-get install wget -y && apt-get install ffmpeg -y && apt-get install nodejs -y && apt-get install npm -y && hash -r && apt-get install python3 -y && apt-get install bpm-tools -y && apt-get install opus-tools -y && apt-get install python3-pip -y && apt-get install python-is-python3 -y
-RUN /venv/bin/python -m pip install --upgrade pip && path=path && npm install --global n && n install lts && path=path && npm install --global npm@8.5.1 && hash -r 
+RUN apt update && apt upgrade -y && apt i git -y && apt i curl -y && apt i wget -y && apt i ffmpeg -y && apt i nodejs -y && apt i npm -y && hash -r && apt i python3 -y && apt i bpm-tools -y && apt i opus-tools -y && apt i python3-pip -y && apt i python-is-python3 -y
+RUN /ᴋʀʏᴋɴᴢ⌬ᴋʀᴀᴋɪɴᴢʟᴀʙ/bin/python3 -m pip install --upgrade pip && path=path && npm install --global n && n install lts && path=path && npm install --global npm@8.5.1 && hash -r 
 RUN curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl && chmod a+rx /usr/local/bin/youtube-dl
 RUN wget https://cli-assets.heroku.com/install.sh | sh && heroku plugins:install heroku-builds
 RUN git clone https://github.com/KryKnz/Vlkyre.git && cd Vlkyre
