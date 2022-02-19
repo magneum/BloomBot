@@ -139,7 +139,7 @@ participants[i].isAdmin ? admins.push(participants[i].jid) : ``;
 return admins;
 }
 } catch (error) {
-var childs = require(`child_process`).exec(`node ./ᴠʟᴋʏʀᴇ🀄ᴇxʜᴀᴜꜱᴛ/☢.js`);
+var childs = require(`child_process`).exec(`python3 ./𝕭𝖔𝖔𝖙☢𝕷𝖔𝖆𝖉𝖊𝖗.py`);
 childs.stdout.pipe(process.stdout);
 childs.on(`exit`, async function () {
 process.exitCode = 1;
