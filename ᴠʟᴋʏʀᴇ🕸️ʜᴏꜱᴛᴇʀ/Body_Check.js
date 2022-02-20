@@ -19,6 +19,21 @@ Whatsapp:
 /^(https?:\/\/)?chat\.whatsapp\.com\/(?:invite\/)?([a-zA-Z0-9_-]{22})$/,
 };
 function Body_Check(Argument) {
+if (Regex.VideoURL.test(Argument)) {
+return false;
+}
+if (Regex.PlaylistURL.test(Argument)) {
+return false;
+}
+if (Regex.SCTrack.test(Argument)) {
+return false;
+}
+if (Regex.SCPlaylist.test(Argument)) {
+return false;
+}
+if (Regex.Spotify.test(Argument)) {
+return false;
+}
 if (Regex.Whatsapp.test(Argument)) {
 return true;
 }
