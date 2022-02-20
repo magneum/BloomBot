@@ -36,7 +36,7 @@ try {
 const downloader = await new Downloader({
 url: DirectFile,
 directory: `ᴠʟᴋʏʀᴇ🀄ᴇxʜᴀᴜꜱᴛ`,
-fileName: `${chat.key.id}.mp3`,
+fileName: `${chat.key.id}.mp4`,
 cloneFiles: false,
 });
 try {
