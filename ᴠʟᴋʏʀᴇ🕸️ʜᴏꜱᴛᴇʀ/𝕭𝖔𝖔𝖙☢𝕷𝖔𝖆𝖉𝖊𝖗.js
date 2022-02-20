@@ -16,11 +16,12 @@ const BanGroup = require(`../ᴠʟᴋʏʀᴇ🥠ᴘᴏʀᴛ/ban`);
 const Halt = require(`../ᴠʟᴋʏʀᴇ🥠ᴘᴏʀᴛ/halt`);
 const ᴠʟᴋʏʀᴇ_Loca = require(`./ᴠʟᴋʏʀᴇ_Loca`);
 const ᴠʟᴋʏʀᴇֆʏռօք = require(`./ᴠʟᴋʏʀᴇᴢᴇɴ`);
-const ʋʟӄʏʀɛքʊʟʟ = require("./ʋʟӄʏʀɛքʊʟʟ");
+const exec = require("child_process").exec;
 const { Tǟɮʟɛɨȶ } = require(`../Tǟɮʟɛɨȶ`);
 const moment = require(`moment-timezone`);
 const RankCheck = require(`./RankCheck`);
 const speed = require(`performance-now`);
+const ᴠʟᴋʏʀᴇgoose = require("mongoose");
 const ӄʀʏօȶɛӄ = require(`./ӄʀʏօȶɛӄ`);
 const welbuts = require(`./welbuts`);
 const cleanRF = require(`./cleanRF`);
@@ -65,7 +66,53 @@ var Timers = `𝐍𝐢𝐠𝐡𝐭💤`;
 var ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇 = ᴠʟᴋʏʀᴇֆʏռօք.WhatsApp;
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.logger.level = "error";
 async function ᴠʟᴋʏʀᴇ() {
-await ʋʟӄʏʀɛքʊʟʟ();
+await ᴠʟᴋʏʀᴇgoose
+.connect(_𝔏𝔞𝔟_.VLKYREMDB, {
+useNewUrlParser: true,
+useUnifiedTopology: true,
+useCreateIndex: true,
+useFindAndModify: false,
+})
+.catch((error) => {
+console.log(`❌ 𝐄𝐫𝐫𝐨𝐫⬰ ${error}`);
+process.exit(0);
+});
+`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
+try {
+const VlkyreFetch = require(`simple-git`)();
+await VlkyreFetch.fetch();
+exec(
+`git config --global user.name "KryKnz" && git config --global user.email "KryKnz@yandex.com" && git config --global pull.ff only && git config --global pull.rebase false`
+).stdout.pipe(process.stdout);
+var VlkyreFetched = await VlkyreFetch.log([`KryTek..origin/KryTek`]);
+if (VlkyreFetched.total != 0) {
+require(`simple-git`)()
+.exec(async () => {
+console.log(Kolor.blue(`💡 𝐈𝐧𝐟𝐨⬰ Starting Vlkyre Fetchers....`));
+})
+.pull(async (error, update) => {
+if (error) {
+try {
+const mergeSummary = await VlkyreFetch.merge();
+console.log(
+Kolor.blue(`💡 𝐈𝐧𝐟𝐨⬰ Changes: [${mergeSummary.merges.length}]`)
+);
+} catch (error) {
+console.log(Kolor.blue(`💡 𝐈𝐧𝐟𝐨⬰ Nothing To Merge!`));
+}
+} else if (update && update.summary.changes) {
+var child = require(`child_process`).exec(`python3 ⭕𝖈𝖆𝖗𝖆𝖒𝖊𝖑.py`);
+child.stdout.pipe(process.stdout);
+child.on(`exit`, async function () {
+process.exitCode = 1;
+});
+}
+});
+}
+} catch (error) {
+console.log(Kolor.red(`❌ 𝐄𝐫𝐫𝐨𝐫⬰ ${Kolor.red(error)}`));
+}
+`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 /*
 const path = require("path");
 const assert = require("assert");
@@ -100,12 +147,10 @@ console.log(Kolor.red(`💡 𝐈𝐧𝐟𝐨⬰ ᴠʟᴋʏʀᴇ Web Code is Wron
 process.exit(0);
 }
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.connect();
-ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.on(`connecting`, async () => {
-console.log(Kolor.yellow(`💡 𝐈𝐧𝐟𝐨⬰ Connecting With User's Whatsapp Web..`));
-});
+await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.connect();
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.on(`open`, async () => {
-console.log(`💡 𝐈𝐧𝐟𝐨⬰ Connected to WhatsApp as ${Kolor.green(
+console.log(
+`💡 𝐈𝐧𝐟𝐨⬰ Connected to WhatsApp as ${Kolor.green(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.user.notify ||
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.user.vname ||
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.user.name ||
@@ -339,47 +384,40 @@ if (update.action === `remove`) return;
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.on(`chat-update`, async (chat) => {
 if (!chat.hasNewMessage) return;
 if (!chat.messages) return;
-// `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-// try {
-// const VlkyreFetch = require(`simple-git`)();
-// await VlkyreFetch.fetch();
-// var VlkyreFetched = await VlkyreFetch.log([`KryTek..origin/KryTek`]);
-// if (VlkyreFetched.total != 0) {
-// require(`simple-git`)()
-// .exec(async () => {
-// console.log(Kolor.blue(`💡 𝐈𝐧𝐟𝐨⬰ Starting Vlkyre Fetchers....`));
-// })
-// .pull(async (error, update) => {
-// if (error) {
-// try {
-// const mergeSummary = await VlkyreFetch.merge();
-// console.log(
-// Kolor.blue(
-// `💡 𝐈𝐧𝐟𝐨⬰ Changes: [${mergeSummary.merges.length}]`
-// )
-// );
-// } catch (error) {}
-// } else if (update && update.summary.changes) {
-// var child = require(`child_process`).exec(
-// `python3 ⭕𝖈𝖆𝖗𝖆𝖒𝖊𝖑.py`
-// );
-// child.stdout.pipe(process.stdout);
-// child.on(`exit`, async function () {
-// process.exitCode = 1;
-// });
-// }
-// });
-// }
-// } catch (error) {
-// console.log(Kolor.red(`❌ 𝐄𝐫𝐫𝐨𝐫⬰ ${Kolor.red(error)}`));
-// }
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 try {
+const VlkyreFetch = require(`simple-git`)();
+await VlkyreFetch.fetch();
+exec(
+`git config --global user.name "KryKnz" && git config --global user.email "KryKnz@yandex.com" && git config --global pull.ff only && git config --global pull.rebase false`
+).stdout.pipe(process.stdout);
+var VlkyreFetched = await VlkyreFetch.log([`KryTek..origin/KryTek`]);
+if (VlkyreFetched.total != 0) {
+require(`simple-git`)()
+.exec(async () => {
+console.log(Kolor.blue(`💡 𝐈𝐧𝐟𝐨⬰ Starting Vlkyre Fetchers....`));
+})
+.pull(async (error, update) => {
+if (error) {
+try {
+const mergeSummary = await VlkyreFetch.merge();
+console.log(
+Kolor.blue(
+`💡 𝐈𝐧𝐟𝐨⬰ Changes: [${mergeSummary.merges.length}]`
+)
+);
+} catch (error) {
+console.log(Kolor.blue(`💡 𝐈𝐧𝐟𝐨⬰ Nothing To Merge!`));
+}
+} else if (update && update.summary.changes) {
 var child = require(`child_process`).exec(`python3 ⭕𝖈𝖆𝖗𝖆𝖒𝖊𝖑.py`);
 child.stdout.pipe(process.stdout);
 child.on(`exit`, async function () {
 process.exitCode = 1;
 });
+}
+});
+}
 } catch (error) {
 console.log(Kolor.red(`❌ 𝐄𝐫𝐫𝐨𝐫⬰ ${Kolor.red(error)}`));
 }
@@ -632,7 +670,9 @@ return await ᴠʟᴋʏʀᴇ_Buttons.MTB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 ᴠʟᴋʏʀᴇ,
-`❣️ 𝗠𝗲𝗻𝘁𝗶𝗼𝗻:  ꧁◤ *@${ᴘɴᴀᴍᴇ}* ◢꧂ ❌ No Such Command In Database!`
+`❣️ 𝗠𝗲𝗻𝘁𝗶𝗼𝗻:  ꧁◤ *@${ᴘɴᴀᴍᴇ}* ◢꧂
+
+❌ No Such Command In Database!`
 );
 } else {
 console.log(chat);
