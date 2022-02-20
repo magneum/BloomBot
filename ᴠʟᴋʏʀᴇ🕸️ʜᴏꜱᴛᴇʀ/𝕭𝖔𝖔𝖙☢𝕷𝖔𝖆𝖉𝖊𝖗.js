@@ -21,7 +21,6 @@ const { Tǟɮʟɛɨȶ } = require(`../Tǟɮʟɛɨȶ`);
 const moment = require(`moment-timezone`);
 const RankCheck = require(`./RankCheck`);
 const speed = require(`performance-now`);
-const ᴠʟᴋʏʀᴇgoose = require("mongoose");
 const ӄʀʏօȶɛӄ = require(`./ӄʀʏօȶɛӄ`);
 const welbuts = require(`./welbuts`);
 const cleanRF = require(`./cleanRF`);
@@ -66,6 +65,8 @@ var Timers = `𝐍𝐢𝐠𝐡𝐭💤`;
 var ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇 = ᴠʟᴋʏʀᴇֆʏռօք.WhatsApp;
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.logger.level = "error";
 async function ᴠʟᴋʏʀᴇ() {
+await ʋʟӄʏʀɛքʊʟʟ();
+/*
 const path = require("path");
 const assert = require("assert");
 const { spawn } = require("child_process");
@@ -83,18 +84,7 @@ spawn("node", ["-c", file])
 .on("exit", () => assert.ok(file) & console.log("Verified: ", file))
 .stderr.on("data", (chunk) => assert.fail(chunk.toString()));
 }
-`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-await ᴠʟᴋʏʀᴇgoose
-.connect(_𝔏𝔞𝔟_.VLKYREMDB, {
-useNewUrlParser: true,
-useUnifiedTopology: true,
-useCreateIndex: true,
-useFindAndModify: false,
-})
-.catch((error) => {
-console.log(`❌ 𝐄𝐫𝐫𝐨𝐫⬰ ${error}`);
-process.exit(0);
-});
+*/
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 var ꜱɪᴛʀᴀᴘ = new Map();
 var commandUsage = new Map();
