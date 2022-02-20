@@ -6,6 +6,7 @@
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
 const { MessageType } = require(`@adiwajshing/baileys`);
 const Downloader = require(`nodejs-file-downloader`);
+const ᴠʟᴋʏʀᴇ_Buttons = require(`./ᴠʟᴋʏʀᴇ_Buttons`);
 const { yta } = require("./VariableServers");
 const Tinyurl = require("tinyurl-api");
 const cleanRF = require(`./cleanRF`);
