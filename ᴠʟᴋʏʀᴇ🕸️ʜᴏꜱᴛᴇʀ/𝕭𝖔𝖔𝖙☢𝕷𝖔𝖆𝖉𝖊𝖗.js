@@ -637,53 +637,7 @@ chat,
 );
 } else {
 console.log(chat);
-console.log(
-Kolor.green(
-"⬡═══════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟"
-)
-);
-`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-try {
-const VlkyreFetch = require(`simple-git`)();
-await VlkyreFetch.fetch();
-require("child_process")
-.exec(
-`git config --global user.name "KryKnz" && git config --global user.email "KryKnz@yandex.com" && git config --global pull.ff only && git config --global pull.rebase false`
-)
-.stdout.pipe(process.stdout);
-var VlkyreFetched = await VlkyreFetch.log([
-`KryTek..origin/KryTek`,
-]);
-if (VlkyreFetched.total != 0) {
-VlkyreFetch.pull(async (error, update) => {
-if (error) {
-try {
-const mergeSummary = await VlkyreFetch.merge();
-console.log(
-Kolor.blue(
-`💡 𝐈𝐧𝐟𝐨⬰ Changes: [${mergeSummary.merges.length}]`
-)
-);
-} catch (error) {
-console.log(
-Kolor.blue(`💡 𝐈𝐧𝐟𝐨⬰ Nothing To Merge!`)
-);
-}
-} else if (update && update.summary.changes) {
-var child = require(`child_process`).exec(
-`python3 ⭕𝖈𝖆𝖗𝖆𝖒𝖊𝖑.py`
-);
-child.stdout.pipe(process.stdout);
-child.on(`exit`, async function () {
-process.exitCode = 1;
-});
-}
-});
-}
-} catch (error) {
-console.log(Kolor.red(`❌ 𝐄𝐫𝐫𝐨𝐫⬰ ${Kolor.red(error)}`));
-}
-`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
+console.log(Kolor.green("⬡═══════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟"));
 return ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ.handle(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
