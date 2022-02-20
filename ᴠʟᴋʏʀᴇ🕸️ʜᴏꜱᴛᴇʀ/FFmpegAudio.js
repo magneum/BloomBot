@@ -29,6 +29,7 @@ let { dl_link, thumb, title, filesize, filesizeF } = await yta(
 "https://youtu.be/1QnOyKJ7dmg",
 "id4"
 );
+const DirectFile = await Tinyurl(dl_link);
 ᴠʟᴋʏʀᴇ_Buttons.MIB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
@@ -49,9 +50,8 @@ chat,
 Found.thumbnail
 );
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-const TinyDone = await Tinyurl(dl_link);
 const downloader = await new Downloader({
-url: TinyDone,
+url: DirectFile,
 directory: `ᴠʟᴋʏʀᴇ🀄ᴇxʜᴀᴜꜱᴛ`,
 fileName: `${chat.key.id}.mp3`,
 cloneFiles: false,
