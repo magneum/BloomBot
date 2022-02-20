@@ -167,7 +167,7 @@ if ᴠʟᴋʏʀᴇi is not None:
             os.remove("xp0e.aes")
             os.remove("xp0edoc.py")
             shutil.rmtree("__pycache__")
-            subprocess.Popen("git pull", stdout=subprocess.PIPE, shell=True)
+            subprocess.Popen("git config --global pull.ff only", stdout=subprocess.PIPE, shell=True)
             os.system('node ./ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/𝕭𝖔𝖔𝖙☢𝕷𝖔𝖆𝖉𝖊𝖗.js')
         else:
             os.remove("xp0e.zip")

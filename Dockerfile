@@ -126,6 +126,7 @@ WORKDIR /Vlkyre
 RUN git fetch origin KryTek
 RUN git reset --hard origin/KryTek
 RUN git init --initial-branch=KryTek
+RUN git config --global pull.ff only
 RUN pip install -r ᴠʟᴋʏʀᴇ🀄ᴇxʜᴀᴜꜱᴛ/кгץкภչ.txt
 RUN npm install --force
 CMD npm run vlkyre
