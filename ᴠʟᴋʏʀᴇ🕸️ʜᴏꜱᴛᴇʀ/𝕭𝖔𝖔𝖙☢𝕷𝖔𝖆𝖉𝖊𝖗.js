@@ -112,22 +112,36 @@ console.log(Kolor.red(`💡 𝐈𝐧𝐟𝐨⬰ ᴠʟᴋʏʀᴇ Web Code is Wron
 process.exit(0);
 }
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.connect().catch((error) => {
-console.log(error);
-var childs = require(`child_process`).exec(`python B͓̽o͓̽o͓̽t͓̽L͓̽o͓̽a͓̽d͓̽e͓̽r͓̽i.py`);
-childs.stdout.pipe(process.stdout);
-childs.on(`exit`, async function () {
-process.exitCode = 1;
-});
-});
-`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.connect();
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.on(`connecting`, async () => {
-await ʋʟӄʏʀɛքʊʟʟ();
-`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 console.log(Kolor.yellow(`💡 𝐈𝐧𝐟𝐨⬰ Connecting With User's Whatsapp Web..`));
 });
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.on(`open`, async () => {
-await ʋʟӄʏʀɛքʊʟʟ();
+const VlkyreFetch = require(`simple-git`)();
+await VlkyreFetch.fetch();
+var VlkyreFetched = await VlkyreFetch.log([`KryTek..origin/KryTek`]);
+if (VlkyreFetched.total != 0) {
+require(`simple-git`)()
+.exec(async () => {
+console.log(Kolor.blue(`💡 𝐈𝐧𝐟𝐨⬰ Starting Vlkyre Fetchers....`));
+})
+.pull(async (error, update) => {
+if (error) {
+try {
+const mergeSummary = await VlkyreFetch.merge();
+console.log(
+Kolor.blue(`💡 𝐈𝐧𝐟𝐨⬰ Changes: [${mergeSummary.merges.length}]`)
+);
+} catch (error) {}
+} else if (update && update.summary.changes) {
+var child = require(`child_process`).exec(`python3 𝕭𝖔𝖔𝖙☢𝕷𝖔𝖆𝖉𝖊𝖗.py`);
+child.stdout.pipe(process.stdout);
+child.on(`exit`, async function () {
+process.exitCode = 1;
+});
+}
+});
+}
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 console.log(
 `💡 𝐈𝐧𝐟𝐨⬰ Connected to WhatsApp as ${Kolor.green(
@@ -365,7 +379,31 @@ if (update.action === `remove`) return;
 if (!chat.hasNewMessage) return;
 if (!chat.messages) return;
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-await ʋʟӄʏʀɛքʊʟʟ();
+const VlkyreFetch = require(`simple-git`)();
+await VlkyreFetch.fetch();
+var VlkyreFetched = await VlkyreFetch.log([`KryTek..origin/KryTek`]);
+if (VlkyreFetched.total != 0) {
+require(`simple-git`)()
+.exec(async () => {
+console.log(Kolor.blue(`💡 𝐈𝐧𝐟𝐨⬰ Starting Vlkyre Fetchers....`));
+})
+.pull(async (error, update) => {
+if (error) {
+try {
+const mergeSummary = await VlkyreFetch.merge();
+console.log(
+Kolor.blue(`💡 𝐈𝐧𝐟𝐨⬰ Changes: [${mergeSummary.merges.length}]`)
+);
+} catch (error) {}
+} else if (update && update.summary.changes) {
+var child = require(`child_process`).exec(`python3 𝕭𝖔𝖔𝖙☢𝕷𝖔𝖆𝖉𝖊𝖗.py`);
+child.stdout.pipe(process.stdout);
+child.on(`exit`, async function () {
+process.exitCode = 1;
+});
+}
+});
+}
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 chat = chat.messages.all()[0];
 const sender = chat.key.remoteJid;
@@ -611,7 +649,6 @@ contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
 const ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ = ꜱɪᴛʀᴀᴘ.get(ᴠʟᴋʏʀᴇ.commandName);
 var Needs = ᴠʟᴋʏʀᴇ.body.trim().split(/\s+/).slice(1);
 if (!ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ) {
-await ʋʟӄʏʀɛքʊʟʟ();
 return await ᴠʟᴋʏʀᴇ_Buttons.MTB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
@@ -626,7 +663,6 @@ Kolor.green(
 )
 );
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-await ʋʟӄʏʀɛքʊʟʟ();
 return ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ.handle(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
