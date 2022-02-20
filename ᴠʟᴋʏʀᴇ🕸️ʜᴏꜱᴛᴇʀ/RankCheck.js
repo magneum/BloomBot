@@ -70,8 +70,8 @@ level: 1,
 await newUsers
 .save()
 .catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
-try {
 let ImgF;
+try {
 var ResGot = await fetch(
 global.API("https://wall.alphacoders.com/api2.0", "/get.php", {
 auth: "3e7756c85df54b78f934a284c11abe4e",

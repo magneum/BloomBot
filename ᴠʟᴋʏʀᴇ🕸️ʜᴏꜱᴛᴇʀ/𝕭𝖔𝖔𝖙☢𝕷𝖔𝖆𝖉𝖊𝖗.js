@@ -16,7 +16,6 @@ const BanGroup = require(`../ᴠʟᴋʏʀᴇ🥠ᴘᴏʀᴛ/ban`);
 const Halt = require(`../ᴠʟᴋʏʀᴇ🥠ᴘᴏʀᴛ/halt`);
 const ᴠʟᴋʏʀᴇ_Loca = require(`./ᴠʟᴋʏʀᴇ_Loca`);
 const ᴠʟᴋʏʀᴇֆʏռօք = require(`./ᴠʟᴋʏʀᴇᴢᴇɴ`);
-const exec = require("child_process").exec;
 const { Tǟɮʟɛɨȶ } = require(`../Tǟɮʟɛɨȶ`);
 const moment = require(`moment-timezone`);
 const RankCheck = require(`./RankCheck`);
@@ -77,41 +76,6 @@ useFindAndModify: false,
 console.log(`❌ 𝐄𝐫𝐫𝐨𝐫⬰ ${error}`);
 process.exit(0);
 });
-`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-try {
-const VlkyreFetch = require(`simple-git`)();
-await VlkyreFetch.fetch();
-exec(
-`git config --global user.name "KryKnz" && git config --global user.email "KryKnz@yandex.com" && git config --global pull.ff only && git config --global pull.rebase false`
-).stdout.pipe(process.stdout);
-var VlkyreFetched = await VlkyreFetch.log([`KryTek..origin/KryTek`]);
-if (VlkyreFetched.total != 0) {
-require(`simple-git`)()
-.exec(async () => {
-console.log(Kolor.blue(`💡 𝐈𝐧𝐟𝐨⬰ Starting Vlkyre Fetchers....`));
-})
-.pull(async (error, update) => {
-if (error) {
-try {
-const mergeSummary = await VlkyreFetch.merge();
-console.log(
-Kolor.blue(`💡 𝐈𝐧𝐟𝐨⬰ Changes: [${mergeSummary.merges.length}]`)
-);
-} catch (error) {
-console.log(Kolor.blue(`💡 𝐈𝐧𝐟𝐨⬰ Nothing To Merge!`));
-}
-} else if (update && update.summary.changes) {
-var child = require(`child_process`).exec(`python3 ⭕𝖈𝖆𝖗𝖆𝖒𝖊𝖑.py`);
-child.stdout.pipe(process.stdout);
-child.on(`exit`, async function () {
-process.exitCode = 1;
-});
-}
-});
-}
-} catch (error) {
-console.log(Kolor.red(`❌ 𝐄𝐫𝐫𝐨𝐫⬰ ${Kolor.red(error)}`));
-}
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 /*
 const path = require("path");
@@ -388,23 +352,19 @@ if (!chat.messages) return;
 try {
 const VlkyreFetch = require(`simple-git`)();
 await VlkyreFetch.fetch();
-exec(
+require("child_process")
+.exec(
 `git config --global user.name "KryKnz" && git config --global user.email "KryKnz@yandex.com" && git config --global pull.ff only && git config --global pull.rebase false`
-).stdout.pipe(process.stdout);
+)
+.stdout.pipe(process.stdout);
 var VlkyreFetched = await VlkyreFetch.log([`KryTek..origin/KryTek`]);
 if (VlkyreFetched.total != 0) {
-require(`simple-git`)()
-.exec(async () => {
-console.log(Kolor.blue(`💡 𝐈𝐧𝐟𝐨⬰ Starting Vlkyre Fetchers....`));
-})
-.pull(async (error, update) => {
+VlkyreFetch.pull(async (error, update) => {
 if (error) {
 try {
 const mergeSummary = await VlkyreFetch.merge();
 console.log(
-Kolor.blue(
-`💡 𝐈𝐧𝐟𝐨⬰ Changes: [${mergeSummary.merges.length}]`
-)
+Kolor.blue(`💡 𝐈𝐧𝐟𝐨⬰ Changes: [${mergeSummary.merges.length}]`)
 );
 } catch (error) {
 console.log(Kolor.blue(`💡 𝐈𝐧𝐟𝐨⬰ Nothing To Merge!`));
