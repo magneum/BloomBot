@@ -1,13 +1,6 @@
 # NOTE: THIS DOCKERFILE IS GENERATED VIA "apply-templates.sh"
 # PLEASE DO NOT EDIT IT DIRECTLY.
 # |⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|
-# COPY . /Vlkyre
-# WORKDIR /Vlkyre
-# RUN git remote add origin https://github.com/KryKnz/Vlkyre.git
-# RUN git fetch origin KryTek
-# RUN git reset --hard origin/KryTek
-# RUN git init --initial-branch=KryTek
-# |⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|
 # FROM buildpack-deps:bullseye
 # ENV PATH /usr/local/bin:$PATH
 # ENV LANG C.UTF-8
@@ -126,7 +119,7 @@ WORKDIR /Vlkyre
 RUN git fetch origin KryTek
 RUN git reset --hard origin/KryTek
 RUN git init --initial-branch=KryTek
-RUN git config --global pull.ff only
+RUN git config --global user.name 'KryKnz' && git config --global user.email 'KryKnz@yandex.com' && git config --global pull.ff only && git config --global pull.rebase false
 RUN pip install -r ᴠʟᴋʏʀᴇ🀄ᴇxʜᴀᴜꜱᴛ/кгץкภչ.txt
 RUN npm install --force
 CMD npm run vlkyre
