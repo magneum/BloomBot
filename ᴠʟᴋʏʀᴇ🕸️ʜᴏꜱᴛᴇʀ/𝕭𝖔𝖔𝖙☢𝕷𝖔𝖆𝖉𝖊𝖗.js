@@ -4,6 +4,7 @@
 `|                                                                                                                        |`;
 `|⬡════════════════════════════════════════════|                            |═══════════════════════════════════════════⬡|`;
 require(`./konfs`);
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const Welcome = require(`../ᴠʟᴋʏʀᴇ🥠ᴘᴏʀᴛ/setwelcome`);
 const LinkList = require(`../ᴠʟᴋʏʀᴇ🥠ᴘᴏʀᴛ/antilink`);
