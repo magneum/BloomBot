@@ -190,8 +190,8 @@ contentText: `꧁ *@${ᴘɴᴀᴍᴇ}* ꧂
 ┊ 𝐌𝐢𝐧𝐞𝐜𝐫𝐚𝐟𝐭 🪵 𝐄𝐝𝐢𝐭𝐢𝐨𝐧
 ╚◇╗
 ╔◇╜
-║💫 *Name:* ${json.name}
-║〽️ *Pokedex ID:* ${json.id}
+║💫 *Name:* ${PokemonData.name}
+║〽️ *Pokedex ID:* ${PokemonData.id}
 ║🪙 *Worth:* ${Worth}gold
 ╚════════════╝
 
