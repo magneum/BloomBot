@@ -17,7 +17,7 @@ const BanGroup = require(`../ᴠʟᴋʏʀᴇ🥠ᴘᴏʀᴛ/ban`);
 const Halt = require(`../ᴠʟᴋʏʀᴇ🥠ᴘᴏʀᴛ/halt`);
 const ᴠʟᴋʏʀᴇ_Loca = require(`./ᴠʟᴋʏʀᴇ_Loca`);
 const ᴠʟᴋʏʀᴇֆʏռօք = require(`./ᴠʟᴋʏʀᴇᴢᴇɴ`);
-const { Tǟɮʟɛɨȶ } = require(`../Tǟɮʟɛɨȶ`);
+const { ᴠʟᴋʏʀᴇTǟɮ } = require(`../ᴠʟᴋʏʀᴇTǟɮ`);
 const moment = require(`moment-timezone`);
 const RankCheck = require(`./RankCheck`);
 const speed = require(`performance-now`);
@@ -135,7 +135,7 @@ MessageType.text
 .catch((error) => console.log(error));
 });
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-Tǟɮʟɛɨȶ(ꜱɪᴛʀᴀᴘ, commandUsage);
+ᴠʟᴋʏʀᴇTǟɮ(ꜱɪᴛʀᴀᴘ, commandUsage);
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.on(`group-update`, async (update) => {
 try {
 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.getProfilePicture(update.jid);
