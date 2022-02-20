@@ -50,7 +50,7 @@
   },
   "license": "Apache",
   "dependencies": {
-    "@adiwajshing/baileys": "^3.5.0",
+    "@adiwajshing/baileys": "^3.5.3",
     "@cicciosgamino/openweather-apis": "^5.0.1",
     "@distube/youtube-dl": "^2.2.4",
     "@ffmpeg-installer/ffmpeg": "^1.1.0",
