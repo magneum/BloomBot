@@ -46,6 +46,12 @@ try {
 const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
 var աɦօֆɛ = Math.floor(1000 + Math.random() * 9000);
 const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/[+ ]/g, "");
+try {
+𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.getProfilePicture(ʟɴᴀᴍᴇ);
+} catch {
+𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = "https://i.postimg.cc/wxWL9G8F/no-profile-picture-300x216.png";
+}
+var expFile = `./ᴠʟᴋʏʀᴇ🀄ᴇxʜᴀᴜꜱᴛ/${Date.now()}r${chat.key.id}.png`;
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 CorlexaExp.findOne(
 {
@@ -64,6 +70,69 @@ level: 1,
 await newUsers
 .save()
 .catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
+try {
+let ImgF;
+var ResGot = await fetch(
+global.API("https://wall.alphacoders.com/api2.0", "/get.php", {
+auth: "3e7756c85df54b78f934a284c11abe4e",
+method: "search",
+term: "anime landscape",
+})
+);
+var BsonF = await ResGot.json();
+var ImgBsonF =
+BsonF.wallpapers[
+Math.floor(Math.random() * BsonF.wallpapers.length)
+];
+ImgF = ImgBsonF.url_image;
+} catch {
+ImgF = "https://i.postimg.cc/Kc65RLnX/Full.png";
+}
+const rank = new canvacord.Rank()
+.setStatus("online")
+.setAvatar(𝕻𝕻𝖑𝖊𝖙𝖊𝖗)
+.setRequiredXP(500)
+.setLevel(1)
+.setCurrentXP(Math.ceil(Math.random() * 1))
+.setUsername("Auto Ranker!")
+.setBackground("IMAGE", ImgF)
+.setDiscriminator(աɦօֆɛ)
+.setProgressBar(color, "COLOR");
+rank.build().then(async (data) => {
+fs.writeFile(expFile, data, async (error) => {
+if (error) return ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
+const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
+ᴠʟᴋʏʀᴇ.chatId,
+fs.readFileSync(expFile),
+MessageType.image,
+{ mimetype: Mimetype.png }
+);
+await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
+.sendMessage(
+ᴠʟᴋʏʀᴇ.chatId,
+{
+contentText: `✨@${ᴘɴᴀᴍᴇ}, Auto-Leveling Has Started! `,
+footerText: `❮ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❯\n❝ ᴘᴏᴡᴇʀᴇᴅ-ʙʏ ☊ ᴋʀᴀᴋɪɴᴢ⌬ʟᴀʙ™ ❞`,
+buttons: [
+{
+buttonId: `${ᴋᴇɪ}rank`,
+buttonText: { displayText: `${ᴋᴇɪ}rank` },
+type: 1,
+},
+],
+headerType: 4,
+imageMessage: media.message.imageMessage,
+},
+MessageType.buttonsMessage,
+{
+quoted: chat,
+contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
+}
+)
+.catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
+return await cleanRF.cleanRF(expFile);
+});
+});
 return;
 }
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
@@ -156,13 +225,6 @@ Img = ImgBson.url_image;
 } catch {
 Img = "https://i.postimg.cc/Kc65RLnX/Full.png";
 }
-try {
-𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.getProfilePicture(ʟɴᴀᴍᴇ);
-} catch {
-𝕻𝕻𝖑𝖊𝖙𝖊𝖗 =
-"https://i.postimg.cc/wxWL9G8F/no-profile-picture-300x216.png";
-}
-var expFile = `./ᴠʟᴋʏʀᴇ🀄ᴇxʜᴀᴜꜱᴛ/${Date.now()}r${chat.key.id}.png`;
 const rank = new canvacord.Rank()
 .setStatus("online")
 .setAvatar(𝕻𝕻𝖑𝖊𝖙𝖊𝖗)
@@ -251,11 +313,6 @@ await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 contentText: `✨𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬 @${ᴘɴᴀᴍᴇ}, _𝐋𝐞𝐯𝐞𝐥𝐞𝐝-𝐔𝐏!_`,
 footerText: `❮ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❯\n❝ ᴘᴏᴡᴇʀᴇᴅ-ʙʏ ☊ ᴋʀᴀᴋɪɴᴢ⌬ʟᴀʙ™ ❞`,
 buttons: [
-{
-buttonId: `${ᴋᴇɪ}help`,
-buttonText: { displayText: `${ᴋᴇɪ}help` },
-type: 1,
-},
 {
 buttonId: `${ᴋᴇɪ}rank`,
 buttonText: { displayText: `${ᴋᴇɪ}rank` },
