@@ -115,7 +115,7 @@ MessageType.video,
 mimetype: `video/gif`,
 quoted: chat,
 caption:
-`❮ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❯\n❝ ᴘᴏᴡᴇʀᴇᴅ-ʙʏ ☊ ᴋʀᴀᴋɪɴᴢ⌬ʟᴀʙ™ ❞\n\n` +
+`✈ Ⓒ𝗩𝗹𝗸𝘆𝗿𝗲 v${vers.vers} ☊\n❝ ᴘᴏᴡᴇʀᴇᴅ-ʙʏ ⌬ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞\n\n` +
 PokeInfo,
 contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
 }

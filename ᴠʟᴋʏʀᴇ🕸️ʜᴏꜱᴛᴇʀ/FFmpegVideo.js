@@ -67,7 +67,7 @@ contentText: `꧁ *@${ᴘɴᴀᴍᴇ}* ꧂
 ╚════════════╝
 
 📜 𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${Found.description}`,
-footerText: `❮ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❯\n❝ ᴘᴏᴡᴇʀᴇᴅ-ʙʏ ☊ ᴋʀᴀᴋɪɴᴢ⌬ʟᴀʙ™ ❞`,
+footerText: `✈ Ⓒ𝗩𝗹𝗸𝘆𝗿𝗲 v${vers.vers} ☊\n❝ ᴘᴏᴡᴇʀᴇᴅ-ʙʏ ⌬ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
@@ -132,7 +132,7 @@ contentText: `꧁ *@${ᴘɴᴀᴍᴇ}* ꧂
 ╚════════════╝
 
 📜 𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${Found.description}`,
-footerText: `❮ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❯\n❝ ᴘᴏᴡᴇʀᴇᴅ-ʙʏ ☊ ᴋʀᴀᴋɪɴᴢ⌬ʟᴀʙ™ ❞`,
+footerText: `✈ Ⓒ𝗩𝗹𝗸𝘆𝗿𝗲 v${vers.vers} ☊\n❝ ᴘᴏᴡᴇʀᴇᴅ-ʙʏ ⌬ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,

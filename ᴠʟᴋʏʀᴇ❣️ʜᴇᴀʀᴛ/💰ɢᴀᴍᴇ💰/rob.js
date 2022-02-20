@@ -20,9 +20,26 @@ var scriptName = path.basename(__filename);
 var newScpt = scriptName.slice(0, -3).toLowerCase();
 module.exports = {
 name: newScpt,
-ᴠʟᴋʏʀᴇӄǟɨʐօ: `╔═══⬡
+ᴠʟᴋʏʀᴇӄǟɨʐօ: `
+╔═══⬡꧁ *@${ᴘɴᴀᴍᴇ}* ꧂
 ║ *𝗥𝗲𝗽𝗹𝘆-𝗣𝗲𝗿𝘀𝗼𝗻:* _${ᴋᴇɪ}${newScpt}_
 ║ *𝗧𝗮𝗴-𝗣𝗲𝗿𝘀𝗼𝗻:* _${ᴋᴇɪ}${newScpt}_ @tag
+╚════════════╝
+
+╔═══◇║⚔️ 𝐒𝐰𝐨𝐫𝐝
+║🛸 𝗧𝘆𝗽𝗲: _The medium account safe mode. 
+║🧀 𝗚𝗼𝗹𝗱: _To buy sword you will need to have 4000gold._ 
+║⚡ 𝗣𝗲𝗿𝗸𝘀: _If robbery attempt was made on your account, a sword will save your entire balance and will automatically deduct random(1000-2000) from Culprit's account and add it to your account!_
+╚◇╗
+╔◇╜💻 𝐋𝐚𝐩𝐭𝐨𝐩
+║🛸 𝗧𝘆𝗽𝗲: _The hard account safe mode._ 
+║🧀 𝗚𝗼𝗹𝗱: _To buy laptop you will need to have 3000gold._ 
+║⚡ 𝗣𝗲𝗿𝗸𝘀: _If robbery attempt was made on your account, a laptop will save your entire balance and will automatically deduct random(3000-4000) from Culprit's account and add it to your account!_
+╚◇╗
+╔◇╜🔮 𝐂𝐡𝐚𝐫𝐦
+║🛸 𝗧𝘆𝗽𝗲: _The devil account safe mode._ 
+║🧀 𝗚𝗼𝗹𝗱: _To buy laptop you will need to have 6000gold._ 
+║⚡ 𝗣𝗲𝗿𝗸𝘀: _If robbery attempt was made on your account, a charm will save your entire balance and will automatically deduct random(5000-6000) from Culprit's account and add it to your account!_
 ╚════════════╝
 
 ╔═══◇❓ 𝗛𝗼𝘄 𝗗𝗼 𝗜 𝗸𝗲𝗲𝗽 𝗺𝘆 𝗮𝗰𝗰𝗼𝘂𝗻𝘁 𝘀𝗮𝗳𝗲?
@@ -39,28 +56,6 @@ name: newScpt,
 ╚◇╗
 ╔◇╜❓ 𝗜 𝗱𝗼𝗻'𝘁 𝗵𝗮𝘃𝗲 𝗮𝗻𝘆 𝘀𝗮𝗳𝗲𝘁𝘆 𝗶𝗻 𝗺𝘆 𝗮𝗰𝗰𝗼𝘂𝗻𝘁! 𝗛𝗼𝘄 𝗺𝘂𝗰𝗵 𝗺𝗼𝗻𝗲𝘆 𝗰𝗮𝗻 𝗯𝗲 𝗿𝗼𝗯𝗯𝗲𝗱?
 ║ _In that case buy using /buy. Max-Money-Robbed when no safety: random(500-1000)_
-║
-╚════════════╝
-
-╔═══◇║⚔️ 𝐒𝐰𝐨𝐫𝐝
-║
-║🛸 𝗧𝘆𝗽𝗲: _The medium account safe mode. 
-║🧀 𝗚𝗼𝗹𝗱: _To buy sword you will need to have 4000gold._ 
-║⚡ 𝗣𝗲𝗿𝗸𝘀: _If robbery attempt was made on your account, a sword will save your entire balance and will automatically deduct random(1000-2000) from Culprit's account and add it to your account!_
-║
-╚◇╗
-╔◇╜💻 𝐋𝐚𝐩𝐭𝐨𝐩
-║
-║🛸 𝗧𝘆𝗽𝗲: _The hard account safe mode._ 
-║🧀 𝗚𝗼𝗹𝗱: _To buy laptop you will need to have 3000gold._ 
-║⚡ 𝗣𝗲𝗿𝗸𝘀: _If robbery attempt was made on your account, a laptop will save your entire balance and will automatically deduct random(3000-4000) from Culprit's account and add it to your account!_
-║
-╚◇╗
-╔◇╜🔮 𝐂𝐡𝐚𝐫𝐦
-║
-║🛸 𝗧𝘆𝗽𝗲: _The devil account safe mode._ 
-║🧀 𝗚𝗼𝗹𝗱: _To buy laptop you will need to have 6000gold._ 
-║⚡ 𝗣𝗲𝗿𝗸𝘀: _If robbery attempt was made on your account, a charm will save your entire balance and will automatically deduct random(5000-6000) from Culprit's account and add it to your account!_
 ║
 ╚════════════╝`,
 async handle(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, chat, ᴠʟᴋʏʀᴇ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
@@ -613,7 +608,7 @@ contentText: `❣️𝗠𝗲𝗻𝘁𝗶𝗼𝗻:  ꧁ *@${ᴘɴᴀᴍᴇ}* ꧂
 ║❌ 𝗘𝗿𝗿𝗼𝗿: @${TagPerson}'s Bank Guard Caught You and Took You To The Jail!
 ║💡‍ 𝐒𝐭𝐚𝐭𝐮𝐬: _You Got Arrested and Took 0gold.ReTry Again!_
 ╚════════════╝`,
-footerText: `❮ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❯\n❝ ᴘᴏᴡᴇʀᴇᴅ-ʙʏ ☊ ᴋʀᴀᴋɪɴᴢ⌬ʟᴀʙ™ ❞`,
+footerText: `✈ Ⓒ𝗩𝗹𝗸𝘆𝗿𝗲 v${vers.vers} ☊\n❝ ᴘᴏᴡᴇʀᴇᴅ-ʙʏ ⌬ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
@@ -671,7 +666,7 @@ contentText: `❣️𝗠𝗲𝗻𝘁𝗶𝗼𝗻:  ꧁ *@${ᴘɴᴀᴍᴇ}* ꧂
 ║❌ 𝗘𝗿𝗿𝗼𝗿: _You are the worst robber._
 ║🍌‍ 𝗥𝗲𝗮𝘀𝗼𝗻:  _Fell On a pool and died!.ReTry Again!_
 ╚════════════╝`,
-footerText: `❮ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❯\n❝ ᴘᴏᴡᴇʀᴇᴅ-ʙʏ ☊ ᴋʀᴀᴋɪɴᴢ⌬ʟᴀʙ™ ❞`,
+footerText: `✈ Ⓒ𝗩𝗹𝗸𝘆𝗿𝗲 v${vers.vers} ☊\n❝ ᴘᴏᴡᴇʀᴇᴅ-ʙʏ ⌬ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
@@ -732,7 +727,7 @@ contentText: `❣️𝗠𝗲𝗻𝘁𝗶𝗼𝗻:  ꧁ *@${ᴘɴᴀᴍᴇ}* ꧂
 ║❌ 𝗘𝗿𝗿𝗼𝗿: @${TagPerson}, _needs atleast 1000gold in their account before you can rob them!_
 ║🍌‍ 𝗥𝗲𝗮𝘀𝗼𝗻: _Broke AF! Leave This Begger Alone!_
 ╚════════════╝`,
-footerText: `❮ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❯\n❝ ᴘᴏᴡᴇʀᴇᴅ-ʙʏ ☊ ᴋʀᴀᴋɪɴᴢ⌬ʟᴀʙ™ ❞`,
+footerText: `✈ Ⓒ𝗩𝗹𝗸𝘆𝗿𝗲 v${vers.vers} ☊\n❝ ᴘᴏᴡᴇʀᴇᴅ-ʙʏ ⌬ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
@@ -808,7 +803,7 @@ contentText: `❣️𝗠𝗲𝗻𝘁𝗶𝗼𝗻:  ꧁ *@${ᴘɴᴀᴍᴇ}* ꧂�
 ║💡‍ 𝐒𝐭𝐚𝐭𝐮𝐬: _You Got Arrested and Took ${MoneyRandom}gold!_
 ║💰 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: @${ᴘɴᴀᴍᴇ}, _${cEconomy.money}_
 ╚════════════╝`,
-footerText: `❮ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❯\n❝ ᴘᴏᴡᴇʀᴇᴅ-ʙʏ ☊ ᴋʀᴀᴋɪɴᴢ⌬ʟᴀʙ™ ❞`,
+footerText: `✈ Ⓒ𝗩𝗹𝗸𝘆𝗿𝗲 v${vers.vers} ☊\n❝ ᴘᴏᴡᴇʀᴇᴅ-ʙʏ ⌬ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
@@ -875,7 +870,7 @@ contentText: `❣️𝗠𝗲𝗻𝘁𝗶𝗼𝗻:  ꧁ *@${ᴘɴᴀᴍᴇ}* ꧂�
 ║💡‍ 𝐒𝐭𝐚𝐭𝐮𝐬: _You Got Arrested and Took ${MoneyRandom}gold!_
 ║💰 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: @${ᴘɴᴀᴍᴇ}, _${cEconomy.money}_
 ╚════════════╝`,
-footerText: `❮ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❯\n❝ ᴘᴏᴡᴇʀᴇᴅ-ʙʏ ☊ ᴋʀᴀᴋɪɴᴢ⌬ʟᴀʙ™ ❞`,
+footerText: `✈ Ⓒ𝗩𝗹𝗸𝘆𝗿𝗲 v${vers.vers} ☊\n❝ ᴘᴏᴡᴇʀᴇᴅ-ʙʏ ⌬ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
@@ -981,7 +976,7 @@ contentText: `❣️𝗠𝗲𝗻𝘁𝗶𝗼𝗻:  ꧁ *@${ᴘɴᴀᴍᴇ}* ꧂
 ║💰 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: @${ᴘɴᴀᴍᴇ}, _${cEconomy.money}gold_
 ║💰 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: @${TagPerson}, = _${vEconomy.money}gold_
 ╚════════════╝`,
-footerText: `❮ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❯\n❝ ᴘᴏᴡᴇʀᴇᴅ-ʙʏ ☊ ᴋʀᴀᴋɪɴᴢ⌬ʟᴀʙ™ ❞`,
+footerText: `✈ Ⓒ𝗩𝗹𝗸𝘆𝗿𝗲 v${vers.vers} ☊\n❝ ᴘᴏᴡᴇʀᴇᴅ-ʙʏ ⌬ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
@@ -1060,7 +1055,7 @@ contentText: `❣️𝗠𝗲𝗻𝘁𝗶𝗼𝗻:  ꧁ *@${ᴘɴᴀᴍᴇ}* ꧂
 ║💰 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: @${ᴘɴᴀᴍᴇ}, _${cEconomy.money}gold_
 ║💰 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: @${TagPerson}, = _${vEconomy.money}gold_
 ╚════════════╝`,
-footerText: `❮ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❯\n❝ ᴘᴏᴡᴇʀᴇᴅ-ʙʏ ☊ ᴋʀᴀᴋɪɴᴢ⌬ʟᴀʙ™ ❞`,
+footerText: `✈ Ⓒ𝗩𝗹𝗸𝘆𝗿𝗲 v${vers.vers} ☊\n❝ ᴘᴏᴡᴇʀᴇᴅ-ʙʏ ⌬ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
@@ -1139,7 +1134,7 @@ contentText: `❣️𝗠𝗲𝗻𝘁𝗶𝗼𝗻:  ꧁ *@${ᴘɴᴀᴍᴇ}* ꧂
 ║💰 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: @${ᴘɴᴀᴍᴇ}, _${cEconomy.money}gold_
 ║💰 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: @${TagPerson}, = _${vEconomy.money}gold_
 ╚════════════╝`,
-footerText: `❮ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❯\n❝ ᴘᴏᴡᴇʀᴇᴅ-ʙʏ ☊ ᴋʀᴀᴋɪɴᴢ⌬ʟᴀʙ™ ❞`,
+footerText: `✈ Ⓒ𝗩𝗹𝗸𝘆𝗿𝗲 v${vers.vers} ☊\n❝ ᴘᴏᴡᴇʀᴇᴅ-ʙʏ ⌬ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
@@ -1215,7 +1210,7 @@ vEconomy.money
 ║❓ 𝗕𝗲𝗳𝗼𝗿𝗲 𝗥𝗼𝗯𝗯𝗲𝗿𝘆: _${vEconomy.money}gold_
 ║🥲 𝗔𝗳𝘁𝗲𝗿 𝗥𝗼𝗯𝗯𝗲𝗿𝘆: _${vEconomy.money - MoneyRandom}gold_
 ╚════════════╝`,
-footerText: `❮ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❯\n❝ ᴘᴏᴡᴇʀᴇᴅ-ʙʏ ☊ ᴋʀᴀᴋɪɴᴢ⌬ʟᴀʙ™ ❞`,
+footerText: `✈ Ⓒ𝗩𝗹𝗸𝘆𝗿𝗲 v${vers.vers} ☊\n❝ ᴘᴏᴡᴇʀᴇᴅ-ʙʏ ⌬ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
@@ -1290,7 +1285,7 @@ contentText: `❣️𝗠𝗲𝗻𝘁𝗶𝗼𝗻:  ꧁ *@${ᴘɴᴀᴍᴇ}* ꧂
 ║❓ 𝗕𝗲𝗳𝗼𝗿𝗲 𝗥𝗼𝗯𝗯𝗲𝗿𝘆: _${vEconomy.money}gold_
 ║🥲 𝗔𝗳𝘁𝗲𝗿 𝗥𝗼𝗯𝗯𝗲𝗿𝘆: _${vEconomy.money - MoneyRandom}gold_
 ╚════════════╝`,
-footerText: `❮ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❯\n❝ ᴘᴏᴡᴇʀᴇᴅ-ʙʏ ☊ ᴋʀᴀᴋɪɴᴢ⌬ʟᴀʙ™ ❞`,
+footerText: `✈ Ⓒ𝗩𝗹𝗸𝘆𝗿𝗲 v${vers.vers} ☊\n❝ ᴘᴏᴡᴇʀᴇᴅ-ʙʏ ⌬ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
