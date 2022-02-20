@@ -37,9 +37,6 @@ return false;
 if (Regex.Whatsapp.test(Argument)) {
 return true;
 }
-if (Argument.includes("https:")) {
-return true;
-}
 if (Argument.includes("www.")) {
 return true;
 }
