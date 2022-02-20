@@ -35,8 +35,7 @@ return ᴠʟᴋʏʀᴇ_Buttons.MIB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 ᴠʟᴋʏʀᴇ,
-`꧁ *@${ᴘɴᴀᴍᴇ}* ꧂
-\n❌𝐃𝐞𝐧𝐢𝐞𝐝: _Owner/Dev Only.You Are Not Allowed!_`,
+`꧁◤ *@${ᴘɴᴀᴍᴇ}* ◢꧂\n❌𝐃𝐞𝐧𝐢𝐞𝐝: _Owner/Dev Only.You Are Not Allowed!_`,
 "./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_OwnerOnly.png"
 );
 }
@@ -45,8 +44,7 @@ chat,
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 ᴠʟᴋʏʀᴇ,
-`꧁ *@${ᴘɴᴀᴍᴇ}* ꧂
-
+`꧁◤ *@${ᴘɴᴀᴍᴇ}* ◢꧂
 
 (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 by ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🛸 
 _Is Now Rebooting.Wait For (10-30)s_`,

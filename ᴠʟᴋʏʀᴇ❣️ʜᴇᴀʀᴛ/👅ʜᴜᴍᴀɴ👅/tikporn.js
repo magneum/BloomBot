@@ -32,8 +32,7 @@ return ᴠʟᴋʏʀᴇ_Buttons.MIB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 ᴠʟᴋʏʀᴇ,
-`꧁ *@${ᴘɴᴀᴍᴇ}* ꧂
-\n❌𝐃𝐞𝐧𝐢𝐞𝐝: _Admins/Dev Only.You Are Not Allowed!_`,
+`꧁◤ *@${ᴘɴᴀᴍᴇ}* ◢꧂\n❌𝐃𝐞𝐧𝐢𝐞𝐝: _Admins/Dev Only.You Are Not Allowed!_`,
 "./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_NotAdmin.png"
 );
 }
@@ -43,8 +42,7 @@ return ᴠʟᴋʏʀᴇ_Buttons.MIB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 ᴠʟᴋʏʀᴇ,
-`꧁ *@${ᴘɴᴀᴍᴇ}* ꧂
- 
+`꧁◤ *@${ᴘɴᴀᴍᴇ}* ◢꧂ 
 
 ╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
 ║❌𝐃𝐞𝐧𝐢𝐞𝐝: _How Can I Use Admin Only Commands If i am not admin?_
@@ -78,8 +76,7 @@ return ᴠʟᴋʏʀᴇ_Buttons.MIB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 ᴠʟᴋʏʀᴇ,
-`꧁ *@${ᴘɴᴀᴍᴇ}* ꧂
-
+`꧁◤ *@${ᴘɴᴀᴍᴇ}* ◢꧂
 ╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_  
 ║🧈 *Added To DB for _${newScpt}_ command First Time!*
 ║🦋 _Try ${ᴋᴇɪ}${ᴅꜰɴᴀᴍᴇ} Again!_
@@ -161,8 +158,7 @@ return;
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 ᴠʟᴋʏʀᴇ,
-`꧁ *@${ᴘɴᴀᴍᴇ}* ꧂
-
+`꧁◤ *@${ᴘɴᴀᴍᴇ}* ◢꧂
 
 ╔════◇🌿𝗣𝗹𝗲𝗮𝘀𝗲 𝘄𝗮𝗶𝘁!
 ║🎬 𝗙𝗶𝗹𝗲 𝗧𝘆𝗽𝗲: _Video_
@@ -203,8 +199,7 @@ await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .sendMessage(
 ᴠʟᴋʏʀᴇ.chatId,
 {
-contentText: `꧁ *@${ᴘɴᴀᴍᴇ}* ꧂
-
+contentText: `꧁◤ *@${ᴘɴᴀᴍᴇ}* ◢꧂
 ╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
 ║📞 𝐀𝐝𝐦𝐢𝐧-𝐎𝐧𝐥𝐲: @${ᴘɴᴀᴍᴇ} 
 ║📜 𝐓𝐢𝐭𝐥𝐞: ${res.title}
