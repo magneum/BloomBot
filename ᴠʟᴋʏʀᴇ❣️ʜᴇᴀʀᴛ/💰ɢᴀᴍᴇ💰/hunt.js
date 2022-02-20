@@ -190,12 +190,9 @@ contentText: `꧁ *@${ᴘɴᴀᴍᴇ}* ꧂
 ┊ 𝐌𝐢𝐧𝐞𝐜𝐫𝐚𝐟𝐭 🪵 𝐄𝐝𝐢𝐭𝐢𝐨𝐧
 ╚◇╗
 ╔◇╜
-║◇ *Name*: ${PokemonData.name.toString().toUpperCase()}
-║◇ *Type:* ${PokemonData.type}
-║◇ *Abilities:* ${PokemonData.abilities}
-║◇ *Base Exp:* ${PokemonData.base_experience}
-║◇ *Gender:* ${PokemonData.gender}
-║◇ *Worth:* ${Worth}gold
+║💫 *Name:* ${json.name}
+║〽️ *Pokedex ID:* ${json.id}
+║🪙 *Worth:* ${Worth}gold
 ╚════════════╝
 
 𝐁𝐮𝐭𝐭𝐨𝐧 𝐓𝐨 𝐋𝐞𝐚𝐫𝐧 𝐌𝐨𝐫𝐞👇🏻

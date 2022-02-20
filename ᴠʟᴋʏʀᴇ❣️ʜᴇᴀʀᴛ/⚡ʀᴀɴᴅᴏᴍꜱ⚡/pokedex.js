@@ -71,35 +71,41 @@ return;
 }
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 var PokeInfo = `꧁ *@${ᴘɴᴀᴍᴇ}* ꧂
-╔═══════🌿𝐓𝐨𝐩𝐢𝐜: ${ꜰɪɴᴀᴍᴇ}
-║★𝗡𝗮𝗺𝗲: _${json.name}_
-║★𝗜𝗱: _${json.id}_
-║★𝗧𝘆𝗽𝗲: _${json.type}_
-║★𝗦𝗽𝗲𝗰𝗶𝗲𝘀: _${json.species}_
-║★𝗔𝗯𝗶𝗹𝗶𝘁𝗲𝘀: _${json.abilities}_
-║★𝗛𝗲𝗶𝗴𝗵𝘁: _${json.height}_
-║★𝗪𝗲𝗶𝗴𝗵𝘁: _${json.weight}_
-║★𝗕𝗮𝘀𝗲 𝗘𝘅𝗽𝗲𝗿𝗶𝗲𝗻𝗰𝗲: _${json.base_experience}_
-║★𝗚𝗲𝗻𝗱𝗲𝗿: _${json.gender}_
-║★𝗘𝗴𝗴 𝗴𝗿𝗼𝘂𝗽𝘀: _${json.egg_groups}_
+
+╔⧉༻ 🌿𝐓𝐨𝐩𝐢𝐜: ${ꜰɪɴᴀᴍᴇ}
+║
+║💫 *Name:* ${json.name}
+║〽️ *Pokedex ID:* ${json.id}
+║🎀 *Type:* ${json.type}
+║🐞 *Species*: ${json.species}
+║📛 *Abilities:* ${json.abilities}
+║🔆 *Height:* ${json.height}
+║⚖ *Weight:* ${json.weight}
+║🌟 *Base Experience:* ${json.base_experience}
+║♀️ *Geder*: ${json.gender}
+║★ *Egg Groups*: ${json.egg_groups}
 ╚════════════╝
-╔═══════ 🌽𝐒𝐓𝐀𝐓𝐈𝐒𝐓𝐈𝐂𝐒
-║★𝗛𝗣: _${json.stats.hp}_
-║★𝗔𝘁𝘁𝗮𝗰𝗸: _${json.stats.attack}_
-║★𝗗𝗲𝗳𝗲𝗻𝘀𝗲: _${json.stats.defense}_
-║★𝗦𝗽 𝗮𝘁𝗸: _${json.stats.sp_atk}_
-║★𝗦𝗽 𝗱𝗲𝗳: _${json.stats.sp_def}_
-║★𝗦𝗽𝗲𝗲𝗱: _${json.stats.speed}_
-║★𝗧𝗼𝘁𝗮𝗹: _${json.stats.total}_
+
+╔⧉༻ 🌽𝐒𝐓𝐀𝐓𝐈𝐒𝐓𝐈𝐂𝐒 ꧂
+║
+║✳ *HP:* ${json.stats.hp}
+║⚔ *Attack:* ${json.stats.attack}
+║🔰 *Defense:* ${json.stats.defense}
+║☄ *Special Attack:* ${json.stats.sp_atk}
+║🛡 *Special Defense:* ${json.stats.sp_def}
+║🎐 *Speed:* ${json.stats.speed}
+║🍯 *Total*: ${json.stats.total}
 ╚════════════╝
-╔═══════ 🌶️𝐅𝐀𝐌𝐈𝐋𝐘
-║★𝗘𝘃𝗼-𝗦𝘁𝗮𝗴𝗲: _${json.family.evolutionStage}_
-║★𝗘𝘃𝗼-𝗟𝗶𝗻𝗲: _${json.family.evolutionLine}_
-║★𝗚𝗲𝗻𝗲𝗿𝗮𝘁𝗶𝗼𝗻: _${json.generation}_
+
+╔⧉༻ 🌶️𝐅𝐀𝐌𝐈𝐋𝐘 ꧂
+║
+║🌸 *Evolved Stage:* ${json.family.evolutionStage}
+║💮 *Evolved Line:* ${json.family.evolutionLine}
+║🪐 *Generation:* ${json.generation}
 ╚════════════╝
-╔═══════ 🥒𝐃𝐄𝐒𝐂𝐑𝐈𝐏𝐓𝐈𝐎𝐍
-║★${json.description}
-╚════════════╝
+
+
+💬 *Summary:* ${json.description}
 `.trim();
 await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .sendMessage(
