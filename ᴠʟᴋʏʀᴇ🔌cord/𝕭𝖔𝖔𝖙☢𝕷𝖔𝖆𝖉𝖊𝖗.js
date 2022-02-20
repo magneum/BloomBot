@@ -3,31 +3,31 @@
 `|        (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!            |`;
 `|                                                                                                                        |`;
 `|⬡════════════════════════════════════════════|                            |═══════════════════════════════════════════⬡|`;
-require(`./konfs`);
+require(`../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/konfs`);
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const Welcome = require(`../ᴠʟᴋʏʀᴇ🥠ᴘᴏʀᴛ/setwelcome`);
 const LinkList = require(`../ᴠʟᴋʏʀᴇ🥠ᴘᴏʀᴛ/antilink`);
 const Ranker = require(`../ᴠʟᴋʏʀᴇ🥠ᴘᴏʀᴛ/autorank`);
-const ᴠʟᴋʏʀᴇ_Buttons = require(`./ᴠʟᴋʏʀᴇ_Buttons`);
+const ᴠʟᴋʏʀᴇ_Buttons = require(`../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/ᴠʟᴋʏʀᴇ_Buttons`);
 const BanPerson = require(`../ᴠʟᴋʏʀᴇ🥠ᴘᴏʀᴛ/ban`);
 const NsfwList = require(`../ᴠʟᴋʏʀᴇ🥠ᴘᴏʀᴛ/nsfw`);
-const ᴠʟᴋʏʀᴇ_Static = require(`./ᴠʟᴋʏʀᴇ_Static`);
+const ᴠʟᴋʏʀᴇ_Static = require(`../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/ᴠʟᴋʏʀᴇ_Static`);
 const BanGroup = require(`../ᴠʟᴋʏʀᴇ🥠ᴘᴏʀᴛ/ban`);
 const Halt = require(`../ᴠʟᴋʏʀᴇ🥠ᴘᴏʀᴛ/halt`);
-const ᴠʟᴋʏʀᴇ_Loca = require(`./ᴠʟᴋʏʀᴇ_Loca`);
-const ᴠʟᴋʏʀᴇֆʏռօք = require(`./ᴠʟᴋʏʀᴇᴢᴇɴ`);
+const ᴠʟᴋʏʀᴇ_Loca = require(`../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/ᴠʟᴋʏʀᴇ_Loca`);
+const ᴠʟᴋʏʀᴇֆʏռօք = require(`../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/ᴠʟᴋʏʀᴇᴢᴇɴ`);
 const { ᴠʟᴋʏʀᴇTǟɮ } = require(`../ᴠʟᴋʏʀᴇTǟɮ`);
 const moment = require(`moment-timezone`);
-const RankCheck = require(`./RankCheck`);
+const RankCheck = require(`../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/RankCheck`);
 const speed = require(`performance-now`);
 const ᴠʟᴋʏʀᴇgoose = require("mongoose");
-const ӄʀʏօȶɛӄ = require(`./ӄʀʏօȶɛӄ`);
-const welbuts = require(`./welbuts`);
-const cleanRF = require(`./cleanRF`);
+const ӄʀʏօȶɛӄ = require(`../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/ӄʀʏօȶɛӄ`);
+const welbuts = require(`../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/welbuts`);
+const cleanRF = require(`../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/cleanRF`);
 const fetch = require(`node-fetch`);
-const _𝔏𝔞𝔟_ = require(`./_𝔏𝔞𝔟_`);
-const ꜰᴜᴄᴋ = require(`./oShit`);
+const _𝔏𝔞𝔟_ = require(`../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/_𝔏𝔞𝔟_`);
+const ꜰᴜᴄᴋ = require(`../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/oShit`);
 const Kolor = require(`chalk`);
 const ms = require(`parse-ms`);
 let Timestamp = speed();
@@ -482,7 +482,7 @@ async (error, server) => {
 if (error) return ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 if (!server) return;
-const Body_Check = require("./Body_Check");
+const Body_Check = require("../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/Body_Check");
 if (Body_Check.Body_Check(ᴠʟᴋʏʀᴇ.body) === true) {
 await ᴠʟᴋʏʀᴇ_Buttons.MIB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
@@ -637,7 +637,11 @@ chat,
 );
 } else {
 console.log(chat);
-console.log(Kolor.green("⬡═══════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟"));
+console.log(
+Kolor.green(
+"⬡═══════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟"
+)
+);
 return ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ.handle(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
@@ -663,6 +667,39 @@ try {
 ᴠʟᴋʏʀᴇ();
 } catch (error) {
 console.log(error);
+try {
+const VlkyreFetch = require(`simple-git`)();
+await VlkyreFetch.fetch();
+require("child_process")
+.exec(
+`git config --global user.name "KryKnz" && git config --global user.email "KryKnz@yandex.com" && git config --global pull.ff only && git config --global pull.rebase false`
+)
+.stdout.pipe(process.stdout);
+var VlkyreFetched = await VlkyreFetch.log([`KryTek..origin/KryTek`]);
+if (VlkyreFetched.total != 0) {
+VlkyreFetch.pull(async (error, update) => {
+if (error) {
+try {
+const mergeSummary = await VlkyreFetch.merge();
+console.log(
+Kolor.blue(`💡 𝐈𝐧𝐟𝐨⬰ Changes: [${mergeSummary.merges.length}]`)
+);
+} catch (error) {
+console.log(Kolor.blue(`💡 𝐈𝐧𝐟𝐨⬰ Nothing To Merge!`));
+}
+} else if (update && update.summary.changes) {
+var child = require(`child_process`).exec(`python3 ⭕𝖈𝖆𝖗𝖆𝖒𝖊𝖑.py`);
+child.stdout.pipe(process.stdout);
+child.on(`exit`, async function () {
+process.exitCode = 1;
+});
+}
+});
+}
+} catch (error) {
+console.log(Kolor.red(`❌ 𝐄𝐫𝐫𝐨𝐫⬰ ${Kolor.red(error)}`));
+}
+`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 var ᴠʟᴋʏ = require(`child_process`).exec(`python3 ⭕𝖈𝖆𝖗𝖆𝖒𝖊𝖑.py`);
 ᴠʟᴋʏ.stdout.pipe(process.stdout);
 ᴠʟᴋʏ.on(`exit`, async function () {
