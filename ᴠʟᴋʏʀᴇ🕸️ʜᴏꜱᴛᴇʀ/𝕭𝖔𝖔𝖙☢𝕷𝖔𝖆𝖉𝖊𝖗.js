@@ -105,18 +105,7 @@ process.exit(0);
 console.log(Kolor.yellow(`💡 𝐈𝐧𝐟𝐨⬰ Connecting With User's Whatsapp Web..`));
 });
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.on(`open`, async () => {
-try {
-var child = require(`child_process`).exec(`python3 ⭕𝖈𝖆𝖗𝖆𝖒𝖊𝖑.py`);
-child.stdout.pipe(process.stdout);
-child.on(`exit`, async function () {
-process.exitCode = 1;
-});
-} catch (error) {
-console.log(Kolor.red(`❌ 𝐄𝐫𝐫𝐨𝐫⬰ ${Kolor.red(error)}`));
-}
-`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-console.log(
-`💡 𝐈𝐧𝐟𝐨⬰ Connected to WhatsApp as ${Kolor.green(
+console.log(`💡 𝐈𝐧𝐟𝐨⬰ Connected to WhatsApp as ${Kolor.green(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.user.notify ||
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.user.vname ||
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.user.name ||
@@ -372,7 +361,7 @@ if (!chat.messages) return;
 // } catch (error) {}
 // } else if (update && update.summary.changes) {
 // var child = require(`child_process`).exec(
-// `python3 𝕭𝖔𝖔𝖙☢𝕷𝖔𝖆𝖉𝖊𝖗.py`
+// `python3 ⭕𝖈𝖆𝖗𝖆𝖒𝖊𝖑.py`
 // );
 // child.stdout.pipe(process.stdout);
 // child.on(`exit`, async function () {
@@ -676,7 +665,7 @@ Timers
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 ᴠʟᴋʏʀᴇ().catch((error) => {
 console.log(error);
-var ᴠʟᴋʏ = require(`child_process`).exec(`python3 𝕭𝖔𝖔𝖙☢𝕷𝖔𝖆𝖉𝖊𝖗.py`);
+var ᴠʟᴋʏ = require(`child_process`).exec(`python3 ⭕𝖈𝖆𝖗𝖆𝖒𝖊𝖑.py`);
 ᴠʟᴋʏ.stdout.pipe(process.stdout);
 ᴠʟᴋʏ.on(`exit`, async function () {
 process.exitCode = 1;
