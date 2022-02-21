@@ -110,7 +110,7 @@ os.totalmem()
 ║🐙  ${ᴋᴇɪ}ownermenu
 ╚════════════╝
 ⚡𝐏𝐫𝐞𝐬𝐬 𝐁𝐞𝐥𝐨𝐰👇🏽‍𝐅𝐨𝐫 𝐅𝐮𝐥𝐥 𝐋𝐢𝐬𝐭⚡`,
-footerText: `♔ Ⓒ𝗩𝗹𝗸𝘆𝗿𝗲 v${vers.vers} ☊\n❝ ᴘᴏᴡᴇʀᴇᴅ-ʙʏ ⌬ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞`,
+footerText: `*♔𝗩𝗹𝗸𝘆𝗿𝗲 ☊${vers.vers}*\n_❝ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞_`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}menu`,
