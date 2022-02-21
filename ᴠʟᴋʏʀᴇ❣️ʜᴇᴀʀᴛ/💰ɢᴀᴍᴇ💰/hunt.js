@@ -226,8 +226,10 @@ contentText: `❣️𝗠𝗲𝗻𝘁𝗶𝗼𝗻:  ꧁ *@${ᴘɴᴀᴍᴇ}* ꧂
 ╚◇╗
 ╔◇╜
 ║💫 *Name:* ${PokemonData.name}
-║〽️ *Pokedex ID:* ${PokemonData.id}
 ║🪙 *Worth:* ${Worth}gold
+║〽️ *Pokedex ID:* ${PokemonData.id}
+║🛍️ *Card Market:* ${card[0].cardmarket.url}
+║🧀 *TGC Player:* ${card[0].tcgplayer.url}
 ╚════════════╝
 
 𝐁𝐮𝐭𝐭𝐨𝐧 𝐓𝐨 𝐋𝐞𝐚𝐫𝐧 𝐌𝐨𝐫𝐞👇🏻
