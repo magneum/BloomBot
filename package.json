@@ -138,6 +138,7 @@
     "pg": "^8.7.1",
     "ping": "^0.4.1",
     "pokedex-promise-v2": "^4.0.0",
+    "pokemontcgsdk": "^2.0.0",
     "python-format-js": "^1.3.9",
     "qrcode": "^1.4.4",
     "qrcode-reader": "^1.0.4",
