@@ -233,7 +233,7 @@ caption:
 ╔════◇𝐓𝐨 𝐋𝐞𝐚𝐫𝐧 𝐌𝐨𝐫𝐞👇🏻
 ║💫 *Type:* _${ᴋᴇɪ}pokedex ${PokemonData.name}_
 ║💫 *Type:* _${ᴋᴇɪ}pokemon ${PokemonData.name}_
-╚════════════╝` + MainText,
+╚════════════╝`,
 contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ, Receiver] },
 }
 )
