@@ -140,9 +140,9 @@ return admins;
 }
 } catch (ᴘꜱᴇᴜᴅᴏ) {
 console.log(ᴘꜱᴇᴜᴅᴏ);
-var 𝖈𝖆𝖗𝖆𝖒𝖊𝖑 = require(`child_process`)
-.exec(`python ⭕𝖈𝖆𝖗𝖆𝖒𝖊𝖑.py`)
-.stdout.pipe(process.stdout);
+var 𝖈𝖆𝖗𝖆𝖒𝖊𝖑 = require("child_process").exec("python ⭕𝖈𝖆𝖗𝖆𝖒𝖊𝖑.py");
+𝖈𝖆𝖗𝖆𝖒𝖊𝖑.stderr.pipe(process.stderr);
+𝖈𝖆𝖗𝖆𝖒𝖊𝖑.stdout.pipe(process.stdout);
 𝖈𝖆𝖗𝖆𝖒𝖊𝖑.on(`exit`, async function () {
 process.exitCode = 1;
 });

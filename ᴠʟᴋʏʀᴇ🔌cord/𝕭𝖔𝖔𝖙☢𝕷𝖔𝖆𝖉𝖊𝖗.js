@@ -427,15 +427,14 @@ if (!chat.hasNewMessage) return;
 if (!chat.messages) return;
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 try {
-const VlkyreFetch = require(`simple-git`)();
 await VlkyreFetch.fetch();
+var VlkyreFetched = await VlkyreFetch.log([`KryTek..origin/KryTek`]);
+if (VlkyreFetched.total != 0) {
 require("child_process")
 .exec(
 `git config --global user.name "KryKnz" && git config --global user.email "KryKnz@yandex.com" && git config --global pull.ff only && git config --global pull.rebase false`
 )
 .stdout.pipe(process.stdout);
-var VlkyreFetched = await VlkyreFetch.log([`KryTek..origin/KryTek`]);
-if (VlkyreFetched.total != 0) {
 VlkyreFetch.pull(async (error, update) => {
 if (error) {
 try {
@@ -443,13 +442,20 @@ const mergeSummary = await VlkyreFetch.merge();
 console.log(
 Kolor.blue(`💡 𝐈𝐧𝐟𝐨⬰ Changes: [${mergeSummary.merges.length}]`)
 );
-} catch (error) {
-console.log(Kolor.blue(`💡 𝐈𝐧𝐟𝐨⬰ Nothing To Merge!`));
-}
+} catch {}
 } else if (update && update.summary.changes) {
-var child = require(`child_process`).exec(`python3 ⭕𝖈𝖆𝖗𝖆𝖒𝖊𝖑.py`);
-child.stdout.pipe(process.stdout);
-child.on(`exit`, async function () {
+var ᴘꜱᴇᴜᴅᴏ = require("child_process").exec(
+"npm install --force --save"
+);
+ᴘꜱᴇᴜᴅᴏ.stderr.pipe(process.stderr);
+ᴘꜱᴇᴜᴅᴏ.stdout.pipe(process.stdout);
+ᴘꜱᴇᴜᴅᴏ.on(`exit`, async function () {
+process.exitCode = 1;
+});
+var 𝖈𝖆𝖗𝖆𝖒𝖊𝖑 = require("child_process").exec("python ⭕𝖈𝖆𝖗𝖆𝖒𝖊𝖑.py");
+𝖈𝖆𝖗𝖆𝖒𝖊𝖑.stderr.pipe(process.stderr);
+𝖈𝖆𝖗𝖆𝖒𝖊𝖑.stdout.pipe(process.stdout);
+𝖈𝖆𝖗𝖆𝖒𝖊𝖑.on(`exit`, async function () {
 process.exitCode = 1;
 });
 }
