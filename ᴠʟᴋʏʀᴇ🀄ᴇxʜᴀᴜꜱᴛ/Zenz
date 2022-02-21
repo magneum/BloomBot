@@ -6,3 +6,4 @@ RUN apt-get update &&  apt-get upgrade -y && apt-get install git -y && apt-get i
 RUN curl https://cli-assets.heroku.com/install.sh | sh
 RUN heroku plugins:install heroku-builds
 RUN heroku builds:cancel -a YOUR_HEROKU_APP_NAME
+RUN heroku ps:stop run.6654
