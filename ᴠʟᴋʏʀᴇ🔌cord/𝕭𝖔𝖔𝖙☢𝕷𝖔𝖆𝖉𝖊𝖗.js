@@ -161,48 +161,47 @@ let latensi = speed() - timestamp;
 neww = performance.now();
 oldd = performance.now();
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-let BrdGC = ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.chats
-.all()
-.filter(
-(v) =>
-v.jid.endsWith("g.us") && !v.read_only && v.messages && !v.announce
-)
-.map((v) => v.jid);
-for (let BrdId of BrdGC)
-await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
-.sendMessage(
-BrdId,
-{
-contentText: `お 👑𝐔𝐬𝐞𝐫: ${
-ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.user.notify ||
-ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.user.vname ||
-ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.user.name ||
-ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.user.jid.split("@")[0]
-} ꧂
+// let BrdGC = ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.chats
+// .all()
+// .filter(
+// (v) =>
+// v.jid.endsWith("g.us") && !v.read_only && v.messages && !v.announce
+// )
+// .map((v) => v.jid);
+// for (let BrdId of BrdGC)
+// await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
+// .sendMessage(
+// BrdId,
+// {
+// contentText: `お 👑𝐔𝐬𝐞𝐫: ${
+// ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.user.notify ||
+// ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.user.vname ||
+// ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.user.name ||
+// ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.user.jid.split("@")[0]
+// } ꧂
 
-╔⧉༻ *𝐕𝐥𝐤𝐲𝐫𝐞💡𝐎𝐧𝐥𝐢𝐧𝐞*
-║
-║🛰️ 𝐋𝐚𝐭𝐞𝐧𝐜𝐲: ${Ping}ms
-║📅 𝐃𝐚𝐭𝐞: ${Clock}
-║⚙️ 𝐕𝐞𝐫𝐬𝐢𝐨𝐧: Old: ${vers.vers} | New: ${vers.verold}
-║💻 𝐏𝐥𝐚𝐭𝐟𝐨𝐫𝐦: ${os.platform()}
-║☕ 𝐔𝐩𝐓𝐢𝐦𝐞: ${runtime(process.uptime())}
-║🎮 𝐑𝐀𝐌: ${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}
-╚════════════╝`,
-footerText: `*♔𝗩𝗹𝗸𝘆𝗿𝗲 ☊${vers.vers}*\n_❝ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞_`,
-buttons: [
-{
-buttonId: `${ᴋᴇɪ}help`,
-buttonText: { displayText: `${ᴋᴇɪ}help` },
-type: 1,
-},
-],
-headerType: 1,
-},
-MessageType.buttonsMessage
-)
-.catch((error) => console.log(error));
-
+// ╔⧉༻ *𝐕𝐥𝐤𝐲𝐫𝐞💡𝐎𝐧𝐥𝐢𝐧𝐞*
+// ║
+// ║🛰️ 𝐋𝐚𝐭𝐞𝐧𝐜𝐲: ${Ping}ms
+// ║📅 𝐃𝐚𝐭𝐞: ${Clock}
+// ║⚙️ 𝐕𝐞𝐫𝐬𝐢𝐨𝐧: Old: ${vers.vers} | New: ${vers.verold}
+// ║💻 𝐏𝐥𝐚𝐭𝐟𝐨𝐫𝐦: ${os.platform()}
+// ║☕ 𝐔𝐩𝐓𝐢𝐦𝐞: ${runtime(process.uptime())}
+// ║🎮 𝐑𝐀𝐌: ${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}
+// ╚════════════╝`,
+// footerText: `*♔𝗩𝗹𝗸𝘆𝗿𝗲 ☊${vers.vers}*\n_❝ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞_`,
+// buttons: [
+// {
+// buttonId: `${ᴋᴇɪ}help`,
+// buttonText: { displayText: `${ᴋᴇɪ}help` },
+// type: 1,
+// },
+// ],
+// headerType: 1,
+// },
+// MessageType.buttonsMessage
+// )
+// .catch((error) => console.log(error));
 await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .sendMessage(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.user.jid,
@@ -507,7 +506,7 @@ const groupMetadata = sender.endsWith(`@g.us`)
 : ``;
 var ᴠʟᴋʏʀᴇ = ӄʀʏօȶɛӄ.resolve(chat, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, groupMetadata);
 const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
-const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/[+ ]/g, "");
+const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/[ ]/g, "").replace(/[+]/g, "");
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 await Halt.findOne(
 {

@@ -158,7 +158,7 @@ ffmpeg(FilePath)
 .on("end", async () => {
 stick = await new Sticker(StickerPath, {
 type: "full",
-pack: Needs[0] || "ᴘᴏᴡᴇʀᴇᴅ ☊ ʙʏ",
+pack: Needs[0] || "ᴄʀᴀꜰᴛᴇᴅ ☊ ʙʏ",
 author: "❝ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ⌬ ᴠʟᴋʏʀᴇ ❞",
 categories: "Ⓒ",
 }).build();
@@ -204,7 +204,7 @@ ffmpeg(FilePath)
 .on("end", async () => {
 stick = await new Sticker(StickerPath, {
 type: "full",
-pack: Needs[0] || "ᴘᴏᴡᴇʀᴇᴅ ☊ ʙʏ",
+pack: Needs[0] || "ᴄʀᴀꜰᴛᴇᴅ ☊ ʙʏ",
 author: "❝ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ⌬ ᴠʟᴋʏʀᴇ ❞",
 categories: "Ⓒ",
 }).build();
