@@ -82,17 +82,21 @@ console.log(Kolor.red(`❌ 𝐄𝐫𝐫𝐨𝐫⬰ Vlkyre Web Auth-Code is Wrong
 process.exit(0);
 }
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.on("connecting", async () => {
-console.log(Kolor.yellow("💡 𝐈𝐧𝐟𝐨⬰ Vlkryre Trying To Connect With User WhatsApp..."));
+console.log(
+Kolor.yellow("💡 𝐈𝐧𝐟𝐨⬰ Vlkryre Trying To Connect With User WhatsApp...")
+);
 });
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.on("open", async () => {
 console.log(
-`💡 𝐈𝐧𝐟𝐨⬰ Connected to WhatsApp as: ${Kolor.green(
+Kolor.green(
+`💡 𝐈𝐧𝐟𝐨⬰ Connected to WhatsApp as: ${
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.user.notify ||
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.user.vname ||
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.user.name ||
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.user.jid.split("@")[0]
-)}`
+}`
+)
 );
 console.log(Kolor.yellow("💡 𝐈𝐧𝐟𝐨⬰ Verifying All Modules And Syncing..."));
 await ᴠʟᴋʏʀᴇTǟɮ(ꜱɪᴛʀᴀᴘ, commandUsage);
