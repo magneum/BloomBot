@@ -172,7 +172,13 @@ for (let BrdId of BrdGC)
 await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .sendMessage(
 BrdId,
-`*♔𝗩𝗹𝗸𝘆𝗿𝗲 ☊${vers.vers}*\n_❝ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞_
+{
+contentText: `お 👑𝐔𝐬𝐞𝐫: ${
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.user.notify ||
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.user.vname ||
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.user.name ||
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.user.jid.split("@")[0]
+} ꧂
 
 ╔⧉༻ *𝐕𝐥𝐤𝐲𝐫𝐞💡𝐎𝐧𝐥𝐢𝐧𝐞*
 ║
@@ -180,14 +186,30 @@ BrdId,
 ║📅 𝐃𝐚𝐭𝐞: ${Clock}
 ║⚙️ 𝐕𝐞𝐫𝐬𝐢𝐨𝐧: Old: ${vers.vers} | New: ${vers.verold}
 ╚════════════╝`,
-MessageType.text
+footerText: `*♔𝗩𝗹𝗸𝘆𝗿𝗲 ☊${vers.vers}*\n_❝ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞_`,
+buttons: [
+{
+buttonId: `${ᴋᴇɪ}help`,
+buttonText: { displayText: `${ᴋᴇɪ}help` },
+type: 1,
+},
+],
+headerType: 1,
+},
+MessageType.buttonsMessage
 )
 .catch((error) => console.log(error));
+
 await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .sendMessage(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.user.jid,
-`*♔𝗩𝗹𝗸𝘆𝗿𝗲 ☊${vers.vers}*\n_❝ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞_
-
+{
+contentText: `お 👑𝐔𝐬𝐞𝐫: ${
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.user.notify ||
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.user.vname ||
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.user.name ||
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.user.jid.split("@")[0]
+} ꧂
 
 ╔⧉༻ *𝐕𝐥𝐤𝐲𝐫𝐞💡𝐎𝐧𝐥𝐢𝐧𝐞*
 ║
@@ -200,7 +222,17 @@ await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 ╚════════════╝
 
 _Sent broadcast messages to *${BrdGC.length}* group_`,
-MessageType.text
+footerText: `*♔𝗩𝗹𝗸𝘆𝗿𝗲 ☊${vers.vers}*\n_❝ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞_`,
+buttons: [
+{
+buttonId: `${ᴋᴇɪ}help`,
+buttonText: { displayText: `${ᴋᴇɪ}help` },
+type: 1,
+},
+],
+headerType: 1,
+},
+MessageType.buttonsMessage
 )
 .catch((error) => console.log(error));
 });
