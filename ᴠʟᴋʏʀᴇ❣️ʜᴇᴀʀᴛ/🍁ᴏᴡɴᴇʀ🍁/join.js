@@ -46,7 +46,7 @@ try {
 await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.acceptInvite(code).then(async (res) => {
 const gMd = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.groupMetadata(res.gid);
 const gD = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.groupMetadata(res.gid);
-if (!ᴠʟᴋʏʀᴇ.isSenderDev && gMd.participants.length < 15) {
+if (!ᴠʟᴋʏʀᴇ.isSenderDev && gMd.participants.length < 10) {
 await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.groupRemove(res.gid, [ᴠʟᴋʏʀᴇ.Myself]);
 return ᴠʟᴋʏʀᴇ_Buttons.MTB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
@@ -56,7 +56,7 @@ chat,
 
 ╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
 ║
-║❌ 𝗘𝗿𝗿𝗼𝗿: _${gMd.participants.length}/15 members!_
+║❌ 𝗘𝗿𝗿𝗼𝗿: _${gMd.participants.length}/10 members!_
 ║📜 𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${gD.subject}
 ╚════════════╝`
 );
