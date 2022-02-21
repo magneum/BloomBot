@@ -17,6 +17,7 @@ try {
 await VlkyreFetch.fetch();
 var VlkyreFetched = await VlkyreFetch.log([`KryTek..origin/KryTek`]);
 if (VlkyreFetched.total != 0) {
+console.log(Kolor.blue("💡 𝐈𝐧𝐟𝐨⬰ New Update Found!"));
 require("child_process")
 .exec(
 `git config --global user.name "KryKnz" && git config --global user.email "KryKnz@yandex.com" && git config --global pull.ff only && git config --global pull.rebase false`
