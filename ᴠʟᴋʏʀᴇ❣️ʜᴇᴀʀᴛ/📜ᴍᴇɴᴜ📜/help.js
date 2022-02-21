@@ -79,15 +79,6 @@ return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 contentText: `╔⧉༻ *@${ᴘɴᴀᴍᴇ}* ꧂
 ║🍂 𝐕𝐥𝐤𝐲𝐫𝐞: _Is an Advance Whatsapp User-Bot!_
 ║🍂 𝐆𝐢𝐭𝐡𝐮𝐛: _https://github.com/Kryknz/Vlkyre_
-╚◇╗꧂
-╔◇╜⧉༻ 👇🏽𝐒𝐲𝐦𝐥𝐢𝐧𝐤👇🏽꧂
-║⚙️ *Engine:*  _${vers.vers}_
-║💻 *Platform:*  _${os.platform()}_
-║🛰️ *Latency:*  _${latensi.toFixed(4)}ms_
-║☕ *Uptime:*  _${runtime(process.uptime())}_
-║🎮 *Ram:*  _${formatp(os.totalmem() - os.freemem())} / ${formatp(
-os.totalmem()
-)}_
 ╚════════════╝
 
 ╔⧉༻ 𝐄𝐯𝐞𝐫𝐲𝐨𝐧𝐞👇🏽꧂
