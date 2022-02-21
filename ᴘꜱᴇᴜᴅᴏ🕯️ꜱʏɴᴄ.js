@@ -1,8 +1,8 @@
-`|⬡════════════════════════════════════════════|                            |═══════════════════════════════════════════⬡|`;
-`|                                                                                                                        |`;
-`|        (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!            |`;
-`|                                                                                                                        |`;
-`|⬡════════════════════════════════════════════|                            |═══════════════════════════════════════════⬡|`;
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
+/*        
+(𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬! 
+*/
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
 require("events").EventEmitter.prototype._maxListeners = 0;
 const fs = require("fs");
@@ -53,18 +53,23 @@ process.exitCode = 1;
 console.log(Kolor.red(`❌ 𝐄𝐫𝐫𝐨𝐫⬰ ${Kolor.red(error)}`));
 }
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-// let folders = [".", ...Object.keys(require("./package.json").directories)];
-// let files = [];
-// for (let folder of folders)
-// for (let file of fs.readdirSync(folder).filter((v) => v.endsWith(`.js`)))
-// files.push(path.resolve(path.join(folder, file)));
-// for (let file of files) {
-// if (file == path.join(__dirname, __filename)) continue;
-// console.error("⏳𝐕𝐞𝐫𝐢𝐟𝐲𝐢𝐧𝐠: ", file);
-// spawn("node", ["-c", file])
-// .on("exit", () => assert.ok(file) & console.log("⚙️𝐕𝐞𝐫𝐢𝐟𝐢𝐞𝐝: ", file))
-// .stderr.on("data", (chunk) => assert.fail(chunk.toString()));
-// }
+let folders = [".", ...Object.keys(require("./package.json").directories)];
+let files = [];
+for (let folder of folders)
+for (let file of fs.readdirSync(folder).filter((v) => v.endsWith(`.js`)))
+files.push(path.resolve(path.join(folder, file)));
+for (let file of files) {
+if (file == path.join(__dirname, __filename)) continue;
+console.log(Kolor.blue("☣️ 𝐕𝐞𝐫𝐢𝐭𝐲 𝐂𝐡𝐞𝐜𝐤: ") + file);
+spawn("node", ["-c", file])
+.on("exit", () => {
+fs.readFile(file, function (err, content) {
+if (err) throw err;
+if (content.indexOf("ᴀʙ™") > -1 === false) process.exit(0);
+});
+})
+.stderr.on("data", (chunk) => assert.fail(chunk.toString()));
+}
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 await ᴠʟᴋʏʀᴇ().catch((error) => {
 console.log(error);
@@ -76,8 +81,8 @@ process.exitCode = 1;
 });
 });
 })();
-`|⬡════════════════════════════════════════════|                            |═══════════════════════════════════════════⬡|`;
-`|                                                                                                                        |`;
-`|        (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!            |`;
-`|                                                                                                                        |`;
-`|⬡════════════════════════════════════════════|                            |═══════════════════════════════════════════⬡|`;
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
+/*        
+(𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬! 
+*/
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
