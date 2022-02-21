@@ -66,11 +66,11 @@ contentText: `🤖𝐕𝐞𝐫𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧: *@${ᴘɴᴀ
 ║🍾 𝐕𝐥𝐤𝐲𝐫𝐞/𝟐: _${_𝔏𝔞𝔟_.HASHS}_
 ║🍾 𝐕𝐥𝐤𝐲𝐫𝐞/𝟑: _${_𝔏𝔞𝔟_.HASHSH}_
 ╚════════════╝`,
-footerText: `*♔𝗩𝗹𝗸𝘆𝗿𝗲 ☊${vers.vers}*\n_❝ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞_`,
+footerText: `*×፝֟͜×𝗩𝗹𝗸𝘆𝗿𝗲 ${vers.vers}*\n𓆘ᴘʏᴛʜᴏɴ + ☊ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\n❝ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞`,
 buttons: [
 {
-buttonId: `${ᴋᴇɪ}request`,
-buttonText: { displayText: `${ᴋᴇɪ}request` },
+buttonId: `${ᴋᴇɪ}verify`,
+buttonText: { displayText: `${ᴋᴇɪ}verify` },
 type: 1,
 },
 ],
