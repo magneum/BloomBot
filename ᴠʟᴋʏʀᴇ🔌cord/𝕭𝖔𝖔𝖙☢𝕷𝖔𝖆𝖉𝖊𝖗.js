@@ -482,14 +482,27 @@ async (error, server) => {
 if (error) return ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 if (!server) return;
-const Body_Check = require("../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/Body_Check");
-if (Body_Check.Body_Check(ᴠʟᴋʏʀᴇ.body) === true) {
+let LinkRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i;
+let isGroupLink = LinkRegex.exec(ᴠʟᴋʏʀᴇ.body);
+let LinkGC =
+"https://chat.whatsapp.com/" +
+(await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.groupInviteCode(ᴠʟᴋʏʀᴇ.chatId));
+let isLinkThisGc = new RegExp(LinkGC, "i");
+let isgclink = isLinkThisGc.test(ᴠʟᴋʏʀᴇ.body);
+if (
+isGroupLink &&
+!isgclink &&
+ᴠʟᴋʏʀᴇ.body.includes("wa.me/") &&
+ᴠʟᴋʏʀᴇ.body.includes("/t.me/") &&
+ᴠʟᴋʏʀᴇ.body.includes("discord.com") &&
+ᴠʟᴋʏʀᴇ.body.includes("https://t.me/") &&
+ᴠʟᴋʏʀᴇ.body.includes("discord.gg")
+) {
 await ᴠʟᴋʏʀᴇ_Buttons.MIB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 ᴠʟᴋʏʀᴇ,
-`
-╔════◇🌋  𝐀𝐧𝐭𝐢𝐥𝐢𝐧𝐤 𝐓𝐫𝐢𝐠𝐠𝐞𝐫𝐞𝐝
+`╔════◇🌋  𝐀𝐧𝐭𝐢𝐥𝐢𝐧𝐤 𝐓𝐫𝐢𝐠𝐠𝐞𝐫𝐞𝐝
 ║
 ║⚰️ 𝗣𝘂𝗻𝗶𝘀𝗵𝗺𝗲𝗻𝘁: _You Will Be Kicked!_
 ╚════════════༻꧂`,
