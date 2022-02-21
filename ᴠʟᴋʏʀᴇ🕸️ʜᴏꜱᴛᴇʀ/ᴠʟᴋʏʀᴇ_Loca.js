@@ -24,7 +24,7 @@ const ᴠʟᴋʏʀᴇ_Loca = async (ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, chat, 
 try {
 const buttonMessage = {
 contentText: MainText,
-footerText: `*×፝֟͜×𝗩𝗹𝗸𝘆𝗿𝗲 ${vers.vers}*\n𓆘ᴘʏᴛʜᴏɴ + ☊ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\n_❝ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞_`,
+footerText: `*×፝֟͜×Ꮙǟʟӄʏʀɛ ${vers.vers}*\nᴘʏᴛʜᴏɴ𓆘 + ☊ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\n❝ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™❞`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
