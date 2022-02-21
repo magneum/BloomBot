@@ -220,10 +220,7 @@ contentText: `お 👑𝐔𝐬𝐞𝐫: ${
 ║⚙️ 𝐕𝐞𝐫𝐬𝐢𝐨𝐧: Old: ${vers.vers} | New: ${vers.verold}
 ║💻 𝐏𝐥𝐚𝐭𝐟𝐨𝐫𝐦: ${os.platform()}
 ║☕ 𝐔𝐩𝐓𝐢𝐦𝐞: ${runtime(process.uptime())}
-║🎮 𝐑𝐀𝐌: ${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}
-╚════════════╝
-
-_Sent Alive Message to *${BrdGC.length}* groups_`,
+║🎮 𝐑𝐀𝐌: ${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}`,
 footerText: `*♔𝗩𝗹𝗸𝘆𝗿𝗲 ☊${vers.vers}*\n_❝ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞_`,
 buttons: [
 {
