@@ -16,9 +16,16 @@ var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 var path = require(`path`);
 var scriptName = path.basename(__filename);
 var newScpt = scriptName.slice(0, -3).toLowerCase();
+const { Sticker } = require("wa-sticker-formatter");
+const isUrl = (text) => {
+return text.match(
+new RegExp(
+/https?:\/\/(www\.)?[-a-zA-Z0-9@:%._+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_+.~#?&/=]*)(jpe?g|gif|png)/,
+"gi"
+)
+);
+};
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-// if (!mime) throw 'No picture'
-// if (!/image\/(jpe?g|png)/.test(mime)) throw `Meme ${mime} not supported`
 module.exports = {
 name: newScpt,
 ᴠʟᴋʏʀᴇӄǟɨʐօ: `*Reply Media With:* _${ᴋᴇɪ}${newScpt}_
@@ -65,7 +72,6 @@ chat,
 );
 } else {
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-
 var clock =
 userBadge.PermanentLimitTime -
 (Date.now() - userBadge.CurrentLimitTime);
@@ -126,12 +132,12 @@ chat,
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 try {
 const convertToSticker = async (FileID, RepliedFile) => {
-const fileName = "./converter-" + FileID;
+const FileName = "./converter-" + FileID;
 const FilePath = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.downloadAndSaveMediaMessage(
 RepliedFile,
-fileName
+FileName
 );
-const stickerPath = "./sticker-" + FileID + ".webp";
+const StickerPath = "./sticker-" + FileID + ".webp";
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 if (ᴠʟᴋʏʀᴇ.type === "image" || ᴠʟᴋʏʀᴇ.isReplyImage) {
 ffmpeg(FilePath)
@@ -139,14 +145,23 @@ ffmpeg(FilePath)
 .videoFilters(
 "scale=2000:2000:flags=lanczos:force_original_aspect_ratio=decrease,format=rgba,pad=2000:2000:(ow-iw)/2:(oh-ih)/2:color=#00000000,setsar=1"
 )
-.save(stickerPath)
+.save(StickerPath)
 .on("end", async () => {
+stick = await new Sticker(StickerPath, {
+type: "full",
+pack: Needs[0] || "Sticker Maker",
+author: "KrakinzLab ⌬ Vlkyre",
+categories: "Ⓒ",
+}).build();
 await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
 ᴠʟᴋʏʀᴇ.chatId,
-fs.readFileSync(stickerPath),
-MessageType.sticker
+stick,
+MessageType.sticker,
+{
+quoted: chat,
+}
 );
-await cleanRF.cleanRF(FilePath, stickerPath);
+await cleanRF.cleanRF(FilePath, StickerPath);
 })
 .on(`error`, async (error) => {
 userBadge.Limits = userBadge.Limits + 1;
@@ -176,20 +191,31 @@ ffmpeg(FilePath)
 .videoFilters(
 "scale=600:600:flags=lanczos:force_original_aspect_ratio=decrease,format=rgba,pad=600:600:(ow-iw)/2:(oh-ih)/2:color=#00000000,setsar=1"
 )
-.save(stickerPath)
+.save(StickerPath)
 .on("end", async () => {
+stick = await new Sticker(StickerPath, {
+type: "full",
+pack: Needs[0] || "Sticker Maker",
+author: "KrakinzLab ⌬ Vlkyre",
+categories: "Ⓒ",
+}).build();
 await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
 ᴠʟᴋʏʀᴇ.chatId,
-fs.readFileSync(stickerPath),
-MessageType.sticker
+stick,
+MessageType.sticker,
+{
+quoted: chat,
+}
 );
-await cleanRF.cleanRF(FilePath, stickerPath);
+await cleanRF.cleanRF(FilePath, StickerPath);
 })
 .on(`error`, async (error) => {
 userBadge.Limits = userBadge.Limits + 1;
 await userBadge
 .save()
-.catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
+.catch((error) =>
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
+);
 return ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
 });
 return;

