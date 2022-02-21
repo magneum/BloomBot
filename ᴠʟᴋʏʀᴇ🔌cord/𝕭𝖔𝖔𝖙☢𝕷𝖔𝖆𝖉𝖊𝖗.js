@@ -173,14 +173,6 @@ BrdId,
 ╔⧉༻ 🚀 *BACK ONLINE*
 ║🛰️ 𝐏𝐢𝐧𝐠: _${Ping}s_
 ║📅 𝐃𝐚𝐭𝐞: _${Clock}_
-╚════════════╝
-
-╔⧉༻ 𝐒𝐲𝐦𝐥𝐢𝐧𝐤 𝐈𝐧𝐟𝐨𝐬
-║⚙️ ᴇɴɢɪɴᴇ: _${vers.vers}_
-║💻 ᴘʟᴀᴛꜰᴏʀᴍ: _${os.platform()}_
-║🛰️ ʟᴀᴛᴇɴᴄʏ: ${latensi.toFixed(4)}(s)_
-║☕ ᴜᴘᴛɪᴍᴇ: _${runtime(process.uptime())}_
-║🎮 ʀᴀᴍ: _${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}_
 ╚════════════╝`,
 MessageType.text
 )
