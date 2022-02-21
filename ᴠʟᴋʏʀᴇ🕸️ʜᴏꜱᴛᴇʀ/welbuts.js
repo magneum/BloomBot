@@ -44,7 +44,7 @@ if (error) return console.log(error);
 if (BanGroup) return;
 const FlowerWel = Flower[Math.floor(Math.random() * Flower.length)];
 const PeopleWel = People[Math.floor(Math.random() * People.length)];
-var ᴘᴘᴡᴇʟᴄᴏᴍᴇ = MemNum.split("@")[0].replace(/[+ ]/g, "");
+var ᴘᴘᴡᴇʟᴄᴏᴍᴇ = MemNum.split("@")[0].replace(/[ ]/g, "").replace(/[+]/g, "");
 let 𝕻𝕻𝖑𝖊𝖙𝖊𝖗;
 try {
 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.getProfilePicture(
