@@ -66,17 +66,6 @@ var Timers = `𝐍𝐢𝐠𝐡𝐭💤`;
 var ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇 = ᴠʟᴋʏʀᴇֆʏռօք.WhatsApp;
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.logger.level = "error";
 async function ᴠʟᴋʏʀᴇ() {
-await ᴠʟᴋʏʀᴇgoose
-.connect(_𝔏𝔞𝔟_.VLKYREMDB, {
-useNewUrlParser: true,
-useUnifiedTopology: true,
-useCreateIndex: true,
-useFindAndModify: false,
-})
-.catch((error) => {
-console.log(`❌ 𝐄𝐫𝐫𝐨𝐫⬰ ${error}`);
-process.exit(0);
-});
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 /*
 const path = require("path");
@@ -111,9 +100,11 @@ var session = ᴠʟᴋʏʀᴇֆʏռօք.ᴠʟᴋʏʀᴇReIgnite(_𝔏𝔞𝔟_.V
 console.log(Kolor.red(`💡 𝐈𝐧𝐟𝐨⬰ ᴠʟᴋʏʀᴇ Web Code is Wrong. Re-Auth!`));
 process.exit(0);
 }
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.on("connecting", async () => {
+console.log(Kolor.yellowBright("💡 𝐈𝐧𝐟𝐨⬰ Connecting to WhatsApp..."));
+});
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.connect();
-ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.on(`open`, async () => {
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.on("open", async () => {
 console.log(
 `💡 𝐈𝐧𝐟𝐨⬰ Connected to WhatsApp as ${Kolor.green(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.user.notify ||
@@ -122,6 +113,39 @@ console.log(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.user.jid.split("@")[0]
 )}`
 );
+console.log(
+Kolor.yellowBright.bold("💡 𝐈𝐧𝐟𝐨⬰ Installing Plugins... Please wait.")
+);
+await ᴠʟᴋʏʀᴇTǟɮ(ꜱɪᴛʀᴀᴘ, commandUsage);
+console.log(Kolor.green.bold("💡 𝐈𝐧𝐟𝐨⬰ Plugins Installed Successfully..."));
+console.log(Kolor.yellowBright.bold("💡 𝐈𝐧𝐟𝐨⬰ Connecting to Database."));
+try {
+await ᴠʟᴋʏʀᴇgoose
+.connect(_𝔏𝔞𝔟_.VLKYREMDB, {
+useNewUrlParser: true,
+useUnifiedTopology: true,
+useCreateIndex: true,
+useFindAndModify: false,
+})
+.catch((error) => {
+console.log(`❌ 𝐄𝐫𝐫𝐨𝐫⬰ ${error}`);
+process.exit(0);
+});
+console.log(
+Kolor.greenBright.bold(
+"💡 𝐈𝐧𝐟𝐨⬰ Connection has been established successfully."
+)
+);
+} catch (error) {
+console.error("[ERROR] Unable to connect to the database:", error);
+}
+console.log(Kolor.yellowBright.bold("💡 𝐈𝐧𝐟𝐨⬰ Syncing Database..."));
+console.log(
+Kolor.greenBright.bold(
+"💡 𝐈𝐧𝐟𝐨⬰ All models were synchronized successfully."
+)
+);
+console.log(Kolor.greenBright.bold("💡 𝐈𝐧𝐟𝐨⬰ Connected! Enjoy Vlkyre"));
 await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .sendMessage(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.user.jid,
@@ -134,8 +158,9 @@ MessageType.text
 )
 .catch((error) => console.log(error));
 });
+
+await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.connect();
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-ᴠʟᴋʏʀᴇTǟɮ(ꜱɪᴛʀᴀᴘ, commandUsage);
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.on(`group-update`, async (update) => {
 try {
 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.getProfilePicture(update.jid);
