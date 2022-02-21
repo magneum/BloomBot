@@ -215,14 +215,14 @@ if (update.announce == `false`) {
 return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .sendMessage(groupupdateID.id, { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 }, MessageType.image, {
 mimetype: Mimetype.png,
-caption: `*🛸Attention Here Everyone In the Group!🛸*
+caption: `*♔𝗩𝗹𝗸𝘆𝗿𝗲 ☊${vers.vers}*\n_❝ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞_
 
-
+*🛸Attention Here Everyone In the Group!🛸*
 ╔═══════༻꧂
 ║
-║⛺𝐆𝐫𝐨𝐮𝐩 𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _Open For All_
-║🎪𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${groupupdateID.subject}
-║💞𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${groupupdateID.participants.length}
+║⛺ 𝐆𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _Open For All_
+║🎪 𝐆𝐍𝐚𝐦𝐞: ${groupupdateID.subject}
+║💞 𝐆𝐌𝐞𝐦𝐛𝐞𝐫: ${groupupdateID.participants.length}
 ╚════════════༻꧂`,
 })
 .catch((error) => console.log(error));
@@ -231,14 +231,14 @@ caption: `*🛸Attention Here Everyone In the Group!🛸*
 return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .sendMessage(groupupdateID.id, { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 }, MessageType.image, {
 mimetype: Mimetype.png,
-caption: `*🛸Attention Here Everyone In the Group!🛸*
+caption: `*♔𝗩𝗹𝗸𝘆𝗿𝗲 ☊${vers.vers}*\n_❝ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞_
 
-
+*🛸Attention Here Everyone In the Group!🛸*
 ╔═══════༻꧂
 ║
-║⛺𝐆𝐫𝐨𝐮𝐩 𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _Admins-Only_
-║🎪𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${groupupdateID.subject}
-║💞𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${groupupdateID.participants.length}
+║⛺ 𝐆𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _Admins-Only_
+║🎪 𝐆𝐍𝐚𝐦𝐞: ${groupupdateID.subject}
+║💞 𝐆𝐌𝐞𝐦𝐛𝐞𝐫: ${groupupdateID.participants.length}
 ╚════════════༻꧂`,
 })
 .catch((error) => console.log(error));
@@ -251,15 +251,17 @@ mimetype: Mimetype.png,
 contextInfo: {
 mentionedJid: [tag],
 },
-caption: `*🛸Attention Here Everyone In the Group!🛸*
+caption: `*♔𝗩𝗹𝗸𝘆𝗿𝗲 ☊${vers.vers}*\n_❝ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞_
 
+
+*🛸Attention Here Everyone In the Group!🛸*
 
 ╔═══════༻꧂
 ║
-║⛺𝐆𝐫𝐨𝐮𝐩 𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _New Description Added_
-║🎪𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${groupupdateID.subject}
-║🍌𝐂𝐡𝐚𝐧𝐠𝐞𝐝 𝐁𝐲: @${update.descOwner.split(`@`)[0]}
-║💞𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${groupupdateID.participants.length}
+║⛺ 𝐆𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _New Description Added_
+║🎪 𝐆𝐍𝐚𝐦𝐞: ${groupupdateID.subject}
+║💞 𝐆𝐌𝐞𝐦𝐛𝐞𝐫: ${groupupdateID.participants.length}
+║🍌 𝐂𝐡𝐚𝐧𝐠𝐞𝐝-𝐁𝐲: @${update.descOwner.split(`@`)[0]}
 ╚════════════༻꧂
 ༻꧂━━━━━༻꧂ 𝐍𝐞𝐰 𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧 ༻꧂━━━━━༻꧂
 ${update.desc}`,
@@ -270,14 +272,15 @@ ${update.desc}`,
 return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .sendMessage(groupupdateID.id, { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 }, MessageType.image, {
 mimetype: Mimetype.png,
-caption: `*🛸Attention Here Everyone In the Group!🛸*
+caption: `*♔𝗩𝗹𝗸𝘆𝗿𝗲 ☊${vers.vers}*\n_❝ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞_
 
-
+*🛸Attention Here Everyone In the Group!🛸*
 ╔═══════༻꧂
 ║
-║⛺𝐆𝐫𝐨𝐮𝐩 𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _Info Edit Allowed For All_
-║🎪𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${groupupdateID.subject}
-║💞𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${groupupdateID.participants.length}
+║⛺ 𝐆𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _Info Edit Allowed For All_
+║🎪 𝐆𝐍𝐚𝐦𝐞: ${groupupdateID.subject}
+║💞 𝐆𝐌𝐞𝐦𝐛𝐞𝐫: ${groupupdateID.participants.length}
+║🍌 𝐂𝐡𝐚𝐧𝐠𝐞𝐝-𝐁𝐲: @${update.descOwner.split(`@`)[0]}
 ╚════════════༻꧂`,
 })
 .catch((error) => console.log(error));
@@ -286,14 +289,15 @@ caption: `*🛸Attention Here Everyone In the Group!🛸*
 return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .sendMessage(groupupdateID.id, { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 }, MessageType.image, {
 mimetype: Mimetype.png,
-caption: `*🛸Attention Here Everyone In the Group!🛸*
+caption: `*♔𝗩𝗹𝗸𝘆𝗿𝗲 ☊${vers.vers}*\n_❝ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞_
 
-
+*🛸Attention Here Everyone In the Group!🛸*
 ╔═══════༻꧂
 ║
-║⛺𝐆𝐫𝐨𝐮𝐩 𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _Info Edit Admins-Only_
-║🎪𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${groupupdateID.subject}
-║💞𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${groupupdateID.participants.length}
+║⛺ 𝐆𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _Info Edit Admins-Only_
+║🎪 𝐆𝐍𝐚𝐦𝐞: ${groupupdateID.subject}
+║💞 𝐆𝐌𝐞𝐦𝐛𝐞𝐫: ${groupupdateID.participants.length}
+║🍌 𝐂𝐡𝐚𝐧𝐠𝐞𝐝-𝐁𝐲: @${update.descOwner.split(`@`)[0]}
 ╚════════════༻꧂`,
 })
 .catch((error) => console.log(error));
