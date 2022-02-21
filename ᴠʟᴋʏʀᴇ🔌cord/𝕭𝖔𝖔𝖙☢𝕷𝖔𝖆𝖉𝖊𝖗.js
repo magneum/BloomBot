@@ -426,8 +426,7 @@ return ᴠʟᴋʏʀᴇ_Buttons.MTB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 ᴠʟᴋʏʀᴇ,
-`❣️𝗠𝗲𝗻𝘁𝗶𝗼𝗻:  ꧁ *@${ᴘɴᴀᴍᴇ}* ꧂
-
+`꧁ *@${ᴘɴᴀᴍᴇ}* ꧂
 _⚠️ 𝗨𝘀𝗶𝗻𝗴 𝗩𝗹𝗸𝘆𝗿𝗲 𝗜𝗻 𝗣𝗿𝗶𝘃𝗮𝘁𝗲 𝗜𝘀 𝗡𝗼 𝗹𝗼𝗻𝗴𝗲𝗿 𝗔𝗹𝗹𝗼𝘄𝗲𝗱!_
 ╔════◇🧀 𝐃𝐞𝐟𝐚𝐮𝐥𝐭 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 ║
@@ -482,6 +481,21 @@ async (error, server) => {
 if (error) return ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 if (!server) return;
+const Regex = {
+VideoID: /^[a-zA-Z0-9-_]{11}$/,
+VideoURL:
+/^((?:https?:)?\/\/)?((?:www|m)\.)?((?:youtube\.com|youtu.be))(\/(?:[\w\-]+\?v=|embed\/|v\/)?)([\w\-]+)(\S+)?$/,
+PlaylistID: /(PL|UU|LL|RD)[a-zA-Z0-9-_]{16,41}/,
+PlaylistURL:
+/https?:\/\/(www.)?youtube.com\/playlist\?list=((PL|UU|LL|RD)[a-zA-Z0-9-_]{16,41})/,
+SCTrack:
+/^https?:\/\/(soundcloud\.com|snd\.sc)\/([A-Za-z0-9_-]+)\/([A-Za-z0-9_-]+)\/?$/,
+SCPlaylist:
+/^https?:\/\/(soundcloud\.com|snd\.sc)\/([A-Za-z0-9_-]+)\/sets\/([A-Za-z0-9_-]+)\/?$/,
+Spotify: /^(spotify:|https:\/\/[a-z]+\.spotify\.com\/)/,
+Whatsapp:
+/^(https?:\/\/)?chat\.whatsapp\.com\/(?:invite\/)?([a-zA-Z0-9_-]{22})$/,
+};
 let LinkRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i;
 let isGroupLink = LinkRegex.exec(ᴠʟᴋʏʀᴇ.body);
 let LinkGC =
@@ -496,7 +510,8 @@ isGroupLink &&
 ᴠʟᴋʏʀᴇ.body.includes("/t.me/") &&
 ᴠʟᴋʏʀᴇ.body.includes("discord.com") &&
 ᴠʟᴋʏʀᴇ.body.includes("https://t.me/") &&
-ᴠʟᴋʏʀᴇ.body.includes("discord.gg")
+ᴠʟᴋʏʀᴇ.body.includes("discord.gg") &&
+Regex.Whatsapp.test(ᴠʟᴋʏʀᴇ.body)
 ) {
 await ᴠʟᴋʏʀᴇ_Buttons.MIB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
@@ -607,7 +622,7 @@ if (
 !member3.includes(ʟɴᴀᴍᴇ)
 ) {
 const buttonMessage = {
-contentText: `❣️𝗠𝗲𝗻𝘁𝗶𝗼𝗻:  ꧁ *@${ᴘɴᴀᴍᴇ}* ꧂
+contentText: `꧁ *@${ᴘɴᴀᴍᴇ}* ꧂
 🤖𝐕𝐞𝐫𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧: You Are Not Verified!*
 
 𝐑𝐄𝐀𝐃 + 𝐃𝐎 𝐍𝐎𝐓 𝐒𝐏𝐀𝐌!
@@ -644,8 +659,7 @@ return await ᴠʟᴋʏʀᴇ_Buttons.MTB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 ᴠʟᴋʏʀᴇ,
-`❣️𝗠𝗲𝗻𝘁𝗶𝗼𝗻:  ꧁ *@${ᴘɴᴀᴍᴇ}* ꧂
-
+`꧁ *@${ᴘɴᴀᴍᴇ}* ꧂
 ❌ No Such Command In Database!`
 );
 } else {
