@@ -215,7 +215,7 @@ MessageType.video,
 mimetype: `video/gif`,
 quoted: chat,
 caption:
-`*♔𝗩𝗹𝗸𝘆𝗿𝗲 ☊${vers.vers}*\n_❝ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞_\n\n
+`*×፝֟͜×𝗩𝗹𝗸𝘆𝗿𝗲 ☊${vers.vers}*\n_❝ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞_\n\n
 
 ❣️𝗠𝗲𝗻𝘁𝗶𝗼𝗻:  ꧁ *@${ᴘɴᴀᴍᴇ}* ꧂
 ╔◇══════════════◇╗
@@ -234,7 +234,7 @@ caption:
 ║💫 *Type:* _${ᴋᴇɪ}pokedex ${PokemonData.name}_
 ║💫 *Type:* _${ᴋᴇɪ}pokemon ${PokemonData.name}_
 ╚════════════╝`,
-contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ, Receiver] },
+contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
 }
 )
 .catch((error) =>
