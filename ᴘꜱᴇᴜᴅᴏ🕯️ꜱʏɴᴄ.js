@@ -45,18 +45,18 @@ process.exitCode = 1;
 console.log(Kolor.red(`❌ 𝐄𝐫𝐫𝐨𝐫⬰ ${Kolor.red(error)}`));
 }
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-let folders = [".", ...Object.keys(require("./package.json").directories)];
-let files = [];
-for (let folder of folders)
-for (let file of fs.readdirSync(folder).filter((v) => v.endsWith(`.js`)))
-files.push(path.resolve(path.join(folder, file)));
-for (let file of files) {
-if (file == path.join(__dirname, __filename)) continue;
-console.error("⏳𝐕𝐞𝐫𝐢𝐟𝐲𝐢𝐧𝐠: ", file);
-spawn("node", ["-c", file])
-.on("exit", () => assert.ok(file) & console.log("⚙️𝐕𝐞𝐫𝐢𝐟𝐢𝐞𝐝: ", file))
-.stderr.on("data", (chunk) => assert.fail(chunk.toString()));
-}
+// let folders = [".", ...Object.keys(require("./package.json").directories)];
+// let files = [];
+// for (let folder of folders)
+// for (let file of fs.readdirSync(folder).filter((v) => v.endsWith(`.js`)))
+// files.push(path.resolve(path.join(folder, file)));
+// for (let file of files) {
+// if (file == path.join(__dirname, __filename)) continue;
+// console.error("⏳𝐕𝐞𝐫𝐢𝐟𝐲𝐢𝐧𝐠: ", file);
+// spawn("node", ["-c", file])
+// .on("exit", () => assert.ok(file) & console.log("⚙️𝐕𝐞𝐫𝐢𝐟𝐢𝐞𝐝: ", file))
+// .stderr.on("data", (chunk) => assert.fail(chunk.toString()));
+// }
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 await ᴠʟᴋʏʀᴇ().catch((error) => {
 console.log(error);
