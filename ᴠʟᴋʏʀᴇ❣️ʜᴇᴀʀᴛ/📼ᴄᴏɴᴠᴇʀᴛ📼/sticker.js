@@ -28,9 +28,18 @@ new RegExp(
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 module.exports = {
 name: newScpt,
-ᴠʟᴋʏʀᴇӄǟɨʐօ: `*Reply Media With:* _${ᴋᴇɪ}${newScpt}_
+ᴠʟᴋʏʀᴇӄǟɨʐօ: `*REPLY:* ${ᴋᴇɪ}${newScpt} _<sticker name is optional>_
 
-*Supported Media Types:* Image/Video/Gif/Mp4/Jpeg/Png`,
+╔════◇ *Supported Media Types* ꧂
+║- Image
+║- Video (10s)
+║- PNG
+║- JPEG
+║- WEBP
+║- URL-GIF
+║- URL-PNG
+║- URL-JPEG
+╚════════════╝`,
 async handle(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, chat, ᴠʟᴋʏʀᴇ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
 try {
 const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
@@ -149,8 +158,8 @@ ffmpeg(FilePath)
 .on("end", async () => {
 stick = await new Sticker(StickerPath, {
 type: "full",
-pack: Needs[0] || "Sticker Maker",
-author: "KrakinzLab ⌬ Vlkyre",
+pack: Needs[0] || "ᴘᴏᴡᴇʀᴇᴅ ☊ ʙʏ",
+author: "❝ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ⌬ ᴠʟᴋʏʀᴇ ❞",
 categories: "Ⓒ",
 }).build();
 await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
@@ -160,7 +169,7 @@ MessageType.sticker,
 {
 quoted: chat,
 }
-);
+).catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
 await cleanRF.cleanRF(FilePath, StickerPath);
 })
 .on(`error`, async (error) => {
@@ -195,8 +204,8 @@ ffmpeg(FilePath)
 .on("end", async () => {
 stick = await new Sticker(StickerPath, {
 type: "full",
-pack: Needs[0] || "Sticker Maker",
-author: "KrakinzLab ⌬ Vlkyre",
+pack: Needs[0] || "ᴘᴏᴡᴇʀᴇᴅ ☊ ʙʏ",
+author: "❝ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ⌬ ᴠʟᴋʏʀᴇ ❞",
 categories: "Ⓒ",
 }).build();
 await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
@@ -206,7 +215,7 @@ MessageType.sticker,
 {
 quoted: chat,
 }
-);
+).catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
 await cleanRF.cleanRF(FilePath, StickerPath);
 })
 .on(`error`, async (error) => {
