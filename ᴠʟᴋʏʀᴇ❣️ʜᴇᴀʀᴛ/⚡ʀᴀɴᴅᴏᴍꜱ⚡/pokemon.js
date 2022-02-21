@@ -20,7 +20,6 @@ const fs = require(`fs`);
 var path = require(`path`);
 var scriptName = path.basename(__filename);
 var newScpt = scriptName.slice(0, -3).toLowerCase();
-const { PokeList } = require("../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/pokelist");
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 module.exports = {
 name: newScpt,
@@ -48,7 +47,6 @@ chat,
 );
 }
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-let BasePoke = PokeList[Math.floor(Math.random() * PokeList.length)];
 let json;
 try {
 let res = await fetch(
@@ -64,7 +62,7 @@ return;
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 pokemon.configure({ apiKey: "123abc" });
 await pokemon.card
-.all({ q: `name:${BasePoke.toLowerCase()}` })
+.all({ q: `name:${Needs.join(" ")}` })
 .then(async (card) => {
 try {
 var PokeInfo = `❣️𝗠𝗲𝗻𝘁𝗶𝗼𝗻:  ꧁ *@${ᴘɴᴀᴍᴇ}* ꧂
