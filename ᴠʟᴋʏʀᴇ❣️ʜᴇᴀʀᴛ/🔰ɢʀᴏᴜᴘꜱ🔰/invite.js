@@ -102,7 +102,7 @@ contentText: `🪶 𝐇𝐞𝐲: •@${քɛʀֆօռɢօȶռʊʍ},
 ║💞𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${groupData.participants.length}
 ║🍰 𝐆𝐫𝐨𝐮𝐩: https://chat.whatsapp.com/${code}
 ╚════════════╝`,
-footerText: `*×፝֟͜×Ꮙǟʟӄʏʀɛ ${vers.vers}*\nᴘʏᴛʜᴏɴ𓆘 + ☊ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\n❝ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™❞`,
+footerText: `*ʋǟʟӄʏʀɛ ×፝֟͜× ${vers.vers}*\n𓆘ᴘʏᴛʜᴏɴ + ☊ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\n❝ _ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™_ ❞`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
@@ -138,7 +138,7 @@ contentText: `❣️𝗠𝗲𝗻𝘁𝗶𝗼𝗻:  ꧁ *@${ᴘɴᴀᴍᴇ}* ꧂
 ║💞𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${groupData.participants.length}
 ║🍰 𝐆𝐫𝐨𝐮𝐩: https://chat.whatsapp.com/${code}
 ╚════════════╝`,
-footerText: `*×፝֟͜×Ꮙǟʟӄʏʀɛ ${vers.vers}*\nᴘʏᴛʜᴏɴ𓆘 + ☊ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\n❝ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™❞`,
+footerText: `*ʋǟʟӄʏʀɛ ×፝֟͜× ${vers.vers}*\n𓆘ᴘʏᴛʜᴏɴ + ☊ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\n❝ _ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™_ ❞`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
