@@ -88,7 +88,7 @@ contentText: `❣️𝗠𝗲𝗻𝘁𝗶𝗼𝗻: ꧁◤ *@${ᴘᴘᴡᴇʟᴄ�
 ╚════════════༻꧂
 
 ${Message}`,
-footerText: `*♔𝗩𝗹𝗸𝘆𝗿𝗲 ☊${vers.vers}*\n_❝ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞_`,
+footerText: `*×፝֟͜×𝗩𝗹𝗸𝘆𝗿𝗲 ☊${vers.vers}*\n_❝ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞_`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
@@ -137,7 +137,7 @@ contentText: `❣️𝗠𝗲𝗻𝘁𝗶𝗼𝗻: ꧁◤ *@${ᴘᴘᴡᴇʟᴄ�
 ${Message}
 
 👇🏽𝗣𝗿𝗲𝘀𝘀 𝗯𝗲𝗹𝗼𝘄 𝗕𝘂𝘁𝘁𝗼𝗻𝘀👇🏽`,
-footerText: `*♔𝗩𝗹𝗸𝘆𝗿𝗲 ☊${vers.vers}*\n_❝ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞_`,
+footerText: `*×፝֟͜×𝗩𝗹𝗸𝘆𝗿𝗲 ☊${vers.vers}*\n_❝ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞_`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
