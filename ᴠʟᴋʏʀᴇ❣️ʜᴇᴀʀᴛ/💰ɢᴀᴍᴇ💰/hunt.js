@@ -199,9 +199,6 @@ return;
 }
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 userEco.money = userEco.money + Worth;
-require("nekobin")
-.lib.nekobin(card[0])
-.then(async (data) => {
 await userEco
 .save()
 .catch((error) =>
@@ -230,7 +227,6 @@ contentText: `❣️𝗠𝗲𝗻𝘁𝗶𝗼𝗻:  ꧁ *@${ᴘɴᴀᴍᴇ}* ꧂
 ╔◇╜
 ║💫 *Name:* ${PokemonData.name}
 ║〽️ *Pokedex ID:* ${PokemonData.id}
-║🌐 *Advance Info:* ${data.url}
 ║🪙 *Worth:* ${Worth}gold
 ╚════════════╝
 
@@ -258,7 +254,6 @@ contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
 .catch((error) =>
 ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
 );
-});
 });
 }
 );
