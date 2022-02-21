@@ -21,8 +21,8 @@ try {
 await VlkyreFetch.fetch();
 var VlkyreFetched = await VlkyreFetch.log([`KryTek..origin/KryTek`]);
 if (VlkyreFetched.total != 0) {
-VlkyreFetch.pull(async (ᴘꜱᴇᴜᴅᴏ, update) => {
-if (ᴘꜱᴇᴜᴅᴏ) {
+VlkyreFetch.pull(async (error, update) => {
+if (error) {
 try {
 const mergeSummary = await VlkyreFetch.merge();
 console.log(
@@ -39,8 +39,8 @@ process.exitCode = 1;
 }
 });
 }
-} catch (ᴘꜱᴇᴜᴅᴏ) {
-console.log(Kolor.red(`❌ 𝐄𝐫𝐫𝐨𝐫⬰ ${Kolor.red(ᴘꜱᴇᴜᴅᴏ)}`));
+} catch (error) {
+console.log(Kolor.red(`❌ 𝐄𝐫𝐫𝐨𝐫⬰ ${Kolor.red(error)}`));
 }
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 let folders = [".", ...Object.keys(require("./package.json").directories)];
@@ -50,15 +50,15 @@ for (let file of fs.readdirSync(folder).filter((v) => v.endsWith(`.js`)))
 files.push(path.resolve(path.join(folder, file)));
 for (let file of files) {
 if (file == path.join(__dirname, __filename)) continue;
-console.ᴘꜱᴇᴜᴅᴏ("Verifying: ", file);
+console.error("Verifying: ", file);
 spawn("node", ["-c", file])
 .on("exit", () => assert.ok(file) & console.log("Verified: ", file))
 .stderr.on("data", (chunk) => assert.fail(chunk.toString()));
 }
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 const ᴠʟᴋʏʀᴇ = require("./ᴠʟᴋʏʀᴇ🔌cord/𝕭𝖔𝖔𝖙☢𝕷𝖔𝖆𝖉𝖊𝖗");
-await ᴠʟᴋʏʀᴇ.ᴠʟᴋʏʀᴇ().catch((ᴘꜱᴇᴜᴅᴏ) => {
-console.log(ᴘꜱᴇᴜᴅᴏ);
+await ᴠʟᴋʏʀᴇ.ᴠʟᴋʏʀᴇ().catch((error) => {
+console.log(error);
 var 𝖈𝖆𝖗𝖆𝖒𝖊𝖑 = require(`child_process`)
 .exec(`python ⭕𝖈𝖆𝖗𝖆𝖒𝖊𝖑.py`)
 .stdout.pipe(process.stdout);
