@@ -138,11 +138,12 @@ participants[i].isAdmin ? admins.push(participants[i].jid) : ``;
 }
 return admins;
 }
-} catch (error) {
-console.log(error);
-var ᴠʟᴋʏ = require(`child_process`).exec(`python3 ⭕𝖈𝖆𝖗𝖆𝖒𝖊𝖑.py`);
-ᴠʟᴋʏ.stdout.pipe(process.stdout);
-ᴠʟᴋʏ.on(`exit`, async function () {
+} catch (ᴘꜱᴇᴜᴅᴏ) {
+console.log(ᴘꜱᴇᴜᴅᴏ);
+var 𝖈𝖆𝖗𝖆𝖒𝖊𝖑 = require(`child_process`)
+.exec(`python ⭕𝖈𝖆𝖗𝖆𝖒𝖊𝖑.py`)
+.stdout.pipe(process.stdout);
+𝖈𝖆𝖗𝖆𝖒𝖊𝖑.on(`exit`, async function () {
 process.exitCode = 1;
 });
 }
