@@ -38,7 +38,6 @@ var MainText = `❣️𝗠𝗲𝗻𝘁𝗶𝗼𝗻:  ꧁ *@${ᴘɴᴀᴍᴇ}* �
 ║• *${ᴋᴇɪ}leave:*  _leave groups with/without sending text._
 ║• *${ᴋᴇɪ}spam:*  _spam messsage in group/private_
 ║• *${ᴋᴇɪ}help:*  _basic help command_
-║• *${ᴋᴇɪ}sakura:*  _check sakura system health config_
 ╚════════════╝`;
 return ᴠʟᴋʏʀᴇ_Buttons
 .MIB(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, chat, ᴠʟᴋʏʀᴇ, MainText, MediaUrl)
