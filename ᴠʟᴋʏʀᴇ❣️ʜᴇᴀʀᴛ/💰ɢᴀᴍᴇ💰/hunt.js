@@ -24,252 +24,251 @@ var newScpt = scriptName.slice(0, -3).toLowerCase();
 const { PokeList } = require("../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/pokelist");
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 module.exports = {
-  name: newScpt,
-  async handle(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, chat, ᴠʟᴋʏʀᴇ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
-    try {
-      const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
-      const ᴅꜰɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.commandName;
-      const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
-      const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/[ ]/g, "").replace(/[+]/g, "");
-      `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-      if (!ᴠʟᴋʏʀᴇ.isGroup) {
-        return ᴠʟᴋʏʀᴇ_Buttons.MIB(
-          ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
-          chat,
-          ᴠʟᴋʏʀᴇ,
-          `❣️𝗠𝗲𝗻𝘁𝗶𝗼𝗻:  ꧁ *@${ᴘɴᴀᴍᴇ}* ꧂
+name: newScpt,
+async handle(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, chat, ᴠʟᴋʏʀᴇ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
+try {
+const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
+const ᴅꜰɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.commandName;
+const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
+const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/[ ]/g, "").replace(/[+]/g, "");
+`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
+if (!ᴠʟᴋʏʀᴇ.isGroup) {
+return ᴠʟᴋʏʀᴇ_Buttons.MIB(
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+chat,
+ᴠʟᴋʏʀᴇ,
+`❣️𝗠𝗲𝗻𝘁𝗶𝗼𝗻:  ꧁ *@${ᴘɴᴀᴍᴇ}* ꧂
 
 ╔════◇🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧 
 ║💡 _This Command is Only For Groups!_
 ╚════════════╝`,
-          "./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_Univ.png"
-        );
-      }
-      `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-      let BasePoke = PokeList[Math.floor(Math.random() * PokeList.length)];
-      let Worth = Math.ceil(Math.random() * 500);
-      Pokemon.findOne(
-        {
-          ID: ʟɴᴀᴍᴇ,
-        },
-        async (error, userHunt) => {
-          if (error) return ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
-          if (!userHunt) {
-            var newPokeUser = new Pokemon({
-              ID: ʟɴᴀᴍᴇ,
-              CurrentLimitTime: 0,
-              PermanentLimitTime: 21600000,
-            });
-            await newPokeUser
-              .save()
-              .catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
-            return ᴠʟᴋʏʀᴇ_Buttons.MIB(
-              ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
-              chat,
-              ᴠʟᴋʏʀᴇ,
-              `❣️𝗠𝗲𝗻𝘁𝗶𝗼𝗻:  ꧁ *@${ᴘɴᴀᴍᴇ}* ꧂
+"./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_Univ.png"
+);
+}
+`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
+let BasePoke = PokeList[Math.floor(Math.random() * PokeList.length)];
+let Worth = Math.ceil(Math.random() * 500);
+Pokemon.findOne(
+{
+ID: ʟɴᴀᴍᴇ,
+},
+async (error, userHunt) => {
+if (error) return ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
+if (!userHunt) {
+var newPokeUser = new Pokemon({
+ID: ʟɴᴀᴍᴇ,
+CurrentLimitTime: 0,
+PermanentLimitTime: 21600000,
+});
+await newPokeUser
+.save()
+.catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
+return ᴠʟᴋʏʀᴇ_Buttons.MIB(
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+chat,
+ᴠʟᴋʏʀᴇ,
+`❣️𝗠𝗲𝗻𝘁𝗶𝗼𝗻:  ꧁ *@${ᴘɴᴀᴍᴇ}* ꧂
 
 ╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_  
 ║🧈 *Added To DB for _${newScpt}_ command First Time!*
 ║🦋 _Try ${ᴋᴇɪ}${ᴅꜰɴᴀᴍᴇ} Again!_
 ╚════════════╝`,
-              `./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_Mongo.png`
-            );
-          }
-          `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-          Economy.findOne(
-            {
-              ID: ʟɴᴀᴍᴇ,
-            },
-            async (error, userEco) => {
-              if (error) return ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
-              if (!userEco) {
-                var newUser = new Economy({
-                  ID: ʟɴᴀᴍᴇ,
-                  money: 0,
-                  daily: 0,
-                  timeout: 86400000,
-                  fishdone: 0,
-                  fishtimeout: 1800000,
-                  workdone: 0,
-                  worktimeout: 900000,
-                });
-                await newUser
-                  .save()
-                  .catch((error) =>
-                    ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
-                  );
-                return ᴠʟᴋʏʀᴇ_Buttons.MIB(
-                  ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
-                  chat,
-                  ᴠʟᴋʏʀᴇ,
-                  `❣️𝗠𝗲𝗻𝘁𝗶𝗼𝗻:  ꧁ *@${ᴘɴᴀᴍᴇ}* ꧂
-
-╔◇══════════════◇╗
-┊  𝐕𝐥𝐤𝐲𝐫𝐞💵𝐁𝐚𝐧𝐤
-╚◇══════════════◇╝
-
-
-╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
-║💰 𝗧𝗼𝘁𝗮𝗹 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: Just Opened Your Account!
-║🤠 𝗔𝗰𝗰𝗼𝘂𝗻𝘁_𝗛𝗼𝗹𝗱𝗲𝗿: @${ᴘɴᴀᴍᴇ},
-╚════════════╝`,
-                  "./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_Univ.png"
-                );
-              }
-              `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-              let PokemonData;
-              try {
-                let res = await fetch(
-                  API(`https://some-random-api.ml`, `/pokedex`, {
-                    pokemon: BasePoke.toLowerCase(),
-                  })
-                ).catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
-                PokemonData = await res
-                  .json()
-                  .catch((error) =>
-                    ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
-                  );
-              } catch {
-                userBadge.Limits = userBadge.Limits + 1;
-                await userBadge
-                  .save()
-                  .catch((error) =>
-                    ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
-                  );
-                ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
-                return;
-              }
-              `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-              if (
-                userHunt.PermanentLimitTime -
-                  (Date.now() - userHunt.CurrentLimitTime) >
-                0
-              ) {
-                let time = ms(
-                  userHunt.PermanentLimitTime -
-                    (Date.now() - userHunt.CurrentLimitTime)
-                );
-                return ᴠʟᴋʏʀᴇ_Buttons.MIB(
-                  ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
-                  chat,
-                  ᴠʟᴋʏʀᴇ,
-                  `❣️𝗠𝗲𝗻𝘁𝗶𝗼𝗻:  ꧁ *@${ᴘɴᴀᴍᴇ}* ꧂
+`./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_Mongo.png`
+);
+}
+`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
+Economy.findOne(
+{
+ID: ʟɴᴀᴍᴇ,
+},
+async (error, userEco) => {
+if (error) return ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
+if (!userEco) {
+var newUser = new Economy({
+ID: ʟɴᴀᴍᴇ,
+money: 0,
+daily: 0,
+timeout: 86400000,
+fishdone: 0,
+fishtimeout: 1800000,
+workdone: 0,
+worktimeout: 900000,
+});
+await newUser
+.save()
+.catch((error) =>
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
+);
+return ᴠʟᴋʏʀᴇ_Buttons.MIB(
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+chat,
+ᴠʟᴋʏʀᴇ,
+`❣️𝗠𝗲𝗻𝘁𝗶𝗼𝗻:  ꧁ *@${ᴘɴᴀᴍᴇ}* ꧂
 
 ╔◇══════════════◇╗
 ┊ 𝐏𝐨𝐤𝐞𝐦𝐨𝐧🦋𝐇𝐮𝐧𝐭𝐢𝐧𝐠
-┊ 𝐌𝐢𝐧𝐞𝐜𝐫𝐚𝐟𝐭 🪵 𝐄𝐝𝐢𝐭𝐢𝐨𝐧
-╚◇══════════════◇╝
-╔════◇🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
+╚◇╗
+╔◇╜
+║❌ 𝗘𝗿𝗿𝗼𝗿: You Are Very New! Better Luck Next Time!
+╚════════════╝`,
+"./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_Univ.png"
+);
+}
+`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
+let PokemonData;
+try {
+let res = await fetch(
+API(`https://some-random-api.ml`, `/pokedex`, {
+pokemon: BasePoke.toLowerCase(),
+})
+).catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
+PokemonData = await res
+.json()
+.catch((error) =>
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
+);
+} catch {
+userBadge.Limits = userBadge.Limits + 1;
+await userBadge
+.save()
+.catch((error) =>
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
+);
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
+return;
+}
+`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
+if (
+userHunt.PermanentLimitTime -
+(Date.now() - userHunt.CurrentLimitTime) >
+0
+) {
+let time = ms(
+userHunt.PermanentLimitTime -
+(Date.now() - userHunt.CurrentLimitTime)
+);
+return ᴠʟᴋʏʀᴇ_Buttons.MIB(
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+chat,
+ᴠʟᴋʏʀᴇ,
+`❣️𝗠𝗲𝗻𝘁𝗶𝗼𝗻:  ꧁ *@${ᴘɴᴀᴍᴇ}* ꧂
+
+╔◇══════════════◇╗
+┊ 𝐏𝐨𝐤𝐞𝐦𝐨𝐧🦋𝐇𝐮𝐧𝐭𝐢𝐧𝐠
+╚◇╗
+╔◇╜
 ║❌ 𝗘𝗿𝗿𝗼𝗿: You've recently went in a forest!
 ║🪵 𝗡𝗲𝘅𝘁 𝗛𝘂𝗻𝘁𝗶𝗻𝗴: ${time.hours}h ${time.minutes}m ${time.seconds}s
 ╚════════════╝`,
-                  "./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_Univ.png"
-                );
-              }
-              `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-              userHunt.CurrentLimitTime = Date.now();
-              pokemon.configure({ apiKey: "123abc" });
-              await pokemon.card
-                .all({ q: `name:${BasePoke.toLowerCase()}` })
-                .then(async (card) => {
-                  if (!cards) {
-                    ᴠʟᴋʏʀᴇ_Buttons.MIB(
-                      ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
-                      chat,
-                      ᴠʟᴋʏʀᴇ,
-                      `❣️𝗠𝗲𝗻𝘁𝗶𝗼𝗻:  ꧁ *@${ᴘɴᴀᴍᴇ}* ꧂
+"./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_Univ.png"
+);
+}
+`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
+userHunt.CurrentLimitTime = Date.now();
+pokemon.configure({ apiKey: "123abc" });
+await pokemon.card
+.all({ q: `name:${BasePoke.toLowerCase()}` })
+.then(async (card) => {
+if (!card) {
+ᴠʟᴋʏʀᴇ_Buttons.MIB(
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+chat,
+ᴠʟᴋʏʀᴇ,
+`❣️𝗠𝗲𝗻𝘁𝗶𝗼𝗻:  ꧁ *@${ᴘɴᴀᴍᴇ}* ꧂
 
 ╔◇══════════════◇╗
 ┊ 𝐏𝐨𝐤𝐞𝐦𝐨𝐧🦋𝐇𝐮𝐧𝐭𝐢𝐧𝐠
-┊ 𝐌𝐢𝐧𝐞𝐜𝐫𝐚𝐟𝐭 🪵 𝐄𝐝𝐢𝐭𝐢𝐨𝐧
 ╚◇╗
 ╔◇╜
 ║💫 *Name:* Caught Nothing!
 ║🪙 *Worth:* 0gold
 ╚════════════╝`,
-                      "./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_Univ.png"
-                    );
-                    await userEco
-                      .save()
-                      .catch((error) =>
-                        ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
-                      );
-                    await userHunt
-                      .save()
-                      .catch((error) =>
-                        ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
-                      );
-                    return;
-                  }
-                  `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-                  userEco.money = userEco.money + Worth;
-                  await userEco
-                    .save()
-                    .catch((error) =>
-                      ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
-                    );
-                  await userHunt
-                    .save()
-                    .catch((error) =>
-                      ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
-                    );
-                  const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
-                    ᴠʟᴋʏʀᴇ.chatId,
-                    { url: card[0].images.large },
-                    MessageType.image,
-                    { mimetype: Mimetype.png }
-                  );
-                  return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
-                    .sendMessage(
-                      ᴠʟᴋʏʀᴇ.chatId,
-                      {
-                        contentText: `❣️𝗠𝗲𝗻𝘁𝗶𝗼𝗻:  ꧁ *@${ᴘɴᴀᴍᴇ}* ꧂
+"./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_Univ.png"
+);
+await userEco
+.save()
+.catch((error) =>
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
+);
+await userHunt
+.save()
+.catch((error) =>
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
+);
+return;
+}
+`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
+userEco.money = userEco.money + Worth;
+require("nekobin")
+.lib.nekobin(card[0])
+.then(async (data) => {
+await userEco
+.save()
+.catch((error) =>
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
+);
+await userHunt
+.save()
+.catch((error) =>
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
+);
+const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
+ᴠʟᴋʏʀᴇ.chatId,
+{ url: card[0].images.large },
+MessageType.image,
+{ mimetype: Mimetype.png }
+);
+return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
+.sendMessage(
+ᴠʟᴋʏʀᴇ.chatId,
+{
+contentText: `❣️𝗠𝗲𝗻𝘁𝗶𝗼𝗻:  ꧁ *@${ᴘɴᴀᴍᴇ}* ꧂
 
 ╔◇══════════════◇╗
 ┊ 𝐏𝐨𝐤𝐞𝐦𝐨𝐧🦋𝐇𝐮𝐧𝐭𝐢𝐧𝐠
-┊ 𝐌𝐢𝐧𝐞𝐜𝐫𝐚𝐟𝐭 🪵 𝐄𝐝𝐢𝐭𝐢𝐨𝐧
 ╚◇╗
 ╔◇╜
 ║💫 *Name:* ${PokemonData.name}
 ║〽️ *Pokedex ID:* ${PokemonData.id}
+║🌐 *Advance Info:* ${data.url}
 ║🪙 *Worth:* ${Worth}gold
 ╚════════════╝
 
 𝐁𝐮𝐭𝐭𝐨𝐧 𝐓𝐨 𝐋𝐞𝐚𝐫𝐧 𝐌𝐨𝐫𝐞👇🏻
 `.trim(),
-                        footerText: `◣Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers} ☊ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™◥`,
-                        buttons: [
-                          {
-                            buttonId: `${ᴋᴇɪ}pokedex ${BasePoke.toLowerCase()}`,
-                            buttonText: {
-                              displayText: `${ᴋᴇɪ}pokedex ${BasePoke.toLowerCase()}`,
-                            },
-                            type: 1,
-                          },
-                        ],
-                        headerType: 4,
-                        imageMessage: media.message.imageMessage,
-                      },
-                      MessageType.buttonsMessage,
-                      {
-                        quoted: chat,
-                        contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
-                      }
-                    )
-                    .catch((error) =>
-                      ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
-                    );
-                });
-            }
-          );
-        }
-      );
-    } catch (error) {
-      ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
-      return;
-    }
-  },
+footerText: `◣Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers} ☊ 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™◥`,
+buttons: [
+{
+buttonId: `${ᴋᴇɪ}pokedex ${BasePoke.toLowerCase()}`,
+buttonText: {
+displayText: `${ᴋᴇɪ}pokedex ${BasePoke.toLowerCase()}`,
+},
+type: 1,
+},
+],
+headerType: 4,
+imageMessage: media.message.imageMessage,
+},
+MessageType.buttonsMessage,
+{
+quoted: chat,
+contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
+}
+)
+.catch((error) =>
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
+);
+});
+});
+}
+);
+}
+);
+} catch (error) {
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
+return;
+}
+},
 };
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 /*        
