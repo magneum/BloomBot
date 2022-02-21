@@ -71,7 +71,7 @@ async function ᴠʟᴋʏʀᴇ() {
 var ꜱɪᴛʀᴀᴘ = new Map();
 var commandUsage = new Map();
 if (_𝔏𝔞𝔟_.HEROKU_API_KEY === `Null` || _𝔏𝔞𝔟_.HEROKU_APP_NAME === `Null`) {
-console.log(Kolor.yellow(`❌ 𝐄𝐫𝐫𝐨𝐫⬰  Heroku Vars Are Wrong!`));
+console.log(Kolor.red(`❌ 𝐄𝐫𝐫𝐨𝐫⬰  Heroku Vars Are Wrong!`));
 process.exit(0);
 }
 try {
@@ -82,21 +82,20 @@ console.log(Kolor.red(`❌ 𝐄𝐫𝐫𝐨𝐫⬰ Vlkyre Web Auth-Code is Wrong
 process.exit(0);
 }
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.on("connecting", async () => {
-console.log(Kolor.yellowBright("💡 𝐈𝐧𝐟𝐨⬰ Connecting to WhatsApp..."));
+console.log(Kolor.yellow("💡 𝐈𝐧𝐟𝐨⬰ Vlkryre Trying To Connect With User WhatsApp..."));
 });
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.on("open", async () => {
 console.log(
-`💡 𝐈𝐧𝐟𝐨⬰ Connected to WhatsApp as ${Kolor.green(
+`💡 𝐈𝐧𝐟𝐨⬰ Connected to WhatsApp as: ${Kolor.green(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.user.notify ||
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.user.vname ||
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.user.name ||
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.user.jid.split("@")[0]
 )}`
 );
-console.log(Kolor.yellow("💡 𝐈𝐧𝐟𝐨⬰ Installing Plugins..."));
+console.log(Kolor.yellow("💡 𝐈𝐧𝐟𝐨⬰ Verifying All Modules And Syncing..."));
 await ᴠʟᴋʏʀᴇTǟɮ(ꜱɪᴛʀᴀᴘ, commandUsage);
-console.log(Kolor.green.bold("💡 𝐈𝐧𝐟𝐨⬰ Plugins Installed Successfully..."));
 console.log(Kolor.yellow("💡 𝐈𝐧𝐟𝐨⬰ Connecting to Database."));
 try {
 await ᴠʟᴋʏʀᴇgoose
@@ -107,20 +106,21 @@ useCreateIndex: true,
 useFindAndModify: false,
 })
 .catch((error) => {
-console.log(`❌ 𝐄𝐫𝐫𝐨𝐫⬰ ${error}`);
+console.log(Kolor.red(`❌ 𝐄𝐫𝐫𝐨𝐫⬰ ${error}`));
 process.exit(0);
 });
-console.log(
-Kolor.green("💡 𝐈𝐧𝐟𝐨⬰ Connection has been established successfully.")
-);
-} catch (error) {
-console.error("❌ 𝐄𝐫𝐫𝐨𝐫⬰ Unable to connect to the database:", error);
-}
-console.log(Kolor.yellow("💡 𝐈𝐧𝐟𝐨⬰ Syncing Database..."));
+} finally {
+console.log(Kolor.green("💡 𝐈𝐧𝐟𝐨⬰ Connected With Database..."));
 console.log(
 Kolor.green("💡 𝐈𝐧𝐟𝐨⬰ All models were synchronized successfully.")
 );
-console.log(Kolor.green("💡 𝐈𝐧𝐟𝐨⬰ Connected! Enjoy Vlkyre"));
+console.log(
+Kolor.green(
+"💡 𝐈𝐧𝐟𝐨⬰ Connected Enjoy Vlkyre!\n\n⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟"
+)
+);
+}
+`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 const used = process.memoryUsage();
 const cpus = os.cpus().map((cpu) => {
 cpu.total = Object.keys(cpu.times).reduce(
