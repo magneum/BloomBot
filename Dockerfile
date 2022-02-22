@@ -124,7 +124,6 @@ RUN pip install -r ᴠʟᴋʏʀᴇ🀄ᴇxʜᴀᴜꜱᴛ/кгץкภչ.txt
 RUN npm install --force
 RUN npx npm-merge-driver install --global
 RUN rm package-lock.json
-RUN touch ᴠʟᴋʏʀᴇ🀄ᴇxʜᴀᴜꜱᴛ/𝐇𝐞𝐫𝐨𝐤𝐮.txt
 CMD npm --no-warnings run vlkyre
 # |⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|
 # NOTE: THIS DOCKERFILE IS GENERATED VIA "apply-templates.sh"
