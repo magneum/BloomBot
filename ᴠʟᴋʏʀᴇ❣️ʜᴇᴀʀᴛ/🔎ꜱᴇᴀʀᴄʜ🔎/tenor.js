@@ -186,7 +186,7 @@ await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
 quoted: chat,
 mimetype: `video/gif`,
-caption: `*ʋǟʟӄʏʀɛ ×፝֟͜× ${vers.vers}*\n𓆘ᴘʏᴛʜᴏɴ + ☊ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\n❝ _ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™_ ❞\n\n
+caption: `×፝֟͜× 𝐕𝐥𝐤𝐲𝐫𝐞:${vers.vers}\nᴘʏᴛʜᴏɴ 𓆘+☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\n❝ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞\n\n
 
 🔱𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
 🍯 𝐒𝐞𝐚𝐫𝐜𝐡𝐞𝐝: ${Needs.join(` `)}

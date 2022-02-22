@@ -148,7 +148,7 @@ contentText: `❣️𝗠𝗲𝗻𝘁𝗶𝗼𝗻:  ꧁ *@${ᴘɴᴀᴍᴇ}* ꧂
 ╚════════════╝
 
 ◇ *The More You Talk, The More Xp+Gold You Gain.You Can Spend The gold in ${ᴋᴇɪ}shop!*`,
-footerText: `**◜Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ×፝֟͜× v${vers.vers}◞*\n𓆘ᴘʏᴛʜᴏɴ + ☊ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\n❝ _ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™_ ❞`,
+footerText: `*×፝֟͜× 𝐕𝐥𝐤𝐲𝐫𝐞:${vers.vers}\nᴘʏᴛʜᴏɴ 𓆘+☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\n❝ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,

@@ -98,7 +98,7 @@ conversation: ᴠʟᴋʏʀᴇ.replyMessage,
 },
 mentionedJid: members,
 },
-caption: `*◜Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ×፝֟͜× v${vers.vers}◞*\n𓆘ᴘʏᴛʜᴏɴ + ☊ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\n❝ _ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™_ ❞
+caption: `×፝֟͜× 𝐕𝐥𝐤𝐲𝐫𝐞:${vers.vers}\nᴘʏᴛʜᴏɴ 𓆘+☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\n❝ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞
 
 ⚡ 𝐅𝐫𝐨𝐦: @${ᴘɴᴀᴍᴇ}
 ⚠️Attention Everyone Here In the Group!`,
@@ -115,7 +115,7 @@ quoted: chat,
 contextInfo: {
 mentionedJid: members,
 },
-caption: `*◜Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ×፝֟͜× v${vers.vers}◞*\n𓆘ᴘʏᴛʜᴏɴ + ☊ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\n❝ _ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™_ ❞
+caption: `×፝֟͜× 𝐕𝐥𝐤𝐲𝐫𝐞:${vers.vers}\nᴘʏᴛʜᴏɴ 𓆘+☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\n❝ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞
 
 ⚡ 𝐅𝐫𝐨𝐦: @${ᴘɴᴀᴍᴇ}
 ${ᴠʟᴋʏʀᴇ.body.replace(ᴠʟᴋʏʀᴇ.body[0] + ᴠʟᴋʏʀᴇ.commandName + " ", "")}`,
@@ -132,7 +132,7 @@ quoted: chat,
 contextInfo: {
 mentionedJid: members,
 },
-caption: `*◜Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ×፝֟͜× v${vers.vers}◞*\n𓆘ᴘʏᴛʜᴏɴ + ☊ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\n❝ _ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™_ ❞
+caption: `×፝֟͜× 𝐕𝐥𝐤𝐲𝐫𝐞:${vers.vers}\nᴘʏᴛʜᴏɴ 𓆘+☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\n❝ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞
 
 ⚡ 𝐅𝐫𝐨𝐦: @${ᴘɴᴀᴍᴇ}
 ${ᴠʟᴋʏʀᴇ.replyMessage.replace(
@@ -149,7 +149,7 @@ quoted: chat,
 contextInfo: {
 mentionedJid: members,
 },
-caption: `*◜Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ×፝֟͜× v${vers.vers}◞*\n𓆘ᴘʏᴛʜᴏɴ + ☊ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\n❝ _ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™_ ❞
+caption: `×፝֟͜× 𝐕𝐥𝐤𝐲𝐫𝐞:${vers.vers}\nᴘʏᴛʜᴏɴ 𓆘+☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\n❝ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞
 
 ⚡ 𝐅𝐫𝐨𝐦: @${ᴘɴᴀᴍᴇ}
 ⚠️Attention Everyone Here In the Group!`,

@@ -69,7 +69,7 @@ contentText: `❣️𝗠𝗲𝗻𝘁𝗶𝗼𝗻:  ꧁ *@${ᴘɴᴀᴍᴇ}* ꧂
 ║💞𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${groupData.participants.length}
 ║📝𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${groupData.desc}
 ╚════════════╝`,
-footerText: `*◜Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ×፝֟͜× v${vers.vers}◞*\n𓆘ᴘʏᴛʜᴏɴ + ☊ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\n❝ _ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™_ ❞`,
+footerText: `×፝֟͜× 𝐕𝐥𝐤𝐲𝐫𝐞:${vers.vers}\nᴘʏᴛʜᴏɴ 𓆘+☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\n❝ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
