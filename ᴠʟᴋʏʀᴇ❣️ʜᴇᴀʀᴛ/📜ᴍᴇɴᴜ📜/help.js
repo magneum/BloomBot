@@ -21,62 +21,62 @@ var scriptName = path.basename(__filename);
 var newScpt = scriptName.slice(0, -3).toLowerCase();
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 module.exports = {
-  name: newScpt,
-  async handle(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, chat, ᴠʟᴋʏʀᴇ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping, Timers) {
-    try {
-      const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
-      const ᴅꜰɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.commandName;
-      const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
-      const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/[ ]/g, "").replace(/[+]/g, "");
-      `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-      const used = process.memoryUsage();
-      const cpus = os.cpus().map((cpu) => {
-        cpu.total = Object.keys(cpu.times).reduce(
-          (last, type) => last + cpu.times[type],
-          0
-        );
-        return cpu;
-      });
-      const cpu = cpus.reduce(
-        (last, cpu, _, { length }) => {
-          last.total += cpu.total;
-          last.speed += cpu.speed / length;
-          last.times.user += cpu.times.user;
-          last.times.nice += cpu.times.nice;
-          last.times.sys += cpu.times.sys;
-          last.times.idle += cpu.times.idle;
-          last.times.irq += cpu.times.irq;
-          return last;
-        },
-        {
-          speed: 0,
-          total: 0,
-          times: {
-            user: 0,
-            nice: 0,
-            sys: 0,
-            idle: 0,
-            irq: 0,
-          },
-        }
-      );
+name: newScpt,
+async handle(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, chat, ᴠʟᴋʏʀᴇ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping, Timers) {
+try {
+const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
+const ᴅꜰɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.commandName;
+const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/\D/g, "");
+const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
+`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
+const used = process.memoryUsage();
+const cpus = os.cpus().map((cpu) => {
+cpu.total = Object.keys(cpu.times).reduce(
+(last, type) => last + cpu.times[type],
+0
+);
+return cpu;
+});
+const cpu = cpus.reduce(
+(last, cpu, _, { length }) => {
+last.total += cpu.total;
+last.speed += cpu.speed / length;
+last.times.user += cpu.times.user;
+last.times.nice += cpu.times.nice;
+last.times.sys += cpu.times.sys;
+last.times.idle += cpu.times.idle;
+last.times.irq += cpu.times.irq;
+return last;
+},
+{
+speed: 0,
+total: 0,
+times: {
+user: 0,
+nice: 0,
+sys: 0,
+idle: 0,
+irq: 0,
+},
+}
+);
 
-      let timestamp = speed();
-      let latensi = speed() - timestamp;
-      neww = performance.now();
-      oldd = performance.now();
-      `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-      const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
-        ᴠʟᴋʏʀᴇ.chatId,
-        { url: `./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ.png` },
-        MessageType.image,
-        { mimetype: Mimetype.png }
-      );
-      return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
-        .sendMessage(
-          ᴠʟᴋʏʀᴇ.chatId,
-          {
-            contentText: `❣️𝗠𝗲𝗻𝘁𝗶𝗼𝗻:  ꧁ *@${ᴘɴᴀᴍᴇ}* ꧂
+let timestamp = speed();
+let latensi = speed() - timestamp;
+neww = performance.now();
+oldd = performance.now();
+`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
+const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
+ᴠʟᴋʏʀᴇ.chatId,
+{ url: `./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ.png` },
+MessageType.image,
+{ mimetype: Mimetype.png }
+);
+return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
+.sendMessage(
+ᴠʟᴋʏʀᴇ.chatId,
+{
+contentText: `❣️𝗠𝗲𝗻𝘁𝗶𝗼𝗻:  ꧁ *@${ᴘɴᴀᴍᴇ}* ꧂
 ╔⧉༻ 
 ║🍂 𝐕𝐥𝐤𝐲𝐫𝐞: _Is an Advance Whatsapp User-Bot!_
 ║🍂 𝐆𝐢𝐭𝐡𝐮𝐛: _https://github.com/Kryknz/Vlkyre_
@@ -339,30 +339,30 @@ module.exports = {
 ║🍄  ${ᴋᴇɪ}uniform
 ║🍄  ${ᴋᴇɪ}yuri
 ╚════════════꧂`,
-            footerText: `×፝֟͜× 𝐕𝐥𝐤𝐲𝐫𝐞:${vers.vers}\nᴘʏᴛʜᴏɴ 𓆘+☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\n❝ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞`,
-            buttons: [
-              {
-                buttonId: `${ᴋᴇɪ}rules`,
-                buttonText: { displayText: `${ᴋᴇɪ}rules` },
-                type: 1,
-              },
-            ],
-            headerType: 4,
-            imageMessage: media.message.imageMessage,
-          },
-          MessageType.buttonsMessage,
-          {
-            quoted: chat,
-            contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
-          }
-        )
-        .catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
-      `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-    } catch (error) {
-      ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
-      return;
-    }
-  },
+footerText: `×፝֟͜× 𝐕𝐥𝐤𝐲𝐫𝐞:${vers.vers}\nᴘʏᴛʜᴏɴ 𓆘+☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\n❝ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞`,
+buttons: [
+{
+buttonId: `${ᴋᴇɪ}rules`,
+buttonText: { displayText: `${ᴋᴇɪ}rules` },
+type: 1,
+},
+],
+headerType: 4,
+imageMessage: media.message.imageMessage,
+},
+MessageType.buttonsMessage,
+{
+quoted: chat,
+contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
+}
+)
+.catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
+`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
+} catch (error) {
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
+return;
+}
+},
 };
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 /*        
