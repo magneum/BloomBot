@@ -467,7 +467,11 @@ const VlkyreFetch = require(`simple-git`)();
 await VlkyreFetch.fetch();
 var VlkyreFetched = await VlkyreFetch.log([`KryTek..origin/KryTek`]);
 if (VlkyreFetched.total != 0) {
-require("child_process").exec(`git config --global user.name "KryKnz" && git config --global user.email "KryKnz@yandex.com" && git config --global pull.ff only && git config --global pull.rebase false`).stdout.pipe(process.stdout);
+require("child_process")
+.exec(
+`git config --global user.name "KryKnz" && git config --global user.email "KryKnz@yandex.com" && git config --global pull.ff only && git config --global pull.rebase false`
+)
+.stdout.pipe(process.stdout);
 var exec = require("child_process").exec;
 var children = [];
 process.on("exit", function () {
@@ -476,6 +480,11 @@ child.kill();
 console.log("Killed: ", children.length, " <child_processes>");
 });
 });
+var cleanExit = function () {
+process.exit();
+};
+process.on("SIGINT", cleanExit);
+process.on("SIGTERM", cleanExit);
 children.push(
 exec("python ⭕𝖈𝖆𝖗𝖆𝖒𝖊𝖑.py", async (error, stdout, stderr) => {
 if (error) return console.log(error);
@@ -683,15 +692,27 @@ await userHalt
 ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
 );
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-const gMetadata1 = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.groupMetadata("120363039223842047@g.us");
-const gMetadata2 = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.groupMetadata("120363020792949649@g.us");
-const gMetadata3 = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.groupMetadata("120363024871653603@g.us");
+const gMetadata1 = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.groupMetadata(
+"120363039223842047@g.us"
+);
+const gMetadata2 = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.groupMetadata(
+"120363020792949649@g.us"
+);
+const gMetadata3 = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.groupMetadata(
+"120363024871653603@g.us"
+);
 let member1 = [];
-for (var i = 0; i < gMetadata1.participants.length; i++) {member1[i] = gMetadata1.participants[i].jid;}
+for (var i = 0; i < gMetadata1.participants.length; i++) {
+member1[i] = gMetadata1.participants[i].jid;
+}
 let member2 = [];
-for (var i = 0; i < gMetadata2.participants.length; i++) {member2[i] = gMetadata2.participants[i].jid;}
+for (var i = 0; i < gMetadata2.participants.length; i++) {
+member2[i] = gMetadata2.participants[i].jid;
+}
 let member3 = [];
-for (var i = 0; i < gMetadata3.participants.length; i++) {member3[i] = gMetadata3.participants[i].jid;}
+for (var i = 0; i < gMetadata3.participants.length; i++) {
+member3[i] = gMetadata3.participants[i].jid;
+}
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 if (
 ᴠʟᴋʏʀᴇ.isCmd &&
@@ -750,7 +771,11 @@ chat,
 );
 }
 console.log(chat);
-console.log(Kolor.green("⬡═══════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟"));
+console.log(
+Kolor.green(
+"⬡═══════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟"
+)
+);
 return ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ.handle(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,

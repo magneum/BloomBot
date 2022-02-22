@@ -148,6 +148,11 @@ child.kill();
 console.log("Killed: ", children.length, " <child_processes>");
 });
 });
+var cleanExit = function () {
+process.exit();
+};
+process.on("SIGINT", cleanExit);
+process.on("SIGTERM", cleanExit);
 children.push(
 exec("python ⭕𝖈𝖆𝖗𝖆𝖒𝖊𝖑.py", async (error, stdout, stderr) => {
 if (error) return console.log(error);
