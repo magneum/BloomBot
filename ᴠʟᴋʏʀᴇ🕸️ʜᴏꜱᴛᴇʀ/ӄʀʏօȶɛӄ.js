@@ -7,7 +7,6 @@ const _𝔏𝔞𝔟_ = require(`./_𝔏𝔞𝔟_`);
 var ӄʀʏօȶɛӄ = require(`./ᴠʟᴋʏʀᴇƈʟǟ`);
 var exec = require("child_process").exec;
 exports.resolve = function (messageInstance, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, groupMetadata) {
-try {
 var DEVstring = _𝔏𝔞𝔟_.KATE;
 var ᴠʟᴋʏʀᴇ = new ӄʀʏօȶɛӄ();
 var prefix = _𝔏𝔞𝔟_.FOXTROT + `\\w+`;
@@ -34,9 +33,7 @@ var jsonMessage = JSON.stringify(messageInstance);
 : ``;
 ᴠʟᴋʏʀᴇ.isReply =
 ᴠʟᴋʏʀᴇ.mimeType === `extendedTextMessage` &&
-messageInstance.message.extendedTextMessage.hasOwnProperty(
-`contextInfo`
-) &&
+messageInstance.message.extendedTextMessage.hasOwnProperty(`contextInfo`) &&
 messageInstance.message.extendedTextMessage.contextInfo.hasOwnProperty(
 `stanzaId`
 );
@@ -80,8 +77,7 @@ messageInstance.message.extendedTextMessage.contextInfo.hasOwnProperty(
 ? messageInstance.message.imageMessage.caption
 : ``;
 ᴠʟᴋʏʀᴇ.isGIF =
-ᴠʟᴋʏʀᴇ.type === `video` &&
-messageInstance.message.videoMessage.gifPlayback;
+ᴠʟᴋʏʀᴇ.type === `video` && messageInstance.message.videoMessage.gifPlayback;
 ᴠʟᴋʏʀᴇ.isReplyGIF = ᴠʟᴋʏʀᴇ.isReply
 ? jsonMessage.indexOf(`videoMessage`) !== -1 &&
 messageInstance.message.extendedTextMessage.contextInfo.quotedMessage
@@ -138,35 +134,6 @@ for (var i in participants) {
 participants[i].isAdmin ? admins.push(participants[i].jid) : ``;
 }
 return admins;
-}
-} catch (error) {
-console.log("Error Caught In KryoTek()\n", error);
-var children = [];
-process.on("exit", function () {
-children.forEach(function (child) {
-child.kill();
-console.log("Killed: ", children.length, " <child_processes>");
-});
-});
-// var cleanExit = function () {
-// process.exit();
-// };
-// process.on("SIGINT", cleanExit);
-// process.on("SIGTERM", cleanExit);
-children.push(
-exec("npm install --force --save", async (error, stdout, stderr) => {
-if (error) return console.log(error);
-if (stderr) return console.log(stderr);
-console.log(stdout);
-})
-);
-children.push(
-exec("python ⭕𝖈𝖆𝖗𝖆𝖒𝖊𝖑.py", async (error, stdout, stderr) => {
-if (error) return console.log(error);
-if (stderr) return console.log(stderr);
-console.log(stdout);
-})
-);
 }
 };
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
