@@ -16,7 +16,7 @@ const git = require("simple-git")();
 await git.fetch();
 var newCommits = await git.log(["KryTek..origin/KryTek"]);
 console.log(newCommits);
-if (newCommits.total) {
+if (newCommits.total != 0) {
 var sourcePull = require("child_process").exec(
 "git pull",
 (error, stdout, stderr) => {
