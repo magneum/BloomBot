@@ -57,18 +57,18 @@ try:
         AppPercentage = math.floor(App[0]["quota_used"] * 100 / quota)
     AppHours = math.floor(AppQuotaUsed / 60)
     AppMinutes = math.floor(AppQuotaUsed % 60)
-    text_file = open("./ʍɨʐʊӄɨ🗑️ȶɛʍք/𝐇𝐞𝐫𝐨𝐤𝐮.txt", "w")
+    text_file = open("./ᴠʟᴋʏʀᴇ🀄ᴇxʜᴀᴜꜱᴛ/𝐇𝐞𝐫𝐨𝐤𝐮.txt", "w")
     text_file.write(
     f"""
-╔═══════◇🌿𝐓𝐨𝐩𝐢𝐜: Heroku_Usage
 ║🛸 𝐀𝐩𝐩 𝐍𝐚𝐦𝐞: _{HEROKU_APP_NAME}_
 ║💀 𝐃𝐲𝐧𝐨 𝐔𝐬𝐞𝐝: _{AppHours}ʜᴏᴜʀꜱ {AppMinutes}ᴍɪɴꜱ_ = *{AppPercentage}%*
 ║⏰ 𝐃𝐲𝐧𝐨 𝐑𝐞𝐦𝐚𝐢𝐧𝐢𝐧𝐠: _{hours}ʜᴏᴜʀꜱ {minutes}ᴍɪɴꜱ_ = *{percentage}%*
-╚════════════╝"""
+"""
     )
     text_file.close()
 except Exception as e:
-    text_file = open("./ʍɨʐʊӄɨ🗑️ȶɛʍք/𝐇𝐞𝐫𝐨𝐤𝐮.txt", "w")
+    print(e)
+    text_file = open("./ᴠʟᴋʏʀᴇ🀄ᴇxʜᴀᴜꜱᴛ/𝐇𝐞𝐫𝐨𝐤𝐮.txt", "w")
     text_file.write("Try Again Later")
     text_file.close()
 # |⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡| 

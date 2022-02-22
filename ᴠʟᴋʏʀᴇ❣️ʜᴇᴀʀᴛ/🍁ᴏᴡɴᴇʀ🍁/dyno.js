@@ -17,8 +17,6 @@ var newScpt = scriptName.slice(0, -3).toLowerCase();
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 module.exports = {
 name: newScpt,
-ᴠʟᴋʏʀᴇӄǟɨʐօ: `*${ᴋᴇɪ}cooldown (number) (chat/s/h)*
-🛸will set autocooldown for perticular group`,
 async handle(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, chat, ᴠʟᴋʏʀᴇ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
 try {
 const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
@@ -37,9 +35,8 @@ chat,
 }
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 var child = require(`child_process`).exec(
-`python3 ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/Heroku.py`
+`python ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/Heroku.py`
 );
-child.stdout.pipe(process.stdout);
 child.on(`exit`, async function () {
 process.exitCode = 1;
 var data = fs.readFileSync(`./ᴠʟᴋʏʀᴇ🀄ᴇxʜᴀᴜꜱᴛ/𝐇𝐞𝐫𝐨𝐤𝐮.txt`, `utf8`);
@@ -48,11 +45,13 @@ return ᴠʟᴋʏʀᴇ_Buttons.MIB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 ᴠʟᴋʏʀᴇ,
-`🪶 𝐇𝐞𝐲: @${ᴘɴᴀᴍᴇ} (Owner)\n\n${data.toString()}`,
-_𝔏𝔞𝔟_.MEE
+`❣️𝗠𝗲𝗻𝘁𝗶𝗼𝗻:  ꧁ *@${ᴘɴᴀᴍᴇ}* ꧂
+╔⧉༻🌿𝐓𝐨𝐩𝐢𝐜: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_  
+${data.toString()}
+╚════════════╝`,
+"./ᴠʟᴋʏʀᴇ🔌cord/2ᴠʟᴋʏʀᴇ.png"
 );
 });
-
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 } catch (error) {
 ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
