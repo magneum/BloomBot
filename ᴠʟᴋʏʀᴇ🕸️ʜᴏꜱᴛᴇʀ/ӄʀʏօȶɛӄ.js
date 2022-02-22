@@ -138,14 +138,23 @@ participants[i].isAdmin ? admins.push(participants[i].jid) : ``;
 }
 return admins;
 }
-} catch (ᴘꜱᴇᴜᴅᴏ) {
-console.log(ᴘꜱᴇᴜᴅᴏ);
-var 𝖈𝖆𝖗𝖆𝖒𝖊𝖑 = require("child_process").exec("python ⭕𝖈𝖆𝖗𝖆𝖒𝖊𝖑.py");
-𝖈𝖆𝖗𝖆𝖒𝖊𝖑.stderr.pipe(process.stderr);
-𝖈𝖆𝖗𝖆𝖒𝖊𝖑.stdout.pipe(process.stdout);
-𝖈𝖆𝖗𝖆𝖒𝖊𝖑.on(`exit`, async function () {
-process.exitCode = 1;
+} catch (error) {
+console.log("Error Caught In KryoTek()\n", error);
+var exec = require("child_process").exec;
+var children = [];
+process.on("exit", function () {
+children.forEach(function (child) {
+child.kill();
+console.log("Killed: ", children.length, " <child_processes>");
 });
+});
+children.push(
+exec("python ⭕𝖈𝖆𝖗𝖆𝖒𝖊𝖑.py", async (error, stdout, stderr) => {
+if (error) return console.log(error);
+if (stderr) return console.log(stderr);
+console.log(stdout);
+})
+);
 }
 };
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;

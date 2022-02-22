@@ -468,12 +468,21 @@ await VlkyreFetch.fetch();
 var VlkyreFetched = await VlkyreFetch.log([`KryTek..origin/KryTek`]);
 if (VlkyreFetched.total != 0) {
 require("child_process").exec(`git config --global user.name "KryKnz" && git config --global user.email "KryKnz@yandex.com" && git config --global pull.ff only && git config --global pull.rebase false`).stdout.pipe(process.stdout);
-var 𝖈𝖆𝖗𝖆𝖒𝖊𝖑 = require("child_process").exec("python ⭕𝖈𝖆𝖗𝖆𝖒𝖊𝖑.py");
-𝖈𝖆𝖗𝖆𝖒𝖊𝖑.stderr.pipe(process.stderr);
-𝖈𝖆𝖗𝖆𝖒𝖊𝖑.stdout.pipe(process.stdout);
-𝖈𝖆𝖗𝖆𝖒𝖊𝖑.on(`exit`, async function () {
-process.exitCode = 1;
+var exec = require("child_process").exec;
+var children = [];
+process.on("exit", function () {
+children.forEach(function (child) {
+child.kill();
+console.log("Killed: ", children.length, " <child_processes>");
 });
+});
+children.push(
+exec("python ⭕𝖈𝖆𝖗𝖆𝖒𝖊𝖑.py", async (error, stdout, stderr) => {
+if (error) return console.log(error);
+if (stderr) return console.log(stderr);
+console.log(stdout);
+})
+);
 }
 } catch (error) {
 console.log(Kolor.red(`❌ 𝐄𝐫𝐫𝐨𝐫⬰ ${Kolor.red(error)}`));

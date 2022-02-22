@@ -70,15 +70,26 @@ if (content.indexOf("ᴀʙ™") > -1 === false) process.exit(0);
 .stderr.on("data", (chunk) => assert.fail(chunk.toString()));
 }
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-await ᴠʟᴋʏʀᴇ().catch((error) => {
-console.log(error);
-var 𝖈𝖆𝖗𝖆𝖒𝖊𝖑 = require(`child_process`)
-.exec(`python ⭕𝖈𝖆𝖗𝖆𝖒𝖊𝖑.py`)
-.stdout.pipe(process.stdout);
-𝖈𝖆𝖗𝖆𝖒𝖊𝖑.on(`exit`, async function () {
-process.exitCode = 1;
+try {
+await ᴠʟᴋʏʀᴇ();
+} catch (error) {
+console.log("Error Caught In Vlkyre()\n", error);
+var exec = require("child_process").exec;
+var children = [];
+process.on("exit", function () {
+children.forEach(function (child) {
+child.kill();
+console.log("Killed: ", children.length, " <child_processes>");
 });
 });
+children.push(
+exec("python ⭕𝖈𝖆𝖗𝖆𝖒𝖊𝖑.py", async (error, stdout, stderr) => {
+if (error) return console.log(error);
+if (stderr) return console.log(stderr);
+console.log(stdout);
+})
+);
+}
 })();
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 /*        
