@@ -592,6 +592,7 @@ let isgclink = isLinkThisGc.test(ᴠʟᴋʏʀᴇ.body);
 if (
 isGroupLink &&
 !isgclink &&
+ᴠʟᴋʏʀᴇ.body.includes("www.") &&
 ᴠʟᴋʏʀᴇ.body.includes("wa.me/") &&
 ᴠʟᴋʏʀᴇ.body.includes("/t.me/") &&
 ᴠʟᴋʏʀᴇ.body.includes("discord.com") &&
