@@ -16,6 +16,7 @@ const ᴠʟᴋʏʀᴇ = require("./ᴠʟᴋʏʀᴇ🔌cord/𝕭𝖔𝖔𝖙☢�
 try {
 await VlkyreFetch.fetch();
 var VlkyreFetched = await VlkyreFetch.log([`KryTek..origin/KryTek`]);
+console.log(VlkyreFetched);
 if (VlkyreFetched.total != 0) {
 var source = require("child_process").exec(
 "git config --global user.name 'KryKnz' && git config --global user.email 'KryKnz@yandex.com' && git config --global pull.ff only && git config --global pull.rebase false && git pull && npm install --force --save",
