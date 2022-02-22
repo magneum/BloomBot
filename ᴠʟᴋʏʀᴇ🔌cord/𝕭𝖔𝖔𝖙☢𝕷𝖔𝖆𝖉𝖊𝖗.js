@@ -748,7 +748,7 @@ await git.fetch();
 var newCommits = await git.log(["KryTek..origin/KryTek"]);
 if (newCommits.total != 0) {
 var sourcePull = require("child_process").exec(
-"git pull",
+"git config pull.rebase true && git pull",
 (error, stdout, stderr) => {
 if (error) console.log(Kolor.red(error));
 if (stderr) console.log(Kolor.yellow(stderr));
