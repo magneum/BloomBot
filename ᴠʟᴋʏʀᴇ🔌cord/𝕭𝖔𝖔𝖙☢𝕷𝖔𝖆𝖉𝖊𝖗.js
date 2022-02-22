@@ -470,73 +470,7 @@ const sender = chat.key.remoteJid;
 const groupMetadata = sender.endsWith(`@g.us`)
 ? await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.groupMetadata(chat.key.remoteJid)
 : ``;
-`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-try {
 var ᴠʟᴋʏʀᴇ = ӄʀʏօȶɛӄ.ӄʀʏօȶ(chat, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, groupMetadata);
-} catch (error) {
-if (error) console.log(Kolor.red(error));
-const git = require("simple-git")();
-await git.fetch();
-var newCommits = await git.log(["KryTek..origin/KryTek"]);
-if (newCommits.total != 0) {
-var sourcePull = require("child_process").exec(
-"git pull",
-(error, stdout, stderr) => {
-if (error) console.log(Kolor.red(error));
-if (stderr) console.log(Kolor.yellow(stderr));
-console.log(Kolor.green(stdout));
-console.log("Child ID: ", sourcePull.pid);
-}
-);
-sourcePull.on("exit", function (code, signal) {
-if (code) console.log(code);
-if (signal) console.log(signal);
-process.exitCode = 1;
-});
-var sourceInst = require("child_process").exec(
-"npm --no-warnings install --force --save && rm package-lock.json",
-(error, stdout, stderr) => {
-if (error) console.log(Kolor.red(error));
-if (stderr) console.log(Kolor.yellow(stderr));
-console.log(Kolor.green(stdout));
-console.log("Child ID: ", sourceInst.pid);
-}
-);
-sourceInst.on("exit", function (code, signal) {
-if (code) console.log(code);
-if (signal) console.log(signal);
-process.exitCode = 1;
-});
-var sourceRs = require("child_process").exec(
-"npm --no-warnings run vlkyre",
-(error, stdout, stderr) => {
-if (error) console.log(Kolor.red(error));
-if (stderr) console.log(Kolor.yellow(stderr));
-console.log(Kolor.green(stdout));
-console.log("Child ID: ", sourceRs.pid);
-}
-);
-sourceRs.on("exit", function (code, signal) {
-if (code) console.log(code);
-if (signal) console.log(signal);
-process.exitCode = 1;
-});
-}
-var sourceRs = require("child_process").exec(
-"npm --no-warnings run vlkyre",
-(error, stdout, stderr) => {
-if (error) console.log(Kolor.red(error));
-if (stderr) console.log(Kolor.yellow(stderr));
-console.log(Kolor.green(stdout));
-console.log("Child ID: ", sourceRs.pid);
-}
-);
-sourceRs.on("exit", function (code, signal) {
-if (code) console.log(code);
-if (signal) console.log(signal);
-process.exitCode = 1;
-});
-}
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
 const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/[ ]/g, "").replace(/[+]/g, "");
@@ -828,7 +762,7 @@ if (signal) console.log(signal);
 process.exitCode = 1;
 });
 var sourceInst = require("child_process").exec(
-"npm --no-warnings install --force --save && rm package-lock.json",
+"npm --no-warnings install --force --save",
 (error, stdout, stderr) => {
 if (error) console.log(Kolor.red(error));
 if (stderr) console.log(Kolor.yellow(stderr));
@@ -841,6 +775,7 @@ if (code) console.log(code);
 if (signal) console.log(signal);
 process.exitCode = 1;
 });
+require("child_process").exec("rm package-lock.json");
 }
 }
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
