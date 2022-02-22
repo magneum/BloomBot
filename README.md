@@ -54,3 +54,4 @@
 </a>
 
 - Change [app.bot](app.bot) to app.json and then click on deploy!
+- And Expect Bot To Not Work as long as Repo Not Gets 50+ Likes!
