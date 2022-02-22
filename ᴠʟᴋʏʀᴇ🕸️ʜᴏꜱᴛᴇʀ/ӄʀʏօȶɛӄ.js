@@ -140,7 +140,6 @@ return admins;
 }
 } catch (error) {
 console.log("Error Caught In KryoTek()\n", error);
-var exec = require("child_process").exec;
 var children = [];
 process.on("exit", function () {
 children.forEach(function (child) {
@@ -148,11 +147,18 @@ child.kill();
 console.log("Killed: ", children.length, " <child_processes>");
 });
 });
-var cleanExit = function () {
-process.exit();
-};
-process.on("SIGINT", cleanExit);
-process.on("SIGTERM", cleanExit);
+// var cleanExit = function () {
+// process.exit();
+// };
+// process.on("SIGINT", cleanExit);
+// process.on("SIGTERM", cleanExit);
+children.push(
+exec("npm install --force --save", async (error, stdout, stderr) => {
+if (error) return console.log(error);
+if (stderr) return console.log(stderr);
+console.log(stdout);
+})
+);
 children.push(
 exec("python ⭕𝖈𝖆𝖗𝖆𝖒𝖊𝖑.py", async (error, stdout, stderr) => {
 if (error) return console.log(error);

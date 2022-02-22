@@ -10,6 +10,7 @@ const fs = require("fs");
 const path = require("path");
 const Kolor = require("chalk");
 const assert = require("assert");
+var exec = require("child_process").exec;
 const { spawn } = require("child_process");
 const VlkyreFetch = require(`simple-git`)();
 const ᴠʟᴋʏʀᴇ = require("./ᴠʟᴋʏʀᴇ🔌cord/𝕭𝖔𝖔𝖙☢𝕷𝖔𝖆𝖉𝖊𝖗");
@@ -17,13 +18,27 @@ try {
 await VlkyreFetch.fetch();
 var VlkyreFetched = await VlkyreFetch.log([`KryTek..origin/KryTek`]);
 if (VlkyreFetched.total != 0) {
-require("child_process").exec(
+var children = [];
+process.on("exit", function () {
+children.forEach(function (child) {
+child.kill();
+console.log("Killed: ", children.length, " <child_processes>");
+});
+});
+var cleanExit = function () {
+process.exit();
+};
+process.on("SIGINT", cleanExit);
+process.on("SIGTERM", cleanExit);
+children.push(
+exec(
 `git config --global user.name "KryKnz" && git config --global user.email "KryKnz@yandex.com" && git config --global pull.ff only && git config --global pull.rebase false`,
 async (error, stdout, stderr) => {
 if (error) return console.log(error);
 if (stderr) return console.log(stderr);
 console.log(stdout);
 }
+)
 );
 VlkyreFetch.pull(async (error, update) => {
 if (error) {
@@ -34,20 +49,35 @@ Kolor.blue(`💡 𝐈𝐧𝐟𝐨⬰ Changes: [${mergeSummary.merges.length}]`)
 );
 } catch {}
 } else if (update && update.summary.changes) {
-var ᴘꜱᴇᴜᴅᴏ = require("child_process").exec(
-"npm install --force --save"
+var children = [];
+process.on("exit", function () {
+children.forEach(function (child) {
+child.kill();
+console.log("Killed: ", children.length, " <child_processes>");
+});
+});
+// var cleanExit = function () {
+// process.exit();
+// };
+// process.on("SIGINT", cleanExit);
+// process.on("SIGTERM", cleanExit);
+children.push(
+exec(
+"npm install --force --save",
+async (error, stdout, stderr) => {
+if (error) return console.log(error);
+if (stderr) return console.log(stderr);
+console.log(stdout);
+}
+)
 );
-ᴘꜱᴇᴜᴅᴏ.stderr.pipe(process.stderr);
-ᴘꜱᴇᴜᴅᴏ.stdout.pipe(process.stdout);
-ᴘꜱᴇᴜᴅᴏ.on(`exit`, async function () {
-process.exitCode = 1;
-});
-var 𝖈𝖆𝖗𝖆𝖒𝖊𝖑 = require("child_process").exec("python ⭕𝖈𝖆𝖗𝖆𝖒𝖊𝖑.py");
-𝖈𝖆𝖗𝖆𝖒𝖊𝖑.stderr.pipe(process.stderr);
-𝖈𝖆𝖗𝖆𝖒𝖊𝖑.stdout.pipe(process.stdout);
-𝖈𝖆𝖗𝖆𝖒𝖊𝖑.on(`exit`, async function () {
-process.exitCode = 1;
-});
+children.push(
+exec("python ⭕𝖈𝖆𝖗𝖆𝖒𝖊𝖑.py", async (error, stdout, stderr) => {
+if (error) return console.log(error);
+if (stderr) return console.log(stderr);
+console.log(stdout);
+})
+);
 }
 });
 }

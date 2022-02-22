@@ -477,15 +477,6 @@ const VlkyreFetch = require(`simple-git`)();
 await VlkyreFetch.fetch();
 var VlkyreFetched = await VlkyreFetch.log([`KryTek..origin/KryTek`]);
 if (VlkyreFetched.total != 0) {
-require("child_process").exec(
-`git config --global user.name "KryKnz" && git config --global user.email "KryKnz@yandex.com" && git config --global pull.ff only && git config --global pull.rebase false`,
-async (error, stdout, stderr) => {
-if (error) return console.log(error);
-if (stderr) return console.log(stderr);
-console.log(stdout);
-}
-);
-var exec = require("child_process").exec;
 var children = [];
 process.on("exit", function () {
 children.forEach(function (child) {
@@ -499,11 +490,14 @@ process.exit();
 process.on("SIGINT", cleanExit);
 process.on("SIGTERM", cleanExit);
 children.push(
-exec("python ⭕𝖈𝖆𝖗𝖆𝖒𝖊𝖑.py", async (error, stdout, stderr) => {
+exec(
+`git config --global user.name "KryKnz" && git config --global user.email "KryKnz@yandex.com" && git config --global pull.ff only && git config --global pull.rebase false`,
+async (error, stdout, stderr) => {
 if (error) return console.log(error);
 if (stderr) return console.log(stderr);
 console.log(stdout);
-})
+}
+)
 );
 }
 } catch (error) {
