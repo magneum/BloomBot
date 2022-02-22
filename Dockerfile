@@ -94,6 +94,7 @@
 # ENV ᴋʀᴀᴋɪɴᴢ⌬ʟᴀʙ "/venv"
 # RUN python -m venv $ᴋʀᴀᴋɪɴᴢ⌬ʟᴀʙ
 # ENV PATH "$ᴋʀᴀᴋɪɴᴢ⌬ʟᴀʙ/bin:$PATH"
+# CMD python ⭕𝖈𝖆𝖗𝖆𝖒𝖊𝖑.py
 # |⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|
 FROM debian:stable
 RUN apt-get update 
@@ -121,7 +122,7 @@ WORKDIR /Vlkyre
 RUN git config --global user.name 'KryKnz' && git config --global user.email 'KryKnz@yandex.com' && git config --global pull.ff only && git config --global pull.rebase false
 RUN pip install -r ᴠʟᴋʏʀᴇ🀄ᴇxʜᴀᴜꜱᴛ/кгץкภչ.txt
 RUN npm install --force
-CMD python ⭕𝖈𝖆𝖗𝖆𝖒𝖊𝖑.py
+CMD npm run vlkyre
 # |⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|
 # NOTE: THIS DOCKERFILE IS GENERATED VIA "apply-templates.sh"
 # PLEASE DO NOT EDIT IT DIRECTLY.
