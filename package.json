@@ -161,7 +161,7 @@
     "sequelize": "^6.7.0",
     "shelljs": "^0.8.5",
     "similarity": "^1.2.1",
-    "simple-git": "^2.47.0",
+    "simple-git": "^3.2.6",
     "songlyrics": "^2.2.4",
     "soyultro": "^4.8.5",
     "spinnies": "^0.5.1",
