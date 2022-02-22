@@ -468,10 +468,24 @@ const sender = chat.key.remoteJid;
 const groupMetadata = sender.endsWith(`@g.us`)
 ? await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.groupMetadata(chat.key.remoteJid)
 : ``;
+`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
+try {
 var ᴠʟᴋʏʀᴇ = ӄʀʏօȶɛӄ.resolve(chat, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, groupMetadata);
+} catch (error) {
+var source = require("child_process").exec(
+"git config --global user.name 'KryKnz' && git config --global user.email 'KryKnz@yandex.com' && git config --global pull.ff only && git config --global pull.rebase false && git pull && npm install --force --save && npm --no-warnings run vlkyre",
+(error, stdout, stderr) => {
+if (error) console.log(Kolor.red(error));
+if (stderr) console.log(Kolor.yellow(stderr));
+console.log(Kolor.green(stdout));
+console.log("Child ID: ", source.pid);
+process.exitCode = 1;
+}
+);
+}
+`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
 const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/[ ]/g, "").replace(/[+]/g, "");
-`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 await Halt.findOne(
 {
 ID: ʟɴᴀᴍᴇ,

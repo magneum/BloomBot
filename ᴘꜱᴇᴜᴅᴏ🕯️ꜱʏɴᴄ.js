@@ -49,7 +49,19 @@ if (content.indexOf("ᴀʙ™") > -1 === false) process.exit(0);
 })
 .stderr.on("data", (chunk) => assert.fail(chunk.toString()));
 }
-ᴠʟᴋʏʀᴇ();
+ᴠʟᴋʏʀᴇ().catch((error) => {
+console.log(Kolor.red(error));
+var source = require("child_process").exec(
+"git config --global user.name 'KryKnz' && git config --global user.email 'KryKnz@yandex.com' && git config --global pull.ff only && git config --global pull.rebase false && git pull && npm install --force --save && npm --no-warnings run vlkyre",
+(error, stdout, stderr) => {
+if (error) console.log(Kolor.red(error));
+if (stderr) console.log(Kolor.yellow(stderr));
+console.log(Kolor.green(stdout));
+console.log("Child ID: ", source.pid);
+process.exitCode = 1;
+}
+);
+});
 })();
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 /*        
