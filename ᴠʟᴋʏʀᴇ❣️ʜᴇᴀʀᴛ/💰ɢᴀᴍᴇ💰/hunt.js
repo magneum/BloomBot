@@ -217,7 +217,32 @@ require("child_process").exec(
 `ffmpeg -i "${PokemonData.sprites.animated}" -pix_fmt yuv420p -c:v libx264 -movflags +faststart -filter:v crop='floor(in_w/2)*2:floor(in_h/2)*2' "./ᴠʟᴋʏʀᴇ🀄ᴇxʜᴀᴜꜱᴛ/${chat.key.id}.mp4"`,
 async (error) => {
 if (error) {
-ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
+ᴠʟᴋʏʀᴇ_Buttons.MIB(
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+chat,
+ᴠʟᴋʏʀᴇ,
+`❣️𝗠𝗲𝗻𝘁𝗶𝗼𝗻:  ꧁ *@${ᴘɴᴀᴍᴇ}* ꧂
+
+╔◇══════════════◇╗
+┊ 𝐏𝐨𝐤𝐞𝐦𝐨𝐧🦋𝐇𝐮𝐧𝐭𝐢𝐧𝐠
+┊ 𝐌𝐢𝐧𝐞𝐜𝐫𝐚𝐟𝐭 🪵 𝐄𝐝𝐢𝐭𝐢𝐨𝐧
+╚◇꧂
+╔◇꧂
+║💫 *Name:* _Caught Nothing!_
+║🪙 *Worth:* _0gold_
+╚════════════╝`,
+"./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_Univ.png"
+);
+await userEco
+.save()
+.catch((error) =>
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
+);
+await userHunt
+.save()
+.catch((error) =>
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
+);
 return;
 }
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
