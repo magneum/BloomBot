@@ -25,6 +25,7 @@ if (error) console.log(Kolor.red(error));
 if (stderr) console.log(Kolor.yellow(stderr));
 console.log(Kolor.green(stdout));
 console.log("Child ID: ", source.pid);
+process.exitCode = 1;
 }
 );
 }
