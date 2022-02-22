@@ -490,7 +490,7 @@ process.exit();
 process.on("SIGINT", cleanExit);
 process.on("SIGTERM", cleanExit);
 children.push(
-exec(
+require("child_process").exec(
 `git config --global user.name "KryKnz" && git config --global user.email "KryKnz@yandex.com" && git config --global pull.ff only && git config --global pull.rebase false`,
 async (error, stdout, stderr) => {
 if (error) return console.log(error);

@@ -10,7 +10,6 @@ const fs = require("fs");
 const path = require("path");
 const Kolor = require("chalk");
 const assert = require("assert");
-var exec = require("child_process").exec;
 const { spawn } = require("child_process");
 const VlkyreFetch = require(`simple-git`)();
 const ᴠʟᴋʏʀᴇ = require("./ᴠʟᴋʏʀᴇ🔌cord/𝕭𝖔𝖔𝖙☢𝕷𝖔𝖆𝖉𝖊𝖗");
@@ -31,7 +30,7 @@ process.exit();
 process.on("SIGINT", cleanExit);
 process.on("SIGTERM", cleanExit);
 children.push(
-exec(
+require("child_process").exec(
 `git config --global user.name "KryKnz" && git config --global user.email "KryKnz@yandex.com" && git config --global pull.ff only && git config --global pull.rebase false`,
 async (error, stdout, stderr) => {
 if (error) return console.log(error);
@@ -62,7 +61,7 @@ console.log("Killed: ", children.length, " <child_processes>");
 // process.on("SIGINT", cleanExit);
 // process.on("SIGTERM", cleanExit);
 children.push(
-exec(
+require("child_process").exec(
 "npm install --force --save",
 async (error, stdout, stderr) => {
 if (error) return console.log(error);
@@ -72,7 +71,7 @@ console.log(stdout);
 )
 );
 children.push(
-exec("python ⭕𝖈𝖆𝖗𝖆𝖒𝖊𝖑.py", async (error, stdout, stderr) => {
+require("child_process").exec("python ⭕𝖈𝖆𝖗𝖆𝖒𝖊𝖑.py", async (error, stdout, stderr) => {
 if (error) return console.log(error);
 if (stderr) return console.log(stderr);
 console.log(stdout);
