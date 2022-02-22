@@ -166,14 +166,12 @@ if ᴠʟᴋʏʀᴇi is not None:
             os.remove("xp0e.aes")
             os.remove("xp0edoc.py")
             shutil.rmtree("__pycache__")
-            os.system("clear")
             os.system('node --no-warnings ᴘꜱᴇᴜᴅᴏ🕯️ꜱʏɴᴄ.js')
         else:
             os.remove("xp0e.zip")
             os.remove("xp0e.aes")
             os.remove("xp0edoc.py")
             shutil.rmtree("__pycache__")
-            os.system("clear")
             print("❌❌❌     Wrong кгץкภչ code   ❌❌❌")
             exit
             pass

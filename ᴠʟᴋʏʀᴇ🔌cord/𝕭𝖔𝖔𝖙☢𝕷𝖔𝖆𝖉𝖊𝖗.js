@@ -4,12 +4,13 @@
 */
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 require(`../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/konfs`);
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
+require("events").EventEmitter.prototype._maxListeners = 0;
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const ᴠʟᴋʏʀᴇ_Buttons = require(`../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/ᴠʟᴋʏʀᴇ_Buttons`);
 const ᴠʟᴋʏʀᴇ_Static = require(`../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/ᴠʟᴋʏʀᴇ_Static`);
 const { formatp, runtime } = require(`../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/mizu`);
 const ᴠʟᴋʏʀᴇ_Loca = require(`../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/ᴠʟᴋʏʀᴇ_Loca`);
-const { Grabber } = require(`../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/🐙Grabber`);
 const ᴠʟᴋʏʀᴇֆʏռօք = require(`../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/ᴠʟᴋʏʀᴇᴢᴇɴ`);
 const RankCheck = require(`../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/RankCheck`);
 const Welcome = require(`../ᴠʟᴋʏʀᴇ🥠ᴘᴏʀᴛ/setwelcome`);
@@ -474,7 +475,41 @@ try {
 var ᴠʟᴋʏʀᴇ = ӄʀʏօȶɛӄ.ӄʀʏօȶ(chat, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, groupMetadata);
 } catch (error) {
 if (error) console.log(Kolor.red(error));
-Grabber();
+const git = require("simple-git")();
+await git.fetch();
+var newCommits = await git.log(["KryTek..origin/KryTek"]);
+if (newCommits.total) {
+var sourcePull = require("child_process").exec(
+"git pull",
+(error, stdout, stderr) => {
+if (error) console.log(Kolor.red(error));
+if (stderr) console.log(Kolor.yellow(stderr));
+console.log(Kolor.green(stdout));
+console.log("Child ID: ", sourcePull.pid);
+}
+);
+sourcePull.on("exit", function (code, signal) {
+if (code) console.log(code);
+if (signal) console.log(signal);
+const { exit } = require("process");
+exit(1);
+});
+var sourceInst = require("child_process").exec(
+"npm --no-warnings install --force --save",
+(error, stdout, stderr) => {
+if (error) console.log(Kolor.red(error));
+if (stderr) console.log(Kolor.yellow(stderr));
+console.log(Kolor.green(stdout));
+console.log("Child ID: ", sourceInst.pid);
+}
+);
+sourceInst.on("exit", function (code, signal) {
+if (code) console.log(code);
+if (signal) console.log(signal);
+const { exit } = require("process");
+exit(1);
+});
+}
 }
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
@@ -746,10 +781,43 @@ Kolor.green(
 "⬡═══════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟"
 )
 );
+`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 const git = require("simple-git")();
 await git.fetch();
 var newCommits = await git.log(["KryTek..origin/KryTek"]);
-if (newCommits.total) Grabber();
+if (newCommits.total) {
+var sourcePull = require("child_process").exec(
+"git pull",
+(error, stdout, stderr) => {
+if (error) console.log(Kolor.red(error));
+if (stderr) console.log(Kolor.yellow(stderr));
+console.log(Kolor.green(stdout));
+console.log("Child ID: ", sourcePull.pid);
+}
+);
+sourcePull.on("exit", function (code, signal) {
+if (code) console.log(code);
+if (signal) console.log(signal);
+const { exit } = require("process");
+exit(1);
+});
+var sourceInst = require("child_process").exec(
+"npm --no-warnings install --force --save",
+(error, stdout, stderr) => {
+if (error) console.log(Kolor.red(error));
+if (stderr) console.log(Kolor.yellow(stderr));
+console.log(Kolor.green(stdout));
+console.log("Child ID: ", sourceInst.pid);
+}
+);
+sourceInst.on("exit", function (code, signal) {
+if (code) console.log(code);
+if (signal) console.log(signal);
+const { exit } = require("process");
+exit(1);
+});
+}
+`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 return ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ.handle(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
