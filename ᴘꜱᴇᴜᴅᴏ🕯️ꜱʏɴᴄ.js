@@ -61,8 +61,9 @@ for (let folder of folders)
 for (let file of fs.readdirSync(folder).filter((v) => v.endsWith(`.js`)))
 files.push(path.resolve(path.join(folder, file)));
 for (let file of files) {
+var fils = [file]
 if (file == path.join(__dirname, __filename)) continue;
-console.log(Kolor.blue("☣️ 𝐕𝐞𝐫𝐢𝐭𝐲 𝐂𝐡𝐞𝐜𝐤: ") + file);
+console.log(fils);
 spawn("node", ["-c", file])
 .on("exit", () => {
 fs.readFile(file, function (err, content) {
