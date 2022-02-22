@@ -62,7 +62,7 @@ if (signal) console.log(signal);
 });
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 var sourceInst = require("child_process").exec(
-"npm install --force --save",
+"npm --no-warnings install --force --save",
 (error, stdout, stderr) => {
 if (error) console.log(Kolor.red(error));
 if (stderr) console.log(Kolor.yellow(stderr));
