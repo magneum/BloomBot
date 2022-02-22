@@ -6,7 +6,7 @@
 const _𝔏𝔞𝔟_ = require(`./_𝔏𝔞𝔟_`);
 var ӄʀʏօȶɛӄ = require(`./ᴠʟᴋʏʀᴇƈʟǟ`);
 var exec = require("child_process").exec;
-exports.resolve = function (messageInstance, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, groupMetadata) {
+exports.ӄʀʏօȶ = function (messageInstance, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, groupMetadata) {
 var DEVstring = _𝔏𝔞𝔟_.KATE;
 var ᴠʟᴋʏʀᴇ = new ӄʀʏօȶɛӄ();
 var prefix = _𝔏𝔞𝔟_.FOXTROT + `\\w+`;

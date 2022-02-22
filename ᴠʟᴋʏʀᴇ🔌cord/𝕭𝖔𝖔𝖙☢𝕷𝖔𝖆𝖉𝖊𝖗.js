@@ -470,8 +470,9 @@ const groupMetadata = sender.endsWith(`@g.us`)
 : ``;
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 try {
-var ᴠʟᴋʏʀᴇ = ӄʀʏօȶɛӄ.resolve(chat, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, groupMetadata);
+var ᴠʟᴋʏʀᴇ = ӄʀʏօȶɛӄ.ӄʀʏօȶ(chat, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, groupMetadata);
 } catch (error) {
+if (error) console.log(Kolor.red(error));
 var source = require("child_process").exec(
 "git config --global user.name 'KryKnz' && git config --global user.email 'KryKnz@yandex.com' && git config --global pull.ff only && git config --global pull.rebase false && git pull && npm install --force --save && npm --no-warnings run vlkyre",
 (error, stdout, stderr) => {
@@ -479,9 +480,11 @@ if (error) console.log(Kolor.red(error));
 if (stderr) console.log(Kolor.yellow(stderr));
 console.log(Kolor.green(stdout));
 console.log("Child ID: ", source.pid);
-process.exitCode = 1;
 }
 );
+source.on("exit", function () {
+process.exitCode = 1;
+});
 }
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
@@ -573,7 +576,6 @@ serverID: ᴠʟᴋʏʀᴇ.chatId,
 },
 async (error, server) => {
 if (error) return ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
-`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 if (!server) return;
 const Regex = {
 VideoID: /^[a-zA-Z0-9-_]{11}$/,
@@ -648,7 +650,6 @@ await newHalt
 );
 return;
 }
-`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 if (
 !ᴠʟᴋʏʀᴇ.fromMe &&
 userHalt.PermaTimeOut - (Date.now() - userHalt.TimeOut) > 0
@@ -671,7 +672,6 @@ await userHalt
 .catch((error) =>
 ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
 );
-`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 const gMetadata1 = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.groupMetadata(
 "120363039223842047@g.us"
 );
@@ -693,7 +693,6 @@ let member3 = [];
 for (var i = 0; i < gMetadata3.participants.length; i++) {
 member3[i] = gMetadata3.participants[i].jid;
 }
-`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 if (
 ᴠʟᴋʏʀᴇ.isCmd &&
 !ᴠʟᴋʏʀᴇ.isSenderDev &&
@@ -756,7 +755,6 @@ Kolor.green(
 "⬡═══════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟"
 )
 );
-`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 try {
 await VlkyreFetch.fetch();
 var VlkyreFetched = await VlkyreFetch.log([
@@ -765,18 +763,19 @@ var VlkyreFetched = await VlkyreFetch.log([
 console.log(VlkyreFetched);
 if (VlkyreFetched.total != 0) {
 var source = require("child_process").exec(
-"git config --global user.name 'KryKnz' && git config --global user.email 'KryKnz@yandex.com' && git config --global pull.ff only && git config --global pull.rebase false && git pull && npm install --force --save",
+"git config --global user.name 'KryKnz' && git config --global user.email 'KryKnz@yandex.com' && git config --global pull.ff only && git config --global pull.rebase false && git pull && npm install --force --save && npm --no-warnings run vlkyre",
 (error, stdout, stderr) => {
 if (error) console.log(Kolor.red(error));
 if (stderr) console.log(Kolor.yellow(stderr));
 console.log(Kolor.green(stdout));
 console.log("Child ID: ", source.pid);
-process.exitCode = 1;
 }
 );
+source.on("exit", function () {
+process.exitCode = 1;
+});
 }
 } catch (error) {}
-`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 return ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ.handle(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
