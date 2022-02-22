@@ -12,7 +12,7 @@ const Kolor = require("chalk");
 const assert = require("assert");
 const { spawn } = require("child_process");
 const VlkyreFetch = require(`simple-git`)();
-const { ᴠʟᴋʏʀᴇ } = require("./ᴠʟᴋʏʀᴇ🔌cord/𝕭𝖔𝖔𝖙☢𝕷𝖔𝖆𝖉𝖊𝖗");
+const ᴠʟᴋʏʀᴇ = require("./ᴠʟᴋʏʀᴇ🔌cord/𝕭𝖔𝖔𝖙☢𝕷𝖔𝖆𝖉𝖊𝖗");
 try {
 await VlkyreFetch.fetch();
 var VlkyreFetched = await VlkyreFetch.log([`KryTek..origin/KryTek`]);
