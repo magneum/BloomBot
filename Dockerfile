@@ -122,6 +122,7 @@ WORKDIR /Vlkyre
 RUN git config --global user.name 'KryKnz' && git config --global user.email 'KryKnz@yandex.com' && git config --global pull.ff only && git config --global pull.rebase false
 RUN pip install -r ᴠʟᴋʏʀᴇ🀄ᴇxʜᴀᴜꜱᴛ/кгץкภչ.txt
 RUN npm install --force
+RUN npx npm-merge-driver install --global
 CMD npm --no-warnings run vlkyre
 # |⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|
 # NOTE: THIS DOCKERFILE IS GENERATED VIA "apply-templates.sh"
