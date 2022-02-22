@@ -228,7 +228,7 @@ sword: 0,
 laptop: 0,
 charm: 0,
 CurrentRobberyTime: Date.now(),
-PermanentRobberyTime: 600000,
+PermanentRobberyTime: 900000,
 });
 await newUser
 .save()
@@ -264,7 +264,7 @@ sword: 0,
 laptop: 0,
 charm: 0,
 CurrentRobberyTime: Date.now(),
-PermanentRobberyTime: 600000,
+PermanentRobberyTime: 900000,
 });
 await newUser
 .save()
@@ -771,7 +771,7 @@ sword: 0,
 laptop: 0,
 charm: 0,
 CurrentRobberyTime: Date.now(),
-PermanentRobberyTime: 600000,
+PermanentRobberyTime: 900000,
 });
 await newUser
 .save()
@@ -838,7 +838,7 @@ sword: 0,
 laptop: 0,
 charm: 0,
 CurrentRobberyTime: Date.now(),
-PermanentRobberyTime: 600000,
+PermanentRobberyTime: 900000,
 });
 await newUser
 .save()
@@ -1164,8 +1164,8 @@ mentionedJid: [ʟɴᴀᴍᴇ, TagMention],
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 } else {
 let Note;
-cEconomy.PermanentRobberyTime = 600000;
-vEconomy.PermanentRobberyTime = 600000;
+cEconomy.PermanentRobberyTime = 900000;
+vEconomy.PermanentRobberyTime = 900000;
 if (vEconomy.money < 1000) {
 vEconomy.money = 0;
 cEconomy.money = cEconomy.money + vEconomy.money;
@@ -1244,8 +1244,8 @@ mentionedJid: [ʟɴᴀᴍᴇ, TagMention],
 ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
 );
 } else {
-cEconomy.PermanentRobberyTime = 600000;
-vEconomy.PermanentRobberyTime = 600000;
+cEconomy.PermanentRobberyTime = 900000;
+vEconomy.PermanentRobberyTime = 900000;
 vEconomy.money = vEconomy.money - MoneyRandom;
 cEconomy.money = cEconomy.money + MoneyRandom;
 culprit.CurrentRobberyTime = Date.now();

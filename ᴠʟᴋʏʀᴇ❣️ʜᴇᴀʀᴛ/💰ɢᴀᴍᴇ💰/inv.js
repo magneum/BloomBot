@@ -51,7 +51,7 @@ sword: 0,
 laptop: 0,
 charm: 0,
 CurrentRobberyTime: 0,
-PermanentRobberyTime: 600000,
+PermanentRobberyTime: 900000,
 });
 await newUser
 .save()
