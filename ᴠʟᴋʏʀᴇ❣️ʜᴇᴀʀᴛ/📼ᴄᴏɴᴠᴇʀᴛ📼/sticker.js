@@ -7,6 +7,7 @@ const ᴠʟᴋʏʀᴇ_Buttons = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛ
 const ᴠʟᴋʏʀᴇ_Static = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/ᴠʟᴋʏʀᴇ_Static`);
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const cleanRF = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/cleanRF`);
+const Downloader = require(`nodejs-file-downloader`);
 const _𝔏𝔞𝔟_ = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/_𝔏𝔞𝔟_`);
 const ꜰᴜᴄᴋ = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/oShit`);
 const ffmpeg = require(`fluent-ffmpeg`);
@@ -20,7 +21,7 @@ const { Sticker } = require("wa-sticker-formatter");
 const isUrl = (text) => {
 return text.match(
 new RegExp(
-/https?:\/\/(www\.)?[-a-zA-Z0-9@:%._+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_+.~#?&/=]*)(jpe?g|gif|png)/,
+/https?:\/\/(www\.)?[-a-zA-Z0-9@:%._+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_+.~#?&/=]*)(jpe?g|png)/,
 "gi"
 )
 );
@@ -36,7 +37,6 @@ name: newScpt,
 ║- PNG
 ║- JPEG
 ║- WEBP
-║- URL-GIF
 ║- URL-PNG
 ║- URL-JPEG
 ╚════════════╝`,
@@ -162,14 +162,13 @@ pack: Needs[0] || "ᴄʀᴀꜰᴛᴇᴅ ☊ ʙʏ",
 author: "❝ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ⌬ ᴠʟᴋʏʀᴇ ❞",
 categories: "Ⓒ",
 }).build();
-await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
-ᴠʟᴋʏʀᴇ.chatId,
-stick,
-MessageType.sticker,
-{
+await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
+.sendMessage(ᴠʟᴋʏʀᴇ.chatId, stick, MessageType.sticker, {
 quoted: chat,
-}
-).catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
+})
+.catch((error) =>
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
+);
 await cleanRF.cleanRF(FilePath, StickerPath);
 })
 .on(`error`, async (error) => {
@@ -208,14 +207,13 @@ pack: Needs[0] || "ᴄʀᴀꜰᴛᴇᴅ ☊ ʙʏ",
 author: "❝ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ⌬ ᴠʟᴋʏʀᴇ ❞",
 categories: "Ⓒ",
 }).build();
-await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
-ᴠʟᴋʏʀᴇ.chatId,
-stick,
-MessageType.sticker,
-{
+await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
+.sendMessage(ᴠʟᴋʏʀᴇ.chatId, stick, MessageType.sticker, {
 quoted: chat,
-}
-).catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
+})
+.catch((error) =>
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
+);
 await cleanRF.cleanRF(FilePath, StickerPath);
 })
 .on(`error`, async (error) => {
@@ -236,6 +234,7 @@ message: chat.message,
 };
 var FileID = chat.key.id;
 await convertToSticker(FileID, replyChatObject);
+`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 } else if (
 ᴠʟᴋʏʀᴇ.isReplyImage ||
 ᴠʟᴋʏʀᴇ.isReplyGIF ||
@@ -248,6 +247,79 @@ chat.message.extendedTextMessage.contextInfo.quotedMessage,
 var FileID =
 chat.message.extendedTextMessage.contextInfo.stanzaId;
 await convertToSticker(FileID, replyChatObject);
+`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
+} else if (isUrl(Needs.join(" "))) {
+const downloader = await new Downloader({
+url: DirectFile,
+directory: `ᴠʟᴋʏʀᴇ🀄ᴇxʜᴀᴜꜱᴛ`,
+fileName: `${chat.key.id}.jpeg`,
+cloneFiles: false,
+});
+try {
+await downloader.download();
+} catch (error) {
+userBadge.Limits = userBadge.Limits + 1;
+await userBadge
+.save()
+.catch((error) =>
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
+);
+const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
+var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(ᴠʟᴋʏʀᴇ.commandName);
+var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
+𝓜Usage.ᴠʟᴋʏʀᴇӄǟɨʐօ === undefined
+? `Null`
+: 𝓜Usage.ᴠʟᴋʏʀᴇӄǟɨʐօ;
+ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+chat,
+ᴠʟᴋʏʀᴇ,
+ʟɴᴀᴍᴇ,
+ᴘɴᴀᴍᴇ,
+ᴠʟᴋʏʀᴇ.commandName,
+ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
+);
+return;
+}
+`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
+ffmpeg(`./ᴠʟᴋʏʀᴇ🀄ᴇxʜᴀᴜꜱᴛ/${chat.key.id}.jpeg`)
+.outputOptions(["-y", "-vcodec libwebp"])
+.videoFilters(
+"scale=2000:2000:flags=lanczos:force_original_aspect_ratio=decrease,format=rgba,pad=2000:2000:(ow-iw)/2:(oh-ih)/2:color=#00000000,setsar=1"
+)
+.save(`./ᴠʟᴋʏʀᴇ🀄ᴇxʜᴀᴜꜱᴛ/${chat.key.id}.webp`)
+.on("end", async () => {
+stick = await new Sticker(
+`./ᴠʟᴋʏʀᴇ🀄ᴇxʜᴀᴜꜱᴛ/${chat.key.id}.webp`,
+{
+type: "full",
+pack: Needs[0] || "ᴄʀᴀꜰᴛᴇᴅ ☊ ʙʏ",
+author: "❝ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ⌬ ᴠʟᴋʏʀᴇ ❞",
+categories: "Ⓒ",
+}
+).build();
+await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
+.sendMessage(ᴠʟᴋʏʀᴇ.chatId, stick, MessageType.sticker, {
+quoted: chat,
+})
+.catch((error) =>
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
+);
+await cleanRF.cleanRF(
+`./ᴠʟᴋʏʀᴇ🀄ᴇxʜᴀᴜꜱᴛ/${chat.key.id}.jpeg`,
+`./ᴠʟᴋʏʀᴇ🀄ᴇxʜᴀᴜꜱᴛ/${chat.key.id}.webp`
+);
+})
+.on(`error`, async (error) => {
+userBadge.Limits = userBadge.Limits + 1;
+await userBadge
+.save()
+.catch((error) =>
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
+);
+return ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
+});
+`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 } else {
 userBadge.Limits = userBadge.Limits + 1;
 await userBadge
@@ -292,19 +364,7 @@ return;
 }
 );
 } catch (error) {
-const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
-var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(ᴠʟᴋʏʀᴇ.commandName);
-var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
-𝓜Usage.ᴠʟᴋʏʀᴇӄǟɨʐօ === undefined ? `Null` : 𝓜Usage.ᴠʟᴋʏʀᴇӄǟɨʐօ;
-ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
-ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
-chat,
-ᴠʟᴋʏʀᴇ,
-ʟɴᴀᴍᴇ,
-ᴘɴᴀᴍᴇ,
-ᴠʟᴋʏʀᴇ.commandName,
-ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
-);
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
 return;
 }
 },
