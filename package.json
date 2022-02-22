@@ -1,6 +1,6 @@
 {
   "name": "vlkyre",
-  "vers": "40 <debug-mode-on>",
+  "vers": "40 <debug-mode>",
   "verold": "39",
   "depecrated": false,
   "directories": {
