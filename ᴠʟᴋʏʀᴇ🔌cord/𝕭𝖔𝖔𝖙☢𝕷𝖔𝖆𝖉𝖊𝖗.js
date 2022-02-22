@@ -746,21 +746,9 @@ if (ᴠʟᴋʏʀᴇ.isCmd && ᴠʟᴋʏʀᴇ.fromMe && ᴠʟᴋʏʀᴇ.isSenderD
 const git = require("simple-git")();
 await git.fetch();
 var newCommits = await git.log(["KryTek..origin/KryTek"]);
+console.log(newCommits);
 if (newCommits.total != 0) {
-var sourcePull = require("child_process").exec(
-"git config pull.rebase true && git pull",
-(error, stdout, stderr) => {
-if (error) console.log(Kolor.red(error));
-if (stderr) console.log(Kolor.yellow(stderr));
-console.log(Kolor.green(stdout));
-console.log("Child ID: ", sourcePull.pid);
-}
-);
-sourcePull.on("exit", function (code, signal) {
-if (code) console.log(code);
-if (signal) console.log(signal);
-process.exitCode = 1;
-});
+await git.pull("origin", "KryTek", (error, update) => {
 var sourceInst = require("child_process").exec(
 "npm --no-warnings install --force --save",
 (error, stdout, stderr) => {
@@ -776,6 +764,7 @@ if (signal) console.log(signal);
 process.exitCode = 1;
 });
 require("child_process").exec("rm package-lock.json");
+});
 }
 }
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
