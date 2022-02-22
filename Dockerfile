@@ -119,10 +119,10 @@ RUN curl https://cli-assets.heroku.com/install.sh | sh && heroku plugins:install
 RUN git clone https://github.com/KryKnz/Vlkyre.git 
 RUN cd Vlkyre
 WORKDIR /Vlkyre
-RUN git config --global user.name 'KryKnz' && git config --global user.email 'KryKnz@yandex.com' && git config --global pull.ff only && git config --global pull.rebase false
+RUN git config --global user.name 'KryKnz' && git config --global user.email 'KryKnz@yandex.com' 
 RUN pip install -r ᴠʟᴋʏʀᴇ🀄ᴇxʜᴀᴜꜱᴛ/кгץкภչ.txt
-RUN npm install --force
 RUN npx npm-merge-driver install --global
+RUN npm install --force
 RUN rm package-lock.json
 CMD npm --no-warnings run vlkyre
 # |⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|
