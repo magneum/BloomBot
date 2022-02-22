@@ -627,7 +627,7 @@ if (!userHalt) {
 var newHalt = new Halt({
 ID: ᴠʟᴋʏʀᴇ.sender,
 TimeOut: Date.now(),
-PermaTimeOut: 8000,
+PermaTimeOut: 10000,
 });
 await newHalt
 .save()
@@ -643,15 +643,19 @@ userHalt.PermaTimeOut - (Date.now() - userHalt.TimeOut) > 0
 let Time = ms(
 userHalt.PermaTimeOut - (Date.now() - userHalt.TimeOut)
 );
+if (Time.seconds >= 8) {
 return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
 ᴠʟᴋʏʀᴇ.chatId,
-`✘ @${ᴘɴᴀᴍᴇ}, *Wait For [${Time.seconds}/8]s!*`,
+`✘ @${ᴘɴᴀᴍᴇ}, *Wait For [${Time.seconds}/10]s!*`,
 MessageType.text,
 {
 contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
 }
 );
 }
+return;
+}
+userHalt.PermaTimeOut = 10000;
 userHalt.TimeOut = Date.now();
 await userHalt
 .save()
