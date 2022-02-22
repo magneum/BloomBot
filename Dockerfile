@@ -94,8 +94,7 @@
 # ENV ᴋʀᴀᴋɪɴᴢ⌬ʟᴀʙ "/venv"
 # RUN python -m venv $ᴋʀᴀᴋɪɴᴢ⌬ʟᴀʙ
 # ENV PATH "$ᴋʀᴀᴋɪɴᴢ⌬ʟᴀʙ/bin:$PATH"
-FROM scratch
-ADD rootfs.tar.xz /
+FROM debian:stable
 RUN apt-get update 
 RUN apt-get upgrade -y 
 RUN apt-get install git -y 
