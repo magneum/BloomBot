@@ -90,10 +90,12 @@
 # 	; \
 # 	rm -f get-pip.py
 # |⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|
-FROM python:latest
-ENV ᴋʀᴀᴋɪɴᴢ⌬ʟᴀʙ "/venv"
-RUN python -m venv $ᴋʀᴀᴋɪɴᴢ⌬ʟᴀʙ
-ENV PATH "$ᴋʀᴀᴋɪɴᴢ⌬ʟᴀʙ/bin:$PATH"
+# FROM python:latest
+# ENV ᴋʀᴀᴋɪɴᴢ⌬ʟᴀʙ "/venv"
+# RUN python -m venv $ᴋʀᴀᴋɪɴᴢ⌬ʟᴀʙ
+# ENV PATH "$ᴋʀᴀᴋɪɴᴢ⌬ʟᴀʙ/bin:$PATH"
+FROM scratch
+ADD rootfs.tar.xz /
 RUN apt-get update 
 RUN apt-get upgrade -y 
 RUN apt-get install git -y 
