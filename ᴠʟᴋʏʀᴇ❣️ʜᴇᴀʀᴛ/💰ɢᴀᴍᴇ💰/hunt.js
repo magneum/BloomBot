@@ -264,8 +264,6 @@ caption: `❣️𝗠𝗲𝗻𝘁𝗶𝗼𝗻:  ꧁ *@${ᴘɴᴀᴍᴇ}* ꧂
 ╔◇꧂💫 *Name:* _${PokemonData.name}_
 ║🪙 *Worth:* _${Worth}gold_
 ║〽️ *Pokedex ID:* _${PokemonData.id}_
-║🛍️ *Card Market:* _${card[0].cardmarket.url}_
-║🧀 *TGC Player:* _${card[0].tcgplayer.url}_
 ╚◇꧂
 ╔◇꧂𝐓𝐨 𝐋𝐞𝐚𝐫𝐧 𝐌𝐨𝐫𝐞👇🏻
 ║💫 *Type:* _${ᴋᴇɪ}pokedex ${PokemonData.name}_
