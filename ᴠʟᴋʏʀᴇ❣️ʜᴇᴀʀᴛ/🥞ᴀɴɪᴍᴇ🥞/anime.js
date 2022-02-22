@@ -54,7 +54,7 @@ chat,
 ᴠʟᴋʏʀᴇ,
 `❣️𝗠𝗲𝗻𝘁𝗶𝗼𝗻:  ꧁ *@${ᴘɴᴀᴍᴇ}* ꧂
 
-╔⧉༻ _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_  
+╔⧉༻🌿𝐓𝐨𝐩𝐢𝐜: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_  
 ║🧈 *Added To DB for _${newScpt}_ command First Time!*
 ║🦋 _Try ${ᴋᴇɪ}${ᴅꜰɴᴀᴍᴇ} Again!_
 ╚════════════╝`,
@@ -145,7 +145,7 @@ const name = Needs.join(` `);
 malScraper.getInfoFromName(name).then(async (data) => {
 const AnimeInfos = `❣️𝗠𝗲𝗻𝘁𝗶𝗼𝗻:  ꧁ *@${ᴘɴᴀᴍᴇ}* ꧂
 
-╔⧉༻ _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
+╔⧉༻🌿𝐓𝐨𝐩𝐢𝐜: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
 ║💡 𝐓𝐢𝐭𝐥𝐞: *${data.title}*
 ║🧀 𝗣𝗿𝗲𝗺𝗶𝗲𝗿𝗲𝗱: _${data.premiered}_
 ║😈 𝗕𝗿𝗼𝗮𝗱𝗰𝗮𝘀𝘁: _${data.broadcast}_

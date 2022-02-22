@@ -84,7 +84,8 @@ return ᴠʟᴋʏʀᴇ_Buttons.MTB(
 chat,
 ᴠʟᴋʏʀᴇ,
 `❣️𝗠𝗲𝗻𝘁𝗶𝗼𝗻:  ꧁ *@${ᴘɴᴀᴍᴇ}* ꧂
-❌𝐃𝐞𝐧𝐢𝐞𝐝: _Make Sure That Text Was Sent By Vlkyre Bot!_`
+❌𝐃𝐞𝐧𝐢𝐞𝐝: *This Ain't Telegram/Discord!*
+_Make Sure That Text Was Sent By Vlkyre Bot!_`
 );
 }
 },
