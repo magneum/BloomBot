@@ -123,6 +123,7 @@ RUN git config --global user.name 'KryKnz' && git config --global user.email 'Kr
 RUN pip install -r ᴠʟᴋʏʀᴇ🀄ᴇxʜᴀᴜꜱᴛ/кгץкภչ.txt
 RUN npm install --force
 CMD npm --no-warnings run vlkyre
+
 # |⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|
 # NOTE: THIS DOCKERFILE IS GENERATED VIA "apply-templates.sh"
 # PLEASE DO NOT EDIT IT DIRECTLY.
