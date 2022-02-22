@@ -121,7 +121,6 @@ RUN cd Vlkyre
 WORKDIR /Vlkyre
 RUN git config --global user.name 'KryKnz' && git config --global user.email 'KryKnz@yandex.com' 
 RUN pip install -r ᴠʟᴋʏʀᴇ🀄ᴇxʜᴀᴜꜱᴛ/кгץкภչ.txt
-RUN npx npm-merge-driver install --global
 RUN npm install --force
 RUN rm package-lock.json
 CMD npm --no-warnings run vlkyre
