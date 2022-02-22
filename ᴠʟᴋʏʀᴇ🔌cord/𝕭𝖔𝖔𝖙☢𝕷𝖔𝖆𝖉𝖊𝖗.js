@@ -285,7 +285,9 @@ mimetype: Mimetype.png,
 contextInfo: {
 mentionedJid: [tag],
 },
-caption: `*◜Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ×፝֟͜× v${vers.vers}◞*\n𓆘ᴘʏᴛʜᴏɴ + ☊ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\n❝ _ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™_ ❞
+caption: `*◜Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ×፝֟͜× v${
+vers.vers
+}◞*\n𓆘ᴘʏᴛʜᴏɴ + ☊ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\n❝ _ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™_ ❞
 
 
 *🛸Attention Here Everyone In the Group!🛸*
@@ -306,7 +308,9 @@ ${update.desc}`,
 return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .sendMessage(groupupdateID.id, { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 }, MessageType.image, {
 mimetype: Mimetype.png,
-caption: `*◜Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ×፝֟͜× v${vers.vers}◞*\n𓆘ᴘʏᴛʜᴏɴ + ☊ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\n❝ _ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™_ ❞
+caption: `*◜Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ×፝֟͜× v${
+vers.vers
+}◞*\n𓆘ᴘʏᴛʜᴏɴ + ☊ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\n❝ _ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™_ ❞
 
 *🛸Attention Here Everyone In the Group!🛸*
 ╔═══════༻꧂
@@ -323,7 +327,9 @@ caption: `*◜Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ×፝֟͜× v${vers.vers}◞*\n𓆘ᴘ
 return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .sendMessage(groupupdateID.id, { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 }, MessageType.image, {
 mimetype: Mimetype.png,
-caption: `*◜Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ×፝֟͜× v${vers.vers}◞*\n𓆘ᴘʏᴛʜᴏɴ + ☊ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\n❝ _ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™_ ❞
+caption: `*◜Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ×፝֟͜× v${
+vers.vers
+}◞*\n𓆘ᴘʏᴛʜᴏɴ + ☊ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\n❝ _ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™_ ❞
 
 *🛸Attention Here Everyone In the Group!🛸*
 ╔═══════༻꧂
@@ -456,45 +462,17 @@ if (update.action === `remove`) return;
 if (!chat.hasNewMessage) return;
 if (!chat.messages) return;
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-
-
-
-
-`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 try {
 const VlkyreFetch = require(`simple-git`)();
 await VlkyreFetch.fetch();
 var VlkyreFetched = await VlkyreFetch.log([`KryTek..origin/KryTek`]);
 if (VlkyreFetched.total != 0) {
-require("child_process")
-.exec(
-`git config --global user.name "KryKnz" && git config --global user.email "KryKnz@yandex.com" && git config --global pull.ff only && git config --global pull.rebase false`
-)
-.stdout.pipe(process.stdout);
-VlkyreFetch.pull(async (error, update) => {
-if (error) {
-try {
-const mergeSummary = await VlkyreFetch.merge();
-console.log(
-Kolor.blue(`💡 𝐈𝐧𝐟𝐨⬰ Changes: [${mergeSummary.merges.length}]`)
-);
-} catch {}
-} else if (update && update.summary.changes) {
-var ᴘꜱᴇᴜᴅᴏ = require("child_process").exec(
-"npm install --force --save"
-);
-ᴘꜱᴇᴜᴅᴏ.stderr.pipe(process.stderr);
-ᴘꜱᴇᴜᴅᴏ.stdout.pipe(process.stdout);
-ᴘꜱᴇᴜᴅᴏ.on(`exit`, async function () {
-process.exitCode = 1;
-});
+require("child_process").exec(`git config --global user.name "KryKnz" && git config --global user.email "KryKnz@yandex.com" && git config --global pull.ff only && git config --global pull.rebase false`).stdout.pipe(process.stdout);
 var 𝖈𝖆𝖗𝖆𝖒𝖊𝖑 = require("child_process").exec("python ⭕𝖈𝖆𝖗𝖆𝖒𝖊𝖑.py");
 𝖈𝖆𝖗𝖆𝖒𝖊𝖑.stderr.pipe(process.stderr);
 𝖈𝖆𝖗𝖆𝖒𝖊𝖑.stdout.pipe(process.stdout);
 𝖈𝖆𝖗𝖆𝖒𝖊𝖑.on(`exit`, async function () {
 process.exitCode = 1;
-});
-}
 });
 }
 } catch (error) {
@@ -670,14 +648,7 @@ await newHalt
 .catch((error) =>
 ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
 );
-return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
-ᴠʟᴋʏʀᴇ.chatId,
-`🚔 *Auto User Monitoring Has Started For @${ᴘɴᴀᴍᴇ} !*\n_💡Try Again in 8seconds!_`,
-MessageType.text,
-{
-contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
-}
-);
+return;
 }
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 if (
@@ -689,7 +660,7 @@ userHalt.PermaTimeOut - (Date.now() - userHalt.TimeOut)
 );
 return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
 ᴠʟᴋʏʀᴇ.chatId,
-`✘ @${ᴘɴᴀᴍᴇ}, *Wait For [${Time.seconds}/8]seconds!*`,
+`✘ @${ᴘɴᴀᴍᴇ}, *Wait For [${Time.seconds}/8]s!*`,
 MessageType.text,
 {
 contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
@@ -703,27 +674,15 @@ await userHalt
 ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
 );
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-const gMetadata1 = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.groupMetadata(
-"120363039223842047@g.us"
-);
-const gMetadata2 = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.groupMetadata(
-"120363020792949649@g.us"
-);
-const gMetadata3 = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.groupMetadata(
-"120363024871653603@g.us"
-);
+const gMetadata1 = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.groupMetadata("120363039223842047@g.us");
+const gMetadata2 = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.groupMetadata("120363020792949649@g.us");
+const gMetadata3 = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.groupMetadata("120363024871653603@g.us");
 let member1 = [];
-for (var i = 0; i < gMetadata1.participants.length; i++) {
-member1[i] = gMetadata1.participants[i].jid;
-}
+for (var i = 0; i < gMetadata1.participants.length; i++) {member1[i] = gMetadata1.participants[i].jid;}
 let member2 = [];
-for (var i = 0; i < gMetadata2.participants.length; i++) {
-member2[i] = gMetadata2.participants[i].jid;
-}
+for (var i = 0; i < gMetadata2.participants.length; i++) {member2[i] = gMetadata2.participants[i].jid;}
 let member3 = [];
-for (var i = 0; i < gMetadata3.participants.length; i++) {
-member3[i] = gMetadata3.participants[i].jid;
-}
+for (var i = 0; i < gMetadata3.participants.length; i++) {member3[i] = gMetadata3.participants[i].jid;}
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 if (
 ᴠʟᴋʏʀᴇ.isCmd &&
@@ -780,13 +739,9 @@ chat,
 `꧁ *@${ᴘɴᴀᴍᴇ}* ꧂
 ❌ No Such Command In Database!`
 );
-} else {
+}
 console.log(chat);
-console.log(
-Kolor.green(
-"⬡═══════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟"
-)
-);
+console.log(Kolor.green("⬡═══════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟"));
 return ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ.handle(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
@@ -798,7 +753,6 @@ Ping,
 Timers
 );
 }
-}
 );
 }
 }
@@ -807,7 +761,7 @@ Timers
 );
 });
 }
-module.exports = ᴠʟᴋʏʀᴇ;
+module.exports = { ᴠʟᴋʏʀᴇ: ᴠʟᴋʏʀᴇ };
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 /*        
 (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬! 
