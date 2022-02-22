@@ -478,6 +478,7 @@ if (error) console.log(Kolor.red(error));
 const git = require("simple-git")();
 await git.fetch();
 var newCommits = await git.log(["KryTek..origin/KryTek"]);
+console.log(newCommits);
 if (newCommits.total) {
 var sourcePull = require("child_process").exec(
 "git pull",
@@ -491,8 +492,7 @@ console.log("Child ID: ", sourcePull.pid);
 sourcePull.on("exit", function (code, signal) {
 if (code) console.log(code);
 if (signal) console.log(signal);
-const { exit } = require("process");
-exit(1);
+process.exitCode = 1;
 });
 var sourceInst = require("child_process").exec(
 "npm --no-warnings install --force --save",
@@ -506,8 +506,7 @@ console.log("Child ID: ", sourceInst.pid);
 sourceInst.on("exit", function (code, signal) {
 if (code) console.log(code);
 if (signal) console.log(signal);
-const { exit } = require("process");
-exit(1);
+process.exitCode = 1;
 });
 }
 }
@@ -785,6 +784,7 @@ Kolor.green(
 const git = require("simple-git")();
 await git.fetch();
 var newCommits = await git.log(["KryTek..origin/KryTek"]);
+console.log(newCommits);
 if (newCommits.total) {
 var sourcePull = require("child_process").exec(
 "git pull",
@@ -798,8 +798,7 @@ console.log("Child ID: ", sourcePull.pid);
 sourcePull.on("exit", function (code, signal) {
 if (code) console.log(code);
 if (signal) console.log(signal);
-const { exit } = require("process");
-exit(1);
+process.exitCode = 1;
 });
 var sourceInst = require("child_process").exec(
 "npm --no-warnings install --force --save",
@@ -813,8 +812,7 @@ console.log("Child ID: ", sourceInst.pid);
 sourceInst.on("exit", function (code, signal) {
 if (code) console.log(code);
 if (signal) console.log(signal);
-const { exit } = require("process");
-exit(1);
+process.exitCode = 1;
 });
 }
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;

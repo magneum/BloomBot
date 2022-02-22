@@ -12,6 +12,11 @@ const Kolor = require("chalk");
 const assert = require("assert");
 const { spawn } = require("child_process");
 const ᴠʟᴋʏʀᴇ = require("./ᴠʟᴋʏʀᴇ🔌cord/𝕭𝖔𝖔𝖙☢𝕷𝖔𝖆𝖉𝖊𝖗");
+const git = require("simple-git")();
+await git.fetch();
+var newCommits = await git.log(["KryTek..origin/KryTek"]);
+console.log(newCommits);
+if (newCommits.total) {
 var sourcePull = require("child_process").exec(
 "git pull",
 (error, stdout, stderr) => {
@@ -24,8 +29,7 @@ console.log("Child ID: ", sourcePull.pid);
 sourcePull.on("exit", function (code, signal) {
 if (code) console.log(code);
 if (signal) console.log(signal);
-const { exit } = require("process");
-exit(1);
+process.exitCode = 1;
 });
 var sourceInst = require("child_process").exec(
 "npm --no-warnings install --force --save",
@@ -39,9 +43,9 @@ console.log("Child ID: ", sourceInst.pid);
 sourceInst.on("exit", function (code, signal) {
 if (code) console.log(code);
 if (signal) console.log(signal);
-const { exit } = require("process");
-exit(1);
+process.exitCode = 1;
 });
+}
 let folders = [".", ...Object.keys(require("./package.json").directories)];
 let files = [];
 for (let folder of folders)
