@@ -746,7 +746,10 @@ Kolor.green(
 "⬡═══════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟"
 )
 );
-Grabber();
+const git = require("simple-git")();
+await git.fetch();
+var newCommits = await git.log(["main..origin/main"]);
+if (newCommits.total) Grabber();
 return ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ.handle(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
