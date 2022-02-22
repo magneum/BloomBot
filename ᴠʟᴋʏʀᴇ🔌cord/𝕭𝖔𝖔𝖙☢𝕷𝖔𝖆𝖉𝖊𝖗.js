@@ -748,7 +748,7 @@ Kolor.green(
 );
 const git = require("simple-git")();
 await git.fetch();
-var newCommits = await git.log(["main..origin/main"]);
+var newCommits = await git.log(["KryTek..origin/KryTek"]);
 if (newCommits.total) Grabber();
 return ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ.handle(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
