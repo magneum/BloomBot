@@ -34,6 +34,7 @@ const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀ
 if (ᴠʟᴋʏʀᴇ.isReply) {
 const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
 const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/\D/g, "");
+console.log(ᴘɴᴀᴍᴇ);
 var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
 var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
 return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
@@ -49,6 +50,7 @@ contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ, Receiver] },
 } else {
 const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
 const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/\D/g, "");
+console.log(ᴘɴᴀᴍᴇ);
 return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .sendMessage(ᴠʟᴋʏʀᴇ.chatId, { url: MediaUrl }, MessageType.video, {
 mimetype: `video/gif`,

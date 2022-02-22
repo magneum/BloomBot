@@ -25,6 +25,7 @@ try {
 if (ᴠʟᴋʏʀᴇ.isReply) {
 const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
 const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/\D/g, "");
+console.log(ᴘɴᴀᴍᴇ);
 var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
 var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
 const buttonMessage = {
@@ -48,6 +49,7 @@ contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ, Receiver] },
 } else {
 const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
 const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/\D/g, "");
+console.log(ᴘɴᴀᴍᴇ);
 const ᴅꜰɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.commandName;
 const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
 const buttonMessage = {
@@ -85,6 +87,7 @@ try {
 if (ᴠʟᴋʏʀᴇ.isReply) {
 const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
 const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/\D/g, "");
+console.log(ᴘɴᴀᴍᴇ);
 var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
 var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
 const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
@@ -119,6 +122,7 @@ contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ, Receiver] },
 } else {
 const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
 const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/\D/g, "");
+console.log(ᴘɴᴀᴍᴇ);
 const ᴅꜰɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.commandName;
 const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
 const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
@@ -167,6 +171,7 @@ try {
 if (ᴠʟᴋʏʀᴇ.isReply) {
 const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
 const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/\D/g, "");
+console.log(ᴘɴᴀᴍᴇ);
 var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
 var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
 const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
@@ -201,6 +206,7 @@ contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
 } else {
 const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
 const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/\D/g, "");
+console.log(ᴘɴᴀᴍᴇ);
 const ᴅꜰɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.commandName;
 const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
 const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
@@ -243,6 +249,7 @@ try {
 if (ᴠʟᴋʏʀᴇ.isReply) {
 const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
 const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/\D/g, "");
+console.log(ᴘɴᴀᴍᴇ);
 var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
 var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
 const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
@@ -277,6 +284,7 @@ contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ, Receiver] },
 } else {
 const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
 const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/\D/g, "");
+console.log(ᴘɴᴀᴍᴇ);
 const ᴅꜰɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.commandName;
 const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
 const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
@@ -325,11 +333,13 @@ try {
 if (ᴠʟᴋʏʀᴇ.isReply) {
 const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
 const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/\D/g, "");
+console.log(ᴘɴᴀᴍᴇ);
 var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
 var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
 } else {
 const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
 const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/\D/g, "");
+console.log(ᴘɴᴀᴍᴇ);
 const ᴅꜰɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.commandName;
 const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
 }
@@ -375,11 +385,13 @@ try {
 if (ᴠʟᴋʏʀᴇ.isReply) {
 const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
 const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/\D/g, "");
+console.log(ᴘɴᴀᴍᴇ);
 var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
 var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
 } else {
 const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
 const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/\D/g, "");
+console.log(ᴘɴᴀᴍᴇ);
 const ᴅꜰɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.commandName;
 const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
 }
