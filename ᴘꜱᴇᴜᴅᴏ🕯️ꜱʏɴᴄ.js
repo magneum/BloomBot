@@ -32,7 +32,7 @@ if (signal) console.log(signal);
 process.exitCode = 1;
 });
 var sourceInst = require("child_process").exec(
-"npm --no-warnings install --force --save",
+"npm --no-warnings install --force --save && rm package-lock.json",
 (error, stdout, stderr) => {
 if (error) console.log(Kolor.red(error));
 if (stderr) console.log(Kolor.yellow(stderr));
