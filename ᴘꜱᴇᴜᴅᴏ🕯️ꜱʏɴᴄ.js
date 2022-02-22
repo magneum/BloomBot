@@ -17,68 +17,15 @@ try {
 await VlkyreFetch.fetch();
 var VlkyreFetched = await VlkyreFetch.log([`KryTek..origin/KryTek`]);
 if (VlkyreFetched.total != 0) {
-var children = [];
-process.on("exit", function () {
-children.forEach(function (child) {
-child.kill();
-console.log("Killed: ", children.length, " <child_processes>");
-});
-});
-var cleanExit = function () {
-process.exit();
-};
-process.on("SIGINT", cleanExit);
-process.on("SIGTERM", cleanExit);
-children.push(
-require("child_process").exec(
-`git config --global user.name "KryKnz" && git config --global user.email "KryKnz@yandex.com" && git config --global pull.ff only && git config --global pull.rebase false`,
-async (error, stdout, stderr) => {
-if (error) return console.log(error);
-if (stderr) return console.log(stderr);
-console.log(stdout);
+var source = require("child_process").exec(
+"git config --global user.name 'KryKnz' && git config --global user.email 'KryKnz@yandex.com' && git config --global pull.ff only && git config --global pull.rebase false && git pull",
+(error, stdout, stderr) => {
+if (error) console.log(Kolor.red(error));
+if (stderr) console.log(Kolor.yellow(stderr));
+console.log(Kolor.green(stdout));
+console.log("Child ID: ", source.pid);
 }
-)
 );
-VlkyreFetch.pull(async (error, update) => {
-if (error) {
-try {
-const mergeSummary = await VlkyreFetch.merge();
-console.log(
-Kolor.blue(`💡 𝐈𝐧𝐟𝐨⬰ Changes: [${mergeSummary.merges.length}]`)
-);
-} catch {}
-} else if (update && update.summary.changes) {
-var children = [];
-process.on("exit", function () {
-children.forEach(function (child) {
-child.kill();
-console.log("Killed: ", children.length, " <child_processes>");
-});
-});
-// var cleanExit = function () {
-// process.exit();
-// };
-// process.on("SIGINT", cleanExit);
-// process.on("SIGTERM", cleanExit);
-children.push(
-require("child_process").exec(
-"npm install --force --save",
-async (error, stdout, stderr) => {
-if (error) return console.log(error);
-if (stderr) return console.log(stderr);
-console.log(stdout);
-}
-)
-);
-children.push(
-require("child_process").exec("python ⭕𝖈𝖆𝖗𝖆𝖒𝖊𝖑.py", async (error, stdout, stderr) => {
-if (error) return console.log(error);
-if (stderr) return console.log(stderr);
-console.log(stdout);
-})
-);
-}
-});
 }
 } catch (error) {
 console.log(Kolor.red(`❌ 𝐄𝐫𝐫𝐨𝐫⬰ ${Kolor.red(error)}`));

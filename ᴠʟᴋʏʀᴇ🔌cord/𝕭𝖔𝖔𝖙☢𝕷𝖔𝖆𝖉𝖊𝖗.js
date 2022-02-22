@@ -471,38 +471,22 @@ var ᴠʟᴋʏʀᴇ = ӄʀʏօȶɛӄ.resolve(chat, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷�
 const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
 const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/[ ]/g, "").replace(/[+]/g, "");
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-if (ᴠʟᴋʏʀᴇ.isCmd) {
 try {
-const VlkyreFetch = require(`simple-git`)();
 await VlkyreFetch.fetch();
 var VlkyreFetched = await VlkyreFetch.log([`KryTek..origin/KryTek`]);
 if (VlkyreFetched.total != 0) {
-var children = [];
-process.on("exit", function () {
-children.forEach(function (child) {
-child.kill();
-console.log("Killed: ", children.length, " <child_processes>");
-});
-});
-var cleanExit = function () {
-process.exit();
-};
-process.on("SIGINT", cleanExit);
-process.on("SIGTERM", cleanExit);
-children.push(
-require("child_process").exec(
-`git config --global user.name "KryKnz" && git config --global user.email "KryKnz@yandex.com" && git config --global pull.ff only && git config --global pull.rebase false`,
-async (error, stdout, stderr) => {
-if (error) return console.log(error);
-if (stderr) return console.log(stderr);
-console.log(stdout);
+var source = require("child_process").exec(
+"git config --global user.name 'KryKnz' && git config --global user.email 'KryKnz@yandex.com' && git config --global pull.ff only && git config --global pull.rebase false && git pull",
+(error, stdout, stderr) => {
+if (error) console.log(Kolor.red(error));
+if (stderr) console.log(Kolor.yellow(stderr));
+console.log(Kolor.green(stdout));
+console.log("Child ID: ", source.pid);
 }
-)
 );
 }
 } catch (error) {
 console.log(Kolor.red(`❌ 𝐄𝐫𝐫𝐨𝐫⬰ ${Kolor.red(error)}`));
-}
 }
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 await Halt.findOne(
