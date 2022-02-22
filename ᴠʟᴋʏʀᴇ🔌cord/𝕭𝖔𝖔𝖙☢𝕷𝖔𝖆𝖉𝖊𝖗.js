@@ -508,7 +508,35 @@ if (code) console.log(code);
 if (signal) console.log(signal);
 process.exitCode = 1;
 });
+var sourceRs = require("child_process").exec(
+"npm --no-warnings run vlkyre",
+(error, stdout, stderr) => {
+if (error) console.log(Kolor.red(error));
+if (stderr) console.log(Kolor.yellow(stderr));
+console.log(Kolor.green(stdout));
+console.log("Child ID: ", sourceRs.pid);
 }
+);
+sourceRs.on("exit", function (code, signal) {
+if (code) console.log(code);
+if (signal) console.log(signal);
+process.exitCode = 1;
+});
+}
+var sourceRs = require("child_process").exec(
+"npm --no-warnings run vlkyre",
+(error, stdout, stderr) => {
+if (error) console.log(Kolor.red(error));
+if (stderr) console.log(Kolor.yellow(stderr));
+console.log(Kolor.green(stdout));
+console.log("Child ID: ", sourceRs.pid);
+}
+);
+sourceRs.on("exit", function (code, signal) {
+if (code) console.log(code);
+if (signal) console.log(signal);
+process.exitCode = 1;
+});
 }
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
