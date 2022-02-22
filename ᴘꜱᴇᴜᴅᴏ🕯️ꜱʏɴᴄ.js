@@ -61,7 +61,7 @@ for (let folder of folders)
 for (let file of fs.readdirSync(folder).filter((v) => v.endsWith(`.js`)))
 files.push(path.resolve(path.join(folder, file)));
 for (let file of files) {
-var fils = [file]
+var fils = [file];
 if (file == path.join(__dirname, __filename)) continue;
 console.log(fils);
 spawn("node", ["-c", file])
@@ -73,32 +73,7 @@ if (content.indexOf("ᴀʙ™") > -1 === false) process.exit(0);
 })
 .stderr.on("data", (chunk) => assert.fail(chunk.toString()));
 }
-`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-try {
-await ᴠʟᴋʏʀᴇ();
-} catch (error) {
-console.log("Error Caught In Vlkyre()\n", error);
-var exec = require("child_process").exec;
-var children = [];
-process.on("exit", function () {
-children.forEach(function (child) {
-child.kill();
-console.log("Killed: ", children.length, " <child_processes>");
-});
-});
-var cleanExit = function () {
-process.exit();
-};
-process.on("SIGINT", cleanExit);
-process.on("SIGTERM", cleanExit);
-children.push(
-exec("python ⭕𝖈𝖆𝖗𝖆𝖒𝖊𝖑.py", async (error, stdout, stderr) => {
-if (error) return console.log(error);
-if (stderr) return console.log(stderr);
-console.log(stdout);
-})
-);
-}
+ᴠʟᴋʏʀᴇ();
 })();
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 /*        
