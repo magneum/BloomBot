@@ -164,6 +164,7 @@
     "soyultro": "^4.8.5",
     "spinnies": "^0.5.1",
     "sqlite3": "^5.0.2",
+    "table": "^6.8.0",
     "tenorjs": "^1.0.8",
     "text-to-image": "^4.1.1",
     "tinyurl": "^1.1.7",
