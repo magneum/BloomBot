@@ -3,8 +3,9 @@
 # |⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|
 import os
 import psutil
-import platform
 import logging
+import platform
+import git as 𝖛
 import subprocess
 from loguru import *
 from zipfile import ZipFile
@@ -20,23 +21,6 @@ load_dotenv("./ᴠʟᴋʏʀᴇ™.env")
 ᴠʟᴋʏʀᴇi = getenv("CODE", None)
 BFS = 64 * 1024
 os.system("cd ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ")
-# |⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡| 
-#             (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
-# |⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|
-try:
-    import subprocess
-    subprocess.run(["git", "pull"], check=True, stdout=subprocess.PIPE).stdout
-    print("🐍𝐏𝐘𝐓𝐇𝐎𝐍: git pull done!")
-except Exception as Error:
-    print(Error)
-    import git 
-    git_dir = "./"
-    gFetch = git.cmd.Git(git_dir)
-    gFetch.pull()
-    print("🐍𝐏𝐘𝐓𝐇𝐎𝐍: git pull done using gitPython!")
-# |⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡| 
-#             (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
-# |⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|
 class InterceptHandler(logging.Handler):
     LEVELS_MAP = {
         logging.CRITICAL: "CRITICAL",
@@ -57,21 +41,21 @@ class InterceptHandler(logging.Handler):
 
 
 logging.basicConfig(handlers=[InterceptHandler()], level=logging.INFO)
+LOGS = logging.getLogger(__name__)
 # |⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡| 
 #             (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 # |⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|
-LOGS = logging.getLogger(__name__)
 if ᴠʟᴋʏʀᴇi is not None:
     if os.path.exists("Zz4xp01pklo"):
         pass
     else:
         try:
             os.system("git clone https://github.com/Krakinz/Zz4xp01pklo.git")
-        except Exception as e:
+        except Exception as Error:
             if ᴠʟᴋʏʀᴇ == "HEROKU":
-                LOGS.info(str(e))
+                LOGS.info(str(Error))
             else:
-                print(e)
+                print(Error)
             pass
     if os.path.exists("xp0e.zip"):
         pass
@@ -118,39 +102,39 @@ if ᴠʟᴋʏʀᴇi is not None:
             ]
             for f in files:
                 os.remove(f)
-        except Exception as e:
+        except Exception as Error:
             if ᴠʟᴋʏʀᴇ == "HEROKU":
-                LOGS.info(str(e))
+                LOGS.info(str(Error))
             else:
-                print(e)
+                print(Error)
             pass
-    except Exception as e:
+    except Exception as Error:
         if ᴠʟᴋʏʀᴇ == "HEROKU":
-            LOGS.info(str(e))
+            LOGS.info(str(Error))
         else:
-            print(e)
+            print(Error)
         pass
     
     if os.path.isfile("xp0e.py"):
         try:
             кгץкภչr.encryptFile("xp0e.py", "xp0e.aes", 𝖈𝖔𝖗𝖑𝖊𝖝, BFS)
             os.remove("xp0e.py")
-        except Exception as e:
+        except Exception as Error:
             if ᴠʟᴋʏʀᴇ == "HEROKU":
-                LOGS.info(str(e))
+                LOGS.info(str(Error))
             else:
-                print(e)
+                print(Error)
         pass
     else:
         pass
 
     try:
         кгץкภչr.decryptFile("xp0e.aes", "xp0edoc.py", 𝖈𝖔𝖗𝖑𝖊𝖝, BFS)
-    except Exception as e:
+    except Exception as Error:
         if ᴠʟᴋʏʀᴇ == "HEROKU":
-            LOGS.info(str(e))
+            LOGS.info(str(Error))
         else:
-            print(e)
+            print(Error)
         pass
 
     try:
@@ -165,11 +149,11 @@ if ᴠʟᴋʏʀᴇi is not None:
         ]
         for f in files:
             os.remove(f)
-    except Exception as e:
+    except Exception as Error:
         if ᴠʟᴋʏʀᴇ == "HEROKU":
-            LOGS.info(str(e))
+            LOGS.info(str(Error))
         else:
-            print(e)
+            print(Error)
         pass
     
     try:
@@ -179,6 +163,14 @@ if ᴠʟᴋʏʀᴇi is not None:
             os.remove("xp0e.aes")
             os.remove("xp0edoc.py")
             shutil.rmtree("__pycache__")
+            vlkpy = 𝖛.cmd.Git("./")
+            vlkpy.pull()
+            os.system("clear")
+            if ᴠʟᴋʏʀᴇ == "HEROKU":
+                LOGS.info(str("🐍𝐏𝐘𝐓𝐇𝐎𝐍: git pull done using gitPython!"))
+            else:
+                cprint("🐍𝐏𝐘𝐓𝐇𝐎𝐍: git pull done using gitPython!")
+            pass
             os.system('node --no-warnings 𝖈𝖆𝖗𝖆𝖒𝖊𝖑🕯️ꜱʏɴᴄ.js')
         else:
             os.remove("xp0e.zip")
@@ -188,12 +180,12 @@ if ᴠʟᴋʏʀᴇi is not None:
             print("❌❌❌     Wrong кгץкภչ code   ❌❌❌")
             exit
             pass
-    except Exception as e:
+    except Exception as Error:
         os.system("clear")
         if ᴠʟᴋʏʀᴇ == "HEROKU":
-            LOGS.info(str(e))
+            LOGS.info(str(Error))
         else:
-            print(e)
+            print(Error)
         pass
 # |⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡| 
 #             (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!

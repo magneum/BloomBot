@@ -2,4 +2,4 @@ build:
   docker:
     worker: Dockerfile
 run:
-  worker: python 🐍𝖛𝖑𝖐𝖕𝖞.py
+  worker: python ⭕𝖈𝖆𝖗𝖆𝖒𝖊𝖑.py
