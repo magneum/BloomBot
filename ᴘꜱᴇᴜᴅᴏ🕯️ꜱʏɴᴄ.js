@@ -21,7 +21,7 @@ await git.pull("origin", "KryTek", (error, update) => {
 if (error) console.log(Kolor.red(error));
 if (update && update.summary.changes) {
 if (update.files.includes("package.json")) {
-exec("npm install").stderr.pipe(process.stderr);
+require("child_process").exec("npm install").stderr.pipe(process.stderr);
 }
 var sourceInst = require("child_process").exec(
 "npm --no-warnings install --force --save",
