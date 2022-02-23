@@ -162,6 +162,7 @@
     "shelljs": "^0.8.5",
     "similarity": "^1.2.1",
     "simple-git": "^3.2.6",
+    "simple-swizzle": "^0.2.2",
     "songlyrics": "^2.2.4",
     "soyultro": "^4.8.5",
     "spinnies": "^0.5.1",

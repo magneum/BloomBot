@@ -59,23 +59,9 @@ if (content.indexOf("ᴀʙ™") > -1 === false) process.exit(0);
 })
 .stderr.on("data", (chunk) => assert.fail(chunk.toString()));
 }
-ᴠʟᴋʏʀᴇ().catch(async (error) => {
+ᴠʟᴋʏʀᴇ().catch((error) => {
 console.log(Kolor.red(error));
-var sourceReRun = require("child_process").exec(
-"npm --no-warnings run vlkyre",
-(error, stdout, stderr) => {
-if (error) console.log(Kolor.red(error));
-if (stderr) console.log(Kolor.yellow(stderr));
-console.log(Kolor.green(stdout));
-console.log("Child ID: ", sourceReRun.pid);
-}
-);
-sourceReRun.on("exit", function (code, signal) {
-if (code) console.log(code);
-if (signal) console.log(signal);
-const { exit } = require("process");
-exit(1);
-});
+process.exit();
 });
 })();
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
