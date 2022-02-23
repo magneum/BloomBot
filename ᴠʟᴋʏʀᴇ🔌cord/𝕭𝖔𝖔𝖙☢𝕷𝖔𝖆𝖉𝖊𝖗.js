@@ -522,8 +522,9 @@ return ᴠʟᴋʏʀᴇ_Buttons.MTB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 ᴠʟᴋʏʀᴇ,
-`꧁ *@${ᴘɴᴀᴍᴇ}* ꧂
-_⚠️ 𝗨𝘀𝗶𝗻𝗴 𝗩𝗹𝗸𝘆𝗿𝗲 𝗜𝗻 𝗣𝗿𝗶𝘃𝗮𝘁𝗲 𝗜𝘀 𝗡𝗼 𝗹𝗼𝗻𝗴𝗲𝗿 𝗔𝗹𝗹𝗼𝘄𝗲𝗱!_
+`❣「 *@${ᴘɴᴀᴍᴇ}* 」❣
+
+⚠️ 𝗨𝘀𝗶𝗻𝗴 𝗩𝗹𝗸𝘆𝗿𝗲 𝗜𝗻 𝗣𝗿𝗶𝘃𝗮𝘁𝗲 𝗜𝘀 𝗡𝗼 𝗹𝗼𝗻𝗴𝗲𝗿 𝗔𝗹𝗹𝗼𝘄𝗲𝗱!
 ╔════◇🧀 𝐃𝐞𝐟𝐚𝐮𝐥𝐭 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 ║
 ║ *${ᴋᴇɪ}help:* _read all commands of Vlkyre!_
@@ -613,7 +614,8 @@ await ᴠʟᴋʏʀᴇ_Buttons.MIB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 ᴠʟᴋʏʀᴇ,
-`╔════◇🌋  𝐀𝐧𝐭𝐢𝐥𝐢𝐧𝐤 𝐓𝐫𝐢𝐠𝐠𝐞𝐫𝐞𝐝
+`
+╔════◇🌋  𝐀𝐧𝐭𝐢𝐥𝐢𝐧𝐤 𝐓𝐫𝐢𝐠𝐠𝐞𝐫𝐞𝐝
 ║
 ║⚰️ 𝗣𝘂𝗻𝗶𝘀𝗵𝗺𝗲𝗻𝘁: _You Will Be Kicked!_
 ╚════════════༻꧂`,
@@ -657,17 +659,16 @@ userHalt.PermaTimeOut - (Date.now() - userHalt.TimeOut) > 0
 let Time = ms(
 userHalt.PermaTimeOut - (Date.now() - userHalt.TimeOut)
 );
-if (Time.seconds >= 8) {
+
 return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
 ᴠʟᴋʏʀᴇ.chatId,
-`✘ @${ᴘɴᴀᴍᴇ}, *Wait For [${Time.seconds}/10]s!*`,
+`❣「 *@${ᴘɴᴀᴍᴇ}* 」❣
+✘ *Wait For [${Time.seconds}/10]s!*`,
 MessageType.text,
 {
 contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
 }
 );
-}
-return;
 }
 userHalt.PermaTimeOut = 10000;
 userHalt.TimeOut = Date.now();
@@ -712,7 +713,7 @@ if (
 !member3.includes(ʟɴᴀᴍᴇ)
 ) {
 const buttonMessage = {
-contentText: `꧁ *@${ᴘɴᴀᴍᴇ}* ꧂
+contentText: `❣「 *@${ᴘɴᴀᴍᴇ}* 」❣
 🤖𝐕𝐞𝐫𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧: You Are Not Verified!*
 
 𝐑𝐄𝐀𝐃 + 𝐃𝐎 𝐍𝐎𝐓 𝐒𝐏𝐀𝐌!
@@ -749,7 +750,7 @@ return await ᴠʟᴋʏʀᴇ_Buttons.MTB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 ᴠʟᴋʏʀᴇ,
-`꧁ *@${ᴘɴᴀᴍᴇ}* ꧂
+`❣「 *@${ᴘɴᴀᴍᴇ}* 」❣
 ❌ No Such Command In Database!`
 );
 }
@@ -765,7 +766,9 @@ await git.fetch();
 var newCommits = await git.log(["KryTek..origin/KryTek"]);
 console.log(newCommits);
 if (newCommits.total != 0) {
-require("child_process").exec("python 🐍𝖛𝖑𝖐𝖕𝖞.py").stdout.pipe(process.stdout);
+require("child_process")
+.exec("python 🐍𝖛𝖑𝖐𝖕𝖞.py")
+.stdout.pipe(process.stdout);
 try {
 try {
 var InitReset = require("child_process").exec(

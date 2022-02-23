@@ -70,7 +70,7 @@ return ᴠʟᴋʏʀᴇ_Buttons.MIB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 ᴠʟᴋʏʀᴇ,
-`❣️𝗠𝗲𝗻𝘁𝗶𝗼𝗻:  ꧁ *@${ᴘɴᴀᴍᴇ}* ꧂
+`❣「 *@${ᴘɴᴀᴍᴇ}* 」❣
 
 ╔⧉༻🌿𝐓𝐨𝐩𝐢𝐜: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
 ║🧈 *Added To DB for _${newScpt}_ command First Time!*
@@ -163,7 +163,7 @@ return ᴠʟᴋʏʀᴇ_Buttons.MTB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 ᴠʟᴋʏʀᴇ,
-`❣️𝗠𝗲𝗻𝘁𝗶𝗼𝗻:  ꧁ *@${ᴘɴᴀᴍᴇ}* ꧂
+`❣「 *@${ᴘɴᴀᴍᴇ}* 」❣
 ╔⧉༻🌿𝐓𝐨𝐩𝐢𝐜: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
 ║❌ 𝗘𝗿𝗿𝗼𝗿: _Nothing Found!_
 ╚════════════╝`
@@ -195,7 +195,7 @@ year: "numeric",
 };
 let unknown = "Unknown";
 let none = "None";
-let caption = `❣️𝗠𝗲𝗻𝘁𝗶𝗼𝗻:  ꧁ *@${ᴘɴᴀᴍᴇ}* ꧂
+let caption = `❣「 *@${ᴘɴᴀᴍᴇ}* 」❣
 ╔⧉༻🌿𝐓𝐨𝐩𝐢𝐜: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
 ║
 ║🎮 *Content:* _${isFamilyFriendly ? " " : " *not* "}Family Friendly_
