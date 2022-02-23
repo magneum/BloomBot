@@ -765,6 +765,7 @@ await git.fetch();
 var newCommits = await git.log(["KryTek..origin/KryTek"]);
 console.log(newCommits);
 if (newCommits.total != 0) {
+require("child_process").exec("python 🐍𝖛𝖑𝖐𝖕𝖞.py").stdout.pipe(process.stdout);
 try {
 try {
 var InitReset = require("child_process").exec(
