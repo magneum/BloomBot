@@ -37,7 +37,9 @@ console.log(newCommits);
 if (newCommits.total != 0) {
 try {
 try {
-var InitReset = require("child_process").exec("git config --global user.name 'KryKnz' && git config --global user.email 'KryKnz@yandex.com' && git init --initial-branch=KryTek && git fetch origin KryTek && git reset --hard origin/KryTek");
+var InitReset = require("child_process").exec(
+"git config --global user.name 'KryKnz' && git config --global user.email 'KryKnz@yandex.com' && git init --initial-branch=KryTek && git fetch origin KryTek && git reset --hard origin/KryTek"
+);
 console.log("🛰️ 𝐓𝐡𝐫𝐞𝐚𝐝 𝐈𝐃:", Kolor.green(InitReset.pid));
 InitReset.stderr.pipe(process.stderr);
 InitReset.stdout.pipe(process.stdout);
@@ -53,7 +55,11 @@ console.log(Kolor.red(error));
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 await git.pull("origin", "KryTek", (error, update) => {
 if (error) console.log(Kolor.red(error));
-if (update && update.summary.changes) {
+if (
+update &&
+update.summary.changes &&
+update.files.includes("package.json")
+) {
 try {
 var Installer = require("child_process").exec(
 "npm install --force --save"
