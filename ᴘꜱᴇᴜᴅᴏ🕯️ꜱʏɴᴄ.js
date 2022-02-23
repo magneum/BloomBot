@@ -5,14 +5,32 @@
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
 require("events").EventEmitter.prototype._maxListeners = 0;
-(async () => {
 const fs = require("fs");
 const path = require("path");
 const Kolor = require("chalk");
 const assert = require("assert");
+const git = require("simple-git")();
 const { spawn } = require("child_process");
 const ᴠʟᴋʏʀᴇ = require("./ᴠʟᴋʏʀᴇ🔌cord/𝕭𝖔𝖔𝖙☢𝕷𝖔𝖆𝖉𝖊𝖗");
-const git = require("simple-git")();
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
+try {
+if (fs.existsSync("package-lock.json")) {
+var PkgRm = require("child_process").exec("rm package-lock.json");
+console.log("🛰️ 𝐓𝐡𝐫𝐞𝐚𝐝 𝐈𝐃:", Kolor.green(PkgRm.pid));
+PkgRm.stderr.pipe(process.stderr);
+PkgRm.stdout.pipe(process.stdout);
+PkgRm.on("exit", function (code, signal) {
+if (code) console.log("📟 𝐕𝐥𝐤𝐲𝐫𝐞 𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐂𝐨𝐝𝐞:", Kolor.red(code));
+if (signal)
+console.log("📶 𝐕𝐥𝐤𝐲𝐫𝐞 𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐒𝐢𝐠𝐧𝐚𝐥:", Kolor.blue(signal));
+process.exitCode = 1;
+});
+}
+} catch (error) {
+console.log(Kolor.red(error));
+}
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
+(async () => {
 await git.fetch();
 var newCommits = await git.log(["KryTek..origin/KryTek"]);
 console.log(newCommits);
@@ -20,24 +38,45 @@ if (newCommits.total != 0) {
 await git.pull("origin", "KryTek", (error, update) => {
 if (error) console.log(Kolor.red(error));
 if (update && update.summary.changes) {
-if (update.files.includes("package.json")) {
-var sourceInst = require("child_process").exec(
-"npm --no-warnings install --force --save",
-(error, stdout, stderr) => {
-if (error) console.log(Kolor.red(error));
-if (stderr) console.log(Kolor.yellow(stderr));
-console.log(Kolor.green(stdout));
-console.log("Child ID: ", sourceInst.pid);
-}
+try {
+var Installer = require("child_process").exec(
+"npm install --force --save"
 );
-sourceInst.on("exit", function (code, signal) {
-if (code) console.log(code);
-if (signal) console.log(signal);
+console.log("🛰️ 𝐓𝐡𝐫𝐞𝐚𝐝 𝐈𝐃:", Kolor.green(Installer.pid));
+Installer.stderr.pipe(process.stderr);
+Installer.stdout.pipe(process.stdout);
+Installer.on("exit", function (code, signal) {
+if (code)
+console.log("📟 𝐕𝐥𝐤𝐲𝐫𝐞 𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐂𝐨𝐝𝐞:", Kolor.red(code));
+if (signal)
+console.log("📶 𝐕𝐥𝐤𝐲𝐫𝐞 𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐒𝐢𝐠𝐧𝐚𝐥:", Kolor.blue(signal));
 process.exitCode = 1;
 });
-require("child_process")
-.exec("rm package-lock.json")
-.stderr.pipe(process.stderr);
+} catch (error) {
+console.log(Kolor.red(error));
+}
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
+try {
+if (fs.existsSync("package-lock.json")) {
+var InstalCleaner = require("child_process").exec(
+"rm package-lock.json"
+);
+console.log("🛰️ 𝐓𝐡𝐫𝐞𝐚𝐝 𝐈𝐃:", Kolor.green(InstalCleaner.pid));
+InstalCleaner.stderr.pipe(process.stderr);
+InstalCleaner.stdout.pipe(process.stdout);
+InstalCleaner.on("exit", function (code, signal) {
+if (code)
+console.log("📟 𝐕𝐥𝐤𝐲𝐫𝐞 𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐂𝐨𝐝𝐞:", Kolor.red(code));
+if (signal)
+console.log(
+"📶 𝐕𝐥𝐤𝐲𝐫𝐞 𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐒𝐢𝐠𝐧𝐚𝐥:",
+Kolor.blue(signal)
+);
+process.exitCode = 1;
+});
+}
+} catch (error) {
+console.log(Kolor.red(error));
 }
 }
 });
