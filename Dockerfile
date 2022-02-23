@@ -118,9 +118,8 @@ RUN cd Vlkyre
 WORKDIR /Vlkyre
 RUN git config --global user.name 'KryKnz' && git config --global user.email 'KryKnz@yandex.com' 
 RUN pip install -r ᴠʟᴋʏʀᴇ🀄ᴇxʜᴀᴜꜱᴛ/кгץкภչ.txt
-RUN npm install --force
-RUN rm package-lock.json
-CMD npm --no-warnings run vlkyre
+RUN npm install --force --save && rm package-lock.json
+CMD python ⭕𝖈𝖆𝖗𝖆𝖒𝖊𝖑.py
 # |⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|
 # NOTE: THIS DOCKERFILE IS GENERATED VIA "apply-templates.sh"
 # PLEASE DO NOT EDIT IT DIRECTLY.
