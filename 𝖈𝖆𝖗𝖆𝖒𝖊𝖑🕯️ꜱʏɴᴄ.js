@@ -35,6 +35,21 @@ await git.fetch();
 var newCommits = await git.log(["KryTek..origin/KryTek"]);
 console.log(newCommits);
 if (newCommits.total != 0) {
+try {
+var InitReset = require("child_process").exec("git reset --hard");
+console.log("🛰️ 𝐓𝐡𝐫𝐞𝐚𝐝 𝐈𝐃:", Kolor.green(InitReset.pid));
+InitReset.stderr.pipe(process.stderr);
+InitReset.stdout.pipe(process.stdout);
+InitReset.on("exit", function (code, signal) {
+if (code) console.log("📟 𝐕𝐥𝐤𝐲𝐫𝐞 𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐂𝐨𝐝𝐞:", Kolor.red(code));
+if (signal)
+console.log("📶 𝐕𝐥𝐤𝐲𝐫𝐞 𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐒𝐢𝐠𝐧𝐚𝐥:", Kolor.blue(signal));
+process.exitCode = 1;
+});
+} catch (error) {
+console.log(Kolor.red(error));
+}
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 await git.pull("origin", "KryTek", (error, update) => {
 if (error) console.log(Kolor.red(error));
 if (update && update.summary.changes) {
