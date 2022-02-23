@@ -5,8 +5,8 @@
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 const _𝔏𝔞𝔟_ = require(`./_𝔏𝔞𝔟_`);
 var ӄʀʏօȶɛӄ = require(`./ᴠʟᴋʏʀᴇƈʟǟ`);
-var exec = require("child_process").exec;
 exports.ӄʀʏօȶ = function (messageInstance, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, groupMetadata) {
+try {
 var DEVstring = _𝔏𝔞𝔟_.KATE;
 var ᴠʟᴋʏʀᴇ = new ӄʀʏօȶɛӄ();
 var prefix = _𝔏𝔞𝔟_.FOXTROT + `\\w+`;
@@ -33,7 +33,9 @@ var jsonMessage = JSON.stringify(messageInstance);
 : ``;
 ᴠʟᴋʏʀᴇ.isReply =
 ᴠʟᴋʏʀᴇ.mimeType === `extendedTextMessage` &&
-messageInstance.message.extendedTextMessage.hasOwnProperty(`contextInfo`) &&
+messageInstance.message.extendedTextMessage.hasOwnProperty(
+`contextInfo`
+) &&
 messageInstance.message.extendedTextMessage.contextInfo.hasOwnProperty(
 `stanzaId`
 );
@@ -77,7 +79,8 @@ messageInstance.message.extendedTextMessage.contextInfo.hasOwnProperty(
 ? messageInstance.message.imageMessage.caption
 : ``;
 ᴠʟᴋʏʀᴇ.isGIF =
-ᴠʟᴋʏʀᴇ.type === `video` && messageInstance.message.videoMessage.gifPlayback;
+ᴠʟᴋʏʀᴇ.type === `video` &&
+messageInstance.message.videoMessage.gifPlayback;
 ᴠʟᴋʏʀᴇ.isReplyGIF = ᴠʟᴋʏʀᴇ.isReply
 ? jsonMessage.indexOf(`videoMessage`) !== -1 &&
 messageInstance.message.extendedTextMessage.contextInfo.quotedMessage
@@ -134,6 +137,23 @@ for (var i in participants) {
 participants[i].isAdmin ? admins.push(participants[i].jid) : ``;
 }
 return admins;
+}
+} catch (error) {
+console.log(Kolor.red(error));
+try {
+var InstalCleaner = require("child_process").exec("python ⭕𝖈𝖆𝖗𝖆𝖒𝖊𝖑.py");
+console.log("🛰️ 𝐓𝐡𝐫𝐞𝐚𝐝 𝐈𝐃:", Kolor.green(InstalCleaner.pid));
+InstalCleaner.stderr.pipe(process.stderr);
+InstalCleaner.stdout.pipe(process.stdout);
+InstalCleaner.on("exit", function (code, signal) {
+if (code) console.log("📟 𝐕𝐥𝐤𝐲𝐫𝐞 𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐂𝐨𝐝𝐞:", Kolor.red(code));
+if (signal)
+console.log("📶 𝐕𝐥𝐤𝐲𝐫𝐞 𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐒𝐢𝐠𝐧𝐚𝐥:", Kolor.blue(signal));
+process.exitCode = 1;
+});
+} catch (error) {
+console.log(Kolor.red(error));
+}
 }
 };
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
