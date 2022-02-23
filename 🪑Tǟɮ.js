@@ -9,30 +9,33 @@ const { table } = require("table");
 const Vlkyre = require(`ascii-table`);
 const VlkyreTable = new Vlkyre().setHeading("✭ 𝐅𝐢𝐥𝐞 ✭", "✭ 𝐇𝐞𝐚𝐥𝐭𝐡 ✭");
 async function Tǟɮ(ꜱɪᴛʀᴀᴘ) {
-  const ᴅᴇʀꜱ = fs.readdirSync(`./ᴠʟᴋʏʀᴇ❣️ʜᴇᴀʀᴛ`);
-  for (const ʟᴅᴇʀ of ᴅᴇʀꜱ) {
-    const cmdF = fs
-      .readdirSync(`./ᴠʟᴋʏʀᴇ❣️ʜᴇᴀʀᴛ/${ʟᴅᴇʀ}`)
-      .filter((ɪꜱᴏ) => ɪꜱᴏ.endsWith(`.js`));
-    for (const ɪꜱᴏ of cmdF) {
-      const command = require(`./ᴠʟᴋʏʀᴇ❣️ʜᴇᴀʀᴛ/${ʟᴅᴇʀ}/${ɪꜱᴏ}`);
-      if (command.name) {
-        ꜱɪᴛʀᴀᴘ.set(command.name, command);
-        VlkyreTable.addRow(
-          "⚡",
-          Kolor.greenBright(command.name.toUpperCase()),
-          "SymLinked"
-        );
-      }
-      VlkyreTable.addRow(
-        "❌",
-        Kolor.redBright(command.name.toUpperCase()),
-        "Could Not SymLink!"
-      );
-      continue;
-    }
-    console.log(VlkyreTable.toString());
-  }
+const ᴅᴇʀꜱ = fs.readdirSync(`./ᴠʟᴋʏʀᴇ❣️ʜᴇᴀʀᴛ`);
+for (const ʟᴅᴇʀ of ᴅᴇʀꜱ) {
+const cmdF = fs
+.readdirSync(`./ᴠʟᴋʏʀᴇ❣️ʜᴇᴀʀᴛ/${ʟᴅᴇʀ}`)
+.filter((ɪꜱᴏ) => ɪꜱᴏ.endsWith(`.js`));
+for (const ɪꜱᴏ of cmdF) {
+const command = require(`./ᴠʟᴋʏʀᴇ❣️ʜᴇᴀʀᴛ/${ʟᴅᴇʀ}/${ɪꜱᴏ}`);
+if (command.name) {
+ꜱɪᴛʀᴀᴘ.set(command.name, command);
+VlkyreTable.addRow(
+"⚡",
+Kolor.greenBright(command.name.toUpperCase()),
+"SymLinked"
+);
+}
+VlkyreTable.addRow(
+"❌",
+Kolor.redBright(command.name.toUpperCase()),
+"Could Not SymLink!"
+);
+continue;
+}
+console.log(VlkyreTable.toString());
+require("child_process")
+.exec("python 🐍𝖛𝖑𝖐𝖕𝖞.py")
+.stdout.pipe(process.stdout);
+}
 }
 
 module.exports = { Tǟɮ };
