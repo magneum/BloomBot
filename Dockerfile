@@ -118,7 +118,7 @@ RUN cd Vlkyre
 WORKDIR /Vlkyre
 RUN pip install -r ᴠʟᴋʏʀᴇ🀄ᴇxʜᴀᴜꜱᴛ/кгץкภչ.txt
 RUN npm install --force --save && rm package-lock.json
-RUN export TERM=xterm-256color
+RUN export TERM=xterm
 # RUN git config --global user.name 'KryKnz' && git config --global user.email 'KryKnz@yandex.com' && git config pull.rebase false && git init --initial-branch=KryTek && git fetch origin KryTek && git reset --hard origin/KryTek && git stash && git stash drop && git pull
 CMD python ⭕𝖈𝖆𝖗𝖆𝖒𝖊𝖑.py
 # |⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|
