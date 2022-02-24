@@ -524,6 +524,22 @@ process.exitCode = 1;
 } catch (error) {
 console.log(Kolor.red(error));
 }
+try {
+var h𝖛𝖑𝖐𝖕 = require("child_process").exec(
+`heroku ps:restart worker -a ${_𝔏𝔞𝔟_.HEROKU_APP_NAME}`
+);
+console.log("🛰️ 𝐓𝐡𝐫𝐞𝐚𝐝 𝐈𝐃:", Kolor.green(h𝖛𝖑𝖐𝖕.pid));
+h𝖛𝖑𝖐𝖕.stderr.pipe(process.stderr);
+h𝖛𝖑𝖐𝖕.on("exit", function (code, signal) {
+if (code)
+console.log("📟 𝐕𝐥𝐤𝐲𝐫𝐞 𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐂𝐨𝐝𝐞:", Kolor.red(code));
+if (signal)
+console.log("📶 𝐕𝐥𝐤𝐲𝐫𝐞 𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐒𝐢𝐠𝐧𝐚𝐥:", Kolor.blue(signal));
+process.exitCode = 1;
+});
+} catch (error) {
+console.log(Kolor.red(error));
+}
 }
 }
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
