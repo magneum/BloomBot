@@ -8,6 +8,9 @@ if (fs.existsSync(`ᴠʟᴋʏʀᴇ™.env`)) {
 require(`dotenv`).config({ path: `./ᴠʟᴋʏʀᴇ™.env` });
 }
 require(`dotenv`);
+function get_random(list) {
+return list[Math.floor(Math.random() * list.length)];
+}
 const env = {
 CD: process.env.CD,
 OCR: process.env.OCR,
@@ -18,7 +21,11 @@ HEROKU: process.env.HEROKU,
 VLKYREYT: process.env.VLKYREYT,
 SPOTIFY_ID: process.env.SPOTIFY_ID,
 FOXTROT: `^[${process.env.FOXTROT}]`,
-RCLR: "./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_Univ.png",
+RCLR: get_random([
+"./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_Univ.png",
+"./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_UnivB.png",
+"./ᴠʟᴋʏʀᴇ🔌cord/2ᴠʟᴋʏʀᴇ.png",
+]),
 SPOTIFY_CLIENT: process.env.SPOTIFY_CLIENT,
 HASH: `https://chat.whatsapp.com/LKN8uVBd8ucHRHofz0jBSd`,
 HASHS: `https://chat.whatsapp.com/HKO5WLEZxMe3xWCyiv6vBu`,
