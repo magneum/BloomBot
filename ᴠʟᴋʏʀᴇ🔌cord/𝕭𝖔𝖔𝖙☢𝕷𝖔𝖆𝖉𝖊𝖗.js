@@ -492,10 +492,10 @@ chat,
 ║🛰️ 𝐋𝐚𝐭𝐞𝐧𝐜𝐲: _${Ping}ms_
 ║📅 𝐃𝐚𝐭𝐞: _${Clock}_
 ║⚙️ 𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _Old: ${vers.verold} | New: ${vers.vers}_
-╚◇╗
-╔◇╝  🧀𝐅𝐮𝐥𝐥 𝐉𝐬𝐨𝐧 𝐂𝐡𝐚𝐧𝐠𝐞𝐋𝐨𝐠 
-║🍮 𝗚𝗶𝘁𝗛𝘂𝗯: _https://github.com/Kryknz/Vlkyre/tree/KryTek_
 ╚════════════╝
+
+⧉ 🧀𝐅𝐮𝐥𝐥 𝐉𝐬𝐨𝐧 𝐂𝐡𝐚𝐧𝐠𝐞𝐋𝐨𝐠🧀 ⧉
+🍮 𝗚𝗶𝘁𝗛𝘂𝗯: _https://github.com/Kryknz/Vlkyre/tree/KryTek_
 ${JSON.stringify(newCommits)}`
 );
 // var 𝖛𝖑𝖐𝖕 = require("child_process").exec(
