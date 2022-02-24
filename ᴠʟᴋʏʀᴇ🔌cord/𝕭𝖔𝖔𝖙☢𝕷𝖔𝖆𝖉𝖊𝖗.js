@@ -487,6 +487,15 @@ const groupMetadata = sender.endsWith(`@g.us`)
 ? await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.groupMetadata(chat.key.remoteJid)
 : ``;
 var ᴠʟᴋʏʀᴇ = ӄʀʏօȶɛӄ.ӄʀʏօȶ(chat, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, groupMetadata);
+const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
+let ᴘɴᴀᴍᴇ;
+try {
+ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/\@s.whatsapp.net/g, "").replace(/\D/g, "");
+require("child_process").exec("hash -r").stderr.pipe(process.stderr);
+} catch {
+ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/\D/g, "");
+require("child_process").exec("hash -r").stderr.pipe(process.stderr);
+}
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 if (ᴠʟᴋʏʀᴇ.isCmd) {
 await git.fetch();
@@ -543,15 +552,6 @@ console.log(Kolor.red(error));
 }
 }
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
-let ᴘɴᴀᴍᴇ;
-try {
-ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/\@s.whatsapp.net/g, "").replace(/\D/g, "");
-require("child_process").exec("hash -r").stderr.pipe(process.stderr);
-} catch {
-ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/\D/g, "");
-require("child_process").exec("hash -r").stderr.pipe(process.stderr);
-}
 await Halt.findOne(
 {
 ID: ʟɴᴀᴍᴇ,
