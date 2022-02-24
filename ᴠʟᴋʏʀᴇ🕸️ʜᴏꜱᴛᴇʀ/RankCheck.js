@@ -119,7 +119,7 @@ await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 ᴠʟᴋʏʀᴇ.chatId,
 {
 contentText: `✨@${ᴘɴᴀᴍᴇ}, Auto-Leveling Has Started! `,
-footerText: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴘʏᴛʜᴏɴ𓆘 ☊ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+footerText: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™\nᴘʏᴛʜᴏɴ𓆘+☊ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}rank`,
@@ -278,7 +278,7 @@ await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 ᴠʟᴋʏʀᴇ.chatId,
 {
 contentText: `✨𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬 @${ᴘɴᴀᴍᴇ}, _𝐋𝐞𝐯𝐞𝐥𝐞𝐝-𝐔𝐏!_`,
-footerText: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴘʏᴛʜᴏɴ𓆘 ☊ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+footerText: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™\nᴘʏᴛʜᴏɴ𓆘+☊ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}rank`,
@@ -318,7 +318,7 @@ await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 ᴠʟᴋʏʀᴇ.chatId,
 {
 contentText: `✨𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬 @${ᴘɴᴀᴍᴇ}, _𝐋𝐞𝐯𝐞𝐥𝐞𝐝-𝐔𝐏!_`,
-footerText: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴘʏᴛʜᴏɴ𓆘 ☊ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+footerText: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™\nᴘʏᴛʜᴏɴ𓆘+☊ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}rank`,

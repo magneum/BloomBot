@@ -81,7 +81,7 @@ MessageType.video,
 {
 mimetype: `video/gif`,
 quoted: chat,
-caption: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴘʏᴛʜᴏɴ𓆘 ☊ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™
+caption: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™\nᴘʏᴛʜᴏɴ𓆘+☊ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ
 
 
 ╔⧉༻🌿𝐓𝐨𝐩𝐢𝐜: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
@@ -140,7 +140,7 @@ MessageType.video,
 {
 mimetype: `video/gif`,
 quoted: chat,
-caption: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴘʏᴛʜᴏɴ𓆘 ☊ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™
+caption: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™\nᴘʏᴛʜᴏɴ𓆘+☊ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ
 
 
 ╔⧉༻🌿𝐓𝐨𝐩𝐢𝐜: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_

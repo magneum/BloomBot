@@ -27,7 +27,14 @@ async handle(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, chat, ᴠʟᴋʏʀᴇ, Needs,
 try {
 const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
 const ᴅꜰɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.commandName;
-const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/\D/g, "");
+let ᴘɴᴀᴍᴇ;
+try{
+ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/\@s.whatsapp.net/g, "").replace(/\D/g, "");
+// require("child_process").exec("hash -r").stderr.pipe(process.stderr);
+} catch {
+ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/\D/g, "");
+// require("child_process").exec("hash -r").stderr.pipe(process.stderr);
+}
 const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
 const AniLink = ᴠʟᴋʏʀᴇTenorMaker(ꜰɪɴᴀᴍᴇ.toLowerCase());
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
@@ -73,7 +80,7 @@ caption: `
 ║🌭 𝐓𝐨: @${TagPerson}
 ╚════════════╝
 
-×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴘʏᴛʜᴏɴ𓆘 ☊ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™\nᴘʏᴛʜᴏɴ𓆘+☊ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ`,
 contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ, TagMention] },
 }
 )
@@ -108,7 +115,7 @@ caption: `
 ║🍕 𝐅𝐨𝐫: @${ᴘɴᴀᴍᴇ}
 ╚════════════╝
 
-×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴘʏᴛʜᴏɴ𓆘 ☊ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™\nᴘʏᴛʜᴏɴ𓆘+☊ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ`,
 contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
 }
 )
@@ -141,7 +148,7 @@ caption: `
 ║🌭 𝐓𝐨: @${քɛʀֆօռɢօȶռʊʍ}
 ╚════════════╝
 
-×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴘʏᴛʜᴏɴ𓆘 ☊ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™\nᴘʏᴛʜᴏɴ𓆘+☊ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ`,
 contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ, Receiver] },
 }
 )
@@ -174,7 +181,7 @@ caption: `
 ║🍕 𝐅𝐨𝐫: @${ᴘɴᴀᴍᴇ}
 ╚════════════╝
 
-×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴘʏᴛʜᴏɴ𓆘 ☊ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™\nᴘʏᴛʜᴏɴ𓆘+☊ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ`,
 contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
 }
 )
