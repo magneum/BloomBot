@@ -3,6 +3,8 @@
 # |⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|
 try:
     import subprocess
+    subprocess.run(["git", "stash"], check=True, stdout=subprocess.PIPE).stdout
+    subprocess.run(["git", "stash", "drop"], check=True, stdout=subprocess.PIPE).stdout
     subprocess.run(["git", "pull"], check=True, stdout=subprocess.PIPE).stdout
     print("🐍𝐏𝐘𝐓𝐇𝐎𝐍: git sync done!")
     # subprocess.run(["python", "⭕𝖈𝖆𝖗𝖆𝖒𝖊𝖑.py"], check=True, stdout=subprocess.PIPE).stdout
