@@ -63,12 +63,10 @@ try {
 const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
 const ᴅꜰɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.commandName;
 let ᴘɴᴀᴍᴇ;
-try{
+try {
 ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/\@s.whatsapp.net/g, "").replace(/\D/g, "");
-// require("child_process").exec("hash -r").stderr.pipe(process.stderr);
 } catch {
 ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/\D/g, "");
-// require("child_process").exec("hash -r").stderr.pipe(process.stderr);
 }
 const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
 const MoneyRandom = Math.floor(Math.random() * (2000 - 1500 + 1)) + 1500;

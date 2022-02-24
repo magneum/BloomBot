@@ -29,12 +29,10 @@ try {
 const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
 var ᴅꜰɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.commandName;
 let ᴘɴᴀᴍᴇ;
-try{
+try {
 ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/\@s.whatsapp.net/g, "").replace(/\D/g, "");
-// require("child_process").exec("hash -r").stderr.pipe(process.stderr);
 } catch {
 ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/\D/g, "");
-// require("child_process").exec("hash -r").stderr.pipe(process.stderr);
 }
 const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
 if (Needs.length > 0 && Needs[0].startsWith("@")) {
