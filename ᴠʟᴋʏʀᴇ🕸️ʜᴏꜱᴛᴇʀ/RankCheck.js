@@ -40,7 +40,6 @@ var expFile = `./ᴠʟᴋʏʀᴇ🀄ᴇxʜᴀᴜꜱᴛ/${Date.now()}r${chat.key.
 const randomAmountOfXp = Math.floor(Math.random() * 29) + 1;
 const user = await Levels.fetch(ʟɴᴀᴍᴇ, ᴠʟᴋʏʀᴇ.chatId, true);
 if (!user) await Levels.createUser(ʟɴᴀᴍᴇ, ᴠʟᴋʏʀᴇ.chatId);
-console.log(user);
 const hasLeveledUp = await Levels.appendXp(
 ʟɴᴀᴍᴇ,
 ᴠʟᴋʏʀᴇ.chatId,
@@ -48,6 +47,21 @@ randomAmountOfXp
 );
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 if (hasLeveledUp) {
+try {
+var ResGot = await fetch(
+global.API("https://wall.alphacoders.com/api2.0", "/get.php", {
+auth: "3e7756c85df54b78f934a284c11abe4e",
+method: "search",
+term: "anime landscape",
+})
+);
+var Bson = await ResGot.json();
+var ImgBson =
+Bson.wallpapers[Math.floor(Math.random() * Bson.wallpapers.length)];
+Img = ImgBson.url_image;
+} catch {
+Img = "https://i.postimg.cc/Kc65RLnX/Full.png";
+}
 const rank = new canvacord.Rank()
 .setAvatar(𝕻𝕻𝖑𝖊𝖙𝖊𝖗)
 .setCurrentXP(user.xp)
@@ -55,6 +69,7 @@ const rank = new canvacord.Rank()
 .setRank(user.position)
 .setLevel(user.level)
 .setStatus("online")
+.setBackground("IMAGE", Img)
 .setProgressBar(color, "COLOR")
 .setUsername("Auto Ranker!")
 .setDiscriminator(աɦօֆɛ);
