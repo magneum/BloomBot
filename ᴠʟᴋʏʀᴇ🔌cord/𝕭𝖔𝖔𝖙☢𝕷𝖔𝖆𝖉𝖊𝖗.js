@@ -475,6 +475,7 @@ require("child_process").exec("hash -r").stderr.pipe(process.stderr);
 if (ᴠʟᴋʏʀᴇ.isCmd) {
 await git.fetch();
 var newCommits = await git.log(["KryTek..origin/KryTek"]);
+console.log(newCommits);
 if (newCommits.total != 0) {
 try {
 await ᴠʟᴋʏʀᴇ_Buttons.MTB(
@@ -494,7 +495,7 @@ chat,
 ╚════════════╝
 
 
-🍮𝐅𝐮𝐥𝐥 𝐂𝐡𝐚𝐧𝐠𝐥𝐨𝐠🧀
+╔⧉ 🍮𝐅𝐮𝐥𝐥 𝐉𝐬𝐨𝐧 𝐂𝐡𝐚𝐧𝐠𝐞𝐋𝐨𝐠🧀 ⧉╗
 ${JSON.stringify(newCommits)}`
 );
 // var 𝖛𝖑𝖐𝖕 = require("child_process").exec(
