@@ -165,14 +165,7 @@ if ᴠʟᴋʏʀᴇi is not None:
             shutil.rmtree("__pycache__")
             vlkpy = 𝖛.cmd.Git("./")
             vlkpy.pull()
-            os.system("clear")
-            try:
-                subprocess.run(["python", "🐍𝖛𝖑𝖐𝖕𝖞.py"], check=True, stdout=subprocess.PIPE).stdout
-            except Exception as Error:
-                if ᴠʟᴋʏʀᴇ == "HEROKU":
-                    LOGS.info(str(Error))
-                else:
-                    cprint(Error, "red")         
+            os.system("clear")   
             os.system('node --no-warnings 𝖈𝖆𝖗𝖆𝖒𝖊𝖑🕯️ꜱʏɴᴄ.js')
         else:
             os.remove("xp0e.zip")

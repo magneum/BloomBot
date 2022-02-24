@@ -493,7 +493,7 @@ await git.fetch();
 var newCommits = await git.log(["KryTek..origin/KryTek"]);
 if (newCommits.total != 0) {
 try {
-var 𝖛𝖑𝖐𝖕 = require("child_process").exec("python 🐍𝖛𝖑𝖐𝖕𝖞.py");
+var 𝖛𝖑𝖐𝖕 = require("child_process").exec("python ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/🐍𝖛𝖑𝖐𝖕𝖞.py");
 console.log("🛰️ 𝐓𝐡𝐫𝐞𝐚𝐝 𝐈𝐃:", Kolor.green(𝖛𝖑𝖐𝖕.pid));
 𝖛𝖑𝖐𝖕.stderr.pipe(process.stderr);
 𝖛𝖑𝖐𝖕.stdout.pipe(process.stdout);
