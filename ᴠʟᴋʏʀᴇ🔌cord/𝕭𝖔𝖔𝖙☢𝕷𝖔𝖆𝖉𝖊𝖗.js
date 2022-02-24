@@ -497,19 +497,19 @@ chat,
 🍮𝐅𝐮𝐥𝐥 𝐂𝐡𝐚𝐧𝐠𝐥𝐨𝐠🧀
 ${JSON.stringify(newCommits)}`
 );
-var 𝖛𝖑𝖐𝖕 = require("child_process").exec(
-"python ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/🐍𝖛𝖑𝖐𝖕𝖞.py"
-);
-console.log("🛰️ 𝐓𝐡𝐫𝐞𝐚𝐝 𝐈𝐃:", Kolor.green(𝖛𝖑𝖐𝖕.pid));
-𝖛𝖑𝖐𝖕.stderr.pipe(process.stderr);
-𝖛𝖑𝖐𝖕.stdout.pipe(process.stdout);
-𝖛𝖑𝖐𝖕.on("exit", function (code, signal) {
-if (code)
-console.log("📟 𝐕𝐥𝐤𝐲𝐫𝐞 𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐂𝐨𝐝𝐞:", Kolor.red(code));
-if (signal)
-console.log("📶 𝐕𝐥𝐤𝐲𝐫𝐞 𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐒𝐢𝐠𝐧𝐚𝐥:", Kolor.blue(signal));
-process.exitCode = 1;
-});
+// var 𝖛𝖑𝖐𝖕 = require("child_process").exec(
+// "python ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/🐍𝖛𝖑𝖐𝖕𝖞.py"
+// );
+// console.log("🛰️ 𝐓𝐡𝐫𝐞𝐚𝐝 𝐈𝐃:", Kolor.green(𝖛𝖑𝖐𝖕.pid));
+// 𝖛𝖑𝖐𝖕.stderr.pipe(process.stderr);
+// 𝖛𝖑𝖐𝖕.stdout.pipe(process.stdout);
+// 𝖛𝖑𝖐𝖕.on("exit", function (code, signal) {
+// if (code)
+// console.log("📟 𝐕𝐥𝐤𝐲𝐫𝐞 𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐂𝐨𝐝𝐞:", Kolor.red(code));
+// if (signal)
+// console.log("📶 𝐕𝐥𝐤𝐲𝐫𝐞 𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐒𝐢𝐠𝐧𝐚𝐥:", Kolor.blue(signal));
+// process.exitCode = 1;
+// });
 } catch (error) {
 console.log(Kolor.red(error));
 } finally {
