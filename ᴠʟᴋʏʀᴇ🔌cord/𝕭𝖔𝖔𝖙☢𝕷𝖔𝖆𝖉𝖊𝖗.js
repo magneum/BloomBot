@@ -495,8 +495,6 @@ chat,
 ╔⧉༻ 🧀𝐅𝐮𝐥𝐥 𝐉𝐬𝐨𝐧 𝐂𝐡𝐚𝐧𝐠𝐞𝐋𝐨𝐠
 ║🍮 𝗚𝗶𝘁𝗛𝘂𝗯: _https://github.com/Kryknz/Vlkyre/tree/KryTek_
 ║🔥 𝗡𝗲𝘄 𝗖𝗼𝗺𝗺𝗶𝘁𝘀: _${newCommits.total}_
-║✒️ 𝗔𝘂𝘁𝗵𝗼𝗿: _${newCommits.latest.author_name}_
-║📧 𝗘𝗺𝗮𝗶𝗹: _${newCommits.latest.author_email}_
 ║#️⃣ 𝗛𝗮𝘀𝗵: _${newCommits.latest.hash}_
 ║📅 𝗗𝗮𝘁𝗲: _${newCommits.latest.date}_
 ║📜 𝗠𝗲𝘀𝘀𝗮𝗴𝗲: _${newCommits.latest.message}_
