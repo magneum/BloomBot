@@ -491,8 +491,8 @@ chat,
 ║⚙️ 𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _Old: ${vers.verold} | New: ${vers.vers}_
 ╚════════════╝
 
-╔⧉༻ 🧀𝐅𝐮𝐥𝐥 𝐉𝐬𝐨𝐧 𝐂𝐡𝐚𝐧𝐠𝐞𝐋𝐨𝐠
-║🍮 𝗚𝗶𝘁𝗛𝘂𝗯: _https://github.com/Kryknz/Vlkyre/tree/KryTek_
+╔⧉༻ 🧀𝐅𝐮𝐥𝐥 𝐂𝐡𝐚𝐧𝐠𝐞𝐋𝐨𝐠
+║🍮 𝗚𝗶𝘁𝗛𝘂𝗯: _Github.com/Kryknz/Vlkyre/tree/KryTek_
 ║🔥 𝗡𝗲𝘄 𝗖𝗼𝗺𝗺𝗶𝘁𝘀: _${newCommits.total}_
 ║#️⃣ 𝗛𝗮𝘀𝗵: _${newCommits.latest.hash}_
 ║📅 𝗗𝗮𝘁𝗲: _${newCommits.latest.date}_
