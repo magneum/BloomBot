@@ -24,7 +24,7 @@ FOXTROT: `^[${process.env.FOXTROT}]`,
 RCLR: get_random([
 "./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_Univ.png",
 "./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_UnivB.png",
-"./ᴠʟᴋʏʀᴇ🔌cord/2ᴠʟᴋʏʀᴇ.png",
+"./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ.png",
 ]),
 SPOTIFY_CLIENT: process.env.SPOTIFY_CLIENT,
 HASH: `https://chat.whatsapp.com/LKN8uVBd8ucHRHofz0jBSd`,
