@@ -59,7 +59,7 @@ return ᴠʟᴋʏʀᴇ_Buttons.MIB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 ᴠʟᴋʏʀᴇ,
-`❣「 *@${ᴘɴᴀᴍᴇ}* 」❣
+`*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
 
 ╔⧉༻🌿𝐓𝐨𝐩𝐢𝐜: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_  
 ║🧈 *Added To DB for _${newScpt}_ command First Time!*
@@ -150,7 +150,7 @@ chat,
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 const name = Needs.join(` `);
 malScraper.getInfoFromName(name).then(async (data) => {
-const AnimeInfos = `❣「 *@${ᴘɴᴀᴍᴇ}* 」❣
+const AnimeInfos = `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
 
 ╔⧉༻🌿𝐓𝐨𝐩𝐢𝐜: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
 ║💡 𝐓𝐢𝐭𝐥𝐞: *${data.title}*

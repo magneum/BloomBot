@@ -78,7 +78,7 @@ return ᴠʟᴋʏʀᴇ_Buttons.MIB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 ᴠʟᴋʏʀᴇ,
-`❣「 *@${ᴘɴᴀᴍᴇ}* 」❣
+`*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
 
 ╔⧉༻🌿𝐓𝐨𝐩𝐢𝐜: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_  
 ║🧈 *Added To DB for _${newScpt}_ command First Time!*
