@@ -663,8 +663,7 @@ userHalt.PermaTimeOut - (Date.now() - userHalt.TimeOut)
 
 return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
 ᴠʟᴋʏʀᴇ.chatId,
-`❣「 *@${ᴘɴᴀᴍᴇ}* 」❣
-✘ *Wait For [${Time.seconds}/10]s!*`,
+`❣「 *@${ᴘɴᴀᴍᴇ}* 」❣  ✘ *Wait For [${Time.seconds}/10]s!*`,
 MessageType.text,
 {
 contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
@@ -751,8 +750,7 @@ return await ᴠʟᴋʏʀᴇ_Buttons.MTB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 ᴠʟᴋʏʀᴇ,
-`❣「 *@${ᴘɴᴀᴍᴇ}* 」❣
-❌ No Such Command In Database!`
+`❣「 *@${ᴘɴᴀᴍᴇ}* 」❣  ❌ No Such Command In Database!`
 );
 }
 console.log(chat);
