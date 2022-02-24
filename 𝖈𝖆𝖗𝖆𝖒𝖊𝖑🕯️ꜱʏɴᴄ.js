@@ -12,7 +12,6 @@ const assert = require("assert");
 const git = require("simple-git")();
 const { spawn } = require("child_process");
 const ᴠʟᴋʏʀᴇ = require("./ᴠʟᴋʏʀᴇ🔌cord/𝕭𝖔𝖔𝖙☢𝕷𝖔𝖆𝖉𝖊𝖗");
-`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 try {
 if (fs.existsSync("package-lock.json")) {
 var PkgRm = require("child_process").exec("rm package-lock.json");
@@ -29,83 +28,22 @@ process.exitCode = 1;
 } catch (error) {
 console.log(Kolor.red(error));
 }
-`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 (async () => {
 await git.fetch();
 var newCommits = await git.log(["KryTek..origin/KryTek"]);
 console.log(newCommits);
 if (newCommits.total != 0) {
 try {
-try {
-var InitReset = require("child_process").exec(
-"git config --global user.name 'KryKnz' && git config --global user.email 'KryKnz@yandex.com' && git config pull.rebase false && git init --initial-branch=KryTek && git fetch origin KryTek && git reset --hard origin/KryTek && git stash && git stash drop"
-);
-console.log("🛰️ 𝐓𝐡𝐫𝐞𝐚𝐝 𝐈𝐃:", Kolor.green(InitReset.pid));
-InitReset.stderr.pipe(process.stderr);
-InitReset.stdout.pipe(process.stdout);
-InitReset.on("exit", function (code, signal) {
+var 𝖛𝖑𝖐𝖕 = require("child_process").exec("python 🐍𝖛𝖑𝖐𝖕𝖞.py");
+console.log("🛰️ 𝐓𝐡𝐫𝐞𝐚𝐝 𝐈𝐃:", Kolor.green(𝖛𝖑𝖐𝖕.pid));
+𝖛𝖑𝖐𝖕.stderr.pipe(process.stderr);
+𝖛𝖑𝖐𝖕.stdout.pipe(process.stdout);
+𝖛𝖑𝖐𝖕.on("exit", function (code, signal) {
 if (code) console.log("📟 𝐕𝐥𝐤𝐲𝐫𝐞 𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐂𝐨𝐝𝐞:", Kolor.red(code));
 if (signal)
 console.log("📶 𝐕𝐥𝐤𝐲𝐫𝐞 𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐒𝐢𝐠𝐧𝐚𝐥:", Kolor.blue(signal));
 process.exitCode = 1;
 });
-} catch (error) {
-console.log(Kolor.red(error));
-}
-`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
-await git.pull("origin", "KryTek", (error, update) => {
-if (error) console.log(Kolor.red(error));
-if (
-update &&
-update.summary.changes &&
-update.files.includes("package.json")
-) {
-try {
-var Installer = require("child_process").exec(
-"npm install --force --save"
-);
-console.log("🛰️ 𝐓𝐡𝐫𝐞𝐚𝐝 𝐈𝐃:", Kolor.green(Installer.pid));
-Installer.stderr.pipe(process.stderr);
-Installer.stdout.pipe(process.stdout);
-Installer.on("exit", function (code, signal) {
-if (code)
-console.log("📟 𝐕𝐥𝐤𝐲𝐫𝐞 𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐂𝐨𝐝𝐞:", Kolor.red(code));
-if (signal)
-console.log(
-"📶 𝐕𝐥𝐤𝐲𝐫𝐞 𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐒𝐢𝐠𝐧𝐚𝐥:",
-Kolor.blue(signal)
-);
-process.exitCode = 1;
-});
-} catch (error) {
-console.log(Kolor.red(error));
-}
-`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
-try {
-if (fs.existsSync("package-lock.json")) {
-var InstalCleaner = require("child_process").exec(
-"rm package-lock.json"
-);
-console.log("🛰️ 𝐓𝐡𝐫𝐞𝐚𝐝 𝐈𝐃:", Kolor.green(InstalCleaner.pid));
-InstalCleaner.stderr.pipe(process.stderr);
-InstalCleaner.stdout.pipe(process.stdout);
-InstalCleaner.on("exit", function (code, signal) {
-if (code)
-console.log("📟 𝐕𝐥𝐤𝐲𝐫𝐞 𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐂𝐨𝐝𝐞:", Kolor.red(code));
-if (signal)
-console.log(
-"📶 𝐕𝐥𝐤𝐲𝐫𝐞 𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐒𝐢𝐠𝐧𝐚𝐥:",
-Kolor.blue(signal)
-);
-process.exitCode = 1;
-});
-}
-} catch (error) {
-console.log(Kolor.red(error));
-}
-}
-});
-`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 } catch (error) {
 console.log(Kolor.red(error));
 try {
