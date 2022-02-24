@@ -34,6 +34,20 @@ var newCommits = await git.log(["KryTek..origin/KryTek"]);
 console.log(newCommits);
 if (newCommits.total != 0) {
 try {
+var PkgRm = require("child_process").exec("rm package-lock.json");
+console.log("🛰️ 𝐓𝐡𝐫𝐞𝐚𝐝 𝐈𝐃:", Kolor.green(PkgRm.pid));
+PkgRm.stderr.pipe(process.stderr);
+PkgRm.stdout.pipe(process.stdout);
+PkgRm.on("exit", function (code, signal) {
+if (code) console.log("📟 𝐕𝐥𝐤𝐲𝐫𝐞 𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐂𝐨𝐝𝐞:", Kolor.red(code));
+if (signal)
+console.log("📶 𝐕𝐥𝐤𝐲𝐫𝐞 𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐒𝐢𝐠𝐧𝐚𝐥:", Kolor.blue(signal));
+process.exitCode = 1;
+});
+} catch (error) {
+console.log(Kolor.red(error));
+}
+try {
 var 𝖛𝖑𝖐𝖕 = require("child_process").exec("python 🐍𝖛𝖑𝖐𝖕𝖞.py");
 console.log("🛰️ 𝐓𝐡𝐫𝐞𝐚𝐝 𝐈𝐃:", Kolor.green(𝖛𝖑𝖐𝖕.pid));
 𝖛𝖑𝖐𝖕.stderr.pipe(process.stderr);
@@ -46,22 +60,6 @@ process.exitCode = 1;
 });
 } catch (error) {
 console.log(Kolor.red(error));
-try {
-var Resets = require("child_process").exec(
-"git config --global user.name 'KryKnz' && git config --global user.email 'KryKnz@yandex.com' && git config pull.rebase false && git init --initial-branch=KryTek && git fetch origin KryTek && git reset --hard origin/KryTek && git stash && git stash drop && git pull"
-);
-console.log("🛰️ 𝐓𝐡𝐫𝐞𝐚𝐝 𝐈𝐃:", Kolor.green(Resets.pid));
-Resets.stderr.pipe(process.stderr);
-Resets.stdout.pipe(process.stdout);
-Resets.on("exit", function (code, signal) {
-if (code) console.log("📟 𝐕𝐥𝐤𝐲𝐫𝐞 𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐂𝐨𝐝𝐞:", Kolor.red(code));
-if (signal)
-console.log("📶 𝐕𝐥𝐤𝐲𝐫𝐞 𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐒𝐢𝐠𝐧𝐚𝐥:", Kolor.blue(signal));
-process.exitCode = 1;
-});
-} catch (error) {
-console.log(Kolor.red(error));
-}
 }
 }
 let folders = [".", ...Object.keys(require("./package.json").directories)];
