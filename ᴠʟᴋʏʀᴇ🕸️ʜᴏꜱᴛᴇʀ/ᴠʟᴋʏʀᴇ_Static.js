@@ -36,10 +36,10 @@ const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
 let ᴘɴᴀᴍᴇ;
 try {
 ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/\@s.whatsapp.net/g, "").replace(/\D/g, "");
-// require("child_process").exec("hash -r").stderr.pipe(process.stderr);
+require("child_process").exec("hash -r").stderr.pipe(process.stderr);
 } catch {
 ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/\D/g, "");
-// require("child_process").exec("hash -r").stderr.pipe(process.stderr);
+require("child_process").exec("hash -r").stderr.pipe(process.stderr);
 }
 console.log(ᴘɴᴀᴍᴇ);
 var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
@@ -59,10 +59,10 @@ const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
 let ᴘɴᴀᴍᴇ;
 try {
 ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/\@s.whatsapp.net/g, "").replace(/\D/g, "");
-// require("child_process").exec("hash -r").stderr.pipe(process.stderr);
+require("child_process").exec("hash -r").stderr.pipe(process.stderr);
 } catch {
 ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/\D/g, "");
-// require("child_process").exec("hash -r").stderr.pipe(process.stderr);
+require("child_process").exec("hash -r").stderr.pipe(process.stderr);
 }
 console.log(ᴘɴᴀᴍᴇ);
 return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
