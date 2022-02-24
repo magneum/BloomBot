@@ -12,6 +12,7 @@ const assert = require("assert");
 const git = require("simple-git")();
 const ᴠʟᴋʏʀᴇgoose = require("mongoose");
 const { spawn } = require("child_process");
+const _𝔏𝔞𝔟_ = require(`./ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/_𝔏𝔞𝔟_`);
 const ᴠʟᴋʏʀᴇ = require("./ᴠʟᴋʏʀᴇ🔌cord/𝕭𝖔𝖔𝖙☢𝕷𝖔𝖆𝖉𝖊𝖗");
 try {
 if (fs.existsSync("package-lock.json")) {
