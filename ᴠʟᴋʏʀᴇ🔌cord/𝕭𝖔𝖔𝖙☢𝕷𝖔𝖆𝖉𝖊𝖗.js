@@ -514,10 +514,10 @@ const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
 let ᴘɴᴀᴍᴇ;
 try {
 ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/\@s.whatsapp.net/g, "").replace(/\D/g, "");
-// require("child_process").exec("hash -r").stderr.pipe(process.stderr);
+require("child_process").exec("hash -r").stderr.pipe(process.stderr);
 } catch {
 ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/\D/g, "");
-// require("child_process").exec("hash -r").stderr.pipe(process.stderr);
+require("child_process").exec("hash -r").stderr.pipe(process.stderr);
 }
 await Halt.findOne(
 {
