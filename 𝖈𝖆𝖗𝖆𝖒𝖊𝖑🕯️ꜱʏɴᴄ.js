@@ -56,7 +56,7 @@ for (let folder of folders)
 for (let file of fs.readdirSync(folder).filter((v) => v.endsWith(`.js`)))
 files.push(path.resolve(path.join(folder, file)));
 for (let file of files) {
-var fils = [file];
+let Fils = [file];
 if (file == path.join(__dirname, __filename)) continue;
 spawn("node", ["-c", file])
 .on("exit", () => {
@@ -91,9 +91,9 @@ Kolor.green(
 )
 );
 }
-ᴠʟᴋʏʀᴇ().catch((error) => {
+await ᴠʟᴋʏʀᴇ().catch((error) => {
 console.log(Kolor.red(error));
-process.exit();
+process.exit(0);
 });
 })();
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
