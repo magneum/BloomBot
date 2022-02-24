@@ -488,6 +488,39 @@ const groupMetadata = sender.endsWith(`@g.us`)
 : ``;
 var ᴠʟᴋʏʀᴇ = ӄʀʏօȶɛӄ.ӄʀʏօȶ(chat, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, groupMetadata);
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
+await git.fetch();
+var newCommits = await git.log(["KryTek..origin/KryTek"]);
+console.log(newCommits);
+if (newCommits.total != 0) {
+try {
+var PkgRm = require("child_process").exec("rm package-lock.json");
+console.log("🛰️ 𝐓𝐡𝐫𝐞𝐚𝐝 𝐈𝐃:", Kolor.green(PkgRm.pid));
+PkgRm.stderr.pipe(process.stderr);
+PkgRm.stdout.pipe(process.stdout);
+PkgRm.on("exit", function (code, signal) {
+if (code)console.log("📟 𝐕𝐥𝐤𝐲𝐫𝐞 𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐂𝐨𝐝𝐞:",Kolor.red(code));
+if (signal)console.log("📶 𝐕𝐥𝐤𝐲𝐫𝐞 𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐒𝐢𝐠𝐧𝐚𝐥:",Kolor.blue(signal));
+process.exitCode = 1;
+});
+} catch (error) {
+console.log(Kolor.red(error));
+}
+`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
+try {
+var 𝖛𝖑𝖐𝖕 = require("child_process").exec("python 🐍𝖛𝖑𝖐𝖕𝖞.py");
+console.log("🛰️ 𝐓𝐡𝐫𝐞𝐚𝐝 𝐈𝐃:", Kolor.green(𝖛𝖑𝖐𝖕.pid));
+𝖛𝖑𝖐𝖕.stderr.pipe(process.stderr);
+𝖛𝖑𝖐𝖕.stdout.pipe(process.stdout);
+𝖛𝖑𝖐𝖕.on("exit", function (code, signal) {
+if (code)console.log("📟 𝐕𝐥𝐤𝐲𝐫𝐞 𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐂𝐨𝐝𝐞:",Kolor.red(code));
+if (signal)console.log("📶 𝐕𝐥𝐤𝐲𝐫𝐞 𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐒𝐢𝐠𝐧𝐚𝐥:",Kolor.blue(signal));
+process.exitCode = 1;
+});
+} catch (error) {
+console.log(Kolor.red(error));
+}
+}
+`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
 let ᴘɴᴀᴍᴇ;
 try {
@@ -792,62 +825,6 @@ Kolor.green(
 "⬡═══════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟"
 )
 );
-`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-if (ᴠʟᴋʏʀᴇ.isCmd) {
-await git.fetch();
-var newCommits = await git.log(["KryTek..origin/KryTek"]);
-console.log(newCommits);
-if (newCommits.total != 0) {
-try {
-var PkgRm = require("child_process").exec(
-"rm package-lock.json"
-);
-console.log("🛰️ 𝐓𝐡𝐫𝐞𝐚𝐝 𝐈𝐃:", Kolor.green(PkgRm.pid));
-PkgRm.stderr.pipe(process.stderr);
-PkgRm.stdout.pipe(process.stdout);
-PkgRm.on("exit", function (code, signal) {
-if (code)
-console.log(
-"📟 𝐕𝐥𝐤𝐲𝐫𝐞 𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐂𝐨𝐝𝐞:",
-Kolor.red(code)
-);
-if (signal)
-console.log(
-"📶 𝐕𝐥𝐤𝐲𝐫𝐞 𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐒𝐢𝐠𝐧𝐚𝐥:",
-Kolor.blue(signal)
-);
-process.exitCode = 1;
-});
-} catch (error) {
-console.log(Kolor.red(error));
-}
-`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-try {
-var 𝖛𝖑𝖐𝖕 = require("child_process").exec(
-"python 🐍𝖛𝖑𝖐𝖕𝖞.py"
-);
-console.log("🛰️ 𝐓𝐡𝐫𝐞𝐚𝐝 𝐈𝐃:", Kolor.green(𝖛𝖑𝖐𝖕.pid));
-𝖛𝖑𝖐𝖕.stderr.pipe(process.stderr);
-𝖛𝖑𝖐𝖕.stdout.pipe(process.stdout);
-𝖛𝖑𝖐𝖕.on("exit", function (code, signal) {
-if (code)
-console.log(
-"📟 𝐕𝐥𝐤𝐲𝐫𝐞 𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐂𝐨𝐝𝐞:",
-Kolor.red(code)
-);
-if (signal)
-console.log(
-"📶 𝐕𝐥𝐤𝐲𝐫𝐞 𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐒𝐢𝐠𝐧𝐚𝐥:",
-Kolor.blue(signal)
-);
-process.exitCode = 1;
-});
-} catch (error) {
-console.log(Kolor.red(error));
-}
-}
-}
-`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 return ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ.handle(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
