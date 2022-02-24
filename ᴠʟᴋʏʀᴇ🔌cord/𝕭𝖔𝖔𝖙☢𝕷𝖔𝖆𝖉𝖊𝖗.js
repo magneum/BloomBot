@@ -485,17 +485,23 @@ chat,
 `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡**
 
 ╔⧉༻ 𝐕𝐥𝐤𝐲𝐫𝐞💡𝐔𝐩𝐝𝐚𝐭𝐢𝐧𝐠
-║🍯 𝗦𝘁𝗮𝘁𝘂𝘀: Update Pending!
-║⏳ 𝗧𝗶𝗺𝗲: Offline For 30s-60s
-║🔥 𝗡𝗲𝘄 𝗖𝗼𝗺𝗺𝗶𝘁𝘀: ${newCommits.total}
+║🍯 𝗦𝘁𝗮𝘁𝘂𝘀: _Update Pending!_
+║⏳ 𝗧𝗶𝗺𝗲: _Offline For 30s-60s_
 ║🛰️ 𝐋𝐚𝐭𝐞𝐧𝐜𝐲: _${Ping}ms_
 ║📅 𝐃𝐚𝐭𝐞: _${Clock}_
 ║⚙️ 𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _Old: ${vers.verold} | New: ${vers.vers}_
 ╚════════════╝
 
-⧉ 🧀𝐅𝐮𝐥𝐥 𝐉𝐬𝐨𝐧 𝐂𝐡𝐚𝐧𝐠𝐞𝐋𝐨𝐠🧀 ⧉
-🍮 𝗚𝗶𝘁𝗛𝘂𝗯: _https://github.com/Kryknz/Vlkyre/tree/KryTek_
-${JSON.stringify(newCommits)}`,
+╔⧉༻ 🧀𝐅𝐮𝐥𝐥 𝐉𝐬𝐨𝐧 𝐂𝐡𝐚𝐧𝐠𝐞𝐋𝐨𝐠
+║🍮 𝗚𝗶𝘁𝗛𝘂𝗯: _https://github.com/Kryknz/Vlkyre/tree/KryTek_
+║🔥 𝗡𝗲𝘄 𝗖𝗼𝗺𝗺𝗶𝘁𝘀: _${newCommits.total}_
+║✒️ 𝗔𝘂𝘁𝗵𝗼𝗿: _${newCommits.latest.author_name}_
+║📧 𝗘𝗺𝗮𝗶𝗹: _${newCommits.latest.author_email}_
+║#️⃣ 𝗛𝗮𝘀𝗵: _${newCommits.latest.hash}_
+║📅 𝗗𝗮𝘁𝗲: _${newCommits.latest.date}_
+║📜 𝗠𝗲𝘀𝘀𝗮𝗴𝗲: _${newCommits.latest.message}_
+║🏷️ 𝗥𝗲𝗳𝘀: _${newCommits.latest.refs}_
+╚════════════╝`,
 "./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_Univ.png"
 );
 // var 𝖛𝖑𝖐𝖕 = require("child_process").exec(
