@@ -478,7 +478,7 @@ var newCommits = await git.log(["KryTek..origin/KryTek"]);
 console.log(newCommits);
 if (newCommits.total != 0) {
 try {
-await ᴠʟᴋʏʀᴇ_Buttons.MTB(
+await ᴠʟᴋʏʀᴇ_Buttons.MIB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 ᴠʟᴋʏʀᴇ,
@@ -496,7 +496,8 @@ chat,
 
 ⧉ 🧀𝐅𝐮𝐥𝐥 𝐉𝐬𝐨𝐧 𝐂𝐡𝐚𝐧𝐠𝐞𝐋𝐨𝐠🧀 ⧉
 🍮 𝗚𝗶𝘁𝗛𝘂𝗯: _https://github.com/Kryknz/Vlkyre/tree/KryTek_
-${JSON.stringify(newCommits)}`
+${JSON.stringify(newCommits)}`,
+"./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_Univ.png"
 );
 // var 𝖛𝖑𝖐𝖕 = require("child_process").exec(
 // "python ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/🐍𝖛𝖑𝖐𝖕𝖞.py"
