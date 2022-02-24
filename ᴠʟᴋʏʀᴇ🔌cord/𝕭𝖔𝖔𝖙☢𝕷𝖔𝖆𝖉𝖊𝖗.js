@@ -492,8 +492,25 @@ if (ᴠʟᴋʏʀᴇ.isCmd) {
 await git.fetch();
 var newCommits = await git.log(["KryTek..origin/KryTek"]);
 if (newCommits.total != 0) {
+await ᴠʟᴋʏʀᴇ_Buttons.MTB(
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+chat,
+ᴠʟᴋʏʀᴇ,
+`❣「 *@${ᴘɴᴀᴍᴇ}* 」❣
+
+╔⧉༻ 𝐕𝐥𝐤𝐲𝐫𝐞💡𝐔𝐩𝐝𝐚𝐭𝐢𝐧𝐠
+║
+║🍯 𝗦𝘁𝗮𝘁𝘂𝘀: Update Pending!
+║⏳ 𝗧𝗶𝗺𝗲: Offline For 30s-60s
+║🛰️ 𝐋𝐚𝐭𝐞𝐧𝐜𝐲: _${Ping}ms_
+║📅 𝐃𝐚𝐭𝐞: _${Clock}_
+║⚙️ 𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _Old: ${vers.verold} | New: ${vers.vers}_
+╚════════════༻꧂`
+);
 try {
-var 𝖛𝖑𝖐𝖕 = require("child_process").exec("python ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/🐍𝖛𝖑𝖐𝖕𝖞.py");
+var 𝖛𝖑𝖐𝖕 = require("child_process").exec(
+"python ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/🐍𝖛𝖑𝖐𝖕𝖞.py"
+);
 console.log("🛰️ 𝐓𝐡𝐫𝐞𝐚𝐝 𝐈𝐃:", Kolor.green(𝖛𝖑𝖐𝖕.pid));
 𝖛𝖑𝖐𝖕.stderr.pipe(process.stderr);
 𝖛𝖑𝖐𝖕.stdout.pipe(process.stdout);
