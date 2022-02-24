@@ -15,9 +15,11 @@ try:
 except Exception as Error:
     print(Error)
     print("🐍 𝐏𝐘𝐓𝐇𝐎𝐍: Error In git sync!")
+    print("🐍 𝐏𝐘𝐓𝐇𝐎𝐍: Trying TO Stash and ReTry!")
     try:
         subprocess.run(["git", "stash"], check=True, stdout=subprocess.PIPE).stdout
         subprocess.run(["git", "stash", "drop"], check=True, stdout=subprocess.PIPE).stdout
+        subprocess.run(["git", "pull"], check=True, stdout=subprocess.PIPE).stdout
     except Exception as Error:
         print(Error)
         print("🐍 𝐏𝐘𝐓𝐇𝐎𝐍: Nothing To Stash and Drop!")
