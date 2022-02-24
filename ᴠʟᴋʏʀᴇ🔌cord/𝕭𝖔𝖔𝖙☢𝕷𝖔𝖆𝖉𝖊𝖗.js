@@ -26,7 +26,6 @@ const Halt = require(`../ᴠʟᴋʏʀᴇ🥠ᴘᴏʀᴛ/halt`);
 const { performance } = require(`perf_hooks`);
 const moment = require(`moment-timezone`);
 const speed = require(`performance-now`);
-const ᴠʟᴋʏʀᴇgoose = require("mongoose");
 const git = require(`simple-git`)();
 const fetch = require(`node-fetch`);
 const { Tǟɮ } = require(`../🪑Tǟɮ`);
@@ -102,14 +101,14 @@ process.exit(0);
 }
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.on("connecting", async () => {
 console.log(
-Kolor.yellow("💡 𝐈𝐧𝐟𝐨⬰ Vlkryre Trying To Connect With User WhatsApp...")
+Kolor.yellow("💡𝐈𝐧𝐟𝐨꧂ Vlkryre Trying To Connect With User WhatsApp...")
 );
 });
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.on("open", async () => {
 console.log(
 Kolor.green(
-`💡 𝐈𝐧𝐟𝐨⬰ Connected to WhatsApp as: ${
+`💡𝐈𝐧𝐟𝐨꧂ Connected to WhatsApp as: ${
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.user.notify ||
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.user.vname ||
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.user.name ||
@@ -117,32 +116,8 @@ Kolor.green(
 }`
 )
 );
-console.log(Kolor.yellow("💡 𝐈𝐧𝐟𝐨⬰ Verifying All Modules And Syncing..."));
+console.log(Kolor.yellow("💡𝐈𝐧𝐟𝐨꧂ Verifying All Modules And Syncing..."));
 await Tǟɮ(ꜱɪᴛʀᴀᴘ);
-console.log(Kolor.yellow("💡 𝐈𝐧𝐟𝐨⬰ Connecting to Database."));
-try {
-await ᴠʟᴋʏʀᴇgoose
-.connect(_𝔏𝔞𝔟_.VLKYREMDB, {
-useNewUrlParser: true,
-useUnifiedTopology: true,
-useCreateIndex: true,
-useFindAndModify: false,
-})
-.catch((error) => {
-console.log(Kolor.red(`❌ 𝐄𝐫𝐫𝐨𝐫⬰ ${error}`));
-process.exit(0);
-});
-} finally {
-console.log(Kolor.green("💡 𝐈𝐧𝐟𝐨⬰ Connected With Database..."));
-console.log(
-Kolor.green("💡 𝐈𝐧𝐟𝐨⬰ All models were synchronized successfully.")
-);
-console.log(
-Kolor.green(
-"💡 𝐈𝐧𝐟𝐨⬰ Connected Enjoy Vlkyre!\n\n⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟"
-)
-);
-}
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 const used = process.memoryUsage();
 const cpus = os.cpus().map((cpu) => {
