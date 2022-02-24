@@ -72,7 +72,7 @@ await pokemon.card
 .all({ q: `name:${Needs.join(" ")}` })
 .then(async (card) => {
 try {
-var PokeInfo = `♡「 *@${ᴘɴᴀᴍᴇ}* 」♡
+var PokeInfo = `*♡「 @${ᴘɴᴀᴍᴇ} 」♡*
 ╔⧉༻🌿𝐓𝐨𝐩𝐢𝐜: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
 ║
 ║💫 *Name:* ${json.name}

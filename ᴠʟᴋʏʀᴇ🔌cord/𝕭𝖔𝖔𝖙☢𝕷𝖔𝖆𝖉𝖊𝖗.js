@@ -501,11 +501,12 @@ if (ᴠʟᴋʏʀᴇ.isCmd) {
 await git.fetch();
 var newCommits = await git.log(["KryTek..origin/KryTek"]);
 if (newCommits.total != 0) {
+try {
 await ᴠʟᴋʏʀᴇ_Buttons.MTB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 ᴠʟᴋʏʀᴇ,
-`❣「 *@${ᴘɴᴀᴍᴇ}* 」❣
+`*♡「 @${ᴘɴᴀᴍᴇ} 」♡*
 
 ╔⧉༻ 𝐕𝐥𝐤𝐲𝐫𝐞💡𝐔𝐩𝐝𝐚𝐭𝐢𝐧𝐠
 ║
@@ -516,7 +517,6 @@ chat,
 ║⚙️ 𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _Old: ${vers.verold} | New: ${vers.vers}_
 ╚════════════༻꧂`
 );
-try {
 var 𝖛𝖑𝖐𝖕 = require("child_process").exec(
 "python ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/🐍𝖛𝖑𝖐𝖕𝖞.py"
 );
@@ -532,8 +532,7 @@ process.exitCode = 1;
 });
 } catch (error) {
 console.log(Kolor.red(error));
-}
-try {
+} finally {
 var h𝖛𝖑𝖐𝖕 = require("child_process").exec(
 `heroku ps:restart worker -a ${_𝔏𝔞𝔟_.HEROKU_APP_NAME}`
 );
@@ -546,8 +545,6 @@ if (signal)
 console.log("📶 𝐕𝐥𝐤𝐲𝐫𝐞 𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐒𝐢𝐠𝐧𝐚𝐥:", Kolor.blue(signal));
 process.exitCode = 1;
 });
-} catch (error) {
-console.log(Kolor.red(error));
 }
 }
 }
@@ -586,7 +583,7 @@ return ᴠʟᴋʏʀᴇ_Buttons.MTB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 ᴠʟᴋʏʀᴇ,
-`❣「 *@${ᴘɴᴀᴍᴇ}* 」❣
+`*♡「 @${ᴘɴᴀᴍᴇ} 」♡*
 
 ⚠️ 𝗨𝘀𝗶𝗻𝗴 𝗩𝗹𝗸𝘆𝗿𝗲 𝗜𝗻 𝗣𝗿𝗶𝘃𝗮𝘁𝗲 𝗜𝘀 𝗡𝗼 𝗹𝗼𝗻𝗴𝗲𝗿 𝗔𝗹𝗹𝗼𝘄𝗲𝗱!
 ╔════◇🧀 𝐃𝐞𝐟𝐚𝐮𝐥𝐭 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
@@ -726,7 +723,7 @@ userHalt.PermaTimeOut - (Date.now() - userHalt.TimeOut)
 
 return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
 ᴠʟᴋʏʀᴇ.chatId,
-`❣「 *@${ᴘɴᴀᴍᴇ}* 」❣  
+`*♡「 @${ᴘɴᴀᴍᴇ} 」♡*  
 ❌ 𝗘𝗿𝗿𝗼𝗿: Wait For ${Time.seconds}/10s*`,
 MessageType.text,
 {
@@ -777,7 +774,7 @@ if (
 !member3.includes(ʟɴᴀᴍᴇ)
 ) {
 const buttonMessage = {
-contentText: `❣「 *@${ᴘɴᴀᴍᴇ}* 」❣
+contentText: `*♡「 @${ᴘɴᴀᴍᴇ} 」♡*
 🤖𝐕𝐞𝐫𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧: You Are Not Verified!
 
 𝐏𝐫𝐞𝐬𝐬 𝐁𝐞𝐥𝐨𝐰 𝐓𝐨 𝐕𝐞𝐫𝐢𝐟𝐲`,
@@ -813,40 +810,36 @@ return await ᴠʟᴋʏʀᴇ_Buttons.MTB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 ᴠʟᴋʏʀᴇ,
-`❣「 *@${ᴘɴᴀᴍᴇ}* 」❣  
+`*♡「 @${ᴘɴᴀᴍᴇ} 」♡*  
 ❌ 𝗘𝗿𝗿𝗼𝗿: No Such Command In Database!`
 );
 }
-// const data = [[JSON.stringify(chat)]];
-// const config = {
-// border: {
-// topBody: `─`,
-// topJoin: `┬`,
-// topLeft: `┌`,
-// topRight: `┐`,
+const data = [["⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟"]];
+const config = {
+border: {
+topBody: `─`,
+topJoin: `┬`,
+topLeft: `┌`,
+topRight: `┐`,
 
-// bottomBody: `─`,
-// bottomJoin: `┴`,
-// bottomLeft: `└`,
-// bottomRight: `┘`,
+bottomBody: `─`,
+bottomJoin: `┴`,
+bottomLeft: `└`,
+bottomRight: `┘`,
 
-// bodyLeft: `│`,
-// bodyRight: `│`,
-// bodyJoin: `│`,
+bodyLeft: `│`,
+bodyRight: `│`,
+bodyJoin: `│`,
 
-// joinBody: `─`,
-// joinLeft: `├`,
-// joinRight: `┤`,
-// joinJoin: `┼`,
-// },
-// };
-// console.log(table(data, config));
+joinBody: `─`,
+joinLeft: `├`,
+joinRight: `┤`,
+joinJoin: `┼`,
+},
+};
+console.log(table(data, config));
 console.log(chat);
-console.log(
-Kolor.green(
-"⬡═══════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟"
-)
-);
+console.log(table(data, config));
 return ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ.handle(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,

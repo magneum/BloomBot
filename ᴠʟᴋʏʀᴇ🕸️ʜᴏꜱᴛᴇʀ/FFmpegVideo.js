@@ -25,10 +25,10 @@ const ᴅꜰɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.commandName;
 let ᴘɴᴀᴍᴇ;
 try {
 ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/\@s.whatsapp.net/g, "").replace(/\D/g, "");
-// require("child_process").exec("hash -r").stderr.pipe(process.stderr);
+require("child_process").exec("hash -r").stderr.pipe(process.stderr);
 } catch {
 ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/\D/g, "");
-// require("child_process").exec("hash -r").stderr.pipe(process.stderr);
+require("child_process").exec("hash -r").stderr.pipe(process.stderr);
 }
 var FFmpegFile = `./ᴠʟᴋʏʀᴇ🀄ᴇxʜᴀᴜꜱᴛ/${chat.key.id}.mp4`;
 const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
@@ -58,7 +58,7 @@ return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .sendMessage(
 ᴠʟᴋʏʀᴇ.chatId,
 {
-contentText: `❣「 *@${ᴘɴᴀᴍᴇ}* 」❣
+contentText: `*♡「 @${ᴘɴᴀᴍᴇ} 」♡*
 ╔⧉༻🌿𝐓𝐨𝐩𝐢𝐜: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
 ║🍻 𝗧𝗶𝘁𝗹𝗲: ${Found.title}
 ║🙈 𝗩𝗶𝗲𝘄𝘀: ${Found.views}
@@ -122,7 +122,7 @@ return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .sendMessage(
 ᴠʟᴋʏʀᴇ.chatId,
 {
-contentText: `❣「 *@${ᴘɴᴀᴍᴇ}* 」❣
+contentText: `*♡「 @${ᴘɴᴀᴍᴇ} 」♡*
 ╔⧉༻🌿𝐓𝐨𝐩𝐢𝐜: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
 ║🍻 𝗧𝗶𝘁𝗹𝗲: ${Found.title}
 ║🙈 𝗩𝗶𝗲𝘄𝘀: ${Found.views}
