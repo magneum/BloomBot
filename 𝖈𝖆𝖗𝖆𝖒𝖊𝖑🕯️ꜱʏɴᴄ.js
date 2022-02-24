@@ -31,22 +31,7 @@ console.log(Kolor.red(error));
 (async () => {
 await git.fetch();
 var newCommits = await git.log(["KryTek..origin/KryTek"]);
-console.log(newCommits);
 if (newCommits.total != 0) {
-try {
-var PkgRm = require("child_process").exec("rm package-lock.json");
-console.log("🛰️ 𝐓𝐡𝐫𝐞𝐚𝐝 𝐈𝐃:", Kolor.green(PkgRm.pid));
-PkgRm.stderr.pipe(process.stderr);
-PkgRm.stdout.pipe(process.stdout);
-PkgRm.on("exit", function (code, signal) {
-if (code) console.log("📟 𝐕𝐥𝐤𝐲𝐫𝐞 𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐂𝐨𝐝𝐞:", Kolor.red(code));
-if (signal)
-console.log("📶 𝐕𝐥𝐤𝐲𝐫𝐞 𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐒𝐢𝐠𝐧𝐚𝐥:", Kolor.blue(signal));
-process.exitCode = 1;
-});
-} catch (error) {
-console.log(Kolor.red(error));
-}
 try {
 var 𝖛𝖑𝖐𝖕 = require("child_process").exec("python 🐍𝖛𝖑𝖐𝖕𝖞.py");
 console.log("🛰️ 𝐓𝐡𝐫𝐞𝐚𝐝 𝐈𝐃:", Kolor.green(𝖛𝖑𝖐𝖕.pid));
