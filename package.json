@@ -160,6 +160,7 @@
     "sequelize": "^6.7.0",
     "shelljs": "^0.8.5",
     "similarity": "^1.2.1",
+    "simple-get": "^4.0.1",
     "simple-git": "^3.2.6",
     "simple-swizzle": "^0.2.2",
     "songlyrics": "^2.2.4",
