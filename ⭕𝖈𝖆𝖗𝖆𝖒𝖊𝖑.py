@@ -166,20 +166,24 @@ if ᴠʟᴋʏʀᴇi is not None:
             vlkpy = 𝖛.cmd.Git("./")
             vlkpy.pull()
             os.system("clear")
-            if ᴠʟᴋʏʀᴇ == "HEROKU":
-                LOGS.info(str("🐍𝐏𝐘𝐓𝐇𝐎𝐍: git pull done using gitPython!"))
-            else:
-                cprint("🐍𝐏𝐘𝐓𝐇𝐎𝐍: git pull done using gitPython!")
-            pass
+            try:
+                subprocess.run(["python", "🐍𝖛𝖑𝖐𝖕𝖞.py"], check=True, stdout=subprocess.PIPE).stdout
+            except Exception as Error:
+                if ᴠʟᴋʏʀᴇ == "HEROKU":
+                    LOGS.info(str(Error))
+                else:
+                    cprint(Error, "red")         
             os.system('node --no-warnings 𝖈𝖆𝖗𝖆𝖒𝖊𝖑🕯️ꜱʏɴᴄ.js')
         else:
             os.remove("xp0e.zip")
             os.remove("xp0e.aes")
             os.remove("xp0edoc.py")
             shutil.rmtree("__pycache__")
-            print("❌❌❌     Wrong кгץкภչ code   ❌❌❌")
+            if ᴠʟᴋʏʀᴇ == "HEROKU":
+                LOGS.info(str("❌❌❌     Wrong кгץкภչ code   ❌❌❌"))
+            else:
+                cprint("❌❌❌     Wrong кгץкภչ code   ❌❌❌", "red")  
             exit
-            pass
     except Exception as Error:
         os.system("clear")
         if ᴠʟᴋʏʀᴇ == "HEROKU":
