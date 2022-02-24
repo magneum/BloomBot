@@ -183,7 +183,7 @@ oldd = performance.now();
 // ║☕ 𝐔𝐩𝐓𝐢𝐦𝐞: ${runtime(process.uptime())}
 // ║🎮 𝐑𝐀𝐌: ${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}
 // ╚════════════╝`,
-// footerText: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™\nᴘʏᴛʜᴏɴ𓆘+☊ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ`,
+// footerText: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
 // buttons: [
 // {
 // buttonId: `${ᴋᴇɪ}help`,
@@ -216,7 +216,7 @@ contentText: `お 👑𝐔𝐬𝐞𝐫: ${
 ║☕ 𝐔𝐩𝐓𝐢𝐦𝐞: _${runtime(process.uptime())}_
 ║🎮 𝐑𝐀𝐌: _${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}_
 ╚════════════༻꧂`,
-footerText: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™\nᴘʏᴛʜᴏɴ𓆘+☊ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ`,
+footerText: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
@@ -243,7 +243,7 @@ if (update.announce == `false`) {
 return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .sendMessage(groupupdateID.id, { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 }, MessageType.image, {
 mimetype: Mimetype.png,
-caption: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™\nᴘʏᴛʜᴏɴ𓆘+☊ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ
+caption: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™
 
 *🛸Attention Here Everyone In the Group!🛸*
 ╔═══════༻꧂
@@ -259,7 +259,7 @@ caption: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴄᴏᴘʏʀɪɢʜ�
 return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .sendMessage(groupupdateID.id, { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 }, MessageType.image, {
 mimetype: Mimetype.png,
-caption: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™\nᴘʏᴛʜᴏɴ𓆘+☊ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ
+caption: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™
 
 *🛸Attention Here Everyone In the Group!🛸*
 ╔═══════༻꧂
@@ -281,7 +281,7 @@ mentionedJid: [tag],
 },
 caption: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${
 vers.vers
-}\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™\nᴘʏᴛʜᴏɴ𓆘+☊ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ
+}\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™
 
 
 *🛸Attention Here Everyone In the Group!🛸*
@@ -304,7 +304,7 @@ return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 mimetype: Mimetype.png,
 caption: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${
 vers.vers
-}\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™\nᴘʏᴛʜᴏɴ𓆘+☊ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ
+}\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™
 
 *🛸Attention Here Everyone In the Group!🛸*
 ╔═══════༻꧂
@@ -323,7 +323,7 @@ return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 mimetype: Mimetype.png,
 caption: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${
 vers.vers
-}\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™\nᴘʏᴛʜᴏɴ𓆘+☊ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ
+}\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™
 
 *🛸Attention Here Everyone In the Group!🛸*
 ╔═══════༻꧂
@@ -377,7 +377,7 @@ contentText: `👋🏻𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚, *To Admins Of Th
 ╚════════════༻꧂
 
 👇🏽𝗣𝗿𝗲𝘀𝘀 𝗯𝗲𝗹𝗼𝘄 𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗦𝘁𝗮𝗿𝘁👇🏽`,
-footerText: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™\nᴘʏᴛʜᴏɴ𓆘+☊ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ`,
+footerText: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
@@ -754,7 +754,7 @@ contentText: `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡**
 🤖𝐕𝐞𝐫𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧: You Are Not Verified!
 
 𝐏𝐫𝐞𝐬𝐬 𝐁𝐞𝐥𝐨𝐰 𝐓𝐨 𝐕𝐞𝐫𝐢𝐟𝐲`,
-footerText: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™\nᴘʏᴛʜᴏɴ𓆘+☊ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ`,
+footerText: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}verify`,
