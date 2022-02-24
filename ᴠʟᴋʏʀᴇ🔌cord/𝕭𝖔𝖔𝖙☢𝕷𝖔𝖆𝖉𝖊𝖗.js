@@ -33,6 +33,7 @@ const { Tǟɮ } = require(`../🪑Tǟɮ`);
 const { table } = require("table");
 const Kolor = require(`chalk`);
 const ms = require(`parse-ms`);
+const util = require("util");
 const os = require(`os`);
 const fs = require(`fs`);
 let Timestamp = speed();
@@ -670,7 +671,8 @@ userHalt.PermaTimeOut - (Date.now() - userHalt.TimeOut)
 
 return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
 ᴠʟᴋʏʀᴇ.chatId,
-`❣「 *@${ᴘɴᴀᴍᴇ}* 」❣  ✘ *Wait For [${Time.seconds}/10]s!*`,
+`❣「 *@${ᴘɴᴀᴍᴇ}* 」❣  
+❌ 𝗘𝗿𝗿𝗼𝗿: Wait For ${Time.seconds}/10s*`,
 MessageType.text,
 {
 contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
@@ -757,34 +759,40 @@ return await ᴠʟᴋʏʀᴇ_Buttons.MTB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 ᴠʟᴋʏʀᴇ,
-`❣「 *@${ᴘɴᴀᴍᴇ}* 」❣  ❌ No Such Command In Database!`
+`❣「 *@${ᴘɴᴀᴍᴇ}* 」❣  
+❌ 𝗘𝗿𝗿𝗼𝗿: No Such Command In Database!`
 );
 }
-const data = [[chat.toString()]];
-const config = {
-border: {
-topBody: `─`,
-topJoin: `┬`,
-topLeft: `┌`,
-topRight: `┐`,
+// const data = [[JSON.stringify(chat)]];
+// const config = {
+// border: {
+// topBody: `─`,
+// topJoin: `┬`,
+// topLeft: `┌`,
+// topRight: `┐`,
 
-bottomBody: `─`,
-bottomJoin: `┴`,
-bottomLeft: `└`,
-bottomRight: `┘`,
+// bottomBody: `─`,
+// bottomJoin: `┴`,
+// bottomLeft: `└`,
+// bottomRight: `┘`,
 
-bodyLeft: `│`,
-bodyRight: `│`,
-bodyJoin: `│`,
+// bodyLeft: `│`,
+// bodyRight: `│`,
+// bodyJoin: `│`,
 
-joinBody: `─`,
-joinLeft: `├`,
-joinRight: `┤`,
-joinJoin: `┼`,
-},
-};
-console.log(table(data, config));
-console.log(Kolor.green("⬡═══════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟"));
+// joinBody: `─`,
+// joinLeft: `├`,
+// joinRight: `┤`,
+// joinJoin: `┼`,
+// },
+// };
+// console.log(table(data, config));
+console.log(chat);
+console.log(
+Kolor.green(
+"⬡═══════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟"
+)
+);
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 if (ᴠʟᴋʏʀᴇ.isCmd) {
 await git.fetch();
