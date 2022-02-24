@@ -475,7 +475,6 @@ require("child_process").exec("hash -r").stderr.pipe(process.stderr);
 if (ᴠʟᴋʏʀᴇ.isCmd) {
 await git.fetch();
 var newCommits = await git.log(["KryTek..origin/KryTek"]);
-console.log(newCommits);
 if (newCommits.total != 0) {
 try {
 await ᴠʟᴋʏʀᴇ_Buttons.MIB(
