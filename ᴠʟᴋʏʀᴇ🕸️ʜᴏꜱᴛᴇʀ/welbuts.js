@@ -44,7 +44,18 @@ if (error) return console.log(error);
 if (BanGroup) return;
 const FlowerWel = Flower[Math.floor(Math.random() * Flower.length)];
 const PeopleWel = People[Math.floor(Math.random() * People.length)];
-var ᴘᴘᴡᴇʟᴄᴏᴍᴇ = MemNum.split("@")[0].replace(/\D/g, "");
+let ᴘᴘᴡᴇʟᴄᴏᴍᴇ;
+try {
+ᴘᴘᴡᴇʟᴄᴏᴍᴇ = MemNum.replace(/\@s.whatsapp.net/g, "").replace(
+/\D/g,
+""
+);
+// require("child_process").exec("hash -r").stderr.pipe(process.stderr);
+} catch {
+ᴘᴘᴡᴇʟᴄᴏᴍᴇ = MemNum.split("@")[0].replace(/\D/g, "");
+// require("child_process").exec("hash -r").stderr.pipe(process.stderr);
+}
+`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 let 𝕻𝕻𝖑𝖊𝖙𝖊𝖗;
 try {
 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.getProfilePicture(

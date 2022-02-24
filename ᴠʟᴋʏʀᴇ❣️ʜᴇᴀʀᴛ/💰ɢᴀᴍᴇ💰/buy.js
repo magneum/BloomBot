@@ -28,7 +28,14 @@ async handle(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, chat, ᴠʟᴋʏʀᴇ, Needs,
 try {
 const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
 var ᴅꜰɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.commandName;
-const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/\D/g, "");
+let ᴘɴᴀᴍᴇ;
+try{
+ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/\@s.whatsapp.net/g, "").replace(/\D/g, "");
+// require("child_process").exec("hash -r").stderr.pipe(process.stderr);
+} catch {
+ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/\D/g, "");
+// require("child_process").exec("hash -r").stderr.pipe(process.stderr);
+}
 const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
 if (Needs.length > 0 && Needs[0].startsWith("@")) {
 var TagPerson = ᴠʟᴋʏʀᴇ.body.replace(

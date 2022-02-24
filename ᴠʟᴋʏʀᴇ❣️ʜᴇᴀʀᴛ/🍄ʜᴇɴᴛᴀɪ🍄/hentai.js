@@ -32,7 +32,14 @@ try {
 const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
 const ᴅꜰɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.commandName;
 var Raw = await akaneko.nsfw.hentai();
-const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/\D/g, "");
+let ᴘɴᴀᴍᴇ;
+try{
+ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/\@s.whatsapp.net/g, "").replace(/\D/g, "");
+// require("child_process").exec("hash -r").stderr.pipe(process.stderr);
+} catch {
+ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/\D/g, "");
+// require("child_process").exec("hash -r").stderr.pipe(process.stderr);
+}
 const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 if (ᴠʟᴋʏʀᴇ.isGroup && !ᴠʟᴋʏʀᴇ.isSenderGroupAdmin && !ᴠʟᴋʏʀᴇ.isSenderDev) {

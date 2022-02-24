@@ -33,7 +33,14 @@ const ᴅꜰɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.commandName;
 const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
 if (ᴠʟᴋʏʀᴇ.isReply) {
 const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
-const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/\D/g, "");
+let ᴘɴᴀᴍᴇ;
+try {
+ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/\@s.whatsapp.net/g, "").replace(/\D/g, "");
+// require("child_process").exec("hash -r").stderr.pipe(process.stderr);
+} catch {
+ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/\D/g, "");
+// require("child_process").exec("hash -r").stderr.pipe(process.stderr);
+}
 console.log(ᴘɴᴀᴍᴇ);
 var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
 var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
@@ -49,7 +56,14 @@ contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ, Receiver] },
 .catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
 } else {
 const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
-const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/\D/g, "");
+let ᴘɴᴀᴍᴇ;
+try {
+ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/\@s.whatsapp.net/g, "").replace(/\D/g, "");
+// require("child_process").exec("hash -r").stderr.pipe(process.stderr);
+} catch {
+ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/\D/g, "");
+// require("child_process").exec("hash -r").stderr.pipe(process.stderr);
+}
 console.log(ᴘɴᴀᴍᴇ);
 return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .sendMessage(ᴠʟᴋʏʀᴇ.chatId, { url: MediaUrl }, MessageType.video, {

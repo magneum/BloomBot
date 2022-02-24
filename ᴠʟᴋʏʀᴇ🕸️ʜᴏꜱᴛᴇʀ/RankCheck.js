@@ -45,7 +45,14 @@ const RankCheck = async (ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, chat, ᴠʟᴋʏ�
 try {
 const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
 var աɦօֆɛ = Math.floor(1000 + Math.random() * 9000);
-const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/\D/g, "");
+let ᴘɴᴀᴍᴇ;
+try {
+ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/\@s.whatsapp.net/g, "").replace(/\D/g, "");
+// require("child_process").exec("hash -r").stderr.pipe(process.stderr);
+} catch {
+ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/\D/g, "");
+// require("child_process").exec("hash -r").stderr.pipe(process.stderr);
+}
 try {
 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.getProfilePicture(ʟɴᴀᴍᴇ);
 } catch {
