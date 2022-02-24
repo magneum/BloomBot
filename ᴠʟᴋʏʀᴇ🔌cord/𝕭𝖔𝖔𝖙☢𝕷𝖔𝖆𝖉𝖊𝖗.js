@@ -30,6 +30,7 @@ const ᴠʟᴋʏʀᴇgoose = require("mongoose");
 const git = require(`simple-git`)();
 const fetch = require(`node-fetch`);
 const { Tǟɮ } = require(`../🪑Tǟɮ`);
+const { table } = require("table");
 const Kolor = require(`chalk`);
 const ms = require(`parse-ms`);
 const os = require(`os`);
@@ -302,7 +303,9 @@ mimetype: Mimetype.png,
 contextInfo: {
 mentionedJid: [tag],
 },
-caption: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™\nᴘʏᴛʜᴏɴ𓆘+☊ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ
+caption: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${
+vers.vers
+}\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™\nᴘʏᴛʜᴏɴ𓆘+☊ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ
 
 
 *🛸Attention Here Everyone In the Group!🛸*
@@ -323,7 +326,9 @@ ${update.desc}`,
 return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .sendMessage(groupupdateID.id, { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 }, MessageType.image, {
 mimetype: Mimetype.png,
-caption: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™\nᴘʏᴛʜᴏɴ𓆘+☊ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ
+caption: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${
+vers.vers
+}\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™\nᴘʏᴛʜᴏɴ𓆘+☊ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ
 
 *🛸Attention Here Everyone In the Group!🛸*
 ╔═══════༻꧂
@@ -340,7 +345,9 @@ caption: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴄᴏᴘʏʀɪɢʜ�
 return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .sendMessage(groupupdateID.id, { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 }, MessageType.image, {
 mimetype: Mimetype.png,
-caption: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™\nᴘʏᴛʜᴏɴ𓆘+☊ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ
+caption: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${
+vers.vers
+}\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™\nᴘʏᴛʜᴏɴ𓆘+☊ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ
 
 *🛸Attention Here Everyone In the Group!🛸*
 ╔═══════༻꧂
@@ -753,7 +760,31 @@ chat,
 `❣「 *@${ᴘɴᴀᴍᴇ}* 」❣  ❌ No Such Command In Database!`
 );
 }
-console.log(chat);
+const data = [[chat]];
+const config = {
+border: {
+topBody: `─`,
+topJoin: `┬`,
+topLeft: `┌`,
+topRight: `┐`,
+
+bottomBody: `─`,
+bottomJoin: `┴`,
+bottomLeft: `└`,
+bottomRight: `┘`,
+
+bodyLeft: `│`,
+bodyRight: `│`,
+bodyJoin: `│`,
+
+joinBody: `─`,
+joinLeft: `├`,
+joinRight: `┤`,
+joinJoin: `┼`,
+},
+};
+console.log(Kolor.green(table(data, config)));
+
 console.log(
 Kolor.green(
 "⬡═══════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟"
