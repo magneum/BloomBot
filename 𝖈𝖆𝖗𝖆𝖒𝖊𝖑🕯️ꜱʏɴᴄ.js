@@ -68,7 +68,7 @@ if (content.indexOf("ᴀʙ™") > -1 === false) process.exit(0);
 })
 .stderr.on("data", (chunk) => assert.fail(chunk.toString()));
 }
-console.log(Kolor.yellow("💡𝐈𝐧𝐟𝐨꧂ Connecting to Database."));
+console.log(Kolor.yellow("💡𝐈𝐧𝐟𝐨꧂ Connecting to Database..."));
 try {
 await ᴠʟᴋʏʀᴇgoose
 .connect(_𝔏𝔞𝔟_.VLKYREMDB, {
@@ -83,19 +83,14 @@ process.exit(0);
 });
 } finally {
 console.log(Kolor.green("💡𝐈𝐧𝐟𝐨꧂ Connected With Database..."));
-console.log(
-Kolor.green("💡𝐈𝐧𝐟𝐨꧂ All models were synchronized successfully.")
-);
-console.log(
-Kolor.green(
-"💡𝐈𝐧𝐟𝐨꧂ Connected Enjoy Vlkyre!\n\n⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟"
-)
-);
-}
+console.log(Kolor.green("💡𝐈𝐧𝐟𝐨꧂ All models were synchronized successfully..."));
 await ᴠʟᴋʏʀᴇ().catch((error) => {
 console.log(Kolor.red(error));
 process.exit(0);
 });
+}
+console.log(Kolor.green("💡𝐈𝐧𝐟𝐨꧂ Connected..."));
+console.log(Kolor.green("|⬡|❝  Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ❞|⬡|"));
 })();
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 /*        
