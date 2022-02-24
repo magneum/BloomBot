@@ -14,6 +14,7 @@ const ᴠʟᴋʏʀᴇgoose = require("mongoose");
 const { spawn } = require("child_process");
 const _𝔏𝔞𝔟_ = require(`./ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/_𝔏𝔞𝔟_`);
 const ᴠʟᴋʏʀᴇ = require("./ᴠʟᴋʏʀᴇ🔌cord/𝕭𝖔𝖔𝖙☢𝕷𝖔𝖆𝖉𝖊𝖗");
+require("child_process").exec("export TERM=xterm-256color").stderr.pipe(process.stderr);
 try {
 if (fs.existsSync("package-lock.json")) {
 var PkgRm = require("child_process").exec("rm package-lock.json");
