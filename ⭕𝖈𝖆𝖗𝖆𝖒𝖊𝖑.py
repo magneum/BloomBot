@@ -20,7 +20,7 @@ load_dotenv("./ᴠʟᴋʏʀᴇ™.env")
 𝖈𝖔𝖗𝖑𝖊𝖝 = getenv("HEROKU", None)
 ᴠʟᴋʏʀᴇi = getenv("CODE", None)
 BFS = 64 * 1024
-os.system("cd ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ")
+subprocess.run(["export", "TERM=xterm-256color"], check=True, stdout=subprocess.PIPE).stdout
 class InterceptHandler(logging.Handler):
     LEVELS_MAP = {
         logging.CRITICAL: "CRITICAL",

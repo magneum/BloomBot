@@ -14,7 +14,6 @@ const ᴠʟᴋʏʀᴇgoose = require("mongoose");
 const { spawn } = require("child_process");
 const _𝔏𝔞𝔟_ = require(`./ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/_𝔏𝔞𝔟_`);
 const ᴠʟᴋʏʀᴇ = require("./ᴠʟᴋʏʀᴇ🔌cord/𝕭𝖔𝖔𝖙☢𝕷𝖔𝖆𝖉𝖊𝖗");
-require("child_process").exec("export TERM=xterm-256color").stderr.pipe(process.stderr);
 try {
 if (fs.existsSync("package-lock.json")) {
 var PkgRm = require("child_process").exec("rm package-lock.json");
@@ -30,6 +29,10 @@ process.exitCode = 1;
 }
 } catch (error) {
 console.log(Kolor.red(error));
+} finally {
+require("child_process")
+.exec("export TERM=xterm-256color")
+.stderr.pipe(process.stderr);
 }
 (async () => {
 await git.fetch();
@@ -84,7 +87,9 @@ process.exit(0);
 });
 } finally {
 console.log(Kolor.green("💡𝐈𝐧𝐟𝐨꧂ Connected With Database..."));
-console.log(Kolor.green("💡𝐈𝐧𝐟𝐨꧂ All models were synchronized successfully..."));
+console.log(
+Kolor.green("💡𝐈𝐧𝐟𝐨꧂ All models were synchronized successfully...")
+);
 await ᴠʟᴋʏʀᴇ().catch((error) => {
 console.log(Kolor.red(error));
 process.exit(0);
