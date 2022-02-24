@@ -55,7 +55,6 @@ files.push(path.resolve(path.join(folder, file)));
 for (let file of files) {
 var fils = [file];
 if (file == path.join(__dirname, __filename)) continue;
-console.log(fils);
 spawn("node", ["-c", file])
 .on("exit", () => {
 fs.readFile(file, function (err, content) {
