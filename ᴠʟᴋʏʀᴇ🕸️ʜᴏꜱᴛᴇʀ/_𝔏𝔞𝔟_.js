@@ -18,17 +18,27 @@ HEROKU: process.env.HEROKU,
 VLKYREYT: process.env.VLKYREYT,
 SPOTIFY_ID: process.env.SPOTIFY_ID,
 FOXTROT: `^[${process.env.FOXTROT}]`,
-RCLR: `./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_UnivB.png`,
+RCLR: ["/ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_UnivB.png", "/ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_Univ.png"],
 SPOTIFY_CLIENT: process.env.SPOTIFY_CLIENT,
 HASH: `https://chat.whatsapp.com/LKN8uVBd8ucHRHofz0jBSd`,
 HASHS: `https://chat.whatsapp.com/HKO5WLEZxMe3xWCyiv6vBu`,
 HASHSH: `https://chat.whatsapp.com/EIn3YFShFmkJ3fvAqf2rpn`,
 DEVL: process.env.DEVL === undefined ? `No` : process.env.DEVL,
 VLKYRE: process.env.VLKYRE === undefined ? `Null` : process.env.VLKYRE,
-VLKYREMDB: process.env.VLKYREMDB === undefined ? `Null` : process.env.VLKYREMDB,
-KATE: process.env.KATE === undefined? `918436686758,917430922909`: process.env.KATE,
-HEROKU_API_KEY: process.env.HEROKU_API_KEY === undefined? `Null`: process.env.HEROKU_API_KEY,
-HEROKU_APP_NAME: process.env.HEROKU_APP_NAME === undefined? `Null`: process.env.HEROKU_APP_NAME,
+VLKYREMDB:
+process.env.VLKYREMDB === undefined ? `Null` : process.env.VLKYREMDB,
+KATE:
+process.env.KATE === undefined
+? `918436686758,917430922909`
+: process.env.KATE,
+HEROKU_API_KEY:
+process.env.HEROKU_API_KEY === undefined
+? `Null`
+: process.env.HEROKU_API_KEY,
+HEROKU_APP_NAME:
+process.env.HEROKU_APP_NAME === undefined
+? `Null`
+: process.env.HEROKU_APP_NAME,
 };
 module.exports = env;
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
