@@ -86,13 +86,13 @@ await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .sendMessage(
 GroupID,
 {
-contentText: `❣️𝗠𝗲𝗻𝘁𝗶𝗼𝗻: ꧁ *@${ᴘᴘᴡᴇʟᴄᴏᴍᴇ}* ꧂
-꧁༺◇══════════════◇༻꧂
-🥞𝐖𝐞𝐥𝐜𝐨𝐦𝐞🥞
-꧁༺◇══════════════◇༻꧂
+contentText: `
+꧁◇══════════════◇꧂
+    🥞𝐖𝐞𝐥𝐜𝐨𝐦𝐞🥞
+    *@${ᴘᴘᴡᴇʟᴄᴏᴍᴇ}*
+꧁◇══════════════◇꧂
 
-╔════◇
-║
+╔══◇꧂
 ║${FlowerWel} 𝗕𝗶𝗼: ${GroupMemBio.status}
 ║${PeopleWel} 𝐌𝐞𝐦𝐛𝐞𝐫𝐳: ${GroupMemG}
 ║🎪 𝐆𝐫𝐨𝐮𝐩: ${GroupMemData.subject}
@@ -107,8 +107,8 @@ buttonText: { displayText: `${ᴋᴇɪ}help` },
 type: 1,
 },
 {
-buttonId: `${ᴋᴇɪ}faq`,
-buttonText: { displayText: `${ᴋᴇɪ}faq` },
+buttonId: `${ᴋᴇɪ}verify`,
+buttonText: { displayText: `${ᴋᴇɪ}verify` },
 type: 1,
 },
 ],
@@ -138,8 +138,8 @@ GroupID,
 contentText: `❣️𝗠𝗲𝗻𝘁𝗶𝗼𝗻: ꧁ *@${ᴘᴘᴡᴇʟᴄᴏᴍᴇ}* ꧂
 ╔◇══════════════◇༻꧂
 ┊  🥞𝐖𝐞𝐥𝐜𝐨𝐦𝐞𝐫🥞
-╚◇║
-╔◇║
+╚◇╗
+╔◇╝ 
 ║${FlowerWel} 𝗕𝗶𝗼: ${GroupMemBio.status}
 ║${PeopleWel} 𝐌𝐞𝐦𝐛𝐞𝐫𝐳: ${GroupMemG}
 ║🎪 𝐆𝐫𝐨𝐮𝐩: ${GroupMemData.subject}
@@ -156,8 +156,8 @@ buttonText: { displayText: `${ᴋᴇɪ}help` },
 type: 1,
 },
 {
-buttonId: `${ᴋᴇɪ}faq`,
-buttonText: { displayText: `${ᴋᴇɪ}faq` },
+buttonId: `${ᴋᴇɪ}verify`,
+buttonText: { displayText: `${ᴋᴇɪ}verify` },
 type: 1,
 },
 ],

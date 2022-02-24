@@ -85,9 +85,8 @@ var PokeInfo = `❣「 *@${ᴘɴᴀᴍᴇ}* 」❣
 ║🌟 *Base Experience:* ${json.base_experience}
 ║♀️ *Geder*: ${json.gender}
 ║★ *Egg Groups*: ${json.egg_groups}
-╚════════════╝
-
-╔⧉༻ 🌽𝐒𝐓𝐀𝐓𝐈𝐒𝐓𝐈𝐂𝐒 ꧂
+╚◇╗
+╔◇╝  🌽𝐒𝐓𝐀𝐓𝐈𝐒𝐓𝐈𝐂𝐒 ꧂
 ║
 ║✳ *HP:* ${json.stats.hp}
 ║⚔ *Attack:* ${json.stats.attack}
@@ -96,9 +95,8 @@ var PokeInfo = `❣「 *@${ᴘɴᴀᴍᴇ}* 」❣
 ║🛡 *Special Defense:* ${json.stats.sp_def}
 ║🎐 *Speed:* ${json.stats.speed}
 ║🍯 *Total*: ${json.stats.total}
-╚════════════╝
-
-╔⧉༻ 🌶️𝐅𝐀𝐌𝐈𝐋𝐘 ꧂
+╚◇╗
+╔◇╝  🌶️𝐅𝐀𝐌𝐈𝐋𝐘 ꧂
 ║
 ║🌸 *Evolved Stage:* ${json.family.evolutionStage}
 ║💮 *Evolved Line:* ${json.family.evolutionLine}
