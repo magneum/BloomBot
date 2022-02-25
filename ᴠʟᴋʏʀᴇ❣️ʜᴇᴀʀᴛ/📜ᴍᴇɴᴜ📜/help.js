@@ -150,6 +150,7 @@ contentText: `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
 ╔◇╝  👇🏽𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫𝐬👇🏽
 ║📥• ${ᴋᴇɪ}play: (80mb max)
 ║📥• ${ᴋᴇɪ}watch: (50mb max)
+║📥• ${ᴋᴇɪ}soundcloud
 ║📥• ${ᴋᴇɪ}spotify
 ║📥• ${ᴋᴇɪ}instagram
 ║📥• ${ᴋᴇɪ}facebook
