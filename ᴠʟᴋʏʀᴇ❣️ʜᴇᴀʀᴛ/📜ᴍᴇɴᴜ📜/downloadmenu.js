@@ -39,6 +39,7 @@ var MainText = `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
 ║•  ${ᴋᴇɪ}play: _download audio using yt_
 ║•  ${ᴋᴇɪ}watch: _download video using yt_
 ║•  ${ᴋᴇɪ}spotify: _download using spotify link_
+║•  ${ᴋᴇɪ}soundcloud: _download using soundcloud link_
 ║•  ${ᴋᴇɪ}instagram: _download using ig link_
 ║•  ${ᴋᴇɪ}facebook: _download using fb link_
 ╚════════════╝`;
