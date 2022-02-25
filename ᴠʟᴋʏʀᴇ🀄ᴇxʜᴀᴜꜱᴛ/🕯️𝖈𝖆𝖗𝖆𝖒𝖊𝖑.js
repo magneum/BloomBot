@@ -12,8 +12,8 @@ const assert = require("assert");
 const git = require("simple-git")();
 const ᴠʟᴋʏʀᴇgoose = require("mongoose");
 const { spawn } = require("child_process");
-const _𝔏𝔞𝔟_ = require(`./ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/_𝔏𝔞𝔟_`);
-const ᴠʟᴋʏʀᴇ = require("./ᴠʟᴋʏʀᴇ🔌cord/𝕭𝖔𝖔𝖙☢𝕷𝖔𝖆𝖉𝖊𝖗");
+const _𝔏𝔞𝔟_ = require(`../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/_𝔏𝔞𝔟_`);
+const ᴠʟᴋʏʀᴇ = require("../ᴠʟᴋʏʀᴇ🔌cord/𝕭𝖔𝖔𝖙☢𝕷𝖔𝖆𝖉𝖊𝖗");
 try {
 if (fs.existsSync("package-lock.json")) {
 var PkgRm = require("child_process").exec("rm package-lock.json");
@@ -55,7 +55,7 @@ process.exitCode = 1;
 console.log(Kolor.red(error));
 }
 }
-let folders = [".", ...Object.keys(require("./package.json").directories)];
+let folders = [".", ...Object.keys(require("../package.json").directories)];
 let files = [];
 for (let folder of folders)
 for (let file of fs.readdirSync(folder).filter((v) => v.endsWith(`.js`)))
