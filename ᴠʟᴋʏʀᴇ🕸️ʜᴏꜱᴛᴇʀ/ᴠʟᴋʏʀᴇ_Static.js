@@ -41,7 +41,7 @@ require("child_process").exec("hash -r").stderr.pipe(process.stderr);
 ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/\D/g, "");
 require("child_process").exec("hash -r").stderr.pipe(process.stderr);
 }
-console.log(ᴘɴᴀᴍᴇ);
+
 var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
 var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
 return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
@@ -64,7 +64,7 @@ require("child_process").exec("hash -r").stderr.pipe(process.stderr);
 ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/\D/g, "");
 require("child_process").exec("hash -r").stderr.pipe(process.stderr);
 }
-console.log(ᴘɴᴀᴍᴇ);
+
 return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .sendMessage(ᴠʟᴋʏʀᴇ.chatId, { url: MediaUrl }, MessageType.video, {
 mimetype: `video/gif`,

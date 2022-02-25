@@ -32,7 +32,7 @@ require("child_process").exec("hash -r").stderr.pipe(process.stderr);
 ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/\D/g, "");
 require("child_process").exec("hash -r").stderr.pipe(process.stderr);
 }
-console.log(ᴘɴᴀᴍᴇ);
+
 var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
 var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
 const buttonMessage = {
@@ -63,7 +63,7 @@ require("child_process").exec("hash -r").stderr.pipe(process.stderr);
 ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/\D/g, "");
 require("child_process").exec("hash -r").stderr.pipe(process.stderr);
 }
-console.log(ᴘɴᴀᴍᴇ);
+
 const ᴅꜰɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.commandName;
 const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
 const buttonMessage = {
@@ -108,7 +108,7 @@ require("child_process").exec("hash -r").stderr.pipe(process.stderr);
 ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/\D/g, "");
 require("child_process").exec("hash -r").stderr.pipe(process.stderr);
 }
-console.log(ᴘɴᴀᴍᴇ);
+
 var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
 var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
 const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
@@ -150,7 +150,7 @@ require("child_process").exec("hash -r").stderr.pipe(process.stderr);
 ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/\D/g, "");
 require("child_process").exec("hash -r").stderr.pipe(process.stderr);
 }
-console.log(ᴘɴᴀᴍᴇ);
+
 const ᴅꜰɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.commandName;
 const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
 const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
@@ -206,7 +206,7 @@ require("child_process").exec("hash -r").stderr.pipe(process.stderr);
 ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/\D/g, "");
 require("child_process").exec("hash -r").stderr.pipe(process.stderr);
 }
-console.log(ᴘɴᴀᴍᴇ);
+
 var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
 var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
 const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
@@ -248,7 +248,7 @@ require("child_process").exec("hash -r").stderr.pipe(process.stderr);
 ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/\D/g, "");
 require("child_process").exec("hash -r").stderr.pipe(process.stderr);
 }
-console.log(ᴘɴᴀᴍᴇ);
+
 const ᴅꜰɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.commandName;
 const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
 const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
@@ -298,7 +298,7 @@ require("child_process").exec("hash -r").stderr.pipe(process.stderr);
 ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/\D/g, "");
 require("child_process").exec("hash -r").stderr.pipe(process.stderr);
 }
-console.log(ᴘɴᴀᴍᴇ);
+
 var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
 var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
 const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
@@ -340,7 +340,7 @@ require("child_process").exec("hash -r").stderr.pipe(process.stderr);
 ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/\D/g, "");
 require("child_process").exec("hash -r").stderr.pipe(process.stderr);
 }
-console.log(ᴘɴᴀᴍᴇ);
+
 const ᴅꜰɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.commandName;
 const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
 const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
@@ -396,7 +396,7 @@ require("child_process").exec("hash -r").stderr.pipe(process.stderr);
 ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/\D/g, "");
 require("child_process").exec("hash -r").stderr.pipe(process.stderr);
 }
-console.log(ᴘɴᴀᴍᴇ);
+
 var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
 var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
 } else {
@@ -409,7 +409,7 @@ require("child_process").exec("hash -r").stderr.pipe(process.stderr);
 ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/\D/g, "");
 require("child_process").exec("hash -r").stderr.pipe(process.stderr);
 }
-console.log(ᴘɴᴀᴍᴇ);
+
 const ᴅꜰɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.commandName;
 const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
 }
@@ -462,7 +462,7 @@ require("child_process").exec("hash -r").stderr.pipe(process.stderr);
 ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/\D/g, "");
 require("child_process").exec("hash -r").stderr.pipe(process.stderr);
 }
-console.log(ᴘɴᴀᴍᴇ);
+
 var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
 var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
 } else {
@@ -475,7 +475,7 @@ require("child_process").exec("hash -r").stderr.pipe(process.stderr);
 ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/\D/g, "");
 require("child_process").exec("hash -r").stderr.pipe(process.stderr);
 }
-console.log(ᴘɴᴀᴍᴇ);
+
 const ᴅꜰɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.commandName;
 const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
 }
