@@ -28,7 +28,7 @@ const moment = require(`moment-timezone`);
 const speed = require(`performance-now`);
 const git = require(`simple-git`)();
 const fetch = require(`node-fetch`);
-const { Tǟɮ } = require(`../🪑Tǟɮ`);
+const { 𝖈𝖍𝖆𝖎𝖗 } = require(`../🪑𝖈𝖍𝖆𝖎𝖗`);
 const { table } = require("table");
 const Kolor = require(`chalk`);
 const ms = require(`parse-ms`);
@@ -117,7 +117,7 @@ Kolor.green(
 )
 );
 console.log(Kolor.yellow("💡𝐈𝐧𝐟𝐨꧂ Verifying All Modules And Syncing..."));
-await Tǟɮ(ꜱɪᴛʀᴀᴘ);
+await 𝖈𝖍𝖆𝖎𝖗(ꜱɪᴛʀᴀᴘ);
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 const used = process.memoryUsage();
 const cpus = os.cpus().map((cpu) => {
