@@ -96,6 +96,7 @@ RUN python -m venv $ᴋʀᴀᴋɪɴᴢ⌬ʟᴀʙ
 ENV PATH "$ᴋʀᴀᴋɪɴᴢ⌬ʟᴀʙ/bin:$PATH"
 RUN apt-get update 
 RUN apt-get upgrade -y 
+RUN apt-get install jq -y
 RUN apt-get install git -y 
 RUN apt-get install curl -y 
 RUN apt-get install wget -y 

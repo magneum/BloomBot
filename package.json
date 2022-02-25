@@ -183,11 +183,13 @@
     "youtube-audio-stream": "^0.3.48",
     "youtube-duration": "^1.0.0",
     "youtube-metadata-from-url": "^1.0.3",
+    "youtube-playlist": "^1.0.4",
     "youtube-playlist-downloader": "^1.0.2",
     "youtube-sr": "^4.0.1",
     "yt-dl-playlist": "^2.1.0",
     "yt-search": "^2.10.3",
     "ytdl-core": "^4.9.1",
+    "ytfps": "^1.0.5",
     "ytpl": "^2.2.3"
   },
   "devDependencies": {
