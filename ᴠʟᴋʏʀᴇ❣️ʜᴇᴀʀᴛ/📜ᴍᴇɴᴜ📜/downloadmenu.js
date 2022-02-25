@@ -36,11 +36,8 @@ var MediaUrl = _𝔏𝔞𝔟_.RCLR;
 var MainText = `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
 ╔════⧉📥 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫𝐬
 ║
-║•  ${ᴋᴇɪ}play: _5m youtube music download (fastest)_
-║•  ${ᴋᴇɪ}song: _20m youtube music download_
-║•  ${ᴋᴇɪ}youtube:_30m youtube music download (longest)_
-║•  ${ᴋᴇɪ}watch: _5m youtube video download (fastest)_
-║•  ${ᴋᴇɪ}stream: _20m youtube video download (longest)_
+║•  ${ᴋᴇɪ}play: _download audio using yt_
+║•  ${ᴋᴇɪ}watch: _download video using yt_
 ║•  ${ᴋᴇɪ}spotify: _download using spotify link_
 ║•  ${ᴋᴇɪ}instagram: _download using ig link_
 ║•  ${ᴋᴇɪ}facebook: _download using fb link_
