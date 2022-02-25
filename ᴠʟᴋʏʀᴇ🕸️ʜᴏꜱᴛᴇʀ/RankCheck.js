@@ -39,12 +39,12 @@ var expFile = `./ᴠʟᴋʏʀᴇ🀄ᴇxʜᴀᴜꜱᴛ/${Date.now()}r${chat.key.
 try {
 const randomAmountOfXp = Math.floor(Math.random() * 29) + 1;
 const user = await Levels.fetch(ʟɴᴀᴍᴇ, ᴠʟᴋʏʀᴇ.chatId, true);
-if (!user) await Levels.createUser(ʟɴᴀᴍᴇ, ᴠʟᴋʏʀᴇ.chatId);
-const hasLeveledUp = await Levels.appendXp(
-ʟɴᴀᴍᴇ,
-ᴠʟᴋʏʀᴇ.chatId,
-randomAmountOfXp
-);
+if (!user) {
+await Levels.createUser(ʟɴᴀᴍᴇ, ᴠʟᴋʏʀᴇ.chatId);
+await Levels.setLevel(ʟɴᴀᴍᴇ, ᴠʟᴋʏʀᴇ.chatId, 1);
+await Levels.setXp(ʟɴᴀᴍᴇ, ᴠʟᴋʏʀᴇ.chatId, 1);
+}
+const hasLeveledUp = await Levels.appendXp(ʟɴᴀᴍᴇ,ᴠʟᴋʏʀᴇ.chatId,randomAmountOfXp);
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 if (hasLeveledUp) {
 try {
