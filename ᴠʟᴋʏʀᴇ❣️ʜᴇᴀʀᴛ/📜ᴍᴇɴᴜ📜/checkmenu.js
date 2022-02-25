@@ -40,6 +40,10 @@ var MainText = `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
 ║• *${ᴋᴇɪ}lesbocheck:*  _@tag person or reply person_
 ║• *${ᴋᴇɪ}beautycheck:*  _@tag person or reply person_
 ║• *${ᴋᴇɪ}dumbcheck:*  _@tag person or reply person_
+║• *${ᴋᴇɪ}gay:*  _@tag person or reply person_
+║• *${ᴋᴇɪ}lesbo:*  _@tag person or reply person_
+║• *${ᴋᴇɪ}beauty:*  _@tag person or reply person_
+║• *${ᴋᴇɪ}dumb:*  _@tag person or reply person_
 ╚════════════╝`;
 return ᴠʟᴋʏʀᴇ_Buttons
 .MIB(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, chat, ᴠʟᴋʏʀᴇ, MainText, MediaUrl)
