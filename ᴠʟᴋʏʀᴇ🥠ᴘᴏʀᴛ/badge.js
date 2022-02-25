@@ -5,12 +5,12 @@
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 var mongoose = require("mongoose");
 var BadgeSchema = new mongoose.Schema({
-ID: String,
-Badge: String,
-value: String,
-Limits: Number,
-CurrentLimitTime: Number,
-PermanentLimitTime: Number,
+  ID: String,
+  Badge: String,
+  value: String,
+  Limits: Number,
+  CurrentLimitTime: Number,
+  PermanentLimitTime: Number,
 });
 module.exports = mongoose.model("Badge", BadgeSchema);
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
