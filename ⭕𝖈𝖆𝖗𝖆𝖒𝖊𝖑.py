@@ -165,7 +165,7 @@ if ᴠʟᴋʏʀᴇi is not None:
             vlkpy = 𝖛.cmd.Git("./")
             vlkpy.pull()
             os.system("clear")   
-            os.system('node --no-warnings 𝖈𝖆𝖗𝖆𝖒𝖊𝖑🕯️ꜱʏɴᴄ.js')
+            os.system('node --no-warnings 🕯️𝖈𝖆𝖗𝖆𝖒𝖊𝖑.js')
         else:
             os.remove("xp0e.zip")
             os.remove("xp0e.aes")
