@@ -165,6 +165,7 @@
     "simple-swizzle": "^0.2.2",
     "songlyrics": "^2.2.4",
     "soundcloud-downloader": "^1.0.0",
+    "soundcloud-scraper": "^5.0.2",
     "soyultro": "^4.8.5",
     "spinnies": "^0.5.1",
     "sqlite3": "^5.0.2",

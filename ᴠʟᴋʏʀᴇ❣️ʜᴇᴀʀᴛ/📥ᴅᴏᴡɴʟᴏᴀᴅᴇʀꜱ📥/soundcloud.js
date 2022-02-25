@@ -9,7 +9,9 @@ const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const cleanRF = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/cleanRF`);
 const scdl = require("soundcloud-downloader").default;
 const _𝔏𝔞𝔟_ = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/_𝔏𝔞𝔟_`);
+const SoundScrapper = require("soundcloud-scraper");
 const ꜰᴜᴄᴋ = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/oShit`);
+const ScrapperClient = new SoundScrapper.Client();
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 const fs = require(`fs`);
@@ -167,9 +169,29 @@ chat,
 );
 }
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-await scdl.download(Needs[0]).then(async (stream) => {
-stream.pipe(fs.createWriteStream(FFmpegFile));
-stream.on("end", async (error) => {
+await ScrapperClient.getSongInfo(Needs[0]).then(async (song) => {
+await ᴠʟᴋʏʀᴇ_Buttons.MIB(
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+chat,
+ᴠʟᴋʏʀᴇ,
+`*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
+╔⧉༻🌿𝐓𝐨𝐩𝐢𝐜: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
+║🍻 𝐓𝐢𝐭𝐥𝐞: ${song.title}
+║🎵 𝗣𝗹𝗮𝘆𝗲𝗱: ${song.playCount}
+║⏰ 𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧: ${song.duration}
+║✒️ 𝐀𝐮𝐭𝐡𝐨𝐫: ${song.author.name}
+║👍🏽‍ 𝗟𝗶𝗸𝗲𝘀: ${song.likes}
+║⚡ 𝗚𝗲𝗻𝗿𝗲: ${song.genre}
+║🔗 𝐋𝐢𝐧𝐤: ${song.trackURL}
+╚════════════╝
+
+📜 𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${song.description}`,
+song.thumbnail
+);
+`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
+const stream = await song.downloadProgressive();
+const writer = stream.pipe(fs.createWriteStream(FFmpegFile));
+writer.on("finish", async (error) => {
 if (error) {
 console.log(`⬡═══════════════════| 🐞𝐄𝐫𝐫𝐨𝐫: \n` + error);
 userBadge.Limits = userBadge.Limits + 1;
@@ -180,7 +202,6 @@ await userBadge
 );
 return ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
 }
-`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 console.log(`⬡════════| ⭐𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐅𝐢𝐧𝐢𝐬𝐞𝐝⭐ |════════⬡`);
 return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .sendMessage(
@@ -196,7 +217,9 @@ MessageType.audio,
 });
 });
 }
-);
+).catch(async (error) => {
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
+});
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 } else {
 var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(ᴠʟᴋʏʀᴇ.commandName);
