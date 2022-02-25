@@ -534,9 +534,7 @@ if (
 !ᴠʟᴋʏʀᴇ.isSenderDev &&
 !ᴠʟᴋʏʀᴇ.body.includes(ᴋᴇɪ + "help") &&
 !ᴠʟᴋʏʀᴇ.body.includes(ᴋᴇɪ + "rules") &&
-!ᴠʟᴋʏʀᴇ.body.includes(ᴋᴇɪ + "faq") &&
-!ᴠʟᴋʏʀᴇ.body.includes(ᴋᴇɪ + "verify") &&
-!ᴠʟᴋʏʀᴇ.body.includes(ᴋᴇɪ + "menu")
+!ᴠʟᴋʏʀᴇ.body.includes(ᴋᴇɪ + "faq")
 ) {
 await AntiPm.AntiPm(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, chat, ᴠʟᴋʏʀᴇ);
 }
@@ -567,9 +565,7 @@ if (
 !ᴠʟᴋʏʀᴇ.isSenderDev &&
 !ᴠʟᴋʏʀᴇ.body.includes(ᴋᴇɪ + "help") &&
 !ᴠʟᴋʏʀᴇ.body.includes(ᴋᴇɪ + "rules") &&
-!ᴠʟᴋʏʀᴇ.body.includes(ᴋᴇɪ + "faq") &&
-!ᴠʟᴋʏʀᴇ.body.includes(ᴋᴇɪ + "verify") &&
-!ᴠʟᴋʏʀᴇ.body.includes(ᴋᴇɪ + "menu")
+!ᴠʟᴋʏʀᴇ.body.includes(ᴋᴇɪ + "faq")
 ) {
 return ᴠʟᴋʏʀᴇ_Buttons.MTB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
@@ -580,7 +576,6 @@ chat,
 ║ *${ᴋᴇɪ}help:* _read all commands of Vlkyre!_
 ║ *${ᴋᴇɪ}rules:* _read rules of Vlkyre!_
 ║ *${ᴋᴇɪ}faq:* _read frequesntly asked questions!_
-║ *${ᴋᴇɪ}verify:* _verify yourself to use Vlkyre!_
 ╚════════════╝`
 );
 }
