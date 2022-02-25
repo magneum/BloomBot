@@ -4,9 +4,7 @@
 
 # ☣️[𝕷𝖎𝖈𝖊𝖓𝖘𝖊](LICENSE)
  
-<p align="centre">
 <img  width="50%" height="50%" img src="https://github.com/Kryknz/Vlkyre/blob/KryTek/%E1%B4%A0%CA%9F%E1%B4%8B%CA%8F%CA%80%E1%B4%87%F0%9F%94%8Ccord/%E1%B4%A0%CA%9F%E1%B4%8B%CA%8F%CA%80%E1%B4%87_Univ.png" />
-</p>
 
 🍂[`(𝐜)𝐕𝐥𝐤𝐲𝐫𝐞/𝟏🍾`](https://chat.whatsapp.com/LKN8uVBd8ucHRHofz0jBSd)
 🍂[`(𝐜)𝐕𝐥𝐤𝐲𝐫𝐞/𝟐🍾`](https://chat.whatsapp.com/HKO5WLEZxMe3xWCyiv6vBu)
@@ -43,9 +41,8 @@
 ╚════════════꧂
 ```
 
-<p align="centre">
-<img  width="50%" height="50%" img src="https://github.com/Kryknz/Vlkyre/blob/KryTek/%E1%B4%A0%CA%9F%E1%B4%8B%CA%8F%CA%80%E1%B4%87%F0%9F%94%8Ccord/%E1%B4%A0%CA%9F%E1%B4%8B%CA%8F%CA%80%E1%B4%87_Univ.png" />
-</p>
+<img  width="50%" height="50%" img src="https://github.com/Kryknz/Vlkyre/blob/KryTek/%E1%B4%A0%CA%9F%E1%B4%8B%CA%8F%CA%80%E1%B4%87%F0%9F%94%8Ccord/%E1%B4%A0%CA%9F%E1%B4%8B%CA%8F%CA%80%E1%B4%87_UnivB.png" />
+
 
 # 🍂𝐃𝐞𝐩𝐥𝐨𝐲𝐦𝐞𝐧𝐭
 
