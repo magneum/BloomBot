@@ -197,6 +197,26 @@ oldd = performance.now();
 // MessageType.buttonsMessage
 // )
 // .catch((error) => console.log(error));
+console.log(
+Kolor.greenBright.bgBlack(`お 👑𝐔𝐬𝐞𝐫: ${
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.user.notify ||
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.user.vname ||
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.user.name ||
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.user.jid.split("@")[0]
+} ꧂
+
+╔⧉༻ *𝐕𝐥𝐤𝐲𝐫𝐞💡𝐎𝐧𝐥𝐢𝐧𝐞*
+║
+║🛰️ 𝐋𝐚𝐭𝐞𝐧𝐜𝐲: _${Ping}ms_
+║📅 𝐃𝐚𝐭𝐞: _${Clock}_
+║⚙️ 𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _Old: ${vers.verold} | New: ${vers.vers}_
+║💻 𝐏𝐥𝐚𝐭𝐟𝐨𝐫𝐦: _${os.platform()}_
+║☕ 𝐔𝐩𝐓𝐢𝐦𝐞: _${runtime(process.uptime())}_
+║🎮 𝐑𝐀𝐌: _${formatp(os.totalmem() - os.freemem())} / ${formatp(
+os.totalmem()
+)}_
+╚════════════╝`)
+);
 await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .sendMessage(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.user.jid,
