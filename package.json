@@ -61,7 +61,7 @@
   },
   "license": "Apache",
   "dependencies": {
-    "@adiwajshing/baileys": "^3.5.3",
+    "@adiwajshing/baileys": "^3.5.0",
     "@cicciosgamino/openweather-apis": "^5.0.1",
     "@distube/youtube-dl": "^2.2.4",
     "@ffmpeg-installer/ffmpeg": "^1.1.0",
