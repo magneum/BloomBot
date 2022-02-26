@@ -152,8 +152,6 @@ contentText: `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
 ║📥• ${ᴋᴇɪ}watch: (50mb max)
 ║📥• ${ᴋᴇɪ}soundcloud
 ║📥• ${ᴋᴇɪ}spotify
-║📥• ${ᴋᴇɪ}instagram
-║📥• ${ᴋᴇɪ}facebook
 ╚◇╗
 ╔◇╝  👇🏽𝐅𝐅𝐦𝐩𝐞𝐠👇🏽
 ║🗂️• ${ᴋᴇɪ}tomp3

@@ -42,8 +42,6 @@ var MainText =  `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
 ║•  ${ᴋᴇɪ}watch: _download video using yt_
 ║•  ${ᴋᴇɪ}spotify: _download using spotify link_
 ║•  ${ᴋᴇɪ}soundcloud: _download using soundcloud link_
-║•  ${ᴋᴇɪ}instagram: _download using ig link_
-║•  ${ᴋᴇɪ}facebook: _download using fb link_
 ╚════════════╝`;
 return ᴠʟᴋʏʀᴇ_Buttons
 .MIB(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, chat, ᴠʟᴋʏʀᴇ, MainText, MediaUrl)
