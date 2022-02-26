@@ -103,9 +103,8 @@ return ᴠʟᴋʏʀᴇ_Buttons.MTB(
 chat,
 ᴠʟᴋʏʀᴇ,
 `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
+✅𝐕𝐞𝐫𝐢𝐟𝐢𝐞𝐝 _Enjoy Vlkyre Premiums For Free!_
 
-🤖𝐕𝐞𝐫𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧🤖
-*Verified! Enjoy Vlkyre Premiums For Free*
 *Visit* _${Done}_`
 );
 }
