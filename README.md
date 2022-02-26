@@ -8,18 +8,11 @@
 🍾[`(𝐜)𝐕𝐥𝐤𝐲𝐫𝐞/𝟐`](https://chat.whatsapp.com/HKO5WLEZxMe3xWCyiv6vBu)
 🍾[`(𝐜)𝐕𝐥𝐤𝐲𝐫𝐞/𝟑`](https://chat.whatsapp.com/EIn3YFShFmkJ3fvAqf2rpn)
 
-```
-⚡𝐅𝐫𝐞𝐪𝐮𝐞𝐧𝐭𝐥𝐲 𝐀𝐬𝐤𝐞𝐝 𝐐𝐮𝐞𝐬𝐭𝐢𝐨𝐧𝐬
-╔⧉༻ ❓What is the reason/topic for this?
-║ ᴠʟᴋʏʀᴇ is an Advance Whatsapp User-Bot. You Can Use The Bot in your respective groups.
-╚◇╗
-╔◇╝ ❓I want to know how to deploy ᴠʟᴋʏʀᴇ.
-║ Not Allowed anymore!
-╚◇╗
-╔◇╝ ❓Please Help Me Out With The Commands.
-║ You can find all commands in #help.
-╚════════════꧂
-```
+
+
+# 🍂𝐃𝐞𝐩𝐥𝐨𝐲𝐦𝐞𝐧𝐭
+
+- [`☊ 𝐕𝐥𝐤𝐲𝐫𝐞`](https://Vlkyre.krakinzkon.repl.co)
 
 <p align="centre">
 <img  width="80%" height="80%" img src="https://github.com/Kryknz/Vlkyre/blob/KryTek/%E1%B4%A0%CA%9F%E1%B4%8B%CA%8F%CA%80%E1%B4%87%F0%9F%94%8Ccord/%E1%B4%A0%CA%9F%E1%B4%8B%CA%8F%CA%80%E1%B4%87git.png" />
@@ -41,14 +34,5 @@
 
 <img  width="50%" height="50%" img src="https://github.com/Kryknz/Vlkyre/blob/KryTek/%E1%B4%A0%CA%9F%E1%B4%8B%CA%8F%CA%80%E1%B4%87%F0%9F%94%8Ccord/%E1%B4%A0%CA%9F%E1%B4%8B%CA%8F%CA%80%E1%B4%87_UnivB.png" />
 
-
-# 🍂𝐃𝐞𝐩𝐥𝐨𝐲𝐦𝐞𝐧𝐭
-
-<a href="https://heroku.com/deploy">
-  <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
-</a>
-
-- Change [app.bot](app.bot) to app.json and then click on deploy!
-- And Expect Bot To Not Work as long as Repo Not Gets 50+ Likes!
 
 # ☣️[𝕷𝖎𝖈𝖊𝖓𝖘𝖊](LICENSE)
