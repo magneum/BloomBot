@@ -37,9 +37,11 @@ return ᴠʟᴋʏʀᴇ_Buttons.MIB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 ᴠʟᴋʏʀᴇ,
-`*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
+contentText: `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
+🍂 𝐕𝐥𝐤𝐲𝐫𝐞: _Is an Advance Whatsapp User-Bot!_
+🛰️ 𝐖𝐞𝐛𝐬𝐢𝐭𝐞: _https://KrakinzLab-Vlkyre.krakinzkon.repl.co_
+
 ╔════⧉🍣 𝐀𝐧𝐢𝐦𝐞
-║
 ║• *${ᴋᴇɪ}anime:*  _search any anime_
 ║• *${ᴋᴇɪ}ranimewall:*  _get random anime wallpaper_
 ║• *${ᴋᴇɪ}smile:*  _@tag or reply_ 

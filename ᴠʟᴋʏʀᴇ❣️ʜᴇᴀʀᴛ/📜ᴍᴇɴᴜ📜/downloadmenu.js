@@ -33,9 +33,11 @@ require("child_process").exec("hash -r").stderr.pipe(process.stderr);
 const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 var MediaUrl = _𝔏𝔞𝔟_.RCLR;
-var MainText = `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
+var MainText =  `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
+🍂 𝐕𝐥𝐤𝐲𝐫𝐞: _Is an Advance Whatsapp User-Bot!_
+🛰️ 𝐖𝐞𝐛𝐬𝐢𝐭𝐞: _https://KrakinzLab-Vlkyre.krakinzkon.repl.co_
+
 ╔════⧉📥 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫𝐬
-║
 ║•  ${ᴋᴇɪ}play: _download audio using yt_
 ║•  ${ᴋᴇɪ}watch: _download video using yt_
 ║•  ${ᴋᴇɪ}spotify: _download using spotify link_
