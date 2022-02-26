@@ -1,9 +1,7 @@
 [![Open Source Love svg3](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)<img align="centre" src="https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg" alt="KryKnz"/><img align="centre" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"/>
 
-# 🍂❮❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞❯🍂
+# 🛰️[❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞](https://KrakinzLab-Vlkyre.krakinzkon.repl.co) 
 
-# ☣️[𝕷𝖎𝖈𝖊𝖓𝖘𝖊](LICENSE)
- 
 <img  width="50%" height="50%" img src="https://github.com/Kryknz/Vlkyre/blob/KryTek/%E1%B4%A0%CA%9F%E1%B4%8B%CA%8F%CA%80%E1%B4%87%F0%9F%94%8Ccord/%E1%B4%A0%CA%9F%E1%B4%8B%CA%8F%CA%80%E1%B4%87_Univ.png" />
 
 🍾[`(𝐜)𝐕𝐥𝐤𝐲𝐫𝐞/𝟏`](https://chat.whatsapp.com/LKN8uVBd8ucHRHofz0jBSd)
@@ -52,3 +50,5 @@
 
 - Change [app.bot](app.bot) to app.json and then click on deploy!
 - And Expect Bot To Not Work as long as Repo Not Gets 50+ Likes!
+
+# ☣️[𝕷𝖎𝖈𝖊𝖓𝖘𝖊](LICENSE)
