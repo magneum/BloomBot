@@ -194,6 +194,7 @@ Kolor.greenBright.bgBlack(`お 👑𝐔𝐬𝐞𝐫: ${
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.user.jid.split("@")[0]
 } ꧂
 
+🛰️ 𝐖𝐞𝐛𝐬𝐢𝐭𝐞: _https://KrakinzLab-Vlkyre.krakinzkon.repl.co_
 ╔⧉༻ *𝐕𝐥𝐤𝐲𝐫𝐞💡𝐎𝐧𝐥𝐢𝐧𝐞*
 ║
 ║🛰️ 𝐋𝐚𝐭𝐞𝐧𝐜𝐲: ${Ping}ms
@@ -217,6 +218,7 @@ contentText: `お 👑𝐔𝐬𝐞𝐫: ${
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.user.jid.split("@")[0]
 } ꧂
 
+🛰️ 𝐖𝐞𝐛𝐬𝐢𝐭𝐞: _https://KrakinzLab-Vlkyre.krakinzkon.repl.co_
 ╔⧉༻ *𝐕𝐥𝐤𝐲𝐫𝐞💡𝐎𝐧𝐥𝐢𝐧𝐞*
 ║
 ║🛰️ 𝐋𝐚𝐭𝐞𝐧𝐜𝐲: _${Ping}ms_
@@ -254,6 +256,7 @@ return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .sendMessage(groupupdateID.id, { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 }, MessageType.image, {
 mimetype: Mimetype.png,
 caption: `⌜𝐕𝐥𝐤𝐲𝐫𝐞 ×፝֟͜×${vers.vers}⌟\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™
+🛰️ 𝐖𝐞𝐛𝐬𝐢𝐭𝐞: _https://KrakinzLab-Vlkyre.krakinzkon.repl.co_
 
 ╔═══════༻꧂
 ║🛸 *Attention Here Everyone In the Group!🛸*
@@ -269,6 +272,7 @@ return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .sendMessage(groupupdateID.id, { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 }, MessageType.image, {
 mimetype: Mimetype.png,
 caption: `⌜𝐕𝐥𝐤𝐲𝐫𝐞 ×፝֟͜×${vers.vers}⌟\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™
+🛰️ 𝐖𝐞𝐛𝐬𝐢𝐭𝐞: _https://KrakinzLab-Vlkyre.krakinzkon.repl.co_
 
 ╔═══════༻꧂
 ║🛸 *Attention Here Everyone In the Group!🛸*
@@ -290,12 +294,10 @@ mentionedJid: [tag],
 caption: `⌜𝐕𝐥𝐤𝐲𝐫𝐞 ×፝֟͜×${
 vers.vers
 }⌟\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™
-
-
-*🛸Attention Here Everyone In the Group!🛸*
+🛰️ 𝐖𝐞𝐛𝐬𝐢𝐭𝐞: _https://KrakinzLab-Vlkyre.krakinzkon.repl.co_
 
 ╔═══════༻꧂
-║
+║🛸 *Attention Here Everyone In the Group!🛸*
 ║⛺ 𝐆𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _New Description Added_
 ║🎪 𝐆𝐍𝐚𝐦𝐞: ${groupupdateID.subject}
 ║💞 𝐆𝐌𝐞𝐦𝐛𝐞𝐫: ${groupupdateID.participants.length}
@@ -313,6 +315,7 @@ mimetype: Mimetype.png,
 caption: `⌜𝐕𝐥𝐤𝐲𝐫𝐞 ×፝֟͜×${
 vers.vers
 }⌟\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™
+🛰️ 𝐖𝐞𝐛𝐬𝐢𝐭𝐞: _https://KrakinzLab-Vlkyre.krakinzkon.repl.co_
 
 ╔═══════༻꧂
 ║🛸 *Attention Here Everyone In the Group!🛸*
@@ -331,6 +334,7 @@ mimetype: Mimetype.png,
 caption: `⌜𝐕𝐥𝐤𝐲𝐫𝐞 ×፝֟͜×${
 vers.vers
 }⌟\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™
+🛰️ 𝐖𝐞𝐛𝐬𝐢𝐭𝐞: _https://KrakinzLab-Vlkyre.krakinzkon.repl.co_
 
 ╔═══════༻꧂
 ║🛸 *Attention Here Everyone In the Group!🛸*
@@ -366,6 +370,9 @@ await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
 GroupID,
 {
 contentText: `👋🏻𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚, *To Admins Of This Group: Some Of Your Members Requested Our Vlkyre HQ to Add Our Bot In This Group.Have Fun!*
+🍂 𝐕𝐥𝐤𝐲𝐫𝐞: _Is an Advance Whatsapp User-Bot!_
+🛰️ 𝐖𝐞𝐛𝐬𝐢𝐭𝐞: _https://KrakinzLab-Vlkyre.krakinzkon.repl.co_
+
 
 
 ╔⧉༻ ⭕𝐅𝐨𝐫 𝐀𝐝𝐦𝐢𝐧𝐬 ꧂
@@ -484,7 +491,9 @@ await ᴠʟᴋʏʀᴇ_Buttons.MIB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 ᴠʟᴋʏʀᴇ,
-`*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡**
+`*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
+🍂 𝐕𝐥𝐤𝐲𝐫𝐞: _Is an Advance Whatsapp User-Bot!_
+🛰️ 𝐖𝐞𝐛𝐬𝐢𝐭𝐞: _https://KrakinzLab-Vlkyre.krakinzkon.repl.co_
 
 ╔⧉༻ 𝐕𝐥𝐤𝐲𝐫𝐞💡𝐔𝐩𝐝𝐚𝐭𝐢𝐧𝐠
 ║🍯 𝗦𝘁𝗮𝘁𝘂𝘀: _Update Pending!_
@@ -580,7 +589,10 @@ return ᴠʟᴋʏʀᴇ_Buttons.MTB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 ᴠʟᴋʏʀᴇ,
-`*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡**
+`*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
+🍂 𝐕𝐥𝐤𝐲𝐫𝐞: _Is an Advance Whatsapp User-Bot!_
+🛰️ 𝐖𝐞𝐛𝐬𝐢𝐭𝐞: _https://KrakinzLab-Vlkyre.krakinzkon.repl.co_
+
 ╔════◇🧀 𝗨𝘀𝗶𝗻𝗴 𝗩𝗹𝗸𝘆𝗿𝗲 𝗜𝗻 𝗣𝗿𝗶𝘃𝗮𝘁𝗲 𝗜𝘀 𝗡𝗼 𝗹𝗼𝗻𝗴𝗲𝗿 𝗔𝗹𝗹𝗼𝘄𝗲𝗱!
 ║ *${ᴋᴇɪ}help:* _read all commands of Vlkyre!_
 ║ *${ᴋᴇɪ}rules:* _read rules of Vlkyre!_
