@@ -58,7 +58,7 @@ for (var i = 0; i < gMetadata3.participants.length; i++) {
 member3[i] = gMetadata3.participants[i].jid;
 }
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-const Done = await Tinyurl("https://KrakinzLab-Vlkyre.krakinzkon.repl.co");
+const Done = "https://KrakinzLab-Vlkyre.krakinzkon.repl.co"
 if (
 !member1.includes(ʟɴᴀᴍᴇ) &&
 !member2.includes(ʟɴᴀᴍᴇ) &&

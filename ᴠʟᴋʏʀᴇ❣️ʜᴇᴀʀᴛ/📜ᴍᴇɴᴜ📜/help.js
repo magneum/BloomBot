@@ -85,6 +85,7 @@ return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 {
 contentText: `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
 🍂 𝐕𝐥𝐤𝐲𝐫𝐞: _Is an Advance Whatsapp User-Bot!_
+🛰️ 𝐖𝐞𝐛𝐬𝐢𝐭𝐞: _https://KrakinzLab-Vlkyre.krakinzkon.repl.co_
 
 ╔⧉༻ *𝐕𝐥𝐤𝐲𝐫𝐞💡𝐎𝐧𝐥𝐢𝐧𝐞*
 ║😏 𝗢𝘄𝗻𝗲𝗿: _${
