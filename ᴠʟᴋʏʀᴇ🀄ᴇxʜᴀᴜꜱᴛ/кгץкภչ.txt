@@ -7,4 +7,5 @@ requests
 pyAesCrypt
 GitPython
 termcolor
+chatterbot==1.0.4
 python-dotenv
