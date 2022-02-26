@@ -1,18 +1,12 @@
 [![Open Source Love svg3](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)<img align="centre" src="https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg" alt="KryKnz"/><img align="centre" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"/>
 
-# 🛰️[❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞](https://Vlkyre.krakinzkon.repl.co) 
+# 🛰️[❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ❞](https://Vlkyre.krakinzkon.repl.co) 
 
 <img  width="50%" height="50%" img src="https://github.com/Kryknz/Vlkyre/blob/KryTek/%E1%B4%A0%CA%9F%E1%B4%8B%CA%8F%CA%80%E1%B4%87%F0%9F%94%8Ccord/%E1%B4%A0%CA%9F%E1%B4%8B%CA%8F%CA%80%E1%B4%87_Univ.png" />
 
-🍾[`(𝐜)𝐕𝐥𝐤𝐲𝐫𝐞/𝟏`](https://chat.whatsapp.com/LKN8uVBd8ucHRHofz0jBSd)
-🍾[`(𝐜)𝐕𝐥𝐤𝐲𝐫𝐞/𝟐`](https://chat.whatsapp.com/HKO5WLEZxMe3xWCyiv6vBu)
-🍾[`(𝐜)𝐕𝐥𝐤𝐲𝐫𝐞/𝟑`](https://chat.whatsapp.com/EIn3YFShFmkJ3fvAqf2rpn)
-
-
-
 # 🍂𝐃𝐞𝐩𝐥𝐨𝐲𝐦𝐞𝐧𝐭
 
-- [`☊ 𝐕𝐥𝐤𝐲𝐫𝐞`](https://Vlkyre.krakinzkon.repl.co)
+- Visit: [`☊ 𝐕𝐥𝐤𝐲𝐫𝐞`](https://Vlkyre.krakinzkon.repl.co)
 
 <p align="centre">
 <img  width="80%" height="80%" img src="https://github.com/Kryknz/Vlkyre/blob/KryTek/%E1%B4%A0%CA%9F%E1%B4%8B%CA%8F%CA%80%E1%B4%87%F0%9F%94%8Ccord/%E1%B4%A0%CA%9F%E1%B4%8B%CA%8F%CA%80%E1%B4%87git.png" />
@@ -31,8 +25,3 @@
 ║ In short, Fork At Your Own Risk.
 ╚════════════꧂
 ```
-
-<img  width="50%" height="50%" img src="https://github.com/Kryknz/Vlkyre/blob/KryTek/%E1%B4%A0%CA%9F%E1%B4%8B%CA%8F%CA%80%E1%B4%87%F0%9F%94%8Ccord/%E1%B4%A0%CA%9F%E1%B4%8B%CA%8F%CA%80%E1%B4%87_UnivB.png" />
-
-
-# ☣️[𝕷𝖎𝖈𝖊𝖓𝖘𝖊](LICENSE)
