@@ -5,13 +5,21 @@
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 var shell = require("shelljs");
 const vers = require(`./package.json`);
+let date_ob = new Date();
+let date = ("0" + date_ob.getDate()).slice(-2);
+let month = ("0" + (date_ob.getMonth() + 1)).slice(-2);
+let year = date_ob.getFullYear();
+let hours = date_ob.getHours();
+let minutes = date_ob.getMinutes();
+let seconds = date_ob.getSeconds();
+`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 if (!shell.which("git")) {
 shell.echo("Sorry, this script requires git");
 shell.exit(1);
 }
 if (
 shell.exec(
-`git add --all && git commit -am " ⚡❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞⚡: v${vers.vers} | ${Date.now()}" && git push`
+`git add --all && git commit -am " ⚡❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞⚡: v${vers.vers} | ON: ${year + "-" + month + "-" + date + " " + hours + ":" + minutes + ":" + seconds}" && git push`
 ).code !== 0
 ) {
 shell.echo("Error: Git commit failed");
