@@ -37,7 +37,7 @@ var MainText = `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
 🍂 𝐕𝐥𝐤𝐲𝐫𝐞: _Is an Advance Whatsapp User-Bot!_
 🛰️ 𝐖𝐞𝐛𝐬𝐢𝐭𝐞: _https://KrakinzLab-Vlkyre.krakinzkon.repl.co_
 
-╔════⧉🥃 𝐇𝐮𝐦𝐚𝐧 𝐍𝐒𝐅𝐖
+╔════⧕🥃 𝐇𝐮𝐦𝐚𝐧 𝐍𝐒𝐅𝐖
 ║• *${ᴋᴇɪ}4k:*  _get random 4kporn img/gif_
 ║• *${ᴋᴇɪ}blowjob:*  _get random blowjob img/gif_
 ║• *${ᴋᴇɪ}milf:*  _get random milf img/gif_

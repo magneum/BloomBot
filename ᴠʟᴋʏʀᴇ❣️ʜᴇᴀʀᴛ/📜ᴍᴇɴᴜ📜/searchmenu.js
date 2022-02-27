@@ -37,7 +37,7 @@ var MainText = `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
 🍂 𝐕𝐥𝐤𝐲𝐫𝐞: _Is an Advance Whatsapp User-Bot!_
 🛰️ 𝐖𝐞𝐛𝐬𝐢𝐭𝐞: _https://KrakinzLab-Vlkyre.krakinzkon.repl.co_
 
-╔════⧉🔎 𝐒𝐞𝐚𝐫𝐜𝐡
+╔════⧕🔎 𝐒𝐞𝐚𝐫𝐜𝐡
 ║• *${ᴋᴇɪ}lyrics:*  _find lyrics of songs_
 ║• *${ᴋᴇɪ}wallpaper:*  _download wallpapers_
 ║• *${ᴋᴇɪ}google:*  _search anything on google_
