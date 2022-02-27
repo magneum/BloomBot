@@ -660,7 +660,7 @@ if (!userHalt) {
 var newHalt = new Halt({
 ID: ᴠʟᴋʏʀᴇ.sender,
 TimeOut: Date.now(),
-PermaTimeOut: 10000,
+PermaTimeOut: 5000,
 });
 await newHalt
 .save()
@@ -680,14 +680,14 @@ userHalt.PermaTimeOut - (Date.now() - userHalt.TimeOut)
 return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
 ᴠʟᴋʏʀᴇ.chatId,
 `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡**  
-❌ 𝗘𝗿𝗿𝗼𝗿: Wait For ${Time.seconds}/10s*`,
+❌ 𝗘𝗿𝗿𝗼𝗿: Wait For ${Time.seconds}/5s*`,
 MessageType.text,
 {
 contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
 }
 );
 }
-userHalt.PermaTimeOut = 10000;
+userHalt.PermaTimeOut = 5000;
 userHalt.TimeOut = Date.now();
 await userHalt
 .save()
