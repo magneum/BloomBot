@@ -36,7 +36,7 @@ if (
     } ❞" && git push`
   ).code !== 0
 ) {
-  shell.error(error);
+  shell.error();
   shell.echo("💡𝐈𝐧𝐟𝐨꧂ ");
   shell.exit(1);
 }
