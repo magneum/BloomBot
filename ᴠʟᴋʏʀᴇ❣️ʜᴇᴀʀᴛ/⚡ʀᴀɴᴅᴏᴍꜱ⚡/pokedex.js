@@ -71,7 +71,7 @@ await pokemon.card
 .then(async (card) => {
 try {
 var PokeInfo = `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
-╔⧉༻🌿𝐓𝐨𝐩𝐢𝐜: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
+╔⧕🌿𝐓𝐨𝐩𝐢𝐜: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
 ║
 ║💫 *Name:* ${json.name}
 ║〽️ *Pokedex ID:* ${json.id}
