@@ -6,7 +6,7 @@
 
 # 🍂𝐃𝐞𝐩𝐥𝐨𝐲𝐦𝐞𝐧𝐭
 
-- Visit: [`☊ 𝐕𝐥𝐤𝐲𝐫𝐞`](https://Vlkyre.krakinzkon.repl.co)
+- 𝐕𝐢𝐬𝐢𝐭: [`☊ 𝐕𝐥𝐤𝐲𝐫𝐞`](https://Vlkyre.krakinzkon.repl.co)
 
 # 🍂𝐃𝐢𝐬𝐜𝐥𝐚𝐢𝐦𝐞𝐫
 
