@@ -8,16 +8,6 @@
 
 - Visit: [`☊ 𝐕𝐥𝐤𝐲𝐫𝐞`](https://Vlkyre.krakinzkon.repl.co)
 
-# 🍂𝐃𝐢𝐬𝐜𝐥𝐚𝐢𝐦𝐞𝐫
 
-```
-╔⧉༻ 🦋𝐕𝐥𝐤𝐲𝐫𝐞
-║ We won't be responsible for any kind of ban due to this bot.
-║ Vlkyre was made for fun purpose and to make group management easier.
-║ It's your concern if you spam and gets your account banned.
-║ Also, Forks won't be entertained.
-║ If you fork this repo and edit plugins, it's your concern for further updates.
-║ Forking Repo is fine. But if you edit something we will not provide any help.
-║ In short, Fork At Your Own Risk.
-╚════════════꧂
-```
+
+- [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/KryKnz/Vlkyre.git/tree/autore)
