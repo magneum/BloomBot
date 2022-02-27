@@ -18,176 +18,176 @@ var scriptName = path.basename(__filename);
 var newScpt = scriptName.slice(0, -3).toLowerCase();
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 module.exports = {
-name: newScpt,
-ᴠʟᴋʏʀᴇӄǟɨʐօ: `*${ᴋᴇɪ}${newScpt}* _reply to person to ban_
+  name: newScpt,
+  ᴠʟᴋʏʀᴇӄǟɨʐօ: `*${ᴋᴇɪ}${newScpt}* _reply to person to ban_
 *${ᴋᴇɪ}${newScpt}* _don't reply to anyone and group will be banned_`,
-async handle(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, chat, ᴠʟᴋʏʀᴇ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
-try {
-const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
-const ᴅꜰɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.commandName;
-let ᴘɴᴀᴍᴇ;
-try {
-ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/\@s.whatsapp.net/g, "").replace(/\D/g, "");
-} catch {
-ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/\D/g, "");
-}
-const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
-`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-if (!ᴠʟᴋʏʀᴇ.fromMe && !ᴠʟᴋʏʀᴇ.isSenderDev) {
-return ᴠʟᴋʏʀᴇ_Buttons.MIB(
-ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
-chat,
-ᴠʟᴋʏʀᴇ,
-`*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*\n❌𝐃𝐞𝐧𝐢𝐞𝐝: _Owner/Dev Only.You Are Not Allowed!_`,
-"./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_OwnerOnly.png"
-);
-}
-`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-if (ᴠʟᴋʏʀᴇ.isReply) {
-var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
-var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
-if (Receiver === ʟɴᴀᴍᴇ) {
-return ᴠʟᴋʏʀᴇ_Buttons.MIB(
-ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
-chat,
-ᴠʟᴋʏʀᴇ,
-`🪶 𝐇𝐞𝐲: 
+  async handle(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, chat, ᴠʟᴋʏʀᴇ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
+    try {
+      const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
+      const ᴅꜰɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.commandName;
+      let ᴘɴᴀᴍᴇ;
+      try {
+        ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/\@s.whatsapp.net/g, "").replace(/\D/g, "");
+      } catch {
+        ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/\D/g, "");
+      }
+      const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
+      `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
+      if (!ᴠʟᴋʏʀᴇ.fromMe && !ᴠʟᴋʏʀᴇ.isSenderDev) {
+        return ᴠʟᴋʏʀᴇ_Buttons.MIB(
+          ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+          chat,
+          ᴠʟᴋʏʀᴇ,
+          `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*\n❌𝐃𝐞𝐧𝐢𝐞𝐝: _Owner/Dev Only.You Are Not Allowed!_`,
+          "./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_OwnerOnly.png"
+        );
+      }
+      `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
+      if (ᴠʟᴋʏʀᴇ.isReply) {
+        var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
+        var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
+        if (Receiver === ʟɴᴀᴍᴇ) {
+          return ᴠʟᴋʏʀᴇ_Buttons.MIB(
+            ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+            chat,
+            ᴠʟᴋʏʀᴇ,
+            `🪶 𝐇𝐞𝐲: 
 
 ╔════◇🛡️𝐒𝐮𝐝𝐨 𝐁𝐚𝐧
 ║🍕 𝐅𝐫𝐨𝐦: *@${ᴘɴᴀᴍᴇ}*
 ║❌ 𝗘𝗿𝗿𝗼𝗿: _Can't Ban My-Self_
 ╚════════════╝`,
-_𝔏𝔞𝔟_.RCLR
-);
-}
-}
-`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-if (!ᴠʟᴋʏʀᴇ.isGroup) {
-return ᴠʟᴋʏʀᴇ_Buttons.MIB(
-ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
-chat,
-ᴠʟᴋʏʀᴇ,
-`*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡* 
+            _𝔏𝔞𝔟_.RCLR
+          );
+        }
+      }
+      `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
+      if (!ᴠʟᴋʏʀᴇ.isGroup) {
+        return ᴠʟᴋʏʀᴇ_Buttons.MIB(
+          ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+          chat,
+          ᴠʟᴋʏʀᴇ,
+          `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡* 
 
 ╔════◇🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧 
 ║💡 _This Command is Only For Groups!_
 ╚════════════╝`,
-_𝔏𝔞𝔟_.RCLR
-);
-`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-} else if (ᴠʟᴋʏʀᴇ.isGroup && !ᴠʟᴋʏʀᴇ.isReply) {
-var groupData = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.groupMetadata(chat.key.remoteJid);
-Ban.findOne(
-{
-ID: ᴠʟᴋʏʀᴇ.chatId,
-},
-async (error, userBan) => {
-if (error) {
-ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
-return;
-}
-if (!userBan) {
-var newUser = new Ban({
-ID: ᴠʟᴋʏʀᴇ.chatId,
-});
-await newUser
-.save()
-.catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
-return ᴠʟᴋʏʀᴇ_Buttons.MIB(
-ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
-chat,
-ᴠʟᴋʏʀᴇ,
-`🪶 𝐇𝐞𝐲: 
+          _𝔏𝔞𝔟_.RCLR
+        );
+        `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
+      } else if (ᴠʟᴋʏʀᴇ.isGroup && !ᴠʟᴋʏʀᴇ.isReply) {
+        var groupData = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.groupMetadata(chat.key.remoteJid);
+        Ban.findOne(
+          {
+            ID: ᴠʟᴋʏʀᴇ.chatId,
+          },
+          async (error, userBan) => {
+            if (error) {
+              ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
+              return;
+            }
+            if (!userBan) {
+              var newUser = new Ban({
+                ID: ᴠʟᴋʏʀᴇ.chatId,
+              });
+              await newUser
+                .save()
+                .catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
+              return ᴠʟᴋʏʀᴇ_Buttons.MIB(
+                ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+                chat,
+                ᴠʟᴋʏʀᴇ,
+                `🪶 𝐇𝐞𝐲: 
 
 ╔════◇🛡️𝐒𝐮𝐝𝐨 𝐁𝐚𝐧
 ║🍕 𝐅𝐫𝐨𝐦: *@${ᴘɴᴀᴍᴇ}*
 ║🔒 𝐒𝐭𝐚𝐭𝐮𝐬: *${groupData.subject}* Has Been Banned!
 ╚════════════╝`,
-_𝔏𝔞𝔟_.RCLR
-);
-} else {
-return ᴠʟᴋʏʀᴇ_Buttons.MIB(
-ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
-chat,
-ᴠʟᴋʏʀᴇ,
-`🪶 𝐇𝐞𝐲: 
+                _𝔏𝔞𝔟_.RCLR
+              );
+            } else {
+              return ᴠʟᴋʏʀᴇ_Buttons.MIB(
+                ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+                chat,
+                ᴠʟᴋʏʀᴇ,
+                `🪶 𝐇𝐞𝐲: 
 
 ╔════◇🛡️𝐒𝐮𝐝𝐨 𝐁𝐚𝐧
 ║🍕 𝐅𝐫𝐨𝐦: *@${ᴘɴᴀᴍᴇ}*
 ║❌ 𝗘𝗿𝗿𝗼𝗿: *${groupData.subject}* = Already banned!
 ╚════════════╝`,
-_𝔏𝔞𝔟_.RCLR
-);
-}
-}
-);
-`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-} else if (ᴠʟᴋʏʀᴇ.isGroup && ᴠʟᴋʏʀᴇ.isReply) {
-var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
-var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
-Ban.findOne(
-{
-ID: Receiver,
-},
-async (error, userBan) => {
-if (error) {
-ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
-return;
-}
-if (!userBan) {
-var newUser = new Ban({
-ID: Receiver,
-});
-await newUser
-.save()
-.catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
-return ᴠʟᴋʏʀᴇ_Buttons.MIB(
-ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
-chat,
-ᴠʟᴋʏʀᴇ,
-`*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡* 
+                _𝔏𝔞𝔟_.RCLR
+              );
+            }
+          }
+        );
+        `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
+      } else if (ᴠʟᴋʏʀᴇ.isGroup && ᴠʟᴋʏʀᴇ.isReply) {
+        var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
+        var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
+        Ban.findOne(
+          {
+            ID: Receiver,
+          },
+          async (error, userBan) => {
+            if (error) {
+              ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
+              return;
+            }
+            if (!userBan) {
+              var newUser = new Ban({
+                ID: Receiver,
+              });
+              await newUser
+                .save()
+                .catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
+              return ᴠʟᴋʏʀᴇ_Buttons.MIB(
+                ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+                chat,
+                ᴠʟᴋʏʀᴇ,
+                `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡* 
 
 ╔════◇🛡️𝐒𝐮𝐝𝐨 𝐁𝐚𝐧
 ║🔒 𝐒𝐭𝐚𝐭𝐮𝐬: *@${քɛʀֆօռɢօȶռʊʍ}* Has Been Banned!
 ╚════════════╝`,
-_𝔏𝔞𝔟_.RCLR
-);
-} else {
-return ᴠʟᴋʏʀᴇ_Buttons.MIB(
-ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
-chat,
-ᴠʟᴋʏʀᴇ,
-`*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡* 
+                _𝔏𝔞𝔟_.RCLR
+              );
+            } else {
+              return ᴠʟᴋʏʀᴇ_Buttons.MIB(
+                ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+                chat,
+                ᴠʟᴋʏʀᴇ,
+                `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡* 
 
 ╔════◇🛡️𝐒𝐮𝐝𝐨 𝐁𝐚𝐧
 ║❌ 𝗘𝗿𝗿𝗼𝗿: *@${քɛʀֆօռɢօȶռʊʍ}* Already banned!
 ╚════════════╝`,
-_𝔏𝔞𝔟_.RCLR
-);
-}
-}
-);
-`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-} else {
-var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(ᴠʟᴋʏʀᴇ.commandName);
-var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
-𝓜Usage.ᴠʟᴋʏʀᴇӄǟɨʐօ === undefined ? `Null` : 𝓜Usage.ᴠʟᴋʏʀᴇӄǟɨʐօ;
-const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
-return ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
-ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
-chat,
-ᴠʟᴋʏʀᴇ,
-ʟɴᴀᴍᴇ,
-ᴘɴᴀᴍᴇ,
-ᴠʟᴋʏʀᴇ.commandName,
-ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
-);
-}
-} catch (error) {
-ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
-return;
-}
-},
+                _𝔏𝔞𝔟_.RCLR
+              );
+            }
+          }
+        );
+        `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
+      } else {
+        var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(ᴠʟᴋʏʀᴇ.commandName);
+        var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
+          𝓜Usage.ᴠʟᴋʏʀᴇӄǟɨʐօ === undefined ? `Null` : 𝓜Usage.ᴠʟᴋʏʀᴇӄǟɨʐօ;
+        const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
+        return ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
+          ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+          chat,
+          ᴠʟᴋʏʀᴇ,
+          ʟɴᴀᴍᴇ,
+          ᴘɴᴀᴍᴇ,
+          ᴠʟᴋʏʀᴇ.commandName,
+          ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
+        );
+      }
+    } catch (error) {
+      ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
+      return;
+    }
+  },
 };
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 /*        

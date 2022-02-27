@@ -12,7 +12,7 @@ const Heroku = require(`heroku-client`);
 const ꜰᴜᴄᴋ = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/oShit`);
 const _𝔏𝔞𝔟_ = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/_𝔏𝔞𝔟_`);
 var heroku = new Heroku({
-token: _𝔏𝔞𝔟_.HEROKU_API_KEY,
+  token: _𝔏𝔞𝔟_.HEROKU_API_KEY,
 });
 const vers = require(`../../package.json`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
@@ -23,46 +23,46 @@ var scriptName = path.basename(__filename);
 var newScpt = scriptName.slice(0, -3).toLowerCase();
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 module.exports = {
-name: newScpt,
-async handle(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, chat, ᴠʟᴋʏʀᴇ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
-try {
-const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
-const ᴅꜰɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.commandName;
-let ᴘɴᴀᴍᴇ;
-try {
-ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/\@s.whatsapp.net/g, "").replace(/\D/g, "");
-} catch {
-ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/\D/g, "");
-}
-const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
-`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-if (!ᴠʟᴋʏʀᴇ.fromMe && !ᴠʟᴋʏʀᴇ.isSenderDev) {
-return ᴠʟᴋʏʀᴇ_Buttons.MIB(
-ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
-chat,
-ᴠʟᴋʏʀᴇ,
-`*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*\n❌𝐃𝐞𝐧𝐢𝐞𝐝: _Owner/Dev Only.You Are Not Allowed!_`,
-"./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_OwnerOnly.png"
-);
-}
-`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-// var 𝖈𝖆𝖗𝖆𝖒𝖊𝖑 = new _WAConnection();
-// 𝖈𝖆𝖗𝖆𝖒𝖊𝖑.close();
-ᴠʟᴋʏʀᴇ_Buttons.MTB(
-ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
-chat,
-ᴠʟᴋʏʀᴇ,
-`⌜❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬  ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞⌟: _Is Now Rebooting!_`
-);
-await heroku
-.delete(`/apps/` + _𝔏𝔞𝔟_.HEROKU_APP_NAME + `/dynos/` + `worker`)
-.catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
-`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-} catch (error) {
-ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
-return;
-}
-},
+  name: newScpt,
+  async handle(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, chat, ᴠʟᴋʏʀᴇ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
+    try {
+      const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
+      const ᴅꜰɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.commandName;
+      let ᴘɴᴀᴍᴇ;
+      try {
+        ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/\@s.whatsapp.net/g, "").replace(/\D/g, "");
+      } catch {
+        ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/\D/g, "");
+      }
+      const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
+      `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
+      if (!ᴠʟᴋʏʀᴇ.fromMe && !ᴠʟᴋʏʀᴇ.isSenderDev) {
+        return ᴠʟᴋʏʀᴇ_Buttons.MIB(
+          ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+          chat,
+          ᴠʟᴋʏʀᴇ,
+          `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*\n❌𝐃𝐞𝐧𝐢𝐞𝐝: _Owner/Dev Only.You Are Not Allowed!_`,
+          "./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_OwnerOnly.png"
+        );
+      }
+      `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
+      // var 𝖈𝖆𝖗𝖆𝖒𝖊𝖑 = new _WAConnection();
+      // 𝖈𝖆𝖗𝖆𝖒𝖊𝖑.close();
+      ᴠʟᴋʏʀᴇ_Buttons.MTB(
+        ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+        chat,
+        ᴠʟᴋʏʀᴇ,
+        `⌜❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬  ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞⌟: _Is Now Rebooting!_`
+      );
+      await heroku
+        .delete(`/apps/` + _𝔏𝔞𝔟_.HEROKU_APP_NAME + `/dynos/` + `worker`)
+        .catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
+      `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
+    } catch (error) {
+      ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
+      return;
+    }
+  },
 };
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 /*        
