@@ -16,7 +16,7 @@ const vers = require(`../../package.json`);
 const Downloader = require(`nodejs-file-downloader`);
 const ffmpegInstaller = require(`@ffmpeg-installer/ffmpeg`);
 const ffprobe = require(`@ffprobe-installer/ffprobe`);
-const ffmpeg = require(`fluent-ffmpeg`)()
+const FlFFMPEG = require(`fluent-ffmpeg`)()
   .setFfprobePath(ffprobe.path)
   .setFfmpegPath(ffmpegInstaller.path);
 const fs = require(`fs`);
