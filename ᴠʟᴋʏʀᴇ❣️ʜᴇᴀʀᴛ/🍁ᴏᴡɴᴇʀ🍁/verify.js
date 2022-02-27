@@ -116,7 +116,8 @@ chat,
 `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
 
 ╔◇ ✅ 𝐕𝐄𝐑𝐈𝐅𝐈𝐄𝐃!
-║ _Enjoy Vlkyre Premiums For Free!_
+║📌 _Enjoy Vlkyre Premiums For Free!_
+║📌 _Use Vlkyre Anywhere!_
 ╚════════════╝`
 );
 }
