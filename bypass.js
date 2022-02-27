@@ -10,3 +10,13 @@ await heroku
 .delete(`/apps/` + process.env.HEROKU_APP_NAME + `/dynos/` + `worker`)
 .catch((error) => console.log(error));
 });
+
+// # ┌────────────── second (optional)
+// # │ ┌──────────── minute
+// # │ │ ┌────────── hour
+// # │ │ │ ┌──────── day of month
+// # │ │ │ │ ┌────── month
+// # │ │ │ │ │ ┌──── day of week
+// # │ │ │ │ │ │
+// # │ │ │ │ │ │
+// # * * * * * *
