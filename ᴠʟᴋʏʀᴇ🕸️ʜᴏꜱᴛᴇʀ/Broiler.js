@@ -21,454 +21,454 @@ const Clock = date.format(now, pattern);
 const vers = require(`../package.json`);
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 exports.BroilerBadge = async (ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat, userBadge) => {
-const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
-const ᴅꜰɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.commandName;
-const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/\D/g, "");
-const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
-`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-if (userBadge.Badge == "🧵ʙᴀꜱɪᴄ-10ᴄᴏᴍᴍᴀɴᴅꜱ") {
-if (userBadge.Limits < 10) {
-userBadge.Limits = userBadge.Limits + 1;
-const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
-ᴠʟᴋʏʀᴇ.chatId,
-{ url: `./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_404.png` },
-MessageType.image,
-{ mimetype: Mimetype.png }
-);
-await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
-ᴠʟᴋʏʀᴇ.chatId,
-{
-contentText: `
+  const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
+  const ᴅꜰɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.commandName;
+  const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/\D/g, "");
+  const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
+  `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
+  if (userBadge.Badge == "🧵ʙᴀꜱɪᴄ-10ᴄᴏᴍᴍᴀɴᴅꜱ") {
+    if (userBadge.Limits < 10) {
+      userBadge.Limits = userBadge.Limits + 1;
+      const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
+        ᴠʟᴋʏʀᴇ.chatId,
+        { url: `./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_404.png` },
+        MessageType.image,
+        { mimetype: Mimetype.png }
+      );
+      await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
+        ᴠʟᴋʏʀᴇ.chatId,
+        {
+          contentText: `
 ╔⧉༻🌿𝐓𝐨𝐩𝐢𝐜: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
 ║❌ 𝗘𝗿𝗿𝗼𝗿: Api Timeout.Try Again Later!
 ║🍈 Badge: ${userBadge.Badge}
 ║🍋 𝗗𝗮𝗶𝗹𝘆 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝗟𝗲𝗳𝘁: ${userBadge.Limits}
 ╚════════════╝`,
-footerText: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™\nᴘʏᴛʜᴏɴ𓆘 + ☊ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ`,
-buttons: [
-{
-buttonId: `${ᴋᴇɪ}help`,
-buttonText: { displayText: `${ᴋᴇɪ}help` },
-type: 1,
-},
-],
-headerType: 4,
-imageMessage: media.message.imageMessage,
-},
-MessageType.buttonsMessage,
-{
-quoted: chat,
-contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
-}
-);
-await userBadge
-.save()
-.catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
-return;
-}
-const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
-ᴠʟᴋʏʀᴇ.chatId,
-{ url: `./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_404.png` },
-MessageType.image,
-{ mimetype: Mimetype.png }
-);
-await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
-ᴠʟᴋʏʀᴇ.chatId,
-{
-contentText: `
+          footerText: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™\nᴘʏᴛʜᴏɴ𓆘 + ☊ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ`,
+          buttons: [
+            {
+              buttonId: `${ᴋᴇɪ}help`,
+              buttonText: { displayText: `${ᴋᴇɪ}help` },
+              type: 1,
+            },
+          ],
+          headerType: 4,
+          imageMessage: media.message.imageMessage,
+        },
+        MessageType.buttonsMessage,
+        {
+          quoted: chat,
+          contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
+        }
+      );
+      await userBadge
+        .save()
+        .catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
+      return;
+    }
+    const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
+      ᴠʟᴋʏʀᴇ.chatId,
+      { url: `./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_404.png` },
+      MessageType.image,
+      { mimetype: Mimetype.png }
+    );
+    await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
+      ᴠʟᴋʏʀᴇ.chatId,
+      {
+        contentText: `
 ╔⧉༻🌿𝐓𝐨𝐩𝐢𝐜: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
 ║❌ 𝗘𝗿𝗿𝗼𝗿: Api Timeout.Try Again Later!
 ║🍈 Badge: ${userBadge.Badge}
 ║🍋 𝗗𝗮𝗶𝗹𝘆 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝗟𝗲𝗳𝘁: ${userBadge.Limits}
 ╚════════════╝`,
-footerText: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™\nᴘʏᴛʜᴏɴ𓆘 + ☊ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ`,
-buttons: [
-{
-buttonId: `${ᴋᴇɪ}help`,
-buttonText: { displayText: `${ᴋᴇɪ}help` },
-type: 1,
-},
-],
-headerType: 4,
-imageMessage: media.message.imageMessage,
-},
-MessageType.buttonsMessage,
-{
-quoted: chat,
-contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
-}
-);
-}
-`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-if (userBadge.Badge == "🥉ʙʀᴏɴᴢᴇ-20ᴄᴏᴍᴍᴀɴᴅꜱ") {
-if (userBadge.Limits < 20) {
-userBadge.Limits = userBadge.Limits + 1;
-const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
-ᴠʟᴋʏʀᴇ.chatId,
-{ url: `./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_404.png` },
-MessageType.image,
-{ mimetype: Mimetype.png }
-);
-await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
-ᴠʟᴋʏʀᴇ.chatId,
-{
-contentText: `
+        footerText: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™\nᴘʏᴛʜᴏɴ𓆘 + ☊ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ`,
+        buttons: [
+          {
+            buttonId: `${ᴋᴇɪ}help`,
+            buttonText: { displayText: `${ᴋᴇɪ}help` },
+            type: 1,
+          },
+        ],
+        headerType: 4,
+        imageMessage: media.message.imageMessage,
+      },
+      MessageType.buttonsMessage,
+      {
+        quoted: chat,
+        contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
+      }
+    );
+  }
+  `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
+  if (userBadge.Badge == "🥉ʙʀᴏɴᴢᴇ-20ᴄᴏᴍᴍᴀɴᴅꜱ") {
+    if (userBadge.Limits < 20) {
+      userBadge.Limits = userBadge.Limits + 1;
+      const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
+        ᴠʟᴋʏʀᴇ.chatId,
+        { url: `./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_404.png` },
+        MessageType.image,
+        { mimetype: Mimetype.png }
+      );
+      await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
+        ᴠʟᴋʏʀᴇ.chatId,
+        {
+          contentText: `
 ╔⧉༻🌿𝐓𝐨𝐩𝐢𝐜: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
 ║❌ 𝗘𝗿𝗿𝗼𝗿: Api Timeout.Try Again Later!
 ║🍈 Badge: ${userBadge.Badge}
 ║🍋 𝗗𝗮𝗶𝗹𝘆 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝗟𝗲𝗳𝘁: ${userBadge.Limits}
 ╚════════════╝`,
-footerText: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™\nᴘʏᴛʜᴏɴ𓆘 + ☊ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ`,
-buttons: [
-{
-buttonId: `${ᴋᴇɪ}help`,
-buttonText: { displayText: `${ᴋᴇɪ}help` },
-type: 1,
-},
-],
-headerType: 4,
-imageMessage: media.message.imageMessage,
-},
-MessageType.buttonsMessage,
-{
-quoted: chat,
-contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
-}
-);
-await userBadge
-.save()
-.catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
-return;
-}
-const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
-ᴠʟᴋʏʀᴇ.chatId,
-{ url: `./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_404.png` },
-MessageType.image,
-{ mimetype: Mimetype.png }
-);
-await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
-ᴠʟᴋʏʀᴇ.chatId,
-{
-contentText: `
+          footerText: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™\nᴘʏᴛʜᴏɴ𓆘 + ☊ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ`,
+          buttons: [
+            {
+              buttonId: `${ᴋᴇɪ}help`,
+              buttonText: { displayText: `${ᴋᴇɪ}help` },
+              type: 1,
+            },
+          ],
+          headerType: 4,
+          imageMessage: media.message.imageMessage,
+        },
+        MessageType.buttonsMessage,
+        {
+          quoted: chat,
+          contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
+        }
+      );
+      await userBadge
+        .save()
+        .catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
+      return;
+    }
+    const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
+      ᴠʟᴋʏʀᴇ.chatId,
+      { url: `./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_404.png` },
+      MessageType.image,
+      { mimetype: Mimetype.png }
+    );
+    await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
+      ᴠʟᴋʏʀᴇ.chatId,
+      {
+        contentText: `
 ╔⧉༻🌿𝐓𝐨𝐩𝐢𝐜: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
 ║❌ 𝗘𝗿𝗿𝗼𝗿: Api Timeout.Try Again Later!
 ║🍈 Badge: ${userBadge.Badge}
 ║🍋 𝗗𝗮𝗶𝗹𝘆 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝗟𝗲𝗳𝘁: ${userBadge.Limits}
 ╚════════════╝`,
-footerText: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™\nᴘʏᴛʜᴏɴ𓆘 + ☊ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ`,
-buttons: [
-{
-buttonId: `${ᴋᴇɪ}help`,
-buttonText: { displayText: `${ᴋᴇɪ}help` },
-type: 1,
-},
-],
-headerType: 4,
-imageMessage: media.message.imageMessage,
-},
-MessageType.buttonsMessage,
-{
-quoted: chat,
-contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
-}
-);
-}
-`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-if (userBadge.Badge == "🥈ꜱɪʟᴠᴇʀ-40ᴄᴏᴍᴍᴀɴᴅꜱ") {
-if (userBadge.Limits < 40) {
-userBadge.Limits = userBadge.Limits + 1;
-const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
-ᴠʟᴋʏʀᴇ.chatId,
-{ url: `./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_404.png` },
-MessageType.image,
-{ mimetype: Mimetype.png }
-);
-await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
-ᴠʟᴋʏʀᴇ.chatId,
-{
-contentText: `
+        footerText: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™\nᴘʏᴛʜᴏɴ𓆘 + ☊ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ`,
+        buttons: [
+          {
+            buttonId: `${ᴋᴇɪ}help`,
+            buttonText: { displayText: `${ᴋᴇɪ}help` },
+            type: 1,
+          },
+        ],
+        headerType: 4,
+        imageMessage: media.message.imageMessage,
+      },
+      MessageType.buttonsMessage,
+      {
+        quoted: chat,
+        contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
+      }
+    );
+  }
+  `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
+  if (userBadge.Badge == "🥈ꜱɪʟᴠᴇʀ-40ᴄᴏᴍᴍᴀɴᴅꜱ") {
+    if (userBadge.Limits < 40) {
+      userBadge.Limits = userBadge.Limits + 1;
+      const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
+        ᴠʟᴋʏʀᴇ.chatId,
+        { url: `./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_404.png` },
+        MessageType.image,
+        { mimetype: Mimetype.png }
+      );
+      await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
+        ᴠʟᴋʏʀᴇ.chatId,
+        {
+          contentText: `
 ╔⧉༻🌿𝐓𝐨𝐩𝐢𝐜: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
 ║❌ 𝗘𝗿𝗿𝗼𝗿: Api Timeout.Try Again Later!
 ║🍈 Badge: ${userBadge.Badge}
 ║🍋 𝗗𝗮𝗶𝗹𝘆 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝗟𝗲𝗳𝘁: ${userBadge.Limits}
 ╚════════════╝`,
-footerText: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™\nᴘʏᴛʜᴏɴ𓆘 + ☊ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ`,
-buttons: [
-{
-buttonId: `${ᴋᴇɪ}help`,
-buttonText: { displayText: `${ᴋᴇɪ}help` },
-type: 1,
-},
-],
-headerType: 4,
-imageMessage: media.message.imageMessage,
-},
-MessageType.buttonsMessage,
-{
-quoted: chat,
-contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
-}
-);
-await userBadge
-.save()
-.catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
-return;
-}
-const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
-ᴠʟᴋʏʀᴇ.chatId,
-{ url: `./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_404.png` },
-MessageType.image,
-{ mimetype: Mimetype.png }
-);
-await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
-ᴠʟᴋʏʀᴇ.chatId,
-{
-contentText: `
+          footerText: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™\nᴘʏᴛʜᴏɴ𓆘 + ☊ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ`,
+          buttons: [
+            {
+              buttonId: `${ᴋᴇɪ}help`,
+              buttonText: { displayText: `${ᴋᴇɪ}help` },
+              type: 1,
+            },
+          ],
+          headerType: 4,
+          imageMessage: media.message.imageMessage,
+        },
+        MessageType.buttonsMessage,
+        {
+          quoted: chat,
+          contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
+        }
+      );
+      await userBadge
+        .save()
+        .catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
+      return;
+    }
+    const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
+      ᴠʟᴋʏʀᴇ.chatId,
+      { url: `./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_404.png` },
+      MessageType.image,
+      { mimetype: Mimetype.png }
+    );
+    await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
+      ᴠʟᴋʏʀᴇ.chatId,
+      {
+        contentText: `
 ╔⧉༻🌿𝐓𝐨𝐩𝐢𝐜: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
 ║❌ 𝗘𝗿𝗿𝗼𝗿: Api Timeout.Try Again Later!
 ║🍈 Badge: ${userBadge.Badge}
 ║🍋 𝗗𝗮𝗶𝗹𝘆 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝗟𝗲𝗳𝘁: ${userBadge.Limits}
 ╚════════════╝`,
-footerText: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™\nᴘʏᴛʜᴏɴ𓆘 + ☊ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ`,
-buttons: [
-{
-buttonId: `${ᴋᴇɪ}help`,
-buttonText: { displayText: `${ᴋᴇɪ}help` },
-type: 1,
-},
-],
-headerType: 4,
-imageMessage: media.message.imageMessage,
-},
-MessageType.buttonsMessage,
-{
-quoted: chat,
-contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
-}
-);
-}
-`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-if (userBadge.Badge == "🥇ɢᴏʟᴅ-60ᴄᴏᴍᴍᴀɴᴅꜱ") {
-if (userBadge.Limits < 60) {
-userBadge.Limits = userBadge.Limits + 1;
-const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
-ᴠʟᴋʏʀᴇ.chatId,
-{ url: `./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_404.png` },
-MessageType.image,
-{ mimetype: Mimetype.png }
-);
-await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
-ᴠʟᴋʏʀᴇ.chatId,
-{
-contentText: `
+        footerText: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™\nᴘʏᴛʜᴏɴ𓆘 + ☊ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ`,
+        buttons: [
+          {
+            buttonId: `${ᴋᴇɪ}help`,
+            buttonText: { displayText: `${ᴋᴇɪ}help` },
+            type: 1,
+          },
+        ],
+        headerType: 4,
+        imageMessage: media.message.imageMessage,
+      },
+      MessageType.buttonsMessage,
+      {
+        quoted: chat,
+        contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
+      }
+    );
+  }
+  `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
+  if (userBadge.Badge == "🥇ɢᴏʟᴅ-60ᴄᴏᴍᴍᴀɴᴅꜱ") {
+    if (userBadge.Limits < 60) {
+      userBadge.Limits = userBadge.Limits + 1;
+      const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
+        ᴠʟᴋʏʀᴇ.chatId,
+        { url: `./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_404.png` },
+        MessageType.image,
+        { mimetype: Mimetype.png }
+      );
+      await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
+        ᴠʟᴋʏʀᴇ.chatId,
+        {
+          contentText: `
 ╔⧉༻🌿𝐓𝐨𝐩𝐢𝐜: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
 ║❌ 𝗘𝗿𝗿𝗼𝗿: Api Timeout.Try Again Later!
 ║🍈 Badge: ${userBadge.Badge}
 ║🍋 𝗗𝗮𝗶𝗹𝘆 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝗟𝗲𝗳𝘁: ${userBadge.Limits}
 ╚════════════╝`,
-footerText: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™\nᴘʏᴛʜᴏɴ𓆘 + ☊ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ`,
-buttons: [
-{
-buttonId: `${ᴋᴇɪ}help`,
-buttonText: { displayText: `${ᴋᴇɪ}help` },
-type: 1,
-},
-],
-headerType: 4,
-imageMessage: media.message.imageMessage,
-},
-MessageType.buttonsMessage,
-{
-quoted: chat,
-contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
-}
-);
-await userBadge
-.save()
-.catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
-return;
-}
-const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
-ᴠʟᴋʏʀᴇ.chatId,
-{ url: `./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_404.png` },
-MessageType.image,
-{ mimetype: Mimetype.png }
-);
-await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
-ᴠʟᴋʏʀᴇ.chatId,
-{
-contentText: `
+          footerText: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™\nᴘʏᴛʜᴏɴ𓆘 + ☊ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ`,
+          buttons: [
+            {
+              buttonId: `${ᴋᴇɪ}help`,
+              buttonText: { displayText: `${ᴋᴇɪ}help` },
+              type: 1,
+            },
+          ],
+          headerType: 4,
+          imageMessage: media.message.imageMessage,
+        },
+        MessageType.buttonsMessage,
+        {
+          quoted: chat,
+          contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
+        }
+      );
+      await userBadge
+        .save()
+        .catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
+      return;
+    }
+    const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
+      ᴠʟᴋʏʀᴇ.chatId,
+      { url: `./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_404.png` },
+      MessageType.image,
+      { mimetype: Mimetype.png }
+    );
+    await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
+      ᴠʟᴋʏʀᴇ.chatId,
+      {
+        contentText: `
 ╔⧉༻🌿𝐓𝐨𝐩𝐢𝐜: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
 ║❌ 𝗘𝗿𝗿𝗼𝗿: Api Timeout.Try Again Later!
 ║🍈 Badge: ${userBadge.Badge}
 ║🍋 𝗗𝗮𝗶𝗹𝘆 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝗟𝗲𝗳𝘁: ${userBadge.Limits}
 ╚════════════╝`,
-footerText: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™\nᴘʏᴛʜᴏɴ𓆘 + ☊ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ`,
-buttons: [
-{
-buttonId: `${ᴋᴇɪ}help`,
-buttonText: { displayText: `${ᴋᴇɪ}help` },
-type: 1,
-},
-],
-headerType: 4,
-imageMessage: media.message.imageMessage,
-},
-MessageType.buttonsMessage,
-{
-quoted: chat,
-contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
-}
-);
-}
-`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-if (userBadge.Badge == "💍ᴘʟᴀᴛɪɴᴜᴍ-80ᴄᴏᴍᴍᴀɴᴅꜱ") {
-if (userBadge.Limits < 80) {
-userBadge.Limits = userBadge.Limits + 1;
-const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
-ᴠʟᴋʏʀᴇ.chatId,
-{ url: `./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_404.png` },
-MessageType.image,
-{ mimetype: Mimetype.png }
-);
-await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
-ᴠʟᴋʏʀᴇ.chatId,
-{
-contentText: `
+        footerText: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™\nᴘʏᴛʜᴏɴ𓆘 + ☊ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ`,
+        buttons: [
+          {
+            buttonId: `${ᴋᴇɪ}help`,
+            buttonText: { displayText: `${ᴋᴇɪ}help` },
+            type: 1,
+          },
+        ],
+        headerType: 4,
+        imageMessage: media.message.imageMessage,
+      },
+      MessageType.buttonsMessage,
+      {
+        quoted: chat,
+        contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
+      }
+    );
+  }
+  `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
+  if (userBadge.Badge == "💍ᴘʟᴀᴛɪɴᴜᴍ-80ᴄᴏᴍᴍᴀɴᴅꜱ") {
+    if (userBadge.Limits < 80) {
+      userBadge.Limits = userBadge.Limits + 1;
+      const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
+        ᴠʟᴋʏʀᴇ.chatId,
+        { url: `./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_404.png` },
+        MessageType.image,
+        { mimetype: Mimetype.png }
+      );
+      await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
+        ᴠʟᴋʏʀᴇ.chatId,
+        {
+          contentText: `
 ╔⧉༻🌿𝐓𝐨𝐩𝐢𝐜: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
 ║❌ 𝗘𝗿𝗿𝗼𝗿: Api Timeout.Try Again Later!
 ║🍈 Badge: ${userBadge.Badge}
 ║🍋 𝗗𝗮𝗶𝗹𝘆 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝗟𝗲𝗳𝘁: ${userBadge.Limits}
 ╚════════════╝`,
-footerText: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™\nᴘʏᴛʜᴏɴ𓆘 + ☊ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ`,
-buttons: [
-{
-buttonId: `${ᴋᴇɪ}help`,
-buttonText: { displayText: `${ᴋᴇɪ}help` },
-type: 1,
-},
-],
-headerType: 4,
-imageMessage: media.message.imageMessage,
-},
-MessageType.buttonsMessage,
-{
-quoted: chat,
-contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
-}
-);
-await userBadge
-.save()
-.catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
-return;
-}
-const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
-ᴠʟᴋʏʀᴇ.chatId,
-{ url: `./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_404.png` },
-MessageType.image,
-{ mimetype: Mimetype.png }
-);
-await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
-ᴠʟᴋʏʀᴇ.chatId,
-{
-contentText: `
+          footerText: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™\nᴘʏᴛʜᴏɴ𓆘 + ☊ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ`,
+          buttons: [
+            {
+              buttonId: `${ᴋᴇɪ}help`,
+              buttonText: { displayText: `${ᴋᴇɪ}help` },
+              type: 1,
+            },
+          ],
+          headerType: 4,
+          imageMessage: media.message.imageMessage,
+        },
+        MessageType.buttonsMessage,
+        {
+          quoted: chat,
+          contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
+        }
+      );
+      await userBadge
+        .save()
+        .catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
+      return;
+    }
+    const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
+      ᴠʟᴋʏʀᴇ.chatId,
+      { url: `./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_404.png` },
+      MessageType.image,
+      { mimetype: Mimetype.png }
+    );
+    await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
+      ᴠʟᴋʏʀᴇ.chatId,
+      {
+        contentText: `
 ╔⧉༻🌿𝐓𝐨𝐩𝐢𝐜: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
 ║❌ 𝗘𝗿𝗿𝗼𝗿: Api Timeout.Try Again Later!
 ║🍈 Badge: ${userBadge.Badge}
 ║🍋 𝗗𝗮𝗶𝗹𝘆 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝗟𝗲𝗳𝘁: ${userBadge.Limits}
 ╚════════════╝`,
-footerText: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™\nᴘʏᴛʜᴏɴ𓆘 + ☊ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ`,
-buttons: [
-{
-buttonId: `${ᴋᴇɪ}help`,
-buttonText: { displayText: `${ᴋᴇɪ}help` },
-type: 1,
-},
-],
-headerType: 4,
-imageMessage: media.message.imageMessage,
-},
-MessageType.buttonsMessage,
-{
-quoted: chat,
-contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
-}
-);
-}
-`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-if (userBadge.Badge == "💎ᴅɪᴀᴍᴏɴᴅ-100ᴄᴏᴍᴍᴀɴᴅꜱ") {
-if (userBadge.Limits < 100) {
-userBadge.Limits = userBadge.Limits + 1;
-const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
-ᴠʟᴋʏʀᴇ.chatId,
-{ url: `./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_404.png` },
-MessageType.image,
-{ mimetype: Mimetype.png }
-);
-await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
-ᴠʟᴋʏʀᴇ.chatId,
-{
-contentText: `
+        footerText: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™\nᴘʏᴛʜᴏɴ𓆘 + ☊ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ`,
+        buttons: [
+          {
+            buttonId: `${ᴋᴇɪ}help`,
+            buttonText: { displayText: `${ᴋᴇɪ}help` },
+            type: 1,
+          },
+        ],
+        headerType: 4,
+        imageMessage: media.message.imageMessage,
+      },
+      MessageType.buttonsMessage,
+      {
+        quoted: chat,
+        contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
+      }
+    );
+  }
+  `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
+  if (userBadge.Badge == "💎ᴅɪᴀᴍᴏɴᴅ-100ᴄᴏᴍᴍᴀɴᴅꜱ") {
+    if (userBadge.Limits < 100) {
+      userBadge.Limits = userBadge.Limits + 1;
+      const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
+        ᴠʟᴋʏʀᴇ.chatId,
+        { url: `./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_404.png` },
+        MessageType.image,
+        { mimetype: Mimetype.png }
+      );
+      await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
+        ᴠʟᴋʏʀᴇ.chatId,
+        {
+          contentText: `
 ╔⧉༻🌿𝐓𝐨𝐩𝐢𝐜: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
 ║❌ 𝗘𝗿𝗿𝗼𝗿: Api Timeout.Try Again Later!
 ║🍈 Badge: ${userBadge.Badge}
 ║🍋 𝗗𝗮𝗶𝗹𝘆 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝗟𝗲𝗳𝘁: ${userBadge.Limits}
 ╚════════════╝`,
-footerText: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™\nᴘʏᴛʜᴏɴ𓆘 + ☊ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ`,
-buttons: [
-{
-buttonId: `${ᴋᴇɪ}help`,
-buttonText: { displayText: `${ᴋᴇɪ}help` },
-type: 1,
-},
-],
-headerType: 4,
-imageMessage: media.message.imageMessage,
-},
-MessageType.buttonsMessage,
-{
-quoted: chat,
-contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
-}
-);
-await userBadge
-.save()
-.catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
-return;
-}
-const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
-ᴠʟᴋʏʀᴇ.chatId,
-{ url: `./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_404.png` },
-MessageType.image,
-{ mimetype: Mimetype.png }
-);
-await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
-ᴠʟᴋʏʀᴇ.chatId,
-{
-contentText: `
+          footerText: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™\nᴘʏᴛʜᴏɴ𓆘 + ☊ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ`,
+          buttons: [
+            {
+              buttonId: `${ᴋᴇɪ}help`,
+              buttonText: { displayText: `${ᴋᴇɪ}help` },
+              type: 1,
+            },
+          ],
+          headerType: 4,
+          imageMessage: media.message.imageMessage,
+        },
+        MessageType.buttonsMessage,
+        {
+          quoted: chat,
+          contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
+        }
+      );
+      await userBadge
+        .save()
+        .catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
+      return;
+    }
+    const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
+      ᴠʟᴋʏʀᴇ.chatId,
+      { url: `./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_404.png` },
+      MessageType.image,
+      { mimetype: Mimetype.png }
+    );
+    await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
+      ᴠʟᴋʏʀᴇ.chatId,
+      {
+        contentText: `
 ╔⧉༻🌿𝐓𝐨𝐩𝐢𝐜: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
 ║❌ 𝗘𝗿𝗿𝗼𝗿: Api Timeout.Try Again Later!
 ║🍈 Badge: ${userBadge.Badge}
 ║🍋 𝗗𝗮𝗶𝗹𝘆 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝗟𝗲𝗳𝘁: ${userBadge.Limits}
 ╚════════════╝`,
-footerText: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™\nᴘʏᴛʜᴏɴ𓆘 + ☊ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ`,
-buttons: [
-{
-buttonId: `${ᴋᴇɪ}help`,
-buttonText: { displayText: `${ᴋᴇɪ}help` },
-type: 1,
-},
-],
-headerType: 4,
-imageMessage: media.message.imageMessage,
-},
-MessageType.buttonsMessage,
-{
-quoted: chat,
-contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
-}
-);
-}
+        footerText: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™\nᴘʏᴛʜᴏɴ𓆘 + ☊ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ`,
+        buttons: [
+          {
+            buttonId: `${ᴋᴇɪ}help`,
+            buttonText: { displayText: `${ᴋᴇɪ}help` },
+            type: 1,
+          },
+        ],
+        headerType: 4,
+        imageMessage: media.message.imageMessage,
+      },
+      MessageType.buttonsMessage,
+      {
+        quoted: chat,
+        contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
+      }
+    );
+  }
 };
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 /*        

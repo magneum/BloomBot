@@ -17,137 +17,137 @@ var scriptName = path.basename(__filename);
 var newScpt = scriptName.slice(0, -3).toLowerCase();
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 module.exports = {
-name: newScpt,
-ᴠʟᴋʏʀᴇӄǟɨʐօ: `${ᴋᴇɪ}warn _reply to person_`,
-async handle(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, chat, ᴠʟᴋʏʀᴇ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
-try {
-const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
-const ᴅꜰɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.commandName;
-let ᴘɴᴀᴍᴇ;
-try {
-ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/\@s.whatsapp.net/g, "").replace(/\D/g, "");
-} catch {
-ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/\D/g, "");
-}
-const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
-`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-if (!ᴠʟᴋʏʀᴇ.isGroup) {
-return ᴠʟᴋʏʀᴇ_Buttons.MTB(
-ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
-chat,
-ᴠʟᴋʏʀᴇ,
-`*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
+  name: newScpt,
+  ᴠʟᴋʏʀᴇӄǟɨʐօ: `${ᴋᴇɪ}warn _reply to person_`,
+  async handle(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, chat, ᴠʟᴋʏʀᴇ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
+    try {
+      const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
+      const ᴅꜰɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.commandName;
+      let ᴘɴᴀᴍᴇ;
+      try {
+        ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/\@s.whatsapp.net/g, "").replace(/\D/g, "");
+      } catch {
+        ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/\D/g, "");
+      }
+      const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
+      `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
+      if (!ᴠʟᴋʏʀᴇ.isGroup) {
+        return ᴠʟᴋʏʀᴇ_Buttons.MTB(
+          ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+          chat,
+          ᴠʟᴋʏʀᴇ,
+          `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
 _This Command is Only For Groups!_!`
-);
-}
-`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-if (!ᴠʟᴋʏʀᴇ.isReply) {
-var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(ᴠʟᴋʏʀᴇ.commandName);
-var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
-𝓜Usage.ᴠʟᴋʏʀᴇӄǟɨʐօ === undefined ? `Null` : 𝓜Usage.ᴠʟᴋʏʀᴇӄǟɨʐօ;
-const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
-return ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
-ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
-chat,
-ᴠʟᴋʏʀᴇ,
-ʟɴᴀᴍᴇ,
-ᴘɴᴀᴍᴇ,
-ᴠʟᴋʏʀᴇ.commandName,
-ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
-);
-}
-`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-if (ᴠʟᴋʏʀᴇ.isGroup && !ᴠʟᴋʏʀᴇ.isSenderGroupAdmin) {
-return ᴠʟᴋʏʀᴇ_Buttons.MIB(
-ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
-chat,
-ᴠʟᴋʏʀᴇ,
-`*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
+        );
+      }
+      `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
+      if (!ᴠʟᴋʏʀᴇ.isReply) {
+        var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(ᴠʟᴋʏʀᴇ.commandName);
+        var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
+          𝓜Usage.ᴠʟᴋʏʀᴇӄǟɨʐօ === undefined ? `Null` : 𝓜Usage.ᴠʟᴋʏʀᴇӄǟɨʐօ;
+        const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
+        return ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
+          ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+          chat,
+          ᴠʟᴋʏʀᴇ,
+          ʟɴᴀᴍᴇ,
+          ᴘɴᴀᴍᴇ,
+          ᴠʟᴋʏʀᴇ.commandName,
+          ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
+        );
+      }
+      `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
+      if (ᴠʟᴋʏʀᴇ.isGroup && !ᴠʟᴋʏʀᴇ.isSenderGroupAdmin) {
+        return ᴠʟᴋʏʀᴇ_Buttons.MIB(
+          ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+          chat,
+          ᴠʟᴋʏʀᴇ,
+          `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
 \n❌𝐃𝐞𝐧𝐢𝐞𝐝: _Admins/Dev Only.You Are Not Allowed!_`,
-"./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_NotAdmin.png"
-);
-}
-`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-if (ᴠʟᴋʏʀᴇ.isGroup && !ᴠʟᴋʏʀᴇ.isBotGroupAdmin) {
-return ᴠʟᴋʏʀᴇ_Buttons.MIB(
-ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
-chat,
-ᴠʟᴋʏʀᴇ,
-`*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
+          "./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_NotAdmin.png"
+        );
+      }
+      `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
+      if (ᴠʟᴋʏʀᴇ.isGroup && !ᴠʟᴋʏʀᴇ.isBotGroupAdmin) {
+        return ᴠʟᴋʏʀᴇ_Buttons.MIB(
+          ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+          chat,
+          ᴠʟᴋʏʀᴇ,
+          `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
 
 
 ╔⧕༻🌿𝐓𝐨𝐩𝐢𝐜: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
 ║❌𝐃𝐞𝐧𝐢𝐞𝐝: _How Can I Use Admin Only Commands If i am not admin?_
 ║💡 𝐅𝐢𝐱: _Make Me Admin First!_
 ╚════════════╝`,
-"./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_NotAdmin.png"
-);
-}
-`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-if (
-ᴠʟᴋʏʀᴇ.isReply &&
-ᴠʟᴋʏʀᴇ.isGroup &&
-ᴠʟᴋʏʀᴇ.isBotGroupAdmin &&
-ᴠʟᴋʏʀᴇ.isSenderGroupAdmin
-) {
-const RemoveTheSucker =
-chat.message.extendedTextMessage.contextInfo.participant;
-var RemoveTheSuckerռʊʍ = RemoveTheSucker.split("@")[0].replace(
-/[+ ]/g,
-""
-);
-`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-if (RemoveTheSucker === ᴠʟᴋʏʀᴇ.isSenderDev) {
-return ᴠʟᴋʏʀᴇ_Buttons.MTB(
-ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
-chat,
-ᴠʟᴋʏʀᴇ,
-`*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
+          "./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_NotAdmin.png"
+        );
+      }
+      `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
+      if (
+        ᴠʟᴋʏʀᴇ.isReply &&
+        ᴠʟᴋʏʀᴇ.isGroup &&
+        ᴠʟᴋʏʀᴇ.isBotGroupAdmin &&
+        ᴠʟᴋʏʀᴇ.isSenderGroupAdmin
+      ) {
+        const RemoveTheSucker =
+          chat.message.extendedTextMessage.contextInfo.participant;
+        var RemoveTheSuckerռʊʍ = RemoveTheSucker.split("@")[0].replace(
+          /[+ ]/g,
+          ""
+        );
+        `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
+        if (RemoveTheSucker === ᴠʟᴋʏʀᴇ.isSenderDev) {
+          return ᴠʟᴋʏʀᴇ_Buttons.MTB(
+            ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+            chat,
+            ᴠʟᴋʏʀᴇ,
+            `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
 
 
 ╔⧕༻🌿𝐓𝐨𝐩𝐢𝐜: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
 ║❌ ᴠʟᴋʏʀᴇ Devs Can't Be Warned!
 ╚════════════╝`,
-`./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇNotMeAdmin.png`
-);
-}
-`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-if (RemoveTheSucker === ᴠʟᴋʏʀᴇ.isOwner) {
-return ᴠʟᴋʏʀᴇ_Buttons.MTB(
-ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
-chat,
-ᴠʟᴋʏʀᴇ,
-`*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
+            `./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇNotMeAdmin.png`
+          );
+        }
+        `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
+        if (RemoveTheSucker === ᴠʟᴋʏʀᴇ.isOwner) {
+          return ᴠʟᴋʏʀᴇ_Buttons.MTB(
+            ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+            chat,
+            ᴠʟᴋʏʀᴇ,
+            `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
 
 
 ╔⧕༻🌿𝐓𝐨𝐩𝐢𝐜: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
 ║❌ ᴠʟᴋʏʀᴇ Owner Can't Be Warned!
 ╚════════════╝`,
-`./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇNotMeAdmin.png`
-);
-}
-`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-Warning.findOne(
-{
-ID: RemoveTheSuckerռʊʍ,
-serverID: ᴠʟᴋʏʀᴇ.chatId,
-},
-async (error, userWarn) => {
-if (error) return ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
-if (!userWarn) {
-var newUser = new Warning({
-ID: RemoveTheSuckerռʊʍ,
-serverID: ᴠʟᴋʏʀᴇ.chatId,
-warns: 1,
-});
-await newUser
-.save()
-.catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
-return ᴠʟᴋʏʀᴇ_Buttons.MTB(
-ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
-chat,
-ᴠʟᴋʏʀᴇ,
-`
+            `./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇNotMeAdmin.png`
+          );
+        }
+        `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
+        Warning.findOne(
+          {
+            ID: RemoveTheSuckerռʊʍ,
+            serverID: ᴠʟᴋʏʀᴇ.chatId,
+          },
+          async (error, userWarn) => {
+            if (error) return ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
+            if (!userWarn) {
+              var newUser = new Warning({
+                ID: RemoveTheSuckerռʊʍ,
+                serverID: ᴠʟᴋʏʀᴇ.chatId,
+                warns: 1,
+              });
+              await newUser
+                .save()
+                .catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
+              return ᴠʟᴋʏʀᴇ_Buttons.MTB(
+                ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+                chat,
+                ᴠʟᴋʏʀᴇ,
+                `
 ╔◇═══════════════◇╗
 ┊ 𝐊𝐫𝐲𝐙𝐞𝐧🔰𝐖𝐚𝐫𝐧𝐢𝐧𝐠
 ┊    𝐌𝐞𝐜𝐡𝐚𝐧𝐢𝐬𝐦
@@ -162,14 +162,14 @@ chat,
 ╔════◇🌿𝐏𝐮𝐧𝐢𝐬𝐡𝐦𝐞𝐧𝐭
 ║💡 If Warning more then 3, You Will be Hard-Kicked!
 ╚════════════╝`
-);
-} else {
-if (ᴠʟᴋʏʀᴇ.isBotGroupAdmin && userWarn.warns === 3) {
-ᴠʟᴋʏʀᴇ_Buttons.MTB(
-ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
-chat,
-ᴠʟᴋʏʀᴇ,
-`
+              );
+            } else {
+              if (ᴠʟᴋʏʀᴇ.isBotGroupAdmin && userWarn.warns === 3) {
+                ᴠʟᴋʏʀᴇ_Buttons.MTB(
+                  ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+                  chat,
+                  ᴠʟᴋʏʀᴇ,
+                  `
 ╔◇═══════════════◇╗
 ┊ 𝐊𝐫𝐲𝐙𝐞𝐧🔰𝐖𝐚𝐫𝐧𝐢𝐧𝐠
 ┊    𝐌𝐞𝐜𝐡𝐚𝐧𝐢𝐬𝐦
@@ -184,29 +184,29 @@ chat,
 ╔════◇🌿𝐏𝐮𝐧𝐢𝐬𝐡𝐦𝐞𝐧𝐭
 ║💡 You Will be Hard-Kicked!
 ╚════════════╝`
-);
-await userWarn
-.delete()
-.catch((error) =>
-ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
-);
-await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
-.groupRemove(ᴠʟᴋʏʀᴇ.chatId, [RemoveTheSucker])
-.catch((error) =>
-ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
-);
-return;
-}
-`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-userWarn.warns = userWarn.warns + 1;
-await userWarn
-.save()
-.catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
-return ᴠʟᴋʏʀᴇ_Buttons.MTB(
-ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
-chat,
-ᴠʟᴋʏʀᴇ,
-`
+                );
+                await userWarn
+                  .delete()
+                  .catch((error) =>
+                    ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
+                  );
+                await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
+                  .groupRemove(ᴠʟᴋʏʀᴇ.chatId, [RemoveTheSucker])
+                  .catch((error) =>
+                    ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
+                  );
+                return;
+              }
+              `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
+              userWarn.warns = userWarn.warns + 1;
+              await userWarn
+                .save()
+                .catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
+              return ᴠʟᴋʏʀᴇ_Buttons.MTB(
+                ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+                chat,
+                ᴠʟᴋʏʀᴇ,
+                `
 ╔◇═══════════════◇╗
 ┊ 𝐊𝐫𝐲𝐙𝐞𝐧🔰𝐖𝐚𝐫𝐧𝐢𝐧𝐠
 ┊    𝐌𝐞𝐜𝐡𝐚𝐧𝐢𝐬𝐦
@@ -221,31 +221,31 @@ chat,
 ╔════◇🌿𝐏𝐮𝐧𝐢𝐬𝐡𝐦𝐞𝐧𝐭
 ║💡 If Warning more then 3, You Will be Hard-Kicked!
 ╚════════════╝`
-);
-}
-}
-);
-`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-} else {
-var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(ᴠʟᴋʏʀᴇ.commandName);
-var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
-𝓜Usage.ᴠʟᴋʏʀᴇӄǟɨʐօ === undefined ? `Null` : 𝓜Usage.ᴠʟᴋʏʀᴇӄǟɨʐօ;
-const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
-return ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
-ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
-chat,
-ᴠʟᴋʏʀᴇ,
-ʟɴᴀᴍᴇ,
-ᴘɴᴀᴍᴇ,
-ᴠʟᴋʏʀᴇ.commandName,
-ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
-);
-}
-} catch (error) {
-ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
-return;
-}
-},
+              );
+            }
+          }
+        );
+        `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
+      } else {
+        var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(ᴠʟᴋʏʀᴇ.commandName);
+        var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
+          𝓜Usage.ᴠʟᴋʏʀᴇӄǟɨʐօ === undefined ? `Null` : 𝓜Usage.ᴠʟᴋʏʀᴇӄǟɨʐօ;
+        const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
+        return ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
+          ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+          chat,
+          ᴠʟᴋʏʀᴇ,
+          ʟɴᴀᴍᴇ,
+          ᴘɴᴀᴍᴇ,
+          ᴠʟᴋʏʀᴇ.commandName,
+          ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
+        );
+      }
+    } catch (error) {
+      ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
+      return;
+    }
+  },
 };
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 /*        
