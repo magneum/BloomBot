@@ -19,7 +19,7 @@ shell.exit(1);
 }
 if (
 shell.exec(
-`git add --all && git commit -am "❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞: v${vers.vers} | ON: ${year + "-" + month + "-" + date + " " + hours + ":" + minutes + ":" + seconds}" && git push`
+`git add --all && git commit -am "❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞: v${vers.vers} ⚡ 𝐃𝐚𝐭𝐞: ${year + "-" + month + "-" + date + " " + hours + ":" + minutes + ":" + seconds}" && git push`
 ).code !== 0
 ) {
 shell.echo("Error: Git commit failed");
