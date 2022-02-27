@@ -45,15 +45,6 @@ chat,
 ║🔖 _If you see any bug/error in bot then report it to devs in the above group chats._
 ║🔖 _If you want this bot in your group then contact devs._
 ║🔖 _Enjoy the bot and have fun._
-╚════════════╝
-
-╔════◇*❓How Do I add Vlkyre In My Group?*
-║
-║❗ _Send Your Group Link In My Private!_
-║❗ _Your Group Should Have 10 members atleast._
-║❗ _Turn Disappearing Message Off in your Gc._
-║❗ _If Any Member OF Your Group Kicks The Bot For Dumb/No Reason, Vlkyre Support Team Will PermaLock Your Group._
-║❗ _Every Member Should Be Verified First Before They Can Use Vlkyre._
 ╚════════════╝`,
 "./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ.png"
 );
@@ -69,3 +60,13 @@ return ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋ�
 (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬! 
 */
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
+/*
+╔════◇*❓How Do I add Vlkyre In My Group?*
+║
+║❗ _Send Your Group Link In My Private!_
+║❗ _Your Group Should Have 10 members atleast._
+║❗ _Turn Disappearing Message Off in your Gc._
+║❗ _If Any Member OF Your Group Kicks The Bot For Dumb/No Reason, Vlkyre Support Team Will PermaLock Your Group._
+║❗ _Every Member Should Be Verified First Before They Can Use Vlkyre._
+╚════════════╝
+*/
