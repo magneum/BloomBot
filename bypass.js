@@ -1,6 +1,6 @@
 require(`dotenv`);
 var cron = require("node-cron");
-cron.schedule("* */1 * * *", async () => {
+cron.schedule("0 0 */1 * * *", async () => {
 console.log("Rebootinng Vlkyre every 1hr!");
 const Heroku = require(`heroku-client`);
 var heroku = new Heroku({
