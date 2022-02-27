@@ -137,6 +137,7 @@
     "nhentai-pdf": "^1.0.0",
     "nhentaidownloader": "^1.1.6",
     "node-cooldown": "^0.0.2",
+    "node-cron": "^3.0.0",
     "node-fetch": "^2.6.1",
     "nodejs-file-downloader": "^4.8.1",
     "nodemon": "^2.0.15",
