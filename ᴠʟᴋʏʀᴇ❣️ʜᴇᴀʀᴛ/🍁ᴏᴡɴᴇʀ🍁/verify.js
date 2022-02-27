@@ -65,7 +65,7 @@ if (
 ) {
 const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
 ᴠʟᴋʏʀᴇ.chatId,
-{ url: "https://i.postimg.cc/YS7dKc4b/Verity.png" },
+{ url: "./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ.png" },
 MessageType.image,
 { mimetype: Mimetype.png }
 );
