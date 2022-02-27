@@ -20,60 +20,60 @@ var scriptName = path.basename(__filename);
 var newScpt = scriptName.slice(0, -3).toLowerCase();
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 module.exports = {
-name: newScpt,
-async handle(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, chat, ᴠʟᴋʏʀᴇ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
-try {
-const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
-const ᴅꜰɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.commandName;
-let ᴘɴᴀᴍᴇ;
-try {
-ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/\@s.whatsapp.net/g, "").replace(/\D/g, "");
-} catch {
-ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/\D/g, "");
-}
-const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
-`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-if (!ᴠʟᴋʏʀᴇ.isGroup) {
-return ᴠʟᴋʏʀᴇ_Buttons.MIB(
-ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
-chat,
-ᴠʟᴋʏʀᴇ,
-`*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
+  name: newScpt,
+  async handle(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, chat, ᴠʟᴋʏʀᴇ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
+    try {
+      const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
+      const ᴅꜰɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.commandName;
+      let ᴘɴᴀᴍᴇ;
+      try {
+        ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/\@s.whatsapp.net/g, "").replace(/\D/g, "");
+      } catch {
+        ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/\D/g, "");
+      }
+      const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
+      `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
+      if (!ᴠʟᴋʏʀᴇ.isGroup) {
+        return ᴠʟᴋʏʀᴇ_Buttons.MIB(
+          ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+          chat,
+          ᴠʟᴋʏʀᴇ,
+          `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
 ╔════◇🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧 
 ║💡 _This Command is Only For Groups!_
 ╚════════════╝`,
-_𝔏𝔞𝔟_.RCLR
-);
-}
-`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-if (ᴠʟᴋʏʀᴇ.isReply) {
-var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
-var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
-Economy.findOne(
-{
-ID: Receiver,
-},
-async (error, userEco) => {
-if (error) return ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
-if (!userEco) {
-var newUser = new Economy({
-ID: Receiver,
-money: 0,
-daily: 0,
-timeout: 86400000,
-fishdone: 0,
-fishtimeout: 1800000,
-workdone: 0,
-worktimeout: 900000,
-});
-await newUser
-.save()
-.catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
-return ᴠʟᴋʏʀᴇ_Buttons.MIB(
-ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
-chat,
-ᴠʟᴋʏʀᴇ,
-`*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
+          _𝔏𝔞𝔟_.RCLR
+        );
+      }
+      `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
+      if (ᴠʟᴋʏʀᴇ.isReply) {
+        var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
+        var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
+        Economy.findOne(
+          {
+            ID: Receiver,
+          },
+          async (error, userEco) => {
+            if (error) return ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
+            if (!userEco) {
+              var newUser = new Economy({
+                ID: Receiver,
+                money: 0,
+                daily: 0,
+                timeout: 86400000,
+                fishdone: 0,
+                fishtimeout: 1800000,
+                workdone: 0,
+                worktimeout: 900000,
+              });
+              await newUser
+                .save()
+                .catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
+              return ᴠʟᴋʏʀᴇ_Buttons.MIB(
+                ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+                chat,
+                ᴠʟᴋʏʀᴇ,
+                `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
 
 ╔◇══════════════◇╗
 ┊  𝐕𝐥𝐤𝐲𝐫𝐞💵𝐁𝐚𝐧𝐤
@@ -82,15 +82,15 @@ chat,
 ║💰 𝗧𝗼𝘁𝗮𝗹 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: Just Opened Your Account!
 ║🤠 𝗔𝗰𝗰𝗼𝘂𝗻𝘁_𝗛𝗼𝗹𝗱𝗲𝗿: @${քɛʀֆօռɢօȶռʊʍ}
 ╚════════════╝`,
-_𝔏𝔞𝔟_.RCLR
-);
-`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-} else {
-return ᴠʟᴋʏʀᴇ_Buttons.MIB(
-ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
-chat,
-ᴠʟᴋʏʀᴇ,
-`*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
+                _𝔏𝔞𝔟_.RCLR
+              );
+              `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
+            } else {
+              return ᴠʟᴋʏʀᴇ_Buttons.MIB(
+                ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+                chat,
+                ᴠʟᴋʏʀᴇ,
+                `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
 
 ╔◇══════════════◇╗
 ┊  𝐕𝐥𝐤𝐲𝐫𝐞💵𝐁𝐚𝐧𝐤
@@ -99,38 +99,38 @@ chat,
 ║💰 𝗧𝗼𝘁𝗮𝗹 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: ${userEco.money}
 ║🤠 𝗔𝗰𝗰𝗼𝘂𝗻𝘁_𝗛𝗼𝗹𝗱𝗲𝗿: @${քɛʀֆօռɢօȶռʊʍ}
 ╚════════════╝`,
-_𝔏𝔞𝔟_.RCLR
-);
-}
-}
-);
-`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-} else {
-Economy.findOne(
-{
-ID: ʟɴᴀᴍᴇ,
-},
-async (error, userEco) => {
-if (error) return ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
-if (!userEco) {
-var newUser = new Economy({
-ID: ʟɴᴀᴍᴇ,
-money: 0,
-daily: 0,
-timeout: 86400000,
-fishdone: 0,
-fishtimeout: 1800000,
-workdone: 0,
-worktimeout: 900000,
-});
-await newUser
-.save()
-.catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
-return ᴠʟᴋʏʀᴇ_Buttons.MIB(
-ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
-chat,
-ᴠʟᴋʏʀᴇ,
-`*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
+                _𝔏𝔞𝔟_.RCLR
+              );
+            }
+          }
+        );
+        `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
+      } else {
+        Economy.findOne(
+          {
+            ID: ʟɴᴀᴍᴇ,
+          },
+          async (error, userEco) => {
+            if (error) return ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
+            if (!userEco) {
+              var newUser = new Economy({
+                ID: ʟɴᴀᴍᴇ,
+                money: 0,
+                daily: 0,
+                timeout: 86400000,
+                fishdone: 0,
+                fishtimeout: 1800000,
+                workdone: 0,
+                worktimeout: 900000,
+              });
+              await newUser
+                .save()
+                .catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
+              return ᴠʟᴋʏʀᴇ_Buttons.MIB(
+                ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+                chat,
+                ᴠʟᴋʏʀᴇ,
+                `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
 
 ╔◇══════════════◇╗
 ┊  𝐕𝐥𝐤𝐲𝐫𝐞💵𝐁𝐚𝐧𝐤
@@ -139,15 +139,15 @@ chat,
 ║💰 𝗧𝗼𝘁𝗮𝗹 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: Just Opened Your Account!
 ║🤠 𝗔𝗰𝗰𝗼𝘂𝗻𝘁_𝗛𝗼𝗹𝗱𝗲𝗿: @${ᴘɴᴀᴍᴇ} 
 ╚════════════╝`,
-_𝔏𝔞𝔟_.RCLR
-);
-`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-} else {
-ᴠʟᴋʏʀᴇ_Buttons.MIB(
-ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
-chat,
-ᴠʟᴋʏʀᴇ,
-`*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
+                _𝔏𝔞𝔟_.RCLR
+              );
+              `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
+            } else {
+              ᴠʟᴋʏʀᴇ_Buttons.MIB(
+                ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+                chat,
+                ᴠʟᴋʏʀᴇ,
+                `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
 
 ╔◇══════════════◇╗
 ┊  𝐕𝐥𝐤𝐲𝐫𝐞💵𝐁𝐚𝐧𝐤
@@ -156,18 +156,18 @@ chat,
 ║💰 𝗧𝗼𝘁𝗮𝗹 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: ${userEco.money}
 ║🤠 𝗔𝗰𝗰𝗼𝘂𝗻𝘁_𝗛𝗼𝗹𝗱𝗲𝗿: @${ᴘɴᴀᴍᴇ} 
 ╚════════════╝`,
-_𝔏𝔞𝔟_.RCLR
-);
-}
-}
-);
-}
-`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-} catch (error) {
-ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
-return;
-}
-},
+                _𝔏𝔞𝔟_.RCLR
+              );
+            }
+          }
+        );
+      }
+      `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
+    } catch (error) {
+      ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
+      return;
+    }
+  },
 };
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 /*        

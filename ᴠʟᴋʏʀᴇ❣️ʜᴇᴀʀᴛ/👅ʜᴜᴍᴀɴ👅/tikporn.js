@@ -20,182 +20,182 @@ const fs = require(`fs`);
 const vers = require(`../../package.json`);
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 module.exports = {
-name: `tikporn`,
-async handle(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, chat, ᴠʟᴋʏʀᴇ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
-try {
-const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
-const ᴅꜰɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.commandName;
-let ᴘɴᴀᴍᴇ;
-try {
-ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/\@s.whatsapp.net/g, "").replace(/\D/g, "");
-} catch {
-ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/\D/g, "");
-}
-const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
-`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-if (ᴠʟᴋʏʀᴇ.isGroup && !ᴠʟᴋʏʀᴇ.isSenderGroupAdmin && !ᴠʟᴋʏʀᴇ.isSenderDev) {
-return ᴠʟᴋʏʀᴇ_Buttons.MIB(
-ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
-chat,
-ᴠʟᴋʏʀᴇ,
-`*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*\n❌𝐃𝐞𝐧𝐢𝐞𝐝: _Admins/Dev Only.You Are Not Allowed!_`,
-"./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_NotAdmin.png"
-);
-}
-`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-if (ᴠʟᴋʏʀᴇ.isGroup && !ᴠʟᴋʏʀᴇ.isBotGroupAdmin && !ᴠʟᴋʏʀᴇ.isSenderDev) {
-return ᴠʟᴋʏʀᴇ_Buttons.MIB(
-ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
-chat,
-ᴠʟᴋʏʀᴇ,
-`*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡* 
+  name: `tikporn`,
+  async handle(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, chat, ᴠʟᴋʏʀᴇ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
+    try {
+      const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
+      const ᴅꜰɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.commandName;
+      let ᴘɴᴀᴍᴇ;
+      try {
+        ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/\@s.whatsapp.net/g, "").replace(/\D/g, "");
+      } catch {
+        ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/\D/g, "");
+      }
+      const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
+      `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
+      if (ᴠʟᴋʏʀᴇ.isGroup && !ᴠʟᴋʏʀᴇ.isSenderGroupAdmin && !ᴠʟᴋʏʀᴇ.isSenderDev) {
+        return ᴠʟᴋʏʀᴇ_Buttons.MIB(
+          ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+          chat,
+          ᴠʟᴋʏʀᴇ,
+          `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*\n❌𝐃𝐞𝐧𝐢𝐞𝐝: _Admins/Dev Only.You Are Not Allowed!_`,
+          "./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_NotAdmin.png"
+        );
+      }
+      `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
+      if (ᴠʟᴋʏʀᴇ.isGroup && !ᴠʟᴋʏʀᴇ.isBotGroupAdmin && !ᴠʟᴋʏʀᴇ.isSenderDev) {
+        return ᴠʟᴋʏʀᴇ_Buttons.MIB(
+          ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+          chat,
+          ᴠʟᴋʏʀᴇ,
+          `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡* 
 ╔⧕🌿𝐓𝐨𝐩𝐢𝐜: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
 ║❌𝐃𝐞𝐧𝐢𝐞𝐝: _How Can I Use Admin Only Commands If i am not admin?_
 ║💡 𝐅𝐢𝐱: _Make Me Admin First!_
 ╚════════════╝`,
-"./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_NotAdmin.png"
-);
-}
-`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-const Bagde = require(`../../ᴠʟᴋʏʀᴇ🥠ᴘᴏʀᴛ/badge`);
-const ms = require(`parse-ms`);
-Bagde.findOne(
-{
-ID: ᴠʟᴋʏʀᴇ.sender,
-},
-async (error, userBadge) => {
-if (error) return console.log(error);
-if (!userBadge) {
-var newUser = new Bagde({
-ID: ᴠʟᴋʏʀᴇ.sender,
-Badge: `🧵ʙᴀꜱɪᴄ-10ᴄᴏᴍᴍᴀɴᴅꜱ`,
-value: `True`,
-Limits: 10,
-CurrentLimitTime: Date.now(),
-PermanentLimitTime: 43200000,
-});
-await newUser
-.save()
-.catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
-return ᴠʟᴋʏʀᴇ_Buttons.MIB(
-ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
-chat,
-ᴠʟᴋʏʀᴇ,
-`*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
+          "./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_NotAdmin.png"
+        );
+      }
+      `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
+      const Bagde = require(`../../ᴠʟᴋʏʀᴇ🥠ᴘᴏʀᴛ/badge`);
+      const ms = require(`parse-ms`);
+      Bagde.findOne(
+        {
+          ID: ᴠʟᴋʏʀᴇ.sender,
+        },
+        async (error, userBadge) => {
+          if (error) return console.log(error);
+          if (!userBadge) {
+            var newUser = new Bagde({
+              ID: ᴠʟᴋʏʀᴇ.sender,
+              Badge: `🧵ʙᴀꜱɪᴄ-10ᴄᴏᴍᴍᴀɴᴅꜱ`,
+              value: `True`,
+              Limits: 10,
+              CurrentLimitTime: Date.now(),
+              PermanentLimitTime: 43200000,
+            });
+            await newUser
+              .save()
+              .catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
+            return ᴠʟᴋʏʀᴇ_Buttons.MIB(
+              ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+              chat,
+              ᴠʟᴋʏʀᴇ,
+              `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
 ╔⧕🌿𝐓𝐨𝐩𝐢𝐜: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_  
 ║🧈 *Added To DB for _${newScpt}_ command First Time!*
 ║🦋 _Try ${ᴋᴇɪ}${ᴅꜰɴᴀᴍᴇ} Again!_
 ╚════════════╝`,
-`./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_Mongo.png`
-);
-} else {
-`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
+              `./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_Mongo.png`
+            );
+          } else {
+            `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 
-var clock =
-userBadge.PermanentLimitTime -
-(Date.now() - userBadge.CurrentLimitTime);
-if (clock > 0 && userBadge.Limits == 0) {
-userBadge.value = `False`;
-await userBadge
-.save()
-.catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
-}
-`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-if (clock > 0 && !userBadge.Limits == 0) {
-userBadge.Limits = userBadge.Limits - 1;
-userBadge.value = `True`;
-await userBadge
-.save()
-.catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
-}
-`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-if (clock < 0 && userBadge.Limits == 0) {
-if (userBadge.Badge === `🧵ʙᴀꜱɪᴄ-10ᴄᴏᴍᴍᴀɴᴅꜱ`) {
-userBadge.Limits = 10;
-} else if (userBadge.Badge === `🥉ʙʀᴏɴᴢᴇ-20ᴄᴏᴍᴍᴀɴᴅꜱ`) {
-userBadge.Limits = 20;
-} else if (userBadge.Badge === `🥈ꜱɪʟᴠᴇʀ-40ᴄᴏᴍᴍᴀɴᴅꜱ`) {
-userBadge.Limits = 40;
-} else if (userBadge.Badge === `🥇ɢᴏʟᴅ-60ᴄᴏᴍᴍᴀɴᴅꜱ`) {
-userBadge.Limits = 60;
-} else if (userBadge.Badge === `💍ᴘʟᴀᴛɪɴᴜᴍ-80ᴄᴏᴍᴍᴀɴᴅꜱ`) {
-userBadge.Limits = 80;
-} else if (userBadge.Badge === `💎ᴅɪᴀᴍᴏɴᴅ-100ᴄᴏᴍᴍᴀɴᴅꜱ`) {
-userBadge.Limits = 100;
-}
-userBadge.CurrentLimitTime = Date.now();
-userBadge.value = `True`;
-await userBadge
-.save()
-.catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
-}
-}
-`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-if (!ᴠʟᴋʏʀᴇ.fromMe && userBadge.value === `False`) {
-let time = ms(
-userBadge.PermanentLimitTime -
-(Date.now() - userBadge.CurrentLimitTime)
-);
-return ᴠʟᴋʏʀᴇ_Buttons.MIB(
-ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
-chat,
-ᴠʟᴋʏʀᴇ,
-`*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
+            var clock =
+              userBadge.PermanentLimitTime -
+              (Date.now() - userBadge.CurrentLimitTime);
+            if (clock > 0 && userBadge.Limits == 0) {
+              userBadge.value = `False`;
+              await userBadge
+                .save()
+                .catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
+            }
+            `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
+            if (clock > 0 && !userBadge.Limits == 0) {
+              userBadge.Limits = userBadge.Limits - 1;
+              userBadge.value = `True`;
+              await userBadge
+                .save()
+                .catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
+            }
+            `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
+            if (clock < 0 && userBadge.Limits == 0) {
+              if (userBadge.Badge === `🧵ʙᴀꜱɪᴄ-10ᴄᴏᴍᴍᴀɴᴅꜱ`) {
+                userBadge.Limits = 10;
+              } else if (userBadge.Badge === `🥉ʙʀᴏɴᴢᴇ-20ᴄᴏᴍᴍᴀɴᴅꜱ`) {
+                userBadge.Limits = 20;
+              } else if (userBadge.Badge === `🥈ꜱɪʟᴠᴇʀ-40ᴄᴏᴍᴍᴀɴᴅꜱ`) {
+                userBadge.Limits = 40;
+              } else if (userBadge.Badge === `🥇ɢᴏʟᴅ-60ᴄᴏᴍᴍᴀɴᴅꜱ`) {
+                userBadge.Limits = 60;
+              } else if (userBadge.Badge === `💍ᴘʟᴀᴛɪɴᴜᴍ-80ᴄᴏᴍᴍᴀɴᴅꜱ`) {
+                userBadge.Limits = 80;
+              } else if (userBadge.Badge === `💎ᴅɪᴀᴍᴏɴᴅ-100ᴄᴏᴍᴍᴀɴᴅꜱ`) {
+                userBadge.Limits = 100;
+              }
+              userBadge.CurrentLimitTime = Date.now();
+              userBadge.value = `True`;
+              await userBadge
+                .save()
+                .catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
+            }
+          }
+          `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
+          if (!ᴠʟᴋʏʀᴇ.fromMe && userBadge.value === `False`) {
+            let time = ms(
+              userBadge.PermanentLimitTime -
+                (Date.now() - userBadge.CurrentLimitTime)
+            );
+            return ᴠʟᴋʏʀᴇ_Buttons.MIB(
+              ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+              chat,
+              ᴠʟᴋʏʀᴇ,
+              `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
 ╔⧉༻❗ 𝐈𝐦𝐩𝐨𝐫𝐭𝐚𝐧𝐭
 ║⚔️ 𝗕𝗮𝗱𝗴𝗲: ${userBadge.Badge}
 ║💤 𝗥𝗲𝗻𝗲𝘄𝘀_𝗜𝗻: ${time.hours}h ${time.minutes}m ${time.seconds}s
 ║💡 𝐓𝐢𝐩: _Buy Higher Badges Using ${ᴋᴇɪ}shop_
 ╚════════════╝`,
-"./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_UnivB.png"
-);
-}
-`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-await porno().then(async function (res) {
-if (!res.video.endsWith(".mp4")) {
-Broiler.BroilerBadge(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat, userBadge);
-}
-`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-ᴠʟᴋʏʀᴇ_Buttons.MTB(
-ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
-chat,
-ᴠʟᴋʏʀᴇ,
-`*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
+              "./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_UnivB.png"
+            );
+          }
+          `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
+          await porno().then(async function (res) {
+            if (!res.video.endsWith(".mp4")) {
+              Broiler.BroilerBadge(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat, userBadge);
+            }
+            `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
+            ᴠʟᴋʏʀᴇ_Buttons.MTB(
+              ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+              chat,
+              ᴠʟᴋʏʀᴇ,
+              `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
 
 ╔════◇🌿𝗣𝗹𝗲𝗮𝘀𝗲 𝘄𝗮𝗶𝘁!
 ║🎬 𝗙𝗶𝗹𝗲 𝗧𝘆𝗽𝗲: _Video_
 ║⏰ 𝗪𝗮𝗶𝘁 𝗧𝗶𝗺𝗲: _Depends on Length of file._
 ╚════════════╝`
-);
-`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-var RawData = `https://tikporntok.com/` + res.video;
-console.log(RawData);
-var Stream = "./" + Date.now() + ".mp4";
-await FFmpegProc.addInput(RawData)
-.output(Stream)
-.format("mp4")
-.on(`progress`, (p) => {
-Readline.cursorTo(process.stdout, 0);
-process.stdout.write(`💯𝐏𝐫𝐨𝐠𝐫𝐞𝐬𝐬: ${p.targetSize}kb`);
-})
-.on("error", async (error) => {
-console.log(`⬡═══════════════════| 🔺𝐅𝐅𝐦𝐩𝐞𝐠 𝐄𝐫𝐫𝐨𝐫: ` + error);
-Broiler.BroilerBadge(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat, userBadge);
-})
-.on("end", async () => {
-console.log(
-`\n⬡═══════════════════| 🥂𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐅𝐢𝐧𝐢𝐬𝐞𝐝 |═══════════════════⬡`
-);
-const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
-ᴠʟᴋʏʀᴇ.chatId,
-fs.readFileSync(Stream),
-MessageType.video,
-{ mimetype: "video/mp4" }
-);
-await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
-.sendMessage(
-ᴠʟᴋʏʀᴇ.chatId,
-{
-contentText: `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
+            );
+            `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
+            var RawData = `https://tikporntok.com/` + res.video;
+            console.log(RawData);
+            var Stream = "./" + Date.now() + ".mp4";
+            await FFmpegProc.addInput(RawData)
+              .output(Stream)
+              .format("mp4")
+              .on(`progress`, (p) => {
+                Readline.cursorTo(process.stdout, 0);
+                process.stdout.write(`💯𝐏𝐫𝐨𝐠𝐫𝐞𝐬𝐬: ${p.targetSize}kb`);
+              })
+              .on("error", async (error) => {
+                console.log(`⬡═══════════════════| 🔺𝐅𝐅𝐦𝐩𝐞𝐠 𝐄𝐫𝐫𝐨𝐫: ` + error);
+                Broiler.BroilerBadge(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat, userBadge);
+              })
+              .on("end", async () => {
+                console.log(
+                  `\n⬡═══════════════════| 🥂𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐅𝐢𝐧𝐢𝐬𝐞𝐝 |═══════════════════⬡`
+                );
+                const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
+                  ᴠʟᴋʏʀᴇ.chatId,
+                  fs.readFileSync(Stream),
+                  MessageType.video,
+                  { mimetype: "video/mp4" }
+                );
+                await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
+                  .sendMessage(
+                    ᴠʟᴋʏʀᴇ.chatId,
+                    {
+                      contentText: `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
 ╔⧕🌿𝐓𝐨𝐩𝐢𝐜: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
 ║📞 𝐀𝐝𝐦𝐢𝐧-𝐎𝐧𝐥𝐲: @${ᴘɴᴀᴍᴇ} 
 ║📜 𝐓𝐢𝐭𝐥𝐞: ${res.title}
@@ -207,37 +207,39 @@ contentText: `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
 ║📤 𝐔𝐩𝐥𝐨𝐚𝐝𝐞𝐝: ${res.upload}
 ║🖊️ 𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${res.desc}
 ╚════════════╝`,
-footerText: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™\nᴘʏᴛʜᴏɴ𓆘+☊ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ`,
-buttons: [
-{
-buttonId: `${ᴋᴇɪ}help`,
-buttonText: { displayText: `${ᴋᴇɪ}help` },
-type: 1,
-},
-],
-headerType: 5,
-videoMessage: media.message.videoMessage,
-},
-MessageType.buttonsMessage,
-{
-quoted: chat,
-contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
-}
-)
-.catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
-await cleanRF.cleanRF(Stream);
-return;
-});
-FFmpegProc.run();
-});
-}
-);
-`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-} catch (error) {
-ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
-return;
-}
-},
+                      footerText: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™\nᴘʏᴛʜᴏɴ𓆘+☊ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ`,
+                      buttons: [
+                        {
+                          buttonId: `${ᴋᴇɪ}help`,
+                          buttonText: { displayText: `${ᴋᴇɪ}help` },
+                          type: 1,
+                        },
+                      ],
+                      headerType: 5,
+                      videoMessage: media.message.videoMessage,
+                    },
+                    MessageType.buttonsMessage,
+                    {
+                      quoted: chat,
+                      contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
+                    }
+                  )
+                  .catch((error) =>
+                    ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
+                  );
+                await cleanRF.cleanRF(Stream);
+                return;
+              });
+            FFmpegProc.run();
+          });
+        }
+      );
+      `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
+    } catch (error) {
+      ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
+      return;
+    }
+  },
 };
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 /*        
