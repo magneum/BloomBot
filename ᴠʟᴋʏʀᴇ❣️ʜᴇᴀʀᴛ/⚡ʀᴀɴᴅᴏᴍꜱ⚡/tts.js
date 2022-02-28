@@ -62,10 +62,9 @@ return ᴠʟᴋʏʀᴇ_Buttons.MIB(
 chat,
 ᴠʟᴋʏʀᴇ,
 `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
-╔⧕🌿𝐓𝐨𝐩𝐢𝐜: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_  
-║🧈 *Added To DB for _${newScpt}_ command First Time!*
-║🦋 _Try ${ᴋᴇɪ}${ᴅꜰɴᴀᴍᴇ} Again!_
-╚════════════╝`,
+💿𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}  
+🧈 *Added To DB for _${newScpt}_ command First Time!*
+🦋 _Try ${ᴋᴇɪ}${ᴅꜰɴᴀᴍᴇ} Again!_`,
 `./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_Mongo.png`
 );
 } else {
