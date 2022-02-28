@@ -80,7 +80,7 @@ chat,
 ᴠʟᴋʏʀᴇ,
 `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
 
-╔⧉༻🌿𝐓𝐨𝐩𝐢𝐜: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
+╔⧉༻💿𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}
 ║❌𝐃𝐞𝐧𝐢𝐞𝐝: _How Can I Use Admin Only Commands If i am not admin?_
 ║💡 𝐅𝐢𝐱: _Make Me Admin First!_
 ╚════════════╝`,
@@ -131,6 +131,7 @@ mentionedJid: members,
 },
 caption: `\n༆Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers}\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™
 
+💿𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}
 ⚡ 𝐅𝐫𝐨𝐦: @${ᴘɴᴀᴍᴇ}
 ${ᴠʟᴋʏʀᴇ.body.replace(ᴠʟᴋʏʀᴇ.body[0] + ᴠʟᴋʏʀᴇ.commandName + " ", "")}`,
 })
@@ -148,6 +149,7 @@ mentionedJid: members,
 },
 caption: `\n༆Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers}\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™
 
+💿𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}
 ⚡ 𝐅𝐫𝐨𝐦: @${ᴘɴᴀᴍᴇ}
 ${ᴠʟᴋʏʀᴇ.replyMessage.replace(ᴠʟᴋʏʀᴇ.body[0] + ᴠʟᴋʏʀᴇ.commandName + " ", "")}`,
 }

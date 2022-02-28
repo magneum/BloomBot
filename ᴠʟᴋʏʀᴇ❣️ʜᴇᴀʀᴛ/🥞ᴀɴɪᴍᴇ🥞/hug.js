@@ -18,8 +18,7 @@ const anime = require(`anime-actions`);
 var path = require(`path`);
 const fs = require(`fs`);
 var scriptName = path.basename(__filename);
-var str = scriptName;
-var newScpt = str.slice(0, -3).toLowerCase();
+var newScpt = scriptName.slice(0, -3).toLowerCase();
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 /*              (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!*/
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
@@ -32,10 +31,8 @@ const ᴅꜰɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.commandName;
 let ᴘɴᴀᴍᴇ;
 try {
 ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/\@s.whatsapp.net/g, "").replace(/\D/g, "");
-// require("child_process").exec("hash -r").stderr.pipe(process.stderr);
 } catch {
 ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/\D/g, "");
-// require("child_process").exec("hash -r").stderr.pipe(process.stderr);
 }
 const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
@@ -97,14 +94,12 @@ MessageType.video,
 {
 mimetype: `video/gif`,
 quoted: chat,
-caption: `
-╔⧉༻🌿𝐓𝐨𝐩𝐢𝐜: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
-║
-║🍕 𝐅𝐫𝐨𝐦: @${ᴘɴᴀᴍᴇ}
-║🌭 𝐓𝐨: @${TagPerson}
-╚════════════╝
+caption: `❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❞\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™
 
-\n❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❞\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+💿𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}
+🍕𝐅𝐫𝐨𝐦: @${ᴘɴᴀᴍᴇ}
+🌭𝐓𝐨: @${TagPerson}
+📎𝗟𝗶𝗻𝗸: ${AnimeLink}`,
 contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ, TagMention] },
 }
 )
@@ -135,13 +130,11 @@ MessageType.video,
 {
 mimetype: `video/gif`,
 quoted: chat,
-caption: `
-╔⧉༻🌿𝐓𝐨𝐩𝐢𝐜: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
-║
-║🍕 𝐅𝐨𝐫: @${ᴘɴᴀᴍᴇ}
-╚════════════╝
+caption: `❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❞\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™
 
-\n❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❞\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+💿𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}
+🍕𝐅𝐨𝐫: @${ᴘɴᴀᴍᴇ}
+📎𝗟𝗶𝗻𝗸: ${AnimeLink}`,
 contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
 }
 )
@@ -169,14 +162,12 @@ MessageType.video,
 {
 mimetype: `video/gif`,
 quoted: chat,
-caption: `
-╔⧉༻🌿𝐓𝐨𝐩𝐢𝐜: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
-║
-║🍕 𝐅𝐫𝐨𝐦: @${ᴘɴᴀᴍᴇ}
-║🌭 𝐓𝐨: @${քɛʀֆօռɢօȶռʊʍ}
-╚════════════╝
+caption: `❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❞\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™
 
-\n❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❞\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+💿𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}
+🍕𝐅𝐫𝐨𝐦: @${ᴘɴᴀᴍᴇ}
+🌭𝐓𝐨: @${քɛʀֆօռɢօȶռʊʍ}
+📎𝗟𝗶𝗻𝗸: ${AnimeLink}`,
 contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ, Receiver] },
 }
 )
@@ -205,13 +196,11 @@ MessageType.video,
 {
 mimetype: `video/gif`,
 quoted: chat,
-caption: `
-╔⧉༻🌿𝐓𝐨𝐩𝐢𝐜: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
-║
-║🍕 𝐅𝐨𝐫: @${ᴘɴᴀᴍᴇ}
-╚════════════╝
+caption: `❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❞\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™
 
-\n❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❞\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+💿𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}
+🍕𝐅𝐨𝐫: @${ᴘɴᴀᴍᴇ}
+📎𝗟𝗶𝗻𝗸: ${AnimeLink}`,
 contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
 }
 )

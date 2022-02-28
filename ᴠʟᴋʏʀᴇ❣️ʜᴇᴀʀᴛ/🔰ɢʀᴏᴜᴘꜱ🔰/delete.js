@@ -99,6 +99,8 @@ return ᴠʟᴋʏʀᴇ_Buttons.MTB(
 chat,
 ᴠʟᴋʏʀᴇ,
 `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
+
+💿𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}
 ❌𝐃𝐞𝐧𝐢𝐞𝐝: *This Ain't Telegram/Discord!*
 _Make Sure That Text Was Sent By Vlkyre Bot!_`
 );
