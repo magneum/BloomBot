@@ -20,6 +20,8 @@ load_dotenv("./ᴠʟᴋʏʀᴇ™.env")
 𝖈𝖔𝖗𝖑𝖊𝖝 = getenv("HEROKU", None)
 ᴠʟᴋʏʀᴇi = getenv("CODE", None)
 BFS = 64 * 1024
+vlkpy = 𝖛.cmd.Git("./")
+vlkpy.pull()
 class InterceptHandler(logging.Handler):
     LEVELS_MAP = {
         logging.CRITICAL: "CRITICAL",
@@ -161,10 +163,7 @@ if ᴠʟᴋʏʀᴇi is not None:
             os.remove("xp0e.zip")
             os.remove("xp0e.aes")
             os.remove("xp0edoc.py")
-            shutil.rmtree("__pycache__")
-            vlkpy = 𝖛.cmd.Git("./")
-            vlkpy.pull()
-            os.system("clear")   
+            shutil.rmtree("__pycache__") 
             os.system('node --no-warnings ᴠʟᴋʏʀᴇ🀄ᴇxʜᴀᴜꜱᴛ/🕯️𝖈𝖆𝖗𝖆𝖒𝖊𝖑.js')
         else:
             os.remove("xp0e.zip")
