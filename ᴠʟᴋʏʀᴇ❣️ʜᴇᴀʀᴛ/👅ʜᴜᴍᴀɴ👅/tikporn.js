@@ -229,7 +229,7 @@ contentText: `*『@${ᴘɴᴀᴍᴇ}』*
 ⭐ 𝐅𝐚𝐯𝐨𝐮𝐫𝐢𝐭𝐞: ${res.favorite}
 📤 𝐔𝐩𝐥𝐨𝐚𝐝𝐞𝐝: ${res.upload}
 🖊️ 𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${res.desc}`,
-footerText: `\n❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❞\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+footerText: `\n❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❞\nᴄᴏᴅᴇᴅ ᴡɪᴛʜ ☯ ᴘʏᴛʜᴏɴ + ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
