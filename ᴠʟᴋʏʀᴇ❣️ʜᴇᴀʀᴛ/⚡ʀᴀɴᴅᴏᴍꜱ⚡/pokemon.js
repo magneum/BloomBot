@@ -79,35 +79,32 @@ await pokemon.card
 .then(async (card) => {
 try {
 var PokeInfo = `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
-╔⧕🌿𝐓𝐨𝐩𝐢𝐜: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
-║
-║💫 *Name:* ${json.name}
-║〽️ *Pokedex ID:* ${json.id}
-║🎀 *Type:* ${json.type}
-║🐞 *Species*: ${json.species}
-║📛 *Abilities:* ${json.abilities}
-║🔆 *Height:* ${json.height}
-║⚖ *Weight:* ${json.weight}
-║🌟 *Base Experience:* ${json.base_experience}
-║♀️ *Geder*: ${json.gender}
-║★ *Egg Groups*: ${json.egg_groups}
-╚◇╗
-╔◇╝  🌽𝐒𝐓𝐀𝐓𝐈𝐒𝐓𝐈𝐂𝐒 ꧂
-║
-║✳ *HP:* ${json.stats.hp}
-║⚔ *Attack:* ${json.stats.attack}
-║🔰 *Defense:* ${json.stats.defense}
-║☄ *Special Attack:* ${json.stats.sp_atk}
-║🛡 *Special Defense:* ${json.stats.sp_def}
-║🎐 *Speed:* ${json.stats.speed}
-║🍯 *Total*: ${json.stats.total}
-╚◇╗
-╔◇╝  🌶️𝐅𝐀𝐌𝐈𝐋𝐘 ꧂
-║
-║🌸 *Evolved Stage:* ${json.family.evolutionStage}
-║💮 *Evolved Line:* ${json.family.evolutionLine}
-║🪐 *Generation:* ${json.generation}
-╚════════════╝
+💿𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}
+
+💫 *Name:* ${json.name}
+〽️ *Pokedex ID:* ${json.id}
+🎀 *Type:* ${json.type}
+🐞 *Species*: ${json.species}
+📛 *Abilities:* ${json.abilities}
+🔆 *Height:* ${json.height}
+⚖ *Weight:* ${json.weight}
+🌟 *Base Experience:* ${json.base_experience}
+♀️ *Geder*: ${json.gender}
+★ *Egg Groups*: ${json.egg_groups}
+
+🌽𝐒𝐓𝐀𝐓𝐈𝐒𝐓𝐈𝐂𝐒
+✳ *HP:* ${json.stats.hp}
+⚔ *Attack:* ${json.stats.attack}
+🔰 *Defense:* ${json.stats.defense}
+☄ *Special Attack:* ${json.stats.sp_atk}
+🛡 *Special Defense:* ${json.stats.sp_def}
+🎐 *Speed:* ${json.stats.speed}
+🍯 *Total*: ${json.stats.total}
+
+🌶️𝐅𝐀𝐌𝐈𝐋𝐘
+🌸 *Evolved Stage:* ${json.family.evolutionStage}
+💮 *Evolved Line:* ${json.family.evolutionLine}
+🪐 *Generation:* ${json.generation}
 
 
 💬 *Summary:* ${json.description}
