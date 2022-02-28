@@ -55,30 +55,25 @@ chat,
 ┊    𝐌𝐞𝐜𝐡𝐚𝐧𝐢𝐬𝐦
 ╚◇═══════════════◇╝
 
-╔⧉༻✋🏽‍ 𝐖𝐚𝐢𝐭 𝐅𝐨𝐫 𝐌𝐲 𝐎𝐰𝐧𝐞𝐫 𝐓𝐨 𝐑𝐞𝐬𝐩𝐨𝐧𝐝!
-║
-║⚡• _Dear Random User, This Private Is Being Guarded By Vlkyre AI!_
-║⚡• _Do Not Spam The Chat Box!_
-║⚡• _No Spamming In Private!_
-║⚡• _You Will be blocked after 4 warnings!_
-╚◇╗
-╔◇╝
-║
-║❗• 𝗪𝗮𝗿𝗻𝗶𝗻𝗴𝘀: 1/4
-║❗• 𝗪𝗮𝗿𝗻𝗲𝗱 𝗧𝗼: @${ᴘɴᴀᴍᴇ}
-║❗• 𝗪𝗮𝗿𝗻𝗲𝗱 𝗕𝘆: _Vlkyre AI_
-╚◇╗
-╔◇╝⚠️ 𝗩𝗹𝗸𝘆𝗿𝗲 𝗜𝗻 𝗣𝗿𝗶𝘃𝗮𝘁𝗲 𝗜𝘀 𝗡𝗼𝐭 𝗔𝗹𝗹𝗼𝘄𝗲𝗱!
-║
-║ *You Can Just Use These Commands In Private!*
-║ *${ᴋᴇɪ}help:* _read all commands of Vlkyre!_
-║ *${ᴋᴇɪ}rules:* _read rules of Vlkyre!_
-║ *${ᴋᴇɪ}faq:* _read frequesntly asked questions!_
-║ *${ᴋᴇɪ}verify:* _read how to get verified!_
-╚◇╗
-╔◇╝🌿 𝐏𝐮𝐧𝐢𝐬𝐡𝐦𝐞𝐧𝐭
-║📌• _You Will be Auto-Blocked After 4 warnings!_
-╚════════════╝`,
+✋🏽‍𝐖𝐚𝐢𝐭 𝐅𝐨𝐫 𝐌𝐲 𝐎𝐰𝐧𝐞𝐫 𝐓𝐨 𝐑𝐞𝐬𝐩𝐨𝐧𝐝!
+⚡• _Dear Random User, This Private Is Being Guarded By Vlkyre AI!_
+⚡• _Do Not Spam The Chat Box!_
+⚡• _No Spamming In Private!_
+⚡• _You Will be blocked after 4 warnings!_
+
+🌿𝐏𝐮𝐧𝐢𝐬𝐡𝐦𝐞𝐧𝐭
+❗• 𝗪𝗮𝗿𝗻𝗶𝗻𝗴𝘀: 1/4
+❗• 𝗪𝗮𝗿𝗻𝗲𝗱 𝗧𝗼: @${ᴘɴᴀᴍᴇ}
+❗• 𝗪𝗮𝗿𝗻𝗲𝗱 𝗕𝘆: _Vlkyre AI_
+📌• _You Will be Auto-Blocked After 4 warnings!_
+
+
+⚠️𝗩𝗹𝗸𝘆𝗿𝗲 𝗜𝗻 𝗣𝗿𝗶𝘃𝗮𝘁𝗲 𝗜𝘀 𝗡𝗼𝐭 𝗔𝗹𝗹𝗼𝘄𝗲𝗱!
+*You Can Just Use These Commands In Private!*
+⚡• *${ᴋᴇɪ}help:* _read all commands of Vlkyre!_
+⚡• *${ᴋᴇɪ}rules:* _read rules of Vlkyre!_
+⚡• *${ᴋᴇɪ}faq:* _read frequesntly asked questions!_
+⚡• *${ᴋᴇɪ}verify:* _read how to get verified!_`,
 "./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ.png"
 );
 }
@@ -100,30 +95,25 @@ chat,
 ┊    𝐌𝐞𝐜𝐡𝐚𝐧𝐢𝐬𝐦
 ╚◇═══════════════◇╝
 
-╔⧉༻✋🏽‍ 𝐖𝐚𝐢𝐭 𝐅𝐨𝐫 𝐌𝐲 𝐎𝐰𝐧𝐞𝐫 𝐓𝐨 𝐑𝐞𝐬𝐩𝐨𝐧𝐝!
-║
-║⚡• _Dear Random User, This Private Is Being Guarded By Vlkyre AI!_
-║⚡• _Do Not Spam The Chat Box!_
-║⚡• _No Spamming In Private!_
-║⚡• _You Will be blocked after 4 warnings!_
-╚◇╗
-╔◇╝
-║
-║❗• 𝗪𝗮𝗿𝗻𝗶𝗻𝗴𝘀: ${user.Amount}/4
-║❗• 𝗪𝗮𝗿𝗻𝗲𝗱 𝗧𝗼: @${ᴘɴᴀᴍᴇ}
-║❗• 𝗪𝗮𝗿𝗻𝗲𝗱 𝗕𝘆: _Vlkyre AI_
-╚◇╗
-╔◇╝⚠️ 𝗩𝗹𝗸𝘆𝗿𝗲 𝗜𝗻 𝗣𝗿𝗶𝘃𝗮𝘁𝗲 𝗜𝘀 𝗡𝗼𝐭 𝗔𝗹𝗹𝗼𝘄𝗲𝗱!
-║
-║ *You Can Just Use These Commands In Private!*
-║ *${ᴋᴇɪ}help:* _read all commands of Vlkyre!_
-║ *${ᴋᴇɪ}rules:* _read rules of Vlkyre!_
-║ *${ᴋᴇɪ}faq:* _read frequesntly asked questions!_
-║ *${ᴋᴇɪ}verify:* _read how to get verified!_
-╚◇╗
-╔◇╝🌿 𝐏𝐮𝐧𝐢𝐬𝐡𝐦𝐞𝐧𝐭
-║📌• _You Will be Auto-Blocked After 4 warnings!_
-╚════════════╝`,
+✋🏽‍𝐖𝐚𝐢𝐭 𝐅𝐨𝐫 𝐌𝐲 𝐎𝐰𝐧𝐞𝐫 𝐓𝐨 𝐑𝐞𝐬𝐩𝐨𝐧𝐝!
+⚡• _Dear Random User, This Private Is Being Guarded By Vlkyre AI!_
+⚡• _Do Not Spam The Chat Box!_
+⚡• _No Spamming In Private!_
+⚡• _You Will be blocked after 4 warnings!_
+
+🌿𝐏𝐮𝐧𝐢𝐬𝐡𝐦𝐞𝐧𝐭
+❗• 𝗪𝗮𝗿𝗻𝗶𝗻𝗴𝘀: 1/4
+❗• 𝗪𝗮𝗿𝗻𝗲𝗱 𝗧𝗼: @${ᴘɴᴀᴍᴇ}
+❗• 𝗪𝗮𝗿𝗻𝗲𝗱 𝗕𝘆: _Vlkyre AI_
+📌• _You Will be Auto-Blocked After 4 warnings!_
+
+
+⚠️𝗩𝗹𝗸𝘆𝗿𝗲 𝗜𝗻 𝗣𝗿𝗶𝘃𝗮𝘁𝗲 𝗜𝘀 𝗡𝗼𝐭 𝗔𝗹𝗹𝗼𝘄𝗲𝗱!
+*You Can Just Use These Commands In Private!*
+⚡• *${ᴋᴇɪ}help:* _read all commands of Vlkyre!_
+⚡• *${ᴋᴇɪ}rules:* _read rules of Vlkyre!_
+⚡• *${ᴋᴇɪ}faq:* _read frequesntly asked questions!_
+⚡• *${ᴋᴇɪ}verify:* _read how to get verified!_`,
 "./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ.png"
 );
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
