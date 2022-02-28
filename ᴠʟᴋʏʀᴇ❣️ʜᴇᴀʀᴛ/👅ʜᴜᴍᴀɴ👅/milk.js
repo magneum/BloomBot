@@ -62,6 +62,7 @@ const malScraper = require(`mal-scraper`);
 const { exec } = require(`child_process`);
 const pokemon = require("pokemontcgsdk");
 const speed = require(`performance-now`);
+const FLFMPEG = require("fluent-ffmpeg");
 const ffmpeg = require(`fluent-ffmpeg`);
 const FFmpeg = require("fluent-ffmpeg");
 const Heroku = require(`heroku-client`);
@@ -76,6 +77,7 @@ const akaneko = require(`akaneko`);
 const ytdl = require("ytdl-core");
 const yts = require("yt-search");
 let cheerio = require(`cheerio`);
+const FLMPEGProc = new FLFMPEG();
 var color = randomMC.getColor();
 const FFmpegProc = new FFmpeg();
 const Kolor = require("chalk");
@@ -90,10 +92,9 @@ const fs = require(`fs`);
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 /*              (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!*/
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
-const FLFMPEG = require(`fluent-ffmpeg`)()
+const FLMPEG = require(`fluent-ffmpeg`)()
 .setFfprobePath(ffprobe.path)
 .setFfmpegPath(ffmpegInstaller.path);
-const FLFMPEGProc = new FLFMPEG();
 var heroku = new Heroku({
 token: _𝔏𝔞𝔟_.HEROKU_API_KEY,
 });
