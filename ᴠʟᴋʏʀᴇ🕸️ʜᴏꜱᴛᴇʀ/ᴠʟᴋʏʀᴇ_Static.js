@@ -51,7 +51,7 @@ return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 mimetype: `video/gif`,
 quoted: chat,
 caption:
-`⌜𝐕𝐥𝐤𝐲𝐫𝐞 ×፝֟͜×${vers.vers}⌟\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™\n\n` +
+`༆Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ×፝֟͜× ${vers.vers}\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™\n\n` +
 MainText,
 contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ, Receiver] },
 })
@@ -72,7 +72,7 @@ return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 mimetype: `video/gif`,
 quoted: chat,
 caption:
-`⌜𝐕𝐥𝐤𝐲𝐫𝐞 ×፝֟͜×${vers.vers}⌟\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™\n\n` +
+`༆Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ×፝֟͜× ${vers.vers}\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™\n\n` +
 MainText,
 contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
 })
