@@ -92,7 +92,7 @@ contentText: `*『@${ᴘɴᴀᴍᴇ}』*
 🌐𝗪𝗲𝗯 𝗗𝗟: ${DirectFile}
 🔗𝐋𝐢𝐧𝐤: ${Found.url}
 📜𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${Found.description}`,
-footerText: `\n❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❞\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+footerText: `\n❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❞\nᴄᴏᴅᴇᴅ ᴡɪᴛʜ ☯ ᴘʏᴛʜᴏɴ + ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
@@ -156,7 +156,7 @@ contentText: `*『@${ᴘɴᴀᴍᴇ}』*
 🌐𝗪𝗲𝗯 𝗗𝗟: ${DirectFile}
 🔗𝗟𝗶𝗻𝗸: ${Found.url}
 📜𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${Found.description}`,
-footerText: `\n❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❞\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+footerText: `\n❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❞\nᴄᴏᴅᴇᴅ ᴡɪᴛʜ ☯ ᴘʏᴛʜᴏɴ + ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
