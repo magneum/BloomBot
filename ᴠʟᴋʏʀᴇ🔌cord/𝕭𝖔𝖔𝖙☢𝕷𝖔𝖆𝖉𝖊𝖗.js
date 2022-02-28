@@ -389,8 +389,8 @@ await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
 GroupID,
 {
 contentText: `👋🏻𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚, *To Admins Of This Group: Some Of Your Members Requested Our Vlkyre HQ to Add Our Bot In This Group.Have Fun!*
-🍂 𝐕𝐥𝐤𝐲𝐫𝐞: _Is an Advance Whatsapp User-Bot!_
-🛰️ 𝐖𝐞𝐛𝐬𝐢𝐭𝐞: _https://KrakinzLab-Vlkyre.krakinzkon.repl.co_
+🦋𝐕𝐥𝐤𝐲𝐫𝐞: _Is an Advance Whatsapp User-Bot!_
+🛰️𝐖𝐞𝐛𝐬𝐢𝐭𝐞/𝐆𝐢𝐭𝐡𝐮𝐛: _https://KrakinzLab-Vlkyre.krakinzkon.repl.co_
 
 
 
@@ -540,16 +540,15 @@ chat,
 ᴠʟᴋʏʀᴇ,
 `*『@${ᴘɴᴀᴍᴇ}』*
 ⏳ 𝗧𝗶𝗺𝗲: _Offline For 10s-20s_
-🍂 𝐕𝐥𝐤𝐲𝐫𝐞: _Is an Advance Whatsapp User-Bot!_
-🛰️ 𝐖𝐞𝐛𝐬𝐢𝐭𝐞: _https://KrakinzLab-Vlkyre.krakinzkon.repl.co_
+🦋𝐕𝐥𝐤𝐲𝐫𝐞: _Is an Advance Whatsapp User-Bot!_
+🛰️𝐖𝐞𝐛𝐬𝐢𝐭𝐞/𝐆𝐢𝐭𝐡𝐮𝐛: _https://KrakinzLab-Vlkyre.krakinzkon.repl.co_
 
-╔⧉༻ 𝐕𝐥𝐤𝐲𝐫𝐞💡𝐔𝐩𝐝𝐚𝐭𝐢𝐧𝐠
-║🍯 𝗦𝘁𝗮𝘁𝘂𝘀: _Update Pending!_
-║🔥 𝗡𝗲𝘄 𝗖𝗼𝗺𝗺𝗶𝘁𝘀: _${newCommits.total}_
-║🛰️ 𝐋𝐚𝐭𝐞𝐧𝐜𝐲: _${Ping}ms_
-║📅 𝐃𝐚𝐭𝐞: _${Clock}_
-║⚙️ 𝐕𝐞𝐫𝐬𝐢𝐨𝐧: *Old:* _${vers.verold}_ | *New:* _${vers.vers}_
-╚════════════╝`,
+𝐕𝐥𝐤𝐲𝐫𝐞💡𝐔𝐩𝐝𝐚𝐭𝐢𝐧𝐠
+🍯𝗦𝘁𝗮𝘁𝘂𝘀: _Update Pending!_
+🔥𝗡𝗲𝘄 𝗖𝗼𝗺𝗺𝗶𝘁𝘀: _${newCommits.total}_
+🛰️𝐋𝐚𝐭𝐞𝐧𝐜𝐲: _${Ping}ms_
+📅𝐃𝐚𝐭𝐞: _${Clock}_
+⚙️𝐕𝐞𝐫𝐬𝐢𝐨𝐧: *Old:* _${vers.verold}_ | *New:* _${vers.vers}_`,
 "./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_res.png"
 );
 /*
@@ -726,8 +725,8 @@ userHalt.PermaTimeOut - (Date.now() - userHalt.TimeOut)
 
 return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
 ᴠʟᴋʏʀᴇ.chatId,
-`*『@${ᴘɴᴀᴍᴇ}』**  
-❌ 𝗘𝗿𝗿𝗼𝗿: Wait For ${Time.seconds}/5s*`,
+`*『@${ᴘɴᴀᴍᴇ}』*
+❌𝗘𝗿𝗿𝗼𝗿: _Wait For ${Time.seconds}/5s!_`,
 MessageType.text,
 {
 contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
@@ -777,9 +776,9 @@ if (
 !member3.includes(ʟɴᴀᴍᴇ)
 ) {
 const buttonMessage = {
-contentText: `*『@${ᴘɴᴀᴍᴇ}』**
-🤖𝐕𝐞𝐫𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧: You Are Not Verified!
+contentText: `*『@${ᴘɴᴀᴍᴇ}』*
 
+🤖𝐕𝐞𝐫𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧: You Are Not Verified!
 𝐏𝐫𝐞𝐬𝐬 𝐁𝐞𝐥𝐨𝐰 𝐓𝐨 𝐕𝐞𝐫𝐢𝐟𝐲`,
 footerText: `\n❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❞\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
 buttons: [
@@ -815,8 +814,8 @@ return await ᴠʟᴋʏʀᴇ_Buttons.MTB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 ᴠʟᴋʏʀᴇ,
-`*『@${ᴘɴᴀᴍᴇ}』**  
-❌ 𝗘𝗿𝗿𝗼𝗿: No Such Command In Database!`
+`*『@${ᴘɴᴀᴍᴇ}』*  
+❌𝗘𝗿𝗿𝗼𝗿: _No Such Command In Database. Type: ${ᴋᴇɪ}Help_`
 );
 }
 const data = [["❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞"]];
@@ -826,16 +825,13 @@ topBody: `─`,
 topJoin: `┬`,
 topLeft: `┌`,
 topRight: `┐`,
-
 bottomBody: `─`,
 bottomJoin: `┴`,
 bottomLeft: `└`,
 bottomRight: `┘`,
-
 bodyLeft: `│`,
-bodyRight: `│`,
+// bodyRight: `│`,
 bodyJoin: `│`,
-
 joinBody: `─`,
 joinLeft: `├`,
 joinRight: `┤`,
