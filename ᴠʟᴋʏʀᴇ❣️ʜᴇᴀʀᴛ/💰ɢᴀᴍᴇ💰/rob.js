@@ -119,8 +119,8 @@ var newScpt = scriptName.slice(0, -3).toLowerCase();
 /*              (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!*/
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 module.exports = {
-  name: newScpt,
-  ᴠʟᴋʏʀᴇӄǟɨʐօ: `
+name: newScpt,
+ᴠʟᴋʏʀᴇӄǟɨʐօ: `
 ╔═══⬡
 ║ *𝗥𝗲𝗽𝗹𝘆-𝗣𝗲𝗿𝘀𝗼𝗻:* _${ᴋᴇɪ}${newScpt}_
 ║ *𝗧𝗮𝗴-𝗣𝗲𝗿𝘀𝗼𝗻:* _${ᴋᴇɪ}${newScpt}_ @tag
@@ -154,84 +154,92 @@ module.exports = {
 ╔◇╝ ❓ 𝗜 𝗱𝗼𝗻'𝘁 𝗵𝗮𝘃𝗲 𝗮𝗻𝘆 𝘀𝗮𝗳𝗲𝘁𝘆 𝗶𝗻 𝗺𝘆 𝗮𝗰𝗰𝗼𝘂𝗻𝘁! 𝗛𝗼𝘄 𝗺𝘂𝗰𝗵 𝗺𝗼𝗻𝗲𝘆 𝗰𝗮𝗻 𝗯𝗲 𝗿𝗼𝗯𝗯𝗲𝗱?
 ║ _In that case buy using ${ᴋᴇɪ}buy. Max-Money-Robbed when no safety: random(500-1000)_
 ╚════════════╝`,
-  async handle(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, chat, ᴠʟᴋʏʀᴇ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
-    try {
-      const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
-      const ᴅꜰɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.commandName;
-      let ᴘɴᴀᴍᴇ;
-      try {
-        ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/\@s.whatsapp.net/g, "").replace(/\D/g, "");
-      } catch {
-        ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/\D/g, "");
-      }
-      const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
-      const MoneyRandom = Math.floor(Math.random() * (2000 - 1500 + 1)) + 1500;
-      const MoneyLaptop = Math.floor(Math.random() * (4000 - 3000 + 1)) + 3000;
-      const MoneyCharm = Math.floor(Math.random() * (6000 - 5000 + 1)) + 5000;
-      const MoneySword = Math.floor(Math.random() * (2000 - 1000 + 1)) + 1000;
-      `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-      if (!ᴠʟᴋʏʀᴇ.isGroup) {
-        return ᴠʟᴋʏʀᴇ_Buttons.MIB(
-          ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
-          chat,
-          ᴠʟᴋʏʀᴇ,
-          `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
+async handle(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, chat, ᴠʟᴋʏʀᴇ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
+try {
+const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
+const ᴅꜰɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.commandName;
+let ᴘɴᴀᴍᴇ;
+try {
+ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/\@s.whatsapp.net/g, "").replace(/\D/g, "");
+} catch {
+ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/\D/g, "");
+}
+const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
+const MoneyRandom = Math.floor(Math.random() * (2000 - 1500 + 1)) + 1500;
+const MoneyLaptop = Math.floor(Math.random() * (4000 - 3000 + 1)) + 3000;
+const MoneyCharm = Math.floor(Math.random() * (6000 - 5000 + 1)) + 5000;
+const MoneySword = Math.floor(Math.random() * (2000 - 1000 + 1)) + 1000;
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
+/*              (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!*/
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
+if (!ᴠʟᴋʏʀᴇ.isGroup) {
+return ᴠʟᴋʏʀᴇ_Buttons.MIB(
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+chat,
+ᴠʟᴋʏʀᴇ,
+`*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
 ╔════◇🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧 
 ║💡 _This Command is Only For Groups!_
 ╚════════════╝`,
-          _𝔏𝔞𝔟_.RCLR
-        );
-      }
-      `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-      if (ᴠʟᴋʏʀᴇ.isReply) {
-        var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
-        var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
-        `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-        if (Receiver === ʟɴᴀᴍᴇ) {
-          return ᴠʟᴋʏʀᴇ_Buttons.MTB(
-            ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
-            chat,
-            ᴠʟᴋʏʀᴇ,
-            `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
+_𝔏𝔞𝔟_.RCLR
+);
+}
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
+/*              (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!*/
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
+if (ᴠʟᴋʏʀᴇ.isReply) {
+var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
+var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
+/*              (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!*/
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
+if (Receiver === ʟɴᴀᴍᴇ) {
+return ᴠʟᴋʏʀᴇ_Buttons.MTB(
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+chat,
+ᴠʟᴋʏʀᴇ,
+`*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
 ╔════◇🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧 
 ║❌ 𝗘𝗿𝗿𝗼𝗿: _can't rob your own bank!_
 ╚════════════╝`
-          );
-        }
-        `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-        Economy.findOne(
-          {
-            ID: ʟɴᴀᴍᴇ,
-          },
-          async (error, cEconomy) => {
-            if (error) return ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
-            Economy.findOne(
-              {
-                ID: Receiver,
-              },
-              async (error, vEconomy) => {
-                if (error) return ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
-                if (!vEconomy) {
-                  var newUser = new Economy({
-                    ID: Receiver,
-                    money: 0,
-                    daily: 0,
-                    timeout: 86400000,
-                    fishdone: 0,
-                    fishtimeout: 1800000,
-                    workdone: 0,
-                    worktimeout: 900000,
-                  });
-                  await newUser
-                    .save()
-                    .catch((error) =>
-                      ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
-                    );
-                  return ᴠʟᴋʏʀᴇ_Buttons.MIB(
-                    ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
-                    chat,
-                    ᴠʟᴋʏʀᴇ,
-                    `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
+);
+}
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
+/*              (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!*/
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
+Economy.findOne(
+{
+ID: ʟɴᴀᴍᴇ,
+},
+async (error, cEconomy) => {
+if (error) return ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
+Economy.findOne(
+{
+ID: Receiver,
+},
+async (error, vEconomy) => {
+if (error) return ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
+if (!vEconomy) {
+var newUser = new Economy({
+ID: Receiver,
+money: 0,
+daily: 0,
+timeout: 86400000,
+fishdone: 0,
+fishtimeout: 1800000,
+workdone: 0,
+worktimeout: 900000,
+});
+await newUser
+.save()
+.catch((error) =>
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
+);
+return ᴠʟᴋʏʀᴇ_Buttons.MIB(
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+chat,
+ᴠʟᴋʏʀᴇ,
+`*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
 ╔◇══════════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇╗
@@ -240,30 +248,32 @@ module.exports = {
 ║❌ 𝗘𝗿𝗿𝗼𝗿: @${քɛʀֆօռɢօȶռʊʍ}'s Bank Guard Caught You and Took You To The Jail!
 ║💡‍ 𝐒𝐭𝐚𝐭𝐮𝐬: _You Got Arrested and Took 0gold.ReTry Again!_
 ╚════════════╝`,
-                    _𝔏𝔞𝔟_.RCLR
-                  );
-                  `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-                } else if (!cEconomy) {
-                  var newUser = new Economy({
-                    ID: ʟɴᴀᴍᴇ,
-                    money: 0,
-                    daily: 0,
-                    timeout: 86400000,
-                    fishdone: 0,
-                    fishtimeout: 1800000,
-                    workdone: 0,
-                    worktimeout: 900000,
-                  });
-                  await newUser
-                    .save()
-                    .catch((error) =>
-                      ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
-                    );
-                  return ᴠʟᴋʏʀᴇ_Buttons.MIB(
-                    ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
-                    chat,
-                    ᴠʟᴋʏʀᴇ,
-                    `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
+_𝔏𝔞𝔟_.RCLR
+);
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
+/*              (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!*/
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
+} else if (!cEconomy) {
+var newUser = new Economy({
+ID: ʟɴᴀᴍᴇ,
+money: 0,
+daily: 0,
+timeout: 86400000,
+fishdone: 0,
+fishtimeout: 1800000,
+workdone: 0,
+worktimeout: 900000,
+});
+await newUser
+.save()
+.catch((error) =>
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
+);
+return ᴠʟᴋʏʀᴇ_Buttons.MIB(
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+chat,
+ᴠʟᴋʏʀᴇ,
+`*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
 ╔◇══════════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇╗
@@ -272,15 +282,17 @@ module.exports = {
 ║❌ 𝗘𝗿𝗿𝗼𝗿: _You are the worst robber._
 ║🍌‍ 𝗥𝗲𝗮𝘀𝗼𝗻:  _Fell On a pool and died!.ReTry Again!_
 ╚════════════╝`,
-                    _𝔏𝔞𝔟_.RCLR
-                  );
-                  `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-                } else if (cEconomy.money < 1000) {
-                  return ᴠʟᴋʏʀᴇ_Buttons.MIB(
-                    ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
-                    chat,
-                    ᴠʟᴋʏʀᴇ,
-                    `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
+_𝔏𝔞𝔟_.RCLR
+);
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
+/*              (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!*/
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
+} else if (cEconomy.money < 1000) {
+return ᴠʟᴋʏʀᴇ_Buttons.MIB(
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+chat,
+ᴠʟᴋʏʀᴇ,
+`*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
 ╔◇══════════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇╗
@@ -288,15 +300,17 @@ module.exports = {
 ║❌ 𝗘𝗿𝗿𝗼𝗿: _You Will Need Atleast 1000 in your bank before you can rob someone!_
 ║🍌‍ 𝗥𝗲𝗮𝘀𝗼𝗻: _If You Get Caught, victim will charge you money to spare your life._
 ╚════════════╝`,
-                    _𝔏𝔞𝔟_.RCLR
-                  );
-                  `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-                } else if (vEconomy.money < 1000) {
-                  return ᴠʟᴋʏʀᴇ_Buttons.MIB(
-                    ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
-                    chat,
-                    ᴠʟᴋʏʀᴇ,
-                    `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
+_𝔏𝔞𝔟_.RCLR
+);
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
+/*              (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!*/
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
+} else if (vEconomy.money < 1000) {
+return ᴠʟᴋʏʀᴇ_Buttons.MIB(
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+chat,
+ᴠʟᴋʏʀᴇ,
+`*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
 ╔◇══════════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇╗
@@ -304,49 +318,51 @@ module.exports = {
 ║❌ 𝗘𝗿𝗿𝗼𝗿:  _needs atleast 1000gold in their account before you can rob them!_
 ║🍌‍ 𝗥𝗲𝗮𝘀𝗼𝗻: _Broke AF! Leave This Begger Alone!_
 ╚════════════╝`,
-                    _𝔏𝔞𝔟_.RCLR
-                  );
-                  `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-                } else {
-                  Robbery.findOne(
-                    {
-                      ID: ʟɴᴀᴍᴇ,
-                    },
-                    async (error, culprit) => {
-                      if (error)
-                        return ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
-                      Robbery.findOne(
-                        {
-                          ID: Receiver,
-                        },
-                        async (error, victim) => {
-                          if (error)
-                            return ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
-                          if (!victim) {
-                            var newUser = new Robbery({
-                              ID: Receiver,
-                              sword: 0,
-                              laptop: 0,
-                              charm: 0,
-                              CurrentRobberyTime: Date.now(),
-                              PermanentRobberyTime: 900000,
-                            });
-                            await newUser
-                              .save()
-                              .catch((error) =>
-                                ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
-                              );
-                            cEconomy.money = cEconomy.money - MoneyRandom;
-                            await cEconomy
-                              .save()
-                              .catch((error) =>
-                                ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
-                              );
-                            return ᴠʟᴋʏʀᴇ_Buttons.MIB(
-                              ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
-                              chat,
-                              ᴠʟᴋʏʀᴇ,
-                              `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡* 
+_𝔏𝔞𝔟_.RCLR
+);
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
+/*              (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!*/
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
+} else {
+Robbery.findOne(
+{
+ID: ʟɴᴀᴍᴇ,
+},
+async (error, culprit) => {
+if (error)
+return ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
+Robbery.findOne(
+{
+ID: Receiver,
+},
+async (error, victim) => {
+if (error)
+return ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
+if (!victim) {
+var newUser = new Robbery({
+ID: Receiver,
+sword: 0,
+laptop: 0,
+charm: 0,
+CurrentRobberyTime: Date.now(),
+PermanentRobberyTime: 900000,
+});
+await newUser
+.save()
+.catch((error) =>
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
+);
+cEconomy.money = cEconomy.money - MoneyRandom;
+await cEconomy
+.save()
+.catch((error) =>
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
+);
+return ᴠʟᴋʏʀᴇ_Buttons.MIB(
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+chat,
+ᴠʟᴋʏʀᴇ,
+`*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡* 
 ╔◇══════════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇╗
@@ -358,34 +374,36 @@ module.exports = {
 ╔◇╝ 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲
 ║ @${ᴘɴᴀᴍᴇ}, _${cEconomy.money}_
 ╚════════════╝`,
-                              _𝔏𝔞𝔟_.RCLR
-                            );
-                            `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-                          } else if (!culprit) {
-                            var newUser = new Robbery({
-                              ID: ʟɴᴀᴍᴇ,
-                              sword: 0,
-                              laptop: 0,
-                              charm: 0,
-                              CurrentRobberyTime: Date.now(),
-                              PermanentRobberyTime: 900000,
-                            });
-                            await newUser
-                              .save()
-                              .catch((error) =>
-                                ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
-                              );
-                            cEconomy.money = cEconomy.money - MoneyRandom;
-                            await cEconomy
-                              .save()
-                              .catch((error) =>
-                                ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
-                              );
-                            return ᴠʟᴋʏʀᴇ_Buttons.MIB(
-                              ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
-                              chat,
-                              ᴠʟᴋʏʀᴇ,
-                              `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡* 
+_𝔏𝔞𝔟_.RCLR
+);
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
+/*              (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!*/
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
+} else if (!culprit) {
+var newUser = new Robbery({
+ID: ʟɴᴀᴍᴇ,
+sword: 0,
+laptop: 0,
+charm: 0,
+CurrentRobberyTime: Date.now(),
+PermanentRobberyTime: 900000,
+});
+await newUser
+.save()
+.catch((error) =>
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
+);
+cEconomy.money = cEconomy.money - MoneyRandom;
+await cEconomy
+.save()
+.catch((error) =>
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
+);
+return ᴠʟᴋʏʀᴇ_Buttons.MIB(
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+chat,
+ᴠʟᴋʏʀᴇ,
+`*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡* 
 ╔◇══════════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇╗
@@ -397,24 +415,26 @@ module.exports = {
 ╔◇╝ 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲
 ║ @${ᴘɴᴀᴍᴇ}, _${cEconomy.money}_
 ╚════════════╝`,
-                              _𝔏𝔞𝔟_.RCLR
-                            );
-                          }
-                          `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-                          if (
-                            culprit.PermanentRobberyTime -
-                              (Date.now() - culprit.CurrentRobberyTime) >
-                            0
-                          ) {
-                            let Time = ms(
-                              culprit.PermanentRobberyTime -
-                                (Date.now() - culprit.CurrentRobberyTime)
-                            );
-                            return ᴠʟᴋʏʀᴇ_Buttons.MIB(
-                              ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
-                              chat,
-                              ᴠʟᴋʏʀᴇ,
-                              `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
+_𝔏𝔞𝔟_.RCLR
+);
+}
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
+/*              (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!*/
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
+if (
+culprit.PermanentRobberyTime -
+(Date.now() - culprit.CurrentRobberyTime) >
+0
+) {
+let Time = ms(
+culprit.PermanentRobberyTime -
+(Date.now() - culprit.CurrentRobberyTime)
+);
+return ᴠʟᴋʏʀᴇ_Buttons.MIB(
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+chat,
+ᴠʟᴋʏʀᴇ,
+`*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
 ╔◇══════════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇╗
@@ -422,45 +442,47 @@ module.exports = {
 ║❌ 𝗘𝗿𝗿𝗼𝗿: _You've Recently Tried Robbing Someone!._
 ║🕐 𝐑𝐨𝐛 𝗔𝗴𝗮𝗶𝗻: _${Time.minutes}m ${Time.seconds}s._
 ╚════════════╝`,
-                              _𝔏𝔞𝔟_.RCLR
-                            );
-                          }
-                          `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-                          if (victim.sword > 0) {
-                            victim.sword = victim.sword - 1;
-                            if (cEconomy.money < 3000) {
-                              vEconomy.money = vEconomy.money + cEconomy.money;
-                              cEconomy.money = 0;
-                            } else {
-                              vEconomy.money = vEconomy.money + MoneySword;
-                              cEconomy.money = cEconomy.money - MoneySword;
-                            }
-                            culprit.CurrentRobberyTime = Date.now();
-                            await victim
-                              .save()
-                              .catch((error) =>
-                                ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
-                              );
-                            await culprit
-                              .save()
-                              .catch((error) =>
-                                ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
-                              );
-                            await vEconomy
-                              .save()
-                              .catch((error) =>
-                                ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
-                              );
-                            await cEconomy
-                              .save()
-                              .catch((error) =>
-                                ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
-                              );
-                            return ᴠʟᴋʏʀᴇ_Buttons.MIB(
-                              ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
-                              chat,
-                              ᴠʟᴋʏʀᴇ,
-                              `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
+_𝔏𝔞𝔟_.RCLR
+);
+}
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
+/*              (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!*/
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
+if (victim.sword > 0) {
+victim.sword = victim.sword - 1;
+if (cEconomy.money < 3000) {
+vEconomy.money = vEconomy.money + cEconomy.money;
+cEconomy.money = 0;
+} else {
+vEconomy.money = vEconomy.money + MoneySword;
+cEconomy.money = cEconomy.money - MoneySword;
+}
+culprit.CurrentRobberyTime = Date.now();
+await victim
+.save()
+.catch((error) =>
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
+);
+await culprit
+.save()
+.catch((error) =>
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
+);
+await vEconomy
+.save()
+.catch((error) =>
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
+);
+await cEconomy
+.save()
+.catch((error) =>
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
+);
+return ᴠʟᴋʏʀᴇ_Buttons.MIB(
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+chat,
+ᴠʟᴋʏʀᴇ,
+`*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
 ╔◇══════════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇╗
@@ -472,44 +494,46 @@ module.exports = {
 ║🥸 𝐂𝐮𝐥𝐩𝐫𝐢𝐭: @${ᴘɴᴀᴍᴇ}, _${cEconomy.money}🪙_
 ║💀 𝐕𝐢𝐜𝐭𝐢𝐦: @${քɛʀֆօռɢօȶռʊʍ}, _${vEconomy.money}🪙_
 ╚════════════╝`,
-                              _𝔏𝔞𝔟_.RCLR
-                            );
-                            `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-                          } else if (victim.laptop > 0) {
-                            victim.laptop = victim.laptop - 1;
-                            if (cEconomy.money < 4000) {
-                              vEconomy.money = vEconomy.money + cEconomy.money;
-                              cEconomy.money = 0;
-                            } else {
-                              vEconomy.money = vEconomy.money + MoneyLaptop;
-                              cEconomy.money = cEconomy.money - MoneyLaptop;
-                            }
-                            culprit.CurrentRobberyTime = Date.now();
-                            await victim
-                              .save()
-                              .catch((error) =>
-                                ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
-                              );
-                            await culprit
-                              .save()
-                              .catch((error) =>
-                                ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
-                              );
-                            await vEconomy
-                              .save()
-                              .catch((error) =>
-                                ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
-                              );
-                            await cEconomy
-                              .save()
-                              .catch((error) =>
-                                ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
-                              );
-                            return ᴠʟᴋʏʀᴇ_Buttons.MIB(
-                              ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
-                              chat,
-                              ᴠʟᴋʏʀᴇ,
-                              `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
+_𝔏𝔞𝔟_.RCLR
+);
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
+/*              (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!*/
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
+} else if (victim.laptop > 0) {
+victim.laptop = victim.laptop - 1;
+if (cEconomy.money < 4000) {
+vEconomy.money = vEconomy.money + cEconomy.money;
+cEconomy.money = 0;
+} else {
+vEconomy.money = vEconomy.money + MoneyLaptop;
+cEconomy.money = cEconomy.money - MoneyLaptop;
+}
+culprit.CurrentRobberyTime = Date.now();
+await victim
+.save()
+.catch((error) =>
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
+);
+await culprit
+.save()
+.catch((error) =>
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
+);
+await vEconomy
+.save()
+.catch((error) =>
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
+);
+await cEconomy
+.save()
+.catch((error) =>
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
+);
+return ᴠʟᴋʏʀᴇ_Buttons.MIB(
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+chat,
+ᴠʟᴋʏʀᴇ,
+`*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
 ╔◇══════════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇╗
@@ -521,44 +545,46 @@ module.exports = {
 ║🥸 𝐂𝐮𝐥𝐩𝐫𝐢𝐭: @${ᴘɴᴀᴍᴇ}, _${cEconomy.money}🪙_
 ║💀 𝐕𝐢𝐜𝐭𝐢𝐦: @${քɛʀֆօռɢօȶռʊʍ}, _${vEconomy.money}🪙_
 ╚════════════╝`,
-                              _𝔏𝔞𝔟_.RCLR
-                            );
-                            `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-                          } else if (victim.charm > 0) {
-                            victim.charm = victim.charm - 1;
-                            if (cEconomy.money < 6000) {
-                              vEconomy.money = vEconomy.money + cEconomy.money;
-                              cEconomy.money = 0;
-                            } else {
-                              vEconomy.money = vEconomy.money + MoneyCharm;
-                              cEconomy.money = cEconomy.money - MoneyCharm;
-                            }
-                            culprit.CurrentRobberyTime = Date.now();
-                            await victim
-                              .save()
-                              .catch((error) =>
-                                ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
-                              );
-                            await culprit
-                              .save()
-                              .catch((error) =>
-                                ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
-                              );
-                            await vEconomy
-                              .save()
-                              .catch((error) =>
-                                ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
-                              );
-                            await cEconomy
-                              .save()
-                              .catch((error) =>
-                                ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
-                              );
-                            return ᴠʟᴋʏʀᴇ_Buttons.MIB(
-                              ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
-                              chat,
-                              ᴠʟᴋʏʀᴇ,
-                              `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
+_𝔏𝔞𝔟_.RCLR
+);
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
+/*              (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!*/
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
+} else if (victim.charm > 0) {
+victim.charm = victim.charm - 1;
+if (cEconomy.money < 6000) {
+vEconomy.money = vEconomy.money + cEconomy.money;
+cEconomy.money = 0;
+} else {
+vEconomy.money = vEconomy.money + MoneyCharm;
+cEconomy.money = cEconomy.money - MoneyCharm;
+}
+culprit.CurrentRobberyTime = Date.now();
+await victim
+.save()
+.catch((error) =>
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
+);
+await culprit
+.save()
+.catch((error) =>
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
+);
+await vEconomy
+.save()
+.catch((error) =>
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
+);
+await cEconomy
+.save()
+.catch((error) =>
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
+);
+return ᴠʟᴋʏʀᴇ_Buttons.MIB(
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+chat,
+ᴠʟᴋʏʀᴇ,
+`*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
 ╔◇══════════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇╗
@@ -570,38 +596,40 @@ module.exports = {
 ║🥸 𝐂𝐮𝐥𝐩𝐫𝐢𝐭: @${ᴘɴᴀᴍᴇ}, _${cEconomy.money}🪙_
 ║💀 𝐕𝐢𝐜𝐭𝐢𝐦: @${քɛʀֆօռɢօȶռʊʍ}, _${vEconomy.money}🪙_
 ╚════════════╝`,
-                              _𝔏𝔞𝔟_.RCLR
-                            );
-                            `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-                          } else {
-                            let Note;
-                            if (vEconomy.money < 1000) {
-                              vEconomy.money = 0;
-                              cEconomy.money = cEconomy.money + vEconomy.money;
-                              culprit.CurrentRobberyTime = Date.now();
-                              await vEconomy
-                                .save()
-                                .catch((error) =>
-                                  ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
-                                );
-                              await cEconomy
-                                .save()
-                                .catch((error) =>
-                                  ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
-                                );
-                              return ᴠʟᴋʏʀᴇ_Buttons.MIB(
-                                ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
-                                chat,
-                                ᴠʟᴋʏʀᴇ,
-                                `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
+_𝔏𝔞𝔟_.RCLR
+);
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
+/*              (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!*/
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
+} else {
+let Note;
+if (vEconomy.money < 1000) {
+vEconomy.money = 0;
+cEconomy.money = cEconomy.money + vEconomy.money;
+culprit.CurrentRobberyTime = Date.now();
+await vEconomy
+.save()
+.catch((error) =>
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
+);
+await cEconomy
+.save()
+.catch((error) =>
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
+);
+return ᴠʟᴋʏʀᴇ_Buttons.MIB(
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+chat,
+ᴠʟᴋʏʀᴇ,
+`*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
 ╔◇══════════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇╗
 ╔◇╝ 
 ║🔓 𝐒𝐭𝐚𝐭𝐮𝐬: @${քɛʀֆօռɢօȶռʊʍ} _Got Robbed!_
 ║👑 𝗔𝗺𝗼𝘂𝗻𝘁: *Seems Like The Victim Had Gold<1000. _You Got All Their Golds ${
-                                  vEconomy.money
-                                }!*_
+vEconomy.money
+}!*_
 ║⚰️ 𝗥𝗲𝗮𝘀𝗼𝗻: _Didn't have any safety stuffs. @${քɛʀֆօռɢօȶռʊʍ}, visit ${ᴋᴇɪ}shop ASAP._
 ╚◇╗
 ╔◇╝🥸 𝐂𝐮𝐥𝐩𝐫𝐢𝐭: @${ᴘɴᴀᴍᴇ}, 
@@ -612,27 +640,27 @@ module.exports = {
 ║❓ 𝗕𝗲𝗳𝗼𝗿𝗲: _${vEconomy.money}🪙_
 ║🥲 𝗔𝗳𝘁𝗲𝗿: _${vEconomy.money - MoneyRandom}🪙_
 ╚════════════╝`,
-                                _𝔏𝔞𝔟_.RCLR
-                              );
-                            } else {
-                              vEconomy.money = vEconomy.money - MoneyRandom;
-                              cEconomy.money = cEconomy.money + MoneyRandom;
-                              culprit.CurrentRobberyTime = Date.now();
-                              await vEconomy
-                                .save()
-                                .catch((error) =>
-                                  ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
-                                );
-                              await cEconomy
-                                .save()
-                                .catch((error) =>
-                                  ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
-                                );
-                              return ᴠʟᴋʏʀᴇ_Buttons.MIB(
-                                ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
-                                chat,
-                                ᴠʟᴋʏʀᴇ,
-                                `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
+_𝔏𝔞𝔟_.RCLR
+);
+} else {
+vEconomy.money = vEconomy.money - MoneyRandom;
+cEconomy.money = cEconomy.money + MoneyRandom;
+culprit.CurrentRobberyTime = Date.now();
+await vEconomy
+.save()
+.catch((error) =>
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
+);
+await cEconomy
+.save()
+.catch((error) =>
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
+);
+return ᴠʟᴋʏʀᴇ_Buttons.MIB(
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+chat,
+ᴠʟᴋʏʀᴇ,
+`*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
 ╔◇══════════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇╗
@@ -649,61 +677,61 @@ module.exports = {
 ║❓ 𝗕𝗲𝗳𝗼𝗿𝗲: _${vEconomy.money}🪙_
 ║🥲 𝗔𝗳𝘁𝗲𝗿: _${vEconomy.money - MoneyRandom}🪙_
 ╚════════════╝`,
-                                _𝔏𝔞𝔟_.RCLR
-                              );
-                            }
-                          }
-                        }
-                      );
-                    }
-                  );
-                }
-              }
-            );
-          }
-        );
-      } else if (Needs[0] && Needs[0].startsWith("@")) {
-        var TagPerson = Needs[0].replace(/[+ ]/g, "");
-        var TagMention = TagPerson + "@s.whatsapp.net";
-        Economy.findOne(
-          {
-            ID: ʟɴᴀᴍᴇ,
-          },
-          async (error, cEconomy) => {
-            if (error) return ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
-            Economy.findOne(
-              {
-                ID: TagMention,
-              },
-              async (error, vEconomy) => {
-                if (error) return ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
-                if (!vEconomy) {
-                  var newUser = new Economy({
-                    ID: TagMention,
-                    money: 0,
-                    daily: 0,
-                    timeout: 86400000,
-                    fishdone: 0,
-                    fishtimeout: 1800000,
-                    workdone: 0,
-                    worktimeout: 900000,
-                  });
-                  await newUser
-                    .save()
-                    .catch((error) =>
-                      ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
-                    );
-                  const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
-                    ᴠʟᴋʏʀᴇ.chatId,
-                    { url: _𝔏𝔞𝔟_.RCLR },
-                    MessageType.image,
-                    { mimetype: Mimetype.png }
-                  );
-                  return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
-                    .sendMessage(
-                      ᴠʟᴋʏʀᴇ.chatId,
-                      {
-                        contentText: `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
+_𝔏𝔞𝔟_.RCLR
+);
+}
+}
+}
+);
+}
+);
+}
+}
+);
+}
+);
+} else if (Needs[0] && Needs[0].startsWith("@")) {
+var TagPerson = Needs[0].replace(/[+ ]/g, "");
+var TagMention = TagPerson + "@s.whatsapp.net";
+Economy.findOne(
+{
+ID: ʟɴᴀᴍᴇ,
+},
+async (error, cEconomy) => {
+if (error) return ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
+Economy.findOne(
+{
+ID: TagMention,
+},
+async (error, vEconomy) => {
+if (error) return ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
+if (!vEconomy) {
+var newUser = new Economy({
+ID: TagMention,
+money: 0,
+daily: 0,
+timeout: 86400000,
+fishdone: 0,
+fishtimeout: 1800000,
+workdone: 0,
+worktimeout: 900000,
+});
+await newUser
+.save()
+.catch((error) =>
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
+);
+const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
+ᴠʟᴋʏʀᴇ.chatId,
+{ url: _𝔏𝔞𝔟_.RCLR },
+MessageType.image,
+{ mimetype: Mimetype.png }
+);
+return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
+.sendMessage(
+ᴠʟᴋʏʀᴇ.chatId,
+{
+contentText: `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
 ╔◇══════════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇╗
@@ -712,59 +740,61 @@ module.exports = {
 ║❌ 𝗘𝗿𝗿𝗼𝗿: @${TagPerson}'s Bank Guard Caught You and Took You To The Jail!
 ║💡‍ 𝐒𝐭𝐚𝐭𝐮𝐬: _You Got Arrested and Took 0gold.ReTry Again!_
 ╚════════════╝`,
-                        footerText: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
-                        buttons: [
-                          {
-                            buttonId: `${ᴋᴇɪ}help`,
-                            buttonText: { displayText: `${ᴋᴇɪ}help` },
-                            type: 1,
-                          },
-                          {
-                            buttonId: `${ᴋᴇɪ}faq`,
-                            buttonText: { displayText: `${ᴋᴇɪ}faq` },
-                            type: 1,
-                          },
-                        ],
-                        headerType: 4,
-                        imageMessage: media.message.imageMessage,
-                      },
-                      MessageType.buttonsMessage,
-                      {
-                        quoted: chat,
-                        contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ, TagMention] },
-                      }
-                    )
-                    .catch((error) =>
-                      ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
-                    );
-                  `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-                } else if (!cEconomy) {
-                  var newUser = new Economy({
-                    ID: ʟɴᴀᴍᴇ,
-                    money: 0,
-                    daily: 0,
-                    timeout: 86400000,
-                    fishdone: 0,
-                    fishtimeout: 1800000,
-                    workdone: 0,
-                    worktimeout: 900000,
-                  });
-                  await newUser
-                    .save()
-                    .catch((error) =>
-                      ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
-                    );
-                  const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
-                    ᴠʟᴋʏʀᴇ.chatId,
-                    { url: _𝔏𝔞𝔟_.RCLR },
-                    MessageType.image,
-                    { mimetype: Mimetype.png }
-                  );
-                  return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
-                    .sendMessage(
-                      ᴠʟᴋʏʀᴇ.chatId,
-                      {
-                        contentText: `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
+footerText: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+buttons: [
+{
+buttonId: `${ᴋᴇɪ}help`,
+buttonText: { displayText: `${ᴋᴇɪ}help` },
+type: 1,
+},
+{
+buttonId: `${ᴋᴇɪ}faq`,
+buttonText: { displayText: `${ᴋᴇɪ}faq` },
+type: 1,
+},
+],
+headerType: 4,
+imageMessage: media.message.imageMessage,
+},
+MessageType.buttonsMessage,
+{
+quoted: chat,
+contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ, TagMention] },
+}
+)
+.catch((error) =>
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
+);
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
+/*              (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!*/
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
+} else if (!cEconomy) {
+var newUser = new Economy({
+ID: ʟɴᴀᴍᴇ,
+money: 0,
+daily: 0,
+timeout: 86400000,
+fishdone: 0,
+fishtimeout: 1800000,
+workdone: 0,
+worktimeout: 900000,
+});
+await newUser
+.save()
+.catch((error) =>
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
+);
+const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
+ᴠʟᴋʏʀᴇ.chatId,
+{ url: _𝔏𝔞𝔟_.RCLR },
+MessageType.image,
+{ mimetype: Mimetype.png }
+);
+return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
+.sendMessage(
+ᴠʟᴋʏʀᴇ.chatId,
+{
+contentText: `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
 ╔◇══════════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇╗
@@ -773,38 +803,40 @@ module.exports = {
 ║❌ 𝗘𝗿𝗿𝗼𝗿: _You are the worst robber._
 ║🍌‍ 𝗥𝗲𝗮𝘀𝗼𝗻:  _Fell On a pool and died!.ReTry Again!_
 ╚════════════╝`,
-                        footerText: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
-                        buttons: [
-                          {
-                            buttonId: `${ᴋᴇɪ}help`,
-                            buttonText: { displayText: `${ᴋᴇɪ}help` },
-                            type: 1,
-                          },
-                          {
-                            buttonId: `${ᴋᴇɪ}faq`,
-                            buttonText: { displayText: `${ᴋᴇɪ}faq` },
-                            type: 1,
-                          },
-                        ],
-                        headerType: 4,
-                        imageMessage: media.message.imageMessage,
-                      },
-                      MessageType.buttonsMessage,
-                      {
-                        quoted: chat,
-                        contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
-                      }
-                    )
-                    .catch((error) =>
-                      ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
-                    );
-                  `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-                } else if (cEconomy.money < 1000) {
-                  return ᴠʟᴋʏʀᴇ_Buttons.MIB(
-                    ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
-                    chat,
-                    ᴠʟᴋʏʀᴇ,
-                    `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
+footerText: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+buttons: [
+{
+buttonId: `${ᴋᴇɪ}help`,
+buttonText: { displayText: `${ᴋᴇɪ}help` },
+type: 1,
+},
+{
+buttonId: `${ᴋᴇɪ}faq`,
+buttonText: { displayText: `${ᴋᴇɪ}faq` },
+type: 1,
+},
+],
+headerType: 4,
+imageMessage: media.message.imageMessage,
+},
+MessageType.buttonsMessage,
+{
+quoted: chat,
+contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
+}
+)
+.catch((error) =>
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
+);
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
+/*              (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!*/
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
+} else if (cEconomy.money < 1000) {
+return ᴠʟᴋʏʀᴇ_Buttons.MIB(
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+chat,
+ᴠʟᴋʏʀᴇ,
+`*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
 ╔◇══════════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇╗
@@ -812,21 +844,23 @@ module.exports = {
 ║❌ 𝗘𝗿𝗿𝗼𝗿: _You Will Need Atleast 1000 in your bank before you can rob someone!_
 ║🍌‍ 𝗥𝗲𝗮𝘀𝗼𝗻: _If You Get Caught, victim will charge you money to spare your life._
 ╚════════════╝`,
-                    _𝔏𝔞𝔟_.RCLR
-                  );
-                  `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-                } else if (vEconomy.money < 1000) {
-                  const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
-                    ᴠʟᴋʏʀᴇ.chatId,
-                    { url: _𝔏𝔞𝔟_.RCLR },
-                    MessageType.image,
-                    { mimetype: Mimetype.png }
-                  );
-                  return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
-                    .sendMessage(
-                      ᴠʟᴋʏʀᴇ.chatId,
-                      {
-                        contentText: `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
+_𝔏𝔞𝔟_.RCLR
+);
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
+/*              (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!*/
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
+} else if (vEconomy.money < 1000) {
+const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
+ᴠʟᴋʏʀᴇ.chatId,
+{ url: _𝔏𝔞𝔟_.RCLR },
+MessageType.image,
+{ mimetype: Mimetype.png }
+);
+return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
+.sendMessage(
+ᴠʟᴋʏʀᴇ.chatId,
+{
+contentText: `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
 ╔◇══════════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇╗
@@ -834,78 +868,80 @@ module.exports = {
 ║❌ 𝗘𝗿𝗿𝗼𝗿: , _needs atleast 1000gold in their account before you can rob them!_
 ║🍌‍ 𝗥𝗲𝗮𝘀𝗼𝗻: _Broke AF! Leave This Begger Alone!_
 ╚════════════╝`,
-                        footerText: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
-                        buttons: [
-                          {
-                            buttonId: `${ᴋᴇɪ}help`,
-                            buttonText: { displayText: `${ᴋᴇɪ}help` },
-                            type: 1,
-                          },
-                          {
-                            buttonId: `${ᴋᴇɪ}faq`,
-                            buttonText: { displayText: `${ᴋᴇɪ}faq` },
-                            type: 1,
-                          },
-                        ],
-                        headerType: 4,
-                        imageMessage: media.message.imageMessage,
-                      },
-                      MessageType.buttonsMessage,
-                      {
-                        quoted: chat,
-                        contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ, TagMention] },
-                      }
-                    )
-                    .catch((error) =>
-                      ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
-                    );
-                  `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-                } else {
-                  Robbery.findOne(
-                    {
-                      ID: ʟɴᴀᴍᴇ,
-                    },
-                    async (error, culprit) => {
-                      if (error)
-                        return ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
-                      Robbery.findOne(
-                        {
-                          ID: TagMention,
-                        },
-                        async (error, victim) => {
-                          if (error)
-                            return ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
-                          if (!victim) {
-                            var newUser = new Robbery({
-                              ID: TagMention,
-                              sword: 0,
-                              laptop: 0,
-                              charm: 0,
-                              CurrentRobberyTime: Date.now(),
-                              PermanentRobberyTime: 900000,
-                            });
-                            await newUser
-                              .save()
-                              .catch((error) =>
-                                ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
-                              );
-                            cEconomy.money = cEconomy.money - MoneyRandom;
-                            await cEconomy
-                              .save()
-                              .catch((error) =>
-                                ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
-                              );
-                            const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
-                              ᴠʟᴋʏʀᴇ.chatId,
-                              { url: _𝔏𝔞𝔟_.RCLR },
-                              MessageType.image,
-                              { mimetype: Mimetype.png }
-                            );
-                            return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
-                              .sendMessage(
-                                ᴠʟᴋʏʀᴇ.chatId,
-                                {
-                                  contentText: `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡* 
+footerText: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+buttons: [
+{
+buttonId: `${ᴋᴇɪ}help`,
+buttonText: { displayText: `${ᴋᴇɪ}help` },
+type: 1,
+},
+{
+buttonId: `${ᴋᴇɪ}faq`,
+buttonText: { displayText: `${ᴋᴇɪ}faq` },
+type: 1,
+},
+],
+headerType: 4,
+imageMessage: media.message.imageMessage,
+},
+MessageType.buttonsMessage,
+{
+quoted: chat,
+contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ, TagMention] },
+}
+)
+.catch((error) =>
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
+);
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
+/*              (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!*/
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
+} else {
+Robbery.findOne(
+{
+ID: ʟɴᴀᴍᴇ,
+},
+async (error, culprit) => {
+if (error)
+return ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
+Robbery.findOne(
+{
+ID: TagMention,
+},
+async (error, victim) => {
+if (error)
+return ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
+if (!victim) {
+var newUser = new Robbery({
+ID: TagMention,
+sword: 0,
+laptop: 0,
+charm: 0,
+CurrentRobberyTime: Date.now(),
+PermanentRobberyTime: 900000,
+});
+await newUser
+.save()
+.catch((error) =>
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
+);
+cEconomy.money = cEconomy.money - MoneyRandom;
+await cEconomy
+.save()
+.catch((error) =>
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
+);
+const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
+ᴠʟᴋʏʀᴇ.chatId,
+{ url: _𝔏𝔞𝔟_.RCLR },
+MessageType.image,
+{ mimetype: Mimetype.png }
+);
+return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
+.sendMessage(
+ᴠʟᴋʏʀᴇ.chatId,
+{
+contentText: `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡* 
 ╔◇══════════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇╗
@@ -917,65 +953,67 @@ module.exports = {
 ╔◇╝ 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲
 ║ @${ᴘɴᴀᴍᴇ}, _${cEconomy.money}_
 ╚════════════╝`,
-                                  footerText: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
-                                  buttons: [
-                                    {
-                                      buttonId: `${ᴋᴇɪ}help`,
-                                      buttonText: { displayText: `${ᴋᴇɪ}help` },
-                                      type: 1,
-                                    },
-                                    {
-                                      buttonId: `${ᴋᴇɪ}faq`,
-                                      buttonText: { displayText: `${ᴋᴇɪ}faq` },
-                                      type: 1,
-                                    },
-                                  ],
-                                  headerType: 4,
-                                  imageMessage: media.message.imageMessage,
-                                },
-                                MessageType.buttonsMessage,
-                                {
-                                  quoted: chat,
-                                  contextInfo: {
-                                    mentionedJid: [ʟɴᴀᴍᴇ, TagMention],
-                                  },
-                                }
-                              )
-                              .catch((error) =>
-                                ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
-                              );
-                            `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-                          } else if (!culprit) {
-                            var newUser = new Robbery({
-                              ID: ʟɴᴀᴍᴇ,
-                              sword: 0,
-                              laptop: 0,
-                              charm: 0,
-                              CurrentRobberyTime: Date.now(),
-                              PermanentRobberyTime: 900000,
-                            });
-                            await newUser
-                              .save()
-                              .catch((error) =>
-                                ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
-                              );
-                            cEconomy.money = cEconomy.money - MoneyRandom;
-                            await cEconomy
-                              .save()
-                              .catch((error) =>
-                                ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
-                              );
-                            const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
-                              ᴠʟᴋʏʀᴇ.chatId,
-                              { url: _𝔏𝔞𝔟_.RCLR },
-                              MessageType.image,
-                              { mimetype: Mimetype.png }
-                            );
-                            return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
-                              .sendMessage(
-                                ᴠʟᴋʏʀᴇ.chatId,
-                                {
-                                  contentText: `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡* 
+footerText: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+buttons: [
+{
+buttonId: `${ᴋᴇɪ}help`,
+buttonText: { displayText: `${ᴋᴇɪ}help` },
+type: 1,
+},
+{
+buttonId: `${ᴋᴇɪ}faq`,
+buttonText: { displayText: `${ᴋᴇɪ}faq` },
+type: 1,
+},
+],
+headerType: 4,
+imageMessage: media.message.imageMessage,
+},
+MessageType.buttonsMessage,
+{
+quoted: chat,
+contextInfo: {
+mentionedJid: [ʟɴᴀᴍᴇ, TagMention],
+},
+}
+)
+.catch((error) =>
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
+);
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
+/*              (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!*/
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
+} else if (!culprit) {
+var newUser = new Robbery({
+ID: ʟɴᴀᴍᴇ,
+sword: 0,
+laptop: 0,
+charm: 0,
+CurrentRobberyTime: Date.now(),
+PermanentRobberyTime: 900000,
+});
+await newUser
+.save()
+.catch((error) =>
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
+);
+cEconomy.money = cEconomy.money - MoneyRandom;
+await cEconomy
+.save()
+.catch((error) =>
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
+);
+const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
+ᴠʟᴋʏʀᴇ.chatId,
+{ url: _𝔏𝔞𝔟_.RCLR },
+MessageType.image,
+{ mimetype: Mimetype.png }
+);
+return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
+.sendMessage(
+ᴠʟᴋʏʀᴇ.chatId,
+{
+contentText: `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡* 
 ╔◇══════════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇╗
@@ -987,49 +1025,51 @@ module.exports = {
 ╔◇╝ 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲
 ║ @${ᴘɴᴀᴍᴇ}, _${cEconomy.money}_
 ╚════════════╝`,
-                                  footerText: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
-                                  buttons: [
-                                    {
-                                      buttonId: `${ᴋᴇɪ}help`,
-                                      buttonText: { displayText: `${ᴋᴇɪ}help` },
-                                      type: 1,
-                                    },
-                                    {
-                                      buttonId: `${ᴋᴇɪ}faq`,
-                                      buttonText: { displayText: `${ᴋᴇɪ}faq` },
-                                      type: 1,
-                                    },
-                                  ],
-                                  headerType: 4,
-                                  imageMessage: media.message.imageMessage,
-                                },
-                                MessageType.buttonsMessage,
-                                {
-                                  quoted: chat,
-                                  contextInfo: {
-                                    mentionedJid: [ʟɴᴀᴍᴇ, TagMention],
-                                  },
-                                }
-                              )
-                              .catch((error) =>
-                                ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
-                              );
-                          }
-                          `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-                          if (
-                            culprit.PermanentRobberyTime -
-                              (Date.now() - culprit.CurrentRobberyTime) >
-                            0
-                          ) {
-                            let Time = ms(
-                              culprit.PermanentRobberyTime -
-                                (Date.now() - culprit.CurrentRobberyTime)
-                            );
-                            return ᴠʟᴋʏʀᴇ_Buttons.MIB(
-                              ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
-                              chat,
-                              ᴠʟᴋʏʀᴇ,
-                              `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
+footerText: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+buttons: [
+{
+buttonId: `${ᴋᴇɪ}help`,
+buttonText: { displayText: `${ᴋᴇɪ}help` },
+type: 1,
+},
+{
+buttonId: `${ᴋᴇɪ}faq`,
+buttonText: { displayText: `${ᴋᴇɪ}faq` },
+type: 1,
+},
+],
+headerType: 4,
+imageMessage: media.message.imageMessage,
+},
+MessageType.buttonsMessage,
+{
+quoted: chat,
+contextInfo: {
+mentionedJid: [ʟɴᴀᴍᴇ, TagMention],
+},
+}
+)
+.catch((error) =>
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
+);
+}
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
+/*              (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!*/
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
+if (
+culprit.PermanentRobberyTime -
+(Date.now() - culprit.CurrentRobberyTime) >
+0
+) {
+let Time = ms(
+culprit.PermanentRobberyTime -
+(Date.now() - culprit.CurrentRobberyTime)
+);
+return ᴠʟᴋʏʀᴇ_Buttons.MIB(
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+chat,
+ᴠʟᴋʏʀᴇ,
+`*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
 ╔◇══════════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇╗
@@ -1037,51 +1077,53 @@ module.exports = {
 ║❌ 𝗘𝗿𝗿𝗼𝗿: _You've Recently Tried Robbing Someone!._
 ║🕐 𝐑𝐨𝐛 𝗔𝗴𝗮𝗶𝗻: _${Time.minutes}m ${Time.seconds}s._
 ╚════════════╝`,
-                              _𝔏𝔞𝔟_.RCLR
-                            );
-                          }
-                          `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-                          if (victim.sword > 0) {
-                            victim.sword = victim.sword - 1;
-                            if (cEconomy.money < 3000) {
-                              vEconomy.money = vEconomy.money + cEconomy.money;
-                              cEconomy.money = 0;
-                            } else {
-                              vEconomy.money = vEconomy.money + MoneySword;
-                              cEconomy.money = cEconomy.money - MoneySword;
-                            }
-                            culprit.CurrentRobberyTime = Date.now();
-                            await victim
-                              .save()
-                              .catch((error) =>
-                                ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
-                              );
-                            await culprit
-                              .save()
-                              .catch((error) =>
-                                ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
-                              );
-                            await vEconomy
-                              .save()
-                              .catch((error) =>
-                                ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
-                              );
-                            await cEconomy
-                              .save()
-                              .catch((error) =>
-                                ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
-                              );
-                            const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
-                              ᴠʟᴋʏʀᴇ.chatId,
-                              { url: _𝔏𝔞𝔟_.RCLR },
-                              MessageType.image,
-                              { mimetype: Mimetype.png }
-                            );
-                            return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
-                              .sendMessage(
-                                ᴠʟᴋʏʀᴇ.chatId,
-                                {
-                                  contentText: `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
+_𝔏𝔞𝔟_.RCLR
+);
+}
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
+/*              (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!*/
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
+if (victim.sword > 0) {
+victim.sword = victim.sword - 1;
+if (cEconomy.money < 3000) {
+vEconomy.money = vEconomy.money + cEconomy.money;
+cEconomy.money = 0;
+} else {
+vEconomy.money = vEconomy.money + MoneySword;
+cEconomy.money = cEconomy.money - MoneySword;
+}
+culprit.CurrentRobberyTime = Date.now();
+await victim
+.save()
+.catch((error) =>
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
+);
+await culprit
+.save()
+.catch((error) =>
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
+);
+await vEconomy
+.save()
+.catch((error) =>
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
+);
+await cEconomy
+.save()
+.catch((error) =>
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
+);
+const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
+ᴠʟᴋʏʀᴇ.chatId,
+{ url: _𝔏𝔞𝔟_.RCLR },
+MessageType.image,
+{ mimetype: Mimetype.png }
+);
+return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
+.sendMessage(
+ᴠʟᴋʏʀᴇ.chatId,
+{
+contentText: `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
 ╔◇══════════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇╗
@@ -1093,75 +1135,77 @@ module.exports = {
 ║🥸 𝐂𝐮𝐥𝐩𝐫𝐢𝐭: @${ᴘɴᴀᴍᴇ}, _${cEconomy.money}🪙_
 ║💀 𝐕𝐢𝐜𝐭𝐢𝐦: @${TagPerson}, = _${vEconomy.money}🪙_
 ╚════════════╝`,
-                                  footerText: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
-                                  buttons: [
-                                    {
-                                      buttonId: `${ᴋᴇɪ}help`,
-                                      buttonText: { displayText: `${ᴋᴇɪ}help` },
-                                      type: 1,
-                                    },
-                                    {
-                                      buttonId: `${ᴋᴇɪ}faq`,
-                                      buttonText: { displayText: `${ᴋᴇɪ}faq` },
-                                      type: 1,
-                                    },
-                                  ],
-                                  headerType: 4,
-                                  imageMessage: media.message.imageMessage,
-                                },
-                                MessageType.buttonsMessage,
-                                {
-                                  quoted: chat,
-                                  contextInfo: {
-                                    mentionedJid: [ʟɴᴀᴍᴇ, TagMention],
-                                  },
-                                }
-                              )
-                              .catch((error) =>
-                                ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
-                              );
-                            `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-                          } else if (victim.laptop > 0) {
-                            victim.laptop = victim.laptop - 1;
-                            if (cEconomy.money < 4000) {
-                              vEconomy.money = vEconomy.money + cEconomy.money;
-                              cEconomy.money = 0;
-                            } else {
-                              vEconomy.money = vEconomy.money + MoneyLaptop;
-                              cEconomy.money = cEconomy.money - MoneyLaptop;
-                            }
-                            culprit.CurrentRobberyTime = Date.now();
-                            await victim
-                              .save()
-                              .catch((error) =>
-                                ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
-                              );
-                            await culprit
-                              .save()
-                              .catch((error) =>
-                                ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
-                              );
-                            await vEconomy
-                              .save()
-                              .catch((error) =>
-                                ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
-                              );
-                            await cEconomy
-                              .save()
-                              .catch((error) =>
-                                ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
-                              );
-                            const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
-                              ᴠʟᴋʏʀᴇ.chatId,
-                              { url: _𝔏𝔞𝔟_.RCLR },
-                              MessageType.image,
-                              { mimetype: Mimetype.png }
-                            );
-                            return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
-                              .sendMessage(
-                                ᴠʟᴋʏʀᴇ.chatId,
-                                {
-                                  contentText: `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
+footerText: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+buttons: [
+{
+buttonId: `${ᴋᴇɪ}help`,
+buttonText: { displayText: `${ᴋᴇɪ}help` },
+type: 1,
+},
+{
+buttonId: `${ᴋᴇɪ}faq`,
+buttonText: { displayText: `${ᴋᴇɪ}faq` },
+type: 1,
+},
+],
+headerType: 4,
+imageMessage: media.message.imageMessage,
+},
+MessageType.buttonsMessage,
+{
+quoted: chat,
+contextInfo: {
+mentionedJid: [ʟɴᴀᴍᴇ, TagMention],
+},
+}
+)
+.catch((error) =>
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
+);
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
+/*              (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!*/
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
+} else if (victim.laptop > 0) {
+victim.laptop = victim.laptop - 1;
+if (cEconomy.money < 4000) {
+vEconomy.money = vEconomy.money + cEconomy.money;
+cEconomy.money = 0;
+} else {
+vEconomy.money = vEconomy.money + MoneyLaptop;
+cEconomy.money = cEconomy.money - MoneyLaptop;
+}
+culprit.CurrentRobberyTime = Date.now();
+await victim
+.save()
+.catch((error) =>
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
+);
+await culprit
+.save()
+.catch((error) =>
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
+);
+await vEconomy
+.save()
+.catch((error) =>
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
+);
+await cEconomy
+.save()
+.catch((error) =>
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
+);
+const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
+ᴠʟᴋʏʀᴇ.chatId,
+{ url: _𝔏𝔞𝔟_.RCLR },
+MessageType.image,
+{ mimetype: Mimetype.png }
+);
+return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
+.sendMessage(
+ᴠʟᴋʏʀᴇ.chatId,
+{
+contentText: `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
 ╔◇══════════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇╗
@@ -1173,75 +1217,77 @@ module.exports = {
 ║🥸 𝐂𝐮𝐥𝐩𝐫𝐢𝐭: @${ᴘɴᴀᴍᴇ}, _${cEconomy.money}🪙_
 ║💀 𝐕𝐢𝐜𝐭𝐢𝐦: @${TagPerson}, = _${vEconomy.money}🪙_
 ╚════════════╝`,
-                                  footerText: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
-                                  buttons: [
-                                    {
-                                      buttonId: `${ᴋᴇɪ}help`,
-                                      buttonText: { displayText: `${ᴋᴇɪ}help` },
-                                      type: 1,
-                                    },
-                                    {
-                                      buttonId: `${ᴋᴇɪ}faq`,
-                                      buttonText: { displayText: `${ᴋᴇɪ}faq` },
-                                      type: 1,
-                                    },
-                                  ],
-                                  headerType: 4,
-                                  imageMessage: media.message.imageMessage,
-                                },
-                                MessageType.buttonsMessage,
-                                {
-                                  quoted: chat,
-                                  contextInfo: {
-                                    mentionedJid: [ʟɴᴀᴍᴇ, TagMention],
-                                  },
-                                }
-                              )
-                              .catch((error) =>
-                                ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
-                              );
-                            `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-                          } else if (victim.charm > 0) {
-                            victim.charm = victim.charm - 1;
-                            if (cEconomy.money < 6000) {
-                              vEconomy.money = vEconomy.money + cEconomy.money;
-                              cEconomy.money = 0;
-                            } else {
-                              vEconomy.money = vEconomy.money + MoneyCharm;
-                              cEconomy.money = cEconomy.money - MoneyCharm;
-                            }
-                            culprit.CurrentRobberyTime = Date.now();
-                            await victim
-                              .save()
-                              .catch((error) =>
-                                ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
-                              );
-                            await culprit
-                              .save()
-                              .catch((error) =>
-                                ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
-                              );
-                            await vEconomy
-                              .save()
-                              .catch((error) =>
-                                ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
-                              );
-                            await cEconomy
-                              .save()
-                              .catch((error) =>
-                                ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
-                              );
-                            const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
-                              ᴠʟᴋʏʀᴇ.chatId,
-                              { url: _𝔏𝔞𝔟_.RCLR },
-                              MessageType.image,
-                              { mimetype: Mimetype.png }
-                            );
-                            return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
-                              .sendMessage(
-                                ᴠʟᴋʏʀᴇ.chatId,
-                                {
-                                  contentText: `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
+footerText: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+buttons: [
+{
+buttonId: `${ᴋᴇɪ}help`,
+buttonText: { displayText: `${ᴋᴇɪ}help` },
+type: 1,
+},
+{
+buttonId: `${ᴋᴇɪ}faq`,
+buttonText: { displayText: `${ᴋᴇɪ}faq` },
+type: 1,
+},
+],
+headerType: 4,
+imageMessage: media.message.imageMessage,
+},
+MessageType.buttonsMessage,
+{
+quoted: chat,
+contextInfo: {
+mentionedJid: [ʟɴᴀᴍᴇ, TagMention],
+},
+}
+)
+.catch((error) =>
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
+);
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
+/*              (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!*/
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
+} else if (victim.charm > 0) {
+victim.charm = victim.charm - 1;
+if (cEconomy.money < 6000) {
+vEconomy.money = vEconomy.money + cEconomy.money;
+cEconomy.money = 0;
+} else {
+vEconomy.money = vEconomy.money + MoneyCharm;
+cEconomy.money = cEconomy.money - MoneyCharm;
+}
+culprit.CurrentRobberyTime = Date.now();
+await victim
+.save()
+.catch((error) =>
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
+);
+await culprit
+.save()
+.catch((error) =>
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
+);
+await vEconomy
+.save()
+.catch((error) =>
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
+);
+await cEconomy
+.save()
+.catch((error) =>
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
+);
+const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
+ᴠʟᴋʏʀᴇ.chatId,
+{ url: _𝔏𝔞𝔟_.RCLR },
+MessageType.image,
+{ mimetype: Mimetype.png }
+);
+return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
+.sendMessage(
+ᴠʟᴋʏʀᴇ.chatId,
+{
+contentText: `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
 ╔◇══════════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇╗
@@ -1253,71 +1299,73 @@ module.exports = {
 ║🥸 𝐂𝐮𝐥𝐩𝐫𝐢𝐭: @${ᴘɴᴀᴍᴇ}, _${cEconomy.money}🪙_
 ║💀 𝐕𝐢𝐜𝐭𝐢𝐦: @${TagPerson}, = _${vEconomy.money}🪙_
 ╚════════════╝`,
-                                  footerText: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
-                                  buttons: [
-                                    {
-                                      buttonId: `${ᴋᴇɪ}help`,
-                                      buttonText: { displayText: `${ᴋᴇɪ}help` },
-                                      type: 1,
-                                    },
-                                    {
-                                      buttonId: `${ᴋᴇɪ}faq`,
-                                      buttonText: { displayText: `${ᴋᴇɪ}faq` },
-                                      type: 1,
-                                    },
-                                  ],
-                                  headerType: 4,
-                                  imageMessage: media.message.imageMessage,
-                                },
-                                MessageType.buttonsMessage,
-                                {
-                                  quoted: chat,
-                                  contextInfo: {
-                                    mentionedJid: [ʟɴᴀᴍᴇ, TagMention],
-                                  },
-                                }
-                              )
-                              .catch((error) =>
-                                ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
-                              );
-                            `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-                          } else {
-                            let Note;
-                            cEconomy.PermanentRobberyTime = 900000;
-                            vEconomy.PermanentRobberyTime = 900000;
-                            if (vEconomy.money < 1000) {
-                              vEconomy.money = 0;
-                              cEconomy.money = cEconomy.money + vEconomy.money;
-                              culprit.CurrentRobberyTime = Date.now();
-                              await vEconomy
-                                .save()
-                                .catch((error) =>
-                                  ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
-                                );
-                              await cEconomy
-                                .save()
-                                .catch((error) =>
-                                  ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
-                                );
-                              const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
-                                ᴠʟᴋʏʀᴇ.chatId,
-                                { url: _𝔏𝔞𝔟_.RCLR },
-                                MessageType.image,
-                                { mimetype: Mimetype.png }
-                              );
-                              return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
-                                .sendMessage(
-                                  ᴠʟᴋʏʀᴇ.chatId,
-                                  {
-                                    contentText: `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
+footerText: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+buttons: [
+{
+buttonId: `${ᴋᴇɪ}help`,
+buttonText: { displayText: `${ᴋᴇɪ}help` },
+type: 1,
+},
+{
+buttonId: `${ᴋᴇɪ}faq`,
+buttonText: { displayText: `${ᴋᴇɪ}faq` },
+type: 1,
+},
+],
+headerType: 4,
+imageMessage: media.message.imageMessage,
+},
+MessageType.buttonsMessage,
+{
+quoted: chat,
+contextInfo: {
+mentionedJid: [ʟɴᴀᴍᴇ, TagMention],
+},
+}
+)
+.catch((error) =>
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
+);
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
+/*              (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!*/
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
+} else {
+let Note;
+cEconomy.PermanentRobberyTime = 900000;
+vEconomy.PermanentRobberyTime = 900000;
+if (vEconomy.money < 1000) {
+vEconomy.money = 0;
+cEconomy.money = cEconomy.money + vEconomy.money;
+culprit.CurrentRobberyTime = Date.now();
+await vEconomy
+.save()
+.catch((error) =>
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
+);
+await cEconomy
+.save()
+.catch((error) =>
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
+);
+const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
+ᴠʟᴋʏʀᴇ.chatId,
+{ url: _𝔏𝔞𝔟_.RCLR },
+MessageType.image,
+{ mimetype: Mimetype.png }
+);
+return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
+.sendMessage(
+ᴠʟᴋʏʀᴇ.chatId,
+{
+contentText: `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
 ╔◇══════════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇╗
 ╔◇╝ 
 ║🔓 𝐒𝐭𝐚𝐭𝐮𝐬: @${TagPerson} _Got Robbed!_
 ║👑 𝗔𝗺𝗼𝘂𝗻𝘁: *Seems Like The Victim Had Gold<1000. _You Got All Their Golds ${
-                                      vEconomy.money
-                                    }!*_
+vEconomy.money
+}!*_
 ║⚰️ 𝗥𝗲𝗮𝘀𝗼𝗻: _Didn't have any safety stuffs. @${TagPerson}, visit ${ᴋᴇɪ}shop ASAP._
 ╚◇╗
 ╔◇╝🥸 𝐂𝐮𝐥𝐩𝐫𝐢𝐭: @${ᴘɴᴀᴍᴇ}, 
@@ -1328,57 +1376,57 @@ module.exports = {
 ║❓ 𝗕𝗲𝗳𝗼𝗿𝗲: _${vEconomy.money}🪙_
 ║🥲 𝗔𝗳𝘁𝗲𝗿: _${vEconomy.money - MoneyRandom}🪙_
 ╚════════════╝`,
-                                    footerText: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
-                                    buttons: [
-                                      {
-                                        buttonId: `${ᴋᴇɪ}help`,
-                                        buttonText: {
-                                          displayText: `${ᴋᴇɪ}help`,
-                                        },
-                                        type: 1,
-                                      },
-                                    ],
-                                    headerType: 4,
-                                    imageMessage: media.message.imageMessage,
-                                  },
-                                  MessageType.buttonsMessage,
-                                  {
-                                    quoted: chat,
-                                    contextInfo: {
-                                      mentionedJid: [ʟɴᴀᴍᴇ, TagMention],
-                                    },
-                                  }
-                                )
-                                .catch((error) =>
-                                  ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
-                                );
-                            } else {
-                              cEconomy.PermanentRobberyTime = 900000;
-                              vEconomy.PermanentRobberyTime = 900000;
-                              vEconomy.money = vEconomy.money - MoneyRandom;
-                              cEconomy.money = cEconomy.money + MoneyRandom;
-                              culprit.CurrentRobberyTime = Date.now();
-                              await vEconomy
-                                .save()
-                                .catch((error) =>
-                                  ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
-                                );
-                              await cEconomy
-                                .save()
-                                .catch((error) =>
-                                  ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
-                                );
-                              const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
-                                ᴠʟᴋʏʀᴇ.chatId,
-                                { url: _𝔏𝔞𝔟_.RCLR },
-                                MessageType.image,
-                                { mimetype: Mimetype.png }
-                              );
-                              return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
-                                .sendMessage(
-                                  ᴠʟᴋʏʀᴇ.chatId,
-                                  {
-                                    contentText: `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
+footerText: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+buttons: [
+{
+buttonId: `${ᴋᴇɪ}help`,
+buttonText: {
+displayText: `${ᴋᴇɪ}help`,
+},
+type: 1,
+},
+],
+headerType: 4,
+imageMessage: media.message.imageMessage,
+},
+MessageType.buttonsMessage,
+{
+quoted: chat,
+contextInfo: {
+mentionedJid: [ʟɴᴀᴍᴇ, TagMention],
+},
+}
+)
+.catch((error) =>
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
+);
+} else {
+cEconomy.PermanentRobberyTime = 900000;
+vEconomy.PermanentRobberyTime = 900000;
+vEconomy.money = vEconomy.money - MoneyRandom;
+cEconomy.money = cEconomy.money + MoneyRandom;
+culprit.CurrentRobberyTime = Date.now();
+await vEconomy
+.save()
+.catch((error) =>
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
+);
+await cEconomy
+.save()
+.catch((error) =>
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
+);
+const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
+ᴠʟᴋʏʀᴇ.chatId,
+{ url: _𝔏𝔞𝔟_.RCLR },
+MessageType.image,
+{ mimetype: Mimetype.png }
+);
+return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
+.sendMessage(
+ᴠʟᴋʏʀᴇ.chatId,
+{
+contentText: `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
 ╔◇══════════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇╗
@@ -1395,61 +1443,61 @@ module.exports = {
 ║❓ 𝗕𝗲𝗳𝗼𝗿𝗲: _${vEconomy.money}🪙_
 ║🥲 𝗔𝗳𝘁𝗲𝗿: _${vEconomy.money - MoneyRandom}🪙_
 ╚════════════╝`,
-                                    footerText: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
-                                    buttons: [
-                                      {
-                                        buttonId: `${ᴋᴇɪ}help`,
-                                        buttonText: {
-                                          displayText: `${ᴋᴇɪ}help`,
-                                        },
-                                        type: 1,
-                                      },
-                                    ],
-                                    headerType: 4,
-                                    imageMessage: media.message.imageMessage,
-                                  },
-                                  MessageType.buttonsMessage,
-                                  {
-                                    quoted: chat,
-                                    contextInfo: {
-                                      mentionedJid: [ʟɴᴀᴍᴇ, TagMention],
-                                    },
-                                  }
-                                )
-                                .catch((error) =>
-                                  ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
-                                );
-                            }
-                          }
-                        }
-                      );
-                    }
-                  );
-                }
-              }
-            );
-          }
-        );
-      } else {
-        var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(ᴠʟᴋʏʀᴇ.commandName);
-        var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
-          𝓜Usage.ᴠʟᴋʏʀᴇӄǟɨʐօ === undefined ? `Null` : 𝓜Usage.ᴠʟᴋʏʀᴇӄǟɨʐօ;
-        const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
-        return ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
-          ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
-          chat,
-          ᴠʟᴋʏʀᴇ,
-          ʟɴᴀᴍᴇ,
-          ᴘɴᴀᴍᴇ,
-          ᴠʟᴋʏʀᴇ.commandName,
-          ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
-        );
-      }
-    } catch (error) {
-      ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
-      return;
-    }
-  },
+footerText: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+buttons: [
+{
+buttonId: `${ᴋᴇɪ}help`,
+buttonText: {
+displayText: `${ᴋᴇɪ}help`,
+},
+type: 1,
+},
+],
+headerType: 4,
+imageMessage: media.message.imageMessage,
+},
+MessageType.buttonsMessage,
+{
+quoted: chat,
+contextInfo: {
+mentionedJid: [ʟɴᴀᴍᴇ, TagMention],
+},
+}
+)
+.catch((error) =>
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
+);
+}
+}
+}
+);
+}
+);
+}
+}
+);
+}
+);
+} else {
+var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(ᴠʟᴋʏʀᴇ.commandName);
+var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
+𝓜Usage.ᴠʟᴋʏʀᴇӄǟɨʐօ === undefined ? `Null` : 𝓜Usage.ᴠʟᴋʏʀᴇӄǟɨʐօ;
+const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
+return ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+chat,
+ᴠʟᴋʏʀᴇ,
+ʟɴᴀᴍᴇ,
+ᴘɴᴀᴍᴇ,
+ᴠʟᴋʏʀᴇ.commandName,
+ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
+);
+}
+} catch (error) {
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
+return;
+}
+},
 };
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 /*        
