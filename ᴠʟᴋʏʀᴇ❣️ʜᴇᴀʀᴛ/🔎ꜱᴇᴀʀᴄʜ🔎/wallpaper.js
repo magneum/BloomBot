@@ -172,6 +172,7 @@ method: "search",
 term: Needs.join(" "),
 })
 );
+let img;
 let json = await res.json();
 if (!json) {
 userBadge.Limits = userBadge.Limits + 1;
@@ -179,7 +180,7 @@ await userBadge.save().catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ�
 ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
 return;
 } else {
-    
+
 }
 let img = json.wallpapers[Math.floor(Math.random() * json.wallpapers.length)];
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
