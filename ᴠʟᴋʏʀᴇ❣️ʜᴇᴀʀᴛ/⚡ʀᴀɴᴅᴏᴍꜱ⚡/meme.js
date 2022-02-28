@@ -57,6 +57,7 @@ return ᴠʟᴋʏʀᴇ_Buttons.MIB(
 chat,
 ᴠʟᴋʏʀᴇ,
 `*『@${ᴘɴᴀᴍᴇ}』*
+
 💿𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}
 _Your Life Lmfao!_`,
 "https://i.postimg.cc/9Xkbbm7m/meme.png"
