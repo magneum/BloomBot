@@ -519,7 +519,7 @@ if (
 !ᴠʟᴋʏʀᴇ.isSenderDev &&
 !ᴠʟᴋʏʀᴇ.body.includes(ᴋᴇɪ + "help") &&
 !ᴠʟᴋʏʀᴇ.body.includes(ᴋᴇɪ + "rules") &&
-!ᴠʟᴋʏʀᴇ.body.includes(ᴋᴇɪ + "faq") &&
+!ᴠʟᴋʏʀᴇ.body.includes(ᴋᴇɪ + "vlkyre") &&
 !ᴠʟᴋʏʀᴇ.body.includes(ᴋᴇɪ + "verify")
 ) {
 await AntiPm.AntiPm(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, chat, ᴠʟᴋʏʀᴇ);
@@ -765,7 +765,7 @@ if (
 !ᴠʟᴋʏʀᴇ.isSenderDev &&
 !ᴠʟᴋʏʀᴇ.body.includes(ᴋᴇɪ + "help") &&
 !ᴠʟᴋʏʀᴇ.body.includes(ᴋᴇɪ + "rules") &&
-!ᴠʟᴋʏʀᴇ.body.includes(ᴋᴇɪ + "faq") &&
+!ᴠʟᴋʏʀᴇ.body.includes(ᴋᴇɪ + "vlkyre") &&
 !ᴠʟᴋʏʀᴇ.body.includes(ᴋᴇɪ + "verify") &&
 !ᴠʟᴋʏʀᴇ.body.includes(ᴋᴇɪ + "menu")
 )
