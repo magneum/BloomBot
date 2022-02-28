@@ -9,10 +9,10 @@
 
 # 🍂𝐃𝐞𝐩𝐥𝐨𝐲
 
-[![Generic badge](https://img.shields.io/badge/🚀𝐇𝐞𝐫𝐨𝐤𝐮-purple.svg)](https://Vlkyre.krakinzkon.repl.co)
-[![Generic badge](https://img.shields.io/badge/⛱️𝐆𝐫𝐨𝐮𝐩𝐬-darkgreen.svg)](https://Vlkyre.krakinzkon.repl.co)
-[![Generic badge](https://img.shields.io/badge/🌐𝐖𝐞𝐛𝐬𝐢𝐭𝐞-white.svg)](https://Vlkyre.krakinzkon.repl.co)
-[![Generic badge](https://img.shields.io/badge/🛫𝐃𝐞𝐩𝐥𝐨𝐲𝐦𝐞𝐧𝐭-red.svg)](https://Vlkyre.krakinzkon.repl.co)
+[![Generic badge](https://img.shields.io/badge/🚀HEROKU-purple.svg)](https://Vlkyre.krakinzkon.repl.co)
+[![Generic badge](https://img.shields.io/badge/⛱️GROUPS-darkgreen.svg)](https://Vlkyre.krakinzkon.repl.co)
+[![Generic badge](https://img.shields.io/badge/🌐WEBSITE-white.svg)](https://Vlkyre.krakinzkon.repl.co)
+[![Generic badge](https://img.shields.io/badge/🛫DEPLOYMENT-red.svg)](https://Vlkyre.krakinzkon.repl.co)
 
 
 # 🍂𝐃𝐢𝐬𝐜𝐥𝐚𝐢𝐦𝐞𝐫
