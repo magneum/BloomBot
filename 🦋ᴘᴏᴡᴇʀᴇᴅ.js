@@ -43,7 +43,7 @@ seconds
 ) {
 shell.error();
 shell.echo("💡𝐈𝐧𝐟𝐨꧂ Exited With Code !==0");
-shell.exit(1);
+// shell.exit(1);
 }
 });
 
