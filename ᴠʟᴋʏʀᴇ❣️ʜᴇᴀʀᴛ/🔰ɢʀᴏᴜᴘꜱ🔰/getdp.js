@@ -48,7 +48,7 @@ MessageType.image,
 {
 quoted: chat,
 mimetype: Mimetype.png,
-caption: `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
+caption: `*『@${ᴘɴᴀᴍᴇ}』*
 
 
 💿𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}
