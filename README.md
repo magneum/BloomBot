@@ -9,7 +9,11 @@
 
 # 🍂𝐃𝐞𝐩𝐥𝐨𝐲
 
-🛰️ 𝐕𝐢𝐬𝐢𝐭: [` ☊ 𝐕𝐥𝐤𝐲𝐫𝐞 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐁𝐨𝐭 ☊`](https://Vlkyre.krakinzkon.repl.co)
+[![Generic badge](https://img.shields.io/badge/🚀𝐇𝐞𝐫𝐨𝐤𝐮-purple.svg)](https://Vlkyre.krakinzkon.repl.co)
+[![Generic badge](https://img.shields.io/badge/⛱️𝐆𝐫𝐨𝐮𝐩𝐬-darkgreen.svg)](https://Vlkyre.krakinzkon.repl.co)
+[![Generic badge](https://img.shields.io/badge/🌐𝐖𝐞𝐛𝐬𝐢𝐭𝐞-white.svg)](https://Vlkyre.krakinzkon.repl.co)
+[![Generic badge](https://img.shields.io/badge/🛫𝐃𝐞𝐩𝐥𝐨𝐲𝐦𝐞𝐧𝐭-red.svg)](https://Vlkyre.krakinzkon.repl.co)
+
 
 # 🍂𝐃𝐢𝐬𝐜𝐥𝐚𝐢𝐦𝐞𝐫
 
