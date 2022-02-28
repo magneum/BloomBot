@@ -29,6 +29,11 @@ contentText: MainText,
 footerText: `༆Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ×፝֟͜× ${vers.vers}\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
 buttons: [
 {
+buttonId: `${ᴋᴇɪ}vlkyre`,
+buttonText: { displayText: `${ᴋᴇɪ}vlkyre` },
+type: 1,
+},
+{
 buttonId: `${ᴋᴇɪ}help`,
 buttonText: { displayText: `${ᴋᴇɪ}help` },
 type: 1,

@@ -41,7 +41,6 @@ try {
 require("child_process").exec("hash -r").stderr.pipe(process.stderr);
 } catch {
 ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/\D/g, "");
-require("child_process").exec("hash -r").stderr.pipe(process.stderr);
 }
 
 var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
@@ -61,12 +60,9 @@ const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
 let ᴘɴᴀᴍᴇ;
 try {
 ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/\@s.whatsapp.net/g, "").replace(/\D/g, "");
-require("child_process").exec("hash -r").stderr.pipe(process.stderr);
 } catch {
 ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/\D/g, "");
-require("child_process").exec("hash -r").stderr.pipe(process.stderr);
 }
-
 return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .sendMessage(ᴠʟᴋʏʀᴇ.chatId, { url: MediaUrl }, MessageType.video, {
 mimetype: `video/gif`,

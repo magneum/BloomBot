@@ -46,7 +46,7 @@ chat,
 ╚════════════╝
 
 👇🏽‍𝐂𝐥𝐢𝐜𝐤 𝐇𝐞𝐫𝐞👇🏽‍
-_https://Vlkyre.krakinzkon.repl.co_
+⧉ _https://Vlkyre.krakinzkon.repl.co_
 `,
 "./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ.png"
 );
