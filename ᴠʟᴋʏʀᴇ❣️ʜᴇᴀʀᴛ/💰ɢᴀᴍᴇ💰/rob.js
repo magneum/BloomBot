@@ -640,7 +640,7 @@ contentText: `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
 ║❌ 𝗘𝗿𝗿𝗼𝗿: @${TagPerson}'s Bank Guard Caught You and Took You To The Jail!
 ║💡‍ 𝐒𝐭𝐚𝐭𝐮𝐬: _You Got Arrested and Took 0gold.ReTry Again!_
 ╚════════════╝`,
-footerText: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+footerText: `༆Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ×፝֟͜× ${vers.vers}\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
@@ -703,7 +703,7 @@ contentText: `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
 ║❌ 𝗘𝗿𝗿𝗼𝗿: _You are the worst robber._
 ║🍌‍ 𝗥𝗲𝗮𝘀𝗼𝗻:  _Fell On a pool and died!.ReTry Again!_
 ╚════════════╝`,
-footerText: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+footerText: `༆Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ×፝֟͜× ${vers.vers}\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
@@ -768,7 +768,7 @@ contentText: `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
 ║❌ 𝗘𝗿𝗿𝗼𝗿: , _needs atleast 1000gold in their account before you can rob them!_
 ║🍌‍ 𝗥𝗲𝗮𝘀𝗼𝗻: _Broke AF! Leave This Begger Alone!_
 ╚════════════╝`,
-footerText: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+footerText: `༆Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ×፝֟͜× ${vers.vers}\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
@@ -853,7 +853,7 @@ contentText: `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
 ╔◇╝ 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲
 ║ @${ᴘɴᴀᴍᴇ}, _${cEconomy.money}_
 ╚════════════╝`,
-footerText: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+footerText: `༆Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ×፝֟͜× ${vers.vers}\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
@@ -925,7 +925,7 @@ contentText: `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
 ╔◇╝ 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲
 ║ @${ᴘɴᴀᴍᴇ}, _${cEconomy.money}_
 ╚════════════╝`,
-footerText: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+footerText: `༆Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ×፝֟͜× ${vers.vers}\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
@@ -1035,7 +1035,7 @@ contentText: `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
 ║🥸 𝐂𝐮𝐥𝐩𝐫𝐢𝐭: @${ᴘɴᴀᴍᴇ}, _${cEconomy.money}🪙_
 ║💀 𝐕𝐢𝐜𝐭𝐢𝐦: @${TagPerson}, = _${vEconomy.money}🪙_
 ╚════════════╝`,
-footerText: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+footerText: `༆Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ×፝֟͜× ${vers.vers}\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
@@ -1117,7 +1117,7 @@ contentText: `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
 ║🥸 𝐂𝐮𝐥𝐩𝐫𝐢𝐭: @${ᴘɴᴀᴍᴇ}, _${cEconomy.money}🪙_
 ║💀 𝐕𝐢𝐜𝐭𝐢𝐦: @${TagPerson}, = _${vEconomy.money}🪙_
 ╚════════════╝`,
-footerText: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+footerText: `༆Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ×፝֟͜× ${vers.vers}\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
@@ -1199,7 +1199,7 @@ contentText: `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
 ║🥸 𝐂𝐮𝐥𝐩𝐫𝐢𝐭: @${ᴘɴᴀᴍᴇ}, _${cEconomy.money}🪙_
 ║💀 𝐕𝐢𝐜𝐭𝐢𝐦: @${TagPerson}, = _${vEconomy.money}🪙_
 ╚════════════╝`,
-footerText: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+footerText: `༆Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ×፝֟͜× ${vers.vers}\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
@@ -1276,7 +1276,7 @@ vEconomy.money
 ║❓ 𝗕𝗲𝗳𝗼𝗿𝗲: _${vEconomy.money}🪙_
 ║🥲 𝗔𝗳𝘁𝗲𝗿: _${vEconomy.money - MoneyRandom}🪙_
 ╚════════════╝`,
-footerText: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+footerText: `༆Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ×፝֟͜× ${vers.vers}\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
@@ -1343,7 +1343,7 @@ contentText: `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
 ║❓ 𝗕𝗲𝗳𝗼𝗿𝗲: _${vEconomy.money}🪙_
 ║🥲 𝗔𝗳𝘁𝗲𝗿: _${vEconomy.money - MoneyRandom}🪙_
 ╚════════════╝`,
-footerText: `×፝֟͜×𝐕𝐥𝐤𝐲𝐫𝐞${vers.vers}\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+footerText: `༆Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ×፝֟͜× ${vers.vers}\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
