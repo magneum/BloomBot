@@ -79,7 +79,7 @@ return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .sendMessage(
 ᴠʟᴋʏʀᴇ.chatId,
 {
-contentText: `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
+contentText: `*『@${ᴘɴᴀᴍᴇ}』*
 
 ❌𝐍𝐎𝐓 𝐕𝐄𝐑𝐈𝐅𝐈𝐄𝐃!
 📌 *Click:* _https://KrakinzLab-Vlkyre.krakinzkon.repl.co_
@@ -117,7 +117,7 @@ return ᴠʟᴋʏʀᴇ_Buttons.MIB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 ᴠʟᴋʏʀᴇ,
-`*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
+`*『@${ᴘɴᴀᴍᴇ}』*
 
 ✅ 𝐕𝐄𝐑𝐈𝐅𝐈𝐄𝐃!
 📌 _Enjoy Vlkyre Premiums For Free!_

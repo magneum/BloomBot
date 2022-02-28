@@ -42,7 +42,7 @@ return ᴠʟᴋʏʀᴇ_Buttons.MIB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 ᴠʟᴋʏʀᴇ,
-`*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*\n❌𝐃𝐞𝐧𝐢𝐞𝐝: _Owner/Dev Only.You Are Not Allowed!_`,
+`*『@${ᴘɴᴀᴍᴇ}』*\n❌𝐃𝐞𝐧𝐢𝐞𝐝: _Owner/Dev Only.You Are Not Allowed!_`,
 "./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_OwnerOnly.png"
 );
 }
@@ -57,7 +57,7 @@ return ᴠʟᴋʏʀᴇ_Buttons.MIB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 ᴠʟᴋʏʀᴇ,
-`*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡* 
+`*『@${ᴘɴᴀᴍᴇ}』* 
 
 🛡️𝐒𝐮𝐝𝐨 𝐔𝐧𝐁𝐚𝐧:
 🔓 𝐒𝐭𝐚𝐭𝐮𝐬: _Can't Use On My-Self_`,
@@ -73,7 +73,7 @@ return ᴠʟᴋʏʀᴇ_Buttons.MIB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 ᴠʟᴋʏʀᴇ,
-`*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡* 
+`*『@${ᴘɴᴀᴍᴇ}』* 
 
 🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧 
 💡 _This Command is Only For Groups!_`,
@@ -95,7 +95,7 @@ return ᴠʟᴋʏʀᴇ_Buttons.MIB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 ᴠʟᴋʏʀᴇ,
-`*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡* 
+`*『@${ᴘɴᴀᴍᴇ}』* 
 
 🛡️𝐒𝐮𝐝𝐨 𝐔𝐧𝐁𝐚𝐧:
 🔓 𝐒𝐭𝐚𝐭𝐮𝐬: *${groupData.subject}*, Was Not Banned!`,
@@ -109,7 +109,7 @@ return ᴠʟᴋʏʀᴇ_Buttons.MIB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 ᴠʟᴋʏʀᴇ,
-`*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡* 
+`*『@${ᴘɴᴀᴍᴇ}』* 
 
 🛡️𝐒𝐮𝐝𝐨 𝐔𝐧𝐁𝐚𝐧:
 🔓 𝐒𝐭𝐚𝐭𝐮𝐬: *${groupData.subject}*, Has Been Un-Banned!`,
@@ -134,7 +134,7 @@ return ᴠʟᴋʏʀᴇ_Buttons.MTB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 ᴠʟᴋʏʀᴇ,
-`*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡* 
+`*『@${ᴘɴᴀᴍᴇ}』* 
 
 🛡️𝐒𝐮𝐝𝐨 𝐔𝐧𝐁𝐚𝐧:
 🔓 𝐒𝐭𝐚𝐭𝐮𝐬: *@${քɛʀֆօռɢօȶռʊʍ}* Was Not Banned!`,
@@ -148,7 +148,7 @@ return ᴠʟᴋʏʀᴇ_Buttons.MIB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 ᴠʟᴋʏʀᴇ,
-`*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡* 
+`*『@${ᴘɴᴀᴍᴇ}』* 
 
 🛡️𝐒𝐮𝐝𝐨 𝐔𝐧𝐁𝐚𝐧:
 🔓 𝐒𝐭𝐚𝐭𝐮𝐬: *@${քɛʀֆօռɢօȶռʊʍ}* Has Been Un-Banned!`,
