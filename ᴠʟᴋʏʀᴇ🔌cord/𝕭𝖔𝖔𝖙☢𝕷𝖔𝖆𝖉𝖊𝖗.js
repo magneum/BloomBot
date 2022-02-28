@@ -237,6 +237,11 @@ contentText: `お 👑𝐔𝐬𝐞𝐫: ${
 footerText: `⌜𝐕𝐥𝐤𝐲𝐫𝐞 ×፝֟͜×${vers.vers}⌟\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
 buttons: [
 {
+buttonId: `${ᴋᴇɪ}vlkyre`,
+buttonText: { displayText: `${ᴋᴇɪ}vlkyre` },
+type: 1,
+},
+{
 buttonId: `${ᴋᴇɪ}help`,
 buttonText: { displayText: `${ᴋᴇɪ}help` },
 type: 1,
@@ -410,6 +415,11 @@ contentText: `👋🏻𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚, *To Admins Of Th
 footerText: `⌜𝐕𝐥𝐤𝐲𝐫𝐞 ×፝֟͜×${vers.vers}⌟\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
 buttons: [
 {
+buttonId: `${ᴋᴇɪ}vlkyre`,
+buttonText: { displayText: `${ᴋᴇɪ}vlkyre` },
+type: 1,
+},
+{
 buttonId: `${ᴋᴇɪ}help`,
 buttonText: { displayText: `${ᴋᴇɪ}help` },
 type: 1,
@@ -541,6 +551,7 @@ chat,
 
 ╔⧉༻ 𝐕𝐥𝐤𝐲𝐫𝐞💡𝐔𝐩𝐝𝐚𝐭𝐢𝐧𝐠
 ║🍯 𝗦𝘁𝗮𝘁𝘂𝘀: _Update Pending!_
+║🔥 𝗡𝗲𝘄 𝗖𝗼𝗺𝗺𝗶𝘁𝘀: _${newCommits.total}_
 ║🛰️ 𝐋𝐚𝐭𝐞𝐧𝐜𝐲: _${Ping}ms_
 ║📅 𝐃𝐚𝐭𝐞: _${Clock}_
 ║⚙️ 𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _Old: ${vers.verold} | New: ${vers.vers}_
