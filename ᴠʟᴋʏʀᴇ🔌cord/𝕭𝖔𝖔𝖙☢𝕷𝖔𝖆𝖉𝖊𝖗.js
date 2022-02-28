@@ -261,11 +261,12 @@ if (update.announce == `false`) {
 return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .sendMessage(groupupdateID.id, { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 }, MessageType.image, {
 mimetype: Mimetype.png,
-caption: `\n❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❞\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™
-🛰️ 𝐖𝐞𝐛𝐬𝐢𝐭𝐞: _https://KrakinzLab-Vlkyre.krakinzkon.repl.co_
+caption: `❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❞\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™
+🦋𝐕𝐥𝐤𝐲𝐫𝐞: _Is an Advance Whatsapp User-Bot!_
+🛰️𝐖𝐞𝐛𝐬𝐢𝐭𝐞/𝐆𝐢𝐭𝐡𝐮𝐛: _https://KrakinzLab-Vlkyre.krakinzkon.repl.co_
 
 
-🛸*Attention Here Everyone In the Group!🛸*
+⚡ 𝐀𝐭𝐭𝐞𝐧𝐭𝐢𝐨𝐧 𝐇𝐞𝐫𝐞 𝐄𝐯𝐞𝐫𝐲𝐨𝐧𝐞 𝐈𝐧 𝐭𝐡𝐞 𝐆𝐫𝐨𝐮𝐩! ⚡
 ⛺𝐆𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _Open For All_
 🎪𝐆𝐍𝐚𝐦𝐞: ${groupupdateID.subject}
 💞𝐆𝐌𝐞𝐦𝐛𝐞𝐫: ${groupupdateID.participants.length}`,
@@ -278,11 +279,12 @@ caption: `\n❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❞\nᴘʏᴛʜᴏɴ �
 return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .sendMessage(groupupdateID.id, { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 }, MessageType.image, {
 mimetype: Mimetype.png,
-caption: `\n❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❞\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™
-🛰️ 𝐖𝐞𝐛𝐬𝐢𝐭𝐞: _https://KrakinzLab-Vlkyre.krakinzkon.repl.co_
+caption: `❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❞\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™
+🦋𝐕𝐥𝐤𝐲𝐫𝐞: _Is an Advance Whatsapp User-Bot!_
+🛰️𝐖𝐞𝐛𝐬𝐢𝐭𝐞/𝐆𝐢𝐭𝐡𝐮𝐛: _https://KrakinzLab-Vlkyre.krakinzkon.repl.co_
 
 
-🛸*Attention Here Everyone In the Group!🛸*
+⚡ 𝐀𝐭𝐭𝐞𝐧𝐭𝐢𝐨𝐧 𝐇𝐞𝐫𝐞 𝐄𝐯𝐞𝐫𝐲𝐨𝐧𝐞 𝐈𝐧 𝐭𝐡𝐞 𝐆𝐫𝐨𝐮𝐩! ⚡
 ⛺𝐆𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _Admins-Only_
 🎪𝐆𝐍𝐚𝐦𝐞: ${groupupdateID.subject}
 💞𝐆𝐌𝐞𝐦𝐛𝐞𝐫: ${groupupdateID.participants.length}`,})
@@ -298,13 +300,12 @@ mimetype: Mimetype.png,
 contextInfo: {
 mentionedJid: [tag],
 },
-caption: `⌜𝐕𝐥𝐤𝐲𝐫𝐞 ×፝֟͜×${
-vers.vers
-}⌟\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™
-🛰️ 𝐖𝐞𝐛𝐬𝐢𝐭𝐞: _https://KrakinzLab-Vlkyre.krakinzkon.repl.co_
+caption: `❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❞\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™
+🦋𝐕𝐥𝐤𝐲𝐫𝐞: _Is an Advance Whatsapp User-Bot!_
+🛰️𝐖𝐞𝐛𝐬𝐢𝐭𝐞/𝐆𝐢𝐭𝐡𝐮𝐛: _https://KrakinzLab-Vlkyre.krakinzkon.repl.co_
 
 
-🛸*Attention Here Everyone In the Group!🛸*
+⚡ 𝐀𝐭𝐭𝐞𝐧𝐭𝐢𝐨𝐧 𝐇𝐞𝐫𝐞 𝐄𝐯𝐞𝐫𝐲𝐨𝐧𝐞 𝐈𝐧 𝐭𝐡𝐞 𝐆𝐫𝐨𝐮𝐩! ⚡
 ⛺𝐆𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _New Description Added_
 🎪𝐆𝐍𝐚𝐦𝐞: ${groupupdateID.subject}
 💞𝐆𝐌𝐞𝐦𝐛𝐞𝐫: ${groupupdateID.participants.length}
@@ -321,13 +322,12 @@ ${update.desc}`,
 return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .sendMessage(groupupdateID.id, { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 }, MessageType.image, {
 mimetype: Mimetype.png,
-caption: `⌜𝐕𝐥𝐤𝐲𝐫𝐞 ×፝֟͜×${
-vers.vers
-}⌟\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™
-🛰️ 𝐖𝐞𝐛𝐬𝐢𝐭𝐞: _https://KrakinzLab-Vlkyre.krakinzkon.repl.co_
+caption: `❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❞\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™
+🦋𝐕𝐥𝐤𝐲𝐫𝐞: _Is an Advance Whatsapp User-Bot!_
+🛰️𝐖𝐞𝐛𝐬𝐢𝐭𝐞/𝐆𝐢𝐭𝐡𝐮𝐛: _https://KrakinzLab-Vlkyre.krakinzkon.repl.co_
 
 
-🛸*Attention Here Everyone In the Group!🛸*
+⚡ 𝐀𝐭𝐭𝐞𝐧𝐭𝐢𝐨𝐧 𝐇𝐞𝐫𝐞 𝐄𝐯𝐞𝐫𝐲𝐨𝐧𝐞 𝐈𝐧 𝐭𝐡𝐞 𝐆𝐫𝐨𝐮𝐩! ⚡
 ⛺𝐆𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _Info Edit Allowed For All_
 🎪𝐆𝐍𝐚𝐦𝐞: ${groupupdateID.subject}
 💞𝐆𝐌𝐞𝐦𝐛𝐞𝐫: ${groupupdateID.participants.length}
@@ -341,13 +341,12 @@ vers.vers
 return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .sendMessage(groupupdateID.id, { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 }, MessageType.image, {
 mimetype: Mimetype.png,
-caption: `⌜𝐕𝐥𝐤𝐲𝐫𝐞 ×፝֟͜×${
-vers.vers
-}⌟\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™
-🛰️ 𝐖𝐞𝐛𝐬𝐢𝐭𝐞: _https://KrakinzLab-Vlkyre.krakinzkon.repl.co_
+caption: `❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❞\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™
+🦋𝐕𝐥𝐤𝐲𝐫𝐞: _Is an Advance Whatsapp User-Bot!_
+🛰️𝐖𝐞𝐛𝐬𝐢𝐭𝐞/𝐆𝐢𝐭𝐡𝐮𝐛: _https://KrakinzLab-Vlkyre.krakinzkon.repl.co_
 
 
-🛸*Attention Here Everyone In the Group!🛸*
+⚡ 𝐀𝐭𝐭𝐞𝐧𝐭𝐢𝐨𝐧 𝐇𝐞𝐫𝐞 𝐄𝐯𝐞𝐫𝐲𝐨𝐧𝐞 𝐈𝐧 𝐭𝐡𝐞 𝐆𝐫𝐨𝐮𝐩! ⚡
 ⛺𝐆𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _Info Edit Admins-Only_
 🎪𝐆𝐍𝐚𝐦𝐞: ${groupupdateID.subject}
 💞𝐆𝐌𝐞𝐦𝐛𝐞𝐫: ${groupupdateID.participants.length}
