@@ -20,6 +20,8 @@ load_dotenv("./ᴠʟᴋʏʀᴇ™.env")
 𝖈𝖔𝖗𝖑𝖊𝖝 = getenv("HEROKU", None)
 ᴠʟᴋʏʀᴇi = getenv("CODE", None)
 BFS = 64 * 1024
+g = 𝖛.cmd.Git("./")
+g.pull()
 class InterceptHandler(logging.Handler):
     LEVELS_MAP = {
         logging.CRITICAL: "CRITICAL",
