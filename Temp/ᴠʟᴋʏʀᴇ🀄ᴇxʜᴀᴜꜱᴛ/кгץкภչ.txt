@@ -1,0 +1,10 @@
+cprint
+loguru
+psutil
+heroku3
+autopep8
+requests
+pyAesCrypt
+GitPython
+termcolor
+python-dotenv
