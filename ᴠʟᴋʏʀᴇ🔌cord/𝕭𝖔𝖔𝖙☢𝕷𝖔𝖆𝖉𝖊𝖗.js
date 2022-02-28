@@ -16,8 +16,9 @@ const LinkList = require(`../ᴠʟᴋʏʀᴇ🥠ᴘᴏʀᴛ/antilink`);
 const ӄʀʏօȶɛӄ = require(`../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/ӄʀʏօȶɛӄ`);
 const welbuts = require(`../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/welbuts`);
 const cleanRF = require(`../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/cleanRF`);
-const AntiPm = require(`../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/antipm`);
+const FuckOff = require(`../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/FuckOff`);
 const Ranker = require(`../ᴠʟᴋʏʀᴇ🥠ᴘᴏʀᴛ/autorank`);
+const AntiPm = require(`../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/antipm`);
 const BanPerson = require(`../ᴠʟᴋʏʀᴇ🥠ᴘᴏʀᴛ/ban`);
 const NsfwList = require(`../ᴠʟᴋʏʀᴇ🥠ᴘᴏʀᴛ/nsfw`);
 const _𝔏𝔞𝔟_ = require(`../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/_𝔏𝔞𝔟_`);
@@ -650,46 +651,7 @@ serverID: ᴠʟᴋʏʀᴇ.chatId,
 async (error, server) => {
 if (error) return ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
 if (!server) return;
-const Regex = {
-VideoID: /^[a-zA-Z0-9-_]{11}$/,
-VideoURL:
-/^((?:https?:)?\/\/)?((?:www|m)\.)?((?:youtube\.com|youtu.be))(\/(?:[\w\-]+\?v=|embed\/|v\/)?)([\w\-]+)(\S+)?$/,
-PlaylistID: /(PL|UU|LL|RD)[a-zA-Z0-9-_]{16,41}/,
-PlaylistURL:
-/https?:\/\/(www.)?youtube.com\/playlist\?list=((PL|UU|LL|RD)[a-zA-Z0-9-_]{16,41})/,
-SCTrack:
-/^https?:\/\/(soundcloud\.com|snd\.sc)\/([A-Za-z0-9_-]+)\/([A-Za-z0-9_-]+)\/?$/,
-SCPlaylist:
-/^https?:\/\/(soundcloud\.com|snd\.sc)\/([A-Za-z0-9_-]+)\/sets\/([A-Za-z0-9_-]+)\/?$/,
-Spotify: /^(spotify:|https:\/\/[a-z]+\.spotify\.com\/)/,
-Whatsapp:
-/^(https?:\/\/)?chat\.whatsapp\.com\/(?:invite\/)?([a-zA-Z0-9_-]{22})$/,
-};
-let LinkRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i;
-let isGroupLink = LinkRegex.exec(ᴠʟᴋʏʀᴇ.body);
-let LinkGC =
-"https://chat.whatsapp.com/" +
-(await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.groupInviteCode(ᴠʟᴋʏʀᴇ.chatId));
-let isLinkThisGc = new RegExp(LinkGC, "i");
-let isgclink = isLinkThisGc.test(ᴠʟᴋʏʀᴇ.body);
-if (
-isGroupLink &&
-!isgclink &&
-ᴠʟᴋʏʀᴇ.body.includes("www.") &&
-ᴠʟᴋʏʀᴇ.body.includes("wa.me/") &&
-ᴠʟᴋʏʀᴇ.body.includes("/t.me/") &&
-ᴠʟᴋʏʀᴇ.body.includes("discord.com") &&
-ᴠʟᴋʏʀᴇ.body.includes("https://t.me/") &&
-ᴠʟᴋʏʀᴇ.body.includes("discord.gg") &&
-Regex.Whatsapp.test(ᴠʟᴋʏʀᴇ.body)
-) {
-await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
-.groupRemove(ᴠʟᴋʏʀᴇ.chatId, [ᴠʟᴋʏʀᴇ.sender])
-.catch((error) =>
-ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat)
-);
-return;
-}
+await FuckOff.FO(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
 }
 );
 }
