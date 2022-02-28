@@ -165,7 +165,7 @@ oldd = performance.now();
 // .sendMessage(
 // BrdId,
 // {
-// contentText: `*𝐕𝐥𝐤𝐲𝐫𝐞💡𝐎𝐧𝐥𝐢𝐧𝐞*
+// contentText: `𝐕𝐥𝐤𝐲𝐫𝐞💡𝐎𝐧𝐥𝐢𝐧𝐞
 // ⚙️ 𝐕𝐞𝐫𝐬𝐢𝐨𝐧: *Old:* _${vers.verold}_ | *New:* _${vers.vers}_
 // 🛰️ 𝐖𝐞𝐛𝐬𝐢𝐭𝐞: https://KrakinzLab-Vlkyre.krakinzkon.repl.co`,
 // footerText: `\n❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❞\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
@@ -198,15 +198,13 @@ Kolor.greenBright.bgBlack(`お 👑𝐔𝐬𝐞𝐫: ${
 } ꧂
 
 🛰️ 𝐖𝐞𝐛𝐬𝐢𝐭𝐞: https://KrakinzLab-Vlkyre.krakinzkon.repl.co
-╔⧉༻ *𝐕𝐥𝐤𝐲𝐫𝐞💡𝐎𝐧𝐥𝐢𝐧𝐞*
-║
-║🛰️ 𝐋𝐚𝐭𝐞𝐧𝐜𝐲: ${Ping}ms
-║📅 𝐃𝐚𝐭𝐞: ${Clock}
-║⚙️ 𝐕𝐞𝐫𝐬𝐢𝐨𝐧: Old: ${vers.verold} | New: ${vers.vers}
-║💻 𝐏𝐥𝐚𝐭𝐟𝐨𝐫𝐦: ${os.platform()}
-║🎮 𝐑𝐀𝐌: ${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}
-╚════════════╝`)
-);
+
+𝐕𝐥𝐤𝐲𝐫𝐞💡𝐎𝐧𝐥𝐢𝐧𝐞
+🛰️𝐋𝐚𝐭𝐞𝐧𝐜𝐲: ${Ping}ms
+📅𝐃𝐚𝐭𝐞: ${Clock}
+⚙️𝐕𝐞𝐫𝐬𝐢𝐨𝐧: Old: ${vers.verold} | New: ${vers.vers}
+💻𝐏𝐥𝐚𝐭𝐟𝐨𝐫𝐦: ${os.platform()}
+🎮𝐑𝐀𝐌: ${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}`));
 await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .sendMessage(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.user.jid,
@@ -219,14 +217,14 @@ contentText: `お 👑𝐔𝐬𝐞𝐫: ${
 } ꧂
 
 🛰️ 𝐖𝐞𝐛𝐬𝐢𝐭𝐞: _https://KrakinzLab-Vlkyre.krakinzkon.repl.co_
-╔⧉༻ *𝐕𝐥𝐤𝐲𝐫𝐞💡𝐎𝐧𝐥𝐢𝐧𝐞*
-║
-║🛰️ 𝐋𝐚𝐭𝐞𝐧𝐜𝐲: _${Ping}ms_
-║📅 𝐃𝐚𝐭𝐞: _${Clock}_
-║⚙️ 𝐕𝐞𝐫𝐬𝐢𝐨𝐧: *Old:* _${vers.verold}_ | *New:* _${vers.vers}_
-║💻 𝐏𝐥𝐚𝐭𝐟𝐨𝐫𝐦: _${os.platform()}_
-║☕ 𝐔𝐩𝐓𝐢𝐦𝐞: _${runtime(process.uptime())}_
-║🎮 𝐑𝐀𝐌: _${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}_
+
+𝐕𝐥𝐤𝐲𝐫𝐞💡𝐎𝐧𝐥𝐢𝐧𝐞
+🛰️ 𝐋𝐚𝐭𝐞𝐧𝐜𝐲: _${Ping}ms_
+📅 𝐃𝐚𝐭𝐞: _${Clock}_
+⚙️ 𝐕𝐞𝐫𝐬𝐢𝐨𝐧: *Old:* _${vers.verold}_ | *New:* _${vers.vers}_
+💻 𝐏𝐥𝐚𝐭𝐟𝐨𝐫𝐦: _${os.platform()}_
+☕ 𝐔𝐩𝐓𝐢𝐦𝐞: _${runtime(process.uptime())}_
+🎮 𝐑𝐀𝐌: _${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}_
 ╚════════════╝`,
 footerText: `\n❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❞\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
 buttons: [
