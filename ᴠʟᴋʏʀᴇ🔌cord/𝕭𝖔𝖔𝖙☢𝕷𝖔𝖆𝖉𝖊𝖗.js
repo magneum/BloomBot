@@ -265,7 +265,7 @@ caption: `\n❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❞\nᴘʏᴛʜᴏɴ �
 🛰️ 𝐖𝐞𝐛𝐬𝐢𝐭𝐞: _https://KrakinzLab-Vlkyre.krakinzkon.repl.co_
 
 
-🛸 *Attention Here Everyone In the Group!🛸*
+🛸*Attention Here Everyone In the Group!🛸*
 ⛺𝐆𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _Open For All_
 🎪𝐆𝐍𝐚𝐦𝐞: ${groupupdateID.subject}
 💞𝐆𝐌𝐞𝐦𝐛𝐞𝐫: ${groupupdateID.participants.length}`,
@@ -281,13 +281,11 @@ mimetype: Mimetype.png,
 caption: `\n❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❞\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™
 🛰️ 𝐖𝐞𝐛𝐬𝐢𝐭𝐞: _https://KrakinzLab-Vlkyre.krakinzkon.repl.co_
 
-╔═══════༻꧂
-║🛸 *Attention Here Everyone In the Group!🛸*
+
+🛸*Attention Here Everyone In the Group!🛸*
 ⛺𝐆𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _Admins-Only_
 🎪𝐆𝐍𝐚𝐦𝐞: ${groupupdateID.subject}
-💞𝐆𝐌𝐞𝐦𝐛𝐞𝐫: ${groupupdateID.participants.length}
-╚════════════╝`,
-})
+💞𝐆𝐌𝐞𝐦𝐛𝐞𝐫: ${groupupdateID.participants.length}`,})
 .catch((error) => console.log(error));
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 /*              (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!*/
@@ -305,14 +303,14 @@ vers.vers
 }⌟\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™
 🛰️ 𝐖𝐞𝐛𝐬𝐢𝐭𝐞: _https://KrakinzLab-Vlkyre.krakinzkon.repl.co_
 
-╔═══════༻꧂
-║🛸 *Attention Here Everyone In the Group!🛸*
+
+🛸*Attention Here Everyone In the Group!🛸*
 ⛺𝐆𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _New Description Added_
 🎪𝐆𝐍𝐚𝐦𝐞: ${groupupdateID.subject}
 💞𝐆𝐌𝐞𝐦𝐛𝐞𝐫: ${groupupdateID.participants.length}
-║🍌 𝐂𝐡𝐚𝐧𝐠𝐞𝐝-𝐁𝐲: @${update.descOwner.split(`@`)[0]}
-╚════════════╝
-༻꧂━━━━━༻꧂ 𝐍𝐞𝐰 𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧 ༻꧂━━━━━༻꧂
+🍌𝐂𝐡𝐚𝐧𝐠𝐞𝐝 𝐁𝐲: @${update.descOwner.split(`@`)[0]}
+
+𝐍𝐞𝐰 𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧꧂
 ${update.desc}`,
 })
 .catch((error) => console.log(error));
@@ -328,13 +326,12 @@ vers.vers
 }⌟\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™
 🛰️ 𝐖𝐞𝐛𝐬𝐢𝐭𝐞: _https://KrakinzLab-Vlkyre.krakinzkon.repl.co_
 
-╔═══════༻꧂
-║🛸 *Attention Here Everyone In the Group!🛸*
+
+🛸*Attention Here Everyone In the Group!🛸*
 ⛺𝐆𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _Info Edit Allowed For All_
 🎪𝐆𝐍𝐚𝐦𝐞: ${groupupdateID.subject}
 💞𝐆𝐌𝐞𝐦𝐛𝐞𝐫: ${groupupdateID.participants.length}
-║🍌 𝐂𝐡𝐚𝐧𝐠𝐞𝐝-𝐁𝐲: @${update.descOwner.split(`@`)[0]}
-╚════════════╝`,
+🍌𝐂𝐡𝐚𝐧𝐠𝐞𝐝 𝐁𝐲: @${update.descOwner.split(`@`)[0]}`,
 })
 .catch((error) => console.log(error));
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
@@ -349,13 +346,12 @@ vers.vers
 }⌟\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™
 🛰️ 𝐖𝐞𝐛𝐬𝐢𝐭𝐞: _https://KrakinzLab-Vlkyre.krakinzkon.repl.co_
 
-╔═══════༻꧂
-║🛸 *Attention Here Everyone In the Group!🛸*
+
+🛸*Attention Here Everyone In the Group!🛸*
 ⛺𝐆𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _Info Edit Admins-Only_
 🎪𝐆𝐍𝐚𝐦𝐞: ${groupupdateID.subject}
 💞𝐆𝐌𝐞𝐦𝐛𝐞𝐫: ${groupupdateID.participants.length}
-║🍌 𝐂𝐡𝐚𝐧𝐠𝐞𝐝-𝐁𝐲: @${update.descOwner.split(`@`)[0]}
-╚════════════╝`,
+🍌𝐂𝐡𝐚𝐧𝐠𝐞𝐝 𝐁𝐲: @${update.descOwner.split(`@`)[0]}`,
 })
 .catch((error) => console.log(error));
 }
