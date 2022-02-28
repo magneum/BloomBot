@@ -24,7 +24,7 @@ shell.exit(1);
 }
 if (
 shell.exec(
-`git pull && git add --all && git commit -am "❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ : v${
+`git pull && git add --all && git commit -am "❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ : ${
 vers.vers
 } 🦋 𝐃𝐚𝐭𝐞: ${
 year +
