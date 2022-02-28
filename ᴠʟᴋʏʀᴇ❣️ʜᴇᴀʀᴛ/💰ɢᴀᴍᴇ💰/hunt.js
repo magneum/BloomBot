@@ -239,15 +239,14 @@ if (error) {
 chat,
 ᴠʟᴋʏʀᴇ,
 `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
-
 ╔◇══════════════◇╗
 ┊ 𝐏𝐨𝐤𝐞𝐦𝐨𝐧🦋𝐇𝐮𝐧𝐭𝐢𝐧𝐠
 ┊ 𝐌𝐢𝐧𝐞𝐜𝐫𝐚𝐟𝐭 🪵 𝐄𝐝𝐢𝐭𝐢𝐨𝐧
-╚◇╗
-╔◇╝ 
-║💫 *Name:* _Caught Nothing!_
-║🪙 *Worth:* _0gold_
-╚════════════╝`,
+╚◇══════════════◇╝
+
+
+💫 *Name:* _Caught Nothing!_
+🪙 *Worth:* _0gold_`,
 _𝔏𝔞𝔟_.RCLR
 );
 await userEco
@@ -279,17 +278,17 @@ caption: `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
 ╔◇══════════════◇╗
 ┊ 𝐏𝐨𝐤𝐞𝐦𝐨𝐧🦋𝐇𝐮𝐧𝐭𝐢𝐧𝐠
 ┊ 𝐌𝐢𝐧𝐞𝐜𝐫𝐚𝐟𝐭 🪵 𝐄𝐝𝐢𝐭𝐢𝐨𝐧
-╚◇╗
-╔◇╝ 💫 *Name:* _${PokemonData.name}_
-║🪙 *Worth:* _${Worth}gold_
-║〽️ *Pokedex ID:* _${PokemonData.id}_
-╚◇╗
-╔◇╝ 𝐓𝐨 𝐋𝐞𝐚𝐫𝐧 𝐌𝐨𝐫𝐞👇🏻
-║💫 *Type:* _${ᴋᴇɪ}pokedex ${PokemonData.name}_
-║💫 *Type:* _${ᴋᴇɪ}pokemon ${PokemonData.name}_
-╚════════════╝
+╚◇══════════════◇╝
 
-\n❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❞\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+💫 *Name:* _${PokemonData.name}_
+🪙 *Worth:* _${Worth}gold_
+〽️ *Pokedex ID:* _${PokemonData.id}_
+
+𝐓𝐨 𝐋𝐞𝐚𝐫𝐧 𝐌𝐨𝐫𝐞👇🏻
+💫 *Type:* _${ᴋᴇɪ}pokedex ${PokemonData.name}_
+💫 *Type:* _${ᴋᴇɪ}pokemon ${PokemonData.name}_
+
+❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❞\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
 contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
 }
 )
