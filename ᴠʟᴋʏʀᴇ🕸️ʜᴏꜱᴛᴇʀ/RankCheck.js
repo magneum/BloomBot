@@ -81,7 +81,7 @@ const rank = new canvacord.Rank()
 .setStatus("online")
 .setBackground("IMAGE", Img)
 .setProgressBar(color, "COLOR")
-.setUsername("Auto Ranker!")
+.setUsername("Ranker!")
 .setDiscriminator(աɦօֆɛ);
 rank.build().then(async (data) => {
 fs.writeFile(expFile, data, async (error) => {

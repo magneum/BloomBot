@@ -170,7 +170,7 @@ contentText: `お 👑𝐔𝐬𝐞𝐫: ${
 𝐕𝐥𝐤𝐲𝐫𝐞💡𝐎𝐧𝐥𝐢𝐧𝐞
 🛰️𝐋𝐚𝐭𝐞𝐧𝐜𝐲: _${Ping}ms_
 📅𝐃𝐚𝐭𝐞: _${Clock}_
-⚙️𝐕𝐞𝐫𝐬𝐢𝐨𝐧: *Old:* _${vers.verold}_ | *New:* _${vers.vers}_
+⚙️𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_
 💻𝐏𝐥𝐚𝐭𝐟𝐨𝐫𝐦: _${os.platform()}_
 ☕𝐔𝐩𝐓𝐢𝐦𝐞: _${runtime(process.uptime())}_
 🎮𝐑𝐀𝐌: _${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}_`,
@@ -208,8 +208,9 @@ await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 BrdId,
 {
 contentText: `𝐕𝐥𝐤𝐲𝐫𝐞💡𝐎𝐧𝐥𝐢𝐧𝐞
-⚙️ 𝐕𝐞𝐫𝐬𝐢𝐨𝐧: *Old:* _${vers.verold}_ | *New:* _${vers.vers}_
-🛰️ 𝐖𝐞𝐛𝐬𝐢𝐭𝐞: https://KrakinzLab-Vlkyre.krakinzkon.repl.co`,
+☕𝐔𝐩𝐓𝐢𝐦𝐞: _${runtime(process.uptime())}_
+⚙️𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_
+🛰️𝐖𝐞𝐛𝐬𝐢𝐭𝐞: https://KrakinzLab-Vlkyre.krakinzkon.repl.co`,
 footerText: `\n❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❞\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
 buttons: [
 {
@@ -245,9 +246,6 @@ return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .sendMessage(groupupdateID.id, { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 }, MessageType.image, {
 mimetype: Mimetype.png,
 caption: `❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❞\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™
-🦋𝐕𝐥𝐤𝐲𝐫𝐞: _Is an Advance Whatsapp User-Bot!_
-🛰️𝐖𝐞𝐛𝐬𝐢𝐭𝐞/𝐆𝐢𝐭𝐡𝐮𝐛: _https://KrakinzLab-Vlkyre.krakinzkon.repl.co_
-
 
 ⚡ 𝐀𝐭𝐭𝐞𝐧𝐭𝐢𝐨𝐧 𝐇𝐞𝐫𝐞 𝐄𝐯𝐞𝐫𝐲𝐨𝐧𝐞 𝐈𝐧 𝐭𝐡𝐞 𝐆𝐫𝐨𝐮𝐩! ⚡
 ⛺𝐆𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _Open For All_
@@ -263,9 +261,6 @@ return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .sendMessage(groupupdateID.id, { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 }, MessageType.image, {
 mimetype: Mimetype.png,
 caption: `❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❞\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™
-🦋𝐕𝐥𝐤𝐲𝐫𝐞: _Is an Advance Whatsapp User-Bot!_
-🛰️𝐖𝐞𝐛𝐬𝐢𝐭𝐞/𝐆𝐢𝐭𝐡𝐮𝐛: _https://KrakinzLab-Vlkyre.krakinzkon.repl.co_
-
 
 ⚡ 𝐀𝐭𝐭𝐞𝐧𝐭𝐢𝐨𝐧 𝐇𝐞𝐫𝐞 𝐄𝐯𝐞𝐫𝐲𝐨𝐧𝐞 𝐈𝐧 𝐭𝐡𝐞 𝐆𝐫𝐨𝐮𝐩! ⚡
 ⛺𝐆𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _Admins-Only_
@@ -287,9 +282,6 @@ mentionedJid: [tag],
 caption: `❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${
 vers.vers
 } ❞\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™
-🦋𝐕𝐥𝐤𝐲𝐫𝐞: _Is an Advance Whatsapp User-Bot!_
-🛰️𝐖𝐞𝐛𝐬𝐢𝐭𝐞/𝐆𝐢𝐭𝐡𝐮𝐛: _https://KrakinzLab-Vlkyre.krakinzkon.repl.co_
-
 
 ⚡ 𝐀𝐭𝐭𝐞𝐧𝐭𝐢𝐨𝐧 𝐇𝐞𝐫𝐞 𝐄𝐯𝐞𝐫𝐲𝐨𝐧𝐞 𝐈𝐧 𝐭𝐡𝐞 𝐆𝐫𝐨𝐮𝐩! ⚡
 ⛺𝐆𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _New Description Added_
@@ -297,7 +289,7 @@ vers.vers
 💞𝐆𝐌𝐞𝐦𝐛𝐞𝐫: ${groupupdateID.participants.length}
 🍌𝐂𝐡𝐚𝐧𝐠𝐞𝐝 𝐁𝐲: @${update.descOwner.split(`@`)[0]}
 
-𝐍𝐞𝐰 𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧꧂
+𝐍𝐞𝐰 𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧
 ${update.desc}`,
 })
 .catch((error) => console.log(error));
@@ -311,9 +303,6 @@ mimetype: Mimetype.png,
 caption: `❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${
 vers.vers
 } ❞\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™
-🦋𝐕𝐥𝐤𝐲𝐫𝐞: _Is an Advance Whatsapp User-Bot!_
-🛰️𝐖𝐞𝐛𝐬𝐢𝐭𝐞/𝐆𝐢𝐭𝐡𝐮𝐛: _https://KrakinzLab-Vlkyre.krakinzkon.repl.co_
-
 
 ⚡ 𝐀𝐭𝐭𝐞𝐧𝐭𝐢𝐨𝐧 𝐇𝐞𝐫𝐞 𝐄𝐯𝐞𝐫𝐲𝐨𝐧𝐞 𝐈𝐧 𝐭𝐡𝐞 𝐆𝐫𝐨𝐮𝐩! ⚡
 ⛺𝐆𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _Info Edit Allowed For All_
@@ -332,9 +321,6 @@ mimetype: Mimetype.png,
 caption: `❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${
 vers.vers
 } ❞\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™
-🦋𝐕𝐥𝐤𝐲𝐫𝐞: _Is an Advance Whatsapp User-Bot!_
-🛰️𝐖𝐞𝐛𝐬𝐢𝐭𝐞/𝐆𝐢𝐭𝐡𝐮𝐛: _https://KrakinzLab-Vlkyre.krakinzkon.repl.co_
-
 
 ⚡ 𝐀𝐭𝐭𝐞𝐧𝐭𝐢𝐨𝐧 𝐇𝐞𝐫𝐞 𝐄𝐯𝐞𝐫𝐲𝐨𝐧𝐞 𝐈𝐧 𝐭𝐡𝐞 𝐆𝐫𝐨𝐮𝐩! ⚡
 ⛺𝐆𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _Info Edit Admins-Only_
@@ -521,17 +507,14 @@ await ᴠʟᴋʏʀᴇ_Buttons.MIB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 ᴠʟᴋʏʀᴇ,
-`*『@${ᴘɴᴀᴍᴇ}』*
-⏳ 𝗧𝗶𝗺𝗲: _Offline For 10s-20s_
-🦋𝐕𝐥𝐤𝐲𝐫𝐞: _Is an Advance Whatsapp User-Bot!_
-🛰️𝐖𝐞𝐛𝐬𝐢𝐭𝐞/𝐆𝐢𝐭𝐡𝐮𝐛: _https://KrakinzLab-Vlkyre.krakinzkon.repl.co_
+`*『@${ᴘɴᴀᴍᴇ}』* _Offline For 10s-20s_
 
 𝐕𝐥𝐤𝐲𝐫𝐞💡𝐔𝐩𝐝𝐚𝐭𝐢𝐧𝐠
 🍯𝗦𝘁𝗮𝘁𝘂𝘀: _Update Pending!_
 🔥𝗡𝗲𝘄 𝗖𝗼𝗺𝗺𝗶𝘁𝘀: _${newCommits.total}_
 🛰️𝐋𝐚𝐭𝐞𝐧𝐜𝐲: _${Ping}ms_
 📅𝐃𝐚𝐭𝐞: _${Clock}_
-⚙️𝐕𝐞𝐫𝐬𝐢𝐨𝐧: *Old:* _${vers.verold}_ | *New:* _${vers.vers}_`,
+⚙️𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_`,
 "./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_res.png"
 );
 /*
@@ -1016,8 +999,7 @@ if (
 const buttonMessage = {
 contentText: `*『@${ᴘɴᴀᴍᴇ}』*
 
-🤖𝐕𝐞𝐫𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧: You Are Not Verified!
-𝐏𝐫𝐞𝐬𝐬 𝐁𝐞𝐥𝐨𝐰 𝐓𝐨 𝐕𝐞𝐫𝐢𝐟𝐲`,
+🤖𝐕𝐞𝐫𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧: _You Are Not Verified!_`,
 footerText: `\n❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❞\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
 buttons: [
 {
@@ -1076,9 +1058,9 @@ joinRight: `┤`,
 joinJoin: `┼`,
 },
 };
-console.log(Kolor.yellow("|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|"));
+console.log(Kolor.yellow("⬡════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞"));
 console.log(chat);
-console.log(Kolor.yellow("|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|"));
+console.log(Kolor.yellow("⬡════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞"));
 // console.log(table(data, config));
 return ᴍɪᴢᴜᴋɪᴄᴏᴍᴍᴀɴᴅ.handle(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
