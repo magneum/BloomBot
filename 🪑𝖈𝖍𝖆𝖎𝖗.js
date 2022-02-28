@@ -21,7 +21,7 @@ if (command.name) {
 VlkyreTable.addRow("⚡", Kolor.greenBright(command.name.toUpperCase()));
 const result = require("child_process").spawn("python", ["-c",
 `from InfoUp import my_func
-my_func("${command.name.toUpperCase()}", "${command.ᴠʟᴋʏʀᴇӄǟɨʐօ || "not needed"}")`,]);
+my_func("""${command.name.toUpperCase()}""", """${command.ᴠʟᴋʏʀᴇӄǟɨʐօ || "not needed"}"""")`,]);
 result.stdout.pipe(process.stdout);
 result.stderr.pipe(process.stderr);
 } else {
