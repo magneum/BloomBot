@@ -92,63 +92,8 @@ GroupID,
 {
 contentText: `*『@${ᴘᴘᴡᴇʟᴄᴏᴍᴇ}』*
 ꧁◇══════════════◇꧂
-🥞𝐖𝐞𝐥𝐜𝐨𝐦𝐞🥞
+      🥞𝐖𝐞𝐥𝐜𝐨𝐦𝐞🥞
 ꧁◇══════════════◇꧂
-
-╔══◇꧂
-║${FlowerWel} 𝗕𝗶𝗼: ${GroupMemBio.status}
-║${PeopleWel} 𝐌𝐞𝐦𝐛𝐞𝐫𝐳: ${GroupMemG}
-║🎪 𝐆𝐫𝐨𝐮𝐩: ${GroupMemData.subject}
-╚════════════╝
-
-${Message}`,
-footerText: `\n❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❞\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
-buttons: [
-{
-buttonId: `${ᴋᴇɪ}getdesc`,
-buttonText: { displayText: `${ᴋᴇɪ}getdesc` },
-type: 1,
-},
-{
-buttonId: `${ᴋᴇɪ}help`,
-buttonText: { displayText: `${ᴋᴇɪ}help` },
-type: 1,
-},
-{
-buttonId: `${ᴋᴇɪ}verify`,
-buttonText: { displayText: `${ᴋᴇɪ}verify` },
-type: 1,
-},
-],
-headerType: 4,
-imageMessage: media.message.imageMessage,
-},
-MessageType.buttonsMessage,
-{
-contextInfo: { mentionedJid: [MemNum] },
-}
-)
-.catch((error) => console.log(error));
-return await cleanRF.cleanRF(`./${Date.now().toString()}.png`);
-} catch (error) {
-const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
-GroupID,
-{ url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 },
-MessageType.image,
-{
-mimetype: Mimetype.png,
-}
-);
-await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
-.sendMessage(
-GroupID,
-{
-contentText: `*『@${ᴘᴘᴡᴇʟᴄᴏᴍᴇ}』*
-꧁◇══════════════◇꧂
-🥞𝐖𝐞𝐥𝐜𝐨𝐦𝐞🥞
-꧁◇══════════════◇꧂
-
-
 ${FlowerWel} 𝗕𝗶𝗼: ${GroupMemBio.status}
 ${PeopleWel} 𝐌𝐞𝐦𝐛𝐞𝐫𝐳: ${GroupMemG}
 🎪 𝐆𝐫𝐨𝐮𝐩: ${GroupMemData.subject}
@@ -166,9 +111,52 @@ buttonId: `${ᴋᴇɪ}help`,
 buttonText: { displayText: `${ᴋᴇɪ}help` },
 type: 1,
 },
+],
+headerType: 4,
+imageMessage: media.message.imageMessage,
+},
+MessageType.buttonsMessage,
 {
-buttonId: `${ᴋᴇɪ}verify`,
-buttonText: { displayText: `${ᴋᴇɪ}verify` },
+contextInfo: { mentionedJid: [MemNum] },
+}
+)
+.catch((error) => console.log(error));
+return await cleanRF.cleanRF(`./${Date.now().toString()}.png`);
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
+/*              (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!*/
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
+} catch (error) {
+const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
+GroupID,
+{ url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 },
+MessageType.image,
+{
+mimetype: Mimetype.png,
+}
+);
+await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
+.sendMessage(
+GroupID,
+{
+contentText: `*『@${ᴘᴘᴡᴇʟᴄᴏᴍᴇ}』*
+꧁◇══════════════◇꧂
+      🥞𝐖𝐞𝐥𝐜𝐨𝐦𝐞🥞
+꧁◇══════════════◇꧂
+${FlowerWel} 𝗕𝗶𝗼: ${GroupMemBio.status}
+${PeopleWel} 𝐌𝐞𝐦𝐛𝐞𝐫𝐳: ${GroupMemG}
+🎪 𝐆𝐫𝐨𝐮𝐩: ${GroupMemData.subject}
+
+${Message}`,
+footerText: `\n❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❞\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+buttons: [
+{
+buttonId: `${ᴋᴇɪ}getdesc`,
+buttonText: { displayText: `${ᴋᴇɪ}getdesc` },
+type: 1,
+},
+{
+buttonId: `${ᴋᴇɪ}help`,
+buttonText: { displayText: `${ᴋᴇɪ}help` },
 type: 1,
 },
 ],

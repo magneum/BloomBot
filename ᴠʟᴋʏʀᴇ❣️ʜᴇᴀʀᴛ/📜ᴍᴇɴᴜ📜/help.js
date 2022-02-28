@@ -91,33 +91,35 @@ return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 {
 contentText: `*『@${ᴘɴᴀᴍᴇ}』*
 🦋𝐕𝐥𝐤𝐲𝐫𝐞: _Is an Advance Whatsapp User-Bot!_
-🛰️𝐖𝐞𝐛𝐬𝐢𝐭𝐞/𝐆𝐢𝐭𝐡𝐮𝐛: _https://KrakinzLab-Vlkyre.krakinzkon.repl.co_
 
 🥷𝐔𝐬𝐞𝐫: _${ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.user.notify ||ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.user.vname ||ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.user.name ||ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.user.jid.split("@")[0]}_
 🔒𝐒𝐭𝐚𝐭𝐮𝐬: _Is Online!_
 🛰️𝐋𝐚𝐭𝐞𝐧𝐜𝐲: _${Ping}ms_
 📅𝐃𝐚𝐭𝐞: _${Clock}_
-⚙️𝐕𝐞𝐫𝐬𝐢𝐨𝐧: *Old:* _${vers.verold}_ | *New:* _${vers.vers}_
+⚙️𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_
 
-╔⧉༻🤪𝐅𝐨𝐫 𝐄𝐯𝐞𝐫𝐲𝐨𝐧𝐞
-║🍣${ᴋᴇɪ}animemenu
-║💰${ᴋᴇɪ}gamemenu
-║⭕${ᴋᴇɪ}ytfiltermenu
-║📥${ᴋᴇɪ}downloadmenu
-║🔰${ᴋᴇɪ}groupmenu
-║🦄${ᴋᴇɪ}randommenu
-║🔎${ᴋᴇɪ}searchmenu
-║🗂️${ᴋᴇɪ}ffmpegmenu
-║🍰${ᴋᴇɪ}filtersmenu
-║🎨${ᴋᴇɪ}checkmenu
-╚════════════╝
+🧀𝐍𝐨 𝐑𝐞𝐬𝐭𝐫𝐢𝐜𝐭𝐢𝐨𝐧🧀
+꧁◇════════════◇꧂
+🍣 ${ᴋᴇɪ}animemenu
+💰 ${ᴋᴇɪ}gamemenu
+⭕ ${ᴋᴇɪ}ytfiltermenu
+📥 ${ᴋᴇɪ}downloadmenu
+🔰 ${ᴋᴇɪ}groupmenu
+🦄 ${ᴋᴇɪ}randommenu
+🔎 ${ᴋᴇɪ}searchmenu
+🗂️ ${ᴋᴇɪ}ffmpegmenu
+🍰 ${ᴋᴇɪ}filtersmenu
+🎨 ${ᴋᴇɪ}checkmenu
 
-╔⧉༻⚜️𝐀𝐝𝐦𝐢𝐧/𝐎𝐰𝐧𝐞𝐫 𝐎𝐧𝐥𝐲 
-║🔰${ᴋᴇɪ}groupmenu
-║🐙${ᴋᴇɪ}ownermenu
-║🍄${ᴋᴇɪ}hentaimenu
-║🥃${ᴋᴇɪ}humanmenu
-╚════════════╝`,
+
+⚜️𝐀𝐝𝐦𝐢𝐧/𝐎𝐰𝐧𝐞𝐫 𝐎𝐧𝐥𝐲 ⚜️
+꧁◇════════════◇꧂
+🔰 ${ᴋᴇɪ}groupmenu
+🐙 ${ᴋᴇɪ}ownermenu
+🍄 ${ᴋᴇɪ}hentaimenu
+🥃 ${ᴋᴇɪ}humanmenu
+
+🛰️𝐖𝐞𝐛𝐬𝐢𝐭𝐞/𝐆𝐢𝐭𝐡𝐮𝐛: _https://KrakinzLab-Vlkyre.krakinzkon.repl.co_`,
 footerText: `\n❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❞\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
 buttons: [
 {
@@ -128,11 +130,6 @@ type: 1,
 {
 buttonId: `${ᴋᴇɪ}rules`,
 buttonText: { displayText: `${ᴋᴇɪ}rules` },
-type: 1,
-},
-{
-buttonId: `${ᴋᴇɪ}vlkyre`,
-buttonText: { displayText: `${ᴋᴇɪ}vlkyre` },
 type: 1,
 },
 ],
