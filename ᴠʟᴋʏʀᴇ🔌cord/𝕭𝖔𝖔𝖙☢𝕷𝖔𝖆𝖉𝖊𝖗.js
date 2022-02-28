@@ -197,6 +197,7 @@ Kolor.greenBright.bgBlack(`お 👑𝐔𝐬𝐞𝐫: ${
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.user.jid.split("@")[0]
 } ꧂
 
+🦋𝐕𝐥𝐤𝐲𝐫𝐞: _Is an Advance Whatsapp User-Bot!_
 🛰️ 𝐖𝐞𝐛𝐬𝐢𝐭𝐞: https://KrakinzLab-Vlkyre.krakinzkon.repl.co
 
 𝐕𝐥𝐤𝐲𝐫𝐞💡𝐎𝐧𝐥𝐢𝐧𝐞
@@ -216,16 +217,16 @@ contentText: `お 👑𝐔𝐬𝐞𝐫: ${
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.user.jid.split("@")[0]
 } ꧂
 
+🦋𝐕𝐥𝐤𝐲𝐫𝐞: _Is an Advance Whatsapp User-Bot!_
 🛰️ 𝐖𝐞𝐛𝐬𝐢𝐭𝐞: _https://KrakinzLab-Vlkyre.krakinzkon.repl.co_
 
 𝐕𝐥𝐤𝐲𝐫𝐞💡𝐎𝐧𝐥𝐢𝐧𝐞
-🛰️ 𝐋𝐚𝐭𝐞𝐧𝐜𝐲: _${Ping}ms_
-📅 𝐃𝐚𝐭𝐞: _${Clock}_
-⚙️ 𝐕𝐞𝐫𝐬𝐢𝐨𝐧: *Old:* _${vers.verold}_ | *New:* _${vers.vers}_
-💻 𝐏𝐥𝐚𝐭𝐟𝐨𝐫𝐦: _${os.platform()}_
-☕ 𝐔𝐩𝐓𝐢𝐦𝐞: _${runtime(process.uptime())}_
-🎮 𝐑𝐀𝐌: _${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}_
-╚════════════╝`,
+🛰️𝐋𝐚𝐭𝐞𝐧𝐜𝐲: _${Ping}ms_
+📅𝐃𝐚𝐭𝐞: _${Clock}_
+⚙️𝐕𝐞𝐫𝐬𝐢𝐨𝐧: *Old:* _${vers.verold}_ | *New:* _${vers.vers}_
+💻𝐏𝐥𝐚𝐭𝐟𝐨𝐫𝐦: _${os.platform()}_
+☕𝐔𝐩𝐓𝐢𝐦𝐞: _${runtime(process.uptime())}_
+🎮𝐑𝐀𝐌: _${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}_`,
 footerText: `\n❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❞\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
 buttons: [
 {
@@ -263,12 +264,11 @@ mimetype: Mimetype.png,
 caption: `\n❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❞\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™
 🛰️ 𝐖𝐞𝐛𝐬𝐢𝐭𝐞: _https://KrakinzLab-Vlkyre.krakinzkon.repl.co_
 
-╔═══════༻꧂
-║🛸 *Attention Here Everyone In the Group!🛸*
-║⛺ 𝐆𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _Open For All_
-║🎪 𝐆𝐍𝐚𝐦𝐞: ${groupupdateID.subject}
-║💞 𝐆𝐌𝐞𝐦𝐛𝐞𝐫: ${groupupdateID.participants.length}
-╚════════════╝`,
+
+🛸 *Attention Here Everyone In the Group!🛸*
+⛺𝐆𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _Open For All_
+🎪𝐆𝐍𝐚𝐦𝐞: ${groupupdateID.subject}
+💞𝐆𝐌𝐞𝐦𝐛𝐞𝐫: ${groupupdateID.participants.length}`,
 })
 .catch((error) => console.log(error));
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
@@ -283,9 +283,9 @@ caption: `\n❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❞\nᴘʏᴛʜᴏɴ �
 
 ╔═══════༻꧂
 ║🛸 *Attention Here Everyone In the Group!🛸*
-║⛺ 𝐆𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _Admins-Only_
-║🎪 𝐆𝐍𝐚𝐦𝐞: ${groupupdateID.subject}
-║💞 𝐆𝐌𝐞𝐦𝐛𝐞𝐫: ${groupupdateID.participants.length}
+⛺𝐆𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _Admins-Only_
+🎪𝐆𝐍𝐚𝐦𝐞: ${groupupdateID.subject}
+💞𝐆𝐌𝐞𝐦𝐛𝐞𝐫: ${groupupdateID.participants.length}
 ╚════════════╝`,
 })
 .catch((error) => console.log(error));
@@ -307,9 +307,9 @@ vers.vers
 
 ╔═══════༻꧂
 ║🛸 *Attention Here Everyone In the Group!🛸*
-║⛺ 𝐆𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _New Description Added_
-║🎪 𝐆𝐍𝐚𝐦𝐞: ${groupupdateID.subject}
-║💞 𝐆𝐌𝐞𝐦𝐛𝐞𝐫: ${groupupdateID.participants.length}
+⛺𝐆𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _New Description Added_
+🎪𝐆𝐍𝐚𝐦𝐞: ${groupupdateID.subject}
+💞𝐆𝐌𝐞𝐦𝐛𝐞𝐫: ${groupupdateID.participants.length}
 ║🍌 𝐂𝐡𝐚𝐧𝐠𝐞𝐝-𝐁𝐲: @${update.descOwner.split(`@`)[0]}
 ╚════════════╝
 ༻꧂━━━━━༻꧂ 𝐍𝐞𝐰 𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧 ༻꧂━━━━━༻꧂
@@ -330,9 +330,9 @@ vers.vers
 
 ╔═══════༻꧂
 ║🛸 *Attention Here Everyone In the Group!🛸*
-║⛺ 𝐆𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _Info Edit Allowed For All_
-║🎪 𝐆𝐍𝐚𝐦𝐞: ${groupupdateID.subject}
-║💞 𝐆𝐌𝐞𝐦𝐛𝐞𝐫: ${groupupdateID.participants.length}
+⛺𝐆𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _Info Edit Allowed For All_
+🎪𝐆𝐍𝐚𝐦𝐞: ${groupupdateID.subject}
+💞𝐆𝐌𝐞𝐦𝐛𝐞𝐫: ${groupupdateID.participants.length}
 ║🍌 𝐂𝐡𝐚𝐧𝐠𝐞𝐝-𝐁𝐲: @${update.descOwner.split(`@`)[0]}
 ╚════════════╝`,
 })
@@ -351,9 +351,9 @@ vers.vers
 
 ╔═══════༻꧂
 ║🛸 *Attention Here Everyone In the Group!🛸*
-║⛺ 𝐆𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _Info Edit Admins-Only_
-║🎪 𝐆𝐍𝐚𝐦𝐞: ${groupupdateID.subject}
-║💞 𝐆𝐌𝐞𝐦𝐛𝐞𝐫: ${groupupdateID.participants.length}
+⛺𝐆𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _Info Edit Admins-Only_
+🎪𝐆𝐍𝐚𝐦𝐞: ${groupupdateID.subject}
+💞𝐆𝐌𝐞𝐦𝐛𝐞𝐫: ${groupupdateID.participants.length}
 ║🍌 𝐂𝐡𝐚𝐧𝐠𝐞𝐝-𝐁𝐲: @${update.descOwner.split(`@`)[0]}
 ╚════════════╝`,
 })
