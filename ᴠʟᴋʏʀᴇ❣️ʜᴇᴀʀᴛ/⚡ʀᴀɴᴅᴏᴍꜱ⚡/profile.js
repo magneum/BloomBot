@@ -62,6 +62,7 @@ const malScraper = require(`mal-scraper`);
 const { exec } = require(`child_process`);
 const pokemon = require("pokemontcgsdk");
 const speed = require(`performance-now`);
+const FLFMPEG = require("fluent-ffmpeg");
 const ffmpeg = require(`fluent-ffmpeg`);
 const FFmpeg = require("fluent-ffmpeg");
 const Heroku = require(`heroku-client`);
@@ -76,6 +77,7 @@ const akaneko = require(`akaneko`);
 const ytdl = require("ytdl-core");
 const yts = require("yt-search");
 let cheerio = require(`cheerio`);
+const FLMPEGProc = new FLFMPEG();
 var color = randomMC.getColor();
 const FFmpegProc = new FFmpeg();
 const Kolor = require("chalk");
@@ -93,7 +95,6 @@ const fs = require(`fs`);
 const FLMPEG = require(`fluent-ffmpeg`)()
 .setFfprobePath(ffprobe.path)
 .setFfmpegPath(ffmpegInstaller.path);
-const FLMPEGProc = new FLMPEG();
 var heroku = new Heroku({
 token: _𝔏𝔞𝔟_.HEROKU_API_KEY,
 });
