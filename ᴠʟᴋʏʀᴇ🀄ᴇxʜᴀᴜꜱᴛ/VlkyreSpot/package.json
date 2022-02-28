@@ -1,9 +1,0 @@
-{
-"dependencies": {
-"discord-ytdl-core": "^5.0.2",
-"node-fetch": "^2.6.1",
-"spotify-url-info": "^2.2.0",
-"youtube-sr": "^4.0.1",
-"ytdl-core": "^4.8.0"
-}
-}
