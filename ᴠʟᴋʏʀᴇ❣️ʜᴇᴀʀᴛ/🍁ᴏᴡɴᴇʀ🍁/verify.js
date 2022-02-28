@@ -71,7 +71,7 @@ if (
 ) {
 const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
 ᴠʟᴋʏʀᴇ.chatId,
-{ url: "./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_web.png" },
+{ url: "./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_webview.png" },
 MessageType.image,
 { mimetype: Mimetype.png }
 );
