@@ -2,8 +2,8 @@
 /*        
 (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬! 
 */
-`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/konfs`);
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 const { ᴠʟᴋʏʀᴇTenorMaker } = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/ᴠʟᴋʏʀᴇTenorMaker`);
 const ᴠʟᴋʏʀᴇ_Buttons = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/ᴠʟᴋʏʀᴇ_Buttons`);
 const ᴠʟᴋʏʀᴇ_Static = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/ᴠʟᴋʏʀᴇ_Static`);
@@ -15,9 +15,9 @@ const fishes = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/FISH/fishes
 const FFmpegAudio = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/FFmpegAudio`);
 const { GroupSettingChange } = require(`@adiwajshing/baileys`);
 const { TelegraPh } = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/uploader`);
+const Jwork = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/FISH/works.json`);
 const JworkR = Jwork[Math.floor(Math.random() * Jwork.length)];
 const { pinterest } = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/scraper`);
-const Jwork = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/FISH/works.json`);
 const Usersᴠʟᴋʏʀᴇ = require(`../../ᴠʟᴋʏʀᴇ🥠ᴘᴏʀᴛ/experience`);
 const UserInventory = require(`../../ᴠʟᴋʏʀᴇ🥠ᴘᴏʀᴛ/robbery`);
 const translate = require(`@vitalets/google-translate-api`);
@@ -70,7 +70,6 @@ const Tinyurl = require("tinyurl-api");
 const anime = require(`anime-actions`);
 const FormData = require("form-data");
 const Readline = require(`readline`);
-const fetch = require(`node-fetch`);
 const fetch = require("node-fetch");
 const Google = require(`google-it`);
 const ytdl = require("ytdl-core");
@@ -90,14 +89,14 @@ const fs = require(`fs`);
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 /*              (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!*/
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
-const FlFFMPEG = require(`fluent-ffmpeg`)()
+const FLMPEG = require(`fluent-ffmpeg`)()
 .setFfprobePath(ffprobe.path)
 .setFfmpegPath(ffmpegInstaller.path);
 var heroku = new Heroku({
 token: _𝔏𝔞𝔟_.HEROKU_API_KEY,
 });
-const isUrl = (text) => {
-return text.match(
+const isUrl = (TextMsg) => {
+return TextMsg.match(
 new RegExp(
 /https?:\/\/(www\.)?[-a-zA-Z0-9@:%._+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_+.~#?&/=]*)(jpe?g|png)/,
 "gi"
@@ -114,117 +113,115 @@ var scriptName = path.basename(__filename);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 var newScpt = scriptName.slice(0, -3).toLowerCase();
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
-/*        
-(𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬! 
-*/
+/*              (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!*/
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 module.exports = {
-  name: newScpt,
-  ᴠʟᴋʏʀᴇӄǟɨʐօ: `*${ᴋᴇɪ}tr* _text_ | _language code_`,
-  async handle(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, chat, ᴠʟᴋʏʀᴇ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
-    try {
-      const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
-      const ᴅꜰɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.commandName;
-      let ᴘɴᴀᴍᴇ;
-      try {
-        ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/\@s.whatsapp.net/g, "").replace(/\D/g, "");
-      } catch {
-        ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/\D/g, "");
-      }
-      const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
-      `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
+name: newScpt,
+ᴠʟᴋʏʀᴇӄǟɨʐօ: `*${ᴋᴇɪ}tr* _text_ | _language code_`,
+async handle(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, chat, ᴠʟᴋʏʀᴇ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
+try {
+const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
+const ᴅꜰɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.commandName;
+let ᴘɴᴀᴍᴇ;
+try {
+ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/\@s.whatsapp.net/g, "").replace(/\D/g, "");
+} catch {
+ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/\D/g, "");
+}
+const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 /*              (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!*/
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
-      var text = ``;
-      var language = ``;
-      if (Needs.length === 0) {
-        var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(ᴠʟᴋʏʀᴇ.commandName);
-        var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
-          𝓜Usage.ᴠʟᴋʏʀᴇӄǟɨʐօ === undefined ? `Null` : 𝓜Usage.ᴠʟᴋʏʀᴇӄǟɨʐօ;
-        const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
-        return ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
-          ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
-          chat,
-          ᴠʟᴋʏʀᴇ,
-          ʟɴᴀᴍᴇ,
-          ᴘɴᴀᴍᴇ,
-          ᴠʟᴋʏʀᴇ.commandName,
-          ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
-        );
-      }
-      `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
+var text = ``;
+var language = ``;
+if (Needs.length === 0) {
+var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(ᴠʟᴋʏʀᴇ.commandName);
+var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
+𝓜Usage.ᴠʟᴋʏʀᴇӄǟɨʐօ === undefined ? `Null` : 𝓜Usage.ᴠʟᴋʏʀᴇӄǟɨʐօ;
+const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
+return ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+chat,
+ᴠʟᴋʏʀᴇ,
+ʟɴᴀᴍᴇ,
+ᴘɴᴀᴍᴇ,
+ᴠʟᴋʏʀᴇ.commandName,
+ᴍɪᴢᴜᴋɪᴍᴏʀᴇ
+);
+}
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 /*              (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!*/
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
-      if (!ᴠʟᴋʏʀᴇ.isReply) {
-        try {
-          var body = ᴠʟᴋʏʀᴇ.body.split(`|`);
-          text = body[0].replace(ᴠʟᴋʏʀᴇ.body[0] + ᴠʟᴋʏʀᴇ.commandName + ` `, ``);
-          var i = 0;
-          while (body[1].split(` `)[i] == ``) {
-            i++;
-          }
-          language = body[1].split(` `)[i];
-        } catch (error) {
-          if (error instanceof TypeError) {
-            text = ᴠʟᴋʏʀᴇ.body.replace(
-              ᴠʟᴋʏʀᴇ.body[0] + ᴠʟᴋʏʀᴇ.commandName + ` `,
-              ``
-            );
-            language = `English`;
-          }
-        }
-        `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
+if (!ᴠʟᴋʏʀᴇ.isReply) {
+try {
+var body = ᴠʟᴋʏʀᴇ.body.split(`|`);
+text = body[0].replace(ᴠʟᴋʏʀᴇ.body[0] + ᴠʟᴋʏʀᴇ.commandName + ` `, ``);
+var i = 0;
+while (body[1].split(` `)[i] == ``) {
+i++;
+}
+language = body[1].split(` `)[i];
+} catch (error) {
+if (error instanceof TypeError) {
+text = ᴠʟᴋʏʀᴇ.body.replace(
+ᴠʟᴋʏʀᴇ.body[0] + ᴠʟᴋʏʀᴇ.commandName + ` `,
+``
+);
+language = `English`;
+}
+}
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 /*              (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!*/
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
-      } else if (ᴠʟᴋʏʀᴇ.replyMessage) {
-        text = ᴠʟᴋʏʀᴇ.replyMessage;
-        language = Needs[0];
-      } else {
-        await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
-          .sendMessage(
-            ᴠʟᴋʏʀᴇ.chatId,
-            `Please reply to a text message.`,
-            MessageType.text,
-            { quoted: chat }
-          )
-          .catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
-      }
-      `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
+} else if (ᴠʟᴋʏʀᴇ.replyMessage) {
+text = ᴠʟᴋʏʀᴇ.replyMessage;
+language = Needs[0];
+} else {
+await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
+.sendMessage(
+ᴠʟᴋʏʀᴇ.chatId,
+`Please reply to a text message.`,
+MessageType.text,
+{ quoted: chat }
+)
+.catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
+}
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 /*              (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!*/
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
-      if (text.length > 4000) {
-        await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
-          .sendMessage(
-            ᴠʟᴋʏʀᴇ.chatId,
-            `*Total characters should be less than 4000.*\nTotal characters for current input were {}.`.format(
-              text.length
-            ),
-            MessageType.text,
-            { quoted: chat }
-          )
-          .catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
-      }
-      await translate(text, {
-        to: language,
-      }).then((res) => {
-        ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
-          .sendMessage(
-            ᴠʟᴋʏʀᴇ.chatId,
-            `Translated From *${res.from.language.iso}* to> *${language}*
+if (text.length > 4000) {
+await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
+.sendMessage(
+ᴠʟᴋʏʀᴇ.chatId,
+`*Total characters should be less than 4000.*\nTotal characters for current input were {}.`.format(
+text.length
+),
+MessageType.text,
+{ quoted: chat }
+)
+.catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
+}
+await translate(text, {
+to: language,
+}).then((res) => {
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
+.sendMessage(
+ᴠʟᴋʏʀᴇ.chatId,
+`Translated From *${res.from.language.iso}* to> *${language}*
 ${res.text}`,
-            MessageType.text,
-            { quoted: chat }
-          )
-          .catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
-      });
-      `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
+MessageType.text,
+{ quoted: chat }
+)
+.catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
+});
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 /*              (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!*/
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
-    } catch (error) {
-      ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
-      return;
-    }
-  },
+} catch (error) {
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
+return;
+}
+},
 };
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 /*        
