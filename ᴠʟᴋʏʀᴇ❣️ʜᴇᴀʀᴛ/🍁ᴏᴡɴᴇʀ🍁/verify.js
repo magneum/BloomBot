@@ -81,21 +81,19 @@ return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 {
 contentText: `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
 
-╔◇ ❌𝐍𝐎𝐓 𝐕𝐄𝐑𝐈𝐅𝐈𝐄𝐃!
-║📌 *Click:* _https://KrakinzLab-Vlkyre.krakinzkon.repl.co_
-║📌 *Read And Join Group To Verify!*
-╚════════════╝
+❌𝐍𝐎𝐓 𝐕𝐄𝐑𝐈𝐅𝐈𝐄𝐃!
+📌 *Click:* _https://KrakinzLab-Vlkyre.krakinzkon.repl.co_
+📌 *Read And Join Group To Verify!*
 
-╔◇ 𝐖𝐡𝐲 𝐓𝐨 𝐁𝐞 𝐕𝐞𝐫𝐢𝐟𝐢𝐞𝐝?
-║📌 _Monitor Bugs!_
-║📌 _Monitor Anti-Spams!_
-║📌 _Monitor Anti-Links!_
-║📌 _Monitor Anti-NSFW!_
-║📌 _Monitor Anti-Virtex!_
-║📌 _Monitor Group Ranks!_
-║📌 _Monitor Performance!_
-║📌 _Use Vlkyre-Premium Anywhere!_
-╚════════════╝`,
+❓𝐖𝐡𝐲 𝐓𝐨 𝐁𝐞 𝐕𝐞𝐫𝐢𝐟𝐢𝐞𝐝?
+📌 _Monitor Bugs!_
+📌 _Monitor Anti-Spams!_
+📌 _Monitor Anti-Links!_
+📌 _Monitor Anti-NSFW!_
+📌 _Monitor Anti-Virtex!_
+📌 _Monitor Group Ranks!_
+📌 _Monitor Performance!_
+📌 _Use Vlkyre-Premium Anywhere!_`,
 footerText: `\n❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❞\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
 buttons: [
 {
@@ -121,10 +119,9 @@ chat,
 ᴠʟᴋʏʀᴇ,
 `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
 
-╔◇ ✅ 𝐕𝐄𝐑𝐈𝐅𝐈𝐄𝐃!
-║📌 _Enjoy Vlkyre Premiums For Free!_
-║📌 _Use Vlkyre Anywhere!_
-╚════════════╝`,
+✅ 𝐕𝐄𝐑𝐈𝐅𝐈𝐄𝐃!
+📌 _Enjoy Vlkyre Premiums For Free!_
+📌 _Use Vlkyre Anywhere!_`,
 "./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ.png"
 );
 }
