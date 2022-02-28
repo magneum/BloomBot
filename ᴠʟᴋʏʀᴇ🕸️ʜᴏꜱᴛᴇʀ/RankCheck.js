@@ -17,108 +17,114 @@ var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 const fs = require(`fs`);
 Levels.setURL(_𝔏𝔞𝔟_.VLKYREMDB);
 var color = randomMC.getColor();
-`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
+/*              (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!*/
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 const RankCheck = async (ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, chat, ᴠʟᴋʏʀᴇ) => {
-  const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
-  var աɦօֆɛ = Math.floor(1000 + Math.random() * 9000);
-  let ᴘɴᴀᴍᴇ;
-  try {
-    ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/\@s.whatsapp.net/g, "").replace(/\D/g, "");
-    require("child_process").exec("hash -r").stderr.pipe(process.stderr);
-  } catch {
-    ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/\D/g, "");
-    require("child_process").exec("hash -r").stderr.pipe(process.stderr);
-  }
-  try {
-    𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.getProfilePicture(ʟɴᴀᴍᴇ);
-  } catch {
-    𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = "https://i.postimg.cc/wxWL9G8F/no-profile-picture-300x216.png";
-  }
-  var expFile = `./ᴠʟᴋʏʀᴇ🀄ᴇxʜᴀᴜꜱᴛ/${Date.now()}r${chat.key.id}.png`;
-  `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-  try {
-    const randomAmountOfXp = Math.floor(Math.random() * 29) + 1;
-    const user = await Levels.fetch(ʟɴᴀᴍᴇ, ᴠʟᴋʏʀᴇ.chatId, true);
-    if (!user) {
-      await Levels.createUser(ʟɴᴀᴍᴇ, ᴠʟᴋʏʀᴇ.chatId);
-      await Levels.setLevel(ʟɴᴀᴍᴇ, ᴠʟᴋʏʀᴇ.chatId, 1);
-      await Levels.setXp(ʟɴᴀᴍᴇ, ᴠʟᴋʏʀᴇ.chatId, 1);
-    }
-    const hasLeveledUp = await Levels.appendXp(
-      ʟɴᴀᴍᴇ,
-      ᴠʟᴋʏʀᴇ.chatId,
-      randomAmountOfXp
-    );
-    `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-    if (hasLeveledUp) {
-      try {
-        var ResGot = await fetch(
-          global.API("https://wall.alphacoders.com/api2.0", "/get.php", {
-            auth: "3e7756c85df54b78f934a284c11abe4e",
-            method: "search",
-            term: "anime landscape",
-          })
-        );
-        var Bson = await ResGot.json();
-        var ImgBson =
-          Bson.wallpapers[Math.floor(Math.random() * Bson.wallpapers.length)];
-        Img = ImgBson.url_image;
-      } catch {
-        Img = "https://i.postimg.cc/Kc65RLnX/Full.png";
-      }
-      const rank = new canvacord.Rank()
-        .setAvatar(𝕻𝕻𝖑𝖊𝖙𝖊𝖗)
-        .setCurrentXP(user.xp)
-        .setRequiredXP(Levels.xpFor(user.level + 1))
-        .setRank(user.position)
-        .setLevel(user.level)
-        .setStatus("online")
-        .setBackground("IMAGE", Img)
-        .setProgressBar(color, "COLOR")
-        .setUsername("Auto Ranker!")
-        .setDiscriminator(աɦօֆɛ);
-      rank.build().then(async (data) => {
-        fs.writeFile(expFile, data, async (error) => {
-          if (error) return ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
-          const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
-            ᴠʟᴋʏʀᴇ.chatId,
-            fs.readFileSync(expFile),
-            MessageType.image,
-            { mimetype: Mimetype.png }
-          );
-          await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
-            .sendMessage(
-              ᴠʟᴋʏʀᴇ.chatId,
-              {
-                contentText: `✨𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬 @${ᴘɴᴀᴍᴇ}, _𝐋𝐞𝐯𝐞𝐥𝐞𝐝-𝐔𝐏!_`,
-                footerText: `⌜𝐕𝐥𝐤𝐲𝐫𝐞 ×፝֟͜×${vers.vers}⌟\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
-                buttons: [
-                  {
-                    buttonId: `${ᴋᴇɪ}rank`,
-                    buttonText: { displayText: `${ᴋᴇɪ}rank` },
-                    type: 1,
-                  },
-                ],
-                headerType: 4,
-                imageMessage: media.message.imageMessage,
-              },
-              MessageType.buttonsMessage,
-              {
-                quoted: chat,
-                contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
-              }
-            )
-            .catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
-          return await cleanRF.cleanRF(expFile);
-        });
-      });
-    }
-  } catch (error) {
-    ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
-  }
+const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
+var աɦօֆɛ = Math.floor(1000 + Math.random() * 9000);
+let ᴘɴᴀᴍᴇ;
+try {
+ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/\@s.whatsapp.net/g, "").replace(/\D/g, "");
+require("child_process").exec("hash -r").stderr.pipe(process.stderr);
+} catch {
+ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/\D/g, "");
+require("child_process").exec("hash -r").stderr.pipe(process.stderr);
+}
+try {
+𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.getProfilePicture(ʟɴᴀᴍᴇ);
+} catch {
+𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = "https://i.postimg.cc/wxWL9G8F/no-profile-picture-300x216.png";
+}
+var expFile = `./ᴠʟᴋʏʀᴇ🀄ᴇxʜᴀᴜꜱᴛ/${Date.now()}r${chat.key.id}.png`;
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
+/*              (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!*/
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
+try {
+const randomAmountOfXp = Math.floor(Math.random() * 29) + 1;
+const user = await Levels.fetch(ʟɴᴀᴍᴇ, ᴠʟᴋʏʀᴇ.chatId, true);
+if (!user) {
+await Levels.createUser(ʟɴᴀᴍᴇ, ᴠʟᴋʏʀᴇ.chatId);
+await Levels.setLevel(ʟɴᴀᴍᴇ, ᴠʟᴋʏʀᴇ.chatId, 1);
+await Levels.setXp(ʟɴᴀᴍᴇ, ᴠʟᴋʏʀᴇ.chatId, 1);
+}
+const hasLeveledUp = await Levels.appendXp(
+ʟɴᴀᴍᴇ,
+ᴠʟᴋʏʀᴇ.chatId,
+randomAmountOfXp
+);
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
+/*              (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!*/
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
+if (hasLeveledUp) {
+try {
+var ResGot = await fetch(
+global.API("https://wall.alphacoders.com/api2.0", "/get.php", {
+auth: "3e7756c85df54b78f934a284c11abe4e",
+method: "search",
+term: "anime landscape",
+})
+);
+var Bson = await ResGot.json();
+var ImgBson =
+Bson.wallpapers[Math.floor(Math.random() * Bson.wallpapers.length)];
+Img = ImgBson.url_image;
+} catch {
+Img = "https://i.postimg.cc/Kc65RLnX/Full.png";
+}
+const rank = new canvacord.Rank()
+.setAvatar(𝕻𝕻𝖑𝖊𝖙𝖊𝖗)
+.setCurrentXP(user.xp)
+.setRequiredXP(Levels.xpFor(user.level + 1))
+.setRank(user.position)
+.setLevel(user.level)
+.setStatus("online")
+.setBackground("IMAGE", Img)
+.setProgressBar(color, "COLOR")
+.setUsername("Auto Ranker!")
+.setDiscriminator(աɦօֆɛ);
+rank.build().then(async (data) => {
+fs.writeFile(expFile, data, async (error) => {
+if (error) return ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
+const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
+ᴠʟᴋʏʀᴇ.chatId,
+fs.readFileSync(expFile),
+MessageType.image,
+{ mimetype: Mimetype.png }
+);
+await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
+.sendMessage(
+ᴠʟᴋʏʀᴇ.chatId,
+{
+contentText: `✨𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬 @${ᴘɴᴀᴍᴇ}, _𝐋𝐞𝐯𝐞𝐥𝐞𝐝-𝐔𝐏!_`,
+footerText: `⌜𝐕𝐥𝐤𝐲𝐫𝐞 ×፝֟͜×${vers.vers}⌟\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+buttons: [
+{
+buttonId: `${ᴋᴇɪ}rank`,
+buttonText: { displayText: `${ᴋᴇɪ}rank` },
+type: 1,
+},
+],
+headerType: 4,
+imageMessage: media.message.imageMessage,
+},
+MessageType.buttonsMessage,
+{
+quoted: chat,
+contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
+}
+)
+.catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
+return await cleanRF.cleanRF(expFile);
+});
+});
+}
+} catch (error) {
+ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
+}
 };
 module.exports = {
-  MRC: RankCheck,
+MRC: RankCheck,
 };
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 /*        
