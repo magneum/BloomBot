@@ -9,22 +9,22 @@ const { table } = require("table");
 const Vlkyre = require(`ascii-table`);
 const VlkyreTable = new Vlkyre().setHeading("✭ 𝐅𝐢𝐥𝐞 ✭", "✭ 𝐇𝐞𝐚𝐥𝐭𝐡 ✭");
 async function 𝖈𝖍𝖆𝖎𝖗(ꜱɪᴛʀᴀᴘ) {
-  const ᴅᴇʀꜱ = fs.readdirSync(`./ᴠʟᴋʏʀᴇ❣️ʜᴇᴀʀᴛ`);
-  for (const ʟᴅᴇʀ of ᴅᴇʀꜱ) {
-    const cmdF = fs
-      .readdirSync(`./ᴠʟᴋʏʀᴇ❣️ʜᴇᴀʀᴛ/${ʟᴅᴇʀ}`)
-      .filter((ɪꜱᴏ) => ɪꜱᴏ.endsWith(`.js`));
-    for (const ɪꜱᴏ of cmdF) {
-      const command = require(`./ᴠʟᴋʏʀᴇ❣️ʜᴇᴀʀᴛ/${ʟᴅᴇʀ}/${ɪꜱᴏ}`);
-      if (command.name) {
-        ꜱɪᴛʀᴀᴘ.set(command.name, command);
-        VlkyreTable.addRow("⚡", Kolor.greenBright(command.name.toUpperCase()));
-      } else {
-        VlkyreTable.addRow("❌", Kolor.redBright(ɪꜱᴏ.toUpperCase()));
-        continue;
-      }
-    }
-  }
+const ᴅᴇʀꜱ = fs.readdirSync(`./ᴠʟᴋʏʀᴇ❣️ʜᴇᴀʀᴛ`);
+for (const ʟᴅᴇʀ of ᴅᴇʀꜱ) {
+const cmdF = fs
+.readdirSync(`./ᴠʟᴋʏʀᴇ❣️ʜᴇᴀʀᴛ/${ʟᴅᴇʀ}`)
+.filter((ɪꜱᴏ) => ɪꜱᴏ.endsWith(`.js`));
+for (const ɪꜱᴏ of cmdF) {
+const command = require(`./ᴠʟᴋʏʀᴇ❣️ʜᴇᴀʀᴛ/${ʟᴅᴇʀ}/${ɪꜱᴏ}`);
+if (command.name) {
+ꜱɪᴛʀᴀᴘ.set(command.name, command);
+VlkyreTable.addRow("⚡", Kolor.greenBright(command.name.toUpperCase()));
+} else {
+VlkyreTable.addRow("❌", Kolor.redBright(ɪꜱᴏ.toUpperCase()));
+continue;
+}
+}
+}
 }
 // const result = require("child_process").spawn("python", [
 // "-c",

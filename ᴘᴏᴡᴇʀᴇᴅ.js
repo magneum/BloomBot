@@ -14,31 +14,31 @@ let minutes = date_ob.getMinutes();
 let seconds = date_ob.getSeconds();
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 if (!shell.which("git")) {
-  shell.echo("Sorry, this script requires git");
-  shell.exit(1);
+shell.echo("Sorry, this script requires git");
+shell.exit(1);
 }
 if (
-  shell.exec(
-    `git pull && git add --all && git commit -am "❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ : v${
-      vers.vers
-    } ⚡ 𝐃𝐚𝐭𝐞: ${
-      year +
-      "-" +
-      month +
-      "-" +
-      date +
-      " " +
-      hours +
-      ":" +
-      minutes +
-      ":" +
-      seconds
-    } ❞" && git push`
-  ).code !== 0
+shell.exec(
+`git pull && git add --all && git commit -am "❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ : v${
+vers.vers
+} ⚡ 𝐃𝐚𝐭𝐞: ${
+year +
+"-" +
+month +
+"-" +
+date +
+" " +
+hours +
+":" +
+minutes +
+":" +
+seconds
+} ❞" && git push`
+).code !== 0
 ) {
-  shell.error();
-  shell.echo("💡𝐈𝐧𝐟𝐨꧂ Exited With Code !==0");
-  shell.exit(1);
+shell.error();
+shell.echo("💡𝐈𝐧𝐟𝐨꧂ Exited With Code !==0");
+shell.exit(1);
 }
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 /*
