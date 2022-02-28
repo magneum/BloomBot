@@ -77,12 +77,11 @@ MessageType.video,
 {
 mimetype: `video/gif`,
 quoted: chat,
-caption: `
-╔⧉༻💿𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}
-║
-║🍕 𝐅𝐫𝐨𝐦: @${ᴘɴᴀᴍᴇ}
-║🌭 𝐓𝐨: @${TagPerson}
-╚════════════╝`,
+caption: `❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❞\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™
+
+💿𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}
+🍕 𝐅𝐫𝐨𝐦: @${ᴘɴᴀᴍᴇ}
+🌭 𝐓𝐨: @${TagPerson}`,
 contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ, TagMention] },
 }
 )
