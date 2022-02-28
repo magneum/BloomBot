@@ -131,7 +131,7 @@ return ᴠʟᴋʏʀᴇ_Buttons.MIB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 ᴠʟᴋʏʀᴇ,
-`*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
+`*『@${ᴘɴᴀᴍᴇ}』*
 ╔⧉༻❗ 𝐈𝐦𝐩𝐨𝐫𝐭𝐚𝐧𝐭
 ║⚔️ 𝗕𝗮𝗱𝗴𝗲: ${userBadge.Badge}
 ║💤 𝗥𝗲𝗻𝗲𝘄𝘀_𝗜𝗻: ${time.hours}h ${time.minutes}m ${time.seconds}s
@@ -167,7 +167,7 @@ chat,
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 const name = Needs.join(` `);
 malScraper.getInfoFromName(name).then(async (data) => {
-const AnimeInfos = `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
+const AnimeInfos = `*『@${ᴘɴᴀᴍᴇ}』*
 
 💿𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}
 💡 𝐓𝐢𝐭𝐥𝐞: *${data.title}*
