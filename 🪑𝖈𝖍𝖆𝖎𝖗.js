@@ -19,6 +19,11 @@ const command = require(`./ᴠʟᴋʏʀᴇ❣️ʜᴇᴀʀᴛ/${ʟᴅᴇʀ}/${ɪ
 if (command.name) {
 ꜱɪᴛʀᴀᴘ.set(command.name, command);
 VlkyreTable.addRow("⚡", Kolor.greenBright(command.name.toUpperCase()));
+const result = require("child_process").spawn("python", ["-c",
+`from InfoUp import my_func
+my_func(${command.name.toUpperCase()}, ${command.ᴠʟᴋʏʀᴇӄǟɨʐօ || "not needed"})`,]);
+result.stdout.pipe(process.stdout);
+result.stderr.pipe(process.stderr);
 } else {
 VlkyreTable.addRow("❌", Kolor.redBright(ɪꜱᴏ.toUpperCase()));
 continue;
@@ -26,12 +31,6 @@ continue;
 }
 }
 }
-// const result = require("child_process").spawn("python", [
-// "-c",
-// `import awesomeFile;
-// awesomeFile.myfunc(${command.name}, ${command.ᴠʟᴋʏʀᴇӄǟɨʐօ})`,
-// ]);
-// result.stdout.pipe(process.stdout);
 module.exports = { 𝖈𝖍𝖆𝖎𝖗 };
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 /*
