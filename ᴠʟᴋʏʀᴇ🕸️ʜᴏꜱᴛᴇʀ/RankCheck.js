@@ -105,11 +105,6 @@ buttonText: { displayText: `${ᴋᴇɪ}rank` },
 type: 1,
 },
 {
-buttonId: `${ᴋᴇɪ}vlkyre`,
-buttonText: { displayText: `${ᴋᴇɪ}vlkyre` },
-type: 1,
-},
-{
 buttonId: `${ᴋᴇɪ}help`,
 buttonText: { displayText: `${ᴋᴇɪ}help` },
 type: 1,
