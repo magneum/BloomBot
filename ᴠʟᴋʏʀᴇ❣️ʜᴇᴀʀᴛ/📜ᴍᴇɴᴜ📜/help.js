@@ -120,7 +120,7 @@ contentText: `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
 ║🍄 ${ᴋᴇɪ}hentaimenu
 ║🥃 ${ᴋᴇɪ}humanmenu
 ╚════════════╝`,
-footerText: `\n༆Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers}\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+footerText: `\n❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❞\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}menu`,
