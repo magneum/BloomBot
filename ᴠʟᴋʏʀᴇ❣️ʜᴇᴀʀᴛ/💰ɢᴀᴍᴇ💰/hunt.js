@@ -289,7 +289,7 @@ caption: `*『@${ᴘɴᴀᴍᴇ}』*
 💫 *Type:* _${ᴋᴇɪ}pokedex ${PokemonData.name}_
 💫 *Type:* _${ᴋᴇɪ}pokemon ${PokemonData.name}_
 
-❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❞\nᴄᴏᴅᴇᴅ ᴡɪᴛʜ ☯ ᴘʏᴛʜᴏɴ + ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❞\nᴄᴏᴅᴇᴅ ᴡɪᴛʜ ⌬ ᴘʏᴛʜᴏɴ + ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
 contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
 }
 )
