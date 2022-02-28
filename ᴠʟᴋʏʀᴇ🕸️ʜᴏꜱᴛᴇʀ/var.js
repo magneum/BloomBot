@@ -8,25 +8,25 @@ const Downloader = require(`nodejs-file-downloader`);
 const TinyURL = require("tinyurl");
 const fs = require(`fs`);
 YouTube_Video("https://youtu.be/ZceKV-l9d_k").then((res) => {
-  const { dl_link, thumb, title, filesizeF, filesize } = res;
-  TinyURL.shorten(dl_link).then(
-    async function (DirectFile) {
-      const downloader = await new Downloader({
-        url: DirectFile,
-        directory: `${__dirname}`,
-        fileName: Date.now() + ".mp4",
-        cloneFiles: false,
-      });
-      try {
-        await downloader.download();
-      } catch (error) {
-        console.log(`⬡═══════════════════| 🐞𝐄𝐫𝐫𝐨𝐫: ` + error);
-      }
-    },
-    async function (error) {
-      console.log(`⬡═══════════════════| 🐞𝐄𝐫𝐫𝐨𝐫: ` + error);
-    }
-  );
+const { dl_link, thumb, title, filesizeF, filesize } = res;
+TinyURL.shorten(dl_link).then(
+async function (DirectFile) {
+const downloader = await new Downloader({
+url: DirectFile,
+directory: `${__dirname}`,
+fileName: Date.now() + ".mp4",
+cloneFiles: false,
+});
+try {
+await downloader.download();
+} catch (error) {
+console.log(`⬡═══════════════════| 🐞𝐄𝐫𝐫𝐨𝐫: ` + error);
+}
+},
+async function (error) {
+console.log(`⬡═══════════════════| 🐞𝐄𝐫𝐫𝐨𝐫: ` + error);
+}
+);
 });
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 /*        

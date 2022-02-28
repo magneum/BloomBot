@@ -26,70 +26,70 @@ var Flower = [`💐`, `🌻`, `🌼`, `🌹`, `🌸`, `💮`];
 var People = [`👮`, `👳`, `🤱`, `🤰`, `💂`];
 `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 exports.welbuts = async (
-  ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
-  GroupID,
-  GroupMemData,
-  GroupMemG,
-  GroupMemBio,
-  MemNum,
-  Message
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+GroupID,
+GroupMemData,
+GroupMemG,
+GroupMemBio,
+MemNum,
+Message
 ) => {
-  try {
-    BanGroup.findOne(
-      {
-        ID: GroupID,
-      },
-      async (error, BanGroup) => {
-        if (error) return console.log(error);
-        if (BanGroup) return;
-        const FlowerWel = Flower[Math.floor(Math.random() * Flower.length)];
-        const PeopleWel = People[Math.floor(Math.random() * People.length)];
-        let ᴘᴘᴡᴇʟᴄᴏᴍᴇ;
-        try {
-          ᴘᴘᴡᴇʟᴄᴏᴍᴇ = MemNum.replace(/\@s.whatsapp.net/g, "").replace(
-            /\D/g,
-            ""
-          );
-          // require("child_process").exec("hash -r").stderr.pipe(process.stderr);
-        } catch {
-          ᴘᴘᴡᴇʟᴄᴏᴍᴇ = MemNum.split("@")[0].replace(/\D/g, "");
-          // require("child_process").exec("hash -r").stderr.pipe(process.stderr);
-        }
-        `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
-        let 𝕻𝕻𝖑𝖊𝖙𝖊𝖗;
-        try {
-          𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.getProfilePicture(
-            `${MemNum.split(`@`)[0]}@c.us`
-          );
-        } catch {
-          𝕻𝕻𝖑𝖊𝖙𝖊𝖗 =
-            "https://i.postimg.cc/wxWL9G8F/no-profile-picture-300x216.png";
-        }
-        `|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🛸𝐕𝐥𝐤𝐲𝐫𝐞(𝐜) |════════════════════════════════════════════⬡|`;
-        const downloader = await new Downloader({
-          url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗,
-          directory: `./`,
-          fileName: `${Date.now().toString()}.png`,
-          cloneFiles: false,
-        });
-        try {
-          await downloader.download();
-          const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
-            GroupID,
-            fs.readFileSync(`./${Date.now().toString()}.png`),
-            MessageType.image,
-            {
-              mimetype: Mimetype.png,
-            }
-          );
-          await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
-            .sendMessage(
-              GroupID,
-              {
-                contentText: `
+try {
+BanGroup.findOne(
+{
+ID: GroupID,
+},
+async (error, BanGroup) => {
+if (error) return console.log(error);
+if (BanGroup) return;
+const FlowerWel = Flower[Math.floor(Math.random() * Flower.length)];
+const PeopleWel = People[Math.floor(Math.random() * People.length)];
+let ᴘᴘᴡᴇʟᴄᴏᴍᴇ;
+try {
+ᴘᴘᴡᴇʟᴄᴏᴍᴇ = MemNum.replace(/\@s.whatsapp.net/g, "").replace(
+/\D/g,
+""
+);
+// require("child_process").exec("hash -r").stderr.pipe(process.stderr);
+} catch {
+ᴘᴘᴡᴇʟᴄᴏᴍᴇ = MemNum.split("@")[0].replace(/\D/g, "");
+// require("child_process").exec("hash -r").stderr.pipe(process.stderr);
+}
+`|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
+let 𝕻𝕻𝖑𝖊𝖙𝖊𝖗;
+try {
+𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.getProfilePicture(
+`${MemNum.split(`@`)[0]}@c.us`
+);
+} catch {
+𝕻𝕻𝖑𝖊𝖙𝖊𝖗 =
+"https://i.postimg.cc/wxWL9G8F/no-profile-picture-300x216.png";
+}
+`|⬡════════════════════════════════════════════|  ™𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛🛸𝐕𝐥𝐤𝐲𝐫𝐞(𝐜) |════════════════════════════════════════════⬡|`;
+const downloader = await new Downloader({
+url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗,
+directory: `./`,
+fileName: `${Date.now().toString()}.png`,
+cloneFiles: false,
+});
+try {
+await downloader.download();
+const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
+GroupID,
+fs.readFileSync(`./${Date.now().toString()}.png`),
+MessageType.image,
+{
+mimetype: Mimetype.png,
+}
+);
+await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
+.sendMessage(
+GroupID,
+{
+contentText: `
 ꧁◇══════════════◇꧂
-    🥞𝐖𝐞𝐥𝐜𝐨𝐦𝐞🥞
-    *@${ᴘᴘᴡᴇʟᴄᴏᴍᴇ}*
+🥞𝐖𝐞𝐥𝐜𝐨𝐦𝐞🥞
+*@${ᴘᴘᴡᴇʟᴄᴏᴍᴇ}*
 ꧁◇══════════════◇꧂
 
 ╔══◇꧂
@@ -99,43 +99,43 @@ exports.welbuts = async (
 ╚════════════╝
 
 ${Message}`,
-                footerText: `⌜𝐕𝐥𝐤𝐲𝐫𝐞 ×፝֟͜×${vers.vers}⌟\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
-                buttons: [
-                  {
-                    buttonId: `${ᴋᴇɪ}help`,
-                    buttonText: { displayText: `${ᴋᴇɪ}help` },
-                    type: 1,
-                  },
-                  {
-                    buttonId: `${ᴋᴇɪ}verify`,
-                    buttonText: { displayText: `${ᴋᴇɪ}verify` },
-                    type: 1,
-                  },
-                ],
-                headerType: 4,
-                imageMessage: media.message.imageMessage,
-              },
-              MessageType.buttonsMessage,
-              {
-                contextInfo: { mentionedJid: [MemNum] },
-              }
-            )
-            .catch((error) => console.log(error));
-          return await cleanRF.cleanRF(`./${Date.now().toString()}.png`);
-        } catch (error) {
-          const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
-            GroupID,
-            { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 },
-            MessageType.image,
-            {
-              mimetype: Mimetype.png,
-            }
-          );
-          await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
-            .sendMessage(
-              GroupID,
-              {
-                contentText: `❣️𝗠𝗲𝗻𝘁𝗶𝗼𝗻: ꧁ *@${ᴘᴘᴡᴇʟᴄᴏᴍᴇ}* ꧂
+footerText: `⌜𝐕𝐥𝐤𝐲𝐫𝐞 ×፝֟͜×${vers.vers}⌟\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+buttons: [
+{
+buttonId: `${ᴋᴇɪ}help`,
+buttonText: { displayText: `${ᴋᴇɪ}help` },
+type: 1,
+},
+{
+buttonId: `${ᴋᴇɪ}verify`,
+buttonText: { displayText: `${ᴋᴇɪ}verify` },
+type: 1,
+},
+],
+headerType: 4,
+imageMessage: media.message.imageMessage,
+},
+MessageType.buttonsMessage,
+{
+contextInfo: { mentionedJid: [MemNum] },
+}
+)
+.catch((error) => console.log(error));
+return await cleanRF.cleanRF(`./${Date.now().toString()}.png`);
+} catch (error) {
+const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
+GroupID,
+{ url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 },
+MessageType.image,
+{
+mimetype: Mimetype.png,
+}
+);
+await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
+.sendMessage(
+GroupID,
+{
+contentText: `❣️𝗠𝗲𝗻𝘁𝗶𝗼𝗻: ꧁ *@${ᴘᴘᴡᴇʟᴄᴏᴍᴇ}* ꧂
 ╔◇══════════════◇༻꧂
 ┊  🥞𝐖𝐞𝐥𝐜𝐨𝐦𝐞𝐫🥞
 ╚◇╗
@@ -148,34 +148,34 @@ ${Message}`,
 ${Message}
 
 👇🏽𝗣𝗿𝗲𝘀𝘀 𝗯𝗲𝗹𝗼𝘄 𝗕𝘂𝘁𝘁𝗼𝗻𝘀👇🏽`,
-                footerText: `⌜𝐕𝐥𝐤𝐲𝐫𝐞 ×፝֟͜×${vers.vers}⌟\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
-                buttons: [
-                  {
-                    buttonId: `${ᴋᴇɪ}help`,
-                    buttonText: { displayText: `${ᴋᴇɪ}help` },
-                    type: 1,
-                  },
-                  {
-                    buttonId: `${ᴋᴇɪ}verify`,
-                    buttonText: { displayText: `${ᴋᴇɪ}verify` },
-                    type: 1,
-                  },
-                ],
-                headerType: 4,
-                imageMessage: media.message.imageMessage,
-              },
-              MessageType.buttonsMessage,
-              {
-                contextInfo: { mentionedJid: [MemNum] },
-              }
-            )
-            .catch((error) => console.log(error));
-        }
-      }
-    );
-  } catch (error) {
-    console.log(error);
-  }
+footerText: `⌜𝐕𝐥𝐤𝐲𝐫𝐞 ×፝֟͜×${vers.vers}⌟\nᴘʏᴛʜᴏɴ ☊ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ Ⓒ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+buttons: [
+{
+buttonId: `${ᴋᴇɪ}help`,
+buttonText: { displayText: `${ᴋᴇɪ}help` },
+type: 1,
+},
+{
+buttonId: `${ᴋᴇɪ}verify`,
+buttonText: { displayText: `${ᴋᴇɪ}verify` },
+type: 1,
+},
+],
+headerType: 4,
+imageMessage: media.message.imageMessage,
+},
+MessageType.buttonsMessage,
+{
+contextInfo: { mentionedJid: [MemNum] },
+}
+)
+.catch((error) => console.log(error));
+}
+}
+);
+} catch (error) {
+console.log(error);
+}
 };
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 /*        

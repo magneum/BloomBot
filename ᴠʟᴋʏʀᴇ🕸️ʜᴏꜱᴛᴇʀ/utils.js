@@ -5,12 +5,12 @@
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 class Handlers {
-  constructor(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇) {
-    this.sendMsessage = this.sendMsessage;
-  }
-  sendMsessage(id, content) {
-    this.sendMessage(id, content, MessageType.text);
-  }
+constructor(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇) {
+this.sendMsessage = this.sendMsessage;
+}
+sendMsessage(id, content) {
+this.sendMessage(id, content, MessageType.text);
+}
 }
 module.exports = Handlers;
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
