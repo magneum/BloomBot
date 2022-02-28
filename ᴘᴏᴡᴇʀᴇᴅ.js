@@ -26,7 +26,7 @@ if (
 shell.exec(
 `git pull && git add --all && git commit -am "❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ : v${
 vers.vers
-} ⚡ 𝐃𝐚𝐭𝐞: ${
+} 🦋 𝐃𝐚𝐭𝐞: ${
 year +
 "-" +
 month +
