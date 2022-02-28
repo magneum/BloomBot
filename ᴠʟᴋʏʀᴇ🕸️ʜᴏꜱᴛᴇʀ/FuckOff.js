@@ -30,40 +30,40 @@ Spotify: /^(spotify:|https:\/\/[a-z]+\.spotify\.com\/)/,
 Whatsapp:
 /^(https?:\/\/)?chat\.whatsapp\.com\/(?:invite\/)?([a-zA-Z0-9_-]{22})$/,
 };
-let LinkGC = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.groupInviteCode(ᴠʟᴋʏʀᴇ.chatId);
-let LinkRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i;
-let GChatInvt = "https://chat.whatsapp.com/" + LinkGC;
-let isGroupLink = LinkRegex.exec(ᴠʟᴋʏʀᴇ.body);
-let isLinkThisGc = new RegExp(GChatInvt, "i");
-let isgclink = isLinkThisGc.test(ᴠʟᴋʏʀᴇ.body);
+// let LinkGC = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.groupInviteCode(ᴠʟᴋʏʀᴇ.chatId);
+// let LinkRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i;
+// let GChatInvt = "https://chat.whatsapp.com/" + LinkGC;
+// let isGroupLink = LinkRegex.exec(ᴠʟᴋʏʀᴇ.body);
+// let isLinkThisGc = new RegExp(GChatInvt, "i");
+// let isgclink = isLinkThisGc.test(ᴠʟᴋʏʀᴇ.body);
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 /*              (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!*/
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
-if (!isgclink) {
-try {
-await ᴠʟᴋʏʀᴇ_Buttons.MIB(
-ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
-chat,
-ᴠʟᴋʏʀᴇ,
-`
-╔◇═══════════════◇╗
-┊ 𝐊𝐫𝐲𝐙𝐞𝐧❌𝐀𝐧𝐭𝐢-𝐋𝐢𝐧𝐤
-┊    𝐌𝐞𝐜𝐡𝐚𝐧𝐢𝐬𝐦
-╚◇═══════════════◇╝
+// if (!isgclink) {
+// try {
+// await ᴠʟᴋʏʀᴇ_Buttons.MIB(
+// ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+// chat,
+// ᴠʟᴋʏʀᴇ,
+// `
+// ╔◇═══════════════◇╗
+// ┊ 𝐊𝐫𝐲𝐙𝐞𝐧❌𝐀𝐧𝐭𝐢-𝐋𝐢𝐧𝐤
+// ┊    𝐌𝐞𝐜𝐡𝐚𝐧𝐢𝐬𝐦
+// ╚◇═══════════════◇╝
 
-🤖𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐈: _Kicked The Hell Outta The Group! 🎊One Less MoFo🎊_
-❗𝐌𝐨𝐅𝐨: @${ᴠʟᴋʏʀᴇ.sender}`,
-"./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_ᴀɴᴛɪʟɪɴᴋ.png"
-);
-await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
-.groupRemove(ᴠʟᴋʏʀᴇ.chatId, [ᴠʟᴋʏʀᴇ.sender])
-.catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
-return;
-} catch (error) {
-ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
-return;
-}
-}
+// 🤖𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐈: _Kicked The Hell Outta The Group! 🎊One Less MoFo🎊_
+// ❗𝐌𝐨𝐅𝐨: @${ᴠʟᴋʏʀᴇ.sender}`,
+// "./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_ᴀɴᴛɪʟɪɴᴋ.png"
+// );
+// await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
+// .groupRemove(ᴠʟᴋʏʀᴇ.chatId, [ᴠʟᴋʏʀᴇ.sender])
+// .catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
+// return;
+// } catch (error) {
+// ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
+// return;
+// }
+// }
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 /*              (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!*/
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
@@ -288,7 +288,6 @@ return;
 return;
 }
 }
-return;
 };
 module.exports = {
 FO: FuckOff,
