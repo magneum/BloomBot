@@ -65,7 +65,7 @@ return ᴠʟᴋʏʀᴇ_Buttons.MIB(
 chat,
 ᴠʟᴋʏʀᴇ,
 `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
-╔⧉༻🌿𝐓𝐨𝐩𝐢𝐜: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_  
+╔⧉༻💿𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}  
 ║🧈 *Added To DB for _${newScpt}_ command First Time!*
 ║🦋 _Try ${ᴋᴇɪ}${ᴅꜰɴᴀᴍᴇ} Again!_
 ╚════════════╝`,
@@ -168,11 +168,10 @@ return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 contentText: `•*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
 
 
-╔⧉༻🌿𝐓𝐨𝐩𝐢𝐜: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
+💿𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}
 📤𝗙𝗿𝗼𝗺: _Image_
 📥𝗧𝗼: _Telegra.ph URL_
-
-🔗 𝐔𝐫𝐥: ${util.format(gotTgh)}`,
+🔗𝐔𝐫𝐥: ${util.format(gotTgh)}`,
 footerText: `| (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 |\n${Clock}`,
 buttons: [
 {
