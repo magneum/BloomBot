@@ -538,7 +538,7 @@ await ᴠʟᴋʏʀᴇ_Buttons.MIB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 ᴠʟᴋʏʀᴇ,
-`*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
+`*『@${ᴘɴᴀᴍᴇ}』*
 ⏳ 𝗧𝗶𝗺𝗲: _Offline For 10s-20s_
 🍂 𝐕𝐥𝐤𝐲𝐫𝐞: _Is an Advance Whatsapp User-Bot!_
 🛰️ 𝐖𝐞𝐛𝐬𝐢𝐭𝐞: _https://KrakinzLab-Vlkyre.krakinzkon.repl.co_
@@ -726,7 +726,7 @@ userHalt.PermaTimeOut - (Date.now() - userHalt.TimeOut)
 
 return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
 ᴠʟᴋʏʀᴇ.chatId,
-`*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡**  
+`*『@${ᴘɴᴀᴍᴇ}』**  
 ❌ 𝗘𝗿𝗿𝗼𝗿: Wait For ${Time.seconds}/5s*`,
 MessageType.text,
 {
@@ -777,7 +777,7 @@ if (
 !member3.includes(ʟɴᴀᴍᴇ)
 ) {
 const buttonMessage = {
-contentText: `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡**
+contentText: `*『@${ᴘɴᴀᴍᴇ}』**
 🤖𝐕𝐞𝐫𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧: You Are Not Verified!
 
 𝐏𝐫𝐞𝐬𝐬 𝐁𝐞𝐥𝐨𝐰 𝐓𝐨 𝐕𝐞𝐫𝐢𝐟𝐲`,
@@ -815,7 +815,7 @@ return await ᴠʟᴋʏʀᴇ_Buttons.MTB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 chat,
 ᴠʟᴋʏʀᴇ,
-`*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡**  
+`*『@${ᴘɴᴀᴍᴇ}』**  
 ❌ 𝗘𝗿𝗿𝗼𝗿: No Such Command In Database!`
 );
 }
