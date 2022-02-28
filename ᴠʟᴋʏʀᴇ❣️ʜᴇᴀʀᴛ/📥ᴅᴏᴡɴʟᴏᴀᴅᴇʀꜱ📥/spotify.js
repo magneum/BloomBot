@@ -101,7 +101,7 @@ chat,
 ᴠʟᴋʏʀᴇ,
 `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
 
-╔⧉༻🌿𝐓𝐨𝐩𝐢𝐜: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
+╔⧉༻💿𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}
 ║🧈 *Added To DB for _${newScpt}_ command First Time!*
 ║🦋 _Try ${ᴋᴇɪ}${ᴅꜰɴᴀᴍᴇ} Again!_
 ╚════════════╝`,
@@ -195,11 +195,10 @@ chat,
 ᴠʟᴋʏʀᴇ,
 `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
 ❌𝗘𝗿𝗿𝗼𝗿: 𝗣𝗹𝗲𝗮𝘀𝗲 𝗖𝗵𝗼𝗼𝘀𝗲 𝗦𝗺𝗮𝗹𝗹𝗲𝗿 𝐀𝐮𝐝𝐢𝐨 𝗧𝗵𝗲𝗻 10-𝗺𝗶𝗻𝘂𝘁𝗲𝘀!
-╔⧉༻🌿𝐓𝐨𝐩𝐢𝐜: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
-║
-║🍻 𝐓𝐢𝐭𝐥𝐞: ${SpotGot.title}
-║⏰ 𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧: ${millisToMinutesAndSeconds(SpotGot.duration)}
-╚════════════╝`,
+
+💿𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}
+🍻 𝐓𝐢𝐭𝐥𝐞: ${SpotGot.title}
+⏰ 𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧: ${millisToMinutesAndSeconds(SpotGot.duration)}`,
 SpotGot.thumbnail
 );
 }
@@ -211,12 +210,12 @@ await ᴠʟᴋʏʀᴇ_Buttons.MIB(
 chat,
 ᴠʟᴋʏʀᴇ,
 `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
-╔⧉༻🌿𝐓𝐨𝐩𝐢𝐜: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
-║🍻 𝐓𝐢𝐭𝐥𝐞: ${SpotGot.title}
-║✒️ 𝐀𝐮𝐭𝐡𝐨𝐫: ${SpotGot.artist}
-║⏰ 𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧: ${millisToMinutesAndSeconds(SpotGot.duration)}
-║🔗 𝐋𝐢𝐧𝐤: ${SpotGot.url}
-╚════════════╝`,
+
+💿𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}
+🍻 𝐓𝐢𝐭𝐥𝐞: ${SpotGot.title}
+✒️ 𝐀𝐮𝐭𝐡𝐨𝐫: ${SpotGot.artist}
+⏰ 𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧: ${millisToMinutesAndSeconds(SpotGot.duration)}
+🔗 𝐋𝐢𝐧𝐤: ${SpotGot.url}`,
 SpotGot.thumbnail
 );
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;

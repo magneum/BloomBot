@@ -103,7 +103,7 @@ chat,
 ᴠʟᴋʏʀᴇ,
 `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
 
-╔⧉༻🌿𝐓𝐨𝐩𝐢𝐜: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
+╔⧉༻💿𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}
 ║🧈 *Added To DB for _${newScpt}_ command First Time!*
 ║🦋 _Try ${ᴋᴇɪ}${ᴅꜰɴᴀᴍᴇ} Again!_
 ╚════════════╝`,
@@ -193,17 +193,16 @@ await ᴠʟᴋʏʀᴇ_Buttons.MIB(
 chat,
 ᴠʟᴋʏʀᴇ,
 `*♡「 _@${ᴘɴᴀᴍᴇ}_ 」♡*
-╔⧉༻🌿𝐓𝐨𝐩𝐢𝐜: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
-║🍻 𝐓𝐢𝐭𝐥𝐞: ${song.title}
-║🎵 𝗣𝗹𝗮𝘆𝗲𝗱: ${song.playCount}
-║⏰ 𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧: ${song.duration}
-║✒️ 𝐀𝐮𝐭𝐡𝐨𝐫: ${song.author.name}
-║👍🏽‍ 𝗟𝗶𝗸𝗲𝘀: ${song.likes}
-║💬 𝗖𝗼𝗺𝗺𝗲𝗻𝘁𝘀: ${song.commentsCount}
-║⚡ 𝗚𝗲𝗻𝗿𝗲: ${song.genre}
-║🔗 𝐋𝐢𝐧𝐤: ${song.trackURL}
-╚════════════╝
 
+💿𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}
+🍻 𝐓𝐢𝐭𝐥𝐞: ${song.title}
+🎵 𝗣𝗹𝗮𝘆𝗲𝗱: ${song.playCount}
+⏰ 𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧: ${song.duration}
+✒️ 𝐀𝐮𝐭𝐡𝐨𝐫: ${song.author.name}
+👍🏽‍ 𝗟𝗶𝗸𝗲𝘀: ${song.likes}
+💬 𝗖𝗼𝗺𝗺𝗲𝗻𝘁𝘀: ${song.commentsCount}
+⚡ 𝗚𝗲𝗻𝗿𝗲: ${song.genre}
+🔗 𝐋𝐢𝐧𝐤: ${song.trackURL}
 📜 𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${song.description}`,
 song.thumbnail
 );
