@@ -72,6 +72,7 @@ const FormData = require("form-data");
 const Readline = require(`readline`);
 const fetch = require("node-fetch");
 const Google = require(`google-it`);
+const akaneko = require(`akaneko`);
 const ytdl = require("ytdl-core");
 const yts = require("yt-search");
 let cheerio = require(`cheerio`);
@@ -92,6 +93,7 @@ const fs = require(`fs`);
 const FLMPEG = require(`fluent-ffmpeg`)()
 .setFfprobePath(ffprobe.path)
 .setFfmpegPath(ffmpegInstaller.path);
+const FLMPEGProc = new FLMPEG();
 var heroku = new Heroku({
 token: _𝔏𝔞𝔟_.HEROKU_API_KEY,
 });
