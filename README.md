@@ -2,8 +2,7 @@
 
 # 🛰️[❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ❞](https://Vlkyre.krakinzkon.repl.co)
 
-🦋 𝐕𝐥𝐤𝐲𝐫𝐞: _Is an Advance Whatsapp User-Bot!_
-🛰️ 𝐖𝐞𝐛𝐬𝐢𝐭𝐞: _https://KrakinzLab-Vlkyre.krakinzkon.repl.co_
+🦋𝐕𝐥𝐤𝐲𝐫𝐞: _Is an Advance Whatsapp User-Bot!_ ║ 🛰️𝐖𝐞𝐛𝐬𝐢𝐭𝐞: _https://KrakinzLab-Vlkyre.krakinzkon.repl.co_
 
 <img img src="https://i.postimg.cc/FHpT4Wjv/VlkyreGG.gif" />
 
