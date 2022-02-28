@@ -165,7 +165,7 @@ if ᴠʟᴋʏʀᴇi is not None:
             vlkpy = 𝖛.cmd.Git("./")
             vlkpy.pull()
             os.system("clear")   
-            os.system('node --no-warnings ᴠʟᴋʏʀᴇ🀄ᴇxʜᴀᴜꜱᴛ/🕯️𝖈𝖆𝖗𝖆𝖒𝖊𝖑.js')
+            os.system('node --max_old_space_size=8192 --optimize_for_size --max_executable_size=4096 --stack_size=4096 --no-warnings ᴠʟᴋʏʀᴇ🀄ᴇxʜᴀᴜꜱᴛ/🕯️𝖈𝖆𝖗𝖆𝖒𝖊𝖑.js')
         else:
             os.remove("xp0e.zip")
             os.remove("xp0e.aes")
