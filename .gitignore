@@ -13,7 +13,6 @@ pids
 *.seed
 *.pid.lock
 package-lock.json
-index.js
 lib-cov
 coverage
 *.lcov
