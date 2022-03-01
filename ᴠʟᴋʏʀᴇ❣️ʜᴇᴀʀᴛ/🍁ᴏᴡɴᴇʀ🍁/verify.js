@@ -80,7 +80,7 @@ return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 ᴠʟᴋʏʀᴇ.chatId,
 {
 contentText: `*『@${ᴘɴᴀᴍᴇ}』*
-❌𝐍𝐎𝐓 𝐕𝐄𝐑𝐈𝐅𝐈𝐄𝐃: *Click:* _kryknz.github.io/Kry_Vlkyre/_
+❌𝐍𝐎𝐓 𝐕𝐄𝐑𝐈𝐅𝐈𝐄𝐃: *Click:* _kryknz.github.io/Vlkyre/_
 
 
 ❓𝐖𝐡𝐲 𝐓𝐨 𝐁𝐞 𝐕𝐞𝐫𝐢𝐟𝐢𝐞𝐝?

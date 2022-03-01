@@ -165,7 +165,7 @@ contentText: `お 👑𝐔𝐬𝐞𝐫: ${
 } ꧂
 
 🦋𝐕𝐥𝐤𝐲𝐫𝐞: _Is an Advance Whatsapp User-Bot!_
-🛰️ 𝐖𝐞𝐛𝐬𝐢𝐭𝐞: _kryknz.github.io/Kry_Vlkyre/_
+🛰️ 𝐖𝐞𝐛𝐬𝐢𝐭𝐞: _kryknz.github.io/Vlkyre/_
 
 𝐕𝐥𝐤𝐲𝐫𝐞💡𝐎𝐧𝐥𝐢𝐧𝐞
 🛰️𝐋𝐚𝐭𝐞𝐧𝐜𝐲: _${Ping}ms_
@@ -200,7 +200,7 @@ await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 "120363039223842047@g.us",
 {
 contentText: `🦋𝐕𝐥𝐤𝐲𝐫𝐞: _Is an Advance Whatsapp User-Bot!_
-🛰️ 𝐖𝐞𝐛𝐬𝐢𝐭𝐞: _kryknz.github.io/Kry_Vlkyre/_
+🛰️ 𝐖𝐞𝐛𝐬𝐢𝐭𝐞: _kryknz.github.io/Vlkyre/_
 
 𝐕𝐥𝐤𝐲𝐫𝐞💡𝐎𝐧𝐥𝐢𝐧𝐞
 🛰️𝐋𝐚𝐭𝐞𝐧𝐜𝐲: _${Ping}ms_
@@ -235,7 +235,7 @@ await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 "120363020792949649@g.us",
 {
 contentText: `🦋𝐕𝐥𝐤𝐲𝐫𝐞: _Is an Advance Whatsapp User-Bot!_
-🛰️ 𝐖𝐞𝐛𝐬𝐢𝐭𝐞: _kryknz.github.io/Kry_Vlkyre/_
+🛰️ 𝐖𝐞𝐛𝐬𝐢𝐭𝐞: _kryknz.github.io/Vlkyre/_
 
 𝐕𝐥𝐤𝐲𝐫𝐞💡𝐎𝐧𝐥𝐢𝐧𝐞
 🛰️𝐋𝐚𝐭𝐞𝐧𝐜𝐲: _${Ping}ms_
@@ -270,7 +270,7 @@ await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 "120363024871653603@g.us",
 {
 contentText: `🦋𝐕𝐥𝐤𝐲𝐫𝐞: _Is an Advance Whatsapp User-Bot!_
-🛰️ 𝐖𝐞𝐛𝐬𝐢𝐭𝐞: _kryknz.github.io/Kry_Vlkyre/_
+🛰️ 𝐖𝐞𝐛𝐬𝐢𝐭𝐞: _kryknz.github.io/Vlkyre/_
 
 𝐕𝐥𝐤𝐲𝐫𝐞💡𝐎𝐧𝐥𝐢𝐧𝐞
 🛰️𝐋𝐚𝐭𝐞𝐧𝐜𝐲: _${Ping}ms_
@@ -439,7 +439,7 @@ GroupID,
 {
 contentText: `👋🏻𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚, _To Admins Of This Group: Some Of Your Members Requested Our Vlkyre HQ to Add Our Bot In This Group.Have Fun!_
 🦋𝐕𝐥𝐤𝐲𝐫𝐞: _Is an Advance Whatsapp User-Bot!_
-🛰️𝐖𝐞𝐛𝐬𝐢𝐭𝐞/𝐆𝐢𝐭𝐡𝐮𝐛: _kryknz.github.io/Kry_Vlkyre/_
+🛰️𝐖𝐞𝐛𝐬𝐢𝐭𝐞/𝐆𝐢𝐭𝐡𝐮𝐛: _kryknz.github.io/Vlkyre/_
 
 
 
