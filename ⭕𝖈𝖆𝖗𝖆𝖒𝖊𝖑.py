@@ -20,6 +20,7 @@ load_dotenv("./ᴠʟᴋʏʀᴇ™.env")
 𝖈𝖔𝖗𝖑𝖊𝖝 = getenv("HEROKU", None)
 ᴠʟᴋʏʀᴇi = getenv("CODE", None)
 BFS = 64 * 1024
+subprocess.run(["git", "config", "pull.rebase", "false"], check=True, stdout=subprocess.PIPE).stdout
 subprocess.run(["python", "ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/🐍𝖛𝖑𝖐𝖕𝖞.py"], check=True, stdout=subprocess.PIPE).stdout
 class InterceptHandler(logging.Handler):
     LEVELS_MAP = {
