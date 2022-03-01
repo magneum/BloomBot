@@ -43,7 +43,7 @@ chat,
 ᴠʟᴋʏʀᴇ,
 MainText =`*『@${ᴘɴᴀᴍᴇ}』*
 🦋𝐕𝐥𝐤𝐲𝐫𝐞: _Is an Advance Whatsapp User-Bot!_
-🛰️𝐖𝐞𝐛𝐬𝐢𝐭𝐞/𝐆𝐢𝐭𝐡𝐮𝐛: _https://KrakinzLab-Vlkyre.krakinzkon.repl.co_
+🛰️𝐖𝐞𝐛𝐬𝐢𝐭𝐞/𝐆𝐢𝐭𝐡𝐮𝐛: _kryknz.github.io/Kry_Vlkyre/_
 
 
 

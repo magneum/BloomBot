@@ -119,7 +119,7 @@ contentText: `*『@${ᴘɴᴀᴍᴇ}』*
 🍄 ${ᴋᴇɪ}hentaimenu
 🥃 ${ᴋᴇɪ}humanmenu
 
-🛰️𝐖𝐞𝐛𝐬𝐢𝐭𝐞/𝐆𝐢𝐭𝐡𝐮𝐛: _https://KrakinzLab-Vlkyre.krakinzkon.repl.co_`,
+🛰️𝐖𝐞𝐛𝐬𝐢𝐭𝐞/𝐆𝐢𝐭𝐡𝐮𝐛: _kryknz.github.io/Kry_Vlkyre/_`,
 footerText: `\n❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❞\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
 buttons: [
 {
