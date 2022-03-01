@@ -195,108 +195,108 @@ MessageType.buttonsMessage
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 /*              (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!*/
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
-await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
-.sendMessage(
-"120363039223842047@g.us",
-{
-contentText: `🦋𝐕𝐥𝐤𝐲𝐫𝐞: _Is an Advance Whatsapp User-Bot!_
-🛰️ 𝐖𝐞𝐛𝐬𝐢𝐭𝐞: _kryknz.github.io/Vlkyre/_
+// await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
+// .sendMessage(
+// "120363039223842047@g.us",
+// {
+// contentText: `🦋𝐕𝐥𝐤𝐲𝐫𝐞: _Is an Advance Whatsapp User-Bot!_
+// 🛰️ 𝐖𝐞𝐛𝐬𝐢𝐭𝐞: _kryknz.github.io/Vlkyre/_
 
-𝐕𝐥𝐤𝐲𝐫𝐞💡𝐎𝐧𝐥𝐢𝐧𝐞
-🛰️𝐋𝐚𝐭𝐞𝐧𝐜𝐲: _${Ping}ms_
-📅𝐃𝐚𝐭𝐞: _${Clock}_
-⚙️𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_
-💻𝐏𝐥𝐚𝐭𝐟𝐨𝐫𝐦: _${os.platform()}_
-☕𝐔𝐩𝐓𝐢𝐦𝐞: _${runtime(process.uptime())}_
-🎮𝐑𝐀𝐌: _${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}_`,
-footerText: `\n❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❞\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
-buttons: [
-{
-buttonId: `${ᴋᴇɪ}vlkyre`,
-buttonText: { displayText: `${ᴋᴇɪ}vlkyre` },
-type: 1,
-},
-{
-buttonId: `${ᴋᴇɪ}help`,
-buttonText: { displayText: `${ᴋᴇɪ}help` },
-type: 1,
-},
-],
-headerType: 1,
-},
-MessageType.buttonsMessage
-)
-.catch((error) => console.log(error));
+// 𝐕𝐥𝐤𝐲𝐫𝐞💡𝐎𝐧𝐥𝐢𝐧𝐞
+// 🛰️𝐋𝐚𝐭𝐞𝐧𝐜𝐲: _${Ping}ms_
+// 📅𝐃𝐚𝐭𝐞: _${Clock}_
+// ⚙️𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_
+// 💻𝐏𝐥𝐚𝐭𝐟𝐨𝐫𝐦: _${os.platform()}_
+// ☕𝐔𝐩𝐓𝐢𝐦𝐞: _${runtime(process.uptime())}_
+// 🎮𝐑𝐀𝐌: _${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}_`,
+// footerText: `\n❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❞\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+// buttons: [
+// {
+// buttonId: `${ᴋᴇɪ}vlkyre`,
+// buttonText: { displayText: `${ᴋᴇɪ}vlkyre` },
+// type: 1,
+// },
+// {
+// buttonId: `${ᴋᴇɪ}help`,
+// buttonText: { displayText: `${ᴋᴇɪ}help` },
+// type: 1,
+// },
+// ],
+// headerType: 1,
+// },
+// MessageType.buttonsMessage
+// )
+// .catch((error) => console.log(error));
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 /*              (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!*/
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
-await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
-.sendMessage(
-"120363020792949649@g.us",
-{
-contentText: `🦋𝐕𝐥𝐤𝐲𝐫𝐞: _Is an Advance Whatsapp User-Bot!_
-🛰️ 𝐖𝐞𝐛𝐬𝐢𝐭𝐞: _kryknz.github.io/Vlkyre/_
+// await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
+// .sendMessage(
+// "120363020792949649@g.us",
+// {
+// contentText: `🦋𝐕𝐥𝐤𝐲𝐫𝐞: _Is an Advance Whatsapp User-Bot!_
+// 🛰️ 𝐖𝐞𝐛𝐬𝐢𝐭𝐞: _kryknz.github.io/Vlkyre/_
 
-𝐕𝐥𝐤𝐲𝐫𝐞💡𝐎𝐧𝐥𝐢𝐧𝐞
-🛰️𝐋𝐚𝐭𝐞𝐧𝐜𝐲: _${Ping}ms_
-📅𝐃𝐚𝐭𝐞: _${Clock}_
-⚙️𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_
-💻𝐏𝐥𝐚𝐭𝐟𝐨𝐫𝐦: _${os.platform()}_
-☕𝐔𝐩𝐓𝐢𝐦𝐞: _${runtime(process.uptime())}_
-🎮𝐑𝐀𝐌: _${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}_`,
-footerText: `\n❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❞\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
-buttons: [
-{
-buttonId: `${ᴋᴇɪ}vlkyre`,
-buttonText: { displayText: `${ᴋᴇɪ}vlkyre` },
-type: 1,
-},
-{
-buttonId: `${ᴋᴇɪ}help`,
-buttonText: { displayText: `${ᴋᴇɪ}help` },
-type: 1,
-},
-],
-headerType: 1,
-},
-MessageType.buttonsMessage
-)
-.catch((error) => console.log(error));
+// 𝐕𝐥𝐤𝐲𝐫𝐞💡𝐎𝐧𝐥𝐢𝐧𝐞
+// 🛰️𝐋𝐚𝐭𝐞𝐧𝐜𝐲: _${Ping}ms_
+// 📅𝐃𝐚𝐭𝐞: _${Clock}_
+// ⚙️𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_
+// 💻𝐏𝐥𝐚𝐭𝐟𝐨𝐫𝐦: _${os.platform()}_
+// ☕𝐔𝐩𝐓𝐢𝐦𝐞: _${runtime(process.uptime())}_
+// 🎮𝐑𝐀𝐌: _${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}_`,
+// footerText: `\n❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❞\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+// buttons: [
+// {
+// buttonId: `${ᴋᴇɪ}vlkyre`,
+// buttonText: { displayText: `${ᴋᴇɪ}vlkyre` },
+// type: 1,
+// },
+// {
+// buttonId: `${ᴋᴇɪ}help`,
+// buttonText: { displayText: `${ᴋᴇɪ}help` },
+// type: 1,
+// },
+// ],
+// headerType: 1,
+// },
+// MessageType.buttonsMessage
+// )
+// .catch((error) => console.log(error));
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 /*              (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!*/
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
-await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
-.sendMessage(
-"120363024871653603@g.us",
-{
-contentText: `🦋𝐕𝐥𝐤𝐲𝐫𝐞: _Is an Advance Whatsapp User-Bot!_
-🛰️ 𝐖𝐞𝐛𝐬𝐢𝐭𝐞: _kryknz.github.io/Vlkyre/_
+// await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
+// .sendMessage(
+// "120363024871653603@g.us",
+// {
+// contentText: `🦋𝐕𝐥𝐤𝐲𝐫𝐞: _Is an Advance Whatsapp User-Bot!_
+// 🛰️ 𝐖𝐞𝐛𝐬𝐢𝐭𝐞: _kryknz.github.io/Vlkyre/_
 
-𝐕𝐥𝐤𝐲𝐫𝐞💡𝐎𝐧𝐥𝐢𝐧𝐞
-🛰️𝐋𝐚𝐭𝐞𝐧𝐜𝐲: _${Ping}ms_
-📅𝐃𝐚𝐭𝐞: _${Clock}_
-⚙️𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_
-💻𝐏𝐥𝐚𝐭𝐟𝐨𝐫𝐦: _${os.platform()}_
-☕𝐔𝐩𝐓𝐢𝐦𝐞: _${runtime(process.uptime())}_
-🎮𝐑𝐀𝐌: _${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}_`,
-footerText: `\n❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❞\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
-buttons: [
-{
-buttonId: `${ᴋᴇɪ}vlkyre`,
-buttonText: { displayText: `${ᴋᴇɪ}vlkyre` },
-type: 1,
-},
-{
-buttonId: `${ᴋᴇɪ}help`,
-buttonText: { displayText: `${ᴋᴇɪ}help` },
-type: 1,
-},
-],
-headerType: 1,
-},
-MessageType.buttonsMessage
-)
-.catch((error) => console.log(error));
+// 𝐕𝐥𝐤𝐲𝐫𝐞💡𝐎𝐧𝐥𝐢𝐧𝐞
+// 🛰️𝐋𝐚𝐭𝐞𝐧𝐜𝐲: _${Ping}ms_
+// 📅𝐃𝐚𝐭𝐞: _${Clock}_
+// ⚙️𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_
+// 💻𝐏𝐥𝐚𝐭𝐟𝐨𝐫𝐦: _${os.platform()}_
+// ☕𝐔𝐩𝐓𝐢𝐦𝐞: _${runtime(process.uptime())}_
+// 🎮𝐑𝐀𝐌: _${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}_`,
+// footerText: `\n❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❞\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+// buttons: [
+// {
+// buttonId: `${ᴋᴇɪ}vlkyre`,
+// buttonText: { displayText: `${ᴋᴇɪ}vlkyre` },
+// type: 1,
+// },
+// {
+// buttonId: `${ᴋᴇɪ}help`,
+// buttonText: { displayText: `${ᴋᴇɪ}help` },
+// type: 1,
+// },
+// ],
+// headerType: 1,
+// },
+// MessageType.buttonsMessage
+// )
+// .catch((error) => console.log(error));
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 /*              (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!*/
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
