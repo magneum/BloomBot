@@ -688,7 +688,7 @@ chat,
 await user
 .delete()
 .catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
-await client.blockUser(ʟɴᴀᴍᴇ, "add");
+await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.blockUser(ʟɴᴀᴍᴇ, "add");
 return;
 }
 );
