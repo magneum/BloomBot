@@ -1101,7 +1101,7 @@ return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
 ᴠʟᴋʏʀᴇ.chatId,
 `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
 
-❌𝗘𝗿𝗿𝗼𝗿: _Wait For ${Time.seconds}/5s!_`,
+❌𝗘𝗿𝗿𝗼𝗿: _Wait For 5s!_`,
 MessageType.text,
 {
 contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
