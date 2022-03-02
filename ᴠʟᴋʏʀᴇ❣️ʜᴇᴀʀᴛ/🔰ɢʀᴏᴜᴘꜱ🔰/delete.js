@@ -37,7 +37,7 @@ KryChat,
 ᴠʟᴋʏʀᴇ,
 `*『@${ᴘɴᴀᴍᴇ}』*
 
-💿𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}
+🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
 ❌𝐃𝐞𝐧𝐢𝐞𝐝: _This Command is Only For Groups!_
 💡𝐅𝐢𝐱: _Add Me In Your Group and use!_`,
 "./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_Univ.png"
@@ -95,7 +95,7 @@ KryChat,
 ᴠʟᴋʏʀᴇ,
 `*『@${ᴘɴᴀᴍᴇ}』*
 
-💿𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}
+🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
 ❌𝐃𝐞𝐧𝐢𝐞𝐝: *This Ain't Telegram/Discord!*
 _Make Sure That Text Was Sent By Vlkyre Bot!_`
 );
