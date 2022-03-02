@@ -35,6 +35,8 @@ var MainText = `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
 🛰️𝐖𝐞𝐛𝐬𝐢𝐭𝐞/𝐆𝐢𝐭𝐡𝐮𝐛: _https://KrakinzLab-Vlkyre.krakinzkon.repl.co_
 
 ╔════⧉🦄 𝐑𝐚𝐧𝐝𝐨𝐦𝐬
+║• *${ᴋᴇɪ}leaderboard:*  _check group leaderboard_
+║• *${ᴋᴇɪ}rank:*  _check your rank_
 ║• *${ᴋᴇɪ}joke:*  _get random jokes_
 ║• *${ᴋᴇɪ}meme:*  _get random memes_
 ║• *${ᴋᴇɪ}fact*  _get random fact_

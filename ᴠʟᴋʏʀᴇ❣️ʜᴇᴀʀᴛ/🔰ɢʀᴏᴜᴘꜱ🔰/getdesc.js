@@ -53,7 +53,6 @@ try {
 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = "https://i.postimg.cc/wxWL9G8F/no-profile-picture-300x216.png";
 }
 console.log(ꜰɪɴᴀᴍᴇ + `\n` + groupData.desc + `\n` + 𝕻𝕻𝖑𝖊𝖙𝖊𝖗);
-
 const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
 ᴠʟᴋʏʀᴇ.chatId,
 { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 },
