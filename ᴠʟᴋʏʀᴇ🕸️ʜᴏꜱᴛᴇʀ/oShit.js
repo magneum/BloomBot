@@ -12,7 +12,7 @@ var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 require(`python-format-js`);
 const fs = require(`fs`);
-exports.catch = async (error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat) => {
+exports.catch = async (error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, KryChat) => {
 const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
 const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/[^\d-]/g, "");
 const ᴅꜰɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.commandName;
@@ -51,7 +51,7 @@ imageMessage: media.message.imageMessage,
 },
 MessageType.buttonsMessage,
 {
-quoted: chat,
+quoted: KryChat,
 contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
 }
 );
@@ -66,7 +66,7 @@ await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
 ❌ 𝗘𝗿𝗿𝗼𝗿: ${error}`,
 MessageType.text,
 {
-quoted: chat,
+quoted: KryChat,
 contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
 }
 );

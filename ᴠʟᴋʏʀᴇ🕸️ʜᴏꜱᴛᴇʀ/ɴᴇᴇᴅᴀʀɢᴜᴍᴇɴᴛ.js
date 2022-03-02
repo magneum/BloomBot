@@ -12,7 +12,7 @@ var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
 exports.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ = async (
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
-chat,
+KryChat,
 ᴠʟᴋʏʀᴇ,
 ʟɴᴀᴍᴇ,
 ᴘɴᴀᴍᴇ,
@@ -26,13 +26,13 @@ return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
 ${needs === undefined ? `null` : needs}`,
 MessageType.text,
 {
-quoted: chat,
+quoted: KryChat,
 contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
 }
 );
 return ᴠʟᴋʏʀᴇ_Buttons.MTB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
-chat,
+KryChat,
 ᴠʟᴋʏʀᴇ,
 `*@${ᴘɴᴀᴍᴇ}:* \n${needs === undefined ? `null` : needs}`
 );
