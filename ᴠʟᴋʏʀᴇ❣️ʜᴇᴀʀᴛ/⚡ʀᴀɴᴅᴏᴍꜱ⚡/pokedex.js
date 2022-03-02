@@ -26,7 +26,7 @@ var newScpt = scriptName.slice(0, -3).toLowerCase();
 module.exports = {
 name: newScpt,
 ᴠʟᴋʏʀᴇӄǟɨʐօ: `*${ᴋᴇɪ}pokedex* _pokemon-name_`,
-async handle(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, KryChat, ᴠʟᴋʏʀᴇ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
+async handle(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, KryChat, ᴠʟᴋʏʀᴇ, 𝖆𝖗𝖌𝖚𝖒𝖊𝖓𝖙, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
 try {
 const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
 const ᴅꜰɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.commandName;
@@ -49,7 +49,7 @@ _This Command is Only For Groups!_!`
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 /*              (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!*/
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
-if (Needs.length === 0) {
+if (𝖆𝖗𝖌𝖚𝖒𝖊𝖓𝖙.length === 0) {
 var 𝓜Usage = ꜱɪᴛʀᴀᴘ.get(ᴠʟᴋʏʀᴇ.commandName);
 var ᴍɪᴢᴜᴋɪᴍᴏʀᴇ =
 𝓜Usage.ᴠʟᴋʏʀᴇӄǟɨʐօ === undefined ? `Null` : 𝓜Usage.ᴠʟᴋʏʀᴇӄǟɨʐօ;
@@ -71,7 +71,7 @@ let json;
 try {
 let res = await fetch(
 API(`https://some-random-api.ml`, `/pokedex`, {
-pokemon: Needs.join(` `),
+pokemon: 𝖆𝖗𝖌𝖚𝖒𝖊𝖓𝖙.join(` `),
 })
 );
 json = await res.json();
@@ -84,7 +84,7 @@ return;
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 pokemon.configure({ apiKey: "123abc" });
 await pokemon.card
-.all({ q: `name:${Needs.join(" ")}` })
+.all({ q: `name:${𝖆𝖗𝖌𝖚𝖒𝖊𝖓𝖙.join(" ")}` })
 .then(async (card) => {
 try {
 var PokeInfo = `*꧁『 @${ᴘɴᴀᴍᴇ} 』꧂*

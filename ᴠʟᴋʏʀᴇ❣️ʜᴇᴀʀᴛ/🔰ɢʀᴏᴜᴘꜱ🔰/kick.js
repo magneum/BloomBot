@@ -21,7 +21,7 @@ var newScpt = scriptName.slice(0, -3).toLowerCase();
 module.exports = {
 name: newScpt,
 ᴠʟᴋʏʀᴇӄǟɨʐօ: `*${ᴋᴇɪ}kick* _tag_ or _reply to person's text_`,
-async handle(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, KryChat, ᴠʟᴋʏʀᴇ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
+async handle(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, KryChat, ᴠʟᴋʏʀᴇ, 𝖆𝖗𝖌𝖚𝖒𝖊𝖓𝖙, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
 try {
 const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
 const ᴅꜰɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.commandName;
@@ -163,7 +163,7 @@ return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 return;
 }
 
-if (!Needs[0]) {
+if (!𝖆𝖗𝖌𝖚𝖒𝖊𝖓𝖙[0]) {
 return ᴠʟᴋʏʀᴇ_Buttons.MTB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 KryChat,
@@ -175,8 +175,8 @@ Reply to the person you want to kick or tag them.\n\nFor instance,  *${ᴋᴇɪ}
 );
 }
 
-if (Needs[0][0] == `@`) {
-const number = Needs[0].substring(1);
+if (𝖆𝖗𝖌𝖚𝖒𝖊𝖓𝖙[0][0] == `@`) {
+const number = 𝖆𝖗𝖌𝖚𝖒𝖊𝖓𝖙[0].substring(1);
 if (isNaN(number)) {
 return ᴠʟᴋʏʀᴇ_Buttons.MTB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,

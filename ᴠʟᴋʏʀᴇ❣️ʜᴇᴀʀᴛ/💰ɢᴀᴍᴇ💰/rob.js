@@ -54,7 +54,7 @@ name: newScpt,
 ╔◇╝ ❓ 𝗜 𝗱𝗼𝗻'𝘁 𝗵𝗮𝘃𝗲 𝗮𝗻𝘆 𝘀𝗮𝗳𝗲𝘁𝘆 𝗶𝗻 𝗺𝘆 𝗮𝗰𝗰𝗼𝘂𝗻𝘁! 𝗛𝗼𝘄 𝗺𝘂𝗰𝗵 𝗺𝗼𝗻𝗲𝘆 𝗰𝗮𝗻 𝗯𝗲 𝗿𝗼𝗯𝗯𝗲𝗱?
 ║ _In that case buy using ${ᴋᴇɪ}buy. Max-Money-Robbed when no safety: random(500-1000)_
 ╚════════════╝`,
-async handle(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, KryChat, ᴠʟᴋʏʀᴇ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
+async handle(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, KryChat, ᴠʟᴋʏʀᴇ, 𝖆𝖗𝖌𝖚𝖒𝖊𝖓𝖙, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
 try {
 const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
 const ᴅꜰɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.commandName;
@@ -582,8 +582,8 @@ _𝔏𝔞𝔟_.RCLR
 );
 }
 );
-} else if (Needs[0] && Needs[0].startsWith("@")) {
-var TagPerson = Needs[0].replace(/[+ ]/g, "");
+} else if (𝖆𝖗𝖌𝖚𝖒𝖊𝖓𝖙[0] && 𝖆𝖗𝖌𝖚𝖒𝖊𝖓𝖙[0].startsWith("@")) {
+var TagPerson = 𝖆𝖗𝖌𝖚𝖒𝖊𝖓𝖙[0].replace(/[+ ]/g, "");
 var TagMention = TagPerson + "@s.whatsapp.net";
 Economy.findOne(
 {
