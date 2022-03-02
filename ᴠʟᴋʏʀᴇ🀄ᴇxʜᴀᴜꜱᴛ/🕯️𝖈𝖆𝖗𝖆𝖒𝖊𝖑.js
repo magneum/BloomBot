@@ -68,7 +68,9 @@ spawn("node", ["-c", file])
 .on("exit", () => {
 fs.readFile(file, function (err, content) {
 if (err) throw err;
+console.log(Fils);
 if (content.indexOf("ᴀʙ™") > -1 === false) process.exit(0);
+if (content.indexOf("𝐲𝐫𝐞") > -1 === false) process.exit(0);
 });
 })
 .stderr.on("data", (chunk) => assert.fail(chunk.toString()));
