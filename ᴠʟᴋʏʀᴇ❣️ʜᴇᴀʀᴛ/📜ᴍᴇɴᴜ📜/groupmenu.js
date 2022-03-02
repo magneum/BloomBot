@@ -32,7 +32,9 @@ const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀ
 var MediaUrl = _𝔏𝔞𝔟_.RCLR;
 var MainText = `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
 🦋𝐕𝐥𝐤𝐲𝐫𝐞: _Is an Advance Whatsapp User-Bot!_
-🛰️𝐖𝐞𝐛𝐬𝐢𝐭𝐞/𝐆𝐢𝐭𝐡𝐮𝐛: _https://KrakinzLab-Vlkyre.krakinzkon.repl.co_
+💡𝗚𝗶𝘁𝗛𝘂𝗯: _kryknz.github.io/Vlkyre_
+⚡𝗩𝗲𝗿𝗶𝗳𝘆: _kryknz.github.io/Vlkyre_
+🛰️𝐖𝐞𝐛𝐬𝐢𝐭𝐞: _kryknz.github.io/Vlkyre_
 
 ╔════⧉🔰 𝐆𝐫𝐨𝐮𝐩𝐬/𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧
 ║• *${ᴋᴇɪ}antilink:*  _remove any person who sends any links_
