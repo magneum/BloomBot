@@ -40,7 +40,7 @@ return ᴠʟᴋʏʀᴇ_Buttons.MTB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 KryChat,
 ᴠʟᴋʏʀᴇ,
-`*꧁『 @${ᴘɴᴀᴍᴇ} 』꧂* 
+`*꧁『@${ᴘɴᴀᴍᴇ}』꧂* 
 
 🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
 _This Command is Only For Groups!_!`
@@ -87,7 +87,7 @@ await pokemon.card
 .all({ q: `name:${𝖆𝖗𝖌𝖚𝖒𝖊𝖓𝖙.join(" ")}` })
 .then(async (card) => {
 try {
-var PokeInfo = `*꧁『 @${ᴘɴᴀᴍᴇ} 』꧂*
+var PokeInfo = `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
 
 🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
 💫 *Name:* ${json.name}

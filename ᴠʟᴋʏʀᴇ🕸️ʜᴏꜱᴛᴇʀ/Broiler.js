@@ -42,8 +42,7 @@ MessageType.image,
 await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
 ᴠʟᴋʏʀᴇ.chatId,
 {
-contentText: `*꧁『 @${ᴘɴᴀᴍᴇ} 』꧂*
-
+contentText: `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
 💿𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}
 ❌𝗘𝗿𝗿𝗼𝗿: Api Timeout.Try Again Later!
 🎖️𝗕𝗮𝗱𝗴𝗲: ${userBadge.Badge}
@@ -79,8 +78,7 @@ MessageType.image,
 await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
 ᴠʟᴋʏʀᴇ.chatId,
 {
-contentText: `*꧁『 @${ᴘɴᴀᴍᴇ} 』꧂*
-
+contentText: `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
 💿𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}
 ❌𝗘𝗿𝗿𝗼𝗿: Api Timeout.Try Again Later!
 🎖️𝗕𝗮𝗱𝗴𝗲: ${userBadge.Badge}
@@ -118,8 +116,7 @@ MessageType.image,
 await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
 ᴠʟᴋʏʀᴇ.chatId,
 {
-contentText: `*꧁『 @${ᴘɴᴀᴍᴇ} 』꧂*
-
+contentText: `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
 💿𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}
 ❌𝗘𝗿𝗿𝗼𝗿: Api Timeout.Try Again Later!
 🎖️𝗕𝗮𝗱𝗴𝗲: ${userBadge.Badge}
@@ -155,8 +152,7 @@ MessageType.image,
 await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
 ᴠʟᴋʏʀᴇ.chatId,
 {
-contentText: `*꧁『 @${ᴘɴᴀᴍᴇ} 』꧂*
-
+contentText: `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
 💿𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}
 ❌𝗘𝗿𝗿𝗼𝗿: Api Timeout.Try Again Later!
 🎖️𝗕𝗮𝗱𝗴𝗲: ${userBadge.Badge}
@@ -194,8 +190,7 @@ MessageType.image,
 await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
 ᴠʟᴋʏʀᴇ.chatId,
 {
-contentText: `*꧁『 @${ᴘɴᴀᴍᴇ} 』꧂*
-
+contentText: `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
 💿𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}
 ❌𝗘𝗿𝗿𝗼𝗿: Api Timeout.Try Again Later!
 🎖️𝗕𝗮𝗱𝗴𝗲: ${userBadge.Badge}
@@ -231,8 +226,7 @@ MessageType.image,
 await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
 ᴠʟᴋʏʀᴇ.chatId,
 {
-contentText: `*꧁『 @${ᴘɴᴀᴍᴇ} 』꧂*
-
+contentText: `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
 💿𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}
 ❌𝗘𝗿𝗿𝗼𝗿: Api Timeout.Try Again Later!
 🎖️𝗕𝗮𝗱𝗴𝗲: ${userBadge.Badge}
@@ -270,8 +264,7 @@ MessageType.image,
 await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
 ᴠʟᴋʏʀᴇ.chatId,
 {
-contentText: `*꧁『 @${ᴘɴᴀᴍᴇ} 』꧂*
-
+contentText: `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
 💿𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}
 ❌𝗘𝗿𝗿𝗼𝗿: Api Timeout.Try Again Later!
 🎖️𝗕𝗮𝗱𝗴𝗲: ${userBadge.Badge}
@@ -307,8 +300,7 @@ MessageType.image,
 await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
 ᴠʟᴋʏʀᴇ.chatId,
 {
-contentText: `*꧁『 @${ᴘɴᴀᴍᴇ} 』꧂*
-
+contentText: `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
 💿𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}
 ❌𝗘𝗿𝗿𝗼𝗿: Api Timeout.Try Again Later!
 🎖️𝗕𝗮𝗱𝗴𝗲: ${userBadge.Badge}
@@ -346,8 +338,7 @@ MessageType.image,
 await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
 ᴠʟᴋʏʀᴇ.chatId,
 {
-contentText: `*꧁『 @${ᴘɴᴀᴍᴇ} 』꧂*
-
+contentText: `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
 💿𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}
 ❌𝗘𝗿𝗿𝗼𝗿: Api Timeout.Try Again Later!
 🎖️𝗕𝗮𝗱𝗴𝗲: ${userBadge.Badge}
@@ -383,8 +374,7 @@ MessageType.image,
 await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
 ᴠʟᴋʏʀᴇ.chatId,
 {
-contentText: `*꧁『 @${ᴘɴᴀᴍᴇ} 』꧂*
-
+contentText: `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
 💿𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}
 ❌𝗘𝗿𝗿𝗼𝗿: Api Timeout.Try Again Later!
 🎖️𝗕𝗮𝗱𝗴𝗲: ${userBadge.Badge}
@@ -422,8 +412,7 @@ MessageType.image,
 await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
 ᴠʟᴋʏʀᴇ.chatId,
 {
-contentText: `*꧁『 @${ᴘɴᴀᴍᴇ} 』꧂*
-
+contentText: `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
 💿𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}
 ❌𝗘𝗿𝗿𝗼𝗿: Api Timeout.Try Again Later!
 🎖️𝗕𝗮𝗱𝗴𝗲: ${userBadge.Badge}
@@ -459,8 +448,7 @@ MessageType.image,
 await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
 ᴠʟᴋʏʀᴇ.chatId,
 {
-contentText: `*꧁『 @${ᴘɴᴀᴍᴇ} 』꧂*
-
+contentText: `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
 💿𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}
 ❌𝗘𝗿𝗿𝗼𝗿: Api Timeout.Try Again Later!
 🎖️𝗕𝗮𝗱𝗴𝗲: ${userBadge.Badge}
