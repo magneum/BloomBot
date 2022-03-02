@@ -30,6 +30,8 @@ const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀ
 let { dl_link, thumb, title, filesize, filesizeF } = await yta(Found.url,"id4");
 try{
     const DirectFile = await Tinyurl(dl_link);
+} catch {
+    
 }
 
 if (filesize > 80000) {
