@@ -42,7 +42,7 @@ KryChat,
 ᴠʟᴋʏʀᴇ,
 `*『@${ᴘɴᴀᴍᴇ}』* 
 
-💿𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}
+🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
 _This Command is Only For Groups!_!`
 );
 }
@@ -89,7 +89,7 @@ await pokemon.card
 try {
 var PokeInfo = `*『@${ᴘɴᴀᴍᴇ}』*
 
-💿𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}
+🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
 💫 *Name:* ${json.name}
 〽️ *Pokedex ID:* ${json.id}
 🎀 *Type:* ${json.type}
