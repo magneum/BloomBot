@@ -7,6 +7,7 @@ const Kolor = require("chalk");
 const _𝔏𝔞𝔟_ = require(`./_𝔏𝔞𝔟_`);
 var ӄʀʏօȶɛӄ = require(`./ᴠʟᴋʏʀᴇƈʟǟ`);
 exports.ӄʀʏօȶ = function (messageInstance, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, groupMetadata) {
+try {
 var DEVstring = _𝔏𝔞𝔟_.KATE;
 var ᴠʟᴋʏʀᴇ = new ӄʀʏօȶɛӄ();
 var prefix = _𝔏𝔞𝔟_.FOXTROT + `\\w+`;
@@ -33,7 +34,9 @@ var jsonMessage = JSON.stringify(messageInstance);
 : ``;
 ᴠʟᴋʏʀᴇ.isReply =
 ᴠʟᴋʏʀᴇ.mimeType === `extendedTextMessage` &&
-messageInstance.message.extendedTextMessage.hasOwnProperty(`contextInfo`) &&
+messageInstance.message.extendedTextMessage.hasOwnProperty(
+`contextInfo`
+) &&
 messageInstance.message.extendedTextMessage.contextInfo.hasOwnProperty(
 `stanzaId`
 );
@@ -77,7 +80,8 @@ messageInstance.message.extendedTextMessage.contextInfo.hasOwnProperty(
 ? messageInstance.message.imageMessage.caption
 : ``;
 ᴠʟᴋʏʀᴇ.isGIF =
-ᴠʟᴋʏʀᴇ.type === `video` && messageInstance.message.videoMessage.gifPlayback;
+ᴠʟᴋʏʀᴇ.type === `video` &&
+messageInstance.message.videoMessage.gifPlayback;
 ᴠʟᴋʏʀᴇ.isReplyGIF = ᴠʟᴋʏʀᴇ.isReply
 ? jsonMessage.indexOf(`videoMessage`) !== -1 &&
 messageInstance.message.extendedTextMessage.contextInfo.quotedMessage
@@ -134,6 +138,22 @@ for (var i in participants) {
 participants[i].isAdmin ? admins.push(participants[i].jid) : ``;
 }
 return admins;
+}
+} catch (error) {
+console.log(error);
+var sourceGue = require("child_process").exec(
+"python ⭕𝖈𝖆𝖗𝖆𝖒𝖊𝖑.py",
+(error, stdout, stderr) => {
+if (error) console.log(Kolor.red(error));
+if (stderr) console.log(Kolor.yellow(stderr));
+console.log(Kolor.green(stdout));
+console.log("Child ID: ", sourceGue.pid);
+}
+);
+sourceGue.on("exit", function (code, signal) {
+if (code) console.log(code);
+if (signal) console.log(signal);
+});
 }
 };
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
