@@ -30,8 +30,14 @@ const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀ
 let { dl_link, thumb, title, filesize, filesizeF } = await yta(Found.url,"id4");
 try{
     const DirectFile = await Tinyurl(dl_link);
-} catch {
-    
+} catch (error) {
+    console.log(`⬡═══════════════════| 🐞𝐄𝐫𝐫𝐨𝐫: \n` + error);
+    userBadge.Limits = userBadge.Limits + 1;
+    await userBadge
+    .save()
+    .catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, KryChat));
+    return ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, KryChat);
+
 }
 
 if (filesize > 80000) {
