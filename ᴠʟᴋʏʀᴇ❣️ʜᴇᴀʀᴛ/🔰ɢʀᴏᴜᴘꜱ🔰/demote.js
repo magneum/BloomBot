@@ -37,7 +37,7 @@ return ᴠʟᴋʏʀᴇ_Buttons.MIB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 KryChat,
 ᴠʟᴋʏʀᴇ,
-`*『@${ᴘɴᴀᴍᴇ}』*
+`*꧁『 @${ᴘɴᴀᴍᴇ} 』꧂*
 
 🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
 ❌𝐃𝐞𝐧𝐢𝐞𝐝: _This Command is Only For Groups!_
@@ -53,7 +53,7 @@ return ᴠʟᴋʏʀᴇ_Buttons.MIB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 KryChat,
 ᴠʟᴋʏʀᴇ,
-`*『@${ᴘɴᴀᴍᴇ}』*
+`*꧁『 @${ᴘɴᴀᴍᴇ} 』꧂*
 
 🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
 ❌𝐃𝐞𝐧𝐢𝐞𝐝: _How Can I Use Admin Only Commands If i am not admin?_
@@ -69,7 +69,7 @@ return ᴠʟᴋʏʀᴇ_Buttons.MIB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 KryChat,
 ᴠʟᴋʏʀᴇ,
-`*『@${ᴘɴᴀᴍᴇ}』*
+`*꧁『 @${ᴘɴᴀᴍᴇ} 』꧂*
 
 ╔⧉༻🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
 ║❌𝐃𝐞𝐧𝐢𝐞𝐝: _How Can I Use Admin Only Commands If i am not admin?_
@@ -130,7 +130,7 @@ return ᴠʟᴋʏʀᴇ_Buttons.MTB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 KryChat,
 ᴠʟᴋʏʀᴇ,
-`*『@${ᴘɴᴀᴍᴇ}』*
+`*꧁『 @${ᴘɴᴀᴍᴇ} 』꧂*
 
 🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
 ${contact} is the owner of the group`
@@ -147,7 +147,7 @@ return ᴠʟᴋʏʀᴇ_Buttons.MTB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 KryChat,
 ᴠʟᴋʏʀᴇ,
-`*『@${ᴘɴᴀᴍᴇ}』*
+`*꧁『 @${ᴘɴᴀᴍᴇ} 』꧂*
 
 🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
 ${contact} *is demoted from admin*`
@@ -157,7 +157,7 @@ return ᴠʟᴋʏʀᴇ_Buttons.MTB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 KryChat,
 ᴠʟᴋʏʀᴇ,
-`*『@${ᴘɴᴀᴍᴇ}』*
+`*꧁『 @${ᴘɴᴀᴍᴇ} 』꧂*
 
 🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
 ${contact} *was not an admin*`
@@ -173,7 +173,7 @@ return ᴠʟᴋʏʀᴇ_Buttons.MTB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 KryChat,
 ᴠʟᴋʏʀᴇ,
-`*『@${ᴘɴᴀᴍᴇ}』*
+`*꧁『 @${ᴘɴᴀᴍᴇ} 』꧂*
 
 🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
 *Person not found!*`

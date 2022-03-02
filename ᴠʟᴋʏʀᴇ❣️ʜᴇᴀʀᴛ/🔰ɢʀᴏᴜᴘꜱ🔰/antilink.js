@@ -37,7 +37,7 @@ return ᴠʟᴋʏʀᴇ_Buttons.MIB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 KryChat,
 ᴠʟᴋʏʀᴇ,
-`*『@${ᴘɴᴀᴍᴇ}』*
+`*꧁『 @${ᴘɴᴀᴍᴇ} 』꧂*
 
 🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
 ❌𝐃𝐞𝐧𝐢𝐞𝐝: _This Command is Only For Groups!_
@@ -53,7 +53,7 @@ return ᴠʟᴋʏʀᴇ_Buttons.MIB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 KryChat,
 ᴠʟᴋʏʀᴇ,
-`*『@${ᴘɴᴀᴍᴇ}』*
+`*꧁『 @${ᴘɴᴀᴍᴇ} 』꧂*
 
 🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
 ❌𝐃𝐞𝐧𝐢𝐞𝐝: _How Can I Use Admin Only Commands If i am not admin?_
@@ -69,7 +69,7 @@ return ᴠʟᴋʏʀᴇ_Buttons.MIB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 KryChat,
 ᴠʟᴋʏʀᴇ,
-`*『@${ᴘɴᴀᴍᴇ}』*
+`*꧁『 @${ᴘɴᴀᴍᴇ} 』꧂*
 
 ╔⧉༻🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
 ║❌𝐃𝐞𝐧𝐢𝐞𝐝: _How Can I Use Admin Only Commands If i am not admin?_
@@ -126,7 +126,7 @@ await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .sendMessage(
 ᴠʟᴋʏʀᴇ.chatId,
 {
-contentText: `*『@${ᴘɴᴀᴍᴇ}』*
+contentText: `*꧁『 @${ᴘɴᴀᴍᴇ} 』꧂*
 
 🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
 📜𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${ᴠʟᴋʏʀᴇ.groupName}
@@ -168,7 +168,7 @@ await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .sendMessage(
 ᴠʟᴋʏʀᴇ.chatId,
 {
-contentText: `*『@${ᴘɴᴀᴍᴇ}』* 
+contentText: `*꧁『 @${ᴘɴᴀᴍᴇ} 』꧂* 
 
 🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
 📜𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${ᴠʟᴋʏʀᴇ.groupName}
@@ -224,7 +224,7 @@ await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .sendMessage(
 ᴠʟᴋʏʀᴇ.chatId,
 {
-contentText: `*『@${ᴘɴᴀᴍᴇ}』*
+contentText: `*꧁『 @${ᴘɴᴀᴍᴇ} 』꧂*
 
 🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
 📜𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${ᴠʟᴋʏʀᴇ.groupName}
@@ -269,7 +269,7 @@ await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .sendMessage(
 ᴠʟᴋʏʀᴇ.chatId,
 {
-contentText: `*『@${ᴘɴᴀᴍᴇ}』*
+contentText: `*꧁『 @${ᴘɴᴀᴍᴇ} 』꧂*
 
 🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
 📜𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${ᴠʟᴋʏʀᴇ.groupName}

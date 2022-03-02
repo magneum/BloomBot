@@ -29,7 +29,7 @@ MessageType.image,
 await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
 ᴠʟᴋʏʀᴇ.chatId,
 {
-contentText: `*『@${ᴘɴᴀᴍᴇ}』*
+contentText: `*꧁『 @${ᴘɴᴀᴍᴇ} 』꧂*
 
 🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
 ❌𝗘𝗿𝗿𝗼𝗿: _Api Timeout.Try Again Later!_`,

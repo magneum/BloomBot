@@ -56,7 +56,7 @@ return ᴠʟᴋʏʀᴇ_Buttons.MIB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 KryChat,
 ᴠʟᴋʏʀᴇ,
-`*『@${ᴘɴᴀᴍᴇ}』*
+`*꧁『 @${ᴘɴᴀᴍᴇ} 』꧂*
 
 🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_  
 🧈 *Added To DB for _${newScpt}_ command First Time!*
