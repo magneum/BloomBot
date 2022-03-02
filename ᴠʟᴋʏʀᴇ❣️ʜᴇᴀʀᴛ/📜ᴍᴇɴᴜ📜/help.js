@@ -84,9 +84,9 @@ return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 {
 contentText: `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
 🦋𝐕𝐥𝐤𝐲𝐫𝐞: _Is an Advance Whatsapp User-Bot!_
-💡𝗚𝗶𝘁𝗛𝘂𝗯: _Kryknz.GitHub.Io/Vlkyre_
-⚡𝗩𝗲𝗿𝗶𝗳𝘆: _Kryknz.GitHub.Io/Vlkyre_
-🛰️𝐖𝐞𝐛𝐬𝐢𝐭𝐞: _Kryknz.GitHub.Io/Vlkyre_
+💡𝗚𝗶𝘁𝗛𝘂𝗯: Https://Kryknz.GitHub.Io/Vlkyre
+🛰️𝐖𝐞𝐛𝐬𝐢𝐭𝐞: Https://Kryknz.GitHub.Io/Vlkyre
+⚡𝗩𝗲𝗿𝗶𝗳𝘆: _Press☝🏽‍️Link_
 🔒𝐒𝐭𝐚𝐭𝐮𝐬: _Is Online!_
 🛰️𝐋𝐚𝐭𝐞𝐧𝐜𝐲: _${Ping}ms_
 📅𝐃𝐚𝐭𝐞: _${Clock}_
