@@ -47,7 +47,7 @@ KryChat,
 var message = ``;
 for (let admin of ᴠʟᴋʏʀᴇ.groupAdmins) {
 let number = admin.split(`@`)[0];
-message += `@${number} `;
+message += `@${number}\n`;
 }
 try {
 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.getProfilePicture(ᴠʟᴋʏʀᴇ.chatId);
