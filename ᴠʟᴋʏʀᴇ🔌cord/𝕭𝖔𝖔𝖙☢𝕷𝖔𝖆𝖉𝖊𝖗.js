@@ -451,7 +451,6 @@ contentText: `👋🏻𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚, _To Admins Of Th
 ╔◇╝🧀 𝐃𝐞𝐟𝐚𝐮𝐥𝐭 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬! ꧂
 ║◇ *${ᴋᴇɪ}help:* _read all commands of Vlkyre!_
 ║◇ *${ᴋᴇɪ}rules:* _read rules of Vlkyre!_
-║◇ *${ᴋᴇɪ}faq:* _read frequesntly asked questions!_
 ║◇ *${ᴋᴇɪ}verify:* _verify yourself to use Vlkyre!_
 ╚════════════╝
 
@@ -622,8 +621,10 @@ return ᴠʟᴋʏʀᴇ_Buttons.MIB(
 KryChat,
 ᴠʟᴋʏʀᴇ,
 `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
-🍂 𝐕𝐥𝐤𝐲𝐫𝐞: _Is an Advance Whatsapp User-Bot!_
-🛰️ 𝐖𝐞𝐛𝐬𝐢𝐭𝐞: _https://KrakinzLab-Vlkyre.krakinzkon.repl.co_
+🦋𝐕𝐥𝐤𝐲𝐫𝐞: _Is an Advance Whatsapp User-Bot!_
+💡𝗚𝗶𝘁𝗛𝘂𝗯: Https://Kryknz.GitHub.Io/Vlkyre
+🛰️𝐖𝐞𝐛𝐬𝐢𝐭𝐞: Https://Kryknz.GitHub.Io/Vlkyre
+⚡𝗩𝗲𝗿𝗶𝗳𝘆: _Press☝🏽‍️Link_
 
 ╔◇═══════════════◇╗
 ┊ 𝐊𝐫𝐲𝐙𝐞𝐧👑𝐀𝐧𝐭𝐢-𝐏𝐫𝐢𝐯𝐚𝐭𝐞
@@ -631,24 +632,21 @@ KryChat,
 ╚◇═══════════════◇╝
 
 ✋🏽‍𝐖𝐚𝐢𝐭 𝐅𝐨𝐫 𝐌𝐲 𝐎𝐰𝐧𝐞𝐫 𝐓𝐨 𝐑𝐞𝐬𝐩𝐨𝐧𝐝!
-⚡• _Dear Random User, This Private Is Being Guarded By Vlkyre AI!_
-⚡• _Do Not Spam The Chat Box!_
-⚡• _No Spamming In Private!_
-⚡• _You Will be blocked after 4 warnings!_
+⚡• Dear Random User, This Private Is Being Guarded By Vlkyre AI!
+⚡• Do Not Spam The Chat Box!
+⚡• No Spamming In Private!
+⚡• You Will be blocked after 4 warnings!
 
 🌿𝐏𝐮𝐧𝐢𝐬𝐡𝐦𝐞𝐧𝐭
 ❗• 𝗪𝗮𝗿𝗻𝗶𝗻𝗴𝘀: 1/4
 ❗• 𝗪𝗮𝗿𝗻𝗲𝗱 𝗧𝗼: @${ᴘɴᴀᴍᴇ}
-❗• 𝗪𝗮𝗿𝗻𝗲𝗱 𝗕𝘆: _Vlkyre AI_
-📌• _You Will be Auto-Blocked After 4 warnings!_
+❗• 𝗪𝗮𝗿𝗻𝗲𝗱 𝗕𝘆: Vlkyre AI
+❗• You Will be Auto-Blocked After 4 warnings!
 
-
-⚠️𝗩𝗹𝗸𝘆𝗿𝗲 𝗜𝗻 𝗣𝗿𝗶𝘃𝗮𝘁𝗲 𝗜𝘀 𝗡𝗼𝐭 𝗔𝗹𝗹𝗼𝘄𝗲𝗱!
-*You Can Just Use These Commands In Private!*
-⚡• *${ᴋᴇɪ}help:* _read all commands of Vlkyre!_
-⚡• *${ᴋᴇɪ}rules:* _read rules of Vlkyre!_
-⚡• *${ᴋᴇɪ}faq:* _read frequesntly asked questions!_
-⚡• *${ᴋᴇɪ}verify:* _read how to get verified!_`,
+⚠️𝗣𝗿𝗶𝘃𝗮𝘁𝗲 : *Just Use These Commands In Private!*
+⚡• *${ᴋᴇɪ}help:* read all commands of Vlkyre!
+⚡• *${ᴋᴇɪ}rules:* read rules of Vlkyre!
+⚡• *${ᴋᴇɪ}verify:* read how to get verified!`,
 "./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ.png"
 );
 }
@@ -667,8 +665,10 @@ return ᴠʟᴋʏʀᴇ_Buttons.MIB(
 KryChat,
 ᴠʟᴋʏʀᴇ,
 `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
-🍂 𝐕𝐥𝐤𝐲𝐫𝐞: _Is an Advance Whatsapp User-Bot!_
-🛰️ 𝐖𝐞𝐛𝐬𝐢𝐭𝐞: _https://KrakinzLab-Vlkyre.krakinzkon.repl.co_
+🦋𝐕𝐥𝐤𝐲𝐫𝐞: _Is an Advance Whatsapp User-Bot!_
+💡𝗚𝗶𝘁𝗛𝘂𝗯: Https://Kryknz.GitHub.Io/Vlkyre
+🛰️𝐖𝐞𝐛𝐬𝐢𝐭𝐞: Https://Kryknz.GitHub.Io/Vlkyre
+⚡𝗩𝗲𝗿𝗶𝗳𝘆: _Press☝🏽‍️Link_
 
 ╔◇═══════════════◇╗
 ┊ 𝐊𝐫𝐲𝐙𝐞𝐧👑𝐀𝐧𝐭𝐢-𝐏𝐫𝐢𝐯𝐚𝐭𝐞
@@ -676,31 +676,28 @@ KryChat,
 ╚◇═══════════════◇╝
 
 ✋🏽‍𝐖𝐚𝐢𝐭 𝐅𝐨𝐫 𝐌𝐲 𝐎𝐰𝐧𝐞𝐫 𝐓𝐨 𝐑𝐞𝐬𝐩𝐨𝐧𝐝!
-⚡• _Dear Random User, This Private Is Being Guarded By Vlkyre AI!_
-⚡• _Do Not Spam The Chat Box!_
-⚡• _No Spamming In Private!_
-⚡• _You Will be blocked after 4 warnings!_
+⚡• Dear Random User, This Private Is Being Guarded By Vlkyre AI!
+⚡• Do Not Spam The Chat Box!
+⚡• No Spamming In Private!
+⚡• You Will be blocked after 4 warnings!
 
 🌿𝐏𝐮𝐧𝐢𝐬𝐡𝐦𝐞𝐧𝐭
-❗• 𝗪𝗮𝗿𝗻𝗶𝗻𝗴𝘀: ${user.Amount}/4
+❗• 𝗪𝗮𝗿𝗻𝗶𝗻𝗴𝘀: 1/4
 ❗• 𝗪𝗮𝗿𝗻𝗲𝗱 𝗧𝗼: @${ᴘɴᴀᴍᴇ}
-❗• 𝗪𝗮𝗿𝗻𝗲𝗱 𝗕𝘆: _Vlkyre AI_
-📌• _You Will be Auto-Blocked After 4 warnings!_
+❗• 𝗪𝗮𝗿𝗻𝗲𝗱 𝗕𝘆: Vlkyre AI
+❗• You Will be Auto-Blocked After 4 warnings!
 
-
-⚠️𝗩𝗹𝗸𝘆𝗿𝗲 𝗜𝗻 𝗣𝗿𝗶𝘃𝗮𝘁𝗲 𝗜𝘀 𝗡𝗼𝐭 𝗔𝗹𝗹𝗼𝘄𝗲𝗱!
-*You Can Just Use These Commands In Private!*
-⚡• *${ᴋᴇɪ}help:* _read all commands of Vlkyre!_
-⚡• *${ᴋᴇɪ}rules:* _read rules of Vlkyre!_
-⚡• *${ᴋᴇɪ}faq:* _read frequesntly asked questions!_
-⚡• *${ᴋᴇɪ}verify:* _read how to get verified!_`,
+⚠️𝗣𝗿𝗶𝘃𝗮𝘁𝗲 : *Just Use These Commands In Private!*
+⚡• *${ᴋᴇɪ}help:* read all commands of Vlkyre!
+⚡• *${ᴋᴇɪ}rules:* read rules of Vlkyre!
+⚡• *${ᴋᴇɪ}verify:* read how to get verified!`,
 "./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ.png"
 );
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 /*              (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!*/
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 } else {
-await ᴠʟᴋʏʀᴇ_Buttons.MIB(
+await ᴠʟᴋʏʀᴇ_Buttons.MTB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 KryChat,
 ᴠʟᴋʏʀᴇ,
@@ -711,13 +708,7 @@ KryChat,
 ╚◇═══════════════◇╝
 
 ❌𝐁𝐋𝐎𝐂𝐊𝐄𝐃❌
-❗• 𝗪𝗮𝗿𝗻𝗶𝗻𝗴𝘀: ${user.Amount}/4
-❗• 𝗪𝗮𝗿𝗻𝗲𝗱 𝗧𝗼: @${ᴘɴᴀᴍᴇ}
-❗• 𝗪𝗮𝗿𝗻𝗲𝗱 𝗕𝘆: _Vlkyre AI_
-
-🌿𝐏𝐮𝐧𝐢𝐬𝐡𝐦𝐞𝐧𝐭
-📌• _You Have Been Auto-Blocked!_`,
-"./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_UnivB.png"
+• You Have Been Auto-Blocked!`
 );
 await user
 .delete()
@@ -1220,13 +1211,10 @@ joinRight: `┤`,
 joinJoin: `┼`,
 },
 };
-console.log(
-Kolor.yellow(
-"⬡═══════════════════════════>❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞"
-)
-);
+console.log(Kolor.yellow("⬡═══════════════════════════>❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞"));
 console.log(KryChat);
-console.log(table(data, config));
+// console.log(table(data, config));
+console.log(Kolor.yellow("⬡═══════════════════════════>❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞"));
 return 𝖁𝖑𝖐𝖞.handle(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 KryChat,
