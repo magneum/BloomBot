@@ -37,6 +37,7 @@ var MainText = `*『@${ᴘɴᴀᴍᴇ}』*
 ╔════⧉🦄 𝐑𝐚𝐧𝐝𝐨𝐦𝐬
 ║• *${ᴋᴇɪ}joke:*  _get random jokes_
 ║• *${ᴋᴇɪ}meme:*  _get random memes_
+║• *${ᴋᴇɪ}fact:*  _answer to diff questions_
 ║• *${ᴋᴇɪ}trivia:*  _answer to diff questions_
 ║• *${ᴋᴇɪ}tr:*  _language translater_
 ║• *${ᴋᴇɪ}tts:*  _convert text to speech_
