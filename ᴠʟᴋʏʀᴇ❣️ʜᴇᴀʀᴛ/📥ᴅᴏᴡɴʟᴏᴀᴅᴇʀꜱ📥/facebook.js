@@ -23,7 +23,7 @@
 // module.exports = {
 // name: newScpt,
 // ᴠʟᴋʏʀᴇӄǟɨʐօ: `*${ᴋᴇɪ}facebook* _fb video/image link_`,
-// async handle(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, chat, ᴠʟᴋʏʀᴇ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
+// async handle(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, KryChat, ᴠʟᴋʏʀᴇ, Needs, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
 // try {
 // const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
 // const ᴅꜰɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.commandName;
@@ -44,7 +44,7 @@
 // const ᴀʀɢᴜᴍᴇɴᴛ = require(`../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ`);
 // return ᴀʀɢᴜᴍᴇɴᴛ.ɴᴇᴇᴅᴀʀɢᴜᴍᴇɴᴛ(
 // ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
-// chat,
+// KryChat,
 // ᴠʟᴋʏʀᴇ,
 // ʟɴᴀᴍᴇ,
 // ᴘɴᴀᴍᴇ,
@@ -60,7 +60,7 @@
 // ID: ᴠʟᴋʏʀᴇ.sender,
 // },
 // async (error, userBadge) => {
-// if (error) return ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
+// if (error) return ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, KryChat);
 // if (!userBadge) {
 // var newUser = new Bagde({
 // ID: ᴠʟᴋʏʀᴇ.sender,
@@ -72,10 +72,10 @@
 // });
 // await newUser
 // .save()
-// .catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
+// .catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, KryChat));
 // return ᴠʟᴋʏʀᴇ_Buttons.MIB(
 // ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
-// chat,
+// KryChat,
 // ᴠʟᴋʏʀᴇ,
 // `*『@${ᴘɴᴀᴍᴇ}』*
 
@@ -94,7 +94,7 @@
 // userBadge.value = `False`;
 // await userBadge
 // .save()
-// .catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
+// .catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, KryChat));
 // }
 // `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 // if (clock > 0 && !userBadge.Limits == 0) {
@@ -102,7 +102,7 @@
 // userBadge.value = `True`;
 // await userBadge
 // .save()
-// .catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
+// .catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, KryChat));
 // }
 // `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 // if (clock < 0 && userBadge.Limits == 0) {
@@ -123,7 +123,7 @@
 // userBadge.value = `True`;
 // await userBadge
 // .save()
-// .catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
+// .catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, KryChat));
 // }
 // }
 // `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
@@ -134,7 +134,7 @@
 // );
 // return ᴠʟᴋʏʀᴇ_Buttons.MIB(
 // ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
-// chat,
+// KryChat,
 // ᴠʟᴋʏʀᴇ,
 // `*『@${ᴘɴᴀᴍᴇ}』*
 // ╔⧉༻❗ 𝐈𝐦𝐩𝐨𝐫𝐭𝐚𝐧𝐭
@@ -166,10 +166,10 @@
 // userBadge.Limits = userBadge.Limits + 1;
 // await userBadge
 // .save()
-// .catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
+// .catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, KryChat));
 // return ᴠʟᴋʏʀᴇ_Buttons.MTB(
 // ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
-// chat,
+// KryChat,
 // ᴠʟᴋʏʀᴇ,
 // `*『@${ᴘɴᴀᴍᴇ}』*
 // ╔⧉༻🌿𝐓𝐨𝐩𝐢𝐜: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
@@ -251,20 +251,20 @@
 // },
 // MessageType.buttonsMessage,
 // {
-// quoted: chat,
+// quoted: KryChat,
 // contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
 // }
 // )
-// .catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat));
+// .catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, KryChat));
 // } catch (error) {
 // console.log(error);
-// return ᴠʟᴋʏʀᴇ_Buttons.MIB(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, chat, ᴠʟᴋʏʀᴇ, caption, url);
+// return ᴠʟᴋʏʀᴇ_Buttons.MIB(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, KryChat, ᴠʟᴋʏʀᴇ, caption, url);
 // }
 // }
 // );
 // `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;
 // } catch (error) {
-// ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, chat);
+// ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, KryChat);
 // return;
 // }
 // },
