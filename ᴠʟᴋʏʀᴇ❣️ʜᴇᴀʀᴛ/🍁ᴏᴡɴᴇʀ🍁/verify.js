@@ -75,18 +75,11 @@ return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 ᴠʟᴋʏʀᴇ.chatId,
 {
 contentText: `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
-❌𝐍𝐎𝐓 𝐕𝐄𝐑𝐈𝐅𝐈𝐄𝐃: *Click:* _kryknz.github.io/Vlkyre/_
 
-
-❓𝐖𝐡𝐲 𝐓𝐨 𝐁𝐞 𝐕𝐞𝐫𝐢𝐟𝐢𝐞𝐝?
-📌 _Monitor Bugs!_
-📌 _Monitor Anti-Spams!_
-📌 _Monitor Anti-Links!_
-📌 _Monitor Anti-NSFW!_
-📌 _Monitor Anti-Virtex!_
-📌 _Monitor Group Ranks!_
-📌 _Monitor Performance!_
-📌 _Use Vlkyre-Premium Anywhere!_`,
+❌𝐍𝐎𝐓 𝐕𝐄𝐑𝐈𝐅𝐈𝐄𝐃❌ 
+👉🏽𝐂𝐥𝐢𝐜𝐤‍: _Kryknz.GitHub.Io/Vlkyre_
+• Find Groups Section In Webpage.
+• Join Any Group To Verify.`,
 footerText: `❝⌬𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers}❞\nⒸ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™`,
 buttons: [
 {
@@ -134,5 +127,13 @@ return;
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 
 /*
-
+❓𝐖𝐡𝐲 𝐓𝐨 𝐁𝐞 𝐕𝐞𝐫𝐢𝐟𝐢𝐞𝐝?
+📌 _Monitor Bugs!_
+📌 _Monitor Anti-Spams!_
+📌 _Monitor Anti-Links!_
+📌 _Monitor Anti-NSFW!_
+📌 _Monitor Anti-Virtex!_
+📌 _Monitor Group Ranks!_
+📌 _Monitor Performance!_
+📌 _Use Vlkyre-Premium Anywhere!_
 */
