@@ -91,7 +91,7 @@ mimetype: `video/gif`,
 quoted: KryChat,
 caption: `❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❞\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™
 
-💿𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}
+🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
 🍕𝐅𝐫𝐨𝐦: @${ᴘɴᴀᴍᴇ}
 🌭𝐓𝐨: @${TagPerson}
 📎𝗟𝗶𝗻𝗸: ${AnimeLink}`,
@@ -127,7 +127,7 @@ mimetype: `video/gif`,
 quoted: KryChat,
 caption: `❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❞\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™
 
-💿𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}
+🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
 🍕𝐅𝐨𝐫: @${ᴘɴᴀᴍᴇ}
 📎𝗟𝗶𝗻𝗸: ${AnimeLink}`,
 contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
@@ -159,7 +159,7 @@ mimetype: `video/gif`,
 quoted: KryChat,
 caption: `❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❞\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™
 
-💿𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}
+🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
 🍕𝐅𝐫𝐨𝐦: @${ᴘɴᴀᴍᴇ}
 🌭𝐓𝐨: @${քɛʀֆօռɢօȶռʊʍ}
 📎𝗟𝗶𝗻𝗸: ${AnimeLink}`,
@@ -193,7 +193,7 @@ mimetype: `video/gif`,
 quoted: KryChat,
 caption: `❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❞\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™
 
-💿𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}
+🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
 🍕𝐅𝐨𝐫: @${ᴘɴᴀᴍᴇ}
 📎𝗟𝗶𝗻𝗸: ${AnimeLink}`,
 contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
