@@ -87,7 +87,7 @@ contentText: `*『@${ᴘɴᴀᴍᴇ}』*
 📌 _Monitor Group Ranks!_
 📌 _Monitor Performance!_
 📌 _Use Vlkyre-Premium Anywhere!_`,
-footerText: `\n❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❞\nᴄᴏᴅᴇᴅ ᴡɪᴛʜ ⌬ ᴘʏᴛʜᴏɴ + ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+footerText: `❝⌬𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers}❞\nⒸ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}verify`,

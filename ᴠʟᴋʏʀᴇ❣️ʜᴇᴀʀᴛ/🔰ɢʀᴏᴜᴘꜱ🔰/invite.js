@@ -115,7 +115,7 @@ contentText: `🪶 𝐇𝐞𝐲: •@${քɛʀֆօռɢօȶռʊʍ},
 📜𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${groupData.subject}
 💞𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${groupData.participants.length}
 🍰 𝐆𝐫𝐨𝐮𝐩: https://KryChat.whatsapp.com/${code}`,
-footerText: `\n༆Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers}\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+footerText: `❝⌬𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers}❞\nⒸ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,
@@ -150,7 +150,7 @@ contentText: `*『@${ᴘɴᴀᴍᴇ}』*
 📜𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${groupData.subject}
 💞𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${groupData.participants.length}
 🍰 𝐆𝐫𝐨𝐮𝐩: https://KryChat.whatsapp.com/${code}`,
-footerText: `\n༆Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers}\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+footerText: `❝⌬𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers}❞\nⒸ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}help`,

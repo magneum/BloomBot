@@ -128,7 +128,7 @@ MessageType.image,
 mimetype: Mimetype.png,
 quoted: KryChat,
 caption:
-`\n❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❞\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™\n\n` +
+`❝⌬𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers}❞\nⒸ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™\n\n` +
 PokeInfo,
 contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
 }

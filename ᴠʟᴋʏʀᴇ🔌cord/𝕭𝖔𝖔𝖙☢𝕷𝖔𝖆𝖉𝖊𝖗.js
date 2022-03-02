@@ -175,7 +175,7 @@ contentText: `お 👑𝐔𝐬𝐞𝐫: ${
 💻𝐏𝐥𝐚𝐭𝐟𝐨𝐫𝐦: _${os.platform()}_
 ☕𝐔𝐩𝐓𝐢𝐦𝐞: _${runtime(process.uptime())}_
 🎮𝐑𝐀𝐌: _${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}_`,
-footerText: `\n❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❞\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+footerText: `\n❝⌬𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers}❞\nⒸ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}vlkyre`,
@@ -210,7 +210,7 @@ MessageType.buttonsMessage
 // 💻𝐏𝐥𝐚𝐭𝐟𝐨𝐫𝐦: _${os.platform()}_
 // ☕𝐔𝐩𝐓𝐢𝐦𝐞: _${runtime(process.uptime())}_
 // 🎮𝐑𝐀𝐌: _${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}_`,
-// footerText: `\n❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❞\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+// footerText: `\n❝⌬𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers}❞\nⒸ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™`,
 // buttons: [
 // {
 // buttonId: `${ᴋᴇɪ}vlkyre`,
@@ -245,7 +245,7 @@ MessageType.buttonsMessage
 // 💻𝐏𝐥𝐚𝐭𝐟𝐨𝐫𝐦: _${os.platform()}_
 // ☕𝐔𝐩𝐓𝐢𝐦𝐞: _${runtime(process.uptime())}_
 // 🎮𝐑𝐀𝐌: _${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}_`,
-// footerText: `\n❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❞\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+// footerText: `\n❝⌬𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers}❞\nⒸ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™`,
 // buttons: [
 // {
 // buttonId: `${ᴋᴇɪ}vlkyre`,
@@ -280,7 +280,7 @@ MessageType.buttonsMessage
 // 💻𝐏𝐥𝐚𝐭𝐟𝐨𝐫𝐦: _${os.platform()}_
 // ☕𝐔𝐩𝐓𝐢𝐦𝐞: _${runtime(process.uptime())}_
 // 🎮𝐑𝐀𝐌: _${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}_`,
-// footerText: `\n❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❞\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+// footerText: `\n❝⌬𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers}❞\nⒸ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™`,
 // buttons: [
 // {
 // buttonId: `${ᴋᴇɪ}vlkyre`,
@@ -332,7 +332,7 @@ if (update.announce == `false`) {
 return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .sendMessage(groupupdateID.id, { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 }, MessageType.image, {
 mimetype: Mimetype.png,
-caption: `❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❞\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™
+caption: `❝⌬𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers}❞\nⒸ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
 
 ⚡ 𝐀𝐭𝐭𝐞𝐧𝐭𝐢𝐨𝐧 𝐇𝐞𝐫𝐞 𝐄𝐯𝐞𝐫𝐲𝐨𝐧𝐞 𝐈𝐧 𝐭𝐡𝐞 𝐆𝐫𝐨𝐮𝐩! ⚡
 ⛺𝐆𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _Open For All_
@@ -347,7 +347,7 @@ caption: `❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❞\nᴄᴏᴘʏʀɪɢʜ�
 return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .sendMessage(groupupdateID.id, { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 }, MessageType.image, {
 mimetype: Mimetype.png,
-caption: `❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❞\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™
+caption: `❝⌬𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers}❞\nⒸ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
 
 ⚡ 𝐀𝐭𝐭𝐞𝐧𝐭𝐢𝐨𝐧 𝐇𝐞𝐫𝐞 𝐄𝐯𝐞𝐫𝐲𝐨𝐧𝐞 𝐈𝐧 𝐭𝐡𝐞 𝐆𝐫𝐨𝐮𝐩! ⚡
 ⛺𝐆𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _Admins-Only_
@@ -366,7 +366,7 @@ mimetype: Mimetype.png,
 contextInfo: {
 mentionedJid: [tag],
 },
-caption: `❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❞\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™
+caption: `❝⌬𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers}❞\nⒸ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
 
 ⚡ 𝐀𝐭𝐭𝐞𝐧𝐭𝐢𝐨𝐧 𝐇𝐞𝐫𝐞 𝐄𝐯𝐞𝐫𝐲𝐨𝐧𝐞 𝐈𝐧 𝐭𝐡𝐞 𝐆𝐫𝐨𝐮𝐩! ⚡
 ⛺𝐆𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _New Description Added_
@@ -385,7 +385,7 @@ ${update.desc}`,
 return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .sendMessage(groupupdateID.id, { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 }, MessageType.image, {
 mimetype: Mimetype.png,
-caption: `❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❞\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™
+caption: `❝⌬𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers}❞\nⒸ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
 
 ⚡ 𝐀𝐭𝐭𝐞𝐧𝐭𝐢𝐨𝐧 𝐇𝐞𝐫𝐞 𝐄𝐯𝐞𝐫𝐲𝐨𝐧𝐞 𝐈𝐧 𝐭𝐡𝐞 𝐆𝐫𝐨𝐮𝐩! ⚡
 ⛺𝐆𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _Info Edit Allowed For All_
@@ -401,7 +401,7 @@ caption: `❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❞\nᴄᴏᴘʏʀɪɢʜ�
 return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .sendMessage(groupupdateID.id, { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 }, MessageType.image, {
 mimetype: Mimetype.png,
-caption: `❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❞\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™
+caption: `❝⌬𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers}❞\nⒸ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
 
 ⚡ 𝐀𝐭𝐭𝐞𝐧𝐭𝐢𝐨𝐧 𝐇𝐞𝐫𝐞 𝐄𝐯𝐞𝐫𝐲𝐨𝐧𝐞 𝐈𝐧 𝐭𝐡𝐞 𝐆𝐫𝐨𝐮𝐩! ⚡
 ⛺𝐆𝐒𝐞𝐭𝐭𝐢𝐧𝐠: _Info Edit Admins-Only_
@@ -456,7 +456,7 @@ contentText: `👋🏻𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚, _To Admins Of Th
 ╚════════════╝
 
 👇🏽𝗣𝗿𝗲𝘀𝘀 𝗯𝗲𝗹𝗼𝘄 𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗦𝘁𝗮𝗿𝘁👇🏽`,
-footerText: `\n❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❞\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+footerText: `\n❝⌬𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers}❞\nⒸ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}vlkyre`,
@@ -1173,7 +1173,7 @@ const buttonMessage = {
 contentText: `*『@${ᴘɴᴀᴍᴇ}』*
 
 🤖𝐕𝐞𝐫𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧: _You Are Not Verified!_`,
-footerText: `\n❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❞\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+footerText: `\n❝⌬𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers}❞\nⒸ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}verify`,

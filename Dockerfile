@@ -110,7 +110,7 @@ RUN apt-get install python3-pip -y
 RUN apt-get install python-is-python3 -y
 RUN hash -r 
 RUN npm install -g n && n install lts 
-RUN npm install -g npm@8.5.1 
+RUN npm install -g npm
 RUN hash -r 
 RUN curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl && chmod a+rx /usr/local/bin/youtube-dl
 RUN curl https://cli-assets.heroku.com/install.sh | sh && heroku plugins:install heroku-builds

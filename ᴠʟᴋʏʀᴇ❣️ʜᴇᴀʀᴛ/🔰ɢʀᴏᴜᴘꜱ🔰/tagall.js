@@ -127,7 +127,7 @@ quoted: KryChat,
 contextInfo: {
 mentionedJid: members,
 },
-caption: `❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❞\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™
+caption: `❝⌬𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers}❞\nⒸ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
 
 🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
 ⚡ 𝐅𝐫𝐨𝐦: @${ᴘɴᴀᴍᴇ}
@@ -145,7 +145,7 @@ quoted: KryChat,
 contextInfo: {
 mentionedJid: members,
 },
-caption: `❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❞\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™
+caption: `❝⌬𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers}❞\nⒸ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
 
 🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
 ⚡ 𝐅𝐫𝐨𝐦: @${ᴘɴᴀᴍᴇ}

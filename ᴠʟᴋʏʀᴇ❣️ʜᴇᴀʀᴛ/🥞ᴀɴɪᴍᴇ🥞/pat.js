@@ -89,7 +89,7 @@ MessageType.video,
 {
 mimetype: `video/gif`,
 quoted: KryChat,
-caption: `❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❞\nᴄᴏᴅᴇᴅ ᴡɪᴛʜ ⌬ ᴘʏᴛʜᴏɴ + ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™
+caption: `❝⌬𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers}❞\nⒸ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
 
 🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
 🍕𝐅𝐫𝐨𝐦: @${ᴘɴᴀᴍᴇ}
@@ -125,7 +125,7 @@ MessageType.video,
 {
 mimetype: `video/gif`,
 quoted: KryChat,
-caption: `❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❞\nᴄᴏᴅᴇᴅ ᴡɪᴛʜ ⌬ ᴘʏᴛʜᴏɴ + ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™
+caption: `❝⌬𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers}❞\nⒸ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
 
 🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
 🍕𝐅𝐨𝐫: @${ᴘɴᴀᴍᴇ}
@@ -157,7 +157,7 @@ MessageType.video,
 {
 mimetype: `video/gif`,
 quoted: KryChat,
-caption: `❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❞\nᴄᴏᴅᴇᴅ ᴡɪᴛʜ ⌬ ᴘʏᴛʜᴏɴ + ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™
+caption: `❝⌬𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers}❞\nⒸ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
 
 🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
 🍕𝐅𝐫𝐨𝐦: @${ᴘɴᴀᴍᴇ}
@@ -191,7 +191,7 @@ MessageType.video,
 {
 mimetype: `video/gif`,
 quoted: KryChat,
-caption: `❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers} ❞\nᴄᴏᴅᴇᴅ ᴡɪᴛʜ ⌬ ᴘʏᴛʜᴏɴ + ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ\nᴄᴏᴘʏʀɪɢʜᴛ ⟗ ᴋʀᴀᴋɪɴᴢʟᴀʙ™
+caption: `❝⌬𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers}❞\nⒸ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™
 
 🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
 🍕𝐅𝐨𝐫: @${ᴘɴᴀᴍᴇ}

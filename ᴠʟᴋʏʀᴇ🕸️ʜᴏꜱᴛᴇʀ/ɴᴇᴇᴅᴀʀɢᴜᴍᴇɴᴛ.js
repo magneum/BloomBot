@@ -23,6 +23,7 @@ return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
 ᴠʟᴋʏʀᴇ.chatId,
 `*『@${ᴘɴᴀᴍᴇ}』*
 
+🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
 ${needs === undefined ? `null` : needs}`,
 MessageType.text,
 {
