@@ -187,6 +187,7 @@
     "spdl-core": "*",
     "spinnies": "^0.5.1",
     "spotify-dl": "^1.0.7",
+    "spotifydl-core": "^0.2.0",
     "sqlite3": "^5.0.2",
     "table": "^6.8.0",
     "tenorjs": "^1.0.8",
