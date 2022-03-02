@@ -31,9 +31,9 @@ let { dl_link, thumb, title, filesize, filesizeF } = await yta(
 Found.url,
 "id4"
 );
-let 
+let DirectFile;
 try {
-const DirectFile = await Tinyurl(dl_link);
+DirectFile = await Tinyurl(dl_link);
 } catch (error) {
 console.log(`⬡═══════════════════| 🐞𝐄𝐫𝐫𝐨𝐫: \n` + error);
 userBadge.Limits = userBadge.Limits + 1;
