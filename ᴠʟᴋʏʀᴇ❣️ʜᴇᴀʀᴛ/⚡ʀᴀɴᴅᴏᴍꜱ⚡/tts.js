@@ -179,7 +179,6 @@ lang: langCode,
 slow: false,
 host: `https://translate.google.com`,
 });
-console.log(url);
 await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .sendMessage(
 ᴠʟᴋʏʀᴇ.chatId,

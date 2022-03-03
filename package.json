@@ -89,6 +89,7 @@
     "cwk-api": "^1.1.5",
     "date-and-time": "^2.0.1",
     "dhn-api": "^1.1.3",
+    "discord-chatbot": "^2.1.0",
     "discord-xp": "^1.1.16",
     "discord-ytdl-core": "^5.0.2",
     "dotenv": "^8.2.0",
