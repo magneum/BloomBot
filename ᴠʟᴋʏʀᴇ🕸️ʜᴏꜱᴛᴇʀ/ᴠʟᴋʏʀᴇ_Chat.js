@@ -13,7 +13,6 @@ const ꜰᴜᴄᴋ = require(`./oShit`);
 const googleTTS = require(`google-tts-api`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
-const vers = require(`../../package.json`);
 const fs = require(`fs`);
 var path = require(`path`);
 var scriptName = path.basename(__filename);
