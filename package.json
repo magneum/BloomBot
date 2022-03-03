@@ -183,6 +183,7 @@
     "soundcloud-downloader": "^1.0.0",
     "soundcloud-scraper": "^5.0.2",
     "soyultro": "^4.8.5",
+    "spdl-core": "^2.0.2",
     "spinnies": "^0.5.1",
     "spotify-dl": "^1.0.7",
     "spotifydl-core": "^0.2.0",

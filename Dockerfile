@@ -118,7 +118,7 @@ RUN git clone https://github.com/KryKnz/Vlkyre.git
 RUN cd Vlkyre
 WORKDIR /Vlkyre
 RUN pip install -r ᴠʟᴋʏʀᴇ🀄ᴇxʜᴀᴜꜱᴛ/кгץкภչ.txt
-RUN npm install --force --save && rm package-lock.json && npm install -g spotify-dl
+RUN npm install --force --save && rm package-lock.json && npm install -g spotify-dl spdl-core
 RUN export TERM=xterm
 RUN git config --global user.name 'KryKnz' && git config --global user.email 'KryKnz@yandex.com' && git config pull.rebase false 
 # RUN git init --initial-branch=🛰️KryTek && git fetch origin 🛰️KryTek && git reset --hard origin/🛰️KryTek && git stash && git stash drop && git pull
