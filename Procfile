@@ -1,1 +1,1 @@
-worker: node bypass.js
+worker: node ⚙️AutoLm.js
