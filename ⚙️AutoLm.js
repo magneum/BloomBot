@@ -11,7 +11,7 @@ const HerokuClient = new Heroku({
 token: process.env.HEROKU_API_KEY,
 });
 console.log(HerokuClient);
-Kron.schedule("0 */1 * * * *", async () => {
+Kron.schedule("0 */15 * * * *", async () => {
 console.log("⚡𝐑𝐞𝐛𝐨𝐭𝐢𝐧𝐠 𝐕𝐥𝐤𝐲𝐫𝐞 𝐞𝐯𝐞𝐫𝐲 𝟏𝟓𝐦𝐢𝐧𝐬!");
 await HerokuClient.delete(
 `/apps/` + process.env.HEROKU_APP_NAME + `/dynos/` + `worker`
