@@ -8,7 +8,6 @@ const ᴠʟᴋʏʀᴇ_Buttons = require(`./ᴠʟᴋʏʀᴇ_Buttons`);
 const ᴠʟᴋʏʀᴇ_Static = require(`./ᴠʟᴋʏʀᴇ_Static`);
 const ᴠʟᴋʏʀᴇe = require("discord-chatbot");
 const cleanRF = require(`./cleanRF`);
-const cron = require("node-cron");
 const _𝔏𝔞𝔟_ = require(`./_𝔏𝔞𝔟_`);
 const ꜰᴜᴄᴋ = require(`./oShit`);
 const googleTTS = require(`google-tts-api`);
@@ -23,7 +22,6 @@ var newScpt = scriptName.slice(0, -3).toLowerCase();
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 const ᴠʟᴋʏʀᴇ_Chat = async (ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, KryChat, ᴠʟᴋʏʀᴇ) => {
 const ᴠʟᴋʏʀᴇᴀɪ = new ᴠʟᴋʏʀᴇe({ name: "Vlkyre", gender: "Female" });
-cron.schedule("* */1 * * * *", async () => {
 await ᴠʟᴋʏʀᴇᴀɪ
 .chat(ᴠʟᴋʏʀᴇ.body)
 .then(async (response) => {
@@ -47,7 +45,6 @@ mimetype: Mimetype.mp4Audio,
 .catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, KryChat));
 })
 .catch((e) => console.log(e));
-});
 };
 module.exports = {
 VVC: ᴠʟᴋʏʀᴇ_Chat,
