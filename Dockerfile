@@ -121,7 +121,7 @@ RUN pip install -r ᴠʟᴋʏʀᴇ🀄ᴇxʜᴀᴜꜱᴛ/кгץкภչ.txt
 RUN npm install --force --save && rm package-lock.json && npm install -g spotify-dl
 RUN export TERM=xterm
 # RUN git config --global user.name 'KryKnz' && git config --global user.email 'KryKnz@yandex.com' && git config pull.rebase false 
-# RUN git init --initial-branch=KryTek && git fetch origin KryTek && git reset --hard origin/KryTek && git stash && git stash drop && git pull
+# RUN git init --initial-branch=🛰️KryTek && git fetch origin 🛰️KryTek && git reset --hard origin/🛰️KryTek && git stash && git stash drop && git pull
 CMD python ⭕𝖈𝖆𝖗𝖆𝖒𝖊𝖑.py
 # |⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|
 # NOTE: THIS DOCKERFILE IS GENERATED VIA "apply-templates.sh"
