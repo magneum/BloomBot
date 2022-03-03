@@ -64,52 +64,57 @@ if (
 !member2.includes(ʟɴᴀᴍᴇ) &&
 !member3.includes(ʟɴᴀᴍᴇ)
 ) {
-const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
-ᴠʟᴋʏʀᴇ.chatId,
-{ url: "./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_webview.png" },
-MessageType.image,
-{ mimetype: Mimetype.png }
-);
 return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .sendMessage(
 ᴠʟᴋʏʀᴇ.chatId,
+fs.readFileSync("./ᴠʟᴋʏʀᴇ🔌cord/🦋𝐕𝐥𝐤𝐲𝐫𝐞.mp4"),
+MessageType.video,
 {
-contentText: `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
+mimetype: `video/gif`,
+quoted: KryChat,
+caption: `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
 
 ❌𝐍𝐎𝐓 𝐕𝐄𝐑𝐈𝐅𝐈𝐄𝐃❌ 
 👉🏽𝐂𝐥𝐢𝐜𝐤‍: _https://VlkyreAI.krakinzkon.repl.co_
 • Find Groups Section In Webpage.
-• Join Any Group To Verify.`,
-footerText: `❝ ⌬𝐕𝐥𝐤𝐲𝐫𝐞 Ⓒ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ❞`,
-buttons: [
-{
-buttonId: `${ᴋᴇɪ}verify`,
-buttonText: { displayText: `${ᴋᴇɪ}verify` },
-type: 1,
-},
-],
-headerType: 4,
-imageMessage: media.message.imageMessage,
-},
-MessageType.buttonsMessage,
-{
-quoted: KryChat,
+• Join Any Group To Verify.
+
+
+❝ ⌬𝐕𝐥𝐤𝐲𝐫𝐞 Ⓒ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ❞`,
 contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
 }
 )
 .catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, KryChat));
 } else {
-return ᴠʟᴋʏʀᴇ_Buttons.MIB(
-ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
-KryChat,
-ᴠʟᴋʏʀᴇ,
-`*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
+return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
+.sendMessage(
+ᴠʟᴋʏʀᴇ.chatId,
+fs.readFileSync("./ᴠʟᴋʏʀᴇ🔌cord/🦋𝐕𝐥𝐤𝐲𝐫𝐞.mp4"),
+MessageType.video,
+{
+mimetype: `video/gif`,
+quoted: KryChat,
+caption: `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
 
 ✅ 𝐕𝐄𝐑𝐈𝐅𝐈𝐄𝐃!
 📌 _Enjoy Vlkyre Premiums For Free!_
-📌 _Use Vlkyre Anywhere!_`,
-"./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ.png"
-);
+📌 _Use Vlkyre Anywhere!_
+
+❓𝐖𝐡𝐲 𝐓𝐨 𝐁𝐞 𝐕𝐞𝐫𝐢𝐟𝐢𝐞𝐝?
+📌 _Monitor Bugs!_
+📌 _Monitor Anti-Spams!_
+📌 _Monitor Anti-Links!_
+📌 _Monitor Anti-NSFW!_
+📌 _Monitor Anti-Virtex!_
+📌 _Monitor Group Ranks!_
+📌 _Monitor Performance!_
+📌 _Use Vlkyre-Premium Anywhere!_
+
+❝ ⌬𝐕𝐥𝐤𝐲𝐫𝐞 Ⓒ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ❞`,
+contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
+}
+)
+.catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, KryChat));
 }
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 /*              (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!*/
@@ -125,15 +130,3 @@ return;
 (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬! 
 */
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
-
-/*
-❓𝐖𝐡𝐲 𝐓𝐨 𝐁𝐞 𝐕𝐞𝐫𝐢𝐟𝐢𝐞𝐝?
-📌 _Monitor Bugs!_
-📌 _Monitor Anti-Spams!_
-📌 _Monitor Anti-Links!_
-📌 _Monitor Anti-NSFW!_
-📌 _Monitor Anti-Virtex!_
-📌 _Monitor Group Ranks!_
-📌 _Monitor Performance!_
-📌 _Use Vlkyre-Premium Anywhere!_
-*/

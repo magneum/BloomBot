@@ -10,6 +10,7 @@
 
 <img img src="https://i.postimg.cc/KzKjcD50/vlkUvar.gif" />
 
+<img img src="https://kapwi.ng/c/ylViKhdeAw" />
 
 # 🍂𝐃𝐢𝐬𝐜𝐥𝐚𝐢𝐦𝐞𝐫
 
