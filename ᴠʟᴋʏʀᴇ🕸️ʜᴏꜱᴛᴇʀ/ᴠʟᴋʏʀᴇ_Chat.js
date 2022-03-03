@@ -7,9 +7,9 @@ const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const ᴠʟᴋʏʀᴇ_Buttons = require(`./ᴠʟᴋʏʀᴇ_Buttons`);
 const ᴠʟᴋʏʀᴇ_Static = require(`./ᴠʟᴋʏʀᴇ_Static`);
 const ᴠʟᴋʏʀᴇe = require("discord-chatbot");
-const cleanRF = require(`.cleanRF`);
-const _𝔏𝔞𝔟_ = require(`._𝔏𝔞𝔟_`);
-const ꜰᴜᴄᴋ = require(`.oShit`);
+const cleanRF = require(`./cleanRF`);
+const _𝔏𝔞𝔟_ = require(`./_𝔏𝔞𝔟_`);
+const ꜰᴜᴄᴋ = require(`./oShit`);
 const googleTTS = require(`google-tts-api`);
 var ᴋᴇɪᴇx = new RegExp(_𝔏𝔞𝔟_.FOXTROT, `g`);
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
@@ -23,7 +23,15 @@ var newScpt = scriptName.slice(0, -3).toLowerCase();
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 const ᴠʟᴋʏʀᴇ_Chat = async (ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, KryChat, ᴠʟᴋʏʀᴇ) => {
 const ᴠʟᴋʏʀᴇᴀɪ = new ᴠʟᴋʏʀᴇe({ name: "Vlkyre", gender: "Female" });
-if (ᴠʟᴋʏʀᴇ.body.length < 50) {
+if (
+ᴠʟᴋʏʀᴇ.body.includes("vlkyre") &&
+ᴠʟᴋʏʀᴇ.body.includes("bot") &&
+ᴠʟᴋʏʀᴇ.body.includes("annoy") &&
+ᴠʟᴋʏʀᴇ.body.includes("fuck") &&
+ᴠʟᴋʏʀᴇ.body.includes("stupid") &&
+ᴠʟᴋʏʀᴇ.body.includes("dumb") &&
+ᴠʟᴋʏʀᴇ.body.includes("love")
+) {
 await ᴠʟᴋʏʀᴇᴀɪ
 .chat(ᴠʟᴋʏʀᴇ.body)
 .then(async (response) => {
