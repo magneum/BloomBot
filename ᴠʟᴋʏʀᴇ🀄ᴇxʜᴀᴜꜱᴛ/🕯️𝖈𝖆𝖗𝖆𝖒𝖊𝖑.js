@@ -37,7 +37,7 @@ require("child_process")
 }
 (async () => {
 await git.fetch();
-var newCommits = await git.log(["KryTek..origin/KryTek"]);
+var newCommits = await git.log(["🛰️KryTek..origin/🛰️KryTek"]);
 if (newCommits.total != 0) {
 try {
 var 𝖛𝖑𝖐𝖕 = require("child_process").exec(
