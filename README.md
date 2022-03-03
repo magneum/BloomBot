@@ -1,9 +1,9 @@
 [![Open Source Love svg3](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)<img align="centre" src="https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg" alt="KryKnz"/><img align="centre" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"/>
 
-# 🛰️[❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ❞](https://kryknz.github.io/Vlkyre/) 
-[![Generic badge](https://img.shields.io/badge/🚀HEROKU-purple.svg)](https://kryknz.github.io/Vlkyre/)
-[![Generic badge](https://img.shields.io/badge/🌐WEBSITE-white.svg)](https://kryknz.github.io/Vlkyre/)
-[![Generic badge](https://img.shields.io/badge/⛱️GROUPS-darkgreen.svg)](https://kryknz.github.io/Vlkyre/)
+# 🛰️[❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ❞](https://VlkyreAI.krakinzkon.repl.co/) 
+[![Generic badge](https://img.shields.io/badge/🚀HEROKU-purple.svg)](https://VlkyreAI.krakinzkon.repl.co/)
+[![Generic badge](https://img.shields.io/badge/🌐WEBSITE-white.svg)](https://VlkyreAI.krakinzkon.repl.co/)
+[![Generic badge](https://img.shields.io/badge/⛱️GROUPS-darkgreen.svg)](https://VlkyreAI.krakinzkon.repl.co/)
 
 
 🦋𝐕𝐥𝐤𝐲𝐫𝐞: _Is an Advance Whatsapp User-Bot!_

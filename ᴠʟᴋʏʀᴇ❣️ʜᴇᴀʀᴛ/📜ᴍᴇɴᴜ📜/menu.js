@@ -36,8 +36,8 @@ KryChat,
 ᴠʟᴋʏʀᴇ,
 MainText =`*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
 🦋𝐕𝐥𝐤𝐲𝐫𝐞: _Is an Advance Whatsapp User-Bot!_
-💡𝗚𝗶𝘁𝗛𝘂𝗯: Https://Kryknz.GitHub.Io/Vlkyre
-🛰️𝐖𝐞𝐛𝐬𝐢𝐭𝐞: Https://Kryknz.GitHub.Io/Vlkyre
+💡𝗚𝗶𝘁𝗛𝘂𝗯: _https://VlkyreAI.krakinzkon.repl.co_
+🛰️𝐖𝐞𝐛𝐬𝐢𝐭𝐞: _https://VlkyreAI.krakinzkon.repl.co_
 ⚡𝗩𝗲𝗿𝗶𝗳𝘆: _Press☝🏽‍️Link_
 
 ꧁◇⚡𝐁𝐞𝐥𝐨𝐰 𝐅𝐮𝐥𝐥 𝐋𝐢𝐬𝐭⚡◇꧂

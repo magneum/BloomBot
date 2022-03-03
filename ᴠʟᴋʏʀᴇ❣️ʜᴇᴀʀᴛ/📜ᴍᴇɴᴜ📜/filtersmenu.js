@@ -32,8 +32,8 @@ const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀ
 var MediaUrl = "./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_Univ.png";
 var MainText = `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
 🦋𝐕𝐥𝐤𝐲𝐫𝐞: _Is an Advance Whatsapp User-Bot!_
-💡𝗚𝗶𝘁𝗛𝘂𝗯: Https://Kryknz.GitHub.Io/Vlkyre
-🛰️𝐖𝐞𝐛𝐬𝐢𝐭𝐞: Https://Kryknz.GitHub.Io/Vlkyre
+💡𝗚𝗶𝘁𝗛𝘂𝗯: _https://VlkyreAI.krakinzkon.repl.co_
+🛰️𝐖𝐞𝐛𝐬𝐢𝐭𝐞: _https://VlkyreAI.krakinzkon.repl.co_
 ⚡𝗩𝗲𝗿𝗶𝗳𝘆: _Press☝🏽‍️Link_
 
 ╔════⧉🍰 𝐅𝐢𝐥𝐭𝐞𝐫𝐬/𝐀𝐮𝐝𝐢𝐨

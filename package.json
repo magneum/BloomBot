@@ -156,6 +156,7 @@
     "pokedex-promise-v2": "^4.0.0",
     "pokemon-gif": "^1.0.14",
     "pokemontcgsdk": "^2.0.0",
+    "pug": "^3.0.2",
     "python-format-js": "^1.3.9",
     "qrcode": "^1.4.4",
     "qrcode-reader": "^1.0.4",

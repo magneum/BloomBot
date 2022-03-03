@@ -77,7 +77,7 @@ return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 contentText: `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
 
 ❌𝐍𝐎𝐓 𝐕𝐄𝐑𝐈𝐅𝐈𝐄𝐃❌ 
-👉🏽𝐂𝐥𝐢𝐜𝐤‍: http://kryknz.github.io/Vlkyre
+👉🏽𝐂𝐥𝐢𝐜𝐤‍: _https://VlkyreAI.krakinzkon.repl.co_
 • Find Groups Section In Webpage.
 • Join Any Group To Verify.`,
 footerText: `❝ ⌬𝐕𝐥𝐤𝐲𝐫𝐞 Ⓒ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ❞`,
