@@ -80,7 +80,7 @@ contentText: `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
 👉🏽𝐂𝐥𝐢𝐜𝐤‍: http://kryknz.github.io/Vlkyre
 • Find Groups Section In Webpage.
 • Join Any Group To Verify.`,
-footerText: `❝⌬𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers}❞\nⒸ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™`,
+footerText: `❝ ⌬𝐕𝐥𝐤𝐲𝐫𝐞 Ⓒ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ❞`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}verify`,

@@ -94,7 +94,7 @@ const rank = new canvacord.Rank()
 .setRank(user.position)
 .setLevel(user.level)
 .setStatus("online")
-.setBackground("IMAGE", "https://i.postimg.cc/Kc65RLnX/Full.png")
+.setBackground("IMAGE", "https://i.postimg.cc/hjXBjsJg/Univ-B.png")
 .setProgressBar(color, "COLOR")
 .setUsername("Rank Check!")
 .setDiscriminator(աɦօֆɛ);
@@ -115,7 +115,7 @@ contentText: `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
 
 🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
 💡𝐈𝐧𝐟𝐨: _Here Is Your Rank Card!_`,
-footerText: `❝⌬𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers}❞\nⒸ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™`,
+footerText: `❝ ⌬𝐕𝐥𝐤𝐲𝐫𝐞 Ⓒ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ❞`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}rank`,
