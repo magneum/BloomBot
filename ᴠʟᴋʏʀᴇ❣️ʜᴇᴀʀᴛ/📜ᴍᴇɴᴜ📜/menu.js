@@ -289,7 +289,7 @@ MainText =`*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
 ║🍑 ${ᴋᴇɪ}uniform
 ║🍑 ${ᴋᴇɪ}yuri
 ╚════════════╝`,
-"./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_Univ.png"
+"./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_UniBv.png"
 );
 } catch (error) {
 ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, KryChat);
