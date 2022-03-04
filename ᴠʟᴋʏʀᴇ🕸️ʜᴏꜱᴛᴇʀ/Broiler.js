@@ -50,6 +50,16 @@ contentText: `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
 footerText: `❝ ⌬𝐕𝐥𝐤𝐲𝐫𝐞 Ⓒ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ❞`,
 buttons: [
 {
+buttonId: `${ᴋᴇɪ}vlkyre`,
+buttonText: { displayText: `${ᴋᴇɪ}vlkyre` },
+type: 1,
+},
+{
+buttonId: `${ᴋᴇɪ}support`,
+buttonText: { displayText: `${ᴋᴇɪ}support` },
+type: 1,
+},
+{
 buttonId: `${ᴋᴇɪ}help`,
 buttonText: { displayText: `${ᴋᴇɪ}help` },
 type: 1,
@@ -85,6 +95,16 @@ contentText: `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
 🀄𝗗𝗮𝗶𝗹𝘆 𝗣𝗿𝗲𝗺𝗶𝘂𝗺 ${userBadge.Limits}`,
 footerText: `❝ ⌬𝐕𝐥𝐤𝐲𝐫𝐞 Ⓒ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ❞`,
 buttons: [
+{
+buttonId: `${ᴋᴇɪ}vlkyre`,
+buttonText: { displayText: `${ᴋᴇɪ}vlkyre` },
+type: 1,
+},
+{
+buttonId: `${ᴋᴇɪ}support`,
+buttonText: { displayText: `${ᴋᴇɪ}support` },
+type: 1,
+},
 {
 buttonId: `${ᴋᴇɪ}help`,
 buttonText: { displayText: `${ᴋᴇɪ}help` },
@@ -124,6 +144,16 @@ contentText: `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
 footerText: `❝ ⌬𝐕𝐥𝐤𝐲𝐫𝐞 Ⓒ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ❞`,
 buttons: [
 {
+buttonId: `${ᴋᴇɪ}vlkyre`,
+buttonText: { displayText: `${ᴋᴇɪ}vlkyre` },
+type: 1,
+},
+{
+buttonId: `${ᴋᴇɪ}support`,
+buttonText: { displayText: `${ᴋᴇɪ}support` },
+type: 1,
+},
+{
 buttonId: `${ᴋᴇɪ}help`,
 buttonText: { displayText: `${ᴋᴇɪ}help` },
 type: 1,
@@ -159,6 +189,16 @@ contentText: `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
 🀄𝗗𝗮𝗶𝗹𝘆 𝗣𝗿𝗲𝗺𝗶𝘂𝗺 ${userBadge.Limits}`,
 footerText: `❝ ⌬𝐕𝐥𝐤𝐲𝐫𝐞 Ⓒ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ❞`,
 buttons: [
+{
+buttonId: `${ᴋᴇɪ}vlkyre`,
+buttonText: { displayText: `${ᴋᴇɪ}vlkyre` },
+type: 1,
+},
+{
+buttonId: `${ᴋᴇɪ}support`,
+buttonText: { displayText: `${ᴋᴇɪ}support` },
+type: 1,
+},
 {
 buttonId: `${ᴋᴇɪ}help`,
 buttonText: { displayText: `${ᴋᴇɪ}help` },
@@ -198,6 +238,16 @@ contentText: `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
 footerText: `❝ ⌬𝐕𝐥𝐤𝐲𝐫𝐞 Ⓒ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ❞`,
 buttons: [
 {
+buttonId: `${ᴋᴇɪ}vlkyre`,
+buttonText: { displayText: `${ᴋᴇɪ}vlkyre` },
+type: 1,
+},
+{
+buttonId: `${ᴋᴇɪ}support`,
+buttonText: { displayText: `${ᴋᴇɪ}support` },
+type: 1,
+},
+{
 buttonId: `${ᴋᴇɪ}help`,
 buttonText: { displayText: `${ᴋᴇɪ}help` },
 type: 1,
@@ -233,6 +283,16 @@ contentText: `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
 🀄𝗗𝗮𝗶𝗹𝘆 𝗣𝗿𝗲𝗺𝗶𝘂𝗺 ${userBadge.Limits}`,
 footerText: `❝ ⌬𝐕𝐥𝐤𝐲𝐫𝐞 Ⓒ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ❞`,
 buttons: [
+{
+buttonId: `${ᴋᴇɪ}vlkyre`,
+buttonText: { displayText: `${ᴋᴇɪ}vlkyre` },
+type: 1,
+},
+{
+buttonId: `${ᴋᴇɪ}support`,
+buttonText: { displayText: `${ᴋᴇɪ}support` },
+type: 1,
+},
 {
 buttonId: `${ᴋᴇɪ}help`,
 buttonText: { displayText: `${ᴋᴇɪ}help` },
@@ -272,6 +332,16 @@ contentText: `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
 footerText: `❝ ⌬𝐕𝐥𝐤𝐲𝐫𝐞 Ⓒ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ❞`,
 buttons: [
 {
+buttonId: `${ᴋᴇɪ}vlkyre`,
+buttonText: { displayText: `${ᴋᴇɪ}vlkyre` },
+type: 1,
+},
+{
+buttonId: `${ᴋᴇɪ}support`,
+buttonText: { displayText: `${ᴋᴇɪ}support` },
+type: 1,
+},
+{
 buttonId: `${ᴋᴇɪ}help`,
 buttonText: { displayText: `${ᴋᴇɪ}help` },
 type: 1,
@@ -307,6 +377,16 @@ contentText: `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
 🀄𝗗𝗮𝗶𝗹𝘆 𝗣𝗿𝗲𝗺𝗶𝘂𝗺 ${userBadge.Limits}`,
 footerText: `❝ ⌬𝐕𝐥𝐤𝐲𝐫𝐞 Ⓒ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ❞`,
 buttons: [
+{
+buttonId: `${ᴋᴇɪ}vlkyre`,
+buttonText: { displayText: `${ᴋᴇɪ}vlkyre` },
+type: 1,
+},
+{
+buttonId: `${ᴋᴇɪ}support`,
+buttonText: { displayText: `${ᴋᴇɪ}support` },
+type: 1,
+},
 {
 buttonId: `${ᴋᴇɪ}help`,
 buttonText: { displayText: `${ᴋᴇɪ}help` },
@@ -346,6 +426,16 @@ contentText: `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
 footerText: `❝ ⌬𝐕𝐥𝐤𝐲𝐫𝐞 Ⓒ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ❞`,
 buttons: [
 {
+buttonId: `${ᴋᴇɪ}vlkyre`,
+buttonText: { displayText: `${ᴋᴇɪ}vlkyre` },
+type: 1,
+},
+{
+buttonId: `${ᴋᴇɪ}support`,
+buttonText: { displayText: `${ᴋᴇɪ}support` },
+type: 1,
+},
+{
 buttonId: `${ᴋᴇɪ}help`,
 buttonText: { displayText: `${ᴋᴇɪ}help` },
 type: 1,
@@ -381,6 +471,16 @@ contentText: `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
 🀄𝗗𝗮𝗶𝗹𝘆 𝗣𝗿𝗲𝗺𝗶𝘂𝗺 ${userBadge.Limits}`,
 footerText: `❝ ⌬𝐕𝐥𝐤𝐲𝐫𝐞 Ⓒ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ❞`,
 buttons: [
+{
+buttonId: `${ᴋᴇɪ}vlkyre`,
+buttonText: { displayText: `${ᴋᴇɪ}vlkyre` },
+type: 1,
+},
+{
+buttonId: `${ᴋᴇɪ}support`,
+buttonText: { displayText: `${ᴋᴇɪ}support` },
+type: 1,
+},
 {
 buttonId: `${ᴋᴇɪ}help`,
 buttonText: { displayText: `${ᴋᴇɪ}help` },
@@ -420,6 +520,16 @@ contentText: `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
 footerText: `❝ ⌬𝐕𝐥𝐤𝐲𝐫𝐞 Ⓒ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ❞`,
 buttons: [
 {
+buttonId: `${ᴋᴇɪ}vlkyre`,
+buttonText: { displayText: `${ᴋᴇɪ}vlkyre` },
+type: 1,
+},
+{
+buttonId: `${ᴋᴇɪ}support`,
+buttonText: { displayText: `${ᴋᴇɪ}support` },
+type: 1,
+},
+{
 buttonId: `${ᴋᴇɪ}help`,
 buttonText: { displayText: `${ᴋᴇɪ}help` },
 type: 1,
@@ -455,6 +565,16 @@ contentText: `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
 🀄𝗗𝗮𝗶𝗹𝘆 𝗣𝗿𝗲𝗺𝗶𝘂𝗺 ${userBadge.Limits}`,
 footerText: `❝ ⌬𝐕𝐥𝐤𝐲𝐫𝐞 Ⓒ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ❞`,
 buttons: [
+{
+buttonId: `${ᴋᴇɪ}vlkyre`,
+buttonText: { displayText: `${ᴋᴇɪ}vlkyre` },
+type: 1,
+},
+{
+buttonId: `${ᴋᴇɪ}support`,
+buttonText: { displayText: `${ᴋᴇɪ}support` },
+type: 1,
+},
 {
 buttonId: `${ᴋᴇɪ}help`,
 buttonText: { displayText: `${ᴋᴇɪ}help` },

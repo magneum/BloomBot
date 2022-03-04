@@ -460,8 +460,8 @@ contentText: `👋🏻𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚, _To Admins Of Th
 footerText: `\n❝⌬𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers}❞\nⒸ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™`,
 buttons: [
 {
-buttonId: `${ᴋᴇɪ}vlkyre`,
-buttonText: { displayText: `${ᴋᴇɪ}vlkyre` },
+buttonId: `${ᴋᴇɪ}support`,
+buttonText: { displayText: `${ᴋᴇɪ}support` },
 type: 1,
 },
 {

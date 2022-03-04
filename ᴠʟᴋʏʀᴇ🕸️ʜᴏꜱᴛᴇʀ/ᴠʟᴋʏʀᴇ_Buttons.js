@@ -39,6 +39,11 @@ buttonText: { displayText: `${ᴋᴇɪ}vlkyre` },
 type: 1,
 },
 {
+buttonId: `${ᴋᴇɪ}support`,
+buttonText: { displayText: `${ᴋᴇɪ}support` },
+type: 1,
+},
+{
 buttonId: `${ᴋᴇɪ}help`,
 buttonText: { displayText: `${ᴋᴇɪ}help` },
 type: 1,
@@ -64,6 +69,11 @@ buttons: [
 {
 buttonId: `${ᴋᴇɪ}vlkyre`,
 buttonText: { displayText: `${ᴋᴇɪ}vlkyre` },
+type: 1,
+},
+{
+buttonId: `${ᴋᴇɪ}support`,
+buttonText: { displayText: `${ᴋᴇɪ}support` },
 type: 1,
 },
 {
@@ -120,6 +130,11 @@ buttonText: { displayText: `${ᴋᴇɪ}vlkyre` },
 type: 1,
 },
 {
+buttonId: `${ᴋᴇɪ}support`,
+buttonText: { displayText: `${ᴋᴇɪ}support` },
+type: 1,
+},
+{
 buttonId: `${ᴋᴇɪ}help`,
 buttonText: { displayText: `${ᴋᴇɪ}help` },
 type: 1,
@@ -156,6 +171,11 @@ buttons: [
 {
 buttonId: `${ᴋᴇɪ}vlkyre`,
 buttonText: { displayText: `${ᴋᴇɪ}vlkyre` },
+type: 1,
+},
+{
+buttonId: `${ᴋᴇɪ}support`,
+buttonText: { displayText: `${ᴋᴇɪ}support` },
 type: 1,
 },
 {
@@ -214,6 +234,11 @@ buttonText: { displayText: `${ᴋᴇɪ}vlkyre` },
 type: 1,
 },
 {
+buttonId: `${ᴋᴇɪ}support`,
+buttonText: { displayText: `${ᴋᴇɪ}support` },
+type: 1,
+},
+{
 buttonId: `${ᴋᴇɪ}help`,
 buttonText: { displayText: `${ᴋᴇɪ}help` },
 type: 1,
@@ -250,6 +275,11 @@ buttons: [
 {
 buttonId: `${ᴋᴇɪ}vlkyre`,
 buttonText: { displayText: `${ᴋᴇɪ}vlkyre` },
+type: 1,
+},
+{
+buttonId: `${ᴋᴇɪ}support`,
+buttonText: { displayText: `${ᴋᴇɪ}support` },
 type: 1,
 },
 {
@@ -302,6 +332,11 @@ buttonText: { displayText: `${ᴋᴇɪ}vlkyre` },
 type: 1,
 },
 {
+buttonId: `${ᴋᴇɪ}support`,
+buttonText: { displayText: `${ᴋᴇɪ}support` },
+type: 1,
+},
+{
 buttonId: `${ᴋᴇɪ}help`,
 buttonText: { displayText: `${ᴋᴇɪ}help` },
 type: 1,
@@ -338,6 +373,11 @@ buttons: [
 {
 buttonId: `${ᴋᴇɪ}vlkyre`,
 buttonText: { displayText: `${ᴋᴇɪ}vlkyre` },
+type: 1,
+},
+{
+buttonId: `${ᴋᴇɪ}support`,
+buttonText: { displayText: `${ᴋᴇɪ}support` },
 type: 1,
 },
 {
@@ -400,6 +440,11 @@ buttonText: { displayText: `${ᴋᴇɪ}vlkyre` },
 type: 1,
 },
 {
+buttonId: `${ᴋᴇɪ}support`,
+buttonText: { displayText: `${ᴋᴇɪ}support` },
+type: 1,
+},
+{
 buttonId: `${ᴋᴇɪ}help`,
 buttonText: { displayText: `${ᴋᴇɪ}help` },
 type: 1,
@@ -453,6 +498,11 @@ buttons: [
 {
 buttonId: `${ᴋᴇɪ}vlkyre`,
 buttonText: { displayText: `${ᴋᴇɪ}vlkyre` },
+type: 1,
+},
+{
+buttonId: `${ᴋᴇɪ}support`,
+buttonText: { displayText: `${ᴋᴇɪ}support` },
 type: 1,
 },
 {
