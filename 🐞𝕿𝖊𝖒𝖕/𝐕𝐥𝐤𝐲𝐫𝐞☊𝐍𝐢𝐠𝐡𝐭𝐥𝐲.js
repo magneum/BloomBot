@@ -6,6 +6,7 @@
 require(`dotenv`);
 const fs = require("fs");
 var http = require("http");
+const path = require('path');
 const Kron = require("node-cron");
 const express = require("express");
 const Heroku = require(`heroku-client`);
@@ -22,7 +23,7 @@ await HerokuClient.delete(
 const 𝕿𝖊𝖒𝖕 = express();
 𝕿𝖊𝖒𝖕.get("/", (Feeds, Resp) => {
 if (Feeds) console.log(Feeds);
-Resp.send(fs.readFileSync("./𝐕𝐥𝐤𝐲𝐫𝐞☊𝐍𝐢𝐠𝐡𝐭𝐥𝐲.html"));
+Resp.send(path.join(__dirname+'/index.html'));
 });
 𝕿𝖊𝖒𝖕.listen(8080, () => {
 console.log(`🦋𝐕𝐥𝐤𝐲𝐫𝐞: Server Ready!`);
