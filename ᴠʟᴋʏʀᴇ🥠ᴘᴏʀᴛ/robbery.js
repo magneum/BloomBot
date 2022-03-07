@@ -5,12 +5,12 @@
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 var mongoose = require("mongoose");
 var RobberySchema = new mongoose.Schema({
-ID: String,
-sword: Number,
-laptop: Number,
-charm: Number,
-CurrentRobberyTime: Number,
-PermanentRobberyTime: Number,
+  ID: String,
+  sword: Number,
+  laptop: Number,
+  charm: Number,
+  CurrentRobberyTime: Number,
+  PermanentRobberyTime: Number,
 });
 module.exports = mongoose.model("Robbery", RobberySchema);
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
