@@ -112,7 +112,7 @@ contentText: `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
 ⛩️𝗚𝗖𝟭: _https://chat.whatsapp.com/LKN8uVBd8ucHRHofz0jBSd_
 ⛩️𝗚𝗖𝟮: _https://chat.whatsapp.com/HKO5WLEZxMe3xWCyiv6vBu_
 ⛩️𝗚𝗖𝟯: _https://chat.whatsapp.com/EIn3YFShFmkJ3fvAqf2rpn_`,
-footerText: `❝ ⌬𝐕𝐥𝐤𝐲𝐫𝐞 Ⓒ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ❞`,
+footerText: `⌬𝐕𝐥𝐤𝐲𝐫𝐞\n❝Ⓒ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™❞`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}menu`,

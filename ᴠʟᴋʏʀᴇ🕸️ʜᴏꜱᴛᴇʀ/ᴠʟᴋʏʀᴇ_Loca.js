@@ -26,7 +26,7 @@ const ᴠʟᴋʏʀᴇ_Loca = async (ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, KryCha
 try {
 const buttonMessage = {
 contentText: MainText,
-footerText: `❝ ⌬𝐕𝐥𝐤𝐲𝐫𝐞 Ⓒ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ❞`,
+footerText: `⌬𝐕𝐥𝐤𝐲𝐫𝐞\n❝Ⓒ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™❞`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}vlkyre`,
