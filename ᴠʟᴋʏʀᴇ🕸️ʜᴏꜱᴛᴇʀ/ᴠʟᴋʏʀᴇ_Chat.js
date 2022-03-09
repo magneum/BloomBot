@@ -30,7 +30,7 @@ lang: "en-GB",
 slow: false,
 host: `https://translate.google.com`,
 });
-await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
+return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .sendMessage(
 ᴠʟᴋʏʀᴇ.chatId,
 {
