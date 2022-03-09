@@ -35,8 +35,12 @@ return ᴠʟᴋʏʀᴇ_Buttons.MIB(
 KryChat,
 ᴠʟᴋʏʀᴇ,
 MainText = `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
-🦋𝐕𝐥𝐤𝐲𝐫𝐞: _Is an Advance Whatsapp User-Bot!_
-💡𝗚𝗶𝘁𝗛𝘂𝗯: _https://VlkyreAI.krakinzkon.repl.co_
+🦋𝐕𝐥𝐤𝐲𝐫𝐞: Is an Advance Whatsapp User-Bot!
+╔◇🪔 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 🪔
+║🦯 ${ᴋᴇɪ}support or ${ᴋᴇɪ}vlkyre
+║💡𝐆𝐫𝐨𝐮𝐩𝐬: https://VlkyreAI.krakinzkon.repl.co
+║🛰️𝐖𝐞𝐛𝐬𝐢𝐭𝐞: https://VlkyreAI.krakinzkon.repl.co
+╚◇════════════◇꧂
 
 ╔════⧉🍙 𝐀𝐧𝐢𝐦𝐞
 ║• *${ᴋᴇɪ}anime:*  _search any anime_

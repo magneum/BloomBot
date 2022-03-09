@@ -36,15 +36,14 @@ const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀ
 if (ᴠʟᴋʏʀᴇ.isReply) {
 const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
 const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/[^\d-]/g, "");
-var Receiver = KryChat.message.extendedTextMessage.contextInfo.participant;
+var Receiver =
+KryChat.message.extendedTextMessage.contextInfo.participant;
 var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
 return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .sendMessage(ᴠʟᴋʏʀᴇ.chatId, { url: MediaUrl }, MessageType.video, {
 mimetype: `video/gif`,
 quoted: KryChat,
-caption:
-`⌬𝐕𝐥𝐤𝐲𝐫𝐞\n❝Ⓒ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™❞\n\n` +
-MainText,
+caption: `⌬𝐕𝐥𝐤𝐲𝐫𝐞\n❝Ⓒ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™❞\n\n` + MainText,
 contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ, Receiver] },
 })
 .catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, KryChat));
@@ -55,9 +54,7 @@ return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .sendMessage(ᴠʟᴋʏʀᴇ.chatId, { url: MediaUrl }, MessageType.video, {
 mimetype: `video/gif`,
 quoted: KryChat,
-caption:
-`⌬𝐕𝐥𝐤𝐲𝐫𝐞\n❝Ⓒ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™❞\n\n` +
-MainText,
+caption: `⌬𝐕𝐥𝐤𝐲𝐫𝐞\n❝Ⓒ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™❞\n\n` + MainText,
 contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
 })
 .catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, KryChat));
