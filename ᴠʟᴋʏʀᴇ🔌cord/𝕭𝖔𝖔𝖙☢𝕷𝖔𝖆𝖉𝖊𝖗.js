@@ -125,10 +125,7 @@ require("../ᴠʟᴋʏʀᴇ🦯ʀᴇᴀᴄᴛᴏʀ/groupUpdate")(ӄ𝖗𝖆ӄ�
 require("../ᴠʟᴋʏʀᴇ🦯ʀᴇᴀᴄᴛᴏʀ/groupParticipants")(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, update);
 });
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.on(`chat-update`, async (chat) => {
-if (!chat.hasNewMessage) {
-await ᴠʟᴋʏʀᴇ_Chat.VVC(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, KryChat, ᴠʟᴋʏʀᴇ);
-return;
-}
+if (!chat.hasNewMessage) return;
 if (!chat.messages) return;
 let KryChat = chat.messages.all()[0];
 const sender = KryChat.key.remoteJid;
