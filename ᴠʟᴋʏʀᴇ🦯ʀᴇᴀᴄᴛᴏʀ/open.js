@@ -262,20 +262,20 @@ MessageType.buttonsMessage
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 /*              (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!*/
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
-let BrdGC = ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.chats
-.all()
-.filter(
-(v) => v.jid.endsWith("g.us") && !v.read_only && v.messages && !v.announce
-)
-.map((v) => v.jid);
-for (let BrdId of BrdGC)
-await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
-.sendMessage(
-BrdId,
-`𝐕𝐥𝐤𝐲𝐫𝐞💡𝐎𝐧𝐥𝐢𝐧𝐞 | *Type:* ${ᴋᴇɪ}help/menu/vlkyre`,
-MessageType.text
-)
-.catch((error) => console.log(error));
+// let BrdGC = ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.chats
+// .all()
+// .filter(
+// (v) => v.jid.endsWith("g.us") && !v.read_only && v.messages && !v.announce
+// )
+// .map((v) => v.jid);
+// for (let BrdId of BrdGC)
+// await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
+// .sendMessage(
+// BrdId,
+// `𝐕𝐥𝐤𝐲𝐫𝐞💡𝐎𝐧𝐥𝐢𝐧𝐞 | *Type:* ${ᴋᴇɪ}help/menu/vlkyre`,
+// MessageType.text
+// )
+// .catch((error) => console.log(error));
 };
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 /*        
