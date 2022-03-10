@@ -25,5 +25,3 @@
 ║ In short, Fork At Your Own Risk.
 ╚════════════╝
 ```
-
-ffmpeg -i ᴠʟᴋʏʀᴇ🔌cord/🦋𝐕𝐥𝐤𝐲𝐫𝐞.mp4 ᴠʟᴋʏʀᴇ🔌cord/🦋𝐕𝐥𝐤𝐲𝐫𝐞.gif
