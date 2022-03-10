@@ -83,7 +83,6 @@ return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 ᴠʟᴋʏʀᴇ.chatId,
 {
 contentText: `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
-🦋𝐕𝐥𝐤𝐲𝐫𝐞: Is an Advance Whatsapp User-Bot!
 
 ╔◇🧀𝐍𝐨 𝐑𝐞𝐬𝐭𝐫𝐢𝐜𝐭𝐢𝐨𝐧🧀
 ║🍙 ${ᴋᴇɪ}animemenu
@@ -106,10 +105,13 @@ contentText: `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
 ╚◇════════════◇꧂
 
 ╔◇🪔 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 🪔
-║🦯 ${ᴋᴇɪ}support or ${ᴋᴇɪ}vlkyre
-║💡𝐆𝐫𝐨𝐮𝐩𝐬: https://VlkyreAI.krakinzkon.repl.co
-║🛰️𝐖𝐞𝐛𝐬𝐢𝐭𝐞: https://VlkyreAI.krakinzkon.repl.co
-╚◇════════════◇꧂`,
+╚◇════════════◇꧂
+🦋𝐕𝐥𝐤𝐲𝐫𝐞: _Is an Advance Whatsapp User-Bot!_
+💡𝗚𝗶𝘁𝗛𝘂𝗯: _https://VlkyreAI.krakinzkon.repl.co_
+🛰️𝐖𝐞𝐛𝐬𝐢𝐭𝐞: _https://VlkyreAI.krakinzkon.repl.co_
+⛩️𝗚𝗖𝟭: _https://chat.whatsapp.com/LKN8uVBd8ucHRHofz0jBSd_
+⛩️𝗚𝗖𝟮: _https://chat.whatsapp.com/HKO5WLEZxMe3xWCyiv6vBu_
+⛩️𝗚𝗖𝟯: _https://chat.whatsapp.com/EIn3YFShFmkJ3fvAqf2rpn_`,
 footerText: `⌬𝐕𝐥𝐤𝐲𝐫𝐞\n❝Ⓒ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™❞`,
 buttons: [
 {
@@ -117,7 +119,11 @@ buttonId: `${ᴋᴇɪ}menu`,
 buttonText: { displayText: `${ᴋᴇɪ}menu` },
 type: 1,
 },
-
+{
+buttonId: `${ᴋᴇɪ}support`,
+buttonText: { displayText: `${ᴋᴇɪ}support` },
+type: 1,
+},
 {
 buttonId: `${ᴋᴇɪ}rules`,
 buttonText: { displayText: `${ᴋᴇɪ}rules` },

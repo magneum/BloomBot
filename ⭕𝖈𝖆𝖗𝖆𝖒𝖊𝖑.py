@@ -20,6 +20,8 @@ load_dotenv("./ᴠʟᴋʏʀᴇ™.env")
 𝖈𝖔𝖗𝖑𝖊𝖝 = getenv("HEROKU", None)
 ᴠʟᴋʏʀᴇi = getenv("CODE", None)
 BFS = 64 * 1024
+subprocess.run(["git", "config", "pull.rebase", "false"], check=True, stdout=subprocess.PIPE).stdout
+subprocess.run(["python", "ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/🐍𝖛𝖑𝖐𝖕𝖞.py"], check=True, stdout=subprocess.PIPE).stdout
 class InterceptHandler(logging.Handler):
     LEVELS_MAP = {
         logging.CRITICAL: "CRITICAL",
@@ -44,20 +46,6 @@ LOGS = logging.getLogger(__name__)
 # |⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡| 
 #             (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 # |⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|
-try:
-    subprocess.run(["git", "config", "--global", "user.name", "KryKnz"], check=True, stdout=subprocess.PIPE).stdout
-    subprocess.run(["git", "config", "--global", "user.email", "KryKnz@yandex.com"], check=True, stdout=subprocess.PIPE).stdout
-    subprocess.run(["git", "config", "pull.rebase", "false"], check=True, stdout=subprocess.PIPE).stdout
-    subprocess.run(["git", "init", "--initial-branch=🛰️KryTek"], check=True, stdout=subprocess.PIPE).stdout
-    subprocess.run(["git", "fetch", "origin", "🛰️KryTek"], check=True, stdout=subprocess.PIPE).stdout
-    subprocess.run(["git", "reset", "--hard", "origin/🛰️KryTek"], check=True, stdout=subprocess.PIPE).stdout
-    subprocess.run(["git", "pull"], check=True, stdout=subprocess.PIPE).stdout
-except Exception as Error:
-    if ᴠʟᴋʏʀᴇ == "HEROKU":
-        LOGS.info(str(Error))
-    else:
-        print(Error)
-    pass
 if ᴠʟᴋʏʀᴇi is not None:
     if os.path.exists("Zz4xp01pklo"):
         pass

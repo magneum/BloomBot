@@ -27,8 +27,7 @@ try {
 if (ᴠʟᴋʏʀᴇ.isReply) {
 const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
 const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/[^\d-]/g, "");
-var Receiver =
-KryChat.message.extendedTextMessage.contextInfo.participant;
+var Receiver = KryChat.message.extendedTextMessage.contextInfo.participant;
 var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
 const buttonMessage = {
 contentText: MainText,
@@ -39,7 +38,11 @@ buttonId: `${ᴋᴇɪ}vlkyre`,
 buttonText: { displayText: `${ᴋᴇɪ}vlkyre` },
 type: 1,
 },
-
+{
+buttonId: `${ᴋᴇɪ}support`,
+buttonText: { displayText: `${ᴋᴇɪ}support` },
+type: 1,
+},
 {
 buttonId: `${ᴋᴇɪ}help`,
 buttonText: { displayText: `${ᴋᴇɪ}help` },
@@ -68,7 +71,11 @@ buttonId: `${ᴋᴇɪ}vlkyre`,
 buttonText: { displayText: `${ᴋᴇɪ}vlkyre` },
 type: 1,
 },
-
+{
+buttonId: `${ᴋᴇɪ}support`,
+buttonText: { displayText: `${ᴋᴇɪ}support` },
+type: 1,
+},
 {
 buttonId: `${ᴋᴇɪ}help`,
 buttonText: { displayText: `${ᴋᴇɪ}help` },
@@ -102,8 +109,7 @@ try {
 if (ᴠʟᴋʏʀᴇ.isReply) {
 const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
 const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/[^\d-]/g, "");
-var Receiver =
-KryChat.message.extendedTextMessage.contextInfo.participant;
+var Receiver = KryChat.message.extendedTextMessage.contextInfo.participant;
 var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
 const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
 ᴠʟᴋʏʀᴇ.chatId,
@@ -123,7 +129,11 @@ buttonId: `${ᴋᴇɪ}vlkyre`,
 buttonText: { displayText: `${ᴋᴇɪ}vlkyre` },
 type: 1,
 },
-
+{
+buttonId: `${ᴋᴇɪ}support`,
+buttonText: { displayText: `${ᴋᴇɪ}support` },
+type: 1,
+},
 {
 buttonId: `${ᴋᴇɪ}help`,
 buttonText: { displayText: `${ᴋᴇɪ}help` },
@@ -163,7 +173,11 @@ buttonId: `${ᴋᴇɪ}vlkyre`,
 buttonText: { displayText: `${ᴋᴇɪ}vlkyre` },
 type: 1,
 },
-
+{
+buttonId: `${ᴋᴇɪ}support`,
+buttonText: { displayText: `${ᴋᴇɪ}support` },
+type: 1,
+},
 {
 buttonId: `${ᴋᴇɪ}help`,
 buttonText: { displayText: `${ᴋᴇɪ}help` },
@@ -199,8 +213,7 @@ try {
 if (ᴠʟᴋʏʀᴇ.isReply) {
 const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
 const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/[^\d-]/g, "");
-var Receiver =
-KryChat.message.extendedTextMessage.contextInfo.participant;
+var Receiver = KryChat.message.extendedTextMessage.contextInfo.participant;
 var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
 const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
 ᴠʟᴋʏʀᴇ.chatId,
@@ -220,7 +233,11 @@ buttonId: `${ᴋᴇɪ}vlkyre`,
 buttonText: { displayText: `${ᴋᴇɪ}vlkyre` },
 type: 1,
 },
-
+{
+buttonId: `${ᴋᴇɪ}support`,
+buttonText: { displayText: `${ᴋᴇɪ}support` },
+type: 1,
+},
 {
 buttonId: `${ᴋᴇɪ}help`,
 buttonText: { displayText: `${ᴋᴇɪ}help` },
@@ -260,7 +277,11 @@ buttonId: `${ᴋᴇɪ}vlkyre`,
 buttonText: { displayText: `${ᴋᴇɪ}vlkyre` },
 type: 1,
 },
-
+{
+buttonId: `${ᴋᴇɪ}support`,
+buttonText: { displayText: `${ᴋᴇɪ}support` },
+type: 1,
+},
 {
 buttonId: `${ᴋᴇɪ}help`,
 buttonText: { displayText: `${ᴋᴇɪ}help` },
@@ -285,19 +306,12 @@ return ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋ�
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 /*              (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!*/
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
-const ᴠʟᴋʏʀᴇ_GIF_But = async (
-ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
-KryChat,
-ᴠʟᴋʏʀᴇ,
-MainText,
-MediaUrl
-) => {
+const ᴠʟᴋʏʀᴇ_GIF_But = async (ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, KryChat, ᴠʟᴋʏʀᴇ, MainText, MediaUrl) => {
 try {
 if (ᴠʟᴋʏʀᴇ.isReply) {
 const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
 const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/[^\d-]/g, "");
-var Receiver =
-KryChat.message.extendedTextMessage.contextInfo.participant;
+var Receiver = KryChat.message.extendedTextMessage.contextInfo.participant;
 var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
 const media = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.prepareMessage(
 ᴠʟᴋʏʀᴇ.chatId,
@@ -317,7 +331,11 @@ buttonId: `${ᴋᴇɪ}vlkyre`,
 buttonText: { displayText: `${ᴋᴇɪ}vlkyre` },
 type: 1,
 },
-
+{
+buttonId: `${ᴋᴇɪ}support`,
+buttonText: { displayText: `${ᴋᴇɪ}support` },
+type: 1,
+},
 {
 buttonId: `${ᴋᴇɪ}help`,
 buttonText: { displayText: `${ᴋᴇɪ}help` },
@@ -357,7 +375,11 @@ buttonId: `${ᴋᴇɪ}vlkyre`,
 buttonText: { displayText: `${ᴋᴇɪ}vlkyre` },
 type: 1,
 },
-
+{
+buttonId: `${ᴋᴇɪ}support`,
+buttonText: { displayText: `${ᴋᴇɪ}support` },
+type: 1,
+},
 {
 buttonId: `${ᴋᴇɪ}help`,
 buttonText: { displayText: `${ᴋᴇɪ}help` },
@@ -393,8 +415,7 @@ try {
 if (ᴠʟᴋʏʀᴇ.isReply) {
 const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
 const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/[^\d-]/g, "");
-var Receiver =
-KryChat.message.extendedTextMessage.contextInfo.participant;
+var Receiver = KryChat.message.extendedTextMessage.contextInfo.participant;
 var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
 } else {
 const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
@@ -418,7 +439,11 @@ buttonId: `${ᴋᴇɪ}vlkyre`,
 buttonText: { displayText: `${ᴋᴇɪ}vlkyre` },
 type: 1,
 },
-
+{
+buttonId: `${ᴋᴇɪ}support`,
+buttonText: { displayText: `${ᴋᴇɪ}support` },
+type: 1,
+},
 {
 buttonId: `${ᴋᴇɪ}help`,
 buttonText: { displayText: `${ᴋᴇɪ}help` },
@@ -452,8 +477,7 @@ try {
 if (ᴠʟᴋʏʀᴇ.isReply) {
 const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
 const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/[^\d-]/g, "");
-var Receiver =
-KryChat.message.extendedTextMessage.contextInfo.participant;
+var Receiver = KryChat.message.extendedTextMessage.contextInfo.participant;
 var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
 } else {
 const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
@@ -476,7 +500,11 @@ buttonId: `${ᴋᴇɪ}vlkyre`,
 buttonText: { displayText: `${ᴋᴇɪ}vlkyre` },
 type: 1,
 },
-
+{
+buttonId: `${ᴋᴇɪ}support`,
+buttonText: { displayText: `${ᴋᴇɪ}support` },
+type: 1,
+},
 {
 buttonId: `${ᴋᴇɪ}help`,
 buttonText: { displayText: `${ᴋᴇɪ}help` },
