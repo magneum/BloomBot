@@ -1242,13 +1242,7 @@ Kolor.yellow(
 )
 );
 console.log(KryChat);
-console.log(KryChat.pushName);
 console.log(table(data, config));
-console.log(
-Kolor.yellow(
-"⬡═══════════════════════════>❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞"
-)
-);
 return 𝖁𝖑𝖐𝖞.handle(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 KryChat,
