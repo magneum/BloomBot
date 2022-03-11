@@ -119,11 +119,7 @@ buttonId: `${ᴋᴇɪ}menu`,
 buttonText: { displayText: `${ᴋᴇɪ}menu` },
 type: 1,
 },
-{
-buttonId: `${ᴋᴇɪ}support`,
-buttonText: { displayText: `${ᴋᴇɪ}support` },
-type: 1,
-},
+
 {
 buttonId: `${ᴋᴇɪ}rules`,
 buttonText: { displayText: `${ᴋᴇɪ}rules` },
