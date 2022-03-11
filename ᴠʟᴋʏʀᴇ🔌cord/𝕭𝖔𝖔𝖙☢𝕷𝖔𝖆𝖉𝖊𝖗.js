@@ -1242,7 +1242,8 @@ Kolor.yellow(
 )
 );
 console.log(KryChat);
-// console.log(table(data, config));
+console.log(KryChat.pushName);
+console.log(table(data, config));
 console.log(
 Kolor.yellow(
 "⬡═══════════════════════════>❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞"
