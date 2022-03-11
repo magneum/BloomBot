@@ -534,6 +534,9 @@ if (update.action === `remove`) return;
 if (!chat.hasNewMessage) return;
 if (!chat.messages) return;
 let KryChat = chat.messages.all()[0];
+
+console.log()
+
 const sender = KryChat.key.remoteJid;
 const groupMetadata = sender.endsWith(`@g.us`)
 ? await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.groupMetadata(KryChat.key.remoteJid)
