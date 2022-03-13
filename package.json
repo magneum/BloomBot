@@ -129,6 +129,7 @@
     "lyrics-finder": "^21.7.0",
     "mal-scraper": "^2.11.3",
     "meme-api": "^1.0.0",
+    "mic-to-speech": "^1.0.1",
     "moment-timezone": "^0.5.33",
     "mongoose": "^5.10.7",
     "ms": "^2.1.3",

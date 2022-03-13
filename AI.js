@@ -1,4 +1,4 @@
-let SpeechReceived = "";
-if (SpeechReceived.includes("Hey Vlkyre")) {
+// let SpeechReceived = "";
+// if (SpeechReceived.includes("Hey Vlkyre")) {
     
-}
+// }
