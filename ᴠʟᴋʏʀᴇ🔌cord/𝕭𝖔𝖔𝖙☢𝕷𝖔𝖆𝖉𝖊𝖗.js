@@ -1172,33 +1172,54 @@ if (
 !member2.includes(ʟɴᴀᴍᴇ) &&
 !member3.includes(ʟɴᴀᴍᴇ)
 ) {
-const buttonMessage = {
-contentText: `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
+// const buttonMessage = {
+// contentText: `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
 
-🤖𝐕𝐞𝐫𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧: _You Are Not Verified!_`,
-footerText: `\n❝⌬𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers}❞\nⒸ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™`,
-buttons: [
-{
-buttonId: `${ᴋᴇɪ}verify`,
-buttonText: { displayText: `${ᴋᴇɪ}verify` },
-type: 1,
-},
-],
-headerType: 1,
-};
+// 🤖𝐕𝐞𝐫𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧: _You Are Not Verified!_`,
+// footerText: `\n❝⌬𝐕𝐥𝐤𝐲𝐫𝐞 ${vers.vers}❞\nⒸ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™`,
+// buttons: [
+// {
+// buttonId: `${ᴋᴇɪ}verify`,
+// buttonText: { displayText: `${ᴋᴇɪ}verify` },
+// type: 1,
+// },
+// ],
+// headerType: 1,
+// };
+// return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
+// .sendMessage(
+// ᴠʟᴋʏʀᴇ.chatId,
+// buttonMessage,
+// MessageType.buttonsMessage,
+// {
+// quoted: KryChat,
+// contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
+// }
+// )
+// .catch((error) =>
+// ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, KryChat)
+// );
 return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .sendMessage(
 ᴠʟᴋʏʀᴇ.chatId,
-buttonMessage,
-MessageType.buttonsMessage,
+fs.readFileSync("./ᴠʟᴋʏʀᴇ🔌cord/🦋𝐕𝐥𝐤𝐲𝐫𝐞.mp4"),
+MessageType.video,
 {
+mimetype: `video/gif`,
 quoted: KryChat,
+caption: `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
+
+🤖𝐕𝐞𝐫𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧: _❌𝐍𝐎𝐓 𝐕𝐄𝐑𝐈𝐅𝐈𝐄𝐃❌_
+👉🏽𝐂𝐥𝐢𝐜𝐤‍: _https://VlkyreAI.krakinzkon.repl.co_
+• Find Groups Section In Webpage.
+• Join Any Group To Verify.
+
+
+⌬𝐕𝐥𝐤𝐲𝐫𝐞\n❝Ⓒ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™❞`,
 contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
 }
 )
-.catch((error) =>
-ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, KryChat)
-);
+.catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, KryChat));
 }
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 /*              (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!*/
