@@ -211,7 +211,7 @@ await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
 quoted: KryChat,
 mimetype: `video/gif`,
-caption: `⌬𝐕𝐥𝐤𝐲𝐫𝐞\n❝Ⓒ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™❞\n\n
+caption: `❝ 𝐕𝐥𝐤𝐲𝐫𝐞 ❞\nⒸ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™\n\n
 
 🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
 🍯𝐒𝐞𝐚𝐫𝐜𝐡𝐞𝐝: ${𝖆𝖗𝖌𝖚𝖒𝖊𝖓𝖙.join(` `)}
