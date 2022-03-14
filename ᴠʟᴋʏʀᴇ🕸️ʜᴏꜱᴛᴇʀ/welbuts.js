@@ -87,7 +87,7 @@ ${PeopleWel} 𝐌𝐞𝐦𝐛𝐞𝐫𝐳: ${GroupMemG}
 🎪 𝐆𝐫𝐨𝐮𝐩: ${GroupMemData.subject}
 ꧁◇══════════════◇꧂
 ${Message}`,
-footerText: `⌬𝐕𝐥𝐤𝐲𝐫𝐞\n❝Ⓒ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™❞`,
+footerText: `❝ 𝐕𝐥𝐤𝐲𝐫𝐞 ❞\nⒸ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}getdesc`,
@@ -133,7 +133,7 @@ ${PeopleWel} 𝐌𝐞𝐦𝐛𝐞𝐫𝐳: ${GroupMemG}
 🎪 𝐆𝐫𝐨𝐮𝐩: ${GroupMemData.subject}
 ꧁◇══════════════◇꧂
 ${Message}`,
-footerText: `⌬𝐕𝐥𝐤𝐲𝐫𝐞\n❝Ⓒ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™❞`,
+footerText: `❝ 𝐕𝐥𝐤𝐲𝐫𝐞 ❞\nⒸ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™`,
 buttons: [
 {
 buttonId: `${ᴋᴇɪ}getdesc`,
