@@ -1,0 +1,52 @@
+{
+  "name": "❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ❞",
+  "logo": "https://i.postimg.cc/y8TNXJtB/image.png",
+  "repository": "https://github.com/KryKnz/Vlkyre.git",
+  "stack": "container",
+  "website": "https://KrakinzLab-Vlkyre.krakinzkon.repl.co",
+  "description": "Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!",
+  "keywords": [
+    "whatsapp",
+    "js-whatsapp",
+    "whatsapp-api",
+    "whatsapp-web",
+    "whatsapp",
+    "whatsapp-chat",
+    "whatsapp-group",
+    "automation",
+    "download",
+    "api",
+    "dl",
+    "downloader",
+    "music",
+    "song",
+    "ffmpeg",
+    "opus",
+    "spotify",
+    "download",
+    "spotifydl",
+    "spotify-dl",
+    "api",
+    "dl",
+    "downloader",
+    "spotify-downloader",
+    "music",
+    "node-spdl",
+    "spdl",
+    "song",
+    "ffmpeg",
+    "opus",
+    "filter",
+    "filters"
+  ],
+  "env": {
+    "VLKYRE": {
+      "description": "Your Session Code. Get It From: https://KrakinzLab-Vlkyre.krakinzkon.repl.co",
+      "required": true
+    },
+    "CODE": {
+      "description": "Most Needed KrakinzLab Hype Code!",
+      "required": true
+    }
+  }
+}
