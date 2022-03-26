@@ -38,11 +38,7 @@ MainText =`*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
 ╔◇🪔 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 🪔
 ╚◇════════════◇꧂
 🦋𝐕𝐥𝐤𝐲𝐫𝐞: _Is an Advance Whatsapp User-Bot!_
-💡𝗚𝗶𝘁𝗛𝘂𝗯: _https://VlkyreAI.krakinzkon.repl.co_
 🛰️𝐖𝐞𝐛𝐬𝐢𝐭𝐞: _https://VlkyreAI.krakinzkon.repl.co_
-⛩️𝗚𝗖𝟭: _https://chat.whatsapp.com/LKN8uVBd8ucHRHofz0jBSd_
-⛩️𝗚𝗖𝟮: _https://chat.whatsapp.com/HKO5WLEZxMe3xWCyiv6vBu_
-⛩️𝗚𝗖𝟯: _https://chat.whatsapp.com/EIn3YFShFmkJ3fvAqf2rpn_
 
 ꧁◇⚡𝐁𝐞𝐥𝐨𝐰 𝐅𝐮𝐥𝐥 𝐋𝐢𝐬𝐭⚡◇꧂
 ╔⧉༻👇🏽 𝗚𝗮𝗺𝗲𝘀👇🏽
