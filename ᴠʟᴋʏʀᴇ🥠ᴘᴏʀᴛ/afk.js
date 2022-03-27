@@ -8,13 +8,6 @@ var AFKSchema = new mongoose.Schema({
 ID: String,
 goneAFK: Number,
 reasonAFK: String,
-
-
-
-workdone: String,
-workTimeOut: Number(20215),
-{sudo: takeIn}
-
 });
 module.exports = mongoose.model("AFK", AFKSchema);
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
