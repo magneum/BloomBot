@@ -25,7 +25,7 @@ module.exports = {
   ᴠʟᴋʏʀᴇӄǟɨʐօ: `*${ᴋᴇɪ}${newScpt}* _Direct Link_
 
 𝗙𝗼𝗿 𝗘𝘅: ${ᴋᴇɪ}${newScpt} https://i.postimg.cc/KzKjcD50/vlkUvar.gif`,
-  async handle(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, KryChat, ᴠʟᴋʏʀᴇ, 𝖆𝖗𝖌𝖚𝖒𝖊𝖓𝖙, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
+  async handle(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, KryChat, ᴠʟᴋʏʀᴇ, 𝖆𝖗𝖌𝖚𝖒𝖊𝖓𝖙, ꜱɪᴛʀᴀᴘ, Ping) {
     try {
       const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
       const ᴅꜰɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.commandName;

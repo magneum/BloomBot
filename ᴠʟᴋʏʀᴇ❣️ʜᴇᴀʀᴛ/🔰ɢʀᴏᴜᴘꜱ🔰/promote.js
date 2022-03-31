@@ -24,7 +24,7 @@ module.exports = {
 *${ᴋᴇɪ}promote* _tag_
 *${ᴋᴇɪ}promote* _reply to their text_
 🍁Use this module to demote a person from admin by entering the person's mobile number. `,
-  async handle(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, KryChat, ᴠʟᴋʏʀᴇ, 𝖆𝖗𝖌𝖚𝖒𝖊𝖓𝖙, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
+  async handle(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, KryChat, ᴠʟᴋʏʀᴇ, 𝖆𝖗𝖌𝖚𝖒𝖊𝖓𝖙, ꜱɪᴛʀᴀᴘ, Ping) {
     try {
       const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
       const ᴅꜰɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.commandName;

@@ -48,6 +48,9 @@ module.exports = {
 ║•  ${ᴋᴇɪ}watch: _download video using yt_
 ║•  ${ᴋᴇɪ}spotify: _download using spotify link_
 ║•  ${ᴋᴇɪ}soundcloud: _download using soundcloud link_
+║•  ${ᴋᴇɪ}gifdl: _download using gif link_
+║•  ${ᴋᴇɪ}imagedl: _download using image link_
+║•  ${ᴋᴇɪ}videodl: _download using video link_
 ╚════════════╝`;
       return ᴠʟᴋʏʀᴇ_Buttons
         .MIB(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, KryChat, ᴠʟᴋʏʀᴇ, MainText, MediaUrl)

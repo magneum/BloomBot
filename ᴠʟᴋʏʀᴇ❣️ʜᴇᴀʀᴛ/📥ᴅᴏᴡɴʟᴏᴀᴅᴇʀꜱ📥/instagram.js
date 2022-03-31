@@ -21,17 +21,15 @@ var newScpt = scriptName.slice(0, -3).toLowerCase();
 module.exports = {
   name: newScpt,
   ᴠʟᴋʏʀᴇӄǟɨʐօ: `*${ᴋᴇɪ}instagram* _ig video/image link_`,
-  async handle(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, KryChat, ᴠʟᴋʏʀᴇ, 𝖆𝖗𝖌𝖚𝖒𝖊𝖓𝖙, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
+  async handle(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, KryChat, ᴠʟᴋʏʀᴇ, 𝖆𝖗𝖌𝖚𝖒𝖊𝖓𝖙, ꜱɪᴛʀᴀᴘ, Ping) {
     try {
       const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
       const ᴅꜰɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.commandName;
       let ᴘɴᴀᴍᴇ;
       try {
         ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/\@s.whatsapp.net/g, "").replace(/\D/g, "");
-        // require("child_process").exec("hash -r").stderr.pipe(process.stderr);
       } catch {
         ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.split("@")[0].replace(/\D/g, "");
-        // require("child_process").exec("hash -r").stderr.pipe(process.stderr);
       }
       const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
       `|⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|`;

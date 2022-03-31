@@ -25,7 +25,7 @@ module.exports = {
   name: newScpt,
   ᴠʟᴋʏʀᴇӄǟɨʐօ: `*${ᴋᴇɪ}lock* _number m/s/h_
 🛸will change KryChat permissions to admin-only!`,
-  async handle(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, KryChat, ᴠʟᴋʏʀᴇ, 𝖆𝖗𝖌𝖚𝖒𝖊𝖓𝖙, ꜱɪᴛʀᴀᴘ, Clock, Ping) {
+  async handle(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, KryChat, ᴠʟᴋʏʀᴇ, 𝖆𝖗𝖌𝖚𝖒𝖊𝖓𝖙, ꜱɪᴛʀᴀᴘ, Ping) {
     try {
       const ʟɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.sender;
       const ᴅꜰɴᴀᴍᴇ = ᴠʟᴋʏʀᴇ.commandName;
