@@ -5,14 +5,14 @@
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 var mongoose = require("mongoose");
 var EconomySchema = new mongoose.Schema({
-ID: String,
-money: Number,
-daily: Number,
-timeout: Number,
-fishdone: Number,
-fishtimeout: Number,
-workdone: Number,
-worktimeout: Number,
+  ID: String,
+  money: Number,
+  daily: Number,
+  timeout: Number,
+  fishdone: Number,
+  fishtimeout: Number,
+  workdone: Number,
+  worktimeout: Number,
 });
 module.exports = mongoose.model("Economy", EconomySchema);
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
