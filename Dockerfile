@@ -90,6 +90,7 @@
 # 	; \
 # 	rm -f get-pip.py
 # |⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|
+# RUN apt-get update && apt-get upgrade -y && apt-get install jq -y && apt-get install git -y && apt-get install curl -y && apt-get install wget -y && apt-get install ffmpeg -y && apt-get install nodejs -y && apt-get install npm -y && apt-get install python3 -y && apt-get install bpm-tools -y &&  apt-get install opus-tools -y && apt-get install python3-pip -y && apt-get install python3-pip -y && hash -r && npm install -g n && n install lts  && npm install -g npm && hash -r && curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl && chmod a+rx /usr/local/bin/youtube-dl && curl https://cli-assets.heroku.com/install.sh | sh && heroku plugins:install heroku-builds && pip install -r ᴠʟᴋʏʀᴇ🀄ᴇxʜᴀᴜꜱᴛ/кгץкภչ.txt && npm install --force --save && rm package-lock.json && npm install -g spotify-dl spdl-core
 FROM python:latest
 ENV ᴋʀᴀᴋɪɴᴢ⌬ʟᴀʙ "/venv"
 RUN python -m venv $ᴋʀᴀᴋɪɴᴢ⌬ʟᴀʙ
@@ -108,7 +109,6 @@ RUN apt-get install bpm-tools -y
 RUN apt-get install opus-tools -y 
 RUN apt-get install python3-pip -y 
 RUN apt-get install python-is-python3 -y
-# RUN apt-get update && apt-get upgrade -y && apt-get install jq -y && apt-get install git -y && apt-get install curl -y && apt-get install wget -y && apt-get install ffmpeg -y && apt-get install nodejs -y && apt-get install npm -y && apt-get install python3 -y && apt-get install bpm-tools -y &&  apt-get install opus-tools -y && apt-get install python3-pip -y && apt-get install python3-pip -y && hash -r && npm install -g n && n install lts  && npm install -g npm && hash -r && curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl && chmod a+rx /usr/local/bin/youtube-dl && curl https://cli-assets.heroku.com/install.sh | sh && heroku plugins:install heroku-builds && pip install -r ᴠʟᴋʏʀᴇ🀄ᴇxʜᴀᴜꜱᴛ/кгץкภչ.txt && npm install --force --save && rm package-lock.json && npm install -g spotify-dl spdl-core
 RUN hash -r 
 RUN npm install -g n && n install lts 
 RUN npm install -g npm
