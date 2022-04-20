@@ -8,17 +8,17 @@ const { JSDOM } = require(`jsdom`);
 const { window } = new JSDOM();
 const Kolor = require(`chalk`);
 exports.cleanRF = async (...ᴊᴜɴᴋꜱ) => {
-var startTime = window.performance.now();
-for (location of ᴊᴜɴᴋꜱ) {
-fs.unlink(location, (error) => {
-if (error) console.log(error);
-});
-}
-var endTime = window.performance.now();
-console.log(
-Kolor.green(`⬡═══════|⚡ Execution time: ` + (endTime - startTime) / 1000)
-);
-console.log(Kolor.red(`⬡═══════|🗑️𝙲𝚕𝚎𝚊𝚗𝚎𝚍: ` + ᴊᴜɴᴋꜱ));
+  var startTime = window.performance.now();
+  for (location of ᴊᴜɴᴋꜱ) {
+    fs.unlink(location, (error) => {
+      if (error) console.log(error);
+    });
+  }
+  var endTime = window.performance.now();
+  console.log(
+    Kolor.green(`⬡═══════|⚡ Execution time: ` + (endTime - startTime) / 1000)
+  );
+  console.log(Kolor.red(`⬡═══════|🗑️𝙲𝚕𝚎𝚊𝚗𝚎𝚍: ` + ᴊᴜɴᴋꜱ));
 };
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 /*        

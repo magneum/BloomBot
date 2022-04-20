@@ -180,11 +180,6 @@ async function ᴠʟᴋʏʀᴇ() {
           footerText: `\n*☊𝐕𝐥𝐤𝐲𝐫𝐞*\n_Ⓒ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™_`,
           buttons: [
             {
-              buttonId: `${ᴋᴇɪ}vlkyre`,
-              buttonText: { displayText: `${ᴋᴇɪ}vlkyre` },
-              type: 1,
-            },
-            {
               buttonId: `${ᴋᴇɪ}help`,
               buttonText: { displayText: `${ᴋᴇɪ}help` },
               type: 1,
