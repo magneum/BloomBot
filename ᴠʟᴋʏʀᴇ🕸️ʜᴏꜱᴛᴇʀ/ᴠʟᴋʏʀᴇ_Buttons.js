@@ -32,7 +32,7 @@ const ᴠʟᴋʏʀᴇ_Text_But = async (ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, Kr
       var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
       const buttonMessage = {
         contentText: MainText,
-        footerText: `*☊𝐕𝐥𝐤𝐲𝐫𝐞*\n_Ⓒ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™_`,
+        footerText: `☊𝐕𝐥𝐤𝐲𝐫𝐞\nⒸ2022 ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
         buttons: [
           {
             buttonId: `${ᴋᴇɪ}help`,
@@ -55,7 +55,7 @@ const ᴠʟᴋʏʀᴇ_Text_But = async (ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, Kr
       const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
       const buttonMessage = {
         contentText: MainText,
-        footerText: `*☊𝐕𝐥𝐤𝐲𝐫𝐞*\n_Ⓒ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™_`,
+        footerText: `☊𝐕𝐥𝐤𝐲𝐫𝐞\nⒸ2022 ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
         buttons: [
           {
             buttonId: `${ᴋᴇɪ}help`,
@@ -104,7 +104,7 @@ const ᴠʟᴋʏʀᴇ_Image_But = async (
           ᴠʟᴋʏʀᴇ.chatId,
           {
             contentText: MainText,
-            footerText: `*☊𝐕𝐥𝐤𝐲𝐫𝐞*\n_Ⓒ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™_`,
+            footerText: `☊𝐕𝐥𝐤𝐲𝐫𝐞\nⒸ2022 ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
             buttons: [
               {
                 buttonId: `${ᴋᴇɪ}help`,
@@ -138,7 +138,7 @@ const ᴠʟᴋʏʀᴇ_Image_But = async (
           ᴠʟᴋʏʀᴇ.chatId,
           {
             contentText: MainText,
-            footerText: `*☊𝐕𝐥𝐤𝐲𝐫𝐞*\n_Ⓒ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™_`,
+            footerText: `☊𝐕𝐥𝐤𝐲𝐫𝐞\nⒸ2022 ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
             buttons: [
               {
                 buttonId: `${ᴋᴇɪ}help`,
@@ -189,7 +189,7 @@ const ᴠʟᴋʏʀᴇ_Video_But = async (
           ᴠʟᴋʏʀᴇ.chatId,
           {
             contentText: MainText,
-            footerText: `*☊𝐕𝐥𝐤𝐲𝐫𝐞*\n_Ⓒ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™_`,
+            footerText: `☊𝐕𝐥𝐤𝐲𝐫𝐞\nⒸ2022 ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
             buttons: [
               {
                 buttonId: `${ᴋᴇɪ}help`,
@@ -223,7 +223,7 @@ const ᴠʟᴋʏʀᴇ_Video_But = async (
           ᴠʟᴋʏʀᴇ.chatId,
           {
             contentText: MainText,
-            footerText: `*☊𝐕𝐥𝐤𝐲𝐫𝐞*\n_Ⓒ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™_`,
+            footerText: `☊𝐕𝐥𝐤𝐲𝐫𝐞\nⒸ2022 ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
             buttons: [
               {
                 buttonId: `${ᴋᴇɪ}help`,
@@ -274,7 +274,7 @@ const ᴠʟᴋʏʀᴇ_GIF_But = async (
           ᴠʟᴋʏʀᴇ.chatId,
           {
             contentText: MainText,
-            footerText: `*☊𝐕𝐥𝐤𝐲𝐫𝐞*\n_Ⓒ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™_`,
+            footerText: `☊𝐕𝐥𝐤𝐲𝐫𝐞\nⒸ2022 ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
             buttons: [
               {
                 buttonId: `${ᴋᴇɪ}help`,
@@ -308,7 +308,7 @@ const ᴠʟᴋʏʀᴇ_GIF_But = async (
           ᴠʟᴋʏʀᴇ.chatId,
           {
             contentText: MainText,
-            footerText: `*☊𝐕𝐥𝐤𝐲𝐫𝐞*\n_Ⓒ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™_`,
+            footerText: `☊𝐕𝐥𝐤𝐲𝐫𝐞\nⒸ2022 ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
             buttons: [
               {
                 buttonId: `${ᴋᴇɪ}help`,
@@ -363,7 +363,7 @@ const ᴠʟᴋʏʀᴇ_VideoAudio_But = async (
     const buttonMessages = {
       videoMessage: media.message.videoMessage,
       contentText: MainText,
-      footerText: `*☊𝐕𝐥𝐤𝐲𝐫𝐞*\n_Ⓒ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™_`,
+      footerText: `☊𝐕𝐥𝐤𝐲𝐫𝐞\nⒸ2022 ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
       buttons: [
         {
           buttonId: `${ᴋᴇɪ}help`,
@@ -415,7 +415,7 @@ const ᴠʟᴋʏʀᴇ_Location_But = async (
     const buttonMessages = {
       locationMessage: media.message.locationMessage,
       contentText: MainText,
-      footerText: `*☊𝐕𝐥𝐤𝐲𝐫𝐞*\n_Ⓒ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™_`,
+      footerText: `☊𝐕𝐥𝐤𝐲𝐫𝐞\nⒸ2022 ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
       buttons: [
         {
           buttonId: `${ᴋᴇɪ}help`,

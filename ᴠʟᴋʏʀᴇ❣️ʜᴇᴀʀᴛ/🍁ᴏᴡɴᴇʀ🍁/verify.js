@@ -76,15 +76,8 @@ module.exports = {
 
 ❌𝐍𝐎𝐓 𝐕𝐄𝐑𝐈𝐅𝐈𝐄𝐃❌ 
 👉🏽𝐂𝐥𝐢𝐜𝐤‍: _https://VlkyreAI.krakinzkon.repl.co_
-            *OR*
-❓  Join Any Group To Verify.
-📌 https://chat.whatsapp.com/LKN8uVBd8ucHRHofz0jBSd
-📌 https://chat.whatsapp.com/HKO5WLEZxMe3xWCyiv6vBu
-📌 https://chat.whatsapp.com/EIn3YFShFmkJ3fvAqf2rpn
-📌 https://chat.whatsapp.com/HKO5WLEZxMe3xWCyiv6vBu
 
-
-*☊𝐕𝐥𝐤𝐲𝐫𝐞*\n_Ⓒ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™_`,
+☊𝐕𝐥𝐤𝐲𝐫𝐞\nⒸ2022 ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
               contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
             }
           )
@@ -114,7 +107,7 @@ module.exports = {
 📌 _Monitor Performance!_
 📌 _Use Vlkyre-Premium Anywhere!_
 
-*☊𝐕𝐥𝐤𝐲𝐫𝐞*\n_Ⓒ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™_`,
+☊𝐕𝐥𝐤𝐲𝐫𝐞\nⒸ2022 ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
               contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
             }
           )

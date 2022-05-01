@@ -127,7 +127,7 @@ module.exports = {
             contextInfo: {
               mentionedJid: members,
             },
-            caption: `*☊𝐕𝐥𝐤𝐲𝐫𝐞*\n_Ⓒ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™_
+            caption: `☊𝐕𝐥𝐤𝐲𝐫𝐞\nⒸ2022 ᴋʀᴀᴋɪɴᴢʟᴀʙ™
 
 🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
 ⚡ 𝐅𝐫𝐨𝐦: @${ᴘɴᴀᴍᴇ}
@@ -145,7 +145,7 @@ ${ᴠʟᴋʏʀᴇ.body.replace(ᴠʟᴋʏʀᴇ.body[0] + ᴠʟᴋʏʀᴇ.command
             contextInfo: {
               mentionedJid: members,
             },
-            caption: `*☊𝐕𝐥𝐤𝐲𝐫𝐞*\n_Ⓒ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™_
+            caption: `☊𝐕𝐥𝐤𝐲𝐫𝐞\nⒸ2022 ᴋʀᴀᴋɪɴᴢʟᴀʙ™
 
 🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
 ⚡ 𝐅𝐫𝐨𝐦: @${ᴘɴᴀᴍᴇ}

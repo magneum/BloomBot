@@ -138,7 +138,7 @@ module.exports = {
 📜𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${ᴠʟᴋʏʀᴇ.groupName}
 🔗𝐀𝐧𝐭𝐢𝐥𝐢𝐧𝐤: ✅On
 🌱𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗧𝗼𝗴𝗴𝗹𝗲 𝗔𝗻𝘁𝗶𝗹𝗶𝗻𝗸👇🏽‍`,
-                      footerText: `*☊𝐕𝐥𝐤𝐲𝐫𝐞*\n_Ⓒ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™_`,
+                      footerText: `☊𝐕𝐥𝐤𝐲𝐫𝐞\nⒸ2022 ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
                       buttons: [
                         {
                           buttonId: `${ᴋᴇɪ}antilink on`,
@@ -182,7 +182,7 @@ module.exports = {
 📜𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${ᴠʟᴋʏʀᴇ.groupName}
 🔗𝐀𝐧𝐭𝐢𝐥𝐢𝐧𝐤: ✅On
 🌱𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗧𝗼𝗴𝗴𝗹𝗲 𝗔𝗻𝘁𝗶𝗹𝗶𝗻𝗸👇🏽‍`,
-                      footerText: `*☊𝐕𝐥𝐤𝐲𝐫𝐞*\n_Ⓒ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™_`,
+                      footerText: `☊𝐕𝐥𝐤𝐲𝐫𝐞\nⒸ2022 ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
                       buttons: [
                         {
                           buttonId: `${ᴋᴇɪ}antilink on`,
@@ -244,7 +244,7 @@ module.exports = {
 📜𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${ᴠʟᴋʏʀᴇ.groupName}
 🔗𝐀𝐧𝐭𝐢𝐥𝐢𝐧𝐤: ❌OFF
 🌱𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗧𝗼𝗴𝗴𝗹𝗲 𝗔𝗻𝘁𝗶𝗹𝗶𝗻𝗸👇🏽‍`,
-                      footerText: `*☊𝐕𝐥𝐤𝐲𝐫𝐞*\n_Ⓒ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™_`,
+                      footerText: `☊𝐕𝐥𝐤𝐲𝐫𝐞\nⒸ2022 ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
                       buttons: [
                         {
                           buttonId: `${ᴋᴇɪ}antilink on`,
@@ -293,7 +293,7 @@ module.exports = {
 📜𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${ᴠʟᴋʏʀᴇ.groupName}
 🔗𝐀𝐧𝐭𝐢𝐥𝐢𝐧𝐤: ❌OFF
 🌱𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗧𝗼𝗴𝗴𝗹𝗲 𝗔𝗻𝘁𝗶𝗹𝗶𝗻𝗸👇🏽‍`,
-                      footerText: `*☊𝐕𝐥𝐤𝐲𝐫𝐞*\n_Ⓒ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™_`,
+                      footerText: `☊𝐕𝐥𝐤𝐲𝐫𝐞\nⒸ2022 ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
                       buttons: [
                         {
                           buttonId: `${ᴋᴇɪ}antilink on`,

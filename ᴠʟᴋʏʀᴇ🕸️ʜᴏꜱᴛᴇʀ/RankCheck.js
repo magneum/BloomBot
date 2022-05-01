@@ -93,7 +93,7 @@ const RankCheck = async (ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, KryChat, ᴠʟᴋ
                 contentText: `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
 
 ✨𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬 𝐋𝐞𝐯𝐞𝐥𝐞𝐝 𝐔𝐏!`,
-                footerText: `*☊𝐕𝐥𝐤𝐲𝐫𝐞*\n_Ⓒ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™_`,
+                footerText: `☊𝐕𝐥𝐤𝐲𝐫𝐞\nⒸ2022 ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
                 buttons: [
                   {
                     buttonId: `${ᴋᴇɪ}rank`,
