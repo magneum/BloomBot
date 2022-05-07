@@ -1022,7 +1022,7 @@ quoted: KryChat,
 caption: `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
 
 ❌𝐍𝐎𝐓 𝐕𝐄𝐑𝐈𝐅𝐈𝐄𝐃❌ 
-👉🏽𝐂𝐥𝐢𝐜𝐤‍: _VlkyreAI.krakinzkon.repl.co_
+👉🏽𝐖𝐞𝐛𝐬𝐢𝐭𝐞: _VlkyreAI.krakinzkon.repl.co_
 *OR*
 ❓  Join Any Group To Verify.
 📌 https://chat.whatsapp.com/LKN8uVBd8ucHRHofz0jBSd
