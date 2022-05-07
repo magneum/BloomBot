@@ -591,7 +591,7 @@ ${update.desc}`,
         });
       } catch (error) {
         console.log(error);
-        return ᴠʟᴋʏʀᴇ_Buttons.MTB(
+        return ᴠʟᴋʏʀᴇ_Buttons.MIB(
           ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
           KryChat,
           ᴠʟᴋʏʀᴇ,
