@@ -1143,7 +1143,7 @@ return;
 
 if (ᴠʟᴋʏʀᴇ.isPm) {
 let linkRegex = /KryChat.whatsapp.com\/([0-9A-Za-z]{20,24})/i;
-var InvLink = ᴠʟᴋʏʀᴇ.body.join(" ");
+var InvLink = ᴠʟᴋʏʀᴇ.body;
 let [_, code] = InvLink.match(linkRegex) || [];
 if (code) {
 try {
