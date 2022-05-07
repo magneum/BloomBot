@@ -41,7 +41,7 @@ module.exports = {
       var MediaUrl = "./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇi.png";
       var MainText = `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
 🦋𝐕𝐥𝐤𝐲𝐫𝐞: _Is an Advance Whatsapp User-Bot!_
-💡𝗚𝗶𝘁𝗛𝘂𝗯: _VlkyreAI.krakinzkon.repl.co_
+🌐𝐖𝐞𝐛𝐬𝐢𝐭𝐞: _VlkyreAI.krakinzkon.repl.co_
 
 ╔════⧉🎨 𝐂𝐡𝐞𝐜𝐤
 ║• *${ᴋᴇɪ}gaycheck:*  _@tag person or reply person_
