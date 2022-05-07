@@ -41,7 +41,7 @@ module.exports = {
       var MediaUrl = "./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇi.png";
       var MainText = `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
 🦋𝐕𝐥𝐤𝐲𝐫𝐞: _Is an Advance Whatsapp User-Bot!_
-💡𝗚𝗶𝘁𝗛𝘂𝗯: _VlkyreAI.krakinzkon.repl.co_
+🌐𝐖𝐞𝐛𝐬𝐢𝐭𝐞: _VlkyreAI.krakinzkon.repl.co_
 
 ╔════⧉🍑 𝐇𝐞𝐧𝐭𝐚𝐢 𝐍𝐒𝐅𝐖
 ║• *${ᴋᴇɪ}ass:*  _ɪ ᴋɴᴏᴡ ʏᴏᴜ ʟɪᴋᴇ ᴀɴɪᴍᴇ ᴀꜱꜱ~_
