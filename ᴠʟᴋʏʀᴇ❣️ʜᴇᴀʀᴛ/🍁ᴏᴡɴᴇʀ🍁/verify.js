@@ -77,7 +77,7 @@ module.exports = {
 ❌𝐍𝐎𝐓 𝐕𝐄𝐑𝐈𝐅𝐈𝐄𝐃❌ 
 👉🏽𝐂𝐥𝐢𝐜𝐤‍: _https://VlkyreAI.krakinzkon.repl.co_
 
-☊𝐕𝐥𝐤𝐲𝐫𝐞\nⒸ2022 ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+⦓ 𝐕𝐥𝐤𝐲𝐫𝐞 ⦔\nⒸ2022 ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
               contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
             }
           )
@@ -107,7 +107,7 @@ module.exports = {
 📌 _Monitor Performance!_
 📌 _Use Vlkyre-Premium Anywhere!_
 
-☊𝐕𝐥𝐤𝐲𝐫𝐞\nⒸ2022 ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+⦓ 𝐕𝐥𝐤𝐲𝐫𝐞 ⦔\nⒸ2022 ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
               contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
             }
           )
