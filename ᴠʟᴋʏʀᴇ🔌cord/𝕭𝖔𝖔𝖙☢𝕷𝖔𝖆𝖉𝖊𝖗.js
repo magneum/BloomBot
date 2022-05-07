@@ -597,9 +597,9 @@ ${update.desc}`,
           `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
 
 ❌ 𝗘𝗿𝗿𝗼𝗿
-⬡ _Check If Bot Was Kicked!_
-⬡ _Check Disappearing Message Turned-Off!_
-⬡ _Check Member limit In Your Group!_`,
+⬡ Check If Bot Was Kicked!
+⬡ Check Disappearing Message Turned-Off!
+⬡ Check Member limit In Your Group!`,
 ""
         );
       }
