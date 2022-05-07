@@ -1057,6 +1057,16 @@ contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
 ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, KryChat)
 );
 }
+return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
+ᴠʟᴋʏʀᴇ.chatId,
+`*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
+
+*⚠️𝐈𝐌𝐏𝐎𝐑𝐓𝐀𝐍𝐓:* Vlkyre Is Under Heavy Load and It's Team Is Fixing Some Bugs. Hang On and Do Not Command any More!`,
+MessageType.text,
+{
+contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
+}
+);
 console.log(
 Kolor.yellow(
 "⬡═══════════════════════════>❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞"
