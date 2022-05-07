@@ -560,9 +560,8 @@ ${update.desc}`,
         let CurrentCodePresentGroupLink = new RegExp(`${ᴠʟᴋʏʀᴇ.body}`, "i");
         let isCurrentCode = CurrentCodePresentGroupLink.test(ᴠʟᴋʏʀᴇ.body);
         await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.acceptInvite(isCurrentCode).then(async (res) => {
-          const gMd = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.groupMetadata(res.gid);
           const gD = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.groupMetadata(res.gid);
-          if (!ᴠʟᴋʏʀᴇ.isSenderDev && gMd.participants.length < 15) {
+          if (!ᴠʟᴋʏʀᴇ.isSenderDev && gD.participants.length < 15) {
             await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.groupRemove(res.gid, [ᴠʟᴋʏʀᴇ.Myself]);
             return ᴠʟᴋʏʀᴇ_Buttons.MTB(
               ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
