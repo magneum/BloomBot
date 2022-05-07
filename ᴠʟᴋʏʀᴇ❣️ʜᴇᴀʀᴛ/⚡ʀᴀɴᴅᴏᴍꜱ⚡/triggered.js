@@ -78,7 +78,7 @@ module.exports = {
                   {
                     mimetype: `video/gif`,
                     quoted: KryChat,
-                    caption: `☊𝐕𝐥𝐤𝐲𝐫𝐞\nⒸ2022 ᴋʀᴀᴋɪɴᴢʟᴀʙ™
+                    caption: `⦓ 𝐕𝐥𝐤𝐲𝐫𝐞 ⦔\nⒸ2022 ᴋʀᴀᴋɪɴᴢʟᴀʙ™
 
 
 🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
@@ -140,7 +140,7 @@ module.exports = {
                   {
                     mimetype: `video/gif`,
                     quoted: KryChat,
-                    caption: `☊𝐕𝐥𝐤𝐲𝐫𝐞\nⒸ2022 ᴋʀᴀᴋɪɴᴢʟᴀʙ™
+                    caption: `⦓ 𝐕𝐥𝐤𝐲𝐫𝐞 ⦔\nⒸ2022 ᴋʀᴀᴋɪɴᴢʟᴀʙ™
 
 
 🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
