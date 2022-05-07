@@ -45,7 +45,7 @@ module.exports = {
         ᴠʟᴋʏʀᴇ,
         (MainText = `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
 🦋𝐕𝐥𝐤𝐲𝐫𝐞: _Is an Advance Whatsapp User-Bot!_
-💡𝗚𝗶𝘁𝗛𝘂𝗯: _https://VlkyreAI.krakinzkon.repl.co_
+💡𝗚𝗶𝘁𝗛𝘂𝗯: _VlkyreAI.krakinzkon.repl.co_
 
 ╔════⧉🍙 𝐀𝐧𝐢𝐦𝐞
 ║• *${ᴋᴇɪ}anime:*  _search any anime_
