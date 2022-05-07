@@ -600,7 +600,7 @@ KryChat,
 ⬡ Check If Bot Was Kicked!
 ⬡ Check Disappearing Message Turned-Off!
 ⬡ Check Member limit In Your Group!`,
-"ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇi"
+"ᴠʟᴋʏʀᴇ🔌cord/кгץкภչ.png"
 );
 }
 }
