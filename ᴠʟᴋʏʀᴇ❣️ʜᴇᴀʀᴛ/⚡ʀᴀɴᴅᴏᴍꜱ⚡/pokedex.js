@@ -127,7 +127,7 @@ _This Command is Only For Groups!_!`
               {
                 mimetype: Mimetype.png,
                 quoted: KryChat,
-                caption: `☊𝐕𝐥𝐤𝐲𝐫𝐞\nⒸ2022 ᴋʀᴀᴋɪɴᴢʟᴀʙ™\n\n` + PokeInfo,
+                caption: `⦓ 𝐕𝐥𝐤𝐲𝐫𝐞 ⦔\nⒸ2022 ᴋʀᴀᴋɪɴᴢʟᴀʙ™\n\n` + PokeInfo,
                 contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
               }
             );

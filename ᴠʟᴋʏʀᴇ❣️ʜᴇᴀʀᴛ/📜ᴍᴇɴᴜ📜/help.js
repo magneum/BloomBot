@@ -357,7 +357,7 @@ module.exports = {
 ║🍑 ${ᴋᴇɪ}uniform
 ║🍑 ${ᴋᴇɪ}yuri
 ╚════════════╝`,
-            footerText: `☊𝐕𝐥𝐤𝐲𝐫𝐞\nⒸ2022 ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+            footerText: `⦓ 𝐕𝐥𝐤𝐲𝐫𝐞 ⦔\nⒸ2022 ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
             buttons: [
               {
                 buttonId: `${ᴋᴇɪ}menu`,
