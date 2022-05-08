@@ -127,10 +127,7 @@ module.exports = {
             contextInfo: {
               mentionedJid: members,
             },
-            caption: `☊𝐕𝐥𝐤𝐲𝐫𝐞\nⒸ2022 ᴋʀᴀᴋɪɴᴢʟᴀʙ™
-
-🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
-⚡ 𝐅𝐫𝐨𝐦: @${ᴘɴᴀᴍᴇ}
+            caption: `⚡ 𝐅𝐫𝐨𝐦: @${ᴘɴᴀᴍᴇ}
 ${ᴠʟᴋʏʀᴇ.body.replace(ᴠʟᴋʏʀᴇ.body[0] + ᴠʟᴋʏʀᴇ.commandName + " ", "")}`,
           })
           .catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, KryChat));
@@ -145,10 +142,7 @@ ${ᴠʟᴋʏʀᴇ.body.replace(ᴠʟᴋʏʀᴇ.body[0] + ᴠʟᴋʏʀᴇ.command
             contextInfo: {
               mentionedJid: members,
             },
-            caption: `☊𝐕𝐥𝐤𝐲𝐫𝐞\nⒸ2022 ᴋʀᴀᴋɪɴᴢʟᴀʙ™
-
-🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
-⚡ 𝐅𝐫𝐨𝐦: @${ᴘɴᴀᴍᴇ}
+            caption: `⚡ 𝐅𝐫𝐨𝐦: @${ᴘɴᴀᴍᴇ}
 ${ᴠʟᴋʏʀᴇ.replyMessage.replace(ᴠʟᴋʏʀᴇ.body[0] + ᴠʟᴋʏʀᴇ.commandName + " ", "")}`,
           }
         );

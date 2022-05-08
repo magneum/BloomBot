@@ -138,7 +138,7 @@ module.exports = {
 ❣️ 𝐆𝐫𝐨𝐮𝐩: ${ᴠʟᴋʏʀᴇ.groupName}
 🎖️ 𝗔𝘂𝘁𝗼𝗥𝗮𝗻𝗸: ✅On
 🌱𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗧𝗼𝗴𝗴𝗹𝗲 𝗔𝘂𝘁𝗼𝗥𝗮𝗻𝗸👇🏽‍`,
-                    footerText: `☊𝐕𝐥𝐤𝐲𝐫𝐞\nⒸ2022 ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+                    footerText: `⦓ 𝐕𝐥𝐤𝐲𝐫𝐞 ⦔\nⒸ2022 ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
                     buttons: [
                       {
                         buttonId: `${ᴋᴇɪ}autorank on`,
@@ -187,7 +187,7 @@ module.exports = {
 ❣️ 𝐆𝐫𝐨𝐮𝐩: ${ᴠʟᴋʏʀᴇ.groupName}
 🎖️ 𝗔𝘂𝘁𝗼𝗥𝗮𝗻𝗸: ✅On
 🌱𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗧𝗼𝗴𝗴𝗹𝗲 𝗔𝘂𝘁𝗼𝗥𝗮𝗻𝗸👇🏽‍`,
-                    footerText: `☊𝐕𝐥𝐤𝐲𝐫𝐞\nⒸ2022 ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+                    footerText: `⦓ 𝐕𝐥𝐤𝐲𝐫𝐞 ⦔\nⒸ2022 ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
                     buttons: [
                       {
                         buttonId: `${ᴋᴇɪ}autorank on`,
@@ -250,7 +250,7 @@ module.exports = {
 ❣️ 𝐆𝐫𝐨𝐮𝐩: ${ᴠʟᴋʏʀᴇ.groupName}
 🎖️ 𝗔𝘂𝘁𝗼𝗥𝗮𝗻𝗸: ❌OFF
 🌱𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗧𝗼𝗴𝗴𝗹𝗲 𝗔𝘂𝘁𝗼𝗥𝗮𝗻𝗸👇🏽‍`,
-                    footerText: `☊𝐕𝐥𝐤𝐲𝐫𝐞\nⒸ2022 ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+                    footerText: `⦓ 𝐕𝐥𝐤𝐲𝐫𝐞 ⦔\nⒸ2022 ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
                     buttons: [
                       {
                         buttonId: `${ᴋᴇɪ}autorank on`,
@@ -298,7 +298,7 @@ module.exports = {
 ❣️ 𝐆𝐫𝐨𝐮𝐩: ${ᴠʟᴋʏʀᴇ.groupName}
 🎖️ 𝗔𝘂𝘁𝗼𝗥𝗮𝗻𝗸: ❌OFF
 🌱𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗧𝗼𝗴𝗴𝗹𝗲 𝗔𝘂𝘁𝗼𝗥𝗮𝗻𝗸👇🏽‍`,
-                    footerText: `☊𝐕𝐥𝐤𝐲𝐫𝐞\nⒸ2022 ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+                    footerText: `⦓ 𝐕𝐥𝐤𝐲𝐫𝐞 ⦔\nⒸ2022 ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
                     buttons: [
                       {
                         buttonId: `${ᴋᴇɪ}autorank on`,

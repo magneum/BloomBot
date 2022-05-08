@@ -18,6 +18,7 @@ const LinkList = require(`../ᴠʟᴋʏʀᴇ🥠ᴘᴏʀᴛ/antilink`);
 const ӄʀʏօȶɛӄ = require(`../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/ӄʀʏօȶɛӄ`);
 const welbuts = require(`../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/welbuts`);
 const cleanRF = require(`../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/cleanRF`);
+const DebugList = require(`../ᴠʟᴋʏʀᴇ🥠ᴘᴏʀᴛ/debug`);
 const Ranker = require(`../ᴠʟᴋʏʀᴇ🥠ᴘᴏʀᴛ/autorank`);
 const AntiPm = require(`../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/antipm`);
 const BanPerson = require(`../ᴠʟᴋʏʀᴇ🥠ᴘᴏʀᴛ/ban`);
@@ -989,16 +990,34 @@ contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
 ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, KryChat)
 );
 }
-// return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
-// ᴠʟᴋʏʀᴇ.chatId,
-// `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
+/*              (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!*/
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
+await DebugList.findOne(
+{
+value: "ON",
+},
+async (error, mode) => {
+if (error)
+return ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, KryChat);
+if (mode) {
+return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
+ᴠʟᴋʏʀᴇ.chatId,
+`*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
 
-// *⚠️𝐈𝐌𝐏𝐎𝐑𝐓𝐀𝐍𝐓:* Vlkyre Is Under Heavy Load and It's Team Is Fixing Some Bugs. Hang On and Do Not Command any More!`,
-// MessageType.text,
-// {
-// contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
-// }
-// );
+*⚠️𝐈𝐌𝐏𝐎𝐑𝐓𝐀𝐍𝐓:* Vlkyre Is Under DEBUG-MODE and It's Team Is Fixing Some Bugs. Hang On and Do Not Command any More!`,
+MessageType.text,
+{
+contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
+}
+);
+}
+}
+);
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
+/*              (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!*/
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
+
 console.log(
 Kolor.yellow(
 "⬡═══════════════════════════>❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞"
