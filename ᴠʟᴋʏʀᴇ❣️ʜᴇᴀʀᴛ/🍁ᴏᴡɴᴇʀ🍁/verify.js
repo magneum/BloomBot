@@ -64,23 +64,17 @@ module.exports = {
         !member2.includes(ʟɴᴀᴍᴇ) &&
         !member3.includes(ʟɴᴀᴍᴇ)
       ) {
-        return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
-          .sendMessage(
-            ᴠʟᴋʏʀᴇ.chatId,
-            fs.readFileSync("./ᴠʟᴋʏʀᴇ🔌cord/🦋𝐕𝐥𝐤𝐲𝐫𝐞.mp4"),
-            MessageType.video,
-            {
-              mimetype: `video/gif`,
-              quoted: KryChat,
-              caption: `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
+        await ᴠʟᴋʏʀᴇ_Buttons
+          .MIB(
+            ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+            KryChat,
+            ᴠʟᴋʏʀᴇ,
+            `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
 
 ❌𝐍𝐎𝐓 𝐕𝐄𝐑𝐈𝐅𝐈𝐄𝐃❌ 
 *Join TO Be Verified:*
-_https://chat.whatsapp.com/G1NzKSYjAST95ehHk4FOZK_
-
-⦓ 𝐕𝐥𝐤𝐲𝐫𝐞 ⦔\nⒸ2022 ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
-              contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
-            }
+_https://chat.whatsapp.com/G1NzKSYjAST95ehHk4FOZK_`,
+            "./ᴠʟᴋʏʀᴇ🔌cord/Wwebpa.png"
           )
           .catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, KryChat));
       } else {
