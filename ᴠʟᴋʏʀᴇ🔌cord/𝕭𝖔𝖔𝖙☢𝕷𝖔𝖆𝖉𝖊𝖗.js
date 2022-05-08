@@ -1022,13 +1022,8 @@ quoted: KryChat,
 caption: `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
 
 ❌𝐍𝐎𝐓 𝐕𝐄𝐑𝐈𝐅𝐈𝐄𝐃❌ 
-🌐𝐖𝐞𝐛𝐬𝐢𝐭𝐞: _VlkyreAI.krakinzkon.repl.co_
-*OR*
-❓  *Join Any Group To Verify:*
-📌 https://chat.whatsapp.com/LKN8uVBd8ucHRHofz0jBSd
-📌 https://chat.whatsapp.com/HKO5WLEZxMe3xWCyiv6vBu
-📌 https://chat.whatsapp.com/EIn3YFShFmkJ3fvAqf2rpn
-📌 https://chat.whatsapp.com/HKO5WLEZxMe3xWCyiv6vBu
+*Join TO Be Verified:*
+_https://chat.whatsapp.com/G1NzKSYjAST95ehHk4FOZK_
 
 
 ⦓ 𝐕𝐥𝐤𝐲𝐫𝐞 ⦔\nⒸ2022 ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
