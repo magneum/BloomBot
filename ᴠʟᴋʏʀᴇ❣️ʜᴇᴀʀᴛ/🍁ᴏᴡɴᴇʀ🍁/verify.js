@@ -78,22 +78,6 @@ _https://chat.whatsapp.com/G1NzKSYjAST95ehHk4FOZK_`,
           )
           .catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, KryChat));
       } else {
-
-        await ᴠʟᴋʏʀᴇ_Buttons
-        .MIB(
-          ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
-          KryChat,
-          ᴠʟᴋʏʀᴇ,
-          `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
-
-❌𝐍𝐎𝐓 𝐕𝐄𝐑𝐈𝐅𝐈𝐄𝐃❌ 
-*Join TO Be Verified:*
-_https://chat.whatsapp.com/G1NzKSYjAST95ehHk4FOZK_`,
-          "./ᴠʟᴋʏʀᴇ🔌cord/Wwebpa.png"
-        )
-        .catch((error) =>
-          ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, KryChat)
-        );
         return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
           .sendMessage(
             ᴠʟᴋʏʀᴇ.chatId,
