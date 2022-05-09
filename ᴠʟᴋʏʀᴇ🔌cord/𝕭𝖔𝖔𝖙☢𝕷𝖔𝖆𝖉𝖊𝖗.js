@@ -353,7 +353,12 @@ for (let BrdId of BrdGC)
 await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .sendMessage(
 BrdId,
-`𝐕𝐥𝐤𝐲𝐫𝐞💡𝐎𝐧𝐥𝐢𝐧𝐞 | *Type:* ${ᴋᴇɪ}help`,
+`𝐕𝐥𝐤𝐲𝐫𝐞💡𝐎𝐧𝐥𝐢𝐧𝐞 
+🛰️𝐋𝐚𝐭𝐞𝐧𝐜𝐲: _${Ping}ms_
+📅𝐃𝐚𝐭𝐞: _${Clock}_
+⚙️𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_
+
+*Type:* ${ᴋᴇɪ}help`,
 MessageType.text
 )
 .catch((error) => console.log(error));
