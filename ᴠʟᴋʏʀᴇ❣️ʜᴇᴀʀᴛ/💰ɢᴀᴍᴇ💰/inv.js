@@ -68,7 +68,7 @@ module.exports = {
               ᴠʟᴋʏʀᴇ,
               `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
 
-🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
+
 ║🧈 *Added To DB for _${newScpt}_ command First Time!*
 ║🦋 _Try ${ᴋᴇɪ}${ᴅꜰɴᴀᴍᴇ} Again!_
 ╚════════════╝`,
@@ -84,7 +84,7 @@ module.exports = {
 ┊   💼𝐈𝐧𝐯𝐞𝐧𝐭𝐨𝐫𝐲💼
 ╚◇══════════════◇╝
 
-🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
+
 ⚔️ 𝗦𝘄𝗼𝗿𝗱: ${userRob.sword}
 💻 𝗟𝗮𝗽𝘁𝗼𝗽 ${userRob.laptop}
 🔮 𝗖𝗵𝗮𝗿𝗺 ${userRob.charm}`

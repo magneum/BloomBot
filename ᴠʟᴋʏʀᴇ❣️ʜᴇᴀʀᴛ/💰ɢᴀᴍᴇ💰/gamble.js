@@ -141,7 +141,7 @@ return ᴠʟᴋʏʀᴇ_Buttons.MIB(
 KryChat,
 ᴠʟᴋʏʀᴇ,
 `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
-🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
+
 ❌𝗘𝗿𝗿𝗼𝗿: _Money Amount!_
 💡𝗟𝗶𝗺𝗶𝘁: _min 50gold needed to gamble_`,
 _𝔏𝔞𝔟_.RCLR
@@ -156,7 +156,7 @@ return ᴠʟᴋʏʀᴇ_Buttons.MIB(
 KryChat,
 ᴠʟᴋʏʀᴇ,
 `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
-🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
+
 ❌𝗘𝗿𝗿𝗼𝗿: _Money Amount!_
 💡𝗟𝗶𝗺𝗶𝘁: _max 800gold for gamble_`,
 _𝔏𝔞𝔟_.RCLR
@@ -171,7 +171,7 @@ return ᴠʟᴋʏʀᴇ_Buttons.MIB(
 KryChat,
 ᴠʟᴋʏʀᴇ,
 `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
-🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
+
 ❌𝗘𝗿𝗿𝗼𝗿: _Money For Red!_
 💡𝗟𝗶𝗺𝗶𝘁: _max 200gold_`,
 _𝔏𝔞𝔟_.RCLR
@@ -186,7 +186,7 @@ return ᴠʟᴋʏʀᴇ_Buttons.MIB(
 KryChat,
 ᴠʟᴋʏʀᴇ,
 `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
-🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
+
 ❌𝗘𝗿𝗿𝗼𝗿: _Money For Black!_
 ⚫𝗟𝗶𝗺𝗶𝘁: _max 500gold_`,
 _𝔏𝔞𝔟_.RCLR
@@ -201,7 +201,7 @@ return ᴠʟᴋʏʀᴇ_Buttons.MIB(
 KryChat,
 ᴠʟᴋʏʀᴇ,
 `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
-🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
+
 ❌𝗘𝗿𝗿𝗼𝗿: _Money For Purple!_
 🟣𝗟𝗶𝗺𝗶𝘁: _max 800gold_`,
 _𝔏𝔞𝔟_.RCLR
@@ -271,7 +271,7 @@ KryChat,
 ᴠʟᴋʏʀᴇ,
 `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
 
-🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
+
 ║🧈 *Added To DB for _${newScpt}_ command First Time!*
 ║🦋 _Try ${ᴋᴇɪ}${ᴅꜰɴᴀᴍᴇ} Again!_
 ╚════════════╝`,
