@@ -1018,9 +1018,12 @@ KryChat,
 ᴠʟᴋʏʀᴇ,
 `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
 
-❌𝐍𝐎𝐓 𝐕𝐄𝐑𝐈𝐅𝐈𝐄𝐃❌ 
 *Join TO Be Verified:*
-_https://chat.whatsapp.com/G1NzKSYjAST95ehHk4FOZK_`,
+*⛩️𝗚𝗖1:* chat.whatsapp.com/LKN8uVBd8ucHRHofz0jBSd
+*⛩️𝗚𝗖2:* chat.whatsapp.com/HKO5WLEZxMe3xWCyiv6vBu
+*⛩️𝗚𝗖3:* chat.whatsapp.com/EIn3YFShFmkJ3fvAqf2rpn
+*⛩️𝗚𝗖4:* chat.whatsapp.com/Bc1jBF7OVMRKnyTWYyxz1z
+*⛩️𝗚𝗖5:* chat.whatsapp.com/G1NzKSYjAST95ehHk4FOZK`,
 "./ᴠʟᴋʏʀᴇ🔌cord/Wwebpa.png"
 )
 .catch((error) =>
