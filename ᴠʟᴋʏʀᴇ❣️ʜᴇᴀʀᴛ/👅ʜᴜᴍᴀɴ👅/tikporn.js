@@ -39,7 +39,7 @@ module.exports = {
           ᴠʟᴋʏʀᴇ,
           `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
 
-🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
+
 ❌𝐃𝐞𝐧𝐢𝐞𝐝: _Admins/Dev Only.You Are Not Allowed!_`,
           "./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_NotAdmin.png"
         );
@@ -53,7 +53,7 @@ module.exports = {
           KryChat,
           ᴠʟᴋʏʀᴇ,
           `*꧁『@${ᴘɴᴀᴍᴇ}』꧂* 
-╔⧉༻🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
+╔⧉༻
 ║❌𝐃𝐞𝐧𝐢𝐞𝐝: _How Can I Use Admin Only Commands If i am not admin?_
 ║💡 𝐅𝐢𝐱: _Make Me Admin First!_
 ╚════════════╝`,
@@ -89,7 +89,7 @@ module.exports = {
               ᴠʟᴋʏʀᴇ,
               `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
 
-🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
+
 *🧈Added To DB for _${newScpt}_ command First Time!*
 _🦋Try ${ᴋᴇɪ}${ᴅꜰɴᴀᴍᴇ} Again!_`,
               `./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_Mongo.png`
@@ -163,7 +163,7 @@ _🦋Try ${ᴋᴇɪ}${ᴅꜰɴᴀᴍᴇ} Again!_`,
               `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
 
 ❗𝐈𝐦𝐩𝐨𝐫𝐭𝐚𝐧𝐭
-🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
+
 ⚔️𝗕𝗮𝗱𝗴𝗲: ${userBadge.Badge}
 💤𝗥𝗲𝗻𝗲𝘄𝘀 𝗜𝗻: ${time.hours}h ${time.minutes}m ${time.seconds}s
 💡𝐓𝐢𝐩: _Buy Higher Badges Using ${ᴋᴇɪ}shop_`,
@@ -223,7 +223,7 @@ _🦋Try ${ᴋᴇɪ}${ᴅꜰɴᴀᴍᴇ} Again!_`,
                     {
                       contentText: `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
 
-🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
+
 📞 𝐀𝐝𝐦𝐢𝐧-𝐎𝐧𝐥𝐲: @${ᴘɴᴀᴍᴇ} 
 📜 𝐓𝐢𝐭𝐥𝐞: ${res.title}
 👀 𝐕𝐢𝐞𝐰𝐬: ${res.views}
