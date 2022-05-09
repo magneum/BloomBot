@@ -364,10 +364,8 @@ await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .sendMessage(
 BrdId,
 `❝ 𝐕𝐥𝐤𝐲𝐫𝐞💡𝐎𝐧𝐥𝐢𝐧𝐞 ❞
-
 𝐏𝐫𝐞𝐟𝐢𝐱: .
-𝐓𝐲𝐩𝐞: ${ᴋᴇɪ}help
-𝐉𝐨𝐢𝐧 𝐓𝐎 𝐁𝐞 𝐕𝐞𝐫𝐢𝐟𝐢𝐞𝐝:  _chat.whatsapp.com/G1NzKSYjAST95ehHk4FOZK_`,
+𝐓𝐲𝐩𝐞: ${ᴋᴇɪ}help`,
 MessageType.text
 )
 .catch((error) => console.log(error));
