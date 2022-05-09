@@ -980,6 +980,10 @@ const gMetadata3 = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.groupMetadata(
 const gMetadata4 = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.groupMetadata(
 "120363022161584857@g.us"
 );
+const gMetadata5 = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.groupMetadata(
+"120363042762307739@g.us"
+);
+
 let member1 = [];
 for (var i = 0; i < gMetadata1.participants.length; i++) {
 member1[i] = gMetadata1.participants[i].jid;
@@ -995,6 +999,10 @@ member3[i] = gMetadata3.participants[i].jid;
 let member4 = [];
 for (var i = 0; i < gMetadata4.participants.length; i++) {
 member4[i] = gMetadata4.participants[i].jid;
+}
+let member5 = [];
+for (var i = 0; i < gMetadata5.participants.length; i++) {
+member5[i] = gMetadata5.participants[i].jid;
 }
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 /*              (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!*/
