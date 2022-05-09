@@ -37,7 +37,7 @@ module.exports = {
           ᴠʟᴋʏʀᴇ,
           `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
 
-🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
+
 ❌𝐃𝐞𝐧𝐢𝐞𝐝: _This Command is Only For Groups!_
 💡𝐅𝐢𝐱: _Add Me In Your Group and use!_`,
           "./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_Univ.png"
@@ -58,7 +58,7 @@ module.exports = {
           ᴠʟᴋʏʀᴇ,
           `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
 
-🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
+
 ❌𝐃𝐞𝐧𝐢𝐞𝐝: _Admins/Dev Only.You Are Not Allowed!_`,
           "./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_NotAdmin.png"
         );
@@ -79,7 +79,7 @@ module.exports = {
           ᴠʟᴋʏʀᴇ,
           `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
 
-🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
+
 ❌𝐃𝐞𝐧𝐢𝐞𝐝: _How Can I Use Admin Only Commands If i am not admin?_
 💡𝐅𝐢𝐱: _Make Me Admin First!_`,
           "./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_NotAdmin.png"

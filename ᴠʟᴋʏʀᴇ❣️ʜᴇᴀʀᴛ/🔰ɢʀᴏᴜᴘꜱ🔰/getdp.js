@@ -35,7 +35,7 @@ module.exports = {
           ᴠʟᴋʏʀᴇ,
           `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
 
-🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
+
 ❌𝐃𝐞𝐧𝐢𝐞𝐝: _This Command is Only For Groups!_
 💡𝐅𝐢𝐱: _Add Me In Your Group and use!_`,
           "./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_Univ.png"
@@ -62,7 +62,7 @@ module.exports = {
             mimetype: Mimetype.png,
             caption: `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
 
-🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
+
 💞 _Here is the display image!_`,
             thumbnail: null,
           }

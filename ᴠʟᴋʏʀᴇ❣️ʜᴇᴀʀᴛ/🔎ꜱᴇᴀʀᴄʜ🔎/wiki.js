@@ -59,7 +59,7 @@ module.exports = {
               ᴠʟᴋʏʀᴇ,
               `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
 
-🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
+
 *🧈Added To DB for _${newScpt}_ command First Time!*
 _🦋Try ${ᴋᴇɪ}${ᴅꜰɴᴀᴍᴇ} Again!_`,
               `./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_Mongo.png`
@@ -133,7 +133,7 @@ _🦋Try ${ᴋᴇɪ}${ᴅꜰɴᴀᴍᴇ} Again!_`,
               `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
 
 ❗𝐈𝐦𝐩𝐨𝐫𝐭𝐚𝐧𝐭
-🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
+
 ⚔️𝗕𝗮𝗱𝗴𝗲: ${userBadge.Badge}
 💤𝗥𝗲𝗻𝗲𝘄𝘀 𝗜𝗻: ${time.hours}h ${time.minutes}m ${time.seconds}s
 💡𝐓𝐢𝐩: _Buy Higher Badges Using ${ᴋᴇɪ}shop_`,
@@ -224,7 +224,7 @@ _🦋Try ${ᴋᴇɪ}${ᴅꜰɴᴀᴍᴇ} Again!_`,
                   `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
 
 
-🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
+
 🥪 𝐓𝐢𝐭𝐥𝐞: ${res.result.title}
 └─🔎 𝐖𝐢𝐤𝐢➤ ${res.result.contents.trim()}`,
                   thumbs
@@ -246,7 +246,7 @@ _🦋Try ${ᴋᴇɪ}${ᴅꜰɴᴀᴍᴇ} Again!_`,
                 ᴠʟᴋʏʀᴇ,
                 `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
 
-🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
+
 🤧𝐎𝐩𝐩𝐬𝐢𝐞: _Nothing found for, ${𝖆𝖗𝖌𝖚𝖒𝖊𝖓𝖙.join(` `)}_*`
               );
             });

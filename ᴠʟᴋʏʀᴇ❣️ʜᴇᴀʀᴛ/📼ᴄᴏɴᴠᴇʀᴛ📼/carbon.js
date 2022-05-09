@@ -129,7 +129,7 @@ module.exports = {
               ᴠʟᴋʏʀᴇ,
               `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
 
-🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
+
 *🧈Added To DB for _${newScpt}_ command First Time!*
 _🦋Try ${ᴋᴇɪ}${ᴅꜰɴᴀᴍᴇ} Again!_`,
               `./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_Mongo.png`
@@ -203,7 +203,7 @@ _🦋Try ${ᴋᴇɪ}${ᴅꜰɴᴀᴍᴇ} Again!_`,
               `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
 
 ❗𝐈𝐦𝐩𝐨𝐫𝐭𝐚𝐧𝐭
-🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
+
 ⚔️𝗕𝗮𝗱𝗴𝗲: ${userBadge.Badge}
 💤𝗥𝗲𝗻𝗲𝘄𝘀 𝗜𝗻: ${time.hours}h ${time.minutes}m ${time.seconds}s
 💡𝐓𝐢𝐩: _Buy Higher Badges Using ${ᴋᴇɪ}shop_`,
@@ -269,7 +269,7 @@ _🦋Try ${ᴋᴇɪ}${ᴅꜰɴᴀᴍᴇ} Again!_`,
                 ᴠʟᴋʏʀᴇ,
                 `*꧁『@${ᴘɴᴀᴍᴇ}』꧂* 
 
-╔⧉༻🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
+╔⧉༻
 ║❌𝗘𝗿𝗿𝗼𝗿: _max 20 letters_
 ╚════════════╝`
               );
@@ -299,7 +299,7 @@ _🦋Try ${ᴋᴇɪ}${ᴅꜰɴᴀᴍᴇ} Again!_`,
                 ᴠʟᴋʏʀᴇ,
                 `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
 
-╔⧉༻🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
+╔⧉༻
 ║❌𝗘𝗿𝗿𝗼𝗿: _Wrong Theme Name_
 ║ *Do note that theme names are  case sensitive*
 ║ _Type ${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
@@ -322,7 +322,7 @@ _🦋Try ${ᴋᴇɪ}${ᴅꜰɴᴀᴍᴇ} Again!_`,
                 contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
                 caption: `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
 
-🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
+
 🌈 𝗧𝗵𝗲𝗺𝗲: _${themeInput}_
 🏳️‍🌈 𝗦𝗰𝗵𝗲𝗺𝗲: _HEX/RGB/HSL_
 ❗ 𝗘𝗺𝗼𝗷𝗶: _Will Remove All Emoji!_`,

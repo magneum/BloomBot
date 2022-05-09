@@ -73,7 +73,7 @@ module.exports = {
                   quoted: KryChat,
                   caption: `*☊𝐕𝐥𝐤𝐲𝐫𝐞*\n_Ⓒ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™_
 
-🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
+
 🍕𝐅𝐫𝐨𝐦: @${ᴘɴᴀᴍᴇ}
 🌭𝐓𝐨: @${TagPerson}`,
                   contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ, TagMention] },
@@ -109,7 +109,7 @@ module.exports = {
                     quoted: KryChat,
                     caption: `*☊𝐕𝐥𝐤𝐲𝐫𝐞*\n_Ⓒ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™_
 
-🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
+
 🍕𝐅𝐨𝐫: @${ᴘɴᴀᴍᴇ}`,
                     contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
                   }
@@ -142,7 +142,7 @@ module.exports = {
                     quoted: KryChat,
                     caption: `*☊𝐕𝐥𝐤𝐲𝐫𝐞*\n_Ⓒ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™_
 
-🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
+
 🍕𝐅𝐫𝐨𝐦: @${ᴘɴᴀᴍᴇ}
 🌭𝐓𝐨: @${քɛʀֆօռɢօȶռʊʍ}`,
                     contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ, Receiver] },
@@ -177,7 +177,7 @@ module.exports = {
                   quoted: KryChat,
                   caption: `*☊𝐕𝐥𝐤𝐲𝐫𝐞*\n_Ⓒ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™_
 
-🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
+
 🍕𝐅𝐨𝐫: @${ᴘɴᴀᴍᴇ}`,
                   contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
                 }

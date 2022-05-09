@@ -58,7 +58,7 @@ module.exports = {
               ᴠʟᴋʏʀᴇ,
               `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
 
-🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
+
 *🧈Added To DB for _${newScpt}_ command First Time!*
 _🦋Try ${ᴋᴇɪ}${ᴅꜰɴᴀᴍᴇ} Again!_`,
               `./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_Mongo.png`
@@ -132,7 +132,7 @@ _🦋Try ${ᴋᴇɪ}${ᴅꜰɴᴀᴍᴇ} Again!_`,
               `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
 
 ❗𝐈𝐦𝐩𝐨𝐫𝐭𝐚𝐧𝐭
-🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
+
 ⚔️𝗕𝗮𝗱𝗴𝗲: ${userBadge.Badge}
 💤𝗥𝗲𝗻𝗲𝘄𝘀 𝗜𝗻: ${time.hours}h ${time.minutes}m ${time.seconds}s
 💡𝐓𝐢𝐩: _Buy Higher Badges Using ${ᴋᴇɪ}shop_`,
@@ -217,7 +217,7 @@ _🦋Try ${ᴋᴇɪ}${ᴅꜰɴᴀᴍᴇ} Again!_`,
                 mimetype: `video/gif`,
                 caption: `*☊𝐕𝐥𝐤𝐲𝐫𝐞*\n_Ⓒ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™_\n\n
 
-🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
+
 🍯 𝐒𝐞𝐚𝐫𝐜𝐡𝐞𝐝: ${𝖆𝖗𝖌𝖚𝖒𝖊𝖓𝖙.join(` `)}`,
               })
               .catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, KryChat));
