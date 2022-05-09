@@ -43,7 +43,7 @@ module.exports = {
           ᴠʟᴋʏʀᴇ,
           `*꧁『@${ᴘɴᴀᴍᴇ}』꧂* 
 
-🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
+
 _This Command is Only For Groups!_!`
         );
       }
@@ -57,7 +57,7 @@ _This Command is Only For Groups!_!`
           ᴠʟᴋʏʀᴇ,
           `*꧁『@${ᴘɴᴀᴍᴇ}』꧂* 
 
-🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
+
 ❌𝐃𝐞𝐧𝐢𝐞𝐝: _This Command is Only For Members and Not You Vlkyre-User-Bots!_!`
         );
       }
@@ -80,7 +80,7 @@ _This Command is Only For Groups!_!`
           ᴠʟᴋʏʀᴇ,
           `*꧁『@${ᴘɴᴀᴍᴇ}』꧂* 
 
-🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
+
 ❌𝐃𝐞𝐧𝐢𝐞𝐝: _You Do Not Seem To Have Any Rank!_
 💡𝐅𝐢𝐱: _Start To Type anything in the group to gain XP_`
         );
@@ -114,7 +114,7 @@ _This Command is Only For Groups!_!`
               {
                 contentText: `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
 
-🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
+
 💡𝐈𝐧𝐟𝐨: _Here Is Your Rank Card!_`,
                 footerText: `⦓ 𝐕𝐥𝐤𝐲𝐫𝐞 ⦔\nⒸ2022 ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
                 buttons: [
