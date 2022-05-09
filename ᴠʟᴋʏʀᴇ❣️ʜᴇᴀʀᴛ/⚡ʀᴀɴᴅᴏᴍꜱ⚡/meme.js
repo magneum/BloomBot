@@ -36,7 +36,7 @@ module.exports = {
           KryChat,
           ᴠʟᴋʏʀᴇ,
           `*꧁『@${ᴘɴᴀᴍᴇ}』꧂* 
-🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
+
 _This Command is Only For Groups!_!`
         );
       }
@@ -58,7 +58,7 @@ _This Command is Only For Groups!_!`
           ᴠʟᴋʏʀᴇ,
           `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
 
-🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
+
 _Your Life Lmfao!_`,
           "https://i.postimg.cc/9Xkbbm7m/meme.png"
         );
@@ -70,7 +70,7 @@ _Your Life Lmfao!_`,
           ᴠʟᴋʏʀᴇ,
           `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
 
-🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
+
 🥪𝗧𝗶𝘁𝗹𝗲: ${data.title}
 ✒️𝗔𝘂𝘁𝗵𝗼𝗿: ${data.author}
 👍🏽‍𝗨𝗽𝘀: ${data.ups || 0} 👍

@@ -36,7 +36,7 @@ module.exports = {
           ᴠʟᴋʏʀᴇ,
           `*꧁『@${ᴘɴᴀᴍᴇ}』꧂* 
 
-🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
+
 _This Command is Only For Groups!_!`
         );
       }
@@ -52,7 +52,7 @@ _This Command is Only For Groups!_!`
             ᴠʟᴋʏʀᴇ,
             `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
 
-🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
+
 📛𝗙𝗮𝗰𝘁: ${response.data.fact}`,
             _𝔏𝔞𝔟_.RCLR
           );

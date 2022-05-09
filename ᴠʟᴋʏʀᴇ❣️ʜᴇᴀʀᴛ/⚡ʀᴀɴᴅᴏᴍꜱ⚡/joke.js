@@ -36,7 +36,7 @@ module.exports = {
           KryChat,
           ᴠʟᴋʏʀᴇ,
           `*꧁『@${ᴘɴᴀᴍᴇ}』꧂* 
-🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
+
 _This Command is Only For Groups!_!`
         );
       }
@@ -49,7 +49,7 @@ _This Command is Only For Groups!_!`
         ᴠʟᴋʏʀᴇ,
         `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
 
-🧬𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ᴋᴇɪ}${ꜰɪɴᴀᴍᴇ}_
+
 💀𝗗𝗮𝗱𝗝𝗼𝗸𝗲: ${dadJoke}`,
         _𝔏𝔞𝔟_.RCLR
       );
