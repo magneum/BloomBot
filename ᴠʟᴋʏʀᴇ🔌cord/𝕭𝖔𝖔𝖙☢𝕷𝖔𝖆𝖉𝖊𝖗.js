@@ -620,8 +620,7 @@ if (
 ᴠʟᴋʏʀᴇ.isCmd &&
 !ᴠʟᴋʏʀᴇ.fromMe &&
 !ᴠʟᴋʏʀᴇ.isSenderDev &&
-!ᴠʟᴋʏʀᴇ.body.includes(ᴋᴇɪ + "help") &&
-!ᴠʟᴋʏʀᴇ.body.includes(ᴋᴇɪ + "menu")
+!ᴠʟᴋʏʀᴇ.body.includes(ᴋᴇɪ + "help")
 ) {
 await UserPrivate.findOne(
 {
