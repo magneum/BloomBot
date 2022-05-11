@@ -1012,7 +1012,7 @@ if (
 ᴠʟᴋʏʀᴇ.isGroup &&
 !ᴠʟᴋʏʀᴇ.isSenderDev &&
 !ᴠʟᴋʏʀᴇ.body.includes(ᴋᴇɪ + "help") &&
-!ᴠʟᴋʏʀᴇ.body.includes(ᴋᴇɪ + "menu")3
+!ᴠʟᴋʏʀᴇ.body.includes(ᴋᴇɪ + "menu")
 )
 if (
 !member1.includes(ʟɴᴀᴍᴇ) &&
