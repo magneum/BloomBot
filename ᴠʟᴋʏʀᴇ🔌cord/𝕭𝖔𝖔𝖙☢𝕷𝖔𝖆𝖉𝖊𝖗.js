@@ -1012,14 +1012,14 @@ if (
 ᴠʟᴋʏʀᴇ.isGroup &&
 !ᴠʟᴋʏʀᴇ.isSenderDev &&
 !ᴠʟᴋʏʀᴇ.body.includes(ᴋᴇɪ + "help") &&
-!ᴠʟᴋʏʀᴇ.body.includes(ᴋᴇɪ + "menu")
+!ᴠʟᴋʏʀᴇ.body.includes(ᴋᴇɪ + "menu")3
 )
 if (
 !member1.includes(ʟɴᴀᴍᴇ) &&
 !member2.includes(ʟɴᴀᴍᴇ) &&
 !member3.includes(ʟɴᴀᴍᴇ)
 ) {
-await ᴠʟᴋʏʀᴇ_Buttons
+return await ᴠʟᴋʏʀᴇ_Buttons
 .MIB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 KryChat,
