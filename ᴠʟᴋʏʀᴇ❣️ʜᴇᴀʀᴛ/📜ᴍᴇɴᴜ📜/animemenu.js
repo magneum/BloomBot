@@ -43,7 +43,7 @@ module.exports = {
         ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
         KryChat,
         ᴠʟᴋʏʀᴇ,
-        (MainText = `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
+        (MainText = `*₍ @${ᴘɴᴀᴍᴇ} ₎*
 🦋𝐕𝐥𝐤𝐲𝐫𝐞: _Is an Advance Whatsapp User-Bot!_
 🌐𝐖𝐞𝐛𝐬𝐢𝐭𝐞: _VlkyreAI.krakinzkon.repl.co_
 
