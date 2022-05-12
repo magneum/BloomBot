@@ -96,7 +96,7 @@ module.exports = {
             {
               mimetype: `video/gif`,
               quoted: KryChat,
-              caption: `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
+              caption: `*₍ @${ᴘɴᴀᴍᴇ} ₎*
 Here Is Your Downloaded GIF!
 
 ⌬𝐕𝐥𝐤𝐲𝐫𝐞\n❝Ⓒ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™❞`,

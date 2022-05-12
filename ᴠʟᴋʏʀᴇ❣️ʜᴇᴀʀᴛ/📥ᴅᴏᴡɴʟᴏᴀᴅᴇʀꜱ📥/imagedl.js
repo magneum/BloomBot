@@ -92,7 +92,7 @@ module.exports = {
           ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
           KryChat,
           ᴠʟᴋʏʀᴇ,
-          `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
+          `*₍ @${ᴘɴᴀᴍᴇ} ₎*
 
 Here Is Your Downloaded Image!`,
           fs.readFileSync(DownLoaded)
