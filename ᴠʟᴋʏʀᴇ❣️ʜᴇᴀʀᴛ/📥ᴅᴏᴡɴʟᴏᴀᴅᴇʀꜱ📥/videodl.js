@@ -98,7 +98,7 @@ module.exports = {
           .sendMessage(
             ᴠʟᴋʏʀᴇ.chatId,
             {
-              contentText: `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
+              contentText: `*₍ @${ᴘɴᴀᴍᴇ} ₎*
 
 Here Is Your Downloaded Video!`,
               footerText: `⌬𝐕𝐥𝐤𝐲𝐫𝐞\n❝Ⓒ𝟐𝟎𝟐𝟐 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™❞`,
