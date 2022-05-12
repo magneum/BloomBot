@@ -37,7 +37,7 @@ module.exports = {
           ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
           KryChat,
           ᴠʟᴋʏʀᴇ,
-          `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
+          `*₍ @${ᴘɴᴀᴍᴇ} ₎*
 
 
 ❌𝐃𝐞𝐧𝐢𝐞𝐝: _Admins/Dev Only.You Are Not Allowed!_`,
@@ -52,7 +52,7 @@ module.exports = {
           ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
           KryChat,
           ᴠʟᴋʏʀᴇ,
-          `*꧁『@${ᴘɴᴀᴍᴇ}』꧂* 
+          `*₍ @${ᴘɴᴀᴍᴇ} ₎* 
 ╔⧉༻
 ║❌𝐃𝐞𝐧𝐢𝐞𝐝: _How Can I Use Admin Only Commands If i am not admin?_
 ║💡 𝐅𝐢𝐱: _Make Me Admin First!_
@@ -87,7 +87,7 @@ module.exports = {
               ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
               KryChat,
               ᴠʟᴋʏʀᴇ,
-              `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
+              `*₍ @${ᴘɴᴀᴍᴇ} ₎*
 
 
 *🧈Added To DB for _${newScpt}_ command First Time!*
@@ -160,7 +160,7 @@ _🦋Try ${ᴋᴇɪ}${ᴅꜰɴᴀᴍᴇ} Again!_`,
               ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
               KryChat,
               ᴠʟᴋʏʀᴇ,
-              `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
+              `*₍ @${ᴘɴᴀᴍᴇ} ₎*
 
 ❗𝐈𝐦𝐩𝐨𝐫𝐭𝐚𝐧𝐭
 
@@ -184,7 +184,7 @@ _🦋Try ${ᴋᴇɪ}${ᴅꜰɴᴀᴍᴇ} Again!_`,
               ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
               KryChat,
               ᴠʟᴋʏʀᴇ,
-              `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
+              `*₍ @${ᴘɴᴀᴍᴇ} ₎*
 
 🌿𝗣𝗹𝗲𝗮𝘀𝗲 𝘄𝗮𝗶𝘁!
 🎬 𝗙𝗶𝗹𝗲 𝗧𝘆𝗽𝗲: _Video_
@@ -221,7 +221,7 @@ _🦋Try ${ᴋᴇɪ}${ᴅꜰɴᴀᴍᴇ} Again!_`,
                   .sendMessage(
                     ᴠʟᴋʏʀᴇ.chatId,
                     {
-                      contentText: `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
+                      contentText: `*₍ @${ᴘɴᴀᴍᴇ} ₎*
 
 
 📞 𝐀𝐝𝐦𝐢𝐧-𝐎𝐧𝐥𝐲: @${ᴘɴᴀᴍᴇ} 
