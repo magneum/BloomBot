@@ -57,7 +57,7 @@ module.exports = {
               ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
               KryChat,
               ᴠʟᴋʏʀᴇ,
-              `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
+              `*₍ @${ᴘɴᴀᴍᴇ} ₎*
 
 
 *🧈Added To DB for _${newScpt}_ command First Time!*
@@ -130,7 +130,7 @@ _🦋Try ${ᴋᴇɪ}${ᴅꜰɴᴀᴍᴇ} Again!_`,
               ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
               KryChat,
               ᴠʟᴋʏʀᴇ,
-              `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
+              `*₍ @${ᴘɴᴀᴍᴇ} ₎*
 
 ❗𝐈𝐦𝐩𝐨𝐫𝐭𝐚𝐧𝐭
 
@@ -166,7 +166,7 @@ _🦋Try ${ᴋᴇɪ}${ᴅꜰɴᴀᴍᴇ} Again!_`,
               .sendMessage(
                 ᴠʟᴋʏʀᴇ.chatId,
                 {
-                  contentText: `•*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
+                  contentText: `•*₍ @${ᴘɴᴀᴍᴇ} ₎*
 
 
 

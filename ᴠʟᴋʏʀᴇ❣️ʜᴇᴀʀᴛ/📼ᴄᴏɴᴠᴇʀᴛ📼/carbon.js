@@ -127,7 +127,7 @@ module.exports = {
               ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
               KryChat,
               ᴠʟᴋʏʀᴇ,
-              `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
+              `*₍ @${ᴘɴᴀᴍᴇ} ₎*
 
 
 *🧈Added To DB for _${newScpt}_ command First Time!*
@@ -200,7 +200,7 @@ _🦋Try ${ᴋᴇɪ}${ᴅꜰɴᴀᴍᴇ} Again!_`,
               ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
               KryChat,
               ᴠʟᴋʏʀᴇ,
-              `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
+              `*₍ @${ᴘɴᴀᴍᴇ} ₎*
 
 ❗𝐈𝐦𝐩𝐨𝐫𝐭𝐚𝐧𝐭
 
@@ -267,7 +267,7 @@ _🦋Try ${ᴋᴇɪ}${ᴅꜰɴᴀᴍᴇ} Again!_`,
                 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
                 KryChat,
                 ᴠʟᴋʏʀᴇ,
-                `*꧁『@${ᴘɴᴀᴍᴇ}』꧂* 
+                `*₍ @${ᴘɴᴀᴍᴇ} ₎* 
 
 ╔⧉༻
 ║❌𝗘𝗿𝗿𝗼𝗿: _max 20 letters_
@@ -297,7 +297,7 @@ _🦋Try ${ᴋᴇɪ}${ᴅꜰɴᴀᴍᴇ} Again!_`,
                 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
                 KryChat,
                 ᴠʟᴋʏʀᴇ,
-                `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
+                `*₍ @${ᴘɴᴀᴍᴇ} ₎*
 
 ╔⧉༻
 ║❌𝗘𝗿𝗿𝗼𝗿: _Wrong Theme Name_
@@ -320,7 +320,7 @@ _🦋Try ${ᴋᴇɪ}${ᴅꜰɴᴀᴍᴇ} Again!_`,
                 quoted: KryChat,
                 mimetype: Mimetype.png,
                 contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
-                caption: `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
+                caption: `*₍ @${ᴘɴᴀᴍᴇ} ₎*
 
 
 🌈 𝗧𝗵𝗲𝗺𝗲: _${themeInput}_
