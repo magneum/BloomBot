@@ -40,7 +40,7 @@ module.exports = {
           ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
           KryChat,
           ᴠʟᴋʏʀᴇ,
-          `*꧁『@${ᴘɴᴀᴍᴇ}』꧂* 
+          `*₍ @${ᴘɴᴀᴍᴇ} ₎* 
 
 
 _This Command is Only For Groups!_!`
@@ -87,7 +87,7 @@ _This Command is Only For Groups!_!`
         .all({ q: `name:${𝖆𝖗𝖌𝖚𝖒𝖊𝖓𝖙.join(" ")}` })
         .then(async (card) => {
           try {
-            var PokeInfo = `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
+            var PokeInfo = `*₍ @${ᴘɴᴀᴍᴇ} ₎*
 
 
 💫 *Name:* ${json.name}

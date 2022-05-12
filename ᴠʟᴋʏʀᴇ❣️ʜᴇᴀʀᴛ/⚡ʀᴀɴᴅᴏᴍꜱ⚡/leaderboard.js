@@ -36,7 +36,7 @@ module.exports = {
           ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
           KryChat,
           ᴠʟᴋʏʀᴇ,
-          `*꧁『@${ᴘɴᴀᴍᴇ}』꧂* 
+          `*₍ @${ᴘɴᴀᴍᴇ} ₎* 
 
 
 _This Command is Only For Groups!_!`
@@ -70,7 +70,7 @@ _This Command is Only For Groups!_!`
         ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
         KryChat,
         ᴠʟᴋʏʀᴇ,
-        `*꧁『@${ᴘɴᴀᴍᴇ}』꧂* 
+        `*₍ @${ᴘɴᴀᴍᴇ} ₎* 
 
 𝐓𝐡𝐞 𝐋𝐞𝐚𝐝𝐞𝐫𝐁𝐨𝐚𝐫𝐝 𝐅𝐨𝐫 𝐓𝐨𝐩 𝟓:
 ꧁◇══════════════◇꧂

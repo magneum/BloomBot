@@ -56,7 +56,7 @@ module.exports = {
               ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
               KryChat,
               ᴠʟᴋʏʀᴇ,
-              `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
+              `*₍ @${ᴘɴᴀᴍᴇ} ₎*
 
   
 🧈 *Added To DB for _${newScpt}_ command First Time!*

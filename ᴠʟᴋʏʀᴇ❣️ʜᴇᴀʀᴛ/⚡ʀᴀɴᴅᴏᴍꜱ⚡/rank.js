@@ -41,7 +41,7 @@ module.exports = {
           ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
           KryChat,
           ᴠʟᴋʏʀᴇ,
-          `*꧁『@${ᴘɴᴀᴍᴇ}』꧂* 
+          `*₍ @${ᴘɴᴀᴍᴇ} ₎* 
 
 
 _This Command is Only For Groups!_!`
@@ -55,7 +55,7 @@ _This Command is Only For Groups!_!`
           ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
           KryChat,
           ᴠʟᴋʏʀᴇ,
-          `*꧁『@${ᴘɴᴀᴍᴇ}』꧂* 
+          `*₍ @${ᴘɴᴀᴍᴇ} ₎* 
 
 
 ❌𝐃𝐞𝐧𝐢𝐞𝐝: _This Command is Only For Members and Not You Vlkyre-User-Bots!_!`
@@ -78,7 +78,7 @@ _This Command is Only For Groups!_!`
           ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
           KryChat,
           ᴠʟᴋʏʀᴇ,
-          `*꧁『@${ᴘɴᴀᴍᴇ}』꧂* 
+          `*₍ @${ᴘɴᴀᴍᴇ} ₎* 
 
 
 ❌𝐃𝐞𝐧𝐢𝐞𝐝: _You Do Not Seem To Have Any Rank!_
@@ -112,7 +112,7 @@ _This Command is Only For Groups!_!`
             .sendMessage(
               ᴠʟᴋʏʀᴇ.chatId,
               {
-                contentText: `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
+                contentText: `*₍ @${ᴘɴᴀᴍᴇ} ₎*
 
 
 💡𝐈𝐧𝐟𝐨: _Here Is Your Rank Card!_`,

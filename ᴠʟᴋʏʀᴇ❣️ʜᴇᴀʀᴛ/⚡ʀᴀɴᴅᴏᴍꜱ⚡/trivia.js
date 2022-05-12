@@ -60,7 +60,7 @@ module.exports = {
             ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
             KryChat,
             ᴠʟᴋʏʀᴇ,
-            `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
+            `*₍ @${ᴘɴᴀᴍᴇ} ₎*
 
 
 ❓𝗤𝘂𝗲𝘀𝘁𝗶𝗼𝗻: ${questions.results[0].question}
@@ -82,7 +82,7 @@ module.exports = {
             ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
             KryChat,
             ᴠʟᴋʏʀᴇ,
-            `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
+            `*₍ @${ᴘɴᴀᴍᴇ} ₎*
 
 
 ❓𝗤𝘂𝗲𝘀𝘁𝗶𝗼𝗻: ${questions.results[0].question}
@@ -104,7 +104,7 @@ module.exports = {
             ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
             KryChat,
             ᴠʟᴋʏʀᴇ,
-            `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
+            `*₍ @${ᴘɴᴀᴍᴇ} ₎*
 
 
 ❓𝗤𝘂𝗲𝘀𝘁𝗶𝗼𝗻: ${questions.results[0].question}
