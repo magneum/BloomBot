@@ -69,7 +69,7 @@ await ᴠʟᴋʏʀᴇ_Buttons
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 KryChat,
 ᴠʟᴋʏʀᴇ,
-`*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
+`*₍ @${ᴘɴᴀᴍᴇ} ₎*
 
 
 *Join TO Be Verified:*
@@ -90,7 +90,7 @@ MessageType.video,
 {
 mimetype: `video/gif`,
 quoted: KryChat,
-caption: `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
+caption: `*₍ @${ᴘɴᴀᴍᴇ} ₎*
 
 ✅ 𝐕𝐄𝐑𝐈𝐅𝐈𝐄𝐃!
 📌 _Enjoy Vlkyre Premiums For Free!_

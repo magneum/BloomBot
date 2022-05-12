@@ -37,7 +37,7 @@ module.exports = {
           ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
           KryChat,
           ᴠʟᴋʏʀᴇ,
-          `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*\n❌𝐃𝐞𝐧𝐢𝐞𝐝: _Owner/Dev Only.You Are Not Allowed!_`,
+          `*₍ @${ᴘɴᴀᴍᴇ} ₎*\n❌𝐃𝐞𝐧𝐢𝐞𝐝: _Owner/Dev Only.You Are Not Allowed!_`,
           "./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_OwnerOnly.png"
         );
       }
@@ -53,7 +53,7 @@ module.exports = {
             ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
             KryChat,
             ᴠʟᴋʏʀᴇ,
-            `*꧁『@${ᴘɴᴀᴍᴇ}』꧂* 
+            `*₍ @${ᴘɴᴀᴍᴇ} ₎* 
 
 🛡️𝐒𝐮𝐝𝐨 𝐔𝐧𝐁𝐚𝐧:
 🔓 𝐒𝐭𝐚𝐭𝐮𝐬: _Can't Use On My-Self_`,
@@ -69,7 +69,7 @@ module.exports = {
           ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
           KryChat,
           ᴠʟᴋʏʀᴇ,
-          `*꧁『@${ᴘɴᴀᴍᴇ}』꧂* 
+          `*₍ @${ᴘɴᴀᴍᴇ} ₎* 
 
 🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧 
 💡 _This Command is Only For Groups!_`,
@@ -91,7 +91,7 @@ module.exports = {
                 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
                 KryChat,
                 ᴠʟᴋʏʀᴇ,
-                `*꧁『@${ᴘɴᴀᴍᴇ}』꧂* 
+                `*₍ @${ᴘɴᴀᴍᴇ} ₎* 
 
 🛡️𝐒𝐮𝐝𝐨 𝐔𝐧𝐁𝐚𝐧:
 🔓 𝐒𝐭𝐚𝐭𝐮𝐬: *${groupData.subject}*, Was Not Banned!`,
@@ -105,7 +105,7 @@ module.exports = {
               ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
               KryChat,
               ᴠʟᴋʏʀᴇ,
-              `*꧁『@${ᴘɴᴀᴍᴇ}』꧂* 
+              `*₍ @${ᴘɴᴀᴍᴇ} ₎* 
 
 🛡️𝐒𝐮𝐝𝐨 𝐔𝐧𝐁𝐚𝐧:
 🔓 𝐒𝐭𝐚𝐭𝐮𝐬: *${groupData.subject}*, Has Been Un-Banned!`,
@@ -131,7 +131,7 @@ module.exports = {
                 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
                 KryChat,
                 ᴠʟᴋʏʀᴇ,
-                `*꧁『@${ᴘɴᴀᴍᴇ}』꧂* 
+                `*₍ @${ᴘɴᴀᴍᴇ} ₎* 
 
 🛡️𝐒𝐮𝐝𝐨 𝐔𝐧𝐁𝐚𝐧:
 🔓 𝐒𝐭𝐚𝐭𝐮𝐬: *@${քɛʀֆօռɢօȶռʊʍ}* Was Not Banned!`,
@@ -145,7 +145,7 @@ module.exports = {
               ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
               KryChat,
               ᴠʟᴋʏʀᴇ,
-              `*꧁『@${ᴘɴᴀᴍᴇ}』꧂* 
+              `*₍ @${ᴘɴᴀᴍᴇ} ₎* 
 
 🛡️𝐒𝐮𝐝𝐨 𝐔𝐧𝐁𝐚𝐧:
 🔓 𝐒𝐭𝐚𝐭𝐮𝐬: *@${քɛʀֆօռɢօȶռʊʍ}* Has Been Un-Banned!`,
