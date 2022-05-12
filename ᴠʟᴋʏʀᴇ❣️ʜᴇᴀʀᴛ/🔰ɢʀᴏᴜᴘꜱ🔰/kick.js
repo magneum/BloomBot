@@ -35,7 +35,7 @@ module.exports = {
           ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
           KryChat,
           ᴠʟᴋʏʀᴇ,
-          `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
+          `*₍ @${ᴘɴᴀᴍᴇ} ₎*
 
 
 ❌𝐃𝐞𝐧𝐢𝐞𝐝: _This Command is Only For Groups!_
@@ -51,7 +51,7 @@ module.exports = {
           ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
           KryChat,
           ᴠʟᴋʏʀᴇ,
-          `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
+          `*₍ @${ᴘɴᴀᴍᴇ} ₎*
 
 
 ❌𝐃𝐞𝐧𝐢𝐞𝐝: _How Can I Use Admin Only Commands If i am not admin?_
@@ -67,7 +67,7 @@ module.exports = {
           ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
           KryChat,
           ᴠʟᴋʏʀᴇ,
-          `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
+          `*₍ @${ᴘɴᴀᴍᴇ} ₎*
 
 ╔⧉༻
 ║❌𝐃𝐞𝐧𝐢𝐞𝐝: _How Can I Use Admin Only Commands If i am not admin?_
@@ -88,7 +88,7 @@ module.exports = {
             ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
             KryChat,
             ᴠʟᴋʏʀᴇ,
-            `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
+            `*₍ @${ᴘɴᴀᴍᴇ} ₎*
 
 
 ${owner} ɪꜱ ᴛʜᴇ ᴏᴡɴᴇʀ ᴏꜰ ᴛʜᴇ ɢʀᴏᴜᴘ*`
@@ -100,7 +100,7 @@ ${owner} ɪꜱ ᴛʜᴇ ᴏᴡɴᴇʀ ᴏꜰ ᴛʜᴇ ɢʀᴏᴜᴘ*`
             ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
             KryChat,
             ᴠʟᴋʏʀᴇ,
-            `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
+            `*₍ @${ᴘɴᴀᴍᴇ} ₎*
 
 
 *ʀᴇQᴜᴇꜱᴛ ʀᴇᴊᴇᴄᴛᴇᴅ.* 😤
@@ -127,7 +127,7 @@ ${owner} ɪꜱ ᴛʜᴇ ᴏᴡɴᴇʀ ᴏꜰ ᴛʜᴇ ɢʀᴏᴜᴘ*`
             ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
             KryChat,
             ᴠʟᴋʏʀᴇ,
-            `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
+            `*₍ @${ᴘɴᴀᴍᴇ} ₎*
 
 
 *ᴘᴇʀꜱᴏɴ ɪꜱ ɴᴏᴛ ɪɴ ᴛʜᴇ ɢʀᴏᴜᴘ*`
@@ -168,7 +168,7 @@ ${owner} ɪꜱ ᴛʜᴇ ᴏᴡɴᴇʀ ᴏꜰ ᴛʜᴇ ɢʀᴏᴜᴘ*`
           ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
           KryChat,
           ᴠʟᴋʏʀᴇ,
-          `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
+          `*₍ @${ᴘɴᴀᴍᴇ} ₎*
 
 
 Reply to the person you want to kick or tag them.\n\nFor instance,  *${ᴋᴇɪ}kick @<person-to-kick>*  or reply using  *${ᴋᴇɪ}kick*${ᴋᴇɪ}`
@@ -182,7 +182,7 @@ Reply to the person you want to kick or tag them.\n\nFor instance,  *${ᴋᴇɪ}
             ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
             KryChat,
             ᴠʟᴋʏʀᴇ,
-            `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
+            `*₍ @${ᴘɴᴀᴍᴇ} ₎*
 
 
 Reply to the person you want to kick or tag them.\n\nFor instance,  *${ᴋᴇɪ}kick @<person-to-kick>*  or reply using  *${ᴋᴇɪ}kick*${ᴋᴇɪ}`
@@ -194,7 +194,7 @@ Reply to the person you want to kick or tag them.\n\nFor instance,  *${ᴋᴇɪ}
             ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
             KryChat,
             ᴠʟᴋʏʀᴇ,
-            `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
+            `*₍ @${ᴘɴᴀᴍᴇ} ₎*
 
 
 *ʀᴇQᴜᴇꜱᴛ ʀᴇᴊᴇᴄᴛᴇᴅ.* 😤
@@ -233,7 +233,7 @@ Reply to the person you want to kick or tag them.\n\nFor instance,  *${ᴋᴇɪ}
             ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
             KryChat,
             ᴠʟᴋʏʀᴇ,
-            `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
+            `*₍ @${ᴘɴᴀᴍᴇ} ₎*
 
 
 
@@ -246,7 +246,7 @@ ${owner} ɪꜱ ᴛʜᴇ ᴏᴡɴᴇʀ ᴏꜰ ᴛʜᴇ ɢʀᴏᴜᴘ*`
         ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
         KryChat,
         ᴠʟᴋʏʀᴇ,
-        `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
+        `*₍ @${ᴘɴᴀᴍᴇ} ₎*
 
 
 
