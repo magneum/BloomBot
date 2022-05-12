@@ -409,7 +409,7 @@ await ᴠʟᴋʏʀᴇ_Buttons.MIB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 KryChat,
 ᴠʟᴋʏʀᴇ,
-`*꧁『@${ᴘɴᴀᴍᴇ}』꧂* _Offline For 10s-20s_
+`*₍ @${ᴘɴᴀᴍᴇ} ₎* _Offline For 10s-20s_
 
 𝐕𝐥𝐤𝐲𝐫𝐞💡𝐔𝐩𝐝𝐚𝐭𝐢𝐧𝐠
 🍯𝗦𝘁𝗮𝘁𝘂𝘀: _Update Pending!_
@@ -873,7 +873,7 @@ userHalt.PermaTimeOut - (Date.now() - userHalt.TimeOut)
 );
 return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
 ᴠʟᴋʏʀᴇ.chatId,
-`*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
+`*₍ @${ᴘɴᴀᴍᴇ} ₎*
 
 ❌𝗘𝗿𝗿𝗼𝗿: _Wait For 5s!_`,
 MessageType.text,
@@ -933,7 +933,7 @@ MessageType.video,
 {
 mimetype: `video/gif`,
 quoted: KryChat,
-caption: `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
+caption: `*₍ @${ᴘɴᴀᴍᴇ} ₎*
 
 🤖𝐕𝐞𝐫𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧: _❌𝐍𝐎𝐓 𝐕𝐄𝐑𝐈𝐅𝐈𝐄𝐃❌_
 👉🏽𝐂𝐥𝐢𝐜𝐤‍: _https://VlkyreAI.krakinzkon.repl.co_
