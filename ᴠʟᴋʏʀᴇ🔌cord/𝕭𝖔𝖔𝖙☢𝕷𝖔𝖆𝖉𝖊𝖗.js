@@ -193,49 +193,49 @@ MessageType.buttonsMessage
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 /*              (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!*/
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
-let BrdGC = ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.chats
-.all()
-.filter(
-(v) =>
-v.jid.endsWith("g.us") && !v.read_only && v.messages && !v.announce
-)
-.map((v) => v.jid);
-for (let BrdId of BrdGC) {
-BanGroup.findOne(
-{
-ID: BrdId,
-},
-async (error, BanGroup) => {
-if (error) return ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, KryChat);
-if (BanGroup) return;
-await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
-BrdId,
-{
-contentText: `  
-🦋𝐕𝐥𝐤𝐲𝐫𝐞: _Is an Advance Whatsapp User-Bot!_
+//     let BrdGC = ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.chats
+//       .all()
+//       .filter(
+//         (v) =>
+//           v.jid.endsWith("g.us") && !v.read_only && v.messages && !v.announce
+//       )
+//       .map((v) => v.jid);
+//     for (let BrdId of BrdGC) {
+//       BanGroup.findOne(
+//         {
+//           ID: BrdId,
+//         },
+//         async (error, BanGroup) => {
+//           if (error) return ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, KryChat);
+//           if (BanGroup) return;
+//           await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(
+//             BrdId,
+//             {
+//               contentText: `
+// 🦋𝐕𝐥𝐤𝐲𝐫𝐞: _Is an Advance Whatsapp User-Bot!_
 
-𝐕𝐥𝐤𝐲𝐫𝐞💡𝐎𝐧𝐥𝐢𝐧𝐞
-🛰️𝐋𝐚𝐭𝐞𝐧𝐜𝐲: _${Ping}ms_
-📅𝐃𝐚𝐭𝐞: _${Clock}_
-⚙️𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_
-💻𝐏𝐥𝐚𝐭𝐟𝐨𝐫𝐦: _${os.platform()}_
-☕𝐔𝐩𝐓𝐢𝐦𝐞: _${runtime(process.uptime())}_
-🎮𝐑𝐀𝐌: _${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}_`,
-footerText: `\n⦓ 𝐕𝐥𝐤𝐲𝐫𝐞 ⦔\nⒸ2022 ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
-buttons: [
-{
-buttonId: `${ᴋᴇɪ}help`,
-buttonText: { displayText: `${ᴋᴇɪ}help` },
-type: 1,
-},
-],
-headerType: 1,
-},
-MessageType.buttonsMessage
-);
-}
-).catch((error) => console.log(error));
-}
+// 𝐕𝐥𝐤𝐲𝐫𝐞💡𝐎𝐧𝐥𝐢𝐧𝐞
+// 🛰️𝐋𝐚𝐭𝐞𝐧𝐜𝐲: _${Ping}ms_
+// 📅𝐃𝐚𝐭𝐞: _${Clock}_
+// ⚙️𝐕𝐞𝐫𝐬𝐢𝐨𝐧: _${vers.vers}_
+// 💻𝐏𝐥𝐚𝐭𝐟𝐨𝐫𝐦: _${os.platform()}_
+// ☕𝐔𝐩𝐓𝐢𝐦𝐞: _${runtime(process.uptime())}_
+// 🎮𝐑𝐀𝐌: _${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}_`,
+//               footerText: `\n⦓ 𝐕𝐥𝐤𝐲𝐫𝐞 ⦔\nⒸ2022 ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+//               buttons: [
+//                 {
+//                   buttonId: `${ᴋᴇɪ}help`,
+//                   buttonText: { displayText: `${ᴋᴇɪ}help` },
+//                   type: 1,
+//                 },
+//               ],
+//               headerType: 1,
+//             },
+//             MessageType.buttonsMessage
+//           );
+//         }
+//       ).catch((error) => console.log(error));
+//     }
 });
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 /*              (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!*/
