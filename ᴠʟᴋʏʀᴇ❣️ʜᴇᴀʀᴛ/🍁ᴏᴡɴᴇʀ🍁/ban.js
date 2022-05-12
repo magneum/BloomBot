@@ -37,7 +37,7 @@ module.exports = {
           ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
           KryChat,
           ᴠʟᴋʏʀᴇ,
-          `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*\n❌𝐃𝐞𝐧𝐢𝐞𝐝: _Owner/Dev Only.You Are Not Allowed!_`,
+          `*₍ @${ᴘɴᴀᴍᴇ} ₎*\n❌𝐃𝐞𝐧𝐢𝐞𝐝: _Owner/Dev Only.You Are Not Allowed!_`,
           "./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_OwnerOnly.png"
         );
       }
@@ -71,7 +71,7 @@ module.exports = {
           ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
           KryChat,
           ᴠʟᴋʏʀᴇ,
-          `*꧁『@${ᴘɴᴀᴍᴇ}』꧂* 
+          `*₍ @${ᴘɴᴀᴍᴇ} ₎* 
 
 ╔════◇🔒𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧 
 ║💡 _This Command is Only For Groups!_
@@ -158,7 +158,7 @@ module.exports = {
                 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
                 KryChat,
                 ᴠʟᴋʏʀᴇ,
-                `*꧁『@${ᴘɴᴀᴍᴇ}』꧂* 
+                `*₍ @${ᴘɴᴀᴍᴇ} ₎* 
 
 ╔════◇🛡️𝐒𝐮𝐝𝐨 𝐁𝐚𝐧
 ║🔒 𝐒𝐭𝐚𝐭𝐮𝐬: *@${քɛʀֆօռɢօȶռʊʍ}* Has Been Banned!
@@ -170,7 +170,7 @@ module.exports = {
                 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
                 KryChat,
                 ᴠʟᴋʏʀᴇ,
-                `*꧁『@${ᴘɴᴀᴍᴇ}』꧂* 
+                `*₍ @${ᴘɴᴀᴍᴇ} ₎* 
 
 ╔════◇🛡️𝐒𝐮𝐝𝐨 𝐁𝐚𝐧
 ║❌ 𝗘𝗿𝗿𝗼𝗿: *@${քɛʀֆօռɢօȶռʊʍ}* Already banned!
