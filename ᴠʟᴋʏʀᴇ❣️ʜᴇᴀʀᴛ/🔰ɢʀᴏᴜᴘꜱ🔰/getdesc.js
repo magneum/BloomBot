@@ -35,7 +35,7 @@ module.exports = {
           ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
           KryChat,
           ᴠʟᴋʏʀᴇ,
-          `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
+          `*₍ @${ᴘɴᴀᴍᴇ} ₎*
 
 
 ❌𝐃𝐞𝐧𝐢𝐞𝐝: _This Command is Only For Groups!_
@@ -67,7 +67,7 @@ module.exports = {
         .sendMessage(
           ᴠʟᴋʏʀᴇ.chatId,
           {
-            contentText: `*꧁『@${ᴘɴᴀᴍᴇ}』꧂*
+            contentText: `*₍ @${ᴘɴᴀᴍᴇ} ₎*
 
 
 
