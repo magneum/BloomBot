@@ -1011,6 +1011,7 @@ if (
 ᴠʟᴋʏʀᴇ.isCmd &&
 ᴠʟᴋʏʀᴇ.isGroup &&
 !ᴠʟᴋʏʀᴇ.isSenderDev &&
+!ᴠʟᴋʏʀᴇ.body.includes(ᴋᴇɪ + "help") &&
 !ᴠʟᴋʏʀᴇ.body.includes(ᴋᴇɪ + "help")
 )
 if (
