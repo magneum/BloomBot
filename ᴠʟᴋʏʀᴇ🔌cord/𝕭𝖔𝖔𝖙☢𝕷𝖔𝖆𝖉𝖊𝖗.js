@@ -1012,7 +1012,8 @@ if (
 ᴠʟᴋʏʀᴇ.isGroup &&
 !ᴠʟᴋʏʀᴇ.isSenderDev &&
 !ᴠʟᴋʏʀᴇ.body.includes(ᴋᴇɪ + "help") &&
-!ᴠʟᴋʏʀᴇ.body.includes(ᴋᴇɪ + "help")
+!ᴠʟᴋʏʀᴇ.body.includes(ᴋᴇɪ + "support") &&
+!ᴠʟᴋʏʀᴇ.body.includes(ᴋᴇɪ + "rules")
 )
 if (
 !member1.includes(ʟɴᴀᴍᴇ) &&
