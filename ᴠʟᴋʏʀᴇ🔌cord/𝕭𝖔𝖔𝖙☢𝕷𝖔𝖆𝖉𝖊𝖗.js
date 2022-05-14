@@ -632,7 +632,8 @@ if (
 !ᴠʟᴋʏʀᴇ.fromMe &&
 !ᴠʟᴋʏʀᴇ.isSenderDev &&
 !ᴠʟᴋʏʀᴇ.body.includes(ᴋᴇɪ + "help") &&
-!ᴠʟᴋʏʀᴇ.body.includes(ᴋᴇɪ + "support")
+!ᴠʟᴋʏʀᴇ.body.includes(ᴋᴇɪ + "support") &&
+!ᴠʟᴋʏʀᴇ.body.includes(ᴋᴇɪ + "rules")
 ) {
 await UserPrivate.findOne(
 {
