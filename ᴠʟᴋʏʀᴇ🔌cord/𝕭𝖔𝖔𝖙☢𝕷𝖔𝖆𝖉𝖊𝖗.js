@@ -1031,11 +1031,11 @@ ${update.desc}`,
                           `*₍ @${ᴘɴᴀᴍᴇ} ₎*
 
 *Join TO Be Verified:*
-*𝗚roup1:* chat.whatsapp.com/LKN8uVBd8ucHRHofz0jBSd
-*⛩️𝗚roup2:* chat.whatsapp.com/HKO5WLEZxMe3xWCyiv6vBu
-*⛩️𝗚roup3:* chat.whatsapp.com/EIn3YFShFmkJ3fvAqf2rpn
-*⛩️𝗚roup:* chat.whatsapp.com/Bc1jBF7OVMRKnyTWYyxz1z
-*⛩️𝗚roup:* chat.whatsapp.com/G1NzKSYjAST95ehHk4FOZK`,
+*𝗚roup⛩️1:* chat.whatsapp.com/LKN8uVBd8ucHRHofz0jBSd
+*𝗚roup⛩️2:* chat.whatsapp.com/HKO5WLEZxMe3xWCyiv6vBu
+*𝗚roup⛩️3:* chat.whatsapp.com/EIn3YFShFmkJ3fvAqf2rpn
+*𝗚roup⛩️4:* chat.whatsapp.com/Bc1jBF7OVMRKnyTWYyxz1z
+*𝗚roup⛩️5:* chat.whatsapp.com/G1NzKSYjAST95ehHk4FOZK`,
                           "./ᴠʟᴋʏʀᴇ🔌cord/Wwebpa.png"
                         )
                         .catch((error) =>
