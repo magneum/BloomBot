@@ -631,7 +631,8 @@ if (
 ᴠʟᴋʏʀᴇ.isCmd &&
 !ᴠʟᴋʏʀᴇ.fromMe &&
 !ᴠʟᴋʏʀᴇ.isSenderDev &&
-!ᴠʟᴋʏʀᴇ.body.includes(ᴋᴇɪ + "help")
+!ᴠʟᴋʏʀᴇ.body.includes(ᴋᴇɪ + "help") &&
+!ᴠʟᴋʏʀᴇ.body.includes(ᴋᴇɪ + "support")
 ) {
 await UserPrivate.findOne(
 {
