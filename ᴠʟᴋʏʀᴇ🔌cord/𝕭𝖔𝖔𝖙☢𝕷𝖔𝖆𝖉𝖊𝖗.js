@@ -1026,7 +1026,9 @@ if (
 if (
 !member1.includes(ʟɴᴀᴍᴇ) &&
 !member2.includes(ʟɴᴀᴍᴇ) &&
-!member3.includes(ʟɴᴀᴍᴇ)
+!member3.includes(ʟɴᴀᴍᴇ) &&
+!member4.includes(ʟɴᴀᴍᴇ) &&
+!member5.includes(ʟɴᴀᴍᴇ)
 ) {
 return await ᴠʟᴋʏʀᴇ_Buttons
 .MIB(
