@@ -56,8 +56,7 @@ module.exports = {
           `*₍ @${ᴘɴᴀᴍᴇ} ₎*
 
 
-❌𝐃𝐞𝐧𝐢𝐞𝐝: _How Can I Use Admin Only Commands If i am not admin?_
-💡𝐅𝐢𝐱: _Make Me Admin First!_`,
+❌𝐃𝐞𝐧𝐢𝐞𝐝: _Admins/Dev Only.You Are Not Allowed!_`,
           "./ᴠʟᴋʏʀᴇ🔌cord/ᴠʟᴋʏʀᴇ_NotAdmin.png"
         );
       }
