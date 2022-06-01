@@ -214,7 +214,7 @@ KryChat,
 `*₍ @${ᴘɴᴀᴍᴇ} ₎*
 
 
-*⭕️ Join and Send The YouTube Link In Here:*
+*⭕️Join and Directly Send YouTUbe Link:*
 _https://chat.whatsapp.com/JqLMtFMmuxv3WSdwkWQf6o_
 `,
 Found.thumbnail
