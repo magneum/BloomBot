@@ -215,7 +215,7 @@ KryChat,
 
 
 *⭕️Join and Directly Send YouTUbe Link:*
-_https://chat.whatsapp.com/JqLMtFMmuxv3WSdwkWQf6o_
+_chat.whatsapp.com/JqLMtFMmuxv3WSdwkWQf6o_
 `,
 Found.thumbnail
 );
