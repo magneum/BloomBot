@@ -25,9 +25,68 @@ async handle(
 client: Client,
 chat: proto.IWebMessageInfo,
 νℓкуяιє: νℓкуяιє,
-args: string[]
+args: string[],
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 ): Promise<void> {
 try {
+const ʟɴᴀᴍᴇ = νℓкуяιє.sender;
+const ᴅꜰɴᴀᴍᴇ = νℓкуяιє.commandName;
+const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/[^\d+]/g, "");
+const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
+("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
+console.log("💡Is Group: " + νℓкуяιє.isGroup);
+await client.getGroupMetaData(νℓкуяιє.chatId, νℓкуяιє);
+console.log("💡Is Bot Group Admin: " + νℓкуяιє.isBotGroupAdmin);
+console.log("💡Is Sender Group Admin: " + νℓкуяιє.isSenderGroupAdmin);
+("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
+if (!νℓкуяιє.isGroup) {
+Text_List.VText(
+client,
+chat,
+νℓкуяιє,
+`❌𝐃𝐞𝐧𝐢𝐞𝐝: _This Command is Only For Groups!_`
+);
+return;
+}
+("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
+let 𝕻𝕻𝖑𝖊𝖙𝖊𝖗;
+var message = " ";
+for (let admin of νℓкуяιє.groupAdmins) {
+let number = admin.split(`@`)[0];
+message += `@${number}\n`;
+}
+try {
+𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.getProfilePicture(νℓкуяιє.chatId);
+} catch {
+𝕻𝕻𝖑𝖊𝖙𝖊𝖗 =
+"https://i.postimg.cc/wxWL9G8F/no-profile-picture-300x216.png";
+}
+await client.sendMessage(
+νℓкуяιє.chatId,
+{
+quoted: chat.message,
+contextInfo: {
+mentionedJid: νℓкуяιє.groupAdmins,
+},
+timestamp: Date(),
+image: { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 },
+caption: `✥𝐔𝐬𝐞𝐫: ${chat.pushName}
+
+🖋️𝐀𝐝𝐦𝐢𝐧𝐬 𝐎𝐟 𝐓𝐡𝐢𝐬 𝐂𝐡𝐚𝐭
+${message}`,
+footer: `⦓ 𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ⦔`,
+buttons: [
+{
+buttonId: `${Konf.MuveOn}help`,
+buttonText: { displayText: `${Konf.MuveOn}help` },
+type: 1,
+},
+],
+headerType: 4,
+},
+MessageType.buttonsMessage
+);
+return;
 } catch (error) {
 return Oops.VOp(client, chat, νℓкуяιє, error);
 }
