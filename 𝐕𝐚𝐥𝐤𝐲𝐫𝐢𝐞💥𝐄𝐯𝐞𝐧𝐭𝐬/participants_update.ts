@@ -1,0 +1,159 @@
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
+/* 
+(𝐜)𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬! 
+*/
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
+const UserPrivate = require(`./𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/private`);
+const Welcome = require(`./𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/setwelcome`);
+const LinkList = require(`./𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/antilink`);
+const DebugList = require(`./𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/debug`);
+const Ranker = require(`./𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/autorank`);
+const BanPerson = require(`./𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/ban`);
+const NsfwList = require(`./𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/nsfw`);
+const BanGroup = require(`./𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/ban`);
+const Bagde = require(`./𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/badge`);
+const Halt = require(`./𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/halt`);
+import { MessageType } from "../𝐊𝐫𝐲𝐨⚜️𝐓𝐞𝐤/message-type";
+const Downloader = require(`nodejs-file-downloader`);
+import Konf from "../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞🀄𝐕𝐞𝐧𝐭/config";
+import Client from "../𝐊𝐫𝐲𝐨⚜️𝐓𝐞𝐤/client";
+("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
+const participants_update = async (update, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇): Promise<void> => {
+let client: Client = new Client(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇);
+const MemNum = update.participants[0];
+if (update.action == `add` && MemNum.includes(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.user.id)) {
+await client.sendMessage(
+update.id,
+{
+timestamp: Date(),
+image: { url: "./𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞👜𝐁𝐚𝐠/νℓкуяιє.png" },
+caption: `👋🏻𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚, Some Of Your Members Requested Our Valkyrie HQ to Add Our Bot In This Group.Have Fun!
+
+
+╔⧉༻ ⭕𝐅𝐨𝐫 𝐀𝐝𝐦𝐢𝐧𝐬 ꧂
+║◇ *antilink:* _on/off_
+║◇ *autorank:* _on/off_
+╚════════════╝
+
+╔⧉༻ 🧀 𝐃𝐞𝐟𝐚𝐮𝐥𝐭 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬! ꧂
+║◇ *${Konf.MuveOn}help:* _commands of Valkyrie!_
+║◇ *${Konf.MuveOn}rules:* _rules of Valkyrie!_
+╚════════════╝`,
+footer: `⦓ 𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ⦔`,
+buttons: [
+{
+buttonId: `${Konf.MuveOn}help`,
+buttonText: { displayText: `${Konf.MuveOn}help` },
+type: 1,
+},
+{
+buttonId: `${Konf.MuveOn}rules`,
+buttonText: { displayText: `${Konf.MuveOn}rules` },
+type: 1,
+},
+],
+headerType: 4,
+},
+MessageType.buttonsMessage
+);
+Welcome.findOne(
+{
+ID: update.id,
+},
+async (error, userWel) => {
+if (error) console.log(error);
+if (!userWel) {
+var newServer = new Welcome({
+ID: update.id,
+message: "❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞",
+});
+await newServer.save().catch((error) => console.log(error));
+}
+}
+);
+("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
+} else if (update.action == `add` && !MemNum.includes(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.user.id)) {
+Welcome.findOne(
+{
+ID: update.id,
+},
+async (error, userWel) => {
+if (error) console.log(error);
+if (!userWel) {
+return;
+} else {
+try {
+let 𝕻𝕻𝖑𝖊𝖙𝖊𝖗;
+try {
+𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.getProfilePicture(
+`${MemNum.split(`@`)[0]}@c.us`
+);
+} catch {
+𝕻𝕻𝖑𝖊𝖙𝖊𝖗 =
+"https://i.postimg.cc/wxWL9G8F/no-profile-picture-300x216.png";
+}
+const downloader = await new Downloader({
+url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗,
+directory: `./`,
+fileName: `${Date.now().toString()}.png`,
+cloneFiles: false,
+});
+await downloader.download();
+const GroupMemData = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.groupMetadata(update.jid);
+const GroupMemG = GroupMemData.participants.length;
+const GroupMemBio = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.getStatus(
+update.participants[0],
+MessageType.text
+);
+const ᴘᴘᴡᴇʟᴄᴏᴍᴇ = MemNum.replace(/[^\d-]/g, "");
+await client.sendMessage(
+update.id,
+{
+timestamp: Date(),
+image: { url: "./𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞👜𝐁𝐚𝐠/νℓкуяιє.png" },
+caption: `🥞𝐖𝐞𝐥𝐜𝐨𝐦𝐞: *『@${ᴘᴘᴡᴇʟᴄᴏᴍᴇ}』*
+꧁◇══════════════◇꧂
+𝗕𝗶𝗼: ${GroupMemBio.status}
+𝐌𝐞𝐦𝐛𝐞𝐫𝐳: ${GroupMemG}
+🎪 𝐆𝐫𝐨𝐮𝐩: ${GroupMemData.subject}
+꧁◇══════════════◇꧂
+
+${userWel.message}`,
+footer: `⦓ 𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ⦔`,
+buttons: [
+{
+buttonId: `${Konf.MuveOn}help`,
+buttonText: { displayText: `${Konf.MuveOn}help` },
+type: 1,
+},
+{
+buttonId: `${Konf.MuveOn}rules`,
+buttonText: { displayText: `${Konf.MuveOn}rules` },
+type: 1,
+},
+],
+headerType: 4,
+},
+MessageType.buttonsMessage
+);
+} catch (error) {
+console.log(error);
+}
+}
+}
+);
+("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
+} else if (update.action === `remove`) {
+return;
+} else {
+return;
+}
+};
+export = {
+participants_update: participants_update,
+};
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
+/* 
+(𝐜)𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬! 
+*/
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;

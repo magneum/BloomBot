@@ -9,9 +9,9 @@ import {
 import { MessageType } from "./message-type";
 
 class Client {
-  sock: WASocket;
-  constructor(sock: WASocket) {
-    this.sock = sock;
+  ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇: WASocket;
+  constructor(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇: WASocket) {
+    this.ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇 = ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇;
   }
   async sendMessage(jid: string, content: any, type: string, options?: any) {
     let res: proto.WebMessageInfo;
@@ -23,13 +23,13 @@ class Client {
       if (options?.contextInfo?.mentionedJid) {
         ops.mentions = options.contextInfo.mentionedJid;
       }
-      res = await this.sock.sendMessage(jid, ops);
+      res = await this.ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(jid, ops);
     } else if (type === MessageType.sticker) {
-      res = await this.sock.sendMessage(jid, {
+      res = await this.ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(jid, {
         sticker: new Buffer(content),
       });
     } else if (type === MessageType.audio) {
-      res = await this.sock.sendMessage(jid, {
+      res = await this.ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(jid, {
         audio: content,
         mimetype: "audio/mp4",
       });
@@ -40,14 +40,14 @@ class Client {
       if (options?.caption) {
         ops.caption = options.caption;
       }
-      res = await this.sock.sendMessage(jid, ops);
+      res = await this.ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(jid, ops);
     } else if (type == MessageType.audio) {
-      res = await this.sock.sendMessage(jid, {
+      res = await this.ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(jid, {
         audio: content,
         mimetype: "audio/mp3",
       });
     } else if (type === MessageType.buttonsMessage) {
-      res = await this.sock.sendMessage(jid, content);
+      res = await this.ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(jid, content);
     } else if (type == MessageType.video) {
       ops = {
         video: content,
@@ -55,7 +55,7 @@ class Client {
       if (options?.caption) {
         ops.caption = options.caption;
       }
-      res = await this.sock.sendMessage(jid, ops);
+      res = await this.ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(jid, ops);
     } else if (type === MessageType.document) {
       ops = {
         text: options.caption,
@@ -68,21 +68,21 @@ class Client {
         ops2.fileName = options.filename;
       }
       console.log(ops2);
-      await this.sock.sendMessage(jid, ops);
-      res = await this.sock.sendMessage(jid, ops2);
+      await this.ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(jid, ops);
+      res = await this.ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(jid, ops2);
     }
     return res;
   }
 
   async deleteMessage(jid: string, key: any) {
-    await this.sock.sendMessage(jid, {
+    await this.ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(jid, {
       delete: key,
     });
   }
 
   async getGroupMetaData(jid: string, νℓкуяιє: νℓкуяιє) {
     const groupMetadata: GroupMetadata = jid.endsWith("@g.us")
-      ? await this.sock.groupMetadata(jid)
+      ? await this.ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.groupMetadata(jid)
       : null;
     const getGroupAdmins = (participants: GroupParticipant[]): string[] => {
       var admins: string[] = [];

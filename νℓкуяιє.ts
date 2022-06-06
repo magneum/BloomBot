@@ -9,22 +9,19 @@ import makeWASocket, {
 DisconnectReason,
 makeInMemoryStore,
 WASocket,
-proto,
 } from "@adiwajshing/baileys";
 import fs from "fs";
 import Kolor from "chalk";
 import { join } from "path";
 import Vmangos from "mongoose";
 import P, { Logger } from "pino";
-import { Boom } from "@hapi/boom";
-import νℓкуяιє from "./𝐊𝐫𝐲𝐨⚜️𝐓𝐞𝐤/msb";
-import Client from "./𝐊𝐫𝐲𝐨⚜️𝐓𝐞𝐤/client";
-import resolve from "./𝐊𝐫𝐲𝐨⚜️𝐓𝐞𝐤/helper";
 import Konf from "./𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞🀄𝐕𝐞𝐧𝐭/config";
 import Command from "./𝐊𝐫𝐲𝐨⚜️𝐓𝐞𝐤/command";
 import { Sequelize } from "sequelize/types";
-import { MessageType } from "./𝐊𝐫𝐲𝐨⚜️𝐓𝐞𝐤/message-type";
 import useRemoteFileAuthState from "./𝐊𝐫𝐲𝐨⚜️𝐓𝐞𝐤/dbAuth";
+import messages_upsert from "./𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞💥𝐄𝐯𝐞𝐧𝐭𝐬/messages_upsert";
+import connection_update from "./𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞💥𝐄𝐯𝐞𝐧𝐭𝐬/connection_update";
+import participants_update from "./𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞💥𝐄𝐯𝐞𝐧𝐭𝐬/participants_update";
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 const UserPrivate = require(`./𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/private`);
 const Welcome = require(`./𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/setwelcome`);
@@ -71,7 +68,6 @@ console.log(
 Kolor.green("💡𝐈𝐧𝐟𝐨꧂  All models synchronized successfully...")
 );
 }
-console.clear();
 console.log(
 Kolor.green("💡𝐈𝐧𝐟𝐨꧂  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐂𝐨𝐧𝐧𝐞𝐜𝐭𝐞𝐝 𝐚𝐧𝐝 𝐕𝐞𝐫𝐢𝐟𝐢𝐞𝐝 𝐰𝐢𝐭𝐡 𝐒𝐞𝐫𝐯𝐞𝐫𝐬...")
 );
@@ -82,7 +78,7 @@ store?.readFromFile("./Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞.json");
 setInterval(() => {
 store?.writeToFile("./Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞.json");
 }, 10_000);
-(async (): Promise<void> => {
+async function 𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞() {
 let commandHandler: Map<string, Command> = new Map();
 let Folders: string[] = fs.readdirSync(join(__dirname, "𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞💞𝐒𝐨𝐮𝐥"));
 for (const Files of Folders) {
@@ -125,7 +121,7 @@ console.log(Kolor.yellow("💡𝐈𝐧𝐟𝐨꧂  Plugins Installed Successfull
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 const { state, saveCreds } = await useRemoteFileAuthState(logger);
 const startSock = async () => {
-const sock: WASocket = makeWASocket({
+const ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇: WASocket = makeWASocket({
 logger,
 printQRInTerminal: true,
 auth: state,
@@ -134,100 +130,25 @@ getMessage: async (key) => {
 return {};
 },
 });
-store?.bind(sock.ev);
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
-sock.ev.on("messages.upsert", async (m) => {
-if (m.type === "append" && !Konf.OFFLINE_RESPONSE) {
-return;
-}
-if (m.type !== "notify") {
-return;
-}
-let chat: proto.IWebMessageInfo = m.messages[0];
-let νℓкуяιє: νℓкуяιє = await resolve(chat, sock);
-let client: Client = new Client(sock);
-if (νℓкуяιє.isCmd) {
-console.log(νℓкуяιє);
-console.log(
-Kolor.red(`💡𝐈𝐧𝐟𝐨꧂  ${νℓкуяιє.commandName} command executed.`)
-);
-const command = commandHandler.get(νℓкуяιє.commandName);
-var args = νℓкуяιє.body.trim().split(/\s+/).slice(1);
-("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
-if (!command) {
-await client.sendMessage(
-νℓкуяιє.chatId,
-{
-quoted: chat.message,
-contextInfo: {
-mentionedJid: [νℓкуяιє.sender],
-},
-timestamp: Date(),
-image: { url: "./𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞👜𝐁𝐚𝐠/νℓкуяιє.png" },
-caption: `✥𝐔𝐬𝐞𝐫: ${chat.pushName}
-
-*❌𝗘𝗿𝗿𝗼𝗿:* No Such Command In Database.`,
-footer: `⦓ 𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ⦔`,
-buttons: [
-{
-  buttonId: `${Konf.MuveOn}help`,
-  buttonText: { displayText: `${Konf.MuveOn}help` },
-  type: 1,
-},
-],
-headerType: 4,
-},
-MessageType.buttonsMessage
-);
-}
-// else if (command && νℓкуяιє.commandName == "help") {
-// try {
-// command.handle(client, chat, νℓкуяιє, args, commandHandler);
-// return;
-// } catch (err) {
-// console.log(Kolor.red("❌𝐄𝐫𝐫𝐨𝐫꧂ ", err));
-// return;
-// }
-// }
-("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
-try {
-await command
-.handle(client, chat, νℓкуяιє, args)
-.catch((err) => console.log("❌𝐄𝐫𝐫𝐨𝐫꧂ " + err));
-} catch (err) {
-console.log(Kolor.red("❌𝐄𝐫𝐫𝐨𝐫꧂ ", err));
-}
-}
+store?.bind(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.ev);
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.ev.on("group-participants.update", async (update) => {
+participants_update.participants_update(update, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇);
 });
-("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
-sock.ev.on("connection.update", (update) => {
-const { connection, lastDisconnect } = update;
-if (connection === "close") {
-if (
-(lastDisconnect.error as Boom)?.output?.statusCode !==
-DisconnectReason.loggedOut
-) {
-startSock();
-} else {
-console.log("❌𝐄𝐫𝐫𝐨𝐫꧂ Connection closed. You are logged out.");
-process.exit(0);
-}
-} else if (connection === "connecting") {
-console.log(Kolor.yellowBright("💡𝐈𝐧𝐟𝐨꧂  Connecting to WhatsApp..."));
-} else if (connection === "open") {
-console.log(Kolor.yellow("💡𝐈𝐧𝐟𝐨꧂  Connected! Welcome to νℓкуяιє"));
-} else {
-console.log("connection update", update);
-}
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.ev.on("connection.update", (update) => {
+connection_update.connection_update(update, DisconnectReason, startSock);
 });
-("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
-sock.ev.on("creds.update", (creds) => {
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.ev.on("messages.upsert", async (m) => {
+messages_upsert.messages_upsert(m, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, commandHandler);
+});
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.ev.on("creds.update", (creds) => {
 saveCreds(creds);
 });
-return sock;
+return ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇;
 };
 startSock();
-})().catch((err) => console.log("[MAINERROR] : %s", Kolor.red(err)));
+}
+𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞().catch((err) => console.log("[MAINERROR] : %s", Kolor.red(err)));
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 /* 
 (𝐜)𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬! 

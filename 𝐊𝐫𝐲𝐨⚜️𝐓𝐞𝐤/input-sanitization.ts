@@ -42,7 +42,7 @@ const getCleanedContact = async (
     jidNumber = countryCode + jidNumber;
   }
   console.log(jidNumber);
-  var isOnWhatsApp = await client.sock.onWhatsApp(jidNumber);
+  var isOnWhatsApp = await client.ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.onWhatsApp(jidNumber);
   if (isOnWhatsApp === undefined) {
     throw "NumberInvalid";
   }
