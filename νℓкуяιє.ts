@@ -30,7 +30,7 @@ logger.level = "error";
 console.log(Kolor.yellow("💡𝐈𝐧𝐟𝐨꧂  Trying To Connect To '🍃mongo + 🕸️sql'"));
 const sequelize: Sequelize = Konf.DATABASE;
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
-(async () => {
+async function 𝐕𝐥𝐤𝐲𝐫𝐢𝐞() {
 try {
 await sequelize.authenticate();
 console.log(Kolor.green("💡𝐈𝐧𝐟𝐨꧂  Connected with 🕸️SQL."));
@@ -60,7 +60,7 @@ Kolor.green("💡𝐈𝐧𝐟𝐨꧂  All models synchronized successfully...")
 console.log(
 Kolor.green("💡𝐈𝐧𝐟𝐨꧂  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐂𝐨𝐧𝐧𝐞𝐜𝐭𝐞𝐝 𝐚𝐧𝐝 𝐕𝐞𝐫𝐢𝐟𝐢𝐞𝐝 𝐰𝐢𝐭𝐡 𝐒𝐞𝐫𝐯𝐞𝐫𝐬...")
 );
-})().catch((err) => console.log("[Server Error] : %s", Kolor.red(err)));
+}
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 const store = makeInMemoryStore({ logger });
 store?.readFromFile("./Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞.json");
@@ -135,9 +135,12 @@ saveCreds(creds);
 });
 return ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇;
 };
-startSock();
+startSock().catch((error) =>
+console.log("[SOCKERERROR] : %s", Kolor.red(error))
+);
 }
-𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞().catch((err) => console.log("[MAINERROR] : %s", Kolor.red(err)));
+𝐕𝐥𝐤𝐲𝐫𝐢𝐞().catch((error) => console.log("[SERVERERROR] : %s", Kolor.red(error)));
+𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞().catch((error) => console.log("[MAINERROR] : %s", Kolor.red(error)));
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 /* 
 (𝐜)𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬! 
