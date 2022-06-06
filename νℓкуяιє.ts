@@ -68,7 +68,6 @@ Kolor.green("💡𝐈𝐧𝐟𝐨꧂  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐂𝐨�
 let commandHandler: Map<string, Command> = new Map();
 let Folders: string[] = fs.readdirSync(join(__dirname, "𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞💞𝐒𝐨𝐮𝐥"));
 for (const Files of Folders) {
-console.log(Files);
 const AllFiles = fs
 .readdirSync(join(__dirname, `./𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞💞𝐒𝐨𝐮𝐥/${Files}`))
 .filter((File) => File.endsWith(`.js`));
@@ -89,7 +88,6 @@ continue;
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 let FFolders: string[] = fs.readdirSync(join(__dirname, "𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞💖𝐇𝐞𝐚𝐫𝐭"));
 for (const FFiles of FFolders) {
-console.log(FFiles);
 const AllFFiles = fs
 .readdirSync(join(__dirname, `./𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞💖𝐇𝐞𝐚𝐫𝐭/${FFiles}`))
 .filter((File) => File.endsWith(`.js`));
