@@ -114,7 +114,7 @@ const ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇: WASocket = makeWASocket({
 logger,
 printQRInTerminal: true,
 auth: state,
-browser: ["Vlkyrie", "Chrome", "4.0.0"],
+browser: ["Valkyrie", "Chrome", "4.0.0"],
 getMessage: async (key) => {
 return {};
 },
