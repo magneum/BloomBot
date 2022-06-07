@@ -39,11 +39,11 @@ HEROKU: process.env.HEROKU === undefined ? false : true,
 PREFIX: process.env.PREFIX === undefined ? "^[/]" : process.env.PREFIX,
 CCD:
 process.env.CCD === undefined ? "91" : process.env.CCD,
-OCR_API_KEY:
-process.env.OCR_API_KEY === undefined
+OCR:
+process.env.OCR === undefined
 ? "9ffb44def388957"
-: process.env.OCR_API_KEY,
-WEATHER_API_KEY:
+: process.env.OCR,
+Weather:
 process.env.CURRENT_WEATHER_API_KEY === undefined
 ? "6729ac2b2e2bb5c686ff427a2f06df92"
 : process.env.CURRENT_WEATHER_API_KEY,
