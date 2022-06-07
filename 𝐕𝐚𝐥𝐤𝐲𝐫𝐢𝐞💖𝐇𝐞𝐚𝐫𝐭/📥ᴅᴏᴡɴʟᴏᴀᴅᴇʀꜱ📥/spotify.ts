@@ -14,7 +14,7 @@ const VOID = require(`../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞⚜️𝐊𝐫𝐲�
 import Client from "../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/client";
 const spdl = require("spdl-core").default;
 import νℓкуяιє from "../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/msb";
-import Konf from "../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞🀄𝐕𝐞𝐧𝐭/ʟᴀʏᴏᴜᴛ";
+import ʟᴀʏᴏᴜᴛ from "../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞🀄𝐕𝐞𝐧𝐭/ʟᴀʏᴏᴜᴛ";
 const SpotTrack = /^(spotify:|https:\/\/[a-z]+\.spotify\.com\/)/;
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 import * as fs from "fs";
@@ -50,7 +50,7 @@ text: `✥𝐔𝐬𝐞𝐫: ${chat.pushName}
 
 Press Below To Read How To Use This Command!`,
 footer: "⦓ 𝐕𝐥𝐤𝐲𝐫𝐞 ⦔",
-title: `🔸𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${Konf.MuveOn}${dotScrpt.toUpperCase()}`,
+title: `🔸𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()}`,
 buttonText: "❝ _How To Use?_ ❞",
 sections: [
 {
@@ -60,7 +60,7 @@ rows: [
 title: "⚡𝐔𝐬𝐚𝐠𝐞",
 rowId: "argument required...",
 description: `💡𝐈𝐧𝐟𝐨: In order to use this command, you must follow below instructions:
-Option 1 - ${Konf.MuveOn}${dotScrpt.toUpperCase()} _spotify link_`,
+Option 1 - ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()} _spotify link_`,
 },
 ],
 },
@@ -78,7 +78,7 @@ text: `✥𝐔𝐬𝐞𝐫: ${chat.pushName}
 
 Press Below To Read How To Use This Command!`,
 footer: "⦓ 𝐕𝐥𝐤𝐲𝐫𝐞 ⦔",
-title: `🔸𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${Konf.MuveOn}${dotScrpt.toUpperCase()}`,
+title: `🔸𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()}`,
 buttonText: "❝ _How To Use?_ ❞",
 sections: [
 {
@@ -88,7 +88,7 @@ rows: [
 title: "⚡𝐔𝐬𝐚𝐠𝐞",
 rowId: "argument required...",
 description: `💡𝐈𝐧𝐟𝐨: In order to use this command, you must follow below instructions:
-Option 1 - ${Konf.MuveOn}${dotScrpt.toUpperCase()} _spotify link_`,
+Option 1 - ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()} _spotify link_`,
 },
 ],
 },
@@ -128,8 +128,8 @@ SpotGot.thumbnail
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 const Spotify = require("spotifydl-core").default;
 const Spot = new Spotify({
-clientId: Konf.Spotify_Id,
-clientSecret: Konf.Spotify_Client_Id,
+clientId: ʟᴀʏᴏᴜᴛ.Spotify_Id,
+clientSecret: ʟᴀʏᴏᴜᴛ.Spotify_Client_Id,
 });
 async function SPotDL(Link) {
 fs.writeFileSync(SpotFile, await Spot.downloadTrack(Link));

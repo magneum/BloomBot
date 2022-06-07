@@ -14,7 +14,7 @@ import { proto } from "@adiwajshing/baileys";
 const VOID = require(`../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/void`);
 import Client from "../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/client";
 import νℓкуяιє from "../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/msb";
-import Konf from "../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞🀄𝐕𝐞𝐧𝐭/ʟᴀʏᴏᴜᴛ";
+import ʟᴀʏᴏᴜᴛ from "../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞🀄𝐕𝐞𝐧𝐭/ʟᴀʏᴏᴜᴛ";
 const SCTrack =
 /^https?:\/\/(soundcloud\.com|snd\.sc)\/([A-Za-z0-9_-]+)\/([A-Za-z0-9_-]+)\/?$/;
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
@@ -51,7 +51,7 @@ text: `✥𝐔𝐬𝐞𝐫: ${chat.pushName}
 
 Press Below To Read How To Use This Command!`,
 footer: "⦓ 𝐕𝐥𝐤𝐲𝐫𝐞 ⦔",
-title: `🔸𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${Konf.MuveOn}${dotScrpt.toUpperCase()}`,
+title: `🔸𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()}`,
 buttonText: "❝ _How To Use?_ ❞",
 sections: [
 {
@@ -61,7 +61,7 @@ rows: [
 title: "⚡𝐔𝐬𝐚𝐠𝐞",
 rowId: "argument required...",
 description: `💡𝐈𝐧𝐟𝐨: In order to use this command, you must follow below instructions:
-Option 1 - ${Konf.MuveOn}${dotScrpt.toUpperCase()} _soundcloud link_`,
+Option 1 - ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()} _soundcloud link_`,
 },
 ],
 },
@@ -79,7 +79,7 @@ text: `✥𝐔𝐬𝐞𝐫: ${chat.pushName}
 
 Press Below To Read How To Use This Command!`,
 footer: "⦓ 𝐕𝐥𝐤𝐲𝐫𝐞 ⦔",
-title: `🔸𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${Konf.MuveOn}${dotScrpt.toUpperCase()}`,
+title: `🔸𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()}`,
 buttonText: "❝ _How To Use?_ ❞",
 sections: [
 {
@@ -89,7 +89,7 @@ rows: [
 title: "⚡𝐔𝐬𝐚𝐠𝐞",
 rowId: "argument required...",
 description: `💡𝐈𝐧𝐟𝐨: In order to use this command, you must follow below instructions:
-Option 1 - ${Konf.MuveOn}${dotScrpt.toUpperCase()} _soundcloud link_`,
+Option 1 - ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()} _soundcloud link_`,
 },
 ],
 },
