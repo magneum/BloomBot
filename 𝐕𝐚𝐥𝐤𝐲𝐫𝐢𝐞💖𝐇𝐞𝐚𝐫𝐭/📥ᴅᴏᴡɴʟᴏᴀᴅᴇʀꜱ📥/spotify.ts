@@ -128,8 +128,8 @@ SpotGot.thumbnail
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 const Spotify = require("spotifydl-core").default;
 const Spot = new Spotify({
-clientId: Konf.SPOTIFY_ID,
-clientSecret: Konf.SPOTIFY_CLIENT,
+clientId: Konf.Spotify_Id,
+clientSecret: Konf.Spotify_Client_Id,
 });
 async function SPotDL(Link) {
 fs.writeFileSync(SpotFile, await Spot.downloadTrack(Link));

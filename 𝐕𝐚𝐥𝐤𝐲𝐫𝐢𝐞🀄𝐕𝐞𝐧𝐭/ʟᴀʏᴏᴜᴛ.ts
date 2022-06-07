@@ -6,7 +6,7 @@
 import fs from "fs";
 import { Sequelize } from "sequelize";
 if (fs.existsSync("νℓкуяιє.env")) {
-require("dotenv").ʟᴀʏᴏᴜᴛ({ path: "./νℓкуяιє.env" });
+require("dotenv").config({ path: "./νℓкуяιє.env" });
 } else {
 require("dotenv");
 }
@@ -27,11 +27,11 @@ process.env.DATABASE_URL === undefined
 : process.env.DATABASE_URL;
 process.env.DEBUG =
 process.env.DEBUG === undefined ? "false" : process.env.DEBUG;
-
+("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 const ʟᴀʏᴏᴜᴛ = {
 VMango: process.env.VMango,
-SPOTIFY_ID: process.env.SPOTIFY_ID,
-SPOTIFY_CLIENT: process.env.SPOTIFY_CLIENT,
+Spotify_Id: process.env.Spotify_Id,
+Spotify_Client_Id: process.env.Spotify_Client_Id,
 MuveOn: process.env.PREFIX === undefined ? "/" : process.env.PREFIX,
 STRING_SESSION:
 process.env.STRING_SESSION === undefined ? "" : process.env.STRING_SESSION,
