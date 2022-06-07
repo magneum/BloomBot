@@ -105,14 +105,13 @@ const useRemoteFileAuthState = async (logger: Logger) => {
       }
     }
   };
-
+  ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
   const saveKey = async (
     key: string,
     data: SignalDataSet,
     _key: string
   ): Promise<void> => {
     for (const subKey in data[_key]) {
-      // console.log(`Trying to find key ${key} and subKey ${subKey}.`);
       const res = await Key.findOne({
         where: {
           key: subKey,
@@ -125,7 +124,7 @@ const useRemoteFileAuthState = async (logger: Logger) => {
             value: JSON.stringify(data[_key][subKey], BufferJSON.replacer, 2),
           })
           .then((res) => {
-            // console.log(`updated key ${key} and subKey ${subKey}`)
+console.log(`updated key ${key} and subKey ${subKey}`)
           })
           .catch((err) => {
             console.log(chalk.blueBright(err));
@@ -137,7 +136,7 @@ const useRemoteFileAuthState = async (logger: Logger) => {
           type: key,
         })
           .then((res) => {
-            // console.log(`inserted key ${key} and subKey ${subKey}`)
+console.log(`inserted key ${key} and subKey ${subKey}`)
           })
           .catch((err) => {
             console.log(chalk.blueBright(err));
