@@ -3,7 +3,7 @@
 (𝐜)𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬! 
 */
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
-import config from "../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞🀄𝐕𝐞𝐧𝐭/ʟᴀʏᴏᴜᴛ";
+import ʟᴀʏᴏᴜᴛ from "../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞🀄𝐕𝐞𝐧𝐭/ʟᴀʏᴏᴜᴛ";
 import chalk from "chalk";
 import νℓкуяιєClass from "./msb";
 import { proto, WASocket } from "@adiwajshing/baileys";
@@ -13,9 +13,9 @@ messageInstance: proto.IWebMessageInfo,
 client: WASocket
 ) {
 var νℓкуяιє: νℓкуяιєClass = new νℓкуяιєClass();
-var prefix: string = config.PREFIX + "\\w+";
+var prefix: string = ʟᴀʏᴏᴜᴛ.PREFIX + "\\w+";
 var prefixRegex: RegExp = new RegExp(prefix, "g");
-var SUDOstring: string = config.TUFs;
+var SUDOstring: string = ʟᴀʏᴏᴜᴛ.TUFs;
 try {
 var jsonMessage: string = JSON.stringify(messageInstance);
 } catch (err) {
