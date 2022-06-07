@@ -124,7 +124,7 @@ const useRemoteFileAuthState = async (logger: Logger) => {
             value: JSON.stringify(data[_key][subKey], BufferJSON.replacer, 2),
           })
           .then((res) => {
-console.log(`updated key ${key} and subKey ${subKey}`)
+            console.log(`updated key ${key} and subKey ${subKey}`);
           })
           .catch((err) => {
             console.log(chalk.blueBright(err));
@@ -136,7 +136,7 @@ console.log(`updated key ${key} and subKey ${subKey}`)
           type: key,
         })
           .then((res) => {
-console.log(`inserted key ${key} and subKey ${subKey}`)
+            console.log(`inserted key ${key} and subKey ${subKey}`);
           })
           .catch((err) => {
             console.log(chalk.blueBright(err));
@@ -145,7 +145,7 @@ console.log(`inserted key ${key} and subKey ${subKey}`)
     }
     return;
   };
-
+  ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
   let credsExist: boolean = await checkCreds();
   if (credsExist) {
     let parent = {
@@ -154,12 +154,10 @@ console.log(`inserted key ${key} and subKey ${subKey}`)
     };
     const allCreds = await loadCreds();
     const allKeys = await loadKeys();
-
     parent.creds = allCreds;
     parent.keys = allKeys;
-
     const final = JSON.parse(JSON.stringify(parent), BufferJSON.reviver);
-    // console.log(final);
+ console.log(final);
     creds = final.creds;
     keys = final.keys;
   } else {
@@ -167,7 +165,6 @@ console.log(`inserted key ${key} and subKey ${subKey}`)
     keys = {};
     saveCreds();
   }
-
   return {
     state: {
       creds,
@@ -190,7 +187,7 @@ console.log(`inserted key ${key} and subKey ${subKey}`)
         set: async (data: SignalDataSet) => {
           for (const _key in data) {
             const key: string = KEY_MAP[_key];
-            // console.log(`Got raw key - ${_key} and got mapped key ${key}. The value is ${data[_key]}`)
+console.log(`Got raw key - ${_key} and got mapped key ${key}. The value is ${data[_key]}`)
             keys[key] = keys[key] || {};
             Object.assign(keys[key], data[_key]);
             await saveKey(key, data, _key);
