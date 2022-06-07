@@ -15,7 +15,7 @@ client: WASocket
 var νℓкуяιє: νℓкуяιєClass = new νℓкуяιєClass();
 var prefix: string = ʟᴀʏᴏᴜᴛ.PREFIX + "\\w+";
 var prefixRegex: RegExp = new RegExp(prefix, "g");
-var SUDOstring: string = ʟᴀʏᴏᴜᴛ.TUFs;
+var TUFsstring: string = ʟᴀʏᴏᴜᴛ.TUFs;
 try {
 var jsonMessage: string = JSON.stringify(messageInstance);
 } catch (err) {
@@ -120,7 +120,7 @@ messageInstance.message?.extendedTextMessage?.contextInfo?.quotedMessage?.sticke
 : !νℓкуяιє.isGroup
 ? νℓкуяιє.chatId
 : null;
-νℓкуяιє.isSenderSUDO = SUDOstring.includes(
+νℓкуяιє.isSenderTUFs = TUFsstring.includes(
 νℓкуяιє.sender?.substring(0, νℓкуяιє.sender.indexOf("@"))
 );
 return νℓкуяιє;

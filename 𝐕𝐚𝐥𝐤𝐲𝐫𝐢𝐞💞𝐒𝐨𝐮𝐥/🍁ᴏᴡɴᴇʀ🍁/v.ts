@@ -59,23 +59,31 @@ export = {
     // await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendPresenceUpdate("paused", νℓкуяιє.chatId);
     ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 
-
-
-
-
     if (νℓкуяιє.isSenderGroupAdmin) {
-      await client.sendMessage(νℓкуяιє.chatId, "You Are Admin Of This Group: 🔰", MessageType.text);
-      } else if (νℓкуяιє.isSenderTUFs && νℓкуяιє.isSenderGroupAdmin) {
-        await client.sendMessage(νℓкуяιє.chatId, "You Are Admin+Tuf(dev tester): 👑+🔰", MessageType.text);
-      } else if (νℓкуяιє.isSenderTUFs) {
-        await client.sendMessage(νℓкуяιє.chatId, "You Are Tuf(dev tester): 👑", MessageType.text);
-      } else {
-        await client.sendMessage(νℓкуяιє.chatId, "You Are Normal User: 🐾", MessageType.text);
-      }
-
-
-
-
+      await client.sendMessage(
+        νℓкуяιє.chatId,
+        "You Are Admin Of This Group: 🔰",
+        MessageType.text
+      );
+    } else if (νℓкуяιє.isSenderTUFs && νℓкуяιє.isSenderGroupAdmin) {
+      await client.sendMessage(
+        νℓкуяιє.chatId,
+        "You Are Admin+Tuf(dev tester): 👑+🔰",
+        MessageType.text
+      );
+    } else if (νℓкуяιє.isSenderTUFs) {
+      await client.sendMessage(
+        νℓкуяιє.chatId,
+        "You Are Tuf(dev tester): 👑",
+        MessageType.text
+      );
+    } else {
+      await client.sendMessage(
+        νℓкуяιє.chatId,
+        "You Are Normal User: 🐾",
+        MessageType.text
+      );
+    }
   },
 };
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
