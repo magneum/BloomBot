@@ -23,41 +23,41 @@ var dotScrpt = scriptName.slice(0, -3).toLowerCase();
 /*              (𝐜)𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!*/
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 export = {
-  name: dotScrpt,
-  async handle(
-    client: Client,
-    chat: proto.IWebMessageInfo,
-    νℓкуяιє: νℓкуяιє,
-    args: string[],
-    ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
-  ): Promise<void> {
-    const ʟɴᴀᴍᴇ = νℓкуяιє.sender;
-    const ᴅꜰɴᴀᴍᴇ = νℓкуяιє.commandName;
-    const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/[^\d+]/g, "");
-    const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
-    ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
-    await client.getGroupMetaData(νℓкуяιє.chatId, νℓкуяιє);
-    console.log("💡Is Group: " + νℓкуяιє.isGroup);
-    console.log("💡Is Bot Group Admin: " + νℓкуяιє.isBotGroupAdmin);
-    console.log("💡Is Sender Group Admin: " + νℓкуяιє.isSenderGroupAdmin);
-    console.log("💡Is Reply Message: " + νℓкуяιє.replyMessage);
-    console.log("💡Is Text Reply: " + νℓкуяιє.isTextReply);
-    if (νℓкуяιє.isTextReply) {
-      var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
-      var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
-      if (Receiver === ʟɴᴀᴍᴇ) {
-        console.log("💡Receiver = Self: " + chat.pushName);
-      } else {
-        console.log("💡Receiver: " + քɛʀֆօռɢօȶռʊʍ);
-      }
-    }
-    ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
-    await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendPresenceUpdate("unavailable", νℓкуяιє.chatId);
-    await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendPresenceUpdate("available", νℓкуяιє.chatId);
-    await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendPresenceUpdate("composing", νℓкуяιє.chatId);
-    await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendPresenceUpdate("recording", νℓкуяιє.chatId);
-    await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendPresenceUpdate("paused", νℓкуяιє.chatId);
-  },
+name: dotScrpt,
+async handle(
+client: Client,
+chat: proto.IWebMessageInfo,
+νℓкуяιє: νℓкуяιє,
+args: string[],
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
+): Promise<void> {
+const ʟɴᴀᴍᴇ = νℓкуяιє.sender;
+const ᴅꜰɴᴀᴍᴇ = νℓкуяιє.commandName;
+const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/[^\d+]/g, "");
+const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
+("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
+await client.getGroupMetaData(νℓкуяιє.chatId, νℓкуяιє);
+console.log("💡Is Group: " + νℓкуяιє.isGroup);
+console.log("💡Is Bot Group Admin: " + νℓкуяιє.isBotGroupAdmin);
+console.log("💡Is Sender Group Admin: " + νℓкуяιє.isSenderGroupAdmin);
+console.log("💡Is Reply Message: " + νℓкуяιє.replyMessage);
+console.log("💡Is Text Reply: " + νℓкуяιє.isTextReply);
+if (νℓкуяιє.isTextReply) {
+var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
+var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
+if (Receiver === ʟɴᴀᴍᴇ) {
+console.log("💡Receiver = Self: " + chat.pushName);
+} else {
+console.log("💡Receiver: " + քɛʀֆօռɢօȶռʊʍ);
+}
+}
+("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
+await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendPresenceUpdate("unavailable", νℓкуяιє.chatId);
+await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendPresenceUpdate("available", νℓкуяιє.chatId);
+await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendPresenceUpdate("composing", νℓкуяιє.chatId);
+await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendPresenceUpdate("recording", νℓкуяιє.chatId);
+await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendPresenceUpdate("paused", νℓкуяιє.chatId);
+},
 };
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 /*        
