@@ -7,7 +7,7 @@ import { MessageType } from "../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞⚜️𝐊�
 import { proto } from "@adiwajshing/baileys";
 import Client from "../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/client";
 import νℓкуяιє from "../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/msb";
-import Konf from "../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞🀄𝐕𝐞𝐧𝐭/ʟᴀʏᴏᴜᴛ";
+import ʟᴀʏᴏᴜᴛ from "../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞🀄𝐕𝐞𝐧𝐭/ʟᴀʏᴏᴜᴛ";
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 import * as fs from 'fs';
 import path from 'path';
@@ -40,35 +40,35 @@ caption: `╔◇✥𝐔𝐬𝐞𝐫: ${chat.pushName}
 
 ╔◇🧀𝐍𝐨 𝐑𝐞𝐬𝐭𝐫𝐢𝐜𝐭𝐢𝐨𝐧🧀
 ║
-║🍙 ${Konf.MuveOn}animemenu
-║💰 ${Konf.MuveOn}gamemenu
-║⭕ ${Konf.MuveOn}ytfiltermenu
-║📥 ${Konf.MuveOn}downloadmenu
-║🔰 ${Konf.MuveOn}groupmenu
-║🦄 ${Konf.MuveOn}randommenu
-║🔎 ${Konf.MuveOn}searchmenu
-║🗂️ ${Konf.MuveOn}ffmpegmenu
-║🍰 ${Konf.MuveOn}filtersmenu
-║🎨 ${Konf.MuveOn}checkmenu
+║🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}animemenu
+║💰 ${ʟᴀʏᴏᴜᴛ.MuveOn}gamemenu
+║⭕ ${ʟᴀʏᴏᴜᴛ.MuveOn}ytfiltermenu
+║📥 ${ʟᴀʏᴏᴜᴛ.MuveOn}downloadmenu
+║🔰 ${ʟᴀʏᴏᴜᴛ.MuveOn}groupmenu
+║🦄 ${ʟᴀʏᴏᴜᴛ.MuveOn}randommenu
+║🔎 ${ʟᴀʏᴏᴜᴛ.MuveOn}searchmenu
+║🗂️ ${ʟᴀʏᴏᴜᴛ.MuveOn}ffmpegmenu
+║🍰 ${ʟᴀʏᴏᴜᴛ.MuveOn}filtersmenu
+║🎨 ${ʟᴀʏᴏᴜᴛ.MuveOn}checkmenu
 ╚◇════════════◇
 
 ╔◇⚜️𝐀𝐝𝐦𝐢𝐧/𝐎𝐰𝐧𝐞𝐫 𝐎𝐧𝐥𝐲 ⚜️
 ║
-║🔰 ${Konf.MuveOn}groupmenu
-║👑 ${Konf.MuveOn}ownermenu
-║🍑 ${Konf.MuveOn}hentaimenu
-║🥃 ${Konf.MuveOn}humanmenu
+║🔰 ${ʟᴀʏᴏᴜᴛ.MuveOn}groupmenu
+║👑 ${ʟᴀʏᴏᴜᴛ.MuveOn}ownermenu
+║🍑 ${ʟᴀʏᴏᴜᴛ.MuveOn}hentaimenu
+║🥃 ${ʟᴀʏᴏᴜᴛ.MuveOn}humanmenu
 ╚◇════════════◇`,
 footer: "`⦓ 𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ⦔",
 buttons: [
 {
-buttonId: `${Konf.MuveOn}help`,
-buttonText: { displayText: `${Konf.MuveOn}help` },
+buttonId: `${ʟᴀʏᴏᴜᴛ.MuveOn}help`,
+buttonText: { displayText: `${ʟᴀʏᴏᴜᴛ.MuveOn}help` },
 type: 1,
 },
 {
-buttonId: `${Konf.MuveOn}menu`,
-buttonText: { displayText: `${Konf.MuveOn}menu` },
+buttonId: `${ʟᴀʏᴏᴜᴛ.MuveOn}menu`,
+buttonText: { displayText: `${ʟᴀʏᴏᴜᴛ.MuveOn}menu` },
 type: 1,
 },
 ],

@@ -7,7 +7,7 @@ import { MessageType } from "../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞⚜️𝐊�
 import { proto } from "@adiwajshing/baileys";
 import Client from "../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/client";
 import νℓкуяιє from "../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/msb";
-import Konf from "../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞🀄𝐕𝐞𝐧𝐭/ʟᴀʏᴏᴜᴛ";
+import ʟᴀʏᴏᴜᴛ from "../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞🀄𝐕𝐞𝐧𝐭/ʟᴀʏᴏᴜᴛ";
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 import * as fs from 'fs';
 import path from 'path';
@@ -38,24 +38,24 @@ caption: `╔◇✥𝐔𝐬𝐞𝐫: ${chat.pushName}
 ╚◇════════════◇꧂
 
 ╔════⧉🥃 𝐇𝐮𝐦𝐚𝐧 𝐍𝐒𝐅𝐖
-║• *${Konf.MuveOn}4k:*  _get random 4kporn img/gif_
-║• *${Konf.MuveOn}blowjob:*  _get random blowjob img/gif_
-║• *${Konf.MuveOn}milf:*  _get random milf img/gif_
-║• *${Konf.MuveOn}milk:*  _get random milk img/gif_
-║• *${Konf.MuveOn}pussy:*  _get random pussy img/gif_
-║• *${Konf.MuveOn}slut:*  _get random slut img/gif_
-║• *${Konf.MuveOn}tikporn:*  _get random tiktokporn video_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}4k:*  _get random 4kporn img/gif_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}blowjob:*  _get random blowjob img/gif_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}milf:*  _get random milf img/gif_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}milk:*  _get random milk img/gif_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}pussy:*  _get random pussy img/gif_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}slut:*  _get random slut img/gif_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}tikporn:*  _get random tiktokporn video_
 ╚════════════╝`,
 footer: "`⦓ 𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ⦔",
 buttons: [
 {
-buttonId: `${Konf.MuveOn}help`,
-buttonText: { displayText: `${Konf.MuveOn}help` },
+buttonId: `${ʟᴀʏᴏᴜᴛ.MuveOn}help`,
+buttonText: { displayText: `${ʟᴀʏᴏᴜᴛ.MuveOn}help` },
 type: 1,
 },
 {
-buttonId: `${Konf.MuveOn}menu`,
-buttonText: { displayText: `${Konf.MuveOn}menu` },
+buttonId: `${ʟᴀʏᴏᴜᴛ.MuveOn}menu`,
+buttonText: { displayText: `${ʟᴀʏᴏᴜᴛ.MuveOn}menu` },
 type: 1,
 },
 ],
