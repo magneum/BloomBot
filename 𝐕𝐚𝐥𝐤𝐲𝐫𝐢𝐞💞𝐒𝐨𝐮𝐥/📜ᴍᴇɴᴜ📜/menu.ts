@@ -7,7 +7,7 @@ import { MessageType } from "../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞⚜️𝐊�
 import { proto } from "@adiwajshing/baileys";
 import Client from "../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/client";
 import νℓкуяιє from "../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/msb";
-import Konf from "../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞🀄𝐕𝐞𝐧𝐭/ʟᴀʏᴏᴜᴛ";
+import ʟᴀʏᴏᴜᴛ from "../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞🀄𝐕𝐞𝐧𝐭/ʟᴀʏᴏᴜᴛ";
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 import * as fs from 'fs';
 import path from 'path';
@@ -41,279 +41,279 @@ caption: `╔◇✥𝐔𝐬𝐞𝐫: ${chat.pushName}
 ◇⚡𝐁𝐞𝐥𝐨𝐰 𝐅𝐮𝐥𝐥 𝐋𝐢𝐬𝐭⚡◇
 ╔⧉༻👇🏽 𝗚𝗮𝗺𝗲𝘀👇🏽
 ║
-║💰 ${Konf.MuveOn}shop
-║💰 ${Konf.MuveOn}zoo
-║💰 ${Konf.MuveOn}inv
-║💰 ${Konf.MuveOn}buy
-║💰 ${Konf.MuveOn}pay
-║💰 ${Konf.MuveOn}hunt
-║💰 ${Konf.MuveOn}gamble
-║💰 ${Konf.MuveOn}fish
-║💰 ${Konf.MuveOn}daily
-║💰 ${Konf.MuveOn}work
-║💰 ${Konf.MuveOn}balance
-║💰 ${Konf.MuveOn}rob  _(beta)_
-║💰 ${Konf.MuveOn}truthdare
+║💰 ${ʟᴀʏᴏᴜᴛ.MuveOn}shop
+║💰 ${ʟᴀʏᴏᴜᴛ.MuveOn}zoo
+║💰 ${ʟᴀʏᴏᴜᴛ.MuveOn}inv
+║💰 ${ʟᴀʏᴏᴜᴛ.MuveOn}buy
+║💰 ${ʟᴀʏᴏᴜᴛ.MuveOn}pay
+║💰 ${ʟᴀʏᴏᴜᴛ.MuveOn}hunt
+║💰 ${ʟᴀʏᴏᴜᴛ.MuveOn}gamble
+║💰 ${ʟᴀʏᴏᴜᴛ.MuveOn}fish
+║💰 ${ʟᴀʏᴏᴜᴛ.MuveOn}daily
+║💰 ${ʟᴀʏᴏᴜᴛ.MuveOn}work
+║💰 ${ʟᴀʏᴏᴜᴛ.MuveOn}balance
+║💰 ${ʟᴀʏᴏᴜᴛ.MuveOn}rob  _(beta)_
+║💰 ${ʟᴀʏᴏᴜᴛ.MuveOn}truthdare
 ╚════════════╝
 
 ╔◇👇🏽𝐒𝐞𝐚𝐫𝐜𝐡👇🏽
 ║  
-║🔎 ${Konf.MuveOn}ytsearch
-║🔎 ${Konf.MuveOn}lyrics
-║🔎 ${Konf.MuveOn}github
-║🔎 ${Konf.MuveOn}pinterest
-║🔎 ${Konf.MuveOn}weather
-║🔎 ${Konf.MuveOn}google 
-║🔎 ${Konf.MuveOn}wikipedia
-║🔎 ${Konf.MuveOn}ud
-║🔎 ${Konf.MuveOn}tenor
-║🔎 ${Konf.MuveOn}gif
-║🔎 ${Konf.MuveOn}wallpaper
+║🔎 ${ʟᴀʏᴏᴜᴛ.MuveOn}ytsearch
+║🔎 ${ʟᴀʏᴏᴜᴛ.MuveOn}lyrics
+║🔎 ${ʟᴀʏᴏᴜᴛ.MuveOn}github
+║🔎 ${ʟᴀʏᴏᴜᴛ.MuveOn}pinterest
+║🔎 ${ʟᴀʏᴏᴜᴛ.MuveOn}weather
+║🔎 ${ʟᴀʏᴏᴜᴛ.MuveOn}google 
+║🔎 ${ʟᴀʏᴏᴜᴛ.MuveOn}wikipedia
+║🔎 ${ʟᴀʏᴏᴜᴛ.MuveOn}ud
+║🔎 ${ʟᴀʏᴏᴜᴛ.MuveOn}tenor
+║🔎 ${ʟᴀʏᴏᴜᴛ.MuveOn}gif
+║🔎 ${ʟᴀʏᴏᴜᴛ.MuveOn}wallpaper
 ╚════════════╝
 
 ╔◇👇🏽𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫𝐬👇🏽
 ║  
-║📥 ${Konf.MuveOn}play: (80mb max)
-║📥 ${Konf.MuveOn}watch: (50mb max)
-║📥 ${Konf.MuveOn}soundcloud
-║📥 ${Konf.MuveOn}spotify
-║📥 ${Konf.MuveOn}gifdl
-║📥 ${Konf.MuveOn}imagedl
-║📥 ${Konf.MuveOn}videodl
+║📥 ${ʟᴀʏᴏᴜᴛ.MuveOn}play: (80mb max)
+║📥 ${ʟᴀʏᴏᴜᴛ.MuveOn}watch: (50mb max)
+║📥 ${ʟᴀʏᴏᴜᴛ.MuveOn}soundcloud
+║📥 ${ʟᴀʏᴏᴜᴛ.MuveOn}spotify
+║📥 ${ʟᴀʏᴏᴜᴛ.MuveOn}gifdl
+║📥 ${ʟᴀʏᴏᴜᴛ.MuveOn}imagedl
+║📥 ${ʟᴀʏᴏᴜᴛ.MuveOn}videodl
 ╚════════════╝
 
 ╔◇👇🏽𝐅𝐅𝐦𝐩𝐞𝐠👇🏽
 ║  
-║🗂️ ${Konf.MuveOn}tomp3
-║🗂️ ${Konf.MuveOn}img2url
-║🗂️ ${Konf.MuveOn}ocr
-║🗂️ ${Konf.MuveOn}sticker
-║🗂️ ${Konf.MuveOn}carbon
-║🗂️ ${Konf.MuveOn}tinyurl
+║🗂️ ${ʟᴀʏᴏᴜᴛ.MuveOn}tomp3
+║🗂️ ${ʟᴀʏᴏᴜᴛ.MuveOn}img2url
+║🗂️ ${ʟᴀʏᴏᴜᴛ.MuveOn}ocr
+║🗂️ ${ʟᴀʏᴏᴜᴛ.MuveOn}sticker
+║🗂️ ${ʟᴀʏᴏᴜᴛ.MuveOn}carbon
+║🗂️ ${ʟᴀʏᴏᴜᴛ.MuveOn}tinyurl
 ╚════════════╝
 
 ╔◇👇🏽𝐘𝐨𝐮𝐓𝐮𝐛𝐞+𝐅𝐢𝐥𝐭𝐞𝐫👇🏽
 ║  
-║⭕ ${Konf.MuveOn}yt8d
-║⭕ ${Konf.MuveOn}ytbassboost
-║⭕ ${Konf.MuveOn}ytecho
-║⭕ ${Konf.MuveOn}ytflanger
-║⭕ ${Konf.MuveOn}ytnightcore
-║⭕ ${Konf.MuveOn}ytphaser
-║⭕ ${Konf.MuveOn}ytreverse
-║⭕ ${Konf.MuveOn}ytslow
-║⭕ ${Konf.MuveOn}ytspeed
-║⭕ ${Konf.MuveOn}ytsubboost
-║⭕ ${Konf.MuveOn}ytsuperslow
-║⭕ ${Konf.MuveOn}ytsuperspeed
-║⭕ ${Konf.MuveOn}ytsurround
-║⭕ ${Konf.MuveOn}ytvaporwave
-║⭕ ${Konf.MuveOn}ytvibrato
+║⭕ ${ʟᴀʏᴏᴜᴛ.MuveOn}yt8d
+║⭕ ${ʟᴀʏᴏᴜᴛ.MuveOn}ytbassboost
+║⭕ ${ʟᴀʏᴏᴜᴛ.MuveOn}ytecho
+║⭕ ${ʟᴀʏᴏᴜᴛ.MuveOn}ytflanger
+║⭕ ${ʟᴀʏᴏᴜᴛ.MuveOn}ytnightcore
+║⭕ ${ʟᴀʏᴏᴜᴛ.MuveOn}ytphaser
+║⭕ ${ʟᴀʏᴏᴜᴛ.MuveOn}ytreverse
+║⭕ ${ʟᴀʏᴏᴜᴛ.MuveOn}ytslow
+║⭕ ${ʟᴀʏᴏᴜᴛ.MuveOn}ytspeed
+║⭕ ${ʟᴀʏᴏᴜᴛ.MuveOn}ytsubboost
+║⭕ ${ʟᴀʏᴏᴜᴛ.MuveOn}ytsuperslow
+║⭕ ${ʟᴀʏᴏᴜᴛ.MuveOn}ytsuperspeed
+║⭕ ${ʟᴀʏᴏᴜᴛ.MuveOn}ytsurround
+║⭕ ${ʟᴀʏᴏᴜᴛ.MuveOn}ytvaporwave
+║⭕ ${ʟᴀʏᴏᴜᴛ.MuveOn}ytvibrato
 ╚════════════╝
 
 ╔◇👇🏽𝐅𝐢𝐥𝐭𝐞𝐫𝐬/𝐀𝐮𝐝𝐢𝐨👇🏽
 ║  
-║🍰 ${Konf.MuveOn}8d
-║🍰 ${Konf.MuveOn}bassboost
-║🍰 ${Konf.MuveOn}echo
-║🍰 ${Konf.MuveOn}fast
-║🍰 ${Konf.MuveOn}flanger
-║🍰 ${Konf.MuveOn}nightcore
-║🍰 ${Konf.MuveOn}phaser
-║🍰 ${Konf.MuveOn}reverse
-║🍰 ${Konf.MuveOn}slow
-║🍰 ${Konf.MuveOn}speed
-║🍰 ${Konf.MuveOn}subboost
-║🍰 ${Konf.MuveOn}superslow
-║🍰 ${Konf.MuveOn}superspeed
-║🍰 ${Konf.MuveOn}surround
-║🍰 ${Konf.MuveOn}vaporwave
-║🍰 ${Konf.MuveOn}vibrato
+║🍰 ${ʟᴀʏᴏᴜᴛ.MuveOn}8d
+║🍰 ${ʟᴀʏᴏᴜᴛ.MuveOn}bassboost
+║🍰 ${ʟᴀʏᴏᴜᴛ.MuveOn}echo
+║🍰 ${ʟᴀʏᴏᴜᴛ.MuveOn}fast
+║🍰 ${ʟᴀʏᴏᴜᴛ.MuveOn}flanger
+║🍰 ${ʟᴀʏᴏᴜᴛ.MuveOn}nightcore
+║🍰 ${ʟᴀʏᴏᴜᴛ.MuveOn}phaser
+║🍰 ${ʟᴀʏᴏᴜᴛ.MuveOn}reverse
+║🍰 ${ʟᴀʏᴏᴜᴛ.MuveOn}slow
+║🍰 ${ʟᴀʏᴏᴜᴛ.MuveOn}speed
+║🍰 ${ʟᴀʏᴏᴜᴛ.MuveOn}subboost
+║🍰 ${ʟᴀʏᴏᴜᴛ.MuveOn}superslow
+║🍰 ${ʟᴀʏᴏᴜᴛ.MuveOn}superspeed
+║🍰 ${ʟᴀʏᴏᴜᴛ.MuveOn}surround
+║🍰 ${ʟᴀʏᴏᴜᴛ.MuveOn}vaporwave
+║🍰 ${ʟᴀʏᴏᴜᴛ.MuveOn}vibrato
 ╚════════════╝
 
 ╔◇👇🏽𝐎𝐰𝐧𝐞𝐫👇🏽
 ║  
-║👑 ${Konf.MuveOn}join
-║👑 ${Konf.MuveOn}dyno
-║👑 ${Konf.MuveOn}ban
-║👑 ${Konf.MuveOn}unban
-║👑 ${Konf.MuveOn}broadcast
-║👑 ${Konf.MuveOn}bugreport
-║👑 ${Konf.MuveOn}help
-║👑 ${Konf.MuveOn}reboot
-║👑 ${Konf.MuveOn}broadcast
-║👑 ${Konf.MuveOn}leave
-║👑 ${Konf.MuveOn}spam
+║👑 ${ʟᴀʏᴏᴜᴛ.MuveOn}join
+║👑 ${ʟᴀʏᴏᴜᴛ.MuveOn}dyno
+║👑 ${ʟᴀʏᴏᴜᴛ.MuveOn}ban
+║👑 ${ʟᴀʏᴏᴜᴛ.MuveOn}unban
+║👑 ${ʟᴀʏᴏᴜᴛ.MuveOn}broadcast
+║👑 ${ʟᴀʏᴏᴜᴛ.MuveOn}bugreport
+║👑 ${ʟᴀʏᴏᴜᴛ.MuveOn}help
+║👑 ${ʟᴀʏᴏᴜᴛ.MuveOn}reboot
+║👑 ${ʟᴀʏᴏᴜᴛ.MuveOn}broadcast
+║👑 ${ʟᴀʏᴏᴜᴛ.MuveOn}leave
+║👑 ${ʟᴀʏᴏᴜᴛ.MuveOn}spam
 ╚════════════╝
 
 ╔◇👇🏽𝐀𝐧𝐢𝐦𝐞👇🏽
 ║  
-║🍙 ${Konf.MuveOn}anime
-║🍙 ${Konf.MuveOn}ranimewall
-║🍙 ${Konf.MuveOn}smile
-║🍙 ${Konf.MuveOn}yes
-║🍙 ${Konf.MuveOn}bite
-║🍙 ${Konf.MuveOn}blush
-║🍙 ${Konf.MuveOn}bored
-║🍙 ${Konf.MuveOn}confused
-║🍙 ${Konf.MuveOn}cry
-║🍙 ${Konf.MuveOn}goodnight
-║🍙 ${Konf.MuveOn}happy
-║🍙 ${Konf.MuveOn}hi5
-║🍙 ${Konf.MuveOn}poke
-║🍙 ${Konf.MuveOn}sad
-║🍙 ${Konf.MuveOn}thinking
-║🍙 ${Konf.MuveOn}cuddle
-║🍙 ${Konf.MuveOn}hug
-║🍙 ${Konf.MuveOn}pat
-║🍙 ${Konf.MuveOn}slap
-║🍙 ${Konf.MuveOn}wink
-║🍙 ${Konf.MuveOn}angry
-║🍙 ${Konf.MuveOn}baka
-║🍙 ${Konf.MuveOn}bonk
-║🍙 ${Konf.MuveOn}bully
-║🍙 ${Konf.MuveOn}bye
-║🍙 ${Konf.MuveOn}chase
-║🍙 ${Konf.MuveOn}cheer
-║🍙 ${Konf.MuveOn}cringe
-║🍙 ${Konf.MuveOn}dab
-║🍙 ${Konf.MuveOn}dance
-║🍙 ${Konf.MuveOn}die
-║🍙 ${Konf.MuveOn}facepalm
-║🍙 ${Konf.MuveOn}feed
-║🍙 ${Konf.MuveOn}glomp
-║🍙 ${Konf.MuveOn}hold
-║🍙 ${Konf.MuveOn}hate
-║🍙 ${Konf.MuveOn}hi
-║🍙 ${Konf.MuveOn}kill
-║🍙 ${Konf.MuveOn}lick
-║🍙 ${Konf.MuveOn}love
-║🍙 ${Konf.MuveOn}lurk
-║🍙 ${Konf.MuveOn}nervous
-║🍙 ${Konf.MuveOn}nope
-║🍙 ${Konf.MuveOn}nom
-║🍙 ${Konf.MuveOn}nuzzle
-║🍙 ${Konf.MuveOn}panic
-║🍙 ${Konf.MuveOn}peck
-║🍙 ${Konf.MuveOn}pout
-║🍙 ${Konf.MuveOn}run
-║🍙 ${Konf.MuveOn}sip
-║🍙 ${Konf.MuveOn}shoot
-║🍙 ${Konf.MuveOn}shrug
-║🍙 ${Konf.MuveOn}sleep
-║🍙 ${Konf.MuveOn}smug
-║🍙 ${Konf.MuveOn}stab
-║🍙 ${Konf.MuveOn}stare
-║🍙 ${Konf.MuveOn}tease
-║🍙 ${Konf.MuveOn}tickle
-║🍙 ${Konf.MuveOn}thumbsup
-║🍙 ${Konf.MuveOn}wag
+║🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}anime
+║🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}ranimewall
+║🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}smile
+║🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}yes
+║🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}bite
+║🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}blush
+║🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}bored
+║🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}confused
+║🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}cry
+║🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}goodnight
+║🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}happy
+║🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}hi5
+║🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}poke
+║🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}sad
+║🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}thinking
+║🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}cuddle
+║🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}hug
+║🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}pat
+║🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}slap
+║🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}wink
+║🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}angry
+║🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}baka
+║🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}bonk
+║🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}bully
+║🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}bye
+║🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}chase
+║🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}cheer
+║🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}cringe
+║🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}dab
+║🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}dance
+║🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}die
+║🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}facepalm
+║🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}feed
+║🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}glomp
+║🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}hold
+║🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}hate
+║🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}hi
+║🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}kill
+║🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}lick
+║🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}love
+║🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}lurk
+║🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}nervous
+║🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}nope
+║🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}nom
+║🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}nuzzle
+║🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}panic
+║🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}peck
+║🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}pout
+║🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}run
+║🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}sip
+║🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}shoot
+║🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}shrug
+║🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}sleep
+║🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}smug
+║🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}stab
+║🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}stare
+║🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}tease
+║🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}tickle
+║🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}thumbsup
+║🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}wag
 ╚════════════╝
 
 ╔◇👇🏽𝐆𝐫𝐨𝐮𝐩𝐬/𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧👇🏽
 ║  
-║🔰 ${Konf.MuveOn}antilink
-║🔰 ${Konf.MuveOn}autorank
-║🔰 ${Konf.MuveOn}setwelcome
-║🔰 ${Konf.MuveOn}delete
-║🔰 ${Konf.MuveOn}promote
-║🔰 ${Konf.MuveOn}demote
-║🔰 ${Konf.MuveOn}warn
-║🔰 ${Konf.MuveOn}unwarn
-║🔰 ${Konf.MuveOn}invite
-║🔰 ${Konf.MuveOn}lock
-║🔰 ${Konf.MuveOn}unlock
-║🔰 ${Konf.MuveOn}admins
-║🔰 ${Konf.MuveOn}groupdp
-║🔰 ${Konf.MuveOn}kick
-║🔰 ${Konf.MuveOn}getdesc
-║🔰 ${Konf.MuveOn}getdp
-║🔰 ${Konf.MuveOn}tagall
+║🔰 ${ʟᴀʏᴏᴜᴛ.MuveOn}antilink
+║🔰 ${ʟᴀʏᴏᴜᴛ.MuveOn}autorank
+║🔰 ${ʟᴀʏᴏᴜᴛ.MuveOn}setwelcome
+║🔰 ${ʟᴀʏᴏᴜᴛ.MuveOn}delete
+║🔰 ${ʟᴀʏᴏᴜᴛ.MuveOn}promote
+║🔰 ${ʟᴀʏᴏᴜᴛ.MuveOn}demote
+║🔰 ${ʟᴀʏᴏᴜᴛ.MuveOn}warn
+║🔰 ${ʟᴀʏᴏᴜᴛ.MuveOn}unwarn
+║🔰 ${ʟᴀʏᴏᴜᴛ.MuveOn}invite
+║🔰 ${ʟᴀʏᴏᴜᴛ.MuveOn}lock
+║🔰 ${ʟᴀʏᴏᴜᴛ.MuveOn}unlock
+║🔰 ${ʟᴀʏᴏᴜᴛ.MuveOn}admins
+║🔰 ${ʟᴀʏᴏᴜᴛ.MuveOn}groupdp
+║🔰 ${ʟᴀʏᴏᴜᴛ.MuveOn}kick
+║🔰 ${ʟᴀʏᴏᴜᴛ.MuveOn}getdesc
+║🔰 ${ʟᴀʏᴏᴜᴛ.MuveOn}getdp
+║🔰 ${ʟᴀʏᴏᴜᴛ.MuveOn}tagall
 ╚════════════╝
 
 ╔◇👇🏽𝐑𝐚𝐧𝐝𝐨𝐦𝐬👇🏽
 ║  
-║🦄 ${Konf.MuveOn}rank
-║🦄 ${Konf.MuveOn}leaderboard
-║🦄 ${Konf.MuveOn}fact
-║🦄 ${Konf.MuveOn}trivia
-║🦄 ${Konf.MuveOn}joke
-║🦄 ${Konf.MuveOn}meme
-║🦄 ${Konf.MuveOn}tr
-║🦄 ${Konf.MuveOn}tts
-║🦄 ${Konf.MuveOn}pokedex
-║🦄 ${Konf.MuveOn}triggered
+║🦄 ${ʟᴀʏᴏᴜᴛ.MuveOn}rank
+║🦄 ${ʟᴀʏᴏᴜᴛ.MuveOn}leaderboard
+║🦄 ${ʟᴀʏᴏᴜᴛ.MuveOn}fact
+║🦄 ${ʟᴀʏᴏᴜᴛ.MuveOn}trivia
+║🦄 ${ʟᴀʏᴏᴜᴛ.MuveOn}joke
+║🦄 ${ʟᴀʏᴏᴜᴛ.MuveOn}meme
+║🦄 ${ʟᴀʏᴏᴜᴛ.MuveOn}tr
+║🦄 ${ʟᴀʏᴏᴜᴛ.MuveOn}tts
+║🦄 ${ʟᴀʏᴏᴜᴛ.MuveOn}pokedex
+║🦄 ${ʟᴀʏᴏᴜᴛ.MuveOn}triggered
 ╚════════════╝
 
 ╔◇👇🏽𝗠𝗲𝗺𝗯𝗲𝗿 𝗦𝘁𝗼𝗿𝗲👇🏽
 ║  
-║🛍️ ${Konf.MuveOn}buy basic 
-║🛍️ ${Konf.MuveOn}buy bronze 
-║🛍️ ${Konf.MuveOn}buy silver 
-║🛍️ ${Konf.MuveOn}buy gold 
-║🛍️ ${Konf.MuveOn}buy platinum 
-║🛍️ ${Konf.MuveOn}buy diamond
-║🛍️ ${Konf.MuveOn}buy sword
-║🛍️ ${Konf.MuveOn}buy laptop
-║🛍️ ${Konf.MuveOn}buy charm
+║🛍️ ${ʟᴀʏᴏᴜᴛ.MuveOn}buy basic 
+║🛍️ ${ʟᴀʏᴏᴜᴛ.MuveOn}buy bronze 
+║🛍️ ${ʟᴀʏᴏᴜᴛ.MuveOn}buy silver 
+║🛍️ ${ʟᴀʏᴏᴜᴛ.MuveOn}buy gold 
+║🛍️ ${ʟᴀʏᴏᴜᴛ.MuveOn}buy platinum 
+║🛍️ ${ʟᴀʏᴏᴜᴛ.MuveOn}buy diamond
+║🛍️ ${ʟᴀʏᴏᴜᴛ.MuveOn}buy sword
+║🛍️ ${ʟᴀʏᴏᴜᴛ.MuveOn}buy laptop
+║🛍️ ${ʟᴀʏᴏᴜᴛ.MuveOn}buy charm
 ╚════════════╝
 
 ╔◇👇🏽𝐂𝐡𝐞𝐜𝐤👇🏽
 ║  
-║🎨 ${Konf.MuveOn}gaycheck
-║🎨 ${Konf.MuveOn}lesbocheck
-║🎨 ${Konf.MuveOn}beautycheck
-║🎨 ${Konf.MuveOn}dumbcheck
-║🎨 ${Konf.MuveOn}gay
-║🎨 ${Konf.MuveOn}lesbo
-║🎨 ${Konf.MuveOn}beauty
-║🎨 ${Konf.MuveOn}dumb
+║🎨 ${ʟᴀʏᴏᴜᴛ.MuveOn}gaycheck
+║🎨 ${ʟᴀʏᴏᴜᴛ.MuveOn}lesbocheck
+║🎨 ${ʟᴀʏᴏᴜᴛ.MuveOn}beautycheck
+║🎨 ${ʟᴀʏᴏᴜᴛ.MuveOn}dumbcheck
+║🎨 ${ʟᴀʏᴏᴜᴛ.MuveOn}gay
+║🎨 ${ʟᴀʏᴏᴜᴛ.MuveOn}lesbo
+║🎨 ${ʟᴀʏᴏᴜᴛ.MuveOn}beauty
+║🎨 ${ʟᴀʏᴏᴜᴛ.MuveOn}dumb
 ╚════════════╝
 
 ╔◇👇🏽𝐇𝐮𝐦𝐚𝐧+𝐍𝐒𝐅𝐖👇🏽
 ║  
-║🥃 ${Konf.MuveOn}4k
-║🥃 ${Konf.MuveOn}blowjob
-║🥃 ${Konf.MuveOn}milf
-║🥃 ${Konf.MuveOn}milk
-║🥃 ${Konf.MuveOn}pussy
-║🥃 ${Konf.MuveOn}slut
-║🥃 ${Konf.MuveOn}tikporn
+║🥃 ${ʟᴀʏᴏᴜᴛ.MuveOn}4k
+║🥃 ${ʟᴀʏᴏᴜᴛ.MuveOn}blowjob
+║🥃 ${ʟᴀʏᴏᴜᴛ.MuveOn}milf
+║🥃 ${ʟᴀʏᴏᴜᴛ.MuveOn}milk
+║🥃 ${ʟᴀʏᴏᴜᴛ.MuveOn}pussy
+║🥃 ${ʟᴀʏᴏᴜᴛ.MuveOn}slut
+║🥃 ${ʟᴀʏᴏᴜᴛ.MuveOn}tikporn
 ╚════════════╝
 
 ╔◇👇🏽𝐇𝐞𝐧𝐭𝐚𝐢+𝐍𝐒𝐅𝐖👇🏽  
 ║
-║🍑 ${Konf.MuveOn}ass
-║🍑 ${Konf.MuveOn}bdsm
-║🍑 ${Konf.MuveOn}cum  
-║🍑 ${Konf.MuveOn}doujin
-║🍑 ${Konf.MuveOn}feet  
-║🍑 ${Konf.MuveOn}femdom  
-║🍑 ${Konf.MuveOn}foxgirl  
-║🍑 ${Konf.MuveOn}glasses  
-║🍑 ${Konf.MuveOn}hentai
-║🍑 ${Konf.MuveOn}maid 
-║🍑 ${Konf.MuveOn}masturbation
-║🍑 ${Konf.MuveOn}netorare  
-║🍑 ${Konf.MuveOn}orgy
-║🍑 ${Konf.MuveOn}panties
-║🍑 ${Konf.MuveOn}pussy
-║🍑 ${Konf.MuveOn}school
-║🍑 ${Konf.MuveOn}tentacles
-║🍑 ${Konf.MuveOn}thighs
-║🍑 ${Konf.MuveOn}uniform
-║🍑 ${Konf.MuveOn}yuri
+║🍑 ${ʟᴀʏᴏᴜᴛ.MuveOn}ass
+║🍑 ${ʟᴀʏᴏᴜᴛ.MuveOn}bdsm
+║🍑 ${ʟᴀʏᴏᴜᴛ.MuveOn}cum  
+║🍑 ${ʟᴀʏᴏᴜᴛ.MuveOn}doujin
+║🍑 ${ʟᴀʏᴏᴜᴛ.MuveOn}feet  
+║🍑 ${ʟᴀʏᴏᴜᴛ.MuveOn}femdom  
+║🍑 ${ʟᴀʏᴏᴜᴛ.MuveOn}foxgirl  
+║🍑 ${ʟᴀʏᴏᴜᴛ.MuveOn}glasses  
+║🍑 ${ʟᴀʏᴏᴜᴛ.MuveOn}hentai
+║🍑 ${ʟᴀʏᴏᴜᴛ.MuveOn}maid 
+║🍑 ${ʟᴀʏᴏᴜᴛ.MuveOn}masturbation
+║🍑 ${ʟᴀʏᴏᴜᴛ.MuveOn}netorare  
+║🍑 ${ʟᴀʏᴏᴜᴛ.MuveOn}orgy
+║🍑 ${ʟᴀʏᴏᴜᴛ.MuveOn}panties
+║🍑 ${ʟᴀʏᴏᴜᴛ.MuveOn}pussy
+║🍑 ${ʟᴀʏᴏᴜᴛ.MuveOn}school
+║🍑 ${ʟᴀʏᴏᴜᴛ.MuveOn}tentacles
+║🍑 ${ʟᴀʏᴏᴜᴛ.MuveOn}thighs
+║🍑 ${ʟᴀʏᴏᴜᴛ.MuveOn}uniform
+║🍑 ${ʟᴀʏᴏᴜᴛ.MuveOn}yuri
 ╚════════════╝`,
 footer: "`⦓ 𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ⦔",
 buttons: [
 {
-buttonId: `${Konf.MuveOn}help`,
-buttonText: { displayText: `${Konf.MuveOn}help` },
+buttonId: `${ʟᴀʏᴏᴜᴛ.MuveOn}help`,
+buttonText: { displayText: `${ʟᴀʏᴏᴜᴛ.MuveOn}help` },
 type: 1,
 },
 {
-buttonId: `${Konf.MuveOn}menu`,
-buttonText: { displayText: `${Konf.MuveOn}menu` },
+buttonId: `${ʟᴀʏᴏᴜᴛ.MuveOn}menu`,
+buttonText: { displayText: `${ʟᴀʏᴏᴜᴛ.MuveOn}menu` },
 type: 1,
 },
 ],

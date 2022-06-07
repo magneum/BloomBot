@@ -7,7 +7,7 @@ import { MessageType } from "../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞⚜️𝐊�
 import { proto } from "@adiwajshing/baileys";
 import Client from "../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/client";
 import νℓкуяιє from "../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/msb";
-import Konf from "../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞🀄𝐕𝐞𝐧𝐭/ʟᴀʏᴏᴜᴛ";
+import ʟᴀʏᴏᴜᴛ from "../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞🀄𝐕𝐞𝐧𝐭/ʟᴀʏᴏᴜᴛ";
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 import * as fs from 'fs';
 import path from 'path';
@@ -38,26 +38,26 @@ caption: `╔◇✥𝐔𝐬𝐞𝐫: ${chat.pushName}
 ╚◇════════════◇꧂
 
 ╔════⧉🐙 𝐊𝐢𝐧𝐠/𝐎𝐰𝐧𝐞𝐫
-║• *${Konf.MuveOn}join:*  _join any valid group_
-║• *${Konf.MuveOn}dyno:*  _check heroku usage_
-║• *${Konf.MuveOn}ban:*  _ban bot in group/user_
-║• *${Konf.MuveOn}unban:*  _unban bot in group/user_
-║• *${Konf.MuveOn}reboot:*  _reboot sakura server_
-║• *${Konf.MuveOn}bugreport:*  _ꜱᴇɴᴅ bug report to devs._
-║• *${Konf.MuveOn}leave:*  _leave groups with/without sending text._
-║• *${Konf.MuveOn}spam:*  _spam messsage in group/private_
-║• *${Konf.MuveOn}help:*  _basic help command_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}join:*  _join any valid group_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}dyno:*  _check heroku usage_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}ban:*  _ban bot in group/user_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}unban:*  _unban bot in group/user_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}reboot:*  _reboot sakura server_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}bugreport:*  _ꜱᴇɴᴅ bug report to devs._
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}leave:*  _leave groups with/without sending text._
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}spam:*  _spam messsage in group/private_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}help:*  _basic help command_
 ╚════════════╝`,
 footer: "`⦓ 𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ⦔",
 buttons: [
 {
-buttonId: `${Konf.MuveOn}help`,
-buttonText: { displayText: `${Konf.MuveOn}help` },
+buttonId: `${ʟᴀʏᴏᴜᴛ.MuveOn}help`,
+buttonText: { displayText: `${ʟᴀʏᴏᴜᴛ.MuveOn}help` },
 type: 1,
 },
 {
-buttonId: `${Konf.MuveOn}menu`,
-buttonText: { displayText: `${Konf.MuveOn}menu` },
+buttonId: `${ʟᴀʏᴏᴜᴛ.MuveOn}menu`,
+buttonText: { displayText: `${ʟᴀʏᴏᴜᴛ.MuveOn}menu` },
 type: 1,
 },
 ],
