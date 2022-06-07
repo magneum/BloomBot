@@ -4,7 +4,7 @@
 */
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 import { MessageType } from "../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/message-type";
-import Konf from "../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞🀄𝐕𝐞𝐧𝐭/ʟᴀʏᴏᴜᴛ";
+import ʟᴀʏᴏᴜᴛ from "../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞🀄𝐕𝐞𝐧𝐭/ʟᴀʏᴏᴜᴛ";
 const Video_Button = async (
 client,
 chat,
@@ -40,13 +40,13 @@ ${caption}`,
 footer: `⦓ 𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ${Personality} ⦔`,
 buttons: [
 {
-buttonId: `${Konf.MuveOn}help`,
-buttonText: { displayText: `${Konf.MuveOn}help` },
+buttonId: `${ʟᴀʏᴏᴜᴛ.MuveOn}help`,
+buttonText: { displayText: `${ʟᴀʏᴏᴜᴛ.MuveOn}help` },
 type: 1,
 },
 {
-buttonId: `${Konf.MuveOn}menu`,
-buttonText: { displayText: `${Konf.MuveOn}menu` },
+buttonId: `${ʟᴀʏᴏᴜᴛ.MuveOn}menu`,
+buttonText: { displayText: `${ʟᴀʏᴏᴜᴛ.MuveOn}menu` },
 type: 1,
 },
 ],
