@@ -34,7 +34,7 @@ return undefined;
 } else {
 jidNumber = args[0];
 }
-("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
+
 if (jidNumber.length < 8 || jidNumber.length > 13) {
 client.sendMessage(
 νℓкуяιє.chatId,
@@ -50,17 +50,15 @@ var isOnWhatsApp = await client.ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.onWhatsApp(
 if (isOnWhatsApp === undefined) {
 throw "NumberInvalid";
 }
-
-// isOnWhatsApp is not working
 return jidNumber;
 };
-
+("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 const deleteFiles = async (...locations: PathLike[]) => {
 for (let location of locations) {
 fs.unlink(location, (err) => {
 if (err) console.log(err);
 else {
-// console.log("\nDeleted file at: " + location);
+console.log("\nDeleted file at: " + location);
 }
 });
 }
