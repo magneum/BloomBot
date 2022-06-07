@@ -7,11 +7,15 @@ const Image_Button = require(`../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞☘️𝐊�
 const Video_Button = require(`../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞☘️𝐊𝐞𝐲𝐬/Video_Button`);
 const Text_List = require(`../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞☘️𝐊𝐞𝐲𝐬/Text_List`);
 import { MessageType } from "../../𝐊𝐫𝐲𝐨⚜️𝐓𝐞𝐤/message-type";
+const Oops = require(`../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞☘️𝐊𝐞𝐲𝐬/Oops`);
+import Konf from "../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞🀄𝐕𝐞𝐧𝐭/config";
+const VOID = require(`../../𝐊𝐫𝐲𝐨⚜️𝐓𝐞𝐤/void`);
 import { proto } from "@adiwajshing/baileys";
 import Client from "../../𝐊𝐫𝐲𝐨⚜️𝐓𝐞𝐤/client";
 import νℓкуяιє from "../../𝐊𝐫𝐲𝐨⚜️𝐓𝐞𝐤/msb";
+import ffmpeg from "fluent-ffmpeg";
 const yts = require("yt-search");
-import Konf from "../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞🀄𝐕𝐞𝐧𝐭/config";
+import ytdl from "ytdl-core";
 const ytIdRegex =
 /(?:http(?:s|):\/\/|)(?:(?:www\.|)youtube(?:\-nocookie|)\.com\/(?:watch\?.*(?:|\&)v=|embed\/|v\/)|youtu\.be\/)([-_0-9A-Za-z]{11})/;
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
@@ -114,19 +118,76 @@ return;
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 const Videos = LinkFound.videos.slice(0, 1);
 Videos.forEach(async function (Found) {
+if (Found.seconds > 1800) {
 Image_Button.VImg(
 client,
 chat,
 νℓкуяιє,
-`💡𝐈𝐧𝐟𝐨: In order to use this command:
+`❌𝗘𝗿𝗿𝗼𝗿: _Choose Smaller Audio less then 30mins!_
 
 ⭕️𝐘𝐨𝐮𝐓𝐮𝐛𝐞 𝐀𝐈: ${Found.title}
-- Join _chat.whatsapp.com/JqLMtFMmuxv3WSdwkWQf6o_
-- Directly Send YouTube Link.
-- Wait For Music to Play.`,
+🍻𝐓𝐢𝐭𝐥𝐞: ${Found.title}
+⏰𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧: ${Found.timestamp}`,
 Found.thumbnail
 );
-return;
+}
+("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
+// Image_Button.VImg(
+// client,
+// chat,
+// νℓкуяιє,
+// `💡𝐈𝐧𝐟𝐨: In order to use this command:
+// ⭕️𝐘𝐨𝐮𝐓𝐮𝐛𝐞 𝐀𝐈: ${Found.title}
+// - Join _chat.whatsapp.com/JqLMtFMmuxv3WSdwkWQf6o_
+// - Directly Send YouTube Link.
+// - Wait For Music to Play.`,
+// Found.thumbnail
+// );
+// return;
+var stream = ytdl(Found.videoId, {
+quality: "highest",
+});
+ffmpeg(stream)
+.audioBitrate(320)
+.toFormat("ipod")
+.saveToFile(`./${chat.key.id}.mp3`)
+.on("end", async () => {
+await client
+.sendMessage(
+νℓкуяιє.chatId,
+{
+quoted: chat.message,
+contextInfo: {
+mentionedJid: [νℓкуяιє.sender],
+},
+timestamp: Date(),
+video: fs.readFileSync(`./${chat.key.id}.mp3`),
+mimetype: "video/mp4",
+caption: `✥𝐔𝐬𝐞𝐫: ${chat.pushName}
+
+⭕️𝐘𝐨𝐮𝐓𝐮𝐛𝐞 𝐀𝐈
+🍻𝗧𝗶𝘁𝗹𝗲: ${Found.title}
+🙈𝗩𝗶𝗲𝘄𝘀: ${Found.views}
+⏰𝗗𝘂𝗿𝗮𝘁𝗶𝗼𝗻: ${Found.timestamp}
+✒️𝗔𝘂𝘁𝗵𝗼𝗿: ${Found.author.name}
+📅𝗥𝗲𝗹𝗲𝗮𝘀𝗲𝗱: ${Found.ago}
+🔗𝐋𝐢𝐧𝐤: ${Found.url}
+📜𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${Found.description}`,
+footer: `⦓ 𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ⦔`,
+buttons: [
+{
+buttonId: `${Konf.MuveOn}help`,
+buttonText: { displayText: `${Konf.MuveOn}help` },
+type: 1,
+},
+],
+headerType: 5,
+},
+MessageType.buttonsMessage
+)
+.then(VOID.VOID(`./${chat.key.id}.mp3`))
+.catch((error) => Oops.VOp(client, chat, νℓкуяιє, error));
+});
 });
 },
 };
