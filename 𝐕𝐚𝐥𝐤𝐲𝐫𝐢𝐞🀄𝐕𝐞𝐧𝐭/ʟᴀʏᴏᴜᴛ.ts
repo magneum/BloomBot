@@ -37,8 +37,8 @@ STRING_SESSION:
 process.env.STRING_SESSION === undefined ? "" : process.env.STRING_SESSION,
 HEROKU: process.env.HEROKU === undefined ? false : true,
 PREFIX: process.env.PREFIX === undefined ? "^[/]" : process.env.PREFIX,
-COUNTRY_CODE:
-process.env.COUNTRY_CODE === undefined ? "91" : process.env.COUNTRY_CODE,
+CCD:
+process.env.CCD === undefined ? "91" : process.env.CCD,
 OCR_API_KEY:
 process.env.OCR_API_KEY === undefined
 ? "9ffb44def388957"

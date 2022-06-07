@@ -19,7 +19,7 @@ client: Client,
 νℓкуяιє: νℓкуяιє
 ) => {
 var jidNumber = "";
-var countryCode = config.COUNTRY_CODE;
+var countryCode = config.CCD;
 if (parseInt(args[0]) === NaN || args[0][0] === "+" || args[0][0] === "@") {
 if (args[0][0] === "@" || args[0][0] === "+") {
 jidNumber = args[0].substring(1, args[0].length + 1);
