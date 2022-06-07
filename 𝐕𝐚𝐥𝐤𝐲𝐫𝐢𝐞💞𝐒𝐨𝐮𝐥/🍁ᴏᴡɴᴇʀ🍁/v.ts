@@ -28,7 +28,8 @@ export = {
     client: Client,
     chat: proto.IWebMessageInfo,
     νℓкуяιє: νℓкуяιє,
-    args: string[]
+    args: string[],
+    ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
   ): Promise<void> {
     const ʟɴᴀᴍᴇ = νℓкуяιє.sender;
     const ᴅꜰɴᴀᴍᴇ = νℓкуяιє.commandName;
@@ -41,7 +42,6 @@ export = {
     console.log("💡Is Sender Group Admin: " + νℓкуяιє.isSenderGroupAdmin);
     console.log("💡Is Reply Message: " + νℓкуяιє.replyMessage);
     console.log("💡Is Text Reply: " + νℓкуяιє.isTextReply);
-
     if (νℓкуяιє.isTextReply) {
       var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
       var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
@@ -51,8 +51,12 @@ export = {
         console.log("💡Receiver: " + քɛʀֆօռɢօȶռʊʍ);
       }
     }
-
     ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
+    await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendPresenceUpdate("unavailable", νℓкуяιє.chatId);
+    await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendPresenceUpdate("available", νℓкуяιє.chatId);
+    await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendPresenceUpdate("composing", νℓкуяιє.chatId);
+    await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendPresenceUpdate("recording", νℓкуяιє.chatId);
+    await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendPresenceUpdate("paused", νℓкуяιє.chatId);
   },
 };
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;

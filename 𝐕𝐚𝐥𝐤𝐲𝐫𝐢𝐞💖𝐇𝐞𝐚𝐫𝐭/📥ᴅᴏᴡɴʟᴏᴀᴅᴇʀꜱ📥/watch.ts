@@ -29,7 +29,8 @@ async handle(
 client: Client,
 chat: proto.IWebMessageInfo,
 νℓкуяιє: νℓкуяιє,
-args: string[]
+args: string[],
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 ): Promise<void> {
 try {
 const ʟɴᴀᴍᴇ = νℓкуяιє.sender;
@@ -149,6 +150,7 @@ ffmpeg(stream)
 .toFormat("mp4")
 .saveToFile(`./${chat.key.id}.mp4`)
 .on("end", async () => {
+await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendPresenceUpdate("composing", νℓкуяιє.chatId);
 await client
 .sendMessage(
 νℓкуяιє.chatId,
@@ -189,6 +191,8 @@ MessageType.buttonsMessage
 )
 .then(VOID.VOID(`./${chat.key.id}.mp4`))
 .catch((error) => Oops.VOp(client, chat, νℓкуяιє, error));
+await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendPresenceUpdate("available", νℓкуяιє.chatId);
+return;
 });
 });
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
