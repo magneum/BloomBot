@@ -65,7 +65,7 @@ protocol: "postgres",
 logging: Log(process.env.DEBUG),
 dialectOptions: { ssl: { require: true, rejectUnauthorized: false } },
 }),
-SUDO: process.env.SUDO === undefined ? "" : process.env.SUDO,
+TUFs: process.env.TUFs === undefined ? "" : process.env.TUFs,
 OFFLINE_RESPONSE:
 process.env.OFFLINE_RESPONSE === undefined
 ? true
