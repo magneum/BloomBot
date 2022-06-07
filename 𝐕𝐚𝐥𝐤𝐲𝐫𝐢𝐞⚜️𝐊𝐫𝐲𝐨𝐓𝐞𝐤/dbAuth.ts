@@ -18,7 +18,7 @@ const KEY_MAP: { [T in keyof SignalDataTypeMap]: string } = {
   "app-state-sync-version": "appStateVersions",
   "sender-key-memory": "senderKeyMemory",
 };
-
+("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 const useRemoteFileAuthState = async (logger: Logger) => {
   // require fs here so that in case "fs" is not available -- the app does not crash
   const { readFileSync, writeFileSync, existsSync } = require("fs");
