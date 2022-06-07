@@ -7,7 +7,7 @@ import config from "../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞🀄𝐕𝐞𝐧𝐭/conf
 import chalk from "chalk";
 import νℓкуяιєClass from "./msb";
 import { proto, WASocket } from "@adiwajshing/baileys";
-
+("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 const resolve = async function (
 messageInstance: proto.IWebMessageInfo,
 client: WASocket
@@ -21,6 +21,7 @@ var jsonMessage: string = JSON.stringify(messageInstance);
 } catch (err) {
 console.log(chalk.redBright("[ERROR] Something went wrong. ", err));
 }
+("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 νℓкуяιє.chatId = messageInstance.key.remoteJid;
 νℓкуяιє.fromMe = messageInstance.key.fromMe;
 νℓкуяιє.owner = client.user.id.replace(/:.*@/g, "@");
@@ -122,10 +123,8 @@ messageInstance.message?.extendedTextMessage?.contextInfo?.quotedMessage?.sticke
 νℓкуяιє.isSenderSUDO = SUDOstring.includes(
 νℓкуяιє.sender?.substring(0, νℓкуяιє.sender.indexOf("@"))
 );
-
 return νℓкуяιє;
 };
-
 export = resolve;
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 /* 
