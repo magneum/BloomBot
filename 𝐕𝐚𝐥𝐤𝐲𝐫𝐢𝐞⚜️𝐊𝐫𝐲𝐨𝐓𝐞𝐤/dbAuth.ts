@@ -1,6 +1,5 @@
 import {
   AuthenticationCreds,
-  AuthenticationState,
   BufferJSON,
   initAuthCreds,
   proto,
@@ -20,11 +19,8 @@ const KEY_MAP: { [T in keyof SignalDataTypeMap]: string } = {
 };
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 const useRemoteFileAuthState = async (logger: Logger) => {
-  // require fs here so that in case "fs" is not available -- the app does not crash
-  const { readFileSync, writeFileSync, existsSync } = require("fs");
   let creds: AuthenticationCreds;
   let keys = {};
-
   const checkCreds = async (): Promise<boolean> => {
     const lock = await Cred.findOne({
       where: {
@@ -37,7 +33,7 @@ const useRemoteFileAuthState = async (logger: Logger) => {
       return false;
     }
   };
-
+  ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
   const loadCreds = async () => {
     const allCreds = await Cred.findAll();
     let temp = {};
@@ -50,7 +46,7 @@ const useRemoteFileAuthState = async (logger: Logger) => {
 
     return temp;
   };
-
+  ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
   const loadKeys = async () => {
     let keys = {
       preKeys: {},
@@ -68,10 +64,9 @@ const useRemoteFileAuthState = async (logger: Logger) => {
       val = JSON.parse(val, BufferJSON.reviver);
       keys[type][key] = val;
     });
-
     return keys;
   };
-
+  ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
   const saveCreds = async (
     data?: Partial<AuthenticationCreds>
   ): Promise<void> => {
