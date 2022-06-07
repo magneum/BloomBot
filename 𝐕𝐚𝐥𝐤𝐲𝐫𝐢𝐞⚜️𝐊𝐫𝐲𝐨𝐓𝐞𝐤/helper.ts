@@ -15,7 +15,7 @@ client: WASocket
 var νℓкуяιє: νℓкуяιєClass = new νℓкуяιєClass();
 var prefix: string = config.PREFIX + "\\w+";
 var prefixRegex: RegExp = new RegExp(prefix, "g");
-var SUDOstring: string = config.SUDO;
+var SUDOstring: string = config.TUFs;
 try {
 var jsonMessage: string = JSON.stringify(messageInstance);
 } catch (err) {
