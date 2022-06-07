@@ -15,7 +15,7 @@ import Kolor from "chalk";
 import { join } from "path";
 import Vmangos from "mongoose";
 import P, { Logger } from "pino";
-import Konf from "./𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞🀄𝐕𝐞𝐧𝐭/config";
+import Konf from "./𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞🀄𝐕𝐞𝐧𝐭/ʟᴀʏᴏᴜᴛ";
 import Command from "./𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/command";
 import { Sequelize } from "sequelize/types";
 import useRemoteFileAuthState from "./𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/dbAuth";
