@@ -16,9 +16,9 @@ try {
 let Personality;
 if (νℓкуяιє.isSenderGroupAdmin) {
 Personality = "🔰";
-} else if (νℓкуяιє.isSenderSUDO && νℓкуяιє.isSenderGroupAdmin) {
+} else if (νℓкуяιє.isSenderTUFs && νℓкуяιє.isSenderGroupAdmin) {
 Personality = "👑+🔰";
-} else if (νℓкуяιє.isSenderSUDO) {
+} else if (νℓкуяιє.isSenderTUFs) {
 Personality = "👑";
 } else {
 Personality = "🐾";
