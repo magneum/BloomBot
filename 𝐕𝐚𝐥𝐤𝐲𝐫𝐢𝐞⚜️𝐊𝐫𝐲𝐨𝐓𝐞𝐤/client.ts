@@ -78,13 +78,11 @@ res = await this.ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(jid, ops2);
 }
 return res;
 }
-
 async deleteMessage(jid: string, key: any) {
 await this.ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(jid, {
 delete: key,
 });
 }
-
 async getGroupMetaData(jid: string, νℓкуяιє: νℓкуяιє) {
 const groupMetadata: GroupMetadata = jid.endsWith("@g.us")
 ? await this.ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.groupMetadata(jid)
