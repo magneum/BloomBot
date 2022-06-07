@@ -123,7 +123,7 @@ chat,
 νℓкуяιє,
 `❌𝗘𝗿𝗿𝗼𝗿: _Choose Smaller Video less then 30mins!_
 
-⭕️𝐘𝐨𝐮𝐓𝐮𝐛𝐞 𝐀𝐈: ${Found.title}
+𝐘𝐨𝐮𝐓𝐮𝐛𝐞📹𝐕𝐢𝐝𝐞𝐨
 🍻𝐓𝐢𝐭𝐥𝐞: ${Found.title}
 ⏰𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧: ${Found.timestamp}`,
 Found.thumbnail
@@ -162,7 +162,7 @@ video: fs.readFileSync(`./${chat.key.id}.mp4`),
 mimetype: "video/mp4",
 caption: `✥𝐔𝐬𝐞𝐫: ${chat.pushName}
 
-⭕️𝐘𝐨𝐮𝐓𝐮𝐛𝐞 𝐀𝐈
+𝐘𝐨𝐮𝐓𝐮𝐛𝐞📹𝐕𝐢𝐝𝐞𝐨
 🍻𝗧𝗶𝘁𝗹𝗲: ${Found.title}
 🙈𝗩𝗶𝗲𝘄𝘀: ${Found.views}
 ⏰𝗗𝘂𝗿𝗮𝘁𝗶𝗼𝗻: ${Found.timestamp}
