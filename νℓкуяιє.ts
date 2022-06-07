@@ -15,7 +15,7 @@ import Kolor from "chalk";
 import { join } from "path";
 import Vmangos from "mongoose";
 import P, { Logger } from "pino";
-import Konf from "./𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞🀄𝐕𝐞𝐧𝐭/ʟᴀʏᴏᴜᴛ";
+import ʟᴀʏᴏᴜᴛ from "./𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞🀄𝐕𝐞𝐧𝐭/ʟᴀʏᴏᴜᴛ";
 import Command from "./𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/command";
 import { Sequelize } from "sequelize/types";
 import useRemoteFileAuthState from "./𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/dbAuth";
@@ -23,7 +23,7 @@ import messages_upsert from "./𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞💥𝐄𝐯𝐞�
 import connection_update from "./𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞💥𝐄𝐯𝐞𝐧𝐭𝐬/connection_update";
 import participants_update from "./𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞💥𝐄𝐯𝐞𝐧𝐭𝐬/participants_update";
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
-const sequelize: Sequelize = Konf.DATABASE;
+const sequelize: Sequelize = ʟᴀʏᴏᴜᴛ.DATABASE;
 const logger: Logger = P({
   timestamp: () => `,"time":"${new Date().toJSON()}"`,
 }).child({});
@@ -46,7 +46,7 @@ setInterval(() => {
   }
   await sequelize.sync();
   try {
-    await Vmangos.connect(Konf.VMango, {
+    await Vmangos.connect(ʟᴀʏᴏᴜᴛ.VMango, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
       useCreateIndex: true,

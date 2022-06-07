@@ -15,7 +15,7 @@ const Bagde = require(`../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞✈️𝐂𝐨𝐧𝐧
 const Halt = require(`../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/halt`);
 import { MessageType } from "../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/message-type";
 const Downloader = require(`nodejs-file-downloader`);
-import Konf from "../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞🀄𝐕𝐞𝐧𝐭/ʟᴀʏᴏᴜᴛ";
+import ʟᴀʏᴏᴜᴛ from "../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞🀄𝐕𝐞𝐧𝐭/ʟᴀʏᴏᴜᴛ";
 import Client from "../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/client";
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 const participants_update = async (update, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇): Promise<void> => {
@@ -36,19 +36,19 @@ caption: `👋🏻𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚, Some Of Your Members
 ╚════════════╝
 
 ╔⧉༻ 🧀 𝐃𝐞𝐟𝐚𝐮𝐥𝐭 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬! ꧂
-║◇ *${Konf.MuveOn}help:* _commands of Valkyrie!_
-║◇ *${Konf.MuveOn}rules:* _rules of Valkyrie!_
+║◇ *${ʟᴀʏᴏᴜᴛ.MuveOn}help:* _commands of Valkyrie!_
+║◇ *${ʟᴀʏᴏᴜᴛ.MuveOn}rules:* _rules of Valkyrie!_
 ╚════════════╝`,
 footer: `⦓ 𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ⦔`,
 buttons: [
 {
-buttonId: `${Konf.MuveOn}help`,
-buttonText: { displayText: `${Konf.MuveOn}help` },
+buttonId: `${ʟᴀʏᴏᴜᴛ.MuveOn}help`,
+buttonText: { displayText: `${ʟᴀʏᴏᴜᴛ.MuveOn}help` },
 type: 1,
 },
 {
-buttonId: `${Konf.MuveOn}rules`,
-buttonText: { displayText: `${Konf.MuveOn}rules` },
+buttonId: `${ʟᴀʏᴏᴜᴛ.MuveOn}rules`,
+buttonText: { displayText: `${ʟᴀʏᴏᴜᴛ.MuveOn}rules` },
 type: 1,
 },
 ],
@@ -122,13 +122,13 @@ ${userWel.message}`,
 footer: `⦓ 𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ⦔`,
 buttons: [
 {
-buttonId: `${Konf.MuveOn}help`,
-buttonText: { displayText: `${Konf.MuveOn}help` },
+buttonId: `${ʟᴀʏᴏᴜᴛ.MuveOn}help`,
+buttonText: { displayText: `${ʟᴀʏᴏᴜᴛ.MuveOn}help` },
 type: 1,
 },
 {
-buttonId: `${Konf.MuveOn}rules`,
-buttonText: { displayText: `${Konf.MuveOn}rules` },
+buttonId: `${ʟᴀʏᴏᴜᴛ.MuveOn}rules`,
+buttonText: { displayText: `${ʟᴀʏᴏᴜᴛ.MuveOn}rules` },
 type: 1,
 },
 ],
