@@ -7,7 +7,7 @@ import { MessageType } from "../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞⚜️𝐊�
 import { proto } from "@adiwajshing/baileys";
 import Client from "../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/client";
 import νℓкуяιє from "../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/msb";
-import Konf from "../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞🀄𝐕𝐞𝐧𝐭/ʟᴀʏᴏᴜᴛ";
+import ʟᴀʏᴏᴜᴛ from "../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞🀄𝐕𝐞𝐧𝐭/ʟᴀʏᴏᴜᴛ";
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 import * as fs from 'fs';
 import path from 'path';
@@ -38,78 +38,78 @@ caption: `╔◇✥𝐔𝐬𝐞𝐫: ${chat.pushName}
 ╚◇════════════◇꧂
 
 ╔════⧉🍙 𝐀𝐧𝐢𝐦𝐞
-║• *${Konf.MuveOn}anime:*  _search any anime_
-║• *${Konf.MuveOn}ranimewall:*  _get random anime wallpaper_
-║• *${Konf.MuveOn}smile:*  _@tag or reply_ 
-║• *${Konf.MuveOn}yes:*  _@tag or reply_
-║• *${Konf.MuveOn}bite:*  _@tag or reply_
-║• *${Konf.MuveOn}blush:*  _@tag or reply_
-║• *${Konf.MuveOn}bored:*  _@tag or reply_
-║• *${Konf.MuveOn}confused:*  _@tag or reply_
-║• *${Konf.MuveOn}cry:*  _@tag or reply_
-║• *${Konf.MuveOn}goodnight:*  _@tag or reply_
-║• *${Konf.MuveOn}happy:*  _@tag or reply_
-║• *${Konf.MuveOn}hi5:*  _@tag or reply_
-║• *${Konf.MuveOn}poke:*  _@tag or reply_
-║• *${Konf.MuveOn}sad:*  _@tag or reply_
-║• *${Konf.MuveOn}thinking:*  _@tag or reply_
-║• *${Konf.MuveOn}cuddle:*  _@tag or reply_
-║• *${Konf.MuveOn}hug:*  _@tag or reply_
-║• *${Konf.MuveOn}pat:*  _@tag or reply_
-║• *${Konf.MuveOn}slap:*  _@tag or reply_ 
-║• *${Konf.MuveOn}wink:*  _@tag or reply_
-║• *${Konf.MuveOn}angry:*  _@tag or reply_
-║• *${Konf.MuveOn}baka:*  _@tag or reply_
-║• *${Konf.MuveOn}bonk:*  _@tag or reply_
-║• *${Konf.MuveOn}bully:*  _@tag or reply_
-║• *${Konf.MuveOn}bye:*  _@tag or reply_
-║• *${Konf.MuveOn}chase:*  _@tag or reply_
-║• *${Konf.MuveOn}cheer:*  _@tag or reply_
-║• *${Konf.MuveOn}cringe:*  _@tag or reply_
-║• *${Konf.MuveOn}dab:*  _@tag or reply_
-║• *${Konf.MuveOn}dance:*  _@tag or reply_
-║• *${Konf.MuveOn}die:*  _@tag or reply_
-║• *${Konf.MuveOn}facepalm:*  _@tag or reply_
-║• *${Konf.MuveOn}feed:*  _@tag or reply_
-║• *${Konf.MuveOn}glomp:*  _@tag or reply_
-║• *${Konf.MuveOn}hold:*  _@tag or reply_
-║• *${Konf.MuveOn}hate:*  _@tag or reply_
-║• *${Konf.MuveOn}hi:*  _@tag or reply_
-║• *${Konf.MuveOn}kill:*  _@tag or reply_
-║• *${Konf.MuveOn}lick:*  _@tag or reply_
-║• *${Konf.MuveOn}love:*  _@tag or reply_
-║• *${Konf.MuveOn}lurk:*  _@tag or reply_
-║• *${Konf.MuveOn}nervous:*  _@tag or reply_
-║• *${Konf.MuveOn}nope:*  _@tag or reply_
-║• *${Konf.MuveOn}nom:*  _@tag or reply_
-║• *${Konf.MuveOn}nuzzle:*  _@tag or reply_
-║• *${Konf.MuveOn}panic:*  _@tag or reply_
-║• *${Konf.MuveOn}peck:*  _@tag or reply_
-║• *${Konf.MuveOn}poke:*  _@tag or reply_
-║• *${Konf.MuveOn}pout:*  _@tag or reply_
-║• *${Konf.MuveOn}run:*  _@tag or reply_
-║• *${Konf.MuveOn}sip:*  _@tag or reply_
-║• *${Konf.MuveOn}shoot:*  _@tag or reply_
-║• *${Konf.MuveOn}shrug:*  _@tag or reply_
-║• *${Konf.MuveOn}sleep:*  _@tag or reply_
-║• *${Konf.MuveOn}smug:*  _@tag or reply_
-║• *${Konf.MuveOn}stab:*  _@tag or reply_
-║• *${Konf.MuveOn}stare:*  _@tag or reply_
-║• *${Konf.MuveOn}tease:*  _@tag or reply_
-║• *${Konf.MuveOn}tickle:*  _@tag or reply_
-║• *${Konf.MuveOn}thumbsup:*  _@tag or reply_
-║• *${Konf.MuveOn}wag:*  _@tag or reply_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}anime:*  _search any anime_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}ranimewall:*  _get random anime wallpaper_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}smile:*  _@tag or reply_ 
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}yes:*  _@tag or reply_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}bite:*  _@tag or reply_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}blush:*  _@tag or reply_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}bored:*  _@tag or reply_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}confused:*  _@tag or reply_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}cry:*  _@tag or reply_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}goodnight:*  _@tag or reply_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}happy:*  _@tag or reply_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}hi5:*  _@tag or reply_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}poke:*  _@tag or reply_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}sad:*  _@tag or reply_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}thinking:*  _@tag or reply_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}cuddle:*  _@tag or reply_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}hug:*  _@tag or reply_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}pat:*  _@tag or reply_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}slap:*  _@tag or reply_ 
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}wink:*  _@tag or reply_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}angry:*  _@tag or reply_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}baka:*  _@tag or reply_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}bonk:*  _@tag or reply_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}bully:*  _@tag or reply_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}bye:*  _@tag or reply_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}chase:*  _@tag or reply_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}cheer:*  _@tag or reply_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}cringe:*  _@tag or reply_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}dab:*  _@tag or reply_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}dance:*  _@tag or reply_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}die:*  _@tag or reply_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}facepalm:*  _@tag or reply_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}feed:*  _@tag or reply_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}glomp:*  _@tag or reply_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}hold:*  _@tag or reply_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}hate:*  _@tag or reply_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}hi:*  _@tag or reply_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}kill:*  _@tag or reply_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}lick:*  _@tag or reply_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}love:*  _@tag or reply_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}lurk:*  _@tag or reply_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}nervous:*  _@tag or reply_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}nope:*  _@tag or reply_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}nom:*  _@tag or reply_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}nuzzle:*  _@tag or reply_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}panic:*  _@tag or reply_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}peck:*  _@tag or reply_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}poke:*  _@tag or reply_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}pout:*  _@tag or reply_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}run:*  _@tag or reply_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}sip:*  _@tag or reply_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}shoot:*  _@tag or reply_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}shrug:*  _@tag or reply_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}sleep:*  _@tag or reply_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}smug:*  _@tag or reply_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}stab:*  _@tag or reply_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}stare:*  _@tag or reply_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}tease:*  _@tag or reply_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}tickle:*  _@tag or reply_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}thumbsup:*  _@tag or reply_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}wag:*  _@tag or reply_
 ╚════════════╝`,
 footer: "`⦓ 𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ⦔",
 buttons: [
 {
-buttonId: `${Konf.MuveOn}help`,
-buttonText: { displayText: `${Konf.MuveOn}help` },
+buttonId: `${ʟᴀʏᴏᴜᴛ.MuveOn}help`,
+buttonText: { displayText: `${ʟᴀʏᴏᴜᴛ.MuveOn}help` },
 type: 1,
 },
 {
-buttonId: `${Konf.MuveOn}menu`,
-buttonText: { displayText: `${Konf.MuveOn}menu` },
+buttonId: `${ʟᴀʏᴏᴜᴛ.MuveOn}menu`,
+buttonText: { displayText: `${ʟᴀʏᴏᴜᴛ.MuveOn}menu` },
 type: 1,
 },
 ],

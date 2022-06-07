@@ -7,7 +7,7 @@ import { MessageType } from "../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞⚜️𝐊�
 import { proto } from "@adiwajshing/baileys";
 import Client from "../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/client";
 import νℓкуяιє from "../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/msb";
-import Konf from "../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞🀄𝐕𝐞𝐧𝐭/ʟᴀʏᴏᴜᴛ";
+import ʟᴀʏᴏᴜᴛ from "../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞🀄𝐕𝐞𝐧𝐭/ʟᴀʏᴏᴜᴛ";
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 import * as fs from 'fs';
 import path from 'path';
@@ -38,24 +38,24 @@ caption: `╔◇✥𝐔𝐬𝐞𝐫: ${chat.pushName}
 ╚◇════════════◇꧂
 
 ╔════⧉🗂️ 𝐅𝐅𝐦𝐩𝐞𝐠
-║• *${Konf.MuveOn}vid2url:*  _convert video to url_ 
-║• *${Konf.MuveOn}tomp3:*  _convert video to music_
-║• *${Konf.MuveOn}img2url:*  _convert image to url_
-║• *${Konf.MuveOn}ocr:*  _read text written on tagged image_
-║• *${Konf.MuveOn}sticker:*  _convert image/video to sticker_
-║• *${Konf.MuveOn}carbon:*  _convert text to carbonized image_
-║• *${Konf.MuveOn}tinyurl:*  _shrink any long url_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}vid2url:*  _convert video to url_ 
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}tomp3:*  _convert video to music_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}img2url:*  _convert image to url_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}ocr:*  _read text written on tagged image_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}sticker:*  _convert image/video to sticker_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}carbon:*  _convert text to carbonized image_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}tinyurl:*  _shrink any long url_
 ╚════════════╝`,
 footer: "`⦓ 𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ⦔",
 buttons: [
 {
-buttonId: `${Konf.MuveOn}help`,
-buttonText: { displayText: `${Konf.MuveOn}help` },
+buttonId: `${ʟᴀʏᴏᴜᴛ.MuveOn}help`,
+buttonText: { displayText: `${ʟᴀʏᴏᴜᴛ.MuveOn}help` },
 type: 1,
 },
 {
-buttonId: `${Konf.MuveOn}menu`,
-buttonText: { displayText: `${Konf.MuveOn}menu` },
+buttonId: `${ʟᴀʏᴏᴜᴛ.MuveOn}menu`,
+buttonText: { displayText: `${ʟᴀʏᴏᴜᴛ.MuveOn}menu` },
 type: 1,
 },
 ],

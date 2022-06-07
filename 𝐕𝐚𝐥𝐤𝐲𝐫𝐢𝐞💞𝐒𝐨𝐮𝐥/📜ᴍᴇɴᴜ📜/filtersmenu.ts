@@ -7,7 +7,7 @@ import { MessageType } from "../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞⚜️𝐊�
 import { proto } from "@adiwajshing/baileys";
 import Client from "../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/client";
 import νℓкуяιє from "../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/msb";
-import Konf from "../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞🀄𝐕𝐞𝐧𝐭/ʟᴀʏᴏᴜᴛ";
+import ʟᴀʏᴏᴜᴛ from "../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞🀄𝐕𝐞𝐧𝐭/ʟᴀʏᴏᴜᴛ";
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 import * as fs from 'fs';
 import path from 'path';
@@ -38,34 +38,34 @@ caption: `╔◇✥𝐔𝐬𝐞𝐫: ${chat.pushName}
 ╚◇════════════◇꧂
 
 ╔════⧉🍰 𝐅𝐢𝐥𝐭𝐞𝐫𝐬/𝐀𝐮𝐝𝐢𝐨
-║• *${Konf.MuveOn}8d:*  _audio filter_
-║• *${Konf.MuveOn}bassboost:*  _audio filter_
-║• *${Konf.MuveOn}deep:*  _audio filter_
-║• *${Konf.MuveOn}echo:*  _audio filter_
-║• *${Konf.MuveOn}fast:*  _audio filter_
-║• *${Konf.MuveOn}flanger:*  _audio filter_
-║• *${Konf.MuveOn}nightcore:*  _audio filter_
-║• *${Konf.MuveOn}phaser:*  _audio filter_
-║• *${Konf.MuveOn}reverse:*  _audio filter_
-║• *${Konf.MuveOn}slow:*  _audio filter_
-║• *${Konf.MuveOn}speed:*  _audio filter_
-║• *${Konf.MuveOn}subboost:*  _audio filter_
-║• *${Konf.MuveOn}superslow:*  _audio filter_
-║• *${Konf.MuveOn}superspeed:*  _audio filter_
-║• *${Konf.MuveOn}surround:*  _audio filter_
-║• *${Konf.MuveOn}vaporwave:*  _audio filter_
-║• *${Konf.MuveOn}vibrato:*  _audio filter_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}8d:*  _audio filter_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}bassboost:*  _audio filter_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}deep:*  _audio filter_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}echo:*  _audio filter_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}fast:*  _audio filter_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}flanger:*  _audio filter_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}nightcore:*  _audio filter_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}phaser:*  _audio filter_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}reverse:*  _audio filter_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}slow:*  _audio filter_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}speed:*  _audio filter_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}subboost:*  _audio filter_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}superslow:*  _audio filter_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}superspeed:*  _audio filter_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}surround:*  _audio filter_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}vaporwave:*  _audio filter_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}vibrato:*  _audio filter_
 ╚════════════╝`,
 footer: "`⦓ 𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ⦔",
 buttons: [
 {
-buttonId: `${Konf.MuveOn}help`,
-buttonText: { displayText: `${Konf.MuveOn}help` },
+buttonId: `${ʟᴀʏᴏᴜᴛ.MuveOn}help`,
+buttonText: { displayText: `${ʟᴀʏᴏᴜᴛ.MuveOn}help` },
 type: 1,
 },
 {
-buttonId: `${Konf.MuveOn}menu`,
-buttonText: { displayText: `${Konf.MuveOn}menu` },
+buttonId: `${ʟᴀʏᴏᴜᴛ.MuveOn}menu`,
+buttonText: { displayText: `${ʟᴀʏᴏᴜᴛ.MuveOn}menu` },
 type: 1,
 },
 ],

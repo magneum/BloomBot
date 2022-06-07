@@ -7,7 +7,7 @@ import { MessageType } from "../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞⚜️𝐊�
 import { proto } from "@adiwajshing/baileys";
 import Client from "../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/client";
 import νℓкуяιє from "../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/msb";
-import Konf from "../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞🀄𝐕𝐞𝐧𝐭/ʟᴀʏᴏᴜᴛ";
+import ʟᴀʏᴏᴜᴛ from "../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞🀄𝐕𝐞𝐧𝐭/ʟᴀʏᴏᴜᴛ";
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 import * as fs from 'fs';
 import path from 'path';
@@ -38,30 +38,30 @@ caption: `╔◇✥𝐔𝐬𝐞𝐫: ${chat.pushName}
 ╚◇════════════◇꧂
 
 ╔════⧉💰 𝗚𝗮𝗺𝗲𝘀
-║• *${Konf.MuveOn}shop:*  _visit krakinzlab member store_
-║• ${Konf.MuveOn}inv:*  _check your inventory or replied person's_
-║• *${Konf.MuveOn}buy:*  _buy items from store_
-║• *${Konf.MuveOn}pay:*  _reply to person to pay money_
-║• *${Konf.MuveOn}hunt:*  _catch pokemon in forest_
-║• *${Konf.MuveOn}zoo:*  _make a zoo_
-║• *${Konf.MuveOn}gamble* _gamble with AI_
-║• *${Konf.MuveOn}fish:*  _Catch A Fish From A Vast Ocean_
-║• *${Konf.MuveOn}daily:*  _Gives You 200 per day_
-║• *${Konf.MuveOn}work:*  _Work to Earn Money_
-║• *${Konf.MuveOn}rob:*  _rob someone_
-║• *${Konf.MuveOn}balance:*  _check your balance or replied person's_
-║• *${Konf.MuveOn}truthdare:*  _get random truth/dare query_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}shop:*  _visit krakinzlab member store_
+║• ${ʟᴀʏᴏᴜᴛ.MuveOn}inv:*  _check your inventory or replied person's_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}buy:*  _buy items from store_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}pay:*  _reply to person to pay money_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}hunt:*  _catch pokemon in forest_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}zoo:*  _make a zoo_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}gamble* _gamble with AI_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}fish:*  _Catch A Fish From A Vast Ocean_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}daily:*  _Gives You 200 per day_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}work:*  _Work to Earn Money_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}rob:*  _rob someone_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}balance:*  _check your balance or replied person's_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}truthdare:*  _get random truth/dare query_
 ╚════════════╝`,
 footer: "`⦓ 𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ⦔",
 buttons: [
 {
-buttonId: `${Konf.MuveOn}help`,
-buttonText: { displayText: `${Konf.MuveOn}help` },
+buttonId: `${ʟᴀʏᴏᴜᴛ.MuveOn}help`,
+buttonText: { displayText: `${ʟᴀʏᴏᴜᴛ.MuveOn}help` },
 type: 1,
 },
 {
-buttonId: `${Konf.MuveOn}menu`,
-buttonText: { displayText: `${Konf.MuveOn}menu` },
+buttonId: `${ʟᴀʏᴏᴜᴛ.MuveOn}menu`,
+buttonText: { displayText: `${ʟᴀʏᴏᴜᴛ.MuveOn}menu` },
 type: 1,
 },
 ],

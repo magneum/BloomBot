@@ -7,7 +7,7 @@ import { MessageType } from "../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞⚜️𝐊�
 import { proto } from "@adiwajshing/baileys";
 import Client from "../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/client";
 import νℓкуяιє from "../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/msb";
-import Konf from "../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞🀄𝐕𝐞𝐧𝐭/ʟᴀʏᴏᴜᴛ";
+import ʟᴀʏᴏᴜᴛ from "../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞🀄𝐕𝐞𝐧𝐭/ʟᴀʏᴏᴜᴛ";
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 import * as fs from 'fs';
 import path from 'path';
@@ -38,24 +38,24 @@ caption: `╔◇✥𝐔𝐬𝐞𝐫: ${chat.pushName}
 ╚◇════════════◇꧂
 
 ╔════⧉📥 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫𝐬
-║•  ${Konf.MuveOn}play: _download audio using yt_
-║•  ${Konf.MuveOn}watch: _download video using yt_
-║•  ${Konf.MuveOn}spotify: _download using spotify link_
-║•  ${Konf.MuveOn}soundcloud: _download using soundcloud link_
-║•  ${Konf.MuveOn}gifdl: _download using gif link_
-║•  ${Konf.MuveOn}imagedl: _download using image link_
-║•  ${Konf.MuveOn}videodl: _download using video link_
+║•  ${ʟᴀʏᴏᴜᴛ.MuveOn}play: _download audio using yt_
+║•  ${ʟᴀʏᴏᴜᴛ.MuveOn}watch: _download video using yt_
+║•  ${ʟᴀʏᴏᴜᴛ.MuveOn}spotify: _download using spotify link_
+║•  ${ʟᴀʏᴏᴜᴛ.MuveOn}soundcloud: _download using soundcloud link_
+║•  ${ʟᴀʏᴏᴜᴛ.MuveOn}gifdl: _download using gif link_
+║•  ${ʟᴀʏᴏᴜᴛ.MuveOn}imagedl: _download using image link_
+║•  ${ʟᴀʏᴏᴜᴛ.MuveOn}videodl: _download using video link_
 ╚════════════╝`,
 footer: "`⦓ 𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ⦔",
 buttons: [
 {
-buttonId: `${Konf.MuveOn}help`,
-buttonText: { displayText: `${Konf.MuveOn}help` },
+buttonId: `${ʟᴀʏᴏᴜᴛ.MuveOn}help`,
+buttonText: { displayText: `${ʟᴀʏᴏᴜᴛ.MuveOn}help` },
 type: 1,
 },
 {
-buttonId: `${Konf.MuveOn}menu`,
-buttonText: { displayText: `${Konf.MuveOn}menu` },
+buttonId: `${ʟᴀʏᴏᴜᴛ.MuveOn}menu`,
+buttonText: { displayText: `${ʟᴀʏᴏᴜᴛ.MuveOn}menu` },
 type: 1,
 },
 ],

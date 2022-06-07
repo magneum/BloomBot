@@ -7,7 +7,7 @@ import { MessageType } from "../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞⚜️𝐊�
 import { proto } from "@adiwajshing/baileys";
 import Client from "../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/client";
 import νℓкуяιє from "../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/msb";
-import Konf from "../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞🀄𝐕𝐞𝐧𝐭/ʟᴀʏᴏᴜᴛ";
+import ʟᴀʏᴏᴜᴛ from "../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞🀄𝐕𝐞𝐧𝐭/ʟᴀʏᴏᴜᴛ";
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 import * as fs from 'fs';
 import path from 'path';
@@ -38,33 +38,33 @@ caption: `╔◇✥𝐔𝐬𝐞𝐫: ${chat.pushName}
 ╚◇════════════◇꧂
 
 ╔════⧉🔰 𝐆𝐫𝐨𝐮𝐩𝐬/𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧
-║• *${Konf.MuveOn}antilink:*  _remove any person who sends any links_
-║• *${Konf.MuveOn}autorank:*  _turn on auto ranking per gc_
-║• *${Konf.MuveOn}delete:* _delete msgs sent by Vlkyre Bot_
-║• *${Konf.MuveOn}setwelcome:*  _welcome new members with custom message_
-║• *${Konf.MuveOn}promote:*  _promote member to admin_
-║• *${Konf.MuveOn}demote:*  _demote member from admin_
-║• *${Konf.MuveOn}warn:*  _warn a person_
-║• *${Konf.MuveOn}unwarn:*  _remove warnings from a warned person_
-║• *${Konf.MuveOn}invite:*  _get group invite link_
-║• *${Konf.MuveOn}admins:*  _get all admins of a group_
-║• *${Konf.MuveOn}getdesc:*  _get group description_
-║• *${Konf.MuveOn}groupdp:*  _change group profile picture_
-║• *${Konf.MuveOn}kick:*  _ʀᴇᴍᴏᴠᴇ ᴀ ᴘᴇʀꜱᴏɴ ꜰʀᴏᴍ ᴀ ɢʀᴏᴜᴘ_
-║• *${Konf.MuveOn}tagall:*  _tag everyone in group_
-║• *${Konf.MuveOn}unmute:*  _unmute a group chat_
-║• *${Konf.MuveOn}mute:*  _mute group chat_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}antilink:*  _remove any person who sends any links_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}autorank:*  _turn on auto ranking per gc_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}delete:* _delete msgs sent by Vlkyre Bot_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}setwelcome:*  _welcome new members with custom message_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}promote:*  _promote member to admin_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}demote:*  _demote member from admin_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}warn:*  _warn a person_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}unwarn:*  _remove warnings from a warned person_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}invite:*  _get group invite link_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}admins:*  _get all admins of a group_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}getdesc:*  _get group description_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}groupdp:*  _change group profile picture_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}kick:*  _ʀᴇᴍᴏᴠᴇ ᴀ ᴘᴇʀꜱᴏɴ ꜰʀᴏᴍ ᴀ ɢʀᴏᴜᴘ_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}tagall:*  _tag everyone in group_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}unmute:*  _unmute a group chat_
+║• *${ʟᴀʏᴏᴜᴛ.MuveOn}mute:*  _mute group chat_
 ╚════════════╝`,
 footer: "`⦓ 𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ⦔",
 buttons: [
 {
-buttonId: `${Konf.MuveOn}help`,
-buttonText: { displayText: `${Konf.MuveOn}help` },
+buttonId: `${ʟᴀʏᴏᴜᴛ.MuveOn}help`,
+buttonText: { displayText: `${ʟᴀʏᴏᴜᴛ.MuveOn}help` },
 type: 1,
 },
 {
-buttonId: `${Konf.MuveOn}menu`,
-buttonText: { displayText: `${Konf.MuveOn}menu` },
+buttonId: `${ʟᴀʏᴏᴜᴛ.MuveOn}menu`,
+buttonText: { displayText: `${ʟᴀʏᴏᴜᴛ.MuveOn}menu` },
 type: 1,
 },
 ],
