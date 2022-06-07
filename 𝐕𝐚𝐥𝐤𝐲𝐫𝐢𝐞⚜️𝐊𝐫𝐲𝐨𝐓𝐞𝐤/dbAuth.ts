@@ -76,7 +76,6 @@ const saveCreds = async (
 data?: Partial<AuthenticationCreds>
 ): Promise<void> => {
 if (!data) {
-console.log("Saving all creds");
 data = creds;
 }
 for (const _key in data) {
@@ -90,9 +89,7 @@ await cred
 .update({
 value: JSON.stringify(data[_key], BufferJSON.replacer, 2),
 })
-.then((res) => {
-console.log(`updated value ${_key} `);
-})
+.then((res) => {})
 .catch((err) => {
 console.log(chalk.whiteBright(err));
 });
@@ -101,9 +98,7 @@ await Cred.create({
 key: _key,
 value: JSON.stringify(data[_key], BufferJSON.replacer, 2),
 })
-.then((res) => {
-console.log(`inserted value ${_key}`);
-})
+.then((res) => {})
 .catch((err) => {
 console.log(chalk.whiteBright(err));
 });
@@ -128,9 +123,7 @@ await res
 .update({
 value: JSON.stringify(data[_key][subKey], BufferJSON.replacer, 2),
 })
-.then((res) => {
-console.log(`updated key ${key} and subKey ${subKey}`);
-})
+.then((res) => {})
 .catch((err) => {
 console.log(chalk.blueBright(err));
 });
@@ -140,9 +133,7 @@ key: subKey,
 value: JSON.stringify(data[_key][subKey], BufferJSON.replacer, 2),
 type: key,
 })
-.then((res) => {
-console.log(`inserted key ${key} and subKey ${subKey}`);
-})
+.then((res) => {})
 .catch((err) => {
 console.log(chalk.blueBright(err));
 });
@@ -162,7 +153,6 @@ const allKeys = await loadKeys();
 parent.creds = allCreds;
 parent.keys = allKeys;
 const final = JSON.parse(JSON.stringify(parent), BufferJSON.reviver);
-console.log(final);
 creds = final.creds;
 keys = final.keys;
 } else {
@@ -192,9 +182,6 @@ return dict;
 set: async (data: SignalDataSet) => {
 for (const _key in data) {
 const key: string = KEY_MAP[_key];
-console.log(
-`Got raw key - ${_key} and got mapped key ${key}. The value is ${data[_key]}`
-);
 keys[key] = keys[key] || {};
 Object.assign(keys[key], data[_key]);
 await saveKey(key, data, _key);

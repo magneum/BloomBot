@@ -72,7 +72,6 @@ if (options?.mimetype) {
 ops2.mimetype = options.mimetype;
 ops2.fileName = options.filename;
 }
-console.log(ops2);
 await this.ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(jid, ops);
 res = await this.ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(jid, ops2);
 }
