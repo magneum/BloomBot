@@ -10,6 +10,7 @@ import { MessageType } from "../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞⚜️𝐊�
 const Oops = require(`../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞☘️𝐊𝐞𝐲𝐬/Oops`);
 import ʟᴀʏᴏᴜᴛ from "../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞🀄𝐕𝐞𝐧𝐭/ʟᴀʏᴏᴜᴛ";
 import { proto } from "@adiwajshing/baileys";
+const googleTTS = require(`google-tts-api`);
 const VOID = require(`../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/void`);
 import Client from "../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/client";
 import νℓкуяιє from "../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/msb";
@@ -39,6 +40,90 @@ await client.getGroupMetaData(νℓкуяιє.chatId, νℓкуяιє);
 console.log("💡Is Bot Group Admin: " + νℓкуяιє.isBotGroupAdmin);
 console.log("💡Is Sender Group Admin: " + νℓкуяιє.isSenderGroupAdmin);
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
+if (!args) {
+await client.sendMessage(
+νℓкуяιє.chatId,
+{
+text: `✥𝐔𝐬𝐞𝐫: ${chat.pushName} 
+
+Press Below To Read How To Use This Command!`,
+footer: "⦓ 𝐕𝐥𝐤𝐲𝐫𝐞 ⦔",
+title: `🔸𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()}`,
+buttonText: "❝ _How To Use?_ ❞",
+sections: [
+{
+title: "𝐀𝐑𝐆𝐔𝐌𝐄𝐍𝐓 𝐍𝐄𝐄𝐃𝐄𝐃!",
+rows: [
+{
+title: "⚡𝐔𝐬𝐚𝐠𝐞",
+rowId: "argument required...",
+description: `💡𝐈𝐧𝐟𝐨: In order to use this command, you must follow below instructions:
+
+Option 1 - ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()} _text_
+Option 2 - ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()} _text_ | _language code_`,
+},
+],
+},
+],
+},
+MessageType.buttonsMessage
+);
+}
+("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
+let text = "";
+let langCode = `en`;
+for (var i = 0; i < args.length; i++) {
+if (args[i] == `=`) {
+langCode = args[i + 1];
+break;
+}
+text += args[i] + ` `;
+}
+("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
+if (text.length > 200) {
+await client.sendMessage(
+νℓкуяιє.chatId,
+{
+text: `✥𝐔𝐬𝐞𝐫: ${chat.pushName} 
+
+Press Below To Read How To Use This Command!`,
+footer: "⦓ 𝐕𝐥𝐤𝐲𝐫𝐞 ⦔",
+title: `🔸𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()}`,
+buttonText: "❝ _How To Use?_ ❞",
+sections: [
+{
+title: "𝐀𝐑𝐆𝐔𝐌𝐄𝐍𝐓 𝐍𝐄𝐄𝐃𝐄𝐃!",
+rows: [
+{
+title: "⚡𝐔𝐬𝐚𝐠𝐞",
+rowId: "argument required...",
+description: `💡𝐈𝐧𝐟𝐨: In order to use this command, you must follow below instructions:
+
+*Total characters should be less than 200.*
+Option 1 - ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()} _text to speak_`,
+},
+],
+},
+],
+},
+MessageType.buttonsMessage
+);
+}
+("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
+const url = googleTTS.getAudioUrl(text, {
+lang: langCode,
+slow: false,
+host: `https://translate.google.com`,
+});
+await client
+.sendMessage(
+νℓкуяιє.chatId,
+{
+url: url,
+},
+MessageType.audio
+)
+.catch((error) => Oops.VOp(client, chat, νℓкуяιє, error));
 } catch (error) {
 return Oops.VOp(client, chat, νℓкуяιє, error);
 }
