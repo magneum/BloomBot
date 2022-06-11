@@ -43,7 +43,7 @@ console.log("💡Is Bot Group Admin: " + νℓкуяιє.isBotGroupAdmin);
 console.log("💡Is Sender Group Admin: " + νℓкуяιє.isSenderGroupAdmin);
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 
-await got(`https://www.reddit.com/r/RealGirls/random.json`).then(
+await got(`https://www.reddit.com/r/pussy/random.json`).then(
 async (newScpt) => {
 var file = JSON.parse(newScpt.body);
 var title = file[0].data.children[0].data.title;
@@ -55,7 +55,7 @@ if (
 !amazeme.endsWith(`.jpeg`)
 ) {
 var amazeme = await got(
-`https://www.reddit.com/r/RealGirls/random.json`
+`https://www.reddit.com/r/pussy/random.json`
 ).then(async (newScpt) => {
 var file = JSON.parse(newScpt.body);
 var title = file[0].data.children[0].data.title;
