@@ -171,8 +171,7 @@ await client
 fs.readFileSync(FilteredAudio),
 MessageType.audio,
 {
-quoted: chat.key.id,
-sendEphemeral: "chat",
+quoted: chat,
 }
 )
 .catch((error) => Oops.VOp(client, chat, νℓкуяιє, error));

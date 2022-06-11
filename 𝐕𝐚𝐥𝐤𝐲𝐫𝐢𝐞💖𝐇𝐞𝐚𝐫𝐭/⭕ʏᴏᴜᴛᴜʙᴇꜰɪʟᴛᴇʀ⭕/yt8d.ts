@@ -169,7 +169,10 @@ await client
 .sendMessage(
 νℓкуяιє.chatId,
 fs.readFileSync(FilteredAudio),
-MessageType.audio
+MessageType.audio,
+{
+quoted: chat,
+}
 )
 .catch((error) => Oops.VOp(client, chat, νℓкуяιє, error));
 await VOID.VOID(FFmpegFile, FilteredAudio);
