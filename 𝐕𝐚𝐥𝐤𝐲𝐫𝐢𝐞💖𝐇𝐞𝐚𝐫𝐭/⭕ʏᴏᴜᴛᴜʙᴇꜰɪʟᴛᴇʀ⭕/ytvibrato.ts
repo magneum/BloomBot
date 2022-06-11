@@ -33,7 +33,6 @@ chat: proto.IWebMessageInfo,
 args: string[],
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 ): Promise<void> {
-try {
 const ʟɴᴀᴍᴇ = νℓкуяιє.sender;
 const ᴅꜰɴᴀᴍᴇ = νℓкуяιє.commandName;
 const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/[^\d+]/g, "");
@@ -115,19 +114,19 @@ if (!LinkFound) {
 Text_List.VText(client, chat, νℓкуяιє, `❌𝗘𝗿𝗿𝗼𝗿: No Music Found!`);
 return;
 }
-var FFmpegFile = `./Filter_${Date.now()}_Normalized.mp3`;
-var FilteredAudio = `./Filter_${Date.now()}_${dotScrpt}.mp3`;
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 const Videos = LinkFound.videos.slice(0, 1);
 Videos.forEach(async function (Found) {
+var FilteredAudio = `./${dotScrpt}_F_${chat.key.id}.mp3`;
+var FFmpegFile = `./𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞🐞𝐁𝐞𝐞𝐭𝐥𝐞/${dotScrpt}_${chat.key.id}.mp3`;
 if (Found.seconds > 1800) {
-Image_Button.VImg(
+return Image_Button.VImg(
 client,
 chat,
 νℓкуяιє,
 `❌𝗘𝗿𝗿𝗼𝗿: _Choose Smaller Video less then 30mins!_
 
-𝐘𝐨𝐮𝐓𝐮𝐛𝐞📹𝐕𝐢𝐝𝐞𝐨
+𝐘𝐨𝐮𝐓𝐮𝐛𝐞💿𝐅𝐢𝐥𝐭𝐞𝐫
 🍻𝐓𝐢𝐭𝐥𝐞: ${Found.title}
 ⏰𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧: ${Found.timestamp}`,
 Found.thumbnail
@@ -138,34 +137,47 @@ var FFmpegStream = ytdl(Found.url, {
 filter: "audioonly",
 });
 ffmpeg(FFmpegStream)
+.audioBitrate(320)
+.toFormat("ipod")
 .saveToFile(FFmpegFile)
-.on("end", () => {
+.on("end", async () => {
+await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendPresenceUpdate("recording", νℓкуяιє.chatId);
+await Image_Button.VImg(
+client,
+chat,
+νℓкуяιє,
+`𝐘𝐨𝐮𝐓𝐮𝐛𝐞💿𝐅𝐢𝐥𝐭𝐞𝐫
+
+🍻𝗧𝗶𝘁𝗹𝗲: ${Found.title}
+🙈𝗩𝗶𝗲𝘄𝘀: ${Found.views}
+⏰𝗗𝘂𝗿𝗮𝘁𝗶𝗼𝗻: ${Found.timestamp}
+✒️𝗔𝘂𝘁𝗵𝗼𝗿: ${Found.author.name}
+📅𝗥𝗲𝗹𝗲𝗮𝘀𝗲𝗱: ${Found.ago}
+🔗𝐋𝐢𝐧𝐤: ${Found.url}
+📜𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${Found.description}`,
+Found.thumbnail
+);
+("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 require("child_process").exec(
 `ffmpeg -i ${FFmpegFile} -af "vibrato=f=6.5" ${FilteredAudio}`,
 async (error) => {
 if (error) {
 return Oops.VOp(client, chat, νℓкуяιє, error);
 }
-await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
+("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
+await client
 .sendMessage(
 νℓкуяιє.chatId,
 fs.readFileSync(FilteredAudio),
-MessageType.audio,
-{
-quoted: chat,
-}
+MessageType.audio
 )
-.then(VOID.VOID(FFmpegFile, FilteredAudio))
 .catch((error) => Oops.VOp(client, chat, νℓкуяιє, error));
-return;
+await VOID.VOID(FFmpegFile, FilteredAudio);
 }
 );
+return;
 });
 });
-("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
-} catch (error) {
-return Oops.VOp(client, chat, νℓкуяιє, error);
-}
 },
 };
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
