@@ -32,7 +32,8 @@ mentionedJid: [νℓкуяιє.sender],
 },
 timestamp: Date(),
 image: { url: "./𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞👜𝐁𝐚𝐠/νℓкуяιє.png" },
-caption: `╔◇✥𝐔𝐬𝐞𝐫: ${chat.pushName}
+caption: `
+╔◇✥𝐔𝐬𝐞𝐫: ${chat.pushName}
 ║🦋 𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞: _Is an Advance Whatsapp User-Bot!_
 ║🛰️ 𝐖𝐞𝐛𝐬𝐢𝐭𝐞: _VlkyreAI.krakinzkon.repl.co_
 ╚◇════════════◇꧂
@@ -41,15 +42,12 @@ caption: `╔◇✥𝐔𝐬𝐞𝐫: ${chat.pushName}
 ╔◇🧀𝐍𝐨 𝐑𝐞𝐬𝐭𝐫𝐢𝐜𝐭𝐢𝐨𝐧🧀
 ║
 ║🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}animemenu
-║💰 ${ʟᴀʏᴏᴜᴛ.MuveOn}gamemenu
 ║⭕ ${ʟᴀʏᴏᴜᴛ.MuveOn}ytfiltermenu
 ║📥 ${ʟᴀʏᴏᴜᴛ.MuveOn}downloadmenu
 ║🔰 ${ʟᴀʏᴏᴜᴛ.MuveOn}groupmenu
 ║🦄 ${ʟᴀʏᴏᴜᴛ.MuveOn}randommenu
 ║🔎 ${ʟᴀʏᴏᴜᴛ.MuveOn}searchmenu
-║🗂️ ${ʟᴀʏᴏᴜᴛ.MuveOn}ffmpegmenu
 ║🍰 ${ʟᴀʏᴏᴜᴛ.MuveOn}filtersmenu
-║🎨 ${ʟᴀʏᴏᴜᴛ.MuveOn}checkmenu
 ╚◇════════════◇
 
 ╔◇⚜️𝐀𝐝𝐦𝐢𝐧/𝐎𝐰𝐧𝐞𝐫 𝐎𝐧𝐥𝐲 ⚜️
