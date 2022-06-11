@@ -45,6 +45,7 @@ console.log("💡Is Sender Group Admin: " + νℓкуяιє.isSenderGroupAdmin);
 
 await got(`https://www.reddit.com/r/RealGirls/random.json`).then(
 async (newScpt) => {
+console.log(newScpt);
 var file = JSON.parse(newScpt.body);
 var title = file[0].data.children[0].data.title;
 var amazeme = file[0].data.children[0].data.url;
@@ -57,6 +58,7 @@ if (
 var amazeme = await got(
 `https://www.reddit.com/r/RealGirls/random.json`
 ).then(async (newScpt) => {
+console.log(newScpt);
 var file = JSON.parse(newScpt.body);
 var title = file[0].data.children[0].data.title;
 var amazeme = file[0].data.children[0].data.url;

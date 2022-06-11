@@ -4,7 +4,7 @@
   "verold": "𝐩𝐚",
   "depecrated": false,
   "scripts": {
-    "start": "clear && tsc && node --max-old-space-size=512 ᴋʀᴀᴋɪɴᴢʟᴀʙ™/кяутєк.js"
+    "start": "clear && tsc && node --max-old-space-size=512 --no-warnings ᴋʀᴀᴋɪɴᴢʟᴀʙ™/кяутєк.js"
   },
   "dependencies": {
     "@adiwajshing/baileys": "^4.1.0",
