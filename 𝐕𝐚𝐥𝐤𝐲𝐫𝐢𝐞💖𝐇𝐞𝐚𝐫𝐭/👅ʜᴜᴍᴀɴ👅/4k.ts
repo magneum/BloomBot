@@ -87,7 +87,7 @@ ffmpeg(`${__dirname}/${Date.now()}_${ꜰɪɴᴀᴍᴇ}.gif`)
 ])
 .save(`${__dirname}/${Date.now()}_${ꜰɪɴᴀᴍᴇ}.mp4`)
 .on(`end`, async () => {
-await Video_Button.VImg(
+await Video_Button.VVid(
 client,
 chat,
 νℓкуяιє,
