@@ -34,7 +34,7 @@ args: string[],
 const ʟɴᴀᴍᴇ = νℓкуяιє.sender;
 const ᴅꜰɴᴀᴍᴇ = νℓкуяιє.commandName;
 const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/[^\d+]/g, "");
-var SpotFile = "./ᴠʟᴋʏʀᴇ🀄ᴇxʜᴀᴜꜱᴛ/" + Date.now() + ".mp3";
+var SpotFile = "./𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞🐞𝐁𝐞𝐞𝐭𝐥𝐞/" + Date.now() + ".mp3";
 const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 console.log("💡Is Group: " + νℓкуяιє.isGroup);

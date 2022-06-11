@@ -115,8 +115,8 @@ if (!LinkFound) {
 Text_List.VText(client, chat, νℓкуяιє, `❌𝗘𝗿𝗿𝗼𝗿: No Music Found!`);
 return;
 }
-var FFmpegFile = `./ᴠʟᴋʏʀᴇ🀄ᴇxʜᴀᴜꜱᴛ/${Date.now()}${chat.key.id}.mp3`;
-var FilteredAudio = `./ᴠʟᴋʏʀᴇ🀄ᴇxʜᴀᴜꜱᴛ/${Date.now()}f${chat.key.id}.mp3`;
+var FFmpegFile = `./Filter_${Date.now()}_Normalized.mp3`;
+var FilteredAudio = `./Filter_${Date.now()}_${dotScrpt}.mp3`;
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 const Videos = LinkFound.videos.slice(0, 1);
 Videos.forEach(async function (Found) {
@@ -142,22 +142,15 @@ ffmpeg(FFmpegStream)
 .on("end", () => {
 require("child_process").exec(
 `ffmpeg -i ${FFmpegFile} -af "aresample=48000,asetrate=48000*1.25" ${FilteredAudio}`,
-async (error) => {
-if (error) {
-return Oops.VOp(client, chat, νℓкуяιє, error);
-}
+async () => {
 await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .sendMessage(
 νℓкуяιє.chatId,
 fs.readFileSync(FilteredAudio),
-MessageType.audio,
-{
-quoted: chat,
-}
+MessageType.audio
 )
-.then(VOID.VOID(FFmpegFile, FilteredAudio))
 .catch((error) => Oops.VOp(client, chat, νℓкуяιє, error));
-return;
+await VOID.VOID(FFmpegFile, FilteredAudio);
 }
 );
 });

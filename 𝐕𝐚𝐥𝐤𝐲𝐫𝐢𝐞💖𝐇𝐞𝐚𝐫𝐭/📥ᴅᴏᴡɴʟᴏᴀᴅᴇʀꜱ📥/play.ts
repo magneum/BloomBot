@@ -151,7 +151,7 @@ quality: "highest",
 ffmpeg(stream)
 .audioBitrate(320)
 .toFormat("ipod")
-.saveToFile(`./${chat.key.id}.mp3`)
+.saveToFile(`./𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞🐞𝐁𝐞𝐞𝐭𝐥𝐞/${chat.key.id}.mp3`)
 .on("end", async () => {
 await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendPresenceUpdate("recording", νℓкуяιє.chatId);
 await Image_Button.VImg(
@@ -173,10 +173,10 @@ Found.thumbnail
 await client
 .sendMessage(
 νℓкуяιє.chatId,
-fs.readFileSync(`./${chat.key.id}.mp3`),
+fs.readFileSync(`./𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞🐞𝐁𝐞𝐞𝐭𝐥𝐞/${chat.key.id}.mp3`),
 MessageType.audio
 )
-.then(VOID.VOID(`./${chat.key.id}.mp3`))
+.then(VOID.VOID(`./𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞🐞𝐁𝐞𝐞𝐭𝐥𝐞/${chat.key.id}.mp3`))
 .catch((error) => Oops.VOp(client, chat, νℓкуяιє, error));
 await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendPresenceUpdate("available", νℓкуяιє.chatId);
 return;
