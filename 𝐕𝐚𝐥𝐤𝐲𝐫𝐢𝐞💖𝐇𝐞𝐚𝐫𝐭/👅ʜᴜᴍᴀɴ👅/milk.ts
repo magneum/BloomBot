@@ -55,7 +55,7 @@ if (
 !amazeme.endsWith(`.jpeg`)
 ) {
 var amazeme = await got(
-`https://www.reddit.com/r/RealGirls/random.json`
+`https://www.reddit.com/r/lactating/random.json`
 ).then(async (newScpt) => {
 var file = JSON.parse(newScpt.body);
 var title = file[0].data.children[0].data.title;
