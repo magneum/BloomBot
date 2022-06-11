@@ -58,7 +58,7 @@ rows: [
 title: "⚡𝐔𝐬𝐚𝐠𝐞",
 rowId: "argument required...",
 description: `💡𝐈𝐧𝐟𝐨: In order to use this command, you must follow below instructions:
-Option 1 - ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()} _gif name_`,
+Option 1 - ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()} _user name_`,
 },
 ],
 },
@@ -86,7 +86,7 @@ rows: [
 title: "⚡𝐔𝐬𝐚𝐠𝐞",
 rowId: "argument required...",
 description: `💡𝐈𝐧𝐟𝐨: In order to use this command, you must follow below instructions:
-Option 1 - ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()} _gif name_`,
+Option 1 - ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()} _user name_`,
 },
 ],
 },
