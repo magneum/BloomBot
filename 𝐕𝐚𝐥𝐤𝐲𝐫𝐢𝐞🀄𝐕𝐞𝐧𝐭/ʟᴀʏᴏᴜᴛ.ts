@@ -29,6 +29,7 @@ process.env.DEBUG =
 process.env.DEBUG === undefined ? "false" : process.env.DEBUG;
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 const ʟᴀʏᴏᴜᴛ = {
+Ten: process.env.Ten,
 VMango: process.env.VMango,
 Spotify_Id: process.env.Spotify_Id,
 Spotify_Client_Id: process.env.Spotify_Client_Id,
