@@ -10,10 +10,14 @@ import { MessageType } from "../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞⚜️𝐊�
 const Oops = require(`../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞☘️𝐊𝐞𝐲𝐬/Oops`);
 import ʟᴀʏᴏᴜᴛ from "../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞🀄𝐕𝐞𝐧𝐭/ʟᴀʏᴏᴜᴛ";
 import { proto } from "@adiwajshing/baileys";
-const googleTTS = require(`google-tts-api`);
+const ffmpeg = require("fluent-ffmpeg");
+const ytdl = require("ytdl-core");
+const yts = require("yt-search");
 const VOID = require(`../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/void`);
 import Client from "../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/client";
 import νℓкуяιє from "../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/msb";
+const ytIdRegex =
+/(?:http(?:s|):\/\/|)(?:(?:www\.|)youtube(?:\-nocookie|)\.com\/(?:watch\?.*(?:|\&)v=|embed\/|v\/)|youtu\.be\/)([-_0-9A-Za-z]{11})/;
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 import * as fs from "fs";
 import path from "path";
@@ -40,7 +44,7 @@ await client.getGroupMetaData(νℓкуяιє.chatId, νℓкуяιє);
 console.log("💡Is Bot Group Admin: " + νℓкуяιє.isBotGroupAdmin);
 console.log("💡Is Sender Group Admin: " + νℓкуяιє.isSenderGroupAdmin);
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
-if (!args) {
+if (args.length === 0) {
 await client.sendMessage(
 νℓкуяιє.chatId,
 {
@@ -58,9 +62,8 @@ rows: [
 title: "⚡𝐔𝐬𝐚𝐠𝐞",
 rowId: "argument required...",
 description: `💡𝐈𝐧𝐟𝐨: In order to use this command, you must follow below instructions:
-
-Option 1 - ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()} _text_
-Option 2 - ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()} _text_ | _language code_`,
+Option 1 - ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()} _song name_
+Option 2 - ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()} _youtube link_`,
 },
 ],
 },
@@ -68,63 +71,98 @@ Option 2 - ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()} _text_ | _languag
 },
 MessageType.buttonsMessage
 );
+}
+("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
+if (args.includes("yout")) {
+if (!ytIdRegex.test(args[0])) {
+await client.sendMessage(
+νℓкуяιє.chatId,
+{
+text: `✥𝐔𝐬𝐞𝐫: ${chat.pushName} 
+
+Press Below To Read How To Use This Command!`,
+footer: "⦓ 𝐕𝐥𝐤𝐲𝐫𝐞 ⦔",
+title: `🔸𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()}`,
+buttonText: "❝ _How To Use?_ ❞",
+sections: [
+{
+title: "𝐀𝐑𝐆𝐔𝐌𝐄𝐍𝐓 𝐍𝐄𝐄𝐃𝐄𝐃!",
+rows: [
+{
+title: "⚡𝐔𝐬𝐚𝐠𝐞",
+rowId: "argument required...",
+description: `💡𝐈𝐧𝐟𝐨: In order to use this command, you must follow below instructions:
+Option 1 - ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()} _song name_
+Option 2 - ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()} _youtube link_`,
+},
+],
+},
+],
+},
+MessageType.buttonsMessage
+);
+}
+}
+("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
+let FinalGot;
+if (ytIdRegex.test(args[0])) {
+FinalGot = args[0];
 } else {
-("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
-let text = "";
-let langCode = `en`;
-for (var i = 0; i < args.length; i++) {
-if (args[i] == `=`) {
-langCode = args[i + 1];
-break;
+FinalGot = args.join(" ");
 }
-text += args[i] + ` `;
+const LinkFound = await yts(FinalGot);
+if (!LinkFound) {
+Text_List.VText(client, chat, νℓкуяιє, `❌𝗘𝗿𝗿𝗼𝗿: No Music Found!`);
+return;
 }
+var FFmpegFile = `./ᴠʟᴋʏʀᴇ🀄ᴇxʜᴀᴜꜱᴛ/${Date.now()}${chat.key.id}.mp3`;
+var FilteredAudio = `./ᴠʟᴋʏʀᴇ🀄ᴇxʜᴀᴜꜱᴛ/${Date.now()}f${chat.key.id}.mp3`;
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
-if (text.length > 200) {
-await client.sendMessage(
-νℓкуяιє.chatId,
-{
-text: `✥𝐔𝐬𝐞𝐫: ${chat.pushName} 
+const Videos = LinkFound.videos.slice(0, 1);
+Videos.forEach(async function (Found) {
+if (Found.seconds > 1800) {
+Image_Button.VImg(
+client,
+chat,
+νℓкуяιє,
+`❌𝗘𝗿𝗿𝗼𝗿: _Choose Smaller Video less then 30mins!_
 
-Press Below To Read How To Use This Command!`,
-footer: "⦓ 𝐕𝐥𝐤𝐲𝐫𝐞 ⦔",
-title: `🔸𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()}`,
-buttonText: "❝ _How To Use?_ ❞",
-sections: [
-{
-title: "𝐀𝐑𝐆𝐔𝐌𝐄𝐍𝐓 𝐍𝐄𝐄𝐃𝐄𝐃!",
-rows: [
-{
-title: "⚡𝐔𝐬𝐚𝐠𝐞",
-rowId: "argument required...",
-description: `💡𝐈𝐧𝐟𝐨: In order to use this command, you must follow below instructions:
-
-*Total characters should be less than 200.*
-Option 1 - ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()} _text to speak_`,
-},
-],
-},
-],
-},
-MessageType.buttonsMessage
+𝐘𝐨𝐮𝐓𝐮𝐛𝐞📹𝐕𝐢𝐝𝐞𝐨
+🍻𝐓𝐢𝐭𝐥𝐞: ${Found.title}
+⏰𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧: ${Found.timestamp}`,
+Found.thumbnail
 );
 }
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
-const url = googleTTS.getAudioUrl(text, {
-lang: langCode,
-slow: false,
-host: `https://translate.google.com`,
+var FFmpegStream = ytdl(Found.url, {
+filter: "audioonly",
 });
-await client
+ffmpeg(FFmpegStream)
+.saveToFile(FFmpegFile)
+.on("end", () => {
+require("child_process").exec(
+`ffmpeg -i ${FFmpegFile} -af "apulsator=hz=0.08" ${FilteredAudio}`,
+async (error) => {
+if (error) {
+return Oops.VOp(client, chat, νℓкуяιє, error);
+}
+await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
 .sendMessage(
 νℓкуяιє.chatId,
+fs.readFileSync(FilteredAudio),
+MessageType.audio,
 {
-url: url,
-},
-MessageType.audio
-)
-.catch((error) => Oops.VOp(client, chat, νℓкуяιє, error));
+quoted: chat,
 }
+)
+.then(VOID.VOID(FFmpegFile, FilteredAudio))
+.catch((error) => Oops.VOp(client, chat, νℓкуяιє, error));
+return;
+}
+);
+});
+});
+("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 } catch (error) {
 return Oops.VOp(client, chat, νℓкуяιє, error);
 }
