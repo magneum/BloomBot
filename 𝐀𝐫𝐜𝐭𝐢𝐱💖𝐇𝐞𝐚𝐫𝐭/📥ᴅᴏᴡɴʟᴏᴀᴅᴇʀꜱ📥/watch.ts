@@ -52,7 +52,7 @@ AʀƈȶɨӼ.chatId,
 text: `✥𝐔𝐬𝐞𝐫: ${Fox.pushName} 
 
 Press Below To Read How To Use This Command!`,
-footer: "⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔",
+footer: "⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ⦔",
 title: `🔸𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()}`,
 buttonText: "❝ _How To Use?_ ❞",
 sections: [
@@ -82,7 +82,7 @@ AʀƈȶɨӼ.chatId,
 text: `✥𝐔𝐬𝐞𝐫: ${Fox.pushName} 
 
 Press Below To Read How To Use This Command!`,
-footer: "⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔",
+footer: "⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ⦔",
 title: `🔸𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()}`,
 buttonText: "❝ _How To Use?_ ❞",
 sections: [
@@ -174,7 +174,7 @@ caption: `✥𝐔𝐬𝐞𝐫: ${Fox.pushName}
 📅𝗥𝗲𝗹𝗲𝗮𝘀𝗲𝗱: ${Found.ago}
 🔗𝐋𝐢𝐧𝐤: ${Found.url}
 📜𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${Found.description}`,
-footer: `⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔`,
+footer: `⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ⦔`,
 buttons: [
 {
 buttonId: `${ʟᴀʏᴏᴜᴛ.MuveOn}help`,
