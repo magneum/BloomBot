@@ -25,24 +25,24 @@ const Halt = require(`../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜�
 const Silent = async (
 client: any,
 chat: any,
-νℓкуяιє: any,
+AʀƈȶɨӼ: any,
 ӄʀʏȶɛӄ: any
 ): Promise<void> => {
 try {
 await BanPerson.findOne(
 {
-ID: νℓкуяιє.sender,
+ID: AʀƈȶɨӼ.sender,
 },
 async (error, BanPerson) => {
 if (error) return console.log(error);
 BanGroup.findOne(
 {
-ID: νℓкуяιє.chatId,
+ID: AʀƈȶɨӼ.chatId,
 },
 async (error: any, BanGroup: any) => {
 if (error) return console.log(error);
 if (BanPerson) return;
-if (BanGroup && !νℓкуяιє.fromMe && !νℓкуяιє.isSenderTUFs) return;
+if (BanGroup && !AʀƈȶɨӼ.fromMe && !AʀƈȶɨӼ.isSenderTUFs) return;
 }
 );
 }

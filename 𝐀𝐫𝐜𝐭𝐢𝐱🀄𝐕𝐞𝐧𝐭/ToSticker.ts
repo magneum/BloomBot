@@ -17,7 +17,7 @@ const ToSticker = async (
 client: any,
 chat: any,
 args: any,
-νℓкуяιє: any,
+AʀƈȶɨӼ: any,
 FileID: string,
 FileSocket: { message: any; type: any }
 ): Promise<void> => {
@@ -41,7 +41,7 @@ await writeFile(FileName, buffer);
 };
 await saveBuffer(FileName, FileStream);
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
-if (νℓкуяιє.type === "image" || νℓкуяιє.isReplyImage) {
+if (AʀƈȶɨӼ.type === "image" || AʀƈȶɨӼ.isReplyImage) {
 ffmpeg(FileName)
 .outputOptions(["-y", "-vcodec libwebp"])
 .videoFilters(
@@ -50,7 +50,7 @@ ffmpeg(FileName)
 .save(ConvertedPath)
 .on("end", async (error: any) => {
 if (error) {
-return Oops.VOp(client, chat, νℓкуяιє, error);
+return Oops.VOp(client, chat, AʀƈȶɨӼ, error);
 }
 let ᴋʀᴀᴋɪɴᴢʟᴀʙ = await new Sticker(ConvertedPath, {
 type: "full",
@@ -61,7 +61,7 @@ categories: "ᴋʀᴀᴋɪɴᴢʟᴀʙ™",
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 if (!args) {
 await client.sendMessage(
-νℓкуяιє.chatId,
+AʀƈȶɨӼ.chatId,
 `💡𝐈𝐧𝐟𝐨: No Sticker Title Provided.
 Using Default Layout..
 
@@ -74,13 +74,13 @@ quoted: true,
 }
 );
 await client
-.sendMessage(νℓкуяιє.chatId, ᴋʀᴀᴋɪɴᴢʟᴀʙ, MessageType.sticker)
-.catch((error: any) => Oops.VOp(client, chat, νℓкуяιє, error));
+.sendMessage(AʀƈȶɨӼ.chatId, ᴋʀᴀᴋɪɴᴢʟᴀʙ, MessageType.sticker)
+.catch((error: any) => Oops.VOp(client, chat, AʀƈȶɨӼ, error));
 await VOID.VOID(FileName, ConvertedPath);
 } else {
 await client
-.sendMessage(νℓкуяιє.chatId, ᴋʀᴀᴋɪɴᴢʟᴀʙ, MessageType.sticker)
-.catch((error: any) => Oops.VOp(client, chat, νℓкуяιє, error));
+.sendMessage(AʀƈȶɨӼ.chatId, ᴋʀᴀᴋɪɴᴢʟᴀʙ, MessageType.sticker)
+.catch((error: any) => Oops.VOp(client, chat, AʀƈȶɨӼ, error));
 await VOID.VOID(FileName, ConvertedPath);
 }
 });
@@ -105,7 +105,7 @@ ffmpeg(FileName)
 .save(ConvertedPath)
 .on("end", async (error: any) => {
 if (error) {
-return Oops.VOp(client, chat, νℓкуяιє, error);
+return Oops.VOp(client, chat, AʀƈȶɨӼ, error);
 }
 let ᴋʀᴀᴋɪɴᴢʟᴀʙ = await new Sticker(ConvertedPath, {
 type: "full",
@@ -116,7 +116,7 @@ categories: "ᴋʀᴀᴋɪɴᴢʟᴀʙ™",
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 if (!args) {
 await client.sendMessage(
-νℓкуяιє.chatId,
+AʀƈȶɨӼ.chatId,
 `💡𝐈𝐧𝐟𝐨: No Sticker Title Provided.
 Using Default Layout..
 
@@ -129,13 +129,13 @@ quoted: true,
 }
 );
 await client
-.sendMessage(νℓкуяιє.chatId, ᴋʀᴀᴋɪɴᴢʟᴀʙ, MessageType.sticker)
-.catch((error: any) => Oops.VOp(client, chat, νℓкуяιє, error));
+.sendMessage(AʀƈȶɨӼ.chatId, ᴋʀᴀᴋɪɴᴢʟᴀʙ, MessageType.sticker)
+.catch((error: any) => Oops.VOp(client, chat, AʀƈȶɨӼ, error));
 await VOID.VOID(FileName, ConvertedPath);
 } else {
 await client
-.sendMessage(νℓкуяιє.chatId, ᴋʀᴀᴋɪɴᴢʟᴀʙ, MessageType.sticker)
-.catch((error: any) => Oops.VOp(client, chat, νℓкуяιє, error));
+.sendMessage(AʀƈȶɨӼ.chatId, ᴋʀᴀᴋɪɴᴢʟᴀʙ, MessageType.sticker)
+.catch((error: any) => Oops.VOp(client, chat, AʀƈȶɨӼ, error));
 await VOID.VOID(FileName, ConvertedPath);
 }
 });
