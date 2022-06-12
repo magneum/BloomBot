@@ -42,7 +42,7 @@ if (AʀƈȶɨӼ.isCmd) {
 console.log(AʀƈȶɨӼ);
 console.log(Kolor.red(`💡𝐈𝐧𝐟𝐨꧂  ${AʀƈȶɨӼ.commandName} command executed.`));
 const command = commandHandler.get(AʀƈȶɨӼ.commandName);
-var args = AʀƈȶɨӼ.body.trim().split(/\s+/).slice(1);
+var ǟʀɢʊʍɛռȶ = AʀƈȶɨӼ.body.trim().split(/\s+/).slice(1);
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 await Silent.VSln(client, Fox, AʀƈȶɨӼ, ӄʀʏȶɛӄ);
 await Link_Proctectron.VFLink(client, Fox, AʀƈȶɨӼ, ӄʀʏȶɛӄ);
@@ -75,7 +75,7 @@ MessageType.buttonsMessage
 }
 // else if (command && AʀƈȶɨӼ.commandName == "help") {
 // try {
-// command.handle(client, Fox, AʀƈȶɨӼ, args, commandHandler);
+// command.handle(client, Fox, AʀƈȶɨӼ, ǟʀɢʊʍɛռȶ, commandHandler);
 // return;
 // } catch (err) {
 // console.log(Kolor.red("❌𝐄𝐫𝐫𝐨𝐫꧂ ", err));
@@ -85,7 +85,7 @@ MessageType.buttonsMessage
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 try {
 await command
-.handle(client, Fox, AʀƈȶɨӼ, args, ӄʀʏȶɛӄ)
+.handle(client, Fox, AʀƈȶɨӼ, ǟʀɢʊʍɛռȶ, ӄʀʏȶɛӄ)
 .catch((err) => console.log("❌𝐄𝐫𝐫𝐨𝐫꧂ " + err));
 } catch (err) {
 console.log(Kolor.red("❌𝐄𝐫𝐫𝐨𝐫꧂ ", err));

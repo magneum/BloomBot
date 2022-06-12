@@ -16,7 +16,7 @@ import { downloadContentFromMessage } from "@adiwajshing/baileys";
 const ToSticker = async (
 client: any,
 Fox: any,
-args: any,
+ǟʀɢʊʍɛռȶ: any,
 AʀƈȶɨӼ: any,
 FileID: string,
 FileSocket: { message: any; type: any }
@@ -54,12 +54,12 @@ return Oops.VOp(client, Fox, AʀƈȶɨӼ, error);
 }
 let ᴋʀᴀᴋɪɴᴢʟᴀʙ = await new Sticker(ConvertedPath, {
 type: "full",
-pack: args[0] || "ʙʏ",
+pack: ǟʀɢʊʍɛռȶ[0] || "ʙʏ",
 author: "⌬𝐀𝐫𝐜𝐭𝐢𝐱",
 categories: "ᴋʀᴀᴋɪɴᴢʟᴀʙ™",
 }).build();
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
-if (!args) {
+if (!ǟʀɢʊʍɛռȶ) {
 await client.sendMessage(
 AʀƈȶɨӼ.chatId,
 `💡𝐈𝐧𝐟𝐨: No Sticker Title Provided.
@@ -109,12 +109,12 @@ return Oops.VOp(client, Fox, AʀƈȶɨӼ, error);
 }
 let ᴋʀᴀᴋɪɴᴢʟᴀʙ = await new Sticker(ConvertedPath, {
 type: "full",
-pack: args[0] || "ʙʏ",
+pack: ǟʀɢʊʍɛռȶ[0] || "ʙʏ",
 author: "⌬𝐀𝐫𝐜𝐭𝐢𝐱",
 categories: "ᴋʀᴀᴋɪɴᴢʟᴀʙ™",
 }).build();
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
-if (!args) {
+if (!ǟʀɢʊʍɛռȶ) {
 await client.sendMessage(
 AʀƈȶɨӼ.chatId,
 `💡𝐈𝐧𝐟𝐨: No Sticker Title Provided.
