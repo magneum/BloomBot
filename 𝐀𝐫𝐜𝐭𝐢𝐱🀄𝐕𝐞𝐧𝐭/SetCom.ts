@@ -23,62 +23,62 @@ const Bagde = require(`../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜
 const Halt = require(`../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/halt`);
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 const SetCom = async (
-  client: any,
-  Fox: any,
-  AʀƈȶɨӼ: any,
-  ӄʀʏȶɛӄ: any
+client: any,
+Fox: any,
+AʀƈȶɨӼ: any,
+ӄʀʏȶɛӄ: any
 ): Promise<void> => {
-  try {
-    const MetaFor_A = await ӄʀʏȶɛӄ.groupMetadata(AʀƈȶɨӼ.chatId);
-    let Member_A = [];
-    for (var i = 0; i < MetaFor_A.participants.length; i++) {
-      Member_A[i] = MetaFor_A.participants[i].id;
-    }
-    await client.sendMessage(
-      AʀƈȶɨӼ.chatId,
-      Member_A.toString(),
-      MessageType.text
-    );
-    ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
-    const MetaFor_B = await ӄʀʏȶɛӄ.groupMetadata(AʀƈȶɨӼ.chatId);
-    let Member_B = [];
-    for (var i = 0; i < MetaFor_B.participants.length; i++) {
-      Member_B[i] = MetaFor_B.participants[i].id;
-    }
-    await client.sendMessage(
-      AʀƈȶɨӼ.chatId,
-      Member_B.toString(),
-      MessageType.text
-    );
-    ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
-    const MetaFor_C = await ӄʀʏȶɛӄ.groupMetadata(AʀƈȶɨӼ.chatId);
-    let Member_C = [];
-    for (var i = 0; i < MetaFor_C.participants.length; i++) {
-      Member_C[i] = MetaFor_C.participants[i].id;
-    }
-    await client.sendMessage(
-      AʀƈȶɨӼ.chatId,
-      Member_C.toString(),
-      MessageType.text
-    );
-    ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
-    const MetaFor_D = await ӄʀʏȶɛӄ.groupMetadata(AʀƈȶɨӼ.chatId);
-    let Member_D = [];
-    for (var i = 0; i < MetaFor_D.participants.length; i++) {
-      Member_D[i] = MetaFor_D.participants[i].id;
-    }
-    await client.sendMessage(
-      AʀƈȶɨӼ.chatId,
-      Member_D.toString(),
-      MessageType.text
-    );
-    ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
-  } catch (error) {
-    console.log(error);
-  }
+try {
+const MetaFor_A = await ӄʀʏȶɛӄ.groupMetadata(AʀƈȶɨӼ.chatId);
+let Member_A = [];
+for (var i = 0; i < MetaFor_A.participants.length; i++) {
+Member_A[i] = MetaFor_A.participants[i].id;
+}
+await client.sendMessage(
+AʀƈȶɨӼ.chatId,
+Member_A.toString(),
+MessageType.text
+);
+("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
+const MetaFor_B = await ӄʀʏȶɛӄ.groupMetadata(AʀƈȶɨӼ.chatId);
+let Member_B = [];
+for (var i = 0; i < MetaFor_B.participants.length; i++) {
+Member_B[i] = MetaFor_B.participants[i].id;
+}
+await client.sendMessage(
+AʀƈȶɨӼ.chatId,
+Member_B.toString(),
+MessageType.text
+);
+("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
+const MetaFor_C = await ӄʀʏȶɛӄ.groupMetadata(AʀƈȶɨӼ.chatId);
+let Member_C = [];
+for (var i = 0; i < MetaFor_C.participants.length; i++) {
+Member_C[i] = MetaFor_C.participants[i].id;
+}
+await client.sendMessage(
+AʀƈȶɨӼ.chatId,
+Member_C.toString(),
+MessageType.text
+);
+("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
+const MetaFor_D = await ӄʀʏȶɛӄ.groupMetadata(AʀƈȶɨӼ.chatId);
+let Member_D = [];
+for (var i = 0; i < MetaFor_D.participants.length; i++) {
+Member_D[i] = MetaFor_D.participants[i].id;
+}
+await client.sendMessage(
+AʀƈȶɨӼ.chatId,
+Member_D.toString(),
+MessageType.text
+);
+("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
+} catch (error) {
+console.log(error);
+}
 };
 export = {
-  Vscom: SetCom,
+Vscom: SetCom,
 };
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 /*        
