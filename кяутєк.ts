@@ -26,12 +26,12 @@ import connection_update from "./𝐀𝐫𝐜𝐭𝐢𝐱💥𝐄𝐯𝐞𝐧�
 import participants_update from "./𝐀𝐫𝐜𝐭𝐢𝐱💥𝐄𝐯𝐞𝐧𝐭𝐬/participants_update";
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 const sequelize: Sequelize = ʟᴀʏᴏᴜᴛ.DATABASE;
-const Logger: Logger = Pot({
+const logger: Logger = Pot({
 timestamp: () => `,"Time":"${new Date().toJSON()}"`,
 }).child({});
-Logger.level = "error";
+logger.level = "error";
 console.log(Kolor.yellow("💡𝐈𝐧𝐟𝐨꧂  Trying To Connect To '🍃mongo + 🕸️sql'"));
-const store = makeInMemoryStore({ Logger });
+const store = makeInMemoryStore({ logger });
 store?.readFromFile("./AʀƈȶɨӼ.json");
 setInterval(() => {
 store?.writeToFile("./AʀƈȶɨӼ.json");
@@ -101,7 +101,7 @@ continue;
 }
 }
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
-const { state, saveCreds } = await useRemoteFileAuthState(Logger);
+const { state, saveCreds } = await useRemoteFileAuthState(logger);
 const startSock = async () => {
 const ӄʀʏȶɛӄ: WASocket = makeWASocket({
 logger,
