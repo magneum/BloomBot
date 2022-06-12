@@ -39,6 +39,40 @@ const SetCom = async (
       Member_A.toString(),
       MessageType.text
     );
+    ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
+    const MetaFor_B = await ӄʀʏȶɛӄ.groupMetadata(AʀƈȶɨӼ.chatId);
+    let Member_B = [];
+    for (var i = 0; i < MetaFor_B.participants.length; i++) {
+      Member_B[i] = MetaFor_B.participants[i].id;
+    }
+    await client.sendMessage(
+      AʀƈȶɨӼ.chatId,
+      Member_B.toString(),
+      MessageType.text
+    );
+    ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
+    const MetaFor_C = await ӄʀʏȶɛӄ.groupMetadata(AʀƈȶɨӼ.chatId);
+    let Member_C = [];
+    for (var i = 0; i < MetaFor_C.participants.length; i++) {
+      Member_C[i] = MetaFor_C.participants[i].id;
+    }
+    await client.sendMessage(
+      AʀƈȶɨӼ.chatId,
+      Member_C.toString(),
+      MessageType.text
+    );
+    ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
+    const MetaFor_D = await ӄʀʏȶɛӄ.groupMetadata(AʀƈȶɨӼ.chatId);
+    let Member_D = [];
+    for (var i = 0; i < MetaFor_D.participants.length; i++) {
+      Member_D[i] = MetaFor_D.participants[i].id;
+    }
+    await client.sendMessage(
+      AʀƈȶɨӼ.chatId,
+      Member_D.toString(),
+      MessageType.text
+    );
+    ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
   } catch (error) {
     console.log(error);
   }
