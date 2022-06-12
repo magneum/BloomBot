@@ -23,7 +23,7 @@ export = {
 name: dotScrpt,
 async handle(
 client: Client,
-chat: proto.IWebMessageInfo,
+Fox: proto.IWebMessageInfo,
 AʀƈȶɨӼ: AʀƈȶɨӼ,
 args: string[],
 ӄʀʏȶɛӄ
@@ -43,7 +43,7 @@ console.log("💡Is Sender Group Admin: " + AʀƈȶɨӼ.isSenderGroupAdmin);
 if (AʀƈȶɨӼ.isGroup && !AʀƈȶɨӼ.isSenderGroupAdmin) {
 Text_List.VText(
 client,
-chat,
+Fox,
 AʀƈȶɨӼ,
 `❌𝐃𝐞𝐧𝐢𝐞𝐝: How To Use Admin Only Commands If Bot Not Admin?`
 );
@@ -51,7 +51,7 @@ return;
 }
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 if (AʀƈȶɨӼ.isGroup && !AʀƈȶɨӼ.isBotGroupAdmin) {
-Text_List.VText(client, chat, AʀƈȶɨӼ, `❌𝐃𝐞𝐧𝐢𝐞𝐝: Admins/Dev Only!`);
+Text_List.VText(client, Fox, AʀƈȶɨӼ, `❌𝐃𝐞𝐧𝐢𝐞𝐝: Admins/Dev Only!`);
 return;
 }
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
@@ -66,13 +66,13 @@ MessageType.text
 console.log(Raw);
 return Image_Button.VImg(
 client,
-chat,
+Fox,
 AʀƈȶɨӼ,
 `🍄 𝐇𝐞𝐧𝐭𝐚𝐢 𝐍𝐒𝐅𝐖: ${dotScrpt}`,
 Raw
 );
 } catch (error) {
-return Oops.VOp(client, chat, AʀƈȶɨӼ, error);
+return Oops.VOp(client, Fox, AʀƈȶɨӼ, error);
 }
 },
 };

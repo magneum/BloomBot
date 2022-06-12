@@ -26,7 +26,7 @@ export = {
 name: dotScrpt,
 async handle(
 client: Client,
-chat: proto.IWebMessageInfo,
+Fox: proto.IWebMessageInfo,
 AʀƈȶɨӼ: AʀƈȶɨӼ,
 args: string[],
 ӄʀʏȶɛӄ
@@ -64,7 +64,7 @@ var title = file[0].data.children[0].data.title;
 var amazeme = file[0].data.children[0].data.url;
 return Image_Button.VImg(
 client,
-chat,
+Fox,
 AʀƈȶɨӼ,
 `👅 𝐓𝐨𝐩𝐢𝐜: ${title}`,
 amazeme
@@ -91,7 +91,7 @@ ffmpeg(`${__dirname}/${Date.now()}_${ꜰɪɴᴀᴍᴇ}.gif`)
 .on(`end`, async () => {
 await Video_Button.VVid(
 client,
-chat,
+Fox,
 AʀƈȶɨӼ,
 `👅 𝐓𝐨𝐩𝐢𝐜: ${title}`,
 `${__dirname}/${Date.now()}_${ꜰɪɴᴀᴍᴇ}.mp4`
@@ -103,13 +103,13 @@ await VOID.VOID(
 return;
 });
 } catch (error) {
-return Oops.VOp(client, chat, AʀƈȶɨӼ, error);
+return Oops.VOp(client, Fox, AʀƈȶɨӼ, error);
 }
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 } else {
 return Image_Button.VImg(
 client,
-chat,
+Fox,
 AʀƈȶɨӼ,
 `👅 𝐓𝐨𝐩𝐢𝐜: ${title}`,
 amazeme
@@ -118,7 +118,7 @@ amazeme
 }
 );
 } catch (error) {
-return Oops.VOp(client, chat, AʀƈȶɨӼ, error);
+return Oops.VOp(client, Fox, AʀƈȶɨӼ, error);
 }
 },
 };
