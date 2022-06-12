@@ -12,7 +12,7 @@ import ʟᴀʏᴏᴜᴛ from "../../𝐀𝐫𝐜𝐭𝐢𝐱🀄𝐕𝐞𝐧𝐭
 import { proto } from "@adiwajshing/baileys";
 const VOID = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/void`);
 import Client from "../../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/client";
-import νℓкуяιє from "../../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/msb";
+import AʀƈȶɨӼ from "../../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/msb";
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 import * as fs from "fs";
 import path from "path";
@@ -24,45 +24,45 @@ name: dotScrpt,
 async handle(
 client: Client,
 chat: proto.IWebMessageInfo,
-νℓкуяιє: νℓкуяιє,
+AʀƈȶɨӼ: AʀƈȶɨӼ,
 args: string[],
 ӄʀʏȶɛӄ
 ): Promise<void> {
 try {
-const ʟɴᴀᴍᴇ = νℓкуяιє.sender;
-const ᴅꜰɴᴀᴍᴇ = νℓкуяιє.commandName;
+const ʟɴᴀᴍᴇ = AʀƈȶɨӼ.sender;
+const ᴅꜰɴᴀᴍᴇ = AʀƈȶɨӼ.commandName;
 const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/[^\d+]/g, "");
 const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
-console.log("💡Is Group: " + νℓкуяιє.isGroup);
-await client.getGroupMetaData(νℓкуяιє.chatId, νℓкуяιє);
-console.log("💡Is Bot Group Admin: " + νℓкуяιє.isBotGroupAdmin);
-console.log("💡Is Sender Group Admin: " + νℓкуяιє.isSenderGroupAdmin);
+console.log("💡Is Group: " + AʀƈȶɨӼ.isGroup);
+await client.getGroupMetaData(AʀƈȶɨӼ.chatId, AʀƈȶɨӼ);
+console.log("💡Is Bot Group Admin: " + AʀƈȶɨӼ.isBotGroupAdmin);
+console.log("💡Is Sender Group Admin: " + AʀƈȶɨӼ.isSenderGroupAdmin);
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
-if (!νℓкуяιє.isGroup) {
+if (!AʀƈȶɨӼ.isGroup) {
 Text_List.VText(
 client,
 chat,
-νℓкуяιє,
+AʀƈȶɨӼ,
 `❌𝐃𝐞𝐧𝐢𝐞𝐝: _This Command is Only For Groups!_`
 );
 return;
 }
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 var message = " ";
-for (let admin of νℓкуяιє.groupAdmins) {
+for (let admin of AʀƈȶɨӼ.groupAdmins) {
 let number = admin.split(`@`)[0];
 message += `@${number}\n`;
 }
 await client.sendMessage(
-νℓкуяιє.chatId,
+AʀƈȶɨӼ.chatId,
 {
 quoted: chat.message,
 contextInfo: {
-mentionedJid: νℓкуяιє.groupAdmins,
+mentionedJid: AʀƈȶɨӼ.groupAdmins,
 },
 timestamp: Date(),
-image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/νℓкуяιє.png" },
+image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png" },
 caption: `✥𝐔𝐬𝐞𝐫: ${chat.pushName}
 
 🖋️𝐀𝐝𝐦𝐢𝐧𝐬 𝐎𝐟 𝐓𝐡𝐢𝐬 𝐂𝐡𝐚𝐭
@@ -81,7 +81,7 @@ MessageType.buttonsMessage
 );
 return;
 } catch (error) {
-return Oops.VOp(client, chat, νℓкуяιє, error);
+return Oops.VOp(client, chat, AʀƈȶɨӼ, error);
 }
 },
 };

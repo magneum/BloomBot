@@ -35,7 +35,7 @@ process.exit(0);
 } else if (connection === "connecting") {
 console.log(Kolor.yellowBright("💡𝐈𝐧𝐟𝐨꧂  Connecting to WhatsApp..."));
 } else if (connection === "open") {
-console.log(Kolor.yellow("💡𝐈𝐧𝐟𝐨꧂  Connected! Welcome to νℓкуяιє"));
+console.log(Kolor.yellow("💡𝐈𝐧𝐟𝐨꧂  Connected! Welcome to AʀƈȶɨӼ"));
 } else {
 console.log("connection update", update);
 }
