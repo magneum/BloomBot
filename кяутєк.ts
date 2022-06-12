@@ -33,7 +33,7 @@ logger.level = "error";
 const store = makeInMemoryStore({ logger });
 store?.readFromFile("./AʀƈȶɨӼ.json");
 setInterval(() => {
-    store?.writeToFile("./AʀƈȶɨӼ.json");
+store?.writeToFile("./AʀƈȶɨӼ.json");
 }, 10_000);
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 (async (): Promise<void> => {

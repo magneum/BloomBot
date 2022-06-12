@@ -27,7 +27,7 @@ var dotScrpt = scriptName.slice(0, -3).toLowerCase();
 export = {
 name: dotScrpt,
 async handle(
-client: Client,
+TUF: Client,
 Fox: proto.IWebMessageInfo,
 AʀƈȶɨӼ: AʀƈȶɨӼ,
 ǟʀɢʊʍɛռȶ: string[],
@@ -39,7 +39,7 @@ const ᴅꜰɴᴀᴍᴇ = AʀƈȶɨӼ.commandName;
 const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/[^\d+]/g, "");
 const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
-await client.getGroupMetaData(AʀƈȶɨӼ.chatId, AʀƈȶɨӼ);
+await TUF.getGroupMetaData(AʀƈȶɨӼ.chatId, AʀƈȶɨӼ);
 console.log("💡𝐈𝐧𝐟𝐨: Is Group: " + AʀƈȶɨӼ.isGroup);
 console.log("💡𝐈𝐧𝐟𝐨: Is Bot Group Admin: " + AʀƈȶɨӼ.isBotGroupAdmin);
 console.log(
@@ -84,7 +84,7 @@ console.log(
 );
 } catch (error) {
 console.log(`❌𝐄𝐫𝐫𝐨𝐫: 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐄𝐫𝐫𝐨𝐫: ` + error);
-return Oops.VOp(client, Fox, AʀƈȶɨӼ, error);
+return Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error);
 }
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 if (ǟʀɢʊʍɛռȶ[0] && ǟʀɢʊʍɛռȶ[0].startsWith("@")) {
@@ -99,7 +99,7 @@ ffmpeg(GotFile)
 ])
 .save(GiveFile)
 .on(`end`, async () => {
-await client
+await TUF
 .sendMessage(
 AʀƈȶɨӼ.chatId,
 fs.readFileSync(GiveFile),
@@ -114,7 +114,7 @@ caption: `⦓ 𝐕𝐥𝐤𝐲𝐫𝐞 ⦔
 contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ, TagMention] },
 }
 )
-.catch((error: any) => Oops.VOp(client, Fox, AʀƈȶɨӼ, error));
+.catch((error: any) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
 return await VOID.VOID(GiveFile, GotFile);
 });
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
@@ -131,7 +131,7 @@ ffmpeg(GotFile)
 ])
 .save(GiveFile)
 .on(`end`, async () => {
-await client
+await TUF
 .sendMessage(
 AʀƈȶɨӼ.chatId,
 fs.readFileSync(GiveFile),
@@ -145,7 +145,7 @@ caption: `⦓ 𝐕𝐥𝐤𝐲𝐫𝐞 ⦔
 contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
 }
 )
-.catch((error: any) => Oops.VOp(client, Fox, AʀƈȶɨӼ, error));
+.catch((error: any) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
 return await VOID.VOID(GiveFile, GotFile);
 });
 } else
@@ -158,7 +158,7 @@ ffmpeg(GotFile)
 ])
 .save(GiveFile)
 .on(`end`, async () => {
-await client
+await TUF
 .sendMessage(
 AʀƈȶɨӼ.chatId,
 fs.readFileSync(GiveFile),
@@ -173,7 +173,7 @@ caption: `⦓ 𝐕𝐥𝐤𝐲𝐫𝐞 ⦔
 contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ, Receiver] },
 }
 )
-.catch((error: any) => Oops.VOp(client, Fox, AʀƈȶɨӼ, error));
+.catch((error: any) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
 return await VOID.VOID(GiveFile, GotFile);
 });
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
@@ -187,7 +187,7 @@ ffmpeg(GotFile)
 ])
 .save(GiveFile)
 .on(`end`, async () => {
-await client
+await TUF
 .sendMessage(
 AʀƈȶɨӼ.chatId,
 fs.readFileSync(GiveFile),
@@ -201,11 +201,11 @@ caption: `⦓ 𝐕𝐥𝐤𝐲𝐫𝐞 ⦔
 contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
 }
 )
-.catch((error: any) => Oops.VOp(client, Fox, AʀƈȶɨӼ, error));
+.catch((error: any) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
 return await VOID.VOID(GiveFile, GotFile);
 });
 } catch (error) {
-return Oops.VOp(client, Fox, AʀƈȶɨӼ, error);
+return Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error);
 }
 },
 };
