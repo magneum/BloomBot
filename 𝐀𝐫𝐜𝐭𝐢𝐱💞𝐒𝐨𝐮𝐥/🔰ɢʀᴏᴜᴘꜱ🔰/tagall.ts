@@ -23,7 +23,7 @@ export = {
 name: dotScrpt,
 async handle(
 client: Client,
-chat: proto.IWebMessageInfo,
+Fox: proto.IWebMessageInfo,
 AʀƈȶɨӼ: AʀƈȶɨӼ,
 args: string[],
 ӄʀʏȶɛӄ
@@ -42,7 +42,7 @@ console.log("💡Is Sender Group Admin: " + AʀƈȶɨӼ.isSenderGroupAdmin);
 if (!AʀƈȶɨӼ.isGroup) {
 Text_List.VText(
 client,
-chat,
+Fox,
 AʀƈȶɨӼ,
 `❌𝐃𝐞𝐧𝐢𝐞𝐝: _This Command is Only For Groups!_`
 );
@@ -63,13 +63,13 @@ message += `@${members}\n`;
 await client.sendMessage(
 AʀƈȶɨӼ.chatId,
 {
-quoted: chat.message,
+quoted: Fox.message,
 contextInfo: {
 mentionedJid: AʀƈȶɨӼ.groupAdmins,
 },
 timestamp: Date(),
 image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png" },
-caption: `⚡ 𝐅𝐫𝐨𝐦: ${chat.pushName}
+caption: `⚡ 𝐅𝐫𝐨𝐦: ${Fox.pushName}
 
 ${message}`,
 footer: `⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔`,
@@ -100,13 +100,13 @@ return;
 await client.sendMessage(
 AʀƈȶɨӼ.chatId,
 {
-quoted: chat.message,
+quoted: Fox.message,
 contextInfo: {
 mentionedJid: AʀƈȶɨӼ.groupAdmins,
 },
 timestamp: Date(),
 image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png" },
-caption: `⚡ 𝐅𝐫𝐨𝐦: ${chat.pushName}
+caption: `⚡ 𝐅𝐫𝐨𝐦: ${Fox.pushName}
 
 ${args.join(" ")}`,
 footer: `⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔`,
@@ -142,13 +142,13 @@ message += `@${members}\n`;
 await client.sendMessage(
 AʀƈȶɨӼ.chatId,
 {
-quoted: chat.message,
+quoted: Fox.message,
 contextInfo: {
 mentionedJid: AʀƈȶɨӼ.groupAdmins,
 },
 timestamp: Date(),
 image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png" },
-caption: `⚡ 𝐅𝐫𝐨𝐦: ${chat.pushName}
+caption: `⚡ 𝐅𝐫𝐨𝐦: ${Fox.pushName}
 
 ${message}`,
 footer: `⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔`,
@@ -177,7 +177,7 @@ return;
 }
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 } catch (error) {
-return Oops.VOp(client, chat, AʀƈȶɨӼ, error);
+return Oops.VOp(client, Fox, AʀƈȶɨӼ, error);
 }
 },
 };
