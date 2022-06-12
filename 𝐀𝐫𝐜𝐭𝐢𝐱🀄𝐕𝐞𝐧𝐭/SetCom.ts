@@ -23,23 +23,28 @@ const Bagde = require(`../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜
 const Halt = require(`../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/halt`);
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 const SetCom = async (
-client: any,
-Fox: any,
-AʀƈȶɨӼ: any,
-ӄʀʏȶɛӄ: any
+  client: any,
+  Fox: any,
+  AʀƈȶɨӼ: any,
+  ӄʀʏȶɛӄ: any
 ): Promise<void> => {
-try {
-
-
-
-
-    
-} catch (error) {
-console.log(error);
-}
+  try {
+    const MetaFor_A = await ӄʀʏȶɛӄ.groupMetadata(AʀƈȶɨӼ.chatId);
+    let Member_A = [];
+    for (var i = 0; i < MetaFor_A.participants.length; i++) {
+      Member_A[i] = MetaFor_A.participants[i].id;
+    }
+    await client.sendMessage(
+      AʀƈȶɨӼ.chatId,
+      Member_A.toString(),
+      MessageType.text
+    );
+  } catch (error) {
+    console.log(error);
+  }
 };
 export = {
-Vscom: SetCom,
+  Vscom: SetCom,
 };
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 /*        
