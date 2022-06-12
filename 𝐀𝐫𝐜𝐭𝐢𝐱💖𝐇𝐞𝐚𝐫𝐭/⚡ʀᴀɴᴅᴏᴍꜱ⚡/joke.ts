@@ -26,7 +26,7 @@ export = {
 name: dotScrpt,
 async handle(
 client: Client,
-chat: proto.IWebMessageInfo,
+Fox: proto.IWebMessageInfo,
 AʀƈȶɨӼ: AʀƈȶɨӼ,
 args: string[],
 ӄʀʏȶɛӄ
@@ -45,14 +45,14 @@ console.log("💡Is Sender Group Admin: " + AʀƈȶɨӼ.isSenderGroupAdmin);
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 return Image_Button.VImg(
 client,
-chat,
+Fox,
 AʀƈȶɨӼ,
 `💀𝗗𝗮𝗱𝗝𝗼𝗸𝗲
 ${dadJoke}`,
 "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png"
 );
 } catch (error) {
-return Oops.VOp(client, chat, AʀƈȶɨӼ, error);
+return Oops.VOp(client, Fox, AʀƈȶɨӼ, error);
 }
 },
 };

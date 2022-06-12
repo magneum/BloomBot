@@ -24,7 +24,7 @@ export = {
 name: dotScrpt,
 async handle(
 client: Client,
-chat: proto.IWebMessageInfo,
+Fox: proto.IWebMessageInfo,
 AʀƈȶɨӼ: AʀƈȶɨӼ,
 args: string[],
 ӄʀʏȶɛӄ
@@ -45,17 +45,17 @@ await axios
 .then((response) => {
 return Image_Button.VImg(
 client,
-chat,
+Fox,
 AʀƈȶɨӼ,
 `📛𝗙𝗮𝗰𝘁
 ${response.data.fact}`,
 "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png"
 );
 })
-.catch((error: any) => Oops.VOp(client, chat, AʀƈȶɨӼ, error));
+.catch((error: any) => Oops.VOp(client, Fox, AʀƈȶɨӼ, error));
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 } catch (error) {
-return Oops.VOp(client, chat, AʀƈȶɨӼ, error);
+return Oops.VOp(client, Fox, AʀƈȶɨӼ, error);
 }
 },
 };

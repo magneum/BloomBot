@@ -15,7 +15,7 @@ import { downloadContentFromMessage } from "@adiwajshing/baileys";
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 const ToSticker = async (
 client: any,
-chat: any,
+Fox: any,
 args: any,
 AʀƈȶɨӼ: any,
 FileID: string,
@@ -50,7 +50,7 @@ ffmpeg(FileName)
 .save(ConvertedPath)
 .on("end", async (error: any) => {
 if (error) {
-return Oops.VOp(client, chat, AʀƈȶɨӼ, error);
+return Oops.VOp(client, Fox, AʀƈȶɨӼ, error);
 }
 let ᴋʀᴀᴋɪɴᴢʟᴀʙ = await new Sticker(ConvertedPath, {
 type: "full",
@@ -75,12 +75,12 @@ quoted: true,
 );
 await client
 .sendMessage(AʀƈȶɨӼ.chatId, ᴋʀᴀᴋɪɴᴢʟᴀʙ, MessageType.sticker)
-.catch((error: any) => Oops.VOp(client, chat, AʀƈȶɨӼ, error));
+.catch((error: any) => Oops.VOp(client, Fox, AʀƈȶɨӼ, error));
 await VOID.VOID(FileName, ConvertedPath);
 } else {
 await client
 .sendMessage(AʀƈȶɨӼ.chatId, ᴋʀᴀᴋɪɴᴢʟᴀʙ, MessageType.sticker)
-.catch((error: any) => Oops.VOp(client, chat, AʀƈȶɨӼ, error));
+.catch((error: any) => Oops.VOp(client, Fox, AʀƈȶɨӼ, error));
 await VOID.VOID(FileName, ConvertedPath);
 }
 });
@@ -105,7 +105,7 @@ ffmpeg(FileName)
 .save(ConvertedPath)
 .on("end", async (error: any) => {
 if (error) {
-return Oops.VOp(client, chat, AʀƈȶɨӼ, error);
+return Oops.VOp(client, Fox, AʀƈȶɨӼ, error);
 }
 let ᴋʀᴀᴋɪɴᴢʟᴀʙ = await new Sticker(ConvertedPath, {
 type: "full",
@@ -130,12 +130,12 @@ quoted: true,
 );
 await client
 .sendMessage(AʀƈȶɨӼ.chatId, ᴋʀᴀᴋɪɴᴢʟᴀʙ, MessageType.sticker)
-.catch((error: any) => Oops.VOp(client, chat, AʀƈȶɨӼ, error));
+.catch((error: any) => Oops.VOp(client, Fox, AʀƈȶɨӼ, error));
 await VOID.VOID(FileName, ConvertedPath);
 } else {
 await client
 .sendMessage(AʀƈȶɨӼ.chatId, ᴋʀᴀᴋɪɴᴢʟᴀʙ, MessageType.sticker)
-.catch((error: any) => Oops.VOp(client, chat, AʀƈȶɨӼ, error));
+.catch((error: any) => Oops.VOp(client, Fox, AʀƈȶɨӼ, error));
 await VOID.VOID(FileName, ConvertedPath);
 }
 });
