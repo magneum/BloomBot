@@ -104,42 +104,42 @@ FileSocketObject
 );
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 } else {
-    await client.sendMessage(
-        νℓкуяιє.chatId,
-        {
-        text: `✥𝐔𝐬𝐞𝐫: ${chat.pushName} 
-        
-        Press Below To Read How To Use This Command!`,
-        footer: "⦓ 𝐕𝐥𝐤𝐲𝐫𝐞 ⦔",
-        title: `🔸𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()}`,
-        buttonText: "❝ _How To Use?_ ❞",
-        sections: [
-        {
-        title: "𝐀𝐑𝐆𝐔𝐌𝐄𝐍𝐓 𝐍𝐄𝐄𝐃𝐄𝐃!",
-        rows: [
-        {
-        title: "⚡𝐔𝐬𝐚𝐠𝐞",
-        rowId: "argument required...",
-        description: `💡𝐈𝐧𝐟𝐨: In order to use this command, you must follow below instructions:
-        Option 1 - ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()} _song name_
-        Option 2 - ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()} _youtube link_
-        
+await client.sendMessage(
+νℓкуяιє.chatId,
+{
+text: `✥𝐔𝐬𝐞𝐫: ${chat.pushName} 
+
+Press Below To Read How To Use This Command!`,
+footer: "⦓ 𝐕𝐥𝐤𝐲𝐫𝐞 ⦔",
+title: `🔸𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()}`,
+buttonText: "❝ How To Use? ❞",
+sections: [
+{
+title: "𝐀𝐑𝐆𝐔𝐌𝐄𝐍𝐓 𝐍𝐄𝐄𝐃𝐄𝐃!",
+rows: [
+{
+title: "⚡𝐔𝐬𝐚𝐠𝐞",
+rowId: "argument required...",
+description: `💡𝐈𝐧𝐟𝐨: In order to use this command, you must follow below instructions:
+Option 1 - reply to media: ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()}
+Option 2 - reply to media: ${
+ʟᴀʏᴏᴜᴛ.MuveOn
+}${dotScrpt.toUpperCase()} _<sticker name is optional>_
+
 ╔════◇ *Supported Media Types* ꧂
 ║- Image
 ║- Video (10s)
 ║- PNG
 ║- JPEG
 ║- WEBP
-║- URL-PNG
-║- URL-JPEG
 ╚════════════╝`,
-        },
-        ],
-        },
-        ],
-        },
-        MessageType.buttonsMessage
-        );
+},
+],
+},
+],
+},
+MessageType.buttonsMessage
+);
 }
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 } catch (error) {
