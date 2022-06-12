@@ -8,6 +8,7 @@ const Video_Button = require(`../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞☘️𝐊�
 const Text_List = require(`../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞☘️𝐊𝐞𝐲𝐬/Text_List`);
 import { MessageType } from "../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/message-type";
 const Oops = require(`../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞☘️𝐊𝐞𝐲𝐬/Oops`);
+const ToSticker = require(`../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞🀄𝐕𝐞𝐧𝐭/ToSticker`);
 import ʟᴀʏᴏᴜᴛ from "../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞🀄𝐕𝐞𝐧𝐭/ʟᴀʏᴏᴜᴛ";
 import { proto } from "@adiwajshing/baileys";
 const VOID = require(`../../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/void`);
@@ -38,6 +39,34 @@ console.log("💡Is Group: " + νℓкуяιє.isGroup);
 await client.getGroupMetaData(νℓкуяιє.chatId, νℓкуяιє);
 console.log("💡Is Bot Group Admin: " + νℓкуяιє.isBotGroupAdmin);
 console.log("💡Is Sender Group Admin: " + νℓкуяιє.isSenderGroupAdmin);
+("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
+if (νℓкуяιє.isImage || νℓкуяιє.isGIF || νℓкуяιє.isVideo) {
+var replyChatObject = {
+message:
+νℓкуяιє.type === "image"
+? chat.message.imageMessage
+: chat.message.videoMessage,
+type: νℓкуяιє.type,
+};
+var imageId: string = chat.key.id;
+await ToSticker.VStk(client, chat, νℓкуяιє, imageId, replyChatObject);
+} else if (
+νℓкуяιє.isReplyImage ||
+νℓкуяιє.isReplyGIF ||
+νℓкуяιє.isReplyVideo
+) {
+var replyChatObject = {
+message: νℓкуяιє.isReplyImage
+? chat.message.extendedTextMessage.contextInfo.quotedMessage
+.imageMessage
+: chat.message.extendedTextMessage.contextInfo.quotedMessage
+.videoMessage,
+type: νℓкуяιє.isReplyImage ? "image" : "video",
+};
+var imageId: string =
+chat.message.extendedTextMessage.contextInfo.stanzaId;
+await ToSticker.VStk(client, chat, νℓкуяιє, imageId, replyChatObject);
+}
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 } catch (error) {
 return Oops.VOp(client, chat, νℓкуяιє, error);
