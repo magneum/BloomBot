@@ -13,7 +13,7 @@ import { proto } from "@adiwajshing/baileys";
 const VOID = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/void`);
 import Client from "../../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/client";
 const spdl = require("spdl-core").default;
-import νℓкуяιє from "../../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/msb";
+import AʀƈȶɨӼ from "../../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/msb";
 import ʟᴀʏᴏᴜᴛ from "../../𝐀𝐫𝐜𝐭𝐢𝐱🀄𝐕𝐞𝐧𝐭/ʟᴀʏᴏᴜᴛ";
 const SpotTrack = /^(spotify:|https:\/\/[a-z]+\.spotify\.com\/)/;
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
@@ -27,24 +27,24 @@ name: dotScrpt,
 async handle(
 client: Client,
 chat: proto.IWebMessageInfo,
-νℓкуяιє: νℓкуяιє,
+AʀƈȶɨӼ: AʀƈȶɨӼ,
 args: string[],
 ӄʀʏȶɛӄ
 ): Promise<void> {
-const ʟɴᴀᴍᴇ = νℓкуяιє.sender;
-const ᴅꜰɴᴀᴍᴇ = νℓкуяιє.commandName;
+const ʟɴᴀᴍᴇ = AʀƈȶɨӼ.sender;
+const ᴅꜰɴᴀᴍᴇ = AʀƈȶɨӼ.commandName;
 const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/[^\d+]/g, "");
 var SpotFile = "./𝐀𝐫𝐜𝐭𝐢𝐱🐞𝐁𝐞𝐞𝐭𝐥𝐞/" + Date.now() + ".mp3";
 const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
-console.log("💡Is Group: " + νℓкуяιє.isGroup);
-await client.getGroupMetaData(νℓкуяιє.chatId, νℓкуяιє);
-console.log("💡Is Bot Group Admin: " + νℓкуяιє.isBotGroupAdmin);
-console.log("💡Is Sender Group Admin: " + νℓкуяιє.isSenderGroupAdmin);
+console.log("💡Is Group: " + AʀƈȶɨӼ.isGroup);
+await client.getGroupMetaData(AʀƈȶɨӼ.chatId, AʀƈȶɨӼ);
+console.log("💡Is Bot Group Admin: " + AʀƈȶɨӼ.isBotGroupAdmin);
+console.log("💡Is Sender Group Admin: " + AʀƈȶɨӼ.isSenderGroupAdmin);
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 if (args.length === 0) {
 await client.sendMessage(
-νℓкуяιє.chatId,
+AʀƈȶɨӼ.chatId,
 {
 text: `✥𝐔𝐬𝐞𝐫: ${chat.pushName} 
 
@@ -72,7 +72,7 @@ MessageType.buttonsMessage
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 if (!SpotTrack.test(args[0])) {
 await client.sendMessage(
-νℓкуяιє.chatId,
+AʀƈȶɨӼ.chatId,
 {
 text: `✥𝐔𝐬𝐞𝐫: ${chat.pushName} 
 
@@ -103,7 +103,7 @@ if (SpotGot.duration > 900000) {
 Image_Button.VImg(
 client,
 chat,
-νℓкуяιє,
+AʀƈȶɨӼ,
 `❌𝗘𝗿𝗿𝗼𝗿: 𝗣𝗹𝗲𝗮𝘀𝗲 𝗖𝗵𝗼𝗼𝘀𝗲 𝗦𝗺𝗮𝗹𝗹𝗲𝗿 𝐀𝐮𝐝𝐢𝐨 𝗧𝗵𝗲𝗻 10-𝗺𝗶𝗻𝘂𝘁𝗲𝘀!
 
 🟢𝐒𝐩𝐨𝐭𝐢𝐟𝐲 𝐀𝐈
@@ -116,7 +116,7 @@ return;
 Image_Button.VImg(
 client,
 chat,
-νℓкуяιє,
+AʀƈȶɨӼ,
 `💡𝐈𝐧𝐟𝐨: In order to use this command:
 
 🟢𝐒𝐩𝐨𝐭𝐢𝐟𝐲 𝐀𝐈
@@ -139,7 +139,7 @@ console.log("Downloading: ", Data.name, "by:", Data.artists.join(" "));
 await SPotDL(SpotGot.url).then(async (error) => {
 await client
 .sendMessage(
-νℓкуяιє.chatId,
+AʀƈȶɨӼ.chatId,
 fs.readFileSync(SpotFile),
 MessageType.audio,
 {
@@ -148,7 +148,7 @@ quoted: chat,
 }
 )
 .then(VOID.VOID(SpotFile))
-.catch((error: any) => Oops.VOp(client, chat, νℓкуяιє, error));
+.catch((error: any) => Oops.VOp(client, chat, AʀƈȶɨӼ, error));
 });
 });
 },

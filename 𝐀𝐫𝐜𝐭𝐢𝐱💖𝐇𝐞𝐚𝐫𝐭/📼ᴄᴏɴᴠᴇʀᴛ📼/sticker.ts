@@ -13,7 +13,7 @@ import ʟᴀʏᴏᴜᴛ from "../../𝐀𝐫𝐜𝐭𝐢𝐱🀄𝐕𝐞𝐧𝐭
 import { proto } from "@adiwajshing/baileys";
 const VOID = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/void`);
 import Client from "../../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/client";
-import νℓкуяιє from "../../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/msb";
+import AʀƈȶɨӼ from "../../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/msb";
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 import * as fs from "fs";
 import path from "path";
@@ -25,51 +25,51 @@ name: dotScrpt,
 async handle(
 client: Client,
 chat: proto.IWebMessageInfo,
-νℓкуяιє: νℓкуяιє,
+AʀƈȶɨӼ: AʀƈȶɨӼ,
 args: string[],
 ӄʀʏȶɛӄ
 ): Promise<void> {
 try {
-const ʟɴᴀᴍᴇ = νℓкуяιє.sender;
-const ᴅꜰɴᴀᴍᴇ = νℓкуяιє.commandName;
+const ʟɴᴀᴍᴇ = AʀƈȶɨӼ.sender;
+const ᴅꜰɴᴀᴍᴇ = AʀƈȶɨӼ.commandName;
 const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/[^\d+]/g, "");
 const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
-console.log("💡Is Group: " + νℓкуяιє.isGroup);
-await client.getGroupMetaData(νℓкуяιє.chatId, νℓкуяιє);
-console.log("💡Is Bot Group Admin: " + νℓкуяιє.isBotGroupAdmin);
-console.log("💡Is Sender Group Admin: " + νℓкуяιє.isSenderGroupAdmin);
+console.log("💡Is Group: " + AʀƈȶɨӼ.isGroup);
+await client.getGroupMetaData(AʀƈȶɨӼ.chatId, AʀƈȶɨӼ);
+console.log("💡Is Bot Group Admin: " + AʀƈȶɨӼ.isBotGroupAdmin);
+console.log("💡Is Sender Group Admin: " + AʀƈȶɨӼ.isSenderGroupAdmin);
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
-if (νℓкуяιє.isImage || νℓкуяιє.isGIF || νℓкуяιє.isVideo) {
+if (AʀƈȶɨӼ.isImage || AʀƈȶɨӼ.isGIF || AʀƈȶɨӼ.isVideo) {
 var FileSocketObject = {
 message:
-νℓкуяιє.type === "image"
+AʀƈȶɨӼ.type === "image"
 ? chat.message.imageMessage
 : chat.message.videoMessage,
-type: νℓкуяιє.type,
+type: AʀƈȶɨӼ.type,
 };
 var FileID: string = chat.key.id;
 await ToSticker.VStk(
 client,
 chat,
 args,
-νℓкуяιє,
+AʀƈȶɨӼ,
 FileID,
 FileSocketObject
 );
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 } else if (
-νℓкуяιє.isReplyImage ||
-νℓкуяιє.isReplyGIF ||
-νℓкуяιє.isReplyVideo
+AʀƈȶɨӼ.isReplyImage ||
+AʀƈȶɨӼ.isReplyGIF ||
+AʀƈȶɨӼ.isReplyVideo
 ) {
 var FileSocketObject = {
-message: νℓкуяιє.isReplyImage
+message: AʀƈȶɨӼ.isReplyImage
 ? chat.message.extendedTextMessage.contextInfo.quotedMessage
 .imageMessage
 : chat.message.extendedTextMessage.contextInfo.quotedMessage
 .videoMessage,
-type: νℓкуяιє.isReplyImage ? "image" : "video",
+type: AʀƈȶɨӼ.isReplyImage ? "image" : "video",
 };
 var FileID: string =
 chat.message.extendedTextMessage.contextInfo.stanzaId;
@@ -77,14 +77,14 @@ await ToSticker.VStk(
 client,
 chat,
 args,
-νℓкуяιє,
+AʀƈȶɨӼ,
 FileID,
 FileSocketObject
 );
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 } else {
 await client.sendMessage(
-νℓкуяιє.chatId,
+AʀƈȶɨӼ.chatId,
 {
 text: `✥𝐔𝐬𝐞𝐫: ${chat.pushName} 
 
@@ -123,7 +123,7 @@ MessageType.buttonsMessage
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 } catch (error) {
 await client.sendMessage(
-νℓкуяιє.chatId,
+AʀƈȶɨӼ.chatId,
 {
 text: `✥𝐔𝐬𝐞𝐫: ${chat.pushName} 
 

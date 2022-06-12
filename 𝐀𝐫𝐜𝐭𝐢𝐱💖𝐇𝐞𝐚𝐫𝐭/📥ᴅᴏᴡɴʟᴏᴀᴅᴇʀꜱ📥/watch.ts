@@ -12,7 +12,7 @@ import ʟᴀʏᴏᴜᴛ from "../../𝐀𝐫𝐜𝐭𝐢𝐱🀄𝐕𝐞𝐧𝐭
 const VOID = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/void`);
 import { proto } from "@adiwajshing/baileys";
 import Client from "../../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/client";
-import νℓкуяιє from "../../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/msb";
+import AʀƈȶɨӼ from "../../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/msb";
 import ffmpeg from "fluent-ffmpeg";
 const yts = require("yt-search");
 import ytdl from "ytdl-core";
@@ -28,24 +28,24 @@ name: dotScrpt,
 async handle(
 client: Client,
 chat: proto.IWebMessageInfo,
-νℓкуяιє: νℓкуяιє,
+AʀƈȶɨӼ: AʀƈȶɨӼ,
 args: string[],
 ӄʀʏȶɛӄ
 ): Promise<void> {
 try {
-const ʟɴᴀᴍᴇ = νℓкуяιє.sender;
-const ᴅꜰɴᴀᴍᴇ = νℓкуяιє.commandName;
+const ʟɴᴀᴍᴇ = AʀƈȶɨӼ.sender;
+const ᴅꜰɴᴀᴍᴇ = AʀƈȶɨӼ.commandName;
 const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/[^\d+]/g, "");
 const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
-console.log("💡Is Group: " + νℓкуяιє.isGroup);
-await client.getGroupMetaData(νℓкуяιє.chatId, νℓкуяιє);
-console.log("💡Is Bot Group Admin: " + νℓкуяιє.isBotGroupAdmin);
-console.log("💡Is Sender Group Admin: " + νℓкуяιє.isSenderGroupAdmin);
+console.log("💡Is Group: " + AʀƈȶɨӼ.isGroup);
+await client.getGroupMetaData(AʀƈȶɨӼ.chatId, AʀƈȶɨӼ);
+console.log("💡Is Bot Group Admin: " + AʀƈȶɨӼ.isBotGroupAdmin);
+console.log("💡Is Sender Group Admin: " + AʀƈȶɨӼ.isSenderGroupAdmin);
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 if (args.length === 0) {
 await client.sendMessage(
-νℓкуяιє.chatId,
+AʀƈȶɨӼ.chatId,
 {
 text: `✥𝐔𝐬𝐞𝐫: ${chat.pushName} 
 
@@ -75,7 +75,7 @@ MessageType.buttonsMessage
 if (args.includes("yout")) {
 if (!ytIdRegex.test(args[0])) {
 await client.sendMessage(
-νℓкуяιє.chatId,
+AʀƈȶɨӼ.chatId,
 {
 text: `✥𝐔𝐬𝐞𝐫: ${chat.pushName} 
 
@@ -111,7 +111,7 @@ FinalGot = args.join(" ");
 }
 const LinkFound = await yts(FinalGot);
 if (!LinkFound) {
-Text_List.VText(client, chat, νℓкуяιє, `❌𝗘𝗿𝗿𝗼𝗿: No Music Found!`);
+Text_List.VText(client, chat, AʀƈȶɨӼ, `❌𝗘𝗿𝗿𝗼𝗿: No Music Found!`);
 return;
 }
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
@@ -121,7 +121,7 @@ if (Found.seconds > 1800) {
 Image_Button.VImg(
 client,
 chat,
-νℓкуяιє,
+AʀƈȶɨӼ,
 `❌𝗘𝗿𝗿𝗼𝗿: _Choose Smaller Video less then 30mins!_
 
 𝐘𝐨𝐮𝐓𝐮𝐛𝐞📹𝐕𝐢𝐝𝐞𝐨
@@ -134,7 +134,7 @@ Found.thumbnail
 // Image_Button.VImg(
 // client,
 // chat,
-// νℓкуяιє,
+// AʀƈȶɨӼ,
 // `💡𝐈𝐧𝐟𝐨: In order to use this command:
 // ⭕️𝐘𝐨𝐮𝐓𝐮𝐛𝐞 𝐀𝐈: ${Found.title}
 // - Join _chat.whatsapp.com/JqLMtFMmuxv3WSdwkWQf6o_
@@ -150,14 +150,14 @@ ffmpeg(stream)
 .toFormat("mp4")
 .saveToFile(`./𝐀𝐫𝐜𝐭𝐢𝐱🐞𝐁𝐞𝐞𝐭𝐥𝐞/${chat.key.id}.mp4`)
 .on("end", async () => {
-await ӄʀʏȶɛӄ.sendPresenceUpdate("composing", νℓкуяιє.chatId);
+await ӄʀʏȶɛӄ.sendPresenceUpdate("composing", AʀƈȶɨӼ.chatId);
 await client
 .sendMessage(
-νℓкуяιє.chatId,
+AʀƈȶɨӼ.chatId,
 {
 quoted: chat.message,
 contextInfo: {
-mentionedJid: [νℓкуяιє.sender],
+mentionedJid: [AʀƈȶɨӼ.sender],
 },
 timestamp: Date(),
 video: fs.readFileSync(`./${chat.key.id}.mp4`),
@@ -190,14 +190,14 @@ headerType: 5,
 MessageType.buttonsMessage
 )
 .then(VOID.VOID(`./𝐀𝐫𝐜𝐭𝐢𝐱🐞𝐁𝐞𝐞𝐭𝐥𝐞/${chat.key.id}.mp4`))
-.catch((error: any) => Oops.VOp(client, chat, νℓкуяιє, error));
-await ӄʀʏȶɛӄ.sendPresenceUpdate("available", νℓкуяιє.chatId);
+.catch((error: any) => Oops.VOp(client, chat, AʀƈȶɨӼ, error));
+await ӄʀʏȶɛӄ.sendPresenceUpdate("available", AʀƈȶɨӼ.chatId);
 return;
 });
 });
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 } catch (error) {
-return Oops.VOp(client, chat, νℓкуяιє, error);
+return Oops.VOp(client, chat, AʀƈȶɨӼ, error);
 }
 },
 };
