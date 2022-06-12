@@ -14,15 +14,15 @@ import { MessageType } from "./message-type";
 import { GroupParticipant } from "@adiwajshing/baileys";
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 const getCleanedContact = async (
-args: string[],
+ǟʀɢʊʍɛռȶ: string[],
 client: Client,
 AʀƈȶɨӼ: AʀƈȶɨӼ
 ) => {
 var jidNumber = "";
 var countryCode = config.CCD;
-if (parseInt(args[0]) === NaN || args[0][0] === "+" || args[0][0] === "@") {
-if (args[0][0] === "@" || args[0][0] === "+") {
-jidNumber = args[0].substring(1, args[0].length + 1);
+if (parseInt(ǟʀɢʊʍɛռȶ[0]) === NaN || ǟʀɢʊʍɛռȶ[0][0] === "+" || ǟʀɢʊʍɛռȶ[0][0] === "@") {
+if (ǟʀɢʊʍɛռȶ[0][0] === "@" || ǟʀɢʊʍɛռȶ[0][0] === "+") {
+jidNumber = ǟʀɢʊʍɛռȶ[0].substring(1, ǟʀɢʊʍɛռȶ[0].length + 1);
 } else {
 client.sendMessage(
 AʀƈȶɨӼ.chatId,
@@ -32,7 +32,7 @@ MessageType.text
 return undefined;
 }
 } else {
-jidNumber = args[0];
+jidNumber = ǟʀɢʊʍɛռȶ[0];
 }
 
 if (jidNumber.length < 8 || jidNumber.length > 13) {
