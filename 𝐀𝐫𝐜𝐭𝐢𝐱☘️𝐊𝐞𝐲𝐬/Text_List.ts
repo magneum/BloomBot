@@ -28,7 +28,7 @@ AʀƈȶɨӼ.chatId,
 text: `|❝ 𝐔𝐬𝐞𝐫: ${Fox.pushName} ❞|
 
 ${caption}`,
-footer: `⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ${Personality} ⦔`,
+footer: `⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ${Personality} ⦔`,
 templateButtons: [
 {
 index: 1,
