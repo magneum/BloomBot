@@ -22,7 +22,7 @@ export = {
 name: dotScrpt,
 async handle(
 client: Client,
-chat: proto.IWebMessageInfo,
+Fox: proto.IWebMessageInfo,
 AʀƈȶɨӼ: AʀƈȶɨӼ,
 args: string[],
 ӄʀʏȶɛӄ
@@ -42,7 +42,7 @@ var Image = await anime.wallpaper();
 if (!Image || Image === undefined || Image === null) {
 return Oops.VOp(
 client,
-chat,
+Fox,
 AʀƈȶɨӼ,
 "🛸Server couldn't generate images!"
 );
@@ -50,13 +50,13 @@ AʀƈȶɨӼ,
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 return Image_Button.VImg(
 client,
-chat,
+Fox,
 AʀƈȶɨӼ,
 `💡 𝐓𝐢𝐭𝐥𝐞: _Random Anime Wallpaper_`,
 Image
 );
 } catch (error) {
-return Oops.VOp(client, chat, AʀƈȶɨӼ, error);
+return Oops.VOp(client, Fox, AʀƈȶɨӼ, error);
 }
 },
 };
