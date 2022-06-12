@@ -22,14 +22,11 @@ import { proto } from "@adiwajshing/baileys";
 import AʀƈȶɨӼ from "../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/msb";
 import ʟᴀʏᴏᴜᴛ from "../𝐀𝐫𝐜𝐭𝐢𝐱🀄𝐕𝐞𝐧𝐭/ʟᴀʏᴏᴜᴛ";
 import Silent from "../𝐀𝐫𝐜𝐭𝐢𝐱🀄𝐕𝐞𝐧𝐭/Silent";
+import Rankr from "../𝐀𝐫𝐜𝐭𝐢𝐱🀄𝐕𝐞𝐧𝐭/Ranker";
 import SetCom from "../𝐀𝐫𝐜𝐭𝐢𝐱🀄𝐕𝐞𝐧𝐭/SetCom";
 import Kolor from "chalk";
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
-const messages_upsert = async (
-m,
-ӄʀʏȶɛӄ,
-commandHandler
-): Promise<void> => {
+const messages_upsert = async (m, ӄʀʏȶɛӄ, commandHandler): Promise<void> => {
 if (m.type === "append" && !ʟᴀʏᴏᴜᴛ.OFFLINE_RESPONSE) {
 return;
 }
@@ -41,11 +38,16 @@ let AʀƈȶɨӼ: AʀƈȶɨӼ = await resolve(Fox, ӄʀʏȶɛӄ);
 let client: Client = new Client(ӄʀʏȶɛӄ);
 if (AʀƈȶɨӼ.isCmd) {
 console.log(AʀƈȶɨӼ);
-console.log(Kolor.blueBright.bold(`💡𝐈𝐧𝐟𝐨: ${AʀƈȶɨӼ.commandName.toUpperCase()} command executed.`));
+console.log(
+Kolor.blueBright.bold(
+`💡𝐈𝐧𝐟𝐨: ${AʀƈȶɨӼ.commandName.toUpperCase()} command executed.`
+)
+);
 const command = commandHandler.get(AʀƈȶɨӼ.commandName);
 var ǟʀɢʊʍɛռȶ = AʀƈȶɨӼ.body.trim().split(/\s+/).slice(1);
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 await Silent.VSln(client, Fox, AʀƈȶɨӼ, ӄʀʏȶɛӄ);
+await Rankr.VRnIT(client, Fox, AʀƈȶɨӼ, ӄʀʏȶɛӄ);
 // await SetCom.Vscom(client, Fox, AʀƈȶɨӼ, ӄʀʏȶɛӄ);
 await Link_Proctectron.VFLink(client, Fox, AʀƈȶɨӼ, ӄʀʏȶɛӄ);
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
