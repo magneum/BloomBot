@@ -29,7 +29,7 @@ async handle(
 client: Client,
 Fox: proto.IWebMessageInfo,
 AʀƈȶɨӼ: AʀƈȶɨӼ,
-args: string[],
+ǟʀɢʊʍɛռȶ: string[],
 ӄʀʏȶɛӄ
 ): Promise<void> {
 try {
@@ -43,7 +43,7 @@ await client.getGroupMetaData(AʀƈȶɨӼ.chatId, AʀƈȶɨӼ);
 console.log("💡Is Bot Group Admin: " + AʀƈȶɨӼ.isBotGroupAdmin);
 console.log("💡Is Sender Group Admin: " + AʀƈȶɨӼ.isSenderGroupAdmin);
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
-if (args.length === 0) {
+if (ǟʀɢʊʍɛռȶ.length === 0) {
 await client.sendMessage(
 AʀƈȶɨӼ.chatId,
 {
@@ -71,7 +71,7 @@ MessageType.buttonsMessage
 );
 }
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
-if (!args) {
+if (!ǟʀɢʊʍɛռȶ) {
 await client.sendMessage(
 AʀƈȶɨӼ.chatId,
 {
@@ -100,14 +100,14 @@ MessageType.buttonsMessage
 }
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 try {
-const searches = await GeniusClient.songs.search(args.join(` `));
+const searches = await GeniusClient.songs.search(ǟʀɢʊʍɛռȶ.join(` `));
 const GeniusSong = searches[0];
 const Geniuslyrics = await GeniusSong.lyrics();
 return Image_Button.VImg(
 client,
 Fox,
 AʀƈȶɨӼ,
-`📜 𝗟𝘆𝗿𝗶𝗰𝘀 𝗙𝗼𝘂𝗻𝗱 𝗙𝗼𝗿: _${args.join(` `)}_
+`📜 𝗟𝘆𝗿𝗶𝗰𝘀 𝗙𝗼𝘂𝗻𝗱 𝗙𝗼𝗿: _${ǟʀɢʊʍɛռȶ.join(` `)}_
 🎹 𝐓𝐢𝐭𝐥𝐞: ${GeniusSong.raw.title}
 💡 𝗟𝘆𝗿𝗶𝗰𝘀 𝗦𝗼𝘂𝗿𝗰𝗲: _Genius-Lyrics_
 🔗 𝗟𝘆𝗿𝗶𝗰𝘀 𝗨𝗿𝗹: ${GeniusSong.raw.url}
@@ -116,12 +116,12 @@ ${Geniuslyrics}`,
 GeniusSong.raw.song_art_image_thumbnail_url
 );
 } catch (error) {
-const lyricssong = await Second_Try_Lyrics(args.join(` `));
+const lyricssong = await Second_Try_Lyrics(ǟʀɢʊʍɛռȶ.join(` `));
 return Image_Button.VImg(
 client,
 Fox,
 AʀƈȶɨӼ,
-`📜 𝗟𝘆𝗿𝗶𝗰𝘀 𝗙𝗼𝘂𝗻𝗱 𝗙𝗼𝗿: _${args.join(` `)}_
+`📜 𝗟𝘆𝗿𝗶𝗰𝘀 𝗙𝗼𝘂𝗻𝗱 𝗙𝗼𝗿: _${ǟʀɢʊʍɛռȶ.join(` `)}_
 💡 𝗟𝘆𝗿𝗶𝗰𝘀 𝗦𝗼𝘂𝗿𝗰𝗲: ${lyricssong.source.name}
 🔗 𝗟𝘆𝗿𝗶𝗰𝘀 𝗨𝗿𝗹: ${lyricssong.source.link}
 
