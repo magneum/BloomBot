@@ -30,7 +30,7 @@ client: Client,
 chat: proto.IWebMessageInfo,
 νℓкуяιє: νℓкуяιє,
 args: string[],
-ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
+ӄʀʏȶɛӄ
 ): Promise<void> {
 const ʟɴᴀᴍᴇ = νℓкуяιє.sender;
 const ᴅꜰɴᴀᴍᴇ = νℓкуяιє.commandName;

@@ -27,7 +27,7 @@ client: Client,
 chat: proto.IWebMessageInfo,
 νℓкуяιє: νℓкуяιє,
 args: string[],
-ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
+ӄʀʏȶɛӄ
 ): Promise<void> {
 try {
 const ʟɴᴀᴍᴇ = νℓкуяιє.sender;
@@ -173,7 +173,7 @@ const carbon = new Carbon.createCarbon()
 .setPrettify(true)
 .setTheme(νℓкуяιєTInput);
 const output = await Carbon.generateCarbon(carbon);
-await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(νℓкуяιє.chatId, {
+await ӄʀʏȶɛӄ.sendMessage(νℓкуяιє.chatId, {
 image: output,
 quoted: chat,
 caption: `𝐂𝐚𝐫𝐛𝐨𝐧🍯𝐀𝐏𝐈

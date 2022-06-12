@@ -33,7 +33,7 @@ client: Client,
 chat: proto.IWebMessageInfo,
 νℓкуяιє: νℓкуяιє,
 args: string[],
-ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
+ӄʀʏȶɛӄ
 ): Promise<void> {
 const ʟɴᴀᴍᴇ = νℓкуяιє.sender;
 const ᴅꜰɴᴀᴍᴇ = νℓкуяιє.commandName;
@@ -153,7 +153,7 @@ ffmpeg(stream)
 .toFormat("ipod")
 .saveToFile(`./𝐀𝐫𝐜𝐭𝐢𝐱🐞𝐁𝐞𝐞𝐭𝐥𝐞/${chat.key.id}.mp3`)
 .on("end", async () => {
-await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendPresenceUpdate("recording", νℓкуяιє.chatId);
+await ӄʀʏȶɛӄ.sendPresenceUpdate("recording", νℓкуяιє.chatId);
 await Image_Button.VImg(
 client,
 chat,
@@ -178,7 +178,7 @@ MessageType.audio
 )
 .then(VOID.VOID(`./𝐀𝐫𝐜𝐭𝐢𝐱🐞𝐁𝐞𝐞𝐭𝐥𝐞/${chat.key.id}.mp3`))
 .catch((error: any) => Oops.VOp(client, chat, νℓкуяιє, error));
-await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendPresenceUpdate("available", νℓкуяιє.chatId);
+await ӄʀʏȶɛӄ.sendPresenceUpdate("available", νℓкуяιє.chatId);
 return;
 });
 });

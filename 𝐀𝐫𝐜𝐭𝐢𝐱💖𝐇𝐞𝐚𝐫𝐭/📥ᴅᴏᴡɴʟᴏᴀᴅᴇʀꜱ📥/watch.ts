@@ -30,7 +30,7 @@ client: Client,
 chat: proto.IWebMessageInfo,
 νℓкуяιє: νℓкуяιє,
 args: string[],
-ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
+ӄʀʏȶɛӄ
 ): Promise<void> {
 try {
 const ʟɴᴀᴍᴇ = νℓкуяιє.sender;
@@ -150,7 +150,7 @@ ffmpeg(stream)
 .toFormat("mp4")
 .saveToFile(`./𝐀𝐫𝐜𝐭𝐢𝐱🐞𝐁𝐞𝐞𝐭𝐥𝐞/${chat.key.id}.mp4`)
 .on("end", async () => {
-await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendPresenceUpdate("composing", νℓкуяιє.chatId);
+await ӄʀʏȶɛӄ.sendPresenceUpdate("composing", νℓкуяιє.chatId);
 await client
 .sendMessage(
 νℓкуяιє.chatId,
@@ -191,7 +191,7 @@ MessageType.buttonsMessage
 )
 .then(VOID.VOID(`./𝐀𝐫𝐜𝐭𝐢𝐱🐞𝐁𝐞𝐞𝐭𝐥𝐞/${chat.key.id}.mp4`))
 .catch((error: any) => Oops.VOp(client, chat, νℓкуяιє, error));
-await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendPresenceUpdate("available", νℓкуяιє.chatId);
+await ӄʀʏȶɛӄ.sendPresenceUpdate("available", νℓкуяιє.chatId);
 return;
 });
 });
