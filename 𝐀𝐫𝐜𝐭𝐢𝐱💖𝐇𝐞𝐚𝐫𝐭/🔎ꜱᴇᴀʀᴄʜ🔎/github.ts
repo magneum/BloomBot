@@ -26,7 +26,7 @@ async handle(
 client: Client,
 Fox: proto.IWebMessageInfo,
 AʀƈȶɨӼ: AʀƈȶɨӼ,
-args: string[],
+ǟʀɢʊʍɛռȶ: string[],
 ӄʀʏȶɛӄ
 ): Promise<void> {
 try {
@@ -40,7 +40,7 @@ await client.getGroupMetaData(AʀƈȶɨӼ.chatId, AʀƈȶɨӼ);
 console.log("💡Is Bot Group Admin: " + AʀƈȶɨӼ.isBotGroupAdmin);
 console.log("💡Is Sender Group Admin: " + AʀƈȶɨӼ.isSenderGroupAdmin);
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
-if (args.length === 0) {
+if (ǟʀɢʊʍɛռȶ.length === 0) {
 await client.sendMessage(
 AʀƈȶɨӼ.chatId,
 {
@@ -68,7 +68,7 @@ MessageType.buttonsMessage
 );
 }
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
-if (!args) {
+if (!ǟʀɢʊʍɛռȶ) {
 await client.sendMessage(
 AʀƈȶɨӼ.chatId,
 {
@@ -96,7 +96,7 @@ MessageType.buttonsMessage
 );
 }
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
-let userResponse = await got(`https://api.github.com/users/` + args[0]);
+let userResponse = await got(`https://api.github.com/users/` + ǟʀɢʊʍɛռȶ[0]);
 let user = JSON.parse(userResponse.body);
 Object.keys(user).forEach(function (key) {
 if (user[key] === null || user[key] === ``) {
