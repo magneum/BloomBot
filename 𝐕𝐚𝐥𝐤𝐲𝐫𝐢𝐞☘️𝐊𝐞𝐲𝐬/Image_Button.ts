@@ -9,8 +9,8 @@ const Image_Button = async (
 client: any,
 chat: any,
 νℓкуяιє: any,
-caption: string[],
-media: string[]
+caption: any,
+media: any
 ): Promise<void> => {
 try {
 let Personality;
