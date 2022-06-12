@@ -26,7 +26,7 @@ async handle(
 client: Client,
 Fox: proto.IWebMessageInfo,
 AʀƈȶɨӼ: AʀƈȶɨӼ,
-args: string[],
+ǟʀɢʊʍɛռȶ: string[],
 ӄʀʏȶɛӄ
 ): Promise<void> {
 try {
@@ -40,7 +40,7 @@ await client.getGroupMetaData(AʀƈȶɨӼ.chatId, AʀƈȶɨӼ);
 console.log("💡Is Bot Group Admin: " + AʀƈȶɨӼ.isBotGroupAdmin);
 console.log("💡Is Sender Group Admin: " + AʀƈȶɨӼ.isSenderGroupAdmin);
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
-if (args.length === 0) {
+if (ǟʀɢʊʍɛռȶ.length === 0) {
 await client.sendMessage(
 AʀƈȶɨӼ.chatId,
 {
@@ -68,7 +68,7 @@ MessageType.buttonsMessage
 );
 }
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
-if (!args) {
+if (!ǟʀɢʊʍɛռȶ) {
 await client.sendMessage(
 AʀƈȶɨӼ.chatId,
 {
@@ -100,7 +100,7 @@ let res = await fetch(
 global.API("https://wall.alphacoders.com/api2.0", "/get.php", {
 auth: "3e7756c85df54b78f934a284c11abe4e",
 method: "search",
-term: args.join(" "),
+term: ǟʀɢʊʍɛռȶ.join(" "),
 })
 );
 let img;
