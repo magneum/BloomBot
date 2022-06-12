@@ -39,7 +39,7 @@ BanGroup.findOne(
 {
 ID: νℓкуяιє.chatId,
 },
-async (error, BanGroup) => {
+async (error: any, BanGroup: any) => {
 if (error) return console.log(error);
 if (BanPerson) return;
 if (BanGroup && !νℓкуяιє.fromMe && !νℓкуяιє.isSenderTUFs) return;
