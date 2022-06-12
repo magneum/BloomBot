@@ -42,7 +42,7 @@ try {
 await sequelize.authenticate();
 console.log(Kolor.green("💡𝐈𝐧𝐟𝐨: Connected with 🕸️SQL."));
 } catch (error) {
-console.error(Kolor.red("❌𝐄𝐫𝐫𝐨𝐫꧂ Unable to Connected with 🕸️SQL"));
+console.error(Kolor.red("❌𝐄𝐫𝐫𝐨𝐫: Unable to Connected with 🕸️SQL"));
 console.log(error);
 process.exit(0);
 }
@@ -79,7 +79,7 @@ console.log(
 Kolor.blue("💡𝐈𝐧𝐟𝐨: Could not import module"),
 Kolor.red(`${File}`)
 );
-console.log(`❌𝐄𝐫𝐫𝐨𝐫꧂ `, error);
+console.log(`❌𝐄𝐫𝐫𝐨𝐫: `, error);
 continue;
 }
 }
@@ -95,7 +95,7 @@ const command = require(`./𝐀𝐫𝐜𝐭𝐢𝐱💖𝐇𝐞𝐚𝐫𝐭/${FF
 try {
 commandHandler.set(command.name, command);
 } catch (error) {
-console.log(`❌𝐄𝐫𝐫𝐨𝐫꧂ Could not import module [ ${File} ]`, error);
+console.log(`❌𝐄𝐫𝐫𝐨𝐫: Could not import module [ ${File} ]`, error);
 continue;
 }
 }
