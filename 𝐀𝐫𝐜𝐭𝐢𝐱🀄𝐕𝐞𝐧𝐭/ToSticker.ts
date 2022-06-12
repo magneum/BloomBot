@@ -14,7 +14,7 @@ import { MessageType } from "../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨�
 import { downloadContentFromMessage } from "@adiwajshing/baileys";
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 const ToSticker = async (
-client: any,
+TUF: any,
 Fox: any,
 ǟʀɢʊʍɛռȶ: any,
 AʀƈȶɨӼ: any,
@@ -50,7 +50,7 @@ ffmpeg(FileName)
 .save(ConvertedPath)
 .on("end", async (error: any) => {
 if (error) {
-return Oops.VOp(client, Fox, AʀƈȶɨӼ, error);
+return Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error);
 }
 let ᴋʀᴀᴋɪɴᴢʟᴀʙ = await new Sticker(ConvertedPath, {
 type: "full",
@@ -60,7 +60,7 @@ categories: "ᴋʀᴀᴋɪɴᴢʟᴀʙ™",
 }).build();
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 if (!ǟʀɢʊʍɛռȶ) {
-await client.sendMessage(
+await TUF.sendMessage(
 AʀƈȶɨӼ.chatId,
 `💡𝐈𝐧𝐟𝐨: No Sticker Title Provided.
 Using Default Layout..
@@ -73,14 +73,14 @@ MessageType.text,
 quoted: true,
 }
 );
-await client
+await TUF
 .sendMessage(AʀƈȶɨӼ.chatId, ᴋʀᴀᴋɪɴᴢʟᴀʙ, MessageType.sticker)
-.catch((error: any) => Oops.VOp(client, Fox, AʀƈȶɨӼ, error));
+.catch((error: any) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
 await VOID.VOID(FileName, ConvertedPath);
 } else {
-await client
+await TUF
 .sendMessage(AʀƈȶɨӼ.chatId, ᴋʀᴀᴋɪɴᴢʟᴀʙ, MessageType.sticker)
-.catch((error: any) => Oops.VOp(client, Fox, AʀƈȶɨӼ, error));
+.catch((error: any) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
 await VOID.VOID(FileName, ConvertedPath);
 }
 });
@@ -105,7 +105,7 @@ ffmpeg(FileName)
 .save(ConvertedPath)
 .on("end", async (error: any) => {
 if (error) {
-return Oops.VOp(client, Fox, AʀƈȶɨӼ, error);
+return Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error);
 }
 let ᴋʀᴀᴋɪɴᴢʟᴀʙ = await new Sticker(ConvertedPath, {
 type: "full",
@@ -115,7 +115,7 @@ categories: "ᴋʀᴀᴋɪɴᴢʟᴀʙ™",
 }).build();
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 if (!ǟʀɢʊʍɛռȶ) {
-await client.sendMessage(
+await TUF.sendMessage(
 AʀƈȶɨӼ.chatId,
 `💡𝐈𝐧𝐟𝐨: No Sticker Title Provided.
 Using Default Layout..
@@ -128,14 +128,14 @@ MessageType.text,
 quoted: true,
 }
 );
-await client
+await TUF
 .sendMessage(AʀƈȶɨӼ.chatId, ᴋʀᴀᴋɪɴᴢʟᴀʙ, MessageType.sticker)
-.catch((error: any) => Oops.VOp(client, Fox, AʀƈȶɨӼ, error));
+.catch((error: any) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
 await VOID.VOID(FileName, ConvertedPath);
 } else {
-await client
+await TUF
 .sendMessage(AʀƈȶɨӼ.chatId, ᴋʀᴀᴋɪɴᴢʟᴀʙ, MessageType.sticker)
-.catch((error: any) => Oops.VOp(client, Fox, AʀƈȶɨӼ, error));
+.catch((error: any) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
 await VOID.VOID(FileName, ConvertedPath);
 }
 });
