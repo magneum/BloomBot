@@ -77,6 +77,11 @@ await client
 .sendMessage(νℓкуяιє.chatId, ᴋʀᴀᴋɪɴᴢʟᴀʙ, MessageType.sticker)
 .catch((error) => Oops.VOp(client, chat, νℓкуяιє, error));
 await VOID.VOID(FileName, ConvertedPath);
+} else {
+await client
+.sendMessage(νℓкуяιє.chatId, ᴋʀᴀᴋɪɴᴢʟᴀʙ, MessageType.sticker)
+.catch((error) => Oops.VOp(client, chat, νℓкуяιє, error));
+await VOID.VOID(FileName, ConvertedPath);
 }
 });
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
@@ -108,10 +113,31 @@ pack: args[0] || "ʙʏ",
 author: "⌬𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞",
 categories: "ᴋʀᴀᴋɪɴᴢʟᴀʙ™",
 }).build();
+("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
+if (!args) {
+await client.sendMessage(
+νℓкуяιє.chatId,
+`💡𝐈𝐧𝐟𝐨: No Sticker Title Provided.
+Using Default Layout..
+
+*Sticker Title:* ʙʏ,
+*Sticker Author:* ⌬𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞
+*Sticker Category:* ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+MessageType.text,
+{
+quoted: true,
+}
+);
 await client
 .sendMessage(νℓкуяιє.chatId, ᴋʀᴀᴋɪɴᴢʟᴀʙ, MessageType.sticker)
 .catch((error) => Oops.VOp(client, chat, νℓкуяιє, error));
 await VOID.VOID(FileName, ConvertedPath);
+} else {
+await client
+.sendMessage(νℓкуяιє.chatId, ᴋʀᴀᴋɪɴᴢʟᴀʙ, MessageType.sticker)
+.catch((error) => Oops.VOp(client, chat, νℓкуяιє, error));
+await VOID.VOID(FileName, ConvertedPath);
+}
 });
 }
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
