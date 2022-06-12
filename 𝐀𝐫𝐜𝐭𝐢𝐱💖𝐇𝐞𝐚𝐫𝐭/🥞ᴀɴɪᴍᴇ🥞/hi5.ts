@@ -28,7 +28,7 @@ async handle(
 client: Client,
 Fox: proto.IWebMessageInfo,
 AʀƈȶɨӼ: AʀƈȶɨӼ,
-args: string[],
+ǟʀɢʊʍɛռȶ: string[],
 ӄʀʏȶɛӄ
 ): Promise<void> {
 try {
@@ -85,8 +85,8 @@ console.log(`❌𝐄𝐫𝐫𝐨𝐫: 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐄𝐫�
 return Oops.VOp(client, Fox, AʀƈȶɨӼ, error);
 }
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
-if (args[0] && args[0].startsWith("@")) {
-var TagPerson = args[0].replace(/[^0-9]/g, "");
+if (ǟʀɢʊʍɛռȶ[0] && ǟʀɢʊʍɛռȶ[0].startsWith("@")) {
+var TagPerson = ǟʀɢʊʍɛռȶ[0].replace(/[^0-9]/g, "");
 var TagMention = TagPerson + "@s.whatsapp.net";
 ffmpeg(GotFile)
 .outputOptions([
