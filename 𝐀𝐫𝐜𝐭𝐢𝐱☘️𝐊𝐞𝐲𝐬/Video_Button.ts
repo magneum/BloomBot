@@ -7,7 +7,7 @@ import { MessageType } from "../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨�
 import ʟᴀʏᴏᴜᴛ from "../𝐀𝐫𝐜𝐭𝐢𝐱🀄𝐕𝐞𝐧𝐭/ʟᴀʏᴏᴜᴛ";
 const Video_Button = async (
 client: any,
-chat: any,
+Fox: any,
 AʀƈȶɨӼ: any,
 media: any,
 caption: any
@@ -27,14 +27,14 @@ Personality = "🐾";
 await client.sendMessage(
 AʀƈȶɨӼ.chatId,
 {
-quoted: chat.message,
+quoted: Fox.message,
 contextInfo: {
 mentionedJid: [AʀƈȶɨӼ.sender],
 },
 timestamp: Date(),
 video: { url: media },
 mimetype: "video/mp4",
-caption: `✥𝐔𝐬𝐞𝐫: ${chat.pushName}
+caption: `✥𝐔𝐬𝐞𝐫: ${Fox.pushName}
 
 ${caption}`,
 footer: `⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ${Personality} ⦔`,

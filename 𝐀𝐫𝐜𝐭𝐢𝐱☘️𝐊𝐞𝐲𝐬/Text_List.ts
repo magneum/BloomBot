@@ -6,7 +6,7 @@
 import { MessageType } from "../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/message-type";
 const Text_List = async (
 client: any,
-chat: any,
+Fox: any,
 AʀƈȶɨӼ: any,
 caption: any
 ): Promise<void> => {
@@ -25,7 +25,7 @@ Personality = "🐾";
 await client.sendMessage(
 AʀƈȶɨӼ.chatId,
 {
-text: `✥𝐔𝐬𝐞𝐫: ${chat.pushName}
+text: `✥𝐔𝐬𝐞𝐫: ${Fox.pushName}
 
 ${caption}`,
 footer: `⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ${Personality} ⦔`,

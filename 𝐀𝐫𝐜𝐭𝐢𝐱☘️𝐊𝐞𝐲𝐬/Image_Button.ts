@@ -7,7 +7,7 @@ import { MessageType } from "../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨�
 import ʟᴀʏᴏᴜᴛ from "../𝐀𝐫𝐜𝐭𝐢𝐱🀄𝐕𝐞𝐧𝐭/ʟᴀʏᴏᴜᴛ";
 const Image_Button = async (
 client: any,
-chat: any,
+Fox: any,
 AʀƈȶɨӼ: any,
 caption: any,
 media: any
@@ -27,13 +27,13 @@ Personality = "🐾";
 await client.sendMessage(
 AʀƈȶɨӼ.chatId,
 {
-quoted: chat.message,
+quoted: Fox.message,
 contextInfo: {
 mentionedJid: [AʀƈȶɨӼ.sender],
 },
 timestamp: Date(),
 image: { url: media },
-caption: `✥𝐔𝐬𝐞𝐫: ${chat.pushName}
+caption: `✥𝐔𝐬𝐞𝐫: ${Fox.pushName}
 
 ${caption}`,
 footer: `⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ${Personality} ⦔`,
