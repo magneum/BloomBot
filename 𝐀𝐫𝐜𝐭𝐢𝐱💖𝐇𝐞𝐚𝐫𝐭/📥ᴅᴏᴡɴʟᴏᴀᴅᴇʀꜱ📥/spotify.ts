@@ -26,7 +26,7 @@ export = {
 name: dotScrpt,
 async handle(
 client: Client,
-chat: proto.IWebMessageInfo,
+Fox: proto.IWebMessageInfo,
 AʀƈȶɨӼ: AʀƈȶɨӼ,
 args: string[],
 ӄʀʏȶɛӄ
@@ -46,7 +46,7 @@ if (args.length === 0) {
 await client.sendMessage(
 AʀƈȶɨӼ.chatId,
 {
-text: `✥𝐔𝐬𝐞𝐫: ${chat.pushName} 
+text: `✥𝐔𝐬𝐞𝐫: ${Fox.pushName} 
 
 Press Below To Read How To Use This Command!`,
 footer: "⦓ 𝐕𝐥𝐤𝐲𝐫𝐞 ⦔",
@@ -74,7 +74,7 @@ if (!SpotTrack.test(args[0])) {
 await client.sendMessage(
 AʀƈȶɨӼ.chatId,
 {
-text: `✥𝐔𝐬𝐞𝐫: ${chat.pushName} 
+text: `✥𝐔𝐬𝐞𝐫: ${Fox.pushName} 
 
 Press Below To Read How To Use This Command!`,
 footer: "⦓ 𝐕𝐥𝐤𝐲𝐫𝐞 ⦔",
@@ -102,7 +102,7 @@ await spdl.getInfo(args[0]).then(async (SpotGot) => {
 if (SpotGot.duration > 900000) {
 Image_Button.VImg(
 client,
-chat,
+Fox,
 AʀƈȶɨӼ,
 `❌𝗘𝗿𝗿𝗼𝗿: 𝗣𝗹𝗲𝗮𝘀𝗲 𝗖𝗵𝗼𝗼𝘀𝗲 𝗦𝗺𝗮𝗹𝗹𝗲𝗿 𝐀𝐮𝐝𝐢𝐨 𝗧𝗵𝗲𝗻 10-𝗺𝗶𝗻𝘂𝘁𝗲𝘀!
 
@@ -115,7 +115,7 @@ return;
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 Image_Button.VImg(
 client,
-chat,
+Fox,
 AʀƈȶɨӼ,
 `💡𝐈𝐧𝐟𝐨: In order to use this command:
 
@@ -144,11 +144,11 @@ fs.readFileSync(SpotFile),
 MessageType.audio,
 {
 mimetype: "audio/mp4",
-quoted: chat,
+quoted: Fox,
 }
 )
 .then(VOID.VOID(SpotFile))
-.catch((error: any) => Oops.VOp(client, chat, AʀƈȶɨӼ, error));
+.catch((error: any) => Oops.VOp(client, Fox, AʀƈȶɨӼ, error));
 });
 });
 },

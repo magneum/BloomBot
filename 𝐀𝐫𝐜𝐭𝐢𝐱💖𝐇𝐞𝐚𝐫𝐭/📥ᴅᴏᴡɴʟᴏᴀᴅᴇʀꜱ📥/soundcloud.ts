@@ -27,7 +27,7 @@ export = {
 name: dotScrpt,
 async handle(
 client: Client,
-chat: proto.IWebMessageInfo,
+Fox: proto.IWebMessageInfo,
 AʀƈȶɨӼ: AʀƈȶɨӼ,
 args: string[],
 ӄʀʏȶɛӄ
@@ -36,7 +36,7 @@ const ʟɴᴀᴍᴇ = AʀƈȶɨӼ.sender;
 const ᴅꜰɴᴀᴍᴇ = AʀƈȶɨӼ.commandName;
 const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/[^\d+]/g, "");
 const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
-var FFmpegFile = `./𝐀𝐫𝐜𝐭𝐢𝐱🐞𝐁𝐞𝐞𝐭𝐥𝐞/${Date.now()}_${chat.key.id}.mp3`;
+var FFmpegFile = `./𝐀𝐫𝐜𝐭𝐢𝐱🐞𝐁𝐞𝐞𝐭𝐥𝐞/${Date.now()}_${Fox.key.id}.mp3`;
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 console.log("💡Is Group: " + AʀƈȶɨӼ.isGroup);
 await client.getGroupMetaData(AʀƈȶɨӼ.chatId, AʀƈȶɨӼ);
@@ -47,7 +47,7 @@ if (args.length === 0) {
 await client.sendMessage(
 AʀƈȶɨӼ.chatId,
 {
-text: `✥𝐔𝐬𝐞𝐫: ${chat.pushName} 
+text: `✥𝐔𝐬𝐞𝐫: ${Fox.pushName} 
 
 Press Below To Read How To Use This Command!`,
 footer: "⦓ 𝐕𝐥𝐤𝐲𝐫𝐞 ⦔",
@@ -75,7 +75,7 @@ if (!SCTrack.test(args[0])) {
 await client.sendMessage(
 AʀƈȶɨӼ.chatId,
 {
-text: `✥𝐔𝐬𝐞𝐫: ${chat.pushName} 
+text: `✥𝐔𝐬𝐞𝐫: ${Fox.pushName} 
 
 Press Below To Read How To Use This Command!`,
 footer: "⦓ 𝐕𝐥𝐤𝐲𝐫𝐞 ⦔",
@@ -102,7 +102,7 @@ MessageType.buttonsMessage
 await ScrapperClient.getSongInfo(args[0]).then(async (song) => {
 Image_Button.VImg(
 client,
-chat,
+Fox,
 AʀƈȶɨӼ,
 `💡𝐈𝐧𝐟𝐨: In order to use this command:
 
@@ -124,7 +124,7 @@ const writer = stream.pipe(fs.createWriteStream(FFmpegFile));
 writer.on("finish", async (error) => {
 if (error) {
 console.log(`⬡═══════════════════| 🐞𝐄𝐫𝐫𝐨𝐫: \n` + error);
-return Oops.VOp(client, chat, AʀƈȶɨӼ, error);
+return Oops.VOp(client, Fox, AʀƈȶɨӼ, error);
 }
 console.log(`⬡════════| ⭐𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐅𝐢𝐧𝐢𝐬𝐞𝐝⭐ |════════⬡`);
 await client
@@ -132,10 +132,10 @@ await client
 AʀƈȶɨӼ.chatId,
 fs.readFileSync(FFmpegFile),
 MessageType.audio,
-{ quoted: chat, mimetype: "audio/mp4" }
+{ quoted: Fox, mimetype: "audio/mp4" }
 )
 .then(VOID.VOID(FFmpegFile))
-.catch((error: any) => Oops.VOp(client, chat, AʀƈȶɨӼ, error));
+.catch((error: any) => Oops.VOp(client, Fox, AʀƈȶɨӼ, error));
 return;
 });
 });

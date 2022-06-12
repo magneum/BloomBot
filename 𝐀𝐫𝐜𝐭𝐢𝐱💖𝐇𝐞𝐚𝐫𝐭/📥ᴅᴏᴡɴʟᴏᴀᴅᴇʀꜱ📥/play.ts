@@ -30,7 +30,7 @@ export = {
 name: dotScrpt,
 async handle(
 client: Client,
-chat: proto.IWebMessageInfo,
+Fox: proto.IWebMessageInfo,
 AʀƈȶɨӼ: AʀƈȶɨӼ,
 args: string[],
 ӄʀʏȶɛӄ
@@ -49,7 +49,7 @@ if (args.length === 0) {
 await client.sendMessage(
 AʀƈȶɨӼ.chatId,
 {
-text: `✥𝐔𝐬𝐞𝐫: ${chat.pushName} 
+text: `✥𝐔𝐬𝐞𝐫: ${Fox.pushName} 
 
 Press Below To Read How To Use This Command!`,
 footer: "⦓ 𝐕𝐥𝐤𝐲𝐫𝐞 ⦔",
@@ -79,7 +79,7 @@ if (!ytIdRegex.test(args[0])) {
 await client.sendMessage(
 AʀƈȶɨӼ.chatId,
 {
-text: `✥𝐔𝐬𝐞𝐫: ${chat.pushName} 
+text: `✥𝐔𝐬𝐞𝐫: ${Fox.pushName} 
 
 Press Below To Read How To Use This Command!`,
 footer: "⦓ 𝐕𝐥𝐤𝐲𝐫𝐞 ⦔",
@@ -113,7 +113,7 @@ FinalGot = args.join(" ");
 }
 const LinkFound = await yts(FinalGot);
 if (!LinkFound) {
-Text_List.VText(client, chat, AʀƈȶɨӼ, `❌𝗘𝗿𝗿𝗼𝗿: No Music Found!`);
+Text_List.VText(client, Fox, AʀƈȶɨӼ, `❌𝗘𝗿𝗿𝗼𝗿: No Music Found!`);
 return;
 }
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
@@ -122,7 +122,7 @@ Videos.forEach(async function (Found) {
 if (Found.seconds > 1800) {
 Image_Button.VImg(
 client,
-chat,
+Fox,
 AʀƈȶɨӼ,
 `❌𝗘𝗿𝗿𝗼𝗿: _Choose Smaller Audio less then 30mins!_
 
@@ -135,7 +135,7 @@ Found.thumbnail
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 // Image_Button.VImg(
 // client,
-// chat,
+// Fox,
 // AʀƈȶɨӼ,
 // `💡𝐈𝐧𝐟𝐨: In order to use this command:
 // ⭕️𝐘𝐨𝐮𝐓𝐮𝐛𝐞 𝐀𝐈: ${Found.title}
@@ -151,12 +151,12 @@ quality: "highest",
 ffmpeg(stream)
 .audioBitrate(320)
 .toFormat("ipod")
-.saveToFile(`./𝐀𝐫𝐜𝐭𝐢𝐱🐞𝐁𝐞𝐞𝐭𝐥𝐞/${chat.key.id}.mp3`)
+.saveToFile(`./𝐀𝐫𝐜𝐭𝐢𝐱🐞𝐁𝐞𝐞𝐭𝐥𝐞/${Fox.key.id}.mp3`)
 .on("end", async () => {
 await ӄʀʏȶɛӄ.sendPresenceUpdate("recording", AʀƈȶɨӼ.chatId);
 await Image_Button.VImg(
 client,
-chat,
+Fox,
 AʀƈȶɨӼ,
 `𝐘𝐨𝐮𝐓𝐮𝐛𝐞⭕️𝐌𝐮𝐬𝐢𝐜
 
@@ -173,11 +173,11 @@ Found.thumbnail
 await client
 .sendMessage(
 AʀƈȶɨӼ.chatId,
-fs.readFileSync(`./𝐀𝐫𝐜𝐭𝐢𝐱🐞𝐁𝐞𝐞𝐭𝐥𝐞/${chat.key.id}.mp3`),
+fs.readFileSync(`./𝐀𝐫𝐜𝐭𝐢𝐱🐞𝐁𝐞𝐞𝐭𝐥𝐞/${Fox.key.id}.mp3`),
 MessageType.audio
 )
-.then(VOID.VOID(`./𝐀𝐫𝐜𝐭𝐢𝐱🐞𝐁𝐞𝐞𝐭𝐥𝐞/${chat.key.id}.mp3`))
-.catch((error: any) => Oops.VOp(client, chat, AʀƈȶɨӼ, error));
+.then(VOID.VOID(`./𝐀𝐫𝐜𝐭𝐢𝐱🐞𝐁𝐞𝐞𝐭𝐥𝐞/${Fox.key.id}.mp3`))
+.catch((error: any) => Oops.VOp(client, Fox, AʀƈȶɨӼ, error));
 await ӄʀʏȶɛӄ.sendPresenceUpdate("available", AʀƈȶɨӼ.chatId);
 return;
 });
