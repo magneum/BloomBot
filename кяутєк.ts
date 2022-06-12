@@ -106,7 +106,7 @@ continue;
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 const { state, saveCreds } = await useRemoteFileAuthState(logger);
 const startSock = async () => {
-const ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇: WASocket = makeWASocket({
+const ӄʀʏȶɛӄ: WASocket = makeWASocket({
 logger,
 printQRInTerminal: true,
 auth: state,
@@ -116,20 +116,20 @@ return {};
 },
 });
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
-store?.bind(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.ev);
-ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.ev.on("group-participants.update", async (update) => {
-participants_update.participants_update(update, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇);
+store?.bind(ӄʀʏȶɛӄ.ev);
+ӄʀʏȶɛӄ.ev.on("group-participants.update", async (update) => {
+participants_update.participants_update(update, ӄʀʏȶɛӄ);
 });
-ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.ev.on("connection.update", (update) => {
+ӄʀʏȶɛӄ.ev.on("connection.update", (update) => {
 connection_update.connection_update(update, DisconnectReason, startSock);
 });
-ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.ev.on("messages.upsert", async (m) => {
-messages_upsert.messages_upsert(m, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, commandHandler);
+ӄʀʏȶɛӄ.ev.on("messages.upsert", async (m) => {
+messages_upsert.messages_upsert(m, ӄʀʏȶɛӄ, commandHandler);
 });
-ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.ev.on("creds.update", (creds) => {
+ӄʀʏȶɛӄ.ev.on("creds.update", (creds) => {
 saveCreds(creds);
 });
-return ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇;
+return ӄʀʏȶɛӄ;
 };
 startSock();
 })().catch((error) => console.log("[MAINERROR] : %s", Kolor.red(error)));
