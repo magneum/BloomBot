@@ -46,7 +46,7 @@ await client.sendMessage(
 `💡𝐈𝐧𝐟𝐨꧂ No Argument Provided.
 Using Default Layout..
 
-*Sticker Category:*
+*Sticker Category:* ᴋʀᴀᴋɪɴᴢʟᴀʙ™
 *Sticker Name:* `,
 MessageType.text,
 {
