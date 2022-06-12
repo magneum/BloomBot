@@ -18,10 +18,10 @@ const Downloader = require(`nodejs-file-downloader`);
 import ʟᴀʏᴏᴜᴛ from "../𝐀𝐫𝐜𝐭𝐢𝐱🀄𝐕𝐞𝐧𝐭/ʟᴀʏᴏᴜᴛ";
 import Client from "../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/client";
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
-const participants_update = async (update, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇): Promise<void> => {
-let client: Client = new Client(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇);
+const participants_update = async (update, ӄʀʏȶɛӄ): Promise<void> => {
+let client: Client = new Client(ӄʀʏȶɛӄ);
 const MemNum = update.participants[0];
-if (update.action == `add` && MemNum.includes(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.user.id)) {
+if (update.action == `add` && MemNum.includes(ӄʀʏȶɛӄ.user.id)) {
 await client.sendMessage(
 update.id,
 {
@@ -72,7 +72,7 @@ await newServer.save().catch((error) => console.log(error));
 }
 );
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
-} else if (update.action == `add` && !MemNum.includes(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.user.id)) {
+} else if (update.action == `add` && !MemNum.includes(ӄʀʏȶɛӄ.user.id)) {
 Welcome.findOne(
 {
 ID: update.id,
@@ -85,7 +85,7 @@ return;
 try {
 let 𝕻𝕻𝖑𝖊𝖙𝖊𝖗;
 try {
-𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.getProfilePicture(
+𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄʀʏȶɛӄ.getProfilePicture(
 `${MemNum.split(`@`)[0]}@c.us`
 );
 } catch {
@@ -99,9 +99,9 @@ fileName: `${Date.now().toString()}.png`,
 cloneFiles: false,
 });
 await downloader.download();
-const GroupMemData = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.groupMetadata(update.jid);
+const GroupMemData = await ӄʀʏȶɛӄ.groupMetadata(update.jid);
 const GroupMemG = GroupMemData.participants.length;
-const GroupMemBio = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.getStatus(
+const GroupMemBio = await ӄʀʏȶɛӄ.getStatus(
 update.participants[0],
 MessageType.text
 );
