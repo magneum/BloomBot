@@ -19,7 +19,12 @@ import { MessageType } from "../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨�
 Levels.setURL(ʟᴀʏᴏᴜᴛ.VMango);
 var color = randomMC.getColor();
 let 𝕻𝕻𝖑𝖊𝖙𝖊𝖗: any;
-const RankCheck = async (TUF: any, ӄʀʏȶɛӄ: any, Fox: any, AʀƈȶɨӼ: any) => {
+const RankCheck = async (
+TUF: any,
+ӄʀʏȶɛӄ: any,
+Fox: any,
+AʀƈȶɨӼ: any
+): Promise<void> => {
 var աɦօֆɛ = Math.floor(1000 + Math.random() * 9000);
 const ᴘɴᴀᴍᴇ = AʀƈȶɨӼ.sender.replace(/[^\d-]/g, "");
 try {
@@ -87,8 +92,7 @@ Personality = "👑";
 Personality = "🐾";
 }
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
-await TUF
-.sendMessage(
+await TUF.sendMessage(
 AʀƈȶɨӼ.chatId,
 {
 quoted: Fox.message,
