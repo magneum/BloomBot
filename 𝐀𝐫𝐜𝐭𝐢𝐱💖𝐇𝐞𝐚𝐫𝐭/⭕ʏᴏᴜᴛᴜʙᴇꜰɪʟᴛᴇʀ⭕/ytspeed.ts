@@ -15,7 +15,7 @@ const ytdl = require("ytdl-core");
 const yts = require("yt-search");
 const VOID = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/void`);
 import Client from "../../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/client";
-import νℓкуяιє from "../../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/msb";
+import AʀƈȶɨӼ from "../../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/msb";
 const ytIdRegex =
 /(?:http(?:s|):\/\/|)(?:(?:www\.|)youtube(?:\-nocookie|)\.com\/(?:watch\?.*(?:|\&)v=|embed\/|v\/)|youtu\.be\/)([-_0-9A-Za-z]{11})/;
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
@@ -29,23 +29,23 @@ name: dotScrpt,
 async handle(
 client: Client,
 chat: proto.IWebMessageInfo,
-νℓкуяιє: νℓкуяιє,
+AʀƈȶɨӼ: AʀƈȶɨӼ,
 args: string[],
 ӄʀʏȶɛӄ
 ): Promise<void> {
-const ʟɴᴀᴍᴇ = νℓкуяιє.sender;
-const ᴅꜰɴᴀᴍᴇ = νℓкуяιє.commandName;
+const ʟɴᴀᴍᴇ = AʀƈȶɨӼ.sender;
+const ᴅꜰɴᴀᴍᴇ = AʀƈȶɨӼ.commandName;
 const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/[^\d+]/g, "");
 const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
-console.log("💡Is Group: " + νℓкуяιє.isGroup);
-await client.getGroupMetaData(νℓкуяιє.chatId, νℓкуяιє);
-console.log("💡Is Bot Group Admin: " + νℓкуяιє.isBotGroupAdmin);
-console.log("💡Is Sender Group Admin: " + νℓкуяιє.isSenderGroupAdmin);
+console.log("💡Is Group: " + AʀƈȶɨӼ.isGroup);
+await client.getGroupMetaData(AʀƈȶɨӼ.chatId, AʀƈȶɨӼ);
+console.log("💡Is Bot Group Admin: " + AʀƈȶɨӼ.isBotGroupAdmin);
+console.log("💡Is Sender Group Admin: " + AʀƈȶɨӼ.isSenderGroupAdmin);
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 if (args.length === 0) {
 await client.sendMessage(
-νℓкуяιє.chatId,
+AʀƈȶɨӼ.chatId,
 {
 text: `✥𝐔𝐬𝐞𝐫: ${chat.pushName} 
 
@@ -75,7 +75,7 @@ MessageType.buttonsMessage
 if (args.includes("yout")) {
 if (!ytIdRegex.test(args[0])) {
 await client.sendMessage(
-νℓкуяιє.chatId,
+AʀƈȶɨӼ.chatId,
 {
 text: `✥𝐔𝐬𝐞𝐫: ${chat.pushName} 
 
@@ -111,7 +111,7 @@ FinalGot = args.join(" ");
 }
 const LinkFound = await yts(FinalGot);
 if (!LinkFound) {
-Text_List.VText(client, chat, νℓкуяιє, `❌𝗘𝗿𝗿𝗼𝗿: No Music Found!`);
+Text_List.VText(client, chat, AʀƈȶɨӼ, `❌𝗘𝗿𝗿𝗼𝗿: No Music Found!`);
 return;
 }
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
@@ -123,7 +123,7 @@ if (Found.seconds > 1800) {
 return Image_Button.VImg(
 client,
 chat,
-νℓкуяιє,
+AʀƈȶɨӼ,
 `❌𝗘𝗿𝗿𝗼𝗿: _Choose Smaller Video less then 30mins!_
 
 𝐘𝐨𝐮𝐓𝐮𝐛𝐞💿𝐅𝐢𝐥𝐭𝐞𝐫
@@ -141,11 +141,11 @@ ffmpeg(FFmpegStream)
 .toFormat("ipod")
 .saveToFile(FFmpegFile)
 .on("end", async () => {
-await ӄʀʏȶɛӄ.sendPresenceUpdate("recording", νℓкуяιє.chatId);
+await ӄʀʏȶɛӄ.sendPresenceUpdate("recording", AʀƈȶɨӼ.chatId);
 await Image_Button.VImg(
 client,
 chat,
-νℓкуяιє,
+AʀƈȶɨӼ,
 `𝐘𝐨𝐮𝐓𝐮𝐛𝐞💿𝐅𝐢𝐥𝐭𝐞𝐫
 
 🍻𝗧𝗶𝘁𝗹𝗲: ${Found.title}
@@ -162,19 +162,19 @@ require("child_process").exec(
 `ffmpeg -i ${FFmpegFile} -af "atempo=2" ${FilteredAudio}`,
 async (error) => {
 if (error) {
-return Oops.VOp(client, chat, νℓкуяιє, error);
+return Oops.VOp(client, chat, AʀƈȶɨӼ, error);
 }
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 await client
 .sendMessage(
-νℓкуяιє.chatId,
+AʀƈȶɨӼ.chatId,
 fs.readFileSync(FilteredAudio),
 MessageType.audio,
 {
 quoted: chat,
 }
 )
-.catch((error: any) => Oops.VOp(client, chat, νℓкуяιє, error));
+.catch((error: any) => Oops.VOp(client, chat, AʀƈȶɨӼ, error));
 await VOID.VOID(FFmpegFile, FilteredAudio);
 }
 );
