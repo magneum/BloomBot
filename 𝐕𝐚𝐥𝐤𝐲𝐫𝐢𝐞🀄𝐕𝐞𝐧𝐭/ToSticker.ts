@@ -1,23 +1,29 @@
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
+/*        
+(𝐜)𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬! 
+*/
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 import * as fs from "fs";
 import { Transform } from "stream";
 import ffmpeg from "fluent-ffmpeg";
 import { writeFile } from "fs/promises";
 const Oops = require(`../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞☘️𝐊𝐞𝐲𝐬/Oops`);
 const VOID = require(`../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/void`);
+const { Sticker } = require("wa-sticker-formatter");
 import { MessageType } from "../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/message-type";
-import { downloadContentFromMessage, proto } from "@adiwajshing/baileys";
-
+import { downloadContentFromMessage } from "@adiwajshing/baileys";
+("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 const ToSticker = async (
 client,
 chat,
+args,
 νℓкуяιє,
 imageId: string,
 replyChat: { message: any; type: any }
 ): Promise<void> => {
 try {
-const FileName: string = "./𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞🐞𝐁𝐞𝐞𝐭𝐥𝐞/Base-" + imageId;
-const ConvertedPath: string =
-"./𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞🐞𝐁𝐞𝐞𝐭𝐥𝐞/Sticker-" + imageId + ".webp";
+const FileName: string = "./converter-" + imageId;
+const ConvertedPath: string = "./sticker-" + imageId + ".webp";
 const stream: Transform = await downloadContentFromMessage(
 replyChat.message,
 replyChat.type
@@ -46,12 +52,14 @@ ffmpeg(FileName)
 if (error) {
 return Oops.VOp(client, chat, νℓкуяιє, error);
 }
+let ᴋʀᴀᴋɪɴᴢʟᴀʙ = await new Sticker(ConvertedPath, {
+type: "full",
+pack: args[0] || "☊ ʙʏ",
+author: "❝ ⌬𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ❞",
+categories: "ᴋʀᴀᴋɪɴᴢʟᴀʙ™",
+}).build();
 await client
-.sendMessage(
-νℓкуяιє.chatId,
-fs.readFileSync(ConvertedPath),
-MessageType.sticker
-)
+.sendMessage(νℓкуяιє.chatId, ᴋʀᴀᴋɪɴᴢʟᴀʙ, MessageType.sticker)
 .catch((error) => Oops.VOp(client, chat, νℓкуяιє, error));
 await VOID.VOID(FileName, ConvertedPath);
 });

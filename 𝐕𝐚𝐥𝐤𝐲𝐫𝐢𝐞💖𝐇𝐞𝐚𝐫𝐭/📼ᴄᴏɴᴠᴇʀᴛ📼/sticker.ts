@@ -49,7 +49,7 @@ message:
 type: νℓкуяιє.type,
 };
 var imageId: string = chat.key.id;
-await ToSticker.VStk(client, chat, νℓкуяιє, imageId, replyChatObject);
+await ToSticker.VStk(client, chat, args, νℓкуяιє, imageId, replyChatObject);
 } else if (
 νℓкуяιє.isReplyImage ||
 νℓкуяιє.isReplyGIF ||
@@ -65,7 +65,7 @@ type: νℓкуяιє.isReplyImage ? "image" : "video",
 };
 var imageId: string =
 chat.message.extendedTextMessage.contextInfo.stanzaId;
-await ToSticker.VStk(client, chat, νℓкуяιє, imageId, replyChatObject);
+await ToSticker.VStk(client, chat, args, νℓкуяιє, imageId, replyChatObject);
 }
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 } catch (error) {
