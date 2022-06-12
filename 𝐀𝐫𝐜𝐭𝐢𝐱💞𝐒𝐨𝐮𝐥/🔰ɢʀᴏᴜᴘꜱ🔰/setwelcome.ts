@@ -36,7 +36,7 @@ var dotScrpt = scriptName.slice(0, -3).toLowerCase();
 export = {
 name: dotScrpt,
 async handle(
-client: Client,
+TUF: Client,
 Fox: proto.IWebMessageInfo,
 AʀƈȶɨӼ: AʀƈȶɨӼ,
 ǟʀɢʊʍɛռȶ: string[],
@@ -49,7 +49,7 @@ const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/[^\d+]/g, "");
 const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 console.log("💡Is Group: " + AʀƈȶɨӼ.isGroup);
-await client.getGroupMetaData(AʀƈȶɨӼ.chatId, AʀƈȶɨӼ);
+await TUF.getGroupMetaData(AʀƈȶɨӼ.chatId, AʀƈȶɨӼ);
 console.log("💡Is Bot Group Admin: " + AʀƈȶɨӼ.isBotGroupAdmin);
 console.log("💡Is Sender Group Admin: " + AʀƈȶɨӼ.isSenderGroupAdmin);
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
@@ -60,7 +60,7 @@ await Welcome.findOne(
 ID: AʀƈȶɨӼ.chatId,
 },
 async (error, userWel) => {
-if (error) return Oops.VOp(client, Fox, AʀƈȶɨӼ, error);
+if (error) return Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error);
 try {
 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄʀʏȶɛӄ.profilePictureUrl(
 jidNormalizedUser(AʀƈȶɨӼ.chatId)
@@ -87,9 +87,9 @@ message: WelcomeNote,
 });
 await newServer
 .save()
-.catch((error) => Oops.VOp(client, Fox, AʀƈȶɨӼ, error));
+.catch((error) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
 return Image_Button.VImg(
-client,
+TUF,
 Fox,
 AʀƈȶɨӼ,
 `🥞 𝐖𝐞𝐥𝐜𝐨𝐦𝐞𝐫
@@ -103,9 +103,9 @@ ${WelcomeNote}`,
 userWel.message = WelcomeNote;
 await userWel
 .save()
-.catch((error) => Oops.VOp(client, Fox, AʀƈȶɨӼ, error));
+.catch((error) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
 return Image_Button.VImg(
-client,
+TUF,
 Fox,
 AʀƈȶɨӼ,
 `🥞 𝐖𝐞𝐥𝐜𝐨𝐦𝐞𝐫
@@ -118,7 +118,7 @@ ${WelcomeNote}`,
 } else if (ǟʀɢʊʍɛռȶ[0] === `off`) {
 if (!userWel) {
 return Image_Button.VImg(
-client,
+TUF,
 Fox,
 AʀƈȶɨӼ,
 `🥞 𝐖𝐞𝐥𝐜𝐨𝐦𝐞𝐫
@@ -130,9 +130,9 @@ AʀƈȶɨӼ,
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 await userWel
 .delete()
-.catch((error) => Oops.VOp(client, Fox, AʀƈȶɨӼ, error));
+.catch((error) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
 return Image_Button.VImg(
-client,
+TUF,
 Fox,
 AʀƈȶɨӼ,
 `🥞 𝐖𝐞𝐥𝐜𝐨𝐦𝐞𝐫
@@ -148,9 +148,9 @@ message: WelcomeNote,
 });
 await newServer
 .save()
-.catch((error) => Oops.VOp(client, Fox, AʀƈȶɨӼ, error));
+.catch((error) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
 return Image_Button.VImg(
-client,
+TUF,
 Fox,
 AʀƈȶɨӼ,
 `🥞 𝐖𝐞𝐥𝐜𝐨𝐦𝐞𝐫
@@ -162,7 +162,7 @@ ${WelcomeNote}`,
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 } else {
 return FoxNeeded.VFox(
-client,
+TUF,
 Fox,
 AʀƈȶɨӼ,
 `Option 1 - ${
@@ -179,7 +179,7 @@ dotScrpt
 );
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 } catch (error) {
-return Oops.VOp(client, Fox, AʀƈȶɨӼ, error);
+return Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error);
 }
 },
 };
