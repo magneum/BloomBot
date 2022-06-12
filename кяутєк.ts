@@ -30,14 +30,14 @@ const logger: Logger = Pot({
 timestamp: () => `,"Time":"${new Date().toJSON()}"`,
 }).child({});
 logger.level = "error";
-console.log(Kolor.yellow("💡𝐈𝐧𝐟𝐨꧂  Trying To Connect To '🍃mongo + 🕸️sql'"));
 const store = makeInMemoryStore({ logger });
 store?.readFromFile("./AʀƈȶɨӼ.json");
 setInterval(() => {
-store?.writeToFile("./AʀƈȶɨӼ.json");
+    store?.writeToFile("./AʀƈȶɨӼ.json");
 }, 10_000);
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 (async (): Promise<void> => {
+console.log(Kolor.yellow("💡𝐈𝐧𝐟𝐨꧂  Trying To Connect To '🍃mongo + 🕸️sql'"));
 try {
 await sequelize.authenticate();
 console.log(Kolor.green("💡𝐈𝐧𝐟𝐨꧂  Connected with 🕸️SQL."));
