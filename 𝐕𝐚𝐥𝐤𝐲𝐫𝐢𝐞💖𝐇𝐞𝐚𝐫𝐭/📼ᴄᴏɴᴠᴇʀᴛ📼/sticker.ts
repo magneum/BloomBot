@@ -40,22 +40,6 @@ await client.getGroupMetaData(νℓкуяιє.chatId, νℓкуяιє);
 console.log("💡Is Bot Group Admin: " + νℓкуяιє.isBotGroupAdmin);
 console.log("💡Is Sender Group Admin: " + νℓкуяιє.isSenderGroupAdmin);
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
-if (args.length === 0 && !args) {
-await client.sendMessage(
-νℓкуяιє.chatId,
-`💡𝐈𝐧𝐟𝐨꧂ No Sticker Title Provided.
-Using Default Layout..
-
-*Sticker Title:* ʙʏ,
-*Sticker Author:* ⌬𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞
-*Sticker Category:* ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
-MessageType.text,
-{
-quoted: true,
-}
-);
-}
-("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 if (νℓкуяιє.isImage || νℓкуяιє.isGIF || νℓкуяιє.isVideo) {
 var FileSocketObject = {
 message:
@@ -119,7 +103,7 @@ description: `💡𝐈𝐧𝐟𝐨: In order to use this command, you must follo
 Option 1 - reply to media: ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()}
 Option 2 - reply to media: ${
 ʟᴀʏᴏᴜᴛ.MuveOn
-}${dotScrpt.toUpperCase()} _<sticker name is optional>_
+}${dotScrpt.toUpperCase()} _<sticker title>_
 
 ╔════◇ *Supported Media Types* ꧂
 ║- Image
@@ -138,7 +122,42 @@ MessageType.buttonsMessage
 }
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 } catch (error) {
-return Oops.VOp(client, chat, νℓкуяιє, error);
+await client.sendMessage(
+νℓкуяιє.chatId,
+{
+text: `✥𝐔𝐬𝐞𝐫: ${chat.pushName} 
+
+Press Below To Read How To Use This Command!`,
+footer: "⦓ 𝐕𝐥𝐤𝐲𝐫𝐞 ⦔",
+title: `🔸𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()}`,
+buttonText: "❝ How To Use? ❞",
+sections: [
+{
+title: "𝐀𝐑𝐆𝐔𝐌𝐄𝐍𝐓 𝐍𝐄𝐄𝐃𝐄𝐃!",
+rows: [
+{
+title: "⚡𝐔𝐬𝐚𝐠𝐞",
+rowId: "argument required...",
+description: `💡𝐈𝐧𝐟𝐨: In order to use this command, you must follow below instructions:
+Option 1 - reply to media: ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()}
+Option 2 - reply to media: ${
+ʟᴀʏᴏᴜᴛ.MuveOn
+}${dotScrpt.toUpperCase()} _<sticker title>_
+
+╔════◇ *Supported Media Types* ꧂
+║- Image
+║- Video (10s)
+║- PNG
+║- JPEG
+║- WEBP
+╚════════════╝`,
+},
+],
+},
+],
+},
+MessageType.buttonsMessage
+);
 }
 },
 };
