@@ -35,8 +35,8 @@ return;
 if (m.type !== "notify") {
 return;
 }
-let chat: proto.IWebMessageInfo = m.messages[0];
-let AʀƈȶɨӼ: AʀƈȶɨӼ = await resolve(chat, ӄʀʏȶɛӄ);
+let Fox: proto.IWebMessageInfo = m.messages[0];
+let AʀƈȶɨӼ: AʀƈȶɨӼ = await resolve(Fox, ӄʀʏȶɛӄ);
 let client: Client = new Client(ӄʀʏȶɛӄ);
 if (AʀƈȶɨӼ.isCmd) {
 console.log(AʀƈȶɨӼ);
@@ -44,20 +44,20 @@ console.log(Kolor.red(`💡𝐈𝐧𝐟𝐨꧂  ${AʀƈȶɨӼ.commandName} comma
 const command = commandHandler.get(AʀƈȶɨӼ.commandName);
 var args = AʀƈȶɨӼ.body.trim().split(/\s+/).slice(1);
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
-await Silent.VSln(client, chat, AʀƈȶɨӼ, ӄʀʏȶɛӄ);
-await Link_Proctectron.VFLink(client, chat, AʀƈȶɨӼ, ӄʀʏȶɛӄ);
+await Silent.VSln(client, Fox, AʀƈȶɨӼ, ӄʀʏȶɛӄ);
+await Link_Proctectron.VFLink(client, Fox, AʀƈȶɨӼ, ӄʀʏȶɛӄ);
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 if (!command) {
 await client.sendMessage(
 AʀƈȶɨӼ.chatId,
 {
-quoted: chat.message,
+quoted: Fox.message,
 contextInfo: {
 mentionedJid: [AʀƈȶɨӼ.sender],
 },
 timestamp: Date(),
 image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png" },
-caption: `✥𝐔𝐬𝐞𝐫: ${chat.pushName}
+caption: `✥𝐔𝐬𝐞𝐫: ${Fox.pushName}
 
 *❌𝗘𝗿𝗿𝗼𝗿:* No Such Command In Database.`,
 footer: `⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔`,
@@ -75,7 +75,7 @@ MessageType.buttonsMessage
 }
 // else if (command && AʀƈȶɨӼ.commandName == "help") {
 // try {
-// command.handle(client, chat, AʀƈȶɨӼ, args, commandHandler);
+// command.handle(client, Fox, AʀƈȶɨӼ, args, commandHandler);
 // return;
 // } catch (err) {
 // console.log(Kolor.red("❌𝐄𝐫𝐫𝐨𝐫꧂ ", err));
@@ -85,7 +85,7 @@ MessageType.buttonsMessage
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 try {
 await command
-.handle(client, chat, AʀƈȶɨӼ, args, ӄʀʏȶɛӄ)
+.handle(client, Fox, AʀƈȶɨӼ, args, ӄʀʏȶɛӄ)
 .catch((err) => console.log("❌𝐄𝐫𝐫𝐨𝐫꧂ " + err));
 } catch (err) {
 console.log(Kolor.red("❌𝐄𝐫𝐫𝐨𝐫꧂ ", err));
