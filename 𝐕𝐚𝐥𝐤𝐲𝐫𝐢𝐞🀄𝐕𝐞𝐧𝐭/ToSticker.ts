@@ -75,12 +75,12 @@ quoted: true,
 );
 await client
 .sendMessage(νℓкуяιє.chatId, ᴋʀᴀᴋɪɴᴢʟᴀʙ, MessageType.sticker)
-.catch((error) => Oops.VOp(client, chat, νℓкуяιє, error));
+.catch((error: any) => Oops.VOp(client, chat, νℓкуяιє, error));
 await VOID.VOID(FileName, ConvertedPath);
 } else {
 await client
 .sendMessage(νℓкуяιє.chatId, ᴋʀᴀᴋɪɴᴢʟᴀʙ, MessageType.sticker)
-.catch((error) => Oops.VOp(client, chat, νℓкуяιє, error));
+.catch((error: any) => Oops.VOp(client, chat, νℓкуяιє, error));
 await VOID.VOID(FileName, ConvertedPath);
 }
 });
@@ -130,12 +130,12 @@ quoted: true,
 );
 await client
 .sendMessage(νℓкуяιє.chatId, ᴋʀᴀᴋɪɴᴢʟᴀʙ, MessageType.sticker)
-.catch((error) => Oops.VOp(client, chat, νℓкуяιє, error));
+.catch((error: any) => Oops.VOp(client, chat, νℓкуяιє, error));
 await VOID.VOID(FileName, ConvertedPath);
 } else {
 await client
 .sendMessage(νℓкуяιє.chatId, ᴋʀᴀᴋɪɴᴢʟᴀʙ, MessageType.sticker)
-.catch((error) => Oops.VOp(client, chat, νℓкуяιє, error));
+.catch((error: any) => Oops.VOp(client, chat, νℓкуяιє, error));
 await VOID.VOID(FileName, ConvertedPath);
 }
 });
