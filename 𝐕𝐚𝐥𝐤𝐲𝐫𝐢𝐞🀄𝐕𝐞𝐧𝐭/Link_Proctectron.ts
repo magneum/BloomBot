@@ -43,7 +43,6 @@ serverID: νℓкуяιє.chatId,
 async (error: any, server: any) => {
 if (error) return console.log(error);
 if (!server) return;
-
 let FetchCurrentGroupLink = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.groupInviteCode(
 νℓкуяιє.chatId
 );
