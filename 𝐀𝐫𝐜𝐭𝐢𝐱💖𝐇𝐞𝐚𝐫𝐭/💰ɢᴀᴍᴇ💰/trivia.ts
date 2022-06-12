@@ -26,7 +26,7 @@ var dotScrpt = scriptName.slice(0, -3).toLowerCase();
 export = {
 name: dotScrpt,
 async handle(
-client: Client,
+TUF: Client,
 Fox: proto.IWebMessageInfo,
 AʀƈȶɨӼ: AʀƈȶɨӼ,
 ǟʀɢʊʍɛռȶ: string[],
@@ -39,7 +39,7 @@ const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/[^\d+]/g, "");
 const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 console.log("💡Is Group: " + AʀƈȶɨӼ.isGroup);
-await client.getGroupMetaData(AʀƈȶɨӼ.chatId, AʀƈȶɨӼ);
+await TUF.getGroupMetaData(AʀƈȶɨӼ.chatId, AʀƈȶɨӼ);
 console.log("💡Is Bot Group Admin: " + AʀƈȶɨӼ.isBotGroupAdmin);
 console.log("💡Is Sender Group Admin: " + AʀƈȶɨӼ.isSenderGroupAdmin);
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
@@ -50,7 +50,7 @@ amount: 1,
 difficulty: "eazy",
 }).then(async (questions) => {
 return Image_Button.VImg(
-client,
+TUF,
 Fox,
 AʀƈȶɨӼ,
 `
@@ -68,7 +68,7 @@ amount: 1,
 difficulty: "medium",
 }).then(async (questions) => {
 return Image_Button.VImg(
-client,
+TUF,
 Fox,
 AʀƈȶɨӼ,
 `
@@ -86,7 +86,7 @@ amount: 1,
 difficulty: "hard",
 }).then(async (questions) => {
 return Image_Button.VImg(
-client,
+TUF,
 Fox,
 AʀƈȶɨӼ,
 `
@@ -98,7 +98,7 @@ AʀƈȶɨӼ,
 });
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 } else {
-await client.sendMessage(
+await TUF.sendMessage(
 AʀƈȶɨӼ.chatId,
 {
 text: `✥𝐔𝐬𝐞𝐫: ${Fox.pushName} 
@@ -128,7 +128,7 @@ MessageType.buttonsMessage
 );
 }
 } catch (error) {
-return Oops.VOp(client, Fox, AʀƈȶɨӼ, error);
+return Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error);
 }
 },
 };
