@@ -27,7 +27,7 @@ import participants_update from "./𝐀𝐫𝐜𝐭𝐢𝐱💥𝐄𝐯𝐞𝐧�
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 const sequelize: Sequelize = ʟᴀʏᴏᴜᴛ.DATABASE;
 const logger: Logger = P({
-timestamp: () => `,"time":"${new Date().toJSON()}"`,
+timestamp: () => `,"Time":"${new Date().toJSON()}"`,
 }).child({});
 logger.level = "error";
 console.log(Kolor.yellow("💡𝐈𝐧𝐟𝐨꧂  Trying To Connect To '🍃mongo + 🕸️sql'"));
