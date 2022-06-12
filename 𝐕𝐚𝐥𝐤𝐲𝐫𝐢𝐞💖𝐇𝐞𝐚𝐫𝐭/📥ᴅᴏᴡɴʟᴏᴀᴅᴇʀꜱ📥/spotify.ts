@@ -148,7 +148,7 @@ quoted: chat,
 }
 )
 .then(VOID.VOID(SpotFile))
-.catch((error) => Oops.VOp(client, chat, νℓкуяιє, error));
+.catch((error: any) => Oops.VOp(client, chat, νℓкуяιє, error));
 });
 });
 },

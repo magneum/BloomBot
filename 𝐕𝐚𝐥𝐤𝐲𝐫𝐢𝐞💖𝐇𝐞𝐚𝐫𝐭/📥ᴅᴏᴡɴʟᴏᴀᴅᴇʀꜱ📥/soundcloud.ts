@@ -135,7 +135,7 @@ MessageType.audio,
 { quoted: chat, mimetype: "audio/mp4" }
 )
 .then(VOID.VOID(FFmpegFile))
-.catch((error) => Oops.VOp(client, chat, νℓкуяιє, error));
+.catch((error: any) => Oops.VOp(client, chat, νℓкуяιє, error));
 return;
 });
 });

@@ -174,7 +174,7 @@ MessageType.audio,
 quoted: chat,
 }
 )
-.catch((error) => Oops.VOp(client, chat, νℓкуяιє, error));
+.catch((error: any) => Oops.VOp(client, chat, νℓкуяιє, error));
 await VOID.VOID(FFmpegFile, FilteredAudio);
 }
 );

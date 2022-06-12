@@ -123,7 +123,7 @@ url: url,
 },
 MessageType.audio
 )
-.catch((error) => Oops.VOp(client, chat, νℓкуяιє, error));
+.catch((error: any) => Oops.VOp(client, chat, νℓкуяιє, error));
 }
 } catch (error) {
 return Oops.VOp(client, chat, νℓкуяιє, error);

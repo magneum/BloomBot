@@ -112,7 +112,7 @@ caption: `⦓ 𝐕𝐥𝐤𝐲𝐫𝐞 ⦔
 contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ, TagMention] },
 }
 )
-.catch((error) => Oops.VOp(client, chat, νℓкуяιє, error));
+.catch((error: any) => Oops.VOp(client, chat, νℓкуяιє, error));
 return await VOID.VOID(GiveFile, GotFile);
 });
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
@@ -143,7 +143,7 @@ caption: `⦓ 𝐕𝐥𝐤𝐲𝐫𝐞 ⦔
 contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
 }
 )
-.catch((error) => Oops.VOp(client, chat, νℓкуяιє, error));
+.catch((error: any) => Oops.VOp(client, chat, νℓкуяιє, error));
 return await VOID.VOID(GiveFile, GotFile);
 });
 } else
@@ -171,7 +171,7 @@ caption: `⦓ 𝐕𝐥𝐤𝐲𝐫𝐞 ⦔
 contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ, Receiver] },
 }
 )
-.catch((error) => Oops.VOp(client, chat, νℓкуяιє, error));
+.catch((error: any) => Oops.VOp(client, chat, νℓкуяιє, error));
 return await VOID.VOID(GiveFile, GotFile);
 });
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
@@ -199,7 +199,7 @@ caption: `⦓ 𝐕𝐥𝐤𝐲𝐫𝐞 ⦔
 contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
 }
 )
-.catch((error) => Oops.VOp(client, chat, νℓкуяιє, error));
+.catch((error: any) => Oops.VOp(client, chat, νℓкуяιє, error));
 return await VOID.VOID(GiveFile, GotFile);
 });
 } catch (error) {

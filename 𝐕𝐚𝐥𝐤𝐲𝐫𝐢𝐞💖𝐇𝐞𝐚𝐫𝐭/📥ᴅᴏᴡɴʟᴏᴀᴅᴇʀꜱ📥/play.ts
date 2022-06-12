@@ -177,7 +177,7 @@ fs.readFileSync(`./𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞🐞𝐁𝐞𝐞𝐭𝐥𝐞/
 MessageType.audio
 )
 .then(VOID.VOID(`./𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞🐞𝐁𝐞𝐞𝐭𝐥𝐞/${chat.key.id}.mp3`))
-.catch((error) => Oops.VOp(client, chat, νℓкуяιє, error));
+.catch((error: any) => Oops.VOp(client, chat, νℓкуяιє, error));
 await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendPresenceUpdate("available", νℓкуяιє.chatId);
 return;
 });
