@@ -15,9 +15,9 @@ import { downloadContentFromMessage } from "@adiwajshing/baileys";
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 const ToSticker = async (
 client: any,
-chat,
-args,
-νℓкуяιє,
+chat: any,
+args: any,
+νℓкуяιє: any,
 FileID: string,
 FileSocket: { message: any; type: any }
 ): Promise<void> => {
