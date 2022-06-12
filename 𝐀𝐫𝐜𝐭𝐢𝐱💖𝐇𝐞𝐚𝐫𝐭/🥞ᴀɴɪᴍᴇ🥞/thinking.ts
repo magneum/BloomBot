@@ -107,7 +107,7 @@ MessageType.video,
 {
 mimetype: `video/gif`,
 quoted: Fox,
-caption: `⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔
+caption: `⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ⦔
 
 🍕𝐅𝐫𝐨𝐦: _${Fox.pushName}_
 🌭𝐓𝐨: @${TagPerson}`,
@@ -139,7 +139,7 @@ MessageType.video,
 {
 mimetype: `video/gif`,
 quoted: Fox,
-caption: `⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔
+caption: `⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ⦔
 
 🍕𝐅𝐨𝐫: _${Fox.pushName}_`,
 contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
@@ -166,7 +166,7 @@ MessageType.video,
 {
 mimetype: `video/gif`,
 quoted: Fox,
-caption: `⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔
+caption: `⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ⦔
 
 🍕𝐅𝐫𝐨𝐦: _${Fox.pushName}_
 🌭𝐓𝐨: _@${քɛʀֆօռɢօȶռʊʍ}_`,
@@ -195,7 +195,7 @@ MessageType.video,
 {
 mimetype: `video/gif`,
 quoted: Fox,
-caption: `⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔
+caption: `⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ⦔
 
 🍕𝐅𝐨𝐫: _${Fox.pushName}_`,
 contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
