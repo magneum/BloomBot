@@ -122,7 +122,17 @@ FileSocketObject
         rowId: "argument required...",
         description: `💡𝐈𝐧𝐟𝐨: In order to use this command, you must follow below instructions:
         Option 1 - ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()} _song name_
-        Option 2 - ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()} _youtube link_`,
+        Option 2 - ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()} _youtube link_
+        
+        ╔════◇ *Supported Media Types* ꧂
+║- Image
+║- Video (10s)
+║- PNG
+║- JPEG
+║- WEBP
+║- URL-PNG
+║- URL-JPEG
+╚════════════╝`,
         },
         ],
         },
