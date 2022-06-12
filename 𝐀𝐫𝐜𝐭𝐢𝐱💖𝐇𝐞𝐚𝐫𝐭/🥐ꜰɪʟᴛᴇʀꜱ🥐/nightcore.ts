@@ -27,7 +27,7 @@ var dotScrpt = scriptName.slice(0, -3).toLowerCase();
 export = {
 name: dotScrpt,
 async handle(
-client: Client,
+TUF: Client,
 Fox: proto.IWebMessageInfo,
 AʀƈȶɨӼ: AʀƈȶɨӼ,
 ǟʀɢʊʍɛռȶ: string[],
@@ -40,7 +40,7 @@ const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/[^\d+]/g, "");
 const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 console.log("💡Is Group: " + AʀƈȶɨӼ.isGroup);
-await client.getGroupMetaData(AʀƈȶɨӼ.chatId, AʀƈȶɨӼ);
+await TUF.getGroupMetaData(AʀƈȶɨӼ.chatId, AʀƈȶɨӼ);
 console.log("💡Is Bot Group Admin: " + AʀƈȶɨӼ.isBotGroupAdmin);
 console.log("💡Is Sender Group Admin: " + AʀƈȶɨӼ.isSenderGroupAdmin);
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
@@ -66,7 +66,7 @@ await writeFile(fileName, buffer);
 };
 await saveBuffer(FileName, stream).then(() =>
 Filter_Media.VFmedia(
-client,
+TUF,
 Fox,
 AʀƈȶɨӼ,
 FileName,
@@ -90,7 +90,7 @@ await AudioSender(fid, replyChatObject);
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 } else {
 return FoxNeeded.VFox(
-client,
+TUF,
 Fox,
 AʀƈȶɨӼ,
 `Option 1 - ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()} _reply to any audio in the chat_`,
@@ -98,7 +98,7 @@ dotScrpt
 );
 }
 } catch (error) {
-return Oops.VOp(client, Fox, AʀƈȶɨӼ, error);
+return Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error);
 }
 },
 };
