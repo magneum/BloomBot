@@ -29,7 +29,7 @@ await client
 fs.readFileSync(ConvertedName),
 MessageType.audio
 )
-.catch((error) => Oops.VOp(client, chat, νℓкуяιє, error));
+.catch((error: any) => Oops.VOp(client, chat, νℓкуяιє, error));
 await VOID.VOID(FileName, ConvertedName);
 }
 );
