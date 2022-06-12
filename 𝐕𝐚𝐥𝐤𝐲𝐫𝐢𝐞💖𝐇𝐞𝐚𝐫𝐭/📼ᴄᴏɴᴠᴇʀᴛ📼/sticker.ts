@@ -124,7 +124,7 @@ FileSocketObject
         Option 1 - ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()} _song name_
         Option 2 - ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()} _youtube link_
         
-        ╔════◇ *Supported Media Types* ꧂
+╔════◇ *Supported Media Types* ꧂
 ║- Image
 ║- Video (10s)
 ║- PNG
