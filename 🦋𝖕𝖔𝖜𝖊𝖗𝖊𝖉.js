@@ -22,7 +22,7 @@ shell.exit(1);
 }
 if (
 shell.exec(
-`git pull && git add --all && git commit -am "❝ ⒸAʀƈȶɨӼ: ${
+`git pull && git add --all && git commit -am "❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 : ${
 vers.vers
 } 🦋 𝐃𝐚𝐭𝐞: ${
 year +
