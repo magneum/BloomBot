@@ -19,7 +19,7 @@ import { MessageType } from "../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨�
 Levels.setURL(ʟᴀʏᴏᴜᴛ.VMango);
 var color = randomMC.getColor();
 let 𝕻𝕻𝖑𝖊𝖙𝖊𝖗: any;
-const RankCheck = async (client: any, ӄʀʏȶɛӄ: any, Fox: any, AʀƈȶɨӼ: any) => {
+const RankCheck = async (TUF: any, ӄʀʏȶɛӄ: any, Fox: any, AʀƈȶɨӼ: any) => {
 var աɦօֆɛ = Math.floor(1000 + Math.random() * 9000);
 const ᴘɴᴀᴍᴇ = AʀƈȶɨӼ.sender.replace(/[^\d-]/g, "");
 try {
@@ -87,7 +87,7 @@ Personality = "👑";
 Personality = "🐾";
 }
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
-await client
+await TUF
 .sendMessage(
 AʀƈȶɨӼ.chatId,
 {
@@ -113,7 +113,7 @@ headerType: 4,
 MessageType.buttonsMessage
 )
 .then(VOID.VOID(expFile))
-.catch((error: any) => Oops.VOp(client, Fox, AʀƈȶɨӼ, error));
+.catch((error: any) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
 return;
 });
 });
