@@ -19,14 +19,14 @@ chat,
 args,
 νℓкуяιє,
 FileID: string,
-replyChat: { message: any; type: any }
+FileSocket: { message: any; type: any }
 ): Promise<void> => {
 try {
 const FileName: string = "./converter-" + FileID;
 const ConvertedPath: string = "./sticker-" + FileID + ".webp";
 const stream: Transform = await downloadContentFromMessage(
-replyChat.message,
-replyChat.type
+FileSocket.message,
+FileSocket.type
 );
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 const saveBuffer = async (

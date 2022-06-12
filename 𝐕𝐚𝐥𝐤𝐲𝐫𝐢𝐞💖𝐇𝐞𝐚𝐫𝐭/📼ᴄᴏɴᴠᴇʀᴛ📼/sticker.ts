@@ -41,7 +41,7 @@ console.log("💡Is Bot Group Admin: " + νℓкуяιє.isBotGroupAdmin);
 console.log("💡Is Sender Group Admin: " + νℓкуяιє.isSenderGroupAdmin);
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 if (νℓкуяιє.isImage || νℓкуяιє.isGIF || νℓкуяιє.isVideo) {
-var replyChatObject = {
+var FileSocketObject = {
 message:
 νℓкуяιє.type === "image"
 ? chat.message.imageMessage
@@ -49,13 +49,13 @@ message:
 type: νℓкуяιє.type,
 };
 var imageId: string = chat.key.id;
-await ToSticker.VStk(client, chat, args, νℓкуяιє, imageId, replyChatObject);
+await ToSticker.VStk(client, chat, args, νℓкуяιє, imageId, FileSocketObject);
 } else if (
 νℓкуяιє.isReplyImage ||
 νℓкуяιє.isReplyGIF ||
 νℓкуяιє.isReplyVideo
 ) {
-var replyChatObject = {
+var FileSocketObject = {
 message: νℓкуяιє.isReplyImage
 ? chat.message.extendedTextMessage.contextInfo.quotedMessage
 .imageMessage
@@ -65,7 +65,7 @@ type: νℓкуяιє.isReplyImage ? "image" : "video",
 };
 var imageId: string =
 chat.message.extendedTextMessage.contextInfo.stanzaId;
-await ToSticker.VStk(client, chat, args, νℓкуяιє, imageId, replyChatObject);
+await ToSticker.VStk(client, chat, args, νℓкуяιє, imageId, FileSocketObject);
 }
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 } catch (error) {
