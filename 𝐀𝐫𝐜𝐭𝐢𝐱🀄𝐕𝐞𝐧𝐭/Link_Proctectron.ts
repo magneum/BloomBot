@@ -24,7 +24,7 @@ const Halt = require(`../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜�
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 const Link_Proctectron = async (
 client: any,
-chat: any,
+Fox: any,
 AʀƈȶɨӼ: any,
 ӄʀʏȶɛӄ: any
 ): Promise<void> => {
@@ -44,10 +44,10 @@ async (error: any, server: any) => {
 if (error) return console.log(error);
 if (!server) return;
 let FetchCurrentGroupLink = await ӄʀʏȶɛӄ.groupInviteCode(AʀƈȶɨӼ.chatId);
-let GroupLinkRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i;
+let GroupLinkRegex = /Fox.whatsapp.com\/([0-9A-Za-z]{20,24})/i;
 let isGroupLink = GroupLinkRegex.exec(AʀƈȶɨӼ.body);
 let PresentGroupLink = new RegExp(
-`https://chat.whatsapp.com/${FetchCurrentGroupLink}`,
+`https://Fox.whatsapp.com/${FetchCurrentGroupLink}`,
 "i"
 );
 let isCurrentGroupLink = PresentGroupLink.test(AʀƈȶɨӼ.body);
@@ -55,7 +55,7 @@ let isCurrentGroupLink = PresentGroupLink.test(AʀƈȶɨӼ.body);
 if (isGroupLink && !isCurrentGroupLink && !AʀƈȶɨӼ.isCmd) {
 await Image_Button.VImg(
 client,
-chat,
+Fox,
 AʀƈȶɨӼ,
 `╔◇═══════════════◇╗
 ┊ 𝐊𝐫𝐲𝐙𝐞𝐧❌𝐀𝐧𝐭𝐢-𝐋𝐢𝐧𝐤
@@ -88,7 +88,7 @@ AʀƈȶɨӼ.body.includes("www.")
 ) {
 await Image_Button.VImg(
 client,
-chat,
+Fox,
 AʀƈȶɨӼ,
 `╔◇═══════════════◇╗
 ┊ 𝐊𝐫𝐲𝐙𝐞𝐧❌𝐀𝐧𝐭𝐢-𝐋𝐢𝐧𝐤
