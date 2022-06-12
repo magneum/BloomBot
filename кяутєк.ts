@@ -17,7 +17,7 @@ import Kolor from "chalk";
 import { join } from "path";
 import Vmangos from "mongoose";
 import P, { Logger } from "pino";
-import ʟᴀʏᴏᴜᴛ from "./𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞🀄𝐕𝐞𝐧𝐭/ʟᴀʏᴏᴜᴛ";
+import ʟᴀʏᴏᴜᴛ from "./����𝐢�🀄𝐕𝐞𝐧𝐭/ʟᴀʏᴏᴜᴛ";
 import Command from "./����𝐢�⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/command";
 import { Sequelize } from "sequelize/types";
 import useRemoteFileAuthState from "./����𝐢�⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/dbAuth";
