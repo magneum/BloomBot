@@ -48,8 +48,8 @@ message:
 : chat.message.videoMessage,
 type: νℓкуяιє.type,
 };
-var imageId: string = chat.key.id;
-await ToSticker.VStk(client, chat, args, νℓкуяιє, imageId, FileSocketObject);
+var FileID: string = chat.key.id;
+await ToSticker.VStk(client, chat, args, νℓкуяιє, FileID, FileSocketObject);
 } else if (
 νℓкуяιє.isReplyImage ||
 νℓкуяιє.isReplyGIF ||
@@ -63,9 +63,9 @@ message: νℓкуяιє.isReplyImage
 .videoMessage,
 type: νℓкуяιє.isReplyImage ? "image" : "video",
 };
-var imageId: string =
+var FileID: string =
 chat.message.extendedTextMessage.contextInfo.stanzaId;
-await ToSticker.VStk(client, chat, args, νℓкуяιє, imageId, FileSocketObject);
+await ToSticker.VStk(client, chat, args, νℓкуяιє, FileID, FileSocketObject);
 }
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 } catch (error) {
