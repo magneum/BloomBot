@@ -24,7 +24,7 @@ async handle(
 client: Client,
 Fox: proto.IWebMessageInfo,
 AʀƈȶɨӼ: AʀƈȶɨӼ,
-args: string[],
+ǟʀɢʊʍɛռȶ: string[],
 ӄʀʏȶɛӄ: any
 ): Promise<void> {
 const ʟɴᴀᴍᴇ = AʀƈȶɨӼ.sender;
