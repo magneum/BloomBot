@@ -43,12 +43,12 @@ console.log("💡Is Sender Group Admin: " + νℓкуяιє.isSenderGroupAdmin);
 if (args.length === 0 && !args) {
 await client.sendMessage(
 νℓкуяιє.chatId,
-`💡𝐈𝐧𝐟𝐨꧂ No Argument Provided.
+`💡𝐈𝐧𝐟𝐨꧂ No Sticker Title Provided.
 Using Default Layout..
 
-*Sticker Category:* ᴋʀᴀᴋɪɴᴢʟᴀʙ™
-⌬𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞
-*Sticker Name:* `,
+*Sticker Title:* ʙʏ,
+*Sticker Author:* ⌬𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞
+*Sticker Category:* ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
 MessageType.text,
 {
 quoted: true,
