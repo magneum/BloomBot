@@ -93,7 +93,7 @@ setInterval(() => {
     finally {
         console.log(chalk_1.default.green("💡𝐈𝐧𝐟𝐨: Connected with 🍃MONGO."));
     }
-    console.log(chalk_1.default.green("💡𝐈𝐧𝐟𝐨: Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 connected to servers and verified...."));
+    console.log(chalk_1.default.green("💡𝐈𝐧𝐟𝐨: Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 connected to servers and verified..."));
     //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
     let commandHandler = new Map();
     let Folders = fs_1.default.readdirSync((0, path_1.join)(__dirname, "𝐀𝐫𝐜𝐭𝐢𝐱💞𝐒𝐨𝐮𝐥"));
