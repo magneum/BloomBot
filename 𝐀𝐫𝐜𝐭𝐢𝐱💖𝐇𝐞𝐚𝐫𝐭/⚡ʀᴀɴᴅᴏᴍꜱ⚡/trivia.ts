@@ -25,7 +25,7 @@ export = {
 name: dotScrpt,
 async handle(
 client: Client,
-chat: proto.IWebMessageInfo,
+Fox: proto.IWebMessageInfo,
 AʀƈȶɨӼ: AʀƈȶɨӼ,
 args: string[],
 ӄʀʏȶɛӄ
@@ -49,7 +49,7 @@ difficulty: "eazy",
 }).then(async (questions) => {
 return Image_Button.VImg(
 client,
-chat,
+Fox,
 AʀƈȶɨӼ,
 `
 ❓𝗤𝘂𝗲𝘀𝘁𝗶𝗼𝗻: ${questions.results[0].question}
@@ -67,7 +67,7 @@ difficulty: "medium",
 }).then(async (questions) => {
 return Image_Button.VImg(
 client,
-chat,
+Fox,
 AʀƈȶɨӼ,
 `
 ❓𝗤𝘂𝗲𝘀𝘁𝗶𝗼𝗻: ${questions.results[0].question}
@@ -85,7 +85,7 @@ difficulty: "hard",
 }).then(async (questions) => {
 return Image_Button.VImg(
 client,
-chat,
+Fox,
 AʀƈȶɨӼ,
 `
 ❓𝗤𝘂𝗲𝘀𝘁𝗶𝗼𝗻: ${questions.results[0].question}
@@ -99,7 +99,7 @@ AʀƈȶɨӼ,
 await client.sendMessage(
 AʀƈȶɨӼ.chatId,
 {
-text: `✥𝐔𝐬𝐞𝐫: ${chat.pushName} 
+text: `✥𝐔𝐬𝐞𝐫: ${Fox.pushName} 
 
 Press Below To Read How To Use This Command!`,
 footer: "⦓ 𝐕𝐥𝐤𝐲𝐫𝐞 ⦔",
@@ -126,7 +126,7 @@ MessageType.buttonsMessage
 );
 }
 } catch (error) {
-return Oops.VOp(client, chat, AʀƈȶɨӼ, error);
+return Oops.VOp(client, Fox, AʀƈȶɨӼ, error);
 }
 },
 };
