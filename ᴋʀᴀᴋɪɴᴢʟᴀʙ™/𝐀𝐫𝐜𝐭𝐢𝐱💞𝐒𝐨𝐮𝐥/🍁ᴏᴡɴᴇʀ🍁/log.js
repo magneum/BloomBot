@@ -16,6 +16,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 (𝐜)𝐀𝐫𝐜𝐭𝐢𝐱 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 */
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
+const message_type_1 = require("../../\uD835\uDC00\uD835\uDC2B\uD835\uDC1C\uD835\uDC2D\uD835\uDC22\uD835\uDC31\u269C\uFE0F\uD835\uDC0A\uD835\uDC2B\uD835\uDC32\uD835\uDC28\uD835\uDC13\uD835\uDC1E\uD835\uDC24/message-type");
 const Video_Button = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱☘️𝐊𝐞𝐲𝐬/Video_Button`);
 const Image_Button = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱☘️𝐊𝐞𝐲𝐬/Image_Button`);
 const Text_List = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱☘️𝐊𝐞𝐲𝐬/Text_List`);
@@ -82,6 +83,35 @@ module.exports = {
             // MessageType.text
             // );
             // }
+            const templateMessage = {
+                text: "Hi it's a template message",
+                footer: "Hello World",
+                image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png" },
+                templateButtons: [
+                    {
+                        index: 1,
+                        urlButton: {
+                            displayText: "⭐ Star Baileys on GitHub!",
+                            url: "https://github.com/adiwajshing/Baileys",
+                        },
+                    },
+                    {
+                        index: 2,
+                        callButton: {
+                            displayText: "Call me!",
+                            phoneNumber: "+1 (234) 5678-901",
+                        },
+                    },
+                    {
+                        index: 3,
+                        quickReplyButton: {
+                            displayText: "This is a reply, just like normal buttons!",
+                            id: "id-like-buttons-message",
+                        },
+                    },
+                ],
+            };
+            yield client.sendMessage(AʀƈȶɨӼ.chatId, templateMessage, message_type_1.MessageType.buttonsMessage);
             ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
             // await ӄʀʏȶɛӄ.sendPresenceUpdate("unavailable", AʀƈȶɨӼ.chatId);
             // await ӄʀʏȶɛӄ.sendPresenceUpdate("available", AʀƈȶɨӼ.chatId);
