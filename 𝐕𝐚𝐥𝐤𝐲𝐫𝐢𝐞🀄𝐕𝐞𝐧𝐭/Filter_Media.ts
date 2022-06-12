@@ -20,7 +20,7 @@ ConvertedName: any,
 Filter: any
 ): Promise<void> => {
 try {
-require(`child_process`).exec(
+require("child_process").exec(
 `ffmpeg -i ${FileName} ${Filter} ${ConvertedName}`,
 async () => {
 await client
