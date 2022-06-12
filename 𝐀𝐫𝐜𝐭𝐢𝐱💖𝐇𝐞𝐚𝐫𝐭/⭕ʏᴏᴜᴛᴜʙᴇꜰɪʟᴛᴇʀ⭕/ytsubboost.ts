@@ -28,7 +28,7 @@ export = {
 name: dotScrpt,
 async handle(
 client: Client,
-chat: proto.IWebMessageInfo,
+Fox: proto.IWebMessageInfo,
 AʀƈȶɨӼ: AʀƈȶɨӼ,
 args: string[],
 ӄʀʏȶɛӄ
@@ -47,7 +47,7 @@ if (args.length === 0) {
 await client.sendMessage(
 AʀƈȶɨӼ.chatId,
 {
-text: `✥𝐔𝐬𝐞𝐫: ${chat.pushName} 
+text: `✥𝐔𝐬𝐞𝐫: ${Fox.pushName} 
 
 Press Below To Read How To Use This Command!`,
 footer: "⦓ 𝐕𝐥𝐤𝐲𝐫𝐞 ⦔",
@@ -77,7 +77,7 @@ if (!ytIdRegex.test(args[0])) {
 await client.sendMessage(
 AʀƈȶɨӼ.chatId,
 {
-text: `✥𝐔𝐬𝐞𝐫: ${chat.pushName} 
+text: `✥𝐔𝐬𝐞𝐫: ${Fox.pushName} 
 
 Press Below To Read How To Use This Command!`,
 footer: "⦓ 𝐕𝐥𝐤𝐲𝐫𝐞 ⦔",
@@ -111,18 +111,18 @@ FinalGot = args.join(" ");
 }
 const LinkFound = await yts(FinalGot);
 if (!LinkFound) {
-Text_List.VText(client, chat, AʀƈȶɨӼ, `❌𝗘𝗿𝗿𝗼𝗿: No Music Found!`);
+Text_List.VText(client, Fox, AʀƈȶɨӼ, `❌𝗘𝗿𝗿𝗼𝗿: No Music Found!`);
 return;
 }
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 const Videos = LinkFound.videos.slice(0, 1);
 Videos.forEach(async function (Found) {
-var FilteredAudio = `./${dotScrpt}_F_${chat.key.id}.mp3`;
-var FFmpegFile = `./𝐀𝐫𝐜𝐭𝐢𝐱🐞𝐁𝐞𝐞𝐭𝐥𝐞/${dotScrpt}_${chat.key.id}.mp3`;
+var FilteredAudio = `./${dotScrpt}_F_${Fox.key.id}.mp3`;
+var FFmpegFile = `./𝐀𝐫𝐜𝐭𝐢𝐱🐞𝐁𝐞𝐞𝐭𝐥𝐞/${dotScrpt}_${Fox.key.id}.mp3`;
 if (Found.seconds > 1800) {
 return Image_Button.VImg(
 client,
-chat,
+Fox,
 AʀƈȶɨӼ,
 `❌𝗘𝗿𝗿𝗼𝗿: _Choose Smaller Video less then 30mins!_
 
@@ -144,7 +144,7 @@ ffmpeg(FFmpegStream)
 await ӄʀʏȶɛӄ.sendPresenceUpdate("recording", AʀƈȶɨӼ.chatId);
 await Image_Button.VImg(
 client,
-chat,
+Fox,
 AʀƈȶɨӼ,
 `𝐘𝐨𝐮𝐓𝐮𝐛𝐞💿𝐅𝐢𝐥𝐭𝐞𝐫
 
@@ -162,7 +162,7 @@ require("child_process").exec(
 `ffmpeg -i ${FFmpegFile} -af "asubboost" ${FilteredAudio}`,
 async (error) => {
 if (error) {
-return Oops.VOp(client, chat, AʀƈȶɨӼ, error);
+return Oops.VOp(client, Fox, AʀƈȶɨӼ, error);
 }
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 await client
@@ -171,10 +171,10 @@ AʀƈȶɨӼ.chatId,
 fs.readFileSync(FilteredAudio),
 MessageType.audio,
 {
-quoted: chat,
+quoted: Fox,
 }
 )
-.catch((error: any) => Oops.VOp(client, chat, AʀƈȶɨӼ, error));
+.catch((error: any) => Oops.VOp(client, Fox, AʀƈȶɨӼ, error));
 await VOID.VOID(FFmpegFile, FilteredAudio);
 }
 );
