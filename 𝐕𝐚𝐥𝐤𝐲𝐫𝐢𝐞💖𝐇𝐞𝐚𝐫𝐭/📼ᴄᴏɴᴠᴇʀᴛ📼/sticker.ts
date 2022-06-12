@@ -40,20 +40,14 @@ await client.getGroupMetaData(νℓкуяιє.chatId, νℓкуяιє);
 console.log("💡Is Bot Group Admin: " + νℓкуяιє.isBotGroupAdmin);
 console.log("💡Is Sender Group Admin: " + νℓкуяιє.isSenderGroupAdmin);
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
-if (args.length === 0) {
+if (args.length === 0 && !args) {
 await client.sendMessage(
 νℓкуяιє.chatId,
-"💡𝐈𝐧𝐟𝐨꧂ No Argument Provided.Using Default Layout..",
-MessageType.text,
-{
-quoted: true,
-}
-);
-}
-if (!args) {
-await client.sendMessage(
-νℓкуяιє.chatId,
-"💡𝐈𝐧𝐟𝐨꧂ No Argument Provided.Using Default Layout..",
+`💡𝐈𝐧𝐟𝐨꧂ No Argument Provided.
+Using Default Layout..
+
+*Sticker Category:*
+*Sticker Name:* `,
 MessageType.text,
 {
 quoted: true,
