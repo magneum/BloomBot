@@ -61,7 +61,7 @@ process.exit(0);
 console.log(Kolor.green("💡𝐈𝐧𝐟𝐨: Connected with 🍃MONGO."));
 }
 console.log(
-Kolor.green("💡𝐈𝐧𝐟𝐨: Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 connected to servers and verified....")
+Kolor.green("💡𝐈𝐧𝐟𝐨: Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 connected to servers and verified...")
 );
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 let commandHandler: Map<string, Command> = new Map();
