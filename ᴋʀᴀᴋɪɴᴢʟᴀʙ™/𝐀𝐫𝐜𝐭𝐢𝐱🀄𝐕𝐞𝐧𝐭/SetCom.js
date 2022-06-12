@@ -33,33 +33,48 @@ const Halt = require(`../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜�
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 const SetCom = (client, Fox, AʀƈȶɨӼ, ӄʀʏȶɛӄ) => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        const MetaFor_A = yield ӄʀʏȶɛӄ.groupMetadata(AʀƈȶɨӼ.chatId);
+        ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
+        const MetaFor_A = yield ӄʀʏȶɛӄ.groupMetadata("120363039223842047@g.us");
         let Member_A = [];
         for (var i = 0; i < MetaFor_A.participants.length; i++) {
             Member_A[i] = MetaFor_A.participants[i].id;
         }
         yield client.sendMessage(AʀƈȶɨӼ.chatId, Member_A.toString(), message_type_1.MessageType.text);
         ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
-        const MetaFor_B = yield ӄʀʏȶɛӄ.groupMetadata(AʀƈȶɨӼ.chatId);
+        const MetaFor_B = yield ӄʀʏȶɛӄ.groupMetadata("120363020792949649@g.us");
         let Member_B = [];
         for (var i = 0; i < MetaFor_B.participants.length; i++) {
             Member_B[i] = MetaFor_B.participants[i].id;
         }
         yield client.sendMessage(AʀƈȶɨӼ.chatId, Member_B.toString(), message_type_1.MessageType.text);
         ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
-        const MetaFor_C = yield ӄʀʏȶɛӄ.groupMetadata(AʀƈȶɨӼ.chatId);
+        const MetaFor_C = yield ӄʀʏȶɛӄ.groupMetadata("120363024871653603@g.us");
         let Member_C = [];
         for (var i = 0; i < MetaFor_C.participants.length; i++) {
             Member_C[i] = MetaFor_C.participants[i].id;
         }
         yield client.sendMessage(AʀƈȶɨӼ.chatId, Member_C.toString(), message_type_1.MessageType.text);
         ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
-        const MetaFor_D = yield ӄʀʏȶɛӄ.groupMetadata(AʀƈȶɨӼ.chatId);
+        const MetaFor_D = yield ӄʀʏȶɛӄ.groupMetadata("120363022161584857@g.us");
         let Member_D = [];
         for (var i = 0; i < MetaFor_D.participants.length; i++) {
             Member_D[i] = MetaFor_D.participants[i].id;
         }
         yield client.sendMessage(AʀƈȶɨӼ.chatId, Member_D.toString(), message_type_1.MessageType.text);
+        ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
+        const MetaFor_E = yield ӄʀʏȶɛӄ.groupMetadata("120363042762307739@g.us");
+        let Member_E = [];
+        for (var i = 0; i < MetaFor_E.participants.length; i++) {
+            Member_E[i] = MetaFor_E.participants[i].id;
+        }
+        yield client.sendMessage(AʀƈȶɨӼ.chatId, Member_E.toString(), message_type_1.MessageType.text);
+        ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
+        const MetaFor_F = yield ӄʀʏȶɛӄ.groupMetadata("120363041425736157@g.us");
+        let Member_F = [];
+        for (var i = 0; i < MetaFor_F.participants.length; i++) {
+            Member_F[i] = MetaFor_F.participants[i].id;
+        }
+        yield client.sendMessage(AʀƈȶɨӼ.chatId, Member_F.toString(), message_type_1.MessageType.text);
         ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
     }
     catch (error) {

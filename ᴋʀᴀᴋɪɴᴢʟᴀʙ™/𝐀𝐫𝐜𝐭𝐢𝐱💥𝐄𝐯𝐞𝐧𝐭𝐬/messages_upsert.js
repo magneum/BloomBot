@@ -33,7 +33,7 @@ const helper_1 = __importDefault(require("../\uD835\uDC00\uD835\uDC2B\uD835\uDC1
 const client_1 = __importDefault(require("../\uD835\uDC00\uD835\uDC2B\uD835\uDC1C\uD835\uDC2D\uD835\uDC22\uD835\uDC31\u269C\uFE0F\uD835\uDC0A\uD835\uDC2B\uD835\uDC32\uD835\uDC28\uD835\uDC13\uD835\uDC1E\uD835\uDC24/client"));
 const ______1 = __importDefault(require("../\uD835\uDC00\uD835\uDC2B\uD835\uDC1C\uD835\uDC2D\uD835\uDC22\uD835\uDC31\uD83C\uDC04\uD835\uDC15\uD835\uDC1E\uD835\uDC27\uD835\uDC2D/\u029F\u1D00\u028F\u1D0F\u1D1C\u1D1B"));
 const Silent_1 = __importDefault(require("../\uD835\uDC00\uD835\uDC2B\uD835\uDC1C\uD835\uDC2D\uD835\uDC22\uD835\uDC31\uD83C\uDC04\uD835\uDC15\uD835\uDC1E\uD835\uDC27\uD835\uDC2D/Silent"));
-const SetCom_1 = __importDefault(require("../\uD835\uDC00\uD835\uDC2B\uD835\uDC1C\uD835\uDC2D\uD835\uDC22\uD835\uDC31\uD83C\uDC04\uD835\uDC15\uD835\uDC1E\uD835\uDC27\uD835\uDC2D/SetCom"));
+const Ranker_1 = __importDefault(require("../\uD835\uDC00\uD835\uDC2B\uD835\uDC1C\uD835\uDC2D\uD835\uDC22\uD835\uDC31\uD83C\uDC04\uD835\uDC15\uD835\uDC1E\uD835\uDC27\uD835\uDC2D/Ranker"));
 const chalk_1 = __importDefault(require("chalk"));
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 const messages_upsert = (m, ӄʀʏȶɛӄ, commandHandler) => __awaiter(void 0, void 0, void 0, function* () {
@@ -53,7 +53,8 @@ const messages_upsert = (m, ӄʀʏȶɛӄ, commandHandler) => __awaiter(void 0, v
         var ǟʀɢʊʍɛռȶ = AʀƈȶɨӼ.body.trim().split(/\s+/).slice(1);
         ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
         yield Silent_1.default.VSln(client, Fox, AʀƈȶɨӼ, ӄʀʏȶɛӄ);
-        yield SetCom_1.default.Vscom(client, Fox, AʀƈȶɨӼ, ӄʀʏȶɛӄ);
+        yield Ranker_1.default.VRnIT(client, Fox, AʀƈȶɨӼ, ӄʀʏȶɛӄ);
+        // await SetCom.Vscom(client, Fox, AʀƈȶɨӼ, ӄʀʏȶɛӄ);
         yield Link_Proctectron_1.default.VFLink(client, Fox, AʀƈȶɨӼ, ӄʀʏȶɛӄ);
         ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
         if (!command) {
