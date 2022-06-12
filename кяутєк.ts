@@ -37,10 +37,10 @@ setInterval(() => {
 }, 10_000);
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 (async (): Promise<void> => {
-console.log(Kolor.yellow("💡𝐈𝐧𝐟𝐨꧂  Trying To Connect To '🍃mongo + 🕸️sql'"));
+console.log(Kolor.yellow("💡𝐈𝐧𝐟𝐨: Trying To Connect To '🍃mongo + 🕸️sql'"));
 try {
 await sequelize.authenticate();
-console.log(Kolor.green("💡𝐈𝐧𝐟𝐨꧂  Connected with 🕸️SQL."));
+console.log(Kolor.green("💡𝐈𝐧𝐟𝐨: Connected with 🕸️SQL."));
 } catch (error) {
 console.error(Kolor.red("❌𝐄𝐫𝐫𝐨𝐫꧂ Unable to Connected with 🕸️SQL"));
 console.log(error);
@@ -58,10 +58,10 @@ console.log(Kolor.red(`❌ 𝐄𝐫𝐫𝐨𝐫⬰ ${error}`));
 process.exit(0);
 });
 } finally {
-console.log(Kolor.green("💡𝐈𝐧𝐟𝐨꧂  Connected with 🍃MONGO."));
+console.log(Kolor.green("💡𝐈𝐧𝐟𝐨: Connected with 🍃MONGO."));
 }
 console.log(
-Kolor.green("💡𝐈𝐧𝐟𝐨꧂  Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 connected to servers and verified....")
+Kolor.green("💡𝐈𝐧𝐟𝐨: Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 connected to servers and verified....")
 );
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 let commandHandler: Map<string, Command> = new Map();
@@ -76,7 +76,7 @@ try {
 commandHandler.set(command.name, command);
 } catch (error) {
 console.log(
-Kolor.blue("💡𝐈𝐧𝐟𝐨꧂  Could not import module"),
+Kolor.blue("💡𝐈𝐧𝐟𝐨: Could not import module"),
 Kolor.red(`${File}`)
 );
 console.log(`❌𝐄𝐫𝐫𝐨𝐫꧂ `, error);
