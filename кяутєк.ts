@@ -59,12 +59,9 @@ process.exit(0);
 });
 } finally {
 console.log(Kolor.green("💡𝐈𝐧𝐟𝐨꧂  Connected with 🍃MONGO."));
-console.log(
-Kolor.green("💡𝐈𝐧𝐟𝐨꧂  All models synchronized successfully...")
-);
 }
 console.log(
-Kolor.green("💡𝐈𝐧𝐟𝐨꧂  Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 CONNECTED TO SERVERS AND VERIFIED....")
+Kolor.green("💡𝐈𝐧𝐟𝐨꧂  Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 connected to servers and verified....")
 );
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 let commandHandler: Map<string, Command> = new Map();
