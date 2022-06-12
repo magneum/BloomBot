@@ -49,31 +49,31 @@ console.log("💡Receiver: " + քɛʀֆօռɢօȶռʊʍ);
 }
 }
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
-if (AʀƈȶɨӼ.isSenderGroupAdmin) {
-await client.sendMessage(
-AʀƈȶɨӼ.chatId,
-"You Are Admin Of This Group: 🔰",
-MessageType.text
-);
-} else if (AʀƈȶɨӼ.isSenderGroupAdmin && AʀƈȶɨӼ.isSenderTUFs) {
-await client.sendMessage(
-AʀƈȶɨӼ.chatId,
-"You Are Admin+Tuf(dev tester): 👑+🔰",
-MessageType.text
-);
-} else if (!AʀƈȶɨӼ.isSenderGroupAdmin && AʀƈȶɨӼ.isSenderTUFs) {
-await client.sendMessage(
-AʀƈȶɨӼ.chatId,
-"You Are Tuf(dev tester): 👑",
-MessageType.text
-);
-} else {
-await client.sendMessage(
-AʀƈȶɨӼ.chatId,
-"You Are Normal User: 🐾",
-MessageType.text
-);
-}
+// if (AʀƈȶɨӼ.isSenderGroupAdmin) {
+// await client.sendMessage(
+// AʀƈȶɨӼ.chatId,
+// "You Are Admin Of This Group: 🔰",
+// MessageType.text
+// );
+// } else if (AʀƈȶɨӼ.isSenderGroupAdmin && AʀƈȶɨӼ.isSenderTUFs) {
+// await client.sendMessage(
+// AʀƈȶɨӼ.chatId,
+// "You Are Admin+Tuf(dev tester): 👑+🔰",
+// MessageType.text
+// );
+// } else if (!AʀƈȶɨӼ.isSenderGroupAdmin && AʀƈȶɨӼ.isSenderTUFs) {
+// await client.sendMessage(
+// AʀƈȶɨӼ.chatId,
+// "You Are Tuf(dev tester): 👑",
+// MessageType.text
+// );
+// } else {
+// await client.sendMessage(
+// AʀƈȶɨӼ.chatId,
+// "You Are Normal User: 🐾",
+// MessageType.text
+// );
+// }
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 // await ӄʀʏȶɛӄ.sendPresenceUpdate("unavailable", AʀƈȶɨӼ.chatId);
 // await ӄʀʏȶɛӄ.sendPresenceUpdate("available", AʀƈȶɨӼ.chatId);

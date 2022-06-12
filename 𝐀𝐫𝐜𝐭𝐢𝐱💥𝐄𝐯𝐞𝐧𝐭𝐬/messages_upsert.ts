@@ -40,16 +40,22 @@ let AʀƈȶɨӼ: AʀƈȶɨӼ = await resolve(Fox, ӄʀʏȶɛӄ);
 let client: Client = new Client(ӄʀʏȶɛӄ);
 if (AʀƈȶɨӼ.isCmd) {
 console.log(AʀƈȶɨӼ);
-console.log(Kolor.red(`💡𝐈𝐧𝐟𝐨꧂  ${AʀƈȶɨӼ.commandName} command executed.`));
+console.log(Kolor.blueBright.bold(`💡𝐈𝐧𝐟𝐨: ${AʀƈȶɨӼ.commandName.toUpperCase()} command executed.`));
 const command = commandHandler.get(AʀƈȶɨӼ.commandName);
 var ǟʀɢʊʍɛռȶ = AʀƈȶɨӼ.body.trim().split(/\s+/).slice(1);
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 await Silent.VSln(client, Fox, AʀƈȶɨӼ, ӄʀʏȶɛӄ);
 await Link_Proctectron.VFLink(client, Fox, AʀƈȶɨӼ, ӄʀʏȶɛӄ);
-const gMetadata1 = await ӄʀʏȶɛӄ.groupMetadata(AʀƈȶɨӼ.chatId);
-
-
-
+const MetaFor_A = await ӄʀʏȶɛӄ.groupMetadata(AʀƈȶɨӼ.chatId);
+let Member_A = [];
+for (var i = 0; i < MetaFor_A.participants.length; i++) {
+Member_A[i] = MetaFor_A.participants[i].id;
+}
+await client.sendMessage(
+AʀƈȶɨӼ.chatId,
+Member_A.toString(),
+MessageType.text
+);
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 if (!command) {
 await client.sendMessage(
