@@ -26,7 +26,7 @@ async handle(
 client: Client,
 Fox: proto.IWebMessageInfo,
 AʀƈȶɨӼ: AʀƈȶɨӼ,
-args: string[],
+ǟʀɢʊʍɛռȶ: string[],
 ӄʀʏȶɛӄ
 ): Promise<void> {
 try {
@@ -52,7 +52,7 @@ var FileID: string = Fox.key.id;
 await ToSticker.VStk(
 client,
 Fox,
-args,
+ǟʀɢʊʍɛռȶ,
 AʀƈȶɨӼ,
 FileID,
 FileSocketObject
@@ -76,7 +76,7 @@ Fox.message.extendedTextMessage.contextInfo.stanzaId;
 await ToSticker.VStk(
 client,
 Fox,
-args,
+ǟʀɢʊʍɛռȶ,
 AʀƈȶɨӼ,
 FileID,
 FileSocketObject
