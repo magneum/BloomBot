@@ -3,7 +3,7 @@
 (𝐜)𝐀𝐫𝐜𝐭𝐢𝐱 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬! 
 */
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
-import νℓкуяιє from "./msb";
+import AʀƈȶɨӼ from "./msb";
 import {
 AnyMessageContent,
 GroupMetadata,
@@ -14,9 +14,9 @@ WASocket,
 import { MessageType } from "./message-type";
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 class Client {
-ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇: WASocket;
-constructor(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇: WASocket) {
-this.ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇 = ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇;
+ӄʀʏȶɛӄ: WASocket;
+constructor(ӄʀʏȶɛӄ: WASocket) {
+this.ӄʀʏȶɛӄ = ӄʀʏȶɛӄ;
 }
 async sendMessage(jid: string, content: any, type: string, options?: any) {
 let res: proto.WebMessageInfo;
@@ -28,13 +28,13 @@ text: content,
 if (options?.contextInfo?.mentionedJid) {
 ops.mentions = options.contextInfo.mentionedJid;
 }
-res = await this.ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(jid, ops);
+res = await this.ӄʀʏȶɛӄ.sendMessage(jid, ops);
 } else if (type === MessageType.sticker) {
-res = await this.ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(jid, {
+res = await this.ӄʀʏȶɛӄ.sendMessage(jid, {
 sticker: new Buffer(content),
 });
 } else if (type === MessageType.audio) {
-res = await this.ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(jid, {
+res = await this.ӄʀʏȶɛӄ.sendMessage(jid, {
 audio: content,
 mimetype: "audio/mp4",
 });
@@ -45,14 +45,14 @@ image: content,
 if (options?.caption) {
 ops.caption = options.caption;
 }
-res = await this.ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(jid, ops);
+res = await this.ӄʀʏȶɛӄ.sendMessage(jid, ops);
 } else if (type == MessageType.audio) {
-res = await this.ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(jid, {
+res = await this.ӄʀʏȶɛӄ.sendMessage(jid, {
 audio: content,
 mimetype: "audio/mp3",
 });
 } else if (type === MessageType.buttonsMessage) {
-res = await this.ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(jid, content);
+res = await this.ӄʀʏȶɛӄ.sendMessage(jid, content);
 } else if (type == MessageType.video) {
 ops = {
 video: content,
@@ -60,7 +60,7 @@ video: content,
 if (options?.caption) {
 ops.caption = options.caption;
 }
-res = await this.ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(jid, ops);
+res = await this.ӄʀʏȶɛӄ.sendMessage(jid, ops);
 } else if (type === MessageType.document) {
 ops = {
 text: options.caption,
@@ -72,19 +72,19 @@ if (options?.mimetype) {
 ops2.mimetype = options.mimetype;
 ops2.fileName = options.filename;
 }
-await this.ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(jid, ops);
-res = await this.ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(jid, ops2);
+await this.ӄʀʏȶɛӄ.sendMessage(jid, ops);
+res = await this.ӄʀʏȶɛӄ.sendMessage(jid, ops2);
 }
 return res;
 }
 async deleteMessage(jid: string, key: any) {
-await this.ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendMessage(jid, {
+await this.ӄʀʏȶɛӄ.sendMessage(jid, {
 delete: key,
 });
 }
-async getGroupMetaData(jid: string, νℓкуяιє: νℓкуяιє) {
+async getGroupMetaData(jid: string, AʀƈȶɨӼ: AʀƈȶɨӼ) {
 const groupMetadata: GroupMetadata = jid.endsWith("@g.us")
-? await this.ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.groupMetadata(jid)
+? await this.ӄʀʏȶɛӄ.groupMetadata(jid)
 : null;
 const getGroupAdmins = (participants: GroupParticipant[]): string[] => {
 var admins: string[] = [];
@@ -93,17 +93,17 @@ participants[i].admin ? admins.push(participants[i].id) : "";
 }
 return admins;
 };
-νℓкуяιє.groupName = νℓкуяιє.isGroup ? groupMetadata.subject : null;
-νℓкуяιє.groupMembers = νℓкуяιє.isGroup ? groupMetadata.participants : null;
-νℓкуяιє.groupAdmins = νℓкуяιє.isGroup
-? getGroupAdmins(νℓкуяιє.groupMembers)
+AʀƈȶɨӼ.groupName = AʀƈȶɨӼ.isGroup ? groupMetadata.subject : null;
+AʀƈȶɨӼ.groupMembers = AʀƈȶɨӼ.isGroup ? groupMetadata.participants : null;
+AʀƈȶɨӼ.groupAdmins = AʀƈȶɨӼ.isGroup
+? getGroupAdmins(AʀƈȶɨӼ.groupMembers)
 : null;
-νℓкуяιє.groupId = νℓкуяιє.isGroup ? groupMetadata.id : null;
-νℓкуяιє.isBotGroupAdmin = νℓкуяιє.isGroup
-? νℓкуяιє.groupAdmins.includes(νℓкуяιє.owner)
+AʀƈȶɨӼ.groupId = AʀƈȶɨӼ.isGroup ? groupMetadata.id : null;
+AʀƈȶɨӼ.isBotGroupAdmin = AʀƈȶɨӼ.isGroup
+? AʀƈȶɨӼ.groupAdmins.includes(AʀƈȶɨӼ.owner)
 : false;
-νℓкуяιє.isSenderGroupAdmin = νℓкуяιє.isGroup
-? νℓкуяιє.groupAdmins.includes(νℓкуяιє.sender)
+AʀƈȶɨӼ.isSenderGroupAdmin = AʀƈȶɨӼ.isGroup
+? AʀƈȶɨӼ.groupAdmins.includes(AʀƈȶɨӼ.sender)
 : false;
 }
 }

@@ -5,8 +5,8 @@
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 import fs from "fs";
 import { Sequelize } from "sequelize";
-if (fs.existsSync("νℓкуяιє.env")) {
-require("dotenv").config({ path: "./νℓкуяιє.env" });
+if (fs.existsSync("AʀƈȶɨӼ.env")) {
+require("dotenv").config({ path: "./AʀƈȶɨӼ.env" });
 } else {
 require("dotenv");
 }
@@ -23,7 +23,7 @@ return log;
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 process.env.DATABASE_URL =
 process.env.DATABASE_URL === undefined
-? "./νℓкуяιє.db"
+? "./AʀƈȶɨӼ.db"
 : process.env.DATABASE_URL;
 process.env.DEBUG =
 process.env.DEBUG === undefined ? "false" : process.env.DEBUG;
@@ -50,11 +50,11 @@ process.env.CURRENT_WEATHER_API_KEY === undefined
 : process.env.CURRENT_WEATHER_API_KEY,
 DATABASE_URL:
 process.env.DATABASE_URL === undefined
-? "./νℓкуяιє.db"
+? "./AʀƈȶɨӼ.db"
 : process.env.DATABASE_URL,
 DEBUG: process.env.DEBUG === undefined ? false : process.env.DEBUG,
 DATABASE:
-process.env.DATABASE_URL === "./νℓкуяιє.db"
+process.env.DATABASE_URL === "./AʀƈȶɨӼ.db"
 ? new Sequelize({
 dialect: "sqlite",
 storage: process.env.DATABASE_URL,

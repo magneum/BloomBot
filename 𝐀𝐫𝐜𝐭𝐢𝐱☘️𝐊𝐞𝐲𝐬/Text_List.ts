@@ -7,23 +7,23 @@ import { MessageType } from "../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨�
 const Text_List = async (
 client: any,
 chat: any,
-νℓкуяιє: any,
+AʀƈȶɨӼ: any,
 caption: any
 ): Promise<void> => {
 try {
 let Personality;
-if (νℓкуяιє.isSenderGroupAdmin) {
+if (AʀƈȶɨӼ.isSenderGroupAdmin) {
 Personality = "🔰";
-} else if (νℓкуяιє.isSenderTUFs && νℓкуяιє.isSenderGroupAdmin) {
+} else if (AʀƈȶɨӼ.isSenderTUFs && AʀƈȶɨӼ.isSenderGroupAdmin) {
 Personality = "👑+🔰";
-} else if (νℓкуяιє.isSenderTUFs) {
+} else if (AʀƈȶɨӼ.isSenderTUFs) {
 Personality = "👑";
 } else {
 Personality = "🐾";
 }
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 await client.sendMessage(
-νℓкуяιє.chatId,
+AʀƈȶɨӼ.chatId,
 {
 text: `✥𝐔𝐬𝐞𝐫: ${chat.pushName}
 

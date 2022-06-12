@@ -26,7 +26,7 @@ const Silent = async (
 client: any,
 chat: any,
 νℓкуяιє: any,
-ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇: any
+ӄʀʏȶɛӄ: any
 ): Promise<void> => {
 try {
 await BanPerson.findOne(

@@ -14,7 +14,7 @@ const Video_Button = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱☘️𝐊𝐞𝐲�
 const Filter_Media = async (
 client: any,
 chat: any,
-νℓкуяιє: any,
+AʀƈȶɨӼ: any,
 FileName: any,
 ConvertedName: any,
 Filter: any
@@ -25,11 +25,11 @@ require("child_process").exec(
 async () => {
 await client
 .sendMessage(
-νℓкуяιє.chatId,
+AʀƈȶɨӼ.chatId,
 fs.readFileSync(ConvertedName),
 MessageType.audio
 )
-.catch((error: any) => Oops.VOp(client, chat, νℓкуяιє, error));
+.catch((error: any) => Oops.VOp(client, chat, AʀƈȶɨӼ, error));
 await VOID.VOID(FileName, ConvertedName);
 }
 );

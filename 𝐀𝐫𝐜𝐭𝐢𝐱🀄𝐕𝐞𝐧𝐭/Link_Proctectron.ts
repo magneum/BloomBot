@@ -25,38 +25,38 @@ const Halt = require(`../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜�
 const Link_Proctectron = async (
 client: any,
 chat: any,
-νℓкуяιє: any,
-ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇: any
+AʀƈȶɨӼ: any,
+ӄʀʏȶɛӄ: any
 ): Promise<void> => {
 try {
 if (
-νℓкуяιє.isGroup &&
-!νℓкуяιє.fromMe &&
-!νℓкуяιє.isSenderDev &&
-νℓкуяιє.isBotGroupAdmin &&
-!νℓкуяιє.isSenderGroupAdmin
+AʀƈȶɨӼ.isGroup &&
+!AʀƈȶɨӼ.fromMe &&
+!AʀƈȶɨӼ.isSenderDev &&
+AʀƈȶɨӼ.isBotGroupAdmin &&
+!AʀƈȶɨӼ.isSenderGroupAdmin
 ) {
 await LinkList.findOne(
 {
-serverID: νℓкуяιє.chatId,
+serverID: AʀƈȶɨӼ.chatId,
 },
 async (error: any, server: any) => {
 if (error) return console.log(error);
 if (!server) return;
-let FetchCurrentGroupLink = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.groupInviteCode(νℓкуяιє.chatId);
+let FetchCurrentGroupLink = await ӄʀʏȶɛӄ.groupInviteCode(AʀƈȶɨӼ.chatId);
 let GroupLinkRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i;
-let isGroupLink = GroupLinkRegex.exec(νℓкуяιє.body);
+let isGroupLink = GroupLinkRegex.exec(AʀƈȶɨӼ.body);
 let PresentGroupLink = new RegExp(
 `https://chat.whatsapp.com/${FetchCurrentGroupLink}`,
 "i"
 );
-let isCurrentGroupLink = PresentGroupLink.test(νℓкуяιє.body);
+let isCurrentGroupLink = PresentGroupLink.test(AʀƈȶɨӼ.body);
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
-if (isGroupLink && !isCurrentGroupLink && !νℓкуяιє.isCmd) {
+if (isGroupLink && !isCurrentGroupLink && !AʀƈȶɨӼ.isCmd) {
 await Image_Button.VImg(
 client,
 chat,
-νℓкуяιє,
+AʀƈȶɨӼ,
 `╔◇═══════════════◇╗
 ┊ 𝐊𝐫𝐲𝐙𝐞𝐧❌𝐀𝐧𝐭𝐢-𝐋𝐢𝐧𝐤
 ┊    𝐌𝐞𝐜𝐡𝐚𝐧𝐢𝐬𝐦
@@ -64,7 +64,7 @@ chat,
 
 🤖𝐀𝐫𝐜𝐭𝐢𝐱: Kicked! 🎊One Less MoFo🎊
 ❗𝗥𝗲𝗮𝘀𝗼𝗻: sent some lind of Link In This Group Chat!
-⚠️𝗠𝗲𝘀𝘀𝗮𝗴𝗲: ${νℓкуяιє.body}
+⚠️𝗠𝗲𝘀𝘀𝗮𝗴𝗲: ${AʀƈȶɨӼ.body}
 
 
 💀𝗧𝗿𝗶𝗴𝗴𝗲𝗿𝗲𝗱
@@ -72,24 +72,24 @@ chat,
 🐾 Whatspp Invite Link
 🐾 Discord Link
 🐾 Telegram Link`,
-"./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/νℓкуяιє.png"
+"./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png"
 );
-return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
-.groupRemove(νℓкуяιє.chatId, [νℓкуяιє.sender])
+return await ӄʀʏȶɛӄ
+.groupRemove(AʀƈȶɨӼ.chatId, [AʀƈȶɨӼ.sender])
 .catch((error: any) => console.log(error));
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 } else if (
-νℓкуяιє.body.includes("https://t.me/") &&
-νℓкуяιє.body.includes("discord.gg") &&
-νℓкуяιє.body.includes("discord.com") &&
-νℓкуяιє.body.includes("/t.me/") &&
-νℓкуяιє.body.includes("wa.me/") &&
-νℓкуяιє.body.includes("www.")
+AʀƈȶɨӼ.body.includes("https://t.me/") &&
+AʀƈȶɨӼ.body.includes("discord.gg") &&
+AʀƈȶɨӼ.body.includes("discord.com") &&
+AʀƈȶɨӼ.body.includes("/t.me/") &&
+AʀƈȶɨӼ.body.includes("wa.me/") &&
+AʀƈȶɨӼ.body.includes("www.")
 ) {
 await Image_Button.VImg(
 client,
 chat,
-νℓкуяιє,
+AʀƈȶɨӼ,
 `╔◇═══════════════◇╗
 ┊ 𝐊𝐫𝐲𝐙𝐞𝐧❌𝐀𝐧𝐭𝐢-𝐋𝐢𝐧𝐤
 ┊    𝐌𝐞𝐜𝐡𝐚𝐧𝐢𝐬𝐦
@@ -97,7 +97,7 @@ chat,
 
 🤖𝐀𝐫𝐜𝐭𝐢𝐱: Kicked! 🎊One Less MoFo🎊
 ❗𝗥𝗲𝗮𝘀𝗼𝗻: sent some lind of Link In This Group Chat!
-⚠️𝗠𝗲𝘀𝘀𝗮𝗴𝗲: ${νℓкуяιє.body}
+⚠️𝗠𝗲𝘀𝘀𝗮𝗴𝗲: ${AʀƈȶɨӼ.body}
 
 
 💀𝗧𝗿𝗶𝗴𝗴𝗲𝗿𝗲𝗱
@@ -105,10 +105,10 @@ chat,
 🐾 Whatspp Invite Link
 🐾 Discord Link
 🐾 Telegram Link`,
-"./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/νℓкуяιє.png"
+"./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png"
 );
-return await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
-.groupRemove(νℓкуяιє.chatId, [νℓкуяιє.sender])
+return await ӄʀʏȶɛӄ
+.groupRemove(AʀƈȶɨӼ.chatId, [AʀƈȶɨӼ.sender])
 .catch((error: any) => console.log(error));
 } else {
 }

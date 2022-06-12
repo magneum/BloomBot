@@ -8,28 +8,28 @@ import ʟᴀʏᴏᴜᴛ from "../𝐀𝐫𝐜𝐭𝐢𝐱🀄𝐕𝐞𝐧𝐭/ʟ
 const Image_Button = async (
 client: any,
 chat: any,
-νℓкуяιє: any,
+AʀƈȶɨӼ: any,
 caption: any,
 media: any
 ): Promise<void> => {
 try {
 let Personality;
-if (νℓкуяιє.isSenderGroupAdmin) {
+if (AʀƈȶɨӼ.isSenderGroupAdmin) {
 Personality = "🔰";
-} else if (νℓкуяιє.isSenderTUFs && νℓкуяιє.isSenderGroupAdmin) {
+} else if (AʀƈȶɨӼ.isSenderTUFs && AʀƈȶɨӼ.isSenderGroupAdmin) {
 Personality = "👑+🔰";
-} else if (νℓкуяιє.isSenderTUFs) {
+} else if (AʀƈȶɨӼ.isSenderTUFs) {
 Personality = "👑";
 } else {
 Personality = "🐾";
 }
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 await client.sendMessage(
-νℓкуяιє.chatId,
+AʀƈȶɨӼ.chatId,
 {
 quoted: chat.message,
 contextInfo: {
-mentionedJid: [νℓкуяιє.sender],
+mentionedJid: [AʀƈȶɨӼ.sender],
 },
 timestamp: Date(),
 image: { url: media },

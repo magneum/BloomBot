@@ -5,14 +5,14 @@
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 import ʟᴀʏᴏᴜᴛ from "../𝐀𝐫𝐜𝐭𝐢𝐱🀄𝐕𝐞𝐧𝐭/ʟᴀʏᴏᴜᴛ";
 import chalk from "chalk";
-import νℓкуяιєClass from "./msb";
+import AʀƈȶɨӼClass from "./msb";
 import { proto, WASocket } from "@adiwajshing/baileys";
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 const resolve = async function (
 messageInstance: proto.IWebMessageInfo,
 client: WASocket
 ) {
-var νℓкуяιє: νℓкуяιєClass = new νℓкуяιєClass();
+var AʀƈȶɨӼ: AʀƈȶɨӼClass = new AʀƈȶɨӼClass();
 var prefix: string = ʟᴀʏᴏᴜᴛ.PREFIX + "\\w+";
 var prefixRegex: RegExp = new RegExp(prefix, "g");
 var TUFsstring: string = ʟᴀʏᴏᴜᴛ.TUFs;
@@ -22,108 +22,108 @@ var jsonMessage: string = JSON.stringify(messageInstance);
 console.log(chalk.redBright("[ERROR] Something went wrong. ", err));
 }
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
-νℓкуяιє.chatId = messageInstance.key.remoteJid;
-νℓкуяιє.fromMe = messageInstance.key.fromMe;
-νℓкуяιє.owner = client.user.id.replace(/:.*@/g, "@");
-νℓкуяιє.mimeType = messageInstance.message
+AʀƈȶɨӼ.chatId = messageInstance.key.remoteJid;
+AʀƈȶɨӼ.fromMe = messageInstance.key.fromMe;
+AʀƈȶɨӼ.owner = client.user.id.replace(/:.*@/g, "@");
+AʀƈȶɨӼ.mimeType = messageInstance.message
 ? Object.keys(messageInstance.message)[0] === "senderKeyDistributionMessage"
 ? Object.keys(messageInstance.message)[2]
 : Object.keys(messageInstance.message)[0]
 : null;
-νℓкуяιє.type =
-νℓкуяιє.mimeType === "imageMessage"
+AʀƈȶɨӼ.type =
+AʀƈȶɨӼ.mimeType === "imageMessage"
 ? "image"
-: νℓкуяιє.mimeType === "videoMessage"
+: AʀƈȶɨӼ.mimeType === "videoMessage"
 ? "video"
-: νℓкуяιє.mimeType === "conversation" ||
-νℓкуяιє.mimeType == "extendedTextMessage"
+: AʀƈȶɨӼ.mimeType === "conversation" ||
+AʀƈȶɨӼ.mimeType == "extendedTextMessage"
 ? "text"
-: νℓкуяιє.mimeType === "audioMessage"
+: AʀƈȶɨӼ.mimeType === "audioMessage"
 ? "audio"
-: νℓкуяιє.mimeType === "stickerMessage"
+: AʀƈȶɨӼ.mimeType === "stickerMessage"
 ? "sticker"
-: νℓкуяιє.mimeType === "senderKeyDistributionMessage" &&
+: AʀƈȶɨӼ.mimeType === "senderKeyDistributionMessage" &&
 messageInstance.message?.senderKeyDistributionMessage?.groupId ===
 "status@broadcast"
 ? "status"
 : null;
-νℓкуяιє.isTextReply =
-νℓкуяιє.mimeType === "extendedTextMessage" &&
+AʀƈȶɨӼ.isTextReply =
+AʀƈȶɨӼ.mimeType === "extendedTextMessage" &&
 messageInstance.message?.extendedTextMessage?.contextInfo?.stanzaId
 ? true
 : false;
-νℓкуяιє.replyMessageId =
+AʀƈȶɨӼ.replyMessageId =
 messageInstance.message?.extendedTextMessage?.contextInfo?.stanzaId;
-νℓкуяιє.replyParticipant =
+AʀƈȶɨӼ.replyParticipant =
 messageInstance.message?.extendedTextMessage?.contextInfo?.participant;
-νℓкуяιє.replyMessage =
+AʀƈȶɨӼ.replyMessage =
 messageInstance.message?.extendedTextMessage?.contextInfo?.quotedMessage?.conversation;
-νℓкуяιє.body =
-νℓкуяιє.mimeType === "conversation"
+AʀƈȶɨӼ.body =
+AʀƈȶɨӼ.mimeType === "conversation"
 ? messageInstance.message?.conversation
-: νℓкуяιє.mimeType == "imageMessage"
+: AʀƈȶɨӼ.mimeType == "imageMessage"
 ? messageInstance.message?.imageMessage.caption
-: νℓкуяιє.mimeType == "videoMessage"
+: AʀƈȶɨӼ.mimeType == "videoMessage"
 ? messageInstance.message?.videoMessage.caption
-: νℓкуяιє.mimeType == "extendedTextMessage"
+: AʀƈȶɨӼ.mimeType == "extendedTextMessage"
 ? messageInstance.message?.extendedTextMessage?.text
-: νℓкуяιє.mimeType == "buttonsResponseMessage"
+: AʀƈȶɨӼ.mimeType == "buttonsResponseMessage"
 ? messageInstance.message?.buttonsResponseMessage.selectedDisplayText
 : null;
-νℓкуяιє.isCmd = prefixRegex.test(νℓкуяιє.body);
-νℓкуяιє.commandName = νℓкуяιє.isCmd
-? νℓкуяιє.body.slice(1).trim().split(/ +/).shift().toLowerCase()
+AʀƈȶɨӼ.isCmd = prefixRegex.test(AʀƈȶɨӼ.body);
+AʀƈȶɨӼ.commandName = AʀƈȶɨӼ.isCmd
+? AʀƈȶɨӼ.body.slice(1).trim().split(/ +/).shift().toLowerCase()
 : null;
-νℓкуяιє.isImage = νℓкуяιє.type === "image";
-νℓкуяιє.isReplyImage = messageInstance.message?.extendedTextMessage
+AʀƈȶɨӼ.isImage = AʀƈȶɨӼ.type === "image";
+AʀƈȶɨӼ.isReplyImage = messageInstance.message?.extendedTextMessage
 ?.contextInfo?.quotedMessage?.imageMessage
 ? true
 : false;
-νℓкуяιє.imageCaption = νℓкуяιє.isImage
+AʀƈȶɨӼ.imageCaption = AʀƈȶɨӼ.isImage
 ? messageInstance.message?.imageMessage.caption
 : null;
-νℓкуяιє.isGIF =
-νℓкуяιє.type === "video" &&
+AʀƈȶɨӼ.isGIF =
+AʀƈȶɨӼ.type === "video" &&
 messageInstance.message?.videoMessage?.gifPlayback;
-νℓкуяιє.isReplyGIF = messageInstance.message?.extendedTextMessage?.contextInfo
+AʀƈȶɨӼ.isReplyGIF = messageInstance.message?.extendedTextMessage?.contextInfo
 ?.quotedMessage?.videoMessage?.gifPlayback
 ? true
 : false;
-νℓкуяιє.isSticker = νℓкуяιє.type === "sticker";
-νℓкуяιє.isReplySticker = messageInstance.message?.extendedTextMessage
+AʀƈȶɨӼ.isSticker = AʀƈȶɨӼ.type === "sticker";
+AʀƈȶɨӼ.isReplySticker = messageInstance.message?.extendedTextMessage
 ?.contextInfo?.quotedMessage?.stickerMessage
 ? true
 : false;
-νℓкуяιє.isReplyAnimatedSticker =
+AʀƈȶɨӼ.isReplyAnimatedSticker =
 messageInstance.message?.extendedTextMessage?.contextInfo?.quotedMessage?.stickerMessage?.isAnimated;
-νℓкуяιє.isVideo =
-νℓкуяιє.type === "video" &&
+AʀƈȶɨӼ.isVideo =
+AʀƈȶɨӼ.type === "video" &&
 !messageInstance.message?.videoMessage?.gifPlayback;
-νℓкуяιє.isReplyVideo = νℓкуяιє.isTextReply
+AʀƈȶɨӼ.isReplyVideo = AʀƈȶɨӼ.isTextReply
 ? jsonMessage.indexOf("videoMessage") !== -1 &&
 !messageInstance.message?.extendedTextMessage?.contextInfo.quotedMessage
 .videoMessage.gifPlayback
 : false;
-νℓкуяιє.isAudio = νℓкуяιє.type === "audio";
-νℓкуяιє.isReplyAudio = messageInstance.message?.extendedTextMessage
+AʀƈȶɨӼ.isAudio = AʀƈȶɨӼ.type === "audio";
+AʀƈȶɨӼ.isReplyAudio = messageInstance.message?.extendedTextMessage
 ?.contextInfo?.quotedMessage?.audioMessage
 ? true
 : false;
-νℓкуяιє.logGroup = client.user.id.replace(/:.*@/g, "@");
-νℓкуяιє.isGroup = νℓкуяιє.chatId.endsWith("@g.us");
-νℓкуяιє.isPm = !νℓкуяιє.isGroup;
-νℓкуяιє.sender =
-νℓкуяιє.isGroup && messageInstance.message && νℓкуяιє.fromMe
-? νℓкуяιє.owner
-: νℓкуяιє.isGroup && messageInstance.message
+AʀƈȶɨӼ.logGroup = client.user.id.replace(/:.*@/g, "@");
+AʀƈȶɨӼ.isGroup = AʀƈȶɨӼ.chatId.endsWith("@g.us");
+AʀƈȶɨӼ.isPm = !AʀƈȶɨӼ.isGroup;
+AʀƈȶɨӼ.sender =
+AʀƈȶɨӼ.isGroup && messageInstance.message && AʀƈȶɨӼ.fromMe
+? AʀƈȶɨӼ.owner
+: AʀƈȶɨӼ.isGroup && messageInstance.message
 ? messageInstance.key.participant
-: !νℓкуяιє.isGroup
-? νℓкуяιє.chatId
+: !AʀƈȶɨӼ.isGroup
+? AʀƈȶɨӼ.chatId
 : null;
-νℓкуяιє.isSenderTUFs = TUFsstring.includes(
-νℓкуяιє.sender?.substring(0, νℓкуяιє.sender.indexOf("@"))
+AʀƈȶɨӼ.isSenderTUFs = TUFsstring.includes(
+AʀƈȶɨӼ.sender?.substring(0, AʀƈȶɨӼ.sender.indexOf("@"))
 );
-return νℓкуяιє;
+return AʀƈȶɨӼ;
 };
 export = resolve;
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
