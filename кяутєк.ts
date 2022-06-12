@@ -29,9 +29,9 @@ const sequelize: Sequelize = ʟᴀʏᴏᴜᴛ.DATABASE;
 const Logger: Logger = Pot({
 timestamp: () => `,"Time":"${new Date().toJSON()}"`,
 }).child({});
-logger.level = "error";
+Logger.level = "error";
 console.log(Kolor.yellow("💡𝐈𝐧𝐟𝐨꧂  Trying To Connect To '🍃mongo + 🕸️sql'"));
-const store = makeInMemoryStore({ logger });
+const store = makeInMemoryStore({ Logger });
 store?.readFromFile("./AʀƈȶɨӼ.json");
 setInterval(() => {
 store?.writeToFile("./AʀƈȶɨӼ.json");
