@@ -18,7 +18,7 @@ export = {
 name: dotScrpt,
 async handle(
 client: Client,
-chat: proto.IWebMessageInfo,
+Fox: proto.IWebMessageInfo,
 AʀƈȶɨӼ: AʀƈȶɨӼ,
 args: string[],
 ӄʀʏȶɛӄ
@@ -26,13 +26,13 @@ args: string[],
 await client.sendMessage(
 AʀƈȶɨӼ.chatId,
 {
-quoted: chat.message,
+quoted: Fox.message,
 contextInfo: {
 mentionedJid: [AʀƈȶɨӼ.sender],
 },
 timestamp: Date(),
 image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png" },
-caption: `╔◇✥𝐔𝐬𝐞𝐫: ${chat.pushName}
+caption: `╔◇✥𝐔𝐬𝐞𝐫: ${Fox.pushName}
 ║🦋 𝐀𝐫𝐜𝐭𝐢𝐱: _Is an Advance Whatsapp User-Bot!_
 ║🛰️ 𝐖𝐞𝐛𝐬𝐢𝐭𝐞: _VlkyreAI.krakinzkon.repl.co_
 ╚◇════════════◇꧂
