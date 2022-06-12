@@ -47,6 +47,7 @@ await client.sendMessage(
 Using Default Layout..
 
 *Sticker Category:* ᴋʀᴀᴋɪɴᴢʟᴀʙ™
+⌬𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞
 *Sticker Name:* `,
 MessageType.text,
 {
