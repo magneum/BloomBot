@@ -69,7 +69,7 @@ chat,
 νℓкуяιє,
 FileName,
 ConvertedName,
-`-af "apulsator=hz=0.08"`
+`-af "aresample=48000,asetrate=48000*0.8"`
 )
 );
 };
