@@ -26,7 +26,7 @@ export = {
 name: dotScrpt,
 async handle(
 client: Client,
-chat: proto.IWebMessageInfo,
+Fox: proto.IWebMessageInfo,
 AʀƈȶɨӼ: AʀƈȶɨӼ,
 args: string[],
 ӄʀʏȶɛӄ
@@ -65,7 +65,7 @@ await writeFile(fileName, buffer);
 await saveBuffer(FileName, stream).then(() =>
 Filter_Media.VFmedia(
 client,
-chat,
+Fox,
 AʀƈȶɨӼ,
 FileName,
 ConvertedName,
@@ -77,20 +77,20 @@ ConvertedName,
 if (AʀƈȶɨӼ.isReplyAudio) {
 var replyChatObject = {
 message: AʀƈȶɨӼ.isReplyAudio
-? chat.message.extendedTextMessage.contextInfo.quotedMessage
+? Fox.message.extendedTextMessage.contextInfo.quotedMessage
 .audioMessage
-: chat.message.extendedTextMessage.contextInfo.quotedMessage
+: Fox.message.extendedTextMessage.contextInfo.quotedMessage
 .videoMessage,
 type: AʀƈȶɨӼ.isReplyAudio ? "audio" : "video",
 };
-var fid: string = chat.message.extendedTextMessage.contextInfo.stanzaId;
+var fid: string = Fox.message.extendedTextMessage.contextInfo.stanzaId;
 await AudioSender(fid, replyChatObject);
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 } else {
 await client.sendMessage(
 AʀƈȶɨӼ.chatId,
 {
-text: `✥𝐔𝐬𝐞𝐫: ${chat.pushName} 
+text: `✥𝐔𝐬𝐞𝐫: ${Fox.pushName} 
 
 Press Below To Read How To Use This Command!`,
 footer: "⦓ 𝐕𝐥𝐤𝐲𝐫𝐞 ⦔",
@@ -116,7 +116,7 @@ MessageType.buttonsMessage
 );
 }
 } catch (error) {
-return Oops.VOp(client, chat, AʀƈȶɨӼ, error);
+return Oops.VOp(client, Fox, AʀƈȶɨӼ, error);
 }
 },
 };
