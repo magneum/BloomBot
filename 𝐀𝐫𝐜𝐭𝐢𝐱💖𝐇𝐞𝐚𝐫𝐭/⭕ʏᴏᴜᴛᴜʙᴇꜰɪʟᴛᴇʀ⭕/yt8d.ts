@@ -31,7 +31,7 @@ client: Client,
 chat: proto.IWebMessageInfo,
 νℓкуяιє: νℓкуяιє,
 args: string[],
-ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
+ӄʀʏȶɛӄ
 ): Promise<void> {
 const ʟɴᴀᴍᴇ = νℓкуяιє.sender;
 const ᴅꜰɴᴀᴍᴇ = νℓкуяιє.commandName;
@@ -141,7 +141,7 @@ ffmpeg(FFmpegStream)
 .toFormat("ipod")
 .saveToFile(FFmpegFile)
 .on("end", async () => {
-await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.sendPresenceUpdate("recording", νℓкуяιє.chatId);
+await ӄʀʏȶɛӄ.sendPresenceUpdate("recording", νℓкуяιє.chatId);
 await Image_Button.VImg(
 client,
 chat,
