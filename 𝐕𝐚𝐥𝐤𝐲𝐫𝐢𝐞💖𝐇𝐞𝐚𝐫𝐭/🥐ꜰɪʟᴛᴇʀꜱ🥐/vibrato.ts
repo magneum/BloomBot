@@ -69,7 +69,7 @@ chat,
 νℓкуяιє,
 FileName,
 ConvertedName,
-`-af "bass=g=10,dynaudnorm=f=150"`
+`-af "vibrato=f=6.5"`
 )
 );
 };
