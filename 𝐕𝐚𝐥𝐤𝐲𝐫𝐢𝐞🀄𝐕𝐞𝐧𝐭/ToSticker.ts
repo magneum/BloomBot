@@ -54,8 +54,8 @@ return Oops.VOp(client, chat, νℓкуяιє, error);
 }
 let ᴋʀᴀᴋɪɴᴢʟᴀʙ = await new Sticker(ConvertedPath, {
 type: "full",
-pack: args[0] || "☊ ʙʏ",
-author: "❝ ⌬𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ❞",
+pack: args[0] || "ʙʏ",
+author: "⌬𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞",
 categories: "ᴋʀᴀᴋɪɴᴢʟᴀʙ™",
 }).build();
 await client
@@ -86,12 +86,14 @@ ffmpeg(FileName)
 if (error) {
 return Oops.VOp(client, chat, νℓкуяιє, error);
 }
+let ᴋʀᴀᴋɪɴᴢʟᴀʙ = await new Sticker(ConvertedPath, {
+type: "full",
+pack: args[0] || "ʙʏ",
+author: "⌬𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞",
+categories: "ᴋʀᴀᴋɪɴᴢʟᴀʙ™",
+}).build();
 await client
-.sendMessage(
-νℓкуяιє.chatId,
-fs.readFileSync(ConvertedPath),
-MessageType.sticker
-)
+.sendMessage(νℓкуяιє.chatId, ᴋʀᴀᴋɪɴᴢʟᴀʙ, MessageType.sticker)
 .catch((error) => Oops.VOp(client, chat, νℓкуяιє, error));
 await VOID.VOID(FileName, ConvertedPath);
 });

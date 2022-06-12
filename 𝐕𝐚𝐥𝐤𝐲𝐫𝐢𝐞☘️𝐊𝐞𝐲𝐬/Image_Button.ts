@@ -6,9 +6,9 @@
 import { MessageType } from "../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/message-type";
 import ʟᴀʏᴏᴜᴛ from "../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞🀄𝐕𝐞𝐧𝐭/ʟᴀʏᴏᴜᴛ";
 const Image_Button = async (
-client,
-chat,
-νℓкуяιє,
+client: any,
+chat: any,
+νℓкуяιє: any,
 caption: string[],
 media: string[]
 ): Promise<void> => {

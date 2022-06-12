@@ -9,12 +9,12 @@ const VOID = require(`../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞⚜️𝐊𝐫𝐲𝐨�
 import { MessageType } from "../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/message-type";
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 const Filter_Media = async (
-client,
-chat,
-νℓкуяιє,
-FileName,
-ConvertedName,
-Filter
+client: any,
+chat: any,
+νℓкуяιє: any,
+FileName: any,
+ConvertedName: any,
+Filter: any
 ): Promise<void> => {
 try {
 require(`child_process`).exec(
