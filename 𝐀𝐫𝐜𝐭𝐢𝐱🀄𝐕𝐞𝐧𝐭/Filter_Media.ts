@@ -12,7 +12,7 @@ const Video_Button = require(`../𝐀𝐫𝐜𝐭𝐢𝐱☘️𝐊𝐞𝐲𝐬/
 import { MessageType } from "../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/message-type";
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 const Filter_Media = async (
-client: any,
+TUF: any,
 Fox: any,
 AʀƈȶɨӼ: any,
 FileName: any,
@@ -23,13 +23,13 @@ try {
 require("child_process").exec(
 `ffmpeg -i ${FileName} ${Filter} ${ConvertedName}`,
 async () => {
-await client
+await TUF
 .sendMessage(
 AʀƈȶɨӼ.chatId,
 fs.readFileSync(ConvertedName),
 MessageType.audio
 )
-.catch((error: any) => Oops.VOp(client, Fox, AʀƈȶɨӼ, error));
+.catch((error: any) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
 await VOID.VOID(FileName, ConvertedName);
 }
 );
