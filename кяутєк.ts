@@ -1,8 +1,8 @@
-`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 /* 
-(𝐜)𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬! 
+(𝐜)𝐀𝐫𝐜𝐭𝐢𝐱 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬! 
 */
-`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 process.env.YTDL_NO_UPDATE = "0";
 process.env.SPDL_NO_UPDATE = "0";
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
@@ -21,10 +21,10 @@ import ʟᴀʏᴏᴜᴛ from "./����𝐢�🀄𝐕𝐞𝐧𝐭/ʟᴀʏ�
 import Command from "./����𝐢�⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/command";
 import { Sequelize } from "sequelize/types";
 import useRemoteFileAuthState from "./����𝐢�⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/dbAuth";
-import messages_upsert from "./𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞💥𝐄𝐯𝐞𝐧𝐭𝐬/messages_upsert";
-import connection_update from "./𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞💥𝐄𝐯𝐞𝐧𝐭𝐬/connection_update";
-import participants_update from "./𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞💥𝐄𝐯𝐞𝐧𝐭𝐬/participants_update";
-("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
+import messages_upsert from "./𝐀𝐫𝐜𝐭𝐢𝐱💥𝐄𝐯𝐞𝐧𝐭𝐬/messages_upsert";
+import connection_update from "./𝐀𝐫𝐜𝐭𝐢𝐱💥𝐄𝐯𝐞𝐧𝐭𝐬/connection_update";
+import participants_update from "./𝐀𝐫𝐜𝐭𝐢𝐱💥𝐄𝐯𝐞𝐧𝐭𝐬/participants_update";
+("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 const sequelize: Sequelize = ʟᴀʏᴏᴜᴛ.DATABASE;
 const logger: Logger = P({
 timestamp: () => `,"time":"${new Date().toJSON()}"`,
@@ -32,11 +32,11 @@ timestamp: () => `,"time":"${new Date().toJSON()}"`,
 logger.level = "error";
 console.log(Kolor.yellow("💡𝐈𝐧𝐟𝐨꧂  Trying To Connect To '🍃mongo + 🕸️sql'"));
 const store = makeInMemoryStore({ logger });
-store?.readFromFile("./Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞.json");
+store?.readFromFile("./Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱.json");
 setInterval(() => {
-store?.writeToFile("./Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞.json");
+store?.writeToFile("./Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱.json");
 }, 10_000);
-("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
+("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 (async (): Promise<void> => {
 try {
 await sequelize.authenticate();
@@ -64,17 +64,17 @@ Kolor.green("💡𝐈𝐧𝐟𝐨꧂  All models synchronized successfully...")
 );
 }
 console.log(
-Kolor.green("💡𝐈𝐧𝐟𝐨꧂  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐂𝐨𝐧𝐧𝐞𝐜𝐭𝐞𝐝 𝐚𝐧𝐝 𝐕𝐞𝐫𝐢𝐟𝐢𝐞𝐝 𝐰𝐢𝐭𝐡 𝐒𝐞𝐫𝐯𝐞𝐫𝐬...")
+Kolor.green("💡𝐈𝐧𝐟𝐨꧂  𝐀𝐫𝐜𝐭𝐢𝐱 𝐂𝐨𝐧𝐧𝐞𝐜𝐭𝐞𝐝 𝐚𝐧𝐝 𝐕𝐞𝐫𝐢𝐟𝐢𝐞𝐝 𝐰𝐢𝐭𝐡 𝐒𝐞𝐫𝐯𝐞𝐫𝐬...")
 );
-("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
+("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 let commandHandler: Map<string, Command> = new Map();
-let Folders: string[] = fs.readdirSync(join(__dirname, "𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞💞𝐒𝐨𝐮𝐥"));
+let Folders: string[] = fs.readdirSync(join(__dirname, "𝐀𝐫𝐜𝐭𝐢𝐱💞𝐒𝐨𝐮𝐥"));
 for (const Files of Folders) {
 const AllFiles = fs
-.readdirSync(join(__dirname, `./𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞💞𝐒𝐨𝐮𝐥/${Files}`))
+.readdirSync(join(__dirname, `./𝐀𝐫𝐜𝐭𝐢𝐱💞𝐒𝐨𝐮𝐥/${Files}`))
 .filter((File) => File.endsWith(`.js`));
 for (const File of AllFiles) {
-const command = require(`./𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞💞𝐒𝐨𝐮𝐥/${Files}/${File}`);
+const command = require(`./𝐀𝐫𝐜𝐭𝐢𝐱💞𝐒𝐨𝐮𝐥/${Files}/${File}`);
 try {
 commandHandler.set(command.name, command);
 } catch (error) {
@@ -87,14 +87,14 @@ continue;
 }
 }
 }
-("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
-let FFolders: string[] = fs.readdirSync(join(__dirname, "𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞💖𝐇𝐞𝐚𝐫𝐭"));
+("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
+let FFolders: string[] = fs.readdirSync(join(__dirname, "𝐀𝐫𝐜𝐭𝐢𝐱💖𝐇𝐞𝐚𝐫𝐭"));
 for (const FFiles of FFolders) {
 const AllFFiles = fs
-.readdirSync(join(__dirname, `./𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞💖𝐇𝐞𝐚𝐫𝐭/${FFiles}`))
+.readdirSync(join(__dirname, `./𝐀𝐫𝐜𝐭𝐢𝐱💖𝐇𝐞𝐚𝐫𝐭/${FFiles}`))
 .filter((File) => File.endsWith(`.js`));
 for (const File of AllFFiles) {
-const command = require(`./𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞💖𝐇𝐞𝐚𝐫𝐭/${FFiles}/${File}`);
+const command = require(`./𝐀𝐫𝐜𝐭𝐢𝐱💖𝐇𝐞𝐚𝐫𝐭/${FFiles}/${File}`);
 try {
 commandHandler.set(command.name, command);
 } catch (error) {
@@ -103,7 +103,7 @@ continue;
 }
 }
 }
-("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
+("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 const { state, saveCreds } = await useRemoteFileAuthState(logger);
 const startSock = async () => {
 const ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇: WASocket = makeWASocket({
@@ -115,7 +115,7 @@ getMessage: async (key) => {
 return {};
 },
 });
-("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
+("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 store?.bind(ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.ev);
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.ev.on("group-participants.update", async (update) => {
 participants_update.participants_update(update, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇);
@@ -133,8 +133,8 @@ return ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇;
 };
 startSock();
 })().catch((error) => console.log("[MAINERROR] : %s", Kolor.red(error)));
-`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 /* 
-(𝐜)𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬! 
+(𝐜)𝐀𝐫𝐜𝐭𝐢𝐱 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬! 
 */
-`|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
