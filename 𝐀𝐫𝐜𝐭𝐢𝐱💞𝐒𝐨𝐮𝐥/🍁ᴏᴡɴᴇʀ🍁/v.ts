@@ -8,7 +8,7 @@ const Video_Button = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱☘️𝐊𝐞𝐲�
 const Image_Button = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱☘️𝐊𝐞𝐲𝐬/Image_Button`);
 const Text_List = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱☘️𝐊𝐞𝐲𝐬/Text_List`);
 import Client from "../../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/client";
-import νℓкуяιє from "../../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/msb";
+import AʀƈȶɨӼ from "../../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/msb";
 const Oops = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱☘️𝐊𝐞𝐲𝐬/Oops`);
 import ʟᴀʏᴏᴜᴛ from "../../𝐀𝐫𝐜𝐭𝐢𝐱🀄𝐕𝐞𝐧𝐭/ʟᴀʏᴏᴜᴛ";
 import { proto } from "@adiwajshing/baileys";
@@ -23,23 +23,23 @@ name: dotScrpt,
 async handle(
 client: Client,
 chat: proto.IWebMessageInfo,
-νℓкуяιє: νℓкуяιє,
+AʀƈȶɨӼ: AʀƈȶɨӼ,
 args: string[],
 ӄʀʏȶɛӄ: any
 ): Promise<void> {
-const ʟɴᴀᴍᴇ = νℓкуяιє.sender;
-const ᴅꜰɴᴀᴍᴇ = νℓкуяιє.commandName;
+const ʟɴᴀᴍᴇ = AʀƈȶɨӼ.sender;
+const ᴅꜰɴᴀᴍᴇ = AʀƈȶɨӼ.commandName;
 const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/[^\d+]/g, "");
 const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
-await client.getGroupMetaData(νℓкуяιє.chatId, νℓкуяιє);
-console.log("💡Is Group: " + νℓкуяιє.isGroup);
-console.log("💡Is Sender Group Admin: " + νℓкуяιє.isSenderGroupAdmin);
-console.log("💡Is Bot Group Admin: " + νℓкуяιє.isBotGroupAdmin);
-console.log("💡Is Reply Message: " + νℓкуяιє.replyMessage);
-console.log("💡Is Text Reply: " + νℓкуяιє.isTextReply);
+await client.getGroupMetaData(AʀƈȶɨӼ.chatId, AʀƈȶɨӼ);
+console.log("💡Is Group: " + AʀƈȶɨӼ.isGroup);
+console.log("💡Is Sender Group Admin: " + AʀƈȶɨӼ.isSenderGroupAdmin);
+console.log("💡Is Bot Group Admin: " + AʀƈȶɨӼ.isBotGroupAdmin);
+console.log("💡Is Reply Message: " + AʀƈȶɨӼ.replyMessage);
+console.log("💡Is Text Reply: " + AʀƈȶɨӼ.isTextReply);
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
-if (νℓкуяιє.isTextReply) {
+if (AʀƈȶɨӼ.isTextReply) {
 var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
 var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
 if (Receiver === ʟɴᴀᴍᴇ) {
@@ -49,37 +49,37 @@ console.log("💡Receiver: " + քɛʀֆօռɢօȶռʊʍ);
 }
 }
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
-if (νℓкуяιє.isSenderGroupAdmin) {
+if (AʀƈȶɨӼ.isSenderGroupAdmin) {
 await client.sendMessage(
-νℓкуяιє.chatId,
+AʀƈȶɨӼ.chatId,
 "You Are Admin Of This Group: 🔰",
 MessageType.text
 );
-} else if (νℓкуяιє.isSenderGroupAdmin && νℓкуяιє.isSenderTUFs) {
+} else if (AʀƈȶɨӼ.isSenderGroupAdmin && AʀƈȶɨӼ.isSenderTUFs) {
 await client.sendMessage(
-νℓкуяιє.chatId,
+AʀƈȶɨӼ.chatId,
 "You Are Admin+Tuf(dev tester): 👑+🔰",
 MessageType.text
 );
-} else if (!νℓкуяιє.isSenderGroupAdmin && νℓкуяιє.isSenderTUFs) {
+} else if (!AʀƈȶɨӼ.isSenderGroupAdmin && AʀƈȶɨӼ.isSenderTUFs) {
 await client.sendMessage(
-νℓкуяιє.chatId,
+AʀƈȶɨӼ.chatId,
 "You Are Tuf(dev tester): 👑",
 MessageType.text
 );
 } else {
 await client.sendMessage(
-νℓкуяιє.chatId,
+AʀƈȶɨӼ.chatId,
 "You Are Normal User: 🐾",
 MessageType.text
 );
 }
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
-// await ӄʀʏȶɛӄ.sendPresenceUpdate("unavailable", νℓкуяιє.chatId);
-// await ӄʀʏȶɛӄ.sendPresenceUpdate("available", νℓкуяιє.chatId);
-// await ӄʀʏȶɛӄ.sendPresenceUpdate("composing", νℓкуяιє.chatId);
-// await ӄʀʏȶɛӄ.sendPresenceUpdate("recording", νℓкуяιє.chatId);
-// await ӄʀʏȶɛӄ.sendPresenceUpdate("paused", νℓкуяιє.chatId);
+// await ӄʀʏȶɛӄ.sendPresenceUpdate("unavailable", AʀƈȶɨӼ.chatId);
+// await ӄʀʏȶɛӄ.sendPresenceUpdate("available", AʀƈȶɨӼ.chatId);
+// await ӄʀʏȶɛӄ.sendPresenceUpdate("composing", AʀƈȶɨӼ.chatId);
+// await ӄʀʏȶɛӄ.sendPresenceUpdate("recording", AʀƈȶɨӼ.chatId);
+// await ӄʀʏȶɛӄ.sendPresenceUpdate("paused", AʀƈȶɨӼ.chatId);
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 },
 };
