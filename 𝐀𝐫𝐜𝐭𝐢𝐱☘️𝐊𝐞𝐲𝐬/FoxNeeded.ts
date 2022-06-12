@@ -4,11 +4,13 @@
 */
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 import { MessageType } from "../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/message-type";
+import ʟᴀʏᴏᴜᴛ from "../𝐀𝐫𝐜𝐭𝐢𝐱🀄𝐕𝐞𝐧𝐭/ʟᴀʏᴏᴜᴛ";
 const FoxNeeded = async (
 client: any,
 Fox: any,
 AʀƈȶɨӼ: any,
-caption: any
+caption: any,
+dotScrpt: any
 ): Promise<void> => {
 try {
 let Personality;
@@ -25,21 +27,20 @@ Personality = "🐾";
 await client.sendMessage(
 AʀƈȶɨӼ.chatId,
 {
-text: `✥𝐔𝐬𝐞𝐫: ${Fox.pushName}
-
-${caption}`,
-footer: `⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ${Personality} ⦔`,
-title: "❌𝐄𝐫𝐫𝐨𝐫: RunTime Error!",
-buttonText: "❝ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞",
+text: `✥𝐔𝐬𝐞𝐫: ${Fox.pushName} 
+❌𝐄𝐫𝐫𝐨𝐫: Argument Needed To Run This Command.`,
+footer: "⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ⦔",
+title: `🔸𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt}_`,
+buttonText: "❝ How To Use? ❞",
 sections: [
 {
-title: "Error!",
+title: "𝐀𝐑𝐆𝐔𝐌𝐄𝐍𝐓 𝐍𝐄𝐄𝐃𝐄𝐃!",
 rows: [
 {
-title: "API Error!",
-rowId: "Server Side Error..",
-description:
-"💡𝐈𝐧𝐟𝐨: Please Try Again Later Or Inform Any Mod/Admin Of Vlkyrie Group.",
+title: "⚡𝐔𝐬𝐚𝐠𝐞",
+rowId: "argument required...",
+description: `💡𝐈𝐧𝐟𝐨: You must follow below instructions:
+${caption}`,
 },
 ],
 },
@@ -47,21 +48,6 @@ description:
 },
 MessageType.buttonsMessage
 );
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 } catch (error) {
 console.log(error);
 }
