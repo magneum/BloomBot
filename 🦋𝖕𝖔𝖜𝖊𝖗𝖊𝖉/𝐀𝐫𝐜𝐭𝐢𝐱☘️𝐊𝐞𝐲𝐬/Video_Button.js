@@ -45,7 +45,7 @@ const Video_Button = (TUF, Fox, AʀƈȶɨӼ, media, caption) => __awaiter(void 0
             caption: `|❝ 𝐔𝐬𝐞𝐫: ${Fox.pushName} ❞|
 
 ${caption}`,
-            footer: `⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ${Personality} ⦔`,
+            footer: `⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ${Personality} ⦔`,
             buttons: [
                 {
                     buttonId: `${______1.default.MuveOn}help`,

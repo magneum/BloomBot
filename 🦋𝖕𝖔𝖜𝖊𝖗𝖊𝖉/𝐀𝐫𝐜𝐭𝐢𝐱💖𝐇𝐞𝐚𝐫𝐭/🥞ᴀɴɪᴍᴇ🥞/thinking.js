@@ -127,7 +127,7 @@ module.exports = {
                             .sendMessage(AʀƈȶɨӼ.chatId, fs.readFileSync(GiveFile), message_type_1.MessageType.video, {
                             mimetype: `video/gif`,
                             quoted: Fox,
-                            caption: `⦓ 𝐕𝐥𝐤𝐲𝐫𝐞 ⦔
+                            caption: `⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ⦔
 
 🍕𝐅𝐫𝐨𝐦: _${Fox.pushName}_
 🌭𝐓𝐨: @${TagPerson}`,
@@ -155,7 +155,7 @@ module.exports = {
                                 .sendMessage(AʀƈȶɨӼ.chatId, fs.readFileSync(GiveFile), message_type_1.MessageType.video, {
                                 mimetype: `video/gif`,
                                 quoted: Fox,
-                                caption: `⦓ 𝐕𝐥𝐤𝐲𝐫𝐞 ⦔
+                                caption: `⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ⦔
 
 🍕𝐅𝐨𝐫: _${Fox.pushName}_`,
                                 contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
@@ -178,7 +178,7 @@ module.exports = {
                                 .sendMessage(AʀƈȶɨӼ.chatId, fs.readFileSync(GiveFile), message_type_1.MessageType.video, {
                                 mimetype: `video/gif`,
                                 quoted: Fox,
-                                caption: `⦓ 𝐕𝐥𝐤𝐲𝐫𝐞 ⦔
+                                caption: `⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ⦔
 
 🍕𝐅𝐫𝐨𝐦: _${Fox.pushName}_
 🌭𝐓𝐨: _@${քɛʀֆօռɢօȶռʊʍ}_`,
@@ -203,7 +203,7 @@ module.exports = {
                             .sendMessage(AʀƈȶɨӼ.chatId, fs.readFileSync(GiveFile), message_type_1.MessageType.video, {
                             mimetype: `video/gif`,
                             quoted: Fox,
-                            caption: `⦓ 𝐕𝐥𝐤𝐲𝐫𝐞 ⦔
+                            caption: `⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ⦔
 
 🍕𝐅𝐨𝐫: _${Fox.pushName}_`,
                             contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },

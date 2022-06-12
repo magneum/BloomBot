@@ -80,7 +80,7 @@ module.exports = {
                         text: `✥𝐔𝐬𝐞𝐫: ${Fox.pushName} 
 
 Press Below To Read How To Use This Command!`,
-                        footer: "⦓ 𝐕𝐥𝐤𝐲𝐫𝐞 ⦔",
+                        footer: "⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ⦔",
                         title: `🔸𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${______1.default.MuveOn}${dotScrpt.toUpperCase()}`,
                         buttonText: "❝ _How To Use?_ ❞",
                         sections: [
@@ -106,7 +106,7 @@ Option 2 - ${______1.default.MuveOn}${dotScrpt.toUpperCase()} _youtube link_`,
                             text: `✥𝐔𝐬𝐞𝐫: ${Fox.pushName} 
 
 Press Below To Read How To Use This Command!`,
-                            footer: "⦓ 𝐕𝐥𝐤𝐲𝐫𝐞 ⦔",
+                            footer: "⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ⦔",
                             title: `🔸𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${______1.default.MuveOn}${dotScrpt.toUpperCase()}`,
                             buttonText: "❝ _How To Use?_ ❞",
                             sections: [
@@ -190,7 +190,7 @@ Option 2 - ${______1.default.MuveOn}${dotScrpt.toUpperCase()} _youtube link_`,
 📅𝗥𝗲𝗹𝗲𝗮𝘀𝗲𝗱: ${Found.ago}
 🔗𝐋𝐢𝐧𝐤: ${Found.url}
 📜𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${Found.description}`,
-                                footer: `⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔`,
+                                footer: `⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ⦔`,
                                 buttons: [
                                     {
                                         buttonId: `${______1.default.MuveOn}help`,

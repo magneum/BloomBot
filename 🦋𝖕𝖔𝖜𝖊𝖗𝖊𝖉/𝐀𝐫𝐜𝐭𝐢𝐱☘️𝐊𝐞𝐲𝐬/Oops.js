@@ -34,7 +34,7 @@ const Oops = (TUF, Fox, AʀƈȶɨӼ, caption) => __awaiter(void 0, void 0, void 
             text: `|❝ 𝐔𝐬𝐞𝐫: ${Fox.pushName} ❞|
 
 ${caption}`,
-            footer: `⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ${Personality} ⦔`,
+            footer: `⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ${Personality} ⦔`,
             title: "❌𝐄𝐫𝐫𝐨𝐫: RunTime Error!",
             buttonText: "❝ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞",
             sections: [

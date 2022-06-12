@@ -76,7 +76,7 @@ module.exports = {
                         text: `✥𝐔𝐬𝐞𝐫: ${Fox.pushName} 
 
 Press Below To Read How To Use This Command!`,
-                        footer: "⦓ 𝐕𝐥𝐤𝐲𝐫𝐞 ⦔",
+                        footer: "⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ⦔",
                         title: `🔸𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${______1.default.MuveOn}${dotScrpt.toUpperCase()}`,
                         buttonText: "❝ How To Use? ❞",
                         sections: [
@@ -110,7 +110,7 @@ Option 2 - reply to media: ${______1.default.MuveOn}${dotScrpt.toUpperCase()} _<
                     text: `✥𝐔𝐬𝐞𝐫: ${Fox.pushName} 
 
 Press Below To Read How To Use This Command!`,
-                    footer: "⦓ 𝐕𝐥𝐤𝐲𝐫𝐞 ⦔",
+                    footer: "⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ⦔",
                     title: `🔸𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${______1.default.MuveOn}${dotScrpt.toUpperCase()}`,
                     buttonText: "❝ How To Use? ❞",
                     sections: [
