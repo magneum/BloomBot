@@ -49,7 +49,7 @@ AʀƈȶɨӼ.chatId,
 text: `✥𝐔𝐬𝐞𝐫: ${Fox.pushName} 
 
 Press Below To Read How To Use This Command!`,
-footer: "⦓ 𝐕𝐥𝐤𝐲𝐫𝐞 ⦔",
+footer: "⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔",
 title: `🔸𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()}`,
 buttonText: "❝ _How To Use?_ ❞",
 sections: [
@@ -89,7 +89,7 @@ AʀƈȶɨӼ.chatId,
 text: `✥𝐔𝐬𝐞𝐫: ${Fox.pushName} 
 
 Press Below To Read How To Use This Command!`,
-footer: "⦓ 𝐕𝐥𝐤𝐲𝐫𝐞 ⦔",
+footer: "⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔",
 title: `🔸𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()}`,
 buttonText: "❝ _How To Use?_ ❞",
 sections: [
