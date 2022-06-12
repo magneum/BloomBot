@@ -28,7 +28,7 @@ var dotScrpt = scriptName.slice(0, -3).toLowerCase();
 export = {
 name: dotScrpt,
 async handle(
-client: Client,
+TUF: Client,
 Fox: proto.IWebMessageInfo,
 AʀƈȶɨӼ: AʀƈȶɨӼ,
 ǟʀɢʊʍɛռȶ: string[],
@@ -41,12 +41,12 @@ const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/[^\d+]/g, "");
 const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 console.log("💡Is Group: " + AʀƈȶɨӼ.isGroup);
-await client.getGroupMetaData(AʀƈȶɨӼ.chatId, AʀƈȶɨӼ);
+await TUF.getGroupMetaData(AʀƈȶɨӼ.chatId, AʀƈȶɨӼ);
 console.log("💡Is Bot Group Admin: " + AʀƈȶɨӼ.isBotGroupAdmin);
 console.log("💡Is Sender Group Admin: " + AʀƈȶɨӼ.isSenderGroupAdmin);
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 if (ǟʀɢʊʍɛռȶ.length === 0) {
-await client.sendMessage(
+await TUF.sendMessage(
 AʀƈȶɨӼ.chatId,
 {
 text: `✥𝐔𝐬𝐞𝐫: ${Fox.pushName} 
@@ -76,7 +76,7 @@ MessageType.buttonsMessage
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 if (ǟʀɢʊʍɛռȶ.includes("yout")) {
 if (!ytIdRegex.test(ǟʀɢʊʍɛռȶ[0])) {
-await client.sendMessage(
+await TUF.sendMessage(
 AʀƈȶɨӼ.chatId,
 {
 text: `✥𝐔𝐬𝐞𝐫: ${Fox.pushName} 
@@ -113,7 +113,7 @@ FinalGot = ǟʀɢʊʍɛռȶ.join(" ");
 }
 const LinkFound = await yts(FinalGot);
 if (!LinkFound) {
-Text_List.VText(client, Fox, AʀƈȶɨӼ, `❌𝗘𝗿𝗿𝗼𝗿: No Music Found!`);
+Text_List.VText(TUF, Fox, AʀƈȶɨӼ, `❌𝗘𝗿𝗿𝗼𝗿: No Music Found!`);
 return;
 }
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
@@ -121,7 +121,7 @@ const Videos = LinkFound.videos.slice(0, 1);
 Videos.forEach(async function (Found) {
 if (Found.seconds > 1800) {
 Image_Button.VImg(
-client,
+TUF,
 Fox,
 AʀƈȶɨӼ,
 `❌𝗘𝗿𝗿𝗼𝗿: _Choose Smaller Video less then 30mins!_
@@ -134,7 +134,7 @@ Found.thumbnail
 }
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 // Image_Button.VImg(
-// client,
+// TUF,
 // Fox,
 // AʀƈȶɨӼ,
 // `💡𝐈𝐧𝐟𝐨: In order to use this command:
@@ -153,7 +153,7 @@ ffmpeg(stream)
 .saveToFile(`./𝐀𝐫𝐜𝐭𝐢𝐱🐞𝐁𝐞𝐞𝐭𝐥𝐞/${Fox.key.id}.mp4`)
 .on("end", async () => {
 await ӄʀʏȶɛӄ.sendPresenceUpdate("composing", AʀƈȶɨӼ.chatId);
-await client
+await TUF
 .sendMessage(
 AʀƈȶɨӼ.chatId,
 {
@@ -192,14 +192,14 @@ headerType: 5,
 MessageType.buttonsMessage
 )
 .then(VOID.VOID(`./𝐀𝐫𝐜𝐭𝐢𝐱🐞𝐁𝐞𝐞𝐭𝐥𝐞/${Fox.key.id}.mp4`))
-.catch((error: any) => Oops.VOp(client, Fox, AʀƈȶɨӼ, error));
+.catch((error: any) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
 await ӄʀʏȶɛӄ.sendPresenceUpdate("available", AʀƈȶɨӼ.chatId);
 return;
 });
 });
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 } catch (error) {
-return Oops.VOp(client, Fox, AʀƈȶɨӼ, error);
+return Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error);
 }
 },
 };
