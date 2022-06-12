@@ -24,7 +24,7 @@ export = {
 name: dotScrpt,
 async handle(
 client: Client,
-chat: proto.IWebMessageInfo,
+Fox: proto.IWebMessageInfo,
 AʀƈȶɨӼ: AʀƈȶɨӼ,
 args: string[],
 ӄʀʏȶɛӄ
@@ -44,7 +44,7 @@ if (args.length === 0) {
 await client.sendMessage(
 AʀƈȶɨӼ.chatId,
 {
-text: `✥𝐔𝐬𝐞𝐫: ${chat.pushName} 
+text: `✥𝐔𝐬𝐞𝐫: ${Fox.pushName} 
 
 Press Below To Read How To Use This Command!`,
 footer: "⦓ 𝐕𝐥𝐤𝐲𝐫𝐞 ⦔",
@@ -148,7 +148,7 @@ AʀƈȶɨӼTInput = themes[Math.floor(Math.random() * themes.length)];
 if (!themes.includes(AʀƈȶɨӼTInput)) {
 return Image_Button.VImg(
 client,
-chat,
+Fox,
 AʀƈȶɨӼ,
 `𝐂𝐚𝐫𝐛𝐨𝐧🍯𝐀𝐏𝐈
 ❌𝗘𝗿𝗿𝗼𝗿: _Wrong Theme Name_
@@ -160,7 +160,7 @@ AʀƈȶɨӼ,
 if (Code.length > 20) {
 return Image_Button.VImg(
 client,
-chat,
+Fox,
 AʀƈȶɨӼ,
 `𝐂𝐚𝐫𝐛𝐨𝐧🍯𝐀𝐏𝐈
 ❌𝗘𝗿𝗿𝗼𝗿: _max 20 letters_`,
@@ -175,14 +175,14 @@ const carbon = new Carbon.createCarbon()
 const output = await Carbon.generateCarbon(carbon);
 await ӄʀʏȶɛӄ.sendMessage(AʀƈȶɨӼ.chatId, {
 image: output,
-quoted: chat,
+quoted: Fox,
 caption: `𝐂𝐚𝐫𝐛𝐨𝐧🍯𝐀𝐏𝐈
 🌈 𝗧𝗵𝗲𝗺𝗲: _${AʀƈȶɨӼTInput}_
 ❗𝗘𝗺𝗼𝗷𝗶: Will Remove All Emoji!`,
 });
 return;
 } catch (error) {
-return Oops.VOp(client, chat, AʀƈȶɨӼ, error);
+return Oops.VOp(client, Fox, AʀƈȶɨӼ, error);
 }
 },
 };

@@ -24,7 +24,7 @@ export = {
 name: dotScrpt,
 async handle(
 client: Client,
-chat: proto.IWebMessageInfo,
+Fox: proto.IWebMessageInfo,
 AʀƈȶɨӼ: AʀƈȶɨӼ,
 args: string[],
 ӄʀʏȶɛӄ
@@ -44,14 +44,14 @@ if (AʀƈȶɨӼ.isImage || AʀƈȶɨӼ.isGIF || AʀƈȶɨӼ.isVideo) {
 var FileSocketObject = {
 message:
 AʀƈȶɨӼ.type === "image"
-? chat.message.imageMessage
-: chat.message.videoMessage,
+? Fox.message.imageMessage
+: Fox.message.videoMessage,
 type: AʀƈȶɨӼ.type,
 };
-var FileID: string = chat.key.id;
+var FileID: string = Fox.key.id;
 await ToSticker.VStk(
 client,
-chat,
+Fox,
 args,
 AʀƈȶɨӼ,
 FileID,
@@ -65,17 +65,17 @@ AʀƈȶɨӼ.isReplyVideo
 ) {
 var FileSocketObject = {
 message: AʀƈȶɨӼ.isReplyImage
-? chat.message.extendedTextMessage.contextInfo.quotedMessage
+? Fox.message.extendedTextMessage.contextInfo.quotedMessage
 .imageMessage
-: chat.message.extendedTextMessage.contextInfo.quotedMessage
+: Fox.message.extendedTextMessage.contextInfo.quotedMessage
 .videoMessage,
 type: AʀƈȶɨӼ.isReplyImage ? "image" : "video",
 };
 var FileID: string =
-chat.message.extendedTextMessage.contextInfo.stanzaId;
+Fox.message.extendedTextMessage.contextInfo.stanzaId;
 await ToSticker.VStk(
 client,
-chat,
+Fox,
 args,
 AʀƈȶɨӼ,
 FileID,
@@ -86,7 +86,7 @@ FileSocketObject
 await client.sendMessage(
 AʀƈȶɨӼ.chatId,
 {
-text: `✥𝐔𝐬𝐞𝐫: ${chat.pushName} 
+text: `✥𝐔𝐬𝐞𝐫: ${Fox.pushName} 
 
 Press Below To Read How To Use This Command!`,
 footer: "⦓ 𝐕𝐥𝐤𝐲𝐫𝐞 ⦔",
@@ -125,7 +125,7 @@ MessageType.buttonsMessage
 await client.sendMessage(
 AʀƈȶɨӼ.chatId,
 {
-text: `✥𝐔𝐬𝐞𝐫: ${chat.pushName} 
+text: `✥𝐔𝐬𝐞𝐫: ${Fox.pushName} 
 
 Press Below To Read How To Use This Command!`,
 footer: "⦓ 𝐕𝐥𝐤𝐲𝐫𝐞 ⦔",
