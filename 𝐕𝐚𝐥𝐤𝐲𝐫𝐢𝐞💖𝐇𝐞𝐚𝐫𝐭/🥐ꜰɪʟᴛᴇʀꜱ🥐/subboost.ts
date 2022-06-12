@@ -69,7 +69,7 @@ chat,
 νℓкуяιє,
 FileName,
 ConvertedName,
-`-af "apulsator=hz=0.08"`
+`-af "asubboost"`
 )
 );
 };
