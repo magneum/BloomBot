@@ -9,7 +9,7 @@ import Video_Button from "../../𝐀𝐫𝐜𝐭𝐢𝐱☘️𝐊𝐞𝐲𝐬/V
 import Text_List from "../../𝐀𝐫𝐜𝐭𝐢𝐱☘️𝐊𝐞𝐲𝐬/Text_List";
 import FoxNeeded from "../../𝐀𝐫𝐜𝐭𝐢𝐱☘️𝐊𝐞𝐲𝐬/FoxNeeded"
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
-import Client from "../../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/client";
+import Client from "../../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/TUF";
 import AʀƈȶɨӼ from "../../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/msb";
 const Oops = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱☘️𝐊𝐞𝐲𝐬/Oops`);
 import ʟᴀʏᴏᴜᴛ from "../../𝐀𝐫𝐜𝐭𝐢𝐱🀄𝐕𝐞𝐧𝐭/ʟᴀʏᴏᴜᴛ";
@@ -23,7 +23,7 @@ var dotScrpt = scriptName.slice(0, -3).toLowerCase();
 export = {
 name: dotScrpt,
 async handle(
-client: Client,
+TUF: Client,
 Fox: proto.IWebMessageInfo,
 AʀƈȶɨӼ: AʀƈȶɨӼ,
 ǟʀɢʊʍɛռȶ: string[],
@@ -34,7 +34,7 @@ const ᴅꜰɴᴀᴍᴇ = AʀƈȶɨӼ.commandName;
 const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/[^\d+]/g, "");
 const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
-await client.getGroupMetaData(AʀƈȶɨӼ.chatId, AʀƈȶɨӼ);
+await TUF.getGroupMetaData(AʀƈȶɨӼ.chatId, AʀƈȶɨӼ);
 console.log("💡Is Group: " + AʀƈȶɨӼ.isGroup);
 console.log("💡Is Sender Group Admin: " + AʀƈȶɨӼ.isSenderGroupAdmin);
 console.log("💡Is Bot Group Admin: " + AʀƈȶɨӼ.isBotGroupAdmin);
@@ -52,25 +52,25 @@ console.log("💡Receiver: " + քɛʀֆօռɢօȶռʊʍ);
 }
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 // if (AʀƈȶɨӼ.isSenderGroupAdmin) {
-// await client.sendMessage(
+// await TUF.sendMessage(
 // AʀƈȶɨӼ.chatId,
 // "You Are Admin Of This Group: 🔰",
 // MessageType.text
 // );
 // } else if (AʀƈȶɨӼ.isSenderGroupAdmin && AʀƈȶɨӼ.isSenderTUFs) {
-// await client.sendMessage(
+// await TUF.sendMessage(
 // AʀƈȶɨӼ.chatId,
 // "You Are Admin+Tuf(dev tester): 👑+🔰",
 // MessageType.text
 // );
 // } else if (!AʀƈȶɨӼ.isSenderGroupAdmin && AʀƈȶɨӼ.isSenderTUFs) {
-// await client.sendMessage(
+// await TUF.sendMessage(
 // AʀƈȶɨӼ.chatId,
 // "You Are Tuf(dev tester): 👑",
 // MessageType.text
 // );
 // } else {
-// await client.sendMessage(
+// await TUF.sendMessage(
 // AʀƈȶɨӼ.chatId,
 // "You Are Normal User: 🐾",
 // MessageType.text
@@ -104,7 +104,7 @@ id: "id-like-buttons-message",
 },
 ],
 };
-await client.sendMessage(
+await TUF.sendMessage(
 AʀƈȶɨӼ.chatId,
 templateMessage,
 MessageType.buttonsMessage

@@ -10,7 +10,7 @@ import { proto, WASocket } from "@adiwajshing/baileys";
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 const resolve = async function (
 messageInstance: proto.IWebMessageInfo,
-client: WASocket
+TUF: WASocket
 ) {
 var AʀƈȶɨӼ: AʀƈȶɨӼClass = new AʀƈȶɨӼClass();
 var prefix: string = ʟᴀʏᴏᴜᴛ.PREFIX + "\\w+";
@@ -24,7 +24,7 @@ console.log(chalk.redBright("[ERROR] Something went wrong. ", err));
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 AʀƈȶɨӼ.chatId = messageInstance.key.remoteJid;
 AʀƈȶɨӼ.fromMe = messageInstance.key.fromMe;
-AʀƈȶɨӼ.owner = client.user.id.replace(/:.*@/g, "@");
+AʀƈȶɨӼ.owner = TUF.user.id.replace(/:.*@/g, "@");
 AʀƈȶɨӼ.mimeType = messageInstance.message
 ? Object.keys(messageInstance.message)[0] === "senderKeyDistributionMessage"
 ? Object.keys(messageInstance.message)[2]
@@ -109,7 +109,7 @@ AʀƈȶɨӼ.isReplyAudio = messageInstance.message?.extendedTextMessage
 ?.contextInfo?.quotedMessage?.audioMessage
 ? true
 : false;
-AʀƈȶɨӼ.logGroup = client.user.id.replace(/:.*@/g, "@");
+AʀƈȶɨӼ.logGroup = TUF.user.id.replace(/:.*@/g, "@");
 AʀƈȶɨӼ.isGroup = AʀƈȶɨӼ.chatId.endsWith("@g.us");
 AʀƈȶɨӼ.isPm = !AʀƈȶɨӼ.isGroup;
 AʀƈȶɨӼ.sender =

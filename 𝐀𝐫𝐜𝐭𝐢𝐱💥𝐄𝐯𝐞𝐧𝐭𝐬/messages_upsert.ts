@@ -17,7 +17,7 @@ const Halt = require(`../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜�
 import Link_Proctectron from "../𝐀𝐫𝐜𝐭𝐢𝐱🀄𝐕𝐞𝐧𝐭/Link_Proctectron";
 import { MessageType } from "../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/message-type";
 import resolve from "../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/helper";
-import Client from "../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/client";
+import Client from "../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/TUF";
 import { proto } from "@adiwajshing/baileys";
 import AʀƈȶɨӼ from "../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/msb";
 import ʟᴀʏᴏᴜᴛ from "../𝐀𝐫𝐜𝐭𝐢𝐱🀄𝐕𝐞𝐧𝐭/ʟᴀʏᴏᴜᴛ";
@@ -35,7 +35,7 @@ return;
 }
 let Fox: proto.IWebMessageInfo = m.messages[0];
 let AʀƈȶɨӼ: AʀƈȶɨӼ = await resolve(Fox, ӄʀʏȶɛӄ);
-let client: Client = new Client(ӄʀʏȶɛӄ);
+let TUF: Client = new Client(ӄʀʏȶɛӄ);
 if (AʀƈȶɨӼ.isCmd) {
 console.log(AʀƈȶɨӼ);
 console.log(
@@ -46,13 +46,13 @@ Kolor.blueBright.bold(
 const command = commandHandler.get(AʀƈȶɨӼ.commandName);
 var ǟʀɢʊʍɛռȶ = AʀƈȶɨӼ.body.trim().split(/\s+/).slice(1);
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
-await Silent.VSln(client, Fox, AʀƈȶɨӼ, ӄʀʏȶɛӄ);
-await Rankr.VRnIT(client, Fox, AʀƈȶɨӼ, ӄʀʏȶɛӄ);
-// await SetCom.Vscom(client, Fox, AʀƈȶɨӼ, ӄʀʏȶɛӄ);
-await Link_Proctectron.VFLink(client, Fox, AʀƈȶɨӼ, ӄʀʏȶɛӄ);
+await Silent.VSln(TUF, Fox, AʀƈȶɨӼ, ӄʀʏȶɛӄ);
+await Rankr.VRnIT(TUF, Fox, AʀƈȶɨӼ, ӄʀʏȶɛӄ);
+// await SetCom.Vscom(TUF, Fox, AʀƈȶɨӼ, ӄʀʏȶɛӄ);
+await Link_Proctectron.VFLink(TUF, Fox, AʀƈȶɨӼ, ӄʀʏȶɛӄ);
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 if (!command) {
-await client.sendMessage(
+await TUF.sendMessage(
 AʀƈȶɨӼ.chatId,
 {
 quoted: Fox.message,
@@ -76,23 +76,29 @@ headerType: 4,
 },
 MessageType.buttonsMessage
 );
+("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
+} else if (command && AʀƈȶɨӼ.commandName == "help") {
+try {
+return command.handle(
+TUF,
+Fox,
+AʀƈȶɨӼ,
+ǟʀɢʊʍɛռȶ,
+ӄʀʏȶɛӄ,
+commandHandler
+);
+} catch (err) {
+console.log(Kolor.red("❌𝐄𝐫𝐫𝐨𝐫: ", err));
+return;
 }
-// else if (command && AʀƈȶɨӼ.commandName == "help") {
-// try {
-// command.handle(client, Fox, AʀƈȶɨӼ, ǟʀɢʊʍɛռȶ, commandHandler);
-// return;
-// } catch (err) {
-// console.log(Kolor.red("❌𝐄𝐫𝐫𝐨𝐫꧂ ", err));
-// return;
-// }
-// }
+}
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 try {
 await command
-.handle(client, Fox, AʀƈȶɨӼ, ǟʀɢʊʍɛռȶ, ӄʀʏȶɛӄ)
-.catch((err) => console.log("❌𝐄𝐫𝐫𝐨𝐫꧂ " + err));
+.handle(TUF, Fox, AʀƈȶɨӼ, ǟʀɢʊʍɛռȶ, ӄʀʏȶɛӄ)
+.catch((err) => console.log("❌𝐄𝐫𝐫𝐨𝐫: " + err));
 } catch (err) {
-console.log(Kolor.red("❌𝐄𝐫𝐫𝐨𝐫꧂ ", err));
+console.log(Kolor.red("❌𝐄𝐫𝐫𝐨𝐫: ", err));
 }
 }
 };

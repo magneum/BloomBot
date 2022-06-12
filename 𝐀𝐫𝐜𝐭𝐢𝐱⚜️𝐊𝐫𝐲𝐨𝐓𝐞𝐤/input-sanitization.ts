@@ -9,13 +9,13 @@ import chalk from "chalk";
 import { Transform } from "stream";
 import { writeFile } from "fs/promises";
 import AʀƈȶɨӼ from "./msb";
-import Client from "./client";
+import Client from "./TUF";
 import { MessageType } from "./message-type";
 import { GroupParticipant } from "@adiwajshing/baileys";
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 const getCleanedContact = async (
 ǟʀɢʊʍɛռȶ: string[],
-client: Client,
+TUF: Client,
 AʀƈȶɨӼ: AʀƈȶɨӼ
 ) => {
 var jidNumber = "";
@@ -24,7 +24,7 @@ if (parseInt(ǟʀɢʊʍɛռȶ[0]) === NaN || ǟʀɢʊʍɛռȶ[0][0] === "+" || �
 if (ǟʀɢʊʍɛռȶ[0][0] === "@" || ǟʀɢʊʍɛռȶ[0][0] === "+") {
 jidNumber = ǟʀɢʊʍɛռȶ[0].substring(1, ǟʀɢʊʍɛռȶ[0].length + 1);
 } else {
-client.sendMessage(
+TUF.sendMessage(
 AʀƈȶɨӼ.chatId,
 "*Enter valid contact number.* Approved Syntax:\n```1. XXXXXXXXXX``` \n```2. Tag the person``` \n```3. +(YYY)XXXXXXXXXX.``` \n_(YY- Country Code, without zeros)_",
 MessageType.text
@@ -36,7 +36,7 @@ jidNumber = ǟʀɢʊʍɛռȶ[0];
 }
 
 if (jidNumber.length < 8 || jidNumber.length > 13) {
-client.sendMessage(
+TUF.sendMessage(
 AʀƈȶɨӼ.chatId,
 "*Enter valid contact number.* Approved Syntax:\n```1. XXXXXXXXXX``` \n```2. Tag the person``` \n```3. +(YYY)XXXXXXXXXX.``` \n_(YY- Country Code, without zeros)_",
 MessageType.text
@@ -46,7 +46,7 @@ return undefined;
 jidNumber = countryCode + jidNumber;
 }
 console.log(jidNumber);
-var isOnWhatsApp = await client.ӄʀʏȶɛӄ.onWhatsApp(jidNumber);
+var isOnWhatsApp = await TUF.ӄʀʏȶɛӄ.onWhatsApp(jidNumber);
 if (isOnWhatsApp === undefined) {
 throw "NumberInvalid";
 }
@@ -87,7 +87,7 @@ return isMember;
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 const handleError = async (
 err,
-client,
+TUF,
 AʀƈȶɨӼ,
 customMessage = "```Something went wrong. The error has been logged in log chats```"
 ) => {
@@ -104,8 +104,8 @@ isSenderGroupAdmin: AʀƈȶɨӼ.isSenderGroupAdmin,
 isSenderTUFs: AʀƈȶɨӼ.isSenderTUFs,
 err: err,
 };
-// client.sendMessage(AʀƈȶɨӼ.chatId, customMessage, MessageType.text);
-// client.sendMessage(AʀƈȶɨӼ.logGroup, { text: format(ERROR_TEMPLATE, data) });
+// TUF.sendMessage(AʀƈȶɨӼ.chatId, customMessage, MessageType.text);
+// TUF.sendMessage(AʀƈȶɨӼ.logGroup, { text: format(ERROR_TEMPLATE, data) });
 };
 const saveBuffer = async (fileName: string, stream: Transform) => {
 let buffer = Buffer.from([]);
