@@ -29,24 +29,11 @@ AʀƈȶɨӼ: any,
 ӄʀʏȶɛӄ: any
 ): Promise<void> => {
 try {
-await BanPerson.findOne(
-{
-ID: AʀƈȶɨӼ.sender,
-},
-async (error, BanPerson) => {
-if (error) return console.log(error);
-BanGroup.findOne(
-{
-ID: AʀƈȶɨӼ.chatId,
-},
-async (error: any, BanGroup: any) => {
-if (error) return console.log(error);
-if (BanPerson) return;
-if (BanGroup && !AʀƈȶɨӼ.fromMe && !AʀƈȶɨӼ.isSenderTUFs) return;
-}
-);
-}
-);
+
+
+
+
+    
 } catch (error) {
 console.log(error);
 }
