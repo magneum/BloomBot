@@ -22,7 +22,7 @@ export = {
 name: dotScrpt,
 async handle(
 client: Client,
-chat: proto.IWebMessageInfo,
+Fox: proto.IWebMessageInfo,
 AʀƈȶɨӼ: AʀƈȶɨӼ,
 args: string[],
 ӄʀʏȶɛӄ: any
@@ -40,10 +40,10 @@ console.log("💡Is Reply Message: " + AʀƈȶɨӼ.replyMessage);
 console.log("💡Is Text Reply: " + AʀƈȶɨӼ.isTextReply);
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 if (AʀƈȶɨӼ.isTextReply) {
-var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
+var Receiver = Fox.message.extendedTextMessage.contextInfo.participant;
 var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
 if (Receiver === ʟɴᴀᴍᴇ) {
-console.log("💡Receiver = Self: " + chat.pushName);
+console.log("💡Receiver = Self: " + Fox.pushName);
 } else {
 console.log("💡Receiver: " + քɛʀֆօռɢօȶռʊʍ);
 }
