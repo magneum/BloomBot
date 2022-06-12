@@ -17,13 +17,13 @@ var dotScrpt = scriptName.slice(0, -3).toLowerCase();
 export = {
 name: dotScrpt,
 async handle(
-client: Client,
+TUF: Client,
 Fox: proto.IWebMessageInfo,
 AʀƈȶɨӼ: AʀƈȶɨӼ,
 ǟʀɢʊʍɛռȶ: string[],
 ӄʀʏȶɛӄ
 ): Promise<void> {
-await client.sendMessage(
+await TUF.sendMessage(
 AʀƈȶɨӼ.chatId,
 {
 quoted: Fox.message,

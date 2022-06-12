@@ -24,7 +24,7 @@ var dotScrpt = scriptName.slice(0, -3).toLowerCase();
 export = {
 name: dotScrpt,
 async handle(
-client: Client,
+TUF: Client,
 Fox: proto.IWebMessageInfo,
 AʀƈȶɨӼ: AʀƈȶɨӼ,
 ǟʀɢʊʍɛռȶ: string[],
@@ -37,13 +37,13 @@ const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/[^\d+]/g, "");
 const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 console.log("💡Is Group: " + AʀƈȶɨӼ.isGroup);
-await client.getGroupMetaData(AʀƈȶɨӼ.chatId, AʀƈȶɨӼ);
+await TUF.getGroupMetaData(AʀƈȶɨӼ.chatId, AʀƈȶɨӼ);
 console.log("💡Is Bot Group Admin: " + AʀƈȶɨӼ.isBotGroupAdmin);
 console.log("💡Is Sender Group Admin: " + AʀƈȶɨӼ.isSenderGroupAdmin);
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 if (!AʀƈȶɨӼ.isGroup) {
 return Image_Button.VImg(
-client,
+TUF,
 Fox,
 AʀƈȶɨӼ,
 `❌𝐃𝐞𝐧𝐢𝐞𝐝: _This Command is Only For Groups!_`,
@@ -53,7 +53,7 @@ AʀƈȶɨӼ,
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 if (AʀƈȶɨӼ.isGroup && !AʀƈȶɨӼ.isSenderGroupAdmin) {
 return Image_Button.VImg(
-client,
+TUF,
 Fox,
 AʀƈȶɨӼ,
 `❌𝐃𝐞𝐧𝐢𝐞𝐝: _Admins/Dev Only.You Are Not Allowed!_`,
@@ -63,7 +63,7 @@ AʀƈȶɨӼ,
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 if (AʀƈȶɨӼ.isGroup && !AʀƈȶɨӼ.isBotGroupAdmin) {
 return Image_Button.VImg(
-client,
+TUF,
 Fox,
 AʀƈȶɨӼ,
 `❌𝐃𝐞𝐧𝐢𝐞𝐝: _Bot Not Admin!_`,
@@ -77,7 +77,7 @@ let PersonToRemove =
 Fox.message.extendedTextMessage.contextInfo.participant;
 if (PersonToRemove === owner + `@s.whatsapp.net`) {
 return Image_Button.VImg(
-client,
+TUF,
 Fox,
 AʀƈȶɨӼ,
 `❌𝐃𝐞𝐧𝐢𝐞𝐝: _Can't Kick Grroup Owner!_`,
@@ -86,7 +86,7 @@ AʀƈȶɨӼ,
 }
 if (PersonToRemove === AʀƈȶɨӼ.owner) {
 return Image_Button.VImg(
-client,
+TUF,
 Fox,
 AʀƈȶɨӼ,
 `❌𝐃𝐞𝐧𝐢𝐞𝐝: _Can't Kick Bot Owner!_`,
@@ -110,7 +110,7 @@ return isMember;
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 if (!isMember) {
 return Image_Button.VImg(
-client,
+TUF,
 Fox,
 AʀƈȶɨӼ,
 `❌𝐃𝐞𝐧𝐢𝐞𝐝: _Peson not in group!_`,
@@ -124,7 +124,7 @@ var Receiver =
 Fox.message.extendedTextMessage.contextInfo.participant;
 var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
 await Image_Button.VImg(
-client,
+TUF,
 Fox,
 AʀƈȶɨӼ,
 `💡𝐈𝐧𝐟𝐨: _Kicked @${քɛʀֆօռɢօȶռʊʍ} Outta Group!_`,
@@ -132,10 +132,10 @@ AʀƈȶɨӼ,
 );
 return await ӄʀʏȶɛӄ
 .groupRemove(AʀƈȶɨӼ.chatId, [PersonToRemove])
-.catch((error: any) => Oops.VOp(client, Fox, AʀƈȶɨӼ, error));
+.catch((error: any) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
 } else {
 await Image_Button.VImg(
-client,
+TUF,
 Fox,
 AʀƈȶɨӼ,
 `💡𝐈𝐧𝐟𝐨: _Kicked @${ᴘɴᴀᴍᴇ} Outta Group!_`,
@@ -143,7 +143,7 @@ AʀƈȶɨӼ,
 );
 return await ӄʀʏȶɛӄ
 .groupRemove(AʀƈȶɨӼ.chatId, [PersonToRemove])
-.catch((error: any) => Oops.VOp(client, Fox, AʀƈȶɨӼ, error));
+.catch((error: any) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
 }
 }
 }
@@ -152,7 +152,7 @@ if (ǟʀɢʊʍɛռȶ[0][0] == `@`) {
 const number: any = ǟʀɢʊʍɛռȶ[0].substring(1);
 if (isNaN(number)) {
 return FoxNeeded.VFox(
-client,
+TUF,
 Fox,
 AʀƈȶɨӼ,
 `Option 1 - ${
@@ -165,7 +165,7 @@ dotScrpt
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 if (number + `@s.whatsapp.net` === AʀƈȶɨӼ.owner) {
 return Image_Button.VImg(
-client,
+TUF,
 Fox,
 AʀƈȶɨӼ,
 `❌𝐃𝐞𝐧𝐢𝐞𝐝: _Can't Kick Bot Owner!_`,
@@ -179,7 +179,7 @@ var Receiver =
 Fox.message.extendedTextMessage.contextInfo.participant;
 var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
 await Image_Button.VImg(
-client,
+TUF,
 Fox,
 AʀƈȶɨӼ,
 `💡𝐈𝐧𝐟𝐨: _Kicked @${քɛʀֆօռɢօȶռʊʍ} Outta the group!_`,
@@ -191,7 +191,7 @@ number + `@s.whatsapp.net`,
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 } else {
 await Image_Button.VImg(
-client,
+TUF,
 Fox,
 AʀƈȶɨӼ,
 `💡𝐈𝐧𝐟𝐨: _@${ᴘɴᴀᴍᴇ} Kicked em Successfully!_`,
@@ -204,7 +204,7 @@ number + `@s.whatsapp.net`,
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 } else {
 return Image_Button.VImg(
-client,
+TUF,
 Fox,
 AʀƈȶɨӼ,
 `❌𝐃𝐞𝐧𝐢𝐞𝐝: _Can't Kick Group Owner!_`,
@@ -214,7 +214,7 @@ AʀƈȶɨӼ,
 }
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 } catch (error) {
-return Oops.VOp(client, Fox, AʀƈȶɨӼ, error);
+return Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error);
 }
 },
 };

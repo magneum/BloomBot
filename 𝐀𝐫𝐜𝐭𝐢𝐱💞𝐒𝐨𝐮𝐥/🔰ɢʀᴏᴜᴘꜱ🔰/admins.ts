@@ -24,7 +24,7 @@ var dotScrpt = scriptName.slice(0, -3).toLowerCase();
 export = {
 name: dotScrpt,
 async handle(
-client: Client,
+TUF: Client,
 Fox: proto.IWebMessageInfo,
 AʀƈȶɨӼ: AʀƈȶɨӼ,
 ǟʀɢʊʍɛռȶ: string[],
@@ -37,13 +37,13 @@ const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/[^\d+]/g, "");
 const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 console.log("💡Is Group: " + AʀƈȶɨӼ.isGroup);
-await client.getGroupMetaData(AʀƈȶɨӼ.chatId, AʀƈȶɨӼ);
+await TUF.getGroupMetaData(AʀƈȶɨӼ.chatId, AʀƈȶɨӼ);
 console.log("💡Is Bot Group Admin: " + AʀƈȶɨӼ.isBotGroupAdmin);
 console.log("💡Is Sender Group Admin: " + AʀƈȶɨӼ.isSenderGroupAdmin);
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 if (!AʀƈȶɨӼ.isGroup) {
 Text_List.VText(
-client,
+TUF,
 Fox,
 AʀƈȶɨӼ,
 `❌𝐃𝐞𝐧𝐢𝐞𝐝: _This Command is Only For Groups!_`
@@ -56,7 +56,7 @@ for (let admin of AʀƈȶɨӼ.groupAdmins) {
 let number = admin.split(`@`)[0];
 message += `@${number}\n`;
 }
-await client.sendMessage(
+await TUF.sendMessage(
 AʀƈȶɨӼ.chatId,
 {
 quoted: Fox.message,
@@ -83,7 +83,7 @@ MessageType.buttonsMessage
 );
 return;
 } catch (error) {
-return Oops.VOp(client, Fox, AʀƈȶɨӼ, error);
+return Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error);
 }
 },
 };
