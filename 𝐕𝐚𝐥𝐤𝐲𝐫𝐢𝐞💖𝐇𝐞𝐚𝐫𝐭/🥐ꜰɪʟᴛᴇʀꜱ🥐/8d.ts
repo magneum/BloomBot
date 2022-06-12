@@ -23,102 +23,102 @@ var scriptName = path.basename(__filename);
 var dotScrpt = scriptName.slice(0, -3).toLowerCase();
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 export = {
-  name: dotScrpt,
-  async handle(
-    client: Client,
-    chat: proto.IWebMessageInfo,
-    νℓкуяιє: νℓкуяιє,
-    args: string[],
-    ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
-  ): Promise<void> {
-    try {
-      const ʟɴᴀᴍᴇ = νℓкуяιє.sender;
-      const ᴅꜰɴᴀᴍᴇ = νℓкуяιє.commandName;
-      const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/[^\d+]/g, "");
-      const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
-      ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
-      console.log("💡Is Group: " + νℓкуяιє.isGroup);
-      await client.getGroupMetaData(νℓкуяιє.chatId, νℓкуяιє);
-      console.log("💡Is Bot Group Admin: " + νℓкуяιє.isBotGroupAdmin);
-      console.log("💡Is Sender Group Admin: " + νℓкуяιє.isSenderGroupAdmin);
-      ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
-      const AudioSender = async (
-        fid: string,
-        replyChat: { message: any; type: any }
-      ): Promise<void> => {
-        const stream: Transform = await downloadContentFromMessage(
-          replyChat.message,
-          replyChat.type
-        );
-        const ConvertedName: string = `./${Date.now()}${fid}.mp3`;
-        const FileName: string = `./𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞🐞𝐁𝐞𝐞𝐭𝐥𝐞/${fid}`;
-        const saveBuffer = async (
-          fileName: string,
-          stream: Transform
-        ): Promise<void> => {
-          let buffer = Buffer.from([]);
-          for await (const chunk of stream) {
-            buffer = Buffer.concat([buffer, chunk]);
-          }
-          await writeFile(fileName, buffer);
-        };
-        await saveBuffer(FileName, stream).then(() =>
-          Filter_Media.Filter_Media(
-            client,
-            chat,
-            νℓкуяιє,
-            FileName,
-            ConvertedName
-          )
-        );
-      };
-      ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
-      if (νℓкуяιє.isReplyAudio) {
-        var replyChatObject = {
-          message: νℓкуяιє.isReplyAudio
-            ? chat.message.extendedTextMessage.contextInfo.quotedMessage
-                .audioMessage
-            : chat.message.extendedTextMessage.contextInfo.quotedMessage
-                .videoMessage,
-          type: νℓкуяιє.isReplyAudio ? "audio" : "video",
-        };
-        var fid: string = chat.message.extendedTextMessage.contextInfo.stanzaId;
-        await AudioSender(fid, replyChatObject);
-
-        ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
-      } else {
-        await client.sendMessage(
-          νℓкуяιє.chatId,
-          {
-            text: `✥𝐔𝐬𝐞𝐫: ${chat.pushName} 
+name: dotScrpt,
+async handle(
+client: Client,
+chat: proto.IWebMessageInfo,
+νℓкуяιє: νℓкуяιє,
+args: string[],
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇
+): Promise<void> {
+try {
+const ʟɴᴀᴍᴇ = νℓкуяιє.sender;
+const ᴅꜰɴᴀᴍᴇ = νℓкуяιє.commandName;
+const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/[^\d+]/g, "");
+const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
+("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
+console.log("💡Is Group: " + νℓкуяιє.isGroup);
+await client.getGroupMetaData(νℓкуяιє.chatId, νℓкуяιє);
+console.log("💡Is Bot Group Admin: " + νℓкуяιє.isBotGroupAdmin);
+console.log("💡Is Sender Group Admin: " + νℓкуяιє.isSenderGroupAdmin);
+("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
+const AudioSender = async (
+fid: string,
+replyChat: { message: any; type: any }
+): Promise<void> => {
+const stream: Transform = await downloadContentFromMessage(
+replyChat.message,
+replyChat.type
+);
+const ConvertedName: string = `./${Date.now()}${fid}.mp3`;
+const FileName: string = `./𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞🐞𝐁𝐞𝐞𝐭𝐥𝐞/${fid}`;
+const saveBuffer = async (
+fileName: string,
+stream: Transform
+): Promise<void> => {
+let buffer = Buffer.from([]);
+for await (const chunk of stream) {
+buffer = Buffer.concat([buffer, chunk]);
+}
+await writeFile(fileName, buffer);
+};
+await saveBuffer(FileName, stream).then(() =>
+Filter_Media.VFmedia(
+client,
+chat,
+νℓкуяιє,
+FileName,
+ConvertedName,
+`-af "apulsator=hz=0.08"`
+)
+);
+};
+("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
+if (νℓкуяιє.isReplyAudio) {
+var replyChatObject = {
+message: νℓкуяιє.isReplyAudio
+? chat.message.extendedTextMessage.contextInfo.quotedMessage
+.audioMessage
+: chat.message.extendedTextMessage.contextInfo.quotedMessage
+.videoMessage,
+type: νℓкуяιє.isReplyAudio ? "audio" : "video",
+};
+var fid: string = chat.message.extendedTextMessage.contextInfo.stanzaId;
+await AudioSender(fid, replyChatObject);
+("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
+} else {
+await client.sendMessage(
+νℓкуяιє.chatId,
+{
+text: `✥𝐔𝐬𝐞𝐫: ${chat.pushName} 
 
 Press Below To Read How To Use This Command!`,
-            footer: "⦓ 𝐕𝐥𝐤𝐲𝐫𝐞 ⦔",
-            title: `🔸𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()}`,
-            buttonText: "❝ _How To Use?_ ❞",
-            sections: [
-              {
-                title: "𝐀𝐑𝐆𝐔𝐌𝐄𝐍𝐓 𝐍𝐄𝐄𝐃𝐄𝐃!",
-                rows: [
-                  {
-                    title: "⚡𝐔𝐬𝐚𝐠𝐞",
-                    rowId: "argument required...",
-                    description: `💡𝐈𝐧𝐟𝐨: In order to use this command, you must follow below instructions:
+footer: "⦓ 𝐕𝐥𝐤𝐲𝐫𝐞 ⦔",
+title: `🔸𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()}`,
+buttonText: "❝ _How To Use?_ ❞",
+sections: [
+{
+title: "𝐀𝐑𝐆𝐔𝐌𝐄𝐍𝐓 𝐍𝐄𝐄𝐃𝐄𝐃!",
+rows: [
+{
+title: "⚡𝐔𝐬𝐚𝐠𝐞",
+rowId: "argument required...",
+description: `💡𝐈𝐧𝐟𝐨: In order to use this command, you must follow below instructions:
 Option 1 - ${
-                      ʟᴀʏᴏᴜᴛ.MuveOn
-                    }${dotScrpt.toUpperCase()} _reply to any audio in the chat_`,
-                  },
-                ],
-              },
-            ],
-          },
-          MessageType.buttonsMessage
-        );
-      }
-    } catch (error) {
-      return Oops.VOp(client, chat, νℓкуяιє, error);
-    }
-  },
+ʟᴀʏᴏᴜᴛ.MuveOn
+}${dotScrpt.toUpperCase()} _reply to any audio in the chat_`,
+},
+],
+},
+],
+},
+MessageType.buttonsMessage
+);
+}
+} catch (error) {
+return Oops.VOp(client, chat, νℓкуяιє, error);
+}
+},
 };
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 /*        

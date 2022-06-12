@@ -1,3 +1,4 @@
+import * as fs from "fs";
 const Oops = require(`../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞☘️𝐊𝐞𝐲𝐬/Oops`);
 const VOID = require(`../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/void`);
 import { MessageType } from "../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/message-type";
@@ -7,11 +8,12 @@ client,
 chat,
 νℓкуяιє,
 FileName,
-ConvertedName
+ConvertedName,
+Filter
 ): Promise<void> => {
 try {
 require(`child_process`).exec(
-`ffmpeg -i ${FileName} -af "apulsator=hz=0.08" ${ConvertedName}`,
+`ffmpeg -i ${FileName} ${Filter} ${ConvertedName}`,
 async () => {
 await client
 .sendMessage(
