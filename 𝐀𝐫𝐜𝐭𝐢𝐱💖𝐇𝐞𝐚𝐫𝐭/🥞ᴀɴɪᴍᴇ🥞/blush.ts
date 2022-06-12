@@ -26,7 +26,7 @@ export = {
 name: dotScrpt,
 async handle(
 client: Client,
-chat: proto.IWebMessageInfo,
+Fox: proto.IWebMessageInfo,
 AʀƈȶɨӼ: AʀƈȶɨӼ,
 args: string[],
 ӄʀʏȶɛӄ
@@ -46,10 +46,10 @@ console.log(
 console.log("💡𝐈𝐧𝐟𝐨: Is Reply Message: " + AʀƈȶɨӼ.replyMessage);
 console.log("💡𝐈𝐧𝐟𝐨: Is Text Reply: " + AʀƈȶɨӼ.isTextReply);
 if (AʀƈȶɨӼ.isTextReply) {
-var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
+var Receiver = Fox.message.extendedTextMessage.contextInfo.participant;
 var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
 if (Receiver === ʟɴᴀᴍᴇ) {
-console.log("💡𝐈𝐧𝐟𝐨: Receiver = Self: " + chat.pushName);
+console.log("💡𝐈𝐧𝐟𝐨: Receiver = Self: " + Fox.pushName);
 } else {
 console.log("💡𝐈𝐧𝐟𝐨: Receiver: " + քɛʀֆօռɢօȶռʊʍ);
 }
@@ -57,8 +57,8 @@ console.log("💡𝐈𝐧𝐟𝐨: Receiver: " + քɛʀֆօռɢօȶռʊʍ);
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 let FinalLink;
 var AnimeLink = await anime.blush();
-const GotFile = `./${chat.key.id}${Date.now()}.gif`;
-const GiveFile = `./${chat.key.id}${Date.now()}.mp4`;
+const GotFile = `./${Fox.key.id}${Date.now()}.gif`;
+const GiveFile = `./${Fox.key.id}${Date.now()}.mp4`;
 if (!AnimeLink.endsWith(`.gif`) && !AnimeLink.endsWith(`.mp4`)) {
 const anime2 = require(`anime-actions`);
 FinalLink = await anime2.blush();
@@ -82,7 +82,7 @@ console.log(
 );
 } catch (error) {
 console.log(`❌𝐄𝐫𝐫𝐨𝐫: 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐄𝐫𝐫𝐨𝐫: ` + error);
-return Oops.VOp(client, chat, AʀƈȶɨӼ, error);
+return Oops.VOp(client, Fox, AʀƈȶɨӼ, error);
 }
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 if (args[0] && args[0].startsWith("@")) {
@@ -104,20 +104,20 @@ fs.readFileSync(GiveFile),
 MessageType.video,
 {
 mimetype: `video/gif`,
-quoted: chat,
+quoted: Fox,
 caption: `⦓ 𝐕𝐥𝐤𝐲𝐫𝐞 ⦔
 
-🍕𝐅𝐫𝐨𝐦: _${chat.pushName}_
+🍕𝐅𝐫𝐨𝐦: _${Fox.pushName}_
 🌭𝐓𝐨: @${TagPerson}`,
 contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ, TagMention] },
 }
 )
-.catch((error: any) => Oops.VOp(client, chat, AʀƈȶɨӼ, error));
+.catch((error: any) => Oops.VOp(client, Fox, AʀƈȶɨӼ, error));
 return await VOID.VOID(GiveFile, GotFile);
 });
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 } else if (AʀƈȶɨӼ.isTextReply) {
-var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
+var Receiver = Fox.message.extendedTextMessage.contextInfo.participant;
 var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
 if (Receiver === ʟɴᴀᴍᴇ) {
 ffmpeg(GotFile)
@@ -136,14 +136,14 @@ fs.readFileSync(GiveFile),
 MessageType.video,
 {
 mimetype: `video/gif`,
-quoted: chat,
+quoted: Fox,
 caption: `⦓ 𝐕𝐥𝐤𝐲𝐫𝐞 ⦔
 
-🍕𝐅𝐨𝐫: _${chat.pushName}_`,
+🍕𝐅𝐨𝐫: _${Fox.pushName}_`,
 contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
 }
 )
-.catch((error: any) => Oops.VOp(client, chat, AʀƈȶɨӼ, error));
+.catch((error: any) => Oops.VOp(client, Fox, AʀƈȶɨӼ, error));
 return await VOID.VOID(GiveFile, GotFile);
 });
 } else
@@ -163,15 +163,15 @@ fs.readFileSync(GiveFile),
 MessageType.video,
 {
 mimetype: `video/gif`,
-quoted: chat,
+quoted: Fox,
 caption: `⦓ 𝐕𝐥𝐤𝐲𝐫𝐞 ⦔
 
-🍕𝐅𝐫𝐨𝐦: _${chat.pushName}_
+🍕𝐅𝐫𝐨𝐦: _${Fox.pushName}_
 🌭𝐓𝐨: _@${քɛʀֆօռɢօȶռʊʍ}_`,
 contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ, Receiver] },
 }
 )
-.catch((error: any) => Oops.VOp(client, chat, AʀƈȶɨӼ, error));
+.catch((error: any) => Oops.VOp(client, Fox, AʀƈȶɨӼ, error));
 return await VOID.VOID(GiveFile, GotFile);
 });
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
@@ -192,18 +192,18 @@ fs.readFileSync(GiveFile),
 MessageType.video,
 {
 mimetype: `video/gif`,
-quoted: chat,
+quoted: Fox,
 caption: `⦓ 𝐕𝐥𝐤𝐲𝐫𝐞 ⦔
 
-🍕𝐅𝐨𝐫: _${chat.pushName}_`,
+🍕𝐅𝐨𝐫: _${Fox.pushName}_`,
 contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
 }
 )
-.catch((error: any) => Oops.VOp(client, chat, AʀƈȶɨӼ, error));
+.catch((error: any) => Oops.VOp(client, Fox, AʀƈȶɨӼ, error));
 return await VOID.VOID(GiveFile, GotFile);
 });
 } catch (error) {
-return Oops.VOp(client, chat, AʀƈȶɨӼ, error);
+return Oops.VOp(client, Fox, AʀƈȶɨӼ, error);
 }
 },
 };
