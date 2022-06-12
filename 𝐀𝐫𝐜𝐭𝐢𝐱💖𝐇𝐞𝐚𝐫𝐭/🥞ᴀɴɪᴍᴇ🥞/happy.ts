@@ -12,7 +12,7 @@ const Oops = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱☘️𝐊𝐞𝐲𝐬/Oops`
 import { proto } from "@adiwajshing/baileys";
 const VOID = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/void`);
 import Client from "../../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/client";
-import νℓкуяιє from "../../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/msb";
+import AʀƈȶɨӼ from "../../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/msb";
 const ffmpeg = require(`fluent-ffmpeg`);
 const anime = require(`anime-actions`);
 import ʟᴀʏᴏᴜᴛ from "../../𝐀𝐫𝐜𝐭𝐢𝐱🀄𝐕𝐞𝐧𝐭/ʟᴀʏᴏᴜᴛ";
@@ -27,25 +27,25 @@ name: dotScrpt,
 async handle(
 client: Client,
 chat: proto.IWebMessageInfo,
-νℓкуяιє: νℓкуяιє,
+AʀƈȶɨӼ: AʀƈȶɨӼ,
 args: string[],
 ӄʀʏȶɛӄ
 ): Promise<void> {
 try {
-const ʟɴᴀᴍᴇ = νℓкуяιє.sender;
-const ᴅꜰɴᴀᴍᴇ = νℓкуяιє.commandName;
+const ʟɴᴀᴍᴇ = AʀƈȶɨӼ.sender;
+const ᴅꜰɴᴀᴍᴇ = AʀƈȶɨӼ.commandName;
 const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/[^\d+]/g, "");
 const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
-await client.getGroupMetaData(νℓкуяιє.chatId, νℓкуяιє);
-console.log("💡𝐈𝐧𝐟𝐨: Is Group: " + νℓкуяιє.isGroup);
-console.log("💡𝐈𝐧𝐟𝐨: Is Bot Group Admin: " + νℓкуяιє.isBotGroupAdmin);
+await client.getGroupMetaData(AʀƈȶɨӼ.chatId, AʀƈȶɨӼ);
+console.log("💡𝐈𝐧𝐟𝐨: Is Group: " + AʀƈȶɨӼ.isGroup);
+console.log("💡𝐈𝐧𝐟𝐨: Is Bot Group Admin: " + AʀƈȶɨӼ.isBotGroupAdmin);
 console.log(
-"💡𝐈𝐧𝐟𝐨: Is Sender Group Admin: " + νℓкуяιє.isSenderGroupAdmin
+"💡𝐈𝐧𝐟𝐨: Is Sender Group Admin: " + AʀƈȶɨӼ.isSenderGroupAdmin
 );
-console.log("💡𝐈𝐧𝐟𝐨: Is Reply Message: " + νℓкуяιє.replyMessage);
-console.log("💡𝐈𝐧𝐟𝐨: Is Text Reply: " + νℓкуяιє.isTextReply);
-if (νℓкуяιє.isTextReply) {
+console.log("💡𝐈𝐧𝐟𝐨: Is Reply Message: " + AʀƈȶɨӼ.replyMessage);
+console.log("💡𝐈𝐧𝐟𝐨: Is Text Reply: " + AʀƈȶɨӼ.isTextReply);
+if (AʀƈȶɨӼ.isTextReply) {
 var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
 var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
 if (Receiver === ʟɴᴀᴍᴇ) {
@@ -82,7 +82,7 @@ console.log(
 );
 } catch (error) {
 console.log(`❌𝐄𝐫𝐫𝐨𝐫: 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐄𝐫𝐫𝐨𝐫: ` + error);
-return Oops.VOp(client, chat, νℓкуяιє, error);
+return Oops.VOp(client, chat, AʀƈȶɨӼ, error);
 }
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 if (args[0] && args[0].startsWith("@")) {
@@ -99,7 +99,7 @@ ffmpeg(GotFile)
 .on(`end`, async () => {
 await client
 .sendMessage(
-νℓкуяιє.chatId,
+AʀƈȶɨӼ.chatId,
 fs.readFileSync(GiveFile),
 MessageType.video,
 {
@@ -112,11 +112,11 @@ caption: `⦓ 𝐕𝐥𝐤𝐲𝐫𝐞 ⦔
 contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ, TagMention] },
 }
 )
-.catch((error: any) => Oops.VOp(client, chat, νℓкуяιє, error));
+.catch((error: any) => Oops.VOp(client, chat, AʀƈȶɨӼ, error));
 return await VOID.VOID(GiveFile, GotFile);
 });
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
-} else if (νℓкуяιє.isTextReply) {
+} else if (AʀƈȶɨӼ.isTextReply) {
 var Receiver = chat.message.extendedTextMessage.contextInfo.participant;
 var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
 if (Receiver === ʟɴᴀᴍᴇ) {
@@ -131,7 +131,7 @@ ffmpeg(GotFile)
 .on(`end`, async () => {
 await client
 .sendMessage(
-νℓкуяιє.chatId,
+AʀƈȶɨӼ.chatId,
 fs.readFileSync(GiveFile),
 MessageType.video,
 {
@@ -143,7 +143,7 @@ caption: `⦓ 𝐕𝐥𝐤𝐲𝐫𝐞 ⦔
 contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
 }
 )
-.catch((error: any) => Oops.VOp(client, chat, νℓкуяιє, error));
+.catch((error: any) => Oops.VOp(client, chat, AʀƈȶɨӼ, error));
 return await VOID.VOID(GiveFile, GotFile);
 });
 } else
@@ -158,7 +158,7 @@ ffmpeg(GotFile)
 .on(`end`, async () => {
 await client
 .sendMessage(
-νℓкуяιє.chatId,
+AʀƈȶɨӼ.chatId,
 fs.readFileSync(GiveFile),
 MessageType.video,
 {
@@ -171,7 +171,7 @@ caption: `⦓ 𝐕𝐥𝐤𝐲𝐫𝐞 ⦔
 contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ, Receiver] },
 }
 )
-.catch((error: any) => Oops.VOp(client, chat, νℓкуяιє, error));
+.catch((error: any) => Oops.VOp(client, chat, AʀƈȶɨӼ, error));
 return await VOID.VOID(GiveFile, GotFile);
 });
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
@@ -187,7 +187,7 @@ ffmpeg(GotFile)
 .on(`end`, async () => {
 await client
 .sendMessage(
-νℓкуяιє.chatId,
+AʀƈȶɨӼ.chatId,
 fs.readFileSync(GiveFile),
 MessageType.video,
 {
@@ -199,11 +199,11 @@ caption: `⦓ 𝐕𝐥𝐤𝐲𝐫𝐞 ⦔
 contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
 }
 )
-.catch((error: any) => Oops.VOp(client, chat, νℓкуяιє, error));
+.catch((error: any) => Oops.VOp(client, chat, AʀƈȶɨӼ, error));
 return await VOID.VOID(GiveFile, GotFile);
 });
 } catch (error) {
-return Oops.VOp(client, chat, νℓкуяιє, error);
+return Oops.VOp(client, chat, AʀƈȶɨӼ, error);
 }
 },
 };
