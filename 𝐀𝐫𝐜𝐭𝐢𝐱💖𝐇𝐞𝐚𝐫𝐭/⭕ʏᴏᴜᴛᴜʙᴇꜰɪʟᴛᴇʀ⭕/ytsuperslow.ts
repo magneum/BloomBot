@@ -29,7 +29,7 @@ var dotScrpt = scriptName.slice(0, -3).toLowerCase();
 export = {
 name: dotScrpt,
 async handle(
-client: Client,
+TUF: Client,
 Fox: proto.IWebMessageInfo,
 AʀƈȶɨӼ: AʀƈȶɨӼ,
 ǟʀɢʊʍɛռȶ: string[],
@@ -41,13 +41,13 @@ const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/[^\d+]/g, "");
 const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 console.log("💡Is Group: " + AʀƈȶɨӼ.isGroup);
-await client.getGroupMetaData(AʀƈȶɨӼ.chatId, AʀƈȶɨӼ);
+await TUF.getGroupMetaData(AʀƈȶɨӼ.chatId, AʀƈȶɨӼ);
 console.log("💡Is Bot Group Admin: " + AʀƈȶɨӼ.isBotGroupAdmin);
 console.log("💡Is Sender Group Admin: " + AʀƈȶɨӼ.isSenderGroupAdmin);
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 if (ǟʀɢʊʍɛռȶ.length === 0) {
 return FoxNeeded.VFox(
-client,
+TUF,
 Fox,
 AʀƈȶɨӼ,
 `Option 1 - ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()} _song name_
@@ -58,7 +58,7 @@ dotScrpt
 if (ǟʀɢʊʍɛռȶ.includes("yout")) {
 if (!ytIdRegex.test(ǟʀɢʊʍɛռȶ[0])) {
 return FoxNeeded.VFox(
-client,
+TUF,
 Fox,
 AʀƈȶɨӼ,
 `Option 1 - ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()} _song name_
@@ -76,7 +76,7 @@ FinalGot = ǟʀɢʊʍɛռȶ.join(" ");
 }
 const LinkFound = await yts(FinalGot);
 if (!LinkFound) {
-Text_List.VText(client, Fox, AʀƈȶɨӼ, `❌𝗘𝗿𝗿𝗼𝗿: No Music Found!`);
+Text_List.VText(TUF, Fox, AʀƈȶɨӼ, `❌𝗘𝗿𝗿𝗼𝗿: No Music Found!`);
 return;
 }
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
@@ -86,7 +86,7 @@ var FilteredAudio = `./${dotScrpt}_F_${Fox.key.id}.mp3`;
 var FFmpegFile = `./𝐀𝐫𝐜𝐭𝐢𝐱🐞𝐁𝐞𝐞𝐭𝐥𝐞/${dotScrpt}_${Fox.key.id}.mp3`;
 if (Found.seconds > 1800) {
 return Image_Button.VImg(
-client,
+TUF,
 Fox,
 AʀƈȶɨӼ,
 `❌𝗘𝗿𝗿𝗼𝗿: _Choose Smaller Video less then 30mins!_
@@ -108,7 +108,7 @@ ffmpeg(FFmpegStream)
 .on("end", async () => {
 await ӄʀʏȶɛӄ.sendPresenceUpdate("recording", AʀƈȶɨӼ.chatId);
 await Image_Button.VImg(
-client,
+TUF,
 Fox,
 AʀƈȶɨӼ,
 `𝐘𝐨𝐮𝐓𝐮𝐛𝐞💿𝐅𝐢𝐥𝐭𝐞𝐫
@@ -127,10 +127,10 @@ require("child_process").exec(
 `ffmpeg -i ${FFmpegFile} -af "atempo=0.5" ${FilteredAudio}`,
 async (error) => {
 if (error) {
-return Oops.VOp(client, Fox, AʀƈȶɨӼ, error);
+return Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error);
 }
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
-await client
+await TUF
 .sendMessage(
 AʀƈȶɨӼ.chatId,
 fs.readFileSync(FilteredAudio),
@@ -139,7 +139,7 @@ MessageType.audio,
 quoted: Fox,
 }
 )
-.catch((error: any) => Oops.VOp(client, Fox, AʀƈȶɨӼ, error));
+.catch((error: any) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
 await VOID.VOID(FFmpegFile, FilteredAudio);
 }
 );
