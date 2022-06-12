@@ -6,7 +6,7 @@
 import { MessageType } from "../../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/message-type";
 import { proto } from "@adiwajshing/baileys";
 import Client from "../../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/client";
-import νℓкуяιє from "../../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/msb";
+import AʀƈȶɨӼ from "../../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/msb";
 import ʟᴀʏᴏᴜᴛ from "../../𝐀𝐫𝐜𝐭𝐢𝐱🀄𝐕𝐞𝐧𝐭/ʟᴀʏᴏᴜᴛ";
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 import * as fs from 'fs';
@@ -19,19 +19,19 @@ name: dotScrpt,
 async handle(
 client: Client,
 chat: proto.IWebMessageInfo,
-νℓкуяιє: νℓкуяιє,
+AʀƈȶɨӼ: AʀƈȶɨӼ,
 args: string[],
 ӄʀʏȶɛӄ
 ): Promise<void> {
 await client.sendMessage(
-νℓкуяιє.chatId,
+AʀƈȶɨӼ.chatId,
 {
 quoted: chat.message,
 contextInfo: {
-mentionedJid: [νℓкуяιє.sender],
+mentionedJid: [AʀƈȶɨӼ.sender],
 },
 timestamp: Date(),
-image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/νℓкуяιє.png" },
+image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png" },
 caption: `╔◇✥𝐔𝐬𝐞𝐫: ${chat.pushName}
 ║🦋 𝐀𝐫𝐜𝐭𝐢𝐱: _Is an Advance Whatsapp User-Bot!_
 ║🛰️ 𝐖𝐞𝐛𝐬𝐢𝐭𝐞: _VlkyreAI.krakinzkon.repl.co_
