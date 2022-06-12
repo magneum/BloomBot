@@ -24,22 +24,22 @@ FileSocket: { message: any; type: any }
 try {
 const FileName: string = "./converter-" + FileID;
 const ConvertedPath: string = "./sticker-" + FileID + ".webp";
-const stream: Transform = await downloadContentFromMessage(
+const FileStream: Transform = await downloadContentFromMessage(
 FileSocket.message,
 FileSocket.type
 );
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 const saveBuffer = async (
 FileName: string,
-stream: Transform
+FileStream: Transform
 ): Promise<void> => {
 let buffer = Buffer.from([]);
-for await (const chunk of stream) {
+for await (const chunk of FileStream) {
 buffer = Buffer.concat([buffer, chunk]);
 }
 await writeFile(FileName, buffer);
 };
-await saveBuffer(FileName, stream);
+await saveBuffer(FileName, FileStream);
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 if (νℓкуяιє.type === "image" || νℓкуяιє.isReplyImage) {
 ffmpeg(FileName)
