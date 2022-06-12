@@ -29,7 +29,7 @@ async handle(
 client: Client,
 Fox: proto.IWebMessageInfo,
 AʀƈȶɨӼ: AʀƈȶɨӼ,
-args: string[],
+ǟʀɢʊʍɛռȶ: string[],
 ӄʀʏȶɛӄ
 ): Promise<void> {
 try {
@@ -43,7 +43,7 @@ await client.getGroupMetaData(AʀƈȶɨӼ.chatId, AʀƈȶɨӼ);
 console.log("💡Is Bot Group Admin: " + AʀƈȶɨӼ.isBotGroupAdmin);
 console.log("💡Is Sender Group Admin: " + AʀƈȶɨӼ.isSenderGroupAdmin);
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
-if (args.length === 0) {
+if (ǟʀɢʊʍɛռȶ.length === 0) {
 await client.sendMessage(
 AʀƈȶɨӼ.chatId,
 {
@@ -72,8 +72,8 @@ MessageType.buttonsMessage
 );
 }
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
-if (args.includes("yout")) {
-if (!ytIdRegex.test(args[0])) {
+if (ǟʀɢʊʍɛռȶ.includes("yout")) {
+if (!ytIdRegex.test(ǟʀɢʊʍɛռȶ[0])) {
 await client.sendMessage(
 AʀƈȶɨӼ.chatId,
 {
@@ -104,10 +104,10 @@ MessageType.buttonsMessage
 }
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 let FinalGot;
-if (ytIdRegex.test(args[0])) {
-FinalGot = args[0];
+if (ytIdRegex.test(ǟʀɢʊʍɛռȶ[0])) {
+FinalGot = ǟʀɢʊʍɛռȶ[0];
 } else {
-FinalGot = args.join(" ");
+FinalGot = ǟʀɢʊʍɛռȶ.join(" ");
 }
 const LinkFound = await yts(FinalGot);
 if (!LinkFound) {
