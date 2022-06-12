@@ -3,12 +3,14 @@
 (𝐜)𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬! 
 */
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
-import { MessageType } from "../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/message-type";
-const Text_List = async (
+import { MessageType } from "../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/message-type";
+import ʟᴀʏᴏᴜᴛ from "../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞🀄𝐕𝐞𝐧𝐭/ʟᴀʏᴏᴜᴛ";
+const Image_Button = async (
 client: any,
 chat: any,
 νℓкуяιє: any,
-caption: any
+caption: any,
+media: any
 ): Promise<void> => {
 try {
 let Personality;
@@ -25,26 +27,29 @@ Personality = "🐾";
 await client.sendMessage(
 νℓкуяιє.chatId,
 {
-text: `✥𝐔𝐬𝐞𝐫: ${chat.pushName}
+quoted: chat.message,
+contextInfo: {
+mentionedJid: [νℓкуяιє.sender],
+},
+timestamp: Date(),
+image: { url: media },
+caption: `✥𝐔𝐬𝐞𝐫: ${chat.pushName}
 
 ${caption}`,
 footer: `⦓ 𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ${Personality} ⦔`,
-templateButtons: [
+buttons: [
 {
-index: 1,
-urlButton: {
-displayText: "⭐𝐒𝐭𝐚𝐫 𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐨𝐧 𝐆𝐢𝐭𝐇𝐮𝐛!",
-url: "https://github.com/kryknz/vlkyrie",
-},
+buttonId: `${ʟᴀʏᴏᴜᴛ.MuveOn}help`,
+buttonText: { displayText: `${ʟᴀʏᴏᴜᴛ.MuveOn}help` },
+type: 1,
 },
 {
-index: 2,
-callButton: {
-displayText: "Call Owner!",
-phoneNumber: "100",
-},
+buttonId: `${ʟᴀʏᴏᴜᴛ.MuveOn}menu`,
+buttonText: { displayText: `${ʟᴀʏᴏᴜᴛ.MuveOn}menu` },
+type: 1,
 },
 ],
+headerType: 4,
 },
 MessageType.buttonsMessage
 );
@@ -53,7 +58,7 @@ console.log(error);
 }
 };
 export = {
-VText: Text_List,
+VImg: Image_Button,
 };
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 /*        
