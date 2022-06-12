@@ -6,11 +6,11 @@
 import { MessageType } from "../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/message-type";
 import ʟᴀʏᴏᴜᴛ from "../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞🀄𝐕𝐞𝐧𝐭/ʟᴀʏᴏᴜᴛ";
 const Video_Button = async (
-client,
-chat,
-νℓкуяιє,
-media: string[],
-caption: string[]
+client: any,
+chat: any,
+νℓкуяιє: any,
+media: any,
+caption: any
 ): Promise<void> => {
 try {
 let Personality;

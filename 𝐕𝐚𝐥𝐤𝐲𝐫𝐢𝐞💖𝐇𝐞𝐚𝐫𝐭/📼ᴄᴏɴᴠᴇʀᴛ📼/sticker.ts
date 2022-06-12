@@ -39,6 +39,34 @@ console.log("💡Is Group: " + νℓкуяιє.isGroup);
 await client.getGroupMetaData(νℓкуяιє.chatId, νℓкуяιє);
 console.log("💡Is Bot Group Admin: " + νℓкуяιє.isBotGroupAdmin);
 console.log("💡Is Sender Group Admin: " + νℓкуяιє.isSenderGroupAdmin);
+if (args.length === 0) {
+    await client.sendMessage(
+    νℓкуяιє.chatId,
+    {
+    text: `✥𝐔𝐬𝐞𝐫: ${chat.pushName} 
+    
+    Press Below To Read How To Use This Command!`,
+    footer: "⦓ 𝐕𝐥𝐤𝐲𝐫𝐞 ⦔",
+    title: `🔸𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()}`,
+    buttonText: "❝ _How To Use?_ ❞",
+    sections: [
+    {
+    title: "𝐀𝐑𝐆𝐔𝐌𝐄𝐍𝐓 𝐍𝐄𝐄𝐃𝐄𝐃!",
+    rows: [
+    {
+    title: "⚡𝐔𝐬𝐚𝐠𝐞",
+    rowId: "argument required...",
+    description: `💡𝐈𝐧𝐟𝐨: In order to use this command, you must follow below instructions:
+    Option 1 - ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()} _url to shrink_`,
+    },
+    ],
+    },
+    ],
+    },
+    MessageType.buttonsMessage
+    );
+    return;
+    }
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 if (νℓкуяιє.isImage || νℓкуяιє.isGIF || νℓкуяιє.isVideo) {
 var FileSocketObject = {
@@ -50,6 +78,7 @@ type: νℓкуяιє.type,
 };
 var FileID: string = chat.key.id;
 await ToSticker.VStk(client, chat, args, νℓкуяιє, FileID, FileSocketObject);
+("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 } else if (
 νℓкуяιє.isReplyImage ||
 νℓкуяιє.isReplyGIF ||
@@ -66,6 +95,9 @@ type: νℓкуяιє.isReplyImage ? "image" : "video",
 var FileID: string =
 chat.message.extendedTextMessage.contextInfo.stanzaId;
 await ToSticker.VStk(client, chat, args, νℓкуяιє, FileID, FileSocketObject);
+("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
+} else {
+
 }
 ("|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|");
 } catch (error) {
