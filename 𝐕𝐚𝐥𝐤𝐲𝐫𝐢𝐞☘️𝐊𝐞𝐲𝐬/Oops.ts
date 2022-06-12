@@ -7,8 +7,8 @@ import { MessageType } from "../𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞⚜️𝐊𝐫�
 const Oops = async (
 client: any,
 chat: any,
-νℓкуяιє,
-caption: string[]
+νℓкуяιє: any,
+caption: any
 ): Promise<void> => {
 try {
 let Personality;
