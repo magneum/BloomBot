@@ -41,7 +41,7 @@ const Image_Button = (client, Fox, AʀƈȶɨӼ, caption, media) => __awaiter(voi
             },
             timestamp: Date(),
             image: { url: media },
-            caption: `✥𝐔𝐬𝐞𝐫: ${Fox.pushName}
+            caption: `|❝ 𝐔𝐬𝐞𝐫: ${Fox.pushName} ❞|
 
 ${caption}`,
             footer: `⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ${Personality} ⦔`,

@@ -42,7 +42,7 @@ const Video_Button = (client, Fox, AʀƈȶɨӼ, media, caption) => __awaiter(voi
             timestamp: Date(),
             video: { url: media },
             mimetype: "video/mp4",
-            caption: `✥𝐔𝐬𝐞𝐫: ${Fox.pushName}
+            caption: `|❝ 𝐔𝐬𝐞𝐫: ${Fox.pushName} ❞|
 
 ${caption}`,
             footer: `⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ${Personality} ⦔`,
