@@ -26,6 +26,7 @@ const NsfwList = require(`../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞�
 const BanGroup = require(`../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/ban`);
 const Bagde = require(`../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/badge`);
 const Halt = require(`../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/halt`);
+const chalkAnimation = require("chalkercli");
 const chalk_1 = __importDefault(require("chalk"));
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 const connection_update = (update, DisconnectReason, startSock) => __awaiter(void 0, void 0, void 0, function* () {
@@ -42,10 +43,11 @@ const connection_update = (update, DisconnectReason, startSock) => __awaiter(voi
         }
     }
     else if (connection === "connecting") {
-        console.log(chalk_1.default.yellowBright("💡𝐈𝐧𝐟𝐨꧂  Connecting to WhatsApp..."));
+        chalkAnimation.karaoke("💡𝐈𝐧𝐟𝐨꧂  Connecting to WhatsApp...");
+        console.log(chalk_1.default.yellowBright(""));
     }
     else if (connection === "open") {
-        console.log(chalk_1.default.yellow("💡𝐈𝐧𝐟𝐨꧂  Connected! Welcome to AʀƈȶɨӼ"));
+        chalkAnimation.rainbow("💡𝐈𝐧𝐟𝐨꧂  Connected! Welcome to AʀƈȶɨӼ");
     }
     else {
         console.log("connection update", update);
