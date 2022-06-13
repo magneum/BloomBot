@@ -30,10 +30,11 @@ quoted: Fox,
 timestamp: Date(),
 contextInfo: { mentionedJid: [AʀƈȶɨӼ.sender] },
 image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png" },
-caption: `┌✼  𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®
-│ *Tαɠ:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g,"")}
-│ *Nαɱҽ:* ${Fox.pushName}
-└✼
+caption: `╔═⟢  𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®
+║ *ᴛᴀɢ:* _@${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}_
+║ *ɴᴀᴍᴇ:* _${Fox.pushName}_
+║ *ᴄᴏᴍᴍᴀɴᴅ:* _${AʀƈȶɨӼ.commandName}_
+╚═════⟢
 
 ╔════⧉🐙 𝐊𝐢𝐧𝐠/𝐎𝐰𝐧𝐞𝐫
 ║• *${ʟᴀʏᴏᴜᴛ.MuveOn}join:*  _join any valid group_
