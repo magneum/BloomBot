@@ -82,7 +82,7 @@ return FoxNeeded.VFox(
 TUF,
 Fox,
 AʀƈȶɨӼ,
-`Option 1 - ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()} _anime name_`,
+`Option 1 - reply to image with ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()}`,
 dotScrpt
 );
 }
