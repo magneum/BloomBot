@@ -58,9 +58,9 @@ console.log("💡𝐈𝐧𝐟𝐨: Receiver: " + քɛʀֆօռɢօȶռʊʍ);
 }
 }
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-let FinalLink;
-var AnimeLink = await anime.bite();
-const GotFile = `./${Fox.key.id}${Date.now()}.gif`;
+let FinalLink: any;
+var AnimeLink: any = await anime.bite();
+const GotFile: any = `./${Fox.key.id}${Date.now()}.gif`;
 const GiveFile = `./${Fox.key.id}${Date.now()}.mp4`;
 if (!AnimeLink.endsWith(`.gif`) && !AnimeLink.endsWith(`.mp4`)) {
 const anime2 = require(`anime-actions`);
