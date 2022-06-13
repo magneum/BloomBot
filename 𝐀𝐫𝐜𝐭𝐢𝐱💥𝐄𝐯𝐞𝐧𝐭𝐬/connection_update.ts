@@ -13,6 +13,7 @@ const NsfwList = require(`../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞�
 const BanGroup = require(`../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/ban`);
 const Bagde = require(`../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/badge`);
 const Halt = require(`../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/halt`);
+const chalkAnimation = require("chalkercli");
 import { Boom } from "@hapi/boom";
 import Kolor from "chalk";
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
@@ -33,9 +34,10 @@ console.log("❌𝐄𝐫𝐫𝐨𝐫꧂ Connection closed. You are logged out.")
 process.exit(0);
 }
 } else if (connection === "connecting") {
-console.log(Kolor.yellowBright("💡𝐈𝐧𝐟𝐨꧂  Connecting to WhatsApp..."));
+chalkAnimation.karaoke("💡𝐈𝐧𝐟𝐨꧂  Connecting to WhatsApp...");
+console.log(Kolor.yellowBright(""));
 } else if (connection === "open") {
-console.log(Kolor.yellow("💡𝐈𝐧𝐟𝐨꧂  Connected! Welcome to AʀƈȶɨӼ"));
+chalkAnimation.rainbow("💡𝐈𝐧𝐟𝐨꧂  Connected! Welcome to AʀƈȶɨӼ");
 } else {
 console.log("connection update", update);
 }
