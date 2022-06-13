@@ -83,7 +83,7 @@ AʀƈȶɨӼ,
 📚Defination: ${result.definition}
 🫒Example: ${result.example}
 👍: ${result.thumbs_up} |👎: ${result.thumbs_down}`,
-"./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png"
+"./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Cream.png"
 );
 } catch (error) {
 return Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error);
