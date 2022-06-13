@@ -70,6 +70,7 @@ sender: '919800919000@s.whatsapp.net',
 isSenderTUFs: false
 }
 `);
+chalkAnimation.rainbow("💡𝐈𝐧𝐟𝐨꧂  Connected! Welcome to AʀƈȶɨӼ");
 } else {
 console.log("connection update", update);
 }
