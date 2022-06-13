@@ -72,12 +72,12 @@ console.log("💡𝐈𝐧𝐟𝐨: Receiver: " + քɛʀֆօռɢօȶռʊʍ);
 }
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 let FinalLink: any;
-let AnimeLink: any = await anime.bite();
+let AnimeLink: any = await anime.sad();
 let Fresh_File: any = `./${Fox.key.id}${Date.now()}.gif`;
 let Composed_File: any = `./${Fox.key.id}${Date.now()}.mp4`;
 if (!AnimeLink.endsWith(`.gif`) && !AnimeLink.endsWith(`.mp4`)) {
 let anime2: any = require(`anime-actions`);
-FinalLink = await anime2.bite();
+FinalLink = await anime2.sad();
 } else {
 FinalLink = AnimeLink;
 }
