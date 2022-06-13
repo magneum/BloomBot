@@ -33,8 +33,8 @@ const baileys_1 = require("@adiwajshing/baileys");
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 const ToSticker = (TUF, Fox, ǟʀɢʊʍɛռȶ, AʀƈȶɨӼ, FileID, FileSocket) => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        const FileName = "./converter-" + FileID;
-        const ConvertedPath = "./sticker-" + FileID + ".webp";
+        const FileName = "./𝐀𝐫𝐜𝐭𝐢𝐱🐞𝐁𝐞𝐞𝐭𝐥𝐞/B-" + FileID;
+        const ConvertedPath = "./𝐀𝐫𝐜𝐭𝐢𝐱🐞𝐁𝐞𝐞𝐭𝐥𝐞/A-" + FileID + ".webp";
         const FileStream = yield (0, baileys_1.downloadContentFromMessage)(FileSocket.message, FileSocket.type);
         //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
         const saveBuffer = (FileName, FileStream) => { var FileStream_1, FileStream_1_1; return __awaiter(void 0, void 0, void 0, function* () {

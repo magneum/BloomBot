@@ -61,7 +61,7 @@ module.exports = {
                 if (AʀƈȶɨӼ.isTextReply) {
                     let PersonToRemove = Fox.message.extendedTextMessage.contextInfo.participant;
                     if (PersonToRemove === owner + `@s.whatsapp.net`) {
-                        return Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `❌𝐃𝐞𝐧𝐢𝐞𝐝: _Can't Kick Grroup Owner!_`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png");
+                        return Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `❌𝐃𝐞𝐧𝐢𝐞𝐝: _Can't Kick Group Owner!_`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png");
                     }
                     if (PersonToRemove === AʀƈȶɨӼ.owner) {
                         return Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `❌𝐃𝐞𝐧𝐢𝐞𝐝: _Can't Kick Bot Owner!_`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png");

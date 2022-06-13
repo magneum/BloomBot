@@ -102,8 +102,8 @@ const ToStickerVideo = (TUF, Fox, ǟʀɢʊʍɛռȶ, AʀƈȶɨӼ, FileID, FileSoc
             });
         }
         //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-        const FileName = "./converter-" + FileID;
-        const ConvertedVideo = "./sticker-" + FileID + ".mp4";
+        const FileName = "./𝐀𝐫𝐜𝐭𝐢𝐱🐞𝐁𝐞𝐞𝐭𝐥𝐞/B-" + FileID;
+        const ConvertedVideo = "./𝐀𝐫𝐜𝐭𝐢𝐱🐞𝐁𝐞𝐞𝐭𝐥𝐞/A-" + FileID + ".mp4";
         const FileStream = yield (0, baileys_1.downloadContentFromMessage)(FileSocket.message, FileSocket.type);
         //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
         const saveBuffer = (FileName, FileStream) => { var FileStream_1, FileStream_1_1; return __awaiter(void 0, void 0, void 0, function* () {
