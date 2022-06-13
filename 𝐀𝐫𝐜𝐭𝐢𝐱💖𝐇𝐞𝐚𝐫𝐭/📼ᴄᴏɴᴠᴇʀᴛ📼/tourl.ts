@@ -39,6 +39,7 @@ import { downloadContentFromMessage } from "@adiwajshing/baileys";
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 export = {
 name: dotScrpt,
+category: __dirname,
 async handle(
 TUF: Client,
 Fox: proto.IWebMessageInfo,
