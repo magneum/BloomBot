@@ -21,9 +21,10 @@ const Oops = (TUF, Fox, AʀƈȶɨӼ, caption) => __awaiter(void 0, void 0, void 
             timestamp: Date(),
             contextInfo: { mentionedJid: [AʀƈȶɨӼ.sender] },
             text: `╔═⟢  𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®
-║♩ *ᴛᴀɢ:* _@${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}_
-║♭ *ɴᴀᴍᴇ:* _${Fox.pushName}_
-║♪ *ᴄᴏᴍᴍᴀɴᴅ:* _${AʀƈȶɨӼ.commandName}_
+║
+║♩ *Tαɠ:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
+║♭ *Nαɱҽ:* ${Fox.pushName}
+║♪ *Cσɱɱαɳԃ:* ${AʀƈȶɨӼ.commandName}
 ╚═════⟢
 
 ${caption}`,
