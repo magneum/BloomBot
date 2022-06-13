@@ -80,7 +80,7 @@ return Image_Button.VImg(
 TUF,
 Fox,
 AʀƈȶɨӼ,
-`❌𝐃𝐞𝐧𝐢𝐞𝐝: _Can't Kick Grroup Owner!_`,
+`❌𝐃𝐞𝐧𝐢𝐞𝐝: _Can't Kick Group Owner!_`,
 "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png"
 );
 }
