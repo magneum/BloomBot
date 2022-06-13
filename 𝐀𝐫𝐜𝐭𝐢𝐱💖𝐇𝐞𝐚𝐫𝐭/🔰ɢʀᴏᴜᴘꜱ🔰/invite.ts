@@ -74,6 +74,7 @@ AʀƈȶɨӼ,
 }
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 const Invite = await ӄʀʏȶɛӄ.groupInviteCode(AʀƈȶɨӼ.chatId);
+var groupData = await ӄʀʏȶɛӄ.groupMetadata(Fox.key.remoteJid);
 let 𝕻𝕻𝖑𝖊𝖙𝖊𝖗: string;
 try {
 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄʀʏȶɛӄ.profilePictureUrl(
@@ -98,7 +99,10 @@ caption: `╔═⟢  𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®
 ╚═════⟢
 
 💡𝐈𝐧𝐟𝐨: You Have Been Invited To Join 
-https://chat.whatsapp.com/${Invite}`,
+📜𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${groupData.subject}
+💞𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${groupData.participants.length}
+📝𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${groupData.desc}
+🔗𝐋𝐢𝐧𝐤: https://chat.whatsapp.com/${Invite}`,
 footer: `⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ⦔`,
 buttons: [
 {

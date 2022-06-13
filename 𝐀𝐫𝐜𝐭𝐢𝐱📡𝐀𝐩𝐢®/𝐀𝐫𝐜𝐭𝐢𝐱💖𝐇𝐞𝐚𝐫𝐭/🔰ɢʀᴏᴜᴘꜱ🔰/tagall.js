@@ -19,6 +19,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 const message_type_1 = require("../../\uD835\uDC00\uD835\uDC2B\uD835\uDC1C\uD835\uDC2D\uD835\uDC22\uD835\uDC31\u269C\uFE0F\uD835\uDC0A\uD835\uDC2B\uD835\uDC32\uD835\uDC28\uD835\uDC13\uD835\uDC1E\uD835\uDC24/message-type");
 const Text_List_1 = __importDefault(require("../../\uD835\uDC00\uD835\uDC2B\uD835\uDC1C\uD835\uDC2D\uD835\uDC22\uD835\uDC31\u2618\uFE0F\uD835\uDC0A\uD835\uDC1E\uD835\uDC32\uD835\uDC2C/Text_List"));
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
+const baileys_1 = require("@adiwajshing/baileys");
 const Oops = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱☘️𝐊𝐞𝐲𝐬/Oops`);
 const ______1 = __importDefault(require("../../\uD835\uDC00\uD835\uDC2B\uD835\uDC1C\uD835\uDC2D\uD835\uDC22\uD835\uDC31\uD83C\uDC04\uD835\uDC15\uD835\uDC1E\uD835\uDC27\uD835\uDC2D/\u029F\u1D00\u028F\u1D0F\u1D1C\u1D1B"));
 const VOID = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/void`);
@@ -54,6 +55,13 @@ module.exports = {
                 for (var i = 0; i < AʀƈȶɨӼ.groupMembers.length; i++) {
                     members[i] = AʀƈȶɨӼ.groupMembers[i].id;
                 }
+                let 𝕻𝕻𝖑𝖊𝖙𝖊𝖗;
+                try {
+                    𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = yield ӄʀʏȶɛӄ.profilePictureUrl((0, baileys_1.jidNormalizedUser)(AʀƈȶɨӼ.chatId));
+                }
+                catch (_a) {
+                    𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png";
+                }
                 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
                 if (!ǟʀɢʊʍɛռȶ) {
                     var message = " ";
@@ -67,7 +75,7 @@ module.exports = {
                             mentionedJid: AʀƈȶɨӼ.groupAdmins,
                         },
                         timestamp: Date(),
-                        image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png" },
+                        image: { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 },
                         caption: `⚡ 𝐅𝐫𝐨𝐦: ${Fox.pushName}
 
 ${message}`,
@@ -100,7 +108,7 @@ ${message}`,
                             mentionedJid: AʀƈȶɨӼ.groupAdmins,
                         },
                         timestamp: Date(),
-                        image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png" },
+                        image: { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 },
                         caption: `⚡ 𝐅𝐫𝐨𝐦: ${Fox.pushName}
 
 ${ǟʀɢʊʍɛռȶ.join(" ")}`,
@@ -138,7 +146,7 @@ ${ǟʀɢʊʍɛռȶ.join(" ")}`,
                             mentionedJid: AʀƈȶɨӼ.groupAdmins,
                         },
                         timestamp: Date(),
-                        image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png" },
+                        image: { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 },
                         caption: `⚡ 𝐅𝐫𝐨𝐦: ${Fox.pushName}
 
 ${message}`,
