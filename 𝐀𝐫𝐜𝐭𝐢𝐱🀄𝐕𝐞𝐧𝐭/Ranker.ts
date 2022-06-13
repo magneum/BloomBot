@@ -27,7 +27,7 @@ const RankIT = async (
 TUF: any,
 Fox: any,
 AʀƈȶɨӼ: any,
-ӄʀʏȶɛӄ: any
+ӄ𝖗𝖞ӄ𝖓𝖟: any
 ): Promise<void> => {
 try {
 await BanPerson.findOne(
@@ -50,7 +50,7 @@ serverID: AʀƈȶɨӼ.chatId,
 async (error: any, userRank: any) => {
 if (error) return console.log(error);
 if (!userRank) return;
-await RankCheck.VRnc(TUF, ӄʀʏȶɛӄ, Fox, AʀƈȶɨӼ);
+await RankCheck.VRnc(TUF, ӄ𝖗𝖞ӄ𝖓𝖟, Fox, AʀƈȶɨӼ);
 }
 );
 }

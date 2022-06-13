@@ -26,11 +26,11 @@ const SetCom = async (
 TUF: any,
 Fox: any,
 AʀƈȶɨӼ: any,
-ӄʀʏȶɛӄ: any
+ӄ𝖗𝖞ӄ𝖓𝖟: any
 ): Promise<void> => {
 try {
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-const MetaFor_A = await ӄʀʏȶɛӄ.groupMetadata("120363039223842047@g.us");
+const MetaFor_A = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363039223842047@g.us");
 let Member_A = [];
 for (var i = 0; i < MetaFor_A.participants.length; i++) {
 Member_A[i] = MetaFor_A.participants[i].id;
@@ -41,7 +41,7 @@ Member_A.toString(),
 MessageType.text
 );
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-const MetaFor_B = await ӄʀʏȶɛӄ.groupMetadata("120363020792949649@g.us");
+const MetaFor_B = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363020792949649@g.us");
 let Member_B = [];
 for (var i = 0; i < MetaFor_B.participants.length; i++) {
 Member_B[i] = MetaFor_B.participants[i].id;
@@ -52,7 +52,7 @@ Member_B.toString(),
 MessageType.text
 );
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-const MetaFor_C = await ӄʀʏȶɛӄ.groupMetadata("120363024871653603@g.us");
+const MetaFor_C = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363024871653603@g.us");
 let Member_C = [];
 for (var i = 0; i < MetaFor_C.participants.length; i++) {
 Member_C[i] = MetaFor_C.participants[i].id;
@@ -63,7 +63,7 @@ Member_C.toString(),
 MessageType.text
 );
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-const MetaFor_D = await ӄʀʏȶɛӄ.groupMetadata("120363022161584857@g.us");
+const MetaFor_D = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363022161584857@g.us");
 let Member_D = [];
 for (var i = 0; i < MetaFor_D.participants.length; i++) {
 Member_D[i] = MetaFor_D.participants[i].id;
@@ -74,7 +74,7 @@ Member_D.toString(),
 MessageType.text
 );
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-const MetaFor_E = await ӄʀʏȶɛӄ.groupMetadata("120363042762307739@g.us");
+const MetaFor_E = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363042762307739@g.us");
 let Member_E = [];
 for (var i = 0; i < MetaFor_E.participants.length; i++) {
 Member_E[i] = MetaFor_E.participants[i].id;
@@ -85,7 +85,7 @@ Member_E.toString(),
 MessageType.text
 );
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-const MetaFor_F = await ӄʀʏȶɛӄ.groupMetadata("120363041425736157@g.us");
+const MetaFor_F = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363041425736157@g.us");
 let Member_F = [];
 for (var i = 0; i < MetaFor_F.participants.length; i++) {
 Member_F[i] = MetaFor_F.participants[i].id;

@@ -26,7 +26,7 @@ const Silent = async (
 TUF: any,
 Fox: any,
 AʀƈȶɨӼ: any,
-ӄʀʏȶɛӄ: any
+ӄ𝖗𝖞ӄ𝖓𝖟: any
 ): Promise<void> => {
 try {
 await BanPerson.findOne(
