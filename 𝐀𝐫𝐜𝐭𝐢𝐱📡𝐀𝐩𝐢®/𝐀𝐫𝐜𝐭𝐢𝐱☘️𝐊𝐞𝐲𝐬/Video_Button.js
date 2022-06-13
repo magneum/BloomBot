@@ -27,9 +27,9 @@ const Video_Button = (TUF, Fox, AʀƈȶɨӼ, media, caption) => __awaiter(void 0
             video: { url: media },
             mimetype: "video/mp4",
             caption: `╔═⟢  𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®
-║ *ᴛᴀɢ:* _@${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}_
-║ *ɴᴀᴍᴇ:* _${Fox.pushName}_
-║ *ᴄᴏᴍᴍᴀɴᴅ:* _${AʀƈȶɨӼ.commandName}_
+║♩ *ᴛᴀɢ:* _@${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}_
+║♭ *ɴᴀᴍᴇ:* _${Fox.pushName}_
+║♪ *ᴄᴏᴍᴍᴀɴᴅ:* _${AʀƈȶɨӼ.commandName}_
 ╚═════⟢
 
 ${caption}`,
