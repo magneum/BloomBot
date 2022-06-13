@@ -49,7 +49,7 @@ Fox,
 AʀƈȶɨӼ,
 `💀𝗗𝗮𝗱𝗝𝗼𝗸𝗲
 ${dadJoke}`,
-"./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png"
+"./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_LGrey.png"
 );
 } catch (error) {
 return Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error);
