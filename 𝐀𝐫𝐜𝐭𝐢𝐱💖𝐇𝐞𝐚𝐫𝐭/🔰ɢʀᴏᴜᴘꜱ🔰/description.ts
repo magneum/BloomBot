@@ -52,7 +52,7 @@ await TUF.getGroupMetaData(AʀƈȶɨӼ.chatId, AʀƈȶɨӼ);
 console.log("💡Is Bot Group Admin: " + AʀƈȶɨӼ.isBotGroupAdmin);
 console.log("💡Is Sender Group Admin: " + AʀƈȶɨӼ.isSenderGroupAdmin);
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-var groupData = await ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇.groupMetadata(KryChat.key.remoteJid);
+var groupData = await ӄʀʏȶɛӄ.groupMetadata(Fox.key.remoteJid);
 
 
 
