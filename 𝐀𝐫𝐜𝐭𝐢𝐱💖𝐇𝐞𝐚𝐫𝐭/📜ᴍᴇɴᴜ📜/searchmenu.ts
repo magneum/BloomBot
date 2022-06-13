@@ -30,10 +30,10 @@ quoted: Fox,
 timestamp: Date(),
 contextInfo: { mentionedJid: [AʀƈȶɨӼ.sender] },
 image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png" },
-caption: `╔◇  𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®
-║ *Tαɠ:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g,"")}
-║ *By:* ${Fox.pushName}
-╚◇══════════════◇
+caption: `┌✼  𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®
+│ *Tαɠ:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g,"")}
+│ *Nαɱҽ:* ${Fox.pushName}
+┖⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯✼
 
 ╔════⧉🔎 𝐒𝐞𝐚𝐫𝐜𝐡
 ║• *${ʟᴀʏᴏᴜᴛ.MuveOn}lyrics:*  _find lyrics of songs_
