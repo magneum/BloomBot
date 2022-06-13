@@ -33,7 +33,7 @@ const Halt = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞�
 const Oops = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱☘️𝐊𝐞𝐲𝐬/Oops`);
 const ______1 = __importDefault(require("../../\uD835\uDC00\uD835\uDC2B\uD835\uDC1C\uD835\uDC2D\uD835\uDC22\uD835\uDC31\uD83C\uDC04\uD835\uDC15\uD835\uDC1E\uD835\uDC27\uD835\uDC2D/\u029F\u1D00\u028F\u1D0F\u1D1C\u1D1B"));
 const VOID = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/void`);
-const input_sanitization_1 = __importDefault(require("../../\uD835\uDC00\uD835\uDC2B\uD835\uDC1C\uD835\uDC2D\uD835\uDC22\uD835\uDC31\u269C\uFE0F\uD835\uDC0A\uD835\uDC2B\uD835\uDC32\uD835\uDC28\uD835\uDC13\uD835\uDC1E\uD835\uDC24/input-sanitization"));
+const Zues_1 = __importDefault(require("../../\uD835\uDC00\uD835\uDC2B\uD835\uDC1C\uD835\uDC2D\uD835\uDC22\uD835\uDC31\u269C\uFE0F\uD835\uDC0A\uD835\uDC2B\uD835\uDC32\uD835\uDC28\uD835\uDC13\uD835\uDC1E\uD835\uDC24/Zues"));
 const path_1 = __importDefault(require("path"));
 var scriptName = path_1.default.basename(__filename);
 var dotScrpt = scriptName.slice(0, -3).toLowerCase();
@@ -79,11 +79,11 @@ Option 2 - ${______1.default.MuveOn}${dotScrpt.toUpperCase()} _tag person_`, dot
                     var HOOM = reply.contextInfo.participant.split("@")[0];
                 }
                 else {
-                    var HOOM = yield input_sanitization_1.default.getCleanedContact(ǟʀɢʊʍɛռȶ, TUF, AʀƈȶɨӼ);
+                    var HOOM = yield Zues_1.default.getCleanedContact(ǟʀɢʊʍɛռȶ, TUF, AʀƈȶɨӼ);
                 }
                 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
                 var admin = false;
-                var isMember = yield input_sanitization_1.default.isMember(HOOM, AʀƈȶɨӼ.groupMembers);
+                var isMember = yield Zues_1.default.isMember(HOOM, AʀƈȶɨӼ.groupMembers);
                 var owner = false;
                 for (const index in AʀƈȶɨӼ.groupMembers) {
                     if (HOOM == AʀƈȶɨӼ.groupMembers[index].id.split("@")[0]) {
@@ -93,18 +93,14 @@ Option 2 - ${______1.default.MuveOn}${dotScrpt.toUpperCase()} _tag person_`, dot
                     }
                 }
                 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-                if (owner) {
-                    return Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `❌𝐃𝐞𝐧𝐢𝐞𝐝: _${HOOM}_ is the owner of the group`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png");
-                }
-                //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
                 if (isMember) {
-                    if (admin) {
+                    if (!admin) {
                         const arr = [HOOM + "@s.whatsapp.net"];
                         yield ӄʀʏȶɛӄ.groupParticipantsUpdate(AʀƈȶɨӼ.chatId, arr, "promote");
-                        return Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `💡𝐈𝐧𝐟𝐨: _${HOOM}_ is promoted from admin`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png");
+                        return Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `💡𝐈𝐧𝐟𝐨: _${HOOM}_ is promoted from admin!`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png");
                     }
                     else {
-                        return Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `❌𝐄𝐫𝐫𝐨𝐫: _${HOOM}_ was not an admin`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png");
+                        return Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `❌𝐄𝐫𝐫𝐨𝐫: _${HOOM}_ is already an admin!`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png");
                     }
                 }
                 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
