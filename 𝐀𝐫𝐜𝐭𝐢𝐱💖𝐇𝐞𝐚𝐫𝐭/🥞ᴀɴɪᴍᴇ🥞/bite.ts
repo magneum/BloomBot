@@ -89,6 +89,7 @@ return Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error);
 }
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 if (ǟʀɢʊʍɛռȶ[0] && ǟʀɢʊʍɛռȶ[0].startsWith("@")) {
+await ӄ𝖗𝖞ӄ𝖓𝖟.sendPresenceUpdate("composing", AʀƈȶɨӼ.chatId);
 var TagPerson = ǟʀɢʊʍɛռȶ[0].replace(/[^0-9]/g, "");
 var TagMention = TagPerson + "@s.whatsapp.net";
 ffmpeg(GotFile)
@@ -119,6 +120,7 @@ return await VOID.VOID(GiveFile, GotFile);
 });
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 } else if (AʀƈȶɨӼ.isTextReply) {
+await ӄ𝖗𝖞ӄ𝖓𝖟.sendPresenceUpdate("composing", AʀƈȶɨӼ.chatId);
 var Receiver = Fox.message.extendedTextMessage.contextInfo.participant;
 var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
 if (Receiver === ʟɴᴀᴍᴇ) {
