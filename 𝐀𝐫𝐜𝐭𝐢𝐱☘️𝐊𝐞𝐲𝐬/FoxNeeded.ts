@@ -20,11 +20,11 @@ const FoxNeeded = async (
         timestamp: Date(),
         contextInfo: { mentionedJid: [AʀƈȶɨӼ.sender] },
         text: `
-╔════⟢  𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®
+╔═⟢  𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®
 ║ *ᴛᴀɢ:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
 ║ *ɴᴀᴍᴇ:* ${Fox.pushName}
 ║ *ᴄᴏᴍᴍᴀɴᴅ:* ${AʀƈȶɨӼ.commandName}
-╚════⟢
+╚═════⟢
 
 ❌𝐄𝐫𝐫𝐨𝐫: Argument Needed To Run This Command.`,
         footer: `⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ⦔ `,
