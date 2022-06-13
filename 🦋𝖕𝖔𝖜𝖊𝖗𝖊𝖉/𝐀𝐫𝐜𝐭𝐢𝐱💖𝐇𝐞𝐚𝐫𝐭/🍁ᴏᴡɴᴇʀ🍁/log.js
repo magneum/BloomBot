@@ -78,35 +78,6 @@ module.exports = {
             // MessageType.text
             // );
             // }
-            const templateMessage = {
-                text: "Hi it's a template message",
-                footer: "Hello World",
-                image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png" },
-                templateButtons: [
-                    {
-                        index: 1,
-                        urlButton: {
-                            displayText: "⭐ Star Baileys on GitHub!",
-                            url: "https://github.com/adiwajshing/Baileys",
-                        },
-                    },
-                    {
-                        index: 2,
-                        callButton: {
-                            displayText: "Call me!",
-                            phoneNumber: "+1 (234) 5678-901",
-                        },
-                    },
-                    {
-                        index: 3,
-                        quickReplyButton: {
-                            displayText: "This is a reply, just like normal buttons!",
-                            id: "id-like-buttons-message",
-                        },
-                    },
-                ],
-            };
-            yield TUF.sendMessage(AʀƈȶɨӼ.chatId, templateMessage, message_type_1.MessageType.buttonsMessage);
             //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
             // await ӄʀʏȶɛӄ.sendPresenceUpdate("unavailable", AʀƈȶɨӼ.chatId);
             // await ӄʀʏȶɛӄ.sendPresenceUpdate("available", AʀƈȶɨӼ.chatId);
@@ -114,6 +85,7 @@ module.exports = {
             // await ӄʀʏȶɛӄ.sendPresenceUpdate("recording", AʀƈȶɨӼ.chatId);
             // await ӄʀʏȶɛӄ.sendPresenceUpdate("paused", AʀƈȶɨӼ.chatId);
             //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
+            yield TUF.sendMessage(AʀƈȶɨӼ.chatId, "oh hello there", message_type_1.MessageType.text, Fox);
         });
     },
 };

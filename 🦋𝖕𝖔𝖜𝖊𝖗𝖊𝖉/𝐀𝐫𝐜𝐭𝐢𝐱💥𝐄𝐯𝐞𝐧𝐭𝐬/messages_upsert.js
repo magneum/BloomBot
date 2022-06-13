@@ -43,7 +43,7 @@ const messages_upsert = (m, ӄʀʏȶɛӄ, commandHandler) => __awaiter(void 0, v
     if (m.type !== "notify") {
         return;
     }
-    let Fox = m.messages[0];
+    let Fox = m.messages.all()[0];
     let AʀƈȶɨӼ = yield (0, helper_1.default)(Fox, ӄʀʏȶɛӄ);
     let TUF = new TUF_1.default(ӄʀʏȶɛӄ);
     if (AʀƈȶɨӼ.isCmd) {

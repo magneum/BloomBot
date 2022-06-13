@@ -64,6 +64,7 @@ console.log(
 Kolor.green("💡𝐈𝐧𝐟𝐨: Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 connected to servers and verified...")
 );
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
+let commandHandler: Map<string, Command> = new Map();
 let FFolders: string[] = fs.readdirSync(join(__dirname, "𝐀𝐫𝐜𝐭𝐢𝐱💖𝐇𝐞𝐚𝐫𝐭"));
 for (const FFiles of FFolders) {
 const AllFFiles = fs

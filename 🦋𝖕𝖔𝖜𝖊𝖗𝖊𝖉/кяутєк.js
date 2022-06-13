@@ -96,24 +96,6 @@ setInterval(() => {
     console.log(chalk_1.default.green("💡𝐈𝐧𝐟𝐨: Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 connected to servers and verified..."));
     //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
     let commandHandler = new Map();
-    let Folders = fs_1.default.readdirSync((0, path_1.join)(__dirname, "𝐀𝐫𝐜𝐭𝐢𝐱💞𝐒𝐨𝐮𝐥"));
-    for (const Files of Folders) {
-        const AllFiles = fs_1.default
-            .readdirSync((0, path_1.join)(__dirname, `./𝐀𝐫𝐜𝐭𝐢𝐱💞𝐒𝐨𝐮𝐥/${Files}`))
-            .filter((File) => File.endsWith(`.js`));
-        for (const File of AllFiles) {
-            const command = require(`./𝐀𝐫𝐜𝐭𝐢𝐱💞𝐒𝐨𝐮𝐥/${Files}/${File}`);
-            try {
-                commandHandler.set(command.name, command);
-            }
-            catch (error) {
-                console.log(chalk_1.default.blue("💡𝐈𝐧𝐟𝐨: Could not import module"), chalk_1.default.red(`${File}`));
-                console.log(`❌𝐄𝐫𝐫𝐨𝐫: `, error);
-                continue;
-            }
-        }
-    }
-    //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
     let FFolders = fs_1.default.readdirSync((0, path_1.join)(__dirname, "𝐀𝐫𝐜𝐭𝐢𝐱💖𝐇𝐞𝐚𝐫𝐭"));
     for (const FFiles of FFolders) {
         const AllFFiles = fs_1.default

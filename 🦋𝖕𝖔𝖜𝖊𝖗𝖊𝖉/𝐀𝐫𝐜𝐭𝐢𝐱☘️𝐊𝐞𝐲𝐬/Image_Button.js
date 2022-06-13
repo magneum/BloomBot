@@ -35,11 +35,6 @@ const Image_Button = (TUF, Fox, AʀƈȶɨӼ, caption, media) => __awaiter(void 0
         }
         //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
         yield TUF.sendMessage(AʀƈȶɨӼ.chatId, {
-            quoted: Fox.message,
-            contextInfo: {
-                mentionedJid: [AʀƈȶɨӼ.sender],
-            },
-            timestamp: Date(),
             image: { url: media },
             caption: `|❝ 𝐔𝐬𝐞𝐫: ${Fox.pushName} ❞|
 
