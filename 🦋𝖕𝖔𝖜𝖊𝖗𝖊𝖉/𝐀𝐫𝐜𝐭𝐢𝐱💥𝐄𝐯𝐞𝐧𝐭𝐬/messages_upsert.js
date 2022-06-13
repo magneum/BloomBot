@@ -36,16 +36,17 @@ const Silent_1 = __importDefault(require("../\uD835\uDC00\uD835\uDC2B\uD835\uDC1
 const Ranker_1 = __importDefault(require("../\uD835\uDC00\uD835\uDC2B\uD835\uDC1C\uD835\uDC2D\uD835\uDC22\uD835\uDC31\uD83C\uDC04\uD835\uDC15\uD835\uDC1E\uD835\uDC27\uD835\uDC2D/Ranker"));
 const chalk_1 = __importDefault(require("chalk"));
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-const messages_upsert = (m, ӄʀʏȶɛӄ, commandHandler) => __awaiter(void 0, void 0, void 0, function* () {
-    if (m.type === "append" && !______1.default.OFFLINE_RESPONSE) {
+const messages_upsert = (update, ӄʀʏȶɛӄ, commandHandler) => __awaiter(void 0, void 0, void 0, function* () {
+    if (update.type === "append" && !______1.default.OFFLINE_RESPONSE) {
         return;
     }
-    if (m.type !== "notify") {
+    if (update.type !== "notify") {
         return;
     }
-    let Fox = m.messages[0];
+    let Fox = update.messages[0];
     let AʀƈȶɨӼ = yield (0, helper_1.default)(Fox, ӄʀʏȶɛӄ);
     let TUF = new TUF_1.default(ӄʀʏȶɛӄ);
+    //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
     if (AʀƈȶɨӼ.isCmd) {
         console.log(AʀƈȶɨӼ);
         console.log(chalk_1.default.blueBright.bold(`💡𝐈𝐧𝐟𝐨: ${AʀƈȶɨӼ.commandName.toUpperCase()} command executed.`));

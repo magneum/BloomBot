@@ -51,7 +51,11 @@ ${caption}`,
                     },
                 },
             ],
-        }, message_type_1.MessageType.buttonsMessage);
+        }, message_type_1.MessageType.buttonsMessage, {
+            quoted: Fox,
+            timestamp: Date(),
+            contextInfo: { mentionedJid: [AʀƈȶɨӼ.sender] },
+        });
     }
     catch (error) {
         console.log(error);

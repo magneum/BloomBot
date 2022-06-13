@@ -26,17 +26,11 @@ AʀƈȶɨӼ: AʀƈȶɨӼ,
 await TUF.sendMessage(
 AʀƈȶɨӼ.chatId,
 {
-quoted: Fox.message,
-contextInfo: {
-mentionedJid: [AʀƈȶɨӼ.sender],
-},
-timestamp: Date(),
 image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png" },
-caption: `
-╔◇════════════◇
-║ ƬΛG: ${Fox.pushName}
-║ ПΛMΣ: ${Fox.pushName}
-╚◇════════════◇
+caption: `╔◇  𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®║ *ƬΛG:* @${AʀƈȶɨӼ.sender.replace(
+/[^\d+]/g,
+""
+)}\n║ *ПΛMΣ:* ${Fox.pushName}\n╚◇══════════════◇
 
 ╔════⧉🍙 𝐀𝐧𝐢𝐦𝐞
 ║• *${ʟᴀʏᴏᴜᴛ.MuveOn}anime:*  _search any anime_

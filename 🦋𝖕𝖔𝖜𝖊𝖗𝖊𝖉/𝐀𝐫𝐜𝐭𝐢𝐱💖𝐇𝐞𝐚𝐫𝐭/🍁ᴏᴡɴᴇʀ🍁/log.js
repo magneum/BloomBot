@@ -87,9 +87,9 @@ module.exports = {
             //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
             console.log(AʀƈȶɨӼ);
             return yield TUF.sendMessage(AʀƈȶɨӼ.chatId, "Hello There: @" + ᴘɴᴀᴍᴇ, message_type_1.MessageType.text, {
-                quoted: AʀƈȶɨӼ.body,
+                quoted: Fox,
                 timestamp: Date(),
-                contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
+                contextInfo: { mentionedJid: [AʀƈȶɨӼ.sender] },
             });
         });
     },

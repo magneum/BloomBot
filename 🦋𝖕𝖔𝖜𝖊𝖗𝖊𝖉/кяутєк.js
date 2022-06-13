@@ -132,8 +132,8 @@ setInterval(() => {
         ӄʀʏȶɛӄ.ev.on("connection.update", (update) => {
             connection_update_1.default.connection_update(update, baileys_1.DisconnectReason, startSock);
         });
-        ӄʀʏȶɛӄ.ev.on("messages.upsert", (m) => __awaiter(void 0, void 0, void 0, function* () {
-            messages_upsert_1.default.messages_upsert(m, ӄʀʏȶɛӄ, commandHandler);
+        ӄʀʏȶɛӄ.ev.on("messages.upsert", (update) => __awaiter(void 0, void 0, void 0, function* () {
+            messages_upsert_1.default.messages_upsert(update, ӄʀʏȶɛӄ, commandHandler);
         }));
         ӄʀʏȶɛӄ.ev.on("creds.update", (creds) => {
             saveCreds(creds);

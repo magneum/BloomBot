@@ -37,11 +37,7 @@ module.exports = {
                 },
                 timestamp: Date(),
                 image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png" },
-                caption: `
-╔◇✥𝐔𝐬𝐞𝐫: ${Fox.pushName}
-║🦋 𝐀𝐫𝐜𝐭𝐢𝐱: _Is an Advance Whatsapp User-Bot!_
-║🛰️ 𝐖𝐞𝐛𝐬𝐢𝐭𝐞: _VlkyreAI.krakinzkon.repl.co_
-╚◇════════════◇꧂
+                caption: `╔◇  𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®\n║ *ƬΛG:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}\mv\n║ *ПΛMΣ:* ${Fox.pushName}\n╚◇══════════════◇
 
 ╔◇🧀𝐍𝐨 𝐑𝐞𝐬𝐭𝐫𝐢𝐜𝐭𝐢𝐨𝐧🧀
 ║
@@ -75,7 +71,11 @@ module.exports = {
                     },
                 ],
                 headerType: 4,
-            }, message_type_1.MessageType.buttonsMessage);
+            }, message_type_1.MessageType.buttonsMessage, {
+                quoted: Fox,
+                timestamp: Date(),
+                contextInfo: { mentionedJid: [AʀƈȶɨӼ.sender] },
+            });
         });
     },
 };
