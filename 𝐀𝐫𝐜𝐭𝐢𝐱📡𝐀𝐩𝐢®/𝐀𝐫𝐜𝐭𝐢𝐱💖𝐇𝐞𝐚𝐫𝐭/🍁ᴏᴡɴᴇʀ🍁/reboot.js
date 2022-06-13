@@ -18,9 +18,20 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 const Image_Button_1 = __importDefault(require("../../\uD835\uDC00\uD835\uDC2B\uD835\uDC1C\uD835\uDC2D\uD835\uDC22\uD835\uDC31\u2618\uFE0F\uD835\uDC0A\uD835\uDC1E\uD835\uDC32\uD835\uDC2C/Image_Button"));
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-const Oops = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱☘️𝐊𝐞𝐲𝐬/Oops`);
+const UserPrivate = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/private`);
+const Welcome = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/setwelcome`);
+const LinkList = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/antilink`);
+const DebugList = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/debug`);
+const Ranker = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/autorank`);
+const BanPerson = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/ban`);
+const NsfwList = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/nsfw`);
+const BanGroup = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/ban`);
+const Bagde = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/badge`);
+const Halt = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/halt`);
+//" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 const VOID = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/void`);
-const axios = require("axios");
+const ______1 = __importDefault(require("../../\uD835\uDC00\uD835\uDC2B\uD835\uDC1C\uD835\uDC2D\uD835\uDC22\uD835\uDC31\uD83C\uDC04\uD835\uDC15\uD835\uDC1E\uD835\uDC27\uD835\uDC2D/\u029F\u1D00\u028F\u1D0F\u1D1C\u1D1B"));
+const Oops_1 = __importDefault(require("../../\uD835\uDC00\uD835\uDC2B\uD835\uDC1C\uD835\uDC2D\uD835\uDC22\uD835\uDC31\u2618\uFE0F\uD835\uDC0A\uD835\uDC1E\uD835\uDC32\uD835\uDC2C/Oops"));
 const path_1 = __importDefault(require("path"));
 var scriptName = path_1.default.basename(__filename);
 var dotScrpt = scriptName.slice(0, -3).toLowerCase();
@@ -44,17 +55,19 @@ module.exports = {
                 console.log("💡Is Bot Group Admin: " + AʀƈȶɨӼ.isBotGroupAdmin);
                 console.log("💡Is Sender Group Admin: " + AʀƈȶɨӼ.isSenderGroupAdmin);
                 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-                yield axios
-                    .get(`https://nekos.life/api/v2/fact`)
-                    .then((response) => {
-                    return Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `📛𝗙𝗮𝗰𝘁
-${response.data.fact}`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_LGrey.png");
-                })
-                    .catch((error) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
+                if (!AʀƈȶɨӼ.fromMe && !AʀƈȶɨӼ.isSenderTUFs) {
+                    return Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `❌𝐃𝐞𝐧𝐢𝐞𝐝: _Owner/Dev Only.You Are Not Allowed!_`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Black.png");
+                }
+                //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
+                var Heroku = new Heroku({
+                    token: ______1.default.Heroku_Api,
+                });
+                yield Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `💡𝐈𝐧𝐟𝐨: Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 is now rebootig itself and it's servers..`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Black.png");
+                yield Heroku.delete(`/apps/${______1.default.Heroku_App}/dynos/worker`).catch((error) => Oops_1.default.VOp(TUF, Fox, AʀƈȶɨӼ, error));
                 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
             }
             catch (error) {
-                return Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error);
+                return Oops_1.default.VOp(TUF, Fox, AʀƈȶɨӼ, error);
             }
         });
     },
