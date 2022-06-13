@@ -9,6 +9,7 @@ import Video_Button from "../../𝐀𝐫𝐜𝐭𝐢𝐱☘️𝐊𝐞𝐲𝐬/V
 import Text_List from "../../𝐀𝐫𝐜𝐭𝐢𝐱☘️𝐊𝐞𝐲𝐬/Text_List";
 import FoxNeeded from "../../𝐀𝐫𝐜𝐭𝐢𝐱☘️𝐊𝐞𝐲𝐬/FoxNeeded"
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
+import { jidNormalizedUser } from "@adiwajshing/baileys";
 const Oops = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱☘️𝐊𝐞𝐲𝐬/Oops`);
 import ʟᴀʏᴏᴜᴛ from "../../𝐀𝐫𝐜𝐭𝐢𝐱🀄𝐕𝐞𝐧𝐭/ʟᴀʏᴏᴜᴛ";
 import { proto } from "@adiwajshing/baileys";
@@ -55,6 +56,14 @@ let members = [];
 for (var i = 0; i < AʀƈȶɨӼ.groupMembers.length; i++) {
 members[i] = AʀƈȶɨӼ.groupMembers[i].id;
 }
+let 𝕻𝕻𝖑𝖊𝖙𝖊𝖗;
+try {
+𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄʀʏȶɛӄ.profilePictureUrl(
+jidNormalizedUser(AʀƈȶɨӼ.chatId)
+);
+} catch {
+𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png";
+}
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 if (!ǟʀɢʊʍɛռȶ) {
 var message = " ";
@@ -70,7 +79,7 @@ contextInfo: {
 mentionedJid: AʀƈȶɨӼ.groupAdmins,
 },
 timestamp: Date(),
-image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png" },
+image: { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 },
 caption: `⚡ 𝐅𝐫𝐨𝐦: ${Fox.pushName}
 
 ${message}`,
@@ -107,7 +116,7 @@ contextInfo: {
 mentionedJid: AʀƈȶɨӼ.groupAdmins,
 },
 timestamp: Date(),
-image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png" },
+image: { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 },
 caption: `⚡ 𝐅𝐫𝐨𝐦: ${Fox.pushName}
 
 ${ǟʀɢʊʍɛռȶ.join(" ")}`,
@@ -149,7 +158,7 @@ contextInfo: {
 mentionedJid: AʀƈȶɨӼ.groupAdmins,
 },
 timestamp: Date(),
-image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png" },
+image: { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 },
 caption: `⚡ 𝐅𝐫𝐨𝐦: ${Fox.pushName}
 
 ${message}`,

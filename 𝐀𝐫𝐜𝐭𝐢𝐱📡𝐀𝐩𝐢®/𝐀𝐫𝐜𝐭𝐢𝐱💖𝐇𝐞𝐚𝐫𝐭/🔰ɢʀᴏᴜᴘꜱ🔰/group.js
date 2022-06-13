@@ -78,7 +78,7 @@ module.exports = {
                 else if (ǟʀɢʊʍɛռȶ[0] === `OPEN` ||
                     ǟʀɢʊʍɛռȶ[0] === `Open` ||
                     ǟʀɢʊʍɛռȶ[0] === `open`) {
-                    yield ӄʀʏȶɛӄ.groupSettingUpdate(AʀƈȶɨӼ.chatId, "announcement");
+                    yield ӄʀʏȶɛӄ.groupSettingUpdate(AʀƈȶɨӼ.chatId, "not_announcement");
                     return Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `💡𝐈𝐧𝐟𝐨: Current Group Setting Has Been Changed To: _everyone can send messages_`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png");
                     //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
                 }
