@@ -35,7 +35,7 @@ TUF: Client,
 Fox: proto.IWebMessageInfo,
 AʀƈȶɨӼ: AʀƈȶɨӼ,
 ǟʀɢʊʍɛռȶ: string[],
-ӄʀʏȶɛӄ
+ӄ𝖗𝖞ӄ𝖓𝖟
 ): Promise<void> {
 const ʟɴᴀᴍᴇ = AʀƈȶɨӼ.sender;
 const ᴅꜰɴᴀᴍᴇ = AʀƈȶɨӼ.commandName;
@@ -155,7 +155,7 @@ ffmpeg(stream)
 .toFormat("ipod")
 .saveToFile(`./𝐀𝐫𝐜𝐭𝐢𝐱🐞𝐁𝐞𝐞𝐭𝐥𝐞/${Fox.key.id}.mp3`)
 .on("end", async () => {
-await ӄʀʏȶɛӄ.sendPresenceUpdate("recording", AʀƈȶɨӼ.chatId);
+await ӄ𝖗𝖞ӄ𝖓𝖟.sendPresenceUpdate("recording", AʀƈȶɨӼ.chatId);
 await Image_Button.VImg(
 TUF,
 Fox,
@@ -180,7 +180,7 @@ MessageType.audio
 )
 .then(VOID.VOID(`./𝐀𝐫𝐜𝐭𝐢𝐱🐞𝐁𝐞𝐞𝐭𝐥𝐞/${Fox.key.id}.mp3`))
 .catch((error: any) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
-await ӄʀʏȶɛӄ.sendPresenceUpdate("available", AʀƈȶɨӼ.chatId);
+await ӄ𝖗𝖞ӄ𝖓𝖟.sendPresenceUpdate("available", AʀƈȶɨӼ.chatId);
 return;
 });
 });
