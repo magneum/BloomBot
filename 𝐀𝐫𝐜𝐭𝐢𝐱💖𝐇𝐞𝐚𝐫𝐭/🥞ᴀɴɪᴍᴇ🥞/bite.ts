@@ -39,191 +39,195 @@ var scriptName = path.basename(__filename);
 var dotScrpt = scriptName.slice(0, -3).toLowerCase();
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 export = {
-  name: dotScrpt,
-  async handle(
-    TUF: Client,
-    Fox: proto.IWebMessageInfo,
-    AʀƈȶɨӼ: AʀƈȶɨӼ,
-    ǟʀɢʊʍɛռȶ: string[],
-    ӄ𝖗𝖞ӄ𝖓𝖟: any
-  ): Promise<void> {
-    try {
-      const ʟɴᴀᴍᴇ = AʀƈȶɨӼ.sender;
-      const ᴅꜰɴᴀᴍᴇ = AʀƈȶɨӼ.commandName;
-      const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/[^\d+]/g, "");
-      const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
-      //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-      await TUF.getGroupMetaData(AʀƈȶɨӼ.chatId, AʀƈȶɨӼ);
-      console.log("💡𝐈𝐧𝐟𝐨: Is Group: " + AʀƈȶɨӼ.isGroup);
-      console.log("💡𝐈𝐧𝐟𝐨: Is Bot Group Admin: " + AʀƈȶɨӼ.isBotGroupAdmin);
-      console.log(
-        "💡𝐈𝐧𝐟𝐨: Is Sender Group Admin: " + AʀƈȶɨӼ.isSenderGroupAdmin
-      );
-      console.log("💡𝐈𝐧𝐟𝐨: Is Reply Message: " + AʀƈȶɨӼ.replyMessage);
-      console.log("💡𝐈𝐧𝐟𝐨: Is Text Reply: " + AʀƈȶɨӼ.isTextReply);
-      if (AʀƈȶɨӼ.isTextReply) {
-        var Receiver = Fox.message.extendedTextMessage.contextInfo.participant;
-        var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
-        if (Receiver === ʟɴᴀᴍᴇ) {
-          console.log("💡𝐈𝐧𝐟𝐨: Receiver = Self: " + Fox.pushName);
-        } else {
-          console.log("💡𝐈𝐧𝐟𝐨: Receiver: " + քɛʀֆօռɢօȶռʊʍ);
-        }
-      }
-      //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-      let FinalLink: any;
-      let AnimeLink: any = await anime.bite();
-      let Fresh_File: any = `./${Fox.key.id}${Date.now()}.gif`;
-      let Composed_File: any = `./${Fox.key.id}${Date.now()}.mp4`;
-      if (!AnimeLink.endsWith(`.gif`) && !AnimeLink.endsWith(`.mp4`)) {
-        let anime2: any = require(`anime-actions`);
-        FinalLink = await anime2.bite();
-      } else {
-        FinalLink = AnimeLink;
-      }
-      //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-      const downloader = await new Downloader({
-        url: FinalLink,
-        directory: `./`,
-        fileName: Fresh_File,
-        cloneFiles: false,
-      });
-      try {
-        await downloader
-          .download()
-          .then(
-            console.log(
-              `⬡═══════════════════| 🥂𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐅𝐢𝐧𝐢𝐬𝐞𝐝🥂 |═══════════════════⬡`
-            )
-          );
-      } catch (error) {
-        console.log(`❌𝐄𝐫𝐫𝐨𝐫: 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐄𝐫𝐫𝐨𝐫: ` + error);
-        return Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error);
-      }
-      //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-      if (ǟʀɢʊʍɛռȶ[0] && ǟʀɢʊʍɛռȶ[0].startsWith("@")) {
-        await ӄ𝖗𝖞ӄ𝖓𝖟.sendPresenceUpdate("composing", AʀƈȶɨӼ.chatId);
-        var TagPerson = ǟʀɢʊʍɛռȶ[0].replace(/[^0-9]/g, "");
-        var TagMention = TagPerson + "@s.whatsapp.net";
-        FFmpeg(Fresh_File)
-          .outputOptions([
-            "-pix_fmt yuv420p",
-            "-c:v libx264",
-            "-movflags +faststart",
-            "-filter:v crop='floor(in_w/2)*2:floor(in_h/2)*2'",
-          ])
-          .save(Composed_File)
-          .on("end", async () => {
-            await Sticker_Button.VSbt(
-              TUF,
-              Fox,
-              AʀƈȶɨӼ,
-              ǟʀɢʊʍɛռȶ,
-              `╔═⟢  𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®
-║♩ *ᴛᴀɢ:* _@${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}_
-║♭ *ɴᴀᴍᴇ:* _${Fox.pushName}_
-║♪ *ᴄᴏᴍᴍᴀɴᴅ:* _${AʀƈȶɨӼ.commandName}_
+name: dotScrpt,
+async handle(
+TUF: Client,
+Fox: proto.IWebMessageInfo,
+AʀƈȶɨӼ: AʀƈȶɨӼ,
+ǟʀɢʊʍɛռȶ: string[],
+ӄ𝖗𝖞ӄ𝖓𝖟: any
+): Promise<void> {
+try {
+const ʟɴᴀᴍᴇ = AʀƈȶɨӼ.sender;
+const ᴅꜰɴᴀᴍᴇ = AʀƈȶɨӼ.commandName;
+const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/[^\d+]/g, "");
+const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
+//" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
+await TUF.getGroupMetaData(AʀƈȶɨӼ.chatId, AʀƈȶɨӼ);
+console.log("💡𝐈𝐧𝐟𝐨: Is Group: " + AʀƈȶɨӼ.isGroup);
+console.log("💡𝐈𝐧𝐟𝐨: Is Bot Group Admin: " + AʀƈȶɨӼ.isBotGroupAdmin);
+console.log(
+"💡𝐈𝐧𝐟𝐨: Is Sender Group Admin: " + AʀƈȶɨӼ.isSenderGroupAdmin
+);
+console.log("💡𝐈𝐧𝐟𝐨: Is Reply Message: " + AʀƈȶɨӼ.replyMessage);
+console.log("💡𝐈𝐧𝐟𝐨: Is Text Reply: " + AʀƈȶɨӼ.isTextReply);
+if (AʀƈȶɨӼ.isTextReply) {
+var Receiver = Fox.message.extendedTextMessage.contextInfo.participant;
+var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
+if (Receiver === ʟɴᴀᴍᴇ) {
+console.log("💡𝐈𝐧𝐟𝐨: Receiver = Self: " + Fox.pushName);
+} else {
+console.log("💡𝐈𝐧𝐟𝐨: Receiver: " + քɛʀֆօռɢօȶռʊʍ);
+}
+}
+//" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
+let FinalLink: any;
+let AnimeLink: any = await anime.bite();
+let Fresh_File: any = `./${Fox.key.id}${Date.now()}.gif`;
+let Composed_File: any = `./${Fox.key.id}${Date.now()}.mp4`;
+if (!AnimeLink.endsWith(`.gif`) && !AnimeLink.endsWith(`.mp4`)) {
+let anime2: any = require(`anime-actions`);
+FinalLink = await anime2.bite();
+} else {
+FinalLink = AnimeLink;
+}
+//" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
+const downloader = await new Downloader({
+url: FinalLink,
+directory: `./`,
+fileName: Fresh_File,
+cloneFiles: false,
+});
+try {
+await downloader
+.download()
+.then(
+console.log(
+`⬡═══════════════════| 🥂𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐅𝐢𝐧𝐢𝐬𝐞𝐝🥂 |═══════════════════⬡`
+)
+);
+} catch (error) {
+console.log(`❌𝐄𝐫𝐫𝐨𝐫: 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐄𝐫𝐫𝐨𝐫: ` + error);
+return Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error);
+}
+//" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
+if (ǟʀɢʊʍɛռȶ[0] && ǟʀɢʊʍɛռȶ[0].startsWith("@")) {
+await ӄ𝖗𝖞ӄ𝖓𝖟.sendPresenceUpdate("composing", AʀƈȶɨӼ.chatId);
+var TagPerson = ǟʀɢʊʍɛռȶ[0].replace(/[^0-9]/g, "");
+var TagMention = TagPerson + "@s.whatsapp.net";
+FFmpeg(Fresh_File)
+.outputOptions([
+"-pix_fmt yuv420p",
+"-c:v libx264",
+"-movflags +faststart",
+"-filter:v crop='floor(in_w/2)*2:floor(in_h/2)*2'",
+])
+.save(Composed_File)
+.on("end", async () => {
+await Sticker_Button.VSbt(
+TUF,
+Fox,
+AʀƈȶɨӼ,
+ǟʀɢʊʍɛռȶ,
+`╔═⟢  𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®
+║
+║♩ *Tαɠ:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
+║♭ *Nαɱҽ:* ${Fox.pushName}
+║♪ *Cσɱɱαɳԃ:* ${AʀƈȶɨӼ.commandName}
 ╚═════⟢
 
 🍕𝐅𝐫𝐨𝐦: _${Fox.pushName}_
 🌭𝐓𝐨: @${TagPerson}`,
-              Composed_File
-            );
-            return await VOID.VOID(Composed_File, Fresh_File);
-          });
-        //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-      } else if (AʀƈȶɨӼ.isTextReply) {
-        await ӄ𝖗𝖞ӄ𝖓𝖟.sendPresenceUpdate("composing", AʀƈȶɨӼ.chatId);
-        var Receiver = Fox.message.extendedTextMessage.contextInfo.participant;
-        var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
-        if (Receiver === ʟɴᴀᴍᴇ) {
-          FFmpeg(Fresh_File)
-            .outputOptions([
-              "-pix_fmt yuv420p",
-              "-c:v libx264",
-              "-movflags +faststart",
-              "-filter:v crop='floor(in_w/2)*2:floor(in_h/2)*2'",
-            ])
-            .save(Composed_File)
-            .on("end", async () => {
-              await Sticker_Button.VSbt(
-                TUF,
-                Fox,
-                AʀƈȶɨӼ,
-                ǟʀɢʊʍɛռȶ,
-                `╔═⟢  𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®
-║♩ *ᴛᴀɢ:* _@${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}_
-║♭ *ɴᴀᴍᴇ:* _${Fox.pushName}_
-║♪ *ᴄᴏᴍᴍᴀɴᴅ:* _${AʀƈȶɨӼ.commandName}_
+Composed_File
+);
+return await VOID.VOID(Composed_File, Fresh_File);
+});
+//" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
+} else if (AʀƈȶɨӼ.isTextReply) {
+await ӄ𝖗𝖞ӄ𝖓𝖟.sendPresenceUpdate("composing", AʀƈȶɨӼ.chatId);
+var Receiver = Fox.message.extendedTextMessage.contextInfo.participant;
+var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
+if (Receiver === ʟɴᴀᴍᴇ) {
+FFmpeg(Fresh_File)
+.outputOptions([
+"-pix_fmt yuv420p",
+"-c:v libx264",
+"-movflags +faststart",
+"-filter:v crop='floor(in_w/2)*2:floor(in_h/2)*2'",
+])
+.save(Composed_File)
+.on("end", async () => {
+await Sticker_Button.VSbt(
+TUF,
+Fox,
+AʀƈȶɨӼ,
+ǟʀɢʊʍɛռȶ,
+`╔═⟢  𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®
+║
+║♩ *Tαɠ:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
+║♭ *Nαɱҽ:* ${Fox.pushName}
+║♪ *Cσɱɱαɳԃ:* ${AʀƈȶɨӼ.commandName}
 ╚═════⟢
 
 🍕𝐅𝐨𝐫: _${Fox.pushName}_`,
-                Composed_File
-              );
-              return await VOID.VOID(Composed_File, Fresh_File);
-            });
-          //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-        } else {
-          FFmpeg(Fresh_File)
-            .outputOptions([
-              "-pix_fmt yuv420p",
-              "-c:v libx264",
-              "-movflags +faststart",
-              "-filter:v crop='floor(in_w/2)*2:floor(in_h/2)*2'",
-            ])
-            .save(Composed_File)
-            .on("end", async () => {
-              await Sticker_Button.VSbt(
-                TUF,
-                Fox,
-                AʀƈȶɨӼ,
-                ǟʀɢʊʍɛռȶ,
-                `╔═⟢  𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®
-║♩ *ᴛᴀɢ:* _@${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}_
-║♭ *ɴᴀᴍᴇ:* _${Fox.pushName}_
-║♪ *ᴄᴏᴍᴍᴀɴᴅ:* _${AʀƈȶɨӼ.commandName}_
+Composed_File
+);
+return await VOID.VOID(Composed_File, Fresh_File);
+});
+//" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
+} else {
+FFmpeg(Fresh_File)
+.outputOptions([
+"-pix_fmt yuv420p",
+"-c:v libx264",
+"-movflags +faststart",
+"-filter:v crop='floor(in_w/2)*2:floor(in_h/2)*2'",
+])
+.save(Composed_File)
+.on("end", async () => {
+await Sticker_Button.VSbt(
+TUF,
+Fox,
+AʀƈȶɨӼ,
+ǟʀɢʊʍɛռȶ,
+`╔═⟢  𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®
+║
+║♩ *Tαɠ:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
+║♭ *Nαɱҽ:* ${Fox.pushName}
+║♪ *Cσɱɱαɳԃ:* ${AʀƈȶɨӼ.commandName}
 ╚═════⟢
 
 🍕𝐅𝐫𝐨𝐦: _${Fox.pushName}_
 🌭𝐓𝐨: _@${քɛʀֆօռɢօȶռʊʍ}_`,
-                Composed_File
-              );
-              return await VOID.VOID(Composed_File, Fresh_File);
-            });
-        }
-        //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-      } else {
-        await ӄ𝖗𝖞ӄ𝖓𝖟.sendPresenceUpdate("composing", AʀƈȶɨӼ.chatId);
-        FFmpeg(Fresh_File)
-          .outputOptions([
-            "-pix_fmt yuv420p",
-            "-c:v libx264",
-            "-movflags +faststart",
-            "-filter:v crop='floor(in_w/2)*2:floor(in_h/2)*2'",
-          ])
-          .save(Composed_File)
-          .on("end", async () => {
-            await Sticker_Button.VSbt(
-              TUF,
-              Fox,
-              AʀƈȶɨӼ,
-              ǟʀɢʊʍɛռȶ,
-              `╔═⟢  𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®
-║♩ *ᴛᴀɢ:* _@${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}_
-║♭ *ɴᴀᴍᴇ:* _${Fox.pushName}_
-║♪ *ᴄᴏᴍᴍᴀɴᴅ:* _${AʀƈȶɨӼ.commandName}_
+Composed_File
+);
+return await VOID.VOID(Composed_File, Fresh_File);
+});
+}
+//" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
+} else {
+await ӄ𝖗𝖞ӄ𝖓𝖟.sendPresenceUpdate("composing", AʀƈȶɨӼ.chatId);
+FFmpeg(Fresh_File)
+.outputOptions([
+"-pix_fmt yuv420p",
+"-c:v libx264",
+"-movflags +faststart",
+"-filter:v crop='floor(in_w/2)*2:floor(in_h/2)*2'",
+])
+.save(Composed_File)
+.on("end", async () => {
+await Sticker_Button.VSbt(
+TUF,
+Fox,
+AʀƈȶɨӼ,
+ǟʀɢʊʍɛռȶ,
+`╔═⟢  𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®
+║
+║♩ *Tαɠ:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
+║♭ *Nαɱҽ:* ${Fox.pushName}
+║♪ *Cσɱɱαɳԃ:* ${AʀƈȶɨӼ.commandName}
 ╚═════⟢
 
 🍕𝐅𝐨𝐫: _${Fox.pushName}_`,
-              Composed_File
-            );
-            return await VOID.VOID(Composed_File, Fresh_File);
-          });
-      }
-    } catch (error) {
-      return Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error);
-    }
-  },
+Composed_File
+);
+return await VOID.VOID(Composed_File, Fresh_File);
+});
+}
+} catch (error) {
+return Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error);
+}
+},
 };
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 /*        
