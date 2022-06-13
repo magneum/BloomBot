@@ -126,7 +126,7 @@ return Image_Button.VImg(
 TUF,
 Fox,
 AʀƈȶɨӼ,
-`❌𝐃𝐞𝐧𝐢𝐞𝐝: _${HOOM}_ is the owner of the group`,
+`❌𝐃𝐞𝐧𝐢𝐞𝐝: _${HOOM}_ is the owner of the group!`,
 "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png"
 );
 }
