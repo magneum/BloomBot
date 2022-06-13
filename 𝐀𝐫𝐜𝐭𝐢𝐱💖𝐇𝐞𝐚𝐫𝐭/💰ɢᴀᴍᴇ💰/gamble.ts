@@ -179,7 +179,7 @@ worktimeout: 900000,
 });
 await newUser
 .save()
-.catch((error) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
+.catch((error: any) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
 return Image_Button.VImg(
 TUF,
 Fox,
@@ -209,7 +209,7 @@ Gambletimeout: 480000,
 });
 await newUser
 .save()
-.catch((error) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
+.catch((error: any) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
 return await Image_Button.VImg(
 TUF,
 Fox,
@@ -337,10 +337,10 @@ userEco.money = userEco.money + money;
 userGamble.Gambledone = Date.now();
 await userGamble
 .save()
-.catch((error) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
+.catch((error: any) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
 await userEco
 .save()
-.catch((error) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
+.catch((error: any) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
 return Image_Button.VImg(
 TUF,
 Fox,
@@ -362,10 +362,10 @@ userEco.money = userEco.money + money;
 userGamble.Gambledone = Date.now();
 await userGamble
 .save()
-.catch((error) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
+.catch((error: any) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
 await userEco
 .save()
-.catch((error) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
+.catch((error: any) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
 return Image_Button.VImg(
 TUF,
 Fox,
@@ -387,10 +387,10 @@ userEco.money = userEco.money + money;
 userGamble.Gambledone = Date.now();
 await userGamble
 .save()
-.catch((error) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
+.catch((error: any) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
 await userEco
 .save()
-.catch((error) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
+.catch((error: any) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
 return Image_Button.VImg(
 TUF,
 Fox,
@@ -410,10 +410,10 @@ userEco.money = userEco.money - money;
 userGamble.Gambledone = Date.now();
 await userGamble
 .save()
-.catch((error) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
+.catch((error: any) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
 await userEco
 .save()
-.catch((error) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
+.catch((error: any) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
 return Image_Button.VImg(
 TUF,
 Fox,
