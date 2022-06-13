@@ -40,7 +40,7 @@ TUF: Client,
 Fox: proto.IWebMessageInfo,
 AʀƈȶɨӼ: AʀƈȶɨӼ,
 ǟʀɢʊʍɛռȶ: string[],
-ӄʀʏȶɛӄ
+ӄ𝖗𝖞ӄ𝖓𝖟
 ): Promise<void> {
 try {
 const ʟɴᴀᴍᴇ = AʀƈȶɨӼ.sender;
@@ -124,7 +124,7 @@ admin = AʀƈȶɨӼ.groupMembers[index].admin != undefined;
 if (isMember) {
 if (!admin) {
 const arr = [HOOM + "@s.whatsapp.net"];
-await ӄʀʏȶɛӄ.groupParticipantsUpdate(AʀƈȶɨӼ.chatId, arr, "promote");
+await ӄ𝖗𝖞ӄ𝖓𝖟.groupParticipantsUpdate(AʀƈȶɨӼ.chatId, arr, "promote");
 return Image_Button.VImg(
 TUF,
 Fox,

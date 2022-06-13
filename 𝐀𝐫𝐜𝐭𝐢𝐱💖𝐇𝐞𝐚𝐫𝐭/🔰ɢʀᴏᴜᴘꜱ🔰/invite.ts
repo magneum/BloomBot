@@ -40,7 +40,7 @@ TUF: TUF,
 Fox: proto.IWebMessageInfo,
 AʀƈȶɨӼ: AʀƈȶɨӼ,
 ǟʀɢʊʍɛռȶ: string[],
-ӄʀʏȶɛӄ
+ӄ𝖗𝖞ӄ𝖓𝖟
 ): Promise<void> {
 try {
 const ʟɴᴀᴍᴇ = AʀƈȶɨӼ.sender;
@@ -73,11 +73,11 @@ AʀƈȶɨӼ,
 );
 }
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-const Invite = await ӄʀʏȶɛӄ.groupInviteCode(AʀƈȶɨӼ.chatId);
-var groupData = await ӄʀʏȶɛӄ.groupMetadata(Fox.key.remoteJid);
+const Invite = await ӄ𝖗𝖞ӄ𝖓𝖟.groupInviteCode(AʀƈȶɨӼ.chatId);
+var groupData = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata(Fox.key.remoteJid);
 let 𝕻𝕻𝖑𝖊𝖙𝖊𝖗: string;
 try {
-𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄʀʏȶɛӄ.profilePictureUrl(
+𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄ𝖗𝖞ӄ𝖓𝖟.profilePictureUrl(
 jidNormalizedUser(AʀƈȶɨӼ.chatId)
 );
 } catch {

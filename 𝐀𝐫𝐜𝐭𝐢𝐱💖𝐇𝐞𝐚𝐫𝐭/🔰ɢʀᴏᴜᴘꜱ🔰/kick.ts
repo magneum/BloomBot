@@ -28,7 +28,7 @@ TUF: Client,
 Fox: proto.IWebMessageInfo,
 AʀƈȶɨӼ: AʀƈȶɨӼ,
 ǟʀɢʊʍɛռȶ: string[],
-ӄʀʏȶɛӄ
+ӄ𝖗𝖞ӄ𝖓𝖟
 ): Promise<void> {
 try {
 const ʟɴᴀᴍᴇ = AʀƈȶɨӼ.sender;
@@ -130,7 +130,7 @@ AʀƈȶɨӼ,
 `💡𝐈𝐧𝐟𝐨: _Kicked @${քɛʀֆօռɢօȶռʊʍ} Outta Group!_`,
 "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png"
 );
-return await ӄʀʏȶɛӄ
+return await ӄ𝖗𝖞ӄ𝖓𝖟
 .groupRemove(AʀƈȶɨӼ.chatId, [PersonToRemove])
 .catch((error: any) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
 } else {
@@ -141,7 +141,7 @@ AʀƈȶɨӼ,
 `💡𝐈𝐧𝐟𝐨: _Kicked @${ᴘɴᴀᴍᴇ} Outta Group!_`,
 "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png"
 );
-return await ӄʀʏȶɛӄ
+return await ӄ𝖗𝖞ӄ𝖓𝖟
 .groupRemove(AʀƈȶɨӼ.chatId, [PersonToRemove])
 .catch((error: any) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
 }
@@ -185,7 +185,7 @@ AʀƈȶɨӼ,
 `💡𝐈𝐧𝐟𝐨: _Kicked @${քɛʀֆօռɢօȶռʊʍ} Outta the group!_`,
 "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png"
 );
-return await ӄʀʏȶɛӄ.groupRemove(AʀƈȶɨӼ.chatId, [
+return await ӄ𝖗𝖞ӄ𝖓𝖟.groupRemove(AʀƈȶɨӼ.chatId, [
 number + `@s.whatsapp.net`,
 ]);
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
@@ -197,7 +197,7 @@ AʀƈȶɨӼ,
 `💡𝐈𝐧𝐟𝐨: _@${ᴘɴᴀᴍᴇ} Kicked em Successfully!_`,
 "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png"
 );
-return await ӄʀʏȶɛӄ.groupRemove(AʀƈȶɨӼ.chatId, [
+return await ӄ𝖗𝖞ӄ𝖓𝖟.groupRemove(AʀƈȶɨӼ.chatId, [
 number + `@s.whatsapp.net`,
 ]);
 }
