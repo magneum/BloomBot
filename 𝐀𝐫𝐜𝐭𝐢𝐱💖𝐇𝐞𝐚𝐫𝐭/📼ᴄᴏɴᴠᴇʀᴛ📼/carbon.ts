@@ -29,7 +29,7 @@ TUF: Client,
 Fox: proto.IWebMessageInfo,
 AʀƈȶɨӼ: AʀƈȶɨӼ,
 ǟʀɢʊʍɛռȶ: string[],
-ӄʀʏȶɛӄ
+ӄ𝖗𝖞ӄ𝖓𝖟
 ): Promise<void> {
 try {
 const ʟɴᴀᴍᴇ = AʀƈȶɨӼ.sender;
@@ -175,7 +175,7 @@ const carbon = new Carbon.createCarbon()
 .setPrettify(true)
 .setTheme(AʀƈȶɨӼTInput);
 const output = await Carbon.generateCarbon(carbon);
-await ӄʀʏȶɛӄ.sendMessage(AʀƈȶɨӼ.chatId, {
+await ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(AʀƈȶɨӼ.chatId, {
 image: output,
 quoted: Fox,
 caption: `𝐂𝐚𝐫𝐛𝐨𝐧🍯𝐀𝐏𝐈
