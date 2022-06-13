@@ -19,7 +19,7 @@
 "fsevents": "*"
 },
 "scripts": {
-"𝐀𝐫𝐜𝐭𝐢𝐱": "clear && tsc && node --max-old-space-size=512 --no-warnings 𝐀𝐫𝐜𝐭𝐢𝐱📡𝐀𝐩𝐢®/кяутєк.js"
+"𝐀𝐫𝐜𝐭𝐢𝐱": "clear && tsc && node --no-warnings --max-old-space-size=512 𝐀𝐫𝐜𝐭𝐢𝐱📡𝐀𝐩𝐢®/кяутєк.js"
 },
 "dependencies": {
 "@adiwajshing/baileys": "^4.1.0",
