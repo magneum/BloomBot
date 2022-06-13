@@ -16,7 +16,6 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 (𝐜)𝐀𝐫𝐜𝐭𝐢𝐱 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 */
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
-const Image_Button_1 = __importDefault(require("../../\uD835\uDC00\uD835\uDC2B\uD835\uDC1C\uD835\uDC2D\uD835\uDC22\uD835\uDC31\u2618\uFE0F\uD835\uDC0A\uD835\uDC1E\uD835\uDC32\uD835\uDC2C/Image_Button"));
 const FoxNeeded_1 = __importDefault(require("../../\uD835\uDC00\uD835\uDC2B\uD835\uDC1C\uD835\uDC2D\uD835\uDC22\uD835\uDC31\u2618\uFE0F\uD835\uDC0A\uD835\uDC1E\uD835\uDC32\uD835\uDC2C/FoxNeeded"));
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 const UserPrivate = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/private`);
@@ -33,7 +32,6 @@ const Halt = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞�
 const Oops = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱☘️𝐊𝐞𝐲𝐬/Oops`);
 const ______1 = __importDefault(require("../../\uD835\uDC00\uD835\uDC2B\uD835\uDC1C\uD835\uDC2D\uD835\uDC22\uD835\uDC31\uD83C\uDC04\uD835\uDC15\uD835\uDC1E\uD835\uDC27\uD835\uDC2D/\u029F\u1D00\u028F\u1D0F\u1D1C\u1D1B"));
 const VOID = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/void`);
-const Zues_1 = __importDefault(require("../../\uD835\uDC00\uD835\uDC2B\uD835\uDC1C\uD835\uDC2D\uD835\uDC22\uD835\uDC31\u269C\uFE0F\uD835\uDC0A\uD835\uDC2B\uD835\uDC32\uD835\uDC28\uD835\uDC13\uD835\uDC1E\uD835\uDC24/Zues"));
 const path_1 = __importDefault(require("path"));
 var scriptName = path_1.default.basename(__filename);
 var dotScrpt = scriptName.slice(0, -3).toLowerCase();
@@ -57,68 +55,25 @@ module.exports = {
                 console.log("💡Is Bot Group Admin: " + AʀƈȶɨӼ.isBotGroupAdmin);
                 console.log("💡Is Sender Group Admin: " + AʀƈȶɨӼ.isSenderGroupAdmin);
                 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-                if (!AʀƈȶɨӼ.isGroup) {
-                    return Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `❌𝐃𝐞𝐧𝐢𝐞𝐝: _This Command is Only For Groups!_`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png");
-                }
-                //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-                if (AʀƈȶɨӼ.isGroup && !AʀƈȶɨӼ.isSenderGroupAdmin) {
-                    return Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `❌𝐃𝐞𝐧𝐢𝐞𝐝: _Admins/Dev Only.You Are Not Allowed!_`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png");
-                }
-                //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-                if (AʀƈȶɨӼ.isGroup && !AʀƈȶɨӼ.isBotGroupAdmin) {
-                    return Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `❌𝐃𝐞𝐧𝐢𝐞𝐝: _Bot Not Admin!_`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png");
-                }
-                //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-                if (!AʀƈȶɨӼ.isTextReply && typeof ǟʀɢʊʍɛռȶ[0] == "undefined") {
-                    return FoxNeeded_1.default.VFox(TUF, Fox, AʀƈȶɨӼ, `Option 1 - ${______1.default.MuveOn}${dotScrpt.toUpperCase()} _reply to person_
-Option 2 - ${______1.default.MuveOn}${dotScrpt.toUpperCase()} _tag person_`, dotScrpt);
-                }
-                //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-                const reply = Fox.message.extendedTextMessage;
-                if (AʀƈȶɨӼ.isTextReply) {
-                    var HOOM = reply.contextInfo.participant.split("@")[0];
+                if (AʀƈȶɨӼ.isReplyImage ||
+                    AʀƈȶɨӼ.isReplyGIF ||
+                    AʀƈȶɨӼ.isReplyVideo ||
+                    AʀƈȶɨӼ.isTextReply) {
+                    yield TUF.deleteMessage(AʀƈȶɨӼ.chatId, {
+                        id: AʀƈȶɨӼ.replyMessageId,
+                        remoteJid: AʀƈȶɨӼ.chatId,
+                        fromMe: true,
+                    }).catch((error) => {
+                        FoxNeeded_1.default.VFox(TUF, Fox, AʀƈȶɨӼ, `Option 1 - reply to message sent by bot with: ${______1.default.MuveOn}${dotScrpt.toUpperCase()}`, dotScrpt);
+                    });
                 }
                 else {
-                    var HOOM = yield Zues_1.default.getCleanedContact(ǟʀɢʊʍɛռȶ, TUF, AʀƈȶɨӼ);
+                    return FoxNeeded_1.default.VFox(TUF, Fox, AʀƈȶɨӼ, `Option 1 - reply to message sent by bot with: ${______1.default.MuveOn}${dotScrpt.toUpperCase()}`, dotScrpt);
                 }
                 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-                var admin = false;
-                var isMember = yield Zues_1.default.isMember(HOOM, AʀƈȶɨӼ.groupMembers);
-                var owner = false;
-                for (const index in AʀƈȶɨӼ.groupMembers) {
-                    if (HOOM == AʀƈȶɨӼ.groupMembers[index].id.split("@")[0]) {
-                        console.log(AʀƈȶɨӼ.groupMembers[index]);
-                        owner = AʀƈȶɨӼ.groupMembers[index].admin === "superadmin";
-                        admin = AʀƈȶɨӼ.groupMembers[index].admin != undefined;
-                    }
-                }
-                //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-                if (isMember) {
-                    if (!admin) {
-                        const arr = [HOOM + "@s.whatsapp.net"];
-                        yield ӄʀʏȶɛӄ.groupParticipantsUpdate(AʀƈȶɨӼ.chatId, arr, "promote");
-                        return Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `💡𝐈𝐧𝐟𝐨: _${HOOM}_ is promoted to admin!`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png");
-                    }
-                    else {
-                        return Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `❌𝐄𝐫𝐫𝐨𝐫: _${HOOM}_ is already an admin!`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png");
-                    }
-                }
-                //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-                if (!isMember) {
-                    if (HOOM === undefined) {
-                        return;
-                    }
-                    return Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `❌𝐄𝐫𝐫𝐨𝐫: Person is not in the group!`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png");
-                }
-                return;
             }
             catch (error) {
-                if (error === "NumberInvalid") {
-                    return Oops.VOp(TUF, Fox, AʀƈȶɨӼ, "❌𝐄𝐫𝐫𝐨𝐫: Invalid Number.");
-                }
-                else {
-                    return Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error);
-                }
+                return Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error);
             }
         });
     },

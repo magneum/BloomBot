@@ -52,11 +52,26 @@ await TUF.getGroupMetaData(AʀƈȶɨӼ.chatId, AʀƈȶɨӼ);
 console.log("💡Is Bot Group Admin: " + AʀƈȶɨӼ.isBotGroupAdmin);
 console.log("💡Is Sender Group Admin: " + AʀƈȶɨӼ.isSenderGroupAdmin);
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-if (AʀƈȶɨӼ.isReplyImage || AʀƈȶɨӼ.isReplyGIF || AʀƈȶɨӼ.isReplyVideo) {
+if (
+AʀƈȶɨӼ.isReplyImage ||
+AʀƈȶɨӼ.isReplyGIF ||
+AʀƈȶɨӼ.isReplyVideo ||
+AʀƈȶɨӼ.isTextReply
+) {
 await TUF.deleteMessage(AʀƈȶɨӼ.chatId, {
 id: AʀƈȶɨӼ.replyMessageId,
 remoteJid: AʀƈȶɨӼ.chatId,
 fromMe: true,
+}).catch((error) => {
+FoxNeeded.VFox(
+TUF,
+Fox,
+AʀƈȶɨӼ,
+`Option 1 - reply to message sent by bot with: ${
+ʟᴀʏᴏᴜᴛ.MuveOn
+}${dotScrpt.toUpperCase()}`,
+dotScrpt
+);
 });
 } else {
 return FoxNeeded.VFox(
@@ -69,7 +84,6 @@ AʀƈȶɨӼ,
 dotScrpt
 );
 }
-
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 } catch (error) {
 return Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error);

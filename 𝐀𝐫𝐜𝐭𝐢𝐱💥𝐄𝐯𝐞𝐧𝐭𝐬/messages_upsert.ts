@@ -38,7 +38,6 @@ if (update.type !== "notify") {
 return;
 }
 let Fox: proto.IWebMessageInfo = update.messages[0];
-update.isBaileys = update.key.id.startsWith('BAE5') || update.key.id.startsWith('3EB0')
 let AʀƈȶɨӼ: AʀƈȶɨӼ = await resolve(Fox, ӄʀʏȶɛӄ);
 let TUF: Client = new Client(ӄʀʏȶɛӄ);
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
