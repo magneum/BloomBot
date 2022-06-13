@@ -137,7 +137,7 @@ Option 2 - ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()} _tag person_`,
             TUF,
             Fox,
             AʀƈȶɨӼ,
-            `❌𝐄𝐫𝐫𝐨𝐫: _${HOOM}_ was not an admin`,
+            `❌𝐄𝐫𝐫𝐨𝐫: _${HOOM}_ is already an admin`,
             "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png"
           );
         }
