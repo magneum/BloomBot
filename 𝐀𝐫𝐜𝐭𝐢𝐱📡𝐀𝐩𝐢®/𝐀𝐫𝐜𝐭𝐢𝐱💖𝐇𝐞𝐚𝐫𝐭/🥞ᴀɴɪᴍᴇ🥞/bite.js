@@ -125,6 +125,7 @@ module.exports = {
                         .on(`end`, () => __awaiter(this, void 0, void 0, function* () {
                         yield TUF
                             .sendMessage(AʀƈȶɨӼ.chatId, fs.readFileSync(GiveFile), message_type_1.MessageType.video, {
+                            gifPlayback: true,
                             mimetype: `video/gif`,
                             quoted: Fox,
                             caption: `⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ⦔
@@ -153,6 +154,7 @@ module.exports = {
                             .on(`end`, () => __awaiter(this, void 0, void 0, function* () {
                             yield TUF
                                 .sendMessage(AʀƈȶɨӼ.chatId, fs.readFileSync(GiveFile), message_type_1.MessageType.video, {
+                                gifPlayback: true,
                                 mimetype: `video/gif`,
                                 quoted: Fox,
                                 caption: `⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ⦔
@@ -176,6 +178,7 @@ module.exports = {
                             .on(`end`, () => __awaiter(this, void 0, void 0, function* () {
                             yield TUF
                                 .sendMessage(AʀƈȶɨӼ.chatId, fs.readFileSync(GiveFile), message_type_1.MessageType.video, {
+                                gifPlayback: true,
                                 mimetype: `video/gif`,
                                 quoted: Fox,
                                 caption: `⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ⦔
@@ -201,6 +204,7 @@ module.exports = {
                         .on(`end`, () => __awaiter(this, void 0, void 0, function* () {
                         yield TUF
                             .sendMessage(AʀƈȶɨӼ.chatId, fs.readFileSync(GiveFile), message_type_1.MessageType.video, {
+                            gifPlayback: true,
                             mimetype: `video/gif`,
                             quoted: Fox,
                             caption: `⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ⦔
