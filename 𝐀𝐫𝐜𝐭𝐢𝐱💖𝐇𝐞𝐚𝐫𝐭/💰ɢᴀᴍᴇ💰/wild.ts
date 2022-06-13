@@ -793,7 +793,7 @@ PermanentLimitTime: 21600000,
 });
 await newPokeUser
 .save()
-.catch((error) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
+.catch((error: any) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
 return await Image_Button.VImg(
 TUF,
 Fox,
@@ -823,7 +823,7 @@ worktimeout: 900000,
 });
 await newUser
 .save()
-.catch((error) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
+.catch((error: any) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
 return await Image_Button.VImg(
 TUF,
 Fox,
@@ -846,7 +846,7 @@ let res: any = await fetch(
 global.API(`https://some-random-api.ml`, `/pokedex`, {
 pokemon: BasePoke.toLowerCase(),
 })
-).catch((error) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
+).catch((error: any) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
 PokemonData = await res.json();
 } catch {
 return Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error);
@@ -899,20 +899,20 @@ AʀƈȶɨӼ,
 );
 await userEco
 .save()
-.catch((error) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
+.catch((error: any) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
 await userHunt
 .save()
-.catch((error) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
+.catch((error: any) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
 return;
 }
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 userEco.money = userEco.money + Worth;
 await userEco
 .save()
-.catch((error) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
+.catch((error: any) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
 await userHunt
 .save()
-.catch((error) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
+.catch((error: any) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 require("child_process").exec(
 `ffmpeg -i "${PokemonData.sprites.animated}" -pix_fmt yuv420p -c:v libx264 -movflags +faststart -filter:v crop='floor(in_w/2)*2:floor(in_h/2)*2' "./𝐀𝐫𝐜𝐭𝐢𝐱🐞𝐁𝐞𝐞𝐭𝐥𝐞/${Fox.key.id}.mp4"`,
@@ -934,10 +934,14 @@ AʀƈȶɨӼ,
 );
 await userEco
 .save()
-.catch((error) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
+.catch((error: any) =>
+Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error)
+);
 await userHunt
 .save()
-.catch((error) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
+.catch((error: any) =>
+Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error)
+);
 return;
 }
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
