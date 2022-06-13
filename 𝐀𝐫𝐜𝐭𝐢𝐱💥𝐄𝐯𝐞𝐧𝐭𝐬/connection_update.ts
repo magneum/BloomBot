@@ -38,6 +38,38 @@ chalkAnimation.karaoke("💡𝐈𝐧𝐟𝐨꧂  Connecting to WhatsApp...");
 console.log(Kolor.yellowBright(""));
 } else if (connection === "open") {
 chalkAnimation.rainbow("💡𝐈𝐧𝐟𝐨꧂  Connected! Welcome to AʀƈȶɨӼ");
+chalkAnimation.rainbow(`AʀƈȶɨӼ {
+chatId: '919800919000@s.whatsapp.net',
+fromMe: true,
+owner: '918436686758@s.whatsapp.net',
+mimeType: 'conversation',
+type: 'text',
+isTextReply: false,
+replyMessageId: undefined,
+replyParticipant: undefined,
+replyMessage: undefined,
+body: '.',
+isCmd: false,
+commandName: null,
+isImage: false,
+isReplyImage: false,
+imageCaption: null,
+isGIF: false,
+isReplyGIF: false,
+isSticker: false,
+isReplySticker: false,
+isReplyAnimatedSticker: undefined,
+isVideo: false,
+isReplyVideo: false,
+isAudio: false,
+isReplyAudio: false,
+logGroup: '918436686758@s.whatsapp.net',
+isGroup: false,
+isPm: true,
+sender: '919800919000@s.whatsapp.net',
+isSenderTUFs: false
+}
+`);
 } else {
 console.log("connection update", update);
 }
