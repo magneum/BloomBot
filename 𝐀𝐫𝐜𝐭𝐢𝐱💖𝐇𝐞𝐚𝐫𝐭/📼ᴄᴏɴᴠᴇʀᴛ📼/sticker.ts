@@ -7,7 +7,7 @@ import { MessageType } from "../../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲�
 import Image_Button from "../../𝐀𝐫𝐜𝐭𝐢𝐱☘️𝐊𝐞𝐲𝐬/Image_Button";
 import Video_Button from "../../𝐀𝐫𝐜𝐭𝐢𝐱☘️𝐊𝐞𝐲𝐬/Video_Button";
 import Text_List from "../../𝐀𝐫𝐜𝐭𝐢𝐱☘️𝐊𝐞𝐲𝐬/Text_List";
-import FoxNeeded from "../../𝐀𝐫𝐜𝐭𝐢𝐱☘️𝐊𝐞𝐲𝐬/FoxNeeded"
+import FoxNeeded from "../../𝐀𝐫𝐜𝐭𝐢𝐱☘️𝐊𝐞𝐲𝐬/FoxNeeded";
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 const Oops = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱☘️𝐊𝐞𝐲𝐬/Oops`);
 const ToSticker = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱🀄𝐕𝐞𝐧𝐭/ToSticker`);
@@ -85,24 +85,11 @@ FileSocketObject
 );
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 } else {
-await TUF.sendMessage(
-AʀƈȶɨӼ.chatId,
-{
-text: `✥𝐔𝐬𝐞𝐫: ${Fox.pushName} 
-
-Press Below To Read How To Use This Command!`,
-footer: "⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ⦔",
-title: `🔸𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()}`,
-buttonText: "❝ How To Use? ❞",
-sections: [
-{
-title: "𝐀𝐑𝐆𝐔𝐌𝐄𝐍𝐓 𝐍𝐄𝐄𝐃𝐄𝐃!",
-rows: [
-{
-title: "⚡𝐔𝐬𝐚𝐠𝐞",
-rowId: "argument required...",
-description: `💡𝐈𝐧𝐟𝐨: In order to use this command, you must follow below instructions:
-Option 1 - reply to media: ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()}
+return FoxNeeded.VFox(
+TUF,
+Fox,
+AʀƈȶɨӼ,
+`Option 1 - reply to media: ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()}
 Option 2 - reply to media: ${
 ʟᴀʏᴏᴜᴛ.MuveOn
 }${dotScrpt.toUpperCase()} _<sticker title>_
@@ -114,34 +101,16 @@ Option 2 - reply to media: ${
 ║- JPEG
 ║- WEBP
 ╚════════════╝`,
-},
-],
-},
-],
-},
-MessageType.buttonsMessage
+dotScrpt
 );
 }
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 } catch (error) {
-await TUF.sendMessage(
-AʀƈȶɨӼ.chatId,
-{
-text: `✥𝐔𝐬𝐞𝐫: ${Fox.pushName} 
-
-Press Below To Read How To Use This Command!`,
-footer: "⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ⦔",
-title: `🔸𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()}`,
-buttonText: "❝ How To Use? ❞",
-sections: [
-{
-title: "𝐀𝐑𝐆𝐔𝐌𝐄𝐍𝐓 𝐍𝐄𝐄𝐃𝐄𝐃!",
-rows: [
-{
-title: "⚡𝐔𝐬𝐚𝐠𝐞",
-rowId: "argument required...",
-description: `💡𝐈𝐧𝐟𝐨: In order to use this command, you must follow below instructions:
-Option 1 - reply to media: ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()}
+return FoxNeeded.VFox(
+TUF,
+Fox,
+AʀƈȶɨӼ,
+`Option 1 - reply to media: ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()}
 Option 2 - reply to media: ${
 ʟᴀʏᴏᴜᴛ.MuveOn
 }${dotScrpt.toUpperCase()} _<sticker title>_
@@ -153,12 +122,7 @@ Option 2 - reply to media: ${
 ║- JPEG
 ║- WEBP
 ╚════════════╝`,
-},
-],
-},
-],
-},
-MessageType.buttonsMessage
+dotScrpt
 );
 }
 },
