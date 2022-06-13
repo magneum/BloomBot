@@ -107,7 +107,7 @@ var TagPerson = ǟʀɢʊʍɛռȶ[0].replace(/[^0-9]/g, "");
 var TagMention = TagPerson + "@s.whatsapp.net";
 FFmpeg(Fresh_File)
 .outputOptions([
-`-pix_fmt yuv420p`,
+"-pix_fmt yuv420p",
 `-c:v libx264`,
 `-movflags +faststart`,
 `-filter:v crop='floor(in_w/2)*2:floor(in_h/2)*2'`,
@@ -139,7 +139,7 @@ var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
 if (Receiver === ʟɴᴀᴍᴇ) {
 FFmpeg(Fresh_File)
 .outputOptions([
-`-pix_fmt yuv420p`,
+"-pix_fmt yuv420p",
 `-c:v libx264`,
 `-movflags +faststart`,
 `-filter:v crop='floor(in_w/2)*2:floor(in_h/2)*2'`,
@@ -166,7 +166,7 @@ return await VOID.VOID(Composed_File, Fresh_File);
 } else {
 FFmpeg(Fresh_File)
 .outputOptions([
-`-pix_fmt yuv420p`,
+"-pix_fmt yuv420p",
 `-c:v libx264`,
 `-movflags +faststart`,
 `-filter:v crop='floor(in_w/2)*2:floor(in_h/2)*2'`,
@@ -196,7 +196,7 @@ return await VOID.VOID(Composed_File, Fresh_File);
 await ӄ𝖗𝖞ӄ𝖓𝖟.sendPresenceUpdate("composing", AʀƈȶɨӼ.chatId);
 FFmpeg(Fresh_File)
 .outputOptions([
-`-pix_fmt yuv420p`,
+"-pix_fmt yuv420p",
 `-c:v libx264`,
 `-movflags +faststart`,
 `-filter:v crop='floor(in_w/2)*2:floor(in_h/2)*2'`,
