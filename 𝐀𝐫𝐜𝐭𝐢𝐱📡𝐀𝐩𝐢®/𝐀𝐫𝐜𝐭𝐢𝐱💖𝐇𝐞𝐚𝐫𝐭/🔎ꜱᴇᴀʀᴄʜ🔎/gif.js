@@ -33,7 +33,7 @@ var dotScrpt = scriptName.slice(0, -3).toLowerCase();
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 module.exports = {
     name: dotScrpt,
-    handle(TUF, Fox, AʀƈȶɨӼ, ǟʀɢʊʍɛռȶ, ӄʀʏȶɛӄ) {
+    handle(TUF, Fox, AʀƈȶɨӼ, ǟʀɢʊʍɛռȶ, ӄ𝖗𝖞ӄ𝖓𝖟) {
         return __awaiter(this, void 0, void 0, function* () {
             try {
                 const ʟɴᴀᴍᴇ = AʀƈȶɨӼ.sender;
@@ -78,7 +78,7 @@ module.exports = {
                 const TINYWEBM = json.results[Math.floor(Math.random() * json.results.length)].media[0]
                     .tinywebm.url;
                 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-                yield ӄʀʏȶɛӄ.sendMessage(AʀƈȶɨӼ.chatId, { url: MP4 }, message_type_1.MessageType.video, {
+                yield ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(AʀƈȶɨӼ.chatId, { url: MP4 }, message_type_1.MessageType.video, {
                     mimetype: "video/gif",
                     caption: `🍯 𝐒𝐞𝐚𝐫𝐜𝐡𝐞𝐝: ${ǟʀɢʊʍɛռȶ.join(" ")}`,
                 });

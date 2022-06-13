@@ -33,7 +33,7 @@ var dotScrpt = scriptName.slice(0, -3).toLowerCase();
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 module.exports = {
     name: dotScrpt,
-    handle(TUF, Fox, AʀƈȶɨӼ, ǟʀɢʊʍɛռȶ, ӄʀʏȶɛӄ) {
+    handle(TUF, Fox, AʀƈȶɨӼ, ǟʀɢʊʍɛռȶ, ӄ𝖗𝖞ӄ𝖓𝖟) {
         return __awaiter(this, void 0, void 0, function* () {
             try {
                 const ʟɴᴀᴍᴇ = AʀƈȶɨӼ.sender;
@@ -161,7 +161,7 @@ Option 2 - ${______1.default.MuveOn}${dotScrpt.toUpperCase()} _text -t theme-nam
                     .setPrettify(true)
                     .setTheme(AʀƈȶɨӼTInput);
                 const output = yield Carbon.generateCarbon(carbon);
-                yield ӄʀʏȶɛӄ.sendMessage(AʀƈȶɨӼ.chatId, {
+                yield ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(AʀƈȶɨӼ.chatId, {
                     image: output,
                     quoted: Fox,
                     caption: `𝐂𝐚𝐫𝐛𝐨𝐧🍯𝐀𝐏𝐈

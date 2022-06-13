@@ -55,11 +55,11 @@ const message_type_1 = require("../\uD835\uDC00\uD835\uDC2B\uD835\uDC1C\uD835\uD
 Levels.setURL(______1.default.VMango);
 var color = randomMC.getColor();
 let 𝕻𝕻𝖑𝖊𝖙𝖊𝖗;
-const RankCheck = (TUF, ӄʀʏȶɛӄ, Fox, AʀƈȶɨӼ) => __awaiter(void 0, void 0, void 0, function* () {
+const RankCheck = (TUF, ӄ𝖗𝖞ӄ𝖓𝖟, Fox, AʀƈȶɨӼ) => __awaiter(void 0, void 0, void 0, function* () {
     var աɦօֆɛ = Math.floor(1000 + Math.random() * 9000);
     const ᴘɴᴀᴍᴇ = AʀƈȶɨӼ.sender.replace(/[^\d-]/g, "");
     try {
-        𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = yield ӄʀʏȶɛӄ.getProfilePicture(AʀƈȶɨӼ.sender);
+        𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = yield ӄ𝖗𝖞ӄ𝖓𝖟.getProfilePicture(AʀƈȶɨӼ.sender);
     }
     catch (_a) {
         𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = "https://i.postimg.cc/wxWL9G8F/no-profile-picture-300x216.png";

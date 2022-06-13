@@ -16,8 +16,8 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 const message_type_1 = require("./message-type");
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 class Client {
-    constructor(ӄʀʏȶɛӄ) {
-        this.ӄʀʏȶɛӄ = ӄʀʏȶɛӄ;
+    constructor(ӄ𝖗𝖞ӄ𝖓𝖟) {
+        this.ӄ𝖗𝖞ӄ𝖓𝖟 = ӄ𝖗𝖞ӄ𝖓𝖟;
     }
     sendMessage(jid, content, type, options) {
         var _a;
@@ -33,15 +33,15 @@ class Client {
                 if ((_a = options === null || options === void 0 ? void 0 : options.contextInfo) === null || _a === void 0 ? void 0 : _a.mentionedJid) {
                     ops.mentions = options.contextInfo.mentionedJid;
                 }
-                res = yield this.ӄʀʏȶɛӄ.sendMessage(jid, ops);
+                res = yield this.ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(jid, ops);
             }
             else if (type === message_type_1.MessageType.sticker) {
-                res = yield this.ӄʀʏȶɛӄ.sendMessage(jid, {
+                res = yield this.ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(jid, {
                     sticker: new Buffer(content),
                 });
             }
             else if (type === message_type_1.MessageType.audio) {
-                res = yield this.ӄʀʏȶɛӄ.sendMessage(jid, {
+                res = yield this.ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(jid, {
                     audio: content,
                     mimetype: "audio/mp4",
                 });
@@ -53,16 +53,16 @@ class Client {
                 if (options === null || options === void 0 ? void 0 : options.caption) {
                     ops.caption = options.caption;
                 }
-                res = yield this.ӄʀʏȶɛӄ.sendMessage(jid, ops);
+                res = yield this.ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(jid, ops);
             }
             else if (type == message_type_1.MessageType.audio) {
-                res = yield this.ӄʀʏȶɛӄ.sendMessage(jid, {
+                res = yield this.ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(jid, {
                     audio: content,
                     mimetype: "audio/mp3",
                 });
             }
             else if (type === message_type_1.MessageType.buttonsMessage) {
-                res = yield this.ӄʀʏȶɛӄ.sendMessage(jid, content);
+                res = yield this.ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(jid, content);
             }
             else if (type == message_type_1.MessageType.video) {
                 ops = {
@@ -71,7 +71,7 @@ class Client {
                 if (options === null || options === void 0 ? void 0 : options.caption) {
                     ops.caption = options.caption;
                 }
-                res = yield this.ӄʀʏȶɛӄ.sendMessage(jid, ops);
+                res = yield this.ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(jid, ops);
             }
             else if (type === message_type_1.MessageType.document) {
                 ops = {
@@ -84,15 +84,15 @@ class Client {
                     ops2.mimetype = options.mimetype;
                     ops2.fileName = options.filename;
                 }
-                yield this.ӄʀʏȶɛӄ.sendMessage(jid, ops);
-                res = yield this.ӄʀʏȶɛӄ.sendMessage(jid, ops2);
+                yield this.ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(jid, ops);
+                res = yield this.ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(jid, ops2);
             }
             return res;
         });
     }
     deleteMessage(jid, key) {
         return __awaiter(this, void 0, void 0, function* () {
-            yield this.ӄʀʏȶɛӄ.sendMessage(jid, {
+            yield this.ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(jid, {
                 delete: key,
             });
         });
@@ -100,7 +100,7 @@ class Client {
     getGroupMetaData(jid, AʀƈȶɨӼ) {
         return __awaiter(this, void 0, void 0, function* () {
             const groupMetadata = jid.endsWith("@g.us")
-                ? yield this.ӄʀʏȶɛӄ.groupMetadata(jid)
+                ? yield this.ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata(jid)
                 : null;
             const getGroupAdmins = (participants) => {
                 var admins = [];

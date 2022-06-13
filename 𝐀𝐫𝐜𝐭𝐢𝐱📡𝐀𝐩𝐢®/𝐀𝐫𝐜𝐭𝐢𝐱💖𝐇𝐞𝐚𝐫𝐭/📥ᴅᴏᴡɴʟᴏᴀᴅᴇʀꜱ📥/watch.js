@@ -62,7 +62,7 @@ var dotScrpt = scriptName.slice(0, -3).toLowerCase();
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 module.exports = {
     name: dotScrpt,
-    handle(TUF, Fox, AʀƈȶɨӼ, ǟʀɢʊʍɛռȶ, ӄʀʏȶɛӄ) {
+    handle(TUF, Fox, AʀƈȶɨӼ, ǟʀɢʊʍɛռȶ, ӄ𝖗𝖞ӄ𝖓𝖟) {
         return __awaiter(this, void 0, void 0, function* () {
             try {
                 const ʟɴᴀᴍᴇ = AʀƈȶɨӼ.sender;
@@ -170,7 +170,7 @@ Option 2 - ${______1.default.MuveOn}${dotScrpt.toUpperCase()} _youtube link_`,
                             .toFormat("mp4")
                             .saveToFile(`./𝐀𝐫𝐜𝐭𝐢𝐱🐞𝐁𝐞𝐞𝐭𝐥𝐞/${Fox.key.id}.mp4`)
                             .on("end", () => __awaiter(this, void 0, void 0, function* () {
-                            yield ӄʀʏȶɛӄ.sendPresenceUpdate("composing", AʀƈȶɨӼ.chatId);
+                            yield ӄ𝖗𝖞ӄ𝖓𝖟.sendPresenceUpdate("composing", AʀƈȶɨӼ.chatId);
                             yield TUF
                                 .sendMessage(AʀƈȶɨӼ.chatId, {
                                 quoted: Fox.message,
@@ -207,7 +207,7 @@ Option 2 - ${______1.default.MuveOn}${dotScrpt.toUpperCase()} _youtube link_`,
                             }, message_type_1.MessageType.buttonsMessage)
                                 .then(VOID.VOID(`./𝐀𝐫𝐜𝐭𝐢𝐱🐞𝐁𝐞𝐞𝐭𝐥𝐞/${Fox.key.id}.mp4`))
                                 .catch((error) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
-                            yield ӄʀʏȶɛӄ.sendPresenceUpdate("available", AʀƈȶɨӼ.chatId);
+                            yield ӄ𝖗𝖞ӄ𝖓𝖟.sendPresenceUpdate("available", AʀƈȶɨӼ.chatId);
                             return;
                         }));
                     });

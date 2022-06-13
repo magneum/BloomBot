@@ -63,7 +63,7 @@ var dotScrpt = scriptName.slice(0, -3).toLowerCase();
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 module.exports = {
     name: dotScrpt,
-    handle(TUF, Fox, AʀƈȶɨӼ, ǟʀɢʊʍɛռȶ, ӄʀʏȶɛӄ) {
+    handle(TUF, Fox, AʀƈȶɨӼ, ǟʀɢʊʍɛռȶ, ӄ𝖗𝖞ӄ𝖓𝖟) {
         return __awaiter(this, void 0, void 0, function* () {
             const ʟɴᴀᴍᴇ = AʀƈȶɨӼ.sender;
             const ᴅꜰɴᴀᴍᴇ = AʀƈȶɨӼ.commandName;
@@ -171,7 +171,7 @@ Option 2 - ${______1.default.MuveOn}${dotScrpt.toUpperCase()} _youtube link_`,
                         .toFormat("ipod")
                         .saveToFile(`./𝐀𝐫𝐜𝐭𝐢𝐱🐞𝐁𝐞𝐞𝐭𝐥𝐞/${Fox.key.id}.mp3`)
                         .on("end", () => __awaiter(this, void 0, void 0, function* () {
-                        yield ӄʀʏȶɛӄ.sendPresenceUpdate("recording", AʀƈȶɨӼ.chatId);
+                        yield ӄ𝖗𝖞ӄ𝖓𝖟.sendPresenceUpdate("recording", AʀƈȶɨӼ.chatId);
                         yield Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `𝐘𝐨𝐮𝐓𝐮𝐛𝐞⭕️𝐌𝐮𝐬𝐢𝐜
 
 🍻𝗧𝗶𝘁𝗹𝗲: ${Found.title}
@@ -186,7 +186,7 @@ Option 2 - ${______1.default.MuveOn}${dotScrpt.toUpperCase()} _youtube link_`,
                             .sendMessage(AʀƈȶɨӼ.chatId, fs.readFileSync(`./𝐀𝐫𝐜𝐭𝐢𝐱🐞𝐁𝐞𝐞𝐭𝐥𝐞/${Fox.key.id}.mp3`), message_type_1.MessageType.audio)
                             .then(VOID.VOID(`./𝐀𝐫𝐜𝐭𝐢𝐱🐞𝐁𝐞𝐞𝐭𝐥𝐞/${Fox.key.id}.mp3`))
                             .catch((error) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
-                        yield ӄʀʏȶɛӄ.sendPresenceUpdate("available", AʀƈȶɨӼ.chatId);
+                        yield ӄ𝖗𝖞ӄ𝖓𝖟.sendPresenceUpdate("available", AʀƈȶɨӼ.chatId);
                         return;
                     }));
                 });

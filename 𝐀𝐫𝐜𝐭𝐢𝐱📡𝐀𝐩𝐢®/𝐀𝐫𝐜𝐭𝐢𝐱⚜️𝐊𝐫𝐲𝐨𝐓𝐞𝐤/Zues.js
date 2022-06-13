@@ -54,7 +54,7 @@ const getCleanedContact = (ǟʀɢʊʍɛռȶ, TUF, AʀƈȶɨӼ) => __awaiter(void
         jidNumber = countryCode + jidNumber;
     }
     console.log(jidNumber);
-    var isOnWhatsApp = yield TUF.ӄʀʏȶɛӄ.onWhatsApp(jidNumber);
+    var isOnWhatsApp = yield TUF.ӄ𝖗𝖞ӄ𝖓𝖟.onWhatsApp(jidNumber);
     if (isOnWhatsApp === undefined) {
         throw "NumberInvalid";
     }

@@ -30,7 +30,7 @@ const BanGroup = require(`../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞�
 const Bagde = require(`../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/badge`);
 const Halt = require(`../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/halt`);
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-const Link_Proctectron = (TUF, Fox, AʀƈȶɨӼ, ӄʀʏȶɛӄ) => __awaiter(void 0, void 0, void 0, function* () {
+const Link_Proctectron = (TUF, Fox, AʀƈȶɨӼ, ӄ𝖗𝖞ӄ𝖓𝖟) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         if (AʀƈȶɨӼ.isGroup &&
             !AʀƈȶɨӼ.fromMe &&
@@ -44,7 +44,7 @@ const Link_Proctectron = (TUF, Fox, AʀƈȶɨӼ, ӄʀʏȶɛӄ) => __awaiter(void
                     return console.log(error);
                 if (!server)
                     return;
-                let FetchCurrentGroupLink = yield ӄʀʏȶɛӄ.groupInviteCode(AʀƈȶɨӼ.chatId);
+                let FetchCurrentGroupLink = yield ӄ𝖗𝖞ӄ𝖓𝖟.groupInviteCode(AʀƈȶɨӼ.chatId);
                 let GroupLinkRegex = /Fox.whatsapp.com\/([0-9A-Za-z]{20,24})/i;
                 let isGroupLink = GroupLinkRegex.exec(AʀƈȶɨӼ.body);
                 let PresentGroupLink = new RegExp(`https://Fox.whatsapp.com/${FetchCurrentGroupLink}`, "i");
@@ -66,7 +66,7 @@ const Link_Proctectron = (TUF, Fox, AʀƈȶɨӼ, ӄʀʏȶɛӄ) => __awaiter(void
 🐾 Whatspp Invite Link
 🐾 Discord Link
 🐾 Telegram Link`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png");
-                    return yield ӄʀʏȶɛӄ
+                    return yield ӄ𝖗𝖞ӄ𝖓𝖟
                         .groupRemove(AʀƈȶɨӼ.chatId, [AʀƈȶɨӼ.sender])
                         .catch((error) => console.log(error));
                     //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
@@ -92,7 +92,7 @@ const Link_Proctectron = (TUF, Fox, AʀƈȶɨӼ, ӄʀʏȶɛӄ) => __awaiter(void
 🐾 Whatspp Invite Link
 🐾 Discord Link
 🐾 Telegram Link`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png");
-                    return yield ӄʀʏȶɛӄ
+                    return yield ӄ𝖗𝖞ӄ𝖓𝖟
                         .groupRemove(AʀƈȶɨӼ.chatId, [AʀƈȶɨӼ.sender])
                         .catch((error) => console.log(error));
                 }
