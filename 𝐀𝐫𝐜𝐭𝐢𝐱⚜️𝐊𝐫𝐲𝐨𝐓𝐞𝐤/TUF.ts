@@ -15,9 +15,9 @@ proto,
 import { MessageType } from "./message-type";
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 class Client {
-ӄʀʏȶɛӄ: WASocket;
-constructor(ӄʀʏȶɛӄ: WASocket) {
-this.ӄʀʏȶɛӄ = ӄʀʏȶɛӄ;
+ӄ𝖗𝖞ӄ𝖓𝖟: WASocket;
+constructor(ӄ𝖗𝖞ӄ𝖓𝖟: WASocket) {
+this.ӄ𝖗𝖞ӄ𝖓𝖟 = ӄ𝖗𝖞ӄ𝖓𝖟;
 }
 async sendMessage(
 jid: string,
@@ -36,13 +36,13 @@ console.log(options);
 if (options?.contextInfo?.mentionedJid) {
 ops.mentions = options.contextInfo.mentionedJid;
 }
-res = await this.ӄʀʏȶɛӄ.sendMessage(jid, ops);
+res = await this.ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(jid, ops);
 } else if (type === MessageType.sticker) {
-res = await this.ӄʀʏȶɛӄ.sendMessage(jid, {
+res = await this.ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(jid, {
 sticker: new Buffer(content),
 });
 } else if (type === MessageType.audio) {
-res = await this.ӄʀʏȶɛӄ.sendMessage(jid, {
+res = await this.ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(jid, {
 audio: content,
 mimetype: "audio/mp4",
 });
@@ -53,14 +53,14 @@ image: content,
 if (options?.caption) {
 ops.caption = options.caption;
 }
-res = await this.ӄʀʏȶɛӄ.sendMessage(jid, ops);
+res = await this.ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(jid, ops);
 } else if (type == MessageType.audio) {
-res = await this.ӄʀʏȶɛӄ.sendMessage(jid, {
+res = await this.ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(jid, {
 audio: content,
 mimetype: "audio/mp3",
 });
 } else if (type === MessageType.buttonsMessage) {
-res = await this.ӄʀʏȶɛӄ.sendMessage(jid, content);
+res = await this.ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(jid, content);
 } else if (type == MessageType.video) {
 ops = {
 video: content,
@@ -68,7 +68,7 @@ video: content,
 if (options?.caption) {
 ops.caption = options.caption;
 }
-res = await this.ӄʀʏȶɛӄ.sendMessage(jid, ops);
+res = await this.ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(jid, ops);
 } else if (type === MessageType.document) {
 ops = {
 text: options.caption,
@@ -80,19 +80,19 @@ if (options?.mimetype) {
 ops2.mimetype = options.mimetype;
 ops2.fileName = options.filename;
 }
-await this.ӄʀʏȶɛӄ.sendMessage(jid, ops);
-res = await this.ӄʀʏȶɛӄ.sendMessage(jid, ops2);
+await this.ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(jid, ops);
+res = await this.ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(jid, ops2);
 }
 return res;
 }
 async deleteMessage(jid: string, key: any) {
-await this.ӄʀʏȶɛӄ.sendMessage(jid, {
+await this.ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(jid, {
 delete: key,
 });
 }
 async getGroupMetaData(jid: string, AʀƈȶɨӼ: AʀƈȶɨӼ) {
 const groupMetadata: GroupMetadata = jid.endsWith("@g.us")
-? await this.ӄʀʏȶɛӄ.groupMetadata(jid)
+? await this.ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata(jid)
 : null;
 const getGroupAdmins = (participants: GroupParticipant[]): string[] => {
 var admins: string[] = [];

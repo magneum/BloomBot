@@ -46,7 +46,7 @@ return undefined;
 jidNumber = countryCode + jidNumber;
 }
 console.log(jidNumber);
-var isOnWhatsApp = await TUF.ӄʀʏȶɛӄ.onWhatsApp(jidNumber);
+var isOnWhatsApp = await TUF.ӄ𝖗𝖞ӄ𝖓𝖟.onWhatsApp(jidNumber);
 if (isOnWhatsApp === undefined) {
 throw "NumberInvalid";
 }
