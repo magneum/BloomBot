@@ -51,7 +51,7 @@ MessageType.buttonsMessage,
 {
 quoted: Fox,
 timestamp: Date(),
-contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
+contextInfo: { mentionedJid: [AʀƈȶɨӼ.sender] },
 }
 );
 } catch (error) {

@@ -46,7 +46,12 @@ phoneNumber: "100",
 },
 ],
 },
-MessageType.buttonsMessage
+MessageType.buttonsMessage,
+{
+quoted: Fox,
+timestamp: Date(),
+contextInfo: { mentionedJid: [AʀƈȶɨӼ.sender] },
+}
 );
 } catch (error) {
 console.log(error);
