@@ -17,8 +17,7 @@ AʀƈȶɨӼ.chatId,
 quoted: Fox,
 timestamp: Date(),
 contextInfo: { mentionedJid: [AʀƈȶɨӼ.sender] },
-text: `
-╔═⟢  𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®
+text: `╔═⟢  𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®
 ║ *ᴛᴀɢ:* _@${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}_
 ║ *ɴᴀᴍᴇ:* _${Fox.pushName}_
 ║ *ᴄᴏᴍᴍᴀɴᴅ:* _${AʀƈȶɨӼ.commandName}_
