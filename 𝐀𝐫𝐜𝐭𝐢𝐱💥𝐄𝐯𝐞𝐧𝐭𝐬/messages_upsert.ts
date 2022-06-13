@@ -49,7 +49,7 @@ Kolor.blueBright.bold(
 )
 );
 const command = commandHandler.get(AʀƈȶɨӼ.commandName);
-console.log(command.category 💡𝐈𝐧𝐟𝐨: ${AʀƈȶɨӼ.commandName.toUpperCase()} command executed.);
+console.log(`💡𝐈𝐧𝐟𝐨: ${command.category} command Category.`);
 var ǟʀɢʊʍɛռȶ = AʀƈȶɨӼ.body.trim().split(/\s+/).slice(1);
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 await Silent.VSln(TUF, Fox, AʀƈȶɨӼ, ӄʀʏȶɛӄ);
