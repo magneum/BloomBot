@@ -35,14 +35,15 @@ const Video_Button = (TUF, Fox, AʀƈȶɨӼ, media, caption) => __awaiter(void 0
         }
         //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
         yield TUF.sendMessage(AʀƈȶɨӼ.chatId, {
-            quoted: Fox.message,
-            contextInfo: {
-                mentionedJid: [AʀƈȶɨӼ.sender],
-            },
+            quoted: Fox,
             timestamp: Date(),
+            contextInfo: { mentionedJid: [AʀƈȶɨӼ.sender] },
             video: { url: media },
             mimetype: "video/mp4",
-            caption: `|❝ 𝐔𝐬𝐞𝐫: ${Fox.pushName} ❞|
+            caption: `╔◇  𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®
+║ *ƬΛG:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
+║ *ПΛMΣ:* ${Fox.pushName}
+╚◇══════════════◇
 
 ${caption}`,
             footer: `⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ${Personality} ⦔`,
@@ -59,11 +60,7 @@ ${caption}`,
                 },
             ],
             headerType: 5,
-        }, message_type_1.MessageType.buttonsMessage, {
-            quoted: Fox,
-            timestamp: Date(),
-            contextInfo: { mentionedJid: [AʀƈȶɨӼ.sender] },
-        });
+        }, message_type_1.MessageType.buttonsMessage);
     }
     catch (error) {
         console.log(error);

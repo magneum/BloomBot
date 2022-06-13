@@ -26,6 +26,9 @@ AʀƈȶɨӼ: AʀƈȶɨӼ,
 await TUF.sendMessage(
 AʀƈȶɨӼ.chatId,
 {
+quoted: Fox,
+timestamp: Date(),
+contextInfo: { mentionedJid: [AʀƈȶɨӼ.sender] },
 image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png" },
 caption: `╔◇  𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®
 ║ *ƬΛG:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g,"")}
@@ -56,12 +59,7 @@ type: 1,
 ],
 headerType: 4,
 },
-MessageType.buttonsMessage,
-{
-quoted: Fox,
-timestamp: Date(),
-contextInfo: { mentionedJid: [AʀƈȶɨӼ.sender] },
-}
+MessageType.buttonsMessage
 );
 },
 };

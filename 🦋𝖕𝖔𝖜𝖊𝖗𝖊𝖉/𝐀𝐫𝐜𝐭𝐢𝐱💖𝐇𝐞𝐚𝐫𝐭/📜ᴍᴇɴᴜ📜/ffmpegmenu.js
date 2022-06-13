@@ -31,8 +31,14 @@ module.exports = {
     handle(TUF, Fox, AʀƈȶɨӼ, ǟʀɢʊʍɛռȶ, ӄʀʏȶɛӄ) {
         return __awaiter(this, void 0, void 0, function* () {
             yield TUF.sendMessage(AʀƈȶɨӼ.chatId, {
+                quoted: Fox,
+                timestamp: Date(),
+                contextInfo: { mentionedJid: [AʀƈȶɨӼ.sender] },
                 image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png" },
-                caption: `╔◇  𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®║ *ƬΛG:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}\n║ *ПΛMΣ:* ${Fox.pushName}\n╚◇══════════════◇
+                caption: `╔◇  𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®
+║ *ƬΛG:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
+║ *ПΛMΣ:* ${Fox.pushName}
+╚◇══════════════◇
 
 ╔════⧉🗂️ 𝐅𝐅𝐦𝐩𝐞𝐠
 ║• *${______1.default.MuveOn}vid2url:*  _convert video to url_ 
@@ -57,11 +63,7 @@ module.exports = {
                     },
                 ],
                 headerType: 4,
-            }, message_type_1.MessageType.buttonsMessage, {
-                quoted: Fox,
-                timestamp: Date(),
-                contextInfo: { mentionedJid: [AʀƈȶɨӼ.sender] },
-            });
+            }, message_type_1.MessageType.buttonsMessage);
         });
     },
 };

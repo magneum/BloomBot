@@ -35,8 +35,14 @@ const Image_Button = (TUF, Fox, AʀƈȶɨӼ, caption, media) => __awaiter(void 0
         }
         //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
         yield TUF.sendMessage(AʀƈȶɨӼ.chatId, {
+            quoted: Fox,
+            timestamp: Date(),
+            contextInfo: { mentionedJid: [AʀƈȶɨӼ.sender] },
             image: { url: media },
-            caption: `|❝ 𝐔𝐬𝐞𝐫: ${Fox.pushName} ❞|
+            caption: `╔◇  𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®
+║ *ƬΛG:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
+║ *ПΛMΣ:* ${Fox.pushName}
+╚◇══════════════◇
 
 ${caption}`,
             footer: `⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ${Personality} ⦔`,
@@ -53,11 +59,7 @@ ${caption}`,
                 },
             ],
             headerType: 4,
-        }, message_type_1.MessageType.buttonsMessage, {
-            quoted: Fox,
-            timestamp: Date(),
-            contextInfo: { mentionedJid: [AʀƈȶɨӼ.sender] },
-        });
+        }, message_type_1.MessageType.buttonsMessage);
     }
     catch (error) {
         console.log(error);

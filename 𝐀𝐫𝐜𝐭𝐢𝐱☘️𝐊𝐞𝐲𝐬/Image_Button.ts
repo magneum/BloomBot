@@ -14,28 +14,20 @@ caption: any,
 media: any
 ): Promise<void> => {
 try {
-let Personality;
-if (AʀƈȶɨӼ.isSenderGroupAdmin) {
-Personality = "🔰";
-} else if (AʀƈȶɨӼ.isSenderTUFs && AʀƈȶɨӼ.isSenderGroupAdmin) {
-Personality = "👑+🔰";
-} else if (AʀƈȶɨӼ.isSenderTUFs) {
-Personality = "👑";
-} else {
-Personality = "🐾";
-}
-//" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 await TUF.sendMessage(
 AʀƈȶɨӼ.chatId,
 {
+quoted: Fox,
+timestamp: Date(),
+contextInfo: { mentionedJid: [AʀƈȶɨӼ.sender] },
 image: { url: media },
 caption: `╔◇  𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®
-║ *ƬΛG:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g,"")}
-║ *ПΛMΣ:* ${Fox.pushName}
+║ *Tαɠ:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g,"")}
+║ *By:* ${Fox.pushName}
 ╚◇══════════════◇
 
 ${caption}`,
-footer: `⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ${Personality} ⦔`,
+footer: `⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ⦔`,
 buttons: [
 {
 buttonId: `${ʟᴀʏᴏᴜᴛ.MuveOn}help`,
@@ -50,12 +42,7 @@ type: 1,
 ],
 headerType: 4,
 },
-MessageType.buttonsMessage,
-{
-quoted: Fox,
-timestamp: Date(),
-contextInfo: { mentionedJid: [AʀƈȶɨӼ.sender] },
-}
+MessageType.buttonsMessage
 );
 } catch (error) {
 console.log(error);

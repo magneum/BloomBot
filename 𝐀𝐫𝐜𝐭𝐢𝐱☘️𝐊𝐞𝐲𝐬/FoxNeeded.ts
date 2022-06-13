@@ -13,27 +13,19 @@ caption: any,
 dotScrpt: any
 ): Promise<void> => {
 try {
-let Personality;
-if (AʀƈȶɨӼ.isSenderGroupAdmin) {
-Personality = "🔰";
-} else if (AʀƈȶɨӼ.isSenderTUFs && AʀƈȶɨӼ.isSenderGroupAdmin) {
-Personality = "👑+🔰";
-} else if (AʀƈȶɨӼ.isSenderTUFs) {
-Personality = "👑";
-} else {
-Personality = "🐾";
-}
-//" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 await TUF.sendMessage(
 AʀƈȶɨӼ.chatId,
 {
+quoted: Fox,
+timestamp: Date(),
+contextInfo: { mentionedJid: [AʀƈȶɨӼ.sender] },
 text: `╔◇  𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®
-║ *ƬΛG:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g,"")}
-║ *ПΛMΣ:* ${Fox.pushName}
+║ *Tαɠ:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g,"")}
+║ *By:* ${Fox.pushName}
 ╚◇══════════════◇
 
 ❌𝐄𝐫𝐫𝐨𝐫: Argument Needed To Run This Command.`,
-footer: "⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ⦔",
+footer: `⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ⦔ `,
 title: `🔸𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt}_`,
 buttonText: "❝ How To Use? ❞",
 sections: [
@@ -50,12 +42,7 @@ ${caption}`,
 },
 ],
 },
-MessageType.buttonsMessage,
-{
-quoted: Fox,
-timestamp: Date(),
-contextInfo: { mentionedJid: [AʀƈȶɨӼ.sender] },
-}
+MessageType.buttonsMessage
 );
 } catch (error) {
 console.log(error);

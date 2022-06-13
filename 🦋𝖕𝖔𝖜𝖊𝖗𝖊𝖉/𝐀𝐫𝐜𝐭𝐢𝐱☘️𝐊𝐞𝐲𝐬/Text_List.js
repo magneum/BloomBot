@@ -31,7 +31,13 @@ const Text_List = (TUF, Fox, AʀƈȶɨӼ, caption) => __awaiter(void 0, void 0, 
         }
         //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
         yield TUF.sendMessage(AʀƈȶɨӼ.chatId, {
-            text: `|❝ 𝐔𝐬𝐞𝐫: ${Fox.pushName} ❞|
+            quoted: Fox,
+            timestamp: Date(),
+            contextInfo: { mentionedJid: [AʀƈȶɨӼ.sender] },
+            text: `╔◇  𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®
+║ *ƬΛG:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
+║ *ПΛMΣ:* ${Fox.pushName}
+╚◇══════════════◇
 
 ${caption}`,
             footer: `⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ${Personality} ⦔`,
@@ -51,11 +57,7 @@ ${caption}`,
                     },
                 },
             ],
-        }, message_type_1.MessageType.buttonsMessage, {
-            quoted: Fox,
-            timestamp: Date(),
-            contextInfo: { mentionedJid: [AʀƈȶɨӼ.sender] },
-        });
+        }, message_type_1.MessageType.buttonsMessage);
     }
     catch (error) {
         console.log(error);
