@@ -63,7 +63,7 @@ let AnimeLink: any = await anime.bite();
 let GotFile: any = `./${Fox.key.id}${Date.now()}.gif`;
 let GiveFile: any = `./${Fox.key.id}${Date.now()}.mp4`;
 if (!AnimeLink.endsWith(`.gif`) && !AnimeLink.endsWith(`.mp4`)) {
-  let anime2 = require(`anime-actions`);
+let anime2: any = require(`anime-actions`);
 FinalLink = await anime2.bite();
 } else {
 FinalLink = AnimeLink;
