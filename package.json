@@ -4,7 +4,7 @@
   "verold": "𝐩𝐚",
   "depecrated": false,
   "scripts": {
-    "𝐀𝐫𝐜𝐭𝐢𝐱": "clear && tsc && node --max-old-space-size=512 --no-warnings 🦋𝖕𝖔𝖜𝖊𝖗𝖊𝖉/кяутєк.js"
+    "𝐀𝐫𝐜𝐭𝐢𝐱": "clear && tsc && node --max-old-space-size=512 --no-warnings 𝐀𝐫𝐜𝐭𝐢𝐱📡𝐀𝐩𝐢®/кяутєк.js"
   },
   "dependencies": {
     "@adiwajshing/baileys": "^4.1.0",
