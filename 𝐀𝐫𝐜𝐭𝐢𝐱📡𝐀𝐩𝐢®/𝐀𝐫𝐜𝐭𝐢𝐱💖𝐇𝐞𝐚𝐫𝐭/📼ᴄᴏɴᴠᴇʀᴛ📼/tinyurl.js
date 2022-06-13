@@ -16,8 +16,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 (𝐜)𝐀𝐫𝐜𝐭𝐢𝐱 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 */
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
-const message_type_1 = require("../../\uD835\uDC00\uD835\uDC2B\uD835\uDC1C\uD835\uDC2D\uD835\uDC22\uD835\uDC31\u269C\uFE0F\uD835\uDC0A\uD835\uDC2B\uD835\uDC32\uD835\uDC28\uD835\uDC13\uD835\uDC1E\uD835\uDC24/message-type");
 const Image_Button_1 = __importDefault(require("../../\uD835\uDC00\uD835\uDC2B\uD835\uDC1C\uD835\uDC2D\uD835\uDC22\uD835\uDC31\u2618\uFE0F\uD835\uDC0A\uD835\uDC1E\uD835\uDC32\uD835\uDC2C/Image_Button"));
+const FoxNeeded_1 = __importDefault(require("../../\uD835\uDC00\uD835\uDC2B\uD835\uDC1C\uD835\uDC2D\uD835\uDC22\uD835\uDC31\u2618\uFE0F\uD835\uDC0A\uD835\uDC1E\uD835\uDC32\uD835\uDC2C/FoxNeeded"));
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 const Oops = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱☘️𝐊𝐞𝐲𝐬/Oops`);
 const ______1 = __importDefault(require("../../\uD835\uDC00\uD835\uDC2B\uD835\uDC1C\uD835\uDC2D\uD835\uDC22\uD835\uDC31\uD83C\uDC04\uD835\uDC15\uD835\uDC1E\uD835\uDC27\uD835\uDC2D/\u029F\u1D00\u028F\u1D0F\u1D1C\u1D1B"));
@@ -47,28 +47,7 @@ module.exports = {
                 console.log("💡Is Sender Group Admin: " + AʀƈȶɨӼ.isSenderGroupAdmin);
                 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
                 if (ǟʀɢʊʍɛռȶ.length === 0) {
-                    yield TUF.sendMessage(AʀƈȶɨӼ.chatId, {
-                        text: `✥𝐔𝐬𝐞𝐫: ${Fox.pushName} 
-
-Press Below To Read How To Use This Command!`,
-                        footer: "⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ⦔",
-                        title: `🔸𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${______1.default.MuveOn}${dotScrpt.toUpperCase()}`,
-                        buttonText: "❝ _How To Use?_ ❞",
-                        sections: [
-                            {
-                                title: "𝐀𝐑𝐆𝐔𝐌𝐄𝐍𝐓 𝐍𝐄𝐄𝐃𝐄𝐃!",
-                                rows: [
-                                    {
-                                        title: "⚡𝐔𝐬𝐚𝐠𝐞",
-                                        rowId: "argument required...",
-                                        description: `💡𝐈𝐧𝐟𝐨: In order to use this command, you must follow below instructions:
-Option 1 - ${______1.default.MuveOn}${dotScrpt.toUpperCase()} _url to shrink_`,
-                                    },
-                                ],
-                            },
-                        ],
-                    }, message_type_1.MessageType.buttonsMessage);
-                    return;
+                    return FoxNeeded_1.default.VFox(TUF, Fox, AʀƈȶɨӼ, `Option 1 - ${______1.default.MuveOn}${dotScrpt.toUpperCase()} _url to shrink_`, dotScrpt);
                 }
                 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
                 const TinyDone = yield Tinyurl(ǟʀɢʊʍɛռȶ.join(" "));

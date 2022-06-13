@@ -22,8 +22,8 @@ FileID: string,
 FileSocket: { message: any; type: any }
 ): Promise<void> => {
 try {
-const FileName: string = "./converter-" + FileID;
-const ConvertedPath: string = "./sticker-" + FileID + ".webp";
+const FileName: string = "./𝐀𝐫𝐜𝐭𝐢𝐱🐞𝐁𝐞𝐞𝐭𝐥𝐞/B-" + FileID;
+const ConvertedPath: string = "./𝐀𝐫𝐜𝐭𝐢𝐱🐞𝐁𝐞𝐞𝐭𝐥𝐞/A-" + FileID + ".webp";
 const FileStream: Transform = await downloadContentFromMessage(
 FileSocket.message,
 FileSocket.type

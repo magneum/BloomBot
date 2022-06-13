@@ -67,8 +67,8 @@ console.log(err);
 }
 }
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-const FileName: string = "./converter-" + FileID;
-const ConvertedVideo: string = "./sticker-" + FileID + ".mp4";
+const FileName: string = "./𝐀𝐫𝐜𝐭𝐢𝐱🐞𝐁𝐞𝐞𝐭𝐥𝐞/B-" + FileID;
+const ConvertedVideo: string = "./𝐀𝐫𝐜𝐭𝐢𝐱🐞𝐁𝐞𝐞𝐭𝐥𝐞/A-" + FileID + ".mp4";
 const FileStream: Transform = await downloadContentFromMessage(
 FileSocket.message,
 FileSocket.type

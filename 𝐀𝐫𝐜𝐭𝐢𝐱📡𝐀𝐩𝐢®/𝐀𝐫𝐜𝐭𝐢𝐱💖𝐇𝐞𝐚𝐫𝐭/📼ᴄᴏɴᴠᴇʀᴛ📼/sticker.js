@@ -16,7 +16,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 (𝐜)𝐀𝐫𝐜𝐭𝐢𝐱 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 */
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
-const message_type_1 = require("../../\uD835\uDC00\uD835\uDC2B\uD835\uDC1C\uD835\uDC2D\uD835\uDC22\uD835\uDC31\u269C\uFE0F\uD835\uDC0A\uD835\uDC2B\uD835\uDC32\uD835\uDC28\uD835\uDC13\uD835\uDC1E\uD835\uDC24/message-type");
+const FoxNeeded_1 = __importDefault(require("../../\uD835\uDC00\uD835\uDC2B\uD835\uDC1C\uD835\uDC2D\uD835\uDC22\uD835\uDC31\u2618\uFE0F\uD835\uDC0A\uD835\uDC1E\uD835\uDC32\uD835\uDC2C/FoxNeeded"));
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 const Oops = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱☘️𝐊𝐞𝐲𝐬/Oops`);
 const ToSticker = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱🀄𝐕𝐞𝐧𝐭/ToSticker`);
@@ -72,22 +72,7 @@ module.exports = {
                     //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
                 }
                 else {
-                    yield TUF.sendMessage(AʀƈȶɨӼ.chatId, {
-                        text: `✥𝐔𝐬𝐞𝐫: ${Fox.pushName} 
-
-Press Below To Read How To Use This Command!`,
-                        footer: "⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ⦔",
-                        title: `🔸𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${______1.default.MuveOn}${dotScrpt.toUpperCase()}`,
-                        buttonText: "❝ How To Use? ❞",
-                        sections: [
-                            {
-                                title: "𝐀𝐑𝐆𝐔𝐌𝐄𝐍𝐓 𝐍𝐄𝐄𝐃𝐄𝐃!",
-                                rows: [
-                                    {
-                                        title: "⚡𝐔𝐬𝐚𝐠𝐞",
-                                        rowId: "argument required...",
-                                        description: `💡𝐈𝐧𝐟𝐨: In order to use this command, you must follow below instructions:
-Option 1 - reply to media: ${______1.default.MuveOn}${dotScrpt.toUpperCase()}
+                    return FoxNeeded_1.default.VFox(TUF, Fox, AʀƈȶɨӼ, `Option 1 - reply to media: ${______1.default.MuveOn}${dotScrpt.toUpperCase()}
 Option 2 - reply to media: ${______1.default.MuveOn}${dotScrpt.toUpperCase()} _<sticker title>_
 
 ╔════◇ *Supported Media Types* ꧂
@@ -96,32 +81,12 @@ Option 2 - reply to media: ${______1.default.MuveOn}${dotScrpt.toUpperCase()} _<
 ║- PNG
 ║- JPEG
 ║- WEBP
-╚════════════╝`,
-                                    },
-                                ],
-                            },
-                        ],
-                    }, message_type_1.MessageType.buttonsMessage);
+╚════════════╝`, dotScrpt);
                 }
                 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
             }
             catch (error) {
-                yield TUF.sendMessage(AʀƈȶɨӼ.chatId, {
-                    text: `✥𝐔𝐬𝐞𝐫: ${Fox.pushName} 
-
-Press Below To Read How To Use This Command!`,
-                    footer: "⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ⦔",
-                    title: `🔸𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${______1.default.MuveOn}${dotScrpt.toUpperCase()}`,
-                    buttonText: "❝ How To Use? ❞",
-                    sections: [
-                        {
-                            title: "𝐀𝐑𝐆𝐔𝐌𝐄𝐍𝐓 𝐍𝐄𝐄𝐃𝐄𝐃!",
-                            rows: [
-                                {
-                                    title: "⚡𝐔𝐬𝐚𝐠𝐞",
-                                    rowId: "argument required...",
-                                    description: `💡𝐈𝐧𝐟𝐨: In order to use this command, you must follow below instructions:
-Option 1 - reply to media: ${______1.default.MuveOn}${dotScrpt.toUpperCase()}
+                return FoxNeeded_1.default.VFox(TUF, Fox, AʀƈȶɨӼ, `Option 1 - reply to media: ${______1.default.MuveOn}${dotScrpt.toUpperCase()}
 Option 2 - reply to media: ${______1.default.MuveOn}${dotScrpt.toUpperCase()} _<sticker title>_
 
 ╔════◇ *Supported Media Types* ꧂
@@ -130,12 +95,7 @@ Option 2 - reply to media: ${______1.default.MuveOn}${dotScrpt.toUpperCase()} _<
 ║- PNG
 ║- JPEG
 ║- WEBP
-╚════════════╝`,
-                                },
-                            ],
-                        },
-                    ],
-                }, message_type_1.MessageType.buttonsMessage);
+╚════════════╝`, dotScrpt);
             }
         });
     },

@@ -54,7 +54,7 @@ const promises_1 = require("fs/promises");
 const Oops = require(`../𝐀𝐫𝐜𝐭𝐢𝐱☘️𝐊𝐞𝐲𝐬/Oops`);
 const VOID = require(`../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/void`);
 const { Sticker } = require("wa-sticker-formatter");
-const message_type_1 = require("../\uD835\uDC00\uD835\uDC2B\uD835\uDC1C\uD835\uDC2D\uD835\uDC22\uD835\uDC31\u269C\uFE0F\uD835\uDC0A\uD835\uDC2B\uD835\uDC32\uD835\uDC28\uD835\uDC13\uD835\uDC1E\uD835\uDC24/message-type");
+const Video_Button_1 = __importDefault(require("../\uD835\uDC00\uD835\uDC2B\uD835\uDC1C\uD835\uDC2D\uD835\uDC22\uD835\uDC31\u2618\uFE0F\uD835\uDC0A\uD835\uDC1E\uD835\uDC32\uD835\uDC2C/Video_Button"));
 const baileys_1 = require("@adiwajshing/baileys");
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 const ToStickerVideo = (TUF, Fox, ǟʀɢʊʍɛռȶ, AʀƈȶɨӼ, FileID, FileSocket) => __awaiter(void 0, void 0, void 0, function* () {
@@ -128,10 +128,11 @@ const ToStickerVideo = (TUF, Fox, ǟʀɢʊʍɛռȶ, AʀƈȶɨӼ, FileID, FileSoc
         //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
         try {
             let res = yield ProcM(FileName, ConvertedVideo);
-            yield TUF.sendMessage(AʀƈȶɨӼ.chatId, { url: res }, message_type_1.MessageType.video);
+            yield Video_Button_1.default.VVid(TUF, Fox, AʀƈȶɨӼ, res, `💡𝐈𝐧𝐟𝐨: Here is your Sticker To Video Converted File.`);
+            return yield VOID.VOID(FileName, ConvertedVideo);
         }
-        catch (err) {
-            throw err;
+        catch (error) {
+            return Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error);
         }
     }
     catch (error) {
