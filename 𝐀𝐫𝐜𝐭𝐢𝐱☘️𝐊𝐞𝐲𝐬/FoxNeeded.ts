@@ -24,7 +24,7 @@ const FoxNeeded = async (
 │ *ᴛᴀɢ:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
 │ *ɴᴀᴍᴇ:* ${Fox.pushName}
 │ *ᴄᴏᴍᴍᴀɴᴅ:* ${AʀƈȶɨӼ.commandName}
-└⟢
+└⟞⟢
 
 ❌𝐄𝐫𝐫𝐨𝐫: Argument Needed To Run This Command.`,
         footer: `⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ⦔ `,
