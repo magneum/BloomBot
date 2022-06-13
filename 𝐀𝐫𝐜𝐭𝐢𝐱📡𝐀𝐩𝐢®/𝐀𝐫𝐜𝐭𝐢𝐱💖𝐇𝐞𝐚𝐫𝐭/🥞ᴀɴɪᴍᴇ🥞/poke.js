@@ -127,7 +127,11 @@ module.exports = {
                             .sendMessage(AʀƈȶɨӼ.chatId, fs.readFileSync(GiveFile), message_type_1.MessageType.video, {
                             mimetype: `video/gif`,
                             quoted: Fox,
-                            caption: `⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ⦔
+                            caption: `╔═⟢  𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®
+║♩ *ᴛᴀɢ:* _@${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}_
+║♭ *ɴᴀᴍᴇ:* _${Fox.pushName}_
+║♪ *ᴄᴏᴍᴍᴀɴᴅ:* _${AʀƈȶɨӼ.commandName}_
+╚═⟢  ⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ⦔
 
 🍕𝐅𝐫𝐨𝐦: _${Fox.pushName}_
 🌭𝐓𝐨: @${TagPerson}`,
@@ -155,7 +159,11 @@ module.exports = {
                                 .sendMessage(AʀƈȶɨӼ.chatId, fs.readFileSync(GiveFile), message_type_1.MessageType.video, {
                                 mimetype: `video/gif`,
                                 quoted: Fox,
-                                caption: `⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ⦔
+                                caption: `╔═⟢  𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®
+║♩ *ᴛᴀɢ:* _@${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}_
+║♭ *ɴᴀᴍᴇ:* _${Fox.pushName}_
+║♪ *ᴄᴏᴍᴍᴀɴᴅ:* _${AʀƈȶɨӼ.commandName}_
+╚═⟢  ⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ⦔
 
 🍕𝐅𝐨𝐫: _${Fox.pushName}_`,
                                 contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
@@ -178,7 +186,11 @@ module.exports = {
                                 .sendMessage(AʀƈȶɨӼ.chatId, fs.readFileSync(GiveFile), message_type_1.MessageType.video, {
                                 mimetype: `video/gif`,
                                 quoted: Fox,
-                                caption: `⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ⦔
+                                caption: `╔═⟢  𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®
+║♩ *ᴛᴀɢ:* _@${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}_
+║♭ *ɴᴀᴍᴇ:* _${Fox.pushName}_
+║♪ *ᴄᴏᴍᴍᴀɴᴅ:* _${AʀƈȶɨӼ.commandName}_
+╚═⟢  ⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ⦔
 
 🍕𝐅𝐫𝐨𝐦: _${Fox.pushName}_
 🌭𝐓𝐨: _@${քɛʀֆօռɢօȶռʊʍ}_`,
@@ -203,7 +215,11 @@ module.exports = {
                             .sendMessage(AʀƈȶɨӼ.chatId, fs.readFileSync(GiveFile), message_type_1.MessageType.video, {
                             mimetype: `video/gif`,
                             quoted: Fox,
-                            caption: `⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ⦔
+                            caption: `╔═⟢  𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®
+║♩ *ᴛᴀɢ:* _@${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}_
+║♭ *ɴᴀᴍᴇ:* _${Fox.pushName}_
+║♪ *ᴄᴏᴍᴍᴀɴᴅ:* _${AʀƈȶɨӼ.commandName}_
+╚═⟢  ⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ⦔
 
 🍕𝐅𝐨𝐫: _${Fox.pushName}_`,
                             contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
