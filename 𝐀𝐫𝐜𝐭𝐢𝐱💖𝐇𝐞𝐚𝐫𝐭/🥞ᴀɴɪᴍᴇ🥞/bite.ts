@@ -60,7 +60,7 @@ console.log("💡𝐈𝐧𝐟𝐨: Receiver: " + քɛʀֆօռɢօȶռʊʍ);
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 let FinalLink: any;
 let AnimeLink: any = await anime.bite();
-let GotFile: any = `./${Fox.key.id}${Date.now()}.gif`;
+let Fresh_File: any = `./${Fox.key.id}${Date.now()}.gif`;
 let Composed_File: any = `./${Fox.key.id}${Date.now()}.mp4`;
 if (!AnimeLink.endsWith(`.gif`) && !AnimeLink.endsWith(`.mp4`)) {
 let anime2: any = require(`anime-actions`);
@@ -72,7 +72,7 @@ FinalLink = AnimeLink;
 const downloader = await new Downloader({
 url: FinalLink,
 directory: `./`,
-fileName: GotFile,
+fileName: Fresh_File,
 cloneFiles: false,
 });
 try {
@@ -92,7 +92,7 @@ if (ǟʀɢʊʍɛռȶ[0] && ǟʀɢʊʍɛռȶ[0].startsWith("@")) {
 await ӄ𝖗𝖞ӄ𝖓𝖟.sendPresenceUpdate("composing", AʀƈȶɨӼ.chatId);
 var TagPerson = ǟʀɢʊʍɛռȶ[0].replace(/[^0-9]/g, "");
 var TagMention = TagPerson + "@s.whatsapp.net";
-ffmpeg(GotFile)
+ffmpeg(Fresh_File)
 .outputOptions([
 `-pix_fmt yuv420p`,
 `-c:v libx264`,
@@ -116,7 +116,7 @@ AʀƈȶɨӼ,
 🌭𝐓𝐨: @${TagPerson}`,
 Composed_File
 );
-return await VOID.VOID(Composed_File, GotFile);
+return await VOID.VOID(Composed_File, Fresh_File);
 });
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 } else if (AʀƈȶɨӼ.isTextReply) {
@@ -124,7 +124,7 @@ await ӄ𝖗𝖞ӄ𝖓𝖟.sendPresenceUpdate("composing", AʀƈȶɨӼ.chatId);
 var Receiver = Fox.message.extendedTextMessage.contextInfo.participant;
 var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
 if (Receiver === ʟɴᴀᴍᴇ) {
-ffmpeg(GotFile)
+ffmpeg(Fresh_File)
 .outputOptions([
 `-pix_fmt yuv420p`,
 `-c:v libx264`,
@@ -147,11 +147,11 @@ AʀƈȶɨӼ,
 🍕𝐅𝐨𝐫: _${Fox.pushName}_`,
 Composed_File
 );
-return await VOID.VOID(Composed_File, GotFile);
+return await VOID.VOID(Composed_File, Fresh_File);
 });
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 } else {
-ffmpeg(GotFile)
+ffmpeg(Fresh_File)
 .outputOptions([
 `-pix_fmt yuv420p`,
 `-c:v libx264`,
@@ -175,13 +175,13 @@ AʀƈȶɨӼ,
 🌭𝐓𝐨: _@${քɛʀֆօռɢօȶռʊʍ}_`,
 Composed_File
 );
-return await VOID.VOID(Composed_File, GotFile);
+return await VOID.VOID(Composed_File, Fresh_File);
 });
 }
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 } else {
 await ӄ𝖗𝖞ӄ𝖓𝖟.sendPresenceUpdate("composing", AʀƈȶɨӼ.chatId);
-ffmpeg(GotFile)
+ffmpeg(Fresh_File)
 .outputOptions([
 `-pix_fmt yuv420p`,
 `-c:v libx264`,
@@ -204,7 +204,7 @@ AʀƈȶɨӼ,
 🍕𝐅𝐨𝐫: _${Fox.pushName}_`,
 Composed_File
 );
-return await VOID.VOID(Composed_File, GotFile);
+return await VOID.VOID(Composed_File, Fresh_File);
 });
 }
 } catch (error) {
