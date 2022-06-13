@@ -65,7 +65,12 @@ type: 1,
 ],
 headerType: 4,
 },
-MessageType.buttonsMessage
+MessageType.buttonsMessage,
+{
+quoted: Fox,
+timestamp: Date(),
+contextInfo: { mentionedJid: [AʀƈȶɨӼ.sender] },
+}
 );
 },
 };
