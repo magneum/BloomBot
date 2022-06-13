@@ -57,7 +57,7 @@ await TUF.getGroupMetaData(AʀƈȶɨӼ.chatId, AʀƈȶɨӼ);
 console.log("💡Is Bot Group Admin: " + AʀƈȶɨӼ.isBotGroupAdmin);
 console.log("💡Is Sender Group Admin: " + AʀƈȶɨӼ.isSenderGroupAdmin);
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-if (AʀƈȶɨӼ.type === "image" || AʀƈȶɨӼ.isReplyImage) {
+if (AʀƈȶɨӼ.isReplyImage) {
 var FileSocketObject = {
 message: AʀƈȶɨӼ.isReplyImage
 ? Fox.message.extendedTextMessage.contextInfo.quotedMessage
@@ -83,14 +83,23 @@ return FoxNeeded.VFox(
 TUF,
 Fox,
 AʀƈȶɨӼ,
-`Option 1 - reply to image with: ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()}
-Option 1 - send image with caption: ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()}`,
+`Option 1 - reply to image with: ${
+ʟᴀʏᴏᴜᴛ.MuveOn
+}${dotScrpt.toUpperCase()}`,
 dotScrpt
 );
 }
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 } catch (error) {
-return Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error);
+return FoxNeeded.VFox(
+TUF,
+Fox,
+AʀƈȶɨӼ,
+`Option 1 - reply to image with: ${
+ʟᴀʏᴏᴜᴛ.MuveOn
+}${dotScrpt.toUpperCase()}`,
+dotScrpt
+);
 }
 },
 };
