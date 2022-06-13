@@ -89,8 +89,8 @@ AʀƈȶɨӼ.chatId,
 "Hello There: @" + ᴘɴᴀᴍᴇ,
 MessageType.text,
 {
+    quoted: Fox,
 timestamp: Date(),
-quoted: AʀƈȶɨӼ.body,
 contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
 }
 );
