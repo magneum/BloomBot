@@ -21,10 +21,10 @@ quoted: Fox,
 timestamp: Date(),
 contextInfo: { mentionedJid: [AʀƈȶɨӼ.sender] },
 image: { url: media },
-caption: `╔◇  𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®
-║ *Tαɠ:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g,"")}
-║ *By:* ${Fox.pushName}
-╚◇══════════════◇
+caption: `┌✼  𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®
+│ *Tαɠ:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g,"")}
+│ *Nαɱҽ:* ${Fox.pushName}
+┖⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯✼
 
 ${caption}`,
 footer: `⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ⦔`,

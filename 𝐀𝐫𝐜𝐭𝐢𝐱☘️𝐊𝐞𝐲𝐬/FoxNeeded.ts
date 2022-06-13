@@ -19,10 +19,10 @@ AʀƈȶɨӼ.chatId,
 quoted: Fox,
 timestamp: Date(),
 contextInfo: { mentionedJid: [AʀƈȶɨӼ.sender] },
-text: `╔◇  𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®
-║ *Tαɠ:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g,"")}
-║ *By:* ${Fox.pushName}
-╚◇══════════════◇
+text: `┌✼  𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®
+│ *Tαɠ:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g,"")}
+│ *Nαɱҽ:* ${Fox.pushName}
+┖⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯✼
 
 ❌𝐄𝐫𝐫𝐨𝐫: Argument Needed To Run This Command.`,
 footer: `⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ⦔ `,
