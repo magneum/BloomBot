@@ -38,7 +38,7 @@ module.exports = {
                 caption: `┌✼  𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®
 │ *Tαɠ:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
 │ *Nαɱҽ:* ${Fox.pushName}
-└⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯✼
+└✼
 
 ╔════⧉💰 𝗚𝗮𝗺𝗲𝘀
 ║• *${______1.default.MuveOn}shop:*  _visit krakinzlab member store_

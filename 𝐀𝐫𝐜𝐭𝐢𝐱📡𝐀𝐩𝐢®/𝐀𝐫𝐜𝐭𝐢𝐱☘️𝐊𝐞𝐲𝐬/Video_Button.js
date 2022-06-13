@@ -29,7 +29,7 @@ const Video_Button = (TUF, Fox, AʀƈȶɨӼ, media, caption) => __awaiter(void 0
             caption: `┌✼  𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®
 │ *Tαɠ:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
 │ *Nαɱҽ:* ${Fox.pushName}
-└⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯✼
+└✼
 
 ${caption}`,
             footer: `⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ⦔`,

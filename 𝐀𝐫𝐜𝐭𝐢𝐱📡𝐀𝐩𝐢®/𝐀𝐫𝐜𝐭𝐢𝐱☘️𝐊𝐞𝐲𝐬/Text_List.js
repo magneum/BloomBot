@@ -23,7 +23,7 @@ const Text_List = (TUF, Fox, AʀƈȶɨӼ, caption) => __awaiter(void 0, void 0, 
             text: `┌✼  𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®
 │ *Tαɠ:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
 │ *Nαɱҽ:* ${Fox.pushName}
-└⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯✼
+└✼
 
 ${caption}`,
             footer: `⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ⦔`,

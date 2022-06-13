@@ -38,7 +38,7 @@ module.exports = {
                 caption: `┌✼  𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®
 │ *Tαɠ:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
 │ *Nαɱҽ:* ${Fox.pushName}
-└⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯✼
+└✼
 
 ╔════⧉🦄 𝐑𝐚𝐧𝐝𝐨𝐦𝐬
 ║• *${______1.default.MuveOn}leaderboard:*  _check group leaderboard_

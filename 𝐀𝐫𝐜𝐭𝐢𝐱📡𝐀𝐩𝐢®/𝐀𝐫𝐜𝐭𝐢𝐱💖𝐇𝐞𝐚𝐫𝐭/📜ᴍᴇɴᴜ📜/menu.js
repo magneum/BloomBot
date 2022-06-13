@@ -38,7 +38,7 @@ module.exports = {
                 caption: `┌✼  𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®
 │ *Tαɠ:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
 │ *Nαɱҽ:* ${Fox.pushName}
-└⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯✼
+└✼
 
 
 ◇⚡𝐁𝐞𝐥𝐨𝐰 𝐅𝐮𝐥𝐥 𝐋𝐢𝐬𝐭⚡◇

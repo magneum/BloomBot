@@ -38,7 +38,7 @@ module.exports = {
                 caption: `┌✼  𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®
 │ *Tαɠ:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
 │ *Nαɱҽ:* ${Fox.pushName}
-└⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯✼
+└✼
 
 ╔════⧉🍑 𝐇𝐞𝐧𝐭𝐚𝐢 𝐍𝐒𝐅𝐖
 ║• *${______1.default.MuveOn}ass:*  _ɪ ᴋɴᴏᴡ ʏᴏᴜ ʟɪᴋᴇ ᴀɴɪᴍᴇ ᴀꜱꜱ~_
