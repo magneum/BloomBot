@@ -15,7 +15,6 @@ const Bagde = require(`../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜
 const Halt = require(`../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/halt`);
 const chalkAnimation = require("chalkercli");
 import { Boom } from "@hapi/boom";
-import Aʀƈȶ from "../AʀƈȶɨӼ";
 import Kolor from "chalk";
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 const connection_update = async (
@@ -37,7 +36,7 @@ process.exit(0);
 } else if (connection === "connecting") {
 chalkAnimation.rainbow("💡𝐈𝐧𝐟𝐨꧂  Connecting to WhatsApp...");
 } else if (connection === "open") {
-Aʀƈȶ.VAʀƈ();
+require("child_process").exec("node AʀƈȶɨӼ.js");
 } else {
 console.log("connection update", update);
 }
