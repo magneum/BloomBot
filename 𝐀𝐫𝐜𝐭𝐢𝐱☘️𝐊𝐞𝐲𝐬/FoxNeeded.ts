@@ -21,8 +21,8 @@ const FoxNeeded = async (
         contextInfo: { mentionedJid: [AʀƈȶɨӼ.sender] },
         text: `
 ╔═⟢  𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®
-║ *ᴛᴀɢ:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
-║ *ɴᴀᴍᴇ:* ${Fox.pushName}
+║ *ᴛᴀɢ:* _@${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
+║ *ɴᴀᴍᴇ:* _${Fox.pushName}
 ║ *ᴄᴏᴍᴍᴀɴᴅ:* ${AʀƈȶɨӼ.commandName}
 ╚═════⟢
 
