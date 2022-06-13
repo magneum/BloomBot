@@ -47,30 +47,7 @@ return FoxNeeded.VFox(
 TUF,
 Fox,
 AʀƈȶɨӼ,
-`Option 1 - ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()} _anime name_`,
-dotScrpt
-);
-
-
-
-await TUF.sendMessage(
-AʀƈȶɨӼ.chatId,
-{
-text: `✥𝐔𝐬𝐞𝐫: ${Fox.pushName} 
-
-Press Below To Read How To Use This Command!`,
-footer: "⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ⦔",
-title: `🔸𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()}`,
-buttonText: "❝ _How To Use?_ ❞",
-sections: [
-{
-title: "𝐀𝐑𝐆𝐔𝐌𝐄𝐍𝐓 𝐍𝐄𝐄𝐃𝐄𝐃!",
-rows: [
-{
-title: "⚡𝐔𝐬𝐚𝐠𝐞",
-rowId: "argument required...",
-description: `💡𝐈𝐧𝐟𝐨: In order to use this command, you must follow below instructions:
-Option 1 - ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()} _text_
+`Option 1 - ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()} _text_
 Option 2 - ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()} _text -t theme-name_
 
 
@@ -104,14 +81,8 @@ Option 2 - ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()} _text -t theme-na
 ║ yeti
 ║ zenburn
 ╚════════════╝`,
-},
-],
-},
-],
-},
-MessageType.buttonsMessage
+dotScrpt
 );
-return;
 }
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 let themes = [
