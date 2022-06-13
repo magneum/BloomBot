@@ -85,6 +85,49 @@ FileSocketObject
 );
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 } else {
+    return FoxNeeded.VFox(
+        TUF,
+        Fox,
+        AʀƈȶɨӼ,
+        `Option 1 - ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()} _text_
+        Option 2 - ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()} _text -t theme-name_
+        
+        
+        ╔════◇🌈 𝗧𝗵𝗲𝗺𝗲𝐬
+        ║ 3024 night
+        ║ a11y dark
+        ║ blackboard
+        ║ base 16 (dark)
+        ║ base 16 (light)
+        ║ cobalt
+        ║ duotone
+        ║ hopscotch
+        ║ lucario
+        ║ material
+        ║ monokai
+        ║ night owl
+        ║ nord
+        ║ oceanic next
+        ║ one light
+        ║ one dark
+        ║ panda
+        ║ paraiso
+        ║ seti
+        ║ shades of purple
+        ║ solarized (dark)
+        ║ solarized (light)
+        ║ synthwave 84
+        ║ twilight
+        ║ verminal
+        ║ vscode
+        ║ yeti
+        ║ zenburn
+        ╚════════════╝`,
+        dotScrpt
+        );
+
+
+
 await TUF.sendMessage(
 AʀƈȶɨӼ.chatId,
 {
