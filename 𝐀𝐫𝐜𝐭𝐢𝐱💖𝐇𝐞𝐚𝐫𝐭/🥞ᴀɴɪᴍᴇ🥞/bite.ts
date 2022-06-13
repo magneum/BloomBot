@@ -164,6 +164,7 @@ AʀƈȶɨӼ.chatId,
 fs.readFileSync(GiveFile),
 MessageType.video,
 {
+    gifPlayback: true,
 mimetype: `video/gif`,
 quoted: Fox,
 caption: `⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ⦔
