@@ -199,34 +199,33 @@ module.exports = {
                                 .catch((error) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
                             return yield VOID.VOID(GiveFile, GotFile);
                         }));
-                    //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
                 }
-                else
-                    ffmpeg(GotFile)
-                        .outputOptions([
-                        `-pix_fmt yuv420p`,
-                        `-c:v libx264`,
-                        `-movflags +faststart`,
-                        `-filter:v crop='floor(in_w/2)*2:floor(in_h/2)*2'`,
-                    ])
-                        .save(GiveFile)
-                        .on(`end`, () => __awaiter(this, void 0, void 0, function* () {
-                        yield TUF
-                            .sendMessage(AʀƈȶɨӼ.chatId, fs.readFileSync(GiveFile), message_type_1.MessageType.video, {
-                            mimetype: `video/gif`,
-                            quoted: Fox,
-                            caption: `╔═⟢  𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®
+                //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
+                ffmpeg(GotFile)
+                    .outputOptions([
+                    `-pix_fmt yuv420p`,
+                    `-c:v libx264`,
+                    `-movflags +faststart`,
+                    `-filter:v crop='floor(in_w/2)*2:floor(in_h/2)*2'`,
+                ])
+                    .save(GiveFile)
+                    .on(`end`, () => __awaiter(this, void 0, void 0, function* () {
+                    yield TUF
+                        .sendMessage(AʀƈȶɨӼ.chatId, fs.readFileSync(GiveFile), message_type_1.MessageType.video, {
+                        mimetype: `video/gif`,
+                        quoted: Fox,
+                        caption: `╔═⟢  𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®
 ║♩ *ᴛᴀɢ:* _@${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}_
 ║♭ *ɴᴀᴍᴇ:* _${Fox.pushName}_
 ║♪ *ᴄᴏᴍᴍᴀɴᴅ:* _${AʀƈȶɨӼ.commandName}_
 ╚═⟢  ⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ⦔
 
 🍕𝐅𝐨𝐫: _${Fox.pushName}_`,
-                            contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
-                        })
-                            .catch((error) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
-                        return yield VOID.VOID(GiveFile, GotFile);
-                    }));
+                        contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
+                    })
+                        .catch((error) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
+                    return yield VOID.VOID(GiveFile, GotFile);
+                }));
             }
             catch (error) {
                 return Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error);

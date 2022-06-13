@@ -4,10 +4,11 @@
 */
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 import { MessageType } from "../../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/message-type";
+import Sticker_Button from "../../𝐀𝐫𝐜𝐭𝐢𝐱☘️𝐊𝐞𝐲𝐬/Sticker_Button";
 import Image_Button from "../../𝐀𝐫𝐜𝐭𝐢𝐱☘️𝐊𝐞𝐲𝐬/Image_Button";
 import Video_Button from "../../𝐀𝐫𝐜𝐭𝐢𝐱☘️𝐊𝐞𝐲𝐬/Video_Button";
 import Text_List from "../../𝐀𝐫𝐜𝐭𝐢𝐱☘️𝐊𝐞𝐲𝐬/Text_List";
-import FoxNeeded from "../../𝐀𝐫𝐜𝐭𝐢𝐱☘️𝐊𝐞𝐲𝐬/FoxNeeded"
+import FoxNeeded from "../../𝐀𝐫𝐜𝐭𝐢𝐱☘️𝐊𝐞𝐲𝐬/FoxNeeded";
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 const Downloader = require(`nodejs-file-downloader`);
 const Oops = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱☘️𝐊𝐞𝐲𝐬/Oops`);
@@ -31,7 +32,7 @@ TUF: Client,
 Fox: proto.IWebMessageInfo,
 AʀƈȶɨӼ: AʀƈȶɨӼ,
 ǟʀɢʊʍɛռȶ: string[],
-ӄ𝖗𝖞ӄ𝖓𝖟
+ӄ𝖗𝖞ӄ𝖓𝖟: any
 ): Promise<void> {
 try {
 const ʟɴᴀᴍᴇ = AʀƈȶɨӼ.sender;
@@ -98,27 +99,22 @@ ffmpeg(GotFile)
 `-filter:v crop='floor(in_w/2)*2:floor(in_h/2)*2'`,
 ])
 .save(GiveFile)
-.on(`end`, async () => {
-await TUF
-.sendMessage(
-AʀƈȶɨӼ.chatId,
-fs.readFileSync(GiveFile),
-MessageType.video,
-{
-mimetype: `video/gif`,
-quoted: Fox,
-caption: `╔═⟢  𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®
+.on("end", async () => {
+await Sticker_Button.VSbt(
+TUF,
+Fox,
+AʀƈȶɨӼ,
+ǟʀɢʊʍɛռȶ,
+`╔═⟢  𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®
 ║♩ *ᴛᴀɢ:* _@${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}_
 ║♭ *ɴᴀᴍᴇ:* _${Fox.pushName}_
 ║♪ *ᴄᴏᴍᴍᴀɴᴅ:* _${AʀƈȶɨӼ.commandName}_
-╚═⟢  ⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ⦔
+╚═════⟢
 
 🍕𝐅𝐫𝐨𝐦: _${Fox.pushName}_
 🌭𝐓𝐨: @${TagPerson}`,
-contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ, TagMention] },
-}
-)
-.catch((error: any) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
+GiveFile
+);
 return await VOID.VOID(GiveFile, GotFile);
 });
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
@@ -134,29 +130,24 @@ ffmpeg(GotFile)
 `-filter:v crop='floor(in_w/2)*2:floor(in_h/2)*2'`,
 ])
 .save(GiveFile)
-.on(`end`, async () => {
-await TUF
-.sendMessage(
-AʀƈȶɨӼ.chatId,
-fs.readFileSync(GiveFile),
-MessageType.video,
-{
-mimetype: `video/gif`,
-quoted: Fox,
-caption: `╔═⟢  𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®
+.on("end", async () => {
+await Sticker_Button.VSbt(
+TUF,
+Fox,
+AʀƈȶɨӼ,
+ǟʀɢʊʍɛռȶ,
+`╔═⟢  𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®
 ║♩ *ᴛᴀɢ:* _@${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}_
 ║♭ *ɴᴀᴍᴇ:* _${Fox.pushName}_
 ║♪ *ᴄᴏᴍᴍᴀɴᴅ:* _${AʀƈȶɨӼ.commandName}_
-╚═⟢  ⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ⦔
+╚═════⟢
 
 🍕𝐅𝐨𝐫: _${Fox.pushName}_`,
-contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
-}
-)
-.catch((error: any) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
+GiveFile
+);
 return await VOID.VOID(GiveFile, GotFile);
 });
-} else
+} else {
 ffmpeg(GotFile)
 .outputOptions([
 `-pix_fmt yuv420p`,
@@ -165,31 +156,27 @@ ffmpeg(GotFile)
 `-filter:v crop='floor(in_w/2)*2:floor(in_h/2)*2'`,
 ])
 .save(GiveFile)
-.on(`end`, async () => {
-await TUF
-.sendMessage(
-AʀƈȶɨӼ.chatId,
-fs.readFileSync(GiveFile),
-MessageType.video,
-{
-mimetype: `video/gif`,
-quoted: Fox,
-caption: `╔═⟢  𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®
+.on("end", async () => {
+await Sticker_Button.VSbt(
+TUF,
+Fox,
+AʀƈȶɨӼ,
+ǟʀɢʊʍɛռȶ,
+`╔═⟢  𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®
 ║♩ *ᴛᴀɢ:* _@${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}_
 ║♭ *ɴᴀᴍᴇ:* _${Fox.pushName}_
 ║♪ *ᴄᴏᴍᴍᴀɴᴅ:* _${AʀƈȶɨӼ.commandName}_
-╚═⟢  ⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ⦔
+╚═════⟢
 
 🍕𝐅𝐫𝐨𝐦: _${Fox.pushName}_
 🌭𝐓𝐨: _@${քɛʀֆօռɢօȶռʊʍ}_`,
-contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ, Receiver] },
-}
-)
-.catch((error: any) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
+GiveFile
+);
 return await VOID.VOID(GiveFile, GotFile);
 });
-} 
+}
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
+} else {
 ffmpeg(GotFile)
 .outputOptions([
 `-pix_fmt yuv420p`,
@@ -198,28 +185,24 @@ ffmpeg(GotFile)
 `-filter:v crop='floor(in_w/2)*2:floor(in_h/2)*2'`,
 ])
 .save(GiveFile)
-.on(`end`, async () => {
-await TUF
-.sendMessage(
-AʀƈȶɨӼ.chatId,
-fs.readFileSync(GiveFile),
-MessageType.video,
-{
-mimetype: `video/gif`,
-quoted: Fox,
-caption: `╔═⟢  𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®
+.on("end", async () => {
+await Sticker_Button.VSbt(
+TUF,
+Fox,
+AʀƈȶɨӼ,
+ǟʀɢʊʍɛռȶ,
+`╔═⟢  𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®
 ║♩ *ᴛᴀɢ:* _@${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}_
 ║♭ *ɴᴀᴍᴇ:* _${Fox.pushName}_
 ║♪ *ᴄᴏᴍᴍᴀɴᴅ:* _${AʀƈȶɨӼ.commandName}_
-╚═⟢  ⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ⦔
+╚═════⟢
 
 🍕𝐅𝐨𝐫: _${Fox.pushName}_`,
-contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
-}
-)
-.catch((error: any) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
+GiveFile
+);
 return await VOID.VOID(GiveFile, GotFile);
 });
+}
 } catch (error) {
 return Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error);
 }
