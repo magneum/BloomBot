@@ -78,8 +78,13 @@ FileID,
 FileSocketObject
 );
 } else {
-
-    
+return FoxNeeded.VFox(
+TUF,
+Fox,
+AʀƈȶɨӼ,
+`Option 1 - ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()} _anime name_`,
+dotScrpt
+);
 }
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 } catch (error) {
