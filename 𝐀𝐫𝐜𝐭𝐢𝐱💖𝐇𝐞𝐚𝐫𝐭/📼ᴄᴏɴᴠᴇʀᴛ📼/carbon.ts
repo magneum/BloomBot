@@ -43,6 +43,16 @@ console.log("💡Is Bot Group Admin: " + AʀƈȶɨӼ.isBotGroupAdmin);
 console.log("💡Is Sender Group Admin: " + AʀƈȶɨӼ.isSenderGroupAdmin);
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 if (ǟʀɢʊʍɛռȶ.length === 0) {
+return FoxNeeded.VFox(
+TUF,
+Fox,
+AʀƈȶɨӼ,
+`Option 1 - ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()} _anime name_`,
+dotScrpt
+);
+
+
+
 await TUF.sendMessage(
 AʀƈȶɨӼ.chatId,
 {
