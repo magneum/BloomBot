@@ -20,7 +20,6 @@ const BanGroup = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧�
 const Bagde = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/badge`);
 const Halt = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/halt`);
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-const { TelegraPh } = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱🐞𝐁𝐞𝐞𝐭𝐥𝐞/uploader`);
 const VOID = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/void`);
 const Oops = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱☘️𝐊𝐞𝐲𝐬/Oops`);
 import Client from "../../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/TUF";
@@ -34,6 +33,7 @@ import { Transform } from "stream";
 import ffmpeg from "fluent-ffmpeg";
 import { writeFile } from "fs/promises";
 var scriptName = path.basename(__filename);
+import DMedia from "../../𝐀𝐫𝐜𝐭𝐢𝐱🀄𝐕𝐞𝐧𝐭/DMedia";
 var dotScrpt = scriptName.slice(0, -3).toLowerCase();
 import { downloadContentFromMessage } from "@adiwajshing/baileys";
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
@@ -57,27 +57,26 @@ await TUF.getGroupMetaData(AʀƈȶɨӼ.chatId, AʀƈȶɨӼ);
 console.log("💡Is Bot Group Admin: " + AʀƈȶɨӼ.isBotGroupAdmin);
 console.log("💡Is Sender Group Admin: " + AʀƈȶɨӼ.isSenderGroupAdmin);
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-const ToSticker = async (
-FileID: string,
-FileSocket: { message: any; type: any }
-): Promise<void> => {
-const FileName: string = "./𝐀𝐫𝐜𝐭𝐢𝐱🐞𝐁𝐞𝐞𝐭𝐥𝐞" + FileID + ".jpeg";
-const FileStream: Transform = await downloadContentFromMessage(
-FileSocket.message,
-FileSocket.type
-);
-};
-//" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-if (AʀƈȶɨӼ.isImage) {
+if (AʀƈȶɨӼ.type === "image" || AʀƈȶɨӼ.isReplyImage) {
 var FileSocketObject = {
-message:
-AʀƈȶɨӼ.type === "image"
-? Fox.message.imageMessage
-: Fox.message.videoMessage,
-type: AʀƈȶɨӼ.type,
+message: AʀƈȶɨӼ.isReplyImage
+? Fox.message.extendedTextMessage.contextInfo.quotedMessage
+.imageMessage
+: Fox.message.extendedTextMessage.contextInfo.quotedMessage
+.videoMessage,
+type: AʀƈȶɨӼ.isReplyImage ? "image" : "video",
 };
-var FileID: string = Fox.key.id;
-await ToSticker(FileID, FileSocketObject);
+var FileID: string =
+Fox.message.extendedTextMessage.contextInfo.stanzaId;
+console.log("Passing To Processor...");
+return await DMedia.VDmed(
+TUF,
+Fox,
+ǟʀɢʊʍɛռȶ,
+AʀƈȶɨӼ,
+FileID,
+FileSocketObject
+);
 }
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 } catch (error) {
