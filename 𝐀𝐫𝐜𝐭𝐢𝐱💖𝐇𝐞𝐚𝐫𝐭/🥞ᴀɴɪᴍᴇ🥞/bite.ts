@@ -16,7 +16,7 @@ import { proto } from "@adiwajshing/baileys";
 const VOID = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/void`);
 import Client from "../../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/TUF";
 import AʀƈȶɨӼ from "../../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/msb";
-const ffmpeg = require(`fluent-ffmpeg`);
+const FFMPEF = require(`fluent-ffmpeg`);
 const anime = require(`anime-actions`);
 import ʟᴀʏᴏᴜᴛ from "../../𝐀𝐫𝐜𝐭𝐢𝐱🀄𝐕𝐞𝐧𝐭/ʟᴀʏᴏᴜᴛ";
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
@@ -92,7 +92,7 @@ if (ǟʀɢʊʍɛռȶ[0] && ǟʀɢʊʍɛռȶ[0].startsWith("@")) {
 await ӄ𝖗𝖞ӄ𝖓𝖟.sendPresenceUpdate("composing", AʀƈȶɨӼ.chatId);
 var TagPerson = ǟʀɢʊʍɛռȶ[0].replace(/[^0-9]/g, "");
 var TagMention = TagPerson + "@s.whatsapp.net";
-ffmpeg(Fresh_File)
+FFMPEF(Fresh_File)
 .outputOptions([
 `-pix_fmt yuv420p`,
 `-c:v libx264`,
@@ -124,7 +124,7 @@ await ӄ𝖗𝖞ӄ𝖓𝖟.sendPresenceUpdate("composing", AʀƈȶɨӼ.chatId);
 var Receiver = Fox.message.extendedTextMessage.contextInfo.participant;
 var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
 if (Receiver === ʟɴᴀᴍᴇ) {
-ffmpeg(Fresh_File)
+FFMPEF(Fresh_File)
 .outputOptions([
 `-pix_fmt yuv420p`,
 `-c:v libx264`,
@@ -151,7 +151,7 @@ return await VOID.VOID(Composed_File, Fresh_File);
 });
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 } else {
-ffmpeg(Fresh_File)
+FFMPEF(Fresh_File)
 .outputOptions([
 `-pix_fmt yuv420p`,
 `-c:v libx264`,
@@ -181,7 +181,7 @@ return await VOID.VOID(Composed_File, Fresh_File);
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 } else {
 await ӄ𝖗𝖞ӄ𝖓𝖟.sendPresenceUpdate("composing", AʀƈȶɨӼ.chatId);
-ffmpeg(Fresh_File)
+FFMPEF(Fresh_File)
 .outputOptions([
 `-pix_fmt yuv420p`,
 `-c:v libx264`,
