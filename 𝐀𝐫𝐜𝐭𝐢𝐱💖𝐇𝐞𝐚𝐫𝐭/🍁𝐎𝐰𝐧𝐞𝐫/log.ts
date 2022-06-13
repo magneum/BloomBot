@@ -22,7 +22,7 @@ var dotScrpt = scriptName.slice(0, -3).toLowerCase();
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 export = {
 name: dotScrpt,
-category: __dirname,
+category: path.basename(__dirname),
 async handle(
 TUF: Client,
 Fox: proto.IWebMessageInfo,
@@ -84,10 +84,9 @@ console.log("💡Receiver: " + քɛʀֆօռɢօȶռʊʍ);
 // await ӄ𝖗𝖞ӄ𝖓𝖟.sendPresenceUpdate("recording", AʀƈȶɨӼ.chatId);
 // await ӄ𝖗𝖞ӄ𝖓𝖟.sendPresenceUpdate("paused", AʀƈȶɨӼ.chatId);
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-console.log(AʀƈȶɨӼ);
 return await TUF.sendMessage(
 AʀƈȶɨӼ.chatId,
-"Hello There: @" + ᴘɴᴀᴍᴇ,
+"Hello There: @" + ᴘɴᴀᴍᴇ + "\n\n" + path.basename(__dirname),
 MessageType.text,
 {
 quoted: Fox,

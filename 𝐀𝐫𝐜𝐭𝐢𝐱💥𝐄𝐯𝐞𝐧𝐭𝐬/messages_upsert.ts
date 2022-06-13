@@ -47,7 +47,7 @@ const command = commandHandler.get(AʀƈȶɨӼ.commandName);
 console.log(
 Kolor.blueBright(
 `💡𝐈𝐧𝐟𝐨: 
-${AʀƈȶɨӼ.commandName.toUpperCase()} command executed.
+${AʀƈȶɨӼ.commandName} command executed.
 ${command.category} command Category.`
 )
 );

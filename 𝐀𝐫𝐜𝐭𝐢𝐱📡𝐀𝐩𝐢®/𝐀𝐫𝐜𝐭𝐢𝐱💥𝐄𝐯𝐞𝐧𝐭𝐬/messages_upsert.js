@@ -49,8 +49,10 @@ const messages_upsert = (update, ӄʀʏȶɛӄ, commandHandler) => __awaiter(void
     //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
     if (AʀƈȶɨӼ.isCmd) {
         console.log(AʀƈȶɨӼ);
-        console.log(chalk_1.default.blueBright.bold(`💡𝐈𝐧𝐟𝐨: ${AʀƈȶɨӼ.commandName.toUpperCase()} command executed.`));
         const command = commandHandler.get(AʀƈȶɨӼ.commandName);
+        console.log(chalk_1.default.blueBright(`💡𝐈𝐧𝐟𝐨: 
+${AʀƈȶɨӼ.commandName} command executed.
+${command.category} command Category.`));
         var ǟʀɢʊʍɛռȶ = AʀƈȶɨӼ.body.trim().split(/\s+/).slice(1);
         //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
         yield Silent_1.default.VSln(TUF, Fox, AʀƈȶɨӼ, ӄʀʏȶɛӄ);

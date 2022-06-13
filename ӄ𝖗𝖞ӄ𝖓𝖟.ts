@@ -69,17 +69,22 @@ chalkAnimation.rainbow(
 );
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 let commandHandler: Map<string, Command> = new Map();
-let FFolders: string[] = fs.readdirSync(join(__dirname, "𝐀𝐫𝐜𝐭𝐢𝐱💖𝐇𝐞𝐚𝐫𝐭"));
-for (const FFiles of FFolders) {
-const AllFFiles = fs
-.readdirSync(join(__dirname, `./𝐀𝐫𝐜𝐭𝐢𝐱💖𝐇𝐞𝐚𝐫𝐭/${FFiles}`))
+let Folders: string[] = fs.readdirSync(join(__dirname, "𝐀𝐫𝐜𝐭𝐢𝐱💖𝐇𝐞𝐚𝐫𝐭"));
+for (const Files of Folders) {
+const AllFiles = fs
+.readdirSync(join(__dirname, `./𝐀𝐫𝐜𝐭𝐢𝐱💖𝐇𝐞𝐚𝐫𝐭/${Files}`))
 .filter((File) => File.endsWith(`.js`));
-for (const File of AllFFiles) {
-const command = require(`./𝐀𝐫𝐜𝐭𝐢𝐱💖𝐇𝐞𝐚𝐫𝐭/${FFiles}/${File}`);
+for (const File of AllFiles) {
+const command = require(`./𝐀𝐫𝐜𝐭𝐢𝐱💖𝐇𝐞𝐚𝐫𝐭/${Files}/${File}`);
 try {
 commandHandler.set(command.name, command);
+console.log(Kolor.green(Files + " :") + Kolor.blue(File + " ✔️"));
 } catch (error) {
-console.log(`❌𝐄𝐫𝐫𝐨𝐫: Could not import module [ ${File} ]`, error);
+console.log(
+Kolor.red("❌𝐄𝐫𝐫𝐨𝐫: " + error + " | ") +
+Kolor.green(Files + " :") +
+Kolor.blue(File)
+);
 continue;
 }
 }

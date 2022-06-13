@@ -27,7 +27,7 @@ var scriptName = path.basename(__filename);
 var dotScrpt = scriptName.slice(0, -3).toLowerCase();
 export = {
 name: dotScrpt,
-category: __dirname,
+category: path.basename(__dirname),
 async handle(
 TUF: Client,
 Fox: proto.IWebMessageInfo,

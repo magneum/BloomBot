@@ -31,7 +31,6 @@ if (type === MessageType.text) {
 ops = {
 text: content,
 };
-console.clear();
 console.log(options);
 if (options?.contextInfo?.mentionedJid) {
 ops.mentions = options.contextInfo.mentionedJid;
@@ -53,6 +52,7 @@ image: content,
 if (options?.caption) {
 ops.caption = options.caption;
 }
+console.log(options);
 res = await this.ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(jid, ops);
 } else if (type == MessageType.audio) {
 res = await this.ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(jid, {
@@ -68,6 +68,7 @@ video: content,
 if (options?.caption) {
 ops.caption = options.caption;
 }
+console.log(options);
 res = await this.ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(jid, ops);
 } else if (type === MessageType.document) {
 ops = {
@@ -80,6 +81,7 @@ if (options?.mimetype) {
 ops2.mimetype = options.mimetype;
 ops2.fileName = options.filename;
 }
+console.log(options);
 await this.ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(jid, ops);
 res = await this.ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(jid, ops2);
 }

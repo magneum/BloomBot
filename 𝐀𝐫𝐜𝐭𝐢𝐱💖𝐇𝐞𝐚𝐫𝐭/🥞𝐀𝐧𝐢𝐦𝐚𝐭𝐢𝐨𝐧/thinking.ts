@@ -40,7 +40,7 @@ var dotScrpt = scriptName.slice(0, -3).toLowerCase();
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 export = {
 name: dotScrpt,
-category: __dirname,
+category: path.basename(__dirname),
 async handle(
 TUF: Client,
 Fox: proto.IWebMessageInfo,
