@@ -21,9 +21,9 @@ timestamp: Date(),
 contextInfo: { mentionedJid: [AʀƈȶɨӼ.sender] },
 text: `
 ┌✼  𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®
-│ *Tαɠ:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g,"")}
+│ *ᴛᴀɢ:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g,"")}
 │ *ɴᴀᴍᴇ:* ${Fox.pushName}
-ᴄᴏᴍᴍᴀɴᴅ
+│ ᴄᴏᴍᴍᴀɴᴅ
 └✼
 
 ❌𝐄𝐫𝐫𝐨𝐫: Argument Needed To Run This Command.`,
