@@ -26,7 +26,7 @@ const Link_Proctectron = async (
 TUF: any,
 Fox: any,
 AʀƈȶɨӼ: any,
-ӄʀʏȶɛӄ: any
+ӄ𝖗𝖞ӄ𝖓𝖟: any
 ): Promise<void> => {
 try {
 if (
@@ -43,7 +43,7 @@ serverID: AʀƈȶɨӼ.chatId,
 async (error: any, server: any) => {
 if (error) return console.log(error);
 if (!server) return;
-let FetchCurrentGroupLink = await ӄʀʏȶɛӄ.groupInviteCode(AʀƈȶɨӼ.chatId);
+let FetchCurrentGroupLink = await ӄ𝖗𝖞ӄ𝖓𝖟.groupInviteCode(AʀƈȶɨӼ.chatId);
 let GroupLinkRegex = /Fox.whatsapp.com\/([0-9A-Za-z]{20,24})/i;
 let isGroupLink = GroupLinkRegex.exec(AʀƈȶɨӼ.body);
 let PresentGroupLink = new RegExp(
@@ -74,7 +74,7 @@ AʀƈȶɨӼ,
 🐾 Telegram Link`,
 "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png"
 );
-return await ӄʀʏȶɛӄ
+return await ӄ𝖗𝖞ӄ𝖓𝖟
 .groupRemove(AʀƈȶɨӼ.chatId, [AʀƈȶɨӼ.sender])
 .catch((error: any) => console.log(error));
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
@@ -107,7 +107,7 @@ AʀƈȶɨӼ,
 🐾 Telegram Link`,
 "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png"
 );
-return await ӄʀʏȶɛӄ
+return await ӄ𝖗𝖞ӄ𝖓𝖟
 .groupRemove(AʀƈȶɨӼ.chatId, [AʀƈȶɨӼ.sender])
 .catch((error: any) => console.log(error));
 } else {
