@@ -26,7 +26,7 @@ import { proto } from "@adiwajshing/baileys";
 const VOID = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/void`);
 import Client from "../../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/TUF";
 import AʀƈȶɨӼ from "../../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/msb";
-import inputSanitization from "../../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/input-sanitization";
+import Zues from "../../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/input-sanitization";
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 import * as fs from "fs";
 import path from "path";
@@ -100,7 +100,7 @@ const reply = Fox.message.extendedTextMessage;
 if (AʀƈȶɨӼ.isTextReply) {
 var HOOM = reply.contextInfo.participant.split("@")[0];
 } else {
-var HOOM = await inputSanitization.getCleanedContact(
+var HOOM = await Zues.getCleanedContact(
 ǟʀɢʊʍɛռȶ,
 TUF,
 AʀƈȶɨӼ
@@ -108,7 +108,7 @@ AʀƈȶɨӼ
 }
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 var admin = false;
-var isMember = await inputSanitization.isMember(
+var isMember = await Zues.isMember(
 HOOM,
 AʀƈȶɨӼ.groupMembers
 );
