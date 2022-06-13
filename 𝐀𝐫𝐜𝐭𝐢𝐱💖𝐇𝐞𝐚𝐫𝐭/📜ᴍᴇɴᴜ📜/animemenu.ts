@@ -34,8 +34,7 @@ timestamp: Date(),
 image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png" },
 caption: `
 ╔◇✥𝐔𝐬𝐞𝐫: ${Fox.pushName}
-║🦋 𝐀𝐫𝐜𝐭𝐢𝐱: _Is an Advance Whatsapp User-Bot!_
-║🛰️ 𝐖𝐞𝐛𝐬𝐢𝐭𝐞: _VlkyreAI.krakinzkon.repl.co_
+
 ╚◇════════════◇꧂
 
 ╔════⧉🍙 𝐀𝐧𝐢𝐦𝐞
