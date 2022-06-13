@@ -188,8 +188,8 @@ contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ, Receiver] },
 .catch((error: any) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
 return await VOID.VOID(GiveFile, GotFile);
 });
+} 
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-} else
 ffmpeg(GotFile)
 .outputOptions([
 `-pix_fmt yuv420p`,
