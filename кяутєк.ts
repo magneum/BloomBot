@@ -19,7 +19,7 @@ import Vmangos from "mongoose";
 import Pot, { Logger } from "pino";
 import ʟᴀʏᴏᴜᴛ from "./𝐀𝐫𝐜𝐭𝐢𝐱🀄𝐕𝐞𝐧𝐭/ʟᴀʏᴏᴜᴛ";
 import { Sequelize } from "sequelize/types";
-import chalkAnimation from "chalk-Animation";
+const chalkAnimation = require('chalkercli');
 import Command from "./𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/command";
 import useRemoteFileAuthState from "./𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/dbAuth";
 import messages_upsert from "./𝐀𝐫𝐜𝐭𝐢𝐱💥𝐄𝐯𝐞𝐧𝐭𝐬/messages_upsert";
