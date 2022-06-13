@@ -27,7 +27,7 @@ TUF: Client,
 Fox: proto.IWebMessageInfo,
 AʀƈȶɨӼ: AʀƈȶɨӼ,
 ǟʀɢʊʍɛռȶ: string[],
-ӄʀʏȶɛӄ: any
+ӄ𝖗𝖞ӄ𝖓𝖟: any
 ): Promise<void> {
 const ʟɴᴀᴍᴇ = AʀƈȶɨӼ.sender;
 const ᴅꜰɴᴀᴍᴇ = AʀƈȶɨӼ.commandName;
@@ -77,11 +77,11 @@ console.log("💡Receiver: " + քɛʀֆօռɢօȶռʊʍ);
 // );
 // }
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-// await ӄʀʏȶɛӄ.sendPresenceUpdate("unavailable", AʀƈȶɨӼ.chatId);
-// await ӄʀʏȶɛӄ.sendPresenceUpdate("available", AʀƈȶɨӼ.chatId);
-// await ӄʀʏȶɛӄ.sendPresenceUpdate("composing", AʀƈȶɨӼ.chatId);
-// await ӄʀʏȶɛӄ.sendPresenceUpdate("recording", AʀƈȶɨӼ.chatId);
-// await ӄʀʏȶɛӄ.sendPresenceUpdate("paused", AʀƈȶɨӼ.chatId);
+// await ӄ𝖗𝖞ӄ𝖓𝖟.sendPresenceUpdate("unavailable", AʀƈȶɨӼ.chatId);
+// await ӄ𝖗𝖞ӄ𝖓𝖟.sendPresenceUpdate("available", AʀƈȶɨӼ.chatId);
+// await ӄ𝖗𝖞ӄ𝖓𝖟.sendPresenceUpdate("composing", AʀƈȶɨӼ.chatId);
+// await ӄ𝖗𝖞ӄ𝖓𝖟.sendPresenceUpdate("recording", AʀƈȶɨӼ.chatId);
+// await ӄ𝖗𝖞ӄ𝖓𝖟.sendPresenceUpdate("paused", AʀƈȶɨӼ.chatId);
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 console.log(AʀƈȶɨӼ);
 return await TUF.sendMessage(
