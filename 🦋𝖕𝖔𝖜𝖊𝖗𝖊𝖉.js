@@ -24,7 +24,7 @@ if (
 shell.exec(
 `git pull && git add --all && git commit -am "❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 : ${
 vers.vers
-} 🦋 𝐃𝐚𝐭𝐞: ${
+} 📡 𝐃𝐚𝐭𝐞: ${
 year +
 "-" +
 month +
