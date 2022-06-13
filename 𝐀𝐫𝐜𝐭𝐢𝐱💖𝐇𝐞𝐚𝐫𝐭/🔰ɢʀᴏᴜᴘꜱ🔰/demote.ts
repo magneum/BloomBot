@@ -40,7 +40,7 @@ TUF: Client,
 Fox: proto.IWebMessageInfo,
 AʀƈȶɨӼ: AʀƈȶɨӼ,
 ǟʀɢʊʍɛռȶ: string[],
-ӄʀʏȶɛӄ
+ӄ𝖗𝖞ӄ𝖓𝖟
 ): Promise<void> {
 try {
 const ʟɴᴀᴍᴇ = AʀƈȶɨӼ.sender;
@@ -134,7 +134,7 @@ AʀƈȶɨӼ,
 if (isMember) {
 if (admin) {
 const arr = [HOOM + "@s.whatsapp.net"];
-await ӄʀʏȶɛӄ.groupParticipantsUpdate(
+await ӄ𝖗𝖞ӄ𝖓𝖟.groupParticipantsUpdate(
 AʀƈȶɨӼ.chatId,
 arr,
 "demote"

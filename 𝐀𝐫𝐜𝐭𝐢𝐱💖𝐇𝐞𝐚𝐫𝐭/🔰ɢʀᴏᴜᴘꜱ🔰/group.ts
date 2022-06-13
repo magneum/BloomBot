@@ -40,7 +40,7 @@ TUF: Client,
 Fox: proto.IWebMessageInfo,
 AʀƈȶɨӼ: AʀƈȶɨӼ,
 ǟʀɢʊʍɛռȶ: string[],
-ӄʀʏȶɛӄ
+ӄ𝖗𝖞ӄ𝖓𝖟
 ): Promise<void> {
 try {
 const ʟɴᴀᴍᴇ = AʀƈȶɨӼ.sender;
@@ -85,7 +85,7 @@ AʀƈȶɨӼ,
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 let 𝕻𝕻𝖑𝖊𝖙𝖊𝖗: string;
 try {
-𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄʀʏȶɛӄ.profilePictureUrl(
+𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄ𝖗𝖞ӄ𝖓𝖟.profilePictureUrl(
 jidNormalizedUser(AʀƈȶɨӼ.chatId)
 );
 } catch {
@@ -97,7 +97,7 @@ if (
 ǟʀɢʊʍɛռȶ[0] === `Close` ||
 ǟʀɢʊʍɛռȶ[0] === `close`
 ) {
-await ӄʀʏȶɛӄ.groupSettingUpdate(AʀƈȶɨӼ.chatId, "announcement");
+await ӄ𝖗𝖞ӄ𝖓𝖟.groupSettingUpdate(AʀƈȶɨӼ.chatId, "announcement");
 return Image_Button.VImg(
 TUF,
 Fox,
@@ -111,7 +111,7 @@ AʀƈȶɨӼ,
 ǟʀɢʊʍɛռȶ[0] === `Open` ||
 ǟʀɢʊʍɛռȶ[0] === `open`
 ) {
-await ӄʀʏȶɛӄ.groupSettingUpdate(AʀƈȶɨӼ.chatId, "not_announcement");
+await ӄ𝖗𝖞ӄ𝖓𝖟.groupSettingUpdate(AʀƈȶɨӼ.chatId, "not_announcement");
 return Image_Button.VImg(
 TUF,
 Fox,
