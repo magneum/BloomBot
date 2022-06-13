@@ -32,8 +32,8 @@ const ʟᴀʏᴏᴜᴛ = {
 Ten: process.env.Ten,
 VMango: process.env.VMango,
 Spotify_Id: process.env.Spotify_Id,
-HEROKU_API_KEY: process.env.HEROKU_API_KEY,
-HEROKU_APP_NAME: process.env.HEROKU_APP_NAME,
+Heroku_Api: process.env.Heroku_Api,
+Heroku_App: process.env.Heroku_App,
 Spotify_Client_Id: process.env.Spotify_Client_Id,
 MuveOn: process.env.PREFIX === undefined ? "/" : process.env.PREFIX,
 STRING_SESSION:

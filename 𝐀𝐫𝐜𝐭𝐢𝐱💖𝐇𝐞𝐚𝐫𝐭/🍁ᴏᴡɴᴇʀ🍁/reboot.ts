@@ -53,14 +53,29 @@ await TUF.getGroupMetaData(AʀƈȶɨӼ.chatId, AʀƈȶɨӼ);
 console.log("💡Is Bot Group Admin: " + AʀƈȶɨӼ.isBotGroupAdmin);
 console.log("💡Is Sender Group Admin: " + AʀƈȶɨӼ.isSenderGroupAdmin);
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
+if (!AʀƈȶɨӼ.fromMe && !AʀƈȶɨӼ.isSenderTUFs) {
+return Image_Button.VImg(
+TUF,
+Fox,
+AʀƈȶɨӼ,
+`❌𝐃𝐞𝐧𝐢𝐞𝐝: _Owner/Dev Only.You Are Not Allowed!_`,
+"./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png"
+);
+}
+//" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 var Heroku = new Heroku({
-token: ʟᴀʏᴏᴜᴛ.HEROKU_API_KEY,
+token: ʟᴀʏᴏᴜᴛ.Heroku_Api,
 });
-
-
-
-
-
+await Image_Button.VImg(
+TUF,
+Fox,
+AʀƈȶɨӼ,
+`💡𝐈𝐧𝐟𝐨: Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 is now rebootig itself and it's servers..`,
+"./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png"
+);
+await Heroku.delete(`/apps/${ʟᴀʏᴏᴜᴛ.Heroku_App}/dynos/worker`).catch(
+(error: any) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error)
+);
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 } catch (error) {
 return Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error);
