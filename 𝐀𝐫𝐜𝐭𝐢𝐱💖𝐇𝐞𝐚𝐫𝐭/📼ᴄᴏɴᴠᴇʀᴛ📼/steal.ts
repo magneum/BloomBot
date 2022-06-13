@@ -23,110 +23,76 @@ var scriptName = path.basename(__filename);
 var dotScrpt = scriptName.slice(0, -3).toLowerCase();
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 export = {
-  name: dotScrpt,
-  async handle(
-    TUF: Client,
-    Fox: proto.IWebMessageInfo,
-    AʀƈȶɨӼ: AʀƈȶɨӼ,
-    ǟʀɢʊʍɛռȶ: string[],
-    ӄ𝖗𝖞ӄ𝖓𝖟
-  ): Promise<void> {
-    try {
-      const ʟɴᴀᴍᴇ = AʀƈȶɨӼ.sender;
-      const ᴅꜰɴᴀᴍᴇ = AʀƈȶɨӼ.commandName;
-      const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/[^\d+]/g, "");
-      const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
-      //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-      console.log("💡Is Group: " + AʀƈȶɨӼ.isGroup);
-      await TUF.getGroupMetaData(AʀƈȶɨӼ.chatId, AʀƈȶɨӼ);
-      console.log("💡Is Bot Group Admin: " + AʀƈȶɨӼ.isBotGroupAdmin);
-      console.log("💡Is Sender Group Admin: " + AʀƈȶɨӼ.isSenderGroupAdmin);
-      //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-      if (AʀƈȶɨӼ.isImage || AʀƈȶɨӼ.isGIF || AʀƈȶɨӼ.isVideo) {
-        var FileSocketObject = {
-          message:
-            AʀƈȶɨӼ.type === "image"
-              ? Fox.message.imageMessage
-              : Fox.message.videoMessage,
-          type: AʀƈȶɨӼ.type,
-        };
-        var FileID: string = Fox.key.id;
-        await ToSticker.VStk(
-          TUF,
-          Fox,
-          ǟʀɢʊʍɛռȶ,
-          AʀƈȶɨӼ,
-          FileID,
-          FileSocketObject
-        );
-        //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-      } else if (
-        AʀƈȶɨӼ.isReplyImage ||
-        AʀƈȶɨӼ.isReplyGIF ||
-        AʀƈȶɨӼ.isReplyVideo
-      ) {
-        var FileSocketObject = {
-          message: AʀƈȶɨӼ.isReplyImage
-            ? Fox.message.extendedTextMessage.contextInfo.quotedMessage
-                .imageMessage
-            : Fox.message.extendedTextMessage.contextInfo.quotedMessage
-                .videoMessage,
-          type: AʀƈȶɨӼ.isReplyImage ? "image" : "video",
-        };
-        var FileID: string =
-          Fox.message.extendedTextMessage.contextInfo.stanzaId;
-        await ToSticker.VStk(
-          TUF,
-          Fox,
-          ǟʀɢʊʍɛռȶ,
-          AʀƈȶɨӼ,
-          FileID,
-          FileSocketObject
-        );
-        //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-      } else {
-        return FoxNeeded.VFox(
-          TUF,
-          Fox,
-          AʀƈȶɨӼ,
-          `Option 1 - reply to media: ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()}
-        Option 2 - reply to media: ${
-          ʟᴀʏᴏᴜᴛ.MuveOn
-        }${dotScrpt.toUpperCase()} _<sticker title>_
-        
-        ╔════◇ *Supported Media Types* ꧂
-        ║- Image
-        ║- Video (10s)
-        ║- PNG
-        ║- JPEG
-        ║- WEBP
-        ╚════════════╝`,
-          dotScrpt
-        );
-      }
-      //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-    } catch (error) {
-      await TUF.sendMessage(
-        AʀƈȶɨӼ.chatId,
-        {
-          text: `✥𝐔𝐬𝐞𝐫: ${Fox.pushName} 
-
-Press Below To Read How To Use This Command!`,
-          footer: "⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ⦔",
-          title: `🔸𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()}`,
-          buttonText: "❝ How To Use? ❞",
-          sections: [
-            {
-              title: "𝐀𝐑𝐆𝐔𝐌𝐄𝐍𝐓 𝐍𝐄𝐄𝐃𝐄𝐃!",
-              rows: [
-                {
-                  title: "⚡𝐔𝐬𝐚𝐠𝐞",
-                  rowId: "argument required...",
-                  description: `💡𝐈𝐧𝐟𝐨: In order to use this command, you must follow below instructions:
-Option 1 - reply to media: ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()}
+name: dotScrpt,
+async handle(
+TUF: Client,
+Fox: proto.IWebMessageInfo,
+AʀƈȶɨӼ: AʀƈȶɨӼ,
+ǟʀɢʊʍɛռȶ: string[],
+ӄ𝖗𝖞ӄ𝖓𝖟
+): Promise<void> {
+try {
+const ʟɴᴀᴍᴇ = AʀƈȶɨӼ.sender;
+const ᴅꜰɴᴀᴍᴇ = AʀƈȶɨӼ.commandName;
+const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/[^\d+]/g, "");
+const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
+//" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
+console.log("💡Is Group: " + AʀƈȶɨӼ.isGroup);
+await TUF.getGroupMetaData(AʀƈȶɨӼ.chatId, AʀƈȶɨӼ);
+console.log("💡Is Bot Group Admin: " + AʀƈȶɨӼ.isBotGroupAdmin);
+console.log("💡Is Sender Group Admin: " + AʀƈȶɨӼ.isSenderGroupAdmin);
+//" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
+if (AʀƈȶɨӼ.isImage || AʀƈȶɨӼ.isGIF || AʀƈȶɨӼ.isVideo) {
+var FileSocketObject = {
+message:
+AʀƈȶɨӼ.type === "image"
+? Fox.message.imageMessage
+: Fox.message.videoMessage,
+type: AʀƈȶɨӼ.type,
+};
+var FileID: string = Fox.key.id;
+await ToSticker.VStk(
+TUF,
+Fox,
+ǟʀɢʊʍɛռȶ,
+AʀƈȶɨӼ,
+FileID,
+FileSocketObject
+);
+//" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
+} else if (
+AʀƈȶɨӼ.isReplyImage ||
+AʀƈȶɨӼ.isReplyGIF ||
+AʀƈȶɨӼ.isReplyVideo
+) {
+var FileSocketObject = {
+message: AʀƈȶɨӼ.isReplyImage
+? Fox.message.extendedTextMessage.contextInfo.quotedMessage
+.imageMessage
+: Fox.message.extendedTextMessage.contextInfo.quotedMessage
+.videoMessage,
+type: AʀƈȶɨӼ.isReplyImage ? "image" : "video",
+};
+var FileID: string =
+Fox.message.extendedTextMessage.contextInfo.stanzaId;
+await ToSticker.VStk(
+TUF,
+Fox,
+ǟʀɢʊʍɛռȶ,
+AʀƈȶɨӼ,
+FileID,
+FileSocketObject
+);
+//" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
+} else {
+return FoxNeeded.VFox(
+TUF,
+Fox,
+AʀƈȶɨӼ,
+`Option 1 - reply to media: ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()}
 Option 2 - reply to media: ${
-                    ʟᴀʏᴏᴜᴛ.MuveOn
-                  }${dotScrpt.toUpperCase()} _<sticker title>_
+ʟᴀʏᴏᴜᴛ.MuveOn
+}${dotScrpt.toUpperCase()} _<sticker title>_
 
 ╔════◇ *Supported Media Types* ꧂
 ║- Image
@@ -135,15 +101,31 @@ Option 2 - reply to media: ${
 ║- JPEG
 ║- WEBP
 ╚════════════╝`,
-                },
-              ],
-            },
-          ],
-        },
-        MessageType.buttonsMessage
-      );
-    }
-  },
+dotScrpt
+);
+}
+//" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
+} catch (error) {
+return FoxNeeded.VFox(
+TUF,
+Fox,
+AʀƈȶɨӼ,
+`Option 1 - reply to media: ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()}
+Option 2 - reply to media: ${
+ʟᴀʏᴏᴜᴛ.MuveOn
+}${dotScrpt.toUpperCase()} _<sticker title>_
+
+╔════◇ *Supported Media Types* ꧂
+║- Image
+║- Video (10s)
+║- PNG
+║- JPEG
+║- WEBP
+╚════════════╝`,
+dotScrpt
+);
+}
+},
 };
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 /*        
