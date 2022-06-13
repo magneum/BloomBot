@@ -29,7 +29,10 @@ await TUF.sendMessage(
 AʀƈȶɨӼ.chatId,
 {
 image: { url: media },
-caption: `|❝ 𝐔𝐬𝐞𝐫: ${Fox.pushName} ❞|
+caption: `╔◇  𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®
+║ *ƬΛG:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g,"")}
+║ *ПΛMΣ:* ${Fox.pushName}
+╚◇══════════════◇
 
 ${caption}`,
 footer: `⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ${Personality} ⦔`,

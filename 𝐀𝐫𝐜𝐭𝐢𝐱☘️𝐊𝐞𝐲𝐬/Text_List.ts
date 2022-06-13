@@ -25,7 +25,10 @@ Personality = "🐾";
 await TUF.sendMessage(
 AʀƈȶɨӼ.chatId,
 {
-text: `|❝ 𝐔𝐬𝐞𝐫: ${Fox.pushName} ❞|
+text: `╔◇  𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®
+║ *ƬΛG:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g,"")}
+║ *ПΛMΣ:* ${Fox.pushName}
+╚◇══════════════◇
 
 ${caption}`,
 footer: `⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ${Personality} ⦔`,

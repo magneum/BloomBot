@@ -31,13 +31,8 @@ module.exports = {
     handle(TUF, Fox, AʀƈȶɨӼ, ǟʀɢʊʍɛռȶ, ӄʀʏȶɛӄ) {
         return __awaiter(this, void 0, void 0, function* () {
             yield TUF.sendMessage(AʀƈȶɨӼ.chatId, {
-                quoted: Fox.message,
-                contextInfo: {
-                    mentionedJid: [AʀƈȶɨӼ.sender],
-                },
-                timestamp: Date(),
                 image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png" },
-                caption: `╔◇  𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®\n║ *ƬΛG:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}\mv\n║ *ПΛMΣ:* ${Fox.pushName}\n╚◇══════════════◇
+                caption: `╔◇  𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®║ *ƬΛG:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}\n║ *ПΛMΣ:* ${Fox.pushName}\n╚◇══════════════◇
 
 ╔◇🧀𝐍𝐨 𝐑𝐞𝐬𝐭𝐫𝐢𝐜𝐭𝐢𝐨𝐧🧀
 ║

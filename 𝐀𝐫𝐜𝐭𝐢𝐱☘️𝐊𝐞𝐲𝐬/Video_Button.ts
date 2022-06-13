@@ -34,7 +34,10 @@ mentionedJid: [AʀƈȶɨӼ.sender],
 timestamp: Date(),
 video: { url: media },
 mimetype: "video/mp4",
-caption: `|❝ 𝐔𝐬𝐞𝐫: ${Fox.pushName} ❞|
+caption: `╔◇  𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®
+║ *ƬΛG:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g,"")}
+║ *ПΛMΣ:* ${Fox.pushName}
+╚◇══════════════◇
 
 ${caption}`,
 footer: `⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ${Personality} ⦔`,
