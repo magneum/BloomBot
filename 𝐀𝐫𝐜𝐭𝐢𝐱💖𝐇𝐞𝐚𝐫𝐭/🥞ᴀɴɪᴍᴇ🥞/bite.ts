@@ -61,7 +61,7 @@ console.log("💡𝐈𝐧𝐟𝐨: Receiver: " + քɛʀֆօռɢօȶռʊʍ);
 let FinalLink: any;
 let AnimeLink: any = await anime.bite();
 let GotFile: any = `./${Fox.key.id}${Date.now()}.gif`;
-let GiveFile: any = `./${Fox.key.id}${Date.now()}.mp4`;
+let Composed_File: any = `./${Fox.key.id}${Date.now()}.mp4`;
 if (!AnimeLink.endsWith(`.gif`) && !AnimeLink.endsWith(`.mp4`)) {
 let anime2: any = require(`anime-actions`);
 FinalLink = await anime2.bite();
@@ -99,7 +99,7 @@ ffmpeg(GotFile)
 `-movflags +faststart`,
 `-filter:v crop='floor(in_w/2)*2:floor(in_h/2)*2'`,
 ])
-.save(GiveFile)
+.save(Composed_File)
 .on("end", async () => {
 await Sticker_Button.VSbt(
 TUF,
@@ -114,9 +114,9 @@ AʀƈȶɨӼ,
 
 🍕𝐅𝐫𝐨𝐦: _${Fox.pushName}_
 🌭𝐓𝐨: @${TagPerson}`,
-GiveFile
+Composed_File
 );
-return await VOID.VOID(GiveFile, GotFile);
+return await VOID.VOID(Composed_File, GotFile);
 });
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 } else if (AʀƈȶɨӼ.isTextReply) {
@@ -131,7 +131,7 @@ ffmpeg(GotFile)
 `-movflags +faststart`,
 `-filter:v crop='floor(in_w/2)*2:floor(in_h/2)*2'`,
 ])
-.save(GiveFile)
+.save(Composed_File)
 .on("end", async () => {
 await Sticker_Button.VSbt(
 TUF,
@@ -145,9 +145,9 @@ AʀƈȶɨӼ,
 ╚═════⟢
 
 🍕𝐅𝐨𝐫: _${Fox.pushName}_`,
-GiveFile
+Composed_File
 );
-return await VOID.VOID(GiveFile, GotFile);
+return await VOID.VOID(Composed_File, GotFile);
 });
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 } else {
@@ -158,7 +158,7 @@ ffmpeg(GotFile)
 `-movflags +faststart`,
 `-filter:v crop='floor(in_w/2)*2:floor(in_h/2)*2'`,
 ])
-.save(GiveFile)
+.save(Composed_File)
 .on("end", async () => {
 await Sticker_Button.VSbt(
 TUF,
@@ -173,9 +173,9 @@ AʀƈȶɨӼ,
 
 🍕𝐅𝐫𝐨𝐦: _${Fox.pushName}_
 🌭𝐓𝐨: _@${քɛʀֆօռɢօȶռʊʍ}_`,
-GiveFile
+Composed_File
 );
-return await VOID.VOID(GiveFile, GotFile);
+return await VOID.VOID(Composed_File, GotFile);
 });
 }
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
@@ -188,7 +188,7 @@ ffmpeg(GotFile)
 `-movflags +faststart`,
 `-filter:v crop='floor(in_w/2)*2:floor(in_h/2)*2'`,
 ])
-.save(GiveFile)
+.save(Composed_File)
 .on("end", async () => {
 await Sticker_Button.VSbt(
 TUF,
@@ -202,9 +202,9 @@ AʀƈȶɨӼ,
 ╚═════⟢
 
 🍕𝐅𝐨𝐫: _${Fox.pushName}_`,
-GiveFile
+Composed_File
 );
-return await VOID.VOID(GiveFile, GotFile);
+return await VOID.VOID(Composed_File, GotFile);
 });
 }
 } catch (error) {
