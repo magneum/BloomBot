@@ -84,7 +84,7 @@ TUF,
 Fox,
 AʀƈȶɨӼ,
 `Option 1 - reply to image with ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()}
-Option 1 - reply to image with ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()}`,
+Option 1 - send image with caption ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()}`,
 dotScrpt
 );
 }
