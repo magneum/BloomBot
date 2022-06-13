@@ -85,7 +85,12 @@ module.exports = {
             // await ӄʀʏȶɛӄ.sendPresenceUpdate("recording", AʀƈȶɨӼ.chatId);
             // await ӄʀʏȶɛӄ.sendPresenceUpdate("paused", AʀƈȶɨӼ.chatId);
             //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-            yield TUF.sendMessage(AʀƈȶɨӼ.chatId, "oh hello there", message_type_1.MessageType.text, Fox);
+            console.log(AʀƈȶɨӼ);
+            return yield TUF.sendMessage(AʀƈȶɨӼ.chatId, "Hello There: @" + ᴘɴᴀᴍᴇ, message_type_1.MessageType.text, {
+                quoted: AʀƈȶɨӼ.body,
+                timestamp: Date(),
+                contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
+            });
         });
     },
 };

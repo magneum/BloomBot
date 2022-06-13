@@ -17,9 +17,9 @@ import { Boom } from "@hapi/boom";
 import Kolor from "chalk";
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 const connection_update = async (
-update,
-DisconnectReason,
-startSock
+update: any,
+DisconnectReason: any,
+startSock: any
 ): Promise<void> => {
 const { connection, lastDisconnect } = update;
 if (connection === "close") {

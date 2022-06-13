@@ -13,7 +13,7 @@ import Client from "../../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞
 import AʀƈȶɨӼ from "../../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/msb";
 const Oops = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱☘️𝐊𝐞𝐲𝐬/Oops`);
 import ʟᴀʏᴏᴜᴛ from "../../𝐀𝐫𝐜𝐭𝐢𝐱🀄𝐕𝐞𝐧𝐭/ʟᴀʏᴏᴜᴛ";
-import { proto, MiscMessageGenerationOptions } from "@adiwajshing/baileys";
+import Mimetype, { proto } from "@adiwajshing/baileys";
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 import * as fs from "fs";
 import path from "path";
@@ -21,75 +21,80 @@ var scriptName = path.basename(__filename);
 var dotScrpt = scriptName.slice(0, -3).toLowerCase();
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 export = {
-  name: dotScrpt,
-  async handle(
-    TUF: Client,
-    Fox: proto.IWebMessageInfo,
-    AʀƈȶɨӼ: AʀƈȶɨӼ,
-    ǟʀɢʊʍɛռȶ: string[],
-    ӄʀʏȶɛӄ: any
-  ): Promise<void> {
-    const ʟɴᴀᴍᴇ = AʀƈȶɨӼ.sender;
-    const ᴅꜰɴᴀᴍᴇ = AʀƈȶɨӼ.commandName;
-    const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/[^\d+]/g, "");
-    const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
-    //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-    await TUF.getGroupMetaData(AʀƈȶɨӼ.chatId, AʀƈȶɨӼ);
-    console.log("💡Is Group: " + AʀƈȶɨӼ.isGroup);
-    console.log("💡Is Sender Group Admin: " + AʀƈȶɨӼ.isSenderGroupAdmin);
-    console.log("💡Is Bot Group Admin: " + AʀƈȶɨӼ.isBotGroupAdmin);
-    console.log("💡Is Reply Message: " + AʀƈȶɨӼ.replyMessage);
-    console.log("💡Is Text Reply: " + AʀƈȶɨӼ.isTextReply);
-    //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-    if (AʀƈȶɨӼ.isTextReply) {
-      var Receiver = Fox.message.extendedTextMessage.contextInfo.participant;
-      var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
-      if (Receiver === ʟɴᴀᴍᴇ) {
-        console.log("💡Receiver = Self: " + Fox.pushName);
-      } else {
-        console.log("💡Receiver: " + քɛʀֆօռɢօȶռʊʍ);
-      }
-    }
-    //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-    // if (AʀƈȶɨӼ.isSenderGroupAdmin) {
-    // await TUF.sendMessage(
-    // AʀƈȶɨӼ.chatId,
-    // "You Are Admin Of This Group: 🔰",
-    // MessageType.text
-    // );
-    // } else if (AʀƈȶɨӼ.isSenderGroupAdmin && AʀƈȶɨӼ.isSenderTUFs) {
-    // await TUF.sendMessage(
-    // AʀƈȶɨӼ.chatId,
-    // "You Are Admin+Tuf(dev tester): 👑+🔰",
-    // MessageType.text
-    // );
-    // } else if (!AʀƈȶɨӼ.isSenderGroupAdmin && AʀƈȶɨӼ.isSenderTUFs) {
-    // await TUF.sendMessage(
-    // AʀƈȶɨӼ.chatId,
-    // "You Are Tuf(dev tester): 👑",
-    // MessageType.text
-    // );
-    // } else {
-    // await TUF.sendMessage(
-    // AʀƈȶɨӼ.chatId,
-    // "You Are Normal User: 🐾",
-    // MessageType.text
-    // );
-    // }
-    //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-    // await ӄʀʏȶɛӄ.sendPresenceUpdate("unavailable", AʀƈȶɨӼ.chatId);
-    // await ӄʀʏȶɛӄ.sendPresenceUpdate("available", AʀƈȶɨӼ.chatId);
-    // await ӄʀʏȶɛӄ.sendPresenceUpdate("composing", AʀƈȶɨӼ.chatId);
-    // await ӄʀʏȶɛӄ.sendPresenceUpdate("recording", AʀƈȶɨӼ.chatId);
-    // await ӄʀʏȶɛӄ.sendPresenceUpdate("paused", AʀƈȶɨӼ.chatId);
-    //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-    await TUF.sendMessage(
-      AʀƈȶɨӼ.chatId,
-      "oh hello there",
-      MessageType.text,
-      Fox
-    );
-  },
+name: dotScrpt,
+async handle(
+TUF: Client,
+Fox: proto.IWebMessageInfo,
+AʀƈȶɨӼ: AʀƈȶɨӼ,
+ǟʀɢʊʍɛռȶ: string[],
+ӄʀʏȶɛӄ: any
+): Promise<void> {
+const ʟɴᴀᴍᴇ = AʀƈȶɨӼ.sender;
+const ᴅꜰɴᴀᴍᴇ = AʀƈȶɨӼ.commandName;
+const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/[^\d+]/g, "");
+const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
+//" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
+await TUF.getGroupMetaData(AʀƈȶɨӼ.chatId, AʀƈȶɨӼ);
+console.log("💡Is Group: " + AʀƈȶɨӼ.isGroup);
+console.log("💡Is Sender Group Admin: " + AʀƈȶɨӼ.isSenderGroupAdmin);
+console.log("💡Is Bot Group Admin: " + AʀƈȶɨӼ.isBotGroupAdmin);
+console.log("💡Is Reply Message: " + AʀƈȶɨӼ.replyMessage);
+console.log("💡Is Text Reply: " + AʀƈȶɨӼ.isTextReply);
+//" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
+if (AʀƈȶɨӼ.isTextReply) {
+var Receiver = Fox.message.extendedTextMessage.contextInfo.participant;
+var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
+if (Receiver === ʟɴᴀᴍᴇ) {
+console.log("💡Receiver = Self: " + Fox.pushName);
+} else {
+console.log("💡Receiver: " + քɛʀֆօռɢօȶռʊʍ);
+}
+}
+//" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
+// if (AʀƈȶɨӼ.isSenderGroupAdmin) {
+// await TUF.sendMessage(
+// AʀƈȶɨӼ.chatId,
+// "You Are Admin Of This Group: 🔰",
+// MessageType.text
+// );
+// } else if (AʀƈȶɨӼ.isSenderGroupAdmin && AʀƈȶɨӼ.isSenderTUFs) {
+// await TUF.sendMessage(
+// AʀƈȶɨӼ.chatId,
+// "You Are Admin+Tuf(dev tester): 👑+🔰",
+// MessageType.text
+// );
+// } else if (!AʀƈȶɨӼ.isSenderGroupAdmin && AʀƈȶɨӼ.isSenderTUFs) {
+// await TUF.sendMessage(
+// AʀƈȶɨӼ.chatId,
+// "You Are Tuf(dev tester): 👑",
+// MessageType.text
+// );
+// } else {
+// await TUF.sendMessage(
+// AʀƈȶɨӼ.chatId,
+// "You Are Normal User: 🐾",
+// MessageType.text
+// );
+// }
+//" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
+// await ӄʀʏȶɛӄ.sendPresenceUpdate("unavailable", AʀƈȶɨӼ.chatId);
+// await ӄʀʏȶɛӄ.sendPresenceUpdate("available", AʀƈȶɨӼ.chatId);
+// await ӄʀʏȶɛӄ.sendPresenceUpdate("composing", AʀƈȶɨӼ.chatId);
+// await ӄʀʏȶɛӄ.sendPresenceUpdate("recording", AʀƈȶɨӼ.chatId);
+// await ӄʀʏȶɛӄ.sendPresenceUpdate("paused", AʀƈȶɨӼ.chatId);
+//" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
+console.log(AʀƈȶɨӼ);
+return await TUF.sendMessage(
+AʀƈȶɨӼ.chatId,
+"Hello There: @" + ᴘɴᴀᴍᴇ,
+MessageType.text,
+{
+timestamp: Date(),
+quoted: AʀƈȶɨӼ.body,
+contextInfo: { mentionedJid: [ʟɴᴀᴍᴇ] },
+}
+);
+},
 };
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 /*        

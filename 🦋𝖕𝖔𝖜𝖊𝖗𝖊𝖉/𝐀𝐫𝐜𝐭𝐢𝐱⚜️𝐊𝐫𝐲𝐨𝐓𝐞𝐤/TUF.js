@@ -19,23 +19,20 @@ class Client {
     constructor(ӄʀʏȶɛӄ) {
         this.ӄʀʏȶɛӄ = ӄʀʏȶɛӄ;
     }
-    sendMessage(jid, content, type, options, Fox) {
+    sendMessage(jid, content, type, options) {
         var _a;
         return __awaiter(this, void 0, void 0, function* () {
-            let ext;
             let res;
             let ops;
             if (type === message_type_1.MessageType.text) {
                 ops = {
                     text: content,
                 };
-                ext = {
-                    quoted: Fox,
-                };
+                console.clear();
+                console.log(options);
                 if ((_a = options === null || options === void 0 ? void 0 : options.contextInfo) === null || _a === void 0 ? void 0 : _a.mentionedJid) {
                     ops.mentions = options.contextInfo.mentionedJid;
                 }
-                ext.quoted = Fox;
                 res = yield this.ӄʀʏȶɛӄ.sendMessage(jid, ops);
             }
             else if (type === message_type_1.MessageType.sticker) {

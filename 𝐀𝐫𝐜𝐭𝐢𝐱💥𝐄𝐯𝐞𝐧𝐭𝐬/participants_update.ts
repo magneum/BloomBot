@@ -19,7 +19,7 @@ const Downloader = require(`nodejs-file-downloader`);
 import Client from "../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/TUF";
 import ʟᴀʏᴏᴜᴛ from "../𝐀𝐫𝐜𝐭𝐢𝐱🀄𝐕𝐞𝐧𝐭/ʟᴀʏᴏᴜᴛ";
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-const participants_update = async (update, ӄʀʏȶɛӄ): Promise<void> => {
+const participants_update = async (update: any, ӄʀʏȶɛӄ: any): Promise<void> => {
 let client: Client = new Client(ӄʀʏȶɛӄ);
 const MemNum = update.participants[0];
 if (update.action == `add` && MemNum.includes(ӄʀʏȶɛӄ.user.id)) {

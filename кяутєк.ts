@@ -100,8 +100,8 @@ participants_update.participants_update(update, ӄʀʏȶɛӄ);
 ӄʀʏȶɛӄ.ev.on("connection.update", (update) => {
 connection_update.connection_update(update, DisconnectReason, startSock);
 });
-ӄʀʏȶɛӄ.ev.on("messages.upsert", async (m) => {
-messages_upsert.messages_upsert(m, ӄʀʏȶɛӄ, commandHandler);
+ӄʀʏȶɛӄ.ev.on("messages.upsert", async (update) => {
+messages_upsert.messages_upsert(update, ӄʀʏȶɛӄ, commandHandler);
 });
 ӄʀʏȶɛӄ.ev.on("creds.update", (creds) => {
 saveCreds(creds);

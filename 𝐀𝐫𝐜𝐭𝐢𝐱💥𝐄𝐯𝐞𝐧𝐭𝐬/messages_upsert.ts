@@ -26,16 +26,21 @@ import Rankr from "../𝐀𝐫𝐜𝐭𝐢𝐱🀄𝐕𝐞𝐧𝐭/Ranker";
 import SetCom from "../𝐀𝐫𝐜𝐭𝐢𝐱🀄𝐕𝐞𝐧𝐭/SetCom";
 import Kolor from "chalk";
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-const messages_upsert = async (m, ӄʀʏȶɛӄ, commandHandler): Promise<void> => {
-if (m.type === "append" && !ʟᴀʏᴏᴜᴛ.OFFLINE_RESPONSE) {
+const messages_upsert = async (
+update: any,
+ӄʀʏȶɛӄ: any,
+commandHandler: any
+): Promise<void> => {
+if (update.type === "append" && !ʟᴀʏᴏᴜᴛ.OFFLINE_RESPONSE) {
 return;
 }
-if (m.type !== "notify") {
+if (update.type !== "notify") {
 return;
 }
-let Fox: proto.IWebMessageInfo = m.messages[0];
+let Fox: proto.IWebMessageInfo = update.messages[0];
 let AʀƈȶɨӼ: AʀƈȶɨӼ = await resolve(Fox, ӄʀʏȶɛӄ);
 let TUF: Client = new Client(ӄʀʏȶɛӄ);
+//" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 if (AʀƈȶɨӼ.isCmd) {
 console.log(AʀƈȶɨӼ);
 console.log(
