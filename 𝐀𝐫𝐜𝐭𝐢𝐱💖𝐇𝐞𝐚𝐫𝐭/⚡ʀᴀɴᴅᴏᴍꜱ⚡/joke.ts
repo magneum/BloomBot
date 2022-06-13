@@ -29,7 +29,7 @@ TUF: Client,
 Fox: proto.IWebMessageInfo,
 AʀƈȶɨӼ: AʀƈȶɨӼ,
 ǟʀɢʊʍɛռȶ: string[],
-ӄʀʏȶɛӄ
+ӄ𝖗𝖞ӄ𝖓𝖟
 ): Promise<void> {
 try {
 const ʟɴᴀᴍᴇ = AʀƈȶɨӼ.sender;
