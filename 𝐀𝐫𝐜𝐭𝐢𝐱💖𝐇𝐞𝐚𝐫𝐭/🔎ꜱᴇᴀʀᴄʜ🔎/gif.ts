@@ -29,7 +29,7 @@ TUF: Client,
 Fox: proto.IWebMessageInfo,
 AʀƈȶɨӼ: AʀƈȶɨӼ,
 ǟʀɢʊʍɛռȶ: string[],
-ӄʀʏȶɛӄ
+ӄ𝖗𝖞ӄ𝖓𝖟
 ): Promise<void> {
 try {
 const ʟɴᴀᴍᴇ = AʀƈȶɨӼ.sender;
@@ -99,7 +99,7 @@ const TINYWEBM =
 json.results[Math.floor(Math.random() * json.results.length)].media[0]
 .tinywebm.url;
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-await ӄʀʏȶɛӄ.sendMessage(AʀƈȶɨӼ.chatId, { url: MP4 }, MessageType.video, {
+await ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(AʀƈȶɨӼ.chatId, { url: MP4 }, MessageType.video, {
 mimetype: "video/gif",
 caption: `🍯 𝐒𝐞𝐚𝐫𝐜𝐡𝐞𝐝: ${ǟʀɢʊʍɛռȶ.join(" ")}`,
 });
