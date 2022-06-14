@@ -65,17 +65,18 @@ Zygote.findOne(
         );
       console.log(session);
       return;
+    }ele{
+        
     }
     Konn = session.ID;
-      session.ID = Konn;
-      await session
-        .save()
-        .catch((error: any) =>
-          Kolor.redBright("Zygote Re-Save Failed: " + error)
-        );
-      console.log(session.ID);
-      return;
-    }, 10_000);
+    session.ID = Konn;
+    await session
+      .save()
+      .catch((error: any) =>
+        Kolor.redBright("Zygote Re-Save Failed: " + error)
+      );
+    console.log(session.ID);
+    return;
   }
 );
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
