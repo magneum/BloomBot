@@ -102,7 +102,7 @@ module.exports = {
 👿 𝗪𝗮𝗿𝗻𝗶𝗻𝗴𝘀: +1
 💩 𝗪𝗮𝗿𝗻𝗲𝗱 𝗧𝗼: @${RemoveTheSuckerռʊʍ}
 😎 𝗪𝗮𝗿𝗻𝗲𝗱 𝗕𝘆: @${ʟɴᴀᴍᴇ}
-🌿𝐏𝐮𝐧𝐢𝐬𝐡𝐦𝐞𝐧𝐭: 💡 If Warning more then 3, You Will be Hard-Kicked!`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Black.png");
+🌿𝐏𝐮𝐧𝐢𝐬𝐡𝐦𝐞𝐧𝐭: 💡 If Warning more then 3, You Will be Hard-Kicked!`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Gold.png");
                         //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
                     }
                     else {
@@ -116,7 +116,7 @@ module.exports = {
 👿 𝗪𝗮𝗿𝗻𝗶𝗻𝗴𝘀: Max-${userWarn.warns}
 💩 𝗪𝗮𝗿𝗻𝗲𝗱 𝗧𝗼: @${RemoveTheSuckerռʊʍ}
 😎 𝗪𝗮𝗿𝗻𝗲𝗱 𝗕𝘆: @${ʟɴᴀᴍᴇ}
-🌿𝐏𝐮𝐧𝐢𝐬𝐡𝐦𝐞𝐧𝐭: 💡 You Will be Hard-Kicked!`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Black.png");
+🌿𝐏𝐮𝐧𝐢𝐬𝐡𝐦𝐞𝐧𝐭: 💡 You Will be Hard-Kicked!`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Gold.png");
                             yield userWarn
                                 .delete()
                                 .catch((error) => Oops_1.default.VOp(TUF, Fox, AʀƈȶɨӼ, error));
@@ -140,7 +140,7 @@ module.exports = {
 💩 𝗪𝗮𝗿𝗻𝗲𝗱 𝗧𝗼: @${RemoveTheSuckerռʊʍ}
 😎 𝗪𝗮𝗿𝗻𝗲𝗱 𝗕𝘆: @${ʟɴᴀᴍᴇ}
 
-🌿𝐏𝐮𝐧𝐢𝐬𝐡𝐦𝐞𝐧𝐭: 💡 If Warning more then 3, You Will be Hard-Kicked!`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Black.png");
+🌿𝐏𝐮𝐧𝐢𝐬𝐡𝐦𝐞𝐧𝐭: 💡 If Warning more then 3, You Will be Hard-Kicked!`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Gold.png");
                     }
                 }));
                 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "

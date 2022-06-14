@@ -72,7 +72,7 @@ module.exports = {
                     𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = yield ӄ𝖗𝖞ӄ𝖓𝖟.profilePictureUrl((0, baileys_1.jidNormalizedUser)(AʀƈȶɨӼ.chatId));
                 }
                 catch (_a) {
-                    𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Black.png";
+                    𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Gold.png";
                 }
                 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
                 if (AʀƈȶɨӼ.isTextReply) {
@@ -107,7 +107,7 @@ module.exports = {
                         ],
                         headerType: 4,
                     }, message_type_1.MessageType.buttonsMessage);
-                    return Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `💡𝐈𝐧𝐟𝐨: Group Invite Link Has Been Sent To Their DM!`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Black.png");
+                    return Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `💡𝐈𝐧𝐟𝐨: Group Invite Link Has Been Sent To Their DM!`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Gold.png");
                     //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
                 }
                 else {
@@ -139,7 +139,7 @@ https://chat.whatsapp.com/${Invite}`,
                         ],
                         headerType: 4,
                     }, message_type_1.MessageType.buttonsMessage);
-                    return Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `💡𝐈𝐧𝐟𝐨: Group Invite Link Has Been Sent To Your DM!`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Black.png");
+                    return Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `💡𝐈𝐧𝐟𝐨: Group Invite Link Has Been Sent To Your DM!`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Gold.png");
                 }
             }
             catch (error) {
