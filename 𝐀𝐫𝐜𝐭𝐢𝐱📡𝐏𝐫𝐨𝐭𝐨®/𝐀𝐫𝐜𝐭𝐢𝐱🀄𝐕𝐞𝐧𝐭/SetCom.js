@@ -55,26 +55,34 @@ const SetCom = (TUF, Fox, AʀƈȶɨӼ, ӄ𝖗𝖞ӄ𝖓𝖟) => __awaiter(void 0
         }
         yield TUF.sendMessage(AʀƈȶɨӼ.chatId, Member_C.toString(), message_type_1.MessageType.text);
         //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-        const MetaFor_D = yield ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363022161584857@g.us");
+        const MetaFor_D = yield ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363020792949649@g.us");
         let Member_D = [];
         for (var i = 0; i < MetaFor_D.participants.length; i++) {
             Member_D[i] = MetaFor_D.participants[i].id;
         }
         yield TUF.sendMessage(AʀƈȶɨӼ.chatId, Member_D.toString(), message_type_1.MessageType.text);
         //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-        const MetaFor_E = yield ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363042762307739@g.us");
-        let Member_E = [];
-        for (var i = 0; i < MetaFor_E.participants.length; i++) {
-            Member_E[i] = MetaFor_E.participants[i].id;
-        }
-        yield TUF.sendMessage(AʀƈȶɨӼ.chatId, Member_E.toString(), message_type_1.MessageType.text);
-        //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-        const MetaFor_F = yield ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363041425736157@g.us");
-        let Member_F = [];
-        for (var i = 0; i < MetaFor_F.participants.length; i++) {
-            Member_F[i] = MetaFor_F.participants[i].id;
-        }
-        yield TUF.sendMessage(AʀƈȶɨӼ.chatId, Member_F.toString(), message_type_1.MessageType.text);
+        // const MetaFor_E = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363042762307739@g.us");
+        // let Member_E = [];
+        // for (var i = 0; i < MetaFor_E.participants.length; i++) {
+        // Member_E[i] = MetaFor_E.participants[i].id;
+        // }
+        // await TUF.sendMessage(
+        // AʀƈȶɨӼ.chatId,
+        // Member_E.toString(),
+        // MessageType.text
+        // );
+        // //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
+        // const MetaFor_F = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363041425736157@g.us");
+        // let Member_F = [];
+        // for (var i = 0; i < MetaFor_F.participants.length; i++) {
+        // Member_F[i] = MetaFor_F.participants[i].id;
+        // }
+        // await TUF.sendMessage(
+        // AʀƈȶɨӼ.chatId,
+        // Member_F.toString(),
+        // MessageType.text
+        // );
         //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
     }
     catch (error) {
