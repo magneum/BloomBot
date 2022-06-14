@@ -91,13 +91,13 @@ module.exports = {
                         if (AʀƈȶɨӼ.isGroup && AʀƈȶɨӼ.isTextReply) {
                             var Receiver = Fox.message.extendedTextMessage.contextInfo.participant;
                             var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
-                            yield Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `💡𝐈𝐧𝐟𝐨: _Kicked @${քɛʀֆօռɢօȶռʊʍ} Outta Group!_`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png");
+                            yield Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `💡𝐈𝐧𝐟𝐨: _Kicked @${քɛʀֆօռɢօȶռʊʍ} Outta Group!_`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Black.png");
                             return yield ӄ𝖗𝖞ӄ𝖓𝖟
                                 .groupRemove(AʀƈȶɨӼ.chatId, [PersonToRemove])
                                 .catch((error) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
                         }
                         else {
-                            yield Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `💡𝐈𝐧𝐟𝐨: _Kicked @${ᴘɴᴀᴍᴇ} Outta Group!_`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png");
+                            yield Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `💡𝐈𝐧𝐟𝐨: _Kicked @${ᴘɴᴀᴍᴇ} Outta Group!_`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Black.png");
                             return yield ӄ𝖗𝖞ӄ𝖓𝖟
                                 .groupRemove(AʀƈȶɨӼ.chatId, [PersonToRemove])
                                 .catch((error) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
@@ -120,14 +120,14 @@ Option 2 - ${______1.default.MuveOn}${dotScrpt.toUpperCase()} _tag person_`, dot
                         if (AʀƈȶɨӼ.isGroup && AʀƈȶɨӼ.isTextReply) {
                             var Receiver = Fox.message.extendedTextMessage.contextInfo.participant;
                             var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
-                            yield Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `💡𝐈𝐧𝐟𝐨: _Kicked @${քɛʀֆօռɢօȶռʊʍ} Outta the group!_`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png");
+                            yield Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `💡𝐈𝐧𝐟𝐨: _Kicked @${քɛʀֆօռɢօȶռʊʍ} Outta the group!_`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Black.png");
                             return yield ӄ𝖗𝖞ӄ𝖓𝖟.groupRemove(AʀƈȶɨӼ.chatId, [
                                 number + `@s.whatsapp.net`,
                             ]);
                             //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
                         }
                         else {
-                            yield Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `💡𝐈𝐧𝐟𝐨: _@${ᴘɴᴀᴍᴇ} Kicked em Successfully!_`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png");
+                            yield Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `💡𝐈𝐧𝐟𝐨: _@${ᴘɴᴀᴍᴇ} Kicked em Successfully!_`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Black.png");
                             return yield ӄ𝖗𝖞ӄ𝖓𝖟.groupRemove(AʀƈȶɨӼ.chatId, [
                                 number + `@s.whatsapp.net`,
                             ]);

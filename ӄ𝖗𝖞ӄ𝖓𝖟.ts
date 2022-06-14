@@ -46,40 +46,44 @@ timestamp: () => `,"Time":"${new Date().toJSON()}"`,
 }).child({});
 logger.level = "error";
 var Konn = makeInMemoryStore({ logger });
-Zygote.findOne(
-{
-ID: Konn,
-},
-async (error: any, session: any) => {
-console.log(session);
-if (error) {
-return console.log(error);
-}
-if (!session) {
-var newServer = new LinkList({
-ID: Konn,
-});
-await newServer
-.save()
-.catch((error: any) =>
-Kolor.redBright("Zygote NewServer Error: " + error)
-);
-return;
-}
-Konn = session.ID;
-setInterval(async () => {
-console.log("Re-Saving in Konn.");
-session.ID = Konn;
-await session
-.save()
-.catch((error: any) =>
-Kolor.redBright("Zygote Re-Save Failed: " + error)
-);
-console.log(session);
-return;
+Konn?.readFromFile("./𝐀𝐫𝐜𝐭𝐢𝐱⚠️𝕿𝖊𝖒𝖕/AʀƈȶɨӼ.json");
+setInterval(() => {
+Konn?.writeToFile("./𝐀𝐫𝐜𝐭𝐢𝐱⚠️𝕿𝖊𝖒𝖕/AʀƈȶɨӼ.json");
 }, 10_000);
-}
-);
+// Zygote.findOne(
+// {
+// ID: Konn,
+// },
+// async (error: any, session: any) => {
+// console.log(session);
+// if (error) {
+// return console.log(error);
+// }
+// if (!session) {
+// var newServer = new LinkList({
+// ID: Konn,
+// });
+// await newServer
+// .save()
+// .catch((error: any) =>
+// Kolor.redBright("Zygote NewServer Error: " + error)
+// );
+// return;
+// }
+// Konn = session.ID;
+// setInterval(async () => {
+// console.log("Re-Saving in Konn.");
+// session.ID = Konn;
+// await session
+// .save()
+// .catch((error: any) =>
+// Kolor.redBright("Zygote Re-Save Failed: " + error)
+// );
+// console.log(session);
+// return;
+// }, 10_000);
+// }
+// );
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 (async (): Promise<void> => {
 console.log(Kolor.yellow("💡𝐈𝐧𝐟𝐨: Trying To Connect To '🍃mongo + 🕸️sql'"));
