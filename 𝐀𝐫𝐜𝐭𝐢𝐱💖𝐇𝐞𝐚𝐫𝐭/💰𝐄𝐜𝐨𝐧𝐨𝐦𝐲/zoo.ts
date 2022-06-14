@@ -62,7 +62,7 @@ await Economy.findOne(
 {
 ID: ʟɴᴀᴍᴇ,
 },
-async (error, userEco) => {
+async (error: any, userEco: any) => {
 if (error) return Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error);
 if (!userEco) {
 var newUser = new Economy({
@@ -95,7 +95,7 @@ Zoology.findOne(
 {
 ID: ʟɴᴀᴍᴇ,
 },
-async (error, userZoo) => {
+async (error: any, userZoo: any) => {
 if (error) return Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error);
 if (!userZoo) {
 var newUser = new Zoology({
