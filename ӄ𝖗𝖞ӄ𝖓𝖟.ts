@@ -44,7 +44,7 @@ const sequelize: Sequelize = ʟᴀʏᴏᴜᴛ.DATABASE;
 const logger: Logger = Pot({
 timestamp: () => `,"Time":"${new Date().toJSON()}"`,
 }).child({});
-logger.level = "error";
+logger.level = "silent";
 var Konn = makeInMemoryStore({ logger });
 Konn?.readFromFile("./𝐀𝐫𝐜𝐭𝐢𝐱⚠️𝕿𝖊𝖒𝖕/AʀƈȶɨӼ.json");
 setInterval(() => {
