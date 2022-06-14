@@ -37,7 +37,7 @@ caption: `┌─「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢® 」
 ├• *Cσɱɱαɳԃ:* ${AʀƈȶɨӼ.commandName}
 └──
 
-┌─「 ◇🧀𝐍𝐨 𝐑𝐞𝐬𝐭𝐫𝐢𝐜𝐭𝐢𝐨𝐧🧀 」
+┌─「 🧀𝐍𝐨 𝐑𝐞𝐬𝐭𝐫𝐢𝐜𝐭𝐢𝐨𝐧🧀 」
 ├•
 ├•🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}animemenu
 ├•⭕ ${ʟᴀʏᴏᴜᴛ.MuveOn}ytfiltermenu
