@@ -5,7 +5,7 @@
 "compilerOptions": {
 "target": "es6",
 "module": "commonjs",
-"outDir": "./𝐀𝐫𝐜𝐭𝐢𝐱📡𝐀𝐩𝐢®",
+"outDir": "./𝐀𝐫𝐜𝐭𝐢𝐱📡𝐏𝐫𝐨𝐭𝐨®",
 "esModuleInterop": true,
 "allowSyntheticDefaultImports": true
 }
