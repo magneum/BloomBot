@@ -36,43 +36,26 @@ Heroku_Api: process.env.Heroku_Api,
 Heroku_App: process.env.Heroku_App,
 Spotify_Client_Id: process.env.Spotify_Client_Id,
 MuveOn: process.env.PREFIX === undefined ? "/" : process.env.PREFIX,
-STRING_SESSION:
-process.env.STRING_SESSION === undefined ? "" : process.env.STRING_SESSION,
-HEROKU: process.env.HEROKU === undefined ? false : true,
+STRING_SESSION:process.env.STRING_SESSION === undefined ? "" : process.env.STRING_SESSION,
+HEROKU: process.env.HEROKU,
 PREFIX: process.env.PREFIX === undefined ? "^[/]" : process.env.PREFIX,
-CCD:
-process.env.CCD === undefined ? "91" : process.env.CCD,
-OCR:
-process.env.OCR === undefined
-? "9ffb44def388957"
-: process.env.OCR,
-Weather:
-process.env.CURRENT_WEATHER_API_KEY === undefined
-? "6729ac2b2e2bb5c686ff427a2f06df92"
-: process.env.CURRENT_WEATHER_API_KEY,
-DATABASE_URL:
-process.env.DATABASE_URL === undefined
-? "./AʀƈȶɨӼ.db"
-: process.env.DATABASE_URL,
-DEBUG: process.env.DEBUG === undefined ? false : process.env.DEBUG,
-DATABASE:
-process.env.DATABASE_URL === "./AʀƈȶɨӼ.db"
-? new Sequelize({
-dialect: "sqlite",
-storage: process.env.DATABASE_URL,
-logging: Log(process.env.DEBUG),
-})
+CCD: process.env.CCD,
+OCR: process.env.OCR,
+ArctixYT: process.env.ArctixYT,
+IMDB: process.env.IMDB,
+Weather: process.env.CURRENT_WEATHER_API_KEY,
+TUFs: process.env.TUFs,
+OFFLINE_RESPONSE: process.env.OFFLINE_RESPONSE,
+DATABASE_URL:process.env.DATABASE_URL === undefined? "./AʀƈȶɨӼ.db": process.env.DATABASE_URL,
+DATABASE:process.env.DATABASE_URL === "./AʀƈȶɨӼ.db"? 
+new Sequelize({dialect: "sqlite",
+storage: process.env.DATABASE_URL,logging: Log(process.env.DEBUG),})
 : new Sequelize(process.env.DATABASE_URL, {
 dialect: "postgres",
 protocol: "postgres",
 logging: Log(process.env.DEBUG),
 dialectOptions: { ssl: { require: true, rejectUnauthorized: false } },
 }),
-TUFs: process.env.TUFs === undefined ? "" : process.env.TUFs,
-OFFLINE_RESPONSE:
-process.env.OFFLINE_RESPONSE === undefined
-? true
-: process.env.OFFLINE_RESPONSE,
 };
 export default ʟᴀʏᴏᴜᴛ;
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
