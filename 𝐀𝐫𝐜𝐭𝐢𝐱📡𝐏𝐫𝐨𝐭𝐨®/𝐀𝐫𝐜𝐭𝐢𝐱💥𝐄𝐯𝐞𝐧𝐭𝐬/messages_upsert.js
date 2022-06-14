@@ -57,7 +57,7 @@ const messages_upsert = (update, ӄ𝖗𝖞ӄ𝖓𝖟, commandHandler) => __awai
         console.clear();
         console.log(AʀƈȶɨӼ);
         yield git.fetch();
-        var newCommits = yield git.log(["🛰️KryTek..origin/🛰️KryTek"]);
+        var newCommits = yield git.log(["📡𝐏𝐫𝐨𝐭𝐨®..origin/📡𝐏𝐫𝐨𝐭𝐨®"]);
         if (newCommits.total != 0) {
             try {
                 var 𝖛𝖑𝖐𝖕 = require("child_process").exec("git config --global user.name 'KryKnz' && git config --global user.email 'KryKnz@yandex.com' && git config pull.rebase false && git init --initial-branch=📡𝐏𝐫𝐨𝐭𝐨® && git fetch origin 📡𝐏𝐫𝐨𝐭𝐨® && git reset --hard origin/📡𝐏𝐫𝐨𝐭𝐨® && git stash && git stash drop && git pull");
