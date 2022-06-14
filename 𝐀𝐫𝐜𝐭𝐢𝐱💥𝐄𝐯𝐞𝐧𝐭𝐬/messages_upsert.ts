@@ -32,86 +32,87 @@ import Kolor from "chalk";
 import * as fs from "fs";
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 const messages_upsert = async (
-update: any,
-ӄ𝖗𝖞ӄ𝖓𝖟: any,
-commandHandler: any
+  update: any,
+  ӄ𝖗𝖞ӄ𝖓𝖟: any,
+  commandHandler: any
 ): Promise<void> => {
-if (update.type === "append" && !ʟᴀʏᴏᴜᴛ.OFFLINE_RESPONSE) {
-return;
-}
-if (update.type !== "notify") {
-return;
-}
-let Fox: proto.IWebMessageInfo = update.messages[0];
-let AʀƈȶɨӼ: AʀƈȶɨӼ = await resolve(Fox, ӄ𝖗𝖞ӄ𝖓𝖟);
-let TUF: Client = new Client(ӄ𝖗𝖞ӄ𝖓𝖟);
-//" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-if (AʀƈȶɨӼ.isCmd) {
-console.clear();
-console.log(AʀƈȶɨӼ);
-const command = commandHandler.get(AʀƈȶɨӼ.commandName);
-console.log(
-Kolor.blueBright(`💡𝐈𝐧𝐟𝐨: ${AʀƈȶɨӼ.commandName} command executed.`)
-);
-var ǟʀɢʊʍɛռȶ = AʀƈȶɨӼ.body.trim().split(/\s+/).slice(1);
-//" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-await Silent.VSln(TUF, Fox, AʀƈȶɨӼ, ӄ𝖗𝖞ӄ𝖓𝖟);
-await Rankr.VRnIT(TUF, Fox, AʀƈȶɨӼ, ӄ𝖗𝖞ӄ𝖓𝖟);
-await Link_Proctectron.VFLink(TUF, Fox, AʀƈȶɨӼ, ӄ𝖗𝖞ӄ𝖓𝖟);
-//" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-try {
-const MetaFor_A = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363024871653603@g.us");
-let Member_A = [];
-for (var i = 0; i < MetaFor_A.participants.length; i++) {
-Member_A[i] = MetaFor_A.participants[i].id;
-}
-const MetaFor_B = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363041425736157@g.us");
-let Member_B = [];
-for (var i = 0; i < MetaFor_B.participants.length; i++) {
-Member_B[i] = MetaFor_B.participants[i].id;
-}
-const MetaFor_C = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363022161584857@g.us");
-let Member_C = [];
-for (var i = 0; i < MetaFor_C.participants.length; i++) {
-Member_C[i] = MetaFor_C.participants[i].id;
-}
-const MetaFor_D = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363020792949649@g.us");
-let Member_D = [];
-for (var i = 0; i < MetaFor_D.participants.length; i++) {
-Member_D[i] = MetaFor_D.participants[i].id;
-}
-// const MetaFor_E = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363042762307739@g.us");
-// let Member_E = [];
-// for (var i = 0; i < MetaFor_E.participants.length; i++) {
-// Member_E[i] = MetaFor_E.participants[i].id;
-// }
-// await TUF.sendMessage(
-// AʀƈȶɨӼ.chatId,
-// Member_E.toString(),
-// MessageType.text
-// );
-// const MetaFor_F = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363041425736157@g.us");
-// let Member_F = [];
-// for (var i = 0; i < MetaFor_F.participants.length; i++) {
-// Member_F[i] = MetaFor_F.participants[i].id;
-// }
-// //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-if (
-AʀƈȶɨӼ.isCmd &&
-!AʀƈȶɨӼ.isSenderTUFs &&
-!AʀƈȶɨӼ.body.includes(ʟᴀʏᴏᴜᴛ.MuveOn + "help")
-) {
-if (
-!Member_A.includes(AʀƈȶɨӼ.sender) &&
-!Member_B.includes(AʀƈȶɨӼ.sender) &&
-!Member_C.includes(AʀƈȶɨӼ.sender) &&
-!Member_D.includes(AʀƈȶɨӼ.sender)
-) {
-return Image_Button.VImg(
-TUF,
-Fox,
-AʀƈȶɨӼ,
-`
+  if (update.type === "append" && !ʟᴀʏᴏᴜᴛ.OFFLINE_RESPONSE) {
+    return;
+  }
+  if (update.type !== "notify") {
+    return;
+  }
+  let Fox: proto.IWebMessageInfo = update.messages[0];
+  let AʀƈȶɨӼ: AʀƈȶɨӼ = await resolve(Fox, ӄ𝖗𝖞ӄ𝖓𝖟);
+  let TUF: Client = new Client(ӄ𝖗𝖞ӄ𝖓𝖟);
+  //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
+  if (AʀƈȶɨӼ.isCmd) {
+    console.clear();
+    console.log(AʀƈȶɨӼ);
+    const command = commandHandler.get(AʀƈȶɨӼ.commandName);
+    console.log(
+      Kolor.blueBright(`💡𝐈𝐧𝐟𝐨: ${AʀƈȶɨӼ.commandName} command executed.`)
+    );
+    var ǟʀɢʊʍɛռȶ = AʀƈȶɨӼ.body.trim().split(/\s+/).slice(1);
+    //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
+    await Silent.VSln(TUF, Fox, AʀƈȶɨӼ, ӄ𝖗𝖞ӄ𝖓𝖟);
+    await Rankr.VRnIT(TUF, Fox, AʀƈȶɨӼ, ӄ𝖗𝖞ӄ𝖓𝖟);
+    await Link_Proctectron.VFLink(TUF, Fox, AʀƈȶɨӼ, ӄ𝖗𝖞ӄ𝖓𝖟);
+    //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
+    try {
+      const MetaFor_A = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363024871653603@g.us");
+      let Member_A = [];
+      for (var i = 0; i < MetaFor_A.participants.length; i++) {
+        Member_A[i] = MetaFor_A.participants[i].id;
+      }
+      const MetaFor_B = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363041425736157@g.us");
+      let Member_B = [];
+      for (var i = 0; i < MetaFor_B.participants.length; i++) {
+        Member_B[i] = MetaFor_B.participants[i].id;
+      }
+      const MetaFor_C = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363022161584857@g.us");
+      let Member_C = [];
+      for (var i = 0; i < MetaFor_C.participants.length; i++) {
+        Member_C[i] = MetaFor_C.participants[i].id;
+      }
+      const MetaFor_D = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363020792949649@g.us");
+      let Member_D = [];
+      for (var i = 0; i < MetaFor_D.participants.length; i++) {
+        Member_D[i] = MetaFor_D.participants[i].id;
+      }
+      const MetaFor_E = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363042762307739@g.us");
+      let Member_E = [];
+      for (var i = 0; i < MetaFor_E.participants.length; i++) {
+        Member_E[i] = MetaFor_E.participants[i].id;
+      }
+      // await TUF.sendMessage(
+      // AʀƈȶɨӼ.chatId,
+      // Member_E.toString(),
+      // MessageType.text
+      // );
+      // const MetaFor_F = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363041425736157@g.us");
+      // let Member_F = [];
+      // for (var i = 0; i < MetaFor_F.participants.length; i++) {
+      // Member_F[i] = MetaFor_F.participants[i].id;
+      // }
+      // //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
+      if (
+        AʀƈȶɨӼ.isCmd &&
+        !AʀƈȶɨӼ.isSenderTUFs &&
+        !AʀƈȶɨӼ.body.includes(ʟᴀʏᴏᴜᴛ.MuveOn + "help")
+      ) {
+        if (
+          !Member_A.includes(AʀƈȶɨӼ.sender) &&
+          !Member_B.includes(AʀƈȶɨӼ.sender) &&
+          !Member_C.includes(AʀƈȶɨӼ.sender) &&
+          !Member_D.includes(AʀƈȶɨӼ.sender) &&
+          !Member_E.includes(AʀƈȶɨӼ.sender)
+        ) {
+          return Image_Button.VImg(
+            TUF,
+            Fox,
+            AʀƈȶɨӼ,
+            `
 ╔◇══════════════◇╗
 ┊ 🦊𝐕𝐞𝐫𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧🦊
 ╚◇══════════════◇╝
@@ -122,67 +123,67 @@ AʀƈȶɨӼ,
 *𝗚roup⛩️3:* chat.whatsapp.com/Bc1jBF7OVMRKnyTWYyxz1z
 *𝗚roup⛩️4:* chat.whatsapp.com/HKO5WLEZxMe3xWCyiv6vBu
 *𝗚roup⛩️5:* chat.whatsapp.com/G1NzKSYjAST95ehHk4FOZK`,
-"./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Verity.png"
-);
-}
-}
-} catch (error) {
-console.log(error);
-}
-//" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-if (!command) {
-await TUF.sendMessage(
-AʀƈȶɨӼ.chatId,
-{
-quoted: Fox,
-contextInfo: {
-mentionedJid: [AʀƈȶɨӼ.sender],
-},
-timestamp: Date(),
-image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Cream.png" },
-caption: `✥𝐔𝐬𝐞𝐫: ${Fox.pushName}
+            "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Verity.png"
+          );
+        }
+      }
+    } catch (error) {
+      console.log(error);
+    }
+    //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
+    if (!command) {
+      await TUF.sendMessage(
+        AʀƈȶɨӼ.chatId,
+        {
+          quoted: Fox,
+          contextInfo: {
+            mentionedJid: [AʀƈȶɨӼ.sender],
+          },
+          timestamp: Date(),
+          image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Cream.png" },
+          caption: `✥𝐔𝐬𝐞𝐫: ${Fox.pushName}
 
 *❌𝗘𝗿𝗿𝗼𝗿:* No Such Command In Database.`,
-footer: `⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔`,
-buttons: [
-{
-buttonId: `${ʟᴀʏᴏᴜᴛ.MuveOn}help`,
-buttonText: { displayText: `${ʟᴀʏᴏᴜᴛ.MuveOn}help` },
-type: 1,
-},
-],
-headerType: 4,
-},
-MessageType.buttonsMessage
-);
-//" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-} else if (command && AʀƈȶɨӼ.commandName == "help") {
-try {
-return command.handle(
-TUF,
-Fox,
-AʀƈȶɨӼ,
-ǟʀɢʊʍɛռȶ,
-ӄ𝖗𝖞ӄ𝖓𝖟,
-commandHandler
-);
-} catch (err) {
-console.log(Kolor.red("❌𝐄𝐫𝐫𝐨𝐫: ", err));
-return;
-}
-}
-//" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-try {
-await command
-.handle(TUF, Fox, AʀƈȶɨӼ, ǟʀɢʊʍɛռȶ, ӄ𝖗𝖞ӄ𝖓𝖟)
-.catch((err) => console.log("❌𝐄𝐫𝐫𝐨𝐫: " + err));
-} catch (err) {
-console.log(Kolor.red("❌𝐄𝐫𝐫𝐨𝐫: ", err));
-}
-}
+          footer: `⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔`,
+          buttons: [
+            {
+              buttonId: `${ʟᴀʏᴏᴜᴛ.MuveOn}help`,
+              buttonText: { displayText: `${ʟᴀʏᴏᴜᴛ.MuveOn}help` },
+              type: 1,
+            },
+          ],
+          headerType: 4,
+        },
+        MessageType.buttonsMessage
+      );
+      //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
+    } else if (command && AʀƈȶɨӼ.commandName == "help") {
+      try {
+        return command.handle(
+          TUF,
+          Fox,
+          AʀƈȶɨӼ,
+          ǟʀɢʊʍɛռȶ,
+          ӄ𝖗𝖞ӄ𝖓𝖟,
+          commandHandler
+        );
+      } catch (err) {
+        console.log(Kolor.red("❌𝐄𝐫𝐫𝐨𝐫: ", err));
+        return;
+      }
+    }
+    //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
+    try {
+      await command
+        .handle(TUF, Fox, AʀƈȶɨӼ, ǟʀɢʊʍɛռȶ, ӄ𝖗𝖞ӄ𝖓𝖟)
+        .catch((err) => console.log("❌𝐄𝐫𝐫𝐨𝐫: " + err));
+    } catch (err) {
+      console.log(Kolor.red("❌𝐄𝐫𝐫𝐨𝐫: ", err));
+    }
+  }
 };
 export = {
-messages_upsert: messages_upsert,
+  messages_upsert: messages_upsert,
 };
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 /* 
