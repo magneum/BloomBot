@@ -51,7 +51,7 @@ if (AʀƈȶɨӼ.isCmd) {
 console.clear();
 console.log(AʀƈȶɨӼ);
 await git.fetch();
-var newCommits = await git.log(["🛰️KryTek..origin/🛰️KryTek"]);
+var newCommits = await git.log(["📡𝐏𝐫𝐨𝐭𝐨®..origin/📡𝐏𝐫𝐨𝐭𝐨®"]);
 if (newCommits.total != 0) {
 try {
 var 𝖛𝖑𝖐𝖕 = require("child_process").exec(
