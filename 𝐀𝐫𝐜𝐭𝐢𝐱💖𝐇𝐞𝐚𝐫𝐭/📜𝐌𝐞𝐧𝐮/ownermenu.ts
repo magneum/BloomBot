@@ -37,16 +37,16 @@ caption: `┌─「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢® 」
 ├• *Cσɱɱαɳԃ:* ${AʀƈȶɨӼ.commandName}
 └────────────◇
 
-╔════⧉🐙 𝐊𝐢𝐧𝐠/𝐎𝐰𝐧𝐞𝐫
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}join:*  _join any valid group_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}dyno:*  _check heroku usage_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}ban:*  _ban bot in group/user_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}unban:*  _unban bot in group/user_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}reboot:*  _reboot sakura server_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}bugreport:*  _ꜱᴇɴᴅ bug report to devs._
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}leave:*  _leave groups with/without sending text._
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}spam:*  _spam messsage in group/private_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}help:*  _basic help command_
+┌─「 🐙 𝐊𝐢𝐧𝐠/𝐎𝐰𝐧𝐞𝐫
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}join:*  _join any valid group_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}dyno:*  _check heroku usage_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}ban:*  _ban bot in group/user_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}unban:*  _unban bot in group/user_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}reboot:*  _reboot sakura server_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}bugreport:*  _ꜱᴇɴᴅ bug report to devs._
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}leave:*  _leave groups with/without sending text._
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}spam:*  _spam messsage in group/private_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}help:*  _basic help command_
 ╚════════════╝`,
 footer: "`⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔",
 buttons: [

@@ -37,24 +37,24 @@ caption: `┌─「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢® 」
 ├• *Cσɱɱαɳԃ:* ${AʀƈȶɨӼ.commandName}
 └────────────◇
 
-╔════⧉⭕ 𝐘𝐨𝐮𝐓𝐮𝐛𝐞/𝐅𝐢𝐥𝐭𝐞𝐫
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}yt8d:*  _download yt audio with filter_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}ytbassboost:*  _download yt audio with filter_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}ytdeep:*  _download yt audio with filter_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}ytecho:*  _download yt audio with filter_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}ytflanger:*  _download yt audio with filter_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}ytnightcore:*  _download yt audio with filter_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}ytphaser:*  _download yt audio with filter_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}ytreverse:*  _download yt audio with filter_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}ytslow:*  _download yt audio with filter_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}ytspeed:*  _download yt audio with filter_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}ytsubboost:*  _download yt audio with filter_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}ytsuperslow:*  _download yt audio with filter_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}ytsuperspeed:*  _download yt audio with filter_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}ytsurround:*  _download yt audio with filter_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}ytvaporwave:*  _download yt audio with filter_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}ytvibrato:*  _download yt audio with filter_
-╚════════════╝`,
+┌─「 ⭕ 𝐘𝐨𝐮𝐓𝐮𝐛𝐞/𝐅𝐢𝐥𝐭𝐞𝐫
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}yt8d:*  _download yt audio with filter_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}ytbassboost:*  _download yt audio with filter_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}ytdeep:*  _download yt audio with filter_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}ytecho:*  _download yt audio with filter_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}ytflanger:*  _download yt audio with filter_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}ytnightcore:*  _download yt audio with filter_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}ytphaser:*  _download yt audio with filter_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}ytreverse:*  _download yt audio with filter_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}ytslow:*  _download yt audio with filter_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}ytspeed:*  _download yt audio with filter_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}ytsubboost:*  _download yt audio with filter_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}ytsuperslow:*  _download yt audio with filter_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}ytsuperspeed:*  _download yt audio with filter_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}ytsurround:*  _download yt audio with filter_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}ytvaporwave:*  _download yt audio with filter_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}ytvibrato:*  _download yt audio with filter_
+└────────────◇`,
 footer: "`⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔",
 buttons: [
 {

@@ -37,14 +37,14 @@ caption: `┌─「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢® 」
 ├• *Cσɱɱαɳԃ:* ${AʀƈȶɨӼ.commandName}
 └────────────◇
 
-╔════⧉🥃 𝐇𝐮𝐦𝐚𝐧 𝐍𝐒𝐅𝐖
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}4k:*  _get random 4kporn img/gif_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}blowjob:*  _get random blowjob img/gif_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}milf:*  _get random milf img/gif_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}milk:*  _get random milk img/gif_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}pussy:*  _get random pussy img/gif_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}slut:*  _get random slut img/gif_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}tikporn:*  _get random tiktokporn video_
+┌─「 🥃 𝐇𝐮𝐦𝐚𝐧 𝐍𝐒𝐅𝐖
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}4k:*  _get random 4kporn img/gif_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}blowjob:*  _get random blowjob img/gif_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}milf:*  _get random milf img/gif_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}milk:*  _get random milk img/gif_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}pussy:*  _get random pussy img/gif_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}slut:*  _get random slut img/gif_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}tikporn:*  _get random tiktokporn video_
 ╚════════════╝`,
 footer: "`⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔",
 buttons: [

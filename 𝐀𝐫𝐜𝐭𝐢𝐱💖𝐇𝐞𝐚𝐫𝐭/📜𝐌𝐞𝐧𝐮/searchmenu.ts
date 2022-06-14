@@ -37,19 +37,19 @@ caption: `┌─「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢® 」
 ├• *Cσɱɱαɳԃ:* ${AʀƈȶɨӼ.commandName}
 └────────────◇
 
-╔════⧉🔎 𝐒𝐞𝐚𝐫𝐜𝐡
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}lyrics:*  _find lyrics of songs_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}wallpaper:*  _download wallpapers_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}google:*  _search anything on google_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}wikipedia:*  _search anything on wikipedia_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}github:*  _fing any github profile_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}pinterest:*  _search anything on pinterest_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}ytsearch:*  _search anything on youtube_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}weather:*  _get weather data_  
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}ud:*  _urban dictionary for crazy people_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}tenor:*  _convert text to tenor gif_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}gif:*  _convert text tenor gif_
-╚════════════╝`,
+┌─「 🔎 𝐒𝐞𝐚𝐫𝐜𝐡
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}lyrics:*  _find lyrics of songs_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}wallpaper:*  _download wallpapers_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}google:*  _search anything on google_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}wikipedia:*  _search anything on wikipedia_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}github:*  _fing any github profile_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}pinterest:*  _search anything on pinterest_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}ytsearch:*  _search anything on youtube_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}weather:*  _get weather data_  
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}ud:*  _urban dictionary for crazy people_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}tenor:*  _convert text to tenor gif_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}gif:*  _convert text tenor gif_
+└────────────◇`,
 footer: "`⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔",
 buttons: [
 {

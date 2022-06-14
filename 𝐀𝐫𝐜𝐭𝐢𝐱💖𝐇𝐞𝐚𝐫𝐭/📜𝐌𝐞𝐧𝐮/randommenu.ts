@@ -37,17 +37,17 @@ caption: `┌─「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢® 」
 ├• *Cσɱɱαɳԃ:* ${AʀƈȶɨӼ.commandName}
 └────────────◇
 
-╔════⧉🦄 𝐑𝐚𝐧𝐝𝐨𝐦𝐬
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}leaderboard:*  _check group leaderboard_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}rank:*  _check your rank_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}joke:*  _get random jokes_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}meme:*  _get random memes_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}fact*  _get random fact_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}trivia:*  _answer to diff questions_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}tr:*  _language translater_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}tts:*  _convert text to speech_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}pokedex:*  _get any pokemon information_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}triggered:*  _@tag or reply person_
+┌─「 🦄 𝐑𝐚𝐧𝐝𝐨𝐦𝐬
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}leaderboard:*  _check group leaderboard_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}rank:*  _check your rank_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}joke:*  _get random jokes_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}meme:*  _get random memes_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}fact*  _get random fact_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}trivia:*  _answer to diff questions_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}tr:*  _language translater_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}tts:*  _convert text to speech_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}pokedex:*  _get any pokemon information_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}triggered:*  _@tag or reply person_
 ╚════════════╝`,
 footer: "`⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔",
 buttons: [

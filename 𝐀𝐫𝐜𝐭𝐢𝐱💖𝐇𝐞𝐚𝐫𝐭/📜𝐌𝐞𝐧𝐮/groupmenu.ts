@@ -37,23 +37,23 @@ caption: `┌─「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢® 」
 ├• *Cσɱɱαɳԃ:* ${AʀƈȶɨӼ.commandName}
 └────────────◇
 
-╔════⧉🔰 𝐆𝐫𝐨𝐮𝐩𝐬/𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}antilink:*  _remove any person who sends any links_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}autorank:*  _turn on auto ranking per gc_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}delete:* _delete msgs sent by Vlkyre Bot_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}setwelcome:*  _welcome new members with custom message_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}promote:*  _promote member to admin_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}demote:*  _demote member from admin_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}warn:*  _warn a person_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}unwarn:*  _remove warnings from a warned person_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}invite:*  _get group invite link_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}admins:*  _get all admins of a group_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}getdesc:*  _get group description_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}groupdp:*  _change group profile picture_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}kick:*  _ʀᴇᴍᴏᴠᴇ ᴀ ᴘᴇʀꜱᴏɴ ꜰʀᴏᴍ ᴀ ɢʀᴏᴜᴘ_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}tagall:*  _tag everyone in group_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}unmute:*  _unmute a group chat_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}mute:*  _mute group chat_
+┌─「 🔰 𝐆𝐫𝐨𝐮𝐩𝐬/𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}antilink:*  _remove any person who sends any links_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}autorank:*  _turn on auto ranking per gc_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}delete:* _delete msgs sent by Vlkyre Bot_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}setwelcome:*  _welcome new members with custom message_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}promote:*  _promote member to admin_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}demote:*  _demote member from admin_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}warn:*  _warn a person_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}unwarn:*  _remove warnings from a warned person_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}invite:*  _get group invite link_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}admins:*  _get all admins of a group_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}getdesc:*  _get group description_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}groupdp:*  _change group profile picture_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}kick:*  _ʀᴇᴍᴏᴠᴇ ᴀ ᴘᴇʀꜱᴏɴ ꜰʀᴏᴍ ᴀ ɢʀᴏᴜᴘ_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}tagall:*  _tag everyone in group_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}unmute:*  _unmute a group chat_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}mute:*  _mute group chat_
 ╚════════════╝`,
 footer: "`⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔",
 buttons: [

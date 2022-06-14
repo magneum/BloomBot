@@ -37,7 +37,7 @@ caption: `┌─「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢® 」
 ├• *Cσɱɱαɳԃ:* ${AʀƈȶɨӼ.commandName}
 └────────────◇
 
-╔════⧉💰 𝗚𝗮𝗺𝗲𝘀
+┌─「 💰 𝗚𝗮𝗺𝗲𝘀
 ├• *${ʟᴀʏᴏᴜᴛ.MuveOn}shop:*  _visit krakinzlab member store_
 ├• ${ʟᴀʏᴏᴜᴛ.MuveOn}inv:*  _check your inventory or replied person's_
 ├• *${ʟᴀʏᴏᴜᴛ.MuveOn}buy:*  _buy items from store_
