@@ -24,7 +24,7 @@ const Oops = (TUF, Fox, AʀƈȶɨӼ, caption) => __awaiter(void 0, void 0, void 
 ├• *Tαɠ:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
 ├• *Nαɱҽ:* ${Fox.pushName}
 ├• *Cσɱɱαɳԃ:* ${AʀƈȶɨӼ.commandName}
-└──
+└────────────◇
 
 ${caption}`,
             footer: `⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ⦔`,

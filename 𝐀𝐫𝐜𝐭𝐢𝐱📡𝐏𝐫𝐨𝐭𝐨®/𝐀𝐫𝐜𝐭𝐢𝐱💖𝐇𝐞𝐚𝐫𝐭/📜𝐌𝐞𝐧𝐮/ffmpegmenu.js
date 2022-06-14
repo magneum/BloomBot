@@ -40,17 +40,17 @@ module.exports = {
 ├• *Tαɠ:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
 ├• *Nαɱҽ:* ${Fox.pushName}
 ├• *Cσɱɱαɳԃ:* ${AʀƈȶɨӼ.commandName}
-└──
+└────────────◇
 
-╔════⧉🗂️ 𝐅𝐅𝐦𝐩𝐞𝐠
-║• *${______1.default.MuveOn}vid2url:*  _convert video to url_ 
-║• *${______1.default.MuveOn}tomp3:*  _convert video to music_
-║• *${______1.default.MuveOn}img2url:*  _convert image to url_
-║• *${______1.default.MuveOn}ocr:*  _read text written on tagged image_
-║• *${______1.default.MuveOn}sticker:*  _convert image/video to sticker_
-║• *${______1.default.MuveOn}carbon:*  _convert text to carbonized image_
-║• *${______1.default.MuveOn}tinyurl:*  _shrink any long url_
-╚════════════╝`,
+┌─「 🗂️ 𝐅𝐅𝐦𝐩𝐞𝐠
+├• *${______1.default.MuveOn}vid2url:*  _convert video to url_ 
+├• *${______1.default.MuveOn}tomp3:*  _convert video to music_
+├• *${______1.default.MuveOn}img2url:*  _convert image to url_
+├• *${______1.default.MuveOn}ocr:*  _read text written on tagged image_
+├• *${______1.default.MuveOn}sticker:*  _convert image/video to sticker_
+├• *${______1.default.MuveOn}carbon:*  _convert text to carbonized image_
+├• *${______1.default.MuveOn}tinyurl:*  _shrink any long url_
+└────────────◇`,
                 footer: "`⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔",
                 buttons: [
                     {

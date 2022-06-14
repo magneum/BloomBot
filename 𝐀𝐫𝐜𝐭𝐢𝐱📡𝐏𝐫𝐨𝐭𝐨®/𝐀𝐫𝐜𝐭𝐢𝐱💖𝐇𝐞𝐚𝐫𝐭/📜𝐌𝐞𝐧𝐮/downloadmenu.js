@@ -40,17 +40,17 @@ module.exports = {
 ├• *Tαɠ:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
 ├• *Nαɱҽ:* ${Fox.pushName}
 ├• *Cσɱɱαɳԃ:* ${AʀƈȶɨӼ.commandName}
-└──
+└────────────◇
 
-╔════⧉📥 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫𝐬
-║•  ${______1.default.MuveOn}play: _download audio using yt_
-║•  ${______1.default.MuveOn}watch: _download video using yt_
-║•  ${______1.default.MuveOn}spotify: _download using spotify link_
-║•  ${______1.default.MuveOn}soundcloud: _download using soundcloud link_
-║•  ${______1.default.MuveOn}gifdl: _download using gif link_
-║•  ${______1.default.MuveOn}imagedl: _download using image link_
-║•  ${______1.default.MuveOn}videodl: _download using video link_
-╚════════════╝`,
+┌─「 📥 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫𝐬
+├•  ${______1.default.MuveOn}play: _download audio using yt_
+├•  ${______1.default.MuveOn}watch: _download video using yt_
+├•  ${______1.default.MuveOn}spotify: _download using spotify link_
+├•  ${______1.default.MuveOn}soundcloud: _download using soundcloud link_
+├•  ${______1.default.MuveOn}gifdl: _download using gif link_
+├•  ${______1.default.MuveOn}imagedl: _download using image link_
+├•  ${______1.default.MuveOn}videodl: _download using video link_
+└────────────◇`,
                 footer: "`⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔",
                 buttons: [
                     {

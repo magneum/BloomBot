@@ -40,18 +40,18 @@ module.exports = {
 ├• *Tαɠ:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
 ├• *Nαɱҽ:* ${Fox.pushName}
 ├• *Cσɱɱαɳԃ:* ${AʀƈȶɨӼ.commandName}
-└──
+└────────────◇
 
-╔════⧉🎨 𝐂𝐡𝐞𝐜𝐤
-║• *${______1.default.MuveOn}gaycheck:*  _@tag person or reply person_
-║• *${______1.default.MuveOn}lesbocheck:*  _@tag person or reply person_
-║• *${______1.default.MuveOn}beautycheck:*  _@tag person or reply person_
-║• *${______1.default.MuveOn}dumbcheck:*  _@tag person or reply person_
-║• *${______1.default.MuveOn}gay:*  _@tag person or reply person_
-║• *${______1.default.MuveOn}lesbo:*  _@tag person or reply person_
-║• *${______1.default.MuveOn}beauty:*  _@tag person or reply person_
-║• *${______1.default.MuveOn}dumb:*  _@tag person or reply person_
-╚════════════╝`,
+┌─「 🎨 𝐂𝐡𝐞𝐜𝐤
+├• *${______1.default.MuveOn}gaycheck:*  _@tag person or reply person_
+├• *${______1.default.MuveOn}lesbocheck:*  _@tag person or reply person_
+├• *${______1.default.MuveOn}beautycheck:*  _@tag person or reply person_
+├• *${______1.default.MuveOn}dumbcheck:*  _@tag person or reply person_
+├• *${______1.default.MuveOn}gay:*  _@tag person or reply person_
+├• *${______1.default.MuveOn}lesbo:*  _@tag person or reply person_
+├• *${______1.default.MuveOn}beauty:*  _@tag person or reply person_
+├• *${______1.default.MuveOn}dumb:*  _@tag person or reply person_
+└────────────◇`,
                 footer: "`⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔",
                 buttons: [
                     {

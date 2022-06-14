@@ -40,21 +40,21 @@ module.exports = {
 ├• *Tαɠ:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
 ├• *Nαɱҽ:* ${Fox.pushName}
 ├• *Cσɱɱαɳԃ:* ${AʀƈȶɨӼ.commandName}
-└──
+└────────────◇
 
-╔════⧉🔎 𝐒𝐞𝐚𝐫𝐜𝐡
-║• *${______1.default.MuveOn}lyrics:*  _find lyrics of songs_
-║• *${______1.default.MuveOn}wallpaper:*  _download wallpapers_
-║• *${______1.default.MuveOn}google:*  _search anything on google_
-║• *${______1.default.MuveOn}wikipedia:*  _search anything on wikipedia_
-║• *${______1.default.MuveOn}github:*  _fing any github profile_
-║• *${______1.default.MuveOn}pinterest:*  _search anything on pinterest_
-║• *${______1.default.MuveOn}ytsearch:*  _search anything on youtube_
-║• *${______1.default.MuveOn}weather:*  _get weather data_  
-║• *${______1.default.MuveOn}ud:*  _urban dictionary for crazy people_
-║• *${______1.default.MuveOn}tenor:*  _convert text to tenor gif_
-║• *${______1.default.MuveOn}gif:*  _convert text tenor gif_
-╚════════════╝`,
+┌─「 🔎 𝐒𝐞𝐚𝐫𝐜𝐡
+├• *${______1.default.MuveOn}lyrics:*  _find lyrics of songs_
+├• *${______1.default.MuveOn}wallpaper:*  _download wallpapers_
+├• *${______1.default.MuveOn}google:*  _search anything on google_
+├• *${______1.default.MuveOn}wikipedia:*  _search anything on wikipedia_
+├• *${______1.default.MuveOn}github:*  _fing any github profile_
+├• *${______1.default.MuveOn}pinterest:*  _search anything on pinterest_
+├• *${______1.default.MuveOn}ytsearch:*  _search anything on youtube_
+├• *${______1.default.MuveOn}weather:*  _get weather data_  
+├• *${______1.default.MuveOn}ud:*  _urban dictionary for crazy people_
+├• *${______1.default.MuveOn}tenor:*  _convert text to tenor gif_
+├• *${______1.default.MuveOn}gif:*  _convert text tenor gif_
+└────────────◇`,
                 footer: "`⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔",
                 buttons: [
                     {

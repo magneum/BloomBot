@@ -40,26 +40,26 @@ module.exports = {
 ├• *Tαɠ:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
 ├• *Nαɱҽ:* ${Fox.pushName}
 ├• *Cσɱɱαɳԃ:* ${AʀƈȶɨӼ.commandName}
-└──
+└────────────◇
 
-╔════⧉⭕ 𝐘𝐨𝐮𝐓𝐮𝐛𝐞/𝐅𝐢𝐥𝐭𝐞𝐫
-║• *${______1.default.MuveOn}yt8d:*  _download yt audio with filter_
-║• *${______1.default.MuveOn}ytbassboost:*  _download yt audio with filter_
-║• *${______1.default.MuveOn}ytdeep:*  _download yt audio with filter_
-║• *${______1.default.MuveOn}ytecho:*  _download yt audio with filter_
-║• *${______1.default.MuveOn}ytflanger:*  _download yt audio with filter_
-║• *${______1.default.MuveOn}ytnightcore:*  _download yt audio with filter_
-║• *${______1.default.MuveOn}ytphaser:*  _download yt audio with filter_
-║• *${______1.default.MuveOn}ytreverse:*  _download yt audio with filter_
-║• *${______1.default.MuveOn}ytslow:*  _download yt audio with filter_
-║• *${______1.default.MuveOn}ytspeed:*  _download yt audio with filter_
-║• *${______1.default.MuveOn}ytsubboost:*  _download yt audio with filter_
-║• *${______1.default.MuveOn}ytsuperslow:*  _download yt audio with filter_
-║• *${______1.default.MuveOn}ytsuperspeed:*  _download yt audio with filter_
-║• *${______1.default.MuveOn}ytsurround:*  _download yt audio with filter_
-║• *${______1.default.MuveOn}ytvaporwave:*  _download yt audio with filter_
-║• *${______1.default.MuveOn}ytvibrato:*  _download yt audio with filter_
-╚════════════╝`,
+┌─「 ⭕ 𝐘𝐨𝐮𝐓𝐮𝐛𝐞/𝐅𝐢𝐥𝐭𝐞𝐫
+├• *${______1.default.MuveOn}yt8d:*  _download yt audio with filter_
+├• *${______1.default.MuveOn}ytbassboost:*  _download yt audio with filter_
+├• *${______1.default.MuveOn}ytdeep:*  _download yt audio with filter_
+├• *${______1.default.MuveOn}ytecho:*  _download yt audio with filter_
+├• *${______1.default.MuveOn}ytflanger:*  _download yt audio with filter_
+├• *${______1.default.MuveOn}ytnightcore:*  _download yt audio with filter_
+├• *${______1.default.MuveOn}ytphaser:*  _download yt audio with filter_
+├• *${______1.default.MuveOn}ytreverse:*  _download yt audio with filter_
+├• *${______1.default.MuveOn}ytslow:*  _download yt audio with filter_
+├• *${______1.default.MuveOn}ytspeed:*  _download yt audio with filter_
+├• *${______1.default.MuveOn}ytsubboost:*  _download yt audio with filter_
+├• *${______1.default.MuveOn}ytsuperslow:*  _download yt audio with filter_
+├• *${______1.default.MuveOn}ytsuperspeed:*  _download yt audio with filter_
+├• *${______1.default.MuveOn}ytsurround:*  _download yt audio with filter_
+├• *${______1.default.MuveOn}ytvaporwave:*  _download yt audio with filter_
+├• *${______1.default.MuveOn}ytvibrato:*  _download yt audio with filter_
+└────────────◇`,
                 footer: "`⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔",
                 buttons: [
                     {

@@ -40,20 +40,20 @@ module.exports = {
 ├• *Tαɠ:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
 ├• *Nαɱҽ:* ${Fox.pushName}
 ├• *Cσɱɱαɳԃ:* ${AʀƈȶɨӼ.commandName}
-└──
+└────────────◇
 
-╔════⧉🦄 𝐑𝐚𝐧𝐝𝐨𝐦𝐬
-║• *${______1.default.MuveOn}leaderboard:*  _check group leaderboard_
-║• *${______1.default.MuveOn}rank:*  _check your rank_
-║• *${______1.default.MuveOn}joke:*  _get random jokes_
-║• *${______1.default.MuveOn}meme:*  _get random memes_
-║• *${______1.default.MuveOn}fact*  _get random fact_
-║• *${______1.default.MuveOn}trivia:*  _answer to diff questions_
-║• *${______1.default.MuveOn}tr:*  _language translater_
-║• *${______1.default.MuveOn}tts:*  _convert text to speech_
-║• *${______1.default.MuveOn}pokedex:*  _get any pokemon information_
-║• *${______1.default.MuveOn}triggered:*  _@tag or reply person_
-╚════════════╝`,
+┌─「 🦄 𝐑𝐚𝐧𝐝𝐨𝐦𝐬
+├• *${______1.default.MuveOn}leaderboard:*  _check group leaderboard_
+├• *${______1.default.MuveOn}rank:*  _check your rank_
+├• *${______1.default.MuveOn}joke:*  _get random jokes_
+├• *${______1.default.MuveOn}meme:*  _get random memes_
+├• *${______1.default.MuveOn}fact*  _get random fact_
+├• *${______1.default.MuveOn}trivia:*  _answer to diff questions_
+├• *${______1.default.MuveOn}tr:*  _language translater_
+├• *${______1.default.MuveOn}tts:*  _convert text to speech_
+├• *${______1.default.MuveOn}pokedex:*  _get any pokemon information_
+├• *${______1.default.MuveOn}triggered:*  _@tag or reply person_
+└────────────◇`,
                 footer: "`⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔",
                 buttons: [
                     {

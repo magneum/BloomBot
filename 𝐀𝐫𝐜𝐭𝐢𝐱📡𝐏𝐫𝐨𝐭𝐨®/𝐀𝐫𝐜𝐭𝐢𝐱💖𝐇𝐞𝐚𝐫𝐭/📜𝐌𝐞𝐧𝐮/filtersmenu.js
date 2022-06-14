@@ -40,27 +40,27 @@ module.exports = {
 ├• *Tαɠ:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
 ├• *Nαɱҽ:* ${Fox.pushName}
 ├• *Cσɱɱαɳԃ:* ${AʀƈȶɨӼ.commandName}
-└──
+└────────────◇
 
-╔════⧉🍰 𝐅𝐢𝐥𝐭𝐞𝐫𝐬/𝐀𝐮𝐝𝐢𝐨
-║• *${______1.default.MuveOn}8d:*  _audio filter_
-║• *${______1.default.MuveOn}bassboost:*  _audio filter_
-║• *${______1.default.MuveOn}deep:*  _audio filter_
-║• *${______1.default.MuveOn}echo:*  _audio filter_
-║• *${______1.default.MuveOn}fast:*  _audio filter_
-║• *${______1.default.MuveOn}flanger:*  _audio filter_
-║• *${______1.default.MuveOn}nightcore:*  _audio filter_
-║• *${______1.default.MuveOn}phaser:*  _audio filter_
-║• *${______1.default.MuveOn}reverse:*  _audio filter_
-║• *${______1.default.MuveOn}slow:*  _audio filter_
-║• *${______1.default.MuveOn}speed:*  _audio filter_
-║• *${______1.default.MuveOn}subboost:*  _audio filter_
-║• *${______1.default.MuveOn}superslow:*  _audio filter_
-║• *${______1.default.MuveOn}superspeed:*  _audio filter_
-║• *${______1.default.MuveOn}surround:*  _audio filter_
-║• *${______1.default.MuveOn}vaporwave:*  _audio filter_
-║• *${______1.default.MuveOn}vibrato:*  _audio filter_
-╚════════════╝`,
+┌─「 🍰 𝐅𝐢𝐥𝐭𝐞𝐫𝐬/𝐀𝐮𝐝𝐢𝐨
+├• *${______1.default.MuveOn}8d:*  _audio filter_
+├• *${______1.default.MuveOn}bassboost:*  _audio filter_
+├• *${______1.default.MuveOn}deep:*  _audio filter_
+├• *${______1.default.MuveOn}echo:*  _audio filter_
+├• *${______1.default.MuveOn}fast:*  _audio filter_
+├• *${______1.default.MuveOn}flanger:*  _audio filter_
+├• *${______1.default.MuveOn}nightcore:*  _audio filter_
+├• *${______1.default.MuveOn}phaser:*  _audio filter_
+├• *${______1.default.MuveOn}reverse:*  _audio filter_
+├• *${______1.default.MuveOn}slow:*  _audio filter_
+├• *${______1.default.MuveOn}speed:*  _audio filter_
+├• *${______1.default.MuveOn}subboost:*  _audio filter_
+├• *${______1.default.MuveOn}superslow:*  _audio filter_
+├• *${______1.default.MuveOn}superspeed:*  _audio filter_
+├• *${______1.default.MuveOn}surround:*  _audio filter_
+├• *${______1.default.MuveOn}vaporwave:*  _audio filter_
+├• *${______1.default.MuveOn}vibrato:*  _audio filter_
+└────────────◇`,
                 footer: "`⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔",
                 buttons: [
                     {

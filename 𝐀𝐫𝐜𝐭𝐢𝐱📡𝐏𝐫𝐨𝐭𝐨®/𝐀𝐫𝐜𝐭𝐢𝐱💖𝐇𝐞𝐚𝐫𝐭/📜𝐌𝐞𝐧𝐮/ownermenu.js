@@ -40,19 +40,19 @@ module.exports = {
 ├• *Tαɠ:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
 ├• *Nαɱҽ:* ${Fox.pushName}
 ├• *Cσɱɱαɳԃ:* ${AʀƈȶɨӼ.commandName}
-└──
+└────────────◇
 
-╔════⧉🐙 𝐊𝐢𝐧𝐠/𝐎𝐰𝐧𝐞𝐫
-║• *${______1.default.MuveOn}join:*  _join any valid group_
-║• *${______1.default.MuveOn}dyno:*  _check heroku usage_
-║• *${______1.default.MuveOn}ban:*  _ban bot in group/user_
-║• *${______1.default.MuveOn}unban:*  _unban bot in group/user_
-║• *${______1.default.MuveOn}reboot:*  _reboot sakura server_
-║• *${______1.default.MuveOn}bugreport:*  _ꜱᴇɴᴅ bug report to devs._
-║• *${______1.default.MuveOn}leave:*  _leave groups with/without sending text._
-║• *${______1.default.MuveOn}spam:*  _spam messsage in group/private_
-║• *${______1.default.MuveOn}help:*  _basic help command_
-╚════════════╝`,
+┌─「 🐙 𝐊𝐢𝐧𝐠/𝐎𝐰𝐧𝐞𝐫
+├• *${______1.default.MuveOn}join:*  _join any valid group_
+├• *${______1.default.MuveOn}dyno:*  _check heroku usage_
+├• *${______1.default.MuveOn}ban:*  _ban bot in group/user_
+├• *${______1.default.MuveOn}unban:*  _unban bot in group/user_
+├• *${______1.default.MuveOn}reboot:*  _reboot sakura server_
+├• *${______1.default.MuveOn}bugreport:*  _ꜱᴇɴᴅ bug report to devs._
+├• *${______1.default.MuveOn}leave:*  _leave groups with/without sending text._
+├• *${______1.default.MuveOn}spam:*  _spam messsage in group/private_
+├• *${______1.default.MuveOn}help:*  _basic help command_
+└────────────◇`,
                 footer: "`⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔",
                 buttons: [
                     {

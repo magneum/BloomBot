@@ -40,23 +40,23 @@ module.exports = {
 ├• *Tαɠ:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
 ├• *Nαɱҽ:* ${Fox.pushName}
 ├• *Cσɱɱαɳԃ:* ${AʀƈȶɨӼ.commandName}
-└──
+└────────────◇
 
-╔════⧉💰 𝗚𝗮𝗺𝗲𝘀
-║• *${______1.default.MuveOn}shop:*  _visit krakinzlab member store_
-║• ${______1.default.MuveOn}inv:*  _check your inventory or replied person's_
-║• *${______1.default.MuveOn}buy:*  _buy items from store_
-║• *${______1.default.MuveOn}pay:*  _reply to person to pay money_
-║• *${______1.default.MuveOn}hunt:*  _catch pokemon in forest_
-║• *${______1.default.MuveOn}zoo:*  _make a zoo_
-║• *${______1.default.MuveOn}gamble* _gamble with AI_
-║• *${______1.default.MuveOn}fish:*  _Catch A Fish From A Vast Ocean_
-║• *${______1.default.MuveOn}daily:*  _Gives You 200 per day_
-║• *${______1.default.MuveOn}work:*  _Work to Earn Money_
-║• *${______1.default.MuveOn}rob:*  _rob someone_
-║• *${______1.default.MuveOn}balance:*  _check your balance or replied person's_
-║• *${______1.default.MuveOn}truthdare:*  _get random truth/dare query_
-╚════════════╝`,
+┌─「 💰 𝗚𝗮𝗺𝗲𝘀
+├• *${______1.default.MuveOn}shop:*  _visit krakinzlab member store_
+├• ${______1.default.MuveOn}inv:*  _check your inventory or replied person's_
+├• *${______1.default.MuveOn}buy:*  _buy items from store_
+├• *${______1.default.MuveOn}pay:*  _reply to person to pay money_
+├• *${______1.default.MuveOn}hunt:*  _catch pokemon in forest_
+├• *${______1.default.MuveOn}zoo:*  _make a zoo_
+├• *${______1.default.MuveOn}gamble* _gamble with AI_
+├• *${______1.default.MuveOn}fish:*  _Catch A Fish From A Vast Ocean_
+├• *${______1.default.MuveOn}daily:*  _Gives You 200 per day_
+├• *${______1.default.MuveOn}work:*  _Work to Earn Money_
+├• *${______1.default.MuveOn}rob:*  _rob someone_
+├• *${______1.default.MuveOn}balance:*  _check your balance or replied person's_
+├• *${______1.default.MuveOn}truthdare:*  _get random truth/dare query_
+└────────────◇`,
                 footer: "`⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔",
                 buttons: [
                     {

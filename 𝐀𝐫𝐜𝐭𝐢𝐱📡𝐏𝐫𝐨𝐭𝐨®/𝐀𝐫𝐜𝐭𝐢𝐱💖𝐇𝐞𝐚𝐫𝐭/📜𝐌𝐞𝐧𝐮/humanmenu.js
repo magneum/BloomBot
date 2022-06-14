@@ -40,17 +40,17 @@ module.exports = {
 ├• *Tαɠ:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
 ├• *Nαɱҽ:* ${Fox.pushName}
 ├• *Cσɱɱαɳԃ:* ${AʀƈȶɨӼ.commandName}
-└──
+└────────────◇
 
-╔════⧉🥃 𝐇𝐮𝐦𝐚𝐧 𝐍𝐒𝐅𝐖
-║• *${______1.default.MuveOn}4k:*  _get random 4kporn img/gif_
-║• *${______1.default.MuveOn}blowjob:*  _get random blowjob img/gif_
-║• *${______1.default.MuveOn}milf:*  _get random milf img/gif_
-║• *${______1.default.MuveOn}milk:*  _get random milk img/gif_
-║• *${______1.default.MuveOn}pussy:*  _get random pussy img/gif_
-║• *${______1.default.MuveOn}slut:*  _get random slut img/gif_
-║• *${______1.default.MuveOn}tikporn:*  _get random tiktokporn video_
-╚════════════╝`,
+┌─「 🥃 𝐇𝐮𝐦𝐚𝐧 𝐍𝐒𝐅𝐖
+├• *${______1.default.MuveOn}4k:*  _get random 4kporn img/gif_
+├• *${______1.default.MuveOn}blowjob:*  _get random blowjob img/gif_
+├• *${______1.default.MuveOn}milf:*  _get random milf img/gif_
+├• *${______1.default.MuveOn}milk:*  _get random milk img/gif_
+├• *${______1.default.MuveOn}pussy:*  _get random pussy img/gif_
+├• *${______1.default.MuveOn}slut:*  _get random slut img/gif_
+├• *${______1.default.MuveOn}tikporn:*  _get random tiktokporn video_
+└────────────◇`,
                 footer: "`⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔",
                 buttons: [
                     {

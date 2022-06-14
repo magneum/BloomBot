@@ -40,71 +40,71 @@ module.exports = {
 ├• *Tαɠ:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
 ├• *Nαɱҽ:* ${Fox.pushName}
 ├• *Cσɱɱαɳԃ:* ${AʀƈȶɨӼ.commandName}
-└──
+└────────────◇
 
-╔════⧉🍙 𝐀𝐧𝐢𝐦𝐞
-║• *${______1.default.MuveOn}anime:*  _search any anime_
-║• *${______1.default.MuveOn}ranimewall:*  _get random anime wallpaper_
-║• *${______1.default.MuveOn}smile:*  _@tag or reply_ 
-║• *${______1.default.MuveOn}yes:*  _@tag or reply_
-║• *${______1.default.MuveOn}bite:*  _@tag or reply_
-║• *${______1.default.MuveOn}blush:*  _@tag or reply_
-║• *${______1.default.MuveOn}bored:*  _@tag or reply_
-║• *${______1.default.MuveOn}confused:*  _@tag or reply_
-║• *${______1.default.MuveOn}cry:*  _@tag or reply_
-║• *${______1.default.MuveOn}goodnight:*  _@tag or reply_
-║• *${______1.default.MuveOn}happy:*  _@tag or reply_
-║• *${______1.default.MuveOn}hi5:*  _@tag or reply_
-║• *${______1.default.MuveOn}poke:*  _@tag or reply_
-║• *${______1.default.MuveOn}sad:*  _@tag or reply_
-║• *${______1.default.MuveOn}thinking:*  _@tag or reply_
-║• *${______1.default.MuveOn}cuddle:*  _@tag or reply_
-║• *${______1.default.MuveOn}hug:*  _@tag or reply_
-║• *${______1.default.MuveOn}pat:*  _@tag or reply_
-║• *${______1.default.MuveOn}slap:*  _@tag or reply_ 
-║• *${______1.default.MuveOn}wink:*  _@tag or reply_
-║• *${______1.default.MuveOn}angry:*  _@tag or reply_
-║• *${______1.default.MuveOn}baka:*  _@tag or reply_
-║• *${______1.default.MuveOn}bonk:*  _@tag or reply_
-║• *${______1.default.MuveOn}bully:*  _@tag or reply_
-║• *${______1.default.MuveOn}bye:*  _@tag or reply_
-║• *${______1.default.MuveOn}chase:*  _@tag or reply_
-║• *${______1.default.MuveOn}cheer:*  _@tag or reply_
-║• *${______1.default.MuveOn}cringe:*  _@tag or reply_
-║• *${______1.default.MuveOn}dab:*  _@tag or reply_
-║• *${______1.default.MuveOn}dance:*  _@tag or reply_
-║• *${______1.default.MuveOn}die:*  _@tag or reply_
-║• *${______1.default.MuveOn}facepalm:*  _@tag or reply_
-║• *${______1.default.MuveOn}feed:*  _@tag or reply_
-║• *${______1.default.MuveOn}glomp:*  _@tag or reply_
-║• *${______1.default.MuveOn}hold:*  _@tag or reply_
-║• *${______1.default.MuveOn}hate:*  _@tag or reply_
-║• *${______1.default.MuveOn}hi:*  _@tag or reply_
-║• *${______1.default.MuveOn}kill:*  _@tag or reply_
-║• *${______1.default.MuveOn}lick:*  _@tag or reply_
-║• *${______1.default.MuveOn}love:*  _@tag or reply_
-║• *${______1.default.MuveOn}lurk:*  _@tag or reply_
-║• *${______1.default.MuveOn}nervous:*  _@tag or reply_
-║• *${______1.default.MuveOn}nope:*  _@tag or reply_
-║• *${______1.default.MuveOn}nom:*  _@tag or reply_
-║• *${______1.default.MuveOn}nuzzle:*  _@tag or reply_
-║• *${______1.default.MuveOn}panic:*  _@tag or reply_
-║• *${______1.default.MuveOn}peck:*  _@tag or reply_
-║• *${______1.default.MuveOn}poke:*  _@tag or reply_
-║• *${______1.default.MuveOn}pout:*  _@tag or reply_
-║• *${______1.default.MuveOn}run:*  _@tag or reply_
-║• *${______1.default.MuveOn}sip:*  _@tag or reply_
-║• *${______1.default.MuveOn}shoot:*  _@tag or reply_
-║• *${______1.default.MuveOn}shrug:*  _@tag or reply_
-║• *${______1.default.MuveOn}sleep:*  _@tag or reply_
-║• *${______1.default.MuveOn}smug:*  _@tag or reply_
-║• *${______1.default.MuveOn}stab:*  _@tag or reply_
-║• *${______1.default.MuveOn}stare:*  _@tag or reply_
-║• *${______1.default.MuveOn}tease:*  _@tag or reply_
-║• *${______1.default.MuveOn}tickle:*  _@tag or reply_
-║• *${______1.default.MuveOn}thumbsup:*  _@tag or reply_
-║• *${______1.default.MuveOn}wag:*  _@tag or reply_
-╚════════════╝`,
+┌─「 🍙 𝐀𝐧𝐢𝐦𝐞
+├• *${______1.default.MuveOn}anime:*  _search any anime_
+├• *${______1.default.MuveOn}ranimewall:*  _get random anime wallpaper_
+├• *${______1.default.MuveOn}smile:*  _@tag or reply_ 
+├• *${______1.default.MuveOn}yes:*  _@tag or reply_
+├• *${______1.default.MuveOn}bite:*  _@tag or reply_
+├• *${______1.default.MuveOn}blush:*  _@tag or reply_
+├• *${______1.default.MuveOn}bored:*  _@tag or reply_
+├• *${______1.default.MuveOn}confused:*  _@tag or reply_
+├• *${______1.default.MuveOn}cry:*  _@tag or reply_
+├• *${______1.default.MuveOn}goodnight:*  _@tag or reply_
+├• *${______1.default.MuveOn}happy:*  _@tag or reply_
+├• *${______1.default.MuveOn}hi5:*  _@tag or reply_
+├• *${______1.default.MuveOn}poke:*  _@tag or reply_
+├• *${______1.default.MuveOn}sad:*  _@tag or reply_
+├• *${______1.default.MuveOn}thinking:*  _@tag or reply_
+├• *${______1.default.MuveOn}cuddle:*  _@tag or reply_
+├• *${______1.default.MuveOn}hug:*  _@tag or reply_
+├• *${______1.default.MuveOn}pat:*  _@tag or reply_
+├• *${______1.default.MuveOn}slap:*  _@tag or reply_ 
+├• *${______1.default.MuveOn}wink:*  _@tag or reply_
+├• *${______1.default.MuveOn}angry:*  _@tag or reply_
+├• *${______1.default.MuveOn}baka:*  _@tag or reply_
+├• *${______1.default.MuveOn}bonk:*  _@tag or reply_
+├• *${______1.default.MuveOn}bully:*  _@tag or reply_
+├• *${______1.default.MuveOn}bye:*  _@tag or reply_
+├• *${______1.default.MuveOn}chase:*  _@tag or reply_
+├• *${______1.default.MuveOn}cheer:*  _@tag or reply_
+├• *${______1.default.MuveOn}cringe:*  _@tag or reply_
+├• *${______1.default.MuveOn}dab:*  _@tag or reply_
+├• *${______1.default.MuveOn}dance:*  _@tag or reply_
+├• *${______1.default.MuveOn}die:*  _@tag or reply_
+├• *${______1.default.MuveOn}facepalm:*  _@tag or reply_
+├• *${______1.default.MuveOn}feed:*  _@tag or reply_
+├• *${______1.default.MuveOn}glomp:*  _@tag or reply_
+├• *${______1.default.MuveOn}hold:*  _@tag or reply_
+├• *${______1.default.MuveOn}hate:*  _@tag or reply_
+├• *${______1.default.MuveOn}hi:*  _@tag or reply_
+├• *${______1.default.MuveOn}kill:*  _@tag or reply_
+├• *${______1.default.MuveOn}lick:*  _@tag or reply_
+├• *${______1.default.MuveOn}love:*  _@tag or reply_
+├• *${______1.default.MuveOn}lurk:*  _@tag or reply_
+├• *${______1.default.MuveOn}nervous:*  _@tag or reply_
+├• *${______1.default.MuveOn}nope:*  _@tag or reply_
+├• *${______1.default.MuveOn}nom:*  _@tag or reply_
+├• *${______1.default.MuveOn}nuzzle:*  _@tag or reply_
+├• *${______1.default.MuveOn}panic:*  _@tag or reply_
+├• *${______1.default.MuveOn}peck:*  _@tag or reply_
+├• *${______1.default.MuveOn}poke:*  _@tag or reply_
+├• *${______1.default.MuveOn}pout:*  _@tag or reply_
+├• *${______1.default.MuveOn}run:*  _@tag or reply_
+├• *${______1.default.MuveOn}sip:*  _@tag or reply_
+├• *${______1.default.MuveOn}shoot:*  _@tag or reply_
+├• *${______1.default.MuveOn}shrug:*  _@tag or reply_
+├• *${______1.default.MuveOn}sleep:*  _@tag or reply_
+├• *${______1.default.MuveOn}smug:*  _@tag or reply_
+├• *${______1.default.MuveOn}stab:*  _@tag or reply_
+├• *${______1.default.MuveOn}stare:*  _@tag or reply_
+├• *${______1.default.MuveOn}tease:*  _@tag or reply_
+├• *${______1.default.MuveOn}tickle:*  _@tag or reply_
+├• *${______1.default.MuveOn}thumbsup:*  _@tag or reply_
+├• *${______1.default.MuveOn}wag:*  _@tag or reply_
+└────────────◇`,
                 footer: "`⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔",
                 buttons: [
                     {
