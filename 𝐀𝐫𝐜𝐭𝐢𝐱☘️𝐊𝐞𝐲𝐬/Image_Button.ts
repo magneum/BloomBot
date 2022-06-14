@@ -22,10 +22,10 @@ timestamp: Date(),
 contextInfo: { mentionedJid: [AʀƈȶɨӼ.sender] },
 image: { url: media },
 caption: `┌─「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢® 」
-├•♩ *Tαɠ:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
-├•♭ *Nαɱҽ:* ${Fox.pushName}
-├•♪ *Cσɱɱαɳԃ:* ${AʀƈȶɨӼ.commandName}
-└──•
+├• *Tαɠ:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
+├• *Nαɱҽ:* ${Fox.pushName}
+├• *Cσɱɱαɳԃ:* ${AʀƈȶɨӼ.commandName}
+└──
 
 ${caption}`,
 footer: `⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ⦔`,
