@@ -75,7 +75,7 @@ const sequelize = ______1.default.DATABASE;
 const logger = (0, pino_1.default)({
     timestamp: () => `,"Time":"${new Date().toJSON()}"`,
 }).child({});
-logger.level = "error";
+logger.level = "silent";
 var Konn = (0, baileys_1.makeInMemoryStore)({ logger });
 Konn === null || Konn === void 0 ? void 0 : Konn.readFromFile("./𝐀𝐫𝐜𝐭𝐢𝐱⚠️𝕿𝖊𝖒𝖕/AʀƈȶɨӼ.json");
 setInterval(() => {

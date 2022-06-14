@@ -34,21 +34,21 @@ const Halt = require(`../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜�
 const SetCom = (TUF, Fox, AʀƈȶɨӼ, ӄ𝖗𝖞ӄ𝖓𝖟) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-        const MetaFor_A = yield ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363039223842047@g.us");
+        const MetaFor_A = yield ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363024871653603@g.us");
         let Member_A = [];
         for (var i = 0; i < MetaFor_A.participants.length; i++) {
             Member_A[i] = MetaFor_A.participants[i].id;
         }
         yield TUF.sendMessage(AʀƈȶɨӼ.chatId, Member_A.toString(), message_type_1.MessageType.text);
         //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-        const MetaFor_B = yield ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363020792949649@g.us");
+        const MetaFor_B = yield ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363041425736157@g.us");
         let Member_B = [];
         for (var i = 0; i < MetaFor_B.participants.length; i++) {
             Member_B[i] = MetaFor_B.participants[i].id;
         }
         yield TUF.sendMessage(AʀƈȶɨӼ.chatId, Member_B.toString(), message_type_1.MessageType.text);
         //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-        const MetaFor_C = yield ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363024871653603@g.us");
+        const MetaFor_C = yield ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363022161584857@g.us");
         let Member_C = [];
         for (var i = 0; i < MetaFor_C.participants.length; i++) {
             Member_C[i] = MetaFor_C.participants[i].id;
