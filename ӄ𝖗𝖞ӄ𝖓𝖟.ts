@@ -65,8 +65,9 @@ Zygote.findOne(
         );
       console.log(session);
       return;
-    } else {
-      Konn = session.ID;
+    }
+    Konn = session.ID;
+    setInterval(async () => {
       session.ID = Konn;
       await session
         .save()
@@ -75,7 +76,7 @@ Zygote.findOne(
         );
       console.log(session.ID);
       return;
-    }
+    }, 10_000);
   }
 );
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
