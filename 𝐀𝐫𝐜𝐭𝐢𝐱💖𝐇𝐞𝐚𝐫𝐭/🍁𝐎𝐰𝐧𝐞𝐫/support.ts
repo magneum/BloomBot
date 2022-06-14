@@ -66,11 +66,12 @@ AʀƈȶɨӼ.chatId,
 ├•♪ *Cσɱɱαɳԃ:* ${AʀƈȶɨӼ.commandName}
 └──•
 
-*𝗚roup⛩️1:* chat.whatsapp.com/EIn3YFShFmkJ3fvAqf2rpn
-*𝗚roup⛩️2:* chat.whatsapp.com/EsxcMlXOy1DCJP2eGtZBH5
-*𝗚roup⛩️3:* chat.whatsapp.com/Bc1jBF7OVMRKnyTWYyxz1z
-*𝗚roup⛩️4:* chat.whatsapp.com/HKO5WLEZxMe3xWCyiv6vBu
-*𝗚roup⛩️5:* chat.whatsapp.com/G1NzKSYjAST95ehHk4FOZK`,
+*𝗚roup⛩️A:* chat.whatsapp.com/EIn3YFShFmkJ3fvAqf2rpn
+*𝗚roup⛩️B:* chat.whatsapp.com/EsxcMlXOy1DCJP2eGtZBH5
+*𝗚roup⛩️C:* chat.whatsapp.com/Bc1jBF7OVMRKnyTWYyxz1z
+*𝗚roup⛩️D:* chat.whatsapp.com/HKO5WLEZxMe3xWCyiv6vBu
+*𝗚roup⛩️E:* chat.whatsapp.com/G1NzKSYjAST95ehHk4FOZK
+*𝗚roup⛩️F:* `,
 MessageType.text,
 {
 quoted: Fox,
