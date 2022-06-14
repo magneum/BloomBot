@@ -26,17 +26,52 @@ import messages_upsert from "./𝐀𝐫𝐜𝐭𝐢𝐱💥𝐄𝐯𝐞𝐧𝐭�
 import connection_update from "./𝐀𝐫𝐜𝐭𝐢𝐱💥𝐄𝐯𝐞𝐧𝐭𝐬/connection_update";
 import participants_update from "./𝐀𝐫𝐜𝐭𝐢𝐱💥𝐄𝐯𝐞𝐧𝐭𝐬/participants_update";
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
+const UserPrivate = require(`./𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/private`);
+const Welcome = require(`./𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/setwelcome`);
+const LinkList = require(`./𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/antilink`);
+const DebugList = require(`./𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/debug`);
+const Ranker = require(`./𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/autorank`);
+const Pokemon = require(`./𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/pokemon`);
+const Economy = require(`./𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/economy`);
+const NsfwList = require(`./𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/nsfw`);
+const BanPerson = require(`./𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/ban`);
+const BanGroup = require(`./𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/ban`);
+const Zygote = require(`./𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/session/zygote`);
+const Bagde = require(`./𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/badge`);
+const Halt = require(`./𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/halt`);
+//" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 const sequelize: Sequelize = ʟᴀʏᴏᴜᴛ.DATABASE;
 const logger: Logger = Pot({
 timestamp: () => `,"Time":"${new Date().toJSON()}"`,
 }).child({});
 logger.level = "error";
-const store = makeInMemoryStore({ logger });
-console.log(store);
-store?.readFromFile("./AʀƈȶɨӼ.json");
-setInterval(() => {
-store?.writeToFile("./AʀƈȶɨӼ.json");
+var 𝐂𝐨𝐧𝐧𝐞𝐜𝐭 = makeInMemoryStore({ logger });
+Zygote.findOne(
+{
+Name: 𝐂𝐨𝐧𝐧𝐞𝐜𝐭,
+},
+async (error: any, session: any) => {
+if (error) {
+return console.log(error);
+}
+if (!session) {
+var newServer = new LinkList({
+Name: 𝐂𝐨𝐧𝐧𝐞𝐜𝐭,
+});
+await newServer.save();
+}
+𝐂𝐨𝐧𝐧𝐞𝐜𝐭 = session.Name;
+setInterval(async () => {
+session.Name = 𝐂𝐨𝐧𝐧𝐞𝐜𝐭;
+await session.save();
+console.log(session.Name);
 }, 4_000);
+// 𝐂𝐨𝐧𝐧𝐞𝐜𝐭?.readFromFile("./AʀƈȶɨӼ.json");
+// setInterval(() => {
+// 𝐂𝐨𝐧𝐧𝐞𝐜𝐭?.writeToFile("./AʀƈȶɨӼ.json");
+// }, 4_000);
+}
+);
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 (async (): Promise<void> => {
 console.log(Kolor.yellow("💡𝐈𝐧𝐟𝐨: Trying To Connect To '🍃mongo + 🕸️sql'"));
@@ -79,7 +114,10 @@ for (const File of AllFiles) {
 const command = require(`./𝐀𝐫𝐜𝐭𝐢𝐱💖𝐇𝐞𝐚𝐫𝐭/${Files}/${File}`);
 try {
 commandHandler.set(command.name, command);
-console.log(Kolor.green(Files + ":   ") + Kolor.blue(File.toLocaleUpperCase() + " ✔️"));
+console.log(
+Kolor.green(Files + ":   ") +
+Kolor.blue(File.toLocaleUpperCase() + " ✔️")
+);
 } catch (error) {
 console.log(
 Kolor.red("❌𝐄𝐫𝐫𝐨𝐫: " + error + " | ") +
@@ -103,7 +141,7 @@ return {};
 },
 });
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-store?.bind(ӄ𝖗𝖞ӄ𝖓𝖟.ev);
+𝐂𝐨𝐧𝐧𝐞𝐜𝐭?.bind(ӄ𝖗𝖞ӄ𝖓𝖟.ev);
 ӄ𝖗𝖞ӄ𝖓𝖟.ev.on("group-participants.update", async (update) => {
 participants_update.participants_update(update, ӄ𝖗𝖞ӄ𝖓𝖟);
 });

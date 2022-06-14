@@ -57,16 +57,49 @@ const messages_upsert_1 = __importDefault(require("./\uD835\uDC00\uD835\uDC2B\uD
 const connection_update_1 = __importDefault(require("./\uD835\uDC00\uD835\uDC2B\uD835\uDC1C\uD835\uDC2D\uD835\uDC22\uD835\uDC31\uD83D\uDCA5\uD835\uDC04\uD835\uDC2F\uD835\uDC1E\uD835\uDC27\uD835\uDC2D\uD835\uDC2C/connection_update"));
 const participants_update_1 = __importDefault(require("./\uD835\uDC00\uD835\uDC2B\uD835\uDC1C\uD835\uDC2D\uD835\uDC22\uD835\uDC31\uD83D\uDCA5\uD835\uDC04\uD835\uDC2F\uD835\uDC1E\uD835\uDC27\uD835\uDC2D\uD835\uDC2C/participants_update"));
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
+const UserPrivate = require(`./𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/private`);
+const Welcome = require(`./𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/setwelcome`);
+const LinkList = require(`./𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/antilink`);
+const DebugList = require(`./𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/debug`);
+const Ranker = require(`./𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/autorank`);
+const Pokemon = require(`./𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/pokemon`);
+const Economy = require(`./𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/economy`);
+const NsfwList = require(`./𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/nsfw`);
+const BanPerson = require(`./𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/ban`);
+const BanGroup = require(`./𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/ban`);
+const Zygote = require(`./𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/session/zygote`);
+const Bagde = require(`./𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/badge`);
+const Halt = require(`./𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/halt`);
+//" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 const sequelize = ______1.default.DATABASE;
 const logger = (0, pino_1.default)({
     timestamp: () => `,"Time":"${new Date().toJSON()}"`,
 }).child({});
 logger.level = "error";
-const store = (0, baileys_1.makeInMemoryStore)({ logger });
-store === null || store === void 0 ? void 0 : store.readFromFile("./AʀƈȶɨӼ.json");
-setInterval(() => {
-    store === null || store === void 0 ? void 0 : store.writeToFile("./AʀƈȶɨӼ.json");
-}, 10000);
+var 𝐂𝐨𝐧𝐧𝐞𝐜𝐭 = (0, baileys_1.makeInMemoryStore)({ logger });
+Zygote.findOne({
+    Name: 𝐂𝐨𝐧𝐧𝐞𝐜𝐭,
+}, (error, session) => __awaiter(void 0, void 0, void 0, function* () {
+    if (error) {
+        return console.log(error);
+    }
+    if (!session) {
+        var newServer = new LinkList({
+            Name: 𝐂𝐨𝐧𝐧𝐞𝐜𝐭,
+        });
+        yield newServer.save();
+    }
+    𝐂𝐨𝐧𝐧𝐞𝐜𝐭 = session.Name;
+    setInterval(() => __awaiter(void 0, void 0, void 0, function* () {
+        session.Name = 𝐂𝐨𝐧𝐧𝐞𝐜𝐭;
+        yield session.save();
+        console.log(session.Name);
+    }), 4000);
+    // 𝐂𝐨𝐧𝐧𝐞𝐜𝐭?.readFromFile("./AʀƈȶɨӼ.json");
+    // setInterval(() => {
+    // 𝐂𝐨𝐧𝐧𝐞𝐜𝐭?.writeToFile("./AʀƈȶɨӼ.json");
+    // }, 4_000);
+}));
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 (() => __awaiter(void 0, void 0, void 0, function* () {
     console.log(chalk_1.default.yellow("💡𝐈𝐧𝐟𝐨: Trying To Connect To '🍃mongo + 🕸️sql'"));
@@ -107,7 +140,8 @@ setInterval(() => {
             const command = require(`./𝐀𝐫𝐜𝐭𝐢𝐱💖𝐇𝐞𝐚𝐫𝐭/${Files}/${File}`);
             try {
                 commandHandler.set(command.name, command);
-                console.log(chalk_1.default.green(Files + ":   ") + chalk_1.default.blue(File.toLocaleUpperCase() + " ✔️"));
+                console.log(chalk_1.default.green(Files + ":   ") +
+                    chalk_1.default.blue(File.toLocaleUpperCase() + " ✔️"));
             }
             catch (error) {
                 console.log(chalk_1.default.red("❌𝐄𝐫𝐫𝐨𝐫: " + error + " | ") +
@@ -130,7 +164,7 @@ setInterval(() => {
             }),
         });
         //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-        store === null || store === void 0 ? void 0 : store.bind(ӄ𝖗𝖞ӄ𝖓𝖟.ev);
+        𝐂𝐨𝐧𝐧𝐞𝐜𝐭 === null || 𝐂𝐨𝐧𝐧𝐞𝐜𝐭 === void 0 ? void 0 : 𝐂𝐨𝐧𝐧𝐞𝐜𝐭.bind(ӄ𝖗𝖞ӄ𝖓𝖟.ev);
         ӄ𝖗𝖞ӄ𝖓𝖟.ev.on("group-participants.update", (update) => __awaiter(void 0, void 0, void 0, function* () {
             participants_update_1.default.participants_update(update, ӄ𝖗𝖞ӄ𝖓𝖟);
         }));
