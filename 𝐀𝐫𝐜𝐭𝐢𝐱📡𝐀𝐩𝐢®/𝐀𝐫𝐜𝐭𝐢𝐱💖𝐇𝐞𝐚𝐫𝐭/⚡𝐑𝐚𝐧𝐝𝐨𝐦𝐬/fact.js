@@ -31,7 +31,7 @@ var dotScrpt = scriptName.slice(0, -3).toLowerCase();
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 module.exports = {
     name: dotScrpt,
-    category: __dirname,
+    category: path_1.default.basename(__dirname),
     handle(TUF, Fox, AʀƈȶɨӼ, ǟʀɢʊʍɛռȶ, ӄ𝖗𝖞ӄ𝖓𝖟) {
         return __awaiter(this, void 0, void 0, function* () {
             try {

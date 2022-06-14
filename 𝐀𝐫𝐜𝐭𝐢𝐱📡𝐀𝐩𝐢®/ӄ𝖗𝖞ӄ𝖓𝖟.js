@@ -98,18 +98,21 @@ setInterval(() => {
     chalkAnimation.rainbow(" (𝐜)𝐀𝐫𝐜𝐭𝐢𝐱 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬! ");
     //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
     let commandHandler = new Map();
-    let FFolders = fs_1.default.readdirSync((0, path_1.join)(__dirname, "𝐀𝐫𝐜𝐭𝐢𝐱💖𝐇𝐞𝐚𝐫𝐭"));
-    for (const FFiles of FFolders) {
-        const AllFFiles = fs_1.default
-            .readdirSync((0, path_1.join)(__dirname, `./𝐀𝐫𝐜𝐭𝐢𝐱💖𝐇𝐞𝐚𝐫𝐭/${FFiles}`))
+    let Folders = fs_1.default.readdirSync((0, path_1.join)(__dirname, "𝐀𝐫𝐜𝐭𝐢𝐱💖𝐇𝐞𝐚𝐫𝐭"));
+    for (const Files of Folders) {
+        const AllFiles = fs_1.default
+            .readdirSync((0, path_1.join)(__dirname, `./𝐀𝐫𝐜𝐭𝐢𝐱💖𝐇𝐞𝐚𝐫𝐭/${Files}`))
             .filter((File) => File.endsWith(`.js`));
-        for (const File of AllFFiles) {
-            const command = require(`./𝐀𝐫𝐜𝐭𝐢𝐱💖𝐇𝐞𝐚𝐫𝐭/${FFiles}/${File}`);
+        for (const File of AllFiles) {
+            const command = require(`./𝐀𝐫𝐜𝐭𝐢𝐱💖𝐇𝐞𝐚𝐫𝐭/${Files}/${File}`);
             try {
                 commandHandler.set(command.name, command);
+                console.log(chalk_1.default.green(Files + " :") + chalk_1.default.blue(File + " ✔️"));
             }
             catch (error) {
-                console.log(`❌𝐄𝐫𝐫𝐨𝐫: Could not import module [ ${File} ]`, error);
+                console.log(chalk_1.default.red("❌𝐄𝐫𝐫𝐨𝐫: " + error + " | ") +
+                    chalk_1.default.green(Files + " :") +
+                    chalk_1.default.blue(File));
                 continue;
             }
         }
