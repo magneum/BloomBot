@@ -77,33 +77,44 @@ const logger = (0, pino_1.default)({
 }).child({});
 logger.level = "error";
 var Konn = (0, baileys_1.makeInMemoryStore)({ logger });
-Zygote.findOne({
-    ID: Konn,
-}, (error, session) => __awaiter(void 0, void 0, void 0, function* () {
-    console.log(session);
-    if (error) {
-        return console.log(error);
-    }
-    if (!session) {
-        var newServer = new LinkList({
-            ID: Konn,
-        });
-        yield newServer
-            .save()
-            .catch((error) => chalk_1.default.redBright("Zygote NewServer Error: " + error));
-        return;
-    }
-    Konn = session.ID;
-    setInterval(() => __awaiter(void 0, void 0, void 0, function* () {
-        console.log("Re-Saving in Konn.");
-        session.ID = Konn;
-        yield session
-            .save()
-            .catch((error) => chalk_1.default.redBright("Zygote Re-Save Failed: " + error));
-        console.log(session);
-        return;
-    }), 10000);
-}));
+Konn === null || Konn === void 0 ? void 0 : Konn.readFromFile("./𝐀𝐫𝐜𝐭𝐢𝐱⚠️𝕿𝖊𝖒𝖕/AʀƈȶɨӼ.json");
+setInterval(() => {
+    Konn === null || Konn === void 0 ? void 0 : Konn.writeToFile("./𝐀𝐫𝐜𝐭𝐢𝐱⚠️𝕿𝖊𝖒𝖕/AʀƈȶɨӼ.json");
+}, 10000);
+// Zygote.findOne(
+// {
+// ID: Konn,
+// },
+// async (error: any, session: any) => {
+// console.log(session);
+// if (error) {
+// return console.log(error);
+// }
+// if (!session) {
+// var newServer = new LinkList({
+// ID: Konn,
+// });
+// await newServer
+// .save()
+// .catch((error: any) =>
+// Kolor.redBright("Zygote NewServer Error: " + error)
+// );
+// return;
+// }
+// Konn = session.ID;
+// setInterval(async () => {
+// console.log("Re-Saving in Konn.");
+// session.ID = Konn;
+// await session
+// .save()
+// .catch((error: any) =>
+// Kolor.redBright("Zygote Re-Save Failed: " + error)
+// );
+// console.log(session);
+// return;
+// }, 10_000);
+// }
+// );
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 (() => __awaiter(void 0, void 0, void 0, function* () {
     console.log(chalk_1.default.yellow("💡𝐈𝐧𝐟𝐨: Trying To Connect To '🍃mongo + 🕸️sql'"));
