@@ -68,7 +68,7 @@ Zygote.findOne(
     }
     Konn = session.ID;
     setInterval(async () => {
-        conso
+      console.log("Saving in Konn.");
       session.ID = Konn;
       await session
         .save()
