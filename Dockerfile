@@ -15,6 +15,8 @@ RUN aptitude install curl -y
 RUN aptitude install wget -y 
 RUN aptitude install ffmpeg -y 
 RUN aptitude install python3 -y 
+RUN aptitude install nodejs -y 
+RUN aptitude install npm -y 
 RUN aptitude install bpm-tools -y 
 RUN aptitude install opus-tools -y 
 RUN aptitude install python3-pip -y 
