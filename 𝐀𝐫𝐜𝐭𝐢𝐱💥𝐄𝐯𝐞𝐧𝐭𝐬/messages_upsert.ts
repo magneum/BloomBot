@@ -90,17 +90,12 @@ Member_D[i] = MetaFor_D.participants[i].id;
 // Member_E.toString(),
 // MessageType.text
 // );
-// //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 // const MetaFor_F = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363041425736157@g.us");
 // let Member_F = [];
 // for (var i = 0; i < MetaFor_F.participants.length; i++) {
 // Member_F[i] = MetaFor_F.participants[i].id;
 // }
-// await TUF.sendMessage(
-// AʀƈȶɨӼ.chatId,
-// Member_F.toString(),
-// MessageType.text
-// );
+// //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 if (
 AʀƈȶɨӼ.isCmd &&
 !AʀƈȶɨӼ.isSenderTUFs &&
@@ -118,14 +113,15 @@ Fox,
 AʀƈȶɨӼ,
 `
 ╔◇══════════════◇╗
-┊  𝐕𝐞𝐫𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧
+┊ 🦊𝐕𝐞𝐫𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧🦊
 ╚◇══════════════◇╝
 
 𝐉𝐨𝐢𝐧 𝐓𝐨 𝐁𝐞 𝐕𝐞𝐫𝐢𝐟𝐢𝐞𝐝:
-*𝗚roup⛩️1:* chat.whatsapp.com/HKO5WLEZxMe3xWCyiv6vBu
-*𝗚roup⛩️2:* chat.whatsapp.com/EIn3YFShFmkJ3fvAqf2rpn
+*𝗚roup⛩️1:* chat.whatsapp.com/EIn3YFShFmkJ3fvAqf2rpn
+*𝗚roup⛩️2:* chat.whatsapp.com/EsxcMlXOy1DCJP2eGtZBH5
 *𝗚roup⛩️3:* chat.whatsapp.com/Bc1jBF7OVMRKnyTWYyxz1z
-*𝗚roup⛩️4:* chat.whatsapp.com/G1NzKSYjAST95ehHk4FOZK`,
+*𝗚roup⛩️4:* chat.whatsapp.com/HKO5WLEZxMe3xWCyiv6vBu
+*𝗚roup⛩️5:* chat.whatsapp.com/G1NzKSYjAST95ehHk4FOZK`,
 "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Verity.png"
 );
 }
