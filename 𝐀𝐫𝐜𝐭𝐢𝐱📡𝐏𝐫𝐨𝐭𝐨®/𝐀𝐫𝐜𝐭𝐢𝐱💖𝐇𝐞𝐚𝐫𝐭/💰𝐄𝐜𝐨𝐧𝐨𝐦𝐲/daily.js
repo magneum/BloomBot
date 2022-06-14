@@ -79,7 +79,7 @@ module.exports = {
                             .catch((error) => Oops_1.default.VOp(TUF, Fox, AʀƈȶɨӼ, error));
                         return yield Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `
 ╔◇══════════════◇╗
-┊  𝐕𝐥𝐤𝐲𝐫𝐞💵𝐁𝐚𝐧𝐤
+┊  𝐀𝐫𝐜𝐭𝐢𝐱💵𝐁𝐚𝐧𝐤
 ╚◇══════════════◇╝
 💡𝐈𝐧𝐟𝐨:Addded To Database!
 ✅𝗗𝗮𝗶𝗹𝘆 𝗦𝘁𝗮𝘁𝘂𝘀: You've collected your daily reward!
@@ -92,7 +92,7 @@ module.exports = {
                             let time = ms(userEco.timeout - (Date.now() - userEco.daily));
                             return yield Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `
 ╔◇══════════════◇╗
-┊  𝐕𝐥𝐤𝐲𝐫𝐞💵𝐁𝐚𝐧𝐤
+┊  𝐀𝐫𝐜𝐭𝐢𝐱💵𝐁𝐚𝐧𝐤
 ╚◇══════════════◇╝
 ❌𝗘𝗿𝗿𝗼𝗿: You've already collected your daily reward!
 💵𝗡𝗲𝘅𝘁 𝗗𝗮𝗶𝗹𝘆: ${time.hours}h ${time.minutes}m ${time.seconds}s`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Cream.png");
@@ -106,7 +106,7 @@ module.exports = {
                                 .catch((error) => Oops_1.default.VOp(TUF, Fox, AʀƈȶɨӼ, error));
                             return yield Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `
 ╔◇══════════════◇╗
-┊  𝐕𝐥𝐤𝐲𝐫𝐞💵𝐁𝐚𝐧𝐤
+┊  𝐀𝐫𝐜𝐭𝐢𝐱💵𝐁𝐚𝐧𝐤
 ╚◇══════════════◇╝
 ✅𝗗𝗮𝗶𝗹𝘆 𝗦𝘁𝗮𝘁𝘂𝘀: You've collected your daily reward!
 💵𝐃𝐚𝐢𝐥𝐲 𝐌𝐨𝐧𝐞𝐲:  +1000 

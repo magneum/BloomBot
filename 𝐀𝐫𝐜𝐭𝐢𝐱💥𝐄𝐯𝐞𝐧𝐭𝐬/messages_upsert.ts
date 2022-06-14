@@ -47,8 +47,7 @@ console.log(AʀƈȶɨӼ);
 const command = commandHandler.get(AʀƈȶɨӼ.commandName);
 console.log(
 Kolor.blueBright(
-`💡𝐈𝐧𝐟𝐨: 
-${AʀƈȶɨӼ.commandName} command executed.`
+`💡𝐈𝐧𝐟𝐨: ${AʀƈȶɨӼ.commandName} command executed.`
 )
 );
 var ǟʀɢʊʍɛռȶ = AʀƈȶɨӼ.body.trim().split(/\s+/).slice(1);

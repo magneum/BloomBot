@@ -34,6 +34,7 @@ const TUF_1 = __importDefault(require("../\uD835\uDC00\uD835\uDC2B\uD835\uDC1C\u
 const ______1 = __importDefault(require("../\uD835\uDC00\uD835\uDC2B\uD835\uDC1C\uD835\uDC2D\uD835\uDC22\uD835\uDC31\uD83C\uDC04\uD835\uDC15\uD835\uDC1E\uD835\uDC27\uD835\uDC2D/\u029F\u1D00\u028F\u1D0F\u1D1C\u1D1B"));
 const Silent_1 = __importDefault(require("../\uD835\uDC00\uD835\uDC2B\uD835\uDC1C\uD835\uDC2D\uD835\uDC22\uD835\uDC31\uD83C\uDC04\uD835\uDC15\uD835\uDC1E\uD835\uDC27\uD835\uDC2D/Silent"));
 const Ranker_1 = __importDefault(require("../\uD835\uDC00\uD835\uDC2B\uD835\uDC1C\uD835\uDC2D\uD835\uDC22\uD835\uDC31\uD83C\uDC04\uD835\uDC15\uD835\uDC1E\uD835\uDC27\uD835\uDC2D/Ranker"));
+const SetCom_1 = __importDefault(require("../\uD835\uDC00\uD835\uDC2B\uD835\uDC1C\uD835\uDC2D\uD835\uDC22\uD835\uDC31\uD83C\uDC04\uD835\uDC15\uD835\uDC1E\uD835\uDC27\uD835\uDC2D/SetCom"));
 const chalk_1 = __importDefault(require("chalk"));
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 const messages_upsert = (update, ӄʀʏȶɛӄ, commandHandler) => __awaiter(void 0, void 0, void 0, function* () {
@@ -57,7 +58,7 @@ ${AʀƈȶɨӼ.commandName} command executed.`));
         //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
         yield Silent_1.default.VSln(TUF, Fox, AʀƈȶɨӼ, ӄʀʏȶɛӄ);
         yield Ranker_1.default.VRnIT(TUF, Fox, AʀƈȶɨӼ, ӄʀʏȶɛӄ);
-        // await SetCom.Vscom(TUF, Fox, AʀƈȶɨӼ, ӄʀʏȶɛӄ);
+        yield SetCom_1.default.Vscom(TUF, Fox, AʀƈȶɨӼ, ӄʀʏȶɛӄ);
         yield Link_Proctectron_1.default.VFLink(TUF, Fox, AʀƈȶɨӼ, ӄʀʏȶɛӄ);
         //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
         if (!command) {
