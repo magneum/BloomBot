@@ -32,7 +32,7 @@ RUN pip install -r кяутєк.ts.txt
 RUN npm install --force --save && rm package-lock.json && npm install -g spotify-dl spdl-core
 RUN git config --global user.name 'KryKnz' && git config --global user.email 'KryKnz@yandex.com' && git config pull.rebase false 
 RUN git init --initial-branch=📡𝐏𝐫𝐨𝐭𝐨® && git fetch origin 📡𝐏𝐫𝐨𝐭𝐨® && git reset --hard origin/📡𝐏𝐫𝐨𝐭𝐨® && git stash && git stash drop && git pull
-CMD npm run 𝐀𝐫𝐜𝐭𝐢𝐱
+CMD python 𝐀𝐫𝐜𝐭𝐢𝐱⭕𝖈𝖆𝖗𝖆.py
 # |⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|
 # NOTE: THIS DOCKERFILE IS GENERATED VIA "apply-templates.sh"
 # PLEASE DO NOT EDIT IT DIRECTLY.
