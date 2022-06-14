@@ -67,7 +67,7 @@ const Economy = require(`./𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞�
 const NsfwList = require(`./𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/nsfw`);
 const BanPerson = require(`./𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/ban`);
 const BanGroup = require(`./𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/ban`);
-const Zygote = require(`./𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/session/zygote`);
+const Zygote = require(`./𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/zygote`);
 const Bagde = require(`./𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/badge`);
 const Halt = require(`./𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/halt`);
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
@@ -80,6 +80,7 @@ var Konn = (0, baileys_1.makeInMemoryStore)({ logger });
 Zygote.findOne({
     ID: Konn,
 }, (error, session) => __awaiter(void 0, void 0, void 0, function* () {
+    console.log(session);
     if (error) {
         return console.log(error);
     }
@@ -90,22 +91,18 @@ Zygote.findOne({
         yield newServer
             .save()
             .catch((error) => chalk_1.default.redBright("Zygote NewServer Error: " + error));
-        console.log(session);
         return;
     }
     Konn = session.ID;
     setInterval(() => __awaiter(void 0, void 0, void 0, function* () {
+        console.log("Re-Saving in Konn.");
         session.ID = Konn;
         yield session
             .save()
             .catch((error) => chalk_1.default.redBright("Zygote Re-Save Failed: " + error));
-        console.log(session.ID);
+        console.log(session);
         return;
-    }), 4000);
-    // Konn?.readFromFile("./AʀƈȶɨӼ.json");
-    // setInterval(() => {
-    // Konn?.writeToFile("./AʀƈȶɨӼ.json");
-    // }, 4_000);
+    }), 10000);
 }));
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 (() => __awaiter(void 0, void 0, void 0, function* () {

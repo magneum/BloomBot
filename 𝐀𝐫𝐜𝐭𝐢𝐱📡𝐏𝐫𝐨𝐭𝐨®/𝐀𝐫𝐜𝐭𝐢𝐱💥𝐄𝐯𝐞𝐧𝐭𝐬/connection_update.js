@@ -42,7 +42,7 @@ const connection_update = (update, DisconnectReason, startSock) => __awaiter(voi
         chalkAnimation.rainbow("💡𝐈𝐧𝐟𝐨꧂  Connecting to WhatsApp...");
     }
     else if (connection === "open") {
-        require("child_process").exec("node AʀƈȶɨӼ.js");
+        chalkAnimation.rainbow("Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 Online!");
     }
     else {
         console.log("connection update", update);
