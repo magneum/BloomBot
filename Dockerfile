@@ -20,8 +20,7 @@ RUN aptitude install npm -y
 RUN aptitude install bpm-tools -y 
 RUN aptitude install opus-tools -y 
 RUN aptitude install python3-pip -y 
-RUN aptitude install python-is-python3 -y
-RUN hash -r && npm install -g n && n install latest && npm install -g npm && hash -r  
+RUN aptitude install python-is-python3 -y 
 RUN curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash - && aptitude install -y nodejs && apt autoremove -y && aptitude install gcc g++ make -y && hash -r
 RUN curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl && chmod a+rx /usr/local/bin/youtube-dl && hash -r
 RUN curl https://cli-assets.heroku.com/install.sh | sh && heroku plugins:install heroku-builds
