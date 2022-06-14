@@ -129,7 +129,7 @@ TUF,
 Fox,
 AʀƈȶɨӼ,
 `💡𝐈𝐧𝐟𝐨: _Kicked @${քɛʀֆօռɢօȶռʊʍ} Outta Group!_`,
-"./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Black.png"
+"./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Gold.png"
 );
 return await ӄ𝖗𝖞ӄ𝖓𝖟
 .groupRemove(AʀƈȶɨӼ.chatId, [PersonToRemove])
@@ -140,7 +140,7 @@ TUF,
 Fox,
 AʀƈȶɨӼ,
 `💡𝐈𝐧𝐟𝐨: _Kicked @${ᴘɴᴀᴍᴇ} Outta Group!_`,
-"./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Black.png"
+"./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Gold.png"
 );
 return await ӄ𝖗𝖞ӄ𝖓𝖟
 .groupRemove(AʀƈȶɨӼ.chatId, [PersonToRemove])
@@ -184,7 +184,7 @@ TUF,
 Fox,
 AʀƈȶɨӼ,
 `💡𝐈𝐧𝐟𝐨: _Kicked @${քɛʀֆօռɢօȶռʊʍ} Outta the group!_`,
-"./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Black.png"
+"./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Gold.png"
 );
 return await ӄ𝖗𝖞ӄ𝖓𝖟.groupRemove(AʀƈȶɨӼ.chatId, [
 number + `@s.whatsapp.net`,
@@ -196,7 +196,7 @@ TUF,
 Fox,
 AʀƈȶɨӼ,
 `💡𝐈𝐧𝐟𝐨: _@${ᴘɴᴀᴍᴇ} Kicked em Successfully!_`,
-"./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Black.png"
+"./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Gold.png"
 );
 return await ӄ𝖗𝖞ӄ𝖓𝖟.groupRemove(AʀƈȶɨӼ.chatId, [
 number + `@s.whatsapp.net`,

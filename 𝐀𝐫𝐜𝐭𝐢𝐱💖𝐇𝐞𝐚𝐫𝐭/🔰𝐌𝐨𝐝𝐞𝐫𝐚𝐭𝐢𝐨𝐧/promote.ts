@@ -131,7 +131,7 @@ TUF,
 Fox,
 AʀƈȶɨӼ,
 `💡𝐈𝐧𝐟𝐨: _${HOOM}_ is promoted to admin!`,
-"./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Black.png"
+"./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Gold.png"
 );
 } else {
 return Image_Button.VImg(
