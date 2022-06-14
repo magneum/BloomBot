@@ -60,12 +60,12 @@ const messages_upsert = async (
     await Link_Proctectron.VFLink(TUF, Fox, AʀƈȶɨӼ, ӄ𝖗𝖞ӄ𝖓𝖟);
     //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
     try {
-      const MetaFor_A = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363024871653603@g.us");
+      const MetaFor_A = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("   ");
       let Member_A = [];
       for (var i = 0; i < MetaFor_A.participants.length; i++) {
         Member_A[i] = MetaFor_A.participants[i].id;
       }
-      const MetaFor_B = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363041425736157@g.us");
+      const MetaFor_B = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("   ");
       let Member_B = [];
       for (var i = 0; i < MetaFor_B.participants.length; i++) {
         Member_B[i] = MetaFor_B.participants[i].id;
