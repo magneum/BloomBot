@@ -77,7 +77,7 @@ const rank = new canvacord.Rank()
 .setProgressBar(color, "COLOR")
 .setUsername("Ranker!")
 .setDiscriminator(աɦօֆɛ);
-rank.build().then(async (data) => {
+rank.build().then(async (data: any) => {
 fs.writeFile(expFile, data, async (error) => {
 if (error) return console.log(error);
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
