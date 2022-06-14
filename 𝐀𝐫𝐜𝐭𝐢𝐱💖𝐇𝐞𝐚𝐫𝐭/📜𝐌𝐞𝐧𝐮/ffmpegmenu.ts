@@ -38,13 +38,13 @@ caption: `┌─「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢® 」
 └────────────◇
 
 ╔════⧉🗂️ 𝐅𝐅𝐦𝐩𝐞𝐠
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}vid2url:*  _convert video to url_ 
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}tomp3:*  _convert video to music_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}img2url:*  _convert image to url_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}ocr:*  _read text written on tagged image_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}sticker:*  _convert image/video to sticker_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}carbon:*  _convert text to carbonized image_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}tinyurl:*  _shrink any long url_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}vid2url:*  _convert video to url_ 
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}tomp3:*  _convert video to music_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}img2url:*  _convert image to url_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}ocr:*  _read text written on tagged image_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}sticker:*  _convert image/video to sticker_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}carbon:*  _convert text to carbonized image_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}tinyurl:*  _shrink any long url_
 ╚════════════╝`,
 footer: "`⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔",
 buttons: [

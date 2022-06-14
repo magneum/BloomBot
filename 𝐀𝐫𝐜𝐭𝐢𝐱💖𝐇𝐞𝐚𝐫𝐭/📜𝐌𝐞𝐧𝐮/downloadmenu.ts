@@ -38,13 +38,13 @@ caption: `┌─「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢® 」
 └────────────◇
 
 ╔════⧉📥 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫𝐬
-║•  ${ʟᴀʏᴏᴜᴛ.MuveOn}play: _download audio using yt_
-║•  ${ʟᴀʏᴏᴜᴛ.MuveOn}watch: _download video using yt_
-║•  ${ʟᴀʏᴏᴜᴛ.MuveOn}spotify: _download using spotify link_
-║•  ${ʟᴀʏᴏᴜᴛ.MuveOn}soundcloud: _download using soundcloud link_
-║•  ${ʟᴀʏᴏᴜᴛ.MuveOn}gifdl: _download using gif link_
-║•  ${ʟᴀʏᴏᴜᴛ.MuveOn}imagedl: _download using image link_
-║•  ${ʟᴀʏᴏᴜᴛ.MuveOn}videodl: _download using video link_
+├•  ${ʟᴀʏᴏᴜᴛ.MuveOn}play: _download audio using yt_
+├•  ${ʟᴀʏᴏᴜᴛ.MuveOn}watch: _download video using yt_
+├•  ${ʟᴀʏᴏᴜᴛ.MuveOn}spotify: _download using spotify link_
+├•  ${ʟᴀʏᴏᴜᴛ.MuveOn}soundcloud: _download using soundcloud link_
+├•  ${ʟᴀʏᴏᴜᴛ.MuveOn}gifdl: _download using gif link_
+├•  ${ʟᴀʏᴏᴜᴛ.MuveOn}imagedl: _download using image link_
+├•  ${ʟᴀʏᴏᴜᴛ.MuveOn}videodl: _download using video link_
 ╚════════════╝`,
 footer: "`⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔",
 buttons: [

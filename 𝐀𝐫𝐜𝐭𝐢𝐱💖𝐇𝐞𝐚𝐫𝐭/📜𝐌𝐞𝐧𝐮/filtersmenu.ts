@@ -38,23 +38,23 @@ caption: `┌─「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢® 」
 └────────────◇
 
 ╔════⧉🍰 𝐅𝐢𝐥𝐭𝐞𝐫𝐬/𝐀𝐮𝐝𝐢𝐨
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}8d:*  _audio filter_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}bassboost:*  _audio filter_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}deep:*  _audio filter_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}echo:*  _audio filter_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}fast:*  _audio filter_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}flanger:*  _audio filter_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}nightcore:*  _audio filter_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}phaser:*  _audio filter_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}reverse:*  _audio filter_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}slow:*  _audio filter_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}speed:*  _audio filter_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}subboost:*  _audio filter_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}superslow:*  _audio filter_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}superspeed:*  _audio filter_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}surround:*  _audio filter_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}vaporwave:*  _audio filter_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}vibrato:*  _audio filter_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}8d:*  _audio filter_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}bassboost:*  _audio filter_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}deep:*  _audio filter_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}echo:*  _audio filter_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}fast:*  _audio filter_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}flanger:*  _audio filter_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}nightcore:*  _audio filter_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}phaser:*  _audio filter_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}reverse:*  _audio filter_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}slow:*  _audio filter_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}speed:*  _audio filter_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}subboost:*  _audio filter_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}superslow:*  _audio filter_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}superspeed:*  _audio filter_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}surround:*  _audio filter_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}vaporwave:*  _audio filter_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}vibrato:*  _audio filter_
 ╚════════════╝`,
 footer: "`⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔",
 buttons: [

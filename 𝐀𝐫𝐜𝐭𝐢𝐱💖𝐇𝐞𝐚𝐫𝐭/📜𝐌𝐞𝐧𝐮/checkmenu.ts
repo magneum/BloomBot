@@ -38,14 +38,14 @@ caption: `┌─「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢® 」
 └────────────◇
 
 ╔════⧉🎨 𝐂𝐡𝐞𝐜𝐤
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}gaycheck:*  _@tag person or reply person_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}lesbocheck:*  _@tag person or reply person_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}beautycheck:*  _@tag person or reply person_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}dumbcheck:*  _@tag person or reply person_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}gay:*  _@tag person or reply person_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}lesbo:*  _@tag person or reply person_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}beauty:*  _@tag person or reply person_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}dumb:*  _@tag person or reply person_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}gaycheck:*  _@tag person or reply person_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}lesbocheck:*  _@tag person or reply person_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}beautycheck:*  _@tag person or reply person_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}dumbcheck:*  _@tag person or reply person_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}gay:*  _@tag person or reply person_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}lesbo:*  _@tag person or reply person_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}beauty:*  _@tag person or reply person_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}dumb:*  _@tag person or reply person_
 ╚════════════╝`,
 footer: "`⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔",
 buttons: [

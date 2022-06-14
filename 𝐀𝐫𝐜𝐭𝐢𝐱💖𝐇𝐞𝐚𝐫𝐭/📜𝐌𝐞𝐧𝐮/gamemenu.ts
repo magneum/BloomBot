@@ -38,19 +38,19 @@ caption: `┌─「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢® 」
 └────────────◇
 
 ╔════⧉💰 𝗚𝗮𝗺𝗲𝘀
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}shop:*  _visit krakinzlab member store_
-║• ${ʟᴀʏᴏᴜᴛ.MuveOn}inv:*  _check your inventory or replied person's_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}buy:*  _buy items from store_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}pay:*  _reply to person to pay money_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}hunt:*  _catch pokemon in forest_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}zoo:*  _make a zoo_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}gamble* _gamble with AI_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}fish:*  _Catch A Fish From A Vast Ocean_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}daily:*  _Gives You 200 per day_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}work:*  _Work to Earn Money_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}rob:*  _rob someone_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}balance:*  _check your balance or replied person's_
-║• *${ʟᴀʏᴏᴜᴛ.MuveOn}truthdare:*  _get random truth/dare query_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}shop:*  _visit krakinzlab member store_
+├• ${ʟᴀʏᴏᴜᴛ.MuveOn}inv:*  _check your inventory or replied person's_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}buy:*  _buy items from store_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}pay:*  _reply to person to pay money_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}hunt:*  _catch pokemon in forest_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}zoo:*  _make a zoo_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}gamble* _gamble with AI_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}fish:*  _Catch A Fish From A Vast Ocean_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}daily:*  _Gives You 200 per day_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}work:*  _Work to Earn Money_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}rob:*  _rob someone_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}balance:*  _check your balance or replied person's_
+├• *${ʟᴀʏᴏᴜᴛ.MuveOn}truthdare:*  _get random truth/dare query_
 ╚════════════╝`,
 footer: "`⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔",
 buttons: [
