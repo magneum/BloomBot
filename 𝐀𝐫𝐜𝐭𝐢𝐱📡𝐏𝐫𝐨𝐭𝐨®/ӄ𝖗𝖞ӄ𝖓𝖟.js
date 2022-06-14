@@ -173,7 +173,7 @@ setInterval(() => {
             logger,
             printQRInTerminal: true,
             auth: state,
-            browser: ["Arctix Api", "Chrome", "4.0.0"],
+            browser: ["Arctix Api", "Firefox", ""],
             getMessage: (key) => __awaiter(void 0, void 0, void 0, function* () {
                 return {};
             }),
