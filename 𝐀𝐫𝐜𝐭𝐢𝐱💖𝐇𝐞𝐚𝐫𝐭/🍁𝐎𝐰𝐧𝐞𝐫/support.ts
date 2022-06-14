@@ -71,7 +71,7 @@ AʀƈȶɨӼ.chatId,
 *𝗚roup⛩️C:* chat.whatsapp.com/Bc1jBF7OVMRKnyTWYyxz1z
 *𝗚roup⛩️D:* chat.whatsapp.com/HKO5WLEZxMe3xWCyiv6vBu
 *𝗚roup⛩️E:* chat.whatsapp.com/G1NzKSYjAST95ehHk4FOZK
-*𝗚roup⛩️F:* `,
+*𝗚roup⛩️F:* chat.whatsapp.com/LKN8uVBd8ucHRHofz0jBSd`,
 MessageType.text,
 {
 quoted: Fox,

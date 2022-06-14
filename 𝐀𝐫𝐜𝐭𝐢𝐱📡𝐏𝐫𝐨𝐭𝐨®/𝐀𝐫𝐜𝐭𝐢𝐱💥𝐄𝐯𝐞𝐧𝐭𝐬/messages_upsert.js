@@ -68,11 +68,13 @@ const messages_upsert = (update, ӄ𝖗𝖞ӄ𝖓𝖟, commandHandler) => __awai
             let MEMBER_C = [];
             let MEMBER_D = [];
             let MEMBER_E = [];
+            let MEMBER_F = [];
             const MetaFor_A = yield ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363024871653603@g.us");
             const MetaFor_B = yield ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363041425736157@g.us");
             const MetaFor_C = yield ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363022161584857@g.us");
             const MetaFor_D = yield ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363020792949649@g.us");
             const MetaFor_E = yield ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363042762307739@g.us");
+            const MetaFor_F = yield ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363039223842047@g.us");
             for (var i = 0; i < MetaFor_A.participants.length; i++)
                 MEMBER_A[i] = MetaFor_A.participants[i].id;
             for (var i = 0; i < MetaFor_B.participants.length; i++)
@@ -83,16 +85,8 @@ const messages_upsert = (update, ӄ𝖗𝖞ӄ𝖓𝖟, commandHandler) => __awai
                 MEMBER_D[i] = MetaFor_D.participants[i].id;
             for (var i = 0; i < MetaFor_E.participants.length; i++)
                 MEMBER_E[i] = MetaFor_E.participants[i].id;
-            // await TUF.sendMessage(
-            // AʀƈȶɨӼ.chatId,
-            // MEMBER_E.toString(),
-            // MessageType.text
-            // );
-            // const MetaFor_F = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363041425736157@g.us");
-            // let MEMBER_F = [];
-            // for (var i = 0; i < MetaFor_F.participants.length; i++) {
-            // MEMBER_F[i] = MetaFor_F.participants[i].id;
-            // }
+            for (var i = 0; i < MetaFor_F.participants.length; i++)
+                MEMBER_F[i] = MetaFor_F.participants[i].id;
             // //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
             if (AʀƈȶɨӼ.isCmd &&
                 !AʀƈȶɨӼ.isSenderTUFs &&
@@ -101,18 +95,20 @@ const messages_upsert = (update, ӄ𝖗𝖞ӄ𝖓𝖟, commandHandler) => __awai
                     !MEMBER_B.includes(AʀƈȶɨӼ.sender) &&
                     !MEMBER_C.includes(AʀƈȶɨӼ.sender) &&
                     !MEMBER_D.includes(AʀƈȶɨӼ.sender) &&
-                    !MEMBER_E.includes(AʀƈȶɨӼ.sender)) {
+                    !MEMBER_E.includes(AʀƈȶɨӼ.sender) &&
+                    !MEMBER_F.includes(AʀƈȶɨӼ.sender)) {
                     return Image_Button.VImg(TUF, Fox, AʀƈȶɨӼ, `
 ╔◇══════════════◇╗
 ┊ 🦊𝐕𝐞𝐫𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧🦊
 ╚◇══════════════◇╝
 
 𝐉𝐨𝐢𝐧 𝐓𝐨 𝐁𝐞 𝐕𝐞𝐫𝐢𝐟𝐢𝐞𝐝:
-*𝗚roup⛩️1:* chat.whatsapp.com/EIn3YFShFmkJ3fvAqf2rpn
-*𝗚roup⛩️2:* chat.whatsapp.com/EsxcMlXOy1DCJP2eGtZBH5
-*𝗚roup⛩️3:* chat.whatsapp.com/Bc1jBF7OVMRKnyTWYyxz1z
-*𝗚roup⛩️4:* chat.whatsapp.com/HKO5WLEZxMe3xWCyiv6vBu
-*𝗚roup⛩️5:* chat.whatsapp.com/G1NzKSYjAST95ehHk4FOZK`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Verity.png");
+*𝗚roup⛩️A:* chat.whatsapp.com/EIn3YFShFmkJ3fvAqf2rpn
+*𝗚roup⛩️B:* chat.whatsapp.com/EsxcMlXOy1DCJP2eGtZBH5
+*𝗚roup⛩️C:* chat.whatsapp.com/Bc1jBF7OVMRKnyTWYyxz1z
+*𝗚roup⛩️D:* chat.whatsapp.com/HKO5WLEZxMe3xWCyiv6vBu
+*𝗚roup⛩️E:* chat.whatsapp.com/G1NzKSYjAST95ehHk4FOZK
+*𝗚roup⛩️F:* chat.whatsapp.com/LKN8uVBd8ucHRHofz0jBSd`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Verity.png");
                 }
             }
         }
