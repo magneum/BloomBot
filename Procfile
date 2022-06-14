@@ -1,1 +1,1 @@
-worker: node ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/⚡AutoLm
+worker: python 𝐀𝐫𝐜𝐭𝐢𝐱⭕𝖈𝖆𝖗𝖆.py
