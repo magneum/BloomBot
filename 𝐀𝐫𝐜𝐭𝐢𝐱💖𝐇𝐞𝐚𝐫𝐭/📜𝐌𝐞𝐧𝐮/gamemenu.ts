@@ -51,7 +51,7 @@ caption: `┌─「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢® 」
 ├• *${ʟᴀʏᴏᴜᴛ.MuveOn}rob:*  _rob someone_
 ├• *${ʟᴀʏᴏᴜᴛ.MuveOn}balance:*  _check your balance or replied person's_
 ├• *${ʟᴀʏᴏᴜᴛ.MuveOn}truthdare:*  _get random truth/dare query_
-╚════════════╝`,
+└────────────◇`,
 footer: "`⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔",
 buttons: [
 {

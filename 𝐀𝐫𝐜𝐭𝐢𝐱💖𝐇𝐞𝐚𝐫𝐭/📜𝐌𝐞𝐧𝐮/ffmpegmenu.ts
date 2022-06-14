@@ -45,7 +45,7 @@ caption: `┌─「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢® 」
 ├• *${ʟᴀʏᴏᴜᴛ.MuveOn}sticker:*  _convert image/video to sticker_
 ├• *${ʟᴀʏᴏᴜᴛ.MuveOn}carbon:*  _convert text to carbonized image_
 ├• *${ʟᴀʏᴏᴜᴛ.MuveOn}tinyurl:*  _shrink any long url_
-╚════════════╝`,
+└────────────◇`,
 footer: "`⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔",
 buttons: [
 {

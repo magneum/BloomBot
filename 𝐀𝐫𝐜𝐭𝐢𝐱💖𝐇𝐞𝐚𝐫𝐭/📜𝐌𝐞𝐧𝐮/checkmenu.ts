@@ -46,7 +46,7 @@ caption: `┌─「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢® 」
 ├• *${ʟᴀʏᴏᴜᴛ.MuveOn}lesbo:*  _@tag person or reply person_
 ├• *${ʟᴀʏᴏᴜᴛ.MuveOn}beauty:*  _@tag person or reply person_
 ├• *${ʟᴀʏᴏᴜᴛ.MuveOn}dumb:*  _@tag person or reply person_
-╚════════════╝`,
+└────────────◇`,
 footer: "`⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔",
 buttons: [
 {

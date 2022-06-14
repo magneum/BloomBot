@@ -45,7 +45,7 @@ caption: `┌─「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢® 」
 ├•  ${ʟᴀʏᴏᴜᴛ.MuveOn}gifdl: _download using gif link_
 ├•  ${ʟᴀʏᴏᴜᴛ.MuveOn}imagedl: _download using image link_
 ├•  ${ʟᴀʏᴏᴜᴛ.MuveOn}videodl: _download using video link_
-╚════════════╝`,
+└────────────◇`,
 footer: "`⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔",
 buttons: [
 {
