@@ -61,39 +61,39 @@ await Link_Proctectron.VFLink(TUF, Fox, AʀƈȶɨӼ, ӄ𝖗𝖞ӄ𝖓𝖟);
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 try {
 const MetaFor_A = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("   ");
-let Member_A = [];
+let MEMBER_A = [];
 for (var i = 0; i < MetaFor_A.participants.length; i++) {
-Member_A[i] = MetaFor_A.participants[i].id;
+MEMBER_A[i] = MetaFor_A.participants[i].id;
 }
 const MetaFor_B = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("   ");
-let Member_B = [];
+let MEMBER_B = [];
 for (var i = 0; i < MetaFor_B.participants.length; i++) {
-Member_B[i] = MetaFor_B.participants[i].id;
+MEMBER_B[i] = MetaFor_B.participants[i].id;
 }
 const MetaFor_C = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("   ");
-let Member_C = [];
+let MEMBER_C = [];
 for (var i = 0; i < MetaFor_C.participants.length; i++) {
-Member_C[i] = MetaFor_C.participants[i].id;
+MEMBER_C[i] = MetaFor_C.participants[i].id;
 }
 const MetaFor_D = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("   ");
-let Member_D = [];
+let MEMBER_D = [];
 for (var i = 0; i < MetaFor_D.participants.length; i++) {
-Member_D[i] = MetaFor_D.participants[i].id;
+MEMBER_D[i] = MetaFor_D.participants[i].id;
 }
 const MetaFor_E = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("   ");
-let Member_E = [];
+let MEMBER_E = [];
 for (var i = 0; i < MetaFor_E.participants.length; i++) {
-Member_E[i] = MetaFor_E.participants[i].id;
+MEMBER_E[i] = MetaFor_E.participants[i].id;
 }
 // await TUF.sendMessage(
 // AʀƈȶɨӼ.chatId,
-// Member_E.toString(),
+// MEMBER_E.toString(),
 // MessageType.text
 // );
 // const MetaFor_F = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363041425736157@g.us");
-// let Member_F = [];
+// let MEMBER_F = [];
 // for (var i = 0; i < MetaFor_F.participants.length; i++) {
-// Member_F[i] = MetaFor_F.participants[i].id;
+// MEMBER_F[i] = MetaFor_F.participants[i].id;
 // }
 // //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 if (
@@ -102,11 +102,11 @@ AʀƈȶɨӼ.isCmd &&
 !AʀƈȶɨӼ.body.includes(ʟᴀʏᴏᴜᴛ.MuveOn + "help")
 ) {
 if (
-!Member_A.includes(AʀƈȶɨӼ.sender) &&
-!Member_B.includes(AʀƈȶɨӼ.sender) &&
-!Member_C.includes(AʀƈȶɨӼ.sender) &&
-!Member_D.includes(AʀƈȶɨӼ.sender) &&
-!Member_E.includes(AʀƈȶɨӼ.sender)
+!MEMBER_A.includes(AʀƈȶɨӼ.sender) &&
+!MEMBER_B.includes(AʀƈȶɨӼ.sender) &&
+!MEMBER_C.includes(AʀƈȶɨӼ.sender) &&
+!MEMBER_D.includes(AʀƈȶɨӼ.sender) &&
+!MEMBER_E.includes(AʀƈȶɨӼ.sender)
 ) {
 return Image_Button.VImg(
 TUF,
