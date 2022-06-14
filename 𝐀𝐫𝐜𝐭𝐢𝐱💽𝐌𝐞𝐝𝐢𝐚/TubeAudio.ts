@@ -35,6 +35,7 @@ DirectFile = await Tinyurl(dl_link);
 } catch (error) {
 return Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error);
 }
+//" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 await Image_Button.VImg(
 TUF,
 Fox,
@@ -51,6 +52,7 @@ AʀƈȶɨӼ,
 Found.thumbnail
 );
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
+try {
 var FFmpegFile = `./𝐀𝐫𝐜𝐭𝐢𝐱🐞𝐁𝐞𝐞𝐭𝐥𝐞/${Fox.key.id}.mp3`;
 const downloader = await new Downloader({
 url: DirectFile,
@@ -58,7 +60,6 @@ directory: `𝐀𝐫𝐜𝐭𝐢𝐱🐞𝐁𝐞𝐞𝐭𝐥𝐞`,
 fileName: `${Fox.key.id}.mp3`,
 cloneFiles: false,
 });
-try {
 await downloader.download();
 return await TUF.sendMessage(
 AʀƈȶɨӼ.chatId,
@@ -69,8 +70,22 @@ MessageType.audio,
 .then(VOID.VOID(FFmpegFile))
 .catch((error: any) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
 } catch (error) {
-return Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error);
+const downloadFFmpegFile = ytdl(Found.url, { filter: "audioonly" });
+const writeStream = fs.createWriteStream(FFmpegFile);
+downloadFFmpegFile.pipe(writeStream);
+downloadFFmpegFile.on("end", async () => {
+console.log(`⬡════════| ⭐ 𝐘𝐓𝐃𝐋 ⭐ |════════⬡`);
+return await TUF.sendMessage(
+AʀƈȶɨӼ.chatId,
+fs.readFileSync(FFmpegFile),
+MessageType.audio,
+{ quoted: Fox, mimetype: "audio/mp4" }
+)
+.then(VOID.VOID(FFmpegFile))
+.catch((error: any) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
+});
 }
+//" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 } catch (error) {
 console.log(error);
 }

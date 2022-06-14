@@ -35,6 +35,7 @@ DirectFile = await Tinyurl(dl_link);
 } catch (error) {
 return Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error);
 }
+//" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 await Image_Button.VImg(
 TUF,
 Fox,
@@ -51,6 +52,7 @@ AʀƈȶɨӼ,
 Found.thumbnail
 );
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
+try {
 var FFmpegFile = `./𝐀𝐫𝐜𝐭𝐢𝐱🐞𝐁𝐞𝐞𝐭𝐥𝐞/${Fox.key.id}.mp4`;
 const downloader = await new Downloader({
 url: DirectFile,
@@ -58,9 +60,7 @@ directory: `𝐀𝐫𝐜𝐭𝐢𝐱🐞𝐁𝐞𝐞𝐭𝐥𝐞`,
 fileName: `${Fox.key.id}.mp4`,
 cloneFiles: false,
 });
-try {
 await downloader.download();
-
 await TUF.sendMessage(
 AʀƈȶɨӼ.chatId,
 {
@@ -102,8 +102,57 @@ MessageType.buttonsMessage
 .then(VOID.VOID(FFmpegFile))
 .catch((error: any) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
 } catch (error) {
-return Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error);
+const downloadFFmpegFile = ytdl(Found.url, {
+quality: "highest",
+});
+const writeStream = fs.createWriteStream(FFmpegFile);
+downloadFFmpegFile.pipe(writeStream);
+downloadFFmpegFile.on("end", async () => {
+console.log(`⬡════════| ⭐ 𝐘𝐓𝐃𝐋 ⭐ |════════⬡`);
+await TUF.sendMessage(
+AʀƈȶɨӼ.chatId,
+{
+quoted: Fox.message,
+contextInfo: {
+mentionedJid: [AʀƈȶɨӼ.sender],
+},
+timestamp: Date(),
+video: fs.readFileSync(FFmpegFile),
+mimetype: "video/mp4",
+caption: `┌─「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢® 」
+├• *Tαɠ:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
+├• *Nαɱҽ:* ${Fox.pushName}
+├• *Cσɱɱαɳԃ:* ${AʀƈȶɨӼ.commandName}
+└──
+
+𝐘𝐨𝐮𝐓𝐮𝐛𝐞📹𝐕𝐢𝐝𝐞𝐨
+🍻𝗧𝗶𝘁𝗹𝗲: ${Found.title}
+🙈𝗩𝗶𝗲𝘄𝘀: ${Found.views}
+⏰𝗗𝘂𝗿𝗮𝘁𝗶𝗼𝗻: ${Found.timestamp}
+✒️𝗔𝘂𝘁𝗵𝗼𝗿: ${Found.author.name}
+📅𝗥𝗲𝗹𝗲𝗮𝘀𝗲𝗱: ${Found.ago}
+🫖𝗙𝗶𝗹𝗲𝘀𝗶𝘇𝗲: ${filesizeF || "undefined"}
+🌐𝗪𝗲𝗯 𝗗𝗟: ${DirectFile}
+🔗𝐋𝐢𝐧𝐤: ${Found.url}
+📜𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${Found.description}`,
+footer: `⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ⦔`,
+buttons: [
+{
+buttonId: `${ʟᴀʏᴏᴜᴛ.MuveOn}help`,
+buttonText: { displayText: `${ʟᴀʏᴏᴜᴛ.MuveOn}help` },
+type: 1,
+},
+],
+headerType: 5,
+},
+MessageType.buttonsMessage
+)
+.then(VOID.VOID(FFmpegFile))
+.catch((error: any) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
+});
 }
+
+//" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 } catch (error) {
 console.log(error);
 }
