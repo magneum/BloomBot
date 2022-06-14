@@ -28,6 +28,7 @@ import AʀƈȶɨӼ from "../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓�
 import ʟᴀʏᴏᴜᴛ from "../𝐀𝐫𝐜𝐭𝐢𝐱🀄𝐕𝐞𝐧𝐭/ʟᴀʏᴏᴜᴛ";
 import Silent from "../𝐀𝐫𝐜𝐭𝐢𝐱🀄𝐕𝐞𝐧𝐭/Silent";
 import Rankr from "../𝐀𝐫𝐜𝐭𝐢𝐱🀄𝐕𝐞𝐧𝐭/Ranker";
+const git = require(`simple-git`)();
 import Kolor from "chalk";
 import * as fs from "fs";
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
@@ -49,6 +50,40 @@ let TUF: Client = new Client(ӄ𝖗𝖞ӄ𝖓𝖟);
 if (AʀƈȶɨӼ.isCmd) {
 console.clear();
 console.log(AʀƈȶɨӼ);
+await git.fetch();
+var newCommits = await git.log(["🛰️KryTek..origin/🛰️KryTek"]);
+if (newCommits.total != 0) {
+try {
+var 𝖛𝖑𝖐𝖕 = require("child_process").exec(
+"git config --global user.name 'KryKnz' && git config --global user.email 'KryKnz@yandex.com' && git config pull.rebase false && git init --initial-branch=📡𝐏𝐫𝐨𝐭𝐨® && git fetch origin 📡𝐏𝐫𝐨𝐭𝐨® && git reset --hard origin/📡𝐏𝐫𝐨𝐭𝐨® && git stash && git stash drop && git pull"
+);
+console.log("🛰️ 𝐓𝐡𝐫𝐞𝐚𝐝 𝐈𝐃:", Kolor.green(𝖛𝖑𝖐𝖕.pid));
+𝖛𝖑𝖐𝖕.stderr.pipe(process.stderr);
+𝖛𝖑𝖐𝖕.stdout.pipe(process.stdout);
+𝖛𝖑𝖐𝖕.on("exit", function (code: any, signal: any) {
+if (code) console.log("📟 𝐕𝐥𝐤𝐲𝐫𝐞 𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐂𝐨𝐝𝐞:", Kolor.red(code));
+if (signal)
+console.log("📶 𝐕𝐥𝐤𝐲𝐫𝐞 𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐒𝐢𝐠𝐧𝐚𝐥:", Kolor.blue(signal));
+process.exitCode = 1;
+});
+} catch (error) {
+console.log(Kolor.red(error));
+} finally {
+var h𝖛𝖑𝖐𝖕 = require("child_process").exec(
+`heroku ps:restart worker -a ${ʟᴀʏᴏᴜᴛ.Heroku_App}`
+);
+console.log("🛰️ 𝐓𝐡𝐫𝐞𝐚𝐝 𝐈𝐃:", Kolor.green(h𝖛𝖑𝖐𝖕.pid));
+h𝖛𝖑𝖐𝖕.stderr.pipe(process.stderr);
+h𝖛𝖑𝖐𝖕.on("exit", function (code, signal) {
+if (code) console.log("📟 𝐕𝐥𝐤𝐲𝐫𝐞 𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐂𝐨𝐝𝐞:", Kolor.red(code));
+if (signal)
+console.log("📶 𝐕𝐥𝐤𝐲𝐫𝐞 𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐒𝐢𝐠𝐧𝐚𝐥:", Kolor.blue(signal));
+process.exitCode = 1;
+});
+}
+return;
+}
+//" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 const command = commandHandler.get(AʀƈȶɨӼ.commandName);
 console.log(
 Kolor.blueBright(`💡𝐈𝐧𝐟𝐨: ${AʀƈȶɨӼ.commandName} command executed.`)
@@ -81,7 +116,7 @@ for (var i = 0; i < MetaFor_D.participants.length; i++)
 MEMBER_D[i] = MetaFor_D.participants[i].id;
 for (var i = 0; i < MetaFor_E.participants.length; i++)
 MEMBER_E[i] = MetaFor_E.participants[i].id;
-for (var i = 0; i < MetaFor_F.participants.length; i++) 
+for (var i = 0; i < MetaFor_F.participants.length; i++)
 MEMBER_F[i] = MetaFor_F.participants[i].id;
 // //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 if (
