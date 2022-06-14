@@ -36,14 +36,14 @@ ID: AʀƈȶɨӼ.sender,
 },
 async (error: any, BanPerson: any) => {
 if (error) return console.log(error);
-BanGroup.findOne(
+await BanGroup.findOne(
 {
 ID: AʀƈȶɨӼ.chatId,
 },
 async (error: any, BanGroup: any) => {
 if (error) return console.log(error);
 if (AʀƈȶɨӼ.isGroup && !AʀƈȶɨӼ.fromMe && !BanGroup && !BanPerson) {
-Ranker.findOne(
+await Ranker.findOne(
 {
 serverID: AʀƈȶɨӼ.chatId,
 },
