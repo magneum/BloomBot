@@ -21,7 +21,8 @@ RUN aptitude install bpm-tools -y
 RUN aptitude install opus-tools -y 
 RUN aptitude install python3-pip -y 
 RUN aptitude install python-is-python3 -y 
-RUN npm install n --location=global && n install 16 -y && hash -r
+RUN npm install n --location=global && n install 16 -y 
+RUN hash -r
 RUN curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
 RUN chmod a+rx /usr/local/bin/youtube-dl && hash -r
 RUN curl https://cli-assets.heroku.com/install.sh | sh && heroku plugins:install heroku-builds
