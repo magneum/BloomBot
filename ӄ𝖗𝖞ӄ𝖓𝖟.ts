@@ -32,10 +32,11 @@ timestamp: () => `,"Time":"${new Date().toJSON()}"`,
 }).child({});
 logger.level = "error";
 const store = makeInMemoryStore({ logger });
+console.log(store);
 store?.readFromFile("./AʀƈȶɨӼ.json");
 setInterval(() => {
 store?.writeToFile("./AʀƈȶɨӼ.json");
-}, 10_000);
+}, 4_000);
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 (async (): Promise<void> => {
 console.log(Kolor.yellow("💡𝐈𝐧𝐟𝐨: Trying To Connect To '🍃mongo + 🕸️sql'"));
