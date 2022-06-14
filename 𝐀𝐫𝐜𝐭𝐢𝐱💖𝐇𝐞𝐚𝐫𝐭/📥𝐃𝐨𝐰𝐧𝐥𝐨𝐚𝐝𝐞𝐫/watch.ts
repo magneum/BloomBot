@@ -7,24 +7,28 @@ import { MessageType } from "../../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲�
 import Image_Button from "../../𝐀𝐫𝐜𝐭𝐢𝐱☘️𝐊𝐞𝐲𝐬/Image_Button";
 import Video_Button from "../../𝐀𝐫𝐜𝐭𝐢𝐱☘️𝐊𝐞𝐲𝐬/Video_Button";
 import Text_List from "../../𝐀𝐫𝐜𝐭𝐢𝐱☘️𝐊𝐞𝐲𝐬/Text_List";
-import FoxNeeded from "../../𝐀𝐫𝐜𝐭𝐢𝐱☘️𝐊𝐞𝐲𝐬/FoxNeeded"
+import FoxNeeded from "../../𝐀𝐫𝐜𝐭𝐢𝐱☘️𝐊𝐞𝐲𝐬/FoxNeeded";
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-const Oops = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱☘️𝐊𝐞𝐲𝐬/Oops`);
-import ʟᴀʏᴏᴜᴛ from "../../𝐀𝐫𝐜𝐭𝐢𝐱🀄𝐕𝐞𝐧𝐭/ʟᴀʏᴏᴜᴛ";
+const TubeVideo = require("../../𝐀𝐫𝐜𝐭𝐢𝐱💽𝐌𝐞𝐝𝐢𝐚/TubeVideo");
 const VOID = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/void`);
-import { proto } from "@adiwajshing/baileys";
+const Oops = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱☘️𝐊𝐞𝐲𝐬/Oops`);
 import Client from "../../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/TUF";
 import AʀƈȶɨӼ from "../../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/msb";
+import ʟᴀʏᴏᴜᴛ from "../../𝐀𝐫𝐜𝐭𝐢𝐱🀄𝐕𝐞𝐧𝐭/ʟᴀʏᴏᴜᴛ";
+import { proto } from "@adiwajshing/baileys";
 import ffmpeg from "fluent-ffmpeg";
 const yts = require("yt-search");
 import ytdl from "ytdl-core";
 const ytIdRegex =
 /(?:http(?:s|):\/\/|)(?:(?:www\.|)youtube(?:\-nocookie|)\.com\/(?:watch\?.*(?:|\&)v=|embed\/|v\/)|youtu\.be\/)([-_0-9A-Za-z]{11})/;
-//" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 import * as fs from "fs";
 import path from "path";
 var scriptName = path.basename(__filename);
 var dotScrpt = scriptName.slice(0, -3).toLowerCase();
+`|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
+/*              (𝐜)𝐀𝐫𝐜𝐭𝐢𝐱 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!*/
+//" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 export = {
 name: dotScrpt,
 category: path.basename(__dirname),
@@ -35,7 +39,6 @@ AʀƈȶɨӼ: AʀƈȶɨӼ,
 ǟʀɢʊʍɛռȶ: string[],
 ӄ𝖗𝖞ӄ𝖓𝖟
 ): Promise<void> {
-try {
 const ʟɴᴀᴍᴇ = AʀƈȶɨӼ.sender;
 const ᴅꜰɴᴀᴍᴇ = AʀƈȶɨӼ.commandName;
 const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/[^\d+]/g, "");
@@ -47,66 +50,32 @@ console.log("💡Is Bot Group Admin: " + AʀƈȶɨӼ.isBotGroupAdmin);
 console.log("💡Is Sender Group Admin: " + AʀƈȶɨӼ.isSenderGroupAdmin);
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 if (ǟʀɢʊʍɛռȶ.length === 0) {
-await TUF.sendMessage(
-AʀƈȶɨӼ.chatId,
-{
-text: `✥𝐔𝐬𝐞𝐫: ${Fox.pushName} 
-
-Press Below To Read How To Use This Command!`,
-footer: "⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ⦔",
-title: `🔸𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()}`,
-buttonText: "❝ _How To Use?_ ❞",
-sections: [
-{
-title: "𝐀𝐑𝐆𝐔𝐌𝐄𝐍𝐓 𝐍𝐄𝐄𝐃𝐄𝐃!",
-rows: [
-{
-title: "⚡𝐔𝐬𝐚𝐠𝐞",
-rowId: "argument required...",
-description: `💡𝐈𝐧𝐟𝐨: In order to use this command, you must follow below instructions:
-Option 1 - ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()} _song name_
+return FoxNeeded.VFox(
+TUF,
+Fox,
+AʀƈȶɨӼ,
+`Option 1 - ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()} _song name_
 Option 2 - ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()} _youtube link_`,
-},
-],
-},
-],
-},
-MessageType.buttonsMessage
+dotScrpt
 );
 }
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 if (ǟʀɢʊʍɛռȶ.includes("yout")) {
 if (!ytIdRegex.test(ǟʀɢʊʍɛռȶ[0])) {
-await TUF.sendMessage(
-AʀƈȶɨӼ.chatId,
-{
-text: `✥𝐔𝐬𝐞𝐫: ${Fox.pushName} 
-
-Press Below To Read How To Use This Command!`,
-footer: "⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ⦔",
-title: `🔸𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()}`,
-buttonText: "❝ _How To Use?_ ❞",
-sections: [
-{
-title: "𝐀𝐑𝐆𝐔𝐌𝐄𝐍𝐓 𝐍𝐄𝐄𝐃𝐄𝐃!",
-rows: [
-{
-title: "⚡𝐔𝐬𝐚𝐠𝐞",
-rowId: "argument required...",
-description: `💡𝐈𝐧𝐟𝐨: In order to use this command, you must follow below instructions:
-Option 1 - ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()} _song name_
-Option 2 - ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()} _youtube link_`,
-},
-],
-},
-],
-},
-MessageType.buttonsMessage
+return FoxNeeded.VFox(
+TUF,
+Fox,
+AʀƈȶɨӼ,
+`Option 1 - ${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()} _song name_
+Option 2 - ${
+ʟᴀʏᴏᴜᴛ.MuveOn
+}${dotScrpt.toUpperCase()} _youtube link_`,
+dotScrpt
 );
 }
 }
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-let FinalGot;
+let FinalGot: any;
 if (ytIdRegex.test(ǟʀɢʊʍɛռȶ[0])) {
 FinalGot = ǟʀɢʊʍɛռȶ[0];
 } else {
@@ -114,98 +83,27 @@ FinalGot = ǟʀɢʊʍɛռȶ.join(" ");
 }
 const LinkFound = await yts(FinalGot);
 if (!LinkFound) {
-Text_List.VText(TUF, Fox, AʀƈȶɨӼ, `❌𝗘𝗿𝗿𝗼𝗿: No Music Found!`);
+Text_List.VText(TUF, Fox, AʀƈȶɨӼ, `❌𝗘𝗿𝗿𝗼𝗿: No Video Found!`);
 return;
 }
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-const Videos = LinkFound.videos.slice(0, 1);
-Videos.forEach(async function (Found) {
+var TubeFile = LinkFound.videos.slice(0, 1);
+TubeFile.forEach(async function (Found: any) {
 if (Found.seconds > 1800) {
 Image_Button.VImg(
 TUF,
 Fox,
 AʀƈȶɨӼ,
-`❌𝗘𝗿𝗿𝗼𝗿: _Choose Smaller Video less then 30mins!_
+`❌𝗘𝗿𝗿𝗼𝗿: _Choose Smaller Audio less then 30mins!_
 
-𝐘𝐨𝐮𝐓𝐮𝐛𝐞📹𝐕𝐢𝐝𝐞𝐨
+⭕️𝐘𝐨𝐮𝐓𝐮𝐛𝐞 𝐀𝐈: ${Found.title}
 🍻𝐓𝐢𝐭𝐥𝐞: ${Found.title}
 ⏰𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧: ${Found.timestamp}`,
 Found.thumbnail
 );
 }
-//" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-// Image_Button.VImg(
-// TUF,
-// Fox,
-// AʀƈȶɨӼ,
-// `💡𝐈𝐧𝐟𝐨: In order to use this command:
-// ⭕️𝐘𝐨𝐮𝐓𝐮𝐛𝐞 𝐀𝐈: ${Found.title}
-// - Join _chat.whatsapp.com/JqLMtFMmuxv3WSdwkWQf6o_
-// - Directly Send YouTube Link.
-// - Wait For Music to Play.`,
-// Found.thumbnail
-// );
-// return;
-var stream = ytdl(Found.videoId, {
-quality: "highest",
+return await TubeVideo.VTvdo(TUF, Fox, AʀƈȶɨӼ, Found);
 });
-ffmpeg(stream)
-.toFormat("mp4")
-.saveToFile(`./𝐀𝐫𝐜𝐭𝐢𝐱🐞𝐁𝐞𝐞𝐭𝐥𝐞/${Fox.key.id}.mp4`)
-.on("end", async () => {
-await ӄ𝖗𝖞ӄ𝖓𝖟.sendPresenceUpdate("composing", AʀƈȶɨӼ.chatId);
-await TUF
-.sendMessage(
-AʀƈȶɨӼ.chatId,
-{
-quoted: Fox.message,
-contextInfo: {
-mentionedJid: [AʀƈȶɨӼ.sender],
-},
-timestamp: Date(),
-video: fs.readFileSync(`./${Fox.key.id}.mp4`),
-mimetype: "video/mp4",
-caption: `┌─「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢® 」
-├• *Tαɠ:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
-├• *Nαɱҽ:* ${Fox.pushName}
-├• *Cσɱɱαɳԃ:* ${AʀƈȶɨӼ.commandName}
-└──
-
-𝐘𝐨𝐮𝐓𝐮𝐛𝐞📹𝐕𝐢𝐝𝐞𝐨
-🍻𝗧𝗶𝘁𝗹𝗲: ${Found.title}
-🙈𝗩𝗶𝗲𝘄𝘀: ${Found.views}
-⏰𝗗𝘂𝗿𝗮𝘁𝗶𝗼𝗻: ${Found.timestamp}
-✒️𝗔𝘂𝘁𝗵𝗼𝗿: ${Found.author.name}
-📅𝗥𝗲𝗹𝗲𝗮𝘀𝗲𝗱: ${Found.ago}
-🔗𝐋𝐢𝐧𝐤: ${Found.url}
-📜𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${Found.description}`,
-footer: `⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ⦔`,
-buttons: [
-{
-buttonId: `${ʟᴀʏᴏᴜᴛ.MuveOn}help`,
-buttonText: { displayText: `${ʟᴀʏᴏᴜᴛ.MuveOn}help` },
-type: 1,
-},
-{
-buttonId: `${ʟᴀʏᴏᴜᴛ.MuveOn}menu`,
-buttonText: { displayText: `${ʟᴀʏᴏᴜᴛ.MuveOn}menu` },
-type: 1,
-},
-],
-headerType: 5,
-},
-MessageType.buttonsMessage
-)
-.then(VOID.VOID(`./𝐀𝐫𝐜𝐭𝐢𝐱🐞𝐁𝐞𝐞𝐭𝐥𝐞/${Fox.key.id}.mp4`))
-.catch((error: any) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
-await ӄ𝖗𝖞ӄ𝖓𝖟.sendPresenceUpdate("available", AʀƈȶɨӼ.chatId);
-return;
-});
-});
-//" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-} catch (error) {
-return Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error);
-}
 },
 };
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
