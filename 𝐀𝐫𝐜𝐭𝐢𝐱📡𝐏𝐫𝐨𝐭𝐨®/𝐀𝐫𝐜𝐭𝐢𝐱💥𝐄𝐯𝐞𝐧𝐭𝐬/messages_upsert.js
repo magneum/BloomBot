@@ -52,43 +52,37 @@ const messages_upsert = (update, ӄ𝖗𝖞ӄ𝖓𝖟, commandHandler) => __awai
     let AʀƈȶɨӼ = yield (0, helper_1.default)(Fox, ӄ𝖗𝖞ӄ𝖓𝖟);
     let TUF = new TUF_1.default(ӄ𝖗𝖞ӄ𝖓𝖟);
     //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-    if (AʀƈȶɨӼ.fromMe && AʀƈȶɨӼ.isCmd) {
+    if (AʀƈȶɨӼ.isCmd) {
         console.clear();
         console.log(AʀƈȶɨӼ);
         const command = commandHandler.get(AʀƈȶɨӼ.commandName);
         console.log(chalk_1.default.blueBright(`💡𝐈𝐧𝐟𝐨: ${AʀƈȶɨӼ.commandName} command executed.`));
         var ǟʀɢʊʍɛռȶ = AʀƈȶɨӼ.body.trim().split(/\s+/).slice(1);
-        //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
         yield Silent_1.default.VSln(TUF, Fox, AʀƈȶɨӼ, ӄ𝖗𝖞ӄ𝖓𝖟);
         yield Ranker_1.default.VRnIT(TUF, Fox, AʀƈȶɨӼ, ӄ𝖗𝖞ӄ𝖓𝖟);
         yield Link_Proctectron_1.default.VFLink(TUF, Fox, AʀƈȶɨӼ, ӄ𝖗𝖞ӄ𝖓𝖟);
         //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
         try {
-            const MetaFor_A = yield ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("   ");
             let MEMBER_A = [];
-            for (var i = 0; i < MetaFor_A.participants.length; i++) {
-                MEMBER_A[i] = MetaFor_A.participants[i].id;
-            }
-            const MetaFor_B = yield ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("   ");
             let MEMBER_B = [];
-            for (var i = 0; i < MetaFor_B.participants.length; i++) {
-                MEMBER_B[i] = MetaFor_B.participants[i].id;
-            }
-            const MetaFor_C = yield ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("   ");
             let MEMBER_C = [];
-            for (var i = 0; i < MetaFor_C.participants.length; i++) {
-                MEMBER_C[i] = MetaFor_C.participants[i].id;
-            }
-            const MetaFor_D = yield ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("   ");
             let MEMBER_D = [];
-            for (var i = 0; i < MetaFor_D.participants.length; i++) {
-                MEMBER_D[i] = MetaFor_D.participants[i].id;
-            }
-            const MetaFor_E = yield ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("   ");
             let MEMBER_E = [];
-            for (var i = 0; i < MetaFor_E.participants.length; i++) {
+            const MetaFor_A = yield ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363024871653603@g.us");
+            const MetaFor_B = yield ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363041425736157@g.us");
+            const MetaFor_C = yield ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363022161584857@g.us");
+            const MetaFor_D = yield ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363020792949649@g.us");
+            const MetaFor_E = yield ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363042762307739@g.us");
+            for (var i = 0; i < MetaFor_A.participants.length; i++)
+                MEMBER_A[i] = MetaFor_A.participants[i].id;
+            for (var i = 0; i < MetaFor_B.participants.length; i++)
+                MEMBER_B[i] = MetaFor_B.participants[i].id;
+            for (var i = 0; i < MetaFor_C.participants.length; i++)
+                MEMBER_C[i] = MetaFor_C.participants[i].id;
+            for (var i = 0; i < MetaFor_D.participants.length; i++)
+                MEMBER_D[i] = MetaFor_D.participants[i].id;
+            for (var i = 0; i < MetaFor_E.participants.length; i++)
                 MEMBER_E[i] = MetaFor_E.participants[i].id;
-            }
             // await TUF.sendMessage(
             // AʀƈȶɨӼ.chatId,
             // MEMBER_E.toString(),
