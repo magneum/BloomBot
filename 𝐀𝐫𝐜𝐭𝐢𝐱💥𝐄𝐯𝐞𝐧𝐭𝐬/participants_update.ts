@@ -27,7 +27,7 @@ await client.sendMessage(
 update.id,
 {
 timestamp: Date(),
-image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png" },
+image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Black.png" },
 caption: `👋🏻𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚, Some Of Your Members Requested Our Valkyrie HQ to Add Our Bot In This Group.Have Fun!
 
 
@@ -111,7 +111,7 @@ await client.sendMessage(
 update.id,
 {
 timestamp: Date(),
-image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png" },
+image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Black.png" },
 caption: `🥞𝐖𝐞𝐥𝐜𝐨𝐦𝐞: *『@${ᴘᴘᴡᴇʟᴄᴏᴍᴇ}』*
 ꧁◇══════════════◇꧂
 𝗕𝗶𝗼: ${GroupMemBio.status}
