@@ -41,13 +41,13 @@ const RankIT = (TUF, Fox, AʀƈȶɨӼ, ӄ𝖗𝖞ӄ𝖓𝖟) => __awaiter(void 0
         }, (error, BanPerson) => __awaiter(void 0, void 0, void 0, function* () {
             if (error)
                 return console.log(error);
-            BanGroup.findOne({
+            yield BanGroup.findOne({
                 ID: AʀƈȶɨӼ.chatId,
             }, (error, BanGroup) => __awaiter(void 0, void 0, void 0, function* () {
                 if (error)
                     return console.log(error);
                 if (AʀƈȶɨӼ.isGroup && !AʀƈȶɨӼ.fromMe && !BanGroup && !BanPerson) {
-                    Ranker.findOne({
+                    yield Ranker.findOne({
                         serverID: AʀƈȶɨӼ.chatId,
                     }, (error, userRank) => __awaiter(void 0, void 0, void 0, function* () {
                         if (error)
