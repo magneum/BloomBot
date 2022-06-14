@@ -76,28 +76,35 @@ const logger = (0, pino_1.default)({
     timestamp: () => `,"Time":"${new Date().toJSON()}"`,
 }).child({});
 logger.level = "error";
-var 𝐂𝐨𝐧𝐧𝐞𝐜𝐭 = (0, baileys_1.makeInMemoryStore)({ logger });
+var Konn = (0, baileys_1.makeInMemoryStore)({ logger });
 Zygote.findOne({
-    Name: 𝐂𝐨𝐧𝐧𝐞𝐜𝐭,
+    ID: Konn,
 }, (error, session) => __awaiter(void 0, void 0, void 0, function* () {
     if (error) {
         return console.log(error);
     }
     if (!session) {
         var newServer = new LinkList({
-            Name: 𝐂𝐨𝐧𝐧𝐞𝐜𝐭,
+            ID: Konn,
         });
-        yield newServer.save();
+        yield newServer
+            .save()
+            .catch((error) => chalk_1.default.redBright("Zygote NewServer Error: " + error));
+        console.log(session);
+        return;
     }
-    𝐂𝐨𝐧𝐧𝐞𝐜𝐭 = session.Name;
+    Konn = session.ID;
     setInterval(() => __awaiter(void 0, void 0, void 0, function* () {
-        session.Name = 𝐂𝐨𝐧𝐧𝐞𝐜𝐭;
-        yield session.save();
-        console.log(session.Name);
+        session.ID = Konn;
+        yield session
+            .save()
+            .catch((error) => chalk_1.default.redBright("Zygote Re-Save Failed: " + error));
+        console.log(session.ID);
+        return;
     }), 4000);
-    // 𝐂𝐨𝐧𝐧𝐞𝐜𝐭?.readFromFile("./AʀƈȶɨӼ.json");
+    // Konn?.readFromFile("./AʀƈȶɨӼ.json");
     // setInterval(() => {
-    // 𝐂𝐨𝐧𝐧𝐞𝐜𝐭?.writeToFile("./AʀƈȶɨӼ.json");
+    // Konn?.writeToFile("./AʀƈȶɨӼ.json");
     // }, 4_000);
 }));
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
@@ -164,7 +171,7 @@ Zygote.findOne({
             }),
         });
         //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-        𝐂𝐨𝐧𝐧𝐞𝐜𝐭 === null || 𝐂𝐨𝐧𝐧𝐞𝐜𝐭 === void 0 ? void 0 : 𝐂𝐨𝐧𝐧𝐞𝐜𝐭.bind(ӄ𝖗𝖞ӄ𝖓𝖟.ev);
+        Konn === null || Konn === void 0 ? void 0 : Konn.bind(ӄ𝖗𝖞ӄ𝖓𝖟.ev);
         ӄ𝖗𝖞ӄ𝖓𝖟.ev.on("group-participants.update", (update) => __awaiter(void 0, void 0, void 0, function* () {
             participants_update_1.default.participants_update(update, ӄ𝖗𝖞ӄ𝖓𝖟);
         }));
