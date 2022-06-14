@@ -47,7 +47,7 @@ caption: `┌─「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢® 」
 ├• *${ʟᴀʏᴏᴜᴛ.MuveOn}leave:*  _leave groups with/without sending text._
 ├• *${ʟᴀʏᴏᴜᴛ.MuveOn}spam:*  _spam messsage in group/private_
 ├• *${ʟᴀʏᴏᴜᴛ.MuveOn}help:*  _basic help command_
-╚════════════╝`,
+└────────────◇`,
 footer: "`⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔",
 buttons: [
 {

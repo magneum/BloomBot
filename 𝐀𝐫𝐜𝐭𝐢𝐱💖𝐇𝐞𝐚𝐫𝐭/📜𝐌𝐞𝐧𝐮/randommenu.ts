@@ -48,7 +48,7 @@ caption: `┌─「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢® 」
 ├• *${ʟᴀʏᴏᴜᴛ.MuveOn}tts:*  _convert text to speech_
 ├• *${ʟᴀʏᴏᴜᴛ.MuveOn}pokedex:*  _get any pokemon information_
 ├• *${ʟᴀʏᴏᴜᴛ.MuveOn}triggered:*  _@tag or reply person_
-╚════════════╝`,
+└────────────◇`,
 footer: "`⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔",
 buttons: [
 {

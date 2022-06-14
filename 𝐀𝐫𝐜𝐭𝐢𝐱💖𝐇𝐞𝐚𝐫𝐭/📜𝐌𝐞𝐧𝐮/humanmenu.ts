@@ -45,7 +45,7 @@ caption: `┌─「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢® 」
 ├• *${ʟᴀʏᴏᴜᴛ.MuveOn}pussy:*  _get random pussy img/gif_
 ├• *${ʟᴀʏᴏᴜᴛ.MuveOn}slut:*  _get random slut img/gif_
 ├• *${ʟᴀʏᴏᴜᴛ.MuveOn}tikporn:*  _get random tiktokporn video_
-╚════════════╝`,
+└────────────◇`,
 footer: "`⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔",
 buttons: [
 {
