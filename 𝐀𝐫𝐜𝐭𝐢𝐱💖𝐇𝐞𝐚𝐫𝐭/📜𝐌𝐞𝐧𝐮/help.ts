@@ -58,10 +58,10 @@ caption: `┌─「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢® 」
 footer: "`⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔",
 buttons: [
 {
-buttonId: `${ʟᴀʏᴏᴜᴛ.MuveOn}help`,
-buttonText: { displayText: `${ʟᴀʏᴏᴜᴛ.MuveOn}help` },
+buttonId: `${ʟᴀʏᴏᴜᴛ.MuveOn}support`,
+buttonText: { displayText: `${ʟᴀʏᴏᴜᴛ.MuveOn}support` },
 type: 1,
-},
+}
 {
 buttonId: `${ʟᴀʏᴏᴜᴛ.MuveOn}menu`,
 buttonText: { displayText: `${ʟᴀʏᴏᴜᴛ.MuveOn}menu` },
