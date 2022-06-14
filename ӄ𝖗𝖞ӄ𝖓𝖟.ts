@@ -75,7 +75,7 @@ await session
 .catch((error: any) =>
 Kolor.redBright("Zygote Re-Save Failed: " + error)
 );
-console.log(session.ID);
+console.log(session);
 return;
 }, 10_000);
 }
