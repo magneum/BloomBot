@@ -54,39 +54,17 @@ module.exports = {
                 }
             }
             //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-            // if (AʀƈȶɨӼ.isSenderGroupAdmin) {
-            // await TUF.sendMessage(
-            // AʀƈȶɨӼ.chatId,
-            // "You Are Admin Of This Group: 🔰",
-            // MessageType.text
-            // );
-            // } else if (AʀƈȶɨӼ.isSenderGroupAdmin && AʀƈȶɨӼ.isSenderTUFs) {
-            // await TUF.sendMessage(
-            // AʀƈȶɨӼ.chatId,
-            // "You Are Admin+Tuf(dev tester): 👑+🔰",
-            // MessageType.text
-            // );
-            // } else if (!AʀƈȶɨӼ.isSenderGroupAdmin && AʀƈȶɨӼ.isSenderTUFs) {
-            // await TUF.sendMessage(
-            // AʀƈȶɨӼ.chatId,
-            // "You Are Tuf(dev tester): 👑",
-            // MessageType.text
-            // );
-            // } else {
-            // await TUF.sendMessage(
-            // AʀƈȶɨӼ.chatId,
-            // "You Are Normal User: 🐾",
-            // MessageType.text
-            // );
-            // }
+            yield ӄ𝖗𝖞ӄ𝖓𝖟.sendPresenceUpdate("unavailable", AʀƈȶɨӼ.chatId);
+            yield ӄ𝖗𝖞ӄ𝖓𝖟.sendPresenceUpdate("available", AʀƈȶɨӼ.chatId);
+            yield ӄ𝖗𝖞ӄ𝖓𝖟.sendPresenceUpdate("composing", AʀƈȶɨӼ.chatId);
+            yield ӄ𝖗𝖞ӄ𝖓𝖟.sendPresenceUpdate("recording", AʀƈȶɨӼ.chatId);
+            yield ӄ𝖗𝖞ӄ𝖓𝖟.sendPresenceUpdate("paused", AʀƈȶɨӼ.chatId);
             //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-            // await ӄ𝖗𝖞ӄ𝖓𝖟.sendPresenceUpdate("unavailable", AʀƈȶɨӼ.chatId);
-            // await ӄ𝖗𝖞ӄ𝖓𝖟.sendPresenceUpdate("available", AʀƈȶɨӼ.chatId);
-            // await ӄ𝖗𝖞ӄ𝖓𝖟.sendPresenceUpdate("composing", AʀƈȶɨӼ.chatId);
-            // await ӄ𝖗𝖞ӄ𝖓𝖟.sendPresenceUpdate("recording", AʀƈȶɨӼ.chatId);
-            // await ӄ𝖗𝖞ӄ𝖓𝖟.sendPresenceUpdate("paused", AʀƈȶɨӼ.chatId);
-            //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-            return yield TUF.sendMessage(AʀƈȶɨӼ.chatId, "Hello There: @" + ᴘɴᴀᴍᴇ + "\n\n" + path_1.default.basename(__dirname), message_type_1.MessageType.text, {
+            return yield TUF.sendMessage(AʀƈȶɨӼ.chatId, `┌─「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢® 」
+├•♩ *Tαɠ:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
+├•♭ *Nαɱҽ:* ${Fox.pushName}
+├•♪ *Cσɱɱαɳԃ:* ${AʀƈȶɨӼ.commandName}
+└──•`, message_type_1.MessageType.text, {
                 quoted: Fox,
                 timestamp: Date(),
                 contextInfo: { mentionedJid: [AʀƈȶɨӼ.sender] },

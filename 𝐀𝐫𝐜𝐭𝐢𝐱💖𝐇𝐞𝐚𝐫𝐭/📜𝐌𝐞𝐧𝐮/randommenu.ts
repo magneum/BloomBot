@@ -31,12 +31,11 @@ quoted: Fox,
 timestamp: Date(),
 contextInfo: { mentionedJid: [AʀƈȶɨӼ.sender] },
 image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Gold.png" },
-caption: `╔═⟢  𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®
-║
-║♩ *Tαɠ:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
-║♭ *Nαɱҽ:* ${Fox.pushName}
-║♪ *Cσɱɱαɳԃ:* ${AʀƈȶɨӼ.commandName}
-╚═════⟢
+caption: `┌─「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢® 」
+├• *Tαɠ:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
+├• *Nαɱҽ:* ${Fox.pushName}
+├• *Cσɱɱαɳԃ:* ${AʀƈȶɨӼ.commandName}
+└──
 
 ╔════⧉🦄 𝐑𝐚𝐧𝐝𝐨𝐦𝐬
 ║• *${ʟᴀʏᴏᴜᴛ.MuveOn}leaderboard:*  _check group leaderboard_

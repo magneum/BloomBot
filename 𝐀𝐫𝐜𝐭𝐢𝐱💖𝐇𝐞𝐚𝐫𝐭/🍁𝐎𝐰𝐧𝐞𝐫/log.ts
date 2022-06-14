@@ -52,41 +52,19 @@ console.log("💡Receiver: " + քɛʀֆօռɢօȶռʊʍ);
 }
 }
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-// if (AʀƈȶɨӼ.isSenderGroupAdmin) {
-// await TUF.sendMessage(
-// AʀƈȶɨӼ.chatId,
-// "You Are Admin Of This Group: 🔰",
-// MessageType.text
-// );
-// } else if (AʀƈȶɨӼ.isSenderGroupAdmin && AʀƈȶɨӼ.isSenderTUFs) {
-// await TUF.sendMessage(
-// AʀƈȶɨӼ.chatId,
-// "You Are Admin+Tuf(dev tester): 👑+🔰",
-// MessageType.text
-// );
-// } else if (!AʀƈȶɨӼ.isSenderGroupAdmin && AʀƈȶɨӼ.isSenderTUFs) {
-// await TUF.sendMessage(
-// AʀƈȶɨӼ.chatId,
-// "You Are Tuf(dev tester): 👑",
-// MessageType.text
-// );
-// } else {
-// await TUF.sendMessage(
-// AʀƈȶɨӼ.chatId,
-// "You Are Normal User: 🐾",
-// MessageType.text
-// );
-// }
-//" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-// await ӄ𝖗𝖞ӄ𝖓𝖟.sendPresenceUpdate("unavailable", AʀƈȶɨӼ.chatId);
-// await ӄ𝖗𝖞ӄ𝖓𝖟.sendPresenceUpdate("available", AʀƈȶɨӼ.chatId);
-// await ӄ𝖗𝖞ӄ𝖓𝖟.sendPresenceUpdate("composing", AʀƈȶɨӼ.chatId);
-// await ӄ𝖗𝖞ӄ𝖓𝖟.sendPresenceUpdate("recording", AʀƈȶɨӼ.chatId);
-// await ӄ𝖗𝖞ӄ𝖓𝖟.sendPresenceUpdate("paused", AʀƈȶɨӼ.chatId);
+await ӄ𝖗𝖞ӄ𝖓𝖟.sendPresenceUpdate("unavailable", AʀƈȶɨӼ.chatId);
+await ӄ𝖗𝖞ӄ𝖓𝖟.sendPresenceUpdate("available", AʀƈȶɨӼ.chatId);
+await ӄ𝖗𝖞ӄ𝖓𝖟.sendPresenceUpdate("composing", AʀƈȶɨӼ.chatId);
+await ӄ𝖗𝖞ӄ𝖓𝖟.sendPresenceUpdate("recording", AʀƈȶɨӼ.chatId);
+await ӄ𝖗𝖞ӄ𝖓𝖟.sendPresenceUpdate("paused", AʀƈȶɨӼ.chatId);
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 return await TUF.sendMessage(
 AʀƈȶɨӼ.chatId,
-"Hello There: @" + ᴘɴᴀᴍᴇ + "\n\n" + path.basename(__dirname),
+`┌─「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢® 」
+├•♩ *Tαɠ:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
+├•♭ *Nαɱҽ:* ${Fox.pushName}
+├•♪ *Cσɱɱαɳԃ:* ${AʀƈȶɨӼ.commandName}
+└──•`,
 MessageType.text,
 {
 quoted: Fox,

@@ -36,12 +36,11 @@ module.exports = {
                 timestamp: Date(),
                 contextInfo: { mentionedJid: [AʀƈȶɨӼ.sender] },
                 image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Gold.png" },
-                caption: `╔═⟢  𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®
-║
-║♩ *Tαɠ:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
-║♭ *Nαɱҽ:* ${Fox.pushName}
-║♪ *Cσɱɱαɳԃ:* ${AʀƈȶɨӼ.commandName}
-╚═════⟢
+                caption: `┌─「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢® 」
+├•♩ *Tαɠ:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
+├•♭ *Nαɱҽ:* ${Fox.pushName}
+├•♪ *Cσɱɱαɳԃ:* ${AʀƈȶɨӼ.commandName}
+└──•
 
 ╔════⧉📥 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫𝐬
 ║•  ${______1.default.MuveOn}play: _download audio using yt_

@@ -165,7 +165,11 @@ mentionedJid: [AʀƈȶɨӼ.sender],
 timestamp: Date(),
 video: fs.readFileSync(`./${Fox.key.id}.mp4`),
 mimetype: "video/mp4",
-caption: `✥𝐔𝐬𝐞𝐫: ${Fox.pushName}
+caption: `┌─「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢® 」
+├• *Tαɠ:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
+├• *Nαɱҽ:* ${Fox.pushName}
+├• *Cσɱɱαɳԃ:* ${AʀƈȶɨӼ.commandName}
+└──
 
 𝐘𝐨𝐮𝐓𝐮𝐛𝐞📹𝐕𝐢𝐝𝐞𝐨
 🍻𝗧𝗶𝘁𝗹𝗲: ${Found.title}
