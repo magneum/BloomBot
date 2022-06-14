@@ -44,13 +44,16 @@ let TUF: Client = new Client(ӄʀʏȶɛӄ);
 if (AʀƈȶɨӼ.isCmd) {
 console.log(AʀƈȶɨӼ);
 const command = commandHandler.get(AʀƈȶɨӼ.commandName);
+try {
 console.log(
 Kolor.blueBright(
 `💡𝐈𝐧𝐟𝐨: 
-${AʀƈȶɨӼ.commandName} command executed.
-${command.category} command Category.`
+${AʀƈȶɨӼ.commandName} command executed.`
 )
 );
+} catch (e) {
+console.log(e.message);
+}
 var ǟʀɢʊʍɛռȶ = AʀƈȶɨӼ.body.trim().split(/\s+/).slice(1);
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 await Silent.VSln(TUF, Fox, AʀƈȶɨӼ, ӄʀʏȶɛӄ);
@@ -62,12 +65,12 @@ if (!command) {
 await TUF.sendMessage(
 AʀƈȶɨӼ.chatId,
 {
-quoted: Fox.message,
+quoted: Fox,
 contextInfo: {
 mentionedJid: [AʀƈȶɨӼ.sender],
 },
 timestamp: Date(),
-image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png" },
+image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Cream.png" },
 caption: `✥𝐔𝐬𝐞𝐫: ${Fox.pushName}
 
 *❌𝗘𝗿𝗿𝗼𝗿:* No Such Command In Database.`,

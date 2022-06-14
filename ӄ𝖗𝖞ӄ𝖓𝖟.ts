@@ -78,7 +78,7 @@ for (const File of AllFiles) {
 const command = require(`./𝐀𝐫𝐜𝐭𝐢𝐱💖𝐇𝐞𝐚𝐫𝐭/${Files}/${File}`);
 try {
 commandHandler.set(command.name, command);
-console.log(Kolor.green(Files + " :") + Kolor.blue(File + " ✔️"));
+console.log(Kolor.green(Files + ":   ") + Kolor.blue(File.toLocaleUpperCase() + " ✔️"));
 } catch (error) {
 console.log(
 Kolor.red("❌𝐄𝐫𝐫𝐨𝐫: " + error + " | ") +
