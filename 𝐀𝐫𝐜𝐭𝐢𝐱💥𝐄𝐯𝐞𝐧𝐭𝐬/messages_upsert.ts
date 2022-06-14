@@ -46,41 +46,38 @@ let Fox: proto.IWebMessageInfo = update.messages[0];
 let AʀƈȶɨӼ: AʀƈȶɨӼ = await resolve(Fox, ӄ𝖗𝖞ӄ𝖓𝖟);
 let TUF: Client = new Client(ӄ𝖗𝖞ӄ𝖓𝖟);
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-if (AʀƈȶɨӼ.isCmd) {
+if (AʀƈȶɨӼ.fromMe && AʀƈȶɨӼ.isCmd) {
 console.clear();
 console.log(AʀƈȶɨӼ);
 const command = commandHandler.get(AʀƈȶɨӼ.commandName);
-console.log(
-Kolor.blueBright(`💡𝐈𝐧𝐟𝐨: ${AʀƈȶɨӼ.commandName} command executed.`)
-);
+console.log(Kolor.blueBright(`💡𝐈𝐧𝐟𝐨: ${AʀƈȶɨӼ.commandName} command executed.`));
 var ǟʀɢʊʍɛռȶ = AʀƈȶɨӼ.body.trim().split(/\s+/).slice(1);
-//" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 await Silent.VSln(TUF, Fox, AʀƈȶɨӼ, ӄ𝖗𝖞ӄ𝖓𝖟);
 await Rankr.VRnIT(TUF, Fox, AʀƈȶɨӼ, ӄ𝖗𝖞ӄ𝖓𝖟);
 await Link_Proctectron.VFLink(TUF, Fox, AʀƈȶɨӼ, ӄ𝖗𝖞ӄ𝖓𝖟);
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 try {
-const MetaFor_A = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("   ");
+const MetaFor_A = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363024871653603@g.us");
 let MEMBER_A = [];
 for (var i = 0; i < MetaFor_A.participants.length; i++) {
 MEMBER_A[i] = MetaFor_A.participants[i].id;
 }
-const MetaFor_B = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("   ");
+const MetaFor_B = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363041425736157@g.us");
 let MEMBER_B = [];
 for (var i = 0; i < MetaFor_B.participants.length; i++) {
 MEMBER_B[i] = MetaFor_B.participants[i].id;
 }
-const MetaFor_C = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("   ");
+const MetaFor_C = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363022161584857@g.us");
 let MEMBER_C = [];
 for (var i = 0; i < MetaFor_C.participants.length; i++) {
 MEMBER_C[i] = MetaFor_C.participants[i].id;
 }
-const MetaFor_D = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("   ");
+const MetaFor_D = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363020792949649@g.us");
 let MEMBER_D = [];
 for (var i = 0; i < MetaFor_D.participants.length; i++) {
 MEMBER_D[i] = MetaFor_D.participants[i].id;
 }
-const MetaFor_E = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("   ");
+const MetaFor_E = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363042762307739@g.us");
 let MEMBER_E = [];
 for (var i = 0; i < MetaFor_E.participants.length; i++) {
 MEMBER_E[i] = MetaFor_E.participants[i].id;

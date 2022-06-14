@@ -29,15 +29,19 @@ const Halt = require(`../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜�
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 const Link_Proctectron_1 = __importDefault(require("../\uD835\uDC00\uD835\uDC2B\uD835\uDC1C\uD835\uDC2D\uD835\uDC22\uD835\uDC31\uD83C\uDC04\uD835\uDC15\uD835\uDC1E\uD835\uDC27\uD835\uDC2D/Link_Proctectron"));
 const message_type_1 = require("../\uD835\uDC00\uD835\uDC2B\uD835\uDC1C\uD835\uDC2D\uD835\uDC22\uD835\uDC31\u269C\uFE0F\uD835\uDC0A\uD835\uDC2B\uD835\uDC32\uD835\uDC28\uD835\uDC13\uD835\uDC1E\uD835\uDC24/message-type");
+const Video_Button = require(`../𝐀𝐫𝐜𝐭𝐢𝐱☘️𝐊𝐞𝐲𝐬/Video_Button`);
+const Image_Button = require(`../𝐀𝐫𝐜𝐭𝐢𝐱☘️𝐊𝐞𝐲𝐬/Image_Button`);
+const Text_List = require(`../𝐀𝐫𝐜𝐭𝐢𝐱☘️𝐊𝐞𝐲𝐬/Text_List`);
+const VOID = require(`../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/void`);
 const helper_1 = __importDefault(require("../\uD835\uDC00\uD835\uDC2B\uD835\uDC1C\uD835\uDC2D\uD835\uDC22\uD835\uDC31\u269C\uFE0F\uD835\uDC0A\uD835\uDC2B\uD835\uDC32\uD835\uDC28\uD835\uDC13\uD835\uDC1E\uD835\uDC24/helper"));
+const Oops = require(`../𝐀𝐫𝐜𝐭𝐢𝐱☘️𝐊𝐞𝐲𝐬/Oops`);
 const TUF_1 = __importDefault(require("../\uD835\uDC00\uD835\uDC2B\uD835\uDC1C\uD835\uDC2D\uD835\uDC22\uD835\uDC31\u269C\uFE0F\uD835\uDC0A\uD835\uDC2B\uD835\uDC32\uD835\uDC28\uD835\uDC13\uD835\uDC1E\uD835\uDC24/TUF"));
 const ______1 = __importDefault(require("../\uD835\uDC00\uD835\uDC2B\uD835\uDC1C\uD835\uDC2D\uD835\uDC22\uD835\uDC31\uD83C\uDC04\uD835\uDC15\uD835\uDC1E\uD835\uDC27\uD835\uDC2D/\u029F\u1D00\u028F\u1D0F\u1D1C\u1D1B"));
 const Silent_1 = __importDefault(require("../\uD835\uDC00\uD835\uDC2B\uD835\uDC1C\uD835\uDC2D\uD835\uDC22\uD835\uDC31\uD83C\uDC04\uD835\uDC15\uD835\uDC1E\uD835\uDC27\uD835\uDC2D/Silent"));
 const Ranker_1 = __importDefault(require("../\uD835\uDC00\uD835\uDC2B\uD835\uDC1C\uD835\uDC2D\uD835\uDC22\uD835\uDC31\uD83C\uDC04\uD835\uDC15\uD835\uDC1E\uD835\uDC27\uD835\uDC2D/Ranker"));
-const SetCom_1 = __importDefault(require("../\uD835\uDC00\uD835\uDC2B\uD835\uDC1C\uD835\uDC2D\uD835\uDC22\uD835\uDC31\uD83C\uDC04\uD835\uDC15\uD835\uDC1E\uD835\uDC27\uD835\uDC2D/SetCom"));
 const chalk_1 = __importDefault(require("chalk"));
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-const messages_upsert = (update, ӄʀʏȶɛӄ, commandHandler) => __awaiter(void 0, void 0, void 0, function* () {
+const messages_upsert = (update, ӄ𝖗𝖞ӄ𝖓𝖟, commandHandler) => __awaiter(void 0, void 0, void 0, function* () {
     if (update.type === "append" && !______1.default.OFFLINE_RESPONSE) {
         return;
     }
@@ -45,21 +49,82 @@ const messages_upsert = (update, ӄʀʏȶɛӄ, commandHandler) => __awaiter(void
         return;
     }
     let Fox = update.messages[0];
-    let AʀƈȶɨӼ = yield (0, helper_1.default)(Fox, ӄʀʏȶɛӄ);
-    let TUF = new TUF_1.default(ӄʀʏȶɛӄ);
+    let AʀƈȶɨӼ = yield (0, helper_1.default)(Fox, ӄ𝖗𝖞ӄ𝖓𝖟);
+    let TUF = new TUF_1.default(ӄ𝖗𝖞ӄ𝖓𝖟);
     //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-    if (AʀƈȶɨӼ.isCmd) {
+    if (AʀƈȶɨӼ.fromMe && AʀƈȶɨӼ.isCmd) {
         console.clear();
         console.log(AʀƈȶɨӼ);
         const command = commandHandler.get(AʀƈȶɨӼ.commandName);
-        console.log(chalk_1.default.blueBright(`💡𝐈𝐧𝐟𝐨: 
-${AʀƈȶɨӼ.commandName} command executed.`));
+        console.log(chalk_1.default.blueBright(`💡𝐈𝐧𝐟𝐨: ${AʀƈȶɨӼ.commandName} command executed.`));
         var ǟʀɢʊʍɛռȶ = AʀƈȶɨӼ.body.trim().split(/\s+/).slice(1);
         //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-        yield Silent_1.default.VSln(TUF, Fox, AʀƈȶɨӼ, ӄʀʏȶɛӄ);
-        yield Ranker_1.default.VRnIT(TUF, Fox, AʀƈȶɨӼ, ӄʀʏȶɛӄ);
-        yield SetCom_1.default.Vscom(TUF, Fox, AʀƈȶɨӼ, ӄʀʏȶɛӄ);
-        yield Link_Proctectron_1.default.VFLink(TUF, Fox, AʀƈȶɨӼ, ӄʀʏȶɛӄ);
+        yield Silent_1.default.VSln(TUF, Fox, AʀƈȶɨӼ, ӄ𝖗𝖞ӄ𝖓𝖟);
+        yield Ranker_1.default.VRnIT(TUF, Fox, AʀƈȶɨӼ, ӄ𝖗𝖞ӄ𝖓𝖟);
+        yield Link_Proctectron_1.default.VFLink(TUF, Fox, AʀƈȶɨӼ, ӄ𝖗𝖞ӄ𝖓𝖟);
+        //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
+        try {
+            const MetaFor_A = yield ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("   ");
+            let MEMBER_A = [];
+            for (var i = 0; i < MetaFor_A.participants.length; i++) {
+                MEMBER_A[i] = MetaFor_A.participants[i].id;
+            }
+            const MetaFor_B = yield ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("   ");
+            let MEMBER_B = [];
+            for (var i = 0; i < MetaFor_B.participants.length; i++) {
+                MEMBER_B[i] = MetaFor_B.participants[i].id;
+            }
+            const MetaFor_C = yield ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("   ");
+            let MEMBER_C = [];
+            for (var i = 0; i < MetaFor_C.participants.length; i++) {
+                MEMBER_C[i] = MetaFor_C.participants[i].id;
+            }
+            const MetaFor_D = yield ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("   ");
+            let MEMBER_D = [];
+            for (var i = 0; i < MetaFor_D.participants.length; i++) {
+                MEMBER_D[i] = MetaFor_D.participants[i].id;
+            }
+            const MetaFor_E = yield ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("   ");
+            let MEMBER_E = [];
+            for (var i = 0; i < MetaFor_E.participants.length; i++) {
+                MEMBER_E[i] = MetaFor_E.participants[i].id;
+            }
+            // await TUF.sendMessage(
+            // AʀƈȶɨӼ.chatId,
+            // MEMBER_E.toString(),
+            // MessageType.text
+            // );
+            // const MetaFor_F = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363041425736157@g.us");
+            // let MEMBER_F = [];
+            // for (var i = 0; i < MetaFor_F.participants.length; i++) {
+            // MEMBER_F[i] = MetaFor_F.participants[i].id;
+            // }
+            // //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
+            if (AʀƈȶɨӼ.isCmd &&
+                !AʀƈȶɨӼ.isSenderTUFs &&
+                !AʀƈȶɨӼ.body.includes(______1.default.MuveOn + "help")) {
+                if (!MEMBER_A.includes(AʀƈȶɨӼ.sender) &&
+                    !MEMBER_B.includes(AʀƈȶɨӼ.sender) &&
+                    !MEMBER_C.includes(AʀƈȶɨӼ.sender) &&
+                    !MEMBER_D.includes(AʀƈȶɨӼ.sender) &&
+                    !MEMBER_E.includes(AʀƈȶɨӼ.sender)) {
+                    return Image_Button.VImg(TUF, Fox, AʀƈȶɨӼ, `
+╔◇══════════════◇╗
+┊ 🦊𝐕𝐞𝐫𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧🦊
+╚◇══════════════◇╝
+
+𝐉𝐨𝐢𝐧 𝐓𝐨 𝐁𝐞 𝐕𝐞𝐫𝐢𝐟𝐢𝐞𝐝:
+*𝗚roup⛩️1:* chat.whatsapp.com/EIn3YFShFmkJ3fvAqf2rpn
+*𝗚roup⛩️2:* chat.whatsapp.com/EsxcMlXOy1DCJP2eGtZBH5
+*𝗚roup⛩️3:* chat.whatsapp.com/Bc1jBF7OVMRKnyTWYyxz1z
+*𝗚roup⛩️4:* chat.whatsapp.com/HKO5WLEZxMe3xWCyiv6vBu
+*𝗚roup⛩️5:* chat.whatsapp.com/G1NzKSYjAST95ehHk4FOZK`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Verity.png");
+                }
+            }
+        }
+        catch (error) {
+            console.log(error);
+        }
         //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
         if (!command) {
             yield TUF.sendMessage(AʀƈȶɨӼ.chatId, {
@@ -86,7 +151,7 @@ ${AʀƈȶɨӼ.commandName} command executed.`));
         }
         else if (command && AʀƈȶɨӼ.commandName == "help") {
             try {
-                return command.handle(TUF, Fox, AʀƈȶɨӼ, ǟʀɢʊʍɛռȶ, ӄʀʏȶɛӄ, commandHandler);
+                return command.handle(TUF, Fox, AʀƈȶɨӼ, ǟʀɢʊʍɛռȶ, ӄ𝖗𝖞ӄ𝖓𝖟, commandHandler);
             }
             catch (err) {
                 console.log(chalk_1.default.red("❌𝐄𝐫𝐫𝐨𝐫: ", err));
@@ -96,7 +161,7 @@ ${AʀƈȶɨӼ.commandName} command executed.`));
         //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
         try {
             yield command
-                .handle(TUF, Fox, AʀƈȶɨӼ, ǟʀɢʊʍɛռȶ, ӄʀʏȶɛӄ)
+                .handle(TUF, Fox, AʀƈȶɨӼ, ǟʀɢʊʍɛռȶ, ӄ𝖗𝖞ӄ𝖓𝖟)
                 .catch((err) => console.log("❌𝐄𝐫𝐫𝐨𝐫: " + err));
         }
         catch (err) {
