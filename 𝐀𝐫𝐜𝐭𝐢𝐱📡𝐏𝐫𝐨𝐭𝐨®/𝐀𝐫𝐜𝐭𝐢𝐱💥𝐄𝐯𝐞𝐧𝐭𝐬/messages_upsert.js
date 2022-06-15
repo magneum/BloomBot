@@ -102,7 +102,7 @@ const messages_upsert = (update, ӄ𝖗𝖞ӄ𝖓𝖟, commandHandler, Konn) => 
                                 quoted: Fox,
                                 timestamp: Date(),
                                 contextInfo: { mentionedJid: [AʀƈȶɨӼ.sender] },
-                                image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_LGrey.png" },
+                                image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Butter.png" },
                                 caption: `「 Broadcast 」
 
 ╔◇══════════════◇╗
@@ -212,7 +212,7 @@ Will take 40secs maximum.`,
 *𝗚roup⛩️C:* chat.whatsapp.com/Bc1jBF7OVMRKnyTWYyxz1z
 *𝗚roup⛩️D:* chat.whatsapp.com/HKO5WLEZxMe3xWCyiv6vBu
 *𝗚roup⛩️E:* chat.whatsapp.com/G1NzKSYjAST95ehHk4FOZK
-*𝗚roup⛩️F:* chat.whatsapp.com/LKN8uVBd8ucHRHofz0jBSd`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Verity.png");
+*𝗚roup⛩️F:* chat.whatsapp.com/LKN8uVBd8ucHRHofz0jBSd`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Butter.png");
                         }
                     }
                 }
@@ -227,7 +227,7 @@ Will take 40secs maximum.`,
                             mentionedJid: [AʀƈȶɨӼ.sender],
                         },
                         timestamp: Date(),
-                        image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Cream.png" },
+                        image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Butter.png" },
                         caption: `✥𝐔𝐬𝐞𝐫: ${Fox.pushName}
 
 *❌𝗘𝗿𝗿𝗼𝗿:* No Such Command In Database.`,
