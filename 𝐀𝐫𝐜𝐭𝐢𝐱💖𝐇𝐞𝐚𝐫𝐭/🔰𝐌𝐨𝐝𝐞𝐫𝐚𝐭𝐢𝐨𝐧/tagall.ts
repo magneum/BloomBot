@@ -64,7 +64,7 @@ jidNormalizedUser(AʀƈȶɨӼ.chatId)
 }
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 if (ǟʀɢʊʍɛռȶ || ǟʀɢʊʍɛռȶ.length) {
-tag_message = MEMBER_A;
+tag_message = MEMBER_A.toString().replace(/[^0-9]/g, "");
 } else {
 tag_message = " Everyone, may i get your attention please!";
 }
@@ -91,11 +91,6 @@ headerType: 4,
 MessageType.buttonsMessage,
 {
 contextInfo: {
-stanzaId: AʀƈȶɨӼ.replyMessageId,
-participant: AʀƈȶɨӼ.replyParticipant,
-quotedMessage: {
-conversation: AʀƈȶɨӼ.replyMessage,
-},
 mentionedJid: MEMBER_A,
 },
 }
