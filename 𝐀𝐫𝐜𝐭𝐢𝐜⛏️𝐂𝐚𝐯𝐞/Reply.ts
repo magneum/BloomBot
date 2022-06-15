@@ -40,12 +40,12 @@ console.log(Kolor.cyan("Received REPLY request"));
 await TUF.getGroupMetaData(AʀƈȶɨӼ.chatId, AʀƈȶɨӼ);
 const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
+var REPLIED_RAW = Fox.message.extendedTextMessage.contextInfo.participant;
 const MoneyLaptop = Math.floor(Math.random() * (4000 - 3000 + 1)) + 3000;
 const MoneyRandom = Math.floor(Math.random() * (2000 - 1500 + 1)) + 1500;
 const MoneyCharm = Math.floor(Math.random() * (6000 - 5000 + 1)) + 5000;
 const MoneySword = Math.floor(Math.random() * (2000 - 1000 + 1)) + 1000;
-var Receiver = Fox.message.extendedTextMessage.contextInfo.participant;
-var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
+var REPLIED = REPLIED_RAW.substring(0, REPLIED_RAW.length - 15);
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 await Economy.findOne(
 {
@@ -55,13 +55,13 @@ async (error: any, cEconomy: any) => {
 if (error) return Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error);
 await Economy.findOne(
 {
-ID: Receiver,
+ID: REPLIED_RAW,
 },
 async (error: any, vEconomy: any) => {
 if (error) return Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error);
 if (!vEconomy) {
 var newUser = new Economy({
-ID: Receiver,
+ID: REPLIED_RAW,
 money: 0,
 daily: 0,
 timeout: 86400000,
@@ -83,7 +83,7 @@ AʀƈȶɨӼ,
 ╚◇══════════════◇╝
 
 🪄𝐁𝐚𝐧𝐤 𝗦𝗮𝗳𝗲𝘁𝘆: _1/4 used_
-❌𝗘𝗿𝗿𝗼𝗿: @${քɛʀֆօռɢօȶռʊʍ}'s Bank Guard Caught You and Took You To The Jail!
+❌𝗘𝗿𝗿𝗼𝗿: @${REPLIED}'s Bank Guard Caught You and Took You To The Jail!
 💡‍𝐒𝐭𝐚𝐭𝐮𝐬: _You Got Arrested and Took 0gold.ReTry Again!_`,
 "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Black.png"
 );
@@ -142,7 +142,7 @@ AʀƈȶɨӼ,
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇══════════════◇╝
 
-*@${քɛʀֆօռɢօȶռʊʍ}*
+*@${REPLIED}*
 ❌ 𝗘𝗿𝗿𝗼𝗿:  _needs atleast 1000gold in their account before you can rob them!_
 🍌‍ 𝗥𝗲𝗮𝘀𝗼𝗻: _Broke AF! Leave This Begger Alone!_`,
 "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Black.png"
@@ -157,13 +157,13 @@ async (error: any, culprit: any) => {
 if (error) return Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error);
 Robbery.findOne(
 {
-ID: Receiver,
+ID: REPLIED_RAW,
 },
 async (error: any, victim: any) => {
 if (error) return Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error);
 if (!victim) {
 var newUser = new Robbery({
-ID: Receiver,
+ID: REPLIED_RAW,
 sword: 0,
 laptop: 0,
 charm: 0,
@@ -191,7 +191,7 @@ AʀƈȶɨӼ,
 ╚◇══════════════◇╝
 
 🪄𝐁𝐚𝐧𝐤 𝗦𝗮𝗳𝗲𝘁𝘆: _3/4 used_
-❌𝗘𝗿𝗿𝗼𝗿: @${քɛʀֆօռɢօȶռʊʍ}'s Bank Police Caught You and Took You To The Jail!
+❌𝗘𝗿𝗿𝗼𝗿: @${REPLIED}'s Bank Police Caught You and Took You To The Jail!
 💡‍𝐒𝐭𝐚𝐭𝐮𝐬: _You Got Arrested and Took ${MoneyRandom}gold!_
 
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲
@@ -229,7 +229,7 @@ AʀƈȶɨӼ,
 ╚◇══════════════◇╝
 
 🪄𝐁𝐚𝐧𝐤 𝗦𝗮𝗳𝗲𝘁𝘆: _4/4 used_
-❌𝗘𝗿𝗿𝗼𝗿: @${քɛʀֆօռɢօȶռʊʍ} _caught You Red Handed and Sent You To The Jail!_
+❌𝗘𝗿𝗿𝗼𝗿: @${REPLIED} _caught You Red Handed and Sent You To The Jail!_
 💡‍𝐒𝐭𝐚𝐭𝐮𝐬: _You Got Arrested and Took ${MoneyRandom}gold!_
 
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲
@@ -301,12 +301,12 @@ AʀƈȶɨӼ,
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇══════════════◇╝
 
-❌𝗘𝗿𝗿𝗼𝗿: @${քɛʀֆօռɢօȶռʊʍ} _had a powerful ⚔️sword that killed you!_
+❌𝗘𝗿𝗿𝗼𝗿: @${REPLIED} _had a powerful ⚔️sword that killed you!_
 💡‍𝐒𝐭𝐚𝐭𝐮𝐬: You Got Arrested!
 
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲 
 🥸𝐂𝐮𝐥𝐩𝐫𝐢𝐭: @${ᴘɴᴀᴍᴇ}, _${cEconomy.money}🪙_
-💀𝐕𝐢𝐜𝐭𝐢𝐦: @${քɛʀֆօռɢօȶռʊʍ}, _${vEconomy.money}🪙_`,
+💀𝐕𝐢𝐜𝐭𝐢𝐦: @${REPLIED}, _${vEconomy.money}🪙_`,
 "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Black.png"
 );
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
@@ -349,12 +349,12 @@ AʀƈȶɨӼ,
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇══════════════◇╝
 
-❌𝗘𝗿𝗿𝗼𝗿: @${քɛʀֆօռɢօȶռʊʍ} _had a 💻laptop that caught you digitally-robbing!_
+❌𝗘𝗿𝗿𝗼𝗿: @${REPLIED} _had a 💻laptop that caught you digitally-robbing!_
 💡‍𝐒𝐭𝐚𝐭𝐮𝐬: _You Got Arrested!_
 
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲 
 🥸𝐂𝐮𝐥𝐩𝐫𝐢𝐭: @${ᴘɴᴀᴍᴇ}, _${cEconomy.money}🪙_
-💀𝐕𝐢𝐜𝐭𝐢𝐦: @${քɛʀֆօռɢօȶռʊʍ}, _${vEconomy.money}🪙_`,
+💀𝐕𝐢𝐜𝐭𝐢𝐦: @${REPLIED}, _${vEconomy.money}🪙_`,
 "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Black.png"
 );
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
@@ -397,12 +397,12 @@ AʀƈȶɨӼ,
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇══════════════◇╝
 
-❌𝗘𝗿𝗿𝗼𝗿: @${քɛʀֆօռɢօȶռʊʍ} had a 🔮charm that magically saved their bank!
+❌𝗘𝗿𝗿𝗼𝗿: @${REPLIED} had a 🔮charm that magically saved their bank!
 💡‍𝐒𝐭𝐚𝐭𝐮𝐬: _You Got Arrested!_
 
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲 
 🥸𝐂𝐮𝐥𝐩𝐫𝐢𝐭: @${ᴘɴᴀᴍᴇ}, _${cEconomy.money}🪙_
-💀𝐕𝐢𝐜𝐭𝐢𝐦: @${քɛʀֆօռɢօȶռʊʍ}, _${vEconomy.money}🪙_`,
+💀𝐕𝐢𝐜𝐭𝐢𝐦: @${REPLIED}, _${vEconomy.money}🪙_`,
 "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Black.png"
 );
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
@@ -430,11 +430,11 @@ AʀƈȶɨӼ,
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇══════════════◇╝
 
-🔓𝐒𝐭𝐚𝐭𝐮𝐬: @${քɛʀֆօռɢօȶռʊʍ} _Got Robbed!_
+🔓𝐒𝐭𝐚𝐭𝐮𝐬: @${REPLIED} _Got Robbed!_
 👑𝗔𝗺𝗼𝘂𝗻𝘁: *Seems Like The Victim Had Gold<1000. _You Got All Their Golds ${
 vEconomy.money
 }!*_
-⚰️𝗥𝗲𝗮𝘀𝗼𝗻: _Didn't have any safety stuffs. @${քɛʀֆօռɢօȶռʊʍ}, visit ${
+⚰️𝗥𝗲𝗮𝘀𝗼𝗻: _Didn't have any safety stuffs. @${REPLIED}, visit ${
 ʟᴀʏᴏᴜᴛ.MuveOn
 }shop ASAP._
 
@@ -442,7 +442,7 @@ vEconomy.money
 ❓𝗕𝗲𝗳𝗼𝗿𝗲: _${cEconomy.money}🪙_
 💸𝗔𝗳𝘁𝗲𝗿: _${cEconomy.money + MoneyRandom}🪙_
 
-💀𝐕𝐢𝐜𝐭𝐢𝐦: @${քɛʀֆօռɢօȶռʊʍ}
+💀𝐕𝐢𝐜𝐭𝐢𝐦: @${REPLIED}
 ❓𝗕𝗲𝗳𝗼𝗿𝗲: _${vEconomy.money}🪙_
 🥲𝗔𝗳𝘁𝗲𝗿: _${vEconomy.money - MoneyRandom}🪙_`,
 "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Black.png"
@@ -471,9 +471,9 @@ AʀƈȶɨӼ,
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇══════════════◇╝
 
-🔓𝐒𝐭𝐚𝐭𝐮𝐬: @${քɛʀֆօռɢօȶռʊʍ} _Got Robbed!_
+🔓𝐒𝐭𝐚𝐭𝐮𝐬: @${REPLIED} _Got Robbed!_
 👑𝗔𝗺𝗼𝘂𝗻𝘁: You Got _${MoneyRandom}🪙_
-⚰️𝗥𝗲𝗮𝘀𝗼𝗻: _Didn't have any safety stuffs. @${քɛʀֆօռɢօȶռʊʍ}, visit ${
+⚰️𝗥𝗲𝗮𝘀𝗼𝗻: _Didn't have any safety stuffs. @${REPLIED}, visit ${
 ʟᴀʏᴏᴜᴛ.MuveOn
 }shop ASAP._
 
@@ -481,7 +481,7 @@ AʀƈȶɨӼ,
 ❓𝗕𝗲𝗳𝗼𝗿𝗲: _${cEconomy.money}🪙_
 💸𝗔𝗳𝘁𝗲𝗿: _${cEconomy.money + MoneyRandom}🪙_
 
-💀𝐕𝐢𝐜𝐭𝐢𝐦: @${քɛʀֆօռɢօȶռʊʍ}
+💀𝐕𝐢𝐜𝐭𝐢𝐦: @${REPLIED}
 ❓𝗕𝗲𝗳𝗼𝗿𝗲: _${vEconomy.money}🪙_
 🥲𝗔𝗳𝘁𝗲𝗿: _${vEconomy.money - MoneyRandom}🪙_`,
 "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Black.png"
