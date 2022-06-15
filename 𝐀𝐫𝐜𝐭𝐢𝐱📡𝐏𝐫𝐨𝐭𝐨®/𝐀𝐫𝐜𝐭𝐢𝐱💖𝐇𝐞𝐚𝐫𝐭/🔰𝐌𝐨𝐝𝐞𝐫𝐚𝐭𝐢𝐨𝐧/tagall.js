@@ -47,6 +47,7 @@ module.exports = {
                     return Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `❌𝐃𝐞𝐧𝐢𝐞𝐝: _This Command is Only For Groups!_`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Denied.png");
                 }
                 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
+                let tag_message;
                 let MEMBER_A = [];
                 const MetaFor_A = yield ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata(AʀƈȶɨӼ.chatId);
                 for (var i = 0; i < MetaFor_A.participants.length; i++)
@@ -59,100 +60,40 @@ module.exports = {
                     𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Gold.png";
                 }
                 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-                if (!ǟʀɢʊʍɛռȶ) {
-                    yield TUF.sendMessage(AʀƈȶɨӼ.chatId, {
-                        quoted: Fox.message,
-                        contextInfo: {
-                            mentionedJid: AʀƈȶɨӼ.groupAdmins,
-                        },
-                        timestamp: Date(),
-                        image: { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 },
-                        caption: `⚡ 𝐅𝐫𝐨𝐦: ${Fox.pushName}`,
-                        footer: `⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔`,
-                        buttons: [
-                            {
-                                buttonId: `${______1.default.MuveOn}help`,
-                                buttonText: { displayText: `${______1.default.MuveOn}help` },
-                                type: 1,
-                            },
-                        ],
-                        headerType: 4,
-                    }, message_type_1.MessageType.buttonsMessage, {
-                        contextInfo: {
-                            stanzaId: AʀƈȶɨӼ.replyMessageId,
-                            participant: AʀƈȶɨӼ.replyParticipant,
-                            quotedMessage: {
-                                conversation: AʀƈȶɨӼ.replyMessage,
-                            },
-                            mentionedJid: MEMBER_A,
-                        },
-                    });
-                    return;
-                    //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-                }
-                else if (ǟʀɢʊʍɛռȶ.length) {
-                    yield TUF.sendMessage(AʀƈȶɨӼ.chatId, {
-                        quoted: Fox.message,
-                        contextInfo: {
-                            mentionedJid: AʀƈȶɨӼ.groupAdmins,
-                        },
-                        timestamp: Date(),
-                        image: { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 },
-                        caption: `⚡ 𝐅𝐫𝐨𝐦: ${Fox.pushName}
-
-${ǟʀɢʊʍɛռȶ.join(" ")}`,
-                        footer: `⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔`,
-                        buttons: [
-                            {
-                                buttonId: `${______1.default.MuveOn}help`,
-                                buttonText: { displayText: `${______1.default.MuveOn}help` },
-                                type: 1,
-                            },
-                        ],
-                        headerType: 4,
-                    }, message_type_1.MessageType.buttonsMessage, {
-                        contextInfo: {
-                            stanzaId: AʀƈȶɨӼ.replyMessageId,
-                            participant: AʀƈȶɨӼ.replyParticipant,
-                            quotedMessage: {
-                                conversation: AʀƈȶɨӼ.replyMessage,
-                            },
-                            mentionedJid: MEMBER_A,
-                        },
-                    });
-                    return;
-                    //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
+                if (ǟʀɢʊʍɛռȶ || ǟʀɢʊʍɛռȶ.length) {
+                    tag_message = MEMBER_A;
                 }
                 else {
-                    yield TUF.sendMessage(AʀƈȶɨӼ.chatId, {
-                        quoted: Fox.message,
-                        contextInfo: {
-                            mentionedJid: AʀƈȶɨӼ.groupAdmins,
-                        },
-                        timestamp: Date(),
-                        image: { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 },
-                        caption: `⚡ 𝐅𝐫𝐨𝐦: ${Fox.pushName}`,
-                        footer: `⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔`,
-                        buttons: [
-                            {
-                                buttonId: `${______1.default.MuveOn}help`,
-                                buttonText: { displayText: `${______1.default.MuveOn}help` },
-                                type: 1,
-                            },
-                        ],
-                        headerType: 4,
-                    }, message_type_1.MessageType.buttonsMessage, {
-                        contextInfo: {
-                            stanzaId: AʀƈȶɨӼ.replyMessageId,
-                            participant: AʀƈȶɨӼ.replyParticipant,
-                            quotedMessage: {
-                                conversation: AʀƈȶɨӼ.replyMessage,
-                            },
-                            mentionedJid: MEMBER_A,
-                        },
-                    });
-                    return;
+                    tag_message = " Everyone, may i get your attention please!";
                 }
+                yield TUF.sendMessage(AʀƈȶɨӼ.chatId, {
+                    quoted: Fox.message,
+                    contextInfo: {
+                        mentionedJid: AʀƈȶɨӼ.groupAdmins,
+                    },
+                    timestamp: Date(),
+                    image: { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 },
+                    caption: `⚡ 𝐅𝐫𝐨𝐦: ${Fox.pushName}\n\n${tag_message}`,
+                    footer: `⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔`,
+                    buttons: [
+                        {
+                            buttonId: `${______1.default.MuveOn}help`,
+                            buttonText: { displayText: `${______1.default.MuveOn}help` },
+                            type: 1,
+                        },
+                    ],
+                    headerType: 4,
+                }, message_type_1.MessageType.buttonsMessage, {
+                    contextInfo: {
+                        stanzaId: AʀƈȶɨӼ.replyMessageId,
+                        participant: AʀƈȶɨӼ.replyParticipant,
+                        quotedMessage: {
+                            conversation: AʀƈȶɨӼ.replyMessage,
+                        },
+                        mentionedJid: MEMBER_A,
+                    },
+                });
+                return;
                 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
             }
             catch (error) {
