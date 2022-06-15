@@ -36,11 +36,6 @@ buttonText: { displayText: `${ʟᴀʏᴏᴜᴛ.MuveOn}help` },
 type: 1,
 },
 {
-buttonId: `${ʟᴀʏᴏᴜᴛ.MuveOn}menu`,
-buttonText: { displayText: `${ʟᴀʏᴏᴜᴛ.MuveOn}menu` },
-type: 1,
-},
-{
 buttonId: `${ʟᴀʏᴏᴜᴛ.MuveOn}support`,
 buttonText: { displayText: `${ʟᴀʏᴏᴜᴛ.MuveOn}support` },
 type: 1,
