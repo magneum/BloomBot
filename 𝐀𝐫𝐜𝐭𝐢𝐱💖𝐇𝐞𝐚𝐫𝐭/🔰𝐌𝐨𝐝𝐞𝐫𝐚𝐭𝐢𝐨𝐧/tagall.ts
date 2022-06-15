@@ -49,11 +49,11 @@ AʀƈȶɨӼ,
 );
 }
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-let members = [];
-for (var i = 0; i < AʀƈȶɨӼ.groupMembers.length; i++) {
-members[i] = AʀƈȶɨӼ.groupMembers[i].id;
-}
-let 𝕻𝕻𝖑𝖊𝖙𝖊𝖗;
+let MEMBER_A = [];
+const MetaFor_A = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata(AʀƈȶɨӼ.chatId);
+for (var i = 0; i < MetaFor_A.participants.length; i++)
+MEMBER_A[i] = MetaFor_A.participants[i].id;
+let 𝕻𝕻𝖑𝖊𝖙𝖊𝖗: any;
 try {
 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄ𝖗𝖞ӄ𝖓𝖟.profilePictureUrl(
 jidNormalizedUser(AʀƈȶɨӼ.chatId)
@@ -63,11 +63,6 @@ jidNormalizedUser(AʀƈȶɨӼ.chatId)
 }
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 if (!ǟʀɢʊʍɛռȶ) {
-var message = " ";
-for (var i = 0; i < AʀƈȶɨӼ.groupMembers.length; i++) {
-members[i] = AʀƈȶɨӼ.groupMembers[i].id;
-message += `@${members}\n`;
-}
 await TUF.sendMessage(
 AʀƈȶɨӼ.chatId,
 {
@@ -77,9 +72,7 @@ mentionedJid: AʀƈȶɨӼ.groupAdmins,
 },
 timestamp: Date(),
 image: { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 },
-caption: `⚡ 𝐅𝐫𝐨𝐦: ${Fox.pushName}
-
-${message}`,
+caption: `⚡ 𝐅𝐫𝐨𝐦: ${Fox.pushName}`,
 footer: `⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔`,
 buttons: [
 {
@@ -98,7 +91,7 @@ participant: AʀƈȶɨӼ.replyParticipant,
 quotedMessage: {
 conversation: AʀƈȶɨӼ.replyMessage,
 },
-mentionedJid: members,
+mentionedJid: MEMBER_A,
 },
 }
 );
@@ -135,18 +128,13 @@ participant: AʀƈȶɨӼ.replyParticipant,
 quotedMessage: {
 conversation: AʀƈȶɨӼ.replyMessage,
 },
-mentionedJid: members,
+mentionedJid: MEMBER_A,
 },
 }
 );
 return;
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 } else {
-var message = " ";
-for (var i = 0; i < AʀƈȶɨӼ.groupMembers.length; i++) {
-members[i] = AʀƈȶɨӼ.groupMembers[i].id;
-message += `@${members}\n`;
-}
 await TUF.sendMessage(
 AʀƈȶɨӼ.chatId,
 {
@@ -156,9 +144,7 @@ mentionedJid: AʀƈȶɨӼ.groupAdmins,
 },
 timestamp: Date(),
 image: { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 },
-caption: `⚡ 𝐅𝐫𝐨𝐦: ${Fox.pushName}
-
-${message}`,
+caption: `⚡ 𝐅𝐫𝐨𝐦: ${Fox.pushName}`,
 footer: `⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔`,
 buttons: [
 {
@@ -177,7 +163,7 @@ participant: AʀƈȶɨӼ.replyParticipant,
 quotedMessage: {
 conversation: AʀƈȶɨӼ.replyMessage,
 },
-mentionedJid: members,
+mentionedJid: MEMBER_A,
 },
 }
 );

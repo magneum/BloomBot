@@ -19,16 +19,16 @@ const Downloader = require(`nodejs-file-downloader`);
 import Client from "../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/TUF";
 import ʟᴀʏᴏᴜᴛ from "../𝐀𝐫𝐜𝐭𝐢𝐱🀄𝐕𝐞𝐧𝐭/ʟᴀʏᴏᴜᴛ";
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-const participants_update = async (update: any, ӄʀʏȶɛӄ: any): Promise<void> => {
-let client: Client = new Client(ӄʀʏȶɛӄ);
-const MemNum = update.participants[0];
-if (update.action == `add` && MemNum.includes(ӄʀʏȶɛӄ.user.id)) {
+const participants_update = async (update: any, ӄ𝖗𝖞ӄ𝖓𝖟: any): Promise<void> => {
+let client: Client = new Client(ӄ𝖗𝖞ӄ𝖓𝖟);
+const Member_Info = update.participants[0];
+if (update.action == `add` && Member_Info.includes(ӄ𝖗𝖞ӄ𝖓𝖟.user.id)) {
 await client.sendMessage(
 update.id,
 {
 timestamp: Date(),
-image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Black.png" },
-caption: `👋🏻𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚, Some Of Your Members Requested Our Valkyrie HQ to Add Our Bot In This Group.Have Fun!
+image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Gold.png" },
+caption: `*👋🏻Some Of Your Members Requested Our Arctix HQ to Add Our Bot In This Group.*
 
 
 ╔⧉༻ ⭕𝐅𝐨𝐫 𝐀𝐝𝐦𝐢𝐧𝐬 ꧂
@@ -37,8 +37,8 @@ caption: `👋🏻𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚, Some Of Your Members
 ╚════════════╝
 
 ╔⧉༻ 🧀 𝐃𝐞𝐟𝐚𝐮𝐥𝐭 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬! ꧂
-║◇ *${ʟᴀʏᴏᴜᴛ.MuveOn}help:* _commands of Valkyrie!_
-║◇ *${ʟᴀʏᴏᴜᴛ.MuveOn}rules:* _rules of Valkyrie!_
+║◇ *${ʟᴀʏᴏᴜᴛ.MuveOn}help:* _commands of Arctix!_
+║◇ *${ʟᴀʏᴏᴜᴛ.MuveOn}support:* _official arctix groups!_
 ╚════════════╝`,
 footer: `⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔`,
 buttons: [
@@ -57,23 +57,25 @@ headerType: 4,
 },
 MessageType.buttonsMessage
 );
-Welcome.findOne(
+await Welcome.findOne(
 {
 ID: update.id,
 },
-async (error, userWel) => {
+async (error: any, userWel: any) => {
 if (error) console.log(error);
 if (!userWel) {
 var newServer = new Welcome({
 ID: update.id,
 message: "❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞",
 });
-await newServer.save().catch((error) => console.log(error));
+await newServer.save().catch((error: any) => console.log(error));
+} else {
+console.log("data already saved!");
 }
 }
 );
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-} else if (update.action == `add` && !MemNum.includes(ӄʀʏȶɛӄ.user.id)) {
+} else if (update.action == `add` && !Member_Info.includes(ӄ𝖗𝖞ӄ𝖓𝖟.user.id)) {
 Welcome.findOne(
 {
 ID: update.id,
@@ -86,8 +88,8 @@ return;
 try {
 let 𝕻𝕻𝖑𝖊𝖙𝖊𝖗: string;
 try {
-𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄʀʏȶɛӄ.profilePictureUrl(
-jidNormalizedUser(`${MemNum.split("@")[0]}@c.us`)
+𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄ𝖗𝖞ӄ𝖓𝖟.profilePictureUrl(
+jidNormalizedUser(`${Member_Info.split("@")[0]}@c.us`)
 );
 } catch {
 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 =
@@ -100,13 +102,13 @@ fileName: `${Date.now().toString()}.png`,
 cloneFiles: false,
 });
 await downloader.download();
-const GroupMemData = await ӄʀʏȶɛӄ.groupMetadata(update.jid);
+const GroupMemData = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata(update.jid);
 const GroupMemG = GroupMemData.participants.length;
-const GroupMemBio = await ӄʀʏȶɛӄ.getStatus(
+const GroupMemBio = await ӄ𝖗𝖞ӄ𝖓𝖟.getStatus(
 update.participants[0],
 MessageType.text
 );
-const ᴘᴘᴡᴇʟᴄᴏᴍᴇ = MemNum.replace(/[^\d-]/g, "");
+const ᴘᴘᴡᴇʟᴄᴏᴍᴇ = Member_Info.replace(/[^\d-]/g, "");
 await client.sendMessage(
 update.id,
 {
