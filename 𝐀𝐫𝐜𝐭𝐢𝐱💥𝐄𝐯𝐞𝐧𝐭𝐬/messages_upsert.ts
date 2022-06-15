@@ -66,7 +66,7 @@ AʀƈȶɨӼ.chatId,
 quoted: Fox,
 timestamp: Date(),
 contextInfo: { mentionedJid: [AʀƈȶɨӼ.sender] },
-image: { url: "AʀƈȶɨӼ_LGrey.png" },
+image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_LGrey.png" },
 caption: `「 Broadcast 」
 
 ╔◇══════════════◇╗
