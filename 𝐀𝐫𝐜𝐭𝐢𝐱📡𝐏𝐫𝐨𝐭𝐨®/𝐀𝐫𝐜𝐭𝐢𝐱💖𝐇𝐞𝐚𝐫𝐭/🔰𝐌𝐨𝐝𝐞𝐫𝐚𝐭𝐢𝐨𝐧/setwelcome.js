@@ -29,8 +29,6 @@ const NsfwList = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧�
 const BanGroup = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/ban`);
 const Bagde = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/badge`);
 const Halt = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/halt`);
-//" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-const baileys_1 = require("@adiwajshing/baileys");
 const VOID = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/void`);
 const Oops = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱☘️𝐊𝐞𝐲𝐬/Oops`);
 const ______1 = __importDefault(require("../../\uD835\uDC00\uD835\uDC2B\uD835\uDC1C\uD835\uDC2D\uD835\uDC22\uD835\uDC31\uD83C\uDC04\uD835\uDC15\uD835\uDC1E\uD835\uDC27\uD835\uDC2D/\u029F\u1D00\u028F\u1D0F\u1D1C\u1D1B"));
@@ -74,7 +72,7 @@ module.exports = {
                     if (error)
                         return Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error);
                     try {
-                        𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = yield ӄ𝖗𝖞ӄ𝖓𝖟.profilePictureUrl((0, baileys_1.jidNormalizedUser)(AʀƈȶɨӼ.chatId));
+                        𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = yield ӄ𝖗𝖞ӄ𝖓𝖟.profilePictureUrl(AʀƈȶɨӼ.sender, "image");
                     }
                     catch (_a) {
                         𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Gold.png";

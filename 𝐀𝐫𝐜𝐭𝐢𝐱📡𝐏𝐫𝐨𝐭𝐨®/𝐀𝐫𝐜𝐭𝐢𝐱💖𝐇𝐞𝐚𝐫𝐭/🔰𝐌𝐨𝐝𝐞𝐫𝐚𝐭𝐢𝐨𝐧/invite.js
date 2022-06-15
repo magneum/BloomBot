@@ -32,7 +32,6 @@ const Halt = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞�
 const ______1 = __importDefault(require("../../\uD835\uDC00\uD835\uDC2B\uD835\uDC1C\uD835\uDC2D\uD835\uDC22\uD835\uDC31\uD83C\uDC04\uD835\uDC15\uD835\uDC1E\uD835\uDC27\uD835\uDC2D/\u029F\u1D00\u028F\u1D0F\u1D1C\u1D1B"));
 const Oops = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱☘️𝐊𝐞𝐲𝐬/Oops`);
 const VOID = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/void`);
-const baileys_1 = require("@adiwajshing/baileys");
 const path_1 = __importDefault(require("path"));
 var scriptName = path_1.default.basename(__filename);
 var dotScrpt = scriptName.slice(0, -3).toLowerCase();
@@ -65,7 +64,7 @@ module.exports = {
                 var groupData = yield ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata(Fox.key.remoteJid);
                 let 𝕻𝕻𝖑𝖊𝖙𝖊𝖗;
                 try {
-                    𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = yield ӄ𝖗𝖞ӄ𝖓𝖟.profilePictureUrl((0, baileys_1.jidNormalizedUser)(AʀƈȶɨӼ.chatId));
+                    𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = yield ӄ𝖗𝖞ӄ𝖓𝖟.profilePictureUrl(AʀƈȶɨӼ.sender, "image");
                 }
                 catch (_a) {
                     𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Gold.png";

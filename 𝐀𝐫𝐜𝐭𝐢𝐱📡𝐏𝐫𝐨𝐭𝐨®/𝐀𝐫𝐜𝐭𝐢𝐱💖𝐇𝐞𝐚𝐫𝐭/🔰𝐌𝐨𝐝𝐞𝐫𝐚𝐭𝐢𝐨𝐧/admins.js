@@ -18,8 +18,6 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 const message_type_1 = require("../../\uD835\uDC00\uD835\uDC2B\uD835\uDC1C\uD835\uDC2D\uD835\uDC22\uD835\uDC31\u269C\uFE0F\uD835\uDC0A\uD835\uDC2B\uD835\uDC32\uD835\uDC28\uD835\uDC13\uD835\uDC1E\uD835\uDC24/message-type");
 const Text_List_1 = __importDefault(require("../../\uD835\uDC00\uD835\uDC2B\uD835\uDC1C\uD835\uDC2D\uD835\uDC22\uD835\uDC31\u2618\uFE0F\uD835\uDC0A\uD835\uDC1E\uD835\uDC32\uD835\uDC2C/Text_List"));
-//" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-const baileys_1 = require("@adiwajshing/baileys");
 const Oops = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱☘️𝐊𝐞𝐲𝐬/Oops`);
 const ______1 = __importDefault(require("../../\uD835\uDC00\uD835\uDC2B\uD835\uDC1C\uD835\uDC2D\uD835\uDC22\uD835\uDC31\uD83C\uDC04\uD835\uDC15\uD835\uDC1E\uD835\uDC27\uD835\uDC2D/\u029F\u1D00\u028F\u1D0F\u1D1C\u1D1B"));
 const VOID = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/void`);
@@ -50,7 +48,7 @@ module.exports = {
                 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
                 let 𝕻𝕻𝖑𝖊𝖙𝖊𝖗;
                 try {
-                    𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = yield ӄ𝖗𝖞ӄ𝖓𝖟.profilePictureUrl((0, baileys_1.jidNormalizedUser)(AʀƈȶɨӼ.chatId));
+                    𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = yield ӄ𝖗𝖞ӄ𝖓𝖟.profilePictureUrl(AʀƈȶɨӼ.sender, "image");
                 }
                 catch (_a) {
                     𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Gold.png";

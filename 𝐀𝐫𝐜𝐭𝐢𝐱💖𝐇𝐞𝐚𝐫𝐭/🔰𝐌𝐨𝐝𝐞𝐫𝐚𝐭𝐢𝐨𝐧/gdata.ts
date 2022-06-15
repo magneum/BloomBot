@@ -52,9 +52,7 @@ const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀ
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 let 𝕻𝕻𝖑𝖊𝖙𝖊𝖗: string;
 try {
-𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄ𝖗𝖞ӄ𝖓𝖟.profilePictureUrl(
-jidNormalizedUser(AʀƈȶɨӼ.chatId)
-);
+𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄ𝖗𝖞ӄ𝖓𝖟.profilePictureUrl(AʀƈȶɨӼ.sender, "image");
 } catch {
 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Gold.png";
 }

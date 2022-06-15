@@ -76,9 +76,7 @@ for (var i = 0; i < MetaFor_A.participants.length; i++)
 MEMBER_A[i] = MetaFor_A.participants[i].id;
 let 𝕻𝕻𝖑𝖊𝖙𝖊𝖗: any;
 try {
-𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄ𝖗𝖞ӄ𝖓𝖟.profilePictureUrl(
-jidNormalizedUser(AʀƈȶɨӼ.chatId)
-);
+𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄ𝖗𝖞ӄ𝖓𝖟.profilePictureUrl(AʀƈȶɨӼ.sender, "image");
 } catch {
 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Gold.png";
 }
