@@ -11,7 +11,6 @@ proto,
 SignalDataSet,
 SignalDataTypeMap,
 } from "@adiwajshing/baileys";
-import chalk from "chalk";
 import type { Logger } from "pino";
 import { Cred, Key } from "../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🕸️sql/auth";
 const KEY_MAP: { [T in keyof SignalDataTypeMap]: string } = {
@@ -90,18 +89,14 @@ await cred
 value: JSON.stringify(data[_key], BufferJSON.replacer, 2),
 })
 .then((res) => {})
-.catch((err) => {
-console.log(chalk.whiteBright(err));
-});
+.catch((err) => {});
 } else {
 await Cred.create({
 key: _key,
 value: JSON.stringify(data[_key], BufferJSON.replacer, 2),
 })
 .then((res) => {})
-.catch((err) => {
-console.log(chalk.whiteBright(err));
-});
+.catch((err) => {});
 }
 }
 };
@@ -124,9 +119,7 @@ await res
 value: JSON.stringify(data[_key][subKey], BufferJSON.replacer, 2),
 })
 .then((res) => {})
-.catch((err) => {
-console.log(chalk.blueBright(err));
-});
+.catch((err) => {});
 } else {
 await Key.create({
 key: subKey,
@@ -134,9 +127,7 @@ value: JSON.stringify(data[_key][subKey], BufferJSON.replacer, 2),
 type: key,
 })
 .then((res) => {})
-.catch((err) => {
-console.log(chalk.blueBright(err));
-});
+.catch((err) => {});
 }
 }
 return;
