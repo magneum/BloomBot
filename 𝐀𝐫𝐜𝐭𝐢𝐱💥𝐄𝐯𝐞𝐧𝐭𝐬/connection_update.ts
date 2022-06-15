@@ -38,7 +38,6 @@ chalkAnimation.rainbow("💡𝐈𝐧𝐟𝐨꧂  Connecting to WhatsApp...");
 } else if (connection === "open") {
 chalkAnimation.rainbow("Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 Online!");
 } else {
-console.log("connection update", update);
 }
 };
 export = {
