@@ -39,10 +39,10 @@ const Sticker_Button = (TUF, Fox, AʀƈȶɨӼ, ǟʀɢʊʍɛռȶ, caption, media)
                         type: 1,
                     },
                     {
-                        buttonId: `${______1.default.MuveOn}menu`,
-                        buttonText: { displayText: `${______1.default.MuveOn}menu` },
+                        buttonId: `${______1.default.MuveOn}support`,
+                        buttonText: { displayText: `${______1.default.MuveOn}support` },
                         type: 1,
-                    },
+                    }
                 ],
                 headerType: 5,
             }, message_type_1.MessageType.buttonsMessage);

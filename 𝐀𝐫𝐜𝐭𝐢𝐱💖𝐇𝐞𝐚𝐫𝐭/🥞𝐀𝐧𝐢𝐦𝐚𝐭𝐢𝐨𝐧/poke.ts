@@ -52,16 +52,9 @@ try {
 const ʟɴᴀᴍᴇ = AʀƈȶɨӼ.sender;
 const ᴅꜰɴᴀᴍᴇ = AʀƈȶɨӼ.commandName;
 const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/[^\d+]/g, "");
+await TUF.getGroupMetaData(AʀƈȶɨӼ.chatId, AʀƈȶɨӼ);
 const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-await TUF.getGroupMetaData(AʀƈȶɨӼ.chatId, AʀƈȶɨӼ);
-console.log("💡𝐈𝐧𝐟𝐨: Is Group: " + AʀƈȶɨӼ.isGroup);
-console.log("💡𝐈𝐧𝐟𝐨: Is Bot Group Admin: " + AʀƈȶɨӼ.isBotGroupAdmin);
-console.log(
-"💡𝐈𝐧𝐟𝐨: Is Sender Group Admin: " + AʀƈȶɨӼ.isSenderGroupAdmin
-);
-console.log("💡𝐈𝐧𝐟𝐨: Is Reply Message: " + AʀƈȶɨӼ.replyMessage);
-console.log("💡𝐈𝐧𝐟𝐨: Is Text Reply: " + AʀƈȶɨӼ.isTextReply);
 if (AʀƈȶɨӼ.isTextReply) {
 var Receiver = Fox.message.extendedTextMessage.contextInfo.participant;
 var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);

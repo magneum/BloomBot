@@ -31,6 +31,12 @@ module.exports = {
     category: path_1.default.basename(__dirname),
     handle(TUF, Fox, AʀƈȶɨӼ, ǟʀɢʊʍɛռȶ, ӄ𝖗𝖞ӄ𝖓𝖟) {
         return __awaiter(this, void 0, void 0, function* () {
+            const ʟɴᴀᴍᴇ = AʀƈȶɨӼ.sender;
+            const ᴅꜰɴᴀᴍᴇ = AʀƈȶɨӼ.commandName;
+            const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/[^\d+]/g, "");
+            yield TUF.getGroupMetaData(AʀƈȶɨӼ.chatId, AʀƈȶɨӼ);
+            const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
+            //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
             yield TUF.sendMessage(AʀƈȶɨӼ.chatId, {
                 quoted: Fox,
                 timestamp: Date(),

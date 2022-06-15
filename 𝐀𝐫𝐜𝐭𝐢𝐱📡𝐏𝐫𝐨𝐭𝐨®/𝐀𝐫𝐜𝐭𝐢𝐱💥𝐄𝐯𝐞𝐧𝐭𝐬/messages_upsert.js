@@ -71,11 +71,6 @@ const messages_upsert = (update, ӄ𝖗𝖞ӄ𝖓𝖟, commandHandler) => __awai
                         console.log("📶 𝐕𝐥𝐤𝐲𝐫𝐞 𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐒𝐢𝐠𝐧𝐚𝐥:", chalk_1.default.blue(signal));
                     process.exitCode = 1;
                 });
-            }
-            catch (error) {
-                console.log(chalk_1.default.red(error));
-            }
-            finally {
                 var h𝖛𝖑𝖐𝖕 = require("child_process").exec(`heroku ps:restart worker -a ${______1.default.Heroku_App}`);
                 console.log("🛰️ 𝐓𝐡𝐫𝐞𝐚𝐝 𝐈𝐃:", chalk_1.default.green(h𝖛𝖑𝖐𝖕.pid));
                 h𝖛𝖑𝖐𝖕.stderr.pipe(process.stderr);
@@ -87,7 +82,9 @@ const messages_upsert = (update, ӄ𝖗𝖞ӄ𝖓𝖟, commandHandler) => __awai
                     process.exitCode = 1;
                 });
             }
-            return;
+            catch (error) {
+                console.log(chalk_1.default.red(error));
+            }
         }
         //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
         const command = commandHandler.get(AʀƈȶɨӼ.commandName);

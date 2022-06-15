@@ -8,9 +8,6 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 /*
@@ -18,7 +15,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 */
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 const baileys_1 = require("@adiwajshing/baileys");
-const chalk_1 = __importDefault(require("chalk"));
 const auth_1 = require("../\uD835\uDC00\uD835\uDC2B\uD835\uDC1C\uD835\uDC2D\uD835\uDC22\uD835\uDC31\u2708\uFE0F\uD835\uDC02\uD835\uDC28\uD835\uDC27\uD835\uDC27\uD835\uDC1E\uD835\uDC1C\uD835\uDC2D/\uD83D\uDD78\uFE0Fsql/auth");
 const KEY_MAP = {
     "pre-key": "preKeys",
@@ -94,9 +90,7 @@ const useRemoteFileAuthState = (logger) => __awaiter(void 0, void 0, void 0, fun
                     value: JSON.stringify(data[_key], baileys_1.BufferJSON.replacer, 2),
                 })
                     .then((res) => { })
-                    .catch((err) => {
-                    console.log(chalk_1.default.whiteBright(err));
-                });
+                    .catch((err) => { });
             }
             else {
                 yield auth_1.Cred.create({
@@ -104,9 +98,7 @@ const useRemoteFileAuthState = (logger) => __awaiter(void 0, void 0, void 0, fun
                     value: JSON.stringify(data[_key], baileys_1.BufferJSON.replacer, 2),
                 })
                     .then((res) => { })
-                    .catch((err) => {
-                    console.log(chalk_1.default.whiteBright(err));
-                });
+                    .catch((err) => { });
             }
         }
     });
@@ -125,9 +117,7 @@ const useRemoteFileAuthState = (logger) => __awaiter(void 0, void 0, void 0, fun
                     value: JSON.stringify(data[_key][subKey], baileys_1.BufferJSON.replacer, 2),
                 })
                     .then((res) => { })
-                    .catch((err) => {
-                    console.log(chalk_1.default.blueBright(err));
-                });
+                    .catch((err) => { });
             }
             else {
                 yield auth_1.Key.create({
@@ -136,9 +126,7 @@ const useRemoteFileAuthState = (logger) => __awaiter(void 0, void 0, void 0, fun
                     type: key,
                 })
                     .then((res) => { })
-                    .catch((err) => {
-                    console.log(chalk_1.default.blueBright(err));
-                });
+                    .catch((err) => { });
             }
         }
         return;
