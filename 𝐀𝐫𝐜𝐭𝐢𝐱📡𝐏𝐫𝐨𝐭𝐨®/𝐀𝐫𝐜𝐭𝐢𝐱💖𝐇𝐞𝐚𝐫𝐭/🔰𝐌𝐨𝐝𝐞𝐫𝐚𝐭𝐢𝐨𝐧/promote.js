@@ -94,10 +94,10 @@ Option 2 - ${______1.default.MuveOn}${dotScrpt.toUpperCase()} _tag person_`, dot
                     if (!admin) {
                         const arr = [HOOM + "@s.whatsapp.net"];
                         yield ӄ𝖗𝖞ӄ𝖓𝖟.groupParticipantsUpdate(AʀƈȶɨӼ.chatId, arr, "promote");
-                        return Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `💡𝐈𝐧𝐟𝐨: _${HOOM}_ is promoted to admin!`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Gold.png");
+                        return Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `💡𝐈𝐧𝐟𝐨: _${HOOM}_ is promoted to admin!`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Black_Gold.png");
                     }
                     else {
-                        return Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `❌𝐄𝐫𝐫𝐨𝐫: _${HOOM}_ is already an admin!`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Denied.png");
+                        return Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `❌𝐄𝐫𝐫𝐨𝐫: _${HOOM}_ is already an admin!`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Error.png");
                     }
                 }
                 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
@@ -105,7 +105,7 @@ Option 2 - ${______1.default.MuveOn}${dotScrpt.toUpperCase()} _tag person_`, dot
                     if (HOOM === undefined) {
                         return;
                     }
-                    return Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `❌𝐄𝐫𝐫𝐨𝐫: Person is not in the group!`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Denied.png");
+                    return Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `❌𝐄𝐫𝐫𝐨𝐫: Person is not in the group!`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Error.png");
                 }
                 return;
             }

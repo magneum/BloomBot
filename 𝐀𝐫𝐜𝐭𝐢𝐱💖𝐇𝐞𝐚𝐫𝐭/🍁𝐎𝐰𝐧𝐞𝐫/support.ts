@@ -71,7 +71,7 @@ AʀƈȶɨӼ,
 *𝗚roup⛩️D:* _chat.whatsapp.com/HKO5WLEZxMe3xWCyiv6vBu_
 *𝗚roup⛩️E:* _chat.whatsapp.com/G1NzKSYjAST95ehHk4FOZK_
 *𝗚roup⛩️F:* _chat.whatsapp.com/LKN8uVBd8ucHRHofz0jBSd_`,
-𝐏𝐩𝐢𝐜
+"./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Blue_Grey.png"
 );
 },
 };

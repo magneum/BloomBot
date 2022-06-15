@@ -116,7 +116,7 @@ Jid,
 quoted: Fox,
 timestamp: Date(),
 contextInfo: { mentionedJid: [AʀƈȶɨӼ.sender] },
-image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_LGrey.png" },
+image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Butter.png" },
 caption: `「 Broadcast 」
 
 ╔◇══════════════◇╗
@@ -259,7 +259,7 @@ AʀƈȶɨӼ,
 *𝗚roup⛩️D:* chat.whatsapp.com/HKO5WLEZxMe3xWCyiv6vBu
 *𝗚roup⛩️E:* chat.whatsapp.com/G1NzKSYjAST95ehHk4FOZK
 *𝗚roup⛩️F:* chat.whatsapp.com/LKN8uVBd8ucHRHofz0jBSd`,
-"./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Verity.png"
+"./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Butter.png"
 );
 }
 }
@@ -276,7 +276,7 @@ contextInfo: {
 mentionedJid: [AʀƈȶɨӼ.sender],
 },
 timestamp: Date(),
-image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Cream.png" },
+image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Butter.png" },
 caption: `✥𝐔𝐬𝐞𝐫: ${Fox.pushName}
 
 *❌𝗘𝗿𝗿𝗼𝗿:* No Such Command In Database.`,

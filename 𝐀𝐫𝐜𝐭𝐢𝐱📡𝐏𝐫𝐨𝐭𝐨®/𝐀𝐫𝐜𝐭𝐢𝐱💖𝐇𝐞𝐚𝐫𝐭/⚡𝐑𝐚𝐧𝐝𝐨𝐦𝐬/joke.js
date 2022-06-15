@@ -43,7 +43,7 @@ module.exports = {
                 const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
                 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
                 return Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `💀𝗗𝗮𝗱𝗝𝗼𝗸𝗲
-${dadJoke}`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_LGrey.png");
+${dadJoke}`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Coffee_Gold.png");
             }
             catch (error) {
                 return Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error);

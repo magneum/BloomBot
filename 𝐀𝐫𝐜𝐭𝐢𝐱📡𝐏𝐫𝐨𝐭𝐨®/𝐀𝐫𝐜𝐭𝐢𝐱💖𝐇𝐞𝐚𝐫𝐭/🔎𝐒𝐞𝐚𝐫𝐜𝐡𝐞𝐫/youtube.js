@@ -73,7 +73,7 @@ module.exports = {
                 else {
                     return Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `𝐘𝐨𝐮𝐓𝐮𝐛𝐞⭕𝐀𝐏𝐈
 
-${Fetched}`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png");
+${Fetched}`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Blue_Grey.png");
                 }
             }
             catch (error) {

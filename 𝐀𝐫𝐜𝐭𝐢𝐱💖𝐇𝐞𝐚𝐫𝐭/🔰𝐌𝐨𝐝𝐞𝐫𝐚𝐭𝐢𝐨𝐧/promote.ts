@@ -127,7 +127,7 @@ TUF,
 Fox,
 AʀƈȶɨӼ,
 `💡𝐈𝐧𝐟𝐨: _${HOOM}_ is promoted to admin!`,
-"./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Gold.png"
+"./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Black_Gold.png"
 );
 } else {
 return Image_Button.VImg(
@@ -135,7 +135,7 @@ TUF,
 Fox,
 AʀƈȶɨӼ,
 `❌𝐄𝐫𝐫𝐨𝐫: _${HOOM}_ is already an admin!`,
-"./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Denied.png"
+"./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Error.png"
 );
 }
 }
@@ -149,7 +149,7 @@ TUF,
 Fox,
 AʀƈȶɨӼ,
 `❌𝐄𝐫𝐫𝐨𝐫: Person is not in the group!`,
-"./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Denied.png"
+"./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Error.png"
 );
 }
 return;

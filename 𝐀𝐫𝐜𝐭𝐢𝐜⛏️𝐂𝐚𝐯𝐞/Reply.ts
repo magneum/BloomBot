@@ -83,9 +83,9 @@ AʀƈȶɨӼ,
 ╚◇══════════════◇╝
 
 🪄𝐁𝐚𝐧𝐤 𝗦𝗮𝗳𝗲𝘁𝘆: _1/4 used_
-❌𝗘𝗿𝗿𝗼𝗿: @${REPLIED}'s Bank Guard Caught You and Took You To The Jail!
+ @${REPLIED}'s Bank Guard Caught You and Took You To The Jail!
 💡‍𝐒𝐭𝐚𝐭𝐮𝐬: _You Got Arrested and Took 0gold.ReTry Again!_`,
-"./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Black.png"
+"./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Error.png"
 );
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 } else if (!cEconomy) {
@@ -112,9 +112,9 @@ AʀƈȶɨӼ,
 ╚◇══════════════◇╝
 
 🪄𝐁𝐚𝐧𝐤 𝗦𝗮𝗳𝗲𝘁𝘆: _2/4 used_
-❌𝗘𝗿𝗿𝗼𝗿: _You are the worst robber._
+ _You are the worst robber._
 🍌‍𝗥𝗲𝗮𝘀𝗼𝗻:  _Fell On a pool and died!.ReTry Again!_`,
-"./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Black.png"
+"./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Error.png"
 );
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 } else if (cEconomy.money < 1000) {
@@ -127,9 +127,9 @@ AʀƈȶɨӼ,
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇══════════════◇╝
 
-❌𝗘𝗿𝗿𝗼𝗿: _You Will Need Atleast 1000 in your bank before you can rob someone!_
+ _You Will Need Atleast 1000 in your bank before you can rob someone!_
 🍌‍𝗥𝗲𝗮𝘀𝗼𝗻: _If You Get Caught, victim will charge you money to spare your life._`,
-"./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Black.png"
+"./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Error.png"
 );
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 } else if (vEconomy.money < 1000) {
@@ -145,7 +145,7 @@ AʀƈȶɨӼ,
 *@${REPLIED}*
 ❌ 𝗘𝗿𝗿𝗼𝗿:  _needs atleast 1000gold in their account before you can rob them!_
 🍌‍ 𝗥𝗲𝗮𝘀𝗼𝗻: _Broke AF! Leave This Begger Alone!_`,
-"./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Black.png"
+"./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Coffee_Gold.png"
 );
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 } else {
@@ -191,12 +191,12 @@ AʀƈȶɨӼ,
 ╚◇══════════════◇╝
 
 🪄𝐁𝐚𝐧𝐤 𝗦𝗮𝗳𝗲𝘁𝘆: _3/4 used_
-❌𝗘𝗿𝗿𝗼𝗿: @${REPLIED}'s Bank Police Caught You and Took You To The Jail!
+ @${REPLIED}'s Bank Police Caught You and Took You To The Jail!
 💡‍𝐒𝐭𝐚𝐭𝐮𝐬: _You Got Arrested and Took ${MoneyRandom}gold!_
 
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲
 @${ᴘɴᴀᴍᴇ}, _${cEconomy.money}_`,
-"./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Black.png"
+"./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Coffee_Gold.png"
 );
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 } else if (!culprit) {
@@ -229,12 +229,12 @@ AʀƈȶɨӼ,
 ╚◇══════════════◇╝
 
 🪄𝐁𝐚𝐧𝐤 𝗦𝗮𝗳𝗲𝘁𝘆: _4/4 used_
-❌𝗘𝗿𝗿𝗼𝗿: @${REPLIED} _caught You Red Handed and Sent You To The Jail!_
+ @${REPLIED} _caught You Red Handed and Sent You To The Jail!_
 💡‍𝐒𝐭𝐚𝐭𝐮𝐬: _You Got Arrested and Took ${MoneyRandom}gold!_
 
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲
 @${ᴘɴᴀᴍᴇ}, _${cEconomy.money}_`,
-"./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Black.png"
+"./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Coffee_Gold.png"
 );
 }
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
@@ -256,9 +256,9 @@ AʀƈȶɨӼ,
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇══════════════◇╝
 
-❌𝗘𝗿𝗿𝗼𝗿: _You've Recently Tried Robbing Someone!._
+ _You've Recently Tried Robbing Someone!._
 🕐𝐑𝐨𝐛 𝗔𝗴𝗮𝗶𝗻: _${Time.minutes}m ${Time.seconds}s._`,
-"./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Black.png"
+"./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Coffee_Gold.png"
 );
 }
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
@@ -301,13 +301,13 @@ AʀƈȶɨӼ,
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇══════════════◇╝
 
-❌𝗘𝗿𝗿𝗼𝗿: @${REPLIED} _had a powerful ⚡lightsaber that killed you!_
+ @${REPLIED} _had a powerful ⚡lightsaber that killed you!_
 💡‍𝐒𝐭𝐚𝐭𝐮𝐬: You Got Arrested!
 
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲 
 🥸𝐂𝐮𝐥𝐩𝐫𝐢𝐭: @${ᴘɴᴀᴍᴇ}, _${cEconomy.money}🪙_
 💀𝐕𝐢𝐜𝐭𝐢𝐦: @${REPLIED}, _${vEconomy.money}🪙_`,
-"./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Black.png"
+"./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Coffee_Gold.png"
 );
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 } else if (victim.arclock > 0) {
@@ -349,13 +349,13 @@ AʀƈȶɨӼ,
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇══════════════◇╝
 
-❌𝗘𝗿𝗿𝗼𝗿: @${REPLIED} _had a ❄️laptop that caught you digitally-robbing!_
+ @${REPLIED} _had a ❄️laptop that caught you digitally-robbing!_
 💡‍𝐒𝐭𝐚𝐭𝐮𝐬: _You Got Arrested!_
 
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲 
 🥸𝐂𝐮𝐥𝐩𝐫𝐢𝐭: @${ᴘɴᴀᴍᴇ}, _${cEconomy.money}🪙_
 💀𝐕𝐢𝐜𝐭𝐢𝐦: @${REPLIED}, _${vEconomy.money}🪙_`,
-"./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Black.png"
+"./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Coffee_Gold.png"
 );
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 } else if (victim.ninja > 0) {
@@ -397,13 +397,13 @@ AʀƈȶɨӼ,
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇══════════════◇╝
 
-❌𝗘𝗿𝗿𝗼𝗿: @${REPLIED} had a 🥷charm that magically saved their bank!
+ @${REPLIED} had a 🥷charm that magically saved their bank!
 💡‍𝐒𝐭𝐚𝐭𝐮𝐬: _You Got Arrested!_
 
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲 
 🥸𝐂𝐮𝐥𝐩𝐫𝐢𝐭: @${ᴘɴᴀᴍᴇ}, _${cEconomy.money}🪙_
 💀𝐕𝐢𝐜𝐭𝐢𝐦: @${REPLIED}, _${vEconomy.money}🪙_`,
-"./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Black.png"
+"./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Coffee_Gold.png"
 );
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 } else {
@@ -445,7 +445,7 @@ vEconomy.money
 💀𝐕𝐢𝐜𝐭𝐢𝐦: @${REPLIED}
 ❓𝗕𝗲𝗳𝗼𝗿𝗲: _${vEconomy.money}🪙_
 🥲𝗔𝗳𝘁𝗲𝗿: _${vEconomy.money - MoneyRandom}🪙_`,
-"./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Black.png"
+"./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Coffee_Gold.png"
 );
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 } else {
@@ -484,7 +484,7 @@ AʀƈȶɨӼ,
 💀𝐕𝐢𝐜𝐭𝐢𝐦: @${REPLIED}
 ❓𝗕𝗲𝗳𝗼𝗿𝗲: _${vEconomy.money}🪙_
 🥲𝗔𝗳𝘁𝗲𝗿: _${vEconomy.money - MoneyRandom}🪙_`,
-"./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Black.png"
+"./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Coffee_Gold.png"
 );
 }
 }

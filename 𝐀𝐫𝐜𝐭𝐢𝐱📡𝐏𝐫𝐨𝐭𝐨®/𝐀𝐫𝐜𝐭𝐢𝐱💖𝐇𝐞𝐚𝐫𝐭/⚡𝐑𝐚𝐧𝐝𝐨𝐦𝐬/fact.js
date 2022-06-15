@@ -45,7 +45,7 @@ module.exports = {
                     .get(`https://nekos.life/api/v2/fact`)
                     .then((response) => {
                     return Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `📛𝗙𝗮𝗰𝘁
-${response.data.fact}`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Cream.png");
+${response.data.fact}`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Coffee_Gold.png");
                 })
                     .catch((error) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
                 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "

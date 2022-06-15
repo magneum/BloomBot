@@ -61,7 +61,7 @@ TUF,
 Fox,
 AʀƈȶɨӼ,
 `❌𝐃𝐞𝐧𝐢𝐞𝐝: _Can't Kick Bot Owner!_`,
-"./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Black.png"
+"./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Error.png"
 );
 }
 }
@@ -72,7 +72,7 @@ TUF,
 Fox,
 AʀƈȶɨӼ,
 `❌𝐃𝐞𝐧𝐢𝐞𝐝: _Owner/Dev Only.You Are Not Allowed!_`,
-"./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Black.png"
+"./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Orange.png"
 );
 }
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
@@ -93,7 +93,7 @@ TUF,
 Fox,
 AʀƈȶɨӼ,
 `🛡️𝐒𝐮𝐝𝐨 𝐔𝐧𝐁𝐚𝐧: *${groupData.subject}* Was Not Banned!`,
-"./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Black.png"
+"./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Black_Gold.png"
 );
 } else {
 await userBan
@@ -104,7 +104,7 @@ TUF,
 Fox,
 AʀƈȶɨӼ,
 `🛡️𝐒𝐮𝐝𝐨 𝐔𝐧𝐁𝐚𝐧: *${groupData.subject}* Has Been Un-Banned!`,
-"./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Black.png"
+"./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Black_Gold.png"
 );
 }
 }
@@ -126,7 +126,7 @@ TUF,
 Fox,
 AʀƈȶɨӼ,
 `🛡️𝐒𝐮𝐝𝐨 𝐔𝐧𝐁𝐚𝐧: *${քɛʀֆօռɢօȶռʊʍ}* Was Not Banned!`,
-"./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Black.png"
+"./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Black_Gold.png"
 );
 } else {
 await userBan
@@ -137,7 +137,7 @@ TUF,
 Fox,
 AʀƈȶɨӼ,
 `🛡️𝐒𝐮𝐝𝐨 𝐔𝐧𝐁𝐚𝐧: *${քɛʀֆօռɢօȶռʊʍ}* Has Been Un-Banned!`,
-"./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Black.png"
+"./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Black_Gold.png"
 );
 }
 }
@@ -157,7 +157,6 @@ Option 2 - _don't reply to anyone and group will be un-banned_: ${
 dotScrpt
 );
 }
-
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 } catch (error) {
 return Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error);
