@@ -60,7 +60,11 @@ AʀƈȶɨӼ,
 );
 }
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-if (AʀƈȶɨӼ.isGroup && !AʀƈȶɨӼ.isSenderGroupAdmin && !AʀƈȶɨӼ.isSenderTUFs) {
+if (
+AʀƈȶɨӼ.isGroup &&
+!AʀƈȶɨӼ.isSenderGroupAdmin &&
+!AʀƈȶɨӼ.isSenderTUFs
+) {
 return Image_Button.VImg(
 TUF,
 Fox,
@@ -104,6 +108,18 @@ WelcomeNote = `👋🏻𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚\n👇🏽𝗣�
 }
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 if (ǟʀɢʊʍɛռȶ[0] === `on`) {
+if (!ǟʀɢʊʍɛռȶ[1]) {
+return FoxNeeded.VFox(
+TUF,
+Fox,
+AʀƈȶɨӼ,
+`Option 1 - ${
+ʟᴀʏᴏᴜᴛ.MuveOn
+}${dotScrpt.toUpperCase()} _custom welcome message_`,
+dotScrpt
+);
+}
+//" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 if (!userWel) {
 var newServer = new Welcome({
 ID: AʀƈȶɨӼ.chatId,
