@@ -32,14 +32,14 @@ const Downloader = require(`nodejs-file-downloader`);
 const TUF_1 = __importDefault(require("../\uD835\uDC00\uD835\uDC2B\uD835\uDC1C\uD835\uDC2D\uD835\uDC22\uD835\uDC31\u269C\uFE0F\uD835\uDC0A\uD835\uDC2B\uD835\uDC32\uD835\uDC28\uD835\uDC13\uD835\uDC1E\uD835\uDC24/TUF"));
 const ______1 = __importDefault(require("../\uD835\uDC00\uD835\uDC2B\uD835\uDC1C\uD835\uDC2D\uD835\uDC22\uD835\uDC31\uD83C\uDC04\uD835\uDC15\uD835\uDC1E\uD835\uDC27\uD835\uDC2D/\u029F\u1D00\u028F\u1D0F\u1D1C\u1D1B"));
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-const participants_update = (update, ӄʀʏȶɛӄ) => __awaiter(void 0, void 0, void 0, function* () {
-    let client = new TUF_1.default(ӄʀʏȶɛӄ);
-    const MemNum = update.participants[0];
-    if (update.action == `add` && MemNum.includes(ӄʀʏȶɛӄ.user.id)) {
+const participants_update = (update, ӄ𝖗𝖞ӄ𝖓𝖟) => __awaiter(void 0, void 0, void 0, function* () {
+    let client = new TUF_1.default(ӄ𝖗𝖞ӄ𝖓𝖟);
+    const Member_Info = update.participants[0];
+    if (update.action == `add` && Member_Info.includes(ӄ𝖗𝖞ӄ𝖓𝖟.user.id)) {
         yield client.sendMessage(update.id, {
             timestamp: Date(),
-            image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Black.png" },
-            caption: `👋🏻𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚, Some Of Your Members Requested Our Valkyrie HQ to Add Our Bot In This Group.Have Fun!
+            image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Gold.png" },
+            caption: `*👋🏻Some Of Your Members Requested Our Arctix HQ to Add Our Bot In This Group.*
 
 
 ╔⧉༻ ⭕𝐅𝐨𝐫 𝐀𝐝𝐦𝐢𝐧𝐬 ꧂
@@ -48,8 +48,8 @@ const participants_update = (update, ӄʀʏȶɛӄ) => __awaiter(void 0, void 0, 
 ╚════════════╝
 
 ╔⧉༻ 🧀 𝐃𝐞𝐟𝐚𝐮𝐥𝐭 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬! ꧂
-║◇ *${______1.default.MuveOn}help:* _commands of Valkyrie!_
-║◇ *${______1.default.MuveOn}rules:* _rules of Valkyrie!_
+║◇ *${______1.default.MuveOn}help:* _commands of Arctix!_
+║◇ *${______1.default.MuveOn}support:* _official arctix groups!_
 ╚════════════╝`,
             footer: `⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔`,
             buttons: [
@@ -66,7 +66,7 @@ const participants_update = (update, ӄʀʏȶɛӄ) => __awaiter(void 0, void 0, 
             ],
             headerType: 4,
         }, message_type_1.MessageType.buttonsMessage);
-        Welcome.findOne({
+        yield Welcome.findOne({
             ID: update.id,
         }, (error, userWel) => __awaiter(void 0, void 0, void 0, function* () {
             if (error)
@@ -78,10 +78,13 @@ const participants_update = (update, ӄʀʏȶɛӄ) => __awaiter(void 0, void 0, 
                 });
                 yield newServer.save().catch((error) => console.log(error));
             }
+            else {
+                console.log("data already saved!");
+            }
         }));
         //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
     }
-    else if (update.action == `add` && !MemNum.includes(ӄʀʏȶɛӄ.user.id)) {
+    else if (update.action == `add` && !Member_Info.includes(ӄ𝖗𝖞ӄ𝖓𝖟.user.id)) {
         Welcome.findOne({
             ID: update.id,
         }, (error, userWel) => __awaiter(void 0, void 0, void 0, function* () {
@@ -94,7 +97,7 @@ const participants_update = (update, ӄʀʏȶɛӄ) => __awaiter(void 0, void 0, 
                 try {
                     let 𝕻𝕻𝖑𝖊𝖙𝖊𝖗;
                     try {
-                        𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = yield ӄʀʏȶɛӄ.profilePictureUrl((0, baileys_1.jidNormalizedUser)(`${MemNum.split("@")[0]}@c.us`));
+                        𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = yield ӄ𝖗𝖞ӄ𝖓𝖟.profilePictureUrl((0, baileys_1.jidNormalizedUser)(`${Member_Info.split("@")[0]}@c.us`));
                     }
                     catch (_a) {
                         𝕻𝕻𝖑𝖊𝖙𝖊𝖗 =
@@ -107,10 +110,10 @@ const participants_update = (update, ӄʀʏȶɛӄ) => __awaiter(void 0, void 0, 
                         cloneFiles: false,
                     });
                     yield downloader.download();
-                    const GroupMemData = yield ӄʀʏȶɛӄ.groupMetadata(update.jid);
+                    const GroupMemData = yield ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata(update.jid);
                     const GroupMemG = GroupMemData.participants.length;
-                    const GroupMemBio = yield ӄʀʏȶɛӄ.getStatus(update.participants[0], message_type_1.MessageType.text);
-                    const ᴘᴘᴡᴇʟᴄᴏᴍᴇ = MemNum.replace(/[^\d-]/g, "");
+                    const GroupMemBio = yield ӄ𝖗𝖞ӄ𝖓𝖟.getStatus(update.participants[0], message_type_1.MessageType.text);
+                    const ᴘᴘᴡᴇʟᴄᴏᴍᴇ = Member_Info.replace(/[^\d-]/g, "");
                     yield client.sendMessage(update.id, {
                         timestamp: Date(),
                         image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Black.png" },

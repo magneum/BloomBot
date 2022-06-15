@@ -47,10 +47,10 @@ module.exports = {
                     return Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `❌𝐃𝐞𝐧𝐢𝐞𝐝: _This Command is Only For Groups!_`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Denied.png");
                 }
                 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-                let members = [];
-                for (var i = 0; i < AʀƈȶɨӼ.groupMembers.length; i++) {
-                    members[i] = AʀƈȶɨӼ.groupMembers[i].id;
-                }
+                let MEMBER_A = [];
+                const MetaFor_A = yield ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata(AʀƈȶɨӼ.chatId);
+                for (var i = 0; i < MetaFor_A.participants.length; i++)
+                    MEMBER_A[i] = MetaFor_A.participants[i].id;
                 let 𝕻𝕻𝖑𝖊𝖙𝖊𝖗;
                 try {
                     𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = yield ӄ𝖗𝖞ӄ𝖓𝖟.profilePictureUrl((0, baileys_1.jidNormalizedUser)(AʀƈȶɨӼ.chatId));
@@ -60,11 +60,6 @@ module.exports = {
                 }
                 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
                 if (!ǟʀɢʊʍɛռȶ) {
-                    var message = " ";
-                    for (var i = 0; i < AʀƈȶɨӼ.groupMembers.length; i++) {
-                        members[i] = AʀƈȶɨӼ.groupMembers[i].id;
-                        message += `@${members}\n`;
-                    }
                     yield TUF.sendMessage(AʀƈȶɨӼ.chatId, {
                         quoted: Fox.message,
                         contextInfo: {
@@ -72,9 +67,7 @@ module.exports = {
                         },
                         timestamp: Date(),
                         image: { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 },
-                        caption: `⚡ 𝐅𝐫𝐨𝐦: ${Fox.pushName}
-
-${message}`,
+                        caption: `⚡ 𝐅𝐫𝐨𝐦: ${Fox.pushName}`,
                         footer: `⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔`,
                         buttons: [
                             {
@@ -91,7 +84,7 @@ ${message}`,
                             quotedMessage: {
                                 conversation: AʀƈȶɨӼ.replyMessage,
                             },
-                            mentionedJid: members,
+                            mentionedJid: MEMBER_A,
                         },
                     });
                     return;
@@ -124,18 +117,13 @@ ${ǟʀɢʊʍɛռȶ.join(" ")}`,
                             quotedMessage: {
                                 conversation: AʀƈȶɨӼ.replyMessage,
                             },
-                            mentionedJid: members,
+                            mentionedJid: MEMBER_A,
                         },
                     });
                     return;
                     //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
                 }
                 else {
-                    var message = " ";
-                    for (var i = 0; i < AʀƈȶɨӼ.groupMembers.length; i++) {
-                        members[i] = AʀƈȶɨӼ.groupMembers[i].id;
-                        message += `@${members}\n`;
-                    }
                     yield TUF.sendMessage(AʀƈȶɨӼ.chatId, {
                         quoted: Fox.message,
                         contextInfo: {
@@ -143,9 +131,7 @@ ${ǟʀɢʊʍɛռȶ.join(" ")}`,
                         },
                         timestamp: Date(),
                         image: { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 },
-                        caption: `⚡ 𝐅𝐫𝐨𝐦: ${Fox.pushName}
-
-${message}`,
+                        caption: `⚡ 𝐅𝐫𝐨𝐦: ${Fox.pushName}`,
                         footer: `⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔`,
                         buttons: [
                             {
@@ -162,7 +148,7 @@ ${message}`,
                             quotedMessage: {
                                 conversation: AʀƈȶɨӼ.replyMessage,
                             },
-                            mentionedJid: members,
+                            mentionedJid: MEMBER_A,
                         },
                     });
                     return;
