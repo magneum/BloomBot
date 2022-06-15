@@ -23,9 +23,9 @@ const DebugList = require(`../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞
 const Ranker = require(`../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/autorank`);
 const BanPerson = require(`../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/ban`);
 const NsfwList = require(`../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/nsfw`);
+const Kooldown = require(`../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/halt`);
 const BanGroup = require(`../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/ban`);
 const Bagde = require(`../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/badge`);
-const Halt = require(`../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/halt`);
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 const Link_Proctectron_1 = __importDefault(require("../\uD835\uDC00\uD835\uDC2B\uD835\uDC1C\uD835\uDC2D\uD835\uDC22\uD835\uDC31\uD83C\uDC04\uD835\uDC15\uD835\uDC1E\uD835\uDC27\uD835\uDC2D/Link_Proctectron"));
 const message_type_1 = require("../\uD835\uDC00\uD835\uDC2B\uD835\uDC1C\uD835\uDC2D\uD835\uDC22\uD835\uDC31\u269C\uFE0F\uD835\uDC0A\uD835\uDC2B\uD835\uDC32\uD835\uDC28\uD835\uDC13\uD835\uDC1E\uD835\uDC24/message-type");
@@ -54,123 +54,178 @@ const messages_upsert = (update, ӄ𝖗𝖞ӄ𝖓𝖟, commandHandler, Konn) => 
     let TUF = new TUF_1.default(ӄ𝖗𝖞ӄ𝖓𝖟);
     //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
     if (AʀƈȶɨӼ.isCmd) {
-        console.clear();
-        console.log(AʀƈȶɨӼ);
-        yield git.fetch();
-        var newCommits = yield git.log(["📡𝐏𝐫𝐨𝐭𝐨®..origin/📡𝐏𝐫𝐨𝐭𝐨®"]);
-        if (newCommits.total != 0) {
-            // try {
-            // let list_chats_user = Konn.chats.all().map((v) => v.id);
-            // for (let Jid of list_chats_user) {
-            // if (Jid == "status@broadcast") {
-            // return;
-            // }
-            // await TUF.sendMessage(
-            // AʀƈȶɨӼ.chatId,
-            // {
-            // quoted: Fox,
-            // timestamp: Date(),
-            // contextInfo: { mentionedJid: [AʀƈȶɨӼ.sender] },
-            // image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_LGrey.png" },
-            // caption: `「 Broadcast 」
-            // ╔◇══════════════◇╗
-            // ┊  🤖𝐑𝐞𝐛𝐨𝐨𝐭𝐢𝐧𝐠🤖
-            // ╚◇══════════════◇╝
-            // Please Wait For ARCTIX to reboot itself and all of it's dedicated components & servers.
-            // Will take 40secs maximum.`,
-            // footer: `⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ⦔`,
-            // buttons: [
-            // {
-            // buttonId: `${ʟᴀʏᴏᴜᴛ.MuveOn}help`,
-            // buttonText: { displayText: `${ʟᴀʏᴏᴜᴛ.MuveOn}help` },
-            // type: 1,
-            // },
-            // {
-            // buttonId: `${ʟᴀʏᴏᴜᴛ.MuveOn}support`,
-            // buttonText: { displayText: `${ʟᴀʏᴏᴜᴛ.MuveOn}support` },
-            // type: 1,
-            // },
-            // ],
-            // headerType: 4,
-            // },
-            // MessageType.buttonsMessage
-            // );
-            // }
-            // } catch (error) {
-            // console.log(Kolor.red(error));
-            // }
-            //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-            try {
-                var 𝖛𝖑𝖐𝖕 = require("child_process").exec("git config --global user.name 'KryKnz' && git config --global user.email 'KryKnz@yandex.com' && git config pull.rebase false && git init --initial-branch=📡𝐏𝐫𝐨𝐭𝐨® && git fetch origin 📡𝐏𝐫𝐨𝐭𝐨® && git reset --hard origin/📡𝐏𝐫𝐨𝐭𝐨® && git stash && git stash drop && git pull");
-                console.log("🛰️ 𝐓𝐡𝐫𝐞𝐚𝐝 𝐈𝐃:", chalk_1.default.green(𝖛𝖑𝖐𝖕.pid));
-                𝖛𝖑𝖐𝖕.stderr.pipe(process.stderr);
-                𝖛𝖑𝖐𝖕.stdout.pipe(process.stdout);
-                𝖛𝖑𝖐𝖕.on("exit", function (code, signal) {
-                    if (code)
-                        console.log("📟 𝐕𝐥𝐤𝐲𝐫𝐞 𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐂𝐨𝐝𝐞:", chalk_1.default.red(code));
-                    if (signal)
-                        console.log("📶 𝐕𝐥𝐤𝐲𝐫𝐞 𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐒𝐢𝐠𝐧𝐚𝐥:", chalk_1.default.blue(signal));
-                    process.exitCode = 1;
-                });
-                var h𝖛𝖑𝖐𝖕 = require("child_process").exec(`heroku ps:restart worker -a ${______1.default.Heroku_App}`);
-                console.log("🛰️ 𝐓𝐡𝐫𝐞𝐚𝐝 𝐈𝐃:", chalk_1.default.green(h𝖛𝖑𝖐𝖕.pid));
-                h𝖛𝖑𝖐𝖕.stderr.pipe(process.stderr);
-                h𝖛𝖑𝖐𝖕.on("exit", function (code, signal) {
-                    if (code)
-                        console.log("📟 𝐕𝐥𝐤𝐲𝐫𝐞 𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐂𝐨𝐝𝐞:", chalk_1.default.red(code));
-                    if (signal)
-                        console.log("📶 𝐕𝐥𝐤𝐲𝐫𝐞 𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐒𝐢𝐠𝐧𝐚𝐥:", chalk_1.default.blue(signal));
-                    process.exitCode = 1;
-                });
-            }
-            catch (error) {
-                console.log(chalk_1.default.red(error));
-            }
+        try {
+            yield Kooldown.findOne({
+                ID: AʀƈȶɨӼ.sender,
+            }, (error, userHalt) => __awaiter(void 0, void 0, void 0, function* () {
+                if (error) {
+                    console.log("❌𝐄𝐫𝐫𝐨𝐫: " + error);
+                    return;
+                }
+                if (!userHalt) {
+                    var newHalt = new Kooldown({
+                        ID: AʀƈȶɨӼ.sender,
+                        TimeOut: 0,
+                        PermaTimeOut: 8000,
+                    });
+                    yield newHalt
+                        .save()
+                        .catch((error) => console.log("❌𝐄𝐫𝐫𝐨𝐫: " + error));
+                }
+            }));
+        }
+        catch (err) {
+            console.log(chalk_1.default.red("❌𝐄𝐫𝐫𝐨𝐫: ", err));
         }
         //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-        const command = commandHandler.get(AʀƈȶɨӼ.commandName);
-        console.log(chalk_1.default.blueBright(`💡𝐈𝐧𝐟𝐨: ${AʀƈȶɨӼ.commandName} command executed.`));
-        var ǟʀɢʊʍɛռȶ = AʀƈȶɨӼ.body.trim().split(/\s+/).slice(1);
-        yield Silent_1.default.VSln(TUF, Fox, AʀƈȶɨӼ, ӄ𝖗𝖞ӄ𝖓𝖟);
-        yield Ranker_1.default.VRnIT(TUF, Fox, AʀƈȶɨӼ, ӄ𝖗𝖞ӄ𝖓𝖟);
-        yield Link_Proctectron_1.default.VFLink(TUF, Fox, AʀƈȶɨӼ, ӄ𝖗𝖞ӄ𝖓𝖟);
-        //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-        try {
-            let MEMBER_A = [];
-            let MEMBER_B = [];
-            let MEMBER_C = [];
-            let MEMBER_D = [];
-            let MEMBER_E = [];
-            let MEMBER_F = [];
-            const MetaFor_A = yield ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363024871653603@g.us");
-            const MetaFor_B = yield ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363041425736157@g.us");
-            const MetaFor_C = yield ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363022161584857@g.us");
-            const MetaFor_D = yield ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363020792949649@g.us");
-            const MetaFor_E = yield ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363042762307739@g.us");
-            const MetaFor_F = yield ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363039223842047@g.us");
-            for (var i = 0; i < MetaFor_A.participants.length; i++)
-                MEMBER_A[i] = MetaFor_A.participants[i].id;
-            for (var i = 0; i < MetaFor_B.participants.length; i++)
-                MEMBER_B[i] = MetaFor_B.participants[i].id;
-            for (var i = 0; i < MetaFor_C.participants.length; i++)
-                MEMBER_C[i] = MetaFor_C.participants[i].id;
-            for (var i = 0; i < MetaFor_D.participants.length; i++)
-                MEMBER_D[i] = MetaFor_D.participants[i].id;
-            for (var i = 0; i < MetaFor_E.participants.length; i++)
-                MEMBER_E[i] = MetaFor_E.participants[i].id;
-            for (var i = 0; i < MetaFor_F.participants.length; i++)
-                MEMBER_F[i] = MetaFor_F.participants[i].id;
-            // //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-            if (AʀƈȶɨӼ.isCmd &&
-                !AʀƈȶɨӼ.isSenderTUFs &&
-                !AʀƈȶɨӼ.body.includes(______1.default.MuveOn + "help")) {
-                if (!MEMBER_A.includes(AʀƈȶɨӼ.sender) &&
-                    !MEMBER_B.includes(AʀƈȶɨӼ.sender) &&
-                    !MEMBER_C.includes(AʀƈȶɨӼ.sender) &&
-                    !MEMBER_D.includes(AʀƈȶɨӼ.sender) &&
-                    !MEMBER_E.includes(AʀƈȶɨӼ.sender) &&
-                    !MEMBER_F.includes(AʀƈȶɨӼ.sender)) {
-                    return Image_Button.VImg(TUF, Fox, AʀƈȶɨӼ, `
+        yield Kooldown.findOne({
+            ID: AʀƈȶɨӼ.sender,
+        }, (error, userHalt) => __awaiter(void 0, void 0, void 0, function* () {
+            if (error) {
+                console.log("❌𝐄𝐫𝐫𝐨𝐫: " + error);
+                return;
+            }
+            if (!userHalt) {
+                var newHalt = new Kooldown({
+                    ID: AʀƈȶɨӼ.sender,
+                    TimeOut: Date.now(),
+                    PermaTimeOut: 5000,
+                });
+                return yield newHalt
+                    .save()
+                    .catch((error) => console.log("❌𝐄𝐫𝐫𝐨𝐫: " + error));
+            }
+            if (!AʀƈȶɨӼ.fromMe &&
+                userHalt.PermaTimeOut - (Date.now() - userHalt.TimeOut) > 0) {
+                return yield TUF.sendMessage(AʀƈȶɨӼ.chatId, `┌─「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢® 」
+├• *Tαɠ:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
+├• *Nαɱҽ:* ${Fox.pushName}
+├• *Cσɱɱαɳԃ:* ${AʀƈȶɨӼ.commandName}
+└──•
+
+❌𝗘𝗿𝗿𝗼𝗿: Wait For 5seconds!`, message_type_1.MessageType.text, {
+                    quoted: Fox,
+                    timestamp: Date(),
+                    contextInfo: { mentionedJid: [AʀƈȶɨӼ.sender] },
+                });
+                //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
+            }
+            else {
+                console.clear();
+                console.log(chalk_1.default.cyanBright("|════════════════════════「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢® 」════════════════════════|"));
+                console.log(Fox);
+                yield git.fetch();
+                console.log(AʀƈȶɨӼ);
+                console.log(chalk_1.default.cyanBright("|════════════════════════「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢® 」════════════════════════|"));
+                var newCommits = yield git.log(["📡𝐏𝐫𝐨𝐭𝐨®..origin/📡𝐏𝐫𝐨𝐭𝐨®"]);
+                if (newCommits.total != 0) {
+                    try {
+                        let list_chats_user = Konn.chats.all().map((v) => v.id);
+                        for (let Jid of list_chats_user) {
+                            yield TUF.sendMessage(Jid, {
+                                quoted: Fox,
+                                timestamp: Date(),
+                                contextInfo: { mentionedJid: [AʀƈȶɨӼ.sender] },
+                                image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_LGrey.png" },
+                                caption: `「 Broadcast 」
+
+╔◇══════════════◇╗
+┊  🤖𝐑𝐞𝐛𝐨𝐨𝐭𝐢𝐧𝐠🤖
+╚◇══════════════◇╝
+Please Wait For ARCTIX to reboot itself and all of it's dedicated components & servers.
+Will take 40secs maximum.`,
+                                footer: `⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ⦔`,
+                                buttons: [
+                                    {
+                                        buttonId: `${______1.default.MuveOn}help`,
+                                        buttonText: { displayText: `${______1.default.MuveOn}help` },
+                                        type: 1,
+                                    },
+                                    {
+                                        buttonId: `${______1.default.MuveOn}support`,
+                                        buttonText: { displayText: `${______1.default.MuveOn}support` },
+                                        type: 1,
+                                    },
+                                ],
+                                headerType: 4,
+                            }, message_type_1.MessageType.buttonsMessage);
+                        }
+                    }
+                    catch (error) {
+                        console.log(chalk_1.default.red(error));
+                    }
+                    //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
+                    try {
+                        var 𝖛𝖑𝖐𝖕 = require("child_process").exec("git config --global user.name 'KryKnz' && git config --global user.email 'KryKnz@yandex.com' && git config pull.rebase false && git init --initial-branch=📡𝐏𝐫𝐨𝐭𝐨® && git fetch origin 📡𝐏𝐫𝐨𝐭𝐨® && git reset --hard origin/📡𝐏𝐫𝐨𝐭𝐨® && git stash && git stash drop && git pull");
+                        console.log("🛰️ 𝐓𝐡𝐫𝐞𝐚𝐝 𝐈𝐃:", chalk_1.default.green(𝖛𝖑𝖐𝖕.pid));
+                        𝖛𝖑𝖐𝖕.stderr.pipe(process.stderr);
+                        𝖛𝖑𝖐𝖕.stdout.pipe(process.stdout);
+                        𝖛𝖑𝖐𝖕.on("exit", function (code, signal) {
+                            if (code)
+                                console.log("📟 𝐕𝐥𝐤𝐲𝐫𝐞 𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐂𝐨𝐝𝐞:", chalk_1.default.red(code));
+                            if (signal)
+                                console.log("📶 𝐕𝐥𝐤𝐲𝐫𝐞 𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐒𝐢𝐠𝐧𝐚𝐥:", chalk_1.default.blue(signal));
+                            process.exitCode = 1;
+                        });
+                        var h𝖛𝖑𝖐𝖕 = require("child_process").exec(`heroku ps:restart worker -a ${______1.default.Heroku_App}`);
+                        console.log("🛰️ 𝐓𝐡𝐫𝐞𝐚𝐝 𝐈𝐃:", chalk_1.default.green(h𝖛𝖑𝖐𝖕.pid));
+                        h𝖛𝖑𝖐𝖕.stderr.pipe(process.stderr);
+                        h𝖛𝖑𝖐𝖕.on("exit", function (code, signal) {
+                            if (code)
+                                console.log("📟 𝐕𝐥𝐤𝐲𝐫𝐞 𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐂𝐨𝐝𝐞:", chalk_1.default.red(code));
+                            if (signal)
+                                console.log("📶 𝐕𝐥𝐤𝐲𝐫𝐞 𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐒𝐢𝐠𝐧𝐚𝐥:", chalk_1.default.blue(signal));
+                            process.exitCode = 1;
+                        });
+                    }
+                    catch (error) {
+                        console.log(chalk_1.default.red(error));
+                    }
+                }
+                //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
+                const ARC = commandHandler.get(AʀƈȶɨӼ.commandName);
+                console.log(chalk_1.default.blueBright(`💡𝐈𝐧𝐟𝐨: ${AʀƈȶɨӼ.commandName} ARC executed.`));
+                var ǟʀɢʊʍɛռȶ = AʀƈȶɨӼ.body.trim().split(/\s+/).slice(1);
+                yield Silent_1.default.VSln(TUF, Fox, AʀƈȶɨӼ, ӄ𝖗𝖞ӄ𝖓𝖟);
+                yield Ranker_1.default.VRnIT(TUF, Fox, AʀƈȶɨӼ, ӄ𝖗𝖞ӄ𝖓𝖟);
+                yield Link_Proctectron_1.default.VFLink(TUF, Fox, AʀƈȶɨӼ, ӄ𝖗𝖞ӄ𝖓𝖟);
+                //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
+                try {
+                    let MEMBER_A = [];
+                    let MEMBER_B = [];
+                    let MEMBER_C = [];
+                    let MEMBER_D = [];
+                    let MEMBER_E = [];
+                    let MEMBER_F = [];
+                    const MetaFor_A = yield ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363024871653603@g.us");
+                    const MetaFor_B = yield ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363041425736157@g.us");
+                    const MetaFor_C = yield ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363022161584857@g.us");
+                    const MetaFor_D = yield ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363020792949649@g.us");
+                    const MetaFor_E = yield ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363042762307739@g.us");
+                    const MetaFor_F = yield ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363039223842047@g.us");
+                    for (var i = 0; i < MetaFor_A.participants.length; i++)
+                        MEMBER_A[i] = MetaFor_A.participants[i].id;
+                    for (var i = 0; i < MetaFor_B.participants.length; i++)
+                        MEMBER_B[i] = MetaFor_B.participants[i].id;
+                    for (var i = 0; i < MetaFor_C.participants.length; i++)
+                        MEMBER_C[i] = MetaFor_C.participants[i].id;
+                    for (var i = 0; i < MetaFor_D.participants.length; i++)
+                        MEMBER_D[i] = MetaFor_D.participants[i].id;
+                    for (var i = 0; i < MetaFor_E.participants.length; i++)
+                        MEMBER_E[i] = MetaFor_E.participants[i].id;
+                    for (var i = 0; i < MetaFor_F.participants.length; i++)
+                        MEMBER_F[i] = MetaFor_F.participants[i].id;
+                    // //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
+                    if (AʀƈȶɨӼ.isCmd &&
+                        !AʀƈȶɨӼ.isSenderTUFs &&
+                        !AʀƈȶɨӼ.body.includes(______1.default.MuveOn + "help")) {
+                        if (!MEMBER_A.includes(AʀƈȶɨӼ.sender) &&
+                            !MEMBER_B.includes(AʀƈȶɨӼ.sender) &&
+                            !MEMBER_C.includes(AʀƈȶɨӼ.sender) &&
+                            !MEMBER_D.includes(AʀƈȶɨӼ.sender) &&
+                            !MEMBER_E.includes(AʀƈȶɨӼ.sender) &&
+                            !MEMBER_F.includes(AʀƈȶɨӼ.sender)) {
+                            return Image_Button.VImg(TUF, Fox, AʀƈȶɨӼ, `
 ╔◇══════════════◇╗
 ┊ 🦊𝐕𝐞𝐫𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧🦊
 ╚◇══════════════◇╝
@@ -182,54 +237,54 @@ const messages_upsert = (update, ӄ𝖗𝖞ӄ𝖓𝖟, commandHandler, Konn) => 
 *𝗚roup⛩️D:* chat.whatsapp.com/HKO5WLEZxMe3xWCyiv6vBu
 *𝗚roup⛩️E:* chat.whatsapp.com/G1NzKSYjAST95ehHk4FOZK
 *𝗚roup⛩️F:* chat.whatsapp.com/LKN8uVBd8ucHRHofz0jBSd`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Verity.png");
+                        }
+                    }
                 }
-            }
-        }
-        catch (error) {
-            console.log(error);
-        }
-        //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-        if (!command) {
-            yield TUF.sendMessage(AʀƈȶɨӼ.chatId, {
-                quoted: Fox,
-                contextInfo: {
-                    mentionedJid: [AʀƈȶɨӼ.sender],
-                },
-                timestamp: Date(),
-                image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Cream.png" },
-                caption: `✥𝐔𝐬𝐞𝐫: ${Fox.pushName}
+                catch (error) {
+                    console.log(error);
+                }
+                //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
+                if (!ARC) {
+                    yield TUF.sendMessage(AʀƈȶɨӼ.chatId, {
+                        quoted: Fox,
+                        contextInfo: {
+                            mentionedJid: [AʀƈȶɨӼ.sender],
+                        },
+                        timestamp: Date(),
+                        image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Cream.png" },
+                        caption: `✥𝐔𝐬𝐞𝐫: ${Fox.pushName}
 
 *❌𝗘𝗿𝗿𝗼𝗿:* No Such Command In Database.`,
-                footer: `⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔`,
-                buttons: [
-                    {
-                        buttonId: `${______1.default.MuveOn}help`,
-                        buttonText: { displayText: `${______1.default.MuveOn}help` },
-                        type: 1,
-                    },
-                ],
-                headerType: 4,
-            }, message_type_1.MessageType.buttonsMessage);
-            //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-        }
-        else if (command && AʀƈȶɨӼ.commandName == "help") {
-            try {
-                return command.handle(TUF, Fox, AʀƈȶɨӼ, ǟʀɢʊʍɛռȶ, ӄ𝖗𝖞ӄ𝖓𝖟, commandHandler);
+                        footer: `⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔`,
+                        buttons: [
+                            {
+                                buttonId: `${______1.default.MuveOn}help`,
+                                buttonText: { displayText: `${______1.default.MuveOn}help` },
+                                type: 1,
+                            },
+                        ],
+                        headerType: 4,
+                    }, message_type_1.MessageType.buttonsMessage);
+                    //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
+                }
+                else if (ARC && AʀƈȶɨӼ.commandName == "help") {
+                    try {
+                        return ARC.handle(TUF, Fox, AʀƈȶɨӼ, ǟʀɢʊʍɛռȶ, ӄ𝖗𝖞ӄ𝖓𝖟, commandHandler);
+                    }
+                    catch (err) {
+                        console.log(chalk_1.default.red("❌𝐄𝐫𝐫𝐨𝐫: ", err));
+                        return;
+                    }
+                }
+                //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
+                try {
+                    yield ARC.handle(TUF, Fox, AʀƈȶɨӼ, ǟʀɢʊʍɛռȶ, ӄ𝖗𝖞ӄ𝖓𝖟).catch((error) => console.log("❌𝐄𝐫𝐫𝐨𝐫: " + error));
+                }
+                catch (err) {
+                    console.log(chalk_1.default.red("❌𝐄𝐫𝐫𝐨𝐫: ", err));
+                }
             }
-            catch (err) {
-                console.log(chalk_1.default.red("❌𝐄𝐫𝐫𝐨𝐫: ", err));
-                return;
-            }
-        }
-        //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-        try {
-            yield command
-                .handle(TUF, Fox, AʀƈȶɨӼ, ǟʀɢʊʍɛռȶ, ӄ𝖗𝖞ӄ𝖓𝖟)
-                .catch((err) => console.log("❌𝐄𝐫𝐫𝐨𝐫: " + err));
-        }
-        catch (err) {
-            console.log(chalk_1.default.red("❌𝐄𝐫𝐫𝐨𝐫: ", err));
-        }
+        }));
     }
 });
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
