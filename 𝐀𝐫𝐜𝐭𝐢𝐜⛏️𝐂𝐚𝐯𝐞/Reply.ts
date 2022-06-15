@@ -40,12 +40,12 @@ console.log(Kolor.cyan("Received REPLY request"));
 await TUF.getGroupMetaData(AʀƈȶɨӼ.chatId, AʀƈȶɨӼ);
 const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
-var Receiver = Fox.message.extendedTextMessage.contextInfo.participant;
+const MoneyLaptop = Math.floor(Math.random() * (4000 - 3000 + 1)) + 3000;
+const MoneyRandom = Math.floor(Math.random() * (2000 - 1500 + 1)) + 1500;
 const MoneyCharm = Math.floor(Math.random() * (6000 - 5000 + 1)) + 5000;
 const MoneySword = Math.floor(Math.random() * (2000 - 1000 + 1)) + 1000;
-const MoneyRandom = Math.floor(Math.random() * (2000 - 1500 + 1)) + 1500;
-const MoneyLaptop = Math.floor(Math.random() * (4000 - 3000 + 1)) + 3000;
+var Receiver = Fox.message.extendedTextMessage.contextInfo.participant;
+var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 await Economy.findOne(
 {
