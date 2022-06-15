@@ -13,6 +13,7 @@ const Downloader = require(`nodejs-file-downloader`);
 const { yta } = require("../𝐀𝐫𝐜𝐭𝐢𝐱🐞𝐁𝐞𝐞𝐭𝐥𝐞/Tube");
 const Tinyurl = require("tinyurl-api");
 const ytdl = require("ytdl-core");
+import * as fs from "fs";
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 const VOID = require(`../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/void`);
 import { proto } from "@adiwajshing/baileys";
