@@ -33,14 +33,8 @@ AʀƈȶɨӼ: AʀƈȶɨӼ,
 const ʟɴᴀᴍᴇ = AʀƈȶɨӼ.sender;
 const ᴅꜰɴᴀᴍᴇ = AʀƈȶɨӼ.commandName;
 const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/[^\d+]/g, "");
-const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
-//" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 await TUF.getGroupMetaData(AʀƈȶɨӼ.chatId, AʀƈȶɨӼ);
-console.log("💡Is Group: " + AʀƈȶɨӼ.isGroup);
-console.log("💡Is Sender Group Admin: " + AʀƈȶɨӼ.isSenderGroupAdmin);
-console.log("💡Is Bot Group Admin: " + AʀƈȶɨӼ.isBotGroupAdmin);
-console.log("💡Is Reply Message: " + AʀƈȶɨӼ.replyMessage);
-console.log("💡Is Text Reply: " + AʀƈȶɨӼ.isTextReply);
+const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 if (AʀƈȶɨӼ.isTextReply) {
 var Receiver = Fox.message.extendedTextMessage.contextInfo.participant;
@@ -52,32 +46,32 @@ console.log("💡Receiver: " + քɛʀֆօռɢօȶռʊʍ);
 }
 }
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
+let 𝐏𝐩𝐢𝐜 = await ӄ𝖗𝖞ӄ𝖓𝖟.profilePictureUrl(AʀƈȶɨӼ.sender, "image");
 await ӄ𝖗𝖞ӄ𝖓𝖟.sendPresenceUpdate("unavailable", AʀƈȶɨӼ.chatId);
 await ӄ𝖗𝖞ӄ𝖓𝖟.sendPresenceUpdate("available", AʀƈȶɨӼ.chatId);
 await ӄ𝖗𝖞ӄ𝖓𝖟.sendPresenceUpdate("composing", AʀƈȶɨӼ.chatId);
 await ӄ𝖗𝖞ӄ𝖓𝖟.sendPresenceUpdate("recording", AʀƈȶɨӼ.chatId);
 await ӄ𝖗𝖞ӄ𝖓𝖟.sendPresenceUpdate("paused", AʀƈȶɨӼ.chatId);
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-return await TUF.sendMessage(
-AʀƈȶɨӼ.chatId,
-`┌─「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢® 」
-├•♩ *Tαɠ:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
-├•♭ *Nαɱҽ:* ${Fox.pushName}
-├•♪ *Cσɱɱαɳԃ:* ${AʀƈȶɨӼ.commandName}
-└──•
+return Image_Button.VImg(
+TUF,
+Fox,
+AʀƈȶɨӼ,
+`
+┌─「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢® 」
+├• *ɴᴀᴍᴇ:* ${Fox.pushName}
+├• *ᴛᴀɢ:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
+├• *ᴄᴏᴍᴍᴀɴᴅ:* ${ʟᴀʏᴏᴜᴛ.MuveOn}${AʀƈȶɨӼ.commandName}
+└────────────◇
 
-*𝗚roup⛩️A:* chat.whatsapp.com/EIn3YFShFmkJ3fvAqf2rpn
-*𝗚roup⛩️B:* chat.whatsapp.com/EsxcMlXOy1DCJP2eGtZBH5
-*𝗚roup⛩️C:* chat.whatsapp.com/Bc1jBF7OVMRKnyTWYyxz1z
-*𝗚roup⛩️D:* chat.whatsapp.com/HKO5WLEZxMe3xWCyiv6vBu
-*𝗚roup⛩️E:* chat.whatsapp.com/G1NzKSYjAST95ehHk4FOZK
-*𝗚roup⛩️F:* chat.whatsapp.com/LKN8uVBd8ucHRHofz0jBSd`,
-MessageType.text,
-{
-quoted: Fox,
-timestamp: Date(),
-contextInfo: { mentionedJid: [AʀƈȶɨӼ.sender] },
-}
+*👑 𝐎𝐟𝐟𝐢𝐜𝐢𝐚𝐥 𝐀𝐫𝐜𝐭𝐢𝐱 𝐂𝐨𝐦𝐦𝐮𝐧𝐢𝐭𝐢𝐞𝐬 👑*
+*𝗚roup⛩️A:* _chat.whatsapp.com/EIn3YFShFmkJ3fvAqf2rpn_
+*𝗚roup⛩️B:* _chat.whatsapp.com/EsxcMlXOy1DCJP2eGtZBH5_
+*𝗚roup⛩️C:* _chat.whatsapp.com/Bc1jBF7OVMRKnyTWYyxz1z_
+*𝗚roup⛩️D:* _chat.whatsapp.com/HKO5WLEZxMe3xWCyiv6vBu_
+*𝗚roup⛩️E:* _chat.whatsapp.com/G1NzKSYjAST95ehHk4FOZK_
+*𝗚roup⛩️F:* _chat.whatsapp.com/LKN8uVBd8ucHRHofz0jBSd_`,
+𝐏𝐩𝐢𝐜
 );
 },
 };

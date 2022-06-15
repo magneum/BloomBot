@@ -16,26 +16,30 @@ const Bagde = require(`../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜
 const Halt = require(`../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/halt`);
 import { jidNormalizedUser } from "@adiwajshing/baileys";
 const Downloader = require(`nodejs-file-downloader`);
+const VOID = require(`../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/void`);
 import Client from "../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/TUF";
 import ʟᴀʏᴏᴜᴛ from "../𝐀𝐫𝐜𝐭𝐢𝐱🀄𝐕𝐞𝐧𝐭/ʟᴀʏᴏᴜᴛ";
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 const participants_update = async (update: any, ӄ𝖗𝖞ӄ𝖓𝖟: any): Promise<void> => {
 let client: Client = new Client(ӄ𝖗𝖞ӄ𝖓𝖟);
-const Member_Info = update.participants[0];
-if (update.action == "add" && Member_Info.includes(ӄ𝖗𝖞ӄ𝖓𝖟.user.id)) {
+let 𝐏𝐩𝐢𝐜: any;
+for (let i of update.participants) {
+try {
+𝐏𝐩𝐢𝐜 = await ӄ𝖗𝖞ӄ𝖓𝖟.profilePictureUrl(i, "image");
+} catch {
+𝐏𝐩𝐢𝐜 = "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Gold.png";
+}
+}
+const ALL_PARTICIPANTS = update.participants[0];
+//" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
+if (update.action == "add") {
+if (ALL_PARTICIPANTS.includes(ӄ𝖗𝖞ӄ𝖓𝖟.user.id)) {
 await client.sendMessage(
 update.id,
 {
 timestamp: Date(),
 image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Gold.png" },
-caption: `*👋🏻Some Of Your Members Requested Our Arctix HQ to Add Our Bot In This Group.*
-
-
-╔⧉༻ ⭕𝐅𝐨𝐫 𝐀𝐝𝐦𝐢𝐧𝐬 ꧂
-║◇ *antilink:* _on/off_
-║◇ *autorank:* _on/off_
-╚════════════╝
-
+caption: `
 ╔⧉༻ 🧀 𝐃𝐞𝐟𝐚𝐮𝐥𝐭 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬! ꧂
 ║◇ *${ʟᴀʏᴏᴜᴛ.MuveOn}help:* _commands of Arctix!_
 ║◇ *${ʟᴀʏᴏᴜᴛ.MuveOn}support:* _official arctix groups!_
@@ -57,69 +61,52 @@ headerType: 4,
 },
 MessageType.buttonsMessage
 );
+}
+//" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
+const GroupMemData = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata(update.jid);
+const ᴘᴘᴡᴇʟᴄᴏᴍᴇ = ALL_PARTICIPANTS.replace(/[^\d-]/g, "");
+const GroupMemG = GroupMemData.participants.length;
+const GroupMemBio = await ӄ𝖗𝖞ӄ𝖓𝖟.getStatus(
+update.participants[0],
+MessageType.text
+);
+const downloader = await new Downloader({
+url: 𝐏𝐩𝐢𝐜,
+directory: `./𝐀𝐫𝐜𝐭𝐢𝐱🐞𝐁𝐞𝐞𝐭𝐥𝐞`,
+fileName: `${Date.now().toString()}.png`,
+cloneFiles: false,
+});
+await downloader.download();
+
 await Welcome.findOne(
 {
 ID: update.id,
 },
 async (error: any, userWel: any) => {
 if (error) console.log(error);
-if (!userWel) {
-var newServer = new Welcome({
-ID: update.id,
-message: "❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞",
-});
-await newServer.save().catch((error: any) => console.log(error));
-} else {
-console.log("data already saved!");
-}
-}
-);
-//" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-} else if (update.action == `add` && !Member_Info.includes(ӄ𝖗𝖞ӄ𝖓𝖟.user.id)) {
-Welcome.findOne(
-{
-ID: update.id,
-},
-async (error, userWel) => {
-if (error) console.log(error);
-if (!userWel) {
-return;
-} else {
-try {
-let 𝕻𝕻𝖑𝖊𝖙𝖊𝖗: string;
-try {
-𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄ𝖗𝖞ӄ𝖓𝖟.profilePictureUrl(
-jidNormalizedUser(`${Member_Info.split("@")[0]}@c.us`)
-);
-} catch {
-𝕻𝕻𝖑𝖊𝖙𝖊𝖗 =
-"https://i.postimg.cc/wxWL9G8F/no-profile-picture-300x216.png";
-}
-const downloader = await new Downloader({
-url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗,
-directory: `./`,
-fileName: `${Date.now().toString()}.png`,
-cloneFiles: false,
-});
-await downloader.download();
-const GroupMemData = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata(update.jid);
-const GroupMemG = GroupMemData.participants.length;
-const GroupMemBio = await ӄ𝖗𝖞ӄ𝖓𝖟.getStatus(
-update.participants[0],
-MessageType.text
-);
-const ᴘᴘᴡᴇʟᴄᴏᴍᴇ = Member_Info.replace(/[^\d-]/g, "");
-await client.sendMessage(
+if (!userWel) return;
+await client
+.sendMessage(
 update.id,
 {
 timestamp: Date(),
-image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Black.png" },
-caption: `🥞𝐖𝐞𝐥𝐜𝐨𝐦𝐞: *『@${ᴘᴘᴡᴇʟᴄᴏᴍᴇ}』*
-꧁◇══════════════◇꧂
-𝗕𝗶𝗼: ${GroupMemBio.status}
-𝐌𝐞𝐦𝐛𝐞𝐫𝐳: ${GroupMemG}
-🎪 𝐆𝐫𝐨𝐮𝐩: ${GroupMemData.subject}
-꧁◇══════════════◇꧂
+image: { url: `./𝐀𝐫𝐜𝐭𝐢𝐱🐞𝐁𝐞𝐞𝐭𝐥𝐞/${Date.now().toString()}.png` },
+caption: `
+┌─「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢® 」
+├
+├•「 𝐖𝐞𝐥𝐜𝐨𝐦𝐞 」
+├• @${ᴘᴘᴡᴇʟᴄᴏᴍᴇ}
+├
+├•「 𝗕𝗶𝗼 」
+├• ${GroupMemBio.status}
+├
+├•「 𝐌𝐞𝐦𝐛𝐞𝐫 」
+├• ${GroupMemG}
+├
+├•「 𝐆𝐫𝐨𝐮𝐩 」
+├• ${GroupMemData.subject}
+└────────────◇
+
 
 ${userWel.message}`,
 footer: `⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔`,
@@ -138,17 +125,12 @@ type: 1,
 headerType: 4,
 },
 MessageType.buttonsMessage
-);
-} catch (error) {
-console.log(error);
-}
-}
+)
+.then(VOID.VOID(`./𝐀𝐫𝐜𝐭𝐢𝐱🐞𝐁𝐞𝐞𝐭𝐥𝐞/${Date.now().toString()}.png`))
+.catch((error: any) => console.log(error));
 }
 );
-//" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-} else if (update.action === `remove`) {
-return;
-} else {
+} else if (update.action == "remove") {
 return;
 }
 };
