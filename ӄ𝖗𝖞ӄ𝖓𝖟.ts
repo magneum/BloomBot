@@ -161,7 +161,7 @@ participants_update.participants_update(update, ӄ𝖗𝖞ӄ𝖓𝖟);
 connection_update.connection_update(update, DisconnectReason, startSock);
 });
 ӄ𝖗𝖞ӄ𝖓𝖟.ev.on("messages.upsert", async (update) => {
-messages_upsert.messages_upsert(update, ӄ𝖗𝖞ӄ𝖓𝖟, commandHandler);
+messages_upsert.messages_upsert(update, ӄ𝖗𝖞ӄ𝖓𝖟, commandHandler, Konn);
 });
 ӄ𝖗𝖞ӄ𝖓𝖟.ev.on("creds.update", (creds) => {
 saveCreds(creds);

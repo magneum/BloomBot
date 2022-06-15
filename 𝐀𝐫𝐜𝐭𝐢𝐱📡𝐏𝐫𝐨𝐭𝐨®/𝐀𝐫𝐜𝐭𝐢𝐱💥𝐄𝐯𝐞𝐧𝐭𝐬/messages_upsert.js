@@ -42,7 +42,7 @@ const Ranker_1 = __importDefault(require("../\uD835\uDC00\uD835\uDC2B\uD835\uDC1
 const git = require(`simple-git`)();
 const chalk_1 = __importDefault(require("chalk"));
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-const messages_upsert = (update, ӄ𝖗𝖞ӄ𝖓𝖟, commandHandler) => __awaiter(void 0, void 0, void 0, function* () {
+const messages_upsert = (update, ӄ𝖗𝖞ӄ𝖓𝖟, commandHandler, Konn) => __awaiter(void 0, void 0, void 0, function* () {
     if (update.type === "append" && !______1.default.OFFLINE_RESPONSE) {
         return;
     }
@@ -60,7 +60,7 @@ const messages_upsert = (update, ӄ𝖗𝖞ӄ𝖓𝖟, commandHandler) => __awai
         var newCommits = yield git.log(["📡𝐏𝐫𝐨𝐭𝐨®..origin/📡𝐏𝐫𝐨𝐭𝐨®"]);
         if (newCommits.total != 0) {
             try {
-                let list_chats_user = ӄ𝖗𝖞ӄ𝖓𝖟.chats.all().map((v) => v.id);
+                let list_chats_user = Konn.chats.all().map((v) => v.id);
                 for (let Jid of list_chats_user) {
                     if (Jid == "status@broadcast") {
                         return;

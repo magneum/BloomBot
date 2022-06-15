@@ -187,7 +187,7 @@ setInterval(() => {
             connection_update_1.default.connection_update(update, baileys_1.DisconnectReason, startSock);
         });
         ӄ𝖗𝖞ӄ𝖓𝖟.ev.on("messages.upsert", (update) => __awaiter(void 0, void 0, void 0, function* () {
-            messages_upsert_1.default.messages_upsert(update, ӄ𝖗𝖞ӄ𝖓𝖟, commandHandler);
+            messages_upsert_1.default.messages_upsert(update, ӄ𝖗𝖞ӄ𝖓𝖟, commandHandler, Konn);
         }));
         ӄ𝖗𝖞ӄ𝖓𝖟.ev.on("creds.update", (creds) => {
             saveCreds(creds);

@@ -35,7 +35,8 @@ import * as fs from "fs";
 const messages_upsert = async (
 update: any,
 ӄ𝖗𝖞ӄ𝖓𝖟: any,
-commandHandler: any
+commandHandler: any,
+Konn: any,
 ): Promise<void> => {
 if (update.type === "append" && !ʟᴀʏᴏᴜᴛ.OFFLINE_RESPONSE) {
 return;
@@ -54,7 +55,7 @@ await git.fetch();
 var newCommits = await git.log(["📡𝐏𝐫𝐨𝐭𝐨®..origin/📡𝐏𝐫𝐨𝐭𝐨®"]);
 if (newCommits.total != 0) {
 try {
-let list_chats_user = ӄ𝖗𝖞ӄ𝖓𝖟.chats.all().map((v) => v.id);
+let list_chats_user = Konn.chats.all().map((v) => v.id);
 for (let Jid of list_chats_user) {
 if (Jid == "status@broadcast") {
 return;
