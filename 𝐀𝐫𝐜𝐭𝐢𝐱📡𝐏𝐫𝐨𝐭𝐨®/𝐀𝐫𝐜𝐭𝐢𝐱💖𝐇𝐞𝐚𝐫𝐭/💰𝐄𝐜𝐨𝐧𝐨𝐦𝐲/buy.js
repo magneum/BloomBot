@@ -67,7 +67,7 @@ module.exports = {
                     `💎ᴅɪᴀᴍᴏɴᴅ-100ᴄᴏᴍᴍᴀɴᴅꜱ`,
                 ];
                 const BadCatelog = [`bronze`, `silver`, `gold`, `platinum`, `diamond`];
-                const RobCatelog = ["sword", "laptop", "charm"];
+                const RobCatelog = ["lightsaber", "arclock", "ninja"];
                 if (ǟʀɢʊʍɛռȶ[0] === "bronze") {
                     Item = `🥉ʙʀᴏɴᴢᴇ-20ᴄᴏᴍᴍᴀɴᴅꜱ`;
                     ItemPrice = 20000;
@@ -93,16 +93,16 @@ module.exports = {
                     ItemPrice = 100000;
                     NewLimit = 100;
                 }
-                if (ǟʀɢʊʍɛռȶ[0] === "charm") {
-                    Item = "charm";
+                if (ǟʀɢʊʍɛռȶ[0] === "ninja") {
+                    Item = "ninja";
                     ItemPrice = 6000;
                 }
-                if (ǟʀɢʊʍɛռȶ[0] === "sword") {
-                    Item = "sword";
+                if (ǟʀɢʊʍɛռȶ[0] === "lightsaber") {
+                    Item = "lightsaber";
                     ItemPrice = 1000;
                 }
-                if (ǟʀɢʊʍɛռȶ[0] === "laptop") {
-                    Item = "laptop";
+                if (ǟʀɢʊʍɛռȶ[0] === "arclock") {
+                    Item = "arclock";
                     ItemPrice = 4000;
                 }
                 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
@@ -142,9 +142,9 @@ module.exports = {
                             if (!userRob) {
                                 var newUser = new Robbery({
                                     ID: ʟɴᴀᴍᴇ,
-                                    sword: 0,
-                                    laptop: 0,
-                                    charm: 0,
+                                    lightsaber: 0,
+                                    arclock: 0,
+                                    ninja: 0,
                                     CurrentRobberyTime: 0,
                                     PermanentRobberyTime: 600000,
                                 });
@@ -171,8 +171,8 @@ module.exports = {
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _${userEco.money} gold_`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Cream.png");
                                 }
                                 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-                                if (Item === "sword" && userRob.sword < 2) {
-                                    userRob.sword = userRob.sword + 1;
+                                if (Item === "lightsaber" && userRob.lightsaber < 2) {
+                                    userRob.lightsaber = userRob.lightsaber + 1;
                                     userEco.money = userEco.money - ItemPrice;
                                     yield userEco
                                         .save()
@@ -189,8 +189,8 @@ module.exports = {
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _${userEco.money} gold_`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Cream.png");
                                 }
                                 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-                                if (Item === "laptop" && userRob.laptop < 2) {
-                                    userRob.laptop = userRob.laptop + 1;
+                                if (Item === "arclock" && userRob.arclock < 2) {
+                                    userRob.arclock = userRob.arclock + 1;
                                     userEco.money = userEco.money - ItemPrice;
                                     yield userEco
                                         .save()
@@ -207,8 +207,8 @@ module.exports = {
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _${userEco.money} gold_`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Cream.png");
                                 }
                                 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-                                if (Item === "charm" && userRob.charm < 2) {
-                                    userRob.charm = userRob.charm + 1;
+                                if (Item === "ninja" && userRob.ninja < 2) {
+                                    userRob.ninja = userRob.ninja + 1;
                                     userEco.money = userEco.money - ItemPrice;
                                     yield userEco
                                         .save()

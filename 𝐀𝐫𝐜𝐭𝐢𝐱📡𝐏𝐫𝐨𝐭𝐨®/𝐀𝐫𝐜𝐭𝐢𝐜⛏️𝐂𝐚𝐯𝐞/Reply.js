@@ -51,7 +51,7 @@ const Rob_Reply = (TUF, Fox, AʀƈȶɨӼ) => __awaiter(void 0, void 0, void 0, f
         const MoneyLaptop = Math.floor(Math.random() * (4000 - 3000 + 1)) + 3000;
         const MoneyRandom = Math.floor(Math.random() * (2000 - 1500 + 1)) + 1500;
         const MoneyCharm = Math.floor(Math.random() * (6000 - 5000 + 1)) + 5000;
-        const MoneySword = Math.floor(Math.random() * (2000 - 1000 + 1)) + 1000;
+        const Moneylightsaber = Math.floor(Math.random() * (2000 - 1000 + 1)) + 1000;
         var REPLIED = REPLIED_RAW.substring(0, REPLIED_RAW.length - 15);
         //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
         yield Economy.findOne({
@@ -147,9 +147,9 @@ const Rob_Reply = (TUF, Fox, AʀƈȶɨӼ) => __awaiter(void 0, void 0, void 0, f
                             if (!victim) {
                                 var newUser = new Robbery({
                                     ID: REPLIED_RAW,
-                                    sword: 0,
-                                    laptop: 0,
-                                    charm: 0,
+                                    lightsaber: 0,
+                                    arclock: 0,
+                                    ninja: 0,
                                     CurrentRobberyTime: Date.now(),
                                     PermanentRobberyTime: 900000,
                                 });
@@ -176,9 +176,9 @@ const Rob_Reply = (TUF, Fox, AʀƈȶɨӼ) => __awaiter(void 0, void 0, void 0, f
                             else if (!culprit) {
                                 var newUser = new Robbery({
                                     ID: ʟɴᴀᴍᴇ,
-                                    sword: 0,
-                                    laptop: 0,
-                                    charm: 0,
+                                    lightsaber: 0,
+                                    arclock: 0,
+                                    ninja: 0,
                                     CurrentRobberyTime: Date.now(),
                                     PermanentRobberyTime: 900000,
                                 });
@@ -216,15 +216,15 @@ const Rob_Reply = (TUF, Fox, AʀƈȶɨӼ) => __awaiter(void 0, void 0, void 0, f
 🕐𝐑𝐨𝐛 𝗔𝗴𝗮𝗶𝗻: _${Time.minutes}m ${Time.seconds}s._`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Black.png");
                             }
                             //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-                            if (victim.sword > 0) {
-                                victim.sword = victim.sword - 1;
+                            if (victim.lightsaber > 0) {
+                                victim.lightsaber = victim.lightsaber - 1;
                                 if (cEconomy.money < 3000) {
                                     vEconomy.money = vEconomy.money + cEconomy.money;
                                     cEconomy.money = 0;
                                 }
                                 else {
-                                    vEconomy.money = vEconomy.money + MoneySword;
-                                    cEconomy.money = cEconomy.money - MoneySword;
+                                    vEconomy.money = vEconomy.money + Moneylightsaber;
+                                    cEconomy.money = cEconomy.money - Moneylightsaber;
                                 }
                                 culprit.CurrentRobberyTime = Date.now();
                                 yield victim
@@ -244,7 +244,7 @@ const Rob_Reply = (TUF, Fox, AʀƈȶɨӼ) => __awaiter(void 0, void 0, void 0, f
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇══════════════◇╝
 
-❌𝗘𝗿𝗿𝗼𝗿: @${REPLIED} _had a powerful ⚔️sword that killed you!_
+❌𝗘𝗿𝗿𝗼𝗿: @${REPLIED} _had a powerful ⚡lightsaber that killed you!_
 💡‍𝐒𝐭𝐚𝐭𝐮𝐬: You Got Arrested!
 
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲 
@@ -252,8 +252,8 @@ const Rob_Reply = (TUF, Fox, AʀƈȶɨӼ) => __awaiter(void 0, void 0, void 0, f
 💀𝐕𝐢𝐜𝐭𝐢𝐦: @${REPLIED}, _${vEconomy.money}🪙_`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Black.png");
                                 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
                             }
-                            else if (victim.laptop > 0) {
-                                victim.laptop = victim.laptop - 1;
+                            else if (victim.arclock > 0) {
+                                victim.arclock = victim.arclock - 1;
                                 if (cEconomy.money < 4000) {
                                     vEconomy.money = vEconomy.money + cEconomy.money;
                                     cEconomy.money = 0;
@@ -280,7 +280,7 @@ const Rob_Reply = (TUF, Fox, AʀƈȶɨӼ) => __awaiter(void 0, void 0, void 0, f
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇══════════════◇╝
 
-❌𝗘𝗿𝗿𝗼𝗿: @${REPLIED} _had a 💻laptop that caught you digitally-robbing!_
+❌𝗘𝗿𝗿𝗼𝗿: @${REPLIED} _had a ❄️laptop that caught you digitally-robbing!_
 💡‍𝐒𝐭𝐚𝐭𝐮𝐬: _You Got Arrested!_
 
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲 
@@ -288,8 +288,8 @@ const Rob_Reply = (TUF, Fox, AʀƈȶɨӼ) => __awaiter(void 0, void 0, void 0, f
 💀𝐕𝐢𝐜𝐭𝐢𝐦: @${REPLIED}, _${vEconomy.money}🪙_`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Black.png");
                                 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
                             }
-                            else if (victim.charm > 0) {
-                                victim.charm = victim.charm - 1;
+                            else if (victim.ninja > 0) {
+                                victim.ninja = victim.ninja - 1;
                                 if (cEconomy.money < 6000) {
                                     vEconomy.money = vEconomy.money + cEconomy.money;
                                     cEconomy.money = 0;
@@ -316,7 +316,7 @@ const Rob_Reply = (TUF, Fox, AʀƈȶɨӼ) => __awaiter(void 0, void 0, void 0, f
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇══════════════◇╝
 
-❌𝗘𝗿𝗿𝗼𝗿: @${REPLIED} had a 🔮charm that magically saved their bank!
+❌𝗘𝗿𝗿𝗼𝗿: @${REPLIED} had a 🥷charm that magically saved their bank!
 💡‍𝐒𝐭𝐚𝐭𝐮𝐬: _You Got Arrested!_
 
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲 

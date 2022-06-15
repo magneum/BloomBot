@@ -6,9 +6,9 @@
 var mongoose = require("mongoose");
 var RobberySchema = new mongoose.Schema({
     ID: String,
-    sword: Number,
-    laptop: Number,
-    charm: Number,
+    lightsaber: Number,
+    arclock: Number,
+    ninja: Number,
     CurrentRobberyTime: Number,
     PermanentRobberyTime: Number,
 });

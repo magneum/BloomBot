@@ -61,9 +61,9 @@ if (error) return Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error);
 if (!userRob) {
 var newUser = new Robbery({
 ID: ʟɴᴀᴍᴇ,
-sword: 0,
-laptop: 0,
-charm: 0,
+lightsaber: 0,
+arclock: 0,
+ninja: 0,
 CurrentRobberyTime: 0,
 PermanentRobberyTime: 900000,
 });
@@ -91,9 +91,9 @@ AʀƈȶɨӼ,
 ╔◇══════════════◇╗
 ┊  💼𝐈𝐧𝐯𝐞𝐧𝐭𝐨𝐫𝐲💼
 ╚◇══════════════◇╝
-⚔️ 𝗦𝘄𝗼𝗿𝗱: ${userRob.sword}
-💻 𝗟𝗮𝗽𝘁𝗼𝗽 ${userRob.laptop}
-🔮 𝗖𝗵𝗮𝗿𝗺 ${userRob.charm}`,
+⚡ 𝐋𝐢𝐠𝐡𝐭𝐒𝐚𝐛𝐞𝐫: ${userRob.lightsaber}
+❄️ 𝐀𝐫𝐜𝐋𝐨𝐜𝐤 ${userRob.arclock}
+🥷 𝐍𝐢𝐧𝐣𝐚 ${userRob.ninja}`,
 "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Cream.png"
 );
 }

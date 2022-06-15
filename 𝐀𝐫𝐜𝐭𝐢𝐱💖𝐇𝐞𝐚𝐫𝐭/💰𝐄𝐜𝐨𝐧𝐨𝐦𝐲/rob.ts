@@ -75,20 +75,20 @@ AʀƈȶɨӼ,
 ║ *𝗧𝗮𝗴-𝗣𝗲𝗿𝘀𝗼𝗻:* _${ʟᴀʏᴏᴜᴛ.MuveOn}${dotScrpt.toUpperCase()}_ @tag
 ╚════════════╝
 
-╔═══◇║⚔️ 𝐒𝐰𝐨𝐫𝐝
+╔═══◇║⚡ 𝐋𝐢𝐠𝐡𝐭𝐒𝐚𝐛𝐞𝐫
 ║🛸 𝗧𝘆𝗽𝗲: _The medium account safe mode. 
-║🧀 𝗚𝗼𝗹𝗱: _To buy sword you will need to have 4000gold._ 
-║⚡ 𝗣𝗲𝗿𝗸𝘀: _If robbery attempt was made on your account, a sword will save your entire balance and will automatically deduct random(1000-2000) from Culprit's account and add it to your account!_
+║🧀 𝗚𝗼𝗹𝗱: _To buy lightsaber you will need to have 4000gold._ 
+║⚡ 𝗣𝗲𝗿𝗸𝘀: _If robbery attempt was made on your account, a lightsaber will save your entire balance and will automatically deduct random(1000-2000) from Culprit's account and add it to your account!_
 ╚◇╗
-╔◇╝ 💻 𝐋𝐚𝐩𝐭𝐨𝐩
+╔◇╝ ❄️ 𝐀𝐫𝐜𝐋𝐨𝐜𝐤
 ║🛸 𝗧𝘆𝗽𝗲: _The hard account safe mode._ 
-║🧀 𝗚𝗼𝗹𝗱: _To buy laptop you will need to have 3000gold._ 
-║⚡ 𝗣𝗲𝗿𝗸𝘀: _If robbery attempt was made on your account, a laptop will save your entire balance and will automatically deduct random(3000-4000) from Culprit's account and add it to your account!_
+║🧀 𝗚𝗼𝗹𝗱: _To buy arclock you will need to have 3000gold._ 
+║⚡ 𝗣𝗲𝗿𝗸𝘀: _If robbery attempt was made on your account, a arclock will save your entire balance and will automatically deduct random(3000-4000) from Culprit's account and add it to your account!_
 ╚◇╗
-╔◇╝ 🔮 𝐂𝐡𝐚𝐫𝐦
+╔◇╝ 🥷 𝐍𝐢𝐧𝐣𝐚
 ║🛸 𝗧𝘆𝗽𝗲: _The devil account safe mode._ 
-║🧀 𝗚𝗼𝗹𝗱: _To buy laptop you will need to have 6000gold._ 
-║⚡ 𝗣𝗲𝗿𝗸𝘀: _If robbery attempt was made on your account, a charm will save your entire balance and will automatically deduct random(5000-6000) from Culprit's account and add it to your account!_
+║🧀 𝗚𝗼𝗹𝗱: _To buy arclock you will need to have 6000gold._ 
+║⚡ 𝗣𝗲𝗿𝗸𝘀: _If robbery attempt was made on your account, a ninja will save your entire balance and will automatically deduct random(5000-6000) from Culprit's account and add it to your account!_
 ╚════════════╝
 
 ╔═══◇❓ 𝗛𝗼𝘄 𝗗𝗼 𝗜 𝗸𝗲𝗲𝗽 𝗺𝘆 𝗮𝗰𝗰𝗼𝘂𝗻𝘁 𝘀𝗮𝗳𝗲?
