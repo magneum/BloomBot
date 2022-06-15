@@ -22,7 +22,7 @@ import ʟᴀʏᴏᴜᴛ from "../𝐀𝐫𝐜𝐭𝐢𝐱🀄𝐕𝐞𝐧𝐭/ʟ
 const participants_update = async (update: any, ӄ𝖗𝖞ӄ𝖓𝖟: any): Promise<void> => {
 let client: Client = new Client(ӄ𝖗𝖞ӄ𝖓𝖟);
 const Member_Info = update.participants[0];
-if (update.action == `add` && Member_Info.includes(ӄ𝖗𝖞ӄ𝖓𝖟.user.id)) {
+if (update.action == "add" && Member_Info.includes(ӄ𝖗𝖞ӄ𝖓𝖟.user.id)) {
 await client.sendMessage(
 update.id,
 {
