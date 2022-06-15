@@ -47,7 +47,7 @@ module.exports = {
                     return Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `❌𝐃𝐞𝐧𝐢𝐞𝐝: _This Command is Only For Groups!_`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Denied.png");
                 }
                 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-                let tag_message;
+                var tag_message = " ";
                 let MEMBER_A = [];
                 const MetaFor_A = yield ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata(AʀƈȶɨӼ.chatId);
                 for (var i = 0; i < MetaFor_A.participants.length; i++)
@@ -61,7 +61,9 @@ module.exports = {
                 }
                 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
                 if (ǟʀɢʊʍɛռȶ || ǟʀɢʊʍɛռȶ.length) {
-                    tag_message = MEMBER_A.toString().replace(/[^0-9]/g, "");
+                    for (let mem of MEMBER_A) {
+                        tag_message += `@${mem}\n`;
+                    }
                 }
                 else {
                     tag_message = " Everyone, may i get your attention please!";
