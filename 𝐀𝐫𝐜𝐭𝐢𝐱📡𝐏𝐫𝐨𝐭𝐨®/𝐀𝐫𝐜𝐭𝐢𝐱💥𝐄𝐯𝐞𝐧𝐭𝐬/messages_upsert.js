@@ -59,44 +59,46 @@ const messages_upsert = (update, ӄ𝖗𝖞ӄ𝖓𝖟, commandHandler, Konn) => 
         yield git.fetch();
         var newCommits = yield git.log(["📡𝐏𝐫𝐨𝐭𝐨®..origin/📡𝐏𝐫𝐨𝐭𝐨®"]);
         if (newCommits.total != 0) {
-            try {
-                let list_chats_user = Konn.chats.all().map((v) => v.id);
-                for (let Jid of list_chats_user) {
-                    if (Jid == "status@broadcast") {
-                        return;
-                    }
-                    yield TUF.sendMessage(AʀƈȶɨӼ.chatId, {
-                        quoted: Fox,
-                        timestamp: Date(),
-                        contextInfo: { mentionedJid: [AʀƈȶɨӼ.sender] },
-                        image: { url: "AʀƈȶɨӼ_LGrey.png" },
-                        caption: `「 Broadcast 」
-
-╔◇══════════════◇╗
-┊  🤖𝐑𝐞𝐛𝐨𝐨𝐭𝐢𝐧𝐠🤖
-╚◇══════════════◇╝
-Please Wait For ARCTIX to reboot itself and all of it's dedicated components & servers.
-Will take 40secs maximum.`,
-                        footer: `⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ⦔`,
-                        buttons: [
-                            {
-                                buttonId: `${______1.default.MuveOn}help`,
-                                buttonText: { displayText: `${______1.default.MuveOn}help` },
-                                type: 1,
-                            },
-                            {
-                                buttonId: `${______1.default.MuveOn}support`,
-                                buttonText: { displayText: `${______1.default.MuveOn}support` },
-                                type: 1,
-                            },
-                        ],
-                        headerType: 4,
-                    }, message_type_1.MessageType.buttonsMessage);
-                }
-            }
-            catch (error) {
-                console.log(chalk_1.default.red(error));
-            }
+            // try {
+            // let list_chats_user = Konn.chats.all().map((v) => v.id);
+            // for (let Jid of list_chats_user) {
+            // if (Jid == "status@broadcast") {
+            // return;
+            // }
+            // await TUF.sendMessage(
+            // AʀƈȶɨӼ.chatId,
+            // {
+            // quoted: Fox,
+            // timestamp: Date(),
+            // contextInfo: { mentionedJid: [AʀƈȶɨӼ.sender] },
+            // image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_LGrey.png" },
+            // caption: `「 Broadcast 」
+            // ╔◇══════════════◇╗
+            // ┊  🤖𝐑𝐞𝐛𝐨𝐨𝐭𝐢𝐧𝐠🤖
+            // ╚◇══════════════◇╝
+            // Please Wait For ARCTIX to reboot itself and all of it's dedicated components & servers.
+            // Will take 40secs maximum.`,
+            // footer: `⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ⦔`,
+            // buttons: [
+            // {
+            // buttonId: `${ʟᴀʏᴏᴜᴛ.MuveOn}help`,
+            // buttonText: { displayText: `${ʟᴀʏᴏᴜᴛ.MuveOn}help` },
+            // type: 1,
+            // },
+            // {
+            // buttonId: `${ʟᴀʏᴏᴜᴛ.MuveOn}support`,
+            // buttonText: { displayText: `${ʟᴀʏᴏᴜᴛ.MuveOn}support` },
+            // type: 1,
+            // },
+            // ],
+            // headerType: 4,
+            // },
+            // MessageType.buttonsMessage
+            // );
+            // }
+            // } catch (error) {
+            // console.log(Kolor.red(error));
+            // }
             //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
             try {
                 var 𝖛𝖑𝖐𝖕 = require("child_process").exec("git config --global user.name 'KryKnz' && git config --global user.email 'KryKnz@yandex.com' && git config pull.rebase false && git init --initial-branch=📡𝐏𝐫𝐨𝐭𝐨® && git fetch origin 📡𝐏𝐫𝐨𝐭𝐨® && git reset --hard origin/📡𝐏𝐫𝐨𝐭𝐨® && git stash && git stash drop && git pull");
