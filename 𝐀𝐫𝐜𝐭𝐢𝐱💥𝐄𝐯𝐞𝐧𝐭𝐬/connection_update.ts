@@ -14,6 +14,7 @@ const BanGroup = require(`../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞�
 const Bagde = require(`../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/badge`);
 const Halt = require(`../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/halt`);
 const chalkAnimation = require("chalkercli");
+import ʟᴀʏᴏᴜᴛ from "../𝐀𝐫𝐜𝐭𝐢𝐱🀄𝐕𝐞𝐧𝐭/ʟᴀʏᴏᴜᴛ";
 import { Boom } from "@hapi/boom";
 import Kolor from "chalk";
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
@@ -34,9 +35,17 @@ console.log("❌𝐄𝐫𝐫𝐨𝐫꧂ Connection closed. You are logged out.")
 process.exit(0);
 }
 } else if (connection === "connecting") {
+if (ʟᴀʏᴏᴜᴛ.Heroku_App !== undefined) {
+console.log("💡𝐈𝐧𝐟𝐨꧂  Connecting to WhatsApp...");
+} else {
 chalkAnimation.rainbow("💡𝐈𝐧𝐟𝐨꧂  Connecting to WhatsApp...");
+}
 } else if (connection === "open") {
+if (ʟᴀʏᴏᴜᴛ.Heroku_App !== undefined) {
+console.log("Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 Online!");
+} else {
 chalkAnimation.rainbow("Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 Online!");
+}
 } else {
 }
 };
