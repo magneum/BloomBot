@@ -105,8 +105,8 @@ AʀƈȶɨӼ,
 let MEMBERs: any;
 let TAGmsg: any;
 await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata(AʀƈȶɨӼ.chatId);
-for (let i of AʀƈȶɨӼ.groupMembers) {
-MEMBERs = i.id.split("@")[0];
+for (let O of AʀƈȶɨӼ.groupMembers) {
+MEMBERs = O.id.split("@")[0];
 }
 let 𝕻𝕻𝖑𝖊𝖙𝖊𝖗: any;
 try {
