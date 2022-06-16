@@ -61,7 +61,7 @@ TUF,
 Fox,
 AʀƈȶɨӼ,
 `❌𝐃𝐞𝐧𝐢𝐞𝐝: _Can't rob yourself_`,
-"./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Error.png"
+"./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png"
 );
 }
 return await Reply.VNrl(TUF, Fox, AʀƈȶɨӼ);

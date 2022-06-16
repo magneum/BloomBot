@@ -93,23 +93,23 @@ module.exports = {
                 let AmountRoom = parseInt(ǟʀɢʊʍɛռȶ[1]);
                 if (AmountRoom < 50) {
                     return Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `❌𝗘𝗿𝗿𝗼𝗿: _Money Amount!_
-💡𝗟𝗶𝗺𝗶𝘁: _min 50gold needed to gamble_`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Orange.png");
+💡𝗟𝗶𝗺𝗶𝘁: _min 50gold needed to gamble_`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png");
                 }
                 if (AmountRoom > 800) {
                     return Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `❌𝗘𝗿𝗿𝗼𝗿: _Money Amount!_
-💡𝗟𝗶𝗺𝗶𝘁: _max 800gold for gamble_`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Orange.png");
+💡𝗟𝗶𝗺𝗶𝘁: _max 800gold for gamble_`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png");
                 }
                 if (ColorRoom === "red" && AmountRoom > 200) {
                     return Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `❌𝗘𝗿𝗿𝗼𝗿: _Money For Red!_
-💡𝗟𝗶𝗺𝗶𝘁: _max 200gold_`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Orange.png");
+💡𝗟𝗶𝗺𝗶𝘁: _max 200gold_`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png");
                 }
                 if (ColorRoom === "black" && AmountRoom > 500) {
                     return Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `❌𝗘𝗿𝗿𝗼𝗿: _Money For Black!_
-⚫𝗟𝗶𝗺𝗶𝘁: _max 500gold_`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Orange.png");
+⚫𝗟𝗶𝗺𝗶𝘁: _max 500gold_`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png");
                 }
                 if (ColorRoom === "purple" && AmountRoom > 800) {
                     return Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `❌𝗘𝗿𝗿𝗼𝗿: _Money For Purple!_
-🟣𝗟𝗶𝗺𝗶𝘁: _max 800gold_`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Orange.png");
+🟣𝗟𝗶𝗺𝗶𝘁: _max 800gold_`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png");
                 }
                 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
                 Economy.findOne({
@@ -137,7 +137,7 @@ module.exports = {
 ┊   🤑𝐆𝐚𝐦𝐛𝐥𝐞𝐫
 ╚◇══════════════◇╝
 💰𝗧𝗼𝘁𝗮𝗹 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: Just Opened Your Account!
-🤠𝗔𝗰𝗰𝗼𝘂𝗻𝘁 𝗛𝗼𝗹𝗱𝗲𝗿: @${ᴘɴᴀᴍᴇ}`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Coffee_Gold.png");
+🤠𝗔𝗰𝗰𝗼𝘂𝗻𝘁 𝗛𝗼𝗹𝗱𝗲𝗿: @${ᴘɴᴀᴍᴇ}`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png");
                     }
                     Gamble.findOne({
                         ID: ʟɴᴀᴍᴇ,
@@ -155,7 +155,7 @@ module.exports = {
                                 .save()
                                 .catch((error) => Oops_1.default.VOp(TUF, Fox, AʀƈȶɨӼ, error));
                             return yield Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `⚠️𝐄𝐫𝐫𝐨𝐫: Addded To Database!
-💡𝐈𝐧𝐟𝐨: Try The Command Again!`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Coffee_Gold.png");
+💡𝐈𝐧𝐟𝐨: Try The Command Again!`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png");
                         }
                         //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
                         if (userGamble.Gambletimeout -
@@ -169,7 +169,7 @@ module.exports = {
 ┊   🤑𝐆𝐚𝐦𝐛𝐥𝐞𝐫
 ╚◇══════════════◇╝
 ❌𝗘𝗿𝗿𝗼𝗿: _You've Recently Gambled!_
-🕐𝗚𝗮𝗺𝗯𝗹𝗲 𝗔𝗴𝗮𝗶𝗻: ${time.minutes}m ${time.seconds}s`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Orange.png");
+🕐𝗚𝗮𝗺𝗯𝗹𝗲 𝗔𝗴𝗮𝗶𝗻: ${time.minutes}m ${time.seconds}s`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png");
                         }
                         //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
                         function isOdd(num) {
@@ -253,7 +253,7 @@ module.exports = {
 ┊   🤑𝐆𝐚𝐦𝐛𝐥𝐞𝐫
 ╚◇══════════════◇╝
 🟣𝗘𝗮𝗿𝗻𝗲𝗱: You won *${money}* gold.
-⭐𝗠𝘂𝗹𝘁𝗶𝗽𝗹𝗶𝗲𝗿: _15x_`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Coffee_Gold.png");
+⭐𝗠𝘂𝗹𝘁𝗶𝗽𝗹𝗶𝗲𝗿: _15x_`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png");
                         }
                         //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
                         if (!isOdd(Amount) && Color == 1) {
@@ -272,7 +272,7 @@ module.exports = {
 ┊   🤑𝐆𝐚𝐦𝐛𝐥𝐞𝐫
 ╚◇══════════════◇╝
 🔴𝗘𝗮𝗿𝗻𝗲𝗱: _won *${money}* gold!_
-⭐𝗠𝘂𝗹𝘁𝗶𝗽𝗹𝗶𝗲𝗿: _1.5x_`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Coffee_Gold.png");
+⭐𝗠𝘂𝗹𝘁𝗶𝗽𝗹𝗶𝗲𝗿: _1.5x_`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png");
                         }
                         //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
                         if (isOdd(Amount) && Color == 0) {
@@ -291,7 +291,7 @@ module.exports = {
 ┊   🤑𝐆𝐚𝐦𝐛𝐥𝐞𝐫
 ╚◇══════════════◇╝
 ⚫𝗘𝗮𝗿𝗻𝗲𝗱: _won *${money}* gold!_
-⭐𝗠𝘂𝗹𝘁𝗶𝗽𝗹𝗶𝗲𝗿: _2x_`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Coffee_Gold.png");
+⭐𝗠𝘂𝗹𝘁𝗶𝗽𝗹𝗶𝗲𝗿: _2x_`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png");
                         }
                         //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
                         userEco.money = userEco.money - money;
@@ -308,7 +308,7 @@ module.exports = {
 ┊   🤑𝐆𝐚𝐦𝐛𝐥𝐞𝐫
 ╚◇══════════════◇╝
 💀𝗥𝗲𝘀𝘂𝗹𝘁: _lost *${money}* gold!_
-⭐𝗠𝘂𝗹𝘁𝗶𝗽𝗹𝗶𝗲𝗿: _0x_`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Error.png");
+⭐𝗠𝘂𝗹𝘁𝗶𝗽𝗹𝗶𝗲𝗿: _0x_`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png");
                     }));
                 }));
                 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "

@@ -81,7 +81,7 @@ const messages_upsert = (update, ӄ𝖗𝖞ӄ𝖓𝖟, commandHandler, Konn) => 
 🌿𝐏𝐮𝐧𝐢𝐬𝐡𝐦𝐞𝐧𝐭
 ❗• 𝗪𝗮𝗿𝗻𝗶𝗻𝗴𝘀: 1/4
 ❗• 𝗪𝗮𝗿𝗻𝗲𝗱 𝗧𝗼: @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
-❗• You Will be Auto-Blocked After 4 warnings!`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Orange.png");
+❗• You Will be Auto-Blocked After 4 warnings!`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png");
                 return;
                 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
             }
@@ -104,7 +104,7 @@ const messages_upsert = (update, ӄ𝖗𝖞ӄ𝖓𝖟, commandHandler, Konn) => 
 🌿𝐏𝐮𝐧𝐢𝐬𝐡𝐦𝐞𝐧𝐭
 ❗• 𝗪𝗮𝗿𝗻𝗶𝗻𝗴𝘀: ${user.Amount}/4
 ❗• 𝗪𝗮𝗿𝗻𝗲𝗱 𝗧𝗼: @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
-❗• You Will be Auto-Blocked After 4 warnings!`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Orange.png");
+❗• You Will be Auto-Blocked After 4 warnings!`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png");
                 return;
             }
             else {
@@ -293,7 +293,7 @@ const messages_upsert = (update, ӄ𝖗𝖞ӄ𝖓𝖟, commandHandler, Konn) => 
                             mentionedJid: [AʀƈȶɨӼ.sender],
                         },
                         timestamp: Date(),
-                        image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Error.png" },
+                        image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png" },
                         caption: `✥𝐔𝐬𝐞𝐫: ${Fox.pushName}
 
 *❌𝗘𝗿𝗿𝗼𝗿:* No Such Command In Database.`,

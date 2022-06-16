@@ -60,12 +60,12 @@ module.exports = {
                     Receiver = Fox.message.extendedTextMessage.contextInfo.participant;
                     քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
                     if (Receiver === ʟɴᴀᴍᴇ) {
-                        return Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `❌𝐃𝐞𝐧𝐢𝐞𝐝: _Can't Kick Bot Owner!_`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Error.png");
+                        return Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `❌𝐃𝐞𝐧𝐢𝐞𝐝: _Can't Kick Bot Owner!_`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png");
                     }
                 }
                 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
                 if (!AʀƈȶɨӼ.fromMe && !AʀƈȶɨӼ.isSenderTUFs) {
-                    return Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `❌𝐃𝐞𝐧𝐢𝐞𝐝: _Owner/Dev Only.You Are Not Allowed!_`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Orange.png");
+                    return Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `❌𝐃𝐞𝐧𝐢𝐞𝐝: _Owner/Dev Only.You Are Not Allowed!_`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png");
                 }
                 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
                 if (AʀƈȶɨӼ.isGroup && !AʀƈȶɨӼ.isTextReply) {
@@ -84,10 +84,10 @@ module.exports = {
                             yield newUser
                                 .save()
                                 .catch((error) => Oops_1.default.VOp(TUF, Fox, AʀƈȶɨӼ, error));
-                            return Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `🛡️𝐒𝐮𝐝𝐨 𝐁𝐚𝐧: *${groupData.subject}* Has Been Banned!`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Black_Gold.png");
+                            return Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `🛡️𝐒𝐮𝐝𝐨 𝐁𝐚𝐧: *${groupData.subject}* Has Been Banned!`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png");
                         }
                         else {
-                            return Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `🛡️𝐒𝐮𝐝𝐨 𝐁𝐚𝐧: *${groupData.subject}* Already banned!`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Black_Gold.png");
+                            return Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `🛡️𝐒𝐮𝐝𝐨 𝐁𝐚𝐧: *${groupData.subject}* Already banned!`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png");
                         }
                     }));
                     //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
@@ -107,10 +107,10 @@ module.exports = {
                             yield newUser
                                 .save()
                                 .catch((error) => Oops_1.default.VOp(TUF, Fox, AʀƈȶɨӼ, error));
-                            return Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `🛡️𝐒𝐮𝐝𝐨 𝐁𝐚𝐧: *${քɛʀֆօռɢօȶռʊʍ}* Has Been Banned!`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Black_Gold.png");
+                            return Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `🛡️𝐒𝐮𝐝𝐨 𝐁𝐚𝐧: *${քɛʀֆօռɢօȶռʊʍ}* Has Been Banned!`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png");
                         }
                         else {
-                            return Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `🛡️𝐒𝐮𝐝𝐨 𝐁𝐚𝐧: *${քɛʀֆօռɢօȶռʊʍ}* Already banned!`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Black_Gold.png");
+                            return Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `🛡️𝐒𝐮𝐝𝐨 𝐁𝐚𝐧: *${քɛʀֆօռɢօȶռʊʍ}* Already banned!`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png");
                         }
                     }));
                     //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
