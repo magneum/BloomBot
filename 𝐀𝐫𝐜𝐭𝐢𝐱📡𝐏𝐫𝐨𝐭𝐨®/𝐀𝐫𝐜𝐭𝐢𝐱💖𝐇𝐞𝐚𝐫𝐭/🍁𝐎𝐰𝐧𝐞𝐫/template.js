@@ -49,7 +49,13 @@ module.exports = {
                 const ʟɴᴀᴍᴇ = AʀƈȶɨӼ.sender;
                 const ᴅꜰɴᴀᴍᴇ = AʀƈȶɨӼ.commandName;
                 const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/[^\d+]/g, "");
-                yield TUF.getGroupMetaData(AʀƈȶɨӼ.chatId, AʀƈȶɨӼ);
+                let grup;
+                try {
+                    grup = yield TUF.getGroupMetaData(AʀƈȶɨӼ.chatId, AʀƈȶɨӼ);
+                }
+                catch (e) {
+                    console.log(e);
+                }
                 const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
                 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
                 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "

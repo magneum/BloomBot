@@ -78,9 +78,9 @@ const logger = (0, pino_1.default)({
 }).child({});
 logger.level = "error";
 var Konn = (0, baileys_1.makeInMemoryStore)({ logger });
-Konn === null || Konn === void 0 ? void 0 : Konn.readFromFile("./𝐀𝐫𝐜𝐭𝐢𝐱⚠️𝕿𝖊𝖒𝖕/AʀƈȶɨӼ.json");
+Konn === null || Konn === void 0 ? void 0 : Konn.readFromFile("./AʀƈȶɨӼ.json");
 setInterval(() => {
-    Konn === null || Konn === void 0 ? void 0 : Konn.writeToFile("./𝐀𝐫𝐜𝐭𝐢𝐱⚠️𝕿𝖊𝖒𝖕/AʀƈȶɨӼ.json");
+    Konn === null || Konn === void 0 ? void 0 : Konn.writeToFile("./AʀƈȶɨӼ.json");
 }, 10000);
 // Zygote.findOne(
 // {
