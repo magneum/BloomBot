@@ -86,7 +86,7 @@ for (let mem of MEMBERs) {
 TAGmsg += `@${mem}\n`;
 }
 } else {
-TAGmsg = " Everyone, may i get your attention please!";
+TAGmsg = "*Everyone!* may i get your attention please.";
 }
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 await TUF.sendMessage(
