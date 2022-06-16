@@ -84,7 +84,7 @@ let 𝕻𝕻𝖑𝖊𝖙𝖊𝖗: string;
 try {
 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄ𝖗𝖞ӄ𝖓𝖟.profilePictureUrl(AʀƈȶɨӼ.sender, "image");
 } catch {
-𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png";
+𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Sky.jpg";
 }
 var expFile = `./𝐀𝐫𝐜𝐭𝐢𝐱🐞𝐁𝐞𝐞𝐭𝐥𝐞/${Date.now()}r${Fox.key.id}.png`;
 const user = await Levels.fetch(ʟɴᴀᴍᴇ, AʀƈȶɨӼ.chatId, true);
