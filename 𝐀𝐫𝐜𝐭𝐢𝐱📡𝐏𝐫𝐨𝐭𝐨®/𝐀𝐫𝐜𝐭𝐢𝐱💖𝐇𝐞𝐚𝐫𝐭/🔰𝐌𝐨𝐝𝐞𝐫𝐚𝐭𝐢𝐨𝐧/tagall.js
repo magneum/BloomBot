@@ -42,22 +42,23 @@ module.exports = {
                 const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
                 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
                 if (!AʀƈȶɨӼ.isGroup) {
-                    return Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `❌𝐃𝐞𝐧𝐢𝐞𝐝: _This Command is Only For Groups!_`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Denied.png");
+                    return Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `❌𝐃𝐞𝐧𝐢𝐞𝐝: _This Command is Only For Groups!_`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Error.png");
                 }
                 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
                 if (AʀƈȶɨӼ.isGroup && !AʀƈȶɨӼ.isSenderGroupAdmin) {
-                    return Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `❌𝐃𝐞𝐧𝐢𝐞𝐝: _Admins/Dev Only.You Are Not Allowed!_`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Denied.png");
+                    return Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `❌𝐃𝐞𝐧𝐢𝐞𝐝: _Admins/Dev Only.You Are Not Allowed!_`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Error.png");
                 }
                 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
                 if (AʀƈȶɨӼ.isGroup && !AʀƈȶɨӼ.isBotGroupAdmin) {
-                    return Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `❌𝐃𝐞𝐧𝐢𝐞𝐝: _Bot Not Admin!_`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Denied.png");
+                    return Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `❌𝐃𝐞𝐧𝐢𝐞𝐝: _Bot Not Admin!_`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Error.png");
                 }
                 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-                var tag_message = " ";
-                let MEMBER_A = [];
-                const MetaFor_A = yield ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata(AʀƈȶɨӼ.chatId);
-                for (var i = 0; i < MetaFor_A.participants.length; i++)
-                    MEMBER_A[i] = MetaFor_A.participants[i].id;
+                let MEMBERs;
+                let TAGmsg;
+                yield ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata(AʀƈȶɨӼ.chatId);
+                for (let admin of AʀƈȶɨӼ.groupMembers) {
+                    MEMBERs = admin.id.split("@")[0];
+                }
                 let 𝕻𝕻𝖑𝖊𝖙𝖊𝖗;
                 try {
                     𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = yield ӄ𝖗𝖞ӄ𝖓𝖟.profilePictureUrl(AʀƈȶɨӼ.sender, "image");
@@ -65,15 +66,15 @@ module.exports = {
                 catch (_a) {
                     𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Black_Gold.png";
                 }
-                //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
                 if (ǟʀɢʊʍɛռȶ || ǟʀɢʊʍɛռȶ.length) {
-                    for (let mem of MEMBER_A) {
-                        tag_message += `@${mem}\n`;
+                    for (let mem of MEMBERs) {
+                        TAGmsg += `@${MEMBERs}\n`;
                     }
                 }
                 else {
-                    tag_message = " Everyone, may i get your attention please!";
+                    TAGmsg = " Everyone, may i get your attention please!";
                 }
+                //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
                 yield TUF.sendMessage(AʀƈȶɨӼ.chatId, {
                     quoted: Fox.message,
                     contextInfo: {
@@ -81,7 +82,7 @@ module.exports = {
                     },
                     timestamp: Date(),
                     image: { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 },
-                    caption: `⚡ 𝐅𝐫𝐨𝐦: ${Fox.pushName}\n\n${tag_message}`,
+                    caption: `⚡ 𝐅𝐫𝐨𝐦: ${Fox.pushName}\n\n${ǟʀɢʊʍɛռȶ.join(" ")}\n\n${TAGmsg}`,
                     footer: `⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔`,
                     buttons: [
                         {
@@ -93,7 +94,7 @@ module.exports = {
                     headerType: 4,
                 }, message_type_1.MessageType.buttonsMessage, {
                     contextInfo: {
-                        mentionedJid: MEMBER_A,
+                        mentionedJid: MEMBERs,
                     },
                 });
                 return;

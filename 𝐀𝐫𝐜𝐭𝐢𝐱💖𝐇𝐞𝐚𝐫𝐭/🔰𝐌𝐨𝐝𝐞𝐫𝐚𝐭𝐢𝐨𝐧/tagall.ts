@@ -69,25 +69,26 @@ AʀƈȶɨӼ,
 );
 }
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-var tag_message = " ";
-let MEMBER_A = [];
-const MetaFor_A = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata(AʀƈȶɨӼ.chatId);
-for (var i = 0; i < MetaFor_A.participants.length; i++)
-MEMBER_A[i] = MetaFor_A.participants[i].id;
+let MEMBERs: string;
+let TAGmsg: string;
+await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata(AʀƈȶɨӼ.chatId);
+for (let admin of AʀƈȶɨӼ.groupMembers) {
+MEMBERs = admin.id.split("@")[0];
+}
 let 𝕻𝕻𝖑𝖊𝖙𝖊𝖗: any;
 try {
 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄ𝖗𝖞ӄ𝖓𝖟.profilePictureUrl(AʀƈȶɨӼ.sender, "image");
 } catch {
 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Black_Gold.png";
 }
-//" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 if (ǟʀɢʊʍɛռȶ || ǟʀɢʊʍɛռȶ.length) {
-for (let mem of MEMBER_A) {
-tag_message += `@${mem}\n`;
+for (let mem of MEMBERs) {
+TAGmsg += `@${mem}\n`;
 }
 } else {
-tag_message = " Everyone, may i get your attention please!";
+TAGmsg = " Everyone, may i get your attention please!";
 }
+//" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 await TUF.sendMessage(
 AʀƈȶɨӼ.chatId,
 {
@@ -97,7 +98,9 @@ mentionedJid: AʀƈȶɨӼ.groupAdmins,
 },
 timestamp: Date(),
 image: { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 },
-caption: `⚡ 𝐅𝐫𝐨𝐦: ${Fox.pushName}\n\n${tag_message}`,
+caption: `⚡ 𝐅𝐫𝐨𝐦: ${Fox.pushName}\n\n${ǟʀɢʊʍɛռȶ.join(
+" "
+)}\n\n${TAGmsg}`,
 footer: `⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔`,
 buttons: [
 {
@@ -111,7 +114,7 @@ headerType: 4,
 MessageType.buttonsMessage,
 {
 contextInfo: {
-mentionedJid: MEMBER_A,
+mentionedJid: MEMBERs,
 },
 }
 );
