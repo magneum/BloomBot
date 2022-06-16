@@ -124,7 +124,7 @@ export = {
           AʀƈȶɨӼ.body[0] + AʀƈȶɨӼ.commandName + " ",
           ""
         );
-      } else if (ǟʀɢʊʍɛռȶ || ǟʀɢʊʍɛռȶ.length) {
+      } else if (ǟʀɢʊʍɛռȶ) {
         TAGmsg = ǟʀɢʊʍɛռȶ.join(" ");
       } else {
         TAGmsg = "*Everyone!* May i get your attention please.";
