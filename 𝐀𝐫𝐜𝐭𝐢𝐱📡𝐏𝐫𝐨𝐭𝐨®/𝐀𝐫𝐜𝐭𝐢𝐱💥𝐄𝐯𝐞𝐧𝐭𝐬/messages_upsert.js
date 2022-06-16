@@ -40,6 +40,7 @@ const ______1 = __importDefault(require("../\uD835\uDC00\uD835\uDC2B\uD835\uDC1C
 const Silent_1 = __importDefault(require("../\uD835\uDC00\uD835\uDC2B\uD835\uDC1C\uD835\uDC2D\uD835\uDC22\uD835\uDC31\uD83C\uDC04\uD835\uDC15\uD835\uDC1E\uD835\uDC27\uD835\uDC2D/Silent"));
 const Ranker_1 = __importDefault(require("../\uD835\uDC00\uD835\uDC2B\uD835\uDC1C\uD835\uDC2D\uD835\uDC22\uD835\uDC31\uD83C\uDC04\uD835\uDC15\uD835\uDC1E\uD835\uDC27\uD835\uDC2D/Ranker"));
 const git = require(`simple-git`)();
+const Deny_1 = __importDefault(require("./Deny_"));
 const chalk_1 = __importDefault(require("chalk"));
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 const messages_upsert = (update, ӄ𝖗𝖞ӄ𝖓𝖟, commandHandler, Konn) => __awaiter(void 0, void 0, void 0, function* () {
@@ -54,6 +55,7 @@ const messages_upsert = (update, ӄ𝖗𝖞ӄ𝖓𝖟, commandHandler, Konn) => 
     let TUF = new TUF_1.default(ӄ𝖗𝖞ӄ𝖓𝖟);
     //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
     if (AʀƈȶɨӼ.isCmd) {
+        yield Deny_1.default.Deny_(AʀƈȶɨӼ, ӄ𝖗𝖞ӄ𝖓𝖟, TUF, Fox);
         yield Kooldown.findOne({
             ID: AʀƈȶɨӼ.sender,
         }, (error, userHalt) => __awaiter(void 0, void 0, void 0, function* () {

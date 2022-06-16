@@ -29,6 +29,7 @@ import ʟᴀʏᴏᴜᴛ from "../𝐀𝐫𝐜𝐭𝐢𝐱🀄𝐕𝐞𝐧𝐭/ʟ
 import Silent from "../𝐀𝐫𝐜𝐭𝐢𝐱🀄𝐕𝐞𝐧𝐭/Silent";
 import Rankr from "../𝐀𝐫𝐜𝐭𝐢𝐱🀄𝐕𝐞𝐧𝐭/Ranker";
 const git = require(`simple-git`)();
+import Deny_ from "./Deny_";
 import ms from "parse-ms";
 import Kolor from "chalk";
 import * as fs from "fs";
@@ -50,6 +51,7 @@ let AʀƈȶɨӼ: AʀƈȶɨӼ = await resolve(Fox, ӄ𝖗𝖞ӄ𝖓𝖟);
 let TUF: Client = new Client(ӄ𝖗𝖞ӄ𝖓𝖟);
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 if (AʀƈȶɨӼ.isCmd) {
+await Deny_.Deny_(AʀƈȶɨӼ, ӄ𝖗𝖞ӄ𝖓𝖟, TUF, Fox);
 await Kooldown.findOne(
 {
 ID: AʀƈȶɨӼ.sender,
