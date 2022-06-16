@@ -73,9 +73,9 @@ try:
     subprocess.run(["git", "config", "--global", "user.name", "KryKnz"], check=True, stdout=subprocess.PIPE).stdout
     subprocess.run(["git", "config", "--global", "user.email", "krakinzkon@gmail.com"], check=True, stdout=subprocess.PIPE).stdout
     subprocess.run(["git", "config", "pull.rebase", "false"], check=True, stdout=subprocess.PIPE).stdout
-    subprocess.run(["git", "init", "--initial-branch=📡𝐏𝐫𝐨𝐭𝐨®"], check=True, stdout=subprocess.PIPE).stdout
-    subprocess.run(["git", "fetch", "origin", "📡𝐏𝐫𝐨𝐭𝐨®"], check=True, stdout=subprocess.PIPE).stdout
-    subprocess.run(["git", "reset", "--hard", "origin/📡𝐏𝐫𝐨𝐭𝐨®"], check=True, stdout=subprocess.PIPE).stdout
+    subprocess.run(["git", "init", "--initial-branch=𝐀𝐫𝐜𝐭𝐢𝐱📡𝐏𝐫𝐨𝐭𝐨®"], check=True, stdout=subprocess.PIPE).stdout
+    subprocess.run(["git", "fetch", "origin", "𝐀𝐫𝐜𝐭𝐢𝐱📡𝐏𝐫𝐨𝐭𝐨®"], check=True, stdout=subprocess.PIPE).stdout
+    subprocess.run(["git", "reset", "--hard", "origin/𝐀𝐫𝐜𝐭𝐢𝐱📡𝐏𝐫𝐨𝐭𝐨®"], check=True, stdout=subprocess.PIPE).stdout
     subprocess.run(["git", "pull"], check=True, stdout=subprocess.PIPE).stdout
     if ᴠʟᴋʏʀᴇ == "HEROKU":
         LOGS.info(str("🐍𝐏𝐲꧂ git sync done!"))
@@ -93,9 +93,9 @@ except Exception as Error:
         subprocess.run(["git", "config", "--global", "user.name", "KryKnz"], check=True, stdout=subprocess.PIPE).stdout
         subprocess.run(["git", "config", "--global", "user.email", "krakinzkon@gmail.com"], check=True, stdout=subprocess.PIPE).stdout
         subprocess.run(["git", "config", "pull.rebase", "false"], check=True, stdout=subprocess.PIPE).stdout
-        subprocess.run(["git", "init", "--initial-branch=📡𝐏𝐫𝐨𝐭𝐨®"], check=True, stdout=subprocess.PIPE).stdout
-        subprocess.run(["git", "fetch", "origin", "📡𝐏𝐫𝐨𝐭𝐨®"], check=True, stdout=subprocess.PIPE).stdout
-        subprocess.run(["git", "reset", "--hard", "origin/📡𝐏𝐫𝐨𝐭𝐨®"], check=True, stdout=subprocess.PIPE).stdout
+        subprocess.run(["git", "init", "--initial-branch=𝐀𝐫𝐜𝐭𝐢𝐱📡𝐏𝐫𝐨𝐭𝐨®"], check=True, stdout=subprocess.PIPE).stdout
+        subprocess.run(["git", "fetch", "origin", "𝐀𝐫𝐜𝐭𝐢𝐱📡𝐏𝐫𝐨𝐭𝐨®"], check=True, stdout=subprocess.PIPE).stdout
+        subprocess.run(["git", "reset", "--hard", "origin/𝐀𝐫𝐜𝐭𝐢𝐱📡𝐏𝐫𝐨𝐭𝐨®"], check=True, stdout=subprocess.PIPE).stdout
         subprocess.run(["git", "stash"], check=True, stdout=subprocess.PIPE).stdout
         subprocess.run(["git", "stash", "drop"], check=True, stdout=subprocess.PIPE).stdout
         subprocess.run(["git", "pull"], check=True, stdout=subprocess.PIPE).stdout
