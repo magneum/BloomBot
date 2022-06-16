@@ -90,11 +90,11 @@ const TubeVideo = (TUF, Fox, AʀƈȶɨӼ, Found) => __awaiter(void 0, void 0, vo
                 timestamp: Date(),
                 video: fs.readFileSync(FFmpegFile),
                 mimetype: "video/mp4",
-                caption: `┌─「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢® 」
-├• *Tαɠ:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
-├• *Nαɱҽ:* ${Fox.pushName}
-├• *Cσɱɱαɳԃ:* ${AʀƈȶɨӼ.commandName}
-└────────────◇
+                caption: `┌─「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐏𝐫𝐨𝐭𝐨® 」
+├• ɴᴀᴍᴇ: ${Fox.pushName}
+├• ᴍᴇɴᴛɪᴏɴ: @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
+├• ᴄᴏᴍᴍᴀɴᴅ: ${AʀƈȶɨӼ.commandName}
+└────────────────◇
 
 𝐘𝐨𝐮𝐓𝐮𝐛𝐞📹𝐕𝐢𝐝𝐞𝐨
 🍻𝗧𝗶𝘁𝗹𝗲: ${Found.title}
@@ -118,6 +118,7 @@ const TubeVideo = (TUF, Fox, AʀƈȶɨӼ, Found) => __awaiter(void 0, void 0, vo
             }, message_type_1.MessageType.buttonsMessage)
                 .then(VOID.VOID(FFmpegFile))
                 .catch((error) => Oops_1.default.VOp(TUF, Fox, AʀƈȶɨӼ, error));
+            //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
         }
         catch (error) {
             const downloadFFmpegFile = ytdl(Found.url, {
@@ -135,11 +136,11 @@ const TubeVideo = (TUF, Fox, AʀƈȶɨӼ, Found) => __awaiter(void 0, void 0, vo
                     timestamp: Date(),
                     video: fs.readFileSync(FFmpegFile),
                     mimetype: "video/mp4",
-                    caption: `┌─「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢® 」
-├• *Tαɠ:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
-├• *Nαɱҽ:* ${Fox.pushName}
-├• *Cσɱɱαɳԃ:* ${AʀƈȶɨӼ.commandName}
-└────────────◇
+                    caption: `┌─「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐏𝐫𝐨𝐭𝐨® 」
+├• ɴᴀᴍᴇ: ${Fox.pushName}
+├• ᴍᴇɴᴛɪᴏɴ: @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
+├• ᴄᴏᴍᴍᴀɴᴅ: ${AʀƈȶɨӼ.commandName}
+└────────────────◇
 
 𝐘𝐨𝐮𝐓𝐮𝐛𝐞📹𝐕𝐢𝐝𝐞𝐨
 🍻𝗧𝗶𝘁𝗹𝗲: ${Found.title}

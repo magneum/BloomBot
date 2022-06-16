@@ -25,11 +25,11 @@ const Image_Button = (TUF, Fox, AʀƈȶɨӼ, caption, media) => __awaiter(void 0
             timestamp: Date(),
             contextInfo: { mentionedJid: [AʀƈȶɨӼ.sender] },
             image: { url: media },
-            caption: `┌─「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢® 」
-├• *Tαɠ:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
-├• *Nαɱҽ:* ${Fox.pushName}
-├• *Cσɱɱαɳԃ:* ${AʀƈȶɨӼ.commandName}
-└────────────◇
+            caption: `┌─「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐏𝐫𝐨𝐭𝐨® 」
+├• *ɴᴀᴍᴇ:* ${Fox.pushName}
+├• *ᴍᴇɴᴛɪᴏɴ:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
+├• *ᴄᴏᴍᴍᴀɴᴅ:* ${AʀƈȶɨӼ.commandName}
+└────────────────◇
 
 ${caption}`,
             footer: `⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ⦔`,

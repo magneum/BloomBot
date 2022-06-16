@@ -108,12 +108,11 @@ module.exports = {
                     ])
                         .save(Composed_File)
                         .on("end", () => __awaiter(this, void 0, void 0, function* () {
-                        yield Sticker_Button_1.default.VSbt(TUF, Fox, AʀƈȶɨӼ, ǟʀɢʊʍɛռȶ, `╔═⟢  𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®
-║
-║♩ *Tαɠ:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
-║♭ *Nαɱҽ:* ${Fox.pushName}
-║♪ *Cσɱɱαɳԃ:* ${AʀƈȶɨӼ.commandName}
-╚═════⟢
+                        yield Sticker_Button_1.default.VSbt(TUF, Fox, AʀƈȶɨӼ, ǟʀɢʊʍɛռȶ, `┌─「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐏𝐫𝐨𝐭𝐨® 」
+├• *ɴᴀᴍᴇ:* ${Fox.pushName}
+├• *ᴍᴇɴᴛɪᴏɴ:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
+├• *ᴄᴏᴍᴍᴀɴᴅ:* ${AʀƈȶɨӼ.commandName}
+└────────────────◇
 
 🍕𝐅𝐫𝐨𝐦: _${Fox.pushName}_
 🌭𝐓𝐨: @${TagPerson}`, Composed_File);
@@ -135,12 +134,11 @@ module.exports = {
                         ])
                             .save(Composed_File)
                             .on("end", () => __awaiter(this, void 0, void 0, function* () {
-                            yield Sticker_Button_1.default.VSbt(TUF, Fox, AʀƈȶɨӼ, ǟʀɢʊʍɛռȶ, `╔═⟢  𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®
-║
-║♩ *Tαɠ:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
-║♭ *Nαɱҽ:* ${Fox.pushName}
-║♪ *Cσɱɱαɳԃ:* ${AʀƈȶɨӼ.commandName}
-╚═════⟢
+                            yield Sticker_Button_1.default.VSbt(TUF, Fox, AʀƈȶɨӼ, ǟʀɢʊʍɛռȶ, `┌─「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐏𝐫𝐨𝐭𝐨® 」
+├• *ɴᴀᴍᴇ:* ${Fox.pushName}
+├• *ᴍᴇɴᴛɪᴏɴ:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
+├• *ᴄᴏᴍᴍᴀɴᴅ:* ${AʀƈȶɨӼ.commandName}
+└────────────────◇
 
 🍕𝐅𝐨𝐫: _${Fox.pushName}_`, Composed_File);
                             return yield VOID.VOID(Composed_File, Fresh_File);
@@ -157,12 +155,11 @@ module.exports = {
                         ])
                             .save(Composed_File)
                             .on("end", () => __awaiter(this, void 0, void 0, function* () {
-                            yield Sticker_Button_1.default.VSbt(TUF, Fox, AʀƈȶɨӼ, ǟʀɢʊʍɛռȶ, `╔═⟢  𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®
-║
-║♩ *Tαɠ:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
-║♭ *Nαɱҽ:* ${Fox.pushName}
-║♪ *Cσɱɱαɳԃ:* ${AʀƈȶɨӼ.commandName}
-╚═════⟢
+                            yield Sticker_Button_1.default.VSbt(TUF, Fox, AʀƈȶɨӼ, ǟʀɢʊʍɛռȶ, `┌─「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐏𝐫𝐨𝐭𝐨® 」
+├• *ɴᴀᴍᴇ:* ${Fox.pushName}
+├• *ᴍᴇɴᴛɪᴏɴ:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
+├• *ᴄᴏᴍᴍᴀɴᴅ:* ${AʀƈȶɨӼ.commandName}
+└────────────────◇
 
 🍕𝐅𝐫𝐨𝐦: _${Fox.pushName}_
 🌭𝐓𝐨: _@${քɛʀֆօռɢօȶռʊʍ}_`, Composed_File);
@@ -182,12 +179,11 @@ module.exports = {
                     ])
                         .save(Composed_File)
                         .on("end", () => __awaiter(this, void 0, void 0, function* () {
-                        yield Sticker_Button_1.default.VSbt(TUF, Fox, AʀƈȶɨӼ, ǟʀɢʊʍɛռȶ, `╔═⟢  𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®
-║
-║♩ *Tαɠ:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
-║♭ *Nαɱҽ:* ${Fox.pushName}
-║♪ *Cσɱɱαɳԃ:* ${AʀƈȶɨӼ.commandName}
-╚═════⟢
+                        yield Sticker_Button_1.default.VSbt(TUF, Fox, AʀƈȶɨӼ, ǟʀɢʊʍɛռȶ, `┌─「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐏𝐫𝐨𝐭𝐨® 」
+├• *ɴᴀᴍᴇ:* ${Fox.pushName}
+├• *ᴍᴇɴᴛɪᴏɴ:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
+├• *ᴄᴏᴍᴍᴀɴᴅ:* ${AʀƈȶɨӼ.commandName}
+└────────────────◇
 
 🍕𝐅𝐨𝐫: _${Fox.pushName}_`, Composed_File);
                         return yield VOID.VOID(Composed_File, Fresh_File);

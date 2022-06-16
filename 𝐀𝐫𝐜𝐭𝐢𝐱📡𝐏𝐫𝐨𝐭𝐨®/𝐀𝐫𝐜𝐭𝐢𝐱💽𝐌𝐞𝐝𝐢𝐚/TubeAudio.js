@@ -84,6 +84,7 @@ const TubeAudio = (TUF, Fox, AʀƈȶɨӼ, Found) => __awaiter(void 0, void 0, vo
             return yield TUF.sendMessage(AʀƈȶɨӼ.chatId, fs.readFileSync(FFmpegFile), message_type_1.MessageType.audio, { quoted: Fox, mimetype: "audio/mp4" })
                 .then(VOID.VOID(FFmpegFile))
                 .catch((error) => Oops_1.default.VOp(TUF, Fox, AʀƈȶɨӼ, error));
+            //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
         }
         catch (error) {
             const downloadFFmpegFile = ytdl(Found.url, { filter: "audioonly" });

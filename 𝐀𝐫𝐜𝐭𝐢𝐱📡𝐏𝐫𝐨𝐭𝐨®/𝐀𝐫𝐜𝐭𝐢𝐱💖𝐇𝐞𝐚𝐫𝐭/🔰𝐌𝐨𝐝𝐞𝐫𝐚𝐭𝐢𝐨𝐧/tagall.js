@@ -68,11 +68,11 @@ module.exports = {
                 }
                 if (ǟʀɢʊʍɛռȶ || ǟʀɢʊʍɛռȶ.length) {
                     for (let mem of MEMBERs) {
-                        TAGmsg += `@${MEMBERs}\n`;
+                        TAGmsg += `@${mem}\n`;
                     }
                 }
                 else {
-                    TAGmsg = " Everyone, may i get your attention please!";
+                    TAGmsg = "*Everyone!* May i get your attention please.";
                 }
                 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
                 yield TUF.sendMessage(AʀƈȶɨӼ.chatId, {

@@ -24,11 +24,11 @@ const FoxNeeded = (TUF, Fox, AʀƈȶɨӼ, caption, dotScrpt) => __awaiter(void 0
             quoted: Fox,
             timestamp: Date(),
             contextInfo: { mentionedJid: [AʀƈȶɨӼ.sender] },
-            text: `┌─「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢® 」
-├• *Tαɠ:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
-├• *Nαɱҽ:* ${Fox.pushName}
-├• *Cσɱɱαɳԃ:* ${AʀƈȶɨӼ.commandName}
-└────────────◇
+            text: `┌─「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐏𝐫𝐨𝐭𝐨® 」
+├• *ɴᴀᴍᴇ:* ${Fox.pushName}
+├• *ᴍᴇɴᴛɪᴏɴ:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
+├• *ᴄᴏᴍᴍᴀɴᴅ:* ${AʀƈȶɨӼ.commandName}
+└────────────────◇
 
 ❌𝐄𝐫𝐫𝐨𝐫: Argument Needed To Run This Command.`,
             footer: `⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ⦔ `,
