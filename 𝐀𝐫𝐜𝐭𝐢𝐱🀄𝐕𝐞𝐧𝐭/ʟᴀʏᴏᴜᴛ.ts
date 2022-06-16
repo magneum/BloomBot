@@ -6,7 +6,7 @@
 import fs from "fs";
 import { Sequelize } from "sequelize";
 if (fs.existsSync("AʀƈȶɨӼ.env")) {
-require("dotenv").config({ path: "./AʀƈȶɨӼ.env" });
+require("dotenv").config({ path: "./𝐀𝐫𝐜𝐭𝐢𝐱🐞𝐁𝐞𝐞𝐭𝐥𝐞/AʀƈȶɨӼ.env" });
 } else {
 require("dotenv");
 }
