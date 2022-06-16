@@ -47,9 +47,9 @@ timestamp: () => `,"Time":"${new Date().toJSON()}"`,
 }).child({});
 logger.level = "error";
 var Konn = makeInMemoryStore({ logger });
-Konn?.readFromFile("./𝐀𝐫𝐜𝐭𝐢𝐱🐞𝐁𝐞𝐞𝐭𝐥𝐞/AʀƈȶɨӼ.json");
+Konn?.readFromFile("./AʀƈȶɨӼ.json");
 setInterval(() => {
-Konn?.writeToFile("./𝐀𝐫𝐜𝐭𝐢𝐱🐞𝐁𝐞𝐞𝐭𝐥𝐞/AʀƈȶɨӼ.json");
+Konn?.writeToFile("./AʀƈȶɨӼ.json");
 }, 10_000);
 // Zygote.findOne(
 // {

@@ -31,9 +31,6 @@ process.env.DATABASE_URL =
     process.env.DATABASE_URL === undefined
         ? "./AʀƈȶɨӼ.db"
         : process.env.DATABASE_URL;
-process.env.DEBUG =
-    process.env.DEBUG === undefined ? "false" : process.env.DEBUG;
-//" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 const ʟᴀʏᴏᴜᴛ = {
     Ten: process.env.Ten,
     VMango: process.env.VMango,
@@ -50,14 +47,19 @@ const ʟᴀʏᴏᴜᴛ = {
     Weather: process.env.CURRENT_WEATHER_API_KEY,
     TUFs: process.env.TUFs,
     OFFLINE_RESPONSE: process.env.OFFLINE_RESPONSE,
-    DATABASE_URL: process.env.DATABASE_URL === undefined ? "./AʀƈȶɨӼ.db" : process.env.DATABASE_URL,
-    DATABASE: process.env.DATABASE_URL === "./AʀƈȶɨӼ.db" ?
-        new sequelize_1.Sequelize({ dialect: "sqlite",
-            storage: process.env.DATABASE_URL, logging: Log(process.env.DEBUG), })
+    DATABASE_URL: process.env.DATABASE_URL === undefined
+        ? "./AʀƈȶɨӼ.db"
+        : process.env.DATABASE_URL,
+    DATABASE: process.env.DATABASE_URL === "./AʀƈȶɨӼ.db"
+        ? new sequelize_1.Sequelize({
+            dialect: "sqlite",
+            storage: process.env.DATABASE_URL,
+            logging: Log("false"),
+        })
         : new sequelize_1.Sequelize(process.env.DATABASE_URL, {
             dialect: "postgres",
             protocol: "postgres",
-            logging: Log(process.env.DEBUG),
+            logging: Log("false"),
             dialectOptions: { ssl: { require: true, rejectUnauthorized: false } },
         }),
     PREFIX: "^[!]",

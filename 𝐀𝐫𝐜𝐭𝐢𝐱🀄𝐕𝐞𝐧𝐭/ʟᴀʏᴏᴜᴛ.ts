@@ -6,17 +6,25 @@
 import fs from "fs";
 import { Sequelize } from "sequelize";
 if (fs.existsSync("AʀƈȶɨӼ.env")) {
-require("dotenv").config({ path: "./𝐀𝐫𝐜𝐭𝐢𝐱🐞𝐁𝐞𝐞𝐭𝐥𝐞/AʀƈȶɨӼ.env" });
-}
+require("dotenv").config({ path: "./AʀƈȶɨӼ.env" });
+} else {
 require("dotenv");
+}
+//" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
+const Log = (value: string) => {
+var log: any = false;
+if (typeof value === "string") {
+if (value.toLowerCase() === "true") {
+log = console.log;
+}
+}
+return log;
+};
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 process.env.DATABASE_URL =
 process.env.DATABASE_URL === undefined
 ? "./AʀƈȶɨӼ.db"
 : process.env.DATABASE_URL;
-process.env.DEBUG =
-process.env.DEBUG === undefined ? "false" : process.env.DEBUG;
-//" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 const ʟᴀʏᴏᴜᴛ = {
 Ten: process.env.Ten,
 VMango: process.env.VMango,
@@ -36,17 +44,19 @@ TUFs: process.env.TUFs,
 OFFLINE_RESPONSE: process.env.OFFLINE_RESPONSE,
 DATABASE_URL:
 process.env.DATABASE_URL === undefined
-? "./𝐀𝐫𝐜𝐭𝐢𝐱🐞𝐁𝐞𝐞𝐭𝐥𝐞/AʀƈȶɨӼ.db"
+? "./AʀƈȶɨӼ.db"
 : process.env.DATABASE_URL,
 DATABASE:
-process.env.DATABASE_URL === "./𝐀𝐫𝐜𝐭𝐢𝐱🐞𝐁𝐞𝐞𝐭𝐥𝐞/AʀƈȶɨӼ.db"
+process.env.DATABASE_URL === "./AʀƈȶɨӼ.db"
 ? new Sequelize({
 dialect: "sqlite",
 storage: process.env.DATABASE_URL,
+logging: Log("false"),
 })
 : new Sequelize(process.env.DATABASE_URL, {
 dialect: "postgres",
 protocol: "postgres",
+logging: Log("false"),
 dialectOptions: { ssl: { require: true, rejectUnauthorized: false } },
 }),
 PREFIX: "^[!]",
