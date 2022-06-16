@@ -10,16 +10,6 @@ require("dotenv").config({ path: "./𝐀𝐫𝐜𝐭𝐢𝐱🐞𝐁𝐞𝐞𝐭
 }
 require("dotenv");
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-const Log = (value: string) => {
-var log: any = false;
-if (typeof value === "string") {
-if (value.toLowerCase() === "true") {
-log = console.log;
-}
-}
-return log;
-};
-//" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 process.env.DATABASE_URL =
 process.env.DATABASE_URL === undefined
 ? "./AʀƈȶɨӼ.db"
@@ -57,7 +47,6 @@ storage: process.env.DATABASE_URL,
 : new Sequelize(process.env.DATABASE_URL, {
 dialect: "postgres",
 protocol: "postgres",
-logging: Log(process.env.DEBUG),
 dialectOptions: { ssl: { require: true, rejectUnauthorized: false } },
 }),
 PREFIX: "^[!]",
