@@ -29,7 +29,7 @@ RUN git clone https://github.com/KryKnz/Vlkyre.git && cd Vlkyre
 WORKDIR /Vlkyre
 RUN export TERM=xterm
 RUN pip install -r ⭕𝖈𝖆𝖗𝖆.txt && npm install --force --save && rm package-lock.json && npm install -g spotify-dl spdl-core
-git config --global user.name 'KryKnz' && git config --global user.email 'krakinzkon@gmail.com' && git config pull.rebase false && git init --initial-branch=𝐀𝐫𝐜𝐭𝐢𝐱📡𝐏𝐫𝐨𝐭𝐨® && git fetch origin 𝐀𝐫𝐜𝐭𝐢𝐱📡𝐏𝐫𝐨𝐭𝐨® && git reset --hard origin/𝐀𝐫𝐜𝐭𝐢𝐱📡𝐏𝐫𝐨𝐭𝐨®RUN 
+RUN git config --global user.name 'KryKnz' && git config --global user.email 'krakinzkon@gmail.com' && git config pull.rebase false && git init --initial-branch=𝐀𝐫𝐜𝐭𝐢𝐱📡𝐏𝐫𝐨𝐭𝐨® && git fetch origin 𝐀𝐫𝐜𝐭𝐢𝐱📡𝐏𝐫𝐨𝐭𝐨® && git reset --hard origin/𝐀𝐫𝐜𝐭𝐢𝐱📡𝐏𝐫𝐨𝐭𝐨®RUN 
 CMD python3 𝐀𝐫𝐜𝐭𝐢𝐱⭕𝖈𝖆𝖗𝖆.py
 # |⬡════════════════════════════════════════════|⌜ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|
 # NOTE: THIS DOCKERFILE IS GENERATED VIA "apply-templates.sh"
