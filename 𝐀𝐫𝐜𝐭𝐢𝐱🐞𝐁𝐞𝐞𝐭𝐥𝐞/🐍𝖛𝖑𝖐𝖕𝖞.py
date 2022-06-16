@@ -71,7 +71,7 @@ else:
         cprint(f"🐍𝐏𝐲꧂ package.json File does not exist!", "green")       
 try:
     subprocess.run(["git", "config", "--global", "user.name", "KryKnz"], check=True, stdout=subprocess.PIPE).stdout
-    subprocess.run(["git", "config", "--global", "user.email", "KryKnz@yandex.com"], check=True, stdout=subprocess.PIPE).stdout
+    subprocess.run(["git", "config", "--global", "user.email", "krakinzkon@gmail.com"], check=True, stdout=subprocess.PIPE).stdout
     subprocess.run(["git", "config", "pull.rebase", "false"], check=True, stdout=subprocess.PIPE).stdout
     subprocess.run(["git", "init", "--initial-branch=📡𝐏𝐫𝐨𝐭𝐨®"], check=True, stdout=subprocess.PIPE).stdout
     subprocess.run(["git", "fetch", "origin", "📡𝐏𝐫𝐨𝐭𝐨®"], check=True, stdout=subprocess.PIPE).stdout
@@ -91,7 +91,7 @@ except Exception as Error:
         cprint("🐍𝐏𝐲꧂ Trying TO Stash and ReTry!", "yellow")
     try:
         subprocess.run(["git", "config", "--global", "user.name", "KryKnz"], check=True, stdout=subprocess.PIPE).stdout
-        subprocess.run(["git", "config", "--global", "user.email", "KryKnz@yandex.com"], check=True, stdout=subprocess.PIPE).stdout
+        subprocess.run(["git", "config", "--global", "user.email", "krakinzkon@gmail.com"], check=True, stdout=subprocess.PIPE).stdout
         subprocess.run(["git", "config", "pull.rebase", "false"], check=True, stdout=subprocess.PIPE).stdout
         subprocess.run(["git", "init", "--initial-branch=📡𝐏𝐫𝐨𝐭𝐨®"], check=True, stdout=subprocess.PIPE).stdout
         subprocess.run(["git", "fetch", "origin", "📡𝐏𝐫𝐨𝐭𝐨®"], check=True, stdout=subprocess.PIPE).stdout
