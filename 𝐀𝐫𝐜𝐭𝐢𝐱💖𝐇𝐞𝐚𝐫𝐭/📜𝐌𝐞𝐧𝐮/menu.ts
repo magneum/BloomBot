@@ -61,62 +61,52 @@ caption: `┌─「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐏𝐫𝐨𝐭𝐨® 」
 └────────────────◇
 
 
-◇⚡𝐁𝐞𝐥𝐨𝐰 𝐅𝐮𝐥𝐥 𝐋𝐢𝐬𝐭⚡◇
+⚡「  𝐁𝐞𝐥𝐨𝐰 𝐅𝐮𝐥𝐥 𝐋𝐢𝐬𝐭 」⚡
+
 ┌─「 👇🏽  𝗚𝗮𝗺𝗲𝘀 👇🏽」
-├•
-├•💰 ${ʟᴀʏᴏᴜᴛ.MuveOn}shop
-├•💰 ${ʟᴀʏᴏᴜᴛ.MuveOn}zoo
 ├•💰 ${ʟᴀʏᴏᴜᴛ.MuveOn}inv
-├•💰 ${ʟᴀʏᴏᴜᴛ.MuveOn}buy
-├•💰 ${ʟᴀʏᴏᴜᴛ.MuveOn}pay
+├•💰 ${ʟᴀʏᴏᴜᴛ.MuveOn}rob
+├•💰 ${ʟᴀʏᴏᴜᴛ.MuveOn}zoo
 ├•💰 ${ʟᴀʏᴏᴜᴛ.MuveOn}hunt
-├•💰 ${ʟᴀʏᴏᴜᴛ.MuveOn}gamble
-├•💰 ${ʟᴀʏᴏᴜᴛ.MuveOn}fish
+├•💰 ${ʟᴀʏᴏᴜᴛ.MuveOn}shop
 ├•💰 ${ʟᴀʏᴏᴜᴛ.MuveOn}daily
-├•💰 ${ʟᴀʏᴏᴜᴛ.MuveOn}work
+├•💰 ${ʟᴀʏᴏᴜᴛ.MuveOn}gamble
+├•💰 ${ʟᴀʏᴏᴜᴛ.MuveOn}trivia
 ├•💰 ${ʟᴀʏᴏᴜᴛ.MuveOn}balance
-├•💰 ${ʟᴀʏᴏᴜᴛ.MuveOn}rob  _(beta)_
-├•💰 ${ʟᴀʏᴏᴜᴛ.MuveOn}truthdare
+├•💰 ${ʟᴀʏᴏᴜᴛ.MuveOn}buy
+├•💰 ${ʟᴀʏᴏᴜᴛ.MuveOn}bal
+├•💰 ${ʟᴀʏᴏᴜᴛ.MuveOn}bag
 └────────────◇
 
 ┌─「 👇🏽 𝐒𝐞𝐚𝐫𝐜𝐡 👇🏽」
-├•  
-├•🔎 ${ʟᴀʏᴏᴜᴛ.MuveOn}ytsearch
-├•🔎 ${ʟᴀʏᴏᴜᴛ.MuveOn}lyrics
+├•🔎 ${ʟᴀʏᴏᴜᴛ.MuveOn}anime
+├•🔎 ${ʟᴀʏᴏᴜᴛ.MuveOn}gif
 ├•🔎 ${ʟᴀʏᴏᴜᴛ.MuveOn}github
-├•🔎 ${ʟᴀʏᴏᴜᴛ.MuveOn}pinterest
-├•🔎 ${ʟᴀʏᴏᴜᴛ.MuveOn}weather
 ├•🔎 ${ʟᴀʏᴏᴜᴛ.MuveOn}google 
-├•🔎 ${ʟᴀʏᴏᴜᴛ.MuveOn}wikipedia
 ├•🔎 ${ʟᴀʏᴏᴜᴛ.MuveOn}ud
-├•🔎 ${ʟᴀʏᴏᴜᴛ.MuveOn}tenor
+├•🔎 ${ʟᴀʏᴏᴜᴛ.MuveOn}youtub
+├•🔎 ${ʟᴀʏᴏᴜᴛ.MuveOn}yts
 ├•🔎 ${ʟᴀʏᴏᴜᴛ.MuveOn}gif
 ├•🔎 ${ʟᴀʏᴏᴜᴛ.MuveOn}wallpaper
 └────────────◇
 
 ┌─「 👇🏽 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫𝐬 👇🏽」
-├•  
-├•📥 ${ʟᴀʏᴏᴜᴛ.MuveOn}play: (80mb max)
-├•📥 ${ʟᴀʏᴏᴜᴛ.MuveOn}watch: (50mb max)
-├•📥 ${ʟᴀʏᴏᴜᴛ.MuveOn}soundcloud
+├•📥 ${ʟᴀʏᴏᴜᴛ.MuveOn}play
+├•📥 ${ʟᴀʏᴏᴜᴛ.MuveOn}watch
 ├•📥 ${ʟᴀʏᴏᴜᴛ.MuveOn}spotify
-├•📥 ${ʟᴀʏᴏᴜᴛ.MuveOn}gifdl
-├•📥 ${ʟᴀʏᴏᴜᴛ.MuveOn}imagedl
-├•📥 ${ʟᴀʏᴏᴜᴛ.MuveOn}videodl
+├•📥 ${ʟᴀʏᴏᴜᴛ.MuveOn}soundcloud
 └────────────◇
 
-┌─「 👇🏽 𝐅𝐅𝐦𝐩𝐞𝐠 👇🏽」
-├•  
-├•🗂️ ${ʟᴀʏᴏᴜᴛ.MuveOn}tomp3
-├•🗂️ ${ʟᴀʏᴏᴜᴛ.MuveOn}img2url
-├•🗂️ ${ʟᴀʏᴏᴜᴛ.MuveOn}ocr
-├•🗂️ ${ʟᴀʏᴏᴜᴛ.MuveOn}sticker
-├•🗂️ ${ʟᴀʏᴏᴜᴛ.MuveOn}carbon
-├•🗂️ ${ʟᴀʏᴏᴜᴛ.MuveOn}tinyurl
+┌─「 👇🏽 𝐂𝐨𝐧𝐯𝐞𝐫𝐭𝐞𝐫 👇🏽」
+├•📼 ${ʟᴀʏᴏᴜᴛ.MuveOn}carbon
+├•📼 ${ʟᴀʏᴏᴜᴛ.MuveOn}steal
+├•📼 ${ʟᴀʏᴏᴜᴛ.MuveOn}sticker
+├•📼 ${ʟᴀʏᴏᴜᴛ.MuveOn}tinyurl
+├•📼 ${ʟᴀʏᴏᴜᴛ.MuveOn}tourl
+├•📼 ${ʟᴀʏᴏᴜᴛ.MuveOn}svdo
 └────────────◇
 
 ┌─「 👇🏽 𝐘𝐨𝐮𝐓𝐮𝐛𝐞+𝐅𝐢𝐥𝐭𝐞𝐫 👇🏽」
-├•  
 ├•⭕ ${ʟᴀʏᴏᴜᴛ.MuveOn}yt8d
 ├•⭕ ${ʟᴀʏᴏᴜᴛ.MuveOn}ytbassboost
 ├•⭕ ${ʟᴀʏᴏᴜᴛ.MuveOn}ytecho
@@ -135,7 +125,6 @@ caption: `┌─「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐏𝐫𝐨𝐭𝐨® 」
 └────────────◇
 
 ┌─「 👇🏽 𝐅𝐢𝐥𝐭𝐞𝐫𝐬/𝐀𝐮𝐝𝐢𝐨 👇🏽」
-├•  
 ├•🍰 ${ʟᴀʏᴏᴜᴛ.MuveOn}8d
 ├•🍰 ${ʟᴀʏᴏᴜᴛ.MuveOn}bassboost
 ├•🍰 ${ʟᴀʏᴏᴜᴛ.MuveOn}echo
@@ -155,157 +144,61 @@ caption: `┌─「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐏𝐫𝐨𝐭𝐨® 」
 └────────────◇
 
 ┌─「 👇🏽 𝐎𝐰𝐧𝐞𝐫 👇🏽」
-├•  
-├•👑 ${ʟᴀʏᴏᴜᴛ.MuveOn}join
-├•👑 ${ʟᴀʏᴏᴜᴛ.MuveOn}dyno
 ├•👑 ${ʟᴀʏᴏᴜᴛ.MuveOn}ban
-├•👑 ${ʟᴀʏᴏᴜᴛ.MuveOn}unban
-├•👑 ${ʟᴀʏᴏᴜᴛ.MuveOn}broadcast
-├•👑 ${ʟᴀʏᴏᴜᴛ.MuveOn}bugreport
-├•👑 ${ʟᴀʏᴏᴜᴛ.MuveOn}help
 ├•👑 ${ʟᴀʏᴏᴜᴛ.MuveOn}reboot
-├•👑 ${ʟᴀʏᴏᴜᴛ.MuveOn}broadcast
-├•👑 ${ʟᴀʏᴏᴜᴛ.MuveOn}leave
-├•👑 ${ʟᴀʏᴏᴜᴛ.MuveOn}spam
+├•👑 ${ʟᴀʏᴏᴜᴛ.MuveOn}support
+├•👑 ${ʟᴀʏᴏᴜᴛ.MuveOn}unban
+├•👑 ${ʟᴀʏᴏᴜᴛ.MuveOn}help
+├•👑 ${ʟᴀʏᴏᴜᴛ.MuveOn}menu
 └────────────◇
 
-┌─「 👇🏽 𝐀𝐧𝐢𝐦𝐞 👇🏽」
-├•  
-├•🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}anime
-├•🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}ranimewall
-├•🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}smile
-├•🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}yes
-├•🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}bite
-├•🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}blush
-├•🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}bored
-├•🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}confused
-├•🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}cry
-├•🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}goodnight
-├•🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}happy
-├•🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}hi5
-├•🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}poke
-├•🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}sad
-├•🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}thinking
-├•🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}cuddle
-├•🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}hug
-├•🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}pat
-├•🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}slap
-├•🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}wink
-├•🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}angry
-├•🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}baka
-├•🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}bonk
-├•🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}bully
-├•🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}bye
-├•🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}chase
-├•🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}cheer
-├•🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}cringe
-├•🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}dab
-├•🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}dance
-├•🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}die
-├•🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}facepalm
-├•🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}feed
-├•🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}glomp
-├•🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}hold
-├•🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}hate
-├•🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}hi
-├•🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}kill
-├•🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}lick
-├•🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}love
-├•🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}lurk
-├•🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}nervous
-├•🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}nope
-├•🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}nom
-├•🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}nuzzle
-├•🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}panic
-├•🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}peck
-├•🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}pout
-├•🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}run
-├•🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}sip
-├•🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}shoot
-├•🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}shrug
-├•🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}sleep
-├•🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}smug
-├•🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}stab
-├•🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}stare
-├•🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}tease
-├•🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}tickle
-├•🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}thumbsup
-├•🍙 ${ʟᴀʏᴏᴜᴛ.MuveOn}wag
-└────────────◇
 
 ┌─「 👇🏽 𝐆𝐫𝐨𝐮𝐩𝐬/𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧 👇🏽」
-├•  
+├•🔰 ${ʟᴀʏᴏᴜᴛ.MuveOn}admins
 ├•🔰 ${ʟᴀʏᴏᴜᴛ.MuveOn}antilink
 ├•🔰 ${ʟᴀʏᴏᴜᴛ.MuveOn}autorank
-├•🔰 ${ʟᴀʏᴏᴜᴛ.MuveOn}setwelcome
 ├•🔰 ${ʟᴀʏᴏᴜᴛ.MuveOn}delete
-├•🔰 ${ʟᴀʏᴏᴜᴛ.MuveOn}promote
 ├•🔰 ${ʟᴀʏᴏᴜᴛ.MuveOn}demote
-├•🔰 ${ʟᴀʏᴏᴜᴛ.MuveOn}warn
-├•🔰 ${ʟᴀʏᴏᴜᴛ.MuveOn}unwarn
+├•🔰 ${ʟᴀʏᴏᴜᴛ.MuveOn}gdata
+├•🔰 ${ʟᴀʏᴏᴜᴛ.MuveOn}group
 ├•🔰 ${ʟᴀʏᴏᴜᴛ.MuveOn}invite
-├•🔰 ${ʟᴀʏᴏᴜᴛ.MuveOn}lock
-├•🔰 ${ʟᴀʏᴏᴜᴛ.MuveOn}unlock
-├•🔰 ${ʟᴀʏᴏᴜᴛ.MuveOn}admins
-├•🔰 ${ʟᴀʏᴏᴜᴛ.MuveOn}groupdp
 ├•🔰 ${ʟᴀʏᴏᴜᴛ.MuveOn}kick
-├•🔰 ${ʟᴀʏᴏᴜᴛ.MuveOn}getdesc
-├•🔰 ${ʟᴀʏᴏᴜᴛ.MuveOn}getdp
+├•🔰 ${ʟᴀʏᴏᴜᴛ.MuveOn}promote
+├•🔰 ${ʟᴀʏᴏᴜᴛ.MuveOn}rank
+├•🔰 ${ʟᴀʏᴏᴜᴛ.MuveOn}setwelcome
 ├•🔰 ${ʟᴀʏᴏᴜᴛ.MuveOn}tagall
+├•🔰 ${ʟᴀʏᴏᴜᴛ.MuveOn}warn
 └────────────◇
 
 ┌─「 👇🏽 𝐑𝐚𝐧𝐝𝐨𝐦𝐬 👇🏽」
-├•  
-├•🦄 ${ʟᴀʏᴏᴜᴛ.MuveOn}rank
-├•🦄 ${ʟᴀʏᴏᴜᴛ.MuveOn}leaderboard
 ├•🦄 ${ʟᴀʏᴏᴜᴛ.MuveOn}fact
-├•🦄 ${ʟᴀʏᴏᴜᴛ.MuveOn}trivia
 ├•🦄 ${ʟᴀʏᴏᴜᴛ.MuveOn}joke
 ├•🦄 ${ʟᴀʏᴏᴜᴛ.MuveOn}meme
-├•🦄 ${ʟᴀʏᴏᴜᴛ.MuveOn}tr
-├•🦄 ${ʟᴀʏᴏᴜᴛ.MuveOn}tts
-├•🦄 ${ʟᴀʏᴏᴜᴛ.MuveOn}pokedex
-├•🦄 ${ʟᴀʏᴏᴜᴛ.MuveOn}triggered
+├•🦄 ${ʟᴀʏᴏᴜᴛ.MuveOn}raniwall
 └────────────◇
 
 ┌─「 👇🏽 𝗠𝗲𝗺𝗯𝗲𝗿 𝗦𝘁𝗼𝗿𝗲 👇🏽」
-├•  
 ├•🛍️ ${ʟᴀʏᴏᴜᴛ.MuveOn}buy basic 
 ├•🛍️ ${ʟᴀʏᴏᴜᴛ.MuveOn}buy bronze 
 ├•🛍️ ${ʟᴀʏᴏᴜᴛ.MuveOn}buy silver 
 ├•🛍️ ${ʟᴀʏᴏᴜᴛ.MuveOn}buy gold 
 ├•🛍️ ${ʟᴀʏᴏᴜᴛ.MuveOn}buy platinum 
 ├•🛍️ ${ʟᴀʏᴏᴜᴛ.MuveOn}buy diamond
-├•🛍️ ${ʟᴀʏᴏᴜᴛ.MuveOn}buy sword
-├•🛍️ ${ʟᴀʏᴏᴜᴛ.MuveOn}buy laptop
-├•🛍️ ${ʟᴀʏᴏᴜᴛ.MuveOn}buy charm
-└────────────◇
-
-┌─「 👇🏽 𝐂𝐡𝐞𝐜𝐤 👇🏽」
-├•  
-├•🎨 ${ʟᴀʏᴏᴜᴛ.MuveOn}gaycheck
-├•🎨 ${ʟᴀʏᴏᴜᴛ.MuveOn}lesbocheck
-├•🎨 ${ʟᴀʏᴏᴜᴛ.MuveOn}beautycheck
-├•🎨 ${ʟᴀʏᴏᴜᴛ.MuveOn}dumbcheck
-├•🎨 ${ʟᴀʏᴏᴜᴛ.MuveOn}gay
-├•🎨 ${ʟᴀʏᴏᴜᴛ.MuveOn}lesbo
-├•🎨 ${ʟᴀʏᴏᴜᴛ.MuveOn}beauty
-├•🎨 ${ʟᴀʏᴏᴜᴛ.MuveOn}dumb
+├•🛍️ ${ʟᴀʏᴏᴜᴛ.MuveOn}buy lightsaber
+├•🛍️ ${ʟᴀʏᴏᴜᴛ.MuveOn}buy arclock
+├•🛍️ ${ʟᴀʏᴏᴜᴛ.MuveOn}buy ninja
 └────────────◇
 
 ┌─「 👇🏽 𝐇𝐮𝐦𝐚𝐧+𝐍𝐒𝐅𝐖 👇🏽」
-├•  
 ├•🥃 ${ʟᴀʏᴏᴜᴛ.MuveOn}4k
 ├•🥃 ${ʟᴀʏᴏᴜᴛ.MuveOn}blowjob
 ├•🥃 ${ʟᴀʏᴏᴜᴛ.MuveOn}milf
 ├•🥃 ${ʟᴀʏᴏᴜᴛ.MuveOn}milk
 ├•🥃 ${ʟᴀʏᴏᴜᴛ.MuveOn}pussy
 ├•🥃 ${ʟᴀʏᴏᴜᴛ.MuveOn}slut
-├•🥃 ${ʟᴀʏᴏᴜᴛ.MuveOn}tikporn
 └────────────◇
 
 ┌─「 👇🏽 𝐇𝐞𝐧𝐭𝐚𝐢+𝐍𝐒𝐅𝐖 👇🏽」 
-├•
 ├•🍑 ${ʟᴀʏᴏᴜᴛ.MuveOn}ass
 ├•🍑 ${ʟᴀʏᴏᴜᴛ.MuveOn}bdsm
 ├•🍑 ${ʟᴀʏᴏᴜᴛ.MuveOn}cum  
