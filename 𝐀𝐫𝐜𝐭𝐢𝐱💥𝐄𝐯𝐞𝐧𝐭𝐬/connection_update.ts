@@ -25,7 +25,8 @@ import Kolor from "chalk";
 const connection_update = async (
   update: any,
   DisconnectReason: any,
-  startӄ𝖗𝖞ӄ𝖓𝖟: any
+  startӄ𝖗𝖞ӄ𝖓𝖟: any,
+  ӄ𝖗𝖞ӄ𝖓𝖟
 ): Promise<void> => {
   const { connection, lastDisconnect } = update;
   if (connection === "close") {
