@@ -107,7 +107,7 @@ const Invite = await ӄ𝖗𝖞ӄ𝖓𝖟.groupInviteCode(AʀƈȶɨӼ.chatId);
 var groupData = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata(Fox.key.remoteJid);
 let 𝕻𝕻𝖑𝖊𝖙𝖊𝖗: string;
 try {
-𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄ𝖗𝖞ӄ𝖓𝖟.profilePictureUrl(AʀƈȶɨӼ.sender, "image");
+𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄ𝖗𝖞ӄ𝖓𝖟.profilePictureUrl(AʀƈȶɨӼ.chatId, "image");
 } catch {
 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Sky.jpg";
 }

@@ -104,13 +104,12 @@ AʀƈȶɨӼ,
 */
 let MEMBERs = [];
 let TAGmsg: any;
-await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata(AʀƈȶɨӼ.chatId);
 for (var i = 0; i < AʀƈȶɨӼ.groupMembers.length; i++) {
-MEMBERs[i] = AʀƈȶɨӼ.groupMembers[i].id;
+MEMBERs[i] = "@" + AʀƈȶɨӼ.groupMembers[i].id.split(`@`)[0];
 }
 let 𝕻𝕻𝖑𝖊𝖙𝖊𝖗: any;
 try {
-𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄ𝖗𝖞ӄ𝖓𝖟.profilePictureUrl(AʀƈȶɨӼ.sender, "image");
+𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄ𝖗𝖞ӄ𝖓𝖟.profilePictureUrl(AʀƈȶɨӼ.chatId, "image");
 } catch {
 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Sky.jpg";
 }
@@ -129,13 +128,6 @@ TAGmsg = ǟʀɢʊʍɛռȶ.join(" ");
 } else {
 TAGmsg = "*Everyone!* May i get your attention please.";
 }
-
-let TagPpl: string = "";
-for (var O in MEMBERs) {
-let number: string = O.split("@")[0];
-TagPpl += `@${number} `;
-}
-
 /*
 ⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
 「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」                                                                            「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」
@@ -144,21 +136,20 @@ TagPpl += `@${number} `;
 await TUF.sendMessage(
 AʀƈȶɨӼ.chatId,
 {
-quoted: Fox.message,
-contextInfo: {
-mentionedJid: MEMBERs,
-},
-quotedMessage: {
-conversation: Fox.message,
-},
 timestamp: Date(),
+contextInfo: {
+mentionedJid: [AʀƈȶɨӼ.sender, MEMBERs],
+},
+quotedMessage: Fox.message,
 image: { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 },
 caption: `
 ┌─「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐓𝐚𝐠𝐀𝐥𝐥 」
-├• *ꜰʀᴏᴍ:* ${Fox.pushName} | @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
+├• *ꜰʀᴏᴍ:*  @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
 └────────────────◇
 
-${TAGmsg}\n\n${TagPpl}`,
+${TAGmsg}
+
+${MEMBERs.toString().replace("@s.whatsapp.net", "")}`,
 footer: "*⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 𝐁𝐞𝐭𝐚❗ ⦔*",
 buttons: [
 {
