@@ -119,9 +119,7 @@ TAGmsg = AʀƈȶɨӼ.replyMessage.replace(
 AʀƈȶɨӼ.body[0] + AʀƈȶɨӼ.commandName + " ",
 ""
 );
-}
-
-if (ǟʀɢʊʍɛռȶ || ǟʀɢʊʍɛռȶ.length) {
+} else if (ǟʀɢʊʍɛռȶ || ǟʀɢʊʍɛռȶ.length) {
 TAGmsg = ǟʀɢʊʍɛռȶ.join(" ");
 } else {
 TAGmsg = "*Everyone!* May i get your attention please.";

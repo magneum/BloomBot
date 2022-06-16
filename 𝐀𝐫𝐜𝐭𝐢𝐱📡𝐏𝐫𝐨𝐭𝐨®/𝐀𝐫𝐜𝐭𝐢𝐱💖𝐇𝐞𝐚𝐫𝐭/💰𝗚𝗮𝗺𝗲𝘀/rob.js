@@ -17,17 +17,33 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 */
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 const Image_Button_1 = __importDefault(require("../../\uD835\uDC00\uD835\uDC2B\uD835\uDC1C\uD835\uDC2D\uD835\uDC22\uD835\uDC31\u2618\uFE0F\uD835\uDC0A\uD835\uDC1E\uD835\uDC32\uD835\uDC2C/Image_Button"));
-const Video_Button_1 = __importDefault(require("../../\uD835\uDC00\uD835\uDC2B\uD835\uDC1C\uD835\uDC2D\uD835\uDC22\uD835\uDC31\u2618\uFE0F\uD835\uDC0A\uD835\uDC1E\uD835\uDC32\uD835\uDC2C/Video_Button"));
+const FoxNeeded_1 = __importDefault(require("../../\uD835\uDC00\uD835\uDC2B\uD835\uDC1C\uD835\uDC2D\uD835\uDC22\uD835\uDC31\u2618\uFE0F\uD835\uDC0A\uD835\uDC1E\uD835\uDC32\uD835\uDC2C/FoxNeeded"));
 /*
 ⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
 「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」                                                                            「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」
 ⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
 */
-const Oops = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱☘️𝐊𝐞𝐲𝐬/Oops`);
-const got = require(`got`);
-const ffmpeg = require(`fluent-ffmpeg`);
-const Downloader = require(`nodejs-file-downloader`);
+const UserPrivate = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/private`);
+const Welcome = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/setwelcome`);
+const LinkList = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/antilink`);
+const DebugList = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/debug`);
+const Ranker = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/autorank`);
+const Pokemon = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/pokemon`);
+const Economy = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/economy`);
+const NsfwList = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/nsfw`);
+const BanPerson = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/ban`);
+const BanGroup = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/ban`);
+const Bagde = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/badge`);
+const Halt = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/halt`);
+/*
+⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
+「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」                                                                            「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」
+⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
+*/
 const VOID = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/void`);
+const ______1 = __importDefault(require("../../\uD835\uDC00\uD835\uDC2B\uD835\uDC1C\uD835\uDC2D\uD835\uDC22\uD835\uDC31\uD83C\uDC04\uD835\uDC15\uD835\uDC1E\uD835\uDC27\uD835\uDC2D/\u029F\u1D00\u028F\u1D0F\u1D1C\u1D1B"));
+const Reply_1 = __importDefault(require("../../\uD835\uDC00\uD835\uDC2B\uD835\uDC1C\uD835\uDC2D\uD835\uDC22\uD835\uDC1C\u26CF\uFE0F\uD835\uDC02\uD835\uDC1A\uD835\uDC2F\uD835\uDC1E/Reply"));
+const Oops_1 = __importDefault(require("../../\uD835\uDC00\uD835\uDC2B\uD835\uDC1C\uD835\uDC2D\uD835\uDC22\uD835\uDC31\u2618\uFE0F\uD835\uDC0A\uD835\uDC1E\uD835\uDC32\uD835\uDC2C/Oops"));
 const path_1 = __importDefault(require("path"));
 var scriptName = path_1.default.basename(__filename);
 var dotScrpt = scriptName.slice(0, -3).toLowerCase();
@@ -58,77 +74,58 @@ module.exports = {
                 「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」                                                                            「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」
                 ⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
                 */
-                if (AʀƈȶɨӼ.isGroup && !AʀƈȶɨӼ.isSenderGroupAdmin && !AʀƈȶɨӼ.isSenderTUFs) {
-                    return Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `❌𝐃𝐞𝐧𝐢𝐞𝐝: _Admins/Dev Only.You Are Not Allowed!_`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Orange.png");
+                if (AʀƈȶɨӼ.isTextReply) {
+                    var Receiver = Fox.message.extendedTextMessage.contextInfo.participant;
+                    var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
+                    if (Receiver === ʟɴᴀᴍᴇ) {
+                        return Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `❌𝐃𝐞𝐧𝐢𝐞𝐝: _Can't rob yourself_`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png");
+                    }
+                    return yield Reply_1.default.VNrl(TUF, Fox, AʀƈȶɨӼ);
+                }
+                else {
+                    return FoxNeeded_1.default.VFox(TUF, Fox, AʀƈȶɨӼ, `╔═══⬡
+║ *𝗥𝗲𝗽𝗹𝘆-𝗣𝗲𝗿𝘀𝗼𝗻:* _${______1.default.MuveOn}${dotScrpt.toUpperCase()}_
+║ *𝗧𝗮𝗴-𝗣𝗲𝗿𝘀𝗼𝗻:* _${______1.default.MuveOn}${dotScrpt.toUpperCase()}_ @tag
+╚════════════╝
+
+╔═══◇║⚡ 𝐋𝐢𝐠𝐡𝐭𝐒𝐚𝐛𝐞𝐫
+║🛸 𝗧𝘆𝗽𝗲: _The medium account safe mode. 
+║🧀 𝗚𝗼𝗹𝗱: _To buy lightsaber you will need to have 4000gold._ 
+║⚡ 𝗣𝗲𝗿𝗸𝘀: _If robbery attempt was made on your account, a lightsaber will save your entire balance and will automatically deduct random(1000-2000) from Culprit's account and add it to your account!_
+╚◇╗
+╔◇╝ ❄️ 𝐀𝐫𝐜𝐋𝐨𝐜𝐤
+║🛸 𝗧𝘆𝗽𝗲: _The hard account safe mode._ 
+║🧀 𝗚𝗼𝗹𝗱: _To buy arclock you will need to have 3000gold._ 
+║⚡ 𝗣𝗲𝗿𝗸𝘀: _If robbery attempt was made on your account, a arclock will save your entire balance and will automatically deduct random(3000-4000) from Culprit's account and add it to your account!_
+╚◇╗
+╔◇╝ 🥷 𝐍𝐢𝐧𝐣𝐚
+║🛸 𝗧𝘆𝗽𝗲: _The devil account safe mode._ 
+║🧀 𝗚𝗼𝗹𝗱: _To buy arclock you will need to have 6000gold._ 
+║⚡ 𝗣𝗲𝗿𝗸𝘀: _If robbery attempt was made on your account, a ninja will save your entire balance and will automatically deduct random(5000-6000) from Culprit's account and add it to your account!_
+╚════════════╝
+
+╔═══◇❓ 𝗛𝗼𝘄 𝗗𝗼 𝗜 𝗸𝗲𝗲𝗽 𝗺𝘆 𝗮𝗰𝗰𝗼𝘂𝗻𝘁 𝘀𝗮𝗳𝗲?
+║ _read /shop_
+╚◇╗
+╔◇╝ ❓ 𝗛𝗼𝘄 𝗱𝗼 𝗶 𝗲𝗮𝗿𝗻 𝗴𝗼𝗹𝗱?
+║ _read /gamemenu_
+╚◇╗
+╔◇╝ ❓ 𝗛𝗼𝘄 𝗟𝗼𝗻𝗴 𝗜𝘁𝗲𝗺𝘀 𝗟𝗮𝘀𝘁?
+║ _per robbery_
+╚◇╗
+╔◇╝ ❓ 𝗜 𝗱𝗼𝗻'𝘁 𝗵𝗮𝘃𝗲 𝗮𝗻𝘆 𝘀𝗮𝗳𝗲𝘁𝘆 𝗶𝗻 𝗺𝘆 𝗮𝗰𝗰𝗼𝘂𝗻𝘁! 𝗛𝗼𝘄 𝗺𝘂𝗰𝗵 𝗺𝗼𝗻𝗲𝘆 𝗰𝗮𝗻 𝗯𝗲 𝗿𝗼𝗯𝗯𝗲𝗱?
+║ _In that case buy using ${______1.default.MuveOn}buy. Max-Money-Robbed when no safety: random(500-1000)_
+╚════════════╝
+`, dotScrpt);
                 }
                 /*
                 ⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
                 「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」                                                                            「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」
                 ⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
                 */
-                yield got(`https://www.reddit.com/r/Blowjobs/random.json`).then((newScpt) => __awaiter(this, void 0, void 0, function* () {
-                    var file = JSON.parse(newScpt.body);
-                    var title = file[0].data.children[0].data.title;
-                    var amazeme = file[0].data.children[0].data.url;
-                    /*
-                    ⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
-                    「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」                                                                            「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」
-                    ⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
-                    */
-                    if (!amazeme.endsWith(`.png`) &&
-                        !amazeme.endsWith(`.jpg`) &&
-                        !amazeme.endsWith(`.jpeg`)) {
-                        var amazeme = yield got(`https://www.reddit.com/r/Blowjobs/random.json`).then((newScpt) => __awaiter(this, void 0, void 0, function* () {
-                            var file = JSON.parse(newScpt.body);
-                            var title = file[0].data.children[0].data.title;
-                            var amazeme = file[0].data.children[0].data.url;
-                            return Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `👅 𝐓𝐨𝐩𝐢𝐜: ${title}`, amazeme);
-                        }));
-                        /*
-                        ⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
-                        「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」                                                                            「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」
-                        ⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
-                        */
-                    }
-                    else if (amazeme.endsWith(`.gif`)) {
-                        const downloader = yield new Downloader({
-                            url: amazeme,
-                            directory: `${__dirname}`,
-                            fileName: `${Date.now()}_${ꜰɪɴᴀᴍᴇ}.gif`,
-                            cloneFiles: false,
-                        });
-                        try {
-                            yield downloader.download();
-                            ffmpeg(`${__dirname}/${Date.now()}_${ꜰɪɴᴀᴍᴇ}.gif`)
-                                .outputOptions([
-                                `-pix_fmt yuv420p`,
-                                `-c:v libx264`,
-                                `-movflags +faststart`,
-                                `-filter:v crop='floor(in_w/2)*2:floor(in_h/2)*2'`,
-                            ])
-                                .save(`${__dirname}/${Date.now()}_${ꜰɪɴᴀᴍᴇ}.mp4`)
-                                .on(`end`, () => __awaiter(this, void 0, void 0, function* () {
-                                yield Video_Button_1.default.VVid(TUF, Fox, AʀƈȶɨӼ, `👅 𝐓𝐨𝐩𝐢𝐜: ${title}`, `${__dirname}/${Date.now()}_${ꜰɪɴᴀᴍᴇ}.mp4`);
-                                yield VOID.VOID(`${__dirname}/${Date.now()}_${ꜰɪɴᴀᴍᴇ}.mp4`, `${__dirname}/${Date.now()}_${ꜰɪɴᴀᴍᴇ}.gif`);
-                                return;
-                            }));
-                        }
-                        catch (error) {
-                            return Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error);
-                        }
-                        /*
-                        ⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
-                        「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」                                                                            「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」
-                        ⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
-                        */
-                    }
-                    else {
-                        return Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `👅 𝐓𝐨𝐩𝐢𝐜: ${title}`, amazeme);
-                    }
-                }));
             }
             catch (error) {
-                return Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error);
+                return Oops_1.default.VOp(TUF, Fox, AʀƈȶɨӼ, error);
             }
         });
     },

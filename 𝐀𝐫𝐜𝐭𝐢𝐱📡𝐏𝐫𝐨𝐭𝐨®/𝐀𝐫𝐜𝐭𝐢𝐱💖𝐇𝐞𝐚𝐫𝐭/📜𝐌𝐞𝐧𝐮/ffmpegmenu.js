@@ -58,7 +58,7 @@ module.exports = {
 ├• *ᴄᴏᴍᴍᴀɴᴅ:* ${AʀƈȶɨӼ.commandName}
 └────────────────◇
 
-┌─「 🗂️ 𝐅𝐅𝐦𝐩𝐞𝐠
+┌─「 📼 𝐅𝐅𝐦𝐩𝐞𝐠
 ├• *${______1.default.MuveOn}vid2url:*  _convert video to url_ 
 ├• *${______1.default.MuveOn}tomp3:*  _convert video to music_
 ├• *${______1.default.MuveOn}img2url:*  _convert image to url_

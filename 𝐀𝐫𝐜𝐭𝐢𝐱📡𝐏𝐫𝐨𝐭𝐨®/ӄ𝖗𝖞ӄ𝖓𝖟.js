@@ -209,18 +209,7 @@ setInterval(() => {
             participants_update_1.default.participants_update(update, ӄ𝖗𝖞ӄ𝖓𝖟);
         }));
         ӄ𝖗𝖞ӄ𝖓𝖟.ev.on("connection.update", (update) => __awaiter(void 0, void 0, void 0, function* () {
-            try {
-                yield ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(ӄ𝖗𝖞ӄ𝖓𝖟.user.id, {
-                    text: `お 𝐔𝐬𝐞𝐫: ${ӄ𝖗𝖞ӄ𝖓𝖟.user.notify ||
-                        ӄ𝖗𝖞ӄ𝖓𝖟.user.name ||
-                        ӄ𝖗𝖞ӄ𝖓𝖟.user.name ||
-                        ӄ𝖗𝖞ӄ𝖓𝖟.user.id.split("@")[0]} お
-
-「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®: Online   」`,
-                });
-            }
-            catch (error) { }
-            connection_update_1.default.connection_update(update, baileys_1.DisconnectReason, startSock);
+            connection_update_1.default.connection_update(update, baileys_1.DisconnectReason, startSock, ӄ𝖗𝖞ӄ𝖓𝖟);
         }));
         ӄ𝖗𝖞ӄ𝖓𝖟.ev.on("messages.upsert", (update) => __awaiter(void 0, void 0, void 0, function* () {
             messages_upsert_1.default.messages_upsert(update, ӄ𝖗𝖞ӄ𝖓𝖟, commandHandler, ӄ);

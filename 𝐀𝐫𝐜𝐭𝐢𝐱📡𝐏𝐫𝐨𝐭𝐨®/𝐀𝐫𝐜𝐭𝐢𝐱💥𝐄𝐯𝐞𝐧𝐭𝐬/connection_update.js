@@ -33,7 +33,7 @@ const ______1 = __importDefault(require("../\uD835\uDC00\uD835\uDC2B\uD835\uDC1C
 「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」                                                                            「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」
 ⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
 */
-const connection_update = (update, DisconnectReason, startӄ𝖗𝖞ӄ𝖓𝖟) => __awaiter(void 0, void 0, void 0, function* () {
+const connection_update = (update, DisconnectReason, startӄ𝖗𝖞ӄ𝖓𝖟, ӄ𝖗𝖞ӄ𝖓𝖟) => __awaiter(void 0, void 0, void 0, function* () {
     var _a, _b;
     const { connection, lastDisconnect } = update;
     if (connection === "close") {
@@ -74,6 +74,19 @@ const connection_update = (update, DisconnectReason, startӄ𝖗𝖞ӄ𝖓𝖟) 
             setTimeout(() => {
                 rainbow.stop();
             }, 10000);
+        }
+        try {
+            yield ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(ӄ𝖗𝖞ӄ𝖓𝖟.user.id, {
+                text: `お 𝐔𝐬𝐞𝐫: ${ӄ𝖗𝖞ӄ𝖓𝖟.user.notify ||
+                    ӄ𝖗𝖞ӄ𝖓𝖟.user.name ||
+                    ӄ𝖗𝖞ӄ𝖓𝖟.user.name ||
+                    ӄ𝖗𝖞ӄ𝖓𝖟.user.id.split("@")[0]} お
+
+「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®: Online   」`,
+            });
+        }
+        catch (error) {
+            console.log("「 Stored 𝐀𝐫𝐜𝐭𝐢𝐱 data! 」");
         }
     }
 });

@@ -17,17 +17,30 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 */
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 const Image_Button_1 = __importDefault(require("../../\uD835\uDC00\uD835\uDC2B\uD835\uDC1C\uD835\uDC2D\uD835\uDC22\uD835\uDC31\u2618\uFE0F\uD835\uDC0A\uD835\uDC1E\uD835\uDC32\uD835\uDC2C/Image_Button"));
-const Video_Button_1 = __importDefault(require("../../\uD835\uDC00\uD835\uDC2B\uD835\uDC1C\uD835\uDC2D\uD835\uDC22\uD835\uDC31\u2618\uFE0F\uD835\uDC0A\uD835\uDC1E\uD835\uDC32\uD835\uDC2C/Video_Button"));
 /*
 ⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
 「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」                                                                            「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」
 ⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
 */
-const Oops = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱☘️𝐊𝐞𝐲𝐬/Oops`);
-const got = require(`got`);
-const ffmpeg = require(`fluent-ffmpeg`);
-const Downloader = require(`nodejs-file-downloader`);
+const UserPrivate = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/private`);
+const Welcome = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/setwelcome`);
+const LinkList = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/antilink`);
+const DebugList = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/debug`);
+const Ranker = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/autorank`);
+const Pokemon = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/pokemon`);
+const Economy = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/economy`);
+const NsfwList = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/nsfw`);
+const BanPerson = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/ban`);
+const BanGroup = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/ban`);
+const Bagde = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/badge`);
+const Halt = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/halt`);
+/*
+⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
+「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」                                                                            「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」
+⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
+*/
 const VOID = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/void`);
+const Oops_1 = __importDefault(require("../../\uD835\uDC00\uD835\uDC2B\uD835\uDC1C\uD835\uDC2D\uD835\uDC22\uD835\uDC31\u2618\uFE0F\uD835\uDC0A\uD835\uDC1E\uD835\uDC32\uD835\uDC2C/Oops"));
 const path_1 = __importDefault(require("path"));
 var scriptName = path_1.default.basename(__filename);
 var dotScrpt = scriptName.slice(0, -3).toLowerCase();
@@ -58,64 +71,72 @@ module.exports = {
                 「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」                                                                            「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」
                 ⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
                 */
-                if (AʀƈȶɨӼ.isGroup && !AʀƈȶɨӼ.isSenderGroupAdmin && !AʀƈȶɨӼ.isSenderTUFs) {
-                    return Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `❌𝐃𝐞𝐧𝐢𝐞𝐝: _Admins/Dev Only.You Are Not Allowed!_`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Orange.png");
-                }
+                const Jwork = [
+                    "You work as a flatulence smell reduction underwear maker and earnned",
+                    "You work at Grandma's restaurant as a cook and earnned",
+                    "You work as a professional smuggler and earnned",
+                    "You work as a pumpkin painter and earnned",
+                    "You work as a engineer and earnned",
+                    "You work as a meerkat behaviour consultant and earnned",
+                    "Your job as a fart collector is very interesting and earns you",
+                    "You work as a penguinologist and earnned",
+                    "You work as a ear cleaner and earnned",
+                    "You develop games and earnned",
+                    "You work as a personal shopper and earnned",
+                    "You work as a dog surfing instructor and earnned",
+                    "You work as a beefeater and earnned",
+                    "You work as a comedian and earnned",
+                    "You work as the head of elephants and earnned",
+                    "You work as an elementary school teacher and earnned",
+                    "You worked as a voice actor for Spongebob and managed to gain",
+                    "You had a fruitful day at the office today and earned",
+                    "You actually finished the plate of vegetables that your parents made you eat! You were awarded",
+                    "You work as child birth educator and earnned",
+                    "You work as a body pillow factory salesman on the Internet for real weebs, the weebs gave you",
+                    "You work as a vibration consultant and earnned",
+                    "Work at the icecream shop of your childhood dreams and earnned",
+                    "You work as a professional minecraft hacker. You manage to rake in",
+                    "You dabbed so hard that even your mother is proud! You make",
+                    "You work as a professional cleaner. After hiding the body, you're handed",
+                    "You got cloned for sciene. You earned",
+                    "You work as a police officer and earnned",
+                    "You work as a bush pruner for Donald Trump and earnned",
+                    "You work as a paper towel sniffer and earnned",
+                    "You work as a water slide tester and earnned",
+                    "You milk a cow for",
+                    "You work as a fucker.",
+                ];
+                const JworkR = Jwork[Math.floor(Math.random() * Jwork.length)];
                 /*
                 ⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
                 「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」                                                                            「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」
                 ⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
                 */
-                yield got(`https://www.reddit.com/r/Blowjobs/random.json`).then((newScpt) => __awaiter(this, void 0, void 0, function* () {
-                    var file = JSON.parse(newScpt.body);
-                    var title = file[0].data.children[0].data.title;
-                    var amazeme = file[0].data.children[0].data.url;
-                    /*
-                    ⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
-                    「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」                                                                            「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」
-                    ⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
-                    */
-                    if (!amazeme.endsWith(`.png`) &&
-                        !amazeme.endsWith(`.jpg`) &&
-                        !amazeme.endsWith(`.jpeg`)) {
-                        var amazeme = yield got(`https://www.reddit.com/r/Blowjobs/random.json`).then((newScpt) => __awaiter(this, void 0, void 0, function* () {
-                            var file = JSON.parse(newScpt.body);
-                            var title = file[0].data.children[0].data.title;
-                            var amazeme = file[0].data.children[0].data.url;
-                            return Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `👅 𝐓𝐨𝐩𝐢𝐜: ${title}`, amazeme);
-                        }));
-                        /*
-                        ⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
-                        「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」                                                                            「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」
-                        ⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
-                        */
-                    }
-                    else if (amazeme.endsWith(`.gif`)) {
-                        const downloader = yield new Downloader({
-                            url: amazeme,
-                            directory: `${__dirname}`,
-                            fileName: `${Date.now()}_${ꜰɪɴᴀᴍᴇ}.gif`,
-                            cloneFiles: false,
+                Economy.findOne({
+                    ID: ʟɴᴀᴍᴇ,
+                }, (error, userEco) => __awaiter(this, void 0, void 0, function* () {
+                    if (error)
+                        return Oops_1.default.VOp(TUF, Fox, AʀƈȶɨӼ, error);
+                    if (!userEco) {
+                        var newUser = new Economy({
+                            ID: ʟɴᴀᴍᴇ,
+                            money: 0,
+                            daily: 0,
+                            timeout: 86400000,
+                            fishdone: 0,
+                            fishtimeout: 1800000,
+                            workdone: 0,
+                            worktimeout: 900000,
                         });
-                        try {
-                            yield downloader.download();
-                            ffmpeg(`${__dirname}/${Date.now()}_${ꜰɪɴᴀᴍᴇ}.gif`)
-                                .outputOptions([
-                                `-pix_fmt yuv420p`,
-                                `-c:v libx264`,
-                                `-movflags +faststart`,
-                                `-filter:v crop='floor(in_w/2)*2:floor(in_h/2)*2'`,
-                            ])
-                                .save(`${__dirname}/${Date.now()}_${ꜰɪɴᴀᴍᴇ}.mp4`)
-                                .on(`end`, () => __awaiter(this, void 0, void 0, function* () {
-                                yield Video_Button_1.default.VVid(TUF, Fox, AʀƈȶɨӼ, `👅 𝐓𝐨𝐩𝐢𝐜: ${title}`, `${__dirname}/${Date.now()}_${ꜰɪɴᴀᴍᴇ}.mp4`);
-                                yield VOID.VOID(`${__dirname}/${Date.now()}_${ꜰɪɴᴀᴍᴇ}.mp4`, `${__dirname}/${Date.now()}_${ꜰɪɴᴀᴍᴇ}.gif`);
-                                return;
-                            }));
-                        }
-                        catch (error) {
-                            return Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error);
-                        }
+                        yield newUser
+                            .save()
+                            .catch((error) => Oops_1.default.VOp(TUF, Fox, AʀƈȶɨӼ, error));
+                        return yield Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `
+╔◇══════════════◇╗
+┊  𝐀𝐫𝐜𝐭𝐢𝐱💵𝐁𝐚𝐧𝐤
+╚◇══════════════◇╝
+💰𝗧𝗼𝘁𝗮𝗹 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: Just Opened Your Account!
+🤠𝗔𝗰𝗰𝗼𝘂𝗻𝘁 𝗛𝗼𝗹𝗱𝗲𝗿: @${ᴘɴᴀᴍᴇ}`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png");
                         /*
                         ⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
                         「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」                                                                            「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」
@@ -123,12 +144,22 @@ module.exports = {
                         */
                     }
                     else {
-                        return Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `👅 𝐓𝐨𝐩𝐢𝐜: ${title}`, amazeme);
+                        return yield Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `
+╔◇══════════════◇╗
+┊  𝐀𝐫𝐜𝐭𝐢𝐱💵𝐁𝐚𝐧𝐤
+╚◇══════════════◇╝
+💰𝗧𝗼𝘁𝗮𝗹 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: ${userEco.money}
+🤠𝗔𝗰𝗰𝗼𝘂𝗻𝘁_𝗛𝗼𝗹𝗱𝗲𝗿: @${ᴘɴᴀᴍᴇ}`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Blue_Grey.png");
                     }
                 }));
+                /*
+                ⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
+                「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」                                                                            「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」
+                ⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
+                */
             }
             catch (error) {
-                return Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error);
+                return Oops_1.default.VOp(TUF, Fox, AʀƈȶɨӼ, error);
             }
         });
     },
