@@ -159,7 +159,7 @@ participants_update.participants_update(update, ӄ𝖗𝖞ӄ𝖓𝖟);
 });
 ӄ𝖗𝖞ӄ𝖓𝖟.ev.on("connection.update", (update) => {
 ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(ӄ𝖗𝖞ӄ𝖓𝖟.user.id, {
-text: "❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱: Booted...",
+text: "❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ❞ Booted...",
 });
 connection_update.connection_update(update, DisconnectReason, startSock);
 });
