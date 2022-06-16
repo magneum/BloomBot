@@ -67,7 +67,7 @@ module.exports = {
 🔎Word: ${result.word}
 📚Defination: ${result.definition}
 🫒Example: ${result.example}
-👍: ${result.thumbs_up} |👎: ${result.thumbs_down}`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Blue_Grey.png");
+👍: ${result.thumbs_up} |👎: ${result.thumbs_down}`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png");
             }
             catch (error) {
                 return Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error);

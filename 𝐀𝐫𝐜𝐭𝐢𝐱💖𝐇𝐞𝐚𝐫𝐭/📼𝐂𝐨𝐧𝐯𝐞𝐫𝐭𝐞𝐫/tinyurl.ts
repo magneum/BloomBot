@@ -58,7 +58,7 @@ Fox,
 AʀƈȶɨӼ,
 `🐜𝗧𝗶𝗻𝘆𝗨𝗿𝗹
 ${TinyDone}`,
-"./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Blue_Grey.png"
+"./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png"
 );
 } catch (error) {
 return Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error);

@@ -60,7 +60,7 @@ module.exports = {
                 var Heroku = new heroku_client_1.default({
                     token: ______1.default.Heroku_Api,
                 });
-                yield Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `💡𝐈𝐧𝐟𝐨: Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 is now rebootig itself and it's servers..`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Butter.png");
+                yield Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `💡𝐈𝐧𝐟𝐨: Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 is now rebootig itself and it's servers..`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png");
                 yield Heroku.delete(`/apps/${______1.default.Heroku_App}/dynos/worker`).catch((error) => Oops_1.default.VOp(TUF, Fox, AʀƈȶɨӼ, error));
                 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
             }

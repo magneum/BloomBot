@@ -29,24 +29,27 @@ if (
 (lastDisconnect.error as Boom)?.output?.statusCode !==
 DisconnectReason.loggedOut
 ) {
-startSock();
+await startSock();
 } else {
 console.log("❌𝐄𝐫𝐫𝐨𝐫꧂ Connection closed. You are logged out.");
 process.exit(0);
 }
-} else if (connection === "connecting") {
+}
+//" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
+if (connection === "connecting") {
 if (ʟᴀʏᴏᴜᴛ.Heroku_App !== undefined) {
 console.log("💡𝐈𝐧𝐟𝐨꧂  Connecting to WhatsApp...");
 } else {
 chalkAnimation.rainbow("💡𝐈𝐧𝐟𝐨꧂  Connecting to WhatsApp...");
 }
-} else if (connection === "open") {
+}
+//" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
+if (connection === "open") {
 if (ʟᴀʏᴏᴜᴛ.Heroku_App !== undefined) {
 console.log("Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 Online!");
 } else {
 chalkAnimation.rainbow("Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 Online!");
 }
-} else {
 }
 };
 export = {

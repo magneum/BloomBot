@@ -137,11 +137,11 @@ const messages_upsert = (update, ӄ𝖗𝖞ӄ𝖓𝖟, commandHandler, Konn) => 
             }
             if (!AʀƈȶɨӼ.fromMe &&
                 userHalt.PermaTimeOut - (Date.now() - userHalt.TimeOut) > 0) {
-                return yield TUF.sendMessage(AʀƈȶɨӼ.chatId, `┌─「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢® 」
-├• *Tαɠ:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
-├• *Nαɱҽ:* ${Fox.pushName}
-├• *Cσɱɱαɳԃ:* ${AʀƈȶɨӼ.commandName}
-└──•
+                return yield TUF.sendMessage(AʀƈȶɨӼ.chatId, `┌─「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐏𝐫𝐨𝐭𝐨® 」
+├• *ɴᴀᴍᴇ:* ${Fox.pushName}
+├• *ᴍᴇɴᴛɪᴏɴ:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
+├• *ᴄᴏᴍᴍᴀɴᴅ:* ${AʀƈȶɨӼ.commandName}
+└────────────────◇
 
 ❌𝗘𝗿𝗿𝗼𝗿: Wait For 5seconds!`, message_type_1.MessageType.text, {
                     quoted: Fox,
@@ -157,7 +157,7 @@ const messages_upsert = (update, ӄ𝖗𝖞ӄ𝖓𝖟, commandHandler, Konn) => 
                 yield git.fetch();
                 console.log(AʀƈȶɨӼ);
                 console.log(chalk_1.default.cyanBright("|════════════════════════「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢® 」════════════════════════|"));
-                var newCommits = yield git.log(["📡𝐏𝐫𝐨𝐭𝐨®..origin/📡𝐏𝐫𝐨𝐭𝐨®"]);
+                var newCommits = yield git.log(["𝐀𝐫𝐜𝐭𝐢𝐱📡𝐏𝐫𝐨𝐭𝐨®..origin/𝐀𝐫𝐜𝐭𝐢𝐱📡𝐏𝐫𝐨𝐭𝐨®"]);
                 if (newCommits.total != 0) {
                     // try {
                     // let list_chats_user = Konn.chats.all().map((v) => v.id);
@@ -198,7 +198,7 @@ const messages_upsert = (update, ӄ𝖗𝖞ӄ𝖓𝖟, commandHandler, Konn) => 
                     // }
                     //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
                     try {
-                        var 𝖛𝖑𝖐𝖕 = require("child_process").exec("git config --global user.name 'KryKnz' && git config --global user.email 'KryKnz@yandex.com' && git config pull.rebase false && git init --initial-branch=📡𝐏𝐫𝐨𝐭𝐨® && git fetch origin 📡𝐏𝐫𝐨𝐭𝐨® && git reset --hard origin/📡𝐏𝐫𝐨𝐭𝐨® && git stash && git stash drop && git pull");
+                        var 𝖛𝖑𝖐𝖕 = require("child_process").exec("git config --global user.name 'KryKnz' && git config --global user.email 'KryKnz@yandex.com' && git config pull.rebase false && git init --initial-branch=𝐀𝐫𝐜𝐭𝐢𝐱📡𝐏𝐫𝐨𝐭𝐨® && git fetch origin 𝐀𝐫𝐜𝐭𝐢𝐱📡𝐏𝐫𝐨𝐭𝐨® && git reset --hard origin/𝐀𝐫𝐜𝐭𝐢𝐱📡𝐏𝐫𝐨𝐭𝐨® && git stash && git stash drop && git pull");
                         console.log("🛰️ 𝐓𝐡𝐫𝐞𝐚𝐝 𝐈𝐃:", chalk_1.default.green(𝖛𝖑𝖐𝖕.pid));
                         𝖛𝖑𝖐𝖕.stderr.pipe(process.stderr);
                         𝖛𝖑𝖐𝖕.stdout.pipe(process.stdout);
@@ -293,8 +293,8 @@ const messages_upsert = (update, ӄ𝖗𝖞ӄ𝖓𝖟, commandHandler, Konn) => 
                             mentionedJid: [AʀƈȶɨӼ.sender],
                         },
                         timestamp: Date(),
-                        image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png" },
-                        caption: `✥𝐔𝐬𝐞𝐫: ${Fox.pushName}
+                        image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Red.png" },
+                        caption: `*ᴍᴇɴᴛɪᴏɴ:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
 
 *❌𝗘𝗿𝗿𝗼𝗿:* No Such Command In Database.`,
                         footer: `⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔`,

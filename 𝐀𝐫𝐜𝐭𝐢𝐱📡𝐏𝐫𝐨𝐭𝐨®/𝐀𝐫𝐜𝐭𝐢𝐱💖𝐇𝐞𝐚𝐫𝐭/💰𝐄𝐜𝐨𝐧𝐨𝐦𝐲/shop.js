@@ -17,13 +17,22 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 */
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 const Image_Button_1 = __importDefault(require("../../\uD835\uDC00\uD835\uDC2B\uD835\uDC1C\uD835\uDC2D\uD835\uDC22\uD835\uDC31\u2618\uFE0F\uD835\uDC0A\uD835\uDC1E\uD835\uDC32\uD835\uDC2C/Image_Button"));
-const FoxNeeded_1 = __importDefault(require("../../\uD835\uDC00\uD835\uDC2B\uD835\uDC1C\uD835\uDC2D\uD835\uDC22\uD835\uDC31\u2618\uFE0F\uD835\uDC0A\uD835\uDC1E\uD835\uDC32\uD835\uDC2C/FoxNeeded"));
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-const Oops = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱☘️𝐊𝐞𝐲𝐬/Oops`);
-const ______1 = __importDefault(require("../../\uD835\uDC00\uD835\uDC2B\uD835\uDC1C\uD835\uDC2D\uD835\uDC22\uD835\uDC31\uD83C\uDC04\uD835\uDC15\uD835\uDC1E\uD835\uDC27\uD835\uDC2D/\u029F\u1D00\u028F\u1D0F\u1D1C\u1D1B"));
-const getVideoId = require(`get-video-id`);
-const yts = require(`yt-search`);
+const UserPrivate = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/private`);
+const Welcome = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/setwelcome`);
+const LinkList = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/antilink`);
+const DebugList = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/debug`);
+const Ranker = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/autorank`);
+const Pokemon = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/pokemon`);
+const Economy = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/economy`);
+const NsfwList = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/nsfw`);
+const BanPerson = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/ban`);
+const BanGroup = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/ban`);
+const Bagde = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/badge`);
+const Halt = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/halt`);
+//" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 const VOID = require(`../../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/void`);
+const Oops_1 = __importDefault(require("../../\uD835\uDC00\uD835\uDC2B\uD835\uDC1C\uD835\uDC2D\uD835\uDC22\uD835\uDC31\u2618\uFE0F\uD835\uDC0A\uD835\uDC1E\uD835\uDC32\uD835\uDC2C/Oops"));
 const path_1 = __importDefault(require("path"));
 var scriptName = path_1.default.basename(__filename);
 var dotScrpt = scriptName.slice(0, -3).toLowerCase();
@@ -44,40 +53,29 @@ module.exports = {
                 yield TUF.getGroupMetaData(AʀƈȶɨӼ.chatId, AʀƈȶɨӼ);
                 const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
                 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-                if (ǟʀɢʊʍɛռȶ.length === 0) {
-                    return FoxNeeded_1.default.VFox(TUF, Fox, AʀƈȶɨӼ, `Option 1 - ${______1.default.MuveOn}${dotScrpt.toUpperCase()} _song name_`, dotScrpt);
-                }
+                return Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `╔◇══════════════◇╗
+    ┊ 𝐌𝐞𝐦𝐛𝐞𝐫🛰️𝐒𝐭𝐨𝐫𝐞
+    ╚◇╗
+    ╔◇╝ ꧁༺ 𝐁𝐚𝐝𝐠𝐞🏷️𝐂𝐚𝐭𝐞𝐨𝐠𝐫𝐲 ༻꧂
+    ║
+    ║ *🧵Basic:* _10commands/day_ (Free)
+    ║ *🥉Bronze:* _20commands/day_ (20,000gold)
+    ║ *🥈Silver:* _40commands/day_ (40,000gold)
+    ║ *🥇Gold:* _60commands/day_ (60,000gold)
+    ║ *💍Platinum:* _80commands/day_ (80,000gold)
+    ║ *💎Diamond:* _100commands/day_ (100,000gold)
+    ║
+    ╚◇╗
+    ╔◇╝ ꧁༺  𝗚𝗮𝗺𝗲𝘀💰𝐂𝐚𝐭𝐞𝐠𝐨𝐫𝐲 ༻꧂
+    ║
+    ║⚡ *lightsaber:* _1000gold/robbery_
+    ║❄️ *arclock:* _4000gold/robbery_
+    ║🥷 *ninja:* _6000gold/robbery_
+    ╚════════════╝`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png");
                 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-                if (!ǟʀɢʊʍɛռȶ) {
-                    return FoxNeeded_1.default.VFox(TUF, Fox, AʀƈȶɨӼ, `Option 1 - ${______1.default.MuveOn}${dotScrpt.toUpperCase()} _song name_`, dotScrpt);
-                }
-                //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-                const FetchedLink = yield yts(ǟʀɢʊʍɛռȶ.join(" "));
-                const videos = FetchedLink.videos.slice(0, 8);
-                var Fetched = "";
-                videos.forEach(function (youfound) {
-                    const { id } = getVideoId(youfound.url);
-                    Fetched = "";
-                    Fetched +
-                        `🥳𝐓𝐢𝐭𝐥𝐞: ${youfound.title}
-👀𝐕𝐢𝐞𝐰𝐬: ${youfound.views}
-🕐𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧: ${youfound.timestamp}
-📜𝐀𝐮𝐭𝐡𝐨𝐫: ${youfound.author.name}
-📜𝐋𝐢𝐧𝐤: ${youfound.url}
-\n\n`;
-                });
-                //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-                if (Fetched === "") {
-                    return Oops.VOp(TUF, Fox, AʀƈȶɨӼ, "❌𝐄𝐫𝐫𝐨𝐫꧂ No videos could be found.");
-                }
-                else {
-                    return Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `𝐘𝐨𝐮𝐓𝐮𝐛𝐞⭕𝐀𝐏𝐈
-
-${Fetched}`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png");
-                }
             }
             catch (error) {
-                return Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error);
+                return Oops_1.default.VOp(TUF, Fox, AʀƈȶɨӼ, error);
             }
         });
     },

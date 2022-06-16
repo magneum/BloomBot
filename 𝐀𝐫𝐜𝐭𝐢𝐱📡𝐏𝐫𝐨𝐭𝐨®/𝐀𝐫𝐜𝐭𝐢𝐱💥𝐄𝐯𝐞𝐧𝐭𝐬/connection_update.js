@@ -35,14 +35,15 @@ const connection_update = (update, DisconnectReason, startSock) => __awaiter(voi
     if (connection === "close") {
         if (((_b = (_a = lastDisconnect.error) === null || _a === void 0 ? void 0 : _a.output) === null || _b === void 0 ? void 0 : _b.statusCode) !==
             DisconnectReason.loggedOut) {
-            startSock();
+            yield startSock();
         }
         else {
             console.log("❌𝐄𝐫𝐫𝐨𝐫꧂ Connection closed. You are logged out.");
             process.exit(0);
         }
     }
-    else if (connection === "connecting") {
+    //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
+    if (connection === "connecting") {
         if (______1.default.Heroku_App !== undefined) {
             console.log("💡𝐈𝐧𝐟𝐨꧂  Connecting to WhatsApp...");
         }
@@ -50,15 +51,14 @@ const connection_update = (update, DisconnectReason, startSock) => __awaiter(voi
             chalkAnimation.rainbow("💡𝐈𝐧𝐟𝐨꧂  Connecting to WhatsApp...");
         }
     }
-    else if (connection === "open") {
+    //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
+    if (connection === "open") {
         if (______1.default.Heroku_App !== undefined) {
             console.log("Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 Online!");
         }
         else {
             chalkAnimation.rainbow("Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 Online!");
         }
-    }
-    else {
     }
 });
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;

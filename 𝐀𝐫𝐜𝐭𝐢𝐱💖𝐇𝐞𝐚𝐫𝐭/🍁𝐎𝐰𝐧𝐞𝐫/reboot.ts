@@ -47,7 +47,12 @@ try {
 const ʟɴᴀᴍᴇ = AʀƈȶɨӼ.sender;
 const ᴅꜰɴᴀᴍᴇ = AʀƈȶɨӼ.commandName;
 const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/[^\d+]/g, "");
-await TUF.getGroupMetaData(AʀƈȶɨӼ.chatId, AʀƈȶɨӼ);
+let grup: any;
+try {
+grup = await TUF.getGroupMetaData(AʀƈȶɨӼ.chatId, AʀƈȶɨӼ);
+} catch (e) {
+console.log(e);
+}
 const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 if (!AʀƈȶɨӼ.fromMe && !AʀƈȶɨӼ.isSenderTUFs) {
@@ -68,7 +73,7 @@ TUF,
 Fox,
 AʀƈȶɨӼ,
 `💡𝐈𝐧𝐟𝐨: Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 is now rebootig itself and it's servers..`,
-"./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Butter.png"
+"./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png"
 );
 await Heroku.delete(`/apps/${ʟᴀʏᴏᴜᴛ.Heroku_App}/dynos/worker`).catch(
 (error: any) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error)

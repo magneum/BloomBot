@@ -29,6 +29,7 @@ import participants_update from "./𝐀𝐫𝐜𝐭𝐢𝐱💥𝐄𝐯𝐞𝐧�
 const UserPrivate = require(`./𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/private`);
 const Welcome = require(`./𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/setwelcome`);
 const LinkList = require(`./𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/antilink`);
+const Authenticate = require(`./𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/auth`);
 const DebugList = require(`./𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/debug`);
 const Ranker = require(`./𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/autorank`);
 const Pokemon = require(`./𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/pokemon`);
@@ -44,7 +45,7 @@ const sequelize: Sequelize = ʟᴀʏᴏᴜᴛ.DATABASE;
 const logger: Logger = Pot({
 timestamp: () => `,"Time":"${new Date().toJSON()}"`,
 }).child({});
-logger.level = "silent";
+logger.level = "error";
 var Konn = makeInMemoryStore({ logger });
 Konn?.readFromFile("./𝐀𝐫𝐜𝐭𝐢𝐱⚠️𝕿𝖊𝖒𝖕/AʀƈȶɨӼ.json");
 setInterval(() => {
@@ -147,7 +148,7 @@ const ӄ𝖗𝖞ӄ𝖓𝖟: WASocket = makeWASocket({
 logger,
 printQRInTerminal: true,
 auth: state,
-browser: ["Arctix Api", "Chrome", "4.0.0"],
+browser: ["Arctix", "Chrome", "4.0.0"],
 getMessage: async (key) => {
 return {};
 },
@@ -158,9 +159,6 @@ Konn?.bind(ӄ𝖗𝖞ӄ𝖓𝖟.ev);
 participants_update.participants_update(update, ӄ𝖗𝖞ӄ𝖓𝖟);
 });
 ӄ𝖗𝖞ӄ𝖓𝖟.ev.on("connection.update", (update) => {
-ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(ӄ𝖗𝖞ӄ𝖓𝖟.user.id, {
-text: "❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ❞ Booted...",
-});
 connection_update.connection_update(update, DisconnectReason, startSock);
 });
 ӄ𝖗𝖞ӄ𝖓𝖟.ev.on("messages.upsert", async (update) => {

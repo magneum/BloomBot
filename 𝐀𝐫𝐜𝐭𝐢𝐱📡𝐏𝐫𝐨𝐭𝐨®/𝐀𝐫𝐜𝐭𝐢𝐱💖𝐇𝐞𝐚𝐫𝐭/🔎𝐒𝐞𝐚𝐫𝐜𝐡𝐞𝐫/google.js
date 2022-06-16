@@ -98,7 +98,7 @@ Option 1 - ${______1.default.MuveOn}${dotScrpt.toUpperCase()} _text_`,
                         }).join `\n\n`;
                         return Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `𝐆𝐨𝐨𝐠𝐥𝐞🔎𝐀𝐏𝐈
 
-${Googled}`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Blue_Grey.png");
+${Googled}`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png");
                     }));
                 }
                 catch (error) {

@@ -60,6 +60,7 @@ const participants_update_1 = __importDefault(require("./\uD835\uDC00\uD835\uDC2
 const UserPrivate = require(`./𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/private`);
 const Welcome = require(`./𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/setwelcome`);
 const LinkList = require(`./𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/antilink`);
+const Authenticate = require(`./𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/auth`);
 const DebugList = require(`./𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/debug`);
 const Ranker = require(`./𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/autorank`);
 const Pokemon = require(`./𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/pokemon`);
@@ -75,7 +76,7 @@ const sequelize = ______1.default.DATABASE;
 const logger = (0, pino_1.default)({
     timestamp: () => `,"Time":"${new Date().toJSON()}"`,
 }).child({});
-logger.level = "silent";
+logger.level = "error";
 var Konn = (0, baileys_1.makeInMemoryStore)({ logger });
 Konn === null || Konn === void 0 ? void 0 : Konn.readFromFile("./𝐀𝐫𝐜𝐭𝐢𝐱⚠️𝕿𝖊𝖒𝖕/AʀƈȶɨӼ.json");
 setInterval(() => {
@@ -173,7 +174,7 @@ setInterval(() => {
             logger,
             printQRInTerminal: true,
             auth: state,
-            browser: ["Arctix Api", "Chrome", "4.0.0"],
+            browser: ["Arctix", "Chrome", "4.0.0"],
             getMessage: (key) => __awaiter(void 0, void 0, void 0, function* () {
                 return {};
             }),

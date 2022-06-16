@@ -46,7 +46,6 @@ let Fox: proto.IWebMessageInfo = update.messages[0];
 let AʀƈȶɨӼ: AʀƈȶɨӼ = await resolve(Fox, ӄ𝖗𝖞ӄ𝖓𝖟);
 let TUF: Client = new Client(ӄ𝖗𝖞ӄ𝖓𝖟);
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-
 if (AʀƈȶɨӼ.isCmd && !AʀƈȶɨӼ.isGroup && !AʀƈȶɨӼ.isSenderTUFs) {
 await UserPrivate.findOne(
 {
@@ -180,7 +179,7 @@ Kolor.cyanBright(
 "|════════════════════════「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢® 」════════════════════════|"
 )
 );
-var newCommits = await git.log(["📡𝐏𝐫𝐨𝐭𝐨®..origin/📡𝐏𝐫𝐨𝐭𝐨®"]);
+var newCommits = await git.log(["𝐀𝐫𝐜𝐭𝐢𝐱📡𝐏𝐫𝐨𝐭𝐨®..origin/𝐀𝐫𝐜𝐭𝐢𝐱📡𝐏𝐫𝐨𝐭𝐨®"]);
 if (newCommits.total != 0) {
 // try {
 // let list_chats_user = Konn.chats.all().map((v) => v.id);
@@ -223,7 +222,7 @@ if (newCommits.total != 0) {
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 try {
 var 𝖛𝖑𝖐𝖕 = require("child_process").exec(
-"git config --global user.name 'KryKnz' && git config --global user.email 'KryKnz@yandex.com' && git config pull.rebase false && git init --initial-branch=📡𝐏𝐫𝐨𝐭𝐨® && git fetch origin 📡𝐏𝐫𝐨𝐭𝐨® && git reset --hard origin/📡𝐏𝐫𝐨𝐭𝐨® && git stash && git stash drop && git pull"
+"git config --global user.name 'KryKnz' && git config --global user.email 'KryKnz@yandex.com' && git config pull.rebase false && git init --initial-branch=𝐀𝐫𝐜𝐭𝐢𝐱📡𝐏𝐫𝐨𝐭𝐨® && git fetch origin 𝐀𝐫𝐜𝐭𝐢𝐱📡𝐏𝐫𝐨𝐭𝐨® && git reset --hard origin/𝐀𝐫𝐜𝐭𝐢𝐱📡𝐏𝐫𝐨𝐭𝐨® && git stash && git stash drop && git pull"
 );
 console.log("🛰️ 𝐓𝐡𝐫𝐞𝐚𝐝 𝐈𝐃:", Kolor.green(𝖛𝖑𝖐𝖕.pid));
 𝖛𝖑𝖐𝖕.stderr.pipe(process.stderr);
