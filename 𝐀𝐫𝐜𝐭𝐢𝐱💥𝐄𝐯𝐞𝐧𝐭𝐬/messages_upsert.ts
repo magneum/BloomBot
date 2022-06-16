@@ -29,7 +29,6 @@ import ʟᴀʏᴏᴜᴛ from "../𝐀𝐫𝐜𝐭𝐢𝐱🀄𝐕𝐞𝐧𝐭/ʟ
 import Silent from "../𝐀𝐫𝐜𝐭𝐢𝐱🀄𝐕𝐞𝐧𝐭/Silent";
 import Rankr from "../𝐀𝐫𝐜𝐭𝐢𝐱🀄𝐕𝐞𝐧𝐭/Ranker";
 const git = require(`simple-git`)();
-import Deny_ from "./Deny_";
 import ms from "parse-ms";
 import Kolor from "chalk";
 import * as fs from "fs";
@@ -51,7 +50,81 @@ let AʀƈȶɨӼ: AʀƈȶɨӼ = await resolve(Fox, ӄ𝖗𝖞ӄ𝖓𝖟);
 let TUF: Client = new Client(ӄ𝖗𝖞ӄ𝖓𝖟);
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 if (AʀƈȶɨӼ.isCmd) {
-await Deny_.Deny_(AʀƈȶɨӼ, ӄ𝖗𝖞ӄ𝖓𝖟, TUF, Fox);
+if (AʀƈȶɨӼ.isCmd && !AʀƈȶɨӼ.isGroup && !AʀƈȶɨӼ.isSenderTUFs) {
+await UserPrivate.findOne(
+{
+ID: AʀƈȶɨӼ.sender,
+},
+async (error, user) => {
+if (error) return Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error);
+if (!user) {
+var newUser = new UserPrivate({
+ID: AʀƈȶɨӼ.sender,
+Amount: 1,
+});
+await newUser
+.save()
+.catch((error: any) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
+return Image_Button.VImg(
+TUF,
+Fox,
+AʀƈȶɨӼ,
+`
+╔◇═══════════════◇╗
+┊ 𝐊𝐫𝐲𝐙𝐞𝐧👑𝐏𝐫𝐢𝐯𝐚𝐭𝐞
+┊    𝐌𝐞𝐜𝐡𝐚𝐧𝐢𝐬𝐦
+╚◇═══════════════◇╝
+
+✋🏽‍𝐖𝐚𝐢𝐭 𝐅𝐨𝐫 𝐌𝐲 𝐎𝐰𝐧𝐞𝐫 𝐓𝐨 𝐑𝐞𝐬𝐩𝐨𝐧𝐝!
+⚡• Dear Random User, This Private Is Being Guarded By Vlkyre AI!
+⚡• Do Not Spam The Chat Box!
+⚡• No Spamming In Private!
+⚡• You Will be blocked after 4 warnings!
+
+🌿𝐏𝐮𝐧𝐢𝐬𝐡𝐦𝐞𝐧𝐭
+❗• 𝗪𝗮𝗿𝗻𝗶𝗻𝗴𝘀: 1/4
+❗• 𝗪𝗮𝗿𝗻𝗲𝗱 𝗧𝗼: @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
+❗• You Will be Auto-Blocked After 4 warnings!`,
+"./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Orange.png"
+);
+}
+//" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
+if (user.Amount < 4) {
+user.Amount = user.Amount + 1;
+await user
+.save()
+.catch((error: any) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
+return Image_Button.VImg(
+TUF,
+Fox,
+AʀƈȶɨӼ,
+`╔◇═══════════════◇╗
+┊ 𝐊𝐫𝐲𝐙𝐞𝐧👑𝐏𝐫𝐢𝐯𝐚𝐭𝐞
+┊    𝐌𝐞𝐜𝐡𝐚𝐧𝐢𝐬𝐦
+╚◇═══════════════◇╝
+
+✋🏽‍𝐖𝐚𝐢𝐭 𝐅𝐨𝐫 𝐌𝐲 𝐎𝐰𝐧𝐞𝐫 𝐓𝐨 𝐑𝐞𝐬𝐩𝐨𝐧𝐝!
+⚡• Dear Random User, This Private Is Being Guarded By Vlkyre AI!
+⚡• Do Not Spam The Chat Box!
+⚡• No Spamming In Private!
+⚡• You Will be blocked after 4 warnings!
+
+🌿𝐏𝐮𝐧𝐢𝐬𝐡𝐦𝐞𝐧𝐭
+❗• 𝗪𝗮𝗿𝗻𝗶𝗻𝗴𝘀: ${user.Amount}/4
+❗• 𝗪𝗮𝗿𝗻𝗲𝗱 𝗧𝗼: @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
+❗• You Will be Auto-Blocked After 4 warnings!`,
+"./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Orange.png"
+);
+}
+await user
+.delete()
+.catch((error: any) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
+await ӄ𝖗𝖞ӄ𝖓𝖟.blockUser(AʀƈȶɨӼ.sender, "add");
+return;
+}
+);
+}
+//" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 await Kooldown.findOne(
 {
 ID: AʀƈȶɨӼ.sender,
