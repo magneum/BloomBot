@@ -163,22 +163,12 @@ timestamp: Date(),
 contextInfo: { mentionedJid: [AʀƈȶɨӼ.sender] },
 }
 );
+} 
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-} else {
-console.clear();
-console.log(
-Kolor.cyanBright(
-"|════════════════════════「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢® 」════════════════════════|"
-)
-);
+console.log(Kolor.cyanBright("|════════════════════════「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢® 」════════════════════════|"));
 console.log(Fox);
+console.log(Kolor.cyanBright("|════════════════════════「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢® 」════════════════════════|"));
 await git.fetch();
-console.log(AʀƈȶɨӼ);
-console.log(
-Kolor.cyanBright(
-"|════════════════════════「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢® 」════════════════════════|"
-)
-);
 var newCommits = await git.log(["𝐀𝐫𝐜𝐭𝐢𝐱📡𝐏𝐫𝐨𝐭𝐨®..origin/𝐀𝐫𝐜𝐭𝐢𝐱📡𝐏𝐫𝐨𝐭𝐨®"]);
 if (newCommits.total != 0) {
 // try {
@@ -389,7 +379,6 @@ await ARC.handle(TUF, Fox, AʀƈȶɨӼ, ǟʀɢʊʍɛռȶ, ӄ𝖗𝖞ӄ𝖓𝖟).
 );
 } catch (err) {
 console.log(Kolor.red("❌𝐄𝐫𝐫𝐨𝐫: ", err));
-}
 }
 }
 );

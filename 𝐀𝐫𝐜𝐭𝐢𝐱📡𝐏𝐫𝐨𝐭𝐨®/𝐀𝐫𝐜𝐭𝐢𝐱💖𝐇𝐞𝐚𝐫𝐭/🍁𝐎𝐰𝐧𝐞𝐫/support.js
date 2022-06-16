@@ -77,7 +77,7 @@ module.exports = {
 *𝗚roup⛩️E:* _chat.whatsapp.com/G1NzKSYjAST95ehHk4FOZK_
 *𝗚roup⛩️F:* _chat.whatsapp.com/LKN8uVBd8ucHRHofz0jBSd_
 
-⚡ ⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 𝐎𝐟𝐟𝐢𝐜𝐢𝐚𝐥 ⦔ ⚡`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Blue_Grey.png");
+⚡ ⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 𝐎𝐟𝐟𝐢𝐜𝐢𝐚𝐥 ⦔ ⚡`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png");
         });
     },
 };
