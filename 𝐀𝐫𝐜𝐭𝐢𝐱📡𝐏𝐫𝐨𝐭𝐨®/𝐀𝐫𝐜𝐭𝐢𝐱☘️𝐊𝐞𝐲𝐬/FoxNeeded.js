@@ -31,7 +31,7 @@ const FoxNeeded = (TUF, Fox, AʀƈȶɨӼ, caption, dotScrpt) => __awaiter(void 0
 └────────────────◇
 
 ❌𝐄𝐫𝐫𝐨𝐫: Argument Needed To Run This Command.`,
-            footer: `⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ⦔ `,
+            footer: `⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 𝐁𝐞𝐭𝐚❗ ⦔`,
             title: `🔸𝐂𝐨𝐦𝐦𝐚𝐧𝐝: _${______1.default.MuveOn}${dotScrpt}_`,
             buttonText: "❝ How To Use? ❞",
             sections: [

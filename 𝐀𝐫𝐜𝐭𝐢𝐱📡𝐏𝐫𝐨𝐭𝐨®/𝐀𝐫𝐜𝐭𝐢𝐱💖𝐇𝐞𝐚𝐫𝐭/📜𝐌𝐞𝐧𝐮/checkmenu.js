@@ -58,7 +58,7 @@ module.exports = {
 ├• *${______1.default.MuveOn}beauty:*  _@tag person or reply person_
 ├• *${______1.default.MuveOn}dumb:*  _@tag person or reply person_
 └────────────◇`,
-                footer: "`⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔",
+                footer: "⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 𝐁𝐞𝐭𝐚❗ ⦔",
                 buttons: [
                     {
                         buttonId: `${______1.default.MuveOn}help`,

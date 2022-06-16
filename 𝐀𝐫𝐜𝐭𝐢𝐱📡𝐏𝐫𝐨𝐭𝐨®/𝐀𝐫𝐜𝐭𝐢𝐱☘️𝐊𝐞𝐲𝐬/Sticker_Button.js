@@ -31,7 +31,7 @@ const Sticker_Button = (TUF, Fox, AʀƈȶɨӼ, ǟʀɢʊʍɛռȶ, caption, media)
                 video: { url: media },
                 mimetype: "video/mp4",
                 caption: caption,
-                footer: `⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ⦔`,
+                footer: `⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 𝐁𝐞𝐭𝐚❗ ⦔`,
                 buttons: [
                     {
                         buttonId: `${______1.default.MuveOn}help`,
@@ -59,7 +59,7 @@ const Sticker_Button = (TUF, Fox, AʀƈȶɨӼ, ǟʀɢʊʍɛռȶ, caption, media)
                 video: { url: media },
                 mimetype: "video/mp4",
                 caption: caption,
-                footer: `⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ⦔`,
+                footer: `⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 𝐁𝐞𝐭𝐚❗ ⦔`,
                 buttons: [
                     {
                         buttonId: `${______1.default.MuveOn}help`,
@@ -85,7 +85,7 @@ const Sticker_Button = (TUF, Fox, AʀƈȶɨӼ, ǟʀɢʊʍɛռȶ, caption, media)
                 video: { url: media },
                 mimetype: "video/mp4",
                 caption: caption,
-                footer: `⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ⦔`,
+                footer: `⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 𝐁𝐞𝐭𝐚❗ ⦔`,
                 buttons: [
                     {
                         buttonId: `${______1.default.MuveOn}help`,

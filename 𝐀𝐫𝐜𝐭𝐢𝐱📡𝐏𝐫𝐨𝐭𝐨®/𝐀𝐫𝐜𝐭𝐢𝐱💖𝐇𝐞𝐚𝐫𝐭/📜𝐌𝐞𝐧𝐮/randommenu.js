@@ -60,7 +60,7 @@ module.exports = {
 ├• *${______1.default.MuveOn}pokedex:*  _get any pokemon information_
 ├• *${______1.default.MuveOn}triggered:*  _@tag or reply person_
 └────────────◇`,
-                footer: "`⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔",
+                footer: "⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 𝐁𝐞𝐭𝐚❗ ⦔",
                 buttons: [
                     {
                         buttonId: `${______1.default.MuveOn}help`,

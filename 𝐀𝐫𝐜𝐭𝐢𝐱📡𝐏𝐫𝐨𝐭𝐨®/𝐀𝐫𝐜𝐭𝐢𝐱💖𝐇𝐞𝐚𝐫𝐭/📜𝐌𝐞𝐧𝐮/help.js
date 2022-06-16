@@ -66,7 +66,7 @@ module.exports = {
 ├•🍑 ${______1.default.MuveOn}hentaimenu
 ├•🥃 ${______1.default.MuveOn}humanmenu
 └──────────────◇`,
-                footer: "`⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔",
+                footer: "⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 𝐁𝐞𝐭𝐚❗ ⦔",
                 buttons: [
                     {
                         buttonId: `${______1.default.MuveOn}support`,

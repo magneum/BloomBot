@@ -315,7 +315,7 @@ module.exports = {
 ├•🍑 ${______1.default.MuveOn}uniform
 ├•🍑 ${______1.default.MuveOn}yuri
 └────────────◇`,
-                footer: "`⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔",
+                footer: "⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 𝐁𝐞𝐭𝐚❗ ⦔",
                 buttons: [
                     {
                         buttonId: `${______1.default.MuveOn}help`,

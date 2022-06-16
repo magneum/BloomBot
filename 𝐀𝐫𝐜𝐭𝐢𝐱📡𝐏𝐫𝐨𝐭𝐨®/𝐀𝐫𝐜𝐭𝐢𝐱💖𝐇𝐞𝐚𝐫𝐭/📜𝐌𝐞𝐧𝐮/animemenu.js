@@ -111,7 +111,7 @@ module.exports = {
 ├• *${______1.default.MuveOn}thumbsup:*  _@tag or reply_
 ├• *${______1.default.MuveOn}wag:*  _@tag or reply_
 └────────────◇`,
-                footer: "`⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔",
+                footer: "⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 𝐁𝐞𝐭𝐚❗ ⦔",
                 buttons: [
                     {
                         buttonId: `${______1.default.MuveOn}help`,

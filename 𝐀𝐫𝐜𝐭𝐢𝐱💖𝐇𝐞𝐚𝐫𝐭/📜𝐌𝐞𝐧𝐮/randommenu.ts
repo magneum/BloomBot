@@ -55,7 +55,7 @@ caption: `┌─「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐏𝐫𝐨𝐭𝐨® 」
 ├• *${ʟᴀʏᴏᴜᴛ.MuveOn}pokedex:*  _get any pokemon information_
 ├• *${ʟᴀʏᴏᴜᴛ.MuveOn}triggered:*  _@tag or reply person_
 └────────────◇`,
-footer: "`⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔",
+footer: "*⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 𝐁𝐞𝐭𝐚❗ ⦔*",
 buttons: [
 {
 buttonId: `${ʟᴀʏᴏᴜᴛ.MuveOn}help`,

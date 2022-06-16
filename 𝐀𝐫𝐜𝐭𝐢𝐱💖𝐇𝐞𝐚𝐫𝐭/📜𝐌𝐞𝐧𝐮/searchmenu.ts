@@ -56,7 +56,7 @@ caption: `┌─「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐏𝐫𝐨𝐭𝐨® 」
 ├• *${ʟᴀʏᴏᴜᴛ.MuveOn}tenor:*  _convert text to tenor gif_
 ├• *${ʟᴀʏᴏᴜᴛ.MuveOn}gif:*  _convert text tenor gif_
 └────────────◇`,
-footer: "`⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔",
+footer: "*⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 𝐁𝐞𝐭𝐚❗ ⦔*",
 buttons: [
 {
 buttonId: `${ʟᴀʏᴏᴜᴛ.MuveOn}help`,

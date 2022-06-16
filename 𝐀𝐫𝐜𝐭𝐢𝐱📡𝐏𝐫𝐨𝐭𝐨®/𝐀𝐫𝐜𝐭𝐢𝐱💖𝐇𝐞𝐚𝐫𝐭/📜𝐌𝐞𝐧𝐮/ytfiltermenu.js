@@ -66,7 +66,7 @@ module.exports = {
 ├• *${______1.default.MuveOn}ytvaporwave:*  _download yt audio with filter_
 ├• *${______1.default.MuveOn}ytvibrato:*  _download yt audio with filter_
 └────────────◇`,
-                footer: "`⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔",
+                footer: "⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 𝐁𝐞𝐭𝐚❗ ⦔",
                 buttons: [
                     {
                         buttonId: `${______1.default.MuveOn}help`,

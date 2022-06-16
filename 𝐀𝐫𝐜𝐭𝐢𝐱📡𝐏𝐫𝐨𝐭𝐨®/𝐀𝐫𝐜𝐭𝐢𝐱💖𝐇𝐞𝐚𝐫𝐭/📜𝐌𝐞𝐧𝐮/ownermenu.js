@@ -59,7 +59,7 @@ module.exports = {
 ├• *${______1.default.MuveOn}spam:*  _spam messsage in group/private_
 ├• *${______1.default.MuveOn}help:*  _basic help command_
 └────────────◇`,
-                footer: "`⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔",
+                footer: "⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 𝐁𝐞𝐭𝐚❗ ⦔",
                 buttons: [
                     {
                         buttonId: `${______1.default.MuveOn}help`,

@@ -57,7 +57,7 @@ module.exports = {
 ├• *${______1.default.MuveOn}carbon:*  _convert text to carbonized image_
 ├• *${______1.default.MuveOn}tinyurl:*  _shrink any long url_
 └────────────◇`,
-                footer: "`⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔",
+                footer: "⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 𝐁𝐞𝐭𝐚❗ ⦔",
                 buttons: [
                     {
                         buttonId: `${______1.default.MuveOn}help`,

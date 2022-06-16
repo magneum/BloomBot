@@ -61,7 +61,7 @@ module.exports = {
 ├• *${______1.default.MuveOn}tenor:*  _convert text to tenor gif_
 ├• *${______1.default.MuveOn}gif:*  _convert text tenor gif_
 └────────────◇`,
-                footer: "`⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔",
+                footer: "⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 𝐁𝐞𝐭𝐚❗ ⦔",
                 buttons: [
                     {
                         buttonId: `${______1.default.MuveOn}help`,

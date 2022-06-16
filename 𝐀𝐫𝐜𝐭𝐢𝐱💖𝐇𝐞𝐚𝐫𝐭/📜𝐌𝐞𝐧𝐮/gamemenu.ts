@@ -58,7 +58,7 @@ caption: `┌─「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐏𝐫𝐨𝐭𝐨® 」
 ├• *${ʟᴀʏᴏᴜᴛ.MuveOn}balance:*  _check your balance or replied person's_
 ├• *${ʟᴀʏᴏᴜᴛ.MuveOn}truthdare:*  _get random truth/dare query_
 └────────────◇`,
-footer: "`⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔",
+footer: "*⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 𝐁𝐞𝐭𝐚❗ ⦔*",
 buttons: [
 {
 buttonId: `${ʟᴀʏᴏᴜᴛ.MuveOn}help`,

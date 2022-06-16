@@ -27,7 +27,7 @@ const Oops = (TUF, Fox, AʀƈȶɨӼ, caption) => __awaiter(void 0, void 0, void 
 └────────────────◇
 
 ${caption}`,
-            footer: `⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ⦔`,
+            footer: `⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 𝐁𝐞𝐭𝐚❗ ⦔`,
             title: "❌𝐄𝐫𝐫𝐨𝐫: RunTime Error!",
             buttonText: "❝ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞",
             sections: [

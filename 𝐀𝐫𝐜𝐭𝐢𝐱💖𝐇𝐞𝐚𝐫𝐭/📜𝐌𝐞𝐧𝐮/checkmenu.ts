@@ -53,7 +53,7 @@ caption: `┌─「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐏𝐫𝐨𝐭𝐨® 」
 ├• *${ʟᴀʏᴏᴜᴛ.MuveOn}beauty:*  _@tag person or reply person_
 ├• *${ʟᴀʏᴏᴜᴛ.MuveOn}dumb:*  _@tag person or reply person_
 └────────────◇`,
-footer: "`⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔",
+footer: "*⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 𝐁𝐞𝐭𝐚❗ ⦔*",
 buttons: [
 {
 buttonId: `${ʟᴀʏᴏᴜᴛ.MuveOn}help`,

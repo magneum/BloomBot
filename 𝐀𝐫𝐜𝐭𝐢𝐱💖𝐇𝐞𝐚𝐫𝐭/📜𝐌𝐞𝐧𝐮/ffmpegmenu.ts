@@ -52,7 +52,7 @@ caption: `┌─「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐏𝐫𝐨𝐭𝐨® 」
 ├• *${ʟᴀʏᴏᴜᴛ.MuveOn}carbon:*  _convert text to carbonized image_
 ├• *${ʟᴀʏᴏᴜᴛ.MuveOn}tinyurl:*  _shrink any long url_
 └────────────◇`,
-footer: "`⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔",
+footer: "*⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 𝐁𝐞𝐭𝐚❗ ⦔*",
 buttons: [
 {
 buttonId: `${ʟᴀʏᴏᴜᴛ.MuveOn}help`,

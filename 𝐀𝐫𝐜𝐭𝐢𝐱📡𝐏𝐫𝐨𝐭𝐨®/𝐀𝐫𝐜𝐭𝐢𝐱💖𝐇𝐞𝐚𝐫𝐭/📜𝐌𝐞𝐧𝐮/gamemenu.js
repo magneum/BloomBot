@@ -63,7 +63,7 @@ module.exports = {
 ├• *${______1.default.MuveOn}balance:*  _check your balance or replied person's_
 ├• *${______1.default.MuveOn}truthdare:*  _get random truth/dare query_
 └────────────◇`,
-                footer: "`⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔",
+                footer: "⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 𝐁𝐞𝐭𝐚❗ ⦔",
                 buttons: [
                     {
                         buttonId: `${______1.default.MuveOn}help`,

@@ -33,7 +33,7 @@ const Video_Button = (TUF, Fox, AʀƈȶɨӼ, media, caption) => __awaiter(void 0
 └────────────────◇
 
 ${caption}`,
-            footer: `⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ⦔`,
+            footer: `⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 𝐁𝐞𝐭𝐚❗ ⦔`,
             buttons: [
                 {
                     buttonId: `${______1.default.MuveOn}help`,

@@ -57,7 +57,7 @@ module.exports = {
 ├• *${______1.default.MuveOn}slut:*  _get random slut img/gif_
 ├• *${______1.default.MuveOn}tikporn:*  _get random tiktokporn video_
 └────────────◇`,
-                footer: "`⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔",
+                footer: "⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 𝐁𝐞𝐭𝐚❗ ⦔",
                 buttons: [
                     {
                         buttonId: `${______1.default.MuveOn}help`,

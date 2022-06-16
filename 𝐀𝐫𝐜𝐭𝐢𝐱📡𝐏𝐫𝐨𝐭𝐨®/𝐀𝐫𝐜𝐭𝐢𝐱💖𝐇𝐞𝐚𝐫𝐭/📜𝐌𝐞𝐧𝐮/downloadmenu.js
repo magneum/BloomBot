@@ -57,7 +57,7 @@ module.exports = {
 ├•  ${______1.default.MuveOn}imagedl: _download using image link_
 ├•  ${______1.default.MuveOn}videodl: _download using video link_
 └────────────◇`,
-                footer: "`⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔",
+                footer: "⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 𝐁𝐞𝐭𝐚❗ ⦔",
                 buttons: [
                     {
                         buttonId: `${______1.default.MuveOn}help`,

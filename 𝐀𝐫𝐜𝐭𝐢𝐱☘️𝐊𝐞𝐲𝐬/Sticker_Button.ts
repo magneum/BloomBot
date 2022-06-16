@@ -27,7 +27,7 @@ contextInfo: { mentionedJid: [AʀƈȶɨӼ.sender, TagMention] },
 video: { url: media },
 mimetype: "video/mp4",
 caption: caption,
-footer: `⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ⦔`,
+footer: "*⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 𝐁𝐞𝐭𝐚❗ ⦔*",
 buttons: [
 {
 buttonId: `${ʟᴀʏᴏᴜᴛ.MuveOn}help`,
@@ -59,7 +59,7 @@ contextInfo: { mentionedJid: [AʀƈȶɨӼ.sender, Receiver] },
 video: { url: media },
 mimetype: "video/mp4",
 caption: caption,
-footer: `⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ⦔`,
+footer: "*⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 𝐁𝐞𝐭𝐚❗ ⦔*",
 buttons: [
 {
 buttonId: `${ʟᴀʏᴏᴜᴛ.MuveOn}help`,
@@ -88,7 +88,7 @@ contextInfo: { mentionedJid: [AʀƈȶɨӼ.sender] },
 video: { url: media },
 mimetype: "video/mp4",
 caption: caption,
-footer: `⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ⦔`,
+footer: "*⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 𝐁𝐞𝐭𝐚❗ ⦔*",
 buttons: [
 {
 buttonId: `${ʟᴀʏᴏᴜᴛ.MuveOn}help`,

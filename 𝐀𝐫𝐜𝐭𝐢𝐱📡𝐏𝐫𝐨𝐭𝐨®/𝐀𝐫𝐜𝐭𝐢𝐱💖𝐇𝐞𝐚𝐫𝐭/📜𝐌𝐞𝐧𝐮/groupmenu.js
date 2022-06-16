@@ -66,7 +66,7 @@ module.exports = {
 ├• *${______1.default.MuveOn}unmute:*  _unmute a group chat_
 ├• *${______1.default.MuveOn}mute:*  _mute group chat_
 └────────────◇`,
-                footer: "`⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔",
+                footer: "⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 𝐁𝐞𝐭𝐚❗ ⦔",
                 buttons: [
                     {
                         buttonId: `${______1.default.MuveOn}help`,
