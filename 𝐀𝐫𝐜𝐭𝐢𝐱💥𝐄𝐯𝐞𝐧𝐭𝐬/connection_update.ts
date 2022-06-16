@@ -23,68 +23,68 @@ import Kolor from "chalk";
 ⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
 */
 const connection_update = async (
-  update: any,
-  DisconnectReason: any,
-  startӄ𝖗𝖞ӄ𝖓𝖟: any,
-  ӄ𝖗𝖞ӄ𝖓𝖟
+update: any,
+DisconnectReason: any,
+startӄ𝖗𝖞ӄ𝖓𝖟: any,
+ӄ𝖗𝖞ӄ𝖓𝖟
 ): Promise<void> => {
-  const { connection, lastDisconnect } = update;
-  if (connection === "close") {
-    if (
-      (lastDisconnect.error as Boom)?.output?.statusCode !==
-      DisconnectReason.loggedOut
-    ) {
-      await startӄ𝖗𝖞ӄ𝖓𝖟();
-    } else {
-      console.log("❌𝐄𝐫𝐫𝐨𝐫꧂ Connection closed. You are logged out.");
-      process.exit(0);
-    }
-  }
-  /*
+const { connection, lastDisconnect } = update;
+if (connection === "close") {
+if (
+(lastDisconnect.error as Boom)?.output?.statusCode !==
+DisconnectReason.loggedOut
+) {
+await startӄ𝖗𝖞ӄ𝖓𝖟();
+} else {
+console.log("❌𝐄𝐫𝐫𝐨𝐫꧂ Connection closed. You are logged out.");
+process.exit(0);
+}
+}
+/*
 ⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
 「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」                                                                            「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」
 ⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
 */
-  if (connection === "connecting") {
-    if (ʟᴀʏᴏᴜᴛ.Heroku_App !== undefined) {
-      console.log("💡𝐈𝐧𝐟𝐨꧂  Connecting to WhatsApp...");
-    } else {
-      chalkAnimation.rainbow("💡𝐈𝐧𝐟𝐨꧂  Connecting to WhatsApp...");
-    }
-  }
-  /*
+if (connection === "connecting") {
+if (ʟᴀʏᴏᴜᴛ.Heroku_App !== undefined) {
+console.log("💡𝐈𝐧𝐟𝐨꧂  Connecting to WhatsApp...");
+} else {
+chalkAnimation.rainbow("💡𝐈𝐧𝐟𝐨꧂  Connecting to WhatsApp...");
+}
+}
+/*
 ⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
 「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」                                                                            「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」
 ⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
 */
-  if (connection === "open") {
-    if (ʟᴀʏᴏᴜᴛ.Heroku_App !== undefined) {
-      console.log("Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 Online!");
-    } else {
-      const rainbow = chalkAnimation.rainbow(`
+if (connection === "open") {
+if (ʟᴀʏᴏᴜᴛ.Heroku_App !== undefined) {
+console.log("Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 Online!");
+} else {
+const rainbow = chalkAnimation.rainbow(`
 |═════════════════════════════════「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®: Online   」═════════════════════════════════|`);
-      setTimeout(() => {
-        rainbow.stop();
-      }, 10_000);
-    }
-    try {
-      await ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(ӄ𝖗𝖞ӄ𝖓𝖟.user.id, {
-        text: `お 𝐔𝐬𝐞𝐫: ${
-          ӄ𝖗𝖞ӄ𝖓𝖟.user.notify ||
-          ӄ𝖗𝖞ӄ𝖓𝖟.user.name ||
-          ӄ𝖗𝖞ӄ𝖓𝖟.user.name ||
-          ӄ𝖗𝖞ӄ𝖓𝖟.user.id.split("@")[0]
-        } お
-        
-        「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®: Online   」`,
-      });
-    } catch (error) {
-      console.log("Stored Arctix data!");
-    }
-  }
+setTimeout(() => {
+rainbow.stop();
+}, 10_000);
+}
+try {
+await ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(ӄ𝖗𝖞ӄ𝖓𝖟.user.id, {
+text: `お 𝐔𝐬𝐞𝐫: ${
+ӄ𝖗𝖞ӄ𝖓𝖟.user.notify ||
+ӄ𝖗𝖞ӄ𝖓𝖟.user.name ||
+ӄ𝖗𝖞ӄ𝖓𝖟.user.name ||
+ӄ𝖗𝖞ӄ𝖓𝖟.user.id.split("@")[0]
+} お
+
+「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®: Online   」`,
+});
+} catch (error) {
+console.log("Stored Arctix data!");
+}
+}
 };
 export = {
-  connection_update: connection_update,
+connection_update: connection_update,
 };
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 /* 
