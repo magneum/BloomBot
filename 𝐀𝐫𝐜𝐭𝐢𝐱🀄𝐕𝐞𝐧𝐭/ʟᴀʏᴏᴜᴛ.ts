@@ -44,13 +44,13 @@ IMDB: process.env.IMDB,
 Weather: process.env.CURRENT_WEATHER_API_KEY,
 TUFs: process.env.TUFs,
 OFFLINE_RESPONSE: process.env.OFFLINE_RESPONSE,
-DATABASE_URL:process.env.DATABASE_URL === undefined? "./AʀƈȶɨӼ.db": process.env.DATABASE_URL,
-DATABASE:process.env.DATABASE_URL === "./AʀƈȶɨӼ.db"? 
+DATABASE_URL:process.env.DATABASE_URL === undefined? "./𝐀𝐫𝐜𝐭𝐢𝐱🐞𝐁𝐞𝐞𝐭𝐥𝐞/AʀƈȶɨӼ.db": process.env.DATABASE_URL,
+DATABASE:process.env.DATABASE_URL === "./𝐀𝐫𝐜𝐭𝐢𝐱🐞𝐁𝐞𝐞𝐭𝐥𝐞/AʀƈȶɨӼ.db"? 
 new Sequelize({dialect: "sqlite",
 storage: process.env.DATABASE_URL,logging: Log(process.env.DEBUG),})
 : new Sequelize(process.env.DATABASE_URL, {
-dialect: "postgres",
-protocol: "postgres",
+dialect: "postgresql",
+protocol: "postgresq",
 logging: Log(process.env.DEBUG),
 dialectOptions: { ssl: { require: true, rejectUnauthorized: false } },
 }),
