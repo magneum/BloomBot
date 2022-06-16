@@ -183,20 +183,6 @@ return {};
 participants_update.participants_update(update, ӄ𝖗𝖞ӄ𝖓𝖟);
 });
 ӄ𝖗𝖞ӄ𝖓𝖟.ev.on("connection.update", async (update) => {
-try {
-await ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(ӄ𝖗𝖞ӄ𝖓𝖟.user.id, {
-text: `お 𝐔𝐬𝐞𝐫: ${
-ӄ𝖗𝖞ӄ𝖓𝖟.user.notify ||
-ӄ𝖗𝖞ӄ𝖓𝖟.user.name ||
-ӄ𝖗𝖞ӄ𝖓𝖟.user.name ||
-ӄ𝖗𝖞ӄ𝖓𝖟.user.id.split("@")[0]
-} お
-
-「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®: Online   」`,
-});
-} catch (error) {
-console.log("Stored Arctix data!");
-}
 connection_update.connection_update(update, DisconnectReason, startSock);
 });
 ӄ𝖗𝖞ӄ𝖓𝖟.ev.on("messages.upsert", async (update) => {
