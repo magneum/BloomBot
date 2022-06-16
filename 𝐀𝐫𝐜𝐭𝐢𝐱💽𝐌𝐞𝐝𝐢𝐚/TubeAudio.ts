@@ -70,6 +70,7 @@ MessageType.audio,
 )
 .then(VOID.VOID(FFmpegFile))
 .catch((error: any) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
+//" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 } catch (error) {
 const downloadFFmpegFile = ytdl(Found.url, { filter: "audioonly" });
 const writeStream = fs.createWriteStream(FFmpegFile);
