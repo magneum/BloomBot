@@ -24,7 +24,7 @@ class Client {
         this.ӄ𝖗𝖞ӄ𝖓𝖟 = ӄ𝖗𝖞ӄ𝖓𝖟;
     }
     sendMessage(jid, content, type, options) {
-        var _a;
+        var _a, _b, _c;
         return __awaiter(this, void 0, void 0, function* () {
             let res;
             let ops;
@@ -56,6 +56,9 @@ class Client {
                 if (options === null || options === void 0 ? void 0 : options.caption) {
                     ops.caption = options.caption;
                 }
+                if ((_b = options === null || options === void 0 ? void 0 : options.contextInfo) === null || _b === void 0 ? void 0 : _b.mentionedJid) {
+                    ops.mentions = options.contextInfo.mentionedJid;
+                }
                 console.log(options);
                 res = yield this.ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(jid, ops);
             }
@@ -66,6 +69,13 @@ class Client {
                 });
             }
             else if (type === message_type_1.MessageType.buttonsMessage) {
+                ops = {
+                    text: content,
+                };
+                console.log(options);
+                if ((_c = options === null || options === void 0 ? void 0 : options.contextInfo) === null || _c === void 0 ? void 0 : _c.mentionedJid) {
+                    ops.mentions = options.contextInfo.mentionedJid;
+                }
                 res = yield this.ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(jid, content);
             }
             else if (type == message_type_1.MessageType.video) {

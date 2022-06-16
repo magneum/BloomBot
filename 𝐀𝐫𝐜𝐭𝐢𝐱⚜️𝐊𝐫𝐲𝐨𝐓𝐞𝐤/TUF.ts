@@ -56,6 +56,9 @@ image: content,
 if (options?.caption) {
 ops.caption = options.caption;
 }
+if (options?.contextInfo?.mentionedJid) {
+ops.mentions = options.contextInfo.mentionedJid;
+}
 console.log(options);
 res = await this.ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(jid, ops);
 } else if (type == MessageType.audio) {
@@ -64,6 +67,13 @@ audio: content,
 mimetype: "audio/mp3",
 });
 } else if (type === MessageType.buttonsMessage) {
+ops = {
+text: content,
+};
+console.log(options);
+if (options?.contextInfo?.mentionedJid) {
+ops.mentions = options.contextInfo.mentionedJid;
+}
 res = await this.ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(jid, content);
 } else if (type == MessageType.video) {
 ops = {

@@ -137,13 +137,8 @@ TAGmsg = "*Everyone!* May i get your attention please.";
 */
 await TUF.sendMessage(
 AʀƈȶɨӼ.chatId,
-`
-┌─「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐓𝐚𝐠𝐀𝐥𝐥 」
-├• *ꜰʀᴏᴍ:*  @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
-└────────────────◇
-
-${TAGmsg}\n\n${MsgMem}`,
-MessageType.text,
+{ url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 },
+MessageType.image,
 {
 quotedMessage: {
 conversation: Fox.message,
@@ -151,6 +146,12 @@ conversation: Fox.message,
 contextInfo: {
 mentionedJid: MEMBERs,
 },
+caption: `
+┌─「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐓𝐚𝐠𝐀𝐥𝐥 」
+├• *ꜰʀᴏᴍ:*  @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
+└────────────────◇
+
+${TAGmsg}\n\n${MsgMem}`,
 }
 );
 return;
