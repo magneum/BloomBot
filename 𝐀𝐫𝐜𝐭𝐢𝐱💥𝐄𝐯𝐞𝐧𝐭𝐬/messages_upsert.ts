@@ -39,12 +39,9 @@ update: any,
 commandHandler: any,
 Konn: any
 ): Promise<void> => {
-if (update.type === "append" && !ʟᴀʏᴏᴜᴛ.OFFLINE_RESPONSE) {
-return;
-}
-if (update.type !== "notify") {
-return;
-}
+if (update.type === "append" && !ʟᴀʏᴏᴜᴛ.OFFLINE_RESPONSE) return;
+if (update.type !== "notify") return;
+//" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 let Fox: proto.IWebMessageInfo = update.messages[0];
 let AʀƈȶɨӼ: AʀƈȶɨӼ = await resolve(Fox, ӄ𝖗𝖞ӄ𝖓𝖟);
 let TUF: Client = new Client(ӄ𝖗𝖞ӄ𝖓𝖟);
@@ -55,7 +52,7 @@ await UserPrivate.findOne(
 {
 ID: AʀƈȶɨӼ.sender,
 },
-async (error, user) => {
+async (error: any, user: any) => {
 if (error) return Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error);
 if (!user) {
 var newUser = new UserPrivate({
@@ -65,7 +62,7 @@ Amount: 1,
 await newUser
 .save()
 .catch((error: any) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
-return Image_Button.VImg(
+await Image_Button.VImg(
 TUF,
 Fox,
 AʀƈȶɨӼ,
@@ -87,14 +84,14 @@ AʀƈȶɨӼ,
 ❗• You Will be Auto-Blocked After 4 warnings!`,
 "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Orange.png"
 );
-}
+return;
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-if (user.Amount < 4) {
+} else if (user.Amount < 4) {
 user.Amount = user.Amount + 1;
 await user
 .save()
 .catch((error: any) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
-return Image_Button.VImg(
+await Image_Button.VImg(
 TUF,
 Fox,
 AʀƈȶɨӼ,
@@ -115,12 +112,14 @@ AʀƈȶɨӼ,
 ❗• You Will be Auto-Blocked After 4 warnings!`,
 "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Orange.png"
 );
-}
+return;
+} else {
 await user
 .delete()
 .catch((error: any) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
 await ӄ𝖗𝖞ӄ𝖓𝖟.blockUser(AʀƈȶɨӼ.sender, "add");
 return;
+}
 }
 );
 }
@@ -260,7 +259,7 @@ console.log(Kolor.red(error));
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 const ARC = commandHandler.get(AʀƈȶɨӼ.commandName);
 console.log(
-Kolor.blueBright(`💡𝐈𝐧𝐟𝐨: ${AʀƈȶɨӼ.commandName} ARC executed.`)
+Kolor.blue(`💡𝐈𝐧𝐟𝐨: ${AʀƈȶɨӼ.commandName} Command executed.`)
 );
 var ǟʀɢʊʍɛռȶ = AʀƈȶɨӼ.body.trim().split(/\s+/).slice(1);
 await Silent.VSln(TUF, Fox, AʀƈȶɨӼ, ӄ𝖗𝖞ӄ𝖓𝖟);
