@@ -37,7 +37,6 @@ AʀƈȶɨӼ: AʀƈȶɨӼ,
 const ʟɴᴀᴍᴇ = AʀƈȶɨӼ.sender;
 const ᴅꜰɴᴀᴍᴇ = AʀƈȶɨӼ.commandName;
 const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/[^\d+]/g, "");
-await TUF.getGroupMetaData(AʀƈȶɨӼ.chatId, AʀƈȶɨӼ);
 var SpotFile = "./𝐀𝐫𝐜𝐭𝐢𝐱🐞𝐁𝐞𝐞𝐭𝐥𝐞/" + Date.now() + ".mp3";
 let grup: any;
 try {
