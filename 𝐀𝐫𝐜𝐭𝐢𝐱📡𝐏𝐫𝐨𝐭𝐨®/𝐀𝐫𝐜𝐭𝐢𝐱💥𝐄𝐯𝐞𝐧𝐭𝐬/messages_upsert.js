@@ -52,22 +52,21 @@ const messages_upsert = (update, ӄ𝖗𝖞ӄ𝖓𝖟, commandHandler, Konn) => 
     let AʀƈȶɨӼ = yield (0, helper_1.default)(Fox, ӄ𝖗𝖞ӄ𝖓𝖟);
     let TUF = new TUF_1.default(ӄ𝖗𝖞ӄ𝖓𝖟);
     //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-    if (AʀƈȶɨӼ.isCmd) {
-        if (AʀƈȶɨӼ.isCmd && !AʀƈȶɨӼ.isGroup && !AʀƈȶɨӼ.isSenderTUFs) {
-            yield UserPrivate.findOne({
-                ID: AʀƈȶɨӼ.sender,
-            }, (error, user) => __awaiter(void 0, void 0, void 0, function* () {
-                if (error)
-                    return Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error);
-                if (!user) {
-                    var newUser = new UserPrivate({
-                        ID: AʀƈȶɨӼ.sender,
-                        Amount: 1,
-                    });
-                    yield newUser
-                        .save()
-                        .catch((error) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
-                    yield Image_Button.VImg(TUF, Fox, AʀƈȶɨӼ, `
+    if (AʀƈȶɨӼ.isCmd && !AʀƈȶɨӼ.isGroup && !AʀƈȶɨӼ.isSenderTUFs) {
+        yield UserPrivate.findOne({
+            ID: AʀƈȶɨӼ.sender,
+        }, (error, user) => __awaiter(void 0, void 0, void 0, function* () {
+            if (error)
+                return Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error);
+            if (!user) {
+                var newUser = new UserPrivate({
+                    ID: AʀƈȶɨӼ.sender,
+                    Amount: 1,
+                });
+                yield newUser
+                    .save()
+                    .catch((error) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
+                yield Image_Button.VImg(TUF, Fox, AʀƈȶɨӼ, `
 ╔◇═══════════════◇╗
 ┊ 𝐊𝐫𝐲𝐙𝐞𝐧👑𝐏𝐫𝐢𝐯𝐚𝐭𝐞
 ┊    𝐌𝐞𝐜𝐡𝐚𝐧𝐢𝐬𝐦
@@ -83,15 +82,15 @@ const messages_upsert = (update, ӄ𝖗𝖞ӄ𝖓𝖟, commandHandler, Konn) => 
 ❗• 𝗪𝗮𝗿𝗻𝗶𝗻𝗴𝘀: 1/4
 ❗• 𝗪𝗮𝗿𝗻𝗲𝗱 𝗧𝗼: @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
 ❗• You Will be Auto-Blocked After 4 warnings!`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Orange.png");
-                    return;
-                    //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-                }
-                else if (user.Amount < 4) {
-                    user.Amount = user.Amount + 1;
-                    yield user
-                        .save()
-                        .catch((error) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
-                    yield Image_Button.VImg(TUF, Fox, AʀƈȶɨӼ, `╔◇═══════════════◇╗
+                return;
+                //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
+            }
+            else if (user.Amount < 4) {
+                user.Amount = user.Amount + 1;
+                yield user
+                    .save()
+                    .catch((error) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
+                yield Image_Button.VImg(TUF, Fox, AʀƈȶɨӼ, `╔◇═══════════════◇╗
 ┊ 𝐊𝐫𝐲𝐙𝐞𝐧👑𝐏𝐫𝐢𝐯𝐚𝐭𝐞
 ┊    𝐌𝐞𝐜𝐡𝐚𝐧𝐢𝐬𝐦
 ╚◇═══════════════◇╝
@@ -106,18 +105,19 @@ const messages_upsert = (update, ӄ𝖗𝖞ӄ𝖓𝖟, commandHandler, Konn) => 
 ❗• 𝗪𝗮𝗿𝗻𝗶𝗻𝗴𝘀: ${user.Amount}/4
 ❗• 𝗪𝗮𝗿𝗻𝗲𝗱 𝗧𝗼: @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
 ❗• You Will be Auto-Blocked After 4 warnings!`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Orange.png");
-                    return;
-                }
-                else {
-                    yield user
-                        .delete()
-                        .catch((error) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
-                    yield ӄ𝖗𝖞ӄ𝖓𝖟.blockUser(AʀƈȶɨӼ.sender, "add");
-                    return;
-                }
-            }));
-        }
-        //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
+                return;
+            }
+            else {
+                yield user
+                    .delete()
+                    .catch((error) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
+                yield ӄ𝖗𝖞ӄ𝖓𝖟.blockUser(AʀƈȶɨӼ.sender, "add");
+                return;
+            }
+        }));
+    }
+    //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
+    if (AʀƈȶɨӼ.isCmd && AʀƈȶɨӼ.isGroup) {
         yield Kooldown.findOne({
             ID: AʀƈȶɨӼ.sender,
         }, (error, userHalt) => __awaiter(void 0, void 0, void 0, function* () {
@@ -309,7 +309,7 @@ const messages_upsert = (update, ӄ𝖗𝖞ӄ𝖓𝖟, commandHandler, Konn) => 
                     }, message_type_1.MessageType.buttonsMessage);
                     //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
                 }
-                else if (ARC && AʀƈȶɨӼ.commandName == "help") {
+                else if (ARC && AʀƈȶɨӼ.commandName == "all") {
                     try {
                         return ARC.handle(TUF, Fox, AʀƈȶɨӼ, ǟʀɢʊʍɛռȶ, ӄ𝖗𝖞ӄ𝖓𝖟, commandHandler);
                     }
