@@ -79,7 +79,7 @@ text: `お 𝐔𝐬𝐞𝐫: ${
 「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®: Online   」`,
 });
 } catch (error) {
-console.log("「 Stored Arctix data! 」");
+console.log("「 Stored 𝐀𝐫𝐜𝐭𝐢𝐱 data! 」");
 }
 }
 };
