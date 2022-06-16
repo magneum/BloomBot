@@ -25,18 +25,20 @@ import Kolor from "chalk";
 const connection_update = async (
 update: any,
 DisconnectReason: any,
-startSock: any
+startӄ𝖗𝖞ӄ𝖓𝖟: any,
+ӄ𝖗𝖞ӄ𝖓𝖟: any,
+ProTo: any
 ): Promise<void> => {
 const { connection, lastDisconnect } = update;
 if (connection === "close") {
 if (
-    (lastDisconnect.error as Boom)?.output?.statusCode !==
-    DisconnectReason.loggedOut
+(lastDisconnect.error as Boom)?.output?.statusCode !==
+DisconnectReason.loggedOut
 ) {
-    await startSock();
+await startӄ𝖗𝖞ӄ𝖓𝖟();
 } else {
-    console.log("❌𝐄𝐫𝐫𝐨𝐫꧂ Connection closed. You are logged out.");
-    process.exit(0);
+console.log("❌𝐄𝐫𝐫𝐨𝐫꧂ Connection closed. You are logged out.");
+process.exit(0);
 }
 }
 /*
@@ -46,9 +48,9 @@ if (
 */
 if (connection === "connecting") {
 if (ʟᴀʏᴏᴜᴛ.Heroku_App !== undefined) {
-    console.log("💡𝐈𝐧𝐟𝐨꧂  Connecting to WhatsApp...");
+console.log("💡𝐈𝐧𝐟𝐨꧂  Connecting to WhatsApp...");
 } else {
-    chalkAnimation.rainbow("💡𝐈𝐧𝐟𝐨꧂  Connecting to WhatsApp...");
+chalkAnimation.rainbow("💡𝐈𝐧𝐟𝐨꧂  Connecting to WhatsApp...");
 }
 }
 /*
@@ -58,9 +60,9 @@ if (ʟᴀʏᴏᴜᴛ.Heroku_App !== undefined) {
 */
 if (connection === "open") {
 if (ʟᴀʏᴏᴜᴛ.Heroku_App !== undefined) {
-    console.log("Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 Online!");
+console.log("Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 Online!");
 } else {
-    const rainbow = chalkAnimation.rainbow(`
+const rainbow = chalkAnimation.rainbow(`
 |═════════════════════════════════「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®: Online   」═════════════════════════════════|
 ███████████████████████████████████████████████████████████████████████████████████████████████
 █░░░░░░░░░░░░░░█░░░░░░░░░░░░░░░░███░░░░░░░░░░░░░░█░░░░░░░░░░░░░░█░░░░░░░░░░█░░░░░░░░██░░░░░░░░█
@@ -76,10 +78,16 @@ if (ʟᴀʏᴏᴜᴛ.Heroku_App !== undefined) {
 █░░░░░░██░░░░░░█░░░░░░██░░░░░░░░░░█░░░░░░░░░░░░░░█████░░░░░░█████░░░░░░░░░░█░░░░░░░░██░░░░░░░░█
 ███████████████████████████████████████████████████████████████████████████████████████████████
 |═════════════════════════════════「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®: Online   」═════════════════════════════════|`);
-    setTimeout(() => {
-    rainbow.stop();
-    }, 10_000);
+setTimeout(() => {
+rainbow.stop();
+}, 10_000);
 }
+}
+if (ProTo) {
+ProTo = false;
+await ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(ӄ𝖗𝖞ӄ𝖓𝖟.user.id, {
+text: "「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®: Online   」",
+});
 }
 };
 export = {

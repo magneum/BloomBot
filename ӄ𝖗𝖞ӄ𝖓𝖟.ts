@@ -163,6 +163,7 @@ continue;
 ⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
 */
 const { state, saveCreds } = await useRemoteFileAuthState(logger);
+let ProTo: boolean = true;
 const startSock = async () => {
 const ӄ𝖗𝖞ӄ𝖓𝖟: WASocket = makeWASocket({
 logger,
@@ -183,7 +184,7 @@ Konn?.bind(ӄ𝖗𝖞ӄ𝖓𝖟.ev);
 participants_update.participants_update(update, ӄ𝖗𝖞ӄ𝖓𝖟);
 });
 ӄ𝖗𝖞ӄ𝖓𝖟.ev.on("connection.update", (update) => {
-connection_update.connection_update(update, DisconnectReason, startSock);
+connection_update.connection_update(update, DisconnectReason, startSock, ӄ𝖗𝖞ӄ𝖓𝖟, ProTo);
 });
 ӄ𝖗𝖞ӄ𝖓𝖟.ev.on("messages.upsert", async (update) => {
 messages_upsert.messages_upsert(update, ӄ𝖗𝖞ӄ𝖓𝖟, commandHandler, Konn);
