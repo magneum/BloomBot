@@ -146,7 +146,7 @@ image: { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 },
 caption: `⚡ 𝐅𝐫𝐨𝐦: ${Fox.pushName}
 
 ${TAGmsg}`,
-footer: `⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔`,
+footer: "*⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 𝐁𝐞𝐭𝐚❗ ⦔*",
 buttons: [
 {
 buttonId: `${ʟᴀʏᴏᴜᴛ.MuveOn}help`,
