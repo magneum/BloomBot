@@ -80,7 +80,7 @@ TUF,
 Fox,
 AʀƈȶɨӼ,
 `❌𝐃𝐞𝐧𝐢𝐞𝐝: _This Command is Only For Groups!_`,
-"./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png"
+"./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Orange.png"
 );
 }
 /*
