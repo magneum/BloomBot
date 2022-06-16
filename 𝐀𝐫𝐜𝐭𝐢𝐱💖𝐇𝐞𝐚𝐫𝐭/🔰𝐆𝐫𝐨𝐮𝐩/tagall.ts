@@ -139,7 +139,7 @@ export = {
         {
           quoted: Fox.message,
           contextInfo: {
-            mentionedJid: AʀƈȶɨӼ.groupAdmins,
+            mentionedJid: MEMBERs,
           },
           timestamp: Date(),
           image: { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 },
