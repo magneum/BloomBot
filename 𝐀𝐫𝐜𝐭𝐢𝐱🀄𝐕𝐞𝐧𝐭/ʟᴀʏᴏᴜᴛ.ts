@@ -53,7 +53,6 @@ process.env.DATABASE_URL === "./𝐀𝐫𝐜𝐭𝐢𝐱🐞𝐁𝐞𝐞𝐭𝐥
 ? new Sequelize({
 dialect: "sqlite",
 storage: process.env.DATABASE_URL,
-logging: Log(process.env.DEBUG),
 })
 : new Sequelize(process.env.DATABASE_URL, {
 dialect: "postgres",
