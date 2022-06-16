@@ -115,9 +115,7 @@ try {
 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png";
 }
 if (ǟʀɢʊʍɛռȶ || ǟʀɢʊʍɛռȶ.length) {
-for (let mem of MEMBERs) {
-TAGmsg += `@${mem}\n`;
-}
+TAGmsg = ǟʀɢʊʍɛռȶ.join(" ");
 } else {
 TAGmsg = "*Everyone!* May i get your attention please.";
 }
@@ -135,9 +133,7 @@ mentionedJid: AʀƈȶɨӼ.groupAdmins,
 },
 timestamp: Date(),
 image: { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 },
-caption: `⚡ 𝐅𝐫𝐨𝐦: ${Fox.pushName}\n\n${ǟʀɢʊʍɛռȶ.join(
-" "
-)}\n\n${TAGmsg}`,
+caption: `⚡ 𝐅𝐫𝐨𝐦: ${Fox.pushName}\n\n${TAGmsg}`,
 footer: `⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔`,
 buttons: [
 {
