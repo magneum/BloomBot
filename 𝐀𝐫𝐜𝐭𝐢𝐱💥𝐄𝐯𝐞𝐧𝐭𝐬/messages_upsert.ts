@@ -45,7 +45,7 @@ const messages_upsert = async (
 update: any,
 ӄ𝖗𝖞ӄ𝖓𝖟: any,
 commandHandler: any,
-Konn: any
+ӄ: any
 ): Promise<void> => {
 if (update.type === "append" && !ʟᴀʏᴏᴜᴛ.OFFLINE_RESPONSE) return;
 if (update.type !== "notify") return;
@@ -199,7 +199,7 @@ await git.fetch();
 var newCommits = await git.log(["𝐀𝐫𝐜𝐭𝐢𝐱📡𝐏𝐫𝐨𝐭𝐨®..origin/𝐀𝐫𝐜𝐭𝐢𝐱📡𝐏𝐫𝐨𝐭𝐨®"]);
 if (newCommits.total != 0) {
 // try {
-// let list_chats_user = Konn.chats.all().map((v) => v.id);
+// let list_chats_user = ӄ.chats.all().map((v) => v.id);
 // for (let Jid of list_chats_user) {
 // await TUF.sendMessage(
 // Jid,

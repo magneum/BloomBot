@@ -33,7 +33,6 @@ import participants_update from "./𝐀𝐫𝐜𝐭𝐢𝐱💥𝐄𝐯𝐞𝐧�
 const UserPrivate = require(`./𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/private`);
 const Welcome = require(`./𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/setwelcome`);
 const LinkList = require(`./𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/antilink`);
-const Authenticate = require(`./𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/auth`);
 const DebugList = require(`./𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/debug`);
 const Ranker = require(`./𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/autorank`);
 const Pokemon = require(`./𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/pokemon`);
@@ -54,14 +53,14 @@ const logger: Logger = Pot({
 timestamp: () => `,"Time":"${new Date().toJSON()}"`,
 }).child({});
 logger.level = "error";
-var Konn = makeInMemoryStore({ logger });
-Konn?.readFromFile("./AʀƈȶɨӼ.json");
+var ӄ = makeInMemoryStore({ logger });
+ӄ?.readFromFile("./AʀƈȶɨӼ.json");
 setInterval(() => {
-Konn?.writeToFile("./AʀƈȶɨӼ.json");
+ӄ?.writeToFile("./AʀƈȶɨӼ.json");
 }, 10_000);
 // Zygote.findOne(
 // {
-// ID: Konn,
+// ID: ӄ,
 // },
 // async (error: any, session: any) => {
 // console.log(session);
@@ -70,7 +69,7 @@ Konn?.writeToFile("./AʀƈȶɨӼ.json");
 // }
 // if (!session) {
 // var newServer = new LinkList({
-// ID: Konn,
+// ID: ӄ,
 // });
 // await newServer
 // .save()
@@ -79,10 +78,10 @@ Konn?.writeToFile("./AʀƈȶɨӼ.json");
 // );
 // return;
 // }
-// Konn = session.ID;
+// ӄ = session.ID;
 // setInterval(async () => {
-// console.log("Re-Saving in Konn.");
-// session.ID = Konn;
+// console.log("Re-Saving in ӄ.");
+// session.ID = ӄ;
 // await session
 // .save()
 // .catch((error: any) =>
@@ -179,15 +178,29 @@ return {};
 「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」                                                                            「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」
 ⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
 */
-Konn?.bind(ӄ𝖗𝖞ӄ𝖓𝖟.ev);
+ӄ?.bind(ӄ𝖗𝖞ӄ𝖓𝖟.ev);
 ӄ𝖗𝖞ӄ𝖓𝖟.ev.on("group-participants.update", async (update) => {
 participants_update.participants_update(update, ӄ𝖗𝖞ӄ𝖓𝖟);
 });
-ӄ𝖗𝖞ӄ𝖓𝖟.ev.on("connection.update", (update) => {
-connection_update.connection_update(update, DisconnectReason, startSock, ӄ𝖗𝖞ӄ𝖓𝖟, ProTo);
+ӄ𝖗𝖞ӄ𝖓𝖟.ev.on("connection.update", async (update) => {
+try {
+await ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(ӄ𝖗𝖞ӄ𝖓𝖟.user.id, {
+text: `お 𝐔𝐬𝐞𝐫: ${
+ӄ𝖗𝖞ӄ𝖓𝖟.user.notify ||
+ӄ𝖗𝖞ӄ𝖓𝖟.user.name ||
+ӄ𝖗𝖞ӄ𝖓𝖟.user.name ||
+ӄ𝖗𝖞ӄ𝖓𝖟.user.id.split("@")[0]
+} お
+
+「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®: Online   」`,
+});
+} catch (error) {
+console.log("Stored Arctix data!");
+}
+connection_update.connection_update(update, DisconnectReason, startSock);
 });
 ӄ𝖗𝖞ӄ𝖓𝖟.ev.on("messages.upsert", async (update) => {
-messages_upsert.messages_upsert(update, ӄ𝖗𝖞ӄ𝖓𝖟, commandHandler, Konn);
+messages_upsert.messages_upsert(update, ӄ𝖗𝖞ӄ𝖓𝖟, commandHandler, ӄ);
 });
 ӄ𝖗𝖞ӄ𝖓𝖟.ev.on("creds.update", (creds) => {
 saveCreds(creds);
