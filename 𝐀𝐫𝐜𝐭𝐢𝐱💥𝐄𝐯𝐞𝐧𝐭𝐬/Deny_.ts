@@ -33,7 +33,7 @@ AʀƈȶɨӼ: any,
 TUF: any,
 Fox: any
 ): Promise<void> => {
-if (!AʀƈȶɨӼ.isCmd && !AʀƈȶɨӼ.isGroup && !AʀƈȶɨӼ.isSenderTUFs) {
+if (AʀƈȶɨӼ.isCmd && !AʀƈȶɨӼ.isGroup && !AʀƈȶɨӼ.isSenderTUFs) {
 const ʟɴᴀᴍᴇ = AʀƈȶɨӼ.sender;
 const ᴅꜰɴᴀᴍᴇ = AʀƈȶɨӼ.commandName;
 const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/[^\d+]/g, "");
