@@ -150,11 +150,11 @@ userHalt.PermaTimeOut - (Date.now() - userHalt.TimeOut) > 0
 ) {
 return await TUF.sendMessage(
 AʀƈȶɨӼ.chatId,
-`┌─「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢® 」
-├• *Tαɠ:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
-├• *Nαɱҽ:* ${Fox.pushName}
-├• *Cσɱɱαɳԃ:* ${AʀƈȶɨӼ.commandName}
-└──•
+`┌─「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐏𝐫𝐨𝐭𝐨® 」
+├• *ɴᴀᴍᴇ:* ${Fox.pushName}
+├• *ᴍᴇɴᴛɪᴏɴ:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
+├• *ᴄᴏᴍᴍᴀɴᴅ:* ${AʀƈȶɨӼ.commandName}
+└────────────────◇
 
 ❌𝗘𝗿𝗿𝗼𝗿: Wait For 5seconds!`,
 MessageType.text,
@@ -352,7 +352,7 @@ mentionedJid: [AʀƈȶɨӼ.sender],
 },
 timestamp: Date(),
 image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Red.png" },
-caption: `✥𝐔𝐬𝐞𝐫: ${Fox.pushName}
+caption: `*ᴍᴇɴᴛɪᴏɴ:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
 
 *❌𝗘𝗿𝗿𝗼𝗿:* No Such Command In Database.`,
 footer: `⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔`,
