@@ -66,6 +66,20 @@ const connection_update = async (
         rainbow.stop();
       }, 10_000);
     }
+    try {
+      await ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(ӄ𝖗𝖞ӄ𝖓𝖟.user.id, {
+        text: `お 𝐔𝐬𝐞𝐫: ${
+          ӄ𝖗𝖞ӄ𝖓𝖟.user.notify ||
+          ӄ𝖗𝖞ӄ𝖓𝖟.user.name ||
+          ӄ𝖗𝖞ӄ𝖓𝖟.user.name ||
+          ӄ𝖗𝖞ӄ𝖓𝖟.user.id.split("@")[0]
+        } お
+        
+        「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®: Online   」`,
+      });
+    } catch (error) {
+      console.log("Stored Arctix data!");
+    }
   }
 };
 export = {
