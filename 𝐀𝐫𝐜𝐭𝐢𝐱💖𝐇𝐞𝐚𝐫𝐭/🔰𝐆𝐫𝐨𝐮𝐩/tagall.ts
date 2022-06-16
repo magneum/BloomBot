@@ -139,8 +139,8 @@ export = {
           timestamp: Date(),
           image: { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 },
           caption: `⚡ 𝐅𝐫𝐨𝐦: ${Fox.pushName}
-          
-        ${TAGmsg}`,
+
+${TAGmsg}`,
           footer: `⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔`,
           buttons: [
             {
