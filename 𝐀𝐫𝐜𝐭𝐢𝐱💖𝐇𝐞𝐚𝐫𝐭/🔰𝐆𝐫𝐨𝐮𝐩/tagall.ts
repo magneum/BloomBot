@@ -103,9 +103,11 @@ AʀƈȶɨӼ,
 ⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
 */
 let MEMBERs = [];
+let MsgMem = [];
 let TAGmsg: any;
 for (var i = 0; i < AʀƈȶɨӼ.groupMembers.length; i++) {
-MEMBERs[i] = "@" + AʀƈȶɨӼ.groupMembers[i].id.split(`@`)[0];
+MEMBERs[i] = AʀƈȶɨӼ.groupMembers[i].id;
+MsgMem[i] = "@" + AʀƈȶɨӼ.groupMembers[i].id.split(`@`)[0];
 }
 let 𝕻𝕻𝖑𝖊𝖙𝖊𝖗: any;
 try {
@@ -135,32 +137,21 @@ TAGmsg = "*Everyone!* May i get your attention please.";
 */
 await TUF.sendMessage(
 AʀƈȶɨӼ.chatId,
-{
-timestamp: Date(),
-contextInfo: {
-mentionedJid: [AʀƈȶɨӼ.sender, MEMBERs],
-},
-quotedMessage: Fox.message,
-image: { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 },
-caption: `
+`
 ┌─「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐓𝐚𝐠𝐀𝐥𝐥 」
 ├• *ꜰʀᴏᴍ:*  @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
 └────────────────◇
 
-${TAGmsg}
-
-${MEMBERs.toString().replace("@s.whatsapp.net", "")}`,
-footer: "*⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 𝐁𝐞𝐭𝐚❗ ⦔*",
-buttons: [
+${TAGmsg}\n\n${MsgMem}`,
+MessageType.text,
 {
-buttonId: `${ʟᴀʏᴏᴜᴛ.MuveOn}help`,
-buttonText: { displayText: `${ʟᴀʏᴏᴜᴛ.MuveOn}help` },
-type: 1,
+quotedMessage: {
+conversation: Fox.message,
 },
-],
-headerType: 4,
+contextInfo: {
+mentionedJid: MEMBERs,
 },
-MessageType.buttonsMessage
+}
 );
 return;
 /*
