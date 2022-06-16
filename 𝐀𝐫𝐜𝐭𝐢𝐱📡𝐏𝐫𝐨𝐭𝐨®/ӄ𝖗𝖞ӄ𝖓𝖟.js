@@ -52,9 +52,7 @@ const mongoose_1 = __importDefault(require("mongoose"));
 const pino_1 = __importDefault(require("pino"));
 const ______1 = __importDefault(require("./\uD835\uDC00\uD835\uDC2B\uD835\uDC1C\uD835\uDC2D\uD835\uDC22\uD835\uDC31\uD83C\uDC04\uD835\uDC15\uD835\uDC1E\uD835\uDC27\uD835\uDC2D/\u029F\u1D00\u028F\u1D0F\u1D1C\u1D1B"));
 const chalkAnimation = require("chalkercli");
-const dbAuth_1 = __importDefault(require("./\uD835\uDC00\uD835\uDC2B\uD835\uDC1C\uD835\uDC2D\uD835\uDC22\uD835\uDC31\u269C\uFE0F\uD835\uDC0A\uD835\uDC2B\uD835\uDC32\uD835\uDC28\uD835\uDC13\uD835\uDC1E\uD835\uDC24/dbAuth"));
 const messages_upsert_1 = __importDefault(require("./\uD835\uDC00\uD835\uDC2B\uD835\uDC1C\uD835\uDC2D\uD835\uDC22\uD835\uDC31\uD83D\uDCA5\uD835\uDC04\uD835\uDC2F\uD835\uDC1E\uD835\uDC27\uD835\uDC2D\uD835\uDC2C/messages_upsert"));
-const connection_update_1 = __importDefault(require("./\uD835\uDC00\uD835\uDC2B\uD835\uDC1C\uD835\uDC2D\uD835\uDC22\uD835\uDC31\uD83D\uDCA5\uD835\uDC04\uD835\uDC2F\uD835\uDC1E\uD835\uDC27\uD835\uDC2D\uD835\uDC2C/connection_update"));
 const participants_update_1 = __importDefault(require("./\uD835\uDC00\uD835\uDC2B\uD835\uDC1C\uD835\uDC2D\uD835\uDC22\uD835\uDC31\uD83D\uDCA5\uD835\uDC04\uD835\uDC2F\uD835\uDC1E\uD835\uDC27\uD835\uDC2D\uD835\uDC2C/participants_update"));
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 const UserPrivate = require(`./𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/private`);
@@ -71,6 +69,7 @@ const BanGroup = require(`./𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞�
 const Zygote = require(`./𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/zygote`);
 const Bagde = require(`./𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/badge`);
 const Halt = require(`./𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/halt`);
+const ʟᴀʙ = require(`./𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/ʟᴀʙ`);
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 const sequelize = ______1.default.DATABASE;
 const logger = (0, pino_1.default)({
@@ -82,40 +81,6 @@ Konn === null || Konn === void 0 ? void 0 : Konn.readFromFile("./AʀƈȶɨӼ.jso
 setInterval(() => {
     Konn === null || Konn === void 0 ? void 0 : Konn.writeToFile("./AʀƈȶɨӼ.json");
 }, 10000);
-// Zygote.findOne(
-// {
-// ID: Konn,
-// },
-// async (error: any, session: any) => {
-// console.log(session);
-// if (error) {
-// return console.log(error);
-// }
-// if (!session) {
-// var newServer = new LinkList({
-// ID: Konn,
-// });
-// await newServer
-// .save()
-// .catch((error: any) =>
-// Kolor.redBright("Zygote NewServer Error: " + error)
-// );
-// return;
-// }
-// Konn = session.ID;
-// setInterval(async () => {
-// console.log("Re-Saving in Konn.");
-// session.ID = Konn;
-// await session
-// .save()
-// .catch((error: any) =>
-// Kolor.redBright("Zygote Re-Save Failed: " + error)
-// );
-// console.log(session);
-// return;
-// }, 10_000);
-// }
-// );
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 (() => __awaiter(void 0, void 0, void 0, function* () {
     console.log(chalk_1.default.yellow("💡𝐈𝐧𝐟𝐨: Trying To Connect To '🍃mongo + 🕸️sql'"));
@@ -168,31 +133,88 @@ setInterval(() => {
         }
     }
     //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-    const { state, saveCreds } = yield (0, dbAuth_1.default)(logger);
+    const { state, saveState } = (0, baileys_1.useSingleFileAuthState)("./𝐀𝐫𝐜𝐭𝐢𝐱⚠️𝕿𝖊𝖒𝖕/ʟᴀʙ.json");
+    yield ʟᴀʙ.findOne({
+        ʟᴀʙ: state,
+    }, (error, userʟᴀʙ) => __awaiter(void 0, void 0, void 0, function* () {
+        if (error)
+            return console.log(error);
+        if (!userʟᴀʙ) {
+            var Newʟᴀʙ = new ʟᴀʙ({
+                ʟᴀʙ: state,
+            });
+            yield Newʟᴀʙ.save();
+            process.exit(0);
+        }
+        else {
+            let data = userʟᴀʙ.ʟᴀʙ;
+            fs_1.default.writeFileSync("./𝐀𝐫𝐜𝐭𝐢𝐱⚠️𝕿𝖊𝖒𝖕/ʟᴀʙ.json", data);
+        }
+    }));
+    //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
+    var ӄ𝖗𝖞ӄ𝖓𝖟;
     const startSock = () => __awaiter(void 0, void 0, void 0, function* () {
-        const ӄ𝖗𝖞ӄ𝖓𝖟 = (0, baileys_1.default)({
-            logger,
-            printQRInTerminal: true,
-            auth: state,
-            browser: ["Arctix", "Chrome", "4.0.0"],
-            getMessage: (key) => __awaiter(void 0, void 0, void 0, function* () {
-                return {};
-            }),
-        });
-        //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-        Konn === null || Konn === void 0 ? void 0 : Konn.bind(ӄ𝖗𝖞ӄ𝖓𝖟.ev);
-        ӄ𝖗𝖞ӄ𝖓𝖟.ev.on("group-participants.update", (update) => __awaiter(void 0, void 0, void 0, function* () {
-            participants_update_1.default.participants_update(update, ӄ𝖗𝖞ӄ𝖓𝖟);
+        yield Authenticate.findOne({
+            Session: state,
+        }, (error, userSession) => __awaiter(void 0, void 0, void 0, function* () {
+            if (error)
+                return console.log(error);
+            if (!userSession) {
+                var NewSession = new Authenticate({
+                    Session: state,
+                });
+                yield NewSession.save();
+            }
+            ӄ𝖗𝖞ӄ𝖓𝖟 = (0, baileys_1.default)({
+                logger,
+                printQRInTerminal: true,
+                auth: state,
+                browser: ["Arctix", "Chrome", "4.0.0"],
+                getMessage: (key) => __awaiter(void 0, void 0, void 0, function* () {
+                    return {};
+                }),
+            });
+            //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
+            Konn === null || Konn === void 0 ? void 0 : Konn.bind(ӄ𝖗𝖞ӄ𝖓𝖟.ev);
+            ӄ𝖗𝖞ӄ𝖓𝖟.ev.on("group-participants.update", (update) => __awaiter(void 0, void 0, void 0, function* () {
+                participants_update_1.default.participants_update(update, ӄ𝖗𝖞ӄ𝖓𝖟);
+            }));
+            ӄ𝖗𝖞ӄ𝖓𝖟.ev.on("messages.upsert", (update) => __awaiter(void 0, void 0, void 0, function* () {
+                messages_upsert_1.default.messages_upsert(update, ӄ𝖗𝖞ӄ𝖓𝖟, commandHandler, Konn);
+            }));
+            ӄ𝖗𝖞ӄ𝖓𝖟.ev.on("creds.update", () => saveState);
+            //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
+            ӄ𝖗𝖞ӄ𝖓𝖟.ev.on("connection.update", (update) => __awaiter(void 0, void 0, void 0, function* () {
+                var _a, _b;
+                const { connection, lastDisconnect } = update;
+                if (connection === "close") {
+                    if (((_b = (_a = lastDisconnect.error) === null || _a === void 0 ? void 0 : _a.output) === null || _b === void 0 ? void 0 : _b.statusCode) !==
+                        baileys_1.DisconnectReason.loggedOut) {
+                        yield startSock();
+                    }
+                    else {
+                        console.log("❌𝐄𝐫𝐫𝐨𝐫꧂ Connection closed. You are logged out.");
+                        process.exit(0);
+                    }
+                }
+                if (connection === "connecting") {
+                    if (______1.default.Heroku_App !== undefined) {
+                        console.log("💡𝐈𝐧𝐟𝐨꧂  Connecting to WhatsApp...");
+                    }
+                    else {
+                        chalkAnimation.rainbow("💡𝐈𝐧𝐟𝐨꧂  Connecting to WhatsApp...");
+                    }
+                }
+                if (connection === "open") {
+                    if (______1.default.Heroku_App !== undefined) {
+                        console.log("Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 Online!");
+                    }
+                    else {
+                        chalkAnimation.rainbow("Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 Online!");
+                    }
+                }
+            }));
         }));
-        ӄ𝖗𝖞ӄ𝖓𝖟.ev.on("connection.update", (update) => {
-            connection_update_1.default.connection_update(update, baileys_1.DisconnectReason, startSock);
-        });
-        ӄ𝖗𝖞ӄ𝖓𝖟.ev.on("messages.upsert", (update) => __awaiter(void 0, void 0, void 0, function* () {
-            messages_upsert_1.default.messages_upsert(update, ӄ𝖗𝖞ӄ𝖓𝖟, commandHandler, Konn);
-        }));
-        ӄ𝖗𝖞ӄ𝖓𝖟.ev.on("creds.update", (creds) => {
-            saveCreds(creds);
-        });
         return ӄ𝖗𝖞ӄ𝖓𝖟;
     });
     startSock();
