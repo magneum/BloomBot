@@ -114,6 +114,13 @@ try {
 } catch {
 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png";
 }
+if (AʀƈȶɨӼ.isTextReply) {
+TAGmsg = AʀƈȶɨӼ.replyMessage.replace(
+AʀƈȶɨӼ.body[0] + AʀƈȶɨӼ.commandName + " ",
+""
+);
+}
+
 if (ǟʀɢʊʍɛռȶ || ǟʀɢʊʍɛռȶ.length) {
 TAGmsg = ǟʀɢʊʍɛռȶ.join(" ");
 } else {
