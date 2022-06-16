@@ -49,8 +49,8 @@ DATABASE:process.env.DATABASE_URL === "./𝐀𝐫𝐜𝐭𝐢𝐱🐞𝐁𝐞�
 new Sequelize({dialect: "sqlite",
 storage: process.env.DATABASE_URL,logging: Log(process.env.DEBUG),})
 : new Sequelize(process.env.DATABASE_URL, {
-dialect: "postgresql",
-protocol: "postgresq",
+dialect: "postgres",
+protocol: "postgres",
 logging: Log(process.env.DEBUG),
 dialectOptions: { ssl: { require: true, rejectUnauthorized: false } },
 }),
