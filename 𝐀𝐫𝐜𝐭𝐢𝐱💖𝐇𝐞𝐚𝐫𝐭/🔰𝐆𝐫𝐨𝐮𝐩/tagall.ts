@@ -137,14 +137,13 @@ TAGmsg = "*Everyone!* May i get your attention please.";
 */
 await TUF.sendMessage(
 AʀƈȶɨӼ.chatId,
-"0",
 `
 ┌─「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐓𝐚𝐠𝐀𝐥𝐥 」
 ├• *ꜰʀᴏᴍ:*  @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
 └────────────────◇
 
 ${TAGmsg}\n\n${MsgMem}`,
-MessageType.image,
+MessageType.text,
 {
 quotedMessage: {
 conversation: Fox.message,
