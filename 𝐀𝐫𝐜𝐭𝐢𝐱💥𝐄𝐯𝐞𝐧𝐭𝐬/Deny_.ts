@@ -28,36 +28,36 @@ import ʟᴀʏᴏᴜᴛ from "../𝐀𝐫𝐜𝐭𝐢𝐱🀄𝐕𝐞𝐧𝐭/ʟ
 import Oops from "../𝐀𝐫𝐜𝐭𝐢𝐱☘️𝐊𝐞𝐲𝐬/Oops";
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 const Deny_ = async (
-AʀƈȶɨӼ: any,
-ӄ𝖗𝖞ӄ𝖓𝖟: any,
-TUF: any,
-Fox: any
+  AʀƈȶɨӼ: any,
+  ӄ𝖗𝖞ӄ𝖓𝖟: any,
+  TUF: any,
+  Fox: any
 ): Promise<void> => {
-if (AʀƈȶɨӼ.isCmd && !AʀƈȶɨӼ.isGroup && !AʀƈȶɨӼ.isSenderTUFs) {
-const ʟɴᴀᴍᴇ = AʀƈȶɨӼ.sender;
-const ᴅꜰɴᴀᴍᴇ = AʀƈȶɨӼ.commandName;
-const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/[^\d+]/g, "");
-const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
-//" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-await UserPrivate.findOne(
-{
-ID: AʀƈȶɨӼ.sender,
-},
-async (error, user) => {
-if (error) return Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error);
-if (!user) {
-var newUser = new UserPrivate({
-ID: AʀƈȶɨӼ.sender,
-Amount: 1,
-});
-await newUser
-.save()
-.catch((error: any) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
-return Image_Button.VImg(
-TUF,
-Fox,
-AʀƈȶɨӼ,
-`
+  if (AʀƈȶɨӼ.isCmd && !AʀƈȶɨӼ.isGroup && !AʀƈȶɨӼ.isSenderTUFs) {
+    const ʟɴᴀᴍᴇ = AʀƈȶɨӼ.sender;
+    const ᴅꜰɴᴀᴍᴇ = AʀƈȶɨӼ.commandName;
+    const ᴘɴᴀᴍᴇ = ʟɴᴀᴍᴇ.replace(/[^\d+]/g, "");
+    const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
+    //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
+    await UserPrivate.findOne(
+      {
+        ID: AʀƈȶɨӼ.sender,
+      },
+      async (error, user) => {
+        if (error) return Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error);
+        if (!user) {
+          var newUser = new UserPrivate({
+            ID: AʀƈȶɨӼ.sender,
+            Amount: 1,
+          });
+          await newUser
+            .save()
+            .catch((error: any) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
+          return Image_Button.VImg(
+            TUF,
+            Fox,
+            AʀƈȶɨӼ,
+            `
 ╔◇═══════════════◇╗
 ┊ 𝐊𝐫𝐲𝐙𝐞𝐧👑𝐏𝐫𝐢𝐯𝐚𝐭𝐞
 ┊    𝐌𝐞𝐜𝐡𝐚𝐧𝐢𝐬𝐦
@@ -73,20 +73,20 @@ AʀƈȶɨӼ,
 ❗• 𝗪𝗮𝗿𝗻𝗶𝗻𝗴𝘀: 1/4
 ❗• 𝗪𝗮𝗿𝗻𝗲𝗱 𝗧𝗼: @${ᴘɴᴀᴍᴇ}
 ❗• You Will be Auto-Blocked After 4 warnings!`,
-"./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Orange.png"
-);
-}
-//" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
-if (user.Amount < 4) {
-user.Amount = user.Amount + 1;
-await user
-.save()
-.catch((error: any) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
-return Image_Button.VImg(
-TUF,
-Fox,
-AʀƈȶɨӼ,
-`╔◇═══════════════◇╗
+            "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Orange.png"
+          );
+        }
+        //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
+        if (user.Amount < 4) {
+          user.Amount = user.Amount + 1;
+          await user
+            .save()
+            .catch((error: any) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
+          return Image_Button.VImg(
+            TUF,
+            Fox,
+            AʀƈȶɨӼ,
+            `╔◇═══════════════◇╗
 ┊ 𝐊𝐫𝐲𝐙𝐞𝐧👑𝐏𝐫𝐢𝐯𝐚𝐭𝐞
 ┊    𝐌𝐞𝐜𝐡𝐚𝐧𝐢𝐬𝐦
 ╚◇═══════════════◇╝
@@ -101,20 +101,20 @@ AʀƈȶɨӼ,
 ❗• 𝗪𝗮𝗿𝗻𝗶𝗻𝗴𝘀: ${user.Amount}/4
 ❗• 𝗪𝗮𝗿𝗻𝗲𝗱 𝗧𝗼: @${ᴘɴᴀᴍᴇ}
 ❗• You Will be Auto-Blocked After 4 warnings!`,
-"./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Orange.png"
-);
-}
-await user
-.delete()
-.catch((error: any) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
-await ӄ𝖗𝖞ӄ𝖓𝖟.blockUser(AʀƈȶɨӼ.sender, "add");
-return;
-}
-);
-}
+            "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Orange.png"
+          );
+        }
+        await user
+          .delete()
+          .catch((error: any) => Oops.VOp(TUF, Fox, AʀƈȶɨӼ, error));
+        await ӄ𝖗𝖞ӄ𝖓𝖟.blockUser(AʀƈȶɨӼ.sender, "add");
+        return;
+      }
+    );
+  }
 };
 export = {
-Deny_: Deny_,
+  Deny_: Deny_,
 };
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 /* 
