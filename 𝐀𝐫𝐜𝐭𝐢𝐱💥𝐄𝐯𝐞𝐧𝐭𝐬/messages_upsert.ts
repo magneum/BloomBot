@@ -107,44 +107,44 @@ Kolor.cyanBright(
 );
 var newCommits = await git.log(["📡𝐏𝐫𝐨𝐭𝐨®..origin/📡𝐏𝐫𝐨𝐭𝐨®"]);
 if (newCommits.total != 0) {
-try {
-let list_chats_user = Konn.chats.all().map((v) => v.id);
-for (let Jid of list_chats_user) {
-await TUF.sendMessage(
-Jid,
-{
-quoted: Fox,
-timestamp: Date(),
-contextInfo: { mentionedJid: [AʀƈȶɨӼ.sender] },
-image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Butter.png" },
-caption: `「 Broadcast 」
+// try {
+// let list_chats_user = Konn.chats.all().map((v) => v.id);
+// for (let Jid of list_chats_user) {
+// await TUF.sendMessage(
+// Jid,
+// {
+// quoted: Fox,
+// timestamp: Date(),
+// contextInfo: { mentionedJid: [AʀƈȶɨӼ.sender] },
+// image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Butter.png" },
+// caption: `「 Broadcast 」
 
-╔◇══════════════◇╗
-┊  🤖𝐑𝐞𝐛𝐨𝐨𝐭𝐢𝐧𝐠🤖
-╚◇══════════════◇╝
-Please Wait For ARCTIX to reboot itself and all of it's dedicated components & servers.
-Will take 40secs maximum.`,
-footer: `⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ⦔`,
-buttons: [
-{
-buttonId: `${ʟᴀʏᴏᴜᴛ.MuveOn}help`,
-buttonText: { displayText: `${ʟᴀʏᴏᴜᴛ.MuveOn}help` },
-type: 1,
-},
-{
-buttonId: `${ʟᴀʏᴏᴜᴛ.MuveOn}support`,
-buttonText: { displayText: `${ʟᴀʏᴏᴜᴛ.MuveOn}support` },
-type: 1,
-},
-],
-headerType: 4,
-},
-MessageType.buttonsMessage
-);
-}
-} catch (error) {
-console.log(Kolor.red(error));
-}
+// ╔◇══════════════◇╗
+// ┊  🤖𝐑𝐞𝐛𝐨𝐨𝐭𝐢𝐧𝐠🤖
+// ╚◇══════════════◇╝
+// Please Wait For ARCTIX to reboot itself and all of it's dedicated components & servers.
+// Will take 40secs maximum.`,
+// footer: `⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ⦔`,
+// buttons: [
+// {
+// buttonId: `${ʟᴀʏᴏᴜᴛ.MuveOn}help`,
+// buttonText: { displayText: `${ʟᴀʏᴏᴜᴛ.MuveOn}help` },
+// type: 1,
+// },
+// {
+// buttonId: `${ʟᴀʏᴏᴜᴛ.MuveOn}support`,
+// buttonText: { displayText: `${ʟᴀʏᴏᴜᴛ.MuveOn}support` },
+// type: 1,
+// },
+// ],
+// headerType: 4,
+// },
+// MessageType.buttonsMessage
+// );
+// }
+// } catch (error) {
+// console.log(Kolor.red(error));
+// }
 //" |════════════════════════════════════════════| Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════| "
 try {
 var 𝖛𝖑𝖐𝖕 = require("child_process").exec(
