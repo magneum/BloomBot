@@ -64,7 +64,7 @@ let 𝕻𝕻𝖑𝖊𝖙𝖊𝖗: string;
 try {
 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄ𝖗𝖞ӄ𝖓𝖟.profilePictureUrl(Vʟӄʏʀɛ.sender, "image");
 } catch {
-𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = "./𝐕𝐥𝐤𝐲𝐫𝐞👜𝐁𝐚𝐠/Vʟӄʏʀɛ_Sky.jpg";
+𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = "./𝐕𝐥𝐤𝐲𝐫𝐞👜𝐁𝐚𝐠/Vʟӄʏʀɛ.png";
 }
 var expFile = `./𝐕𝐥𝐤𝐲𝐫𝐞🐞𝐁𝐞𝐞𝐭𝐥𝐞/${Date.now()}r${Fox.key.id}.png`;
 const user = await Levels.fetch(ʟɴᴀᴍᴇ, Vʟӄʏʀɛ.chatId, true);
