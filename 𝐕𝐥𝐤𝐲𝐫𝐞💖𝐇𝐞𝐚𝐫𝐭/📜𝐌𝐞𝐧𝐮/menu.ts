@@ -53,7 +53,7 @@ Vʟӄʏʀɛ.chatId,
 quoted: Fox,
 timestamp: Date(),
 contextInfo: { mentionedJid: [Vʟӄʏʀɛ.sender] },
-image: { url: "./𝐕𝐥𝐤𝐲𝐫𝐞👜𝐁𝐚𝐠/Vʟӄʏʀɛ_White.png" },
+image: { url: "./𝐕𝐥𝐤𝐲𝐫𝐞👜𝐁𝐚𝐠/Vʟӄʏʀɛ.png" },
 caption: `┌─「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐏𝐫𝐨𝐭𝐨® 」
 ├• *ɴᴀᴍᴇ:* ${Fox.pushName}
 ├• *ᴍᴇɴᴛɪᴏɴ:* @${Vʟӄʏʀɛ.sender.replace(/[^\d+]/g, "")}
