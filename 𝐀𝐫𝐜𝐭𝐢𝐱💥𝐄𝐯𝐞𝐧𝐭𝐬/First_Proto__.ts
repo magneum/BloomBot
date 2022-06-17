@@ -57,12 +57,6 @@ TUF: any,
 Fox: any
 ): Promise<void> => {
 try {
-let grup: any;
-try {
-grup = await TUF.getGroupMetaData(AʀƈȶɨӼ.chatId, AʀƈȶɨӼ);
-} catch (e) {
-console.log(e);
-}
 await ServerDB.findOne(
 {
 ServerID: AʀƈȶɨӼ.chatID,
@@ -104,18 +98,11 @@ await newServer
 「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」                                                                            「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」
 ⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
 */
-let MEMBERs = [];
-for (var i = 0; i < AʀƈȶɨӼ.groupMembers.length; i++) {
-MEMBERs[i] = AʀƈȶɨӼ.groupMembers[i].id;
-}
 await TUF.sendMessage(
 AʀƈȶɨӼ.chatID,
 {
 quotedMessage: {
 conversation: Fox.message,
-},
-contextInfo: {
-mentionedJid: MEMBERs,
 },
 timestamp: Date(),
 image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png" },
