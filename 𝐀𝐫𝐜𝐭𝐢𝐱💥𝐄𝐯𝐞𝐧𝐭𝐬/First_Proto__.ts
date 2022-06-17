@@ -59,13 +59,13 @@ Fox: any
 try {
 await ServerDB.findOne(
 {
-ServerID: AʀƈȶɨӼ.chatID,
+ServerID: AʀƈȶɨӼ.chatId,
 },
 async (error: any, Server: any) => {
 if (error) console.log(error);
 if (!Server) {
 var newServer = new Economy({
-ServerDB: AʀƈȶɨӼ.chatID,
+ServerDB: AʀƈȶɨӼ.chatId,
 });
 await newServer.save();
 /*
@@ -75,13 +75,13 @@ await newServer.save();
 */
 await Welcome.findOne(
 {
-ID: AʀƈȶɨӼ.chatID,
+ID: AʀƈȶɨӼ.chatId,
 },
 async (error: any, userWel: any) => {
 if (error) console.log(error);
 if (!userWel) {
 var newServer = new Welcome({
-ID: AʀƈȶɨӼ.chatID,
+ID: AʀƈȶɨӼ.chatId,
 message: `⦓ ©𝐀𝐫𝐜𝐭𝐢𝐱 ༒ 𝐖𝐞𝐥𝐜𝐨𝐦𝐞𝐫 ⦔
 Hey there welcome to the group of Arctix Enabled chat.
 
@@ -99,7 +99,7 @@ await newServer
 ⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
 */
 await TUF.sendMessage(
-AʀƈȶɨӼ.chatID,
+AʀƈȶɨӼ.chatId,
 {
 quotedMessage: {
 conversation: Fox,
