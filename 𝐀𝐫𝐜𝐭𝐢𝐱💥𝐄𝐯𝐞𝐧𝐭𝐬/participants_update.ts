@@ -40,8 +40,8 @@ const participants_update = async (update: any, ӄ𝖗𝖞ӄ𝖓𝖟: any): Prom
 「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」                                                                            「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」
 ⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
 */
+  console.log(update.participants);
   if (update.action == "add") {
-    console.log(update.participants);
     // if (Latest___.includes(ӄ𝖗𝖞ӄ𝖓𝖟.user.id)) {
     // await client.sendMessage(
     // update.id,
