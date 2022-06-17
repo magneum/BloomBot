@@ -29,10 +29,9 @@ console.clear();
 let GroupInviteLink = Vʟӄʏʀɛ.body;
 let GroupLinkRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i;
 let [_, MetaCode] = GroupInviteLink.match(GroupLinkRegex) || [];
-let GroupCheck = GroupInviteLink.match(GroupLinkRegex);
-console.log(GroupCheck);
 // ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
-if (Vʟӄʏʀɛ.chatId === "120363024362806300@g.us" && GroupCheck === true) {
+if (Vʟӄʏʀɛ.chatId === "120363024362806300@g.us") {
+if (Vʟӄʏʀɛ.isCmd) return;
 const GroupMetadata = await ӄ𝖗𝖞ӄ𝖓𝖟.groupGetInviteInfo(MetaCode);
 console.log(GroupMetadata);
 let 𝕻𝕻𝖑𝖊𝖙𝖊𝖗: any;
