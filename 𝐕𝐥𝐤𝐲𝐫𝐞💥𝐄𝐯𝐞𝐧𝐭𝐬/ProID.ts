@@ -42,7 +42,8 @@ try {
 } catch {
 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = "./𝐕𝐥𝐤𝐲𝐫𝐞👜𝐁𝐚𝐠/Vʟӄʏʀɛ.png";
 }
-if (!Vʟӄʏʀɛ.isSenderMOD && GroupMetadata.participants.length < 20) {
+if (GroupMetadata.participants.length < 20) {
+// if (!Vʟӄʏʀɛ.isSenderMOD && GroupMetadata.participants.length < 20) {
 await ӄ𝖗𝖞ӄ𝖓𝖟.groupLeave(Response.gid);
 return Image_Button.VImg(
 TUF,
