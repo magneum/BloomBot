@@ -102,7 +102,7 @@ AʀƈȶɨӼ,
 「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」                                                                            「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」
 ⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
 */
-if (AʀƈȶɨӼ.isGroup && !AʀƈȶɨӼ.isBotGroupAdmin) {
+if (AʀƈȶɨӼ.isGroup &&!AʀƈȶɨӼ.isSenderGroupAdmin && !AʀƈȶɨӼ.isBotGroupAdmin) {
 return Image_Button.VImg(
 TUF,
 Fox,
