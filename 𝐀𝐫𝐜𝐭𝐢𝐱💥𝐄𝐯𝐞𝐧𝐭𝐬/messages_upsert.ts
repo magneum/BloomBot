@@ -53,6 +53,24 @@ if (update.type === "append" && !ʟᴀʏᴏᴜᴛ.OFFLINE_RESPONSE) return;
 let Fox: proto.IWebMessageInfo = update.messages[0];
 let AʀƈȶɨӼ: AʀƈȶɨӼ = await resolve(Fox, ӄ𝖗𝖞ӄ𝖓𝖟);
 let TUF: Client = new Client(ӄ𝖗𝖞ӄ𝖓𝖟);
+/*
+⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
+「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」                                                                            「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」
+⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
+*/
+await BanPerson.findOne(
+{
+ID: AʀƈȶɨӼ.sender,
+},
+async (error: any, BanPerson: any) => {
+if (error) return console.log(error);
+await BanGroup.findOne(
+{
+ID: AʀƈȶɨӼ.chatId,
+},
+async (error: any, BanGroup: any) => {
+if (error) return console.log(error);
+if (AʀƈȶɨӼ.isGroup && !AʀƈȶɨӼ.fromMe && !BanGroup && !BanPerson) {
 await First_Proto__.First_Proto__(AʀƈȶɨӼ, TUF, Fox);
 /*
 ⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
@@ -253,7 +271,10 @@ console.log("🛰️ 𝐓𝐡𝐫𝐞𝐚𝐝 𝐈𝐃:", Kolor.green(𝖛𝖑�
 𝖛𝖑𝖐𝖕.stdout.pipe(process.stdout);
 𝖛𝖑𝖐𝖕.on("exit", function (code: any, signal: any) {
 if (code)
-console.log("📟 𝐕𝐥𝐤𝐲𝐫𝐞 𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐂𝐨𝐝𝐞:", Kolor.red(code));
+console.log(
+"📟 𝐕𝐥𝐤𝐲𝐫𝐞 𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐂𝐨𝐝𝐞:",
+Kolor.red(code)
+);
 if (signal)
 console.log(
 "📶 𝐕𝐥𝐤𝐲𝐫𝐞 𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐒𝐢𝐠𝐧𝐚𝐥:",
@@ -268,7 +289,10 @@ console.log("🛰️ 𝐓𝐡𝐫𝐞𝐚𝐝 𝐈𝐃:", Kolor.green(h𝖛𝖑�
 h𝖛𝖑𝖐𝖕.stderr.pipe(process.stderr);
 h𝖛𝖑𝖐𝖕.on("exit", function (code: any, signal: any) {
 if (code)
-console.log("📟 𝐕𝐥𝐤𝐲𝐫𝐞 𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐂𝐨𝐝𝐞:", Kolor.red(code));
+console.log(
+"📟 𝐕𝐥𝐤𝐲𝐫𝐞 𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐂𝐨𝐝𝐞:",
+Kolor.red(code)
+);
 if (signal)
 console.log(
 "📶 𝐕𝐥𝐤𝐲𝐫𝐞 𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐒𝐢𝐠𝐧𝐚𝐥:",
@@ -287,7 +311,9 @@ console.log(Kolor.red(error));
 */
 const ARC = commandHandler.get(AʀƈȶɨӼ.commandName);
 console.log(
-Kolor.blue(`💡𝐈𝐧𝐟𝐨: ${AʀƈȶɨӼ.commandName} Command executed.`)
+Kolor.blue(
+`💡𝐈𝐧𝐟𝐨: ${AʀƈȶɨӼ.commandName} Command executed.`
+)
 );
 var ǟʀɢʊʍɛռȶ = AʀƈȶɨӼ.body.trim().split(/\s+/).slice(1);
 await Silent.VSln(TUF, Fox, AʀƈȶɨӼ, ӄ𝖗𝖞ӄ𝖓𝖟);
@@ -383,7 +409,10 @@ mentionedJid: [AʀƈȶɨӼ.sender],
 },
 timestamp: Date(),
 image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Red.png" },
-caption: `*ᴍᴇɴᴛɪᴏɴ:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
+caption: `*ᴍᴇɴᴛɪᴏɴ:* @${AʀƈȶɨӼ.sender.replace(
+/[^\d+]/g,
+""
+)}
 
 *❌𝗘𝗿𝗿𝗼𝗿:* No Such Command In Database.Wait for it to be installed in near future.`,
 footer: `⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔`,
@@ -433,6 +462,11 @@ console.log(Kolor.red("❌𝐄𝐫𝐫𝐨𝐫: ", err));
 }
 );
 }
+}
+}
+);
+}
+);
 };
 export = {
 messages_upsert: messages_upsert,
