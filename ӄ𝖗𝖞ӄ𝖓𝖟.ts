@@ -115,19 +115,21 @@ chalkAnimation.rainbow(
 );
 // ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
 let commandHandler: Map<string, Command> = new Map();
-let Folders: string[] = fs.readdirSync(join(__dirname, "𝐕𝐥𝐤𝐲𝐫𝐞💖𝐇𝐞𝐚𝐫𝐭"));
+let Folders: string[] = fs.readdirSync(join(__dirname, "𝐕𝐥𝐤𝐲𝐫𝐞☣️𝐑𝐞𝐚𝐜𝐭𝐨𝐫"));
 for (const Files of Folders) {
 const AllFiles = fs
-.readdirSync(join(__dirname, `./𝐕𝐥𝐤𝐲𝐫𝐞💖𝐇𝐞𝐚𝐫𝐭/${Files}`))
+.readdirSync(join(__dirname, `./𝐕𝐥𝐤𝐲𝐫𝐞☣️𝐑𝐞𝐚𝐜𝐭𝐨𝐫/${Files}`))
 .filter((File) => File.endsWith(`.js`));
 for (const File of AllFiles) {
-const command = require(`./𝐕𝐥𝐤𝐲𝐫𝐞💖𝐇𝐞𝐚𝐫𝐭/${Files}/${File}`);
+const command = require(`./𝐕𝐥𝐤𝐲𝐫𝐞☣️𝐑𝐞𝐚𝐜𝐭𝐨𝐫/${Files}/${File}`);
 try {
 commandHandler.set(command.name, command);
-// console.log(
-// Kolor.green(Files + ":   ") +
-// Kolor.blue(File.toLocaleUpperCase() + " ✔️")
-// );
+if (ʟᴀʏᴏᴜᴛ.Heroku_App === undefined) {
+console.log(
+Kolor.green(Files + ":   ") +
+Kolor.blue(File.toLocaleUpperCase() + " ✔️")
+);
+}
 } catch (error) {
 console.log(
 Kolor.red("❌𝐄𝐫𝐫𝐨𝐫: " + error + " | ") +
