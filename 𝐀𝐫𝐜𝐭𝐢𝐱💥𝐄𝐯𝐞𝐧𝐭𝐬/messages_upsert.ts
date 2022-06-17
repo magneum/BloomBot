@@ -378,7 +378,7 @@ timestamp: Date(),
 image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Red.png" },
 caption: `*ᴍᴇɴᴛɪᴏɴ:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
 
-*❌𝗘𝗿𝗿𝗼𝗿:* No Such Command In Database.`,
+*❌𝗘𝗿𝗿𝗼𝗿:* No Such Command In Database.Wait for it to be installed in near future.`,
 footer: `⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔`,
 buttons: [
 {
