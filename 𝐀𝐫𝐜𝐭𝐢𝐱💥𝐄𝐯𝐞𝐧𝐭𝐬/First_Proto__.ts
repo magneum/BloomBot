@@ -57,6 +57,12 @@ TUF: any,
 Fox: any
 ): Promise<void> => {
 try {
+let grup: any;
+try {
+grup = await TUF.getGroupMetaData(AʀƈȶɨӼ.chatId, AʀƈȶɨӼ);
+} catch (e) {
+console.log(e);
+}
 await ServerDB.findOne(
 {
 ServerID: AʀƈȶɨӼ.chatID,
