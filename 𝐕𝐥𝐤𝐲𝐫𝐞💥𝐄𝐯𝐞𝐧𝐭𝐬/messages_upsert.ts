@@ -113,7 +113,7 @@ caption: `👋🏻𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚, _To Admins Of This G
 ╚◇╗
 ╔◇╝🧀 𝐃𝐞𝐟𝐚𝐮𝐥𝐭 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬! ꧂
 ║◇ *${ʟᴀʏᴏᴜᴛ.MuveOn}help:* _commands of Vlkyre!_
-║◇ *${ʟᴀʏᴏᴜᴛ.MuveOn}support:* _official arctix groups!_
+║◇ *${ʟᴀʏᴏᴜᴛ.MuveOn}vlkyre:* _official Vlkyre!_
 ╚════════════╝`,
 footer: `⦓ 𝐕𝐥𝐤𝐲𝐫𝐞 ⦔`,
 buttons: [
@@ -136,7 +136,6 @@ MessageType.buttonsMessage
 }
 );
 }
-
 // ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
 // await BanPerson.findOne(
 // {
@@ -311,8 +310,8 @@ if (newCommits.total != 0) {
 // type: 1,
 // },
 // {
-// buttonId: `${ʟᴀʏᴏᴜᴛ.MuveOn}support`,
-// buttonText: { displayText: `${ʟᴀʏᴏᴜᴛ.MuveOn}support` },
+// buttonId: `${ʟᴀʏᴏᴜᴛ.MuveOn}vlkyre`,
+// buttonText: { displayText: `${ʟᴀʏᴏᴜᴛ.MuveOn}vlkyre` },
 // type: 1,
 // },
 // ],

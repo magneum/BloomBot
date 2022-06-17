@@ -36,8 +36,8 @@ buttonText: { displayText: `${ʟᴀʏᴏᴜᴛ.MuveOn}help` },
 type: 1,
 },
 {
-buttonId: `${ʟᴀʏᴏᴜᴛ.MuveOn}support`,
-buttonText: { displayText: `${ʟᴀʏᴏᴜᴛ.MuveOn}support` },
+buttonId: `${ʟᴀʏᴏᴜᴛ.MuveOn}vlkyre`,
+buttonText: { displayText: `${ʟᴀʏᴏᴜᴛ.MuveOn}vlkyre` },
 type: 1,
 }
 ],
