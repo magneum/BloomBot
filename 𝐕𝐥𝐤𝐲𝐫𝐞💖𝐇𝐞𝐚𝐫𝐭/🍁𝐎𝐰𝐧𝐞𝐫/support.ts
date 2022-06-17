@@ -100,8 +100,8 @@ Vʟӄʏʀɛ,
 *⛩️𝗚roup D:* chat.whatsapp.com/EwPq86c1N5L4iZKxpHL6WP
 *⛩️𝗚roup E:* /chat.whatsapp.com/CcRTdjc2SHS0XlMP0Bvi2q
 
-*⚙️༒ :* chat.whatsapp.com/G3T8x7AFMTzLJQxuVTw7nz
-*🙏🏽‍༒ Request:* chat.whatsapp.com/L5fEdIIMTBM5Hf8wYSm8in
+*⚙️༒Tester:* chat.whatsapp.com/G3T8x7AFMTzLJQxuVTw7nz
+*🙏🏽‍༒Request:* chat.whatsapp.com/L5fEdIIMTBM5Hf8wYSm8in
 
 ⚡ ⦓ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 𝐎𝐟𝐟𝐢𝐜𝐢𝐚𝐥 ⦔ ⚡`,
 "./𝐕𝐥𝐤𝐲𝐫𝐞👜𝐁𝐚𝐠/Vʟӄʏʀɛ.png"
