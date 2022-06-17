@@ -100,7 +100,7 @@ await TUF.sendMessage(
 Vʟӄʏʀɛ.chatId,
 {
 timestamp: Date(),
-image: { url: "./𝐕𝐥𝐤𝐲𝐫𝐞👜𝐁𝐚𝐠/Vʟӄʏʀɛ_White.png" },
+image: { url: "./𝐕𝐥𝐤𝐲𝐫𝐞👜𝐁𝐚𝐠/Vʟӄʏʀɛ.png" },
 caption: `👋🏻𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚, _To Admins Of This Group: Some Of Your Members Requested Our Vlkyre HQ to Add Our Bot In This Group.Have Fun!_
 
 ╔⧉༻ ⭕𝐅𝐨𝐫 𝐀𝐝𝐦𝐢𝐧𝐬 ꧂
