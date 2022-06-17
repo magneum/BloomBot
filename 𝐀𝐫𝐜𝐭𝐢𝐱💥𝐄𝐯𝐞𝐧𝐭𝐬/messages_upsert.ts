@@ -102,7 +102,7 @@ contextInfo: {
 mentionedJid: [AʀƈȶɨӼ.groupMembers],
 },
 timestamp: Date(),
-image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png" },
+image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_White.jpg" },
 caption: `👋🏻𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚, _To Admins Of This Group: Some Of Your Members Requested Our Arctix HQ to Add Our Bot In This Group.Have Fun!_
 
 ╔⧉༻ ⭕𝐅𝐨𝐫 𝐀𝐝𝐦𝐢𝐧𝐬 ꧂
