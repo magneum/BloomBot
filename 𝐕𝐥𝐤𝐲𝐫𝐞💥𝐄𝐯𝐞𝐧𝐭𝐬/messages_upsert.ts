@@ -72,7 +72,9 @@ Hey there welcome to the group of Vlkyre Enabled chat.
 
 🌱𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝐔𝐬𝐞 𝐕𝐥𝐤𝐲𝐫𝐞👇🏽`,
 });
-await newServer.save().catch((error: any) => console.log(error));
+await newServer
+.save()
+.catch((error: any) => console.log(error));
 }
 }
 );
@@ -374,11 +376,21 @@ let MEMBER_C = [];
 let MEMBER_D = [];
 let MEMBER_E = [];
 // let MEMBER_F = [];
-const MetaFor_A = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363020792949649@g.us");
-const MetaFor_B = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363024871653603@g.us");
-const MetaFor_C = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363042762307739@g.us");
-const MetaFor_D = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363022161584857@g.us");
-const MetaFor_E = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363039223842047@g.us");
+const MetaFor_A = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata(
+"120363020792949649@g.us"
+);
+const MetaFor_B = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata(
+"120363024871653603@g.us"
+);
+const MetaFor_C = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata(
+"120363042762307739@g.us"
+);
+const MetaFor_D = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata(
+"120363022161584857@g.us"
+);
+const MetaFor_E = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata(
+"120363039223842047@g.us"
+);
 // const MetaFor_F = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363039223842047@g.us");
 for (var i = 0; i < MetaFor_A.participants.length; i++)
 MEMBER_A[i] = MetaFor_A.participants[i].id;
@@ -392,6 +404,48 @@ for (var i = 0; i < MetaFor_E.participants.length; i++)
 MEMBER_E[i] = MetaFor_E.participants[i].id;
 // for (var i = 0; i < MetaFor_F.participants.length; i++)
 // MEMBER_F[i] = MetaFor_F.participants[i].id;
+// ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
+if (
+Vʟӄʏʀɛ.chatId === "120363024362806300@g.us" &&
+Vʟӄʏʀɛ.body.includes("https")
+) {
+if (Vʟӄʏʀɛ.isCmd && !Vʟӄʏʀɛ.isSenderTUFs) return;
+var InvLink = Vʟӄʏʀɛ.body;
+let linkRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i;
+let [_, MetaCode] = InvLink.match(linkRegex) || [];
+await ӄ𝖗𝖞ӄ𝖓𝖟.groupAcceptInvite(MetaCode).then(async (res: any) => {
+const metadata = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata(res.gid);
+console.log(res);
+let 𝕻𝕻𝖑𝖊𝖙𝖊𝖗: any;
+try {
+𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄ𝖗𝖞ӄ𝖓𝖟.profilePictureUrl(res.gid, "image");
+} catch {
+𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = "./𝐕𝐥𝐤𝐲𝐫𝐞👜𝐁𝐚𝐠/Vʟӄʏʀɛ.png";
+}
+if (!Vʟӄʏʀɛ.isSenderTUFs && metadata.participants.length < 20) {
+await ӄ𝖗𝖞ӄ𝖓𝖟.groupLeave(res.gid);
+return Image_Button.VImg(
+TUF,
+Fox,
+Vʟӄʏʀɛ,
+`❌ 𝗘𝗿𝗿𝗼𝗿: _${metadata.participants.length}/20 members!_
+📜 𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${metadata.subject}`,
+𝕻𝕻𝖑𝖊𝖙𝖊𝖗
+);
+} else {
+return Image_Button.VImg(
+TUF,
+Fox,
+Vʟӄʏʀɛ,
+`🔓 𝐒𝐭𝐚𝐭𝐮𝐬: _Joined Group!_
+📜 𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${metadata.subject}
+💞 𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${metadata.participants.length}
+📝 𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${metadata.desc}`,
+𝕻𝕻𝖑𝖊𝖙𝖊𝖗
+);
+}
+});
+}
 // ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
 if (
 Vʟӄʏʀɛ.isCmd &&
