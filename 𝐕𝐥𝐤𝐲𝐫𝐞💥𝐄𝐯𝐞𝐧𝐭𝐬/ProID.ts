@@ -34,7 +34,7 @@ let linkRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i;
 let [_, MetaCode] = InvLink.match(linkRegex) || [];
 // ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
 await ӄ𝖗𝖞ӄ𝖓𝖟.groupAcceptInvite(MetaCode).then(async (Response: any) => {
-const metadata = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata(Response.gid);
+const GroupMetadata = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata(Response.gid);
 console.log(Response);
 let 𝕻𝕻𝖑𝖊𝖙𝖊𝖗: any;
 try {
@@ -42,14 +42,14 @@ try {
 } catch {
 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = "./𝐕𝐥𝐤𝐲𝐫𝐞👜𝐁𝐚𝐠/Vʟӄʏʀɛ.png";
 }
-if (!Vʟӄʏʀɛ.isSenderMOD && metadata.participants.length < 20) {
+if (!Vʟӄʏʀɛ.isSenderMOD && GroupMetadata.participants.length < 20) {
 await ӄ𝖗𝖞ӄ𝖓𝖟.groupLeave(Response.gid);
 return Image_Button.VImg(
 TUF,
 Fox,
 Vʟӄʏʀɛ,
-`❌ 𝗘𝗿𝗿𝗼𝗿: _${metadata.participants.length}/20 members!_
-📜 𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${metadata.subject}`,
+`❌ 𝗘𝗿𝗿𝗼𝗿: _${GroupMetadata.participants.length}/20 members!_
+📜 𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${GroupMetadata.subject}`,
 𝕻𝕻𝖑𝖊𝖙𝖊𝖗
 );
 } else {
@@ -58,9 +58,9 @@ TUF,
 Fox,
 Vʟӄʏʀɛ,
 `🔓 𝐒𝐭𝐚𝐭𝐮𝐬: _Joined Group!_
-📜 𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${metadata.subject}
-💞 𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${metadata.participants.length}
-📝 𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${metadata.desc}`,
+📜 𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${GroupMetadata.subject}
+💞 𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${GroupMetadata.participants.length}
+📝 𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${GroupMetadata.desc}`,
 𝕻𝕻𝖑𝖊𝖙𝖊𝖗
 );
 }
