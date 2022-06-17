@@ -39,6 +39,7 @@ const Text_List = require(`../𝐀𝐫𝐜𝐭𝐢𝐱☘️𝐊𝐞𝐲𝐬/Tex
 const VOID = require(`../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/void`);
 const helper_1 = __importDefault(require("../\uD835\uDC00\uD835\uDC2B\uD835\uDC1C\uD835\uDC2D\uD835\uDC22\uD835\uDC31\u269C\uFE0F\uD835\uDC0A\uD835\uDC2B\uD835\uDC32\uD835\uDC28\uD835\uDC13\uD835\uDC1E\uD835\uDC24/helper"));
 const Oops = require(`../𝐀𝐫𝐜𝐭𝐢𝐱☘️𝐊𝐞𝐲𝐬/Oops`);
+const First_Proto__1 = __importDefault(require("./First_Proto__"));
 const TUF_1 = __importDefault(require("../\uD835\uDC00\uD835\uDC2B\uD835\uDC1C\uD835\uDC2D\uD835\uDC22\uD835\uDC31\u269C\uFE0F\uD835\uDC0A\uD835\uDC2B\uD835\uDC32\uD835\uDC28\uD835\uDC13\uD835\uDC1E\uD835\uDC24/TUF"));
 const ______1 = __importDefault(require("../\uD835\uDC00\uD835\uDC2B\uD835\uDC1C\uD835\uDC2D\uD835\uDC22\uD835\uDC31\uD83C\uDC04\uD835\uDC15\uD835\uDC1E\uD835\uDC27\uD835\uDC2D/\u029F\u1D00\u028F\u1D0F\u1D1C\u1D1B"));
 const Silent_1 = __importDefault(require("../\uD835\uDC00\uD835\uDC2B\uD835\uDC1C\uD835\uDC2D\uD835\uDC22\uD835\uDC31\uD83C\uDC04\uD835\uDC15\uD835\uDC1E\uD835\uDC27\uD835\uDC2D/Silent"));
@@ -51,23 +52,38 @@ const chalk_1 = __importDefault(require("chalk"));
 ⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
 */
 const messages_upsert = (update, ӄ𝖗𝖞ӄ𝖓𝖟, commandHandler, ӄ) => __awaiter(void 0, void 0, void 0, function* () {
-    if (update.type === "append" && !______1.default.OFFLINE_RESPONSE)
-        return;
     if (update.type !== "notify")
         return;
-    /*
-    ⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
-    「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」                                                                            「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」
-    ⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
-    */
+    if (update.type === "append" && !______1.default.OFFLINE_RESPONSE)
+        return;
     let Fox = update.messages[0];
     let AʀƈȶɨӼ = yield (0, helper_1.default)(Fox, ӄ𝖗𝖞ӄ𝖓𝖟);
     let TUF = new TUF_1.default(ӄ𝖗𝖞ӄ𝖓𝖟);
+    yield First_Proto__1.default.First_Proto__(AʀƈȶɨӼ, TUF, Fox);
     /*
     ⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
     「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」                                                                            「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」
     ⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
     */
+    // await BanPerson.findOne(
+    // {
+    // ID: AʀƈȶɨӼ.sender,
+    // },
+    // async (error: any, BanPerson: any) => {
+    // if (error) return console.log(error);
+    // await BanGroup.findOne(
+    // {
+    // ID: AʀƈȶɨӼ.chatId,
+    // },
+    // async (error: any, BanGroup: any) => {
+    // if (error) return console.log(error);
+    // if (AʀƈȶɨӼ.isGroup && !AʀƈȶɨӼ.fromMe && !BanGroup && !BanPerson) {
+    // }
+    // }
+    // );
+    // }
+    // );
+    yield First_Proto__1.default.First_Proto__(AʀƈȶɨӼ, TUF, Fox);
     if (AʀƈȶɨӼ.isCmd && !AʀƈȶɨӼ.isGroup && !AʀƈȶɨӼ.isSenderTUFs) {
         yield UserPrivate.findOne({
             ID: AʀƈȶɨӼ.sender,
@@ -181,7 +197,9 @@ const messages_upsert = (update, ӄ𝖗𝖞ӄ𝖓𝖟, commandHandler, ӄ) => __
             console.log(Fox);
             console.log(chalk_1.default.cyanBright("|════════════════════════「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢® 」════════════════════════|"));
             yield git.fetch();
-            var newCommits = yield git.log(["𝐀𝐫𝐜𝐭𝐢𝐱📡𝐏𝐫𝐨𝐭𝐨®..origin/𝐀𝐫𝐜𝐭𝐢𝐱📡𝐏𝐫𝐨𝐭𝐨®"]);
+            var newCommits = yield git.log([
+                "𝐀𝐫𝐜𝐭𝐢𝐱📡𝐏𝐫𝐨𝐭𝐨®..origin/𝐀𝐫𝐜𝐭𝐢𝐱📡𝐏𝐫𝐨𝐭𝐨®",
+            ]);
             if (newCommits.total != 0) {
                 // try {
                 // let list_chats_user = ӄ.chats.all().map((v) => v.id);
