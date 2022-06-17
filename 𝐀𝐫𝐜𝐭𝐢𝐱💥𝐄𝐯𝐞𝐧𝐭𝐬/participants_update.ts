@@ -102,7 +102,7 @@ await client
 update.id,
 {
 timestamp: Date(),
-image: { url: media },
+image: { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 },
 caption: `
 ┌─「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢® 」
 ├
