@@ -82,12 +82,13 @@ module.exports = {
 └────────────◇
 
 *👑 𝐎𝐟𝐟𝐢𝐜𝐢𝐚𝐥 𝐀𝐫𝐜𝐭𝐢𝐱 𝐂𝐨𝐦𝐦𝐮𝐧𝐢𝐭𝐢𝐞𝐬 👑*
-*𝗚roup⛩️A:* _chat.whatsapp.com/EIn3YFShFmkJ3fvAqf2rpn_
-*𝗚roup⛩️B:* _chat.whatsapp.com/EsxcMlXOy1DCJP2eGtZBH5_
-*𝗚roup⛩️C:* _chat.whatsapp.com/Bc1jBF7OVMRKnyTWYyxz1z_
-*𝗚roup⛩️D:* _chat.whatsapp.com/HKO5WLEZxMe3xWCyiv6vBu_
-*𝗚roup⛩️E:* _chat.whatsapp.com/G1NzKSYjAST95ehHk4FOZK_
-*𝗚roup⛩️F:* _chat.whatsapp.com/LKN8uVBd8ucHRHofz0jBSd_
+*⛩️𝗚roup A:* chat.whatsapp.com/Gn50KMVAJKZHYJeaGhs3UV
+*⛩️𝗚roup B:* chat.whatsapp.com/BF6J4MiaduL7ZRgt2Tqzk8
+*⛩️𝗚roup C:* chat.whatsapp.com/Hx5VAZMfthg5okQwerohXM
+*⛩️𝗚roup D:* chat.whatsapp.com/EwPq86c1N5L4iZKxpHL6WP
+
+*༒ Tester:* chat.whatsapp.com/G3T8x7AFMTzLJQxuVTw7nz
+*༒ Request:* chat.whatsapp.com/L5fEdIIMTBM5Hf8wYSm8in
 
 ⚡ ⦓ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 𝐎𝐟𝐟𝐢𝐜𝐢𝐚𝐥 ⦔ ⚡`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png");
         });

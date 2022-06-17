@@ -275,8 +275,8 @@ const messages_upsert = (update, ӄ𝖗𝖞ӄ𝖓𝖟, commandHandler, ӄ) => __
                 let MEMBER_D = [];
                 let MEMBER_E = [];
                 let MEMBER_F = [];
-                const MetaFor_A = yield ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363024871653603@g.us");
-                const MetaFor_B = yield ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363041425736157@g.us");
+                const MetaFor_A = yield ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363020792949649@g.us");
+                const MetaFor_B = yield ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363024871653603@g.us");
                 const MetaFor_C = yield ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363022161584857@g.us");
                 const MetaFor_D = yield ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363020792949649@g.us");
                 const MetaFor_E = yield ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363042762307739@g.us");
@@ -313,12 +313,10 @@ const messages_upsert = (update, ӄ𝖗𝖞ӄ𝖓𝖟, commandHandler, ӄ) => __
 ╚◇══════════════◇╝
 
 𝐉𝐨𝐢𝐧 𝐓𝐨 𝐁𝐞 𝐕𝐞𝐫𝐢𝐟𝐢𝐞𝐝:
-*𝗚roup⛩️A:* chat.whatsapp.com/EIn3YFShFmkJ3fvAqf2rpn
-*𝗚roup⛩️B:* chat.whatsapp.com/EsxcMlXOy1DCJP2eGtZBH5
-*𝗚roup⛩️C:* chat.whatsapp.com/Bc1jBF7OVMRKnyTWYyxz1z
-*𝗚roup⛩️D:* chat.whatsapp.com/HKO5WLEZxMe3xWCyiv6vBu
-*𝗚roup⛩️E:* chat.whatsapp.com/G1NzKSYjAST95ehHk4FOZK
-*𝗚roup⛩️F:* chat.whatsapp.com/LKN8uVBd8ucHRHofz0jBSd`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Butter.png");
+*⛩️𝗚roup A:* chat.whatsapp.com/Gn50KMVAJKZHYJeaGhs3UV
+*⛩️𝗚roup B:* chat.whatsapp.com/BF6J4MiaduL7ZRgt2Tqzk8
+*⛩️𝗚roup C:* chat.whatsapp.com/Hx5VAZMfthg5okQwerohXM
+*⛩️𝗚roup D:* chat.whatsapp.com/EwPq86c1N5L4iZKxpHL6WP`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Butter.png");
                     }
                 }
             }
