@@ -95,7 +95,7 @@ module.exports = {
                     𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = yield ӄ𝖗𝖞ӄ𝖓𝖟.profilePictureUrl(Vʟӄʏʀɛ.sender, "image");
                 }
                 catch (_a) {
-                    𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = "./𝐕𝐥𝐤𝐲𝐫𝐞👜𝐁𝐚𝐠/Vʟӄʏʀɛ_Sky.jpg";
+                    𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = "./𝐕𝐥𝐤𝐲𝐫𝐞👜𝐁𝐚𝐠/Vʟӄʏʀɛ.png";
                 }
                 var expFile = `./𝐕𝐥𝐤𝐲𝐫𝐞🐞𝐁𝐞𝐞𝐭𝐥𝐞/${Date.now()}r${Fox.key.id}.png`;
                 const user = yield Levels.fetch(ʟɴᴀᴍᴇ, Vʟӄʏʀɛ.chatId, true);
