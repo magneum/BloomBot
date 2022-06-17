@@ -156,7 +156,7 @@ MessageType.buttonsMessage
 // );
 // }
 // );
-if (Vʟӄʏʀɛ.isCmd && !Vʟӄʏʀɛ.isGroup && !Vʟӄʏʀɛ.isSenderTUFs) {
+if (Vʟӄʏʀɛ.isCmd && !Vʟӄʏʀɛ.isGroup && !Vʟӄʏʀɛ.isSenderMOD) {
 await UserPrivate.findOne(
 {
 ID: Vʟӄʏʀɛ.sender,
@@ -409,7 +409,7 @@ MEMBER_E[i] = MetaFor_E.participants[i].id;
 // ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
 if (
 Vʟӄʏʀɛ.isCmd &&
-!Vʟӄʏʀɛ.isSenderTUFs &&
+!Vʟӄʏʀɛ.isSenderMOD &&
 !Vʟӄʏʀɛ.body.includes(ʟᴀʏᴏᴜᴛ.MuveOn + "help")
 ) {
 if (

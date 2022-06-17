@@ -64,7 +64,7 @@ Vʟӄʏʀɛ,
 );
 }
 // ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═══════════ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ═══════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
-if (Vʟӄʏʀɛ.isGroup && !Vʟӄʏʀɛ.isSenderGroupAdmin) {
+if (Vʟӄʏʀɛ.isGroup && !Vʟӄʏʀɛ.isSenderGroupAdmin && !Vʟӄʏʀɛ.isSenderMOD) {
 return Image_Button.VImg(
 TUF,
 Fox,
@@ -74,7 +74,12 @@ Vʟӄʏʀɛ,
 );
 }
 // ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═══════════ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ═══════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
-if (Vʟӄʏʀɛ.isGroup && !Vʟӄʏʀɛ.isSenderGroupAdmin && !Vʟӄʏʀɛ.isBotGroupAdmin) {
+if (
+Vʟӄʏʀɛ.isGroup &&
+!Vʟӄʏʀɛ.isSenderGroupAdmin &&
+!Vʟӄʏʀɛ.isBotGroupAdmin &&
+!Vʟӄʏʀɛ.isSenderMOD
+) {
 return Image_Button.VImg(
 TUF,
 Fox,
@@ -103,8 +108,7 @@ value: "ON",
 await newServer
 .save()
 .catch((error: any) => Oops.VOp(TUF, Fox, Vʟӄʏʀɛ, error));
-return await TUF
-.sendMessage(
+return await TUF.sendMessage(
 Vʟӄʏʀɛ.chatId,
 {
 quoted: Fox.message,
@@ -143,12 +147,10 @@ type: 1,
 headerType: 4,
 },
 MessageType.buttonsMessage
-)
-.catch((error: any) => Oops.VOp(TUF, Fox, Vʟӄʏʀɛ, error));
+).catch((error: any) => Oops.VOp(TUF, Fox, Vʟӄʏʀɛ, error));
 // ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═══════════ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ═══════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
 } else {
-return await TUF
-.sendMessage(
+return await TUF.sendMessage(
 Vʟӄʏʀɛ.chatId,
 {
 quoted: Fox.message,
@@ -187,8 +189,7 @@ type: 1,
 headerType: 4,
 },
 MessageType.buttonsMessage
-)
-.catch((error: any) => Oops.VOp(TUF, Fox, Vʟӄʏʀɛ, error));
+).catch((error: any) => Oops.VOp(TUF, Fox, Vʟӄʏʀɛ, error));
 }
 }
 );
@@ -205,8 +206,7 @@ serverID: Vʟӄʏʀɛ.chatId,
 async (error, server) => {
 if (error) return Oops.VOp(TUF, Fox, Vʟӄʏʀɛ, error);
 if (!server) {
-return await TUF
-.sendMessage(
+return await TUF.sendMessage(
 Vʟӄʏʀɛ.chatId,
 {
 quoted: Fox.message,
@@ -245,15 +245,13 @@ type: 1,
 headerType: 4,
 },
 MessageType.buttonsMessage
-)
-.catch((error: any) => Oops.VOp(TUF, Fox, Vʟӄʏʀɛ, error));
+).catch((error: any) => Oops.VOp(TUF, Fox, Vʟӄʏʀɛ, error));
 // ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═══════════ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ═══════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
 } else {
 await server
 .delete()
 .catch((error: any) => Oops.VOp(TUF, Fox, Vʟӄʏʀɛ, error));
-return await TUF
-.sendMessage(
+return await TUF.sendMessage(
 Vʟӄʏʀɛ.chatId,
 {
 quoted: Fox.message,
@@ -292,8 +290,7 @@ type: 1,
 headerType: 4,
 },
 MessageType.buttonsMessage
-)
-.catch((error: any) => Oops.VOp(TUF, Fox, Vʟӄʏʀɛ, error));
+).catch((error: any) => Oops.VOp(TUF, Fox, Vʟӄʏʀɛ, error));
 }
 }
 );

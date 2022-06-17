@@ -38,7 +38,7 @@ OCR: process.env.OCR,
 VlkyreYT: process.env.VlkyreYT,
 IMDB: process.env.IMDB,
 Weather: process.env.CURRENT_WEATHER_API_KEY,
-TUFs: process.env.TUFs,
+MOD: process.env.MOD,
 OFFLINE_RESPONSE: process.env.OFFLINE_RESPONSE,
 DATABASE_URL:
 process.env.DATABASE_URL === undefined

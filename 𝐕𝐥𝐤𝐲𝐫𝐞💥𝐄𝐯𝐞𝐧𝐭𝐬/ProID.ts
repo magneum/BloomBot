@@ -20,55 +20,55 @@ import { Boom } from "@hapi/boom";
 import Kolor from "chalk";
 // ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
 const ProID = async (
-  TUF: any,
-  Fox: any,
-  Vʟӄʏʀɛ: any,
-  ӄ𝖗𝖞ӄ𝖓𝖟: any
+TUF: any,
+Fox: any,
+Vʟӄʏʀɛ: any,
+ӄ𝖗𝖞ӄ𝖓𝖟: any
 ): Promise<void> => {
-  if (
-    Vʟӄʏʀɛ.chatId === "120363024362806300@g.us" &&
-    Vʟӄʏʀɛ.body.includes("https")
-  ) {
-    var InvLink = Vʟӄʏʀɛ.body;
-    let linkRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i;
-    let [_, MetaCode] = InvLink.match(linkRegex) || [];
-    // ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
-    await ӄ𝖗𝖞ӄ𝖓𝖟.groupAcceptInvite(MetaCode).then(async (Response: any) => {
-      const metadata = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata(Response.gid);
-      console.log(Response);
-      let 𝕻𝕻𝖑𝖊𝖙𝖊𝖗: any;
-      try {
-        𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄ𝖗𝖞ӄ𝖓𝖟.profilePictureUrl(Response.gid, "image");
-      } catch {
-        𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = "./𝐕𝐥𝐤𝐲𝐫𝐞👜𝐁𝐚𝐠/Vʟӄʏʀɛ.png";
-      }
-      if (!Vʟӄʏʀɛ.isSenderTUFs && metadata.participants.length < 20) {
-        await ӄ𝖗𝖞ӄ𝖓𝖟.groupLeave(Response.gid);
-        return Image_Button.VImg(
-          TUF,
-          Fox,
-          Vʟӄʏʀɛ,
-          `❌ 𝗘𝗿𝗿𝗼𝗿: _${metadata.participants.length}/20 members!_
+if (
+Vʟӄʏʀɛ.chatId === "120363024362806300@g.us" &&
+Vʟӄʏʀɛ.body.includes("https")
+) {
+var InvLink = Vʟӄʏʀɛ.body;
+let linkRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i;
+let [_, MetaCode] = InvLink.match(linkRegex) || [];
+// ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
+await ӄ𝖗𝖞ӄ𝖓𝖟.groupAcceptInvite(MetaCode).then(async (Response: any) => {
+const metadata = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata(Response.gid);
+console.log(Response);
+let 𝕻𝕻𝖑𝖊𝖙𝖊𝖗: any;
+try {
+𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄ𝖗𝖞ӄ𝖓𝖟.profilePictureUrl(Response.gid, "image");
+} catch {
+𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = "./𝐕𝐥𝐤𝐲𝐫𝐞👜𝐁𝐚𝐠/Vʟӄʏʀɛ.png";
+}
+if (!Vʟӄʏʀɛ.isSenderMOD && metadata.participants.length < 20) {
+await ӄ𝖗𝖞ӄ𝖓𝖟.groupLeave(Response.gid);
+return Image_Button.VImg(
+TUF,
+Fox,
+Vʟӄʏʀɛ,
+`❌ 𝗘𝗿𝗿𝗼𝗿: _${metadata.participants.length}/20 members!_
 📜 𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${metadata.subject}`,
-          𝕻𝕻𝖑𝖊𝖙𝖊𝖗
-        );
-      } else {
-        return Image_Button.VImg(
-          TUF,
-          Fox,
-          Vʟӄʏʀɛ,
-          `🔓 𝐒𝐭𝐚𝐭𝐮𝐬: _Joined Group!_
+𝕻𝕻𝖑𝖊𝖙𝖊𝖗
+);
+} else {
+return Image_Button.VImg(
+TUF,
+Fox,
+Vʟӄʏʀɛ,
+`🔓 𝐒𝐭𝐚𝐭𝐮𝐬: _Joined Group!_
 📜 𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${metadata.subject}
 💞 𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${metadata.participants.length}
 📝 𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${metadata.desc}`,
-          𝕻𝕻𝖑𝖊𝖙𝖊𝖗
-        );
-      }
-    });
-  }
+𝕻𝕻𝖑𝖊𝖙𝖊𝖗
+);
+}
+});
+}
 };
 export = {
-  ProID: ProID,
+ProID: ProID,
 };
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 /* 

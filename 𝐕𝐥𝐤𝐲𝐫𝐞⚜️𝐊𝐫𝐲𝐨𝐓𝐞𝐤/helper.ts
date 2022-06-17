@@ -15,7 +15,7 @@ TUF: WASocket
 var Vʟӄʏʀɛ: VʟӄʏʀɛClass = new VʟӄʏʀɛClass();
 var prefix: string = ʟᴀʏᴏᴜᴛ.PREFIX + "\\w+";
 var prefixRegex: RegExp = new RegExp(prefix, "g");
-var TUFsstring: string = ʟᴀʏᴏᴜᴛ.TUFs;
+var MODstring: string = ʟᴀʏᴏᴜᴛ.MOD;
 try {
 var jsonMessage: string = JSON.stringify(messageInstance);
 } catch (err) {
@@ -120,7 +120,7 @@ Vʟӄʏʀɛ.isGroup && messageInstance.message && Vʟӄʏʀɛ.fromMe
 : !Vʟӄʏʀɛ.isGroup
 ? Vʟӄʏʀɛ.chatId
 : null;
-Vʟӄʏʀɛ.isSenderTUFs = TUFsstring.includes(
+Vʟӄʏʀɛ.isSenderMOD = MODstring.includes(
 Vʟӄʏʀɛ.sender?.substring(0, Vʟӄʏʀɛ.sender.indexOf("@"))
 );
 return Vʟӄʏʀɛ;

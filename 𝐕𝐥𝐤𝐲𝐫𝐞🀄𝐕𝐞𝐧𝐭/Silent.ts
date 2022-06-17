@@ -42,7 +42,7 @@ ID: Vʟӄʏʀɛ.chatId,
 async (error: any, BanGroup: any) => {
 if (error) return console.log(error);
 if (BanPerson) return;
-if (BanGroup && !Vʟӄʏʀɛ.fromMe && !Vʟӄʏʀɛ.isSenderTUFs) return;
+if (BanGroup && !Vʟӄʏʀɛ.fromMe && !Vʟӄʏʀɛ.isSenderMOD) return;
 }
 );
 }

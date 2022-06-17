@@ -28,7 +28,7 @@ isGroup: boolean;
 isPm: boolean;
 isBotGroupAdmin: boolean;
 isSenderGroupAdmin: boolean;
-isSenderTUFs: boolean;
+isSenderMOD: boolean;
 isImage: boolean;
 isReplyImage: boolean;
 isGIF: boolean;

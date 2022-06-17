@@ -68,7 +68,7 @@ Vʟӄʏʀɛ,
 if (
 Vʟӄʏʀɛ.isGroup &&
 !Vʟӄʏʀɛ.isSenderGroupAdmin &&
-!Vʟӄʏʀɛ.isSenderTUFs
+!Vʟӄʏʀɛ.isSenderMOD
 ) {
 return Image_Button.VImg(
 TUF,

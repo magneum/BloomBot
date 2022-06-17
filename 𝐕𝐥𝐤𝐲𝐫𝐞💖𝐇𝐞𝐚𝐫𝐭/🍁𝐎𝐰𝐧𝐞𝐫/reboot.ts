@@ -55,7 +55,7 @@ console.log(e);
 }
 const ꜰɪɴᴀᴍᴇ = ᴅꜰɴᴀᴍᴇ.charAt(0).toUpperCase() + ᴅꜰɴᴀᴍᴇ.slice(1);
 // ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═══════════ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ═══════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
-if (!Vʟӄʏʀɛ.fromMe && !Vʟӄʏʀɛ.isSenderTUFs) {
+if (!Vʟӄʏʀɛ.fromMe && !Vʟӄʏʀɛ.isSenderMOD) {
 return Image_Button.VImg(
 TUF,
 Fox,
