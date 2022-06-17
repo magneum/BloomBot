@@ -102,7 +102,7 @@ await TUF.sendMessage(
 AʀƈȶɨӼ.chatID,
 {
 quotedMessage: {
-conversation: Fox.message,
+conversation: Fox,
 },
 timestamp: Date(),
 image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png" },
