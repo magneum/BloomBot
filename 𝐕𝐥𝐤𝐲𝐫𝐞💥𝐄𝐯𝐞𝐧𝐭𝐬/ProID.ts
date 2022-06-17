@@ -45,7 +45,7 @@ return await Image_Button.VImg(
 TUF,
 Fox,
 Vʟӄʏʀɛ,
-`❌ 𝗘𝗿𝗿𝗼𝗿: ${GroupMetadata.subject} has _${GroupMetadata.size}/20 members!_`,
+`❌𝗘𝗿𝗿𝗼𝗿: ${GroupMetadata.subject} has _${GroupMetadata.size}/20 members!_`,
 𝕻𝕻𝖑𝖊𝖙𝖊𝖗
 );
 } else {
@@ -54,11 +54,11 @@ return await Image_Button.VImg(
 TUF,
 Fox,
 Vʟӄʏʀɛ,
-`🔓 𝐒𝐭𝐚𝐭𝐮𝐬: Joined Group!
+`🔓𝐒𝐭𝐚𝐭𝐮𝐬: _Auto Joined Group!_
 
-📜 𝐆𝐫𝐨𝐮𝐩: ${GroupMetadata.subject}
-💞 𝐌𝐞𝐦𝐛𝐞𝐫: ${GroupMetadata.size}
-📝 𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${GroupMetadata.desc}`,
+📜𝐆𝐫𝐨𝐮𝐩: ${GroupMetadata.subject}
+💞𝐌𝐞𝐦𝐛𝐞𝐫: ${GroupMetadata.size}
+📝𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${GroupMetadata.desc}`,
 𝕻𝕻𝖑𝖊𝖙𝖊𝖗
 );
 }
