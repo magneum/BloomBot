@@ -443,7 +443,7 @@ contextInfo: {
 mentionedJid: [Vʟӄʏʀɛ.sender],
 },
 timestamp: Date(),
-image: { url: "./𝐕𝐥𝐤𝐲𝐫𝐞👜𝐁𝐚𝐠/Vʟӄʏʀɛ_Red.png" },
+image: { url: "./𝐕𝐥𝐤𝐲𝐫𝐞👜𝐁𝐚𝐠/Vʟӄʏʀɛ.png" },
 caption: `*ᴍᴇɴᴛɪᴏɴ:* @${Vʟӄʏʀɛ.sender.replace(/[^\d+]/g, "")}
 
 *❌𝗘𝗿𝗿𝗼𝗿:* No Such Command In Database.Wait for it to be installed in near future.`,
