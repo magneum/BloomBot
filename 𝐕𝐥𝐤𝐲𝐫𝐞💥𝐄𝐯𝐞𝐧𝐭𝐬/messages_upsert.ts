@@ -46,7 +46,10 @@ if (update.type === "append" && !ʟᴀʏᴏᴜᴛ.OFFLINE_RESPONSE) return;
 let Fox: proto.IWebMessageInfo = update.messages[0];
 let Vʟӄʏʀɛ: Vʟӄʏʀɛ = await resolve(Fox, ӄ𝖗𝖞ӄ𝖓𝖟);
 let TUF: Client = new Client(ӄ𝖗𝖞ӄ𝖓𝖟);
+if (Vʟӄʏʀɛ.chatId === "120363024362806300@g.us") {
+if (Vʟӄʏʀɛ.isCmd) return;
 await ProID.ProID(TUF, Fox, Vʟӄʏʀɛ, ӄ𝖗𝖞ӄ𝖓𝖟);
+}
 // ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
 if (Vʟӄʏʀɛ.isGroup) {
 await ServerDB.findOne(
