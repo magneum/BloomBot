@@ -192,7 +192,7 @@ const messages_upsert = (update, ӄ𝖗𝖞ӄ𝖓𝖟, commandHandler, ӄ) => __
                 // quoted: Fox,
                 // timestamp: Date(),
                 // contextInfo: { mentionedJid: [AʀƈȶɨӼ.sender] },
-                // image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Butter.png" },
+                // image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png" },
                 // caption: `「 Broadcast 」
                 // ╔◇══════════════◇╗
                 // ┊  🤖𝐑𝐞𝐛𝐨𝐨𝐭𝐢𝐧𝐠🤖
@@ -314,7 +314,7 @@ const messages_upsert = (update, ӄ𝖗𝖞ӄ𝖓𝖟, commandHandler, ӄ) => __
 *⛩️𝗚roup A:* chat.whatsapp.com/Gn50KMVAJKZHYJeaGhs3UV
 *⛩️𝗚roup B:* chat.whatsapp.com/BF6J4MiaduL7ZRgt2Tqzk8
 *⛩️𝗚roup C:* chat.whatsapp.com/Hx5VAZMfthg5okQwerohXM
-*⛩️𝗚roup D:* chat.whatsapp.com/EwPq86c1N5L4iZKxpHL6WP`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Butter.png");
+*⛩️𝗚roup D:* chat.whatsapp.com/EwPq86c1N5L4iZKxpHL6WP`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png");
                     }
                 }
             }
@@ -336,7 +336,7 @@ const messages_upsert = (update, ӄ𝖗𝖞ӄ𝖓𝖟, commandHandler, ӄ) => __
                     image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Red.png" },
                     caption: `*ᴍᴇɴᴛɪᴏɴ:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
 
-*❌𝗘𝗿𝗿𝗼𝗿:* No Such Command In Database.`,
+*❌𝗘𝗿𝗿𝗼𝗿:* No Such Command In Database.Wait for it to be installed in near future.`,
                     footer: `⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔`,
                     buttons: [
                         {

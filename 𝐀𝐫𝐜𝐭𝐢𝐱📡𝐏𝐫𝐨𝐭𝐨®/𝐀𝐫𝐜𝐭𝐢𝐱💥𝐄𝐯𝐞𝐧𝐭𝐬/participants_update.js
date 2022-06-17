@@ -31,84 +31,35 @@ const Downloader = require(`nodejs-file-downloader`);
 const VOID = require(`../𝐀𝐫𝐜𝐭𝐢𝐱⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/void`);
 const TUF_1 = __importDefault(require("../\uD835\uDC00\uD835\uDC2B\uD835\uDC1C\uD835\uDC2D\uD835\uDC22\uD835\uDC31\u269C\uFE0F\uD835\uDC0A\uD835\uDC2B\uD835\uDC32\uD835\uDC28\uD835\uDC13\uD835\uDC1E\uD835\uDC24/TUF"));
 const ______1 = __importDefault(require("../\uD835\uDC00\uD835\uDC2B\uD835\uDC1C\uD835\uDC2D\uD835\uDC22\uD835\uDC31\uD83C\uDC04\uD835\uDC15\uD835\uDC1E\uD835\uDC27\uD835\uDC2D/\u029F\u1D00\u028F\u1D0F\u1D1C\u1D1B"));
+const chalk_1 = __importDefault(require("chalk"));
 /*
 ⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
 「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」                                                                            「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」
 ⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
 */
 const participants_update = (update, ӄ𝖗𝖞ӄ𝖓𝖟) => __awaiter(void 0, void 0, void 0, function* () {
+    const Latest___ = update.participants[0];
     let client = new TUF_1.default(ӄ𝖗𝖞ӄ𝖓𝖟);
+    console.clear();
     let 𝐏𝐩𝐢𝐜;
+    console.log(chalk_1.default.red(update));
     for (let i of update.participants) {
         try {
             𝐏𝐩𝐢𝐜 = yield ӄ𝖗𝖞ӄ𝖓𝖟.profilePictureUrl(i, "image");
         }
         catch (_a) {
-            𝐏𝐩𝐢𝐜 = "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Gold.png";
+            𝐏𝐩𝐢𝐜 = "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png";
         }
     }
-    const ALL_PARTICIPANTS = update.participants[0];
-    console.log(update);
+    const GroupMemData = yield ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata(update.id);
+    const GroupMemG = GroupMemData.participants.length;
+    const ᴘᴘᴡᴇʟᴄᴏᴍᴇ = Latest___.replace(/[^\d-]/g, "");
     /*
     ⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
     「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」                                                                            「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」
     ⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
     */
-    if (update.action == "add") {
-        // if (ALL_PARTICIPANTS.includes(ӄ𝖗𝖞ӄ𝖓𝖟.user.id)) {
-        // await client.sendMessage(
-        // update.id,
-        // {
-        // timestamp: Date(),
-        // image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Gold.png" },
-        // caption: `
-        // ╔⧉༻ 🧀 𝐃𝐞𝐟𝐚𝐮𝐥𝐭 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬! ꧂
-        // ║◇ *${ʟᴀʏᴏᴜᴛ.MuveOn}help:* _commands of Arctix!_
-        // ║◇ *${ʟᴀʏᴏᴜᴛ.MuveOn}support:* _official arctix groups!_
-        // ╚════════════╝`,
-        // footer: `⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔`,
-        // buttons: [
-        // {
-        // buttonId: `${ʟᴀʏᴏᴜᴛ.MuveOn}help`,
-        // buttonText: { displayText: `${ʟᴀʏᴏᴜᴛ.MuveOn}help` },
-        // type: 1,
-        // },
-        // {
-        // buttonId: `${ʟᴀʏᴏᴜᴛ.MuveOn}rules`,
-        // buttonText: { displayText: `${ʟᴀʏᴏᴜᴛ.MuveOn}rules` },
-        // type: 1,
-        // },
-        // ],
-        // headerType: 4,
-        // },
-        // MessageType.buttonsMessage
-        // );
-        // }
-        /*
-        ⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
-        「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」                                                                            「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」
-        ⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
-        */
-        const GroupMemData = yield ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata(update.id);
-        const ᴘᴘᴡᴇʟᴄᴏᴍᴇ = ALL_PARTICIPANTS.replace(/[^\d-]/g, "");
-        const GroupMemG = GroupMemData.participants.length;
-        try {
-            const downloader = yield new Downloader({
-                url: 𝐏𝐩𝐢𝐜,
-                directory: `./`,
-                fileName: `${update.id.toString()}${ᴘᴘᴡᴇʟᴄᴏᴍᴇ.toString()}.png`,
-                cloneFiles: false,
-            });
-            yield downloader.download();
-        }
-        catch (error) {
-            return console.log(error);
-        }
-        /*
-        ⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
-        「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」                                                                            「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」
-        ⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
-        */
+    if (update.action === "add") {
         yield Welcome.findOne({
             ID: update.id,
         }, (error, userWel) => __awaiter(void 0, void 0, void 0, function* () {
@@ -118,19 +69,17 @@ const participants_update = (update, ӄ𝖗𝖞ӄ𝖓𝖟) => __awaiter(void 0, 
                 return;
             yield client
                 .sendMessage(update.id, {
+                contextInfo: { mentionedJid: [Latest___, update.participants] },
                 timestamp: Date(),
-                image: { url: `./${update.id.toString()}${ᴘᴘᴡᴇʟᴄᴏᴍᴇ.toString()}.png` },
-                caption: `
-┌─「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢® 」
-├
-├•「 𝐖𝐞𝐥𝐜𝐨𝐦𝐞 」
+                image: { url: 𝐏𝐩𝐢𝐜 },
+                caption: `「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢® 」
+┌─「 𝐖𝐞𝐥𝐜𝐨𝐦𝐞 」
 ├• @${ᴘᴘᴡᴇʟᴄᴏᴍᴇ}
-├
-├
-├•「 𝐌𝐞𝐦𝐛𝐞𝐫 」
+└────────────◇
+┌─「 𝐌𝐞𝐦𝐛𝐞𝐫 」
 ├• ${GroupMemG}
-├
-├•「 𝐆𝐫𝐨𝐮𝐩 」
+└────────────◇
+┌─「 𝐆𝐫𝐨𝐮𝐩 」
 ├• ${GroupMemData.subject}
 └────────────◇
 
@@ -151,11 +100,10 @@ ${userWel.message}`,
                 ],
                 headerType: 4,
             }, message_type_1.MessageType.buttonsMessage)
-                .then(VOID.VOID(`./${update.id.toString()}${ᴘᴘᴡᴇʟᴄᴏᴍᴇ.toString()}.png`))
                 .catch((error) => console.log(error));
         }));
     }
-    else if (update.action == "remove") {
+    else if (update.action === "remove") {
         return;
     }
 });
