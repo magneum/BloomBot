@@ -32,8 +32,6 @@ Spotify_Id: process.env.Spotify_Id,
 Heroku_Api: process.env.Heroku_Api,
 Heroku_App: process.env.Heroku_App,
 Spotify_Client_Id: process.env.Spotify_Client_Id,
-STRING_SESSION:
-process.env.STRING_SESSION === undefined ? "" : process.env.STRING_SESSION,
 HEROKU: process.env.HEROKU,
 CCD: process.env.CCD,
 OCR: process.env.OCR,
