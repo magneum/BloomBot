@@ -24,8 +24,8 @@
 "𝐕𝐥𝐤𝐲𝐫𝐞": "python3 𝐕𝐥𝐤𝐲𝐫𝐞⚠️𝕿𝖊𝖒𝖕/☢𝕭𝖔𝖔𝖙.py"
 },
 "dependencies": {
-"@adiwajshing/baileys": "^4.1.0",
-"@adiwajshing/keyed-db": "^0.2.4",
+"@adiwajshing/baileys": "*",
+"@adiwajshing/keyed-db": "*",
 "@cicciosgamino/openweather-apis": "^5.0.1",
 "@distube/youtube-dl": "^2.2.4",
 "@ffmpeg-installer/ffmpeg": "^1.1.0",
