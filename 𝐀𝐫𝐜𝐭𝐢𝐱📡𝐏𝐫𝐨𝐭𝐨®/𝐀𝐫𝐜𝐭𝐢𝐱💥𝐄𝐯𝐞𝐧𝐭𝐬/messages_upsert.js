@@ -273,14 +273,14 @@ const messages_upsert = (update, ӄ𝖗𝖞ӄ𝖓𝖟, commandHandler, ӄ) => __
                 let MEMBER_B = [];
                 let MEMBER_C = [];
                 let MEMBER_D = [];
-                let MEMBER_E = [];
-                let MEMBER_F = [];
+                // let MEMBER_E = [];
+                // let MEMBER_F = [];
                 const MetaFor_A = yield ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363020792949649@g.us");
                 const MetaFor_B = yield ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363024871653603@g.us");
-                const MetaFor_C = yield ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363022161584857@g.us");
-                const MetaFor_D = yield ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363020792949649@g.us");
-                const MetaFor_E = yield ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363042762307739@g.us");
-                const MetaFor_F = yield ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363039223842047@g.us");
+                const MetaFor_C = yield ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363042762307739@g.us");
+                const MetaFor_D = yield ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363022161584857@g.us");
+                // const MetaFor_E = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363042762307739@g.us");
+                // const MetaFor_F = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363039223842047@g.us");
                 for (var i = 0; i < MetaFor_A.participants.length; i++)
                     MEMBER_A[i] = MetaFor_A.participants[i].id;
                 for (var i = 0; i < MetaFor_B.participants.length; i++)
@@ -289,10 +289,10 @@ const messages_upsert = (update, ӄ𝖗𝖞ӄ𝖓𝖟, commandHandler, ӄ) => __
                     MEMBER_C[i] = MetaFor_C.participants[i].id;
                 for (var i = 0; i < MetaFor_D.participants.length; i++)
                     MEMBER_D[i] = MetaFor_D.participants[i].id;
-                for (var i = 0; i < MetaFor_E.participants.length; i++)
-                    MEMBER_E[i] = MetaFor_E.participants[i].id;
-                for (var i = 0; i < MetaFor_F.participants.length; i++)
-                    MEMBER_F[i] = MetaFor_F.participants[i].id;
+                // for (var i = 0; i < MetaFor_E.participants.length; i++)
+                // MEMBER_E[i] = MetaFor_E.participants[i].id;
+                // for (var i = 0; i < MetaFor_F.participants.length; i++)
+                // MEMBER_F[i] = MetaFor_F.participants[i].id;
                 /*
                 ⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
                 「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」                                                                            「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」
@@ -304,9 +304,7 @@ const messages_upsert = (update, ӄ𝖗𝖞ӄ𝖓𝖟, commandHandler, ӄ) => __
                     if (!MEMBER_A.includes(AʀƈȶɨӼ.sender) &&
                         !MEMBER_B.includes(AʀƈȶɨӼ.sender) &&
                         !MEMBER_C.includes(AʀƈȶɨӼ.sender) &&
-                        !MEMBER_D.includes(AʀƈȶɨӼ.sender) &&
-                        !MEMBER_E.includes(AʀƈȶɨӼ.sender) &&
-                        !MEMBER_F.includes(AʀƈȶɨӼ.sender)) {
+                        !MEMBER_D.includes(AʀƈȶɨӼ.sender)) {
                         return Image_Button.VImg(TUF, Fox, AʀƈȶɨӼ, `
 ╔◇══════════════◇╗
 ┊ 🦊𝐕𝐞𝐫𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧🦊

@@ -207,7 +207,7 @@ if (newCommits.total != 0) {
 // quoted: Fox,
 // timestamp: Date(),
 // contextInfo: { mentionedJid: [AʀƈȶɨӼ.sender] },
-// image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Butter.png" },
+// image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png" },
 // caption: `「 Broadcast 」
 
 // ╔◇══════════════◇╗
@@ -350,7 +350,7 @@ AʀƈȶɨӼ,
 *⛩️𝗚roup B:* chat.whatsapp.com/BF6J4MiaduL7ZRgt2Tqzk8
 *⛩️𝗚roup C:* chat.whatsapp.com/Hx5VAZMfthg5okQwerohXM
 *⛩️𝗚roup D:* chat.whatsapp.com/EwPq86c1N5L4iZKxpHL6WP`,
-"./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Butter.png"
+"./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png"
 );
 }
 }

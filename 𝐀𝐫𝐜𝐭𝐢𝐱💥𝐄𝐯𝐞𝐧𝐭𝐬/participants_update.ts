@@ -35,61 +35,66 @@ try {
 }
 }
 const ALL_PARTICIPANTS = update.participants[0];
+console.log(update);
 /*
 ⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
 「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」                                                                            「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」
 ⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
 */
 if (update.action == "add") {
-if (ALL_PARTICIPANTS.includes(ӄ𝖗𝖞ӄ𝖓𝖟.user.id)) {
-await client.sendMessage(
-update.id,
-{
-timestamp: Date(),
-image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Gold.png" },
-caption: `
-╔⧉༻ 🧀 𝐃𝐞𝐟𝐚𝐮𝐥𝐭 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬! ꧂
-║◇ *${ʟᴀʏᴏᴜᴛ.MuveOn}help:* _commands of Arctix!_
-║◇ *${ʟᴀʏᴏᴜᴛ.MuveOn}support:* _official arctix groups!_
-╚════════════╝`,
-footer: `⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔`,
-buttons: [
-{
-buttonId: `${ʟᴀʏᴏᴜᴛ.MuveOn}help`,
-buttonText: { displayText: `${ʟᴀʏᴏᴜᴛ.MuveOn}help` },
-type: 1,
-},
-{
-buttonId: `${ʟᴀʏᴏᴜᴛ.MuveOn}rules`,
-buttonText: { displayText: `${ʟᴀʏᴏᴜᴛ.MuveOn}rules` },
-type: 1,
-},
-],
-headerType: 4,
-},
-MessageType.buttonsMessage
-);
+// if (ALL_PARTICIPANTS.includes(ӄ𝖗𝖞ӄ𝖓𝖟.user.id)) {
+// await client.sendMessage(
+// update.id,
+// {
+// timestamp: Date(),
+// image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Gold.png" },
+// caption: `
+// ╔⧉༻ 🧀 𝐃𝐞𝐟𝐚𝐮𝐥𝐭 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬! ꧂
+// ║◇ *${ʟᴀʏᴏᴜᴛ.MuveOn}help:* _commands of Arctix!_
+// ║◇ *${ʟᴀʏᴏᴜᴛ.MuveOn}support:* _official arctix groups!_
+// ╚════════════╝`,
+// footer: `⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔`,
+// buttons: [
+// {
+// buttonId: `${ʟᴀʏᴏᴜᴛ.MuveOn}help`,
+// buttonText: { displayText: `${ʟᴀʏᴏᴜᴛ.MuveOn}help` },
+// type: 1,
+// },
+// {
+// buttonId: `${ʟᴀʏᴏᴜᴛ.MuveOn}rules`,
+// buttonText: { displayText: `${ʟᴀʏᴏᴜᴛ.MuveOn}rules` },
+// type: 1,
+// },
+// ],
+// headerType: 4,
+// },
+// MessageType.buttonsMessage
+// );
+// }
+/*
+⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
+「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」                                                                            「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」
+⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
+*/
+const GroupMemData = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata(update.id);
+const ᴘᴘᴡᴇʟᴄᴏᴍᴇ = ALL_PARTICIPANTS.replace(/[^\d-]/g, "");
+const GroupMemG = GroupMemData.participants.length;
+try {
+const downloader = await new Downloader({
+url: 𝐏𝐩𝐢𝐜,
+directory: `./`,
+fileName: `${update.id}.png`,
+cloneFiles: false,
+});
+await downloader.download();
+} catch (error) {
+return console.log(error);
 }
 /*
 ⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
 「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」                                                                            「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」
 ⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
 */
-const GroupMemData = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata(update.jid);
-const ᴘᴘᴡᴇʟᴄᴏᴍᴇ = ALL_PARTICIPANTS.replace(/[^\d-]/g, "");
-const GroupMemG = GroupMemData.participants.length;
-const GroupMemBio = await ӄ𝖗𝖞ӄ𝖓𝖟.getStatus(
-update.participants[0],
-MessageType.text
-);
-const downloader = await new Downloader({
-url: 𝐏𝐩𝐢𝐜,
-directory: `./𝐀𝐫𝐜𝐭𝐢𝐱🐞𝐁𝐞𝐞𝐭𝐥𝐞`,
-fileName: `${Date.now().toString()}.png`,
-cloneFiles: false,
-});
-await downloader.download();
-
 await Welcome.findOne(
 {
 ID: update.id,
@@ -102,15 +107,13 @@ await client
 update.id,
 {
 timestamp: Date(),
-image: { url: `./𝐀𝐫𝐜𝐭𝐢𝐱🐞𝐁𝐞𝐞𝐭𝐥𝐞/${Date.now().toString()}.png` },
+image: { url: `./${update.id}.png` },
 caption: `
 ┌─「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢® 」
 ├
 ├•「 𝐖𝐞𝐥𝐜𝐨𝐦𝐞 」
 ├• @${ᴘᴘᴡᴇʟᴄᴏᴍᴇ}
 ├
-├•「 𝗕𝗶𝗼 」
-├• ${GroupMemBio.status}
 ├
 ├•「 𝐌𝐞𝐦𝐛𝐞𝐫 」
 ├• ${GroupMemG}
@@ -138,7 +141,7 @@ headerType: 4,
 },
 MessageType.buttonsMessage
 )
-.then(VOID.VOID(`./𝐀𝐫𝐜𝐭𝐢𝐱🐞𝐁𝐞𝐞𝐭𝐥𝐞/${Date.now().toString()}.png`))
+.then(VOID.VOID(`./${update.id}.png`))
 .catch((error: any) => console.log(error));
 }
 );
