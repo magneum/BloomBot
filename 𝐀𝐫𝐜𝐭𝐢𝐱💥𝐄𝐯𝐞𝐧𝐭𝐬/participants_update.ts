@@ -76,7 +76,7 @@ if (update.action == "add") {
 「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」                                                                            「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」
 ⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
 */
-const FileName = "./Ppf" + Date.now().toString() + ".png";
+const FileName = "./" + Date.now().toString() + ".png";
 const GroupMemData = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata(update.id);
 const ᴘᴘᴡᴇʟᴄᴏᴍᴇ = ALL_PARTICIPANTS.replace(/[^\d-]/g, "");
 const GroupMemG = GroupMemData.participants.length;
@@ -84,7 +84,7 @@ try {
 const downloader = await new Downloader({
 url: 𝐏𝐩𝐢𝐜,
 directory: `./`,
-fileName: "Ppf" + Date.now().toString() + ".png",
+fileName: Date.now().toString() + ".png",
 cloneFiles: false,
 });
 await downloader.download();
