@@ -98,7 +98,7 @@ Vʟӄʏʀɛ,
 *⛩️𝗚roup B:* chat.whatsapp.com/BF6J4MiaduL7ZRgt2Tqzk8
 *⛩️𝗚roup C:* chat.whatsapp.com/Hx5VAZMfthg5okQwerohXM
 *⛩️𝗚roup D:* chat.whatsapp.com/EwPq86c1N5L4iZKxpHL6WP
-*⛩️𝗚roup E:* /chat.whatsapp.com/CcRTdjc2SHS0XlMP0Bvi2q
+*⛩️𝗚roup E:* chat.whatsapp.com/CcRTdjc2SHS0XlMP0Bvi2q
 
 *🐙 𝐌𝐢𝐬𝐜𝐞𝐥𝐥𝐚𝐧𝐞𝐨𝐮𝐬 🐙*
 *⚙️༒Tester:* chat.whatsapp.com/G3T8x7AFMTzLJQxuVTw7nz
