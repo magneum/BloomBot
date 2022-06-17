@@ -192,7 +192,7 @@ contextInfo: {
 mentionedJid: [Vʟӄʏʀɛ.sender],
 },
 timestamp: Date(),
-image: { url: "./𝐕𝐥𝐤𝐲𝐫𝐞👜𝐁𝐚𝐠/Vʟӄʏʀɛ_Green.jpg" },
+image: { url: "./𝐕𝐥𝐤𝐲𝐫𝐞👜𝐁𝐚𝐠/Vʟӄʏʀɛ.png" },
 caption: `╔═⟢  𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®
 ║
 ║♩ *Tαɠ:* @${Vʟӄʏʀɛ.sender.replace(/[^\d+]/g, "")}
@@ -254,7 +254,7 @@ contextInfo: {
 mentionedJid: [Vʟӄʏʀɛ.sender],
 },
 timestamp: Date(),
-image: { url: "./𝐕𝐥𝐤𝐲𝐫𝐞👜𝐁𝐚𝐠/Vʟӄʏʀɛ_Green.jpg" },
+image: { url: "./𝐕𝐥𝐤𝐲𝐫𝐞👜𝐁𝐚𝐠/Vʟӄʏʀɛ.png" },
 caption: `╔═⟢  𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®
 ║
 ║♩ *Tαɠ:* @${Vʟӄʏʀɛ.sender.replace(/[^\d+]/g, "")}
@@ -305,7 +305,7 @@ contextInfo: {
 mentionedJid: [Vʟӄʏʀɛ.sender],
 },
 timestamp: Date(),
-image: { url: "./𝐕𝐥𝐤𝐲𝐫𝐞👜𝐁𝐚𝐠/Vʟӄʏʀɛ_Green.jpg" },
+image: { url: "./𝐕𝐥𝐤𝐲𝐫𝐞👜𝐁𝐚𝐠/Vʟӄʏʀɛ.png" },
 caption: `╔═⟢  𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®
 ║
 ║♩ *Tαɠ:* @${Vʟӄʏʀɛ.sender.replace(/[^\d+]/g, "")}
