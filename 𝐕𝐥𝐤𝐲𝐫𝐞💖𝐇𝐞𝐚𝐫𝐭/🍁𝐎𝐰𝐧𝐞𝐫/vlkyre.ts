@@ -62,7 +62,8 @@ return Image_Button.VImg(
 TUF,
 Fox,
 Vʟӄʏʀɛ,
-`
+`(𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬! 
+
 ┌─「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢® 」
 ├• *ɴᴀᴍᴇ:* ${Fox.pushName}
 ├• *ᴛᴀɢ:* @${Vʟӄʏʀɛ.sender.replace(/[^\d+]/g, "")}
@@ -80,7 +81,7 @@ Vʟӄʏʀɛ,
 *⚙️༒Tester:* chat.whatsapp.com/G3T8x7AFMTzLJQxuVTw7nz
 *🙏🏽‍༒Request:* chat.whatsapp.com/L5fEdIIMTBM5Hf8wYSm8in
 
-⚡ ⦓ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 𝐎𝐟𝐟𝐢𝐜𝐢𝐚𝐥 ⦔ ⚡`,
+_ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™_`,
 "./𝐕𝐥𝐤𝐲𝐫𝐞👜𝐁𝐚𝐠/Vʟӄʏʀɛ.png"
 );
 },
