@@ -47,7 +47,7 @@ if (update.action == "add") {
 // update.id,
 // {
 // timestamp: Date(),
-// image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Gold.png" },
+// image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png" },
 // caption: `
 // ╔⧉༻ 🧀 𝐃𝐞𝐟𝐚𝐮𝐥𝐭 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬! ꧂
 // ║◇ *${ʟᴀʏᴏᴜᴛ.MuveOn}help:* _commands of Arctix!_
