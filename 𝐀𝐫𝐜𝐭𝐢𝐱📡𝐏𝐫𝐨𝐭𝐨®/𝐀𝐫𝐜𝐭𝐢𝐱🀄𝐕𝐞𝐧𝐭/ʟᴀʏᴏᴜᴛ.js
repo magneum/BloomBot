@@ -16,25 +16,7 @@ if (fs_1.default.existsSync("AʀƈȶɨӼ.env")) {
 else {
     require("dotenv");
 }
-/*
-⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
-「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」                                                                            「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」
-⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
-*/
-const Log = (value) => {
-    var log = false;
-    if (typeof value === "string") {
-        if (value.toLowerCase() === "true") {
-            log = console.log;
-        }
-    }
-    return log;
-};
-/*
-⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
-「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」                                                                            「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」
-⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
-*/
+// ⦓═════════════════════════════════「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®」═════════════════════════════════⦔
 process.env.DATABASE_URL =
     process.env.DATABASE_URL === undefined
         ? "./AʀƈȶɨӼ.db"
@@ -62,16 +44,14 @@ const ʟᴀʏᴏᴜᴛ = {
         ? new sequelize_1.Sequelize({
             dialect: "sqlite",
             storage: process.env.DATABASE_URL,
-            logging: Log("false"),
         })
         : new sequelize_1.Sequelize(process.env.DATABASE_URL, {
             dialect: "postgres",
             protocol: "postgres",
-            logging: Log("false"),
             dialectOptions: { ssl: { require: true, rejectUnauthorized: false } },
         }),
-    PREFIX: "^[!]",
-    MuveOn: "!",
+    PREFIX: "^[/]",
+    MuveOn: "/",
 };
 exports.default = ʟᴀʏᴏᴜᴛ;
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;

@@ -78,7 +78,7 @@ module.exports = {
                     var Receiver = Fox.message.extendedTextMessage.contextInfo.participant;
                     var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
                     if (Receiver === ʟɴᴀᴍᴇ) {
-                        return Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `❌𝐃𝐞𝐧𝐢𝐞𝐝: _Can't rob yourself_`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png");
+                        return Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `❌𝐃𝐞𝐧𝐢𝐞𝐝: _Can't rob yourself_`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Green.png");
                     }
                     return yield Reply_1.default.VNrl(TUF, Fox, AʀƈȶɨӼ);
                 }

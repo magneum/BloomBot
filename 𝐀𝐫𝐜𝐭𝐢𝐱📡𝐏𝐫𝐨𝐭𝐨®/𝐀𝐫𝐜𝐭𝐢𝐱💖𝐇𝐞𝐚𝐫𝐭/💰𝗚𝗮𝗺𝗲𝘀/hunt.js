@@ -817,7 +817,7 @@ module.exports = {
                             .save()
                             .catch((error) => Oops_1.default.VOp(TUF, Fox, AʀƈȶɨӼ, error));
                         return yield Image_Button_1.default.VImg(TUF, Fox, AʀƈȶɨӼ, `⚠️𝐄𝐫𝐫𝐨𝐫: Addded To Database!
-💡𝐈𝐧𝐟𝐨: Try The Command Again!`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png");
+💡𝐈𝐧𝐟𝐨: Try The Command Again!`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Coffee.png");
                     }
                     /*
                     ⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
@@ -848,7 +848,7 @@ module.exports = {
 ┊ 𝐏𝐨𝐤𝐞𝐦𝐨𝐧🦋𝐇𝐮𝐧𝐭𝐢𝐧𝐠
 ┊ 𝐌𝐢𝐧𝐞𝐜𝐫𝐚𝐟𝐭 🪵 𝐄𝐝𝐢𝐭𝐢𝐨𝐧
 ╚◇══════════════◇╝
-❌𝗘𝗿𝗿𝗼𝗿: _You Are Very New! Better Luck Next Time!_`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png");
+❌𝗘𝗿𝗿𝗼𝗿: _You Are Very New! Better Luck Next Time!_`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Green.png");
                             1;
                         }
                         /*
@@ -882,7 +882,7 @@ module.exports = {
 ┊ 𝐌𝐢𝐧𝐞𝐜𝐫𝐚𝐟𝐭 🪵 𝐄𝐝𝐢𝐭𝐢𝐨𝐧
 ╚◇══════════════◇╝
 ❌𝗘𝗿𝗿𝗼𝗿: _You've recently went in a forest!_
-💡𝐈𝐧𝐟𝐨: Hunt againin  _${time.hours}h ${time.minutes}m ${time.seconds}s_`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png");
+💡𝐈𝐧𝐟𝐨: Hunt againin  _${time.hours}h ${time.minutes}m ${time.seconds}s_`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Green.png");
                         }
                         /*
                         ⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
@@ -901,7 +901,7 @@ module.exports = {
 ┊ 𝐌𝐢𝐧𝐞𝐜𝐫𝐚𝐟𝐭 🪵 𝐄𝐝𝐢𝐭𝐢𝐨𝐧
 ╚◇══════════════◇╝
 ⚠️𝗘𝗿𝗿𝗼𝗿: _Caught Nothing!_
-💡𝐈𝐧𝐟𝐨: Worth _0gold_`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png");
+💡𝐈𝐧𝐟𝐨: Worth _0gold_`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Green.png");
                                 yield userEco
                                     .save()
                                     .catch((error) => Oops_1.default.VOp(TUF, Fox, AʀƈȶɨӼ, error));
@@ -935,7 +935,7 @@ module.exports = {
 ┊ 𝐌𝐢𝐧𝐞𝐜𝐫𝐚𝐟𝐭 🪵 𝐄𝐝𝐢𝐭𝐢𝐨𝐧
 ╚◇══════════════◇╝
 ⚠️𝗘𝗿𝗿𝗼𝗿: _Caught Nothing!_
-💡𝐈𝐧𝐟𝐨: Worth _0gold_`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png");
+💡𝐈𝐧𝐟𝐨: Worth _0gold_`, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Green.png");
                                     yield userEco
                                         .save()
                                         .catch((error) => Oops_1.default.VOp(TUF, Fox, AʀƈȶɨӼ, error));
@@ -949,7 +949,7 @@ module.exports = {
                                 「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」                                                                            「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」
                                 ⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
                                 */
-                                yield Video_Button_1.default.VVid(TUF, Fox, AʀƈȶɨӼ, "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png", `
+                                yield Video_Button_1.default.VVid(TUF, Fox, AʀƈȶɨӼ, `./𝐀𝐫𝐜𝐭𝐢𝐱🐞𝐁𝐞𝐞𝐭𝐥𝐞/${Fox.key.id}.mp4`, `
 ╔◇══════════════◇╗
 ┊ 𝐏𝐨𝐤𝐞𝐦𝐨𝐧🦋𝐇𝐮𝐧𝐭𝐢𝐧𝐠
 ┊ 𝐌𝐢𝐧𝐞𝐜𝐫𝐚𝐟𝐭 🪵 𝐄𝐝𝐢𝐭𝐢𝐨𝐧

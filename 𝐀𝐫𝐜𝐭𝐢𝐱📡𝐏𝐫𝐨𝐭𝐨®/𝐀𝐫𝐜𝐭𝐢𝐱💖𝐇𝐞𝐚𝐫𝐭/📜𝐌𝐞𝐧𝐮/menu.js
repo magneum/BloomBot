@@ -51,7 +51,7 @@ module.exports = {
                 quoted: Fox,
                 timestamp: Date(),
                 contextInfo: { mentionedJid: [AʀƈȶɨӼ.sender] },
-                image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_White.jpg" },
+                image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_White.png" },
                 caption: `┌─「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐏𝐫𝐨𝐭𝐨® 」
 ├• *ɴᴀᴍᴇ:* ${Fox.pushName}
 ├• *ᴍᴇɴᴛɪᴏɴ:* @${AʀƈȶɨӼ.sender.replace(/[^\d+]/g, "")}
