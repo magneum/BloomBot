@@ -35,7 +35,7 @@ import Vʟӄʏʀɛ from "../../𝐕𝐥𝐤𝐲𝐫𝐞⚜️𝐊𝐫𝐲𝐨�
 import Client from "../../𝐕𝐥𝐤𝐲𝐫𝐞⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/TUF";
 import ʟᴀʏᴏᴜᴛ from "../../𝐕𝐥𝐤𝐲𝐫𝐞🀄𝐕𝐞𝐧𝐭/ʟᴀʏᴏᴜᴛ";
 import { proto } from "@adiwajshing/baileys";
-import Reply from "../../𝐀𝐫𝐜𝐭𝐢𝐜⛏️𝐂𝐚𝐯𝐞/Reply";
+import Reply from "../../𝐕𝐥𝐤𝐲𝐫𝐞⛏️𝐂𝐚𝐯𝐞/Reply";
 import Oops from "../../𝐕𝐥𝐤𝐲𝐫𝐞☘️𝐊𝐞𝐲𝐬/Oops";
 /*
 ⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
