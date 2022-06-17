@@ -86,7 +86,7 @@ TUF,
 Fox,
 Vʟӄʏʀɛ,
 `❌𝐃𝐞𝐧𝐢𝐞𝐝: _Can't rob yourself_`,
-"./𝐕𝐥𝐤𝐲𝐫𝐞👜𝐁𝐚𝐠/Vʟӄʏʀɛ_Green.png"
+"./𝐕𝐥𝐤𝐲𝐫𝐞👜𝐁𝐚𝐠/Vʟӄʏʀɛ.png"
 );
 }
 return await Reply.VNrl(TUF, Fox, Vʟӄʏʀɛ);
