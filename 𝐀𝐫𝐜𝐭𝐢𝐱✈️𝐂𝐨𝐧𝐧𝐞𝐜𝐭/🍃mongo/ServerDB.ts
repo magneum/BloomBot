@@ -6,7 +6,6 @@
 var mongoose = require("mongoose");
 var ServerDBSchema = new mongoose.Schema({
 ServerID: String,
-Service: String,
 });
 module.exports = mongoose.model("ServerDB", ServerDBSchema);
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
