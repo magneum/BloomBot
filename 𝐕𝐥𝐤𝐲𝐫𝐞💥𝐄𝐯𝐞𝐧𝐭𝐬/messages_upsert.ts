@@ -68,7 +68,7 @@ if (!userWel) {
 var newServer = new Welcome({
 ID: Vʟӄʏʀɛ.chatId,
 message: `⦓ ©𝐕𝐥𝐤𝐲𝐫𝐞 ༒ 𝐖𝐞𝐥𝐜𝐨𝐦𝐞𝐫 ⦔
-Hey there welcome to the group of Arctix Enabled chat.
+Hey there welcome to the group of Vlkyre Enabled chat.
 
 🌱𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝐔𝐬𝐞 𝐕𝐥𝐤𝐲𝐫𝐞👇🏽`,
 });
@@ -101,14 +101,14 @@ Vʟӄʏʀɛ.chatId,
 {
 timestamp: Date(),
 image: { url: "./𝐕𝐥𝐤𝐲𝐫𝐞👜𝐁𝐚𝐠/Vʟӄʏʀɛ_White.png" },
-caption: `👋🏻𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚, _To Admins Of This Group: Some Of Your Members Requested Our Arctix HQ to Add Our Bot In This Group.Have Fun!_
+caption: `👋🏻𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚, _To Admins Of This Group: Some Of Your Members Requested Our Vlkyre HQ to Add Our Bot In This Group.Have Fun!_
 
 ╔⧉༻ ⭕𝐅𝐨𝐫 𝐀𝐝𝐦𝐢𝐧𝐬 ꧂
 ║◇ *antilink:* _on/off_
 ║◇ *autorank:* _on/off_
 ╚◇╗
 ╔◇╝🧀 𝐃𝐞𝐟𝐚𝐮𝐥𝐭 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬! ꧂
-║◇ *${ʟᴀʏᴏᴜᴛ.MuveOn}help:* _commands of Arctix!_
+║◇ *${ʟᴀʏᴏᴜᴛ.MuveOn}help:* _commands of Vlkyre!_
 ║◇ *${ʟᴀʏᴏᴜᴛ.MuveOn}support:* _official arctix groups!_
 ╚════════════╝`,
 footer: `⦓ 𝐕𝐥𝐤𝐲𝐫𝐞 ⦔`,

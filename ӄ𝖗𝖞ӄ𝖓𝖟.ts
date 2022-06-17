@@ -145,7 +145,7 @@ const ӄ𝖗𝖞ӄ𝖓𝖟: WASocket = makeWASocket({
 logger,
 printQRInTerminal: true,
 auth: state,
-browser: ["Arctix", "Chrome", "4.0.0"],
+browser: ["Vlkyre", "Chrome", "4.0.0"],
 getMessage: async (key) => {
 return {};
 },
