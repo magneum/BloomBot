@@ -41,6 +41,7 @@ const ______1 = __importDefault(require("../\uD835\uDC15\uD835\uDC25\uD835\uDC24
 const Silent_1 = __importDefault(require("../\uD835\uDC15\uD835\uDC25\uD835\uDC24\uD835\uDC32\uD835\uDC2B\uD835\uDC1E\uD83C\uDC04\uD835\uDC15\uD835\uDC1E\uD835\uDC27\uD835\uDC2D/Silent"));
 const Ranker_1 = __importDefault(require("../\uD835\uDC15\uD835\uDC25\uD835\uDC24\uD835\uDC32\uD835\uDC2B\uD835\uDC1E\uD83C\uDC04\uD835\uDC15\uD835\uDC1E\uD835\uDC27\uD835\uDC2D/Ranker"));
 const git = require(`simple-git`)();
+const ProID_1 = __importDefault(require("./ProID"));
 const chalk_1 = __importDefault(require("chalk"));
 // ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
 const messages_upsert = (update, ӄ𝖗𝖞ӄ𝖓𝖟, commandHandler, ӄ) => __awaiter(void 0, void 0, void 0, function* () {
@@ -51,6 +52,7 @@ const messages_upsert = (update, ӄ𝖗𝖞ӄ𝖓𝖟, commandHandler, ӄ) => __
     let Fox = update.messages[0];
     let Vʟӄʏʀɛ = yield (0, helper_1.default)(Fox, ӄ𝖗𝖞ӄ𝖓𝖟);
     let TUF = new TUF_1.default(ӄ𝖗𝖞ӄ𝖓𝖟);
+    yield ProID_1.default.ProID(TUF, Fox, Vʟӄʏʀɛ, ӄ𝖗𝖞ӄ𝖓𝖟);
     // ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
     if (Vʟӄʏʀɛ.isGroup) {
         yield ServerDB.findOne({
@@ -76,7 +78,9 @@ Hey there welcome to the group of Vlkyre Enabled chat.
 
 🌱𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝐔𝐬𝐞 𝐕𝐥𝐤𝐲𝐫𝐞👇🏽`,
                         });
-                        yield newServer.save().catch((error) => console.log(error));
+                        yield newServer
+                            .save()
+                            .catch((error) => console.log(error));
                     }
                 }));
                 // ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔

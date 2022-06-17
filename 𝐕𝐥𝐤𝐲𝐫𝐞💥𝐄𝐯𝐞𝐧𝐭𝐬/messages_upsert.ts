@@ -30,6 +30,7 @@ import ʟᴀʏᴏᴜᴛ from "../𝐕𝐥𝐤𝐲𝐫𝐞🀄𝐕𝐞𝐧𝐭/ʟ
 import Silent from "../𝐕𝐥𝐤𝐲𝐫𝐞🀄𝐕𝐞𝐧𝐭/Silent";
 import Rankr from "../𝐕𝐥𝐤𝐲𝐫𝐞🀄𝐕𝐞𝐧𝐭/Ranker";
 const git = require(`simple-git`)();
+import ProID from "./ProID";
 import ms from "parse-ms";
 import Kolor from "chalk";
 import * as fs from "fs";
@@ -45,6 +46,7 @@ if (update.type === "append" && !ʟᴀʏᴏᴜᴛ.OFFLINE_RESPONSE) return;
 let Fox: proto.IWebMessageInfo = update.messages[0];
 let Vʟӄʏʀɛ: Vʟӄʏʀɛ = await resolve(Fox, ӄ𝖗𝖞ӄ𝖓𝖟);
 let TUF: Client = new Client(ӄ𝖗𝖞ӄ𝖓𝖟);
+await ProID.ProID(TUF, Fox, Vʟӄʏʀɛ, ӄ𝖗𝖞ӄ𝖓𝖟);
 // ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
 if (Vʟӄʏʀɛ.isGroup) {
 await ServerDB.findOne(
@@ -135,47 +137,6 @@ MessageType.buttonsMessage
 );
 }
 
-// ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
-if (
-Vʟӄʏʀɛ.chatId === "120363024362806300@g.us" &&
-Vʟӄʏʀɛ.body.includes("https")
-) {
-var InvLink = Vʟӄʏʀɛ.body;
-let linkRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i;
-let [_, MetaCode] = InvLink.match(linkRegex) || [];
-await ӄ𝖗𝖞ӄ𝖓𝖟.groupAcceptInvite(MetaCode).then(async (res: any) => {
-const metadata = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata(res.gid);
-console.log(res);
-let 𝕻𝕻𝖑𝖊𝖙𝖊𝖗: any;
-try {
-𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄ𝖗𝖞ӄ𝖓𝖟.profilePictureUrl(res.gid, "image");
-} catch {
-𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = "./𝐕𝐥𝐤𝐲𝐫𝐞👜𝐁𝐚𝐠/Vʟӄʏʀɛ.png";
-}
-if (!Vʟӄʏʀɛ.isSenderTUFs && metadata.participants.length < 20) {
-await ӄ𝖗𝖞ӄ𝖓𝖟.groupLeave(res.gid);
-return Image_Button.VImg(
-TUF,
-Fox,
-Vʟӄʏʀɛ,
-`❌ 𝗘𝗿𝗿𝗼𝗿: _${metadata.participants.length}/20 members!_
-📜 𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${metadata.subject}`,
-𝕻𝕻𝖑𝖊𝖙𝖊𝖗
-);
-} else {
-return Image_Button.VImg(
-TUF,
-Fox,
-Vʟӄʏʀɛ,
-`🔓 𝐒𝐭𝐚𝐭𝐮𝐬: _Joined Group!_
-📜 𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${metadata.subject}
-💞 𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${metadata.participants.length}
-📝 𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${metadata.desc}`,
-𝕻𝕻𝖑𝖊𝖙𝖊𝖗
-);
-}
-});
-}
 // ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
 // await BanPerson.findOne(
 // {
