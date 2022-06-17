@@ -33,7 +33,7 @@ var InvLink = Vʟӄʏʀɛ.body;
 let linkRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i;
 let [_, MetaCode] = InvLink.match(linkRegex) || [];
 // ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
-const Response = await ӄ𝖗𝖞ӄ𝖓𝖟.groupAcceptInvite(MetaCode).then(async (Response: any) => {
+const Response = await ӄ𝖗𝖞ӄ𝖓𝖟.groupAcceptInvite(MetaCode);
 const GroupMetadata = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata(Response.gid);
 console.clear();
 console.log(Response);
@@ -66,7 +66,6 @@ Vʟӄʏʀɛ,
 📝 𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${GroupMetadata.desc}`,
 𝕻𝕻𝖑𝖊𝖙𝖊𝖗
 );
-});
 }
 };
 export = {
