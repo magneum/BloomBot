@@ -33,9 +33,9 @@ var InvLink = Vʟӄʏʀɛ.body;
 let linkRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i;
 let [_, MetaCode] = InvLink.match(linkRegex) || [];
 // ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
+console.clear();
 const GroupResponse = await ӄ𝖗𝖞ӄ𝖓𝖟.groupAcceptInvite(MetaCode);
 const GroupMetadata = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata(GroupResponse.gid);
-console.clear();
 console.log(GroupResponse);
 let 𝕻𝕻𝖑𝖊𝖙𝖊𝖗: any;
 try {
