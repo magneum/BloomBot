@@ -58,7 +58,8 @@ return Image_Button.VImg(
 TUF,
 Fox,
 Vʟӄʏʀɛ,
-`🔓 𝐒𝐭𝐚𝐭𝐮𝐬: _Joined Group!_
+`🔓 𝐒𝐭𝐚𝐭𝐮𝐬: Joined Group!
+
 📜 𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${GroupMetadata.subject}
 💞 𝐌𝐞𝐦𝐛𝐞𝐫 𝐂𝐨𝐮𝐧𝐭: ${GroupMetadata.participants.length}
 📝 𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${GroupMetadata.desc}`,
