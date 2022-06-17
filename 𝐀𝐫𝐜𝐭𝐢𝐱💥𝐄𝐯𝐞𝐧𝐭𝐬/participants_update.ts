@@ -41,7 +41,7 @@ const Latest___ = update.participants[0];
 ⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
 */
 if (update.action == "add") {
-console.log(Latest___);
+console.log(update.participants);
 // if (Latest___.includes(ӄ𝖗𝖞ӄ𝖓𝖟.user.id)) {
 // await client.sendMessage(
 // update.id,
