@@ -33,19 +33,19 @@ var InvLink = Vʟӄʏʀɛ.body;
 let linkRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i;
 let [_, MetaCode] = InvLink.match(linkRegex) || [];
 // ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
-const Response = await ӄ𝖗𝖞ӄ𝖓𝖟.groupAcceptInvite(MetaCode);
-const GroupMetadata = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata(Response.gid);
+const GroupResponse = await ӄ𝖗𝖞ӄ𝖓𝖟.groupAcceptInvite(MetaCode);
+const GroupMetadata = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata(GroupResponse.gid);
 console.clear();
-console.log(Response);
+console.log(GroupResponse);
 let 𝕻𝕻𝖑𝖊𝖙𝖊𝖗: any;
 try {
-𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄ𝖗𝖞ӄ𝖓𝖟.profilePictureUrl(Response.gid, "image");
+𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄ𝖗𝖞ӄ𝖓𝖟.profilePictureUrl(GroupResponse.gid, "image");
 } catch {
 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = "./𝐕𝐥𝐤𝐲𝐫𝐞👜𝐁𝐚𝐠/Vʟӄʏʀɛ.png";
 }
 // ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
 if (GroupMetadata.participants.length < 20) {
-await ӄ𝖗𝖞ӄ𝖓𝖟.groupLeave(Response.gid);
+await ӄ𝖗𝖞ӄ𝖓𝖟.groupLeave(GroupResponse.gid);
 return await Image_Button.VImg(
 TUF,
 Fox,
