@@ -25,80 +25,80 @@ import ʟᴀʏᴏᴜᴛ from "../𝐀𝐫𝐜𝐭𝐢𝐱🀄𝐕𝐞𝐧𝐭/ʟ
 ⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
 */
 const participants_update = async (update: any, ӄ𝖗𝖞ӄ𝖓𝖟: any): Promise<void> => {
-let client: Client = new Client(ӄ𝖗𝖞ӄ𝖓𝖟);
-let 𝐏𝐩𝐢𝐜: any;
-for (let i of update.participants) {
-try {
-𝐏𝐩𝐢𝐜 = await ӄ𝖗𝖞ӄ𝖓𝖟.profilePictureUrl(i, "image");
-} catch {
-𝐏𝐩𝐢𝐜 = "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png";
-}
-}
-const Latest___ = update.participants[0];
-/*
+  let client: Client = new Client(ӄ𝖗𝖞ӄ𝖓𝖟);
+  let 𝐏𝐩𝐢𝐜: any;
+  for (let i of update.participants) {
+    try {
+      𝐏𝐩𝐢𝐜 = await ӄ𝖗𝖞ӄ𝖓𝖟.profilePictureUrl(i, "image");
+    } catch {
+      𝐏𝐩𝐢𝐜 = "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ.png";
+    }
+  }
+  const Latest___ = update.participants[0];
+  /*
 ⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
 「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」                                                                            「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」
 ⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
 */
-if (update.action == "add") {
-console.log(update.participants);
-// if (Latest___.includes(ӄ𝖗𝖞ӄ𝖓𝖟.user.id)) {
-// await client.sendMessage(
-// update.id,
-// {
-// timestamp: Date(),
-// image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Gold.png" },
-// caption: `
-// ╔⧉༻ 🧀 𝐃𝐞𝐟𝐚𝐮𝐥𝐭 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬! ꧂
-// ║◇ *${ʟᴀʏᴏᴜᴛ.MuveOn}help:* _commands of Arctix!_
-// ║◇ *${ʟᴀʏᴏᴜᴛ.MuveOn}support:* _official arctix groups!_
-// ╚════════════╝`,
-// footer: `⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔`,
-// buttons: [
-// {
-// buttonId: `${ʟᴀʏᴏᴜᴛ.MuveOn}help`,
-// buttonText: { displayText: `${ʟᴀʏᴏᴜᴛ.MuveOn}help` },
-// type: 1,
-// },
-// {
-// buttonId: `${ʟᴀʏᴏᴜᴛ.MuveOn}rules`,
-// buttonText: { displayText: `${ʟᴀʏᴏᴜᴛ.MuveOn}rules` },
-// type: 1,
-// },
-// ],
-// headerType: 4,
-// },
-// MessageType.buttonsMessage
-// );
-// }
-/*
+  if (update.action == "add") {
+    console.log(update.participants);
+    // if (Latest___.includes(ӄ𝖗𝖞ӄ𝖓𝖟.user.id)) {
+    // await client.sendMessage(
+    // update.id,
+    // {
+    // timestamp: Date(),
+    // image: { url: "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Gold.png" },
+    // caption: `
+    // ╔⧉༻ 🧀 𝐃𝐞𝐟𝐚𝐮𝐥𝐭 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬! ꧂
+    // ║◇ *${ʟᴀʏᴏᴜᴛ.MuveOn}help:* _commands of Arctix!_
+    // ║◇ *${ʟᴀʏᴏᴜᴛ.MuveOn}support:* _official arctix groups!_
+    // ╚════════════╝`,
+    // footer: `⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔`,
+    // buttons: [
+    // {
+    // buttonId: `${ʟᴀʏᴏᴜᴛ.MuveOn}help`,
+    // buttonText: { displayText: `${ʟᴀʏᴏᴜᴛ.MuveOn}help` },
+    // type: 1,
+    // },
+    // {
+    // buttonId: `${ʟᴀʏᴏᴜᴛ.MuveOn}rules`,
+    // buttonText: { displayText: `${ʟᴀʏᴏᴜᴛ.MuveOn}rules` },
+    // type: 1,
+    // },
+    // ],
+    // headerType: 4,
+    // },
+    // MessageType.buttonsMessage
+    // );
+    // }
+    /*
 ⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
 「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」                                                                            「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」
 ⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
 */
-const GroupMemData = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata(update.id);
-const ᴘᴘᴡᴇʟᴄᴏᴍᴇ = Latest___.replace(/[^\d-]/g, "");
-const GroupMemG = GroupMemData.participants.length;
-/*
+    const GroupMemData = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata(update.id);
+    const ᴘᴘᴡᴇʟᴄᴏᴍᴇ = Latest___.replace(/[^\d-]/g, "");
+    const GroupMemG = GroupMemData.participants.length;
+    /*
 ⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
 「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」                                                                            「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」
 ⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
 */
-await Welcome.findOne(
-{
-ID: update.id,
-},
-async (error: any, userWel: any) => {
-if (error) console.log(error);
-if (!userWel) return;
-await client
-.sendMessage(
-update.id,
-{
-contextInfo: { mentionedJid: [Latest___] },
-timestamp: Date(),
-image: { url: 𝐏𝐩𝐢𝐜 },
-caption: `「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢® 」
+    await Welcome.findOne(
+      {
+        ID: update.id,
+      },
+      async (error: any, userWel: any) => {
+        if (error) console.log(error);
+        if (!userWel) return;
+        await client
+          .sendMessage(
+            update.id,
+            {
+              contextInfo: { mentionedJid: [Latest___] },
+              timestamp: Date(),
+              image: { url: 𝐏𝐩𝐢𝐜 },
+              caption: `「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢® 」
 ┌─「 𝐖𝐞𝐥𝐜𝐨𝐦𝐞 」
 ├• @${ᴘᴘᴡᴇʟᴄᴏᴍᴇ}
 └────────────◇
@@ -111,32 +111,32 @@ caption: `「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢® 」
 
 
 ${userWel.message}`,
-footer: `⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔`,
-buttons: [
-{
-buttonId: `${ʟᴀʏᴏᴜᴛ.MuveOn}help`,
-buttonText: { displayText: `${ʟᴀʏᴏᴜᴛ.MuveOn}help` },
-type: 1,
-},
-{
-buttonId: `${ʟᴀʏᴏᴜᴛ.MuveOn}rules`,
-buttonText: { displayText: `${ʟᴀʏᴏᴜᴛ.MuveOn}rules` },
-type: 1,
-},
-],
-headerType: 4,
-},
-MessageType.buttonsMessage
-)
-.catch((error: any) => console.log(error));
-}
-);
-} else if (update.action == "remove") {
-return;
-}
+              footer: `⦓ 𝐀𝐫𝐜𝐭𝐢𝐱 ⦔`,
+              buttons: [
+                {
+                  buttonId: `${ʟᴀʏᴏᴜᴛ.MuveOn}help`,
+                  buttonText: { displayText: `${ʟᴀʏᴏᴜᴛ.MuveOn}help` },
+                  type: 1,
+                },
+                {
+                  buttonId: `${ʟᴀʏᴏᴜᴛ.MuveOn}rules`,
+                  buttonText: { displayText: `${ʟᴀʏᴏᴜᴛ.MuveOn}rules` },
+                  type: 1,
+                },
+              ],
+              headerType: 4,
+            },
+            MessageType.buttonsMessage
+          )
+          .catch((error: any) => console.log(error));
+      }
+    );
+  } else if (update.action == "remove") {
+    return;
+  }
 };
 export = {
-participants_update: participants_update,
+  participants_update: participants_update,
 };
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 /* 
