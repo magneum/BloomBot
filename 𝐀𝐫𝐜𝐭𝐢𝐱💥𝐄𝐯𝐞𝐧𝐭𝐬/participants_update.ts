@@ -95,7 +95,7 @@ await client
 .sendMessage(
 update.id,
 {
-contextInfo: { mentionedJid: [Latest___] },
+contextInfo: { mentionedJid: [Latest___, ] },
 timestamp: Date(),
 image: { url: 𝐏𝐩𝐢𝐜 },
 caption: `「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢® 」
