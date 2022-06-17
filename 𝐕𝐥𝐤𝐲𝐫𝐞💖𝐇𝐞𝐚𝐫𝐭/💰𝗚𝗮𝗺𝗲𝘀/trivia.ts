@@ -75,7 +75,7 @@ Vʟӄʏʀɛ,
 ❓𝗤𝘂𝗲𝘀𝘁𝗶𝗼𝗻: ${questions.results[0].question}
 💡𝗗𝗶𝗳𝗳𝗶𝗰𝘂𝗹𝘁𝘆: ${questions.results[0].difficulty}
 🪔𝗔𝗻𝘀𝘄𝗲𝗿: ${questions.results[0].correct_answer}`,
-"./𝐕𝐥𝐤𝐲𝐫𝐞👜𝐁𝐚𝐠/Vʟӄʏʀɛ_Green.png"
+"./𝐕𝐥𝐤𝐲𝐫𝐞👜𝐁𝐚𝐠/Vʟӄʏʀɛ.png"
 );
 });
 /*
@@ -97,7 +97,7 @@ Vʟӄʏʀɛ,
 ❓𝗤𝘂𝗲𝘀𝘁𝗶𝗼𝗻: ${questions.results[0].question}
 💡𝗗𝗶𝗳𝗳𝗶𝗰𝘂𝗹𝘁𝘆: ${questions.results[0].difficulty}
 🪔𝗔𝗻𝘀𝘄𝗲𝗿: ${questions.results[0].correct_answer}`,
-"./𝐕𝐥𝐤𝐲𝐫𝐞👜𝐁𝐚𝐠/Vʟӄʏʀɛ_Green.png"
+"./𝐕𝐥𝐤𝐲𝐫𝐞👜𝐁𝐚𝐠/Vʟӄʏʀɛ.png"
 );
 });
 /*
@@ -119,7 +119,7 @@ Vʟӄʏʀɛ,
 ❓𝗤𝘂𝗲𝘀𝘁𝗶𝗼𝗻: ${questions.results[0].question}
 💡𝗗𝗶𝗳𝗳𝗶𝗰𝘂𝗹𝘁𝘆: ${questions.results[0].difficulty}
 🪔𝗔𝗻𝘀𝘄𝗲𝗿: ${questions.results[0].correct_answer}`,
-"./𝐕𝐥𝐤𝐲𝐫𝐞👜𝐁𝐚𝐠/Vʟӄʏʀɛ_Green.png"
+"./𝐕𝐥𝐤𝐲𝐫𝐞👜𝐁𝐚𝐠/Vʟӄʏʀɛ.png"
 );
 });
 /*
