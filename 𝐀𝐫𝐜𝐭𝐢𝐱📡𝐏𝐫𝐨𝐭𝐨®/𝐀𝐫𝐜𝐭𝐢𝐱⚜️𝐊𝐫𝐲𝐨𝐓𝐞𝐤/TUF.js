@@ -28,7 +28,6 @@ class Client {
                 ops = {
                     text: content,
                 };
-                console.log(options);
                 if ((_a = options === null || options === void 0 ? void 0 : options.contextInfo) === null || _a === void 0 ? void 0 : _a.mentionedJid) {
                     ops.mentions = options.contextInfo.mentionedJid;
                 }
@@ -55,7 +54,6 @@ class Client {
                 if ((_b = options === null || options === void 0 ? void 0 : options.contextInfo) === null || _b === void 0 ? void 0 : _b.mentionedJid) {
                     ops.mentions = options.contextInfo.mentionedJid;
                 }
-                console.log(options);
                 res = yield this.ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(jid, ops);
             }
             else if (type == message_type_1.MessageType.audio) {
@@ -68,7 +66,6 @@ class Client {
                 ops = {
                     text: content,
                 };
-                console.log(options);
                 if ((_c = options === null || options === void 0 ? void 0 : options.contextInfo) === null || _c === void 0 ? void 0 : _c.mentionedJid) {
                     ops.mentions = options.contextInfo.mentionedJid;
                 }
@@ -81,7 +78,6 @@ class Client {
                 if (options === null || options === void 0 ? void 0 : options.caption) {
                     ops.caption = options.caption;
                 }
-                console.log(options);
                 res = yield this.ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(jid, ops);
             }
             else if (type === message_type_1.MessageType.document) {
@@ -95,7 +91,6 @@ class Client {
                     ops2.mimetype = options.mimetype;
                     ops2.fileName = options.filename;
                 }
-                console.log(options);
                 yield this.ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(jid, ops);
                 res = yield this.ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(jid, ops2);
             }

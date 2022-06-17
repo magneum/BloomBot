@@ -17,6 +17,16 @@ else {
     require("dotenv");
 }
 // ⦓═════════════════════════════════「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®」═════════════════════════════════⦔
+const Log = (value) => {
+    var log = false;
+    if (typeof value === "string") {
+        if (value.toLowerCase() === "true") {
+            log = console.log;
+        }
+    }
+    return log;
+};
+// ⦓═════════════════════════════════「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®」═════════════════════════════════⦔
 process.env.DATABASE_URL =
     process.env.DATABASE_URL === undefined
         ? "./AʀƈȶɨӼ.db"
@@ -28,7 +38,6 @@ const ʟᴀʏᴏᴜᴛ = {
     Heroku_Api: process.env.Heroku_Api,
     Heroku_App: process.env.Heroku_App,
     Spotify_Client_Id: process.env.Spotify_Client_Id,
-    STRING_SESSION: process.env.STRING_SESSION === undefined ? "" : process.env.STRING_SESSION,
     HEROKU: process.env.HEROKU,
     CCD: process.env.CCD,
     OCR: process.env.OCR,
@@ -44,10 +53,12 @@ const ʟᴀʏᴏᴜᴛ = {
         ? new sequelize_1.Sequelize({
             dialect: "sqlite",
             storage: process.env.DATABASE_URL,
+            logging: Log("false"),
         })
         : new sequelize_1.Sequelize(process.env.DATABASE_URL, {
             dialect: "postgres",
             protocol: "postgres",
+            logging: Log("false"),
             dialectOptions: { ssl: { require: true, rejectUnauthorized: false } },
         }),
     PREFIX: "^[/]",

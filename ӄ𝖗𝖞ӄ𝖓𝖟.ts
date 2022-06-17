@@ -41,15 +41,13 @@ const Bagde = require(`./𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜�
 const Halt = require(`./𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/halt`);
 // ⦓═════════════════════════════════「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®」═════════════════════════════════⦔
 const sequelize: Sequelize = ʟᴀʏᴏᴜᴛ.DATABASE;
-const logger: Logger = Pot({
-timestamp: () => `,"Time":"${new Date().toJSON()}"`,
-}).child({});
+const logger: Logger = Pot().child({});
 logger.level = "error";
 var ӄ = makeInMemoryStore({ logger });
 ӄ?.readFromFile("./AʀƈȶɨӼ.json");
 setInterval(() => {
 ӄ?.writeToFile("./AʀƈȶɨӼ.json");
-}, 10_000);
+}, 1000);
 // Zygote.findOne(
 // {
 // ID: ӄ,
@@ -126,10 +124,10 @@ for (const File of AllFiles) {
 const command = require(`./𝐀𝐫𝐜𝐭𝐢𝐱💖𝐇𝐞𝐚𝐫𝐭/${Files}/${File}`);
 try {
 commandHandler.set(command.name, command);
-console.log(
-Kolor.green(Files + ":   ") +
-Kolor.blue(File.toLocaleUpperCase() + " ✔️")
-);
+// console.log(
+// Kolor.green(Files + ":   ") +
+// Kolor.blue(File.toLocaleUpperCase() + " ✔️")
+// );
 } catch (error) {
 console.log(
 Kolor.red("❌𝐄𝐫𝐫𝐨𝐫: " + error + " | ") +
@@ -142,7 +140,6 @@ continue;
 }
 // ⦓═════════════════════════════════「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®」═════════════════════════════════⦔
 const { state, saveCreds } = await useRemoteFileAuthState(logger);
-let ProTo: boolean = true;
 const startSock = async () => {
 const ӄ𝖗𝖞ӄ𝖓𝖟: WASocket = makeWASocket({
 logger,
@@ -175,7 +172,7 @@ saveCreds(creds);
 return ӄ𝖗𝖞ӄ𝖓𝖟;
 };
 startSock();
-})().catch((error) => console.log("[MAINERROR] : %s", Kolor.red(error)));
+})().catch((error) => console.log(Kolor.red(error)));
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 /* 
 (𝐜)𝐀𝐫𝐜𝐭𝐢𝐱 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬! 

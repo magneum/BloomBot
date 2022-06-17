@@ -72,9 +72,7 @@ const Bagde = require(`./𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜�
 const Halt = require(`./𝐀𝐫𝐜𝐭𝐢𝐱✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/halt`);
 // ⦓═════════════════════════════════「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®」═════════════════════════════════⦔
 const sequelize = ______1.default.DATABASE;
-const logger = (0, pino_1.default)({
-    timestamp: () => `,"Time":"${new Date().toJSON()}"`,
-}).child({});
+const logger = (0, pino_1.default)().child({});
 logger.level = "error";
 var ӄ = (0, baileys_1.makeInMemoryStore)({ logger });
 ӄ === null || ӄ === void 0 ? void 0 : ӄ.readFromFile("./AʀƈȶɨӼ.json");
@@ -155,8 +153,10 @@ setInterval(() => {
             const command = require(`./𝐀𝐫𝐜𝐭𝐢𝐱💖𝐇𝐞𝐚𝐫𝐭/${Files}/${File}`);
             try {
                 commandHandler.set(command.name, command);
-                console.log(chalk_1.default.green(Files + ":   ") +
-                    chalk_1.default.blue(File.toLocaleUpperCase() + " ✔️"));
+                // console.log(
+                // Kolor.green(Files + ":   ") +
+                // Kolor.blue(File.toLocaleUpperCase() + " ✔️")
+                // );
             }
             catch (error) {
                 console.log(chalk_1.default.red("❌𝐄𝐫𝐫𝐨𝐫: " + error + " | ") +
@@ -168,7 +168,6 @@ setInterval(() => {
     }
     // ⦓═════════════════════════════════「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®」═════════════════════════════════⦔
     const { state, saveCreds } = yield (0, dbAuth_1.default)(logger);
-    let ProTo = true;
     const startSock = () => __awaiter(void 0, void 0, void 0, function* () {
         const ӄ𝖗𝖞ӄ𝖓𝖟 = (0, baileys_1.default)({
             logger,
@@ -196,7 +195,7 @@ setInterval(() => {
         return ӄ𝖗𝖞ӄ𝖓𝖟;
     });
     startSock();
-}))().catch((error) => console.log("[MAINERROR] : %s", chalk_1.default.red(error)));
+}))().catch((error) => console.log(chalk_1.default.red(error)));
 `|⬡════════════════════════════════════════════|❝ Ⓒ𝐀𝐫𝐜𝐭𝐢𝐱 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|`;
 /*
 (𝐜)𝐀𝐫𝐜𝐭𝐢𝐱 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
