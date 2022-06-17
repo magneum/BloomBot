@@ -76,20 +76,14 @@ if (update.action == "add") {
 「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」                                                                            「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」
 ⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
 */
-const FileName = "./" + Date.now() + ".png";
 const GroupMemData = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata(update.id);
 const ᴘᴘᴡᴇʟᴄᴏᴍᴇ = ALL_PARTICIPANTS.replace(/[^\d-]/g, "");
 const GroupMemG = GroupMemData.participants.length;
+let 𝕻𝕻𝖑𝖊𝖙𝖊𝖗: string;
 try {
-const downloader = await new Downloader({
-url: 𝐏𝐩𝐢𝐜,
-directory: `./`,
-fileName: Date.now() + ".png",
-cloneFiles: false,
-});
-await downloader.download();
-} catch (error) {
-return console.log(error);
+𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄ𝖗𝖞ӄ𝖓𝖟.profilePictureUrl(update.participants[0], "image");
+} catch {
+𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = "./𝐀𝐫𝐜𝐭𝐢𝐱👜𝐁𝐚𝐠/AʀƈȶɨӼ_Sky.jpg";
 }
 /*
 ⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
@@ -108,7 +102,7 @@ await client
 update.id,
 {
 timestamp: Date(),
-image: FileName,
+image: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗,
 caption: `
 ┌─「 𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢® 」
 ├
@@ -142,7 +136,6 @@ headerType: 4,
 },
 MessageType.buttonsMessage
 )
-.then(VOID.VOID(FileName))
 .catch((error: any) => console.log(error));
 }
 );
