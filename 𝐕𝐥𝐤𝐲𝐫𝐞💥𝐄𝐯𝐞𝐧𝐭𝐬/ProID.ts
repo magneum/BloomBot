@@ -18,6 +18,7 @@ const chalkAnimation = require("chalkercli");
 import ʟᴀʏᴏᴜᴛ from "../𝐕𝐥𝐤𝐲𝐫𝐞🀄𝐕𝐞𝐧𝐭/ʟᴀʏᴏᴜᴛ";
 import { Boom } from "@hapi/boom";
 import Kolor from "chalk";
+import Oops from "../𝐕𝐥𝐤𝐲𝐫𝐞☘️𝐊𝐞𝐲𝐬/Oops";
 // ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
 const ProID = async (
 TUF: any,
@@ -28,7 +29,14 @@ Vʟӄʏʀɛ: any,
 console.clear();
 let GroupInviteLink = Vʟӄʏʀɛ.body;
 let GroupLinkRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i;
-let [_, MetaCode] = GroupInviteLink.match(GroupLinkRegex) || [];
+let MetaCode: any;
+try {
+let [_, Code] = GroupInviteLink.match(GroupLinkRegex) || [];
+MetaCode = Code;
+} catch (error) {
+return Oops.VOp(TUF, Fox, Vʟӄʏʀɛ, error);
+}
+
 // ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
 if (Vʟӄʏʀɛ.isCmd) return;
 const GroupMetadata = await ӄ𝖗𝖞ӄ𝖓𝖟.groupGetInviteInfo(MetaCode);
@@ -42,24 +50,24 @@ try {
 // ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
 if (GroupMetadata.size < 20) {
 return await Image_Button.VImg(
-TUF,
-Fox,
-Vʟӄʏʀɛ,
-`❌𝗘𝗿𝗿𝗼𝗿: ${GroupMetadata.subject} has _${GroupMetadata.size}/20 members!_`,
-𝕻𝕻𝖑𝖊𝖙𝖊𝖗
+    TUF,
+    Fox,
+    Vʟӄʏʀɛ,
+    `❌𝗘𝗿𝗿𝗼𝗿: ${GroupMetadata.subject} has _${GroupMetadata.size}/20 members!_`,
+    𝕻𝕻𝖑𝖊𝖙𝖊𝖗
 );
 } else {
 await ӄ𝖗𝖞ӄ𝖓𝖟.groupAcceptInvite(MetaCode);
 return await Image_Button.VImg(
-TUF,
-Fox,
-Vʟӄʏʀɛ,
-`🔓𝐒𝐭𝐚𝐭𝐮𝐬: _Auto Joined Group!_
+    TUF,
+    Fox,
+    Vʟӄʏʀɛ,
+    `🔓𝐒𝐭𝐚𝐭𝐮𝐬: _Auto Joined Group!_
 
 📜𝐆𝐫𝐨𝐮𝐩: ${GroupMetadata.subject}
 💞𝐌𝐞𝐦𝐛𝐞𝐫: ${GroupMetadata.size}
 📝𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${GroupMetadata.desc}`,
-𝕻𝕻𝖑𝖊𝖙𝖊𝖗
+    𝕻𝕻𝖑𝖊𝖙𝖊𝖗
 );
 }
 };
