@@ -64,7 +64,7 @@ ServerID: AʀƈȶɨӼ.chatId,
 async (error: any, Server: any) => {
 if (error) console.log(error);
 if (!Server) {
-var newServer = new Economy({
+var newServer = new ServerDB({
 ServerDB: AʀƈȶɨӼ.chatId,
 });
 await newServer.save();
@@ -98,7 +98,7 @@ await newServer
 「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」                                                                            「   𝐀𝐫𝐜𝐭𝐢𝐱 𝐀𝐩𝐢®   」
 ⦓════════════════════════════════════════════| ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════⦔
 */
-await TUF.sendMessage(
+return await TUF.sendMessage(
 AʀƈȶɨӼ.chatId,
 {
 quotedMessage: {
