@@ -53,6 +53,7 @@ const mongoose_1 = __importDefault(require("mongoose"));
 const pino_1 = __importDefault(require("pino"));
 const moment_timezone_1 = __importDefault(require("moment-timezone"));
 const ______1 = __importDefault(require("./\uD835\uDC15\uD835\uDC25\uD835\uDC24\uD835\uDC32\uD835\uDC2B\uD835\uDC1E\uD83C\uDC04\uD835\uDC15\uD835\uDC1E\uD835\uDC27\uD835\uDC2D/\u029F\u1D00\u028F\u1D0F\u1D1C\u1D1B"));
+const types_1 = require("sequelize/types");
 const sequelize = ______1.default.DATABASE;
 const dbAuth_1 = __importDefault(require("./\uD835\uDC15\uD835\uDC25\uD835\uDC24\uD835\uDC32\uD835\uDC2B\uD835\uDC1E\u269C\uFE0F\uD835\uDC0A\uD835\uDC2B\uD835\uDC32\uD835\uDC28\uD835\uDC13\uD835\uDC1E\uD835\uDC24/dbAuth"));
 const messages_upsert_1 = __importDefault(require("./\uD835\uDC15\uD835\uDC25\uD835\uDC24\uD835\uDC32\uD835\uDC2B\uD835\uDC1E\uD83D\uDCA5\uD835\uDC04\uD835\uDC2F\uD835\uDC1E\uD835\uDC27\uD835\uDC2D\uD835\uDC2C/messages_upsert"));
@@ -71,6 +72,7 @@ setInterval(() => {
 // ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
 (() => __awaiter(void 0, void 0, void 0, function* () {
     try {
+        new types_1.Sequelize("inkcyclopedia", null, null, {});
         yield sequelize.authenticate();
         yield sequelize.sync();
     }
