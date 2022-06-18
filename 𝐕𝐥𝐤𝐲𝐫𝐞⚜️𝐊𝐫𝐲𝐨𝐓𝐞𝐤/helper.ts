@@ -13,12 +13,13 @@ currentMsg: proto.IWebMessageInfo,
 TUF: WASocket
 ) {
 var Vʟӄʏʀɛ: VʟӄʏʀɛClass = new VʟӄʏʀɛClass();
-var prefix: any = ʟᴀʏᴏᴜᴛ.MuveOn;
+var prefix: string = ʟᴀʏᴏᴜᴛ.MuveOn + '\\w+'
+var prefixRegex: RegExp = new RegExp(prefix, 'g');
 var MODstring: any = ʟᴀʏᴏᴜᴛ.MOD;
 try {
-var jsonMessage: any = JSON.stringify(currentMsg);
+    var jsonMessage: any = JSON.stringify(currentMsg);
 } catch (err) {
-console.log(chalk.redBright("[ERROR] Something went wrong. ", err));
+    console.log(chalk.redBright("[ERROR] Something went wrong. ", err));
 }
 // ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
 Vʟӄʏʀɛ.sName = currentMsg.pushName;
@@ -70,7 +71,6 @@ Vʟӄʏʀɛ.mimeType === "conversation"
 : Vʟӄʏʀɛ.mimeType == "buttonsResponseMessage"
 ? currentMsg.message?.buttonsResponseMessage.selectedDisplayText
 : null;
-Vʟӄʏʀɛ.isARC = Vʟӄʏʀɛ.body.startsWith(prefix);
 Vʟӄʏʀɛ.commandName = Vʟӄʏʀɛ.isARC
 ? Vʟӄʏʀɛ.body.slice(1).trim().split(/ +/).shift().toLowerCase()
 : null;
@@ -110,6 +110,7 @@ Vʟӄʏʀɛ.isReplyAudio = currentMsg.message?.extendedTextMessage?.contextInfo
 Vʟӄʏʀɛ.logGroup = TUF.user.id.replace(/:.*@/g, "@");
 Vʟӄʏʀɛ.isGroup = Vʟӄʏʀɛ.chatId.endsWith("@g.us");
 Vʟӄʏʀɛ.isPm = !Vʟӄʏʀɛ.isGroup;
+Vʟӄʏʀɛ.isARC = prefixRegex.test(Vʟӄʏʀɛ.body);
 Vʟӄʏʀɛ.sender =
 Vʟӄʏʀɛ.isGroup && currentMsg.message && Vʟӄʏʀɛ.fromMe
 ? Vʟӄʏʀɛ.owner

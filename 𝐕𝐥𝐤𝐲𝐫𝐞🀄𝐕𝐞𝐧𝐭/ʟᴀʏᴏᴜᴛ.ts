@@ -57,6 +57,7 @@ protocol: "postgres",
 logging: Log("false"),
 dialectOptions: { ssl: { require: true, rejectUnauthorized: false } },
 }),
+PREFIX: "^[/]",
 MuveOn: "/",
 };
 export default ʟᴀʏᴏᴜᴛ;
