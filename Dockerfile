@@ -29,7 +29,6 @@ RUN git clone https://github.com/KryKnz/Vlkyre.git && cd Vlkyre
 WORKDIR /Vlkyre
 RUN export TERM=xterm
 RUN yarn install --force rm yarn-lock.json && pip install -r ⭕𝖈𝖆𝖗𝖆.txt && npm install -g spotify-dl spdl-core
-# RUN pip install -r ⭕𝖈𝖆𝖗𝖆.txt && npm install --force --save && rm package-lock.json && npm install -g spotify-dl spdl-core
 RUN git config --global user.name 'KryKnz' && git config --global user.email 'krakinzkon@gmail.com' && git config pull.rebase false && git init --initial-branch=𝐕𝐥𝐤𝐲𝐫𝐞📡𝐏𝐫𝐨𝐭𝐨® && git fetch origin 𝐕𝐥𝐤𝐲𝐫𝐞📡𝐏𝐫𝐨𝐭𝐨® && git reset --hard origin/𝐕𝐥𝐤𝐲𝐫𝐞📡𝐏𝐫𝐨𝐭𝐨® 
 CMD python3 ⭕𝖈𝖆𝖗𝖆.py
 # |⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|
