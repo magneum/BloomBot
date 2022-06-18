@@ -45,9 +45,9 @@ timestamp: () => `,"time":"${new Date().toJSON()}"`,
 }).child({});
 logger.level = "error";
 var ӄ = makeInMemoryStore({ logger });
-ӄ?.readFromFile("./𝐀𝐩𝐢®/Vʟӄʏʀɛ.json");
+ӄ?.readFromFile("./𝕶𝖗𝖆𝖐𝖎𝖓𝖟𝕷𝖆𝖇®/Vʟӄʏʀɛ.json");
 setInterval(() => {
-ӄ?.writeToFile("./𝐀𝐩𝐢®/Vʟӄʏʀɛ.json");
+ӄ?.writeToFile("./𝕶𝖗𝖆𝖐𝖎𝖓𝖟𝕷𝖆𝖇®/Vʟӄʏʀɛ.json");
 }, 10_000);
 // ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
 (async (): Promise<void> => {
