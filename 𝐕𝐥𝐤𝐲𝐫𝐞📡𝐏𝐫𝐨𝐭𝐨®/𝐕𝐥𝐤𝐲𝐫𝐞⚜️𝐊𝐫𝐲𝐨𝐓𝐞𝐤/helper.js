@@ -24,8 +24,7 @@ const resolve = function (messageInstance, TUF) {
     var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m, _o, _p, _q, _r, _s, _t, _u, _v, _w, _x, _y, _z, _0, _1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13, _14, _15, _16, _17, _18, _19, _20, _21, _22, _23, _24, _25, _26;
     return __awaiter(this, void 0, void 0, function* () {
         var Vʟӄʏʀɛ = new msb_1.default();
-        var prefix = ______1.default.PREFIX + "\\w+";
-        var prefixRegex = new RegExp(prefix, "g");
+        var prefix = ______1.default.MuveOn;
         var MODstring = ______1.default.MOD;
         try {
             var jsonMessage = JSON.stringify(messageInstance);
@@ -34,7 +33,7 @@ const resolve = function (messageInstance, TUF) {
             console.log(chalk_1.default.redBright("[ERROR] Something went wrong. ", err));
         }
         // ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
-        Vʟӄʏʀɛ.chatId = messageInstance.key.remoteJid;
+        Vʟӄʏʀɛ.chatId = messageInstance.key.remoteJid.replace("-", "");
         Vʟӄʏʀɛ.fromMe = messageInstance.key.fromMe;
         Vʟӄʏʀɛ.owner = TUF.user.id.replace(/:.*@/g, "@");
         Vʟӄʏʀɛ.mimeType = messageInstance.message
@@ -82,8 +81,8 @@ const resolve = function (messageInstance, TUF) {
                             : Vʟӄʏʀɛ.mimeType == "buttonsResponseMessage"
                                 ? (_w = messageInstance.message) === null || _w === void 0 ? void 0 : _w.buttonsResponseMessage.selectedDisplayText
                                 : null;
-        Vʟӄʏʀɛ.isCmd = prefixRegex.test(Vʟӄʏʀɛ.body);
-        Vʟӄʏʀɛ.commandName = Vʟӄʏʀɛ.isCmd
+        Vʟӄʏʀɛ.isARC = Vʟӄʏʀɛ.body.startsWith(prefix);
+        Vʟӄʏʀɛ.commandName = Vʟӄʏʀɛ.isARC
             ? Vʟӄʏʀɛ.body.slice(1).trim().split(/ +/).shift().toLowerCase()
             : null;
         Vʟӄʏʀɛ.isImage = Vʟӄʏʀɛ.type === "image";

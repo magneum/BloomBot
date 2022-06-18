@@ -47,9 +47,9 @@ const ʟᴀʏᴏᴜᴛ = {
     MOD: process.env.MOD,
     OFFLINE_RESPONSE: process.env.OFFLINE_RESPONSE,
     DATABASE_URL: process.env.DATABASE_URL === undefined
-        ? "./Vʟӄʏʀɛ.db"
+        ? "./𝕶𝖗𝖆𝖐𝖎𝖓𝖟𝕷𝖆𝖇®/Vʟӄʏʀɛ.db"
         : process.env.DATABASE_URL,
-    DATABASE: process.env.DATABASE_URL === "./Vʟӄʏʀɛ.db"
+    DATABASE: process.env.DATABASE_URL === "./𝕶𝖗𝖆𝖐𝖎𝖓𝖟𝕷𝖆𝖇®/Vʟӄʏʀɛ.db"
         ? new sequelize_1.Sequelize({
             dialect: "sqlite",
             storage: process.env.DATABASE_URL,
@@ -61,7 +61,6 @@ const ʟᴀʏᴏᴜᴛ = {
             logging: Log("false"),
             dialectOptions: { ssl: { require: true, rejectUnauthorized: false } },
         }),
-    PREFIX: "^[/]",
     MuveOn: "/",
 };
 exports.default = ʟᴀʏᴏᴜᴛ;

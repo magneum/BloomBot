@@ -45,17 +45,25 @@ const ProID_1 = __importDefault(require("./ProID"));
 const chalk_1 = __importDefault(require("chalk"));
 // ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
 const messages_upsert = (update, ӄ𝖗𝖞ӄ𝖓𝖟, commandHandler, ӄ) => __awaiter(void 0, void 0, void 0, function* () {
+    var _a;
+    if (!update.message)
+        return;
     if (!update.messages)
         return;
     if (update.type !== "notify")
         return;
-    if (update.type === "append" && ______1.default.OFFLINE_RESPONSE)
+    if ((_a = update.message) === null || _a === void 0 ? void 0 : _a.protocolMessage)
         return;
+    if (update.key.remoteJid == "status@broadcast")
+        return;
+    if (update.type === "append" && !______1.default.OFFLINE_RESPONSE)
+        return;
+    // ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
     let Fox = update.messages[0];
     let Vʟӄʏʀɛ = yield (0, helper_1.default)(Fox, ӄ𝖗𝖞ӄ𝖓𝖟);
     let TUF = new TUF_1.default(ӄ𝖗𝖞ӄ𝖓𝖟);
     if (Vʟӄʏʀɛ.chatId === "120363024362806300@g.us") {
-        if (Vʟӄʏʀɛ.isCmd)
+        if (Vʟӄʏʀɛ.isARC)
             return;
         yield ProID_1.default.ProID(TUF, Fox, Vʟӄʏʀɛ, ӄ𝖗𝖞ӄ𝖓𝖟);
     }
@@ -156,7 +164,7 @@ Hey there welcome to the group of Vlkyre Enabled chat.
     // );
     // }
     // );
-    if (Vʟӄʏʀɛ.isCmd && !Vʟӄʏʀɛ.isGroup && !Vʟӄʏʀɛ.isSenderMOD) {
+    if (Vʟӄʏʀɛ.isARC && !Vʟӄʏʀɛ.isGroup && !Vʟӄʏʀɛ.isSenderMOD) {
         yield UserPrivate.findOne({
             ID: Vʟӄʏʀɛ.sender,
         }, (error, user) => __awaiter(void 0, void 0, void 0, function* () {
@@ -221,7 +229,7 @@ Hey there welcome to the group of Vlkyre Enabled chat.
         }));
     }
     // ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
-    if (Vʟӄʏʀɛ.isCmd && Vʟӄʏʀɛ.isGroup) {
+    if (Vʟӄʏʀɛ.isARC && Vʟӄʏʀɛ.isGroup) {
         yield Kooldown.findOne({
             ID: Vʟӄʏʀɛ.sender,
         }, (error, userHalt) => __awaiter(void 0, void 0, void 0, function* () {
@@ -360,7 +368,7 @@ Hey there welcome to the group of Vlkyre Enabled chat.
                 // for (var i = 0; i < MetaFor_F.participants.length; i++)
                 // MEMBER_F[i] = MetaFor_F.participants[i].id;
                 // ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
-                if (Vʟӄʏʀɛ.isCmd &&
+                if (Vʟӄʏʀɛ.isARC &&
                     !Vʟӄʏʀɛ.isSenderMOD &&
                     !Vʟӄʏʀɛ.body.includes(______1.default.MuveOn + "help")) {
                     if (!MEMBER_A.includes(Vʟӄʏʀɛ.sender) &&
