@@ -128,7 +128,7 @@ module.exports = {
                             contextInfo: { mentionedJid: [Vʟӄʏʀɛ.sender] },
                             image: fs.readFileSync(expFile),
                             caption: `┌─「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐏𝐫𝐨𝐭𝐨® 」
-├• *ɴᴀᴍᴇ:* ${Fox.pushName}
+├• *ɴᴀᴍᴇ:* ${Vʟӄʏʀɛ.sName}
 ├• *ᴍᴇɴᴛɪᴏɴ:* @${Vʟӄʏʀɛ.sender.replace(/[^\d+]/g, "")}
 ├• *ᴄᴏᴍᴍᴀɴᴅ:* ${Vʟӄʏʀɛ.commandName}
 └────────────────◇

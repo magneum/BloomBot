@@ -78,7 +78,7 @@ module.exports = {
                     var Receiver = Fox.message.extendedTextMessage.contextInfo.participant;
                     var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
                     if (Receiver === ʟɴᴀᴍᴇ) {
-                        console.log("💡𝐈𝐧𝐟𝐨: Receiver = Self: " + Fox.pushName);
+                        console.log("💡𝐈𝐧𝐟𝐨: Receiver = Self: " + Vʟӄʏʀɛ.sName);
                     }
                     else {
                         console.log("💡𝐈𝐧𝐟𝐨: Receiver: " + քɛʀֆօռɢօȶռʊʍ);
@@ -139,12 +139,12 @@ module.exports = {
                         .save(Composed_File)
                         .on("end", () => __awaiter(this, void 0, void 0, function* () {
                         yield Sticker_Button_1.default.VSbt(TUF, Fox, Vʟӄʏʀɛ, ǟʀɢʊʍɛռȶ, `┌─「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐏𝐫𝐨𝐭𝐨® 」
-├• *ɴᴀᴍᴇ:* ${Fox.pushName}
+├• *ɴᴀᴍᴇ:* ${Vʟӄʏʀɛ.sName}
 ├• *ᴍᴇɴᴛɪᴏɴ:* @${Vʟӄʏʀɛ.sender.replace(/[^\d+]/g, "")}
 ├• *ᴄᴏᴍᴍᴀɴᴅ:* ${Vʟӄʏʀɛ.commandName}
 └────────────────◇
 
-🍕𝐅𝐫𝐨𝐦: _${Fox.pushName}_
+🍕𝐅𝐫𝐨𝐦: _${Vʟӄʏʀɛ.sName}_
 🌭𝐓𝐨: @${TagPerson}`, Composed_File);
                         return yield VOID.VOID(Composed_File, Fresh_File);
                     }));
@@ -169,12 +169,12 @@ module.exports = {
                             .save(Composed_File)
                             .on("end", () => __awaiter(this, void 0, void 0, function* () {
                             yield Sticker_Button_1.default.VSbt(TUF, Fox, Vʟӄʏʀɛ, ǟʀɢʊʍɛռȶ, `┌─「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐏𝐫𝐨𝐭𝐨® 」
-├• *ɴᴀᴍᴇ:* ${Fox.pushName}
+├• *ɴᴀᴍᴇ:* ${Vʟӄʏʀɛ.sName}
 ├• *ᴍᴇɴᴛɪᴏɴ:* @${Vʟӄʏʀɛ.sender.replace(/[^\d+]/g, "")}
 ├• *ᴄᴏᴍᴍᴀɴᴅ:* ${Vʟӄʏʀɛ.commandName}
 └────────────────◇
 
-🍕𝐅𝐨𝐫: _${Fox.pushName}_`, Composed_File);
+🍕𝐅𝐨𝐫: _${Vʟӄʏʀɛ.sName}_`, Composed_File);
                             return yield VOID.VOID(Composed_File, Fresh_File);
                         }));
                         /*
@@ -194,12 +194,12 @@ module.exports = {
                             .save(Composed_File)
                             .on("end", () => __awaiter(this, void 0, void 0, function* () {
                             yield Sticker_Button_1.default.VSbt(TUF, Fox, Vʟӄʏʀɛ, ǟʀɢʊʍɛռȶ, `┌─「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐏𝐫𝐨𝐭𝐨® 」
-├• *ɴᴀᴍᴇ:* ${Fox.pushName}
+├• *ɴᴀᴍᴇ:* ${Vʟӄʏʀɛ.sName}
 ├• *ᴍᴇɴᴛɪᴏɴ:* @${Vʟӄʏʀɛ.sender.replace(/[^\d+]/g, "")}
 ├• *ᴄᴏᴍᴍᴀɴᴅ:* ${Vʟӄʏʀɛ.commandName}
 └────────────────◇
 
-🍕𝐅𝐫𝐨𝐦: _${Fox.pushName}_
+🍕𝐅𝐫𝐨𝐦: _${Vʟӄʏʀɛ.sName}_
 🌭𝐓𝐨: _@${քɛʀֆօռɢօȶռʊʍ}_`, Composed_File);
                             return yield VOID.VOID(Composed_File, Fresh_File);
                         }));
@@ -222,12 +222,12 @@ module.exports = {
                         .save(Composed_File)
                         .on("end", () => __awaiter(this, void 0, void 0, function* () {
                         yield Sticker_Button_1.default.VSbt(TUF, Fox, Vʟӄʏʀɛ, ǟʀɢʊʍɛռȶ, `┌─「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐏𝐫𝐨𝐭𝐨® 」
-├• *ɴᴀᴍᴇ:* ${Fox.pushName}
+├• *ɴᴀᴍᴇ:* ${Vʟӄʏʀɛ.sName}
 ├• *ᴍᴇɴᴛɪᴏɴ:* @${Vʟӄʏʀɛ.sender.replace(/[^\d+]/g, "")}
 ├• *ᴄᴏᴍᴍᴀɴᴅ:* ${Vʟӄʏʀɛ.commandName}
 └────────────────◇
 
-🍕𝐅𝐨𝐫: _${Fox.pushName}_`, Composed_File);
+🍕𝐅𝐨𝐫: _${Vʟӄʏʀɛ.sName}_`, Composed_File);
                         return yield VOID.VOID(Composed_File, Fresh_File);
                     }));
                 }

@@ -61,6 +61,7 @@ const ʟᴀʏᴏᴜᴛ = {
             logging: Log("false"),
             dialectOptions: { ssl: { require: true, rejectUnauthorized: false } },
         }),
+    PREFIX: "^[/]",
     MuveOn: "/",
 };
 exports.default = ʟᴀʏᴏᴜᴛ;

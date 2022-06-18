@@ -21,7 +21,7 @@ const Oops = (TUF, Fox, Vʟӄʏʀɛ, caption) => __awaiter(void 0, void 0, void 
             timestamp: Date(),
             contextInfo: { mentionedJid: [Vʟӄʏʀɛ.sender] },
             text: `┌─「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐏𝐫𝐨𝐭𝐨® 」
-├• *ɴᴀᴍᴇ:* ${Fox.pushName}
+├• *ɴᴀᴍᴇ:* ${Vʟӄʏʀɛ.sName}
 ├• *ᴍᴇɴᴛɪᴏɴ:* @${Vʟӄʏʀɛ.sender.replace(/[^\d+]/g, "")}
 ├• *ᴄᴏᴍᴍᴀɴᴅ:* ${Vʟӄʏʀɛ.commandName}
 └────────────────◇

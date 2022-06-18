@@ -72,7 +72,7 @@ module.exports = {
                     },
                     timestamp: Date(),
                     image: { url: 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 },
-                    caption: `✥𝐔𝐬𝐞𝐫: ${Fox.pushName}
+                    caption: `✥𝐔𝐬𝐞𝐫: ${Vʟӄʏʀɛ.sName}
 
 🖋️𝐀𝐝𝐦𝐢𝐧𝐬 𝐎𝐟 𝐓𝐡𝐢𝐬 𝐂𝐡𝐚𝐭
 ${message}`,
