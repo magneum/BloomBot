@@ -53,28 +53,14 @@ const mongoose_1 = __importDefault(require("mongoose"));
 const pino_1 = __importDefault(require("pino"));
 const moment_timezone_1 = __importDefault(require("moment-timezone"));
 const ______1 = __importDefault(require("./\uD835\uDC15\uD835\uDC25\uD835\uDC24\uD835\uDC32\uD835\uDC2B\uD835\uDC1E\uD83C\uDC04\uD835\uDC15\uD835\uDC1E\uD835\uDC27\uD835\uDC2D/\u029F\u1D00\u028F\u1D0F\u1D1C\u1D1B"));
+const sequelize = ______1.default.DATABASE;
 const dbAuth_1 = __importDefault(require("./\uD835\uDC15\uD835\uDC25\uD835\uDC24\uD835\uDC32\uD835\uDC2B\uD835\uDC1E\u269C\uFE0F\uD835\uDC0A\uD835\uDC2B\uD835\uDC32\uD835\uDC28\uD835\uDC13\uD835\uDC1E\uD835\uDC24/dbAuth"));
 const messages_upsert_1 = __importDefault(require("./\uD835\uDC15\uD835\uDC25\uD835\uDC24\uD835\uDC32\uD835\uDC2B\uD835\uDC1E\uD83D\uDCA5\uD835\uDC04\uD835\uDC2F\uD835\uDC1E\uD835\uDC27\uD835\uDC2D\uD835\uDC2C/messages_upsert"));
 const connection_update_1 = __importDefault(require("./\uD835\uDC15\uD835\uDC25\uD835\uDC24\uD835\uDC32\uD835\uDC2B\uD835\uDC1E\uD83D\uDCA5\uD835\uDC04\uD835\uDC2F\uD835\uDC1E\uD835\uDC27\uD835\uDC2D\uD835\uDC2C/connection_update"));
 const participants_update_1 = __importDefault(require("./\uD835\uDC15\uD835\uDC25\uD835\uDC24\uD835\uDC32\uD835\uDC2B\uD835\uDC1E\uD83D\uDCA5\uD835\uDC04\uD835\uDC2F\uD835\uDC1E\uD835\uDC27\uD835\uDC2D\uD835\uDC2C/participants_update"));
 // ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
-const UserPrivate = require(`./𝐕𝐥𝐤𝐲𝐫𝐞✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/private`);
-const Welcome = require(`./𝐕𝐥𝐤𝐲𝐫𝐞✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/setwelcome`);
-const LinkList = require(`./𝐕𝐥𝐤𝐲𝐫𝐞✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/antilink`);
-const DebugList = require(`./𝐕𝐥𝐤𝐲𝐫𝐞✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/debug`);
-const Ranker = require(`./𝐕𝐥𝐤𝐲𝐫𝐞✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/autorank`);
-const Pokemon = require(`./𝐕𝐥𝐤𝐲𝐫𝐞✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/pokemon`);
-const Economy = require(`./𝐕𝐥𝐤𝐲𝐫𝐞✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/economy`);
-const NsfwList = require(`./𝐕𝐥𝐤𝐲𝐫𝐞✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/nsfw`);
-const BanPerson = require(`./𝐕𝐥𝐤𝐲𝐫𝐞✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/ban`);
-const BanGroup = require(`./𝐕𝐥𝐤𝐲𝐫𝐞✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/ban`);
-const Zygote = require(`./𝐕𝐥𝐤𝐲𝐫𝐞✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/zygote`);
-const Bagde = require(`./𝐕𝐥𝐤𝐲𝐫𝐞✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/badge`);
-const Halt = require(`./𝐕𝐥𝐤𝐲𝐫𝐞✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/halt`);
-// ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
-const sequelize = ______1.default.DATABASE;
 const logger = (0, pino_1.default)({
-    timestamp: () => `,"time":"${new Date().toJSON()}"`,
+    timestamp: () => `,"Time":"${new Date().toJSON()}"`,
 }).child({});
 logger.level = "error";
 var ӄ = (0, baileys_1.makeInMemoryStore)({ logger });
@@ -86,6 +72,7 @@ setInterval(() => {
 (() => __awaiter(void 0, void 0, void 0, function* () {
     try {
         yield sequelize.authenticate();
+        yield sequelize.sync();
     }
     catch (error) {
         console.log(chalk_1.default.red(error));
@@ -101,7 +88,6 @@ setInterval(() => {
     catch (error) {
         console.log(chalk_1.default.red(error));
     }
-    yield sequelize.sync();
     console.log(chalk_1.default.green("(𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬! "));
     // ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
     let commandHandler = new Map();
@@ -139,7 +125,9 @@ setInterval(() => {
         try {
             let BASE_URL = "https://web.whatsapp.com/check-update?version=1&platform=web";
             const { data: JSONData } = yield axios_1.default.get(BASE_URL);
-            let version = JSONData.currentVersion.split(".").map((v) => parseInt(v));
+            let version = JSONData.currentVersion
+                .split(".")
+                .map((v) => parseInt(v));
             return version;
         }
         catch (err) {
@@ -148,7 +136,7 @@ setInterval(() => {
     });
     // ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
     const { state, saveCreds } = yield (0, dbAuth_1.default)(logger);
-    const InitApi = () => __awaiter(void 0, void 0, void 0, function* () {
+    const ӄ𝖓𝖟 = () => __awaiter(void 0, void 0, void 0, function* () {
         const ӄ𝖗𝖞ӄ𝖓𝖟 = (0, baileys_1.default)({
             logger,
             auth: state,
@@ -166,17 +154,17 @@ setInterval(() => {
             participants_update_1.default.participants_update(update, ӄ𝖗𝖞ӄ𝖓𝖟);
         }));
         ӄ𝖗𝖞ӄ𝖓𝖟.ev.on("connection.update", (update) => __awaiter(void 0, void 0, void 0, function* () {
-            connection_update_1.default.connection_update(update, baileys_1.DisconnectReason, InitApi, ӄ𝖗𝖞ӄ𝖓𝖟);
+            connection_update_1.default.connection_update(update, baileys_1.DisconnectReason, ӄ𝖓𝖟, ӄ𝖗𝖞ӄ𝖓𝖟);
         }));
         ӄ𝖗𝖞ӄ𝖓𝖟.ev.on("messages.upsert", (update) => __awaiter(void 0, void 0, void 0, function* () {
             messages_upsert_1.default.messages_upsert(update, ӄ𝖗𝖞ӄ𝖓𝖟, commandHandler, ӄ);
         }));
-        ӄ𝖗𝖞ӄ𝖓𝖟.ev.on("creds.update", (creds) => __awaiter(void 0, void 0, void 0, function* () {
+        ӄ𝖗𝖞ӄ𝖓𝖟.ev.on("creds.update", (creds) => {
             saveCreds(creds);
-        }));
+        });
         return ӄ𝖗𝖞ӄ𝖓𝖟;
     });
-    InitApi().catch((error) => console.log(chalk_1.default.red(error)));
+    ӄ𝖓𝖟().catch((error) => console.log(chalk_1.default.red(error)));
 }))().catch((error) => console.log(chalk_1.default.red(error)));
 ("⦓⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡⦔");
 /*
