@@ -1,7 +1,3 @@
-FROM python:latest
-ENV ᴋʀᴀᴋɪɴᴢ⌬ʟᴀʙ "/venv"
-RUN python -m venv $ᴋʀᴀᴋɪɴᴢ⌬ʟᴀʙ
-ENV PATH "$ᴋʀᴀᴋɪɴᴢ⌬ʟᴀʙ/bin:$PATH"
 RUN curl https://cli-assets.heroku.com/install.sh | sh
 RUN heroku plugins:install heroku-builds
 RUN heroku ps:stop run.6654
