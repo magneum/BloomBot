@@ -27,20 +27,6 @@ import messages_upsert from "./𝐕𝐥𝐤𝐲𝐫𝐞💥𝐄𝐯𝐞𝐧𝐭�
 import connection_update from "./𝐕𝐥𝐤𝐲𝐫𝐞💥𝐄𝐯𝐞𝐧𝐭𝐬/connection_update";
 import participants_update from "./𝐕𝐥𝐤𝐲𝐫𝐞💥𝐄𝐯𝐞𝐧𝐭𝐬/participants_update";
 // ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
-const UserPrivate = require(`./𝐕𝐥𝐤𝐲𝐫𝐞✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/private`);
-const Welcome = require(`./𝐕𝐥𝐤𝐲𝐫𝐞✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/setwelcome`);
-const LinkList = require(`./𝐕𝐥𝐤𝐲𝐫𝐞✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/antilink`);
-const DebugList = require(`./𝐕𝐥𝐤𝐲𝐫𝐞✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/debug`);
-const Ranker = require(`./𝐕𝐥𝐤𝐲𝐫𝐞✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/autorank`);
-const Pokemon = require(`./𝐕𝐥𝐤𝐲𝐫𝐞✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/pokemon`);
-const Economy = require(`./𝐕𝐥𝐤𝐲𝐫𝐞✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/economy`);
-const NsfwList = require(`./𝐕𝐥𝐤𝐲𝐫𝐞✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/nsfw`);
-const BanPerson = require(`./𝐕𝐥𝐤𝐲𝐫𝐞✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/ban`);
-const BanGroup = require(`./𝐕𝐥𝐤𝐲𝐫𝐞✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/ban`);
-const Zygote = require(`./𝐕𝐥𝐤𝐲𝐫𝐞✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/zygote`);
-const Bagde = require(`./𝐕𝐥𝐤𝐲𝐫𝐞✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/badge`);
-const Halt = require(`./𝐕𝐥𝐤𝐲𝐫𝐞✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/halt`);
-// ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
 const sequelize: Sequelize = ʟᴀʏᴏᴜᴛ.DATABASE;
 const logger: Logger = Pot({
 timestamp: () => `,"time":"${new Date().toJSON()}"`,
@@ -115,7 +101,9 @@ try {
 let BASE_URL =
 "https://web.whatsapp.com/check-update?version=1&platform=web";
 const { data: JSONData } = await axios.get(BASE_URL);
-let version = JSONData.currentVersion.split(".").map((v) => parseInt(v));
+let version = JSONData.currentVersion
+.split(".")
+.map((v: any) => parseInt(v));
 return version;
 } catch (err) {
 console.log(
@@ -130,7 +118,7 @@ color(
 };
 // ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
 const { state, saveCreds } = await useRemoteFileAuthState(logger);
-const InitApi = async () => {
+const ӄ𝖓𝖟 = async () => {
 const ӄ𝖗𝖞ӄ𝖓𝖟: WASocket = makeWASocket({
 logger,
 auth: state,
@@ -151,19 +139,19 @@ participants_update.participants_update(update, ӄ𝖗𝖞ӄ𝖓𝖟);
 connection_update.connection_update(
 update,
 DisconnectReason,
-InitApi,
+ӄ𝖓𝖟,
 ӄ𝖗𝖞ӄ𝖓𝖟
 );
 });
 ӄ𝖗𝖞ӄ𝖓𝖟.ev.on("messages.upsert", async (update) => {
 messages_upsert.messages_upsert(update, ӄ𝖗𝖞ӄ𝖓𝖟, commandHandler, ӄ);
 });
-ӄ𝖗𝖞ӄ𝖓𝖟.ev.on("creds.update", async (creds) => {
+ӄ𝖗𝖞ӄ𝖓𝖟.ev.on("creds.update", (creds) => {
 saveCreds(creds);
 });
 return ӄ𝖗𝖞ӄ𝖓𝖟;
 };
-InitApi().catch((error) => console.log(Kolor.red(error)));
+ӄ𝖓𝖟().catch((error) => console.log(Kolor.red(error)));
 })().catch((error) => console.log(Kolor.red(error)));
 ("⦓⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡⦔");
 /* 
