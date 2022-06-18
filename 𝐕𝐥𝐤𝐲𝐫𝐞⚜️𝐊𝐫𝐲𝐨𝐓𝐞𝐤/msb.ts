@@ -23,6 +23,7 @@ imageCaption: string;
 replyParticipant: string;
 isTextReply: boolean;
 isARC: boolean;
+sName: boolean;
 fromMe: boolean;
 isGroup: boolean;
 isPm: boolean;

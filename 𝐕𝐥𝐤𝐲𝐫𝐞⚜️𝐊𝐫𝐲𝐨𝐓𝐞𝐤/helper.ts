@@ -21,6 +21,7 @@ var jsonMessage: any = JSON.stringify(currentMsg);
 console.log(chalk.redBright("[ERROR] Something went wrong. ", err));
 }
 // ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
+Vʟӄʏʀɛ.sName = currentMsg.pushName;
 Vʟӄʏʀɛ.fromMe = currentMsg.key.fromMe;
 Vʟӄʏʀɛ.owner = TUF.user.id.replace(/:.*@/g, "@");
 Vʟӄʏʀɛ.chatId = currentMsg.key.remoteJid.replace("-", "");
