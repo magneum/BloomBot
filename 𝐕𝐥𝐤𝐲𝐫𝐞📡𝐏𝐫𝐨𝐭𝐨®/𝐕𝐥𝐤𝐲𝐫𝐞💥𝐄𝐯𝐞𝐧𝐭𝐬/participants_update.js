@@ -31,14 +31,11 @@ const Downloader = require(`nodejs-file-downloader`);
 const VOID = require(`../𝐕𝐥𝐤𝐲𝐫𝐞⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/void`);
 const TUF_1 = __importDefault(require("../\uD835\uDC15\uD835\uDC25\uD835\uDC24\uD835\uDC32\uD835\uDC2B\uD835\uDC1E\u269C\uFE0F\uD835\uDC0A\uD835\uDC2B\uD835\uDC32\uD835\uDC28\uD835\uDC13\uD835\uDC1E\uD835\uDC24/TUF"));
 const ______1 = __importDefault(require("../\uD835\uDC15\uD835\uDC25\uD835\uDC24\uD835\uDC32\uD835\uDC2B\uD835\uDC1E\uD83C\uDC04\uD835\uDC15\uD835\uDC1E\uD835\uDC27\uD835\uDC2D/\u029F\u1D00\u028F\u1D0F\u1D1C\u1D1B"));
-const chalk_1 = __importDefault(require("chalk"));
 // ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
 const participants_update = (update, ӄ𝖗𝖞ӄ𝖓𝖟) => __awaiter(void 0, void 0, void 0, function* () {
     const Latest___ = update.participants[0];
     let client = new TUF_1.default(ӄ𝖗𝖞ӄ𝖓𝖟);
-    console.clear();
     let 𝐏𝐩𝐢𝐜;
-    console.log(chalk_1.default.red(update));
     for (let i of update.participants) {
         try {
             𝐏𝐩𝐢𝐜 = yield ӄ𝖗𝖞ӄ𝖓𝖟.profilePictureUrl(i, "image");

@@ -23,9 +23,7 @@ import Kolor from "chalk";
 const participants_update = async (update: any, ӄ𝖗𝖞ӄ𝖓𝖟: any): Promise<void> => {
 const Latest___ = update.participants[0];
 let client: Client = new Client(ӄ𝖗𝖞ӄ𝖓𝖟);
-console.clear();
 let 𝐏𝐩𝐢𝐜: any;
-console.log(Kolor.red(update));
 for (let i of update.participants) {
 try {
 𝐏𝐩𝐢𝐜 = await ӄ𝖗𝖞ӄ𝖓𝖟.profilePictureUrl(i, "image");
