@@ -23,9 +23,39 @@
 "scripts": {
 "𝐕𝐥𝐤𝐲𝐫𝐞": "python3 𝕶𝖗𝖆𝖐𝖎𝖓𝖟𝕷𝖆𝖇®/ӄ.blind/𝕭𝖔𝖔𝖙.py"
 },
+"peerDependencies": {
+"@adiwajshing/keyed-db": "^0.2.4",
+"jimp": "^0.16.1",
+"link-preview-js": "^2.1.13",
+"qrcode-terminal": "^0.12.0",
+"sharp": "^0.30.5"
+},
+"peerDependenciesMeta": {
+"@adiwajshing/keyed-db": {
+"optional": true
+},
+"jimp": {
+"optional": true
+},
+"qrcode-terminal": {
+"optional": true
+},
+"sharp": {
+"optional": true
+},
+"link-preview-js": {
+"optional": true
+}
+},
 "dependencies": {
-"@adiwajshing/baileys": "git+ssh://git@github.com/adiwajshing/baileys.git#a98484c38bc92055e3c660a86687ee0425bc5c5b",
-"@adiwajshing/keyed-db": "*",
+"@hapi/boom": "^9.1.3",
+"futoin-hkdf": "^1.5.0",
+"libsignal": "git+https://github.com/adiwajshing/libsignal-node",
+"music-metadata": "^7.12.3",
+"node-cache": "^5.1.2",
+"pino": "^7.0.0",
+"protobufjs": "^6.11.3",
+"ws": "^8.0.0",
 "@cicciosgamino/openweather-apis": "^5.0.1",
 "@distube/youtube-dl": "^2.2.4",
 "@ffmpeg-installer/ffmpeg": "^1.1.0",
@@ -126,7 +156,6 @@
 "performance-now": "^2.1.0",
 "pg": "^8.7.1",
 "ping": "^0.4.1",
-"pino": "^7.11.0",
 "play-sound": "^1.1.5",
 "pokedex-promise-v2": "^4.0.0",
 "pokemon-gif": "^1.0.14",
@@ -199,5 +228,24 @@
 "@types/string-format": "^2.0.0",
 "@types/urban-dictionary": "^3.0.0",
 "@types/ws": "^8.5.3"
+},
+"devDependencies": {
+"@adiwajshing/eslint-config": "git+https://github.com/adiwajshing/eslint-config",
+"@adiwajshing/keyed-db": "^0.2.4",
+"@types/got": "^9.6.11",
+"@types/jest": "^27.5.1",
+"@types/node": "^16.0.0",
+"@types/sharp": "^0.29.4",
+"@types/ws": "^8.0.0",
+"eslint": "^8.0.0",
+"jest": "^27.0.6",
+"jimp": "^0.16.1",
+"link-preview-js": "^2.1.13",
+"qrcode-terminal": "^0.12.0",
+"sharp": "^0.30.5",
+"ts-jest": "^27.0.3",
+"ts-node": "^10.8.1",
+"typedoc": "^0.22.0",
+"typescript": "^4.0.0"
 }
 }
