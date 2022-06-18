@@ -62,9 +62,10 @@ const logger = (0, pino_1.default)().child({});
 logger.level = "error";
 var ӄ = (0, baileys_1.makeInMemoryStore)({ logger });
 ӄ === null || ӄ === void 0 ? void 0 : ӄ.readFromFile("./𝕶𝖗𝖆𝖐𝖎𝖓𝖟𝕷𝖆𝖇/Vʟӄʏʀɛ.json");
-setInterval(() => {
+setInterval(() => __awaiter(void 0, void 0, void 0, function* () {
+    fs_1.default.unlinkSync("./𝕶𝖗𝖆𝖐𝖎𝖓𝖟𝕷𝖆𝖇/Vʟӄʏʀɛ.json");
     ӄ === null || ӄ === void 0 ? void 0 : ӄ.writeToFile("./𝕶𝖗𝖆𝖐𝖎𝖓𝖟𝕷𝖆𝖇/Vʟӄʏʀɛ.json");
-}, 10000);
+}), 1000);
 // ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
 (() => __awaiter(void 0, void 0, void 0, function* () {
     console.log(chalk_1.default.yellow("💡𝐈𝐧𝐟𝐨: Trying To Connect To '🍃mongo + 🕸️sql'"));
