@@ -56,6 +56,7 @@ const messages_upsert = (update, ӄ𝖗𝖞ӄ𝖓𝖟, commandHandler, ӄ) => __
     // ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
     if (Vʟӄʏʀɛ.isGroup) {
         const MetaForDeny = yield ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata(Vʟӄʏʀɛ.chatId);
+        console.log(MetaForDeny);
         if (MetaForDeny.participants.length > 200)
             return;
     }
