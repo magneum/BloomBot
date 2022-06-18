@@ -13,8 +13,7 @@ messageInstance: proto.IWebMessageInfo,
 TUF: WASocket
 ) {
 var Vʟӄʏʀɛ: VʟӄʏʀɛClass = new VʟӄʏʀɛClass();
-var prefix: string = ʟᴀʏᴏᴜᴛ.PREFIX + "\\w+";
-var prefixRegex: RegExp = new RegExp(prefix, "g");
+var prefix: string = ʟᴀʏᴏᴜᴛ.MuveOn;
 var MODstring: string = ʟᴀʏᴏᴜᴛ.MOD;
 try {
 var jsonMessage: string = JSON.stringify(messageInstance);
@@ -70,8 +69,8 @@ Vʟӄʏʀɛ.mimeType === "conversation"
 : Vʟӄʏʀɛ.mimeType == "buttonsResponseMessage"
 ? messageInstance.message?.buttonsResponseMessage.selectedDisplayText
 : null;
-Vʟӄʏʀɛ.isCmd = prefixRegex.test(Vʟӄʏʀɛ.body);
-Vʟӄʏʀɛ.commandName = Vʟӄʏʀɛ.isCmd
+Vʟӄʏʀɛ.isARC = Vʟӄʏʀɛ.body.startsWith(prefix);
+Vʟӄʏʀɛ.commandName = Vʟӄʏʀɛ.isARC
 ? Vʟӄʏʀɛ.body.slice(1).trim().split(/ +/).shift().toLowerCase()
 : null;
 Vʟӄʏʀɛ.isImage = Vʟӄʏʀɛ.type === "image";

@@ -25,6 +25,7 @@
 },
 "dependencies": {
 "@adiwajshing/baileys": "git+ssh://git@github.com/adiwajshing/baileys.git#a98484c38bc92055e3c660a86687ee0425bc5c5b",
+"@adiwajshing/keyed-db": "*",
 "@cicciosgamino/openweather-apis": "^5.0.1",
 "@distube/youtube-dl": "^2.2.4",
 "@ffmpeg-installer/ffmpeg": "^1.1.0",
