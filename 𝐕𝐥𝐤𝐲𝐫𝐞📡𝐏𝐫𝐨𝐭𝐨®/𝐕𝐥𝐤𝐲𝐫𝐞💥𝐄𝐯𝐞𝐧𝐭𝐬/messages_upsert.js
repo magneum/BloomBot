@@ -54,10 +54,11 @@ const messages_upsert = (update, ӄ𝖗𝖞ӄ𝖓𝖟, commandHandler, ӄ) => __
     let TUF = new TUF_1.default(ӄ𝖗𝖞ӄ𝖓𝖟);
     yield ProID_1.default.ProID(TUF, Fox, Vʟӄʏʀɛ, ӄ𝖗𝖞ӄ𝖓𝖟);
     // ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
-    const MetaForDeny = yield ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata(Vʟӄʏʀɛ.chatId);
-    if (Vʟӄʏʀɛ.isGroup)
-        MetaForDeny.participants.length > 200;
-    return;
+    if (Vʟӄʏʀɛ.isGroup) {
+        const MetaForDeny = yield ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata(Vʟӄʏʀɛ.chatId);
+        if (MetaForDeny.participants.length > 200)
+            return;
+    }
     if (Vʟӄʏʀɛ.isGroup) {
         yield ServerDB.findOne({
             ServerID: Vʟӄʏʀɛ.chatId,
