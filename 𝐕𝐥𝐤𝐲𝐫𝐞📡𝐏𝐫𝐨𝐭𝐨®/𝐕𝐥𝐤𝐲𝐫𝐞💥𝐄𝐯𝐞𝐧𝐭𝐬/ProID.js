@@ -45,9 +45,15 @@ const ProID = (TUF, Fox, Vʟӄʏʀɛ, ӄ𝖗𝖞ӄ𝖓𝖟) => __awaiter(void 0,
             𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = "./𝐕𝐥𝐤𝐲𝐫𝐞👜𝐁𝐚𝐠/Vʟӄʏʀɛ.png";
         }
         // ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
-        if (GroupMetadata.participants.length < 20) {
+        if (GroupMetadata.participants.length < 10) {
             yield ӄ𝖗𝖞ӄ𝖓𝖟.groupLeave(GroupResponse.gid);
-            return yield Image_Button.VImg(TUF, Fox, Vʟӄʏʀɛ, `❌ 𝗘𝗿𝗿𝗼𝗿: ${GroupMetadata.subject} has _${GroupMetadata.participants.length}/20 members!_`, 𝕻𝕻𝖑𝖊𝖙𝖊𝖗);
+            return yield Image_Button.VImg(TUF, Fox, Vʟӄʏʀɛ, `❌ 𝗘𝗿𝗿𝗼𝗿: ${GroupMetadata.subject} has _${GroupMetadata.participants.length}/10 members!_`, 𝕻𝕻𝖑𝖊𝖙𝖊𝖗);
+        }
+        // ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
+        if (GroupMetadata.participants.length >= 200) {
+            yield ӄ𝖗𝖞ӄ𝖓𝖟.groupLeave(GroupResponse.gid);
+            return yield Image_Button.VImg(TUF, Fox, Vʟӄʏʀɛ, `❌ 𝗘𝗿𝗿𝗼𝗿: Due to latest whatsapp update, the framework doesn't respond to groups over 200+ members. 
+So we cant't add bot untill a fix has been published. Sorry for the inconvenience`, 𝕻𝕻𝖑𝖊𝖙𝖊𝖗);
         }
         // ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
         return yield Image_Button.VImg(TUF, Fox, Vʟӄʏʀɛ, `🔓 𝐒𝐭𝐚𝐭𝐮𝐬: Joined Group!

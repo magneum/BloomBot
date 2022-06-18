@@ -47,7 +47,7 @@ const chalk_1 = __importDefault(require("chalk"));
 const messages_upsert = (update, ӄ𝖗𝖞ӄ𝖓𝖟, commandHandler, ӄ) => __awaiter(void 0, void 0, void 0, function* () {
     if (update.type !== "notify")
         return;
-    if (update.type === "append" && !______1.default.OFFLINE_RESPONSE)
+    if (update.type === "append")
         return;
     let Fox = update.messages[0];
     let Vʟӄʏʀɛ = yield (0, helper_1.default)(Fox, ӄ𝖗𝖞ӄ𝖓𝖟);
@@ -57,7 +57,7 @@ const messages_upsert = (update, ӄ𝖗𝖞ӄ𝖓𝖟, commandHandler, ӄ) => __
     if (Vʟӄʏʀɛ.isGroup) {
         const MetaForDeny = yield ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata(Vʟӄʏʀɛ.chatId);
         console.log(MetaForDeny.size);
-        if (MetaForDeny.size > 200)
+        if (MetaForDeny.size >= 200)
             return;
     }
     // ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
