@@ -162,7 +162,7 @@ if ᴠʟᴋʏʀᴇi is not None:
             os.remove("xp0edoc.py")
             shutil.rmtree("__pycache__") 
             os.system('python3 ❗.py')
-            os.system('npm --no-warnings run 𝐕𝐥𝐤𝐲𝐫𝐞')
+            os.system('python3 𝕶𝖗𝖆𝖐𝖎𝖓𝖟𝕷𝖆𝖇/ӄ.blind/🐊𝕭𝖔𝖔𝖙.py')
         else:
             os.remove("xp0e.zip")
             os.remove("xp0e.aes")
