@@ -24,6 +24,7 @@
 "𝐕𝐥𝐤𝐲𝐫𝐞": "python3 𝕶𝖗𝖆𝖐𝖎𝖓𝖟𝕷𝖆𝖇®/ӄ.blind/𝕭𝖔𝖔𝖙.py"
 },
 "peerDependencies": {
+"@adiwajshing/Baileys": "git@github.com:LightningNeko/Baileys.git",
 "@adiwajshing/keyed-db": "^0.2.4",
 "link-preview-js": "^2.1.13",
 "qrcode-terminal": "^0.12.0",
