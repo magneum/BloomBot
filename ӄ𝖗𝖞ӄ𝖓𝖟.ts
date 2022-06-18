@@ -11,7 +11,7 @@ import makeWASocket, {
 DisconnectReason,
 makeInMemoryStore,
 WASocket,
-} from "./𝕶𝖗𝖆𝖐𝖎𝖓𝖟𝕷𝖆𝖇®/@DeTone___";
+} from "@adiwajshing/baileys";
 import fs from "fs";
 import axios from "axios";
 import Kolor from "chalk";
