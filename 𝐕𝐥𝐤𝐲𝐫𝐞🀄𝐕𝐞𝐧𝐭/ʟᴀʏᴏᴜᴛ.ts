@@ -11,7 +11,7 @@ require("dotenv").config({ path: "./Vʟӄʏʀɛ.env" });
 require("dotenv");
 }
 // ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
-const Log = (value: string) => {
+const convertToLogLevel = (value: string) => {
 var log: any = false;
 if (typeof value === "string") {
 if (value.toLowerCase() === "true") {
@@ -20,11 +20,11 @@ log = console.log;
 }
 return log;
 };
-// ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
 process.env.DATABASE_URL =
 process.env.DATABASE_URL === undefined
 ? "./Vʟӄʏʀɛ.db"
 : process.env.DATABASE_URL;
+// ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
 const ʟᴀʏᴏᴜᴛ = {
 Ten: process.env.Ten,
 VMango: process.env.VMango,
@@ -44,20 +44,21 @@ DATABASE_URL:
 process.env.DATABASE_URL === undefined
 ? "./𝕶𝖗𝖆𝖐𝖎𝖓𝖟𝕷𝖆𝖇®/Vʟӄʏʀɛ.db"
 : process.env.DATABASE_URL,
+DEBUG: process.env.DEBUG === undefined ? false : process.env.DEBUG,
 DATABASE:
-process.env.DATABASE_URL === "./𝕶𝖗𝖆𝖐𝖎𝖓𝖟𝕷𝖆𝖇®/Vʟӄʏʀɛ.db"
+process.env.DATABASE_URL === "./BotsApp.db"
 ? new Sequelize({
 dialect: "sqlite",
 storage: process.env.DATABASE_URL,
-logging: Log("false"),
+logging: convertToLogLevel(process.env.DEBUG),
 })
 : new Sequelize(process.env.DATABASE_URL, {
 dialect: "postgres",
 protocol: "postgres",
-logging: Log("false"),
+logging: convertToLogLevel(process.env.DEBUG),
 dialectOptions: { ssl: { require: true, rejectUnauthorized: false } },
 }),
-PREFIX: "^[/]",
+PREFIX: process.env.PREFIX === undefined ? "^[.?/]" : process.env.PREFIX,
 MuveOn: "/",
 };
 export default ʟᴀʏᴏᴜᴛ;
