@@ -260,7 +260,7 @@ userHalt.PermaTimeOut - (Date.now() - userHalt.TimeOut) > 0
 return await TUF.sendMessage(
 Vʟӄʏʀɛ.chatId,
 `┌─「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐏𝐫𝐨𝐭𝐨® 」
-├• *ɴᴀᴍᴇ:* ${Fox.pushName}
+├• *ɴᴀᴍᴇ:* ${Vʟӄʏʀɛ.sName}
 ├• *ᴍᴇɴᴛɪᴏɴ:* @${Vʟӄʏʀɛ.sender.replace(/[^\d+]/g, "")}
 ├• *ᴄᴏᴍᴍᴀɴᴅ:* ${Vʟӄʏʀɛ.commandName}
 └────────────────◇
