@@ -3,9 +3,9 @@
 # |⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|
 # apt update && apt upgrade -y && aptitude install -y jq git curl wget ffmpeg python3 bpm-tools opus-tools python3-pip python-is-python3 && hash -r && npm install -g n && n install latest && npm install -g npm && hash -r && hash -r && npm install -g n && n install latest && npm install -g npm && hash -r && curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash - && aptitude install -y nodejs && apt autoremove -y && aptitude install gcc g++ make -y && hash -r && curl https://cli-assets.heroku.com/install.sh | sh && heroku plugins:install heroku-builds && pip install -r ⭕𝖈𝖆𝖗𝖆.txt && npm install --force --save && rm package-lock.json && npm install -g spotify-dl spdl-core && git config --global user.name 'KryKnz' && git config --global user.email 'krakinzkon@gmail.com' && git config pull.rebase false
 FROM python:latest
-ENV 「𝐕𝐥𝐤𝐲𝐫𝐞⌬𝐀𝐩𝐢®」"/venv"
-RUN python -m venv $「𝐕𝐥𝐤𝐲𝐫𝐞⌬𝐀𝐩𝐢®」
-ENV PATH "$「𝐕𝐥𝐤𝐲𝐫𝐞⌬𝐀𝐩𝐢®」/bin:$PATH"
+ENV Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞"/venv"
+RUN python -m venv $Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞
+ENV PATH "$Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞/bin:$PATH"
 RUN apt update 
 RUN apt upgrade -y 
 RUN apt install aptitude -y
