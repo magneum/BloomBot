@@ -17,6 +17,7 @@ import Kolor from "chalk";
 import { join } from "path";
 import Vmangos from "mongoose";
 import Pot, { Logger } from "pino";
+import { Pantry } from "pantry-cloud";
 import ʟᴀʏᴏᴜᴛ from "./𝐕𝐥𝐤𝐲𝐫𝐞🀄𝐕𝐞𝐧𝐭/ʟᴀʏᴏᴜᴛ";
 import { Sequelize } from "sequelize/types";
 const chalkAnimation = require("chalkercli");

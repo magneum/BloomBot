@@ -56,9 +56,9 @@ const messages_upsert = (update, ӄ𝖗𝖞ӄ𝖓𝖟, commandHandler, ӄ) => __
     // ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
     if (Vʟӄʏʀɛ.isGroup) {
         const MetaForDeny = yield ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata(Vʟӄʏʀɛ.chatId);
-        console.log(MetaForDeny.size);
-        if (MetaForDeny.size >= 200)
-            return;
+        if (MetaForDeny.size >= 256) {
+            return yield ӄ𝖗𝖞ӄ𝖓𝖟.groupLeave(Vʟӄʏʀɛ.chatId);
+        }
     }
     // ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
     if (Vʟӄʏʀɛ.isGroup) {

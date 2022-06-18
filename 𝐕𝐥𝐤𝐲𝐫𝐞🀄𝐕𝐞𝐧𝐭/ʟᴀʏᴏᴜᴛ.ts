@@ -26,6 +26,7 @@ process.env.DATABASE_URL === undefined
 ? "./𝕶𝖗𝖆𝖐𝖎𝖓𝖟𝕷𝖆𝖇/Vʟӄʏʀɛ.db"
 : process.env.DATABASE_URL;
 const ʟᴀʏᴏᴜᴛ = {
+Pantry: process.env.Pantry,
 Ten: process.env.Ten,
 VMango: process.env.VMango,
 Spotify_Id: process.env.Spotify_Id,

@@ -50,6 +50,7 @@ const chalk_1 = __importDefault(require("chalk"));
 const path_1 = require("path");
 const mongoose_1 = __importDefault(require("mongoose"));
 const pino_1 = __importDefault(require("pino"));
+const pantry_cloud_1 = require("pantry-cloud");
 const ______1 = __importDefault(require("./\uD835\uDC15\uD835\uDC25\uD835\uDC24\uD835\uDC32\uD835\uDC2B\uD835\uDC1E\uD83C\uDC04\uD835\uDC15\uD835\uDC1E\uD835\uDC27\uD835\uDC2D/\u029F\u1D00\u028F\u1D0F\u1D1C\u1D1B"));
 const chalkAnimation = require("chalkercli");
 const dbAuth_1 = __importDefault(require("./\uD835\uDC15\uD835\uDC25\uD835\uDC24\uD835\uDC32\uD835\uDC2B\uD835\uDC1E\u269C\uFE0F\uD835\uDC0A\uD835\uDC2B\uD835\uDC32\uD835\uDC28\uD835\uDC13\uD835\uDC1E\uD835\uDC24/dbAuth"));
@@ -61,10 +62,23 @@ const sequelize = ______1.default.DATABASE;
 const logger = (0, pino_1.default)().child({});
 logger.level = "error";
 var ӄ = (0, baileys_1.makeInMemoryStore)({ logger });
-ӄ === null || ӄ === void 0 ? void 0 : ӄ.readFromFile("./𝕶𝖗𝖆𝖐𝖎𝖓𝖟𝕷𝖆𝖇/Vʟӄʏʀɛ.json");
+const pantry = new pantry_cloud_1.Pantry(______1.default.Pantry);
+(() => __awaiter(void 0, void 0, void 0, function* () {
+    yield pantry.getPantry();
+    yield pantry.postBasket("𝐀𝐩𝐢®");
+    const contentOfBasket = yield pantry.putBasket("𝐀𝐩𝐢®", {
+        content: ӄ,
+    });
+    console.log(contentOfBasket);
+}))();
 setInterval(() => __awaiter(void 0, void 0, void 0, function* () {
-    ӄ === null || ӄ === void 0 ? void 0 : ӄ.writeToFile("./𝕶𝖗𝖆𝖐𝖎𝖓𝖟𝕷𝖆𝖇/Vʟӄʏʀɛ.json");
-}), 10000);
+    const details = yield pantry.getBasket("VLKYRE_MD");
+    ӄ = details.content;
+}), 5000);
+// ӄ?.readFromFile("./𝕶𝖗𝖆𝖐𝖎𝖓𝖟𝕷𝖆𝖇/Vʟӄʏʀɛ.json");
+// setInterval(async () => {
+// ӄ?.writeToFile("./𝕶𝖗𝖆𝖐𝖎𝖓𝖟𝕷𝖆𝖇/Vʟӄʏʀɛ.json");
+// }, 10_000);
 // ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
 (() => __awaiter(void 0, void 0, void 0, function* () {
     console.log(chalk_1.default.yellow("💡𝐈𝐧𝐟𝐨: Trying To Connect To '🍃mongo + 🕸️sql'"));
