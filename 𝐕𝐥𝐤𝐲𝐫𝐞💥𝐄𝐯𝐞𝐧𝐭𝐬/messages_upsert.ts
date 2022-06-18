@@ -41,11 +41,13 @@ update: any,
 commandHandler: any,
 ӄ: any
 ): Promise<void> => {
-if (!update.messages) return
-if (update.type !== "notify") return; 
+if (!update.message) return;
+if (!update.messages) return;
+if (update.type !== "notify") return;
+if (update.message?.protocolMessage) return;
+if (update.key.remoteJid == "status@broadcast") return;
 if (update.type === "append" && ʟᴀʏᴏᴜᴛ.OFFLINE_RESPONSE) return;
-
-
+// ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
 let Fox: proto.IWebMessageInfo = update.messages[0];
 let Vʟӄʏʀɛ: Vʟӄʏʀɛ = await resolve(Fox, ӄ𝖗𝖞ӄ𝖓𝖟);
 let TUF: Client = new Client(ӄ𝖗𝖞ӄ𝖓𝖟);
