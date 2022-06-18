@@ -26,7 +26,7 @@ Fox: any,
 Vʟӄʏʀɛ: any,
 ӄ𝖗𝖞ӄ𝖓𝖟: any
 ): Promise<void> => {
-if (Vʟӄʏʀɛ.isARC) return;
+if (Vʟӄʏʀɛ.isCmd) return;
 let MetaCode: any;
 try {
 let [_, Code] =

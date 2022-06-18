@@ -71,7 +71,7 @@ Vʟӄʏʀɛ.mimeType === "conversation"
 : Vʟӄʏʀɛ.mimeType == "buttonsResponseMessage"
 ? currentMsg.message?.buttonsResponseMessage.selectedDisplayText
 : null;
-Vʟӄʏʀɛ.commandName = Vʟӄʏʀɛ.isARC
+Vʟӄʏʀɛ.commandName = Vʟӄʏʀɛ.isCmd
 ? Vʟӄʏʀɛ.body.slice(1).trim().split(/ +/).shift().toLowerCase()
 : null;
 Vʟӄʏʀɛ.isImage = Vʟӄʏʀɛ.type === "image";
@@ -110,7 +110,7 @@ Vʟӄʏʀɛ.isReplyAudio = currentMsg.message?.extendedTextMessage?.contextInfo
 Vʟӄʏʀɛ.logGroup = TUF.user.id.replace(/:.*@/g, "@");
 Vʟӄʏʀɛ.isGroup = Vʟӄʏʀɛ.chatId.endsWith("@g.us");
 Vʟӄʏʀɛ.isPm = !Vʟӄʏʀɛ.isGroup;
-Vʟӄʏʀɛ.isARC = prefixRegex.test(Vʟӄʏʀɛ.body);
+Vʟӄʏʀɛ.isCmd = prefixRegex.test(Vʟӄʏʀɛ.body);
 Vʟӄʏʀɛ.sender =
 Vʟӄʏʀɛ.isGroup && currentMsg.message && Vʟӄʏʀɛ.fromMe
 ? Vʟӄʏʀɛ.owner
