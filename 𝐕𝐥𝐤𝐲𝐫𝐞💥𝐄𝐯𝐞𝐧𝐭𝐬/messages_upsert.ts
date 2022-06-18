@@ -42,7 +42,7 @@ commandHandler: any,
 ӄ: any
 ): Promise<void> => {
 if (update.type !== "notify") return;
-if (update.type === "append" && !ʟᴀʏᴏᴜᴛ.OFFLINE_RESPONSE) return;
+if (update.type === "append") return;
 let Fox: proto.IWebMessageInfo = update.messages[0];
 let Vʟӄʏʀɛ: Vʟӄʏʀɛ = await resolve(Fox, ӄ𝖗𝖞ӄ𝖓𝖟);
 let TUF: Client = new Client(ӄ𝖗𝖞ӄ𝖓𝖟);
