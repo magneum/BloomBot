@@ -51,23 +51,23 @@ setInterval(() => {
 }, 10_000);
 // ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
 (async (): Promise<void> => {
-await sequelize.authenticate().catch((error) => {
-console.log(Kolor.red(`❌𝐄𝐫𝐫𝐨𝐫: ${error}`));
-process.exit(0);
-});
-await sequelize.sync().catch((error) => {
-console.log(Kolor.red(`❌𝐄𝐫𝐫𝐨𝐫: ${error}`));
-process.exit(0);
-});
+try {
+await sequelize.authenticate();
+} catch (error) {
+console.log(Kolor.red(error));
+}
+try {
 await Vmangos.connect(ʟᴀʏᴏᴜᴛ.VMango, {
 useNewUrlParser: true,
 useUnifiedTopology: true,
 useCreateIndex: true,
 useFindAndModify: false,
-}).catch((error) => {
-console.log(Kolor.red(`❌𝐄𝐫𝐫𝐨𝐫: ${error}`));
-process.exit(0);
 });
+} catch (error) {
+console.log(Kolor.red(error));
+}
+
+await sequelize.sync();
 console.log(
 Kolor.green(
 "(𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬! "
@@ -86,15 +86,15 @@ try {
 commandHandler.set(command.name, command);
 if (ʟᴀʏᴏᴜᴛ.Heroku_App === undefined) {
 console.log(
-Kolor.green(Files + ":   ") +
-Kolor.blue(File.toLocaleUpperCase() + " ✔️")
+  Kolor.green(Files + ":   ") +
+    Kolor.blue(File.toLocaleUpperCase() + " ✔️")
 );
 }
 } catch (error) {
 console.log(
 Kolor.red("❌𝐄𝐫𝐫𝐨𝐫: " + error + " | ") +
-Kolor.green(Files + " :") +
-Kolor.blue(File)
+  Kolor.green(Files + " :") +
+  Kolor.blue(File)
 );
 continue;
 }
@@ -128,8 +128,8 @@ InitApi,
 ӄ𝖗𝖞ӄ𝖓𝖟.ev.on("messages.upsert", async (update) => {
 messages_upsert.messages_upsert(update, ӄ𝖗𝖞ӄ𝖓𝖟, commandHandler, ӄ);
 });
-ӄ𝖗𝖞ӄ𝖓𝖟.ev.on("creds.update", (Re_Auth) => {
-saveCreds(Re_Auth);
+ӄ𝖗𝖞ӄ𝖓𝖟.ev.on("creds.update", async (creds) => {
+saveCreds(creds);
 });
 return ӄ𝖗𝖞ӄ𝖓𝖟;
 };

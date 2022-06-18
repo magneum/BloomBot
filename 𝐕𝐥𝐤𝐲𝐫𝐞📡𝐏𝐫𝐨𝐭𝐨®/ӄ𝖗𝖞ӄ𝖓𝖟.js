@@ -82,23 +82,24 @@ setInterval(() => {
 }, 10000);
 // ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
 (() => __awaiter(void 0, void 0, void 0, function* () {
-    yield sequelize.authenticate().catch((error) => {
-        console.log(chalk_1.default.red(`❌𝐄𝐫𝐫𝐨𝐫: ${error}`));
-        process.exit(0);
-    });
-    yield sequelize.sync().catch((error) => {
-        console.log(chalk_1.default.red(`❌𝐄𝐫𝐫𝐨𝐫: ${error}`));
-        process.exit(0);
-    });
-    yield mongoose_1.default.connect(______1.default.VMango, {
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
-        useCreateIndex: true,
-        useFindAndModify: false,
-    }).catch((error) => {
-        console.log(chalk_1.default.red(`❌𝐄𝐫𝐫𝐨𝐫: ${error}`));
-        process.exit(0);
-    });
+    try {
+        yield sequelize.authenticate();
+    }
+    catch (error) {
+        console.log(chalk_1.default.red(error));
+    }
+    try {
+        yield mongoose_1.default.connect(______1.default.VMango, {
+            useNewUrlParser: true,
+            useUnifiedTopology: true,
+            useCreateIndex: true,
+            useFindAndModify: false,
+        });
+    }
+    catch (error) {
+        console.log(chalk_1.default.red(error));
+    }
+    yield sequelize.sync();
     console.log(chalk_1.default.green("(𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬! "));
     // ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
     let commandHandler = new Map();
@@ -147,9 +148,9 @@ setInterval(() => {
         ӄ𝖗𝖞ӄ𝖓𝖟.ev.on("messages.upsert", (update) => __awaiter(void 0, void 0, void 0, function* () {
             messages_upsert_1.default.messages_upsert(update, ӄ𝖗𝖞ӄ𝖓𝖟, commandHandler, ӄ);
         }));
-        ӄ𝖗𝖞ӄ𝖓𝖟.ev.on("creds.update", (Re_Auth) => {
-            saveCreds(Re_Auth);
-        });
+        ӄ𝖗𝖞ӄ𝖓𝖟.ev.on("creds.update", (creds) => __awaiter(void 0, void 0, void 0, function* () {
+            saveCreds(creds);
+        }));
         return ӄ𝖗𝖞ӄ𝖓𝖟;
     });
     InitApi().catch((error) => console.log(chalk_1.default.red(error)));
