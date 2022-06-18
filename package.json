@@ -34,11 +34,7 @@
     "protobufjs": "^6.11.3",
     "ws": "^8.0.0",
     "@distube/yt-dlp": "*",
-    
-
-    "@adiwajshing/baileys": "^4.1.0",
-
-
+    "@adiwajshing/baileys": "*",
     "@adiwajshing/keyed-db": "^0.2.4",
     "@cicciosgamino/openweather-apis": "^5.0.1",
     "@ffmpeg-installer/ffmpeg": "^1.1.0",
