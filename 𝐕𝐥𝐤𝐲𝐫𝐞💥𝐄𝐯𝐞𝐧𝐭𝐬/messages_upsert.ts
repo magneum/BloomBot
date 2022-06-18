@@ -53,6 +53,7 @@ const MetaForDeny = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata(Vʟӄʏʀɛ.chatId)
 console.log(MetaForDeny.size);
 if (MetaForDeny.size > 200) return;
 }
+// ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
 if (Vʟӄʏʀɛ.isGroup) {
 await ServerDB.findOne(
 {
