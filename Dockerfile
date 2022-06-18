@@ -30,7 +30,7 @@ WORKDIR /Vlkyre
 RUN export TERM=xterm
 RUN pip install -r ⭕𝖈𝖆𝖗𝖆.txt && npm install --force --save && rm package-lock.json && npm install -g spotify-dl spdl-core
 RUN git config --global user.name 'KryKnz' && git config --global user.email 'krakinzkon@gmail.com' && git config pull.rebase false && git init --initial-branch=𝐕𝐥𝐤𝐲𝐫𝐞📡𝐏𝐫𝐨𝐭𝐨® && git fetch origin 𝐕𝐥𝐤𝐲𝐫𝐞📡𝐏𝐫𝐨𝐭𝐨® && git reset --hard origin/𝐕𝐥𝐤𝐲𝐫𝐞📡𝐏𝐫𝐨𝐭𝐨® 
-CMD python3 𝐕𝐥𝐤𝐲𝐫𝐞⭕𝖈𝖆𝖗𝖆.py
+CMD python3 ⭕𝖈𝖆𝖗𝖆.py
 # |⬡════════════════════════════════════════════|⌜ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⌬ ❝ ᴘᴏᴡᴇʀᴇᴅ ☊ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞ ⌟|═══════════════════════════════════════════⬡|
 # NOTE: THIS DOCKERFILE IS GENERATED VIA "apply-templates.sh"
 # PLEASE DO NOT EDIT IT DIRECTLY.
