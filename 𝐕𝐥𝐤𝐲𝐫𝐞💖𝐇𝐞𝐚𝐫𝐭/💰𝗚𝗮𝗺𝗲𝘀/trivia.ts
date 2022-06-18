@@ -131,7 +131,7 @@ Vʟӄʏʀɛ,
 await TUF.sendMessage(
 Vʟӄʏʀɛ.chatId,
 {
-text: `✥𝐔𝐬𝐞𝐫: ${Fox.pushName} 
+text: `✥𝐔𝐬𝐞𝐫: ${Vʟӄʏʀɛ.sName} 
 
 Press Below To Read How To Use This Command!`,
 footer: "⦓ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⦔",
