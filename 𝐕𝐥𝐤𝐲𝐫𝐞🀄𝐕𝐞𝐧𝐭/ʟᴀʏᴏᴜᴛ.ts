@@ -42,10 +42,10 @@ MOD: process.env.MOD,
 OFFLINE_RESPONSE: process.env.OFFLINE_RESPONSE,
 DATABASE_URL:
 process.env.DATABASE_URL === undefined
-? "./Vʟӄʏʀɛ.db"
+? "./𝕶𝖗𝖆𝖐𝖎𝖓𝖟𝕷𝖆𝖇®/ӄ.blind/Vʟӄʏʀɛ.db"
 : process.env.DATABASE_URL,
 DATABASE:
-process.env.DATABASE_URL === "./Vʟӄʏʀɛ.db"
+process.env.DATABASE_URL === "./𝕶𝖗𝖆𝖐𝖎𝖓𝖟𝕷𝖆𝖇®/ӄ.blind/Vʟӄʏʀɛ.db"
 ? new Sequelize({
 dialect: "sqlite",
 storage: process.env.DATABASE_URL,
