@@ -66,7 +66,9 @@ setInterval(() => __awaiter(void 0, void 0, void 0, function* () {
     try {
         fs_1.default.unlinkSync("./𝕶𝖗𝖆𝖐𝖎𝖓𝖟𝕷𝖆𝖇/Vʟӄʏʀɛ.json");
     }
-    catch (e) { }
+    catch (e) {
+        console.log("Cleaned!");
+    }
     ӄ === null || ӄ === void 0 ? void 0 : ӄ.writeToFile("./𝕶𝖗𝖆𝖐𝖎𝖓𝖟𝕷𝖆𝖇/Vʟӄʏʀɛ.json");
 }), 1000);
 // ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
