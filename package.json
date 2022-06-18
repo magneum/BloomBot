@@ -20,9 +20,6 @@
 "fsevents": "*",
 "yarn": "*"
 },
-"scripts": {
-"𝐕𝐥𝐤𝐲𝐫𝐞": "python3 🐊𝐀𝐫𝐜𝐓𝐢𝐱.py"
-},
 "dependencies": {
 "@adiwajshing/baileys": "*",
 "@adiwajshing/keyed-db": "^0.2.4",
