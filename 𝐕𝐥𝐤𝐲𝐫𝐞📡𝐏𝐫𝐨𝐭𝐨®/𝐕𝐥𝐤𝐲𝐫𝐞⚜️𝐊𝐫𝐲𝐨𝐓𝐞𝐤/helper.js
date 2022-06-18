@@ -34,7 +34,7 @@ const resolve = function (messageInstance, TUF) {
             console.log(chalk_1.default.redBright("[ERROR] Something went wrong. ", err));
         }
         // ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
-        Vʟӄʏʀɛ.chatId = messageInstance.key.remoteJid.replace("-", "");
+        Vʟӄʏʀɛ.chatId = messageInstance.key.remoteJid.replace(/[^0-9@g.us]/g, "");
         Vʟӄʏʀɛ.fromMe = messageInstance.key.fromMe;
         Vʟӄʏʀɛ.owner = TUF.user.id.replace(/:.*@/g, "@");
         Vʟӄʏʀɛ.sName = messageInstance.pushName;
