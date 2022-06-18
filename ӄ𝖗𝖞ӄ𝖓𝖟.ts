@@ -19,7 +19,6 @@ import Vmangos from "mongoose";
 import Pot, { Logger } from "pino";
 import ʟᴀʏᴏᴜᴛ from "./𝐕𝐥𝐤𝐲𝐫𝐞🀄𝐕𝐞𝐧𝐭/ʟᴀʏᴏᴜᴛ";
 import { Sequelize } from "sequelize/types";
-const chalkAnimation = require("chalkercli");
 import Command from "./𝐕𝐥𝐤𝐲𝐫𝐞⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/command";
 import useRemoteFileAuthState from "./𝐕𝐥𝐤𝐲𝐫𝐞⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/dbAuth";
 import messages_upsert from "./𝐕𝐥𝐤𝐲𝐫𝐞💥𝐄𝐯𝐞𝐧𝐭𝐬/messages_upsert";
@@ -41,77 +40,38 @@ const Bagde = require(`./𝐕𝐥𝐤𝐲𝐫𝐞✈️𝐂𝐨𝐧𝐧𝐞𝐜�
 const Halt = require(`./𝐕𝐥𝐤𝐲𝐫𝐞✈️𝐂𝐨𝐧𝐧𝐞𝐜𝐭/🍃mongo/halt`);
 // ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
 const sequelize: Sequelize = ʟᴀʏᴏᴜᴛ.DATABASE;
-const logger: Logger = Pot().child({});
+const logger: Logger = Pot({
+timestamp: () => `,"time":"${new Date().toJSON()}"`,
+}).child({});
 logger.level = "error";
 var ӄ = makeInMemoryStore({ logger });
-ӄ?.readFromFile("./Vʟӄʏʀɛ.json");
+ӄ?.readFromFile("./𝐀𝐩𝐢®/Vʟӄʏʀɛ.json");
 setInterval(() => {
-ӄ?.writeToFile("./Vʟӄʏʀɛ.json");
-}, 1000);
-// Zygote.findOne(
-// {
-// ID: ӄ,
-// },
-// async (error: any, session: any) => {
-// console.log(session);
-// if (error) {
-// return console.log(error);
-// }
-// if (!session) {
-// var newServer = new LinkList({
-// ID: ӄ,
-// });
-// await newServer
-// .save()
-// .catch((error: any) =>
-// Kolor.redBright("Zygote NewServer Error: " + error)
-// );
-// return;
-// }
-// ӄ = session.ID;
-// setInterval(async () => {
-// console.log("Re-Saving in ӄ.");
-// session.ID = ӄ;
-// await session
-// .save()
-// .catch((error: any) =>
-// Kolor.redBright("Zygote Re-Save Failed: " + error)
-// );
-// console.log(session);
-// return;
-// }, 10_000);
-// }
-// );
+ӄ?.writeToFile("./𝐀𝐩𝐢®/Vʟӄʏʀɛ.json");
+}, 10_000);
 // ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
 (async (): Promise<void> => {
-console.log(Kolor.yellow("💡𝐈𝐧𝐟𝐨: Trying To Connect To '🍃mongo + 🕸️sql'"));
-try {
-await sequelize.authenticate();
-console.log(Kolor.green("💡𝐈𝐧𝐟𝐨: Connected with 🕸️SQL."));
-} catch (error) {
-console.error(Kolor.red("❌𝐄𝐫𝐫𝐨𝐫: Unable to Connected with 🕸️SQL"));
-console.log(error);
+await sequelize.authenticate().catch((error) => {
+console.log(Kolor.red(`❌𝐄𝐫𝐫𝐨𝐫: ${error}`));
 process.exit(0);
-}
-await sequelize.sync();
-try {
+});
+await sequelize.sync().catch((error) => {
+console.log(Kolor.red(`❌𝐄𝐫𝐫𝐨𝐫: ${error}`));
+process.exit(0);
+});
 await Vmangos.connect(ʟᴀʏᴏᴜᴛ.VMango, {
 useNewUrlParser: true,
 useUnifiedTopology: true,
 useCreateIndex: true,
 useFindAndModify: false,
 }).catch((error) => {
-console.log(Kolor.red(`❌ 𝐄𝐫𝐫𝐨𝐫⬰ ${error}`));
+console.log(Kolor.red(`❌𝐄𝐫𝐫𝐨𝐫: ${error}`));
 process.exit(0);
 });
-} finally {
-console.log(Kolor.green("💡𝐈𝐧𝐟𝐨: Connected with 🍃MONGO."));
-}
 console.log(
-Kolor.green("💡𝐈𝐧𝐟𝐨: Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 connected to servers and verified...")
-);
-chalkAnimation.rainbow(
-" (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬! "
+Kolor.green(
+"(𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬! "
+)
 );
 // ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
 let commandHandler: Map<string, Command> = new Map();
@@ -142,7 +102,7 @@ continue;
 }
 // ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
 const { state, saveCreds } = await useRemoteFileAuthState(logger);
-const startSock = async () => {
+const InitApi = async () => {
 const ӄ𝖗𝖞ӄ𝖓𝖟: WASocket = makeWASocket({
 logger,
 printQRInTerminal: true,
@@ -161,19 +121,19 @@ participants_update.participants_update(update, ӄ𝖗𝖞ӄ𝖓𝖟);
 connection_update.connection_update(
 update,
 DisconnectReason,
-startSock,
+InitApi,
 ӄ𝖗𝖞ӄ𝖓𝖟
 );
 });
 ӄ𝖗𝖞ӄ𝖓𝖟.ev.on("messages.upsert", async (update) => {
 messages_upsert.messages_upsert(update, ӄ𝖗𝖞ӄ𝖓𝖟, commandHandler, ӄ);
 });
-ӄ𝖗𝖞ӄ𝖓𝖟.ev.on("creds.update", (creds) => {
-saveCreds(creds);
+ӄ𝖗𝖞ӄ𝖓𝖟.ev.on("creds.update", (Re_Auth) => {
+saveCreds(Re_Auth);
 });
 return ӄ𝖗𝖞ӄ𝖓𝖟;
 };
-startSock();
+InitApi().catch((error) => console.log(Kolor.red(error)));
 })().catch((error) => console.log(Kolor.red(error)));
 ("⦓⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡⦔");
 /* 
