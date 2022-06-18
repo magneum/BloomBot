@@ -6,8 +6,7 @@ FROM python:latest
 ENV 𝐕𝐥𝐤𝐲𝐫𝐞𝐀𝐩𝐢®"/venv"
 RUN python -m venv $𝐕𝐥𝐤𝐲𝐫𝐞𝐀𝐩𝐢®
 ENV PATH "$𝐕𝐥𝐤𝐲𝐫𝐞𝐀𝐩𝐢®/bin:$PATH"
-RUN apt update 
-RUN apt upgrade -y 
+RUN apt update && apt upgrade -y 
 RUN apt install aptitude -y
 RUN aptitude install jq -y
 RUN aptitude install git -y 
