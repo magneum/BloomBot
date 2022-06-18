@@ -1,7 +1,0 @@
-# Ignore artifacts:
-lib
-coverage
-*.lock
-.eslintrc.json
-src/WABinary/index.ts
-WAProto
