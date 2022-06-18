@@ -5,7 +5,6 @@
 ("⦓⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡⦔");
 import Vʟӄʏʀɛ from "./msb";
 import {
-MiscMessageGenerationOptions,
 AnyMessageContent,
 GroupParticipant,
 GroupMetadata,
@@ -31,29 +30,20 @@ if (type === MessageType.text) {
 ops = {
 text: content,
 };
+
 if (options?.contextInfo?.mentionedJid) {
 ops.mentions = options.contextInfo.mentionedJid;
 }
 res = await this.ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(jid, ops);
-// ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
 } else if (type === MessageType.sticker) {
 res = await this.ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(jid, {
 sticker: new Buffer(content),
 });
-// ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
 } else if (type === MessageType.audio) {
-ops = {
-text: content,
-};
-if (options?.contextInfo?.mentionedJid) {
-ops.mentions = options.contextInfo.mentionedJid;
-}
 res = await this.ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(jid, {
 audio: content,
 mimetype: "audio/mp4",
-quoted: ops,
 });
-// ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
 } else if (type === MessageType.image) {
 ops = {
 image: content,
@@ -66,29 +56,20 @@ ops.mentions = options.contextInfo.mentionedJid;
 }
 
 res = await this.ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(jid, ops);
-// ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
 } else if (type == MessageType.audio) {
-ops = {
-text: content,
-};
-if (options?.contextInfo?.mentionedJid) {
-ops.mentions = options.contextInfo.mentionedJid;
-}
 res = await this.ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(jid, {
 audio: content,
 mimetype: "audio/mp3",
-quoted: ops,
 });
-// ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
 } else if (type === MessageType.buttonsMessage) {
 ops = {
 text: content,
 };
+
 if (options?.contextInfo?.mentionedJid) {
 ops.mentions = options.contextInfo.mentionedJid;
 }
-res = await this.ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(jid, ops);
-// ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
+res = await this.ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(jid, content);
 } else if (type == MessageType.video) {
 ops = {
 video: content,
@@ -96,8 +77,8 @@ video: content,
 if (options?.caption) {
 ops.caption = options.caption;
 }
+
 res = await this.ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(jid, ops);
-// ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
 } else if (type === MessageType.document) {
 ops = {
 text: options.caption,
@@ -115,7 +96,6 @@ res = await this.ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(jid, ops2);
 }
 return res;
 }
-// ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
 async deleteMessage(jid: string, key: any) {
 await this.ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(jid, {
 delete: key,
