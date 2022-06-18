@@ -13,10 +13,12 @@ makeInMemoryStore,
 WASocket,
 } from "@adiwajshing/baileys";
 import fs from "fs";
+import axios from "axios";
 import Kolor from "chalk";
 import { join } from "path";
 import Vmangos from "mongoose";
 import Pot, { Logger } from "pino";
+import moment from "moment-timezone";
 import ʟᴀʏᴏᴜᴛ from "./𝐕𝐥𝐤𝐲𝐫𝐞🀄𝐕𝐞𝐧𝐭/ʟᴀʏᴏᴜᴛ";
 import { Sequelize } from "sequelize/types";
 import Command from "./𝐕𝐥𝐤𝐲𝐫𝐞⚜️𝐊𝐫𝐲𝐨𝐓𝐞𝐤/command";
@@ -86,27 +88,55 @@ try {
 commandHandler.set(command.name, command);
 if (ʟᴀʏᴏᴜᴛ.Heroku_App === undefined) {
 console.log(
-  Kolor.green(Files + ":   ") +
-    Kolor.blue(File.toLocaleUpperCase() + " ✔️")
+Kolor.green(Files + ":   ") +
+Kolor.blue(File.toLocaleUpperCase() + " ✔️")
 );
 }
 } catch (error) {
 console.log(
 Kolor.red("❌𝐄𝐫𝐫𝐨𝐫: " + error + " | ") +
-  Kolor.green(Files + " :") +
-  Kolor.blue(File)
+Kolor.green(Files + " :") +
+Kolor.blue(File)
 );
 continue;
 }
 }
 }
 // ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
+const color = (text: any, color: any) => {
+return !color
+? Kolor.green(text)
+: color.startsWith("#")
+? Kolor.hex(color)(text)
+: Kolor.keyword(color)(text);
+};
+const checkVersion = async () => {
+try {
+let BASE_URL =
+"https://web.whatsapp.com/check-update?version=1&platform=web";
+const { data: JSONData } = await axios.get(BASE_URL);
+let version = JSONData.currentVersion.split(".").map((v) => parseInt(v));
+return version;
+} catch (err) {
+console.log(
+color("[ SERVER ]", "aqua"),
+moment.tz("Asia/Kolkata").format("DD/MM/YY HH:mm:ss"),
+color(
+"Connection are required please check your connection...",
+"yellow"
+)
+);
+}
+};
+// ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
 const { state, saveCreds } = await useRemoteFileAuthState(logger);
 const InitApi = async () => {
 const ӄ𝖗𝖞ӄ𝖓𝖟: WASocket = makeWASocket({
 logger,
-printQRInTerminal: true,
 auth: state,
+printQRInTerminal: true,
+version: await checkVersion(),
+defaultQueryTimeoutMs: undefined,
 browser: ["Vlkyre", "Chrome", "4.0.0"],
 getMessage: async (key) => {
 return {};

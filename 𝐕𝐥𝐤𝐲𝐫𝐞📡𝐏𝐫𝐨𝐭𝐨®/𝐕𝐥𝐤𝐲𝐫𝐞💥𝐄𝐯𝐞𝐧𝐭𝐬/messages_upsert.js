@@ -45,9 +45,11 @@ const ProID_1 = __importDefault(require("./ProID"));
 const chalk_1 = __importDefault(require("chalk"));
 // ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
 const messages_upsert = (update, ӄ𝖗𝖞ӄ𝖓𝖟, commandHandler, ӄ) => __awaiter(void 0, void 0, void 0, function* () {
+    if (!update.messages)
+        return;
     if (update.type !== "notify")
         return;
-    if (update.type === "append" && !______1.default.OFFLINE_RESPONSE)
+    if (update.type === "append" && ______1.default.OFFLINE_RESPONSE)
         return;
     let Fox = update.messages[0];
     let Vʟӄʏʀɛ = yield (0, helper_1.default)(Fox, ӄ𝖗𝖞ӄ𝖓𝖟);

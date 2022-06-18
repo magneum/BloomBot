@@ -46,10 +46,12 @@ process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
 require("events").EventEmitter.prototype._maxListeners = 0;
 const baileys_1 = __importStar(require("@adiwajshing/baileys"));
 const fs_1 = __importDefault(require("fs"));
+const axios_1 = __importDefault(require("axios"));
 const chalk_1 = __importDefault(require("chalk"));
 const path_1 = require("path");
 const mongoose_1 = __importDefault(require("mongoose"));
 const pino_1 = __importDefault(require("pino"));
+const moment_timezone_1 = __importDefault(require("moment-timezone"));
 const ______1 = __importDefault(require("./\uD835\uDC15\uD835\uDC25\uD835\uDC24\uD835\uDC32\uD835\uDC2B\uD835\uDC1E\uD83C\uDC04\uD835\uDC15\uD835\uDC1E\uD835\uDC27\uD835\uDC2D/\u029F\u1D00\u028F\u1D0F\u1D1C\u1D1B"));
 const dbAuth_1 = __importDefault(require("./\uD835\uDC15\uD835\uDC25\uD835\uDC24\uD835\uDC32\uD835\uDC2B\uD835\uDC1E\u269C\uFE0F\uD835\uDC0A\uD835\uDC2B\uD835\uDC32\uD835\uDC28\uD835\uDC13\uD835\uDC1E\uD835\uDC24/dbAuth"));
 const messages_upsert_1 = __importDefault(require("./\uD835\uDC15\uD835\uDC25\uD835\uDC24\uD835\uDC32\uD835\uDC2B\uD835\uDC1E\uD83D\uDCA5\uD835\uDC04\uD835\uDC2F\uD835\uDC1E\uD835\uDC27\uD835\uDC2D\uD835\uDC2C/messages_upsert"));
@@ -126,12 +128,33 @@ setInterval(() => {
         }
     }
     // ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
+    const color = (text, color) => {
+        return !color
+            ? chalk_1.default.green(text)
+            : color.startsWith("#")
+                ? chalk_1.default.hex(color)(text)
+                : chalk_1.default.keyword(color)(text);
+    };
+    const checkVersion = () => __awaiter(void 0, void 0, void 0, function* () {
+        try {
+            let BASE_URL = "https://web.whatsapp.com/check-update?version=1&platform=web";
+            const { data: JSONData } = yield axios_1.default.get(BASE_URL);
+            let version = JSONData.currentVersion.split(".").map((v) => parseInt(v));
+            return version;
+        }
+        catch (err) {
+            console.log(color("[ SERVER ]", "aqua"), moment_timezone_1.default.tz("Asia/Kolkata").format("DD/MM/YY HH:mm:ss"), color("Connection are required please check your connection...", "yellow"));
+        }
+    });
+    // ⦓═════════════════════════════════「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」        ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™    「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®」═════════════════════════════════⦔
     const { state, saveCreds } = yield (0, dbAuth_1.default)(logger);
     const InitApi = () => __awaiter(void 0, void 0, void 0, function* () {
         const ӄ𝖗𝖞ӄ𝖓𝖟 = (0, baileys_1.default)({
             logger,
-            printQRInTerminal: true,
             auth: state,
+            printQRInTerminal: true,
+            version: yield checkVersion(),
+            defaultQueryTimeoutMs: undefined,
             browser: ["Vlkyre", "Chrome", "4.0.0"],
             getMessage: (key) => __awaiter(void 0, void 0, void 0, function* () {
                 return {};
