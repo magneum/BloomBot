@@ -236,7 +236,7 @@ Hey there welcome to the group of Vlkyre Enabled chat.
             if (!Vʟӄʏʀɛ.fromMe &&
                 userHalt.PermaTimeOut - (Date.now() - userHalt.TimeOut) > 0) {
                 return yield TUF.sendMessage(Vʟӄʏʀɛ.chatId, `┌─「 𝐕𝐥𝐤𝐲𝐫𝐞 𝐏𝐫𝐨𝐭𝐨® 」
-├• *ɴᴀᴍᴇ:* ${Fox.pushName}
+├• *ɴᴀᴍᴇ:* ${Vʟӄʏʀɛ.sName}
 ├• *ᴍᴇɴᴛɪᴏɴ:* @${Vʟӄʏʀɛ.sender.replace(/[^\d+]/g, "")}
 ├• *ᴄᴏᴍᴍᴀɴᴅ:* ${Vʟӄʏʀɛ.commandName}
 └────────────────◇

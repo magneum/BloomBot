@@ -59,7 +59,7 @@ module.exports = {
                 */
                 if (ǟʀɢʊʍɛռȶ.length === 0) {
                     yield TUF.sendMessage(Vʟӄʏʀɛ.chatId, {
-                        text: `✥𝐔𝐬𝐞𝐫: ${Fox.pushName} 
+                        text: `✥𝐔𝐬𝐞𝐫: ${Vʟӄʏʀɛ.sName} 
 
 Press Below To Read How To Use This Command!`,
                         footer: "⦓ 𝐕𝐥𝐤𝐲𝐫𝐞 ⦔",
@@ -87,7 +87,7 @@ Option 1 - ${______1.default.MuveOn}${dotScrpt.toUpperCase()} _text_`,
                 */
                 if (!ǟʀɢʊʍɛռȶ) {
                     yield TUF.sendMessage(Vʟӄʏʀɛ.chatId, {
-                        text: `✥𝐔𝐬𝐞𝐫: ${Fox.pushName} 
+                        text: `✥𝐔𝐬𝐞𝐫: ${Vʟӄʏʀɛ.sName} 
 
 Press Below To Read How To Use This Command!`,
                         footer: "⦓ 𝐕𝐥𝐤𝐲𝐫𝐞 ⦔",
