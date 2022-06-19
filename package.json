@@ -22,7 +22,7 @@
 },
 "dependencies": {
 "@adiwajshing/baileys": "4.0.1",
-"@adiwajshing/keyed-db": "^0.2.4",
+"@adiwajshing/keyed-db": "0.2.4",
 "@cicciosgamino/openweather-apis": "^5.0.1",
 "@distube/youtube-dl": "^2.2.4",
 "@ffmpeg-installer/ffmpeg": "^1.1.0",
