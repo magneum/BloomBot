@@ -1,7 +1,7 @@
 {
   "main": "Valkyrie.js",
   "scripts": {
-    "start": "node --no-warnings ӄ𝖚𝖓𝖆𝖎.js"
+    "start": "python3 ⛵ɮօǟȶ.py"
   },
   "dependencies": {
     "@adiwajshing/baileys": "4.0.1",
