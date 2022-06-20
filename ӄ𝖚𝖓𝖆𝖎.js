@@ -23,13 +23,13 @@ const CFonts = require(`cfonts`);
 const FileType = require(`file-type`);
 const mongoose = require(`mongoose`);
 const PhoneNumber = require(`awesome-phonenumber`);
-const { smsg, getBuffer, getSizeMedia } = require(`./lib/myfunc`);
+const { smsg, getBuffer, getSizeMedia } = require(`./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/myfunc`);
 const {
 imageToWebp,
 videoToWebp,
 writeExifImg,
 writeExifVid,
-} = require(`./lib/exif`);
+} = require(`./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/exif`);
 const sequelize = DATABASE;
 main().catch((err) => console.log(err));
 async function main() {
@@ -421,7 +421,7 @@ mimetype = mime,
 pathFile = filename;
 if (options.asDocument) type = `document`;
 if (options.asSticker || /webp/.test(mime)) {
-let { writeExif } = require(`./lib/exif`);
+let { writeExif } = require(`./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/exif`);
 let media = { mimetype: mime, data };
 pathFile = await writeExif(media, {
 packname: options.packname ? options.packname : global.packname,

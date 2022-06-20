@@ -11,7 +11,7 @@ getBuffer,
 jsonformat,
 GIFBufferToVideoBuffer,
 getRandom,
-} = require(`../../lib/myfunc`);
+} = require(`../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/myfunc`);
 const fs = require(`fs`);
 let yts = require(`yt-search`);
 const util = require(`util`);
@@ -19,12 +19,12 @@ const hxz = require(`hxz-api`);
 const chalk = require(`chalk`);
 const db = require(`quick.db`);
 const axios = require(`axios`);
-let { yta } = require(`../../lib/y2mate`);
 const canvacord = require(`canvacord`);
 const { Character } = require(`mailist`);
 const moment = require(`moment-timezone`);
 const Carbon = require(`unofficial-carbon-now`);
 const { exec, execSync } = require(`child_process`);
+let { yta } = require(`../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/y2mate`);
 const { N𝖊𝖊𝖉__A𝖗𝖌𝖘 } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌀B𝖚𝖙𝖙𝖔𝖓𝖘/N𝖊𝖊𝖉__A𝖗𝖌𝖘");
 const { Sticker, StickerTypes } = require(`wa-sticker-formatter`);
 const { Image_Button } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌀B𝖚𝖙𝖙𝖔𝖓𝖘/Image_Button");

@@ -11,7 +11,7 @@ getBuffer,
 jsonformat,
 GIFBufferToVideoBuffer,
 getRandom,
-} = require(`../../lib/myfunc`);
+} = require(`../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/myfunc`);
 const fs = require(`fs`);
 const util = require(`util`);
 const hxz = require(`hxz-api`);

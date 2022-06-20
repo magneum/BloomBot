@@ -11,7 +11,7 @@ const {
   jsonformat,
   GIFBufferToVideoBuffer,
   getRandom,
-} = require(`../../lib/myfunc`);
+} = require(`../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/myfunc`);
 const fs = require(`fs`);
 const util = require(`util`);
 const hxz = require(`hxz-api`);
@@ -21,9 +21,9 @@ const axios = require(`axios`);
 const canvacord = require(`canvacord`);
 const { Character } = require(`mailist`);
 const moment = require(`moment-timezone`);
-let { TelegraPh } = require(`./lib/uploader`);
 const Carbon = require(`unofficial-carbon-now`);
 const { exec, execSync } = require(`child_process`);
+let { TelegraPh } = require(`./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/uploader`);
 const { N𝖊𝖊𝖉__A𝖗𝖌𝖘 } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌀B𝖚𝖙𝖙𝖔𝖓𝖘/N𝖊𝖊𝖉__A𝖗𝖌𝖘");
 const { Sticker, StickerTypes } = require(`wa-sticker-formatter`);
 const { Image_Button } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌀B𝖚𝖙𝖙𝖔𝖓𝖘/Image_Button");
