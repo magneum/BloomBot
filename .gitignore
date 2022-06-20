@@ -13,13 +13,16 @@ pids
 *.seed
 *.pid.lock
 package-lock.json
+Ѷ𝖆𝖑.env
 lib-cov
 coverage
 *.lcov
 .nyc_output
 .grunt
+Ѷ𝖆𝖑.db
 bower_components
 .lock-wscript
+json.sqlite
 build/Release
 node_modules/
 jspm_packages/
