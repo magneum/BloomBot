@@ -71,7 +71,9 @@ try {
 await sequelize.authenticate();
 console.log(chalk.green(`💡𝐈𝐧𝐟𝐨: Connected with Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧆𝕯𝖆𝖙𝖆𝖇𝖆𝖘𝖊.`));
 } catch (error) {
-console.error(chalk.red(`❌𝐄𝐫𝐫𝐨𝐫: Unable to Connected with Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧆𝕯𝖆𝖙𝖆𝖇𝖆𝖘𝖊`));
+console.error(
+chalk.red(`❌𝐄𝐫𝐫𝐨𝐫: Unable to Connected with Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧆𝕯𝖆𝖙𝖆𝖇𝖆𝖘𝖊`)
+);
 console.log(error);
 process.exit(0);
 }
@@ -104,8 +106,15 @@ const { grp_participants } = require("./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌗E𝖛�
 return await grp_participants(grp, ӄ𝖚𝖓𝖆𝖎);
 });
 ӄ𝖚𝖓𝖆𝖎.ev.on(`connection.update`, async (update) => {
-const { connection_update } = require("./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌗E𝖛𝖊𝖓𝖙𝖘/connection_update");
+const {
+connection_update,
+} = require("./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌗E𝖛𝖊𝖓𝖙𝖘/connection_update");
 return await connection_update(update, startӄ𝖚𝖓𝖆𝖎, ӄ𝖚𝖓𝖆𝖎);
+});
+
+ӄ𝖚𝖓𝖆𝖎.ev.on("contacts.update", async (update) => {
+const { contacts_update } = require("./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌗E𝖛𝖊𝖓𝖙𝖘/contacts_update");
+return await contacts_update(update);
 });
 
 ӄ𝖚𝖓𝖆𝖎.ev.on(`creds.update`, (creds) => {

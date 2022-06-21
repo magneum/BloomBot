@@ -7,11 +7,10 @@ require(`./𝕷𝖆ყO𝖚𝖙`);
 const fs = require(`fs`);
 const util = require(`util`);
 const chalk = require(`chalk`);
-// const Levels = require(`discord-xp`);
-// const canvacord = require(`canvacord`);
+const Levels = require(`discord-xp`);
+const canvacord = require(`canvacord`);
 const moment = require(`moment-timezone`);
-const { Image_Button } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌀B𝖚𝖙𝖙𝖔𝖓𝖘/Image_Button");
-// Levels.setURL(mongodb);
+Levels.setURL(mongodb);
 ("⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔");
 module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎, chatUpdate, Ѷ𝖎𝖔𝖓) => {
   try {
@@ -244,282 +243,282 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           });
         }
         break;
-        "⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔";
-        //       case `lead`:
-        //       case `leaderboard`:
-        //         const mems_id = new Array();
-        //         const lb = await Levels.fetchLeaderboard(`bot`, 10);
-        //         let lbtext = `*━━━━『💫LeaderBoard💫』━━━━*
 
-        // `;
-        //         for (let i = 0; i < lb.length; i++) {
-        //           const levelRole = lb[i].level;
-        //           var role = `Warrior`;
-        //           if (levelRole <= 2) {
-        //             var role = `Elite III`;
-        //           } else if (levelRole <= 4) {
-        //             var role = `Elite II`;
-        //           } else if (levelRole <= 6) {
-        //             var role = `Elite I`;
-        //           } else if (levelRole <= 8) {
-        //             var role = `Master IV`;
-        //           } else if (levelRole <= 10) {
-        //             var role = `Master III`;
-        //           } else if (levelRole <= 12) {
-        //             var role = `Master II`;
-        //           } else if (levelRole <= 14) {
-        //             var role = `Master I`;
-        //           } else if (levelRole <= 16) {
-        //             var role = `Grandmaster V`;
-        //           } else if (levelRole <= 18) {
-        //             var role = `Grandmaster IV`;
-        //           } else if (levelRole <= 20) {
-        //             var role = `Grandmaster III`;
-        //           } else if (levelRole <= 22) {
-        //             var role = `Grandmaster II`;
-        //           } else if (levelRole <= 24) {
-        //             var role = `Grandmaster I`;
-        //           } else if (levelRole <= 26) {
-        //             var role = `Epic V`;
-        //           } else if (levelRole <= 28) {
-        //             var role = `Epic IV`;
-        //           } else if (levelRole <= 30) {
-        //             var role = `Epic III`;
-        //           } else if (levelRole <= 32) {
-        //             var role = `Epic II`;
-        //           } else if (levelRole <= 34) {
-        //             var role = `Epic I`;
-        //           } else if (levelRole <= 36) {
-        //             var role = `Legend V`;
-        //           } else if (levelRole <= 38) {
-        //             var role = `Legend IV`;
-        //           } else if (levelRole <= 40) {
-        //             var role = `Legend III`;
-        //           } else if (levelRole <= 42) {
-        //             var role = `Legend II`;
-        //           } else if (levelRole <= 44) {
-        //             var role = `Legend I`;
-        //           } else if (levelRole <= 46) {
-        //             var role = `Mythic`;
-        //           } else if (levelRole <= 50) {
-        //             var role = `Mythic Glory`;
-        //           }
-        //           let name = await user.findOne({ id: lb[i].userID });
-        //           lbtext += `${i + 1}#
-        // *🔰Name*: ${name.name}
-        // *🎐Level*: ${lb[i].level}
-        // *🍀Exp*: ${lb[i].xp}
-        // *〽️Role*: ${role}
+      //       case `lead`:
+      //       case `leaderboard`:
+      //         const mems_id = new Array();
+      //         const lb = await Levels.fetchLeaderboard(`bot`, 10);
+      //         let lbtext = `*━━━━『💫LeaderBoard💫』━━━━*
 
-        // `;
-        //           mems_id.push(lb[i].userID);
-        //         }
-        //         Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.reply(lbtext);
-        //         break;
-        "⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔";
-        //       case `rank`:
-        //         const userq = await Levels.fetch(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender, `bot`);
-        //         const levelRoleq = userq.level;
-        //         var role = `Warrior`;
-        //         if (levelRoleq <= 2) {
-        //           var role = `Elite III`;
-        //         } else if (levelRoleq <= 4) {
-        //           var role = `Elite II`;
-        //         } else if (levelRoleq <= 6) {
-        //           var role = `Elite I`;
-        //         } else if (levelRoleq <= 8) {
-        //           var role = `Master IV`;
-        //         } else if (levelRoleq <= 10) {
-        //           var role = `Master III`;
-        //         } else if (levelRoleq <= 12) {
-        //           var role = `Master II`;
-        //         } else if (levelRoleq <= 14) {
-        //           var role = `Master I`;
-        //         } else if (levelRoleq <= 16) {
-        //           var role = `Grandmaster V`;
-        //         } else if (levelRoleq <= 18) {
-        //           var role = `Grandmaster IV`;
-        //         } else if (levelRoleq <= 20) {
-        //           var role = `Grandmaster III`;
-        //         } else if (levelRoleq <= 22) {
-        //           var role = `Grandmaster II`;
-        //         } else if (levelRoleq <= 24) {
-        //           var role = `Grandmaster I`;
-        //         } else if (levelRoleq <= 26) {
-        //           var role = `Epic V`;
-        //         } else if (levelRoleq <= 28) {
-        //           var role = `Epic IV`;
-        //         } else if (levelRoleq <= 30) {
-        //           var role = `Epic III`;
-        //         } else if (levelRoleq <= 32) {
-        //           var role = `Epic II`;
-        //         } else if (levelRoleq <= 34) {
-        //           var role = `Epic I`;
-        //         } else if (levelRoleq <= 36) {
-        //           var role = `Legend V`;
-        //         } else if (levelRoleq <= 38) {
-        //           var role = `Legend IV`;
-        //         } else if (levelRoleq <= 40) {
-        //           var role = `Legend III`;
-        //         } else if (levelRoleq <= 42) {
-        //           var role = `Legend II`;
-        //         } else if (levelRoleq <= 44) {
-        //           var role = `Legend I`;
-        //         } else if (levelRoleq <= 46) {
-        //           var role = `Mythic`;
-        //         } else if (levelRoleq <= 50) {
-        //           var role = `Mythic Glory`;
-        //         }
-        //         let disc = Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender.substring(3, 7);
-        //         let textr = ``;
-        //         if (pushName) {
-        //           textr += `*${pushName}#${disc}'s* Exp
+      // `;
+      //         for (let i = 0; i < lb.length; i++) {
+      //           const levelRole = lb[i].level;
+      //           var role = `Warrior`;
+      //           if (levelRole <= 2) {
+      //             var role = `Elite III`;
+      //           } else if (levelRole <= 4) {
+      //             var role = `Elite II`;
+      //           } else if (levelRole <= 6) {
+      //             var role = `Elite I`;
+      //           } else if (levelRole <= 8) {
+      //             var role = `Master IV`;
+      //           } else if (levelRole <= 10) {
+      //             var role = `Master III`;
+      //           } else if (levelRole <= 12) {
+      //             var role = `Master II`;
+      //           } else if (levelRole <= 14) {
+      //             var role = `Master I`;
+      //           } else if (levelRole <= 16) {
+      //             var role = `Grandmaster V`;
+      //           } else if (levelRole <= 18) {
+      //             var role = `Grandmaster IV`;
+      //           } else if (levelRole <= 20) {
+      //             var role = `Grandmaster III`;
+      //           } else if (levelRole <= 22) {
+      //             var role = `Grandmaster II`;
+      //           } else if (levelRole <= 24) {
+      //             var role = `Grandmaster I`;
+      //           } else if (levelRole <= 26) {
+      //             var role = `Epic V`;
+      //           } else if (levelRole <= 28) {
+      //             var role = `Epic IV`;
+      //           } else if (levelRole <= 30) {
+      //             var role = `Epic III`;
+      //           } else if (levelRole <= 32) {
+      //             var role = `Epic II`;
+      //           } else if (levelRole <= 34) {
+      //             var role = `Epic I`;
+      //           } else if (levelRole <= 36) {
+      //             var role = `Legend V`;
+      //           } else if (levelRole <= 38) {
+      //             var role = `Legend IV`;
+      //           } else if (levelRole <= 40) {
+      //             var role = `Legend III`;
+      //           } else if (levelRole <= 42) {
+      //             var role = `Legend II`;
+      //           } else if (levelRole <= 44) {
+      //             var role = `Legend I`;
+      //           } else if (levelRole <= 46) {
+      //             var role = `Mythic`;
+      //           } else if (levelRole <= 50) {
+      //             var role = `Mythic Glory`;
+      //           }
+      //           let name = await user.findOne({ id: lb[i].userID });
+      //           lbtext += `${i + 1}#
+      // *🔰Name*: ${name.name}
+      // *🎐Level*: ${lb[i].level}
+      // *🍀Exp*: ${lb[i].xp}
+      // *〽️Role*: ${role}
 
-        // `;
-        //         } else {
-        //           textr += `*${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender}#${disc}'s* Exp
+      // `;
+      //           mems_id.push(lb[i].userID);
+      //         }
+      //         Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.reply(lbtext);
+      //         break;
 
-        // `;
-        //         }
-        //         textr += `*🍀Exp*: ${userq.xp} / ${Levels.xpFor(userq.level + 1)}
-        // *🎐Level*: ${userq.level}
-        // *🔮️Role*: ${role}`;
-        //         try {
-        //           ppuser = await ӄ𝖚𝖓𝖆𝖎.profilePictureUrl(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender, `image`);
-        //         } catch {
-        //           ppuser = `https://www.linkpicture.com/q/IMG-20220118-WA0387.png`;
-        //         }
-        //         const rank = new canvacord.Rank()
-        //           .setAvatar(ppuser)
-        //           .setLevel(userq.level)
-        //           .setLevelColor(`#ffa200`, `#ffa200`)
-        //           .setCurrentXP(userq.xp)
-        //           .setOverlay(`#000000`, 100, false)
-        //           .setRequiredXP(Levels.xpFor(userq.level + 1))
-        //           .setProgressBar(`#ffa200`, `COLOR`)
-        //           .setRank(0, role, false)
-        //           .setBackground(`COLOR`, `#000000`)
-        //           .setUsername(pushName)
-        //           .setDiscriminator(disc);
-        //         rank.build().then(async (data) => {
-        //           ӄ𝖚𝖓𝖆𝖎.sendMessage(
-        //             Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
-        //             { image: data, caption: textr },
-        //             { quoted: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 }
-        //           );
-        //         });
-        //         break;
-        "⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔";
-        //       case `profile`:
-        //         const userw = await Levels.fetch(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender, `bot`);
-        //         const levelRole = userw.level;
-        //         var role = `Warrior`;
-        //         if (levelRole <= 2) {
-        //           var role = `Elite III`;
-        //         } else if (levelRole <= 4) {
-        //           var role = `Elite II`;
-        //         } else if (levelRole <= 6) {
-        //           var role = `Elite I`;
-        //         } else if (levelRole <= 8) {
-        //           var role = `Master IV`;
-        //         } else if (levelRole <= 10) {
-        //           var role = `Master III`;
-        //         } else if (levelRole <= 12) {
-        //           var role = `Master II`;
-        //         } else if (levelRole <= 14) {
-        //           var role = `Master I`;
-        //         } else if (levelRole <= 16) {
-        //           var role = `Grandmaster V`;
-        //         } else if (levelRole <= 18) {
-        //           var role = `Grandmaster IV`;
-        //         } else if (levelRole <= 20) {
-        //           var role = `Grandmaster III`;
-        //         } else if (levelRole <= 22) {
-        //           var role = `Grandmaster II`;
-        //         } else if (levelRole <= 24) {
-        //           var role = `Grandmaster I`;
-        //         } else if (levelRole <= 26) {
-        //           var role = `Epic V`;
-        //         } else if (levelRole <= 28) {
-        //           var role = `Epic IV`;
-        //         } else if (levelRole <= 30) {
-        //           var role = `Epic III`;
-        //         } else if (levelRole <= 32) {
-        //           var role = `Epic II`;
-        //         } else if (levelRole <= 34) {
-        //           var role = `Epic I`;
-        //         } else if (levelRole <= 36) {
-        //           var role = `Legend V`;
-        //         } else if (levelRole <= 38) {
-        //           var role = `Legend IV`;
-        //         } else if (levelRole <= 40) {
-        //           var role = `Legend III`;
-        //         } else if (levelRole <= 42) {
-        //           var role = `Legend II`;
-        //         } else if (levelRole <= 44) {
-        //           var role = `Legend I`;
-        //         } else if (levelRole <= 46) {
-        //           var role = `Mythic`;
-        //         } else if (levelRole <= 50) {
-        //           var role = `Mythic Glory`;
-        //         }
-        //         let bio = ``;
-        //         try {
-        //           bio = (await ӄ𝖚𝖓𝖆𝖎.fetchStatus(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender)).status;
-        //         } catch (error) {
-        //           console.log(error);
-        //           bio = `None`;
-        //         }
-        //         let disec = Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender.substring(3, 7);
-        //         let tex = ``;
-        //         if (pushName) {
-        //           tex += `*🍃Name*: ${pushName}#${disec}
+      //       case `rank`:
+      //         const userq = await Levels.fetch(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender, `bot`);
+      //         const levelRoleq = userq.level;
+      //         var role = `Warrior`;
+      //         if (levelRoleq <= 2) {
+      //           var role = `Elite III`;
+      //         } else if (levelRoleq <= 4) {
+      //           var role = `Elite II`;
+      //         } else if (levelRoleq <= 6) {
+      //           var role = `Elite I`;
+      //         } else if (levelRoleq <= 8) {
+      //           var role = `Master IV`;
+      //         } else if (levelRoleq <= 10) {
+      //           var role = `Master III`;
+      //         } else if (levelRoleq <= 12) {
+      //           var role = `Master II`;
+      //         } else if (levelRoleq <= 14) {
+      //           var role = `Master I`;
+      //         } else if (levelRoleq <= 16) {
+      //           var role = `Grandmaster V`;
+      //         } else if (levelRoleq <= 18) {
+      //           var role = `Grandmaster IV`;
+      //         } else if (levelRoleq <= 20) {
+      //           var role = `Grandmaster III`;
+      //         } else if (levelRoleq <= 22) {
+      //           var role = `Grandmaster II`;
+      //         } else if (levelRoleq <= 24) {
+      //           var role = `Grandmaster I`;
+      //         } else if (levelRoleq <= 26) {
+      //           var role = `Epic V`;
+      //         } else if (levelRoleq <= 28) {
+      //           var role = `Epic IV`;
+      //         } else if (levelRoleq <= 30) {
+      //           var role = `Epic III`;
+      //         } else if (levelRoleq <= 32) {
+      //           var role = `Epic II`;
+      //         } else if (levelRoleq <= 34) {
+      //           var role = `Epic I`;
+      //         } else if (levelRoleq <= 36) {
+      //           var role = `Legend V`;
+      //         } else if (levelRoleq <= 38) {
+      //           var role = `Legend IV`;
+      //         } else if (levelRoleq <= 40) {
+      //           var role = `Legend III`;
+      //         } else if (levelRoleq <= 42) {
+      //           var role = `Legend II`;
+      //         } else if (levelRoleq <= 44) {
+      //           var role = `Legend I`;
+      //         } else if (levelRoleq <= 46) {
+      //           var role = `Mythic`;
+      //         } else if (levelRoleq <= 50) {
+      //           var role = `Mythic Glory`;
+      //         }
+      //         let disc = Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender.substring(3, 7);
+      //         let textr = ``;
+      //         if (pushName) {
+      //           textr += `*${pushName}#${disc}'s* Exp
 
-        // `;
-        //           tex += `*🔰Number*: ${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender}
+      // `;
+      //         } else {
+      //           textr += `*${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender}#${disc}'s* Exp
 
-        // `;
-        //         }
-        //         if (bio.status) {
-        //           tex += `*🏳 Bio*: ${bio}
+      // `;
+      //         }
+      //         textr += `*🍀Exp*: ${userq.xp} / ${Levels.xpFor(userq.level + 1)}
+      // *🎐Level*: ${userq.level}
+      // *🔮️Role*: ${role}`;
+      //         try {
+      //           ppuser = await ӄ𝖚𝖓𝖆𝖎.profilePictureUrl(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender, `image`);
+      //         } catch {
+      //           ppuser = `https://www.linkpicture.com/q/IMG-20220118-WA0387.png`;
+      //         }
+      //         const rank = new canvacord.Rank()
+      //           .setAvatar(ppuser)
+      //           .setLevel(userq.level)
+      //           .setLevelColor(`#ffa200`, `#ffa200`)
+      //           .setCurrentXP(userq.xp)
+      //           .setOverlay(`#000000`, 100, false)
+      //           .setRequiredXP(Levels.xpFor(userq.level + 1))
+      //           .setProgressBar(`#ffa200`, `COLOR`)
+      //           .setRank(0, role, false)
+      //           .setBackground(`COLOR`, `#000000`)
+      //           .setUsername(pushName)
+      //           .setDiscriminator(disc);
+      //         rank.build().then(async (data) => {
+      //           ӄ𝖚𝖓𝖆𝖎.sendMessage(
+      //             Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
+      //             { image: data, caption: textr },
+      //             { quoted: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 }
+      //           );
+      //         });
+      //         break;
 
-        // `;
-        //         }
-        //         tex += `*🕹XP*: ${userw.xp} / ${Levels.xpFor(userw.level + 1)}
+      //       case `profile`:
+      //         const userw = await Levels.fetch(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender, `bot`);
+      //         const levelRole = userw.level;
+      //         var role = `Warrior`;
+      //         if (levelRole <= 2) {
+      //           var role = `Elite III`;
+      //         } else if (levelRole <= 4) {
+      //           var role = `Elite II`;
+      //         } else if (levelRole <= 6) {
+      //           var role = `Elite I`;
+      //         } else if (levelRole <= 8) {
+      //           var role = `Master IV`;
+      //         } else if (levelRole <= 10) {
+      //           var role = `Master III`;
+      //         } else if (levelRole <= 12) {
+      //           var role = `Master II`;
+      //         } else if (levelRole <= 14) {
+      //           var role = `Master I`;
+      //         } else if (levelRole <= 16) {
+      //           var role = `Grandmaster V`;
+      //         } else if (levelRole <= 18) {
+      //           var role = `Grandmaster IV`;
+      //         } else if (levelRole <= 20) {
+      //           var role = `Grandmaster III`;
+      //         } else if (levelRole <= 22) {
+      //           var role = `Grandmaster II`;
+      //         } else if (levelRole <= 24) {
+      //           var role = `Grandmaster I`;
+      //         } else if (levelRole <= 26) {
+      //           var role = `Epic V`;
+      //         } else if (levelRole <= 28) {
+      //           var role = `Epic IV`;
+      //         } else if (levelRole <= 30) {
+      //           var role = `Epic III`;
+      //         } else if (levelRole <= 32) {
+      //           var role = `Epic II`;
+      //         } else if (levelRole <= 34) {
+      //           var role = `Epic I`;
+      //         } else if (levelRole <= 36) {
+      //           var role = `Legend V`;
+      //         } else if (levelRole <= 38) {
+      //           var role = `Legend IV`;
+      //         } else if (levelRole <= 40) {
+      //           var role = `Legend III`;
+      //         } else if (levelRole <= 42) {
+      //           var role = `Legend II`;
+      //         } else if (levelRole <= 44) {
+      //           var role = `Legend I`;
+      //         } else if (levelRole <= 46) {
+      //           var role = `Mythic`;
+      //         } else if (levelRole <= 50) {
+      //           var role = `Mythic Glory`;
+      //         }
+      //         let bio = ``;
+      //         try {
+      //           bio = (await ӄ𝖚𝖓𝖆𝖎.fetchStatus(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender)).status;
+      //         } catch (error) {
+      //           console.log(error);
+      //           bio = `None`;
+      //         }
+      //         let disec = Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender.substring(3, 7);
+      //         let tex = ``;
+      //         if (pushName) {
+      //           tex += `*🍃Name*: ${pushName}#${disec}
 
-        // *❤Level*: ${userw.level}
+      // `;
+      //           tex += `*🔰Number*: ${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender}
 
-        // *🏮 Role*: ${role}
-        // `;
+      // `;
+      //         }
+      //         if (bio.status) {
+      //           tex += `*🏳 Bio*: ${bio}
 
-        //         try {
-        //           ppuser = await ӄ𝖚𝖓𝖆𝖎.profilePictureUrl(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender, `image`);
-        //         } catch {
-        //           ppuser = `https://www.linkpicture.com/q/IMG-20220118-WA0387.png`;
-        //         }
-        //         if (isCreator) {
-        //           tex += `
-        // *🔱Owner*: True
+      // `;
+      //         }
+      //         tex += `*🕹XP*: ${userw.xp} / ${Levels.xpFor(userw.level + 1)}
 
-        // `;
-        //         }
-        //         if (groupName) {
-        //           tex += `
-        // *🚥Group*: ${groupName}
+      // *❤Level*: ${userw.level}
 
-        // `;
-        //         }
-        //         if (isSenderAdmin) {
-        //           tex += `*♨️Admim*: true
-        // `;
-        //         }
-        //         ӄ𝖚𝖓𝖆𝖎.sendMessage(
-        //           Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
-        //           { image: { url: ppuser }, caption: tex },
-        //           { quoted: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 }
-        //         );
-        //         break;
-        "⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔";
+      // *🏮 Role*: ${role}
+      // `;
+
+      //         try {
+      //           ppuser = await ӄ𝖚𝖓𝖆𝖎.profilePictureUrl(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender, `image`);
+      //         } catch {
+      //           ppuser = `https://www.linkpicture.com/q/IMG-20220118-WA0387.png`;
+      //         }
+      //         if (isCreator) {
+      //           tex += `
+      // *🔱Owner*: True
+
+      // `;
+      //         }
+      //         if (groupName) {
+      //           tex += `
+      // *🚥Group*: ${groupName}
+
+      // `;
+      //         }
+      //         if (isSenderAdmin) {
+      //           tex += `*♨️Admim*: true
+      // `;
+      //         }
+      //         ӄ𝖚𝖓𝖆𝖎.sendMessage(
+      //           Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
+      //           { image: { url: ppuser }, caption: tex },
+      //           { quoted: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 }
+      //         );
+      //         break;
+
       case `pokemon`:
         const { pokemon } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔎ꜱᴇᴀʀᴄʜ/pokemon");
         await pokemon(
@@ -542,7 +541,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderTUF
         );
         break;
-        "⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔";
+
       case `carbon`:
         const { carbon } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/📼ᴄᴏɴᴠᴇʀᴛ/carbon");
         await carbon(
@@ -565,7 +564,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderTUF
         );
         break;
-        "⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔";
+
       case `getgif`:
       case `gify`:
         const { gify } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔎ꜱᴇᴀʀᴄʜ/gify");
@@ -589,7 +588,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderTUF
         );
         break;
-        "⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔";
+
       case `s`:
       case `sgif`:
       case `sticker`:
@@ -615,7 +614,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderTUF
         );
         break;
-        "⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔";
+
       case `toimg`:
         const { toimg } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/📼ᴄᴏɴᴠᴇʀᴛ/toimg");
         await toimg(
@@ -638,7 +637,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderTUF
         );
         break;
-        "⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔";
+
       case `pin`:
       case `pinterest`:
         const {
@@ -664,7 +663,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderTUF
         );
         break;
-        "⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔";
+
       case `tourl`:
         const { tourl } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/📼ᴄᴏɴᴠᴇʀᴛ/tourl");
         await tourl(
@@ -687,7 +686,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderTUF
         );
         break;
-        "⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔";
+
       case `remove`:
         const { remove } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔰ɢʀᴏᴜᴘꜱ/remove");
         await remove(
@@ -710,7 +709,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderTUF
         );
         break;
-        "⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔";
+
       case `promote`:
         const { promote } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔰ɢʀᴏᴜᴘꜱ/promote");
         await promote(
@@ -733,7 +732,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderTUF
         );
         break;
-        "⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔";
+
       case `demote`:
         const { demote } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔰ɢʀᴏᴜᴘꜱ/demote");
         await demote(
@@ -756,7 +755,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderTUF
         );
         break;
-        "⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔";
+
       case `setdesc`:
         const { setdesc } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔰ɢʀᴏᴜᴘꜱ/setdesc");
         await setdesc(
@@ -779,7 +778,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderTUF
         );
         break;
-        "⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔";
+
       case `seticon`:
       case `setppgrup`:
       case `setgpfp`:
@@ -804,7 +803,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderTUF
         );
         break;
-        "⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔";
+
       case `tagall`:
         const { tagall } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔰ɢʀᴏᴜᴘꜱ/tagall");
         await tagall(
@@ -827,7 +826,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderTUF
         );
         break;
-        "⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔";
+
       case `group`:
         const { group } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔰ɢʀᴏᴜᴘꜱ/group");
         await group(
@@ -850,7 +849,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderTUF
         );
         break;
-        "⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔";
+
       case `invite`:
       case `grouplink`:
         const { invite } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔰ɢʀᴏᴜᴘꜱ/invite");
@@ -874,7 +873,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderTUF
         );
         break;
-        "⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔";
+
       case `del`:
       case `delete`:
         const { del } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔰ɢʀᴏᴜᴘꜱ/del");
@@ -898,7 +897,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderTUF
         );
         break;
-        "⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔";
+
       case `ban`:
         const { ban } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/ban");
         await ban(
@@ -921,7 +920,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderTUF
         );
         break;
-        "⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔";
+
       case `unban`:
         const { unban } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/unban");
         await unban(
@@ -944,7 +943,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderTUF
         );
         break;
-        "⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔";
+
       case `yta`:
       case `play`:
       case `song`:
@@ -975,7 +974,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderTUF
         );
         break;
-        "⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔";
+
       case `ytv`:
       case `ytmp4`:
       case `ytvideo`:
@@ -1000,7 +999,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderTUF
         );
         break;
-        "⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔";
+
       case `yts`:
       case `ytsearch`:
       case `ytscrape`:
@@ -1027,7 +1026,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderTUF
         );
         break;
-        "⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔";
+
       case `sr`:
       case `reddit`:
       case `subreddit`:
@@ -1052,7 +1051,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderTUF
         );
         break;
-        "⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔";
+
       case `meme`:
         const { meme } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/⚡ʀᴀɴᴅᴏᴍꜱ/meme");
         await meme(
@@ -1075,7 +1074,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderTUF
         );
         break;
-        "⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔";
+
       case `tinyurl`:
         const { tinyurl } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/📼ᴄᴏɴᴠᴇʀᴛ/tinyurl");
         await tinyurl(
@@ -1098,7 +1097,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderTUF
         );
         break;
-        "⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔";
+
       case `join`:
         const { join } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🍁ᴏᴡɴᴇʀ/join");
         await join(
@@ -1121,7 +1120,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderTUF
         );
         break;
-        "⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔";
+
       case `leave`:
         const { leave } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🍁ᴏᴡɴᴇʀ/leave");
         await leave(
@@ -1144,7 +1143,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderTUF
         );
         break;
-        "⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔";
+
       case `lyrics`:
         const { lyrics } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔎ꜱᴇᴀʀᴄʜ/lyrics");
         await lyrics(
@@ -1167,7 +1166,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderTUF
         );
         break;
-        "⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔";
+
       case `gimage`:
       case `image`:
         const { image } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔎ꜱᴇᴀʀᴄʜ/image");
@@ -1191,7 +1190,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderTUF
         );
         break;
-        "⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔";
+
       case `google`:
         const { google } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔎ꜱᴇᴀʀᴄʜ/google");
         await google(
@@ -1214,7 +1213,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderTUF
         );
         break;
-        "⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔";
+
       case `take`:
       case `steal`:
         const { steal } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/📼ᴄᴏɴᴠᴇʀᴛ/steal");
@@ -1238,7 +1237,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderTUF
         );
         break;
-        "⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔";
+
       case `iguser`:
         const { iguser } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔎ꜱᴇᴀʀᴄʜ/iguser");
         await iguser(
@@ -1261,7 +1260,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderTUF
         );
         break;
-        "⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔";
+
       case `ship`:
         const { ship } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/⚡ʀᴀɴᴅᴏᴍꜱ/ship");
         await ship(
@@ -1284,7 +1283,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderTUF
         );
         break;
-        "⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔";
+
       case `quote`:
         const { quote } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/⚡ʀᴀɴᴅᴏᴍꜱ/quote");
         await quote(
@@ -1307,7 +1306,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderTUF
         );
         break;
-        "⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔";
+
       case `fact`:
         const { fact } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/⚡ʀᴀɴᴅᴏᴍꜱ/fact");
         await fact(
@@ -1330,7 +1329,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderTUF
         );
         break;
-        "⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔";
+
       case `advice`:
         const { advice } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/⚡ʀᴀɴᴅᴏᴍꜱ/advice");
         await advice(
@@ -1353,7 +1352,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderTUF
         );
         break;
-        "⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔";
+
       case `bot`:
         const { bot } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/bot");
         await bot(
@@ -1376,7 +1375,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderTUF
         );
         break;
-        "⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔";
+
       case `pat`:
         const { pat } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥞ᴀɴɪᴍᴇ/pat");
         await pat(
@@ -1399,7 +1398,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderTUF
         );
         break;
-        "⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔";
+
       case `hug`:
         const { hug } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥞ᴀɴɪᴍᴇ/hug");
         await hug(
@@ -1422,7 +1421,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderTUF
         );
         break;
-        "⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔";
+
       case `kiss`:
         const { kiss } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥞ᴀɴɪᴍᴇ/kiss");
         await kiss(
@@ -1445,7 +1444,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderTUF
         );
         break;
-        "⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔";
+
       case `slap`:
         const { slap } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥞ᴀɴɪᴍᴇ/slap");
         await slap(
@@ -1468,7 +1467,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderTUF
         );
         break;
-        "⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔";
+
       case `cuddle`:
         const { cuddle } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥞ᴀɴɪᴍᴇ/cuddle");
         await cuddle(
@@ -1491,7 +1490,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderTUF
         );
         break;
-        "⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔";
+
       case `kick`:
         const { kick } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥞ᴀɴɪᴍᴇ/kick");
         await kick(
@@ -1514,7 +1513,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderTUF
         );
         break;
-        "⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔";
+
       case `waifu`:
         const { waifu } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/⚡ʀᴀɴᴅᴏᴍꜱ/waifu");
         await waifu(
@@ -1537,7 +1536,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderTUF
         );
         break;
-        "⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔";
+
       case `neko`:
         const { neko } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/⚡ʀᴀɴᴅᴏᴍꜱ/neko");
         await neko(
@@ -1560,7 +1559,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderTUF
         );
         break;
-        "⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔";
+
       case `anime`:
         const { anime } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔎ꜱᴇᴀʀᴄʜ/anime");
         await anime(
@@ -1583,7 +1582,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderTUF
         );
         break;
-        "⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔";
+
       case `manga`:
         const { manga } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔎ꜱᴇᴀʀᴄʜ/manga");
         await manga(
@@ -1606,7 +1605,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderTUF
         );
         break;
-        "⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔";
+
       case `wallpaper`:
         const {
           wallpaper,
@@ -1631,7 +1630,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderTUF
         );
         break;
-        "⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔";
+
       case `bc`:
       case `bcgroup`:
         const { bcgroup } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🍁ᴏᴡɴᴇʀ/bcgroup");
@@ -1655,7 +1654,6 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderTUF
         );
         break;
-        "⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]       ⭕ʏᴛꜰɪʟᴛᴇʀ ⭕ʏᴛꜰɪʟᴛᴇʀ ⭕ʏᴛꜰɪʟᴛᴇʀ      [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔";
       case `yt8d`:
         const { yt8d } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/⭕ʏᴛꜰɪʟᴛᴇʀ/yt8d");
         await yt8d(
@@ -2008,8 +2006,6 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderTUF
         );
         break;
-        "⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]       ⭕ʏᴛꜰɪʟᴛᴇʀ ⭕ʏᴛꜰɪʟᴛᴇʀ ⭕ʏᴛꜰɪʟᴛᴇʀ      [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔";
-        "⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]       🥐ꜰɪʟᴛᴇʀꜱ 🥐ꜰɪʟᴛᴇʀꜱ 🥐ꜰɪʟᴛᴇʀꜱ      [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔";
       case `bassboost`:
         const {
           bassboost,
@@ -2304,8 +2300,6 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderTUF
         );
         break;
-        "⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]       🥐ꜰɪʟᴛᴇʀꜱ 🥐ꜰɪʟᴛᴇʀꜱ 🥐ꜰɪʟᴛᴇʀꜱ      [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔";
-        "⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」      🍑ʜᴇɴᴛᴀɪ 🍑ʜᴇɴᴛᴀɪ  🍑ʜᴇɴᴛᴀɪ      「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔";
       case `ass`:
         const { ass } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🍑ʜᴇɴᴛᴀɪ/ass");
         await ass(
@@ -2728,14 +2722,36 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderTUF
         );
         break;
-        "⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔";
       default:
-        return await Image_Button(
-          ӄ𝖚𝖓𝖆𝖎,
-          Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
-          A𝖗𝖌𝖘,
-          "./src/yts.jpg",
-          `*❌ERROR:* Couldn't find any matching commands. Try again with the commands from the help list`
+        return await ӄ𝖚𝖓𝖆𝖎.sendMessage(
+          Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
+          {
+            contextInfo: { mentionedJid: [Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender] },
+            image: { url: "https://i.postimg.cc/qB1f08hd/Uni.png" },
+            caption: `┌─「 𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐏𝐫𝐨𝐭𝐨® 」
+├• ɴᴀᴍᴇ: ${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.pushName || "No_Name"}
+└────────────────◇
+
+
+*❌ERROR:* Couldn't find any matching commands. Try again with the commands from the help list`,
+            footer: "*⦓ ⒸѶ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 ⦔*",
+            buttons: [
+              {
+                buttonId: prefix + "help",
+                buttonText: { displayText: prefix + "help" },
+                type: 1,
+              },
+              {
+                buttonId: prefix + "support",
+                buttonText: { displayText: prefix + "support" },
+                type: 1,
+              },
+            ],
+            headerType: 4,
+          },
+          {
+            quoted: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+          }
         );
     }
     ("⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔");
