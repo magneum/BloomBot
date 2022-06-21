@@ -98,5 +98,4 @@ var sgif = await GIFBufferToVideoBuffer(buffer);
 } catch (error) {
 console.log(error);
 }
-}
 };
