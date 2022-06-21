@@ -61,7 +61,7 @@ exports.tentacles = async (
     return await Group_Only(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
   }
 
-  const RawTai = akaneko.nsfw.tentacles();
+  const RawTai = await akaneko.nsfw.tentacles();
   await Image_Button(
     ӄ𝖚𝖓𝖆𝖎,
     Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,

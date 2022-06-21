@@ -57,7 +57,7 @@ exports.thighs = async (
   isSenderAdmin,
   isSenderTUF
 ) => {
-  const RawTai = akaneko.nsfw.thighs();
+  const RawTai = await akaneko.nsfw.thighs();
   await Image_Button(
     ӄ𝖚𝖓𝖆𝖎,
     Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
