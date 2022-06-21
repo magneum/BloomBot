@@ -533,7 +533,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
 
@@ -558,7 +562,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
 
@@ -585,7 +593,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
 
@@ -613,7 +625,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
 
@@ -638,7 +654,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
 
@@ -666,7 +686,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
 
@@ -691,7 +715,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
 
@@ -716,7 +744,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
 
@@ -741,7 +773,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
 
@@ -766,7 +802,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
 
@@ -791,7 +831,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
 
@@ -818,7 +862,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
 
@@ -843,7 +891,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
 
@@ -868,7 +920,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
 
@@ -894,7 +950,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
 
@@ -920,7 +980,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
 
@@ -1011,7 +1075,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
 
@@ -1041,7 +1109,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
 
@@ -1070,7 +1142,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
 
@@ -1097,7 +1173,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
 
@@ -1122,7 +1202,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
 
@@ -1147,7 +1231,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
 
@@ -1172,7 +1260,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
 
@@ -1197,7 +1289,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
 
@@ -1222,7 +1318,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
 
@@ -1248,7 +1348,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
 
@@ -1273,7 +1377,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
 
@@ -1299,7 +1407,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
 
@@ -1324,7 +1436,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
 
@@ -1349,7 +1465,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
 
@@ -1374,7 +1494,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
 
@@ -1399,7 +1523,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
 
@@ -1424,7 +1552,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
 
@@ -1449,7 +1581,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
 
@@ -1474,7 +1610,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
 
@@ -1499,7 +1639,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
 
@@ -1524,7 +1668,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
 
@@ -1549,7 +1697,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
 
@@ -1574,7 +1726,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
 
@@ -1599,7 +1755,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
 
@@ -1624,7 +1784,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
 
@@ -1649,7 +1813,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
 
@@ -1674,7 +1842,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
 
@@ -1699,7 +1871,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
 
@@ -1726,7 +1902,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
 
@@ -1752,7 +1932,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
       case `yt8d`:
@@ -1776,7 +1960,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
       case `ytbassboost`:
@@ -1802,7 +1990,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
       case `ytecho`:
@@ -1826,7 +2018,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
       case `ytflanger`:
@@ -1852,7 +2048,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
       case `ytnightcore`:
@@ -1878,7 +2078,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
       case `ytphaser`:
@@ -1904,7 +2108,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
       case `ytreverse`:
@@ -1930,7 +2138,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
       case `ytslow`:
@@ -1954,7 +2166,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
       case `ytspeed`:
@@ -1978,7 +2194,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
       case `ytsubboost`:
@@ -2004,7 +2224,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
       case `ytsuperslow`:
@@ -2030,7 +2254,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
       case `ytsuperslow`:
@@ -2056,7 +2284,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
       case `ytsurround`:
@@ -2082,7 +2314,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
       case `ytvaporwave`:
@@ -2108,7 +2344,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
       case `ytvibrato`:
@@ -2134,7 +2374,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
       case `bassboost`:
@@ -2160,7 +2404,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
       case `echo`:
@@ -2184,7 +2432,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
       case `flanger`:
@@ -2208,7 +2460,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
       case `nightcore`:
@@ -2234,7 +2490,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
       case `phaser`:
@@ -2258,7 +2518,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
       case `reverse`:
@@ -2282,7 +2546,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
       case `slow`:
@@ -2306,7 +2574,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
       case `speed`:
@@ -2330,7 +2602,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
       case `subboost`:
@@ -2354,7 +2630,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
       case `superspeed`:
@@ -2380,7 +2660,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
       case `surround`:
@@ -2404,7 +2688,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
       case `vaporwave`:
@@ -2430,7 +2718,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
       case `vibrato`:
@@ -2454,7 +2746,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
       case `ass`:
@@ -2478,7 +2774,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
       case `bdsm`:
@@ -2502,7 +2802,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
       case `cum`:
@@ -2526,7 +2830,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
       case `doujin`:
@@ -2550,7 +2858,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
       case `feet`:
@@ -2574,7 +2886,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
       case `femdom`:
@@ -2598,7 +2914,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
       case `foxgirl`:
@@ -2622,7 +2942,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
       case `glasses`:
@@ -2646,7 +2970,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
       case `hentai`:
@@ -2670,7 +2998,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
       case `maid`:
@@ -2694,7 +3026,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
       case `masturbation`:
@@ -2720,7 +3056,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
       case `netorare`:
@@ -2744,7 +3084,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
       case `orgy`:
@@ -2768,7 +3112,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
       case `panties`:
@@ -2792,7 +3140,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
       case `school`:
@@ -2816,7 +3168,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
       case `tentacles`:
@@ -2842,7 +3198,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
       case `thighs`:
@@ -2866,7 +3226,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
       case `uniform`:
@@ -2890,7 +3254,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
       case `yuri`:
@@ -2914,7 +3282,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
 
@@ -2943,7 +3315,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderAdmin,
           isSenderTUF,
           commandName,
-          body
+          body,
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
 
