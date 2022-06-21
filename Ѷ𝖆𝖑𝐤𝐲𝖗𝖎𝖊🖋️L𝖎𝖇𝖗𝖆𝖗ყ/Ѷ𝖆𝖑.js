@@ -81,6 +81,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
       Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.extendedTextMessage.contextInfo != null
         ? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.extendedTextMessage.contextInfo.mentionedJid
         : [];
+    const mentionByReply =
+      Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype == "extendedTextMessage" &&
+      Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.extendedTextMessage.contextInfo != null
+        ? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.extendedTextMessage.contextInfo.participant || ""
+        : "";
     const Time = moment.tz(`Asia/Kolkata`).format(`DD/MM HH:mm:ss`);
     const TUFString = KATE;
     const isSenderTUF = TUFString.includes(
@@ -206,32 +211,32 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
     }
     ("⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔");
     switch (commandName) {
-      // case ``:
-      // if (isCommand) {
-      // const dbut = [
-      // {
-      // buttonId: `${prefix}help`,
-      // buttonText: { displayText: `Commands` },
-      // type: 1,
-      // },
-      // {
-      // buttonId: `${prefix}info`,
-      // buttonText: { displayText: `Bot status` },
-      // type: 1,
-      // },
-      // ];
-      // let buttonMessaged = {
-      // text: `Hey *${pushName}* I am ${name}. Do you mean: ${prefix}help`,
-      // footer: `@ARUS`,
-      // buttons: dbut,
-      // headerType: 4,
-      // };
+      case ``:
+        if (isCommand) {
+          const dbut = [
+            {
+              buttonId: `${prefix}help`,
+              buttonText: { displayText: `Commands` },
+              type: 1,
+            },
+            {
+              buttonId: `${prefix}info`,
+              buttonText: { displayText: `Bot status` },
+              type: 1,
+            },
+          ];
+          let buttonMessaged = {
+            text: `Hey *${pushName}* I am ${name}. Do you mean: ${prefix}help`,
+            footer: `@ARUS`,
+            buttons: dbut,
+            headerType: 4,
+          };
 
-      // await ӄ𝖚𝖓𝖆𝖎.sendMessage(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, buttonMessaged, {
-      // quoted: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
-      // });
-      // }
-      // break;
+          await ӄ𝖚𝖓𝖆𝖎.sendMessage(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, buttonMessaged, {
+            quoted: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+          });
+        }
+        break;
       //       case `lead`:
       //       case `leaderboard`:
       //         const mems_id = new Array();
@@ -942,7 +947,9 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           commandName,
           body,
           isReply,
-          mentionByTag
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
 
@@ -968,7 +975,10 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           isSenderTUF,
           commandName,
           body,
-          isReply
+          isReply,
+          mentionByTag,
+          mentionByReply,
+          Time
         );
         break;
 
