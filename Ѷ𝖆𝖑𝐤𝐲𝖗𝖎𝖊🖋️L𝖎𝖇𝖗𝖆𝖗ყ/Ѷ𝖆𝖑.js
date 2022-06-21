@@ -193,54 +193,38 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
     // console.log(err);
     // }
     ("⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔");
-    if (Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message) {
-      console.log(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
-      ӄ𝖚𝖓𝖆𝖎.sendReadReceipt(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender, [
-        Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id,
-      ]);
-      console.log(
-        chalk.black(chalk.bgWhite(`[ Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 ]`)),
-        chalk.black(chalk.bgGreen(new Date())),
-        chalk.black(chalk.blue(budy || Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype)) +
-          `` +
-          chalk.magenta(`\n=> FROM`),
-        chalk.green(pushName),
-        chalk.yellow(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender) + `` + chalk.blueBright(`=> MSG`),
-        chalk.green(
-          Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup ? pushName : `Private Chat`,
-          Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID
-        )
-      );
+    if (isCmd) {
+      const { BeutyFly } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌗E𝖛𝖊𝖓𝖙𝖘/BeutyFly");
+      await BeutyFly(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, chalk, budy, pushName);
     }
     ("⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔");
     switch (commandName) {
-      case ``:
-        if (isCommand) {
-          const dbut = [
-            {
-              buttonId: `${prefix}help`,
-              buttonText: { displayText: `Commands` },
-              type: 1,
-            },
-            {
-              buttonId: `${prefix}info`,
-              buttonText: { displayText: `Bot status` },
-              type: 1,
-            },
-          ];
-          let buttonMessaged = {
-            text: `Hey *${pushName}* I am ${name}. Do you mean: ${prefix}help`,
-            footer: `@ARUS`,
-            buttons: dbut,
-            headerType: 4,
-          };
+      // case ``:
+      // if (isCommand) {
+      // const dbut = [
+      // {
+      // buttonId: `${prefix}help`,
+      // buttonText: { displayText: `Commands` },
+      // type: 1,
+      // },
+      // {
+      // buttonId: `${prefix}info`,
+      // buttonText: { displayText: `Bot status` },
+      // type: 1,
+      // },
+      // ];
+      // let buttonMessaged = {
+      // text: `Hey *${pushName}* I am ${name}. Do you mean: ${prefix}help`,
+      // footer: `@ARUS`,
+      // buttons: dbut,
+      // headerType: 4,
+      // };
 
-          await ӄ𝖚𝖓𝖆𝖎.sendMessage(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, buttonMessaged, {
-            quoted: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
-          });
-        }
-        break;
-
+      // await ӄ𝖚𝖓𝖆𝖎.sendMessage(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, buttonMessaged, {
+      // quoted: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+      // });
+      // }
+      // break;
       //       case `lead`:
       //       case `leaderboard`:
       //         const mems_id = new Array();

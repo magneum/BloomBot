@@ -189,16 +189,16 @@ return [...text.matchAll(/@([0-9]{5,16}|0)/g)].map(
 // ===================================================================================================
 exports.GIFBufferToVideoBuffer = async (image) => {
 const filename = `${Math.random().toString(36)}`;
-await fs.writeFileSync(`./src/${filename}.gif`, image);
+await fs.writeFileSync(`./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${filename}.gif`, image);
 child_process.exec(
-`ffmpeg -i ./src/${filename}.gif -movflags faststart -pix_fmt yuv420p -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" ./src/${filename}.mp4`
+`ffmpeg -i ./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${filename}.gif -movflags faststart -pix_fmt yuv420p -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" ./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${filename}.mp4`
 );
 await sleep(4000);
 
-var buffer5 = await fs.readFileSync(`./src/${filename}.mp4`);
+var buffer5 = await fs.readFileSync(`./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${filename}.mp4`);
 Promise.all([
-unlink(`./src/${filename}.mp4`),
-unlink(`./src/${filename}.gif`),
+unlink(`./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${filename}.mp4`),
+unlink(`./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${filename}.gif`),
 ]);
 return buffer5;
 };
