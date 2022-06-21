@@ -33,7 +33,7 @@ process.env.KATE === undefined
 ? `918436686758,917430922909`
 : process.env.KATE;
 global.owner = gg.split(",");
-global.mongodb = process.env.MONGOOSE;
+global.MONGOOSE = process.env.MONGOOSE;
 global.DATABASE_URL =
 process.env.DATABASE_URL === undefined
 ? "./Ѷ𝖆𝖑.db"
