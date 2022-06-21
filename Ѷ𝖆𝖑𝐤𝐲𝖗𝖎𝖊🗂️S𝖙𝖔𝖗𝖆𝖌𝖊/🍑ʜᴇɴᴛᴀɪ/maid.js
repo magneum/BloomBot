@@ -62,7 +62,7 @@ exports.maid = async (
     return await Group_Only(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
   }
   
-  const RawTai = akaneko.nsfw.maid();
+  const RawTai = await akaneko.nsfw.maid();
   await Image_Button(
     ӄ𝖚𝖓𝖆𝖎,
     Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
