@@ -32,7 +32,7 @@ var Present_Path = require(`path`);
 var Script_Name = Present_Path.basename(__filename);
 var Final_Name = Script_Name.slice(0, -3).toLowerCase();
 ("⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔");
-exports.sticker = async (
+exports.tinyurl = async (
 ӄ𝖚𝖓𝖆𝖎,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
 A𝖗𝖌𝖘,
@@ -51,71 +51,10 @@ isBotAdmin,
 isSenderAdmin
 ) => {
 ("⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔");
-{
-if (!quoted) {
-return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ӄ𝖚𝖓𝖆𝖎,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
-`*❌ERROR:*  Could not find any Image/Video in context!
 
-*⚡USAGE:* ${prefix}${Final_Name} <Tag the sticker>`
-);
-}
-if (q) {
-anu = A𝖗𝖌𝖘.join(` `).split(`|`);
-pack = anu[0] !== `` ? anu[0] : global.packname;
-author = anu[1] !== `` ? anu[1] : global.author;
-} else {
-pack = global.packname;
-author = global.author;
-}
-if (/image/.test(mime)) {
-let media = await quoted.download();
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.reply(`wait your request is under process`);
-let sticker = new Sticker(media, {
-pack: pack,
-author: author,
-type: StickerTypes.FULL,
-categories: [`🤩`, `🎉`],
-id: `12345`,
-quality: 75,
-background: `transparent`,
-});
-const buffer = await sticker.toBuffer();
-ӄ𝖚𝖓𝖆𝖎.sendMessage(
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
-{ sticker: buffer },
-{ quoted: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 }
-);
-} else if (/video/.test(mime)) {
-if ((quoted.msg || quoted).seconds > 20)
-return Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.reply(
-`🕐 Cannot fetch videos longer than *21 Seconds*`
-);
-let media = await quoted.download();
-let sticker = new Sticker(media, {
-pack: pack,
-author: author,
-type: StickerTypes.FULL,
-categories: [`🤩`, `🎉`],
-id: `12345`,
-quality: 75,
-background: `transparent`,
-});
-const stikk = await sticker.toBuffer();
-ӄ𝖚𝖓𝖆𝖎.sendMessage(
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
-{ sticker: stikk },
-{ quoted: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 }
-);
-} else {
-return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ӄ𝖚𝖓𝖆𝖎,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
-`*❌ERROR:*  Could not find any Image/Video in context!
 
-*⚡USAGE:* ${prefix}${Final_Name} <Tag the sticker>`
-);
-}
-}
+
+
+
+
 };
