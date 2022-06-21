@@ -55,13 +55,14 @@ exports.meme = async (
   isSenderAdmin,
   isSenderTUF,
   commandName,
-  body
+  body,
+  isReply,
+  mentionByTag,
+  mentionByReply
 ) => {
   
-  if (!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup) {
-    return await Group_Only(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
-  }
-  
+  if (!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup) return await Group_Only(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
+  `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;  
   const Reds = ["memes", "me_irl", "dankmemes", "comedyheaven", "Animemes"];
   const Rads = Reds[Math.floor(Math.random() * Reds.length)];
   const res = await Fetch(`https://www.reddit.com/r/${Rads}/random/.json`);

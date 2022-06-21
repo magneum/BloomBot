@@ -54,12 +54,13 @@ exports.neko = async (
   isSenderAdmin,
   isSenderTUF,
   commandName,
-  body
+  body,
+  isReply,
+  mentionByTag,
+  mentionByReply
 ) => {
-  if (!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup) {
-    return await Group_Only(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
-  }
-
+  if (!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup) return await Group_Only(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
+  `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
   let waifud = await axios.get(`https://waifu.pics/api/sfw/neko`);
   return await Image_Button(
     ӄ𝖚𝖓𝖆𝖎,
