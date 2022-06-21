@@ -62,6 +62,7 @@ exports.promote = async (
   mentionByTag,
   mentionByReply
 ) => {
+  try {
   if (!isBotAdmin) return await Bot_Not_Admin(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
   if (!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup) return await Group_Only(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
   if (!isSenderAdmin) return await Sender_Not_Admin(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
