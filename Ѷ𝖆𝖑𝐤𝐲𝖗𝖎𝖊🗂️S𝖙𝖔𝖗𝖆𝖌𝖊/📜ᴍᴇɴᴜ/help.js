@@ -246,7 +246,7 @@ ${cpus
 ║• ${prefix}google
 ║• ${prefix}web
 ║• ${prefix}find
-║• ${prefix}google
+║• ${prefix}search
 ║• ${prefix}iguser 
 ║• ${prefix}image
 ║• ${prefix}lyrics
