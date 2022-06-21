@@ -63,6 +63,7 @@ exports.thighs = async (
   mentionByTag,
   mentionByReply
 ) => {
+  try {
   const RawTai = await akaneko.nsfw.thighs();
   await Image_Button(
     ӄ𝖚𝖓𝖆𝖎,

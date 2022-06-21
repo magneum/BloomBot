@@ -59,9 +59,9 @@ exports.support = async (
   body,
   isReply,
   mentionByTag,
-  mentionByReply,
-  Time
+  mentionByReply
 ) => {
+  try {
   return await Image_Button(
     ӄ𝖚𝖓𝖆𝖎,
     Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,

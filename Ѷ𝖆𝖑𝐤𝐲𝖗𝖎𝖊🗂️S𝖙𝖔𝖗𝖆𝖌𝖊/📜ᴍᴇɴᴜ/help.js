@@ -67,6 +67,7 @@ exports.help = async (
   mentionByTag,
   mentionByReply
 ) => {
+  try {
   let used = process.memoryUsage();
   let cpus = os.cpus().map((cpu) => {
     cpu.total = Object.keys(cpu.times).reduce(
