@@ -73,7 +73,7 @@ ${prefix}${Final_Name} -t <theme name> <text>`
     );
   }
 
-  let themes = [
+  let Themes = [
     `3024 night`,
     `a11y dark`,
     `blackboard`,
@@ -104,8 +104,8 @@ ${prefix}${Final_Name} -t <theme name> <text>`
     `zenburn`,
   ];
   let ThemeInput;
-  var bodi = body.split(`-t`);
-  var code = bodi[0].replace(body[0] + commandName + " ", "");
+  var Bodi = body.split(`-t`);
+  var code = Bodi[0].replace(body[0] + commandName + " ", "");
   if (code.length > 20) {
     return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
       ӄ𝖚𝖓𝖆𝖎,
@@ -120,10 +120,10 @@ ${prefix}${Final_Name} -t <theme name> <text>`
   try {
     ThemeInput = body[1].substring(1);
   } catch {
-    ThemeInput = themes[Math.floor(Math.random() * themes.length)];
+    ThemeInput = Themes[Math.floor(Math.random() * Themes.length)];
   }
   var FinalText = code.replace(/[^\p{L}\p{N}\p{P}\p{Z}^$\n]/gu, "");
-  if (!themes.includes(ThemeInput)) {
+  if (!Themes.includes(ThemeInput)) {
     return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
       ӄ𝖚𝖓𝖆𝖎,
       Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
