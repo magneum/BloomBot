@@ -103,9 +103,7 @@ exports.carbon = async (
   ];
   let themeInput;
   var body = ᴠʟᴋʏʀᴇ.body.split(`-t`);
-  var code = body[0].replace(ᴠʟᴋʏʀᴇ.body[0] + commandName + ` `, ``);
-
-
+  var code = body[0].replace(body[0] + commandName + ` `, ``);
 };
 ("|⬡════════════════════════════════════════════════════════════|▷   ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  ◁|════════════════════════════════════════════════════════════⬡|");
 /*
