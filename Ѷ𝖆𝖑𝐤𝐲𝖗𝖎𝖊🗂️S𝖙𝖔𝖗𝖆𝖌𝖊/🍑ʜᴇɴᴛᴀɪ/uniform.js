@@ -38,7 +38,7 @@ var Present_Path = require(`path`);
 var Script_Name = Present_Path.basename(__filename);
 var Final_Name = Script_Name.slice(0, -3).toLowerCase();
 
-exports.advice = async (
+exports.uniform = async (
   ӄ𝖚𝖓𝖆𝖎,
   Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
   A𝖗𝖌𝖘,
