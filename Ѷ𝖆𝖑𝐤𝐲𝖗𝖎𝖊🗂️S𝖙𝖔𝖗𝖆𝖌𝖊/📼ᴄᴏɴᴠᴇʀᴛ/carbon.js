@@ -105,8 +105,8 @@ ${prefix}${Final_Name} -t <theme name> <text>`
   ];
   let ThemeInput;
   var Bodi = body.split(`-t`);
-  var code = Bodi[0].replace(body[0] + commandName + " ", "");
-  if (code.length > 20) {
+  var kode = Bodi[0].replace(body[0] + commandName + " ", "");
+  if (kode.length > 20) {
     return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
       ӄ𝖚𝖓𝖆𝖎,
       Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -122,7 +122,7 @@ ${prefix}${Final_Name} -t <theme name> <text>`
   } catch {
     ThemeInput = Themes[Math.floor(Math.random() * Themes.length)];
   }
-  var FinalText = code.replace(/[^\p{L}\p{N}\p{P}\p{Z}^$\n]/gu, "");
+  var FinalText = kode.replace(/[^\p{L}\p{N}\p{P}\p{Z}^$\n]/gu, "");
   if (!Themes.includes(ThemeInput)) {
     return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
       ӄ𝖚𝖓𝖆𝖎,
