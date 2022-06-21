@@ -6,7 +6,7 @@
 const cron = require("node-cron");
 cron.schedule("*/10 * * * * *", () => {
 const shell = require("shelljs");
-const vers = require(`./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊@4.0.2/package.json`);
+const vers = require(`./package.json`);
 let date_ob = new Date();
 let date = ("0" + date_ob.getDate()).slice(-2);
 let month = ("0" + (date_ob.getMonth() + 1)).slice(-2);
