@@ -103,7 +103,7 @@ exports.carbon = async (
   ];
   let themeInput;
   var bodi = body.split(`-t`);
-  var code = bodi[0].replace(body[0] + commandName + ` `, ``);
+  var code = bodi[0].replace(body[0] + commandName + " ", "");
 };
 ("|⬡════════════════════════════════════════════════════════════|▷   ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  ◁|════════════════════════════════════════════════════════════⬡|");
 /*
