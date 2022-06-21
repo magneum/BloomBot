@@ -15,7 +15,7 @@
 "Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌": "Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌"
 },
 "scripts": {
-"sync": "node Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🪔S𝖞𝖓𝖈.js"
+"sync": "node Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🪔S𝖞𝖓𝖈.js",
 "start": "python3 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌱𝐤𝖗𝖞𝐤𝖊𝖐.py"
 },
 "dependencies": {
