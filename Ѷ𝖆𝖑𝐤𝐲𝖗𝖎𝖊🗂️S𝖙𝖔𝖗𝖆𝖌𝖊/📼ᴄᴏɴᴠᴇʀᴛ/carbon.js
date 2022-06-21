@@ -61,18 +61,6 @@ exports.carbon = async (
   if (!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup) {
     return await Group_Only(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
   }
-
-  if (!F𝖚𝖑𝖑_A𝖗𝖌𝖘) {
-    return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-      ӄ𝖚𝖓𝖆𝖎,
-      Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
-      `*❌ERROR:* No query provided!
-
-*⚡USAGE:* ${prefix}${Final_Name} <text>
-${prefix}${Final_Name} -t <theme name> <text>`
-    );
-  }
-
   let Themes = [
     `3024 night`,
     `a11y dark`,
@@ -103,55 +91,80 @@ ${prefix}${Final_Name} -t <theme name> <text>`
     `yeti`,
     `zenburn`,
   ];
-  let ThemeInput;
-  var Bodi = body.split(`-t`);
-  var kode = Bodi[0].replace(body[0] + commandName + " ", "");
-  if (kode.length > 20) {
-    return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-      ӄ𝖚𝖓𝖆𝖎,
-      Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
-      `*❌ERROR:*  maximum 20 letters!
-
-*⚡USAGE:* ${prefix}${Final_Name} <text>
-${prefix}${Final_Name} -t <theme name> <text>`
-    );
-  }
-
-  try {
-    ThemeInput = body[1].substring(1);
-  } catch {
-    ThemeInput = Themes[Math.floor(Math.random() * Themes.length)];
-  }
-  var FinalText = kode.replace(/[^\p{L}\p{N}\p{P}\p{Z}^$\n]/gu, "");
-  if (!Themes.includes(ThemeInput)) {
+  if (!Themes.includes(A𝖗𝖌𝖘[0])) {
     return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
       ӄ𝖚𝖓𝖆𝖎,
       Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
       `*❌ERROR:*  Wrong Theme Name!
 
-*⚡USAGE:* ${prefix}${Final_Name} <text>
-${prefix}${Final_Name} -t <theme name> <text>`
+*⚡USAGE:* ${prefix}${Final_Name} <theme name> <text>
+╔════◇🌈 𝗧𝗵𝗲𝗺𝗲𝐬
+║ 3024 night
+║ a11y dark
+║ blackboard
+║ base 16 (dark)
+║ base 16 (light)
+║ cobalt
+║ duotone
+║ hopscotch
+║ lucario
+║ material
+║ monokai
+║ night owl
+║ nord
+║ oceanic next
+║ one light
+║ one dark
+║ panda
+║ paraiso
+║ seti
+║ shades of purple
+║ solarized (dark)
+║ solarized (light)
+║ synthwave 84
+║ twilight
+║ verminal
+║ vscode
+║ yeti
+║ zenburn
+╚════════════╝`
     );
   }
+  const ThemeInput = A𝖗𝖌𝖘[0];
+  const FinalText = body
+    .replace(ThemeInput, "")
+    .replace(body[0], "")
+    .replace(" ", "")
+    .replace(commandName, "")
+    .replace(/[^\p{L}\p{N}\p{P}\p{Z}^$\n]/gu, "");
+  console.log(FinalText);
+
+  if (FinalText.length > 20) {
+    return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
+      ӄ𝖚𝖓𝖆𝖎,
+      Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+      `*❌ERROR:*  maximum letters can be 20!
+
+*⚡USAGE:* ${prefix}${Final_Name} <theme name> <text>`
+    );
+  }
+
   const carbon = new Carbon.createCarbon()
     .setCode(FinalText)
     .setPrettify(true)
     .setTheme(ThemeInput);
   const output = await Carbon.generateCarbon(carbon);
-  return await ӄ𝖚𝖓𝖆𝖎.sendMessage(
-    Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
-    {
-      image: { url: output },
-      caption: `┌─「 𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐏𝐫𝐨𝐭𝐨® 」
-├• ɴᴀᴍᴇ: ${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.pushName || "No_Name"}
-└────────────────◇
-
-
-🌈𝗧𝗵𝗲𝗺𝗲: _${ThemeInput}_
-❗𝗘𝗺𝗼𝗷𝗶: _Will Remove All Emoji!_`,
-    },
-    { quoted: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 }
+  let ImgPath = "./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/" + Date.now().toString() + ".png";
+  await fs.createWriteStream(ImgPath).write(output);
+  await Image_Button(
+    ӄ𝖚𝖓𝖆𝖎,
+    Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+    A𝖗𝖌𝖘,
+    ImgPath,
+    `🌈𝗧𝗵𝗲𝗺𝗲: _${ThemeInput}_
+❗𝗘𝗺𝗼𝗷𝗶: _Will Remove All Emoji!_`
   );
+  return await fs.unlinkSync(ImgPath);
 };
 ("|⬡════════════════════════════════════════════════════════════|▷   ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  ◁|════════════════════════════════════════════════════════════⬡|");
 /*
