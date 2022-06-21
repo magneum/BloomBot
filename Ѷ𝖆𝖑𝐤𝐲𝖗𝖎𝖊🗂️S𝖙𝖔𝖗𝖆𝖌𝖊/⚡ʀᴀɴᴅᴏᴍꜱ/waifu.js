@@ -54,7 +54,10 @@ exports.waifu = async (
   isSenderAdmin,
   isSenderTUF,
   commandName,
-  body
+  body,
+  isReply,
+  mentionByTag,
+  mentionByReply
 ) => {
   
   if (!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup) return await Group_Only(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
