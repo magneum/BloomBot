@@ -5,12 +5,12 @@
 ("|⬡═════════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|════════════════════════════════════════════════⬡|");
 require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/𝕷𝖆ყO𝖚𝖙");
 const {
-  isUrl,
-  fetchJson,
-  getBuffer,
-  jsonformat,
-  GIFBufferToVideoBuffer,
-  getRandom,
+isUrl,
+fetchJson,
+getBuffer,
+jsonformat,
+GIFBufferToVideoBuffer,
+getRandom,
 } = require(`../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/myfunc`);
 const fs = require(`fs`);
 const util = require(`util`);
@@ -36,41 +36,42 @@ var Script_Name = Present_Path.basename(__filename);
 var Final_Name = Script_Name.slice(0, -3).toLowerCase();
 ("「 𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢® 」════════════════════════════════════════════════|▷   ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  ◁|════════════════════════════════════════════════「 𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢® 」");
 exports.join = async (
-  ӄ𝖚𝖓𝖆𝖎,
-  Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
-  A𝖗𝖌𝖘,
-  pushName,
-  fromMe,
-  F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-  quoted,
-  mime,
-  isMedia,
-  isGroup,
-  groupMetadata,
-  groupName,
-  participants,
-  groupAdmins,
-  isBotAdmin,
-  isSenderAdmin
+ӄ𝖚𝖓𝖆𝖎,
+Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+A𝖗𝖌𝖘,
+pushName,
+fromMe,
+F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+quoted,
+mime,
+isMedia,
+isGroup,
+groupMetadata,
+groupName,
+participants,
+groupAdmins,
+isBotAdmin,
+isSenderAdmin,
+isSenderTUF
 ) => {
-  ("⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔");
+("⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔");
 
-  if (!isCreator) {
-    return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-      ӄ𝖚𝖓𝖆𝖎,
-      Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
-      `*❌ERROR:* Owner & Mod only command!
-        
-        *⚡USAGE:* ${prefix}${Final_Name} <Link>`
-    );
-  }
-  if (!F𝖚𝖑𝖑_A𝖗𝖌𝖘) return Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.reply(`🔍 Please provide the group link`);
-  if (!isUrl(F𝖚𝖑𝖑_A𝖗𝖌𝖘) && !F𝖚𝖑𝖑_A𝖗𝖌𝖘.includes(`whatsapp.com`))
-    return Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.reply(`🔍 Please provide the group link`);
-  Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.reply(`wait your request is under process`);
-  let result = A𝖗𝖌𝖘[0].split(`https://chatID.whatsapp.com/`)[1];
-  await ӄ𝖚𝖓𝖆𝖎
-    .groupAcceptInvite(result)
-    .then((res) => Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.reply(jsonformat(res)))
-    .catch((err) => Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.reply(`Invalid 📘 *URL: ${q}*`));
+if (!isCreator) {
+return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
+ӄ𝖚𝖓𝖆𝖎,
+Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+`*❌ERROR:* Owner & Mod only command!
+
+*⚡USAGE:* ${prefix}${Final_Name} <Link>`
+);
+}
+if (!F𝖚𝖑𝖑_A𝖗𝖌𝖘) return Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.reply(`🔍 Please provide the group link`);
+if (!isUrl(F𝖚𝖑𝖑_A𝖗𝖌𝖘) && !F𝖚𝖑𝖑_A𝖗𝖌𝖘.includes(`whatsapp.com`))
+return Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.reply(`🔍 Please provide the group link`);
+Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.reply(`wait your request is under process`);
+let result = A𝖗𝖌𝖘[0].split(`https://chatID.whatsapp.com/`)[1];
+await ӄ𝖚𝖓𝖆𝖎
+.groupAcceptInvite(result)
+.then((res) => Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.reply(jsonformat(res)))
+.catch((err) => Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.reply(`Invalid 📘 *URL: ${q}*`));
 };

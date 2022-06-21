@@ -6,48 +6,52 @@
 const fs = require("fs");
 const sequelize = require("sequelize");
 if (fs.existsSync("Ѷ𝖆𝖑.env")) {
-require("dotenv").config({ path: "./Ѷ𝖆𝖑.env" });
+  require("dotenv").config({ path: "./Ѷ𝖆𝖑.env" });
 } else {
-require("dotenv");
+  require("dotenv");
 }
 const Log = (value) => {
-var log = false;
-if (typeof value === "string") {
-if (value.toLowerCase() === "true") {
-log = console.log;
-}
-}
-return log;
+  var log = false;
+  if (typeof value === "string") {
+    if (value.toLowerCase() === "true") {
+      log = console.log;
+    }
+  }
+  return log;
 };
 ("「 𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢® 」════════════════════════════════════════════════|▷   ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  ◁|════════════════════════════════════════════════「 𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢® 」");
 process.env.DATABASE_URL =
-process.env.DATABASE_URL === undefined
-? "./Ѷ𝖆𝖑.db"
-: process.env.DATABASE_URL;
+  process.env.DATABASE_URL === undefined
+    ? "./Ѷ𝖆𝖑.db"
+    : process.env.DATABASE_URL;
 
 let gg = process.env.MODS;
 if (!gg) {
-gg = "917430922909";
+  gg = "917430922909";
 }
-global.owner = gg.split(",");
+(global.KATE =
+  process.env.KATE === undefined
+    ? `918436686758,917430922909`
+    : process.env.KATE),
+  (global.owner = gg.split(","));
 global.mongodb = process.env.MONGOOSE;
 global.DATABASE_URL =
-process.env.DATABASE_URL === undefined
-? "./Ѷ𝖆𝖑.db"
-: process.env.DATABASE_URL;
+  process.env.DATABASE_URL === undefined
+    ? "./Ѷ𝖆𝖑.db"
+    : process.env.DATABASE_URL;
 global.DATABASE =
-process.env.DATABASE_URL === "./Ѷ𝖆𝖑.db"
-? new sequelize.Sequelize({
-dialect: "sqlite",
-storage: process.env.DATABASE_URL,
-logging: Log("false"),
-})
-: new sequelize.Sequelize(process.env.DATABASE_URL, {
-dialect: "postgres",
-protocol: "postgres",
-logging: Log("false"),
-dialectOptions: { ssl: { require: true, rejectUnauthorized: false } },
-});
+  process.env.DATABASE_URL === "./Ѷ𝖆𝖑.db"
+    ? new sequelize.Sequelize({
+        dialect: "sqlite",
+        storage: process.env.DATABASE_URL,
+        logging: Log("false"),
+      })
+    : new sequelize.Sequelize(process.env.DATABASE_URL, {
+        dialect: "postgres",
+        protocol: "postgres",
+        logging: Log("false"),
+        dialectOptions: { ssl: { require: true, rejectUnauthorized: false } },
+      });
 global.port = process.env.PORT || 8080;
 global.packname = process.env.PACKNAME || "kaguya";
 global.prefix = process.env.PREFIX || ".";

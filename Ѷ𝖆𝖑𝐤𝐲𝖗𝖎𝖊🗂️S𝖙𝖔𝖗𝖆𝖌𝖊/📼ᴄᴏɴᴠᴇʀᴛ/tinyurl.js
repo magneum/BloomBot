@@ -54,7 +54,8 @@ groupName,
 participants,
 groupAdmins,
 isBotAdmin,
-isSenderAdmin
+isSenderAdmin,
+isSenderTUF
 ) => {
 ("⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔");
 const TinyDone = await Tinyurl(F𝖚𝖑𝖑_A𝖗𝖌𝖘);

@@ -5,12 +5,12 @@
 ("|⬡═════════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|════════════════════════════════════════════════⬡|");
 require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/𝕷𝖆ყO𝖚𝖙");
 const {
-  isUrl,
-  fetchJson,
-  getBuffer,
-  jsonformat,
-  GIFBufferToVideoBuffer,
-  getRandom,
+isUrl,
+fetchJson,
+getBuffer,
+jsonformat,
+GIFBufferToVideoBuffer,
+getRandom,
 } = require(`../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/myfunc`);
 const fs = require(`fs`);
 const util = require(`util`);
@@ -36,67 +36,68 @@ var Script_Name = Present_Path.basename(__filename);
 var Final_Name = Script_Name.slice(0, -3).toLowerCase();
 ("「 𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢® 」════════════════════════════════════════════════|▷   ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  ◁|════════════════════════════════════════════════「 𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢® 」");
 exports.bcgroup = async (
-  ӄ𝖚𝖓𝖆𝖎,
-  Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
-  A𝖗𝖌𝖘,
-  pushName,
-  fromMe,
-  F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-  quoted,
-  mime,
-  isMedia,
-  isGroup,
-  groupMetadata,
-  groupName,
-  participants,
-  groupAdmins,
-  isBotAdmin,
-  isSenderAdmin
+ӄ𝖚𝖓𝖆𝖎,
+Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+A𝖗𝖌𝖘,
+pushName,
+fromMe,
+F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+quoted,
+mime,
+isMedia,
+isGroup,
+groupMetadata,
+groupName,
+participants,
+groupAdmins,
+isBotAdmin,
+isSenderAdmin,
+isSenderTUF
 ) => {
-  ("⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔");
-  if (!isCreator) {
-    return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-      ӄ𝖚𝖓𝖆𝖎,
-      Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
-      `*❌ERROR:* Owner & Mods Only!
-      
-      *⚡USAGE:* ${prefix}${Final_Name} <text>`
-    );
-  }
-  ("⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔");
-  if (!F𝖚𝖑𝖑_A𝖗𝖌𝖘) {
-    return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-      ӄ𝖚𝖓𝖆𝖎,
-      Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
-      `*❌ERROR:* No query provided!
-      
-      *⚡USAGE:* ${prefix}${Final_Name} <text>`
-    );
-  }
-  ("⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔");
-  const bct = F𝖚𝖑𝖑_A𝖗𝖌𝖘;
-  let getGroups = await ӄ𝖚𝖓𝖆𝖎.groupFetchAllParticipating();
-  let groups = Object.entries(getGroups)
-    .slice(0)
-    .map((entry) => entry[1]);
-  let anu = groups.map((v) => v.id);
-  Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.reply(
-    ` Broadcasting in ${anu.length} Group Chat, in ${anu.length * 1.5} seconds`
-  );
-  for (let i of anu) {
-    let txt = `🔰</ _*Arus Broadcast*_ >🔰
+("⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔");
+if (!isCreator) {
+return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
+ӄ𝖚𝖓𝖆𝖎,
+Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+`*❌ERROR:* Owner & Mods Only!
+
+*⚡USAGE:* ${prefix}${Final_Name} <text>`
+);
+}
+("⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔");
+if (!F𝖚𝖑𝖑_A𝖗𝖌𝖘) {
+return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
+ӄ𝖚𝖓𝖆𝖎,
+Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+`*❌ERROR:* No query provided!
+
+*⚡USAGE:* ${prefix}${Final_Name} <text>`
+);
+}
+("⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔");
+const bct = F𝖚𝖑𝖑_A𝖗𝖌𝖘;
+let getGroups = await ӄ𝖚𝖓𝖆𝖎.groupFetchAllParticipating();
+let groups = Object.entries(getGroups)
+.slice(0)
+.map((entry) => entry[1]);
+let anu = groups.map((v) => v.id);
+Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.reply(
+` Broadcasting in ${anu.length} Group Chat, in ${anu.length * 1.5} seconds`
+);
+for (let i of anu) {
+let txt = `🔰</ _*Arus Broadcast*_ >🔰
 
 🍀 *Author:* ${pushName}
 
 🔖 *Message:* ${bct}`;
-    await ӄ𝖚𝖓𝖆𝖎.sendMessage(i, {
-      video: {
-        url: `https://telegra.ph/file/3c3f94c8463e7f9c29d73.mp4`,
-      },
-      mimetype: `video/mp4`,
-      fileName: `bc.mp4`,
-      caption: `${txt}`,
-    });
-  }
-  Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.reply(`Successfuly Broadcasted in ${anu.length} Groups`);
+await ӄ𝖚𝖓𝖆𝖎.sendMessage(i, {
+video: {
+url: `https://telegra.ph/file/3c3f94c8463e7f9c29d73.mp4`,
+},
+mimetype: `video/mp4`,
+fileName: `bc.mp4`,
+caption: `${txt}`,
+});
+}
+Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.reply(`Successfuly Broadcasted in ${anu.length} Groups`);
 };

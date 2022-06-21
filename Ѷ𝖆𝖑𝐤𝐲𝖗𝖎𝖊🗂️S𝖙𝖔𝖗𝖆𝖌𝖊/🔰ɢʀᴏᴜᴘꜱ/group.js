@@ -53,7 +53,8 @@ groupName,
 participants,
 groupAdmins,
 isBotAdmin,
-isSenderAdmin
+isSenderAdmin,
+isSenderTUF
 ) => {
 ("⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔");
 if (!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup) {
