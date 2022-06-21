@@ -6,7 +6,7 @@ await ӄ𝖚𝖓𝖆𝖎.sendMessage(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
 {
 contextInfo: { mentionedJid: [Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender] },
-image: { url: M𝖊𝖉𝖎𝖆 },
+image: { url: "https://i.postimg.cc/qB1f08hd/Uni.png" },
 caption: `┌─「 𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐏𝐫𝐨𝐭𝐨® 」
 ├• ɴᴀᴍᴇ: ${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.pushName || "No_Name"}
 └────────────────◇
