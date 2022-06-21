@@ -21,7 +21,7 @@ load_dotenv("./Vʟӄʏʀɛ.env")
 ᴠʟᴋʏʀᴇi = getenv("CODE", None)
 BFS = 64 * 1024
 subprocess.run(["git", "config", "pull.rebase", "false"], check=True, stdout=subprocess.PIPE).stdout
-subprocess.run(["python", "𝐕𝐥𝐤𝐲𝐫𝐞🐞𝐁𝐞𝐞𝐭𝐥𝐞/🐍𝖛𝖑𝖐𝖕𝖞.py"], check=True, stdout=subprocess.PIPE).stdout
+subprocess.run(["python", "Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊⚠️𝕿𝖊𝖒𝖕/🐍𝖛𝖑𝖐𝖕𝖞.py"], check=True, stdout=subprocess.PIPE).stdout
 class InterceptHandler(logging.Handler):
     LEVELS_MAP = {
         logging.CRITICAL: "CRITICAL",
@@ -161,7 +161,7 @@ if ᴠʟᴋʏʀᴇi is not None:
             os.remove("xp0e.aes")
             os.remove("xp0edoc.py")
             shutil.rmtree("__pycache__") 
-            os.system('python3 𝕶𝖗𝖆𝖐𝖎𝖓𝖟𝕷𝖆𝖇/ӄ.blind/🐊𝕭𝖔𝖔𝖙.py')
+            os.system('python3 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌🐊𝕭𝖔𝖔𝖙.py')
         else:
             os.remove("xp0e.zip")
             os.remove("xp0e.aes")
