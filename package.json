@@ -216,9 +216,5 @@
 "ytdl-core": "^4.9.1",
 "ytfps": "^1.0.5",
 "ytpl": "^2.2.3"
-},
-"directories": {
-"lib": "lib",
-"src": "src"
 }
 }
