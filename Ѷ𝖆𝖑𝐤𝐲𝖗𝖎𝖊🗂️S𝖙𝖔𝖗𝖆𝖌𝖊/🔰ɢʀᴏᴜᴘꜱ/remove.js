@@ -60,7 +60,7 @@ isSenderTUF
 if (!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup) {
 return await Group_Only(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
 }
-if (!isAdmins)
+if (!isSenderAdmin)
 return Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.reply(`*❌ERROR:* This is an Admin only Command`);
 if (!isBotAdmin)
 return Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.reply(`*❌ERROR:* Cannot execute without being admin`);
