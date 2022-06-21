@@ -94,7 +94,7 @@ return await ӄ𝖚𝖓𝖆𝖎.sendMessage(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
 {
 image: { url: "./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊_Matte.png" },
-caption: `🔒𝐒𝐭𝐚𝐭𝐮𝐬: @${repliedPersonNum} Has Been Banned and I won't Respond to that succer!\n\n*⦓ ⒸѶ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 ⦔*`,
+caption: `🔒𝐒𝐭𝐚𝐭𝐮𝐬: @${repliedPersonNum} Has Been Banned and I won't Respond to that dumbo!\n\n*⦓ ⒸѶ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 ⦔*`,
 mentions: [repliedPerson],
 },
 { quoted: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 }
