@@ -568,6 +568,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
 
       case `getgif`:
       case `gify`:
+      case `gif`:
         const { gify } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔎ꜱᴇᴀʀᴄʜ/gify");
         await gify(
           ӄ𝖚𝖓𝖆𝖎,
@@ -1011,8 +1012,11 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
         break;
 
       case `ytv`:
+      case `watch`:
+      case `stream`:
       case `ytmp4`:
       case `ytvideo`:
+      case `youtubevideo`:
         const { ytv } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/📥ᴅᴏᴡɴʟᴏᴀᴅᴇʀꜱ/ytv");
         await ytv(
           ӄ𝖚𝖓𝖆𝖎,
