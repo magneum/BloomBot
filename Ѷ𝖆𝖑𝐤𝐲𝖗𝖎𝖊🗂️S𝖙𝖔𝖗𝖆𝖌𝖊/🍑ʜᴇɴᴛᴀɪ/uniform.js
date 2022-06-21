@@ -61,7 +61,7 @@ exports.uniform = async (
     return await Group_Only(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
   }
 
-  const RawTai = akaneko.nsfw.uniform();
+  const RawTai = await akaneko.nsfw.uniform();
   await Image_Button(
     ӄ𝖚𝖓𝖆𝖎,
     Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
