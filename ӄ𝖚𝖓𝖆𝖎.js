@@ -19,7 +19,6 @@ const fs = require(`fs`);
 const pino = require(`pino`);
 const path = require(`path`);
 const chalk = require(`chalk`);
-const CFonts = require(`cfonts`);
 const FileType = require(`file-type`);
 const mongoose = require(`mongoose`);
 const PhoneNumber = require(`awesome-phonenumber`);
@@ -80,14 +79,10 @@ process.exit(0);
 await sequelize.sync();
 const { state, saveCreds } = await dbAuth();
 console.clear();
-CFonts.say(`Valkyrie`, {
-font: `block`,
-align: `center`,
-gradient: [`red`, `white`],
-});
 const ӄ𝖚𝖓𝖆𝖎 = ӄ𝖚𝖓𝖆𝖎Connect({
 logger: pino({ level: `silent` }),
 printQRInTerminal: true,
+defaultQueryTimeoutMs: undefined,
 browser: [`Valkyrie`, `Chrome`, `4.0.0`],
 auth: state,
 });
