@@ -65,11 +65,7 @@ exports.image = async (
     gis(F𝖚𝖑𝖑_A𝖗𝖌𝖘, async (error, result) => {
       n = result;
       images = n[Math.floor(Math.random() * n.length)].url;
-      ӄ𝖚𝖓𝖆𝖎.sendMessage(
-        Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
-        { image: { url: images }, caption: `Here you go` },
-        { quoted: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 }
-      );
+      return await Image_Button(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, A𝖗𝖌𝖘, images, `Here you go`);
     });
   }
 };

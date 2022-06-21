@@ -51,15 +51,13 @@ isBotAdmin,
 isSenderAdmin
 ) => {
 ("「 𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢® 」════════════════════════════════════════════════|▷   ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  ◁|════════════════════════════════════════════════「 𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢® 」");
-{
-await axios
-.get(`https://nekos.life/api/v2/fact`)
-.then((response) => {
-const tet = `📛 *Fact:* ${response.data.fact}`;
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.reply(tet);
-})
-.catch((err) => {
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.reply(`✖  An error occurred.`);
+await axios.get(`https://nekos.life/api/v2/fact`).then(async (response) => {
+return await Image_Button(
+ӄ𝖚𝖓𝖆𝖎,
+Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+A𝖗𝖌𝖘,
+"./src/yts.jpg",
+`📛 *Fact:* ${response.data.fact}`
+);
 });
-}
 };

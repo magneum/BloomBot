@@ -5,12 +5,12 @@
 ("|⬡═════════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|════════════════════════════════════════════════⬡|");
 require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/𝕷𝖆ყO𝖚𝖙");
 const {
-  isUrl,
-  fetchJson,
-  getBuffer,
-  jsonformat,
-  GIFBufferToVideoBuffer,
-  getRandom,
+isUrl,
+fetchJson,
+getBuffer,
+jsonformat,
+GIFBufferToVideoBuffer,
+getRandom,
 } = require(`../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/myfunc`);
 const fs = require(`fs`);
 const util = require(`util`);
@@ -34,55 +34,53 @@ var Script_Name = Present_Path.basename(__filename);
 var Final_Name = Script_Name.slice(0, -3).toLowerCase();
 ("⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔");
 exports.tourl = async (
-  ӄ𝖚𝖓𝖆𝖎,
-  Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
-  A𝖗𝖌𝖘,
-  pushName,
-  fromMe,
-  F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-  quoted,
-  mime,
-  isMedia,
-  isGroup,
-  groupMetadata,
-  groupName,
-  participants,
-  groupAdmins,
-  isBotAdmin,
-  isSenderAdmin
+ӄ𝖚𝖓𝖆𝖎,
+Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+A𝖗𝖌𝖘,
+pushName,
+fromMe,
+F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+quoted,
+mime,
+isMedia,
+isGroup,
+groupMetadata,
+groupName,
+participants,
+groupAdmins,
+isBotAdmin,
+isSenderAdmin
 ) => {
-  ("⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔");
-  {
-    if (!quoted) {
-      return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-        ӄ𝖚𝖓𝖆𝖎,
-        Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
-        `*❌ERROR:*  Could not find any Image/Video in context!
-        
-        *⚡USAGE:* ${prefix}${Final_Name} <Tag the sticker>`
-      );
-    }
+("⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔");
+if (!quoted) {
+return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
+ӄ𝖚𝖓𝖆𝖎,
+Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+`*❌ERROR:*  Could not find any Image/Video in context!
 
-    let media = await ӄ𝖚𝖓𝖆𝖎.downloadAndSaveMediaMessage(quoted);
-    if (/image/.test(mime)) {
-      let anu = await TelegraPh(media);
-      return await Image_Button(
-        ӄ𝖚𝖓𝖆𝖎,
-        Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
-        A𝖗𝖌𝖘,
-        "./src/yts.jpg",
-        util.format(anu)
-      );
-    } else if (!/image/.test(mime)) {
-      let anu = await TelegraPh(media);
-      return await Image_Button(
-        ӄ𝖚𝖓𝖆𝖎,
-        Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
-        A𝖗𝖌𝖘,
-        "./src/yts.jpg",
-        util.format(anu)
-      );
-    }
-    fs.unlinkSync(media);
-  }
+*⚡USAGE:* ${prefix}${Final_Name} <Tag the sticker>`
+);
+}
+
+let media = await ӄ𝖚𝖓𝖆𝖎.downloadAndSaveMediaMessage(quoted);
+if (/image/.test(mime)) {
+let anu = await TelegraPh(media);
+return await Image_Button(
+ӄ𝖚𝖓𝖆𝖎,
+Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+A𝖗𝖌𝖘,
+"./src/yts.jpg",
+util.format(anu)
+);
+} else if (!/image/.test(mime)) {
+let anu = await TelegraPh(media);
+return await Image_Button(
+ӄ𝖚𝖓𝖆𝖎,
+Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+A𝖗𝖌𝖘,
+"./src/yts.jpg",
+util.format(anu)
+);
+}
+fs.unlinkSync(media);
 };

@@ -64,56 +64,43 @@ exports.manga = async (
   }
   try {
     let srh = await manga.searchManga(F𝖚𝖑𝖑_A𝖗𝖌𝖘);
-
-    let mang = `🎀 *Title:* ${srh.data[0].title}
-`;
-    mang += `📈 *Status:* ${srh.data[0].status}
-`;
-    mang += `🌸 *Total Volumes:* ${srh.data[0].volumes}
-`;
-    mang += `🎗 *Total Chapters:* ${srh.data[0].chapters}
-`;
-    mang += `🧧 *Genres:*
-`;
+    let mang = `🎀 *Title:* ${srh.data[0].title}`;
+    mang += `📈 *Status:* ${srh.data[0].status}`;
+    mang += `🌸 *Total Volumes:* ${srh.data[0].volumes}`;
+    mang += `🎗 *Total Chapters:* ${srh.data[0].chapters}`;
+    mang += `🧧 *Genres:*`;
     for (let i = 0; i < srh.data[0].genres.length; i++) {
-      mang += `\t\t\t\t\t\t\t\t*${srh.data[0].genres[i].name}*
-`;
+      mang += `\t\t\t\t\t\t\t\t*${srh.data[0].genres[i].name}*`;
     }
-    mang += `✨ *Published on:* ${srh.data[0].published.from}
-`;
-    mang += `🌟 *Score: ${srh.data[0].scored}*
-`;
-    mang += `🎐 *Popularity:* ${srh.data[0].popularity}
-`;
-    mang += `🎏 *Favorites:* ${srh.data[0].favorites}
-`;
-    mang += `✍ *Authors:*
-`;
+    mang += `✨ *Published on:* ${srh.data[0].published.from}`;
+    mang += `🌟 *Score: ${srh.data[0].scored}*`;
+    mang += `🎐 *Popularity:* ${srh.data[0].popularity}`;
+    mang += `🎏 *Favorites:* ${srh.data[0].favorites}`;
+    mang += `✍ *Authors:*`;
     for (let i = 0; i < srh.data[0].authors.length; i++) {
-      mang += `\t\t\t\t\t\t\t\t\t*${srh.data[0].authors[i].name}* *(${srh.data[0].authors[0].type})*
-`;
+      mang += `\t\t\t\t\t\t\t\t\t*${srh.data[0].authors[i].name}* *(${srh.data[0].authors[0].type})*`;
     }
-    mang += `
-🌐 *URL:* ${srh.data[0].url}
-
-`;
+    mang += `🌐 *URL:* ${srh.data[0].url}`;
     if (srh.data[0].background !== null)
       mang += `🎆 *Background:* ${srh.data[0].background}`;
     mang += `❄️ *Description:* ${srh.data[0].synopsis.replace(
       /\[Written by MAL Rewrite]/g,
       ``
     )}`;
-    ӄ𝖚𝖓𝖆𝖎.sendMessage(
-      Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
-      {
-        image: { url: srh.data[0].images.jpg.large_image_url },
-        caption: mang,
-      },
-      { quoted: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 }
+    return await Image_Button(
+      ӄ𝖚𝖓𝖆𝖎,
+      Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+      A𝖗𝖌𝖘,
+      srh.data[0].images.jpg.large_image_url,
+      mang
     );
   } catch {
-    return Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.reply(
-      `*❌ERROR:* Couldn't find any results on the term *${q}*`
+    return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
+      ӄ𝖚𝖓𝖆𝖎,
+      Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+      `*❌ERROR:* Couldn't find any results on the term *${F𝖚𝖑𝖑_A𝖗𝖌𝖘}*
+
+*⚡USAGE:* ${prefix}${Final_Name} <Term>`
     );
   }
 };

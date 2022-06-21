@@ -5,12 +5,12 @@
 ("|⬡═════════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|════════════════════════════════════════════════⬡|");
 require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/𝕷𝖆ყO𝖚𝖙");
 const {
-isUrl,
-fetchJson,
-getBuffer,
-jsonformat,
-GIFBufferToVideoBuffer,
-getRandom,
+  isUrl,
+  fetchJson,
+  getBuffer,
+  jsonformat,
+  GIFBufferToVideoBuffer,
+  getRandom,
 } = require(`../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/myfunc`);
 const fs = require(`fs`);
 const util = require(`util`);
@@ -18,6 +18,7 @@ const hxz = require(`hxz-api`);
 const chalk = require(`chalk`);
 const db = require(`quick.db`);
 const axios = require(`axios`);
+const Fetch = require("node-fetch");
 const canvacord = require(`canvacord`);
 const { Character } = require(`mailist`);
 const moment = require(`moment-timezone`);
@@ -33,33 +34,48 @@ var Script_Name = Present_Path.basename(__filename);
 var Final_Name = Script_Name.slice(0, -3).toLowerCase();
 ("「 𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢® 」════════════════════════════════════════════════|▷   ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  ◁|════════════════════════════════════════════════「 𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢® 」");
 exports.meme = async (
-ӄ𝖚𝖓𝖆𝖎,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
-A𝖗𝖌𝖘,
-pushName,
-fromMe,
-F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-quoted,
-mime,
-isMedia,
-isGroup,
-groupMetadata,
-groupName,
-participants,
-groupAdmins,
-isBotAdmin,
-isSenderAdmin
+  ӄ𝖚𝖓𝖆𝖎,
+  Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+  A𝖗𝖌𝖘,
+  pushName,
+  fromMe,
+  F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+  quoted,
+  mime,
+  isMedia,
+  isGroup,
+  groupMetadata,
+  groupName,
+  participants,
+  groupAdmins,
+  isBotAdmin,
+  isSenderAdmin
 ) => {
-("「 𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢® 」════════════════════════════════════════════════|▷   ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  ◁|════════════════════════════════════════════════「 𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢® 」");
-{
-const response = await axios.get(
-`https://meme-api.herokuapp.com/gimme/wholesomeanimemes`
-);
-const { title, url } = response.data;
-ӄ𝖚𝖓𝖆𝖎.sendMessage(
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
-{ image: { url: url }, caption: `*${title}*` },
-{ quoted: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 }
-);
-}
+  ("「 𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢® 」════════════════════════════════════════════════|▷   ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  ◁|════════════════════════════════════════════════「 𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢® 」");
+  const Reds = ["memes", "me_irl", "dankmemes", "comedyheaven", "Animemes"];
+  const Rads = Reds[Math.floor(Math.random() * Reds.length)];
+  const res = await Fetch(`https://www.reddit.com/r/${Rads}/random/.json`);
+  const json = await res.json();
+  if (!json[0]) {
+    return await Image_Button(
+      ӄ𝖚𝖓𝖆𝖎,
+      Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+      A𝖗𝖌𝖘,
+      "./src/yts.jpg",
+      `_Your Life Lmfao!_`
+    );
+  }
+  const data = json[0].data.children[0].data;
+  return await Image_Button(
+    ӄ𝖚𝖓𝖆𝖎,
+    Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+    A𝖗𝖌𝖘,
+    data.url,
+    `🥪𝗧𝗶𝘁𝗹𝗲: ${data.title}
+      ✒️𝗔𝘂𝘁𝗵𝗼𝗿: ${data.author}
+      👍🏽‍𝗨𝗽𝘀: ${data.ups || 0} 👍
+      👎🏽‍𝗗𝗼𝘄𝗻𝘀: ${data.downs || 0} 👎
+      💬𝗖𝗼𝗺𝗺𝗲𝗻𝘁𝘀: ${data.num_comments || 0} 💬
+      🔎𝗟𝗶𝗻𝗸: https://reddit.com${data.permalink}`
+  );
 };

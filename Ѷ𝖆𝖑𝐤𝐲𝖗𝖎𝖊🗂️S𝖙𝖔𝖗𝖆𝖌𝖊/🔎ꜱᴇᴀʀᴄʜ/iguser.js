@@ -61,7 +61,7 @@ exports.iguser = async (
         *⚡USAGE:* ${prefix}${Final_Name} <ID>`
       );
     }
-    fids = await axios.get(`https://api.popcat.xyz/instagram?user=${q}`);
+    fids = await axios.get(`https://api.popcat.xyz/instagram?user=${F𝖚𝖑𝖑_A𝖗𝖌𝖘}`);
     const reply = `
 *🀄 Username:* ${fids.data.username}
 *📃 Name:* ${fids.data.full_name}
@@ -73,10 +73,12 @@ exports.iguser = async (
 *🧑🏻‍🎤 reels:* ${fids.data.reels}
 *📖 Bio:* ${fids.data.biography}
 `;
-    await ӄ𝖚𝖓𝖆𝖎.sendMessage(
-      Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
-      { image: { url: fids.data.profile_pic }, caption: reply },
-      { quoted: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 }
+    return await Image_Button(
+      ӄ𝖚𝖓𝖆𝖎,
+      Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+      A𝖗𝖌𝖘,
+      fids.data.profile_pic,
+      reply
     );
   } catch (err) {
     return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(

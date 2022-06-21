@@ -60,15 +60,8 @@ exports.pinterest = async (
 *⚡USAGE:* ${prefix}${Final_Name} <Term>`
     );
   }
-  try {
-    let result = await hxz.pinterest(F𝖚𝖑𝖑_A𝖗𝖌𝖘);
-    let rando = result[Math.floor(Math.random() * result.length)];
-    ӄ𝖚𝖓𝖆𝖎.sendMessage(
-      Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
-      { image: { url: rando }, caption: `here you go` },
-      { quoted: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 }
-    );
-  } catch {
-    Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.reply(``);
-  }
+
+  let result = await hxz.pinterest(F𝖚𝖑𝖑_A𝖗𝖌𝖘);
+  let rando = result[Math.floor(Math.random() * result.length)];
+  return await Image_Button(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, A𝖗𝖌𝖘, rando, `here you go`);
 };

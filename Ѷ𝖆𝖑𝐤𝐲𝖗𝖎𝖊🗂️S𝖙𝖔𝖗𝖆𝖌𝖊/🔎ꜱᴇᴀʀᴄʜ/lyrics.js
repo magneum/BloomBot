@@ -72,18 +72,5 @@ exports.lyrics = async (
     },
   };
   await ӄ𝖚𝖓𝖆𝖎.sendMessage(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, reactionMessage);
-  ӄ𝖚𝖓𝖆𝖎.sendMessage(
-    Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
-    {
-      text: lyrics,
-      contextInfo: {
-        externalAdReply: {
-          title: `Lyrics-`,
-          body: firstSong.title,
-          thumbnail: await getBuffer(firstSong.thumbnail),
-        },
-      },
-    },
-    { quoted: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 }
-  );
+  return await Image_Button(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, A𝖗𝖌𝖘, firstSong.thumbnail, lyrics);
 };

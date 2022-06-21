@@ -18,6 +18,7 @@ const hxz = require(`hxz-api`);
 const chalk = require(`chalk`);
 const db = require(`quick.db`);
 const axios = require(`axios`);
+const google = require(`google-it`);
 const canvacord = require(`canvacord`);
 const { Character } = require(`mailist`);
 const moment = require(`moment-timezone`);
@@ -62,20 +63,15 @@ return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 );
 }
 ("⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔");
-let google = require(`google-it`);
-google({ query: F𝖚𝖑𝖑_A𝖗𝖌𝖘 }).then((res) => {
-let teks = `Google Search From : ${q}
+google({ query: F𝖚𝖑𝖑_A𝖗𝖌𝖘 }).then(async (res) => {
+let teks = `Google Search From : ${F𝖚𝖑𝖑_A𝖗𝖌𝖘}
 
 `;
 for (let g of res) {
-teks += `*📒Title* : ${g.title}
-`;
-teks += `*🍃Description* : ${g.snippet}
-`;
-teks += `*🌐Link* : ${g.link}
-
-`;
+teks += `*📒Title* : ${g.title}`;
+teks += `*🍃Description* : ${g.snippet}`;
+teks += `*🌐Link* : ${g.link}`;
 }
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.reply(teks);
+return await Image_Button(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, A𝖗𝖌𝖘, "./src/yts.jpg", teks);
 });
 };

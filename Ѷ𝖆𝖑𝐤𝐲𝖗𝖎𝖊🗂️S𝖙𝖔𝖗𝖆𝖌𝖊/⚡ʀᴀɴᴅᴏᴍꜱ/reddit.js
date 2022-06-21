@@ -60,8 +60,6 @@ exports.reddit = async (
   *⚡USAGE:* ${prefix}${Final_Name} <Term>`
     );
   }
-  let Igroup = await group.findOne({ id: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID });
-  let hh = Igroup.nsfw || `false`;
   const res = await axios.get(
     `https://meme-api.herokuapp.com/gimme/` + q + `/`
   );
@@ -76,15 +74,14 @@ exports.reddit = async (
       );
     }
   }
-  ӄ𝖚𝖓𝖆𝖎.sendMessage(
-    Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
-    {
-      image: { url: res.data.url },
-      caption: `🖌️ *Title:* ${res.data.title}
+  return await Image_Button(
+    ӄ𝖚𝖓𝖆𝖎,
+    Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+    A𝖗𝖌𝖘,
+    res.data.url,
+    `🖌️ *Title:* ${res.data.title}
 *👨‍🎨 Author:* ${res.data.author}
 *🎏 Subreddit:* ${res.data.subreddit}
-🌐 *Post:* ${res.data.postLink}`,
-    },
-    { quoted: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 }
+🌐 *Post:* ${res.data.postLink}`
   );
 };
