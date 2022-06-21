@@ -63,37 +63,37 @@ exports.pokemon = async (
   mentionByReply
 ) => {
   try {
-  if (!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup) return await Group_Only(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
-  `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
-  try {
-    if (!F𝖚𝖑𝖑_A𝖗𝖌𝖘) {
-      return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-        ӄ𝖚𝖓𝖆𝖎,
-        Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
-        `*❌ERROR:* Which Pokemon Do You Want To Get information about?
+    if (!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup) return await Group_Only(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
+    `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
+    try {
+      if (!F𝖚𝖑𝖑_A𝖗𝖌𝖘) {
+        return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
+          ӄ𝖚𝖓𝖆𝖎,
+          Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+          `*❌ERROR:* Which Pokemon Do You Want To Get information about?
 
 *⚡USAGE:* ${prefix}${Final_Name} <Pokemon>`
-      );
-    }
+        );
+      }
 
-    let { data: data } = await axios.get(
-      `https://pokeapi.co/api/v2/pokemon/${F𝖚𝖑𝖑_A𝖗𝖌𝖘}`
-    );
-    if (!data.name) {
-      return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-        ӄ𝖚𝖓𝖆𝖎,
-        Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
-        `*❌ERROR:* No suck pokemon!
+      let { data: data } = await axios.get(
+        `https://pokeapi.co/api/v2/pokemon/${F𝖚𝖑𝖑_A𝖗𝖌𝖘}`
+      );
+      if (!data.name) {
+        return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
+          ӄ𝖚𝖓𝖆𝖎,
+          Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+          `*❌ERROR:* No suck pokemon!
 
 *⚡USAGE:* ${prefix}${Final_Name} <Pokemon>`
-      );
-    }
-    return await Image_Button(
-      ӄ𝖚𝖓𝖆𝖎,
-      Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
-      A𝖗𝖌𝖘,
-      data.sprites.front_default,
-      `💫 *Name: ${data.name}*
+        );
+      }
+      return await Image_Button(
+        ӄ𝖚𝖓𝖆𝖎,
+        Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+        A𝖗𝖌𝖘,
+        data.sprites.front_default,
+        `💫 *Name: ${data.name}*
 〽️ *Pokedex ID: ${data.id}*
 ⚖ *Weight: ${data.weight}*
 🔆 *Height: ${data.height}*
@@ -106,10 +106,14 @@ exports.pokemon = async (
 ☄ *Special Attack: ${data.stats[3].base_stat}*
 🛡 *Special Defense:${data.stats[4].base_stat}*
 🎐 *Speed: ${data.stats[5].base_stat}*`
-    );
+      );
+    } catch (err) {
+      Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.reply(`An Error Occurred`);
+      console.log(err);
+    }
   } catch (err) {
-    Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.reply(`An Error Occurred`);
-    console.log(err);
+    const util = require(`util`);
+    Caught(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(err));
   }
 };
 ("|⬡════════════════════════════════════════════════════════════|▷   ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  ◁|════════════════════════════════════════════════════════════⬡|");

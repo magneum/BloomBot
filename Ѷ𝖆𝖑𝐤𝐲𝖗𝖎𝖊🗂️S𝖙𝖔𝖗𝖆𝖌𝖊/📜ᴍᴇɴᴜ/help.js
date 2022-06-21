@@ -68,40 +68,40 @@ exports.help = async (
   mentionByReply
 ) => {
   try {
-  let used = process.memoryUsage();
-  let cpus = os.cpus().map((cpu) => {
-    cpu.total = Object.keys(cpu.times).reduce(
-      (last, type) => last + cpu.times[type],
-      0
-    );
-    return cpu;
-  });
-  let cpu = cpus.reduce(
-    (last, cpu, _, { length }) => {
-      last.total += cpu.total;
-      last.speed += cpu.speed / length;
-      last.times.user += cpu.times.user;
-      last.times.nice += cpu.times.nice;
-      last.times.sys += cpu.times.sys;
-      last.times.idle += cpu.times.idle;
-      last.times.irq += cpu.times.irq;
-      return last;
-    },
-    {
-      speed: 0,
-      total: 0,
-      times: {
-        user: 0,
-        nice: 0,
-        sys: 0,
-        idle: 0,
-        irq: 0,
+    let used = process.memoryUsage();
+    let cpus = os.cpus().map((cpu) => {
+      cpu.total = Object.keys(cpu.times).reduce(
+        (last, type) => last + cpu.times[type],
+        0
+      );
+      return cpu;
+    });
+    let cpu = cpus.reduce(
+      (last, cpu, _, { length }) => {
+        last.total += cpu.total;
+        last.speed += cpu.speed / length;
+        last.times.user += cpu.times.user;
+        last.times.nice += cpu.times.nice;
+        last.times.sys += cpu.times.sys;
+        last.times.idle += cpu.times.idle;
+        last.times.irq += cpu.times.irq;
+        return last;
       },
-    }
-  );
-  let timestamp = speed();
-  let latensi = speed() - timestamp;
-  let latest = `════════★ 𝐍𝐨𝐝𝐞𝐉𝐒 𝐌𝐞𝐦-𝐔𝐬𝐚𝐠𝐞:
+      {
+        speed: 0,
+        total: 0,
+        times: {
+          user: 0,
+          nice: 0,
+          sys: 0,
+          idle: 0,
+          irq: 0,
+        },
+      }
+    );
+    let timestamp = speed();
+    let latensi = speed() - timestamp;
+    let latest = `════════★ 𝐍𝐨𝐝𝐞𝐉𝐒 𝐌𝐞𝐦-𝐔𝐬𝐚𝐠𝐞:
 ${Object.keys(used)
   .map(
     (key, _, arr) =>
@@ -111,17 +111,17 @@ ${Object.keys(used)
   )
   .join(`\n`)}
 ════════★ ${
-    cpus[0]
-      ? `𝐓𝐨𝐭𝐚𝐥 𝐂𝐏𝐔 𝐔𝐬𝐚𝐠𝐞
+      cpus[0]
+        ? `𝐓𝐨𝐭𝐚𝐥 𝐂𝐏𝐔 𝐔𝐬𝐚𝐠𝐞
 ${cpus[0].model.trim()} (${cpu.speed} ᴍʜᴢ)${Object.keys(cpu.times)
-          .map(
-            (type) =>
-              `- *${(type + `*`).padEnd(6)}: ${(
-                (100 * cpu.times[type]) /
-                cpu.total
-              ).toFixed(2)}%`
-          )
-          .join(`\n`)}
+            .map(
+              (type) =>
+                `- *${(type + `*`).padEnd(6)}: ${(
+                  (100 * cpu.times[type]) /
+                  cpu.total
+                ).toFixed(2)}%`
+            )
+            .join(`\n`)}
 ════════★ 𝐂𝐏𝐔 𝐂𝐨𝐫𝐞(𝐬) 𝐔𝐬𝐚𝐠𝐞 (_${cpus.length}_ 𝐂𝐨𝐫𝐞 𝐂𝐏𝐔)
 ${cpus
   .map(
@@ -137,14 +137,14 @@ ${cpus
         .join(`\n`)}`
   )
   .join(`\n\n`)}`
-      : ``
-  }`.trim();
-  return await Image_Button(
-    ӄ𝖚𝖓𝖆𝖎,
-    Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
-    A𝖗𝖌𝖘,
-    "./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊_Matte.png",
-    `⚡「  𝐁𝐞𝐥𝐨𝐰 𝐅𝐮𝐥𝐥 𝐋𝐢𝐬𝐭 」⚡
+        : ``
+    }`.trim();
+    return await Image_Button(
+      ӄ𝖚𝖓𝖆𝖎,
+      Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+      A𝖗𝖌𝖘,
+      "./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊_Matte.png",
+      `⚡「  𝐁𝐞𝐥𝐨𝐰 𝐅𝐮𝐥𝐥 𝐋𝐢𝐬𝐭 」⚡
 ╔════════★
 ║▷ *🔑ᴘʀᴇꜰɪx:* ${prefix}
 ║▷ *🦞ɢɪᴛʜᴜʙ:* ${prefix}repo
@@ -156,8 +156,8 @@ ${cpus
 ║シ︎ *🛰️ʟᴀᴛᴇɴᴄʏ:* ${latensi.toFixed(4)}(s)
 ║シ︎ *☕ᴜᴘᴛɪᴍᴇ:* ${runtime(process.uptime())}
 ║シ︎ *🎮ʀᴀᴍ:* ${formatp(os.totalmem() - os.freemem())} / ${formatp(
-      os.totalmem()
-    )}
+        os.totalmem()
+      )}
 ╚═══════╝
 
 ╔══「 🦄𝐑𝐚𝐧𝐝𝐨𝐦𝐬🦄 」
@@ -338,7 +338,11 @@ ${cpus
 ║• ${prefix}ppussy
 ║• ${prefix}pslut
 ╚═══════◇`
-  );
+    );
+  } catch (err) {
+    const util = require(`util`);
+    Caught(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(err));
+  }
 };
 ("|⬡════════════════════════════════════════════════════════════|▷   ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  ◁|════════════════════════════════════════════════════════════⬡|");
 /*

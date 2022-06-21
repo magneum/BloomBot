@@ -63,44 +63,48 @@ exports.hug = async (
   mentionByReply
 ) => {
   try {
-  if (!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup) return await Group_Only(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
-  `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
-  var pat = await fetchJson(`https://api.waifu.pics/sfw/hug`);
-  try {
-    let usep = Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender;
-    let recp = ``;
+    if (!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup) return await Group_Only(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
+    `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
+    var pat = await fetchJson(`https://api.waifu.pics/sfw/hug`);
     try {
-      let mention = mentionByTag;
-      let users = (await mention[0]) || Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.msg.contextInfo.participant;
+      let usep = Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender;
+      let recp = ``;
+      try {
+        let mention = mentionByTag;
+        let users = (await mention[0]) || Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.msg.contextInfo.participant;
 
-      ment = [usep, users];
-    } catch {
-      users = `none`;
-      ment = [usep, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender];
-    }
-    if (users == `none`) {
-      recp = `@${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender.split(`@`)[0]} hugged themselves`;
-      console.log(recp);
-    } else {
-      const rcpp = `@${users.split(`@`[0])}`;
-      recp = `@${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender.split(`@`)[0]} hugged @${
-        users.split(`@`)[0]
-      } `;
+        ment = [usep, users];
+      } catch {
+        users = `none`;
+        ment = [usep, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender];
+      }
+      if (users == `none`) {
+        recp = `@${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender.split(`@`)[0]} hugged themselves`;
+        console.log(recp);
+      } else {
+        const rcpp = `@${users.split(`@`[0])}`;
+        recp = `@${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender.split(`@`)[0]} hugged @${
+          users.split(`@`)[0]
+        } `;
 
-      console.log(recp);
+        console.log(recp);
+      }
+      const response = await axios.get(pat.url, {
+        responseType: `arraybuffer`,
+      });
+      const buffer = Buffer.from(response.data, `utf-8`);
+      var sgif = await GIFBufferToVideoBuffer(buffer);
+      ӄ𝖚𝖓𝖆𝖎.sendMessage(
+        Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
+        { video: sgif, gifPlayback: true, mentions: ment, caption: recp },
+        { quoted: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 }
+      );
+    } catch (error) {
+      console.log(error);
     }
-    const response = await axios.get(pat.url, {
-      responseType: `arraybuffer`,
-    });
-    const buffer = Buffer.from(response.data, `utf-8`);
-    var sgif = await GIFBufferToVideoBuffer(buffer);
-    ӄ𝖚𝖓𝖆𝖎.sendMessage(
-      Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
-      { video: sgif, gifPlayback: true, mentions: ment, caption: recp },
-      { quoted: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 }
-    );
-  } catch (error) {
-    console.log(error);
+  } catch (err) {
+    const util = require(`util`);
+    Caught(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(err));
   }
 };
 ("|⬡════════════════════════════════════════════════════════════|▷   ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  ◁|════════════════════════════════════════════════════════════⬡|");

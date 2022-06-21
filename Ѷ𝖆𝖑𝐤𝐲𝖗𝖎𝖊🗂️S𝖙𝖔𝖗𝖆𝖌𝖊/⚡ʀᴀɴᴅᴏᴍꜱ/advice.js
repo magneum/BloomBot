@@ -78,7 +78,7 @@ exports.advice = async (
         Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.reply(`🔍 Error: ${err}`);
       });
   } catch (err) {
-    
+    const util = require(`util`);
     Caught(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(err));
   }
 };

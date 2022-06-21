@@ -63,35 +63,40 @@ exports.tagall = async (
   mentionByReply
 ) => {
   try {
-  if (!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup) return await Group_Only(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
-  if (!isSenderAdmin && !isSenderTUF)
-    return await Sender_Not_Admin(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
-  if (!isBotAdmin && !isSenderTUF) return await Bot_Not_Admin(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
-  `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
-  if (q) {
-    var Text = `📌 *Message - ${F𝖚𝖑𝖑_A𝖗𝖌𝖘}*
+    if (!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup) return await Group_Only(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
+    if (!isSenderAdmin && !isSenderTUF)
+      return await Sender_Not_Admin(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
+    if (!isBotAdmin && !isSenderTUF)
+      return await Bot_Not_Admin(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
+    `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
+    if (q) {
+      var Text = `📌 *Message - ${F𝖚𝖑𝖑_A𝖗𝖌𝖘}*
 *🍁 Group name - ${groupName}*`;
-  } else {
-    var Text = `*${groupName}*`;
-  }
-  let menText = `${Text}
+    } else {
+      var Text = `*${groupName}*`;
+    }
+    let menText = `${Text}
 *💫 ping by - ${pushName}*
 *🕛 time - ${time}*
 
 `;
-  for (let memNum of participants) {
-    if (groupAdmins.includes(memNum.id) === true) {
-      var emo = `👑`;
-    } else {
-      var emo = `❄️`;
+    for (let memNum of participants) {
+      if (groupAdmins.includes(memNum.id) === true) {
+        var emo = `👑`;
+      } else {
+        var emo = `❄️`;
+      }
+      menText += `${emo} *@${memNum.id.split(`@`)[0]}*`;
     }
-    menText += `${emo} *@${memNum.id.split(`@`)[0]}*`;
+    ӄ𝖚𝖓𝖆𝖎.sendMessage(
+      Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
+      { text: menText, mentions: participants.map((a) => a.id) },
+      { quoted: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 }
+    );
+  } catch (err) {
+    const util = require(`util`);
+    Caught(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(err));
   }
-  ӄ𝖚𝖓𝖆𝖎.sendMessage(
-    Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
-    { text: menText, mentions: participants.map((a) => a.id) },
-    { quoted: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 }
-  );
 };
 ("|⬡════════════════════════════════════════════════════════════|▷   ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  ◁|════════════════════════════════════════════════════════════⬡|");
 /*

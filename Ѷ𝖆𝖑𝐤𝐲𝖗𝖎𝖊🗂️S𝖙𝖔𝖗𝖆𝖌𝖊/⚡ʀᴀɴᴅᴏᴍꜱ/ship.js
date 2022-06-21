@@ -62,104 +62,108 @@ exports.ship = async (
   mentionByReply
 ) => {
   try {
-  if (!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup) return await Group_Only(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
-  `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
-  let usep = Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender;
-  let recp = ``;
-  try {
-    users = Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionedJid[0]
-      ? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionedJid[0]
-      : Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.quoted
-      ? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.quoted.sender
-      : text.replace(/[^0-9]/g, ``) + `@s.whatsapp.net`;
+    if (!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup) return await Group_Only(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
+    `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
+    let usep = Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender;
+    let recp = ``;
+    try {
+      users = Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionedJid[0]
+        ? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionedJid[0]
+        : Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.quoted
+        ? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.quoted.sender
+        : text.replace(/[^0-9]/g, ``) + `@s.whatsapp.net`;
 
-    ment = [usep, users];
-  } catch {
-    users = `none`;
-    ment = [usep, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender];
-  }
-  if (users == `none`) {
-    recp = `@${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender.split(`@`)[0]} x  themselves`;
-    console.log(recp);
-  } else {
-    let rcpp = `@${users.split(`@`[0])}`;
-    recp = `@${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender.split(`@`)[0]} x  @${users.split(`@`)[0]}`;
+      ment = [usep, users];
+    } catch {
+      users = `none`;
+      ment = [usep, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender];
+    }
+    if (users == `none`) {
+      recp = `@${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender.split(`@`)[0]} x  themselves`;
+      console.log(recp);
+    } else {
+      let rcpp = `@${users.split(`@`[0])}`;
+      recp = `@${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender.split(`@`)[0]} x  @${users.split(`@`)[0]}`;
 
-    console.log(recp);
-  }
-  const ll = Math.floor(Math.random() * 100);
-  if (ll < 30) {
-    jj = `\t\t\t\t\t*ShipCent : ${ll}%* 
+      console.log(recp);
+    }
+    const ll = Math.floor(Math.random() * 100);
+    if (ll < 30) {
+      jj = `\t\t\t\t\t*ShipCent : ${ll}%* 
 \t\tThere's still time to reconsider your choices`;
-    rate = `Not Good`;
-  } else if (ll < 40) {
-    jj = `\t\t\t\t\t*ShipCent : ${ll}%* 
+      rate = `Not Good`;
+    } else if (ll < 40) {
+      jj = `\t\t\t\t\t*ShipCent : ${ll}%* 
 \t\tThere's still time to reconsider your choices`;
-    rate = `Not Good`;
-  } else if (ll > 50) {
-    jj = `\t\t\t\t\t*ShipCent : ${ll}%* 
+      rate = `Not Good`;
+    } else if (ll > 50) {
+      jj = `\t\t\t\t\t*ShipCent : ${ll}%* 
 \t\t Good enough, I guess!💫`;
-    rate = `Avarage`;
-  } else if (ll > 60) {
-    jj = `\t\t\t\t\t*ShipCent : ${ll}%* 
+      rate = `Avarage`;
+    } else if (ll > 60) {
+      jj = `\t\t\t\t\t*ShipCent : ${ll}%* 
 \t\t Good enough, I guess!💫`;
-    rate = `Avarage`;
-  } else if (ll > 70) {
-    jj = `\t\t\t\t\t*ShipCent : ${ll}%* 
+      rate = `Avarage`;
+    } else if (ll > 70) {
+      jj = `\t\t\t\t\t*ShipCent : ${ll}%* 
 \t\t\tStay together and you'll find a way⭐️`;
-    rate = `Good`;
-  } else if (ll > 80) {
-    jj = `\t\t\t\t\t*ShipCent : ${ll}%* 
+      rate = `Good`;
+    } else if (ll > 80) {
+      jj = `\t\t\t\t\t*ShipCent : ${ll}%* 
 \t\t\tStay together and you'll find a way⭐️`;
-    rate = `Good`;
-  } else if (ll > 90) {
-    jj = `\t\t\t\t\t*ShipCent : ${ll}%* 
+      rate = `Good`;
+    } else if (ll > 90) {
+      jj = `\t\t\t\t\t*ShipCent : ${ll}%* 
 \tAmazing! You two will be a good couple💖`;
-    rate = `Amazing`;
-  } else if (ll == 100) {
-    jj = `\t\t\t\t\t*ShipCent : ${ll}%* 
+      rate = `Amazing`;
+    } else if (ll == 100) {
+      jj = `\t\t\t\t\t*ShipCent : ${ll}%* 
 \tYou two are fated to be together💙`;
-    rate = `Fated to be together`;
-  }
-  let caption = `\t❣️ *Matchmaking...* ❣️ 
-`;
-  caption += `\t\t---------------------------------
-`;
-  caption += `*${recp}*
-`;
-  caption += `\t\t---------------------------------
-`;
-  caption += `${jj}`;
-  try {
-    ppuser = await ӄ𝖚𝖓𝖆𝖎.profilePictureUrl(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender, `image`);
-  } catch {
-    ppuser = `https://www.linkpicture.com/q/IMG-20220118-WA0387.png`;
-  }
-  if (users == `none`) {
-    try {
-      ppuser2 = await ӄ𝖚𝖓𝖆𝖎.profilePictureUrl(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender, `image`);
-    } catch {
-      ppuser2 = `https://www.linkpicture.com/q/IMG-20220118-WA0387.png`;
+      rate = `Fated to be together`;
     }
-  } else {
+    let caption = `\t❣️ *Matchmaking...* ❣️ 
+`;
+    caption += `\t\t---------------------------------
+`;
+    caption += `*${recp}*
+`;
+    caption += `\t\t---------------------------------
+`;
+    caption += `${jj}`;
     try {
-      ppuser2 = await ӄ𝖚𝖓𝖆𝖎.profilePictureUrl(users, `image`);
+      ppuser = await ӄ𝖚𝖓𝖆𝖎.profilePictureUrl(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender, `image`);
     } catch {
-      ppuser2 = `https://www.linkpicture.com/q/IMG-20220118-WA0387.png`;
+      ppuser = `https://www.linkpicture.com/q/IMG-20220118-WA0387.png`;
     }
+    if (users == `none`) {
+      try {
+        ppuser2 = await ӄ𝖚𝖓𝖆𝖎.profilePictureUrl(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender, `image`);
+      } catch {
+        ppuser2 = `https://www.linkpicture.com/q/IMG-20220118-WA0387.png`;
+      }
+    } else {
+      try {
+        ppuser2 = await ӄ𝖚𝖓𝖆𝖎.profilePictureUrl(users, `image`);
+      } catch {
+        ppuser2 = `https://www.linkpicture.com/q/IMG-20220118-WA0387.png`;
+      }
+    }
+    const options = [
+      {
+        name: `Person1`,
+        image: ppuser,
+      },
+      {
+        name: `Person2`,
+        image: ppuser2,
+      },
+    ];
+    const ship = await new Ship(options, ll, rate).build();
+    return await Image_Button(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, A𝖗𝖌𝖘, ship, caption);
+  } catch (err) {
+    const util = require(`util`);
+    Caught(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(err));
   }
-  const options = [
-    {
-      name: `Person1`,
-      image: ppuser,
-    },
-    {
-      name: `Person2`,
-      image: ppuser2,
-    },
-  ];
-  const ship = await new Ship(options, ll, rate).build();
-  return await Image_Button(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, A𝖗𝖌𝖘, ship, caption);
 };
 ("|⬡════════════════════════════════════════════════════════════|▷   ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  ◁|════════════════════════════════════════════════════════════⬡|");
 /*

@@ -63,23 +63,27 @@ exports.invite = async (
   mentionByReply
 ) => {
   try {
-  if (!isBotAdmin) return await Bot_Not_Admin(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
-  if (!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup) return await Group_Only(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
-  if (!isSenderAdmin) return await Sender_Not_Admin(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
-  `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
-  let Igroup = await group.findOne({ id: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID });
-  let hh = Igroup.invite || `false`;
-  if (hh == `false`)
-    return Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.reply(`*❌ERROR:* *Invite* is not active in this group`);
-  let response = await ӄ𝖚𝖓𝖆𝖎.groupInviteCode(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID);
-  await ӄ𝖚𝖓𝖆𝖎.sendText(
-    Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
-    `https://chatID.whatsapp.com/${response}
+    if (!isBotAdmin) return await Bot_Not_Admin(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
+    if (!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup) return await Group_Only(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
+    if (!isSenderAdmin) return await Sender_Not_Admin(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
+    `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
+    let Igroup = await group.findOne({ id: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID });
+    let hh = Igroup.invite || `false`;
+    if (hh == `false`)
+      return Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.reply(`*❌ERROR:* *Invite* is not active in this group`);
+    let response = await ӄ𝖚𝖓𝖆𝖎.groupInviteCode(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID);
+    await ӄ𝖚𝖓𝖆𝖎.sendText(
+      Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
+      `https://chatID.whatsapp.com/${response}
 
 Link Group : ${groupMetadata.subject}`,
-    Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
-    { detectLink: true }
-  );
+      Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+      { detectLink: true }
+    );
+  } catch (err) {
+    const util = require(`util`);
+    Caught(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(err));
+  }
 };
 ("|⬡════════════════════════════════════════════════════════════|▷   ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  ◁|════════════════════════════════════════════════════════════⬡|");
 /*

@@ -68,19 +68,9 @@ exports.ytv = async (
   mentionByReply
 ) => {
   try {
-  if (!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup) return await Group_Only(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
-  `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
-  if (A𝖗𝖌𝖘.length === 0) {
-    return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-      ӄ𝖚𝖓𝖆𝖎,
-      Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
-      `*❌ERROR:* No query provided!
-
-*⚡USAGE:* ${prefix}${Final_Name} <song name or youtube link>`
-    );
-  }
-  if (A𝖗𝖌𝖘.includes("yout")) {
-    if (!YouTube_Regex.test(A𝖗𝖌𝖘[0])) {
+    if (!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup) return await Group_Only(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
+    `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
+    if (A𝖗𝖌𝖘.length === 0) {
       return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
         ӄ𝖚𝖓𝖆𝖎,
         Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -89,58 +79,68 @@ exports.ytv = async (
 *⚡USAGE:* ${prefix}${Final_Name} <song name or youtube link>`
       );
     }
-  }
-
-  let FinalGot;
-  if (YouTube_Regex.test(A𝖗𝖌𝖘[0])) {
-    FinalGot = A𝖗𝖌𝖘[0];
-  } else {
-    FinalGot = F𝖚𝖑𝖑_A𝖗𝖌𝖘;
-  }
-  const LinkFound = await yts(FinalGot);
-  if (!LinkFound) {
-    return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-      ӄ𝖚𝖓𝖆𝖎,
-      Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
-      `*❌ERROR:* No Music Found!
+    if (A𝖗𝖌𝖘.includes("yout")) {
+      if (!YouTube_Regex.test(A𝖗𝖌𝖘[0])) {
+        return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
+          ӄ𝖚𝖓𝖆𝖎,
+          Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+          `*❌ERROR:* No query provided!
 
 *⚡USAGE:* ${prefix}${Final_Name} <song name or youtube link>`
-    );
-  }
+        );
+      }
+    }
 
-  var TubeFile = LinkFound.videos.slice(0, 1);
-  TubeFile.forEach(async function (Found) {
-    if (Found.seconds > 1800) {
-      return await Image_Button(
+    let FinalGot;
+    if (YouTube_Regex.test(A𝖗𝖌𝖘[0])) {
+      FinalGot = A𝖗𝖌𝖘[0];
+    } else {
+      FinalGot = F𝖚𝖑𝖑_A𝖗𝖌𝖘;
+    }
+    const LinkFound = await yts(FinalGot);
+    if (!LinkFound) {
+      return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
         ӄ𝖚𝖓𝖆𝖎,
         Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
-        A𝖗𝖌𝖘,
-        Found.thumbnail,
-        `❌𝗘𝗿𝗿𝗼𝗿: _Choose Smaller Audio less then 30mins!_
+        `*❌ERROR:* No Music Found!
+
+*⚡USAGE:* ${prefix}${Final_Name} <song name or youtube link>`
+      );
+    }
+
+    var TubeFile = LinkFound.videos.slice(0, 1);
+    TubeFile.forEach(async function (Found) {
+      if (Found.seconds > 1800) {
+        return await Image_Button(
+          ӄ𝖚𝖓𝖆𝖎,
+          Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+          A𝖗𝖌𝖘,
+          Found.thumbnail,
+          `❌𝗘𝗿𝗿𝗼𝗿: _Choose Smaller Audio less then 30mins!_
 
 ⭕️𝐘𝐨𝐮𝐓𝐮𝐛𝐞 𝐀𝐈: ${Found.title}
 🍻𝐓𝐢𝐭𝐥𝐞: ${Found.title}
 ⏰𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧: ${Found.timestamp}`
+        );
+      }
+
+      let { dl_link, thumb, title, filesize, filesizeF } = await ytv_var(
+        Found.url,
+        "id4"
       );
-    }
+      let DirectFile;
+      try {
+        DirectFile = await Tinyurl(dl_link);
+      } catch (error) {
+        DirectFile = "Null";
+      }
 
-    let { dl_link, thumb, title, filesize, filesizeF } = await ytv_var(
-      Found.url,
-      "id4"
-    );
-    let DirectFile;
-    try {
-      DirectFile = await Tinyurl(dl_link);
-    } catch (error) {
-      DirectFile = "Null";
-    }
-
-    return await Video_Button(
-      ӄ𝖚𝖓𝖆𝖎,
-      Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
-      A𝖗𝖌𝖘,
-      dl_link,
-      `𝐘𝐨𝐮𝐓𝐮𝐛𝐞📹𝐕𝐢𝐝𝐞𝐨
+      return await Video_Button(
+        ӄ𝖚𝖓𝖆𝖎,
+        Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+        A𝖗𝖌𝖘,
+        dl_link,
+        `𝐘𝐨𝐮𝐓𝐮𝐛𝐞📹𝐕𝐢𝐝𝐞𝐨
 🍻𝐓𝐢𝐭𝐥𝐞: ${Found.title}
 🙈𝐕𝐢𝐞𝐰𝐬: ${Found.views}
 ⏰𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧: ${Found.timestamp}
@@ -149,8 +149,12 @@ exports.ytv = async (
 🌐𝗪𝗲𝗯 𝗗𝗟: ${DirectFile}
 🔗𝐋𝐢𝐧𝐤: ${Found.url}
 📜𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${Found.description}`
-    );
-  });
+      );
+    });
+  } catch (err) {
+    const util = require(`util`);
+    Caught(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(err));
+  }
 };
 ("|⬡════════════════════════════════════════════════════════════|▷   ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  ◁|════════════════════════════════════════════════════════════⬡|");
 /*

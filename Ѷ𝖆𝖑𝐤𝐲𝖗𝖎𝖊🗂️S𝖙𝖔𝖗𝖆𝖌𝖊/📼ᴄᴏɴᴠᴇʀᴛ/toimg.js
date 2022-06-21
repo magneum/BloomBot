@@ -64,73 +64,77 @@ exports.toimg = async (
   mentionByReply
 ) => {
   try {
-  if (!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup) return await Group_Only(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
-  `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
-  if (
-    Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.extendedTextMessage.contextInfo.quotedMessage
-      .stickerMessage.isAnimated !== true
-  ) {
-    if (!quoted) {
-      return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-        ӄ𝖚𝖓𝖆𝖎,
-        Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
-        `*❌ERROR:*  Could not find any sticker in context!
+    if (!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup) return await Group_Only(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
+    `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
+    if (
+      Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.extendedTextMessage.contextInfo.quotedMessage
+        .stickerMessage.isAnimated !== true
+    ) {
+      if (!quoted) {
+        return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
+          ӄ𝖚𝖓𝖆𝖎,
+          Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+          `*❌ERROR:*  Could not find any sticker in context!
 
 *⚡USAGE:* ${prefix}${Final_Name} <Tag the sticker>`
-      );
-    }
-    if (!/webp/.test(mime)) {
-      return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-        ӄ𝖚𝖓𝖆𝖎,
-        Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
-        `*❌ERROR:*  Could not find any sticker in context!
+        );
+      }
+      if (!/webp/.test(mime)) {
+        return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
+          ӄ𝖚𝖓𝖆𝖎,
+          Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+          `*❌ERROR:*  Could not find any sticker in context!
 
 *⚡USAGE:* ${prefix}${Final_Name} <Tag the sticker>`
-      );
-    }
-    let media = await ӄ𝖚𝖓𝖆𝖎.downloadAndSaveMediaMessage(quoted);
-    let ran = await getRandom(`.png`);
-    exec(`ffmpeg -i ${media} ${ran}`, async (err) => {
-      fs.unlinkSync(media);
-      if (err) Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.reply(err);
-      let buffer = fs.readFileSync(ran);
-      await Image_Button(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, A𝖗𝖌𝖘, buffer, "𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®");
-      await fs.unlinkSync(ran);
-    });
-  } else if (
-    Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.extendedTextMessage.contextInfo.quotedMessage
-      .stickerMessage.isAnimated == true
-  ) {
-    if (!quoted) {
-      return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-        ӄ𝖚𝖓𝖆𝖎,
-        Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
-        `*❌ERROR:*  Could not find any sticker in context!
+        );
+      }
+      let media = await ӄ𝖚𝖓𝖆𝖎.downloadAndSaveMediaMessage(quoted);
+      let ran = await getRandom(`.png`);
+      exec(`ffmpeg -i ${media} ${ran}`, async (err) => {
+        fs.unlinkSync(media);
+        if (err) Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.reply(err);
+        let buffer = fs.readFileSync(ran);
+        await Image_Button(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, A𝖗𝖌𝖘, buffer, "𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®");
+        await fs.unlinkSync(ran);
+      });
+    } else if (
+      Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.extendedTextMessage.contextInfo.quotedMessage
+        .stickerMessage.isAnimated == true
+    ) {
+      if (!quoted) {
+        return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
+          ӄ𝖚𝖓𝖆𝖎,
+          Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+          `*❌ERROR:*  Could not find any sticker in context!
 
 *⚡USAGE:* ${prefix}${Final_Name} <Tag the sticker>`
-      );
-    }
+        );
+      }
 
-    if (!/webp/.test(mime)) {
-      return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-        ӄ𝖚𝖓𝖆𝖎,
-        Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
-        `*❌ERROR:*  Could not find any sticker in context!
+      if (!/webp/.test(mime)) {
+        return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
+          ӄ𝖚𝖓𝖆𝖎,
+          Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+          `*❌ERROR:*  Could not find any sticker in context!
 
 *⚡USAGE:* ${prefix}${Final_Name} <Tag the sticker>`
+        );
+      }
+      let media = await ӄ𝖚𝖓𝖆𝖎.downloadAndSaveMediaMessage(quoted);
+      let webpToMp4 = await webp2mp4File(media);
+      await ӄ𝖚𝖓𝖆𝖎.sendMessage(
+        Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
+        {
+          video: { url: webpToMp4.result, caption: "𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®" },
+          gifPlayback: true,
+        },
+        { quoted: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 }
       );
+      await fs.unlinkSync(media);
     }
-    let media = await ӄ𝖚𝖓𝖆𝖎.downloadAndSaveMediaMessage(quoted);
-    let webpToMp4 = await webp2mp4File(media);
-    await ӄ𝖚𝖓𝖆𝖎.sendMessage(
-      Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
-      {
-        video: { url: webpToMp4.result, caption: "𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®" },
-        gifPlayback: true,
-      },
-      { quoted: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 }
-    );
-    await fs.unlinkSync(media);
+  } catch (err) {
+    const util = require(`util`);
+    Caught(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(err));
   }
 };
 ("|⬡════════════════════════════════════════════════════════════|▷   ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  ◁|════════════════════════════════════════════════════════════⬡|");

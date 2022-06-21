@@ -63,42 +63,43 @@ exports.carbon = async (
   mentionByReply
 ) => {
   try {
-  if (!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup) return await Group_Only(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
-  `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;  let Themes = [
-    `3024 night`,
-    `a11y dark`,
-    `blackboard`,
-    `base 16 (dark)`,
-    `base 16 (light)`,
-    `cobalt`,
-    `duotone`,
-    `hopscotch`,
-    `lucario`,
-    `material`,
-    `monokai`,
-    `night owl`,
-    `nord`,
-    `oceanic next`,
-    `one light`,
-    `one dark`,
-    `panda`,
-    `paraiso`,
-    `seti`,
-    `shades of purple`,
-    `solarized (dark)`,
-    `solarized (light)`,
-    `synthwave '84`,
-    `twilight`,
-    `verminal`,
-    `vscode`,
-    `yeti`,
-    `zenburn`,
-  ];
-  if (!Themes.includes(A𝖗𝖌𝖘[0])) {
-    return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-      ӄ𝖚𝖓𝖆𝖎,
-      Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
-      `*❌ERROR:*  Wrong Theme Name!
+    if (!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup) return await Group_Only(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
+    `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
+    let Themes = [
+      `3024 night`,
+      `a11y dark`,
+      `blackboard`,
+      `base 16 (dark)`,
+      `base 16 (light)`,
+      `cobalt`,
+      `duotone`,
+      `hopscotch`,
+      `lucario`,
+      `material`,
+      `monokai`,
+      `night owl`,
+      `nord`,
+      `oceanic next`,
+      `one light`,
+      `one dark`,
+      `panda`,
+      `paraiso`,
+      `seti`,
+      `shades of purple`,
+      `solarized (dark)`,
+      `solarized (light)`,
+      `synthwave '84`,
+      `twilight`,
+      `verminal`,
+      `vscode`,
+      `yeti`,
+      `zenburn`,
+    ];
+    if (!Themes.includes(A𝖗𝖌𝖘[0])) {
+      return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
+        ӄ𝖚𝖓𝖆𝖎,
+        Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+        `*❌ERROR:*  Wrong Theme Name!
 
 *⚡USAGE:* ${prefix}${Final_Name} <theme name> <text>
 ╔════◇🌈 𝗧𝗵𝗲𝗺𝗲𝐬
@@ -131,43 +132,47 @@ exports.carbon = async (
 ║ yeti
 ║ zenburn
 ╚════════════╝`
-    );
-  }
-  const ThemeInput = A𝖗𝖌𝖘[0];
-  const FinalText = body
-    .replace(ThemeInput, "")
-    .replace(body[0], "")
-    .replace(" ", "")
-    .replace(commandName, "")
-    .replace(/[^\p{L}\p{N}\p{P}\p{Z}^$\n]/gu, "");
-  console.log(FinalText);
+      );
+    }
+    const ThemeInput = A𝖗𝖌𝖘[0];
+    const FinalText = body
+      .replace(ThemeInput, "")
+      .replace(body[0], "")
+      .replace(" ", "")
+      .replace(commandName, "")
+      .replace(/[^\p{L}\p{N}\p{P}\p{Z}^$\n]/gu, "");
+    console.log(FinalText);
 
-  if (FinalText.length > 20) {
-    return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-      ӄ𝖚𝖓𝖆𝖎,
-      Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
-      `*❌ERROR:*  maximum letters can be 20!
+    if (FinalText.length > 20) {
+      return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
+        ӄ𝖚𝖓𝖆𝖎,
+        Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+        `*❌ERROR:*  maximum letters can be 20!
 
 *⚡USAGE:* ${prefix}${Final_Name} <theme name> <text>`
-    );
-  }
+      );
+    }
 
-  const carbon = new Carbon.createCarbon()
-    .setCode(FinalText)
-    .setPrettify(true)
-    .setTheme(ThemeInput);
-  const output = await Carbon.generateCarbon(carbon);
-  let ImgPath = "./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/" + Date.now().toString() + ".png";
-  await fs.createWriteStream(ImgPath).write(output);
-  await Image_Button(
-    ӄ𝖚𝖓𝖆𝖎,
-    Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
-    A𝖗𝖌𝖘,
-    ImgPath,
-    `🌈𝗧𝗵𝗲𝗺𝗲: _${ThemeInput}_
+    const carbon = new Carbon.createCarbon()
+      .setCode(FinalText)
+      .setPrettify(true)
+      .setTheme(ThemeInput);
+    const output = await Carbon.generateCarbon(carbon);
+    let ImgPath = "./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/" + Date.now().toString() + ".png";
+    await fs.createWriteStream(ImgPath).write(output);
+    await Image_Button(
+      ӄ𝖚𝖓𝖆𝖎,
+      Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+      A𝖗𝖌𝖘,
+      ImgPath,
+      `🌈𝗧𝗵𝗲𝗺𝗲: _${ThemeInput}_
 ❗𝗘𝗺𝗼𝗷𝗶: _Will Remove All Emoji!_`
-  );
-  return await fs.unlinkSync(ImgPath);
+    );
+    return await fs.unlinkSync(ImgPath);
+  } catch (err) {
+    const util = require(`util`);
+    Caught(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(err));
+  }
 };
 ("|⬡════════════════════════════════════════════════════════════|▷   ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  ◁|════════════════════════════════════════════════════════════⬡|");
 /*
