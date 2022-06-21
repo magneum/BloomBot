@@ -2909,6 +2909,36 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           body
         );
         break;
+
+      case `h`:
+      case `how`:
+      case `bot`:
+      case `help`:
+      case `menu`:
+        const { help } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/📜ᴍᴇɴᴜ/help");
+        await help(
+          ӄ𝖚𝖓𝖆𝖎,
+          Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+          A𝖗𝖌𝖘,
+          pushName,
+          fromMe,
+          F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+          quoted,
+          mime,
+          isMedia,
+          isGroup,
+          groupMetadata,
+          groupName,
+          participants,
+          groupAdmins,
+          isBotAdmin,
+          isSenderAdmin,
+          isSenderTUF,
+          commandName,
+          body
+        );
+        break;
+
       default:
         return await ӄ𝖚𝖓𝖆𝖎.sendMessage(
           Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
