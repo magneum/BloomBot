@@ -104,6 +104,52 @@ exports.carbon = async (
   let themeInput;
   var bodi = body.split(`-t`);
   var code = bodi[0].replace(body[0] + commandName + " ", "");
+  if (code.length > 20) {
+    return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
+      ӄ𝖚𝖓𝖆𝖎,
+      Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+      `*❌ERROR:*  maximum 20 letters!
+
+*⚡USAGE:* ${prefix}${Final_Name} <text>
+${prefix}${Final_Name} -t <theme name> <text>`
+    );
+  }
+
+  try {
+    themeInput = body[1].substring(1);
+  } catch {
+    themeInput = themes[Math.floor(Math.random() * themes.length)];
+  }
+  var FinalText = code.replace(/[^\p{L}\p{N}\p{P}\p{Z}^$\n]/gu, "");
+  if (!themes.includes(themeInput)) {
+    return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
+      ӄ𝖚𝖓𝖆𝖎,
+      Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+      `*❌ERROR:*  Wrong Theme Name!
+
+*⚡USAGE:* ${prefix}${Final_Name} <text>
+${prefix}${Final_Name} -t <theme name> <text>`
+    );
+  }
+  const carbon = new Carbon.createCarbon()
+    .setCode(FinalText)
+    .setPrettify(true)
+    .setTheme(themeInput);
+  const output = await Carbon.generateCarbon(carbon);
+  return await ӄ𝖚𝖓𝖆𝖎.sendMessage(
+    Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
+    {
+      image: { url: output },
+      caption: `┌─「 𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐏𝐫𝐨𝐭𝐨® 」
+├• ɴᴀᴍᴇ: ${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.pushName || "No_Name"}
+└────────────────◇
+
+
+🌈𝗧𝗵𝗲𝗺𝗲: _${themeInput}_
+❗𝗘𝗺𝗼𝗷𝗶: _Will Remove All Emoji!_`,
+    },
+    { quoted: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 }
+  );
 };
 ("|⬡════════════════════════════════════════════════════════════|▷   ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  ◁|════════════════════════════════════════════════════════════⬡|");
 /*

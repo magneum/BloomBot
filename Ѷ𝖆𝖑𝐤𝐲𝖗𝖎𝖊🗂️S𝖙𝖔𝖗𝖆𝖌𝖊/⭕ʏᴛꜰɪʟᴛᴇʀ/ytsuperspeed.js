@@ -60,7 +60,8 @@ exports.ytsuperspeed = async (
   isBotAdmin,
   isSenderAdmin,
   isSenderTUF,
-  commandName
+  commandName,
+  body
 ) => {
   if (!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup) {
     return await Group_Only(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);

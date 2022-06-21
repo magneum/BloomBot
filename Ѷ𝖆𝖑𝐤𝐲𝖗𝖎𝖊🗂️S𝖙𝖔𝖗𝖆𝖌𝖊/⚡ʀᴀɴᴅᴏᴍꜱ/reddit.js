@@ -53,7 +53,8 @@ exports.reddit = async (
   isBotAdmin,
   isSenderAdmin,
   isSenderTUF,
-  commandName
+  commandName,
+  body
 ) => {
   
   if (!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup) {

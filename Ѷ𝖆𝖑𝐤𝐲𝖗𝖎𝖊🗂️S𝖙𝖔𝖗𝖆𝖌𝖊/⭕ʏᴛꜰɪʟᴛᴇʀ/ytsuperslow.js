@@ -60,7 +60,8 @@ exports.ytsuperslow = async (
   isBotAdmin,
   isSenderAdmin,
   isSenderTUF,
-  commandName
+  commandName,
+  body
 ) => {
   /*════════════════════════════════════════════════════════════|▷   ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  ◁|════════════════════════════════════════════════════════════*/
   if (!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup) {
