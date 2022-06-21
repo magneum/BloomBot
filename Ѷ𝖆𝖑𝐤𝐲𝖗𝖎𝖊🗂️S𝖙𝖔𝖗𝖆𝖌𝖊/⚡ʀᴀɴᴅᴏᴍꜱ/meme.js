@@ -69,7 +69,7 @@ exports.meme = async (
       ӄ𝖚𝖓𝖆𝖎,
       Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
       A𝖗𝖌𝖘,
-      "./src/yts.jpg",
+      "./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.png",
       `_Your Life Lmfao!_`
     );
   }

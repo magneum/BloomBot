@@ -64,7 +64,7 @@ exports.quote = async (
       ӄ𝖚𝖓𝖆𝖎,
       Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
       A𝖗𝖌𝖘,
-      "./src/yts.jpg",
+      "./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.png",
       `📝 *Content:* ${quoo.data.quote.body}
 *✍️ Author:* ${quoo.data.quote.author}`
     );
