@@ -103,7 +103,7 @@ ${prefix}${Final_Name} -t <theme name> <text>`
     `yeti`,
     `zenburn`,
   ];
-  let themeInput;
+  let ThemeInput;
   var bodi = body.split(`-t`);
   var code = bodi[0].replace(body[0] + commandName + " ", "");
   if (code.length > 20) {
@@ -118,12 +118,12 @@ ${prefix}${Final_Name} -t <theme name> <text>`
   }
 
   try {
-    themeInput = body[1].substring(1);
+    ThemeInput = body[1].substring(1);
   } catch {
-    themeInput = themes[Math.floor(Math.random() * themes.length)];
+    ThemeInput = themes[Math.floor(Math.random() * themes.length)];
   }
   var FinalText = code.replace(/[^\p{L}\p{N}\p{P}\p{Z}^$\n]/gu, "");
-  if (!themes.includes(themeInput)) {
+  if (!themes.includes(ThemeInput)) {
     return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
       ӄ𝖚𝖓𝖆𝖎,
       Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -136,7 +136,7 @@ ${prefix}${Final_Name} -t <theme name> <text>`
   const carbon = new Carbon.createCarbon()
     .setCode(FinalText)
     .setPrettify(true)
-    .setTheme(themeInput);
+    .setTheme(ThemeInput);
   const output = await Carbon.generateCarbon(carbon);
   return await ӄ𝖚𝖓𝖆𝖎.sendMessage(
     Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
@@ -147,7 +147,7 @@ ${prefix}${Final_Name} -t <theme name> <text>`
 └────────────────◇
 
 
-🌈𝗧𝗵𝗲𝗺𝗲: _${themeInput}_
+🌈𝗧𝗵𝗲𝗺𝗲: _${ThemeInput}_
 ❗𝗘𝗺𝗼𝗷𝗶: _Will Remove All Emoji!_`,
     },
     { quoted: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 }
