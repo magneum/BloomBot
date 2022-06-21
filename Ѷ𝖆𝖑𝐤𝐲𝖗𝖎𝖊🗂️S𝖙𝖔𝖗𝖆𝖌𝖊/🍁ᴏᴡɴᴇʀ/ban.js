@@ -125,7 +125,7 @@ ${prefix}${Final_Name} _don't reply to anyone and group will be banned_`
           return await ӄ𝖚𝖓𝖆𝖎.sendMessage(
             Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
             {
-              image: { url: M𝖊𝖉𝖎𝖆 || "https://i.postimg.cc/qB1f08hd/Uni.png" },"./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊_Matte.png",
+              image: { url: "./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊_Matte.png" },
               caption: `🔒𝐒𝐭𝐚𝐭𝐮𝐬: @${repliedPersonNum} Has Been Banned!\n\n*⦓ ⒸѶ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 ⦔*`,
               mentions: [repliedPerson],
             },
