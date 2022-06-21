@@ -4,8 +4,8 @@
  */
 ("|⬡════════════════════════════════════════════════════════════|▷   ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  ◁|════════════════════════════════════════════════════════════⬡|");
 let folders = [".", ...Object.keys(require("../package.json").directories)];
+const rimraf = require("rimraf");
 for (let folder of folders) {
-var rimraf = require("rimraf");
 rimraf(folder, function (Error) {
 if (Error) console.log(Error);
 });
