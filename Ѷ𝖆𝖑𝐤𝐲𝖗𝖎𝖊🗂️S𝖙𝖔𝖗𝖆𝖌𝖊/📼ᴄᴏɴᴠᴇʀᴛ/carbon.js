@@ -102,8 +102,8 @@ exports.carbon = async (
     `zenburn`,
   ];
   let themeInput;
-  var body = ᴠʟᴋʏʀᴇ.body.split(`-t`);
-  var code = body[0].replace(body[0] + commandName + ` `, ``);
+  var bodi = body.split(`-t`);
+  var code = bodi[0].replace(body[0] + commandName + ` `, ``);
 };
 ("|⬡════════════════════════════════════════════════════════════|▷   ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  ◁|════════════════════════════════════════════════════════════⬡|");
 /*
