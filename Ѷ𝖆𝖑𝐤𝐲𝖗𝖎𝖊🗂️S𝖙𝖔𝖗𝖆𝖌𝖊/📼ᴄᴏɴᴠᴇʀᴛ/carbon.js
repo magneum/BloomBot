@@ -54,7 +54,8 @@ exports.carbon = async (
   groupAdmins,
   isBotAdmin,
   isSenderAdmin,
-  isSenderTUF
+  isSenderTUF,
+  commandName
 ) => {
   if (!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup) {
     return await Group_Only(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
@@ -69,21 +70,48 @@ exports.carbon = async (
 *⚡USAGE:* ${prefix}${Final_Name} <text>`
     );
   }
-  try {
-    const carbon = new Carbon.createCarbon()
-      .setCode(F𝖚𝖑𝖑_A𝖗𝖌𝖘)
-      .setBackgroundColor(`#1b3648`);
 
-    const bufferr = await Carbon.generateCarbon(carbon);
-    ӄ𝖚𝖓𝖆𝖎.sendMessage(
-      Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
-      { image: bufferr },
-      { quoted: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 }
-    );
-  } catch (err) {
-    Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.reply(`An Error Occurred`);
-    console.log(err);
-  }
+  let themes = [
+    `3024 night`,
+    `a11y dark`,
+    `blackboard`,
+    `base 16 (dark)`,
+    `base 16 (light)`,
+    `cobalt`,
+    `duotone`,
+    `hopscotch`,
+    `lucario`,
+    `material`,
+    `monokai`,
+    `night owl`,
+    `nord`,
+    `oceanic next`,
+    `one light`,
+    `one dark`,
+    `panda`,
+    `paraiso`,
+    `seti`,
+    `shades of purple`,
+    `solarized (dark)`,
+    `solarized (light)`,
+    `synthwave '84`,
+    `twilight`,
+    `verminal`,
+    `vscode`,
+    `yeti`,
+    `zenburn`,
+  ];
+
+  const carbon = new Carbon.createCarbon()
+    .setCode(F𝖚𝖑𝖑_A𝖗𝖌𝖘)
+    .setBackgroundColor(`#1b3648`);
+
+  const bufferr = await Carbon.generateCarbon(carbon);
+  await ӄ𝖚𝖓𝖆𝖎.sendMessage(
+    Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
+    { image: bufferr },
+    { quoted: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 }
+  );
 };
 ("|⬡════════════════════════════════════════════════════════════|▷   ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  ◁|════════════════════════════════════════════════════════════⬡|");
 /*

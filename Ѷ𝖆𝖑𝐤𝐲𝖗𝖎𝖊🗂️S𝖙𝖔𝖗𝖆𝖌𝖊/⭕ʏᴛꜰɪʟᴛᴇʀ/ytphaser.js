@@ -59,7 +59,8 @@ exports.ytphaser = async (
   groupAdmins,
   isBotAdmin,
   isSenderAdmin,
-  isSenderTUF
+  isSenderTUF,
+  commandName
 ) => {
   /*════════════════════════════════════════════════════════════|▷   ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  ◁|════════════════════════════════════════════════════════════*/
   if (!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup) {
