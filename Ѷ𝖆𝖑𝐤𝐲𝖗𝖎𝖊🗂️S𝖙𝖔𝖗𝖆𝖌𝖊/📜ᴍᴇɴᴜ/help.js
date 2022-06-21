@@ -244,6 +244,9 @@ ${cpus
 ║• ${prefix}gify
 ║• ${prefix}gif
 ║• ${prefix}google
+║• ${prefix}web
+║• ${prefix}find
+║• ${prefix}google
 ║• ${prefix}iguser 
 ║• ${prefix}image
 ║• ${prefix}lyrics
