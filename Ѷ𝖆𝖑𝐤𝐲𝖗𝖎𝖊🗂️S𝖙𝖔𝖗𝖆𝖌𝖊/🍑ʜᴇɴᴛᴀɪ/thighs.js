@@ -56,7 +56,8 @@ exports.thighs = async (
   isBotAdmin,
   isSenderAdmin,
   isSenderTUF,
-  commandName
+  commandName,
+  body
 ) => {
   const RawTai = await akaneko.nsfw.thighs();
   await Image_Button(
