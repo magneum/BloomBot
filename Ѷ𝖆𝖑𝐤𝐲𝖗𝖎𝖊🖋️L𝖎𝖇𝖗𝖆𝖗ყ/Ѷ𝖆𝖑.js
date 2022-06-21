@@ -8,6 +8,7 @@ const fs = require(`fs`);
 const util = require(`util`);
 const chalk = require(`chalk`);
 const moment = require(`moment-timezone`);
+const LinkList = require(`../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧆𝕯𝖆𝖙𝖆𝖇𝖆𝖘𝖊/🍃𝖒𝖔𝖓𝖌𝖔/antilink`);
 const userBanCheck = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧆𝕯𝖆𝖙𝖆𝖇𝖆𝖘𝖊/𝖀𝖘𝖊𝖗🍣𝖒𝖔𝖓𝖌𝖔/user");
 ("⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔");
 module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎, chatUpdate, Ѷ𝖎𝖔𝖓) => {
@@ -92,75 +93,75 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
       Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender.substring(0, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender.indexOf(`@`))
     );
     // if (isCommand && !isGroup)
-    //   return Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.reply(`You cannot use any command in dm`);
-    ("⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔");
-    //     if (isCommand) {
-    //       const randomXp = Math.floor(Math.random() * 3) + 1;
-    //       const hasLeveledUp = await Levels.appendXp(
-    //         Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender,
-    //         `bot`,
-    //         randomXp
-    //       );
-    //       if (hasLeveledUp) {
-    //         const user = await Levels.fetch(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender, `bot`);
-    //         const levelRole = user.level;
-    //         var role = `Warrior`;
-    //         if (levelRole <= 2) {
-    //           var role = `Elite III`;
-    //         } else if (levelRole <= 4) {
-    //           var role = `Elite II`;
-    //         } else if (levelRole <= 6) {
-    //           var role = `Elite I`;
-    //         } else if (levelRole <= 8) {
-    //           var role = `Master IV`;
-    //         } else if (levelRole <= 10) {
-    //           var role = `Master III`;
-    //         } else if (levelRole <= 12) {
-    //           var role = `Master II`;
-    //         } else if (levelRole <= 14) {
-    //           var role = `Master I`;
-    //         } else if (levelRole <= 16) {
-    //           var role = `Grandmaster V`;
-    //         } else if (levelRole <= 18) {
-    //           var role = `Grandmaster IV`;
-    //         } else if (levelRole <= 20) {
-    //           var role = `Grandmaster III`;
-    //         } else if (levelRole <= 22) {
-    //           var role = `Grandmaster II`;
-    //         } else if (levelRole <= 24) {
-    //           var role = `Grandmaster I`;
-    //         } else if (levelRole <= 26) {
-    //           var role = `Epic V`;
-    //         } else if (levelRole <= 28) {
-    //           var role = `Epic IV`;
-    //         } else if (levelRole <= 30) {
-    //           var role = `Epic III`;
-    //         } else if (levelRole <= 32) {
-    //           var role = `Epic II`;
-    //         } else if (levelRole <= 34) {
-    //           var role = `Epic I`;
-    //         } else if (levelRole <= 36) {
-    //           var role = `Legend V`;
-    //         } else if (levelRole <= 38) {
-    //           var role = `Legend IV`;
-    //         } else if (levelRole <= 40) {
-    //           var role = `Legend III`;
-    //         } else if (levelRole <= 42) {
-    //           var role = `Legend II`;
-    //         } else if (levelRole <= 44) {
-    //           var role = `Legend I`;
-    //         } else if (levelRole <= 46) {
-    //           var role = `Mythic`;
-    //         } else if (levelRole <= 50) {
-    //           var role = `Mythic Glory`;
-    //         }
-    //         await ӄ𝖚𝖓𝖆𝖎.sendMessage(
-    //           Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
-    //           {
-    //             image: {
-    //               url: `https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR5kFSuoFniw90CNXW8z1FkDma4WF6fJyL3Q&usqp=CAU`,
-    //             },
-    //             caption: `* LEVEL UP! *
+    // return Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.reply(`You cannot use any command in dm`);
+    `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
+    // if (isCommand) {
+    // const randomXp = Math.floor(Math.random() * 3) + 1;
+    // const hasLeveledUp = await Levels.appendXp(
+    // Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender,
+    // `bot`,
+    // randomXp
+    // );
+    // if (hasLeveledUp) {
+    // const user = await Levels.fetch(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender, `bot`);
+    // const levelRole = user.level;
+    // var role = `Warrior`;
+    // if (levelRole <= 2) {
+    // var role = `Elite III`;
+    // } else if (levelRole <= 4) {
+    // var role = `Elite II`;
+    // } else if (levelRole <= 6) {
+    // var role = `Elite I`;
+    // } else if (levelRole <= 8) {
+    // var role = `Master IV`;
+    // } else if (levelRole <= 10) {
+    // var role = `Master III`;
+    // } else if (levelRole <= 12) {
+    // var role = `Master II`;
+    // } else if (levelRole <= 14) {
+    // var role = `Master I`;
+    // } else if (levelRole <= 16) {
+    // var role = `Grandmaster V`;
+    // } else if (levelRole <= 18) {
+    // var role = `Grandmaster IV`;
+    // } else if (levelRole <= 20) {
+    // var role = `Grandmaster III`;
+    // } else if (levelRole <= 22) {
+    // var role = `Grandmaster II`;
+    // } else if (levelRole <= 24) {
+    // var role = `Grandmaster I`;
+    // } else if (levelRole <= 26) {
+    // var role = `Epic V`;
+    // } else if (levelRole <= 28) {
+    // var role = `Epic IV`;
+    // } else if (levelRole <= 30) {
+    // var role = `Epic III`;
+    // } else if (levelRole <= 32) {
+    // var role = `Epic II`;
+    // } else if (levelRole <= 34) {
+    // var role = `Epic I`;
+    // } else if (levelRole <= 36) {
+    // var role = `Legend V`;
+    // } else if (levelRole <= 38) {
+    // var role = `Legend IV`;
+    // } else if (levelRole <= 40) {
+    // var role = `Legend III`;
+    // } else if (levelRole <= 42) {
+    // var role = `Legend II`;
+    // } else if (levelRole <= 44) {
+    // var role = `Legend I`;
+    // } else if (levelRole <= 46) {
+    // var role = `Mythic`;
+    // } else if (levelRole <= 50) {
+    // var role = `Mythic Glory`;
+    // }
+    // await ӄ𝖚𝖓𝖆𝖎.sendMessage(
+    // Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
+    // {
+    // image: {
+    // url: `https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR5kFSuoFniw90CNXW8z1FkDma4WF6fJyL3Q&usqp=CAU`,
+    // },
+    // caption: `* LEVEL UP! *
 
     // *📃️Name*: ${pushName}
     // *🍀Exp*: ${user.xp} / ${Levels.xpFor(user.level + 1)}
@@ -168,36 +169,100 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
     // *🔮️Role*: *${role}*
 
     // Congrats!! 🎉🎉`,
-    //           },
-    //           { quoted: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 }
-    //         );
-    //       }
-    //     }
-    ("⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔");
-    // try {
-    // let Igroup = await group.findOne({ id: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID });
-    // if (Igroup) {
-    // let hh = Igroup.mod || `false`;
-    // if (isGroup && hh == `true`) {
-    // if (budy.includes(`://chatID.whatsapp.com/`)) {
-    // if (isSenderAdmin) return;
-    // if (isBotAdmin) return;
-    // let response = await ӄ𝖚𝖓𝖆𝖎.groupInviteCode(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID);
-    // if (budy.includes(`//chatID.whatsapp.com/${response}`)) return;
-    // Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.reply(`Group Link Detected!!`);
-    // await ӄ𝖚𝖓𝖆𝖎.groupParticipantsUpdate(
-    // Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
-    // [Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender],
-    // `remove`
+    // },
+    // { quoted: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 }
     // );
     // }
     // }
-    // }
-    // } catch (err) {
-    // console.log(err);
-    // }
-    ("⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔");
-    userBanCheck.findOne(
+    `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
+    if (
+      Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message &&
+      Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup &&
+      !isSenderAdmin &&
+      isBotAdmin &&
+      !isSenderTUF
+    ) {
+      await LinkList.findOne(
+        {
+          serverID: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
+        },
+        async (error, server) => {
+          if (error) return console.log(error);
+          if (!server) return;
+          let FetchCurrentGroupLink = await ӄ𝖚𝖓𝖆𝖎.groupInviteCode(
+            Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID
+          );
+          let GroupLinkRegex = /Fox.whatsapp.com\/([0-9A-Za-z]{20,24})/i;
+          let isGroupLink = GroupLinkRegex.exec(body);
+          let PresentGroupLink = new RegExp(
+            `https://chat.whatsapp.com/${FetchCurrentGroupLink}`,
+            "i"
+          );
+          let isCurrentGroupLink = PresentGroupLink.test(body);
+          if (isGroupLink && !isCurrentGroupLink) {
+            await Image_Button(
+              ӄ𝖚𝖓𝖆𝖎,
+              Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+              A𝖗𝖌𝖘,
+              "./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊_Matte.png",
+              `╔◇═══════════════◇╗
+┊ 𝐊𝐫𝐲𝐙𝐞𝐧❌𝐀𝐧𝐭𝐢-𝐋𝐢𝐧𝐤
+┊    𝐌𝐞𝐜𝐡𝐚𝐧𝐢𝐬𝐦
+╚◇═══════════════◇╝
+
+🤖𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞: Kicked! 🎊One Less MoFo🎊
+❗𝗥𝗲𝗮𝘀𝗼𝗻: Sent some type of Link in this Group!
+⚠️𝗠𝗲𝘀𝘀𝗮𝗴𝗲: ${body}
+
+
+💀𝗧𝗿𝗶𝗴𝗴𝗲𝗿𝗲𝗱:
+🐾 WWW
+🐾 Discord Link
+🐾 Telegram Link
+🐾 Whatspp Invite Link`
+            );
+            return await ӄ𝖗𝖞ӄ𝖓𝖟
+              .groupRemove(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, [Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender])
+              .catch((error) => console.log(error));
+          } else if (
+            body.includes("https://t.me/") &&
+            body.includes("discord.gg") &&
+            body.includes("discord.com") &&
+            body.includes("/t.me/") &&
+            body.includes("wa.me/") &&
+            body.includes("www.")
+          ) {
+            await Image_Button(
+              ӄ𝖚𝖓𝖆𝖎,
+              Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+              A𝖗𝖌𝖘,
+              "./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊_Matte.png",
+              `╔◇═══════════════◇╗
+┊ 𝐊𝐫𝐲𝐙𝐞𝐧❌𝐀𝐧𝐭𝐢-𝐋𝐢𝐧𝐤
+┊    𝐌𝐞𝐜𝐡𝐚𝐧𝐢𝐬𝐦
+╚◇═══════════════◇╝
+
+🤖𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞: Kicked! 🎊One Less MoFo🎊
+❗𝗥𝗲𝗮𝘀𝗼𝗻: Sent some type of Link in this Group!
+⚠️𝗠𝗲𝘀𝘀𝗮𝗴𝗲: ${body}
+
+
+💀𝗧𝗿𝗶𝗴𝗴𝗲𝗿𝗲𝗱:
+🐾 WWW
+🐾 Discord Link
+🐾 Telegram Link
+🐾 Whatspp Invite Link`
+            );
+            return await ӄ𝖗𝖞ӄ𝖓𝖟
+              .groupRemove(VѶ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, [Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender])
+              .catch((error) => console.log(error));
+          } else {
+          }
+        }
+      );
+    }
+    `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
+    await userBanCheck.findOne(
       {
         ID: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender,
       },
@@ -209,7 +274,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           const { BeutyFly } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌗E𝖛𝖊𝖓𝖙𝖘/BeutyFly");
           await BeutyFly(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, chalk, budy, pushName);
         }
-        ("⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔");
+        `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
         switch (commandName) {
           case ``:
             if (isCommand) {
@@ -3362,7 +3427,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
         }
       }
     );
-    ("⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔");
+    `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
   } catch (err) {
     console.log(util.format(err));
     const time = moment.tz(`Asia/Kolkata`).format(`DD/MM HH:mm:ss`);
