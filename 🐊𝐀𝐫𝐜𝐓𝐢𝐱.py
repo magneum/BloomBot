@@ -21,7 +21,7 @@ load_dotenv("./Vʟӄʏʀɛ.env")
 ᴠʟᴋʏʀᴇi = getenv("CODE", None)
 BFS = 64 * 1024
 subprocess.run(["git", "config", "pull.rebase", "false"], check=True, stdout=subprocess.PIPE).stdout
-subprocess.run(["python", "𝐕𝐥𝐤𝐲𝐫𝐞🐞𝐁𝐞𝐞𝐭𝐥𝐞/🐍𝖛𝖑𝖐𝖕𝖞.py"], check=True, stdout=subprocess.PIPE).stdout
+subprocess.run(["python", "Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊/🐍𝖛𝖑𝖐𝖕𝖞.py"], check=True, stdout=subprocess.PIPE).stdout
 class InterceptHandler(logging.Handler):
     LEVELS_MAP = {
         logging.CRITICAL: "CRITICAL",
