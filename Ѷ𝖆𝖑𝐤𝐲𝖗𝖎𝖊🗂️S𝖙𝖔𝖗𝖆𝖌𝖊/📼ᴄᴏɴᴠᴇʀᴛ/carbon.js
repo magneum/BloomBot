@@ -68,7 +68,8 @@ exports.carbon = async (
       Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
       `*❌ERROR:* No query provided!
 
-*⚡USAGE:* ${prefix}${Final_Name} <text>`
+*⚡USAGE:* ${prefix}${Final_Name} <text>
+${prefix}${Final_Name} -t <theme name> <text>`
     );
   }
 
