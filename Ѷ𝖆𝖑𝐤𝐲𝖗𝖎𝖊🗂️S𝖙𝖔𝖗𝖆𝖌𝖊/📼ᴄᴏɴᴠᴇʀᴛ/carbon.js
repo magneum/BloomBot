@@ -101,17 +101,11 @@ exports.carbon = async (
     `yeti`,
     `zenburn`,
   ];
+  let themeInput;
+  var body = ᴠʟᴋʏʀᴇ.body.split(`-t`);
+  var code = body[0].replace(ᴠʟᴋʏʀᴇ.body[0] + commandName + ` `, ``);
 
-  const carbon = new Carbon.createCarbon()
-    .setCode(F𝖚𝖑𝖑_A𝖗𝖌𝖘)
-    .setBackgroundColor(`#1b3648`);
 
-  const bufferr = await Carbon.generateCarbon(carbon);
-  await ӄ𝖚𝖓𝖆𝖎.sendMessage(
-    Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
-    { image: bufferr },
-    { quoted: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 }
-  );
 };
 ("|⬡════════════════════════════════════════════════════════════|▷   ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  ◁|════════════════════════════════════════════════════════════⬡|");
 /*
