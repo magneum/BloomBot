@@ -106,12 +106,6 @@ connection_update,
 } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌗E𝖛𝖊𝖓𝖙𝖘/connection_update");
 return await connection_update(update, startӄ𝖚𝖓𝖆𝖎, ӄ𝖚𝖓𝖆𝖎);
 });
-
-ӄ𝖚𝖓𝖆𝖎.ev.on("contacts.update", async (update) => {
-const { contacts_update } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌗E𝖛𝖊𝖓𝖙𝖘/contacts_update");
-return await contacts_update(update);
-});
-
 ӄ𝖚𝖓𝖆𝖎.ev.on(`creds.update`, (creds) => {
 saveCreds(creds);
 });
