@@ -207,6 +207,22 @@ ${cpus
 ║• ${prefix}support
 ║• ${prefix}bcgroup
 ║• ${prefix}bc
+║•
+║• ${prefix}sp
+║• ${prefix}dev
+║• ${prefix}bot
+║• ${prefix}devs
+║• ${prefix}support
+║• ${prefix}official
+║•
+║• ${prefix}rule
+║• ${prefix}rules
+║•
+║• ${prefix}h
+║• ${prefix}how
+║• ${prefix}help
+║• ${prefix}menu
+║• ${prefix}allmenu
 ╚═══════◇
 
 ╔══「 📥𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫𝐬📥 」
