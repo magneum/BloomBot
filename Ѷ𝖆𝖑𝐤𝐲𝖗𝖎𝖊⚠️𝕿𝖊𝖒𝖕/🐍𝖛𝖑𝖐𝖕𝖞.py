@@ -1,8 +1,8 @@
-# |⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|
-# 
-# (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬! 
-# 
-# |⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|
+# ("|⬡════════════════════════════════════════════════════════════|▷   ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  ◁|════════════════════════════════════════════════════════════⬡|");
+# /*
+#  * * * * * * * * * * |        (𝐜)𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!        * * * * * * * * * *
+#  */
+# ("|⬡════════════════════════════════════════════════════════════|▷   ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  ◁|════════════════════════════════════════════════════════════⬡|");
 import os
 import logging
 import pathlib
@@ -42,33 +42,33 @@ pkgFl = pathlib.Path("package-lock.json")
 if pkgFl.exists ():
     os.remove("package-lock.json")
     if ᴠʟᴋʏʀᴇ == "HEROKU":
-        LOGS.info(str(f"🐍𝐏𝐲꧂ package-lock.json has been cleaned!"))
+        LOGS.info(str(f"🐍𝐏𝐲: package-lock.json has been cleaned!"))
     else:
-        cprint(f"🐍𝐏𝐲꧂ package-lock.json has been cleaned!", "yellow")
+        cprint(f"🐍𝐏𝐲: package-lock.json has been cleaned!", "yellow")
 else:
     if ᴠʟᴋʏʀᴇ == "HEROKU":
-        LOGS.info(str(f"🐍𝐏𝐲꧂ package-lock.json File does not exist!"))
+        LOGS.info(str(f"🐍𝐏𝐲: package-lock.json File does not exist!"))
     else:
-        cprint(f"🐍𝐏𝐲꧂ package-lock.json File does not exist!", "green")
+        cprint(f"🐍𝐏𝐲: package-lock.json File does not exist!", "green")
 try:
-    subprocess.run(["node", "𝐕𝐥𝐤𝐲𝐫𝐞🐞𝐁𝐞𝐞𝐭𝐥𝐞/Dash.js"], check=True, stdout=subprocess.PIPE).stdout
+    subprocess.run(["node", "Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/Krank.js"], check=True, stdout=subprocess.PIPE).stdout
 except Exception as Error:
     if ᴠʟᴋʏʀᴇ == "HEROKU":
-        LOGS.info(str(f"🐍𝐏𝐲꧂ {Error}"))
+        LOGS.info(str(f"🐍𝐏𝐲: {Error}"))
     else:
-        cprint(f"🐍𝐏𝐲꧂ {Error}")
+        cprint(f"🐍𝐏𝐲: {Error}")
 pkgFl = pathlib.Path("package.json")
 if pkgFl.exists ():
     os.remove("package.json")
     if ᴠʟᴋʏʀᴇ == "HEROKU":
-        LOGS.info(str(f"🐍𝐏𝐲꧂ package.json has been cleaned!"))
+        LOGS.info(str(f"🐍𝐏𝐲: package.json has been cleaned!"))
     else:
-        cprint(f"🐍𝐏𝐲꧂ package.json has been cleaned!", "yellow")
+        cprint(f"🐍𝐏𝐲: package.json has been cleaned!", "yellow")
 else:
     if ᴠʟᴋʏʀᴇ == "HEROKU":
-        LOGS.info(str(f"🐍𝐏𝐲꧂ package.json File does not exist!"))
+        LOGS.info(str(f"🐍𝐏𝐲: package.json File does not exist!"))
     else:
-        cprint(f"🐍𝐏𝐲꧂ package.json File does not exist!", "green")       
+        cprint(f"🐍𝐏𝐲: package.json File does not exist!", "green")       
 try:
     subprocess.run(["git", "config", "--global", "user.name", "KryKnz"], check=True, stdout=subprocess.PIPE).stdout
     subprocess.run(["git", "config", "--global", "user.email", "krakinzkon@gmail.com"], check=True, stdout=subprocess.PIPE).stdout
@@ -78,17 +78,17 @@ try:
     subprocess.run(["git", "reset", "--hard", "origin/𝐕𝐥𝐤𝐲𝐫𝐞📡𝐏𝐫𝐨𝐭𝐨®"], check=True, stdout=subprocess.PIPE).stdout
     subprocess.run(["git", "pull"], check=True, stdout=subprocess.PIPE).stdout
     if ᴠʟᴋʏʀᴇ == "HEROKU":
-        LOGS.info(str("🐍𝐏𝐲꧂ git sync done!"))
+        LOGS.info(str("🐍𝐏𝐲: git sync done!"))
     else:
-        cprint("🐍𝐏𝐲꧂ git sync done!", "green")
+        cprint("🐍𝐏𝐲: git sync done!", "green")
 except Exception as Error:
     if ᴠʟᴋʏʀᴇ == "HEROKU":
-        LOGS.info(str(f"🐍𝐏𝐲꧂ {Error}"))
-        LOGS.info(str("🐍𝐏𝐲꧂ Error In git sync!"))
-        LOGS.info(str("🐍𝐏𝐲꧂ Trying TO Stash and ReTry!"))
+        LOGS.info(str(f"🐍𝐏𝐲: {Error}"))
+        LOGS.info(str("🐍𝐏𝐲: Error In git sync!"))
+        LOGS.info(str("🐍𝐏𝐲: Trying TO Stash and ReTry!"))
     else:
-        cprint("🐍𝐏𝐲꧂ Error In git sync!", "red")
-        cprint("🐍𝐏𝐲꧂ Trying TO Stash and ReTry!", "yellow")
+        cprint("🐍𝐏𝐲: Error In git sync!", "red")
+        cprint("🐍𝐏𝐲: Trying TO Stash and ReTry!", "yellow")
     try:
         subprocess.run(["git", "config", "--global", "user.name", "KryKnz"], check=True, stdout=subprocess.PIPE).stdout
         subprocess.run(["git", "config", "--global", "user.email", "krakinzkon@gmail.com"], check=True, stdout=subprocess.PIPE).stdout
@@ -101,36 +101,36 @@ except Exception as Error:
         subprocess.run(["git", "pull"], check=True, stdout=subprocess.PIPE).stdout
     except Exception as Error:
         if ᴠʟᴋʏʀᴇ == "HEROKU":
-            LOGS.info(str(f"🐍𝐏𝐲꧂ {Error}"))
-            LOGS.info(str("🐍𝐏𝐲꧂ Nothing To Stash and Drop!"))
+            LOGS.info(str(f"🐍𝐏𝐲: {Error}"))
+            LOGS.info(str("🐍𝐏𝐲: Nothing To Stash and Drop!"))
         else:
-            cprint(f"🐍𝐏𝐲꧂ {Error}")
-            cprint("🐍𝐏𝐲꧂ Nothing To Stash and Drop!", "blue")
+            cprint(f"🐍𝐏𝐲: {Error}")
+            cprint("🐍𝐏𝐲: Nothing To Stash and Drop!", "blue")
 try:
     subprocess.run(["npm", "install", "--force", "--save"], check=True, stdout=subprocess.PIPE).stdout
     if ᴠʟᴋʏʀᴇ == "HEROKU":
-        LOGS.info(str(f"🐍𝐏𝐲꧂ npm install done using python subprocess!"))
+        LOGS.info(str(f"🐍𝐏𝐲: npm install done using python subprocess!"))
     else:
-        cprint(f"🐍𝐏𝐲꧂ npm install done using python subprocess!")
+        cprint(f"🐍𝐏𝐲: npm install done using python subprocess!")
 except Exception as Error:
     if ᴠʟᴋʏʀᴇ == "HEROKU":
-        LOGS.info(str(f"🐍𝐏𝐲꧂ {Error}"))
+        LOGS.info(str(f"🐍𝐏𝐲: {Error}"))
     else:
-        cprint(f"🐍𝐏𝐲꧂ {Error}")
+        cprint(f"🐍𝐏𝐲: {Error}")
 pkgFl = pathlib.Path("package-lock.json")
 if pkgFl.exists ():
     os.remove("package-lock.json")
     if ᴠʟᴋʏʀᴇ == "HEROKU":
-        LOGS.info(str(f"🐍𝐏𝐲꧂ package-lock.json has been cleaned!"))
+        LOGS.info(str(f"🐍𝐏𝐲: package-lock.json has been cleaned!"))
     else:
-        cprint(f"🐍𝐏𝐲꧂ package-lock.json has been cleaned!", "yellow")
+        cprint(f"🐍𝐏𝐲: package-lock.json has been cleaned!", "yellow")
 else:
     if ᴠʟᴋʏʀᴇ == "HEROKU":
-        LOGS.info(str(f"🐍𝐏𝐲꧂ package-lock.json File does not exist!"))
+        LOGS.info(str(f"🐍𝐏𝐲: package-lock.json File does not exist!"))
     else:
-        cprint(f"🐍𝐏𝐲꧂ package-lock.json File does not exist!", "green")
-# |⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|
-# 
-# (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬! 
-# 
-# |⬡════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|═══════════════════════════════════════════⬡|
+        cprint(f"🐍𝐏𝐲: package-lock.json File does not exist!", "green")
+# ("|⬡════════════════════════════════════════════════════════════|▷   ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  ◁|════════════════════════════════════════════════════════════⬡|");
+# /*
+#  * * * * * * * * * * |        (𝐜)𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!        * * * * * * * * * *
+#  */
+# ("|⬡════════════════════════════════════════════════════════════|▷   ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  ◁|════════════════════════════════════════════════════════════⬡|");

