@@ -3,8 +3,8 @@
 (𝐜)𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬! 
 */
 ("|⬡═════════════════════════════════════════════════|❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ☊ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ❞|════════════════════════════════════════════════⬡|");
-require(`./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/𝕷𝖆ყO𝖚𝖙`);
-require(`./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/Ѷ𝖆𝖑.js`);
+require(`../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/𝕷𝖆ყO𝖚𝖙`);
+require(`../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/Ѷ𝖆𝖑.js`);
 const {
 default: ӄ𝖚𝖓𝖆𝖎Connect,
 generateForwardMessageContent,
@@ -22,13 +22,13 @@ const chalk = require(`chalk`);
 const FileType = require(`file-type`);
 const mongoose = require(`mongoose`);
 const PhoneNumber = require(`awesome-phonenumber`);
-const { smsg, getBuffer, getSizeMedia } = require(`./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/myfunc`);
+const { smsg, getBuffer, getSizeMedia } = require(`../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/myfunc`);
 const {
 imageToWebp,
 videoToWebp,
 writeExifImg,
 writeExifVid,
-} = require(`./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/exif`);
+} = require(`../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/exif`);
 const sequelize = DATABASE;
 main().catch((err) => console.log(err));
 async function main() {
@@ -63,7 +63,7 @@ name in global.APIs ? global.APIs[name] : name
 const Ѷ𝖎𝖔𝖓 = makeInMemoryStore({
 logger: pino().child({ level: `silent`, stream: `Ѷ𝖎𝖔𝖓` }),
 });
-const dbAuth = require(`./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧆𝕯𝖆𝖙𝖆𝖇𝖆𝖘𝖊/🍂𝖘𝖖𝖑/Auth`);
+const dbAuth = require(`../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧆𝕯𝖆𝖙𝖆𝖇𝖆𝖘𝖊/🍂𝖘𝖖𝖑/Auth`);
 ("⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔");
 async function startӄ𝖚𝖓𝖆𝖎() {
 try {
@@ -89,26 +89,26 @@ auth: state,
 Ѷ𝖎𝖔𝖓.bind(ӄ𝖚𝖓𝖆𝖎.ev);
 ("⦓════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」══════════]  ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  [══════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」════════════════════════⦔");
 ӄ𝖚𝖓𝖆𝖎.ws.on(`CB:call`, async (json) => {
-const { call_updates } = require("./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌗E𝖛𝖊𝖓𝖙𝖘/call_updates");
+const { call_updates } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌗E𝖛𝖊𝖓𝖙𝖘/call_updates");
 return await call_updates(ӄ𝖚𝖓𝖆𝖎, json);
 });
 ӄ𝖚𝖓𝖆𝖎.ev.on(`messages.upsert`, async (chatUpdate) => {
-const { messages_upsert } = require("./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌗E𝖛𝖊𝖓𝖙𝖘/messages_upsert");
+const { messages_upsert } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌗E𝖛𝖊𝖓𝖙𝖘/messages_upsert");
 return await messages_upsert(chatUpdate, Ѷ𝖎𝖔𝖓, ӄ𝖚𝖓𝖆𝖎);
 });
 ӄ𝖚𝖓𝖆𝖎.ev.on(`group-participants.update`, async (grp) => {
-const { grp_participants } = require("./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌗E𝖛𝖊𝖓𝖙𝖘/grp_participants");
+const { grp_participants } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌗E𝖛𝖊𝖓𝖙𝖘/grp_participants");
 return await grp_participants(grp, ӄ𝖚𝖓𝖆𝖎);
 });
 ӄ𝖚𝖓𝖆𝖎.ev.on(`connection.update`, async (update) => {
 const {
 connection_update,
-} = require("./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌗E𝖛𝖊𝖓𝖙𝖘/connection_update");
+} = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌗E𝖛𝖊𝖓𝖙𝖘/connection_update");
 return await connection_update(update, startӄ𝖚𝖓𝖆𝖎, ӄ𝖚𝖓𝖆𝖎);
 });
 
 ӄ𝖚𝖓𝖆𝖎.ev.on("contacts.update", async (update) => {
-const { contacts_update } = require("./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌗E𝖛𝖊𝖓𝖙𝖘/contacts_update");
+const { contacts_update } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌗E𝖛𝖊𝖓𝖙𝖘/contacts_update");
 return await contacts_update(update);
 });
 
@@ -425,7 +425,7 @@ mimetype = mime,
 pathFile = filename;
 if (options.asDocument) type = `document`;
 if (options.asSticker || /webp/.test(mime)) {
-let { writeExif } = require(`./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/exif`);
+let { writeExif } = require(`../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/exif`);
 let media = { mimetype: mime, data };
 pathFile = await writeExif(media, {
 packname: options.packname ? options.packname : global.packname,
