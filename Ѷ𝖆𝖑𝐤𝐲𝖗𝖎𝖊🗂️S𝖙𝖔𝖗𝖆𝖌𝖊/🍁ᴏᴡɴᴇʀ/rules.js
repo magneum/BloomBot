@@ -66,7 +66,7 @@ exports.rules = async (
       ӄ𝖚𝖓𝖆𝖎,
       Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
       A𝖗𝖌𝖘,
-      "./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊_White.png",
+      "./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.png",
       `🏮 (𝐜)𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐑𝐮𝐥𝐞𝐬 🏮
 
 ⚠️ Do not abuse/disrespect bot and its owner.
