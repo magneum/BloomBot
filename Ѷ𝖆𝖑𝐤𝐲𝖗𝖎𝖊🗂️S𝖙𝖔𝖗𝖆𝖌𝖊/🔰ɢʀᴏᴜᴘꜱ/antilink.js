@@ -82,7 +82,7 @@ exports.antilink = async (
         serverID: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatId,
       },
       async (error, server) => {
-        if (error) return console.log(error);
+        if (error) return Caught(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, e);
         if (!server) {
           var newServer = new LinkList({
             serverID: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatId,
@@ -116,7 +116,7 @@ exports.antilink = async (
         serverID: ᴠʟᴋʏʀᴇ.chatId,
       },
       async (error, server) => {
-        if (error) return console.log(error);
+        if (error) return Caught(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, e);
         if (!server) {
           return await Image_Button(
             ӄ𝖚𝖓𝖆𝖎,
