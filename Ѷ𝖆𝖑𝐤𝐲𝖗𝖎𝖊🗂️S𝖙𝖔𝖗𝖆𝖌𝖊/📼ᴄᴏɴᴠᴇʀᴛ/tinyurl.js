@@ -18,6 +18,7 @@ const hxz = require(`hxz-api`);
 const chalk = require(`chalk`);
 const db = require(`quick.db`);
 const axios = require(`axios`);
+const Tinyurl = require("tinyurl-api");
 const canvacord = require(`canvacord`);
 const { Character } = require(`mailist`);
 const moment = require(`moment-timezone`);
