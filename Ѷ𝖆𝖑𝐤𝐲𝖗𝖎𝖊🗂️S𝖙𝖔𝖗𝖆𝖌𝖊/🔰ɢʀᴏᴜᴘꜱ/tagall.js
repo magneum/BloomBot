@@ -72,7 +72,6 @@ exports.tagall = async (
   } else {
     var Text = `*${groupName}*`;
   }
-
   let menText = `${Text}
 *💫 ping by - ${pushName}*
 *🕛 time - ${time}*
@@ -83,7 +82,8 @@ exports.tagall = async (
       var emo = `👑`;
     } else {
       var emo = `❄️`;
-    }    menText += `${emo} *@${memNum.id.split(`@`)[0]}*`;
+    }
+    menText += `${emo} *@${memNum.id.split(`@`)[0]}*`;
   }
   ӄ𝖚𝖓𝖆𝖎.sendMessage(
     Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
