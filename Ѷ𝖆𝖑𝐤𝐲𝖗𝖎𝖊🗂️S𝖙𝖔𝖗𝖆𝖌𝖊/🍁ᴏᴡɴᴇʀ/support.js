@@ -67,18 +67,21 @@ exports.support = async (
       Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
       A𝖗𝖌𝖘,
       "./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊_White.png",
-      `*(𝐜)𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞🍻𝐀𝐈*
+      `*(𝐜)Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🍻*
 *🛰️We𝐛:*  _VlkyreAI.krakinzkon.repl.co_
 *🐞GitHub:* _github.com/kryknz/vlkyre_
 *🎉Prefix:* /
 
+*⚠️No Links Allowed⚠️*
 
 *☊ Official Groups ☊*
-*𝗚roup⛩️1:* chat.whatsapp.com/LKN8uVBd8ucHRHofz0jBSd
-*𝗚roup⛩️2:* chat.whatsapp.com/HKO5WLEZxMe3xWCyiv6vBu
-*𝗚roup⛩️3:* chat.whatsapp.com/EIn3YFShFmkJ3fvAqf2rpn
-*𝗚roup⛩️4:* chat.whatsapp.com/Bc1jBF7OVMRKnyTWYyxz1z
-*𝗚roup⛩️5:* chat.whatsapp.com/G1NzKSYjAST95ehHk4FOZK`
+*𝗚roup⛩️1:* chat.whatsapp.com/Gn50KMVAJKZHYJeaGhs3UV
+*𝗚roup⛩️2:* chat.whatsapp.com/BF6J4MiaduL7ZRgt2Tqzk8
+*𝗚roup⛩️3:* chat.whatsapp.com/Hx5VAZMfthg5okQwerohXM
+*𝗚roup⛩️4:* chat.whatsapp.com/EwPq86c1N5L4iZKxpHL6WP
+*𝗚roup⛩️5:* chat.whatsapp.com/CcRTdjc2SHS0XlMP0Bvi2q
+
+_▷   ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  ◁_`
     );
   } catch (err) {
     const util = require(`util`);
