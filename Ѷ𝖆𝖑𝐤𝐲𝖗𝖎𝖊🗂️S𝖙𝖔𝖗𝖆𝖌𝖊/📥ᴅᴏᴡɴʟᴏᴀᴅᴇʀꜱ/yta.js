@@ -146,9 +146,11 @@ exports.yta = async (
 ⏰𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧: ${Found.timestamp}
 ✒️𝐀𝐮𝐭𝐡𝐨𝐫: ${Found.author.name}
 🫖𝗙𝗶𝗹𝗲𝘀𝗶𝘇𝗲: ${filesizeF || "undefined"}
-🌐𝗪𝗲𝗯 𝗗𝗟: ${DirectFile}
 🔗𝐋𝐢𝐧𝐤: ${Found.url}
-📜𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${Found.description}`
+📜𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${Found.description}
+
+
+🌐If File Doesn't Come then press this > ${DirectFile}`
       );
       return await ӄ𝖚𝖓𝖆𝖎.sendMessage(
         Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,

@@ -94,7 +94,7 @@ exports.toimg = async (
         fs.unlinkSync(media);
         if (err) Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.reply(err);
         let buffer = fs.readFileSync(ran);
-        await Image_Button(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, A𝖗𝖌𝖘, buffer, "𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®");
+        await Image_Button(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, A𝖗𝖌𝖘, buffer, "|▷   ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  ◁|");
         await fs.unlinkSync(ran);
       });
     } else if (
@@ -125,7 +125,7 @@ exports.toimg = async (
       await ӄ𝖚𝖓𝖆𝖎.sendMessage(
         Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
         {
-          video: { url: webpToMp4.result, caption: "𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®" },
+          video: { url: webpToMp4.result, caption: "|▷   ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  ◁|" },
           gifPlayback: true,
         },
         { quoted: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 }

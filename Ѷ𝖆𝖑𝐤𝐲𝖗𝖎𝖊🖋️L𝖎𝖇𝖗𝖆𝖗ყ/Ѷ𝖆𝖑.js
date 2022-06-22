@@ -9,6 +9,7 @@ const util = require(`util`);
 const chalk = require(`chalk`);
 const moment = require(`moment-timezone`);
 const { Caught } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌀B𝖚𝖙𝖙𝖔𝖓𝖘/Caught");
+const Ranker = require(`../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧆𝕯𝖆𝖙𝖆𝖇𝖆𝖘𝖊/🍃𝖒𝖔𝖓𝖌𝖔/autorank`);
 const LinkList = require(`../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧆𝕯𝖆𝖙𝖆𝖇𝖆𝖘𝖊/🍃𝖒𝖔𝖓𝖌𝖔/antilink`);
 const userBanCheck = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧆𝕯𝖆𝖙𝖆𝖇𝖆𝖘𝖊/𝖀𝖘𝖊𝖗🍣𝖒𝖔𝖓𝖌𝖔/user");
 `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
@@ -16,7 +17,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
   try {
     const Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 = Ѷ𝖆𝖑𝐤𝐲𝖗𝖎;
     const ӄ𝖚𝖓𝖆𝖎 = ӄ𝖚𝖓𝖆;
-    var body =
+    const Figure =
       Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype === `conversation`
         ? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.conversation
         : Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype == `imageMessage`
@@ -44,13 +45,14 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
         `stanzaId`
       );
     const budy = typeof Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.text == `string` ? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.text : ``;
-    const isCommand = body.startsWith(prefix);
+    const isCommand = Figure.startsWith(prefix);
     const isCmd =
-      prefix.includes(body != `` && body.slice(0, 1)) && body.slice(1) != ``;
+      prefix.includes(Figure != `` && Figure.slice(0, 1)) &&
+      Figure.slice(1) != ``;
     const commandName = isCmd
-      ? body.slice(1).trim().split(` `)[0].toLowerCase()
+      ? Figure.slice(1).trim().split(` `)[0].toLowerCase()
       : ``;
-    const A𝖗𝖌𝖘 = body.trim().split(/ +/).slice(1);
+    const A𝖗𝖌𝖘 = Figure.trim().split(/ +/).slice(1);
     const pushName = Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.pushName || `No Name`;
     const botNumber = await ӄ𝖚𝖓𝖆𝖎.decodeJid(ӄ𝖚𝖓𝖆𝖎.user.id);
     const isCreator = [botNumber, ...global.owner]
@@ -93,88 +95,24 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
     const isSenderTUF = TUFString.includes(
       Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender.substring(0, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender.indexOf(`@`))
     );
-    // if (isCommand && !isGroup)
-    // return Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.reply(`You cannot use any command in dm`);
     `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
-    // if (isCommand) {
-    // const randomXp = Math.floor(Math.random() * 3) + 1;
-    // const hasLeveledUp = await Levels.appendXp(
-    // Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender,
-    // `bot`,
-    // randomXp
-    // );
-    // if (hasLeveledUp) {
-    // const user = await Levels.fetch(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender, `bot`);
-    // const levelRole = user.level;
-    // var role = `Warrior`;
-    // if (levelRole <= 2) {
-    // var role = `Elite III`;
-    // } else if (levelRole <= 4) {
-    // var role = `Elite II`;
-    // } else if (levelRole <= 6) {
-    // var role = `Elite I`;
-    // } else if (levelRole <= 8) {
-    // var role = `Master IV`;
-    // } else if (levelRole <= 10) {
-    // var role = `Master III`;
-    // } else if (levelRole <= 12) {
-    // var role = `Master II`;
-    // } else if (levelRole <= 14) {
-    // var role = `Master I`;
-    // } else if (levelRole <= 16) {
-    // var role = `Grandmaster V`;
-    // } else if (levelRole <= 18) {
-    // var role = `Grandmaster IV`;
-    // } else if (levelRole <= 20) {
-    // var role = `Grandmaster III`;
-    // } else if (levelRole <= 22) {
-    // var role = `Grandmaster II`;
-    // } else if (levelRole <= 24) {
-    // var role = `Grandmaster I`;
-    // } else if (levelRole <= 26) {
-    // var role = `Epic V`;
-    // } else if (levelRole <= 28) {
-    // var role = `Epic IV`;
-    // } else if (levelRole <= 30) {
-    // var role = `Epic III`;
-    // } else if (levelRole <= 32) {
-    // var role = `Epic II`;
-    // } else if (levelRole <= 34) {
-    // var role = `Epic I`;
-    // } else if (levelRole <= 36) {
-    // var role = `Legend V`;
-    // } else if (levelRole <= 38) {
-    // var role = `Legend IV`;
-    // } else if (levelRole <= 40) {
-    // var role = `Legend III`;
-    // } else if (levelRole <= 42) {
-    // var role = `Legend II`;
-    // } else if (levelRole <= 44) {
-    // var role = `Legend I`;
-    // } else if (levelRole <= 46) {
-    // var role = `Mythic`;
-    // } else if (levelRole <= 50) {
-    // var role = `Mythic Glory`;
-    // }
-    // await ӄ𝖚𝖓𝖆𝖎.sendMessage(
-    // Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
-    // {
-    // image: {
-    // url: `https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR5kFSuoFniw90CNXW8z1FkDma4WF6fJyL3Q&usqp=CAU`,
-    // },
-    // caption: `* LEVEL UP! *
-
-    // *📃️Name*: ${pushName}
-    // *🍀Exp*: ${user.xp} / ${Levels.xpFor(user.level + 1)}
-    // *🎐Level*: ${user.level} 🆙
-    // *🔮️Role*: *${role}*
-
-    // Congrats!! 🎉🎉`,
-    // },
-    // { quoted: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 }
-    // );
-    // }
-    // }
+    if (isCommand && !isGroup) {
+      return Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.reply(`You cannot use any command in dm`);
+    }
+    `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
+    if (Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message && !Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.fromMe && Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup) {
+      await Ranker.findOne(
+        {
+          serverID: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
+        },
+        async (error, userRank) => {
+          if (error) return Caught(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, error);
+          if (!userRank) return;
+          const { ARanks } = require(".././Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 Types/ARanks");
+          await ARanks(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, ӄ𝖚𝖓𝖆𝖎, Caught);
+        }
+      );
+    }
     `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
     if (
       Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message &&
@@ -183,83 +121,15 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
       isBotAdmin &&
       !isSenderTUF
     ) {
-      await LinkList.findOne(
-        {
-          serverID: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
-        },
-        async (error, server) => {
-          if (error) return Caught(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, e);
-          if (!server) return;
-          let FetchCurrentGroupLink = await ӄ𝖚𝖓𝖆𝖎.groupInviteCode(
-            Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID
-          );
-          let GroupLinkRegex = /Fox.whatsapp.com\/([0-9A-Za-z]{20,24})/i;
-          let isGroupLink = GroupLinkRegex.exec(body);
-          let PresentGroupLink = new RegExp(
-            `https://chat.whatsapp.com/${FetchCurrentGroupLink}`,
-            "i"
-          );
-          let isCurrentGroupLink = PresentGroupLink.test(body);
-          if (isGroupLink && !isCurrentGroupLink) {
-            await Image_Button(
-              ӄ𝖚𝖓𝖆𝖎,
-              Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
-              A𝖗𝖌𝖘,
-              "./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊_Matte.png",
-              `╔◇═══════════════◇╗
-┊ 𝐊𝐫𝐲𝐙𝐞𝐧❌𝐀𝐧𝐭𝐢-𝐋𝐢𝐧𝐤
-┊    𝐌𝐞𝐜𝐡𝐚𝐧𝐢𝐬𝐦
-╚◇═══════════════◇╝
-
-🤖𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞: Kicked! 🎊One Less MoFo🎊
-❗𝗥𝗲𝗮𝘀𝗼𝗻: Sent some type of Link in this Group!
-⚠️𝗠𝗲𝘀𝘀𝗮𝗴𝗲: ${body}
-
-
-💀𝗧𝗿𝗶𝗴𝗴𝗲𝗿𝗲𝗱:
-🐾 WWW
-🐾 Discord Link
-🐾 Telegram Link
-🐾 Whatspp Invite Link`
-            );
-            return await ӄ𝖗𝖞ӄ𝖓𝖟
-              .groupRemove(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, [Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender])
-              .catch((e) => Caught(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, e));
-          } else if (
-            body.includes("https://t.me/") &&
-            body.includes("discord.gg") &&
-            body.includes("discord.com") &&
-            body.includes("/t.me/") &&
-            body.includes("wa.me/") &&
-            body.includes("www.")
-          ) {
-            await Image_Button(
-              ӄ𝖚𝖓𝖆𝖎,
-              Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
-              A𝖗𝖌𝖘,
-              "./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊_Matte.png",
-              `╔◇═══════════════◇╗
-┊ 𝐊𝐫𝐲𝐙𝐞𝐧❌𝐀𝐧𝐭𝐢-𝐋𝐢𝐧𝐤
-┊    𝐌𝐞𝐜𝐡𝐚𝐧𝐢𝐬𝐦
-╚◇═══════════════◇╝
-
-🤖𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞: Kicked! 🎊One Less MoFo🎊
-❗𝗥𝗲𝗮𝘀𝗼𝗻: Sent some type of Link in this Group!
-⚠️𝗠𝗲𝘀𝘀𝗮𝗴𝗲: ${body}
-
-
-💀𝗧𝗿𝗶𝗴𝗴𝗲𝗿𝗲𝗱:
-🐾 WWW
-🐾 Discord Link
-🐾 Telegram Link
-🐾 Whatspp Invite Link`
-            );
-            return await ӄ𝖗𝖞ӄ𝖓𝖟
-              .groupRemove(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, [Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender])
-              .catch((e) => Caught(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, e));
-          } else {
-          }
-        }
+      const { DenyLink } = require(".././Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 Types/DenyLink");
+      await DenyLink(
+        Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+        ӄ𝖚𝖓𝖆𝖎,
+        Caught,
+        Image_Button,
+        A𝖗𝖌𝖘,
+        LinkList,
+        Figure
       );
     }
     `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
@@ -601,7 +471,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -629,7 +499,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -659,7 +529,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -692,7 +562,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -720,7 +590,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -751,7 +621,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -779,7 +649,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -807,7 +677,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -837,7 +707,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -865,7 +735,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -895,7 +765,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -927,7 +797,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -955,7 +825,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -983,7 +853,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -1012,7 +882,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -1041,7 +911,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -1069,7 +939,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -1097,7 +967,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -1133,7 +1003,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -1166,7 +1036,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -1198,7 +1068,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -1228,7 +1098,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -1256,7 +1126,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -1286,7 +1156,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -1314,7 +1184,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -1342,7 +1212,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -1370,7 +1240,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -1399,7 +1269,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -1430,7 +1300,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -1459,7 +1329,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -1487,7 +1357,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -1515,7 +1385,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -1543,7 +1413,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -1571,7 +1441,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -1599,7 +1469,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -1627,7 +1497,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -1655,7 +1525,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -1683,7 +1553,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -1711,7 +1581,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -1739,7 +1609,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -1767,7 +1637,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -1795,7 +1665,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -1823,7 +1693,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -1851,7 +1721,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -1879,7 +1749,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -1907,7 +1777,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -1937,7 +1807,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -1966,7 +1836,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -1993,7 +1863,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -2022,7 +1892,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -2051,7 +1921,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -2080,7 +1950,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -2109,7 +1979,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -2138,7 +2008,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -2167,7 +2037,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -2196,7 +2066,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -2225,7 +2095,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -2254,7 +2124,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -2283,7 +2153,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -2312,7 +2182,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -2341,7 +2211,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -2370,7 +2240,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -2399,7 +2269,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -2428,7 +2298,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -2455,7 +2325,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -2484,7 +2354,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -2513,7 +2383,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -2540,7 +2410,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -2569,7 +2439,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -2596,7 +2466,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -2623,7 +2493,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -2652,7 +2522,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -2681,7 +2551,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -2710,7 +2580,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -2739,7 +2609,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -2768,7 +2638,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -2795,7 +2665,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -2822,7 +2692,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -2849,7 +2719,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -2876,7 +2746,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -2903,7 +2773,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -2930,7 +2800,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -2959,7 +2829,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -2988,7 +2858,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -3015,7 +2885,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -3042,7 +2912,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -3071,7 +2941,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -3100,7 +2970,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -3127,7 +2997,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -3156,7 +3026,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -3183,7 +3053,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -3212,7 +3082,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -3239,7 +3109,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -3268,7 +3138,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -3295,7 +3165,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -3328,7 +3198,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -3357,7 +3227,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
@@ -3389,7 +3259,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               isSenderAdmin,
               isSenderTUF,
               commandName,
-              body,
+              Figure,
               isReply,
               mentionByTag,
               mentionByReply
