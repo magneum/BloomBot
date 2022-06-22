@@ -6,11 +6,14 @@
 const chalk = require("chalk");
 const { DisconnectReason } = require(`@adiwajshing/baileys`);
 exports.connection_update = async (update, startӄ𝖚𝖓𝖆𝖎, ӄ𝖚𝖓𝖆𝖎) => {
+try {
 const { lastDisconnect, connection, qr } = update;
 if (connection === `close`) {
 lastDisconnect.error?.output?.statusCode !== DisconnectReason.loggedOut
 ? startӄ𝖚𝖓𝖆𝖎()
-: console.log(chalk.bgYellowBright("💡𝐈𝐧𝐟𝐨꧂  Connecting to WhatsApp..."));
+: console.log(
+chalk.bgYellowBright("💡𝐈𝐧𝐟𝐨꧂  Connecting to WhatsApp...")
+);
 }
 if (qr) {
 QR_GENERATE = qr;
@@ -22,19 +25,9 @@ chalk.bgGreenBright(
 )
 );
 }
-try {
-await ӄ𝖚𝖓𝖆𝖎.sendMessage(ӄ𝖚𝖓𝖆𝖎.user.id, {
-text: `お 𝐔𝐬𝐞𝐫: ${
-ӄ𝖚𝖓𝖆𝖎.user.notify ||
-ӄ𝖚𝖓𝖆𝖎.user.name ||
-ӄ𝖚𝖓𝖆𝖎.user.name ||
-ӄ𝖚𝖓𝖆𝖎.user.id.split("@")[0]
-} お
-
-「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」
-ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™`,
-});
-} catch (error) {}
+} catch (error) {
+console.log(error);
+}
 };
 ("|⬡════════════════════════════════════════════════════════════|▷   ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  ◁|════════════════════════════════════════════════════════════⬡|");
 /*
