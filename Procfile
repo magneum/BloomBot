@@ -1,1 +1,1 @@
-worker: python ⛵ɮօǟȶ.py
+worker: python3 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌱𝐤𝖗𝖞𝐤𝖊𝖐.py
