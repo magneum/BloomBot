@@ -73,7 +73,7 @@ exports.reddit = async (
       );
     }
     const res = await axios.get(
-      `https://meme-api.herokuapp.com/gimme/` + q + `/`
+      `https://meme-api.herokuapp.com/gimme/` + F𝖚𝖑𝖑_A𝖗𝖌𝖘 + `/`
     );
     if (!res.data.url) {
       if (!F𝖚𝖑𝖑_A𝖗𝖌𝖘) {

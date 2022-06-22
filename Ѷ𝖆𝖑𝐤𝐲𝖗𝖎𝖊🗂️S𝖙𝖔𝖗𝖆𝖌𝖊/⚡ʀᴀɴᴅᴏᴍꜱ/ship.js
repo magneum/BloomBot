@@ -133,19 +133,19 @@ exports.ship = async (
     try {
       ppuser = await ӄ𝖚𝖓𝖆𝖎.profilePictureUrl(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender, `image`);
     } catch {
-      ppuser = `https://www.linkpicture.com/q/IMG-20220118-WA0387.png`;
+      ppuser = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.png`;
     }
     if (users == `none`) {
       try {
         ppuser2 = await ӄ𝖚𝖓𝖆𝖎.profilePictureUrl(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender, `image`);
       } catch {
-        ppuser2 = `https://www.linkpicture.com/q/IMG-20220118-WA0387.png`;
+        ppuser = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.png`;
       }
     } else {
       try {
         ppuser2 = await ӄ𝖚𝖓𝖆𝖎.profilePictureUrl(users, `image`);
       } catch {
-        ppuser2 = `https://www.linkpicture.com/q/IMG-20220118-WA0387.png`;
+        ppuser = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.png`;
       }
     }
     const options = [

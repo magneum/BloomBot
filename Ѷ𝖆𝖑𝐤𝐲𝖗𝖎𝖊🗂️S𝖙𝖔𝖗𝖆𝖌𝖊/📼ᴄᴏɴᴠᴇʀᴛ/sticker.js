@@ -74,7 +74,7 @@ exports.sticker = async (
 *⚡USAGE:* ${prefix}${Final_Name} <Tag the sticker>`
       );
     }
-    if (q) {
+    if (F𝖚𝖑𝖑_A𝖗𝖌𝖘) {
       anu = A𝖗𝖌𝖘.join(` `).split(`|`);
       pack = anu[0] !== `` ? anu[0] : global.packname;
       author = anu[1] !== `` ? anu[1] : global.author;
