@@ -70,8 +70,8 @@ exports.fish = async (
       {
         ID: ʟɴᴀᴍᴇ,
       },
-      async (error, userEco) => {
-        if (error) return ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, KryChat);
+      async (𝕰𝖗𝖗𝖔𝖗, userEco) => {
+        if (𝕰𝖗𝖗𝖔𝖗) return ꜰᴜᴄᴋ.catch(𝕰𝖗𝖗𝖔𝖗, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, KryChat);
         if (!userEco) {
           var newUser = new Economy({
             ID: ᴠʟᴋʏʀᴇ.sender,
@@ -85,7 +85,7 @@ exports.fish = async (
           });
           await newUser
             .save()
-            .catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, KryChat));
+            .catch((𝕰𝖗𝖗𝖔𝖗) => ꜰᴜᴄᴋ.catch(𝕰𝖗𝖗𝖔𝖗, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, KryChat));
           return await Image_Button(
             ӄ𝖚𝖓𝖆𝖎,
             Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -132,7 +132,7 @@ exports.fish = async (
             userEco.money = userEco.money + worth;
             userEco.fishdone = Date.now();
             userEco.fishtimeout = 1800000;
-            userEco.save().catch((error) => Caught(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝕰𝖗𝖗𝖔𝖗));
+            userEco.save().catch((𝕰𝖗𝖗𝖔𝖗) => Caught(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝕰𝖗𝖗𝖔𝖗));
             return await Image_Button(
               ӄ𝖚𝖓𝖆𝖎,
               Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,

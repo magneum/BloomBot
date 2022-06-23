@@ -69,8 +69,8 @@ exports.daily = async (
       {
         ID: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender,
       },
-      async (error, userEco) => {
-        if (error) return Caught(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(error));
+      async (𝕰𝖗𝖗𝖔𝖗, userEco) => {
+        if (𝕰𝖗𝖗𝖔𝖗) return Caught(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(𝕰𝖗𝖗𝖔𝖗));
         if (!userEco) {
           var newUser = new Economy({
             ID: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender,
@@ -84,7 +84,7 @@ exports.daily = async (
           });
           await newUser
             .save()
-            .catch((error) => Caught(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(error)));
+            .catch((𝕰𝖗𝖗𝖔𝖗) => Caught(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(𝕰𝖗𝖗𝖔𝖗)));
           return await Image_Button(
             ӄ𝖚𝖓𝖆𝖎,
             Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -122,7 +122,7 @@ exports.daily = async (
           userEco.money = userEco.money + 1000;
           await userEco
             .save()
-            .catch((error) => Caught(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(error)));
+            .catch((𝕰𝖗𝖗𝖔𝖗) => Caught(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(𝕰𝖗𝖗𝖔𝖗)));
           return await Image_Button(
             ӄ𝖚𝖓𝖆𝖎,
             Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
