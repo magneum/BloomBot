@@ -100,23 +100,23 @@ async function startӄ𝖚𝖓𝖆𝖎() {
   `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
   // ӄ𝖚𝖓𝖆𝖎.ws.on(`CB:call`, async (json) => {
   // const { call_updates } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌗E𝖛𝖊𝖓𝖙𝖘/call_updates");
-  // return await call_updates(ӄ𝖚𝖓𝖆𝖎, json);
+  // await call_updates(ӄ𝖚𝖓𝖆𝖎, json);
   // });
   ӄ𝖚𝖓𝖆𝖎.ev.on(`messages.upsert`, async (chatUpdate) => {
     const { messages_upsert } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌗E𝖛𝖊𝖓𝖙𝖘/messages_upsert");
-    return await messages_upsert(chatUpdate, Ѷ𝖎𝖔𝖓, ӄ𝖚𝖓𝖆𝖎);
+    await messages_upsert(chatUpdate, Ѷ𝖎𝖔𝖓, ӄ𝖚𝖓𝖆𝖎);
   });
   ӄ𝖚𝖓𝖆𝖎.ev.on(`group-participants.update`, async (Group) => {
     const {
-      grp_participants,
-    } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌗E𝖛𝖊𝖓𝖙𝖘/grp_participants");
-    return await grp_participants(Group, ӄ𝖚𝖓𝖆𝖎);
+      group_participants,
+    } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌗E𝖛𝖊𝖓𝖙𝖘/group_participants");
+    await group_participants(Group, ӄ𝖚𝖓𝖆𝖎);
   });
   ӄ𝖚𝖓𝖆𝖎.ev.on(`connection.update`, async (update) => {
     const {
       connection_update,
     } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌗E𝖛𝖊𝖓𝖙𝖘/connection_update");
-    return await connection_update(update, startӄ𝖚𝖓𝖆𝖎, ӄ𝖚𝖓𝖆𝖎);
+    await connection_update(update, startӄ𝖚𝖓𝖆𝖎, ӄ𝖚𝖓𝖆𝖎);
   });
   ӄ𝖚𝖓𝖆𝖎.ev.on(`creds.update`, (creds) => {
     saveCreds(creds);
@@ -263,7 +263,7 @@ END:VCARD`,
       : fs.existsSync(path)
       ? fs.readFileSync(path)
       : Buffer.alloc(0);
-    return await ӄ𝖚𝖓𝖆𝖎.sendMessage(
+    await ӄ𝖚𝖓𝖆𝖎.sendMessage(
       jid,
       { image: buffer, caption: caption, ...options },
       { quoted }
@@ -287,7 +287,7 @@ END:VCARD`,
       : fs.existsSync(path)
       ? fs.readFileSync(path)
       : Buffer.alloc(0);
-    return await ӄ𝖚𝖓𝖆𝖎.sendMessage(
+    await ӄ𝖚𝖓𝖆𝖎.sendMessage(
       jid,
       { video: buffer, caption: caption, gifPlayback: gif, ...options },
       { quoted }
@@ -304,7 +304,7 @@ END:VCARD`,
       : fs.existsSync(path)
       ? fs.readFileSync(path)
       : Buffer.alloc(0);
-    return await ӄ𝖚𝖓𝖆𝖎.sendMessage(
+    await ӄ𝖚𝖓𝖆𝖎.sendMessage(
       jid,
       { audio: buffer, ptt: ptt, ...options },
       { quoted }
