@@ -22,6 +22,7 @@ const ms = require(`parse-ms`);
 const canvacord = require(`canvacord`);
 const { Character } = require(`mailist`);
 const moment = require(`moment-timezone`);
+const pokemon = require("pokemontcgsdk");
 const Carbon = require(`unofficial-carbon-now`);
 const { exec, execSync } = require(`child_process`);
 const { N𝖊𝖊𝖉__A𝖗𝖌𝖘 } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌀B𝖚𝖙𝖙𝖔𝖓𝖘/N𝖊𝖊𝖉__A𝖗𝖌𝖘");
