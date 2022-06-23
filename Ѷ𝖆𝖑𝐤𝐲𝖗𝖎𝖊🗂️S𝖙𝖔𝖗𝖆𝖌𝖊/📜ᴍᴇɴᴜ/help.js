@@ -210,10 +210,10 @@ os.totalmem()
 ║▷ ${prefix}pat
 ║▷ ${prefix}poke
 ║▷ ${prefix}sad
-║▷ ${prefix}
-║▷ ${prefix}
-║▷ ${prefix}
-║▷ ${prefix}
+║▷ ${prefix}slap
+║▷ ${prefix}smile
+║▷ ${prefix}wave
+║▷ ${prefix}wink
 ╚═══════╝
 
 ╔══「 ⭕𝐘𝐨𝐮𝐓𝐮𝐛𝐞+𝐅𝐢𝐥𝐭𝐞𝐫⭕ 」
