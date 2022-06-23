@@ -249,7 +249,7 @@ exports.pay = async (
           }
         }
       );
-    }
+    } else
   } catch (𝕰𝖗𝖗𝖔𝖗) {
     const util = require(`util`);
     Caught(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝕰𝖗𝖗𝖔𝖗);
