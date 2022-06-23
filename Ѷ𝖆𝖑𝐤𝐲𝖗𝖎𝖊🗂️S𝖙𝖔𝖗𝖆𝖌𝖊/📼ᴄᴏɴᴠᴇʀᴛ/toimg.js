@@ -90,9 +90,9 @@ exports.toimg = async (
       }
       let media = await ӄ𝖚𝖓𝖆𝖎.downloadAndSaveMediaMessage(quoted);
       let ran = await getRandom(`.png`);
-      exec(`ffmpeg -i ${media} ${ran}`, async (err) => {
+      exec(`ffmpeg -i ${media} ${ran}`, async (𝕰𝖗𝖗𝖔𝖗) => {
         fs.unlinkSync(media);
-        if (err) Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.reply(err);
+        if (𝕰𝖗𝖗𝖔𝖗) Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.reply(𝕰𝖗𝖗𝖔𝖗);
         let buffer = fs.readFileSync(ran);
         await Image_Button(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, A𝖗𝖌𝖘, buffer, "|▷   ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  ◁|");
         await fs.unlinkSync(ran);
@@ -132,9 +132,9 @@ exports.toimg = async (
       );
       await fs.unlinkSync(media);
     }
-  } catch (err) {
+  } catch (𝕰𝖗𝖗𝖔𝖗) {
     const util = require(`util`);
-    Caught(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, err);
+    Caught(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝕰𝖗𝖗𝖔𝖗);
   }
 };
 ("|⬡════════════════════════════════════════════════════════════|▷   ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  ◁|════════════════════════════════════════════════════════════⬡|");
