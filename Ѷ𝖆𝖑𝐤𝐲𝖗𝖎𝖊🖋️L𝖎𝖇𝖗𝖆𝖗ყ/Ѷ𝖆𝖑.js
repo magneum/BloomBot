@@ -3380,6 +3380,35 @@ mentionByTag,
 mentionByReply
 );
 break;
+case `hunt`:
+case `hunting`:
+case `pokehunt`:
+const { hunt } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/💰ɢᴀᴍᴇ/hunt");
+await hunt(
+ӄ𝖚𝖓𝖆𝖎,
+Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+A𝖗𝖌𝖘,
+pushName,
+fromMe,
+F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+quoted,
+mime,
+isMedia,
+isGroup,
+groupMetadata,
+groupName,
+participants,
+groupAdmins,
+isBotAdmin,
+isSenderAdmin,
+isSenderTUF,
+commandName,
+Figure,
+isReply,
+mentionByTag,
+mentionByReply
+);
+break;
 
 
 
