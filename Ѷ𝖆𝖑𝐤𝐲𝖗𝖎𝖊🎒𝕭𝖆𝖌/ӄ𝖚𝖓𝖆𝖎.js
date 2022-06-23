@@ -105,10 +105,10 @@ auth: state,
 const { messages_upsert } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌗E𝖛𝖊𝖓𝖙𝖘/messages_upsert");
 return await messages_upsert(chatUpdate, Ѷ𝖎𝖔𝖓, ӄ𝖚𝖓𝖆𝖎);
 });
-// ӄ𝖚𝖓𝖆𝖎.ev.on(`group-participants.update`, async (grp) => {
-// const { grp_participants } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌗E𝖛𝖊𝖓𝖙𝖘/grp_participants");
-// return await grp_participants(grp, ӄ𝖚𝖓𝖆𝖎);
-// });
+ӄ𝖚𝖓𝖆𝖎.ev.on(`group-participants.update`, async (Group) => {
+const { grp_participants } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌗E𝖛𝖊𝖓𝖙𝖘/grp_participants");
+return await grp_participants(Group, ӄ𝖚𝖓𝖆𝖎);
+});
 ӄ𝖚𝖓𝖆𝖎.ev.on(`connection.update`, async (update) => {
 const {
 connection_update,
