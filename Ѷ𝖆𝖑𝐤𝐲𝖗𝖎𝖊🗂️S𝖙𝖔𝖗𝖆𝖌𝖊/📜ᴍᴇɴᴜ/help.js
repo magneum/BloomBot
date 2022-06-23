@@ -200,9 +200,9 @@ os.totalmem()
 ║▷ ${prefix}blush
 ║▷ ${prefix}bored
 ║▷ ${prefix}confused
-║▷ ${prefix}
-║▷ ${prefix}
-║▷ ${prefix}
+║▷ ${prefix}cry
+║▷ ${prefix}cuddle
+║▷ ${prefix}goodnight
 ║▷ ${prefix}
 ║▷ ${prefix}
 ║▷ ${prefix}
