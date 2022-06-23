@@ -173,6 +173,21 @@ ${cpus
 ║• ${prefix}waifu
 ╚═══════◇
 
+╔══「 💰𝗚𝗮𝗺𝗲𝘀💰 」
+║• ${prefix}dly
+║• ${prefix}daily
+║• ${prefix}pond
+║• ${prefix}fish
+║• ${prefix}fishesh
+║• ${prefix}bet
+║• ${prefix}gamble
+║• ${prefix}betting
+║• ${prefix}roulette
+║• ${prefix}
+║• ${prefix}
+║• ${prefix}
+╚═══════◇
+
 ╔══「 🐾𝐀𝐧𝐢𝐦𝐚𝐭𝐢𝐨𝐧/𝐆𝐢𝐟🐾 」
 ║• ${prefix}cuddle
 ║• ${prefix}hug
