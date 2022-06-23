@@ -94,7 +94,7 @@ exports.daily = async (
 ┊  𝐕𝐥𝐤𝐲𝐫𝐞💵𝐁𝐚𝐧𝐤
 ╚◇══════════════◇╝
 
-🧈*Added To DB for _${Final_Name}_ command First Time!*
+🧈Added To DB for Current command First Time!
 ✅𝗗𝗮𝗶𝗹𝘆 𝗦𝘁𝗮𝘁𝘂𝘀: You've collected your daily reward!
 💵𝐃𝐚𝐢𝐥𝐲 𝐌𝐨𝐧𝐞𝐲:  1000 
 💰𝗧𝗼𝘁𝗮𝗹 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: Just Opened Your Account!`
