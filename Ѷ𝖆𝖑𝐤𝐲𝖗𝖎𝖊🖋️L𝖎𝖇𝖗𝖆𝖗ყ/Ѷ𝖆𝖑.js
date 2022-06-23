@@ -152,19 +152,19 @@ let MEMBER_B = [];
 let MEMBER_C = [];
 let MEMBER_D = [];
 let MEMBER_E = [];
-const MetaFor_A = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata(
+const MetaFor_A = await ӄ𝖚𝖓𝖆𝖎.groupMetadata(
 "120363020792949649@g.us"
 );
-const MetaFor_B = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata(
+const MetaFor_B = await ӄ𝖚𝖓𝖆𝖎.groupMetadata(
 "120363024871653603@g.us"
 );
-const MetaFor_C = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata(
+const MetaFor_C = await ӄ𝖚𝖓𝖆𝖎.groupMetadata(
 "120363042762307739@g.us"
 );
-const MetaFor_D = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata(
+const MetaFor_D = await ӄ𝖚𝖓𝖆𝖎.groupMetadata(
 "120363022161584857@g.us"
 );
-const MetaFor_E = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata(
+const MetaFor_E = await ӄ𝖚𝖓𝖆𝖎.groupMetadata(
 "120363039223842047@g.us"
 );
 for (var i = 0; i < MetaFor_A.participants.length; i++)
@@ -3291,6 +3291,37 @@ mentionByTag,
 mentionByReply
 );
 break;
+
+
+case `dly`:
+case `daily`:
+const { daily } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/💰ɢᴀᴍᴇ/daily");
+await daily(
+ӄ𝖚𝖓𝖆𝖎,
+Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+A𝖗𝖌𝖘,
+pushName,
+fromMe,
+F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+quoted,
+mime,
+isMedia,
+isGroup,
+groupMetadata,
+groupName,
+participants,
+groupAdmins,
+isBotAdmin,
+isSenderAdmin,
+isSenderTUF,
+commandName,
+Figure,
+isReply,
+mentionByTag,
+mentionByReply
+);
+break;
+
 
 case `sp`:
 case `dev`:
