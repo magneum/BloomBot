@@ -3400,6 +3400,65 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
                 mentionByReply
               );
               break;
+            case `zoo`:
+            case `forest`:
+            case `animals`:
+              const { zoo } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/💰ɢᴀᴍᴇ/zoo");
+              await zoo(
+                ӄ𝖚𝖓𝖆𝖎,
+                Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+                A𝖗𝖌𝖘,
+                pushName,
+                fromMe,
+                F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+                quoted,
+                mime,
+                isMedia,
+                isGroup,
+                groupMetadata,
+                groupName,
+                participants,
+                groupAdmins,
+                isBotAdmin,
+                isSenderAdmin,
+                isSenderTUF,
+                commandName,
+                Figure,
+                isReply,
+                mentionByTag,
+                mentionByReply
+              );
+              break;
+            case `pay`:
+            case `loan`:
+            case `borrow`:
+            case `payment`:
+              const { pay } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/💰ɢᴀᴍᴇ/pay");
+              await pay(
+                ӄ𝖚𝖓𝖆𝖎,
+                Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+                A𝖗𝖌𝖘,
+                pushName,
+                fromMe,
+                F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+                quoted,
+                mime,
+                isMedia,
+                isGroup,
+                groupMetadata,
+                groupName,
+                participants,
+                groupAdmins,
+                isBotAdmin,
+                isSenderAdmin,
+                isSenderTUF,
+                commandName,
+                Figure,
+                isReply,
+                mentionByTag,
+                mentionByReply
+              );
+              break;
 
             case `sp`:
             case `dev`:

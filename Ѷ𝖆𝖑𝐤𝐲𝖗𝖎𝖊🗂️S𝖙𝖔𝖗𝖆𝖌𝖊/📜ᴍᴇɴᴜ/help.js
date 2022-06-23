@@ -186,6 +186,13 @@ os.totalmem()
 ║${prefix}hunt
 ║${prefix}hunting
 ║${prefix}pokehunt
+║${prefix}zoo
+║${prefix}forest
+║${prefix}animals
+║${prefix}pay
+║${prefix}loan
+║${prefix}borrow
+║${prefix}payment
 ╚═══════◇
 
 ╔══「 🐾𝐀𝐧𝐢𝐦𝐚𝐭𝐢𝐨𝐧/𝐆𝐢𝐟🐾 」
