@@ -1781,35 +1781,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               );
               break;
 
-            case `slap`:
-              const { slap } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥞ᴀɴɪᴍᴇ/slap");
-              await slap(
-                ӄ𝖚𝖓𝖆𝖎,
-                Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
-                A𝖗𝖌𝖘,
-                pushName,
-                fromMe,
-                F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-                quoted,
-                mime,
-                isMedia,
-                isGroup,
-                groupMetadata,
-                groupName,
-                participants,
-                groupAdmins,
-                isBotAdmin,
-                isSenderAdmin,
-                isSenderTUF,
-                commandName,
-                Figure,
-                isReply,
-                mentionByTag,
-                mentionByReply
-              );
-              break;
-
-            case `cuddle`:
+              case `cuddle`:
               const { cuddle } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥞ᴀɴɪᴍᴇ/cuddle");
               await cuddle(
                 ӄ𝖚𝖓𝖆𝖎,
