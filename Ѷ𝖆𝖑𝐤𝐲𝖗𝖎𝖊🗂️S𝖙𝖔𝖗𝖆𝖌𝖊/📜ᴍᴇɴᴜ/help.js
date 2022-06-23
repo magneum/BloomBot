@@ -206,10 +206,10 @@ os.totalmem()
 ║▷ ${prefix}happy
 ║▷ ${prefix}hug
 ║▷ ${prefix}kick
-║▷ ${prefix}
-║▷ ${prefix}
-║▷ ${prefix}
-║▷ ${prefix}
+║▷ ${prefix}kiss
+║▷ ${prefix}pat
+║▷ ${prefix}poke
+║▷ ${prefix}sad
 ║▷ ${prefix}
 ║▷ ${prefix}
 ║▷ ${prefix}
