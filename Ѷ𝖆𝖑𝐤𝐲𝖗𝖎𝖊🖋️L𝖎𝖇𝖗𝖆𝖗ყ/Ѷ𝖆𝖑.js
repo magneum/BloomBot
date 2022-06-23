@@ -1865,6 +1865,374 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               );
               break;
 
+            case `bite`:
+              const { bite } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥞ᴀɴɪᴍᴇ/bite");
+              await bite(
+                ӄ𝖚𝖓𝖆𝖎,
+                Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+                A𝖗𝖌𝖘,
+                pushName,
+                fromMe,
+                F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+                quoted,
+                mime,
+                isMedia,
+                isGroup,
+                groupMetadata,
+                groupName,
+                participants,
+                groupAdmins,
+                isBotAdmin,
+                isSenderAdmin,
+                isSenderTUF,
+                commandName,
+                Figure,
+                isReply,
+                mentionByTag,
+                mentionByReply
+              );
+              break;
+
+            case `blush`:
+              const { blush } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥞ᴀɴɪᴍᴇ/blush");
+              await blush(
+                ӄ𝖚𝖓𝖆𝖎,
+                Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+                A𝖗𝖌𝖘,
+                pushName,
+                fromMe,
+                F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+                quoted,
+                mime,
+                isMedia,
+                isGroup,
+                groupMetadata,
+                groupName,
+                participants,
+                groupAdmins,
+                isBotAdmin,
+                isSenderAdmin,
+                isSenderTUF,
+                commandName,
+                Figure,
+                isReply,
+                mentionByTag,
+                mentionByReply
+              );
+              break;
+
+            case `bored`:
+              const { bored } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥞ᴀɴɪᴍᴇ/bored");
+              await bored(
+                ӄ𝖚𝖓𝖆𝖎,
+                Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+                A𝖗𝖌𝖘,
+                pushName,
+                fromMe,
+                F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+                quoted,
+                mime,
+                isMedia,
+                isGroup,
+                groupMetadata,
+                groupName,
+                participants,
+                groupAdmins,
+                isBotAdmin,
+                isSenderAdmin,
+                isSenderTUF,
+                commandName,
+                Figure,
+                isReply,
+                mentionByTag,
+                mentionByReply
+              );
+              break;
+
+            case `confused`:
+              const {
+                confused,
+              } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥞ᴀɴɪᴍᴇ/confused");
+              await confused(
+                ӄ𝖚𝖓𝖆𝖎,
+                Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+                A𝖗𝖌𝖘,
+                pushName,
+                fromMe,
+                F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+                quoted,
+                mime,
+                isMedia,
+                isGroup,
+                groupMetadata,
+                groupName,
+                participants,
+                groupAdmins,
+                isBotAdmin,
+                isSenderAdmin,
+                isSenderTUF,
+                commandName,
+                Figure,
+                isReply,
+                mentionByTag,
+                mentionByReply
+              );
+              break;
+
+            case `cry`:
+              const { cry } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥞ᴀɴɪᴍᴇ/cry");
+              await cry(
+                ӄ𝖚𝖓𝖆𝖎,
+                Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+                A𝖗𝖌𝖘,
+                pushName,
+                fromMe,
+                F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+                quoted,
+                mime,
+                isMedia,
+                isGroup,
+                groupMetadata,
+                groupName,
+                participants,
+                groupAdmins,
+                isBotAdmin,
+                isSenderAdmin,
+                isSenderTUF,
+                commandName,
+                Figure,
+                isReply,
+                mentionByTag,
+                mentionByReply
+              );
+              break;
+
+            case `goodnight`:
+              const {
+                goodnight,
+              } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥞ᴀɴɪᴍᴇ/goodnight");
+              await goodnight(
+                ӄ𝖚𝖓𝖆𝖎,
+                Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+                A𝖗𝖌𝖘,
+                pushName,
+                fromMe,
+                F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+                quoted,
+                mime,
+                isMedia,
+                isGroup,
+                groupMetadata,
+                groupName,
+                participants,
+                groupAdmins,
+                isBotAdmin,
+                isSenderAdmin,
+                isSenderTUF,
+                commandName,
+                Figure,
+                isReply,
+                mentionByTag,
+                mentionByReply
+              );
+              break;
+
+            case `happy`:
+              const { happy } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥞ᴀɴɪᴍᴇ/happy");
+              await happy(
+                ӄ𝖚𝖓𝖆𝖎,
+                Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+                A𝖗𝖌𝖘,
+                pushName,
+                fromMe,
+                F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+                quoted,
+                mime,
+                isMedia,
+                isGroup,
+                groupMetadata,
+                groupName,
+                participants,
+                groupAdmins,
+                isBotAdmin,
+                isSenderAdmin,
+                isSenderTUF,
+                commandName,
+                Figure,
+                isReply,
+                mentionByTag,
+                mentionByReply
+              );
+              break;
+
+            case `poke`:
+              const { poke } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥞ᴀɴɪᴍᴇ/poke");
+              await poke(
+                ӄ𝖚𝖓𝖆𝖎,
+                Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+                A𝖗𝖌𝖘,
+                pushName,
+                fromMe,
+                F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+                quoted,
+                mime,
+                isMedia,
+                isGroup,
+                groupMetadata,
+                groupName,
+                participants,
+                groupAdmins,
+                isBotAdmin,
+                isSenderAdmin,
+                isSenderTUF,
+                commandName,
+                Figure,
+                isReply,
+                mentionByTag,
+                mentionByReply
+              );
+              break;
+
+            case `sad`:
+              const { sad } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥞ᴀɴɪᴍᴇ/sad");
+              await sad(
+                ӄ𝖚𝖓𝖆𝖎,
+                Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+                A𝖗𝖌𝖘,
+                pushName,
+                fromMe,
+                F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+                quoted,
+                mime,
+                isMedia,
+                isGroup,
+                groupMetadata,
+                groupName,
+                participants,
+                groupAdmins,
+                isBotAdmin,
+                isSenderAdmin,
+                isSenderTUF,
+                commandName,
+                Figure,
+                isReply,
+                mentionByTag,
+                mentionByReply
+              );
+              break;
+
+            case `slap`:
+              const { slap } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥞ᴀɴɪᴍᴇ/slap");
+              await slap(
+                ӄ𝖚𝖓𝖆𝖎,
+                Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+                A𝖗𝖌𝖘,
+                pushName,
+                fromMe,
+                F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+                quoted,
+                mime,
+                isMedia,
+                isGroup,
+                groupMetadata,
+                groupName,
+                participants,
+                groupAdmins,
+                isBotAdmin,
+                isSenderAdmin,
+                isSenderTUF,
+                commandName,
+                Figure,
+                isReply,
+                mentionByTag,
+                mentionByReply
+              );
+              break;
+
+            case `smile`:
+              const { smile } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥞ᴀɴɪᴍᴇ/smile");
+              await smile(
+                ӄ𝖚𝖓𝖆𝖎,
+                Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+                A𝖗𝖌𝖘,
+                pushName,
+                fromMe,
+                F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+                quoted,
+                mime,
+                isMedia,
+                isGroup,
+                groupMetadata,
+                groupName,
+                participants,
+                groupAdmins,
+                isBotAdmin,
+                isSenderAdmin,
+                isSenderTUF,
+                commandName,
+                Figure,
+                isReply,
+                mentionByTag,
+                mentionByReply
+              );
+              break;
+
+            case `wave`:
+              const { wave } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥞ᴀɴɪᴍᴇ/wave");
+              await wave(
+                ӄ𝖚𝖓𝖆𝖎,
+                Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+                A𝖗𝖌𝖘,
+                pushName,
+                fromMe,
+                F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+                quoted,
+                mime,
+                isMedia,
+                isGroup,
+                groupMetadata,
+                groupName,
+                participants,
+                groupAdmins,
+                isBotAdmin,
+                isSenderAdmin,
+                isSenderTUF,
+                commandName,
+                Figure,
+                isReply,
+                mentionByTag,
+                mentionByReply
+              );
+              break;
+
+            case `wink`:
+              const { wink } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥞ᴀɴɪᴍᴇ/wink");
+              await wink(
+                ӄ𝖚𝖓𝖆𝖎,
+                Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+                A𝖗𝖌𝖘,
+                pushName,
+                fromMe,
+                F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+                quoted,
+                mime,
+                isMedia,
+                isGroup,
+                groupMetadata,
+                groupName,
+                participants,
+                groupAdmins,
+                isBotAdmin,
+                isSenderAdmin,
+                isSenderTUF,
+                commandName,
+                Figure,
+                isReply,
+                mentionByTag,
+                mentionByReply
+              );
+              break;
+
             case `waifu`:
               const { waifu } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/⚡ʀᴀɴᴅᴏᴍꜱ/waifu");
               await waifu(
