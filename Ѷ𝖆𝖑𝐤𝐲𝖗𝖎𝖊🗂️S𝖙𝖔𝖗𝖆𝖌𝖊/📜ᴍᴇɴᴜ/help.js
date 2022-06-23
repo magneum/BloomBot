@@ -302,6 +302,14 @@ os.totalmem()
 ╚═══════╝
 
 ╔══「 🔰𝐆𝐫𝐨𝐮𝐩𝐬/𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧🔰 」
+║▷ ${prefix}nolink
+║▷ ${prefix}stoplink
+║▷ ${prefix}antilink
+║▷ ${prefix}welcome
+║▷ ${prefix}welcomer
+║▷ ${prefix}setwelcome
+║▷ ${prefix}autorole
+║▷ ${prefix}autorank
 ║▷ ${prefix}del
 ║▷ ${prefix}demote
 ║▷ ${prefix}promote

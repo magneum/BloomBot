@@ -1006,6 +1006,95 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
               );
               break;
 
+            case `antilink`:
+            case `stoplink`:
+            case `nolink`:
+              const { del } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔰ɢʀᴏᴜᴘꜱ/del");
+              await del(
+                ӄ𝖚𝖓𝖆𝖎,
+                Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+                A𝖗𝖌𝖘,
+                pushName,
+                fromMe,
+                F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+                quoted,
+                mime,
+                isMedia,
+                isGroup,
+                groupMetadata,
+                groupName,
+                participants,
+                groupAdmins,
+                isBotAdmin,
+                isSenderAdmin,
+                isSenderTUF,
+                commandName,
+                Figure,
+                isReply,
+                mentionByTag,
+                mentionByReply
+              );
+              break;
+
+            case `autorank`:
+            case `autorole`:
+              const { del } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔰ɢʀᴏᴜᴘꜱ/del");
+              await del(
+                ӄ𝖚𝖓𝖆𝖎,
+                Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+                A𝖗𝖌𝖘,
+                pushName,
+                fromMe,
+                F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+                quoted,
+                mime,
+                isMedia,
+                isGroup,
+                groupMetadata,
+                groupName,
+                participants,
+                groupAdmins,
+                isBotAdmin,
+                isSenderAdmin,
+                isSenderTUF,
+                commandName,
+                Figure,
+                isReply,
+                mentionByTag,
+                mentionByReply
+              );
+              break;
+
+            case `setwelcome`:
+            case `welcomer`:
+            case `welcome`:
+              const { del } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔰ɢʀᴏᴜᴘꜱ/del");
+              await del(
+                ӄ𝖚𝖓𝖆𝖎,
+                Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+                A𝖗𝖌𝖘,
+                pushName,
+                fromMe,
+                F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+                quoted,
+                mime,
+                isMedia,
+                isGroup,
+                groupMetadata,
+                groupName,
+                participants,
+                groupAdmins,
+                isBotAdmin,
+                isSenderAdmin,
+                isSenderTUF,
+                commandName,
+                Figure,
+                isReply,
+                mentionByTag,
+                mentionByReply
+              );
+              break;
+
             case `ban`:
               const { ban } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🍁ᴏᴡɴᴇʀ/ban");
               await ban(
