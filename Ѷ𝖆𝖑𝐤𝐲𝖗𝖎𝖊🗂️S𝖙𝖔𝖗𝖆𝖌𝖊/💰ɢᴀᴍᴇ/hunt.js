@@ -97,7 +97,7 @@ exports.hunt = async (
 ┊ 𝐌𝐢𝐧𝐞𝐜𝐫𝐚𝐟𝐭 🪵 𝐄𝐝𝐢𝐭𝐢𝐨𝐧
 ╚◇══════════════◇╝
 
-🧈 *Added To DB for _${Final_Name}_ command First Time!*
+🧈Added To DB for Current command First Time!
 🦋 _Try ${prefix}${Final_Name} Again!_`
           );
         }
