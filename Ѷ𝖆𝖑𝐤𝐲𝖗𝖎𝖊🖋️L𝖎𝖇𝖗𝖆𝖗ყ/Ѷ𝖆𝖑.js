@@ -96,10 +96,82 @@ const isSenderTUF = TUFString.includes(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender.substring(0, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender.indexOf(`@`))
 );
 `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
-// if (isCommand && !isGroup) {
-// return Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.reply(`You cannot use any command in dm`);
-// }
+if (isCommand) {
+if (isGroup) {
+let MEMBER_A = [];
+let MEMBER_B = [];
+let MEMBER_C = [];
+let MEMBER_D = [];
+let MEMBER_E = [];
+const MetaFor_A = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363020792949649@g.us");
+const MetaFor_B = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363024871653603@g.us");
+const MetaFor_C = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363042762307739@g.us");
+const MetaFor_D = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363022161584857@g.us");
+const MetaFor_E = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363039223842047@g.us");
+for (var i = 0; i < MetaFor_A.participants.length; i++)
+MEMBER_A[i] = MetaFor_A.participants[i].id;
+for (var i = 0; i < MetaFor_B.participants.length; i++)
+MEMBER_B[i] = MetaFor_B.participants[i].id;
+for (var i = 0; i < MetaFor_C.participants.length; i++)
+MEMBER_C[i] = MetaFor_C.participants[i].id;
+for (var i = 0; i < MetaFor_D.participants.length; i++)
+MEMBER_D[i] = MetaFor_D.participants[i].id;
+for (var i = 0; i < MetaFor_E.participants.length; i++)
+MEMBER_E[i] = MetaFor_E.participants[i].id;
+if (
+!fromMe &&
+!isSenderTUF &&
+!MEMBER_A.includes(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender) &&
+!MEMBER_B.includes(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender) &&
+!MEMBER_C.includes(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender) &&
+!MEMBER_D.includes(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender) &&
+!MEMBER_E.includes(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender)
+) {
+return await ӄ𝖚𝖓𝖆𝖎.sendMessage(
+Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
+{
+contextInfo: { mentionedJid: [Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender] },
+image: { url: "./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.png" },
+caption: `┌─「 𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐏𝐫𝐨𝐭𝐨® 」
+├• ɴᴀᴍᴇ: ${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.pushName || "No_Name"}
+└────────────────◇
+
+
+╔◇══════════════◇╗
+┊ 🦊𝐕𝐞𝐫𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧🦊
+╚◇══════════════◇╝
+
+𝐉𝐨𝐢𝐧 𝐓𝐨 𝐁𝐞 𝐕𝐞𝐫𝐢𝐟𝐢𝐞𝐝:
+*𝗚roup⛩️1:* chat.whatsapp.com/Gn50KMVAJKZHYJeaGhs3UV
+*𝗚roup⛩️2:* chat.whatsapp.com/BF6J4MiaduL7ZRgt2Tqzk8
+*𝗚roup⛩️3:* chat.whatsapp.com/Hx5VAZMfthg5okQwerohXM
+*𝗚roup⛩️4:* chat.whatsapp.com/EwPq86c1N5L4iZKxpHL6WP
+*𝗚roup⛩️5:* chat.whatsapp.com/CcRTdjc2SHS0XlMP0Bvi2q
+
+*🐙 𝐌𝐢𝐬𝐜𝐞𝐥𝐥𝐚𝐧𝐞𝐨𝐮𝐬 🐙*
+*⚙️Tester:* chat.whatsapp.com/G3T8x7AFMTzLJQxuVTw7nz
+*🙏🏽‍Request:* chat.whatsapp.com/L5fEdIIMTBM5Hf8wYSm8in`,
+footer: "*⦓ ⒸѶ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 ⦔*",
+buttons: [
+{
+buttonId: prefix + "help",
+buttonText: { displayText: prefix + "help" },
+type: 1,
+},
+{
+buttonId: prefix + "support",
+buttonText: { displayText: prefix + "support" },
+type: 1,
+},
+],
+headerType: 4,
+},
+{
+quoted: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+}
+);
 // `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
+} else {
 // if (Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message && !Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.fromMe && Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup) {
 // await Ranker.findOne(
 // {
@@ -479,7 +551,9 @@ mentionByReply
 break;
 
 case `carbon`:
-const { carbon } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/📼ᴄᴏɴᴠᴇʀᴛ/carbon");
+const {
+carbon,
+} = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/📼ᴄᴏɴᴠᴇʀᴛ/carbon");
 await carbon(
 ӄ𝖚𝖓𝖆𝖎,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -509,7 +583,9 @@ break;
 case `getgif`:
 case `gify`:
 case `gif`:
-const { gify } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔎ꜱᴇᴀʀᴄʜ/gify");
+const {
+gify,
+} = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔎ꜱᴇᴀʀᴄʜ/gify");
 await gify(
 ӄ𝖚𝖓𝖆𝖎,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -570,7 +646,9 @@ mentionByReply
 break;
 
 case `toimg`:
-const { toimg } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/📼ᴄᴏɴᴠᴇʀᴛ/toimg");
+const {
+toimg,
+} = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/📼ᴄᴏɴᴠᴇʀᴛ/toimg");
 await toimg(
 ӄ𝖚𝖓𝖆𝖎,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -629,7 +707,9 @@ mentionByReply
 break;
 
 case `tourl`:
-const { tourl } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/📼ᴄᴏɴᴠᴇʀᴛ/tourl");
+const {
+tourl,
+} = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/📼ᴄᴏɴᴠᴇʀᴛ/tourl");
 await tourl(
 ӄ𝖚𝖓𝖆𝖎,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -657,7 +737,9 @@ mentionByReply
 break;
 
 case `remove`:
-const { remove } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔰ɢʀᴏᴜᴘꜱ/remove");
+const {
+remove,
+} = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔰ɢʀᴏᴜᴘꜱ/remove");
 await remove(
 ӄ𝖚𝖓𝖆𝖎,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -715,7 +797,9 @@ mentionByReply
 break;
 
 case `demote`:
-const { demote } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔰ɢʀᴏᴜᴘꜱ/demote");
+const {
+demote,
+} = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔰ɢʀᴏᴜᴘꜱ/demote");
 await demote(
 ӄ𝖚𝖓𝖆𝖎,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -805,7 +889,9 @@ mentionByReply
 break;
 
 case `tagall`:
-const { tagall } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔰ɢʀᴏᴜᴘꜱ/tagall");
+const {
+tagall,
+} = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔰ɢʀᴏᴜᴘꜱ/tagall");
 await tagall(
 ӄ𝖚𝖓𝖆𝖎,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -833,7 +919,9 @@ mentionByReply
 break;
 
 case `group`:
-const { group } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔰ɢʀᴏᴜᴘꜱ/group");
+const {
+group,
+} = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔰ɢʀᴏᴜᴘꜱ/group");
 await group(
 ӄ𝖚𝖓𝖆𝖎,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -862,7 +950,9 @@ break;
 
 case `invite`:
 case `grouplink`:
-const { invite } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔰ɢʀᴏᴜᴘꜱ/invite");
+const {
+invite,
+} = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔰ɢʀᴏᴜᴘꜱ/invite");
 await invite(
 ӄ𝖚𝖓𝖆𝖎,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -947,7 +1037,9 @@ mentionByReply
 break;
 
 case `unban`:
-const { unban } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🍁ᴏᴡɴᴇʀ/unban");
+const {
+unban,
+} = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🍁ᴏᴡɴᴇʀ/unban");
 await unban(
 ӄ𝖚𝖓𝖆𝖎,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -983,7 +1075,9 @@ case `ytplay`:
 case `ytaudio`:
 case `ytmusic`:
 case `youtubemusic`:
-const { yta } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/📥ᴅᴏᴡɴʟᴏᴀᴅᴇʀꜱ/yta");
+const {
+yta,
+} = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/📥ᴅᴏᴡɴʟᴏᴀᴅᴇʀꜱ/yta");
 await yta(
 ӄ𝖚𝖓𝖆𝖎,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -1016,7 +1110,9 @@ case `stream`:
 case `ytmp4`:
 case `ytvideo`:
 case `youtubevideo`:
-const { ytv } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/📥ᴅᴏᴡɴʟᴏᴀᴅᴇʀꜱ/ytv");
+const {
+ytv,
+} = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/📥ᴅᴏᴡɴʟᴏᴀᴅᴇʀꜱ/ytv");
 await ytv(
 ӄ𝖚𝖓𝖆𝖎,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -1078,7 +1174,9 @@ break;
 case `sr`:
 case `reddit`:
 case `subreddit`:
-const { reddit } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/⚡ʀᴀɴᴅᴏᴍꜱ/reddit");
+const {
+reddit,
+} = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/⚡ʀᴀɴᴅᴏᴍꜱ/reddit");
 await reddit(
 ӄ𝖚𝖓𝖆𝖎,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -1106,7 +1204,9 @@ mentionByReply
 break;
 
 case `meme`:
-const { meme } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/⚡ʀᴀɴᴅᴏᴍꜱ/meme");
+const {
+meme,
+} = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/⚡ʀᴀɴᴅᴏᴍꜱ/meme");
 await meme(
 ӄ𝖚𝖓𝖆𝖎,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -1192,7 +1292,9 @@ mentionByReply
 break;
 
 case `leave`:
-const { leave } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🍁ᴏᴡɴᴇʀ/leave");
+const {
+leave,
+} = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🍁ᴏᴡɴᴇʀ/leave");
 await leave(
 ӄ𝖚𝖓𝖆𝖎,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -1220,7 +1322,9 @@ mentionByReply
 break;
 
 case `lyrics`:
-const { lyrics } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔎ꜱᴇᴀʀᴄʜ/lyrics");
+const {
+lyrics,
+} = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔎ꜱᴇᴀʀᴄʜ/lyrics");
 await lyrics(
 ӄ𝖚𝖓𝖆𝖎,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -1249,7 +1353,9 @@ break;
 
 case `gimage`:
 case `image`:
-const { image } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔎ꜱᴇᴀʀᴄʜ/image");
+const {
+image,
+} = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔎ꜱᴇᴀʀᴄʜ/image");
 await image(
 ӄ𝖚𝖓𝖆𝖎,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -1280,7 +1386,9 @@ case `web`:
 case `find`:
 case `search`:
 case `google`:
-const { google } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔎ꜱᴇᴀʀᴄʜ/google");
+const {
+google,
+} = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔎ꜱᴇᴀʀᴄʜ/google");
 await google(
 ӄ𝖚𝖓𝖆𝖎,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -1309,7 +1417,9 @@ break;
 
 case `take`:
 case `steal`:
-const { steal } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/📼ᴄᴏɴᴠᴇʀᴛ/steal");
+const {
+steal,
+} = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/📼ᴄᴏɴᴠᴇʀᴛ/steal");
 await steal(
 ӄ𝖚𝖓𝖆𝖎,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -1337,7 +1447,9 @@ mentionByReply
 break;
 
 case `iguser`:
-const { iguser } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔎ꜱᴇᴀʀᴄʜ/iguser");
+const {
+iguser,
+} = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔎ꜱᴇᴀʀᴄʜ/iguser");
 await iguser(
 ӄ𝖚𝖓𝖆𝖎,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -1365,7 +1477,9 @@ mentionByReply
 break;
 
 case `ship`:
-const { ship } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/⚡ʀᴀɴᴅᴏᴍꜱ/ship");
+const {
+ship,
+} = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/⚡ʀᴀɴᴅᴏᴍꜱ/ship");
 await ship(
 ӄ𝖚𝖓𝖆𝖎,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -1393,7 +1507,9 @@ mentionByReply
 break;
 
 case `quote`:
-const { quote } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/⚡ʀᴀɴᴅᴏᴍꜱ/quote");
+const {
+quote,
+} = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/⚡ʀᴀɴᴅᴏᴍꜱ/quote");
 await quote(
 ӄ𝖚𝖓𝖆𝖎,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -1421,7 +1537,9 @@ mentionByReply
 break;
 
 case `fact`:
-const { fact } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/⚡ʀᴀɴᴅᴏᴍꜱ/fact");
+const {
+fact,
+} = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/⚡ʀᴀɴᴅᴏᴍꜱ/fact");
 await fact(
 ӄ𝖚𝖓𝖆𝖎,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -1449,7 +1567,9 @@ mentionByReply
 break;
 
 case `advice`:
-const { advice } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/⚡ʀᴀɴᴅᴏᴍꜱ/advice");
+const {
+advice,
+} = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/⚡ʀᴀɴᴅᴏᴍꜱ/advice");
 await advice(
 ӄ𝖚𝖓𝖆𝖎,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -1617,7 +1737,9 @@ mentionByReply
 break;
 
 case `cuddle`:
-const { cuddle } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥞ᴀɴɪᴍᴇ/cuddle");
+const {
+cuddle,
+} = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥞ᴀɴɪᴍᴇ/cuddle");
 await cuddle(
 ӄ𝖚𝖓𝖆𝖎,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -1673,7 +1795,9 @@ mentionByReply
 break;
 
 case `waifu`:
-const { waifu } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/⚡ʀᴀɴᴅᴏᴍꜱ/waifu");
+const {
+waifu,
+} = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/⚡ʀᴀɴᴅᴏᴍꜱ/waifu");
 await waifu(
 ӄ𝖚𝖓𝖆𝖎,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -1701,7 +1825,9 @@ mentionByReply
 break;
 
 case `neko`:
-const { neko } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/⚡ʀᴀɴᴅᴏᴍꜱ/neko");
+const {
+neko,
+} = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/⚡ʀᴀɴᴅᴏᴍꜱ/neko");
 await neko(
 ӄ𝖚𝖓𝖆𝖎,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -1729,7 +1855,9 @@ mentionByReply
 break;
 
 case `anime`:
-const { anime } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔎ꜱᴇᴀʀᴄʜ/anime");
+const {
+anime,
+} = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔎ꜱᴇᴀʀᴄʜ/anime");
 await anime(
 ӄ𝖚𝖓𝖆𝖎,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -1757,7 +1885,9 @@ mentionByReply
 break;
 
 case `manga`:
-const { manga } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔎ꜱᴇᴀʀᴄʜ/manga");
+const {
+manga,
+} = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔎ꜱᴇᴀʀᴄʜ/manga");
 await manga(
 ӄ𝖚𝖓𝖆𝖎,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -1816,7 +1946,9 @@ break;
 
 case `bc`:
 case `bcgroup`:
-const { bcgroup } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🍁ᴏᴡɴᴇʀ/bcgroup");
+const {
+bcgroup,
+} = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🍁ᴏᴡɴᴇʀ/bcgroup");
 await bcgroup(
 ӄ𝖚𝖓𝖆𝖎,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -1843,7 +1975,9 @@ mentionByReply
 );
 break;
 case `yt8d`:
-const { yt8d } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/⭕ʏᴛꜰɪʟᴛᴇʀ/yt8d");
+const {
+yt8d,
+} = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/⭕ʏᴛꜰɪʟᴛᴇʀ/yt8d");
 await yt8d(
 ӄ𝖚𝖓𝖆𝖎,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -2305,7 +2439,9 @@ mentionByReply
 );
 break;
 case `echo`:
-const { echo } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥐ꜰɪʟᴛᴇʀꜱ/echo");
+const {
+echo,
+} = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥐ꜰɪʟᴛᴇʀꜱ/echo");
 await echo(
 ӄ𝖚𝖓𝖆𝖎,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -2390,7 +2526,9 @@ mentionByReply
 );
 break;
 case `phaser`:
-const { phaser } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥐ꜰɪʟᴛᴇʀꜱ/phaser");
+const {
+phaser,
+} = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥐ꜰɪʟᴛᴇʀꜱ/phaser");
 await phaser(
 ӄ𝖚𝖓𝖆𝖎,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -2446,7 +2584,9 @@ mentionByReply
 );
 break;
 case `slow`:
-const { slow } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥐ꜰɪʟᴛᴇʀꜱ/slow");
+const {
+slow,
+} = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥐ꜰɪʟᴛᴇʀꜱ/slow");
 await slow(
 ӄ𝖚𝖓𝖆𝖎,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -2473,7 +2613,9 @@ mentionByReply
 );
 break;
 case `speed`:
-const { speed } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥐ꜰɪʟᴛᴇʀꜱ/speed");
+const {
+speed,
+} = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥐ꜰɪʟᴛᴇʀꜱ/speed");
 await speed(
 ӄ𝖚𝖓𝖆𝖎,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -2672,7 +2814,9 @@ mentionByReply
 );
 break;
 case `bdsm`:
-const { bdsm } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🍑ʜᴇɴᴛᴀɪ/bdsm");
+const {
+bdsm,
+} = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🍑ʜᴇɴᴛᴀɪ/bdsm");
 await bdsm(
 ӄ𝖚𝖓𝖆𝖎,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -2726,7 +2870,9 @@ mentionByReply
 );
 break;
 case `doujin`:
-const { doujin } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🍑ʜᴇɴᴛᴀɪ/doujin");
+const {
+doujin,
+} = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🍑ʜᴇɴᴛᴀɪ/doujin");
 await doujin(
 ӄ𝖚𝖓𝖆𝖎,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -2753,7 +2899,9 @@ mentionByReply
 );
 break;
 case `feet`:
-const { feet } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🍑ʜᴇɴᴛᴀɪ/feet");
+const {
+feet,
+} = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🍑ʜᴇɴᴛᴀɪ/feet");
 await feet(
 ӄ𝖚𝖓𝖆𝖎,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -2780,7 +2928,9 @@ mentionByReply
 );
 break;
 case `femdom`:
-const { femdom } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🍑ʜᴇɴᴛᴀɪ/femdom");
+const {
+femdom,
+} = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🍑ʜᴇɴᴛᴀɪ/femdom");
 await femdom(
 ӄ𝖚𝖓𝖆𝖎,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -2865,7 +3015,9 @@ mentionByReply
 );
 break;
 case `hentai`:
-const { hentai } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🍑ʜᴇɴᴛᴀɪ/hentai");
+const {
+hentai,
+} = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🍑ʜᴇɴᴛᴀɪ/hentai");
 await hentai(
 ӄ𝖚𝖓𝖆𝖎,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -2892,7 +3044,9 @@ mentionByReply
 );
 break;
 case `maid`:
-const { maid } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🍑ʜᴇɴᴛᴀɪ/maid");
+const {
+maid,
+} = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🍑ʜᴇɴᴛᴀɪ/maid");
 await maid(
 ӄ𝖚𝖓𝖆𝖎,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -2977,7 +3131,9 @@ mentionByReply
 );
 break;
 case `orgy`:
-const { orgy } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🍑ʜᴇɴᴛᴀɪ/orgy");
+const {
+orgy,
+} = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🍑ʜᴇɴᴛᴀɪ/orgy");
 await orgy(
 ӄ𝖚𝖓𝖆𝖎,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -3033,7 +3189,9 @@ mentionByReply
 );
 break;
 case `school`:
-const { school } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🍑ʜᴇɴᴛᴀɪ/school");
+const {
+school,
+} = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🍑ʜᴇɴᴛᴀɪ/school");
 await school(
 ӄ𝖚𝖓𝖆𝖎,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -3089,7 +3247,9 @@ mentionByReply
 );
 break;
 case `thighs`:
-const { thighs } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🍑ʜᴇɴᴛᴀɪ/thighs");
+const {
+thighs,
+} = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🍑ʜᴇɴᴛᴀɪ/thighs");
 await thighs(
 ӄ𝖚𝖓𝖆𝖎,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -3145,7 +3305,9 @@ mentionByReply
 );
 break;
 case `yuri`:
-const { yuri } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🍑ʜᴇɴᴛᴀɪ/yuri");
+const {
+yuri,
+} = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🍑ʜᴇɴᴛᴀɪ/yuri");
 await yuri(
 ӄ𝖚𝖓𝖆𝖎,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -3178,7 +3340,9 @@ case `bot`:
 case `devs`:
 case `official`:
 case `support`:
-const { support } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🍁ᴏᴡɴᴇʀ/support");
+const {
+support,
+} = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🍁ᴏᴡɴᴇʀ/support");
 await support(
 ӄ𝖚𝖓𝖆𝖎,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -3207,7 +3371,9 @@ break;
 
 case `rule`:
 case `rules`:
-const { rules } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🍁ᴏᴡɴᴇʀ/rules");
+const {
+rules,
+} = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🍁ᴏᴡɴᴇʀ/rules");
 await rules(
 ӄ𝖚𝖓𝖆𝖎,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -3299,6 +3465,9 @@ quoted: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
 }
 }
 );
+}
+}
+}
 } catch (err) {
 Caught(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(err));
 }
