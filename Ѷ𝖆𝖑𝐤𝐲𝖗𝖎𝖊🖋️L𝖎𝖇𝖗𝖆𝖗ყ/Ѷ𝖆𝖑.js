@@ -1009,8 +1009,10 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
             case `antilink`:
             case `stoplink`:
             case `nolink`:
-              const { del } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔰ɢʀᴏᴜᴘꜱ/del");
-              await del(
+              const {
+                antilink,
+              } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔰ɢʀᴏᴜᴘꜱ/antilink");
+              await antilink(
                 ӄ𝖚𝖓𝖆𝖎,
                 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
                 A𝖗𝖌𝖘,
@@ -1038,8 +1040,10 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
 
             case `autorank`:
             case `autorole`:
-              const { del } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔰ɢʀᴏᴜᴘꜱ/del");
-              await del(
+              const {
+                autorank,
+              } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔰ɢʀᴏᴜᴘꜱ/autorank");
+              await autorank(
                 ӄ𝖚𝖓𝖆𝖎,
                 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
                 A𝖗𝖌𝖘,
@@ -1068,8 +1072,10 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
             case `setwelcome`:
             case `welcomer`:
             case `welcome`:
-              const { del } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔰ɢʀᴏᴜᴘꜱ/del");
-              await del(
+              const {
+                setwelcome,
+              } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔰ɢʀᴏᴜᴘꜱ/setwelcome");
+              await setwelcome(
                 ӄ𝖚𝖓𝖆𝖎,
                 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
                 A𝖗𝖌𝖘,
