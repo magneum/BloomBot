@@ -196,10 +196,10 @@ os.totalmem()
 ╚═══════╝
 
 ╔══「 🐾𝐀𝐧𝐢𝐦𝐚𝐭𝐢𝐨𝐧/𝐆𝐢𝐟🐾 」
-║▷ ${prefix}
-║▷ ${prefix}
-║▷ ${prefix}
-║▷ ${prefix}
+║▷ ${prefix}bite
+║▷ ${prefix}blush
+║▷ ${prefix}bored
+║▷ ${prefix}confused
 ║▷ ${prefix}
 ║▷ ${prefix}
 ║▷ ${prefix}
