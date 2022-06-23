@@ -203,6 +203,9 @@ os.totalmem()
 ║▷ ${prefix}cry
 ║▷ ${prefix}cuddle
 ║▷ ${prefix}goodnight
+║▷ ${prefix}happy
+║▷ ${prefix}hug
+║▷ ${prefix}kick
 ║▷ ${prefix}
 ║▷ ${prefix}
 ║▷ ${prefix}
