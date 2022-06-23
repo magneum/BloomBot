@@ -196,12 +196,21 @@ os.totalmem()
 ╚═══════╝
 
 ╔══「 🐾𝐀𝐧𝐢𝐦𝐚𝐭𝐢𝐨𝐧/𝐆𝐢𝐟🐾 」
-║▷ ${prefix}cuddle
-║▷ ${prefix}hug
-║▷ ${prefix}kick
-║▷ ${prefix}kiss
-║▷ ${prefix}pat
-║▷ ${prefix}slap
+║▷ ${prefix}
+║▷ ${prefix}
+║▷ ${prefix}
+║▷ ${prefix}
+║▷ ${prefix}
+║▷ ${prefix}
+║▷ ${prefix}
+║▷ ${prefix}
+║▷ ${prefix}
+║▷ ${prefix}
+║▷ ${prefix}
+║▷ ${prefix}
+║▷ ${prefix}
+║▷ ${prefix}
+║▷ ${prefix}
 ╚═══════╝
 
 ╔══「 ⭕𝐘𝐨𝐮𝐓𝐮𝐛𝐞+𝐅𝐢𝐥𝐭𝐞𝐫⭕ 」
