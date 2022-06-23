@@ -25,6 +25,7 @@ const moment = require(`moment-timezone`);
 const pokemon = require("pokemontcgsdk");
 const Carbon = require(`unofficial-carbon-now`);
 const { exec, execSync } = require(`child_process`);
+const { PokeList } = require("../../ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/pokelist");
 const { N𝖊𝖊𝖉__A𝖗𝖌𝖘 } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌀B𝖚𝖙𝖙𝖔𝖓𝖘/N𝖊𝖊𝖉__A𝖗𝖌𝖘");
 const Gamble = require(`../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧆𝕯𝖆𝖙𝖆𝖇𝖆𝖘𝖊/🍃𝖒𝖔𝖓𝖌𝖔/gamble`);
 const { Sticker, StickerTypes } = require(`wa-sticker-formatter`);
