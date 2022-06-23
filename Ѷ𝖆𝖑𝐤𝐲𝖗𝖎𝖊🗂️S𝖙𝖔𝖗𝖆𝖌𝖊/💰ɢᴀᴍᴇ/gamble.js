@@ -275,7 +275,7 @@ exports.gamble = async (
 ╚◇══════════════◇╝
 
 🧈Added To DB for Current command First Time!
-🦋_Try ${prefix}${Final_Name} Again!_`
+🦋Try ${prefix}${Final_Name} Again!`
               );
             }
 
