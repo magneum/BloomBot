@@ -12,8 +12,6 @@ let 𝖕𝖋𝖕𝕲𝖗𝖔𝖚𝖕;
 let GrpMETA = await ӄ𝖚𝖓𝖆𝖎.groupMetadata(Group.id);
 const GrpName = GrpMETA.subject || "";
 let GrpPart = Group.GrpPart;
-const GrpAdmins =
-GrpPart.filter((v) => v.admin !== null).map((v) => v.id) || "";
 `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
 for (let One of GrpPart) {
 try {
@@ -51,7 +49,6 @@ caption: `*━━━━『 🥞𝐖𝐞𝐥𝐜𝐨𝐦𝐞🥞 』━━━━*
 ║▷ *🍀 ᴍᴀᴅᴇ ʙʏ:* ${moment(`${GrpMETA.creation}` * 1000)
 .tz(`Asia/Kolkata`)
 .format(`DD/MM/YYYY HH:mm:ss`)}
-║▷ *🔍 ɴᴜᴍ ᴏꜰ ᴀᴅᴍɪɴꜱ:* ${GrpAdmins.length}
 ║▷ *🎍 ɴᴜᴍ ᴏꜰ ᴘᴀʀᴛɪᴄɪᴘᴀɴᴛꜱ:* ${GrpPart.length}
 ╚═══════╝
 
