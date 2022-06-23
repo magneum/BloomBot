@@ -4,21 +4,20 @@
  */
 ("|⬡════════════════════════════════════════════════════════════|▷   ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  ◁|════════════════════════════════════════════════════════════⬡|");
 exports.call_updates = async (ӄ𝖚𝖓𝖆𝖎, json) => {
-const callerId = json.content[0].attrs[`call-creator`];
-if (json.content[0].tag == `offer`) {
-let pa7rick = await ӄ𝖚𝖓𝖆𝖎.sendContact(callerId, global.owner);
-ӄ𝖚𝖓𝖆𝖎.sendMessage(
-callerId,
-{
-text: `Automatic system block!
+  const callerId = json.content[0].attrs[`call-creator`];
+  if (json.content[0].tag == `offer`) {
+    let pa7rick = await ӄ𝖚𝖓𝖆𝖎.sendContact(callerId, global.owner);
+    ӄ𝖚𝖓𝖆𝖎.sendMessage(
+      callerId,
+      {
+        text: `Automatic system block!
 Don't call bot!
 Please contact owner to open it !`,
-},
-{ quoted: pa7rick }
-);
-await sleep(8000);
-await ӄ𝖚𝖓𝖆𝖎.updateBlockStatus(callerId, `block`);
-}
+      },
+      { quoted: pa7rick }
+    );
+    await ӄ𝖚𝖓𝖆𝖎.updateBlockStatus(callerId, `block`);
+  }
 };
 ("|⬡════════════════════════════════════════════════════════════|▷   ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  ◁|════════════════════════════════════════════════════════════⬡|");
 /*
