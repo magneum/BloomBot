@@ -4,32 +4,32 @@
  */
 ("|⬡════════════════════════════════════════════════════════════|▷   ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  ◁|════════════════════════════════════════════════════════════⬡|");
 exports.BeutyFly = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, Kolor, budy, pushName) => {
-console.clear();
-console.log(
-Kolor.black(Kolor.bgWhite(`⦓ Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 ⦔`)),
-Kolor.black(Kolor.bgGreen(new Date()))
-);
-console.log(
-Kolor.bgYellowBright(`> 𝕮𝖔𝖒𝖒𝖆𝖓𝖉 <`),
-Kolor.black(Kolor.blue(budy || Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype)) + ""
-);
-console.log(
-Kolor.bgRedBright(`> 𝕾𝖊𝖓𝖉𝖊𝖗 <`),
-Kolor.green(pushName),
-Kolor.yellow(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender) + ""
-);
-console.log(
-Kolor.bgCyanBright(`> 𝕮𝖔𝖓𝖙𝖊𝖓𝖙 <`),
-Kolor.green(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup ? pushName : `Private Chat`, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID)
-);
-await ӄ𝖚𝖓𝖆𝖎.sendReadReceipt(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender, [
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id,
-]);
-console.log(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
-console.log(
-Kolor.black(Kolor.bgWhite(`⦓ Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 ⦔`)),
-Kolor.black(Kolor.bgGreen(new Date()))
-);
+  console.clear();
+  console.log(
+    Kolor.black(Kolor.bgWhite(`⦓ Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 ⦔`)),
+    Kolor.black(Kolor.bgGreen(new Date()))
+  );
+  console.log(
+    Kolor.bgYellowBright(`> 𝕮𝖔𝖒𝖒𝖆𝖓𝖉 <`),
+    Kolor.black(Kolor.blue(budy || Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype)) + ""
+  );
+  console.log(
+    Kolor.bgRedBright(`> 𝕾𝖊𝖓𝖉𝖊𝖗 <`),
+    Kolor.green(pushName),
+    Kolor.yellow(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender) + ""
+  );
+  console.log(
+    Kolor.bgCyanBright(`> 𝕮𝖔𝖓𝖙𝖊𝖓𝖙 <`),
+    Kolor.green(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup ? pushName : `Private Chat`, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID)
+  );
+  await ӄ𝖚𝖓𝖆𝖎.sendReadReceipt(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender, [
+    Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id,
+  ]);
+  console.log(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
+  console.log(
+    Kolor.black(Kolor.bgWhite(`⦓ Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 ⦔`)),
+    Kolor.black(Kolor.bgGreen(new Date()))
+  );
 };
 ("|⬡════════════════════════════════════════════════════════════|▷   ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  ◁|════════════════════════════════════════════════════════════⬡|");
 /*
