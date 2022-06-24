@@ -80,13 +80,13 @@ exports.antilink = async (
     } else if (A𝖗𝖌𝖘[0] === `ON` || A𝖗𝖌𝖘[0] === `on` || A𝖗𝖌𝖘[0] === `On`) {
       return await LinkList.findOne(
         {
-          serverID: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatId,
+          serverID: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
         },
         async (error, server) => {
           if (error) return Caught(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, e);
           if (!server) {
             var newServer = new LinkList({
-              serverID: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatId,
+              serverID: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
               value: "ON",
             });
             await newServer.save();
@@ -114,7 +114,7 @@ exports.antilink = async (
     } else if (A𝖗𝖌𝖘[0] === `OFF` || A𝖗𝖌𝖘[0] === `off` || A𝖗𝖌𝖘[0] === `Off`) {
       return await LinkList.findOne(
         {
-          serverID: ᴠʟᴋʏʀᴇ.chatId,
+          serverID: ᴠʟᴋʏʀᴇ.chatID,
         },
         async (error, server) => {
           if (error) return Caught(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, e);
