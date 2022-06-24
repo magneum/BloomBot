@@ -29,7 +29,7 @@ let Carbon = require(`unofficial-carbon-now`);
 let { exec, execSync } = require(`child_process`);
 let { N𝖊𝖊𝖉__A𝖗𝖌𝖘 } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌀B𝖚𝖙𝖙𝖔𝖓𝖘/N𝖊𝖊𝖉__A𝖗𝖌𝖘");
 let { Sticker, StickerTypes } = require(`wa-sticker-formatter`);
-let { yta_var } = require(`../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧥H𝖔𝖑𝖘𝖙𝖊𝖗/VariableServers`);
+let { yta_let } = require(`../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧥H𝖔𝖑𝖘𝖙𝖊𝖗/letiableServers`);
 let { Group_Only } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧭S𝖜𝖎𝖙𝖈𝖍/Group_Only");
 let { Image_Button } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌀B𝖚𝖙𝖙𝖔𝖓𝖘/Image_Button");
 let { Video_Button } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌀B𝖚𝖙𝖙𝖔𝖓𝖘/Video_Button");
@@ -38,9 +38,9 @@ let { Sender_Not_Admin } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧭S�
 let YouTube_Regex =
   /(?:http(?:s|):\/\/|)(?:(?:www\.|)youtube(?:\-nocookie|)\.com\/(?:watch\?.*(?:|\&)v=|embed\/|v\/)|youtu\.be\/)([-_0-9A-Za-z]{11})/;
 `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
-var Present_Path = require(`path`);
-var Script_Name = Present_Path.basename(__filename);
-var Final_Name = Script_Name.slice(0, -3).toLowerCase();
+let Present_Path = require(`path`);
+let Script_Name = Present_Path.basename(__filename);
+let Final_Name = Script_Name.slice(0, -3).toLowerCase();
 let { Caught } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌀B𝖚𝖙𝖙𝖔𝖓𝖘/Caught");
 `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
 exports.ytsuperspeed = async (
@@ -108,7 +108,7 @@ exports.ytsuperspeed = async (
     );
   }
 
-  var TubeFile = LinkFound.videos.slice(0, 1);
+  let TubeFile = LinkFound.videos.slice(0, 1);
   TubeFile.forEach(async function (Found) {
     if (Found.seconds > 1800) {
       return await Image_Button(
@@ -124,7 +124,7 @@ exports.ytsuperspeed = async (
       );
     }
 
-    let { dl_link, thumb, title, filesize, filesizeF } = await yta_var(
+    let { dl_link, thumb, title, filesize, filesizeF } = await yta_let(
       Found.url,
       "id4"
     );
@@ -151,8 +151,8 @@ exports.ytsuperspeed = async (
 📜𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${Found.description}`
     );
 
-    var FFmpegFile = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Date.now()}${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}.mp3`;
-    var FilteredAudio = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Date.now()}-F-${
+    let FFmpegFile = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Date.now()}${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}.mp3`;
+    let FilteredAudio = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Date.now()}-F-${
       Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id
     }.mp3`;
     ffmpeg(dl_link)
