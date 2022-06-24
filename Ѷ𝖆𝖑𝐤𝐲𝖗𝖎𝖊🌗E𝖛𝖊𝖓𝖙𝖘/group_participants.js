@@ -15,7 +15,7 @@ const group_participants = async (update, ӄ𝖚𝖓𝖆𝖎) => {
     𝖚𝖘𝖊𝖗𝕹𝖆𝖒𝖊 = await ӄ𝖚𝖓𝖆𝖎.getName(update.participants[0]);
     𝖕𝖋𝖕𝖀𝖘𝖊𝖗 = await ӄ𝖚𝖓𝖆𝖎.profilePictureUrl(update.participants[0], "image");
   } catch {
-    𝖕𝖋𝖕𝖀𝖘𝖊𝖗 = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊_𝖕𝖋𝖕𝖀𝖘𝖊𝖗.png`;
+    𝖕𝖋𝖕𝖀𝖘𝖊𝖗 = "./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊_𝖕𝖋𝖕𝖀𝖘𝖊𝖗.png";
     𝕲𝖗𝖔𝖚𝖕𝖒𝖊𝖙𝖆 = "";
     𝖚𝖘𝖊𝖗𝕹𝖆𝖒𝖊 = "";
   }
