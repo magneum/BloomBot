@@ -72,7 +72,7 @@ exports.fish = async (
         a,
       },
       async (𝕰𝖗𝖗𝖔𝖗, userEco) => {
-        if (𝕰𝖗𝖗𝖔𝖗) return ꜰᴜᴄᴋ.catch(𝕰𝖗𝖗𝖔𝖗, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, KryChat);
+        if (𝕰𝖗𝖗𝖔𝖗) return Caught(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝕰𝖗𝖗𝖔𝖗);
         if (!userEco) {
           var newUser = new Economy({
             ID: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender,
@@ -84,9 +84,7 @@ exports.fish = async (
             workdone: 0,
             worktimeout: 900000,
           });
-          await newUser
-            .save()
-            .catch((𝕰𝖗𝖗𝖔𝖗) => ꜰᴜᴄᴋ.catch(𝕰𝖗𝖗𝖔𝖗, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, KryChat));
+          await newUser.save().catch((𝕰𝖗𝖗𝖔𝖗) => Caught(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝕰𝖗𝖗𝖔𝖗));
           return await Image_Button(
             ӄ𝖚𝖓𝖆𝖎,
             Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
