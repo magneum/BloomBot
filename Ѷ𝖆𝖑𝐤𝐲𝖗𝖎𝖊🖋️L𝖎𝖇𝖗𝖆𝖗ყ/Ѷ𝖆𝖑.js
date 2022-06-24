@@ -60,18 +60,16 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
   const mime = (quoted.msg || quoted).mimetype || ``;
   const isMedia = /image|video|sticker|audio/.test(mime);
   const isGroup = Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID.endsWith(`@g.us`);
-  const groupMetadata = Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup
+  const groupMetadata = isGroup
     ? await ӄ𝖚𝖓𝖆𝖎.groupMetadata(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID).catch((𝕰𝖗𝖗𝖔𝖗) => {})
     : ``;
-  const groupName = Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup ? groupMetadata.subject : ``;
-  const participants = Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup ? await groupMetadata.participants : ``;
-  const groupAdmins = Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup
+  const groupName = isGroup ? groupMetadata.subject : ``;
+  const participants = isGroup ? await groupMetadata.participants : ``;
+  const groupAdmins = isGroup
     ? await participants.filter((v) => v.admin !== null).map((v) => v.id)
     : ``;
-  const isBotAdmin = Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup ? groupAdmins.includes(botNumber) : false;
-  const isSenderAdmin = Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup
-    ? groupAdmins.includes(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender)
-    : false;
+  const isBotAdmin = isGroup ? groupAdmins.includes(botNumber) : false;
+  const isSenderAdmin = isGroup ? groupAdmins.includes(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender) : false;
   const mentionByTag =
     Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype == "extendedTextMessage" &&
     Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.extendedTextMessage.contextInfo != null
@@ -88,7 +86,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
     Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender.substring(0, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender.indexOf(`@`))
   );
   `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
-  if (Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message && !Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.fromMe && Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup) {
+  if (Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message && !Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.fromMe && isGroup) {
     await Ranker.findOne(
       {
         serverID: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
@@ -104,7 +102,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
   `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
   if (
     Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message &&
-    Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup &&
+    isGroup &&
     !isSenderAdmin &&
     isBotAdmin &&
     !isSenderTUF
