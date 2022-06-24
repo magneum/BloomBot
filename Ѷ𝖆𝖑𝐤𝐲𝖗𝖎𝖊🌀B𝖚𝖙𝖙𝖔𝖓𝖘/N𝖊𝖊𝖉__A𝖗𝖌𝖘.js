@@ -5,6 +5,8 @@
 ("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
 require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/𝕷𝖆ყO𝖚𝖙");
 const { Caught } = require("./Caught");
+const moment = require(`moment-timezone`);
+const Time = moment.tz(`Asia/Kolkata`).format(`DD/MM HH:mm:ss`);
 exports.N𝖊𝖊𝖉__A𝖗𝖌𝖘 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝖀𝖘𝖆𝖌𝖊) => {
   await ӄ𝖚𝖓𝖆𝖎.sendPresenceUpdate("composing", Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID);
   return await ӄ𝖚𝖓𝖆𝖎
@@ -20,7 +22,7 @@ exports.N𝖊𝖊𝖉__A𝖗𝖌𝖘 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤
 
 
 ${𝖀𝖘𝖆𝖌𝖊}`,
-        footer: "*⦓ ⒸѶ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 ⦔*\nᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ",
+        footer: "*⦓ ⒸѶ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 ⦔*\nᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ" + `🕛 ${Time}`,
         buttons: [
           {
             buttonId: prefix + "help",

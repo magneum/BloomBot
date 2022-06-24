@@ -139,45 +139,36 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆, Ѷ𝖆𝖑𝐤𝐲�
           if (isCommand && isGroup) {
             const { BeutyFly } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌗E𝖛𝖊𝖓𝖙𝖘/BeutyFly");
             await BeutyFly(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, chalk, budy, pushName);
-            let MEMBER_A = [];
-            let MEMBER_B = [];
-            let MEMBER_C = [];
-            let MEMBER_D = [];
-            let MEMBER_E = [];
-            const MetaFor_A = await ӄ𝖚𝖓𝖆𝖎.groupMetadata(
-              "120363020792949649@g.us"
-            );
-            const MetaFor_B = await ӄ𝖚𝖓𝖆𝖎.groupMetadata(
-              "120363024871653603@g.us"
-            );
-            const MetaFor_C = await ӄ𝖚𝖓𝖆𝖎.groupMetadata(
-              "120363042762307739@g.us"
-            );
-            const MetaFor_D = await ӄ𝖚𝖓𝖆𝖎.groupMetadata(
-              "120363022161584857@g.us"
-            );
-            const MetaFor_E = await ӄ𝖚𝖓𝖆𝖎.groupMetadata(
-              "120363039223842047@g.us"
-            );
-            for (var i = 0; i < MetaFor_A.participants.length; i++)
-              MEMBER_A[i] = MetaFor_A.participants[i].id;
-            for (var i = 0; i < MetaFor_B.participants.length; i++)
-              MEMBER_B[i] = MetaFor_B.participants[i].id;
-            for (var i = 0; i < MetaFor_C.participants.length; i++)
-              MEMBER_C[i] = MetaFor_C.participants[i].id;
-            for (var i = 0; i < MetaFor_D.participants.length; i++)
-              MEMBER_D[i] = MetaFor_D.participants[i].id;
-            for (var i = 0; i < MetaFor_E.participants.length; i++)
-              MEMBER_E[i] = MetaFor_E.participants[i].id;
+            let MeA = [];
+            let MeB = [];
+            let MeC = [];
+            let MeD = [];
+            let MeE = [];
+            const MeTA = await ӄ𝖚𝖓𝖆𝖎.groupMetadata("120363020792949649@g.us");
+            const MeTB = await ӄ𝖚𝖓𝖆𝖎.groupMetadata("120363024871653603@g.us");
+            const MeTC = await ӄ𝖚𝖓𝖆𝖎.groupMetadata("120363042762307739@g.us");
+            const MeTD = await ӄ𝖚𝖓𝖆𝖎.groupMetadata("120363022161584857@g.us");
+            const MeTE = await ӄ𝖚𝖓𝖆𝖎.groupMetadata("120363039223842047@g.us");
+            for (var i = 0; i < MeTA.participants.length; i++)
+              MeA[i] = MeTA.participants[i].id;
+            for (var i = 0; i < MeTB.participants.length; i++)
+              MeB[i] = MeTB.participants[i].id;
+            for (var i = 0; i < MeTC.participants.length; i++)
+              MeC[i] = MeTC.participants[i].id;
+            for (var i = 0; i < MeTD.participants.length; i++)
+              MeD[i] = MeTD.participants[i].id;
+            for (var i = 0; i < MeTE.participants.length; i++)
+              MeE[i] = MeTE.participants[i].id;
+            `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
             if (
               !fromMe &&
               isCommand &&
               !isSenderTUF &&
-              !MEMBER_A.includes(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender) &&
-              !MEMBER_B.includes(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender) &&
-              !MEMBER_C.includes(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender) &&
-              !MEMBER_D.includes(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender) &&
-              !MEMBER_E.includes(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender)
+              !MeA.includes(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender) &&
+              !MeB.includes(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender) &&
+              !MeC.includes(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender) &&
+              !MeD.includes(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender) &&
+              !MeE.includes(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender)
             ) {
               await ӄ𝖚𝖓𝖆𝖎.sendMessage(
                 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
