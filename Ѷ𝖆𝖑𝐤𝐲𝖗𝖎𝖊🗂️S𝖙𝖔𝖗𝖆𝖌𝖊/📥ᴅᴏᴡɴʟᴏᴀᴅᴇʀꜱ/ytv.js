@@ -129,14 +129,14 @@ exports.ytv = async (
       try {
         let { dl_link, thumb, title, filesize, filesizeF } = await yta_var(
           Found.url,
-          "id4"
+          "en136"
         );
         dl_link = dl_link;
         filesizeF = filesizeF;
       } catch {
         let { dl_link, thumb, title, filesize, filesizeF } = await yta_var(
           Found.url,
-          "en60"
+          "id4"
         );
         dl_link = dl_link;
         filesizeF = filesizeF;
