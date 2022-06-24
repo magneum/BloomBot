@@ -9,13 +9,13 @@ let Welcome = require(`../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧆𝕯𝖆𝖙𝖆𝖇
 const group_participants = async (update, ӄ𝖚𝖓𝖆𝖎) => {
   let 𝖕𝖋𝖕𝖀𝖘𝖊𝖗;
   let GrpMETA = await ӄ𝖚𝖓𝖆𝖎.groupMetadata(update.id);
-  const Latest___ = update.participants[0];
+  const Latest = update.participants[0];
   let GrpName = GrpMETA.subject || "";
   let GrpPart = update.participants;
   `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
   for (let One of GrpPart) {
     try {
-      𝖕𝖋𝖕𝖀𝖘𝖊𝖗 = await ӄ𝖚𝖓𝖆𝖎.profilePictureUrl(Latest___, `image`);
+      𝖕𝖋𝖕𝖀𝖘𝖊𝖗 = await ӄ𝖚𝖓𝖆𝖎.profilePictureUrl(Latest, `image`);
     } catch {
       𝖕𝖋𝖕𝖀𝖘𝖊𝖗 = `https://i.postimg.cc/1trtt9m8/Screenshot-2022-06-23-at-23-48-31-No-Profile-Picture-Girl-HD-Png-Download-kindpng.png`;
     }
