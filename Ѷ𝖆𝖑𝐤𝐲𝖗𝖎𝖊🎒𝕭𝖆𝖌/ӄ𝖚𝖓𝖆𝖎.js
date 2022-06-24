@@ -549,7 +549,9 @@ END:VCARD`,
   ӄ𝖚𝖓𝖆𝖎.ev.on("connection.update", async (update) => {
     try{
 
-    } c
+    } catch (𝕰𝖗𝖗𝖔𝖗) {
+      return await Caught(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝕰𝖗𝖗𝖔𝖗);
+    }
     const connection_update = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌗E𝖛𝖊𝖓𝖙𝖘/connection_update");
     await connection_update.Vcnup(update, startӄ𝖚𝖓𝖆𝖎, ӄ𝖚𝖓𝖆𝖎);
   });
