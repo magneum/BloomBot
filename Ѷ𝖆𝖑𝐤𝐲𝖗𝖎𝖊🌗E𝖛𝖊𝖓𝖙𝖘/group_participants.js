@@ -19,8 +19,8 @@ const group_participants = async (update, ӄ𝖚𝖓𝖆𝖎) => {
     {
       ID: update.id,
     },
-    async (error, userWel) => {
-      if (error) console.log(error);
+    async (𝕰𝖗𝖗𝖔𝖗, userWel) => {
+      if (𝕰𝖗𝖗𝖔𝖗) console.log(𝕰𝖗𝖗𝖔𝖗);
       if (!userWel) return;
       if (update.action == `add`) {
         let name = ӄ𝖚𝖓𝖆𝖎.getName(update.participants[0]);
