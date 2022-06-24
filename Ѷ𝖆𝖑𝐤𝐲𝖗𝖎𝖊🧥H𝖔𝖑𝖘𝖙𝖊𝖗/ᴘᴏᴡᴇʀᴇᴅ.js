@@ -49,10 +49,10 @@ exports.ᴘᴏᴡᴇʀᴇᴅ = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗
           return;
         });
     });
-    await dl𝐀𝐩𝐢.on("error", (𝕰𝖗𝖗𝖔𝖗) => {
+    await DL.on("error", (𝕰𝖗𝖗𝖔𝖗) => {
       return console.log(chalk.red(𝕰𝖗𝖗𝖔𝖗));
     });
-    await dl𝐀𝐩𝐢.start().catch((𝕰𝖗𝖗𝖔𝖗) => {
+    await DL.start().catch((𝕰𝖗𝖗𝖔𝖗) => {
       return console.log(chalk.red(𝕰𝖗𝖗𝖔𝖗));
     });
   }
