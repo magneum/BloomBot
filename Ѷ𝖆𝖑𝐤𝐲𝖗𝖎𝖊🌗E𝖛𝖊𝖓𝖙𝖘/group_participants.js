@@ -37,9 +37,7 @@ const group_participants = async (update, ӄ𝖚𝖓𝖆𝖎) => {
 ╔══「 𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐏𝐫𝐨𝐭𝐨® 」
 ║ *💡 ɴᴀᴍᴇ: ${userName || "No_Name"}
 ║ *🎐 ɢʀᴏᴜᴘ:* ${GrpMETA.subject || ""}
-║ *🍀 ᴍᴀᴅᴇ:* ${moment(`${GrpMETA.creation}` * 1000)
-              .tz(`Asia/Kolkata`)
-              .format(`DD/MM/YYYY HH:mm:ss`)}
+║ *🍀 ᴍᴀᴅᴇ:* ${moment(`${GrpMETA.creation}` * 1000).tz(`Asia/Kolkata`).format(`DD/MM/YYYY HH:mm:ss`)}
 ║ *🎍 ɴᴜᴍ ᴏꜰ ᴘᴀʀᴛɪᴄɪᴘᴀɴᴛꜱ:* ${update.participants.length}
 ╚═══════╝
 
