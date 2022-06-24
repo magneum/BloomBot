@@ -12,7 +12,7 @@ let ᴀɴɪᴍᴇ2 = require(`anime-actions`);
 const { TenorMaker } = require(`./TenorMaker`);
 let { DownloaderHelper } = require("node-downloader-helper");
 ("|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|");
-exports.ᴘᴏᴡᴇʀᴇᴅ = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, ɮօɖʏ) => {
+exports.ᴋʀʏᴏᴛᴇɴᴏʀ = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, ɮօɖʏ) => {
 async function CreateFile(ᴀɴɪᴍᴇʟɪɴᴋ, ɢᴏᴛꜰɪʟᴇ, ɢɪᴠᴇꜰɪʟᴇ) {
 let DL = new DownloaderHelper(ᴀɴɪᴍᴇʟɪɴᴋ, "./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊⚠️𝕿𝖊𝖒𝖕", {
 fileName: `${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.gif`,
