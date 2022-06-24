@@ -198,8 +198,6 @@ exports.GIFBufferToVideoBuffer = async (image) => {
   child_process.exec(
     `ffmpeg -i ./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${filename}.gif -movflags faststart -pix_fmt yuv420p -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" ./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${filename}.mp4`
   );
-  await sleep(4000);
-
   var buffer5 = await fs.readFileSync(`./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${filename}.mp4`);
   Promise.all([
     unlink(`./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${filename}.mp4`),
