@@ -35,7 +35,7 @@ const group_participants = async (update, ӄ𝖚𝖓𝖆𝖎) => {
             caption: `*━━━━『 🥞𝐖𝐞𝐥𝐜𝐨𝐦𝐞🥞 』━━━━* 
 
 ╔══「 𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐏𝐫𝐨𝐭𝐨® 」
-║ *💡 ɴᴀᴍᴇ: ${𝖚𝖘𝖊𝖗𝕹𝖆𝖒𝖊}
+║ *💡 ɴᴀᴍᴇ: ${𝖚𝖘𝖊𝖗𝕹𝖆𝖒𝖊 || "No_Name"}
 ║ *🎐 ɢʀᴏᴜᴘ:* ${𝕲𝖗𝖔𝖚𝖕𝖒𝖊𝖙𝖆.subject || ""}
 ║ *🍀 ᴍᴀᴅᴇ:* ${moment(`${𝕲𝖗𝖔𝖚𝖕𝖒𝖊𝖙𝖆.creation}` * 1000)
               .tz(`Asia/Kolkata`)
