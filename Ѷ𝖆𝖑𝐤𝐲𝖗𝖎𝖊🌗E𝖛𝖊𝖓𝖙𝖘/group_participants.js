@@ -9,22 +9,13 @@ let Welcome = require(`../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧆𝕯𝖆𝖙𝖆𝖇
 const group_participants = async (update, ӄ𝖚𝖓𝖆𝖎) => {
   let 𝖕𝖋𝖕𝖀𝖘𝖊𝖗;
   let GrpMETA = await ӄ𝖚𝖓𝖆𝖎.groupMetadata(update.id);
+  const Latest___ = update.participants[0];
   let GrpName = GrpMETA.subject || "";
   let GrpPart = update.participants;
-
-  const Latest___ = update.participants[0];
-  for (let i of update.participants) {
-    try {
-      𝐏𝐩𝐢𝐜 = await ӄ𝖗𝖞ӄ𝖓𝖟.profilePictureUrl(i, "image");
-    } catch {
-      𝐏𝐩𝐢𝐜 = "./𝐕𝐥𝐤𝐲𝐫𝐞👜𝐁𝐚𝐠/Vʟӄʏʀɛ.png";
-    }
-  }
-
   `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
   for (let One of GrpPart) {
     try {
-      𝖕𝖋𝖕𝖀𝖘𝖊𝖗 = await ӄ𝖚𝖓𝖆𝖎.profilePictureUrl(One, `image`);
+      𝖕𝖋𝖕𝖀𝖘𝖊𝖗 = await ӄ𝖚𝖓𝖆𝖎.profilePictureUrl(Latest___, `image`);
     } catch {
       𝖕𝖋𝖕𝖀𝖘𝖊𝖗 = `https://i.postimg.cc/1trtt9m8/Screenshot-2022-06-23-at-23-48-31-No-Profile-Picture-Girl-HD-Png-Download-kindpng.png`;
     }
