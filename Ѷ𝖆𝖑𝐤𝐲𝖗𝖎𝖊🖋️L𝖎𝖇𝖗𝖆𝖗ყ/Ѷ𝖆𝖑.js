@@ -4,16 +4,16 @@
  */
 ("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
 require(`./𝕷𝖆ყO𝖚𝖙`);
-const fs = require(`fs`);
-const chalk = require(`chalk`);
-const { Caught } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌀B𝖚𝖙𝖙𝖔𝖓𝖘/Caught");
-const Ranker = require(`../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧆𝕯𝖆𝖙𝖆𝖇𝖆𝖘𝖊/🍃𝖒𝖔𝖓𝖌𝖔/autorank`);
-const LinkList = require(`../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧆𝕯𝖆𝖙𝖆𝖇𝖆𝖘𝖊/🍃𝖒𝖔𝖓𝖌𝖔/antilink`);
-const { Image_Button } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌀B𝖚𝖙𝖙𝖔𝖓𝖘/Image_Button");
-const userBanCheck = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧆𝕯𝖆𝖙𝖆𝖇𝖆𝖘𝖊/𝖀𝖘𝖊𝖗🍣𝖒𝖔𝖓𝖌𝖔/user");
+let fs = require(`fs`);
+let chalk = require(`chalk`);
+let { Caught } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌀B𝖚𝖙𝖙𝖔𝖓𝖘/Caught");
+let Ranker = require(`../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧆𝕯𝖆𝖙𝖆𝖇𝖆𝖘𝖊/🍃𝖒𝖔𝖓𝖌𝖔/autorank`);
+let LinkList = require(`../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧆𝕯𝖆𝖙𝖆𝖇𝖆𝖘𝖊/🍃𝖒𝖔𝖓𝖌𝖔/antilink`);
+let { Image_Button } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌀B𝖚𝖙𝖙𝖔𝖓𝖘/Image_Button");
+let userBanCheck = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧆𝕯𝖆𝖙𝖆𝖇𝖆𝖘𝖊/𝖀𝖘𝖊𝖗🍣𝖒𝖔𝖓𝖌𝖔/user");
 `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
 module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, chatUpdate, Ѷ𝖎𝖔𝖓) => {
-  const ɮօɖʏ =
+  let ɮօɖʏ =
     Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype === `conversation`
       ? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.conversation
       : Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype == `imageMessage`
@@ -33,50 +33,48 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
         Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.listResponseMessage?.singleSelectReply.selectedRowId ||
         Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.text
       : "";
-  const isReply =
+  let isReply =
     Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype === `extendedTextMessage` &&
     Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.extendedTextMessage.hasOwnProperty(`contextInfo`) &&
     Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.extendedTextMessage.contextInfo.hasOwnProperty(`stanzaId`);
-  const budy = typeof Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.text == `string` ? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.text : "";
-  const isCommand = ɮօɖʏ.startsWith(prefix);
-  const isCmd =
+  let budy = typeof Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.text == `string` ? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.text : "";
+  let isCommand = ɮօɖʏ.startsWith(prefix);
+  let isCmd =
     prefix.includes(ɮօɖʏ != "" && ɮօɖʏ.slice(0, 1)) && ɮօɖʏ.slice(1) != "";
-  const commandName = isCmd
+  let commandName = isCmd
     ? ɮօɖʏ.slice(1).trim().split(" ")[0].toLowerCase()
     : "";
-  const A𝖗𝖌𝖘 = ɮօɖʏ.trim().split(/ +/).slice(1);
-  const pushName = Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.pushName || `No Name`;
-  const botNumber = await ӄ𝖚𝖓𝖆𝖎.decodeJid(ӄ𝖚𝖓𝖆𝖎.user.id);
-  const isCreator = [botNumber, ...global.owner]
+  let A𝖗𝖌𝖘 = ɮօɖʏ.trim().split(/ +/).slice(1);
+  let pushName = Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.pushName || `No Name`;
+  let botNumber = await ӄ𝖚𝖓𝖆𝖎.decodeJid(ӄ𝖚𝖓𝖆𝖎.user.id);
+  let isCreator = [botNumber, ...global.owner]
     .map((v) => v.replace(/[^0-9]/g, "") + `@s.whatsapp.net`)
     .includes(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender);
-  const fromMe = Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender == botNumber ? true : false;
-  const F𝖚𝖑𝖑_A𝖗𝖌𝖘 = A𝖗𝖌𝖘.join(" ");
-  const quoted = Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.quoted ? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.quoted : Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊;
-  const mime = (quoted.msg || quoted).mimetype || "";
-  const isMedia = /image|video|sticker|audio/.test(mime);
-  const isGroup = Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID.endsWith(`@g.us`);
-  const groupMetadata = isGroup
-    ? await ӄ𝖚𝖓𝖆𝖎.groupMetadata(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID)
-    : "";
-  const participants = isGroup ? await groupMetadata.participants : "";
-  const groupAdmins = isGroup
+  let fromMe = Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender == botNumber ? true : false;
+  let F𝖚𝖑𝖑_A𝖗𝖌𝖘 = A𝖗𝖌𝖘.join(" ");
+  let quoted = Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.quoted ? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.quoted : Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊;
+  let mime = (quoted.msg || quoted).mimetype || "";
+  let isMedia = /image|video|sticker|audio/.test(mime);
+  let isGroup = Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID.endsWith(`@g.us`);
+  let groupMetadata = isGroup ? await ӄ𝖚𝖓𝖆𝖎.groupMetadata(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID) : "";
+  let participants = isGroup ? await groupMetadata.participants : "";
+  let groupAdmins = isGroup
     ? await participants.filter((v) => v.admin !== null).map((v) => v.id)
     : "";
-  const isBotAdmin = isGroup ? groupAdmins.includes(botNumber) : false;
-  const isSenderAdmin = isGroup ? groupAdmins.includes(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender) : false;
-  const mentionByTag =
+  let isBotAdmin = isGroup ? groupAdmins.includes(botNumber) : false;
+  let isSenderAdmin = isGroup ? groupAdmins.includes(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender) : false;
+  let mentionByTag =
     Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype == "extendedTextMessage" &&
     Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.extendedTextMessage.contextInfo != null
       ? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.extendedTextMessage.contextInfo.mentionedJid
       : [];
-  const mentionByReply =
+  let mentionByReply =
     Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype == "extendedTextMessage" &&
     Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.extendedTextMessage.contextInfo != null
       ? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.extendedTextMessage.contextInfo.participant || ""
       : "";
-  const MODString = MOD;
-  const isSenderMOD = MODString.includes(
+  let MODString = MOD;
+  let isSenderMOD = MODString.includes(
     Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender.substring(0, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender.indexOf(`@`))
   );
   `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
@@ -88,16 +86,16 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
       async (𝕰𝖗𝖗𝖔𝖗, userRank) => {
         if (𝕰𝖗𝖗𝖔𝖗) return Caught(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝕰𝖗𝖗𝖔𝖗);
         if (!userRank) return;
-        const { ARanks } = require(".././Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🛩️𝕿𝖞𝖕𝖊𝖘/ARanks");
+        let { ARanks } = require(".././Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🛩️𝕿𝖞𝖕𝖊𝖘/ARanks");
         await ARanks(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, ӄ𝖚𝖓𝖆𝖎, Caught);
       }
     );
   }
   `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
   if (isGroup) {
-    const ProTon = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌗E𝖛𝖊𝖓𝖙𝖘/ProTon");
+    let ProTon = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌗E𝖛𝖊𝖓𝖙𝖘/ProTon");
     await ProTon.Vprtn(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
-    const M𝖊𝖗𝖈𝖚𝖗ʏ = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧥H𝖔𝖑𝖘𝖙𝖊𝖗/M𝖊𝖗𝖈𝖚𝖗ʏ");
+    let M𝖊𝖗𝖈𝖚𝖗ʏ = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧥H𝖔𝖑𝖘𝖙𝖊𝖗/M𝖊𝖗𝖈𝖚𝖗ʏ");
     await M𝖊𝖗𝖈𝖚𝖗ʏ(
       ӄ𝖚𝖓𝖆𝖎,
       Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -130,7 +128,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
     isBotAdmin &&
     !isSenderMOD
   ) {
-    const { DenyLink } = require(".././Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🛩️𝕿𝖞𝖕𝖊𝖘/DenyLink");
+    let { DenyLink } = require(".././Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🛩️𝕿𝖞𝖕𝖊𝖘/DenyLink");
     await DenyLink(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, ӄ𝖚𝖓𝖆𝖎, Caught, Image_Button, A𝖗𝖌𝖘, LinkList, ɮօɖʏ);
   }
   `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
@@ -150,18 +148,18 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
             return await Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.reply("Banned User or Group!");
           `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
           if (isCommand && isGroup) {
-            const { BeutyFly } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌗E𝖛𝖊𝖓𝖙𝖘/BeutyFly");
+            let { BeutyFly } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌗E𝖛𝖊𝖓𝖙𝖘/BeutyFly");
             await BeutyFly(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, chalk, budy, pushName);
             let MeA = [];
             let MeB = [];
             let MeC = [];
             let MeD = [];
             let MeE = [];
-            const MeTA = await ӄ𝖚𝖓𝖆𝖎.groupMetadata("120363020792949649@g.us");
-            const MeTB = await ӄ𝖚𝖓𝖆𝖎.groupMetadata("120363024871653603@g.us");
-            const MeTC = await ӄ𝖚𝖓𝖆𝖎.groupMetadata("120363042762307739@g.us");
-            const MeTD = await ӄ𝖚𝖓𝖆𝖎.groupMetadata("120363022161584857@g.us");
-            const MeTE = await ӄ𝖚𝖓𝖆𝖎.groupMetadata("120363039223842047@g.us");
+            let MeTA = await ӄ𝖚𝖓𝖆𝖎.groupMetadata("120363020792949649@g.us");
+            let MeTB = await ӄ𝖚𝖓𝖆𝖎.groupMetadata("120363024871653603@g.us");
+            let MeTC = await ӄ𝖚𝖓𝖆𝖎.groupMetadata("120363042762307739@g.us");
+            let MeTD = await ӄ𝖚𝖓𝖆𝖎.groupMetadata("120363022161584857@g.us");
+            let MeTE = await ӄ𝖚𝖓𝖆𝖎.groupMetadata("120363039223842047@g.us");
             for (var i = 0; i < MeTA.participants.length; i++)
               MeA[i] = MeTA.participants[i].id;
             for (var i = 0; i < MeTB.participants.length; i++)
@@ -252,7 +250,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   break;
                   `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
                 case `pokemon`:
-                  const {
+                  let {
                     pokemon,
                   } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔎ꜱᴇᴀʀᴄʜ/pokemon");
                   await pokemon(
@@ -281,7 +279,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   break;
 
                 case `carbon`:
-                  const {
+                  let {
                     carbon,
                   } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/📼ᴄᴏɴᴠᴇʀᴛ/carbon");
                   await carbon(
@@ -312,9 +310,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                 case `getgif`:
                 case `gify`:
                 case `gif`:
-                  const {
-                    gify,
-                  } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔎ꜱᴇᴀʀᴄʜ/gify");
+                  let { gify } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔎ꜱᴇᴀʀᴄʜ/gify");
                   await gify(
                     ӄ𝖚𝖓𝖆𝖎,
                     Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -344,7 +340,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                 case `sgif`:
                 case `sticker`:
                 case `stickergif`:
-                  const {
+                  let {
                     sticker,
                   } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/📼ᴄᴏɴᴠᴇʀᴛ/sticker");
                   await sticker(
@@ -373,7 +369,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   break;
 
                 case `toimg`:
-                  const {
+                  let {
                     toimg,
                   } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/📼ᴄᴏɴᴠᴇʀᴛ/toimg");
                   await toimg(
@@ -403,7 +399,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
 
                 case `pin`:
                 case `pinterest`:
-                  const {
+                  let {
                     pinterest,
                   } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔎ꜱᴇᴀʀᴄʜ/pinterest");
                   await pinterest(
@@ -432,7 +428,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   break;
 
                 case `tourl`:
-                  const {
+                  let {
                     tourl,
                   } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/📼ᴄᴏɴᴠᴇʀᴛ/tourl");
                   await tourl(
@@ -461,7 +457,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   break;
 
                 case `remove`:
-                  const {
+                  let {
                     remove,
                   } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔰ɢʀᴏᴜᴘꜱ/remove");
                   await remove(
@@ -490,7 +486,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   break;
 
                 case `promote`:
-                  const {
+                  let {
                     promote,
                   } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔰ɢʀᴏᴜᴘꜱ/promote");
                   await promote(
@@ -519,7 +515,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   break;
 
                 case `demote`:
-                  const {
+                  let {
                     demote,
                   } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔰ɢʀᴏᴜᴘꜱ/demote");
                   await demote(
@@ -548,7 +544,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   break;
 
                 case `setdesc`:
-                  const {
+                  let {
                     setdesc,
                   } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔰ɢʀᴏᴜᴘꜱ/setdesc");
                   await setdesc(
@@ -579,7 +575,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                 case `seticon`:
                 case `setppgrup`:
                 case `setgpfp`:
-                  const {
+                  let {
                     setgpfp,
                   } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔰ɢʀᴏᴜᴘꜱ/setgpfp");
                   await setgpfp(
@@ -608,7 +604,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   break;
 
                 case `tagall`:
-                  const {
+                  let {
                     tagall,
                   } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔰ɢʀᴏᴜᴘꜱ/tagall");
                   await tagall(
@@ -637,7 +633,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   break;
 
                 case `group`:
-                  const {
+                  let {
                     group,
                   } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔰ɢʀᴏᴜᴘꜱ/group");
                   await group(
@@ -667,7 +663,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
 
                 case `invite`:
                 case `grouplink`:
-                  const {
+                  let {
                     invite,
                   } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔰ɢʀᴏᴜᴘꜱ/invite");
                   await invite(
@@ -697,7 +693,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
 
                 case `del`:
                 case `delete`:
-                  const { del } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔰ɢʀᴏᴜᴘꜱ/del");
+                  let { del } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔰ɢʀᴏᴜᴘꜱ/del");
                   await del(
                     ӄ𝖚𝖓𝖆𝖎,
                     Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -726,7 +722,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                 case `antilink`:
                 case `stoplink`:
                 case `nolink`:
-                  const {
+                  let {
                     antilink,
                   } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔰ɢʀᴏᴜᴘꜱ/antilink");
                   await antilink(
@@ -756,7 +752,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
 
                 case `autorank`:
                 case `autorole`:
-                  const {
+                  let {
                     autorank,
                   } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔰ɢʀᴏᴜᴘꜱ/autorank");
                   await autorank(
@@ -787,7 +783,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                 case `setwelcome`:
                 case `welcomer`:
                 case `welcome`:
-                  const {
+                  let {
                     setwelcome,
                   } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔰ɢʀᴏᴜᴘꜱ/setwelcome");
                   await setwelcome(
@@ -816,7 +812,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   break;
 
                 case `ban`:
-                  const { ban } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🍁ᴏᴡɴᴇʀ/ban");
+                  let { ban } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🍁ᴏᴡɴᴇʀ/ban");
                   await ban(
                     ӄ𝖚𝖓𝖆𝖎,
                     Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -843,9 +839,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   break;
 
                 case `unban`:
-                  const {
-                    unban,
-                  } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🍁ᴏᴡɴᴇʀ/unban");
+                  let { unban } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🍁ᴏᴡɴᴇʀ/unban");
                   await unban(
                     ӄ𝖚𝖓𝖆𝖎,
                     Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -880,7 +874,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                 case `ytaudio`:
                 case `ytmusic`:
                 case `youtubemusic`:
-                  const {
+                  let {
                     yta,
                   } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/📥ᴅᴏᴡɴʟᴏᴀᴅᴇʀꜱ/yta");
                   await yta(
@@ -914,7 +908,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                 case `ytmp4`:
                 case `ytvideo`:
                 case `youtubevideo`:
-                  const {
+                  let {
                     ytv,
                   } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/📥ᴅᴏᴡɴʟᴏᴀᴅᴇʀꜱ/ytv");
                   await ytv(
@@ -947,7 +941,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                 case `ytscrape`:
                 case `youtubescrape`:
                 case `youtubesearch`:
-                  const { yts } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔎ꜱᴇᴀʀᴄʜ/yts");
+                  let { yts } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔎ꜱᴇᴀʀᴄʜ/yts");
                   await yts(
                     ӄ𝖚𝖓𝖆𝖎,
                     Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -976,7 +970,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                 case `sr`:
                 case `reddit`:
                 case `subreddit`:
-                  const {
+                  let {
                     reddit,
                   } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/⚡ʀᴀɴᴅᴏᴍꜱ/reddit");
                   await reddit(
@@ -1005,9 +999,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   break;
 
                 case `meme`:
-                  const {
-                    meme,
-                  } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/⚡ʀᴀɴᴅᴏᴍꜱ/meme");
+                  let { meme } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/⚡ʀᴀɴᴅᴏᴍꜱ/meme");
                   await meme(
                     ӄ𝖚𝖓𝖆𝖎,
                     Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -1034,7 +1026,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   break;
 
                 case `tinyurl`:
-                  const {
+                  let {
                     tinyurl,
                   } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/📼ᴄᴏɴᴠᴇʀᴛ/tinyurl");
                   await tinyurl(
@@ -1063,7 +1055,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   break;
 
                 case `join`:
-                  const { join } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🍁ᴏᴡɴᴇʀ/join");
+                  let { join } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🍁ᴏᴡɴᴇʀ/join");
                   await join(
                     ӄ𝖚𝖓𝖆𝖎,
                     Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -1090,9 +1082,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   break;
 
                 case `leave`:
-                  const {
-                    leave,
-                  } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🍁ᴏᴡɴᴇʀ/leave");
+                  let { leave } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🍁ᴏᴡɴᴇʀ/leave");
                   await leave(
                     ӄ𝖚𝖓𝖆𝖎,
                     Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -1119,7 +1109,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   break;
 
                 case `lyrics`:
-                  const {
+                  let {
                     lyrics,
                   } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔎ꜱᴇᴀʀᴄʜ/lyrics");
                   await lyrics(
@@ -1149,7 +1139,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
 
                 case `gimage`:
                 case `image`:
-                  const {
+                  let {
                     image,
                   } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔎ꜱᴇᴀʀᴄʜ/image");
                   await image(
@@ -1181,7 +1171,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                 case `find`:
                 case `search`:
                 case `google`:
-                  const {
+                  let {
                     google,
                   } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔎ꜱᴇᴀʀᴄʜ/google");
                   await google(
@@ -1211,7 +1201,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
 
                 case `take`:
                 case `steal`:
-                  const {
+                  let {
                     steal,
                   } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/📼ᴄᴏɴᴠᴇʀᴛ/steal");
                   await steal(
@@ -1240,7 +1230,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   break;
 
                 case `iguser`:
-                  const {
+                  let {
                     iguser,
                   } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔎ꜱᴇᴀʀᴄʜ/iguser");
                   await iguser(
@@ -1269,9 +1259,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   break;
 
                 case `ship`:
-                  const {
-                    ship,
-                  } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/⚡ʀᴀɴᴅᴏᴍꜱ/ship");
+                  let { ship } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/⚡ʀᴀɴᴅᴏᴍꜱ/ship");
                   await ship(
                     ӄ𝖚𝖓𝖆𝖎,
                     Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -1298,7 +1286,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   break;
 
                 case `quote`:
-                  const {
+                  let {
                     quote,
                   } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/⚡ʀᴀɴᴅᴏᴍꜱ/quote");
                   await quote(
@@ -1327,9 +1315,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   break;
 
                 case `fact`:
-                  const {
-                    fact,
-                  } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/⚡ʀᴀɴᴅᴏᴍꜱ/fact");
+                  let { fact } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/⚡ʀᴀɴᴅᴏᴍꜱ/fact");
                   await fact(
                     ӄ𝖚𝖓𝖆𝖎,
                     Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -1356,7 +1342,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   break;
 
                 case `advice`:
-                  const {
+                  let {
                     advice,
                   } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/⚡ʀᴀɴᴅᴏᴍꜱ/advice");
                   await advice(
@@ -1385,7 +1371,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   break;
 
                 case `bot`:
-                  const { bot } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/bot");
+                  let { bot } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/bot");
                   await bot(
                     ӄ𝖚𝖓𝖆𝖎,
                     Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -1412,7 +1398,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   break;
 
                 case `pat`:
-                  const { pat } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥞ᴀɴɪᴍᴇ/pat");
+                  let { pat } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥞ᴀɴɪᴍᴇ/pat");
                   await pat(
                     ӄ𝖚𝖓𝖆𝖎,
                     Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -1439,7 +1425,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   break;
 
                 case `hug`:
-                  const { hug } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥞ᴀɴɪᴍᴇ/hug");
+                  let { hug } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥞ᴀɴɪᴍᴇ/hug");
                   await hug(
                     ӄ𝖚𝖓𝖆𝖎,
                     Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -1466,7 +1452,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   break;
 
                 case `kiss`:
-                  const { kiss } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥞ᴀɴɪᴍᴇ/kiss");
+                  let { kiss } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥞ᴀɴɪᴍᴇ/kiss");
                   await kiss(
                     ӄ𝖚𝖓𝖆𝖎,
                     Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -1493,7 +1479,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   break;
 
                 case `cuddle`:
-                  const {
+                  let {
                     cuddle,
                   } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥞ᴀɴɪᴍᴇ/cuddle");
                   await cuddle(
@@ -1522,7 +1508,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   break;
 
                 case `kick`:
-                  const { kick } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥞ᴀɴɪᴍᴇ/kick");
+                  let { kick } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥞ᴀɴɪᴍᴇ/kick");
                   await kick(
                     ӄ𝖚𝖓𝖆𝖎,
                     Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -1549,7 +1535,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   break;
 
                 case `bite`:
-                  const { bite } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥞ᴀɴɪᴍᴇ/bite");
+                  let { bite } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥞ᴀɴɪᴍᴇ/bite");
                   await bite(
                     ӄ𝖚𝖓𝖆𝖎,
                     Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -1576,9 +1562,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   break;
 
                 case `blush`:
-                  const {
-                    blush,
-                  } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥞ᴀɴɪᴍᴇ/blush");
+                  let { blush } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥞ᴀɴɪᴍᴇ/blush");
                   await blush(
                     ӄ𝖚𝖓𝖆𝖎,
                     Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -1605,9 +1589,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   break;
 
                 case `bored`:
-                  const {
-                    bored,
-                  } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥞ᴀɴɪᴍᴇ/bored");
+                  let { bored } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥞ᴀɴɪᴍᴇ/bored");
                   await bored(
                     ӄ𝖚𝖓𝖆𝖎,
                     Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -1634,7 +1616,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   break;
 
                 case `confused`:
-                  const {
+                  let {
                     confused,
                   } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥞ᴀɴɪᴍᴇ/confused");
                   await confused(
@@ -1663,7 +1645,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   break;
 
                 case `cry`:
-                  const { cry } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥞ᴀɴɪᴍᴇ/cry");
+                  let { cry } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥞ᴀɴɪᴍᴇ/cry");
                   await cry(
                     ӄ𝖚𝖓𝖆𝖎,
                     Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -1690,7 +1672,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   break;
 
                 case `goodnight`:
-                  const {
+                  let {
                     goodnight,
                   } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥞ᴀɴɪᴍᴇ/goodnight");
                   await goodnight(
@@ -1719,9 +1701,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   break;
 
                 case `happy`:
-                  const {
-                    happy,
-                  } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥞ᴀɴɪᴍᴇ/happy");
+                  let { happy } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥞ᴀɴɪᴍᴇ/happy");
                   await happy(
                     ӄ𝖚𝖓𝖆𝖎,
                     Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -1748,7 +1728,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   break;
 
                 case `poke`:
-                  const { poke } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥞ᴀɴɪᴍᴇ/poke");
+                  let { poke } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥞ᴀɴɪᴍᴇ/poke");
                   await poke(
                     ӄ𝖚𝖓𝖆𝖎,
                     Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -1775,7 +1755,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   break;
 
                 case `sad`:
-                  const { sad } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥞ᴀɴɪᴍᴇ/sad");
+                  let { sad } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥞ᴀɴɪᴍᴇ/sad");
                   await sad(
                     ӄ𝖚𝖓𝖆𝖎,
                     Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -1802,7 +1782,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   break;
 
                 case `slap`:
-                  const { slap } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥞ᴀɴɪᴍᴇ/slap");
+                  let { slap } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥞ᴀɴɪᴍᴇ/slap");
                   await slap(
                     ӄ𝖚𝖓𝖆𝖎,
                     Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -1829,9 +1809,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   break;
 
                 case `smile`:
-                  const {
-                    smile,
-                  } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥞ᴀɴɪᴍᴇ/smile");
+                  let { smile } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥞ᴀɴɪᴍᴇ/smile");
                   await smile(
                     ӄ𝖚𝖓𝖆𝖎,
                     Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -1858,7 +1836,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   break;
 
                 case `wave`:
-                  const { wave } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥞ᴀɴɪᴍᴇ/wave");
+                  let { wave } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥞ᴀɴɪᴍᴇ/wave");
                   await wave(
                     ӄ𝖚𝖓𝖆𝖎,
                     Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -1885,7 +1863,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   break;
 
                 case `wink`:
-                  const { wink } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥞ᴀɴɪᴍᴇ/wink");
+                  let { wink } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥞ᴀɴɪᴍᴇ/wink");
                   await wink(
                     ӄ𝖚𝖓𝖆𝖎,
                     Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -1912,7 +1890,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   break;
 
                 case `waifu`:
-                  const {
+                  let {
                     waifu,
                   } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/⚡ʀᴀɴᴅᴏᴍꜱ/waifu");
                   await waifu(
@@ -1941,9 +1919,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   break;
 
                 case `neko`:
-                  const {
-                    neko,
-                  } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/⚡ʀᴀɴᴅᴏᴍꜱ/neko");
+                  let { neko } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/⚡ʀᴀɴᴅᴏᴍꜱ/neko");
                   await neko(
                     ӄ𝖚𝖓𝖆𝖎,
                     Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -1970,7 +1946,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   break;
 
                 case `anime`:
-                  const {
+                  let {
                     anime,
                   } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔎ꜱᴇᴀʀᴄʜ/anime");
                   await anime(
@@ -1999,7 +1975,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   break;
 
                 case `manga`:
-                  const {
+                  let {
                     manga,
                   } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔎ꜱᴇᴀʀᴄʜ/manga");
                   await manga(
@@ -2028,7 +2004,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   break;
 
                 case `wallpaper`:
-                  const {
+                  let {
                     wallpaper,
                   } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔎ꜱᴇᴀʀᴄʜ/wallpaper");
                   await wallpaper(
@@ -2058,7 +2034,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
 
                 case `bc`:
                 case `bcgroup`:
-                  const {
+                  let {
                     bcgroup,
                   } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🍁ᴏᴡɴᴇʀ/bcgroup");
                   await bcgroup(
@@ -2086,7 +2062,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   );
                   break;
                 case `yt8d`:
-                  const {
+                  let {
                     yt8d,
                   } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/⭕ʏᴛꜰɪʟᴛᴇʀ/yt8d");
                   await yt8d(
@@ -2114,7 +2090,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   );
                   break;
                 case `ytbassboost`:
-                  const {
+                  let {
                     ytbassboost,
                   } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/⭕ʏᴛꜰɪʟᴛᴇʀ/ytbassboost");
                   await ytbassboost(
@@ -2142,7 +2118,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   );
                   break;
                 case `ytecho`:
-                  const {
+                  let {
                     ytecho,
                   } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/⭕ʏᴛꜰɪʟᴛᴇʀ/ytecho");
                   await ytecho(
@@ -2170,7 +2146,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   );
                   break;
                 case `ytflanger`:
-                  const {
+                  let {
                     ytflanger,
                   } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/⭕ʏᴛꜰɪʟᴛᴇʀ/ytflanger");
                   await ytflanger(
@@ -2198,7 +2174,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   );
                   break;
                 case `ytnightcore`:
-                  const {
+                  let {
                     ytnightcore,
                   } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/⭕ʏᴛꜰɪʟᴛᴇʀ/ytnightcore");
                   await ytnightcore(
@@ -2226,7 +2202,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   );
                   break;
                 case `ytphaser`:
-                  const {
+                  let {
                     ytphaser,
                   } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/⭕ʏᴛꜰɪʟᴛᴇʀ/ytphaser");
                   await ytphaser(
@@ -2254,7 +2230,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   );
                   break;
                 case `ytreverse`:
-                  const {
+                  let {
                     ytreverse,
                   } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/⭕ʏᴛꜰɪʟᴛᴇʀ/ytreverse");
                   await ytreverse(
@@ -2282,7 +2258,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   );
                   break;
                 case `ytslow`:
-                  const {
+                  let {
                     ytslow,
                   } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/⭕ʏᴛꜰɪʟᴛᴇʀ/ytslow");
                   await ytslow(
@@ -2310,7 +2286,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   );
                   break;
                 case `ytspeed`:
-                  const {
+                  let {
                     ytspeed,
                   } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/⭕ʏᴛꜰɪʟᴛᴇʀ/ytspeed");
                   await ytspeed(
@@ -2338,7 +2314,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   );
                   break;
                 case `ytsubboost`:
-                  const {
+                  let {
                     ytsubboost,
                   } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/⭕ʏᴛꜰɪʟᴛᴇʀ/ytsubboost");
                   await ytsubboost(
@@ -2366,7 +2342,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   );
                   break;
                 case `ytsuperslow`:
-                  const {
+                  let {
                     ytsuperspeed,
                   } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/⭕ʏᴛꜰɪʟᴛᴇʀ/ytsuperspeed");
                   await ytsuperspeed(
@@ -2394,7 +2370,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   );
                   break;
                 case `ytsuperslow`:
-                  const {
+                  let {
                     ytsuperslow,
                   } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/⭕ʏᴛꜰɪʟᴛᴇʀ/ytsuperslow");
                   await ytsuperslow(
@@ -2422,7 +2398,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   );
                   break;
                 case `ytsurround`:
-                  const {
+                  let {
                     ytsurround,
                   } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/⭕ʏᴛꜰɪʟᴛᴇʀ/ytsurround");
                   await ytsurround(
@@ -2450,7 +2426,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   );
                   break;
                 case `ytvaporwave`:
-                  const {
+                  let {
                     ytvaporwave,
                   } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/⭕ʏᴛꜰɪʟᴛᴇʀ/ytvaporwave");
                   await ytvaporwave(
@@ -2478,7 +2454,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   );
                   break;
                 case `ytvibrato`:
-                  const {
+                  let {
                     ytvibrato,
                   } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/⭕ʏᴛꜰɪʟᴛᴇʀ/ytvibrato");
                   await ytvibrato(
@@ -2506,7 +2482,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   );
                   break;
                 case `bassboost`:
-                  const {
+                  let {
                     bassboost,
                   } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥐ꜰɪʟᴛᴇʀꜱ/bassboost");
                   await bassboost(
@@ -2534,9 +2510,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   );
                   break;
                 case `echo`:
-                  const {
-                    echo,
-                  } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥐ꜰɪʟᴛᴇʀꜱ/echo");
+                  let { echo } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥐ꜰɪʟᴛᴇʀꜱ/echo");
                   await echo(
                     ӄ𝖚𝖓𝖆𝖎,
                     Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -2562,7 +2536,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   );
                   break;
                 case `flanger`:
-                  const {
+                  let {
                     flanger,
                   } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥐ꜰɪʟᴛᴇʀꜱ/flanger");
                   await flanger(
@@ -2590,7 +2564,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   );
                   break;
                 case `nightcore`:
-                  const {
+                  let {
                     nightcore,
                   } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥐ꜰɪʟᴛᴇʀꜱ/nightcore");
                   await nightcore(
@@ -2618,7 +2592,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   );
                   break;
                 case `phaser`:
-                  const {
+                  let {
                     phaser,
                   } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥐ꜰɪʟᴛᴇʀꜱ/phaser");
                   await phaser(
@@ -2646,7 +2620,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   );
                   break;
                 case `reverse`:
-                  const {
+                  let {
                     reverse,
                   } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥐ꜰɪʟᴛᴇʀꜱ/reverse");
                   await reverse(
@@ -2674,9 +2648,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   );
                   break;
                 case `slow`:
-                  const {
-                    slow,
-                  } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥐ꜰɪʟᴛᴇʀꜱ/slow");
+                  let { slow } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥐ꜰɪʟᴛᴇʀꜱ/slow");
                   await slow(
                     ӄ𝖚𝖓𝖆𝖎,
                     Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -2702,7 +2674,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   );
                   break;
                 case `speed`:
-                  const {
+                  let {
                     speed,
                   } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥐ꜰɪʟᴛᴇʀꜱ/speed");
                   await speed(
@@ -2730,7 +2702,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   );
                   break;
                 case `subboost`:
-                  const {
+                  let {
                     subboost,
                   } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥐ꜰɪʟᴛᴇʀꜱ/subboost");
                   await subboost(
@@ -2758,7 +2730,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   );
                   break;
                 case `superspeed`:
-                  const {
+                  let {
                     superspeed,
                   } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥐ꜰɪʟᴛᴇʀꜱ/superspeed");
                   await superspeed(
@@ -2786,7 +2758,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   );
                   break;
                 case `surround`:
-                  const {
+                  let {
                     surround,
                   } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥐ꜰɪʟᴛᴇʀꜱ/surround");
                   await surround(
@@ -2814,7 +2786,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   );
                   break;
                 case `vaporwave`:
-                  const {
+                  let {
                     vaporwave,
                   } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥐ꜰɪʟᴛᴇʀꜱ/vaporwave");
                   await vaporwave(
@@ -2842,7 +2814,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   );
                   break;
                 case `vibrato`:
-                  const {
+                  let {
                     vibrato,
                   } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥐ꜰɪʟᴛᴇʀꜱ/vibrato");
                   await vibrato(
@@ -2870,7 +2842,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   );
                   break;
                 case `ass`:
-                  const { ass } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🍑ʜᴇɴᴛᴀɪ/ass");
+                  let { ass } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🍑ʜᴇɴᴛᴀɪ/ass");
                   await ass(
                     ӄ𝖚𝖓𝖆𝖎,
                     Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -2896,9 +2868,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   );
                   break;
                 case `bdsm`:
-                  const {
-                    bdsm,
-                  } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🍑ʜᴇɴᴛᴀɪ/bdsm");
+                  let { bdsm } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🍑ʜᴇɴᴛᴀɪ/bdsm");
                   await bdsm(
                     ӄ𝖚𝖓𝖆𝖎,
                     Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -2924,7 +2894,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   );
                   break;
                 case `cum`:
-                  const { cum } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🍑ʜᴇɴᴛᴀɪ/cum");
+                  let { cum } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🍑ʜᴇɴᴛᴀɪ/cum");
                   await cum(
                     ӄ𝖚𝖓𝖆𝖎,
                     Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -2950,7 +2920,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   );
                   break;
                 case `doujin`:
-                  const {
+                  let {
                     doujin,
                   } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🍑ʜᴇɴᴛᴀɪ/doujin");
                   await doujin(
@@ -2978,9 +2948,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   );
                   break;
                 case `feet`:
-                  const {
-                    feet,
-                  } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🍑ʜᴇɴᴛᴀɪ/feet");
+                  let { feet } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🍑ʜᴇɴᴛᴀɪ/feet");
                   await feet(
                     ӄ𝖚𝖓𝖆𝖎,
                     Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -3006,7 +2974,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   );
                   break;
                 case `femdom`:
-                  const {
+                  let {
                     femdom,
                   } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🍑ʜᴇɴᴛᴀɪ/femdom");
                   await femdom(
@@ -3034,7 +3002,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   );
                   break;
                 case `foxgirl`:
-                  const {
+                  let {
                     foxgirl,
                   } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🍑ʜᴇɴᴛᴀɪ/foxgirl");
                   await foxgirl(
@@ -3062,7 +3030,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   );
                   break;
                 case `glasses`:
-                  const {
+                  let {
                     glasses,
                   } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🍑ʜᴇɴᴛᴀɪ/glasses");
                   await glasses(
@@ -3090,7 +3058,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   );
                   break;
                 case `hentai`:
-                  const {
+                  let {
                     hentai,
                   } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🍑ʜᴇɴᴛᴀɪ/hentai");
                   await hentai(
@@ -3118,9 +3086,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   );
                   break;
                 case `maid`:
-                  const {
-                    maid,
-                  } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🍑ʜᴇɴᴛᴀɪ/maid");
+                  let { maid } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🍑ʜᴇɴᴛᴀɪ/maid");
                   await maid(
                     ӄ𝖚𝖓𝖆𝖎,
                     Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -3146,7 +3112,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   );
                   break;
                 case `masturbation`:
-                  const {
+                  let {
                     masturbation,
                   } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🍑ʜᴇɴᴛᴀɪ/masturbation");
                   await masturbation(
@@ -3174,7 +3140,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   );
                   break;
                 case `netorare`:
-                  const {
+                  let {
                     netorare,
                   } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🍑ʜᴇɴᴛᴀɪ/netorare");
                   await netorare(
@@ -3202,9 +3168,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   );
                   break;
                 case `orgy`:
-                  const {
-                    orgy,
-                  } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🍑ʜᴇɴᴛᴀɪ/orgy");
+                  let { orgy } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🍑ʜᴇɴᴛᴀɪ/orgy");
                   await orgy(
                     ӄ𝖚𝖓𝖆𝖎,
                     Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -3230,7 +3194,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   );
                   break;
                 case `panties`:
-                  const {
+                  let {
                     panties,
                   } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🍑ʜᴇɴᴛᴀɪ/panties");
                   await panties(
@@ -3258,7 +3222,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   );
                   break;
                 case `school`:
-                  const {
+                  let {
                     school,
                   } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🍑ʜᴇɴᴛᴀɪ/school");
                   await school(
@@ -3286,7 +3250,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   );
                   break;
                 case `tentacles`:
-                  const {
+                  let {
                     tentacles,
                   } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🍑ʜᴇɴᴛᴀɪ/tentacles");
                   await tentacles(
@@ -3314,7 +3278,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   );
                   break;
                 case `thighs`:
-                  const {
+                  let {
                     thighs,
                   } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🍑ʜᴇɴᴛᴀɪ/thighs");
                   await thighs(
@@ -3342,7 +3306,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   );
                   break;
                 case `uniform`:
-                  const {
+                  let {
                     uniform,
                   } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🍑ʜᴇɴᴛᴀɪ/uniform");
                   await uniform(
@@ -3370,9 +3334,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                   );
                   break;
                 case `yuri`:
-                  const {
-                    yuri,
-                  } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🍑ʜᴇɴᴛᴀɪ/yuri");
+                  let { yuri } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🍑ʜᴇɴᴛᴀɪ/yuri");
                   await yuri(
                     ӄ𝖚𝖓𝖆𝖎,
                     Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -3400,9 +3362,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
 
                 case `dly`:
                 case `daily`:
-                  const {
-                    daily,
-                  } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/💰ɢᴀᴍᴇ/daily");
+                  let { daily } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/💰ɢᴀᴍᴇ/daily");
                   await daily(
                     ӄ𝖚𝖓𝖆𝖎,
                     Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -3430,7 +3390,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                 case `fish`:
                 case `pond`:
                 case `fishes`:
-                  const { fish } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/💰ɢᴀᴍᴇ/fish");
+                  let { fish } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/💰ɢᴀᴍᴇ/fish");
                   await fish(
                     ӄ𝖚𝖓𝖆𝖎,
                     Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -3459,7 +3419,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                 case `gamble`:
                 case `betting`:
                 case `roulette`:
-                  const {
+                  let {
                     gamble,
                   } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/💰ɢᴀᴍᴇ/gamble");
                   await gamble(
@@ -3489,7 +3449,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                 case `hunt`:
                 case `hunting`:
                 case `pokehunt`:
-                  const { hunt } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/💰ɢᴀᴍᴇ/hunt");
+                  let { hunt } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/💰ɢᴀᴍᴇ/hunt");
                   await hunt(
                     ӄ𝖚𝖓𝖆𝖎,
                     Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -3517,7 +3477,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                 case `zoo`:
                 case `forest`:
                 case `animals`:
-                  const { zoo } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/💰ɢᴀᴍᴇ/zoo");
+                  let { zoo } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/💰ɢᴀᴍᴇ/zoo");
                   await zoo(
                     ӄ𝖚𝖓𝖆𝖎,
                     Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -3546,7 +3506,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                 case `loan`:
                 case `borrow`:
                 case `payment`:
-                  const { pay } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/💰ɢᴀᴍᴇ/pay");
+                  let { pay } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/💰ɢᴀᴍᴇ/pay");
                   await pay(
                     ӄ𝖚𝖓𝖆𝖎,
                     Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -3578,7 +3538,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                 case `devs`:
                 case `official`:
                 case `support`:
-                  const {
+                  let {
                     support,
                   } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🍁ᴏᴡɴᴇʀ/support");
                   await support(
@@ -3608,9 +3568,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
 
                 case `rule`:
                 case `rules`:
-                  const {
-                    rules,
-                  } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🍁ᴏᴡɴᴇʀ/rules");
+                  let { rules } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🍁ᴏᴡɴᴇʀ/rules");
                   await rules(
                     ӄ𝖚𝖓𝖆𝖎,
                     Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -3641,7 +3599,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
                 case `help`:
                 case `menu`:
                 case `allmenu`:
-                  const { help } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/📜ᴍᴇɴᴜ/help");
+                  let { help } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/📜ᴍᴇɴᴜ/help");
                   await help(
                     ӄ𝖚𝖓𝖆𝖎,
                     Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,

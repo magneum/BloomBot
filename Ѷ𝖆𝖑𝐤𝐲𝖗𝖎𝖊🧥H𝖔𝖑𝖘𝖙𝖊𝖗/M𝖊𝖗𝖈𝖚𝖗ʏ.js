@@ -4,11 +4,11 @@
  */
 ("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
 require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/𝕷𝖆ყO𝖚𝖙");
-const fs = require(`fs`);
-const ᴀɴɪᴍᴇ = require(`anime-actions`);
-const FFmpeg = require(`fluent-ffmpeg`);
-const ᴀɴɪᴍᴇ2 = require(`anime-actions`);
-const { DownloaderHelper } = require("node-downloader-helper");
+let fs = require(`fs`);
+let ᴀɴɪᴍᴇ = require(`anime-actions`);
+let FFmpeg = require(`fluent-ffmpeg`);
+let ᴀɴɪᴍᴇ2 = require(`anime-actions`);
+let { DownloaderHelper } = require("node-downloader-helper");
 exports.M𝖊𝖗𝖈𝖚𝖗ʏ = async (
   ӄ𝖚𝖓𝖆𝖎,
   Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -35,8 +35,8 @@ exports.M𝖊𝖗𝖈𝖚𝖗ʏ = async (
   if (ɮօɖʏ.includes("bite")) {
     let ꜰɪɴᴀʟʟɪɴᴋ;
     var ᴀɴɪᴍᴇʟɪɴᴋ = await ᴀɴɪᴍᴇ.bite();
-    const ɢᴏᴛꜰɪʟᴇ = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.gif`;
-    const ɢɪᴠᴇꜰɪʟᴇ = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.mp4`;
+    let ɢᴏᴛꜰɪʟᴇ = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.gif`;
+    let ɢɪᴠᴇꜰɪʟᴇ = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.mp4`;
     if (!ᴀɴɪᴍᴇʟɪɴᴋ.endsWith(".gif") && !ᴀɴɪᴍᴇʟɪɴᴋ.endsWith(".mp4")) {
       ꜰɪɴᴀʟʟɪɴᴋ = await ᴀɴɪᴍᴇ2.bite();
     } else {
@@ -46,8 +46,8 @@ exports.M𝖊𝖗𝖈𝖚𝖗ʏ = async (
   } else if (ɮօɖʏ.includes("blush")) {
     let ꜰɪɴᴀʟʟɪɴᴋ;
     var ᴀɴɪᴍᴇʟɪɴᴋ = await ᴀɴɪᴍᴇ.blush();
-    const ɢᴏᴛꜰɪʟᴇ = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.gif`;
-    const ɢɪᴠᴇꜰɪʟᴇ = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.mp4`;
+    let ɢᴏᴛꜰɪʟᴇ = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.gif`;
+    let ɢɪᴠᴇꜰɪʟᴇ = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.mp4`;
     if (!ᴀɴɪᴍᴇʟɪɴᴋ.endsWith(".gif") && !ᴀɴɪᴍᴇʟɪɴᴋ.endsWith(".mp4")) {
       ꜰɪɴᴀʟʟɪɴᴋ = await ᴀɴɪᴍᴇ2.blush();
     } else {
@@ -57,8 +57,8 @@ exports.M𝖊𝖗𝖈𝖚𝖗ʏ = async (
   } else if (ɮօɖʏ.includes("bored")) {
     let ꜰɪɴᴀʟʟɪɴᴋ;
     var ᴀɴɪᴍᴇʟɪɴᴋ = await ᴀɴɪᴍᴇ.bored();
-    const ɢᴏᴛꜰɪʟᴇ = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.gif`;
-    const ɢɪᴠᴇꜰɪʟᴇ = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.mp4`;
+    let ɢᴏᴛꜰɪʟᴇ = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.gif`;
+    let ɢɪᴠᴇꜰɪʟᴇ = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.mp4`;
     if (!ᴀɴɪᴍᴇʟɪɴᴋ.endsWith(".gif") && !ᴀɴɪᴍᴇʟɪɴᴋ.endsWith(".mp4")) {
       ꜰɪɴᴀʟʟɪɴᴋ = await ᴀɴɪᴍᴇ2.bored();
     } else {
@@ -68,8 +68,8 @@ exports.M𝖊𝖗𝖈𝖚𝖗ʏ = async (
   } else if (ɮօɖʏ.includes("confused")) {
     let ꜰɪɴᴀʟʟɪɴᴋ;
     var ᴀɴɪᴍᴇʟɪɴᴋ = await ᴀɴɪᴍᴇ.confused();
-    const ɢᴏᴛꜰɪʟᴇ = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.gif`;
-    const ɢɪᴠᴇꜰɪʟᴇ = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.mp4`;
+    let ɢᴏᴛꜰɪʟᴇ = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.gif`;
+    let ɢɪᴠᴇꜰɪʟᴇ = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.mp4`;
     if (!ᴀɴɪᴍᴇʟɪɴᴋ.endsWith(".gif") && !ᴀɴɪᴍᴇʟɪɴᴋ.endsWith(".mp4")) {
       ꜰɪɴᴀʟʟɪɴᴋ = await ᴀɴɪᴍᴇ2.confused();
     } else {
@@ -79,8 +79,8 @@ exports.M𝖊𝖗𝖈𝖚𝖗ʏ = async (
   } else if (ɮօɖʏ.includes("cry")) {
     let ꜰɪɴᴀʟʟɪɴᴋ;
     var ᴀɴɪᴍᴇʟɪɴᴋ = await ᴀɴɪᴍᴇ.cry();
-    const ɢᴏᴛꜰɪʟᴇ = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.gif`;
-    const ɢɪᴠᴇꜰɪʟᴇ = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.mp4`;
+    let ɢᴏᴛꜰɪʟᴇ = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.gif`;
+    let ɢɪᴠᴇꜰɪʟᴇ = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.mp4`;
     if (!ᴀɴɪᴍᴇʟɪɴᴋ.endsWith(".gif") && !ᴀɴɪᴍᴇʟɪɴᴋ.endsWith(".mp4")) {
       ꜰɪɴᴀʟʟɪɴᴋ = await ᴀɴɪᴍᴇ2.cry();
     } else {
@@ -90,8 +90,8 @@ exports.M𝖊𝖗𝖈𝖚𝖗ʏ = async (
   } else if (ɮօɖʏ.includes("cuddle")) {
     let ꜰɪɴᴀʟʟɪɴᴋ;
     var ᴀɴɪᴍᴇʟɪɴᴋ = await ᴀɴɪᴍᴇ.cuddle();
-    const ɢᴏᴛꜰɪʟᴇ = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.gif`;
-    const ɢɪᴠᴇꜰɪʟᴇ = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.mp4`;
+    let ɢᴏᴛꜰɪʟᴇ = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.gif`;
+    let ɢɪᴠᴇꜰɪʟᴇ = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.mp4`;
     if (!ᴀɴɪᴍᴇʟɪɴᴋ.endsWith(".gif") && !ᴀɴɪᴍᴇʟɪɴᴋ.endsWith(".mp4")) {
       ꜰɪɴᴀʟʟɪɴᴋ = await ᴀɴɪᴍᴇ2.cuddle();
     } else {
@@ -101,8 +101,8 @@ exports.M𝖊𝖗𝖈𝖚𝖗ʏ = async (
   } else if (ɮօɖʏ.includes("goodnight")) {
     let ꜰɪɴᴀʟʟɪɴᴋ;
     var ᴀɴɪᴍᴇʟɪɴᴋ = await ᴀɴɪᴍᴇ.bite();
-    const ɢᴏᴛꜰɪʟᴇ = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.gif`;
-    const ɢɪᴠᴇꜰɪʟᴇ = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.mp4`;
+    let ɢᴏᴛꜰɪʟᴇ = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.gif`;
+    let ɢɪᴠᴇꜰɪʟᴇ = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.mp4`;
     if (!ᴀɴɪᴍᴇʟɪɴᴋ.endsWith(".gif") && !ᴀɴɪᴍᴇʟɪɴᴋ.endsWith(".mp4")) {
       ꜰɪɴᴀʟʟɪɴᴋ = await ᴀɴɪᴍᴇ2.bite();
     } else {
@@ -112,8 +112,8 @@ exports.M𝖊𝖗𝖈𝖚𝖗ʏ = async (
   } else if (ɮօɖʏ.includes("happy")) {
     let ꜰɪɴᴀʟʟɪɴᴋ;
     var ᴀɴɪᴍᴇʟɪɴᴋ = await ᴀɴɪᴍᴇ.happy();
-    const ɢᴏᴛꜰɪʟᴇ = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.gif`;
-    const ɢɪᴠᴇꜰɪʟᴇ = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.mp4`;
+    let ɢᴏᴛꜰɪʟᴇ = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.gif`;
+    let ɢɪᴠᴇꜰɪʟᴇ = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.mp4`;
     if (!ᴀɴɪᴍᴇʟɪɴᴋ.endsWith(".gif") && !ᴀɴɪᴍᴇʟɪɴᴋ.endsWith(".mp4")) {
       ꜰɪɴᴀʟʟɪɴᴋ = await ᴀɴɪᴍᴇ2.happy();
     } else {
@@ -123,8 +123,8 @@ exports.M𝖊𝖗𝖈𝖚𝖗ʏ = async (
   } else if (ɮօɖʏ.includes("hug")) {
     let ꜰɪɴᴀʟʟɪɴᴋ;
     var ᴀɴɪᴍᴇʟɪɴᴋ = await ᴀɴɪᴍᴇ.hug();
-    const ɢᴏᴛꜰɪʟᴇ = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.gif`;
-    const ɢɪᴠᴇꜰɪʟᴇ = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.mp4`;
+    let ɢᴏᴛꜰɪʟᴇ = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.gif`;
+    let ɢɪᴠᴇꜰɪʟᴇ = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.mp4`;
     if (!ᴀɴɪᴍᴇʟɪɴᴋ.endsWith(".gif") && !ᴀɴɪᴍᴇʟɪɴᴋ.endsWith(".mp4")) {
       ꜰɪɴᴀʟʟɪɴᴋ = await ᴀɴɪᴍᴇ2.hug();
     } else {
@@ -134,8 +134,8 @@ exports.M𝖊𝖗𝖈𝖚𝖗ʏ = async (
   } else if (ɮօɖʏ.includes("kick")) {
     let ꜰɪɴᴀʟʟɪɴᴋ;
     var ᴀɴɪᴍᴇʟɪɴᴋ = await ᴀɴɪᴍᴇ.kick();
-    const ɢᴏᴛꜰɪʟᴇ = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.gif`;
-    const ɢɪᴠᴇꜰɪʟᴇ = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.mp4`;
+    let ɢᴏᴛꜰɪʟᴇ = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.gif`;
+    let ɢɪᴠᴇꜰɪʟᴇ = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.mp4`;
     if (!ᴀɴɪᴍᴇʟɪɴᴋ.endsWith(".gif") && !ᴀɴɪᴍᴇʟɪɴᴋ.endsWith(".mp4")) {
       ꜰɪɴᴀʟʟɪɴᴋ = await ᴀɴɪᴍᴇ2.kick();
     } else {
@@ -145,8 +145,8 @@ exports.M𝖊𝖗𝖈𝖚𝖗ʏ = async (
   } else if (ɮօɖʏ.includes("kiss")) {
     let ꜰɪɴᴀʟʟɪɴᴋ;
     var ᴀɴɪᴍᴇʟɪɴᴋ = await ᴀɴɪᴍᴇ.kiss();
-    const ɢᴏᴛꜰɪʟᴇ = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.gif`;
-    const ɢɪᴠᴇꜰɪʟᴇ = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.mp4`;
+    let ɢᴏᴛꜰɪʟᴇ = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.gif`;
+    let ɢɪᴠᴇꜰɪʟᴇ = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.mp4`;
     if (!ᴀɴɪᴍᴇʟɪɴᴋ.endsWith(".gif") && !ᴀɴɪᴍᴇʟɪɴᴋ.endsWith(".mp4")) {
       ꜰɪɴᴀʟʟɪɴᴋ = await ᴀɴɪᴍᴇ2.kiss();
     } else {
@@ -156,8 +156,8 @@ exports.M𝖊𝖗𝖈𝖚𝖗ʏ = async (
   } else if (ɮօɖʏ.includes("pat")) {
     let ꜰɪɴᴀʟʟɪɴᴋ;
     var ᴀɴɪᴍᴇʟɪɴᴋ = await ᴀɴɪᴍᴇ.pat();
-    const ɢᴏᴛꜰɪʟᴇ = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.gif`;
-    const ɢɪᴠᴇꜰɪʟᴇ = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.mp4`;
+    let ɢᴏᴛꜰɪʟᴇ = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.gif`;
+    let ɢɪᴠᴇꜰɪʟᴇ = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.mp4`;
     if (!ᴀɴɪᴍᴇʟɪɴᴋ.endsWith(".gif") && !ᴀɴɪᴍᴇʟɪɴᴋ.endsWith(".mp4")) {
       ꜰɪɴᴀʟʟɪɴᴋ = await ᴀɴɪᴍᴇ2.pat();
     } else {
@@ -167,8 +167,8 @@ exports.M𝖊𝖗𝖈𝖚𝖗ʏ = async (
   } else if (ɮօɖʏ.includes("poke")) {
     let ꜰɪɴᴀʟʟɪɴᴋ;
     var ᴀɴɪᴍᴇʟɪɴᴋ = await ᴀɴɪᴍᴇ.poke();
-    const ɢᴏᴛꜰɪʟᴇ = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.gif`;
-    const ɢɪᴠᴇꜰɪʟᴇ = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.mp4`;
+    let ɢᴏᴛꜰɪʟᴇ = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.gif`;
+    let ɢɪᴠᴇꜰɪʟᴇ = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.mp4`;
     if (!ᴀɴɪᴍᴇʟɪɴᴋ.endsWith(".gif") && !ᴀɴɪᴍᴇʟɪɴᴋ.endsWith(".mp4")) {
       ꜰɪɴᴀʟʟɪɴᴋ = await ᴀɴɪᴍᴇ2.poke();
     } else {
@@ -178,8 +178,8 @@ exports.M𝖊𝖗𝖈𝖚𝖗ʏ = async (
   } else if (ɮօɖʏ.includes("sad")) {
     let ꜰɪɴᴀʟʟɪɴᴋ;
     var ᴀɴɪᴍᴇʟɪɴᴋ = await ᴀɴɪᴍᴇ.sad();
-    const ɢᴏᴛꜰɪʟᴇ = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.gif`;
-    const ɢɪᴠᴇꜰɪʟᴇ = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.mp4`;
+    let ɢᴏᴛꜰɪʟᴇ = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.gif`;
+    let ɢɪᴠᴇꜰɪʟᴇ = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.mp4`;
     if (!ᴀɴɪᴍᴇʟɪɴᴋ.endsWith(".gif") && !ᴀɴɪᴍᴇʟɪɴᴋ.endsWith(".mp4")) {
       ꜰɪɴᴀʟʟɪɴᴋ = await ᴀɴɪᴍᴇ2.sad();
     } else {
@@ -189,8 +189,8 @@ exports.M𝖊𝖗𝖈𝖚𝖗ʏ = async (
   } else if (ɮօɖʏ.includes("slap")) {
     let ꜰɪɴᴀʟʟɪɴᴋ;
     var ᴀɴɪᴍᴇʟɪɴᴋ = await ᴀɴɪᴍᴇ.slap();
-    const ɢᴏᴛꜰɪʟᴇ = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.gif`;
-    const ɢɪᴠᴇꜰɪʟᴇ = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.mp4`;
+    let ɢᴏᴛꜰɪʟᴇ = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.gif`;
+    let ɢɪᴠᴇꜰɪʟᴇ = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.mp4`;
     if (!ᴀɴɪᴍᴇʟɪɴᴋ.endsWith(".gif") && !ᴀɴɪᴍᴇʟɪɴᴋ.endsWith(".mp4")) {
       ꜰɪɴᴀʟʟɪɴᴋ = await ᴀɴɪᴍᴇ2.slap();
     } else {
@@ -200,8 +200,8 @@ exports.M𝖊𝖗𝖈𝖚𝖗ʏ = async (
   } else if (ɮօɖʏ.includes("smile")) {
     let ꜰɪɴᴀʟʟɪɴᴋ;
     var ᴀɴɪᴍᴇʟɪɴᴋ = await ᴀɴɪᴍᴇ.smile();
-    const ɢᴏᴛꜰɪʟᴇ = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.gif`;
-    const ɢɪᴠᴇꜰɪʟᴇ = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.mp4`;
+    let ɢᴏᴛꜰɪʟᴇ = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.gif`;
+    let ɢɪᴠᴇꜰɪʟᴇ = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.mp4`;
     if (!ᴀɴɪᴍᴇʟɪɴᴋ.endsWith(".gif") && !ᴀɴɪᴍᴇʟɪɴᴋ.endsWith(".mp4")) {
       ꜰɪɴᴀʟʟɪɴᴋ = await ᴀɴɪᴍᴇ2.smile();
     } else {
@@ -211,8 +211,8 @@ exports.M𝖊𝖗𝖈𝖚𝖗ʏ = async (
   } else if (ɮօɖʏ.includes("wave")) {
     let ꜰɪɴᴀʟʟɪɴᴋ;
     var ᴀɴɪᴍᴇʟɪɴᴋ = await ᴀɴɪᴍᴇ.wave();
-    const ɢᴏᴛꜰɪʟᴇ = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.gif`;
-    const ɢɪᴠᴇꜰɪʟᴇ = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.mp4`;
+    let ɢᴏᴛꜰɪʟᴇ = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.gif`;
+    let ɢɪᴠᴇꜰɪʟᴇ = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.mp4`;
     if (!ᴀɴɪᴍᴇʟɪɴᴋ.endsWith(".gif") && !ᴀɴɪᴍᴇʟɪɴᴋ.endsWith(".mp4")) {
       ꜰɪɴᴀʟʟɪɴᴋ = await ᴀɴɪᴍᴇ2.wave();
     } else {
@@ -222,8 +222,8 @@ exports.M𝖊𝖗𝖈𝖚𝖗ʏ = async (
   } else if (ɮօɖʏ.includes("wink")) {
     let ꜰɪɴᴀʟʟɪɴᴋ;
     var ᴀɴɪᴍᴇʟɪɴᴋ = await ᴀɴɪᴍᴇ.wink();
-    const ɢᴏᴛꜰɪʟᴇ = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.gif`;
-    const ɢɪᴠᴇꜰɪʟᴇ = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.mp4`;
+    let ɢᴏᴛꜰɪʟᴇ = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.gif`;
+    let ɢɪᴠᴇꜰɪʟᴇ = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.mp4`;
     if (!ᴀɴɪᴍᴇʟɪɴᴋ.endsWith(".gif") && !ᴀɴɪᴍᴇʟɪɴᴋ.endsWith(".mp4")) {
       ꜰɪɴᴀʟʟɪɴᴋ = await ᴀɴɪᴍᴇ2.wink();
     } else {
@@ -233,8 +233,8 @@ exports.M𝖊𝖗𝖈𝖚𝖗ʏ = async (
   } else if (ɮօɖʏ.includes("yes")) {
     let ꜰɪɴᴀʟʟɪɴᴋ;
     var ᴀɴɪᴍᴇʟɪɴᴋ = await ᴀɴɪᴍᴇ.yes();
-    const ɢᴏᴛꜰɪʟᴇ = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.gif`;
-    const ɢɪᴠᴇꜰɪʟᴇ = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.mp4`;
+    let ɢᴏᴛꜰɪʟᴇ = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.gif`;
+    let ɢɪᴠᴇꜰɪʟᴇ = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.mp4`;
     if (!ᴀɴɪᴍᴇʟɪɴᴋ.endsWith(".gif") && !ᴀɴɪᴍᴇʟɪɴᴋ.endsWith(".mp4")) {
       ꜰɪɴᴀʟʟɪɴᴋ = await ᴀɴɪᴍᴇ2.yes();
     } else {
