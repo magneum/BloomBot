@@ -546,24 +546,22 @@ END:VCARD`,
     };
   };
   `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
-  ӄ𝖚𝖓𝖆𝖎.ev.on("connection.update", async (update) => {
+  await ӄ𝖚𝖓𝖆𝖎.ev.on("connection.update", async (update) => {
     try {
-      console.log(update);
       const connection_update = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌗E𝖛𝖊𝖓𝖙𝖘/connection_update");
       await connection_update.Vcnup(update, startӄ𝖚𝖓𝖆𝖎, ӄ𝖚𝖓𝖆𝖎);
     } catch (𝕰𝖗𝖗𝖔𝖗) {
       return console.log(chalk.redBright(𝕰𝖗𝖗𝖔𝖗));
     }
   });
-  ӄ𝖚𝖓𝖆𝖎.ev.on("creds.update", async (update) => {
+  await ӄ𝖚𝖓𝖆𝖎.ev.on("creds.update", async (update) => {
     try {
-      console.log(update);
       await saveCreds(update);
     } catch (𝕰𝖗𝖗𝖔𝖗) {
       return console.log(chalk.redBright(𝕰𝖗𝖗𝖔𝖗));
     }
   });
-  ӄ𝖚𝖓𝖆𝖎.ev.on("messages.upsert", async (update) => {
+  await ӄ𝖚𝖓𝖆𝖎.ev.on("messages.upsert", async (update) => {
     try {
       const messages_upsert = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌗E𝖛𝖊𝖓𝖙𝖘/messages_upsert");
       await messages_upsert.Vmsgup(update, Ѷ𝖎𝖔𝖓, ӄ𝖚𝖓𝖆𝖎);
@@ -571,7 +569,7 @@ END:VCARD`,
       return console.log(chalk.redBright(𝕰𝖗𝖗𝖔𝖗));
     }
   });
-  ӄ𝖚𝖓𝖆𝖎.ev.on("group-participants.update", async (update) => {
+  await ӄ𝖚𝖓𝖆𝖎.ev.on("group-participants.update", async (update) => {
     try {
       const group_participants = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌗E𝖛𝖊𝖓𝖙𝖘/group_participants");
       await group_participants.Vgrpns(update, ӄ𝖚𝖓𝖆𝖎);
@@ -579,7 +577,7 @@ END:VCARD`,
       return console.log(chalk.redBright(𝕰𝖗𝖗𝖔𝖗));
     }
   });
-  ӄ𝖚𝖓𝖆𝖎.ws.on("CB:call", async (update) => {
+  await ӄ𝖚𝖓𝖆𝖎.ws.on("CB:call", async (update) => {
     try {
       const call_updates = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌗E𝖛𝖊𝖓𝖙𝖘/call_updates");
       await call_updates.Vclup(ӄ𝖚𝖓𝖆𝖎, update);
@@ -590,8 +588,8 @@ END:VCARD`,
   return ӄ𝖚𝖓𝖆𝖎;
 }
 startӄ𝖚𝖓𝖆𝖎();
-("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
+("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™™  ◁|════════════════════════════════════════════════════════════⬡|");
 /*
  * * * * * * * * * * |        (𝐜)𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!        * * * * * * * * * *
  */
-("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
+("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™™  ◁|════════════════════════════════════════════════════════════⬡|");
