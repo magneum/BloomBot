@@ -106,8 +106,8 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
         {
           contextInfo: { mentionedJid: [Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender] },
           image: { url: "./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊_Red.png" },
-          caption: `❌ 𝗘𝗿𝗿𝗼𝗿: ${GroupMetadata.subject} has _${GroupMetadata.participants.length}/20 members!_`,
-          footer: "*⦓ ⒸѶ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 ⦔*",
+          caption: `❌ 𝗘𝗿𝗿𝗼𝗿: ${𝕲𝖗𝖔𝖚𝖕𝖒𝖊𝖙𝖆.subject} has _${𝕲𝖗𝖔𝖚𝖕𝖒𝖊𝖙𝖆.participants.length}/20 members!_`,
+          footer: "*⦓ ⒸѶ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 ⦔*\nᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ",
           buttons: [
             {
               buttonId: prefix + "help",
