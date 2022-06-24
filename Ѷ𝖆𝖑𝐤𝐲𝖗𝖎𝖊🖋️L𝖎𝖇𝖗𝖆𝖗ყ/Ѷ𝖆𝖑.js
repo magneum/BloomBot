@@ -138,15 +138,15 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
             let MeTC = await ӄ𝖚𝖓𝖆𝖎.groupMetadata("120363042762307739@g.us");
             let MeTD = await ӄ𝖚𝖓𝖆𝖎.groupMetadata("120363022161584857@g.us");
             let MeTE = await ӄ𝖚𝖓𝖆𝖎.groupMetadata("120363039223842047@g.us");
-            for (var i = 0; i < MeTA.participants.length; i++)
+            for (let i = 0; i < MeTA.participants.length; i++)
               MeA[i] = MeTA.participants[i].id;
-            for (var i = 0; i < MeTB.participants.length; i++)
+            for (let i = 0; i < MeTB.participants.length; i++)
               MeB[i] = MeTB.participants[i].id;
-            for (var i = 0; i < MeTC.participants.length; i++)
+            for (let i = 0; i < MeTC.participants.length; i++)
               MeC[i] = MeTC.participants[i].id;
-            for (var i = 0; i < MeTD.participants.length; i++)
+            for (let i = 0; i < MeTD.participants.length; i++)
               MeD[i] = MeTD.participants[i].id;
-            for (var i = 0; i < MeTE.participants.length; i++)
+            for (let i = 0; i < MeTE.participants.length; i++)
               MeE[i] = MeTE.participants[i].id;
             `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
             if (
@@ -3643,9 +3643,9 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
   );
 };
 `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
-var Present_Path = require(`path`);
-var Present_File = require.resolve(__filename);
-var Present_Name = Present_Path.basename(__filename);
+let Present_Path = require(`path`);
+let Present_File = require.resolve(__filename);
+let Present_Name = Present_Path.basename(__filename);
 fs.watchFile(Present_File, () => {
   fs.unwatchFile(Present_File);
   console.log(

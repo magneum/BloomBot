@@ -35,9 +35,9 @@ let { Video_Button } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌀B𝖚�
 let { Bot_Not_Admin } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧭S𝖜𝖎𝖙𝖈𝖍/Bot_Not_Admin");
 let { Sender_Not_Admin } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧭S𝖜𝖎𝖙𝖈𝖍/Sender_Not_Admin");
 `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
-var Present_Path = require(`path`);
-var Script_Name = Present_Path.basename(__filename);
-var Final_Name = Script_Name.slice(0, -3).toLowerCase();
+let Present_Path = require(`path`);
+let Script_Name = Present_Path.basename(__filename);
+let Final_Name = Script_Name.slice(0, -3).toLowerCase();
 let { Caught } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌀B𝖚𝖙𝖙𝖔𝖓𝖘/Caught");
 `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
 exports.zoo = async (
@@ -73,7 +73,7 @@ exports.zoo = async (
     async (error, userEco) => {
       if (error) return Caught(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝕰𝖗𝖗𝖔𝖗);
       if (!userEco) {
-        var newUser = new Economy({
+        let newUser = new Economy({
           ID: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender,
           money: 0,
           daily: 0,
@@ -106,7 +106,7 @@ exports.zoo = async (
           async (error, userZoo) => {
             if (error) return Caught(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝕰𝖗𝖗𝖔𝖗);
             if (!userZoo) {
-              var newUser = new Zoology({
+              let newUser = new Zoology({
                 ID: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender,
                 zoodone: Date.now(),
                 zootimeout: 1800000,

@@ -164,7 +164,7 @@ END:VCARD`,
       { image: img },
       { upload: ӄ𝖚𝖓𝖆𝖎.waUploadToServer }
     );
-    var template = generateWAMessageFromContent(
+    let template = generateWAMessageFromContent(
       Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
       proto.Message.fromObject({
         templateMessage: {

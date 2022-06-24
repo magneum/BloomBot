@@ -32,9 +32,9 @@ let { Bot_Not_Admin } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧭S𝖜�
 let userBanCheck = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧆𝕯𝖆𝖙𝖆𝖇𝖆𝖘𝖊/𝖀𝖘𝖊𝖗🍣𝖒𝖔𝖓𝖌𝖔/user");
 let { Sender_Not_Admin } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧭S𝖜𝖎𝖙𝖈𝖍/Sender_Not_Admin");
 `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
-var Present_Path = require(`path`);
-var Script_Name = Present_Path.basename(__filename);
-var Final_Name = Script_Name.slice(0, -3).toLowerCase();
+let Present_Path = require(`path`);
+let Script_Name = Present_Path.basename(__filename);
+let Final_Name = Script_Name.slice(0, -3).toLowerCase();
 let { Caught } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌀B𝖚𝖙𝖙𝖔𝖓𝖘/Caught");
 `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
 exports.ban = async (
@@ -88,7 +88,7 @@ ${prefix}${Final_Name} _don't reply to anyone and group will be banned_`
       async (error, userBan) => {
         if (error) return console.log(error);
         if (!userBan) {
-          var newUser = new userBanCheck({
+          let newUser = new userBanCheck({
             ID: repliedPerson,
           });
           await newUser.save();
@@ -142,7 +142,7 @@ ${prefix}${Final_Name} _don't reply to anyone and group will be banned_`
       async (error, userBan) => {
         if (error) return console.log(error);
         if (!userBan) {
-          var newUser = new userBanCheck({
+          let newUser = new userBanCheck({
             ID: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
           });
           await newUser.save();
