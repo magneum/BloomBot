@@ -162,7 +162,7 @@ _${DirectFile}_`
           audio: { url: Media.dl_link },
           contextInfo: {
             externalAdReply: {
-              title: `*🍻𝐓𝐢𝐭𝐥𝐞:* _${Found.title}_`,
+              title: `🍻𝐓𝐢𝐭𝐥𝐞: ${Found.title}`,
               body: `ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
               mediaType: 2,
               thumbnail: await getBuffer(Found.thumbnail),
