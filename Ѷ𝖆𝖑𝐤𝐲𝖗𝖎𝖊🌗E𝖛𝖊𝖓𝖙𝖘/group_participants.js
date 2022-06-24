@@ -11,6 +11,15 @@ const group_participants = async (Group, ӄ𝖚𝖓𝖆𝖎) => {
   let GrpMETA = await ӄ𝖚𝖓𝖆𝖎.groupMetadata(Group.id);
   let GrpName = GrpMETA.subject || "";
   let GrpPart = Group.participants;
+
+  for (let i of update.participants) {
+    try {
+      𝐏𝐩𝐢𝐜 = await ӄ𝖗𝖞ӄ𝖓𝖟.profilePictureUrl(i, "image");
+    } catch {
+      𝐏𝐩𝐢𝐜 = "./𝐕𝐥𝐤𝐲𝐫𝐞👜𝐁𝐚𝐠/Vʟӄʏʀɛ.png";
+    }
+  }
+
   `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
   for (let One of GrpPart) {
     try {
