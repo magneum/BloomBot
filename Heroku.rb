@@ -5,3 +5,4 @@ heroku builds:cancel -a vlkyre
 heroku ps:restart worker -a vlkyre
 heroku addons:remove heroku-postgresql:hobby-dev --confirm vlkyre
 heroku addons:add heroku-postgresql:hobby-dev -a  vlkyre
+heroku pg:reset -a vlkyre --confirm vlkyre
