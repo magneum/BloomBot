@@ -9,7 +9,7 @@ let ᴀɴɪᴍᴇ = require(`anime-actions`);
 let FFmpeg = require(`fluent-ffmpeg`);
 let ᴀɴɪᴍᴇ2 = require(`anime-actions`);
 let { DownloaderHelper } = require("node-downloader-helper");
-exports.M𝖊𝖗𝖈𝖚𝖗ʏ = async (
+exports.ᴘᴏᴡᴇʀᴇᴅ = async (
   ӄ𝖚𝖓𝖆𝖎,
   Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
   A𝖗𝖌𝖘,
