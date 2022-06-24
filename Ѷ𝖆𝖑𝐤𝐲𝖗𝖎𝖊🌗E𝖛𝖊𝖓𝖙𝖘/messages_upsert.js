@@ -15,7 +15,7 @@ const messages_upsert = async (chatUpdate, Ѷ𝖎𝖔𝖓, ӄ𝖚𝖓𝖆𝖎) =
     await git.fetch();
     var newCommits = await git.log(["𝐕𝐥𝐤𝐲𝐫𝐞📡𝐏𝐫𝐨𝐭𝐨®..origin/𝐕𝐥𝐤𝐲𝐫𝐞📡𝐏𝐫𝐨𝐭𝐨®"]);
     if (newCommits.total != 0) {
-      var h𝖛𝖑𝖐𝖕 = require("child_process").exec(`git pull`);
+      var h𝖛𝖑𝖐𝖕 = require("child_process").exec("git pull");
       // var h𝖛𝖑𝖐𝖕 = require("child_process").exec(`heroku ps:restart worker -a ${HEROKU_APP_NAME}`);
       h𝖛𝖑𝖐𝖕.stderr.pipe(process.stderr);
       h𝖛𝖑𝖐𝖕.on("exit", function (code, signal) {
