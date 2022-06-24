@@ -555,19 +555,35 @@ END:VCARD`,
     await connection_update.Vcnup(update, startӄ𝖚𝖓𝖆𝖎, ӄ𝖚𝖓𝖆𝖎);
   });
   ӄ𝖚𝖓𝖆𝖎.ev.on("creds.update", async (update) => {
+    try {
+    } catch (𝕰𝖗𝖗𝖔𝖗) {
+      return console.log(chalk.redBright(𝕰𝖗𝖗𝖔𝖗));
+    }
     await saveCreds(update);
   });
   ӄ𝖚𝖓𝖆𝖎.ev.on("messages.upsert", async (update) => {
+    try {
+    } catch (𝕰𝖗𝖗𝖔𝖗) {
+      return console.log(chalk.redBright(𝕰𝖗𝖗𝖔𝖗));
+    }
     const messages_upsert = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌗E𝖛𝖊𝖓𝖙𝖘/messages_upsert");
     await messages_upsert.Vmsgup(update, Ѷ𝖎𝖔𝖓, ӄ𝖚𝖓𝖆𝖎);
   });
   ӄ𝖚𝖓𝖆𝖎.ev.on("group-participants.update", async (update) => {
+    try {
+    } catch (𝕰𝖗𝖗𝖔𝖗) {
+      return console.log(chalk.redBright(𝕰𝖗𝖗𝖔𝖗));
+    }
     const group_participants = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌗E𝖛𝖊𝖓𝖙𝖘/group_participants");
     await group_participants.Vgrpns(update, ӄ𝖚𝖓𝖆𝖎);
   });
   ӄ𝖚𝖓𝖆𝖎.ws.on("CB:call", async (update) => {
-    const call_updates = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌗E𝖛𝖊𝖓𝖙𝖘/call_updates");
-    await call_updates.Vclup(ӄ𝖚𝖓𝖆𝖎, update);
+    try {
+      const call_updates = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌗E𝖛𝖊𝖓𝖙𝖘/call_updates");
+      await call_updates.Vclup(ӄ𝖚𝖓𝖆𝖎, update);
+    } catch (𝕰𝖗𝖗𝖔𝖗) {
+      return console.log(chalk.redBright(𝕰𝖗𝖗𝖔𝖗));
+    }
   });
   return ӄ𝖚𝖓𝖆𝖎;
 }
