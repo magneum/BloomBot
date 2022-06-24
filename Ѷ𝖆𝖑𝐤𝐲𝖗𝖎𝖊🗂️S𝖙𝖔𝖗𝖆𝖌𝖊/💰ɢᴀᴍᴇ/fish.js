@@ -69,7 +69,6 @@ exports.fish = async (
     await Economy.findOne(
       {
         ID: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender,
-        a,
       },
       async (𝕰𝖗𝖗𝖔𝖗, userEco) => {
         if (𝕰𝖗𝖗𝖔𝖗) return Caught(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝕰𝖗𝖗𝖔𝖗);
