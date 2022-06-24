@@ -23,7 +23,7 @@ const group_participants = async (update, ӄ𝖚𝖓𝖆𝖎) => {
       if (𝕰𝖗𝖗𝖔𝖗) console.log(𝕰𝖗𝖗𝖔𝖗);
       if (!userWel) return;
       if (update.action == `add`) {
-        let name = ӄ𝖚𝖓𝖆𝖎.getName(update.participants[0]);
+        let name = await ӄ𝖚𝖓𝖆𝖎.getName(update.participants[0]);
         return await ӄ𝖚𝖓𝖆𝖎
           .sendMessage(update.id, {
             contextInfo: { mentionedJid: [update.participants[0]] },
