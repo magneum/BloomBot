@@ -31,15 +31,15 @@ gg = "917430922909";
 global.HEROKU = process.env.HEROKU;
 global.HEROKU_API_KEY =
 process.env.HEROKU_API_KEY === undefined
-? `Null`
+? "Null"
 : process.env.HEROKU_API_KEY;
 global.HEROKU_APP_NAME =
 process.env.HEROKU_APP_NAME === undefined
-? `Null`
+? "Null"
 : process.env.HEROKU_APP_NAME;
 global.KATE =
 process.env.KATE === undefined
-? `918436686758,917430922909`
+? "918436686758,917430922909"
 : process.env.KATE;
 global.owner = gg.split(",");
 global.MONGOOSE = process.env.MongoDb;
