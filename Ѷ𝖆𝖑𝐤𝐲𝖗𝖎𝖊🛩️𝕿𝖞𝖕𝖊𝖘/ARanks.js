@@ -11,7 +11,7 @@ const fetch = require("node-fetch");
 var color = randomMC.getColor();
 const fs = require(`fs`);
 Levels.setURL(MONGOOSE);
-exports.DenyLink = async (Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, ӄ𝖚𝖓𝖆𝖎, Caught) => {
+exports.ARanks = async (Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, ӄ𝖚𝖓𝖆𝖎, Caught) => {
 const randomXp = Math.floor(Math.random() * 3) + 1;
 const user = await Levels.fetch(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, true);
 if (!user) {
