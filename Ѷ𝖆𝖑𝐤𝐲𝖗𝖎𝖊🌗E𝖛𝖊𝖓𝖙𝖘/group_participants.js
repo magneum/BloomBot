@@ -9,15 +9,15 @@ const Welcome = require(`../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧆𝕯𝖆𝖙𝖆�
 const group_participants = async (update, ӄ𝖚𝖓𝖆𝖎) => {
   let 𝖕𝖋𝖕𝖀𝖘𝖊𝖗;
   let 𝕲𝖗𝖔𝖚𝖕𝖒𝖊𝖙𝖆;
-  let userName;
+  let 𝖚𝖘𝖊𝖗𝕹𝖆𝖒𝖊;
   try {
     𝕲𝖗𝖔𝖚𝖕𝖒𝖊𝖙𝖆 = await ӄ𝖚𝖓𝖆𝖎.groupMetadata(update.id);
-    userName = await ӄ𝖚𝖓𝖆𝖎.getName(update.participants[0]);
+    𝖚𝖘𝖊𝖗𝕹𝖆𝖒𝖊 = await ӄ𝖚𝖓𝖆𝖎.getName(update.participants[0]);
     𝖕𝖋𝖕𝖀𝖘𝖊𝖗 = await ӄ𝖚𝖓𝖆𝖎.profilePictureUrl(update.participants[0], "image");
   } catch {
     𝖕𝖋𝖕𝖀𝖘𝖊𝖗 = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊_𝖕𝖋𝖕𝖀𝖘𝖊𝖗.png`;
     𝕲𝖗𝖔𝖚𝖕𝖒𝖊𝖙𝖆 = "";
-    userName = "";
+    𝖚𝖘𝖊𝖗𝕹𝖆𝖒𝖊 = "";
   }
   `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
   await Welcome.findOne(
@@ -35,7 +35,7 @@ const group_participants = async (update, ӄ𝖚𝖓𝖆𝖎) => {
             caption: `*━━━━『 🥞𝐖𝐞𝐥𝐜𝐨𝐦𝐞🥞 』━━━━* 
 
 ╔══「 𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐏𝐫𝐨𝐭𝐨® 」
-║ *💡 ɴᴀᴍᴇ: ${userName || "No_Name"}
+║ *💡 ɴᴀᴍᴇ: ${𝖚𝖘𝖊𝖗𝕹𝖆𝖒𝖊 || "No_Name"}
 ║ *🎐 ɢʀᴏᴜᴘ:* ${𝕲𝖗𝖔𝖚𝖕𝖒𝖊𝖙𝖆.subject || ""}
 ║ *🍀 ᴍᴀᴅᴇ:* ${moment(`${𝕲𝖗𝖔𝖚𝖕𝖒𝖊𝖙𝖆.creation}` * 1000)
               .tz(`Asia/Kolkata`)
