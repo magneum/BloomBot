@@ -6,11 +6,11 @@
 require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/𝕷𝖆ყO𝖚𝖙");
 const moment = require(`moment-timezone`);
 let Welcome = require(`../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧆𝕯𝖆𝖙𝖆𝖇𝖆𝖘𝖊/🍃𝖒𝖔𝖓𝖌𝖔/setwelcome`);
-const group_participants = async (Group, ӄ𝖚𝖓𝖆𝖎) => {
+const group_participants = async (update, ӄ𝖚𝖓𝖆𝖎) => {
   let 𝖕𝖋𝖕𝖀𝖘𝖊𝖗;
-  let GrpMETA = await ӄ𝖚𝖓𝖆𝖎.groupMetadata(Group.id);
+  let GrpMETA = await ӄ𝖚𝖓𝖆𝖎.groupMetadata(update.id);
   let GrpName = GrpMETA.subject || "";
-  let GrpPart = Group.participants;
+  let GrpPart = update.participants;
 
   for (let i of update.participants) {
     try {
@@ -30,15 +30,15 @@ const group_participants = async (Group, ӄ𝖚𝖓𝖆𝖎) => {
     `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
     await Welcome.findOne(
       {
-        ID: Group.id,
+        ID: update.id,
       },
       async (error, userWel) => {
         if (error) console.log(error);
         if (!userWel) return;
-        if (Group.action == `add`) {
+        if (update.action == `add`) {
           let name = ӄ𝖚𝖓𝖆𝖎.getName(One);
           return await ӄ𝖚𝖓𝖆𝖎
-            .sendMessage(Group.id, {
+            .sendMessage(update.id, {
               contextInfo: { mentionedJid: [One] },
               image: { url: 𝖕𝖋𝖕𝖀𝖘𝖊𝖗 },
               caption: `*━━━━『 🥞𝐖𝐞𝐥𝐜𝐨𝐦𝐞🥞 』━━━━* 
