@@ -196,7 +196,7 @@ caption: `┌─「 𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐏𝐫𝐨𝐭𝐨® 」
 *𝗚roup⛩️3:* chat.whatsapp.com/Hx5VAZMfthg5okQwerohXM
 *𝗚roup⛩️4:* chat.whatsapp.com/EwPq86c1N5L4iZKxpHL6WP
 *𝗚roup⛩️5:* chat.whatsapp.com/CcRTdjc2SHS0XlMP0Bvi2q`,
-footer: "*⦓ ⒸѶ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 ⦔*",
+footer: "*⦓ ⒸѶ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 ⦔*\nᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ",
 buttons: [
 {
 buttonId: prefix + "help",
@@ -4025,7 +4025,7 @@ caption: `┌─「 𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐏𝐫𝐨𝐭𝐨® 」
 
 
 *❌ERROR:* Couldn't find any matching commands. Try again with the commands from the help list`,
-footer: "*⦓ ⒸѶ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 ⦔*",
+footer: "*⦓ ⒸѶ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 ⦔*\nᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ",
 buttons: [
 {
 buttonId: prefix + "help",
