@@ -168,18 +168,17 @@ exports.yta = async (
 _${DirectFile}_`
       );
       `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
+      let Media = await yta(Found.url, "128kbps");
       return await ӄ𝖚𝖓𝖆𝖎.sendMessage(
         Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
         {
-          audio: { url: dl_link },
+          audio: { url: Media.dl_link },
           contextInfo: {
             externalAdReply: {
               title: `*🍻𝐓𝐢𝐭𝐥𝐞:* _${Found.title}_`,
               body: `ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
               mediaType: 2,
-              thumbnail: await getBuffer(
-                `https://i.ytimg.com/vi/${Found.videoId}/hqdefault.jpg`
-              ),
+              thumbnail: await getBuffer(Found.thumbnail),
               mediaUrl: Found.thumbnail,
             },
           },
