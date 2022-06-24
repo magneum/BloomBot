@@ -12,6 +12,7 @@ const group_participants = async (update, ӄ𝖚𝖓𝖆𝖎) => {
   let GrpName = GrpMETA.subject || "";
   let GrpPart = update.participants;
 
+  const Latest___ = update.participants[0];
   for (let i of update.participants) {
     try {
       𝐏𝐩𝐢𝐜 = await ӄ𝖗𝖞ӄ𝖓𝖟.profilePictureUrl(i, "image");
