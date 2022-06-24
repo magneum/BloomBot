@@ -5,21 +5,21 @@
 ("|⬡════════════════════════════════════════════════════════════|▷   ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  ◁|════════════════════════════════════════════════════════════⬡|");
 require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/𝕷𝖆ყO𝖚𝖙");
 var randomMC = require("random-material-color");
-const canvacord = require("canvacord");
-const Levels = require("discord-xp");
-const fetch = require("node-fetch");
+let canvacord = require("canvacord");
+let Levels = require("discord-xp");
+let fetch = require("node-fetch");
 var color = randomMC.getColor();
-const fs = require(`fs`);
+let fs = require(`fs`);
 Levels.setURL(MONGOOSE);
 exports.ARanks = async (Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, ӄ𝖚𝖓𝖆𝖎, Caught) => {
-  const randomXp = Math.floor(Math.random() * 3) + 1;
-  const user = await Levels.fetch(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, true);
+  let randomXp = Math.floor(Math.random() * 3) + 1;
+  let user = await Levels.fetch(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, true);
   if (!user) {
     await Levels.createUser(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID);
     await Levels.setLevel(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, 1);
     await Levels.setXp(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, 1);
   }
-  const hasLeveledUp = await Levels.appendXp(
+  let hasLeveledUp = await Levels.appendXp(
     Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender,
     Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
     randomXp
@@ -27,7 +27,7 @@ exports.ARanks = async (Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, ӄ𝖚𝖓𝖆𝖎, Caug
 
   if (hasLeveledUp) {
     await Levels.setLevel(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, user.level + 1);
-    const levelRole = user.level;
+    let levelRole = user.level;
     var role = `Warrior`;
     if (levelRole <= 2) {
       var role = `Elite III`;
@@ -102,7 +102,7 @@ exports.ARanks = async (Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, ӄ𝖚𝖓𝖆𝖎, Caug
       Img = "https://i.postimg.cc/Kc65RLnX/Full.png";
     }
 
-    const rank = new canvacord.Rank()
+    let rank = new canvacord.Rank()
       .setAvatar(𝕻𝕻𝖑𝖊𝖙𝖊𝖗)
       .setCurrentXP(user.xp)
       .setRequiredXP(Levels.xpFor(user.level + 1))

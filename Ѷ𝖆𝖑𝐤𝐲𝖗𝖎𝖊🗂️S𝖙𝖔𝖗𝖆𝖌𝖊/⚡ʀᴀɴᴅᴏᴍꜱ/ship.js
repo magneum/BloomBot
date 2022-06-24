@@ -4,7 +4,7 @@
  */
 ("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
 require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/𝕷𝖆ყO𝖚𝖙");
-const {
+let {
   isUrl,
   fetchJson,
   getBuffer,
@@ -12,30 +12,30 @@ const {
   GIFBufferToVideoBuffer,
   getRandom,
 } = require(`../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/myfunc`);
-const fs = require(`fs`);
-const util = require(`util`);
-const hxz = require(`hxz-api`);
-const chalk = require(`chalk`);
-const db = require(`quick.db`);
-const axios = require(`axios`);
-const canvacord = require(`canvacord`);
-const { Character } = require(`mailist`);
-const moment = require(`moment-timezone`);
-const Carbon = require(`unofficial-carbon-now`);
-const { exec, execSync } = require(`child_process`);
-const { Ship, IShipOptions } = require(`@shineiichijo/canvas-chan`);
-const { N𝖊𝖊𝖉__A𝖗𝖌𝖘 } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌀B𝖚𝖙𝖙𝖔𝖓𝖘/N𝖊𝖊𝖉__A𝖗𝖌𝖘");
-const { Sticker, StickerTypes } = require(`wa-sticker-formatter`);
-const { Group_Only } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧭S𝖜𝖎𝖙𝖈𝖍/Group_Only");
-const { Image_Button } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌀B𝖚𝖙𝖙𝖔𝖓𝖘/Image_Button");
-const { Video_Button } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌀B𝖚𝖙𝖙𝖔𝖓𝖘/Video_Button");
-const { Bot_Not_Admin } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧭S𝖜𝖎𝖙𝖈𝖍/Bot_Not_Admin");
-const { Sender_Not_Admin } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧭S𝖜𝖎𝖙𝖈𝖍/Sender_Not_Admin");
+let fs = require(`fs`);
+let util = require(`util`);
+let hxz = require(`hxz-api`);
+let chalk = require(`chalk`);
+let db = require(`quick.db`);
+let axios = require(`axios`);
+let canvacord = require(`canvacord`);
+let { Character } = require(`mailist`);
+let moment = require(`moment-timezone`);
+let Carbon = require(`unofficial-carbon-now`);
+let { exec, execSync } = require(`child_process`);
+let { Ship, IShipOptions } = require(`@shineiichijo/canvas-chan`);
+let { N𝖊𝖊𝖉__A𝖗𝖌𝖘 } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌀B𝖚𝖙𝖙𝖔𝖓𝖘/N𝖊𝖊𝖉__A𝖗𝖌𝖘");
+let { Sticker, StickerTypes } = require(`wa-sticker-formatter`);
+let { Group_Only } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧭S𝖜𝖎𝖙𝖈𝖍/Group_Only");
+let { Image_Button } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌀B𝖚𝖙𝖙𝖔𝖓𝖘/Image_Button");
+let { Video_Button } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌀B𝖚𝖙𝖙𝖔𝖓𝖘/Video_Button");
+let { Bot_Not_Admin } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧭S𝖜𝖎𝖙𝖈𝖍/Bot_Not_Admin");
+let { Sender_Not_Admin } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧭S𝖜𝖎𝖙𝖈𝖍/Sender_Not_Admin");
 `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
-var Present_Path = require(`path`);
-var Script_Name = Present_Path.basename(__filename);
-var Final_Name = Script_Name.slice(0, -3).toLowerCase();
-const { Caught } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌀B𝖚𝖙𝖙𝖔𝖓𝖘/Caught");
+let Present_Path = require(`path`);
+let Script_Name = Present_Path.basename(__filename);
+let Final_Name = Script_Name.slice(0, -3).toLowerCase();
+let { Caught } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌀B𝖚𝖙𝖙𝖔𝖓𝖘/Caught");
 `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
 exports.ship = async (
   ӄ𝖚𝖓𝖆𝖎,
@@ -86,7 +86,7 @@ exports.ship = async (
 
     console.log(recp);
   }
-  const ll = Math.floor(Math.random() * 100);
+  let ll = Math.floor(Math.random() * 100);
   if (ll < 30) {
     jj = `\t\t\t\t\t*ShipCent : ${ll}%* 
 \t\tThere's still time to reconsider your choices`;
@@ -98,11 +98,11 @@ exports.ship = async (
   } else if (ll > 50) {
     jj = `\t\t\t\t\t*ShipCent : ${ll}%* 
 \t\t Good enough, I guess!💫`;
-    rate = `Avarage`;
+    rate = `Aletage`;
   } else if (ll > 60) {
     jj = `\t\t\t\t\t*ShipCent : ${ll}%* 
 \t\t Good enough, I guess!💫`;
-    rate = `Avarage`;
+    rate = `Aletage`;
   } else if (ll > 70) {
     jj = `\t\t\t\t\t*ShipCent : ${ll}%* 
 \t\t\tStay together and you'll find a way⭐️`;
@@ -147,7 +147,7 @@ exports.ship = async (
       ppuser = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.png`;
     }
   }
-  const options = [
+  let options = [
     {
       name: `Person1`,
       image: ppuser,
@@ -157,7 +157,7 @@ exports.ship = async (
       image: ppuser2,
     },
   ];
-  const ship = await new Ship(options, ll, rate).build();
+  let ship = await new Ship(options, ll, rate).build();
   return await Image_Button(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, A𝖗𝖌𝖘, ship, caption);
 };
 ("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");

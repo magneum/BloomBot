@@ -17,7 +17,7 @@ function post(url, formdata) {
     body: new URLSearchParams(Object.entries(formdata)),
   });
 }
-const ytIdRegex =
+let ytIdRegex =
   /(?:youtube\.com\/\S*(?:(?:\/e(?:mbed))?\/|watch\?(?:\S*?&?v\=))|youtu\.be\/)([a-zA-Z0-9_-]{6,11})/;
 async function yt(url, quality, type, bitrate, server = "en68") {
   let ytId = ytIdRegex.exec(url);

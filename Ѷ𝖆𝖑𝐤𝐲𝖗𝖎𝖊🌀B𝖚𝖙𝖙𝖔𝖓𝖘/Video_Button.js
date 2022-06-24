@@ -4,9 +4,9 @@
 */
 ("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
 require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/𝕷𝖆ყO𝖚𝖙");
-const { Caught } = require("./Caught");
-const moment = require(`moment-timezone`);
-const Time = moment.tz(`Asia/Kolkata`).format(`DD/MM HH:mm:ss`);
+let { Caught } = require("./Caught");
+let moment = require(`moment-timezone`);
+let Time = moment.tz(`Asia/Kolkata`).format(`DD/MM HH:mm:ss`);
 exports.Video_Button = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, A𝖗𝖌𝖘, M𝖊𝖉𝖎𝖆, 𝕮𝖔𝖓𝖙𝖊𝖓𝖙) => {
 await ӄ𝖚𝖓𝖆𝖎.sendPresenceUpdate("composing", Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID);
 return await ӄ𝖚𝖓𝖆𝖎

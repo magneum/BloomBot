@@ -4,7 +4,7 @@
  */
 ("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
 require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/𝕷𝖆ყO𝖚𝖙");
-const {
+let {
   isUrl,
   fetchJson,
   getBuffer,
@@ -12,36 +12,36 @@ const {
   GIFBufferToVideoBuffer,
   getRandom,
 } = require(`../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/myfunc`);
-const fs = require(`fs`);
-const util = require(`util`);
-const hxz = require(`hxz-api`);
-const chalk = require(`chalk`);
-const db = require(`quick.db`);
-const axios = require(`axios`);
-const yts = require(`yt-search`);
-const ytdl = require("ytdl-core");
-const Tinyurl = require("tinyurl-api");
-const canvacord = require(`canvacord`);
-const ffmpeg = require("fluent-ffmpeg");
-const { Character } = require(`mailist`);
-const moment = require(`moment-timezone`);
-const Carbon = require(`unofficial-carbon-now`);
-const { exec, execSync } = require(`child_process`);
-const { N𝖊𝖊𝖉__A𝖗𝖌𝖘 } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌀B𝖚𝖙𝖙𝖔𝖓𝖘/N𝖊𝖊𝖉__A𝖗𝖌𝖘");
-const { Sticker, StickerTypes } = require(`wa-sticker-formatter`);
-const { yta_var } = require(`../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧥H𝖔𝖑𝖘𝖙𝖊𝖗/VariableServers`);
-const { Group_Only } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧭S𝖜𝖎𝖙𝖈𝖍/Group_Only");
-const { Image_Button } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌀B𝖚𝖙𝖙𝖔𝖓𝖘/Image_Button");
-const { Video_Button } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌀B𝖚𝖙𝖙𝖔𝖓𝖘/Video_Button");
-const { Bot_Not_Admin } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧭S𝖜𝖎𝖙𝖈𝖍/Bot_Not_Admin");
-const { Sender_Not_Admin } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧭S𝖜𝖎𝖙𝖈𝖍/Sender_Not_Admin");
-const YouTube_Regex =
+let fs = require(`fs`);
+let util = require(`util`);
+let hxz = require(`hxz-api`);
+let chalk = require(`chalk`);
+let db = require(`quick.db`);
+let axios = require(`axios`);
+let yts = require(`yt-search`);
+let ytdl = require("ytdl-core");
+let Tinyurl = require("tinyurl-api");
+let canvacord = require(`canvacord`);
+let ffmpeg = require("fluent-ffmpeg");
+let { Character } = require(`mailist`);
+let moment = require(`moment-timezone`);
+let Carbon = require(`unofficial-carbon-now`);
+let { exec, execSync } = require(`child_process`);
+let { N𝖊𝖊𝖉__A𝖗𝖌𝖘 } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌀B𝖚𝖙𝖙𝖔𝖓𝖘/N𝖊𝖊𝖉__A𝖗𝖌𝖘");
+let { Sticker, StickerTypes } = require(`wa-sticker-formatter`);
+let { yta_var } = require(`../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧥H𝖔𝖑𝖘𝖙𝖊𝖗/VariableServers`);
+let { Group_Only } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧭S𝖜𝖎𝖙𝖈𝖍/Group_Only");
+let { Image_Button } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌀B𝖚𝖙𝖙𝖔𝖓𝖘/Image_Button");
+let { Video_Button } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌀B𝖚𝖙𝖙𝖔𝖓𝖘/Video_Button");
+let { Bot_Not_Admin } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧭S𝖜𝖎𝖙𝖈𝖍/Bot_Not_Admin");
+let { Sender_Not_Admin } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧭S𝖜𝖎𝖙𝖈𝖍/Sender_Not_Admin");
+let YouTube_Regex =
   /(?:http(?:s|):\/\/|)(?:(?:www\.|)youtube(?:\-nocookie|)\.com\/(?:watch\?.*(?:|\&)v=|embed\/|v\/)|youtu\.be\/)([-_0-9A-Za-z]{11})/;
 `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
 var Present_Path = require(`path`);
 var Script_Name = Present_Path.basename(__filename);
 var Final_Name = Script_Name.slice(0, -3).toLowerCase();
-const { Caught } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌀B𝖚𝖙𝖙𝖔𝖓𝖘/Caught");
+let { Caught } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌀B𝖚𝖙𝖙𝖔𝖓𝖘/Caught");
 `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
 exports.ytnightcore = async (
   ӄ𝖚𝖓𝖆𝖎,
@@ -97,7 +97,7 @@ exports.ytnightcore = async (
   } else {
     FinalGot = F𝖚𝖑𝖑_A𝖗𝖌𝖘;
   }
-  const LinkFound = await yts(FinalGot);
+  let LinkFound = await yts(FinalGot);
   if (!LinkFound) {
     return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
       ӄ𝖚𝖓𝖆𝖎,

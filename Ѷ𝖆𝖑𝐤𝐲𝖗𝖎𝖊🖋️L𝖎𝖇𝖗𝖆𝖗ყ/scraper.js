@@ -3,8 +3,8 @@
  * * * * * * * * * * |        (𝐜)𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!        * * * * * * * * * *
  */
 ("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
-const axios = require("axios");
-const cheerio = require("cheerio");
+let axios = require("axios");
+let cheerio = require("cheerio");
 
 function pinterest(querry) {
   return new Promise(async (resolve, reject) => {
@@ -16,13 +16,13 @@ function pinterest(querry) {
         },
       })
       .then(({ data }) => {
-        const $ = cheerio.load(data);
-        const result = [];
-        const results = [];
+        let $ = cheerio.load(data);
+        let result = [];
+        let results = [];
         $("div > a")
           .get()
           .map((b) => {
-            const link = $(b).find("img").attr("src");
+            let link = $(b).find("img").attr("src");
             result.push(link);
           });
         result.forEach((v) => {
@@ -88,12 +88,12 @@ function wikimedia(title) {
 
 function quotesAnime() {
   return new Promise((resolve, reject) => {
-    const page = Math.floor(Math.random() * 184);
+    let page = Math.floor(Math.random() * 184);
     axios
       .get("https://otakotaku.com/quote/feed/" + page)
       .then(({ data }) => {
-        const $ = cheerio.load(data);
-        const results = [];
+        let $ = cheerio.load(data);
+        let results = [];
         $("div.kotodama-list").each(function (l, h) {
           results.push({
             link: $(h).find("a").attr("href"),

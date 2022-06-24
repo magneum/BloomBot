@@ -3,19 +3,19 @@
  * * * * * * * * * * |        (𝐜)𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!        * * * * * * * * * *
  */
 ("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
-const { proto, getContentType } = require("@adiwajshing/baileys");
-const chalk = require("chalk");
-const fs = require("fs");
-const { unlink } = require("fs").promises;
-const axios = require("axios");
-const moment = require("moment-timezone");
-const { sizeFormatter } = require("human-readable");
-const util = require("util");
-const child_process = require("child_process");
+let { proto, getContentType } = require("@adiwajshing/baileys");
+let chalk = require("chalk");
+let fs = require("fs");
+let { unlink } = require("fs").promises;
+let axios = require("axios");
+let moment = require("moment-timezone");
+let { sizeFormatter } = require("human-readable");
+let util = require("util");
+let child_process = require("child_process");
 
-const unixTimestampSeconds = (date = new Date()) =>
+let unixTimestampSeconds = (date = new Date()) =>
   Math.floor(date.getTime() / 1000);
-const sleep = (ms) => {
+let sleep = (ms) => {
   return new Promise((resolve) => {
     setTimeout(resolve, ms);
   });
@@ -39,7 +39,7 @@ exports.getRandom = (ext) => {
 exports.getBuffer = async (url, options) => {
   try {
     options ? options : {};
-    const res = await axios({
+    let res = await axios({
       method: "get",
       url,
       headers: {
@@ -58,7 +58,7 @@ exports.getBuffer = async (url, options) => {
 exports.fetchJson = async (url, options) => {
   try {
     options ? options : {};
-    const res = await axios({
+    let res = await axios({
       method: "GET",
       url: url,
       headers: {
@@ -147,10 +147,10 @@ exports.logic = (check, inp, out) => {
 };
 // ===================================================================================================
 exports.generateProfilePicture = async (buffer) => {
-  const jimp = await jimp_1.read(buffer);
-  const min = jimp.getWidth();
-  const max = jimp.getHeight();
-  const cropped = jimp.crop(0, 0, min, max);
+  let jimp = await jimp_1.read(buffer);
+  let min = jimp.getWidth();
+  let max = jimp.getHeight();
+  let cropped = jimp.crop(0, 0, min, max);
   return {
     img: await cropped.scaleToFit(720, 720).getBufferAsync(jimp_1.MIME_JPEG),
     preview: await cropped
@@ -161,10 +161,10 @@ exports.generateProfilePicture = async (buffer) => {
 // ===================================================================================================
 exports.bytesToSize = (bytes, decimals = 2) => {
   if (bytes === 0) return "0 Bytes";
-  const k = 1024;
-  const dm = decimals < 0 ? 0 : decimals;
-  const sizes = ["Bytes", "KB", "MB", "GB", "TB", "PB", "EB", "ZB", "YB"];
-  const i = Math.floor(Math.log(bytes) / Math.log(k));
+  let k = 1024;
+  let dm = decimals < 0 ? 0 : decimals;
+  let sizes = ["Bytes", "KB", "MB", "GB", "TB", "PB", "EB", "ZB", "YB"];
+  let i = Math.floor(Math.log(bytes) / Math.log(k));
   return parseFloat((bytes / Math.pow(k, i)).toFixed(dm)) + " " + sizes[i];
 };
 // ===================================================================================================
@@ -193,7 +193,7 @@ exports.parseMention = (text = "") => {
 };
 // ===================================================================================================
 exports.GIFBufferToVideoBuffer = async (image) => {
-  const filename = `${Math.random().toString(36)}`;
+  let filename = `${Math.random().toString(36)}`;
   await fs.writeFileSync(`./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${filename}.gif`, image);
   child_process.exec(
     `ffmpeg -i ./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${filename}.gif -movflags faststart -pix_fmt yuv420p -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" ./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${filename}.mp4`

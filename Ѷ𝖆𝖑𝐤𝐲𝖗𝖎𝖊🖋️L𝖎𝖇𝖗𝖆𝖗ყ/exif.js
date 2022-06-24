@@ -3,19 +3,19 @@
  * * * * * * * * * * |        (𝐜)𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!        * * * * * * * * * *
  */
 ("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
-const fs = require("fs");
-const { tmpdir } = require("os");
-const Crypto = require("crypto");
-const ff = require("fluent-ffmpeg");
-const webp = require("node-webpmux");
-const path = require("path");
+let fs = require("fs");
+let { tmpdir } = require("os");
+let Crypto = require("crypto");
+let ff = require("fluent-ffmpeg");
+let webp = require("node-webpmux");
+let path = require("path");
 
 async function imageToWebp(media) {
-  const tmpFileOut = path.join(
+  let tmpFileOut = path.join(
     tmpdir(),
     `${Crypto.randomBytes(6).readUIntLE(0, 6).toString(36)}.webp`
   );
-  const tmpFileIn = path.join(
+  let tmpFileIn = path.join(
     tmpdir(),
     `${Crypto.randomBytes(6).readUIntLE(0, 6).toString(36)}.jpg`
   );
@@ -36,18 +36,18 @@ async function imageToWebp(media) {
       .save(tmpFileOut);
   });
 
-  const buff = fs.readFileSync(tmpFileOut);
+  let buff = fs.readFileSync(tmpFileOut);
   fs.unlinkSync(tmpFileOut);
   fs.unlinkSync(tmpFileIn);
   return buff;
 }
 
 async function videoToWebp(media) {
-  const tmpFileOut = path.join(
+  let tmpFileOut = path.join(
     tmpdir(),
     `${Crypto.randomBytes(6).readUIntLE(0, 6).toString(36)}.webp`
   );
-  const tmpFileIn = path.join(
+  let tmpFileIn = path.join(
     tmpdir(),
     `${Crypto.randomBytes(6).readUIntLE(0, 6).toString(36)}.mp4`
   );
@@ -79,7 +79,7 @@ async function videoToWebp(media) {
       .save(tmpFileOut);
   });
 
-  const buff = fs.readFileSync(tmpFileOut);
+  let buff = fs.readFileSync(tmpFileOut);
   fs.unlinkSync(tmpFileOut);
   fs.unlinkSync(tmpFileIn);
   return buff;
@@ -87,30 +87,30 @@ async function videoToWebp(media) {
 
 async function writeExifImg(media, metadata) {
   let wMedia = await imageToWebp(media);
-  const tmpFileIn = path.join(
+  let tmpFileIn = path.join(
     tmpdir(),
     `${Crypto.randomBytes(6).readUIntLE(0, 6).toString(36)}.webp`
   );
-  const tmpFileOut = path.join(
+  let tmpFileOut = path.join(
     tmpdir(),
     `${Crypto.randomBytes(6).readUIntLE(0, 6).toString(36)}.webp`
   );
   fs.writeFileSync(tmpFileIn, wMedia);
 
   if (metadata.packname || metadata.author) {
-    const img = new webp.Image();
-    const json = {
+    let img = new webp.Image();
+    let json = {
       "sticker-pack-id": `https://github.com/pratyush4932`,
       "sticker-pack-name": metadata.packname,
       "sticker-pack-publisher": metadata.author,
       emojis: metadata.categories ? metadata.categories : [""],
     };
-    const exifAttr = Buffer.from([
+    let exifAttr = Buffer.from([
       0x49, 0x49, 0x2a, 0x00, 0x08, 0x00, 0x00, 0x00, 0x01, 0x00, 0x41, 0x57,
       0x07, 0x00, 0x00, 0x00, 0x00, 0x00, 0x16, 0x00, 0x00, 0x00,
     ]);
-    const jsonBuff = Buffer.from(JSON.stringify(json), "utf-8");
-    const exif = Buffer.concat([exifAttr, jsonBuff]);
+    let jsonBuff = Buffer.from(JSON.stringify(json), "utf-8");
+    let exif = Buffer.concat([exifAttr, jsonBuff]);
     exif.writeUIntLE(jsonBuff.length, 14, 4);
     await img.load(tmpFileIn);
     fs.unlinkSync(tmpFileIn);
@@ -122,30 +122,30 @@ async function writeExifImg(media, metadata) {
 
 async function writeExifVid(media, metadata) {
   let wMedia = await videoToWebp(media);
-  const tmpFileIn = path.join(
+  let tmpFileIn = path.join(
     tmpdir(),
     `${Crypto.randomBytes(6).readUIntLE(0, 6).toString(36)}.webp`
   );
-  const tmpFileOut = path.join(
+  let tmpFileOut = path.join(
     tmpdir(),
     `${Crypto.randomBytes(6).readUIntLE(0, 6).toString(36)}.webp`
   );
   fs.writeFileSync(tmpFileIn, wMedia);
 
   if (metadata.packname || metadata.author) {
-    const img = new webp.Image();
-    const json = {
+    let img = new webp.Image();
+    let json = {
       "sticker-pack-id": `https://github.com/DikaArdnt/Hisoka-Morou`,
       "sticker-pack-name": metadata.packname,
       "sticker-pack-publisher": metadata.author,
       emojis: metadata.categories ? metadata.categories : [""],
     };
-    const exifAttr = Buffer.from([
+    let exifAttr = Buffer.from([
       0x49, 0x49, 0x2a, 0x00, 0x08, 0x00, 0x00, 0x00, 0x01, 0x00, 0x41, 0x57,
       0x07, 0x00, 0x00, 0x00, 0x00, 0x00, 0x16, 0x00, 0x00, 0x00,
     ]);
-    const jsonBuff = Buffer.from(JSON.stringify(json), "utf-8");
-    const exif = Buffer.concat([exifAttr, jsonBuff]);
+    let jsonBuff = Buffer.from(JSON.stringify(json), "utf-8");
+    let exif = Buffer.concat([exifAttr, jsonBuff]);
     exif.writeUIntLE(jsonBuff.length, 14, 4);
     await img.load(tmpFileIn);
     fs.unlinkSync(tmpFileIn);
@@ -163,30 +163,30 @@ async function writeExif(media, metadata) {
     : /video/.test(media.mimetype)
     ? await videoToWebp(media.data)
     : "";
-  const tmpFileIn = path.join(
+  let tmpFileIn = path.join(
     tmpdir(),
     `${Crypto.randomBytes(6).readUIntLE(0, 6).toString(36)}.webp`
   );
-  const tmpFileOut = path.join(
+  let tmpFileOut = path.join(
     tmpdir(),
     `${Crypto.randomBytes(6).readUIntLE(0, 6).toString(36)}.webp`
   );
   fs.writeFileSync(tmpFileIn, wMedia);
 
   if (metadata.packname || metadata.author) {
-    const img = new webp.Image();
-    const json = {
+    let img = new webp.Image();
+    let json = {
       "sticker-pack-id": `https://github.com/DikaArdnt/Hisoka-Morou`,
       "sticker-pack-name": metadata.packname,
       "sticker-pack-publisher": metadata.author,
       emojis: metadata.categories ? metadata.categories : [""],
     };
-    const exifAttr = Buffer.from([
+    let exifAttr = Buffer.from([
       0x49, 0x49, 0x2a, 0x00, 0x08, 0x00, 0x00, 0x00, 0x01, 0x00, 0x41, 0x57,
       0x07, 0x00, 0x00, 0x00, 0x00, 0x00, 0x16, 0x00, 0x00, 0x00,
     ]);
-    const jsonBuff = Buffer.from(JSON.stringify(json), "utf-8");
-    const exif = Buffer.concat([exifAttr, jsonBuff]);
+    let jsonBuff = Buffer.from(JSON.stringify(json), "utf-8");
+    let exif = Buffer.concat([exifAttr, jsonBuff]);
     exif.writeUIntLE(jsonBuff.length, 14, 4);
     await img.load(tmpFileIn);
     fs.unlinkSync(tmpFileIn);

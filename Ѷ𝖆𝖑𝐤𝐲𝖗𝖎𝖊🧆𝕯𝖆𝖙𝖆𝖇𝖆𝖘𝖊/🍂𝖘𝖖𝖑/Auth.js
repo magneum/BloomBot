@@ -3,9 +3,9 @@
  * * * * * * * * * * |        (𝐜)𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!        * * * * * * * * * *
  */
 ("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
-const Baileys = require("@adiwajshing/baileys");
-const Cloud = require("./cloud");
-const KEY_MAP = {
+let Baileys = require("@adiwajshing/baileys");
+let Cloud = require("./cloud");
+let KEY_MAP = {
   "pre-key": "preKeys",
   session: "sessions",
   "sender-key": "senderKeys",
@@ -14,12 +14,12 @@ const KEY_MAP = {
   "sender-key-memory": "senderKeyMemory",
 };
 ("「 𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢® 」════════════════════════════════════════════════|▷   ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  ◁|════════════════════════════════════════════════「 𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢® 」");
-const useRemoteFileAuthState = async () => {
+let useRemoteFileAuthState = async () => {
   let creds;
   let keys = {};
 
-  const checkCreds = async () => {
-    const lock = await Cloud.Cred.findOne({
+  let checkCreds = async () => {
+    let lock = await Cloud.Cred.findOne({
       where: {
         key: "noiseKey",
       },
@@ -31,8 +31,8 @@ const useRemoteFileAuthState = async () => {
     }
   };
   ("「 𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢® 」════════════════════════════════════════════════|▷   ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  ◁|════════════════════════════════════════════════「 𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢® 」");
-  const loadCreds = async () => {
-    const allCreds = await Cloud.Cred.findAll();
+  let loadCreds = async () => {
+    let allCreds = await Cloud.Cred.findAll();
     let temp = {};
     allCreds.forEach((res) => {
       let val = res.getDataValue("value");
@@ -43,7 +43,7 @@ const useRemoteFileAuthState = async () => {
     return temp;
   };
   ("「 𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢® 」════════════════════════════════════════════════|▷   ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  ◁|════════════════════════════════════════════════「 𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢® 」");
-  const loadKeys = async () => {
+  let loadKeys = async () => {
     let keys = {
       preKeys: {},
       sessions: {},
@@ -52,7 +52,7 @@ const useRemoteFileAuthState = async () => {
       appStateVersions: {},
       senderKeyMemory: {},
     };
-    const allKeys = await Cloud.Key.findAll();
+    let allKeys = await Cloud.Key.findAll();
     allKeys.forEach((res) => {
       let val = res.getDataValue("value");
       let key = res.getDataValue("key");
@@ -63,12 +63,12 @@ const useRemoteFileAuthState = async () => {
     return keys;
   };
   ("「 𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢® 」════════════════════════════════════════════════|▷   ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  ◁|════════════════════════════════════════════════「 𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢® 」");
-  const saveCreds = async (data) => {
+  let saveCreds = async (data) => {
     if (!data) {
       data = creds;
     }
-    for (const _key in data) {
-      const cred = await Cloud.Cred.findOne({
+    for (let _key in data) {
+      let cred = await Cloud.Cred.findOne({
         where: {
           key: _key,
         },
@@ -91,9 +91,9 @@ const useRemoteFileAuthState = async () => {
     }
   };
   ("「 𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢® 」════════════════════════════════════════════════|▷   ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  ◁|════════════════════════════════════════════════「 𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢® 」");
-  const saveKey = async (key, data, _key) => {
-    for (const subKey in data[_key]) {
-      const res = await Cloud.Key.findOne({
+  let saveKey = async (key, data, _key) => {
+    for (let subKey in data[_key]) {
+      let res = await Cloud.Key.findOne({
         where: {
           key: subKey,
           type: key,
@@ -133,11 +133,11 @@ const useRemoteFileAuthState = async () => {
       creds: {},
       keys: {},
     };
-    const allCreds = await loadCreds();
-    const allKeys = await loadKeys();
+    let allCreds = await loadCreds();
+    let allKeys = await loadKeys();
     parent.creds = allCreds;
     parent.keys = allKeys;
-    const final = JSON.parse(
+    let final = JSON.parse(
       JSON.stringify(parent),
       Baileys.BufferJSON.reviver
     );
@@ -153,7 +153,7 @@ const useRemoteFileAuthState = async () => {
       creds,
       keys: {
         get: (type, ids) => {
-          const key = KEY_MAP[type];
+          let key = KEY_MAP[type];
           return ids.reduce((dict, id) => {
             let _a;
             let value =
@@ -168,8 +168,8 @@ const useRemoteFileAuthState = async () => {
           }, {});
         },
         set: async (data) => {
-          for (const _key in data) {
-            const key = KEY_MAP[_key];
+          for (let _key in data) {
+            let key = KEY_MAP[_key];
             keys[key] = keys[key] || {};
             Object.assign(keys[key], data[_key]);
             await saveKey(key, data, _key);

@@ -4,7 +4,7 @@
  */
 ("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
 require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/𝕷𝖆ყO𝖚𝖙");
-const {
+let {
   isUrl,
   fetchJson,
   getBuffer,
@@ -12,32 +12,32 @@ const {
   GIFBufferToVideoBuffer,
   getRandom,
 } = require(`../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/myfunc`);
-const fs = require(`fs`);
-const util = require(`util`);
-const hxz = require(`hxz-api`);
-const chalk = require(`chalk`);
-const db = require(`quick.db`);
-const axios = require(`axios`);
-const akaneko = require(`akaneko`);
-const canvacord = require(`canvacord`);
-const { Character } = require(`mailist`);
-const moment = require(`moment-timezone`);
-const Carbon = require(`unofficial-carbon-now`);
-const { exec, execSync } = require(`child_process`);
-const { N𝖊𝖊𝖉__A𝖗𝖌𝖘 } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌀B𝖚𝖙𝖙𝖔𝖓𝖘/N𝖊𝖊𝖉__A𝖗𝖌𝖘");
-const { Sticker, StickerTypes } = require(`wa-sticker-formatter`);
-const { Group_Only } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧭S𝖜𝖎𝖙𝖈𝖍/Group_Only");
-const { Image_Button } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌀B𝖚𝖙𝖙𝖔𝖓𝖘/Image_Button");
-const { Video_Button } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌀B𝖚𝖙𝖙𝖔𝖓𝖘/Video_Button");
-const { Bot_Not_Admin } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧭S𝖜𝖎𝖙𝖈𝖍/Bot_Not_Admin");
-const { Sender_Not_Admin } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧭S𝖜𝖎𝖙𝖈𝖍/Sender_Not_Admin");
-const YouTube_Regex =
+let fs = require(`fs`);
+let util = require(`util`);
+let hxz = require(`hxz-api`);
+let chalk = require(`chalk`);
+let db = require(`quick.db`);
+let axios = require(`axios`);
+let akaneko = require(`akaneko`);
+let canvacord = require(`canvacord`);
+let { Character } = require(`mailist`);
+let moment = require(`moment-timezone`);
+let Carbon = require(`unofficial-carbon-now`);
+let { exec, execSync } = require(`child_process`);
+let { N𝖊𝖊𝖉__A𝖗𝖌𝖘 } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌀B𝖚𝖙𝖙𝖔𝖓𝖘/N𝖊𝖊𝖉__A𝖗𝖌𝖘");
+let { Sticker, StickerTypes } = require(`wa-sticker-formatter`);
+let { Group_Only } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧭S𝖜𝖎𝖙𝖈𝖍/Group_Only");
+let { Image_Button } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌀B𝖚𝖙𝖙𝖔𝖓𝖘/Image_Button");
+let { Video_Button } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌀B𝖚𝖙𝖙𝖔𝖓𝖘/Video_Button");
+let { Bot_Not_Admin } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧭S𝖜𝖎𝖙𝖈𝖍/Bot_Not_Admin");
+let { Sender_Not_Admin } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧭S𝖜𝖎𝖙𝖈𝖍/Sender_Not_Admin");
+let YouTube_Regex =
   /(?:http(?:s|):\/\/|)(?:(?:www\.|)youtube(?:\-nocookie|)\.com\/(?:watch\?.*(?:|\&)v=|embed\/|v\/)|youtu\.be\/)([-_0-9A-Za-z]{11})/;
 `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
 var Present_Path = require(`path`);
 var Script_Name = Present_Path.basename(__filename);
 var Final_Name = Script_Name.slice(0, -3).toLowerCase();
-const { Caught } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌀B𝖚𝖙𝖙𝖔𝖓𝖘/Caught");
+let { Caught } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌀B𝖚𝖙𝖙𝖔𝖓𝖘/Caught");
 `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
 exports.cum = async (
   ӄ𝖚𝖓𝖆𝖎,
@@ -67,7 +67,7 @@ exports.cum = async (
   if (!isSenderAdmin && !isSenderTUF)
     return await Sender_Not_Admin(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
   `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
-  const RawTai = await akaneko.nsfw.cum();
+  let RawTai = await akaneko.nsfw.cum();
   await Image_Button(
     ӄ𝖚𝖓𝖆𝖎,
     Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
