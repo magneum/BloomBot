@@ -85,9 +85,9 @@ exports.promote = async (
       }
       await ӄ𝖚𝖓𝖆𝖎.groupParticipantsUpdate(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, [users], `promote`);
       ӄ𝖚𝖓𝖆𝖎.sendMessage(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, {
-        text: `woh woh!! looks like @${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender} promoted @${
-          users.split(`@`)[0]
-        }`,
+        text: `woh woh!! looks like @${
+          Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender.split(`@`)[0]
+        } promoted @${users.split(`@`)[0]}`,
         contextInfo: { mentionedJid: [users, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender] },
       });
     } catch {
