@@ -9,6 +9,7 @@ const Welcome = require(`../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧆𝕯𝖆𝖙𝖆�
 const group_participants = async (update, ӄ𝖚𝖓𝖆𝖎) => {
   let 𝖕𝖋𝖕𝖀𝖘𝖊𝖗;
   let GrpMETA = await ӄ𝖚𝖓𝖆𝖎.groupMetadata(update.id);
+  let name = await ӄ𝖚𝖓𝖆𝖎.getName(update.participants[0]);
   try {
     𝖕𝖋𝖕𝖀𝖘𝖊𝖗 = await ӄ𝖚𝖓𝖆𝖎.profilePictureUrl(update.participants[0], "image");
   } catch {
@@ -23,7 +24,6 @@ const group_participants = async (update, ӄ𝖚𝖓𝖆𝖎) => {
       if (𝕰𝖗𝖗𝖔𝖗) console.log(𝕰𝖗𝖗𝖔𝖗);
       if (!userWel) return;
       if (update.action == `add`) {
-        let name = await ӄ𝖚𝖓𝖆𝖎.getName(update.participants[0]);
         return await ӄ𝖚𝖓𝖆𝖎
           .sendMessage(update.id, {
             contextInfo: { mentionedJid: [update.participants[0]] },
