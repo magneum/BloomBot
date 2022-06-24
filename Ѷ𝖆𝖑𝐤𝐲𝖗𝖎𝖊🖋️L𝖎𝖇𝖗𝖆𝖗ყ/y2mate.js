@@ -19,16 +19,6 @@ function post(url, formdata) {
 }
 const ytIdRegex =
   /(?:youtube\.com\/\S*(?:(?:\/e(?:mbed))?\/|watch\?(?:\S*?&?v\=))|youtu\.be\/)([a-zA-Z0-9_-]{6,11})/;
-
-/**
- * Download YouTube Video via y2mate
- * @param {String} url YouTube Video URL
- * @param {String} quality (avaiable: `144p`, `240p`, `360p`, `480p`, `720p`, `1080p`, `1440p`, `2160p`)
- * @param {String} type (avaiable: `mp3`, `mp4`)
- * @param {String} bitrate (avaiable for video: `144`, `240`, `360`, `480`, `720`, `1080`, `1440`, `2160`)
- * (avaiable for audio: `128`)
- * @param {String} server (avaiable: `id4`, `en60`, `en61`, `en68`)
- */
 async function yt(url, quality, type, bitrate, server = "en68") {
   let ytId = ytIdRegex.exec(url);
   url = "https://youtu.be/" + ytId[1];
@@ -91,11 +81,6 @@ async function yt(url, quality, type, bitrate, server = "en68") {
 module.exports = {
   yt,
   ytIdRegex,
-  /**
-   * Download YouTube Video as Audio via y2mate
-   * @param {String} url YouTube Video URL
-   * @param {String} server (avaiable: `id4`, `en60`, `en61`, `en68`)
-   */
   yta(url, resol = "128kbps", server = "en154") {
     return yt(
       url,
@@ -105,11 +90,6 @@ module.exports = {
       server
     );
   },
-  /**
-   * Download YouTube Video as Video via y2mate
-   * @param {String} url YouTube Video URL
-   * @param {String} server (avaiable: `id4`, `en60`, `en61`, `en68`)
-   */
   ytv(url, resol = "360p", server = "en154") {
     return yt(
       url,
@@ -121,3 +101,8 @@ module.exports = {
   },
   servers: ["en136", "id4", "en60", "en61", "en68"],
 };
+("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
+/*
+ * * * * * * * * * * |        (𝐜)𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!        * * * * * * * * * *
+ */
+("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
