@@ -25,7 +25,7 @@ const group_participants = async (update, ӄ𝖚𝖓𝖆𝖎) => {
       ID: update.id,
     },
     async (𝕰𝖗𝖗𝖔𝖗, userWel) => {
-      if (𝕰𝖗𝖗𝖔𝖗) console.log(𝕰𝖗𝖗𝖔𝖗);
+      if (𝕰𝖗𝖗𝖔𝖗) return console.log(𝕰𝖗𝖗𝖔𝖗);
       if (!userWel) return;
       if (update.action == `add`) {
         return await ӄ𝖚𝖓𝖆𝖎
@@ -37,7 +37,9 @@ const group_participants = async (update, ӄ𝖚𝖓𝖆𝖎) => {
 ╔══「 𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐏𝐫𝐨𝐭𝐨® 」
 ║ *💡 ɴᴀᴍᴇ: ${userName || "No_Name"}
 ║ *🎐 ɢʀᴏᴜᴘ:* ${GrpMETA.subject || ""}
-║ *🍀 ᴍᴀᴅᴇ:* ${moment(`${GrpMETA.creation}` * 1000).tz(`Asia/Kolkata`).format(`DD/MM/YYYY HH:mm:ss`)}
+║ *🍀 ᴍᴀᴅᴇ:* ${moment(`${GrpMETA.creation}` * 1000)
+              .tz(`Asia/Kolkata`)
+              .format(`DD/MM/YYYY HH:mm:ss`)}
 ║ *🎍 ɴᴜᴍ ᴏꜰ ᴘᴀʀᴛɪᴄɪᴘᴀɴᴛꜱ:* ${update.participants.length}
 ╚═══════╝
 
