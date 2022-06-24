@@ -16,6 +16,8 @@ const group_participants = async (update, ӄ𝖚𝖓𝖆𝖎) => {
     𝖕𝖋𝖕𝖀𝖘𝖊𝖗 = await ӄ𝖚𝖓𝖆𝖎.profilePictureUrl(update.participants[0], "image");
   } catch {
     𝖕𝖋𝖕𝖀𝖘𝖊𝖗 = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊_𝖕𝖋𝖕𝖀𝖘𝖊𝖗.png`;
+    GrpMETA = "";
+    userName = "";
   }
   `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
   await Welcome.findOne(
