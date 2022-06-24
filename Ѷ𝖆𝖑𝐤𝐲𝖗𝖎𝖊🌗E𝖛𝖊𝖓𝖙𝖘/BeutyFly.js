@@ -24,7 +24,7 @@ exports.BeutyFly = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, Ko
   await ӄ𝖚𝖓𝖆𝖎.sendReadReceipt(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender, [
     Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id,
   ]);
-  console.log(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
+  // console.log(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
   console.log(
     Kolor.black(Kolor.bgWhite(`⦓ Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 ⦔`)),
     Kolor.black(Kolor.bgGreen(new Date()))
