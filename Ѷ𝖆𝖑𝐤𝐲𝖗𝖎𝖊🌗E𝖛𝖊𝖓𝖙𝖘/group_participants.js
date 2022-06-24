@@ -32,7 +32,7 @@ const group_participants = async (𝖚𝖕𝖉𝖆𝖙𝖊, ӄ𝖚𝖓𝖆𝖎) 
           .sendMessage(𝖚𝖕𝖉𝖆𝖙𝖊.id, {
             contextInfo: { mentionedJid: [𝖚𝖕𝖉𝖆𝖙𝖊.participants[0]] },
             image: { url: 𝖕𝖋𝖕𝖀𝖘𝖊𝖗 },
-            caption: `*『 🥞𝐖𝐞𝐥𝐜𝐨𝐦𝐞🥞 』* 
+            caption: `*⦓ ©𝐕𝐥𝐤𝐲𝐫𝐞 ༒ 𝐖𝐞𝐥𝐜𝐨𝐦𝐞𝐫 ⦔* 
 ╔══「 𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐏𝐫𝐨𝐭𝐨® 」
 ║ *💡 ɴᴀᴍᴇ:* @${𝖚𝖘𝖊𝖗𝕹𝖆𝖒𝖊}
 ║ *🎐 ɢʀᴏᴜᴘ:* ${𝕲𝖗𝖔𝖚𝖕𝖒𝖊𝖙𝖆.subject || ""}
@@ -61,68 +61,6 @@ ${userWel.message}`,
             headerType: 4,
           })
           .catch((error) => console.log(error));
-        `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
-      } else if (𝖚𝖕𝖉𝖆𝖙𝖊.action == "add" && 𝕷𝖆𝖙𝖊𝖘𝖙.includes(ӄ𝖚𝖓𝖆𝖎.user.id)) {
-        console.log(𝕲𝖗𝖔𝖚𝖕𝖒𝖊𝖙𝖆);
-        await ӄ𝖚𝖓𝖆𝖎
-          .sendMessage(𝖚𝖕𝖉𝖆𝖙𝖊.id, {
-            image: { url: 𝖕𝖋𝖕𝖀𝖘𝖊𝖗 },
-            caption: `👋🏻𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚, To Admins Of This Group, Some Of Your Members Requested Our Valkyrie HQ to Add Our Bot In This Group.
-Have Fun!
-
-╔══「 𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐏𝐫𝐨𝐭𝐨® 」
-║ *antilink:* _on/off_
-║ *autorank:* _on/off_
-╚═══════╝`,
-            footer: "*⦓ ⒸѶ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 ⦔*\n_ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™_",
-            buttons: [
-              {
-                buttonId: prefix + "help",
-                buttonText: { displayText: prefix + "help" },
-                type: 1,
-              },
-              {
-                buttonId: prefix + "rules",
-                buttonText: { displayText: prefix + "rules" },
-                type: 1,
-              },
-            ],
-            headerType: 4,
-          })
-          .catch((error) => console.log(error));
-        `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
-        await Welcome.findOne(
-          {
-            ID: 𝖚𝖕𝖉𝖆𝖙𝖊.id,
-          },
-          async (error, userWel) => {
-            if (error) console.log(error);
-            if (!userWel) {
-              var newServer = new Welcome({
-                ID: 𝖚𝖕𝖉𝖆𝖙𝖊.id,
-                message:
-                  "👋🏻𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚 New Member!\n👇🏽‍𝐏𝐫𝐞𝐬𝐬 𝐁𝐞𝐥𝐨𝐰 𝐁𝐮𝐭𝐭𝐨𝐧𝐬 𝐓𝐨 𝐒𝐭𝐚𝐫𝐭 𝐔𝐬𝐢𝐧𝐠 𝐀𝐈.👇🏽‍",
-              });
-              await newServer.save().catch((error) => console.log(error));
-            }
-          }
-        ).catch((error) => console.log(error));
-        `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
-        return await Ranker.findOne(
-          {
-            serverID: 𝖚𝖕𝖉𝖆𝖙𝖊.id,
-          },
-          async (error, server) => {
-            if (error) return console.log(error);
-            if (!server) {
-              var newServer = new Ranker({
-                serverID: 𝖚𝖕𝖉𝖆𝖙𝖊.id,
-                value: "ON",
-              });
-              await newServer.save().catch((error) => console.log(error));
-            }
-          }
-        ).catch((error) => console.log(error));
         `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
       } else if (𝖚𝖕𝖉𝖆𝖙𝖊.action == "remove") {
         return;
