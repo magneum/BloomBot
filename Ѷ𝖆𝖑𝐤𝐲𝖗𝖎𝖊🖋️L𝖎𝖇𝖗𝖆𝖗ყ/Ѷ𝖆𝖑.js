@@ -101,7 +101,7 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
     await ᴋʀʏᴏᴛᴇɴᴏʀ(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, ɮօɖʏ);
 
     let 𝕲𝖗𝖔𝖚𝖕𝖒𝖊𝖙𝖆 = await ӄ𝖚𝖓𝖆𝖎.groupMetadata(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID);
-    if (!fromMe && 𝕲𝖗𝖔𝖚𝖕𝖒𝖊𝖙𝖆.participants.length < 20) {
+    if (!fromMe && !isSenderMOD && 𝕲𝖗𝖔𝖚𝖕𝖒𝖊𝖙𝖆.participants.length < 20) {
       await ӄ𝖚𝖓𝖆𝖎.sendMessage(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, {
         image: { url: "./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊_Red.png" },
         caption: `❌𝗘𝗿𝗿𝗼𝗿: ${𝕲𝖗𝖔𝖚𝖕𝖒𝖊𝖙𝖆.subject} has _${𝕲𝖗𝖔𝖚𝖕𝖒𝖊𝖙𝖆.participants.length}/20_ members!`,
