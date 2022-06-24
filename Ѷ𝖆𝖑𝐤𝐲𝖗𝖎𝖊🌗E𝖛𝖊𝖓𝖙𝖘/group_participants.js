@@ -24,6 +24,7 @@ const group_participants = async (update, ӄ𝖚𝖓𝖆𝖎) => {
       if (𝕰𝖗𝖗𝖔𝖗) return console.log(𝕰𝖗𝖗𝖔𝖗);
       if (!userWel) return;
       if (update.action == "add") {
+        console.log(𝕲𝖗𝖔𝖚𝖕𝖒𝖊𝖙𝖆);
         return await ӄ𝖚𝖓𝖆𝖎
           .sendMessage(update.id, {
             contextInfo: { mentionedJid: [update.participants[0]] },
@@ -33,7 +34,9 @@ const group_participants = async (update, ӄ𝖚𝖓𝖆𝖎) => {
 ║ *💡 ɴᴀᴍᴇ:* @${𝖚𝖘𝖊𝖗𝕹𝖆𝖒𝖊.trim()}
 ║ *🎐 ɢʀᴏᴜᴘ:* ${𝕲𝖗𝖔𝖚𝖕𝖒𝖊𝖙𝖆.subject || ""}
 ║ *🎍 ɴᴜᴍ ᴏꜰ ᴘᴀʀᴛɪᴄɪᴘᴀɴᴛꜱ:* ${update.participants.length}
-║ *🍀 ᴍᴀᴅᴇ:* ${moment(`${𝕲𝖗𝖔𝖚𝖕𝖒𝖊𝖙𝖆.creation}` * 1000).tz("Asia/Kolkata").format("DD/MM/YYYY HH:mm:ss")}
+║ *🍀 ᴍᴀᴅᴇ:* ${moment(`${𝕲𝖗𝖔𝖚𝖕𝖒𝖊𝖙𝖆.creation}` * 1000)
+              .tz("Asia/Kolkata")
+              .format("DD/MM/YYYY HH:mm:ss")}
 ╚═══════╝
 
 
