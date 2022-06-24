@@ -19,7 +19,7 @@ Please Try Again Later!
 
 💡 𝐃𝐞𝐛𝐮𝐠 𝐄𝐫𝐫𝐨𝐫: 💡
 ${𝕮𝖔𝖓𝖙𝖊𝖓𝖙}`,
-footer: "*⦓ ⒸѶ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 ⦔*\n_ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™_",
+footer: "*⦓ ⒸѶ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 ⦔*\n_мα∂є ву кяαкιηzℓαв™_",
 buttons: [
 {
 buttonId: prefix + "help",
