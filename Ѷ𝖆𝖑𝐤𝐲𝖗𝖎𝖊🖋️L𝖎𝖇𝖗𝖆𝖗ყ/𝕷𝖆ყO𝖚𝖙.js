@@ -37,10 +37,10 @@ global.HEROKU_APP_NAME =
 process.env.HEROKU_APP_NAME === undefined
 ? "Null"
 : process.env.HEROKU_APP_NAME;
-global.KATE =
-process.env.KATE === undefined
+global.MOD =
+process.env.MOD === undefined
 ? "918436686758,917430922909"
-: process.env.KATE;
+: process.env.MOD;
 global.owner = gg.split(",");
 global.MONGOOSE = process.env.MongoDb;
 global.DATABASE_URL =

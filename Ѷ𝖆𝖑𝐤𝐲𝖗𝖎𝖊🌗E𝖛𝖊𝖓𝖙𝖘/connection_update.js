@@ -11,7 +11,6 @@ if (connection === `close`) {
 lastDisconnect.error?.output?.statusCode !== DisconnectReason.loggedOut
 ? startӄ𝖚𝖓𝖆𝖎()
 : console.log(chalk.bgRed("💡𝐈𝐧𝐟𝐨꧂ Whatsapp Kicked Session..."));
-process.exit(0);
 }
 if (qr) {
 QR_GENERATE = qr;
