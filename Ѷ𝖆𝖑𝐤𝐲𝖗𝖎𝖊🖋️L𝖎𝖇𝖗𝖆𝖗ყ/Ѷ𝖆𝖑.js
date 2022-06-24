@@ -99,6 +99,30 @@ module.exports = ӄ𝖚𝖓𝖆𝖎 = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤�
     await ᴘᴏᴡᴇʀᴇᴅ(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, ɮօɖʏ);
     let { ᴋʀʏᴏᴛᴇɴᴏʀ } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧥H𝖔𝖑𝖘𝖙𝖊𝖗/ᴋʀʏᴏᴛᴇɴᴏʀ/ᴋʀʏᴏᴛᴇɴᴏʀ");
     await ᴋʀʏᴏᴛᴇɴᴏʀ(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, ɮօɖʏ);
+    let 𝕲𝖗𝖔𝖚𝖕𝖒𝖊𝖙𝖆 = await ӄ𝖚𝖓𝖆𝖎.groupMetadata(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID);
+    if (𝕲𝖗𝖔𝖚𝖕𝖒𝖊𝖙𝖆.participants.length < 20) {
+      await ӄ𝖚𝖓𝖆𝖎.sendMessage(
+        Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
+        {
+          contextInfo: { mentionedJid: [Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender] },
+          image: { url: "./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊_Red.png" },
+          caption: `❌ 𝗘𝗿𝗿𝗼𝗿: ${GroupMetadata.subject} has _${GroupMetadata.participants.length}/20 members!_`,
+          footer: "*⦓ ⒸѶ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 ⦔*",
+          buttons: [
+            {
+              buttonId: prefix + "help",
+              buttonText: { displayText: prefix + "help" },
+              type: 1,
+            },
+          ],
+          headerType: 4,
+        },
+        {
+          quoted: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+        }
+      );
+      return await ӄ𝖗𝖞ӄ𝖓𝖟.groupLeave(GroupResponse.gid);
+    }
   }
   `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
   if (
