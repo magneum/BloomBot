@@ -8,7 +8,6 @@ const moment = require(`moment-timezone`);
 const group_participants = async (Group, ӄ𝖚𝖓𝖆𝖎) => {
   let Welcome = require(`../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧆𝕯𝖆𝖙𝖆𝖇𝖆𝖘𝖊/🍃𝖒𝖔𝖓𝖌𝖔/setwelcome`);
   let 𝖕𝖋𝖕𝖀𝖘𝖊𝖗;
-  let 𝖕𝖋𝖕𝕲𝖗𝖔𝖚𝖕;
   let GrpMETA = await ӄ𝖚𝖓𝖆𝖎.groupMetadata(Group.id);
   let GrpName = GrpMETA.subject || "";
   let GrpPart = Group.participants;
@@ -18,11 +17,6 @@ const group_participants = async (Group, ӄ𝖚𝖓𝖆𝖎) => {
       𝖕𝖋𝖕𝖀𝖘𝖊𝖗 = await ӄ𝖚𝖓𝖆𝖎.profilePictureUrl(One, `image`);
     } catch {
       𝖕𝖋𝖕𝖀𝖘𝖊𝖗 = `https://i.postimg.cc/1trtt9m8/Screenshot-2022-06-23-at-23-48-31-No-Profile-Picture-Girl-HD-Png-Download-kindpng.png`;
-    }
-    try {
-      𝖕𝖋𝖕𝕲𝖗𝖔𝖚𝖕 = await ӄ𝖚𝖓𝖆𝖎.profilePictureUrl(Group.id, `image`);
-    } catch {
-      𝖕𝖋𝖕𝕲𝖗𝖔𝖚𝖕 = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊_White.png`;
     }
     `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
     await Welcome.findOne(
