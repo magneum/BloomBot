@@ -13,6 +13,7 @@ const {
   getRandom,
 } = require(`../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/myfunc`);
 const fs = require(`fs`);
+const gis = require(`g-i-s`);
 const util = require(`util`);
 const hxz = require(`hxz-api`);
 const chalk = require(`chalk`);
@@ -74,11 +75,17 @@ exports.image = async (
 *⚡USAGE:* ${prefix}${Final_Name} <Term>`
       );
     }
-    let gis = require(`g-i-s`);
+    `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
     gis(F𝖚𝖑𝖑_A𝖗𝖌𝖘, async (error, result) => {
       n = result;
       images = n[Math.floor(Math.random() * n.length)].url;
-      return await Image_Button(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, A𝖗𝖌𝖘, images, `Here you go`);
+      return await Image_Button(
+        ӄ𝖚𝖓𝖆𝖎,
+        Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+        A𝖗𝖌𝖘,
+        images,
+        "⚡𝐈𝐧𝐟𝐨: Here you go"
+      );
     });
   } catch (𝕰𝖗𝖗𝖔𝖗) {
     const util = require(`util`);

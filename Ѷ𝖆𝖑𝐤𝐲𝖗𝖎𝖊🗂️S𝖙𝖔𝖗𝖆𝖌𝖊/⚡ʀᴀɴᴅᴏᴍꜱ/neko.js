@@ -69,7 +69,7 @@ exports.neko = async (
       Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
       A𝖗𝖌𝖘,
       waifud.data.url,
-      `Here you go`
+      "⚡𝐈𝐧𝐟𝐨: Here you go"
     );
   } catch (𝕰𝖗𝖗𝖔𝖗) {
     return await Caught(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝕰𝖗𝖗𝖔𝖗);

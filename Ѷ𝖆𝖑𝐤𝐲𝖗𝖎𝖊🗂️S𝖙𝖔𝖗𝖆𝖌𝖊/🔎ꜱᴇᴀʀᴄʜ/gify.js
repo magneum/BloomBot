@@ -87,7 +87,7 @@ exports.gify = async (
             url: gi.results?.[Math.floor(Math.random() * gi.results.length)]
               ?.media[0]?.mp4?.url,
           },
-          caption: `Here you go`,
+          caption: "⚡𝐈𝐧𝐟𝐨: Here you go",
           gifPlayback: true,
         },
         { quoted: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 }
