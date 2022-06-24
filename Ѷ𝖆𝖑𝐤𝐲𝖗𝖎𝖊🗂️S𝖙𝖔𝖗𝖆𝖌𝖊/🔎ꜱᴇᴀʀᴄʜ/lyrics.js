@@ -62,41 +62,30 @@ exports.lyrics = async (
   mentionByTag,
   mentionByReply
 ) => {
-  try {
-    if (!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup) return await Group_Only(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
-    `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
-    const Genius = require(`genius-lyrics`);
-    const Client = new Genius.Client();
-    if (!F𝖚𝖑𝖑_A𝖗𝖌𝖘) {
-      return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-        ӄ𝖚𝖓𝖆𝖎,
-        Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
-        `*❌ERROR:* No query provided!
-
-*⚡USAGE:* ${prefix}${Final_Name} <Term>`
-      );
-    }
-    const searches = await Client.songs.search(F𝖚𝖑𝖑_A𝖗𝖌𝖘);
-    const firstSong = searches[0];
-    const lyrics = await firstSong.lyrics();
-    const reactionMessage = {
-      react: {
-        text: `🎶`,
-        key: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key,
-      },
-    };
-    await ӄ𝖚𝖓𝖆𝖎.sendMessage(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, reactionMessage);
-    return await Image_Button(
+  if (!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup) return await Group_Only(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
+  `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
+  const Genius = require(`genius-lyrics`);
+  const Client = new Genius.Client();
+  if (!F𝖚𝖑𝖑_A𝖗𝖌𝖘) {
+    return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
       ӄ𝖚𝖓𝖆𝖎,
       Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
-      A𝖗𝖌𝖘,
-      firstSong.thumbnail,
-      lyrics
+      `*❌ERROR:* No query provided!
+
+*⚡USAGE:* ${prefix}${Final_Name} <Term>`
     );
-  } catch (𝕰𝖗𝖗𝖔𝖗) {
-    const util = require(`util`);
-    Caught(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝕰𝖗𝖗𝖔𝖗);
   }
+  const searches = await Client.songs.search(F𝖚𝖑𝖑_A𝖗𝖌𝖘);
+  const firstSong = searches[0];
+  const lyrics = await firstSong.lyrics();
+  const reactionMessage = {
+    react: {
+      text: `🎶`,
+      key: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key,
+    },
+  };
+  await ӄ𝖚𝖓𝖆𝖎.sendMessage(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, reactionMessage);
+  return await Image_Button(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, A𝖗𝖌𝖘, firstSong.thumbnail, lyrics);
 };
 ("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
 /*

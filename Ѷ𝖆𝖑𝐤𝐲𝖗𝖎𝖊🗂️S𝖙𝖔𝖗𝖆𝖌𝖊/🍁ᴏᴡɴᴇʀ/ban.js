@@ -61,144 +61,139 @@ exports.ban = async (
   mentionByTag,
   mentionByReply
 ) => {
-  try {
-    if (!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup) return await Group_Only(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
-    `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
-    if (!fromMe && !isSenderTUF) {
-      return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-        ӄ𝖚𝖓𝖆𝖎,
-        Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
-        `*❌ERROR:* Owner & Mod only command!
+  if (!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup) return await Group_Only(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
+  `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
+  if (!fromMe && !isSenderTUF) {
+    return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
+      ӄ𝖚𝖓𝖆𝖎,
+      Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+      `*❌ERROR:* Owner & Mod only command!
 
 *⚡USAGE:* ${prefix}${Final_Name} _reply to person to ban_
 ${prefix}${Final_Name} _don't reply to anyone and group will be banned_`
-      );
-    }
-    `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
-    if (Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup && isReply && !mentionByTag) {
-      let repliedPerson =
-        Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.extendedTextMessage.contextInfo.participant;
-      let repliedPersonNum = repliedPerson.substring(
-        0,
-        repliedPerson.length - 15
-      );
-      await userBanCheck.findOne(
-        {
-          ID: repliedPerson,
-        },
-        async (error, userBan) => {
-          if (error) return console.log(error);
-          if (!userBan) {
-            var newUser = new userBanCheck({
-              ID: repliedPerson,
-            });
-            await newUser.save();
-            return await ӄ𝖚𝖓𝖆𝖎.sendMessage(
-              Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
-              {
-                contextInfo: { mentionedJid: [Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender, repliedPerson] },
-                image: { url: "./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊_Matte.png" },
-                caption: `┌─「 𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐏𝐫𝐨𝐭𝐨® 」
+    );
+  }
+  `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
+  if (Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup && isReply && !mentionByTag) {
+    let repliedPerson =
+      Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.extendedTextMessage.contextInfo.participant;
+    let repliedPersonNum = repliedPerson.substring(
+      0,
+      repliedPerson.length - 15
+    );
+    await userBanCheck.findOne(
+      {
+        ID: repliedPerson,
+      },
+      async (error, userBan) => {
+        if (error) return console.log(error);
+        if (!userBan) {
+          var newUser = new userBanCheck({
+            ID: repliedPerson,
+          });
+          await newUser.save();
+          return await ӄ𝖚𝖓𝖆𝖎.sendMessage(
+            Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
+            {
+              contextInfo: { mentionedJid: [Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender, repliedPerson] },
+              image: { url: "./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊_Matte.png" },
+              caption: `┌─「 𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐏𝐫𝐨𝐭𝐨® 」
 ├• ɴᴀᴍᴇ: ${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.pushName || "No_Name"}
 └────────────────◇
 
 
 🔒𝐒𝐭𝐚𝐭𝐮𝐬: @${repliedPersonNum} Has Been Banned and Bot won't Respond to that dumbo!`,
-                footer: "*⦓ ⒸѶ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 ⦔*",
-                buttons: [
-                  {
-                    buttonId: prefix + "help",
-                    buttonText: { displayText: prefix + "help" },
-                    type: 1,
-                  },
-                  {
-                    buttonId: prefix + "support",
-                    buttonText: { displayText: prefix + "support" },
-                    type: 1,
-                  },
-                ],
-                headerType: 4,
-              },
-              {
-                quoted: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
-              }
-            );
-          } else {
-            return await Image_Button(
-              ӄ𝖚𝖓𝖆𝖎,
-              Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
-              A𝖗𝖌𝖘,
-              "./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊_Matte.png",
-              `❌ 𝗘𝗿𝗿𝗼𝗿: That Person Is Already banned!`
-            );
-          }
+              footer: "*⦓ ⒸѶ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 ⦔*",
+              buttons: [
+                {
+                  buttonId: prefix + "help",
+                  buttonText: { displayText: prefix + "help" },
+                  type: 1,
+                },
+                {
+                  buttonId: prefix + "support",
+                  buttonText: { displayText: prefix + "support" },
+                  type: 1,
+                },
+              ],
+              headerType: 4,
+            },
+            {
+              quoted: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+            }
+          );
+        } else {
+          return await Image_Button(
+            ӄ𝖚𝖓𝖆𝖎,
+            Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+            A𝖗𝖌𝖘,
+            "./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊_Matte.png",
+            `❌ 𝗘𝗿𝗿𝗼𝗿: That Person Is Already banned!`
+          );
         }
-      );
-      `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
-    } else if (Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup && !isReply) {
-      await userBanCheck.findOne(
-        {
-          ID: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
-        },
-        async (error, userBan) => {
-          if (error) return console.log(error);
-          if (!userBan) {
-            var newUser = new userBanCheck({
-              ID: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
-            });
-            await newUser.save();
-            return await ӄ𝖚𝖓𝖆𝖎.sendMessage(
-              Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
-              {
-                image: { url: "./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊_Matte.png" },
-                caption: `┌─「 𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐏𝐫𝐨𝐭𝐨® 」
+      }
+    );
+    `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
+  } else if (Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup && !isReply) {
+    await userBanCheck.findOne(
+      {
+        ID: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
+      },
+      async (error, userBan) => {
+        if (error) return console.log(error);
+        if (!userBan) {
+          var newUser = new userBanCheck({
+            ID: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
+          });
+          await newUser.save();
+          return await ӄ𝖚𝖓𝖆𝖎.sendMessage(
+            Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
+            {
+              image: { url: "./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊_Matte.png" },
+              caption: `┌─「 𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐏𝐫𝐨𝐭𝐨® 」
 ├• ɴᴀᴍᴇ: ${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.pushName || "No_Name"}
 └────────────────◇
 
 
 🔒𝐒𝐭𝐚𝐭𝐮𝐬: ${groupMetadata.subject} Group Has Been Banned!`,
-                footer: "*⦓ ⒸѶ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 ⦔*",
-                buttons: [
-                  {
-                    buttonId: prefix + "help",
-                    buttonText: { displayText: prefix + "help" },
-                    type: 1,
-                  },
-                  {
-                    buttonId: prefix + "support",
-                    buttonText: { displayText: prefix + "support" },
-                    type: 1,
-                  },
-                ],
-                headerType: 4,
-              },
-              {
-                quoted: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
-              }
-            );
-          } else {
-            return await Image_Button(
-              ӄ𝖚𝖓𝖆𝖎,
-              Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
-              A𝖗𝖌𝖘,
-              "./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊_Matte.png",
-              `❌ 𝗘𝗿𝗿𝗼𝗿: ${groupMetadata.subject} is Already Banned!`
-            );
-          }
+              footer: "*⦓ ⒸѶ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 ⦔*",
+              buttons: [
+                {
+                  buttonId: prefix + "help",
+                  buttonText: { displayText: prefix + "help" },
+                  type: 1,
+                },
+                {
+                  buttonId: prefix + "support",
+                  buttonText: { displayText: prefix + "support" },
+                  type: 1,
+                },
+              ],
+              headerType: 4,
+            },
+            {
+              quoted: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+            }
+          );
+        } else {
+          return await Image_Button(
+            ӄ𝖚𝖓𝖆𝖎,
+            Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+            A𝖗𝖌𝖘,
+            "./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊_Matte.png",
+            `❌ 𝗘𝗿𝗿𝗼𝗿: ${groupMetadata.subject} is Already Banned!`
+          );
         }
-      );
-      `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
-    } else {
-      return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-        ӄ𝖚𝖓𝖆𝖎,
-        Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
-        `*⚡USAGE:* ${prefix}${Final_Name} _reply to person to ban_
+      }
+    );
+    `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
+  } else {
+    return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
+      ӄ𝖚𝖓𝖆𝖎,
+      Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+      `*⚡USAGE:* ${prefix}${Final_Name} _reply to person to ban_
 ${prefix}${Final_Name}* _don't reply to anyone and group will be banned_`
-      );
-    }
-  } catch (err) {
-    const util = require(`util`);
-    Caught(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, err);
+    );
   }
 };
 ("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");

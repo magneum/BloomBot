@@ -60,26 +60,22 @@ exports.advice = async (
   mentionByTag,
   mentionByReply
 ) => {
-  try {
-    if (!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup) return await Group_Only(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
-    `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
-    await axios
-      .get(`https://api.adviceslip.com/advice`)
-      .then(async (response) => {
-        return await Image_Button(
-          ӄ𝖚𝖓𝖆𝖎,
-          Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
-          A𝖗𝖌𝖘,
-          "./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.png",
-          `*Advice for you🔖:* ${response.data.slip.advice}`
-        );
-      })
-      .catch((𝕰𝖗𝖗𝖔𝖗) => {
-        Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.reply(`🔍 Error: ${𝕰𝖗𝖗𝖔𝖗}`);
-      });
-  } catch (𝕰𝖗𝖗𝖔𝖗) {
-    return await Caught(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝕰𝖗𝖗𝖔𝖗);
-  }
+  if (!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup) return await Group_Only(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
+  `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
+  await axios
+    .get(`https://api.adviceslip.com/advice`)
+    .then(async (response) => {
+      return await Image_Button(
+        ӄ𝖚𝖓𝖆𝖎,
+        Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+        A𝖗𝖌𝖘,
+        "./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.png",
+        `*Advice for you🔖:* ${response.data.slip.advice}`
+      );
+    })
+    .catch((𝕰𝖗𝖗𝖔𝖗) => {
+      Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.reply(`🔍 Error: ${𝕰𝖗𝖗𝖔𝖗}`);
+    });
 };
 ("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
 /*

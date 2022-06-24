@@ -62,65 +62,58 @@ exports.anime = async (
   mentionByTag,
   mentionByReply
 ) => {
-  try {
-    if (!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup) return await Group_Only(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
-    `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
-    if (!F𝖚𝖑𝖑_A𝖗𝖌𝖘) {
-      return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-        ӄ𝖚𝖓𝖆𝖎,
-        Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
-        `*❌ERROR:* No query provided!
-
-${prefix}${Final_Name} <anime name>`
-      );
-    }
-
-    const { data: jap } = await axios.get(
-      `https://api.jikan.moe/v3/search/anime?q=${F𝖚𝖑𝖑_A𝖗𝖌𝖘}`
-    );
-    if (!jap.results[0].title) {
-      return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-        ӄ𝖚𝖓𝖆𝖎,
-        Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
-        `*❌ERROR:* Couldn't find any results on the term *${F𝖚𝖑𝖑_A𝖗𝖌𝖘}*
-
-*⚡USAGE:* ${prefix}${Final_Name} <anime name>`
-      );
-    }
-
-    const { data } = (
-      await axios.get(
-        `https://api.jikan.moe/v4/anime?q=${jap.results[0].title}`
-      )
-    ).data;
-    return await Image_Button(
+  if (!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup) return await Group_Only(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
+  `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
+  if (!F𝖚𝖑𝖑_A𝖗𝖌𝖘) {
+    return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
       ӄ𝖚𝖓𝖆𝖎,
       Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
-      A𝖗𝖌𝖘,
-      data[0].images.jpg.image_url,
-      `*Result:* ${0 + 1} of ${data.length}
+      `*❌ERROR:* No query provided!
+
+${prefix}${Final_Name} <anime name>`
+    );
+  }
+
+  const { data: jap } = await axios.get(
+    `https://api.jikan.moe/v3/search/anime?q=${F𝖚𝖑𝖑_A𝖗𝖌𝖘}`
+  );
+  if (!jap.results[0].title) {
+    return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
+      ӄ𝖚𝖓𝖆𝖎,
+      Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+      `*❌ERROR:* Couldn't find any results on the term *${F𝖚𝖑𝖑_A𝖗𝖌𝖘}*
+
+*⚡USAGE:* ${prefix}${Final_Name} <anime name>`
+    );
+  }
+
+  const { data } = (
+    await axios.get(`https://api.jikan.moe/v4/anime?q=${jap.results[0].title}`)
+  ).data;
+  return await Image_Button(
+    ӄ𝖚𝖓𝖆𝖎,
+    Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+    A𝖗𝖌𝖘,
+    data[0].images.jpg.image_url,
+    `*Result:* ${0 + 1} of ${data.length}
 
 *📕Title:* ${data[0].title}/${data[0].title_english}/${data[0].title_japanese}
 *🔖Trailer:* ${data[0].trailer.url}
 ` +
-        `*🔍MAL_ID:* ${data[0].mal_id}
+      `*🔍MAL_ID:* ${data[0].mal_id}
 *✴️Type:* ${data[0].type}
 *🎬Episode(s):* ${data[0].episodes}
 *📢Airing:* ${data[0].status}
 *🔔Date:* ${data[0].aired.string}
 ` +
-        `*🔱Rating:* ${data[0].rating}
+      `*🔱Rating:* ${data[0].rating}
 *⚜️Duration:* ${data[0].duration}
 *♨️Score:* ${data[0].score}
 *📦Studio(s):* ${data[0].studios.map((val) => `${val.name}`).join(`, `)}
 ` +
-        `*🎞️Genre(s):* ${data[0].genres.map((val) => `${val.name}`).join(`, `)}
+      `*🎞️Genre(s):* ${data[0].genres.map((val) => `${val.name}`).join(`, `)}
 *📚Synopsis:* ${data[0].synopsis}`
-    );
-  } catch (𝕰𝖗𝖗𝖔𝖗) {
-    const util = require(`util`);
-    Caught(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝕰𝖗𝖗𝖔𝖗);
-  }
+  );
 };
 ("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
 /*

@@ -62,64 +62,59 @@ exports.manga = async (
   mentionByTag,
   mentionByReply
 ) => {
+  if (!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup) return await Group_Only(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
+  `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
+  const { Manga } = require(`@shineiichijo/marika`);
+  const manga = new Manga();
+  if (!F𝖚𝖑𝖑_A𝖗𝖌𝖘) {
+    return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
+      ӄ𝖚𝖓𝖆𝖎,
+      Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+      `*❌ERROR:* No query provided!
+
+*⚡USAGE:* ${prefix}${Final_Name} <Term>`
+    );
+  }
   try {
-    if (!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup) return await Group_Only(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
-    `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
-    const { Manga } = require(`@shineiichijo/marika`);
-    const manga = new Manga();
-    if (!F𝖚𝖑𝖑_A𝖗𝖌𝖘) {
-      return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-        ӄ𝖚𝖓𝖆𝖎,
-        Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
-        `*❌ERROR:* No query provided!
+    let srh = await manga.searchManga(F𝖚𝖑𝖑_A𝖗𝖌𝖘);
+    let mang = `🎀 *Title:* ${srh.data[0].title}`;
+    mang += `📈 *Status:* ${srh.data[0].status}`;
+    mang += `🌸 *Total Volumes:* ${srh.data[0].volumes}`;
+    mang += `🎗 *Total Chapters:* ${srh.data[0].chapters}`;
+    mang += `🧧 *Genres:*`;
+    for (let i = 0; i < srh.data[0].genres.length; i++) {
+      mang += `\t\t\t\t\t\t\t\t*${srh.data[0].genres[i].name}*`;
+    }
+    mang += `✨ *Published on:* ${srh.data[0].published.from}`;
+    mang += `🌟 *Score: ${srh.data[0].scored}*`;
+    mang += `🎐 *Popularity:* ${srh.data[0].popularity}`;
+    mang += `🎏 *Favorites:* ${srh.data[0].favorites}`;
+    mang += `✍ *Authors:*`;
+    for (let i = 0; i < srh.data[0].authors.length; i++) {
+      mang += `\t\t\t\t\t\t\t\t\t*${srh.data[0].authors[i].name}* *(${srh.data[0].authors[0].type})*`;
+    }
+    mang += `🌐 *URL:* ${srh.data[0].url}`;
+    if (srh.data[0].background !== null)
+      mang += `🎆 *Background:* ${srh.data[0].background}`;
+    mang += `❄️ *Description:* ${srh.data[0].synopsis.replace(
+      /\[Written by MAL Rewrite]/g,
+      ``
+    )}`;
+    return await Image_Button(
+      ӄ𝖚𝖓𝖆𝖎,
+      Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+      A𝖗𝖌𝖘,
+      srh.data[0].images.jpg.large_image_url,
+      mang
+    );
+  } catch {
+    return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
+      ӄ𝖚𝖓𝖆𝖎,
+      Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+      `*❌ERROR:* Couldn't find any results on the term *${F𝖚𝖑𝖑_A𝖗𝖌𝖘}*
 
 *⚡USAGE:* ${prefix}${Final_Name} <Term>`
-      );
-    }
-    try {
-      let srh = await manga.searchManga(F𝖚𝖑𝖑_A𝖗𝖌𝖘);
-      let mang = `🎀 *Title:* ${srh.data[0].title}`;
-      mang += `📈 *Status:* ${srh.data[0].status}`;
-      mang += `🌸 *Total Volumes:* ${srh.data[0].volumes}`;
-      mang += `🎗 *Total Chapters:* ${srh.data[0].chapters}`;
-      mang += `🧧 *Genres:*`;
-      for (let i = 0; i < srh.data[0].genres.length; i++) {
-        mang += `\t\t\t\t\t\t\t\t*${srh.data[0].genres[i].name}*`;
-      }
-      mang += `✨ *Published on:* ${srh.data[0].published.from}`;
-      mang += `🌟 *Score: ${srh.data[0].scored}*`;
-      mang += `🎐 *Popularity:* ${srh.data[0].popularity}`;
-      mang += `🎏 *Favorites:* ${srh.data[0].favorites}`;
-      mang += `✍ *Authors:*`;
-      for (let i = 0; i < srh.data[0].authors.length; i++) {
-        mang += `\t\t\t\t\t\t\t\t\t*${srh.data[0].authors[i].name}* *(${srh.data[0].authors[0].type})*`;
-      }
-      mang += `🌐 *URL:* ${srh.data[0].url}`;
-      if (srh.data[0].background !== null)
-        mang += `🎆 *Background:* ${srh.data[0].background}`;
-      mang += `❄️ *Description:* ${srh.data[0].synopsis.replace(
-        /\[Written by MAL Rewrite]/g,
-        ``
-      )}`;
-      return await Image_Button(
-        ӄ𝖚𝖓𝖆𝖎,
-        Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
-        A𝖗𝖌𝖘,
-        srh.data[0].images.jpg.large_image_url,
-        mang
-      );
-    } catch {
-      return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-        ӄ𝖚𝖓𝖆𝖎,
-        Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
-        `*❌ERROR:* Couldn't find any results on the term *${F𝖚𝖑𝖑_A𝖗𝖌𝖘}*
-
-*⚡USAGE:* ${prefix}${Final_Name} <Term>`
-      );
-    }
-  } catch (𝕰𝖗𝖗𝖔𝖗) {
-    const util = require(`util`);
-    Caught(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝕰𝖗𝖗𝖔𝖗);
+    );
   }
 };
 ("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");

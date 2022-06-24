@@ -62,39 +62,34 @@ exports.setgpfp = async (
   mentionByTag,
   mentionByReply
 ) => {
-  try {
-    if (!isBotAdmin) return await Bot_Not_Admin(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
-    if (!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup) return await Group_Only(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
-    if (!isSenderAdmin) return await Sender_Not_Admin(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
-    `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
-    if (!/image/.test(mime)) {
-      return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-        ӄ𝖚𝖓𝖆𝖎,
-        Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
-        `*❌ERROR:*  Could not find any Image in context!
+  if (!isBotAdmin) return await Bot_Not_Admin(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
+  if (!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup) return await Group_Only(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
+  if (!isSenderAdmin) return await Sender_Not_Admin(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
+  `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
+  if (!/image/.test(mime)) {
+    return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
+      ӄ𝖚𝖓𝖆𝖎,
+      Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+      `*❌ERROR:*  Could not find any Image in context!
 
 *⚡USAGE:* ${prefix}${Final_Name} <Tag the person>`
-      );
-    }
-    if (/webp/.test(mime)) {
-      return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-        ӄ𝖚𝖓𝖆𝖎,
-        Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
-        `*❌ERROR:*  Could not find any Image in context!
-
-*⚡USAGE:* ${prefix}${Final_Name} <Tag the person>`
-      );
-    }
-    let media = await ӄ𝖚𝖓𝖆𝖎.downloadAndSaveMediaMessage(quoted);
-    await ӄ𝖚𝖓𝖆𝖎
-      .updateProfilePicture(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, {
-        url: media,
-      })
-      .catch((𝕰𝖗𝖗𝖔𝖗) => fs.unlinkSync(media));
-  } catch (𝕰𝖗𝖗𝖔𝖗) {
-    const util = require(`util`);
-    Caught(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝕰𝖗𝖗𝖔𝖗);
+    );
   }
+  if (/webp/.test(mime)) {
+    return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
+      ӄ𝖚𝖓𝖆𝖎,
+      Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+      `*❌ERROR:*  Could not find any Image in context!
+
+*⚡USAGE:* ${prefix}${Final_Name} <Tag the person>`
+    );
+  }
+  let media = await ӄ𝖚𝖓𝖆𝖎.downloadAndSaveMediaMessage(quoted);
+  await ӄ𝖚𝖓𝖆𝖎
+    .updateProfilePicture(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, {
+      url: media,
+    })
+    .catch((𝕰𝖗𝖗𝖔𝖗) => fs.unlinkSync(media));
 };
 ("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
 /*

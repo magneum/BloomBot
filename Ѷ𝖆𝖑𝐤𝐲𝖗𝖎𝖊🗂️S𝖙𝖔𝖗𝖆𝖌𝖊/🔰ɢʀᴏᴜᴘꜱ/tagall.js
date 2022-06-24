@@ -61,56 +61,50 @@ exports.tagall = async (
   mentionByTag,
   mentionByReply
 ) => {
-  try {
-    if (!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup) return await Group_Only(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
-    if (!isSenderAdmin && !isSenderTUF)
-      return await Sender_Not_Admin(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
-    if (!isBotAdmin && !isSenderTUF)
-      return await Bot_Not_Admin(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
-    let 𝕲𝖗𝖔𝖚𝖕𝖒𝖊𝖙𝖆 = await ӄ𝖚𝖓𝖆𝖎.groupMetadata(𝖚𝖕𝖉𝖆𝖙𝖊.id);
-    `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
-    let Text;
-    let emo;
-    const Time = moment.tz(`Asia/Kolkata`).format(`DD/MM HH:mm:ss`);
-    if (F𝖚𝖑𝖑_A𝖗𝖌𝖘) {
-      Text = `📌 *Message - ${F𝖚𝖑𝖑_A𝖗𝖌𝖘}*
+  if (!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup) return await Group_Only(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
+  if (!isSenderAdmin && !isSenderTUF)
+    return await Sender_Not_Admin(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
+  if (!isBotAdmin && !isSenderTUF) return await Bot_Not_Admin(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
+  let 𝕲𝖗𝖔𝖚𝖕𝖒𝖊𝖙𝖆 = await ӄ𝖚𝖓𝖆𝖎.groupMetadata(𝖚𝖕𝖉𝖆𝖙𝖊.id);
+  `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
+  let Text;
+  let emo;
+  const Time = moment.tz(`Asia/Kolkata`).format(`DD/MM HH:mm:ss`);
+  if (F𝖚𝖑𝖑_A𝖗𝖌𝖘) {
+    Text = `📌 *Message - ${F𝖚𝖑𝖑_A𝖗𝖌𝖘}*
 *🍁 Group name - ${𝕲𝖗𝖔𝖚𝖕𝖒𝖊𝖙𝖆.subject || ""}*`;
-    } else {
-      Text = `*${𝕲𝖗𝖔𝖚𝖕𝖒𝖊𝖙𝖆.subject || ""}*`;
-    }
-    let menText = `${Text}
+  } else {
+    Text = `*${𝕲𝖗𝖔𝖚𝖕𝖒𝖊𝖙𝖆.subject || ""}*`;
+  }
+  let menText = `${Text}
 *💫 Pinged by - ${pushName}*
 *🕛 Time - ${Time}*`;
-    `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
-    for (let memNum of participants) {
-      if (groupAdmins.includes(memNum.id) === true) {
-        emo = `👑`;
-      } else {
-        emo = `▷`;
-      }
-      menText += `\n${emo} *@${memNum.id.split(`@`)[0]}*`;
+  `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
+  for (let memNum of participants) {
+    if (groupAdmins.includes(memNum.id) === true) {
+      emo = `👑`;
+    } else {
+      emo = `▷`;
     }
-    `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
-    let ppuser;
-    try {
-      ppuser = await ӄ𝖚𝖓𝖆𝖎.profilePictureUrl(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, `image`);
-    } catch {
-      ppuser = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.png`;
-    }
-    `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
-    return await ӄ𝖚𝖓𝖆𝖎.sendMessage(
-      Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
-      {
-        image: { url: ppuser },
-        caption: menText,
-        mentions: participants.map((a) => a.id),
-      },
-      { quoted: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 }
-    );
-  } catch (𝕰𝖗𝖗𝖔𝖗) {
-    const util = require(`util`);
-    Caught(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝕰𝖗𝖗𝖔𝖗);
+    menText += `\n${emo} *@${memNum.id.split(`@`)[0]}*`;
   }
+  `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
+  let ppuser;
+  try {
+    ppuser = await ӄ𝖚𝖓𝖆𝖎.profilePictureUrl(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, `image`);
+  } catch {
+    ppuser = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.png`;
+  }
+  `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
+  return await ӄ𝖚𝖓𝖆𝖎.sendMessage(
+    Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
+    {
+      image: { url: ppuser },
+      caption: menText,
+      mentions: participants.map((a) => a.id),
+    },
+    { quoted: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 }
+  );
 };
 ("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
 /*

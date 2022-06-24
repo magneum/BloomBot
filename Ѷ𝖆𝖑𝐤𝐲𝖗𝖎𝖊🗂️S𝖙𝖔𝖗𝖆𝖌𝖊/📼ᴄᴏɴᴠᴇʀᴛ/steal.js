@@ -62,47 +62,42 @@ exports.steal = async (
   mentionByTag,
   mentionByReply
 ) => {
-  try {
-    if (!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup) return await Group_Only(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
-    `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
-    if (!quoted) {
-      return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-        ӄ𝖚𝖓𝖆𝖎,
-        Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
-        `*❌ERROR:*  Could not find any sticker in context!
+  if (!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup) return await Group_Only(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
+  `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
+  if (!quoted) {
+    return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
+      ӄ𝖚𝖓𝖆𝖎,
+      Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+      `*❌ERROR:*  Could not find any sticker in context!
 
 *⚡USAGE:* ${prefix}${Final_Name} <Tag the sticker>`
-      );
-    }
-    if (F𝖚𝖑𝖑_A𝖗𝖌𝖘) {
-      anu = A𝖗𝖌𝖘.join(` `).split(`|`);
-      pack = anu[0] !== `` ? anu[0] : global.packname;
-      author = anu[1] !== `` ? anu[1] : global.author;
-    } else {
-      pack = global.packname;
-      author = global.author;
-    }
-    if (/webp/.test(mime)) {
-      let media = await quoted.download();
-      let sticker = new Sticker(media, {
-        pack: pack,
-        author: author,
-        type: StickerTypes.FULL,
-        categories: [`🤩`, `🎉`],
-        id: `12345`,
-        quality: 75,
-        background: `transparent`,
-      });
-      const buffer = await sticker.toBuffer();
-      ӄ𝖚𝖓𝖆𝖎.sendMessage(
-        Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
-        { sticker: buffer },
-        { quoted: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 }
-      );
-    }
-  } catch (𝕰𝖗𝖗𝖔𝖗) {
-    const util = require(`util`);
-    Caught(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝕰𝖗𝖗𝖔𝖗);
+    );
+  }
+  if (F𝖚𝖑𝖑_A𝖗𝖌𝖘) {
+    anu = A𝖗𝖌𝖘.join(` `).split(`|`);
+    pack = anu[0] !== `` ? anu[0] : global.packname;
+    author = anu[1] !== `` ? anu[1] : global.author;
+  } else {
+    pack = global.packname;
+    author = global.author;
+  }
+  if (/webp/.test(mime)) {
+    let media = await quoted.download();
+    let sticker = new Sticker(media, {
+      pack: pack,
+      author: author,
+      type: StickerTypes.FULL,
+      categories: [`🤩`, `🎉`],
+      id: `12345`,
+      quality: 75,
+      background: `transparent`,
+    });
+    const buffer = await sticker.toBuffer();
+    ӄ𝖚𝖓𝖆𝖎.sendMessage(
+      Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
+      { sticker: buffer },
+      { quoted: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 }
+    );
   }
 };
 ("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");

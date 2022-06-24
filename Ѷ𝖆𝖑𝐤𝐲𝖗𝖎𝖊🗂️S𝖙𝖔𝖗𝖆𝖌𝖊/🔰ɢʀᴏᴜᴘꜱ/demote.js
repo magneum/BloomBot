@@ -62,47 +62,42 @@ exports.demote = async (
   mentionByTag,
   mentionByReply
 ) => {
+  if (!isBotAdmin) return await Bot_Not_Admin(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
+  if (!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup) return await Group_Only(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
+  if (!isSenderAdmin) return await Sender_Not_Admin(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
+  `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
   try {
-    if (!isBotAdmin) return await Bot_Not_Admin(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
-    if (!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup) return await Group_Only(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
-    if (!isSenderAdmin) return await Sender_Not_Admin(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
-    `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
-    try {
-      let mention =
-        Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype == `extendedTextMessage` &&
-        Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.extendedTextMessage.contextInfo != null
-          ? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.extendedTextMessage.contextInfo.mentionedJid
-          : [];
-      let users = (await mention[0]) || Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.msg.contextInfo.participant;
-      if (!users) {
-        return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-          ӄ𝖚𝖓𝖆𝖎,
-          Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
-          `*❌ERROR:* Couldn't find any userID in context!
-
-*⚡USAGE:* ${prefix}${Final_Name} <Tag the person>`
-        );
-      }
-
-      await ӄ𝖚𝖓𝖆𝖎.groupParticipantsUpdate(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, [users], `demote`);
-      await ӄ𝖚𝖓𝖆𝖎.sendMessage(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, {
-        text: `OOPs!! looks like @${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender.split(`@`)[0]} demoted @${
-          users.split(`@`)[0]
-        }`,
-        contextInfo: { mentionedJid: [users, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender] },
-      });
-    } catch {
+    let mention =
+      Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype == `extendedTextMessage` &&
+      Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.extendedTextMessage.contextInfo != null
+        ? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.extendedTextMessage.contextInfo.mentionedJid
+        : [];
+    let users = (await mention[0]) || Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.msg.contextInfo.participant;
+    if (!users) {
       return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
         ӄ𝖚𝖓𝖆𝖎,
         Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
-        `*❌ERROR:* Please tag the user you want to demote!
+        `*❌ERROR:* Couldn't find any userID in context!
 
 *⚡USAGE:* ${prefix}${Final_Name} <Tag the person>`
       );
     }
-  } catch (𝕰𝖗𝖗𝖔𝖗) {
-    const util = require(`util`);
-    Caught(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝕰𝖗𝖗𝖔𝖗);
+
+    await ӄ𝖚𝖓𝖆𝖎.groupParticipantsUpdate(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, [users], `demote`);
+    await ӄ𝖚𝖓𝖆𝖎.sendMessage(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, {
+      text: `OOPs!! looks like @${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender.split(`@`)[0]} demoted @${
+        users.split(`@`)[0]
+      }`,
+      contextInfo: { mentionedJid: [users, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender] },
+    });
+  } catch {
+    return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
+      ӄ𝖚𝖓𝖆𝖎,
+      Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+      `*❌ERROR:* Please tag the user you want to demote!
+
+*⚡USAGE:* ${prefix}${Final_Name} <Tag the person>`
+    );
   }
 };
 ("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");

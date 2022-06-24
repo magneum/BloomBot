@@ -67,10 +67,20 @@ exports.bassboost = async (
   mentionByTag,
   mentionByReply
 ) => {
-  try {
-    if (!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup) return await Group_Only(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
-    `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
-    if (A𝖗𝖌𝖘.length === 0) {
+  if (!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup) return await Group_Only(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
+  `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
+  if (A𝖗𝖌𝖘.length === 0) {
+    return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
+      ӄ𝖚𝖓𝖆𝖎,
+      Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+      `*❌ERROR:* No query provided!
+
+*⚡USAGE:* ${prefix}${Final_Name} <song name or youtube link>`
+    );
+  }
+
+  if (A𝖗𝖌𝖘.includes("yout")) {
+    if (!YouTube_Regex.test(A𝖗𝖌𝖘[0])) {
       return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
         ӄ𝖚𝖓𝖆𝖎,
         Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -79,61 +89,46 @@ exports.bassboost = async (
 *⚡USAGE:* ${prefix}${Final_Name} <song name or youtube link>`
       );
     }
+  }
 
-    if (A𝖗𝖌𝖘.includes("yout")) {
-      if (!YouTube_Regex.test(A𝖗𝖌𝖘[0])) {
+  var FFmpegFile = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Date.now()}${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}.mp3`;
+  let RawFile = await ӄ𝖚𝖓𝖆𝖎.downloadAndSaveMediaMessage(quoted);
+  exec(
+    `ffmpeg -i ${RawFile} -af "aphaser=in_gain=0.4" ${FFmpegFile}`,
+    async (error) => {
+      cleanRF.cleanRF(Convert_From);
+      if (error) {
         return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
           ӄ𝖚𝖓𝖆𝖎,
           Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
-          `*❌ERROR:* No query provided!
-
-*⚡USAGE:* ${prefix}${Final_Name} <song name or youtube link>`
-        );
-      }
-    }
-
-    var FFmpegFile = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Date.now()}${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}.mp3`;
-    let RawFile = await ӄ𝖚𝖓𝖆𝖎.downloadAndSaveMediaMessage(quoted);
-    exec(
-      `ffmpeg -i ${RawFile} -af "aphaser=in_gain=0.4" ${FFmpegFile}`,
-      async (error) => {
-        cleanRF.cleanRF(Convert_From);
-        if (error) {
-          return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-            ӄ𝖚𝖓𝖆𝖎,
-            Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
-            `*❌ERROR:* Could not convert!
+          `*❌ERROR:* Could not convert!
 
 *⚡USAGE:* ${prefix}${Final_Name} <Song name or Youtube link>`
-          );
-        }
-
-        return await ӄ𝖚𝖓𝖆𝖎
-          .sendMessage(
-            Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
-            {
-              audio: { url: FFmpegFile },
-              contextInfo: {
-                externalAdReply: {
-                  title: "Audio FIlter",
-                  body: `ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
-                  mediaType: 2,
-                  thumbnail: await getBuffer(`./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.png`),
-                  mediaUrl: `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.png`,
-                },
-              },
-              mimetype: `audio/mpeg`,
-              fileName: `𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞.mp3`,
-            },
-            { quoted: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 }
-          )
-          .then(fs.unlinkSync(RawFile, FilteredAudio));
+        );
       }
-    );
-  } catch (𝕰𝖗𝖗𝖔𝖗) {
-    const util = require(`util`);
-    Caught(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝕰𝖗𝖗𝖔𝖗);
-  }
+
+      return await ӄ𝖚𝖓𝖆𝖎
+        .sendMessage(
+          Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
+          {
+            audio: { url: FFmpegFile },
+            contextInfo: {
+              externalAdReply: {
+                title: "Audio FIlter",
+                body: `ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+                mediaType: 2,
+                thumbnail: await getBuffer(`./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.png`),
+                mediaUrl: `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.png`,
+              },
+            },
+            mimetype: `audio/mpeg`,
+            fileName: `𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞.mp3`,
+          },
+          { quoted: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 }
+        )
+        .then(fs.unlinkSync(RawFile, FilteredAudio));
+    }
+  );
 };
 ("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
 /*

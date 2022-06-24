@@ -61,24 +61,19 @@ exports.rules = async (
   mentionByTag,
   mentionByReply
 ) => {
-  try {
-    return await Image_Button(
-      ӄ𝖚𝖓𝖆𝖎,
-      Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
-      A𝖗𝖌𝖘,
-      "./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.png",
-      `🏮 (𝐜)𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐑𝐮𝐥𝐞𝐬 🏮
+  return await Image_Button(
+    ӄ𝖚𝖓𝖆𝖎,
+    Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+    A𝖗𝖌𝖘,
+    "./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.png",
+    `🏮 (𝐜)𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐑𝐮𝐥𝐞𝐬 🏮
 
 ⚠️ Do not abuse/disrespect bot and its owner.
 ⚠️ If you want this bot in your group then contact devs.
 ⚠️ Do not call bot, if you do then you'll get blocked by bot.
 ⚠️ If you see any bug/error in bot then report it to devs in the above group chats.
 ⚠️ Do not spam bot with commands, if bot is not responding then it means either bot is offline or there's internet issue at server end.`
-    );
-  } catch (err) {
-    const util = require(`util`);
-    Caught(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, err);
-  }
+  );
 };
 ("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
 /*
