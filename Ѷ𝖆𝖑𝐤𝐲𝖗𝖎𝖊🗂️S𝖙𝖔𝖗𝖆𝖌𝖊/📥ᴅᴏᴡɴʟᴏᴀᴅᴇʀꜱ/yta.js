@@ -172,7 +172,7 @@ exports.yta = async (
           audio: { url: dl_link },
           contextInfo: {
             externalAdReply: {
-              title: `*${Found.title} _ʙʏ_ ${Found.author.name}*`,
+              title: `*🍻𝐓𝐢𝐭𝐥𝐞:* _${Found.title}_`,
               body: `ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
               mediaType: 2,
               thumbnail: await getBuffer(
