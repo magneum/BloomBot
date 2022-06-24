@@ -8,10 +8,11 @@ const moment = require(`moment-timezone`);
 const Welcome = require(`../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧆𝕯𝖆𝖙𝖆𝖇𝖆𝖘𝖊/🍃𝖒𝖔𝖓𝖌𝖔/setwelcome`);
 const group_participants = async (update, ӄ𝖚𝖓𝖆𝖎) => {
   let 𝖕𝖋𝖕𝖀𝖘𝖊𝖗;
+  let GrpMETA;
+  let userName;
   try {
     let GrpMETA = await ӄ𝖚𝖓𝖆𝖎.groupMetadata(update.id);
     let userName = await ӄ𝖚𝖓𝖆𝖎.getName(update.participants[0]);
-
     𝖕𝖋𝖕𝖀𝖘𝖊𝖗 = await ӄ𝖚𝖓𝖆𝖎.profilePictureUrl(update.participants[0], "image");
   } catch {
     𝖕𝖋𝖕𝖀𝖘𝖊𝖗 = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊_𝖕𝖋𝖕𝖀𝖘𝖊𝖗.png`;
