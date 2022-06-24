@@ -182,7 +182,7 @@ isCommand &&
 !MEMBER_E.includes(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender)
 ) {
 const { port_A } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧥H𝖔𝖑𝖘𝖙𝖊𝖗/port_A");
-await port_A(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
+await port_A(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, chatUpdate, Ѷ𝖎𝖔𝖓);
 } else {
 const { port_B } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧥H𝖔𝖑𝖘𝖙𝖊𝖗/port_B");
 await port_B(
