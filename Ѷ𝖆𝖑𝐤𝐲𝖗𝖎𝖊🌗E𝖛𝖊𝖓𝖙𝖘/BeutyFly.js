@@ -13,11 +13,6 @@ Kolor.bgYellowBright(`> 𝕮𝖔𝖒𝖒𝖆𝖓𝖉 <`),
 Kolor.black(Kolor.blue(budy || Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype)) + ""
 );
 console.log(
-Kolor.bgRedBright(`> 𝕾𝖊𝖓𝖉𝖊𝖗 <`),
-Kolor.green(pushName),
-Kolor.yellow(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender) + ""
-);
-console.log(
 Kolor.bgCyanBright(`> 𝕮𝖔𝖓𝖙𝖊𝖓𝖙 <`),
 Kolor.green(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup ? pushName : `Private Chat`, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID)
 );
