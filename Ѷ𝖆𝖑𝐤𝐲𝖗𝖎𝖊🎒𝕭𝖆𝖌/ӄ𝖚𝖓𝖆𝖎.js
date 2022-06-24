@@ -548,6 +548,7 @@ END:VCARD`,
   `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
   ӄ𝖚𝖓𝖆𝖎.ev.on("connection.update", async (update) => {
     try {
+      console.log(update);
       const connection_update = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌗E𝖛𝖊𝖓𝖙𝖘/connection_update");
       await connection_update.Vcnup(update, startӄ𝖚𝖓𝖆𝖎, ӄ𝖚𝖓𝖆𝖎);
     } catch (𝕰𝖗𝖗𝖔𝖗) {
@@ -556,6 +557,7 @@ END:VCARD`,
   });
   ӄ𝖚𝖓𝖆𝖎.ev.on("creds.update", async (update) => {
     try {
+      console.log(update);
       await saveCreds(update);
     } catch (𝕰𝖗𝖗𝖔𝖗) {
       return console.log(chalk.redBright(𝕰𝖗𝖗𝖔𝖗));
