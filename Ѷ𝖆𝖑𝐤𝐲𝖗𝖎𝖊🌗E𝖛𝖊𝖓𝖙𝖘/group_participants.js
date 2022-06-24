@@ -8,9 +8,10 @@ const moment = require(`moment-timezone`);
 const Welcome = require(`../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧆𝕯𝖆𝖙𝖆𝖇𝖆𝖘𝖊/🍃𝖒𝖔𝖓𝖌𝖔/setwelcome`);
 const group_participants = async (update, ӄ𝖚𝖓𝖆𝖎) => {
   let 𝖕𝖋𝖕𝖀𝖘𝖊𝖗;
-  let GrpMETA = await ӄ𝖚𝖓𝖆𝖎.groupMetadata(update.id);
-  let name = await ӄ𝖚𝖓𝖆𝖎.getName(update.participants[0]);
   try {
+    let GrpMETA = await ӄ𝖚𝖓𝖆𝖎.groupMetadata(update.id);
+    let userName = await ӄ𝖚𝖓𝖆𝖎.getName(update.participants[0]);
+
     𝖕𝖋𝖕𝖀𝖘𝖊𝖗 = await ӄ𝖚𝖓𝖆𝖎.profilePictureUrl(update.participants[0], "image");
   } catch {
     𝖕𝖋𝖕𝖀𝖘𝖊𝖗 = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊_𝖕𝖋𝖕𝖀𝖘𝖊𝖗.png`;
@@ -31,7 +32,7 @@ const group_participants = async (update, ӄ𝖚𝖓𝖆𝖎) => {
             caption: `*━━━━『 🥞𝐖𝐞𝐥𝐜𝐨𝐦𝐞🥞 』━━━━* 
 
 ╔══「 𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐏𝐫𝐨𝐭𝐨® 」
-║ *💡 ɴᴀᴍᴇ: ${name || "No_Name"}
+║ *💡 ɴᴀᴍᴇ: ${userName || "No_Name"}
 ║ *🎐 ɢʀᴏᴜᴘ:* ${GrpMETA.subject || ""}
 ║ *🍀 ᴍᴀᴅᴇ:* ${moment(`${GrpMETA.creation}` * 1000)
               .tz(`Asia/Kolkata`)
