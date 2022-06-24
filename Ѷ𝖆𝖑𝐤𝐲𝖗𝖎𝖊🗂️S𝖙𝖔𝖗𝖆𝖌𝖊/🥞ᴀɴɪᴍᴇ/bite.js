@@ -79,7 +79,7 @@ exports.bite = async (
     const ʀᴇꜱᴘᴏɴꜱᴇ = await axios.get(ꜰɪɴᴀʟʟɪɴᴋ, {
       responseType: "arraybuffer",
     });
-    const ʀᴇꜱᴘᴏɴꜱᴇʙᴜꜰꜰᴇʀ = Buffer.from(ʀᴇꜱᴘᴏɴꜱᴇ.data, "utf-8");
+    const ʀᴇꜱᴘᴏɴꜱᴇʙᴜꜰꜰᴇʀ = Buffer.from(ʀᴇꜱᴘᴏɴꜱᴇ.data);
     const ʀᴇꜱᴘᴏɴꜱᴇɢɪꜰ = await GIFBufferToVideoBuffer(ʀᴇꜱᴘᴏɴꜱᴇʙᴜꜰꜰᴇʀ);
     `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
     if (isReply) {
