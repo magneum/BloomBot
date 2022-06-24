@@ -24,6 +24,7 @@ const { Character } = require(`mailist`);
 const moment = require(`moment-timezone`);
 const Carbon = require(`unofficial-carbon-now`);
 const { exec, execSync } = require(`child_process`);
+const animals = require(`../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊❗𝕭𝖏𝖘𝖔𝖓/animals.json`);
 const Zoology = require(`../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧆𝕯𝖆𝖙𝖆𝖇𝖆𝖘𝖊/🍃𝖒𝖔𝖓𝖌𝖔/zoo`);
 const { N𝖊𝖊𝖉__A𝖗𝖌𝖘 } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌀B𝖚𝖙𝖙𝖔𝖓𝖘/N𝖊𝖊𝖉__A𝖗𝖌𝖘");
 const { Sticker, StickerTypes } = require(`wa-sticker-formatter`);
@@ -33,7 +34,6 @@ const { Image_Button } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌀B𝖚�
 const { Video_Button } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌀B𝖚𝖙𝖙𝖔𝖓𝖘/Video_Button");
 const { Bot_Not_Admin } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧭S𝖜𝖎𝖙𝖈𝖍/Bot_Not_Admin");
 const { Sender_Not_Admin } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧭S𝖜𝖎𝖙𝖈𝖍/Sender_Not_Admin");
-const animals = require(`../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧆𝕯𝖆𝖙𝖆𝖇𝖆𝖘𝖊/🍃𝖒𝖔𝖓𝖌𝖔/𝖀𝖘𝖊𝖗🍣𝖒𝖔𝖓𝖌𝖔/animals.json`);
 `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
 var Present_Path = require(`path`);
 var Script_Name = Present_Path.basename(__filename);
