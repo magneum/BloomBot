@@ -573,7 +573,6 @@ END:VCARD`,
   });
   ӄ𝖚𝖓𝖆𝖎.ev.on("group-participants.update", async (update) => {
     try {
-      console.log(update);
       const group_participants = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌗E𝖛𝖊𝖓𝖙𝖘/group_participants");
       await group_participants.Vgrpns(update, ӄ𝖚𝖓𝖆𝖎);
     } catch (𝕰𝖗𝖗𝖔𝖗) {
@@ -582,7 +581,6 @@ END:VCARD`,
   });
   ӄ𝖚𝖓𝖆𝖎.ws.on("CB:call", async (update) => {
     try {
-      console.log(update);
       const call_updates = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌗E𝖛𝖊𝖓𝖙𝖘/call_updates");
       await call_updates.Vclup(ӄ𝖚𝖓𝖆𝖎, update);
     } catch (𝕰𝖗𝖗𝖔𝖗) {
