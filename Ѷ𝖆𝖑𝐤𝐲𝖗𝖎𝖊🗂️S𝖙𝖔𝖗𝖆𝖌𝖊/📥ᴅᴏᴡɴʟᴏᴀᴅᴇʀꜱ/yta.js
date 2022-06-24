@@ -118,29 +118,17 @@ exports.yta = async (
           Found.thumbnail,
           `❌𝗘𝗿𝗿𝗼𝗿: _Choose Smaller Audio less then 30mins!_
 
-⭕️𝐘𝐨𝐮𝐓𝐮𝐛𝐞 𝐀𝐈: ${Found.title}
+          ⭕️𝐘𝐨𝐮𝐓𝐮𝐛𝐞 𝐀𝐈: ${Found.title}
 🍻𝐓𝐢𝐭𝐥𝐞: ${Found.title}
 ⏰𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧: ${Found.timestamp}`
         );
       }
       `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
-      let dl_link;
-      let filesizeF;
-      try {
-        let { dl_link, thumb, title, filesize, filesizeF } = await yta_var(
-          Found.url,
-          "en136"
-        );
-        dl_link = dl_link;
-        filesizeF = filesizeF;
-      } catch {
-        let { dl_link, thumb, title, filesize, filesizeF } = await yta_var(
-          Found.url,
-          "id4"
-        );
-        dl_link = dl_link;
-        filesizeF = filesizeF;
-      }
+      let Media = await yta(Found.url, "128kbps");
+      let { dl_link, thumb, title, filesize, filesizeF } = await yta_var(
+        Found.url,
+        "en136"
+      );
       `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
       let DirectFile;
       try {
@@ -164,29 +152,30 @@ exports.yta = async (
 📜𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${Found.description}
 
 
-🌐If File Doesn't Come then press this 👇🏽‍
+*👇🏽‍𝐏𝐫𝐞𝐬𝐬 𝐓𝐡𝐢𝐬👇🏽‍*
 _${DirectFile}_`
       );
       `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
-      let Media = await yta(Found.url, "128kbps");
-      return await ӄ𝖚𝖓𝖆𝖎.sendMessage(
-        Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
-        {
-          audio: { url: Media.dl_link },
-          contextInfo: {
-            externalAdReply: {
-              title: `*🍻𝐓𝐢𝐭𝐥𝐞:* _${Found.title}_`,
-              body: `ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
-              mediaType: 2,
-              thumbnail: await getBuffer(Found.thumbnail),
-              mediaUrl: Found.thumbnail,
+      try {
+        return await ӄ𝖚𝖓𝖆𝖎.sendMessage(
+          Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
+          {
+            audio: { url: Media.dl_link },
+            contextInfo: {
+              externalAdReply: {
+                title: `*🍻𝐓𝐢𝐭𝐥𝐞:* _${Found.title}_`,
+                body: `ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+                mediaType: 2,
+                thumbnail: await getBuffer(Found.thumbnail),
+                mediaUrl: Found.thumbnail,
+              },
             },
+            mimetype: `audio/mpeg`,
+            fileName: `${Found.title}.mp3`,
           },
-          mimetype: `audio/mpeg`,
-          fileName: `${Found.title}.mp3`,
-        },
-        { quoted: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 }
-      );
+          { quoted: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 }
+        );
+      } catch {}
     });
   } catch (𝕰𝖗𝖗𝖔𝖗) {
     const util = require(`util`);
