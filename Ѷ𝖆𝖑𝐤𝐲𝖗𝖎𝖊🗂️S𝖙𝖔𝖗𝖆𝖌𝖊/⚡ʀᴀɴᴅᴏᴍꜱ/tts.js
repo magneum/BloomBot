@@ -103,7 +103,7 @@ ${prefix}${Final_Name} <text> | <language code>`.format(text.length)
     return await ᴋᴜɴᴀɪ.sendMessage(
       Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
       {
-        audio: { url: Media.dl_link },
+        audio: { url: Media },
         contextInfo: {
           externalAdReply: {
             title: `🔥𝐓𝐞𝐱𝐭 𝟐 𝐒𝐩𝐞𝐞𝐜𝐡`,
