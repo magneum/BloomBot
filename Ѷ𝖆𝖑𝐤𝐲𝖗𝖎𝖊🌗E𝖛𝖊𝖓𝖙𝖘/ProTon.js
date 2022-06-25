@@ -21,8 +21,10 @@ ServerID: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
 await newServerID.save().catch((error) => console.log(error));
 `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
 await ᴋᴜɴᴀɪ
-.sendMessage(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, {
-image: { url: "./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊_FIsh.png" },
+.sendMessage(
+Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
+{
+image: { url: "./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊_White.png" },
 caption: `*⦓ ©𝐕𝐥𝐤𝐲𝐫𝐞 ༒ 𝐖𝐞𝐥𝐜𝐨𝐦𝐞𝐫 ⦔* 
 👋🏻𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚, To Admins Of This Group, Some Of Your Members Requested Our Valkyrie HQ to Add Our Bot In This Group.
 Have Fun!
@@ -45,7 +47,10 @@ type: 1,
 },
 ],
 headerType: 4,
-})
+mentions: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.participants.map((a) => a.id),
+},
+{ quoted: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 }
+)
 .catch((error) => console.log(error));
 `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
 await Welcome.findOne(
