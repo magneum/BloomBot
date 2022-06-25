@@ -184,9 +184,9 @@ if (
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isCommand &&
 !Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF &&
 !Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body.includes("h") && 
+!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body.includes("how") && 
 !Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body.includes("help") && 
 !Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body.includes("menu") && 
-!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body.includes("how") && 
 !Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body.includes("support") && 
 !MeA.includes(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender) &&
 !MeB.includes(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender) &&
