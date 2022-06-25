@@ -96,7 +96,7 @@ exports.sticker = async (
       return Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.reply(`🕐 Cannot fetch videos longer than *21 Seconds*`);
     }
     let Media = await quoted.download();
-    let sticker = new Sticker(media, {
+    let Sticker = new Sticker(Media, {
       pack: F𝖚𝖑𝖑_A𝖗𝖌𝖘 || "ᴋʀʏᴢᴏɴᴇ",
       author: "Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊",
       type: StickerTypes.FULL,
