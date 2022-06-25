@@ -106,6 +106,9 @@ if (Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message && !Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.fr
 await git.fetch();
 var newCommits = await git.log(["𝐕𝐥𝐤𝐲𝐫𝐞📡𝐏𝐫𝐨𝐭𝐨®..origin/𝐕𝐥𝐤𝐲𝐫𝐞📡𝐏𝐫𝐨𝐭𝐨®"]);
 if (newCommits.total != 0) {
+
+
+  
 var h𝖛𝖑𝖐𝖕 = require("child_process").exec(
 `heroku ps:restart worker -a ${HEROKU_APP_NAME}`
 );
