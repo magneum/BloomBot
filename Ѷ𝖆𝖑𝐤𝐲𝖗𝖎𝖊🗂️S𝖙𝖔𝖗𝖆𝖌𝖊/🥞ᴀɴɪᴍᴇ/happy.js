@@ -18,7 +18,7 @@ let hxz = require(`hxz-api`);
 let chalk = require(`chalk`);
 let db = require(`quick.db`);
 let axios = require(`axios`);
-let canvacord = require(`canvacord`);``
+let canvacord = require(`canvacord`);
 let ᴀɴɪᴍᴇ = require(`anime-actions`);
 let FFmpeg = require(`fluent-ffmpeg`);
 let ᴀɴɪᴍᴇ2 = require(`anime-actions`);
@@ -93,7 +93,11 @@ exports.happy = async (
         `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
         if (isReply) {
           let ʀᴇᴘʟɪᴇᴅ =
-            Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.extendedTextMessage.contextInfo.participant;
+            Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype == "extendedTextMessage" &&
+            Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.extendedTextMessage.contextInfo != null
+              ? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.extendedTextMessage.contextInfo.participant ||
+                ""
+              : "";
           await ᴋᴜɴᴀɪ
             .sendMessage(
               Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
