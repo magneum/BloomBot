@@ -328,6 +328,7 @@ os.totalmem()
 ║シ︎  ${prefix}lyrics
 ║シ︎  ${prefix}pinterest
 ║シ︎  ${prefix}pokemon
+║シ︎  ${prefix}pokedex
 ║シ︎  ${prefix}wallpaper
 ║シ︎  ${prefix}yts
 ║シ︎  ${prefix}ytsearch
