@@ -204,6 +204,14 @@ os.totalmem()
 ║シ︎  ${prefix}subreddit
 ║シ︎  ${prefix}ship
 ║シ︎  ${prefix}waifu
+║シ︎  ${prefix}tts
+║シ︎  ${prefix}gtts
+║シ︎  ${prefix}text2speech
+║シ︎  ${prefix}fun
+║シ︎  ${prefix}joke
+║シ︎  ${prefix}funny
+║シ︎  ${prefix}laugh
+║シ︎  ${prefix}dadjoke
 ╚═══════╝
 
 ╔══『 💰𝗚𝗮𝗺𝗲𝘀💰 』
