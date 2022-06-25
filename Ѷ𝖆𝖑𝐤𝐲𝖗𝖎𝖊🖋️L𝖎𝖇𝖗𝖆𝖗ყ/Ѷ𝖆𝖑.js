@@ -21,7 +21,9 @@ module.exports = ᴋᴜɴᴀɪ = async (ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗�
         ID: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender,
       },
       async (𝕰𝖗𝖗𝖔𝖗, Cool) => {
-        console.log(Cool);
+        try {
+          console.log(Cool);
+        } catch {}
         if (𝕰𝖗𝖗𝖔𝖗) return Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝕰𝖗𝖗𝖔𝖗);
         if (!Cool) {
           var newHalt = new Halt({
@@ -182,15 +184,31 @@ module.exports = ᴋᴜɴᴀɪ = async (ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗�
         async (𝕰𝖗𝖗𝖔𝖗, userGCheck) => {
           if (𝕰𝖗𝖗𝖔𝖗) return console.log(𝕰𝖗𝖗𝖔𝖗);
           if (userBCheck && userGCheck) return;
-          await SlowDown(Date.now());
           ("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
           if (Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isCommand && Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup) {
+            await SlowDown(Date.now());
             let { BeutyFly } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌗E𝖛𝖊𝖓𝖙𝖘/BeutyFly");
             await BeutyFly(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, chalk);
             let MeA = [];
+            // let MeB = [];
+            // let MeC = [];
+            // let MeD = [];
+            // let MeE = [];
             let MeTA = await ᴋᴜɴᴀɪ.groupMetadata("120363020792949649@g.us");
+            // let MeTB = await ᴋᴜɴᴀɪ.groupMetadata("120363024871653603@g.us");
+            // let MeTC = await ᴋᴜɴᴀɪ.groupMetadata("120363042762307739@g.us");
+            // let MeTD = await ᴋᴜɴᴀɪ.groupMetadata("120363022161584857@g.us");
+            // let MeTE = await ᴋᴜɴᴀɪ.groupMetadata("120363039223842047@g.us");
             for (let i = 0; i < MeTA.participants.length; i++)
               MeA[i] = MeTA.participants[i].id;
+            // for (let i = 0; i < MeTB.participants.length; i++)
+            // MeB[i] = MeTB.participants[i].id;
+            // for (let i = 0; i < MeTC.participants.length; i++)
+            // MeC[i] = MeTC.participants[i].id;
+            // for (let i = 0; i < MeTD.participants.length; i++)
+            // MeD[i] = MeTD.participants[i].id;
+            // for (let i = 0; i < MeTE.participants.length; i++)
+            // MeE[i] = MeTE.participants[i].id;
             ("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
             if (
               !Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.fromMe &&
@@ -201,6 +219,10 @@ module.exports = ᴋᴜɴᴀɪ = async (ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗�
               !Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body.includes("menu") &&
               !Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body.includes("support") &&
               !MeA.includes(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender)
+              //   !MeB.includes(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender) &&
+              //   !MeC.includes(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender) &&
+              //   !MeD.includes(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender) &&
+              //   !MeE.includes(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender)
             ) {
               return await ᴋᴜɴᴀɪ.sendMessage(
                 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
@@ -208,13 +230,13 @@ module.exports = ᴋᴜɴᴀɪ = async (ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗�
                   contextInfo: { mentionedJid: [Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender] },
                   image: { url: "./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.png" },
                   caption: `╔══『 𝐏𝐫𝐨𝐟𝐢𝐥𝐞𝐫® 』
-║ *❣️ ɴᴀᴍᴇ:* ${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.pushName || "No_Name"}
-║ *⚡ ɪᴅ:* ${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID.split("@")[0]}
-╚═══════╝
-
-
-*❗ 𝐓𝐨 𝐔𝐬𝐞 𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐉𝐨𝐢𝐧 𝐀𝐧𝐲 & 𝐠𝐞𝐭 𝐀𝐮𝐭𝐨 𝐕𝐞𝐫𝐢𝐟𝐢𝐞𝐝 ❗*
-*𝗚roup⛩️:* chat.whatsapp.com/Gn50KMVAJKZHYJeaGhs3UV`,
+          ║ *❣️ ɴᴀᴍᴇ:* ${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.pushName || "No_Name"}
+          ║ *⚡ ɪᴅ:* ${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID.split("@")[0]}
+          ╚═══════╝
+          
+          
+          *❗ 𝐓𝐨 𝐔𝐬𝐞 𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐉𝐨𝐢𝐧 𝐀𝐧𝐲 & 𝐠𝐞𝐭 𝐀𝐮𝐭𝐨 𝐕𝐞𝐫𝐢𝐟𝐢𝐞𝐝 ❗*
+          *𝗚roup⛩️:* chat.whatsapp.com/Gn50KMVAJKZHYJeaGhs3UV`,
                   footer: "*⦓ ⒸѶ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 ⦔*\nᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ",
                   buttons: [
                     {
