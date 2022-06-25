@@ -182,7 +182,7 @@ MeE[i] = MeTE.participants[i].id;
 if (
 !Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.fromMe &&
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isCommand &&
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isCommand &&
+Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body.includes("help")
 !Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF &&
 !MeA.includes(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender) &&
 !MeB.includes(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender) &&
