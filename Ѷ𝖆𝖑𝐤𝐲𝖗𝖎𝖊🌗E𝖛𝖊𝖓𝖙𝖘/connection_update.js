@@ -11,13 +11,12 @@ if (connection === "close") {
 if (
 lastDisconnect.error?.output?.statusCode !== DisconnectReason.loggedOut
 ) {
-await startӄ𝖗𝖞ӄ𝖓𝖟();
+await startᴋᴜɴᴀɪ().catch((e) => console.log(e));
 } else {
 console.log("❌𝐄𝐫𝐫𝐨𝐫꧂ Connection closed. You are logged out.");
 process.exit(0);
 }
 }
-("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
 if (qr) {
 QR_GENERATE = qr;
 }
