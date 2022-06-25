@@ -283,12 +283,6 @@ os.totalmem()
 ╚═══════╝
 
 ╔══『 🛍️𝗦𝘁𝗼𝗿𝗲🛍️ 』
-║シ︎  ${prefix}buy basic 
-║シ︎  ${prefix}buy bronze 
-║シ︎  ${prefix}buy silver 
-║シ︎  ${prefix}buy gold 
-║シ︎  ${prefix}buy platinum 
-║シ︎  ${prefix}buy diamond
 ║シ︎  ${prefix}buy sword
 ║シ︎  ${prefix}buy laptop
 ║シ︎  ${prefix}buy charm
