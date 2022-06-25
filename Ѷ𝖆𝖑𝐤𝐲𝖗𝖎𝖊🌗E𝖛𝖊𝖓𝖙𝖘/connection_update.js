@@ -10,7 +10,7 @@ let { lastDisconnect, connection, qr } = update;
 if (connection === `close`) {
 lastDisconnect.error?.output?.statusCode !== DisconnectReason.loggedOut
 ? startᴋᴜɴᴀɪ()
-: console.log(chalk.bgRed("💡𝐈𝐧𝐟𝐨꧂ Whatsapp Kicked Session..."));
+: console.log(chalk.bgRed("💡𝐈𝐧𝐟𝐨: Whatsapp Kicked Session..."));
 }
 if (qr) {
 QR_GENERATE = qr;
