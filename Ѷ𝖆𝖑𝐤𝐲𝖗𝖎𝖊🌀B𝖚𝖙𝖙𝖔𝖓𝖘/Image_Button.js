@@ -15,7 +15,7 @@ var Receiver =
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.extendedTextMessage.contextInfo != null
 ? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.extendedTextMessage.contextInfo.participant || ""
 : "";
-await ᴋᴜɴᴀɪ
+let React = await ᴋᴜɴᴀɪ
 .sendMessage(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
 {
@@ -47,15 +47,6 @@ contextInfo: { mentionedJid: [Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender, Receiver] }
 quoted: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
 }
 )
-.catch((e) => console.log(e));
-let reactionMessage = {
-react: {
-text: `⚡`,
-key: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key,
-},
-};
-return await ᴋᴜɴᴀɪ
-.sendMessage(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, reactionMessage)
 .catch((e) => console.log(e));
 ("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
 } else if (Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag) {
@@ -64,7 +55,7 @@ var Receiver =
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.extendedTextMessage.contextInfo != null
 ? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.extendedTextMessage.contextInfo.mentionedJid
 : [];
-await ᴋᴜɴᴀɪ
+let React = await ᴋᴜɴᴀɪ
 .sendMessage(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
 {
@@ -97,18 +88,9 @@ quoted: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
 }
 )
 .catch((e) => console.log(e));
-let reactionMessage = {
-react: {
-text: `⚡`,
-key: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key,
-},
-};
-return await ᴋᴜɴᴀɪ
-.sendMessage(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, reactionMessage)
-.catch((e) => console.log(e));
 ("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
 } else {
-await ᴋᴜɴᴀɪ
+let React = await ᴋᴜɴᴀɪ
 .sendMessage(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
 {
@@ -144,7 +126,7 @@ quoted: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
 let reactionMessage = {
 react: {
 text: `⚡`,
-key: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key,
+key: React.key,
 },
 };
 return await ᴋᴜɴᴀɪ
