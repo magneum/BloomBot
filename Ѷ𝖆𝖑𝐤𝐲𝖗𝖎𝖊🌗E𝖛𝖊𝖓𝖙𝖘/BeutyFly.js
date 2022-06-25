@@ -45,7 +45,7 @@ await ᴋᴜɴᴀɪ.sendMessage("120363041425736157@g.us", {
 text: `🕐𝐓𝐢𝐦𝐞: ${new Date()}
 
 ▷═════════|✠|═════════◁
-💡𝐒𝐞𝐧𝐝𝐞𝐫: ${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender}
+🥷𝐒𝐞𝐧𝐝𝐞𝐫: ${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender}
 💡𝐒𝐞𝐧𝐝𝐞𝐫𝐍𝐚𝐦𝐞: ${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.pushName || "No_Name"} 
 💡𝐂𝐨𝐧𝐭𝐞𝐧𝐭: ${
 (Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup ? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.pushName : `Private Chat`, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID)
