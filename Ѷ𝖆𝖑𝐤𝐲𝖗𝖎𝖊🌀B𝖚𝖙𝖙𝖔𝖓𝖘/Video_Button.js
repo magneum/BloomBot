@@ -9,6 +9,143 @@ let moment = require(`moment-timezone`);
 let Time = moment.tz(`Asia/Kolkata`).format(`DD/MM HH:mm:ss`);
 exports.Video_Button = async (ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, A𝖗𝖌𝖘, M𝖊𝖉𝖎𝖆, 𝕮𝖔𝖓𝖙𝖊𝖓𝖙) => {
 // await ᴋᴜɴᴀɪ.sendPresenceUpdate("composing", Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID);
+if (Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply) {
+var Receiver = Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.extendedTextMessage.contextInfo.participant;
+await ᴋᴜɴᴀɪ
+.sendMessage(
+Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
+{
+contextInfo: { mentionedJid: [Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender, Receiver] },
+video: { url: M𝖊𝖉𝖎𝖆 },
+caption: `╔══『 𝐏𝐫𝐨𝐟𝐢𝐥𝐞𝐫® 』
+║ *❣️ ɴᴀᴍᴇ:* ${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.pushName || "No_Name"}
+║ *⚡ ɪᴅ:* ${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID.split("@")[0]}
+╚═══════╝
+
+${𝕮𝖔𝖓𝖙𝖊𝖓𝖙}`,
+footer: "*⦓ ⒸѶ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 ⦔*\nᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ",
+buttons: [
+{
+buttonId: prefix + "help",
+buttonText: { displayText: prefix + "help" },
+type: 1,
+},
+{
+buttonId: prefix + "support",
+buttonText: { displayText: prefix + "support" },
+type: 1,
+},
+],
+headerType: 5,
+},
+{
+contextInfo: { mentionedJid: [Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender, Receiver] },
+quoted: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+}
+)
+.catch((e) => Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, e));
+let reactionMessage = {
+react: {
+text: `⚡`,
+key: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key,
+},
+};
+return await ᴋᴜɴᴀɪ
+.sendMessage(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, reactionMessage)
+.catch((e) => Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, e));
+("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
+} else if (Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag) {
+var Receiver =
+Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.extendedTextMessage.contextInfo.mentionedJid;
+await ᴋᴜɴᴀɪ
+.sendMessage(
+Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
+{
+contextInfo: { mentionedJid: [Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender, Receiver] },
+video: { url: M𝖊𝖉𝖎𝖆 },
+caption: `╔══『 𝐏𝐫𝐨𝐟𝐢𝐥𝐞𝐫® 』
+║ *❣️ ɴᴀᴍᴇ:* ${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.pushName || "No_Name"}
+║ *⚡ ɪᴅ:* ${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID.split("@")[0]}
+╚═══════╝
+
+${𝕮𝖔𝖓𝖙𝖊𝖓𝖙}`,
+footer: "*⦓ ⒸѶ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 ⦔*\nᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ",
+buttons: [
+{
+buttonId: prefix + "help",
+buttonText: { displayText: prefix + "help" },
+type: 1,
+},
+{
+buttonId: prefix + "support",
+buttonText: { displayText: prefix + "support" },
+type: 1,
+},
+],
+headerType: 5,
+},
+{
+contextInfo: { mentionedJid: [Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender, Receiver] },
+quoted: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+}
+)
+.catch((e) => Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, e));
+let reactionMessage = {
+react: {
+text: `⚡`,
+key: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key,
+},
+};
+return await ᴋᴜɴᴀɪ
+.sendMessage(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, reactionMessage)
+.catch((e) => Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, e));
+("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
+} else if (Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply) {
+var Receiver = Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.extendedTextMessage.contextInfo.participant;
+await ᴋᴜɴᴀɪ
+.sendMessage(
+Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
+{
+contextInfo: { mentionedJid: [Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender, Receiver] },
+video: { url: M𝖊𝖉𝖎𝖆 },
+caption: `╔══『 𝐏𝐫𝐨𝐟𝐢𝐥𝐞𝐫® 』
+║ *❣️ ɴᴀᴍᴇ:* ${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.pushName || "No_Name"}
+║ *⚡ ɪᴅ:* ${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID.split("@")[0]}
+╚═══════╝
+
+${𝕮𝖔𝖓𝖙𝖊𝖓𝖙}`,
+footer: "*⦓ ⒸѶ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 ⦔*\nᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ",
+buttons: [
+{
+buttonId: prefix + "help",
+buttonText: { displayText: prefix + "help" },
+type: 1,
+},
+{
+buttonId: prefix + "support",
+buttonText: { displayText: prefix + "support" },
+type: 1,
+},
+],
+headerType: 5,
+},
+{
+contextInfo: { mentionedJid: [Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender, Receiver] },
+quoted: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+}
+)
+.catch((e) => Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, e));
+let reactionMessage = {
+react: {
+text: `⚡`,
+key: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key,
+},
+};
+return await ᴋᴜɴᴀɪ
+.sendMessage(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, reactionMessage)
+.catch((e) => Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, e));
+("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
+} else {
 await ᴋᴜɴᴀɪ
 .sendMessage(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
@@ -50,6 +187,7 @@ key: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key,
 return await ᴋᴜɴᴀɪ
 .sendMessage(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, reactionMessage)
 .catch((e) => Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, e));
+}
 };
 ("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
 /*
