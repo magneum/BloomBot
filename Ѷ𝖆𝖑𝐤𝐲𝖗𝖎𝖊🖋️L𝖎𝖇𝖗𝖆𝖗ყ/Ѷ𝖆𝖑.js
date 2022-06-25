@@ -106,14 +106,10 @@ module.exports = ᴋᴜɴᴀɪ = async (ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗�
     await git.fetch();
     var newCommits = await git.log(["𝐕𝐥𝐤𝐲𝐫𝐞📡𝐏𝐫𝐨𝐭𝐨®..origin/𝐕𝐥𝐤𝐲𝐫𝐞📡𝐏𝐫𝐨𝐭𝐨®"]);
     if (newCommits.total != 0) {
-      await ᴋᴜɴᴀɪ.sendMessage(
-        Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
-        {
-          text: "*💡Valkyrie Is Now Updating!\nWait For 30-40seconds...*",
-          mentions: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.participants.map((a) => a.id),
-        },
-        { quoted: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 }
-      );
+      await ᴋᴜɴᴀɪ.sendMessage(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, {
+        text: "*💡Valkyrie Is Now Updating!\nWait For 30-40seconds...*",
+        mentions: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.participants.map((a) => a.id),
+      });
       var h𝖛𝖑𝖐𝖕 = require("child_process").exec(
         `heroku ps:restart worker -a ${HEROKU_APP_NAME}`
       );
