@@ -33,7 +33,7 @@ await ᴋᴜɴᴀɪ.sendReadReceipt(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, Ѷ�
 console.log("💡𝐢𝐬𝐒𝐞𝐧𝐝𝐞𝐫𝐀𝐝𝐦𝐢𝐧: ", Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderAdmin);
 console.log("💡𝐢𝐬𝐒𝐞𝐧𝐝𝐞𝐫𝐓𝐔𝐅: ", Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF);
 let 𝕲𝖗𝖔𝖚𝖕𝖒𝖊𝖙𝖆 = await Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.groupMetadata;
-console.log("💡𝐆𝐫𝐨𝐮𝐩𝐍𝐚𝐦𝐞: ", 𝕲𝖗𝖔𝖚𝖕𝖒𝖊𝖙𝖆.subject || "");
+console.log("🧀𝐆𝐫𝐨𝐮𝐩𝐍𝐚𝐦𝐞: ", 𝕲𝖗𝖔𝖚𝖕𝖒𝖊𝖙𝖆.subject || "");
 if (HEROKU === undefined) {
 console.clear();
 console.log(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
