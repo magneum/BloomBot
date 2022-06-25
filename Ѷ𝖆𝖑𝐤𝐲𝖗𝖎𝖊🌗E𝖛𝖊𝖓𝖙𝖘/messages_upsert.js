@@ -6,7 +6,20 @@
 require(`../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/𝕷𝖆ყO𝖚𝖙`);
 require(`../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/Ѷ𝖆𝖑.js`);
 let git = require(`simple-git`)();
-let Kolor = require("chalk");
+await git.fetch();
+var newCommits = await git.log(["𝐕𝐥𝐤𝐲𝐫𝐞📡𝐏𝐫𝐨𝐭𝐨®..origin/𝐕𝐥𝐤𝐲𝐫𝐞📡𝐏𝐫𝐨𝐭𝐨®"]);
+if (newCommits.total != 0) {
+  var h𝖛𝖑𝖐𝖕 = require("child_process").exec(
+    `heroku ps:restart worker -a ${HEROKU_APP_NAME}`
+  );
+  h𝖛𝖑𝖐𝖕.stderr.pipe(process.stderr);
+  h𝖛𝖑𝖐𝖕.on("exit", function (code, signal) {
+    if (code) console.log("📟 𝐕𝐥𝐤𝐲𝐫𝐞 𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐂𝐨𝐝𝐞:", Kolor.red(code));
+    if (signal)
+      console.log("📶 𝐕𝐥𝐤𝐲𝐫𝐞 𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐒𝐢𝐠𝐧𝐚𝐥:", Kolor.blue(signal));
+    process.exitCode = 1;
+  });
+}
 let { smsg } = require(`../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/ɴᴇᴄᴛᴏʀ`);
 let messages_upsert = async (chatUpdate, Ѷ𝖎𝖔𝖓, ᴋᴜɴᴀɪ) => {
 try {
