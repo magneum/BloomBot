@@ -4,15 +4,15 @@
 */
 ("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
 require(`./𝕷𝖆ყO𝖚𝖙`);
-let { proto, getContentType } = require("@adiwajshing/baileys");
-let chalk = require("chalk");
 let fs = require("fs");
-let { unlink } = require("fs").promises;
-let axios = require("axios");
-let moment = require("moment-timezone");
-let { sizeFormatter } = require("human-readable");
 let util = require("util");
+let axios = require("axios");
+let chalk = require("chalk");
+let { unlink } = require("fs").promises;
+let moment = require("moment-timezone");
 let child_process = require("child_process");
+let { sizeFormatter } = require("human-readable");
+let { proto, getContentType } = require("@adiwajshing/baileys");
 ("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
 let unixTimestampSeconds = (date = new Date()) =>
 Math.floor(date.getTime() / 1000);
@@ -233,7 +233,7 @@ if (Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message) {
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.msg =
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype == "viewOnceMessage"
 ? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message[Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype].message[
-getContentType(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message[Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype].message)
+  getContentType(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message[Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype].message)
 ]
 : Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message[Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype];
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body =
@@ -254,7 +254,7 @@ getContentType(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message[Ѷ𝖆𝖑𝐤𝐲𝖗𝖎
 : Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype === `messageContextInfo`
 ? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.buttonsResponseMessage?.selectedButtonId ||
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.listResponseMessage?.singleSelectReply
-.selectedRowId ||
+  .selectedRowId ||
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.text
 : "";
 let quoted = (Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.quoted = Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.msg.contextInfo
