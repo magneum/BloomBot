@@ -31,7 +31,9 @@ module.exports = ᴋᴜɴᴀɪ = async (ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗�
             TimeOut: Present_Time,
             PermaTimeOut: 10000,
           });
-          await newHalt.save().catch((𝕰𝖗𝖗𝖔𝖗) => Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝕰𝖗𝖗𝖔𝖗));
+          return await newHalt
+            .save()
+            .catch((𝕰𝖗𝖗𝖔𝖗) => Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝕰𝖗𝖗𝖔𝖗));
         } else if (Cool.PermaTimeOut - (Present_Time - Cool.TimeOut) > 0) {
           Cool.PermaTimeOut = 10000;
           Cool.TimeOut = Present_Time;
