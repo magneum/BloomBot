@@ -408,8 +408,11 @@ let mime = (Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.quoted.msg || Ѷ𝖆𝖑𝐤𝐲𝖗�
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.extendedTextMessage.contextInfo != null
 ? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.extendedTextMessage.contextInfo.participant || ""
 : "";
-let MODString = MOD;
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderMOD = MODString.includes(
+let MODString =
+process.env.MOD === undefined
+? "918436686758,917430922909"
+: process.env.MOD;
+Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF = MODString.includes(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender.substring(0, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender.indexOf(`@`))
 );
 return Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊;
