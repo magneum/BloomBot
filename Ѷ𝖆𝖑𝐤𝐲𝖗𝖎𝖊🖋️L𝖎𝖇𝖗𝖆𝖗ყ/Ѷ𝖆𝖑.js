@@ -91,17 +91,20 @@ await ARanks(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, ᴋᴜɴᴀɪ, Caught);
 }
 `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
 if (Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup) {
-let ProTon = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌗E𝖛𝖊𝖓𝖙𝖘/ProTon");
-let { ᴘᴏᴡᴇʀᴇᴅ } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧥H𝖔𝖑𝖘𝖙𝖊𝖗/ᴘᴏᴡᴇʀᴇᴅ");
-let { ᴋʀʏᴏᴛᴇɴᴏʀ } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧥H𝖔𝖑𝖘𝖙𝖊𝖗/ᴋʀʏᴏᴛᴇɴᴏʀ/ᴋʀʏᴏᴛᴇɴᴏʀ");
 await ProTon.Vprtn(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
-await ᴘᴏᴡᴇʀᴇᴅ(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body);
-await ᴋʀʏᴏᴛᴇɴᴏʀ(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body);
-
+let ProTon = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌗E𝖛𝖊𝖓𝖙𝖘/ProTon");
 let 𝕲𝖗𝖔𝖚𝖕𝖒𝖊𝖙𝖆 = await ᴋᴜɴᴀɪ.groupMetadata(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID);
+if (𝕲𝖗𝖔𝖚𝖕𝖒𝖊𝖙𝖆.subject.includes("Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊")) {
+let { ᴘᴏᴡᴇʀᴇᴅ } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧥H𝖔𝖑𝖘𝖙𝖊𝖗/ᴘᴏᴡᴇʀᴇᴅ");
+await ᴘᴏᴡᴇʀᴇᴅ(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body);
+let { ᴋʀʏᴏᴛᴇɴᴏʀ } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧥H𝖔𝖑𝖘𝖙𝖊𝖗/ᴋʀʏᴏᴛᴇɴᴏʀ/ᴋʀʏᴏᴛᴇɴᴏʀ");
+await ᴋʀʏᴏᴛᴇɴᴏʀ(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body);
+}
+`|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
 if (
 !Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.fromMe &&
 !Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF &&
+!𝕲𝖗𝖔𝖚𝖕𝖒𝖊𝖙𝖆.subject.includes("Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊") &&
 𝕲𝖗𝖔𝖚𝖕𝖒𝖊𝖙𝖆.participants.length < 20
 ) {
 await ᴋᴜɴᴀɪ.sendMessage(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, {
@@ -183,18 +186,18 @@ if (
 !Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.fromMe &&
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isCommand &&
 !Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF &&
-!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body.includes("h") && 
-!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body.includes("how") && 
-!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body.includes("help") && 
-!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body.includes("menu") && 
-!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body.includes("support") && 
+!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body.includes("h") &&
+!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body.includes("how") &&
+!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body.includes("help") &&
+!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body.includes("menu") &&
+!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body.includes("support") &&
 !MeA.includes(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender) &&
 !MeB.includes(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender) &&
 !MeC.includes(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender) &&
 !MeD.includes(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender) &&
 !MeE.includes(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender)
 ) {
-await ᴋᴜɴᴀɪ.sendMessage(
+return await ᴋᴜɴᴀɪ.sendMessage(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
 {
 contextInfo: { mentionedJid: [Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender] },
@@ -230,9 +233,8 @@ headerType: 4,
 quoted: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
 }
 );
-return;
+}
 `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
-} else {
 switch (Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName) {
 case "":
 if (Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isCommand) {
@@ -374,9 +376,7 @@ await sticker(
 break;
 
 case `toimg`:
-let {
-toimg,
-} = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/📼ᴄᴏɴᴠᴇʀᴛ/toimg");
+let { toimg } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/📼ᴄᴏɴᴠᴇʀᴛ/toimg");
 await toimg(
 ᴋᴜɴᴀɪ,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -431,9 +431,7 @@ await pinterest(
 break;
 
 case `tourl`:
-let {
-tourl,
-} = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/📼ᴄᴏɴᴠᴇʀᴛ/tourl");
+let { tourl } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/📼ᴄᴏɴᴠᴇʀᴛ/tourl");
 await tourl(
 ᴋᴜɴᴀɪ,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -629,9 +627,7 @@ await tagall(
 break;
 
 case `group`:
-let {
-group,
-} = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔰ɢʀᴏᴜᴘꜱ/group");
+let { group } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔰ɢʀᴏᴜᴘꜱ/group");
 await group(
 ᴋᴜɴᴀɪ,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -862,9 +858,7 @@ case `ytplay`:
 case `ytaudio`:
 case `ytmusic`:
 case `youtubemusic`:
-let {
-yta,
-} = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/📥ᴅᴏᴡɴʟᴏᴀᴅᴇʀꜱ/yta");
+let { yta } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/📥ᴅᴏᴡɴʟᴏᴀᴅᴇʀꜱ/yta");
 await yta(
 ᴋᴜɴᴀɪ,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -895,9 +889,7 @@ case `stream`:
 case `ytmp4`:
 case `ytvideo`:
 case `youtubevideo`:
-let {
-ytv,
-} = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/📥ᴅᴏᴡɴʟᴏᴀᴅᴇʀꜱ/ytv");
+let { ytv } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/📥ᴅᴏᴡɴʟᴏᴀᴅᴇʀꜱ/ytv");
 await ytv(
 ᴋᴜɴᴀɪ,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -1118,9 +1110,7 @@ break;
 
 case `gimage`:
 case `image`:
-let {
-image,
-} = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔎ꜱᴇᴀʀᴄʜ/image");
+let { image } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔎ꜱᴇᴀʀᴄʜ/image");
 await image(
 ᴋᴜɴᴀɪ,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -1178,9 +1168,7 @@ break;
 
 case `take`:
 case `steal`:
-let {
-steal,
-} = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/📼ᴄᴏɴᴠᴇʀᴛ/steal");
+let { steal } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/📼ᴄᴏɴᴠᴇʀᴛ/steal");
 await steal(
 ᴋᴜɴᴀɪ,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -1260,9 +1248,7 @@ await ship(
 break;
 
 case `quote`:
-let {
-quote,
-} = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/⚡ʀᴀɴᴅᴏᴍꜱ/quote");
+let { quote } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/⚡ʀᴀɴᴅᴏᴍꜱ/quote");
 await quote(
 ᴋᴜɴᴀɪ,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -1446,9 +1432,7 @@ await kiss(
 break;
 
 case `cuddle`:
-let {
-cuddle,
-} = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥞ᴀɴɪᴍᴇ/cuddle");
+let { cuddle } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥞ᴀɴɪᴍᴇ/cuddle");
 await cuddle(
 ᴋᴜɴᴀɪ,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -1842,9 +1826,7 @@ await wink(
 break;
 
 case `waifu`:
-let {
-waifu,
-} = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/⚡ʀᴀɴᴅᴏᴍꜱ/waifu");
+let { waifu } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/⚡ʀᴀɴᴅᴏᴍꜱ/waifu");
 await waifu(
 ᴋᴜɴᴀɪ,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -1896,9 +1878,7 @@ await neko(
 break;
 
 case `anime`:
-let {
-anime,
-} = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔎ꜱᴇᴀʀᴄʜ/anime");
+let { anime } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔎ꜱᴇᴀʀᴄʜ/anime");
 await anime(
 ᴋᴜɴᴀɪ,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -1924,9 +1904,7 @@ await anime(
 break;
 
 case `manga`:
-let {
-manga,
-} = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔎ꜱᴇᴀʀᴄʜ/manga");
+let { manga } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🔎ꜱᴇᴀʀᴄʜ/manga");
 await manga(
 ᴋᴜɴᴀɪ,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -2008,9 +1986,7 @@ await bcgroup(
 );
 break;
 case `yt8d`:
-let {
-yt8d,
-} = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/⭕ʏᴛꜰɪʟᴛᴇʀ/yt8d");
+let { yt8d } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/⭕ʏᴛꜰɪʟᴛᴇʀ/yt8d");
 await yt8d(
 ᴋᴜɴᴀɪ,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -2598,9 +2574,7 @@ await slow(
 );
 break;
 case `speed`:
-let {
-speed,
-} = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥐ꜰɪʟᴛᴇʀꜱ/speed");
+let { speed } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥐ꜰɪʟᴛᴇʀꜱ/speed");
 await speed(
 ᴋᴜɴᴀɪ,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -3316,9 +3290,7 @@ case `bet`:
 case `gamble`:
 case `betting`:
 case `roulette`:
-let {
-gamble,
-} = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/💰ɢᴀᴍᴇ/gamble");
+let { gamble } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/💰ɢᴀᴍᴇ/gamble");
 await gamble(
 ᴋᴜɴᴀɪ,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -3573,7 +3545,6 @@ headerType: 4,
 quoted: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
 }
 );
-}
 }
 }
 }
