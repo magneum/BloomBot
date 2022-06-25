@@ -9,7 +9,7 @@ let connection_update = async (update, startᴋᴜɴᴀɪ, ᴋᴜɴᴀɪ) => {
   let { lastDisconnect, connection, qr } = update;
   if (connection === "close") {
     if (
-      lastDisconnect.error?.output?.statusCode !== DisconnectReason.loggedOut
+      lastDisconnect.𝕰𝖗𝖗𝖔𝖗?.output?.statusCode !== DisconnectReason.loggedOut
     ) {
       await startᴋᴜɴᴀɪ().catch((e) => console.log(e));
     } else {
@@ -35,10 +35,10 @@ let connection_update = async (update, startᴋᴜɴᴀɪ, ᴋᴜɴᴀɪ) => {
       mentions: groupMetadata.participants.map((a) => a.id),
     });
     try {
-      await ᴋᴜɴᴀɪ
-        .groupSettingUpdate("120363020792949649@g.us", "announcement")
-        .catch((𝕰𝖗𝖗𝖔𝖗) => Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.reply(jsonformat(𝕰𝖗𝖗𝖔𝖗)));
-    } catch {}
+      await ᴋᴜɴᴀɪ.groupSettingUpdate("120363020792949649@g.us", "announcement");
+    } catch (𝕰𝖗𝖗𝖔𝖗) {
+      console.log(𝕰𝖗𝖗𝖔𝖗);
+    }
     await ᴋᴜɴᴀɪ.sendMessage(ᴋᴜɴᴀɪ.user.id, {
       text: `お 𝐔𝐬𝐞𝐫: ${
         ᴋᴜɴᴀɪ.user.notify ||
@@ -49,7 +49,7 @@ let connection_update = async (update, startᴋᴜɴᴀɪ, ᴋᴜɴᴀɪ) => {
 
 「   𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®: Online   」`,
     });
-  } catch (error) {
+  } catch (𝕰𝖗𝖗𝖔𝖗) {
     console.log("「 Stored 𝐕𝐥𝐤𝐲𝐫𝐞 data! 」");
   }
 };

@@ -114,7 +114,9 @@ module.exports = ᴋᴜɴᴀɪ = async (ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗�
           text: "*💡Valkyrie Is Now Updating!*\n_Wait For 30-40seconds..._",
           mentions: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.participants.map((a) => a.id),
         });
-      } catch {}
+      } catch (𝕰𝖗𝖗𝖔𝖗) {
+        console.log(𝕰𝖗𝖗𝖔𝖗);
+      }
       var h𝖛𝖑𝖐𝖕 = require("child_process").exec(
         `heroku ps:restart worker -a ${HEROKU_APP_NAME}`
       );
