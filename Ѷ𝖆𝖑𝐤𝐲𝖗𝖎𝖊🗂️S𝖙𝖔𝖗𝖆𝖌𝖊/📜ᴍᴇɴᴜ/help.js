@@ -267,6 +267,18 @@ ${cpus
 ║${prefix}allmenu
 ╚═══════╝
 
+╔══『 🛍️𝗦𝘁𝗼𝗿𝗲🛍️ 』
+║${prefix}buy basic 
+║${prefix}buy bronze 
+║${prefix}buy silver 
+║${prefix}buy gold 
+║${prefix}buy platinum 
+║${prefix}buy diamond
+║${prefix}buy sword
+║${prefix}buy laptop
+║${prefix}buy charm
+╚═══════╝
+
 ╔══『 📥𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫𝐬📥 』
 ║${prefix}yta
 ║${prefix}play
