@@ -46,7 +46,6 @@ exports.wallpaper = async (
   fromMe,
   F𝖚𝖑𝖑_A𝖗𝖌𝖘,
   quoted,
-  mime,
   isMedia,
   isGroup,
   groupMetadata,

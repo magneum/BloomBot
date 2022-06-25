@@ -34,7 +34,7 @@ if (𝖈𝖍𝖆𝖙.key && 𝖈𝖍𝖆𝖙.key.remoteJid === `status@broadcast
 if (!ӄ𝖚𝖓𝖆𝖎.public && !𝖈𝖍𝖆𝖙.key.fromMe && chatUpdate.type === `notify`)
 return;
 if (𝖈𝖍𝖆𝖙.key.id.startsWith(`BAE5`) && 𝖈𝖍𝖆𝖙.key.id.length === 16) return;
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 = smsg(ӄ𝖚𝖓𝖆𝖎, 𝖈𝖍𝖆𝖙, Ѷ𝖎𝖔𝖓);
+Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 = await smsg(ӄ𝖚𝖓𝖆𝖎, 𝖈𝖍𝖆𝖙, Ѷ𝖎𝖔𝖓);
 require(`../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/Ѷ𝖆𝖑.js`)(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, chatUpdate, Ѷ𝖎𝖔𝖓);
 } catch (err) {
 console.log(err);
