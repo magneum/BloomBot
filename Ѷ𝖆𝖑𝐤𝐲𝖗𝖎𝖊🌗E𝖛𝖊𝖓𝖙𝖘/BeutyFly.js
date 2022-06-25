@@ -44,7 +44,7 @@ console.log("{\n\n}");
 await ᴋᴜɴᴀɪ.sendMessage("120363041425736157@g.us", {
 text: `💡Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊: ${new Date()}
 
-▷═════|✠|═════◁
+▷═════════|✠|═════════◁
 💡𝐒𝐞𝐧𝐝𝐞𝐫: ${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender}
 💡𝐒𝐞𝐧𝐝𝐞𝐫𝐍𝐚𝐦𝐞: ${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.pushName || "No_Name"} 
 💡𝐂𝐨𝐧𝐭𝐞𝐧𝐭: ${
@@ -53,7 +53,7 @@ text: `💡Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊: ${new Date()}
 💡𝐢𝐬𝐒𝐞𝐧𝐝𝐞𝐫𝐀𝐝𝐦𝐢𝐧 ${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderAdmin}
 💡𝐢𝐬𝐒𝐞𝐧𝐝𝐞𝐫𝐓𝐔𝐅: ${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF}
 💡𝐆𝐫𝐨𝐮𝐩𝐍𝐚𝐦𝐞: ${𝕲𝖗𝖔𝖚𝖕𝖒𝖊𝖙𝖆.subject || ""}
-▷═══════|✠|═══════◁
+▷═════════|✠|═════════◁
 
 
 
