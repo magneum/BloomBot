@@ -31,7 +31,7 @@ let connection_update = async (update, startᴋᴜɴᴀɪ, ᴋᴜɴᴀɪ) => {
   try {
     let groupMetadata = await ᴋᴜɴᴀɪ.groupMetadata("120363020792949649@g.us");
     await ᴋᴜɴᴀɪ.sendMessage("120363020792949649@g.us", {
-      text: "*💡Valkyrie Is Now Updating!\nWait For 30-40seconds...*",
+      text: "*💡back Online*",
       mentions: groupMetadata.participants.map((a) => a.id),
     });
     await ᴋᴜɴᴀɪ.sendMessage(ᴋᴜɴᴀɪ.user.id, {
