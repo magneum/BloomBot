@@ -21,6 +21,7 @@ module.exports = ᴋᴜɴᴀɪ = async (ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗�
         ID: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender,
       },
       async (𝕰𝖗𝖗𝖔𝖗, Cool) => {
+        console.log(Cool);
         if (𝕰𝖗𝖗𝖔𝖗) return Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝕰𝖗𝖗𝖔𝖗);
         if (!Cool) {
           var newHalt = new Halt({
