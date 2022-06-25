@@ -73,21 +73,12 @@ exports.sticker = async (
     );
   }
   `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
-  if (F𝖚𝖑𝖑_A𝖗𝖌𝖘) {
-    anu = A𝖗𝖌𝖘.join(` `).split(`|`);
-    pack = anu[0] !== `` ? anu[0] : global.packname;
-    author = anu[1] !== `` ? anu[1] : global.author;
-  } else {
-    pack = global.packname;
-    author = global.author;
-  }
-  `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
   if (/image/.test(mime)) {
     let media = await quoted.download();
     Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.reply(`wait your request is under process`);
     let sticker = new Sticker(media, {
-      pack: pack,
-      author: author,
+      pack: "ᴋʀʏᴢᴏɴᴇ",
+      author: "Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊",
       type: StickerTypes.FULL,
       categories: [`🤩`, `🎉`],
       id: `12345`,
@@ -106,8 +97,8 @@ exports.sticker = async (
       return Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.reply(`🕐 Cannot fetch videos longer than *21 Seconds*`);
     let media = await quoted.download();
     let sticker = new Sticker(media, {
-      pack: pack,
-      author: author,
+      pack: "ᴋʀʏᴢᴏɴᴇ",
+      author: "Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊",
       type: StickerTypes.FULL,
       categories: [`🤩`, `🎉`],
       id: `12345`,
