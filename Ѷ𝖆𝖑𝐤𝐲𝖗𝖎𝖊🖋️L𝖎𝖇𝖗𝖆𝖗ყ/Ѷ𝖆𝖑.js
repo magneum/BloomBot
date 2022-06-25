@@ -36,8 +36,6 @@ module.exports = ᴋᴜɴᴀɪ = async (ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗�
           return await Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.reply("❌𝗘𝗿𝗿𝗼𝗿: Wait For 10s!", {
             quoted: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
           });
-        } else {
-          console.log(Cool);
         }
       }
     );
