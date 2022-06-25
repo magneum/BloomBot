@@ -28,7 +28,14 @@ console.log(
     Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID
     )
     );
-    𝐒𝐞𝐧𝐝𝐞𝐫𝐍𝐚𝐦𝐞
+    console.log(
+        Kolor.bgCyanBright(`💡𝐒𝐞𝐧𝐝𝐞𝐫: `),
+        Kolor.green(
+        Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup ? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.pushName : `Private Chat`,
+        Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID
+        )
+        );
+    
 
 await ᴋᴜɴᴀɪ.sendReadReceipt(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender, [
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id,
