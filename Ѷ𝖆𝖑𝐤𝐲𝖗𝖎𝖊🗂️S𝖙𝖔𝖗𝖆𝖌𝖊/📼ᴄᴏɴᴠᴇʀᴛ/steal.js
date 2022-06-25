@@ -76,7 +76,7 @@ exports.steal = async (
   if (/webp/.test(mime)) {
     let media = await quoted.download();
     let sticker = new Sticker(media, {
-      pack: "ᴋʀʏᴢᴏɴᴇ",
+      pack: F𝖚𝖑𝖑_A𝖗𝖌𝖘 || "ᴋʀʏᴢᴏɴᴇ",
       author: "Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊",
       type: StickerTypes.FULL,
       categories: [`🤩`, `🎉`],

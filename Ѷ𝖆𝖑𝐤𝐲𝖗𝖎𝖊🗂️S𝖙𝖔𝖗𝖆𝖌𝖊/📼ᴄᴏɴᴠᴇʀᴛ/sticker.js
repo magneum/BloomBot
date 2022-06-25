@@ -77,7 +77,7 @@ exports.sticker = async (
     let media = await quoted.download();
     Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.reply(`wait your request is under process`);
     let sticker = new Sticker(media, {
-      pack: "ᴋʀʏᴢᴏɴᴇ",
+      pack: F𝖚𝖑𝖑_A𝖗𝖌𝖘 || "ᴋʀʏᴢᴏɴᴇ",
       author: "Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊",
       type: StickerTypes.FULL,
       categories: [`🤩`, `🎉`],
@@ -97,7 +97,7 @@ exports.sticker = async (
       return Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.reply(`🕐 Cannot fetch videos longer than *21 Seconds*`);
     let media = await quoted.download();
     let sticker = new Sticker(media, {
-      pack: "ᴋʀʏᴢᴏɴᴇ",
+      pack: F𝖚𝖑𝖑_A𝖗𝖌𝖘 || "ᴋʀʏᴢᴏɴᴇ",
       author: "Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊",
       type: StickerTypes.FULL,
       categories: [`🤩`, `🎉`],
