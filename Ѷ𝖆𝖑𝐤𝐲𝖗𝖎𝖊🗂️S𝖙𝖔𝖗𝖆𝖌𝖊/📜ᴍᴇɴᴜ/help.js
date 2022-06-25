@@ -193,6 +193,10 @@ ${cpus
 ║${prefix}rob
 ║${prefix}thief
 ║${prefix}robbery
+║${prefix}bal
+║${prefix}gold
+║${prefix}money
+║${prefix}balance
 ╚═══════╝
 
 ╔══『 🐾𝐀𝐧𝐢𝐦𝐚𝐭𝐢𝐨𝐧+𝐆𝐢𝐟🐾 』
