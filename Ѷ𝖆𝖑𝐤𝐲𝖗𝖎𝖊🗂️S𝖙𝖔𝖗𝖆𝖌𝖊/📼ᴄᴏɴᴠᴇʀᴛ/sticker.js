@@ -105,7 +105,7 @@ exports.sticker = async (
       quality: 75,
       background: `transparent`,
     });
-    let stikk = await sticker.toBuffer();
+    let stikk = await Sticker.toBuffer();
     return await ᴋᴜɴᴀɪ.sendMessage(
       Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
       { sticker: stikk },
