@@ -37,7 +37,7 @@ let Final_Name = Script_Name.slice(0, -3).toLowerCase();
 let { Caught } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌀B𝖚𝖙𝖙𝖔𝖓𝖘/Caught");
 `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
 exports.ban = async (
-  ӄ𝖚𝖓𝖆𝖎,
+  ᴋᴜɴᴀɪ,
   Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
   A𝖗𝖌𝖘,
   pushName,
@@ -59,11 +59,11 @@ exports.ban = async (
   mentionByTag,
   mentionByReply
 ) => {
-  if (!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup) return await Group_Only(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
+  if (!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup) return await Group_Only(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
   `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
   if (!fromMe && !isSenderTUF) {
     return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-      ӄ𝖚𝖓𝖆𝖎,
+      ᴋᴜɴᴀɪ,
       Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
       `*❌ERROR:* Owner & Mod only command!
 
@@ -90,7 +90,7 @@ ${prefix}${Final_Name} _don't reply to anyone and group will be banned_`
             ID: repliedPerson,
           });
           await newUser.save();
-          return await ӄ𝖚𝖓𝖆𝖎.sendMessage(
+          return await ᴋᴜɴᴀɪ.sendMessage(
             Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
             {
               contextInfo: { mentionedJid: [Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender, repliedPerson] },
@@ -122,7 +122,7 @@ ${prefix}${Final_Name} _don't reply to anyone and group will be banned_`
           );
         } else {
           return await Image_Button(
-            ӄ𝖚𝖓𝖆𝖎,
+            ᴋᴜɴᴀɪ,
             Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
             A𝖗𝖌𝖘,
             "./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊_Matte.png",
@@ -144,7 +144,7 @@ ${prefix}${Final_Name} _don't reply to anyone and group will be banned_`
             ID: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
           });
           await newUser.save();
-          return await ӄ𝖚𝖓𝖆𝖎.sendMessage(
+          return await ᴋᴜɴᴀɪ.sendMessage(
             Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
             {
               image: { url: "./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊_Matte.png" },
@@ -175,7 +175,7 @@ ${prefix}${Final_Name} _don't reply to anyone and group will be banned_`
           );
         } else {
           return await Image_Button(
-            ӄ𝖚𝖓𝖆𝖎,
+            ᴋᴜɴᴀɪ,
             Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
             A𝖗𝖌𝖘,
             "./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊_Matte.png",
@@ -187,7 +187,7 @@ ${prefix}${Final_Name} _don't reply to anyone and group will be banned_`
     `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
   } else {
     return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-      ӄ𝖚𝖓𝖆𝖎,
+      ᴋᴜɴᴀɪ,
       Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
       `*⚡USAGE:* ${prefix}${Final_Name} _reply to person to ban_
 ${prefix}${Final_Name}* _don't reply to anyone and group will be banned_`
