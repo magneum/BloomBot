@@ -139,13 +139,13 @@ Get Item-List From ${prefix}shop!`
 if (RobCatelog.includes(A𝖗𝖌𝖘[0])) {
 Economy.findOne(
 {
-ID: ʟɴᴀᴍᴇ,
+ID: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender,
 },
 async (𝕰𝖗𝖗𝖔𝖗, userEco) => {
 if (𝕰𝖗𝖗𝖔𝖗) return Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(𝕰𝖗𝖗𝖔𝖗));
 if (!userEco) {
 var newUser = new Economy({
-ID: ʟɴᴀᴍᴇ,
+ID: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender,
 money: 0,
 daily: 0,
 timeout: 86400000,
@@ -173,13 +173,13 @@ A𝖗𝖌𝖘,
 }
 Robbery.findOne(
 {
-ID: ʟɴᴀᴍᴇ,
+ID: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender,
 },
 async (𝕰𝖗𝖗𝖔𝖗, userRob) => {
 if (𝕰𝖗𝖗𝖔𝖗) return Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(𝕰𝖗𝖗𝖔𝖗));
 if (!userRob) {
 var newUser = new Robbery({
-ID: ʟɴᴀᴍᴇ,
+ID: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender,
 sword: 0,
 laptop: 0,
 charm: 0,
@@ -328,19 +328,19 @@ A𝖗𝖌𝖘,
 } else if (BadCatelog.includes(A𝖗𝖌𝖘[0])) {
 await Economy.findOne(
 {
-ID: ʟɴᴀᴍᴇ,
+ID: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender,
 },
 async (𝕰𝖗𝖗𝖔𝖗, userEco) => {
 if (𝕰𝖗𝖗𝖔𝖗) return Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(𝕰𝖗𝖗𝖔𝖗));
 await Bagde.findOne(
 {
-ID: ʟɴᴀᴍᴇ,
+ID: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender,
 },
 async (𝕰𝖗𝖗𝖔𝖗, userBadge) => {
 if (𝕰𝖗𝖗𝖔𝖗) return Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(𝕰𝖗𝖗𝖔𝖗));
 if (!userEco) {
 var newEcoUser = new Economy({
-ID: ʟɴᴀᴍᴇ,
+ID: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender,
 money: 0,
 daily: 0,
 timeout: 86400000,
@@ -373,7 +373,7 @@ KryChat,
 `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
 if (!userBadge) {
 var newBagdeUser = new Bagde({
-ID: ʟɴᴀᴍᴇ,
+ID: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender,
 Badge: `🧵ʙᴀꜱɪᴄ-10ᴄᴏᴍᴍᴀɴᴅꜱ`,
 value: `True`,
 Limits: 10,
