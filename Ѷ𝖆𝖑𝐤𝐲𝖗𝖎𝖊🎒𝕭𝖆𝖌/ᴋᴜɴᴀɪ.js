@@ -6,7 +6,7 @@
 require(`../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/𝕷𝖆ყO𝖚𝖙`);
 require(`../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/Ѷ𝖆𝖑.js`);
 let {
-  default: ӄ𝖚𝖓𝖆𝖎Connect,
+  default: ᴋᴜɴᴀɪConnect,
   generateForwardMessageContent,
   generateWAMessageFromContent,
   downloadContentFromMessage,
@@ -35,7 +35,7 @@ let Ѷ𝖎𝖔𝖓 = makeInMemoryStore({
 });
 let dbAuth = require(`../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧆𝕯𝖆𝖙𝖆𝖇𝖆𝖘𝖊/🍂𝖘𝖖𝖑/Auth`);
 `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
-async function startӄ𝖚𝖓𝖆𝖎() {
+async function startᴋᴜɴᴀɪ() {
   try {
     await goose
       .connect(MONGOOSE, {
@@ -64,16 +64,16 @@ async function startӄ𝖚𝖓𝖆𝖎() {
   }
   await sequelize.sync();
   let { state, saveCreds } = await dbAuth();
-  let ӄ𝖚𝖓𝖆𝖎 = ӄ𝖚𝖓𝖆𝖎Connect({
+  let ᴋᴜɴᴀɪ = ᴋᴜɴᴀɪConnect({
     logger: pino({ level: `silent` }),
     printQRInTerminal: true,
     defaultQueryTimeoutMs: undefined,
     browser: [`Valkyrie`, `Chrome`, `4.0.0`],
     auth: state,
   });
-  Ѷ𝖎𝖔𝖓.bind(ӄ𝖚𝖓𝖆𝖎.ev);
+  Ѷ𝖎𝖔𝖓.bind(ᴋᴜɴᴀɪ.ev);
   `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
-  ӄ𝖚𝖓𝖆𝖎.decodeJid = (jid) => {
+  ᴋᴜɴᴀɪ.decodeJid = (jid) => {
     if (!jid) return jid;
     if (/:\d+@/gi.test(jid)) {
       let decode = jidDecode(jid) || {};
@@ -84,14 +84,14 @@ async function startӄ𝖚𝖓𝖆𝖎() {
     } else return jid;
   };
   `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
-  ӄ𝖚𝖓𝖆𝖎.getName = (jid, withoutContact = false) => {
-    id = ӄ𝖚𝖓𝖆𝖎.decodeJid(jid);
-    withoutContact = ӄ𝖚𝖓𝖆𝖎.withoutContact || withoutContact;
+  ᴋᴜɴᴀɪ.getName = (jid, withoutContact = false) => {
+    id = ᴋᴜɴᴀɪ.decodeJid(jid);
+    withoutContact = ᴋᴜɴᴀɪ.withoutContact || withoutContact;
     let v;
     if (id.endsWith(`@g.us`))
       return new Promise(async (resolve) => {
         v = Ѷ𝖎𝖔𝖓.contacts[id] || {};
-        if (!(v.name || v.subject)) v = ӄ𝖚𝖓𝖆𝖎.groupMetadata(id) || {};
+        if (!(v.name || v.subject)) v = ᴋᴜɴᴀɪ.groupMetadata(id) || {};
         resolve(
           v.name ||
             v.subject ||
@@ -107,8 +107,8 @@ async function startӄ𝖚𝖓𝖆𝖎() {
               id,
               name: `WhatsApp`,
             }
-          : id === ӄ𝖚𝖓𝖆𝖎.decodeJid(ӄ𝖚𝖓𝖆𝖎.user.id)
-          ? ӄ𝖚𝖓𝖆𝖎.user
+          : id === ᴋᴜɴᴀɪ.decodeJid(ᴋᴜɴᴀɪ.user.id)
+          ? ᴋᴜɴᴀɪ.user
           : Ѷ𝖎𝖔𝖓.contacts[id] || {};
     return (
       (withoutContact ? `` : v.name) ||
@@ -120,18 +120,18 @@ async function startӄ𝖚𝖓𝖆𝖎() {
     );
   };
   `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
-  ӄ𝖚𝖓𝖆𝖎.sendContact = async (jid, kon, quoted = ``, opts = {}) => {
+  ᴋᴜɴᴀɪ.sendContact = async (jid, kon, quoted = ``, opts = {}) => {
     let list = [];
     for (let i of kon) {
       list.push({
-        displayName: await ӄ𝖚𝖓𝖆𝖎.getName(i + `@s.whatsapp.net`),
+        displayName: await ᴋᴜɴᴀɪ.getName(i + `@s.whatsapp.net`),
         vcard: `BEGIN:VCARD
 VERSION:3.0
-N:${await ӄ𝖚𝖓𝖆𝖎.getName(i + `@s.whatsapp.net`)}
-FN:${await ӄ𝖚𝖓𝖆𝖎.getName(i + `@s.whatsapp.net`)}
+N:${await ᴋᴜɴᴀɪ.getName(i + `@s.whatsapp.net`)}
+FN:${await ᴋᴜɴᴀɪ.getName(i + `@s.whatsapp.net`)}
 item1.TEL;waid=${i}:${i}
 item1.X-ABLabel:Phone
-item2.EMAIL;type=INTERNET:ӄ𝖚𝖓𝖆𝖎bots@gmail.com
+item2.EMAIL;type=INTERNET:ᴋᴜɴᴀɪbots@gmail.com
 item2.X-ABLabel:Email
 item3.URL:https://instagram.com/riki_4932
 item3.X-ABLabel:Instagram
@@ -140,7 +140,7 @@ item4.X-ABLabel:Region
 END:VCARD`,
       });
     }
-    ӄ𝖚𝖓𝖆𝖎.sendMessage(
+    ᴋᴜɴᴀɪ.sendMessage(
       jid,
       {
         contacts: { displayName: `${list.length} contact`, contacts: list },
@@ -150,9 +150,9 @@ END:VCARD`,
     );
   };
   `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
-  ӄ𝖚𝖓𝖆𝖎.public = true;
-  ӄ𝖚𝖓𝖆𝖎.serializeM = (Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊) => smsg(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, Ѷ𝖎𝖔𝖓);
-  ӄ𝖚𝖓𝖆𝖎.send5ButImg = async (
+  ᴋᴜɴᴀɪ.public = true;
+  ᴋᴜɴᴀɪ.serializeM = (Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊) => smsg(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, Ѷ𝖎𝖔𝖓);
+  ᴋᴜɴᴀɪ.send5ButImg = async (
     jid,
     text = ``,
     footer = ``,
@@ -162,7 +162,7 @@ END:VCARD`,
   ) => {
     let message = await prepareWAMessageMedia(
       { image: img },
-      { upload: ӄ𝖚𝖓𝖆𝖎.waUploadToServer }
+      { upload: ᴋᴜɴᴀɪ.waUploadToServer }
     );
     let template = generateWAMessageFromContent(
       Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
@@ -178,12 +178,12 @@ END:VCARD`,
       }),
       options
     );
-    ӄ𝖚𝖓𝖆𝖎.relayMessage(jid, template.message, {
+    ᴋᴜɴᴀɪ.relayMessage(jid, template.message, {
       messageId: template.key.id,
     });
   };
   `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
-  ӄ𝖚𝖓𝖆𝖎.sendButtonText = (
+  ᴋᴜɴᴀɪ.sendButtonText = (
     jid,
     buttons = [],
     text,
@@ -198,12 +198,12 @@ END:VCARD`,
       headerType: 2,
       ...options,
     };
-    ӄ𝖚𝖓𝖆𝖎.sendMessage(jid, buttonMessage, { quoted, ...options });
+    ᴋᴜɴᴀɪ.sendMessage(jid, buttonMessage, { quoted, ...options });
   };
   `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
-  ӄ𝖚𝖓𝖆𝖎.sendText = (jid, text, quoted = ``, options) =>
-    ӄ𝖚𝖓𝖆𝖎.sendMessage(jid, { text: text, ...options }, { quoted });
-  ӄ𝖚𝖓𝖆𝖎.sendImage = async (jid, path, caption = ``, quoted = ``, options) => {
+  ᴋᴜɴᴀɪ.sendText = (jid, text, quoted = ``, options) =>
+    ᴋᴜɴᴀɪ.sendMessage(jid, { text: text, ...options }, { quoted });
+  ᴋᴜɴᴀɪ.sendImage = async (jid, path, caption = ``, quoted = ``, options) => {
     let buffer = Buffer.isBuffer(path)
       ? path
       : /^data:.*?\/.*?;base64,/i.test(path)
@@ -213,14 +213,14 @@ END:VCARD`,
       : fs.existsSync(path)
       ? fs.readFileSync(path)
       : Buffer.alloc(0);
-    await ӄ𝖚𝖓𝖆𝖎.sendMessage(
+    await ᴋᴜɴᴀɪ.sendMessage(
       jid,
       { image: buffer, caption: caption, ...options },
       { quoted }
     );
   };
   `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
-  ӄ𝖚𝖓𝖆𝖎.sendVideo = async (
+  ᴋᴜɴᴀɪ.sendVideo = async (
     jid,
     path,
     caption = ``,
@@ -237,14 +237,14 @@ END:VCARD`,
       : fs.existsSync(path)
       ? fs.readFileSync(path)
       : Buffer.alloc(0);
-    await ӄ𝖚𝖓𝖆𝖎.sendMessage(
+    await ᴋᴜɴᴀɪ.sendMessage(
       jid,
       { video: buffer, caption: caption, gifPlayback: gif, ...options },
       { quoted }
     );
   };
   `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
-  ӄ𝖚𝖓𝖆𝖎.sendAudio = async (jid, path, quoted = ``, ptt = false, options) => {
+  ᴋᴜɴᴀɪ.sendAudio = async (jid, path, quoted = ``, ptt = false, options) => {
     let buffer = Buffer.isBuffer(path)
       ? path
       : /^data:.*?\/.*?;base64,/i.test(path)
@@ -254,15 +254,15 @@ END:VCARD`,
       : fs.existsSync(path)
       ? fs.readFileSync(path)
       : Buffer.alloc(0);
-    await ӄ𝖚𝖓𝖆𝖎.sendMessage(
+    await ᴋᴜɴᴀɪ.sendMessage(
       jid,
       { audio: buffer, ptt: ptt, ...options },
       { quoted }
     );
   };
   `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
-  ӄ𝖚𝖓𝖆𝖎.sendTextWithMentions = async (jid, text, quoted, options = {}) =>
-    ӄ𝖚𝖓𝖆𝖎.sendMessage(
+  ᴋᴜɴᴀɪ.sendTextWithMentions = async (jid, text, quoted, options = {}) =>
+    ᴋᴜɴᴀɪ.sendMessage(
       jid,
       {
         text: text,
@@ -276,7 +276,7 @@ END:VCARD`,
       { quoted }
     );
   `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
-  ӄ𝖚𝖓𝖆𝖎.sendImageAsSticker = async (jid, path, quoted, options = {}) => {
+  ᴋᴜɴᴀɪ.sendImageAsSticker = async (jid, path, quoted, options = {}) => {
     let buff = Buffer.isBuffer(path)
       ? path
       : /^data:.*?\/.*?;base64,/i.test(path)
@@ -292,7 +292,7 @@ END:VCARD`,
     } else {
       buffer = await imageToWebp(buff);
     }
-    await ӄ𝖚𝖓𝖆𝖎.sendMessage(
+    await ᴋᴜɴᴀɪ.sendMessage(
       jid,
       { sticker: { url: buffer }, ...options },
       { quoted }
@@ -300,7 +300,7 @@ END:VCARD`,
     return buffer;
   };
   `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
-  ӄ𝖚𝖓𝖆𝖎.sendVideoAsSticker = async (jid, path, quoted, options = {}) => {
+  ᴋᴜɴᴀɪ.sendVideoAsSticker = async (jid, path, quoted, options = {}) => {
     let buff = Buffer.isBuffer(path)
       ? path
       : /^data:.*?\/.*?;base64,/i.test(path)
@@ -316,7 +316,7 @@ END:VCARD`,
     } else {
       buffer = await videoToWebp(buff);
     }
-    await ӄ𝖚𝖓𝖆𝖎.sendMessage(
+    await ᴋᴜɴᴀɪ.sendMessage(
       jid,
       { sticker: { url: buffer }, ...options },
       { quoted }
@@ -324,7 +324,7 @@ END:VCARD`,
     return buffer;
   };
   `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
-  ӄ𝖚𝖓𝖆𝖎.downloadAndSaveMediaMessage = async (
+  ᴋᴜɴᴀɪ.downloadAndSaveMediaMessage = async (
     message,
     filename,
     attachExtension = true
@@ -346,7 +346,7 @@ END:VCARD`,
     return trueFileName;
   };
   `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
-  ӄ𝖚𝖓𝖆𝖎.downloadMediaMessage = async (message) => {
+  ᴋᴜɴᴀɪ.downloadMediaMessage = async (message) => {
     let mime = (message.msg || message).mimetype || ``;
     let messageType = message.mtype
       ? message.mtype.replace(/Message/gi, ``)
@@ -359,7 +359,7 @@ END:VCARD`,
     return buffer;
   };
   `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
-  ӄ𝖚𝖓𝖆𝖎.sendMedia = async (
+  ᴋᴜɴᴀɪ.sendMedia = async (
     jid,
     path,
     fileName = ``,
@@ -367,7 +367,7 @@ END:VCARD`,
     quoted = ``,
     options = {}
   ) => {
-    let types = await ӄ𝖚𝖓𝖆𝖎.getFile(path, true);
+    let types = await ᴋᴜɴᴀɪ.getFile(path, true);
     let { mime, ext, res, data, filename } = types;
     if ((res && res.status !== 200) || file.length <= 65536) {
       try {
@@ -395,7 +395,7 @@ END:VCARD`,
     else if (/video/.test(mime)) type = `video`;
     else if (/audio/.test(mime)) type = `audio`;
     else type = `document`;
-    await ӄ𝖚𝖓𝖆𝖎.sendMessage(
+    await ᴋᴜɴᴀɪ.sendMessage(
       jid,
       { [type]: { url: pathFile }, caption, mimetype, fileName, ...options },
       { quoted, ...options }
@@ -403,7 +403,7 @@ END:VCARD`,
     return fs.promises.unlink(pathFile);
   };
   `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
-  ӄ𝖚𝖓𝖆𝖎.copyNForward = async (
+  ᴋᴜɴᴀɪ.copyNForward = async (
     jid,
     message,
     forceForward = false,
@@ -453,13 +453,13 @@ END:VCARD`,
           }
         : {}
     );
-    await ӄ𝖚𝖓𝖆𝖎.relayMessage(jid, waMessage.message, {
+    await ᴋᴜɴᴀɪ.relayMessage(jid, waMessage.message, {
       messageId: waMessage.key.id,
     });
     return waMessage;
   };
   `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
-  ӄ𝖚𝖓𝖆𝖎.cMod = (jid, copy, text = ``, sender = ӄ𝖚𝖓𝖆𝖎.user.id, options = {}) => {
+  ᴋᴜɴᴀɪ.cMod = (jid, copy, text = ``, sender = ᴋᴜɴᴀɪ.user.id, options = {}) => {
     let mtype = Object.keys(copy.message)[0];
     let isEphemeral = mtype === `ephemeralMessage`;
     if (isEphemeral) {
@@ -486,11 +486,11 @@ END:VCARD`,
     else if (copy.key.remoteJid.includes(`@broadcast`))
       sender = sender || copy.key.remoteJid;
     copy.key.remoteJid = jid;
-    copy.key.fromMe = sender === ӄ𝖚𝖓𝖆𝖎.user.id;
+    copy.key.fromMe = sender === ᴋᴜɴᴀɪ.user.id;
     return proto.WebMessageInfo.fromObject(copy);
   };
   `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
-  ӄ𝖚𝖓𝖆𝖎.getFile = async (PATH, save) => {
+  ᴋᴜɴᴀɪ.getFile = async (PATH, save) => {
     let res;
     let data = Buffer.isBuffer(PATH)
       ? PATH
@@ -522,16 +522,16 @@ END:VCARD`,
     };
   };
   `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
-  ӄ𝖚𝖓𝖆𝖎.ev.on("connection.update", async (𝖚𝖕𝖉𝖆𝖙𝖊) => {
+  ᴋᴜɴᴀɪ.ev.on("connection.update", async (𝖚𝖕𝖉𝖆𝖙𝖊) => {
     try {
       let connection_update = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌗E𝖛𝖊𝖓𝖙𝖘/connection_update");
-      await connection_update.Vcnup(𝖚𝖕𝖉𝖆𝖙𝖊, startӄ𝖚𝖓𝖆𝖎, ӄ𝖚𝖓𝖆𝖎);
+      await connection_update.Vcnup(𝖚𝖕𝖉𝖆𝖙𝖊, startᴋᴜɴᴀɪ, ᴋᴜɴᴀɪ);
     } catch (𝕰𝖗𝖗𝖔𝖗) {
       return console.log(chalk.redBright(𝕰𝖗𝖗𝖔𝖗));
     }
   });
   `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
-  ӄ𝖚𝖓𝖆𝖎.ev.on("creds.update", async (𝖚𝖕𝖉𝖆𝖙𝖊) => {
+  ᴋᴜɴᴀɪ.ev.on("creds.update", async (𝖚𝖕𝖉𝖆𝖙𝖊) => {
     try {
       await saveCreds(𝖚𝖕𝖉𝖆𝖙𝖊);
     } catch (𝕰𝖗𝖗𝖔𝖗) {
@@ -539,35 +539,35 @@ END:VCARD`,
     }
   });
   `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
-  ӄ𝖚𝖓𝖆𝖎.ev.on("messages.upsert", async (𝖚𝖕𝖉𝖆𝖙𝖊) => {
+  ᴋᴜɴᴀɪ.ev.on("messages.upsert", async (𝖚𝖕𝖉𝖆𝖙𝖊) => {
     try {
       let messages_upsert = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌗E𝖛𝖊𝖓𝖙𝖘/messages_upsert");
-      await messages_upsert.Vmsgup(𝖚𝖕𝖉𝖆𝖙𝖊, Ѷ𝖎𝖔𝖓, ӄ𝖚𝖓𝖆𝖎);
+      await messages_upsert.Vmsgup(𝖚𝖕𝖉𝖆𝖙𝖊, Ѷ𝖎𝖔𝖓, ᴋᴜɴᴀɪ);
     } catch (𝕰𝖗𝖗𝖔𝖗) {
       return console.log(chalk.redBright(𝕰𝖗𝖗𝖔𝖗));
     }
   });
   `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
-  ӄ𝖚𝖓𝖆𝖎.ev.on("group-participants.update", async (𝖚𝖕𝖉𝖆𝖙𝖊) => {
+  ᴋᴜɴᴀɪ.ev.on("group-participants.update", async (𝖚𝖕𝖉𝖆𝖙𝖊) => {
     try {
       let group_participants = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌗E𝖛𝖊𝖓𝖙𝖘/group_participants");
-      await group_participants.Vgrpns(𝖚𝖕𝖉𝖆𝖙𝖊, ӄ𝖚𝖓𝖆𝖎);
+      await group_participants.Vgrpns(𝖚𝖕𝖉𝖆𝖙𝖊, ᴋᴜɴᴀɪ);
     } catch (𝕰𝖗𝖗𝖔𝖗) {
       return console.log(chalk.redBright(𝕰𝖗𝖗𝖔𝖗));
     }
   });
   `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
-  ӄ𝖚𝖓𝖆𝖎.ws.on("CB:call", async (𝖚𝖕𝖉𝖆𝖙𝖊) => {
+  ᴋᴜɴᴀɪ.ws.on("CB:call", async (𝖚𝖕𝖉𝖆𝖙𝖊) => {
     try {
       let call_updates = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌗E𝖛𝖊𝖓𝖙𝖘/call_updates");
-      await call_updates.Vclup(ӄ𝖚𝖓𝖆𝖎, 𝖚𝖕𝖉𝖆𝖙𝖊);
+      await call_updates.Vclup(ᴋᴜɴᴀɪ, 𝖚𝖕𝖉𝖆𝖙𝖊);
     } catch (𝕰𝖗𝖗𝖔𝖗) {
       return console.log(chalk.redBright(𝕰𝖗𝖗𝖔𝖗));
     }
   });
-  return ӄ𝖚𝖓𝖆𝖎;
+  return ᴋᴜɴᴀɪ;
 }
-startӄ𝖚𝖓𝖆𝖎().catch((𝕰𝖗𝖗𝖔𝖗) => console.log(chalk.redBright(𝕰𝖗𝖗𝖔𝖗)));
+startᴋᴜɴᴀɪ().catch((𝕰𝖗𝖗𝖔𝖗) => console.log(chalk.redBright(𝕰𝖗𝖗𝖔𝖗)));
 ("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
 /*
  * * * * * * * * * * |        (𝐜)𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!        * * * * * * * * * *

@@ -7,13 +7,13 @@ require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/𝕷�
 let moment = require(`moment-timezone`);
 let Ranker = require(`../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧆𝕯𝖆𝖙𝖆𝖇𝖆𝖘𝖊/🍃𝖒𝖔𝖓𝖌𝖔/autorank`);
 let Welcome = require(`../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧆𝕯𝖆𝖙𝖆𝖇𝖆𝖘𝖊/🍃𝖒𝖔𝖓𝖌𝖔/setwelcome`);
-let group_participants = async (𝖚𝖕𝖉𝖆𝖙𝖊, ӄ𝖚𝖓𝖆𝖎) => {
+let group_participants = async (𝖚𝖕𝖉𝖆𝖙𝖊, ᴋᴜɴᴀɪ) => {
 let 𝖕𝖋𝖕𝖀𝖘𝖊𝖗;
 let 𝕷𝖆𝖙𝖊𝖘𝖙 = 𝖚𝖕𝖉𝖆𝖙𝖊.participants[0];
-let 𝕲𝖗𝖔𝖚𝖕𝖒𝖊𝖙𝖆 = await ӄ𝖚𝖓𝖆𝖎.groupMetadata(𝖚𝖕𝖉𝖆𝖙𝖊.id);
-let 𝖚𝖘𝖊𝖗𝕹𝖆𝖒𝖊 = await ӄ𝖚𝖓𝖆𝖎.getName(𝖚𝖕𝖉𝖆𝖙𝖊.participants[0]);
+let 𝕲𝖗𝖔𝖚𝖕𝖒𝖊𝖙𝖆 = await ᴋᴜɴᴀɪ.groupMetadata(𝖚𝖕𝖉𝖆𝖙𝖊.id);
+let 𝖚𝖘𝖊𝖗𝕹𝖆𝖒𝖊 = await ᴋᴜɴᴀɪ.getName(𝖚𝖕𝖉𝖆𝖙𝖊.participants[0]);
 try {
-𝖕𝖋𝖕𝖀𝖘𝖊𝖗 = await ӄ𝖚𝖓𝖆𝖎.profilePictureUrl(𝖚𝖕𝖉𝖆𝖙𝖊.participants[0], "image");
+𝖕𝖋𝖕𝖀𝖘𝖊𝖗 = await ᴋᴜɴᴀɪ.profilePictureUrl(𝖚𝖕𝖉𝖆𝖙𝖊.participants[0], "image");
 } catch {
 𝖕𝖋𝖕𝖀𝖘𝖊𝖗 = "./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊_𝖕𝖋𝖕𝖀𝖘𝖊𝖗.png";
 }
@@ -25,9 +25,9 @@ ID: 𝖚𝖕𝖉𝖆𝖙𝖊.id,
 async (𝕰𝖗𝖗𝖔𝖗, userWel) => {
 if (𝕰𝖗𝖗𝖔𝖗) return console.log(𝕰𝖗𝖗𝖔𝖗);
 if (!userWel) return;
-if (𝖚𝖕𝖉𝖆𝖙𝖊.action == "add" && !𝕷𝖆𝖙𝖊𝖘𝖙.includes(ӄ𝖚𝖓𝖆𝖎.user.id)) {
+if (𝖚𝖕𝖉𝖆𝖙𝖊.action == "add" && !𝕷𝖆𝖙𝖊𝖘𝖙.includes(ᴋᴜɴᴀɪ.user.id)) {
 console.log(𝕲𝖗𝖔𝖚𝖕𝖒𝖊𝖙𝖆);
-return await ӄ𝖚𝖓𝖆𝖎
+return await ᴋᴜɴᴀɪ
 .sendMessage(𝖚𝖕𝖉𝖆𝖙𝖊.id, {
 contextInfo: { mentionedJid: [𝖚𝖕𝖉𝖆𝖙𝖊.participants[0]] },
 image: { url: 𝖕𝖋𝖕𝖀𝖘𝖊𝖗 },

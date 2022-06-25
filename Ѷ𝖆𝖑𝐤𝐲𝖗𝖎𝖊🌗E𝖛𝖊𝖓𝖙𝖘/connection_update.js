@@ -5,11 +5,11 @@
 ("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
 let chalk = require("chalk");
 let { DisconnectReason } = require(`@adiwajshing/baileys`);
-let connection_update = async (update, startӄ𝖚𝖓𝖆𝖎, ӄ𝖚𝖓𝖆𝖎) => {
+let connection_update = async (update, startᴋᴜɴᴀɪ, ᴋᴜɴᴀɪ) => {
 let { lastDisconnect, connection, qr } = update;
 if (connection === `close`) {
 lastDisconnect.error?.output?.statusCode !== DisconnectReason.loggedOut
-? startӄ𝖚𝖓𝖆𝖎()
+? startᴋᴜɴᴀɪ()
 : console.log(chalk.bgRed("💡𝐈𝐧𝐟𝐨꧂ Whatsapp Kicked Session..."));
 }
 if (qr) {

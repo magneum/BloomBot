@@ -6,8 +6,8 @@
 require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/𝕷𝖆ყO𝖚𝖙");
 let moment = require(`moment-timezone`);
 let Time = moment.tz(`Asia/Kolkata`).format(`DD/MM HH:mm:ss`);
-exports.Caught = async (ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝕮𝖔𝖓𝖙𝖊𝖓𝖙) => {
-return await ӄ𝖚𝖓𝖆𝖎.sendMessage(
+exports.Caught = async (ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝕮𝖔𝖓𝖙𝖊𝖓𝖙) => {
+return await ᴋᴜɴᴀɪ.sendMessage(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
 {
 contextInfo: { mentionedJid: [Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender] },

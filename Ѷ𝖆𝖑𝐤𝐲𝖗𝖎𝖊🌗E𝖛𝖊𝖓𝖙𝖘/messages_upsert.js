@@ -7,8 +7,8 @@ require(`../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/𝕷�
 require(`../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/Ѷ𝖆𝖑.js`);
 let git = require(`simple-git`)();
 let Kolor = require("chalk");
-let { smsg } = require(`../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/myfunc`);
-let messages_upsert = async (chatUpdate, Ѷ𝖎𝖔𝖓, ӄ𝖚𝖓𝖆𝖎) => {
+let { smsg } = require(`../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/ɴᴇᴄᴛᴏʀ`);
+let messages_upsert = async (chatUpdate, Ѷ𝖎𝖔𝖓, ᴋᴜɴᴀɪ) => {
 try {
 𝖈𝖍𝖆𝖙 = chatUpdate.messages[0];
 if (!𝖈𝖍𝖆𝖙.message) return;
@@ -31,11 +31,11 @@ Object.keys(𝖈𝖍𝖆𝖙.message)[0] === `ephemeralMessage`
 ? 𝖈𝖍𝖆𝖙.message.ephemeralMessage.message
 : 𝖈𝖍𝖆𝖙.message;
 if (𝖈𝖍𝖆𝖙.key && 𝖈𝖍𝖆𝖙.key.remoteJid === `status@broadcast`) return;
-if (!ӄ𝖚𝖓𝖆𝖎.public && !𝖈𝖍𝖆𝖙.key.fromMe && chatUpdate.type === `notify`)
+if (!ᴋᴜɴᴀɪ.public && !𝖈𝖍𝖆𝖙.key.fromMe && chatUpdate.type === `notify`)
 return;
 if (𝖈𝖍𝖆𝖙.key.id.startsWith(`BAE5`) && 𝖈𝖍𝖆𝖙.key.id.length === 16) return;
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 = await smsg(ӄ𝖚𝖓𝖆𝖎, 𝖈𝖍𝖆𝖙, Ѷ𝖎𝖔𝖓);
-require(`../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/Ѷ𝖆𝖑.js`)(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, chatUpdate, Ѷ𝖎𝖔𝖓);
+Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 = await smsg(ᴋᴜɴᴀɪ, 𝖈𝖍𝖆𝖙, Ѷ𝖎𝖔𝖓);
+require(`../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/Ѷ𝖆𝖑.js`)(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, chatUpdate, Ѷ𝖎𝖔𝖓);
 } catch (err) {
 console.log(err);
 }
