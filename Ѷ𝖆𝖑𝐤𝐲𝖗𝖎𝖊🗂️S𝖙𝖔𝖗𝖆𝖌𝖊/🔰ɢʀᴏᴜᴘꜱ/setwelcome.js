@@ -40,7 +40,7 @@ let Final_Name = Script_Name.slice(0, -3).toLowerCase();
 let { Caught } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌀B𝖚𝖙𝖙𝖔𝖓𝖘/Caught");
 `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
 exports.setwelcome = async (
-  ӄ𝖚𝖓𝖆𝖎,
+  ᴋᴜɴᴀɪ,
   Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
   A𝖗𝖌𝖘,
   pushName,
@@ -62,13 +62,13 @@ exports.setwelcome = async (
   mentionByTag,
   mentionByReply
 ) => {
-  if (!isBotAdmin) return await Bot_Not_Admin(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
-  if (!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup) return await Group_Only(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
-  if (!isSenderAdmin) return await Sender_Not_Admin(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
+  if (!isBotAdmin) return await Bot_Not_Admin(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
+  if (!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup) return await Group_Only(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
+  if (!isSenderAdmin) return await Sender_Not_Admin(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
   `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
   if (!F𝖚𝖑𝖑_A𝖗𝖌𝖘) {
     return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-      ӄ𝖚𝖓𝖆𝖎,
+      ᴋᴜɴᴀɪ,
       Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
       `*❌ERROR:*  Argument Needed!
 
@@ -82,11 +82,11 @@ ${prefix}${Final_Name} _off_`
       ID: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
     },
     async (𝕰𝖗𝖗𝖔𝖗, userWel) => {
-      if (𝕰𝖗𝖗𝖔𝖗) return Caught(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝕰𝖗𝖗𝖔𝖗);
+      if (𝕰𝖗𝖗𝖔𝖗) return Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝕰𝖗𝖗𝖔𝖗);
       if (A𝖗𝖌𝖘[0] === `OFF` || A𝖗𝖌𝖘[0] === `off` || A𝖗𝖌𝖘[0] === `Off`) {
         if (!userWel) {
           return await Image_Button(
-            ӄ𝖚𝖓𝖆𝖎,
+            ᴋᴜɴᴀɪ,
             Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
             A𝖗𝖌𝖘,
             "./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊_FIsh.png",
@@ -98,9 +98,9 @@ ${prefix}${Final_Name} _off_`
         } else {
           await userWel
             .delete()
-            .catch((𝕰𝖗𝖗𝖔𝖗) => Caught(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝕰𝖗𝖗𝖔𝖗));
+            .catch((𝕰𝖗𝖗𝖔𝖗) => Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝕰𝖗𝖗𝖔𝖗));
           return await Image_Button(
-            ӄ𝖚𝖓𝖆𝖎,
+            ᴋᴜɴᴀɪ,
             Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
             A𝖗𝖌𝖘,
             "./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊_FIsh.png",
@@ -116,9 +116,9 @@ ${prefix}${Final_Name} _off_`
           });
           await newServer
             .save()
-            .catch((𝕰𝖗𝖗𝖔𝖗) => Caught(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝕰𝖗𝖗𝖔𝖗));
+            .catch((𝕰𝖗𝖗𝖔𝖗) => Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝕰𝖗𝖗𝖔𝖗));
           return await Image_Button(
-            ӄ𝖚𝖓𝖆𝖎,
+            ᴋᴜɴᴀɪ,
             Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
             A𝖗𝖌𝖘,
             "./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊_FIsh.png",
@@ -128,9 +128,9 @@ ${F𝖚𝖑𝖑_A𝖗𝖌𝖘}`
           `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
         } else {
           userWel.message = F𝖚𝖑𝖑_A𝖗𝖌𝖘;
-          await userWel.save().catch((𝕰𝖗𝖗𝖔𝖗) => Caught(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝕰𝖗𝖗𝖔𝖗));
+          await userWel.save().catch((𝕰𝖗𝖗𝖔𝖗) => Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝕰𝖗𝖗𝖔𝖗));
           return await Image_Button(
-            ӄ𝖚𝖓𝖆𝖎,
+            ᴋᴜɴᴀɪ,
             Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
             A𝖗𝖌𝖘,
             "./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊_FIsh.png",
@@ -141,7 +141,7 @@ ${F𝖚𝖑𝖑_A𝖗𝖌𝖘}`
         `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
       } else {
         return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-          ӄ𝖚𝖓𝖆𝖎,
+          ᴋᴜɴᴀɪ,
           Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
           `*❌ERROR:*  Argument Needed!
 

@@ -39,7 +39,7 @@ let Final_Name = Script_Name.slice(0, -3).toLowerCase();
 let { Caught } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌀B𝖚𝖙𝖙𝖔𝖓𝖘/Caught");
 `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
 exports.fish = async (
-  ӄ𝖚𝖓𝖆𝖎,
+  ᴋᴜɴᴀɪ,
   Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
   A𝖗𝖌𝖘,
   pushName,
@@ -61,14 +61,14 @@ exports.fish = async (
   mentionByTag,
   mentionByReply
 ) => {
-  if (!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup) return await Group_Only(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
+  if (!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup) return await Group_Only(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
   `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
   await Economy.findOne(
     {
       ID: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender,
     },
     async (𝕰𝖗𝖗𝖔𝖗, userEco) => {
-      if (𝕰𝖗𝖗𝖔𝖗) return Caught(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝕰𝖗𝖗𝖔𝖗);
+      if (𝕰𝖗𝖗𝖔𝖗) return Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝕰𝖗𝖗𝖔𝖗);
       if (!userEco) {
         let newUser = new Economy({
           ID: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender,
@@ -80,9 +80,9 @@ exports.fish = async (
           workdone: 0,
           worktimeout: 900000,
         });
-        await newUser.save().catch((𝕰𝖗𝖗𝖔𝖗) => Caught(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝕰𝖗𝖗𝖔𝖗));
+        await newUser.save().catch((𝕰𝖗𝖗𝖔𝖗) => Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝕰𝖗𝖗𝖔𝖗));
         return await Image_Button(
-          ӄ𝖚𝖓𝖆𝖎,
+          ᴋᴜɴᴀɪ,
           Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
           A𝖗𝖌𝖘,
           "./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊_DB.png",
@@ -98,7 +98,7 @@ exports.fish = async (
         if (userEco.fishtimeout - (Date.now() - userEco.fishdone) > 0) {
           let time = ms(userEco.fishtimeout - (Date.now() - userEco.fishdone));
           return await Image_Button(
-            ӄ𝖚𝖓𝖆𝖎,
+            ᴋᴜɴᴀɪ,
             Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
             A𝖗𝖌𝖘,
             "./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊_FIsh.png",
@@ -124,9 +124,9 @@ exports.fish = async (
           userEco.money = userEco.money + worth;
           userEco.fishdone = Date.now();
           userEco.fishtimeout = 1800000;
-          userEco.save().catch((𝕰𝖗𝖗𝖔𝖗) => Caught(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝕰𝖗𝖗𝖔𝖗));
+          userEco.save().catch((𝕰𝖗𝖗𝖔𝖗) => Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝕰𝖗𝖗𝖔𝖗));
           return await Image_Button(
-            ӄ𝖚𝖓𝖆𝖎,
+            ᴋᴜɴᴀɪ,
             Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
             A𝖗𝖌𝖘,
             "./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊_FIsh.png",

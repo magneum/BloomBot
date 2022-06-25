@@ -39,7 +39,7 @@ let Final_Name = Script_Name.slice(0, -3).toLowerCase();
 let { Caught } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌀B𝖚𝖙𝖙𝖔𝖓𝖘/Caught");
 `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
 exports.toimg = async (
-  ӄ𝖚𝖓𝖆𝖎,
+  ᴋᴜɴᴀɪ,
   Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
   A𝖗𝖌𝖘,
   pushName,
@@ -61,7 +61,7 @@ exports.toimg = async (
   mentionByTag,
   mentionByReply
 ) => {
-  if (!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup) return await Group_Only(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
+  if (!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup) return await Group_Only(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
   `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
   let mime = (Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.quoted.msg || Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.quoted).mimetype || "";
   if (
@@ -70,7 +70,7 @@ exports.toimg = async (
   ) {
     if (!quoted) {
       return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-        ӄ𝖚𝖓𝖆𝖎,
+        ᴋᴜɴᴀɪ,
         Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
         `*❌ERROR:*  Could not find any sticker in context!
 
@@ -79,21 +79,21 @@ exports.toimg = async (
     }
     if (!/webp/.test(mime)) {
       return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-        ӄ𝖚𝖓𝖆𝖎,
+        ᴋᴜɴᴀɪ,
         Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
         `*❌ERROR:*  Could not find any sticker in context!
 
 *⚡USAGE:* ${prefix}${Final_Name} <Tag the sticker>`
       );
     }
-    let media = await ӄ𝖚𝖓𝖆𝖎.downloadAndSaveMediaMessage(quoted);
+    let media = await ᴋᴜɴᴀɪ.downloadAndSaveMediaMessage(quoted);
     let ran = await getRandom(`.png`);
     exec(`ffmpeg -i ${media} ${ran}`, async (𝕰𝖗𝖗𝖔𝖗) => {
       fs.unlinkSync(media);
       if (𝕰𝖗𝖗𝖔𝖗) Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.reply(𝕰𝖗𝖗𝖔𝖗);
       let buffer = fs.readFileSync(ran);
       await Image_Button(
-        ӄ𝖚𝖓𝖆𝖎,
+        ᴋᴜɴᴀɪ,
         Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
         A𝖗𝖌𝖘,
         buffer,
@@ -107,7 +107,7 @@ exports.toimg = async (
   ) {
     if (!quoted) {
       return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-        ӄ𝖚𝖓𝖆𝖎,
+        ᴋᴜɴᴀɪ,
         Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
         `*❌ERROR:*  Could not find any sticker in context!
 
@@ -117,16 +117,16 @@ exports.toimg = async (
 
     if (!/webp/.test(mime)) {
       return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-        ӄ𝖚𝖓𝖆𝖎,
+        ᴋᴜɴᴀɪ,
         Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
         `*❌ERROR:*  Could not find any sticker in context!
 
 *⚡USAGE:* ${prefix}${Final_Name} <Tag the sticker>`
       );
     }
-    let media = await ӄ𝖚𝖓𝖆𝖎.downloadAndSaveMediaMessage(quoted);
+    let media = await ᴋᴜɴᴀɪ.downloadAndSaveMediaMessage(quoted);
     let webpToMp4 = await webp2mp4File(media);
-    await ӄ𝖚𝖓𝖆𝖎.sendMessage(
+    await ᴋᴜɴᴀɪ.sendMessage(
       Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
       {
         video: {
