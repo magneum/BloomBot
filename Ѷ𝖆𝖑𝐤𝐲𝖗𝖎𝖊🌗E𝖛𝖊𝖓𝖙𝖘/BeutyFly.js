@@ -28,8 +28,7 @@ console.log(
     Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID
     )
     );
-
-
+    𝐒𝐞𝐧𝐝𝐞𝐫𝐍𝐚𝐦𝐞
 
 await ᴋᴜɴᴀɪ.sendReadReceipt(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender, [
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id,
