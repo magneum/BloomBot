@@ -9,13 +9,14 @@ let moment = require(`moment-timezone`);
 let Time = moment.tz(`Asia/Kolkata`).format(`DD/MM HH:mm:ss`);
 exports.Video_Button = async (ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, A𝖗𝖌𝖘, M𝖊𝖉𝖎𝖆, 𝕮𝖔𝖓𝖙𝖊𝖓𝖙) => {
 // await ᴋᴜɴᴀɪ.sendPresenceUpdate("composing", Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID);
+let React;
 if (Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply) {
 var Receiver =
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype == "extendedTextMessage" &&
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.extendedTextMessage.contextInfo != null
 ? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.extendedTextMessage.contextInfo.participant || ""
 : "";
-let React = await ᴋᴜɴᴀɪ
+React = await ᴋᴜɴᴀɪ
 .sendMessage(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
 {
@@ -55,7 +56,7 @@ var Receiver =
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.extendedTextMessage.contextInfo != null
 ? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.extendedTextMessage.contextInfo.mentionedJid
 : [];
-let React = await ᴋᴜɴᴀɪ
+React = await ᴋᴜɴᴀɪ
 .sendMessage(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
 {
@@ -90,7 +91,7 @@ quoted: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
 .catch((e) => console.log(e));
 ("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
 } else {
-let React = await ᴋᴜɴᴀɪ
+React = await ᴋᴜɴᴀɪ
 .sendMessage(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
 {
