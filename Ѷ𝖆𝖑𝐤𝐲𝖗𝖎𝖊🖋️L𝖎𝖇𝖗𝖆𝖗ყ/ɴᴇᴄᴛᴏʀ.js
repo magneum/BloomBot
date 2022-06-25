@@ -233,30 +233,19 @@ if (Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message) {
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.msg =
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype == "viewOnceMessage"
 ? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message[Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype].message[
-  getContentType(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message[Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype].message)
+getContentType(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message[Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype].message)
 ]
 : Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message[Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype];
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body =
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype === `conversation`
-? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.conversation
-: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype == `imageMessage`
-? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.imageMessage.caption
-: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype == `videoMessage`
-? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.videoMessage.caption
-: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype == `extendedTextMessage`
-? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.extendedTextMessage.text
-: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype == `buttonsResponseMessage`
-? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.buttonsResponseMessage.selectedButtonId
-: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype == `listResponseMessage`
-? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.listResponseMessage.singleSelectReply.selectedRowId
-: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype == `templateButtonReplyMessage`
-? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.templateButtonReplyMessage.selectedId
-: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype === `messageContextInfo`
-? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.buttonsResponseMessage?.selectedButtonId ||
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.listResponseMessage?.singleSelectReply
-  .selectedRowId ||
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.text
-: "";
+Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.body =
+Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.conversation ||
+Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.msg.caption ||
+Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.msg.text ||
+(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype == "listResponseMessage" &&
+Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.msg.singleSelectReply.selectedRowId) ||
+(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype == "buttonsResponseMessage" &&
+Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.msg.selectedButtonId) ||
+(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype == "viewOnceMessage" && Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.msg.caption) ||
+Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.text;
 let quoted = (Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.quoted = Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.msg.contextInfo
 ? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.msg.contextInfo.quotedMessage
 : null);
@@ -349,6 +338,26 @@ forceForward = false,
 options = {}
 ) => ᴋᴜɴᴀɪ.copyNForward(jid, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, forceForward, options);
 ("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
+Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body =
+Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype === `conversation`
+? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.conversation
+: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype == `imageMessage`
+? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.imageMessage.caption
+: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype == `videoMessage`
+? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.videoMessage.caption
+: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype == `extendedTextMessage`
+? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.extendedTextMessage.text
+: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype == `buttonsResponseMessage`
+? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.buttonsResponseMessage.selectedButtonId
+: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype == `listResponseMessage`
+? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.listResponseMessage.singleSelectReply.selectedRowId
+: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype == `templateButtonReplyMessage`
+? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.templateButtonReplyMessage.selectedId
+: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype === `messageContextInfo`
+? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.buttonsResponseMessage?.selectedButtonId ||
+Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.listResponseMessage?.singleSelectReply.selectedRowId ||
+Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.text
+: "";
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply =
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype === `extendedTextMessage` &&
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.extendedTextMessage.hasOwnProperty(`contextInfo`) &&
