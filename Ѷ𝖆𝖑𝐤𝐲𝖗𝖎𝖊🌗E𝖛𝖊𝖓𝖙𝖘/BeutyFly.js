@@ -7,15 +7,15 @@ require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/𝕷�
 exports.BeutyFly = async (ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, Kolor) => {
   console.log(Kolor.red("▷═════════════════════|✠|═════════════════════◁"));
   console.log(
-    Kolor.black(Kolor.bgWhite(`💡Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊:▷ `)),
+    Kolor.black(Kolor.bgWhite(`💡Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊: `)),
     Kolor.black(Kolor.bgGreen(new Date()))
   );
   console.log(
-    Kolor.bgYellowBright(`💡𝐂𝐨𝐦𝐦𝐚𝐧𝐝:▷ `),
+    Kolor.bgYellowBright(`💡𝐂𝐨𝐦𝐦𝐚𝐧𝐝: `),
     Kolor.black(Kolor.blue(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName))
   );
   console.log(
-    Kolor.bgCyanBright(`💡𝐂𝐨𝐧𝐭𝐞𝐧𝐭:▷ `),
+    Kolor.bgCyanBright(`💡𝐂𝐨𝐧𝐭𝐞𝐧𝐭: `),
     Kolor.green(
       Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup ? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.pushName : `Private Chat`,
       Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID
@@ -24,10 +24,10 @@ exports.BeutyFly = async (ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, Kolor) 
   await ᴋᴜɴᴀɪ.sendReadReceipt(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender, [
     Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id,
   ]);
-  console.log("💡𝐢𝐬𝐒𝐞𝐧𝐝𝐞𝐫𝐀𝐝𝐦𝐢𝐧:▷ ", Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderAdmin);
-  console.log("💡𝐢𝐬𝐒𝐞𝐧𝐝𝐞𝐫𝐓𝐔𝐅:▷ ", Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF);
+  console.log("💡𝐢𝐬𝐒𝐞𝐧𝐝𝐞𝐫𝐀𝐝𝐦𝐢𝐧: ", Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderAdmin);
+  console.log("💡𝐢𝐬𝐒𝐞𝐧𝐝𝐞𝐫𝐓𝐔𝐅: ", Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF);
   let 𝕲𝖗𝖔𝖚𝖕𝖒𝖊𝖙𝖆 = await Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.groupMetadata;
-  console.log("💡𝐆𝐫𝐨𝐮𝐩𝐍𝐚𝐦𝐞:▷ ", 𝕲𝖗𝖔𝖚𝖕𝖒𝖊𝖙𝖆.subject || "");
+  console.log("💡𝐆𝐫𝐨𝐮𝐩𝐍𝐚𝐦𝐞: ", 𝕲𝖗𝖔𝖚𝖕𝖒𝖊𝖙𝖆.subject || "");
   if (HEROKU === undefined) {
     console.log(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
   }
