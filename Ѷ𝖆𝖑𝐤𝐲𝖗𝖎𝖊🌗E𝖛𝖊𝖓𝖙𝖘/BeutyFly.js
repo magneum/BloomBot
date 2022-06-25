@@ -15,7 +15,7 @@ Kolor.bgYellowBright(`💡𝐂𝐨𝐦𝐦𝐚𝐧𝐝: `),
 Kolor.black(Kolor.blue(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName))
 );
 console.log(
-Kolor.bgCyanBright(`💡𝐂𝐨𝐧𝐭𝐞𝐧𝐭: `),
+Kolor.bgCyanBright(`🖋️𝐂𝐨𝐧𝐭𝐞𝐧𝐭: `),
 Kolor.green(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup ? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.pushName : `Private Chat`,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID
