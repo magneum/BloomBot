@@ -204,25 +204,39 @@ os.totalmem()
 ║${prefix}shopping
 ╚═══════╝
 
-╔══『 🐾𝐀𝐧𝐢𝐦𝐚𝐭𝐢𝐨𝐧+𝐆𝐢𝐟🐾 』
+╔══『 🐾𝐀𝐧𝐢𝐦𝐞+𝐌𝐚𝐧𝐠𝐚🐾 』
+║${prefix}anime
+║${prefix}manga
+║
+║${prefix}baka
 ║${prefix}bite
 ║${prefix}blush
+║${prefix}bonk
 ║${prefix}bored
 ║${prefix}confused
 ║${prefix}cry
 ║${prefix}cuddle
+║${prefix}dance
 ║${prefix}goodnight
 ║${prefix}happy
+║${prefix}hi5
+║${prefix}highfive
 ║${prefix}hug
 ║${prefix}kick
+║${prefix}kill
 ║${prefix}kiss
+║${prefix}nervous
 ║${prefix}pat
 ║${prefix}poke
+║${prefix}punch
 ║${prefix}sad
-║${prefix}slap
 ║${prefix}smile
+║${prefix}stare
 ║${prefix}wave
 ║${prefix}wink
+║${prefix}yeet
+║${prefix}yes
+║${prefix}zerotwo
 ╚═══════╝
 
 ╔══『 ⭕𝐘𝐨𝐮𝐓𝐮𝐛𝐞+𝐅𝐢𝐥𝐭𝐞𝐫⭕ 』
@@ -308,9 +322,6 @@ os.totalmem()
 ╚═══════╝
 
 ╔══『 👇🏽 𝐒𝐞𝐚𝐫𝐜𝐡 👇🏽』
-║${prefix}anime
-║${prefix}manga
-║•
 ║${prefix}gify
 ║${prefix}gif
 ║${prefix}google
@@ -323,7 +334,6 @@ os.totalmem()
 ║${prefix}pinterest
 ║${prefix}pokemon
 ║${prefix}wallpaper
-║•
 ║${prefix}yts
 ║${prefix}ytsearch
 ║${prefix}ytscrape
