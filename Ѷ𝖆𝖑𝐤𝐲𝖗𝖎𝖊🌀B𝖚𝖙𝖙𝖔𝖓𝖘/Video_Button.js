@@ -8,14 +8,14 @@ let { Caught } = require("./Caught");
 let moment = require(`moment-timezone`);
 let Time = moment.tz(`Asia/Kolkata`).format(`DD/MM HH:mm:ss`);
 exports.Video_Button = async (ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, A𝖗𝖌𝖘, M𝖊𝖉𝖎𝖆, 𝕮𝖔𝖓𝖙𝖊𝖓𝖙) => {
-// await ᴋᴜɴᴀɪ.sendPresenceUpdate("composing", Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID);
+await ᴋᴜɴᴀɪ.sendPresenceUpdate("composing", Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID);
 return await ᴋᴜɴᴀɪ
 .sendMessage(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
 {
 contextInfo: { mentionedJid: [Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender] },
 video: { url: M𝖊𝖉𝖎𝖆 },
-caption: `╔══『 𝐏𝐫𝐨𝐭𝐨𝐓𝐲𝐩𝐞® 』
+caption: `╔══『 𝐏𝐫𝐨𝐟𝐢𝐥𝐞𝐫® 』
 ║ *❣️ ɴᴀᴍᴇ:* ${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.pushName || "No_Name"}
 ║ *⚡ ɪᴅ:* ${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID.split("@")[0]}
 ╚═══════╝
