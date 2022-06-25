@@ -49,7 +49,7 @@ exports.BeutyFly = async (ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, Kolor) 
       caption: `
 ▷═════|✠|═════◁
 💡Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊: ${new Date()}
-💡𝐒𝐞𝐧𝐝𝐞𝐫:
+💡𝐒𝐞𝐧𝐝𝐞𝐫: ${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.pushName || "No_Name"}
 💡𝐒𝐞𝐧𝐝𝐞𝐫𝐍𝐚𝐦𝐞:
 💡𝐂𝐨𝐧𝐭𝐞𝐧𝐭: ${
         (Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup ? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.pushName : `Private Chat`, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID)
