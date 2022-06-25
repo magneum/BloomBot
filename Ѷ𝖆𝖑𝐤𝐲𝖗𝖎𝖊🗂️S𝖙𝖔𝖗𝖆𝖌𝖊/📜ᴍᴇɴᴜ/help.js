@@ -197,6 +197,11 @@ ${cpus
 ║${prefix}gold
 ║${prefix}money
 ║${prefix}balance
+║${prefix}buy
+║${prefix}store
+║${prefix}shop
+║${prefix}mall
+║${prefix}shopping
 ╚═══════╝
 
 ╔══『 🐾𝐀𝐧𝐢𝐦𝐚𝐭𝐢𝐨𝐧+𝐆𝐢𝐟🐾 』
