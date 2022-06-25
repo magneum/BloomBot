@@ -65,10 +65,10 @@ mentionByReply
 ) => {
 if (!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup) return await Group_Only(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
 `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
-const MoneyRandom = Math.floor(Math.random() * (2000 - 1500 + 1)) + 1500;
-const MoneyLaptop = Math.floor(Math.random() * (4000 - 3000 + 1)) + 3000;
-const MoneyCharm = Math.floor(Math.random() * (6000 - 5000 + 1)) + 5000;
-const MoneySword = Math.floor(Math.random() * (2000 - 1000 + 1)) + 1000;
+let MoneyRandom = Math.floor(Math.random() * (2000 - 1500 + 1)) + 1500;
+let MoneyLaptop = Math.floor(Math.random() * (4000 - 3000 + 1)) + 3000;
+let MoneyCharm = Math.floor(Math.random() * (6000 - 5000 + 1)) + 5000;
+let MoneySword = Math.floor(Math.random() * (2000 - 1000 + 1)) + 1000;
 if (isReply) {
 var Receiver = Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.extendedTextMessage.contextInfo.participant;
 var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
