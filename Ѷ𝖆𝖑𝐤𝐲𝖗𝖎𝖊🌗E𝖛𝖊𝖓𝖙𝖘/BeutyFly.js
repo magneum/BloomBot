@@ -23,7 +23,7 @@ Kolor.green(
 );
 console.log(Kolor.bgCyanBright(`💡𝐒𝐞𝐧𝐝𝐞𝐫: `), Kolor.green(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender));
 console.log(
-Kolor.bgCyanBright(`💡𝐒𝐞𝐧𝐝𝐞𝐫𝐍𝐚𝐦𝐞: `),
+Kolor.bgCyanBright(`🧛🏽‍♂️𝐒𝐞𝐧𝐝𝐞𝐫𝐍𝐚𝐦𝐞: `),
 Kolor.green(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.pushName || "No_Name")
 );
 ("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
