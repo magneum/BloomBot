@@ -64,8 +64,15 @@ exports.remove = async (
   if (!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup) return await Group_Only(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
   if (!isSenderAdmin) return await Sender_Not_Admin(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
   `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
-  if (isReply) {
+  if (isReply && !mentionByTag) {
     let ʀᴇᴘʟɪᴇᴅ = Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.extendedTextMessage.contextInfo.participant;
+    if (Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isCreator === ʀᴇᴘʟɪᴇᴅ) {
+      return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
+        ᴋᴜɴᴀɪ,
+        Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+        `*❌ERROR:*  You dumb! Cant't Kick Bot Owner.`
+      );
+    }
     await ᴋᴜɴᴀɪ.sendMessage(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, {
       text: `Kicked @${ʀᴇᴘʟɪᴇᴅ.split(`@`)[0]} successfuly `,
       contextInfo: { mentionedJid: [ʀᴇᴘʟɪᴇᴅ] },
@@ -76,9 +83,16 @@ exports.remove = async (
       `remove`
     );
     `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
-  } else if (mentionByTag) {
+  } else if (mentionByTag && !isReply) {
     let mention = mentionByTag;
     let users = (await mention[0]) || Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.msg.contextInfo.participant;
+    if (Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isCreator === users) {
+      return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
+        ᴋᴜɴᴀɪ,
+        Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+        `*❌ERROR:*  You dumb! Cant't Kick Bot Owner.`
+      );
+    }
     if (!users) {
       return Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.reply(`*❌ERROR:* Couldn't find any userID in context`);
     }
