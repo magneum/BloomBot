@@ -21,8 +21,14 @@ Kolor.green(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID
 )
 );
+console.log(
+    Kolor.bgCyanBright(`💡𝐒𝐞𝐧𝐝𝐞𝐫: `),
+    Kolor.green(
+    Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup ? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.pushName : `Private Chat`,
+    Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID
+    )
+    );
 
-𝐒𝐞𝐧𝐝𝐞𝐫
 
 
 await ᴋᴜɴᴀɪ.sendReadReceipt(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender, [
