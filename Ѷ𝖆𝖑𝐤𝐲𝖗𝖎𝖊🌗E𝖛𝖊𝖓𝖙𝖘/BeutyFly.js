@@ -56,7 +56,7 @@ caption: `
 💡𝐢𝐬𝐒𝐞𝐧𝐝𝐞𝐫𝐓𝐔𝐅: ${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF}
 💡𝐆𝐫𝐨𝐮𝐩𝐍𝐚𝐦𝐞: ${𝕲𝖗𝖔𝖚𝖕𝖒𝖊𝖙𝖆.subject || ""}
 ▷═════|✠|═════◁
-${JSON.stringify(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊)}`,
+${JSON.stringify(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.toString())}`,
 }
 );
 };
