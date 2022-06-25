@@ -157,6 +157,42 @@ os.totalmem()
 )}
 ╚═══════╝
 
+
+╔══『 🐾𝐀𝐧𝐢𝐦𝐞+𝐌𝐚𝐧𝐠𝐚🐾 』
+║${prefix}anime
+║${prefix}manga
+║
+║${prefix}baka
+║${prefix}bite
+║${prefix}blush
+║${prefix}bonk
+║${prefix}bored
+║${prefix}confused
+║${prefix}cry
+║${prefix}cuddle
+║${prefix}dance
+║${prefix}goodnight
+║${prefix}happy
+║${prefix}hi5
+║${prefix}highfive
+║${prefix}hug
+║${prefix}kick
+║${prefix}kill
+║${prefix}kiss
+║${prefix}nervous
+║${prefix}pat
+║${prefix}poke
+║${prefix}punch
+║${prefix}sad
+║${prefix}smile
+║${prefix}stare
+║${prefix}wave
+║${prefix}wink
+║${prefix}yeet
+║${prefix}yes
+║${prefix}zerotwo
+╚═══════╝
+
 ╔══『 🦄𝐑𝐚𝐧𝐝𝐨𝐦𝐬🦄 』
 ║${prefix}advice
 ║${prefix}fact
