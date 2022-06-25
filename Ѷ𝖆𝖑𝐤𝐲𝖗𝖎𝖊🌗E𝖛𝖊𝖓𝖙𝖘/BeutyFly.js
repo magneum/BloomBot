@@ -11,7 +11,7 @@ Kolor.black(Kolor.bgWhite(`💡𝐓𝐢𝐦𝐞: `)),
 Kolor.black(Kolor.bgGreen(new Date()))
 );
 console.log(
-Kolor.bgYellowBright(`💡𝐂𝐨𝐦𝐦𝐚𝐧𝐝: `),
+Kolor.bgYellowBright(`💤𝐂𝐨𝐦𝐦𝐚𝐧𝐝: `),
 Kolor.black(Kolor.blue(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName))
 );
 console.log(
@@ -47,7 +47,7 @@ text: `🕐𝐓𝐢𝐦𝐞: ${new Date()}
 ▷═════════|✠|═════════◁
 🥷𝐒𝐞𝐧𝐝𝐞𝐫: ${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender}
 🧛🏽‍♂️𝐒𝐞𝐧𝐝𝐞𝐫𝐍𝐚𝐦𝐞: ${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.pushName || "No_Name"} 
-💡𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName}
+💤𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName}
 🖋️𝐂𝐨𝐧𝐭𝐞𝐧𝐭: ${(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup ? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.pushName : `Private Chat`, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID)}
 ❗𝐢𝐬𝐒𝐞𝐧𝐝𝐞𝐫𝐀𝐝𝐦𝐢𝐧: ${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderAdmin}
 ⚡𝐢𝐬𝐒𝐞𝐧𝐝𝐞𝐫𝐓𝐔𝐅: ${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF}
