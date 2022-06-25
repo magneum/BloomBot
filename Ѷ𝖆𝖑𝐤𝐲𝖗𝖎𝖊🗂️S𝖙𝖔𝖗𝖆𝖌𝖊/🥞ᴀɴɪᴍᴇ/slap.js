@@ -19,7 +19,6 @@ let chalk = require(`chalk`);
 let db = require(`quick.db`);
 let axios = require(`axios`);
 let canvacord = require(`canvacord`);
-``;
 let ᴀɴɪᴍᴇ = require(`anime-actions`);
 let FFmpeg = require(`fluent-ffmpeg`);
 let ᴀɴɪᴍᴇ2 = require(`anime-actions`);
@@ -70,16 +69,13 @@ exports.slap = async (
   let ɢᴏᴛꜰɪʟᴇ = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.gif`;
   let ɢɪᴠᴇꜰɪʟᴇ = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.mp4`;
   let ꜰɪɴᴀʟʟɪɴᴋ = await fetchJson(`https://api.waifu.pics/sfw/${Final_Name}`);
-  if (!ꜰɪɴᴀʟʟɪɴᴋ) {
+  const Response = await axios.get(ꜰɪɴᴀʟʟɪɴᴋ.url, {
+    responseType: "arraybuffer",
+  });
+  if (!Response.data) {
     return await Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝕰𝖗𝖗𝖔𝖗);
   }
-  if (ꜰɪɴᴀʟʟɪɴᴋ == "") {
-    return await Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝕰𝖗𝖗𝖔𝖗);
-  }
-  if (ꜰɪɴᴀʟʟɪɴᴋ === "") {
-    return await Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝕰𝖗𝖗𝖔𝖗);
-  }
-  let dl𝐀𝐩𝐢 = new DownloaderHelper(ꜰɪɴᴀʟʟɪɴᴋ, "./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌", {
+  let dl𝐀𝐩𝐢 = new DownloaderHelper(Response.data, "./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌", {
     fileName: `${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.gif`,
     retry: true,
   });
