@@ -22,7 +22,11 @@ let canvacord = require(`canvacord`);
 let { Character } = require(`mailist`);
 let moment = require(`moment-timezone`);
 let Carbon = require(`unofficial-carbon-now`);
+const First_Try_Lyrics = require(`genius-lyrics`);
+const Third_Try_Lyrics = require(`music-lyrics`);
 let { exec, execSync } = require(`child_process`);
+const GeniusClient = new First_Try_Lyrics.Client();
+const Second_Try_Lyrics = require(`songlyrics`).default;
 let { N𝖊𝖊𝖉__A𝖗𝖌𝖘 } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌀B𝖚𝖙𝖙𝖔𝖓𝖘/N𝖊𝖊𝖉__A𝖗𝖌𝖘");
 let { Sticker, StickerTypes } = require(`wa-sticker-formatter`);
 let { Group_Only } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧭S𝖜𝖎𝖙𝖈𝖍/Group_Only");
@@ -73,17 +77,49 @@ exports.lyrics = async (
 *⚡USAGE:* ${prefix}${Final_Name} <Term>`
     );
   }
-  let searches = await Client.songs.search(F𝖚𝖑𝖑_A𝖗𝖌𝖘);
-  let firstSong = searches[0];
-  let lyrics = await firstSong.lyrics();
-  let reactionMessage = {
-    react: {
-      text: `🎶`,
-      key: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key,
-    },
-  };
-  await ᴋᴜɴᴀɪ.sendMessage(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, reactionMessage);
-  return await Image_Button(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, A𝖗𝖌𝖘, firstSong.thumbnail, lyrics);
+  `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
+  try {
+    try {
+      const searches = await GeniusClient.songs.search(F𝖚𝖑𝖑_A𝖗𝖌𝖘);
+      const GeniusSong = searches[0];
+      const Geniuslyrics = await GeniusSong.lyrics();
+      return await Image_Button(
+        ᴋᴜɴᴀɪ,
+        Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+        A𝖗𝖌𝖘,
+        GeniusSong.raw.song_art_image_thumbnail_url,
+        `📜 𝗟𝘆𝗿𝗶𝗰𝘀 𝗙𝗼𝘂𝗻𝗱 𝗙𝗼𝗿: _${F𝖚𝖑𝖑_A𝖗𝖌𝖘}_
+🎹 𝐓𝐢𝐭𝐥𝐞: ${GeniusSong.raw.title}
+💡 𝗟𝘆𝗿𝗶𝗰𝘀 𝗦𝗼𝘂𝗿𝗰𝗲: _Genius-Lyrics_
+🔗 𝗟𝘆𝗿𝗶𝗰𝘀 𝗨𝗿𝗹: ${GeniusSong.raw.url}
+
+${Geniuslyrics}`
+      );
+      `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
+    } catch (error) {
+      const lyricssong = await Second_Try_Lyrics(F𝖚𝖑𝖑_A𝖗𝖌𝖘);
+      return await Image_Button(
+        ᴋᴜɴᴀɪ,
+        Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+        A𝖗𝖌𝖘,
+        "./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊_FIsh.png",
+        `📜 𝗟𝘆𝗿𝗶𝗰𝘀 𝗙𝗼𝘂𝗻𝗱 𝗙𝗼𝗿: _${F𝖚𝖑𝖑_A𝖗𝖌𝖘}_
+💡 𝗟𝘆𝗿𝗶𝗰𝘀 𝗦𝗼𝘂𝗿𝗰𝗲: ${lyricssong.source.name}
+🔗 𝗟𝘆𝗿𝗶𝗰𝘀 𝗨𝗿𝗹: ${lyricssong.source.link}
+
+${lyricssong.lyrics}`
+      );
+    }
+    `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
+  } catch (error) {
+    return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
+      ᴋᴜɴᴀɪ,
+      Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+      `*❌ERROR:* No Such Song Lyrics Found!
+
+*⚡USAGE:* ${prefix}${Final_Name} <lyrics name>`
+    );
+  }
 };
 ("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
 /*

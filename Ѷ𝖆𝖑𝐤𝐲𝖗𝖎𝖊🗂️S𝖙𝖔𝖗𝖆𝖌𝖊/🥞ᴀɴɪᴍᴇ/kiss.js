@@ -18,7 +18,8 @@ let hxz = require(`hxz-api`);
 let chalk = require(`chalk`);
 let db = require(`quick.db`);
 let axios = require(`axios`);
-let canvacord = require(`canvacord`);``
+let canvacord = require(`canvacord`);
+``;
 let ᴀɴɪᴍᴇ = require(`anime-actions`);
 let FFmpeg = require(`fluent-ffmpeg`);
 let ᴀɴɪᴍᴇ2 = require(`anime-actions`);
@@ -69,6 +70,12 @@ exports.kiss = async (
   let ɢᴏᴛꜰɪʟᴇ = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.gif`;
   let ɢɪᴠᴇꜰɪʟᴇ = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.mp4`;
   let ꜰɪɴᴀʟʟɪɴᴋ = await fetchJson(`https://api.waifu.pics/sfw/${Final_Name}`);
+  if (!ꜰɪɴᴀʟʟɪɴᴋ) {
+    return await Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝕰𝖗𝖗𝖔𝖗);
+  }
+  if (!ꜰɪɴᴀʟʟɪɴᴋ.endsWith(".gif") && !ꜰɪɴᴀʟʟɪɴᴋ.endsWith(".mp4")) {
+    return await Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝕰𝖗𝖗𝖔𝖗);
+  }
   let dl𝐀𝐩𝐢 = new DownloaderHelper(ꜰɪɴᴀʟʟɪɴᴋ, "./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌", {
     fileName: `${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}}.gif`,
     retry: true,
