@@ -40,7 +40,6 @@ return await Image_Button(
 
 🌿𝐏𝐮𝐧𝐢𝐬𝐡𝐦𝐞𝐧𝐭
 • 𝗪𝗮𝗿𝗻𝗶𝗻𝗴𝘀: 1/4
-• 𝗪𝗮𝗿𝗻𝗲𝗱 𝗧𝗼: @${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender.replace(/[^\d+]/g, "")}
 • You Will be Auto-Blocked After 4 warnings!`
 );
 } else if (user.Amount < 4) {
@@ -59,7 +58,6 @@ return await Image_Button(
 
 🌿𝐏𝐮𝐧𝐢𝐬𝐡𝐦𝐞𝐧𝐭
 • 𝗪𝗮𝗿𝗻𝗶𝗻𝗴𝘀: ${user.Amount}/4
-• 𝗪𝗮𝗿𝗻𝗲𝗱 𝗧𝗼: @${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender.replace(/[^\d+]/g, "")}
 • You Will be Auto-Blocked After 4 warnings!`
 );
 } else {
