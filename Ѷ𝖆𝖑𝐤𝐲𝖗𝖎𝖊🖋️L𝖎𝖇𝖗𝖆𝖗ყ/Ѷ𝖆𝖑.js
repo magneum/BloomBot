@@ -109,7 +109,7 @@ module.exports = ᴋᴜɴᴀɪ = async (ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗�
       await ᴋᴜɴᴀɪ.sendMessage(
         Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
         {
-          text: "*💡Valkyrie Is Not Updating!\nWait For 30-40seconds...*",
+          text: "*💡Valkyrie Is Now Updating!\nWait For 30-40seconds...*",
           mentions: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.participants.map((a) => a.id),
         },
         { quoted: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 }
