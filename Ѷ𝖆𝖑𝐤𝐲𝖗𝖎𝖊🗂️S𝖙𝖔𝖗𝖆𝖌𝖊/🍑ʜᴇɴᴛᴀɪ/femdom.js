@@ -61,9 +61,9 @@ exports.femdom = async (
   mentionByTag,
   mentionByReply
 ) => {
-  if (!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup) return await Group_Only(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
-  if (!isSenderAdmin && !isSenderTUF)
+  if (!isSenderAdmin && !isSenderTUF) {
     return await Sender_Not_Admin(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
+  }
   `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
   let RawTai = await akaneko.nsfw.femdom();
   await Image_Button(
