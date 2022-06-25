@@ -23,6 +23,7 @@ let { Character } = require(`mailist`);
 let moment = require(`moment-timezone`);
 let Carbon = require(`unofficial-carbon-now`);
 let { exec, execSync } = require(`child_process`);
+let { AnimeWallpaper } = require("anime-wallpaper");
 let { N𝖊𝖊𝖉__A𝖗𝖌𝖘 } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌀B𝖚𝖙𝖙𝖔𝖓𝖘/N𝖊𝖊𝖉__A𝖗𝖌𝖘");
 let { Sticker, StickerTypes } = require(`wa-sticker-formatter`);
 let { Group_Only } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧭S𝖜𝖎𝖙𝖈𝖍/Group_Only");
