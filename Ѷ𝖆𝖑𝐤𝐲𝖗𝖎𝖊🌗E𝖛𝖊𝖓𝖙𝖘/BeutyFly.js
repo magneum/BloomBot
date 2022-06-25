@@ -23,10 +23,7 @@ exports.BeutyFly = async (ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, Kolor) 
   );
   console.log(
     Kolor.bgCyanBright(`💡𝐒𝐞𝐧𝐝𝐞𝐫: `),
-    Kolor.green(
-      Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup ? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.pushName : `Private Chat`,
-      Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID
-    )
+    Kolor.green(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.pushName : `Private Chat`,)
   );
   console.log(
     Kolor.bgCyanBright(`💡𝐒𝐞𝐧𝐝𝐞𝐫𝐍𝐚𝐦𝐞: `),
