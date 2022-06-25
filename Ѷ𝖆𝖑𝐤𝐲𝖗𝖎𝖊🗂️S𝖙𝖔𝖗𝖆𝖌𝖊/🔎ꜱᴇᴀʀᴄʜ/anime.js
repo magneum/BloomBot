@@ -67,8 +67,8 @@ exports.anime = async (
       ᴋᴜɴᴀɪ,
       Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
       `*❌ERROR:* No query provided!
-
-${prefix}${Final_Name} <anime name>`
+      
+*⚡USAGE:* ${prefix}${Final_Name} <anime name>`
     );
   }
 

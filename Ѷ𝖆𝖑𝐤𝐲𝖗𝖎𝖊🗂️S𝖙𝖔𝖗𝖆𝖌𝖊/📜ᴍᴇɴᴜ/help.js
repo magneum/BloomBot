@@ -190,6 +190,9 @@ ${cpus
 ║${prefix}loan
 ║${prefix}borrow
 ║${prefix}payment
+║${prefix}rob
+║${prefix}thief
+║${prefix}robbery
 ╚═══════╝
 
 ╔══『 🐾𝐀𝐧𝐢𝐦𝐚𝐭𝐢𝐨𝐧+𝐆𝐢𝐟🐾 』
