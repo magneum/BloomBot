@@ -84,7 +84,7 @@ exports.steal = async (
       quality: 75,
       background: `transparent`,
     });
-    let buffer = await sticker.toBuffer();
+    let buffer = await Sticker.toBuffer();
     await ᴋᴜɴᴀɪ.sendMessage(
       Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
       { sticker: buffer },
