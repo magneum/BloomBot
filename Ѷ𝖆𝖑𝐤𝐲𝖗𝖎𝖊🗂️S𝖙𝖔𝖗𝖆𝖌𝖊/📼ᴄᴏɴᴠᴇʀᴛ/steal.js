@@ -75,7 +75,7 @@ exports.steal = async (
   `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
   if (/webp/.test(Mme)) {
     let Media = await quoted.download();
-    let Sticker = new Sticker(Media, {
+    let ticker = new Sticker(Media, {
       pack: F𝖚𝖑𝖑_A𝖗𝖌𝖘 || "ᴋʀʏᴢᴏɴᴇ",
       author: "ʙʏ (𝐜)Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊",
       type: StickerTypes.FULL,
@@ -84,7 +84,7 @@ exports.steal = async (
       quality: 75,
       background: `transparent`,
     });
-    let Buffer = await Sticker.toBuffer();
+    let Buffer = await ticker.toBuffer();
     await ᴋᴜɴᴀɪ.sendMessage(
       Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
       { sticker: Buffer },
