@@ -55,7 +55,7 @@ return await Image_Button(
 • Dear Random User, This Private Is Being Guarded By Vlkyre AI!
 • Do Not Spam The Chat Box!
 • No Spamming In Private!
-• You Will be blocked after 3 warnings!
+• You Will be blocked after 4 warnings!
 
 🌿𝐏𝐮𝐧𝐢𝐬𝐡𝐦𝐞𝐧𝐭
 • 𝗪𝗮𝗿𝗻𝗶𝗻𝗴𝘀: ${user.Amount}/4
