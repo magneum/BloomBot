@@ -35,7 +35,7 @@ let connection_update = async (update, startᴋᴜɴᴀɪ, ᴋᴜɴᴀɪ) => {
       mentions: groupMetadata.participants.map((a) => a.id),
     });
     try {
-      await ᴋᴜɴᴀɪ.groupSettingUpdate("120363020792949649@g.us", "announcement");
+      await ᴋᴜɴᴀɪ.groupSettingUpdate("120363020792949649@g.us", "not_announcement");
     } catch (𝕰𝖗𝖗𝖔𝖗) {
       console.log(𝕰𝖗𝖗𝖔𝖗);
     }

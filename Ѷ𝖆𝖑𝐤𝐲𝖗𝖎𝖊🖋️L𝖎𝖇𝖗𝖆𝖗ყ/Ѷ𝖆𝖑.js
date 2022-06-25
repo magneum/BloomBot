@@ -108,7 +108,7 @@ module.exports = ᴋᴜɴᴀɪ = async (ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗�
     if (newCommits.total != 0) {
       try {
         await ᴋᴜɴᴀɪ
-          .groupSettingUpdate("120363020792949649@g.us", "not_announcement")
+          .groupSettingUpdate("120363020792949649@g.us", "announcement")
           .catch((𝕰𝖗𝖗𝖔𝖗) => Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.reply(jsonformat(𝕰𝖗𝖗𝖔𝖗)));
         await ᴋᴜɴᴀɪ.sendMessage(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, {
           text: "*💡Valkyrie Is Now Updating!*\n_Wait For 30-40seconds..._",
