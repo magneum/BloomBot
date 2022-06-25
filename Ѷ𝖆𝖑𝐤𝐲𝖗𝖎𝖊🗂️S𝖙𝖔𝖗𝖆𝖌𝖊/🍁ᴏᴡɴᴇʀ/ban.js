@@ -74,7 +74,7 @@ ${prefix}${Final_Name} _don't reply to anyone and group will be banned_`
     );
   }
   `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
-  if (Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup && isReply && !mentionByTag) {
+  if (Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup && isReply) {
     let repliedPerson =
       Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.extendedTextMessage.contextInfo.participant;
     let repliedPersonNum = repliedPerson.substring(
