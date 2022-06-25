@@ -9,7 +9,7 @@ let moment = require(`moment-timezone`);
 let Time = moment.tz(`Asia/Kolkata`).format(`DD/MM HH:mm:ss`);
 exports.N𝖊𝖊𝖉__A𝖗𝖌𝖘 = async (ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝖀𝖘𝖆𝖌𝖊) => {
 // await ᴋᴜɴᴀɪ.sendPresenceUpdate("composing", Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID);
-return await ᴋᴜɴᴀɪ
+await ᴋᴜɴᴀɪ
 .sendMessage(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
 {
@@ -41,6 +41,15 @@ headerType: 4,
 quoted: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
 }
 )
+.catch((e) => Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, e));
+let reactionMessage = {
+react: {
+text: `⚡`,
+key: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key,
+},
+};
+return await ᴋᴜɴᴀɪ
+.sendMessage(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, reactionMessage)
 .catch((e) => Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, e));
 };
 ("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
