@@ -25,7 +25,6 @@ async (𝕰𝖗𝖗𝖔𝖗, userWel) => {
 if (𝕰𝖗𝖗𝖔𝖗) return console.log(𝕰𝖗𝖗𝖔𝖗);
 if (!userWel) return;
 if (𝖚𝖕𝖉𝖆𝖙𝖊.action == "add" && !𝕷𝖆𝖙𝖊𝖘𝖙.includes(ᴋᴜɴᴀɪ.user.id)) {
-console.log(𝕲𝖗𝖔𝖚𝖕𝖒𝖊𝖙𝖆);
 return await ᴋᴜɴᴀɪ
 .sendMessage(𝖚𝖕𝖉𝖆𝖙𝖊.id, {
 contextInfo: { mentionedJid: [𝖚𝖕𝖉𝖆𝖙𝖊.participants[0]] },
