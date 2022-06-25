@@ -195,6 +195,7 @@ os.totalmem()
 
 ╔══『 🦄𝐑𝐚𝐧𝐝𝐨𝐦𝐬🦄 』
 ║シ︎  ${prefix}advice
+║シ︎  ${prefix}rank
 ║シ︎  ${prefix}fact
 ║シ︎  ${prefix}meme
 ║シ︎  ${prefix}neko
