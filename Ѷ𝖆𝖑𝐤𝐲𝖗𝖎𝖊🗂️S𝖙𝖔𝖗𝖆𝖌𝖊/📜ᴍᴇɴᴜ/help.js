@@ -159,255 +159,255 @@ os.totalmem()
 
 
 ╔══『 🐾𝐀𝐧𝐢𝐦𝐞+𝐌𝐚𝐧𝐠𝐚🐾 』
-║${prefix}anime
-║${prefix}manga
+║シ︎  ${prefix}anime
+║シ︎  ${prefix}manga
 ║
-║${prefix}baka
-║${prefix}bite
-║${prefix}blush
-║${prefix}bonk
-║${prefix}bored
-║${prefix}confused
-║${prefix}cry
-║${prefix}cuddle
-║${prefix}dance
-║${prefix}goodnight
-║${prefix}happy
-║${prefix}hi5
-║${prefix}highfive
-║${prefix}hug
-║${prefix}kick
-║${prefix}kill
-║${prefix}kiss
-║${prefix}nervous
-║${prefix}pat
-║${prefix}poke
-║${prefix}punch
-║${prefix}sad
-║${prefix}smile
-║${prefix}stare
-║${prefix}wave
-║${prefix}wink
-║${prefix}yeet
-║${prefix}yes
-║${prefix}zerotwo
+║シ︎  ${prefix}baka
+║シ︎  ${prefix}bite
+║シ︎  ${prefix}blush
+║シ︎  ${prefix}bonk
+║シ︎  ${prefix}bored
+║シ︎  ${prefix}confused
+║シ︎  ${prefix}cry
+║シ︎  ${prefix}cuddle
+║シ︎  ${prefix}dance
+║シ︎  ${prefix}goodnight
+║シ︎  ${prefix}happy
+║シ︎  ${prefix}hi5
+║シ︎  ${prefix}highfive
+║シ︎  ${prefix}hug
+║シ︎  ${prefix}kick
+║シ︎  ${prefix}kill
+║シ︎  ${prefix}kiss
+║シ︎  ${prefix}nervous
+║シ︎  ${prefix}pat
+║シ︎  ${prefix}poke
+║シ︎  ${prefix}punch
+║シ︎  ${prefix}sad
+║シ︎  ${prefix}smile
+║シ︎  ${prefix}stare
+║シ︎  ${prefix}wave
+║シ︎  ${prefix}wink
+║シ︎  ${prefix}yeet
+║シ︎  ${prefix}yes
+║シ︎  ${prefix}zerotwo
 ╚═══════╝
 
 ╔══『 🦄𝐑𝐚𝐧𝐝𝐨𝐦𝐬🦄 』
-║${prefix}advice
-║${prefix}fact
-║${prefix}meme
-║${prefix}neko
-║${prefix}quote
-║${prefix}reddit
-║${prefix}sr
-║${prefix}subreddit
-║${prefix}ship
-║${prefix}waifu
+║シ︎  ${prefix}advice
+║シ︎  ${prefix}fact
+║シ︎  ${prefix}meme
+║シ︎  ${prefix}neko
+║シ︎  ${prefix}quote
+║シ︎  ${prefix}reddit
+║シ︎  ${prefix}sr
+║シ︎  ${prefix}subreddit
+║シ︎  ${prefix}ship
+║シ︎  ${prefix}waifu
 ╚═══════╝
 
 ╔══『 💰𝗚𝗮𝗺𝗲𝘀💰 』
-║${prefix}dly
-║${prefix}daily
-║${prefix}pond
-║${prefix}fish
-║${prefix}fishesh
-║${prefix}bet
-║${prefix}gamble
-║${prefix}betting
-║${prefix}roulette
-║${prefix}hunt
-║${prefix}hunting
-║${prefix}pokehunt
-║${prefix}zoo
-║${prefix}forest
-║${prefix}animals
-║${prefix}pay
-║${prefix}loan
-║${prefix}borrow
-║${prefix}payment
-║${prefix}rob
-║${prefix}thief
-║${prefix}robbery
-║${prefix}bal
-║${prefix}gold
-║${prefix}money
-║${prefix}balance
-║${prefix}buy
-║${prefix}store
-║${prefix}shop
-║${prefix}mall
-║${prefix}shopping
+║シ︎  ${prefix}dly
+║シ︎  ${prefix}daily
+║シ︎  ${prefix}pond
+║シ︎  ${prefix}fish
+║シ︎  ${prefix}fishesh
+║シ︎  ${prefix}bet
+║シ︎  ${prefix}gamble
+║シ︎  ${prefix}betting
+║シ︎  ${prefix}roulette
+║シ︎  ${prefix}hunt
+║シ︎  ${prefix}hunting
+║シ︎  ${prefix}pokehunt
+║シ︎  ${prefix}zoo
+║シ︎  ${prefix}forest
+║シ︎  ${prefix}animals
+║シ︎  ${prefix}pay
+║シ︎  ${prefix}loan
+║シ︎  ${prefix}borrow
+║シ︎  ${prefix}payment
+║シ︎  ${prefix}rob
+║シ︎  ${prefix}thief
+║シ︎  ${prefix}robbery
+║シ︎  ${prefix}bal
+║シ︎  ${prefix}gold
+║シ︎  ${prefix}money
+║シ︎  ${prefix}balance
+║シ︎  ${prefix}buy
+║シ︎  ${prefix}store
+║シ︎  ${prefix}shop
+║シ︎  ${prefix}mall
+║シ︎  ${prefix}shopping
 ╚═══════╝
 
 ╔══『 ⭕𝐘𝐨𝐮𝐓𝐮𝐛𝐞+𝐅𝐢𝐥𝐭𝐞𝐫⭕ 』
-║${prefix}yt8d
-║${prefix}ytbassboost
-║${prefix}ytecho
-║${prefix}ytflanger
-║${prefix}ytnightcore
-║${prefix}ytphaser
-║${prefix}ytreverse
-║${prefix}ytslow
-║${prefix}ytspeed
-║${prefix}ytsubboost
-║${prefix}ytsuperslow
-║${prefix}ytsuperspeed
-║${prefix}ytsurround
-║${prefix}ytvaporwave
-║${prefix}ytvibrato
+║シ︎  ${prefix}yt8d
+║シ︎  ${prefix}ytbassboost
+║シ︎  ${prefix}ytecho
+║シ︎  ${prefix}ytflanger
+║シ︎  ${prefix}ytnightcore
+║シ︎  ${prefix}ytphaser
+║シ︎  ${prefix}ytreverse
+║シ︎  ${prefix}ytslow
+║シ︎  ${prefix}ytspeed
+║シ︎  ${prefix}ytsubboost
+║シ︎  ${prefix}ytsuperslow
+║シ︎  ${prefix}ytsuperspeed
+║シ︎  ${prefix}ytsurround
+║シ︎  ${prefix}ytvaporwave
+║シ︎  ${prefix}ytvibrato
 ╚═══════╝
 
 ╔══『 👑𝐎𝐰𝐧𝐞𝐫👑 』
-║${prefix}ban
-║${prefix}unban
-║${prefix}reboot
-║${prefix}join
-║${prefix}leave
-║${prefix}support
-║${prefix}bcgroup
-║${prefix}bc
-║${prefix}sp
-║${prefix}dev
-║${prefix}bot
-║${prefix}devs
-║${prefix}support
-║${prefix}official
-║${prefix}rule
-║${prefix}rules
-║${prefix}h
-║${prefix}how
-║${prefix}help
-║${prefix}menu
-║${prefix}allmenu
+║シ︎  ${prefix}ban
+║シ︎  ${prefix}unban
+║シ︎  ${prefix}reboot
+║シ︎  ${prefix}join
+║シ︎  ${prefix}leave
+║シ︎  ${prefix}support
+║シ︎  ${prefix}bcgroup
+║シ︎  ${prefix}bc
+║シ︎  ${prefix}sp
+║シ︎  ${prefix}dev
+║シ︎  ${prefix}bot
+║シ︎  ${prefix}devs
+║シ︎  ${prefix}support
+║シ︎  ${prefix}official
+║シ︎  ${prefix}rule
+║シ︎  ${prefix}rules
+║シ︎  ${prefix}h
+║シ︎  ${prefix}how
+║シ︎  ${prefix}help
+║シ︎  ${prefix}menu
+║シ︎  ${prefix}allmenu
 ╚═══════╝
 
 ╔══『 🛍️𝗦𝘁𝗼𝗿𝗲🛍️ 』
-║${prefix}buy basic 
-║${prefix}buy bronze 
-║${prefix}buy silver 
-║${prefix}buy gold 
-║${prefix}buy platinum 
-║${prefix}buy diamond
-║${prefix}buy sword
-║${prefix}buy laptop
-║${prefix}buy charm
+║シ︎  ${prefix}buy basic 
+║シ︎  ${prefix}buy bronze 
+║シ︎  ${prefix}buy silver 
+║シ︎  ${prefix}buy gold 
+║シ︎  ${prefix}buy platinum 
+║シ︎  ${prefix}buy diamond
+║シ︎  ${prefix}buy sword
+║シ︎  ${prefix}buy laptop
+║シ︎  ${prefix}buy charm
 ╚═══════╝
 
 ╔══『 📥𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫𝐬📥 』
-║${prefix}yta
-║${prefix}play
-║${prefix}song
-║${prefix}sing
-║${prefix}ytmp3
-║${prefix}ytplay
-║${prefix}ytaudio
-║${prefix}ytmusic
-║${prefix}youtubemusic
+║シ︎  ${prefix}yta
+║シ︎  ${prefix}play
+║シ︎  ${prefix}song
+║シ︎  ${prefix}sing
+║シ︎  ${prefix}ytmp3
+║シ︎  ${prefix}ytplay
+║シ︎  ${prefix}ytaudio
+║シ︎  ${prefix}ytmusic
+║シ︎  ${prefix}youtubemusic
 ║•
-║${prefix}ytv
-║${prefix}watch
-║${prefix}ytmp4
-║${prefix}stream
-║${prefix}ytvideo
-║${prefix}youtubevideo
+║シ︎  ${prefix}ytv
+║シ︎  ${prefix}watch
+║シ︎  ${prefix}ytmp4
+║シ︎  ${prefix}stream
+║シ︎  ${prefix}ytvideo
+║シ︎  ${prefix}youtubevideo
 ╚═══════╝
 
 ╔══『 📼𝐂𝐨𝐧𝐯𝐞𝐫𝐭𝐞𝐫📼 』
-║${prefix}carbon
-║${prefix}steal
-║${prefix}sticker
-║${prefix}tinyurl
-║${prefix}toimg
-║${prefix}stourl
+║シ︎  ${prefix}carbon
+║シ︎  ${prefix}steal
+║シ︎  ${prefix}sticker
+║シ︎  ${prefix}tinyurl
+║シ︎  ${prefix}toimg
+║シ︎  ${prefix}stourl
 ╚═══════╝
 
 ╔══『 👇🏽 𝐒𝐞𝐚𝐫𝐜𝐡 👇🏽』
-║${prefix}gify
-║${prefix}gif
-║${prefix}google
-║${prefix}web
-║${prefix}find
-║${prefix}search
-║${prefix}iguser 
-║${prefix}image
-║${prefix}lyrics
-║${prefix}pinterest
-║${prefix}pokemon
-║${prefix}wallpaper
-║${prefix}yts
-║${prefix}ytsearch
-║${prefix}ytscrape
-║${prefix}youtubescrape
-║${prefix}youtubesearch
+║シ︎  ${prefix}gify
+║シ︎  ${prefix}gif
+║シ︎  ${prefix}google
+║シ︎  ${prefix}web
+║シ︎  ${prefix}find
+║シ︎  ${prefix}search
+║シ︎  ${prefix}iguser 
+║シ︎  ${prefix}image
+║シ︎  ${prefix}lyrics
+║シ︎  ${prefix}pinterest
+║シ︎  ${prefix}pokemon
+║シ︎  ${prefix}wallpaper
+║シ︎  ${prefix}yts
+║シ︎  ${prefix}ytsearch
+║シ︎  ${prefix}ytscrape
+║シ︎  ${prefix}youtubescrape
+║シ︎  ${prefix}youtubesearch
 ╚═══════╝
 
 ╔══『 🔰𝐆𝐫𝐨𝐮𝐩𝐬/𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧🔰 』
-║${prefix}nolink
-║${prefix}stoplink
-║${prefix}antilink
-║${prefix}welcome
-║${prefix}welcomer
-║${prefix}setwelcome
-║${prefix}autorole
-║${prefix}autorank
-║${prefix}del
-║${prefix}demote
-║${prefix}promote
-║${prefix}group
-║${prefix}remove
-║${prefix}setdesc
-║${prefix}setgpfp
-║${prefix}tagall
+║シ︎  ${prefix}nolink
+║シ︎  ${prefix}stoplink
+║シ︎  ${prefix}antilink
+║シ︎  ${prefix}welcome
+║シ︎  ${prefix}welcomer
+║シ︎  ${prefix}setwelcome
+║シ︎  ${prefix}autorole
+║シ︎  ${prefix}autorank
+║シ︎  ${prefix}del
+║シ︎  ${prefix}demote
+║シ︎  ${prefix}promote
+║シ︎  ${prefix}group
+║シ︎  ${prefix}remove
+║シ︎  ${prefix}setdesc
+║シ︎  ${prefix}setgpfp
+║シ︎  ${prefix}tagall
 ╚═══════╝
 
 ╔══『 🍰𝐅𝐢𝐥𝐭𝐞𝐫𝐬/𝐀𝐮𝐝𝐢𝐨🍰 』
-║${prefix}bassboost
-║${prefix}echo
-║${prefix}fast
-║${prefix}flanger
-║${prefix}nightcore
-║${prefix}phaser
-║${prefix}reverse
-║${prefix}slow
-║${prefix}speed
-║${prefix}subboost
-║${prefix}superslow
-║${prefix}superspeed
-║${prefix}surround
-║${prefix}vaporwave
-║${prefix}vibrato
+║シ︎  ${prefix}bassboost
+║シ︎  ${prefix}echo
+║シ︎  ${prefix}fast
+║シ︎  ${prefix}flanger
+║シ︎  ${prefix}nightcore
+║シ︎  ${prefix}phaser
+║シ︎  ${prefix}reverse
+║シ︎  ${prefix}slow
+║シ︎  ${prefix}speed
+║シ︎  ${prefix}subboost
+║シ︎  ${prefix}superslow
+║シ︎  ${prefix}superspeed
+║シ︎  ${prefix}surround
+║シ︎  ${prefix}vaporwave
+║シ︎  ${prefix}vibrato
 ╚═══════╝
 
 ╔══『 🍌𝐇𝐞𝐧𝐭𝐚𝐢🍌 』 
-║${prefix}ass
-║${prefix}bdsm
-║${prefix}cum  
-║${prefix}doujin
-║${prefix}feet  
-║${prefix}femdom  
-║${prefix}foxgirl  
-║${prefix}glasses  
-║${prefix}hentai
-║${prefix}maid 
-║${prefix}masturbation
-║${prefix}netorare  
-║${prefix}orgy
-║${prefix}panties
-║${prefix}pussy
-║${prefix}school
-║${prefix}tentacles
-║${prefix}thighs
-║${prefix}uniform
-║${prefix}yuri
+║シ︎  ${prefix}ass
+║シ︎  ${prefix}bdsm
+║シ︎  ${prefix}cum  
+║シ︎  ${prefix}doujin
+║シ︎  ${prefix}feet  
+║シ︎  ${prefix}femdom  
+║シ︎  ${prefix}foxgirl  
+║シ︎  ${prefix}glasses  
+║シ︎  ${prefix}hentai
+║シ︎  ${prefix}maid 
+║シ︎  ${prefix}masturbation
+║シ︎  ${prefix}netorare  
+║シ︎  ${prefix}orgy
+║シ︎  ${prefix}panties
+║シ︎  ${prefix}pussy
+║シ︎  ${prefix}school
+║シ︎  ${prefix}tentacles
+║シ︎  ${prefix}thighs
+║シ︎  ${prefix}uniform
+║シ︎  ${prefix}yuri
 ╚═══════╝
 
 ╔══『 🍆𝐏𝐨𝐫𝐧🍆 』
-║${prefix}p4k
-║${prefix}pblowjob
-║${prefix}pmilf
-║${prefix}ppussy
-║${prefix}pslut
+║シ︎  ${prefix}p4k
+║シ︎  ${prefix}pblowjob
+║シ︎  ${prefix}pmilf
+║シ︎  ${prefix}ppussy
+║シ︎  ${prefix}pslut
 ╚═══════╝`
 );
 };
