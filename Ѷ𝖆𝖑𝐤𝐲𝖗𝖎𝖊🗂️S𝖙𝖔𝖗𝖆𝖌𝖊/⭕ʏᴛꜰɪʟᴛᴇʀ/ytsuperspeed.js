@@ -43,7 +43,7 @@ let Final_Name = Script_Name.slice(0, -3).toLowerCase();
 let { Caught } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌀B𝖚𝖙𝖙𝖔𝖓𝖘/Caught");
 `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
 exports.ytsuperspeed = async (
-  ӄ𝖚𝖓𝖆𝖎,
+  ᴋᴜɴᴀɪ,
   Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
   A𝖗𝖌𝖘,
   pushName,
@@ -65,11 +65,11 @@ exports.ytsuperspeed = async (
   mentionByTag,
   mentionByReply
 ) => {
-  if (!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup) return await Group_Only(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
+  if (!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup) return await Group_Only(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
   `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
   if (A𝖗𝖌𝖘.length === 0) {
     return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-      ӄ𝖚𝖓𝖆𝖎,
+      ᴋᴜɴᴀɪ,
       Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
       `*❌ERROR:* No query provided!
 
@@ -80,7 +80,7 @@ exports.ytsuperspeed = async (
   if (A𝖗𝖌𝖘.includes("yout")) {
     if (!YouTube_Regex.test(A𝖗𝖌𝖘[0])) {
       return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-        ӄ𝖚𝖓𝖆𝖎,
+        ᴋᴜɴᴀɪ,
         Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
         `*❌ERROR:* No query provided!
 
@@ -98,7 +98,7 @@ exports.ytsuperspeed = async (
   let LinkFound = await yts(FinalGot);
   if (!LinkFound) {
     return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-      ӄ𝖚𝖓𝖆𝖎,
+      ᴋᴜɴᴀɪ,
       Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
       `*❌ERROR:* No Music Found!
 
@@ -110,7 +110,7 @@ exports.ytsuperspeed = async (
   TubeFile.forEach(async function (Found) {
     if (Found.seconds > 1800) {
       return await Image_Button(
-        ӄ𝖚𝖓𝖆𝖎,
+        ᴋᴜɴᴀɪ,
         Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
         A𝖗𝖌𝖘,
         Found.thumbnail,
@@ -134,7 +134,7 @@ exports.ytsuperspeed = async (
     }
 
     await Image_Button(
-      ӄ𝖚𝖓𝖆𝖎,
+      ᴋᴜɴᴀɪ,
       Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
       A𝖗𝖌𝖘,
       Found.thumbnail,
@@ -161,7 +161,7 @@ exports.ytsuperspeed = async (
           async (error) => {
             if (error) {
               return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-                ӄ𝖚𝖓𝖆𝖎,
+                ᴋᴜɴᴀɪ,
                 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
                 `*❌ERROR:* Could not convert!
 
@@ -169,7 +169,7 @@ exports.ytsuperspeed = async (
               );
             }
 
-            return await ӄ𝖚𝖓𝖆𝖎
+            return await ᴋᴜɴᴀɪ
               .sendMessage(
                 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
                 {
