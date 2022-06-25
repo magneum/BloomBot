@@ -129,7 +129,7 @@ text: `⚡`,
 key: React.key,
 },
 };
-console.log()
+console.log(React);
 return await ᴋᴜɴᴀɪ
 .sendMessage(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, reactionMessage)
 .catch((e) => console.log(e));
