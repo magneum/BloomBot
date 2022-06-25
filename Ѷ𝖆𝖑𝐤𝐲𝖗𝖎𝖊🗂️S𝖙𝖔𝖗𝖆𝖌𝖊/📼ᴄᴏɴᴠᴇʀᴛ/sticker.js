@@ -98,7 +98,7 @@ exports.sticker = async (
     let Media = await quoted.download();
     let Sticker = new Sticker(Media, {
       pack: F𝖚𝖑𝖑_A𝖗𝖌𝖘 || "ᴋʀʏᴢᴏɴᴇ",
-      author: "Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊",
+      author: "ʙʏ Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊",
       type: StickerTypes.FULL,
       categories: [`🤩`, `🎉`],
       id: `12345`,
