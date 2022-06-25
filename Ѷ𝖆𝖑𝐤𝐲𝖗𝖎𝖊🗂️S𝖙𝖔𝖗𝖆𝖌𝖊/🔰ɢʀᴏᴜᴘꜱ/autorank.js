@@ -114,7 +114,7 @@ exports.autorank = async (
   } else if (A𝖗𝖌𝖘[0] === `OFF` || A𝖗𝖌𝖘[0] === `off` || A𝖗𝖌𝖘[0] === `Off`) {
     return await Ranker.findOne(
       {
-        serverID: ᴠʟᴋʏʀᴇ.chatID,
+        serverID: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
       },
       async (error, server) => {
         if (error) return Caught(ӄ𝖚𝖓𝖆𝖎, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, e);

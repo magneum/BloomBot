@@ -4,7 +4,7 @@
  */
 ("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
 let cron = require("node-cron");
-cron.schedule("*/10 * * * * *", () => {
+cron.schedule("*/2 * * * * *", () => {
 let shell = require("shelljs");
 let vers = require(`./package.json`);
 let date_ob = new Date();
