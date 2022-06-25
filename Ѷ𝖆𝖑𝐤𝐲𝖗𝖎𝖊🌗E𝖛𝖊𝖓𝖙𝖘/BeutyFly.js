@@ -7,7 +7,7 @@ require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/𝕷�
 exports.BeutyFly = async (ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, Kolor) => {
 console.log(Kolor.red("▷═════════════════════|✠|═════════════════════◁"));
 console.log(
-Kolor.black(Kolor.bgWhite(`💡𝐓𝐢𝐦𝐞: `)),
+Kolor.black(Kolor.bgWhite(`🕐𝐓𝐢𝐦𝐞: `)),
 Kolor.black(Kolor.bgGreen(new Date()))
 );
 console.log(
