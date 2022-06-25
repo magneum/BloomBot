@@ -16,7 +16,7 @@ Kolor.black(Kolor.blue(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName))
 );
 console.log(
 Kolor.bgCyanBright(`💡𝐂𝐨𝐧𝐭𝐞𝐧𝐭:▷ `),
-Kolor.green(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup ? pushName : `Private Chat`, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID)
+Kolor.green(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup ? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.pushName : `Private Chat`, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID)
 );
 await ᴋᴜɴᴀɪ.sendReadReceipt(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender, [
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id,
