@@ -65,7 +65,11 @@ exports.remove = async (
   if (!isSenderAdmin) return await Sender_Not_Admin(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
   `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
   if (isReply && !mentionByTag) {
-    let ʀᴇᴘʟɪᴇᴅ = Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.extendedTextMessage.contextInfo.participant;
+    let ʀᴇᴘʟɪᴇᴅ =
+      Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype == "extendedTextMessage" &&
+      Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.extendedTextMessage.contextInfo != null
+        ? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.extendedTextMessage.contextInfo.participant || ""
+        : "";
     if (Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isCreator === ʀᴇᴘʟɪᴇᴅ) {
       return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
         ᴋᴜɴᴀɪ,
