@@ -78,7 +78,7 @@ exports.rob = async (
     console.clear();
     var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
     console.log(Receiver);
-    console.log(Receiver);
+    console.log(քɛʀֆօռɢօȶռʊʍ);
     if (Receiver === Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender) {
       return await Image_Button(
         ᴋᴜɴᴀɪ,
