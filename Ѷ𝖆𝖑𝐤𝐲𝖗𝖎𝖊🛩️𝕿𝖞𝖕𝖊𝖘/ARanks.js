@@ -26,7 +26,6 @@ exports.ARanks = async (Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, ᴋᴜɴᴀɪ, Caught, A
     Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
     randomXp
   );
-  console.log(user);
   if (hasLeveledUp) {
     const levelRole = user.level;
     var role = "Warrior";
