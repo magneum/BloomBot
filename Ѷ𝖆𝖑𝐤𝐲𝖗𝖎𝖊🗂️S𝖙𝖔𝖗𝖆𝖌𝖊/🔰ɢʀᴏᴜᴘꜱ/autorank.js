@@ -48,8 +48,6 @@ exports.autorank = async (
   quoted,
   isMedia,
   isGroup,
-  groupMetadata,
-  participants,
   groupAdmins,
   isBotAdmin,
   isSenderAdmin,
@@ -60,11 +58,10 @@ exports.autorank = async (
   mentionByTag,
   mentionByReply
 ) => {
-  if (!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup) return await Group_Only(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
+  let 𝕲𝖗𝖔𝖚𝖕𝖒𝖊𝖙𝖆 = Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.groupMetadata;
   if (!isBotAdmin && !isSenderTUF) return await Bot_Not_Admin(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
   if (!isSenderAdmin && !isSenderTUF)
     return await Sender_Not_Admin(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
-  let 𝕲𝖗𝖔𝖚𝖕𝖒𝖊𝖙𝖆 = Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.groupMetadata;
   `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
   if (!F𝖚𝖑𝖑_A𝖗𝖌𝖘) {
     return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(

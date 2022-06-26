@@ -48,7 +48,6 @@ exports.tagall = async (
   isMedia,
   isGroup,
   groupMetadata,
-  participants,
   groupAdmins,
   isBotAdmin,
   isSenderAdmin,
@@ -59,11 +58,10 @@ exports.tagall = async (
   mentionByTag,
   mentionByReply
 ) => {
-  if (!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup) return await Group_Only(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
+  let 𝕲𝖗𝖔𝖚𝖕𝖒𝖊𝖙𝖆 = Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.groupMetadata;
   if (!isSenderAdmin && !isSenderTUF)
     return await Sender_Not_Admin(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
   if (!isBotAdmin && !isSenderTUF) return await Bot_Not_Admin(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
-  let 𝕲𝖗𝖔𝖚𝖕𝖒𝖊𝖙𝖆 = Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.groupMetadata;
   `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
   let Text;
   let emo;
@@ -78,7 +76,7 @@ exports.tagall = async (
 *💫 Pinged by - ${pushName}*
 *🕛 Time - ${Time}*\n\n`;
   `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
-  for (let memNum of participants) {
+  for (let memNum of 𝕲𝖗𝖔𝖚𝖕𝖒𝖊𝖙𝖆.participants) {
     if (groupAdmins.includes(memNum.id) === true) {
       emo = `👑`;
     } else {
@@ -99,7 +97,7 @@ exports.tagall = async (
     {
       image: { url: ppuser },
       caption: menText,
-      mentions: participants.map((a) => a.id),
+      mentions: 𝕲𝖗𝖔𝖚𝖕𝖒𝖊𝖙𝖆.participants.map((a) => a.id),
     },
     { quoted: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 }
   );
