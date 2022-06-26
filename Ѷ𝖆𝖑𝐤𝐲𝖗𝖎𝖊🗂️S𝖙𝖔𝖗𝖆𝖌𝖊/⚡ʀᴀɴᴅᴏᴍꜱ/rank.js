@@ -68,7 +68,8 @@ exports.rank = async (
     return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
       ᴋᴜɴᴀɪ,
       Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
-      `*❌ERROR:* Seems like you have nno rank XP for this chat. Keep `
+      `*❌ERROR:* Seems like you have nno rank XP for this chat.
+      `
     );
   }
   const levelRole = user.level;
