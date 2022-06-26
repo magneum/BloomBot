@@ -5,11 +5,11 @@
 ("|⬡════════════════════════════════════════════════════════════|▷   ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  ◁|════════════════════════════════════════════════════════════⬡|");
 require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/𝕷𝖆ყO𝖚𝖙");
 let fs = require(`fs`);
-let color = randomMC.getColor();
 let fetch = require("node-fetch");
 let Levels = require("discord-xp");
 let canvacord = require("canvacord");
 let randomMC = require("random-material-color");
+let color = randomMC.getColor();
 Levels.setURL(MONGOOSE);
 exports.ARanks = async (Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, ᴋᴜɴᴀɪ, Caught) => {
   let randomXp = Math.floor(Math.random() * 3) + 1;
