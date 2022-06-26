@@ -68,7 +68,7 @@ if (!user) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ᴋᴜɴᴀɪ,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
-`*❌ERROR:* Seems like you have nno rank XP for this chat.
+`*❌ERROR:* Seems like you have no rank XP for this chat.
 Try to talk more and check if autorank is turned on.`
 );
 }
