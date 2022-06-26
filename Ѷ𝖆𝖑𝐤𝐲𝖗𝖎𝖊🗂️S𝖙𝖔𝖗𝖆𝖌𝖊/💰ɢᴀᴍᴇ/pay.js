@@ -105,7 +105,11 @@ exports.pay = async (
   `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
   if (isReply) {
     let Amount = parseInt(F𝖚𝖑𝖑_A𝖗𝖌𝖘);
-    let Receiver = Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.extendedTextMessage.contextInfo.participant;
+    let Receiver =
+      Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype == `extendedTextMessage` &&
+      Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.extendedTextMessage.contextInfo != null
+        ? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.extendedTextMessage.contextInfo.mentionedJid
+        : [];
     let քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
     if (Receiver === Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender) {
       return ᴠʟᴋʏʀᴇ_Buttons.MTB(
