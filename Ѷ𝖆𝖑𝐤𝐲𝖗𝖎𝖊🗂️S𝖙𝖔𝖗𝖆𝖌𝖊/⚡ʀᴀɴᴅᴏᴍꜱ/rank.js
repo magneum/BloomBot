@@ -68,9 +68,7 @@ exports.rank = async (
     return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
       ᴋᴜɴᴀɪ,
       Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
-      `*❌ERROR:* No query provided!
-        
-        *⚡USAGE:* ${prefix}${Final_Name} <song name or youtube link>`
+      `*❌ERROR:* Seems like you have nno role`
     );
   }
   const levelRole = user.level;
