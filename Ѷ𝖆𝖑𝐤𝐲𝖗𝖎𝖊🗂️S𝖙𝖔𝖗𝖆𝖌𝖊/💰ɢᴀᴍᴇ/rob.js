@@ -70,13 +70,13 @@ exports.rob = async (
   let MoneyCharm = Math.floor(Math.random() * (6000 - 5000 + 1)) + 5000;
   let MoneySword = Math.floor(Math.random() * (2000 - 1000 + 1)) + 1000;
   if (isReply) {
-    var Receiver =
+    let Receiver =
       Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype == "extendedTextMessage" &&
       Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.extendedTextMessage.contextInfo != null
         ? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.extendedTextMessage.contextInfo.participant || ""
         : "";
     console.clear();
-    var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
+    let քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
     console.log(Receiver);
     console.log(քɛʀֆօռɢօȶռʊʍ);
     if (Receiver === Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender) {
@@ -107,7 +107,7 @@ exports.rob = async (
           async (𝕰𝖗𝖗𝖔𝖗, vEconomy) => {
             if (𝕰𝖗𝖗𝖔𝖗) return Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(𝕰𝖗𝖗𝖔𝖗));
             if (!vEconomy) {
-              var newUser = new Economy({
+              let newUser = new Economy({
                 ID: Receiver,
                 money: 0,
                 daily: 0,
@@ -136,7 +136,7 @@ exports.rob = async (
               );
               `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
             } else if (!cEconomy) {
-              var newUser = new Economy({
+              let newUser = new Economy({
                 ID: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender,
                 money: 0,
                 daily: 0,
@@ -213,7 +213,7 @@ exports.rob = async (
                       if (𝕰𝖗𝖗𝖔𝖗)
                         return Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(𝕰𝖗𝖗𝖔𝖗));
                       if (!victim) {
-                        var newUser = new Robbery({
+                        let newUser = new Robbery({
                           ID: Receiver,
                           sword: 0,
                           laptop: 0,
@@ -252,7 +252,7 @@ exports.rob = async (
                         );
                         `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
                       } else if (!culprit) {
-                        var newUser = new Robbery({
+                        let newUser = new Robbery({
                           ID: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender,
                           sword: 0,
                           laptop: 0,
