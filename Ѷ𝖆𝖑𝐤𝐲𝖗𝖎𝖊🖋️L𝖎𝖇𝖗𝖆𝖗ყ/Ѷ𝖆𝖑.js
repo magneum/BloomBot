@@ -137,7 +137,6 @@ serverID: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
 async (𝕰𝖗𝖗𝖔𝖗, userRank) => {
 if (𝕰𝖗𝖗𝖔𝖗) return Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝕰𝖗𝖗𝖔𝖗);
 if (!userRank) return;
-console.log(userRank);
 let { ARanks } = require(".././Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🛩️𝕿𝖞𝖕𝖊𝖘/ARanks");
 await ARanks(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, ᴋᴜɴᴀɪ, Caught);
 }
