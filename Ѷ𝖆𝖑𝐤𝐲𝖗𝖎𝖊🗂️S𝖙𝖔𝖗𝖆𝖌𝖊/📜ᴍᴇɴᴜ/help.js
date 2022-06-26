@@ -355,7 +355,6 @@ os.totalmem()
 ║シ︎  ${prefix}bc
 ║シ︎  ${prefix}sp
 ║シ︎  ${prefix}dev
-║シ︎  ${prefix}bot
 ║シ︎  ${prefix}devs
 ║シ︎  ${prefix}support
 ║シ︎  ${prefix}official
