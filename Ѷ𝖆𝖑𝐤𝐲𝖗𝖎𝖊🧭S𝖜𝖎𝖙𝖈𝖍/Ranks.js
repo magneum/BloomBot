@@ -12,72 +12,75 @@ let randomMC = require("random-material-color");
 let color = randomMC.getColor();
 Levels.setURL(MONGOOSE);
 exports.ARanks = async (Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, ᴋᴜɴᴀɪ, Caught) => {
-const randomXp = Math.floor(Math.random() * 3) + 1;
-const hasLeveledUp = await Levels.appendXp(
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
-randomXp
-);
-if (hasLeveledUp) {
-const user = await Levels.fetch(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, true);
+let randomXp = Math.floor(Math.random() * 3) + 1;
+let user = await Levels.fetch(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, true);
 if (!user) {
 await Levels.createUser(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID);
 await Levels.setLevel(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, 1);
 await Levels.setXp(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, 1);
 }
-const levelRole = user.level;
-var role = "Warrior";
+("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
+console.log(user);
+let hasLeveledUp = await Levels.appendXp(
+Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender,
+Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
+randomXp
+);
+if (hasLeveledUp) {
+await Levels.setLevel(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, user.level + 1);
+let levelRole = user.level;
+var role = `Warrior`;
 if (levelRole <= 2) {
-var role = "Elite III";
+var role = `Elite III`;
 } else if (levelRole <= 4) {
-var role = "Elite II";
+var role = `Elite II`;
 } else if (levelRole <= 6) {
-var role = "Elite I";
+var role = `Elite I`;
 } else if (levelRole <= 8) {
-var role = "Master IV";
+var role = `Master IV`;
 } else if (levelRole <= 10) {
-var role = "Master III";
+var role = `Master III`;
 } else if (levelRole <= 12) {
-var role = "Master II";
+var role = `Master II`;
 } else if (levelRole <= 14) {
-var role = "Master I";
+var role = `Master I`;
 } else if (levelRole <= 16) {
-var role = "Grandmaster V";
+var role = `Grandmaster V`;
 } else if (levelRole <= 18) {
-var role = "Grandmaster IV";
+var role = `Grandmaster IV`;
 } else if (levelRole <= 20) {
-var role = "Grandmaster III";
+var role = `Grandmaster III`;
 } else if (levelRole <= 22) {
-var role = "Grandmaster II";
+var role = `Grandmaster II`;
 } else if (levelRole <= 24) {
-var role = "Grandmaster I";
+var role = `Grandmaster I`;
 } else if (levelRole <= 26) {
-var role = "Epic V";
+var role = `Epic V`;
 } else if (levelRole <= 28) {
-var role = "Epic IV";
+var role = `Epic IV`;
 } else if (levelRole <= 30) {
-var role = "Epic III";
+var role = `Epic III`;
 } else if (levelRole <= 32) {
-var role = "Epic II";
+var role = `Epic II`;
 } else if (levelRole <= 34) {
-var role = "Epic I";
+var role = `Epic I`;
 } else if (levelRole <= 36) {
-var role = "Legend V";
+var role = `Legend V`;
 } else if (levelRole <= 38) {
-var role = "Legend IV";
+var role = `Legend IV`;
 } else if (levelRole <= 40) {
-var role = "Legend III";
+var role = `Legend III`;
 } else if (levelRole <= 42) {
-var role = "Legend II";
+var role = `Legend II`;
 } else if (levelRole <= 44) {
-var role = "Legend I";
+var role = `Legend I`;
 } else if (levelRole <= 46) {
-var role = "Mythic";
+var role = `Mythic`;
 } else if (levelRole <= 50) {
-var role = "Mythic Glory";
+var role = `Mythic Glory`;
 }
 ("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
-let expFile = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Date.now()}${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}.png`;
+let expFile = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Date.now()}r${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}.png`;
 let աɦօֆɛ = Math.floor(1000 + Math.random() * 9000);
 let 𝕻𝕻𝖑𝖊𝖙𝖊𝖗;
 try {
@@ -128,7 +131,9 @@ caption: `╔══『 𝐏𝐫𝐨𝐟𝐢𝐥𝐞𝐫® 』
 ╚═══════╝
 
 
-*LEVEL UP CONGRATS! 🎉🎉*
+*LEVEL UP!*
+Congrats!! 🎉🎉
+
 *🍀Exp*: ${user.xp} / ${Levels.xpFor(user.level + 1)}
 *🎐Level*: ${user.level}
 *🔮️Role*: *${role}*`,
