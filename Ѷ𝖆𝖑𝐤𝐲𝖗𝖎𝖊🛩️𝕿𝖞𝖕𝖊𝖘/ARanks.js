@@ -13,7 +13,7 @@ let { Image_Button } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌀B𝖚𝖙�
 let color = randomMC.getColor();
 Levels.setURL(MONGOOSE);
 exports.ARanks = async (Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, ᴋᴜɴᴀɪ, Caught, A𝖗𝖌𝖘) => {
-  const randomXp = Math.floor(Math.random() * 3) + 1;
+  const randomXp = Math.floor(Math.random() * 3) + 2;
   const user = await Levels.fetch(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, true);
   if (!user) {
     await Levels.createUser(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID);
