@@ -21,6 +21,7 @@ exports.ARanks = async (Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, ᴋᴜɴᴀɪ, Caught) =
     await Levels.setXp(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, 1);
     return;
   }
+  console.log(user);
   const hasLeveledUp = await Levels.appendXp(
     Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender,
     Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
