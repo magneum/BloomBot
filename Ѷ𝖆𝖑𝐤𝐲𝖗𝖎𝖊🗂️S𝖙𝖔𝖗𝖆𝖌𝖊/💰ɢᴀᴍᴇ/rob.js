@@ -75,6 +75,7 @@ exports.rob = async (
       Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.extendedTextMessage.contextInfo != null
         ? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.extendedTextMessage.contextInfo.participant || ""
         : "";
+        console.cleaqr
     var քɛʀֆօռɢօȶռʊʍ = Receiver.substring(0, Receiver.length - 15);
     if (Receiver === Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender) {
       return await Image_Button(
