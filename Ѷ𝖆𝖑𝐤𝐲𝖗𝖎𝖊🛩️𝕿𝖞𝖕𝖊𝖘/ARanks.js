@@ -115,7 +115,7 @@ let rank = new canvacord.Rank()
 .setUsername("Ranker!")
 .setDiscriminator(աɦօֆɛ);
 return await rank.build().then(async (data) => {
-fs.writeFile(expFile, data, async (error) => {
+await fs.writeFile(expFile, data, async (error) => {
 if (error) return Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, error);
 await Image_Button(
 ᴋᴜɴᴀɪ,
