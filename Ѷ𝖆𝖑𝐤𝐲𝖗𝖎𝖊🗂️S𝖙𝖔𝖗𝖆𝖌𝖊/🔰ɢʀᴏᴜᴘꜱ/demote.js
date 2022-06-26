@@ -83,8 +83,8 @@ exports.demote = async (
 
     await ᴋᴜɴᴀɪ.groupParticipantsUpdate(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, [users], `demote`);
     await ᴋᴜɴᴀɪ.sendMessage(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, {
-      text: `OOPs!! looks like @${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender.split(`@`)[0]} demoted @${
-        users.split(`@`)[0]
+      text: `OOPs!! looks like @${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender.split("@")[0]} demoted @${
+        users.split("@")[0]
       }`,
       contextInfo: { mentionedJid: [users, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender] },
     });

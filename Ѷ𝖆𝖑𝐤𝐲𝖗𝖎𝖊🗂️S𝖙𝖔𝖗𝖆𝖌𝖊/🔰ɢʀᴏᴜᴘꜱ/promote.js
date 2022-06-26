@@ -82,8 +82,8 @@ exports.promote = async (
     }
     await ᴋᴜɴᴀɪ.groupParticipantsUpdate(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, [users], `promote`);
     ᴋᴜɴᴀɪ.sendMessage(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, {
-      text: `woh woh!! looks like @${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender.split(`@`)[0]} promoted @${
-        users.split(`@`)[0]
+      text: `woh woh!! looks like @${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender.split("@")[0]} promoted @${
+        users.split("@")[0]
       }`,
       contextInfo: { mentionedJid: [users, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender] },
     });

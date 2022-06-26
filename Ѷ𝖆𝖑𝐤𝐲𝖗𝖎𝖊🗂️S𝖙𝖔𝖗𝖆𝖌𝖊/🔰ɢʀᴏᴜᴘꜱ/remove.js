@@ -78,7 +78,7 @@ exports.remove = async (
       );
     }
     await ᴋᴜɴᴀɪ.sendMessage(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, {
-      text: `Kicked @${ʀᴇᴘʟɪᴇᴅ.split(`@`)[0]} successfuly `,
+      text: `Kicked @${ʀᴇᴘʟɪᴇᴅ.split("@")[0]} successfuly `,
       contextInfo: { mentionedJid: [ʀᴇᴘʟɪᴇᴅ] },
     });
     return await ᴋᴜɴᴀɪ.groupParticipantsUpdate(
