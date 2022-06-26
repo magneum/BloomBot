@@ -127,7 +127,7 @@ exports.rob = async (
 
 
 🪄𝐁𝐚𝐧𝐤 𝗦𝗮𝗳𝗲𝘁𝘆: _1/4 used_
-❌𝗘𝗿𝗿𝗼𝗿: @${Receiver.split(`@`)[0]}'s Bank Guard Caught You and Took You To The Jail!
+❌𝗘𝗿𝗿𝗼𝗿: @${քɛʀֆօռɢօȶռʊʍ}'s Bank Guard Caught You and Took You To The Jail!
 💡‍𝐒𝐭𝐚𝐭𝐮𝐬: _You Got Arrested and Took 0gold.ReTry Again!_`
               );
               `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
@@ -189,7 +189,7 @@ exports.rob = async (
 
 
 
-*@${Receiver.split(`@`)[0]}*
+*@${քɛʀֆօռɢօȶռʊʍ}*
 ❌ 𝗘𝗿𝗿𝗼𝗿:  _needs atleast 1000gold in their account before you can rob them!_
 🍌‍ 𝗥𝗲𝗮𝘀𝗼𝗻: _Broke AF! Leave This Begger Alone!_`
               );
@@ -240,7 +240,7 @@ exports.rob = async (
 
 
 🪄𝐁𝐚𝐧𝐤 𝗦𝗮𝗳𝗲𝘁𝘆: _3/4 used_
-❌𝗘𝗿𝗿𝗼𝗿: @${Receiver.split(`@`)[0]}'s Bank Police Caught You and Took You To The Jail!
+❌𝗘𝗿𝗿𝗼𝗿: @${քɛʀֆօռɢօȶռʊʍ}'s Bank Police Caught You and Took You To The Jail!
 💡‍𝐒𝐭𝐚𝐭𝐮𝐬: _You Got Arrested and Took ${MoneyRandom}gold!_
 
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲
@@ -279,7 +279,7 @@ exports.rob = async (
 
 
 🪄𝐁𝐚𝐧𝐤 𝗦𝗮𝗳𝗲𝘁𝘆: _4/4 used_
-❌𝗘𝗿𝗿𝗼𝗿: @${Receiver.split(`@`)[0]} _caught You Red Handed and Sent You To The Jail!_
+❌𝗘𝗿𝗿𝗼𝗿: @${քɛʀֆօռɢօȶռʊʍ} _caught You Red Handed and Sent You To The Jail!_
 💡‍𝐒𝐭𝐚𝐭𝐮𝐬: _You Got Arrested and Took ${MoneyRandom}gold!_
 
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲
@@ -353,12 +353,12 @@ exports.rob = async (
 
 
 
-❌𝗘𝗿𝗿𝗼𝗿: @${Receiver.split(`@`)[0]} _had a powerful ⚔️sword that killed you!_
+❌𝗘𝗿𝗿𝗼𝗿: @${քɛʀֆօռɢօȶռʊʍ} _had a powerful ⚔️sword that killed you!_
 💡‍𝐒𝐭𝐚𝐭𝐮𝐬: You Got Arrested!
 
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲 
 🥸𝐂𝐮𝐥𝐩𝐫𝐢𝐭: @${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender.replace(/[^\d+]/g, "")}, _${cEconomy.money}🪙_
-💀𝐕𝐢𝐜𝐭𝐢𝐦: @${Receiver.split(`@`)[0]}, _${vEconomy.money}🪙_`
+💀𝐕𝐢𝐜𝐭𝐢𝐦: @${քɛʀֆօռɢօȶռʊʍ}, _${vEconomy.money}🪙_`
                         );
                         `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
                       } else if (victim.laptop > 0) {
@@ -402,12 +402,12 @@ exports.rob = async (
 
 
 
-❌𝗘𝗿𝗿𝗼𝗿: @${Receiver.split(`@`)[0]} _had a 💻laptop that caught you digitally-robbing!_
+❌𝗘𝗿𝗿𝗼𝗿: @${քɛʀֆօռɢօȶռʊʍ} _had a 💻laptop that caught you digitally-robbing!_
 💡‍𝐒𝐭𝐚𝐭𝐮𝐬: _You Got Arrested!_
 
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲 
 🥸𝐂𝐮𝐥𝐩𝐫𝐢𝐭: @${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender.replace(/[^\d+]/g, "")}, _${cEconomy.money}🪙_
-💀𝐕𝐢𝐜𝐭𝐢𝐦: @${Receiver.split(`@`)[0]}, _${vEconomy.money}🪙_`
+💀𝐕𝐢𝐜𝐭𝐢𝐦: @${քɛʀֆօռɢօȶռʊʍ}, _${vEconomy.money}🪙_`
                         );
                         `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
                       } else if (victim.charm > 0) {
@@ -451,12 +451,12 @@ exports.rob = async (
 
 
 
-❌𝗘𝗿𝗿𝗼𝗿: @${Receiver.split(`@`)[0]} had a 🔮charm that magically saved their bank!
+❌𝗘𝗿𝗿𝗼𝗿: @${քɛʀֆօռɢօȶռʊʍ} had a 🔮charm that magically saved their bank!
 💡‍𝐒𝐭𝐚𝐭𝐮𝐬: _You Got Arrested!_
 
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲 
 🥸𝐂𝐮𝐥𝐩𝐫𝐢𝐭: @${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender.replace(/[^\d+]/g, "")}, _${cEconomy.money}🪙_
-💀𝐕𝐢𝐜𝐭𝐢𝐦: @${Receiver.split(`@`)[0]}, _${vEconomy.money}🪙_`
+💀𝐕𝐢𝐜𝐭𝐢𝐦: @${քɛʀֆօռɢօȶռʊʍ}, _${vEconomy.money}🪙_`
                         );
                         `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
                       } else {
@@ -485,17 +485,17 @@ exports.rob = async (
 
 
 
-🔓𝐒𝐭𝐚𝐭𝐮𝐬: @${Receiver.split(`@`)[0]} _Got Robbed!_
+🔓𝐒𝐭𝐚𝐭𝐮𝐬: @${քɛʀֆօռɢօȶռʊʍ} _Got Robbed!_
 👑𝗔𝗺𝗼𝘂𝗻𝘁: *Seems Like The Victim Had Gold<1000. _You Got All Their Golds ${
                               vEconomy.money
                             }!*_
-⚰️𝗥𝗲𝗮𝘀𝗼𝗻: _Didn't have any safety stuffs. @${Receiver.split(`@`)[0]}, visit ${prefix}shop ASAP._
+⚰️𝗥𝗲𝗮𝘀𝗼𝗻: _Didn't have any safety stuffs. @${քɛʀֆօռɢօȶռʊʍ}, visit ${prefix}shop ASAP._
 
 🥸𝐂𝐮𝐥𝐩𝐫𝐢𝐭: @${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender.replace(/[^\d+]/g, "")}, 
 ❓𝗕𝗲𝗳𝗼𝗿𝗲: _${cEconomy.money}🪙_
 💸𝗔𝗳𝘁𝗲𝗿: _${cEconomy.money + MoneyRandom}🪙_
 
-💀𝐕𝐢𝐜𝐭𝐢𝐦: @${Receiver.split(`@`)[0]}
+💀𝐕𝐢𝐜𝐭𝐢𝐦: @${քɛʀֆօռɢօȶռʊʍ}
 ❓𝗕𝗲𝗳𝗼𝗿𝗲: _${vEconomy.money}🪙_
 🥲𝗔𝗳𝘁𝗲𝗿: _${vEconomy.money - MoneyRandom}🪙_`
                           );
@@ -524,15 +524,15 @@ exports.rob = async (
 
 
 
-🔓𝐒𝐭𝐚𝐭𝐮𝐬: @${Receiver.split(`@`)[0]} _Got Robbed!_
+🔓𝐒𝐭𝐚𝐭𝐮𝐬: @${քɛʀֆօռɢօȶռʊʍ} _Got Robbed!_
 👑𝗔𝗺𝗼𝘂𝗻𝘁: You Got _${MoneyRandom}🪙_
-⚰️𝗥𝗲𝗮𝘀𝗼𝗻: _Didn't have any safety stuffs. @${Receiver.split(`@`)[0]}, visit ${prefix}shop ASAP._
+⚰️𝗥𝗲𝗮𝘀𝗼𝗻: _Didn't have any safety stuffs. @${քɛʀֆօռɢօȶռʊʍ}, visit ${prefix}shop ASAP._
 
 🥸𝐂𝐮𝐥𝐩𝐫𝐢𝐭: @${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender.replace(/[^\d+]/g, "")}, 
 ❓𝗕𝗲𝗳𝗼𝗿𝗲: _${cEconomy.money}🪙_
 💸𝗔𝗳𝘁𝗲𝗿: _${cEconomy.money + MoneyRandom}🪙_
 
-💀𝐕𝐢𝐜𝐭𝐢𝐦: @${Receiver.split(`@`)[0]}
+💀𝐕𝐢𝐜𝐭𝐢𝐦: @${քɛʀֆօռɢօȶռʊʍ}
 ❓𝗕𝗲𝗳𝗼𝗿𝗲: _${vEconomy.money}🪙_
 🥲𝗔𝗳𝘁𝗲𝗿: _${vEconomy.money - MoneyRandom}🪙_`
                           );
