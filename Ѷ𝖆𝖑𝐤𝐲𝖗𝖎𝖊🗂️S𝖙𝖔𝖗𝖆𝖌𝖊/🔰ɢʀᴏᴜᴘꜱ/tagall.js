@@ -47,7 +47,6 @@ exports.tagall = async (
   quoted,
   isMedia,
   isGroup,
-  groupMetadata,
   groupAdmins,
   isBotAdmin,
   isSenderAdmin,
