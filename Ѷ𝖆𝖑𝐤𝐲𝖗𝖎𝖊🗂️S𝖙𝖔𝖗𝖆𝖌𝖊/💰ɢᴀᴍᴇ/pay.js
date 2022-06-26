@@ -110,7 +110,7 @@ exports.pay = async (
       Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.extendedTextMessage.contextInfo != null
         ? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.extendedTextMessage.contextInfo.participant || ""
         : "";
-    let repliedPersonNum = Receiver.substring(0, Receiver.length - 15);
+        let repliedPerson = await ᴋᴜɴᴀɪ.getName(Receiver || "");
     if (Receiver === Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender) {
       return ᴠʟᴋʏʀᴇ_Buttons.MTB(
         ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
