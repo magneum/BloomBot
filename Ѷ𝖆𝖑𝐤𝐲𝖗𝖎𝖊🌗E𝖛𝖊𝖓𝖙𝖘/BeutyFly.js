@@ -12,7 +12,7 @@ Kolor.black(Kolor.bgGreen(new Date()))
 );
 console.log(
 Kolor.bgYellowBright(`💤𝐂𝐨𝐦𝐦𝐚𝐧𝐝: `),
-Kolor.black(Kolor.blue(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName))
+Kolor.black(Kolor.blue(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName || ""))
 );
 console.log(
 Kolor.bgCyanBright(`🖋️𝐂𝐨𝐧𝐭𝐞𝐧𝐭: `),
