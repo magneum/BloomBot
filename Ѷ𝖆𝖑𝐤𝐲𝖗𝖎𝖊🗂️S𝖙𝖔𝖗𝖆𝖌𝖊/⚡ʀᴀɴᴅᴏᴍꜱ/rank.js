@@ -68,7 +68,7 @@ exports.rank = async (
     return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
       ᴋᴜɴᴀɪ,
       Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
-      `*❌ERROR:* Seems like you have nno role`
+      `*❌ERROR:* Seems like you have nno ranl`
     );
   }
   const levelRole = user.level;
