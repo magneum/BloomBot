@@ -12,7 +12,7 @@ let randomMC = require("random-material-color");
 let { Image_Button } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌀B𝖚𝖙𝖙𝖔𝖓𝖘/Image_Button");
 let color = randomMC.getColor();
 Levels.setURL(MONGOOSE);
-exports.ARanks = async (Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, ᴋᴜɴᴀɪ, Caught) => {
+exports.ARanks = async (Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, ᴋᴜɴᴀɪ, Caught, A𝖗𝖌𝖘) => {
   const randomXp = Math.floor(Math.random() * 3) + 1;
   const user = await Levels.fetch(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, true);
   if (!user) {
@@ -21,12 +21,12 @@ exports.ARanks = async (Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, ᴋᴜɴᴀɪ, Caught) =
     await Levels.setXp(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, 1);
     return;
   }
-  console.log(user);
   const hasLeveledUp = await Levels.appendXp(
     Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender,
     Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
     randomXp
   );
+  console.log(user);
   if (hasLeveledUp) {
     const levelRole = user.level;
     var role = "Warrior";
