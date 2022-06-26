@@ -46,9 +46,6 @@ exports.unban = async (
   quoted,
   isMedia,
   isGroup,
-  groupMetadata,
-  groupName,
-  participants,
   groupAdmins,
   isBotAdmin,
   isSenderAdmin,
@@ -59,7 +56,7 @@ exports.unban = async (
   mentionByTag,
   mentionByReply
 ) => {
-    let 𝕲𝖗𝖔𝖚𝖕𝖒𝖊𝖙𝖆 = Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.groupMetadata;
+  let 𝕲𝖗𝖔𝖚𝖕𝖒𝖊𝖙𝖆 = Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.groupMetadata;
   `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
   if (!fromMe && !isSenderTUF) {
     return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
