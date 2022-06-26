@@ -69,7 +69,7 @@ exports.rank = async (
       ᴋᴜɴᴀɪ,
       Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
       `*❌ERROR:* Seems like you have nno rank XP for this chat.
-      `
+      Try to talk more and `
     );
   }
   const levelRole = user.level;
