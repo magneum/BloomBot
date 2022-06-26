@@ -315,7 +315,7 @@ module.exports = ᴋᴜɴᴀɪ = async (ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗�
           );
         } else {
           await user.delete().catch((𝕰𝖗𝖗𝖔𝖗) => Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝕰𝖗𝖗𝖔𝖗));
-          await ᴋᴜɴᴀɪ.blockUser(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender, "add");
+          await ᴋᴜɴᴀɪ.updateBlockStatus(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender, `block`);
           return;
         }
       }
