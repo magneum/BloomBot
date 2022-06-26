@@ -144,7 +144,7 @@ ID: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender,
 async (𝕰𝖗𝖗𝖔𝖗, userEco) => {
 if (𝕰𝖗𝖗𝖔𝖗) return Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(𝕰𝖗𝖗𝖔𝖗));
 if (!userEco) {
-var newUser = new Economy({
+let newUser = new Economy({
 ID: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender,
 money: 0,
 daily: 0,
@@ -178,7 +178,7 @@ ID: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender,
 async (𝕰𝖗𝖗𝖔𝖗, userRob) => {
 if (𝕰𝖗𝖗𝖔𝖗) return Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(𝕰𝖗𝖗𝖔𝖗));
 if (!userRob) {
-var newUser = new Robbery({
+let newUser = new Robbery({
 ID: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender,
 sword: 0,
 laptop: 0,
@@ -339,7 +339,7 @@ ID: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender,
 async (𝕰𝖗𝖗𝖔𝖗, userBadge) => {
 if (𝕰𝖗𝖗𝖔𝖗) return Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(𝕰𝖗𝖗𝖔𝖗));
 if (!userEco) {
-var newEcoUser = new Economy({
+let newEcoUser = new Economy({
 ID: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender,
 money: 0,
 daily: 0,
@@ -372,7 +372,7 @@ KryChat,
 }
 `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
 if (!userBadge) {
-var newBagdeUser = new Bagde({
+let newBagdeUser = new Bagde({
 ID: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender,
 Badge: `🧵ʙᴀꜱɪᴄ-10ᴄᴏᴍᴍᴀɴᴅꜱ`,
 value: `True`,
