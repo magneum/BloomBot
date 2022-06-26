@@ -115,7 +115,7 @@ exports.ARanks = async (Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, ᴋᴜɴᴀɪ, Caught) =
       .setUsername("Ranker!")
       .setDiscriminator(աɦօֆɛ);
     rank.build().then(async (data) => {
-      await fs.writeFile(expFile, data, async (error) => {
+      fs.writeFile(expFile, data, async (error) => {
         if (error) return Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, error);
         await Image_Button(
           ᴋᴜɴᴀɪ,
