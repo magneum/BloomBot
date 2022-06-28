@@ -19,11 +19,11 @@ console.log(
 let ɴᴜᴍᴛʀɪᴇꜱꜰᴏʀɴᴏɴᴇᴍʙᴇᴅ = 15;
 let ᴄᴏɴᴛᴀɪɴꜱᴇᴍʙᴇᴅ = false;
 let ᴍᴀɪɴᴜʀʟ = "";
-let coreFetch;
+let ᴄᴏʀᴇꜰᴇᴛᴄʜ;
 if (typeof window === "undefined") {
-coreFetch = ɴᴏᴅᴇꜰᴇᴛᴄʜ;
+ᴄᴏʀᴇꜰᴇᴛᴄʜ = ɴᴏᴅᴇꜰᴇᴛᴄʜ;
 } else {
-coreFetch = fetch;
+ᴄᴏʀᴇꜰᴇᴛᴄʜ = fetch;
 }
 let playlists = [
 {
@@ -84,7 +84,7 @@ async function getMainSiteYoutubeMusicVideoUrl(embedUrl) {
 if (embedUrl == null) {
 throw new Error("embedUrl is null");
 }
-let res = await coreFetch(embedUrl);
+let res = await ᴄᴏʀᴇꜰᴇᴛᴄʜ(embedUrl);
 let txt = await res.text();
 let realUrlStartIdx = txt.indexOf("https://www.youtube.com/watch?v=");
 if (realUrlStartIdx === -1) {
