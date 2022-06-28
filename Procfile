@@ -1,1 +1,1 @@
-worker: python3 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🐍Ş𝖎𝖕𝖍𝖔𝖓/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌱𝐤𝖗𝖞𝐤𝖊𝖐.py
+worker: python3 python3 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌱𝐤𝖗𝖞𝐤𝖊𝖐.py
