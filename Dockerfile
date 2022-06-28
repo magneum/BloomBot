@@ -30,7 +30,7 @@ RUN git clone https://github.com/KryKnz/Vlkyre.git && cd Vlkyre
 WORKDIR /Vlkyre
 RUN pip install -r ⭕𝖈𝖆𝖗𝖆.txt && npm install --force && rm package-lock.json && npm install -g spotify-dl spdl-core && npm install -g typescript 
 RUN git config --global user.name 'KryKnz' && git config --global user.email 'krakinzkon@gmail.com' && git config pull.rebase false
-RUN git init --initial-branch=𝐕𝐥𝐤𝐲𝐫𝐞📡𝐏𝐫𝐨𝐭𝐨® && git fetch origin 𝐕𝐥𝐤𝐲𝐫𝐞📡𝐏𝐫𝐨𝐭𝐨® && git reset --hard origin/𝐕𝐥𝐤𝐲𝐫𝐞📡𝐏𝐫𝐨𝐭𝐨® 
+RUN git init --initial-branch=🐍Ş𝖎𝖕𝖍𝖔𝖓® && git fetch origin 🐍Ş𝖎𝖕𝖍𝖔𝖓® && git reset --hard origin/🐍Ş𝖎𝖕𝖍𝖔𝖓® 
 CMD python3 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🐍Ş𝖎𝖕𝖍𝖔𝖓/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌱𝐤𝖗𝖞𝐤𝖊𝖐.py
 # ("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
 # /*
