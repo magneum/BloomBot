@@ -136,8 +136,8 @@ console.log(
 ᴋᴏʟᴏʀ.black(ᴋᴏʟᴏʀ.bgWhite("𝐌𝐞𝐝𝐢𝐚: "), ᴋᴏʟᴏʀ.bgGreen(DLoader))
 );
 console.log(ᴋᴏʟᴏʀ.black(ᴋᴏʟᴏʀ.bgWhite("𝐒𝐢𝐳𝐞: "), ᴋᴏʟᴏʀ.bgRed(BSize)));
-} catch (e) {
-console.log(e);
+} catch (𝕰𝖗𝖗𝖔𝖗) {
+console.log(𝕰𝖗𝖗𝖔𝖗);
 let ᴍᴇᴅɪᴀ = await yta_var(Tube.url, "128kbps");
 let { DLoader, BSize } = await yta_var(Tube.url, "id4");
 console.log(
@@ -145,8 +145,8 @@ console.log(
 );
 console.log(ᴋᴏʟᴏʀ.black(ᴋᴏʟᴏʀ.bgWhite("𝐒𝐢𝐳𝐞: "), ᴋᴏʟᴏʀ.bgRed(BSize)));
 }
-} catch (e) {
-console.log(e);
+} catch (𝕰𝖗𝖗𝖔𝖗) {
+console.log(𝕰𝖗𝖗𝖔𝖗);
 }
 });
 }
