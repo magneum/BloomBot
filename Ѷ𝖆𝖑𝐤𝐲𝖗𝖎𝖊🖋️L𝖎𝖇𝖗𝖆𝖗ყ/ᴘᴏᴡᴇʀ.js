@@ -366,7 +366,7 @@ caption: `╔══『 𝐏𝐫𝐨𝐟𝐢𝐥𝐞𝐫® 』
 
 *❗ 𝐓𝐨 𝐔𝐬𝐞 𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞❗*
 Join The Group and get verified to use bot anywhere in this app.
-*𝗚roup⛩️:* chat.whatsapp.com/Gn50KMVAJKZHYJeaGhs3UV`,
+*𝗚roup⛩️:* chat.whatsapp.com/HSps2qiCNOUGR0tr8Darop`,
 footer: "*⦓ ⒸѶ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 ⦔*\nᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ",
 buttons: [
 {
