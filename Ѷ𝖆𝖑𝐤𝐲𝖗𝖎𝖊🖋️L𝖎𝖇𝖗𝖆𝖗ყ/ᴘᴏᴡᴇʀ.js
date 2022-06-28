@@ -3453,8 +3453,8 @@ await rob(
 );
 break;
 case `bag`:
-    case `inv`:
-        case `inv`:
+case `inv`:
+case `loot`:
 case `inventory`:
 await bag(
 ᴋᴜɴᴀɪ,
