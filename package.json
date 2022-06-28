@@ -18,9 +18,10 @@
 },
 "scripts": {
 "sync": "node Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/🪔S𝖞𝖓𝖈.js",
-"start": "python3 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌱𝐤𝖗𝖞𝐤𝖊𝖐.py"
+"start": "python3 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🐍Ş𝖎𝖕𝖍𝖔𝖓/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌱𝐤𝖗𝖞𝐤𝖊𝖐.py"
 },
 "dependencies": {
+"@heroku-cli/color": "^1.1.14",
 "@adiwajshing/baileys": "4.0.1",
 "@adiwajshing/keyed-db": "^0.2.4",
 "@canvas-fonts/arial-bold": "^1.0.4",
