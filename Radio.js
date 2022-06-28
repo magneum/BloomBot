@@ -96,7 +96,7 @@ return embedUrl;
 }
 return txt.substring(realUrlStartIdx, realUrlEndIdx);
 }
-async function getRandomMusicVideoUrl(preventEmbedded) {
+async function ʀꜰᴏᴜɴᴅ(preventEmbedded) {
 while (numTriesForNonEmbed > 0) {
 numTriesForNonEmbed--;
 let embedUrl = getEmbedMusicVideoUrl();
@@ -119,7 +119,7 @@ console.log(
 return mainUrl;
 }
 ("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
-let ᴛᴜʙᴇʟ = await getRandomMusicVideoUrl();
+let ᴛᴜʙᴇʟ = await ʀꜰᴏᴜɴᴅ();
 let { id } = ɢᴇᴛᴠɪᴅᴇᴏɪᴅ(ᴛᴜʙᴇʟ);
 if (!id) return;
 let FFound = await ʏᴛꜱ(id);
