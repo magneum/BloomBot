@@ -279,17 +279,17 @@ exports.ᴘᴏᴡᴇʀ = async (ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊) =
           {
             name: "latest",
             id: "PLFgquLnL59akA2PflFpeQG9L01VFg90wS",
-            max: 543,
+            max: 500,
           },
           {
             name: "popular-music-videos",
             id: "PLFgquLnL59alCl_2TQvOiD5Vgm1hCaGSI",
-            max: 543,
+            max:500,
           },
           {
             name: "top-hits-this-week",
             id: "PLw-VjHDlEOgvWPpRBs9FRGgJcKpDimTqf",
-            max: 543,
+            max500,
           },
         ];
         let app = {
