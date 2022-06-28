@@ -291,6 +291,9 @@ ${cpus
 
 ╔══『 💰𝗚𝗮𝗺𝗲𝘀💰 』
 ║シ︎  ${prefix}dly
+║シ︎  ${prefix}dly
+║シ︎  ${prefix}dly
+║シ︎  ${prefix}dly
 ║シ︎  ${prefix}daily
 ║シ︎  ${prefix}pond
 ║シ︎  ${prefix}fish
