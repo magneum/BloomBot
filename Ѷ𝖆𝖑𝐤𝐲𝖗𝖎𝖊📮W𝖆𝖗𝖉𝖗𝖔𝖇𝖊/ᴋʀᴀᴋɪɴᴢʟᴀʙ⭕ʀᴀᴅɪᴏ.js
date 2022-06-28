@@ -3,19 +3,44 @@
 * * * * * * * * * * |        (𝐜)𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!        * * * * * * * * * *
 */
 ("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
-let ꜰꜱ = require("fs");
 let ᴋᴏʟᴏʀ = require("chalk");
 let ʏᴛꜱ = require("yt-search");
-let ᴄʀᴏɴ = require("node-cron");
 let ɴᴏᴅᴇꜰᴇᴛᴄʜ = require("node-fetch");
 let ɢᴇᴛᴠɪᴅᴇᴏɪᴅ = require("get-video-id");
-let { yta } = require("./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/y2mate");
-let { yta_var } = require("./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧥H𝖔𝖑𝖘𝖙𝖊𝖗/letiableServers");
+let { yta } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/y2mate");
+let { yta_var } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧥H𝖔𝖑𝖘𝖙𝖊𝖗/letiableServers");
+// let ᴄʀᴏɴ = require("node-cron");
+// ᴄʀᴏɴ.schedule("*/30 * * * * *", async () => {
+// await ᴘᴏᴡ();
+// });
+("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
+exports.ᴋʀᴀᴋɪɴᴢʟᴀʙʀᴀᴅɪᴏ = async (Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, ᴋᴜɴᴀɪ) => {
+async function ᴘᴏᴡꜰꜱ(ᴛᴜʙᴇ, ᴍᴇᴅɪᴀ) {
+return await ᴋᴜɴᴀɪ.sendMessage(
+Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
+{
+audio: { url: ᴍᴇᴅɪᴀ },
+contextInfo: {
+externalAdReply: {
+title: `🍻𝐓𝐢𝐭𝐥𝐞: ${ᴛᴜʙᴇ.title}`,
+body: `ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ⭕ʀᴀᴅɪᴏ`,
+mediaType: 2,
+thumbnail: ᴛᴜʙᴇ.thumbnail,
+mediaUrl: ᴛᴜʙᴇ.thumbnail,
+},
+},
+mimetype: `audio/mpeg`,
+fileName: `${ᴛᴜʙᴇ.title}.mp3`,
+},
+{ quoted: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 }
+);
+}
 ("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
 async function ᴘᴏᴡ() {
 console.log(
-ᴋᴏʟᴏʀ.black(ᴋᴏʟᴏʀ.bgWhite("𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐀𝐭: "), ᴋᴏʟᴏʀ.bgYellow(new Date()))
+ᴋᴏʟᴏʀ.black(ᴋᴏʟᴏʀ.bgWhite("🍯𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐀𝐭: "), ᴋᴏʟᴏʀ.bgYellow(new Date()))
 );
+try {
 let ɴᴜᴍᴛʀɪᴇꜱꜰᴏʀɴᴏɴᴇᴍʙᴇᴅ = 15;
 let ᴄᴏɴᴛᴀɪɴꜱᴇᴍʙᴇᴅ = false;
 let ᴍᴀɪɴᴜʀʟ = "";
@@ -26,11 +51,11 @@ if (typeof window === "undefined") {
 ᴄᴏʀᴇꜰᴇᴛᴄʜ = fetch;
 }
 let playlists = [
-    {
-        name: "most-viewed",
-        id: "PL15B1E77BB5708555",
-        max: 543,
-        },
+{
+name: "most-viewed",
+id: "PL15B1E77BB5708555",
+max: 543,
+},
 {
 name: "billboard",
 id: "PL55713C70BA91BD6E",
@@ -110,14 +135,9 @@ return ᴍᴀɪɴᴜʀʟ;
 if (preventEmbedded && ᴄᴏɴᴛᴀɪɴꜱᴇᴍʙᴇᴅ) {
 return null;
 }
-console.log(
-ᴋᴏʟᴏʀ.black(
-ᴋᴏʟᴏʀ.bgWhite("𝐓𝐫𝐚𝐧𝐬𝐟𝐞𝐫𝐫𝐞𝐝 𝐀𝐭: "),
-ᴋᴏʟᴏʀ.bgMagenta(new Date())
-)
-);
 return ᴍᴀɪɴᴜʀʟ;
 }
+
 ("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
 let ᴛᴜʙᴇʟ = await ʀꜰᴏᴜɴᴅ();
 let { id } = ɢᴇᴛᴠɪᴅᴇᴏɪᴅ(ᴛᴜʙᴇʟ);
@@ -127,33 +147,45 @@ let ᴛꜰᴏᴜɴᴅ = ꜰꜰᴏᴜɴᴅ.videos.slice(0, 1);
 if (!ᴛꜰᴏᴜɴᴅ) return;
 if (!ꜰꜰᴏᴜɴᴅ) return;
 ᴛꜰᴏᴜɴᴅ.forEach(async function (ᴛᴜʙᴇ) {
+console.log(
+ᴋᴏʟᴏʀ.black(
+ᴋᴏʟᴏʀ.bgWhite("🐙𝐓𝐫𝐚𝐧𝐬𝐟𝐞𝐫𝐫𝐞𝐝 𝐀𝐭: "),
+ᴋᴏʟᴏʀ.bgMagenta(new Date())
+)
+);
 console.log(ᴛᴜʙᴇ);
-try {
 try {
 let ᴍᴇᴅɪᴀ = await yta(ᴛᴜʙᴇ.url, "128kbps");
 let { DLoader, BSize } = await yta_var(ᴛᴜʙᴇ.url, "en136");
 console.log(
-ᴋᴏʟᴏʀ.black(ᴋᴏʟᴏʀ.bgWhite("𝐌𝐞𝐝𝐢𝐚: "), ᴋᴏʟᴏʀ.bgGreen(DLoader))
+ᴋᴏʟᴏʀ.black(ᴋᴏʟᴏʀ.bgWhite("⭕𝐌𝐞𝐝𝐢𝐚: "), ᴋᴏʟᴏʀ.bgGreen(DLoader))
 );
-console.log(ᴋᴏʟᴏʀ.black(ᴋᴏʟᴏʀ.bgWhite("𝐒𝐢𝐳𝐞: "), ᴋᴏʟᴏʀ.bgRed(BSize)));
+console.log(
+ᴋᴏʟᴏʀ.black(ᴋᴏʟᴏʀ.bgWhite("🎶𝐒𝐢𝐳𝐞: "), ᴋᴏʟᴏʀ.bgRed(BSize))
+);
+return await ᴘᴏᴡꜰꜱ(ᴛᴜʙᴇ, ᴍᴇᴅɪᴀ);
+("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
 } catch (𝕰𝖗𝖗𝖔𝖗) {
-console.log(𝕰𝖗𝖗𝖔𝖗);
+console.log(
+ᴋᴏʟᴏʀ.black(ᴋᴏʟᴏʀ.bgWhite("⚠️𝕰𝖗𝖗𝖔𝖗: "), ᴋᴏʟᴏʀ.bgRed(𝕰𝖗𝖗𝖔𝖗))
+);
 let ᴍᴇᴅɪᴀ = await yta_var(ᴛᴜʙᴇ.url, "128kbps");
 let { DLoader, BSize } = await yta_var(ᴛᴜʙᴇ.url, "id4");
 console.log(
-ᴋᴏʟᴏʀ.black(ᴋᴏʟᴏʀ.bgWhite("𝐌𝐞𝐝𝐢𝐚: "), ᴋᴏʟᴏʀ.bgGreen(DLoader))
+ᴋᴏʟᴏʀ.black(ᴋᴏʟᴏʀ.bgWhite("⭕𝐌𝐞𝐝𝐢𝐚: "), ᴋᴏʟᴏʀ.bgGreen(DLoader))
 );
-console.log(ᴋᴏʟᴏʀ.black(ᴋᴏʟᴏʀ.bgWhite("𝐒𝐢𝐳𝐞: "), ᴋᴏʟᴏʀ.bgRed(BSize)));
-}
-} catch (𝕰𝖗𝖗𝖔𝖗) {
-console.log(𝕰𝖗𝖗𝖔𝖗);
+console.log(
+ᴋᴏʟᴏʀ.black(ᴋᴏʟᴏʀ.bgWhite("🎶𝐒𝐢𝐳𝐞: "), ᴋᴏʟᴏʀ.bgRed(BSize))
+);
+return await ᴘᴏᴡꜰꜱ(ᴛᴜʙᴇ, ᴍᴇᴅɪᴀ);
 }
 });
+} catch (𝕰𝖗𝖗𝖔𝖗) {
+console.log(ᴋᴏʟᴏʀ.black(ᴋᴏʟᴏʀ.bgWhite("⚠️𝕰𝖗𝖗𝖔𝖗: "), ᴋᴏʟᴏʀ.bgRed(𝕰𝖗𝖗𝖔𝖗)));
+}
 }
 ᴘᴏᴡ();
-ᴄʀᴏɴ.schedule("*/30 * * * * *", async () => {
-await ᴘᴏᴡ();
-});
+};
 ("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
 /*
 * * * * * * * * * * |        (𝐜)𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!        * * * * * * * * * *
