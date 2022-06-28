@@ -18,7 +18,7 @@ console.log(
 );
 let ɴᴜᴍᴛʀɪᴇꜱꜰᴏʀɴᴏɴᴇᴍʙᴇᴅ = 15;
 let ᴄᴏɴᴛᴀɪɴꜱᴇᴍʙᴇᴅ = false;
-let mainUrl = "";
+let ᴍᴀɪɴᴜʀʟ = "";
 let coreFetch;
 if (typeof window === "undefined") {
 coreFetch = ɴᴏᴅᴇꜰᴇᴛᴄʜ;
@@ -100,11 +100,11 @@ async function ʀꜰᴏᴜɴᴅ(preventEmbedded) {
 while (ɴᴜᴍᴛʀɪᴇꜱꜰᴏʀɴᴏɴᴇᴍʙᴇᴅ > 0) {
 ɴᴜᴍᴛʀɪᴇꜱꜰᴏʀɴᴏɴᴇᴍʙᴇᴅ--;
 let embedUrl = ɢᴇᴛᴇᴍʙᴇᴅᴍᴜꜱɪᴄᴠɪᴅᴇᴏᴜʀʟ();
-mainUrl = await getMainSiteYoutubeMusicVideoUrl(embedUrl);
+ᴍᴀɪɴᴜʀʟ = await getMainSiteYoutubeMusicVideoUrl(embedUrl);
 ᴄᴏɴᴛᴀɪɴꜱᴇᴍʙᴇᴅ =
-mainUrl.indexOf("https://www.youtube.com/embed/?list=") !== -1;
+ᴍᴀɪɴᴜʀʟ.indexOf("https://www.youtube.com/embed/?list=") !== -1;
 if (!ᴄᴏɴᴛᴀɪɴꜱᴇᴍʙᴇᴅ) {
-return mainUrl;
+return ᴍᴀɪɴᴜʀʟ;
 }
 }
 if (preventEmbedded && ᴄᴏɴᴛᴀɪɴꜱᴇᴍʙᴇᴅ) {
@@ -116,7 +116,7 @@ console.log(
 ᴋᴏʟᴏʀ.bgMagenta(new Date())
 )
 );
-return mainUrl;
+return ᴍᴀɪɴᴜʀʟ;
 }
 ("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
 let ᴛᴜʙᴇʟ = await ʀꜰᴏᴜɴᴅ();
