@@ -68,16 +68,16 @@ string = string.replace(regexp, arguments[i]);
 }
 return string;
 };
-function generateRandom(num) {
+function ɢᴇɴᴇʀᴀᴛᴇʀᴀɴᴅᴏᴍ(num) {
 return Math.floor(Math.random() * num);
 }
 function ɢᴇᴛᴘʟᴀʏʟɪꜱᴛ() {
-let loc = generateRandom(playlists.length);
+let loc = ɢᴇɴᴇʀᴀᴛᴇʀᴀɴᴅᴏᴍ(playlists.length);
 return playlists[loc];
 }
 function ɢᴇᴛᴇᴍʙᴇᴅᴍᴜꜱɪᴄᴠɪᴅᴇᴏᴜʀʟ() {
 let playlist = ɢᴇᴛᴘʟᴀʏʟɪꜱᴛ();
-let index = generateRandom(playlist.max);
+let index = ɢᴇɴᴇʀᴀᴛᴇʀᴀɴᴅᴏᴍ(playlist.max);
 return app.baseURL.format(playlist.id, index) + app.queryStrings;
 }
 async function getMainSiteYoutubeMusicVideoUrl(embedUrl) {
