@@ -75,7 +75,7 @@ function getPlaylist() {
 let loc = generateRandom(playlists.length);
 return playlists[loc];
 }
-function getEmbedMusicVideoUrl() {
+function ɢᴇᴛᴇᴍʙᴇᴅᴍᴜꜱɪᴄᴠɪᴅᴇᴏᴜʀʟ() {
 let playlist = getPlaylist();
 let index = generateRandom(playlist.max);
 return app.baseURL.format(playlist.id, index) + app.queryStrings;
@@ -99,7 +99,7 @@ return txt.substring(realUrlStartIdx, realUrlEndIdx);
 async function ʀꜰᴏᴜɴᴅ(preventEmbedded) {
 while (numTriesForNonEmbed > 0) {
 numTriesForNonEmbed--;
-let embedUrl = getEmbedMusicVideoUrl();
+let embedUrl = ɢᴇᴛᴇᴍʙᴇᴅᴍᴜꜱɪᴄᴠɪᴅᴇᴏᴜʀʟ();
 mainUrl = await getMainSiteYoutubeMusicVideoUrl(embedUrl);
 containsEmbed =
 mainUrl.indexOf("https://www.youtube.com/embed/?list=") !== -1;
