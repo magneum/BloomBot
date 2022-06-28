@@ -144,9 +144,6 @@ exports.ᴋʀᴀᴋɪɴᴢʟᴀʙʀᴀᴅɪᴏ = async (Ѷ𝖆𝖑𝐤𝐲𝖗�
         try {
           let { DLoader, BSize } = await yta_var(ᴛᴜʙᴇ.url, "en136");
           console.log(
-            ᴋᴏʟᴏʀ.black(ᴋᴏʟᴏʀ.bgWhite("⭕𝐌𝐞𝐝𝐢𝐚: "), ᴋᴏʟᴏʀ.bgGreen(DLoader))
-          );
-          console.log(
             ᴋᴏʟᴏʀ.black(ᴋᴏʟᴏʀ.bgWhite("🎶𝐒𝐢𝐳𝐞: "), ᴋᴏʟᴏʀ.bgRed(BSize))
           );
           return await ᴋᴜɴᴀɪ.sendMessage(
