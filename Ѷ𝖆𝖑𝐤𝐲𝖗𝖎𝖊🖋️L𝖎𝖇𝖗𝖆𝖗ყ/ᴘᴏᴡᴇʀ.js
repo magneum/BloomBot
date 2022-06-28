@@ -269,12 +269,12 @@ exports.ᴘᴏᴡᴇʀ = async (ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊) =
           {
             name: "most-viewed",
             id: "PL15B1E77BB5708555",
-            max: 543,
+            max: 500,
           },
           {
             name: "billboard",
             id: "PL55713C70BA91BD6E",
-            max: 543,
+            max:500,
           },
           {
             name: "latest",
