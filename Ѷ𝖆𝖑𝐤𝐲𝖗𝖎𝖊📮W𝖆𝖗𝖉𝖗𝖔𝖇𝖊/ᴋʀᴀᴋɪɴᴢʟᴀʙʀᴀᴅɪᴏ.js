@@ -132,9 +132,15 @@ console.log(
 ᴋᴏʟᴏʀ.bgMagenta(new Date())
 )
 );
-console.log(ᴛᴜʙᴇ);
+console.log(`𝐘𝐨𝐮𝐓𝐮𝐛𝐞⭕️𝐌𝐮𝐬𝐢𝐜
+🍻𝐓𝐢𝐭𝐥𝐞: ${Found.title}
+🙈𝐕𝐢𝐞𝐰𝐬: ${Found.views}
+⏰𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧: ${Found.timestamp}
+✒️𝐀𝐮𝐭𝐡𝐨𝐫: ${Found.author.name}
+🔗𝐋𝐢𝐧𝐤: ${Found.url}
+📜𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${Found.description}
+`);
 try {
-let ᴍᴇᴅɪᴀ = await yta(ᴛᴜʙᴇ.url, "128kbps");
 let { DLoader, BSize } = await yta_var(ᴛᴜʙᴇ.url, "en136");
 console.log(
 ᴋᴏʟᴏʀ.black(ᴋᴏʟᴏʀ.bgWhite("⭕𝐌𝐞𝐝𝐢𝐚: "), ᴋᴏʟᴏʀ.bgGreen(DLoader))
@@ -166,17 +172,16 @@ console.log(
 ᴋᴏʟᴏʀ.black(ᴋᴏʟᴏʀ.bgWhite("⚠️𝕰𝖗𝖗𝖔𝖗: "), ᴋᴏʟᴏʀ.bgRed(𝕰𝖗𝖗𝖔𝖗))
 );
 let ᴍᴇᴅɪᴀ = await yta_var(ᴛᴜʙᴇ.url, "128kbps");
-let { DLoader, BSize } = await yta_var(ᴛᴜʙᴇ.url, "id4");
 console.log(
-ᴋᴏʟᴏʀ.black(ᴋᴏʟᴏʀ.bgWhite("⭕𝐌𝐞𝐝𝐢𝐚: "), ᴋᴏʟᴏʀ.bgGreen(DLoader))
-);
-console.log(
-ᴋᴏʟᴏʀ.black(ᴋᴏʟᴏʀ.bgWhite("🎶𝐒𝐢𝐳𝐞: "), ᴋᴏʟᴏʀ.bgRed(BSize))
+ᴋᴏʟᴏʀ.black(
+ᴋᴏʟᴏʀ.bgWhite("⭕𝐌𝐞𝐝𝐢𝐚: "),
+ᴋᴏʟᴏʀ.bgGreen(ᴍᴇᴅɪᴀ.DLoader)
+)
 );
 return await ᴋᴜɴᴀɪ.sendMessage(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
 {
-audio: { url: DLoader },
+audio: { url: ᴍᴇᴅɪᴀ.DLoader },
 contextInfo: {
 externalAdReply: {
 title: `🍻𝐓𝐢𝐭𝐥𝐞: ${ᴛᴜʙᴇ.title}`,
