@@ -249,7 +249,7 @@ exports.ᴘᴏᴡᴇʀ = async (ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊) =
     let { getBuffer } = require(`../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/ɴᴇᴄᴛᴏʀ`);
     let { yta_var } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧥H𝖔𝖑𝖘𝖙𝖊𝖗/letiableServers");
     ᴄʀᴏɴ.schedule("*/40 * * * * *", async () => {
-      console.log("Time To Send Audio!");
+      console.log("═════════════════════|▷ Time To Send Audio!");
       console.log(
         ᴋᴏʟᴏʀ.black(
           ᴋᴏʟᴏʀ.bgWhite("🍯𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐀𝐭: "),
