@@ -123,10 +123,10 @@ let ᴛᴜʙᴇʟ = await ʀꜰᴏᴜɴᴅ();
 let { id } = ɢᴇᴛᴠɪᴅᴇᴏɪᴅ(ᴛᴜʙᴇʟ);
 if (!id) return;
 let ꜰꜰᴏᴜɴᴅ = await ʏᴛꜱ(id);
-let TFound = ꜰꜰᴏᴜɴᴅ.videos.slice(0, 1);
-if (!TFound) return;
+let ᴛꜰᴏᴜɴᴅ = ꜰꜰᴏᴜɴᴅ.videos.slice(0, 1);
+if (!ᴛꜰᴏᴜɴᴅ) return;
 if (!ꜰꜰᴏᴜɴᴅ) return;
-TFound.forEach(async function (Tube) {
+ᴛꜰᴏᴜɴᴅ.forEach(async function (Tube) {
 console.log(Tube);
 try {
 try {
