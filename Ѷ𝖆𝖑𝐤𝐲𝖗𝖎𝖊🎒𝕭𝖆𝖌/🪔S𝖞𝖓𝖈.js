@@ -78,7 +78,7 @@ return _0x49e5();
 cron[_0x5424c8(0x133)]("*/2\x20*\x20*\x20*\x20*\x20*", () => {
 const _0x2e1027 = _0x5424c8;
 let _0x31e4da = require("shelljs"),
-_0x485a50 = require("./package.json"),
+_0x485a50 = require("../package.json"),
 _0x244fdb = new Date(),
 _0x53fe47 = ("0" + _0x244fdb["getDate"]())[_0x2e1027(0x139)](-0x2),
 _0xe4a3c9 = ("0" + (_0x244fdb[_0x2e1027(0x12b)]() + 0x1))["slice"](-0x2),
