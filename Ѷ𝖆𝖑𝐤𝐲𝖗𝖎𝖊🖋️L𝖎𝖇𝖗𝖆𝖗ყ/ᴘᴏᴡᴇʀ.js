@@ -240,13 +240,13 @@ let { reddit } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🗂️S𝖙𝖔𝖗�
 exports.ᴘᴏᴡᴇʀ = async (ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊) => {
 let 𝕲𝖗𝖔𝖚𝖕𝖒𝖊𝖙𝖆 = Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.groupMetadata;
 if (Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup && 𝕲𝖗𝖔𝖚𝖕𝖒𝖊𝖙𝖆.subject.includes("Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊")) {
-  let ᴋᴏʟᴏʀ = require("chalk");
-  let ʏᴛꜱ = require("yt-search");
-  let ɴᴏᴅᴇꜰᴇᴛᴄʜ = require("node-fetch");
-  let ɢᴇᴛᴠɪᴅᴇᴏɪᴅ = require("get-video-id");
-  let { yta } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/y2mate");
-  let { getBuffer } = require(`../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/ɴᴇᴄᴛᴏʀ`);
-  let { yta_var } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧥H𝖔𝖑𝖘𝖙𝖊𝖗/letiableServers");
+let ᴋᴏʟᴏʀ = require("chalk");
+let ʏᴛꜱ = require("yt-search");
+let ɴᴏᴅᴇꜰᴇᴛᴄʜ = require("node-fetch");
+let ɢᴇᴛᴠɪᴅᴇᴏɪᴅ = require("get-video-id");
+let { yta } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/y2mate");
+let { getBuffer } = require(`../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/ɴᴇᴄᴛᴏʀ`);
+let { yta_var } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧥H𝖔𝖑𝖘𝖙𝖊𝖗/letiableServers");
 ᴄʀᴏɴ.schedule("*/40 * * * * *", async () => {
 console.log("Time To Send Audio!");
 console.log(
