@@ -71,12 +71,12 @@ return string;
 function generateRandom(num) {
 return Math.floor(Math.random() * num);
 }
-function getPlaylist() {
+function ɢᴇᴛᴘʟᴀʏʟɪꜱᴛ() {
 let loc = generateRandom(playlists.length);
 return playlists[loc];
 }
 function ɢᴇᴛᴇᴍʙᴇᴅᴍᴜꜱɪᴄᴠɪᴅᴇᴏᴜʀʟ() {
-let playlist = getPlaylist();
+let playlist = ɢᴇᴛᴘʟᴀʏʟɪꜱᴛ();
 let index = generateRandom(playlist.max);
 return app.baseURL.format(playlist.id, index) + app.queryStrings;
 }
