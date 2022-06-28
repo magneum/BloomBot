@@ -16,7 +16,7 @@ async function ᴘᴏᴡ() {
 console.log(
 ᴋᴏʟᴏʀ.black(ᴋᴏʟᴏʀ.bgWhite("𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐀𝐭: "), ᴋᴏʟᴏʀ.bgYellow(new Date()))
 );
-let numTriesForNonEmbed = 15;
+let ɴᴜᴍᴛʀɪᴇꜱꜰᴏʀɴᴏɴᴇᴍʙᴇᴅ = 15;
 let containsEmbed = false;
 let mainUrl = "";
 let coreFetch;
@@ -97,8 +97,8 @@ return embedUrl;
 return txt.substring(realUrlStartIdx, realUrlEndIdx);
 }
 async function ʀꜰᴏᴜɴᴅ(preventEmbedded) {
-while (numTriesForNonEmbed > 0) {
-numTriesForNonEmbed--;
+while (ɴᴜᴍᴛʀɪᴇꜱꜰᴏʀɴᴏɴᴇᴍʙᴇᴅ > 0) {
+ɴᴜᴍᴛʀɪᴇꜱꜰᴏʀɴᴏɴᴇᴍʙᴇᴅ--;
 let embedUrl = ɢᴇᴛᴇᴍʙᴇᴅᴍᴜꜱɪᴄᴠɪᴅᴇᴏᴜʀʟ();
 mainUrl = await getMainSiteYoutubeMusicVideoUrl(embedUrl);
 containsEmbed =
