@@ -219,7 +219,7 @@ ${cpus
 ╔════════★
 ║シ︎ *🔑ᴘʀᴇꜰɪx:* ${prefix}
 ║シ︎ *🦞ɢɪᴛʜᴜʙ:* github.com/kryknz
-║シ︎ *𝗚roup⛩️:* chat.whatsapp.com/Gn50KMVAJKZHYJeaGhs3UV
+║シ︎ *𝗚roup⛩️:* chat.whatsapp.com/HSps2qiCNOUGR0tr8Darop
 ╚═══════╝
 ╔═══════★ 𝐒𝐲𝐬𝐭𝐞𝐦 𝐈𝐧𝐟𝐨𝐬
 ║シ︎ *⚙️ᴇɴɢɪɴᴇ:* ${vers.vers}
