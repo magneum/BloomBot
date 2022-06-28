@@ -34,7 +34,7 @@ Call(null, chosen);
 console.log(
 Kolor.black(
 Kolor.white("Request Got At: "),
-Kolor.bgYellow(new Date())
+Kolor.bgGreen(new Date())
 )
 );
 } else {
