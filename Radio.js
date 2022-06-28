@@ -5,6 +5,7 @@
 ("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
 require("./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/𝕷𝖆ყO𝖚𝖙");
 let Fs = require("fs");
+let Kolor = require("chalk");
 let Db = require("quick.db");
 let Yts = require("yt-search");
 let request = require("request");
@@ -12,7 +13,9 @@ let { yta } = require("./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆�
 let { yta_var } = require("./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧥H𝖔𝖑𝖘𝖙𝖊𝖗/letiableServers");
 ("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
 async function 𝐤𝐲𝐫𝐞(GetData) {
-  console.log()
+  console.log(
+    Kolor.black(Kolor.white("Sent Request At: "), Kolor.bgYellow(new Date()))
+  );
   let RFound = function (VlkyreYT, Find, Call) {
     let Link =
       "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=50&q=" +
@@ -28,6 +31,12 @@ async function 𝐤𝐲𝐫𝐞(GetData) {
         });
         let chosen = obj[Math.floor(Math.random() * obj.length)];
         Call(null, chosen);
+        console.log(
+          Kolor.black(
+            Kolor.white("Request Got At: "),
+            Kolor.bgYellow(new Date())
+          )
+        );
       } else {
         Call(body, null);
       }
