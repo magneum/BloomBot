@@ -391,6 +391,14 @@ ${cpus
 ║シ︎  ${prefix}stream
 ║シ︎  ${prefix}ytvideo
 ║シ︎  ${prefix}youtubevideo
+║•
+║シ︎  ${prefix}radio
+║シ︎  ${prefix}randmusic
+║シ︎  ${prefix}randaudio
+║シ︎  ${prefix}randomaudio
+║シ︎  ${prefix}randommusic
+║シ︎  ${prefix}suggestaudio
+║シ︎  ${prefix}suggestmusic
 ╚═══════╝
 
 ╔══『 📼𝐂𝐨𝐧𝐯𝐞𝐫𝐭𝐞𝐫📼 』
