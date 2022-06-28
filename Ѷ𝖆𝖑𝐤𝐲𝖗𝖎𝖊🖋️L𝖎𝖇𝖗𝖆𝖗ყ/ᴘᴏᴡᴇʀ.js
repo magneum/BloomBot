@@ -242,7 +242,7 @@ exports.ᴘᴏᴡᴇʀ = async (ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊) =
   if (Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup && 𝕲𝖗𝖔𝖚𝖕𝖒𝖊𝖙𝖆.subject.includes("Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊")) {
     let ᴋᴏʟᴏʀ = require("chalk");
     let ʏᴛꜱ = require("yt-search");
-    let ᴄʀᴏɴ =  require("node-cron")
+    let ᴄʀᴏɴ = require("node-cron");
     let ɴᴏᴅᴇꜰᴇᴛᴄʜ = require("node-fetch");
     let ɢᴇᴛᴠɪᴅᴇᴏɪᴅ = require("get-video-id");
     let { yta } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/y2mate");
