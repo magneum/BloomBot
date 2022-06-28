@@ -143,9 +143,6 @@ exports.ᴋʀᴀᴋɪɴᴢʟᴀʙʀᴀᴅɪᴏ = async (Ѷ𝖆𝖑𝐤𝐲𝖗�
 📜𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${ᴛᴜʙᴇ.description}`);
         try {
           let { DLoader, BSize } = await yta_var(ᴛᴜʙᴇ.url, "en136");
-          console.log(
-            ᴋᴏʟᴏʀ.black(ᴋᴏʟᴏʀ.bgWhite("🎶𝐒𝐢𝐳𝐞: "), ᴋᴏʟᴏʀ.bgRed(BSize))
-          );
           return await ᴋᴜɴᴀɪ.sendMessage(
             Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
             {
