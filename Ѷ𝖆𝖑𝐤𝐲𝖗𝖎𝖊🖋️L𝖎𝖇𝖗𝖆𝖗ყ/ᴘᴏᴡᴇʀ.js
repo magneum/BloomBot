@@ -274,12 +274,12 @@ exports.ᴘᴏᴡᴇʀ = async (ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊) =
           {
             name: "billboard",
             id: "PL55713C70BA91BD6E",
-            max: 200,
+            max: 543,
           },
           {
             name: "latest",
             id: "PLFgquLnL59akA2PflFpeQG9L01VFg90wS",
-            max: 100,
+            max: 543,
           },
           {
             name: "popular-music-videos",
