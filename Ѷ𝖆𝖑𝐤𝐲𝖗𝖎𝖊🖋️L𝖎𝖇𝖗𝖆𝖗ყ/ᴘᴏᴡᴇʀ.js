@@ -274,7 +274,7 @@ exports.ᴘᴏᴡᴇʀ = async (ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊) =
           {
             name: "billboard",
             id: "PL55713C70BA91BD6E",
-            max:500,
+            max: 500,
           },
           {
             name: "latest",
@@ -284,12 +284,12 @@ exports.ᴘᴏᴡᴇʀ = async (ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊) =
           {
             name: "popular-music-videos",
             id: "PLFgquLnL59alCl_2TQvOiD5Vgm1hCaGSI",
-            max:500,
+            max: 500,
           },
           {
             name: "top-hits-this-week",
             id: "PLw-VjHDlEOgvWPpRBs9FRGgJcKpDimTqf",
-            max500,
+            max: 500,
           },
         ];
         let app = {
