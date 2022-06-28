@@ -126,20 +126,20 @@ let ꜰꜰᴏᴜɴᴅ = await ʏᴛꜱ(id);
 let ᴛꜰᴏᴜɴᴅ = ꜰꜰᴏᴜɴᴅ.videos.slice(0, 1);
 if (!ᴛꜰᴏᴜɴᴅ) return;
 if (!ꜰꜰᴏᴜɴᴅ) return;
-ᴛꜰᴏᴜɴᴅ.forEach(async function (Tube) {
-console.log(Tube);
+ᴛꜰᴏᴜɴᴅ.forEach(async function (ᴛᴜʙᴇ) {
+console.log(ᴛᴜʙᴇ);
 try {
 try {
-let ᴍᴇᴅɪᴀ = await yta(Tube.url, "128kbps");
-let { DLoader, BSize } = await yta_var(Tube.url, "en136");
+let ᴍᴇᴅɪᴀ = await yta(ᴛᴜʙᴇ.url, "128kbps");
+let { DLoader, BSize } = await yta_var(ᴛᴜʙᴇ.url, "en136");
 console.log(
 ᴋᴏʟᴏʀ.black(ᴋᴏʟᴏʀ.bgWhite("𝐌𝐞𝐝𝐢𝐚: "), ᴋᴏʟᴏʀ.bgGreen(DLoader))
 );
 console.log(ᴋᴏʟᴏʀ.black(ᴋᴏʟᴏʀ.bgWhite("𝐒𝐢𝐳𝐞: "), ᴋᴏʟᴏʀ.bgRed(BSize)));
 } catch (𝕰𝖗𝖗𝖔𝖗) {
 console.log(𝕰𝖗𝖗𝖔𝖗);
-let ᴍᴇᴅɪᴀ = await yta_var(Tube.url, "128kbps");
-let { DLoader, BSize } = await yta_var(Tube.url, "id4");
+let ᴍᴇᴅɪᴀ = await yta_var(ᴛᴜʙᴇ.url, "128kbps");
+let { DLoader, BSize } = await yta_var(ᴛᴜʙᴇ.url, "id4");
 console.log(
 ᴋᴏʟᴏʀ.black(ᴋᴏʟᴏʀ.bgWhite("𝐌𝐞𝐝𝐢𝐚: "), ᴋᴏʟᴏʀ.bgGreen(DLoader))
 );
