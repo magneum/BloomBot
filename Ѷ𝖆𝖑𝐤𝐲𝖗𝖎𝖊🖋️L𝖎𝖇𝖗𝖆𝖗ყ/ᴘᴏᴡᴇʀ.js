@@ -6,7 +6,6 @@
 require(`./𝕷𝖆ყO𝖚𝖙`);
 let ᴋᴏʟᴏʀ = require("chalk");
 let ʏᴛꜱ = require("yt-search");
-let ᴄʀᴏɴ = require("node-cron");
 let ɴᴏᴅᴇꜰᴇᴛᴄʜ = require("node-fetch");
 let ɢᴇᴛᴠɪᴅᴇᴏɪᴅ = require("get-video-id");
 let ProTon = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌗E𝖛𝖊𝖓𝖙𝖘/ProTon");
