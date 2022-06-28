@@ -142,7 +142,7 @@ console.log(`𝐘𝐨𝐮𝐓𝐮𝐛𝐞⭕️𝐌𝐮𝐬𝐢𝐜
 🔗𝐋𝐢𝐧𝐤: ${ᴛᴜʙᴇ.url}
 📜𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${ᴛᴜʙᴇ.description}`);
 try {
-let { DLoader, BSize } = await yta_var(ᴛᴜʙᴇ.url, "en136");
+let { DLoader } = await yta_var(ᴛᴜʙᴇ.url, "en136");
 return await ᴋᴜɴᴀɪ.sendMessage(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
 {
