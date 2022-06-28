@@ -130,7 +130,7 @@ TFound.forEach(async function (Tube) {
 console.log(Tube);
 try {
 try {
-let Media = await yta(Tube.url, "128kbps");
+let ᴍᴇᴅɪᴀ = await yta(Tube.url, "128kbps");
 let { DLoader, BSize } = await yta_var(Tube.url, "en136");
 console.log(
 ᴋᴏʟᴏʀ.black(ᴋᴏʟᴏʀ.bgWhite("𝐌𝐞𝐝𝐢𝐚: "), ᴋᴏʟᴏʀ.bgGreen(DLoader))
@@ -138,7 +138,7 @@ console.log(
 console.log(ᴋᴏʟᴏʀ.black(ᴋᴏʟᴏʀ.bgWhite("𝐒𝐢𝐳𝐞: "), ᴋᴏʟᴏʀ.bgRed(BSize)));
 } catch (e) {
 console.log(e);
-let Media = await yta_var(Tube.url, "128kbps");
+let ᴍᴇᴅɪᴀ = await yta_var(Tube.url, "128kbps");
 let { DLoader, BSize } = await yta_var(Tube.url, "id4");
 console.log(
 ᴋᴏʟᴏʀ.black(ᴋᴏʟᴏʀ.bgWhite("𝐌𝐞𝐝𝐢𝐚: "), ᴋᴏʟᴏʀ.bgGreen(DLoader))
