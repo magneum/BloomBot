@@ -119,8 +119,8 @@ console.log(
 return mainUrl;
 }
 ("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
-let youtubeUrl = await getRandomMusicVideoUrl();
-let { id } = ɢᴇᴛᴠɪᴅᴇᴏɪᴅ(youtubeUrl);
+let ᴛᴜʙᴇʟ = await getRandomMusicVideoUrl();
+let { id } = ɢᴇᴛᴠɪᴅᴇᴏɪᴅ(ᴛᴜʙᴇʟ);
 if (!id) return;
 let FFound = await ʏᴛꜱ(id);
 let TFound = FFound.videos.slice(0, 1);
