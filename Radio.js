@@ -122,10 +122,10 @@ return mainUrl;
 let ᴛᴜʙᴇʟ = await ʀꜰᴏᴜɴᴅ();
 let { id } = ɢᴇᴛᴠɪᴅᴇᴏɪᴅ(ᴛᴜʙᴇʟ);
 if (!id) return;
-let FFound = await ʏᴛꜱ(id);
-let TFound = FFound.videos.slice(0, 1);
+let ꜰꜰᴏᴜɴᴅ = await ʏᴛꜱ(id);
+let TFound = ꜰꜰᴏᴜɴᴅ.videos.slice(0, 1);
 if (!TFound) return;
-if (!FFound) return;
+if (!ꜰꜰᴏᴜɴᴅ) return;
 TFound.forEach(async function (Tube) {
 console.log(Tube);
 try {
