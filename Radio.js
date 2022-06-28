@@ -17,7 +17,7 @@ console.log(
 ᴋᴏʟᴏʀ.black(ᴋᴏʟᴏʀ.bgWhite("𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐀𝐭: "), ᴋᴏʟᴏʀ.bgYellow(new Date()))
 );
 let ɴᴜᴍᴛʀɪᴇꜱꜰᴏʀɴᴏɴᴇᴍʙᴇᴅ = 15;
-let containsEmbed = false;
+let ᴄᴏɴᴛᴀɪɴꜱᴇᴍʙᴇᴅ = false;
 let mainUrl = "";
 let coreFetch;
 if (typeof window === "undefined") {
@@ -101,13 +101,13 @@ while (ɴᴜᴍᴛʀɪᴇꜱꜰᴏʀɴᴏɴᴇᴍʙᴇᴅ > 0) {
 ɴᴜᴍᴛʀɪᴇꜱꜰᴏʀɴᴏɴᴇᴍʙᴇᴅ--;
 let embedUrl = ɢᴇᴛᴇᴍʙᴇᴅᴍᴜꜱɪᴄᴠɪᴅᴇᴏᴜʀʟ();
 mainUrl = await getMainSiteYoutubeMusicVideoUrl(embedUrl);
-containsEmbed =
+ᴄᴏɴᴛᴀɪɴꜱᴇᴍʙᴇᴅ =
 mainUrl.indexOf("https://www.youtube.com/embed/?list=") !== -1;
-if (!containsEmbed) {
+if (!ᴄᴏɴᴛᴀɪɴꜱᴇᴍʙᴇᴅ) {
 return mainUrl;
 }
 }
-if (preventEmbedded && containsEmbed) {
+if (preventEmbedded && ᴄᴏɴᴛᴀɪɴꜱᴇᴍʙᴇᴅ) {
 return null;
 }
 console.log(
