@@ -133,6 +133,7 @@ console.log(
 )
 );
 console.log(`𝐘𝐨𝐮𝐓𝐮𝐛𝐞⭕️𝐌𝐮𝐬𝐢𝐜
+
 🍻𝐓𝐢𝐭𝐥𝐞: ${ᴛᴜʙᴇ.title}
 🙈𝐕𝐢𝐞𝐰𝐬: ${ᴛᴜʙᴇ.views}
 ⏰𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧: ${ᴛᴜʙᴇ.timestamp}
