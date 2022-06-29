@@ -550,7 +550,6 @@ await pokemon(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -573,7 +572,6 @@ await pokedex(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -596,7 +594,6 @@ await carbon(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -621,7 +618,6 @@ await gify(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -647,7 +643,6 @@ await sticker(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -670,7 +665,6 @@ await toimg(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -694,7 +688,6 @@ await pinterest(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -717,7 +710,6 @@ await tourl(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -740,7 +732,6 @@ await remove(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -763,7 +754,6 @@ await promote(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -786,7 +776,6 @@ await demote(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -809,7 +798,6 @@ await setdesc(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -834,7 +822,6 @@ await setgpfp(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -857,7 +844,6 @@ await tagall(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -880,7 +866,6 @@ await group(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -904,7 +889,6 @@ await invite(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -928,7 +912,6 @@ await del(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -953,7 +936,6 @@ await antilink(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -977,7 +959,6 @@ await autorank(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -1002,7 +983,6 @@ await setwelcome(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -1025,7 +1005,6 @@ await ban(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -1048,7 +1027,6 @@ await unban(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -1077,7 +1055,6 @@ await radio(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -1108,7 +1085,6 @@ await yta(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -1136,7 +1112,6 @@ await ytv(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -1163,7 +1138,6 @@ await yts(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -1188,7 +1162,6 @@ await reddit(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -1211,7 +1184,6 @@ await rank(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -1236,7 +1208,6 @@ await tts(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -1263,7 +1234,6 @@ await joke(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -1286,7 +1256,6 @@ await meme(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -1309,7 +1278,6 @@ await tinyurl(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -1332,7 +1300,6 @@ await join(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -1355,7 +1322,6 @@ await leave(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -1378,7 +1344,6 @@ await lyrics(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -1402,7 +1367,6 @@ await image(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -1428,7 +1392,6 @@ await google(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -1452,7 +1415,6 @@ await steal(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -1475,7 +1437,6 @@ await iguser(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -1498,7 +1459,6 @@ await ship(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -1521,7 +1481,6 @@ await quote(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -1544,7 +1503,6 @@ await fact(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -1567,7 +1525,6 @@ await advice(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -1590,7 +1547,6 @@ await pat(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -1613,7 +1569,6 @@ await hug(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -1636,7 +1591,6 @@ await kiss(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -1659,7 +1613,6 @@ await cuddle(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -1682,7 +1635,6 @@ await kick(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -1705,7 +1657,6 @@ await bite(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -1728,7 +1679,6 @@ await blush(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -1751,7 +1701,6 @@ await bored(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -1774,7 +1723,6 @@ await confused(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -1797,7 +1745,6 @@ await cry(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -1820,7 +1767,6 @@ await goodnight(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -1843,7 +1789,6 @@ await happy(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -1866,7 +1811,6 @@ await poke(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -1889,7 +1833,6 @@ await sad(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -1912,7 +1855,6 @@ await slap(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -1935,7 +1877,6 @@ await smile(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -1958,7 +1899,6 @@ await wave(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -1981,7 +1921,6 @@ await wink(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -2004,7 +1943,6 @@ await dance(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -2027,7 +1965,6 @@ await baka(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -2050,7 +1987,6 @@ await bonk(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -2074,7 +2010,6 @@ await highfive(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -2097,7 +2032,6 @@ await kill(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -2120,7 +2054,6 @@ await nervous(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -2143,7 +2076,6 @@ await punch(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -2166,7 +2098,6 @@ await scream(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -2189,7 +2120,6 @@ await stare(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -2212,7 +2142,6 @@ await yeet(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -2235,7 +2164,6 @@ await yes(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -2258,7 +2186,6 @@ await zerotwo(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -2281,7 +2208,6 @@ await waifu(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -2304,7 +2230,6 @@ await neko(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -2327,7 +2252,6 @@ await anime(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -2350,7 +2274,6 @@ await manga(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -2373,7 +2296,6 @@ await wallpaper(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -2397,7 +2319,6 @@ await bcgroup(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -2420,7 +2341,6 @@ await yt8d(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -2443,7 +2363,6 @@ await ytbassboost(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -2466,7 +2385,6 @@ await ytecho(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -2489,7 +2407,6 @@ await ytflanger(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -2512,7 +2429,6 @@ await ytnightcore(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -2535,7 +2451,6 @@ await ytphaser(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -2558,7 +2473,6 @@ await ytreverse(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -2581,7 +2495,6 @@ await ytslow(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -2604,7 +2517,6 @@ await ytspeed(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -2627,7 +2539,6 @@ await ytsubboost(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -2650,7 +2561,6 @@ await ytsuperspeed(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -2673,7 +2583,6 @@ await ytsuperslow(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -2696,7 +2605,6 @@ await ytsurround(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -2719,7 +2627,6 @@ await ytvaporwave(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -2742,7 +2649,6 @@ await ytvibrato(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -2765,7 +2671,6 @@ await bassboost(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -2788,7 +2693,6 @@ await echo(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -2811,7 +2715,6 @@ await flanger(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -2834,7 +2737,6 @@ await nightcore(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -2857,7 +2759,6 @@ await phaser(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -2880,7 +2781,6 @@ await reverse(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -2903,7 +2803,6 @@ await slow(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -2926,7 +2825,6 @@ await speed(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -2949,7 +2847,6 @@ await subboost(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -2972,7 +2869,6 @@ await superspeed(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -2995,7 +2891,6 @@ await surround(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -3018,7 +2913,6 @@ await vaporwave(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -3041,7 +2935,6 @@ await vibrato(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -3064,7 +2957,6 @@ await ass(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -3087,7 +2979,6 @@ await bdsm(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -3110,7 +3001,6 @@ await cum(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -3133,7 +3023,6 @@ await doujin(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -3156,7 +3045,6 @@ await feet(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -3179,7 +3067,6 @@ await femdom(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -3202,7 +3089,6 @@ await foxgirl(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -3225,7 +3111,6 @@ await glasses(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -3248,7 +3133,6 @@ await hentai(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -3271,7 +3155,6 @@ await maid(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -3294,7 +3177,6 @@ await masturbation(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -3317,7 +3199,6 @@ await netorare(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -3342,7 +3223,6 @@ await orgy(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -3365,7 +3245,6 @@ await panties(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -3388,7 +3267,6 @@ await school(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -3411,7 +3289,6 @@ await tentacles(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -3434,7 +3311,6 @@ await thighs(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -3457,7 +3333,6 @@ await uniform(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -3480,7 +3355,6 @@ await yuri(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -3504,7 +3378,6 @@ await daily(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -3529,7 +3402,6 @@ await fish(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -3555,7 +3427,6 @@ await gamble(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -3580,7 +3451,6 @@ await hunt(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -3605,7 +3475,6 @@ await zoo(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -3631,7 +3500,6 @@ await pay(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -3657,7 +3525,6 @@ await balance(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -3680,7 +3547,6 @@ await buy(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -3706,7 +3572,6 @@ await store(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -3731,7 +3596,6 @@ await rob(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -3757,7 +3621,6 @@ await bag(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -3784,7 +3647,6 @@ await support(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -3808,7 +3670,6 @@ await rules(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );
@@ -3835,7 +3696,6 @@ await help(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply
 );

@@ -56,7 +56,6 @@ isSenderAdmin,
 isSenderTUF,
 commandName,
 body,
-isReply,
 mentionByTag,
 mentionByReply
 ) => {

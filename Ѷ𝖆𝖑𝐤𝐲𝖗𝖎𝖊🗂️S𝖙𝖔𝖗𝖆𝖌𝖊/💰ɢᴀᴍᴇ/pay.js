@@ -53,11 +53,10 @@ isSenderAdmin,
 isSenderTUF,
 commandName,
 body,
-isReply,
 mentionByTag,
 mentionByReply
 ) => {
-if (!isReply) {
+if (!mentionByReply) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ᴋᴜɴᴀɪ,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
