@@ -3747,6 +3747,9 @@ Join The Group and get verified to use bot anywhere in this app.
                   case `inv`:
                   case `loot`:
                   case `inventory`:
+                    return await Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.reply("Command Under Maintainence!", {
+                      quoted: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+                    });
                     await bag(
                       ᴋᴜɴᴀɪ,
                       Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
