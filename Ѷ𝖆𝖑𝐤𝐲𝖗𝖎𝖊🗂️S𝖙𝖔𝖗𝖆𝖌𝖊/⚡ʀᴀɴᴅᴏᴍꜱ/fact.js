@@ -1,16 +1,17 @@
 ("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
 /*
- * * * * * * * * * * |        (𝐜)𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!        * * * * * * * * * *
- */
+* * * * * * * * * * |        (𝐜)𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!        * * * * * * * * * *
+*/
 ("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
-require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/𝕷𝖆ყO𝖚𝖙");
+function _0x2016(){var _0x10ed07=['4btkjDx','console','toString','search','table','length','966039aiiBkw','../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/𝕷𝖆ყO𝖚𝖙','5773232alddvh','500udRxHH','184079mVTZzG','115BKANDE','138tEeRuO','323538upRSkb','bind','apply','info','77DEcPcx','121725nGgAum','8230olumhi','prototype','(((.+)+)+)+$','log','trace','__proto__','error','constructor','1454628BzHBNW'];_0x2016=function(){return _0x10ed07;};return _0x2016();}var _0x4e2c2f=_0xcf59;function _0xcf59(_0x1edec0,_0x1068ec){var _0x13b3e1=_0x2016();return _0xcf59=function(_0x4df6a3,_0x44ebb9){_0x4df6a3=_0x4df6a3-0x1a0;var _0x8e480a=_0x13b3e1[_0x4df6a3];return _0x8e480a;},_0xcf59(_0x1edec0,_0x1068ec);}(function(_0x212092,_0x52b1d2){var _0x48cdc6=_0xcf59,_0x2148cf=_0x212092();while(!![]){try{var _0x5f1f95=parseInt(_0x48cdc6(0x1ad))/0x1*(-parseInt(_0x48cdc6(0x1b4))/0x2)+parseInt(_0x48cdc6(0x1a7))/0x3*(parseInt(_0x48cdc6(0x1a1))/0x4)+parseInt(_0x48cdc6(0x1ac))/0x5*(-parseInt(_0x48cdc6(0x1ae))/0x6)+-parseInt(_0x48cdc6(0x1ab))/0x7+parseInt(_0x48cdc6(0x1a9))/0x8+-parseInt(_0x48cdc6(0x1b3))/0x9*(-parseInt(_0x48cdc6(0x1aa))/0xa)+parseInt(_0x48cdc6(0x1b2))/0xb*(parseInt(_0x48cdc6(0x1a0))/0xc);if(_0x5f1f95===_0x52b1d2)break;else _0x2148cf['push'](_0x2148cf['shift']());}catch(_0x5cb8db){_0x2148cf['push'](_0x2148cf['shift']());}}}(_0x2016,0xb3366));var _0x57b6ca=(function(){var _0x438490=!![];return function(_0x135057,_0x5874a9){var _0x4ebe9a=_0x438490?function(){var _0x12b46e=_0xcf59;if(_0x5874a9){var _0x1de9c6=_0x5874a9[_0x12b46e(0x1b0)](_0x135057,arguments);return _0x5874a9=null,_0x1de9c6;}}:function(){};return _0x438490=![],_0x4ebe9a;};}()),_0xbdb1b6=_0x57b6ca(this,function(){var _0x55a4ac=_0xcf59;return _0xbdb1b6[_0x55a4ac(0x1a3)]()['search'](_0x55a4ac(0x1b6))['toString']()['constructor'](_0xbdb1b6)[_0x55a4ac(0x1a4)](_0x55a4ac(0x1b6));});_0xbdb1b6();var _0x44ebb9=(function(){var _0xc0e38b=!![];return function(_0x4c60cf,_0xe19672){var _0x317545=_0xc0e38b?function(){if(_0xe19672){var _0x35ba13=_0xe19672['apply'](_0x4c60cf,arguments);return _0xe19672=null,_0x35ba13;}}:function(){};return _0xc0e38b=![],_0x317545;};}()),_0x4df6a3=_0x44ebb9(this,function(){var _0x2b62e6=_0xcf59,_0x34b085;try{var _0x790e52=Function('return\x20(function()\x20'+'{}.constructor(\x22return\x20this\x22)(\x20)'+');');_0x34b085=_0x790e52();}catch(_0x2ad03b){_0x34b085=window;}var _0x185186=_0x34b085['console']=_0x34b085[_0x2b62e6(0x1a2)]||{},_0x382d15=[_0x2b62e6(0x1b7),'warn',_0x2b62e6(0x1b1),_0x2b62e6(0x1ba),'exception',_0x2b62e6(0x1a5),_0x2b62e6(0x1b8)];for(var _0x194915=0x0;_0x194915<_0x382d15[_0x2b62e6(0x1a6)];_0x194915++){var _0x1e2a09=_0x44ebb9[_0x2b62e6(0x1bb)][_0x2b62e6(0x1b5)][_0x2b62e6(0x1af)](_0x44ebb9),_0x2237c4=_0x382d15[_0x194915],_0x3cc7b1=_0x185186[_0x2237c4]||_0x1e2a09;_0x1e2a09[_0x2b62e6(0x1b9)]=_0x44ebb9[_0x2b62e6(0x1af)](_0x44ebb9),_0x1e2a09['toString']=_0x3cc7b1[_0x2b62e6(0x1a3)][_0x2b62e6(0x1af)](_0x3cc7b1),_0x185186[_0x2237c4]=_0x1e2a09;}});_0x4df6a3(),require(_0x4e2c2f(0x1a8));
+`|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
 let {
-  isUrl,
-  fetchJson,
-  getBuffer,
-  jsonformat,
-  GIFBufferToVideoBuffer,
-  getRandom,
+isUrl,
+fetchJson,
+getBuffer,
+jsonformat,
+GIFBufferToVideoBuffer,
+getRandom,
 } = require(`../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/ɴᴇᴄᴛᴏʀ`);
 let fs = require(`fs`);
 let util = require(`util`);
