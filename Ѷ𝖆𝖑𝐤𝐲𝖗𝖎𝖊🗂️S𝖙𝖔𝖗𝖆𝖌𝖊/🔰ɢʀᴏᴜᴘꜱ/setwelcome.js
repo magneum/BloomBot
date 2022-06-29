@@ -59,7 +59,6 @@ isReply,
 mentionByTag,
 mentionByReply
 ) => {
-let 𝕲𝖗𝖔𝖚𝖕𝖒𝖊𝖙𝖆 = Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.groupMetadata;
 if (!isBotAdmin && !isSenderTUF) return await Bot_Not_Admin(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
 if (!isSenderAdmin && !isSenderTUF)
 return await Sender_Not_Admin(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);

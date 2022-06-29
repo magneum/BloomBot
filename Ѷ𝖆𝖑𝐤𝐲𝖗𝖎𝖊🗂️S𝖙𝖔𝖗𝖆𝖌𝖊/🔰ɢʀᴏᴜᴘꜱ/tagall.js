@@ -57,7 +57,6 @@ isReply,
 mentionByTag,
 mentionByReply
 ) => {
-let 𝕲𝖗𝖔𝖚𝖕𝖒𝖊𝖙𝖆 = Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.groupMetadata;
 if (!isSenderAdmin && !isSenderTUF)
 return await Sender_Not_Admin(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
 if (!isBotAdmin && !isSenderTUF) return await Bot_Not_Admin(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
@@ -67,15 +66,15 @@ let emo;
 let Time = moment.tz(`Asia/Kolkata`).format(`DD/MM HH:mm:ss`);
 if (F𝖚𝖑𝖑_A𝖗𝖌𝖘) {
 Text = `📌 *Message - ${F𝖚𝖑𝖑_A𝖗𝖌𝖘}*
-*🍁 Group name - ${𝕲𝖗𝖔𝖚𝖕𝖒𝖊𝖙𝖆.subject || ""}*`;
+*🍁 Group name - ${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.groupMetadata.subject || ""}*`;
 } else {
-Text = `*${𝕲𝖗𝖔𝖚𝖕𝖒𝖊𝖙𝖆.subject || ""}*`;
+Text = `*${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.groupMetadata.subject || ""}*`;
 }
 let menText = `${Text}
 *💫 Pinged by - ${pushName}*
 *🕛 Time - ${Time}*\n\n`;
 `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
-for (let memNum of 𝕲𝖗𝖔𝖚𝖕𝖒𝖊𝖙𝖆.participants) {
+for (let memNum of Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.groupMetadata.participants) {
 if (groupAdmins.includes(memNum.id) === true) {
 emo = `👑`;
 } else {
@@ -96,7 +95,7 @@ return await ᴋᴜɴᴀɪ.sendMessage(
 {
 image: { url: ppuser },
 caption: menText,
-mentions: 𝕲𝖗𝖔𝖚𝖕𝖒𝖊𝖙𝖆.participants.map((a) => a.id),
+mentions: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.groupMetadata.participants.map((a) => a.id),
 },
 { quoted: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 }
 );
