@@ -3615,6 +3615,9 @@ Join The Group and get verified to use bot anywhere in this app.
                   case `loan`:
                   case `borrow`:
                   case `payment`:
+                    return await Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.reply("Command Under Maintainence!", {
+                      quoted: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+                    });
                     await pay(
                       ᴋᴜɴᴀɪ,
                       Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
