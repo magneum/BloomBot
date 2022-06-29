@@ -64,8 +64,8 @@ await Economy.findOne(
 {
 ID: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender,
 },
-async (𝕰𝖗𝖗𝖔𝖗, userEco) => {
-if (𝕰𝖗𝖗𝖔𝖗) return Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝕰𝖗𝖗𝖔𝖗);
+async (Èrrðr, userEco) => {
+if (Èrrðr) return Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, Èrrðr);
 if (!userEco) {
 let newUser = new Economy({
 ID: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender,
@@ -77,7 +77,7 @@ fishtimeout: 1800000,
 workdone: 0,
 worktimeout: 900000,
 });
-await newUser.save().catch((𝕰𝖗𝖗𝖔𝖗) => Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝕰𝖗𝖗𝖔𝖗));
+await newUser.save().catch((Èrrðr) => Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, Èrrðr));
 return await Image_Button(
 ᴋᴜɴᴀɪ,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -121,7 +121,7 @@ Math.floor(Math.random() * (fishh.max - fishh.min + 1)) + fishh.min;
 userEco.money = userEco.money + worth;
 userEco.fishdone = Date.now();
 userEco.fishtimeout = 1800000;
-userEco.save().catch((𝕰𝖗𝖗𝖔𝖗) => Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝕰𝖗𝖗𝖔𝖗));
+userEco.save().catch((Èrrðr) => Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, Èrrðr));
 return await Image_Button(
 ᴋᴜɴᴀɪ,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,

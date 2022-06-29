@@ -64,11 +64,11 @@ if (!isSenderAdmin) return await Sender_Not_Admin(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤�
 if (A𝖗𝖌𝖘[0] === `open`) {
 await ᴋᴜɴᴀɪ
 .groupSettingUpdate(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, `not_announcement`)
-.catch((𝕰𝖗𝖗𝖔𝖗) => Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.reply(jsonformat(𝕰𝖗𝖗𝖔𝖗)));
+.catch((Èrrðr) => Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.reply(jsonformat(Èrrðr)));
 } else if (A𝖗𝖌𝖘[0] === `close`) {
 await ᴋᴜɴᴀɪ
 .groupSettingUpdate(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, `announcement`)
-.catch((𝕰𝖗𝖗𝖔𝖗) => Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.reply(jsonformat(𝕰𝖗𝖗𝖔𝖗)));
+.catch((Èrrðr) => Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.reply(jsonformat(Èrrðr)));
 } else {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ᴋᴜɴᴀɪ,

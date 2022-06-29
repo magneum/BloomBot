@@ -93,14 +93,14 @@ Economy.findOne(
 {
 ID: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender,
 },
-async (𝕰𝖗𝖗𝖔𝖗, cEconomy) => {
-if (𝕰𝖗𝖗𝖔𝖗) return Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(𝕰𝖗𝖗𝖔𝖗));
+async (Èrrðr, cEconomy) => {
+if (Èrrðr) return Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(Èrrðr));
 Economy.findOne(
 {
 ID: Receiver,
 },
-async (𝕰𝖗𝖗𝖔𝖗, vEconomy) => {
-if (𝕰𝖗𝖗𝖔𝖗) return Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(𝕰𝖗𝖗𝖔𝖗));
+async (Èrrðr, vEconomy) => {
+if (Èrrðr) return Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(Èrrðr));
 if (!vEconomy) {
 let newUser = new Economy({
 ID: Receiver,
@@ -114,7 +114,7 @@ worktimeout: 900000,
 });
 await newUser
 .save()
-.catch((𝕰𝖗𝖗𝖔𝖗) => Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(𝕰𝖗𝖗𝖔𝖗)));
+.catch((Èrrðr) => Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(Èrrðr)));
 return await Image_Button(
 ᴋᴜɴᴀɪ,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -143,7 +143,7 @@ worktimeout: 900000,
 });
 await newUser
 .save()
-.catch((𝕰𝖗𝖗𝖔𝖗) => Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(𝕰𝖗𝖗𝖔𝖗)));
+.catch((Èrrðr) => Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(Èrrðr)));
 return await Image_Button(
 ᴋᴜɴᴀɪ,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -198,15 +198,15 @@ Robbery.findOne(
 {
 ID: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender,
 },
-async (𝕰𝖗𝖗𝖔𝖗, culprit) => {
-if (𝕰𝖗𝖗𝖔𝖗) return Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(𝕰𝖗𝖗𝖔𝖗));
+async (Èrrðr, culprit) => {
+if (Èrrðr) return Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(Èrrðr));
 Robbery.findOne(
 {
 ID: Receiver,
 },
-async (𝕰𝖗𝖗𝖔𝖗, victim) => {
-if (𝕰𝖗𝖗𝖔𝖗)
-return Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(𝕰𝖗𝖗𝖔𝖗));
+async (Èrrðr, victim) => {
+if (Èrrðr)
+return Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(Èrrðr));
 if (!victim) {
 let newUser = new Robbery({
 ID: Receiver,
@@ -218,14 +218,14 @@ PermanentRobberyTime: 900000,
 });
 await newUser
 .save()
-.catch((𝕰𝖗𝖗𝖔𝖗) =>
-Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(𝕰𝖗𝖗𝖔𝖗))
+.catch((Èrrðr) =>
+Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(Èrrðr))
 );
 cEconomy.money = cEconomy.money - MoneyRandom;
 await cEconomy
 .save()
-.catch((𝕰𝖗𝖗𝖔𝖗) =>
-Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(𝕰𝖗𝖗𝖔𝖗))
+.catch((Èrrðr) =>
+Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(Èrrðr))
 );
 return await Image_Button(
 ᴋᴜɴᴀɪ,
@@ -257,14 +257,14 @@ PermanentRobberyTime: 900000,
 });
 await newUser
 .save()
-.catch((𝕰𝖗𝖗𝖔𝖗) =>
-Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(𝕰𝖗𝖗𝖔𝖗))
+.catch((Èrrðr) =>
+Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(Èrrðr))
 );
 cEconomy.money = cEconomy.money - MoneyRandom;
 await cEconomy
 .save()
-.catch((𝕰𝖗𝖗𝖔𝖗) =>
-Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(𝕰𝖗𝖗𝖔𝖗))
+.catch((Èrrðr) =>
+Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(Èrrðr))
 );
 return await Image_Button(
 ᴋᴜɴᴀɪ,
@@ -323,23 +323,23 @@ cEconomy.money = cEconomy.money - MoneySword;
 culprit.CurrentRobberyTime = Date.now();
 await victim
 .save()
-.catch((𝕰𝖗𝖗𝖔𝖗) =>
-Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(𝕰𝖗𝖗𝖔𝖗))
+.catch((Èrrðr) =>
+Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(Èrrðr))
 );
 await culprit
 .save()
-.catch((𝕰𝖗𝖗𝖔𝖗) =>
-Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(𝕰𝖗𝖗𝖔𝖗))
+.catch((Èrrðr) =>
+Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(Èrrðr))
 );
 await vEconomy
 .save()
-.catch((𝕰𝖗𝖗𝖔𝖗) =>
-Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(𝕰𝖗𝖗𝖔𝖗))
+.catch((Èrrðr) =>
+Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(Èrrðr))
 );
 await cEconomy
 .save()
-.catch((𝕰𝖗𝖗𝖔𝖗) =>
-Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(𝕰𝖗𝖗𝖔𝖗))
+.catch((Èrrðr) =>
+Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(Èrrðr))
 );
 return await Image_Button(
 ᴋᴜɴᴀɪ,
@@ -372,23 +372,23 @@ cEconomy.money = cEconomy.money - MoneyLaptop;
 culprit.CurrentRobberyTime = Date.now();
 await victim
 .save()
-.catch((𝕰𝖗𝖗𝖔𝖗) =>
-Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(𝕰𝖗𝖗𝖔𝖗))
+.catch((Èrrðr) =>
+Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(Èrrðr))
 );
 await culprit
 .save()
-.catch((𝕰𝖗𝖗𝖔𝖗) =>
-Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(𝕰𝖗𝖗𝖔𝖗))
+.catch((Èrrðr) =>
+Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(Èrrðr))
 );
 await vEconomy
 .save()
-.catch((𝕰𝖗𝖗𝖔𝖗) =>
-Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(𝕰𝖗𝖗𝖔𝖗))
+.catch((Èrrðr) =>
+Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(Èrrðr))
 );
 await cEconomy
 .save()
-.catch((𝕰𝖗𝖗𝖔𝖗) =>
-Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(𝕰𝖗𝖗𝖔𝖗))
+.catch((Èrrðr) =>
+Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(Èrrðr))
 );
 return await Image_Button(
 ᴋᴜɴᴀɪ,
@@ -421,23 +421,23 @@ cEconomy.money = cEconomy.money - MoneyCharm;
 culprit.CurrentRobberyTime = Date.now();
 await victim
 .save()
-.catch((𝕰𝖗𝖗𝖔𝖗) =>
-Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(𝕰𝖗𝖗𝖔𝖗))
+.catch((Èrrðr) =>
+Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(Èrrðr))
 );
 await culprit
 .save()
-.catch((𝕰𝖗𝖗𝖔𝖗) =>
-Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(𝕰𝖗𝖗𝖔𝖗))
+.catch((Èrrðr) =>
+Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(Èrrðr))
 );
 await vEconomy
 .save()
-.catch((𝕰𝖗𝖗𝖔𝖗) =>
-Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(𝕰𝖗𝖗𝖔𝖗))
+.catch((Èrrðr) =>
+Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(Èrrðr))
 );
 await cEconomy
 .save()
-.catch((𝕰𝖗𝖗𝖔𝖗) =>
-Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(𝕰𝖗𝖗𝖔𝖗))
+.catch((Èrrðr) =>
+Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(Èrrðr))
 );
 return await Image_Button(
 ᴋᴜɴᴀɪ,
@@ -465,13 +465,13 @@ cEconomy.money = cEconomy.money + vEconomy.money;
 culprit.CurrentRobberyTime = Date.now();
 await vEconomy
 .save()
-.catch((𝕰𝖗𝖗𝖔𝖗) =>
-  Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(𝕰𝖗𝖗𝖔𝖗))
+.catch((Èrrðr) =>
+  Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(Èrrðr))
 );
 await cEconomy
 .save()
-.catch((𝕰𝖗𝖗𝖔𝖗) =>
-  Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(𝕰𝖗𝖗𝖔𝖗))
+.catch((Èrrðr) =>
+  Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(Èrrðr))
 );
 return await Image_Button(
 ᴋᴜɴᴀɪ,
@@ -504,13 +504,13 @@ cEconomy.money = cEconomy.money + MoneyRandom;
 culprit.CurrentRobberyTime = Date.now();
 await vEconomy
 .save()
-.catch((𝕰𝖗𝖗𝖔𝖗) =>
-  Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(𝕰𝖗𝖗𝖔𝖗))
+.catch((Èrrðr) =>
+  Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(Èrrðr))
 );
 await cEconomy
 .save()
-.catch((𝕰𝖗𝖗𝖔𝖗) =>
-  Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(𝕰𝖗𝖗𝖔𝖗))
+.catch((Èrrðr) =>
+  Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(Èrrðr))
 );
 return await Image_Button(
 ᴋᴜɴᴀɪ,

@@ -212,8 +212,8 @@ Economy.findOne(
 {
 ID: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender,
 },
-async (𝕰𝖗𝖗𝖔𝖗, userEco) => {
-if (𝕰𝖗𝖗𝖔𝖗) return Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝕰𝖗𝖗𝖔𝖗);
+async (Èrrðr, userEco) => {
+if (Èrrðr) return Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, Èrrðr);
 if (!userEco) {
 let newUser = new Economy({
 ID: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender,
@@ -225,7 +225,7 @@ fishtimeout: 1800000,
 workdone: 0,
 worktimeout: 900000,
 });
-await newUser.save().catch((𝕰𝖗𝖗𝖔𝖗) => Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝕰𝖗𝖗𝖔𝖗));
+await newUser.save().catch((Èrrðr) => Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, Èrrðr));
 return await Image_Button(
 ᴋᴜɴᴀɪ,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -244,8 +244,8 @@ Gamble.findOne(
 {
 ID: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender,
 },
-async (𝕰𝖗𝖗𝖔𝖗, userGamble) => {
-if (𝕰𝖗𝖗𝖔𝖗) return Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝕰𝖗𝖗𝖔𝖗);
+async (Èrrðr, userGamble) => {
+if (Èrrðr) return Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, Èrrðr);
 if (!userGamble) {
 let newUser = new Gamble({
 ID: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender,
@@ -255,7 +255,7 @@ Gambletimeout: 480000,
 });
 await newUser
 .save()
-.catch((𝕰𝖗𝖗𝖔𝖗) => Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝕰𝖗𝖗𝖔𝖗));
+.catch((Èrrðr) => Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, Èrrðr));
 return await Image_Button(
 ᴋᴜɴᴀɪ,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -381,10 +381,10 @@ userEco.money = userEco.money + money;
 userGamble.Gambledone = Date.now();
 await userGamble
 .save()
-.catch((𝕰𝖗𝖗𝖔𝖗) => Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝕰𝖗𝖗𝖔𝖗));
+.catch((Èrrðr) => Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, Èrrðr));
 await userEco
 .save()
-.catch((𝕰𝖗𝖗𝖔𝖗) => Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝕰𝖗𝖗𝖔𝖗));
+.catch((Èrrðr) => Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, Èrrðr));
 return await Image_Button(
 ᴋᴜɴᴀɪ,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -406,10 +406,10 @@ userEco.money = userEco.money + money;
 userGamble.Gambledone = Date.now();
 await userGamble
 .save()
-.catch((𝕰𝖗𝖗𝖔𝖗) => Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝕰𝖗𝖗𝖔𝖗));
+.catch((Èrrðr) => Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, Èrrðr));
 await userEco
 .save()
-.catch((𝕰𝖗𝖗𝖔𝖗) => Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝕰𝖗𝖗𝖔𝖗));
+.catch((Èrrðr) => Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, Èrrðr));
 return await Image_Button(
 ᴋᴜɴᴀɪ,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -431,10 +431,10 @@ userEco.money = userEco.money + money;
 userGamble.Gambledone = Date.now();
 await userGamble
 .save()
-.catch((𝕰𝖗𝖗𝖔𝖗) => Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝕰𝖗𝖗𝖔𝖗));
+.catch((Èrrðr) => Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, Èrrðr));
 await userEco
 .save()
-.catch((𝕰𝖗𝖗𝖔𝖗) => Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝕰𝖗𝖗𝖔𝖗));
+.catch((Èrrðr) => Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, Èrrðr));
 return await Image_Button(
 ᴋᴜɴᴀɪ,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -454,8 +454,8 @@ userEco.money = userEco.money - money;
 userGamble.Gambledone = Date.now();
 await userGamble
 .save()
-.catch((𝕰𝖗𝖗𝖔𝖗) => Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝕰𝖗𝖗𝖔𝖗));
-await userEco.save().catch((𝕰𝖗𝖗𝖔𝖗) => Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝕰𝖗𝖗𝖔𝖗));
+.catch((Èrrðr) => Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, Èrrðr));
+await userEco.save().catch((Èrrðr) => Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, Èrrðr));
 return await Image_Button(
 ᴋᴜɴᴀɪ,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,

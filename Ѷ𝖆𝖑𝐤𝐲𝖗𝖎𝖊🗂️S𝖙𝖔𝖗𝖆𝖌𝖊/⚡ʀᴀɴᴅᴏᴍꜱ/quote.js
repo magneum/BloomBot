@@ -66,7 +66,7 @@ A𝖗𝖌𝖘,
 `📝 *Content:* ${quoo.data.quote.body}
 *✍️ Author:* ${quoo.data.quote.author}`
 );
-} catch (𝕰𝖗𝖗𝖔𝖗) {
+} catch (Èrrðr) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ᴋᴜɴᴀɪ,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,

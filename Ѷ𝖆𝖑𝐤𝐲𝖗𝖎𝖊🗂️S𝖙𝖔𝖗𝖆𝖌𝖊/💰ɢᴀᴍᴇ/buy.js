@@ -138,8 +138,8 @@ Economy.findOne(
 {
 ID: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender,
 },
-async (𝕰𝖗𝖗𝖔𝖗, userEco) => {
-if (𝕰𝖗𝖗𝖔𝖗) return Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(𝕰𝖗𝖗𝖔𝖗));
+async (Èrrðr, userEco) => {
+if (Èrrðr) return Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(Èrrðr));
 if (!userEco) {
 let newUser = new Economy({
 ID: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender,
@@ -153,7 +153,7 @@ worktimeout: 900000,
 });
 await newUser
 .save()
-.catch((𝕰𝖗𝖗𝖔𝖗) => Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(𝕰𝖗𝖗𝖔𝖗)));
+.catch((Èrrðr) => Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(Èrrðr)));
 return await Image_Button(
 ᴋᴜɴᴀɪ,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -164,16 +164,15 @@ A𝖗𝖌𝖘,
 ╚◇══════════════◇╝
 
 
-💰𝗧𝗼𝘁𝗮𝗹 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _Just Opened Your Account!_
-🤠𝗔𝗰𝗰𝗼𝘂𝗻𝘁_𝗛𝗼𝗹𝗱𝗲𝗿: @${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender.replace(/[^\d+]/g, "")}`
+💰𝗧𝗼𝘁𝗮𝗹 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _Just Opened Your Account!_`
 );
 }
 Robbery.findOne(
 {
 ID: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender,
 },
-async (𝕰𝖗𝖗𝖔𝖗, userRob) => {
-if (𝕰𝖗𝖗𝖔𝖗) return Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(𝕰𝖗𝖗𝖔𝖗));
+async (Èrrðr, userRob) => {
+if (Èrrðr) return Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(Èrrðr));
 if (!userRob) {
 let newUser = new Robbery({
 ID: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender,
@@ -185,7 +184,7 @@ PermanentRobberyTime: 600000,
 });
 await newUser
 .save()
-.catch((𝕰𝖗𝖗𝖔𝖗) => Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(𝕰𝖗𝖗𝖔𝖗)));
+.catch((Èrrðr) => Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(Èrrðr)));
 return await Image_Button(
 ᴋᴜɴᴀɪ,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -196,8 +195,7 @@ A𝖗𝖌𝖘,
 ╚◇══════════════◇╝
 
 
-💰𝗧𝗼𝘁𝗮𝗹 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _Just Opened Your Account!_
-🤠𝗔𝗰𝗰𝗼𝘂𝗻𝘁_𝗛𝗼𝗹𝗱𝗲𝗿: @${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender.replace(/[^\d+]/g, "")}`
+💰𝗧𝗼𝘁𝗮𝗹 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _Just Opened Your Account!_`
 );
 } else {
 if (userEco.money < ItemPrice) {
@@ -224,13 +222,13 @@ userRob.sword = userRob.sword + 1;
 userEco.money = userEco.money - ItemPrice;
 await userEco
 .save()
-.catch((𝕰𝖗𝖗𝖔𝖗) =>
-Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(𝕰𝖗𝖗𝖔𝖗))
+.catch((Èrrðr) =>
+Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(Èrrðr))
 );
 await userRob
 .save()
-.catch((𝕰𝖗𝖗𝖔𝖗) =>
-Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(𝕰𝖗𝖗𝖔𝖗))
+.catch((Èrrðr) =>
+Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(Èrrðr))
 );
 return await Image_Button(
 ᴋᴜɴᴀɪ,
@@ -252,13 +250,13 @@ userRob.laptop = userRob.laptop + 1;
 userEco.money = userEco.money - ItemPrice;
 await userEco
 .save()
-.catch((𝕰𝖗𝖗𝖔𝖗) =>
-Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(𝕰𝖗𝖗𝖔𝖗))
+.catch((Èrrðr) =>
+Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(Èrrðr))
 );
 await userRob
 .save()
-.catch((𝕰𝖗𝖗𝖔𝖗) =>
-Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(𝕰𝖗𝖗𝖔𝖗))
+.catch((Èrrðr) =>
+Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(Èrrðr))
 );
 return await Image_Button(
 ᴋᴜɴᴀɪ,
@@ -280,13 +278,13 @@ userRob.charm = userRob.charm + 1;
 userEco.money = userEco.money - ItemPrice;
 await userEco
 .save()
-.catch((𝕰𝖗𝖗𝖔𝖗) =>
-Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(𝕰𝖗𝖗𝖔𝖗))
+.catch((Èrrðr) =>
+Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(Èrrðr))
 );
 await userRob
 .save()
-.catch((𝕰𝖗𝖗𝖔𝖗) =>
-Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(𝕰𝖗𝖗𝖔𝖗))
+.catch((Èrrðr) =>
+Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(Èrrðr))
 );
 return await Image_Button(
 ᴋᴜɴᴀɪ,
@@ -327,14 +325,14 @@ await Economy.findOne(
 {
 ID: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender,
 },
-async (𝕰𝖗𝖗𝖔𝖗, userEco) => {
-if (𝕰𝖗𝖗𝖔𝖗) return Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(𝕰𝖗𝖗𝖔𝖗));
+async (Èrrðr, userEco) => {
+if (Èrrðr) return Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(Èrrðr));
 await Bagde.findOne(
 {
 ID: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender,
 },
-async (𝕰𝖗𝖗𝖔𝖗, userBadge) => {
-if (𝕰𝖗𝖗𝖔𝖗) return Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(𝕰𝖗𝖗𝖔𝖗));
+async (Èrrðr, userBadge) => {
+if (Èrrðr) return Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(Èrrðr));
 if (!userEco) {
 let newEcoUser = new Economy({
 ID: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender,
@@ -348,7 +346,7 @@ worktimeout: 900000,
 });
 newEcoUser
 .save()
-.catch((𝕰𝖗𝖗𝖔𝖗) => Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(𝕰𝖗𝖗𝖔𝖗)));
+.catch((Èrrðr) => Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(Èrrðr)));
 return ᴠʟᴋʏʀᴇ_Buttons.MIB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 KryChat,
@@ -379,7 +377,7 @@ PermanentLimitTime: 0,
 });
 newBagdeUser
 .save()
-.catch((𝕰𝖗𝖗𝖔𝖗) => Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(𝕰𝖗𝖗𝖔𝖗)));
+.catch((Èrrðr) => Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(Èrrðr)));
 return ᴠʟᴋʏʀᴇ_Buttons.MIB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 KryChat,
@@ -446,10 +444,10 @@ userBadge.Limits = NewLimit;
 userBadge.Badge = Item;
 await userEco
 .save()
-.catch((𝕰𝖗𝖗𝖔𝖗) => Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(𝕰𝖗𝖗𝖔𝖗)));
+.catch((Èrrðr) => Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(Èrrðr)));
 await userBadge
 .save()
-.catch((𝕰𝖗𝖗𝖔𝖗) => Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(𝕰𝖗𝖗𝖔𝖗)));
+.catch((Èrrðr) => Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(Èrrðr)));
 return ᴠʟᴋʏʀᴇ_Buttons.MIB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 KryChat,

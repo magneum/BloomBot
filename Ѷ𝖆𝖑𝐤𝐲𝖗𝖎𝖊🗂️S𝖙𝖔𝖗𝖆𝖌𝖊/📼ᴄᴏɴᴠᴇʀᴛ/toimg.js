@@ -85,9 +85,9 @@ return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 }
 let media = await ᴋᴜɴᴀɪ.downloadAndSaveMediaMessage(quoted);
 let ran = await getRandom(`.png`);
-exec(`ffmpeg -i ${media} ${ran}`, async (𝕰𝖗𝖗𝖔𝖗) => {
+exec(`ffmpeg -i ${media} ${ran}`, async (Èrrðr) => {
 fs.unlinkSync(media);
-if (𝕰𝖗𝖗𝖔𝖗) Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.reply(𝕰𝖗𝖗𝖔𝖗);
+if (Èrrðr) Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.reply(Èrrðr);
 let buffer = fs.readFileSync(ran);
 await Image_Button(
 ᴋᴜɴᴀɪ,

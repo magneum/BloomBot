@@ -65,7 +65,7 @@ await Robbery.findOne(
 ID: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender,
 },
 async (error, userRob) => {
-if (error) return Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(𝕰𝖗𝖗𝖔𝖗))
+if (error) return Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(Èrrðr))
 if (!userRob) {
 var newUser = new Robbery({
 ID: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender,

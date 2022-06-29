@@ -213,9 +213,9 @@ fileName: `${ᴛᴜʙᴇ.title}.mp3`,
 },
 { quoted: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 }
 );
-} catch (𝕰𝖗𝖗𝖔𝖗) {
+} catch (Èrrðr) {
 console.log(
-ᴋᴏʟᴏʀ.black(ᴋᴏʟᴏʀ.bgWhite("⚠️𝕰𝖗𝖗𝖔𝖗: "), ᴋᴏʟᴏʀ.bgRed(𝕰𝖗𝖗𝖔𝖗))
+ᴋᴏʟᴏʀ.black(ᴋᴏʟᴏʀ.bgWhite("⚠️Èrrðr: "), ᴋᴏʟᴏʀ.bgRed(Èrrðr))
 );
 let ᴍᴇᴅɪᴀ = await yta(ᴛᴜʙᴇ.url, "128kbps");
 return await ᴋᴜɴᴀɪ.sendMessage(
@@ -238,8 +238,8 @@ fileName: `${ᴛᴜʙᴇ.title}.mp3`,
 );
 }
 });
-} catch (𝕰𝖗𝖗𝖔𝖗) {
-console.log(ᴋᴏʟᴏʀ.black(ᴋᴏʟᴏʀ.bgWhite("⚠️𝕰𝖗𝖗𝖔𝖗: "), ᴋᴏʟᴏʀ.bgRed(𝕰𝖗𝖗𝖔𝖗)));
+} catch (Èrrðr) {
+console.log(ᴋᴏʟᴏʀ.black(ᴋᴏʟᴏʀ.bgWhite("⚠️Èrrðr: "), ᴋᴏʟᴏʀ.bgRed(Èrrðr)));
 }
 };
 `|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|`;
