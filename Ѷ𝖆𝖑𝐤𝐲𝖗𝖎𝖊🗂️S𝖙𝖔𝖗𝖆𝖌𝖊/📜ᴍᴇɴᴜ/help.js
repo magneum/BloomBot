@@ -5,12 +5,12 @@
 `|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|`;
 require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/𝕷𝖆ყO𝖚𝖙");
 let {
-  isUrl,
-  fetchJson,
-  getBuffer,
-  jsonformat,
-  GIFBufferToVideoBuffer,
-  getRandom,
+isUrl,
+fetchJson,
+getBuffer,
+jsonformat,
+GIFBufferToVideoBuffer,
+getRandom,
 } = require(`../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/ɴᴇᴄᴛᴏʀ`);
 let fs = require(`fs`);
 let util = require(`util`);
@@ -32,39 +32,39 @@ let { Video_Button } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌀B𝖚�
 let { Bot_Not_Admin } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧭S𝖜𝖎𝖙𝖈𝖍/Bot_Not_Admin");
 let { Sender_Not_Admin } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧭S𝖜𝖎𝖙𝖈𝖍/Sender_Not_Admin");
 let YouTube_Regex =
-  /(?:http(?:s|):\/\/|)(?:(?:www\.|)youtube(?:\-nocookie|)\.com\/(?:watch\?.*(?:|\&)v=|embed\/|v\/)|youtu\.be\/)([-_0-9A-Za-z]{11})/;
+/(?:http(?:s|):\/\/|)(?:(?:www\.|)youtube(?:\-nocookie|)\.com\/(?:watch\?.*(?:|\&)v=|embed\/|v\/)|youtu\.be\/)([-_0-9A-Za-z]{11})/;
 let Present_Path = require(`path`);
 let Script_Name = Present_Path.basename(__filename);
 let Final_Name = Script_Name.slice(0, -3).toLowerCase();
 let { Caught } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌀B𝖚𝖙𝖙𝖔𝖓𝖘/Caught");
 `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
 exports.help = async (
-  ᴋᴜɴᴀɪ,
-  Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
-  A𝖗𝖌𝖘,
-  pushName,
-  fromMe,
-  F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-  quoted,
-  isMedia,
-  isGroup,
-  groupAdmins,
-  isBotAdmin,
-  isSenderAdmin,
-  isSenderTUF,
-  commandName,
-  body,
-  isReply,
-  mentionByTag,
-  mentionByReply
+ᴋᴜɴᴀɪ,
+Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+A𝖗𝖌𝖘,
+pushName,
+fromMe,
+F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+quoted,
+isMedia,
+isGroup,
+groupAdmins,
+isBotAdmin,
+isSenderAdmin,
+isSenderTUF,
+commandName,
+body,
+isReply,
+mentionByTag,
+mentionByReply
 ) => {
-  let ʀᴇꜱᴘᴏɴꜱᴇ = await ᴋᴜɴᴀɪ.groupInviteCode("120363020792949649@g.us");
-  return await Video_Button(
-    ᴋᴜɴᴀɪ,
-    Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
-    A𝖗𝖌𝖘,
-    "./src/ⒸѶ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mp4",
-    `⚡『  𝐁𝐞𝐥𝐨𝐰 𝐅𝐮𝐥𝐥 𝐋𝐢𝐬𝐭 』⚡
+let ʀᴇꜱᴘᴏɴꜱᴇ = await ᴋᴜɴᴀɪ.groupInviteCode("120363020792949649@g.us");
+return await Video_Button(
+ᴋᴜɴᴀɪ,
+Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+A𝖗𝖌𝖘,
+"./src/ⒸѶ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mp4",
+`⚡『  𝐁𝐞𝐥𝐨𝐰 𝐅𝐮𝐥𝐥 𝐋𝐢𝐬𝐭 』⚡
 ╔════════★
 ║シ︎ *🔑ᴘʀᴇꜰɪx:* ${prefix}
 ║シ︎ *🦞ɢɪᴛʜᴜʙ:* github.com/kryknz
@@ -76,8 +76,8 @@ exports.help = async (
 ║シ︎ *🛰️ʟᴀᴛᴇɴᴄʏ:* ${latensi.toFixed(4)}(s)
 ║シ︎ *☕ᴜᴘᴛɪᴍᴇ:* ${runtime(process.uptime())}
 ║シ︎ *🎮ʀᴀᴍ:* ${formatp(os.totalmem() - os.freemem())} / ${formatp(
-      os.totalmem()
-    )}
+os.totalmem()
+)}
 ╚═══════╝
 
 
@@ -347,7 +347,7 @@ exports.help = async (
 ║シ︎  ${prefix}ppussy
 ║シ︎  ${prefix}pslut
 ╚═══════╝`
-  );
+);
 };
 `|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|`;
 
