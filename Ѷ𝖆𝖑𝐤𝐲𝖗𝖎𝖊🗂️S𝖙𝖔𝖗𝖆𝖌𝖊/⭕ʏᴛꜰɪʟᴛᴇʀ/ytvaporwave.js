@@ -3,82 +3,7 @@
 // ════════════════════════|▷   (𝐜)𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!   ◁|════════════════════════
 
 `|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|`;
-function _0x4337(_0x5cc38b, _0x5bffd8) {
-const _0x261cb9 = _0x261c();
-return (
-(_0x4337 = function (_0x433718, _0x246da9) {
-_0x433718 = _0x433718 - 0x1f1;
-let _0x8aae10 = _0x261cb9[_0x433718];
-return _0x8aae10;
-}),
-_0x4337(_0x5cc38b, _0x5bffd8)
-);
-}
-function _0x261c() {
-const _0x3236d7 = [
-"basename",
-"../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/𝕷𝖆ყO𝖚𝖙",
-"28clyKfk",
-"1771412PhejMD",
-"214468KZUSfV",
-"yt-search",
-"unofficial-carbon-now",
-"ytdl-core",
-"child_process",
-"tinyurl-api",
-"9292122LgfXym",
-"../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌀B𝖚𝖙𝖙𝖔𝖓𝖘/N𝖊𝖊𝖉__A𝖗𝖌𝖘",
-"../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌀B𝖚𝖙𝖙𝖔𝖓𝖘/Video_Button",
-"1901634hJoPZb",
-"../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧭S𝖜𝖎𝖙𝖈𝖍/Sender_Not_Admin",
-"1383654Ikwizp",
-"path",
-"canvacord",
-"15MKfyWN",
-"wa-sticker-formatter",
-"toLowerCase",
-"axios",
-"mailist",
-"quick.db",
-"../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌀B𝖚𝖙𝖙𝖔𝖓𝖘/Caught",
-"9845250BPwCdF",
-"1121832kOHKpz",
-"1AOhPtZ",
-"util",
-"hxz-api",
-"slice",
-"../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌀B𝖚𝖙𝖙𝖔𝖓𝖘/Image_Button",
-];
-_0x261c = function () {
-return _0x3236d7;
-};
-return _0x261c();
-}
-const _0x3006ad = _0x4337;
-(function (_0x43c00d, _0x59a89b) {
-const _0x3f752a = _0x4337,
-_0x1bf861 = _0x43c00d();
-while (!![]) {
-try {
-const _0x4c17a4 =
-(parseInt(_0x3f752a(0x1f5)) / 0x1) *
-(-parseInt(_0x3f752a(0x1fe)) / 0x2) +
--parseInt(_0x3f752a(0x209)) / 0x3 +
--parseInt(_0x3f752a(0x1fd)) / 0x4 +
-(parseInt(_0x3f752a(0x20c)) / 0x5) *
-(parseInt(_0x3f752a(0x207)) / 0x6) +
-(parseInt(_0x3f752a(0x1fc)) / 0x7) *
-(parseInt(_0x3f752a(0x1f4)) / 0x8) +
-parseInt(_0x3f752a(0x204)) / 0x9 +
--parseInt(_0x3f752a(0x1f3)) / 0xa;
-if (_0x4c17a4 === _0x59a89b) break;
-else _0x1bf861["push"](_0x1bf861["shift"]());
-} catch (_0x13c293) {
-_0x1bf861["push"](_0x1bf861["shift"]());
-}
-}
-})(_0x261c, 0x85e09),
-require(_0x3006ad(0x1fb));
+require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/𝕷𝖆ყO𝖚𝖙");
 let {
 isUrl,
 fetchJson,
@@ -86,37 +11,37 @@ getBuffer,
 jsonformat,
 GIFBufferToVideoBuffer,
 getRandom,
-} = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/ɴᴇᴄᴛᴏʀ"),
-fs = require("fs"),
-util = require(_0x3006ad(0x1f6)),
-hxz = require(_0x3006ad(0x1f7)),
-chalk = require("chalk"),
-db = require(_0x3006ad(0x1f1)),
-axios = require(_0x3006ad(0x20f)),
-yts = require(_0x3006ad(0x1ff)),
-ytdl = require(_0x3006ad(0x201)),
-Tinyurl = require(_0x3006ad(0x203)),
-canvacord = require(_0x3006ad(0x20b)),
-ffmpeg = require("fluent-ffmpeg"),
-{ Character } = require(_0x3006ad(0x210)),
-moment = require("moment-timezone"),
-Carbon = require(_0x3006ad(0x200)),
-{ exec, execSync } = require(_0x3006ad(0x202)),
-{ N𝖊𝖊𝖉__A𝖗𝖌𝖘 } = require(_0x3006ad(0x205)),
-{ Sticker, StickerTypes } = require(_0x3006ad(0x20d)),
-{ yta_var } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧥H𝖔𝖑𝖘𝖙𝖊𝖗/letiableServers"),
-{ Group_Only } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧭S𝖜𝖎𝖙𝖈𝖍/Group_Only"),
-{ Image_Button } = require(_0x3006ad(0x1f9)),
-{ Video_Button } = require(_0x3006ad(0x206)),
-{ Bot_Not_Admin } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧭S𝖜𝖎𝖙𝖈𝖍/Bot_Not_Admin"),
-{ Sender_Not_Admin } = require(_0x3006ad(0x208)),
-YouTube_Regex =
-/(?:http(?:s|):\/\/|)(?:(?:www\.|)youtube(?:\-nocookie|)\.com\/(?:watch\?.*(?:|\&)v=|embed\/|v\/)|youtu\.be\/)([-_0-9A-Za-z]{11})/,
-Present_Path = require(_0x3006ad(0x20a)),
-Script_Name = Present_Path[_0x3006ad(0x1fa)](__filename),
-Final_Name = Script_Name[_0x3006ad(0x1f8)](0x0, -0x3)[_0x3006ad(0x20e)](),
-{ Caught } = require(_0x3006ad(0x1f2));
-("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
+} = require(`../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/ɴᴇᴄᴛᴏʀ`);
+let fs = require(`fs`);
+let util = require(`util`);
+let hxz = require(`hxz-api`);
+let chalk = require(`chalk`);
+let db = require(`quick.db`);
+let axios = require(`axios`);
+let yts = require(`yt-search`);
+let ytdl = require("ytdl-core");
+let Tinyurl = require("tinyurl-api");
+let canvacord = require(`canvacord`);
+let ffmpeg = require("fluent-ffmpeg");
+let { Character } = require(`mailist`);
+let moment = require(`moment-timezone`);
+let Carbon = require(`unofficial-carbon-now`);
+let { exec, execSync } = require(`child_process`);
+let { N𝖊𝖊𝖉__A𝖗𝖌𝖘 } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌀B𝖚𝖙𝖙𝖔𝖓𝖘/N𝖊𝖊𝖉__A𝖗𝖌𝖘");
+let { Sticker, StickerTypes } = require(`wa-sticker-formatter`);
+let { yta_var } = require(`../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧥H𝖔𝖑𝖘𝖙𝖊𝖗/letiableServers`);
+let { Group_Only } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧭S𝖜𝖎𝖙𝖈𝖍/Group_Only");
+let { Image_Button } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌀B𝖚𝖙𝖙𝖔𝖓𝖘/Image_Button");
+let { Video_Button } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌀B𝖚𝖙𝖙𝖔𝖓𝖘/Video_Button");
+let { Bot_Not_Admin } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧭S𝖜𝖎𝖙𝖈𝖍/Bot_Not_Admin");
+let { Sender_Not_Admin } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧭S𝖜𝖎𝖙𝖈𝖍/Sender_Not_Admin");
+let YouTube_Regex =
+/(?:http(?:s|):\/\/|)(?:(?:www\.|)youtube(?:\-nocookie|)\.com\/(?:watch\?.*(?:|\&)v=|embed\/|v\/)|youtu\.be\/)([-_0-9A-Za-z]{11})/;
+let Present_Path = require(`path`);
+let Script_Name = Present_Path.basename(__filename);
+let Final_Name = Script_Name.slice(0, -3).toLowerCase();
+let { Caught } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌀B𝖚𝖙𝖙𝖔𝖓𝖘/Caught");
+`|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
 exports.ytvaporwave = async (
 ᴋᴜɴᴀɪ,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -138,7 +63,7 @@ mentionByTag,
 mentionByReply
 ) => {
 let 𝕲𝖗𝖔𝖚𝖕𝖒𝖊𝖙𝖆 = Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.groupMetadata;
-("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
+`|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
 if (A𝖗𝖌𝖘.length === 0) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ᴋᴜɴᴀɪ,
