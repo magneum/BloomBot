@@ -3615,7 +3615,7 @@ case `pay`:
 case `loan`:
 case `borrow`:
 case `payment`:
-
+return await Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.reply("Command Under Maintainence!");
 await pay(
 ᴋᴜɴᴀɪ,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -3642,7 +3642,7 @@ case `bal`:
 case `gold`:
 case `money`:
 case `balance`:
-
+return await Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.reply("Command Under Maintainence!");
 await balance(
 ᴋᴜɴᴀɪ,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -3717,7 +3717,7 @@ break;
 case `rob`:
 case `thief`:
 case `robbery`:
-
+return await Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.reply("Command Under Maintainence!");
 await rob(
 ᴋᴜɴᴀɪ,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -3744,7 +3744,7 @@ case `bag`:
 case `inv`:
 case `loot`:
 case `inventory`:
-
+return await Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.reply("Command Under Maintainence!");
 await bag(
 ᴋᴜɴᴀɪ,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
