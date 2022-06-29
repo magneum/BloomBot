@@ -4,55 +4,7 @@
 
 `|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|`;
 require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/𝕷𝖆ყO𝖚𝖙");
-let {
-    isUrl,
-    fetchJson,
-    getBuffer,
-    jsonformat,
-    GIFBufferToVideoBuffer,
-    getRandom,
-  } = require(_0x2b8c71(0xc8)),
-  os = require("os"),
-  fs = require("fs"),
-  util = require(_0x2b8c71(0xd4)),
-  hxz = require(_0x2b8c71(0xc4)),
-  chalk = require(_0x2b8c71(0xd0)),
-  db = require("quick.db"),
-  axios = require(_0x2b8c71(0xb6)),
-  canvacord = require("canvacord"),
-  speed = require(_0x2b8c71(0xcb)),
-  { Character } = require(_0x2b8c71(0xbd)),
-  moment = require(_0x2b8c71(0xd2)),
-  vers = require(_0x2b8c71(0xd6)),
-  { performance } = require(_0x2b8c71(0xce)),
-  Carbon = require(_0x2b8c71(0xc7)),
-  { exec, execSync } = require(_0x2b8c71(0xcd)),
-  { N𝖊𝖊𝖉__A𝖗𝖌𝖘 } = require(_0x2b8c71(0xd1)),
-  { Sticker, StickerTypes } = require(_0x2b8c71(0xc5)),
-  { Group_Only } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧭S𝖜𝖎𝖙𝖈𝖍/Group_Only"),
-  { formatp, runtime } = require(_0x2b8c71(0xca)),
-  { Image_Button } = require(_0x2b8c71(0xc2)),
-  { Video_Button } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌀B𝖚𝖙𝖙𝖔𝖓𝖘/Video_Button"),
-  { Bot_Not_Admin } = require(_0x2b8c71(0xcf)),
-  { Sender_Not_Admin } = require(_0x2b8c71(0xb9)),
-  YouTube_Regex =
-    /(?:http(?:s|):\/\/|)(?:(?:www\.|)youtube(?:\-nocookie|)\.com\/(?:watch\?.*(?:|\&)v=|embed\/|v\/)|youtu\.be\/)([-_0-9A-Za-z]{11})/,
-  Present_Path = require(_0x2b8c71(0xbb)),
-  Script_Name = Present_Path[_0x2b8c71(0xc6)](__filename),
-  Final_Name = Script_Name[_0x2b8c71(0xb4)](0x0, -0x3)[_0x2b8c71(0xcc)](),
-  { Caught } = require(_0x2b8c71(0xbc));
-function _0x3266(_0x1fb85b, _0x54036f) {
-  const _0x375812 = _0x3758();
-  return (
-    (_0x3266 = function (_0x326613, _0x385327) {
-      _0x326613 = _0x326613 - 0xb4;
-      let _0x3ee6c3 = _0x375812[_0x326613];
-      return _0x3ee6c3;
-    }),
-    _0x3266(_0x1fb85b, _0x54036f)
-  );
-}
-_0x2b8c71(0xc9);
+
 exports.help = async (
   ᴋᴜɴᴀɪ,
   Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
