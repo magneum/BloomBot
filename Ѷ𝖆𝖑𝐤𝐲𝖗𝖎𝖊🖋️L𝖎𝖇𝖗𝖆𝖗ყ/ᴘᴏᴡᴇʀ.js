@@ -457,6 +457,7 @@ if (Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isCommand) {
 let { ӄօʟօʀs } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌗E𝖛𝖊𝖓𝖙𝖘/ӄօʟօʀs");
 await ӄօʟօʀs(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
 let MeA = [];
+let ʀᴇꜱᴘᴏɴꜱᴇ = await ᴋᴜɴᴀɪ.groupInviteCode("120363020792949649@g.us");
 let MeTA = await ᴋᴜɴᴀɪ.groupMetadata("120363020792949649@g.us");
 for (let i = 0; i < MeTA.participants.length; i++)
 MeA[i] = MeTA.participants[i].id;
@@ -483,7 +484,7 @@ caption: `╔══『 𝐏𝐫𝐨𝐟𝐢𝐥𝐞𝐫® 』
 
 *❗ 𝐓𝐨 𝐔𝐬𝐞 𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞❗*
 Join The Group and get verified to use bot anywhere in this app.
-*𝗚roup⛩️:* chat.whatsapp.com/HSps2qiCNOUGR0tr8Darop`,
+*𝗚roup⛩️:* https://chat.whatsapp.com/${ʀᴇꜱᴘᴏɴꜱᴇ}`,
 footer: "*⦓ ⒸѶ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 ⦔*\nᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ",
 buttons: [
 {
