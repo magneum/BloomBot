@@ -347,7 +347,7 @@ A𝖗𝖌𝖘,
 ┊   🤑𝐆𝐚𝐦𝐛𝐥𝐞𝐫
 ╚◇══════════════◇╝
 
-❌ 𝗘𝗿𝗿𝗼𝗿: _are betting more than you have!_
+*❌𝗘𝗿𝗿𝗼𝗿:* _are betting more than you have!_
 ❣️ 𝗨𝘀𝗮𝗴𝗲: ${prefix}${Final_Name}  _red/black/purple money_`
 );
 }
