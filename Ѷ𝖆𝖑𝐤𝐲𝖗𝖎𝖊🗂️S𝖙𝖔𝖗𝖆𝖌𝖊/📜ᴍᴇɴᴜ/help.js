@@ -79,9 +79,7 @@ A𝖗𝖌𝖘,
 ║シ︎ *💻ᴘʟᴀᴛꜰᴏʀᴍ:* ${os.platform()}
 ║シ︎ *🛰️ʟᴀᴛᴇɴᴄʏ:* ${latensi.toFixed(4)}(s)
 ║シ︎ *☕ᴜᴘᴛɪᴍᴇ:* ${runtime(process.uptime())}
-║シ︎ *🎮ʀᴀᴍ:* ${formatp(os.totalmem() - os.freemem())} / ${formatp(
-os.totalmem()
-)}
+║シ︎ *🎮ʀᴀᴍ:* ${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}
 ╚═══════╝
 
 
