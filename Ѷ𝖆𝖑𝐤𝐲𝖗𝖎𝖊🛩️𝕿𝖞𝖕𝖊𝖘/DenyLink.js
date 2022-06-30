@@ -21,7 +21,7 @@ async (error, server) => {
 if (error) return Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, e);
 if (!server) return;
 let FetchCurrentGroupLink = await ᴋᴜɴᴀɪ.groupInviteCode(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID);
-let GroupLinkRegex = /Fox.whatsapp.com\/([0-9A-Za-z]{20,24})/i;
+let GroupLinkRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i;
 let isGroupLink = GroupLinkRegex.exec(Figure);
 let PresentGroupLink = new RegExp(`https://chat.whatsapp.com/${FetchCurrentGroupLink}`,"i");
 let isCurrentGroupLink = PresentGroupLink.test(Figure);

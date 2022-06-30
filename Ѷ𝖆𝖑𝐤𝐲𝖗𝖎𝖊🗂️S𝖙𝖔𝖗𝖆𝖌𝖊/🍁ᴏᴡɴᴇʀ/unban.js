@@ -97,7 +97,7 @@ return await Image_Button(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
 A𝖗𝖌𝖘,
 "./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊_Matte.png",
-`*❌𝗘𝗿𝗿𝗼𝗿:* That Person Has Been Un-Banned!`
+`*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* That Person Has Been Un-Banned!`
 );
 }
 }
@@ -125,7 +125,7 @@ return await Image_Button(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
 A𝖗𝖌𝖘,
 "./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊_Matte.png",
-`*❌𝗘𝗿𝗿𝗼𝗿:* ${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.groupMetadata.subject} Has Been Un-Banned!`
+`*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* ${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.groupMetadata.subject} Has Been Un-Banned!`
 );
 }
 }

@@ -30,10 +30,10 @@ return await Image_Button(
 • Do Not Spam The Chat Box!
 
 🌿𝐏𝐮𝐧𝐢𝐬𝐡𝐦𝐞𝐧𝐭
-• 𝗪𝗮𝗿𝗻𝗶𝗻𝗴𝘀: 1/3
-• You Will be Auto-Blocked After 3 warnings!`
+• 𝗪𝗮𝗿𝗻𝗶𝗻𝗴𝘀: 1/4
+• You Will be Auto-Blocked After 4 warnings!`
 );
-} else if (user.Amount < 3) {
+} else if (user.Amount < 4) {
 user.Amount = user.Amount + 1;
 await user.save().catch((𝕰𝖗𝖗𝖔𝖗) => Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝕰𝖗𝖗𝖔𝖗));
 return await Image_Button(
@@ -46,14 +46,12 @@ return await Image_Button(
 • Do Not Spam The Chat Box!
 
 🌿𝐏𝐮𝐧𝐢𝐬𝐡𝐦𝐞𝐧𝐭
-• 𝗪𝗮𝗿𝗻𝗶𝗻𝗴𝘀: ${user.Amount}/3
-• You Will be Auto-Blocked After 3 warnings!`
+• 𝗪𝗮𝗿𝗻𝗶𝗻𝗴𝘀: ${user.Amount}/4
+• You Will be Auto-Blocked After 4 warnings!`
 );
 } else {
 await user.delete().catch((𝕰𝖗𝖗𝖔𝖗) => Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝕰𝖗𝖗𝖔𝖗));
-return await ᴋᴜɴᴀɪ
-.updateBlockStatus(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender, "block")
-.catch((𝕰𝖗𝖗𝖔𝖗) => Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝕰𝖗𝖗𝖔𝖗));
+return await ᴋᴜɴᴀɪ.updateBlockStatus(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender, "block").catch((𝕰𝖗𝖗𝖔𝖗) => Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝕰𝖗𝖗𝖔𝖗));
 }
 }
 );

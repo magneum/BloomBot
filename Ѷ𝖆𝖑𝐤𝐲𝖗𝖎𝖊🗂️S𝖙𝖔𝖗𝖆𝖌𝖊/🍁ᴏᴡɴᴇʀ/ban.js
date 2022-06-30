@@ -98,7 +98,7 @@ caption: `╔══『 𝐏𝐫𝐨𝐟𝐢𝐥𝐞𝐫® 』
 ╚═══════╝
 
 
-🔒𝐒𝐭𝐚𝐭𝐮𝐬: @${repliedPersonNum} Has Been Banned and Bot won't Respond to that dumbo!`,
+*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* @${repliedPersonNum} Has Been Banned and Bot won't Respond to that dumbo!`,
 footer: "*⦓ ⒸѶ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 ⦔*",
 buttons: [
 {
@@ -152,7 +152,7 @@ caption: `╔══『 𝐏𝐫𝐨𝐟𝐢𝐥𝐞𝐫® 』
 ╚═══════╝
 
 
-🔒𝐒𝐭𝐚𝐭𝐮𝐬: ${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.groupMetadata.subject} Group Has Been Banned!`,
+*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* ${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.groupMetadata.subject} Group Has Been Banned!`,
 footer: "*⦓ ⒸѶ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 ⦔*",
 buttons: [
 {
