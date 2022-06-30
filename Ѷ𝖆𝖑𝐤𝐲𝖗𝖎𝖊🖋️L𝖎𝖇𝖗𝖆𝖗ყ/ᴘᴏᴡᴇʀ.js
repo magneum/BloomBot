@@ -500,7 +500,7 @@ ID: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
 },
 async (𝕰𝖗𝖗𝖔𝖗, userGCheck) => {
 if (𝕰𝖗𝖗𝖔𝖗) return console.log(𝕰𝖗𝖗𝖔𝖗);
-if (userBCheck && !Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.) {
+if (userBCheck && !Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.fromMe && !Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.) {
 return;
 } else if (userGCheck) {
 return;
