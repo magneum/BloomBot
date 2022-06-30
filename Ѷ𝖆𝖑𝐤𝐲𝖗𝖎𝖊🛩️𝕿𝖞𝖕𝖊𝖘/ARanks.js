@@ -12,7 +12,7 @@ let randomMC = require("random-material-color");
 let { Image_Button } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌀B𝖚𝖙𝖙𝖔𝖓𝖘/Image_Button");
 let color = randomMC.getColor();
 Levels.setURL(MONGOOSE);
-exports.ARanks = async (Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, ᴋᴜɴᴀɪ, Caught, A𝖗𝖌𝖘) => {
+exports.ARanks = async (Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, ӄ𝖗𝖞ӄ𝖓𝖟, Caught, A𝖗𝖌𝖘) => {
 const randomXp = Math.floor(Math.random() * 3) + + 10;
 const user = await Levels.fetch(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, true);
 if (!user) {
@@ -83,7 +83,7 @@ let expFile = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Date.now()}${�
 let աɦօֆɛ = Math.floor(1000 + Math.random() * 9000);
 let 𝕯𝖎𝖘𝖕𝖑𝖆𝖞;
 try {
-𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await ᴋᴜɴᴀɪ.profilePictureUrl(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, `image`);
+𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await ӄ𝖗𝖞ӄ𝖓𝖟.profilePictureUrl(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, `image`);
 } catch {
 𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.png`;
 }
@@ -117,9 +117,9 @@ let rank = new canvacord.Rank()
 .setDiscriminator(աɦօֆɛ);
 rank.build().then(async (data) => {
 fs.writeFile(expFile, data, async (error) => {
-if (error) return Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, error);
+if (error) return Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, error);
 await Image_Button(
-ᴋᴜɴᴀɪ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
 A𝖗𝖌𝖘,
 expFile,
