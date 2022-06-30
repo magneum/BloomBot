@@ -154,6 +154,8 @@ A𝖗𝖌𝖘,
 ║ *🎮ʀᴀᴍ:* ${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}
 ╚═══════╝
 
+╔══『 🐾𝐀𝐧𝐢𝐦𝐞+𝐌𝐚𝐧𝐠𝐚🐾 』
+╚═══════╝
 
 ╔══『 🐾𝐀𝐧𝐢𝐦𝐞+𝐌𝐚𝐧𝐠𝐚🐾 』
 ║ ${prefix}anime
