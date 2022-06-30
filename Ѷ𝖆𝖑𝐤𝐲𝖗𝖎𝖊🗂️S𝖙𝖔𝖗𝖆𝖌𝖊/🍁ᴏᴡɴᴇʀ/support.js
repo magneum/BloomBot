@@ -142,8 +142,8 @@ return await Image_Button(
 A𝖗𝖌𝖘,
 "./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊_White.png",
 `*(𝐜)Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🍻*
-*🛰️We𝐛:*  _VlkyreAI.krakinzkon.repl.co_
-*🐞GitHub:* _github.com/kryknz/vlkyre_
+*🛰️We𝐛:*  VlkyreAI.krakinzkon.repl.co
+*🐞GitHub:* github.com/kryknz/vlkyre
 *𝗚roup⛩️:* chat.whatsapp.com/${ʀᴇꜱᴘᴏɴꜱᴇ}
 *🎉Prefix:* ${prefix}
 `
