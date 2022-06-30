@@ -372,6 +372,7 @@ A𝖗𝖌𝖘,
 ║ ${prefix}setdesc
 ║ ${prefix}setgpfp
 ║ ${prefix}tagall
+║ ${prefix}admins
 ╚═══════╝
 
 ╔══『 🍰𝐅𝐢𝐥𝐭𝐞𝐫𝐬/𝐀𝐮𝐝𝐢𝐨🍰 』
