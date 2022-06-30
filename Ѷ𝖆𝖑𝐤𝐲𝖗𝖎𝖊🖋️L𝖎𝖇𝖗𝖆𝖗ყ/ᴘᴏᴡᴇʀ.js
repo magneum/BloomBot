@@ -402,7 +402,10 @@ return await Image_Button(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
 A𝖗𝖌𝖘,
 𝕯𝖎𝖘𝖕𝖑𝖆𝖞,
-`*❌𝕰𝖗𝖗𝖔𝖗:* Your Group has ${ɢʀᴏᴜᴘ_ᴍᴇᴛᴀᴅᴀᴛᴀ.participants.length}/20 members!`
+`*❌𝕰𝖗𝖗𝖔𝖗:* Your Group has ${ɢʀᴏᴜᴘ_ᴍᴇᴛᴀᴅᴀᴛᴀ.participants.length}/20 members!
+*🔓ꜱᴛᴀᴛᴜꜱ:* Left Group!
+*📜ɴᴀᴍᴇ:* ${ɢʀᴏᴜᴘ_ᴍᴇᴛᴀᴅᴀᴛᴀ.subject}
+*💞ᴍᴇᴍʙᴇʀꜱ:* ${ɢʀᴏᴜᴘ_ᴍᴇᴛᴀᴅᴀᴛᴀ.participants.length}`
 );
 } else {
 return await Image_Button(
