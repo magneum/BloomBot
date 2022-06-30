@@ -502,7 +502,7 @@ async (𝕰𝖗𝖗𝖔𝖗, userGCheck) => {
 if (𝕰𝖗𝖗𝖔𝖗) return console.log(𝕰𝖗𝖗𝖔𝖗);
 if (userBCheck && !Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.fromMe && !Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF) {
 return;
-} else if (userGCheck) {
+} else if (userGCheck  && !Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.fromMe && !Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF) {
 return;
 } else {
 if (Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isCommand) {
