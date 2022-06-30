@@ -158,7 +158,7 @@ A𝖗𝖌𝖘,
 ╔══『 🐾𝐀𝐧𝐢𝐦𝐞+𝐌𝐚𝐧𝐠𝐚🐾 』
 ║ ${prefix}anime
 ║ ${prefix}manga
-║
+
 ║ ${prefix}baka
 ║ ${prefix}bite
 ║ ${prefix}blush
