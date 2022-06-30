@@ -366,6 +366,48 @@ await pow(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
 );
 }
 `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
+if (
+Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.groupMetadata.subject.includes("𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐑𝐞𝐪𝐮𝐞𝐬𝐭") &&
+Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.body.includes("https")
+) {
+var InvLink = Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.body;
+let linkRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i;
+let [_, MetaCode] = InvLink.match(linkRegex) || [];
+const GroupResponse = await ᴋᴜɴᴀɪ.groupAcceptInvite(MetaCode);
+const GroupMetadata = await ᴋᴜɴᴀɪ.groupMetadata(
+GroupResponse.gid
+);
+let 𝕻𝕻𝖑𝖊𝖙𝖊𝖗;
+try {
+𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ᴋᴜɴᴀɪ.profilePictureUrl(
+GroupResponse.gid,
+"image"
+);
+} catch {
+𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = "./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊_Matte.png";
+}
+if (GroupMetadata.participants.length < 20) {
+await ᴋᴜɴᴀɪ.groupLeave(GroupResponse.gid);
+return await Image_Button.VImg(
+TUF,
+Fox,
+Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+`*❌𝕰𝖗𝖗𝖔𝖗:* Your Group, ${GroupMetadata.subject} has ${GroupMetadata.participants.length}/20 members!`,
+𝕻𝕻𝖑𝖊𝖙𝖊𝖗
+);
+}
+return await Image_Button.VImg(
+TUF,
+Fox,
+Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+`*🔓𝐒𝐭𝐚𝐭𝐮𝐬:* Joined Group!
+*📜𝐆𝐫𝐨𝐮𝐩:* ${GroupMetadata.subject}
+*💞𝐌𝐞𝐦𝐛𝐞𝐫:* ${GroupMetadata.participants.length}
+*📝𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧:* ${GroupMetadata.desc}`,
+𝕻𝕻𝖑𝖊𝖙𝖊𝖗
+);
+}
+`|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
 if (Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message && !Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.fromMe) {
 let { Message_NotMe } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊📮W𝖆𝖗𝖉𝖗𝖔𝖇𝖊/Message_NotMe");
 await Message_NotMe(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
@@ -463,49 +505,6 @@ return;
 } else if (userGCheck) {
 return;
 } else {
-`|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
-if (
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.groupMetadata.subject.includes("𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐑𝐞𝐪𝐮𝐞𝐬𝐭") &&
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.body.includes("https")
-) {
-var InvLink = Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.body;
-let linkRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i;
-let [_, MetaCode] = InvLink.match(linkRegex) || [];
-const GroupResponse = await ᴋᴜɴᴀɪ.groupAcceptInvite(MetaCode);
-const GroupMetadata = await ᴋᴜɴᴀɪ.groupMetadata(
-GroupResponse.gid
-);
-let 𝕻𝕻𝖑𝖊𝖙𝖊𝖗;
-try {
-𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ᴋᴜɴᴀɪ.profilePictureUrl(
-GroupResponse.gid,
-"image"
-);
-} catch {
-𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = "./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊_Matte.png";
-}
-if (GroupMetadata.participants.length < 20) {
-await ᴋᴜɴᴀɪ.groupLeave(GroupResponse.gid);
-return await Image_Button.VImg(
-TUF,
-Fox,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
-`*❌𝕰𝖗𝖗𝖔𝖗:* Your Group, ${GroupMetadata.subject} has ${GroupMetadata.participants.length}/20 members!`,
-𝕻𝕻𝖑𝖊𝖙𝖊𝖗
-);
-}
-return await Image_Button.VImg(
-TUF,
-Fox,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
-`*🔓𝐒𝐭𝐚𝐭𝐮𝐬:* Joined Group!
-*📜𝐆𝐫𝐨𝐮𝐩:* ${GroupMetadata.subject}
-*💞𝐌𝐞𝐦𝐛𝐞𝐫:* ${GroupMetadata.participants.length}
-*📝𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧:* ${GroupMetadata.desc}`,
-𝕻𝕻𝖑𝖊𝖙𝖊𝖗
-);
-}
-`|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
 if (Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isCommand) {
 let { ӄօʟօʀs } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌗E𝖛𝖊𝖓𝖙𝖘/ӄօʟօʀs");
 await ӄօʟօʀs(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
