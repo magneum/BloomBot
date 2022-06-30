@@ -43,7 +43,7 @@ let Final_Name = Script_Name.slice(0, -3).toLowerCase();
 let { Caught } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌀B𝖚𝖙𝖙𝖔𝖓𝖘/Caught");
 `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
 exports.ytspeed = async (
-ᴋᴜɴᴀɪ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
 A𝖗𝖌𝖘,
 pushName,
@@ -63,7 +63,7 @@ mentionByReply
 ) => {
 if (A𝖗𝖌𝖘.length === 0) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ᴋᴜɴᴀɪ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
 `*❌ERROR:* No query provided!
 
@@ -74,7 +74,7 @@ return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 if (A𝖗𝖌𝖘.includes("yout")) {
 if (!YouTube_Regex.test(A𝖗𝖌𝖘[0])) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ᴋᴜɴᴀɪ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
 `*❌ERROR:* No query provided!
 
@@ -92,7 +92,7 @@ FinalGot = F𝖚𝖑𝖑_A𝖗𝖌𝖘;
 let LinkFound = await yts(FinalGot);
 if (!LinkFound) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ᴋᴜɴᴀɪ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
 `*❌ERROR:* No Music Found!
 
@@ -104,7 +104,7 @@ let TubeFile = LinkFound.videos.slice(0, 1);
 TubeFile.forEach(async function (Found) {
 if (Found.seconds > 1800) {
 return await Image_Button(
-ᴋᴜɴᴀɪ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
 A𝖗𝖌𝖘,
 Found.thumbnail,
@@ -128,7 +128,7 @@ DirectFile = "Null";
 }
 
 await Image_Button(
-ᴋᴜɴᴀɪ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
 A𝖗𝖌𝖘,
 Found.thumbnail,
@@ -155,7 +155,7 @@ require("child_process").exec(
 async (error) => {
 if (error) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ᴋᴜɴᴀɪ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
 `*❌ERROR:* Could not convert!
 
@@ -163,7 +163,7 @@ return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 );
 }
 
-return await ᴋᴜɴᴀɪ
+return await ӄ𝖗𝖞ӄ𝖓𝖟
 .sendMessage(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
 {
