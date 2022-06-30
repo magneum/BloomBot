@@ -379,28 +379,24 @@ A𝖗𝖌𝖘,
 `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
 let ɢʀᴏᴜᴘ_ʟɪɴᴋʀᴇɢᴇx = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i;
 let ɪꜱɢʀᴏᴜᴘ_ʟɪɴᴋ = ɢʀᴏᴜᴘ_ʟɪɴᴋʀᴇɢᴇx.exec(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.body);
-if (
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.groupMetadata.subject.includes("𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐑𝐞𝐪𝐮𝐞𝐬𝐭") &&
-ɪꜱɢʀᴏᴜᴘ_ʟɪɴᴋ
-) {
+if (Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.groupMetadata.subject.includes("𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐑𝐞𝐪𝐮𝐞𝐬𝐭") && ɪꜱɢʀᴏᴜᴘ_ʟɪɴᴋ) {
+try {
 let 𝕯𝖎𝖘𝖕𝖑𝖆𝖞;
 let ʟɪɴᴋʀᴇɢᴇx = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i;
 let [_, ᴍᴇᴛᴀᴄᴏᴅᴇ] = Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.body.match(ʟɪɴᴋʀᴇɢᴇx) || [];
-// const ɢʀᴏᴜᴘ_ᴍᴇᴛᴀᴅᴀᴛᴀ = await ᴋᴜɴᴀɪ.groupMetadata(ɢʀᴏᴜᴘ_ʀᴇꜱᴘᴏɴꜱᴇ.gid);
-// const ɢʀᴏᴜᴘ_ʀᴇꜱᴘᴏɴꜱᴇ = await ᴋᴜɴᴀɪ.groupAcceptInvite(ᴍᴇᴛᴀᴄᴏᴅᴇ);
-// await ᴋᴜɴᴀɪ.groupLeave(ɢʀᴏᴜᴘ_ʀᴇꜱᴘᴏɴꜱᴇ.gid);
-const ʀᴇꜱᴘᴏ = await ᴋᴜɴᴀɪ.groupAcceptInviteV4(ᴍᴇᴛᴀᴄᴏᴅᴇ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.body);
-const ʀᴇꜱᴘᴏɴꜱᴇ = await ᴋᴜɴᴀɪ.groupGetInviteInfo(ᴍᴇᴛᴀᴄᴏᴅᴇ);
-console.log("Information: " + ʀᴇꜱᴘᴏɴꜱᴇ);
-console.log("Joined to: " + ʀᴇꜱᴘᴏ);
-return;
-
+const ɢʀᴏᴜᴘ_ʀᴇꜱᴘᴏɴꜱᴇ = await ᴋᴜɴᴀɪ
+.groupAcceptInvite(ᴍᴇᴛᴀᴄᴏᴅᴇ)
+.catch((𝕰𝖗𝖗𝖔𝖗) => Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝕰𝖗𝖗𝖔𝖗));
+const ɢʀᴏᴜᴘ_ᴍᴇᴛᴀᴅᴀᴛᴀ = await ᴋᴜɴᴀɪ
+.groupMetadata(ɢʀᴏᴜᴘ_ʀᴇꜱᴘᴏɴꜱᴇ.gid)
+.catch((𝕰𝖗𝖗𝖔𝖗) => Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝕰𝖗𝖗𝖔𝖗));
 try {
 𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await ᴋᴜɴᴀɪ.profilePictureUrl(ɢʀᴏᴜᴘ_ʀᴇꜱᴘᴏɴꜱᴇ.gid, "image");
 } catch {
 𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = "./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊_Matte.png";
 }
 if (ɢʀᴏᴜᴘ_ᴍᴇᴛᴀᴅᴀᴛᴀ.participants.length < 20) {
+await ᴋᴜɴᴀɪ.groupLeave(ɢʀᴏᴜᴘ_ʀᴇꜱᴘᴏɴꜱᴇ.gid);
 return await Image_Button(
 ᴋᴜɴᴀɪ,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -420,6 +416,9 @@ A𝖗𝖌𝖘,
 *📝ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ:*
 ${ɢʀᴏᴜᴘ_ᴍᴇᴛᴀᴅᴀᴛᴀ.desc}`
 );
+}
+} catch (𝕰𝖗𝖗𝖔𝖗) {
+return Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝕰𝖗𝖗𝖔𝖗);
 }
 }
 `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
