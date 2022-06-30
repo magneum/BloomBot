@@ -1,6 +1,15 @@
 {
-"name": "❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ❞",
-"logo": "https://i.postimg.cc/y8TNXJtB/image.png",
+"logo": "https://telegra.ph/file/0592f028e92ff2a8e73f0.jpg",
+"name": "—••÷[🕊NORDED🕊]÷••—",
 "repository": "https://github.com/KryKnz/Vlkyre.git",
-"stack": "container"
+"stack": "container",
+"description": "—••÷[🕊NORDED🕊]÷••—",
+"keywords": ["telegram", "voice", "pyrogram", "musicbot", "userbot"],
+"env": {
+"HEROKU": {
+"description": "KEEP IT HEROKU!!!!!!!",
+"required": true
+}
+},
+"buildpacks": [{ "url": "heroku/python" }]
 }
