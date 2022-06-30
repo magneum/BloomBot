@@ -36,7 +36,7 @@ let Final_Name = Script_Name.slice(0, -3).toLowerCase();
 let { Caught } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌀B𝖚𝖙𝖙𝖔𝖓𝖘/Caught");
 `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
 exports.join = async (
-ᴋᴜɴᴀɪ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
 A𝖗𝖌𝖘,
 pushName,
@@ -56,7 +56,7 @@ mentionByReply
 ) => {
 if (!fromMe && !isSenderTUF) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ᴋᴜɴᴀɪ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
 `*❌ERROR:* Owner & Mod only command!
 
@@ -69,7 +69,7 @@ if (!isUrl(F𝖚𝖑𝖑_A𝖗𝖌𝖘) && !F𝖚𝖑𝖑_A𝖗𝖌𝖘.includes
 return Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.reply(`🔍 Please provide the group link`);
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.reply(`wait your request is under process`);
 let result = A𝖗𝖌𝖘[0].split(`https://chatID.whatsapp.com/`)[1];
-await ᴋᴜɴᴀɪ
+await ӄ𝖗𝖞ӄ𝖓𝖟
 .groupAcceptInvite(result)
 .then((res) => Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.reply(jsonformat(res)))
 .catch((err) => Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.reply(`Invalid 📘 *URL: ${q}*`));
