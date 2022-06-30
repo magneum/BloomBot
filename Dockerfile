@@ -28,7 +28,7 @@ RUN curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/yout
 RUN chmod a+rx /usr/local/bin/youtube-dl && hash -r
 RUN git clone https://github.com/KryKnz/Vlkyre.git && cd Vlkyre
 WORKDIR /Vlkyre
-RUN pip install -r ⭕𝖈𝖆𝖗𝖆.txt && npm install --force && rm package-lock.json && npm install -g spotify-dl spdl-core && npm install -g typescript 
+RUN pip install -r ⭕𝖈𝖆𝖗𝖆.txt && npm install --force && rm package-lock.json && npm install -g spotify-dl spdl-core && npm install -g typescript && npm install forever -g
 RUN git config --global user.name 'KryKnz' && git config --global user.email 'krakinzkon@gmail.com' && git config pull.rebase false
 RUN git init --initial-branch=🐍Ş𝖎𝖕𝖍𝖔𝖓® && git fetch origin 🐍Ş𝖎𝖕𝖍𝖔𝖓® && git reset --hard origin/🐍Ş𝖎𝖕𝖍𝖔𝖓® 
 CMD python3 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌱𝐤𝖗𝖞𝐤𝖊𝖐.py
