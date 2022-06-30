@@ -39,7 +39,7 @@ let Final_Name = Script_Name.slice(0, -3).toLowerCase();
 let { Caught } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌀B𝖚𝖙𝖙𝖔𝖓𝖘/Caught");
 `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
 exports.toimg = async (
-ᴋᴜɴᴀɪ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
 A𝖗𝖌𝖘,
 pushName,
@@ -64,7 +64,7 @@ if (
 ) {
 if (!quoted) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ᴋᴜɴᴀɪ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
 `*❌ERROR:*  Could not find any sticker in context!
 
@@ -73,21 +73,21 @@ return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 }
 if (!/webp/.test(mime)) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ᴋᴜɴᴀɪ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
 `*❌ERROR:*  Could not find any sticker in context!
 
 *⚡USAGE:* ${prefix}${Final_Name} <Tag the sticker>`
 );
 }
-let media = await ᴋᴜɴᴀɪ.downloadAndSaveMediaMessage(quoted);
+let media = await ӄ𝖗𝖞ӄ𝖓𝖟.downloadAndSaveMediaMessage(quoted);
 let ran = await getRandom(`.png`);
 exec(`ffmpeg -i ${media} ${ran}`, async (Èrrðr) => {
 fs.unlinkSync(media);
 if (Èrrðr) Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.reply(Èrrðr);
 let buffer = fs.readFileSync(ran);
 await Image_Button(
-ᴋᴜɴᴀɪ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
 A𝖗𝖌𝖘,
 buffer,
@@ -101,7 +101,7 @@ await fs.unlinkSync(ran);
 ) {
 if (!quoted) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ᴋᴜɴᴀɪ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
 `*❌ERROR:*  Could not find any sticker in context!
 
@@ -111,16 +111,16 @@ return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 
 if (!/webp/.test(mime)) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ᴋᴜɴᴀɪ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
 `*❌ERROR:*  Could not find any sticker in context!
 
 *⚡USAGE:* ${prefix}${Final_Name} <Tag the sticker>`
 );
 }
-let media = await ᴋᴜɴᴀɪ.downloadAndSaveMediaMessage(quoted);
+let media = await ӄ𝖗𝖞ӄ𝖓𝖟.downloadAndSaveMediaMessage(quoted);
 let webpToMp4 = await webp2mp4File(media);
-await ᴋᴜɴᴀɪ.sendMessage(
+await ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
 {
 video: {

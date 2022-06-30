@@ -43,7 +43,7 @@ let Final_Name = Script_Name.slice(0, -3).toLowerCase();
 let { Caught } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌀B𝖚𝖙𝖙𝖔𝖓𝖘/Caught");
 `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
 exports.echo = async (
-ᴋᴜɴᴀɪ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
 A𝖗𝖌𝖘,
 pushName,
@@ -63,7 +63,7 @@ mentionByReply
 ) => {
 if (A𝖗𝖌𝖘.length === 0) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ᴋᴜɴᴀɪ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
 `*❌ERROR:* No query provided!
 
@@ -74,7 +74,7 @@ return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 if (A𝖗𝖌𝖘.includes("yout")) {
 if (!YouTube_Regex.test(A𝖗𝖌𝖘[0])) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ᴋᴜɴᴀɪ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
 `*❌ERROR:* No query provided!
 
@@ -84,14 +84,14 @@ return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 }
 
 let FFmpegFile = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Date.now()}${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}.mp3`;
-let RawFile = await ᴋᴜɴᴀɪ.downloadAndSaveMediaMessage(quoted);
+let RawFile = await ӄ𝖗𝖞ӄ𝖓𝖟.downloadAndSaveMediaMessage(quoted);
 exec(
 `ffmpeg -i ${RawFile} -af "aecho=0.8:0.9:1000:0.3" ${FFmpegFile}`,
 async (error) => {
 cleanRF.cleanRF(Convert_From);
 if (error) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ᴋᴜɴᴀɪ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
 `*❌ERROR:* Could not convert!
 
@@ -99,7 +99,7 @@ return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 );
 }
 
-return await ᴋᴜɴᴀɪ
+return await ӄ𝖗𝖞ӄ𝖓𝖟
 .sendMessage(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
 {
