@@ -217,7 +217,7 @@ _0x3348(_0x380144, _0x1bb231)
 }
 if (Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊["isGroup"]) {
 let { ᴘᴏᴡᴇʀ } = require(_0x20d594(0x1ae));
-return await ᴘᴏᴡᴇʀ(ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
+return await ᴘᴏᴡᴇʀ(Ѷ𝖎𝖔𝖓, ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊);
 }
 function _0xb1bf() {
 const _0x5c834b = [
