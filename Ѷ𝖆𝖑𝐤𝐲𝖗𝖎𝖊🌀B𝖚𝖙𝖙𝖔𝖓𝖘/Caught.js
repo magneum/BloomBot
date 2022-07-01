@@ -9,7 +9,7 @@ await ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(
 "120363020792949649@g.us",
 `📌*Message:* Attention Every Admin/Mods of This Group!
 ❓*ᴄᴏᴍᴍᴀɴᴅ:* ${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName}
-💡Bug ${𝕮𝖔𝖓𝖙𝖊𝖓𝖙}`,
+💡Bug:* ${𝕮𝖔𝖓𝖙𝖊𝖓𝖙}`,
 {
 mentions: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.groupAdmins,
 }
