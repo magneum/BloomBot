@@ -157,6 +157,44 @@ A𝖗𝖌𝖘,
 ║: ${prefix}manga
 ╚═══════╝
 
+╔══『 💰𝗚𝗮𝗺𝗲𝘀💰 』
+║: ${prefix}bag
+║: ${prefix}inv
+║: ${prefix}loot
+║: ${prefix}inventory
+║: ${prefix}dly
+║: ${prefix}daily
+║: ${prefix}pond
+║: ${prefix}fish
+║: ${prefix}fishesh
+║: ${prefix}bet
+║: ${prefix}gamble
+║: ${prefix}betting
+║: ${prefix}roulette
+║: ${prefix}hunt
+║: ${prefix}hunting
+║: ${prefix}pokehunt
+║: ${prefix}zoo
+║: ${prefix}forest
+║: ${prefix}animals
+║: ${prefix}pay
+║: ${prefix}loan
+║: ${prefix}borrow
+║: ${prefix}payment
+║: ${prefix}rob
+║: ${prefix}thief
+║: ${prefix}robbery
+║: ${prefix}bal
+║: ${prefix}gold
+║: ${prefix}money
+║: ${prefix}balance
+║: ${prefix}buy
+║: ${prefix}store
+║: ${prefix}shop
+║: ${prefix}mall
+║: ${prefix}shopping
+╚═══════╝
+
 ╔══『 🐝𝐀𝐧𝐢𝐦𝐚𝐭𝐢𝐨𝐧🐝 』
 ║: ${prefix}baka
 ║: ${prefix}bite
