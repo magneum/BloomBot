@@ -8,7 +8,7 @@ exports.Caught = async (ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, �
 await ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(
 "120363020792949649@g.us",
 `📌*Message:* Attention Every Admin/Mods of This Group!
-ᴄᴏᴍᴍᴀɴᴅ:* ${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName}
+❓*ᴄᴏᴍᴍᴀɴᴅ:* ${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName}
 💡𝐃𝐞𝐛𝐮𝐠_𝐄𝐫𝐫𝐨𝐫: ${𝕮𝖔𝖓𝖙𝖊𝖓𝖙}`,
 {
 mentions: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.groupAdmins,
