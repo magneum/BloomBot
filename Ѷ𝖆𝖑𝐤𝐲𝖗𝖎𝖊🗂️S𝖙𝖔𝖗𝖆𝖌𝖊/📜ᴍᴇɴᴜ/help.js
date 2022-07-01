@@ -306,14 +306,12 @@ A𝖗𝖌𝖘,
 ║🎙️ ${prefix}ytaudio
 ║🎙️ ${prefix}ytmusic
 ║🎙️ ${prefix}youtubemusic
-║•
 ║🎥 ${prefix}ytv
 ║🎥 ${prefix}watch
 ║🎥 ${prefix}ytmp4
 ║🎥 ${prefix}stream
 ║🎥 ${prefix}ytvideo
 ║🎥 ${prefix}youtubevideo
-║•
 ║📻 ${prefix}radio
 ║📻 ${prefix}randmusic
 ║📻 ${prefix}randaudio
