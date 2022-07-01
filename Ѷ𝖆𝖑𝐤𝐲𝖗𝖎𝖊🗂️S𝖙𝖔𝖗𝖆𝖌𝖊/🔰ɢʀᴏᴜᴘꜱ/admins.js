@@ -85,7 +85,7 @@ if (F𝖚𝖑𝖑_A𝖗𝖌𝖘) {
 ╚═══════╝
 
 
-📌*Message:* 𝐀𝐓𝐓𝐄𝐍𝐓𝐈𝐎𝐍 𝐄𝐕𝐄𝐑𝐘 𝐀𝐃𝐌𝐈𝐍 𝐎𝐅 𝐓𝐇𝐈𝐒 𝐆𝐑𝐎𝐔𝐏!
+📌*Message:* Attention Every Admin/Mods of This Group!
 *💫Pinged by:*  ${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.pushName || "ɴᴏ_ɴᴀᴍᴇ"}
 *🕛Time:*  ${moment.tz("Asia/Kolkata").format("DD/MM HH:mm:ss")}`;
 }
