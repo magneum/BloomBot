@@ -148,8 +148,8 @@ A𝖗𝖌𝖘,
 ║⚙️ *ᴇɴɢɪɴᴇ:* ${vers.vers}
 ║💻 *ᴘʟᴀᴛꜰᴏʀᴍ:* ${os.platform()}
 ║🛰️ *ʟᴀᴛᴇɴᴄʏ:* ${latensi.toFixed(4)}(s)
-║ *☕ᴜᴘᴛɪᴍᴇ:* ${runtime(process.uptime())}
-║ *🎮ʀᴀᴍ:* ${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}
+║☕ *ᴜᴘᴛɪᴍᴇ:* ${runtime(process.uptime())}
+║🎮 *ʀᴀᴍ:* ${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}
 ╚═══════╝
 
 ╔══『 🐾𝐀𝐧𝐢𝐦𝐞+𝐌𝐚𝐧𝐠𝐚🐾 』
