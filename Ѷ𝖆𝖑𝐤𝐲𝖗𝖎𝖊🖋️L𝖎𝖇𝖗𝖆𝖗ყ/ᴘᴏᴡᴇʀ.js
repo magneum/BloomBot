@@ -3773,7 +3773,7 @@ chat.whatsapp.com/${ʀᴇꜱᴘᴏɴꜱᴇ}`,
                     case "devs":
                     case "support":
                     case "official":
-                    case "🦚 𝐒𝐔𝐏𝐏𝐎𝐑𝐓 🦚":
+                    case "🦚𝐒𝐔𝐏𝐏𝐎𝐑𝐓🦚":
                       await support(
                         ᴋᴜɴᴀɪ,
                         Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -3798,7 +3798,7 @@ chat.whatsapp.com/${ʀᴇꜱᴘᴏɴꜱᴇ}`,
                     case "rule":
                     case "rules":
                     case "rules":
-                    case "⚡ 𝐑𝐔𝐋𝐄𝐒 ⚡":
+                    case "⚡𝐑𝐔𝐋𝐄𝐒⚡":
                       await rules(
                         ᴋᴜɴᴀɪ,
                         Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -3824,7 +3824,7 @@ chat.whatsapp.com/${ʀᴇꜱᴘᴏɴꜱᴇ}`,
                     case "allmenu":
                     case "command":
                     case "commands":
-                    case "📜 𝐌𝐄𝐍𝐔 📜":
+                    case "📜𝐌𝐄𝐍𝐔📜":
                       await menu(
                         ᴋᴜɴᴀɪ,
                         Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -3849,7 +3849,7 @@ chat.whatsapp.com/${ʀᴇꜱᴘᴏɴꜱᴇ}`,
                     case "h":
                     case "how":
                     case "help":
-                    case "❗ 𝐇𝐄𝐋𝐏 ❗":
+                    case "❗𝐇𝐄𝐋𝐏❗":
                       await help(
                         ᴋᴜɴᴀɪ,
                         Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -3895,9 +3895,9 @@ Type ${prefix}help or ${prefix}menu`,
                               type: 1,
                             },
                             {
-                              buttonId: prefix + "❗ 𝐇𝐄𝐋𝐏 ❗",
+                              buttonId: prefix + "❗𝐇𝐄𝐋𝐏❗",
                               buttonText: {
-                                displayText: prefix + "❗ 𝐇𝐄𝐋𝐏 ❗",
+                                displayText: prefix + "❗𝐇𝐄𝐋𝐏❗",
                               },
                               type: 1,
                             },
