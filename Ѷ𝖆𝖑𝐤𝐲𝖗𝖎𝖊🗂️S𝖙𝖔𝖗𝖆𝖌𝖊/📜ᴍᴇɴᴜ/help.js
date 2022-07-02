@@ -178,7 +178,7 @@ buttonText: { displayText: prefix + "📜 𝐌𝐄𝐍𝐔 📜" },
 type: 1,
 },
 {
-buttonId: prefix + "⚡ 𝐑𝐔𝐋𝐄𝐒 ⚡",
+buttonId: prefix + "⚡𝐑𝐔𝐋𝐄𝐒 ⚡",
 buttonText: { displayText: prefix + "⚡ 𝐑𝐔𝐋𝐄𝐒 ⚡" },
 type: 1,
 },
