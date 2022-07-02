@@ -35,7 +35,8 @@ let { Image_Button } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌀B𝖚�
 let { Video_Button } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌀B𝖚𝖙𝖙𝖔𝖓𝖘/Video_Button");
 let { Bot_Not_Admin } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧭S𝖜𝖎𝖙𝖈𝖍/Bot_Not_Admin");
 let { Sender_Not_Admin } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧭S𝖜𝖎𝖙𝖈𝖍/Sender_Not_Admin");
-let YouTube_Regex = /(?:http(?:s|):\/\/|)(?:(?:www\.|)youtube(?:\-nocookie|)\.com\/(?:watch\?.*(?:|\&)v=|embed\/|v\/)|youtu\.be\/)([-_0-9A-Za-z]{11})/;
+let YouTube_Regex =
+/(?:http(?:s|):\/\/|)(?:(?:www\.|)youtube(?:\-nocookie|)\.com\/(?:watch\?.*(?:|\&)v=|embed\/|v\/)|youtu\.be\/)([-_0-9A-Za-z]{11})/;
 let Present_Path = require(`path`);
 let Script_Name = Present_Path.basename(__filename);
 let Final_Name = Script_Name.slice(0, -3).toLowerCase();
@@ -134,292 +135,68 @@ cpu.total
 .join(`\n\n`)}`
 : ``
 }`.trim();
-let ʀᴇꜱᴘᴏɴꜱᴇ = await ӄ𝖗𝖞ӄ𝖓𝖟.groupInviteCode("120363020792949649@g.us");
-return await Video_Button(
-ӄ𝖗𝖞ӄ𝖓𝖟,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
-A𝖗𝖌𝖘,
-"./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mp4",
-`❓𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞: ɪꜱ ᴀ ᴡʜᴀᴛꜱᴀᴘᴘ ᴍᴜʟᴛɪᴘᴜʀᴘᴏꜱᴇ ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ ᴍᴏᴅᴇʀᴀᴛɪᴏɴ, ᴀᴜᴛᴏᴍᴀᴛɪᴏɴ ᴀɴᴅ 100+ ᴄᴏᴍᴍᴀɴᴅꜱ!
-╔═════╗
-║🔑 *ᴘʀᴇꜰɪx:* ${prefix}
-║🦞 *ɢɪᴛʜᴜʙ:* github.com/kryknz/vlkyre
-║⛩️ *ɢʀᴏᴜᴘ:* chat.whatsapp.com/${ʀᴇꜱᴘᴏɴꜱᴇ}
-║⚙️ *ᴠᴇʀꜱɪᴏɴ:* ${vers.vers}
-║💻 *ᴘʟᴀᴛꜰᴏʀᴍ:* ${os.platform()}
-║🛰️ *ʟᴀᴛᴇɴᴄʏ:* ${latensi.toFixed(4)}(s)
-║☕ *ᴜᴘᴛɪᴍᴇ:* ${runtime(process.uptime())}
-║🎮 *ʀᴀᴍ:* ${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}
+let ʀᴇꜱᴘᴏɴꜱᴇ1 = await ӄ𝖗𝖞ӄ𝖓𝖟.groupInviteCode("120363020792949649@g.us");
+let ʀᴇꜱᴘᴏɴꜱᴇ2 = await ӄ𝖗𝖞ӄ𝖓𝖟.groupInviteCode("120363020792949649@g.us");
+let ʀᴇꜱᴘᴏɴꜱᴇ3 = await ӄ𝖗𝖞ӄ𝖓𝖟.groupInviteCode("120363020792949649@g.us");
+let ʀᴇꜱᴘᴏɴꜱᴇ4 = await ӄ𝖗𝖞ӄ𝖓𝖟.groupInviteCode("120363020792949649@g.us");
+let ʀᴇꜱᴘᴏɴꜱᴇ5 = await ӄ𝖗𝖞ӄ𝖓𝖟.groupInviteCode("120363020792949649@g.us");
+await ӄ𝖗𝖞ӄ𝖓𝖟
+.sendMessage(
+Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
+{
+contextInfo: { mentionedJid: [Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender] },
+video: { url: "./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mp4" },
+caption: `╔══『 𝐏𝐫𝐨𝐟𝐢𝐥𝐞𝐫® 』
+║🕊️ *ɴᴀᴍᴇ:* ${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.pushName || "ɴᴏ_ɴᴀᴍᴇ"}
+║🎭 *ᴄʜᴀᴛɪᴅ:* ${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID.split("@")[0]}
 ╚═══════╝
 
-╔══『 🐾𝐀𝐍𝐈𝐌𝐄_𝐌𝐀𝐍𝐆𝐀🐾 』
-║🐾 ${prefix}anime
-║🐾 ${prefix}manga
+
+
+❓𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞: ɪꜱ ᴀ ᴡʜᴀᴛꜱᴀᴘᴘ ᴍᴜʟᴛɪᴘᴜʀᴘᴏꜱᴇ ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ ᴍᴏᴅᴇʀᴀᴛɪᴏɴ, ᴀᴜᴛᴏᴍᴀᴛɪᴏɴ ᴀɴᴅ 100+ ᴄᴏᴍᴍᴀɴᴅꜱ!
+╔══『 🐾🎐𝘽𝙤𝙩𝙨°🎐🐾 』
+║*🍁 ᴘʀᴇꜰɪx:* ${prefix}
+║*💰 ɢᴘᴀʏ:* +918436686758
+║*❣️ ᴜᴘɪ:* krakinzkon@oksbi
+║*🐞 ɢɪᴛʜᴜʙ:* github.com/kryknz
+║*🍻 ᴠʟᴋʏʀᴇ:* github.com/kryknz/vlkyre
+║*🛰️ ᴡᴇʙꜱɪᴛᴇ:*  VlkyreAI.krakinzkon.repl.co
+║*⚙️ ᴠᴇʀꜱɪᴏɴ:* ${vers.vers}
+║*💻 ᴘʟᴀᴛꜰᴏʀᴍ:* ${os.platform()}
+║*🛰️ ʟᴀᴛᴇɴᴄʏ:* ${latensi.toFixed(4)}(s)
+║*☕ ᴜᴘᴛɪᴍᴇ:* ${runtime(process.uptime())}
+║*🎮 ʀᴀᴍ:* ${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}
 ╚═══════╝
 
-╔══『 💰𝐄𝐂𝐎𝐍𝐎𝐌𝐘_𝐆𝐀𝐌𝐄💰 』
-║💰 ${prefix}bag
-║💰 ${prefix}inv
-║💰 ${prefix}loot
-║💰 ${prefix}inventory
-║💰 ${prefix}dly
-║💰 ${prefix}daily
-║💰 ${prefix}pond
-║💰 ${prefix}fish
-║💰 ${prefix}fishesh
-║💰 ${prefix}bet
-║💰 ${prefix}gamble
-║💰 ${prefix}betting
-║💰 ${prefix}roulette
-║💰 ${prefix}hunt
-║💰 ${prefix}hunting
-║💰 ${prefix}pokehunt
-║💰 ${prefix}zoo
-║💰 ${prefix}forest
-║💰 ${prefix}animals
-║💰 ${prefix}pay
-║💰 ${prefix}loan
-║💰 ${prefix}borrow
-║💰 ${prefix}payment
-║💰 ${prefix}rob
-║💰 ${prefix}thief
-║💰 ${prefix}robbery
-║💰 ${prefix}bal
-║💰 ${prefix}gold
-║💰 ${prefix}money
-║💰 ${prefix}balance
-║💰 ${prefix}buy
-║💰 ${prefix}store
-║💰 ${prefix}shop
-║💰 ${prefix}mall
-║💰 ${prefix}shopping
-╚═══════╝
 
-╔══『 🐝𝐀𝐍𝐈𝐌𝐀𝐓𝐈𝐎𝐍🐝 』
-║🐝 ${prefix}baka
-║🐝 ${prefix}bite
-║🐝 ${prefix}blush
-║🐝 ${prefix}bonk
-║🐝 ${prefix}bored
-║🐝 ${prefix}confused
-║🐝 ${prefix}cry
-║🐝 ${prefix}cuddle
-║🐝 ${prefix}dance
-║🐝 ${prefix}goodnight
-║🐝 ${prefix}happy
-║🐝 ${prefix}hi5
-║🐝 ${prefix}highfive
-║🐝 ${prefix}hug
-║🐝 ${prefix}kick
-║🐝 ${prefix}kill
-║🐝 ${prefix}kiss
-║🐝 ${prefix}nervous
-║🐝 ${prefix}pat
-║🐝 ${prefix}poke
-║🐝 ${prefix}punch
-║🐝 ${prefix}sad
-║🐝 ${prefix}smile
-║🐝 ${prefix}stare
-║🐝 ${prefix}wave
-║🐝 ${prefix}wink
-║🐝 ${prefix}yeet
-║🐝 ${prefix}yes
-║🐝 ${prefix}zerotwo
-╚═══════╝
 
-╔══『 🏳️‍🌈𝐑𝐀𝐍𝐃𝐎𝐌🏳️‍🌈 』
-║🏳️‍🌈 ${prefix}advice
-║🏳️‍🌈 ${prefix}rank
-║🏳️‍🌈 ${prefix}fact
-║🏳️‍🌈 ${prefix}meme
-║🏳️‍🌈 ${prefix}neko
-║🏳️‍🌈 ${prefix}quote
-║🏳️‍🌈 ${prefix}reddit
-║🏳️‍🌈 ${prefix}sr
-║🏳️‍🌈 ${prefix}subreddit
-║🏳️‍🌈 ${prefix}ship
-║🏳️‍🌈 ${prefix}waifu
-║🏳️‍🌈 ${prefix}tts
-║🏳️‍🌈 ${prefix}gtts
-║🏳️‍🌈 ${prefix}text2speech
-║🏳️‍🌈 ${prefix}fun
-║🏳️‍🌈 ${prefix}joke
-║🏳️‍🌈 ${prefix}funny
-║🏳️‍🌈 ${prefix}laugh
-║🏳️‍🌈 ${prefix}dadjoke
-╚═══════╝
-
-╔══『 ⭕𝐘𝐎𝐔𝐓𝐔𝐁𝐄_𝐅𝐈𝐋𝐓𝐄𝐑⭕ 』
-║⭕ ${prefix}yt8d
-║⭕ ${prefix}ytbassboost
-║⭕ ${prefix}ytecho
-║⭕ ${prefix}ytflanger
-║⭕ ${prefix}ytnightcore
-║⭕ ${prefix}ytphaser
-║⭕ ${prefix}ytreverse
-║⭕ ${prefix}ytslow
-║⭕ ${prefix}ytspeed
-║⭕ ${prefix}ytsubboost
-║⭕ ${prefix}ytsuperslow
-║⭕ ${prefix}ytsuperspeed
-║⭕ ${prefix}ytsurround
-║⭕ ${prefix}ytvaporwave
-║⭕ ${prefix}ytvibrato
-╚═══════╝
-
-╔══『 👑𝐎𝐖𝐍𝐄𝐑_𝐒𝐔𝐃𝐎👑 』
-║☣️ ${prefix}ban
-║☣️ ${prefix}unban
-║☣️ ${prefix}reboot
-║☣️ ${prefix}join
-║☣️ ${prefix}leave
-║☣️ ${prefix}support
-║☣️ ${prefix}bcgroup
-║☣️ ${prefix}bc
-║☣️ ${prefix}sp
-║☣️ ${prefix}dev
-║☣️ ${prefix}devs
-║☣️ ${prefix}support
-║☣️ ${prefix}official
-║☣️ ${prefix}rule
-║☣️ ${prefix}rules
-║☣️ ${prefix}h
-║☣️ ${prefix}how
-║☣️ ${prefix}help
-║☣️ ${prefix}menu
-║☣️ ${prefix}allmenu
-╚═══════╝
-
-╔══『 🛍️𝐒𝐓𝐎𝐑𝐄🛍️ 』
-║🛍️ ${prefix}buy sword
-║🛍️ ${prefix}buy laptop
-║🛍️ ${prefix}buy charm
-╚═══════╝
-
-╔══『 📥𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐑📥 』
-║🎙️ ${prefix}yta
-║🎙️ ${prefix}play
-║🎙️ ${prefix}song
-║🎙️ ${prefix}sing
-║🎙️ ${prefix}ytmp3
-║🎙️ ${prefix}ytplay
-║🎙️ ${prefix}ytaudio
-║🎙️ ${prefix}ytmusic
-║🎙️ ${prefix}youtubemusic
-║🎥 ${prefix}ytv
-║🎥 ${prefix}watch
-║🎥 ${prefix}ytmp4
-║🎥 ${prefix}stream
-║🎥 ${prefix}ytvideo
-║🎥 ${prefix}youtubevideo
-║📻 ${prefix}radio
-║📻 ${prefix}randmusic
-║📻 ${prefix}randaudio
-║📻 ${prefix}randomaudio
-║📻 ${prefix}randommusic
-║📻 ${prefix}suggestaudio
-║📻 ${prefix}suggestmusic
-╚═══════╝
-
-╔══『 🏝️𝐂𝐎𝐍𝐕𝐄𝐑𝐓𝐄𝐑🏝️ 』
-║🏝️ ${prefix}carbon
-║🏝️ ${prefix}steal
-║🏝️ ${prefix}sticker
-║🏝️ ${prefix}tinyurl
-║🏝️ ${prefix}toimg
-║🏝️ ${prefix}stourl
-╚═══════╝
-
-╔══『 🌐𝐖𝐄𝐁_𝐒𝐄𝐀𝐑𝐂𝐇🌐 』
-║🌐 ${prefix}gify
-║🌐 ${prefix}gif
-║🌐 ${prefix}google
-║🌐 ${prefix}web
-║🌐 ${prefix}find
-║🌐 ${prefix}search
-║🌐 ${prefix}iguser 
-║🌐 ${prefix}image
-║🌐 ${prefix}lyrics
-║🌐 ${prefix}pinterest
-║🌐 ${prefix}pokemon
-║🌐 ${prefix}pokedex
-║🌐 ${prefix}wallpaper
-║🌐 ${prefix}yts
-║🌐 ${prefix}ytsearch
-║🌐 ${prefix}ytscrape
-║🌐${prefix}youtubescrape
-║🌐 ${prefix}youtubesearch
-╚═══════╝
-
-╔══『 🔰𝐆𝐑𝐎𝐔𝐏_𝐌𝐎𝐃🔰 』
-║🔰 ${prefix}nolink
-║🔰 ${prefix}stoplink
-║🔰 ${prefix}antilink
-║🔰 ${prefix}welcome
-║🔰 ${prefix}welcomer
-║🔰 ${prefix}setwelcome
-║🔰 ${prefix}autorole
-║🔰 ${prefix}autorank
-║🔰 ${prefix}del
-║🔰 ${prefix}demote
-║🔰 ${prefix}promote
-║🔰 ${prefix}group
-║🔰 ${prefix}remove
-║🔰 ${prefix}setdesc
-║🔰 ${prefix}setgpfp
-║🔰 ${prefix}tagall
-║🔰 ${prefix}admins
-╚═══════╝
-
-╔══『 👓𝐀𝐔𝐃𝐈𝐎_𝐅𝐈𝐋𝐓𝐄𝐑𝐒👓 』
-║👓 ${prefix}bassboost
-║👓 ${prefix}echo
-║👓 ${prefix}fast
-║👓 ${prefix}flanger
-║👓 ${prefix}nightcore
-║👓 ${prefix}phaser
-║👓 ${prefix}reverse
-║👓 ${prefix}slow
-║👓 ${prefix}speed
-║👓 ${prefix}subboost
-║👓 ${prefix}superslow
-║👓 ${prefix}superspeed
-║👓 ${prefix}surround
-║👓 ${prefix}vaporwave
-║👓 ${prefix}vibrato
-╚═══════╝
-
-╔══『 🍌𝐇𝐄𝐍𝐓𝐀𝐈🍌 』 
-║🍌 ${prefix}ass
-║🍌 ${prefix}bdsm
-║🍌 ${prefix}cum  
-║🍌 ${prefix}doujin
-║🍌 ${prefix}feet  
-║🍌 ${prefix}femdom  
-║🍌 ${prefix}foxgirl  
-║🍌 ${prefix}glasses  
-║🍌 ${prefix}hentai
-║🍌 ${prefix}maid 
-║🍌 ${prefix}masturbation
-║🍌 ${prefix}netorare  
-║🍌 ${prefix}orgy
-║🍌 ${prefix}panties
-║🍌 ${prefix}pussy
-║🍌 ${prefix}school
-║🍌 ${prefix}tentacles
-║🍌 ${prefix}thighs
-║🍌 ${prefix}uniform
-║🍌 ${prefix}yuri
-╚═══════╝
-
-╔══『 🍑𝐍𝐒𝐅𝐖🍑 』
-║🍑 ${prefix}p4k
-║🍑 ${prefix}pblowjob
-║🍑 ${prefix}pmilf
-║🍑 ${prefix}ppussy
-║🍑 ${prefix}pslut
-╚═══════╝`
-);
+🦚‍𝐓𝐲𝐩𝐞: ${prefix}menu | ${prefix}commands
+👇🏽‍𝐏𝐫𝐞𝐬𝐬 𝐁𝐞𝐥𝐨𝐰 𝐁𝐮𝐭𝐭𝐨𝐧𝐬 𝐅𝐨𝐫 𝐅𝐮𝐥𝐥 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬 𝐌𝐞𝐧𝐮👇🏽‍`,
+footer: "*⦓ ⒸѶ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 ⦔*\n▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ ◁",
+buttons: [
+{
+buttonId: prefix + "📜 𝐌𝐄𝐍𝐔 📜",
+buttonText: { displayText: prefix + "📜 𝐌𝐄𝐍𝐔 📜" },
+type: 1,
+},
+{
+buttonId: prefix + "⚡ 𝐑𝐔𝐋𝐄𝐒 ⚡",
+buttonText: { displayText: prefix + "⚡ 𝐑𝐔𝐋𝐄𝐒 ⚡" },
+type: 1,
+},
+{
+buttonId: prefix + "🦚 𝐒𝐔𝐏𝐏𝐎𝐑𝐓 🦚",
+buttonText: { displayText: prefix + "🦚 𝐒𝐔𝐏𝐏𝐎𝐑𝐓 🦚" },
+type: 1,
+},
+],
+headerType: 5,
+},
+{
+quoted: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+}
+)
+.catch((e) => console.log(e));
 };
 `|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|`;
 

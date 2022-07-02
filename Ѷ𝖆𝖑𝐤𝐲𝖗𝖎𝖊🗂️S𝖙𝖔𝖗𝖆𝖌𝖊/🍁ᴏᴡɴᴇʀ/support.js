@@ -135,18 +135,33 @@ cpu.total
 .join(`\n\n`)}`
 : ``
 }`.trim();
-let ʀᴇꜱᴘᴏɴꜱᴇ = await ӄ𝖗𝖞ӄ𝖓𝖟.groupInviteCode("120363020792949649@g.us");
+let ʀᴇꜱᴘᴏɴꜱᴇ1 = await ӄ𝖗𝖞ӄ𝖓𝖟.groupInviteCode("120363020792949649@g.us");
+let ʀᴇꜱᴘᴏɴꜱᴇ2 = await ӄ𝖗𝖞ӄ𝖓𝖟.groupInviteCode("120363020792949649@g.us");
+let ʀᴇꜱᴘᴏɴꜱᴇ3 = await ӄ𝖗𝖞ӄ𝖓𝖟.groupInviteCode("120363020792949649@g.us");
+let ʀᴇꜱᴘᴏɴꜱᴇ4 = await ӄ𝖗𝖞ӄ𝖓𝖟.groupInviteCode("120363020792949649@g.us");
+let ʀᴇꜱᴘᴏɴꜱᴇ5 = await ӄ𝖗𝖞ӄ𝖓𝖟.groupInviteCode("120363020792949649@g.us");
 return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
 A𝖗𝖌𝖘,
 "./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊_White.png",
-`*(𝐜)Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🍻*
-*🛰️We𝐛:*  VlkyreAI.krakinzkon.repl.co
-*🐞GitHub:* github.com/kryknz/vlkyre
-*𝗚roup⛩️:* chat.whatsapp.com/${ʀᴇꜱᴘᴏɴꜱᴇ}
-*🎉Prefix:* ${prefix}
-`
+`*🎋 (𝐜)VALKYRIE OFFICIAL 🎋*
+ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™
+
+╔══『 🐾🎐𝘽𝙤𝙩𝙨°🎐🐾 』
+║*🍁 Prefix* ${prefix}
+║*💰 Gpay:* +918436686758
+║*❣️ UPI:* krakinzkon@oksbi
+║*🐞 GitHub:* github.com/kryknz
+║*🍻 Vlkyre:* github.com/kryknz/vlkyre
+║*🛰️ Website:*  VlkyreAI.krakinzkon.repl.co
+╚═══════╝
+
+*🕊️Group A:* chat.whatsapp.com/K8xe9gAuBaT9WSCfITYbOl
+*🕊️Group B:* chat.whatsapp.com/KO93ybE8hIM6RvlMEKw8kZ
+*🕊️Group C:* chat.whatsapp.com/JC8KelY0cms3xgZtAu5WdE
+*🕊️Group D:* chat.whatsapp.com/LbX6FpapLCQ9NUMCUjvgbR
+*🕊️Group E:* chat.whatsapp.com/F9b0lSIRDPr1QrG9sFuIQN`
 );
 };
 `|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|`;
