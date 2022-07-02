@@ -173,18 +173,18 @@ caption: `╔══『 𝐏𝐫𝐨𝐟𝐢𝐥𝐞𝐫® 』
 footer: "*⦓ ⒸѶ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 ⦔*\n▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ ◁",
 buttons: [
 {
-buttonId: prefix + "📜 𝐌𝐄𝐍𝐔 📜",
-buttonText: { displayText: prefix + "📜 𝐌𝐄𝐍𝐔 📜" },
+buttonId: prefix + "📜𝐌𝐄𝐍𝐔📜",
+buttonText: { displayText: prefix + "📜𝐌𝐄𝐍𝐔📜" },
 type: 1,
 },
 {
-buttonId: prefix + "⚡𝐑𝐔𝐋𝐄𝐒 ⚡",
-buttonText: { displayText: prefix + "⚡ 𝐑𝐔𝐋𝐄𝐒 ⚡" },
+buttonId: prefix + "⚡𝐑𝐔𝐋𝐄𝐒⚡",
+buttonText: { displayText: prefix + "⚡𝐑𝐔𝐋𝐄𝐒⚡" },
 type: 1,
 },
 {
 buttonId: prefix + "🦚 𝐒𝐔𝐏𝐏𝐎𝐑𝐓 🦚",
-buttonText: { displayText: prefix + "🦚 𝐒𝐔𝐏𝐏𝐎𝐑𝐓 🦚" },
+buttonText: { displayText: prefix + "🦚𝐒𝐔𝐏𝐏𝐎𝐑𝐓🦚" },
 type: 1,
 },
 ],
