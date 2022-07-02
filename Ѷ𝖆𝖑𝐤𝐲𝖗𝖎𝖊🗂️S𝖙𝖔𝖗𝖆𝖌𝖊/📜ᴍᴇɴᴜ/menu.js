@@ -445,7 +445,7 @@ type: 1,
 },
 {
 buttonId: prefix + "🦚𝐒𝐔𝐏𝐏𝐎𝐑𝐓🦚",
-buttonText: { displayText: prefix + "🦚 𝐒𝐔𝐏𝐏𝐎𝐑𝐓 🦚" },
+buttonText: { displayText: prefix + "🦚𝐒𝐔𝐏𝐏𝐎𝐑𝐓🦚" },
 type: 1,
 },
 ],
