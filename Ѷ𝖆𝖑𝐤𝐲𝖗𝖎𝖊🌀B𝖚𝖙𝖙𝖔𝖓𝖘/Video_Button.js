@@ -28,13 +28,18 @@ ${𝕮𝖔𝖓𝖙𝖊𝖓𝖙}`,
 footer: "*⦓ ⒸѶ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 ⦔*\n▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ ◁",
 buttons: [
 {
-buttonId: prefix + "help",
-buttonText: { displayText: prefix + "help" },
+buttonId: prefix + "❗𝐇𝐄𝐋𝐏❗",
+buttonText: { displayText: prefix + "❗𝐇𝐄𝐋𝐏❗" },
 type: 1,
 },
 {
-buttonId: prefix + "support",
-buttonText: { displayText: prefix + "support" },
+buttonId: prefix + "🦚𝐒𝐔𝐏𝐏𝐎𝐑𝐓🦚",
+buttonText: { displayText: prefix + "🦚𝐒𝐔𝐏𝐏𝐎𝐑𝐓🦚" },
+type: 1,
+},
+{
+buttonId: prefix + "⚡𝐑𝐔𝐋𝐄𝐒⚡",
+buttonText: { displayText: prefix + "⚡𝐑𝐔𝐋𝐄𝐒⚡" },
 type: 1,
 },
 ],
