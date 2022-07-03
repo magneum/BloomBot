@@ -170,7 +170,7 @@ expFile,
 `╔◇══════════◇╗
 ┊𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞🎉𝐑𝐚𝐧𝐤𝐞𝐫
 ╚◇══════════◇╝
-
+*🎉LEVEL UP CONGRATS!🎉*
 *🍀Exp*: ${user.xp} / ${Levels.xpFor(user.level + 1)}
 *🎐Level*: ${user.level}
 *🔮️Role*: *${role}*
@@ -195,7 +195,6 @@ expFile,
 `╔◇══════════◇╗
 ┊𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞🎉𝐑𝐚𝐧𝐤𝐞𝐫
 ╚◇══════════◇╝
-
 *🎉LEVEL UP CONGRATS!🎉*
 *🍀Exp*: ${user.xp} / ${Levels.xpFor(user.level + 1)}
 *🎐Level*: ${user.level}
