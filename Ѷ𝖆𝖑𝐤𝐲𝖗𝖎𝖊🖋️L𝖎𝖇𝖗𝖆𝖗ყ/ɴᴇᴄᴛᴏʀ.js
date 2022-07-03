@@ -354,12 +354,8 @@ let Prefix = "." && "!" && "#" && "$";
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.quoted = Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.quoted ? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.quoted : Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊;
 let mime = (Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.quoted.msg || Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.quoted).mimetype || "";
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isMedia = /image|video|sticker|audio/.test(mime);
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.groupMetadata = Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup
-? await 𝖍𝖆𝖜ӄ.groupMetadata(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID)
-: "";
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.participants = Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup
-? await Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.groupMetadata.participants
-: "";
+Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.groupMetadata = Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup? await 𝖍𝖆𝖜ӄ.groupMetadata(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID): "";
+Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.participants = Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup? await Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.groupMetadata.participants: "";
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.groupAdmins = Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup? await Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.participants.filter((v) => v.admin !== null).map((v) => v.id): "";
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isBotAdmin = Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup
 ? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.groupAdmins.includes(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.botNumber)
