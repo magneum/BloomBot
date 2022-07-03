@@ -6,8 +6,8 @@
 require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/𝕷𝖆ყO𝖚𝖙");
 let Fs = require("fs");
 let ᴍꜱᴇᴄ = require("parse-ms");
-let ʀᴀɴᴅᴏᴍᴋ = ʀᴀɴᴅᴏᴍᴄ.getColor();
 let ʀᴀɴᴅᴏᴍᴄ = require("random-material-color");
+let ʀᴀɴᴅᴏᴍᴋ = ʀᴀɴᴅᴏᴍᴄ.getColor();
 let { registerFont, createCanvas, loadImage } = require("canvas");
 let usedUser = require(`../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧆𝕯𝖆𝖙𝖆𝖇𝖆𝖘𝖊/𝖀𝖘𝖊𝖗🍣𝖒𝖔𝖓𝖌𝖔/usedUser`);
 exports.N𝖊𝖊𝖉__A𝖗𝖌𝖘 = async (ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝖀𝖘𝖆𝖌𝖊) => {
