@@ -1,337 +1,210 @@
-`|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|`;
+("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
+/*
+* * * * * * * * * * |        (𝐜)𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!        * * * * * * * * * *
+*/
+("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
+let fs = require("fs");
+let { tmpdir } = require("os");
+let Crypto = require("crypto");
+let ff = require("fluent-ffmpeg");
+let webp = require("node-webpmux");
+let path = require("path");
 
-// ════════════════════════|▷   (𝐜)𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!   ◁|════════════════════════
+async function imageToWebp(media) {
+let tmpFileOut = path.join(
+tmpdir(),
+`${Crypto.randomBytes(6).readUIntLE(0, 6).toString(36)}.webp`
+);
+let tmpFileIn = path.join(
+tmpdir(),
+`${Crypto.randomBytes(6).readUIntLE(0, 6).toString(36)}.jpg`
+);
 
-`|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|`;
-const _0x4fd0c3 = _0x1e19;
-(function (_0x5b71d2, _0x23f5aa) {
-const _0x43d0b1 = _0x1e19,
-_0x22ccb3 = _0x5b71d2();
-while (!![]) {
-try {
-const _0x5a4df6 =
-(-parseInt(_0x43d0b1(0xc9)) / 0x1) * (parseInt(_0x43d0b1(0xc2)) / 0x2) +
-(-parseInt(_0x43d0b1(0xe4)) / 0x3) *
-(-parseInt(_0x43d0b1(0xee)) / 0x4) +
-(-parseInt(_0x43d0b1(0xf7)) / 0x5) *
-(-parseInt(_0x43d0b1(0xe6)) / 0x6) +
-(-parseInt(_0x43d0b1(0xd6)) / 0x7) *
-(-parseInt(_0x43d0b1(0xf9)) / 0x8) +
-parseInt(_0x43d0b1(0xda)) / 0x9 +
--parseInt(_0x43d0b1(0xf5)) / 0xa +
-(parseInt(_0x43d0b1(0xf0)) / 0xb) * (parseInt(_0x43d0b1(0xdf)) / 0xc);
-if (_0x5a4df6 === _0x23f5aa) break;
-else _0x22ccb3["push"](_0x22ccb3["shift"]());
-} catch (_0x5c0d12) {
-_0x22ccb3["push"](_0x22ccb3["shift"]());
-}
-}
-})(_0x168a, 0xe342e);
-function _0x168a() {
-const _0x36148c = [
-"libwebp",
-"data",
-".mp4",
-"fluent-ffmpeg",
-"categories",
-"readUIntLE",
-"toString",
-"toFormat",
-"184478deCjHP",
-"Image",
-"author",
-"00:00:00",
-"4516488ZnIqCu",
-"-ss",
-"path",
-"writeUIntLE",
-"scale=\x27min(320,iw)\x27:min\x27(320,ih)\x27:force_original_aspect_ratio=decrease,fps=15,\x20pad=320:320:-1:-1:color=white@0.0,\x20split\x20[a][b];\x20[a]\x20palettegen=reserve_transparent=on:transparency_color=ffffff\x20[p];\x20[b][p]\x20paletteuse",
-"12AyMtyk",
-"load",
-"addOutputOptions",
-".webp",
-"-loop",
-"3yiHsms",
-".jpg",
-"6iavyRV",
-"crypto",
-"from",
-"https://github.com/DikaArdnt/Hisoka-Morou",
-"save",
-"exports",
-"-vf",
-"default",
-"2863524JbWHkK",
-"join",
-"4414949opZlJE",
-"readFileSync",
+fs.writeFileSync(tmpFileIn, media);
+
+await new Promise((resolve, reject) => {
+ff(tmpFileIn)
+.on("error", reject)
+.on("end", () => resolve(true))
+.addOutputOptions([
 "-vcodec",
-"00:00:05",
-"end",
-"16054370iOOyav",
-"https://github.com/pratyush4932",
-"3022100heOYhp",
-"mimetype",
-"272vGZJSQ",
-"-an",
-"error",
-"webp",
-"1166458MtsphX",
-"-vsync",
-"randomBytes",
-"test",
-"unlinkSync",
-"writeFileSync",
-"utf-8",
-"1esaNLV",
-"packname",
-"length",
-"stringify",
-"concat",
-];
-_0x168a = function () {
-return _0x36148c;
-};
-return _0x168a();
-}
-let fs = require("fs"),
-{ tmpdir } = require("os"),
-Crypto = require(_0x4fd0c3(0xe7)),
-ff = require(_0x4fd0c3(0xd1)),
-webp = require("node-webpmux"),
-path = require(_0x4fd0c3(0xdc));
-async function imageToWebp(_0x34e35d) {
-const _0x3ef12b = _0x4fd0c3;
-let _0x4f39e3 = path[_0x3ef12b(0xef)](
-tmpdir(),
-Crypto[_0x3ef12b(0xc4)](0x6)
-[_0x3ef12b(0xd3)](0x0, 0x6)
-[_0x3ef12b(0xd4)](0x24) + _0x3ef12b(0xe2)
-),
-_0x57dc97 = path[_0x3ef12b(0xef)](
-tmpdir(),
-Crypto["randomBytes"](0x6)
-[_0x3ef12b(0xd3)](0x0, 0x6)
-[_0x3ef12b(0xd4)](0x24) + _0x3ef12b(0xe5)
-);
-fs[_0x3ef12b(0xc7)](_0x57dc97, _0x34e35d),
-await new Promise((_0x5b80ce, _0x29d1f9) => {
-const _0x45fdad = _0x3ef12b;
-ff(_0x57dc97)
-["on"]("error", _0x29d1f9)
-["on"]("end", () => _0x5b80ce(!![]))
-[_0x45fdad(0xe1)]([
-_0x45fdad(0xf2),
-_0x45fdad(0xce),
-_0x45fdad(0xec),
-_0x45fdad(0xde),
-])
-[_0x45fdad(0xd5)](_0x45fdad(0xc1))
-[_0x45fdad(0xea)](_0x4f39e3);
-});
-let _0x180e84 = fs["readFileSync"](_0x4f39e3);
-return fs["unlinkSync"](_0x4f39e3), fs["unlinkSync"](_0x57dc97), _0x180e84;
-}
-async function videoToWebp(_0x10bafc) {
-const _0x19b767 = _0x4fd0c3;
-let _0x2b57bd = path[_0x19b767(0xef)](
-tmpdir(),
-Crypto[_0x19b767(0xc4)](0x6)
-[_0x19b767(0xd3)](0x0, 0x6)
-[_0x19b767(0xd4)](0x24) + _0x19b767(0xe2)
-),
-_0x1ad8b8 = path[_0x19b767(0xef)](
-tmpdir(),
-Crypto[_0x19b767(0xc4)](0x6)
-["readUIntLE"](0x0, 0x6)
-[_0x19b767(0xd4)](0x24) + _0x19b767(0xd0)
-);
-fs[_0x19b767(0xc7)](_0x1ad8b8, _0x10bafc),
-await new Promise((_0x9978bd, _0xa834c0) => {
-const _0xe775ba = _0x19b767;
-ff(_0x1ad8b8)
-["on"](_0xe775ba(0xc0), _0xa834c0)
-["on"](_0xe775ba(0xf4), () => _0x9978bd(!![]))
-[_0xe775ba(0xe1)]([
-_0xe775ba(0xf2),
-_0xe775ba(0xce),
+"libwebp",
 "-vf",
-_0xe775ba(0xde),
-_0xe775ba(0xe3),
+"scale='min(320,iw)':min'(320,ih)':force_original_aspect_ratio=decrease,fps=15, pad=320:320:-1:-1:color=white@0.0, split [a][b]; [a] palettegen=reserve_transparent=on:transparency_color=ffffff [p]; [b][p] paletteuse",
+])
+.toFormat("webp")
+.save(tmpFileOut);
+});
+
+let buff = fs.readFileSync(tmpFileOut);
+fs.unlinkSync(tmpFileOut);
+fs.unlinkSync(tmpFileIn);
+return buff;
+}
+
+async function videoToWebp(media) {
+let tmpFileOut = path.join(
+tmpdir(),
+`${Crypto.randomBytes(6).readUIntLE(0, 6).toString(36)}.webp`
+);
+let tmpFileIn = path.join(
+tmpdir(),
+`${Crypto.randomBytes(6).readUIntLE(0, 6).toString(36)}.mp4`
+);
+
+fs.writeFileSync(tmpFileIn, media);
+
+await new Promise((resolve, reject) => {
+ff(tmpFileIn)
+.on("error", reject)
+.on("end", () => resolve(true))
+.addOutputOptions([
+"-vcodec",
+"libwebp",
+"-vf",
+"scale='min(320,iw)':min'(320,ih)':force_original_aspect_ratio=decrease,fps=15, pad=320:320:-1:-1:color=white@0.0, split [a][b]; [a] palettegen=reserve_transparent=on:transparency_color=ffffff [p]; [b][p] paletteuse",
+"-loop",
 "0",
-_0xe775ba(0xdb),
-_0xe775ba(0xd9),
+"-ss",
+"00:00:00",
 "-t",
-_0xe775ba(0xf3),
+"00:00:05",
 "-preset",
-_0xe775ba(0xed),
-_0xe775ba(0xfa),
-_0xe775ba(0xc3),
+"default",
+"-an",
+"-vsync",
 "0",
 ])
-[_0xe775ba(0xd5)](_0xe775ba(0xc1))
-[_0xe775ba(0xea)](_0x2b57bd);
+.toFormat("webp")
+.save(tmpFileOut);
 });
-let _0x1a2dfc = fs[_0x19b767(0xf1)](_0x2b57bd);
-return (
-fs[_0x19b767(0xc6)](_0x2b57bd), fs[_0x19b767(0xc6)](_0x1ad8b8), _0x1a2dfc
-);
+
+let buff = fs.readFileSync(tmpFileOut);
+fs.unlinkSync(tmpFileOut);
+fs.unlinkSync(tmpFileIn);
+return buff;
 }
-async function writeExifImg(_0x34febb, _0xa1b2db) {
-const _0x7a971a = _0x4fd0c3;
-let _0x3fe687 = await imageToWebp(_0x34febb),
-_0x2fa3e4 = path[_0x7a971a(0xef)](
+
+async function writeExifImg(media, metadata) {
+let wMedia = await imageToWebp(media);
+let tmpFileIn = path.join(
 tmpdir(),
-Crypto["randomBytes"](0x6)
-[_0x7a971a(0xd3)](0x0, 0x6)
-[_0x7a971a(0xd4)](0x24) + _0x7a971a(0xe2)
-),
-_0x234135 = path[_0x7a971a(0xef)](
+`${Crypto.randomBytes(6).readUIntLE(0, 6).toString(36)}.webp`
+);
+let tmpFileOut = path.join(
 tmpdir(),
-Crypto[_0x7a971a(0xc4)](0x6)
-[_0x7a971a(0xd3)](0x0, 0x6)
-[_0x7a971a(0xd4)](0x24) + _0x7a971a(0xe2)
+`${Crypto.randomBytes(6).readUIntLE(0, 6).toString(36)}.webp`
 );
-fs[_0x7a971a(0xc7)](_0x2fa3e4, _0x3fe687);
-if (_0xa1b2db[_0x7a971a(0xca)] || _0xa1b2db["author"]) {
-let _0xe9c8bb = new webp[_0x7a971a(0xd7)](),
-_0x22a7aa = {
-"sticker-pack-id": _0x7a971a(0xf6),
-"sticker-pack-name": _0xa1b2db[_0x7a971a(0xca)],
-"sticker-pack-publisher": _0xa1b2db[_0x7a971a(0xd8)],
-emojis: _0xa1b2db[_0x7a971a(0xd2)] ? _0xa1b2db["categories"] : [""],
-},
-_0x5013cd = Buffer[_0x7a971a(0xe8)]([
-0x49, 0x49, 0x2a, 0x0, 0x8, 0x0, 0x0, 0x0, 0x1, 0x0, 0x41, 0x57, 0x7,
-0x0, 0x0, 0x0, 0x0, 0x0, 0x16, 0x0, 0x0, 0x0,
-]),
-_0x39ca2d = Buffer[_0x7a971a(0xe8)](
-JSON["stringify"](_0x22a7aa),
-_0x7a971a(0xc8)
-),
-_0x5d7907 = Buffer[_0x7a971a(0xcd)]([_0x5013cd, _0x39ca2d]);
-return (
-_0x5d7907[_0x7a971a(0xdd)](_0x39ca2d[_0x7a971a(0xcb)], 0xe, 0x4),
-await _0xe9c8bb[_0x7a971a(0xe0)](_0x2fa3e4),
-fs[_0x7a971a(0xc6)](_0x2fa3e4),
-(_0xe9c8bb["exif"] = _0x5d7907),
-await _0xe9c8bb["save"](_0x234135),
-_0x234135
-);
-}
-}
-async function writeExifVid(_0x51910e, _0x47063e) {
-const _0x5e8a73 = _0x4fd0c3;
-let _0x231bae = await videoToWebp(_0x51910e),
-_0x4375f3 = path[_0x5e8a73(0xef)](
-tmpdir(),
-Crypto["randomBytes"](0x6)
-[_0x5e8a73(0xd3)](0x0, 0x6)
-[_0x5e8a73(0xd4)](0x24) + _0x5e8a73(0xe2)
-),
-_0x3b0e9b = path[_0x5e8a73(0xef)](
-tmpdir(),
-Crypto[_0x5e8a73(0xc4)](0x6)
-[_0x5e8a73(0xd3)](0x0, 0x6)
-["toString"](0x24) + _0x5e8a73(0xe2)
-);
-fs["writeFileSync"](_0x4375f3, _0x231bae);
-if (_0x47063e["packname"] || _0x47063e[_0x5e8a73(0xd8)]) {
-let _0x17708c = new webp[_0x5e8a73(0xd7)](),
-_0x5e72b9 = {
-"sticker-pack-id": _0x5e8a73(0xe9),
-"sticker-pack-name": _0x47063e["packname"],
-"sticker-pack-publisher": _0x47063e[_0x5e8a73(0xd8)],
-emojis: _0x47063e[_0x5e8a73(0xd2)] ? _0x47063e[_0x5e8a73(0xd2)] : [""],
-},
-_0x19850f = Buffer[_0x5e8a73(0xe8)]([
-0x49, 0x49, 0x2a, 0x0, 0x8, 0x0, 0x0, 0x0, 0x1, 0x0, 0x41, 0x57, 0x7,
-0x0, 0x0, 0x0, 0x0, 0x0, 0x16, 0x0, 0x0, 0x0,
-]),
-_0x3cb190 = Buffer[_0x5e8a73(0xe8)](
-JSON[_0x5e8a73(0xcc)](_0x5e72b9),
-_0x5e8a73(0xc8)
-),
-_0x2ec13d = Buffer[_0x5e8a73(0xcd)]([_0x19850f, _0x3cb190]);
-return (
-_0x2ec13d[_0x5e8a73(0xdd)](_0x3cb190[_0x5e8a73(0xcb)], 0xe, 0x4),
-await _0x17708c[_0x5e8a73(0xe0)](_0x4375f3),
-fs[_0x5e8a73(0xc6)](_0x4375f3),
-(_0x17708c["exif"] = _0x2ec13d),
-await _0x17708c[_0x5e8a73(0xea)](_0x3b0e9b),
-_0x3b0e9b
-);
-}
-}
-async function writeExif(_0x37aee7, _0x3fe368) {
-const _0x2ddaa8 = _0x4fd0c3;
-let _0x325984 = /webp/[_0x2ddaa8(0xc5)](_0x37aee7[_0x2ddaa8(0xf8)])
-? _0x37aee7[_0x2ddaa8(0xcf)]
-: /image/[_0x2ddaa8(0xc5)](_0x37aee7[_0x2ddaa8(0xf8)])
-? await imageToWebp(_0x37aee7[_0x2ddaa8(0xcf)])
-: /video/["test"](_0x37aee7[_0x2ddaa8(0xf8)])
-? await videoToWebp(_0x37aee7[_0x2ddaa8(0xcf)])
-: "",
-_0x281ce5 = path[_0x2ddaa8(0xef)](
-tmpdir(),
-Crypto[_0x2ddaa8(0xc4)](0x6)
-[_0x2ddaa8(0xd3)](0x0, 0x6)
-[_0x2ddaa8(0xd4)](0x24) + _0x2ddaa8(0xe2)
-),
-_0xba8000 = path[_0x2ddaa8(0xef)](
-tmpdir(),
-Crypto[_0x2ddaa8(0xc4)](0x6)
-[_0x2ddaa8(0xd3)](0x0, 0x6)
-[_0x2ddaa8(0xd4)](0x24) + ".webp"
-);
-fs["writeFileSync"](_0x281ce5, _0x325984);
-if (_0x3fe368["packname"] || _0x3fe368["author"]) {
-let _0x1021ba = new webp[_0x2ddaa8(0xd7)](),
-_0x11c9e9 = {
-"sticker-pack-id": _0x2ddaa8(0xe9),
-"sticker-pack-name": _0x3fe368[_0x2ddaa8(0xca)],
-"sticker-pack-publisher": _0x3fe368[_0x2ddaa8(0xd8)],
-emojis: _0x3fe368[_0x2ddaa8(0xd2)] ? _0x3fe368[_0x2ddaa8(0xd2)] : [""],
-},
-_0x1f2405 = Buffer[_0x2ddaa8(0xe8)]([
-0x49, 0x49, 0x2a, 0x0, 0x8, 0x0, 0x0, 0x0, 0x1, 0x0, 0x41, 0x57, 0x7,
-0x0, 0x0, 0x0, 0x0, 0x0, 0x16, 0x0, 0x0, 0x0,
-]),
-_0xb569bc = Buffer[_0x2ddaa8(0xe8)](
-JSON["stringify"](_0x11c9e9),
-_0x2ddaa8(0xc8)
-),
-_0xa6af4e = Buffer[_0x2ddaa8(0xcd)]([_0x1f2405, _0xb569bc]);
-return (
-_0xa6af4e[_0x2ddaa8(0xdd)](_0xb569bc[_0x2ddaa8(0xcb)], 0xe, 0x4),
-await _0x1021ba[_0x2ddaa8(0xe0)](_0x281ce5),
-fs["unlinkSync"](_0x281ce5),
-(_0x1021ba["exif"] = _0xa6af4e),
-await _0x1021ba[_0x2ddaa8(0xea)](_0xba8000),
-_0xba8000
-);
-}
-}
-function _0x1e19(_0x116837, _0x503f0f) {
-const _0x168abe = _0x168a();
-return (
-(_0x1e19 = function (_0x1e194d, _0x514eba) {
-_0x1e194d = _0x1e194d - 0xc0;
-let _0x2a68cf = _0x168abe[_0x1e194d];
-return _0x2a68cf;
-}),
-_0x1e19(_0x116837, _0x503f0f)
-);
-}
-module[_0x4fd0c3(0xeb)] = {
-imageToWebp: imageToWebp,
-videoToWebp: videoToWebp,
-writeExifImg: writeExifImg,
-writeExifVid: writeExifVid,
-writeExif: writeExif,
+fs.writeFileSync(tmpFileIn, wMedia);
+
+if (metadata.packname || metadata.author) {
+let img = new webp.Image();
+let json = {
+"sticker-pack-id": `https://github.com/pratyush4932`,
+"sticker-pack-name": metadata.packname,
+"sticker-pack-publisher": metadata.author,
+emojis: metadata.categories ? metadata.categories : [""],
 };
-`|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|`;
+let exifAttr = Buffer.from([
+0x49, 0x49, 0x2a, 0x00, 0x08, 0x00, 0x00, 0x00, 0x01, 0x00, 0x41, 0x57,
+0x07, 0x00, 0x00, 0x00, 0x00, 0x00, 0x16, 0x00, 0x00, 0x00,
+]);
+let jsonBuff = Buffer.from(JSON.stringify(json), "utf-8");
+let exif = Buffer.concat([exifAttr, jsonBuff]);
+exif.writeUIntLE(jsonBuff.length, 14, 4);
+await img.load(tmpFileIn);
+fs.unlinkSync(tmpFileIn);
+img.exif = exif;
+await img.save(tmpFileOut);
+return tmpFileOut;
+}
+}
 
-// ════════════════════════|▷   (𝐜)𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!   ◁|════════════════════════
+async function writeExifVid(media, metadata) {
+let wMedia = await videoToWebp(media);
+let tmpFileIn = path.join(
+tmpdir(),
+`${Crypto.randomBytes(6).readUIntLE(0, 6).toString(36)}.webp`
+);
+let tmpFileOut = path.join(
+tmpdir(),
+`${Crypto.randomBytes(6).readUIntLE(0, 6).toString(36)}.webp`
+);
+fs.writeFileSync(tmpFileIn, wMedia);
 
-`|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|`;
+if (metadata.packname || metadata.author) {
+let img = new webp.Image();
+let json = {
+"sticker-pack-id": `https://github.com/DikaArdnt/Hisoka-Morou`,
+"sticker-pack-name": metadata.packname,
+"sticker-pack-publisher": metadata.author,
+emojis: metadata.categories ? metadata.categories : [""],
+};
+let exifAttr = Buffer.from([
+0x49, 0x49, 0x2a, 0x00, 0x08, 0x00, 0x00, 0x00, 0x01, 0x00, 0x41, 0x57,
+0x07, 0x00, 0x00, 0x00, 0x00, 0x00, 0x16, 0x00, 0x00, 0x00,
+]);
+let jsonBuff = Buffer.from(JSON.stringify(json), "utf-8");
+let exif = Buffer.concat([exifAttr, jsonBuff]);
+exif.writeUIntLE(jsonBuff.length, 14, 4);
+await img.load(tmpFileIn);
+fs.unlinkSync(tmpFileIn);
+img.exif = exif;
+await img.save(tmpFileOut);
+return tmpFileOut;
+}
+}
+
+async function writeExif(media, metadata) {
+let wMedia = /webp/.test(media.mimetype)
+? media.data
+: /image/.test(media.mimetype)
+? await imageToWebp(media.data)
+: /video/.test(media.mimetype)
+? await videoToWebp(media.data)
+: "";
+let tmpFileIn = path.join(
+tmpdir(),
+`${Crypto.randomBytes(6).readUIntLE(0, 6).toString(36)}.webp`
+);
+let tmpFileOut = path.join(
+tmpdir(),
+`${Crypto.randomBytes(6).readUIntLE(0, 6).toString(36)}.webp`
+);
+fs.writeFileSync(tmpFileIn, wMedia);
+
+if (metadata.packname || metadata.author) {
+let img = new webp.Image();
+let json = {
+"sticker-pack-id": `https://github.com/DikaArdnt/Hisoka-Morou`,
+"sticker-pack-name": metadata.packname,
+"sticker-pack-publisher": metadata.author,
+emojis: metadata.categories ? metadata.categories : [""],
+};
+let exifAttr = Buffer.from([
+0x49, 0x49, 0x2a, 0x00, 0x08, 0x00, 0x00, 0x00, 0x01, 0x00, 0x41, 0x57,
+0x07, 0x00, 0x00, 0x00, 0x00, 0x00, 0x16, 0x00, 0x00, 0x00,
+]);
+let jsonBuff = Buffer.from(JSON.stringify(json), "utf-8");
+let exif = Buffer.concat([exifAttr, jsonBuff]);
+exif.writeUIntLE(jsonBuff.length, 14, 4);
+await img.load(tmpFileIn);
+fs.unlinkSync(tmpFileIn);
+img.exif = exif;
+await img.save(tmpFileOut);
+return tmpFileOut;
+}
+}
+
+module.exports = {
+imageToWebp,
+videoToWebp,
+writeExifImg,
+writeExifVid,
+writeExif,
+};
+("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
+/*
+* * * * * * * * * * |        (𝐜)𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!        * * * * * * * * * *
+*/
+("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
