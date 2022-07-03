@@ -72,7 +72,7 @@ process.exit(0);
 }
 await sequelize.sync();
 const { state, saveState } = useSingleFileAuthState(
-`./❗Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊❗/𝐀𝐩𝐢®.json`
+`./❗Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊❗/𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞𝐀𝐩𝐢®.json`
 );
 let 𝖍𝖆𝖜ӄ = ᴋᴜɴᴋᴏɴɴᴇᴄᴛ({
 logger: pino({ level: `error` }),
