@@ -74,7 +74,7 @@ let teks = `Google Search From : ${F𝖚𝖑𝖑_A𝖗𝖌𝖘}
 for (let g of res) {
 teks += `*📒Title* : ${g.title}`;
 teks += `*🍃Description* : ${g.snippet}`;
-teks += `*🌐Link* : ${g.link}`;
+teks += `*🌐Link* : ${g.link}\n\n`;
 }
 return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
