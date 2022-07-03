@@ -24,7 +24,7 @@ let ᴄʟᴏᴄᴋ = ᴍꜱᴇᴄ(ꜱᴇʀᴄ.PermaTime - (Date.now() - ꜱᴇʀ
 ʟᴀꜱᴛ_ᴜꜱᴇᴅ = ᴄʟᴏᴄᴋ.seconds
 }});
 ("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
-await ӄ𝖗𝖞ӄ𝖓𝖟.sendPresenceUpdate("composing", Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID);
+// await ӄ𝖗𝖞ӄ𝖓𝖟.sendPresenceUpdate("composing", Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID);
 let ʀᴇᴀᴄᴛ;
 if (Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isReply) {
 var Receiver =
