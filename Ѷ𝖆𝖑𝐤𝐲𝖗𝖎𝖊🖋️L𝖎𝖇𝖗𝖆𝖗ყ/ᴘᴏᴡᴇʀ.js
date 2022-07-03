@@ -60,9 +60,6 @@ await ꜱᴇʀᴄ.save().catch((𝕰𝖗𝖗𝖔𝖗) => Caught(𝖍𝖆𝖜ӄ, 
 let ᴍꜱᴇᴄ = require("parse-ms");
 let ᴄʟᴏᴄᴋ = ᴍꜱᴇᴄ(ꜱᴇʀᴄ.PermaTime - (Date.now() - ꜱᴇʀᴄ.LastTime));
 console.log(
-ᴋᴏʟᴏʀ.black(ᴋᴏʟᴏʀ.bgWhite("🔥𝖀𝖘𝖊𝖉: "), ᴋᴏʟᴏʀ.bgGreen(ꜱᴇʀᴄ))
-);
-console.log(
 ᴋᴏʟᴏʀ.black(
 ᴋᴏʟᴏʀ.bgWhite("🕰️𝐂𝐥𝐨𝐜𝐤: "),
 ᴋᴏʟᴏʀ.bgGreen(ᴄʟᴏᴄᴋ.seconds)
