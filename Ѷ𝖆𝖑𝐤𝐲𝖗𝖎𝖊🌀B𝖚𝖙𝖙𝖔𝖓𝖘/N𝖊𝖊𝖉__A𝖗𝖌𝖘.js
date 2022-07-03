@@ -11,16 +11,16 @@ let ʀᴀɴᴅᴏᴍᴄ = require("random-material-color");
 let { registerFont, createCanvas, loadImage } = require("canvas");
 let usedUser = require(`../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧆𝕯𝖆𝖙𝖆𝖇𝖆𝖘𝖊/𝖀𝖘𝖊𝖗🍣𝖒𝖔𝖓𝖌𝖔/usedUser`);
 exports.N𝖊𝖊𝖉__A𝖗𝖌𝖘 = async (ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝖀𝖘𝖆𝖌𝖊) => {
-registerFont("./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🀄𝕮𝖆𝖓𝖛𝖆𝖘/Heart_Of_Everything/Heart_Of_Everything.ttf", { family: "Heart_Of_Everything" });
-registerFont("./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🀄𝕮𝖆𝖓𝖛𝖆𝖘/Housttely_Signature/Housttely_Signature.ttf", { family: "Housttely_Signature" });
-registerFont("./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🀄𝕮𝖆𝖓𝖛𝖆𝖘/Fall_is_Coming/Fall_is_Coming.ttf", { family: "Fall_is_Coming" });
-registerFont("./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🀄𝕮𝖆𝖓𝖛𝖆𝖘/Slouchy_Brush/Slouchy_Brush.ttf", { family: "Slouchy_Brush" });
-registerFont("./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🀄𝕮𝖆𝖓𝖛𝖆𝖘/Kashmir_Rosy/Kashmir_Rosy.otf", { family: "Kashmir_Rosy" });
-registerFont("./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🀄𝕮𝖆𝖓𝖛𝖆𝖘/Japanese/Japanese.ttf", { family: "Japanese" });
-registerFont("./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🀄𝕮𝖆𝖓𝖛𝖆𝖘/Honeybee/Honeybee.ttf", { family: "Honeybee" });
-registerFont("./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🀄𝕮𝖆𝖓𝖛𝖆𝖘/Angeles/Angeles.ttf", { family: "Angeles" });
-registerFont("./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🀄𝕮𝖆𝖓𝖛𝖆𝖘/Shalma/Shalma.otf", { family: "Shalma" });
-registerFont("./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🀄𝕮𝖆𝖓𝖛𝖆𝖘/Aquire/Aquire.otf", { family: "Aquire" });
+registerFont("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🀄𝕮𝖆𝖓𝖛𝖆𝖘/Heart_Of_Everything/Heart_Of_Everything.ttf", { family: "Heart_Of_Everything" });
+registerFont("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🀄𝕮𝖆𝖓𝖛𝖆𝖘/Housttely_Signature/Housttely_Signature.ttf", { family: "Housttely_Signature" });
+registerFont("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🀄𝕮𝖆𝖓𝖛𝖆𝖘/Fall_is_Coming/Fall_is_Coming.ttf", { family: "Fall_is_Coming" });
+registerFont("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🀄𝕮𝖆𝖓𝖛𝖆𝖘/Slouchy_Brush/Slouchy_Brush.ttf", { family: "Slouchy_Brush" });
+registerFont("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🀄𝕮𝖆𝖓𝖛𝖆𝖘/Kashmir_Rosy/Kashmir_Rosy.otf", { family: "Kashmir_Rosy" });
+registerFont("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🀄𝕮𝖆𝖓𝖛𝖆𝖘/Japanese/Japanese.ttf", { family: "Japanese" });
+registerFont("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🀄𝕮𝖆𝖓𝖛𝖆𝖘/Honeybee/Honeybee.ttf", { family: "Honeybee" });
+registerFont("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🀄𝕮𝖆𝖓𝖛𝖆𝖘/Angeles/Angeles.ttf", { family: "Angeles" });
+registerFont("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🀄𝕮𝖆𝖓𝖛𝖆𝖘/Shalma/Shalma.otf", { family: "Shalma" });
+registerFont("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🀄𝕮𝖆𝖓𝖛𝖆𝖘/Aquire/Aquire.otf", { family: "Aquire" });
 let W = 1280;
 let H = 720;
 let ᴄᴀɴᴠᴀꜱ = createCanvas(W, H);
@@ -43,7 +43,7 @@ loadImage("./Src/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🀄𝕮𝖆𝖓𝖛𝖆𝖘.png"
 𝖈𝖔𝖓𝖙𝖊𝖝𝖙.drawImage(Cmg, 140, 515, 200, 200);
 𝖈𝖔𝖓𝖙𝖊𝖝𝖙.drawImage(Cmg, 980, 515, 200, 200);
 let CmgB = ᴄᴀɴᴠᴀꜱ.toBuffer("image/png");
-await Fs.writeFileSync("./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🀄𝕮𝖆𝖓𝖛𝖆𝖘/Valkyrie_com.png", CmgB);
+await Fs.writeFileSync("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🀄𝕮𝖆𝖓𝖛𝖆𝖘/Valkyrie_com.png", CmgB);
 ("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
 let ʙᴏᴛ_ᴜꜱᴇᴅ;
 let ʟᴀꜱᴛ_ᴜꜱᴇᴅ;
@@ -68,7 +68,7 @@ await ӄ𝖗𝖞ӄ𝖓𝖟
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
 {
 contextInfo: { mentionedJid: [Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender] },
-image: { url: "./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🀄𝕮𝖆𝖓𝖛𝖆𝖘/Valkyrie_com.png" },
+image: { url: "../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🀄𝕮𝖆𝖓𝖛𝖆𝖘/Valkyrie_com.png" },
 caption: `🕊️ *ɴᴀᴍᴇ:* ${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.pushName || "ɴᴏ_ɴᴀᴍᴇ"}
 
 ${𝖀𝖘𝖆𝖌𝖊}`,
@@ -85,7 +85,7 @@ headerType: 4,
 {
 quoted: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
 }
-).then(Fs.unlinkSync("./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🀄𝕮𝖆𝖓𝖛𝖆𝖘/Valkyrie_com.png")).catch((e) => console.log(e));
+).then(Fs.unlinkSync("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🀄𝕮𝖆𝖓𝖛𝖆𝖘/Valkyrie_com.png")).catch((e) => console.log(e));
 let ʀᴇᴀᴄᴛionMessage = {
 ʀᴇᴀᴄᴛ: {
 text: `⚡`,
