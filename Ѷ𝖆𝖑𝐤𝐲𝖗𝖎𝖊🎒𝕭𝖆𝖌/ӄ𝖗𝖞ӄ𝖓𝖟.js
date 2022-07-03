@@ -6,7 +6,7 @@
 require(`../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/𝕷𝖆ყO𝖚𝖙`);
 require(`../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/Ѷ𝖆𝖑.js`);
 let {
-default: ᴋᴜɴᴀɪConnect,
+default: ᴋᴜɴᴋᴏɴɴᴇᴄᴛ,
 generateForwardMessageContent,
 generateWAMessageFromContent,
 downloadContentFromMessage,
@@ -62,7 +62,7 @@ process.exit(0);
 }
 await sequelize.sync();
 const { state, saveState } = useSingleFileAuthState(`./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊❗𝕭𝖏𝖘𝖔𝖓/𝐀𝐩𝐢®.json`)
-let ӄ𝖗𝖞ӄ𝖓𝖟 = ᴋᴜɴᴀɪConnect({
+let ӄ𝖗𝖞ӄ𝖓𝖟 = ᴋᴜɴᴋᴏɴɴᴇᴄᴛ({
 logger: pino({ level: `silent` }),
 printQRInTerminal: true,
 defaultQueryTimeoutMs: undefined,
