@@ -6,7 +6,7 @@
 require(`../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/𝕷𝖆ყO𝖚𝖙`);
 require(`../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/Ѷ𝖆𝖑.js`);
 if (process.env.Devalkyrie == "true") {
-console.log("Default");
+console.log("__Default");
 let {
 default: ᴋᴜɴᴋᴏɴɴᴇᴄᴛ,
 generateForwardMessageContent,
