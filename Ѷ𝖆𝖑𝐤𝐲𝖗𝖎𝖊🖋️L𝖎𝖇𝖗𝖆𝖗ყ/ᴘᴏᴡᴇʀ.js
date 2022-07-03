@@ -665,9 +665,7 @@ return await ɴᴇᴡᴜꜱᴇʀᴄ.save().catch((𝕰𝖗𝖗𝖔𝖗) => Caugh
 let ᴄʟᴏᴄᴋ = ᴍꜱᴇᴄ(ꜱᴇʀᴄ.PermaTime - (Date.now() - ꜱᴇʀᴄ.LastTime));
 if (!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.fromMe && ꜱᴇʀᴄ.PermaTime - (Date.now() - ꜱᴇʀᴄ.LastTime) > 0) {
 return Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.reply(
-"*❌𝕰𝖗𝖗𝖔𝖗:* " +
-(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.pushName || "No_Name") +
-"Need To wait for " +
+"*❌𝕰𝖗𝖗𝖔𝖗:* You Need To wait for " +
 ᴄʟᴏᴄᴋ.seconds +
 "secs!"
 );
