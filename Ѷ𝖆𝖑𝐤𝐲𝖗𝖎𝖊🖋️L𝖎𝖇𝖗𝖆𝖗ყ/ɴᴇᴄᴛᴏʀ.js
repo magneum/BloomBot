@@ -3,7 +3,7 @@
 * * * * * * * * * * |        (𝐜)𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!        * * * * * * * * * *
 */
 ("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
-require(`./𝕷𝖆ყO𝖚𝖙`);
+require("./𝕷𝖆ყO𝖚𝖙");
 let fs = require("fs");
 let util = require("util");
 let axios = require("axios");
@@ -34,7 +34,7 @@ return moment.duration(now - moment(timestamp * 1000)).asSeconds();
 };
 
 exports.getRandom = (ext) => {
-return `${Math.floor(Math.random() * 10000)}${ext}`;
+return "${Math.floor(Math.random() * 10000)}${ext}";
 };
 ("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
 exports.getBuffer = async (url, options) => {
@@ -133,7 +133,7 @@ exports.formatp = sizeFormatter({
 std: "JEDEC", //'SI' = default | 'IEC' | 'JEDEC'
 decimalPlaces: 2,
 keepTrailingZeroes: false,
-render: (literal, symbol) => `${literal} ${symbol}B`,
+render: (literal, symbol) => "${literal} ${symbol}B",
 });
 ("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
 exports.jsonformat = (string) => {
@@ -194,15 +194,15 @@ return [...text.matchAll(/@([0-9]{5,16}|0)/g)].map(
 };
 ("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
 exports.GIFBufferToVideoBuffer = async (image) => {
-let filename = `${Math.random().toString(36)}`;
-await fs.writeFileSync(`./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${filename}.gif`, image);
+let filename = "${Math.random().toString(36)}";
+await fs.writeFileSync("./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${filename}.gif", image);
 child_process.exec(
-`ffmpeg -i ./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${filename}.gif -movflags faststart -pix_fmt yuv420p -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" ./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${filename}.mp4`
+"ffmpeg -i ./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${filename}.gif -movflags faststart -pix_fmt yuv420p -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" ./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${filename}.mp4"
 );
-var buffer5 = await fs.readFileSync(`./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${filename}.mp4`);
+var buffer5 = await fs.readFileSync("./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${filename}.mp4");
 Promise.all([
-unlink(`./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${filename}.mp4`),
-unlink(`./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${filename}.gif`),
+unlink("./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${filename}.mp4"),
+unlink("./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${filename}.gif"),
 ]);
 return buffer5;
 };
@@ -339,21 +339,21 @@ options = {}
 ) => 𝖍𝖆𝖜ӄ.copyNForward(jid, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, forceForward, options);
 ("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body =
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype === `conversation`
+Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype === "conversation"
 ? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.conversation
-: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype == `imageMessage`
+: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype == "imageMessage"
 ? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.imageMessage.caption
-: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype == `videoMessage`
+: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype == "videoMessage"
 ? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.videoMessage.caption
-: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype == `extendedTextMessage`
+: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype == "extendedTextMessage"
 ? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.extendedTextMessage.text
-: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype == `buttonsResponseMessage`
+: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype == "buttonsResponseMessage"
 ? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.buttonsResponseMessage.selectedButtonId
-: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype == `listResponseMessage`
+: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype == "listResponseMessage"
 ? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.listResponseMessage.singleSelectReply.selectedRowId
-: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype == `templateButtonReplyMessage`
+: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype == "templateButtonReplyMessage"
 ? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.templateButtonReplyMessage.selectedId
-: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype === `messageContextInfo`
+: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype === "messageContextInfo"
 ? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.buttonsResponseMessage?.selectedButtonId ||
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.listResponseMessage?.singleSelectReply.selectedRowId ||
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.text
@@ -366,10 +366,10 @@ prefix.includes(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body != "" && Ѷ𝖆𝖑𝐤𝐲�
 ? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body.slice(1).trim().split(" ")[0].toLowerCase()
 : "";
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.A𝖗𝖌𝖘 = Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body.trim().split(/ +/).slice(1);
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.pushName = Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.pushName || `No Name`;
+Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.pushName = Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.pushName || "No Name";
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.botNumber = await 𝖍𝖆𝖜ӄ.decodeJid(𝖍𝖆𝖜ӄ.user.id);
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isCreator = [Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.botNumber, ...global.owner]
-.map((v) => v.replace(/[^0-9]/g, "") + `@s.whatsapp.net`)
+.map((v) => v.replace(/[^0-9]/g, "") + "@s.whatsapp.net")
 .includes(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender);
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.fromMe = Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender == Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.botNumber ? true : false;
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.F𝖚𝖑𝖑_A𝖗𝖌𝖘 = Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.A𝖗𝖌𝖘.join(" ");
@@ -408,7 +408,7 @@ process.env.MOD === undefined
 ? "918436686758,917430922909"
 : process.env.MOD;
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF = MODString.includes(
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender.substring(0, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender.indexOf(`@`))
+Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender.substring(0, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender.indexOf("@"))
 );
 return Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊;
 };
@@ -416,7 +416,7 @@ return Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊;
 let file = require.resolve(__filename);
 fs.watchFile(file, () => {
 fs.unwatchFile(file);
-console.log(chalk.redBright(`Update ${__filename}`));
+console.log(chalk.redBright("Update ${__filename}"));
 delete require.cache[file];
 require(file);
 });
