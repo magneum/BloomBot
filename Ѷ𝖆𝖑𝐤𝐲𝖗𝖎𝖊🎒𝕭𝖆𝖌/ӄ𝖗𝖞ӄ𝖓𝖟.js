@@ -123,7 +123,7 @@ let list = [];
 for (let i of kon) {
 list.push({
 displayName: await ӄ𝖗𝖞ӄ𝖓𝖟.getName(i + "@s.whatsapp.net"),
-vcard: `BEGIN:VCARD
+vcard: "BEGIN:VCARD
 VERSION:3.0
 N:${await ӄ𝖗𝖞ӄ𝖓𝖟.getName(i + "@s.whatsapp.net")}
 FN:${await ӄ𝖗𝖞ӄ𝖓𝖟.getName(i + "@s.whatsapp.net")}
@@ -135,7 +135,7 @@ item3.URL:https://instagram.com/riki_4932
 item3.X-ABLabel:Instagram
 item4.ADR:;;India;;;;
 item4.X-ABLabel:Region
-END:VCARD`,
+END:VCARD",
 });
 }
 ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(
