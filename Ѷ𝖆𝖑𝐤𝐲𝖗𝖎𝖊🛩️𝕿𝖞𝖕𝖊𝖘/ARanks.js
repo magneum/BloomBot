@@ -190,7 +190,7 @@ await Image_Button(
 A𝖗𝖌𝖘,
 expFile,
 `╔◇══════════◇╗
-┊𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞🎉𝐁𝐚𝐧𝐤
+┊𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞🎉𝐑𝐚𝐧𝐤𝐞𝐫
 ╚◇══════════◇╝
 
 *LEVEL UP CONGRATS! 🎉🎉*
