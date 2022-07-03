@@ -197,9 +197,7 @@ console.log(
 ᴋᴏʟᴏʀ.bgGreen("Newly created!")
 )
 );
-return await ɴᴇᴡᴜꜱᴇʀᴄ
-.save()
-.catch((𝕰𝖗𝖗𝖔𝖗) => Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝕰𝖗𝖗𝖔𝖗));
+return await ɴᴇᴡᴜꜱᴇʀᴄ.save().catch((𝕰𝖗𝖗𝖔𝖗) => Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝕰𝖗𝖗𝖔𝖗));
 } else {
 ꜱᴇʀᴄ.Total = ꜱᴇʀᴄ.Total + Ѷ𝖎𝖔𝖓𝖒𝖔𝖓𝖌𝖔;
 ꜱᴇʀᴄ.LastTime = Date.now();
@@ -413,9 +411,7 @@ ID: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
 goneRadio: 0,
 goneRadiotimeout: 0,
 });
-return await newRadio
-.save()
-.catch((𝕰𝖗𝖗𝖔𝖗) => Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝕰𝖗𝖗𝖔𝖗));
+return await newRadio.save().catch((𝕰𝖗𝖗𝖔𝖗) => Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝕰𝖗𝖗𝖔𝖗));
 } else {
 if (uR.goneRadiotimeout - (Date.now() - uR.goneRadio) > 0) {
 return;
@@ -663,14 +659,11 @@ Total: 0,
 LastTime: 0,
 PermaTime: 15000,
 });
-return await ɴᴇᴡᴜꜱᴇʀᴄ
-.save()
-.catch((𝕰𝖗𝖗𝖔𝖗) => Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝕰𝖗𝖗𝖔𝖗));
+return await ɴᴇᴡᴜꜱᴇʀᴄ.save().catch((𝕰𝖗𝖗𝖔𝖗) => Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝕰𝖗𝖗𝖔𝖗));
 } else {
-if (
-!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.fromMe &&
-ꜱᴇʀᴄ.PermaTime - (Date.now() - ꜱᴇʀᴄ.LastTime) > 0
-) {
+let ᴍꜱᴇᴄ = require("parse-ms");
+let ᴄʟᴏᴄᴋ = ᴍꜱᴇᴄ(ꜱᴇʀᴄ.PermaTime - (Date.now() - ꜱᴇʀᴄ.LastTime));
+if (!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.fromMe && ꜱᴇʀᴄ.PermaTime - (Date.now() - ꜱᴇʀᴄ.LastTime) > 0) {
 return Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.reply(
 "*❌𝕰𝖗𝖗𝖔𝖗:* " +
 (Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.pushName || "No_Name") +
@@ -680,13 +673,7 @@ return Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.reply(
 );
 } else {
 ꜱᴇʀᴄ.LastTime = Date.now();
-await ꜱᴇʀᴄ
-.save()
-.catch((𝕰𝖗𝖗𝖔𝖗) => Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝕰𝖗𝖗𝖔𝖗));
-let ᴍꜱᴇᴄ = require("parse-ms");
-let ᴄʟᴏᴄᴋ = ᴍꜱᴇᴄ(
-ꜱᴇʀᴄ.PermaTime - (Date.now() - ꜱᴇʀᴄ.LastTime)
-);
+await ꜱᴇʀᴄ.save().catch((𝕰𝖗𝖗𝖔𝖗) => Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝕰𝖗𝖗𝖔𝖗));
 console.log(
 ᴋᴏʟᴏʀ.black(
 ᴋᴏʟᴏʀ.bgWhite("🕰️𝐂𝐥𝐨𝐜𝐤: "),
