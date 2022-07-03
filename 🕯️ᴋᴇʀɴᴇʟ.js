@@ -27,7 +27,6 @@ for (let ꜰᴏʟᴅᴇʀ of ꜰᴏʟᴅᴇʀꜱ) {
 ʀɪᴍʀᴀꜰ(ꜰᴏʟᴅᴇʀ, async function (ERROR) {
 if (ERROR) return console.log(ᴅᴇꜱɢ.bgRed("-rm"), ERROR);
 console.log(ᴅᴇꜱɢ.bgGreen("-rm"), ꜰᴏʟᴅᴇʀ);
-await 𝕲𝖊𝖙𝕮𝖔𝖓𝖙𝖆𝖎𝖓𝖊𝖗();
 });
 }
 }
@@ -69,7 +68,8 @@ async function ᴄᴏᴍᴍɪᴛ() {
 await ɢɪᴛ.fetch();
 let ɴᴇᴡᴄᴏᴍᴍɪᴛꜱ = await ɢɪᴛ.log(["🐍Ş𝖎𝖕𝖍𝖔𝖓®..origin/🐍Ş𝖎𝖕𝖍𝖔𝖓®"]);
 if (ɴᴇᴡᴄᴏᴍᴍɪᴛꜱ.total != 0) {
-await 𝕮𝖑𝖊𝖆𝖓𝕮𝖔𝖓𝖙𝖆𝖎𝖓𝖊𝖗();
+// await 𝕮𝖑𝖊𝖆𝖓𝕮𝖔𝖓𝖙𝖆𝖎𝖓𝖊𝖗();
+await 𝕲𝖊𝖙𝕮𝖔𝖓𝖙𝖆𝖎𝖓𝖊𝖗();
 }
 // console.log(ᴅᴇꜱɢ.bgYellow(new Date()));
 // await 𝕻𝖚𝖘𝖍𝕮𝖔𝖓𝖙𝖆𝖎𝖓𝖊𝖗();
