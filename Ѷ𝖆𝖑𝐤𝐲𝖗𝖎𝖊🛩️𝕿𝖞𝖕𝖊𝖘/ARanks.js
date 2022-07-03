@@ -161,7 +161,7 @@ fishtimeout: 1800000,
 workdone: 0,
 worktimeout: 900000,
 });
-await newUser.save().catch((Èrrðr) => ꜰᴜᴄᴋ.catch(Èrrðr, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, KryChat));
+await newUser.save()
 await Image_Button(
 𝖍𝖆𝖜ӄ,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
