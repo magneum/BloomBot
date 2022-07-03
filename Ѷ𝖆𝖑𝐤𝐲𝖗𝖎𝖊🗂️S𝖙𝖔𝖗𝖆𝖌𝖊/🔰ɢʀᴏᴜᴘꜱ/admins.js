@@ -75,9 +75,9 @@ if (F𝖚𝖑𝖑_A𝖗𝖌𝖘) {
 ╚═══════╝
 
 
-📌*Message:* ${F𝖚𝖑𝖑_A𝖗𝖌𝖘}
 *💫Pinged by:*  ${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.pushName || "ɴᴏ_ɴᴀᴍᴇ"}
-*🕛Time:*  ${moment.tz("Asia/Kolkata").format("DD/MM HH:mm:ss")}`;
+*🕛Time:*  ${moment.tz("Asia/Kolkata").format("DD/MM HH:mm:ss")}
+*📌Message:* ${F𝖚𝖑𝖑_A𝖗𝖌𝖘}`;
 } else {
 𝕮𝖔𝖓𝖙𝖊𝖓𝖙 = `╔══『 𝐏𝐫𝐨𝐟𝐢𝐥𝐞𝐫® 』
 ║🕊️ *ɴᴀᴍᴇ:* ${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.pushName || "ɴᴏ_ɴᴀᴍᴇ"}
@@ -85,9 +85,9 @@ if (F𝖚𝖑𝖑_A𝖗𝖌𝖘) {
 ╚═══════╝
 
 
-📌*Message:* Attention Every Admin/Mods of This Group!
 *💫Pinged by:*  ${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.pushName || "ɴᴏ_ɴᴀᴍᴇ"}
-*🕛Time:*  ${moment.tz("Asia/Kolkata").format("DD/MM HH:mm:ss")}`;
+*🕛Time:*  ${moment.tz("Asia/Kolkata").format("DD/MM HH:mm:ss")}
+*📌Message:* Attention Every Admin/Mods of This Group!`;
 }
 return await ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
