@@ -9,6 +9,7 @@ let fetch = require("node-fetch");
 let Levels = require("discord-xp");
 let canvacord = require("canvacord");
 let randomMC = require("random-material-color");
+let Economy = require(`../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧆𝕯𝖆𝖙𝖆𝖇𝖆𝖘𝖊/🍃𝖒𝖔𝖓𝖌𝖔/economy`);
 let { Image_Button } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌀B𝖚𝖙𝖙𝖔𝖓𝖘/Image_Button");
 let color = randomMC.getColor();
 Levels.setURL(MONGOOSE);
@@ -118,6 +119,24 @@ let rank = new canvacord.Rank()
 rank.build().then(async (data) => {
 fs.writeFile(expFile, data, async (error) => {
 if (error) return Caught(𝖍𝖆𝖜ӄ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, error);
+await Economy.findOne(
+{
+ID: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender,
+},
+async (error, userEco) => {
+if (error) return Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(Èrrðr))
+if (!userEco) {
+let newUser = new Economy({
+ID: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender,
+money: 0,
+daily: 0,
+timeout: 86400000,
+fishdone: 0,
+fishtimeout: 1800000,
+workdone: 0,
+worktimeout: 900000,
+});
+await newUser.save().catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, KryChat));
 await Image_Button(
 𝖍𝖆𝖜ӄ,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -126,9 +145,36 @@ expFile,
 `*LEVEL UP CONGRATS! 🎉🎉*
 *🍀Exp*: ${user.xp} / ${Levels.xpFor(user.level + 1)}
 *🎐Level*: ${user.level}
-*🔮️Role*: *${role}*`
+*🔮️Role*: *${role}*
+
+
+╔◇══════════◇╗
+┊𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞💵𝐁𝐚𝐧𝐤
+╚◇══════════◇╝
+💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: Just Opened Your Account!`
 );
 return await fs.unlinkSync(expFile);
+}
+`|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
+await Image_Button(
+𝖍𝖆𝖜ӄ,
+Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+A𝖗𝖌𝖘,
+expFile,
+`*LEVEL UP CONGRATS! 🎉🎉*
+*🍀Exp*: ${user.xp} / ${Levels.xpFor(user.level + 1)}
+*🎐Level*: ${user.level}
+*🔮️Role*: *${role}*
+
+
+╔◇══════════◇╗
+┊𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞💵𝐁𝐚𝐧𝐤
+╚◇══════════◇╝
+💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: ${userEco.money}`
+);
+return await fs.unlinkSync(expFile);
+}
+);
 });
 });
 }
