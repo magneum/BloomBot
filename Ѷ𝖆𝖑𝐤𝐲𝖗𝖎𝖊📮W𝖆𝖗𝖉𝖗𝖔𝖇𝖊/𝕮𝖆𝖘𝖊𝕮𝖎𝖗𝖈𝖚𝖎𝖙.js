@@ -3306,7 +3306,7 @@ case "dev":
 case "devs":
 case "support":
 case "official":
-case "🦚𝐒𝐔𝐏𝐏𝐎𝐑𝐓🦚":
+case "🦚SUPPORT🦚":
 await support(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
