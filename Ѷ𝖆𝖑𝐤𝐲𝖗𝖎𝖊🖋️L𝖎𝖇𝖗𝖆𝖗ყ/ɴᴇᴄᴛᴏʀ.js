@@ -358,7 +358,7 @@ options = {}
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.listResponseMessage?.singleSelectReply.selectedRowId ||
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.text
 : "";
-
+let Prefix = ""
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isCommand = Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body.startsWith(Prefix);
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isCmd =
 Prefix.includes(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body != "" && Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body.slice(0, 1)) &&
