@@ -5,12 +5,12 @@
 `|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|`;
 require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/𝕷𝖆ყO𝖚𝖙");
 let {
-isUrl,
-fetchJson,
-getBuffer,
-jsonformat,
-GIFBufferToVideoBuffer,
-getRandom,
+  isUrl,
+  fetchJson,
+  getBuffer,
+  jsonformat,
+  GIFBufferToVideoBuffer,
+  getRandom,
 } = require(`../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/ɴᴇᴄᴛᴏʀ`);
 let fs = require(`fs`);
 let util = require(`util`);
@@ -38,30 +38,30 @@ let Final_Name = Script_Name.slice(0, -3).toLowerCase();
 let { Caught } = require("../../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌀B𝖚𝖙𝖙𝖔𝖓𝖘/Caught");
 `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
 exports.store = async (
-ӄ𝖗𝖞ӄ𝖓𝖟,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
-A𝖗𝖌𝖘,
-pushName,
-fromMe,
-F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-quoted,
-isMedia,
-isGroup,
-groupAdmins,
-isBotAdmin,
-isSenderAdmin,
-isSenderTUF,
-commandName,
-body,
-mentionByTag,
-mentionByReply
+  ӄ𝖗𝖞ӄ𝖓𝖟,
+  Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+  A𝖗𝖌𝖘,
+  pushName,
+  fromMe,
+  F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+  quoted,
+  isMedia,
+  isGroup,
+  groupAdmins,
+  isBotAdmin,
+  isSenderAdmin,
+  isSenderTUF,
+  commandName,
+  body,
+  mentionByTag,
+  mentionByReply
 ) => {
-return await Image_Button(
-ӄ𝖗𝖞ӄ𝖓𝖟,
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
-A𝖗𝖌𝖘,
-"./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊__Shop.png",
-`╔◇══════════◇╗
+  return await Image_Button(
+    ӄ𝖗𝖞ӄ𝖓𝖟,
+    Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
+    A𝖗𝖌𝖘,
+    "./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊__Shop.png",
+    `╔◇══════════◇╗
 ┊ 𝐌𝐞𝐦𝐛𝐞𝐫🛰️𝐒𝐭𝐨𝐫𝐞
 ╚◇══════════◇╝
 
@@ -70,7 +70,7 @@ A𝖗𝖌𝖘,
 ║💻 *laptop:* _4000gold/robbery_
 ║🔮 *charm:* _6000gold/robbery_
 ╚═══════╝`
-);
+  );
 };
 `|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|`;
 
