@@ -360,12 +360,8 @@ options = {}
 : "";
 let Prefix = "." && "!" && "#" && "$";
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isCommand = Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body.startsWith(Prefix);
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isCmd =
-Prefix.includes(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body != "" && Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body.slice(0, 1)) &&
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body.slice(1) != "";
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName = Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isCmd
-? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body.slice(1).trim().split(" ")[0].toLowerCase()
-: "";
+Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isCmd =Prefix.includes(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body != "" && Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body.slice(0, 1)) &&Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body.slice(1) != "";
+Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName = Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isCmd? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body.slice(1).trim().split(" ")[0].toLowerCase(): "";
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.A𝖗𝖌𝖘 = Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body.trim().split(/ +/).slice(1);
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.pushName = Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.pushName || "No Name";
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.botNumber = await 𝖍𝖆𝖜ӄ.decodeJid(𝖍𝖆𝖜ӄ.user.id);
