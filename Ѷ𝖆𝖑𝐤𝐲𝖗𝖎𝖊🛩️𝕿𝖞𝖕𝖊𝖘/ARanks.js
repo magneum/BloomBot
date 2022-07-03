@@ -189,7 +189,11 @@ await Image_Button(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
 A𝖗𝖌𝖘,
 expFile,
-`*LEVEL UP CONGRATS! 🎉🎉*
+`╔◇══════════◇╗
+┊𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞💵𝐁𝐚𝐧𝐤
+╚◇══════════◇╝
+
+*LEVEL UP CONGRATS! 🎉🎉*
 *🍀Exp*: ${user.xp} / ${Levels.xpFor(user.level + 1)}
 *🎐Level*: ${user.level}
 *🔮️Role*: *${role}*
