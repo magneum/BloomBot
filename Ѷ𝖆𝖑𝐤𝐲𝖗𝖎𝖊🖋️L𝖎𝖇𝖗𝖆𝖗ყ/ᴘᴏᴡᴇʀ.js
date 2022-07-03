@@ -663,7 +663,7 @@ PermaTime: 15000,
 return await ɴᴇᴡᴜꜱᴇʀᴄ.save().catch((𝕰𝖗𝖗𝖔𝖗) => Caught(ᴋᴜɴᴀɪ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝕰𝖗𝖗𝖔𝖗));
 } else {
 let ᴄʟᴏᴄᴋ = ᴍꜱᴇᴄ(ꜱᴇʀᴄ.PermaTime - (Date.now() - ꜱᴇʀᴄ.LastTime));
-if (!Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.fromMe && ꜱᴇʀᴄ.PermaTime - (Date.now() - ꜱᴇʀᴄ.LastTime) > 0) {
+if (ꜱᴇʀᴄ.PermaTime - (Date.now() - ꜱᴇʀᴄ.LastTime) > 0) {
 return Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.reply(
 "*❌𝕰𝖗𝖗𝖔𝖗:* You Need To wait for " +
 ᴄʟᴏᴄᴋ.seconds +
