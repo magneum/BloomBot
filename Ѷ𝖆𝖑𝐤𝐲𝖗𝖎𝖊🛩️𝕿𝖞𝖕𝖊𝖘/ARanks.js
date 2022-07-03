@@ -83,6 +83,7 @@ var role = "Epic I";
 var Amnt = 20;
 } else if (levelRole <= 36) {
 var role = "Legend V";
+var Amnt = 20;
 } else if (levelRole <= 38) {
 var role = "Legend IV";
 } else if (levelRole <= 40) {
