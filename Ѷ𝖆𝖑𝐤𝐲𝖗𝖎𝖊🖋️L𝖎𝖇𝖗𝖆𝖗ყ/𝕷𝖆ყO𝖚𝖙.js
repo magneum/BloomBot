@@ -21,7 +21,7 @@ return log;
 };
 process.env.DATABASE_URL =
 process.env.DATABASE_URL === undefined
-? "./❗Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊❗/"
+? "./❗Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊❗/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.db"
 : process.env.DATABASE_URL;
 let gg =
 process.env.MODS === undefined
@@ -41,10 +41,10 @@ global.owner = gg.split(",");
 global.MONGOOSE = process.env.MongoDb;
 global.DATABASE_URL =
 process.env.DATABASE_URL === undefined
-? "./❗Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊❗/"
+? "./❗Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊❗/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.db"
 : process.env.DATABASE_URL;
 global.DATABASE =
-process.env.DATABASE_URL === "./❗Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊❗/"
+process.env.DATABASE_URL === "./❗Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊❗/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.db"
 ? new sequelize.Sequelize({
 dialect: "sqlite",
 storage: process.env.DATABASE_URL,
