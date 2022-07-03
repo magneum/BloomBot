@@ -117,14 +117,14 @@ let rank = new canvacord.Rank()
 .setUsername("Ranker!")
 .setDiscriminator(աɦօֆɛ);
 rank.build().then(async (data) => {
-fs.writeFile(expFile, data, async (error) => {
-if (error) return Caught(𝖍𝖆𝖜ӄ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, error);
+fs.writeFile(expFile, data, async (Èrrðr) => {
+if (Èrrðr) return Caught(𝖍𝖆𝖜ӄ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, Èrrðr);
 await Economy.findOne(
 {
 ID: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender,
 },
-async (error, userEco) => {
-if (error) return console.log(Èrrðr)
+async (Èrrðr, userEco) => {
+if (Èrrðr) return console.log(Èrrðr)
 if (!userEco) {
 let newUser = new Economy({
 ID: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender,
@@ -136,7 +136,7 @@ fishtimeout: 1800000,
 workdone: 0,
 worktimeout: 900000,
 });
-await newUser.save().catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, KryChat));
+await newUser.save().catch((Èrrðr) => ꜰᴜᴄᴋ.catch(Èrrðr, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, KryChat));
 await Image_Button(
 𝖍𝖆𝖜ӄ,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
