@@ -194,7 +194,7 @@ return [...text.matchAll(/@([0-9]{5,16}|0)/g)].map(
 };
 ("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
 exports.GIFBufferToVideoBuffer = async (image) => {
-let filename = "${Math.random().toString(36)}";
+let filename = `${Math.random().toString(36)}`;
 await fs.writeFileSync("./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${filename}.gif", image);
 child_process.exec(
 `ffmpeg -i ./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${filename}.gif -movflags faststart -pix_fmt yuv420p -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" ./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${filename}.mp4`
