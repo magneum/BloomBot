@@ -485,12 +485,7 @@ footer: "*⦓ ⒸѶ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 ⦔*\nᴘᴏᴡᴇʀᴇᴅ ʙʏ 
 buttons: [
 {
 buttonId: prefix + "❗HELP❗",
-buttonText: { displayText: prefix + "help" },
-type: 1,
-},
-{
-buttonId: prefix + "support",
-buttonText: { displayText: prefix + "support" },
+buttonText: { displayText: prefix + "❗HELP❗" },
 type: 1,
 },
 ],
