@@ -439,8 +439,8 @@ caption: `╔══『 𝐏𝐫𝐨𝐟𝐢𝐥𝐞𝐫® 』
 footer: "*⦓ ⒸѶ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 ⦔*\n▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ ◁",
 buttons: [
 {
-buttonId: prefix + "❗𝐇𝐄𝐋𝐏❗",
-buttonText: { displayText: prefix + "❗𝐇𝐄𝐋𝐏❗" },
+buttonId: prefix + "❗HELP❗",
+buttonText: { displayText: prefix + "❗HELP❗" },
 type: 1,
 },
 {
