@@ -135,7 +135,7 @@ item3.URL:https://instagram.com/riki_4932
 item3.X-ABLabel:Instagram
 item4.ADR:;;India;;;;
 item4.X-ABLabel:Region
-END:VCARD",
+END:VCARD`,
 });
 }
 ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(
