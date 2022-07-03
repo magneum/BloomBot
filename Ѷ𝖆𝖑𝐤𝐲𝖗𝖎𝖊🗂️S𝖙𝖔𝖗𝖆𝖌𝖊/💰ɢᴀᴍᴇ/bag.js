@@ -72,7 +72,8 @@ charm: 0,
 CurrentRobberyTime: 0,
 PermanentRobberyTime: 900000,
 });
-await newUser.save();
+await newUser.save()
+.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, Èrrðr));
 
 return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
