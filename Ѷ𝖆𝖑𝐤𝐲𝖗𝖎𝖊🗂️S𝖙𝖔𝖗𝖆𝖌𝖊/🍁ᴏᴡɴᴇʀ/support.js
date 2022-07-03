@@ -149,12 +149,17 @@ A𝖗𝖌𝖘,
 ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™
 
 ╔══『 🐾🎐𝘽𝙤𝙩𝙨°🎐🐾 』
-║*🍁 Prefix* ${prefix}
-║*💰 Gpay:* +918436686758
-║*❣️ UPI:* krakinzkon@oksbi
-║*🐞 GitHub:* github.com/kryknz
-║*🍻 Vlkyre:* github.com/kryknz/vlkyre
-║*🛰️ Website:*  VlkyreAI.krakinzkon.repl.co
+║🍁 *ᴘʀᴇꜰɪx:* ${prefix}
+║💰 *ɢᴘᴀʏ:* +918436686758
+║❣️ *ᴜᴘɪ:* krakinzkon@oksbi
+║🐞 *ɢɪᴛʜᴜʙ:* github.com/kryknz
+║🍻 *ᴠʟᴋʏʀᴇ:* github.com/kryknz/vlkyre
+║🛰️ *ᴡᴇʙꜱɪᴛᴇ:*  VlkyreAI.krakinzkon.repl.co
+║⚙️ *ᴠᴇʀꜱɪᴏɴ:* ${vers.vers}
+║💻 *ᴘʟᴀᴛꜰᴏʀᴍ:* ${os.platform()}
+║🛰️ *ʟᴀᴛᴇɴᴄʏ:* ${latensi.toFixed(4)}(s)
+║☕ *ᴜᴘᴛɪᴍᴇ:* ${runtime(process.uptime())}
+║🎮 *ʀᴀᴍ:* ${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}
 ╚═══════╝
 
 *🕊️Group A:* chat.whatsapp.com/K8xe9gAuBaT9WSCfITYbOl
