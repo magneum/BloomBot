@@ -182,7 +182,7 @@ return await fs.unlinkSync(expFile);
 }
 `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
 userEco.money = +Amnt;
-userEco.save()
+userEco.save().catch((Èrrðr) => ꜰᴜᴄᴋ.catch(Èrrðr, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, KryChat));
 await Image_Button(
 𝖍𝖆𝖜ӄ,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
