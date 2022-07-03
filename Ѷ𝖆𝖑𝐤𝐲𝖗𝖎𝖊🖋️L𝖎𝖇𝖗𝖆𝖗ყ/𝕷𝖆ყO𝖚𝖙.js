@@ -23,11 +23,10 @@ process.env.DATABASE_URL =
 process.env.DATABASE_URL === undefined
 ? "./Ѷ𝖆𝖑.db"
 : process.env.DATABASE_URL;
-
-let gg = process.env.MODS;
-if (!gg) {
-gg = "917430922909";
-}
+let gg =
+process.env.MODS === undefined
+? "917430922909,918436686758"
+: process.env.MODS;
 global.VlkyreYT = process.env.VlkyreYT;
 global.HEROKU = process.env.HEROKU;
 global.HEROKU_API_KEY =
@@ -57,7 +56,7 @@ protocol: "postgres",
 logging: Log("false"),
 dialectOptions: { ssl: { require: true, rejectUnauthorized: false } },
 });
-global.prefix = process.env.PREFIX || "=";
+global.prefix = process.env.PREFIX || ".";
 global.port = process.env.PORT || 8080;
 global.packname = "Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊";
 global.author = "Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊";
