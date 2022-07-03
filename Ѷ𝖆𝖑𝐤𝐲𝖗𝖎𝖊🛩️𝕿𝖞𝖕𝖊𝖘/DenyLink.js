@@ -6,7 +6,7 @@
 require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/𝕷𝖆ყO𝖚𝖙");
 exports.DenyLink = async (
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
-ӄ𝖗𝖞ӄ𝖓𝖟,
+𝖍𝖆𝖜ӄ,
 Caught,
 Image_Button,
 A𝖗𝖌𝖘,
@@ -18,16 +18,16 @@ await LinkList.findOne(
 serverID: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
 },
 async (error, server) => {
-if (error) return Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, e);
+if (error) return Caught(𝖍𝖆𝖜ӄ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, e);
 if (!server) return;
-let FetchCurrentGroupLink = await ӄ𝖗𝖞ӄ𝖓𝖟.groupInviteCode(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID);
+let FetchCurrentGroupLink = await 𝖍𝖆𝖜ӄ.groupInviteCode(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID);
 let GroupLinkRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i;
 let isGroupLink = GroupLinkRegex.exec(Figure);
 let PresentGroupLink = new RegExp(`https://chat.whatsapp.com/${FetchCurrentGroupLink}`,"i");
 let isCurrentGroupLink = PresentGroupLink.test(Figure);
 if (isGroupLink && !isCurrentGroupLink) {
 await Image_Button(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+𝖍𝖆𝖜ӄ,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
 A𝖗𝖌𝖘,
 "./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊_Orange.png",
@@ -47,7 +47,7 @@ A𝖗𝖌𝖘,
 🐾 Telegram Link
 🐾 Whatspp Invite Link`
 );
-return await ӄ𝖗𝖞ӄ𝖓𝖟.groupParticipantsUpdate(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, [Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender],"remove").catch((e) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, e));
+return await 𝖍𝖆𝖜ӄ.groupParticipantsUpdate(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, [Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender],"remove").catch((e) => Caught(𝖍𝖆𝖜ӄ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, e));
 } else if (
 Figure.includes("https://t.me/") &&
 Figure.includes("discord.gg") &&
@@ -57,7 +57,7 @@ Figure.includes("wa.me/") &&
 Figure.includes("www.")
 ) {
 await Image_Button(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+𝖍𝖆𝖜ӄ,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
 A𝖗𝖌𝖘,
 "./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊_Orange.png",
@@ -77,7 +77,7 @@ A𝖗𝖌𝖘,
 🐾 Telegram Link
 🐾 Whatspp Invite Link`
 );
-return await ӄ𝖗𝖞ӄ𝖓𝖟.groupParticipantsUpdate(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, [Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender],"remove").catch((e) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, e));
+return await 𝖍𝖆𝖜ӄ.groupParticipantsUpdate(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, [Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender],"remove").catch((e) => Caught(𝖍𝖆𝖜ӄ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, e));
 } else {
 }
 }
