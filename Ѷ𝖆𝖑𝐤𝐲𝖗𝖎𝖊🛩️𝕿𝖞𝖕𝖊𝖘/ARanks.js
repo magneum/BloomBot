@@ -86,16 +86,22 @@ var role = "Legend V";
 var Amnt = 20;
 } else if (levelRole <= 38) {
 var role = "Legend IV";
+var Amnt = 20;
 } else if (levelRole <= 40) {
 var role = "Legend III";
+var Amnt = 20;
 } else if (levelRole <= 42) {
 var role = "Legend II";
+var Amnt = 20;
 } else if (levelRole <= 44) {
 var role = "Legend I";
+var Amnt = 20;
 } else if (levelRole <= 46) {
 var role = "Mythic";
+var Amnt = 20;
 } else if (levelRole <= 50) {
 var role = "Mythic Glory";
+var Amnt = 20;
 }
 ("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
 let expFile = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Date.now()}${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id}.png`;
