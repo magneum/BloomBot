@@ -181,7 +181,6 @@ let path = require("path");
 let { QuickDB } = require("quick.db");
 let DB = new QuickDB({ filePath: path.join(__dirname, "src/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sqlite")});
 await DB.set("User", { difficulty: "Hard" });
-await DB.add("User.Used", 0);
 await DB.add("User.Used", VjHDlEOgvWPpRBs9FRGgJcKpDimTqf);
 let C = await DB.get("User.Used");
 console.log(ᴋᴏʟᴏʀ.black(ᴋᴏʟᴏʀ.bgWhite("🔥𝖀𝖘𝖊𝖉: "), ᴋᴏʟᴏʀ.bgGreen(C)));
