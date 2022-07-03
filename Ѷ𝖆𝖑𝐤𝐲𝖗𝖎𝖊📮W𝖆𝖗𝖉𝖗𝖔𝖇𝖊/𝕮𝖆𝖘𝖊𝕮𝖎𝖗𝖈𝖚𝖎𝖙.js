@@ -3331,7 +3331,7 @@ break;
 case "rule":
 case "rules":
 case "rules":
-case "⚡𝐑𝐔𝐋𝐄𝐒⚡":
+case "⚡RULES⚡":
 await rules(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
