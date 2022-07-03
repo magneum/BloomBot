@@ -32,6 +32,7 @@ const levelRole = user.level;
 var role = "Warrior";
 if (levelRole <= 2) {
 var role = "Elite III";
+var A
 } else if (levelRole <= 4) {
 var role = "Elite II";
 } else if (levelRole <= 6) {
