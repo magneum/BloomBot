@@ -338,21 +338,7 @@ forceForward = false,
 options = {}
 ) => 𝖍𝖆𝖜ӄ.copyNForward(jid, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, forceForward, options);
 ("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body =
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype === "conversation"
-? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.conversation
-: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype == "imageMessage"
-? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.imageMessage.caption
-: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype == "videoMessage"
-? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.videoMessage.caption
-: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype == "extendedTextMessage"
-? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.extendedTextMessage.text
-: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype == "buttonsResponseMessage"
-? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.buttonsResponseMessage.selectedButtonId
-: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype == "listResponseMessage"
-? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.listResponseMessage.singleSelectReply.selectedRowId
-: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype == "templateButtonReplyMessage"
-? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.templateButtonReplyMessage.selectedId: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype === "messageContextInfo"? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.buttonsResponseMessage?.selectedButtonId ||Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.listResponseMessage?.singleSelectReply.selectedRowId ||Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.text: "";
+Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body =Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype === "conversation"? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.conversation: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype == "imageMessage"? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.imageMessage.caption: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype == "videoMessage"? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.videoMessage.caption: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype == "extendedTextMessage"? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.extendedTextMessage.text: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype == "buttonsResponseMessage"? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.buttonsResponseMessage.selectedButtonId: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype == "listResponseMessage"? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.listResponseMessage.singleSelectReply.selectedRowId: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype == "templateButtonReplyMessage"? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.templateButtonReplyMessage.selectedId: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype === "messageContextInfo"? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.buttonsResponseMessage?.selectedButtonId ||Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.listResponseMessage?.singleSelectReply.selectedRowId ||Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.text: "";
 let Prefix = "." && "!" && "#" && "$";
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isCommand = Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body.startsWith(Prefix);
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isCmd =Prefix.includes(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body != "" && Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body.slice(0, 1)) &&Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body.slice(1) != "";
