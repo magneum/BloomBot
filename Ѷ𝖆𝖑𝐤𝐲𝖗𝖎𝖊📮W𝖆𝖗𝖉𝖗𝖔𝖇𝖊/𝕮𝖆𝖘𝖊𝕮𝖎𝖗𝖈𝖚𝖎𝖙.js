@@ -3382,7 +3382,7 @@ break;
 case "h":
 case "how":
 case "help":
-case "❗HELP❗":
+case "🌍HELP🌍":
 await help(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -3421,9 +3421,9 @@ caption: `❣️ *ɴᴀᴍᴇ:* ${Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.pushName || "No
 footer: "*⦓ ⒸѶ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 ⦔*\nᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ",
 buttons: [
 {
-buttonId: prefix + "❗HELP❗",
+buttonId: prefix + "🌍HELP🌍",
 buttonText: {
-displayText: prefix + "❗HELP❗",
+displayText: prefix + "🌍HELP🌍",
 },
 type: 1,
 },
