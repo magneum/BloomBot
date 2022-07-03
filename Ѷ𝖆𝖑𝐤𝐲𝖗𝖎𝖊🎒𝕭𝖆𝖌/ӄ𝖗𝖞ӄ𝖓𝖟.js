@@ -66,7 +66,7 @@ let ӄ𝖗𝖞ӄ𝖓𝖟 = ᴋᴜɴᴀɪConnect({
 logger: pino({ level: "silent" }),
 printQRInTerminal: true,
 defaultQueryTimeoutMs: undefined,
-browser: ["Valkyrie", "Firefox", "1.0.0"],
+browser: ["Valkyrie", "Chrome", "1.0.0"],
 auth: state,
 });
 Ѷ𝖎𝖔𝖓.bind(ӄ𝖗𝖞ӄ𝖓𝖟.ev);
