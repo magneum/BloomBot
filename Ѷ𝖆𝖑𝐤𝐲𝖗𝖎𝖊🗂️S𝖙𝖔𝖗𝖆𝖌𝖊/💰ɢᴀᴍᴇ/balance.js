@@ -60,8 +60,8 @@ await Economy.findOne(
 {
 ID: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender,
 },
-async (error, userEco) => {
-if (error) return Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(Èrrðr))
+async (Èrrðr, userEco) => {
+if (Èrrðr) return Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, util.format(Èrrðr))
 if (!userEco) {
 let newUser = new Economy({
 ID: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender,
@@ -75,7 +75,7 @@ worktimeout: 900000,
 });
 await newUser
 .save()
-.catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, KryChat));
+.catch((Èrrðr) => ꜰᴜᴄᴋ.catch(Èrrðr, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, KryChat));
 return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
