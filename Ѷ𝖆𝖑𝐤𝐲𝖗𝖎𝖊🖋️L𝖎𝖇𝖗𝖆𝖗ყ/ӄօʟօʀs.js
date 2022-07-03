@@ -7,7 +7,7 @@
 exports.__esModule = true;
 require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/𝕷𝖆ყO𝖚𝖙");
 let ӄօʟօʀ = require("@heroku-cli/color");
-exports.ӄօʟօʀs = async (ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊) => {
+exports.ӄօʟօʀs = async (𝖍𝖆𝖜ӄ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊) => {
 let chalk = require("chalk");
 let Gamboge = chalk.hex("#e49b0f");
 let Glaucous = chalk.hex("#6082B6");
@@ -16,7 +16,7 @@ let Burgundy = chalk.hex("#810020");
 let Vermilion = chalk.hex("#E34234");
 let Burlywood = chalk.hex("#deb887");
 let 𝕲𝖗𝖔𝖚𝖕𝖒𝖊𝖙𝖆 = await Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.groupMetadata;
-await ӄ𝖗𝖞ӄ𝖓𝖟.sendReadReceipt(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender, [Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id]);
+await 𝖍𝖆𝖜ӄ.sendReadReceipt(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender, [Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.key.id]);
 if (HEROKU_API_KEY === undefined) {
 console.log(Gamboge("▷═════════════════════|✠|═════════════════════◁"));
 console.log(ӄօʟօʀ["default"].black(ӄօʟօʀ["default"].bgWhite("🕐 𝐓𝐢𝐦𝐞: "), Feldgrau("".concat(new Date()))));
