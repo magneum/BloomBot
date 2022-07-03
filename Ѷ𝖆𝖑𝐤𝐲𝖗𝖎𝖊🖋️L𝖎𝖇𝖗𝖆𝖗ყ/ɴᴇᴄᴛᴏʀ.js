@@ -358,9 +358,9 @@ options = {}
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.listResponseMessage?.singleSelectReply.selectedRowId ||
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.text
 : "";
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isCommand = Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body.startsWith(prefix);
+Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isCommand = Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body.startsWith(Prefix);
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isCmd =
-prefix.includes(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body != "" && Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body.slice(0, 1)) &&
+Prefix.includes(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body != "" && Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body.slice(0, 1)) &&
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body.slice(1) != "";
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.commandName = Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isCmd
 ? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body.slice(1).trim().split(" ")[0].toLowerCase()
