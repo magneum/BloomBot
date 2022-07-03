@@ -153,20 +153,6 @@ caption: `╔══『 𝐏𝐫𝐨𝐟𝐢𝐥𝐞𝐫® 』
 
 
 ❓𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞: ɪꜱ ᴀ ᴡʜᴀᴛꜱᴀᴘᴘ ᴍᴜʟᴛɪᴘᴜʀᴘᴏꜱᴇ ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ ᴍᴏᴅᴇʀᴀᴛɪᴏɴ, ᴀᴜᴛᴏᴍᴀᴛɪᴏɴ ᴀɴᴅ 100+ ᴄᴏᴍᴍᴀɴᴅꜱ!
-╔══『 🐾🎐𝘽𝙤𝙩𝙨°🎐🐾 』
-║🍁 *ᴘʀᴇꜰɪx:* ${prefix}
-║💰 *ɢᴘᴀʏ:* +918436686758
-║❣️ *ᴜᴘɪ:* krakinzkon@oksbi
-║🐞 *ɢɪᴛʜᴜʙ:* github.com/kryknz
-║🍻 *ᴠʟᴋʏʀᴇ:* github.com/kryknz/vlkyre
-║🛰️ *ᴡᴇʙꜱɪᴛᴇ:*  VlkyreAI.krakinzkon.repl.co
-║⚙️ *ᴠᴇʀꜱɪᴏɴ:* ${vers.vers}
-║💻 *ᴘʟᴀᴛꜰᴏʀᴍ:* ${os.platform()}
-║🛰️ *ʟᴀᴛᴇɴᴄʏ:* ${latensi.toFixed(4)}(s)
-║☕ *ᴜᴘᴛɪᴍᴇ:* ${runtime(process.uptime())}
-║🎮 *ʀᴀᴍ:* ${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}
-╚═══════╝
-
 
 🦚‍𝐓𝐲𝐩𝐞: ${prefix}menu | ${prefix}commands
 👇🏽‍𝐏𝐫𝐞𝐬𝐬 𝐁𝐞𝐥𝐨𝐰 𝐁𝐮𝐭𝐭𝐨𝐧𝐬 𝐅𝐨𝐫 𝐅𝐮𝐥𝐥 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬 𝐌𝐞𝐧𝐮`,
