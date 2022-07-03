@@ -11,7 +11,7 @@ let canvacord = require("canvacord");
 let randomMC = require("random-material-color");
 let color = randomMC.getColor();
 Levels.setURL(MONGOOSE);
-exports.ARanks = async (Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, ӄ𝖗𝖞ӄ𝖓𝖟, Caught) => {
+exports.ARanks = async (Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, 𝖍𝖆𝖜ӄ, Caught) => {
 let randomXp = Math.floor(Math.random() * 3) + 1;
 let user = await Levels.fetch(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, true);
 if (!user) {
@@ -84,7 +84,7 @@ let expFile = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${Date.now()}r${
 let աɦօֆɛ = Math.floor(1000 + Math.random() * 9000);
 let 𝕻𝕻𝖑𝖊𝖙𝖊𝖗;
 try {
-𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄ𝖗𝖞ӄ𝖓𝖟.profilePictureUrl(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, `image`);
+𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await 𝖍𝖆𝖜ӄ.profilePictureUrl(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, `image`);
 } catch {
 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = `./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.png`;
 }
@@ -118,8 +118,8 @@ let rank = new canvacord.Rank()
 .setDiscriminator(աɦօֆɛ);
 return await rank.build().then(async (data) => {
 fs.writeFile(expFile, data, async (error) => {
-if (error) return Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, error);
-await ӄ𝖗𝖞ӄ𝖓𝖟
+if (error) return Caught(𝖍𝖆𝖜ӄ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, error);
+await 𝖍𝖆𝖜ӄ
 .sendMessage(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID,
 {
@@ -152,7 +152,7 @@ headerType: 4,
 quoted: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
 }
 )
-.catch((e) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, e));
+.catch((e) => Caught(𝖍𝖆𝖜ӄ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, e));
 return fs.unlinkSync(expFile);
 });
 });
