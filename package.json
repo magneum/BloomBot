@@ -128,7 +128,7 @@
 "node-tesseract-ocr": "^2.2.1",
 "node-webpmux": "^3.1.0",
 "nodejs-file-downloader": "^4.8.1",
-"nodemon": "^2.0.15",
+"nodemon": "*",
 "npm": "^8.4.1",
 "oakdex-pokedex": "^0.4.5",
 "ocr-space-api-wrapper": "^1.0.6",
