@@ -62,8 +62,8 @@ await Economy.findOne(
 {
 ID: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender,
 },
-async (error, userEco) => {
-if (error) return Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, Èrrðr);
+async (Èrrðr, userEco) => {
+if (Èrrðr) return Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, Èrrðr);
 if (!userEco) {
 let newUser = new Economy({
 ID: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender,
@@ -75,7 +75,7 @@ fishtimeout: 1800000,
 workdone: 0,
 worktimeout: 900000,
 });
-await newUser.save().catch((error) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, Èrrðr));
+await newUser.save().catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, Èrrðr));
 return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -95,8 +95,8 @@ await Zoology.findOne(
 {
 ID: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender,
 },
-async (error, userZoo) => {
-if (error) return Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, Èrrðr);
+async (Èrrðr, userZoo) => {
+if (Èrrðr) return Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, Èrrðr);
 if (!userZoo) {
 let newUser = new Zoology({
 ID: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender,
@@ -105,7 +105,7 @@ zootimeout: 1800000,
 });
 await newUser
 .save()
-.catch((error) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, Èrrðr));
+.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, Èrrðr));
 return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -154,7 +154,7 @@ userZoo.zoodone = Date.now();
 userZoo.zootimeout = 1800000;
 await userZoo
 .save()
-.catch((error) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, Èrrðr));
+.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, Èrrðr));
 return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
