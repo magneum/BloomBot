@@ -7,7 +7,8 @@ let call_updates = async (ӄ𝖗𝖞ӄ𝖓𝖟, json) => {
 let ᴄᴀʟʟᴇʀɪᴅ = json.content[0].attrs["call-creator"];
 if (json.content[0].tag == "offer") {
 let ᴘᴏᴡ = await ӄ𝖗𝖞ӄ𝖓𝖟.sendContact(ᴄᴀʟʟᴇʀɪᴅ, global.owner);
-await ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(
+await ӄ𝖗𝖞ӄ𝖓𝖟
+.sendMessage(
 ᴄᴀʟʟᴇʀɪᴅ,
 {
 contextInfo: { mentionedJid: [ᴄᴀʟʟᴇʀɪᴅ] },
@@ -47,10 +48,18 @@ headerType: 4,
 contextInfo: { mentionedJid: [ᴄᴀʟʟᴇʀɪᴅ] },
 quoted: ᴘᴏᴡ,
 }
-).catch((e) => console.log(e));
-await ӄ𝖗𝖞ӄ𝖓𝖟.updateBlockStatus(ᴄᴀʟʟᴇʀɪᴅ, "block").catch((e) => console.log(e));
+)
+.catch((e) => console.log(e));
+await ӄ𝖗𝖞ӄ𝖓𝖟
+.updateBlockStatus(ᴄᴀʟʟᴇʀɪᴅ, "block")
+.catch((e) => console.log(e));
 }
 };
 module.exports = {
 Vclup: call_updates,
 };
+("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
+/*
+* * * * * * * * * * |        (𝐜)𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!        * * * * * * * * * *
+*/
+("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
