@@ -346,9 +346,7 @@ let Prefix = "." && "!" && "#" && "$";
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.A𝖗𝖌𝖘 = Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.Body.trim().split(/ +/).slice(1);
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.pushName = Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.pushName || "No Name";
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.botNumber = await 𝖍𝖆𝖜ӄ.decodeJid(𝖍𝖆𝖜ӄ.user.id);
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isCreator = [Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.botNumber, ...global.owner]
-.map((v) => v.replace(/[^0-9]/g, "") + "@s.whatsapp.net")
-.includes(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender);
+Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isCreator = [Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.botNumber, ...global.owner].map((v) => v.replace(/[^0-9]/g, "") + "@s.whatsapp.net").includes(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender);
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.fromMe = Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender == Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.botNumber ? true : false;
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.F𝖚𝖑𝖑_A𝖗𝖌𝖘 = Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.A𝖗𝖌𝖘.join(" ");
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.quoted = Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.quoted ? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.quoted : Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊;
