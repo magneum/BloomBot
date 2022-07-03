@@ -96,8 +96,8 @@ ${𝖀𝖘𝖆𝖌𝖊}`,
 footer: "*⦓ ⒸѶ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 ⦔*\n▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ ◁",
 buttons: [
 {
-buttonId: prefix + "❗HELP❗",
-buttonText: { displayText: prefix + "❗HELP❗" },
+buttonId: prefix + "🌍HELP🌍",
+buttonText: { displayText: prefix + "🌍HELP🌍" },
 type: 1,
 },
 ],
