@@ -5,7 +5,7 @@
 ("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
 let chalk = require("chalk");
 let { DisconnectReason } = require(`@adiwajshing/baileys`);
-let connection_update = async (update, startᴋᴜɴᴀɪ, ӄ𝖗𝖞ӄ𝖓𝖟) => {
+let connection_update = async (update, startᴋᴜɴᴀɪ, 𝖍𝖆𝖜ӄ) => {
 try {
 const { lastDisconnect, connection, qr } = update;
 if (connection === "close") {
@@ -23,7 +23,7 @@ chalk.bgGreen(
 )
 );
 try {
-await ӄ𝖗𝖞ӄ𝖓𝖟.groupSettingUpdate(
+await 𝖍𝖆𝖜ӄ.groupSettingUpdate(
 "120363020792949649@g.us",
 "not_announcement"
 );

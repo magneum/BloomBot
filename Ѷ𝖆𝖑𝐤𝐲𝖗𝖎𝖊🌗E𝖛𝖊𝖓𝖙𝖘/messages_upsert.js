@@ -6,7 +6,7 @@
 require(`../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/𝕷𝖆ყO𝖚𝖙`);
 require(`../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/Ѷ𝖆𝖑.js`);
 let { smsg } = require(`../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/ɴᴇᴄᴛᴏʀ`);
-let messages_upsert = async (chatUpdate, Ѷ𝖎𝖔𝖓, ӄ𝖗𝖞ӄ𝖓𝖟) => {
+let messages_upsert = async (chatUpdate, Ѷ𝖎𝖔𝖓, 𝖍𝖆𝖜ӄ) => {
 try {
 𝖈𝖍𝖆𝖙 = chatUpdate.messages[0];
 if (!𝖈𝖍𝖆𝖙.message) return;
@@ -15,11 +15,11 @@ Object.keys(𝖈𝖍𝖆𝖙.message)[0] === `ephemeralMessage`
 ? 𝖈𝖍𝖆𝖙.message.ephemeralMessage.message
 : 𝖈𝖍𝖆𝖙.message;
 if (𝖈𝖍𝖆𝖙.key && 𝖈𝖍𝖆𝖙.key.remoteJid === `status@broadcast`) return;
-if (!ӄ𝖗𝖞ӄ𝖓𝖟.public && !𝖈𝖍𝖆𝖙.key.fromMe && chatUpdate.type === `notify`)
+if (!𝖍𝖆𝖜ӄ.public && !𝖈𝖍𝖆𝖙.key.fromMe && chatUpdate.type === `notify`)
 return;
 if (𝖈𝖍𝖆𝖙.key.id.startsWith(`BAE5`) && 𝖈𝖍𝖆𝖙.key.id.length === 16) return;
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 = await smsg(ӄ𝖗𝖞ӄ𝖓𝖟, 𝖈𝖍𝖆𝖙, Ѷ𝖎𝖔𝖓);
-require(`../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/Ѷ𝖆𝖑.js`)(ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, chatUpdate, Ѷ𝖎𝖔𝖓);
+Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 = await smsg(𝖍𝖆𝖜ӄ, 𝖈𝖍𝖆𝖙, Ѷ𝖎𝖔𝖓);
+require(`../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/Ѷ𝖆𝖑.js`)(𝖍𝖆𝖜ӄ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊, chatUpdate, Ѷ𝖎𝖔𝖓);
 } catch (err) {
 console.log(err);
 }

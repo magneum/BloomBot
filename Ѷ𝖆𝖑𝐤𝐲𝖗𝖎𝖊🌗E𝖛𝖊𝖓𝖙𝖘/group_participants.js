@@ -6,13 +6,13 @@
 require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/𝕷𝖆ყO𝖚𝖙");
 let moment = require(`moment-timezone`);
 let Welcome = require(`../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧆𝕯𝖆𝖙𝖆𝖇𝖆𝖘𝖊/🍃𝖒𝖔𝖓𝖌𝖔/setwelcome`);
-let group_participants = async (𝖚𝖕𝖉𝖆𝖙𝖊, ӄ𝖗𝖞ӄ𝖓𝖟) => {
+let group_participants = async (𝖚𝖕𝖉𝖆𝖙𝖊, 𝖍𝖆𝖜ӄ) => {
 let 𝖕𝖋𝖕𝖀𝖘𝖊𝖗;
 let 𝕷𝖆𝖙𝖊𝖘𝖙 = 𝖚𝖕𝖉𝖆𝖙𝖊.participants[0];
-let 𝕲𝖗𝖔𝖚𝖕𝖒𝖊𝖙𝖆 = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata(𝖚𝖕𝖉𝖆𝖙𝖊.id);
-let 𝖚𝖘𝖊𝖗𝕹𝖆𝖒𝖊 = await ӄ𝖗𝖞ӄ𝖓𝖟.getName(𝖚𝖕𝖉𝖆𝖙𝖊.participants[0]);
+let 𝕲𝖗𝖔𝖚𝖕𝖒𝖊𝖙𝖆 = await 𝖍𝖆𝖜ӄ.groupMetadata(𝖚𝖕𝖉𝖆𝖙𝖊.id);
+let 𝖚𝖘𝖊𝖗𝕹𝖆𝖒𝖊 = await 𝖍𝖆𝖜ӄ.getName(𝖚𝖕𝖉𝖆𝖙𝖊.participants[0]);
 try {
-𝖕𝖋𝖕𝖀𝖘𝖊𝖗 = await ӄ𝖗𝖞ӄ𝖓𝖟.profilePictureUrl(𝖚𝖕𝖉𝖆𝖙𝖊.participants[0], "image");
+𝖕𝖋𝖕𝖀𝖘𝖊𝖗 = await 𝖍𝖆𝖜ӄ.profilePictureUrl(𝖚𝖕𝖉𝖆𝖙𝖊.participants[0], "image");
 } catch {
 𝖕𝖋𝖕𝖀𝖘𝖊𝖗 = "./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊_𝖕𝖋𝖕𝖀𝖘𝖊𝖗.png";
 }
@@ -24,8 +24,8 @@ ID: 𝖚𝖕𝖉𝖆𝖙𝖊.id,
 async (𝕰𝖗𝖗𝖔𝖗, userWel) => {
 if (𝕰𝖗𝖗𝖔𝖗) return console.log(𝕰𝖗𝖗𝖔𝖗);
 if (!userWel) return;
-if (𝖚𝖕𝖉𝖆𝖙𝖊.action == "add" && !𝕷𝖆𝖙𝖊𝖘𝖙.includes(ӄ𝖗𝖞ӄ𝖓𝖟.user.id)) {
-return await ӄ𝖗𝖞ӄ𝖓𝖟
+if (𝖚𝖕𝖉𝖆𝖙𝖊.action == "add" && !𝕷𝖆𝖙𝖊𝖘𝖙.includes(𝖍𝖆𝖜ӄ.user.id)) {
+return await 𝖍𝖆𝖜ӄ
 .sendMessage(𝖚𝖕𝖉𝖆𝖙𝖊.id, {
 contextInfo: { mentionedJid: [𝖚𝖕𝖉𝖆𝖙𝖊.participants[0]] },
 image: { url: 𝖕𝖋𝖕𝖀𝖘𝖊𝖗 },
