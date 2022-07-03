@@ -361,10 +361,7 @@ let mime = (Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.quoted.msg || Ѷ𝖆𝖑𝐤𝐲𝖗�
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderAdmin = Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isGroup? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.groupAdmins.includes(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender): false;
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByTag =Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype == "extendedTextMessage" &&Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.extendedTextMessage.contextInfo != null? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.extendedTextMessage.contextInfo.mentionedJid: [];
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mentionByReply =Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.mtype == "extendedTextMessage" &&Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.extendedTextMessage.contextInfo != null? Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.message.extendedTextMessage.contextInfo.participant || "": "";
-let MODString =
-process.env.MOD === undefined
-? "918436686758,917430922909"
-: process.env.MOD;
+let MODString =process.env.MOD === undefined? "918436686758,917430922909": process.env.MOD;
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.isSenderTUF = MODString.includes(
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender.substring(0, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.sender.indexOf("@"))
 );
