@@ -20,7 +20,6 @@ coverage
 *.lcov
 .nyc_output
 .grunt
-Ѷ𝖆𝖑.db
 bower_components
 .lock-wscript
 json.sqlite
