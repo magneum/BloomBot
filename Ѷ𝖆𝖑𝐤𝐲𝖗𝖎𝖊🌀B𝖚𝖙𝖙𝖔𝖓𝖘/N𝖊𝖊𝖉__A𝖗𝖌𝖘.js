@@ -37,18 +37,8 @@ ${𝖀𝖘𝖆𝖌𝖊}`,
 footer: "*⦓ ⒸѶ𝖆𝖑𝐤𝐲𝖗𝖎𝖊 ⦔*\n▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ ◁",
 buttons: [
 {
-buttonId: prefix + "❗𝐇𝐄𝐋𝐏❗",
-buttonText: { displayText: prefix + "❗𝐇𝐄𝐋𝐏❗" },
-type: 1,
-},
-{
-buttonId: prefix + "🦚𝐒𝐔𝐏𝐏𝐎𝐑𝐓🦚",
-buttonText: { displayText: prefix + "🦚𝐒𝐔𝐏𝐏𝐎𝐑𝐓🦚" },
-type: 1,
-},
-{
-buttonId: prefix + "⚡RULES⚡",
-buttonText: { displayText: prefix + "⚡RULES⚡" },
+buttonId: prefix + "❗HELP❗",
+buttonText: { displayText: prefix + "❗HELP❗" },
 type: 1,
 },
 ],
