@@ -61,7 +61,7 @@ console.log(error);
 process.exit(0);
 }
 await sequelize.sync();
-const { state, saveState } = useSingleFileAuthState("./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊❗𝕭𝖏𝖘𝖔𝖓/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊®.json")
+const { state, saveState } = useSingleFileAuthState("./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊❗𝕭𝖏𝖘𝖔𝖓/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.json")
 let ӄ𝖗𝖞ӄ𝖓𝖟 = ᴋᴜɴᴀɪConnect({
 logger: pino({ level: "silent" }),
 printQRInTerminal: true,
