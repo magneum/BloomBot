@@ -30,9 +30,10 @@ randomXp
 if (hasLeveledUp) {
 const levelRole = user.level;
 var role = "Warrior";
+var Amnt = 10;
 if (levelRole <= 2) {
 var role = "Elite III";
-var Amnt = 20;
+var Amnt = 15;
 } else if (levelRole <= 4) {
 var role = "Elite II";
 var Amnt = 20;
