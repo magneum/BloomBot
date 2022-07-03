@@ -136,10 +136,10 @@ cpu.total
 : ``
 }`.trim();
 let ʀᴇꜱᴘᴏɴꜱᴇ1 = await ӄ𝖗𝖞ӄ𝖓𝖟.groupInviteCode("120363020792949649@g.us");
-let ʀᴇꜱᴘᴏɴꜱᴇ2 = await ӄ𝖗𝖞ӄ𝖓𝖟.groupInviteCode("120363020792949649@g.us");
-let ʀᴇꜱᴘᴏɴꜱᴇ3 = await ӄ𝖗𝖞ӄ𝖓𝖟.groupInviteCode("120363020792949649@g.us");
-let ʀᴇꜱᴘᴏɴꜱᴇ4 = await ӄ𝖗𝖞ӄ𝖓𝖟.groupInviteCode("120363020792949649@g.us");
-let ʀᴇꜱᴘᴏɴꜱᴇ5 = await ӄ𝖗𝖞ӄ𝖓𝖟.groupInviteCode("120363020792949649@g.us");
+let ʀᴇꜱᴘᴏɴꜱᴇ2 = await ӄ𝖗𝖞ӄ𝖓𝖟.groupInviteCode("120363039223842047@g.us");
+let ʀᴇꜱᴘᴏɴꜱᴇ3 = await ӄ𝖗𝖞ӄ𝖓𝖟.groupInviteCode("120363024871653603@g.us");
+let ʀᴇꜱᴘᴏɴꜱᴇ4 = await ӄ𝖗𝖞ӄ𝖓𝖟.groupInviteCode("120363042762307739@g.us");
+let ʀᴇꜱᴘᴏɴꜱᴇ5 = await ӄ𝖗𝖞ӄ𝖓𝖟.groupInviteCode("120363022161584857@g.us");
 return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊,
@@ -155,18 +155,13 @@ A𝖗𝖌𝖘,
 ║🐞 *ɢɪᴛʜᴜʙ:* github.com/kryknz
 ║🍻 *ᴠʟᴋʏʀᴇ:* github.com/kryknz/vlkyre
 ║🛰️ *ᴡᴇʙꜱɪᴛᴇ:*  VlkyreAI.krakinzkon.repl.co
-║⚙️ *ᴠᴇʀꜱɪᴏɴ:* ${vers.vers}
-║💻 *ᴘʟᴀᴛꜰᴏʀᴍ:* ${os.platform()}
-║🛰️ *ʟᴀᴛᴇɴᴄʏ:* ${latensi.toFixed(4)}(s)
-║☕ *ᴜᴘᴛɪᴍᴇ:* ${runtime(process.uptime())}
-║🎮 *ʀᴀᴍ:* ${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}
 ╚═══════╝
 
-*🕊️Group A:* chat.whatsapp.com/K8xe9gAuBaT9WSCfITYbOl
-*🕊️Group B:* chat.whatsapp.com/KO93ybE8hIM6RvlMEKw8kZ
-*🕊️Group C:* chat.whatsapp.com/JC8KelY0cms3xgZtAu5WdE
-*🕊️Group D:* chat.whatsapp.com/LbX6FpapLCQ9NUMCUjvgbR
-*🕊️Group E:* chat.whatsapp.com/F9b0lSIRDPr1QrG9sFuIQN`
+*🕊️Grp A:* chat.whatsapp.com/${ʀᴇꜱᴘᴏɴꜱᴇ1}
+*🕊️Grp B:* chat.whatsapp.com/${ʀᴇꜱᴘᴏɴꜱᴇ2}
+*🕊️Grp C:* chat.whatsapp.com/${ʀᴇꜱᴘᴏɴꜱᴇ3}
+*🕊️Grp D:* chat.whatsapp.com/${ʀᴇꜱᴘᴏɴꜱᴇ4}
+*🕊️Grp E:* chat.whatsapp.com/${ʀᴇꜱᴘᴏɴꜱᴇ5}`
 );
 };
 `|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|`;
