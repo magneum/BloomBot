@@ -10,7 +10,6 @@ default: ᴋᴜɴᴀɪConnect,
 generateForwardMessageContent,
 generateWAMessageFromContent,
 downloadContentFromMessage,
-useSingleFileAuthState,
 prepareWAMessageMedia,
 makeInMemoryStore,
 jidDecode,
@@ -34,6 +33,7 @@ let sequelize = DATABASE;
 let Ѷ𝖎𝖔𝖓 = makeInMemoryStore({
 logger: pino().child({ level: `silent`, stream: `Ѷ𝖎𝖔𝖓` }),
 });
+let dbAuth = require(`../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧆𝕯𝖆𝖙𝖆𝖇𝖆𝖘𝖊/🍂𝖘𝖖𝖑/Auth`);
 `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
 async function startᴋᴜɴᴀɪ() {
 try {
@@ -45,7 +45,9 @@ useCreateIndex: true,
 useFindAndModify: false,
 })
 .catch((error) => {
-console.error(chalk.red(`❌𝐄𝐫𝐫𝐨𝐫: Unable to Connected with 🍃𝖒𝖔𝖓𝖌𝖔 + 𝖀𝖘𝖊𝖗🍣𝖒𝖔𝖓𝖌𝖔.`));
+console.error(
+chalk.red(`❌𝐄𝐫𝐫𝐨𝐫: Unable to Connected with 🍃𝖒𝖔𝖓𝖌𝖔 + 𝖀𝖘𝖊𝖗🍣𝖒𝖔𝖓𝖌𝖔.`)
+);
 console.log(error);
 process.exit(0);
 });
@@ -61,7 +63,7 @@ console.log(error);
 process.exit(0);
 }
 await sequelize.sync();
-const { state, saveState } = useSingleFileAuthState("./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊❗𝕭𝖏𝖘𝖔𝖓/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊®.json")
+let { state, saveCreds } = await dbAuth();
 let ӄ𝖗𝖞ӄ𝖓𝖟 = ᴋᴜɴᴀɪConnect({
 logger: pino({ level: "silent" }),
 printQRInTerminal: true,
@@ -530,7 +532,7 @@ return console.log(chalk.redBright(𝕰𝖗𝖗𝖔𝖗));
 });
 ӄ𝖗𝖞ӄ𝖓𝖟.ev.on("creds.update", async (𝖚𝖕𝖉𝖆𝖙𝖊) => {
 try {
-await saveState(𝖚𝖕𝖉𝖆𝖙𝖊);
+await saveCreds(𝖚𝖕𝖉𝖆𝖙𝖊);
 } catch (𝕰𝖗𝖗𝖔𝖗) {
 return console.log(chalk.redBright(𝕰𝖗𝖗𝖔𝖗));
 }
