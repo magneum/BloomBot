@@ -123,7 +123,7 @@ let list = [];
 for (let i of kon) {
 list.push({
 displayName: await ӄ𝖗𝖞ӄ𝖓𝖟.getName(i + "@s.whatsapp.net"),
-vcard: "BEGIN:VCARD
+vcard: `BEGIN:VCARD
 VERSION:3.0
 N:${await ӄ𝖗𝖞ӄ𝖓𝖟.getName(i + "@s.whatsapp.net")}
 FN:${await ӄ𝖗𝖞ӄ𝖓𝖟.getName(i + "@s.whatsapp.net")}
