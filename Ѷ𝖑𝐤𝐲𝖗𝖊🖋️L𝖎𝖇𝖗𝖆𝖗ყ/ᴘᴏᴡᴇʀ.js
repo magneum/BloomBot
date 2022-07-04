@@ -405,8 +405,8 @@ caption: `╔══『 𝐏𝐫𝐨𝐟𝐢𝐥𝐞𝐫® 』
 ╚═══════╝
 
 
-❗ 𝐀𝐔𝐓𝐎 𝐕𝐄𝐑𝐓𝐈𝐅𝐈𝐂𝐀𝐓𝐈𝐎𝐍 ❗
-*Join Any Group and get verified to use bot anywhere!*
+❗ 𝐕𝐄𝐑𝐓𝐈𝐅𝐈𝐂𝐀𝐓𝐈𝐎𝐍 ❗
+*Join Any Group Using Below Website and  get verified to use bot anywhere!*
 VlkyreAI.krakinzkon.repl.co`,
 footer: "*⦓ ⒸѶ𝖑𝐤𝐲𝖗𝖊 ⦔*\nᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ",
 buttons: [
