@@ -1,16 +1,16 @@
-`|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|`;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
 
-// ════════════════════════|▷   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!   ◁|════════════════════════
+//▷                                              (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!                                           ◁
 
-`|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|`;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
 require("../../Ѷ𝖑𝐤𝐲𝖗𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/𝕷𝖆ყO𝖚𝖙");
 let {
-  isUrl,
-  fetchJson,
-  getBuffer,
-  jsonformat,
-  GIFBufferToVideoBuffer,
-  getRandom,
+isUrl,
+fetchJson,
+getBuffer,
+jsonformat,
+GIFBufferToVideoBuffer,
+getRandom,
 } = require(`../../Ѷ𝖑𝐤𝐲𝖗𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/ɴᴇᴄᴛᴏʀ`);
 let fs = require(`fs`);
 let util = require(`util`);
@@ -41,198 +41,198 @@ let Present_Path = require(`path`);
 let Script_Name = Present_Path.basename(__filename);
 let Final_Name = Script_Name.slice(0, -3).toLowerCase();
 let { Caught } = require("../../Ѷ𝖑𝐤𝐲𝖗𝖊🌀B𝖚𝖙𝖙𝖔𝖓𝖘/Caught");
-`|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 exports.hunt = async (
-  ӄ𝖗𝖞ӄ𝖓𝖟,
-  Ѷ𝖑𝐤𝐲𝖗𝖊,
-  A𝖗𝖌𝖘,
-  pushName,
-  fromMe,
-  F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-  quoted,
-  isMedia,
-  isGroup,
-  groupAdmins,
-  isBotAdmin,
-  isSenderAdmin,
-  isSenderTUF,
-  commandName,
-  body,
-  mentionByTag,
-  mentionByReply
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Ѷ𝖑𝐤𝐲𝖗𝖊,
+A𝖗𝖌𝖘,
+pushName,
+fromMe,
+F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+quoted,
+isMedia,
+isGroup,
+groupAdmins,
+isBotAdmin,
+isSenderAdmin,
+isSenderTUF,
+commandName,
+body,
+mentionByTag,
+mentionByReply
 ) => {
-  let BasePoke = PokeList[Math.floor(Math.random() * PokeList.length)];
-  let Worth = Math.ceil(Math.random() * 500);
-  Pokemon.findOne(
-    {
-      ID: Ѷ𝖑𝐤𝐲𝖗𝖊.sender,
-    },
-    async (Èrrðr, userHunt) => {
-      if (Èrrðr) return Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖑𝐤𝐲𝖗𝖊, Èrrðr);
-      if (!userHunt) {
-        let newPokeUser = new Pokemon({
-          ID: Ѷ𝖑𝐤𝐲𝖗𝖊.sender,
-          CurrentLimitTime: 0,
-          PermanentLimitTime: 21600000,
-        });
-        await newPokeUser
-          .save()
-          .catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖑𝐤𝐲𝖗𝖊, Èrrðr));
-        return await Image_Button(
-          ӄ𝖗𝖞ӄ𝖓𝖟,
-          Ѷ𝖑𝐤𝐲𝖗𝖊,
-          A𝖗𝖌𝖘,
-          "./Ѷ𝖑𝐤𝐲𝖗𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖑𝐤𝐲𝖗𝖊_DB.png",
-          `╔◇══════════◇╗
+let BasePoke = PokeList[Math.floor(Math.random() * PokeList.length)];
+let Worth = Math.ceil(Math.random() * 500);
+Pokemon.findOne(
+{
+ID: Ѷ𝖑𝐤𝐲𝖗𝖊.sender,
+},
+async (Èrrðr, userHunt) => {
+if (Èrrðr) return Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖑𝐤𝐲𝖗𝖊, Èrrðr);
+if (!userHunt) {
+let newPokeUser = new Pokemon({
+ID: Ѷ𝖑𝐤𝐲𝖗𝖊.sender,
+CurrentLimitTime: 0,
+PermanentLimitTime: 21600000,
+});
+await newPokeUser
+.save()
+.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖑𝐤𝐲𝖗𝖊, Èrrðr));
+return await Image_Button(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Ѷ𝖑𝐤𝐲𝖗𝖊,
+A𝖗𝖌𝖘,
+"./Ѷ𝖑𝐤𝐲𝖗𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖑𝐤𝐲𝖗𝖊_DB.png",
+`╔◇══════════◇╗
 ┊ 𝐏𝐨𝐤𝐞𝐦𝐨𝐧🦋𝐇𝐮𝐧𝐭𝐢𝐧𝐠
 ┊ 𝐌𝐢𝐧𝐞𝐜𝐫𝐚𝐟𝐭 🪵 𝐄𝐝𝐢𝐭𝐢𝐨𝐧
 ╚◇══════════◇╝
 
 🧈Added To DB for Current command First Time!
 🦋Try ${prefix}${Final_Name} Again!`
-        );
-      }
-      `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
-      Economy.findOne(
-        {
-          ID: Ѷ𝖑𝐤𝐲𝖗𝖊.sender,
-        },
-        async (Èrrðr, userEco) => {
-          if (Èrrðr) return Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖑𝐤𝐲𝖗𝖊, Èrrðr);
-          if (!userEco) {
-            let newUser = new Economy({
-              ID: Ѷ𝖑𝐤𝐲𝖗𝖊.sender,
-              money: 0,
-              daily: 0,
-              timeout: 86400000,
-              fishdone: 0,
-              fishtimeout: 1800000,
-              workdone: 0,
-              worktimeout: 900000,
-            });
-            await newUser
-              .save()
-              .catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖑𝐤𝐲𝖗𝖊, Èrrðr));
-            return await Image_Button(
-              ӄ𝖗𝖞ӄ𝖓𝖟,
-              Ѷ𝖑𝐤𝐲𝖗𝖊,
-              A𝖗𝖌𝖘,
-              "./Ѷ𝖑𝐤𝐲𝖗𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖑𝐤𝐲𝖗𝖊_Forest.png",
-              `╔◇══════════◇╗
+);
+}
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
+Economy.findOne(
+{
+ID: Ѷ𝖑𝐤𝐲𝖗𝖊.sender,
+},
+async (Èrrðr, userEco) => {
+if (Èrrðr) return Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖑𝐤𝐲𝖗𝖊, Èrrðr);
+if (!userEco) {
+let newUser = new Economy({
+ID: Ѷ𝖑𝐤𝐲𝖗𝖊.sender,
+money: 0,
+daily: 0,
+timeout: 86400000,
+fishdone: 0,
+fishtimeout: 1800000,
+workdone: 0,
+worktimeout: 900000,
+});
+await newUser
+.save()
+.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖑𝐤𝐲𝖗𝖊, Èrrðr));
+return await Image_Button(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Ѷ𝖑𝐤𝐲𝖗𝖊,
+A𝖗𝖌𝖘,
+"./Ѷ𝖑𝐤𝐲𝖗𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖑𝐤𝐲𝖗𝖊_Forest.png",
+`╔◇══════════◇╗
 ┊ 𝐏𝐨𝐤𝐞𝐦𝐨𝐧🦋𝐇𝐮𝐧𝐭𝐢𝐧𝐠
 ┊ 𝐌𝐢𝐧𝐞𝐜𝐫𝐚𝐟𝐭 🪵 𝐄𝐝𝐢𝐭𝐢𝐨𝐧
 ╚◇══════════◇╝
 
 ❌𝗘𝗿𝗿𝗼𝗿: _You Are Very New! Better Luck Next Time!_`
-            );
-          }
-          `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
-          let PokemonData;
-          try {
-            let res = await fetch(
-              API(`https://some-random-api.ml`, `/pokedex`, {
-                pokemon: BasePoke.toLowerCase(),
-              })
-            ).catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖑𝐤𝐲𝖗𝖊, Èrrðr));
-            PokemonData = await res
-              .json()
-              .catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖑𝐤𝐲𝖗𝖊, Èrrðr));
-          } catch (Èrrðr) {
-            return Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖑𝐤𝐲𝖗𝖊, Èrrðr);
-          }
-          `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
-          if (
-            userHunt.PermanentLimitTime -
-              (Date.now() - userHunt.CurrentLimitTime) >
-            0
-          ) {
-            let time = ms(
-              userHunt.PermanentLimitTime -
-                (Date.now() - userHunt.CurrentLimitTime)
-            );
-            return await Image_Button(
-              ӄ𝖗𝖞ӄ𝖓𝖟,
-              Ѷ𝖑𝐤𝐲𝖗𝖊,
-              A𝖗𝖌𝖘,
-              "./Ѷ𝖑𝐤𝐲𝖗𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖑𝐤𝐲𝖗𝖊_Forest.png",
-              `╔◇══════════◇╗
+);
+}
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
+let PokemonData;
+try {
+let res = await fetch(
+API(`https://some-random-api.ml`, `/pokedex`, {
+pokemon: BasePoke.toLowerCase(),
+})
+).catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖑𝐤𝐲𝖗𝖊, Èrrðr));
+PokemonData = await res
+.json()
+.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖑𝐤𝐲𝖗𝖊, Èrrðr));
+} catch (Èrrðr) {
+return Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖑𝐤𝐲𝖗𝖊, Èrrðr);
+}
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
+if (
+userHunt.PermanentLimitTime -
+(Date.now() - userHunt.CurrentLimitTime) >
+0
+) {
+let time = ms(
+userHunt.PermanentLimitTime -
+(Date.now() - userHunt.CurrentLimitTime)
+);
+return await Image_Button(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Ѷ𝖑𝐤𝐲𝖗𝖊,
+A𝖗𝖌𝖘,
+"./Ѷ𝖑𝐤𝐲𝖗𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖑𝐤𝐲𝖗𝖊_Forest.png",
+`╔◇══════════◇╗
 ┊ 𝐏𝐨𝐤𝐞𝐦𝐨𝐧🦋𝐇𝐮𝐧𝐭𝐢𝐧𝐠
 ┊ 𝐌𝐢𝐧𝐞𝐜𝐫𝐚𝐟𝐭 🪵 𝐄𝐝𝐢𝐭𝐢𝐨𝐧
 ╚◇══════════◇╝
 
 ❌𝗘𝗿𝗿𝗼𝗿: _You've recently went in a forest!_
 🪵𝗡𝗲𝘅𝘁 𝗛𝘂𝗻𝘁𝗶𝗻𝗴: _${time.hours}h ${time.minutes}m ${time.seconds}s_`
-            );
-          }
-          `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
-          userHunt.CurrentLimitTime = Date.now();
-          pokemon.configure({ apiKey: "123abc" });
-          await pokemon.card
-            .all({ q: `name:${BasePoke.toLowerCase()}` })
-            .then(async (card) => {
-              if (!card) {
-                await Image_Button(
-                  ӄ𝖗𝖞ӄ𝖓𝖟,
-                  Ѷ𝖑𝐤𝐲𝖗𝖊,
-                  A𝖗𝖌𝖘,
-                  "./Ѷ𝖑𝐤𝐲𝖗𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖑𝐤𝐲𝖗𝖊_Forest.png",
-                  `╔◇══════════◇╗
+);
+}
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
+userHunt.CurrentLimitTime = Date.now();
+pokemon.configure({ apiKey: "123abc" });
+await pokemon.card
+.all({ q: `name:${BasePoke.toLowerCase()}` })
+.then(async (card) => {
+if (!card) {
+await Image_Button(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Ѷ𝖑𝐤𝐲𝖗𝖊,
+A𝖗𝖌𝖘,
+"./Ѷ𝖑𝐤𝐲𝖗𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖑𝐤𝐲𝖗𝖊_Forest.png",
+`╔◇══════════◇╗
 ┊ 𝐏𝐨𝐤𝐞𝐦𝐨𝐧🦋𝐇𝐮𝐧𝐭𝐢𝐧𝐠
 ┊ 𝐌𝐢𝐧𝐞𝐜𝐫𝐚𝐟𝐭 🪵 𝐄𝐝𝐢𝐭𝐢𝐨𝐧
 ╚◇══════════◇╝
 
 💫 *Name:* _Caught Nothing!_
 🪙 *Worth:* _0gold_`
-                );
-                await userEco
-                  .save()
-                  .catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖑𝐤𝐲𝖗𝖊, Èrrðr));
-                await userHunt
-                  .save()
-                  .catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖑𝐤𝐲𝖗𝖊, Èrrðr));
-                return;
-              }
-              `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
-              userEco.money = userEco.money + Worth;
-              await userEco
-                .save()
-                .catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖑𝐤𝐲𝖗𝖊, Èrrðr));
-              await userHunt
-                .save()
-                .catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖑𝐤𝐲𝖗𝖊, Èrrðr));
-              `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
-              require("child_process").exec(
-                `ffmpeg -i "${PokemonData.sprites.animated}" -pix_fmt yuv420p -c:v libx264 -movflags +faststart -filter:v crop='floor(in_w/2)*2:floor(in_h/2)*2' "./Ѷ𝖑𝐤𝐲𝖗𝖊🎒𝕭𝖆𝖌/${Ѷ𝖑𝐤𝐲𝖗𝖊.key.id}.mp4"`,
-                async (Èrrðr) => {
-                  if (Èrrðr) {
-                    await Image_Button(
-                      ӄ𝖗𝖞ӄ𝖓𝖟,
-                      Ѷ𝖑𝐤𝐲𝖗𝖊,
-                      A𝖗𝖌𝖘,
-                      "./Ѷ𝖑𝐤𝐲𝖗𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖑𝐤𝐲𝖗𝖊_Forest.png",
-                      `╔◇══════════◇╗
+);
+await userEco
+.save()
+.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖑𝐤𝐲𝖗𝖊, Èrrðr));
+await userHunt
+.save()
+.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖑𝐤𝐲𝖗𝖊, Èrrðr));
+return;
+}
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
+userEco.money = userEco.money + Worth;
+await userEco
+.save()
+.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖑𝐤𝐲𝖗𝖊, Èrrðr));
+await userHunt
+.save()
+.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖑𝐤𝐲𝖗𝖊, Èrrðr));
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
+require("child_process").exec(
+`ffmpeg -i "${PokemonData.sprites.animated}" -pix_fmt yuv420p -c:v libx264 -movflags +faststart -filter:v crop='floor(in_w/2)*2:floor(in_h/2)*2' "./Ѷ𝖑𝐤𝐲𝖗𝖊🎒𝕭𝖆𝖌/${Ѷ𝖑𝐤𝐲𝖗𝖊.key.id}.mp4"`,
+async (Èrrðr) => {
+if (Èrrðr) {
+await Image_Button(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Ѷ𝖑𝐤𝐲𝖗𝖊,
+A𝖗𝖌𝖘,
+"./Ѷ𝖑𝐤𝐲𝖗𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖑𝐤𝐲𝖗𝖊_Forest.png",
+`╔◇══════════◇╗
 ┊ 𝐏𝐨𝐤𝐞𝐦𝐨𝐧🦋𝐇𝐮𝐧𝐭𝐢𝐧𝐠
 ┊ 𝐌𝐢𝐧𝐞𝐜𝐫𝐚𝐟𝐭 🪵 𝐄𝐝𝐢𝐭𝐢𝐨𝐧
 ╚◇══════════◇╝
 
 💫 *Name:* _Caught Nothing!_
 🪙 *Worth:* _0gold_`
-                    );
-                    await userEco
-                      .save()
-                      .catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖑𝐤𝐲𝖗𝖊, Èrrðr));
-                    await userHunt
-                      .save()
-                      .catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖑𝐤𝐲𝖗𝖊, Èrrðr));
-                    return;
-                  }
-                  `|⬡════════════════════════════════════════════════════════════════════「  𝐕𝐥𝐤𝐲𝐫𝐞 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
-                  await Video_Button(
-                    ӄ𝖗𝖞ӄ𝖓𝖟,
-                    Ѷ𝖑𝐤𝐲𝖗𝖊,
-                    A𝖗𝖌𝖘,
-                    `./Ѷ𝖑𝐤𝐲𝖗𝖊🎒𝕭𝖆𝖌/${Ѷ𝖑𝐤𝐲𝖗𝖊.key.id}.mp4`,
-                    `╔◇══════════◇╗
+);
+await userEco
+.save()
+.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖑𝐤𝐲𝖗𝖊, Èrrðr));
+await userHunt
+.save()
+.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖑𝐤𝐲𝖗𝖊, Èrrðr));
+return;
+}
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
+await Video_Button(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Ѷ𝖑𝐤𝐲𝖗𝖊,
+A𝖗𝖌𝖘,
+`./Ѷ𝖑𝐤𝐲𝖗𝖊🎒𝕭𝖆𝖌/${Ѷ𝖑𝐤𝐲𝖗𝖊.key.id}.mp4`,
+`╔◇══════════◇╗
 ┊ 𝐏𝐨𝐤𝐞𝐦𝐨𝐧🦋𝐇𝐮𝐧𝐭𝐢𝐧𝐠
 ┊ 𝐌𝐢𝐧𝐞𝐜𝐫𝐚𝐟𝐭 🪵 𝐄𝐝𝐢𝐭𝐢𝐨𝐧
 ╚◇══════════◇╝
@@ -244,20 +244,20 @@ exports.hunt = async (
 𝐓𝐨 𝐋𝐞𝐚𝐫𝐧 𝐌𝐨𝐫𝐞👇🏻
 💫 *Type:* _${prefix}pokedex ${PokemonData.name}_
 💫 *Type:* _${prefix}pokemon ${PokemonData.name}_`
-                  );
-                  return await fs.unlinkSync(
-                    `./Ѷ𝖑𝐤𝐲𝖗𝖊🎒𝕭𝖆𝖌/${Ѷ𝖑𝐤𝐲𝖗𝖊.key.id}.mp4`
-                  );
-                }
-              );
-            });
-        }
-      );
-    }
-  );
+);
+return await fs.unlinkSync(
+`./Ѷ𝖑𝐤𝐲𝖗𝖊🎒𝕭𝖆𝖌/${Ѷ𝖑𝐤𝐲𝖗𝖊.key.id}.mp4`
+);
+}
+);
+});
+}
+);
+}
+);
 };
-`|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|`;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
 
-// ════════════════════════|▷   (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!   ◁|════════════════════════
+//▷                                              (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!                                           ◁
 
-`|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|`;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
