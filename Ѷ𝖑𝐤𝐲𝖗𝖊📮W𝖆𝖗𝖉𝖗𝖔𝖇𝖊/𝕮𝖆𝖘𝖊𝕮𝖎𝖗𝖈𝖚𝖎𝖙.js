@@ -141,7 +141,6 @@ let { stare } = require("../Ѷ𝖑𝐤𝐲𝖗𝖊🗂️S𝖙𝖔𝖗𝖆𝖌�
 let { cuddle } = require("../Ѷ𝖑𝐤𝐲𝖗𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥞ᴀɴɪᴍᴇ/cuddle");
 let { scream } = require("../Ѷ𝖑𝐤𝐲𝖗𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥞ᴀɴɪᴍᴇ/scream");
 let { nervous } = require("../Ѷ𝖑𝐤𝐲𝖗𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥞ᴀɴɪᴍᴇ/nervous");
-let { zerotwo } = require("../Ѷ𝖑𝐤𝐲𝖗𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥞ᴀɴɪᴍᴇ/zerotwo");
 let { confused } = require("../Ѷ𝖑𝐤𝐲𝖗𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥞ᴀɴɪᴍᴇ/confused");
 let { highfive } = require("../Ѷ𝖑𝐤𝐲𝖗𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥞ᴀɴɪᴍᴇ/highfive");
 let { goodnight } = require("../Ѷ𝖑𝐤𝐲𝖗𝖊🗂️S𝖙𝖔𝖗𝖆𝖌𝖊/🥞ᴀɴɪᴍᴇ/goodnight");
@@ -1824,28 +1823,6 @@ await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
 case "yes":
 await yes(
-𝖍𝖆𝖜ӄ,
-Ѷ𝖑𝐤𝐲𝖗𝖊,
-Ѷ𝖑𝐤𝐲𝖗𝖊.A𝖗𝖌𝖘,
-Ѷ𝖑𝐤𝐲𝖗𝖊.pushName,
-Ѷ𝖑𝐤𝐲𝖗𝖊.fromMe,
-Ѷ𝖑𝐤𝐲𝖗𝖊.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Ѷ𝖑𝐤𝐲𝖗𝖊.quoted,
-Ѷ𝖑𝐤𝐲𝖗𝖊.isMedia,
-Ѷ𝖑𝐤𝐲𝖗𝖊.isGroup,
-Ѷ𝖑𝐤𝐲𝖗𝖊.groupAdmins,
-Ѷ𝖑𝐤𝐲𝖗𝖊.isBotAdmin,
-Ѷ𝖑𝐤𝐲𝖗𝖊.isSenderAdmin,
-Ѷ𝖑𝐤𝐲𝖗𝖊.isSenderTUF,
-Ѷ𝖑𝐤𝐲𝖗𝖊.commandName,
-Ѷ𝖑𝐤𝐲𝖗𝖊.Body,
-Ѷ𝖑𝐤𝐲𝖗𝖊.mentionByTag,
-Ѷ𝖑𝐤𝐲𝖗𝖊.mentionByReply
-);
-await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
-break;
-case "zerotwo":
-await zerotwo(
 𝖍𝖆𝖜ӄ,
 Ѷ𝖑𝐤𝐲𝖗𝖊,
 Ѷ𝖑𝐤𝐲𝖗𝖊.A𝖗𝖌𝖘,
