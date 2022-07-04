@@ -14,8 +14,7 @@ RUN aptitude install jq -y
 RUN aptitude install git -y 
 RUN aptitude install curl -y 
 RUN aptitude install wget -y 
-RUN aptitude install ffmpeg -y 
-RUN aptitude install python3 -y 
+RUN aptitude install ffmpeg -y
 RUN aptitude install nodejs -y 
 RUN aptitude install npm -y 
 RUN aptitude install ruby-full -y
@@ -25,8 +24,7 @@ RUN aptitude install python3-pip -y
 RUN aptitude install python-is-python3 -y 
 RUN npm install -g n yarn && n install 16.15.1 && hash -r
 RUN curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl && curl https://cli-assets.heroku.com/install.sh | sh && heroku plugins:install heroku-builds
-RUN chmod a+rx /usr/local/bin/youtube-dl && hash -r
-RUN git clone https://github.com/KryKnz/Vlkyre.git && cd Vlkyre
+RUN chmod a+rx /usr/local/bin/youtube-dl && hash -r && git clone https://github.com/KryKnz/Vlkyre.git && cd Vlkyre
 WORKDIR /Vlkyre
 RUN pip install -r ⭕𝖈𝖆𝖗𝖆.txt && yarn global add --ignore-engine spotify-dl spdl-core typescript forever && yarn config set ignore-engines true && yarn install --ignore-engines
 RUN git config --global user.name 'KryKnz' && git config --global user.email 'krakinzkon@gmail.com' && git config pull.rebase false
