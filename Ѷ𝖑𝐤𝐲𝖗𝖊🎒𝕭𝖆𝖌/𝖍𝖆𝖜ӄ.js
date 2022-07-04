@@ -25,11 +25,7 @@ let chalk = require(`chalk`);
 let goose = require(`mongoose`);
 let FileType = require(`file-type`);
 let PhoneNumber = require(`awesome-phonenumber`);
-let {
-smsg,
-getBuffer,
-getSizeMedia,
-} = require(`../Ѷ𝖑𝐤𝐲𝖗𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/ɴᴇᴄᴛᴏʀ`);
+let { smsg, getBuffer, getSizeMedia } = require(`../Ѷ𝖑𝐤𝐲𝖗𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/ɴᴇᴄᴛᴏʀ`);
 let {
 imageToWebp,
 videoToWebp,
@@ -37,7 +33,9 @@ writeExifImg,
 writeExifVid,
 } = require(`../Ѷ𝖑𝐤𝐲𝖗𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/exif`);
 let sequelize = DATABASE;
-let Ѷ𝖎𝖔𝖓 = makeInMemoryStore({ logger: pino().child({ level: "error", stream: "Ѷ𝖎𝖔𝖓" }),});
+let Ѷ𝖎𝖔𝖓 = makeInMemoryStore({
+logger: pino().child({ level: "error", stream: "Ѷ𝖎𝖔𝖓" }),
+});
 Ѷ𝖎𝖔𝖓?.readFromFile("./❗Ѷ𝖑𝐤𝐲𝖗𝖊❗/𝐕𝐥𝐤𝐲𝐫𝐞_𝐀𝐩𝐢®.json");
 setInterval(async () => {
 Ѷ𝖎𝖔𝖓?.writeToFile("./❗Ѷ𝖑𝐤𝐲𝖗𝖊❗/𝐕𝐥𝐤𝐲𝐫𝐞_𝐀𝐩𝐢®.json");
@@ -73,7 +71,9 @@ console.log(error);
 process.exit(0);
 }
 await sequelize.sync();
-const { state, saveState } = useSingleFileAuthState("./❗Ѷ𝖑𝐤𝐲𝖗𝖊❗/𝐕𝐥𝐤𝐲𝐫𝐞_𝐀𝐩𝐢®.json");
+const { state, saveState } = useSingleFileAuthState(
+"./❗Ѷ𝖑𝐤𝐲𝖗𝖊❗/𝐕𝐥𝐤𝐲𝐫𝐞_𝐀𝐩𝐢®.json"
+);
 let 𝖍𝖆𝖜ӄ = ᴋᴜɴᴋᴏɴɴᴇᴄᴛ({
 logger: pino({ level: `error` }),
 printQRInTerminal: true,
@@ -543,7 +543,9 @@ await connection_update.Vcnup(𝖚𝖕𝖉𝖆𝖙𝖊, startᴋᴜɴᴀɪ, 𝖍
 return console.log(chalk.redBright(𝕰𝖗𝖗𝖔𝖗));
 }
 });
-𝖍𝖆𝖜ӄ.ev.on("creds.update", saveState());
+𝖍𝖆𝖜ӄ.ev.on("creds.update", (𝖚𝖕𝖉𝖆𝖙𝖊) => {
+saveState(𝖚𝖕𝖉𝖆𝖙𝖊);
+});
 𝖍𝖆𝖜ӄ.ev.on(`messages.upsert`, async (𝖚𝖕𝖉𝖆𝖙𝖊) => {
 try {
 let messages_upsert = require(`../Ѷ𝖑𝐤𝐲𝖗𝖊🌗E𝖛𝖊𝖓𝖙𝖘/messages_upsert`);
@@ -594,11 +596,7 @@ let chalk = require(`chalk`);
 let goose = require("mongoose");
 let FileType = require(`file-type`);
 let PhoneNumber = require(`awesome-phonenumber`);
-let {
-smsg,
-getBuffer,
-getSizeMedia,
-} = require(`../Ѷ𝖑𝐤𝐲𝖗𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/ɴᴇᴄᴛᴏʀ`);
+let { smsg, getBuffer, getSizeMedia } = require(`../Ѷ𝖑𝐤𝐲𝖗𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/ɴᴇᴄᴛᴏʀ`);
 let {
 imageToWebp,
 videoToWebp,
