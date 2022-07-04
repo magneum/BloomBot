@@ -81,6 +81,7 @@ defaultQueryTimeoutMs: undefined,
 browser: ["Vlkyre", "Chrome", "4.0.0"],
 auth: state,
 getMessage: async (key) => {
+console.log(key);
 return {};
 },
 });
@@ -647,6 +648,7 @@ defaultQueryTimeoutMs: undefined,
 browser: ["Vlkyre", "Chrome", "4.0.0"],
 auth: state,
 getMessage: async (key) => {
+console.log(key);
 return {};
 },
 });
