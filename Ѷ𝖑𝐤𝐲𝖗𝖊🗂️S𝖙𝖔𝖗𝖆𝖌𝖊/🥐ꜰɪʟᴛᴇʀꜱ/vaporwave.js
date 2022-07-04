@@ -61,28 +61,16 @@ body,
 mentionByTag,
 mentionByReply
 ) => {
-if (A𝖗𝖌𝖘.length === 0) {
+if (!quoted) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Ѷ𝖑𝐤𝐲𝖗𝖊,
 `*❌ERROR:* No query provided!
 
-*⚡USAGE:* ${prefix}${Final_Name} <song name or youtube link>`
+*⚡USAGE:* ${prefix}${Final_Name} <reply to audio file>`
 );
 }
-
-if (A𝖗𝖌𝖘.includes("yout")) {
-if (!YouTube_Regex.test(A𝖗𝖌𝖘[0])) {
-return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ӄ𝖗𝖞ӄ𝖓𝖟,
-Ѷ𝖑𝐤𝐲𝖗𝖊,
-`*❌ERROR:* No query provided!
-
-*⚡USAGE:* ${prefix}${Final_Name} <song name or youtube link>`
-);
-}
-}
-
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 let FFmpegFile = `./Ѷ𝖑𝐤𝐲𝖗𝖊🎒𝕭𝖆𝖌/${Date.now()}${Ѷ𝖑𝐤𝐲𝖗𝖊.key.id}.mp3`;
 let RawFile = await ӄ𝖗𝖞ӄ𝖓𝖟.downloadAndSaveMediaMessage(quoted);
 exec(
