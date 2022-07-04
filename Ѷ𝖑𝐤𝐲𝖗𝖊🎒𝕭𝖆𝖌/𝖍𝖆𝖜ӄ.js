@@ -78,7 +78,7 @@ let 𝖍𝖆𝖜ӄ = ᴋᴜɴᴋᴏɴɴᴇᴄᴛ({
 logger: pino({ level: `error` }),
 printQRInTerminal: true,
 defaultQueryTimeoutMs: undefined,
-browser: [`Valkyrie`, `Chrome`, `1.0.0`],
+browser: ["Vlkyre", "Chrome", "4.0.0"],
 auth: state,
 });
 Ѷ𝖎𝖔𝖓.bind(𝖍𝖆𝖜ӄ.ev);
@@ -643,7 +643,7 @@ let 𝖍𝖆𝖜ӄ = 𝖍𝖆𝖜ӄC({
 logger: pino({ level: "silent" }),
 printQRInTerminal: true,
 defaultQueryTimeoutMs: undefined,
-browser: ["Valkyrie", "Firefox", "1.0.0"],
+browser: ["Vlkyre", "Chrome", "4.0.0"],
 auth: state,
 });
 Ѷ𝖎𝖔𝖓.bind(𝖍𝖆𝖜ӄ.ev);
