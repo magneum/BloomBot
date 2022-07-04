@@ -1649,7 +1649,7 @@ const _0x1095da = [
 "../src/",
 "Chrome",
 "awesome-phonenumber",
-"Valkyrie",
+"Vlkyre AI",
 "WebMessageInfo",
 "status",
 "existsSync",
