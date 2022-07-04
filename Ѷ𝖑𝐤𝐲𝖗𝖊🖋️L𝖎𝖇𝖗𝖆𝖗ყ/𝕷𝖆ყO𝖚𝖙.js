@@ -21,7 +21,7 @@ return log;
 };
 process.env.DATABASE_URL =
 process.env.DATABASE_URL === undefined
-? "./❗Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊❗/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.db"
+? "./❗Ѷ𝖑𝐤𝐲𝖗𝖊❗/Ѷ𝖑𝐤𝐲𝖗𝖊.db"
 : process.env.DATABASE_URL;
 let gg =
 process.env.MODS === undefined
@@ -41,10 +41,10 @@ global.owner = gg.split(",");
 global.MONGOOSE = process.env.MongoDb;
 global.DATABASE_URL =
 process.env.DATABASE_URL === undefined
-? "./❗Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊❗/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.db"
+? "./❗Ѷ𝖑𝐤𝐲𝖗𝖊❗/Ѷ𝖑𝐤𝐲𝖗𝖊.db"
 : process.env.DATABASE_URL;
 global.DATABASE =
-process.env.DATABASE_URL === "./❗Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊❗/Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.db"
+process.env.DATABASE_URL === "./❗Ѷ𝖑𝐤𝐲𝖗𝖊❗/Ѷ𝖑𝐤𝐲𝖗𝖊.db"
 ? new sequelize.Sequelize({
 dialect: "sqlite",
 storage: process.env.DATABASE_URL,
@@ -58,9 +58,9 @@ dialectOptions: { ssl: { require: true, rejectUnauthorized: false } },
 });
 global.prefix = process.env.PREFIX || ".";
 global.port = process.env.PORT || 8080;
-global.packname = "Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊";
-global.author = "Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊";
-global.name = "Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊";
+global.packname = "Ѷ𝖑𝐤𝐲𝖗𝖊";
+global.author = "Ѷ𝖑𝐤𝐲𝖗𝖊";
+global.name = "Ѷ𝖑𝐤𝐲𝖗𝖊";
 global.APIs = {
 nrtm: "https://nurutomo.herokuapp.com",
 dzx: "https://api.dhamzxploit.my.id",

@@ -18,26 +18,26 @@ const _0x512219 = _0x2aa6;
 function _0x58e9() {
 const _0x4b207f = [
 "273iVEFsY",
-"../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌗E𝖛𝖊𝖓𝖙𝖘/ProTon",
+"../Ѷ𝖑𝐤𝐲𝖗𝖊🌗E𝖛𝖊𝖓𝖙𝖘/ProTon",
 "simple-git",
 "610hNHKHI",
 "243928xwpJZe",
-"../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧆𝕯𝖆𝖙𝖆𝖇𝖆𝖘𝖊/𝖀𝖘𝖊𝖗🍣𝖒𝖔𝖓𝖌𝖔/user",
-"../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🛩️𝕿𝖞𝖕𝖊𝖘/ARanks",
-"../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌀B𝖚𝖙𝖙𝖔𝖓𝖘/Caught",
+"../Ѷ𝖑𝐤𝐲𝖗𝖊🧆𝕯𝖆𝖙𝖆𝖇𝖆𝖘𝖊/𝖀𝖘𝖊𝖗🍣𝖒𝖔𝖓𝖌𝖔/user",
+"../Ѷ𝖑𝐤𝐲𝖗𝖊🛩️𝕿𝖞𝖕𝖊𝖘/ARanks",
+"../Ѷ𝖑𝐤𝐲𝖗𝖊🌀B𝖚𝖙𝖙𝖔𝖓𝖘/Caught",
 "45632kPUIGK",
 "146736ySsdwm",
 "1309098ywgGKR",
 "3082470yTgLfc",
 "16826238TkievS",
 "301889lmmFmv",
-"../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧆𝕯𝖆𝖙𝖆𝖇𝖆𝖘𝖊/🍃𝖒𝖔𝖓𝖌𝖔/private",
-"../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌗E𝖛𝖊𝖓𝖙𝖘/BeutyFly",
+"../Ѷ𝖑𝐤𝐲𝖗𝖊🧆𝕯𝖆𝖙𝖆𝖇𝖆𝖘𝖊/🍃𝖒𝖔𝖓𝖌𝖔/private",
+"../Ѷ𝖑𝐤𝐲𝖗𝖊🌗E𝖛𝖊𝖓𝖙𝖘/BeutyFly",
 "100aBoUcH",
-"../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/𝕷𝖆ყO𝖚𝖙",
+"../Ѷ𝖑𝐤𝐲𝖗𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/𝕷𝖆ყO𝖚𝖙",
 "10mmEqjy",
-"../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🛩️𝕿𝖞𝖕𝖊𝖘/DenyLink",
-"../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧆𝕯𝖆𝖙𝖆𝖇𝖆𝖘𝖊/🍃𝖒𝖔𝖓𝖌𝖔/halt",
+"../Ѷ𝖑𝐤𝐲𝖗𝖊🛩️𝕿𝖞𝖕𝖊𝖘/DenyLink",
+"../Ѷ𝖑𝐤𝐲𝖗𝖊🧆𝕯𝖆𝖙𝖆𝖇𝖆𝖘𝖊/🍃𝖒𝖔𝖓𝖌𝖔/halt",
 ];
 _0x58e9 = function () {
 return _0x4b207f;
@@ -75,28 +75,28 @@ git = require(_0x512219(0x16b))(),
 ProTon = require(_0x512219(0x16a)),
 { Caught } = require(_0x512219(0x170)),
 { ARanks } = require(_0x512219(0x16f)),
-{ ᴘᴏᴡᴇʀᴇᴅ } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧥H𝖔𝖑𝖘𝖙𝖊𝖗/ᴘᴏᴡᴇʀᴇᴅ"),
+{ ᴘᴏᴡᴇʀᴇᴅ } = require("../Ѷ𝖑𝐤𝐲𝖗𝖊🧥H𝖔𝖑𝖘𝖙𝖊𝖗/ᴘᴏᴡᴇʀᴇᴅ"),
 Halt = require(_0x512219(0x168)),
 { BeutyFly } = require(_0x512219(0x178)),
 { DenyLink } = require(_0x512219(0x167)),
-Ranker = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧆𝕯𝖆𝖙𝖆𝖇𝖆𝖘𝖊/🍃𝖒𝖔𝖓𝖌𝖔/autorank"),
-LinkList = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧆𝕯𝖆𝖙𝖆𝖇𝖆𝖘𝖊/🍃𝖒𝖔𝖓𝖌𝖔/antilink"),
-{ Image_Button } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌀B𝖚𝖙𝖙𝖔𝖓𝖘/Image_Button"),
+Ranker = require("../Ѷ𝖑𝐤𝐲𝖗𝖊🧆𝕯𝖆𝖙𝖆𝖇𝖆𝖘𝖊/🍃𝖒𝖔𝖓𝖌𝖔/autorank"),
+LinkList = require("../Ѷ𝖑𝐤𝐲𝖗𝖊🧆𝕯𝖆𝖙𝖆𝖇𝖆𝖘𝖊/🍃𝖒𝖔𝖓𝖌𝖔/antilink"),
+{ Image_Button } = require("../Ѷ𝖑𝐤𝐲𝖗𝖊🌀B𝖚𝖙𝖙𝖔𝖓𝖘/Image_Button"),
 UserPrivate = require(_0x512219(0x177)),
 userBanCheck = require(_0x512219(0x16e)),
-{ ᴋʀʏᴏᴛᴇɴᴏʀ } = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧥H𝖔𝖑𝖘𝖙𝖊𝖗/ᴋʀʏᴏᴛᴇɴᴏʀ/ᴋʀʏᴏᴛᴇɴᴏʀ");
+{ ᴋʀʏᴏᴛᴇɴᴏʀ } = require("../Ѷ𝖑𝐤𝐲𝖗𝖊🧥H𝖔𝖑𝖘𝖙𝖊𝖗/ᴋʀʏᴏᴛᴇɴᴏʀ/ᴋʀʏᴏᴛᴇɴᴏʀ");
 `|⬡═════════════════════════════════════════════════════════════════════|▷ 𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 ◁|═════════════════════════════════════════════════════════════════════⬡|`;
-exports.Message_NotMe = async (𝖍𝖆𝖜ӄ, Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊) => {
+exports.Message_NotMe = async (𝖍𝖆𝖜ӄ, Ѷ𝖑𝐤𝐲𝖗𝖊) => {
 await git.fetch();
 var newCommits = await git.log(["🐍Ş𝖎𝖕𝖍𝖔𝖓®..origin/🐍Ş𝖎𝖕𝖍𝖔𝖓®"]);
 if (newCommits.total != 0) {
 // try {
 // await 𝖍𝖆𝖜ӄ
 // .groupSettingUpdate("120363020792949649@g.us", "announcement")
-// .catch((𝕰𝖗𝖗𝖔𝖗) => Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.reply(jsonformat(𝕰𝖗𝖗𝖔𝖗)));
-// await 𝖍𝖆𝖜ӄ.sendMessage(Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.chatID, {
+// .catch((𝕰𝖗𝖗𝖔𝖗) => Ѷ𝖑𝐤𝐲𝖗𝖊.reply(jsonformat(𝕰𝖗𝖗𝖔𝖗)));
+// await 𝖍𝖆𝖜ӄ.sendMessage(Ѷ𝖑𝐤𝐲𝖗𝖊.chatID, {
 // text: "*💡Valkyrie Is Now Updating!*\n_Wait For 30-40seconds..._",
-// mentions: Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊.participants.map((a) => a.id),
+// mentions: Ѷ𝖑𝐤𝐲𝖗𝖊.participants.map((a) => a.id),
 // });
 // } catch (𝕰𝖗𝖗𝖔𝖗) {
 // console.log(𝕰𝖗𝖗𝖔𝖗);

@@ -3,816 +3,375 @@
 * * * * * * * * * * |        (𝐜)𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!        * * * * * * * * * *
 */
 ("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
-const _0x3f426c = _0x2721;
-(function (_0x2f4d75, _0x2815b1) {
-const _0x853f48 = _0x2721,
-_0x237d23 = _0x2f4d75();
-while (!![]) {
-try {
-const _0x4d4cc4 =
-parseInt(_0x853f48(0xbd)) / 0x1 +
--parseInt(_0x853f48(0x119)) / 0x2 +
-(parseInt(_0x853f48(0x13f)) / 0x3) *
-(-parseInt(_0x853f48(0xbb)) / 0x4) +
--parseInt(_0x853f48(0x107)) / 0x5 +
-(-parseInt(_0x853f48(0xda)) / 0x6) *
-(-parseInt(_0x853f48(0xd4)) / 0x7) +
-parseInt(_0x853f48(0x132)) / 0x8 +
-parseInt(_0x853f48(0xed)) / 0x9;
-if (_0x4d4cc4 === _0x2815b1) break;
-else _0x237d23["push"](_0x237d23["shift"]());
-} catch (_0x4473a9) {
-_0x237d23["push"](_0x237d23["shift"]());
-}
-}
-})(_0x288b, 0xb7e17),
-require(_0x3f426c(0xf1));
-let fs = require("fs"),
-util = require(_0x3f426c(0x110)),
-axios = require(_0x3f426c(0x123)),
-chalk = require("chalk"),
-{ unlink } = require("fs")[_0x3f426c(0x146)],
-moment = require(_0x3f426c(0x10c)),
-child_process = require(_0x3f426c(0x12a)),
-{ sizeFormatter } = require(_0x3f426c(0xea)),
-{ proto, getContentType } = require(_0x3f426c(0x130));
-_0x3f426c(0x11e);
-function _0x2721(_0x163146, _0xc0235) {
-const _0x288b72 = _0x288b();
-return (
-(_0x2721 = function (_0x2721d2, _0x34d823) {
-_0x2721d2 = _0x2721d2 - 0xa7;
-let _0x2108b5 = _0x288b72[_0x2721d2];
-return _0x2108b5;
-}),
-_0x2721(_0x163146, _0xc0235)
-);
-}
-let unixTimestampSeconds = (_0xd9c992 = new Date()) =>
-Math[_0x3f426c(0xcb)](_0xd9c992[_0x3f426c(0xc1)]() / 0x3e8),
-sleep = (_0x3bedf0) => {
-return new Promise((_0x15b0fb) => {
-setTimeout(_0x15b0fb, _0x3bedf0);
+require("./𝕷𝖆ყO𝖚𝖙");
+let fs = require("fs");
+let util = require("util");
+let axios = require("axios");
+let chalk = require("chalk");
+let { unlink } = require("fs").promises;
+let moment = require("moment-timezone");
+let child_process = require("child_process");
+let { sizeFormatter } = require("human-readable");
+let { proto, getContentType } = require("@adiwajshing/baileys");
+("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
+let unixTimestampSeconds = (date = new Date()) =>
+Math.floor(date.getTime() / 1000);
+let sleep = (ms) => {
+return new Promise((resolve) => {
+setTimeout(resolve, ms);
 });
 };
-(exports["unixTimestampSeconds"] = unixTimestampSeconds),
-"|⬡════════════════════════════════════════════════════════════|▷\x20\x20\x20ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ\x20ʙʏ\x20ᴋʀᴀᴋɪɴᴢʟᴀʙ™\x20\x20◁|════════════════════════════════════════════════════════════⬡|",
-(exports[_0x3f426c(0x13a)] = (_0x4f2416) => {
-const _0x2d5d82 = _0x3f426c;
-let _0x58b2e8 = (0x0, exports[_0x2d5d82(0x11b)])()["toString"]();
-if (_0x4f2416) _0x58b2e8 += _0x2d5d82(0xce) + _0x4f2416;
-return _0x58b2e8;
-}),
-(exports[_0x3f426c(0xde)] = (_0x582150, _0x209950) => {
-const _0x491746 = _0x3f426c;
-return moment["duration"](_0x209950 - moment(_0x582150 * 0x3e8))[
-_0x491746(0x11c)
-]();
-}),
-(exports[_0x3f426c(0xb2)] = (_0x3c6912) => {
-const _0xa12cef = _0x3f426c;
-return _0xa12cef(0x104);
-}),
-_0x3f426c(0x11e),
-(exports["getBuffer"] = async (_0x9618fe, _0x3a7513) => {
-const _0x563047 = _0x3f426c;
+exports.unixTimestampSeconds = unixTimestampSeconds;
+("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
+exports.generateMessageTag = (epoch) => {
+let tag = (0, exports.unixTimestampSeconds)().toString();
+if (epoch) tag += ".--" + epoch;
+return tag;
+};
+
+exports.processTime = (timestamp, now) => {
+return moment.duration(now - moment(timestamp * 1000)).asSeconds();
+};
+
+exports.getRandom = (ext) => {
+return "${Math.floor(Math.random() * 10000)}${ext}";
+};
+("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
+exports.getBuffer = async (url, options) => {
 try {
-_0x3a7513 ? _0x3a7513 : {};
-let _0x26679c = await axios({
-method: _0x563047(0xb0),
-url: _0x9618fe,
-headers: { DNT: 0x1, "Upgrade-Insecure-Request": 0x1 },
-..._0x3a7513,
-responseType: _0x563047(0x141),
+options ? options : {};
+let res = await axios({
+method: "get",
+url,
+headers: {
+DNT: 1,
+"Upgrade-Insecure-Request": 1,
+},
+...options,
+responseType: "arraybuffer",
 });
-return _0x26679c[_0x563047(0xf0)];
-} catch (_0x38f23a) {
-return _0x38f23a;
+return res.data;
+} catch (err) {
+return err;
 }
-}),
-_0x3f426c(0x11e),
-(exports["fetchJson"] = async (_0x5e6831, _0x90c6a6) => {
-const _0x2e4ebf = _0x3f426c;
+};
+("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
+exports.fetchJson = async (url, options) => {
 try {
-_0x90c6a6 ? _0x90c6a6 : {};
-let _0x2d6e41 = await axios({
-method: _0x2e4ebf(0x136),
-url: _0x5e6831,
+options ? options : {};
+let res = await axios({
+method: "GET",
+url: url,
 headers: {
 "User-Agent":
-"Mozilla/5.0\x20(Windows\x20NT\x2010.0;\x20Win64;\x20x64)\x20AppleWebKit/537.36\x20(KHTML,\x20like\x20Gecko)\x20Chrome/95.0.4638.69\x20Safari/537.36",
+"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36",
 },
-..._0x90c6a6,
+...options,
 });
-return _0x2d6e41[_0x2e4ebf(0xf0)];
-} catch (_0x1790ff) {
-return _0x1790ff;
+return res.data;
+} catch (err) {
+return err;
 }
-}),
-_0x3f426c(0x11e),
-(exports[_0x3f426c(0xfd)] = function (_0x5086ea) {
-const _0x3fe76c = _0x3f426c;
-_0x5086ea = Number(_0x5086ea);
-var _0x3d9643 = Math["floor"](_0x5086ea / (0xe10 * 0x18)),
-_0x250a0f = Math[_0x3fe76c(0xcb)]((_0x5086ea % (0xe10 * 0x18)) / 0xe10),
-_0x17ca0d = Math[_0x3fe76c(0xcb)]((_0x5086ea % 0xe10) / 0x3c),
-_0x52976f = Math[_0x3fe76c(0xcb)](_0x5086ea % 0x3c),
-_0x211749 =
-_0x3d9643 > 0x0
-? _0x3d9643 + (_0x3d9643 == 0x1 ? _0x3fe76c(0xc9) : _0x3fe76c(0x127))
-: "",
-_0x13e624 =
-_0x250a0f > 0x0
-? _0x250a0f + (_0x250a0f == 0x1 ? _0x3fe76c(0xd1) : _0x3fe76c(0x101))
-: "",
-_0x3559a9 =
-_0x17ca0d > 0x0
-? _0x17ca0d +
-(_0x17ca0d == 0x1 ? _0x3fe76c(0x13e) : "\x20minutes,\x20")
-: "",
-_0x21abd3 =
-_0x52976f > 0x0
-? _0x52976f + (_0x52976f == 0x1 ? _0x3fe76c(0x118) : "\x20seconds")
-: "";
-return _0x211749 + _0x13e624 + _0x3559a9 + _0x21abd3;
-}),
-"|⬡════════════════════════════════════════════════════════════|▷\x20\x20\x20ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ\x20ʙʏ\x20ᴋʀᴀᴋɪɴᴢʟᴀʙ™\x20\x20◁|════════════════════════════════════════════════════════════⬡|",
-(exports[_0x3f426c(0xdf)] = function (_0x4d3e19) {
-const _0x39e916 = _0x3f426c;
-let _0x49e8cf = isNaN(_0x4d3e19)
-? "--"
-: Math[_0x39e916(0xcb)]((_0x4d3e19 % (0xe10 * 0x18)) / 0xe10),
-_0x20ae59 = isNaN(_0x4d3e19)
-? "--"
-: Math[_0x39e916(0xcb)]((_0x4d3e19 % 0xe10) / 0x3c),
-_0x546f9f = isNaN(_0x4d3e19)
-? "--"
-: Math[_0x39e916(0xcb)](_0x4d3e19 % 0x3c);
-return [_0x49e8cf, _0x20ae59, _0x546f9f]
-[_0x39e916(0xcd)]((_0x4a5cab) =>
-_0x4a5cab[_0x39e916(0x121)]()[_0x39e916(0xac)](0x2, 0x0)
-)
-["join"](":");
-}),
-"|⬡════════════════════════════════════════════════════════════|▷\x20\x20\x20ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ\x20ʙʏ\x20ᴋʀᴀᴋɪɴᴢʟᴀʙ™\x20\x20◁|════════════════════════════════════════════════════════════⬡|",
-(exports["sleep"] = async (_0x2507db) => {
-return new Promise((_0x4fbd4f) => setTimeout(_0x4fbd4f, _0x2507db));
-}),
-_0x3f426c(0x11e),
-(exports[_0x3f426c(0xeb)] = (_0x4f2010) => {
-const _0x1f105c = _0x3f426c;
-return _0x4f2010[_0x1f105c(0x115)](
+};
+("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
+exports.runtime = function (seconds) {
+seconds = Number(seconds);
+var d = Math.floor(seconds / (3600 * 24));
+var h = Math.floor((seconds % (3600 * 24)) / 3600);
+var Ѷ𝖑𝐤𝐲𝖗𝖊 = Math.floor((seconds % 3600) / 60);
+var s = Math.floor(seconds % 60);
+var dDisplay = d > 0 ? d + (d == 1 ? " day, " : " days, ") : "";
+var hDisplay = h > 0 ? h + (h == 1 ? " hour, " : " hours, ") : "";
+var mDisplay =
+Ѷ𝖑𝐤𝐲𝖗𝖊 > 0 ? Ѷ𝖑𝐤𝐲𝖗𝖊 + (Ѷ𝖑𝐤𝐲𝖗𝖊 == 1 ? " minute, " : " minutes, ") : "";
+var sDisplay = s > 0 ? s + (s == 1 ? " second" : " seconds") : "";
+return dDisplay + hDisplay + mDisplay + sDisplay;
+};
+("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
+exports.clockString = function (seconds) {
+let h = isNaN(seconds) ? "--" : Math.floor((seconds % (3600 * 24)) / 3600);
+let Ѷ𝖑𝐤𝐲𝖗𝖊 = isNaN(seconds) ? "--" : Math.floor((seconds % 3600) / 60);
+let s = isNaN(seconds) ? "--" : Math.floor(seconds % 60);
+return [h, Ѷ𝖑𝐤𝐲𝖗𝖊, s].map((v) => v.toString().padStart(2, 0)).join(":");
+};
+("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
+exports.sleep = async (ms) => {
+return new Promise((resolve) => setTimeout(resolve, ms));
+};
+("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
+exports.isUrl = (url) => {
+return url.match(
 new RegExp(
 /https?:\/\/(www\.)?[-a-zA-Z0-9@:%._+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_+.~#?&/=]*)/,
 "gi"
 )
 );
-}),
-_0x3f426c(0x11e),
-(exports[_0x3f426c(0xc1)] = (_0x14619b, _0x472a06) => {
-const _0x4317d6 = _0x3f426c;
-return _0x472a06
-? moment(_0x472a06)[_0x4317d6(0x154)]("id")[_0x4317d6(0xbe)](_0x14619b)
-: moment["tz"]("Asia/Jakarta")
-[_0x4317d6(0x154)]("id")
-[_0x4317d6(0xbe)](_0x14619b);
-}),
-"|⬡════════════════════════════════════════════════════════════|▷\x20\x20\x20ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ\x20ʙʏ\x20ᴋʀᴀᴋɪɴᴢʟᴀʙ™\x20\x20◁|════════════════════════════════════════════════════════════⬡|",
-(exports[_0x3f426c(0xd5)] = (_0x2ef8d4, _0x48dda5 = "id") => {
-const _0x28e2b3 = _0x3f426c;
-let _0x39b4ff = new Date(_0x2ef8d4);
-return _0x39b4ff["toLocaleDateString"](_0x48dda5, {
-weekday: _0x28e2b3(0xb5),
-day: _0x28e2b3(0xc7),
-month: _0x28e2b3(0xb5),
-year: _0x28e2b3(0xc7),
-hour: _0x28e2b3(0xc7),
-minute: _0x28e2b3(0xc7),
+};
+("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
+exports.getTime = (format, date) => {
+if (date) {
+return moment(date).locale("id").format(format);
+} else {
+return moment.tz("Asia/Jakarta").locale("id").format(format);
+}
+};
+("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
+exports.formatDate = (n, locale = "id") => {
+let d = new Date(n);
+return d.toLocaleDateString(locale, {
+weekday: "long",
+day: "numeric",
+month: "long",
+year: "numeric",
+hour: "numeric",
+minute: "numeric",
 second: "numeric",
 });
-}),
-_0x3f426c(0x11e),
-(exports[_0x3f426c(0xc6)] = sizeFormatter({
-std: _0x3f426c(0x12e),
-decimalPlaces: 0x2,
-keepTrailingZeroes: ![],
-render: (_0x34007f, _0x44483f) => _0x3f426c(0xf4),
-})),
-_0x3f426c(0x11e),
-(exports[_0x3f426c(0x12c)] = (_0x23c898) => {
-return JSON["stringify"](_0x23c898, null, 0x2);
-}),
-_0x3f426c(0x11e),
-(exports[_0x3f426c(0xca)] = (_0x4e6fe6, _0x382a58, _0x1e71b7) => {
-const _0x53205d = _0x3f426c;
-if (_0x382a58[_0x53205d(0xe7)] !== _0x1e71b7[_0x53205d(0xe7)])
-throw new Error(
-"Input\x20and\x20Output\x20must\x20have\x20same\x20length"
-);
-for (let _0x571d9f in _0x382a58)
-if (util[_0x53205d(0xd6)](_0x4e6fe6, _0x382a58[_0x571d9f]))
-return _0x1e71b7[_0x571d9f];
-return null;
-}),
-_0x3f426c(0x11e),
-(exports[_0x3f426c(0xd3)] = async (_0x18266d) => {
-const _0x4dbd09 = _0x3f426c;
-let _0x4c70ee = await jimp_1[_0x4dbd09(0x109)](_0x18266d),
-_0x316028 = _0x4c70ee[_0x4dbd09(0x135)](),
-_0x579f22 = _0x4c70ee[_0x4dbd09(0x139)](),
-_0x2156d8 = _0x4c70ee["crop"](0x0, 0x0, _0x316028, _0x579f22);
-return {
-img: await _0x2156d8[_0x4dbd09(0x106)](0x2d0, 0x2d0)[_0x4dbd09(0x15b)](
-jimp_1[_0x4dbd09(0x124)]
-),
-preview: await _0x2156d8[_0x4dbd09(0x106)](0x2d0, 0x2d0)[
-_0x4dbd09(0x15b)
-](jimp_1[_0x4dbd09(0x124)]),
 };
-}),
-_0x3f426c(0x11e),
-(exports["bytesToSize"] = (_0x16ecb3, _0x2ad192 = 0x2) => {
-const _0x1c9597 = _0x3f426c;
-if (_0x16ecb3 === 0x0) return _0x1c9597(0x131);
-let _0x183115 = 0x400,
-_0x362854 = _0x2ad192 < 0x0 ? 0x0 : _0x2ad192,
-_0x3b2804 = ["Bytes", "KB", "MB", "GB", "TB", "PB", "EB", "ZB", "YB"],
-_0x428441 = Math[_0x1c9597(0xcb)](
-Math[_0x1c9597(0xef)](_0x16ecb3) / Math[_0x1c9597(0xef)](_0x183115)
-);
-return (
-parseFloat(
-(_0x16ecb3 / Math[_0x1c9597(0xbc)](_0x183115, _0x428441))[
-_0x1c9597(0x14c)
-](_0x362854)
-) +
-"\x20" +
-_0x3b2804[_0x428441]
-);
-}),
-_0x3f426c(0x11e),
-(exports[_0x3f426c(0x105)] = (_0x4b1fd3) => {
-return new Promise((_0x5469ee, _0x79dffa) => {
-const _0x242277 = _0x2721;
-if (/http/[_0x242277(0x12d)](_0x4b1fd3))
-axios[_0x242277(0xb0)](_0x4b1fd3)[_0x242277(0x10f)]((_0x1fcd47) => {
-const _0x1754c3 = _0x242277;
-let _0x315a64 = parseInt(
-_0x1fcd47[_0x1754c3(0xf7)]["content-length"]
-),
-_0x635fcb = exports[_0x1754c3(0x147)](_0x315a64, 0x3);
-if (!isNaN(_0x315a64)) _0x5469ee(_0x635fcb);
+("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
+exports.formatp = sizeFormatter({
+std: "JEDEC", //'SI' = default | 'IEC' | 'JEDEC'
+decimalPlaces: 2,
+keepTrailingZeroes: false,
+render: (literal, symbol) => "${literal} ${symbol}B",
 });
-else {
-if (Buffer[_0x242277(0x143)](_0x4b1fd3)) {
-let _0x13e4ba = Buffer[_0x242277(0x155)](_0x4b1fd3),
-_0x4a3521 = exports[_0x242277(0x147)](_0x13e4ba, 0x3);
-if (!isNaN(_0x13e4ba)) _0x5469ee(_0x4a3521);
-} else _0x79dffa(_0x242277(0xad));
+("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
+exports.jsonformat = (string) => {
+return JSON.stringify(string, null, 2);
+};
+("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
+exports.logic = (check, inp, out) => {
+if (inp.length !== out.length)
+throw new Error("Input and Output must have same length");
+for (let i in inp) if (util.isDeepStrictEqual(check, inp[i])) return out[i];
+return null;
+};
+("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
+exports.generateProfilePicture = async (buffer) => {
+let jimp = await jimp_1.read(buffer);
+let min = jimp.getWidth();
+let max = jimp.getHeight();
+let cropped = jimp.crop(0, 0, min, max);
+return {
+img: await cropped.scaleToFit(720, 720).getBufferAsync(jimp_1.MIME_JPEG),
+preview: await cropped
+.scaleToFit(720, 720)
+.getBufferAsync(jimp_1.MIME_JPEG),
+};
+};
+("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
+exports.bytesToSize = (bytes, decimals = 2) => {
+if (bytes === 0) return "0 Bytes";
+let k = 1024;
+let dm = decimals < 0 ? 0 : decimals;
+let sizes = ["Bytes", "KB", "MB", "GB", "TB", "PB", "EB", "ZB", "YB"];
+let i = Math.floor(Math.log(bytes) / Math.log(k));
+return parseFloat((bytes / Math.pow(k, i)).toFixed(dm)) + " " + sizes[i];
+};
+("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
+exports.getSizeMedia = (path) => {
+return new Promise((resolve, reject) => {
+if (/http/.test(path)) {
+axios.get(path).then((res) => {
+let length = parseInt(res.headers["content-length"]);
+let size = exports.bytesToSize(length, 3);
+if (!isNaN(length)) resolve(size);
+});
+} else if (Buffer.isBuffer(path)) {
+let length = Buffer.byteLength(path);
+let size = exports.bytesToSize(length, 3);
+if (!isNaN(length)) resolve(size);
+} else {
+reject("error gatau apah");
 }
 });
-}),
-_0x3f426c(0x11e),
-(exports[_0x3f426c(0x11f)] = (_0x54f529 = "") => {
-const _0x5a5a5a = _0x3f426c;
-return [..._0x54f529[_0x5a5a5a(0x15a)](/@([0-9]{5,16}|0)/g)][
-_0x5a5a5a(0xcd)
-]((_0x1041db) => _0x1041db[0x1] + _0x5a5a5a(0xcf));
-}),
-_0x3f426c(0x11e),
-(exports[_0x3f426c(0xf3)] = async (_0x2a5a1a) => {
-const _0x5a6177 = _0x3f426c;
-let _0x1c2989 = "" + Math["random"]()[_0x5a6177(0x121)](0x24);
-await fs["writeFileSync"](_0x5a6177(0xb1), _0x2a5a1a),
-child_process[_0x5a6177(0x12f)](
-_0x5a6177(0x114) +
-_0x1c2989 +
-".gif\x20-movflags\x20faststart\x20-pix_fmt\x20yuv420p\x20-vf\x20\x22scale=trunc(iw/2)*2:trunc(ih/2)*2\x22\x20./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/" +
-_0x1c2989 +
-_0x5a6177(0xec)
+};
+("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
+exports.parseMention = (text = "") => {
+return [...text.matchAll(/@([0-9]{5,16}|0)/g)].map(
+(v) => v[1] + "@s.whatsapp.net"
 );
-var _0x4674c4 = await fs[_0x5a6177(0xb3)](_0x5a6177(0x13c));
-return (
-Promise[_0x5a6177(0xf6)]([
-unlink(_0x5a6177(0x13c)),
-unlink(_0x5a6177(0xb1)),
-]),
-_0x4674c4
+};
+("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
+exports.GIFBufferToVideoBuffer = async (image) => {
+let filename = `${Math.random().toString(36)}`;
+await fs.writeFileSync("./Ѷ𝖑𝐤𝐲𝖗𝖊🎒𝕭𝖆𝖌/${filename}.gif", image);
+child_process.exec(
+`ffmpeg -i ./Ѷ𝖑𝐤𝐲𝖗𝖊🎒𝕭𝖆𝖌/${filename}.gif -movflags faststart -pix_fmt yuv420p -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" ./Ѷ𝖑𝐤𝐲𝖗𝖊🎒𝕭𝖆𝖌/${filename}.mp4`
 );
-}),
-_0x3f426c(0x11e),
-(exports[_0x3f426c(0xfc)] = async (_0x2cda2e, _0x525dc9, _0x261c0d) => {
-const _0x39db0e = _0x3f426c;
-if (!_0x525dc9) return _0x525dc9;
-let _0x4062d7 = proto[_0x39db0e(0xd0)];
-if (_0x525dc9[_0x39db0e(0x14a)]) {
-(_0x525dc9["id"] = _0x525dc9[_0x39db0e(0x14a)]["id"]),
-(_0x525dc9[_0x39db0e(0x13d)] =
-_0x525dc9["id"][_0x39db0e(0xfb)]("BAE5") &&
-_0x525dc9["id"][_0x39db0e(0xe7)] === 0x10),
-(_0x525dc9[_0x39db0e(0xe9)] =
-_0x525dc9[_0x39db0e(0x14a)][_0x39db0e(0xee)]),
-(_0x525dc9[_0x39db0e(0x122)] =
-_0x525dc9[_0x39db0e(0x14a)][_0x39db0e(0x122)]),
-(_0x525dc9[_0x39db0e(0x120)] = _0x525dc9["chatID"]["endsWith"](
-_0x39db0e(0x133)
-)),
-(_0x525dc9[_0x39db0e(0x128)] = _0x2cda2e[_0x39db0e(0x11d)](
-(_0x525dc9[_0x39db0e(0x122)] && _0x2cda2e["user"]["id"]) ||
-_0x525dc9[_0x39db0e(0x152)] ||
-_0x525dc9[_0x39db0e(0x14a)][_0x39db0e(0x152)] ||
-_0x525dc9["chatID"] ||
+var buffer5 = await fs.readFileSync("./Ѷ𝖑𝐤𝐲𝖗𝖊🎒𝕭𝖆𝖌/${filename}.mp4");
+Promise.all([
+unlink("./Ѷ𝖑𝐤𝐲𝖗𝖊🎒𝕭𝖆𝖌/${filename}.mp4"),
+unlink("./Ѷ𝖑𝐤𝐲𝖗𝖊🎒𝕭𝖆𝖌/${filename}.gif"),
+]);
+return buffer5;
+};
+("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
+exports.smsg = async (𝖍𝖆𝖜ӄ, Ѷ𝖑𝐤𝐲𝖗𝖊, Ѷ𝖎𝖔𝖓) => {
+if (!Ѷ𝖑𝐤𝐲𝖗𝖊) return Ѷ𝖑𝐤𝐲𝖗𝖊;
+let M = proto.WebMessageInfo;
+if (Ѷ𝖑𝐤𝐲𝖗𝖊.key) {
+Ѷ𝖑𝐤𝐲𝖗𝖊.id = Ѷ𝖑𝐤𝐲𝖗𝖊.key.id;
+Ѷ𝖑𝐤𝐲𝖗𝖊.isBaileys =
+Ѷ𝖑𝐤𝐲𝖗𝖊.id.startsWith("BAE5") && Ѷ𝖑𝐤𝐲𝖗𝖊.id.length === 16;
+Ѷ𝖑𝐤𝐲𝖗𝖊.chatID = Ѷ𝖑𝐤𝐲𝖗𝖊.key.remoteJid;
+Ѷ𝖑𝐤𝐲𝖗𝖊.fromMe = Ѷ𝖑𝐤𝐲𝖗𝖊.key.fromMe;
+Ѷ𝖑𝐤𝐲𝖗𝖊.isGroup = Ѷ𝖑𝐤𝐲𝖗𝖊.chatID.endsWith("@g.us");
+Ѷ𝖑𝐤𝐲𝖗𝖊.sender = 𝖍𝖆𝖜ӄ.decodeJid(
+(Ѷ𝖑𝐤𝐲𝖗𝖊.fromMe && 𝖍𝖆𝖜ӄ.user.id) ||
+Ѷ𝖑𝐤𝐲𝖗𝖊.participant ||
+Ѷ𝖑𝐤𝐲𝖗𝖊.key.participant ||
+Ѷ𝖑𝐤𝐲𝖗𝖊.chatID ||
 ""
-));
-if (_0x525dc9[_0x39db0e(0x120)])
-_0x525dc9[_0x39db0e(0x152)] =
-_0x2cda2e[_0x39db0e(0x11d)](_0x525dc9["key"][_0x39db0e(0x152)]) || "";
+);
+if (Ѷ𝖑𝐤𝐲𝖗𝖊.isGroup)
+Ѷ𝖑𝐤𝐲𝖗𝖊.participant = 𝖍𝖆𝖜ӄ.decodeJid(Ѷ𝖑𝐤𝐲𝖗𝖊.key.participant) || "";
 }
-_0x39db0e(0x11e);
-if (_0x525dc9["message"]) {
-(_0x525dc9[_0x39db0e(0xc3)] = getContentType(_0x525dc9["message"])),
-(_0x525dc9[_0x39db0e(0xc0)] =
-_0x525dc9[_0x39db0e(0xc3)] == _0x39db0e(0xe8)
-? _0x525dc9[_0x39db0e(0x145)][_0x525dc9[_0x39db0e(0xc3)]][
-_0x39db0e(0x145)
-][
-getContentType(
-_0x525dc9[_0x39db0e(0x145)][_0x525dc9[_0x39db0e(0xc3)]][
-"message"
+("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
+if (Ѷ𝖑𝐤𝐲𝖗𝖊.message) {
+Ѷ𝖑𝐤𝐲𝖗𝖊.mtype = getContentType(Ѷ𝖑𝐤𝐲𝖗𝖊.message);
+Ѷ𝖑𝐤𝐲𝖗𝖊.msg =
+Ѷ𝖑𝐤𝐲𝖗𝖊.mtype == "viewOnceMessage"
+? Ѷ𝖑𝐤𝐲𝖗𝖊.message[Ѷ𝖑𝐤𝐲𝖗𝖊.mtype].message[
+getContentType(Ѷ𝖑𝐤𝐲𝖗𝖊.message[Ѷ𝖑𝐤𝐲𝖗𝖊.mtype].message)
 ]
-)
-]
-: _0x525dc9["message"][_0x525dc9[_0x39db0e(0xc3)]]),
-(_0x525dc9[_0x39db0e(0xe0)] =
-_0x525dc9[_0x39db0e(0x145)][_0x39db0e(0x10d)] ||
-_0x525dc9[_0x39db0e(0xc0)][_0x39db0e(0x158)] ||
-_0x525dc9[_0x39db0e(0xc0)]["text"] ||
-(_0x525dc9[_0x39db0e(0xc3)] == _0x39db0e(0xc8) &&
-_0x525dc9[_0x39db0e(0xc0)]["singleSelectReply"]["selectedRowId"]) ||
-(_0x525dc9["mtype"] == _0x39db0e(0xaf) &&
-_0x525dc9["msg"][_0x39db0e(0xf2)]) ||
-(_0x525dc9[_0x39db0e(0xc3)] == _0x39db0e(0xe8) &&
-_0x525dc9["msg"]["caption"]) ||
-_0x525dc9["text"]);
-let _0x4b23f8 = (_0x525dc9["quoted"] = _0x525dc9[_0x39db0e(0xc0)][
-_0x39db0e(0xfe)
-]
-? _0x525dc9["msg"][_0x39db0e(0xfe)][_0x39db0e(0x14b)]
+: Ѷ𝖑𝐤𝐲𝖗𝖊.message[Ѷ𝖑𝐤𝐲𝖗𝖊.mtype];
+Ѷ𝖑𝐤𝐲𝖗𝖊.body =
+Ѷ𝖑𝐤𝐲𝖗𝖊.message.conversation ||
+Ѷ𝖑𝐤𝐲𝖗𝖊.msg.caption ||
+Ѷ𝖑𝐤𝐲𝖗𝖊.msg.text ||
+(Ѷ𝖑𝐤𝐲𝖗𝖊.mtype == "listResponseMessage" &&
+Ѷ𝖑𝐤𝐲𝖗𝖊.msg.singleSelectReply.selectedRowId) ||
+(Ѷ𝖑𝐤𝐲𝖗𝖊.mtype == "buttonsResponseMessage" &&
+Ѷ𝖑𝐤𝐲𝖗𝖊.msg.selectedButtonId) ||
+(Ѷ𝖑𝐤𝐲𝖗𝖊.mtype == "viewOnceMessage" && Ѷ𝖑𝐤𝐲𝖗𝖊.msg.caption) ||
+Ѷ𝖑𝐤𝐲𝖗𝖊.text;
+let quoted = (Ѷ𝖑𝐤𝐲𝖗𝖊.quoted = Ѷ𝖑𝐤𝐲𝖗𝖊.msg.contextInfo
+? Ѷ𝖑𝐤𝐲𝖗𝖊.msg.contextInfo.quotedMessage
 : null);
-_0x525dc9[_0x39db0e(0xf9)] = _0x525dc9[_0x39db0e(0xc0)][_0x39db0e(0xfe)]
-? _0x525dc9[_0x39db0e(0xc0)][_0x39db0e(0xfe)][_0x39db0e(0xf9)]
+Ѷ𝖑𝐤𝐲𝖗𝖊.mentionedJid = Ѷ𝖑𝐤𝐲𝖗𝖊.msg.contextInfo
+? Ѷ𝖑𝐤𝐲𝖗𝖊.msg.contextInfo.mentionedJid
 : [];
-if (_0x525dc9["quoted"]) {
-let _0x295bbe = getContentType(_0x4b23f8);
-_0x525dc9[_0x39db0e(0xdc)] = _0x525dc9[_0x39db0e(0xdc)][_0x295bbe];
-[_0x39db0e(0x125)][_0x39db0e(0x159)](_0x295bbe) &&
-((_0x295bbe = getContentType(_0x525dc9[_0x39db0e(0xdc)])),
-(_0x525dc9[_0x39db0e(0xdc)] = _0x525dc9[_0x39db0e(0xdc)][_0x295bbe]));
-if (typeof _0x525dc9[_0x39db0e(0xdc)] === _0x39db0e(0xd8))
-_0x525dc9[_0x39db0e(0xdc)] = { text: _0x525dc9[_0x39db0e(0xdc)] };
-(_0x525dc9["quoted"][_0x39db0e(0xc3)] = _0x295bbe),
-(_0x525dc9[_0x39db0e(0xdc)]["id"] =
-_0x525dc9[_0x39db0e(0xc0)][_0x39db0e(0xfe)][_0x39db0e(0x11a)]),
-(_0x525dc9[_0x39db0e(0xdc)][_0x39db0e(0xe9)] =
-_0x525dc9["msg"][_0x39db0e(0xfe)][_0x39db0e(0xee)] ||
-_0x525dc9["chatID"]),
-(_0x525dc9["quoted"][_0x39db0e(0x13d)] = _0x525dc9[_0x39db0e(0xdc)][
-"id"
-]
-? _0x525dc9[_0x39db0e(0xdc)]["id"][_0x39db0e(0xfb)](
-_0x39db0e(0xf8)
-) && _0x525dc9[_0x39db0e(0xdc)]["id"][_0x39db0e(0xe7)] === 0x10
-: ![]),
-(_0x525dc9[_0x39db0e(0xdc)][_0x39db0e(0x128)] = _0x2cda2e[
-_0x39db0e(0x11d)
-](_0x525dc9[_0x39db0e(0xc0)]["contextInfo"][_0x39db0e(0x152)])),
-(_0x525dc9[_0x39db0e(0xdc)][_0x39db0e(0x122)] =
-_0x525dc9[_0x39db0e(0xdc)]["sender"] ===
-(_0x2cda2e[_0x39db0e(0x112)] && _0x2cda2e[_0x39db0e(0x112)]["id"])),
-(_0x525dc9[_0x39db0e(0xdc)][_0x39db0e(0xf5)] =
-_0x525dc9[_0x39db0e(0xdc)][_0x39db0e(0xf5)] ||
-_0x525dc9[_0x39db0e(0xdc)]["caption"] ||
-_0x525dc9[_0x39db0e(0xdc)][_0x39db0e(0x10d)] ||
-_0x525dc9[_0x39db0e(0xdc)][_0x39db0e(0x13b)] ||
-_0x525dc9[_0x39db0e(0xdc)][_0x39db0e(0xdd)] ||
-_0x525dc9[_0x39db0e(0xdc)][_0x39db0e(0x148)] ||
-""),
-(_0x525dc9["quoted"][_0x39db0e(0xf9)] = _0x525dc9["msg"][
-_0x39db0e(0xfe)
-]
-? _0x525dc9[_0x39db0e(0xc0)][_0x39db0e(0xfe)][_0x39db0e(0xf9)]
-: []),
-(_0x525dc9[_0x39db0e(0x111)] = _0x525dc9[_0x39db0e(0x117)] =
-async () => {
-const _0xb2ba = _0x39db0e;
-if (!_0x525dc9[_0xb2ba(0xdc)]["id"]) return ![];
-let _0x165e7c = await _0x261c0d[_0xb2ba(0xb7)](
-_0x525dc9[_0xb2ba(0xe9)],
-_0x525dc9[_0xb2ba(0xdc)]["id"],
-_0x2cda2e
+if (Ѷ𝖑𝐤𝐲𝖗𝖊.quoted) {
+let type = getContentType(quoted);
+Ѷ𝖑𝐤𝐲𝖗𝖊.quoted = Ѷ𝖑𝐤𝐲𝖗𝖊.quoted[type];
+if (["productMessage"].includes(type)) {
+type = getContentType(Ѷ𝖑𝐤𝐲𝖗𝖊.quoted);
+Ѷ𝖑𝐤𝐲𝖗𝖊.quoted = Ѷ𝖑𝐤𝐲𝖗𝖊.quoted[type];
+}
+if (typeof Ѷ𝖑𝐤𝐲𝖗𝖊.quoted === "string")
+Ѷ𝖑𝐤𝐲𝖗𝖊.quoted = {
+text: Ѷ𝖑𝐤𝐲𝖗𝖊.quoted,
+};
+Ѷ𝖑𝐤𝐲𝖗𝖊.quoted.mtype = type;
+Ѷ𝖑𝐤𝐲𝖗𝖊.quoted.id = Ѷ𝖑𝐤𝐲𝖗𝖊.msg.contextInfo.stanzaId;
+Ѷ𝖑𝐤𝐲𝖗𝖊.quoted.chatID =
+Ѷ𝖑𝐤𝐲𝖗𝖊.msg.contextInfo.remoteJid || Ѷ𝖑𝐤𝐲𝖗𝖊.chatID;
+Ѷ𝖑𝐤𝐲𝖗𝖊.quoted.isBaileys = Ѷ𝖑𝐤𝐲𝖗𝖊.quoted.id
+? Ѷ𝖑𝐤𝐲𝖗𝖊.quoted.id.startsWith("BAE5") &&
+Ѷ𝖑𝐤𝐲𝖗𝖊.quoted.id.length === 16
+: false;
+Ѷ𝖑𝐤𝐲𝖗𝖊.quoted.sender = 𝖍𝖆𝖜ӄ.decodeJid(
+Ѷ𝖑𝐤𝐲𝖗𝖊.msg.contextInfo.participant
 );
-return exports[_0xb2ba(0xfc)](_0x2cda2e, _0x165e7c, _0x261c0d);
-});
-let _0x4c0c16 = (_0x525dc9["quoted"]["fakeObj"] = _0x4062d7[
-_0x39db0e(0xc2)
-]({
+Ѷ𝖑𝐤𝐲𝖗𝖊.quoted.fromMe =
+Ѷ𝖑𝐤𝐲𝖗𝖊.quoted.sender === (𝖍𝖆𝖜ӄ.user && 𝖍𝖆𝖜ӄ.user.id);
+Ѷ𝖑𝐤𝐲𝖗𝖊.quoted.text =
+Ѷ𝖑𝐤𝐲𝖗𝖊.quoted.text ||
+Ѷ𝖑𝐤𝐲𝖗𝖊.quoted.caption ||
+Ѷ𝖑𝐤𝐲𝖗𝖊.quoted.conversation ||
+Ѷ𝖑𝐤𝐲𝖗𝖊.quoted.contentText ||
+Ѷ𝖑𝐤𝐲𝖗𝖊.quoted.selectedDisplayText ||
+Ѷ𝖑𝐤𝐲𝖗𝖊.quoted.title ||
+"";
+Ѷ𝖑𝐤𝐲𝖗𝖊.quoted.mentionedJid = Ѷ𝖑𝐤𝐲𝖗𝖊.msg.contextInfo
+? Ѷ𝖑𝐤𝐲𝖗𝖊.msg.contextInfo.mentionedJid
+: [];
+Ѷ𝖑𝐤𝐲𝖗𝖊.getQuotedObj = Ѷ𝖑𝐤𝐲𝖗𝖊.getQuotedMessage = async () => {
+if (!Ѷ𝖑𝐤𝐲𝖗𝖊.quoted.id) return false;
+let q = await Ѷ𝖎𝖔𝖓.loadMessage(
+Ѷ𝖑𝐤𝐲𝖗𝖊.chatID,
+Ѷ𝖑𝐤𝐲𝖗𝖊.quoted.id,
+𝖍𝖆𝖜ӄ
+);
+return exports.smsg(𝖍𝖆𝖜ӄ, q, Ѷ𝖎𝖔𝖓);
+};
+let vM = (Ѷ𝖑𝐤𝐲𝖗𝖊.quoted.fakeObj = M.fromObject({
 key: {
-remoteJid: _0x525dc9[_0x39db0e(0xdc)][_0x39db0e(0xe9)],
-fromMe: _0x525dc9[_0x39db0e(0xdc)][_0x39db0e(0x122)],
-id: _0x525dc9[_0x39db0e(0xdc)]["id"],
+remoteJid: Ѷ𝖑𝐤𝐲𝖗𝖊.quoted.chatID,
+fromMe: Ѷ𝖑𝐤𝐲𝖗𝖊.quoted.fromMe,
+id: Ѷ𝖑𝐤𝐲𝖗𝖊.quoted.id,
 },
-message: _0x4b23f8,
-...(_0x525dc9["isGroup"]
-? { participant: _0x525dc9[_0x39db0e(0xdc)][_0x39db0e(0x128)] }
-: {}),
+message: quoted,
+...(Ѷ𝖑𝐤𝐲𝖗𝖊.isGroup ? { participant: Ѷ𝖑𝐤𝐲𝖗𝖊.quoted.sender } : {}),
 }));
-(_0x525dc9[_0x39db0e(0xdc)][_0x39db0e(0x108)] = () =>
-_0x2cda2e[_0x39db0e(0x113)](
-_0x525dc9[_0x39db0e(0xdc)][_0x39db0e(0xe9)],
-{ delete: _0x4c0c16[_0x39db0e(0x14a)] }
-)),
-(_0x525dc9[_0x39db0e(0xdc)]["copyNForward"] = (
-_0x4ecfe2,
-_0x32c2e9 = ![],
-_0x154eb6 = {}
-) =>
-_0x2cda2e["copyNForward"](
-_0x4ecfe2,
-_0x4c0c16,
-_0x32c2e9,
-_0x154eb6
-)),
-(_0x525dc9[_0x39db0e(0xdc)]["download"] = () =>
-_0x2cda2e[_0x39db0e(0xa8)](_0x525dc9["quoted"]));
+Ѷ𝖑𝐤𝐲𝖗𝖊.quoted.delete = () =>
+𝖍𝖆𝖜ӄ.sendMessage(Ѷ𝖑𝐤𝐲𝖗𝖊.quoted.chatID, { delete: vM.key });
+Ѷ𝖑𝐤𝐲𝖗𝖊.quoted.copyNForward = (
+jid,
+forceForward = false,
+options = {}
+) => 𝖍𝖆𝖜ӄ.copyNForward(jid, vM, forceForward, options);
+Ѷ𝖑𝐤𝐲𝖗𝖊.quoted.download = () =>
+𝖍𝖆𝖜ӄ.downloadMediaMessage(Ѷ𝖑𝐤𝐲𝖗𝖊.quoted);
 }
 }
-if (_0x525dc9["msg"]["url"])
-_0x525dc9[_0x39db0e(0x157)] = () =>
-_0x2cda2e[_0x39db0e(0xa8)](_0x525dc9[_0x39db0e(0xc0)]);
-(_0x525dc9[_0x39db0e(0xf5)] =
-_0x525dc9[_0x39db0e(0xc0)][_0x39db0e(0xf5)] ||
-_0x525dc9[_0x39db0e(0xc0)][_0x39db0e(0x158)] ||
-_0x525dc9[_0x39db0e(0x145)][_0x39db0e(0x10d)] ||
-_0x525dc9[_0x39db0e(0xc0)]["contentText"] ||
-_0x525dc9[_0x39db0e(0xc0)][_0x39db0e(0xdd)] ||
-_0x525dc9[_0x39db0e(0xc0)][_0x39db0e(0x148)] ||
-""),
-"|⬡════════════════════════════════════════════════════════════|▷\x20\x20\x20ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ\x20ʙʏ\x20ᴋʀᴀᴋɪɴᴢʟᴀʙ™\x20\x20◁|════════════════════════════════════════════════════════════⬡|",
-(_0x525dc9["reply"] = (
-_0x2e34e2,
-_0xde2639 = _0x525dc9[_0x39db0e(0xe9)],
-_0x3c7dc2 = {}
-) =>
-Buffer[_0x39db0e(0x143)](_0x2e34e2)
-? _0x2cda2e[_0x39db0e(0x153)](
-_0xde2639,
-_0x2e34e2,
-_0x39db0e(0xb4),
-"",
-_0x525dc9,
-{ ..._0x3c7dc2 }
-)
-: _0x2cda2e[_0x39db0e(0xb9)](_0xde2639, _0x2e34e2, _0x525dc9, {
-..._0x3c7dc2,
-})),
-(_0x525dc9[_0x39db0e(0x14d)] = () =>
-exports["smsg"](
-_0x2cda2e,
-_0x4062d7["fromObject"](_0x4062d7["toObject"](_0x525dc9))
-)),
-(_0x525dc9[_0x39db0e(0x103)] = (
-_0x4af79c = _0x525dc9[_0x39db0e(0xe9)],
-_0x20ae32 = ![],
-_0x2f0847 = {}
-) =>
-_0x2cda2e[_0x39db0e(0x103)](
-_0x4af79c,
-_0x525dc9,
-_0x20ae32,
-_0x2f0847
-)),
-_0x39db0e(0x11e),
-(_0x525dc9["Body"] =
-_0x525dc9[_0x39db0e(0xc3)] === _0x39db0e(0x10d)
-? _0x525dc9[_0x39db0e(0x145)][_0x39db0e(0x10d)]
-: _0x525dc9[_0x39db0e(0xc3)] == _0x39db0e(0xd2)
-? _0x525dc9[_0x39db0e(0x145)][_0x39db0e(0xd2)][_0x39db0e(0x158)]
-: _0x525dc9[_0x39db0e(0xc3)] == _0x39db0e(0x156)
-? _0x525dc9["message"][_0x39db0e(0x156)]["caption"]
-: _0x525dc9[_0x39db0e(0xc3)] == "extendedTextMessage"
-? _0x525dc9[_0x39db0e(0x145)][_0x39db0e(0xfa)][_0x39db0e(0xf5)]
-: _0x525dc9[_0x39db0e(0xc3)] == _0x39db0e(0xaf)
-? _0x525dc9[_0x39db0e(0x145)]["buttonsResponseMessage"][
-_0x39db0e(0xf2)
-]
-: _0x525dc9["mtype"] == _0x39db0e(0xc8)
-? _0x525dc9[_0x39db0e(0x145)][_0x39db0e(0xc8)][_0x39db0e(0x102)][
-"selectedRowId"
-]
-: _0x525dc9[_0x39db0e(0xc3)] == _0x39db0e(0xa7)
-? _0x525dc9[_0x39db0e(0x145)]["templateButtonReplyMessage"][
-_0x39db0e(0xe1)
-]
-: _0x525dc9[_0x39db0e(0xc3)] === _0x39db0e(0x144)
-? _0x525dc9[_0x39db0e(0x145)][_0x39db0e(0xaf)]?.[_0x39db0e(0xf2)] ||
-_0x525dc9[_0x39db0e(0x145)][_0x39db0e(0xc8)]?.[_0x39db0e(0x102)][
-_0x39db0e(0xe4)
-] ||
-_0x525dc9[_0x39db0e(0xf5)]
-: ""),
-(_0x525dc9[_0x39db0e(0xaa)] =
-_0x525dc9[_0x39db0e(0xc4)][_0x39db0e(0xfb)](prefix)),
-(_0x525dc9[_0x39db0e(0x14f)] =
-prefix[_0x39db0e(0x159)](
-_0x525dc9[_0x39db0e(0xc4)] != "" &&
-_0x525dc9[_0x39db0e(0xc4)][_0x39db0e(0xbf)](0x0, 0x1)
-) && _0x525dc9[_0x39db0e(0xc4)][_0x39db0e(0xbf)](0x1) != ""),
-(_0x525dc9[_0x39db0e(0x149)] = _0x525dc9[_0x39db0e(0x14f)]
-? _0x525dc9[_0x39db0e(0xc4)]
-["slice"](0x1)
-[_0x39db0e(0x140)]()
-[_0x39db0e(0x12b)]("\x20")[0x0]
-[_0x39db0e(0xa9)]()
-: ""),
-(_0x525dc9["A𝖗𝖌𝖘"] = _0x525dc9[_0x39db0e(0xc4)]
-["trim"]()
-[_0x39db0e(0x12b)](/ +/)
-[_0x39db0e(0xbf)](0x1)),
-(_0x525dc9["pushName"] = _0x525dc9[_0x39db0e(0x116)] || _0x39db0e(0xae)),
-(_0x525dc9[_0x39db0e(0x137)] = await _0x2cda2e[_0x39db0e(0x11d)](
-_0x2cda2e["user"]["id"]
-)),
-(_0x525dc9[_0x39db0e(0x10a)] = [
-_0x525dc9["botNumber"],
-...global[_0x39db0e(0xdb)],
-]
-[_0x39db0e(0xcd)](
-(_0xfc0836) =>
-_0xfc0836[_0x39db0e(0x100)](/[^0-9]/g, "") + _0x39db0e(0xcf)
-)
-[_0x39db0e(0x159)](_0x525dc9[_0x39db0e(0x128)])),
-(_0x525dc9[_0x39db0e(0x122)] =
-_0x525dc9[_0x39db0e(0x128)] == _0x525dc9[_0x39db0e(0x137)]
-? !![]
-: ![]),
-(_0x525dc9[_0x39db0e(0x151)] =
-_0x525dc9["A𝖗𝖌𝖘"][_0x39db0e(0xe3)]("\x20")),
-(_0x525dc9["quoted"] = _0x525dc9[_0x39db0e(0xdc)]
-? _0x525dc9[_0x39db0e(0xdc)]
-: _0x525dc9);
-let _0x19481b =
-(_0x525dc9[_0x39db0e(0xdc)][_0x39db0e(0xc0)] ||
-_0x525dc9[_0x39db0e(0xdc)])[_0x39db0e(0xcc)] || "";
-(_0x525dc9[_0x39db0e(0x142)] = /image|video|sticker|audio/[
-_0x39db0e(0x12d)
-](_0x19481b)),
-(_0x525dc9["groupMetadata"] = _0x525dc9["isGroup"]
-? await _0x2cda2e[_0x39db0e(0x10e)](_0x525dc9[_0x39db0e(0xe9)])
-: ""),
-(_0x525dc9["participants"] = _0x525dc9["isGroup"]
-? await _0x525dc9[_0x39db0e(0x10e)]["participants"]
-: ""),
-(_0x525dc9["groupAdmins"] = _0x525dc9[_0x39db0e(0x120)]
-? await _0x525dc9[_0x39db0e(0xab)]
-["filter"]((_0x337776) => _0x337776[_0x39db0e(0xc5)] !== null)
-["map"]((_0x2aa571) => _0x2aa571["id"])
-: ""),
-(_0x525dc9[_0x39db0e(0xd9)] = _0x525dc9[_0x39db0e(0x120)]
-? _0x525dc9[_0x39db0e(0xba)][_0x39db0e(0x159)](
-_0x525dc9[_0x39db0e(0x137)]
-)
-: ![]),
-(_0x525dc9[_0x39db0e(0xe2)] = _0x525dc9[_0x39db0e(0x120)]
-? _0x525dc9["groupAdmins"][_0x39db0e(0x159)](
-_0x525dc9[_0x39db0e(0x128)]
-)
-: ![]),
-(_0x525dc9[_0x39db0e(0x126)] =
-_0x525dc9[_0x39db0e(0xc3)] == "extendedTextMessage" &&
-_0x525dc9[_0x39db0e(0x145)][_0x39db0e(0xfa)][_0x39db0e(0xfe)] != null
-? _0x525dc9[_0x39db0e(0x145)]["extendedTextMessage"]["contextInfo"][
-_0x39db0e(0xf9)
-]
-: []),
-(_0x525dc9[_0x39db0e(0x134)] =
-_0x525dc9["mtype"] == "extendedTextMessage" &&
-_0x525dc9[_0x39db0e(0x145)][_0x39db0e(0xfa)][_0x39db0e(0xfe)] != null
-? _0x525dc9[_0x39db0e(0x145)][_0x39db0e(0xfa)]["contextInfo"][
-"participant"
-] || ""
-: "");
-let _0x56e029 =
-process["env"][_0x39db0e(0x14e)] === undefined
-? "918436686758,917430922909"
-: process[_0x39db0e(0xe5)][_0x39db0e(0x14e)];
-return (
-(_0x525dc9[_0x39db0e(0x150)] = _0x56e029[_0x39db0e(0x159)](
-_0x525dc9[_0x39db0e(0x128)][_0x39db0e(0x138)](
-0x0,
-_0x525dc9[_0x39db0e(0x128)][_0x39db0e(0x129)]("@")
-)
-)),
-_0x525dc9
+if (Ѷ𝖑𝐤𝐲𝖗𝖊.msg.url)
+Ѷ𝖑𝐤𝐲𝖗𝖊.download = () => 𝖍𝖆𝖜ӄ.downloadMediaMessage(Ѷ𝖑𝐤𝐲𝖗𝖊.msg);
+Ѷ𝖑𝐤𝐲𝖗𝖊.text =
+Ѷ𝖑𝐤𝐲𝖗𝖊.msg.text ||
+Ѷ𝖑𝐤𝐲𝖗𝖊.msg.caption ||
+Ѷ𝖑𝐤𝐲𝖗𝖊.message.conversation ||
+Ѷ𝖑𝐤𝐲𝖗𝖊.msg.contentText ||
+Ѷ𝖑𝐤𝐲𝖗𝖊.msg.selectedDisplayText ||
+Ѷ𝖑𝐤𝐲𝖗𝖊.msg.title ||
+"";
+("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
+Ѷ𝖑𝐤𝐲𝖗𝖊.reply = (text, chatId = Ѷ𝖑𝐤𝐲𝖗𝖊.chatID, options = {}) =>
+Buffer.isBuffer(text)
+? 𝖍𝖆𝖜ӄ.sendMedia(chatId, text, "file", "", Ѷ𝖑𝐤𝐲𝖗𝖊, { ...options })
+: 𝖍𝖆𝖜ӄ.sendText(chatId, text, Ѷ𝖑𝐤𝐲𝖗𝖊, { ...options });
+Ѷ𝖑𝐤𝐲𝖗𝖊.copy = () => exports.smsg(𝖍𝖆𝖜ӄ, M.fromObject(M.toObject(Ѷ𝖑𝐤𝐲𝖗𝖊)));
+Ѷ𝖑𝐤𝐲𝖗𝖊.copyNForward = (
+jid = Ѷ𝖑𝐤𝐲𝖗𝖊.chatID,
+forceForward = false,
+options = {}
+) => 𝖍𝖆𝖜ӄ.copyNForward(jid, Ѷ𝖑𝐤𝐲𝖗𝖊, forceForward, options);
+("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
+Ѷ𝖑𝐤𝐲𝖗𝖊.Body =Ѷ𝖑𝐤𝐲𝖗𝖊.mtype === "conversation"? Ѷ𝖑𝐤𝐲𝖗𝖊.message.conversation: Ѷ𝖑𝐤𝐲𝖗𝖊.mtype == "imageMessage"? Ѷ𝖑𝐤𝐲𝖗𝖊.message.imageMessage.caption: Ѷ𝖑𝐤𝐲𝖗𝖊.mtype == "videoMessage"? Ѷ𝖑𝐤𝐲𝖗𝖊.message.videoMessage.caption: Ѷ𝖑𝐤𝐲𝖗𝖊.mtype == "extendedTextMessage"? Ѷ𝖑𝐤𝐲𝖗𝖊.message.extendedTextMessage.text: Ѷ𝖑𝐤𝐲𝖗𝖊.mtype == "buttonsResponseMessage"? Ѷ𝖑𝐤𝐲𝖗𝖊.message.buttonsResponseMessage.selectedButtonId: Ѷ𝖑𝐤𝐲𝖗𝖊.mtype == "listResponseMessage"? Ѷ𝖑𝐤𝐲𝖗𝖊.message.listResponseMessage.singleSelectReply.selectedRowId: Ѷ𝖑𝐤𝐲𝖗𝖊.mtype == "templateButtonReplyMessage"? Ѷ𝖑𝐤𝐲𝖗𝖊.message.templateButtonReplyMessage.selectedId: Ѷ𝖑𝐤𝐲𝖗𝖊.mtype === "messageContextInfo"? Ѷ𝖑𝐤𝐲𝖗𝖊.message.buttonsResponseMessage?.selectedButtonId ||Ѷ𝖑𝐤𝐲𝖗𝖊.message.listResponseMessage?.singleSelectReply.selectedRowId ||Ѷ𝖑𝐤𝐲𝖗𝖊.text: "";
+Ѷ𝖑𝐤𝐲𝖗𝖊.isCommand = Ѷ𝖑𝐤𝐲𝖗𝖊.Body.startsWith(prefix);
+Ѷ𝖑𝐤𝐲𝖗𝖊.isCmd =prefix.includes(Ѷ𝖑𝐤𝐲𝖗𝖊.Body != "" && Ѷ𝖑𝐤𝐲𝖗𝖊.Body.slice(0, 1)) &&Ѷ𝖑𝐤𝐲𝖗𝖊.Body.slice(1) != "";
+Ѷ𝖑𝐤𝐲𝖗𝖊.commandName = Ѷ𝖑𝐤𝐲𝖗𝖊.isCmd? Ѷ𝖑𝐤𝐲𝖗𝖊.Body.slice(1).trim().split(" ")[0].toLowerCase(): "";
+Ѷ𝖑𝐤𝐲𝖗𝖊.A𝖗𝖌𝖘 = Ѷ𝖑𝐤𝐲𝖗𝖊.Body.trim().split(/ +/).slice(1);
+Ѷ𝖑𝐤𝐲𝖗𝖊.pushName = Ѷ𝖑𝐤𝐲𝖗𝖊.pushName || "No Name";
+Ѷ𝖑𝐤𝐲𝖗𝖊.botNumber = await 𝖍𝖆𝖜ӄ.decodeJid(𝖍𝖆𝖜ӄ.user.id);
+Ѷ𝖑𝐤𝐲𝖗𝖊.isCreator = [Ѷ𝖑𝐤𝐲𝖗𝖊.botNumber, ...global.owner].map((v) => v.replace(/[^0-9]/g, "") + "@s.whatsapp.net").includes(Ѷ𝖑𝐤𝐲𝖗𝖊.sender);
+Ѷ𝖑𝐤𝐲𝖗𝖊.fromMe = Ѷ𝖑𝐤𝐲𝖗𝖊.sender == Ѷ𝖑𝐤𝐲𝖗𝖊.botNumber ? true : false;
+Ѷ𝖑𝐤𝐲𝖗𝖊.F𝖚𝖑𝖑_A𝖗𝖌𝖘 = Ѷ𝖑𝐤𝐲𝖗𝖊.A𝖗𝖌𝖘.join(" ");
+Ѷ𝖑𝐤𝐲𝖗𝖊.quoted = Ѷ𝖑𝐤𝐲𝖗𝖊.quoted ? Ѷ𝖑𝐤𝐲𝖗𝖊.quoted : Ѷ𝖑𝐤𝐲𝖗𝖊;
+let mime = (Ѷ𝖑𝐤𝐲𝖗𝖊.quoted.msg || Ѷ𝖑𝐤𝐲𝖗𝖊.quoted).mimetype || "";
+Ѷ𝖑𝐤𝐲𝖗𝖊.isMedia = /image|video|sticker|audio/.test(mime);
+Ѷ𝖑𝐤𝐲𝖗𝖊.groupMetadata = Ѷ𝖑𝐤𝐲𝖗𝖊.isGroup? await 𝖍𝖆𝖜ӄ.groupMetadata(Ѷ𝖑𝐤𝐲𝖗𝖊.chatID): "";
+Ѷ𝖑𝐤𝐲𝖗𝖊.participants = Ѷ𝖑𝐤𝐲𝖗𝖊.isGroup? await Ѷ𝖑𝐤𝐲𝖗𝖊.groupMetadata.participants: "";
+Ѷ𝖑𝐤𝐲𝖗𝖊.groupAdmins = Ѷ𝖑𝐤𝐲𝖗𝖊.isGroup? await Ѷ𝖑𝐤𝐲𝖗𝖊.participants.filter((v) => v.admin !== null).map((v) => v.id): "";
+Ѷ𝖑𝐤𝐲𝖗𝖊.isBotAdmin = Ѷ𝖑𝐤𝐲𝖗𝖊.isGroup? Ѷ𝖑𝐤𝐲𝖗𝖊.groupAdmins.includes(Ѷ𝖑𝐤𝐲𝖗𝖊.botNumber): false;
+Ѷ𝖑𝐤𝐲𝖗𝖊.isSenderAdmin = Ѷ𝖑𝐤𝐲𝖗𝖊.isGroup? Ѷ𝖑𝐤𝐲𝖗𝖊.groupAdmins.includes(Ѷ𝖑𝐤𝐲𝖗𝖊.sender): false;
+Ѷ𝖑𝐤𝐲𝖗𝖊.mentionByTag =Ѷ𝖑𝐤𝐲𝖗𝖊.mtype == "extendedTextMessage" &&Ѷ𝖑𝐤𝐲𝖗𝖊.message.extendedTextMessage.contextInfo != null? Ѷ𝖑𝐤𝐲𝖗𝖊.message.extendedTextMessage.contextInfo.mentionedJid: [];
+Ѷ𝖑𝐤𝐲𝖗𝖊.mentionByReply =Ѷ𝖑𝐤𝐲𝖗𝖊.mtype == "extendedTextMessage" &&Ѷ𝖑𝐤𝐲𝖗𝖊.message.extendedTextMessage.contextInfo != null? Ѷ𝖑𝐤𝐲𝖗𝖊.message.extendedTextMessage.contextInfo.participant || "": "";
+let MODString =process.env.MOD === undefined? "918436686758,917430922909": process.env.MOD;
+Ѷ𝖑𝐤𝐲𝖗𝖊.isSenderTUF = MODString.includes(
+Ѷ𝖑𝐤𝐲𝖗𝖊.sender.substring(0, Ѷ𝖑𝐤𝐲𝖗𝖊.sender.indexOf("@"))
 );
-}),
-"|⬡════════════════════════════════════════════════════════════|▷\x20\x20\x20ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ\x20ʙʏ\x20ᴋʀᴀᴋɪɴᴢʟᴀʙ™\x20\x20◁|════════════════════════════════════════════════════════════⬡|";
-let file = require[_0x3f426c(0xe6)](__filename);
-fs[_0x3f426c(0xd7)](file, () => {
-const _0x3da17e = _0x3f426c;
-fs[_0x3da17e(0xb6)](file),
-console[_0x3da17e(0xef)](chalk[_0x3da17e(0x10b)](_0x3da17e(0xb8))),
-delete require[_0x3da17e(0xff)][file],
+return Ѷ𝖑𝐤𝐲𝖗𝖊;
+};
+("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
+let file = require.resolve(__filename);
+fs.watchFile(file, () => {
+fs.unwatchFile(file);
+console.log(chalk.redBright("Update ${__filename}"));
+delete require.cache[file];
 require(file);
 });
-function _0x288b() {
-const _0x24720f = [
-"generateProfilePicture",
-"1722mcZpry",
-"formatDate",
-"isDeepStrictEqual",
-"watchFile",
-"string",
-"isBotAdmin",
-"2382XFXbXr",
-"owner",
-"quoted",
-"selectedDisplayText",
-"processTime",
-"clockString",
-"body",
-"selectedId",
-"isSenderAdmin",
-"join",
-"selectedRowId",
-"env",
-"resolve",
-"length",
-"viewOnceMessage",
-"chatID",
-"human-readable",
-"isUrl",
-".mp4",
-"26998461OPQEQm",
-"remoteJid",
-"log",
-"data",
-"./𝕷𝖆ყO𝖚𝖙",
-"selectedButtonId",
-"GIFBufferToVideoBuffer",
-"${literal}\x20${symbol}B",
-"text",
-"all",
-"headers",
-"BAE5",
-"mentionedJid",
-"extendedTextMessage",
-"startsWith",
-"smsg",
-"runtime",
-"contextInfo",
-"cache",
-"replace",
-"\x20hours,\x20",
-"singleSelectReply",
-"copyNForward",
-"${Math.floor(Math.random()\x20*\x2010000)}${ext}",
-"getSizeMedia",
-"scaleToFit",
-"3683865kQgcNi",
-"delete",
-"read",
-"isCreator",
-"redBright",
-"moment-timezone",
-"conversation",
-"groupMetadata",
-"then",
-"util",
-"getQuotedObj",
-"user",
-"sendMessage",
-"ffmpeg\x20-i\x20./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/",
-"match",
-"pushName",
-"getQuotedMessage",
-"\x20second",
-"1324366hsiAGU",
-"stanzaId",
-"unixTimestampSeconds",
-"asSeconds",
-"decodeJid",
-"|⬡════════════════════════════════════════════════════════════|▷\x20\x20\x20ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ\x20ʙʏ\x20ᴋʀᴀᴋɪɴᴢʟᴀʙ™\x20\x20◁|════════════════════════════════════════════════════════════⬡|",
-"parseMention",
-"isGroup",
-"toString",
-"fromMe",
-"axios",
-"MIME_JPEG",
-"productMessage",
-"mentionByTag",
-"\x20days,\x20",
-"sender",
-"indexOf",
-"child_process",
-"split",
-"jsonformat",
-"test",
-"JEDEC",
-"exec",
-"@adiwajshing/baileys",
-"0\x20Bytes",
-"3035576xREKXF",
-"@g.us",
-"mentionByReply",
-"getWidth",
-"GET",
-"botNumber",
-"substring",
-"getHeight",
-"generateMessageTag",
-"contentText",
-"./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${filename}.mp4",
-"isBaileys",
-"\x20minute,\x20",
-"11469TBscMx",
-"trim",
-"arraybuffer",
-"isMedia",
-"isBuffer",
-"messageContextInfo",
-"message",
-"promises",
-"bytesToSize",
-"title",
-"commandName",
-"key",
-"quotedMessage",
-"toFixed",
-"copy",
-"MOD",
-"isCmd",
-"isSenderTUF",
-"F𝖚𝖑𝖑_A𝖗𝖌𝖘",
-"participant",
-"sendMedia",
-"locale",
-"byteLength",
-"videoMessage",
-"download",
-"caption",
-"includes",
-"matchAll",
-"getBufferAsync",
-"templateButtonReplyMessage",
-"downloadMediaMessage",
-"toLowerCase",
-"isCommand",
-"participants",
-"padStart",
-"error\x20gatau\x20apah",
-"No\x20Name",
-"buttonsResponseMessage",
-"get",
-"./Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🎒𝕭𝖆𝖌/${filename}.gif",
-"getRandom",
-"readFileSync",
-"file",
-"long",
-"unwatchFile",
-"loadMessage",
-"Update\x20${__filename}",
-"sendText",
-"groupAdmins",
-"1396UeDnKF",
-"pow",
-"9420JCBNlS",
-"format",
-"slice",
-"msg",
-"getTime",
-"fromObject",
-"mtype",
-"Body",
-"admin",
-"formatp",
-"numeric",
-"listResponseMessage",
-"\x20day,\x20",
-"logic",
-"floor",
-"mimetype",
-"map",
-".--",
-"@s.whatsapp.net",
-"WebMessageInfo",
-"\x20hour,\x20",
-"imageMessage",
-];
-_0x288b = function () {
-return _0x24720f;
-};
-return _0x288b();
-}
 ("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
 /*
 * * * * * * * * * * |        (𝐜)𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!        * * * * * * * * * *

@@ -27,7 +27,7 @@ _0x33757d["push"](_0x33757d["shift"]());
 }
 })(_0x5d7f, 0x61e68),
 require(_0x267c14(0x21b)),
-require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/Ѷ𝖆𝖑.js");
+require("../Ѷ𝖑𝐤𝐲𝖗𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/Ѷ𝖆𝖑.js");
 function _0x110d(_0x5ad980, _0x3ea5de) {
 const _0x5d7fcb = _0x5d7f();
 return (
@@ -101,7 +101,7 @@ process[_0x34105a(0x207)](0x0);
 }
 await sequelize[_0x34105a(0x234)]();
 const { state: _0x57cd46, saveState: _0x45409b } = useSingleFileAuthState(
-"./❗Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊❗/𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞_𝐀𝐩𝐢®.json"
+"./❗Ѷ𝖑𝐤𝐲𝖗𝖊❗/𝐕𝐚𝐥𝐤𝐲𝐫𝐢𝐞_𝐀𝐩𝐢®.json"
 );
 let _0x1cc9e7 = ᴋᴜɴᴋᴏɴɴᴇᴄᴛ({
 logger: pino({ level: "error" }),
@@ -223,7 +223,7 @@ let _0xf8f2eb = await prepareWAMessageMedia(
 { upload: _0x1cc9e7["waUploadToServer"] }
 ),
 _0xa48513 = generateWAMessageFromContent(
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊["chatID"],
+Ѷ𝖑𝐤𝐲𝖗𝖊["chatID"],
 proto[_0x108ba2(0x206)][_0x108ba2(0x275)]({
 templateMessage: {
 hydratedTemplate: {
@@ -762,7 +762,7 @@ return console[_0x17f92a(0x1ee)](chalk[_0x17f92a(0x240)](_0x51132b));
 _0x1cc9e7["ev"]["on"](_0x34105a(0x277), async (_0x3bf96e) => {
 const _0x51cf01 = _0x34105a;
 try {
-let _0x4c4873 = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌗E𝖛𝖊𝖓𝖙𝖘/group_participants");
+let _0x4c4873 = require("../Ѷ𝖑𝐤𝐲𝖗𝖊🌗E𝖛𝖊𝖓𝖙𝖘/group_participants");
 await _0x4c4873["Vgrpns"](_0x3bf96e, _0x1cc9e7);
 } catch (_0x585ac6) {
 return console[_0x51cf01(0x1ee)](chalk[_0x51cf01(0x240)](_0x585ac6));
@@ -976,7 +976,7 @@ let _0x3fa208 = await prepareWAMessageMedia(
 { upload: _0x574369[_0x5cace4(0x25d)] }
 ),
 _0xd036fa = generateWAMessageFromContent(
-Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊[_0x5cace4(0x23b)],
+Ѷ𝖑𝐤𝐲𝖗𝖊[_0x5cace4(0x23b)],
 proto[_0x5cace4(0x206)][_0x5cace4(0x275)]({
 templateMessage: {
 hydratedTemplate: {
@@ -1486,7 +1486,7 @@ _0x5493f0(0x1e3),
 _0x574369["ev"]["on"]("connection.update", async (_0x3c31f4) => {
 const _0xea3d43 = _0x5493f0;
 try {
-let _0x5ac563 = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌗E𝖛𝖊𝖓𝖙𝖘/connection_update");
+let _0x5ac563 = require("../Ѷ𝖑𝐤𝐲𝖗𝖊🌗E𝖛𝖊𝖓𝖙𝖘/connection_update");
 await _0x5ac563["Vcnup"](_0x3c31f4, startᴋᴜɴᴀɪ, _0x574369);
 } catch (_0x34884b) {
 return console["log"](chalk[_0xea3d43(0x240)](_0x34884b));
@@ -1513,7 +1513,7 @@ return console[_0x4e030f(0x1ee)](chalk["redBright"](_0x27f191));
 _0x574369["ev"]["on"](_0x5493f0(0x277), async (_0x483d74) => {
 const _0x25ba89 = _0x5493f0;
 try {
-let _0x35cdfd = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌗E𝖛𝖊𝖓𝖙𝖘/group_participants");
+let _0x35cdfd = require("../Ѷ𝖑𝐤𝐲𝖗𝖊🌗E𝖛𝖊𝖓𝖙𝖘/group_participants");
 await _0x35cdfd["Vgrpns"](_0x483d74, _0x574369);
 } catch (_0x41319e) {
 return console[_0x25ba89(0x1ee)](chalk["redBright"](_0x41319e));
@@ -1522,7 +1522,7 @@ return console[_0x25ba89(0x1ee)](chalk["redBright"](_0x41319e));
 _0x574369["ws"]["on"](_0x5493f0(0x20a), async (_0x4e9c7c) => {
 const _0x235176 = _0x5493f0;
 try {
-let _0xe5b043 = require("../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌗E𝖛𝖊𝖓𝖙𝖘/call_updates");
+let _0xe5b043 = require("../Ѷ𝖑𝐤𝐲𝖗𝖊🌗E𝖛𝖊𝖓𝖙𝖘/call_updates");
 await _0xe5b043[_0x235176(0x244)](_0x574369, _0x4e9c7c);
 } catch (_0xf779bb) {
 return console[_0x235176(0x1ee)](chalk[_0x235176(0x240)](_0xf779bb));
@@ -1554,8 +1554,8 @@ const _0x1095da = [
 "contacts",
 "map",
 "from",
-"../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌗E𝖛𝖊𝖓𝖙𝖘/messages_upsert",
-"../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌗E𝖛𝖊𝖓𝖙𝖘/call_updates",
+"../Ѷ𝖑𝐤𝐲𝖗𝖊🌗E𝖛𝖊𝖓𝖙𝖘/messages_upsert",
+"../Ѷ𝖑𝐤𝐲𝖗𝖊🌗E𝖛𝖊𝖓𝖙𝖘/call_updates",
 "chatID",
 "split",
 "remoteJid",
@@ -1581,14 +1581,14 @@ const _0x1095da = [
 "name",
 "pino",
 "1631xnkvEf",
-"../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🧆𝕯𝖆𝖙𝖆𝖇𝖆𝖘𝖊/🍂𝖘𝖖𝖑/Auth",
+"../Ѷ𝖑𝐤𝐲𝖗𝖊🧆𝕯𝖆𝖙𝖆𝖇𝖆𝖘𝖊/🍂𝖘𝖖𝖑/Auth",
 "author",
 "sendTextWithMentions",
 "sticker",
 "text",
 "mongoose",
 "\x20contact",
-"../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🌗E𝖛𝖊𝖓𝖙𝖘/connection_update",
+"../Ѷ𝖑𝐤𝐲𝖗𝖊🌗E𝖛𝖊𝖓𝖙𝖘/connection_update",
 "replace",
 "waUploadToServer",
 "sendVideo",
@@ -1606,7 +1606,7 @@ const _0x1095da = [
 "join",
 "sendImage",
 "audio",
-"../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/exif",
+"../Ѷ𝖑𝐤𝐲𝖗𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/exif",
 "participant",
 "groupMetadata",
 "verifiedName",
@@ -1637,7 +1637,7 @@ const _0x1095da = [
 "imageMessage",
 "message",
 "\x0aFN:",
-"../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/ɴᴇᴄᴛᴏʀ",
+"../Ѷ𝖑𝐤𝐲𝖗𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/ɴᴇᴄᴛᴏʀ",
 "decodeJid",
 "log",
 "asDocument",
@@ -1684,7 +1684,7 @@ const _0x1095da = [
 "push",
 "1912341DWrXTI",
 "length",
-"../Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/𝕷𝖆ყO𝖚𝖙",
+"../Ѷ𝖑𝐤𝐲𝖗𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/𝕷𝖆ყO𝖚𝖙",
 "sendMedia",
 "env",
 "asSticker",

@@ -62,7 +62,7 @@ const _0x2c8085 = [
 "7ezVQxa",
 "slice",
 "198zDyYqb",
-"git\x20pull\x20&&\x20git\x20add\x20--all\x20&&\x20git\x20commit\x20-am\x20\x22「\x20Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊\x20」\x20:\x20",
+"git\x20pull\x20&&\x20git\x20add\x20--all\x20&&\x20git\x20commit\x20-am\x20\x22「\x20Ѷ𝖑𝐤𝐲𝖗𝖊\x20」\x20:\x20",
 "getFullYear",
 "530832iKREHY",
 "💡𝐈𝐧𝐟𝐨꧂\x20Exited\x20With\x20Code\x20!==0",
