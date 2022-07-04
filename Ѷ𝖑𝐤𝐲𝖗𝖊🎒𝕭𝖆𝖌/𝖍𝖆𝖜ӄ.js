@@ -36,9 +36,9 @@ let sequelize = DATABASE;
 let Ѷ𝖎𝖔𝖓 = makeInMemoryStore({
 logger: pino().child({ level: "error", stream: "Ѷ𝖎𝖔𝖓" }),
 });
-Ѷ𝖎𝖔𝖓?.readFromFile("./❗Ѷ𝖑𝐤𝐲𝖗𝖊❗/ᴠʟᴋʏʀᴇᴏɴᴇ®.json");
+Ѷ𝖎𝖔𝖓?.readFromFile("./🕊️Ѷ𝖑𝐤𝐲𝖗𝖊🕊️/ᴠʟᴋʏʀᴇᴏɴᴇ®.json");
 setInterval(async () => {
-Ѷ𝖎𝖔𝖓?.writeToFile("./❗Ѷ𝖑𝐤𝐲𝖗𝖊❗/ᴠʟᴋʏʀᴇᴏɴᴇ®.json");
+Ѷ𝖎𝖔𝖓?.writeToFile("./🕊️Ѷ𝖑𝐤𝐲𝖗𝖊🕊️/ᴠʟᴋʏʀᴇᴏɴᴇ®.json");
 }, 10_000);
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 async function startᴋᴜɴᴀɪ() {
@@ -72,7 +72,7 @@ process.exit(0);
 }
 await sequelize.sync();
 const { state, saveState } = useSingleFileAuthState(
-"./❗Ѷ𝖑𝐤𝐲𝖗𝖊❗/ᴠʟᴋʏʀᴇᴏɴᴇ®.json"
+"./🕊️Ѷ𝖑𝐤𝐲𝖗𝖊🕊️/ᴠʟᴋʏʀᴇᴏɴᴇ®.json"
 );
 let 𝖍𝖆𝖜ӄ = ᴋᴜɴᴋᴏɴɴᴇᴄᴛ({
 logger: pino({ level: `error` }),
