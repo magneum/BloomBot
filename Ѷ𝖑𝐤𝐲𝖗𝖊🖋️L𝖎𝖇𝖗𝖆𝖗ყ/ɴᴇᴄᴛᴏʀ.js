@@ -208,6 +208,7 @@ return buffer5;
 };
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 exports.smsg = async (𝖍𝖆𝖜ӄ, Ѷ𝖑𝐤𝐲𝖗𝖊, Ѷ𝖎𝖔𝖓) => {
+try {
 if (!Ѷ𝖑𝐤𝐲𝖗𝖊) return Ѷ𝖑𝐤𝐲𝖗𝖊;
 let M = proto.WebMessageInfo;
 if (Ѷ𝖑𝐤𝐲𝖗𝖊.key) {
@@ -289,11 +290,7 @@ text: Ѷ𝖑𝐤𝐲𝖗𝖊.quoted,
 : [];
 Ѷ𝖑𝐤𝐲𝖗𝖊.getQuotedObj = Ѷ𝖑𝐤𝐲𝖗𝖊.getQuotedMessage = async () => {
 if (!Ѷ𝖑𝐤𝐲𝖗𝖊.quoted.id) return false;
-let q = await Ѷ𝖎𝖔𝖓.loadMessage(
-Ѷ𝖑𝐤𝐲𝖗𝖊.chatID,
-Ѷ𝖑𝐤𝐲𝖗𝖊.quoted.id,
-𝖍𝖆𝖜ӄ
-);
+let q = await Ѷ𝖎𝖔𝖓.loadMessage(Ѷ𝖑𝐤𝐲𝖗𝖊.chatID, Ѷ𝖑𝐤𝐲𝖗𝖊.quoted.id, 𝖍𝖆𝖜ӄ);
 return exports.smsg(𝖍𝖆𝖜ӄ, q, Ѷ𝖎𝖔𝖓);
 };
 let vM = (Ѷ𝖑𝐤𝐲𝖗𝖊.quoted.fakeObj = M.fromObject({
@@ -312,8 +309,7 @@ jid,
 forceForward = false,
 options = {}
 ) => 𝖍𝖆𝖜ӄ.copyNForward(jid, vM, forceForward, options);
-Ѷ𝖑𝐤𝐲𝖗𝖊.quoted.download = () =>
-𝖍𝖆𝖜ӄ.downloadMediaMessage(Ѷ𝖑𝐤𝐲𝖗𝖊.quoted);
+Ѷ𝖑𝐤𝐲𝖗𝖊.quoted.download = () => 𝖍𝖆𝖜ӄ.downloadMediaMessage(Ѷ𝖑𝐤𝐲𝖗𝖊.quoted);
 }
 }
 if (Ѷ𝖑𝐤𝐲𝖗𝖊.msg.url)
@@ -338,31 +334,80 @@ forceForward = false,
 options = {}
 ) => 𝖍𝖆𝖜ӄ.copyNForward(jid, Ѷ𝖑𝐤𝐲𝖗𝖊, forceForward, options);
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
-Ѷ𝖑𝐤𝐲𝖗𝖊.Body =Ѷ𝖑𝐤𝐲𝖗𝖊.mtype === "conversation"? Ѷ𝖑𝐤𝐲𝖗𝖊.message.conversation: Ѷ𝖑𝐤𝐲𝖗𝖊.mtype == "imageMessage"? Ѷ𝖑𝐤𝐲𝖗𝖊.message.imageMessage.caption: Ѷ𝖑𝐤𝐲𝖗𝖊.mtype == "videoMessage"? Ѷ𝖑𝐤𝐲𝖗𝖊.message.videoMessage.caption: Ѷ𝖑𝐤𝐲𝖗𝖊.mtype == "extendedTextMessage"? Ѷ𝖑𝐤𝐲𝖗𝖊.message.extendedTextMessage.text: Ѷ𝖑𝐤𝐲𝖗𝖊.mtype == "buttonsResponseMessage"? Ѷ𝖑𝐤𝐲𝖗𝖊.message.buttonsResponseMessage.selectedButtonId: Ѷ𝖑𝐤𝐲𝖗𝖊.mtype == "listResponseMessage"? Ѷ𝖑𝐤𝐲𝖗𝖊.message.listResponseMessage.singleSelectReply.selectedRowId: Ѷ𝖑𝐤𝐲𝖗𝖊.mtype == "templateButtonReplyMessage"? Ѷ𝖑𝐤𝐲𝖗𝖊.message.templateButtonReplyMessage.selectedId: Ѷ𝖑𝐤𝐲𝖗𝖊.mtype === "messageContextInfo"? Ѷ𝖑𝐤𝐲𝖗𝖊.message.buttonsResponseMessage?.selectedButtonId ||Ѷ𝖑𝐤𝐲𝖗𝖊.message.listResponseMessage?.singleSelectReply.selectedRowId ||Ѷ𝖑𝐤𝐲𝖗𝖊.text: "";
+Ѷ𝖑𝐤𝐲𝖗𝖊.Body =
+Ѷ𝖑𝐤𝐲𝖗𝖊.mtype === "conversation"
+? Ѷ𝖑𝐤𝐲𝖗𝖊.message.conversation
+: Ѷ𝖑𝐤𝐲𝖗𝖊.mtype == "imageMessage"
+? Ѷ𝖑𝐤𝐲𝖗𝖊.message.imageMessage.caption
+: Ѷ𝖑𝐤𝐲𝖗𝖊.mtype == "videoMessage"
+? Ѷ𝖑𝐤𝐲𝖗𝖊.message.videoMessage.caption
+: Ѷ𝖑𝐤𝐲𝖗𝖊.mtype == "extendedTextMessage"
+? Ѷ𝖑𝐤𝐲𝖗𝖊.message.extendedTextMessage.text
+: Ѷ𝖑𝐤𝐲𝖗𝖊.mtype == "buttonsResponseMessage"
+? Ѷ𝖑𝐤𝐲𝖗𝖊.message.buttonsResponseMessage.selectedButtonId
+: Ѷ𝖑𝐤𝐲𝖗𝖊.mtype == "listResponseMessage"
+? Ѷ𝖑𝐤𝐲𝖗𝖊.message.listResponseMessage.singleSelectReply.selectedRowId
+: Ѷ𝖑𝐤𝐲𝖗𝖊.mtype == "templateButtonReplyMessage"
+? Ѷ𝖑𝐤𝐲𝖗𝖊.message.templateButtonReplyMessage.selectedId
+: Ѷ𝖑𝐤𝐲𝖗𝖊.mtype === "messageContextInfo"
+? Ѷ𝖑𝐤𝐲𝖗𝖊.message.buttonsResponseMessage?.selectedButtonId ||
+Ѷ𝖑𝐤𝐲𝖗𝖊.message.listResponseMessage?.singleSelectReply.selectedRowId ||
+Ѷ𝖑𝐤𝐲𝖗𝖊.text
+: "";
 Ѷ𝖑𝐤𝐲𝖗𝖊.isCommand = Ѷ𝖑𝐤𝐲𝖗𝖊.Body.startsWith(prefix);
-Ѷ𝖑𝐤𝐲𝖗𝖊.isCmd =prefix.includes(Ѷ𝖑𝐤𝐲𝖗𝖊.Body != "" && Ѷ𝖑𝐤𝐲𝖗𝖊.Body.slice(0, 1)) &&Ѷ𝖑𝐤𝐲𝖗𝖊.Body.slice(1) != "";
-Ѷ𝖑𝐤𝐲𝖗𝖊.commandName = Ѷ𝖑𝐤𝐲𝖗𝖊.isCmd? Ѷ𝖑𝐤𝐲𝖗𝖊.Body.slice(1).trim().split(" ")[0].toLowerCase(): "";
+Ѷ𝖑𝐤𝐲𝖗𝖊.isCmd =
+prefix.includes(Ѷ𝖑𝐤𝐲𝖗𝖊.Body != "" && Ѷ𝖑𝐤𝐲𝖗𝖊.Body.slice(0, 1)) &&
+Ѷ𝖑𝐤𝐲𝖗𝖊.Body.slice(1) != "";
+Ѷ𝖑𝐤𝐲𝖗𝖊.commandName = Ѷ𝖑𝐤𝐲𝖗𝖊.isCmd
+? Ѷ𝖑𝐤𝐲𝖗𝖊.Body.slice(1).trim().split(" ")[0].toLowerCase()
+: "";
 Ѷ𝖑𝐤𝐲𝖗𝖊.A𝖗𝖌𝖘 = Ѷ𝖑𝐤𝐲𝖗𝖊.Body.trim().split(/ +/).slice(1);
 Ѷ𝖑𝐤𝐲𝖗𝖊.pushName = Ѷ𝖑𝐤𝐲𝖗𝖊.pushName || "No Name";
 Ѷ𝖑𝐤𝐲𝖗𝖊.botNumber = await 𝖍𝖆𝖜ӄ.decodeJid(𝖍𝖆𝖜ӄ.user.id);
-Ѷ𝖑𝐤𝐲𝖗𝖊.isCreator = [Ѷ𝖑𝐤𝐲𝖗𝖊.botNumber, ...global.owner].map((v) => v.replace(/[^0-9]/g, "") + "@s.whatsapp.net").includes(Ѷ𝖑𝐤𝐲𝖗𝖊.sender);
+Ѷ𝖑𝐤𝐲𝖗𝖊.isCreator = [Ѷ𝖑𝐤𝐲𝖗𝖊.botNumber, ...global.owner]
+.map((v) => v.replace(/[^0-9]/g, "") + "@s.whatsapp.net")
+.includes(Ѷ𝖑𝐤𝐲𝖗𝖊.sender);
 Ѷ𝖑𝐤𝐲𝖗𝖊.fromMe = Ѷ𝖑𝐤𝐲𝖗𝖊.sender == Ѷ𝖑𝐤𝐲𝖗𝖊.botNumber ? true : false;
 Ѷ𝖑𝐤𝐲𝖗𝖊.F𝖚𝖑𝖑_A𝖗𝖌𝖘 = Ѷ𝖑𝐤𝐲𝖗𝖊.A𝖗𝖌𝖘.join(" ");
 Ѷ𝖑𝐤𝐲𝖗𝖊.quoted = Ѷ𝖑𝐤𝐲𝖗𝖊.quoted ? Ѷ𝖑𝐤𝐲𝖗𝖊.quoted : Ѷ𝖑𝐤𝐲𝖗𝖊;
 let mime = (Ѷ𝖑𝐤𝐲𝖗𝖊.quoted.msg || Ѷ𝖑𝐤𝐲𝖗𝖊.quoted).mimetype || "";
 Ѷ𝖑𝐤𝐲𝖗𝖊.isMedia = /image|video|sticker|audio/.test(mime);
-Ѷ𝖑𝐤𝐲𝖗𝖊.groupMetadata = Ѷ𝖑𝐤𝐲𝖗𝖊.isGroup? await 𝖍𝖆𝖜ӄ.groupMetadata(Ѷ𝖑𝐤𝐲𝖗𝖊.chatID): "";
-Ѷ𝖑𝐤𝐲𝖗𝖊.participants = Ѷ𝖑𝐤𝐲𝖗𝖊.isGroup? await Ѷ𝖑𝐤𝐲𝖗𝖊.groupMetadata.participants: "";
-Ѷ𝖑𝐤𝐲𝖗𝖊.groupAdmins = Ѷ𝖑𝐤𝐲𝖗𝖊.isGroup? await Ѷ𝖑𝐤𝐲𝖗𝖊.participants.filter((v) => v.admin !== null).map((v) => v.id): "";
-Ѷ𝖑𝐤𝐲𝖗𝖊.isBotAdmin = Ѷ𝖑𝐤𝐲𝖗𝖊.isGroup? Ѷ𝖑𝐤𝐲𝖗𝖊.groupAdmins.includes(Ѷ𝖑𝐤𝐲𝖗𝖊.botNumber): false;
-Ѷ𝖑𝐤𝐲𝖗𝖊.isSenderAdmin = Ѷ𝖑𝐤𝐲𝖗𝖊.isGroup? Ѷ𝖑𝐤𝐲𝖗𝖊.groupAdmins.includes(Ѷ𝖑𝐤𝐲𝖗𝖊.sender): false;
-Ѷ𝖑𝐤𝐲𝖗𝖊.mentionByTag =Ѷ𝖑𝐤𝐲𝖗𝖊.mtype == "extendedTextMessage" &&Ѷ𝖑𝐤𝐲𝖗𝖊.message.extendedTextMessage.contextInfo != null? Ѷ𝖑𝐤𝐲𝖗𝖊.message.extendedTextMessage.contextInfo.mentionedJid: [];
-Ѷ𝖑𝐤𝐲𝖗𝖊.mentionByReply =Ѷ𝖑𝐤𝐲𝖗𝖊.mtype == "extendedTextMessage" &&Ѷ𝖑𝐤𝐲𝖗𝖊.message.extendedTextMessage.contextInfo != null? Ѷ𝖑𝐤𝐲𝖗𝖊.message.extendedTextMessage.contextInfo.participant || "": "";
-let MODString =process.env.MOD === undefined? "918436686758,917430922909": process.env.MOD;
+Ѷ𝖑𝐤𝐲𝖗𝖊.groupMetadata = Ѷ𝖑𝐤𝐲𝖗𝖊.isGroup
+? await 𝖍𝖆𝖜ӄ.groupMetadata(Ѷ𝖑𝐤𝐲𝖗𝖊.chatID)
+: "";
+Ѷ𝖑𝐤𝐲𝖗𝖊.participants = Ѷ𝖑𝐤𝐲𝖗𝖊.isGroup
+? await Ѷ𝖑𝐤𝐲𝖗𝖊.groupMetadata.participants
+: "";
+Ѷ𝖑𝐤𝐲𝖗𝖊.groupAdmins = Ѷ𝖑𝐤𝐲𝖗𝖊.isGroup
+? await Ѷ𝖑𝐤𝐲𝖗𝖊.participants
+.filter((v) => v.admin !== null)
+.map((v) => v.id)
+: "";
+Ѷ𝖑𝐤𝐲𝖗𝖊.isBotAdmin = Ѷ𝖑𝐤𝐲𝖗𝖊.isGroup
+? Ѷ𝖑𝐤𝐲𝖗𝖊.groupAdmins.includes(Ѷ𝖑𝐤𝐲𝖗𝖊.botNumber)
+: false;
+Ѷ𝖑𝐤𝐲𝖗𝖊.isSenderAdmin = Ѷ𝖑𝐤𝐲𝖗𝖊.isGroup
+? Ѷ𝖑𝐤𝐲𝖗𝖊.groupAdmins.includes(Ѷ𝖑𝐤𝐲𝖗𝖊.sender)
+: false;
+Ѷ𝖑𝐤𝐲𝖗𝖊.mentionByTag =
+Ѷ𝖑𝐤𝐲𝖗𝖊.mtype == "extendedTextMessage" &&
+Ѷ𝖑𝐤𝐲𝖗𝖊.message.extendedTextMessage.contextInfo != null
+? Ѷ𝖑𝐤𝐲𝖗𝖊.message.extendedTextMessage.contextInfo.mentionedJid
+: [];
+Ѷ𝖑𝐤𝐲𝖗𝖊.mentionByReply =
+Ѷ𝖑𝐤𝐲𝖗𝖊.mtype == "extendedTextMessage" &&
+Ѷ𝖑𝐤𝐲𝖗𝖊.message.extendedTextMessage.contextInfo != null
+? Ѷ𝖑𝐤𝐲𝖗𝖊.message.extendedTextMessage.contextInfo.participant || ""
+: "";
+let MODString =
+process.env.MOD === undefined
+? "918436686758,917430922909"
+: process.env.MOD;
 Ѷ𝖑𝐤𝐲𝖗𝖊.isSenderTUF = MODString.includes(
 Ѷ𝖑𝐤𝐲𝖗𝖊.sender.substring(0, Ѷ𝖑𝐤𝐲𝖗𝖊.sender.indexOf("@"))
 );
 return Ѷ𝖑𝐤𝐲𝖗𝖊;
+} catch (err) {}
 };
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 let file = require.resolve(__filename);
