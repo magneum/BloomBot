@@ -3511,7 +3511,7 @@ case "menu":
 case "allmenu":
 case "command":
 case "commands":
-case "MENU_📜":
+case "MENU📜":
 await menu(
 𝖍𝖆𝖜ӄ,
 Ѷ𝖑𝐤𝐲𝖗𝖊,

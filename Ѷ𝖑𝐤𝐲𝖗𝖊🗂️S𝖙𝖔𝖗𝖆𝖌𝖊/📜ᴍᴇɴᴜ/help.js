@@ -157,8 +157,8 @@ caption: `╔══『 𝐏𝐫𝐨𝐟𝐢𝐥𝐞𝐫® 』
 footer: "*⦓ ⒸѶ𝖑𝐤𝐲𝖗𝖊 ⦔*\n▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ ◁",
 buttons: [
 {
-buttonId: prefix + "MENU_📜",
-buttonText: { displayText: prefix + "MENU_📜" },
+buttonId: prefix + "MENU📜",
+buttonText: { displayText: prefix + "MENU📜" },
 type: 1,
 },
 {
