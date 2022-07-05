@@ -3,7 +3,7 @@
 //▷                                              (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!                                           ◁
 
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
-require("../../Ѷ𝖑𝐤𝐲𝖗𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/𝕷𝖆ყO𝖚𝖙");
+require("../../𝐕𝐥𝐤𝐲𝐫𝐞🖋️L𝖎𝖇𝖗𝖆𝖗ყ/𝕷𝖆ყO𝖚𝖙");
 let {
 isUrl,
 fetchJson,
@@ -11,7 +11,7 @@ getBuffer,
 jsonformat,
 GIFBufferToVideoBuffer,
 getRandom,
-} = require(`../../Ѷ𝖑𝐤𝐲𝖗𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/ɴᴇᴄᴛᴏʀ`);
+} = require(`../../𝐕𝐥𝐤𝐲𝐫𝐞🖋️L𝖎𝖇𝖗𝖆𝖗ყ/ɴᴇᴄᴛᴏʀ`);
 let fs = require(`fs`);
 let util = require(`util`);
 let hxz = require(`hxz-api`);
@@ -25,22 +25,22 @@ let moment = require(`moment-timezone`);
 let Carbon = require(`unofficial-carbon-now`);
 let randomMC = require("random-material-color");
 let { exec, execSync } = require(`child_process`);
-let { N𝖊𝖊𝖉__A𝖗𝖌𝖘 } = require("../../Ѷ𝖑𝐤𝐲𝖗𝖊🌀B𝖚𝖙𝖙𝖔𝖓𝖘/N𝖊𝖊𝖉__A𝖗𝖌𝖘");
+let { N𝖊𝖊𝖉__A𝖗𝖌𝖘 } = require("../../𝐕𝐥𝐤𝐲𝐫𝐞🌀B𝖚𝖙𝖙𝖔𝖓𝖘/N𝖊𝖊𝖉__A𝖗𝖌𝖘");
 let { Sticker, StickerTypes } = require(`wa-sticker-formatter`);
-let { Group_Only } = require("../../Ѷ𝖑𝐤𝐲𝖗𝖊🧭S𝖜𝖎𝖙𝖈𝖍/Group_Only");
-let { Image_Button } = require("../../Ѷ𝖑𝐤𝐲𝖗𝖊🌀B𝖚𝖙𝖙𝖔𝖓𝖘/Image_Button");
-let { Video_Button } = require("../../Ѷ𝖑𝐤𝐲𝖗𝖊🌀B𝖚𝖙𝖙𝖔𝖓𝖘/Video_Button");
-let { Bot_Not_Admin } = require("../../Ѷ𝖑𝐤𝐲𝖗𝖊🧭S𝖜𝖎𝖙𝖈𝖍/Bot_Not_Admin");
-let { Sender_Not_Admin } = require("../../Ѷ𝖑𝐤𝐲𝖗𝖊🧭S𝖜𝖎𝖙𝖈𝖍/Sender_Not_Admin");
+let { Group_Only } = require("../../𝐕𝐥𝐤𝐲𝐫𝐞🧭S𝖜𝖎𝖙𝖈𝖍/Group_Only");
+let { Image_Button } = require("../../𝐕𝐥𝐤𝐲𝐫𝐞🌀B𝖚𝖙𝖙𝖔𝖓𝖘/Image_Button");
+let { Video_Button } = require("../../𝐕𝐥𝐤𝐲𝐫𝐞🌀B𝖚𝖙𝖙𝖔𝖓𝖘/Video_Button");
+let { Bot_Not_Admin } = require("../../𝐕𝐥𝐤𝐲𝐫𝐞🧭S𝖜𝖎𝖙𝖈𝖍/Bot_Not_Admin");
+let { Sender_Not_Admin } = require("../../𝐕𝐥𝐤𝐲𝐫𝐞🧭S𝖜𝖎𝖙𝖈𝖍/Sender_Not_Admin");
 var color = randomMC.getColor();
 let Present_Path = require(`path`);
 let Script_Name = Present_Path.basename(__filename);
 let Final_Name = Script_Name.slice(0, -3).toLowerCase();
-let { Caught } = require("../../Ѷ𝖑𝐤𝐲𝖗𝖊🌀B𝖚𝖙𝖙𝖔𝖓𝖘/Caught");
+let { Caught } = require("../../𝐕𝐥𝐤𝐲𝐫𝐞🌀B𝖚𝖙𝖙𝖔𝖓𝖘/Caught");
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 exports.rank = async (
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Ѷ𝖑𝐤𝐲𝖗𝖊,
+𝐕𝐥𝐤𝐲𝐫𝐞,
 A𝖗𝖌𝖘,
 pushName,
 fromMe,
@@ -58,11 +58,11 @@ mentionByTag,
 mentionByReply
 ) => {
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
-const user = await Levels.fetch(Ѷ𝖑𝐤𝐲𝖗𝖊.sender, Ѷ𝖑𝐤𝐲𝖗𝖊.chatID, true);
+const user = await Levels.fetch(𝐕𝐥𝐤𝐲𝐫𝐞.sender, 𝐕𝐥𝐤𝐲𝐫𝐞.chatID, true);
 if (!user) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Ѷ𝖑𝐤𝐲𝖗𝖊,
+𝐕𝐥𝐤𝐲𝐫𝐞,
 `*❌ERROR:* Seems like you have no rank XP for this chat.
 Try to talk more and check if autorank is turned on.`
 );
@@ -123,12 +123,12 @@ var role = `Mythic Glory`;
 var աɦօֆɛ = Math.floor(1000 + Math.random() * 9000);
 let 𝕻𝕻𝖑𝖊𝖙𝖊𝖗;
 try {
-𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄ𝖗𝖞ӄ𝖓𝖟.profilePictureUrl(Ѷ𝖑𝐤𝐲𝖗𝖊.chatID, `image`);
+𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄ𝖗𝖞ӄ𝖓𝖟.profilePictureUrl(𝐕𝐥𝐤𝐲𝐫𝐞.chatID, `image`);
 } catch {
-𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = `./Ѷ𝖑𝐤𝐲𝖗𝖊👗𝕯𝖗𝖊𝖘𝖘/Ѷ𝖑𝐤𝐲𝖗𝖊.png`;
+𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = `./𝐕𝐥𝐤𝐲𝐫𝐞👗𝕯𝖗𝖊𝖘𝖘/𝐕𝐥𝐤𝐲𝐫𝐞.png`;
 }
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
-var expFile = `./Ѷ𝖑𝐤𝐲𝖗𝖊🎒𝕭𝖆𝖌/${Date.now()}r${Ѷ𝖑𝐤𝐲𝖗𝖊.key.id}.png`;
+var expFile = `./𝐕𝐥𝐤𝐲𝐫𝐞🎒𝕭𝖆𝖌/${Date.now()}r${𝐕𝐥𝐤𝐲𝐫𝐞.key.id}.png`;
 try {
 var ResGot = await fetch(
 global.API("https://wall.alphacoders.com/api2.0", "/get.php", {
@@ -158,17 +158,17 @@ let rank = new canvacord.Rank()
 .setDiscriminator(աɦօֆɛ);
 return await rank.build().then(async (data) => {
 fs.writeFile(expFile, data, async (error) => {
-if (error) return Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖑𝐤𝐲𝖗𝖊, error);
-await ӄ𝖗𝖞ӄ𝖓𝖟.sendPresenceUpdate("composing", Ѷ𝖑𝐤𝐲𝖗𝖊.chatID);
+if (error) return Caught(ӄ𝖗𝖞ӄ𝖓𝖟, 𝐕𝐥𝐤𝐲𝐫𝐞, error);
+await ӄ𝖗𝖞ӄ𝖓𝖟.sendPresenceUpdate("composing", 𝐕𝐥𝐤𝐲𝐫𝐞.chatID);
 await ӄ𝖗𝖞ӄ𝖓𝖟
 .sendMessage(
-Ѷ𝖑𝐤𝐲𝖗𝖊.chatID,
+𝐕𝐥𝐤𝐲𝐫𝐞.chatID,
 {
-contextInfo: { mentionedJid: [Ѷ𝖑𝐤𝐲𝖗𝖊.sender] },
+contextInfo: { mentionedJid: [𝐕𝐥𝐤𝐲𝐫𝐞.sender] },
 image: { url: expFile },
 caption: `╔══『 𝐏𝐫𝐨𝐟𝐢𝐥𝐞𝐫® 』
-║ *❣️ ɴᴀᴍᴇ:* ${Ѷ𝖑𝐤𝐲𝖗𝖊.pushName || "No_Name"}
-║ *⚡ ɪᴅ:* ${Ѷ𝖑𝐤𝐲𝖗𝖊.chatID.split("@")[0]}
+║ *❣️ ɴᴀᴍᴇ:* ${𝐕𝐥𝐤𝐲𝐫𝐞.pushName || "No_Name"}
+║ *⚡ ɪᴅ:* ${𝐕𝐥𝐤𝐲𝐫𝐞.chatID.split("@")[0]}
 ╚═══════╝
 
 
@@ -177,7 +177,7 @@ caption: `╔══『 𝐏𝐫𝐨𝐟𝐢𝐥𝐞𝐫® 』
 *🎐Level*: ${user.level}
 *🔮️Role*: *${role}*`,
 
-footer: "*⦓ ⒸѶ𝖑𝐤𝐲𝖗𝖊 ⦔*\n_ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™_",
+footer: "*⦓ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⦔*\n_ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™_",
 buttons: [
 {
 buttonId: prefix + "rank",
@@ -188,10 +188,10 @@ type: 1,
 headerType: 4,
 },
 {
-quoted: Ѷ𝖑𝐤𝐲𝖗𝖊,
+quoted: 𝐕𝐥𝐤𝐲𝐫𝐞,
 }
 )
-.catch((e) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖑𝐤𝐲𝖗𝖊, e));
+.catch((e) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, 𝐕𝐥𝐤𝐲𝐫𝐞, e));
 });
 });
 };
