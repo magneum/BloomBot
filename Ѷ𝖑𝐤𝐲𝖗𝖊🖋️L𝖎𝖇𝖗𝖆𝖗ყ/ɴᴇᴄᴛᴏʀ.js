@@ -208,7 +208,6 @@ return buffer5;
 };
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 exports.smsg = async (𝖍𝖆𝖜ӄ, Ѷ𝖑𝐤𝐲𝖗𝖊, Ѷ𝖎𝖔𝖓) => {
-try {
 if (!Ѷ𝖑𝐤𝐲𝖗𝖊) return Ѷ𝖑𝐤𝐲𝖗𝖊;
 let M = proto.WebMessageInfo;
 if (Ѷ𝖑𝐤𝐲𝖗𝖊.key) {
@@ -407,7 +406,6 @@ process.env.MOD === undefined
 Ѷ𝖑𝐤𝐲𝖗𝖊.sender.substring(0, Ѷ𝖑𝐤𝐲𝖗𝖊.sender.indexOf("@"))
 );
 return Ѷ𝖑𝐤𝐲𝖗𝖊;
-} catch (err) {}
 };
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 let file = require.resolve(__filename);
