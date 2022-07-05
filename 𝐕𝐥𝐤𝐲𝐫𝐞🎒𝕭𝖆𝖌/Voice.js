@@ -11,7 +11,7 @@ lang: "en",
 slow: false,
 host: `https://translate.google.com`,
 });
-let dl𝐀𝐩𝐢 = new DownloaderHelper(Media, "./Ѷ𝖑𝐤𝐲𝖗𝖊🎒𝕭𝖆𝖌", {
+let dl𝐀𝐩𝐢 = new DownloaderHelper(Media, "./𝐕𝐥𝐤𝐲𝐫𝐞🎒𝕭𝖆𝖌", {
 fileName: `${Date.now()}.mp3`,
 retry: true,
 });

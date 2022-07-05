@@ -54,7 +54,7 @@ const _0x509bb4 = [
 "❗\x20𝐒𝐞𝐧𝐝𝐞𝐫\x20𝐀𝐝𝐦𝐢𝐧:\x20",
 "4988088hLCWWs",
 "concat",
-"../Ѷ𝖑𝐤𝐲𝖗𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/𝕷𝖆ყO𝖚𝖙",
+"../𝐕𝐥𝐤𝐲𝐫𝐞🖋️L𝖎𝖇𝖗𝖆𝖗ყ/𝕷𝖆ყO𝖚𝖙",
 "@heroku-cli/color",
 "subject",
 "Gamboge",

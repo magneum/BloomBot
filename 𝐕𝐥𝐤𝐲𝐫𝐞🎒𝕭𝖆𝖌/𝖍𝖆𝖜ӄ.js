@@ -3,8 +3,8 @@
 //▷                                              (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!                                           ◁
 
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
-require(`../Ѷ𝖑𝐤𝐲𝖗𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/𝕷𝖆ყO𝖚𝖙`);
-require(`../Ѷ𝖑𝐤𝐲𝖗𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/Ѷ𝖆𝖑.js`);
+require(`../𝐕𝐥𝐤𝐲𝐫𝐞🖋️L𝖎𝖇𝖗𝖆𝖗ყ/𝕷𝖆ყO𝖚𝖙`);
+require(`../𝐕𝐥𝐤𝐲𝐫𝐞🖋️L𝖎𝖇𝖗𝖆𝖗ყ/Ѷ𝖆𝖑.js`);
 if (process.env.Devalkyrie == "true") {
 console.log("V__Default");
 let {
@@ -25,20 +25,20 @@ let chalk = require(`chalk`);
 let goose = require(`mongoose`);
 let FileType = require(`file-type`);
 let PhoneNumber = require(`awesome-phonenumber`);
-let { smsg, getBuffer, getSizeMedia } = require(`../Ѷ𝖑𝐤𝐲𝖗𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/ɴᴇᴄᴛᴏʀ`);
+let { smsg, getBuffer, getSizeMedia } = require(`../𝐕𝐥𝐤𝐲𝐫𝐞🖋️L𝖎𝖇𝖗𝖆𝖗ყ/ɴᴇᴄᴛᴏʀ`);
 let {
 imageToWebp,
 videoToWebp,
 writeExifImg,
 writeExifVid,
-} = require(`../Ѷ𝖑𝐤𝐲𝖗𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/exif`);
+} = require(`../𝐕𝐥𝐤𝐲𝐫𝐞🖋️L𝖎𝖇𝖗𝖆𝖗ყ/exif`);
 let sequelize = DATABASE;
 let Ѷ𝖎𝖔𝖓 = makeInMemoryStore({
 logger: pino().child({ level: "error", stream: "Ѷ𝖎𝖔𝖓" }),
 });
-Ѷ𝖎𝖔𝖓?.readFromFile("./🕊️Ѷ𝖑𝐤𝐲𝖗𝖊🕊️/ᴠʟᴋʏʀᴇᴏɴᴇ®.json");
+Ѷ𝖎𝖔𝖓?.readFromFile("./🕊️𝐕𝐥𝐤𝐲𝐫𝐞🕊️/ᴠʟᴋʏʀᴇᴏɴᴇ®.json");
 setInterval(async () => {
-Ѷ𝖎𝖔𝖓?.writeToFile("./🕊️Ѷ𝖑𝐤𝐲𝖗𝖊🕊️/ᴠʟᴋʏʀᴇᴏɴᴇ®.json");
+Ѷ𝖎𝖔𝖓?.writeToFile("./🕊️𝐕𝐥𝐤𝐲𝐫𝐞🕊️/ᴠʟᴋʏʀᴇᴏɴᴇ®.json");
 }, 10_000);
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 async function startᴋᴜɴᴀɪ() {
@@ -72,7 +72,7 @@ process.exit(0);
 }
 await sequelize.sync();
 const { state, saveState } = useSingleFileAuthState(
-"./🕊️Ѷ𝖑𝐤𝐲𝖗𝖊🕊️/ᴠʟᴋʏʀᴇᴏɴᴇ®.json"
+"./🕊️𝐕𝐥𝐤𝐲𝐫𝐞🕊️/ᴠʟᴋʏʀᴇᴏɴᴇ®.json"
 );
 let 𝖍𝖆𝖜ӄ = ᴋᴜɴᴋᴏɴɴᴇᴄᴛ({
 logger: pino({ level: `error` }),
@@ -165,7 +165,7 @@ contacts: { displayName: `${list.length} contact`, contacts: list },
 };
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 𝖍𝖆𝖜ӄ.public = true;
-𝖍𝖆𝖜ӄ.serializeM = (Ѷ𝖑𝐤𝐲𝖗𝖊) => smsg(𝖍𝖆𝖜ӄ, Ѷ𝖑𝐤𝐲𝖗𝖊, Ѷ𝖎𝖔𝖓);
+𝖍𝖆𝖜ӄ.serializeM = (𝐕𝐥𝐤𝐲𝐫𝐞) => smsg(𝖍𝖆𝖜ӄ, 𝐕𝐥𝐤𝐲𝐫𝐞, Ѷ𝖎𝖔𝖓);
 𝖍𝖆𝖜ӄ.send5ButImg = async (
 jid,
 text = ``,
@@ -179,7 +179,7 @@ let message = await prepareWAMessageMedia(
 { upload: 𝖍𝖆𝖜ӄ.waUploadToServer }
 );
 let template = generateWAMessageFromContent(
-Ѷ𝖑𝐤𝐲𝖗𝖊.chatID,
+𝐕𝐥𝐤𝐲𝐫𝐞.chatID,
 proto.Message.fromObject({
 templateMessage: {
 hydratedTemplate: {
@@ -395,7 +395,7 @@ mimetype = mime,
 pathFile = filename;
 if (options.asDocument) type = `document`;
 if (options.asSticker || /webp/.test(mime)) {
-let { writeExif } = require(`../Ѷ𝖑𝐤𝐲𝖗𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/exif`);
+let { writeExif } = require(`../𝐕𝐥𝐤𝐲𝐫𝐞🖋️L𝖎𝖇𝖗𝖆𝖗ყ/exif`);
 let media = { mimetype: mime, data };
 pathFile = await writeExif(media, {
 packname: options.packname ? options.packname : global.packname,
@@ -538,7 +538,7 @@ data,
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 𝖍𝖆𝖜ӄ.ev.on(`connection.update`, async (𝖚𝖕𝖉𝖆𝖙𝖊) => {
 try {
-let connection_update = require(`../Ѷ𝖑𝐤𝐲𝖗𝖊🌗E𝖛𝖊𝖓𝖙𝖘/connection_update`);
+let connection_update = require(`../𝐕𝐥𝐤𝐲𝐫𝐞🌗E𝖛𝖊𝖓𝖙𝖘/connection_update`);
 await connection_update.Vcnup(𝖚𝖕𝖉𝖆𝖙𝖊, startᴋᴜɴᴀɪ, 𝖍𝖆𝖜ӄ);
 } catch (𝕰𝖗𝖗𝖔𝖗) {
 return console.log(chalk.redBright(𝕰𝖗𝖗𝖔𝖗));
@@ -549,7 +549,7 @@ saveState(𝖚𝖕𝖉𝖆𝖙𝖊);
 });
 𝖍𝖆𝖜ӄ.ev.on(`messages.upsert`, async (𝖚𝖕𝖉𝖆𝖙𝖊) => {
 try {
-let messages_upsert = require(`../Ѷ𝖑𝐤𝐲𝖗𝖊🌗E𝖛𝖊𝖓𝖙𝖘/messages_upsert`);
+let messages_upsert = require(`../𝐕𝐥𝐤𝐲𝐫𝐞🌗E𝖛𝖊𝖓𝖙𝖘/messages_upsert`);
 await messages_upsert.Vmsgup(𝖚𝖕𝖉𝖆𝖙𝖊, Ѷ𝖎𝖔𝖓, 𝖍𝖆𝖜ӄ);
 } catch (𝕰𝖗𝖗𝖔𝖗) {
 return console.log(chalk.redBright(𝕰𝖗𝖗𝖔𝖗));
@@ -557,7 +557,7 @@ return console.log(chalk.redBright(𝕰𝖗𝖗𝖔𝖗));
 });
 𝖍𝖆𝖜ӄ.ev.on(`group-participants.update`, async (𝖚𝖕𝖉𝖆𝖙𝖊) => {
 try {
-let group_participants = require(`../Ѷ𝖑𝐤𝐲𝖗𝖊🌗E𝖛𝖊𝖓𝖙𝖘/group_participants`);
+let group_participants = require(`../𝐕𝐥𝐤𝐲𝐫𝐞🌗E𝖛𝖊𝖓𝖙𝖘/group_participants`);
 await group_participants.Vgrpns(𝖚𝖕𝖉𝖆𝖙𝖊, 𝖍𝖆𝖜ӄ);
 } catch (𝕰𝖗𝖗𝖔𝖗) {
 return console.log(chalk.redBright(𝕰𝖗𝖗𝖔𝖗));
@@ -565,7 +565,7 @@ return console.log(chalk.redBright(𝕰𝖗𝖗𝖔𝖗));
 });
 𝖍𝖆𝖜ӄ.ws.on(`CB:call`, async (𝖚𝖕𝖉𝖆𝖙𝖊) => {
 try {
-let call_updates = require(`../Ѷ𝖑𝐤𝐲𝖗𝖊🌗E𝖛𝖊𝖓𝖙𝖘/call_updates`);
+let call_updates = require(`../𝐕𝐥𝐤𝐲𝐫𝐞🌗E𝖛𝖊𝖓𝖙𝖘/call_updates`);
 await call_updates.Vclup(𝖍𝖆𝖜ӄ, 𝖚𝖕𝖉𝖆𝖙𝖊);
 } catch (𝕰𝖗𝖗𝖔𝖗) {
 return console.log(chalk.redBright(𝕰𝖗𝖗𝖔𝖗));
@@ -597,18 +597,18 @@ let chalk = require(`chalk`);
 let goose = require("mongoose");
 let FileType = require(`file-type`);
 let PhoneNumber = require(`awesome-phonenumber`);
-let { smsg, getBuffer, getSizeMedia } = require(`../Ѷ𝖑𝐤𝐲𝖗𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/ɴᴇᴄᴛᴏʀ`);
+let { smsg, getBuffer, getSizeMedia } = require(`../𝐕𝐥𝐤𝐲𝐫𝐞🖋️L𝖎𝖇𝖗𝖆𝖗ყ/ɴᴇᴄᴛᴏʀ`);
 let {
 imageToWebp,
 videoToWebp,
 writeExifImg,
 writeExifVid,
-} = require(`../Ѷ𝖑𝐤𝐲𝖗𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/exif`);
+} = require(`../𝐕𝐥𝐤𝐲𝐫𝐞🖋️L𝖎𝖇𝖗𝖆𝖗ყ/exif`);
 let sequelize = DATABASE;
 let Ѷ𝖎𝖔𝖓 = makeInMemoryStore({
 logger: pino().child({ level: `silent`, stream: `Ѷ𝖎𝖔𝖓` }),
 });
-let dbAuth = require(`../Ѷ𝖑𝐤𝐲𝖗𝖊🧆𝕯𝖆𝖙𝖆𝖇𝖆𝖘𝖊/🍂𝖘𝖖𝖑/Auth`);
+let dbAuth = require(`../𝐕𝐥𝐤𝐲𝐫𝐞🧆𝕯𝖆𝖙𝖆𝖇𝖆𝖘𝖊/🍂𝖘𝖖𝖑/Auth`);
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 async function startᴋᴜɴᴀɪ() {
 try {
@@ -732,7 +732,7 @@ contacts: { displayName: `${list.length} contact`, contacts: list },
 };
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 𝖍𝖆𝖜ӄ.public = true;
-𝖍𝖆𝖜ӄ.serializeM = (Ѷ𝖑𝐤𝐲𝖗𝖊) => smsg(𝖍𝖆𝖜ӄ, Ѷ𝖑𝐤𝐲𝖗𝖊, Ѷ𝖎𝖔𝖓);
+𝖍𝖆𝖜ӄ.serializeM = (𝐕𝐥𝐤𝐲𝐫𝐞) => smsg(𝖍𝖆𝖜ӄ, 𝐕𝐥𝐤𝐲𝐫𝐞, Ѷ𝖎𝖔𝖓);
 𝖍𝖆𝖜ӄ.send5ButImg = async (
 jid,
 text = ``,
@@ -746,7 +746,7 @@ let message = await prepareWAMessageMedia(
 { upload: 𝖍𝖆𝖜ӄ.waUploadToServer }
 );
 let template = generateWAMessageFromContent(
-Ѷ𝖑𝐤𝐲𝖗𝖊.chatID,
+𝐕𝐥𝐤𝐲𝐫𝐞.chatID,
 proto.Message.fromObject({
 templateMessage: {
 hydratedTemplate: {
@@ -962,7 +962,7 @@ mimetype = mime,
 pathFile = filename;
 if (options.asDocument) type = `document`;
 if (options.asSticker || /webp/.test(mime)) {
-let { writeExif } = require(`../Ѷ𝖑𝐤𝐲𝖗𝖊🖋️L𝖎𝖇𝖗𝖆𝖗ყ/exif`);
+let { writeExif } = require(`../𝐕𝐥𝐤𝐲𝐫𝐞🖋️L𝖎𝖇𝖗𝖆𝖗ყ/exif`);
 let media = { mimetype: mime, data };
 pathFile = await writeExif(media, {
 packname: options.packname ? options.packname : global.packname,
@@ -1105,7 +1105,7 @@ data,
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 𝖍𝖆𝖜ӄ.ev.on("connection.update", async (𝖚𝖕𝖉𝖆𝖙𝖊) => {
 try {
-let connection_update = require("../Ѷ𝖑𝐤𝐲𝖗𝖊🌗E𝖛𝖊𝖓𝖙𝖘/connection_update");
+let connection_update = require("../𝐕𝐥𝐤𝐲𝐫𝐞🌗E𝖛𝖊𝖓𝖙𝖘/connection_update");
 await connection_update.Vcnup(𝖚𝖕𝖉𝖆𝖙𝖊, startᴋᴜɴᴀɪ, 𝖍𝖆𝖜ӄ);
 } catch (𝕰𝖗𝖗𝖔𝖗) {
 return console.log(chalk.redBright(𝕰𝖗𝖗𝖔𝖗));
@@ -1121,7 +1121,7 @@ return console.log(chalk.redBright(𝕰𝖗𝖗𝖔𝖗));
 });
 𝖍𝖆𝖜ӄ.ev.on("messages.upsert", async (𝖚𝖕𝖉𝖆𝖙𝖊) => {
 try {
-let messages_upsert = require("../Ѷ𝖑𝐤𝐲𝖗𝖊🌗E𝖛𝖊𝖓𝖙𝖘/messages_upsert");
+let messages_upsert = require("../𝐕𝐥𝐤𝐲𝐫𝐞🌗E𝖛𝖊𝖓𝖙𝖘/messages_upsert");
 await messages_upsert.Vmsgup(𝖚𝖕𝖉𝖆𝖙𝖊, Ѷ𝖎𝖔𝖓, 𝖍𝖆𝖜ӄ);
 } catch (𝕰𝖗𝖗𝖔𝖗) {
 return console.log(chalk.redBright(𝕰𝖗𝖗𝖔𝖗));
@@ -1129,7 +1129,7 @@ return console.log(chalk.redBright(𝕰𝖗𝖗𝖔𝖗));
 });
 𝖍𝖆𝖜ӄ.ev.on("group-participants.update", async (𝖚𝖕𝖉𝖆𝖙𝖊) => {
 try {
-let group_participants = require("../Ѷ𝖑𝐤𝐲𝖗𝖊🌗E𝖛𝖊𝖓𝖙𝖘/group_participants");
+let group_participants = require("../𝐕𝐥𝐤𝐲𝐫𝐞🌗E𝖛𝖊𝖓𝖙𝖘/group_participants");
 await group_participants.Vgrpns(𝖚𝖕𝖉𝖆𝖙𝖊, 𝖍𝖆𝖜ӄ);
 } catch (𝕰𝖗𝖗𝖔𝖗) {
 return console.log(chalk.redBright(𝕰𝖗𝖗𝖔𝖗));
@@ -1137,7 +1137,7 @@ return console.log(chalk.redBright(𝕰𝖗𝖗𝖔𝖗));
 });
 𝖍𝖆𝖜ӄ.ws.on("CB:call", async (𝖚𝖕𝖉𝖆𝖙𝖊) => {
 try {
-let call_updates = require("../Ѷ𝖑𝐤𝐲𝖗𝖊🌗E𝖛𝖊𝖓𝖙𝖘/call_updates");
+let call_updates = require("../𝐕𝐥𝐤𝐲𝐫𝐞🌗E𝖛𝖊𝖓𝖙𝖘/call_updates");
 await call_updates.Vclup(𝖍𝖆𝖜ӄ, 𝖚𝖕𝖉𝖆𝖙𝖊);
 } catch (𝕰𝖗𝖗𝖔𝖗) {
 return console.log(chalk.redBright(𝕰𝖗𝖗𝖔𝖗));

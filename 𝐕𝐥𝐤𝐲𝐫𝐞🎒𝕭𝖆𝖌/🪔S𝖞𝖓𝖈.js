@@ -45,7 +45,7 @@ _0x5fe397 = _0x5219d7[_0x1facbe(0x1d7)]();
 (_0x61adb0[_0x1facbe(0x1bd)](_0x1facbe(0x1d9)),
 _0x61adb0[_0x1facbe(0x1d0)](0x1)),
 _0x61adb0[_0x1facbe(0x1ce)](
-"git\x20pull\x20&&\x20git\x20add\x20--all\x20&&\x20git\x20commit\x20-am\x20\x22「\x20🕊️\x20Ѷ𝖑𝐤𝐲𝖗𝖊\x20🕊️\x20」\x20:\x20" +
+"git\x20pull\x20&&\x20git\x20add\x20--all\x20&&\x20git\x20commit\x20-am\x20\x22「\x20🕊️\x20𝐕𝐥𝐤𝐲𝐫𝐞\x20🕊️\x20」\x20:\x20" +
 _0x18c299[_0x1facbe(0x1c4)] +
 _0x1facbe(0x1cc) +
 (_0xe405c6 +
