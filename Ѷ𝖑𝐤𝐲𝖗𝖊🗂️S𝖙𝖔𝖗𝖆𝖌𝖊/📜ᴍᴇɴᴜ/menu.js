@@ -439,18 +439,18 @@ caption: `╔══『 𝐏𝐫𝐨𝐟𝐢𝐥𝐞𝐫® 』
 footer: "*⦓ ⒸѶ𝖑𝐤𝐲𝖗𝖊 ⦔*\n▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ ◁",
 buttons: [
 {
-buttonId: prefix + "🌍HELP🌍",
-buttonText: { displayText: prefix + "🌍HELP🌍" },
+buttonId: prefix + "HELP_🌍",
+buttonText: { displayText: prefix + "HELP_🌍" },
 type: 1,
 },
 {
-buttonId: prefix + "🦚SUPPORT🦚",
-buttonText: { displayText: prefix + "🦚SUPPORT🦚" },
+buttonId: prefix + "SUPPORT_🦚",
+buttonText: { displayText: prefix + "SUPPORT_🦚" },
 type: 1,
 },
 {
-buttonId: prefix + "⚡RULES⚡",
-buttonText: { displayText: prefix + "⚡RULES⚡" },
+buttonId: prefix + "BOT_RULES_⚡",
+buttonText: { displayText: prefix + "BOT_RULES_⚡" },
 type: 1,
 },
 ],

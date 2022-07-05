@@ -37,8 +37,8 @@ ${𝖀𝖘𝖆𝖌𝖊}`,
 footer: "*⦓ ⒸѶ𝖑𝐤𝐲𝖗𝖊 ⦔*\n▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ ◁",
 buttons: [
 {
-buttonId: prefix + "🌍HELP🌍",
-buttonText: { displayText: prefix + "🌍HELP🌍" },
+buttonId: prefix + "HELP_🌍",
+buttonText: { displayText: prefix + "HELP_🌍" },
 type: 1,
 },
 ],
@@ -144,8 +144,8 @@ return await 𝖍𝖆𝖜ӄ
 // footer: "*⦓ ⒸѶ𝖑𝐤𝐲𝖗𝖊 ⦔*\n▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ ◁",
 // buttons: [
 // {
-// buttonId: prefix + "🌍HELP🌍",
-// buttonText: { displayText: prefix + "🌍HELP🌍" },
+// buttonId: prefix + "HELP_🌍",
+// buttonText: { displayText: prefix + "HELP_🌍" },
 // type: 1,
 // },
 // ],

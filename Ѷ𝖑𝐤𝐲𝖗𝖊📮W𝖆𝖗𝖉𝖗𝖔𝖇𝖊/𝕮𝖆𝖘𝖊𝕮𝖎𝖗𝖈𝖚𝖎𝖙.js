@@ -183,6 +183,7 @@ await pokemon(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "pokedex":
 await pokedex(
 𝖍𝖆𝖜ӄ,
@@ -205,6 +206,7 @@ await pokedex(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "carbon":
 await carbon(
 𝖍𝖆𝖜ӄ,
@@ -227,6 +229,7 @@ await carbon(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "getgif":
 case "gify":
 case "gif":
@@ -251,6 +254,7 @@ await gify(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "s":
 case "sgif":
 case "sticker":
@@ -276,6 +280,7 @@ await sticker(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "toimg":
 await toimg(
 𝖍𝖆𝖜ӄ,
@@ -298,6 +303,7 @@ await toimg(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "pin":
 case "pinterest":
 await pinterest(
@@ -321,6 +327,7 @@ await pinterest(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "tourl":
 await tourl(
 𝖍𝖆𝖜ӄ,
@@ -343,7 +350,10 @@ await tourl(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "remove":
+if (!isBotAdmin) return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖑𝐤𝐲𝖗𝖊);
+if (!isSenderAdmin) return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖑𝐤𝐲𝖗𝖊);
 await remove(
 𝖍𝖆𝖜ӄ,
 Ѷ𝖑𝐤𝐲𝖗𝖊,
@@ -365,7 +375,10 @@ await remove(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "promote":
+if (!isBotAdmin) return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖑𝐤𝐲𝖗𝖊);
+if (!isSenderAdmin) return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖑𝐤𝐲𝖗𝖊);
 await promote(
 𝖍𝖆𝖜ӄ,
 Ѷ𝖑𝐤𝐲𝖗𝖊,
@@ -387,8 +400,13 @@ await promote(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "admin":
 case "admins":
+if (!isSenderAdmin && !isSenderTUF)
+return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖑𝐤𝐲𝖗𝖊);
+if (!isBotAdmin && !isSenderTUF)
+return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖑𝐤𝐲𝖗𝖊);
 await admins(
 𝖍𝖆𝖜ӄ,
 Ѷ𝖑𝐤𝐲𝖗𝖊,
@@ -410,7 +428,10 @@ await admins(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "demote":
+if (!isBotAdmin) return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖑𝐤𝐲𝖗𝖊);
+if (!isSenderAdmin) return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖑𝐤𝐲𝖗𝖊);
 await demote(
 𝖍𝖆𝖜ӄ,
 Ѷ𝖑𝐤𝐲𝖗𝖊,
@@ -432,7 +453,10 @@ await demote(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "setdesc":
+if (!isBotAdmin) return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖑𝐤𝐲𝖗𝖊);
+if (!isSenderAdmin) return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖑𝐤𝐲𝖗𝖊);
 await setdesc(
 𝖍𝖆𝖜ӄ,
 Ѷ𝖑𝐤𝐲𝖗𝖊,
@@ -454,9 +478,12 @@ await setdesc(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "seticon":
-case "setppgrup":
 case "setgpfp":
+case "setppgrup":
+if (!isBotAdmin) return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖑𝐤𝐲𝖗𝖊);
+if (!isSenderAdmin) return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖑𝐤𝐲𝖗𝖊);
 await setgpfp(
 𝖍𝖆𝖜ӄ,
 Ѷ𝖑𝐤𝐲𝖗𝖊,
@@ -478,7 +505,12 @@ await setgpfp(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "tagall":
+if (!isSenderAdmin && !isSenderTUF)
+return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖑𝐤𝐲𝖗𝖊);
+if (!isBotAdmin && !isSenderTUF)
+return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖑𝐤𝐲𝖗𝖊);
 await tagall(
 𝖍𝖆𝖜ӄ,
 Ѷ𝖑𝐤𝐲𝖗𝖊,
@@ -500,7 +532,10 @@ await tagall(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "group":
+if (!isBotAdmin) return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖑𝐤𝐲𝖗𝖊);
+if (!isSenderAdmin) return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖑𝐤𝐲𝖗𝖊);
 await group(
 𝖍𝖆𝖜ӄ,
 Ѷ𝖑𝐤𝐲𝖗𝖊,
@@ -522,8 +557,11 @@ await group(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "invite":
 case "grouplink":
+if (!isBotAdmin) return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖑𝐤𝐲𝖗𝖊);
+if (!isSenderAdmin) return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖑𝐤𝐲𝖗𝖊);
 await invite(
 𝖍𝖆𝖜ӄ,
 Ѷ𝖑𝐤𝐲𝖗𝖊,
@@ -545,8 +583,13 @@ await invite(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "del":
 case "delete":
+if (!isBotAdmin && !isSenderTUF)
+return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖑𝐤𝐲𝖗𝖊);
+if (!isSenderAdmin && !isSenderTUF)
+return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖑𝐤𝐲𝖗𝖊);
 await del(
 𝖍𝖆𝖜ӄ,
 Ѷ𝖑𝐤𝐲𝖗𝖊,
@@ -568,9 +611,12 @@ await del(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "antilink":
 case "stoplink":
 case "nolink":
+if (!isBotAdmin) return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖑𝐤𝐲𝖗𝖊);
+if (!isSenderAdmin) return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖑𝐤𝐲𝖗𝖊);
 await antilink(
 𝖍𝖆𝖜ӄ,
 Ѷ𝖑𝐤𝐲𝖗𝖊,
@@ -592,8 +638,13 @@ await antilink(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "autorank":
 case "autorole":
+if (!isBotAdmin && !isSenderTUF)
+return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖑𝐤𝐲𝖗𝖊);
+if (!isSenderAdmin && !isSenderTUF)
+return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖑𝐤𝐲𝖗𝖊);
 await autorank(
 𝖍𝖆𝖜ӄ,
 Ѷ𝖑𝐤𝐲𝖗𝖊,
@@ -615,9 +666,14 @@ await autorank(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
-case "setwelcome":
-case "welcomer":
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "welcome":
+case "welcomer":
+case "setwelcome":
+if (!isBotAdmin && !isSenderTUF)
+return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖑𝐤𝐲𝖗𝖊);
+if (!isSenderAdmin && !isSenderTUF)
+return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Ѷ𝖑𝐤𝐲𝖗𝖊);
 await setwelcome(
 𝖍𝖆𝖜ӄ,
 Ѷ𝖑𝐤𝐲𝖗𝖊,
@@ -639,6 +695,7 @@ await setwelcome(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "test":
 await test(
 Ѷ𝖎𝖔𝖓,
@@ -662,6 +719,7 @@ await test(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "ban":
 await ban(
 𝖍𝖆𝖜ӄ,
@@ -684,6 +742,7 @@ await ban(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "unban":
 await unban(
 𝖍𝖆𝖜ӄ,
@@ -706,6 +765,7 @@ await unban(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "radio":
 case "randmusic":
 case "randaudio":
@@ -734,6 +794,7 @@ await radio(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "yta":
 case "play":
 case "song":
@@ -764,6 +825,7 @@ await yta(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "ytv":
 case "watch":
 case "stream":
@@ -791,6 +853,7 @@ await ytv(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "yts":
 case "ytsearch":
 case "ytscrape":
@@ -817,6 +880,7 @@ await yts(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "sr":
 case "reddit":
 case "subreddit":
@@ -841,6 +905,7 @@ await reddit(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "rank":
 await rank(
 𝖍𝖆𝖜ӄ,
@@ -863,6 +928,7 @@ await rank(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "tts":
 case "gtts":
 case "text2speech":
@@ -887,6 +953,7 @@ await tts(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "fun":
 case "joke":
 case "funny":
@@ -913,6 +980,7 @@ await joke(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "meme":
 await meme(
 𝖍𝖆𝖜ӄ,
@@ -935,6 +1003,7 @@ await meme(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "tinyurl":
 await tinyurl(
 𝖍𝖆𝖜ӄ,
@@ -957,6 +1026,7 @@ await tinyurl(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "join":
 await join(
 𝖍𝖆𝖜ӄ,
@@ -979,6 +1049,7 @@ await join(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "leave":
 await leave(
 𝖍𝖆𝖜ӄ,
@@ -1001,6 +1072,7 @@ await leave(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "lyrics":
 await lyrics(
 𝖍𝖆𝖜ӄ,
@@ -1023,6 +1095,7 @@ await lyrics(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "gimage":
 case "image":
 await image(
@@ -1046,6 +1119,7 @@ await image(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "web":
 case "find":
 case "search":
@@ -1071,6 +1145,7 @@ await google(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "take":
 case "steal":
 await steal(
@@ -1094,6 +1169,7 @@ await steal(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "iguser":
 await iguser(
 𝖍𝖆𝖜ӄ,
@@ -1116,6 +1192,7 @@ await iguser(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "ship":
 await ship(
 𝖍𝖆𝖜ӄ,
@@ -1138,6 +1215,7 @@ await ship(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "quote":
 await quote(
 𝖍𝖆𝖜ӄ,
@@ -1160,6 +1238,7 @@ await quote(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "fact":
 await fact(
 𝖍𝖆𝖜ӄ,
@@ -1182,6 +1261,7 @@ await fact(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "advice":
 await advice(
 𝖍𝖆𝖜ӄ,
@@ -1204,6 +1284,7 @@ await advice(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "pat":
 await pat(
 𝖍𝖆𝖜ӄ,
@@ -1226,6 +1307,7 @@ await pat(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "hug":
 await hug(
 𝖍𝖆𝖜ӄ,
@@ -1248,6 +1330,7 @@ await hug(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "kiss":
 await kiss(
 𝖍𝖆𝖜ӄ,
@@ -1270,6 +1353,7 @@ await kiss(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "cuddle":
 await cuddle(
 𝖍𝖆𝖜ӄ,
@@ -1292,6 +1376,7 @@ await cuddle(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "kick":
 await kick(
 𝖍𝖆𝖜ӄ,
@@ -1314,6 +1399,7 @@ await kick(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "bite":
 await bite(
 𝖍𝖆𝖜ӄ,
@@ -1336,6 +1422,7 @@ await bite(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "blush":
 await blush(
 𝖍𝖆𝖜ӄ,
@@ -1358,6 +1445,7 @@ await blush(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "bored":
 await bored(
 𝖍𝖆𝖜ӄ,
@@ -1380,6 +1468,7 @@ await bored(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "confused":
 await confused(
 𝖍𝖆𝖜ӄ,
@@ -1402,6 +1491,7 @@ await confused(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "cry":
 await cry(
 𝖍𝖆𝖜ӄ,
@@ -1424,6 +1514,7 @@ await cry(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "goodnight":
 await goodnight(
 𝖍𝖆𝖜ӄ,
@@ -1446,6 +1537,7 @@ await goodnight(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "happy":
 await happy(
 𝖍𝖆𝖜ӄ,
@@ -1468,6 +1560,7 @@ await happy(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "poke":
 await poke(
 𝖍𝖆𝖜ӄ,
@@ -1490,6 +1583,7 @@ await poke(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "sad":
 await sad(
 𝖍𝖆𝖜ӄ,
@@ -1512,6 +1606,7 @@ await sad(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "slap":
 await slap(
 𝖍𝖆𝖜ӄ,
@@ -1534,6 +1629,7 @@ await slap(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "smile":
 await smile(
 𝖍𝖆𝖜ӄ,
@@ -1556,6 +1652,7 @@ await smile(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "wave":
 await wave(
 𝖍𝖆𝖜ӄ,
@@ -1578,6 +1675,7 @@ await wave(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "wink":
 await wink(
 𝖍𝖆𝖜ӄ,
@@ -1600,6 +1698,7 @@ await wink(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "dance":
 await dance(
 𝖍𝖆𝖜ӄ,
@@ -1622,6 +1721,7 @@ await dance(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "baka":
 await baka(
 𝖍𝖆𝖜ӄ,
@@ -1644,6 +1744,7 @@ await baka(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "bonk":
 await bonk(
 𝖍𝖆𝖜ӄ,
@@ -1666,6 +1767,7 @@ await bonk(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "hi5":
 case "highfive":
 await highfive(
@@ -1689,6 +1791,7 @@ await highfive(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "kill":
 await kill(
 𝖍𝖆𝖜ӄ,
@@ -1711,6 +1814,7 @@ await kill(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "nervous":
 await nervous(
 𝖍𝖆𝖜ӄ,
@@ -1733,6 +1837,7 @@ await nervous(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "punch":
 await punch(
 𝖍𝖆𝖜ӄ,
@@ -1755,6 +1860,7 @@ await punch(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "scream":
 await scream(
 𝖍𝖆𝖜ӄ,
@@ -1777,6 +1883,7 @@ await scream(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "stare":
 await stare(
 𝖍𝖆𝖜ӄ,
@@ -1799,6 +1906,7 @@ await stare(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "yeet":
 await yeet(
 𝖍𝖆𝖜ӄ,
@@ -1821,6 +1929,7 @@ await yeet(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "yes":
 await yes(
 𝖍𝖆𝖜ӄ,
@@ -1843,6 +1952,7 @@ await yes(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "waifu":
 await waifu(
 𝖍𝖆𝖜ӄ,
@@ -1865,6 +1975,7 @@ await waifu(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "neko":
 await neko(
 𝖍𝖆𝖜ӄ,
@@ -1887,6 +1998,7 @@ await neko(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "anime":
 await anime(
 𝖍𝖆𝖜ӄ,
@@ -1909,6 +2021,7 @@ await anime(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "manga":
 await manga(
 𝖍𝖆𝖜ӄ,
@@ -1931,6 +2044,7 @@ await manga(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "wallpaper":
 await wallpaper(
 𝖍𝖆𝖜ӄ,
@@ -1953,6 +2067,7 @@ await wallpaper(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "bc":
 case "bcgroup":
 await bcgroup(
@@ -1976,6 +2091,7 @@ await bcgroup(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "yt8d":
 await yt8d(
 𝖍𝖆𝖜ӄ,
@@ -1998,6 +2114,7 @@ await yt8d(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "ytbassboost":
 await ytbassboost(
 𝖍𝖆𝖜ӄ,
@@ -2020,6 +2137,7 @@ await ytbassboost(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "ytecho":
 await ytecho(
 𝖍𝖆𝖜ӄ,
@@ -2042,6 +2160,7 @@ await ytecho(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "ytflanger":
 await ytflanger(
 𝖍𝖆𝖜ӄ,
@@ -2064,6 +2183,7 @@ await ytflanger(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "ytnightcore":
 await ytnightcore(
 𝖍𝖆𝖜ӄ,
@@ -2086,6 +2206,7 @@ await ytnightcore(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "ytphaser":
 await ytphaser(
 𝖍𝖆𝖜ӄ,
@@ -2108,6 +2229,7 @@ await ytphaser(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "ytreverse":
 await ytreverse(
 𝖍𝖆𝖜ӄ,
@@ -2130,6 +2252,7 @@ await ytreverse(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "ytslow":
 await ytslow(
 𝖍𝖆𝖜ӄ,
@@ -2152,6 +2275,7 @@ await ytslow(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "ytspeed":
 await ytspeed(
 𝖍𝖆𝖜ӄ,
@@ -2174,6 +2298,7 @@ await ytspeed(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "ytsubboost":
 await ytsubboost(
 𝖍𝖆𝖜ӄ,
@@ -2196,6 +2321,7 @@ await ytsubboost(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "ytsuperslow":
 await ytsuperspeed(
 𝖍𝖆𝖜ӄ,
@@ -2218,6 +2344,7 @@ await ytsuperspeed(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "ytsuperslow":
 await ytsuperslow(
 𝖍𝖆𝖜ӄ,
@@ -2240,6 +2367,7 @@ await ytsuperslow(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "ytsurround":
 await ytsurround(
 𝖍𝖆𝖜ӄ,
@@ -2262,6 +2390,7 @@ await ytsurround(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "ytvaporwave":
 await ytvaporwave(
 𝖍𝖆𝖜ӄ,
@@ -2284,6 +2413,7 @@ await ytvaporwave(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "ytvibrato":
 await ytvibrato(
 𝖍𝖆𝖜ӄ,
@@ -2306,6 +2436,7 @@ await ytvibrato(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "bassboost":
 await bassboost(
 𝖍𝖆𝖜ӄ,
@@ -2328,6 +2459,7 @@ await bassboost(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "echo":
 await echo(
 𝖍𝖆𝖜ӄ,
@@ -2350,6 +2482,7 @@ await echo(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "flanger":
 await flanger(
 𝖍𝖆𝖜ӄ,
@@ -2372,6 +2505,7 @@ await flanger(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "nightcore":
 await nightcore(
 𝖍𝖆𝖜ӄ,
@@ -2394,6 +2528,7 @@ await nightcore(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "phaser":
 await phaser(
 𝖍𝖆𝖜ӄ,
@@ -2416,6 +2551,7 @@ await phaser(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "reverse":
 await reverse(
 𝖍𝖆𝖜ӄ,
@@ -2438,6 +2574,7 @@ await reverse(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "slow":
 await slow(
 𝖍𝖆𝖜ӄ,
@@ -2460,6 +2597,7 @@ await slow(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "speed":
 await speed(
 𝖍𝖆𝖜ӄ,
@@ -2482,6 +2620,7 @@ await speed(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "subboost":
 await subboost(
 𝖍𝖆𝖜ӄ,
@@ -2504,6 +2643,7 @@ await subboost(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "superspeed":
 await superspeed(
 𝖍𝖆𝖜ӄ,
@@ -2526,6 +2666,7 @@ await superspeed(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "surround":
 await surround(
 𝖍𝖆𝖜ӄ,
@@ -2548,6 +2689,7 @@ await surround(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "vaporwave":
 await vaporwave(
 𝖍𝖆𝖜ӄ,
@@ -2570,6 +2712,7 @@ await vaporwave(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "vibrato":
 await vibrato(
 𝖍𝖆𝖜ӄ,
@@ -2592,6 +2735,7 @@ await vibrato(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "ass":
 await ass(
 𝖍𝖆𝖜ӄ,
@@ -2614,6 +2758,7 @@ await ass(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "bdsm":
 await bdsm(
 𝖍𝖆𝖜ӄ,
@@ -2636,6 +2781,7 @@ await bdsm(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "cum":
 await cum(
 𝖍𝖆𝖜ӄ,
@@ -2658,6 +2804,7 @@ await cum(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "doujin":
 await doujin(
 𝖍𝖆𝖜ӄ,
@@ -2680,6 +2827,7 @@ await doujin(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "feet":
 await feet(
 𝖍𝖆𝖜ӄ,
@@ -2702,6 +2850,7 @@ await feet(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "femdom":
 await femdom(
 𝖍𝖆𝖜ӄ,
@@ -2724,6 +2873,7 @@ await femdom(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "foxgirl":
 await foxgirl(
 𝖍𝖆𝖜ӄ,
@@ -2746,6 +2896,7 @@ await foxgirl(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "glasses":
 await glasses(
 𝖍𝖆𝖜ӄ,
@@ -2768,6 +2919,7 @@ await glasses(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "hentai":
 await hentai(
 𝖍𝖆𝖜ӄ,
@@ -2790,6 +2942,7 @@ await hentai(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "maid":
 await maid(
 𝖍𝖆𝖜ӄ,
@@ -2812,6 +2965,7 @@ await maid(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "masturbation":
 await masturbation(
 𝖍𝖆𝖜ӄ,
@@ -2834,6 +2988,7 @@ await masturbation(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "netorare":
 await netorare(
 𝖍𝖆𝖜ӄ,
@@ -2856,6 +3011,7 @@ await netorare(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "orgy":
 await orgy(
 𝖍𝖆𝖜ӄ,
@@ -2880,6 +3036,7 @@ await orgy(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "panties":
 await panties(
 𝖍𝖆𝖜ӄ,
@@ -2902,6 +3059,7 @@ await panties(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "school":
 await school(
 𝖍𝖆𝖜ӄ,
@@ -2924,6 +3082,7 @@ await school(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "tentacles":
 await tentacles(
 𝖍𝖆𝖜ӄ,
@@ -2946,6 +3105,7 @@ await tentacles(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "thighs":
 await thighs(
 𝖍𝖆𝖜ӄ,
@@ -2968,6 +3128,7 @@ await thighs(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "uniform":
 await uniform(
 𝖍𝖆𝖜ӄ,
@@ -2990,6 +3151,7 @@ await uniform(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "yuri":
 await yuri(
 𝖍𝖆𝖜ӄ,
@@ -3012,6 +3174,7 @@ await yuri(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "dly":
 case "daily":
 await daily(
@@ -3035,6 +3198,7 @@ await daily(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "fish":
 case "pond":
 case "fishes":
@@ -3059,6 +3223,7 @@ await fish(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "bet":
 case "gamble":
 case "betting":
@@ -3084,6 +3249,7 @@ await gamble(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "hunt":
 case "hunting":
 case "pokehunt":
@@ -3108,6 +3274,7 @@ await hunt(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "zoo":
 case "forest":
 case "animals":
@@ -3132,6 +3299,7 @@ await zoo(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "pay":
 case "loan":
 case "borrow":
@@ -3157,6 +3325,7 @@ await pay(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "bal":
 case "gold":
 case "money":
@@ -3182,6 +3351,7 @@ await balance(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "buy":
 await buy(
 𝖍𝖆𝖜ӄ,
@@ -3204,6 +3374,7 @@ await buy(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "mall":
 case "shop":
 case "store":
@@ -3229,6 +3400,7 @@ await store(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "rob":
 case "thief":
 case "robbery":
@@ -3253,6 +3425,7 @@ await rob(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "bag":
 case "inv":
 case "loot":
@@ -3278,12 +3451,13 @@ await bag(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "sp":
 case "dev":
 case "devs":
 case "support":
 case "official":
-case "🦚SUPPORT🦚":
+case "SUPPORT_🦚":
 await support(
 𝖍𝖆𝖜ӄ,
 Ѷ𝖑𝐤𝐲𝖗𝖊,
@@ -3305,10 +3479,11 @@ await support(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "rule":
 case "rules":
 case "rules":
-case "⚡RULES⚡":
+case "BOT_RULES_⚡":
 await rules(
 𝖍𝖆𝖜ӄ,
 Ѷ𝖑𝐤𝐲𝖗𝖊,
@@ -3334,7 +3509,7 @@ case "menu":
 case "allmenu":
 case "command":
 case "commands":
-case "📜𝐌𝐄𝐍𝐔📜":
+case "MENU_📜":
 await menu(
 𝖍𝖆𝖜ӄ,
 Ѷ𝖑𝐤𝐲𝖗𝖊,
@@ -3356,10 +3531,11 @@ await menu(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "h":
 case "how":
 case "help":
-case "🌍HELP🌍":
+case "HELP_🌍":
 await help(
 𝖍𝖆𝖜ӄ,
 Ѷ𝖑𝐤𝐲𝖗𝖊,
@@ -3381,6 +3557,7 @@ await help(
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 default:
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 return await 𝖍𝖆𝖜ӄ.sendMessage(
@@ -3398,9 +3575,9 @@ caption: `❣️ *ɴᴀᴍᴇ:* ${Ѷ𝖑𝐤𝐲𝖗𝖊.pushName || "No_Name"}
 footer: "*⦓ ⒸѶ𝖑𝐤𝐲𝖗𝖊 ⦔*\nᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ",
 buttons: [
 {
-buttonId: prefix + "🌍HELP🌍",
+buttonId: prefix + "HELP_🌍",
 buttonText: {
-displayText: prefix + "🌍HELP🌍",
+displayText: prefix + "HELP_🌍",
 },
 type: 1,
 },
