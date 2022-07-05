@@ -60,23 +60,11 @@ if (!mentionByReply){
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Ѷ𝖑𝐤𝐲𝖗𝖊,
-`*❌ERROR:* Please tag/reply the user you want to promote!
+`*❌ERROR:* Please reply the user you want to promote!
 
-*⚡USAGE:* ${prefix}${Final_Name} <Tag the person>
-${prefix}${Final_Name} <Reply To the person>`
+*⚡USAGE:* ${prefix}${Final_Name} <Tag the person>`
 );
 }
-("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
-if (!mentionByTag){
-return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ӄ𝖗𝖞ӄ𝖓𝖟,
-Ѷ𝖑𝐤𝐲𝖗𝖊,
-`*❌ERROR:* Please tag/reply the user you want to promote!
-
-*⚡USAGE:* ${prefix}${Final_Name} <Tag the person>
-${prefix}${Final_Name} <Reply To the person>`
-);
-} 
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
 if (mentionByReply) {
 let mention = Ѷ𝖑𝐤𝐲𝖗𝖊.mtype == "extendedTextMessage" && Ѷ𝖑𝐤𝐲𝖗𝖊.message.extendedTextMessage.contextInfo != null ? Ѷ𝖑𝐤𝐲𝖗𝖊.message.extendedTextMessage.contextInfo.participant || "" : "";
@@ -85,10 +73,9 @@ if (!users) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Ѷ𝖑𝐤𝐲𝖗𝖊,
-`*❌ERROR:* Please tag/reply the user you want to promote!
+`*❌ERROR:* Please reply the user you want to promote!
 
-*⚡USAGE:* ${prefix}${Final_Name} <Tag the person>
-${prefix}${Final_Name} <Reply To the person>`
+*⚡USAGE:* ${prefix}${Final_Name} <Tag the person>`
 );
 }
 await ӄ𝖗𝖞ӄ𝖓𝖟.groupParticipantsUpdate(Ѷ𝖑𝐤𝐲𝖗𝖊.chatID, [users], "promote");
@@ -97,22 +84,13 @@ text: `woh woh!! looks like @${Ѷ𝖑𝐤𝐲𝖗𝖊.sender.split("@")[0]} prom
 contextInfo: { mentionedJid: [users, Ѷ𝖑𝐤𝐲𝖗𝖊.sender] },
 });
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
-} else if (mentionByTag) {
-let mention = Ѷ𝖑𝐤𝐲𝖗𝖊.mtype == "extendedTextMessage" && Ѷ𝖑𝐤𝐲𝖗𝖊.message.extendedTextMessage.contextInfo != null ? Ѷ𝖑𝐤𝐲𝖗𝖊.message.extendedTextMessage.contextInfo.mentionedJid : [];
-await ӄ𝖗𝖞ӄ𝖓𝖟.groupParticipantsUpdate(Ѷ𝖑𝐤𝐲𝖗𝖊.chatID, [mention], "promote");
-ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(Ѷ𝖑𝐤𝐲𝖗𝖊.chatID, {
-text: `woh woh!! looks like @${Ѷ𝖑𝐤𝐲𝖗𝖊.sender.split("@")[0]} promoted @${mention.split("@")[0]}`,
-contextInfo: { mentionedJid: [mention, Ѷ𝖑𝐤𝐲𝖗𝖊.sender] },
-});
-("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
 } else {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Ѷ𝖑𝐤𝐲𝖗𝖊,
-`*❌ERROR:* Please tag/reply the user you want to promote!
+`*❌ERROR:* Please reply the user you want to promote!
 
-*⚡USAGE:* ${prefix}${Final_Name} <Tag the person>
-${prefix}${Final_Name} <Reply To the person>`
+*⚡USAGE:* ${prefix}${Final_Name} <Tag the person>`
 );
 }
 };
