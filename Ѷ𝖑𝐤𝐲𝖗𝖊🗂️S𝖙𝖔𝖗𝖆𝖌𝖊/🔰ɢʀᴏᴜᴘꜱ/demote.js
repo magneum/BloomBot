@@ -56,9 +56,16 @@ body,
 mentionByTag,
 mentionByReply
 ) => {
+if (!mentionByReply) {
+return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Ѷ𝖑𝐤𝐲𝖗𝖊,
+`*❌ERROR:* Please reply the user you want to demote!
 
+*⚡USAGE:* ${prefix}${Final_Name} <Tag the person>`
+);
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
-try {
+} else {
 let mention =
 Ѷ𝖑𝐤𝐲𝖗𝖊.mtype == "extendedTextMessage" &&
 Ѷ𝖑𝐤𝐲𝖗𝖊.message.extendedTextMessage.contextInfo != null
@@ -69,27 +76,18 @@ if (!users) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Ѷ𝖑𝐤𝐲𝖗𝖊,
-`*❌ERROR:* Couldn't find any userID in context!
+`*❌ERROR:* Please reply the user you want to demote!
 
 *⚡USAGE:* ${prefix}${Final_Name} <Tag the person>`
 );
 }
-
-await ӄ𝖗𝖞ӄ𝖓𝖟.groupParticipantsUpdate(Ѷ𝖑𝐤𝐲𝖗𝖊.chatID, [users], `demote`);
-await ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(Ѷ𝖑𝐤𝐲𝖗𝖊.chatID, {
-text: `OOPs!! looks like @${Ѷ𝖑𝐤𝐲𝖗𝖊.sender.split("@")[0]} demoted @${
+await ӄ𝖗𝖞ӄ𝖓𝖟.groupParticipantsUpdate(Ѷ𝖑𝐤𝐲𝖗𝖊.chatID, [users], "demote");
+ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(Ѷ𝖑𝐤𝐲𝖗𝖊.chatID, {
+text: `Looks like @${Ѷ𝖑𝐤𝐲𝖗𝖊.sender.split("@")[0]} demoted @${
 users.split("@")[0]
 }`,
 contextInfo: { mentionedJid: [users, Ѷ𝖑𝐤𝐲𝖗𝖊.sender] },
 });
-} catch {
-return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ӄ𝖗𝖞ӄ𝖓𝖟,
-Ѷ𝖑𝐤𝐲𝖗𝖊,
-`*❌ERROR:* Please tag the user you want to demote!
-
-*⚡USAGE:* ${prefix}${Final_Name} <Tag the person>`
-);
 }
 };
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
