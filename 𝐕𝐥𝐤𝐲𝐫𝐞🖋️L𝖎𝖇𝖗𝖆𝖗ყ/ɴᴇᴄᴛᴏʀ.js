@@ -78,21 +78,21 @@ exports.runtime = function (seconds) {
 seconds = Number(seconds);
 var d = Math.floor(seconds / (3600 * 24));
 var h = Math.floor((seconds % (3600 * 24)) / 3600);
-var Ѷ𝖑𝐤𝐲𝖗𝖊 = Math.floor((seconds % 3600) / 60);
+var 𝐕𝐥𝐤𝐲𝐫𝐞 = Math.floor((seconds % 3600) / 60);
 var s = Math.floor(seconds % 60);
 var dDisplay = d > 0 ? d + (d == 1 ? " day, " : " days, ") : "";
 var hDisplay = h > 0 ? h + (h == 1 ? " hour, " : " hours, ") : "";
 var mDisplay =
-Ѷ𝖑𝐤𝐲𝖗𝖊 > 0 ? Ѷ𝖑𝐤𝐲𝖗𝖊 + (Ѷ𝖑𝐤𝐲𝖗𝖊 == 1 ? " minute, " : " minutes, ") : "";
+𝐕𝐥𝐤𝐲𝐫𝐞 > 0 ? 𝐕𝐥𝐤𝐲𝐫𝐞 + (𝐕𝐥𝐤𝐲𝐫𝐞 == 1 ? " minute, " : " minutes, ") : "";
 var sDisplay = s > 0 ? s + (s == 1 ? " second" : " seconds") : "";
 return dDisplay + hDisplay + mDisplay + sDisplay;
 };
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
 exports.clockString = function (seconds) {
 let h = isNaN(seconds) ? "--" : Math.floor((seconds % (3600 * 24)) / 3600);
-let Ѷ𝖑𝐤𝐲𝖗𝖊 = isNaN(seconds) ? "--" : Math.floor((seconds % 3600) / 60);
+let 𝐕𝐥𝐤𝐲𝐫𝐞 = isNaN(seconds) ? "--" : Math.floor((seconds % 3600) / 60);
 let s = isNaN(seconds) ? "--" : Math.floor(seconds % 60);
-return [h, Ѷ𝖑𝐤𝐲𝖗𝖊, s].map((v) => v.toString().padStart(2, 0)).join(":");
+return [h, 𝐕𝐥𝐤𝐲𝐫𝐞, s].map((v) => v.toString().padStart(2, 0)).join(":");
 };
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
 exports.sleep = async (ms) => {
@@ -195,217 +195,217 @@ return [...text.matchAll(/@([0-9]{5,16}|0)/g)].map(
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
 exports.GIFBufferToVideoBuffer = async (image) => {
 let filename = `${Math.random().toString(36)}`;
-await fs.writeFileSync("./Ѷ𝖑𝐤𝐲𝖗𝖊🎒𝕭𝖆𝖌/${filename}.gif", image);
+await fs.writeFileSync("./𝐕𝐥𝐤𝐲𝐫𝐞🎒𝕭𝖆𝖌/${filename}.gif", image);
 child_process.exec(
-`ffmpeg -i ./Ѷ𝖑𝐤𝐲𝖗𝖊🎒𝕭𝖆𝖌/${filename}.gif -movflags faststart -pix_fmt yuv420p -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" ./Ѷ𝖑𝐤𝐲𝖗𝖊🎒𝕭𝖆𝖌/${filename}.mp4`
+`ffmpeg -i ./𝐕𝐥𝐤𝐲𝐫𝐞🎒𝕭𝖆𝖌/${filename}.gif -movflags faststart -pix_fmt yuv420p -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" ./𝐕𝐥𝐤𝐲𝐫𝐞🎒𝕭𝖆𝖌/${filename}.mp4`
 );
-var buffer5 = await fs.readFileSync("./Ѷ𝖑𝐤𝐲𝖗𝖊🎒𝕭𝖆𝖌/${filename}.mp4");
+var buffer5 = await fs.readFileSync("./𝐕𝐥𝐤𝐲𝐫𝐞🎒𝕭𝖆𝖌/${filename}.mp4");
 Promise.all([
-unlink("./Ѷ𝖑𝐤𝐲𝖗𝖊🎒𝕭𝖆𝖌/${filename}.mp4"),
-unlink("./Ѷ𝖑𝐤𝐲𝖗𝖊🎒𝕭𝖆𝖌/${filename}.gif"),
+unlink("./𝐕𝐥𝐤𝐲𝐫𝐞🎒𝕭𝖆𝖌/${filename}.mp4"),
+unlink("./𝐕𝐥𝐤𝐲𝐫𝐞🎒𝕭𝖆𝖌/${filename}.gif"),
 ]);
 return buffer5;
 };
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
-exports.smsg = async (𝖍𝖆𝖜ӄ, Ѷ𝖑𝐤𝐲𝖗𝖊, Ѷ𝖎𝖔𝖓) => {
-if (!Ѷ𝖑𝐤𝐲𝖗𝖊) return Ѷ𝖑𝐤𝐲𝖗𝖊;
+exports.smsg = async (𝖍𝖆𝖜ӄ, 𝐕𝐥𝐤𝐲𝐫𝐞, Ѷ𝖎𝖔𝖓) => {
+if (!𝐕𝐥𝐤𝐲𝐫𝐞) return 𝐕𝐥𝐤𝐲𝐫𝐞;
 let M = proto.WebMessageInfo;
-if (Ѷ𝖑𝐤𝐲𝖗𝖊.key) {
-Ѷ𝖑𝐤𝐲𝖗𝖊.id = Ѷ𝖑𝐤𝐲𝖗𝖊.key.id;
-Ѷ𝖑𝐤𝐲𝖗𝖊.isBaileys =
-Ѷ𝖑𝐤𝐲𝖗𝖊.id.startsWith("BAE5") && Ѷ𝖑𝐤𝐲𝖗𝖊.id.length === 16;
-Ѷ𝖑𝐤𝐲𝖗𝖊.chatID = Ѷ𝖑𝐤𝐲𝖗𝖊.key.remoteJid;
-Ѷ𝖑𝐤𝐲𝖗𝖊.fromMe = Ѷ𝖑𝐤𝐲𝖗𝖊.key.fromMe;
-Ѷ𝖑𝐤𝐲𝖗𝖊.isGroup = Ѷ𝖑𝐤𝐲𝖗𝖊.chatID.endsWith("@g.us");
-Ѷ𝖑𝐤𝐲𝖗𝖊.sender = 𝖍𝖆𝖜ӄ.decodeJid(
-(Ѷ𝖑𝐤𝐲𝖗𝖊.fromMe && 𝖍𝖆𝖜ӄ.user.id) ||
-Ѷ𝖑𝐤𝐲𝖗𝖊.participant ||
-Ѷ𝖑𝐤𝐲𝖗𝖊.key.participant ||
-Ѷ𝖑𝐤𝐲𝖗𝖊.chatID ||
+if (𝐕𝐥𝐤𝐲𝐫𝐞.key) {
+𝐕𝐥𝐤𝐲𝐫𝐞.id = 𝐕𝐥𝐤𝐲𝐫𝐞.key.id;
+𝐕𝐥𝐤𝐲𝐫𝐞.isBaileys =
+𝐕𝐥𝐤𝐲𝐫𝐞.id.startsWith("BAE5") && 𝐕𝐥𝐤𝐲𝐫𝐞.id.length === 16;
+𝐕𝐥𝐤𝐲𝐫𝐞.chatID = 𝐕𝐥𝐤𝐲𝐫𝐞.key.remoteJid;
+𝐕𝐥𝐤𝐲𝐫𝐞.fromMe = 𝐕𝐥𝐤𝐲𝐫𝐞.key.fromMe;
+𝐕𝐥𝐤𝐲𝐫𝐞.isGroup = 𝐕𝐥𝐤𝐲𝐫𝐞.chatID.endsWith("@g.us");
+𝐕𝐥𝐤𝐲𝐫𝐞.sender = 𝖍𝖆𝖜ӄ.decodeJid(
+(𝐕𝐥𝐤𝐲𝐫𝐞.fromMe && 𝖍𝖆𝖜ӄ.user.id) ||
+𝐕𝐥𝐤𝐲𝐫𝐞.participant ||
+𝐕𝐥𝐤𝐲𝐫𝐞.key.participant ||
+𝐕𝐥𝐤𝐲𝐫𝐞.chatID ||
 ""
 );
-if (Ѷ𝖑𝐤𝐲𝖗𝖊.isGroup)
-Ѷ𝖑𝐤𝐲𝖗𝖊.participant = 𝖍𝖆𝖜ӄ.decodeJid(Ѷ𝖑𝐤𝐲𝖗𝖊.key.participant) || "";
+if (𝐕𝐥𝐤𝐲𝐫𝐞.isGroup)
+𝐕𝐥𝐤𝐲𝐫𝐞.participant = 𝖍𝖆𝖜ӄ.decodeJid(𝐕𝐥𝐤𝐲𝐫𝐞.key.participant) || "";
 }
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
-if (Ѷ𝖑𝐤𝐲𝖗𝖊.message) {
-Ѷ𝖑𝐤𝐲𝖗𝖊.mtype = getContentType(Ѷ𝖑𝐤𝐲𝖗𝖊.message);
-Ѷ𝖑𝐤𝐲𝖗𝖊.msg =
-Ѷ𝖑𝐤𝐲𝖗𝖊.mtype == "viewOnceMessage"
-? Ѷ𝖑𝐤𝐲𝖗𝖊.message[Ѷ𝖑𝐤𝐲𝖗𝖊.mtype].message[
-getContentType(Ѷ𝖑𝐤𝐲𝖗𝖊.message[Ѷ𝖑𝐤𝐲𝖗𝖊.mtype].message)
+if (𝐕𝐥𝐤𝐲𝐫𝐞.message) {
+𝐕𝐥𝐤𝐲𝐫𝐞.mtype = getContentType(𝐕𝐥𝐤𝐲𝐫𝐞.message);
+𝐕𝐥𝐤𝐲𝐫𝐞.msg =
+𝐕𝐥𝐤𝐲𝐫𝐞.mtype == "viewOnceMessage"
+? 𝐕𝐥𝐤𝐲𝐫𝐞.message[𝐕𝐥𝐤𝐲𝐫𝐞.mtype].message[
+getContentType(𝐕𝐥𝐤𝐲𝐫𝐞.message[𝐕𝐥𝐤𝐲𝐫𝐞.mtype].message)
 ]
-: Ѷ𝖑𝐤𝐲𝖗𝖊.message[Ѷ𝖑𝐤𝐲𝖗𝖊.mtype];
-Ѷ𝖑𝐤𝐲𝖗𝖊.body =
-Ѷ𝖑𝐤𝐲𝖗𝖊.message.conversation ||
-Ѷ𝖑𝐤𝐲𝖗𝖊.msg.caption ||
-Ѷ𝖑𝐤𝐲𝖗𝖊.msg.text ||
-(Ѷ𝖑𝐤𝐲𝖗𝖊.mtype == "listResponseMessage" &&
-Ѷ𝖑𝐤𝐲𝖗𝖊.msg.singleSelectReply.selectedRowId) ||
-(Ѷ𝖑𝐤𝐲𝖗𝖊.mtype == "buttonsResponseMessage" &&
-Ѷ𝖑𝐤𝐲𝖗𝖊.msg.selectedButtonId) ||
-(Ѷ𝖑𝐤𝐲𝖗𝖊.mtype == "viewOnceMessage" && Ѷ𝖑𝐤𝐲𝖗𝖊.msg.caption) ||
-Ѷ𝖑𝐤𝐲𝖗𝖊.text;
-let quoted = (Ѷ𝖑𝐤𝐲𝖗𝖊.quoted = Ѷ𝖑𝐤𝐲𝖗𝖊.msg.contextInfo
-? Ѷ𝖑𝐤𝐲𝖗𝖊.msg.contextInfo.quotedMessage
+: 𝐕𝐥𝐤𝐲𝐫𝐞.message[𝐕𝐥𝐤𝐲𝐫𝐞.mtype];
+𝐕𝐥𝐤𝐲𝐫𝐞.body =
+𝐕𝐥𝐤𝐲𝐫𝐞.message.conversation ||
+𝐕𝐥𝐤𝐲𝐫𝐞.msg.caption ||
+𝐕𝐥𝐤𝐲𝐫𝐞.msg.text ||
+(𝐕𝐥𝐤𝐲𝐫𝐞.mtype == "listResponseMessage" &&
+𝐕𝐥𝐤𝐲𝐫𝐞.msg.singleSelectReply.selectedRowId) ||
+(𝐕𝐥𝐤𝐲𝐫𝐞.mtype == "buttonsResponseMessage" &&
+𝐕𝐥𝐤𝐲𝐫𝐞.msg.selectedButtonId) ||
+(𝐕𝐥𝐤𝐲𝐫𝐞.mtype == "viewOnceMessage" && 𝐕𝐥𝐤𝐲𝐫𝐞.msg.caption) ||
+𝐕𝐥𝐤𝐲𝐫𝐞.text;
+let quoted = (𝐕𝐥𝐤𝐲𝐫𝐞.quoted = 𝐕𝐥𝐤𝐲𝐫𝐞.msg.contextInfo
+? 𝐕𝐥𝐤𝐲𝐫𝐞.msg.contextInfo.quotedMessage
 : null);
-Ѷ𝖑𝐤𝐲𝖗𝖊.mentionedJid = Ѷ𝖑𝐤𝐲𝖗𝖊.msg.contextInfo
-? Ѷ𝖑𝐤𝐲𝖗𝖊.msg.contextInfo.mentionedJid
+𝐕𝐥𝐤𝐲𝐫𝐞.mentionedJid = 𝐕𝐥𝐤𝐲𝐫𝐞.msg.contextInfo
+? 𝐕𝐥𝐤𝐲𝐫𝐞.msg.contextInfo.mentionedJid
 : [];
-if (Ѷ𝖑𝐤𝐲𝖗𝖊.quoted) {
+if (𝐕𝐥𝐤𝐲𝐫𝐞.quoted) {
 let type = getContentType(quoted);
-Ѷ𝖑𝐤𝐲𝖗𝖊.quoted = Ѷ𝖑𝐤𝐲𝖗𝖊.quoted[type];
+𝐕𝐥𝐤𝐲𝐫𝐞.quoted = 𝐕𝐥𝐤𝐲𝐫𝐞.quoted[type];
 if (["productMessage"].includes(type)) {
-type = getContentType(Ѷ𝖑𝐤𝐲𝖗𝖊.quoted);
-Ѷ𝖑𝐤𝐲𝖗𝖊.quoted = Ѷ𝖑𝐤𝐲𝖗𝖊.quoted[type];
+type = getContentType(𝐕𝐥𝐤𝐲𝐫𝐞.quoted);
+𝐕𝐥𝐤𝐲𝐫𝐞.quoted = 𝐕𝐥𝐤𝐲𝐫𝐞.quoted[type];
 }
-if (typeof Ѷ𝖑𝐤𝐲𝖗𝖊.quoted === "string")
-Ѷ𝖑𝐤𝐲𝖗𝖊.quoted = {
-text: Ѷ𝖑𝐤𝐲𝖗𝖊.quoted,
+if (typeof 𝐕𝐥𝐤𝐲𝐫𝐞.quoted === "string")
+𝐕𝐥𝐤𝐲𝐫𝐞.quoted = {
+text: 𝐕𝐥𝐤𝐲𝐫𝐞.quoted,
 };
-Ѷ𝖑𝐤𝐲𝖗𝖊.quoted.mtype = type;
-Ѷ𝖑𝐤𝐲𝖗𝖊.quoted.id = Ѷ𝖑𝐤𝐲𝖗𝖊.msg.contextInfo.stanzaId;
-Ѷ𝖑𝐤𝐲𝖗𝖊.quoted.chatID =
-Ѷ𝖑𝐤𝐲𝖗𝖊.msg.contextInfo.remoteJid || Ѷ𝖑𝐤𝐲𝖗𝖊.chatID;
-Ѷ𝖑𝐤𝐲𝖗𝖊.quoted.isBaileys = Ѷ𝖑𝐤𝐲𝖗𝖊.quoted.id
-? Ѷ𝖑𝐤𝐲𝖗𝖊.quoted.id.startsWith("BAE5") &&
-Ѷ𝖑𝐤𝐲𝖗𝖊.quoted.id.length === 16
+𝐕𝐥𝐤𝐲𝐫𝐞.quoted.mtype = type;
+𝐕𝐥𝐤𝐲𝐫𝐞.quoted.id = 𝐕𝐥𝐤𝐲𝐫𝐞.msg.contextInfo.stanzaId;
+𝐕𝐥𝐤𝐲𝐫𝐞.quoted.chatID =
+𝐕𝐥𝐤𝐲𝐫𝐞.msg.contextInfo.remoteJid || 𝐕𝐥𝐤𝐲𝐫𝐞.chatID;
+𝐕𝐥𝐤𝐲𝐫𝐞.quoted.isBaileys = 𝐕𝐥𝐤𝐲𝐫𝐞.quoted.id
+? 𝐕𝐥𝐤𝐲𝐫𝐞.quoted.id.startsWith("BAE5") &&
+𝐕𝐥𝐤𝐲𝐫𝐞.quoted.id.length === 16
 : false;
-Ѷ𝖑𝐤𝐲𝖗𝖊.quoted.sender = 𝖍𝖆𝖜ӄ.decodeJid(
-Ѷ𝖑𝐤𝐲𝖗𝖊.msg.contextInfo.participant
+𝐕𝐥𝐤𝐲𝐫𝐞.quoted.sender = 𝖍𝖆𝖜ӄ.decodeJid(
+𝐕𝐥𝐤𝐲𝐫𝐞.msg.contextInfo.participant
 );
-Ѷ𝖑𝐤𝐲𝖗𝖊.quoted.fromMe =
-Ѷ𝖑𝐤𝐲𝖗𝖊.quoted.sender === (𝖍𝖆𝖜ӄ.user && 𝖍𝖆𝖜ӄ.user.id);
-Ѷ𝖑𝐤𝐲𝖗𝖊.quoted.text =
-Ѷ𝖑𝐤𝐲𝖗𝖊.quoted.text ||
-Ѷ𝖑𝐤𝐲𝖗𝖊.quoted.caption ||
-Ѷ𝖑𝐤𝐲𝖗𝖊.quoted.conversation ||
-Ѷ𝖑𝐤𝐲𝖗𝖊.quoted.contentText ||
-Ѷ𝖑𝐤𝐲𝖗𝖊.quoted.selectedDisplayText ||
-Ѷ𝖑𝐤𝐲𝖗𝖊.quoted.title ||
+𝐕𝐥𝐤𝐲𝐫𝐞.quoted.fromMe =
+𝐕𝐥𝐤𝐲𝐫𝐞.quoted.sender === (𝖍𝖆𝖜ӄ.user && 𝖍𝖆𝖜ӄ.user.id);
+𝐕𝐥𝐤𝐲𝐫𝐞.quoted.text =
+𝐕𝐥𝐤𝐲𝐫𝐞.quoted.text ||
+𝐕𝐥𝐤𝐲𝐫𝐞.quoted.caption ||
+𝐕𝐥𝐤𝐲𝐫𝐞.quoted.conversation ||
+𝐕𝐥𝐤𝐲𝐫𝐞.quoted.contentText ||
+𝐕𝐥𝐤𝐲𝐫𝐞.quoted.selectedDisplayText ||
+𝐕𝐥𝐤𝐲𝐫𝐞.quoted.title ||
 "";
-Ѷ𝖑𝐤𝐲𝖗𝖊.quoted.mentionedJid = Ѷ𝖑𝐤𝐲𝖗𝖊.msg.contextInfo
-? Ѷ𝖑𝐤𝐲𝖗𝖊.msg.contextInfo.mentionedJid
+𝐕𝐥𝐤𝐲𝐫𝐞.quoted.mentionedJid = 𝐕𝐥𝐤𝐲𝐫𝐞.msg.contextInfo
+? 𝐕𝐥𝐤𝐲𝐫𝐞.msg.contextInfo.mentionedJid
 : [];
-Ѷ𝖑𝐤𝐲𝖗𝖊.getQuotedObj = Ѷ𝖑𝐤𝐲𝖗𝖊.getQuotedMessage = async () => {
-if (!Ѷ𝖑𝐤𝐲𝖗𝖊.quoted.id) return false;
-let q = await Ѷ𝖎𝖔𝖓.loadMessage(Ѷ𝖑𝐤𝐲𝖗𝖊.chatID, Ѷ𝖑𝐤𝐲𝖗𝖊.quoted.id, 𝖍𝖆𝖜ӄ);
+𝐕𝐥𝐤𝐲𝐫𝐞.getQuotedObj = 𝐕𝐥𝐤𝐲𝐫𝐞.getQuotedMessage = async () => {
+if (!𝐕𝐥𝐤𝐲𝐫𝐞.quoted.id) return false;
+let q = await Ѷ𝖎𝖔𝖓.loadMessage(𝐕𝐥𝐤𝐲𝐫𝐞.chatID, 𝐕𝐥𝐤𝐲𝐫𝐞.quoted.id, 𝖍𝖆𝖜ӄ);
 return exports.smsg(𝖍𝖆𝖜ӄ, q, Ѷ𝖎𝖔𝖓);
 };
-let vM = (Ѷ𝖑𝐤𝐲𝖗𝖊.quoted.fakeObj = M.fromObject({
+let vM = (𝐕𝐥𝐤𝐲𝐫𝐞.quoted.fakeObj = M.fromObject({
 key: {
-remoteJid: Ѷ𝖑𝐤𝐲𝖗𝖊.quoted.chatID,
-fromMe: Ѷ𝖑𝐤𝐲𝖗𝖊.quoted.fromMe,
-id: Ѷ𝖑𝐤𝐲𝖗𝖊.quoted.id,
+remoteJid: 𝐕𝐥𝐤𝐲𝐫𝐞.quoted.chatID,
+fromMe: 𝐕𝐥𝐤𝐲𝐫𝐞.quoted.fromMe,
+id: 𝐕𝐥𝐤𝐲𝐫𝐞.quoted.id,
 },
 message: quoted,
-...(Ѷ𝖑𝐤𝐲𝖗𝖊.isGroup ? { participant: Ѷ𝖑𝐤𝐲𝖗𝖊.quoted.sender } : {}),
+...(𝐕𝐥𝐤𝐲𝐫𝐞.isGroup ? { participant: 𝐕𝐥𝐤𝐲𝐫𝐞.quoted.sender } : {}),
 }));
-Ѷ𝖑𝐤𝐲𝖗𝖊.quoted.delete = () =>
-𝖍𝖆𝖜ӄ.sendMessage(Ѷ𝖑𝐤𝐲𝖗𝖊.quoted.chatID, { delete: vM.key });
-Ѷ𝖑𝐤𝐲𝖗𝖊.quoted.copyNForward = (
+𝐕𝐥𝐤𝐲𝐫𝐞.quoted.delete = () =>
+𝖍𝖆𝖜ӄ.sendMessage(𝐕𝐥𝐤𝐲𝐫𝐞.quoted.chatID, { delete: vM.key });
+𝐕𝐥𝐤𝐲𝐫𝐞.quoted.copyNForward = (
 jid,
 forceForward = false,
 options = {}
 ) => 𝖍𝖆𝖜ӄ.copyNForward(jid, vM, forceForward, options);
-Ѷ𝖑𝐤𝐲𝖗𝖊.quoted.download = () => 𝖍𝖆𝖜ӄ.downloadMediaMessage(Ѷ𝖑𝐤𝐲𝖗𝖊.quoted);
+𝐕𝐥𝐤𝐲𝐫𝐞.quoted.download = () => 𝖍𝖆𝖜ӄ.downloadMediaMessage(𝐕𝐥𝐤𝐲𝐫𝐞.quoted);
 }
 }
-if (Ѷ𝖑𝐤𝐲𝖗𝖊.msg.url)
-Ѷ𝖑𝐤𝐲𝖗𝖊.download = () => 𝖍𝖆𝖜ӄ.downloadMediaMessage(Ѷ𝖑𝐤𝐲𝖗𝖊.msg);
-Ѷ𝖑𝐤𝐲𝖗𝖊.text =
-Ѷ𝖑𝐤𝐲𝖗𝖊.msg.text ||
-Ѷ𝖑𝐤𝐲𝖗𝖊.msg.caption ||
-Ѷ𝖑𝐤𝐲𝖗𝖊.message.conversation ||
-Ѷ𝖑𝐤𝐲𝖗𝖊.msg.contentText ||
-Ѷ𝖑𝐤𝐲𝖗𝖊.msg.selectedDisplayText ||
-Ѷ𝖑𝐤𝐲𝖗𝖊.msg.title ||
+if (𝐕𝐥𝐤𝐲𝐫𝐞.msg.url)
+𝐕𝐥𝐤𝐲𝐫𝐞.download = () => 𝖍𝖆𝖜ӄ.downloadMediaMessage(𝐕𝐥𝐤𝐲𝐫𝐞.msg);
+𝐕𝐥𝐤𝐲𝐫𝐞.text =
+𝐕𝐥𝐤𝐲𝐫𝐞.msg.text ||
+𝐕𝐥𝐤𝐲𝐫𝐞.msg.caption ||
+𝐕𝐥𝐤𝐲𝐫𝐞.message.conversation ||
+𝐕𝐥𝐤𝐲𝐫𝐞.msg.contentText ||
+𝐕𝐥𝐤𝐲𝐫𝐞.msg.selectedDisplayText ||
+𝐕𝐥𝐤𝐲𝐫𝐞.msg.title ||
 "";
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
-Ѷ𝖑𝐤𝐲𝖗𝖊.reply = (text, chatId = Ѷ𝖑𝐤𝐲𝖗𝖊.chatID, options = {}) =>
+𝐕𝐥𝐤𝐲𝐫𝐞.reply = (text, chatId = 𝐕𝐥𝐤𝐲𝐫𝐞.chatID, options = {}) =>
 Buffer.isBuffer(text)
-? 𝖍𝖆𝖜ӄ.sendMedia(chatId, text, "file", "", Ѷ𝖑𝐤𝐲𝖗𝖊, { ...options })
-: 𝖍𝖆𝖜ӄ.sendText(chatId, text, Ѷ𝖑𝐤𝐲𝖗𝖊, { ...options });
-Ѷ𝖑𝐤𝐲𝖗𝖊.copy = () => exports.smsg(𝖍𝖆𝖜ӄ, M.fromObject(M.toObject(Ѷ𝖑𝐤𝐲𝖗𝖊)));
-Ѷ𝖑𝐤𝐲𝖗𝖊.copyNForward = (
-jid = Ѷ𝖑𝐤𝐲𝖗𝖊.chatID,
+? 𝖍𝖆𝖜ӄ.sendMedia(chatId, text, "file", "", 𝐕𝐥𝐤𝐲𝐫𝐞, { ...options })
+: 𝖍𝖆𝖜ӄ.sendText(chatId, text, 𝐕𝐥𝐤𝐲𝐫𝐞, { ...options });
+𝐕𝐥𝐤𝐲𝐫𝐞.copy = () => exports.smsg(𝖍𝖆𝖜ӄ, M.fromObject(M.toObject(𝐕𝐥𝐤𝐲𝐫𝐞)));
+𝐕𝐥𝐤𝐲𝐫𝐞.copyNForward = (
+jid = 𝐕𝐥𝐤𝐲𝐫𝐞.chatID,
 forceForward = false,
 options = {}
-) => 𝖍𝖆𝖜ӄ.copyNForward(jid, Ѷ𝖑𝐤𝐲𝖗𝖊, forceForward, options);
+) => 𝖍𝖆𝖜ӄ.copyNForward(jid, 𝐕𝐥𝐤𝐲𝐫𝐞, forceForward, options);
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
-Ѷ𝖑𝐤𝐲𝖗𝖊.Body =
-Ѷ𝖑𝐤𝐲𝖗𝖊.mtype === "conversation"
-? Ѷ𝖑𝐤𝐲𝖗𝖊.message.conversation
-: Ѷ𝖑𝐤𝐲𝖗𝖊.mtype == "imageMessage"
-? Ѷ𝖑𝐤𝐲𝖗𝖊.message.imageMessage.caption
-: Ѷ𝖑𝐤𝐲𝖗𝖊.mtype == "videoMessage"
-? Ѷ𝖑𝐤𝐲𝖗𝖊.message.videoMessage.caption
-: Ѷ𝖑𝐤𝐲𝖗𝖊.mtype == "extendedTextMessage"
-? Ѷ𝖑𝐤𝐲𝖗𝖊.message.extendedTextMessage.text
-: Ѷ𝖑𝐤𝐲𝖗𝖊.mtype == "buttonsResponseMessage"
-? Ѷ𝖑𝐤𝐲𝖗𝖊.message.buttonsResponseMessage.selectedButtonId
-: Ѷ𝖑𝐤𝐲𝖗𝖊.mtype == "listResponseMessage"
-? Ѷ𝖑𝐤𝐲𝖗𝖊.message.listResponseMessage.singleSelectReply.selectedRowId
-: Ѷ𝖑𝐤𝐲𝖗𝖊.mtype == "templateButtonReplyMessage"
-? Ѷ𝖑𝐤𝐲𝖗𝖊.message.templateButtonReplyMessage.selectedId
-: Ѷ𝖑𝐤𝐲𝖗𝖊.mtype === "messageContextInfo"
-? Ѷ𝖑𝐤𝐲𝖗𝖊.message.buttonsResponseMessage?.selectedButtonId ||
-Ѷ𝖑𝐤𝐲𝖗𝖊.message.listResponseMessage?.singleSelectReply.selectedRowId ||
-Ѷ𝖑𝐤𝐲𝖗𝖊.text
+𝐕𝐥𝐤𝐲𝐫𝐞.Body =
+𝐕𝐥𝐤𝐲𝐫𝐞.mtype === "conversation"
+? 𝐕𝐥𝐤𝐲𝐫𝐞.message.conversation
+: 𝐕𝐥𝐤𝐲𝐫𝐞.mtype == "imageMessage"
+? 𝐕𝐥𝐤𝐲𝐫𝐞.message.imageMessage.caption
+: 𝐕𝐥𝐤𝐲𝐫𝐞.mtype == "videoMessage"
+? 𝐕𝐥𝐤𝐲𝐫𝐞.message.videoMessage.caption
+: 𝐕𝐥𝐤𝐲𝐫𝐞.mtype == "extendedTextMessage"
+? 𝐕𝐥𝐤𝐲𝐫𝐞.message.extendedTextMessage.text
+: 𝐕𝐥𝐤𝐲𝐫𝐞.mtype == "buttonsResponseMessage"
+? 𝐕𝐥𝐤𝐲𝐫𝐞.message.buttonsResponseMessage.selectedButtonId
+: 𝐕𝐥𝐤𝐲𝐫𝐞.mtype == "listResponseMessage"
+? 𝐕𝐥𝐤𝐲𝐫𝐞.message.listResponseMessage.singleSelectReply.selectedRowId
+: 𝐕𝐥𝐤𝐲𝐫𝐞.mtype == "templateButtonReplyMessage"
+? 𝐕𝐥𝐤𝐲𝐫𝐞.message.templateButtonReplyMessage.selectedId
+: 𝐕𝐥𝐤𝐲𝐫𝐞.mtype === "messageContextInfo"
+? 𝐕𝐥𝐤𝐲𝐫𝐞.message.buttonsResponseMessage?.selectedButtonId ||
+𝐕𝐥𝐤𝐲𝐫𝐞.message.listResponseMessage?.singleSelectReply.selectedRowId ||
+𝐕𝐥𝐤𝐲𝐫𝐞.text
 : "";
-Ѷ𝖑𝐤𝐲𝖗𝖊.isCommand = Ѷ𝖑𝐤𝐲𝖗𝖊.Body.startsWith(prefix);
-Ѷ𝖑𝐤𝐲𝖗𝖊.isCmd =
-prefix.includes(Ѷ𝖑𝐤𝐲𝖗𝖊.Body != "" && Ѷ𝖑𝐤𝐲𝖗𝖊.Body.slice(0, 1)) &&
-Ѷ𝖑𝐤𝐲𝖗𝖊.Body.slice(1) != "";
-Ѷ𝖑𝐤𝐲𝖗𝖊.commandName = Ѷ𝖑𝐤𝐲𝖗𝖊.isCmd
-? Ѷ𝖑𝐤𝐲𝖗𝖊.Body.slice(1).trim().split(" ")[0].toLowerCase()
+𝐕𝐥𝐤𝐲𝐫𝐞.isCommand = 𝐕𝐥𝐤𝐲𝐫𝐞.Body.startsWith(prefix);
+𝐕𝐥𝐤𝐲𝐫𝐞.isCmd =
+prefix.includes(𝐕𝐥𝐤𝐲𝐫𝐞.Body != "" && 𝐕𝐥𝐤𝐲𝐫𝐞.Body.slice(0, 1)) &&
+𝐕𝐥𝐤𝐲𝐫𝐞.Body.slice(1) != "";
+𝐕𝐥𝐤𝐲𝐫𝐞.commandName = 𝐕𝐥𝐤𝐲𝐫𝐞.isCmd
+? 𝐕𝐥𝐤𝐲𝐫𝐞.Body.slice(1).trim().split(" ")[0].toLowerCase()
 : "";
-Ѷ𝖑𝐤𝐲𝖗𝖊.A𝖗𝖌𝖘 = Ѷ𝖑𝐤𝐲𝖗𝖊.Body.trim().split(/ +/).slice(1);
-Ѷ𝖑𝐤𝐲𝖗𝖊.pushName = Ѷ𝖑𝐤𝐲𝖗𝖊.pushName || "No Name";
-Ѷ𝖑𝐤𝐲𝖗𝖊.botNumber = await 𝖍𝖆𝖜ӄ.decodeJid(𝖍𝖆𝖜ӄ.user.id);
-Ѷ𝖑𝐤𝐲𝖗𝖊.isCreator = [Ѷ𝖑𝐤𝐲𝖗𝖊.botNumber, ...global.owner]
+𝐕𝐥𝐤𝐲𝐫𝐞.A𝖗𝖌𝖘 = 𝐕𝐥𝐤𝐲𝐫𝐞.Body.trim().split(/ +/).slice(1);
+𝐕𝐥𝐤𝐲𝐫𝐞.pushName = 𝐕𝐥𝐤𝐲𝐫𝐞.pushName || "No Name";
+𝐕𝐥𝐤𝐲𝐫𝐞.botNumber = await 𝖍𝖆𝖜ӄ.decodeJid(𝖍𝖆𝖜ӄ.user.id);
+𝐕𝐥𝐤𝐲𝐫𝐞.isCreator = [𝐕𝐥𝐤𝐲𝐫𝐞.botNumber, ...global.owner]
 .map((v) => v.replace(/[^0-9]/g, "") + "@s.whatsapp.net")
-.includes(Ѷ𝖑𝐤𝐲𝖗𝖊.sender);
-Ѷ𝖑𝐤𝐲𝖗𝖊.fromMe = Ѷ𝖑𝐤𝐲𝖗𝖊.sender == Ѷ𝖑𝐤𝐲𝖗𝖊.botNumber ? true : false;
-Ѷ𝖑𝐤𝐲𝖗𝖊.F𝖚𝖑𝖑_A𝖗𝖌𝖘 = Ѷ𝖑𝐤𝐲𝖗𝖊.A𝖗𝖌𝖘.join(" ");
-Ѷ𝖑𝐤𝐲𝖗𝖊.quoted = Ѷ𝖑𝐤𝐲𝖗𝖊.quoted ? Ѷ𝖑𝐤𝐲𝖗𝖊.quoted : Ѷ𝖑𝐤𝐲𝖗𝖊;
-let mime = (Ѷ𝖑𝐤𝐲𝖗𝖊.quoted.msg || Ѷ𝖑𝐤𝐲𝖗𝖊.quoted).mimetype || "";
-Ѷ𝖑𝐤𝐲𝖗𝖊.isMedia = /image|video|sticker|audio/.test(mime);
-Ѷ𝖑𝐤𝐲𝖗𝖊.groupMetadata = Ѷ𝖑𝐤𝐲𝖗𝖊.isGroup
-? await 𝖍𝖆𝖜ӄ.groupMetadata(Ѷ𝖑𝐤𝐲𝖗𝖊.chatID)
+.includes(𝐕𝐥𝐤𝐲𝐫𝐞.sender);
+𝐕𝐥𝐤𝐲𝐫𝐞.fromMe = 𝐕𝐥𝐤𝐲𝐫𝐞.sender == 𝐕𝐥𝐤𝐲𝐫𝐞.botNumber ? true : false;
+𝐕𝐥𝐤𝐲𝐫𝐞.F𝖚𝖑𝖑_A𝖗𝖌𝖘 = 𝐕𝐥𝐤𝐲𝐫𝐞.A𝖗𝖌𝖘.join(" ");
+𝐕𝐥𝐤𝐲𝐫𝐞.quoted = 𝐕𝐥𝐤𝐲𝐫𝐞.quoted ? 𝐕𝐥𝐤𝐲𝐫𝐞.quoted : 𝐕𝐥𝐤𝐲𝐫𝐞;
+let mime = (𝐕𝐥𝐤𝐲𝐫𝐞.quoted.msg || 𝐕𝐥𝐤𝐲𝐫𝐞.quoted).mimetype || "";
+𝐕𝐥𝐤𝐲𝐫𝐞.isMedia = /image|video|sticker|audio/.test(mime);
+𝐕𝐥𝐤𝐲𝐫𝐞.groupMetadata = 𝐕𝐥𝐤𝐲𝐫𝐞.isGroup
+? await 𝖍𝖆𝖜ӄ.groupMetadata(𝐕𝐥𝐤𝐲𝐫𝐞.chatID)
 : "";
-Ѷ𝖑𝐤𝐲𝖗𝖊.participants = Ѷ𝖑𝐤𝐲𝖗𝖊.isGroup
-? await Ѷ𝖑𝐤𝐲𝖗𝖊.groupMetadata.participants
+𝐕𝐥𝐤𝐲𝐫𝐞.participants = 𝐕𝐥𝐤𝐲𝐫𝐞.isGroup
+? await 𝐕𝐥𝐤𝐲𝐫𝐞.groupMetadata.participants
 : "";
-Ѷ𝖑𝐤𝐲𝖗𝖊.groupAdmins = Ѷ𝖑𝐤𝐲𝖗𝖊.isGroup
-? await Ѷ𝖑𝐤𝐲𝖗𝖊.participants
+𝐕𝐥𝐤𝐲𝐫𝐞.groupAdmins = 𝐕𝐥𝐤𝐲𝐫𝐞.isGroup
+? await 𝐕𝐥𝐤𝐲𝐫𝐞.participants
 .filter((v) => v.admin !== null)
 .map((v) => v.id)
 : "";
-Ѷ𝖑𝐤𝐲𝖗𝖊.isBotAdmin = Ѷ𝖑𝐤𝐲𝖗𝖊.isGroup
-? Ѷ𝖑𝐤𝐲𝖗𝖊.groupAdmins.includes(Ѷ𝖑𝐤𝐲𝖗𝖊.botNumber)
+𝐕𝐥𝐤𝐲𝐫𝐞.isBotAdmin = 𝐕𝐥𝐤𝐲𝐫𝐞.isGroup
+? 𝐕𝐥𝐤𝐲𝐫𝐞.groupAdmins.includes(𝐕𝐥𝐤𝐲𝐫𝐞.botNumber)
 : false;
-Ѷ𝖑𝐤𝐲𝖗𝖊.isSenderAdmin = Ѷ𝖑𝐤𝐲𝖗𝖊.isGroup
-? Ѷ𝖑𝐤𝐲𝖗𝖊.groupAdmins.includes(Ѷ𝖑𝐤𝐲𝖗𝖊.sender)
+𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin = 𝐕𝐥𝐤𝐲𝐫𝐞.isGroup
+? 𝐕𝐥𝐤𝐲𝐫𝐞.groupAdmins.includes(𝐕𝐥𝐤𝐲𝐫𝐞.sender)
 : false;
-Ѷ𝖑𝐤𝐲𝖗𝖊.mentionByTag =
-Ѷ𝖑𝐤𝐲𝖗𝖊.mtype == "extendedTextMessage" &&
-Ѷ𝖑𝐤𝐲𝖗𝖊.message.extendedTextMessage.contextInfo != null
-? Ѷ𝖑𝐤𝐲𝖗𝖊.message.extendedTextMessage.contextInfo.mentionedJid
+𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag =
+𝐕𝐥𝐤𝐲𝐫𝐞.mtype == "extendedTextMessage" &&
+𝐕𝐥𝐤𝐲𝐫𝐞.message.extendedTextMessage.contextInfo != null
+? 𝐕𝐥𝐤𝐲𝐫𝐞.message.extendedTextMessage.contextInfo.mentionedJid
 : [];
-Ѷ𝖑𝐤𝐲𝖗𝖊.mentionByReply =
-Ѷ𝖑𝐤𝐲𝖗𝖊.mtype == "extendedTextMessage" &&
-Ѷ𝖑𝐤𝐲𝖗𝖊.message.extendedTextMessage.contextInfo != null
-? Ѷ𝖑𝐤𝐲𝖗𝖊.message.extendedTextMessage.contextInfo.participant || ""
+𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply =
+𝐕𝐥𝐤𝐲𝐫𝐞.mtype == "extendedTextMessage" &&
+𝐕𝐥𝐤𝐲𝐫𝐞.message.extendedTextMessage.contextInfo != null
+? 𝐕𝐥𝐤𝐲𝐫𝐞.message.extendedTextMessage.contextInfo.participant || ""
 : "";
 let MODString =
 process.env.MOD === undefined
 ? "918436686758,917430922909"
 : process.env.MOD;
-Ѷ𝖑𝐤𝐲𝖗𝖊.isSenderTUF = MODString.includes(
-Ѷ𝖑𝐤𝐲𝖗𝖊.sender.substring(0, Ѷ𝖑𝐤𝐲𝖗𝖊.sender.indexOf("@"))
+𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF = MODString.includes(
+𝐕𝐥𝐤𝐲𝐫𝐞.sender.substring(0, 𝐕𝐥𝐤𝐲𝐫𝐞.sender.indexOf("@"))
 );
-return Ѷ𝖑𝐤𝐲𝖗𝖊;
+return 𝐕𝐥𝐤𝐲𝐫𝐞;
 };
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
 

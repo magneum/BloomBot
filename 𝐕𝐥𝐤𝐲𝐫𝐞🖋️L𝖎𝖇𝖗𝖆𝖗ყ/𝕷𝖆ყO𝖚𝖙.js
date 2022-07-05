@@ -5,8 +5,8 @@
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
 let fs = require("fs");
 let sequelize = require("sequelize");
-if (fs.existsSync("Ѷ𝖑𝐤𝐲𝖗𝖊.env")) {
-require("dotenv").config({ path: "./Ѷ𝖑𝐤𝐲𝖗𝖊.env" });
+if (fs.existsSync("𝐕𝐥𝐤𝐲𝐫𝐞.env")) {
+require("dotenv").config({ path: "./𝐕𝐥𝐤𝐲𝐫𝐞.env" });
 } else {
 require("dotenv");
 }
@@ -21,7 +21,7 @@ return log;
 };
 process.env.DATABASE_URL =
 process.env.DATABASE_URL === undefined
-? "./🕊️Ѷ𝖑𝐤𝐲𝖗𝖊🕊️/Ѷ𝖑𝐤𝐲𝖗𝖊.db"
+? "./🕊️𝐕𝐥𝐤𝐲𝐫𝐞🕊️/𝐕𝐥𝐤𝐲𝐫𝐞.db"
 : process.env.DATABASE_URL;
 let gg =
 process.env.MODS === undefined
@@ -41,10 +41,10 @@ global.owner = gg.split(",");
 global.MONGOOSE = process.env.MongoDb;
 global.DATABASE_URL =
 process.env.DATABASE_URL === undefined
-? "./🕊️Ѷ𝖑𝐤𝐲𝖗𝖊🕊️/Ѷ𝖑𝐤𝐲𝖗𝖊.db"
+? "./🕊️𝐕𝐥𝐤𝐲𝐫𝐞🕊️/𝐕𝐥𝐤𝐲𝐫𝐞.db"
 : process.env.DATABASE_URL;
 global.DATABASE =
-process.env.DATABASE_URL === "./🕊️Ѷ𝖑𝐤𝐲𝖗𝖊🕊️/Ѷ𝖑𝐤𝐲𝖗𝖊.db"
+process.env.DATABASE_URL === "./🕊️𝐕𝐥𝐤𝐲𝐫𝐞🕊️/𝐕𝐥𝐤𝐲𝐫𝐞.db"
 ? new sequelize.Sequelize({
 dialect: "sqlite",
 storage: process.env.DATABASE_URL,
@@ -58,9 +58,9 @@ dialectOptions: { ssl: { require: true, rejectUnauthorized: false } },
 });
 global.prefix = process.env.PREFIX || ".";
 global.port = process.env.PORT || 8080;
-global.packname = "Ѷ𝖑𝐤𝐲𝖗𝖊";
-global.author = "Ѷ𝖑𝐤𝐲𝖗𝖊";
-global.name = "Ѷ𝖑𝐤𝐲𝖗𝖊";
+global.packname = "𝐕𝐥𝐤𝐲𝐫𝐞";
+global.author = "𝐕𝐥𝐤𝐲𝐫𝐞";
+global.name = "𝐕𝐥𝐤𝐲𝐫𝐞";
 global.APIs = {
 nrtm: "https://nurutomo.herokuapp.com",
 dzx: "https://api.dhamzxploit.my.id",

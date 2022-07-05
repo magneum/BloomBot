@@ -12,9 +12,9 @@ let ᴀɴɪᴍᴇ2 = require(`anime-actions`);
 let { sleep } = require(`../𝐕𝐥𝐤𝐲𝐫𝐞🖋️L𝖎𝖇𝖗𝖆𝖗ყ/ɴᴇᴄᴛᴏʀ`);
 let { DownloaderHelper } = require("node-downloader-helper");
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
-exports.ᴘᴏᴡᴇʀᴇᴅ = async (𝖍𝖆𝖜ӄ, Ѷ𝖑𝐤𝐲𝖗𝖊, ɮօɖʏ) => {
+exports.ᴘᴏᴡᴇʀᴇᴅ = async (𝖍𝖆𝖜ӄ, 𝐕𝐥𝐤𝐲𝐫𝐞, ɮօɖʏ) => {
 async function CreateFile(ꜰɪɴᴀʟʟɪɴᴋ, ɢᴏᴛꜰɪʟᴇ, ɢɪᴠᴇꜰɪʟᴇ, Present) {
-let DL = new DownloaderHelper(ꜰɪɴᴀʟʟɪɴᴋ, "./Ѷ𝖑𝐤𝐲𝖗𝖊🐍Ş𝖎𝖕𝖍𝖔𝖓", {
+let DL = new DownloaderHelper(ꜰɪɴᴀʟʟɪɴᴋ, "./𝐕𝐥𝐤𝐲𝐫𝐞🐍Ş𝖎𝖕𝖍𝖔𝖓", {
 fileName: `${Present}.gif`,
 retry: true,
 });
@@ -30,16 +30,16 @@ await FFmpeg(ɢᴏᴛꜰɪʟᴇ)
 .on("end", async () => {
 await 𝖍𝖆𝖜ӄ
 .sendMessage(
-Ѷ𝖑𝐤𝐲𝖗𝖊.chatID,
+𝐕𝐥𝐤𝐲𝐫𝐞.chatID,
 {
 video: fs.readFileSync(ɢɪᴠᴇꜰɪʟᴇ),
 gifPlayback: true,
-mentions: [Ѷ𝖑𝐤𝐲𝖗𝖊.sender, Ѷ𝖑𝐤𝐲𝖗𝖊.sender],
+mentions: [𝐕𝐥𝐤𝐲𝐫𝐞.sender, 𝐕𝐥𝐤𝐲𝐫𝐞.sender],
 caption: `*❣️ ꜰᴏʀ:* @${
-Ѷ𝖑𝐤𝐲𝖗𝖊.sender.split(`@`)[0] || ""
-}\n*⦓ ⒸѶ𝖑𝐤𝐲𝖗𝖊 ⦔*`,
+𝐕𝐥𝐤𝐲𝐫𝐞.sender.split(`@`)[0] || ""
+}\n*⦓ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⦔*`,
 },
-{ quoted: Ѷ𝖑𝐤𝐲𝖗𝖊 }
+{ quoted: 𝐕𝐥𝐤𝐲𝐫𝐞 }
 )
 .then(fs.unlinkSync(ɢɪᴠᴇꜰɪʟᴇ, ɢᴏᴛꜰɪʟᴇ))
 .catch((𝕰𝖗𝖗𝖔𝖗) => console.log(chalk.red(𝕰𝖗𝖗𝖔𝖗)));
@@ -57,9 +57,9 @@ return console.log(chalk.red(𝕰𝖗𝖗𝖔𝖗));
 if (ɮօɖʏ.includes("bite")) {
 let ꜰɪɴᴀʟʟɪɴᴋ;
 let ᴀɴɪᴍᴇʟɪɴᴋ = await ᴀɴɪᴍᴇ.bite();
-let Present = `${Date.now()}${Ѷ𝖑𝐤𝐲𝖗𝖊.chatID}`;
-let ɢᴏᴛꜰɪʟᴇ = `./Ѷ𝖑𝐤𝐲𝖗𝖊🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${Ѷ𝖑𝐤𝐲𝖗𝖊.chatID}.gif`;
-let ɢɪᴠᴇꜰɪʟᴇ = `./Ѷ𝖑𝐤𝐲𝖗𝖊🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${Ѷ𝖑𝐤𝐲𝖗𝖊.chatID}.mp4`;
+let Present = `${Date.now()}${𝐕𝐥𝐤𝐲𝐫𝐞.chatID}`;
+let ɢᴏᴛꜰɪʟᴇ = `./𝐕𝐥𝐤𝐲𝐫𝐞🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${𝐕𝐥𝐤𝐲𝐫𝐞.chatID}.gif`;
+let ɢɪᴠᴇꜰɪʟᴇ = `./𝐕𝐥𝐤𝐲𝐫𝐞🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${𝐕𝐥𝐤𝐲𝐫𝐞.chatID}.mp4`;
 if (!ᴀɴɪᴍᴇʟɪɴᴋ.endsWith(".gif") && !ᴀɴɪᴍᴇʟɪɴᴋ.endsWith(".mp4")) {
 ꜰɪɴᴀʟʟɪɴᴋ = await ᴀɴɪᴍᴇ2.bite();
 } else {
@@ -71,9 +71,9 @@ return await CreateFile(ꜰɪɴᴀʟʟɪɴᴋ, ɢᴏᴛꜰɪʟᴇ, ɢɪᴠᴇꜰ
 } else if (ɮօɖʏ.includes("blush")) {
 let ꜰɪɴᴀʟʟɪɴᴋ;
 let ᴀɴɪᴍᴇʟɪɴᴋ = await ᴀɴɪᴍᴇ.blush();
-let Present = `${Date.now()}${Ѷ𝖑𝐤𝐲𝖗𝖊.chatID}`;
-let ɢᴏᴛꜰɪʟᴇ = `./Ѷ𝖑𝐤𝐲𝖗𝖊🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${Ѷ𝖑𝐤𝐲𝖗𝖊.chatID}.gif`;
-let ɢɪᴠᴇꜰɪʟᴇ = `./Ѷ𝖑𝐤𝐲𝖗𝖊🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${Ѷ𝖑𝐤𝐲𝖗𝖊.chatID}.mp4`;
+let Present = `${Date.now()}${𝐕𝐥𝐤𝐲𝐫𝐞.chatID}`;
+let ɢᴏᴛꜰɪʟᴇ = `./𝐕𝐥𝐤𝐲𝐫𝐞🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${𝐕𝐥𝐤𝐲𝐫𝐞.chatID}.gif`;
+let ɢɪᴠᴇꜰɪʟᴇ = `./𝐕𝐥𝐤𝐲𝐫𝐞🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${𝐕𝐥𝐤𝐲𝐫𝐞.chatID}.mp4`;
 if (!ᴀɴɪᴍᴇʟɪɴᴋ.endsWith(".gif") && !ᴀɴɪᴍᴇʟɪɴᴋ.endsWith(".mp4")) {
 ꜰɪɴᴀʟʟɪɴᴋ = await ᴀɴɪᴍᴇ2.blush();
 } else {
@@ -87,9 +87,9 @@ return await CreateFile(ꜰɪɴᴀʟʟɪɴᴋ, ɢᴏᴛꜰɪʟᴇ, ɢɪᴠᴇꜰ
 } else if (ɮօɖʏ.includes("bored")) {
 let ꜰɪɴᴀʟʟɪɴᴋ;
 let ᴀɴɪᴍᴇʟɪɴᴋ = await ᴀɴɪᴍᴇ.bored();
-let Present = `${Date.now()}${Ѷ𝖑𝐤𝐲𝖗𝖊.chatID}`;
-let ɢᴏᴛꜰɪʟᴇ = `./Ѷ𝖑𝐤𝐲𝖗𝖊🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${Ѷ𝖑𝐤𝐲𝖗𝖊.chatID}.gif`;
-let ɢɪᴠᴇꜰɪʟᴇ = `./Ѷ𝖑𝐤𝐲𝖗𝖊🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${Ѷ𝖑𝐤𝐲𝖗𝖊.chatID}.mp4`;
+let Present = `${Date.now()}${𝐕𝐥𝐤𝐲𝐫𝐞.chatID}`;
+let ɢᴏᴛꜰɪʟᴇ = `./𝐕𝐥𝐤𝐲𝐫𝐞🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${𝐕𝐥𝐤𝐲𝐫𝐞.chatID}.gif`;
+let ɢɪᴠᴇꜰɪʟᴇ = `./𝐕𝐥𝐤𝐲𝐫𝐞🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${𝐕𝐥𝐤𝐲𝐫𝐞.chatID}.mp4`;
 if (!ᴀɴɪᴍᴇʟɪɴᴋ.endsWith(".gif") && !ᴀɴɪᴍᴇʟɪɴᴋ.endsWith(".mp4")) {
 ꜰɪɴᴀʟʟɪɴᴋ = await ᴀɴɪᴍᴇ2.bored();
 } else {
@@ -101,9 +101,9 @@ return await CreateFile(ꜰɪɴᴀʟʟɪɴᴋ, ɢᴏᴛꜰɪʟᴇ, ɢɪᴠᴇꜰ
 } else if (ɮօɖʏ.includes("confused")) {
 let ꜰɪɴᴀʟʟɪɴᴋ;
 let ᴀɴɪᴍᴇʟɪɴᴋ = await ᴀɴɪᴍᴇ.confused();
-let Present = `${Date.now()}${Ѷ𝖑𝐤𝐲𝖗𝖊.chatID}`;
-let ɢᴏᴛꜰɪʟᴇ = `./Ѷ𝖑𝐤𝐲𝖗𝖊🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${Ѷ𝖑𝐤𝐲𝖗𝖊.chatID}.gif`;
-let ɢɪᴠᴇꜰɪʟᴇ = `./Ѷ𝖑𝐤𝐲𝖗𝖊🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${Ѷ𝖑𝐤𝐲𝖗𝖊.chatID}.mp4`;
+let Present = `${Date.now()}${𝐕𝐥𝐤𝐲𝐫𝐞.chatID}`;
+let ɢᴏᴛꜰɪʟᴇ = `./𝐕𝐥𝐤𝐲𝐫𝐞🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${𝐕𝐥𝐤𝐲𝐫𝐞.chatID}.gif`;
+let ɢɪᴠᴇꜰɪʟᴇ = `./𝐕𝐥𝐤𝐲𝐫𝐞🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${𝐕𝐥𝐤𝐲𝐫𝐞.chatID}.mp4`;
 if (!ᴀɴɪᴍᴇʟɪɴᴋ.endsWith(".gif") && !ᴀɴɪᴍᴇʟɪɴᴋ.endsWith(".mp4")) {
 ꜰɪɴᴀʟʟɪɴᴋ = await ᴀɴɪᴍᴇ2.confused();
 } else {
@@ -115,9 +115,9 @@ return await CreateFile(ꜰɪɴᴀʟʟɪɴᴋ, ɢᴏᴛꜰɪʟᴇ, ɢɪᴠᴇꜰ
 } else if (ɮօɖʏ.includes("cry")) {
 let ꜰɪɴᴀʟʟɪɴᴋ;
 let ᴀɴɪᴍᴇʟɪɴᴋ = await ᴀɴɪᴍᴇ.cry();
-let Present = `${Date.now()}${Ѷ𝖑𝐤𝐲𝖗𝖊.chatID}`;
-let ɢᴏᴛꜰɪʟᴇ = `./Ѷ𝖑𝐤𝐲𝖗𝖊🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${Ѷ𝖑𝐤𝐲𝖗𝖊.chatID}.gif`;
-let ɢɪᴠᴇꜰɪʟᴇ = `./Ѷ𝖑𝐤𝐲𝖗𝖊🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${Ѷ𝖑𝐤𝐲𝖗𝖊.chatID}.mp4`;
+let Present = `${Date.now()}${𝐕𝐥𝐤𝐲𝐫𝐞.chatID}`;
+let ɢᴏᴛꜰɪʟᴇ = `./𝐕𝐥𝐤𝐲𝐫𝐞🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${𝐕𝐥𝐤𝐲𝐫𝐞.chatID}.gif`;
+let ɢɪᴠᴇꜰɪʟᴇ = `./𝐕𝐥𝐤𝐲𝐫𝐞🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${𝐕𝐥𝐤𝐲𝐫𝐞.chatID}.mp4`;
 if (!ᴀɴɪᴍᴇʟɪɴᴋ.endsWith(".gif") && !ᴀɴɪᴍᴇʟɪɴᴋ.endsWith(".mp4")) {
 ꜰɪɴᴀʟʟɪɴᴋ = await ᴀɴɪᴍᴇ2.cry();
 } else {
@@ -129,9 +129,9 @@ return await CreateFile(ꜰɪɴᴀʟʟɪɴᴋ, ɢᴏᴛꜰɪʟᴇ, ɢɪᴠᴇꜰ
 } else if (ɮօɖʏ.includes("cuddle")) {
 let ꜰɪɴᴀʟʟɪɴᴋ;
 let ᴀɴɪᴍᴇʟɪɴᴋ = await ᴀɴɪᴍᴇ.cuddle();
-let Present = `${Date.now()}${Ѷ𝖑𝐤𝐲𝖗𝖊.chatID}`;
-let ɢᴏᴛꜰɪʟᴇ = `./Ѷ𝖑𝐤𝐲𝖗𝖊🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${Ѷ𝖑𝐤𝐲𝖗𝖊.chatID}.gif`;
-let ɢɪᴠᴇꜰɪʟᴇ = `./Ѷ𝖑𝐤𝐲𝖗𝖊🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${Ѷ𝖑𝐤𝐲𝖗𝖊.chatID}.mp4`;
+let Present = `${Date.now()}${𝐕𝐥𝐤𝐲𝐫𝐞.chatID}`;
+let ɢᴏᴛꜰɪʟᴇ = `./𝐕𝐥𝐤𝐲𝐫𝐞🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${𝐕𝐥𝐤𝐲𝐫𝐞.chatID}.gif`;
+let ɢɪᴠᴇꜰɪʟᴇ = `./𝐕𝐥𝐤𝐲𝐫𝐞🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${𝐕𝐥𝐤𝐲𝐫𝐞.chatID}.mp4`;
 if (!ᴀɴɪᴍᴇʟɪɴᴋ.endsWith(".gif") && !ᴀɴɪᴍᴇʟɪɴᴋ.endsWith(".mp4")) {
 ꜰɪɴᴀʟʟɪɴᴋ = await ᴀɴɪᴍᴇ2.cuddle();
 } else {
@@ -143,9 +143,9 @@ return await CreateFile(ꜰɪɴᴀʟʟɪɴᴋ, ɢᴏᴛꜰɪʟᴇ, ɢɪᴠᴇꜰ
 } else if (ɮօɖʏ.includes("goodnight")) {
 let ꜰɪɴᴀʟʟɪɴᴋ;
 let ᴀɴɪᴍᴇʟɪɴᴋ = await ᴀɴɪᴍᴇ.bite();
-let Present = `${Date.now()}${Ѷ𝖑𝐤𝐲𝖗𝖊.chatID}`;
-let ɢᴏᴛꜰɪʟᴇ = `./Ѷ𝖑𝐤𝐲𝖗𝖊🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${Ѷ𝖑𝐤𝐲𝖗𝖊.chatID}.gif`;
-let ɢɪᴠᴇꜰɪʟᴇ = `./Ѷ𝖑𝐤𝐲𝖗𝖊🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${Ѷ𝖑𝐤𝐲𝖗𝖊.chatID}.mp4`;
+let Present = `${Date.now()}${𝐕𝐥𝐤𝐲𝐫𝐞.chatID}`;
+let ɢᴏᴛꜰɪʟᴇ = `./𝐕𝐥𝐤𝐲𝐫𝐞🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${𝐕𝐥𝐤𝐲𝐫𝐞.chatID}.gif`;
+let ɢɪᴠᴇꜰɪʟᴇ = `./𝐕𝐥𝐤𝐲𝐫𝐞🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${𝐕𝐥𝐤𝐲𝐫𝐞.chatID}.mp4`;
 if (!ᴀɴɪᴍᴇʟɪɴᴋ.endsWith(".gif") && !ᴀɴɪᴍᴇʟɪɴᴋ.endsWith(".mp4")) {
 ꜰɪɴᴀʟʟɪɴᴋ = await ᴀɴɪᴍᴇ2.bite();
 } else {
@@ -157,9 +157,9 @@ return await CreateFile(ꜰɪɴᴀʟʟɪɴᴋ, ɢᴏᴛꜰɪʟᴇ, ɢɪᴠᴇꜰ
 } else if (ɮօɖʏ.includes("happy")) {
 let ꜰɪɴᴀʟʟɪɴᴋ;
 let ᴀɴɪᴍᴇʟɪɴᴋ = await ᴀɴɪᴍᴇ.happy();
-let Present = `${Date.now()}${Ѷ𝖑𝐤𝐲𝖗𝖊.chatID}`;
-let ɢᴏᴛꜰɪʟᴇ = `./Ѷ𝖑𝐤𝐲𝖗𝖊🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${Ѷ𝖑𝐤𝐲𝖗𝖊.chatID}.gif`;
-let ɢɪᴠᴇꜰɪʟᴇ = `./Ѷ𝖑𝐤𝐲𝖗𝖊🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${Ѷ𝖑𝐤𝐲𝖗𝖊.chatID}.mp4`;
+let Present = `${Date.now()}${𝐕𝐥𝐤𝐲𝐫𝐞.chatID}`;
+let ɢᴏᴛꜰɪʟᴇ = `./𝐕𝐥𝐤𝐲𝐫𝐞🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${𝐕𝐥𝐤𝐲𝐫𝐞.chatID}.gif`;
+let ɢɪᴠᴇꜰɪʟᴇ = `./𝐕𝐥𝐤𝐲𝐫𝐞🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${𝐕𝐥𝐤𝐲𝐫𝐞.chatID}.mp4`;
 if (!ᴀɴɪᴍᴇʟɪɴᴋ.endsWith(".gif") && !ᴀɴɪᴍᴇʟɪɴᴋ.endsWith(".mp4")) {
 ꜰɪɴᴀʟʟɪɴᴋ = await ᴀɴɪᴍᴇ2.happy();
 } else {
@@ -171,9 +171,9 @@ return await CreateFile(ꜰɪɴᴀʟʟɪɴᴋ, ɢᴏᴛꜰɪʟᴇ, ɢɪᴠᴇꜰ
 } else if (ɮօɖʏ.includes("hug")) {
 let ꜰɪɴᴀʟʟɪɴᴋ;
 let ᴀɴɪᴍᴇʟɪɴᴋ = await ᴀɴɪᴍᴇ.hug();
-let Present = `${Date.now()}${Ѷ𝖑𝐤𝐲𝖗𝖊.chatID}`;
-let ɢᴏᴛꜰɪʟᴇ = `./Ѷ𝖑𝐤𝐲𝖗𝖊🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${Ѷ𝖑𝐤𝐲𝖗𝖊.chatID}.gif`;
-let ɢɪᴠᴇꜰɪʟᴇ = `./Ѷ𝖑𝐤𝐲𝖗𝖊🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${Ѷ𝖑𝐤𝐲𝖗𝖊.chatID}.mp4`;
+let Present = `${Date.now()}${𝐕𝐥𝐤𝐲𝐫𝐞.chatID}`;
+let ɢᴏᴛꜰɪʟᴇ = `./𝐕𝐥𝐤𝐲𝐫𝐞🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${𝐕𝐥𝐤𝐲𝐫𝐞.chatID}.gif`;
+let ɢɪᴠᴇꜰɪʟᴇ = `./𝐕𝐥𝐤𝐲𝐫𝐞🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${𝐕𝐥𝐤𝐲𝐫𝐞.chatID}.mp4`;
 if (!ᴀɴɪᴍᴇʟɪɴᴋ.endsWith(".gif") && !ᴀɴɪᴍᴇʟɪɴᴋ.endsWith(".mp4")) {
 ꜰɪɴᴀʟʟɪɴᴋ = await ᴀɴɪᴍᴇ2.hug();
 } else {
@@ -185,9 +185,9 @@ return await CreateFile(ꜰɪɴᴀʟʟɪɴᴋ, ɢᴏᴛꜰɪʟᴇ, ɢɪᴠᴇꜰ
 } else if (ɮօɖʏ.includes("kick")) {
 let ꜰɪɴᴀʟʟɪɴᴋ;
 let ᴀɴɪᴍᴇʟɪɴᴋ = await ᴀɴɪᴍᴇ.kick();
-let Present = `${Date.now()}${Ѷ𝖑𝐤𝐲𝖗𝖊.chatID}`;
-let ɢᴏᴛꜰɪʟᴇ = `./Ѷ𝖑𝐤𝐲𝖗𝖊🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${Ѷ𝖑𝐤𝐲𝖗𝖊.chatID}.gif`;
-let ɢɪᴠᴇꜰɪʟᴇ = `./Ѷ𝖑𝐤𝐲𝖗𝖊🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${Ѷ𝖑𝐤𝐲𝖗𝖊.chatID}.mp4`;
+let Present = `${Date.now()}${𝐕𝐥𝐤𝐲𝐫𝐞.chatID}`;
+let ɢᴏᴛꜰɪʟᴇ = `./𝐕𝐥𝐤𝐲𝐫𝐞🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${𝐕𝐥𝐤𝐲𝐫𝐞.chatID}.gif`;
+let ɢɪᴠᴇꜰɪʟᴇ = `./𝐕𝐥𝐤𝐲𝐫𝐞🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${𝐕𝐥𝐤𝐲𝐫𝐞.chatID}.mp4`;
 if (!ᴀɴɪᴍᴇʟɪɴᴋ.endsWith(".gif") && !ᴀɴɪᴍᴇʟɪɴᴋ.endsWith(".mp4")) {
 ꜰɪɴᴀʟʟɪɴᴋ = await ᴀɴɪᴍᴇ2.kick();
 } else {
@@ -199,9 +199,9 @@ return await CreateFile(ꜰɪɴᴀʟʟɪɴᴋ, ɢᴏᴛꜰɪʟᴇ, ɢɪᴠᴇꜰ
 } else if (ɮօɖʏ.includes("kiss")) {
 let ꜰɪɴᴀʟʟɪɴᴋ;
 let ᴀɴɪᴍᴇʟɪɴᴋ = await ᴀɴɪᴍᴇ.kiss();
-let Present = `${Date.now()}${Ѷ𝖑𝐤𝐲𝖗𝖊.chatID}`;
-let ɢᴏᴛꜰɪʟᴇ = `./Ѷ𝖑𝐤𝐲𝖗𝖊🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${Ѷ𝖑𝐤𝐲𝖗𝖊.chatID}.gif`;
-let ɢɪᴠᴇꜰɪʟᴇ = `./Ѷ𝖑𝐤𝐲𝖗𝖊🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${Ѷ𝖑𝐤𝐲𝖗𝖊.chatID}.mp4`;
+let Present = `${Date.now()}${𝐕𝐥𝐤𝐲𝐫𝐞.chatID}`;
+let ɢᴏᴛꜰɪʟᴇ = `./𝐕𝐥𝐤𝐲𝐫𝐞🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${𝐕𝐥𝐤𝐲𝐫𝐞.chatID}.gif`;
+let ɢɪᴠᴇꜰɪʟᴇ = `./𝐕𝐥𝐤𝐲𝐫𝐞🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${𝐕𝐥𝐤𝐲𝐫𝐞.chatID}.mp4`;
 if (!ᴀɴɪᴍᴇʟɪɴᴋ.endsWith(".gif") && !ᴀɴɪᴍᴇʟɪɴᴋ.endsWith(".mp4")) {
 ꜰɪɴᴀʟʟɪɴᴋ = await ᴀɴɪᴍᴇ2.kiss();
 } else {
@@ -213,9 +213,9 @@ return await CreateFile(ꜰɪɴᴀʟʟɪɴᴋ, ɢᴏᴛꜰɪʟᴇ, ɢɪᴠᴇꜰ
 } else if (ɮօɖʏ.includes("muah")) {
 let ꜰɪɴᴀʟʟɪɴᴋ;
 let ᴀɴɪᴍᴇʟɪɴᴋ = await ᴀɴɪᴍᴇ.kiss();
-let Present = `${Date.now()}${Ѷ𝖑𝐤𝐲𝖗𝖊.chatID}`;
-let ɢᴏᴛꜰɪʟᴇ = `./Ѷ𝖑𝐤𝐲𝖗𝖊🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${Ѷ𝖑𝐤𝐲𝖗𝖊.chatID}.gif`;
-let ɢɪᴠᴇꜰɪʟᴇ = `./Ѷ𝖑𝐤𝐲𝖗𝖊🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${Ѷ𝖑𝐤𝐲𝖗𝖊.chatID}.mp4`;
+let Present = `${Date.now()}${𝐕𝐥𝐤𝐲𝐫𝐞.chatID}`;
+let ɢᴏᴛꜰɪʟᴇ = `./𝐕𝐥𝐤𝐲𝐫𝐞🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${𝐕𝐥𝐤𝐲𝐫𝐞.chatID}.gif`;
+let ɢɪᴠᴇꜰɪʟᴇ = `./𝐕𝐥𝐤𝐲𝐫𝐞🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${𝐕𝐥𝐤𝐲𝐫𝐞.chatID}.mp4`;
 if (!ᴀɴɪᴍᴇʟɪɴᴋ.endsWith(".gif") && !ᴀɴɪᴍᴇʟɪɴᴋ.endsWith(".mp4")) {
 ꜰɪɴᴀʟʟɪɴᴋ = await ᴀɴɪᴍᴇ2.kiss();
 } else {
@@ -227,9 +227,9 @@ return await CreateFile(ꜰɪɴᴀʟʟɪɴᴋ, ɢᴏᴛꜰɪʟᴇ, ɢɪᴠᴇꜰ
 } else if (ɮօɖʏ.includes("pat")) {
 let ꜰɪɴᴀʟʟɪɴᴋ;
 let ᴀɴɪᴍᴇʟɪɴᴋ = await ᴀɴɪᴍᴇ.pat();
-let Present = `${Date.now()}${Ѷ𝖑𝐤𝐲𝖗𝖊.chatID}`;
-let ɢᴏᴛꜰɪʟᴇ = `./Ѷ𝖑𝐤𝐲𝖗𝖊🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${Ѷ𝖑𝐤𝐲𝖗𝖊.chatID}.gif`;
-let ɢɪᴠᴇꜰɪʟᴇ = `./Ѷ𝖑𝐤𝐲𝖗𝖊🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${Ѷ𝖑𝐤𝐲𝖗𝖊.chatID}.mp4`;
+let Present = `${Date.now()}${𝐕𝐥𝐤𝐲𝐫𝐞.chatID}`;
+let ɢᴏᴛꜰɪʟᴇ = `./𝐕𝐥𝐤𝐲𝐫𝐞🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${𝐕𝐥𝐤𝐲𝐫𝐞.chatID}.gif`;
+let ɢɪᴠᴇꜰɪʟᴇ = `./𝐕𝐥𝐤𝐲𝐫𝐞🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${𝐕𝐥𝐤𝐲𝐫𝐞.chatID}.mp4`;
 if (!ᴀɴɪᴍᴇʟɪɴᴋ.endsWith(".gif") && !ᴀɴɪᴍᴇʟɪɴᴋ.endsWith(".mp4")) {
 ꜰɪɴᴀʟʟɪɴᴋ = await ᴀɴɪᴍᴇ2.pat();
 } else {
@@ -241,9 +241,9 @@ return await CreateFile(ꜰɪɴᴀʟʟɪɴᴋ, ɢᴏᴛꜰɪʟᴇ, ɢɪᴠᴇꜰ
 } else if (ɮօɖʏ.includes("poke")) {
 let ꜰɪɴᴀʟʟɪɴᴋ;
 let ᴀɴɪᴍᴇʟɪɴᴋ = await ᴀɴɪᴍᴇ.poke();
-let Present = `${Date.now()}${Ѷ𝖑𝐤𝐲𝖗𝖊.chatID}`;
-let ɢᴏᴛꜰɪʟᴇ = `./Ѷ𝖑𝐤𝐲𝖗𝖊🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${Ѷ𝖑𝐤𝐲𝖗𝖊.chatID}.gif`;
-let ɢɪᴠᴇꜰɪʟᴇ = `./Ѷ𝖑𝐤𝐲𝖗𝖊🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${Ѷ𝖑𝐤𝐲𝖗𝖊.chatID}.mp4`;
+let Present = `${Date.now()}${𝐕𝐥𝐤𝐲𝐫𝐞.chatID}`;
+let ɢᴏᴛꜰɪʟᴇ = `./𝐕𝐥𝐤𝐲𝐫𝐞🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${𝐕𝐥𝐤𝐲𝐫𝐞.chatID}.gif`;
+let ɢɪᴠᴇꜰɪʟᴇ = `./𝐕𝐥𝐤𝐲𝐫𝐞🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${𝐕𝐥𝐤𝐲𝐫𝐞.chatID}.mp4`;
 if (!ᴀɴɪᴍᴇʟɪɴᴋ.endsWith(".gif") && !ᴀɴɪᴍᴇʟɪɴᴋ.endsWith(".mp4")) {
 ꜰɪɴᴀʟʟɪɴᴋ = await ᴀɴɪᴍᴇ2.poke();
 } else {
@@ -255,9 +255,9 @@ return await CreateFile(ꜰɪɴᴀʟʟɪɴᴋ, ɢᴏᴛꜰɪʟᴇ, ɢɪᴠᴇꜰ
 } else if (ɮօɖʏ.includes("sad")) {
 let ꜰɪɴᴀʟʟɪɴᴋ;
 let ᴀɴɪᴍᴇʟɪɴᴋ = await ᴀɴɪᴍᴇ.sad();
-let Present = `${Date.now()}${Ѷ𝖑𝐤𝐲𝖗𝖊.chatID}`;
-let ɢᴏᴛꜰɪʟᴇ = `./Ѷ𝖑𝐤𝐲𝖗𝖊🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${Ѷ𝖑𝐤𝐲𝖗𝖊.chatID}.gif`;
-let ɢɪᴠᴇꜰɪʟᴇ = `./Ѷ𝖑𝐤𝐲𝖗𝖊🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${Ѷ𝖑𝐤𝐲𝖗𝖊.chatID}.mp4`;
+let Present = `${Date.now()}${𝐕𝐥𝐤𝐲𝐫𝐞.chatID}`;
+let ɢᴏᴛꜰɪʟᴇ = `./𝐕𝐥𝐤𝐲𝐫𝐞🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${𝐕𝐥𝐤𝐲𝐫𝐞.chatID}.gif`;
+let ɢɪᴠᴇꜰɪʟᴇ = `./𝐕𝐥𝐤𝐲𝐫𝐞🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${𝐕𝐥𝐤𝐲𝐫𝐞.chatID}.mp4`;
 if (!ᴀɴɪᴍᴇʟɪɴᴋ.endsWith(".gif") && !ᴀɴɪᴍᴇʟɪɴᴋ.endsWith(".mp4")) {
 ꜰɪɴᴀʟʟɪɴᴋ = await ᴀɴɪᴍᴇ2.sad();
 } else {
@@ -269,9 +269,9 @@ return await CreateFile(ꜰɪɴᴀʟʟɪɴᴋ, ɢᴏᴛꜰɪʟᴇ, ɢɪᴠᴇꜰ
 } else if (ɮօɖʏ.includes("slap")) {
 let ꜰɪɴᴀʟʟɪɴᴋ;
 let ᴀɴɪᴍᴇʟɪɴᴋ = await ᴀɴɪᴍᴇ.slap();
-let Present = `${Date.now()}${Ѷ𝖑𝐤𝐲𝖗𝖊.chatID}`;
-let ɢᴏᴛꜰɪʟᴇ = `./Ѷ𝖑𝐤𝐲𝖗𝖊🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${Ѷ𝖑𝐤𝐲𝖗𝖊.chatID}.gif`;
-let ɢɪᴠᴇꜰɪʟᴇ = `./Ѷ𝖑𝐤𝐲𝖗𝖊🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${Ѷ𝖑𝐤𝐲𝖗𝖊.chatID}.mp4`;
+let Present = `${Date.now()}${𝐕𝐥𝐤𝐲𝐫𝐞.chatID}`;
+let ɢᴏᴛꜰɪʟᴇ = `./𝐕𝐥𝐤𝐲𝐫𝐞🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${𝐕𝐥𝐤𝐲𝐫𝐞.chatID}.gif`;
+let ɢɪᴠᴇꜰɪʟᴇ = `./𝐕𝐥𝐤𝐲𝐫𝐞🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${𝐕𝐥𝐤𝐲𝐫𝐞.chatID}.mp4`;
 if (!ᴀɴɪᴍᴇʟɪɴᴋ.endsWith(".gif") && !ᴀɴɪᴍᴇʟɪɴᴋ.endsWith(".mp4")) {
 ꜰɪɴᴀʟʟɪɴᴋ = await ᴀɴɪᴍᴇ2.slap();
 } else {
@@ -283,9 +283,9 @@ return await CreateFile(ꜰɪɴᴀʟʟɪɴᴋ, ɢᴏᴛꜰɪʟᴇ, ɢɪᴠᴇꜰ
 } else if (ɮօɖʏ.includes("smile")) {
 let ꜰɪɴᴀʟʟɪɴᴋ;
 let ᴀɴɪᴍᴇʟɪɴᴋ = await ᴀɴɪᴍᴇ.smile();
-let Present = `${Date.now()}${Ѷ𝖑𝐤𝐲𝖗𝖊.chatID}`;
-let ɢᴏᴛꜰɪʟᴇ = `./Ѷ𝖑𝐤𝐲𝖗𝖊🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${Ѷ𝖑𝐤𝐲𝖗𝖊.chatID}.gif`;
-let ɢɪᴠᴇꜰɪʟᴇ = `./Ѷ𝖑𝐤𝐲𝖗𝖊🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${Ѷ𝖑𝐤𝐲𝖗𝖊.chatID}.mp4`;
+let Present = `${Date.now()}${𝐕𝐥𝐤𝐲𝐫𝐞.chatID}`;
+let ɢᴏᴛꜰɪʟᴇ = `./𝐕𝐥𝐤𝐲𝐫𝐞🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${𝐕𝐥𝐤𝐲𝐫𝐞.chatID}.gif`;
+let ɢɪᴠᴇꜰɪʟᴇ = `./𝐕𝐥𝐤𝐲𝐫𝐞🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${𝐕𝐥𝐤𝐲𝐫𝐞.chatID}.mp4`;
 if (!ᴀɴɪᴍᴇʟɪɴᴋ.endsWith(".gif") && !ᴀɴɪᴍᴇʟɪɴᴋ.endsWith(".mp4")) {
 ꜰɪɴᴀʟʟɪɴᴋ = await ᴀɴɪᴍᴇ2.smile();
 } else {
@@ -297,9 +297,9 @@ return await CreateFile(ꜰɪɴᴀʟʟɪɴᴋ, ɢᴏᴛꜰɪʟᴇ, ɢɪᴠᴇꜰ
 } else if (ɮօɖʏ.includes("wave")) {
 let ꜰɪɴᴀʟʟɪɴᴋ;
 let ᴀɴɪᴍᴇʟɪɴᴋ = await ᴀɴɪᴍᴇ.wave();
-let Present = `${Date.now()}${Ѷ𝖑𝐤𝐲𝖗𝖊.chatID}`;
-let ɢᴏᴛꜰɪʟᴇ = `./Ѷ𝖑𝐤𝐲𝖗𝖊🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${Ѷ𝖑𝐤𝐲𝖗𝖊.chatID}.gif`;
-let ɢɪᴠᴇꜰɪʟᴇ = `./Ѷ𝖑𝐤𝐲𝖗𝖊🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${Ѷ𝖑𝐤𝐲𝖗𝖊.chatID}.mp4`;
+let Present = `${Date.now()}${𝐕𝐥𝐤𝐲𝐫𝐞.chatID}`;
+let ɢᴏᴛꜰɪʟᴇ = `./𝐕𝐥𝐤𝐲𝐫𝐞🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${𝐕𝐥𝐤𝐲𝐫𝐞.chatID}.gif`;
+let ɢɪᴠᴇꜰɪʟᴇ = `./𝐕𝐥𝐤𝐲𝐫𝐞🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${𝐕𝐥𝐤𝐲𝐫𝐞.chatID}.mp4`;
 if (!ᴀɴɪᴍᴇʟɪɴᴋ.endsWith(".gif") && !ᴀɴɪᴍᴇʟɪɴᴋ.endsWith(".mp4")) {
 ꜰɪɴᴀʟʟɪɴᴋ = await ᴀɴɪᴍᴇ2.wave();
 } else {
@@ -311,9 +311,9 @@ return await CreateFile(ꜰɪɴᴀʟʟɪɴᴋ, ɢᴏᴛꜰɪʟᴇ, ɢɪᴠᴇꜰ
 } else if (ɮօɖʏ.includes("hi")) {
 let ꜰɪɴᴀʟʟɪɴᴋ;
 let ᴀɴɪᴍᴇʟɪɴᴋ = await ᴀɴɪᴍᴇ.wave();
-let Present = `${Date.now()}${Ѷ𝖑𝐤𝐲𝖗𝖊.chatID}`;
-let ɢᴏᴛꜰɪʟᴇ = `./Ѷ𝖑𝐤𝐲𝖗𝖊🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${Ѷ𝖑𝐤𝐲𝖗𝖊.chatID}.gif`;
-let ɢɪᴠᴇꜰɪʟᴇ = `./Ѷ𝖑𝐤𝐲𝖗𝖊🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${Ѷ𝖑𝐤𝐲𝖗𝖊.chatID}.mp4`;
+let Present = `${Date.now()}${𝐕𝐥𝐤𝐲𝐫𝐞.chatID}`;
+let ɢᴏᴛꜰɪʟᴇ = `./𝐕𝐥𝐤𝐲𝐫𝐞🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${𝐕𝐥𝐤𝐲𝐫𝐞.chatID}.gif`;
+let ɢɪᴠᴇꜰɪʟᴇ = `./𝐕𝐥𝐤𝐲𝐫𝐞🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${𝐕𝐥𝐤𝐲𝐫𝐞.chatID}.mp4`;
 if (!ᴀɴɪᴍᴇʟɪɴᴋ.endsWith(".gif") && !ᴀɴɪᴍᴇʟɪɴᴋ.endsWith(".mp4")) {
 ꜰɪɴᴀʟʟɪɴᴋ = await ᴀɴɪᴍᴇ2.wave();
 } else {
@@ -325,9 +325,9 @@ return await CreateFile(ꜰɪɴᴀʟʟɪɴᴋ, ɢᴏᴛꜰɪʟᴇ, ɢɪᴠᴇꜰ
 } else if (ɮօɖʏ.includes("wink")) {
 let ꜰɪɴᴀʟʟɪɴᴋ;
 let ᴀɴɪᴍᴇʟɪɴᴋ = await ᴀɴɪᴍᴇ.wink();
-let Present = `${Date.now()}${Ѷ𝖑𝐤𝐲𝖗𝖊.chatID}`;
-let ɢᴏᴛꜰɪʟᴇ = `./Ѷ𝖑𝐤𝐲𝖗𝖊🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${Ѷ𝖑𝐤𝐲𝖗𝖊.chatID}.gif`;
-let ɢɪᴠᴇꜰɪʟᴇ = `./Ѷ𝖑𝐤𝐲𝖗𝖊🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${Ѷ𝖑𝐤𝐲𝖗𝖊.chatID}.mp4`;
+let Present = `${Date.now()}${𝐕𝐥𝐤𝐲𝐫𝐞.chatID}`;
+let ɢᴏᴛꜰɪʟᴇ = `./𝐕𝐥𝐤𝐲𝐫𝐞🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${𝐕𝐥𝐤𝐲𝐫𝐞.chatID}.gif`;
+let ɢɪᴠᴇꜰɪʟᴇ = `./𝐕𝐥𝐤𝐲𝐫𝐞🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${𝐕𝐥𝐤𝐲𝐫𝐞.chatID}.mp4`;
 if (!ᴀɴɪᴍᴇʟɪɴᴋ.endsWith(".gif") && !ᴀɴɪᴍᴇʟɪɴᴋ.endsWith(".mp4")) {
 ꜰɪɴᴀʟʟɪɴᴋ = await ᴀɴɪᴍᴇ2.wink();
 } else {
@@ -339,9 +339,9 @@ return await CreateFile(ꜰɪɴᴀʟʟɪɴᴋ, ɢᴏᴛꜰɪʟᴇ, ɢɪᴠᴇꜰ
 } else if (ɮօɖʏ.includes("yes")) {
 let ꜰɪɴᴀʟʟɪɴᴋ;
 let ᴀɴɪᴍᴇʟɪɴᴋ = await ᴀɴɪᴍᴇ.yes();
-let Present = `${Date.now()}${Ѷ𝖑𝐤𝐲𝖗𝖊.chatID}`;
-let ɢᴏᴛꜰɪʟᴇ = `./Ѷ𝖑𝐤𝐲𝖗𝖊🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${Ѷ𝖑𝐤𝐲𝖗𝖊.chatID}.gif`;
-let ɢɪᴠᴇꜰɪʟᴇ = `./Ѷ𝖑𝐤𝐲𝖗𝖊🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${Ѷ𝖑𝐤𝐲𝖗𝖊.chatID}.mp4`;
+let Present = `${Date.now()}${𝐕𝐥𝐤𝐲𝐫𝐞.chatID}`;
+let ɢᴏᴛꜰɪʟᴇ = `./𝐕𝐥𝐤𝐲𝐫𝐞🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${𝐕𝐥𝐤𝐲𝐫𝐞.chatID}.gif`;
+let ɢɪᴠᴇꜰɪʟᴇ = `./𝐕𝐥𝐤𝐲𝐫𝐞🐍Ş𝖎𝖕𝖍𝖔𝖓/${Date.now()}${𝐕𝐥𝐤𝐲𝐫𝐞.chatID}.mp4`;
 if (!ᴀɴɪᴍᴇʟɪɴᴋ.endsWith(".gif") && !ᴀɴɪᴍᴇʟɪɴᴋ.endsWith(".mp4")) {
 ꜰɪɴᴀʟʟɪɴᴋ = await ᴀɴɪᴍᴇ2.yes();
 } else {
