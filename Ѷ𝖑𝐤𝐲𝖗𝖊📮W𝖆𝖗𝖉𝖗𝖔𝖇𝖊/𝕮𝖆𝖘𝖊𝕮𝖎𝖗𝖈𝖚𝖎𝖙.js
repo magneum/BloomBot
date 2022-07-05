@@ -3459,7 +3459,7 @@ case "dev":
 case "devs":
 case "support":
 case "official":
-case "SUPPORT_🦚":
+case "SUPPORT🦚":
 await support(
 𝖍𝖆𝖜ӄ,
 Ѷ𝖑𝐤𝐲𝖗𝖊,
@@ -3485,7 +3485,7 @@ break;
 case "rule":
 case "rules":
 case "rules":
-case "BOT_RULES_⚡":
+case "BOT⚡RULES":
 await rules(
 𝖍𝖆𝖜ӄ,
 Ѷ𝖑𝐤𝐲𝖗𝖊,
@@ -3537,7 +3537,7 @@ break;
 case "h":
 case "how":
 case "help":
-case "HELP_🌍":
+case "HELP🦀":
 await help(
 𝖍𝖆𝖜ӄ,
 Ѷ𝖑𝐤𝐲𝖗𝖊,
@@ -3577,9 +3577,9 @@ caption: `❣️ *ɴᴀᴍᴇ:* ${Ѷ𝖑𝐤𝐲𝖗𝖊.pushName || "No_Name"}
 footer: "*⦓ ⒸѶ𝖑𝐤𝐲𝖗𝖊 ⦔*\nᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ",
 buttons: [
 {
-buttonId: prefix + "HELP_🌍",
+buttonId: prefix + "HELP🦀",
 buttonText: {
-displayText: prefix + "HELP_🌍",
+displayText: prefix + "HELP🦀",
 },
 type: 1,
 },
