@@ -7,7 +7,6 @@ require("../𝐕𝐥𝐤𝐲𝐫𝐞🖋️L𝖎𝖇𝖗𝖆𝖗ყ/𝕷𝖆ყO
 let { Bot_Not_Admin } = require("../Vlkyre🧭Compass/Bot_Not_Admin");
 let { Sender_Not_Admin } = require("../Vlkyre🧭Compass/Sender_Not_Admin");
 let { help } = require("../Vlkyre🌴Tree/📜ᴍᴇɴᴜ/help");
-let { menu } = require("../Vlkyre🌴Tree/📜ᴍᴇɴᴜ/menu");
 let { yta } = require("../Vlkyre🌴Tree/📥ᴅᴏᴡɴʟᴏᴀᴅᴇʀꜱ/yta");
 let { ytv } = require("../Vlkyre🌴Tree/📥ᴅᴏᴡɴʟᴏᴀᴅᴇʀꜱ/ytv");
 let { radio } = require("../Vlkyre🌴Tree/📥ᴅᴏᴡɴʟᴏᴀᴅᴇʀꜱ/radio");
@@ -2811,33 +2810,16 @@ await rules(
 𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 break;
-case "m":
-case "menu":
-case "allmenu":
-case "command":
-case "commands":
-case "MENU📜":
-await menu(
-𝖍𝖆𝖜ӄ,
-𝐕𝐥𝐤𝐲𝐫𝐞,
-𝐕𝐥𝐤𝐲𝐫𝐞.pushName,
-𝐕𝐥𝐤𝐲𝐫𝐞.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-𝐕𝐥𝐤𝐲𝐫𝐞.quoted,
-𝐕𝐥𝐤𝐲𝐫𝐞.isMedia,
-𝐕𝐥𝐤𝐲𝐫𝐞.isGroup,
-𝐕𝐥𝐤𝐲𝐫𝐞.isBotAdmin,
-𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
-𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
-𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body
-);
-await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
-break;
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
 case "h":
 case "how":
 case "help":
 case "HELP🦀":
+case "m":
+case "menu":
+case "allmenu":
+case "command":
+case "commands":
 await help(
 𝖍𝖆𝖜ӄ,
 𝐕𝐥𝐤𝐲𝐫𝐞,

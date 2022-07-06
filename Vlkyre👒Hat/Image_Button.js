@@ -86,13 +86,8 @@ ${𝕮𝖔𝖓𝖙𝖊𝖓𝖙}`,
 footer: "*⦓ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⦔*\n▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ ◁",
 buttons: [
 {
-buttonId: prefix + "help",
-buttonText: { displayText: prefix + "help" },
-type: 1,
-},
-{
-buttonId: prefix + "support",
-buttonText: { displayText: prefix + "support" },
+buttonId: prefix + "HELP🦀",
+buttonText: { displayText: prefix + "HELP🦀" },
 type: 1,
 },
 ],
@@ -123,13 +118,8 @@ ${𝕮𝖔𝖓𝖙𝖊𝖓𝖙}`,
 footer: "*⦓ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⦔*\n▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ ◁",
 buttons: [
 {
-buttonId: prefix + "help",
-buttonText: { displayText: prefix + "help" },
-type: 1,
-},
-{
-buttonId: prefix + "support",
-buttonText: { displayText: prefix + "support" },
+buttonId: prefix + "HELP🦀",
+buttonText: { displayText: prefix + "HELP🦀" },
 type: 1,
 },
 ],
