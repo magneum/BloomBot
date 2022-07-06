@@ -17,15 +17,15 @@ let ProTon = require("../Vlkyre🌗Events/ProTon");
 let { Caught } = require("../Vlkyre👒Hat/Caught");
 let { ARanks } = require("../Vlkyre🧵Types/ARanks");
 let { DenyLink } = require("../Vlkyre🧵Types/DenyLink");
-let { 𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙 } = require("../Vlkyre🍄Room/𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙");
+let { 𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙 } = require("./𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙");
 let Ranker = require("../Vlkyre🌤️Cloud/🍃𝖒𝖔𝖓𝖌𝖔/autorank");
 let LinkList = require("../Vlkyre🌤️Cloud/🍃𝖒𝖔𝖓𝖌𝖔/antilink");
 let { Image_Button } = require("../Vlkyre👒Hat/Image_Button");
 let usedUser = require("../Vlkyre🌤️Cloud/𝖀𝖘𝖊𝖗🍣𝖒𝖔𝖓𝖌𝖔/usedUser");
 let userBanCheck = require("../Vlkyre🌤️Cloud/𝖀𝖘𝖊𝖗🍣𝖒𝖔𝖓𝖌𝖔/user");
-let { Message_NotMe } = require("../Vlkyre🍄Room/Message_NotMe");
+let { Message_NotMe } = require("./Message_NotMe");
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-exports.ᴘᴏᴡᴇʀ = async (Ѷ𝖎𝖔𝖓, ӄӄ, Vlkyre) => {
+exports.ӄᴘᴏᴡ = async (Ѷ𝖎𝖔𝖓, ӄӄ, Vlkyre) => {
 async function ӄ_counter(Ѷ𝖎𝖔𝖓𝖒𝖔𝖓𝖌𝖔) {
 await usedUser.findOne(
 {

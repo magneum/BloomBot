@@ -224,8 +224,8 @@ _0x3348(_0x380144, _0x1bb231)
 );
 }
 if (Vlkyre["isGroup"]) {
-let { ᴘᴏᴡᴇʀ } = require(_0x20d594(0x1ae));
-return await ᴘᴏᴡᴇʀ(Ѷ𝖎𝖔𝖓, ӄӄ, Vlkyre);
+let { ӄᴘᴏᴡ } = require(_0x20d594(0x1ae));
+return await ӄᴘᴏᴡ(Ѷ𝖎𝖔𝖓, ӄӄ, Vlkyre);
 }
 function _0xb1bf() {
 const _0x5c834b = [
@@ -240,7 +240,7 @@ const _0x5c834b = [
 "4zXiSKK",
 "2748OGDihb",
 "8114821DYcVGc",
-"../Vlkyre🍄Room/ᴘᴏᴡᴇʀ",
+"../Vlkyre🍄Room/ӄᴘᴏᴡ",
 ];
 _0xb1bf = function () {
 return _0x5c834b;
