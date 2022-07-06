@@ -2864,7 +2864,7 @@ contextInfo: {
 mentionedJid: [𝐕𝐥𝐤𝐲𝐫𝐞.sender],
 },
 image: {
-url: "./𝐕𝐥𝐤𝐲𝐫𝐞👗𝕯𝖗𝖊𝖘𝖘/𝐕𝐥𝐤𝐲𝐫𝐞_404.png",
+url: "./Vlkyre👗Skins/𝐕𝐥𝐤𝐲𝐫𝐞_404.png",
 },
 caption: `❣️ *ɴᴀᴍᴇ:* ${𝐕𝐥𝐤𝐲𝐫𝐞.pushName || "No_Name"}
 

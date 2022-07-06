@@ -120,19 +120,19 @@ caption += `${jj}`;
 try {
 ppuser = await ӄ𝖗𝖞ӄ𝖓𝖟.profilePictureUrl(𝐕𝐥𝐤𝐲𝐫𝐞.sender, `image`);
 } catch {
-ppuser = `./𝐕𝐥𝐤𝐲𝐫𝐞👗𝕯𝖗𝖊𝖘𝖘/𝐕𝐥𝐤𝐲𝐫𝐞.png`;
+ppuser = `./Vlkyre👗Skins/𝐕𝐥𝐤𝐲𝐫𝐞.png`;
 }
 if (users == `none`) {
 try {
 ppuser2 = await ӄ𝖗𝖞ӄ𝖓𝖟.profilePictureUrl(𝐕𝐥𝐤𝐲𝐫𝐞.sender, `image`);
 } catch {
-ppuser = `./𝐕𝐥𝐤𝐲𝐫𝐞👗𝕯𝖗𝖊𝖘𝖘/𝐕𝐥𝐤𝐲𝐫𝐞.png`;
+ppuser = `./Vlkyre👗Skins/𝐕𝐥𝐤𝐲𝐫𝐞.png`;
 }
 } else {
 try {
 ppuser2 = await ӄ𝖗𝖞ӄ𝖓𝖟.profilePictureUrl(users, `image`);
 } catch {
-ppuser = `./𝐕𝐥𝐤𝐲𝐫𝐞👗𝕯𝖗𝖊𝖘𝖘/𝐕𝐥𝐤𝐲𝐫𝐞.png`;
+ppuser = `./Vlkyre👗Skins/𝐕𝐥𝐤𝐲𝐫𝐞.png`;
 }
 }
 let options = [

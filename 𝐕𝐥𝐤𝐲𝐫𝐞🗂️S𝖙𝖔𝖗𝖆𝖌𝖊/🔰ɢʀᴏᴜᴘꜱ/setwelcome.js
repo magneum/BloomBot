@@ -89,7 +89,7 @@ return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 𝐕𝐥𝐤𝐲𝐫𝐞,
 𝐕𝐥𝐤𝐲𝐫𝐞.A𝖗𝖌𝖘,
-"./𝐕𝐥𝐤𝐲𝐫𝐞👗𝕯𝖗𝖊𝖘𝖘/𝐕𝐥𝐤𝐲𝐫𝐞_FIsh.png",
+"./Vlkyre👗Skins/𝐕𝐥𝐤𝐲𝐫𝐞_FIsh.png",
 `❌𝗘𝗿𝗿𝗼𝗿: Welcome message was not found in database.First set some message.
 
 *⚡USAGE:* ${prefix}${Final_Name} _message_
@@ -103,7 +103,7 @@ return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 𝐕𝐥𝐤𝐲𝐫𝐞,
 𝐕𝐥𝐤𝐲𝐫𝐞.A𝖗𝖌𝖘,
-"./𝐕𝐥𝐤𝐲𝐫𝐞👗𝕯𝖗𝖊𝖘𝖘/𝐕𝐥𝐤𝐲𝐫𝐞_FIsh.png",
+"./Vlkyre👗Skins/𝐕𝐥𝐤𝐲𝐫𝐞_FIsh.png",
 `🍰𝗦𝘁𝗮𝘁𝘂𝘀: _Deleted_`
 );
 }
@@ -121,7 +121,7 @@ return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 𝐕𝐥𝐤𝐲𝐫𝐞,
 𝐕𝐥𝐤𝐲𝐫𝐞.A𝖗𝖌𝖘,
-"./𝐕𝐥𝐤𝐲𝐫𝐞👗𝕯𝖗𝖊𝖘𝖘/𝐕𝐥𝐤𝐲𝐫𝐞_FIsh.png",
+"./Vlkyre👗Skins/𝐕𝐥𝐤𝐲𝐫𝐞_FIsh.png",
 `🍰 𝗦𝘁𝗮𝘁𝘂𝘀: _Welcome Note Newly Added!_
 ${F𝖚𝖑𝖑_A𝖗𝖌𝖘}`
 );
@@ -133,7 +133,7 @@ return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 𝐕𝐥𝐤𝐲𝐫𝐞,
 𝐕𝐥𝐤𝐲𝐫𝐞.A𝖗𝖌𝖘,
-"./𝐕𝐥𝐤𝐲𝐫𝐞👗𝕯𝖗𝖊𝖘𝖘/𝐕𝐥𝐤𝐲𝐫𝐞_FIsh.png",
+"./Vlkyre👗Skins/𝐕𝐥𝐤𝐲𝐫𝐞_FIsh.png",
 `🍰 𝗦𝘁𝗮𝘁𝘂𝘀: _Welcome Note Updated!_
 ${F𝖚𝖑𝖑_A𝖗𝖌𝖘}`
 );

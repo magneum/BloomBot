@@ -24,7 +24,7 @@ return await Image_Button(
 𝖍𝖆𝖜ӄ,
 𝐕𝐥𝐤𝐲𝐫𝐞,
 𝐕𝐥𝐤𝐲𝐫𝐞.A𝖗𝖌𝖘,
-"./𝐕𝐥𝐤𝐲𝐫𝐞👗𝕯𝖗𝖊𝖘𝖘/𝐕𝐥𝐤𝐲𝐫𝐞_Red.png",
+"./Vlkyre👗Skins/𝐕𝐥𝐤𝐲𝐫𝐞_Red.png",
 `✋🏽‍𝐖𝐚𝐢𝐭 𝐅𝐨𝐫 𝐌𝐲 𝐎𝐰𝐧𝐞𝐫 𝐓𝐨 𝐑𝐞𝐬𝐩𝐨𝐧𝐝!
 • Dear Random User, This Private Is Being Guarded By Vlkyre AI!
 • Do Not Spam The Chat Box!
@@ -40,7 +40,7 @@ return await Image_Button(
 𝖍𝖆𝖜ӄ,
 𝐕𝐥𝐤𝐲𝐫𝐞,
 𝐕𝐥𝐤𝐲𝐫𝐞.A𝖗𝖌𝖘,
-"./𝐕𝐥𝐤𝐲𝐫𝐞👗𝕯𝖗𝖊𝖘𝖘/𝐕𝐥𝐤𝐲𝐫𝐞_Red.png",
+"./Vlkyre👗Skins/𝐕𝐥𝐤𝐲𝐫𝐞_Red.png",
 `✋🏽‍𝐖𝐚𝐢𝐭 𝐅𝐨𝐫 𝐌𝐲 𝐎𝐰𝐧𝐞𝐫 𝐓𝐨 𝐑𝐞𝐬𝐩𝐨𝐧𝐝!
 • Dear Random User, This Private Is Being Guarded By Vlkyre AI!
 • Do Not Spam The Chat Box!

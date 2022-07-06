@@ -82,7 +82,7 @@ return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 𝐕𝐥𝐤𝐲𝐫𝐞,
 𝐕𝐥𝐤𝐲𝐫𝐞.A𝖗𝖌𝖘,
-"./𝐕𝐥𝐤𝐲𝐫𝐞👗𝕯𝖗𝖊𝖘𝖘/𝐕𝐥𝐤𝐲𝐫𝐞_Matte.png",
+"./Vlkyre👗Skins/𝐕𝐥𝐤𝐲𝐫𝐞_Matte.png",
 `*❌𝗘𝗿𝗿𝗼𝗿:* That Person Was Not Banned!`
 );
 } else {
@@ -91,7 +91,7 @@ return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 𝐕𝐥𝐤𝐲𝐫𝐞,
 𝐕𝐥𝐤𝐲𝐫𝐞.A𝖗𝖌𝖘,
-"./𝐕𝐥𝐤𝐲𝐫𝐞👗𝕯𝖗𝖊𝖘𝖘/𝐕𝐥𝐤𝐲𝐫𝐞_Matte.png",
+"./Vlkyre👗Skins/𝐕𝐥𝐤𝐲𝐫𝐞_Matte.png",
 `*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* That Person Has Been Un-Banned!`
 );
 }
@@ -110,7 +110,7 @@ return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 𝐕𝐥𝐤𝐲𝐫𝐞,
 𝐕𝐥𝐤𝐲𝐫𝐞.A𝖗𝖌𝖘,
-"./𝐕𝐥𝐤𝐲𝐫𝐞👗𝕯𝖗𝖊𝖘𝖘/𝐕𝐥𝐤𝐲𝐫𝐞_Matte.png",
+"./Vlkyre👗Skins/𝐕𝐥𝐤𝐲𝐫𝐞_Matte.png",
 `*❌𝗘𝗿𝗿𝗼𝗿:* ${𝐕𝐥𝐤𝐲𝐫𝐞.groupMetadata.subject} Was Not Banned!`
 );
 } else {
@@ -119,7 +119,7 @@ return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 𝐕𝐥𝐤𝐲𝐫𝐞,
 𝐕𝐥𝐤𝐲𝐫𝐞.A𝖗𝖌𝖘,
-"./𝐕𝐥𝐤𝐲𝐫𝐞👗𝕯𝖗𝖊𝖘𝖘/𝐕𝐥𝐤𝐲𝐫𝐞_Matte.png",
+"./Vlkyre👗Skins/𝐕𝐥𝐤𝐲𝐫𝐞_Matte.png",
 `*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* ${𝐕𝐥𝐤𝐲𝐫𝐞.groupMetadata.subject} Has Been Un-Banned!`
 );
 }
