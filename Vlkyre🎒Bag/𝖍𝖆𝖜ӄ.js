@@ -3,8 +3,8 @@
 //▷                                              (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!                                           ◁
 
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
-require(`../𝐕𝐥𝐤𝐲𝐫𝐞🖋️L𝖎𝖇𝖗𝖆𝖗ყ/𝕷𝖆ყO𝖚𝖙`);
-require(`../𝐕𝐥𝐤𝐲𝐫𝐞🖋️L𝖎𝖇𝖗𝖆𝖗ყ/Ѷ𝖆𝖑.js`);
+require(`../Vlkyre🖋️Utilities/𝕷𝖆ყO𝖚𝖙`);
+require(`../Vlkyre🖋️Utilities/Ѷ𝖆𝖑.js`);
 if (process.env.Devalkyrie == "true") {
 console.log("V__Default");
 let {
@@ -25,13 +25,13 @@ let chalk = require(`chalk`);
 let goose = require(`mongoose`);
 let FileType = require(`file-type`);
 let PhoneNumber = require(`awesome-phonenumber`);
-let { smsg, getBuffer, getSizeMedia } = require(`../𝐕𝐥𝐤𝐲𝐫𝐞🖋️L𝖎𝖇𝖗𝖆𝖗ყ/ɴᴇᴄᴛᴏʀ`);
+let { smsg, getBuffer, getSizeMedia } = require(`../Vlkyre🖋️Utilities/ɴᴇᴄᴛᴏʀ`);
 let {
 imageToWebp,
 videoToWebp,
 writeExifImg,
 writeExifVid,
-} = require(`../𝐕𝐥𝐤𝐲𝐫𝐞🖋️L𝖎𝖇𝖗𝖆𝖗ყ/exif`);
+} = require(`../Vlkyre🖋️Utilities/exif`);
 let sequelize = DATABASE;
 let Ѷ𝖎𝖔𝖓 = makeInMemoryStore({
 logger: pino().child({ level: "error", stream: "Ѷ𝖎𝖔𝖓" }),
@@ -395,7 +395,7 @@ mimetype = mime,
 pathFile = filename;
 if (options.asDocument) type = `document`;
 if (options.asSticker || /webp/.test(mime)) {
-let { writeExif } = require(`../𝐕𝐥𝐤𝐲𝐫𝐞🖋️L𝖎𝖇𝖗𝖆𝖗ყ/exif`);
+let { writeExif } = require(`../Vlkyre🖋️Utilities/exif`);
 let media = { mimetype: mime, data };
 pathFile = await writeExif(media, {
 packname: options.packname ? options.packname : global.packname,
@@ -597,13 +597,13 @@ let chalk = require(`chalk`);
 let goose = require("mongoose");
 let FileType = require(`file-type`);
 let PhoneNumber = require(`awesome-phonenumber`);
-let { smsg, getBuffer, getSizeMedia } = require(`../𝐕𝐥𝐤𝐲𝐫𝐞🖋️L𝖎𝖇𝖗𝖆𝖗ყ/ɴᴇᴄᴛᴏʀ`);
+let { smsg, getBuffer, getSizeMedia } = require(`../Vlkyre🖋️Utilities/ɴᴇᴄᴛᴏʀ`);
 let {
 imageToWebp,
 videoToWebp,
 writeExifImg,
 writeExifVid,
-} = require(`../𝐕𝐥𝐤𝐲𝐫𝐞🖋️L𝖎𝖇𝖗𝖆𝖗ყ/exif`);
+} = require(`../Vlkyre🖋️Utilities/exif`);
 let sequelize = DATABASE;
 let Ѷ𝖎𝖔𝖓 = makeInMemoryStore({
 logger: pino().child({ level: `silent`, stream: `Ѷ𝖎𝖔𝖓` }),
@@ -962,7 +962,7 @@ mimetype = mime,
 pathFile = filename;
 if (options.asDocument) type = `document`;
 if (options.asSticker || /webp/.test(mime)) {
-let { writeExif } = require(`../𝐕𝐥𝐤𝐲𝐫𝐞🖋️L𝖎𝖇𝖗𝖆𝖗ყ/exif`);
+let { writeExif } = require(`../Vlkyre🖋️Utilities/exif`);
 let media = { mimetype: mime, data };
 pathFile = await writeExif(media, {
 packname: options.packname ? options.packname : global.packname,

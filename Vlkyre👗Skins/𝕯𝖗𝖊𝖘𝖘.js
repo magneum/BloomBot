@@ -109,7 +109,7 @@ const _0x1d0ac4 = [
 "get",
 ".gif",
 "45uzGTqh",
-"../𝐕𝐥𝐤𝐲𝐫𝐞🖋️L𝖎𝖇𝖗𝖆𝖗ყ/myfunc",
+"../Vlkyre🖋️Utilities/myfunc",
 "613437jfxWZI",
 "bite",
 "Download\x20Failed\x0a",
