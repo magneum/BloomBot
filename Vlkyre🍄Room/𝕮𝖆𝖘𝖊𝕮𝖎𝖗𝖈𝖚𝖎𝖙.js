@@ -40,6 +40,7 @@ let { sticker } = require("../Vlkyre🌴Tree/📼ᴄᴏɴᴠᴇʀᴛ/sticker");
 let { tinyurl } = require("../Vlkyre🌴Tree/📼ᴄᴏɴᴠᴇʀᴛ/tinyurl");
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 let { del } = require("../Vlkyre🌴Tree/🔰ɢʀᴏᴜᴘꜱ/del");
+let { warn } = require("../Vlkyre🌴Tree/🔰ɢʀᴏᴜᴘꜱ/warn");
 let { group } = require("../Vlkyre🌴Tree/🔰ɢʀᴏᴜᴘꜱ/group");
 let { remove } = require("../Vlkyre🌴Tree/🔰ɢʀᴏᴜᴘꜱ/remove");
 let { demote } = require("../Vlkyre🌴Tree/🔰ɢʀᴏᴜᴘꜱ/demote");
@@ -471,6 +472,26 @@ case "group":
 if (!Vlkyre.isBotAdmin) return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
 if (!Vlkyre.isSenderAdmin) return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
 await group(
+ӄӄ,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
+break;
+("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
+case "warn":
+if (!Vlkyre.isBotAdmin) return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+if (!Vlkyre.isSenderAdmin) return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+await warn(
 ӄӄ,
 Vlkyre,
 Vlkyre.pushName,
