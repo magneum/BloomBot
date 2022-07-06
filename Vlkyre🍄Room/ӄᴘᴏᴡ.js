@@ -109,11 +109,8 @@ ID: Vlkyre.chatID,
 },
 async (error, userGCheck) => {
 if (error) return console.log(error);
-if (userBCheck && !Vlkyre.fromMe && !Vlkyre.isSenderTUF) {
-return;
-} else if (userGCheck && !Vlkyre.fromMe && !Vlkyre.isSenderTUF) {
-return;
-} else {
+if (userBCheck && !Vlkyre.fromMe && !Vlkyre.isSenderTUF) return;
+if (userGCheck && !Vlkyre.fromMe && !Vlkyre.isSenderTUF) return;
 if (Vlkyre.isCommand) {
 let { ӄօʟօʀs } = require("../Vlkyre🌗Events/ӄօʟօʀs");
 await ӄօʟօʀs(ӄӄ, Vlkyre);
@@ -198,7 +195,6 @@ return await 𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙(Vlkyre, ӄӄ, ӄ_count
 }
 }
 );
-}
 }
 }
 }
