@@ -18,7 +18,7 @@ const _0x512219 = _0x2aa6;
 function _0x58e9() {
 const _0x4b207f = [
 "273iVEFsY",
-"../𝐕𝐥𝐤𝐲𝐫𝐞🌗E𝖛𝖊𝖓𝖙𝖘/ProTon",
+"../Vlkyre🌗Events/ProTon",
 "simple-git",
 "610hNHKHI",
 "243928xwpJZe",
@@ -32,7 +32,7 @@ const _0x4b207f = [
 "16826238TkievS",
 "301889lmmFmv",
 "../𝐕𝐥𝐤𝐲𝐫𝐞🧆𝕯𝖆𝖙𝖆𝖇𝖆𝖘𝖊/🍃𝖒𝖔𝖓𝖌𝖔/private",
-"../𝐕𝐥𝐤𝐲𝐫𝐞🌗E𝖛𝖊𝖓𝖙𝖘/BeutyFly",
+"../Vlkyre🌗Events/BeutyFly",
 "100aBoUcH",
 "./𝕷𝖆ყO𝖚𝖙",
 "10mmEqjy",

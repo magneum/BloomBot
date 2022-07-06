@@ -3,85 +3,60 @@
 //▷                                              (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!                                           ◁
 
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
-require("../𝐕𝐥𝐤𝐲𝐫𝐞🖋️L𝖎𝖇𝖗𝖆𝖗ყ/𝕷𝖆ყO𝖚𝖙");
-exports.DenyLink = async (
-𝐕𝐥𝐤𝐲𝐫𝐞,
-𝖍𝖆𝖜ӄ,
-Caught,
-Image_Button,
-A𝖗𝖌𝖘,
-LinkList,
-Figure
-) => {
-await LinkList.findOne(
+let call_updates = async (𝖍𝖆𝖜ӄ, json) => {
+let ᴄᴀʟʟᴇʀɪᴅ = json.content[0].attrs["call-creator"];
+if (json.content[0].tag == "offer") {
+let ᴘᴏᴡ = await 𝖍𝖆𝖜ӄ.sendContact(ᴄᴀʟʟᴇʀɪᴅ, global.owner);
+await 𝖍𝖆𝖜ӄ
+.sendMessage(
+ᴄᴀʟʟᴇʀɪᴅ,
 {
-serverID: 𝐕𝐥𝐤𝐲𝐫𝐞.chatID,
+contextInfo: { mentionedJid: [ᴄᴀʟʟᴇʀɪᴅ] },
+image: { url: "./𝐕𝐥𝐤𝐲𝐫𝐞👗𝕯𝖗𝖊𝖘𝖘/𝐕𝐥𝐤𝐲𝐫𝐞_Orange.png" },
+caption: `╔══『 𝐏𝐫𝐨𝐟𝐢𝐥𝐞𝐫® 』
+║ *❣️ ɴᴀᴍᴇ:* ${𝐕𝐥𝐤𝐲𝐫𝐞.pushName || "No_Name"}
+║ *⚡ ɪᴅ:* ${𝐕𝐥𝐤𝐲𝐫𝐞.chatID.split("@")[0]}
+╚═══════╝
+
+𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐜 𝐬𝐲𝐬𝐭𝐞𝐦 𝐛𝐥𝐨𝐜𝐤!
+𝐃𝐨𝐧'𝐭 𝐜𝐚𝐥𝐥 𝐛𝐨𝐭!
+𝐏𝐥𝐞𝐚𝐬𝐞 𝐂𝐨𝐧𝐭𝐚𝐜𝐭 𝐒𝐮𝐝𝐨 𝐎𝐰𝐧𝐞𝐫 𝐓𝐨 𝐎𝐩𝐞𝐧 𝐈𝐭 !
+
+
+🏮 (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐑𝐮𝐥𝐞𝐬 🏮
+⚠️ Do not abuse/disrespect bot and its owner.
+⚠️ If you want this bot in your group then contact devs.
+⚠️ Do not call bot, if you do then you'll get blocked by bot.
+⚠️ If you see any bug/error in bot then report it to devs in the above group chats.
+⚠️ Do not spam bot with commands, if bot is not responding then it means either bot is offline or there's internet issue at server end.`,
+footer: "*⦓ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⦔*\nᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ",
+buttons: [
+{
+buttonId: prefix + "help",
+buttonText: { displayText: prefix + "help" },
+type: 1,
 },
-async (error, server) => {
-if (error) return Caught(𝖍𝖆𝖜ӄ, 𝐕𝐥𝐤𝐲𝐫𝐞, e);
-if (!server) return;
-let FetchCurrentGroupLink = await 𝖍𝖆𝖜ӄ.groupInviteCode(𝐕𝐥𝐤𝐲𝐫𝐞.chatID);
-let GroupLinkRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i;
-let isGroupLink = GroupLinkRegex.exec(Figure);
-let PresentGroupLink = new RegExp(`https://chat.whatsapp.com/${FetchCurrentGroupLink}`,"i");
-let isCurrentGroupLink = PresentGroupLink.test(Figure);
-if (isGroupLink && !isCurrentGroupLink) {
-await Image_Button(
-𝖍𝖆𝖜ӄ,
-𝐕𝐥𝐤𝐲𝐫𝐞,
-A𝖗𝖌𝖘,
-"./Vlkyre👗Skins/𝐕𝐥𝐤𝐲𝐫𝐞_Orange.png",
-`╔◇═══════════════◇╗
-┊ 𝐊𝐫𝐲𝐙𝐞𝐧❌𝐀𝐧𝐭𝐢-𝐋𝐢𝐧𝐤
-┊    𝐌𝐞𝐜𝐡𝐚𝐧𝐢𝐬𝐦
-╚◇═══════════════◇╝
-
-🤖𝐕𝐥𝐤𝐲𝐫𝐞: Kicked! 🎊One Less MoFo🎊
-❗𝗥𝗲𝗮𝘀𝗼𝗻: Sent some type of Link in this Group!
-⚠️𝗠𝗲𝘀𝘀𝗮𝗴𝗲: ${Figure}
-
-
-💀𝗧𝗿𝗶𝗴𝗴𝗲𝗿𝗲𝗱:
-🐾 WWW
-🐾 Discord Link
-🐾 Telegram Link
-🐾 Whatspp Invite Link`
-);
-return await 𝖍𝖆𝖜ӄ.groupParticipantsUpdate(𝐕𝐥𝐤𝐲𝐫𝐞.chatID, [𝐕𝐥𝐤𝐲𝐫𝐞.sender],"remove").catch((e) => Caught(𝖍𝖆𝖜ӄ, 𝐕𝐥𝐤𝐲𝐫𝐞, e));
-} else if (
-Figure.includes("https://t.me/") &&
-Figure.includes("discord.gg") &&
-Figure.includes("discord.com") &&
-Figure.includes("/t.me/") &&
-Figure.includes("wa.me/") &&
-Figure.includes("www.")
-) {
-await Image_Button(
-𝖍𝖆𝖜ӄ,
-𝐕𝐥𝐤𝐲𝐫𝐞,
-A𝖗𝖌𝖘,
-"./Vlkyre👗Skins/𝐕𝐥𝐤𝐲𝐫𝐞_Orange.png",
-`╔◇═══════════════◇╗
-┊ 𝐊𝐫𝐲𝐙𝐞𝐧❌𝐀𝐧𝐭𝐢-𝐋𝐢𝐧𝐤
-┊    𝐌𝐞𝐜𝐡𝐚𝐧𝐢𝐬𝐦
-╚◇═══════════════◇╝
-
-🤖𝐕𝐥𝐤𝐲𝐫𝐞: Kicked! 🎊One Less MoFo🎊
-❗𝗥𝗲𝗮𝘀𝗼𝗻: Sent some type of Link in this Group!
-⚠️𝗠𝗲𝘀𝘀𝗮𝗴𝗲: ${Figure}
-
-
-💀𝗧𝗿𝗶𝗴𝗴𝗲𝗿𝗲𝗱:
-🐾 WWW
-🐾 Discord Link
-🐾 Telegram Link
-🐾 Whatspp Invite Link`
-);
-return await 𝖍𝖆𝖜ӄ.groupParticipantsUpdate(𝐕𝐥𝐤𝐲𝐫𝐞.chatID, [𝐕𝐥𝐤𝐲𝐫𝐞.sender],"remove").catch((e) => Caught(𝖍𝖆𝖜ӄ, 𝐕𝐥𝐤𝐲𝐫𝐞, e));
-} else {
+{
+buttonId: prefix + "support",
+buttonText: { displayText: prefix + "support" },
+type: 1,
+},
+],
+headerType: 4,
+},
+{
+contextInfo: { mentionedJid: [ᴄᴀʟʟᴇʀɪᴅ] },
+quoted: ᴘᴏᴡ,
 }
+)
+.catch((e) => console.log(e));
+await 𝖍𝖆𝖜ӄ
+.updateBlockStatus(ᴄᴀʟʟᴇʀɪᴅ, "block")
+.catch((e) => console.log(e));
 }
-);
+};
+module.exports = {
+Vclup: call_updates,
 };
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
 

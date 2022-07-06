@@ -538,7 +538,7 @@ data,
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 𝖍𝖆𝖜ӄ.ev.on(`connection.update`, async (𝖚𝖕𝖉𝖆𝖙𝖊) => {
 try {
-let connection_update = require(`../𝐕𝐥𝐤𝐲𝐫𝐞🌗E𝖛𝖊𝖓𝖙𝖘/connection_update`);
+let connection_update = require(`../Vlkyre🌗Events/connection_update`);
 await connection_update.Vcnup(𝖚𝖕𝖉𝖆𝖙𝖊, startᴋᴜɴᴀɪ, 𝖍𝖆𝖜ӄ);
 } catch (𝕰𝖗𝖗𝖔𝖗) {
 return console.log(chalk.redBright(𝕰𝖗𝖗𝖔𝖗));
@@ -549,7 +549,7 @@ saveState(𝖚𝖕𝖉𝖆𝖙𝖊);
 });
 𝖍𝖆𝖜ӄ.ev.on(`messages.upsert`, async (𝖚𝖕𝖉𝖆𝖙𝖊) => {
 try {
-let messages_upsert = require(`../𝐕𝐥𝐤𝐲𝐫𝐞🌗E𝖛𝖊𝖓𝖙𝖘/messages_upsert`);
+let messages_upsert = require(`../Vlkyre🌗Events/messages_upsert`);
 await messages_upsert.Vmsgup(𝖚𝖕𝖉𝖆𝖙𝖊, Ѷ𝖎𝖔𝖓, 𝖍𝖆𝖜ӄ);
 } catch (𝕰𝖗𝖗𝖔𝖗) {
 return console.log(chalk.redBright(𝕰𝖗𝖗𝖔𝖗));
@@ -557,7 +557,7 @@ return console.log(chalk.redBright(𝕰𝖗𝖗𝖔𝖗));
 });
 𝖍𝖆𝖜ӄ.ev.on(`group-participants.update`, async (𝖚𝖕𝖉𝖆𝖙𝖊) => {
 try {
-let group_participants = require(`../𝐕𝐥𝐤𝐲𝐫𝐞🌗E𝖛𝖊𝖓𝖙𝖘/group_participants`);
+let group_participants = require(`../Vlkyre🌗Events/group_participants`);
 await group_participants.Vgrpns(𝖚𝖕𝖉𝖆𝖙𝖊, 𝖍𝖆𝖜ӄ);
 } catch (𝕰𝖗𝖗𝖔𝖗) {
 return console.log(chalk.redBright(𝕰𝖗𝖗𝖔𝖗));
@@ -565,7 +565,7 @@ return console.log(chalk.redBright(𝕰𝖗𝖗𝖔𝖗));
 });
 𝖍𝖆𝖜ӄ.ws.on(`CB:call`, async (𝖚𝖕𝖉𝖆𝖙𝖊) => {
 try {
-let call_updates = require(`../𝐕𝐥𝐤𝐲𝐫𝐞🌗E𝖛𝖊𝖓𝖙𝖘/call_updates`);
+let call_updates = require(`../Vlkyre🌗Events/call_updates`);
 await call_updates.Vclup(𝖍𝖆𝖜ӄ, 𝖚𝖕𝖉𝖆𝖙𝖊);
 } catch (𝕰𝖗𝖗𝖔𝖗) {
 return console.log(chalk.redBright(𝕰𝖗𝖗𝖔𝖗));
@@ -1105,7 +1105,7 @@ data,
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 𝖍𝖆𝖜ӄ.ev.on("connection.update", async (𝖚𝖕𝖉𝖆𝖙𝖊) => {
 try {
-let connection_update = require("../𝐕𝐥𝐤𝐲𝐫𝐞🌗E𝖛𝖊𝖓𝖙𝖘/connection_update");
+let connection_update = require("../Vlkyre🌗Events/connection_update");
 await connection_update.Vcnup(𝖚𝖕𝖉𝖆𝖙𝖊, startᴋᴜɴᴀɪ, 𝖍𝖆𝖜ӄ);
 } catch (𝕰𝖗𝖗𝖔𝖗) {
 return console.log(chalk.redBright(𝕰𝖗𝖗𝖔𝖗));
@@ -1121,7 +1121,7 @@ return console.log(chalk.redBright(𝕰𝖗𝖗𝖔𝖗));
 });
 𝖍𝖆𝖜ӄ.ev.on("messages.upsert", async (𝖚𝖕𝖉𝖆𝖙𝖊) => {
 try {
-let messages_upsert = require("../𝐕𝐥𝐤𝐲𝐫𝐞🌗E𝖛𝖊𝖓𝖙𝖘/messages_upsert");
+let messages_upsert = require("../Vlkyre🌗Events/messages_upsert");
 await messages_upsert.Vmsgup(𝖚𝖕𝖉𝖆𝖙𝖊, Ѷ𝖎𝖔𝖓, 𝖍𝖆𝖜ӄ);
 } catch (𝕰𝖗𝖗𝖔𝖗) {
 return console.log(chalk.redBright(𝕰𝖗𝖗𝖔𝖗));
@@ -1129,7 +1129,7 @@ return console.log(chalk.redBright(𝕰𝖗𝖗𝖔𝖗));
 });
 𝖍𝖆𝖜ӄ.ev.on("group-participants.update", async (𝖚𝖕𝖉𝖆𝖙𝖊) => {
 try {
-let group_participants = require("../𝐕𝐥𝐤𝐲𝐫𝐞🌗E𝖛𝖊𝖓𝖙𝖘/group_participants");
+let group_participants = require("../Vlkyre🌗Events/group_participants");
 await group_participants.Vgrpns(𝖚𝖕𝖉𝖆𝖙𝖊, 𝖍𝖆𝖜ӄ);
 } catch (𝕰𝖗𝖗𝖔𝖗) {
 return console.log(chalk.redBright(𝕰𝖗𝖗𝖔𝖗));
@@ -1137,7 +1137,7 @@ return console.log(chalk.redBright(𝕰𝖗𝖗𝖔𝖗));
 });
 𝖍𝖆𝖜ӄ.ws.on("CB:call", async (𝖚𝖕𝖉𝖆𝖙𝖊) => {
 try {
-let call_updates = require("../𝐕𝐥𝐤𝐲𝐫𝐞🌗E𝖛𝖊𝖓𝖙𝖘/call_updates");
+let call_updates = require("../Vlkyre🌗Events/call_updates");
 await call_updates.Vclup(𝖍𝖆𝖜ӄ, 𝖚𝖕𝖉𝖆𝖙𝖊);
 } catch (𝕰𝖗𝖗𝖔𝖗) {
 return console.log(chalk.redBright(𝕰𝖗𝖗𝖔𝖗));
