@@ -39,8 +39,20 @@ return await Image_Button(
 ӄӄ,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
-"./Vlkyre👗Skins/Vlkyre_DB.png",
-"🧈Added To DB for Current command First Time!"
+"./Vlkyre👗Skins/Vlkyre_15AKv5i_omy24uvWcz64NpA.png",
+`🧈Added To DB for Current command First Time!
+⚔️𝗕𝗮𝗱𝗴𝗲: 🧵Basic 
+🧀𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬: 10 Commands
+
+
+╔══『 🍯𝐁𝐚𝐝𝐠𝐞𝐬🍯  』
+║🧵 Basic 10 Commands
+║🥉 Bronze 20 Commands
+║🥈 Silver 40 Commands
+║🥇 Gold 60 Commands
+║💍 Platinum 80 Commands
+║💎 Diamond 100 Commands
+╚═══════╝`
 );
 } 
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
@@ -98,6 +110,16 @@ Vlkyre.A𝖗𝖌𝖘,
 ║⚔️𝗕𝗮𝗱𝗴𝗲: ${userBg.Badge}
 ║💤𝗥𝗲𝗻𝗲𝘄𝘀: ${Re.hours}h ${Re.minutes}m ${Re.seconds}s
 ║💡𝐓𝐢𝐩: Buy Higher Badges Using ${prefix}shop
+╚═══════╝
+
+
+╔══『 🍯𝐁𝐚𝐝𝐠𝐞𝐬🍯  』
+║🧵 Basic 10 Commands
+║🥉 Bronze 20 Commands
+║🥈 Silver 40 Commands
+║🥇 Gold 60 Commands
+║💍 Platinum 80 Commands
+║💎 Diamond 100 Commands
 ╚═══════╝`
 );
 }
