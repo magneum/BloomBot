@@ -29,7 +29,7 @@ load_dotenv ("./Vlkyre.env")#Line:13
 ᴠʟᴋʏʀᴇi =getenv ("CODE",None )#Line:16
 BFS =64 *1024 #Line:17
 subprocess .run (["git","config","pull.rebase","false"],check =True ,stdout =subprocess .PIPE ).stdout #Line:18
-subprocess .run (["python","𝐕𝐥𝐤𝐲𝐫𝐞🐍Ş𝖎𝖕𝖍𝖔𝖓/🐍𝖛𝖑𝖐𝖕𝖞.py"],check =True ,stdout =subprocess .PIPE ).stdout #Line:19
+subprocess .run (["python","Vlkyre🐍Syphon/🐍𝖛𝖑𝖐𝖕𝖞.py"],check =True ,stdout =subprocess .PIPE ).stdout #Line:19
 class InterceptHandler (logging .Handler ):#Line:20
     LEVELS_MAP ={logging .CRITICAL :"CRITICAL",logging .ERROR :"ERROR",logging .WARNING :"WARNING",logging .INFO :"INFO",logging .DEBUG :"DEBUG",}#Line:27
     def _get_level (OOO0OO00OO0OOO00O ,O000O0O00O00OOO00 ):#Line:29
