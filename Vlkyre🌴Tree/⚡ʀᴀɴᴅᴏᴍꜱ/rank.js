@@ -1,6 +1,6 @@
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
 
-//▷                                              (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!                                           ◁
+//▷                                              (𝐜)Vlyre 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!                                           ◁
 
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
 require("../../Vlkyre🖋️Utilities/𝕷𝖆ყO𝖚𝖙");
@@ -40,7 +40,7 @@ let { Caught } = require("../../Vlkyre👒Hat/Caught");
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 exports.rank = async (
 ӄ𝖗𝖞ӄ𝖓𝖟,
-𝐕𝐥𝐤𝐲𝐫𝐞,
+Vlyre,
 pushName,
 F𝖚𝖑𝖑_A𝖗𝖌𝖘,
 quoted,
@@ -53,11 +53,11 @@ commandName,
 body,
 ) => {
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
-const user = await Levels.fetch(𝐕𝐥𝐤𝐲𝐫𝐞.sender, 𝐕𝐥𝐤𝐲𝐫𝐞.chatID, true);
+const user = await Levels.fetch(Vlyre.sender, Vlyre.chatID, true);
 if (!user) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-𝐕𝐥𝐤𝐲𝐫𝐞,
+Vlyre,
 `*❌ERROR:* Seems like you have no rank XP for this chat.
 Try to talk more and check if autorank is turned on.`
 );
@@ -118,12 +118,12 @@ var role = `Mythic Glory`;
 var աɦօֆɛ = Math.floor(1000 + Math.random() * 9000);
 let 𝕻𝕻𝖑𝖊𝖙𝖊𝖗;
 try {
-𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄ𝖗𝖞ӄ𝖓𝖟.profilePictureUrl(𝐕𝐥𝐤𝐲𝐫𝐞.chatID, `image`);
+𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄ𝖗𝖞ӄ𝖓𝖟.profilePictureUrl(Vlyre.chatID, `image`);
 } catch {
-𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = `./Vlkyre👗Skins/𝐕𝐥𝐤𝐲𝐫𝐞.png`;
+𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = `./Vlkyre👗Skins/Vlyre.png`;
 }
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
-var expFile = `./Vlkyre🎒Bag/${Date.now()}r${𝐕𝐥𝐤𝐲𝐫𝐞.key.id}.png`;
+var expFile = `./Vlkyre🎒Bag/${Date.now()}r${Vlyre.key.id}.png`;
 try {
 var ResGot = await fetch(
 global.API("https://wall.alphacoders.com/api2.0", "/get.php", {
@@ -153,17 +153,17 @@ let rank = new canvacord.Rank()
 .setDiscriminator(աɦօֆɛ);
 return await rank.build().then(async (data) => {
 fs.writeFile(expFile, data, async (error) => {
-if (error) return Caught(ӄ𝖗𝖞ӄ𝖓𝖟, 𝐕𝐥𝐤𝐲𝐫𝐞, error);
-await ӄ𝖗𝖞ӄ𝖓𝖟.sendPresenceUpdate("composing", 𝐕𝐥𝐤𝐲𝐫𝐞.chatID);
+if (error) return Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlyre, error);
+await ӄ𝖗𝖞ӄ𝖓𝖟.sendPresenceUpdate("composing", Vlyre.chatID);
 await ӄ𝖗𝖞ӄ𝖓𝖟
 .sendMessage(
-𝐕𝐥𝐤𝐲𝐫𝐞.chatID,
+Vlyre.chatID,
 {
-contextInfo: { mentionedJid: [𝐕𝐥𝐤𝐲𝐫𝐞.sender] },
+contextInfo: { mentionedJid: [Vlyre.sender] },
 image: { url: expFile },
 caption: `╔══『 𝐏𝐫𝐨𝐟𝐢𝐥𝐞𝐫® 』
-║ *❣️ ɴᴀᴍᴇ:* ${𝐕𝐥𝐤𝐲𝐫𝐞.pushName || "No_Name"}
-║ *⚡ ɪᴅ:* ${𝐕𝐥𝐤𝐲𝐫𝐞.chatID.split("@")[0]}
+║ *❣️ ɴᴀᴍᴇ:* ${Vlyre.pushName || "No_Name"}
+║ *⚡ ɪᴅ:* ${Vlyre.chatID.split("@")[0]}
 ╚═══════╝
 
 
@@ -183,15 +183,15 @@ type: 1,
 headerType: 4,
 },
 {
-quoted: 𝐕𝐥𝐤𝐲𝐫𝐞,
+quoted: Vlyre,
 }
 )
-.catch((e) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, 𝐕𝐥𝐤𝐲𝐫𝐞, e));
+.catch((e) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlyre, e));
 });
 });
 };
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
 
-//▷                                              (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!                                           ◁
+//▷                                              (𝐜)Vlyre 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!                                           ◁
 
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
