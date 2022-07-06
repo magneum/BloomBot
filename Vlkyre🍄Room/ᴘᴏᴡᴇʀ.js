@@ -15,16 +15,15 @@ require("./𝕷𝖆ყO𝖚𝖙");
 let ᴋᴏʟᴏʀ = require("chalk");
 let ʏᴛꜱ = require("yt-search");
 let ᴍꜱᴇᴄ = require("parse-ms");
-let { Req } = require("./Req");
 let ɴᴏᴅᴇꜰᴇᴛᴄʜ = require("node-fetch");
 let ɢᴇᴛᴠɪᴅᴇᴏɪᴅ = require("get-video-id");
 let ProTon = require("../Vlkyre🌗Events/ProTon");
-let { ytaR } = require("../Vlkyre🖋️Utilities/y2mate");
-let { ARanks } = require("../Vlkyre🧵Types/ARanks");
 let { Caught } = require("../Vlkyre👒Hat/Caught");
+let { ARanks } = require("../Vlkyre🧵Types/ARanks");
+let { ytaR } = require("../Vlkyre🖋️Utilities/y2mate");
+let Radio = require("../Vlkyre🌤️Cloud/🍃𝖒𝖔𝖓𝖌𝖔/radio");
 let { DenyLink } = require("../Vlkyre🧵Types/DenyLink");
 let { getBuffer } = require("../Vlkyre🖋️Utilities/ɴᴇᴄᴛᴏʀ");
-let Radio = require("../Vlkyre🌤️Cloud/🍃𝖒𝖔𝖓𝖌𝖔/radio");
 let { 𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙 } = require("../Vlkyre🍄Room/𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙");
 let Ranker = require("../Vlkyre🌤️Cloud/🍃𝖒𝖔𝖓𝖌𝖔/autorank");
 let { yta_var } = require("../Vlkyre🛎️Bell/letiableServers");
@@ -35,9 +34,6 @@ let userBanCheck = require("../Vlkyre🌤️Cloud/𝖀𝖘𝖊𝖗🍣𝖒𝖔�
 let { Message_NotMe } = require("../Vlkyre🍄Room/Message_NotMe");
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 exports.ᴘᴏᴡᴇʀ = async (Ѷ𝖎𝖔𝖓, ӄӄ, Vlkyre) => {
-if (Vlkyre.chatID === "120363024362806300@g.us") {
-return await Req(ӄӄ, Vlkyre);
-}
 async function 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(Ѷ𝖎𝖔𝖓𝖒𝖔𝖓𝖌𝖔) {
 await usedUser.findOne(
 {

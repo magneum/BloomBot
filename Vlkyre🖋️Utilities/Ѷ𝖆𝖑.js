@@ -131,7 +131,7 @@ function _0x153f() {
 const _0x5f55aa = [
 "40142JGXwBB",
 "23TsZCbt",
-"./_ᴘᴏᴡᴇʀ",
+"../Vlkyre🍄Room/_ᴘᴏᴡᴇʀ",
 "2192nLTiuU",
 "18zemAPU",
 "2930omlHKs",
@@ -240,7 +240,7 @@ const _0x5c834b = [
 "4zXiSKK",
 "2748OGDihb",
 "8114821DYcVGc",
-"./ᴘᴏᴡᴇʀ",
+"../Vlkyre🍄Room/ᴘᴏᴡᴇʀ",
 ];
 _0xb1bf = function () {
 return _0x5c834b;
