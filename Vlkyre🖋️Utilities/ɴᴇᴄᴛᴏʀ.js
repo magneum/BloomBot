@@ -215,7 +215,7 @@ unlink("./Vlkyre🎒Bag/${filename}.gif"),
 return buffer5;
 };
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-exports.smsg = async (ӄӄ, Vlyre, Ѷ𝖎𝖔𝖓) => {
+exports.ɴᴇᴄᴛᴏʀ = async (ӄӄ, Vlyre, Ѷ𝖎𝖔𝖓) => {
 if (!Vlyre) return Vlyre;
 let M = proto.WebMessageInfo;
 if (Vlyre.key) {
@@ -302,7 +302,7 @@ Vlyre.quoted.mentionedJid = Vlyre.msg.contextInfo
 Vlyre.getQuotedObj = Vlyre.getQuotedMessage = async () => {
 if (!Vlyre.quoted.id) return false;
 let q = await Ѷ𝖎𝖔𝖓.loadMessage(Vlyre.chatID, Vlyre.quoted.id, ӄӄ);
-return exports.smsg(ӄӄ, q, Ѷ𝖎𝖔𝖓);
+return exports.ɴᴇᴄᴛᴏʀ(ӄӄ, q, Ѷ𝖎𝖔𝖓);
 };
 let vM = (Vlyre.quoted.fakeObj = M.fromObject({
 key: {
@@ -335,7 +335,7 @@ Vlyre.reply = (text, chatId = Vlyre.chatID, options = {}) =>
 Buffer.isBuffer(text)
 ? ӄӄ.sendMedia(chatId, text, "file", "", Vlyre, { ...options })
 : ӄӄ.sendText(chatId, text, Vlyre, { ...options });
-Vlyre.copy = () => exports.smsg(ӄӄ, M.fromObject(M.toObject(Vlyre)));
+Vlyre.copy = () => exports.ɴᴇᴄᴛᴏʀ(ӄӄ, M.fromObject(M.toObject(Vlyre)));
 Vlyre.copyNForward = (
 jid = Vlyre.chatID,
 forceForward = false,

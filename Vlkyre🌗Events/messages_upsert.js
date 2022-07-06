@@ -13,7 +13,7 @@
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 require("../Vlkyre🖋️Utilities/𝕷𝖆ყO𝖚𝖙");
 require("../Vlkyre🖋️Utilities/Ѷ𝖆𝖑.js");
-let { smsg } = require("../Vlkyre🖋️Utilities/ɴᴇᴄᴛᴏʀ");
+let { ɴᴇᴄᴛᴏʀ } = require("../Vlkyre🖋️Utilities/ɴᴇᴄᴛᴏʀ");
 let messages_upsert = async (chatUpdate, Ѷ𝖎𝖔𝖓, ӄӄ) => {
 try {
 𝖈𝖍𝖆𝖙 = chatUpdate.messages[0];
@@ -25,7 +25,7 @@ Object.keys(𝖈𝖍𝖆𝖙.message)[0] === "ephemeralMessage"
 if (𝖈𝖍𝖆𝖙.key && 𝖈𝖍𝖆𝖙.key.remoteJid === "status@broadcast") return;
 if (!ӄӄ.public && !𝖈𝖍𝖆𝖙.key.fromMe && chatUpdate.type === "notify") return;
 if (𝖈𝖍𝖆𝖙.key.id.startsWith("BAE5") && 𝖈𝖍𝖆𝖙.key.id.length === 16) return;
-Vlyre = await smsg(ӄӄ, 𝖈𝖍𝖆𝖙, Ѷ𝖎𝖔𝖓);
+Vlyre = await ɴᴇᴄᴛᴏʀ(ӄӄ, 𝖈𝖍𝖆𝖙, Ѷ𝖎𝖔𝖓);
 require("../Vlkyre🖋️Utilities/Ѷ𝖆𝖑.js")(ӄӄ, Vlyre, chatUpdate, Ѷ𝖎𝖔𝖓).catch(
 (error) => console.log(error)
 );
