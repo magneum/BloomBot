@@ -242,16 +242,6 @@ Vlyre.mtype == "viewOnceMessage"
 getContentType(Vlyre.message[Vlyre.mtype].message)
 ]
 : Vlyre.message[Vlyre.mtype];
-Vlyre.body =
-Vlyre.message.conversation ||
-Vlyre.msg.caption ||
-Vlyre.msg.text ||
-(Vlyre.mtype == "listResponseMessage" &&
-Vlyre.msg.singleSelectReply.selectedRowId) ||
-(Vlyre.mtype == "buttonsResponseMessage" &&
-Vlyre.msg.selectedButtonId) ||
-(Vlyre.mtype == "viewOnceMessage" && Vlyre.msg.caption) ||
-Vlyre.text;
 Vlyre.Body =
 Vlyre.mtype === "conversation"
 ? Vlyre.message.conversation
