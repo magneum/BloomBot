@@ -12,8 +12,8 @@
 // ╚════════════╝
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 require("../Vlkyre🖋️Utilities/𝕷𝖆ყO𝖚𝖙");
-exports.Caught = async (𝖍𝖆𝖜ӄ, Vlyre, 𝕮𝖔𝖓𝖙𝖊𝖓𝖙) => {
-await 𝖍𝖆𝖜ӄ.sendMessage(
+exports.Caught = async (ӄӄ, Vlyre, 𝕮𝖔𝖓𝖙𝖊𝖓𝖙) => {
+await ӄӄ.sendMessage(
 "120363020792949649@g.us",
 `📌*Message:* Attention Every Admin/Mods of This Group!
 🎭 *ᴄʜᴀᴛɪᴅ:* ${Vlyre.chatID.split("@")[0]}
@@ -25,7 +25,7 @@ await 𝖍𝖆𝖜ӄ.sendMessage(
 mentions: Vlyre.groupAdmins,
 }
 );
-return await 𝖍𝖆𝖜ӄ.sendMessage(
+return await ӄӄ.sendMessage(
 Vlyre.chatID,
 {
 contextInfo: { mentionedJid: [Vlyre.sender] },

@@ -14,7 +14,7 @@
 require("../Vlkyre🖋️Utilities/𝕷𝖆ყO𝖚𝖙");
 exports.DenyLink = async (
 Vlyre,
-𝖍𝖆𝖜ӄ,
+ӄӄ,
 Caught,
 Image_Button,
 A𝖗𝖌𝖘,
@@ -26,16 +26,16 @@ await LinkList.findOne(
 serverID: Vlyre.chatID,
 },
 async (error, server) => {
-if (error) return Caught(𝖍𝖆𝖜ӄ, Vlyre, e);
+if (error) return Caught(ӄӄ, Vlyre, e);
 if (!server) return;
-let FetchCurrentGroupLink = await 𝖍𝖆𝖜ӄ.groupInviteCode(Vlyre.chatID);
+let FetchCurrentGroupLink = await ӄӄ.groupInviteCode(Vlyre.chatID);
 let GroupLinkRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i;
 let isGroupLink = GroupLinkRegex.exec(Figure);
 let PresentGroupLink = new RegExp(`https://chat.whatsapp.com/${FetchCurrentGroupLink}`,"i");
 let isCurrentGroupLink = PresentGroupLink.test(Figure);
 if (isGroupLink && !isCurrentGroupLink) {
 await Image_Button(
-𝖍𝖆𝖜ӄ,
+ӄӄ,
 Vlyre,
 A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/𝐕𝐥𝐤𝐲𝐫𝐞_Orange.png",
@@ -55,7 +55,7 @@ A𝖗𝖌𝖘,
 🐾 Telegram Link
 🐾 Whatspp Invite Link`
 );
-return await 𝖍𝖆𝖜ӄ.groupParticipantsUpdate(Vlyre.chatID, [Vlyre.sender],"remove").catch((e) => Caught(𝖍𝖆𝖜ӄ, Vlyre, e));
+return await ӄӄ.groupParticipantsUpdate(Vlyre.chatID, [Vlyre.sender],"remove").catch((e) => Caught(ӄӄ, Vlyre, e));
 } else if (
 Figure.includes("https://t.me/") &&
 Figure.includes("discord.gg") &&
@@ -65,7 +65,7 @@ Figure.includes("wa.me/") &&
 Figure.includes("www.")
 ) {
 await Image_Button(
-𝖍𝖆𝖜ӄ,
+ӄӄ,
 Vlyre,
 A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/𝐕𝐥𝐤𝐲𝐫𝐞_Orange.png",
@@ -85,7 +85,7 @@ A𝖗𝖌𝖘,
 🐾 Telegram Link
 🐾 Whatspp Invite Link`
 );
-return await 𝖍𝖆𝖜ӄ.groupParticipantsUpdate(Vlyre.chatID, [Vlyre.sender],"remove").catch((e) => Caught(𝖍𝖆𝖜ӄ, Vlyre, e));
+return await ӄӄ.groupParticipantsUpdate(Vlyre.chatID, [Vlyre.sender],"remove").catch((e) => Caught(ӄӄ, Vlyre, e));
 } else {
 }
 }

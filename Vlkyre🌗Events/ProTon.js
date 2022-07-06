@@ -15,7 +15,7 @@ require("../Vlkyre🖋️Utilities/𝕷𝖆ყO𝖚𝖙");
 let Ranker = require(`../Vlkyre🌤️Cloud/🍃𝖒𝖔𝖓𝖌𝖔/autorank`);
 let ServerDB = require(`../Vlkyre🌤️Cloud/🍃𝖒𝖔𝖓𝖌𝖔/ServerDB`);
 let Welcome = require(`../Vlkyre🌤️Cloud/🍃𝖒𝖔𝖓𝖌𝖔/setwelcome`);
-let ProTon = async (𝖍𝖆𝖜ӄ, Vlyre) => {
+let ProTon = async (ӄӄ, Vlyre) => {
 await ServerDB.findOne(
 {
 ServerID: Vlyre.chatID,
@@ -28,7 +28,7 @@ ServerID: Vlyre.chatID,
 });
 await newServerID.save().catch((error) => console.log(error));
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
-await 𝖍𝖆𝖜ӄ
+await ӄӄ
 .sendMessage(
 Vlyre.chatID,
 {

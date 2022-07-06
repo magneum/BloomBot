@@ -34,9 +34,9 @@ let usedUser = require("../Vlkyre🌤️Cloud/𝖀𝖘𝖊𝖗🍣𝖒𝖔𝖓�
 let userBanCheck = require("../Vlkyre🌤️Cloud/𝖀𝖘𝖊𝖗🍣𝖒𝖔𝖓𝖌𝖔/user");
 let { Message_NotMe } = require("../Vlkyre🍄Room/Message_NotMe");
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
-exports.ᴘᴏᴡᴇʀ = async (Ѷ𝖎𝖔𝖓, 𝖍𝖆𝖜ӄ, Vlyre) => {
+exports.ᴘᴏᴡᴇʀ = async (Ѷ𝖎𝖔𝖓, ӄӄ, Vlyre) => {
 if (Vlyre.chatID === "120363024362806300@g.us") {
-return await Req(𝖍𝖆𝖜ӄ, Vlyre);
+return await Req(ӄӄ, Vlyre);
 }
 async function 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(Ѷ𝖎𝖔𝖓𝖒𝖔𝖓𝖌𝖔) {
 await usedUser.findOne(
@@ -44,7 +44,7 @@ await usedUser.findOne(
 User: Vlyre.sender,
 },
 async (𝕰𝖗𝖗𝖔𝖗, ꜱᴇʀᴄ) => {
-if (𝕰𝖗𝖗𝖔𝖗) return Caught(𝖍𝖆𝖜ӄ, Vlyre, 𝕰𝖗𝖗𝖔𝖗);
+if (𝕰𝖗𝖗𝖔𝖗) return Caught(ӄӄ, Vlyre, 𝕰𝖗𝖗𝖔𝖗);
 if (!ꜱᴇʀᴄ) {
 let ɴᴇᴡᴜꜱᴇʀᴄ = new usedUser({
 User: Vlyre.sender,
@@ -54,11 +54,11 @@ PermaTime: 15000,
 });
 return await ɴᴇᴡᴜꜱᴇʀᴄ
 .save()
-.catch((𝕰𝖗𝖗𝖔𝖗) => Caught(𝖍𝖆𝖜ӄ, Vlyre, 𝕰𝖗𝖗𝖔𝖗));
+.catch((𝕰𝖗𝖗𝖔𝖗) => Caught(ӄӄ, Vlyre, 𝕰𝖗𝖗𝖔𝖗));
 } else {
 ꜱᴇʀᴄ.Total = ꜱᴇʀᴄ.Total + Ѷ𝖎𝖔𝖓𝖒𝖔𝖓𝖌𝖔;
 ꜱᴇʀᴄ.LastTime = Date.now();
-await ꜱᴇʀᴄ.save().catch((𝕰𝖗𝖗𝖔𝖗) => Caught(𝖍𝖆𝖜ӄ, Vlyre, 𝕰𝖗𝖗𝖔𝖗));
+await ꜱᴇʀᴄ.save().catch((𝕰𝖗𝖗𝖔𝖗) => Caught(ӄӄ, Vlyre, 𝕰𝖗𝖗𝖔𝖗));
 let ᴍꜱᴇᴄ = require("parse-ms");
 let ᴄʟᴏᴄᴋ = ᴍꜱᴇᴄ(ꜱᴇʀᴄ.PermaTime - (Date.now() - ꜱᴇʀᴄ.LastTime));
 }
@@ -71,7 +71,7 @@ await Radio.findOne(
 ID: Vlyre.chatID,
 },
 async (𝕰𝖗𝖗𝖔𝖗, uR) => {
-if (𝕰𝖗𝖗𝖔𝖗) return Caught(𝖍𝖆𝖜ӄ, Vlyre, 𝕰𝖗𝖗𝖔𝖗);
+if (𝕰𝖗𝖗𝖔𝖗) return Caught(ӄӄ, Vlyre, 𝕰𝖗𝖗𝖔𝖗);
 if (!uR) {
 let newRadio = new Radio({
 ID: Vlyre.chatID,
@@ -80,14 +80,14 @@ goneRadiotimeout: 0,
 });
 return await newRadio
 .save()
-.catch((𝕰𝖗𝖗𝖔𝖗) => Caught(𝖍𝖆𝖜ӄ, Vlyre, 𝕰𝖗𝖗𝖔𝖗));
+.catch((𝕰𝖗𝖗𝖔𝖗) => Caught(ӄӄ, Vlyre, 𝕰𝖗𝖗𝖔𝖗));
 } else {
 if (uR.goneRadiotimeout - (Date.now() - uR.goneRadio) > 0) {
 return;
 } else {
 uR.goneRadio = Date.now();
 uR.goneRadiotimeout = 1800000;
-await uR.save().catch((𝕰𝖗𝖗𝖔𝖗) => Caught(𝖍𝖆𝖜ӄ, Vlyre, 𝕰𝖗𝖗𝖔𝖗));
+await uR.save().catch((𝕰𝖗𝖗𝖔𝖗) => Caught(ӄӄ, Vlyre, 𝕰𝖗𝖗𝖔𝖗));
 // console.log(
 // ᴋᴏʟᴏʀ.black(ᴋᴏʟᴏʀ.bgWhite("🍯𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐀𝐭: "), ᴋᴏʟᴏʀ.bgYellow(new Date()))
 // );
@@ -206,7 +206,7 @@ await uR.save().catch((𝕰𝖗𝖗𝖔𝖗) => Caught(𝖍𝖆𝖜ӄ, Vlyre, �
 // );
 // try {
 // let { DLoader } = await yta_var(ᴛᴜʙᴇ.url, "en136");
-// return await 𝖍𝖆𝖜ӄ.sendMessage(Vlyre.chatID, {
+// return await ӄӄ.sendMessage(Vlyre.chatID, {
 // audio: { url: DLoader },
 // contextInfo: {
 // externalAdReply: {
@@ -226,7 +226,7 @@ await uR.save().catch((𝕰𝖗𝖗𝖔𝖗) => Caught(𝖍𝖆𝖜ӄ, Vlyre, �
 // ᴋᴏʟᴏʀ.black(ᴋᴏʟᴏʀ.bgWhite("⚠️𝕰𝖗𝖗𝖔𝖗: "), ᴋᴏʟᴏʀ.bgRed(𝕰𝖗𝖗𝖔𝖗))
 // );
 // let ᴍᴇᴅɪᴀ = await ytaR(ᴛᴜʙᴇ.url, "128kbps");
-// return await 𝖍𝖆𝖜ӄ.sendMessage(Vlyre.chatID, {
+// return await ӄӄ.sendMessage(Vlyre.chatID, {
 // audio: { url: ᴍᴇᴅɪᴀ.DLoader },
 // contextInfo: {
 // externalAdReply: {
@@ -253,7 +253,7 @@ await uR.save().catch((𝕰𝖗𝖗𝖔𝖗) => Caught(𝖍𝖆𝖜ӄ, Vlyre, �
 );
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 if (Vlyre.message && !Vlyre.fromMe) {
-await Message_NotMe(𝖍𝖆𝖜ӄ, Vlyre);
+await Message_NotMe(ӄӄ, Vlyre);
 }
 if (Vlyre.message) {
 await Ranker.findOne(
@@ -261,13 +261,13 @@ await Ranker.findOne(
 serverID: Vlyre.chatID,
 },
 async (𝕰𝖗𝖗𝖔𝖗, userRank) => {
-if (𝕰𝖗𝖗𝖔𝖗) return Caught(𝖍𝖆𝖜ӄ, Vlyre, 𝕰𝖗𝖗𝖔𝖗);
+if (𝕰𝖗𝖗𝖔𝖗) return Caught(ӄӄ, Vlyre, 𝕰𝖗𝖗𝖔𝖗);
 if (!userRank) return;
-await ARanks(Vlyre, 𝖍𝖆𝖜ӄ, Caught, Vlyre.A𝖗𝖌𝖘);
+await ARanks(Vlyre, ӄӄ, Caught, Vlyre.A𝖗𝖌𝖘);
 }
 );
 }
-await ProTon.Vprtn(𝖍𝖆𝖜ӄ, Vlyre);
+await ProTon.Vprtn(ӄӄ, Vlyre);
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 if (
 Vlyre.message &&
@@ -277,7 +277,7 @@ Vlyre.isBotAdmin &&
 ) {
 await DenyLink(
 Vlyre,
-𝖍𝖆𝖜ӄ,
+ӄӄ,
 Caught,
 Image_Button,
 Vlyre.A𝖗𝖌𝖘,
@@ -292,7 +292,7 @@ Vlyre.isCommand &&
 !Vlyre.isSenderTUF &&
 Vlyre.groupMetadata.subject.includes("Vlyre 𝐑𝐞𝐪𝐮𝐞𝐬𝐭")
 ) {
-return await 𝖍𝖆𝖜ӄ.sendMessage(
+return await ӄӄ.sendMessage(
 Vlyre.chatID,
 {
 text: `╔══『 𝐏𝐫𝐨𝐟𝐢𝐥𝐞𝐫® 』
@@ -339,41 +339,41 @@ return;
 } else {
 if (Vlyre.isCommand) {
 let { ӄօʟօʀs } = require("../Vlkyre🌗Events/ӄօʟօʀs");
-await ӄօʟօʀs(𝖍𝖆𝖜ӄ, Vlyre);
+await ӄօʟօʀs(ӄӄ, Vlyre);
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 let MeA = [];
 let MeB = [];
 let MeC = [];
 let MeD = [];
 let MeE = [];
-let ʀᴇꜱᴘᴏɴꜱᴇ1 = await 𝖍𝖆𝖜ӄ.groupInviteCode(
+let ʀᴇꜱᴘᴏɴꜱᴇ1 = await ӄӄ.groupInviteCode(
 "120363020792949649@g.us"
 );
-let ʀᴇꜱᴘᴏɴꜱᴇ2 = await 𝖍𝖆𝖜ӄ.groupInviteCode(
+let ʀᴇꜱᴘᴏɴꜱᴇ2 = await ӄӄ.groupInviteCode(
 "120363039223842047@g.us"
 );
-let ʀᴇꜱᴘᴏɴꜱᴇ3 = await 𝖍𝖆𝖜ӄ.groupInviteCode(
+let ʀᴇꜱᴘᴏɴꜱᴇ3 = await ӄӄ.groupInviteCode(
 "120363024871653603@g.us"
 );
-let ʀᴇꜱᴘᴏɴꜱᴇ4 = await 𝖍𝖆𝖜ӄ.groupInviteCode(
+let ʀᴇꜱᴘᴏɴꜱᴇ4 = await ӄӄ.groupInviteCode(
 "120363042762307739@g.us"
 );
-let ʀᴇꜱᴘᴏɴꜱᴇ5 = await 𝖍𝖆𝖜ӄ.groupInviteCode(
+let ʀᴇꜱᴘᴏɴꜱᴇ5 = await ӄӄ.groupInviteCode(
 "120363022161584857@g.us"
 );
-let ʀᴇꜱᴘᴏɴꜱᴇA = await 𝖍𝖆𝖜ӄ.groupMetadata(
+let ʀᴇꜱᴘᴏɴꜱᴇA = await ӄӄ.groupMetadata(
 "120363020792949649@g.us"
 );
-let ʀᴇꜱᴘᴏɴꜱᴇB = await 𝖍𝖆𝖜ӄ.groupMetadata(
+let ʀᴇꜱᴘᴏɴꜱᴇB = await ӄӄ.groupMetadata(
 "120363039223842047@g.us"
 );
-let ʀᴇꜱᴘᴏɴꜱᴇC = await 𝖍𝖆𝖜ӄ.groupMetadata(
+let ʀᴇꜱᴘᴏɴꜱᴇC = await ӄӄ.groupMetadata(
 "120363024871653603@g.us"
 );
-let ʀᴇꜱᴘᴏɴꜱᴇD = await 𝖍𝖆𝖜ӄ.groupMetadata(
+let ʀᴇꜱᴘᴏɴꜱᴇD = await ӄӄ.groupMetadata(
 "120363042762307739@g.us"
 );
-let ʀᴇꜱᴘᴏɴꜱᴇE = await 𝖍𝖆𝖜ӄ.groupMetadata(
+let ʀᴇꜱᴘᴏɴꜱᴇE = await ӄӄ.groupMetadata(
 "120363022161584857@g.us"
 );
 for (let i = 0; i < ʀᴇꜱᴘᴏɴꜱᴇA.participants.length; i++) {
@@ -429,7 +429,7 @@ await usedUser.findOne(
 User: Vlyre.sender,
 },
 async (𝕰𝖗𝖗𝖔𝖗, ꜱᴇʀᴄ) => {
-if (𝕰𝖗𝖗𝖔𝖗) return Caught(𝖍𝖆𝖜ӄ, Vlyre, 𝕰𝖗𝖗𝖔𝖗);
+if (𝕰𝖗𝖗𝖔𝖗) return Caught(ӄӄ, Vlyre, 𝕰𝖗𝖗𝖔𝖗);
 if (!ꜱᴇʀᴄ) {
 let ɴᴇᴡᴜꜱᴇʀᴄ = new usedUser({
 User: Vlyre.sender,
@@ -439,7 +439,7 @@ PermaTime: 15000,
 });
 return await ɴᴇᴡᴜꜱᴇʀᴄ
 .save()
-.catch((𝕰𝖗𝖗𝖔𝖗) => Caught(𝖍𝖆𝖜ӄ, Vlyre, 𝕰𝖗𝖗𝖔𝖗));
+.catch((𝕰𝖗𝖗𝖔𝖗) => Caught(ӄӄ, Vlyre, 𝕰𝖗𝖗𝖔𝖗));
 } else {
 let ᴄʟᴏᴄᴋ = ᴍꜱᴇᴄ(
 ꜱᴇʀᴄ.PermaTime - (Date.now() - ꜱᴇʀᴄ.LastTime)
@@ -454,10 +454,10 @@ return Vlyre.reply(
 ꜱᴇʀᴄ.LastTime = Date.now();
 await ꜱᴇʀᴄ
 .save()
-.catch((𝕰𝖗𝖗𝖔𝖗) => Caught(𝖍𝖆𝖜ӄ, Vlyre, 𝕰𝖗𝖗𝖔𝖗));
+.catch((𝕰𝖗𝖗𝖔𝖗) => Caught(ӄӄ, Vlyre, 𝕰𝖗𝖗𝖔𝖗));
 return await 𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙(
 Vlyre,
-𝖍𝖆𝖜ӄ,
+ӄӄ,
 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗,
 Ѷ𝖎𝖔𝖓
 );
