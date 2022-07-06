@@ -144,7 +144,7 @@ return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
-"./Vlkyre👗Skins/𝐕𝐥𝐤𝐲𝐫𝐞_White.png",
+"./Vlkyre👗Skins/Vlkyre_White.png",
 `*🎋 (𝐜)VALKYRIE OFFICIAL 🎋*
 ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™
 
