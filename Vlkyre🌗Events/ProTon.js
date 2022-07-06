@@ -32,8 +32,8 @@ await ӄӄ
 .sendMessage(
 Vlyre.chatID,
 {
-image: { url: "./Vlkyre👗Skins/𝐕𝐥𝐤𝐲𝐫𝐞_White.png" },
-caption: `*⦓ ©𝐕𝐥𝐤𝐲𝐫𝐞 ༒ 𝐖𝐞𝐥𝐜𝐨𝐦𝐞𝐫 ⦔* 
+image: { url: "./Vlkyre👗Skins/Vlkyre_White.png" },
+caption: `*⦓ ©Vlkyre ༒ 𝐖𝐞𝐥𝐜𝐨𝐦𝐞𝐫 ⦔* 
 👋🏻𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚, To Admins Of This Group, Some Of Your Members Requested Our Valkyrie HQ to Add Our Bot In This Group.
 Have Fun!
 
@@ -41,7 +41,7 @@ Have Fun!
 ║ *antilink:* _on/off_
 ║ *autorank:* _on/off_
 ╚═══════╝`,
-footer: "*⦓ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⦔*\n_ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™_",
+footer: "*⦓ ⒸVlkyre ⦔*\n_ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™_",
 buttons: [
 {
 buttonId: prefix + "help",

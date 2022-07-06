@@ -2854,12 +2854,12 @@ contextInfo: {
 mentionedJid: [Vlyre.sender],
 },
 image: {
-url: "./Vlkyre👗Skins/𝐕𝐥𝐤𝐲𝐫𝐞_404.png",
+url: "./Vlkyre👗Skins/Vlkyre_404.png",
 },
 caption: `❣️ *ɴᴀᴍᴇ:* ${Vlyre.pushName || "No_Name"}
 
 *❌𝕰𝖗𝖗𝖔𝖗:* No Such Command.`,
-footer: "*⦓ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⦔*\nᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ",
+footer: "*⦓ ⒸVlkyre ⦔*\nᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ",
 buttons: [
 {
 buttonId: prefix + "HELP🦀",

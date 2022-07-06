@@ -20,7 +20,7 @@ await ӄӄ
 ᴄᴀʟʟᴇʀɪᴅ,
 {
 contextInfo: { mentionedJid: [ᴄᴀʟʟᴇʀɪᴅ] },
-image: { url: "./Vlkyre👗Skins/𝐕𝐥𝐤𝐲𝐫𝐞_Orange.png" },
+image: { url: "./Vlkyre👗Skins/Vlkyre_Orange.png" },
 caption: `╔══『 𝐏𝐫𝐨𝐟𝐢𝐥𝐞𝐫® 』
 ║ *❣️ ɴᴀᴍᴇ:* ${Vlyre.pushName || "No_Name"}
 ║ *⚡ ɪᴅ:* ${Vlyre.chatID.split("@")[0]}
@@ -37,7 +37,7 @@ caption: `╔══『 𝐏𝐫𝐨𝐟𝐢𝐥𝐞𝐫® 』
 ⚠️ Do not call bot, if you do then you'll get blocked by bot.
 ⚠️ If you see any bug/error in bot then report it to devs in the above group chats.
 ⚠️ Do not spam bot with commands, if bot is not responding then it means either bot is offline or there's internet issue at server end.`,
-footer: "*⦓ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⦔*\nᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ",
+footer: "*⦓ ⒸVlkyre ⦔*\nᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ",
 buttons: [
 {
 buttonId: prefix + "help",

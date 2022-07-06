@@ -12,7 +12,7 @@
 // ╚════════════╝
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 let chalk = require("chalk");
-let { DisconnectReason } = require(`@adiwajshing/baileys`);
+let { DisconnectReason } = require("@adiwajshing/baileys");
 let connection_update = async (update, startᴋᴜɴᴀɪ, ӄӄ) => {
 try {
 const { lastDisconnect, connection, qr } = update;
