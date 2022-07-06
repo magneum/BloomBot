@@ -18,7 +18,7 @@ let { ӄօʟօʀs } = require("../Vlkyre🌗Events/ӄօʟօʀs");
 let Bagde = require("../Vlkyre🌤️Cloud/🍃𝖒𝖔𝖓𝖌𝖔/badge");
 let { Image_Button } = require("../Vlkyre👒Hat/Image_Button");
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-exports.Night = async (Vlkyre, ӄӄ, ӄ_counter, Ѷ𝖎𝖔𝖓,𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙) => {
+exports.Night = async (Vlkyre, ӄӄ, ӄ_counter, Ѷ𝖎𝖔𝖓, CC) => {
 await ӄօʟօʀs(ӄӄ, Vlkyre);
 await Bagde.findOne(
 {
@@ -46,21 +46,33 @@ Vlkyre.A𝖗𝖌𝖘,
 } else {
 console.clear();
 console.log(userBg);
+let Re = userBg.PermanentLimitTime - (Date.now() - userBg.CurrentLimitTime);
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-let Re =
-userBg.PermanentLimitTime - (Date.now() - userBg.CurrentLimitTime);
 if (Re > 0 && userBg.Limits == 0) {
 userBg.value = "False";
 await userBg.save();
-return await 𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙(Vlkyre, ӄӄ, ӄ_counter, Ѷ𝖎𝖔𝖓);
+return await Image_Button(
+ӄӄ,
+Vlkyre,
+Vlkyre.A𝖗𝖌𝖘,
+"./Vlkyre👗Skins/Vlkyre__Shop.png",
+`
+╔══『 ❗𝐈𝐦𝐩𝐨𝐫𝐭𝐚𝐧𝐭 』
+║⚔️𝗕𝗮𝗱𝗴𝗲: ${userBg.Badge}
+║💤𝗥𝗲𝗻𝗲𝘄𝘀: ${Re.hours}h ${Re.minutes}m ${Re.seconds}s
+║💡𝐓𝐢𝐩: Buy Higher Badges Using ${prefix}shop
+╚═══════╝`
+);
+}
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-} else if (Re > 0 && !userBg.Limits == 0) {
-userBg.value = "True";
+if (Re > 0 && !userBg.Limits == 0) {
 userBg.Limits = userBg.Limits - 1;
+userBg.value = "True";
 await userBg.save();
-return await 𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙(Vlkyre, ӄӄ, ӄ_counter, Ѷ𝖎𝖔𝖓);
+return await CC(Vlkyre, ӄӄ, ӄ_counter, Ѷ𝖎𝖔𝖓);
+}
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-} else if (Re < 0 && userBg.Limits == 0) {
+if (Re < 0 && userBg.Limits == 0) {
 if (userBg.Badge === "🧵Basic 10 Commands") userBg.Limits = 10;
 if (userBg.Badge === "🥉Bronze 20 Commands") userBg.Limits = 20;
 if (userBg.Badge === "🥈Silver 40 Commands") userBg.Limits = 40;
@@ -70,10 +82,10 @@ if (userBg.Badge === "💎Diamond 100 Commands") userBg.Limits = 100;
 userBg.CurrentLimitTime = Date.now();
 userBg.value = "True";
 await userBg.save();
-return await 𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙(Vlkyre, ӄӄ, ӄ_counter, Ѷ𝖎𝖔𝖓);
+return await CC(Vlkyre, ӄӄ, ӄ_counter, Ѷ𝖎𝖔𝖓);
+} 
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-} else if (userBg.value === "False") {
-let Time = ᴍꜱ(userBg.PermanentLimitTime - (Date.now() - userBg.CurrentLimitTime));
+if (userBg.value === "False") {
 return await Image_Button(
 ӄӄ,
 Vlkyre,
@@ -82,11 +94,11 @@ Vlkyre.A𝖗𝖌𝖘,
 `
 ╔══『 ❗𝐈𝐦𝐩𝐨𝐫𝐭𝐚𝐧𝐭 』
 ║⚔️𝗕𝗮𝗱𝗴𝗲: ${userBg.Badge}
-║💤𝗥𝗲𝗻𝗲𝘄𝘀: ${Time.hours}h ${Time.minutes}m ${Time.seconds}s
+║💤𝗥𝗲𝗻𝗲𝘄𝘀: ${Re.hours}h ${Re.minutes}m ${Re.seconds}s
 ║💡𝐓𝐢𝐩: Buy Higher Badges Using ${prefix}shop
 ╚═══════╝`
 );
-} 
+}
 }
 }
 );
