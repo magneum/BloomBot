@@ -51,9 +51,9 @@ isSenderTUF,
 commandName,
 body,
 mentionByTag,
-mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
 ) => {
-if (!mentionByReply) {
+if (!𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 𝐕𝐥𝐤𝐲𝐫𝐞,
