@@ -3,70 +3,70 @@
 //▷                                              (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!                                           ◁
 
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
-require("../../𝐕𝐥𝐤𝐲𝐫𝐞🖋️L𝖎𝖇𝖗𝖆𝖗ყ/𝕷𝖆ყO𝖚𝖙");
-let {
-isUrl,
-fetchJson,
-getBuffer,
-jsonformat,
-GIFBufferToVideoBuffer,
-getRandom,
-} = require(`../../𝐕𝐥𝐤𝐲𝐫𝐞🖋️L𝖎𝖇𝖗𝖆𝖗ყ/ɴᴇᴄᴛᴏʀ`);
-let fs = require(`fs`);
-let util = require(`util`);
-let hxz = require(`hxz-api`);
-let chalk = require(`chalk`);
-let db = require(`quick.db`);
-let axios = require(`axios`);
-let ms = require(`parse-ms`);
-let canvacord = require(`canvacord`);
-let { Character } = require(`mailist`);
-let moment = require(`moment-timezone`);
-let Carbon = require(`unofficial-carbon-now`);
-let { exec, execSync } = require(`child_process`);
-let { N𝖊𝖊𝖉__A𝖗𝖌𝖘 } = require("../../Vlkyre👒Hat/N𝖊𝖊𝖉__A𝖗𝖌𝖘");
-let { Sticker, StickerTypes } = require(`wa-sticker-formatter`);
-let { Group_Only } = require("../../Vlkyre🧭Compass/Group_Only");
-let Economy = require(`../../Vlkyre🌤️Cloud/🍃𝖒𝖔𝖓𝖌𝖔/economy`);
-let { Image_Button } = require("../../Vlkyre👒Hat/Image_Button");
-let { Video_Button } = require("../../Vlkyre👒Hat/Video_Button");
-let { Bot_Not_Admin } = require("../../Vlkyre🧭Compass/Bot_Not_Admin");
-let { Sender_Not_Admin } = require("../../Vlkyre🧭Compass/Sender_Not_Admin");
-let Present_Path = require(`path`);
-let Script_Name = Present_Path.basename(__filename);
-let Final_Name = Script_Name.slice(0, -3).toLowerCase();
-let { Caught } = require("../../Vlkyre👒Hat/Caught");
-("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
-exports.store = async (
-ӄ𝖗𝖞ӄ𝖓𝖟,
-𝐕𝐥𝐤𝐲𝐫𝐞,
-pushName,
-F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-quoted,
-isMedia,
-isGroup,
-isBotAdmin,
-isSenderAdmin,
-isSenderTUF,
-commandName,
-body,
-) => {
-return await Image_Button(
-ӄ𝖗𝖞ӄ𝖓𝖟,
-𝐕𝐥𝐤𝐲𝐫𝐞,
-𝐕𝐥𝐤𝐲𝐫𝐞.A𝖗𝖌𝖘,
-"./Vlkyre👗Skins/𝐕𝐥𝐤𝐲𝐫𝐞__Shop.png",
-`╔◇══════════◇╗
-┊ 𝐌𝐞𝐦𝐛𝐞𝐫🛰️𝐒𝐭𝐨𝐫𝐞
-╚◇══════════◇╝
-
-╔══『 𝗚𝗮𝗺𝗲𝘀💰𝐂𝐚𝐭𝐞𝐠𝐨𝐫𝐲  』
-║⚔️ *sword:* _1000gold/robbery_
-║💻 *laptop:* _4000gold/robbery_
-║🔮 *charm:* _6000gold/robbery_
-╚═══════╝`
+const _0x30c773 = _0xafe8;
+(function (_0x1cd5b2, _0x493d2d) {
+const _0x5ab9a4 = _0xafe8,
+_0x16a229 = _0x1cd5b2();
+while (!![]) {
+try {
+const _0x26b137 =
+(-parseInt(_0x5ab9a4(0x17f)) / 0x1) *
+(-parseInt(_0x5ab9a4(0x180)) / 0x2) +
+parseInt(_0x5ab9a4(0x18a)) / 0x3 +
+-parseInt(_0x5ab9a4(0x18d)) / 0x4 +
+(-parseInt(_0x5ab9a4(0x184)) / 0x5) *
+(-parseInt(_0x5ab9a4(0x188)) / 0x6) +
+parseInt(_0x5ab9a4(0x183)) / 0x7 +
+(-parseInt(_0x5ab9a4(0x186)) / 0x8) *
+(parseInt(_0x5ab9a4(0x185)) / 0x9) +
+-parseInt(_0x5ab9a4(0x182)) / 0xa;
+if (_0x26b137 === _0x493d2d) break;
+else _0x16a229["push"](_0x16a229["shift"]());
+} catch (_0x22d9ea) {
+_0x16a229["push"](_0x16a229["shift"]());
+}
+}
+})(_0x4ebb, 0x529f2);
+function _0xafe8(_0x1c32b4, _0x5208ae) {
+const _0x4ebbd5 = _0x4ebb();
+return (
+(_0xafe8 = function (_0xafe8e7, _0x47f99a) {
+_0xafe8e7 = _0xafe8e7 - 0x17f;
+let _0x9e64d0 = _0x4ebbd5[_0xafe8e7];
+return _0x9e64d0;
+}),
+_0xafe8(_0x1c32b4, _0x5208ae)
 );
+}
+let mongoose = require(_0x30c773(0x181)),
+DebugSchema = new mongoose[_0x30c773(0x187)]({ value: String });
+function _0x4ebb() {
+const _0x9d6086 = [
+"Schema",
+"358026eqHuHt",
+"exports",
+"50928rEWsUc",
+"Debug",
+"model",
+"192280KYxOLJ",
+"1401KPSEEF",
+"426lPsRjd",
+"mongoose",
+"3087120kdgqdE",
+"3748528pmksiS",
+"15YzrKCx",
+"1506177TigSuP",
+"16ACohof",
+];
+_0x4ebb = function () {
+return _0x9d6086;
 };
+return _0x4ebb();
+}
+module[_0x30c773(0x189)] = mongoose[_0x30c773(0x18c)](
+_0x30c773(0x18b),
+DebugSchema
+);
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
 
 //▷                                              (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!                                           ◁

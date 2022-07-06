@@ -9,7 +9,7 @@ let fetch = require("node-fetch");
 let Levels = require("discord-xp");
 let canvacord = require("canvacord");
 let randomMC = require("random-material-color");
-let Economy = require(`../𝐕𝐥𝐤𝐲𝐫𝐞🧆𝕯𝖆𝖙𝖆𝖇𝖆𝖘𝖊/🍃𝖒𝖔𝖓𝖌𝖔/economy`);
+let Economy = require(`../Vlkyre🌤️Cloud/🍃𝖒𝖔𝖓𝖌𝖔/economy`);
 let { Image_Button } = require("../Vlkyre👒Hat/Image_Button");
 let color = randomMC.getColor();
 Levels.setURL(MONGOOSE);
