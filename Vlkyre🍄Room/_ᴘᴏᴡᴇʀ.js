@@ -20,14 +20,14 @@ await UserPrivate.findOne(
 {
 ID: Vlkyre.sender,
 },
-async (𝕰𝖗𝖗𝖔𝖗, user) => {
-if (𝕰𝖗𝖗𝖔𝖗) return Caught(ӄӄ, Vlkyre, 𝕰𝖗𝖗𝖔𝖗);
+async (error, user) => {
+if (error) return Caught(ӄӄ, Vlkyre, error);
 if (!user) {
 var newUser = new UserPrivate({
 ID: Vlkyre.sender,
 Amount: 1,
 });
-await newUser.save().catch((𝕰𝖗𝖗𝖔𝖗) => Caught(ӄӄ, Vlkyre, 𝕰𝖗𝖗𝖔𝖗));
+await newUser.save().catch((error) => Caught(ӄӄ, Vlkyre, error));
 return await Image_Button(
 ӄӄ,
 Vlkyre,
@@ -43,7 +43,7 @@ Vlkyre.A𝖗𝖌𝖘,
 );
 } else if (user.Amount < 4) {
 user.Amount = user.Amount + 1;
-await user.save().catch((𝕰𝖗𝖗𝖔𝖗) => Caught(ӄӄ, Vlkyre, 𝕰𝖗𝖗𝖔𝖗));
+await user.save().catch((error) => Caught(ӄӄ, Vlkyre, error));
 return await Image_Button(
 ӄӄ,
 Vlkyre,
@@ -58,8 +58,8 @@ Vlkyre.A𝖗𝖌𝖘,
 • You Will be Auto-Blocked After 4 warnings!`
 );
 } else {
-await user.delete().catch((𝕰𝖗𝖗𝖔𝖗) => Caught(ӄӄ, Vlkyre, 𝕰𝖗𝖗𝖔𝖗));
-return await ӄӄ.updateBlockStatus(Vlkyre.sender, "block").catch((𝕰𝖗𝖗𝖔𝖗) => Caught(ӄӄ, Vlkyre, 𝕰𝖗𝖗𝖔𝖗));
+await user.delete().catch((error) => Caught(ӄӄ, Vlkyre, error));
+return await ӄӄ.updateBlockStatus(Vlkyre.sender, "block").catch((error) => Caught(ӄӄ, Vlkyre, error));
 }
 }
 );

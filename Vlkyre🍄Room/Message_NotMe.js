@@ -101,13 +101,13 @@ if (newCommits.total != 0) {
 // try {
 // await ӄӄ
 // .groupSettingUpdate("120363020792949649@g.us", "announcement")
-// .catch((𝕰𝖗𝖗𝖔𝖗) => Vlkyre.reply(jsonformat(𝕰𝖗𝖗𝖔𝖗)));
+// .catch((error) => Vlkyre.reply(jsonformat(error)));
 // await ӄӄ.sendMessage(Vlkyre.chatID, {
 // text: "*💡Valkyrie Is Now Updating!*\n_Wait For 30-40seconds..._",
 // mentions: Vlkyre.participants.map((a) => a.id),
 // });
-// } catch (𝕰𝖗𝖗𝖔𝖗) {
-// console.log(𝕰𝖗𝖗𝖔𝖗);
+// } catch (error) {
+// console.log(error);
 // }
 var h𝖛𝖑𝖐𝖕 = require("child_process").exec(
 `heroku ps:restart worker -a ${HEROKU_APP_NAME}`
