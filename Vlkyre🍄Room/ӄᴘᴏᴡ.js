@@ -18,6 +18,7 @@ let { 𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙 } = require("./𝕮𝖆𝖘�
 let ProTon = require("../Vlkyre🌗Events/ProTon");
 let { Caught } = require("../Vlkyre👒Hat/Caught");
 let { ARanks } = require("../Vlkyre🧵Types/ARanks");
+let Bagde = require("../Vlkyre🌤️Cloud/🍃𝖒𝖔𝖓𝖌𝖔/badge");
 let { DenyLink } = require("../Vlkyre🧵Types/DenyLink");
 let Ranker = require("../Vlkyre🌤️Cloud/🍃𝖒𝖔𝖓𝖌𝖔/autorank");
 let LinkList = require("../Vlkyre🌤️Cloud/🍃𝖒𝖔𝖓𝖌𝖔/antilink");
@@ -54,9 +55,9 @@ await ꜱᴇʀᴄ.save().catch((error) => Caught(ӄӄ, Vlkyre, error));
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 if (Vlkyre.message) {
 await git.fetch();
-var newCommits = await git.log(["🐍Ş𝖎𝖕𝖍𝖔𝖓®..origin/🐍Ş𝖎𝖕𝖍𝖔𝖓®"]);
+let newCommits = await git.log(["🐍Ş𝖎𝖕𝖍𝖔𝖓®..origin/🐍Ş𝖎𝖕𝖍𝖔𝖓®"]);
 if (newCommits.total != 0) {
-var h𝖛𝖑𝖐𝖕 = require("child_process").exec(
+let h𝖛𝖑𝖐𝖕 = require("child_process").exec(
 `heroku ps:restart worker -a ${HEROKU_APP_NAME}`
 );
 h𝖛𝖑𝖐𝖕.stderr.pipe(process.stderr);
@@ -130,11 +131,16 @@ let ʀᴇꜱᴘᴏɴꜱᴇB = await ӄӄ.groupMetadata("120363039223842047@g.us"
 let ʀᴇꜱᴘᴏɴꜱᴇC = await ӄӄ.groupMetadata("120363024871653603@g.us");
 let ʀᴇꜱᴘᴏɴꜱᴇD = await ӄӄ.groupMetadata("120363042762307739@g.us");
 let ʀᴇꜱᴘᴏɴꜱᴇE = await ӄӄ.groupMetadata("120363022161584857@g.us");
-for (let i = 0; i < ʀᴇꜱᴘᴏɴꜱᴇA.participants.length; i++) MeA[i] = ʀᴇꜱᴘᴏɴꜱᴇA.participants[i].id;
-for (let i = 0; i < ʀᴇꜱᴘᴏɴꜱᴇB.participants.length; i++) MeB[i] = ʀᴇꜱᴘᴏɴꜱᴇB.participants[i].id;
-for (let i = 0; i < ʀᴇꜱᴘᴏɴꜱᴇC.participants.length; i++) MeC[i] = ʀᴇꜱᴘᴏɴꜱᴇC.participants[i].id;
-for (let i = 0; i < ʀᴇꜱᴘᴏɴꜱᴇD.participants.length; i++) MeD[i] = ʀᴇꜱᴘᴏɴꜱᴇD.participants[i].id;
-for (let i = 0; i < ʀᴇꜱᴘᴏɴꜱᴇE.participants.length; i++) MeE[i] = ʀᴇꜱᴘᴏɴꜱᴇE.participants[i].id;
+for (let i = 0; i < ʀᴇꜱᴘᴏɴꜱᴇA.participants.length; i++)
+MeA[i] = ʀᴇꜱᴘᴏɴꜱᴇA.participants[i].id;
+for (let i = 0; i < ʀᴇꜱᴘᴏɴꜱᴇB.participants.length; i++)
+MeB[i] = ʀᴇꜱᴘᴏɴꜱᴇB.participants[i].id;
+for (let i = 0; i < ʀᴇꜱᴘᴏɴꜱᴇC.participants.length; i++)
+MeC[i] = ʀᴇꜱᴘᴏɴꜱᴇC.participants[i].id;
+for (let i = 0; i < ʀᴇꜱᴘᴏɴꜱᴇD.participants.length; i++)
+MeD[i] = ʀᴇꜱᴘᴏɴꜱᴇD.participants[i].id;
+for (let i = 0; i < ʀᴇꜱᴘᴏɴꜱᴇE.participants.length; i++)
+MeE[i] = ʀᴇꜱᴘᴏɴꜱᴇE.participants[i].id;
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 if (
 !Vlkyre.fromMe &&
@@ -181,16 +187,105 @@ Total: 0,
 LastTime: 0,
 PermaTime: 15000,
 });
-return await ɴᴇᴡᴜꜱᴇʀᴄ.save().catch((error) => Caught(ӄӄ, Vlkyre, error));
+return await ɴᴇᴡᴜꜱᴇʀᴄ
+.save()
+.catch((error) => Caught(ӄӄ, Vlkyre, error));
 } else {
-let ᴄʟᴏᴄᴋ = ᴍꜱᴇᴄ(ꜱᴇʀᴄ.PermaTime - (Date.now() - ꜱᴇʀᴄ.LastTime));
+let ᴄʟᴏᴄᴋ = ᴍꜱᴇᴄ(
+ꜱᴇʀᴄ.PermaTime - (Date.now() - ꜱᴇʀᴄ.LastTime)
+);
 if (ꜱᴇʀᴄ.PermaTime - (Date.now() - ꜱᴇʀᴄ.LastTime) > 0) {
-return Vlkyre.reply("*❌𝕰𝖗𝖗𝖔𝖗:* You Need To wait for " +  ᴄʟᴏᴄᴋ.seconds +  "secs!");
+return Vlkyre.reply(
+"*❌𝕰𝖗𝖗𝖔𝖗:* You Need To wait for " +
+ᴄʟᴏᴄᴋ.seconds +
+"secs!"
+);
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 } else {
 ꜱᴇʀᴄ.LastTime = Date.now();
-await ꜱᴇʀᴄ.save().catch((error) => Caught(ӄӄ, Vlkyre, error));
-return await 𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙(Vlkyre, ӄӄ, ӄ_counter, Ѷ𝖎𝖔𝖓);
+await ꜱᴇʀᴄ
+.save()
+.catch((error) => Caught(ӄӄ, Vlkyre, error));
+await Bagde.findOne(
+{
+ID: Vlkyre.sender,
+},
+async (error, userBadge) => {
+if (error)
+return ꜰᴜᴄᴋ.catch(
+error,
+ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
+Vlkyre,
+KryChat
+);
+if (!userBadge) {
+let newUser = new Bagde({
+ID: Vlkyre.sender,
+Badge: "🧵Basic 10 Commands",
+value: "True",
+Limits: 10,
+CurrentLimitTime: Date.now(),
+PermanentLimitTime: 43200000,
+});
+await newUser
+.save()
+.catch((error) =>
+Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, util.format(error))
+);
+return await Image_Button(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.A𝖗𝖌𝖘,
+"./Vlkyre👗Skins/Vlkyre_DB.png",
+`🧈Added To DB for Current command First Time!`
+);
+("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
+} else {
+let clock =userBadge.PermanentLimitTime -(Date.now() - userBadge.CurrentLimitTime);
+if (clock > 0 && userBadge.Limits == 0) {
+userBadge.value = "False";
+await userBadge.save().catch((error) =>Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, error));
+return await 𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙(Vlkyre,ӄӄ,ӄ_counter,Ѷ𝖎𝖔𝖓);
+}
+("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
+if (clock > 0 && !userBadge.Limits == 0) {
+userBadge.value = "True";
+userBadge.Limits = userBadge.Limits - 1;
+await userBadge.save().catch((error) =>Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, error));
+return await 𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙(Vlkyre,ӄӄ,ӄ_counter,Ѷ𝖎𝖔𝖓);
+}
+("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
+if (clock < 0 && userBadge.Limits == 0) {
+if (userBadge.Badge === "🧵Basic 10 Commands") userBadge.Limits = 10;
+if (userBadge.Badge === "🥉Bronze 20 Commands") userBadge.Limits = 20;
+if (userBadge.Badge === "🥈Silver 40 Commands") userBadge.Limits = 40;
+if (userBadge.Badge === "🥇Gold 60 Commands") userBadge.Limits = 60;
+if (userBadge.Badge === "💍Platinum 80 Commands") userBadge.Limits = 80;
+if (userBadge.Badge === "💎Diamond 100 Commands") userBadge.Limits = 100;
+userBadge.CurrentLimitTime = Date.now();
+userBadge.value = "True";
+await userBadge.save().catch((error) =>Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, error));
+return await 𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙(Vlkyre,ӄӄ,ӄ_counter,Ѷ𝖎𝖔𝖓);
+}
+}
+("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
+if (!Vlkyre.fromMe && userBadge.value === "False") {
+let Time = ᴍꜱᴇᴄ(userBadge.PermanentLimitTime -(Date.now() - userBadge.CurrentLimitTime));
+return await Image_Button(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.A𝖗𝖌𝖘,
+"./Vlkyre👗Skins/Vlkyre__Shop.png",
+`
+╔══『 ❗𝐈𝐦𝐩𝐨𝐫𝐭𝐚𝐧𝐭 』
+║⚔️𝗕𝗮𝗱𝗴𝗲: ${userBadge.Badge}
+║💤𝗥𝗲𝗻𝗲𝘄𝘀: ${Time.hours}h ${Time.minutes}m ${Time.seconds}s
+║💡𝐓𝐢𝐩: Buy Higher Badges Using ${prefix}shop
+╚═══════╝`
+);
+}
+}
+);
 }
 }
 }
