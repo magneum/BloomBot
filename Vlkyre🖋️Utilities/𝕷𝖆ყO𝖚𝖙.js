@@ -1,12 +1,12 @@
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
 
-//▷                                              (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!                                           ◁
+//▷                                              (𝐜)Vlyre 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!                                           ◁
 
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
 let fs = require("fs");
 let sequelize = require("sequelize");
-if (fs.existsSync("𝐕𝐥𝐤𝐲𝐫𝐞.env")) {
-require("dotenv").config({ path: "./𝐕𝐥𝐤𝐲𝐫𝐞.env" });
+if (fs.existsSync("Vlyre.env")) {
+require("dotenv").config({ path: "./Vlyre.env" });
 } else {
 require("dotenv");
 }
@@ -21,7 +21,7 @@ return log;
 };
 process.env.DATABASE_URL =
 process.env.DATABASE_URL === undefined
-? "./🕊️𝐕𝐥𝐤𝐲𝐫𝐞🕊️/𝐕𝐥𝐤𝐲𝐫𝐞.db"
+? "./🕊️𝐕𝐥𝐤𝐲𝐫𝐞🕊️/Vlyre.db"
 : process.env.DATABASE_URL;
 let gg =
 process.env.MODS === undefined
@@ -41,10 +41,10 @@ global.owner = gg.split(",");
 global.MONGOOSE = process.env.MongoDb;
 global.DATABASE_URL =
 process.env.DATABASE_URL === undefined
-? "./🕊️𝐕𝐥𝐤𝐲𝐫𝐞🕊️/𝐕𝐥𝐤𝐲𝐫𝐞.db"
+? "./🕊️𝐕𝐥𝐤𝐲𝐫𝐞🕊️/Vlyre.db"
 : process.env.DATABASE_URL;
 global.DATABASE =
-process.env.DATABASE_URL === "./🕊️𝐕𝐥𝐤𝐲𝐫𝐞🕊️/𝐕𝐥𝐤𝐲𝐫𝐞.db"
+process.env.DATABASE_URL === "./🕊️𝐕𝐥𝐤𝐲𝐫𝐞🕊️/Vlyre.db"
 ? new sequelize.Sequelize({
 dialect: "sqlite",
 storage: process.env.DATABASE_URL,
@@ -58,9 +58,9 @@ dialectOptions: { ssl: { require: true, rejectUnauthorized: false } },
 });
 global.prefix = process.env.PREFIX || ".";
 global.port = process.env.PORT || 8080;
-global.packname = "𝐕𝐥𝐤𝐲𝐫𝐞";
-global.author = "𝐕𝐥𝐤𝐲𝐫𝐞";
-global.name = "𝐕𝐥𝐤𝐲𝐫𝐞";
+global.packname = "Vlyre";
+global.author = "Vlyre";
+global.name = "Vlyre";
 global.APIs = {
 nrtm: "https://nurutomo.herokuapp.com",
 dzx: "https://api.dhamzxploit.my.id",
@@ -98,6 +98,6 @@ name in global.APIs ? global.APIs[name] : name
 : "");
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
 
-//▷                                              (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!                                           ◁
+//▷                                              (𝐜)Vlyre 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!                                           ◁
 
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
