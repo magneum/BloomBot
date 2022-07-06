@@ -12,8 +12,7 @@
 // ╚════════════╝
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 require("../Vlkyre🖋️Utilities/𝕷𝖆ყO𝖚𝖙");
-let ᴍꜱᴇᴄ = require("parse-ms");
-let git = require("simple-get")();
+let ᴍꜱ = require("parse-ms");
 let { 𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙 } = require("./𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙");
 let ProTon = require("../Vlkyre🌗Events/ProTon");
 let { Caught } = require("../Vlkyre👒Hat/Caught");
@@ -191,7 +190,7 @@ return await ɴᴇᴡᴜꜱᴇʀᴄ
 .save()
 .catch((error) => Caught(ӄӄ, Vlkyre, error));
 } else {
-let ᴄʟᴏᴄᴋ = ᴍꜱᴇᴄ(
+let ᴄʟᴏᴄᴋ = ᴍꜱ(
 ꜱᴇʀᴄ.PermaTime - (Date.now() - ꜱᴇʀᴄ.LastTime)
 );
 if (ꜱᴇʀᴄ.PermaTime - (Date.now() - ꜱᴇʀᴄ.LastTime) > 0) {
@@ -230,10 +229,10 @@ PermanentLimitTime: 43200000,
 await newUser
 .save()
 .catch((error) =>
-Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, util.format(error))
+Caught(ӄӄ, Vlkyre, util.format(error))
 );
 return await Image_Button(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄӄ,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/Vlkyre_DB.png",
@@ -241,36 +240,68 @@ Vlkyre.A𝖗𝖌𝖘,
 );
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 } else {
-let clock =userBadge.PermanentLimitTime -(Date.now() - userBadge.CurrentLimitTime);
+let clock =
+userBadge.PermanentLimitTime -
+(Date.now() - userBadge.CurrentLimitTime);
 if (clock > 0 && userBadge.Limits == 0) {
 userBadge.value = "False";
-await userBadge.save().catch((error) =>Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, error));
-return await 𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙(Vlkyre,ӄӄ,ӄ_counter,Ѷ𝖎𝖔𝖓);
+await userBadge
+.save()
+.catch((error) => Caught(ӄӄ, Vlkyre, error));
+return await 𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙(
+Vlkyre,
+ӄӄ,
+ӄ_counter,
+Ѷ𝖎𝖔𝖓
+);
 }
 if (clock > 0 && !userBadge.Limits == 0) {
 userBadge.value = "True";
 userBadge.Limits = userBadge.Limits - 1;
-await userBadge.save().catch((error) =>Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, error));
-return await 𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙(Vlkyre,ӄӄ,ӄ_counter,Ѷ𝖎𝖔𝖓);
+await userBadge
+.save()
+.catch((error) => Caught(ӄӄ, Vlkyre, error));
+return await 𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙(
+Vlkyre,
+ӄӄ,
+ӄ_counter,
+Ѷ𝖎𝖔𝖓
+);
 }
 if (clock < 0 && userBadge.Limits == 0) {
-if (userBadge.Badge === "🧵Basic 10 Commands") userBadge.Limits = 10;
-if (userBadge.Badge === "🥉Bronze 20 Commands") userBadge.Limits = 20;
-if (userBadge.Badge === "🥈Silver 40 Commands") userBadge.Limits = 40;
-if (userBadge.Badge === "🥇Gold 60 Commands") userBadge.Limits = 60;
-if (userBadge.Badge === "💍Platinum 80 Commands") userBadge.Limits = 80;
-if (userBadge.Badge === "💎Diamond 100 Commands") userBadge.Limits = 100;
+if (userBadge.Badge === "🧵Basic 10 Commands")
+userBadge.Limits = 10;
+if (userBadge.Badge === "🥉Bronze 20 Commands")
+userBadge.Limits = 20;
+if (userBadge.Badge === "🥈Silver 40 Commands")
+userBadge.Limits = 40;
+if (userBadge.Badge === "🥇Gold 60 Commands")
+userBadge.Limits = 60;
+if (userBadge.Badge === "💍Platinum 80 Commands")
+userBadge.Limits = 80;
+if (userBadge.Badge === "💎Diamond 100 Commands")
+userBadge.Limits = 100;
 userBadge.CurrentLimitTime = Date.now();
 userBadge.value = "True";
-await userBadge.save().catch((error) =>Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, error));
-return await 𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙(Vlkyre,ӄӄ,ӄ_counter,Ѷ𝖎𝖔𝖓);
+await userBadge
+.save()
+.catch((error) => Caught(ӄӄ, Vlkyre, error));
+return await 𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙(
+Vlkyre,
+ӄӄ,
+ӄ_counter,
+Ѷ𝖎𝖔𝖓
+);
 }
 }
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 if (userBadge.value === "False") {
-let Time = ᴍꜱᴇᴄ(userBadge.PermanentLimitTime -(Date.now() - userBadge.CurrentLimitTime));
+let Time = ᴍꜱ(
+userBadge.PermanentLimitTime -
+(Date.now() - userBadge.CurrentLimitTime)
+);
 return await Image_Button(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄӄ,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/Vlkyre__Shop.png",
