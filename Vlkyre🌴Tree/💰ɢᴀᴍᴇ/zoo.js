@@ -83,7 +83,7 @@ return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
-"./Vlkyre👗Skins/𝐕𝐥𝐤𝐲𝐫𝐞_DB.png",
+"./Vlkyre👗Skins/Vlkyre_DB.png",
 `╔◇══════════◇╗
 ┊ 𝐏𝐨𝐤𝐞𝐦𝐨𝐧🦋𝐇𝐮𝐧𝐭𝐢𝐧𝐠
 ┊ 𝐌𝐢𝐧𝐞𝐜𝐫𝐚𝐟𝐭 🪵 𝐄𝐝𝐢𝐭𝐢𝐨𝐧
@@ -113,7 +113,7 @@ return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
-"./Vlkyre👗Skins/𝐕𝐥𝐤𝐲𝐫𝐞_Forest.png",
+"./Vlkyre👗Skins/Vlkyre_Forest.png",
 `╔◇══════════◇╗
 ┊  𝐙𝐨𝐨🐆𝐎𝐰𝐧𝐞𝐫
 ╚◇══════════◇╝
@@ -131,7 +131,7 @@ return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
-"./Vlkyre👗Skins/𝐕𝐥𝐤𝐲𝐫𝐞_Forest.png",
+"./Vlkyre👗Skins/Vlkyre_Forest.png",
 `╔◇══════════◇╗
 ┊  𝐙𝐨𝐨🐆𝐎𝐰𝐧𝐞𝐫
 ╚◇══════════◇╝
@@ -162,7 +162,7 @@ return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
-"./Vlkyre👗Skins/𝐕𝐥𝐤𝐲𝐫𝐞_Forest.png",
+"./Vlkyre👗Skins/Vlkyre_Forest.png",
 `╔◇══════════◇╗
 ┊  𝐙𝐨𝐨🐆𝐎𝐰𝐧𝐞𝐫
 ╚◇══════════◇╝

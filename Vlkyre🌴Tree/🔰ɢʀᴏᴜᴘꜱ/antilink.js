@@ -87,7 +87,7 @@ return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
-"./Vlkyre👗Skins/𝐕𝐥𝐤𝐲𝐫𝐞_Matte.png",
+"./Vlkyre👗Skins/Vlkyre_Matte.png",
 `📜𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${Vlkyre.groupMetadata.subject || ""}
 🔗𝐀𝐧𝐭𝐢𝐥𝐢𝐧𝐤: ✅On`
 );
@@ -96,7 +96,7 @@ return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
-"./Vlkyre👗Skins/𝐕𝐥𝐤𝐲𝐫𝐞_Matte.png",
+"./Vlkyre👗Skins/Vlkyre_Matte.png",
 `📜𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${Vlkyre.groupMetadata.subject || ""}
 🔗𝐀𝐧𝐭𝐢𝐥𝐢𝐧𝐤: ✅On`
 );
@@ -116,7 +116,7 @@ return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
-"./Vlkyre👗Skins/𝐕𝐥𝐤𝐲𝐫𝐞_Matte.png",
+"./Vlkyre👗Skins/Vlkyre_Matte.png",
 `📜𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${Vlkyre.groupMetadata.subject || ""}
 🔗𝐀𝐧𝐭𝐢𝐥𝐢𝐧𝐤: ❌OFF`
 );
@@ -126,7 +126,7 @@ return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
-"./Vlkyre👗Skins/𝐕𝐥𝐤𝐲𝐫𝐞_Matte.png",
+"./Vlkyre👗Skins/Vlkyre_Matte.png",
 `📜𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${Vlkyre.groupMetadata.subject || ""}
 🔗𝐀𝐧𝐭𝐢𝐥𝐢𝐧𝐤: ❌OFF`
 );

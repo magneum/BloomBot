@@ -82,7 +82,7 @@ return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
-"./Vlkyre👗Skins/𝐕𝐥𝐤𝐲𝐫𝐞_DB.png",
+"./Vlkyre👗Skins/Vlkyre_DB.png",
 `╔◇══════════◇╗
 ┊𝐕𝐥𝐤𝐲𝐫𝐞🐡𝐏𝐨𝐧𝐝
 ╚◇══════════◇╝
@@ -98,7 +98,7 @@ return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
-"./Vlkyre👗Skins/𝐕𝐥𝐤𝐲𝐫𝐞_FIsh.png",
+"./Vlkyre👗Skins/Vlkyre_FIsh.png",
 `╔◇══════════◇╗
 ┊𝐕𝐥𝐤𝐲𝐫𝐞🐡𝐏𝐨𝐧𝐝
 ╚◇══════════◇╝
@@ -126,7 +126,7 @@ return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
-"./Vlkyre👗Skins/𝐕𝐥𝐤𝐲𝐫𝐞_FIsh.png",
+"./Vlkyre👗Skins/Vlkyre_FIsh.png",
 `╔◇══════════◇╗
 ┊𝐕𝐥𝐤𝐲𝐫𝐞🐡𝐏𝐨𝐧𝐝
 ╚◇══════════◇╝
