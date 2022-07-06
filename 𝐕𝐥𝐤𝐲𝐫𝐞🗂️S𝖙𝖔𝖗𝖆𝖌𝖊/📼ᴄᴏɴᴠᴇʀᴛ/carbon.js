@@ -50,8 +50,6 @@ isSenderAdmin,
 isSenderTUF,
 commandName,
 body,
-mentionByTag,
-mentionByReply
 ) => {
 let Themes = [
 `3024 night`,

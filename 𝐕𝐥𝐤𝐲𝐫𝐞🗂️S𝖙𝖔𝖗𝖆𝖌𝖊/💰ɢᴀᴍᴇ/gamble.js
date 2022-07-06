@@ -51,8 +51,6 @@ isSenderAdmin,
 isSenderTUF,
 commandName,
 body,
-mentionByTag,
-mentionByReply
 ) => {
 let FormatColor = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;
 let FormatAmount = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?rpb]+/;

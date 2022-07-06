@@ -48,8 +48,6 @@ isSenderAdmin,
 isSenderTUF,
 commandName,
 body,
-mentionByTag,
-mentionByReply
 ) => {
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 let waifud = await axios.get(`https://waifu.pics/api/sfw/neko`);

@@ -51,8 +51,6 @@ isSenderAdmin,
 isSenderTUF,
 commandName,
 body,
-mentionByTag,
-mentionByReply
 ) => {
 if (!𝐕𝐥𝐤𝐲𝐫𝐞.isBotAdmin && !𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF && !𝐕𝐥𝐤𝐲𝐫𝐞.fromMe) {
 return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, 𝐕𝐥𝐤𝐲𝐫𝐞);

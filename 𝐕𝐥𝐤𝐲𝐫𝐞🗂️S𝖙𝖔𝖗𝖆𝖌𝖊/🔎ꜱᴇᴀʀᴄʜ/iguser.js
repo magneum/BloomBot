@@ -50,8 +50,6 @@ isSenderAdmin,
 isSenderTUF,
 commandName,
 body,
-mentionByTag,
-mentionByReply
 ) => {
 try {
 if (!F𝖚𝖑𝖑_A𝖗𝖌𝖘) {

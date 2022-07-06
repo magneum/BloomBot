@@ -55,8 +55,6 @@ isSenderAdmin,
 isSenderTUF,
 commandName,
 body,
-mentionByTag,
-mentionByReply
 ) => {
 let used = process.memoryUsage();
 let cpus = os.cpus().map((cpu) => {

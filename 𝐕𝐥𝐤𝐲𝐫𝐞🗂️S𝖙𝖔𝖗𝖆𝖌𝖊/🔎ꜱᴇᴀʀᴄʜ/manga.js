@@ -50,8 +50,6 @@ isSenderAdmin,
 isSenderTUF,
 commandName,
 body,
-mentionByTag,
-mentionByReply
 ) => {
 let { Manga } = require(`@shineiichijo/marika`);
 let manga = new Manga();

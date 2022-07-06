@@ -50,8 +50,6 @@ isSenderAdmin,
 isSenderTUF,
 commandName,
 body,
-mentionByTag,
-mentionByReply
 ) => {
 return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,

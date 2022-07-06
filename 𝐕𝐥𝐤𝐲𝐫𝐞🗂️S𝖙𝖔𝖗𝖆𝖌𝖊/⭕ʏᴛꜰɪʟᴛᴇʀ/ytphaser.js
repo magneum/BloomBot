@@ -55,8 +55,6 @@ isSenderAdmin,
 isSenderTUF,
 commandName,
 body,
-mentionByTag,
-mentionByReply
 ) => { /*════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════*/
 if (𝐕𝐥𝐤𝐲𝐫𝐞.A𝖗𝖌𝖘.length === 0) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(

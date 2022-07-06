@@ -50,8 +50,6 @@ isSenderAdmin,
 isSenderTUF,
 commandName,
 body,
-mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
 ) => {
 if (!𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(

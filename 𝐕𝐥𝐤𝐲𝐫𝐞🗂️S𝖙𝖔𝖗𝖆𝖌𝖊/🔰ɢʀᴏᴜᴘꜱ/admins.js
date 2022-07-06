@@ -50,8 +50,6 @@ isSenderAdmin,
 isSenderTUF,
 commandName,
 body,
-mentionByTag,
-mentionByReply
 ) => {
 let 𝕯𝖎𝖘𝖕𝖑𝖆𝖞;
 let 𝕮𝖔𝖓𝖙𝖊𝖓𝖙;

@@ -54,8 +54,6 @@ isSenderAdmin,
 isSenderTUF,
 commandName,
 body,
-mentionByTag,
-mentionByReply
 ) => {
 let Genius = require(`genius-lyrics`);
 let Client = new Genius.Client();

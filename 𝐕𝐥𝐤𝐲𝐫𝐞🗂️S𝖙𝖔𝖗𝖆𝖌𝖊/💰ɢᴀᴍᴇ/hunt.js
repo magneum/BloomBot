@@ -55,8 +55,6 @@ isSenderAdmin,
 isSenderTUF,
 commandName,
 body,
-mentionByTag,
-mentionByReply
 ) => {
 let BasePoke = PokeList[Math.floor(Math.random() * PokeList.length)];
 let Worth = Math.ceil(Math.random() * 500);

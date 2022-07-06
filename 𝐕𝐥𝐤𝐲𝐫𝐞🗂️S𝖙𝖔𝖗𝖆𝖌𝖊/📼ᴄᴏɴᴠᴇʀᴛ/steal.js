@@ -50,8 +50,6 @@ isSenderAdmin,
 isSenderTUF,
 commandName,
 body,
-mentionByTag,
-mentionByReply
 ) => {
 let Mme = (𝐕𝐥𝐤𝐲𝐫𝐞.quoted.msg || 𝐕𝐥𝐤𝐲𝐫𝐞.quoted).mimetype || "";
 if (!quoted) {
