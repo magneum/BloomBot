@@ -212,8 +212,7 @@ if (!𝐕𝐥𝐤𝐲𝐫𝐞) return 𝐕𝐥𝐤𝐲𝐫𝐞;
 let M = proto.WebMessageInfo;
 if (𝐕𝐥𝐤𝐲𝐫𝐞.key) {
 𝐕𝐥𝐤𝐲𝐫𝐞.id = 𝐕𝐥𝐤𝐲𝐫𝐞.key.id;
-𝐕𝐥𝐤𝐲𝐫𝐞.isBaileys =
-𝐕𝐥𝐤𝐲𝐫𝐞.id.startsWith("BAE5") && 𝐕𝐥𝐤𝐲𝐫𝐞.id.length === 16;
+𝐕𝐥𝐤𝐲𝐫𝐞.isBaileys = 𝐕𝐥𝐤𝐲𝐫𝐞.id.startsWith("BAE5") && 𝐕𝐥𝐤𝐲𝐫𝐞.id.length === 16;
 𝐕𝐥𝐤𝐲𝐫𝐞.chatID = 𝐕𝐥𝐤𝐲𝐫𝐞.key.remoteJid;
 𝐕𝐥𝐤𝐲𝐫𝐞.fromMe = 𝐕𝐥𝐤𝐲𝐫𝐞.key.fromMe;
 𝐕𝐥𝐤𝐲𝐫𝐞.isGroup = 𝐕𝐥𝐤𝐲𝐫𝐞.chatID.endsWith("@g.us");
@@ -246,6 +245,26 @@ getContentType(𝐕𝐥𝐤𝐲𝐫𝐞.message[𝐕𝐥𝐤𝐲𝐫𝐞.mtype].
 𝐕𝐥𝐤𝐲𝐫𝐞.msg.selectedButtonId) ||
 (𝐕𝐥𝐤𝐲𝐫𝐞.mtype == "viewOnceMessage" && 𝐕𝐥𝐤𝐲𝐫𝐞.msg.caption) ||
 𝐕𝐥𝐤𝐲𝐫𝐞.text;
+𝐕𝐥𝐤𝐲𝐫𝐞.Body =
+𝐕𝐥𝐤𝐲𝐫𝐞.mtype === "conversation"
+? 𝐕𝐥𝐤𝐲𝐫𝐞.message.conversation
+: 𝐕𝐥𝐤𝐲𝐫𝐞.mtype == "imageMessage"
+? 𝐕𝐥𝐤𝐲𝐫𝐞.message.imageMessage.caption
+: 𝐕𝐥𝐤𝐲𝐫𝐞.mtype == "videoMessage"
+? 𝐕𝐥𝐤𝐲𝐫𝐞.message.videoMessage.caption
+: 𝐕𝐥𝐤𝐲𝐫𝐞.mtype == "extendedTextMessage"
+? 𝐕𝐥𝐤𝐲𝐫𝐞.message.extendedTextMessage.text
+: 𝐕𝐥𝐤𝐲𝐫𝐞.mtype == "buttonsResponseMessage"
+? 𝐕𝐥𝐤𝐲𝐫𝐞.message.buttonsResponseMessage.selectedButtonId
+: 𝐕𝐥𝐤𝐲𝐫𝐞.mtype == "listResponseMessage"
+? 𝐕𝐥𝐤𝐲𝐫𝐞.message.listResponseMessage.singleSelectReply.selectedRowId
+: 𝐕𝐥𝐤𝐲𝐫𝐞.mtype == "templateButtonReplyMessage"
+? 𝐕𝐥𝐤𝐲𝐫𝐞.message.templateButtonReplyMessage.selectedId
+: 𝐕𝐥𝐤𝐲𝐫𝐞.mtype === "messageContextInfo"
+? 𝐕𝐥𝐤𝐲𝐫𝐞.message.buttonsResponseMessage?.selectedButtonId ||
+𝐕𝐥𝐤𝐲𝐫𝐞.message.listResponseMessage?.singleSelectReply.selectedRowId ||
+𝐕𝐥𝐤𝐲𝐫𝐞.text
+: "";
 let quoted = (𝐕𝐥𝐤𝐲𝐫𝐞.quoted = 𝐕𝐥𝐤𝐲𝐫𝐞.msg.contextInfo
 ? 𝐕𝐥𝐤𝐲𝐫𝐞.msg.contextInfo.quotedMessage
 : null);
@@ -265,15 +284,11 @@ text: 𝐕𝐥𝐤𝐲𝐫𝐞.quoted,
 };
 𝐕𝐥𝐤𝐲𝐫𝐞.quoted.mtype = type;
 𝐕𝐥𝐤𝐲𝐫𝐞.quoted.id = 𝐕𝐥𝐤𝐲𝐫𝐞.msg.contextInfo.stanzaId;
-𝐕𝐥𝐤𝐲𝐫𝐞.quoted.chatID =
-𝐕𝐥𝐤𝐲𝐫𝐞.msg.contextInfo.remoteJid || 𝐕𝐥𝐤𝐲𝐫𝐞.chatID;
+𝐕𝐥𝐤𝐲𝐫𝐞.quoted.chatID = 𝐕𝐥𝐤𝐲𝐫𝐞.msg.contextInfo.remoteJid || 𝐕𝐥𝐤𝐲𝐫𝐞.chatID;
 𝐕𝐥𝐤𝐲𝐫𝐞.quoted.isBaileys = 𝐕𝐥𝐤𝐲𝐫𝐞.quoted.id
-? 𝐕𝐥𝐤𝐲𝐫𝐞.quoted.id.startsWith("BAE5") &&
-𝐕𝐥𝐤𝐲𝐫𝐞.quoted.id.length === 16
+? 𝐕𝐥𝐤𝐲𝐫𝐞.quoted.id.startsWith("BAE5") && 𝐕𝐥𝐤𝐲𝐫𝐞.quoted.id.length === 16
 : false;
-𝐕𝐥𝐤𝐲𝐫𝐞.quoted.sender = 𝖍𝖆𝖜ӄ.decodeJid(
-𝐕𝐥𝐤𝐲𝐫𝐞.msg.contextInfo.participant
-);
+𝐕𝐥𝐤𝐲𝐫𝐞.quoted.sender = 𝖍𝖆𝖜ӄ.decodeJid(𝐕𝐥𝐤𝐲𝐫𝐞.msg.contextInfo.participant);
 𝐕𝐥𝐤𝐲𝐫𝐞.quoted.fromMe =
 𝐕𝐥𝐤𝐲𝐫𝐞.quoted.sender === (𝖍𝖆𝖜ӄ.user && 𝖍𝖆𝖜ӄ.user.id);
 𝐕𝐥𝐤𝐲𝐫𝐞.quoted.text =
@@ -303,11 +318,8 @@ message: quoted,
 }));
 𝐕𝐥𝐤𝐲𝐫𝐞.quoted.delete = () =>
 𝖍𝖆𝖜ӄ.sendMessage(𝐕𝐥𝐤𝐲𝐫𝐞.quoted.chatID, { delete: vM.key });
-𝐕𝐥𝐤𝐲𝐫𝐞.quoted.copyNForward = (
-jid,
-forceForward = false,
-options = {}
-) => 𝖍𝖆𝖜ӄ.copyNForward(jid, vM, forceForward, options);
+𝐕𝐥𝐤𝐲𝐫𝐞.quoted.copyNForward = (jid, forceForward = false, options = {}) =>
+𝖍𝖆𝖜ӄ.copyNForward(jid, vM, forceForward, options);
 𝐕𝐥𝐤𝐲𝐫𝐞.quoted.download = () => 𝖍𝖆𝖜ӄ.downloadMediaMessage(𝐕𝐥𝐤𝐲𝐫𝐞.quoted);
 }
 }
@@ -333,26 +345,6 @@ forceForward = false,
 options = {}
 ) => 𝖍𝖆𝖜ӄ.copyNForward(jid, 𝐕𝐥𝐤𝐲𝐫𝐞, forceForward, options);
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
-𝐕𝐥𝐤𝐲𝐫𝐞.Body =
-𝐕𝐥𝐤𝐲𝐫𝐞.mtype === "conversation"
-? 𝐕𝐥𝐤𝐲𝐫𝐞.message.conversation
-: 𝐕𝐥𝐤𝐲𝐫𝐞.mtype == "imageMessage"
-? 𝐕𝐥𝐤𝐲𝐫𝐞.message.imageMessage.caption
-: 𝐕𝐥𝐤𝐲𝐫𝐞.mtype == "videoMessage"
-? 𝐕𝐥𝐤𝐲𝐫𝐞.message.videoMessage.caption
-: 𝐕𝐥𝐤𝐲𝐫𝐞.mtype == "extendedTextMessage"
-? 𝐕𝐥𝐤𝐲𝐫𝐞.message.extendedTextMessage.text
-: 𝐕𝐥𝐤𝐲𝐫𝐞.mtype == "buttonsResponseMessage"
-? 𝐕𝐥𝐤𝐲𝐫𝐞.message.buttonsResponseMessage.selectedButtonId
-: 𝐕𝐥𝐤𝐲𝐫𝐞.mtype == "listResponseMessage"
-? 𝐕𝐥𝐤𝐲𝐫𝐞.message.listResponseMessage.singleSelectReply.selectedRowId
-: 𝐕𝐥𝐤𝐲𝐫𝐞.mtype == "templateButtonReplyMessage"
-? 𝐕𝐥𝐤𝐲𝐫𝐞.message.templateButtonReplyMessage.selectedId
-: 𝐕𝐥𝐤𝐲𝐫𝐞.mtype === "messageContextInfo"
-? 𝐕𝐥𝐤𝐲𝐫𝐞.message.buttonsResponseMessage?.selectedButtonId ||
-𝐕𝐥𝐤𝐲𝐫𝐞.message.listResponseMessage?.singleSelectReply.selectedRowId ||
-𝐕𝐥𝐤𝐲𝐫𝐞.text
-: "";
 𝐕𝐥𝐤𝐲𝐫𝐞.isCommand = 𝐕𝐥𝐤𝐲𝐫𝐞.Body.startsWith(prefix);
 𝐕𝐥𝐤𝐲𝐫𝐞.isCmd =
 prefix.includes(𝐕𝐥𝐤𝐲𝐫𝐞.Body != "" && 𝐕𝐥𝐤𝐲𝐫𝐞.Body.slice(0, 1)) &&
@@ -378,9 +370,7 @@ let mime = (𝐕𝐥𝐤𝐲𝐫𝐞.quoted.msg || 𝐕𝐥𝐤𝐲𝐫𝐞.quot
 ? await 𝐕𝐥𝐤𝐲𝐫𝐞.groupMetadata.participants
 : "";
 𝐕𝐥𝐤𝐲𝐫𝐞.groupAdmins = 𝐕𝐥𝐤𝐲𝐫𝐞.isGroup
-? await 𝐕𝐥𝐤𝐲𝐫𝐞.participants
-.filter((v) => v.admin !== null)
-.map((v) => v.id)
+? await 𝐕𝐥𝐤𝐲𝐫𝐞.participants.filter((v) => v.admin !== null).map((v) => v.id)
 : "";
 𝐕𝐥𝐤𝐲𝐫𝐞.isBotAdmin = 𝐕𝐥𝐤𝐲𝐫𝐞.isGroup
 ? 𝐕𝐥𝐤𝐲𝐫𝐞.groupAdmins.includes(𝐕𝐥𝐤𝐲𝐫𝐞.botNumber)
