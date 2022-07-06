@@ -191,9 +191,7 @@ return await ɴᴇᴡᴜꜱᴇʀᴄ
 .save()
 .catch((error) => Caught(ӄӄ, Vlkyre, error));
 } else {
-let ᴄʟᴏᴄᴋ = ᴍꜱ(
-ꜱᴇʀᴄ.PermaTime - (Date.now() - ꜱᴇʀᴄ.LastTime)
-);
+let ᴄʟᴏᴄᴋ = ᴍꜱ(ꜱᴇʀᴄ.PermaTime - (Date.now() - ꜱᴇʀᴄ.LastTime));
 if (ꜱᴇʀᴄ.PermaTime - (Date.now() - ꜱᴇʀᴄ.LastTime) > 0) {
 return Vlkyre.reply(
 "*❌𝕰𝖗𝖗𝖔𝖗:* You Need To wait for " +

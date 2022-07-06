@@ -46,7 +46,7 @@ Vlkyre.A𝖗𝖌𝖘,
 } else {
 console.clear();
 console.log(userBg);
-let Re = userBg.PermanentLimitTime - (Date.now() - userBg.CurrentLimitTime);
+let Re = ᴍꜱ(userBg.PermanentLimitTime - (Date.now() - userBg.CurrentLimitTime));
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 if (Re > 0 && userBg.Limits == 0) {
 userBg.value = "False";
