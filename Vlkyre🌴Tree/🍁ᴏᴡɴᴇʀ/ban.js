@@ -46,7 +46,7 @@ let { Caught } = require("../../Vlkyre👒Hat/Caught");
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 exports.ban = async (
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 pushName,
 F𝖚𝖑𝖑_A𝖗𝖌𝖘,
 quoted,
@@ -58,10 +58,10 @@ isSenderTUF,
 commandName,
 body,
 ) => {
-if (!Vlyre.fromMe && !isSenderTUF) {
+if (!Vlkyre.fromMe && !isSenderTUF) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 `*❌ERROR:* Owner & Mod only command!
 
 *⚡USAGE:* ${prefix}${Final_Name} _reply to person to ban_
@@ -69,11 +69,11 @@ ${prefix}${Final_Name} _don't reply to anyone and group will be banned_`
 );
 }
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-if (Vlyre.mentionByReply) {
+if (Vlkyre.mentionByReply) {
 let repliedPerson =
-Vlyre.mtype == "extendedTextMessage" &&
-Vlyre.message.extendedTextMessage.contextInfo != null
-? Vlyre.message.extendedTextMessage.contextInfo.participant || ""
+Vlkyre.mtype == "extendedTextMessage" &&
+Vlkyre.message.extendedTextMessage.contextInfo != null
+? Vlkyre.message.extendedTextMessage.contextInfo.participant || ""
 : "";
 let repliedPersonNum = repliedPerson.substring(
 0,
@@ -91,13 +91,13 @@ ID: repliedPerson,
 });
 await newUser.save();
 return await ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(
-Vlyre.chatID,
+Vlkyre.chatID,
 {
-contextInfo: { mentionedJid: [Vlyre.sender, repliedPerson] },
+contextInfo: { mentionedJid: [Vlkyre.sender, repliedPerson] },
 image: { url: "./Vlkyre👗Skins/𝐕𝐥𝐤𝐲𝐫𝐞_Matte.png" },
 caption: `╔══『 𝐏𝐫𝐨𝐟𝐢𝐥𝐞𝐫® 』
-║ *❣️ɴᴀᴍᴇ:* ${Vlyre.pushName || "No_Name"}
-║ *⚡ɪᴅ:* ${Vlyre.chatID.split("@")[0]}
+║ *❣️ɴᴀᴍᴇ:* ${Vlkyre.pushName || "No_Name"}
+║ *⚡ɪᴅ:* ${Vlkyre.chatID.split("@")[0]}
 ╚═══════╝
 
 
@@ -118,14 +118,14 @@ type: 1,
 headerType: 4,
 },
 {
-quoted: Vlyre,
+quoted: Vlkyre,
 }
 );
 } else {
 return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
-Vlyre.A𝖗𝖌𝖘,
+Vlkyre,
+Vlkyre.A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/𝐕𝐥𝐤𝐲𝐫𝐞_Matte.png",
 `*❌𝗘𝗿𝗿𝗼𝗿:* That Person Is Already banned!`
 );
@@ -133,29 +133,29 @@ Vlyre.A𝖗𝖌𝖘,
 }
 );
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-} else if (!Vlyre.mentionByReply) {
+} else if (!Vlkyre.mentionByReply) {
 await userBanCheck.findOne(
 {
-ID: Vlyre.chatID,
+ID: Vlkyre.chatID,
 },
 async (error, userBan) => {
 if (error) return console.log(error);
 if (!userBan) {
 let newUser = new userBanCheck({
-ID: Vlyre.chatID,
+ID: Vlkyre.chatID,
 });
 await newUser.save();
 return await ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(
-Vlyre.chatID,
+Vlkyre.chatID,
 {
 image: { url: "./Vlkyre👗Skins/𝐕𝐥𝐤𝐲𝐫𝐞_Matte.png" },
 caption: `╔══『 𝐏𝐫𝐨𝐟𝐢𝐥𝐞𝐫® 』
-║ *❣️ɴᴀᴍᴇ:* ${Vlyre.pushName || "No_Name"}
-║ *⚡ɪᴅ:* ${Vlyre.chatID.split("@")[0]}
+║ *❣️ɴᴀᴍᴇ:* ${Vlkyre.pushName || "No_Name"}
+║ *⚡ɪᴅ:* ${Vlkyre.chatID.split("@")[0]}
 ╚═══════╝
 
 
-*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* ${Vlyre.groupMetadata.subject} Group Has Been Banned!`,
+*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* ${Vlkyre.groupMetadata.subject} Group Has Been Banned!`,
 footer: "*⦓ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⦔*",
 buttons: [
 {
@@ -172,16 +172,16 @@ type: 1,
 headerType: 4,
 },
 {
-quoted: Vlyre,
+quoted: Vlkyre,
 }
 );
 } else {
 return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
-Vlyre.A𝖗𝖌𝖘,
+Vlkyre,
+Vlkyre.A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/𝐕𝐥𝐤𝐲𝐫𝐞_Matte.png",
-`*❌𝗘𝗿𝗿𝗼𝗿:* ${Vlyre.groupMetadata.subject} is Already Banned!`
+`*❌𝗘𝗿𝗿𝗼𝗿:* ${Vlkyre.groupMetadata.subject} is Already Banned!`
 );
 }
 }
@@ -190,7 +190,7 @@ Vlyre.A𝖗𝖌𝖘,
 } else {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 `*⚡USAGE:* ${prefix}${Final_Name} _reply to person to ban_
 ${prefix}${Final_Name}* _don't reply to anyone and group will be banned_`
 );

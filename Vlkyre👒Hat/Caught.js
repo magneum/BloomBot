@@ -12,30 +12,30 @@
 // ╚════════════╝
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 require("../Vlkyre🖋️Utilities/𝕷𝖆ყO𝖚𝖙");
-exports.Caught = async (ӄӄ, Vlyre, 𝕮𝖔𝖓𝖙𝖊𝖓𝖙) => {
+exports.Caught = async (ӄӄ, Vlkyre, 𝕮𝖔𝖓𝖙𝖊𝖓𝖙) => {
 await ӄӄ.sendMessage(
 "120363020792949649@g.us",
 `📌*Message:* Attention Every Admin/Mods of This Group!
-🎭 *ᴄʜᴀᴛɪᴅ:* ${Vlyre.chatID.split("@")[0]}
-🕊️ *ɴᴀᴍᴇ:* ${Vlyre.pushName || "ɴᴏ_ɴᴀᴍᴇ"}
-❓*ᴄᴏᴍᴍᴀɴᴅ:* ${Vlyre.commandName}
+🎭 *ᴄʜᴀᴛɪᴅ:* ${Vlkyre.chatID.split("@")[0]}
+🕊️ *ɴᴀᴍᴇ:* ${Vlkyre.pushName || "ɴᴏ_ɴᴀᴍᴇ"}
+❓*ᴄᴏᴍᴍᴀɴᴅ:* ${Vlkyre.commandName}
 
 🐞*ʙᴜɢ:* ${𝕮𝖔𝖓𝖙𝖊𝖓𝖙}`,
 {
-mentions: Vlyre.groupAdmins,
+mentions: Vlkyre.groupAdmins,
 }
 );
 return await ӄӄ.sendMessage(
-Vlyre.chatID,
+Vlkyre.chatID,
 {
-contextInfo: { mentionedJid: [Vlyre.sender] },
+contextInfo: { mentionedJid: [Vlkyre.sender] },
 image: { url: "./Vlkyre👗Skins/𝐕𝐥𝐤𝐲𝐫𝐞_404.png" },
 caption: `╔══『 𝐏𝐫𝐨𝐟𝐢𝐥𝐞𝐫® 』
-║🕊️ *ɴᴀᴍᴇ:* ${Vlyre.pushName || "ɴᴏ_ɴᴀᴍᴇ"}
-║🎭 *ᴄʜᴀᴛɪᴅ:* ${Vlyre.chatID.split("@")[0]}
+║🕊️ *ɴᴀᴍᴇ:* ${Vlkyre.pushName || "ɴᴏ_ɴᴀᴍᴇ"}
+║🎭 *ᴄʜᴀᴛɪᴅ:* ${Vlkyre.chatID.split("@")[0]}
 ╚═══════╝
 
-❗ Vlyre 𝐀𝐏𝐈 𝐄𝐫𝐫𝐨𝐫 ❗
+❗ Vlkyre 𝐀𝐏𝐈 𝐄𝐫𝐫𝐨𝐫 ❗
 Please Try Again Later!`,
 footer: "*⦓ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⦔*\n▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ ◁",
 buttons: [
@@ -48,7 +48,7 @@ type: 1,
 headerType: 4,
 },
 {
-quoted: Vlyre,
+quoted: Vlkyre,
 }
 );
 };

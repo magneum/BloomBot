@@ -47,7 +47,7 @@ let { Caught } = require("../../Vlkyre👒Hat/Caught");
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 exports.pokemon = async (
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 pushName,
 F𝖚𝖑𝖑_A𝖗𝖌𝖘,
 quoted,
@@ -63,7 +63,7 @@ try {
 if (!F𝖚𝖑𝖑_A𝖗𝖌𝖘) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 `*❌ERROR:* Which Pokemon Do You Want To Get information about?
 
 *⚡USAGE:* ${prefix}${Final_Name} <Pokemon>`
@@ -76,7 +76,7 @@ let { data: data } = await axios.get(
 if (!data.name) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 `*❌ERROR:* No suck pokemon!
 
 *⚡USAGE:* ${prefix}${Final_Name} <Pokemon>`
@@ -84,8 +84,8 @@ Vlyre,
 }
 return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
-Vlyre.A𝖗𝖌𝖘,
+Vlkyre,
+Vlkyre.A𝖗𝖌𝖘,
 data.sprites.front_default,
 `💫 *Name: ${data.name}*
 〽️ *Pokedex ID: ${data.id}*
@@ -102,7 +102,7 @@ data.sprites.front_default,
 🎐 *Speed: ${data.stats[5].base_stat}*`
 );
 } catch (Èrrðr) {
-Vlyre.reply(`An Error Occurred`);
+Vlkyre.reply(`An Error Occurred`);
 console.log(Èrrðr);
 }
 };

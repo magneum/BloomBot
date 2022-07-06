@@ -12,16 +12,16 @@
 // ╚════════════╝
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 require("../Vlkyre🖋️Utilities/𝕷𝖆ყO𝖚𝖙");
-exports.Sender_Not_Admin = async (ӄӄ, Vlyre) => {
-// await ӄӄ.sendPresenceUpdate("composing", Vlyre.chatID);
+exports.Sender_Not_Admin = async (ӄӄ, Vlkyre) => {
+// await ӄӄ.sendPresenceUpdate("composing", Vlkyre.chatID);
 await ӄӄ.sendMessage(
-Vlyre.chatID,
+Vlkyre.chatID,
 {
-contextInfo: { mentionedJid: [Vlyre.sender] },
+contextInfo: { mentionedJid: [Vlkyre.sender] },
 image: { url: "./Vlkyre👗Skins/𝐕𝐥𝐤𝐲𝐫𝐞_Red.png" },
 caption: `╔══『 𝐏𝐫𝐨𝐟𝐢𝐥𝐞𝐫® 』
-║ *❣️ ɴᴀᴍᴇ:* ${Vlyre.pushName || "No_Name"}
-║ *⚡ ɪᴅ:* ${Vlyre.chatID.split("@")[0]}
+║ *❣️ ɴᴀᴍᴇ:* ${Vlkyre.pushName || "No_Name"}
+║ *⚡ ɪᴅ:* ${Vlkyre.chatID.split("@")[0]}
 ╚═══════╝
 
 
@@ -42,7 +42,7 @@ type: 1,
 headerType: 4,
 },
 {
-quoted: Vlyre,
+quoted: Vlkyre,
 }
 );
 };

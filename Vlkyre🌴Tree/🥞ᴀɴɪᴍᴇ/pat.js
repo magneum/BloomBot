@@ -51,7 +51,7 @@ let { Caught } = require("../../Vlkyre👒Hat/Caught");
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 exports.pat = async (
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 pushName,
 F𝖚𝖑𝖑_A𝖗𝖌𝖘,
 quoted,
@@ -63,17 +63,17 @@ isSenderTUF,
 commandName,
 body,
 ) => {
-let ɢᴏᴛꜰɪʟᴇ = `./Vlkyre🎒Bag/${Vlyre.key.id}}.gif`;
-let ɢɪᴠᴇꜰɪʟᴇ = `./Vlkyre🎒Bag/${Vlyre.key.id}}.mp4`;
+let ɢᴏᴛꜰɪʟᴇ = `./Vlkyre🎒Bag/${Vlkyre.key.id}}.gif`;
+let ɢɪᴠᴇꜰɪʟᴇ = `./Vlkyre🎒Bag/${Vlkyre.key.id}}.mp4`;
 let ꜰɪɴᴀʟʟɪɴᴋ = await fetchJson(`https://api.waifu.pics/sfw/${Final_Name}`);
 const Response = await axios.get(ꜰɪɴᴀʟʟɪɴᴋ.url, {
 responseType: "arraybuffer",
 });
 if (!Response.data) {
-return await Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlyre, Èrrðr);
+return await Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, Èrrðr);
 }
 let dl𝐀𝐩𝐢 = new DownloaderHelper(Response.data, "./Vlkyre🎒Bag", {
-fileName: `${Vlyre.key.id}}.gif`,
+fileName: `${Vlkyre.key.id}}.gif`,
 retry: true,
 });
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
@@ -88,91 +88,91 @@ FFmpeg(ɢᴏᴛꜰɪʟᴇ)
 .save(ɢɪᴠᴇꜰɪʟᴇ)
 .on("end", async () => {
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
-if (Vlyre.mentionByReply) {
+if (Vlkyre.mentionByReply) {
 let ʀᴇᴘʟɪᴇᴅ =
-Vlyre.mtype == "extendedTextMessage" &&
-Vlyre.message.extendedTextMessage.contextInfo != null
-? Vlyre.message.extendedTextMessage.contextInfo.participant ||
+Vlkyre.mtype == "extendedTextMessage" &&
+Vlkyre.message.extendedTextMessage.contextInfo != null
+? Vlkyre.message.extendedTextMessage.contextInfo.participant ||
 ""
 : "";
 await ӄ𝖗𝖞ӄ𝖓𝖟
 .sendMessage(
-Vlyre.chatID,
+Vlkyre.chatID,
 {
 video: fs.readFileSync(ɢɪᴠᴇꜰɪʟᴇ),
 gifPlayback: true,
-mentions: [Vlyre.sender, ʀᴇᴘʟɪᴇᴅ],
+mentions: [Vlkyre.sender, ʀᴇᴘʟɪᴇᴅ],
 caption: `*⦓ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⦔*
 
 
-╔══「 Vlyre 𝐏𝐫𝐨𝐭𝐨® 」
-║▷ ꜰʀᴏᴍ: @${Vlyre.sender.split(`@`)[0] || ""}
+╔══「 Vlkyre 𝐏𝐫𝐨𝐭𝐨® 」
+║▷ ꜰʀᴏᴍ: @${Vlkyre.sender.split(`@`)[0] || ""}
 ║▷ ᴛᴏ: @${ʀᴇᴘʟɪᴇᴅ.split(`@`)[0] || ""}
 ║▷ ꜰᴇᴇʟɪɴɢ: ${Final_Name}
 ╚═══════╝`,
 },
-{ quoted: Vlyre }
+{ quoted: Vlkyre }
 )
 .then(fs.unlinkSync(ɢɪᴠᴇꜰɪʟᴇ, ɢᴏᴛꜰɪʟᴇ))
-.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlyre, Èrrðr));
+.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, Èrrðr));
 return;
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
-} else if (Vlyre.A𝖗𝖌𝖘[0] && Vlyre.A𝖗𝖌𝖘[0].startsWith("@")) {
-let mention = Vlyre.mentionByTag;
+} else if (Vlkyre.A𝖗𝖌𝖘[0] && Vlkyre.A𝖗𝖌𝖘[0].startsWith("@")) {
+let mention = Vlkyre.mentionByTag;
 let 𝕻𝖊𝖗𝖘𝖔𝖓 =
-(await mention[0]) || Vlyre.msg.contextInfo.participant;
+(await mention[0]) || Vlkyre.msg.contextInfo.participant;
 await ӄ𝖗𝖞ӄ𝖓𝖟
 .sendMessage(
-Vlyre.chatID,
+Vlkyre.chatID,
 {
 video: fs.readFileSync(ɢɪᴠᴇꜰɪʟᴇ),
 gifPlayback: true,
-mentions: [Vlyre.sender, 𝕻𝖊𝖗𝖘𝖔𝖓],
+mentions: [Vlkyre.sender, 𝕻𝖊𝖗𝖘𝖔𝖓],
 caption: `*⦓ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⦔*
 
 
-╔══「 Vlyre 𝐏𝐫𝐨𝐭𝐨® 」
-║▷ ꜰʀᴏᴍ: @${Vlyre.sender.split(`@`)[0] || ""}
+╔══「 Vlkyre 𝐏𝐫𝐨𝐭𝐨® 」
+║▷ ꜰʀᴏᴍ: @${Vlkyre.sender.split(`@`)[0] || ""}
 ║▷ ᴛᴏ: @${𝕻𝖊𝖗𝖘𝖔𝖓.split(`@`)[0] || ""}
 ║▷ ꜰᴇᴇʟɪɴɢ: ${Final_Name}
 ╚═══════╝`,
 },
-{ quoted: Vlyre }
+{ quoted: Vlkyre }
 )
 .then(fs.unlinkSync(ɢɪᴠᴇꜰɪʟᴇ, ɢᴏᴛꜰɪʟᴇ))
-.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlyre, Èrrðr));
+.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, Èrrðr));
 return;
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 } else {
 await ӄ𝖗𝖞ӄ𝖓𝖟
 .sendMessage(
-Vlyre.chatID,
+Vlkyre.chatID,
 {
 video: fs.readFileSync(ɢɪᴠᴇꜰɪʟᴇ),
 gifPlayback: true,
-mentions: [Vlyre.sender, Vlyre.sender],
+mentions: [Vlkyre.sender, Vlkyre.sender],
 caption: `*⦓ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⦔*
 
 
-╔══「 Vlyre 𝐏𝐫𝐨𝐭𝐨® 」
-║▷ ꜰʀᴏᴍ: @${Vlyre.sender.split(`@`)[0] || ""}
+╔══「 Vlkyre 𝐏𝐫𝐨𝐭𝐨® 」
+║▷ ꜰʀᴏᴍ: @${Vlkyre.sender.split(`@`)[0] || ""}
 ║▷ ꜰᴇᴇʟɪɴɢ: ${Final_Name}
 ╚═══════╝`,
 },
-{ quoted: Vlyre }
+{ quoted: Vlkyre }
 )
 .then(fs.unlinkSync(ɢɪᴠᴇꜰɪʟᴇ, ɢᴏᴛꜰɪʟᴇ))
-.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlyre, Èrrðr));
+.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, Èrrðr));
 return;
 }
 });
 });
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 await dl𝐀𝐩𝐢.on("error", async (Èrrðr) => {
-return await Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlyre, Èrrðr);
+return await Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, Èrrðr);
 });
 await dl𝐀𝐩𝐢.start().catch(async (Èrrðr) => {
-return await Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlyre, Èrrðr);
+return await Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, Èrrðr);
 });
 };
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");

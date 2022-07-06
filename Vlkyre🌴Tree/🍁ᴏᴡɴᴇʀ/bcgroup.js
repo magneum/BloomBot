@@ -45,7 +45,7 @@ let { Caught } = require("../../Vlkyre👒Hat/Caught");
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 exports.bcgroup = async (
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 pushName,
 F𝖚𝖑𝖑_A𝖗𝖌𝖘,
 quoted,
@@ -57,10 +57,10 @@ isSenderTUF,
 commandName,
 body,
 ) => {
-if (!Vlyre.fromMe && !isSenderTUF) {
+if (!Vlkyre.fromMe && !isSenderTUF) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 `*❌ERROR:* Owner & Mod only command!
 
 *⚡USAGE:* ${prefix}${Final_Name} <Link>`
@@ -70,7 +70,7 @@ Vlyre,
 if (!F𝖚𝖑𝖑_A𝖗𝖌𝖘) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 `*❌ERROR:* No query provided!
 
 *⚡USAGE:* ${prefix}${Final_Name} <text>`
@@ -83,7 +83,7 @@ let groups = Object.entries(getGroups)
 .slice(0)
 .map((entry) => entry[1]);
 let anu = groups.map((v) => v.id);
-Vlyre.reply(
+Vlkyre.reply(
 ` Broadcasting in ${anu.length} Group Chat, in ${anu.length * 1.5} seconds`
 );
 for (let i of anu) {
@@ -98,7 +98,7 @@ fileName: `bc.mp4`,
 caption: `${txt}`,
 });
 }
-Vlyre.reply(`Successfuly Broadcasted in ${anu.length} Groups`);
+Vlkyre.reply(`Successfuly Broadcasted in ${anu.length} Groups`);
 };
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 // ╔⧉༻ [ Ѷ𝖑𝐤𝐲𝖗𝖊🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬! 

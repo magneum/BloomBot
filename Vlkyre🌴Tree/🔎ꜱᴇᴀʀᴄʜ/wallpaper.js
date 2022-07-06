@@ -48,7 +48,7 @@ let { Caught } = require("../../Vlkyre👒Hat/Caught");
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 exports.wallpaper = async (
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 pushName,
 F𝖚𝖑𝖑_A𝖗𝖌𝖘,
 quoted,
@@ -63,7 +63,7 @@ body,
 if (!F𝖚𝖑𝖑_A𝖗𝖌𝖘) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 `*❌ERROR:* No query provided!
 
 *⚡USAGE:* ${prefix}${Final_Name} <Tag the sticker>`
@@ -79,7 +79,7 @@ page: pages,
 if (!wallpaper) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 `*❌ERROR:* *❌ERROR:* Couldn't find any results on the term *${F𝖚𝖑𝖑_A𝖗𝖌𝖘}*!
 
 *⚡USAGE:* ${prefix}${Final_Name} <Tag the sticker>`
@@ -89,8 +89,8 @@ Vlyre,
 let i = Math.floor(Math.random() * wallpaper.length);
 return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
-Vlyre.A𝖗𝖌𝖘,
+Vlkyre,
+Vlkyre.A𝖗𝖌𝖘,
 wallpaper[i].image,
 "⚡𝐈𝐧𝐟𝐨: Here you go"
 );

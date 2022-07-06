@@ -56,7 +56,7 @@ let { Caught } = require("../../Vlkyre👒Hat/Caught");
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 exports.radio = async (
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 pushName,
 F𝖚𝖑𝖑_A𝖗𝖌𝖘,
 quoted,
@@ -196,7 +196,7 @@ console.log(`𝐘𝐨𝐮𝐓𝐮𝐛𝐞⭕️𝐌𝐮𝐬𝐢𝐜
 try {
 let { DLoader } = await yta_var(ᴛᴜʙᴇ.url, "en136");
 return await ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(
-Vlyre.chatID,
+Vlkyre.chatID,
 {
 audio: { url: DLoader },
 contextInfo: {
@@ -211,7 +211,7 @@ mediaUrl: ᴛᴜʙᴇ.thumbnail,
 mimetype: `audio/mpeg`,
 fileName: `${ᴛᴜʙᴇ.title}.mp3`,
 },
-{ quoted: Vlyre }
+{ quoted: Vlkyre }
 );
 } catch (Èrrðr) {
 console.log(
@@ -219,7 +219,7 @@ console.log(
 );
 let ᴍᴇᴅɪᴀ = await yta(ᴛᴜʙᴇ.url, "128kbps");
 return await ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(
-Vlyre.chatID,
+Vlkyre.chatID,
 {
 audio: { url: ᴍᴇᴅɪᴀ.DLoader },
 contextInfo: {
@@ -234,7 +234,7 @@ mediaUrl: ᴛᴜʙᴇ.thumbnail,
 mimetype: `audio/mpeg`,
 fileName: `${ᴛᴜʙᴇ.title}.mp3`,
 },
-{ quoted: Vlyre }
+{ quoted: Vlkyre }
 );
 }
 });

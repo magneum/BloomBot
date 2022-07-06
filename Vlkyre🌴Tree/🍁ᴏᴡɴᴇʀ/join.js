@@ -45,7 +45,7 @@ let { Caught } = require("../../Vlkyre👒Hat/Caught");
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 exports.join = async (
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 pushName,
 F𝖚𝖑𝖑_A𝖗𝖌𝖘,
 quoted,
@@ -57,25 +57,25 @@ isSenderTUF,
 commandName,
 body,
 ) => {
-if (!Vlyre.fromMe && !isSenderTUF) {
+if (!Vlkyre.fromMe && !isSenderTUF) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 `*❌ERROR:* Owner & Mod only command!
 
 *⚡USAGE:* ${prefix}${Final_Name} <Link>`
 );
 }
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-if (!F𝖚𝖑𝖑_A𝖗𝖌𝖘) return Vlyre.reply(`🔍 Please provide the group link`);
+if (!F𝖚𝖑𝖑_A𝖗𝖌𝖘) return Vlkyre.reply(`🔍 Please provide the group link`);
 if (!isUrl(F𝖚𝖑𝖑_A𝖗𝖌𝖘) && !F𝖚𝖑𝖑_A𝖗𝖌𝖘.includes(`whatsapp.com`))
-return Vlyre.reply(`🔍 Please provide the group link`);
-Vlyre.reply(`wait your request is under process`);
-let result = Vlyre.A𝖗𝖌𝖘[0].split(`https://chatID.whatsapp.com/`)[1];
+return Vlkyre.reply(`🔍 Please provide the group link`);
+Vlkyre.reply(`wait your request is under process`);
+let result = Vlkyre.A𝖗𝖌𝖘[0].split(`https://chatID.whatsapp.com/`)[1];
 await ӄ𝖗𝖞ӄ𝖓𝖟
 .groupAcceptInvite(result)
-.then((res) => Vlyre.reply(jsonformat(res)))
-.catch((err) => Vlyre.reply(`Invalid 📘 *URL: ${q}*`));
+.then((res) => Vlkyre.reply(jsonformat(res)))
+.catch((err) => Vlkyre.reply(`Invalid 📘 *URL: ${q}*`));
 };
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 // ╔⧉༻ [ Ѷ𝖑𝐤𝐲𝖗𝖊🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬! 

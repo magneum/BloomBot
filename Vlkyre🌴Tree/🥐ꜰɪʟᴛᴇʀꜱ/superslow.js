@@ -52,7 +52,7 @@ let { Caught } = require("../../𝐕𝐥𝐤𝐲𝐫𝐞🌀B𝖚𝖙𝖙𝖔�
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 exports.superslow = async (
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 pushName,
 F𝖚𝖑𝖑_A𝖗𝖌𝖘,
 quoted,
@@ -67,7 +67,7 @@ body,
 if (!quoted) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 `*❌ERROR:* No query provided!
 
 *⚡USAGE:* ${prefix}${Final_Name} <reply to audio file>`
@@ -77,21 +77,21 @@ Vlyre,
 if (!/audio/.test(Mme)){
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 `*❌ERROR:* No query provided!
 
 *⚡USAGE:* ${prefix}${Final_Name} <reply to audio file>`
 );
 }
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
-let FFmpegFile = `./Vlkyre🎒Bag/${Date.now()}${Vlyre.key.id}.mp3`;
+let FFmpegFile = `./Vlkyre🎒Bag/${Date.now()}${Vlkyre.key.id}.mp3`;
 let RawFile = await ӄ𝖗𝖞ӄ𝖓𝖟.downloadAndSaveMediaMessage(quoted);
 exec(`ffmpeg -i ${RawFile} -af "atempo=0.5" ${FFmpegFile}`, async (error) => {
 cleanRF.cleanRF(Convert_From);
 if (error) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 `*❌ERROR:* Could not convert!
 
 *⚡USAGE:* ${prefix}${Final_Name} <Song name or Youtube link>`
@@ -100,7 +100,7 @@ Vlyre,
 
 return await ӄ𝖗𝖞ӄ𝖓𝖟
 .sendMessage(
-Vlyre.chatID,
+Vlkyre.chatID,
 {
 audio: { url: FFmpegFile },
 contextInfo: {
@@ -108,14 +108,14 @@ externalAdReply: {
 title: "Audio FIlter",
 body: `ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
 mediaType: 2,
-thumbnail: await getBuffer(`./Vlkyre👗Skins/Vlyre.png`),
-mediaUrl: `./Vlkyre👗Skins/Vlyre.png`,
+thumbnail: await getBuffer(`./Vlkyre👗Skins/Vlkyre.png`),
+mediaUrl: `./Vlkyre👗Skins/Vlkyre.png`,
 },
 },
 mimetype: `audio/mpeg`,
-fileName: `Vlyre.mp3`,
+fileName: `Vlkyre.mp3`,
 },
-{ quoted: Vlyre }
+{ quoted: Vlkyre }
 )
 .then(fs.unlinkSync(RawFile, FilteredAudio));
 });

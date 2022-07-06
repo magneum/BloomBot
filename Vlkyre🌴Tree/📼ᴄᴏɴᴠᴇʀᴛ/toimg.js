@@ -48,7 +48,7 @@ let { Caught } = require("../../Vlkyre👒Hat/Caught");
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 exports.toimg = async (
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 pushName,
 F𝖚𝖑𝖑_A𝖗𝖌𝖘,
 quoted,
@@ -60,15 +60,15 @@ isSenderTUF,
 commandName,
 body,
 ) => {
-let mime = (Vlyre.quoted.msg || Vlyre.quoted).mimetype || "";
+let mime = (Vlkyre.quoted.msg || Vlkyre.quoted).mimetype || "";
 if (
-Vlyre.message.extendedTextMessage.contextInfo.quotedMessage
+Vlkyre.message.extendedTextMessage.contextInfo.quotedMessage
 .stickerMessage.isAnimated !== true
 ) {
 if (!quoted) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 `*❌ERROR:*  Could not find any sticker in context!
 
 *⚡USAGE:* ${prefix}${Final_Name} <Tag the sticker>`
@@ -77,7 +77,7 @@ Vlyre,
 if (!/webp/.test(mime)) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 `*❌ERROR:*  Could not find any sticker in context!
 
 *⚡USAGE:* ${prefix}${Final_Name} <Tag the sticker>`
@@ -87,25 +87,25 @@ let media = await ӄ𝖗𝖞ӄ𝖓𝖟.downloadAndSaveMediaMessage(quoted);
 let ran = await getRandom(`.png`);
 exec(`ffmpeg -i ${media} ${ran}`, async (Èrrðr) => {
 fs.unlinkSync(media);
-if (Èrrðr) Vlyre.reply(Èrrðr);
+if (Èrrðr) Vlkyre.reply(Èrrðr);
 let buffer = fs.readFileSync(ran);
 await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
-Vlyre.A𝖗𝖌𝖘,
+Vlkyre,
+Vlkyre.A𝖗𝖌𝖘,
 buffer,
 "|▷   ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|"
 );
 await fs.unlinkSync(ran);
 });
 } else if (
-Vlyre.message.extendedTextMessage.contextInfo.quotedMessage
+Vlkyre.message.extendedTextMessage.contextInfo.quotedMessage
 .stickerMessage.isAnimated == true
 ) {
 if (!quoted) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 `*❌ERROR:*  Could not find any sticker in context!
 
 *⚡USAGE:* ${prefix}${Final_Name} <Tag the sticker>`
@@ -115,7 +115,7 @@ Vlyre,
 if (!/webp/.test(mime)) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 `*❌ERROR:*  Could not find any sticker in context!
 
 *⚡USAGE:* ${prefix}${Final_Name} <Tag the sticker>`
@@ -124,7 +124,7 @@ Vlyre,
 let media = await ӄ𝖗𝖞ӄ𝖓𝖟.downloadAndSaveMediaMessage(quoted);
 let webpToMp4 = await webp2mp4File(media);
 await ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(
-Vlyre.chatID,
+Vlkyre.chatID,
 {
 video: {
 url: webpToMp4.result,
@@ -132,7 +132,7 @@ caption: "|▷   ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|",
 },
 gifPlayback: true,
 },
-{ quoted: Vlyre }
+{ quoted: Vlkyre }
 );
 await fs.unlinkSync(media);
 }

@@ -46,7 +46,7 @@ let { Caught } = require("../../Vlkyre👒Hat/Caught");
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 exports.rules = async (
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 pushName,
 F𝖚𝖑𝖑_A𝖗𝖌𝖘,
 quoted,
@@ -60,10 +60,10 @@ body,
 ) => {
 return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
-Vlyre.A𝖗𝖌𝖘,
-"./Vlkyre👗Skins/Vlyre.png",
-`🏮 (𝐜)Vlyre 𝐑𝐮𝐥𝐞𝐬 🏮
+Vlkyre,
+Vlkyre.A𝖗𝖌𝖘,
+"./Vlkyre👗Skins/Vlkyre.png",
+`🏮 (𝐜)Vlkyre 𝐑𝐮𝐥𝐞𝐬 🏮
 
 ⚠️ Do not abuse/disrespect bot and its owner.
 ⚠️ If you want this bot in your group then contact devs.

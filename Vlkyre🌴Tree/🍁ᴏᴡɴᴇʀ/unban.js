@@ -46,7 +46,7 @@ let { Caught } = require("../../Vlkyre👒Hat/Caught");
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 exports.unban = async (
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 pushName,
 F𝖚𝖑𝖑_A𝖗𝖌𝖘,
 quoted,
@@ -58,10 +58,10 @@ isSenderTUF,
 commandName,
 body,
 ) => {
-if (!Vlyre.fromMe && !isSenderTUF) {
+if (!Vlkyre.fromMe && !isSenderTUF) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 `*❌ERROR:* Owner & Mod only command!
 
 *⚡USAGE:* ${prefix}${Final_Name} _reply to person to ban_
@@ -69,11 +69,11 @@ ${prefix}${Final_Name} _don't reply to anyone and group will be banned_`
 );
 }
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-if (Vlyre.mentionByReply) {
+if (Vlkyre.mentionByReply) {
 let repliedPerson =
-Vlyre.mtype == "extendedTextMessage" &&
-Vlyre.message.extendedTextMessage.contextInfo != null
-? Vlyre.message.extendedTextMessage.contextInfo.participant || ""
+Vlkyre.mtype == "extendedTextMessage" &&
+Vlkyre.message.extendedTextMessage.contextInfo != null
+? Vlkyre.message.extendedTextMessage.contextInfo.participant || ""
 : "";
 let repliedPersonNum = repliedPerson.substring(
 0,
@@ -88,8 +88,8 @@ if (error) return console.log(error);
 if (!userBan) {
 return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
-Vlyre.A𝖗𝖌𝖘,
+Vlkyre,
+Vlkyre.A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/𝐕𝐥𝐤𝐲𝐫𝐞_Matte.png",
 `*❌𝗘𝗿𝗿𝗼𝗿:* That Person Was Not Banned!`
 );
@@ -97,8 +97,8 @@ Vlyre.A𝖗𝖌𝖘,
 await userBan.delete();
 return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
-Vlyre.A𝖗𝖌𝖘,
+Vlkyre,
+Vlkyre.A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/𝐕𝐥𝐤𝐲𝐫𝐞_Matte.png",
 `*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* That Person Has Been Un-Banned!`
 );
@@ -106,29 +106,29 @@ Vlyre.A𝖗𝖌𝖘,
 }
 );
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-} else if (!Vlyre.mentionByReply) {
+} else if (!Vlkyre.mentionByReply) {
 await userBanCheck.findOne(
 {
-ID: Vlyre.chatID,
+ID: Vlkyre.chatID,
 },
 async (error, userBan) => {
 if (error) return console.log(error);
 if (!userBan) {
 return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
-Vlyre.A𝖗𝖌𝖘,
+Vlkyre,
+Vlkyre.A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/𝐕𝐥𝐤𝐲𝐫𝐞_Matte.png",
-`*❌𝗘𝗿𝗿𝗼𝗿:* ${Vlyre.groupMetadata.subject} Was Not Banned!`
+`*❌𝗘𝗿𝗿𝗼𝗿:* ${Vlkyre.groupMetadata.subject} Was Not Banned!`
 );
 } else {
 await userBan.delete();
 return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
-Vlyre.A𝖗𝖌𝖘,
+Vlkyre,
+Vlkyre.A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/𝐕𝐥𝐤𝐲𝐫𝐞_Matte.png",
-`*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* ${Vlyre.groupMetadata.subject} Has Been Un-Banned!`
+`*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* ${Vlkyre.groupMetadata.subject} Has Been Un-Banned!`
 );
 }
 }
@@ -137,7 +137,7 @@ Vlyre.A𝖗𝖌𝖘,
 } else {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 `*⚡USAGE:* ${prefix}${Final_Name} _reply to person to ban_
 ${prefix}${Final_Name}* _don't reply to anyone and group will be banned_`
 );
@@ -145,6 +145,6 @@ ${prefix}${Final_Name}* _don't reply to anyone and group will be banned_`
 };
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
 
-//▷                                              (𝐜)Vlyre 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!                                           ◁
+//▷                                              (𝐜)Vlkyre 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!                                           ◁
 
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");

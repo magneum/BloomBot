@@ -48,7 +48,7 @@ let { Caught } = require("../../Vlkyre👒Hat/Caught");
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 exports.masturbation = async (
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 pushName,
 F𝖚𝖑𝖑_A𝖗𝖌𝖘,
 quoted,
@@ -60,18 +60,18 @@ isSenderTUF,
 commandName,
 body,
 ) => {
-if (!Vlyre.isBotAdmin && !Vlyre.isSenderTUF && !Vlyre.fromMe) {
-return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlyre);
+if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF && !Vlkyre.fromMe) {
+return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
 }
-if (!Vlyre.isSenderAdmin && !Vlyre.isSenderTUF && !Vlyre.fromMe) {
-return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlyre);
+if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF && !Vlkyre.fromMe) {
+return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
 }
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 let RawTai = await akaneko.nsfw.masturbation();
 await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
-Vlyre.A𝖗𝖌𝖘,
+Vlkyre,
+Vlkyre.A𝖗𝖌𝖘,
 RawTai,
 `👓𝐍𝐨𝐭 𝐒𝐚𝐟𝐞 𝐅𝐨𝐫 𝐖𝐨𝐫𝐤👓
 𝐓𝐨𝐩𝐢𝐜: ${Final_Name}`

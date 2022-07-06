@@ -47,7 +47,7 @@ let { Caught } = require("../../Vlkyre👒Hat/Caught");
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 exports.manga = async (
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 pushName,
 F𝖚𝖑𝖑_A𝖗𝖌𝖘,
 quoted,
@@ -64,7 +64,7 @@ let manga = new Manga();
 if (!F𝖚𝖑𝖑_A𝖗𝖌𝖘) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 `*❌ERROR:* No query provided!
 
 *⚡USAGE:* ${prefix}${Final_Name} <Term>`
@@ -97,15 +97,15 @@ mang += `❄️ *Description:* ${srh.data[0].synopsis.replace(
 )}`;
 return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
-Vlyre.A𝖗𝖌𝖘,
+Vlkyre,
+Vlkyre.A𝖗𝖌𝖘,
 srh.data[0].images.jpg.large_image_url,
 mang
 );
 } catch {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 `*❌ERROR:* Couldn't find any results on the term *${F𝖚𝖑𝖑_A𝖗𝖌𝖘}*
 
 *⚡USAGE:* ${prefix}${Final_Name} <Term>`

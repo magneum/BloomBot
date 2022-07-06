@@ -48,7 +48,7 @@ let { Caught } = require("../../Vlkyre👒Hat/Caught");
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 exports.gamble = async (
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 pushName,
 F𝖚𝖑𝖑_A𝖗𝖌𝖘,
 quoted,
@@ -62,10 +62,10 @@ body,
 ) => {
 let FormatColor = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;
 let FormatAmount = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?rpb]+/;
-if (!Vlyre.A𝖗𝖌𝖘[0] && !Vlyre.A𝖗𝖌𝖘[1]) {
+if (!Vlkyre.A𝖗𝖌𝖘[0] && !Vlkyre.A𝖗𝖌𝖘[1]) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 `*❌ERROR:*  Argument Needed!
 
 *⚡USAGE:* ${prefix}${Final_Name} _color money_
@@ -77,10 +77,10 @@ Vlyre,
 );
 }
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-if (FormatColor.test(Vlyre.A𝖗𝖌𝖘[0])) {
+if (FormatColor.test(Vlkyre.A𝖗𝖌𝖘[0])) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 `*❌ERROR:*  Argument Needed!
 
 *⚡USAGE:* ${prefix}${Final_Name} _color money_
@@ -92,10 +92,10 @@ Vlyre,
 );
 }
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-if (FormatAmount.test(Vlyre.A𝖗𝖌𝖘[1])) {
+if (FormatAmount.test(Vlkyre.A𝖗𝖌𝖘[1])) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 `*❌ERROR:*  Argument Needed!
 
 *⚡USAGE:* ${prefix}${Final_Name} _color money_
@@ -108,13 +108,13 @@ Vlyre,
 }
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 if (
-!Vlyre.A𝖗𝖌𝖘[0].includes("red") &&
-!Vlyre.A𝖗𝖌𝖘[0].includes("black") &&
-!Vlyre.A𝖗𝖌𝖘[0].includes("purple")
+!Vlkyre.A𝖗𝖌𝖘[0].includes("red") &&
+!Vlkyre.A𝖗𝖌𝖘[0].includes("black") &&
+!Vlkyre.A𝖗𝖌𝖘[0].includes("purple")
 ) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 `*❌ERROR:*  Argument Needed!
 
 *⚡USAGE:* ${prefix}${Final_Name} _color money_
@@ -126,14 +126,14 @@ Vlyre,
 );
 }
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-let ColorRoom = Vlyre.A𝖗𝖌𝖘[0];
-let AmountRoom = parseInt(Vlyre.A𝖗𝖌𝖘[1]);
+let ColorRoom = Vlkyre.A𝖗𝖌𝖘[0];
+let AmountRoom = parseInt(Vlkyre.A𝖗𝖌𝖘[1]);
 if (AmountRoom < 50) {
 return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
-Vlyre.A𝖗𝖌𝖘,
-"./Vlkyre👗Skins/Vlyre.png",
+Vlkyre,
+Vlkyre.A𝖗𝖌𝖘,
+"./Vlkyre👗Skins/Vlkyre.png",
 `╔◇══════════◇╗
 ┊ 𝐑𝐮𝐬𝐬𝐢𝐚𝐧🎡𝐑𝐨𝐮𝐥𝐥𝐞𝐭𝐞
 ┊ 🤑𝐆𝐚𝐦𝐛𝐥𝐞𝐫
@@ -147,9 +147,9 @@ Vlyre.A𝖗𝖌𝖘,
 if (AmountRoom > 800) {
 return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
-Vlyre.A𝖗𝖌𝖘,
-"./Vlkyre👗Skins/Vlyre.png",
+Vlkyre,
+Vlkyre.A𝖗𝖌𝖘,
+"./Vlkyre👗Skins/Vlkyre.png",
 `╔◇══════════◇╗
 ┊ 𝐑𝐮𝐬𝐬𝐢𝐚𝐧🎡𝐑𝐨𝐮𝐥𝐥𝐞𝐭𝐞
 ┊ 🤑𝐆𝐚𝐦𝐛𝐥𝐞𝐫
@@ -163,9 +163,9 @@ Vlyre.A𝖗𝖌𝖘,
 if (ColorRoom === "red" && AmountRoom > 200) {
 return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
-Vlyre.A𝖗𝖌𝖘,
-"./Vlkyre👗Skins/Vlyre.png",
+Vlkyre,
+Vlkyre.A𝖗𝖌𝖘,
+"./Vlkyre👗Skins/Vlkyre.png",
 `╔◇══════════◇╗
 ┊ 𝐑𝐮𝐬𝐬𝐢𝐚𝐧🎡𝐑𝐨𝐮𝐥𝐥𝐞𝐭𝐞
 ┊ 🤑𝐆𝐚𝐦𝐛𝐥𝐞𝐫
@@ -179,9 +179,9 @@ Vlyre.A𝖗𝖌𝖘,
 if (ColorRoom === "black" && AmountRoom > 500) {
 return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
-Vlyre.A𝖗𝖌𝖘,
-"./Vlkyre👗Skins/Vlyre.png",
+Vlkyre,
+Vlkyre.A𝖗𝖌𝖘,
+"./Vlkyre👗Skins/Vlkyre.png",
 `╔◇══════════◇╗
 ┊ 𝐑𝐮𝐬𝐬𝐢𝐚𝐧🎡𝐑𝐨𝐮𝐥𝐥𝐞𝐭𝐞
 ┊ 🤑𝐆𝐚𝐦𝐛𝐥𝐞𝐫
@@ -195,9 +195,9 @@ Vlyre.A𝖗𝖌𝖘,
 if (ColorRoom === "purple" && AmountRoom > 800) {
 return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
-Vlyre.A𝖗𝖌𝖘,
-"./Vlkyre👗Skins/Vlyre.png",
+Vlkyre,
+Vlkyre.A𝖗𝖌𝖘,
+"./Vlkyre👗Skins/Vlkyre.png",
 `╔◇══════════◇╗
 ┊ 𝐑𝐮𝐬𝐬𝐢𝐚𝐧🎡𝐑𝐨𝐮𝐥𝐥𝐞𝐭𝐞
 ┊ 🤑𝐆𝐚𝐦𝐛𝐥𝐞𝐫
@@ -210,13 +210,13 @@ Vlyre.A𝖗𝖌𝖘,
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 Economy.findOne(
 {
-ID: Vlyre.sender,
+ID: Vlkyre.sender,
 },
 async (Èrrðr, userEco) => {
-if (Èrrðr) return Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlyre, Èrrðr);
+if (Èrrðr) return Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, Èrrðr);
 if (!userEco) {
 let newUser = new Economy({
-ID: Vlyre.sender,
+ID: Vlkyre.sender,
 money: 0,
 daily: 0,
 timeout: 86400000,
@@ -225,12 +225,12 @@ fishtimeout: 1800000,
 workdone: 0,
 worktimeout: 900000,
 });
-await newUser.save().catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlyre, Èrrðr));
+await newUser.save().catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, Èrrðr));
 return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
-Vlyre.A𝖗𝖌𝖘,
-"./Vlkyre👗Skins/Vlyre.png",
+Vlkyre,
+Vlkyre.A𝖗𝖌𝖘,
+"./Vlkyre👗Skins/Vlkyre.png",
 `╔◇══════════◇╗
 ┊ 𝐑𝐮𝐬𝐬𝐢𝐚𝐧🎡𝐑𝐨𝐮𝐥𝐥𝐞𝐭𝐞
 ┊ 🤑𝐆𝐚𝐦𝐛𝐥𝐞𝐫
@@ -242,24 +242,24 @@ Vlyre.A𝖗𝖌𝖘,
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 Gamble.findOne(
 {
-ID: Vlyre.sender,
+ID: Vlkyre.sender,
 },
 async (Èrrðr, userGamble) => {
-if (Èrrðr) return Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlyre, Èrrðr);
+if (Èrrðr) return Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, Èrrðr);
 if (!userGamble) {
 let newUser = new Gamble({
-ID: Vlyre.sender,
-serverID: Vlyre.chatID,
+ID: Vlkyre.sender,
+serverID: Vlkyre.chatID,
 Gambledone: 0,
 Gambletimeout: 480000,
 });
 await newUser
 .save()
-.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlyre, Èrrðr));
+.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, Èrrðr));
 return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
-Vlyre.A𝖗𝖌𝖘,
+Vlkyre,
+Vlkyre.A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/𝐕𝐥𝐤𝐲𝐫𝐞_DB.png",
 `╔◇══════════◇╗
 ┊ 𝐑𝐮𝐬𝐬𝐢𝐚𝐧🎡𝐑𝐨𝐮𝐥𝐥𝐞𝐭𝐞
@@ -281,9 +281,9 @@ userGamble.Gambletimeout - (Date.now() - userGamble.Gambledone)
 );
 return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
-Vlyre.A𝖗𝖌𝖘,
-"./Vlkyre👗Skins/Vlyre.png",
+Vlkyre,
+Vlkyre.A𝖗𝖌𝖘,
+"./Vlkyre👗Skins/Vlkyre.png",
 `╔◇══════════◇╗
 ┊ 𝐑𝐮𝐬𝐬𝐢𝐚𝐧🎡𝐑𝐨𝐮𝐥𝐥𝐞𝐭𝐞
 ┊ 🤑𝐆𝐚𝐦𝐛𝐥𝐞𝐫
@@ -309,7 +309,7 @@ let Amount = Math.floor(Math.random() * 10);
 if (!Color) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 `*❌ERROR:*  Argument Needed!
 
 *⚡USAGE:* ${prefix}${Final_Name} _color money_
@@ -325,9 +325,9 @@ Color = Color.toLowerCase();
 if (!money) {
 return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
-Vlyre.A𝖗𝖌𝖘,
-"./Vlkyre👗Skins/Vlyre.png",
+Vlkyre,
+Vlkyre.A𝖗𝖌𝖘,
+"./Vlkyre👗Skins/Vlkyre.png",
 `╔◇══════════◇╗
 ┊ 𝐑𝐮𝐬𝐬𝐢𝐚𝐧🎡𝐑𝐨𝐮𝐥𝐥𝐞𝐭𝐞
 ┊ 🤑𝐆𝐚𝐦𝐛𝐥𝐞𝐫
@@ -341,9 +341,9 @@ Vlyre.A𝖗𝖌𝖘,
 if (money > CurrentMoney) {
 return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
-Vlyre.A𝖗𝖌𝖘,
-"./Vlkyre👗Skins/Vlyre.png",
+Vlkyre,
+Vlkyre.A𝖗𝖌𝖘,
+"./Vlkyre👗Skins/Vlkyre.png",
 `╔◇══════════◇╗
 ┊ 𝐑𝐮𝐬𝐬𝐢𝐚𝐧🎡𝐑𝐨𝐮𝐥𝐥𝐞𝐭𝐞
 ┊ 🤑𝐆𝐚𝐦𝐛𝐥𝐞𝐫
@@ -363,7 +363,7 @@ Color = 2;
 } else {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 `*❌ERROR:*  Argument Needed!
 
 *⚡USAGE:* ${prefix}${Final_Name} _color money_
@@ -381,15 +381,15 @@ userEco.money = userEco.money + money;
 userGamble.Gambledone = Date.now();
 await userGamble
 .save()
-.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlyre, Èrrðr));
+.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, Èrrðr));
 await userEco
 .save()
-.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlyre, Èrrðr));
+.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, Èrrðr));
 return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
-Vlyre.A𝖗𝖌𝖘,
-"./Vlkyre👗Skins/Vlyre.png",
+Vlkyre,
+Vlkyre.A𝖗𝖌𝖘,
+"./Vlkyre👗Skins/Vlkyre.png",
 `╔◇══════════◇╗
 ┊ 𝐑𝐮𝐬𝐬𝐢𝐚𝐧🎡𝐑𝐨𝐮𝐥𝐥𝐞𝐭𝐞
 ┊ 🤑𝐆𝐚𝐦𝐛𝐥𝐞𝐫
@@ -406,15 +406,15 @@ userEco.money = userEco.money + money;
 userGamble.Gambledone = Date.now();
 await userGamble
 .save()
-.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlyre, Èrrðr));
+.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, Èrrðr));
 await userEco
 .save()
-.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlyre, Èrrðr));
+.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, Èrrðr));
 return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
-Vlyre.A𝖗𝖌𝖘,
-"./Vlkyre👗Skins/Vlyre.png",
+Vlkyre,
+Vlkyre.A𝖗𝖌𝖘,
+"./Vlkyre👗Skins/Vlkyre.png",
 `╔◇══════════◇╗
 ┊ 𝐑𝐮𝐬𝐬𝐢𝐚𝐧🎡𝐑𝐨𝐮𝐥𝐥𝐞𝐭𝐞
 ┊ 🤑𝐆𝐚𝐦𝐛𝐥𝐞𝐫
@@ -431,15 +431,15 @@ userEco.money = userEco.money + money;
 userGamble.Gambledone = Date.now();
 await userGamble
 .save()
-.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlyre, Èrrðr));
+.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, Èrrðr));
 await userEco
 .save()
-.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlyre, Èrrðr));
+.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, Èrrðr));
 return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
-Vlyre.A𝖗𝖌𝖘,
-"./Vlkyre👗Skins/Vlyre.png",
+Vlkyre,
+Vlkyre.A𝖗𝖌𝖘,
+"./Vlkyre👗Skins/Vlkyre.png",
 `╔◇══════════◇╗
 ┊ 𝐑𝐮𝐬𝐬𝐢𝐚𝐧🎡𝐑𝐨𝐮𝐥𝐥𝐞𝐭𝐞
 ┊ 🤑𝐆𝐚𝐦𝐛𝐥𝐞𝐫
@@ -454,15 +454,15 @@ userEco.money = userEco.money - money;
 userGamble.Gambledone = Date.now();
 await userGamble
 .save()
-.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlyre, Èrrðr));
+.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, Èrrðr));
 await userEco
 .save()
-.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlyre, Èrrðr));
+.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, Èrrðr));
 return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
-Vlyre.A𝖗𝖌𝖘,
-"./Vlkyre👗Skins/Vlyre.png",
+Vlkyre,
+Vlkyre.A𝖗𝖌𝖘,
+"./Vlkyre👗Skins/Vlkyre.png",
 `╔◇══════════◇╗
 ┊ 𝐑𝐮𝐬𝐬𝐢𝐚𝐧🎡𝐑𝐨𝐮𝐥𝐥𝐞𝐭𝐞
 ┊ 🤑𝐆𝐚𝐦𝐛𝐥𝐞𝐫

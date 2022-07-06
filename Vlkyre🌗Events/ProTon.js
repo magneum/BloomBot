@@ -15,29 +15,29 @@ require("../Vlkyre🖋️Utilities/𝕷𝖆ყO𝖚𝖙");
 let Ranker = require(`../Vlkyre🌤️Cloud/🍃𝖒𝖔𝖓𝖌𝖔/autorank`);
 let ServerDB = require(`../Vlkyre🌤️Cloud/🍃𝖒𝖔𝖓𝖌𝖔/ServerDB`);
 let Welcome = require(`../Vlkyre🌤️Cloud/🍃𝖒𝖔𝖓𝖌𝖔/setwelcome`);
-let ProTon = async (ӄӄ, Vlyre) => {
+let ProTon = async (ӄӄ, Vlkyre) => {
 await ServerDB.findOne(
 {
-ServerID: Vlyre.chatID,
+ServerID: Vlkyre.chatID,
 },
 async (error, Server) => {
 if (error) console.log(error);
 if (!Server) {
 var newServerID = new ServerDB({
-ServerID: Vlyre.chatID,
+ServerID: Vlkyre.chatID,
 });
 await newServerID.save().catch((error) => console.log(error));
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 await ӄӄ
 .sendMessage(
-Vlyre.chatID,
+Vlkyre.chatID,
 {
 image: { url: "./Vlkyre👗Skins/Vlkyre_White.png" },
 caption: `*⦓ ©Vlkyre ༒ 𝐖𝐞𝐥𝐜𝐨𝐦𝐞𝐫 ⦔* 
 👋🏻𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚, To Admins Of This Group, Some Of Your Members Requested Our Valkyrie HQ to Add Our Bot In This Group.
 Have Fun!
 
-╔══「 Vlyre 𝐏𝐫𝐨𝐭𝐨® 」
+╔══「 Vlkyre 𝐏𝐫𝐨𝐭𝐨® 」
 ║ *antilink:* _on/off_
 ║ *autorank:* _on/off_
 ╚═══════╝`,
@@ -55,21 +55,21 @@ type: 1,
 },
 ],
 headerType: 4,
-mentions: Vlyre.participants.map((a) => a.id),
+mentions: Vlkyre.participants.map((a) => a.id),
 },
-{ quoted: Vlyre }
+{ quoted: Vlkyre }
 )
 .catch((error) => console.log(error));
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 await Welcome.findOne(
 {
-ID: Vlyre.chatID,
+ID: Vlkyre.chatID,
 },
 async (error, userWel) => {
 if (error) console.log(error);
 if (!userWel) {
 var newServer = new Welcome({
-ID: Vlyre.chatID,
+ID: Vlkyre.chatID,
 message:
 "👋🏻𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚 New Member!\n👇🏽‍𝐏𝐫𝐞𝐬𝐬 𝐁𝐞𝐥𝐨𝐰 𝐁𝐮𝐭𝐭𝐨𝐧𝐬 𝐓𝐨 𝐒𝐭𝐚𝐫𝐭 𝐔𝐬𝐢𝐧𝐠 𝐀𝐈.👇🏽‍",
 });
@@ -80,13 +80,13 @@ await newServer.save().catch((error) => console.log(error));
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 return await Ranker.findOne(
 {
-serverID: Vlyre.chatID,
+serverID: Vlkyre.chatID,
 },
 async (error, server) => {
 if (error) return console.log(error);
 if (!server) {
 var newServer = new Ranker({
-serverID: Vlyre.chatID,
+serverID: Vlkyre.chatID,
 value: "ON",
 });
 await newServer.save().catch((error) => console.log(error));

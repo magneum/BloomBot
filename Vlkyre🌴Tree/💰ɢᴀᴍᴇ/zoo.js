@@ -49,7 +49,7 @@ let { Caught } = require("../../Vlkyre👒Hat/Caught");
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 exports.zoo = async (
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 pushName,
 F𝖚𝖑𝖑_A𝖗𝖌𝖘,
 quoted,
@@ -63,13 +63,13 @@ body,
 ) => {
 await Economy.findOne(
 {
-ID: Vlyre.sender,
+ID: Vlkyre.sender,
 },
 async (Èrrðr, userEco) => {
-if (Èrrðr) return Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlyre, Èrrðr);
+if (Èrrðr) return Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, Èrrðr);
 if (!userEco) {
 let newUser = new Economy({
-ID: Vlyre.sender,
+ID: Vlkyre.sender,
 money: 0,
 daily: 0,
 timeout: 86400000,
@@ -78,11 +78,11 @@ fishtimeout: 1800000,
 workdone: 0,
 worktimeout: 900000,
 });
-await newUser.save().catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlyre, Èrrðr));
+await newUser.save().catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, Èrrðr));
 return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
-Vlyre.A𝖗𝖌𝖘,
+Vlkyre,
+Vlkyre.A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/𝐕𝐥𝐤𝐲𝐫𝐞_DB.png",
 `╔◇══════════◇╗
 ┊ 𝐏𝐨𝐤𝐞𝐦𝐨𝐧🦋𝐇𝐮𝐧𝐭𝐢𝐧𝐠
@@ -96,23 +96,23 @@ Vlyre.A𝖗𝖌𝖘,
 } else {
 await Zoology.findOne(
 {
-ID: Vlyre.sender,
+ID: Vlkyre.sender,
 },
 async (Èrrðr, userZoo) => {
-if (Èrrðr) return Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlyre, Èrrðr);
+if (Èrrðr) return Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, Èrrðr);
 if (!userZoo) {
 let newUser = new Zoology({
-ID: Vlyre.sender,
+ID: Vlkyre.sender,
 zoodone: Date.now(),
 zootimeout: 1800000,
 });
 await newUser
 .save()
-.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlyre, Èrrðr));
+.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, Èrrðr));
 return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
-Vlyre.A𝖗𝖌𝖘,
+Vlkyre,
+Vlkyre.A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/𝐕𝐥𝐤𝐲𝐫𝐞_Forest.png",
 `╔◇══════════◇╗
 ┊  𝐙𝐨𝐨🐆𝐎𝐰𝐧𝐞𝐫
@@ -129,8 +129,8 @@ userZoo.zootimeout - (Date.now() - userZoo.zoodone)
 );
 return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
-Vlyre.A𝖗𝖌𝖘,
+Vlkyre,
+Vlkyre.A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/𝐕𝐥𝐤𝐲𝐫𝐞_Forest.png",
 `╔◇══════════◇╗
 ┊  𝐙𝐨𝐨🐆𝐎𝐰𝐧𝐞𝐫
@@ -157,11 +157,11 @@ userZoo.zoodone = Date.now();
 userZoo.zootimeout = 1800000;
 await userZoo
 .save()
-.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlyre, Èrrðr));
+.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, Èrrðr));
 return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
-Vlyre.A𝖗𝖌𝖘,
+Vlkyre,
+Vlkyre.A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/𝐕𝐥𝐤𝐲𝐫𝐞_Forest.png",
 `╔◇══════════◇╗
 ┊  𝐙𝐨𝐨🐆𝐎𝐰𝐧𝐞𝐫

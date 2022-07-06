@@ -47,7 +47,7 @@ let { Caught } = require("../../Vlkyre👒Hat/Caught");
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
 exports.invite = async (
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 pushName,
 F𝖚𝖑𝖑_A𝖗𝖌𝖘,
 quoted,
@@ -61,17 +61,17 @@ body,
 ) => {
 
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
-let Igroup = await group.findOne({ id: Vlyre.chatID });
+let Igroup = await group.findOne({ id: Vlkyre.chatID });
 let hh = Igroup.invite || `false`;
 if (hh == `false`)
-return Vlyre.reply(`*❌ERROR:* *Invite* is not active in this group`);
-let response = await ӄ𝖗𝖞ӄ𝖓𝖟.groupInviteCode(Vlyre.chatID);
+return Vlkyre.reply(`*❌ERROR:* *Invite* is not active in this group`);
+let response = await ӄ𝖗𝖞ӄ𝖓𝖟.groupInviteCode(Vlkyre.chatID);
 await ӄ𝖗𝖞ӄ𝖓𝖟.sendText(
-Vlyre.chatID,
+Vlkyre.chatID,
 `https://chatID.whatsapp.com/${response}
 
 Link Group : ${groupMetadata.subject}`,
-Vlyre,
+Vlkyre,
 { detectLink: true }
 );
 };

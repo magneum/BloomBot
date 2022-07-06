@@ -19,23 +19,23 @@ let canvacord = require("canvacord");
 let randomMC = require("random-material-color");
 let color = randomMC.getColor();
 Levels.setURL(MONGOOSE);
-exports.ARanks = async (Vlyre, ӄӄ, Caught) => {
+exports.ARanks = async (Vlkyre, ӄӄ, Caught) => {
 let randomXp = Math.floor(Math.random() * 3) + 1;
-let user = await Levels.fetch(Vlyre.sender, Vlyre.chatID, true);
+let user = await Levels.fetch(Vlkyre.sender, Vlkyre.chatID, true);
 if (!user) {
-await Levels.createUser(Vlyre.sender, Vlyre.chatID);
-await Levels.setLevel(Vlyre.sender, Vlyre.chatID, 1);
-await Levels.setXp(Vlyre.sender, Vlyre.chatID, 1);
+await Levels.createUser(Vlkyre.sender, Vlkyre.chatID);
+await Levels.setLevel(Vlkyre.sender, Vlkyre.chatID, 1);
+await Levels.setXp(Vlkyre.sender, Vlkyre.chatID, 1);
 }
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 console.log(user);
 let hasLeveledUp = await Levels.appendXp(
-Vlyre.sender,
-Vlyre.chatID,
+Vlkyre.sender,
+Vlkyre.chatID,
 randomXp
 );
 if (hasLeveledUp) {
-await Levels.setLevel(Vlyre.sender, Vlyre.chatID, user.level + 1);
+await Levels.setLevel(Vlkyre.sender, Vlkyre.chatID, user.level + 1);
 let levelRole = user.level;
 var role = `Warrior`;
 if (levelRole <= 2) {
@@ -88,13 +88,13 @@ var role = `Mythic`;
 var role = `Mythic Glory`;
 }
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
-let expFile = `./Vlkyre🎒Bag/${Date.now()}r${Vlyre.key.id}.png`;
+let expFile = `./Vlkyre🎒Bag/${Date.now()}r${Vlkyre.key.id}.png`;
 let աɦօֆɛ = Math.floor(1000 + Math.random() * 9000);
 let 𝕻𝕻𝖑𝖊𝖙𝖊𝖗;
 try {
-𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄӄ.profilePictureUrl(Vlyre.chatID, `image`);
+𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄӄ.profilePictureUrl(Vlkyre.chatID, `image`);
 } catch {
-𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = `./Vlkyre👗Skins/Vlyre.png`;
+𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = `./Vlkyre👗Skins/Vlkyre.png`;
 }
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 try {
@@ -126,16 +126,16 @@ let rank = new canvacord.Rank()
 .setDiscriminator(աɦօֆɛ);
 return await rank.build().then(async (data) => {
 fs.writeFile(expFile, data, async (error) => {
-if (error) return Caught(ӄӄ, Vlyre, error);
+if (error) return Caught(ӄӄ, Vlkyre, error);
 await ӄӄ
 .sendMessage(
-Vlyre.chatID,
+Vlkyre.chatID,
 {
-contextInfo: { mentionedJid: [Vlyre.sender] },
+contextInfo: { mentionedJid: [Vlkyre.sender] },
 image: { url: expFile },
 caption: `╔══『 𝐏𝐫𝐨𝐟𝐢𝐥𝐞𝐫® 』
-║ *❣️ ɴᴀᴍᴇ:* ${Vlyre.pushName || "No_Name"}
-║ *⚡ ɪᴅ:* ${Vlyre.chatID.split("@")[0]}
+║ *❣️ ɴᴀᴍᴇ:* ${Vlkyre.pushName || "No_Name"}
+║ *⚡ ɪᴅ:* ${Vlkyre.chatID.split("@")[0]}
 ╚═══════╝
 
 
@@ -157,10 +157,10 @@ type: 1,
 headerType: 4,
 },
 {
-quoted: Vlyre,
+quoted: Vlkyre,
 }
 )
-.catch((e) => Caught(ӄӄ, Vlyre, e));
+.catch((e) => Caught(ӄӄ, Vlkyre, e));
 return fs.unlinkSync(expFile);
 });
 });

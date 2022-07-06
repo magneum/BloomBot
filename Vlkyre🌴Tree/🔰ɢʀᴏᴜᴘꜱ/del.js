@@ -47,7 +47,7 @@ let { Caught } = require("../../Vlkyre👒Hat/Caught");
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
 exports.del = async (
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 pushName,
 F𝖚𝖑𝖑_A𝖗𝖌𝖘,
 quoted,
@@ -59,33 +59,33 @@ isSenderTUF,
 commandName,
 body,
 ) => {
-if (!Vlyre.quoted) {
+if (!Vlkyre.quoted) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 `*❌ERROR:* No query provided!
 
 *⚡USAGE:* ${prefix}${Final_Name} <Tag the massage you want to delete>`
 );
 }
 
-let { isBaileys } = Vlyre.quoted;
+let { isBaileys } = Vlkyre.quoted;
 if (!isBaileys) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 `*❌ERROR:* Can not delete massage from another userID except mine.
 
 *⚡USAGE:* ${prefix}${Final_Name} <Tag the massage you want to delete>`
 );
 }
 
-return await ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(Vlyre.chatID, {
+return await ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(Vlkyre.chatID, {
 delete: {
-remoteJid: Vlyre.chatID,
+remoteJid: Vlkyre.chatID,
 fromMe: true,
-id: Vlyre.quoted.id,
-participant: Vlyre.quoted.sender,
+id: Vlkyre.quoted.id,
+participant: Vlkyre.quoted.sender,
 },
 });
 };

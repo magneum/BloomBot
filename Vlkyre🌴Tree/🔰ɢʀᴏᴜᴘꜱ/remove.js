@@ -47,7 +47,7 @@ let { Caught } = require("../../Vlkyre👒Hat/Caught");
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
 exports.remove = async (
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 pushName,
 F𝖚𝖑𝖑_A𝖗𝖌𝖘,
 quoted,
@@ -61,25 +61,25 @@ body,
 ) => {
 
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
-if (Vlyre.mentionByReply) {
+if (Vlkyre.mentionByReply) {
 let ʀᴇᴘʟɪᴇᴅ =
-Vlyre.mtype == "extendedTextMessage" &&
-Vlyre.message.extendedTextMessage.contextInfo != null
-? Vlyre.message.extendedTextMessage.contextInfo.participant || ""
+Vlkyre.mtype == "extendedTextMessage" &&
+Vlkyre.message.extendedTextMessage.contextInfo != null
+? Vlkyre.message.extendedTextMessage.contextInfo.participant || ""
 : "";
-if (Vlyre.isCreator === ʀᴇᴘʟɪᴇᴅ) {
+if (Vlkyre.isCreator === ʀᴇᴘʟɪᴇᴅ) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 `*❌ERROR:*  You dumb! Cant't Kick Bot Owner.`
 );
 }
-await ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(Vlyre.chatID, {
+await ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(Vlkyre.chatID, {
 text: `Kicked @${ʀᴇᴘʟɪᴇᴅ.split("@")[0]} successfuly `,
 contextInfo: { mentionedJid: [ʀᴇᴘʟɪᴇᴅ] },
 });
 return await ӄ𝖗𝖞ӄ𝖓𝖟.groupParticipantsUpdate(
-Vlyre.chatID,
+Vlkyre.chatID,
 [ʀᴇᴘʟɪᴇᴅ],
 `remove`
 );
@@ -87,7 +87,7 @@ Vlyre.chatID,
 } else {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 `*❌ERROR:*  Argument Needed!
 
 *⚡USAGE:* ${prefix}${Final_Name} <reply to person>`

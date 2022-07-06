@@ -48,7 +48,7 @@ let { Caught } = require("../../Vlkyre👒Hat/Caught");
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 exports.tourl = async (
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 pushName,
 F𝖚𝖑𝖑_A𝖗𝖌𝖘,
 quoted,
@@ -60,11 +60,11 @@ isSenderTUF,
 commandName,
 body,
 ) => {
-let mime = (Vlyre.quoted.msg || Vlyre.quoted).mimetype || "";
+let mime = (Vlkyre.quoted.msg || Vlkyre.quoted).mimetype || "";
 if (!quoted) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 `*❌ERROR:*  Could not find any Image/Video in context!
 
 *⚡USAGE:* ${prefix}${Final_Name} <Tag the sticker>`
@@ -76,18 +76,18 @@ if (/image/.test(mime)) {
 let anu = await TelegraPh(media);
 return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
-Vlyre.A𝖗𝖌𝖘,
-"./Vlkyre👗Skins/Vlyre.png",
+Vlkyre,
+Vlkyre.A𝖗𝖌𝖘,
+"./Vlkyre👗Skins/Vlkyre.png",
 util.format(anu)
 );
 } else if (!/image/.test(mime)) {
 let anu = await TelegraPh(media);
 return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
-Vlyre.A𝖗𝖌𝖘,
-"./Vlkyre👗Skins/Vlyre.png",
+Vlkyre,
+Vlkyre.A𝖗𝖌𝖘,
+"./Vlkyre👗Skins/Vlkyre.png",
 util.format(anu)
 );
 }

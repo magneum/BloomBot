@@ -22,8 +22,8 @@ await ӄӄ
 contextInfo: { mentionedJid: [ᴄᴀʟʟᴇʀɪᴅ] },
 image: { url: "./Vlkyre👗Skins/Vlkyre_Orange.png" },
 caption: `╔══『 𝐏𝐫𝐨𝐟𝐢𝐥𝐞𝐫® 』
-║ *❣️ ɴᴀᴍᴇ:* ${Vlyre.pushName || "No_Name"}
-║ *⚡ ɪᴅ:* ${Vlyre.chatID.split("@")[0]}
+║ *❣️ ɴᴀᴍᴇ:* ${Vlkyre.pushName || "No_Name"}
+║ *⚡ ɪᴅ:* ${Vlkyre.chatID.split("@")[0]}
 ╚═══════╝
 
 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐜 𝐬𝐲𝐬𝐭𝐞𝐦 𝐛𝐥𝐨𝐜𝐤!
@@ -31,7 +31,7 @@ caption: `╔══『 𝐏𝐫𝐨𝐟𝐢𝐥𝐞𝐫® 』
 𝐏𝐥𝐞𝐚𝐬𝐞 𝐂𝐨𝐧𝐭𝐚𝐜𝐭 𝐒𝐮𝐝𝐨 𝐎𝐰𝐧𝐞𝐫 𝐓𝐨 𝐎𝐩𝐞𝐧 𝐈𝐭 !
 
 
-🏮 (𝐜)Vlyre 𝐑𝐮𝐥𝐞𝐬 🏮
+🏮 (𝐜)Vlkyre 𝐑𝐮𝐥𝐞𝐬 🏮
 ⚠️ Do not abuse/disrespect bot and its owner.
 ⚠️ If you want this bot in your group then contact devs.
 ⚠️ Do not call bot, if you do then you'll get blocked by bot.

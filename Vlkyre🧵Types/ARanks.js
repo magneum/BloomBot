@@ -21,18 +21,18 @@ let Economy = require(`../Vlkyre🌤️Cloud/🍃𝖒𝖔𝖓𝖌𝖔/economy`);
 let { Image_Button } = require("../Vlkyre👒Hat/Image_Button");
 let color = randomMC.getColor();
 Levels.setURL(MONGOOSE);
-exports.ARanks = async (Vlyre, ӄӄ, Caught, A𝖗𝖌𝖘) => {
+exports.ARanks = async (Vlkyre, ӄӄ, Caught, A𝖗𝖌𝖘) => {
 const randomXp = Math.floor(Math.random() * 3) + +10;
-const user = await Levels.fetch(Vlyre.sender, Vlyre.chatID, true);
+const user = await Levels.fetch(Vlkyre.sender, Vlkyre.chatID, true);
 if (!user) {
-await Levels.createUser(Vlyre.sender, Vlyre.chatID);
-await Levels.setLevel(Vlyre.sender, Vlyre.chatID, 1);
-await Levels.setXp(Vlyre.sender, Vlyre.chatID, 1);
+await Levels.createUser(Vlkyre.sender, Vlkyre.chatID);
+await Levels.setLevel(Vlkyre.sender, Vlkyre.chatID, 1);
+await Levels.setXp(Vlkyre.sender, Vlkyre.chatID, 1);
 return;
 }
 const hasLeveledUp = await Levels.appendXp(
-Vlyre.sender,
-Vlyre.chatID,
+Vlkyre.sender,
+Vlkyre.chatID,
 randomXp
 );
 if (hasLeveledUp) {
@@ -113,13 +113,13 @@ var role = "Mythic Glory";
 var Amnt = 5000;
 }
 ("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
-let expFile = `./Vlkyre🎒Bag/${Date.now()}${Vlyre.key.id}.png`;
+let expFile = `./Vlkyre🎒Bag/${Date.now()}${Vlkyre.key.id}.png`;
 let աɦօֆɛ = Math.floor(1000 + Math.random() * 9000);
 let 𝕯𝖎𝖘𝖕𝖑𝖆𝖞;
 try {
-𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await ӄӄ.profilePictureUrl(Vlyre.chatID, `image`);
+𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await ӄӄ.profilePictureUrl(Vlkyre.chatID, `image`);
 } catch {
-𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = `./Vlkyre👗Skins/Vlyre.png`;
+𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = `./Vlkyre👗Skins/Vlkyre.png`;
 }
 ("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
 try {
@@ -151,16 +151,16 @@ let rank = new canvacord.Rank()
 .setDiscriminator(աɦօֆɛ);
 rank.build().then(async (data) => {
 fs.writeFile(expFile, data, async (Èrrðr) => {
-if (Èrrðr) return Caught(ӄӄ, Vlyre, Èrrðr);
+if (Èrrðr) return Caught(ӄӄ, Vlkyre, Èrrðr);
 await Economy.findOne(
 {
-ID: Vlyre.sender,
+ID: Vlkyre.sender,
 },
 async (Èrrðr, userEco) => {
 if (Èrrðr) return console.log(Èrrðr);
 if (!userEco) {
 let newUser = new Economy({
-ID: Vlyre.sender,
+ID: Vlkyre.sender,
 money: 0,
 daily: 0,
 timeout: 86400000,
@@ -172,7 +172,7 @@ worktimeout: 900000,
 await newUser.save();
 await Image_Button(
 ӄӄ,
-Vlyre,
+Vlkyre,
 A𝖗𝖌𝖘,
 expFile,
 `╔◇══════════◇╗
@@ -192,12 +192,12 @@ expFile,
 );
 return await fs.unlinkSync(expFile);
 }
-`|⬡════════════════════════════════════════════════════════════════════「  Vlyre 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
+`|⬡════════════════════════════════════════════════════════════════════「  Vlkyre 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|`;
 userEco.money = userEco.money+Amnt;
 userEco.save();
 await Image_Button(
 ӄӄ,
-Vlyre,
+Vlkyre,
 A𝖗𝖌𝖘,
 expFile,
 `╔◇══════════◇╗

@@ -14,18 +14,18 @@
 require("./𝕷𝖆ყO𝖚𝖙");
 let { Caught } = require("../Vlkyre👒Hat/Caught");
 let { Image_Button } = require("../Vlkyre👒Hat/Image_Button");
-exports.Req = async (ӄӄ, Vlyre) => {
-if (!Vlyre.fromMe && Vlyre.isCommand) {
-return await Vlyre.reply("*❌𝕰𝖗𝖗𝖔𝖗:* No Commands Can Work In This Group.Just Send Your Group Link with 20+ members.");
+exports.Req = async (ӄӄ, Vlkyre) => {
+if (!Vlkyre.fromMe && Vlkyre.isCommand) {
+return await Vlkyre.reply("*❌𝕰𝖗𝖗𝖔𝖗:* No Commands Can Work In This Group.Just Send Your Group Link with 20+ members.");
 }
 let ɢʀᴏᴜᴘ_ʟɪɴᴋʀᴇɢᴇx = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i;
-let ɪꜱɢʀᴏᴜᴘ_ʟɪɴᴋ = ɢʀᴏᴜᴘ_ʟɪɴᴋʀᴇɢᴇx.exec(Vlyre.body);
+let ɪꜱɢʀᴏᴜᴘ_ʟɪɴᴋ = ɢʀᴏᴜᴘ_ʟɪɴᴋʀᴇɢᴇx.exec(Vlkyre.body);
 if (ɪꜱɢʀᴏᴜᴘ_ʟɪɴᴋ) {
 let 𝕯𝖎𝖘𝖕𝖑𝖆𝖞;
 let ʟɪɴᴋʀᴇɢᴇx = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i;
-let [_, ᴍᴇᴛᴀᴄᴏᴅᴇ] = Vlyre.body.match(ʟɪɴᴋʀᴇɢᴇx) || [];
-let ɢʀᴏᴜᴘ_ʀᴇꜱᴘᴏɴꜱᴇ = await ӄӄ.groupAcceptInvite(ᴍᴇᴛᴀᴄᴏᴅᴇ).catch((𝕰𝖗𝖗𝖔𝖗) => Caught(ӄӄ, Vlyre, 𝕰𝖗𝖗𝖔𝖗));
-let ɢʀᴏᴜᴘ_ᴍᴇᴛᴀᴅᴀᴛᴀ = await ӄӄ.groupMetadata(ɢʀᴏᴜᴘ_ʀᴇꜱᴘᴏɴꜱᴇ.gid).catch((𝕰𝖗𝖗𝖔𝖗) => Caught(ӄӄ, Vlyre, 𝕰𝖗𝖗𝖔𝖗));
+let [_, ᴍᴇᴛᴀᴄᴏᴅᴇ] = Vlkyre.body.match(ʟɪɴᴋʀᴇɢᴇx) || [];
+let ɢʀᴏᴜᴘ_ʀᴇꜱᴘᴏɴꜱᴇ = await ӄӄ.groupAcceptInvite(ᴍᴇᴛᴀᴄᴏᴅᴇ).catch((𝕰𝖗𝖗𝖔𝖗) => Caught(ӄӄ, Vlkyre, 𝕰𝖗𝖗𝖔𝖗));
+let ɢʀᴏᴜᴘ_ᴍᴇᴛᴀᴅᴀᴛᴀ = await ӄӄ.groupMetadata(ɢʀᴏᴜᴘ_ʀᴇꜱᴘᴏɴꜱᴇ.gid).catch((𝕰𝖗𝖗𝖔𝖗) => Caught(ӄӄ, Vlkyre, 𝕰𝖗𝖗𝖔𝖗));
 try {
 𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await ӄӄ.profilePictureUrl(ɢʀᴏᴜᴘ_ʀᴇꜱᴘᴏɴꜱᴇ.gid, "image");
 } catch {
@@ -36,7 +36,7 @@ if (ɢʀᴏᴜᴘ_ᴍᴇᴛᴀᴅᴀᴛᴀ.participants.length < 20) {
 await ӄӄ.groupLeave(ɢʀᴏᴜᴘ_ʀᴇꜱᴘᴏɴꜱᴇ.gid);
 return await Image_Button(
 ӄӄ,
-Vlyre,
+Vlkyre,
 A𝖗𝖌𝖘,
 𝕯𝖎𝖘𝖕𝖑𝖆𝖞,
 `*❌𝕰𝖗𝖗𝖔𝖗:* Your Group has ${ɢʀᴏᴜᴘ_ᴍᴇᴛᴀᴅᴀᴛᴀ.participants.length}/20 members!
@@ -49,7 +49,7 @@ A𝖗𝖌𝖘,
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 return await Image_Button(
 ӄӄ,
-Vlyre,
+Vlkyre,
 A𝖗𝖌𝖘,
 𝕯𝖎𝖘𝖕𝖑𝖆𝖞,
 `*🔓ꜱᴛᴀᴛᴜꜱ:* Joined Group!

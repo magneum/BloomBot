@@ -51,7 +51,7 @@ let { Caught } = require("../../Vlkyre👒Hat/Caught");
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 exports.lyrics = async (
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 pushName,
 F𝖚𝖑𝖑_A𝖗𝖌𝖘,
 quoted,
@@ -68,7 +68,7 @@ let Client = new Genius.Client();
 if (!F𝖚𝖑𝖑_A𝖗𝖌𝖘) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 `*❌ERROR:* No query provided!
 
 *⚡USAGE:* ${prefix}${Final_Name} <Term>`
@@ -82,8 +82,8 @@ const GeniusSong = searches[0];
 const Geniuslyrics = await GeniusSong.lyrics();
 return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
-Vlyre.A𝖗𝖌𝖘,
+Vlkyre,
+Vlkyre.A𝖗𝖌𝖘,
 GeniusSong.raw.song_art_image_thumbnail_url,
 `📜 𝗟𝘆𝗿𝗶𝗰𝘀 𝗙𝗼𝘂𝗻𝗱 𝗙𝗼𝗿: _${F𝖚𝖑𝖑_A𝖗𝖌𝖘}_
 🎹 𝐓𝐢𝐭𝐥𝐞: ${GeniusSong.raw.title}
@@ -97,8 +97,8 @@ ${Geniuslyrics}`
 const lyricssong = await Second_Try_Lyrics(F𝖚𝖑𝖑_A𝖗𝖌𝖘);
 return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
-Vlyre.A𝖗𝖌𝖘,
+Vlkyre,
+Vlkyre.A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/𝐕𝐥𝐤𝐲𝐫𝐞_FIsh.png",
 `📜 𝗟𝘆𝗿𝗶𝗰𝘀 𝗙𝗼𝘂𝗻𝗱 𝗙𝗼𝗿: _${F𝖚𝖑𝖑_A𝖗𝖌𝖘}_
 💡 𝗟𝘆𝗿𝗶𝗰𝘀 𝗦𝗼𝘂𝗿𝗰𝗲: ${lyricssong.source.name}
@@ -111,7 +111,7 @@ ${lyricssong.lyrics}`
 } catch (error) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 `*❌ERROR:* No Such Song Lyrics Found!
 
 *⚡USAGE:* ${prefix}${Final_Name} <lyrics name>`

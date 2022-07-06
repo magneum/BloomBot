@@ -166,24 +166,24 @@ let { waifu } = require("../Vlkyre🌴Tree/⚡ʀᴀɴᴅᴏᴍꜱ/waifu");
 let { advice } = require("../Vlkyre🌴Tree/⚡ʀᴀɴᴅᴏᴍꜱ/advice");
 let { reddit } = require("../Vlkyre🌴Tree/⚡ʀᴀɴᴅᴏᴍꜱ/reddit");
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-exports.𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙 = async (Vlyre, ӄӄ, 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗, Ѷ𝖎𝖔𝖓) => {
-switch (Vlyre.commandName) {
+exports.𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙 = async (Vlkyre, ӄӄ, 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗, Ѷ𝖎𝖔𝖓) => {
+switch (Vlkyre.commandName) {
 case "":
 break;
 case "pokemon":
 await pokemon(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -191,17 +191,17 @@ break;
 case "pokedex":
 await pokedex(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -209,17 +209,17 @@ break;
 case "carbon":
 await carbon(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -229,17 +229,17 @@ case "gify":
 case "gif":
 await gify(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -250,17 +250,17 @@ case "sticker":
 case "stickergif":
 await sticker(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -268,17 +268,17 @@ break;
 case "toimg":
 await toimg(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -287,17 +287,17 @@ case "pin":
 case "pinterest":
 await pinterest(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -305,120 +305,120 @@ break;
 case "tourl":
 await tourl(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 case "remove":
-if (!Vlyre.isBotAdmin) return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlyre);
-if (!Vlyre.isSenderAdmin) return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlyre);
+if (!Vlkyre.isBotAdmin) return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+if (!Vlkyre.isSenderAdmin) return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
 await remove(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 case "promote":
-if (!Vlyre.isBotAdmin) return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlyre);
-if (!Vlyre.isSenderAdmin) return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlyre);
+if (!Vlkyre.isBotAdmin) return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+if (!Vlkyre.isSenderAdmin) return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
 await promote(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 case "admin":
 case "admins":
-if (!Vlyre.isSenderAdmin && !Vlyre.isSenderTUF)
-return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlyre);
-if (!Vlyre.isBotAdmin && !Vlyre.isSenderTUF)
-return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlyre);
+if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
 await admins(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 case "demote":
-if (!Vlyre.isBotAdmin) return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlyre);
-if (!Vlyre.isSenderAdmin) return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlyre);
+if (!Vlkyre.isBotAdmin) return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+if (!Vlkyre.isSenderAdmin) return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
 await demote(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 case "setdesc":
-if (!Vlyre.isBotAdmin) return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlyre);
-if (!Vlyre.isSenderAdmin) return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlyre);
+if (!Vlkyre.isBotAdmin) return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+if (!Vlkyre.isSenderAdmin) return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
 await setdesc(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -426,107 +426,107 @@ break;
 case "seticon":
 case "setgpfp":
 case "setppgrup":
-if (!Vlyre.isBotAdmin) return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlyre);
-if (!Vlyre.isSenderAdmin) return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlyre);
+if (!Vlkyre.isBotAdmin) return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+if (!Vlkyre.isSenderAdmin) return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
 await setgpfp(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 case "tagall":
-if (!Vlyre.isSenderAdmin && !Vlyre.isSenderTUF)
-return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlyre);
-if (!Vlyre.isBotAdmin && !Vlyre.isSenderTUF)
-return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlyre);
+if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
 await tagall(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 case "group":
-if (!Vlyre.isBotAdmin) return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlyre);
-if (!Vlyre.isSenderAdmin) return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlyre);
+if (!Vlkyre.isBotAdmin) return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+if (!Vlkyre.isSenderAdmin) return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
 await group(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 case "invite":
 case "grouplink":
-if (!Vlyre.isBotAdmin) return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlyre);
-if (!Vlyre.isSenderAdmin) return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlyre);
+if (!Vlkyre.isBotAdmin) return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+if (!Vlkyre.isSenderAdmin) return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
 await invite(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 case "del":
 case "delete":
-if (!Vlyre.isBotAdmin && !Vlyre.isSenderTUF)
-return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlyre);
-if (!Vlyre.isSenderAdmin && !Vlyre.isSenderTUF)
-return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlyre);
+if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
 await del(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -534,44 +534,44 @@ break;
 case "antilink":
 case "stoplink":
 case "nolink":
-if (!Vlyre.isBotAdmin) return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlyre);
-if (!Vlyre.isSenderAdmin) return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlyre);
+if (!Vlkyre.isBotAdmin) return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+if (!Vlkyre.isSenderAdmin) return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
 await antilink(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 case "autorank":
 case "autorole":
-if (!Vlyre.isBotAdmin && !Vlyre.isSenderTUF)
-return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlyre);
-if (!Vlyre.isSenderAdmin && !Vlyre.isSenderTUF)
-return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlyre);
+if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
 await autorank(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -579,23 +579,23 @@ break;
 case "welcome":
 case "welcomer":
 case "setwelcome":
-if (!Vlyre.isBotAdmin && !Vlyre.isSenderTUF)
-return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlyre);
-if (!Vlyre.isSenderAdmin && !Vlyre.isSenderTUF)
-return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlyre);
+if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
 await setwelcome(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -604,17 +604,17 @@ case "test":
 await test(
 Ѷ𝖎𝖔𝖓,
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -622,17 +622,17 @@ break;
 case "ban":
 await ban(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -640,17 +640,17 @@ break;
 case "unban":
 await unban(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -664,17 +664,17 @@ case "suggestaudio":
 case "suggestmusic":
 await radio(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -690,17 +690,17 @@ case "ytmusic":
 case "youtubemusic":
 await yta(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -713,17 +713,17 @@ case "ytvideo":
 case "youtubevideo":
 await ytv(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -735,17 +735,17 @@ case "youtubescrape":
 case "youtubesearch":
 await yts(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -755,17 +755,17 @@ case "reddit":
 case "subreddit":
 await reddit(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -773,17 +773,17 @@ break;
 case "rank":
 await rank(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -793,17 +793,17 @@ case "gtts":
 case "text2speech":
 await tts(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -815,17 +815,17 @@ case "laugh":
 case "dadjoke":
 await joke(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -833,17 +833,17 @@ break;
 case "meme":
 await meme(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -851,17 +851,17 @@ break;
 case "tinyurl":
 await tinyurl(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -869,17 +869,17 @@ break;
 case "join":
 await join(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -887,17 +887,17 @@ break;
 case "leave":
 await leave(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -905,17 +905,17 @@ break;
 case "lyrics":
 await lyrics(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -924,17 +924,17 @@ case "gimage":
 case "image":
 await image(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -945,17 +945,17 @@ case "search":
 case "google":
 await google(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -964,17 +964,17 @@ case "take":
 case "steal":
 await steal(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -982,17 +982,17 @@ break;
 case "iguser":
 await iguser(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1000,17 +1000,17 @@ break;
 case "ship":
 await ship(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1018,17 +1018,17 @@ break;
 case "quote":
 await quote(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1036,17 +1036,17 @@ break;
 case "fact":
 await fact(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1054,17 +1054,17 @@ break;
 case "advice":
 await advice(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1072,17 +1072,17 @@ break;
 case "pat":
 await pat(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1090,17 +1090,17 @@ break;
 case "hug":
 await hug(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1108,17 +1108,17 @@ break;
 case "kiss":
 await kiss(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1126,17 +1126,17 @@ break;
 case "cuddle":
 await cuddle(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1144,17 +1144,17 @@ break;
 case "kick":
 await kick(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1162,17 +1162,17 @@ break;
 case "bite":
 await bite(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1180,17 +1180,17 @@ break;
 case "blush":
 await blush(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1198,17 +1198,17 @@ break;
 case "bored":
 await bored(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1216,17 +1216,17 @@ break;
 case "confused":
 await confused(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1234,17 +1234,17 @@ break;
 case "cry":
 await cry(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1252,17 +1252,17 @@ break;
 case "goodnight":
 await goodnight(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1270,17 +1270,17 @@ break;
 case "happy":
 await happy(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1288,17 +1288,17 @@ break;
 case "poke":
 await poke(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1306,17 +1306,17 @@ break;
 case "sad":
 await sad(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1324,17 +1324,17 @@ break;
 case "slap":
 await slap(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1342,17 +1342,17 @@ break;
 case "smile":
 await smile(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1360,17 +1360,17 @@ break;
 case "wave":
 await wave(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1378,17 +1378,17 @@ break;
 case "wink":
 await wink(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1396,17 +1396,17 @@ break;
 case "dance":
 await dance(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1414,17 +1414,17 @@ break;
 case "baka":
 await baka(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1432,17 +1432,17 @@ break;
 case "bonk":
 await bonk(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1451,17 +1451,17 @@ case "hi5":
 case "highfive":
 await highfive(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1469,17 +1469,17 @@ break;
 case "kill":
 await kill(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1487,17 +1487,17 @@ break;
 case "nervous":
 await nervous(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1505,17 +1505,17 @@ break;
 case "punch":
 await punch(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1523,17 +1523,17 @@ break;
 case "scream":
 await scream(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1541,17 +1541,17 @@ break;
 case "stare":
 await stare(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1559,17 +1559,17 @@ break;
 case "yeet":
 await yeet(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1577,17 +1577,17 @@ break;
 case "yes":
 await yes(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1595,17 +1595,17 @@ break;
 case "waifu":
 await waifu(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1613,17 +1613,17 @@ break;
 case "neko":
 await neko(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1631,17 +1631,17 @@ break;
 case "anime":
 await anime(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1649,17 +1649,17 @@ break;
 case "manga":
 await manga(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1667,17 +1667,17 @@ break;
 case "wallpaper":
 await wallpaper(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1686,17 +1686,17 @@ case "bc":
 case "bcgroup":
 await bcgroup(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1704,17 +1704,17 @@ break;
 case "yt8d":
 await yt8d(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1722,17 +1722,17 @@ break;
 case "ytbassboost":
 await ytbassboost(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1740,17 +1740,17 @@ break;
 case "ytecho":
 await ytecho(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1758,17 +1758,17 @@ break;
 case "ytflanger":
 await ytflanger(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1776,17 +1776,17 @@ break;
 case "ytnightcore":
 await ytnightcore(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1794,17 +1794,17 @@ break;
 case "ytphaser":
 await ytphaser(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1812,17 +1812,17 @@ break;
 case "ytreverse":
 await ytreverse(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1830,17 +1830,17 @@ break;
 case "ytslow":
 await ytslow(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1848,17 +1848,17 @@ break;
 case "ytspeed":
 await ytspeed(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1866,17 +1866,17 @@ break;
 case "ytsubboost":
 await ytsubboost(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1884,17 +1884,17 @@ break;
 case "ytsuperslow":
 await ytsuperspeed(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1902,17 +1902,17 @@ break;
 case "ytsuperslow":
 await ytsuperslow(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1920,17 +1920,17 @@ break;
 case "ytsurround":
 await ytsurround(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1938,17 +1938,17 @@ break;
 case "ytvaporwave":
 await ytvaporwave(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1956,17 +1956,17 @@ break;
 case "ytvibrato":
 await ytvibrato(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1974,17 +1974,17 @@ break;
 case "bassboost":
 await bassboost(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1992,17 +1992,17 @@ break;
 case "echo":
 await echo(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2010,17 +2010,17 @@ break;
 case "flanger":
 await flanger(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2028,17 +2028,17 @@ break;
 case "nightcore":
 await nightcore(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2046,17 +2046,17 @@ break;
 case "phaser":
 await phaser(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2064,17 +2064,17 @@ break;
 case "reverse":
 await reverse(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2082,17 +2082,17 @@ break;
 case "slow":
 await slow(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2100,17 +2100,17 @@ break;
 case "speed":
 await speed(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2118,17 +2118,17 @@ break;
 case "subboost":
 await subboost(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2136,17 +2136,17 @@ break;
 case "superspeed":
 await superspeed(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2154,17 +2154,17 @@ break;
 case "surround":
 await surround(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2172,17 +2172,17 @@ break;
 case "vaporwave":
 await vaporwave(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2190,17 +2190,17 @@ break;
 case "vibrato":
 await vibrato(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2208,17 +2208,17 @@ break;
 case "ass":
 await ass(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2226,17 +2226,17 @@ break;
 case "bdsm":
 await bdsm(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2244,17 +2244,17 @@ break;
 case "cum":
 await cum(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2262,17 +2262,17 @@ break;
 case "doujin":
 await doujin(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2280,17 +2280,17 @@ break;
 case "feet":
 await feet(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2298,17 +2298,17 @@ break;
 case "femdom":
 await femdom(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2316,17 +2316,17 @@ break;
 case "foxgirl":
 await foxgirl(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2334,17 +2334,17 @@ break;
 case "glasses":
 await glasses(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2352,17 +2352,17 @@ break;
 case "hentai":
 await hentai(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2370,17 +2370,17 @@ break;
 case "maid":
 await maid(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2388,17 +2388,17 @@ break;
 case "masturbation":
 await masturbation(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2406,17 +2406,17 @@ break;
 case "netorare":
 await netorare(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2424,24 +2424,24 @@ break;
 case "orgy":
 await orgy(
 ӄӄ,
-Vlyre,
-Vlyre.A𝖗𝖌𝖘,
-Vlyre.pushName,
-Vlyre.fromMe,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.groupMetadata,
-Vlyre.participants,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.groupAdmins,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body,
-Vlyre.mentionByTag,
-Vlyre.mentionByReply
+Vlkyre,
+Vlkyre.A𝖗𝖌𝖘,
+Vlkyre.pushName,
+Vlkyre.fromMe,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.groupMetadata,
+Vlkyre.participants,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.groupAdmins,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body,
+Vlkyre.mentionByTag,
+Vlkyre.mentionByReply
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2449,17 +2449,17 @@ break;
 case "panties":
 await panties(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2467,17 +2467,17 @@ break;
 case "school":
 await school(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2485,17 +2485,17 @@ break;
 case "tentacles":
 await tentacles(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2503,17 +2503,17 @@ break;
 case "thighs":
 await thighs(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2521,17 +2521,17 @@ break;
 case "uniform":
 await uniform(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2539,17 +2539,17 @@ break;
 case "yuri":
 await yuri(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2558,17 +2558,17 @@ case "dly":
 case "daily":
 await daily(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2578,17 +2578,17 @@ case "pond":
 case "fishes":
 await fish(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2599,17 +2599,17 @@ case "betting":
 case "roulette":
 await gamble(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2619,17 +2619,17 @@ case "hunting":
 case "pokehunt":
 await hunt(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2639,17 +2639,17 @@ case "forest":
 case "animals":
 await zoo(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2660,17 +2660,17 @@ case "borrow":
 case "payment":
 await pay(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2681,17 +2681,17 @@ case "money":
 case "balance":
 await balance(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2699,17 +2699,17 @@ break;
 case "buy":
 await buy(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2720,17 +2720,17 @@ case "store":
 case "shopping":
 await store(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2740,17 +2740,17 @@ case "thief":
 case "robbery":
 await rob(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2761,17 +2761,17 @@ case "loot":
 case "inventory":
 await bag(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2784,17 +2784,17 @@ case "official":
 case "SUPPORT🦚":
 await support(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2805,17 +2805,17 @@ case "rules":
 case "BOT⚡RULES":
 await rules(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 break;
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
@@ -2830,17 +2830,17 @@ case "command":
 case "commands":
 await help(
 ӄӄ,
-Vlyre,
-Vlyre.pushName,
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlyre.quoted,
-Vlyre.isMedia,
-Vlyre.isGroup,
-Vlyre.isBotAdmin,
-Vlyre.isSenderAdmin,
-Vlyre.isSenderTUF,
-Vlyre.commandName,
-Vlyre.Body
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2848,15 +2848,15 @@ break;
 default:
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 return await ӄӄ.sendMessage(
-Vlyre.chatID,
+Vlkyre.chatID,
 {
 contextInfo: {
-mentionedJid: [Vlyre.sender],
+mentionedJid: [Vlkyre.sender],
 },
 image: {
 url: "./Vlkyre👗Skins/Vlkyre_404.png",
 },
-caption: `❣️ *ɴᴀᴍᴇ:* ${Vlyre.pushName || "No_Name"}
+caption: `❣️ *ɴᴀᴍᴇ:* ${Vlkyre.pushName || "No_Name"}
 
 *❌𝕰𝖗𝖗𝖔𝖗:* No Such Command.`,
 footer: "*⦓ ⒸVlkyre ⦔*\nᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ",
@@ -2872,7 +2872,7 @@ type: 1,
 headerType: 4,
 },
 {
-quoted: Vlyre,
+quoted: Vlkyre,
 }
 );
 }

@@ -52,7 +52,7 @@ let { Caught } = require("../../Vlkyre👒Hat/Caught");
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 exports.ytv = async (
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 pushName,
 F𝖚𝖑𝖑_A𝖗𝖌𝖘,
 quoted,
@@ -64,20 +64,20 @@ isSenderTUF,
 commandName,
 body,
 ) => {
-if (Vlyre.A𝖗𝖌𝖘.length === 0) {
+if (Vlkyre.A𝖗𝖌𝖘.length === 0) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 `*❌ERROR:* No query provided!
 
 *⚡USAGE:* ${prefix}${Final_Name} <song name or youtube link>`
 );
 }
-if (Vlyre.A𝖗𝖌𝖘.includes("yout")) {
-if (!YouTube_Regex.test(Vlyre.A𝖗𝖌𝖘[0])) {
+if (Vlkyre.A𝖗𝖌𝖘.includes("yout")) {
+if (!YouTube_Regex.test(Vlkyre.A𝖗𝖌𝖘[0])) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 `*❌ERROR:* No query provided!
 
 *⚡USAGE:* ${prefix}${Final_Name} <song name or youtube link>`
@@ -86,8 +86,8 @@ Vlyre,
 }
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 let FinalGot;
-if (YouTube_Regex.test(Vlyre.A𝖗𝖌𝖘[0])) {
-FinalGot = Vlyre.A𝖗𝖌𝖘[0];
+if (YouTube_Regex.test(Vlkyre.A𝖗𝖌𝖘[0])) {
+FinalGot = Vlkyre.A𝖗𝖌𝖘[0];
 } else {
 FinalGot = F𝖚𝖑𝖑_A𝖗𝖌𝖘;
 }
@@ -95,7 +95,7 @@ let LinkFound = await yts(FinalGot);
 if (!LinkFound) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 `*❌ERROR:* No Music Found!
 
 *⚡USAGE:* ${prefix}${Final_Name} <song name or youtube link>`
@@ -107,8 +107,8 @@ TubeFile.forEach(async function (Found) {
 if (Found.seconds > 1800) {
 return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
-Vlyre.A𝖗𝖌𝖘,
+Vlkyre,
+Vlkyre.A𝖗𝖌𝖘,
 Found.thumbnail,
 `❌𝗘𝗿𝗿𝗼𝗿: _Choose Smaller Audio less then 30mins!_
 
@@ -131,8 +131,8 @@ DirectFile = "Null";
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 return await Video_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
-Vlyre.A𝖗𝖌𝖘,
+Vlkyre,
+Vlkyre.A𝖗𝖌𝖘,
 DLoader,
 `𝐘𝐨𝐮𝐓𝐮𝐛𝐞📹𝐕𝐢𝐝𝐞𝐨
 🍻𝐓𝐢𝐭𝐥𝐞: ${Found.title}

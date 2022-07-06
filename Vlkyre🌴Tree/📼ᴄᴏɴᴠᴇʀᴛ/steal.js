@@ -47,7 +47,7 @@ let { Caught } = require("../../Vlkyre👒Hat/Caught");
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 exports.steal = async (
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 pushName,
 F𝖚𝖑𝖑_A𝖗𝖌𝖘,
 quoted,
@@ -59,11 +59,11 @@ isSenderTUF,
 commandName,
 body,
 ) => {
-let Mme = (Vlyre.quoted.msg || Vlyre.quoted).mimetype || "";
+let Mme = (Vlkyre.quoted.msg || Vlkyre.quoted).mimetype || "";
 if (!quoted) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 `*❌ERROR:*  Could not find any sticker in context!
 
 *⚡USAGE:* ${prefix}${Final_Name} <Tag the sticker>`
@@ -74,7 +74,7 @@ if (/webp/.test(Mme)) {
 let Media = await quoted.download();
 let ticker = new Sticker(Media, {
 pack: F𝖚𝖑𝖑_A𝖗𝖌𝖘 || "ᴋʀʏᴢᴏɴᴇ",
-author: "ʙʏ (𝐜)Vlyre",
+author: "ʙʏ (𝐜)Vlkyre",
 type: StickerTypes.FULL,
 categories: [`🤩`, `🎉`],
 id: `12345`,
@@ -83,9 +83,9 @@ background: `transparent`,
 });
 let Buffer = await ticker.toBuffer();
 await ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(
-Vlyre.chatID,
+Vlkyre.chatID,
 { sticker: Buffer },
-{ quoted: Vlyre }
+{ quoted: Vlkyre }
 );
 }
 };

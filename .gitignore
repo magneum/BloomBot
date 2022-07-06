@@ -25,7 +25,7 @@ pids
 *.seed
 *.pid.lock
 package-lock.json
-Vlyre.env
+Vlkyre.env
 lib-cov
 coverage
 *.lcov

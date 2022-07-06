@@ -94,17 +94,17 @@ UserPrivate = require(_0x512219(0x177)),
 userBanCheck = require(_0x512219(0x16e)),
 { ᴋʀʏᴏᴛᴇɴᴏʀ } = require("../Vlkyre🛎️Bell/ᴋʀʏᴏᴛᴇɴᴏʀ/ᴋʀʏᴏᴛᴇɴᴏʀ");
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-exports.Message_NotMe = async (ӄӄ, Vlyre) => {
+exports.Message_NotMe = async (ӄӄ, Vlkyre) => {
 await git.fetch();
 var newCommits = await git.log(["🐍Ş𝖎𝖕𝖍𝖔𝖓®..origin/🐍Ş𝖎𝖕𝖍𝖔𝖓®"]);
 if (newCommits.total != 0) {
 // try {
 // await ӄӄ
 // .groupSettingUpdate("120363020792949649@g.us", "announcement")
-// .catch((𝕰𝖗𝖗𝖔𝖗) => Vlyre.reply(jsonformat(𝕰𝖗𝖗𝖔𝖗)));
-// await ӄӄ.sendMessage(Vlyre.chatID, {
+// .catch((𝕰𝖗𝖗𝖔𝖗) => Vlkyre.reply(jsonformat(𝕰𝖗𝖗𝖔𝖗)));
+// await ӄӄ.sendMessage(Vlkyre.chatID, {
 // text: "*💡Valkyrie Is Now Updating!*\n_Wait For 30-40seconds..._",
-// mentions: Vlyre.participants.map((a) => a.id),
+// mentions: Vlkyre.participants.map((a) => a.id),
 // });
 // } catch (𝕰𝖗𝖗𝖔𝖗) {
 // console.log(𝕰𝖗𝖗𝖔𝖗);

@@ -48,7 +48,7 @@ let { Caught } = require("../../Vlkyre👒Hat/Caught");
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
 exports.antilink = async (
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 pushName,
 F𝖚𝖑𝖑_A𝖗𝖌𝖘,
 quoted,
@@ -64,70 +64,70 @@ body,
 if (!F𝖚𝖑𝖑_A𝖗𝖌𝖘) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 `*❌ERROR:*  Argument Needed!
 
 *⚡USAGE:* ${prefix}${Final_Name} on/off`
 );
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
-} else if (Vlyre.A𝖗𝖌𝖘[0] === `ON` || Vlyre.A𝖗𝖌𝖘[0] === `on` || Vlyre.A𝖗𝖌𝖘[0] === `On`) {
+} else if (Vlkyre.A𝖗𝖌𝖘[0] === `ON` || Vlkyre.A𝖗𝖌𝖘[0] === `on` || Vlkyre.A𝖗𝖌𝖘[0] === `On`) {
 return await LinkList.findOne(
 {
-serverID: Vlyre.chatID,
+serverID: Vlkyre.chatID,
 },
 async (error, server) => {
-if (error) return Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlyre, e);
+if (error) return Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, e);
 if (!server) {
 let newServer = new LinkList({
-serverID: Vlyre.chatID,
+serverID: Vlkyre.chatID,
 value: "ON",
 });
 await newServer.save();
 return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
-Vlyre.A𝖗𝖌𝖘,
+Vlkyre,
+Vlkyre.A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/𝐕𝐥𝐤𝐲𝐫𝐞_Matte.png",
-`📜𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${Vlyre.groupMetadata.subject || ""}
+`📜𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${Vlkyre.groupMetadata.subject || ""}
 🔗𝐀𝐧𝐭𝐢𝐥𝐢𝐧𝐤: ✅On`
 );
 } else {
 return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
-Vlyre.A𝖗𝖌𝖘,
+Vlkyre,
+Vlkyre.A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/𝐕𝐥𝐤𝐲𝐫𝐞_Matte.png",
-`📜𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${Vlyre.groupMetadata.subject || ""}
+`📜𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${Vlkyre.groupMetadata.subject || ""}
 🔗𝐀𝐧𝐭𝐢𝐥𝐢𝐧𝐤: ✅On`
 );
 }
 }
 );
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
-} else if (Vlyre.A𝖗𝖌𝖘[0] === `OFF` || Vlyre.A𝖗𝖌𝖘[0] === `off` || Vlyre.A𝖗𝖌𝖘[0] === `Off`) {
+} else if (Vlkyre.A𝖗𝖌𝖘[0] === `OFF` || Vlkyre.A𝖗𝖌𝖘[0] === `off` || Vlkyre.A𝖗𝖌𝖘[0] === `Off`) {
 return await LinkList.findOne(
 {
-serverID: Vlyre.chatID,
+serverID: Vlkyre.chatID,
 },
 async (error, server) => {
-if (error) return Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlyre, e);
+if (error) return Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, e);
 if (!server) {
 return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
-Vlyre.A𝖗𝖌𝖘,
+Vlkyre,
+Vlkyre.A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/𝐕𝐥𝐤𝐲𝐫𝐞_Matte.png",
-`📜𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${Vlyre.groupMetadata.subject || ""}
+`📜𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${Vlkyre.groupMetadata.subject || ""}
 🔗𝐀𝐧𝐭𝐢𝐥𝐢𝐧𝐤: ❌OFF`
 );
 } else {
 await server.delete();
 return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
-Vlyre.A𝖗𝖌𝖘,
+Vlkyre,
+Vlkyre.A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/𝐕𝐥𝐤𝐲𝐫𝐞_Matte.png",
-`📜𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${Vlyre.groupMetadata.subject || ""}
+`📜𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${Vlkyre.groupMetadata.subject || ""}
 🔗𝐀𝐧𝐭𝐢𝐥𝐢𝐧𝐤: ❌OFF`
 );
 }
@@ -137,7 +137,7 @@ Vlyre.A𝖗𝖌𝖘,
 } else {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 `*❌ERROR:*  Argument Needed!
 
 *⚡USAGE:* ${prefix}${Final_Name} on/off`

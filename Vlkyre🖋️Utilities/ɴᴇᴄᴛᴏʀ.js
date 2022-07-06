@@ -86,21 +86,21 @@ exports.runtime = function (seconds) {
 seconds = Number(seconds);
 var d = Math.floor(seconds / (3600 * 24));
 var h = Math.floor((seconds % (3600 * 24)) / 3600);
-var Vlyre = Math.floor((seconds % 3600) / 60);
+var Vlkyre = Math.floor((seconds % 3600) / 60);
 var s = Math.floor(seconds % 60);
 var dDisplay = d > 0 ? d + (d == 1 ? " day, " : " days, ") : "";
 var hDisplay = h > 0 ? h + (h == 1 ? " hour, " : " hours, ") : "";
 var mDisplay =
-Vlyre > 0 ? Vlyre + (Vlyre == 1 ? " minute, " : " minutes, ") : "";
+Vlkyre > 0 ? Vlkyre + (Vlkyre == 1 ? " minute, " : " minutes, ") : "";
 var sDisplay = s > 0 ? s + (s == 1 ? " second" : " seconds") : "";
 return dDisplay + hDisplay + mDisplay + sDisplay;
 };
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 exports.clockString = function (seconds) {
 let h = isNaN(seconds) ? "--" : Math.floor((seconds % (3600 * 24)) / 3600);
-let Vlyre = isNaN(seconds) ? "--" : Math.floor((seconds % 3600) / 60);
+let Vlkyre = isNaN(seconds) ? "--" : Math.floor((seconds % 3600) / 60);
 let s = isNaN(seconds) ? "--" : Math.floor(seconds % 60);
-return [h, Vlyre, s].map((v) => v.toString().padStart(2, 0)).join(":");
+return [h, Vlkyre, s].map((v) => v.toString().padStart(2, 0)).join(":");
 };
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 exports.sleep = async (ms) => {
@@ -215,187 +215,187 @@ unlink("./Vlkyre🎒Bag/${filename}.gif"),
 return buffer5;
 };
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-exports.ɴᴇᴄᴛᴏʀ = async (ӄӄ, Vlyre, Ѷ𝖎𝖔𝖓) => {
-if (!Vlyre) return Vlyre;
+exports.ɴᴇᴄᴛᴏʀ = async (ӄӄ, Vlkyre, Ѷ𝖎𝖔𝖓) => {
+if (!Vlkyre) return Vlkyre;
 let M = proto.WebMessageInfo;
-if (Vlyre.key) {
-Vlyre.id = Vlyre.key.id;
-Vlyre.isBaileys = Vlyre.id.startsWith("BAE5") && Vlyre.id.length === 16;
-Vlyre.chatID = Vlyre.key.remoteJid;
-Vlyre.fromMe = Vlyre.key.fromMe;
-Vlyre.isGroup = Vlyre.chatID.endsWith("@g.us");
-Vlyre.sender = ӄӄ.decodeJid(
-(Vlyre.fromMe && ӄӄ.user.id) ||
-Vlyre.participant ||
-Vlyre.key.participant ||
-Vlyre.chatID ||
+if (Vlkyre.key) {
+Vlkyre.id = Vlkyre.key.id;
+Vlkyre.isBaileys = Vlkyre.id.startsWith("BAE5") && Vlkyre.id.length === 16;
+Vlkyre.chatID = Vlkyre.key.remoteJid;
+Vlkyre.fromMe = Vlkyre.key.fromMe;
+Vlkyre.isGroup = Vlkyre.chatID.endsWith("@g.us");
+Vlkyre.sender = ӄӄ.decodeJid(
+(Vlkyre.fromMe && ӄӄ.user.id) ||
+Vlkyre.participant ||
+Vlkyre.key.participant ||
+Vlkyre.chatID ||
 ""
 );
-if (Vlyre.isGroup)
-Vlyre.participant = ӄӄ.decodeJid(Vlyre.key.participant) || "";
+if (Vlkyre.isGroup)
+Vlkyre.participant = ӄӄ.decodeJid(Vlkyre.key.participant) || "";
 }
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-if (Vlyre.message) {
-Vlyre.mtype = getContentType(Vlyre.message);
-Vlyre.msg =
-Vlyre.mtype == "viewOnceMessage"
-? Vlyre.message[Vlyre.mtype].message[
-getContentType(Vlyre.message[Vlyre.mtype].message)
+if (Vlkyre.message) {
+Vlkyre.mtype = getContentType(Vlkyre.message);
+Vlkyre.msg =
+Vlkyre.mtype == "viewOnceMessage"
+? Vlkyre.message[Vlkyre.mtype].message[
+getContentType(Vlkyre.message[Vlkyre.mtype].message)
 ]
-: Vlyre.message[Vlyre.mtype];
-Vlyre.Body =
-Vlyre.mtype === "conversation"
-? Vlyre.message.conversation
-: Vlyre.mtype == "imageMessage"
-? Vlyre.message.imageMessage.caption
-: Vlyre.mtype == "videoMessage"
-? Vlyre.message.videoMessage.caption
-: Vlyre.mtype == "extendedTextMessage"
-? Vlyre.message.extendedTextMessage.text
-: Vlyre.mtype == "buttonsResponseMessage"
-? Vlyre.message.buttonsResponseMessage.selectedButtonId
-: Vlyre.mtype == "listResponseMessage"
-? Vlyre.message.listResponseMessage.singleSelectReply.selectedRowId
-: Vlyre.mtype == "templateButtonReplyMessage"
-? Vlyre.message.templateButtonReplyMessage.selectedId
-: Vlyre.mtype === "messageContextInfo"
-? Vlyre.message.buttonsResponseMessage?.selectedButtonId ||
-Vlyre.message.listResponseMessage?.singleSelectReply
+: Vlkyre.message[Vlkyre.mtype];
+Vlkyre.Body =
+Vlkyre.mtype === "conversation"
+? Vlkyre.message.conversation
+: Vlkyre.mtype == "imageMessage"
+? Vlkyre.message.imageMessage.caption
+: Vlkyre.mtype == "videoMessage"
+? Vlkyre.message.videoMessage.caption
+: Vlkyre.mtype == "extendedTextMessage"
+? Vlkyre.message.extendedTextMessage.text
+: Vlkyre.mtype == "buttonsResponseMessage"
+? Vlkyre.message.buttonsResponseMessage.selectedButtonId
+: Vlkyre.mtype == "listResponseMessage"
+? Vlkyre.message.listResponseMessage.singleSelectReply.selectedRowId
+: Vlkyre.mtype == "templateButtonReplyMessage"
+? Vlkyre.message.templateButtonReplyMessage.selectedId
+: Vlkyre.mtype === "messageContextInfo"
+? Vlkyre.message.buttonsResponseMessage?.selectedButtonId ||
+Vlkyre.message.listResponseMessage?.singleSelectReply
 .selectedRowId ||
-Vlyre.text
+Vlkyre.text
 : "";
-let quoted = (Vlyre.quoted = Vlyre.msg.contextInfo
-? Vlyre.msg.contextInfo.quotedMessage
+let quoted = (Vlkyre.quoted = Vlkyre.msg.contextInfo
+? Vlkyre.msg.contextInfo.quotedMessage
 : null);
-Vlyre.mentionedJid = Vlyre.msg.contextInfo
-? Vlyre.msg.contextInfo.mentionedJid
+Vlkyre.mentionedJid = Vlkyre.msg.contextInfo
+? Vlkyre.msg.contextInfo.mentionedJid
 : [];
-if (Vlyre.quoted) {
+if (Vlkyre.quoted) {
 let type = getContentType(quoted);
-Vlyre.quoted = Vlyre.quoted[type];
+Vlkyre.quoted = Vlkyre.quoted[type];
 if (["productMessage"].includes(type)) {
-type = getContentType(Vlyre.quoted);
-Vlyre.quoted = Vlyre.quoted[type];
+type = getContentType(Vlkyre.quoted);
+Vlkyre.quoted = Vlkyre.quoted[type];
 }
-if (typeof Vlyre.quoted === "string")
-Vlyre.quoted = {
-text: Vlyre.quoted,
+if (typeof Vlkyre.quoted === "string")
+Vlkyre.quoted = {
+text: Vlkyre.quoted,
 };
-Vlyre.quoted.mtype = type;
-Vlyre.quoted.id = Vlyre.msg.contextInfo.stanzaId;
-Vlyre.quoted.chatID = Vlyre.msg.contextInfo.remoteJid || Vlyre.chatID;
-Vlyre.quoted.isBaileys = Vlyre.quoted.id
-? Vlyre.quoted.id.startsWith("BAE5") && Vlyre.quoted.id.length === 16
+Vlkyre.quoted.mtype = type;
+Vlkyre.quoted.id = Vlkyre.msg.contextInfo.stanzaId;
+Vlkyre.quoted.chatID = Vlkyre.msg.contextInfo.remoteJid || Vlkyre.chatID;
+Vlkyre.quoted.isBaileys = Vlkyre.quoted.id
+? Vlkyre.quoted.id.startsWith("BAE5") && Vlkyre.quoted.id.length === 16
 : false;
-Vlyre.quoted.sender = ӄӄ.decodeJid(Vlyre.msg.contextInfo.participant);
-Vlyre.quoted.fromMe = Vlyre.quoted.sender === (ӄӄ.user && ӄӄ.user.id);
-Vlyre.quoted.text =
-Vlyre.quoted.text ||
-Vlyre.quoted.caption ||
-Vlyre.quoted.conversation ||
-Vlyre.quoted.contentText ||
-Vlyre.quoted.selectedDisplayText ||
-Vlyre.quoted.title ||
+Vlkyre.quoted.sender = ӄӄ.decodeJid(Vlkyre.msg.contextInfo.participant);
+Vlkyre.quoted.fromMe = Vlkyre.quoted.sender === (ӄӄ.user && ӄӄ.user.id);
+Vlkyre.quoted.text =
+Vlkyre.quoted.text ||
+Vlkyre.quoted.caption ||
+Vlkyre.quoted.conversation ||
+Vlkyre.quoted.contentText ||
+Vlkyre.quoted.selectedDisplayText ||
+Vlkyre.quoted.title ||
 "";
-Vlyre.quoted.mentionedJid = Vlyre.msg.contextInfo
-? Vlyre.msg.contextInfo.mentionedJid
+Vlkyre.quoted.mentionedJid = Vlkyre.msg.contextInfo
+? Vlkyre.msg.contextInfo.mentionedJid
 : [];
-Vlyre.getQuotedObj = Vlyre.getQuotedMessage = async () => {
-if (!Vlyre.quoted.id) return false;
-let q = await Ѷ𝖎𝖔𝖓.loadMessage(Vlyre.chatID, Vlyre.quoted.id, ӄӄ);
+Vlkyre.getQuotedObj = Vlkyre.getQuotedMessage = async () => {
+if (!Vlkyre.quoted.id) return false;
+let q = await Ѷ𝖎𝖔𝖓.loadMessage(Vlkyre.chatID, Vlkyre.quoted.id, ӄӄ);
 return exports.ɴᴇᴄᴛᴏʀ(ӄӄ, q, Ѷ𝖎𝖔𝖓);
 };
-let vM = (Vlyre.quoted.fakeObj = M.fromObject({
+let vM = (Vlkyre.quoted.fakeObj = M.fromObject({
 key: {
-remoteJid: Vlyre.quoted.chatID,
-fromMe: Vlyre.quoted.fromMe,
-id: Vlyre.quoted.id,
+remoteJid: Vlkyre.quoted.chatID,
+fromMe: Vlkyre.quoted.fromMe,
+id: Vlkyre.quoted.id,
 },
 message: quoted,
-...(Vlyre.isGroup ? { participant: Vlyre.quoted.sender } : {}),
+...(Vlkyre.isGroup ? { participant: Vlkyre.quoted.sender } : {}),
 }));
-Vlyre.quoted.delete = () =>
-ӄӄ.sendMessage(Vlyre.quoted.chatID, { delete: vM.key });
-Vlyre.quoted.copyNForward = (jid, forceForward = false, options = {}) =>
+Vlkyre.quoted.delete = () =>
+ӄӄ.sendMessage(Vlkyre.quoted.chatID, { delete: vM.key });
+Vlkyre.quoted.copyNForward = (jid, forceForward = false, options = {}) =>
 ӄӄ.copyNForward(jid, vM, forceForward, options);
-Vlyre.quoted.download = () => ӄӄ.downloadMediaMessage(Vlyre.quoted);
+Vlkyre.quoted.download = () => ӄӄ.downloadMediaMessage(Vlkyre.quoted);
 }
 }
-if (Vlyre.msg.url)
-Vlyre.download = () => ӄӄ.downloadMediaMessage(Vlyre.msg);
-Vlyre.text =
-Vlyre.msg.text ||
-Vlyre.msg.caption ||
-Vlyre.message.conversation ||
-Vlyre.msg.contentText ||
-Vlyre.msg.selectedDisplayText ||
-Vlyre.msg.title ||
+if (Vlkyre.msg.url)
+Vlkyre.download = () => ӄӄ.downloadMediaMessage(Vlkyre.msg);
+Vlkyre.text =
+Vlkyre.msg.text ||
+Vlkyre.msg.caption ||
+Vlkyre.message.conversation ||
+Vlkyre.msg.contentText ||
+Vlkyre.msg.selectedDisplayText ||
+Vlkyre.msg.title ||
 "";
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-Vlyre.reply = (text, chatId = Vlyre.chatID, options = {}) =>
+Vlkyre.reply = (text, chatId = Vlkyre.chatID, options = {}) =>
 Buffer.isBuffer(text)
-? ӄӄ.sendMedia(chatId, text, "file", "", Vlyre, { ...options })
-: ӄӄ.sendText(chatId, text, Vlyre, { ...options });
-Vlyre.copy = () => exports.ɴᴇᴄᴛᴏʀ(ӄӄ, M.fromObject(M.toObject(Vlyre)));
-Vlyre.copyNForward = (
-jid = Vlyre.chatID,
+? ӄӄ.sendMedia(chatId, text, "file", "", Vlkyre, { ...options })
+: ӄӄ.sendText(chatId, text, Vlkyre, { ...options });
+Vlkyre.copy = () => exports.ɴᴇᴄᴛᴏʀ(ӄӄ, M.fromObject(M.toObject(Vlkyre)));
+Vlkyre.copyNForward = (
+jid = Vlkyre.chatID,
 forceForward = false,
 options = {}
-) => ӄӄ.copyNForward(jid, Vlyre, forceForward, options);
+) => ӄӄ.copyNForward(jid, Vlkyre, forceForward, options);
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-Vlyre.isCommand = Vlyre.Body.startsWith(prefix);
-Vlyre.isCmd =
-prefix.includes(Vlyre.Body != "" && Vlyre.Body.slice(0, 1)) &&
-Vlyre.Body.slice(1) != "";
-Vlyre.commandName = Vlyre.isCmd
-? Vlyre.Body.slice(1).trim().split(" ")[0].toLowerCase()
+Vlkyre.isCommand = Vlkyre.Body.startsWith(prefix);
+Vlkyre.isCmd =
+prefix.includes(Vlkyre.Body != "" && Vlkyre.Body.slice(0, 1)) &&
+Vlkyre.Body.slice(1) != "";
+Vlkyre.commandName = Vlkyre.isCmd
+? Vlkyre.Body.slice(1).trim().split(" ")[0].toLowerCase()
 : "";
-Vlyre.A𝖗𝖌𝖘 = Vlyre.Body.trim().split(/ +/).slice(1);
-Vlyre.pushName = Vlyre.pushName || "No Name";
-Vlyre.botNumber = await ӄӄ.decodeJid(ӄӄ.user.id);
-Vlyre.isCreator = [Vlyre.botNumber, ...global.owner]
+Vlkyre.A𝖗𝖌𝖘 = Vlkyre.Body.trim().split(/ +/).slice(1);
+Vlkyre.pushName = Vlkyre.pushName || "No Name";
+Vlkyre.botNumber = await ӄӄ.decodeJid(ӄӄ.user.id);
+Vlkyre.isCreator = [Vlkyre.botNumber, ...global.owner]
 .map((v) => v.replace(/[^0-9]/g, "") + "@s.whatsapp.net")
-.includes(Vlyre.sender);
-Vlyre.fromMe = Vlyre.sender == Vlyre.botNumber ? true : false;
-Vlyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘 = Vlyre.A𝖗𝖌𝖘.join(" ");
-Vlyre.quoted = Vlyre.quoted ? Vlyre.quoted : Vlyre;
-let mime = (Vlyre.quoted.msg || Vlyre.quoted).mimetype || "";
-Vlyre.isMedia = /image|video|sticker|audio/.test(mime);
-Vlyre.groupMetadata = Vlyre.isGroup
-? await ӄӄ.groupMetadata(Vlyre.chatID)
+.includes(Vlkyre.sender);
+Vlkyre.fromMe = Vlkyre.sender == Vlkyre.botNumber ? true : false;
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘 = Vlkyre.A𝖗𝖌𝖘.join(" ");
+Vlkyre.quoted = Vlkyre.quoted ? Vlkyre.quoted : Vlkyre;
+let mime = (Vlkyre.quoted.msg || Vlkyre.quoted).mimetype || "";
+Vlkyre.isMedia = /image|video|sticker|audio/.test(mime);
+Vlkyre.groupMetadata = Vlkyre.isGroup
+? await ӄӄ.groupMetadata(Vlkyre.chatID)
 : "";
-Vlyre.participants = Vlyre.isGroup
-? await Vlyre.groupMetadata.participants
+Vlkyre.participants = Vlkyre.isGroup
+? await Vlkyre.groupMetadata.participants
 : "";
-Vlyre.groupAdmins = Vlyre.isGroup
-? await Vlyre.participants
+Vlkyre.groupAdmins = Vlkyre.isGroup
+? await Vlkyre.participants
 .filter((v) => v.admin !== null)
 .map((v) => v.id)
 : "";
-Vlyre.isBotAdmin = Vlyre.isGroup
-? Vlyre.groupAdmins.includes(Vlyre.botNumber)
+Vlkyre.isBotAdmin = Vlkyre.isGroup
+? Vlkyre.groupAdmins.includes(Vlkyre.botNumber)
 : false;
-Vlyre.isSenderAdmin = Vlyre.isGroup
-? Vlyre.groupAdmins.includes(Vlyre.sender)
+Vlkyre.isSenderAdmin = Vlkyre.isGroup
+? Vlkyre.groupAdmins.includes(Vlkyre.sender)
 : false;
-Vlyre.mentionByTag =
-Vlyre.mtype == "extendedTextMessage" &&
-Vlyre.message.extendedTextMessage.contextInfo != null
-? Vlyre.message.extendedTextMessage.contextInfo.mentionedJid
+Vlkyre.mentionByTag =
+Vlkyre.mtype == "extendedTextMessage" &&
+Vlkyre.message.extendedTextMessage.contextInfo != null
+? Vlkyre.message.extendedTextMessage.contextInfo.mentionedJid
 : [];
-Vlyre.mentionByReply =
-Vlyre.mtype == "extendedTextMessage" &&
-Vlyre.message.extendedTextMessage.contextInfo != null
-? Vlyre.message.extendedTextMessage.contextInfo.participant || ""
+Vlkyre.mentionByReply =
+Vlkyre.mtype == "extendedTextMessage" &&
+Vlkyre.message.extendedTextMessage.contextInfo != null
+? Vlkyre.message.extendedTextMessage.contextInfo.participant || ""
 : "";
 let MODString =
 process.env.MOD === undefined
 ? "918436686758,917430922909"
 : process.env.MOD;
-Vlyre.isSenderTUF = MODString.includes(
-Vlyre.sender.substring(0, Vlyre.sender.indexOf("@"))
+Vlkyre.isSenderTUF = MODString.includes(
+Vlkyre.sender.substring(0, Vlkyre.sender.indexOf("@"))
 );
-return Vlyre;
+return Vlkyre;
 };
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 // ╔⧉༻ [ Ѷ𝖑𝐤𝐲𝖗𝖊🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!

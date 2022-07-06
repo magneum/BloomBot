@@ -47,7 +47,7 @@ let { Caught } = require("../../Vlkyre👒Hat/Caught");
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 exports.carbon = async (
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 pushName,
 F𝖚𝖑𝖑_A𝖗𝖌𝖘,
 quoted,
@@ -89,10 +89,10 @@ let Themes = [
 `yeti`,
 `zenburn`,
 ];
-if (!Themes.includes(Vlyre.A𝖗𝖌𝖘[0])) {
+if (!Themes.includes(Vlkyre.A𝖗𝖌𝖘[0])) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 `*❌ERROR:*  Wrong Theme Name!
 
 *⚡USAGE:* ${prefix}${Final_Name} <theme name> <text>
@@ -128,7 +128,7 @@ Vlyre,
 ╚════════════╝`
 );
 }
-let ThemeInput = Vlyre.A𝖗𝖌𝖘[0];
+let ThemeInput = Vlkyre.A𝖗𝖌𝖘[0];
 let FinalText = body
 .replace(ThemeInput, "")
 .replace(body[0], "")
@@ -140,7 +140,7 @@ console.log(FinalText);
 if (FinalText.length > 20) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 `*❌ERROR:*  maximum letters can be 20!
 
 *⚡USAGE:* ${prefix}${Final_Name} <theme name> <text>`
@@ -156,8 +156,8 @@ let ImgPath = "./Vlkyre🎒Bag/" + Date.now().toString() + ".png";
 await fs.createWriteStream(ImgPath).write(output);
 await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
-Vlyre.A𝖗𝖌𝖘,
+Vlkyre,
+Vlkyre.A𝖗𝖌𝖘,
 ImgPath,
 `🌈𝗧𝗵𝗲𝗺𝗲: _${ThemeInput}_
 ❗𝗘𝗺𝗼𝗷𝗶: _Will Remove All Emoji!_`

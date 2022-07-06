@@ -47,7 +47,7 @@ let { Caught } = require("../../Vlkyre👒Hat/Caught");
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
 exports.group = async (
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 pushName,
 F𝖚𝖑𝖑_A𝖗𝖌𝖘,
 quoted,
@@ -61,18 +61,18 @@ body,
 ) => {
 
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
-if (Vlyre.A𝖗𝖌𝖘[0] === `open`) {
+if (Vlkyre.A𝖗𝖌𝖘[0] === `open`) {
 await ӄ𝖗𝖞ӄ𝖓𝖟
-.groupSettingUpdate(Vlyre.chatID, `not_announcement`)
-.catch((Èrrðr) => Vlyre.reply(jsonformat(Èrrðr)));
-} else if (Vlyre.A𝖗𝖌𝖘[0] === `close`) {
+.groupSettingUpdate(Vlkyre.chatID, `not_announcement`)
+.catch((Èrrðr) => Vlkyre.reply(jsonformat(Èrrðr)));
+} else if (Vlkyre.A𝖗𝖌𝖘[0] === `close`) {
 await ӄ𝖗𝖞ӄ𝖓𝖟
-.groupSettingUpdate(Vlyre.chatID, `announcement`)
-.catch((Èrrðr) => Vlyre.reply(jsonformat(Èrrðr)));
+.groupSettingUpdate(Vlkyre.chatID, `announcement`)
+.catch((Èrrðr) => Vlkyre.reply(jsonformat(Èrrðr)));
 } else {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 `*❌ERROR:* Argument Needed!
 
 *⚡USAGE:* ${prefix}${Final_Name} <open/close>`

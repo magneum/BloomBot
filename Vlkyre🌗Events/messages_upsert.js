@@ -25,8 +25,8 @@ Object.keys(𝖈𝖍𝖆𝖙.message)[0] === "ephemeralMessage"
 if (𝖈𝖍𝖆𝖙.key && 𝖈𝖍𝖆𝖙.key.remoteJid === "status@broadcast") return;
 if (!ӄӄ.public && !𝖈𝖍𝖆𝖙.key.fromMe && chatUpdate.type === "notify") return;
 if (𝖈𝖍𝖆𝖙.key.id.startsWith("BAE5") && 𝖈𝖍𝖆𝖙.key.id.length === 16) return;
-Vlyre = await ɴᴇᴄᴛᴏʀ(ӄӄ, 𝖈𝖍𝖆𝖙, Ѷ𝖎𝖔𝖓);
-require("../Vlkyre🖋️Utilities/Ѷ𝖆𝖑.js")(ӄӄ, Vlyre, chatUpdate, Ѷ𝖎𝖔𝖓).catch(
+Vlkyre = await ɴᴇᴄᴛᴏʀ(ӄӄ, 𝖈𝖍𝖆𝖙, Ѷ𝖎𝖔𝖓);
+require("../Vlkyre🖋️Utilities/Ѷ𝖆𝖑.js")(ӄӄ, Vlkyre, chatUpdate, Ѷ𝖎𝖔𝖓).catch(
 (error) => console.log(error)
 );
 } catch (err) {

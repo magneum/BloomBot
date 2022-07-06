@@ -45,7 +45,7 @@ let { Caught } = require("../../Vlkyre👒Hat/Caught");
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 exports.quote = async (
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 pushName,
 F𝖚𝖑𝖑_A𝖗𝖌𝖘,
 quoted,
@@ -62,16 +62,16 @@ try {
 quoo = await axios.get(`https://favqs.com/api/qotd`);
 return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
-Vlyre.A𝖗𝖌𝖘,
-"./Vlkyre👗Skins/Vlyre.png",
+Vlkyre,
+Vlkyre.A𝖗𝖌𝖘,
+"./Vlkyre👗Skins/Vlkyre.png",
 `📝 *Content:* ${quoo.data.quote.body}
 *✍️ Author:* ${quoo.data.quote.author}`
 );
 } catch (Èrrðr) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 `*❌ERROR:* Something went wrong.*`
 );
 }

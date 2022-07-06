@@ -94,39 +94,39 @@ UserPrivate = require(_0x512219(0x177)),
 userBanCheck = require(_0x512219(0x16e)),
 { ᴋʀʏᴏᴛᴇɴᴏʀ } = require("../Vlkyre🛎️Bell/ᴋʀʏᴏᴛᴇɴᴏʀ/ᴋʀʏᴏᴛᴇɴᴏʀ");
 ("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
-module.exports = ӄӄ = async (ӄӄ, Vlyre, chatUpdate, Ѷ𝖎𝖔𝖓) => {
+module.exports = ӄӄ = async (ӄӄ, Vlkyre, chatUpdate, Ѷ𝖎𝖔𝖓) => {
 async function SlowDown(Present_Time) {
 await Halt.findOne(
 {
-ID: Vlyre.sender,
+ID: Vlkyre.sender,
 },
 async (𝕰𝖗𝖗𝖔𝖗, Cool) => {
 try {
 console.log(Cool);
 } catch {}
-if (𝕰𝖗𝖗𝖔𝖗) return Caught(ӄӄ, Vlyre, 𝕰𝖗𝖗𝖔𝖗);
+if (𝕰𝖗𝖗𝖔𝖗) return Caught(ӄӄ, Vlkyre, 𝕰𝖗𝖗𝖔𝖗);
 if (!Cool) {
 var newHalt = new Halt({
-ID: Vlyre.sender,
+ID: Vlkyre.sender,
 TimeOut: Present_Time,
 PermaTimeOut: 10000,
 });
 return await newHalt
 .save()
-.catch((𝕰𝖗𝖗𝖔𝖗) => Caught(ӄӄ, Vlyre, 𝕰𝖗𝖗𝖔𝖗));
+.catch((𝕰𝖗𝖗𝖔𝖗) => Caught(ӄӄ, Vlkyre, 𝕰𝖗𝖗𝖔𝖗));
 } else if (Cool.PermaTimeOut - (Present_Time - Cool.TimeOut) > 0) {
 Cool.PermaTimeOut = 10000;
 Cool.TimeOut = Present_Time;
 await Cool.save();
-return await Vlyre.reply("❌𝗘𝗿𝗿𝗼𝗿: Wait For 10s!", {
-quoted: Vlyre,
+return await Vlkyre.reply("❌𝗘𝗿𝗿𝗼𝗿: Wait For 10s!", {
+quoted: Vlkyre,
 });
 }
 }
 );
 }
 ("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
-if (!Vlyre.isGroup && Vlyre.isCommand) {
+if (!Vlkyre.isGroup && Vlkyre.isCommand) {
 function _0x153f() {
 const _0x5f55aa = [
 "40142JGXwBB",
@@ -184,7 +184,7 @@ _0x2e7383["push"](_0x2e7383["shift"]());
 }
 })(_0x153f, 0x3c59d);
 let { _ᴘᴏᴡᴇʀ } = require(_0x3b7886(0x10f));
-return await _ᴘᴏᴡᴇʀ(ӄӄ, Vlyre);
+return await _ᴘᴏᴡᴇʀ(ӄӄ, Vlkyre);
 }
 ("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
 const _0x20d594 = _0x3348;
@@ -223,9 +223,9 @@ return _0x543dac;
 _0x3348(_0x380144, _0x1bb231)
 );
 }
-if (Vlyre["isGroup"]) {
+if (Vlkyre["isGroup"]) {
 let { ᴘᴏᴡᴇʀ } = require(_0x20d594(0x1ae));
-return await ᴘᴏᴡᴇʀ(Ѷ𝖎𝖔𝖓, ӄӄ, Vlyre);
+return await ᴘᴏᴡᴇʀ(Ѷ𝖎𝖔𝖓, ӄӄ, Vlkyre);
 }
 function _0xb1bf() {
 const _0x5c834b = [

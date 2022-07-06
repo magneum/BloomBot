@@ -48,7 +48,7 @@ let { Caught } = require("../../Vlkyre👒Hat/Caught");
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 exports.rank = async (
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 pushName,
 F𝖚𝖑𝖑_A𝖗𝖌𝖘,
 quoted,
@@ -61,11 +61,11 @@ commandName,
 body,
 ) => {
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-const user = await Levels.fetch(Vlyre.sender, Vlyre.chatID, true);
+const user = await Levels.fetch(Vlkyre.sender, Vlkyre.chatID, true);
 if (!user) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 `*❌ERROR:* Seems like you have no rank XP for this chat.
 Try to talk more and check if autorank is turned on.`
 );
@@ -126,12 +126,12 @@ var role = `Mythic Glory`;
 var աɦօֆɛ = Math.floor(1000 + Math.random() * 9000);
 let 𝕻𝕻𝖑𝖊𝖙𝖊𝖗;
 try {
-𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄ𝖗𝖞ӄ𝖓𝖟.profilePictureUrl(Vlyre.chatID, `image`);
+𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄ𝖗𝖞ӄ𝖓𝖟.profilePictureUrl(Vlkyre.chatID, `image`);
 } catch {
-𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = `./Vlkyre👗Skins/Vlyre.png`;
+𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = `./Vlkyre👗Skins/Vlkyre.png`;
 }
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-var expFile = `./Vlkyre🎒Bag/${Date.now()}r${Vlyre.key.id}.png`;
+var expFile = `./Vlkyre🎒Bag/${Date.now()}r${Vlkyre.key.id}.png`;
 try {
 var ResGot = await fetch(
 global.API("https://wall.alphacoders.com/api2.0", "/get.php", {
@@ -161,17 +161,17 @@ let rank = new canvacord.Rank()
 .setDiscriminator(աɦօֆɛ);
 return await rank.build().then(async (data) => {
 fs.writeFile(expFile, data, async (error) => {
-if (error) return Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlyre, error);
-await ӄ𝖗𝖞ӄ𝖓𝖟.sendPresenceUpdate("composing", Vlyre.chatID);
+if (error) return Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, error);
+await ӄ𝖗𝖞ӄ𝖓𝖟.sendPresenceUpdate("composing", Vlkyre.chatID);
 await ӄ𝖗𝖞ӄ𝖓𝖟
 .sendMessage(
-Vlyre.chatID,
+Vlkyre.chatID,
 {
-contextInfo: { mentionedJid: [Vlyre.sender] },
+contextInfo: { mentionedJid: [Vlkyre.sender] },
 image: { url: expFile },
 caption: `╔══『 𝐏𝐫𝐨𝐟𝐢𝐥𝐞𝐫® 』
-║ *❣️ ɴᴀᴍᴇ:* ${Vlyre.pushName || "No_Name"}
-║ *⚡ ɪᴅ:* ${Vlyre.chatID.split("@")[0]}
+║ *❣️ ɴᴀᴍᴇ:* ${Vlkyre.pushName || "No_Name"}
+║ *⚡ ɪᴅ:* ${Vlkyre.chatID.split("@")[0]}
 ╚═══════╝
 
 
@@ -191,10 +191,10 @@ type: 1,
 headerType: 4,
 },
 {
-quoted: Vlyre,
+quoted: Vlkyre,
 }
 )
-.catch((e) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlyre, e));
+.catch((e) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, e));
 });
 });
 };

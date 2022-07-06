@@ -47,7 +47,7 @@ let { Caught } = require("../../Vlkyre👒Hat/Caught");
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
 exports.setgpfp = async (
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 pushName,
 F𝖚𝖑𝖑_A𝖗𝖌𝖘,
 quoted,
@@ -64,7 +64,7 @@ body,
 if (!/image/.test(mime)) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 `*❌ERROR:*  Could not find any Image in context!
 
 *⚡USAGE:* ${prefix}${Final_Name} <Tag the person>`
@@ -73,7 +73,7 @@ Vlyre,
 if (/webp/.test(mime)) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 `*❌ERROR:*  Could not find any Image in context!
 
 *⚡USAGE:* ${prefix}${Final_Name} <Tag the person>`
@@ -81,7 +81,7 @@ Vlyre,
 }
 let media = await ӄ𝖗𝖞ӄ𝖓𝖟.downloadAndSaveMediaMessage(quoted);
 await ӄ𝖗𝖞ӄ𝖓𝖟
-.updateProfilePicture(Vlyre.chatID, {
+.updateProfilePicture(Vlkyre.chatID, {
 url: media,
 })
 .catch((Èrrðr) => fs.unlinkSync(media));

@@ -48,7 +48,7 @@ let { Caught } = require("../../Vlkyre👒Hat/Caught");
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 exports.tinyurl = async (
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 pushName,
 F𝖚𝖑𝖑_A𝖗𝖌𝖘,
 quoted,
@@ -63,7 +63,7 @@ body,
 if (!F𝖚𝖑𝖑_A𝖗𝖌𝖘) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 `*❌ERROR:*  Argument Needed!
 
 *⚡USAGE:* ${prefix}${Final_Name} <link to shrink>`
@@ -73,9 +73,9 @@ Vlyre,
 let TinyDone = await Tinyurl(F𝖚𝖑𝖑_A𝖗𝖌𝖘);
 return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
-Vlyre.A𝖗𝖌𝖘,
-"./Vlkyre👗Skins/Vlyre.png",
+Vlkyre,
+Vlkyre.A𝖗𝖌𝖘,
+"./Vlkyre👗Skins/Vlkyre.png",
 `🐜 𝗧𝗶𝗻𝘆𝗨𝗿𝗹: ${TinyDone}`
 );
 };

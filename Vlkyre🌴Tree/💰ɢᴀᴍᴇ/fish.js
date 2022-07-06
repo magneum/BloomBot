@@ -48,7 +48,7 @@ let { Caught } = require("../../Vlkyre👒Hat/Caught");
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 exports.fish = async (
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 pushName,
 F𝖚𝖑𝖑_A𝖗𝖌𝖘,
 quoted,
@@ -62,13 +62,13 @@ body,
 ) => {
 await Economy.findOne(
 {
-ID: Vlyre.sender,
+ID: Vlkyre.sender,
 },
 async (Èrrðr, userEco) => {
-if (Èrrðr) return Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlyre, Èrrðr);
+if (Èrrðr) return Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, Èrrðr);
 if (!userEco) {
 let newUser = new Economy({
-ID: Vlyre.sender,
+ID: Vlkyre.sender,
 money: 0,
 daily: 0,
 timeout: 0,
@@ -77,11 +77,11 @@ fishtimeout: 1800000,
 workdone: 0,
 worktimeout: 900000,
 });
-await newUser.save().catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlyre, Èrrðr));
+await newUser.save().catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, Èrrðr));
 return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
-Vlyre.A𝖗𝖌𝖘,
+Vlkyre,
+Vlkyre.A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/𝐕𝐥𝐤𝐲𝐫𝐞_DB.png",
 `╔◇══════════◇╗
 ┊𝐕𝐥𝐤𝐲𝐫𝐞🐡𝐏𝐨𝐧𝐝
@@ -96,8 +96,8 @@ if (userEco.fishtimeout - (Date.now() - userEco.fishdone) > 0) {
 let time = ms(userEco.fishtimeout - (Date.now() - userEco.fishdone));
 return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
-Vlyre.A𝖗𝖌𝖘,
+Vlkyre,
+Vlkyre.A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/𝐕𝐥𝐤𝐲𝐫𝐞_FIsh.png",
 `╔◇══════════◇╗
 ┊𝐕𝐥𝐤𝐲𝐫𝐞🐡𝐏𝐨𝐧𝐝
@@ -121,11 +121,11 @@ Math.floor(Math.random() * (fishh.max - fishh.min + 1)) + fishh.min;
 userEco.money = userEco.money + worth;
 userEco.fishdone = Date.now();
 userEco.fishtimeout = 1800000;
-userEco.save().catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlyre, Èrrðr));
+userEco.save().catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, Èrrðr));
 return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
-Vlyre.A𝖗𝖌𝖘,
+Vlkyre,
+Vlkyre.A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/𝐕𝐥𝐤𝐲𝐫𝐞_FIsh.png",
 `╔◇══════════◇╗
 ┊𝐕𝐥𝐤𝐲𝐫𝐞🐡𝐏𝐨𝐧𝐝

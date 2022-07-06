@@ -47,7 +47,7 @@ let { Caught } = require("../../Vlkyre👒Hat/Caught");
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 exports.gify = async (
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 pushName,
 F𝖚𝖑𝖑_A𝖗𝖌𝖘,
 quoted,
@@ -62,7 +62,7 @@ body,
 if (!F𝖚𝖑𝖑_A𝖗𝖌𝖘) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 `*❌ERROR:* No query provided!
 
 *⚡USAGE:* ${prefix}${Final_Name} <Term>`
@@ -75,7 +75,7 @@ let { data: gi } = await axios.get(
 );
 
 await ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(
-Vlyre.chatID,
+Vlkyre.chatID,
 {
 video: {
 url: gi.results?.[Math.floor(Math.random() * gi.results.length)]
@@ -84,12 +84,12 @@ url: gi.results?.[Math.floor(Math.random() * gi.results.length)]
 caption: "⚡𝐈𝐧𝐟𝐨: Here you go",
 gifPlayback: true,
 },
-{ quoted: Vlyre }
+{ quoted: Vlkyre }
 );
 } catch (Èrrðr) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 `*❌ERROR:* No gif found!
 
 *⚡USAGE:* ${prefix}${Final_Name} <Term>`

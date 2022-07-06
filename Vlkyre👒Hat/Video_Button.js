@@ -12,17 +12,17 @@
 // ╚════════════╝
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 require("../Vlkyre🖋️Utilities/𝕷𝖆ყO𝖚𝖙");
-exports.Video_Button = async (ӄӄ, Vlyre, A𝖗𝖌𝖘, M𝖊𝖉𝖎𝖆, 𝕮𝖔𝖓𝖙𝖊𝖓𝖙) => {
+exports.Video_Button = async (ӄӄ, Vlkyre, A𝖗𝖌𝖘, M𝖊𝖉𝖎𝖆, 𝕮𝖔𝖓𝖙𝖊𝖓𝖙) => {
 let usedUser = require(`../Vlkyre🌤️Cloud/𝖀𝖘𝖊𝖗🍣𝖒𝖔𝖓𝖌𝖔/usedUser`);
 let ᴍꜱᴇᴄ = require("parse-ms");
 let ʙᴏᴛ_ᴜꜱᴇᴅ;
 let ʟᴀꜱᴛ_ᴜꜱᴇᴅ;
 await usedUser.findOne(
 {
-User: Vlyre.sender,
+User: Vlkyre.sender,
 },
 async (𝕰𝖗𝖗𝖔𝖗, ꜱᴇʀᴄ) => {
-if (𝕰𝖗𝖗𝖔𝖗) return Caught(ӄӄ, Vlyre, 𝕰𝖗𝖗𝖔𝖗);
+if (𝕰𝖗𝖗𝖔𝖗) return Caught(ӄӄ, Vlkyre, 𝕰𝖗𝖗𝖔𝖗);
 if (!ꜱᴇʀᴄ) {
 ʙᴏᴛ_ᴜꜱᴇᴅ = 0
 ʟᴀꜱᴛ_ᴜꜱᴇᴅ = 0
@@ -32,23 +32,23 @@ let ᴄʟᴏᴄᴋ = ᴍꜱᴇᴄ(ꜱᴇʀᴄ.PermaTime - (Date.now() - ꜱᴇʀ
 ʟᴀꜱᴛ_ᴜꜱᴇᴅ = ᴄʟᴏᴄᴋ.seconds
 }});
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
-// await ӄӄ.sendPresenceUpdate("composing", Vlyre.chatID);
+// await ӄӄ.sendPresenceUpdate("composing", Vlkyre.chatID);
 let ʀᴇᴀᴄᴛ;
-if (Vlyre.isReply) {
+if (Vlkyre.isReply) {
 var Receiver =
-Vlyre.mtype == "extendedTextMessage" &&
-Vlyre.message.extendedTextMessage.contextInfo != null
-? Vlyre.message.extendedTextMessage.contextInfo.participant || ""
+Vlkyre.mtype == "extendedTextMessage" &&
+Vlkyre.message.extendedTextMessage.contextInfo != null
+? Vlkyre.message.extendedTextMessage.contextInfo.participant || ""
 : "";
 ʀᴇᴀᴄᴛ = await ӄӄ
 .sendMessage(
-Vlyre.chatID,
+Vlkyre.chatID,
 {
-contextInfo: { mentionedJid: [Vlyre.sender, Receiver] },
+contextInfo: { mentionedJid: [Vlkyre.sender, Receiver] },
 video: { url: M𝖊𝖉𝖎𝖆 },
 caption: `╔══『 𝐏𝐫𝐨𝐟𝐢𝐥𝐞𝐫® 』
-║🕊️ *ɴᴀᴍᴇ:* ${Vlyre.pushName || "ɴᴏ_ɴᴀᴍᴇ"}
-║🎭 *ᴄʜᴀᴛɪᴅ:* ${Vlyre.chatID.split("@")[0]}
+║🕊️ *ɴᴀᴍᴇ:* ${Vlkyre.pushName || "ɴᴏ_ɴᴀᴍᴇ"}
+║🎭 *ᴄʜᴀᴛɪᴅ:* ${Vlkyre.chatID.split("@")[0]}
 ║🤖 *ʙᴏᴛ_ᴜꜱᴇᴅ:* ${ʙᴏᴛ_ᴜꜱᴇᴅ || "ɴᴜʟʟ"}
 ║🕰️ *ʟᴀꜱᴛ_ᴜꜱᴇᴅ:* ${ʟᴀꜱᴛ_ᴜꜱᴇᴅ || "ɴᴜʟʟ"}s
 ╚═══════╝
@@ -65,27 +65,27 @@ type: 1,
 headerType: 5,
 },
 {
-contextInfo: { mentionedJid: [Vlyre.sender, Receiver] },
-quoted: Vlyre,
+contextInfo: { mentionedJid: [Vlkyre.sender, Receiver] },
+quoted: Vlkyre,
 }
 )
 .catch((e) => console.log(e));
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
-} else if (Vlyre.mentionByTag) {
+} else if (Vlkyre.mentionByTag) {
 var Receiver =
-Vlyre.mtype == "extendedTextMessage" &&
-Vlyre.message.extendedTextMessage.contextInfo != null
-? Vlyre.message.extendedTextMessage.contextInfo.mentionedJid
+Vlkyre.mtype == "extendedTextMessage" &&
+Vlkyre.message.extendedTextMessage.contextInfo != null
+? Vlkyre.message.extendedTextMessage.contextInfo.mentionedJid
 : [];
 ʀᴇᴀᴄᴛ = await ӄӄ
 .sendMessage(
-Vlyre.chatID,
+Vlkyre.chatID,
 {
-contextInfo: { mentionedJid: [Vlyre.sender, Receiver] },
+contextInfo: { mentionedJid: [Vlkyre.sender, Receiver] },
 video: { url: M𝖊𝖉𝖎𝖆 },
 caption: `╔══『 𝐏𝐫𝐨𝐟𝐢𝐥𝐞𝐫® 』
-║🕊️ *ɴᴀᴍᴇ:* ${Vlyre.pushName || "ɴᴏ_ɴᴀᴍᴇ"}
-║🎭 *ᴄʜᴀᴛɪᴅ:* ${Vlyre.chatID.split("@")[0]}
+║🕊️ *ɴᴀᴍᴇ:* ${Vlkyre.pushName || "ɴᴏ_ɴᴀᴍᴇ"}
+║🎭 *ᴄʜᴀᴛɪᴅ:* ${Vlkyre.chatID.split("@")[0]}
 ║🤖 *ʙᴏᴛ_ᴜꜱᴇᴅ:* ${ʙᴏᴛ_ᴜꜱᴇᴅ || "ɴᴜʟʟ"}
 ║🕰️ *ʟᴀꜱᴛ_ᴜꜱᴇᴅ:* ${ʟᴀꜱᴛ_ᴜꜱᴇᴅ || "ɴᴜʟʟ"}s
 ╚═══════╝
@@ -102,8 +102,8 @@ type: 1,
 headerType: 5,
 },
 {
-contextInfo: { mentionedJid: [Vlyre.sender, Receiver] },
-quoted: Vlyre,
+contextInfo: { mentionedJid: [Vlkyre.sender, Receiver] },
+quoted: Vlkyre,
 }
 )
 .catch((e) => console.log(e));
@@ -111,13 +111,13 @@ quoted: Vlyre,
 } else {
 ʀᴇᴀᴄᴛ = await ӄӄ
 .sendMessage(
-Vlyre.chatID,
+Vlkyre.chatID,
 {
-contextInfo: { mentionedJid: [Vlyre.sender] },
+contextInfo: { mentionedJid: [Vlkyre.sender] },
 video: { url: M𝖊𝖉𝖎𝖆 },
 caption: `╔══『 𝐏𝐫𝐨𝐟𝐢𝐥𝐞𝐫® 』
-║🕊️ *ɴᴀᴍᴇ:* ${Vlyre.pushName || "ɴᴏ_ɴᴀᴍᴇ"}
-║🎭 *ᴄʜᴀᴛɪᴅ:* ${Vlyre.chatID.split("@")[0]}
+║🕊️ *ɴᴀᴍᴇ:* ${Vlkyre.pushName || "ɴᴏ_ɴᴀᴍᴇ"}
+║🎭 *ᴄʜᴀᴛɪᴅ:* ${Vlkyre.chatID.split("@")[0]}
 ║🤖 *ʙᴏᴛ_ᴜꜱᴇᴅ:* ${ʙᴏᴛ_ᴜꜱᴇᴅ || "ɴᴜʟʟ"}
 ║🕰️ *ʟᴀꜱᴛ_ᴜꜱᴇᴅ:* ${ʟᴀꜱᴛ_ᴜꜱᴇᴅ || "ɴᴜʟʟ"}s
 ╚═══════╝
@@ -134,7 +134,7 @@ type: 1,
 headerType: 5,
 },
 {
-quoted: Vlyre,
+quoted: Vlkyre,
 }
 )
 .catch((e) => console.log(e));
@@ -147,7 +147,7 @@ key: ʀᴇᴀᴄᴛ.key,
 };
 console.log(ʀᴇᴀᴄᴛ);
 return await ӄӄ
-.sendMessage(Vlyre.chatID, ʀᴇᴀᴄᴛionMessage)
+.sendMessage(Vlkyre.chatID, ʀᴇᴀᴄᴛionMessage)
 .catch((e) => console.log(e));
 }
 };

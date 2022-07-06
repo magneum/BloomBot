@@ -47,7 +47,7 @@ let { Caught } = require("../../Vlkyre👒Hat/Caught");
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
 exports.promote = async (
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 pushName,
 F𝖚𝖑𝖑_A𝖗𝖌𝖘,
 quoted,
@@ -59,10 +59,10 @@ isSenderTUF,
 commandName,
 body,
 ) => {
-if (!Vlyre.mentionByReply) {
+if (!Vlkyre.mentionByReply) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 `*❌ERROR:* Please reply the user you want to promote!
 
 *⚡USAGE:* ${prefix}${Final_Name} <Tag the person>`
@@ -70,26 +70,26 @@ Vlyre,
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
 } else {
 let mention =
-Vlyre.mtype == "extendedTextMessage" &&
-Vlyre.message.extendedTextMessage.contextInfo != null
-? Vlyre.message.extendedTextMessage.contextInfo.participant || ""
+Vlkyre.mtype == "extendedTextMessage" &&
+Vlkyre.message.extendedTextMessage.contextInfo != null
+? Vlkyre.message.extendedTextMessage.contextInfo.participant || ""
 : "";
-let users = (await mention[0]) || Vlyre.msg.contextInfo.participant;
+let users = (await mention[0]) || Vlkyre.msg.contextInfo.participant;
 if (!users) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-Vlyre,
+Vlkyre,
 `*❌ERROR:* Please reply the user you want to promote!
 
 *⚡USAGE:* ${prefix}${Final_Name} <Tag the person>`
 );
 }
-await ӄ𝖗𝖞ӄ𝖓𝖟.groupParticipantsUpdate(Vlyre.chatID, [users], "promote");
-ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(Vlyre.chatID, {
-text: `Looks like @${Vlyre.sender.split("@")[0]} promoted @${
+await ӄ𝖗𝖞ӄ𝖓𝖟.groupParticipantsUpdate(Vlkyre.chatID, [users], "promote");
+ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(Vlkyre.chatID, {
+text: `Looks like @${Vlkyre.sender.split("@")[0]} promoted @${
 users.split("@")[0]
 }`,
-contextInfo: { mentionedJid: [users, Vlyre.sender] },
+contextInfo: { mentionedJid: [users, Vlkyre.sender] },
 });
 }
 };

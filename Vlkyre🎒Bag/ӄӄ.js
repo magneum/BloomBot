@@ -173,7 +173,7 @@ contacts: { displayName: `${list.length} contact`, contacts: list },
 };
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 ӄӄ.public = true;
-ӄӄ.serializeM = (Vlyre) => smsg(ӄӄ, Vlyre, Ѷ𝖎𝖔𝖓);
+ӄӄ.serializeM = (Vlkyre) => smsg(ӄӄ, Vlkyre, Ѷ𝖎𝖔𝖓);
 ӄӄ.send5ButImg = async (
 jid,
 text = ``,
@@ -187,7 +187,7 @@ let message = await prepareWAMessageMedia(
 { upload: ӄӄ.waUploadToServer }
 );
 let template = generateWAMessageFromContent(
-Vlyre.chatID,
+Vlkyre.chatID,
 proto.Message.fromObject({
 templateMessage: {
 hydratedTemplate: {
@@ -748,7 +748,7 @@ contacts: { displayName: `${list.length} contact`, contacts: list },
 };
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 ӄӄ.public = true;
-ӄӄ.serializeM = (Vlyre) => smsg(ӄӄ, Vlyre, Ѷ𝖎𝖔𝖓);
+ӄӄ.serializeM = (Vlkyre) => smsg(ӄӄ, Vlkyre, Ѷ𝖎𝖔𝖓);
 ӄӄ.send5ButImg = async (
 jid,
 text = ``,
@@ -762,7 +762,7 @@ let message = await prepareWAMessageMedia(
 { upload: ӄӄ.waUploadToServer }
 );
 let template = generateWAMessageFromContent(
-Vlyre.chatID,
+Vlkyre.chatID,
 proto.Message.fromObject({
 templateMessage: {
 hydratedTemplate: {
@@ -1165,6 +1165,6 @@ startᴋᴜɴᴀɪ().catch((𝕰𝖗𝖗𝖔𝖗) => console.log(chalk.redBright
 }
 ("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
 /*
-* * * * * * * * * * |        (𝐜)Vlyre 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!        * * * * * * * * * *
+* * * * * * * * * * |        (𝐜)Vlkyre 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!        * * * * * * * * * *
 */
 ("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");

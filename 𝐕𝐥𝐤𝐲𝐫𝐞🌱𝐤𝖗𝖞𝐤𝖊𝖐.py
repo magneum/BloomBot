@@ -23,7 +23,7 @@ import shutil #Line:9
 from datetime import *#Line:10
 from os import getenv #Line:11
 from dotenv import load_dotenv #Line:12
-load_dotenv ("./Vlyre.env")#Line:13
+load_dotenv ("./Vlkyre.env")#Line:13
 ᴠʟᴋʏʀᴇ =getenv ("HEROKU",None )#Line:14
 𝖈𝖔𝖗𝖑𝖊𝖝 =getenv ("HEROKU",None )#Line:15
 ᴠʟᴋʏʀᴇi =getenv ("CODE",None )#Line:16
