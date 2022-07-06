@@ -114,10 +114,8 @@ async (error, userGCheck) => {
 if (error) return console.log(error);
 if (userBCheck && !Vlkyre.fromMe && !Vlkyre.isSenderTUF) return;
 if (userGCheck && !Vlkyre.fromMe && !Vlkyre.isSenderTUF) return;
-if (Vlkyre.isCommand) {
-let { ӄօʟօʀs } = require("../Vlkyre🌗Events/ӄօʟօʀs");
-await ӄօʟօʀs(ӄӄ, Vlkyre);
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
+if (Vlkyre.isCommand) {
 let MeA = [];
 let MeB = [];
 let MeC = [];

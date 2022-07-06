@@ -14,10 +14,12 @@
 require("../Vlkyre🖋️Utilities/𝕷𝖆ყO𝖚𝖙");
 let ᴍꜱ = require("parse-ms");
 let { Caught } = require("../Vlkyre👒Hat/Caught");
+let { ӄօʟօʀs } = require("../Vlkyre🌗Events/ӄօʟօʀs");
 let Bagde = require("../Vlkyre🌤️Cloud/🍃𝖒𝖔𝖓𝖌𝖔/badge");
 let { Image_Button } = require("../Vlkyre👒Hat/Image_Button");
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 exports.Night = async (Vlkyre, ӄӄ, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
+await ӄօʟօʀs(ӄӄ, Vlkyre);
 await Bagde.findOne(
 {
 ID: Vlkyre.sender,
