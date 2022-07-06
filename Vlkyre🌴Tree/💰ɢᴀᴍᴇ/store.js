@@ -72,6 +72,15 @@ Vlkyre.A𝖗𝖌𝖘,
 ║⚔️ *sword:* _1000gold/robbery_
 ║💻 *laptop:* _4000gold/robbery_
 ║🔮 *charm:* _6000gold/robbery_
+╚═══════╝
+
+╔══『 🍯𝐁𝐚𝐝𝐠𝐞𝐬🍯  』
+║🧵 *Basic:* 10 Commands
+║🥉 *Bronze:* 20 Commands
+║🥈 *Silver:* 40 Commands
+║🥇 *Golden:* 60 Commands
+║💍 *Platinum:* 80 Commands
+║💎 *Diamond:* 100 Commands
 ╚═══════╝`
 );
 };

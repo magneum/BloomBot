@@ -46,12 +46,12 @@ Vlkyre.A𝖗𝖌𝖘,
 
 
 ╔══『 🍯𝐁𝐚𝐝𝐠𝐞𝐬🍯  』
-║🧵 Basic 10 Commands
-║🥉 Bronze 20 Commands
-║🥈 Silver 40 Commands
-║🥇 Gold 60 Commands
-║💍 Platinum 80 Commands
-║💎 Diamond 100 Commands
+║🧵 *Basic:* 10 Commands
+║🥉 *Bronze:* 20 Commands
+║🥈 *Silver:* 40 Commands
+║🥇 *Golden:* 60 Commands
+║💍 *Platinum:* 80 Commands
+║💎 *Diamond:* 100 Commands
 ╚═══════╝`
 );
 } 
@@ -89,7 +89,7 @@ if (Re < 0 && userBg.Limits == 0) {
 if (userBg.Badge === "🧵Basic 10 Commands") userBg.Limits = 10;
 if (userBg.Badge === "🥉Bronze 20 Commands") userBg.Limits = 20;
 if (userBg.Badge === "🥈Silver 40 Commands") userBg.Limits = 40;
-if (userBg.Badge === "🥇Gold 60 Commands") userBg.Limits = 60;
+if (userBg.Badge === "🥇Golden 60 Commands") userBg.Limits = 60;
 if (userBg.Badge === "💍Platinum 80 Commands") userBg.Limits = 80;
 if (userBg.Badge === "💎Diamond 100 Commands") userBg.Limits = 100;
 userBg.CurrentLimitTime = Date.now();
@@ -114,12 +114,12 @@ Vlkyre.A𝖗𝖌𝖘,
 
 
 ╔══『 🍯𝐁𝐚𝐝𝐠𝐞𝐬🍯  』
-║🧵 Basic 10 Commands
-║🥉 Bronze 20 Commands
-║🥈 Silver 40 Commands
-║🥇 Gold 60 Commands
-║💍 Platinum 80 Commands
-║💎 Diamond 100 Commands
+║🧵 *Basic:* 10 Commands
+║🥉 *Bronze:* 20 Commands
+║🥈 *Silver:* 40 Commands
+║🥇 *Golden:* 60 Commands
+║💍 *Platinum:* 80 Commands
+║💎 *Diamond:* 100 Commands
 ╚═══════╝`
 );
 }
