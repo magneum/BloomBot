@@ -216,6 +216,7 @@ return buffer5;
 };
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 exports.ɴᴇᴄᴛᴏʀ = async (ӄӄ, Vlyre, Ѷ𝖎𝖔𝖓) => {
+try {
 if (!Vlyre) return Vlyre;
 let M = proto.WebMessageInfo;
 if (Vlyre.key) {
@@ -260,7 +261,8 @@ Vlyre.mtype === "conversation"
 ? Vlyre.message.templateButtonReplyMessage.selectedId
 : Vlyre.mtype === "messageContextInfo"
 ? Vlyre.message.buttonsResponseMessage?.selectedButtonId ||
-Vlyre.message.listResponseMessage?.singleSelectReply.selectedRowId ||
+Vlyre.message.listResponseMessage?.singleSelectReply
+.selectedRowId ||
 Vlyre.text
 : "";
 let quoted = (Vlyre.quoted = Vlyre.msg.contextInfo
@@ -367,7 +369,9 @@ Vlyre.participants = Vlyre.isGroup
 ? await Vlyre.groupMetadata.participants
 : "";
 Vlyre.groupAdmins = Vlyre.isGroup
-? await Vlyre.participants.filter((v) => v.admin !== null).map((v) => v.id)
+? await Vlyre.participants
+.filter((v) => v.admin !== null)
+.map((v) => v.id)
 : "";
 Vlyre.isBotAdmin = Vlyre.isGroup
 ? Vlyre.groupAdmins.includes(Vlyre.botNumber)
@@ -393,6 +397,7 @@ Vlyre.isSenderTUF = MODString.includes(
 Vlyre.sender.substring(0, Vlyre.sender.indexOf("@"))
 );
 return Vlyre;
+} catch (err) {}
 };
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 // ╔⧉༻ [ Ѷ𝖑𝐤𝐲𝖗𝖊🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
