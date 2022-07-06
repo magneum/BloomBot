@@ -9,7 +9,7 @@ let ɴᴏᴅᴇꜰᴇᴛᴄʜ = require("node-fetch");
 let ɢᴇᴛᴠɪᴅᴇᴏɪᴅ = require("get-video-id");
 let { yta } = require("../𝐕𝐥𝐤𝐲𝐫𝐞🖋️L𝖎𝖇𝖗𝖆𝖗ყ/y2mate");
 let { getBuffer } = require(`../𝐕𝐥𝐤𝐲𝐫𝐞🖋️L𝖎𝖇𝖗𝖆𝖗ყ/ɴᴇᴄᴛᴏʀ`);
-let { yta_var } = require("../𝐕𝐥𝐤𝐲𝐫𝐞🧥H𝖔𝖑𝖘𝖙𝖊𝖗/letiableServers");
+let { yta_var } = require("../Vlkyre🛎️Bell/letiableServers");
 // let ᴄʀᴏɴ = require("node-cron");
 // ᴄʀᴏɴ.schedule("*/30 * * * * *", async () => {
 // await ᴘᴏᴡ();

