@@ -10,7 +10,8 @@
 // ║ Forking Repo is fine. But if you edit something we will not provide any help.
 // ║ In short, Fork At Your Own Risk.
 // ╚════════════╝
-("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");let fs = require("fs");
+("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
+let fs = require("fs");
 let sequelize = require("sequelize");
 if (fs.existsSync("Vlyre.env")) {
 require("dotenv").config({ path: "./Vlyre.env" });
