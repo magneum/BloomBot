@@ -54,8 +54,6 @@ isSenderAdmin,
 isSenderTUF,
 commandName,
 body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
 ) => {
 let ꜰɪɴᴀʟʟɪɴᴋ;
 let ᴀɴɪᴍᴇʟɪɴᴋ = await ᴀɴɪᴍᴇ.wink();

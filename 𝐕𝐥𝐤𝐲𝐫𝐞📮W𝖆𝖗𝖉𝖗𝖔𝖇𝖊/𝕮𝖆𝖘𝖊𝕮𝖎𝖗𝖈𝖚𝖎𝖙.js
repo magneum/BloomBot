@@ -176,9 +176,7 @@ await pokemon(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -196,9 +194,7 @@ await pokedex(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -216,9 +212,7 @@ await carbon(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -238,9 +232,7 @@ await gify(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -261,9 +253,7 @@ await sticker(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -281,9 +271,7 @@ await toimg(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -302,9 +290,7 @@ await pinterest(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -322,9 +308,7 @@ await tourl(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -344,9 +328,7 @@ await remove(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -366,9 +348,7 @@ await promote(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -391,9 +371,7 @@ await admins(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -413,9 +391,7 @@ await demote(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -435,9 +411,7 @@ await setdesc(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -459,9 +433,7 @@ await setgpfp(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -483,9 +455,7 @@ await tagall(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -505,9 +475,7 @@ await group(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -528,9 +496,7 @@ await invite(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -553,9 +519,7 @@ await del(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -577,9 +541,7 @@ await antilink(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -602,9 +564,7 @@ await autorank(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -628,9 +588,7 @@ await setwelcome(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -649,9 +607,7 @@ await test(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -669,9 +625,7 @@ await ban(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -689,9 +643,7 @@ await unban(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -715,9 +667,7 @@ await radio(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -743,9 +693,7 @@ await yta(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -768,9 +716,7 @@ await ytv(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -792,9 +738,7 @@ await yts(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -814,9 +758,7 @@ await reddit(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -834,9 +776,7 @@ await rank(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -856,9 +796,7 @@ await tts(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -880,9 +818,7 @@ await joke(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -900,9 +836,7 @@ await meme(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -920,9 +854,7 @@ await tinyurl(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -940,9 +872,7 @@ await join(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -960,9 +890,7 @@ await leave(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -980,9 +908,7 @@ await lyrics(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1001,9 +927,7 @@ await image(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1024,9 +948,7 @@ await google(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1045,9 +967,7 @@ await steal(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1065,9 +985,7 @@ await iguser(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1085,9 +1003,7 @@ await ship(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1105,9 +1021,7 @@ await quote(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1125,9 +1039,7 @@ await fact(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1145,9 +1057,7 @@ await advice(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1165,9 +1075,7 @@ await pat(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1185,9 +1093,7 @@ await hug(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1205,9 +1111,7 @@ await kiss(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1225,9 +1129,7 @@ await cuddle(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1245,9 +1147,7 @@ await kick(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1265,9 +1165,7 @@ await bite(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1285,9 +1183,7 @@ await blush(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1305,9 +1201,7 @@ await bored(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1325,9 +1219,7 @@ await confused(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1345,9 +1237,7 @@ await cry(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1365,9 +1255,7 @@ await goodnight(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1385,9 +1273,7 @@ await happy(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1405,9 +1291,7 @@ await poke(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1425,9 +1309,7 @@ await sad(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1445,9 +1327,7 @@ await slap(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1465,9 +1345,7 @@ await smile(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1485,9 +1363,7 @@ await wave(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1505,9 +1381,7 @@ await wink(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1525,9 +1399,7 @@ await dance(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1545,9 +1417,7 @@ await baka(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1565,9 +1435,7 @@ await bonk(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1586,9 +1454,7 @@ await highfive(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1606,9 +1472,7 @@ await kill(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1626,9 +1490,7 @@ await nervous(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1646,9 +1508,7 @@ await punch(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1666,9 +1526,7 @@ await scream(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1686,9 +1544,7 @@ await stare(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1706,9 +1562,7 @@ await yeet(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1726,9 +1580,7 @@ await yes(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1746,9 +1598,7 @@ await waifu(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1766,9 +1616,7 @@ await neko(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1786,9 +1634,7 @@ await anime(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1806,9 +1652,7 @@ await manga(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1826,9 +1670,7 @@ await wallpaper(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1847,9 +1689,7 @@ await bcgroup(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1867,9 +1707,7 @@ await yt8d(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1887,9 +1725,7 @@ await ytbassboost(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1907,9 +1743,7 @@ await ytecho(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1927,9 +1761,7 @@ await ytflanger(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1947,9 +1779,7 @@ await ytnightcore(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1967,9 +1797,7 @@ await ytphaser(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -1987,9 +1815,7 @@ await ytreverse(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2007,9 +1833,7 @@ await ytslow(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2027,9 +1851,7 @@ await ytspeed(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2047,9 +1869,7 @@ await ytsubboost(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2067,9 +1887,7 @@ await ytsuperspeed(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2087,9 +1905,7 @@ await ytsuperslow(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2107,9 +1923,7 @@ await ytsurround(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2127,9 +1941,7 @@ await ytvaporwave(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2147,9 +1959,7 @@ await ytvibrato(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2167,9 +1977,7 @@ await bassboost(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2187,9 +1995,7 @@ await echo(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2207,9 +2013,7 @@ await flanger(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2227,9 +2031,7 @@ await nightcore(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2247,9 +2049,7 @@ await phaser(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2267,9 +2067,7 @@ await reverse(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2287,9 +2085,7 @@ await slow(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2307,9 +2103,7 @@ await speed(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2327,9 +2121,7 @@ await subboost(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2347,9 +2139,7 @@ await superspeed(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2367,9 +2157,7 @@ await surround(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2387,9 +2175,7 @@ await vaporwave(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2407,9 +2193,7 @@ await vibrato(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2427,9 +2211,7 @@ await ass(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2447,9 +2229,7 @@ await bdsm(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2467,9 +2247,7 @@ await cum(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2487,9 +2265,7 @@ await doujin(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2507,9 +2283,7 @@ await feet(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2527,9 +2301,7 @@ await femdom(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2547,9 +2319,7 @@ await foxgirl(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2567,9 +2337,7 @@ await glasses(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2587,9 +2355,7 @@ await hentai(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2607,9 +2373,7 @@ await maid(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2627,9 +2391,7 @@ await masturbation(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2647,9 +2409,7 @@ await netorare(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2692,9 +2452,7 @@ await panties(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2712,9 +2470,7 @@ await school(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2732,9 +2488,7 @@ await tentacles(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2752,9 +2506,7 @@ await thighs(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2772,9 +2524,7 @@ await uniform(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2792,9 +2542,7 @@ await yuri(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2813,9 +2561,7 @@ await daily(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2835,9 +2581,7 @@ await fish(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2858,9 +2602,7 @@ await gamble(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2880,9 +2622,7 @@ await hunt(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2902,9 +2642,7 @@ await zoo(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2925,9 +2663,7 @@ await pay(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2948,9 +2684,7 @@ await balance(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2968,9 +2702,7 @@ await buy(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -2991,9 +2723,7 @@ await store(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -3013,9 +2743,7 @@ await rob(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -3036,9 +2764,7 @@ await bag(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -3061,9 +2787,7 @@ await support(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -3084,9 +2808,7 @@ await rules(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 break;
 case "m":
@@ -3107,9 +2829,7 @@ await menu(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;
@@ -3130,9 +2850,7 @@ await help(
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderAdmin,
 𝐕𝐥𝐤𝐲𝐫𝐞.isSenderTUF,
 𝐕𝐥𝐤𝐲𝐫𝐞.commandName,
-𝐕𝐥𝐤𝐲𝐫𝐞.Body,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByTag,
-𝐕𝐥𝐤𝐲𝐫𝐞.mentionByReply
+𝐕𝐥𝐤𝐲𝐫𝐞.Body
 );
 await 𝕮𝖔𝖚𝖓𝖙𝖊𝖗𝖀𝖘𝖊𝖗(1);
 break;

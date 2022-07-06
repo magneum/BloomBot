@@ -55,8 +55,6 @@ isSenderAdmin,
 isSenderTUF,
 commandName,
 body,
-mentionByTag,
-mentionByReply
 ) => {
 if (!quoted) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
