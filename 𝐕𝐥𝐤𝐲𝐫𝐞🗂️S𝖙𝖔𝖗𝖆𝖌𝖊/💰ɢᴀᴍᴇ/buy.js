@@ -41,14 +41,11 @@ let { Caught } = require("../../𝐕𝐥𝐤𝐲𝐫𝐞🌀B𝖚𝖙𝖙𝖔�
 exports.buy = async (
 ӄ𝖗𝖞ӄ𝖓𝖟,
 𝐕𝐥𝐤𝐲𝐫𝐞,
-A𝖗𝖌𝖘,
 pushName,
-fromMe,
 F𝖚𝖑𝖑_A𝖗𝖌𝖘,
 quoted,
 isMedia,
 isGroup,
-groupAdmins,
 isBotAdmin,
 isSenderAdmin,
 isSenderTUF,
@@ -70,40 +67,40 @@ const BadgeCatelog = [
 const BadCatelog = [`bronze`, `silver`, `gold`, `platinum`, `diamond`];
 const RobCatelog = ["sword", "laptop", "charm"];
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
-if (A𝖗𝖌𝖘[0] === "bronze") {
+if (𝐕𝐥𝐤𝐲𝐫𝐞.A𝖗𝖌𝖘[0] === "bronze") {
 Item = `🥉ʙʀᴏɴᴢᴇ-20ᴄᴏᴍᴍᴀɴᴅꜱ`;
 ItemPrice = 20000;
 NewLimit = 20;
 }
-if (A𝖗𝖌𝖘[0] === "silver") {
+if (𝐕𝐥𝐤𝐲𝐫𝐞.A𝖗𝖌𝖘[0] === "silver") {
 Item = `🥈ꜱɪʟᴠᴇʀ-40ᴄᴏᴍᴍᴀɴᴅꜱ`;
 ItemPrice = 40000;
 NewLimit = 40;
 }
-if (A𝖗𝖌𝖘[0] === "gold") {
+if (𝐕𝐥𝐤𝐲𝐫𝐞.A𝖗𝖌𝖘[0] === "gold") {
 Item = `🥇ɢᴏʟᴅ-60ᴄᴏᴍᴍᴀɴᴅꜱ`;
 ItemPrice = 60000;
 NewLimit = 60;
 }
-if (A𝖗𝖌𝖘[0] === "platinum") {
+if (𝐕𝐥𝐤𝐲𝐫𝐞.A𝖗𝖌𝖘[0] === "platinum") {
 Item = `💍ᴘʟᴀᴛɪɴᴜᴍ-80ᴄᴏᴍᴍᴀɴᴅꜱ`;
 ItemPrice = 80000;
 NewLimit = 80;
 }
-if (A𝖗𝖌𝖘[0] === "diamond") {
+if (𝐕𝐥𝐤𝐲𝐫𝐞.A𝖗𝖌𝖘[0] === "diamond") {
 Item = `💎ᴅɪᴀᴍᴏɴᴅ-100ᴄᴏᴍᴍᴀɴᴅꜱ`;
 ItemPrice = 100000;
 NewLimit = 100;
 }
-if (A𝖗𝖌𝖘[0] === "charm") {
+if (𝐕𝐥𝐤𝐲𝐫𝐞.A𝖗𝖌𝖘[0] === "charm") {
 Item = "charm";
 ItemPrice = 6000;
 }
-if (A𝖗𝖌𝖘[0] === "sword") {
+if (𝐕𝐥𝐤𝐲𝐫𝐞.A𝖗𝖌𝖘[0] === "sword") {
 Item = "sword";
 ItemPrice = 1000;
 }
-if (A𝖗𝖌𝖘[0] === "laptop") {
+if (𝐕𝐥𝐤𝐲𝐫𝐞.A𝖗𝖌𝖘[0] === "laptop") {
 Item = "laptop";
 ItemPrice = 4000;
 }
@@ -119,7 +116,7 @@ Get Item-List From ${prefix}shop!`
 );
 }
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
-if (A𝖗𝖌𝖘.length === 0) {
+if (𝐕𝐥𝐤𝐲𝐫𝐞.A𝖗𝖌𝖘.length === 0) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 𝐕𝐥𝐤𝐲𝐫𝐞,
@@ -130,7 +127,7 @@ Get Item-List From ${prefix}shop!`
 );
 }
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
-if (RobCatelog.includes(A𝖗𝖌𝖘[0])) {
+if (RobCatelog.includes(𝐕𝐥𝐤𝐲𝐫𝐞.A𝖗𝖌𝖘[0])) {
 Economy.findOne(
 {
 ID: 𝐕𝐥𝐤𝐲𝐫𝐞.sender,
@@ -154,7 +151,7 @@ await newUser
 return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 𝐕𝐥𝐤𝐲𝐫𝐞,
-A𝖗𝖌𝖘,
+𝐕𝐥𝐤𝐲𝐫𝐞.A𝖗𝖌𝖘,
 "./𝐕𝐥𝐤𝐲𝐫𝐞👗𝕯𝖗𝖊𝖘𝖘/𝐕𝐥𝐤𝐲𝐫𝐞_DB.png",
 `╔◇══════════◇╗
 ┊𝐕𝐥𝐤𝐲𝐫𝐞💵𝐁𝐚𝐧𝐤
@@ -185,7 +182,7 @@ await newUser
 return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 𝐕𝐥𝐤𝐲𝐫𝐞,
-A𝖗𝖌𝖘,
+𝐕𝐥𝐤𝐲𝐫𝐞.A𝖗𝖌𝖘,
 "./𝐕𝐥𝐤𝐲𝐫𝐞👗𝕯𝖗𝖊𝖘𝖘/𝐕𝐥𝐤𝐲𝐫𝐞_DB.png",
 `╔◇══════════◇╗
 ┊𝐕𝐥𝐤𝐲𝐫𝐞💵𝐁𝐚𝐧𝐤
@@ -199,7 +196,7 @@ if (userEco.money < ItemPrice) {
 return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 𝐕𝐥𝐤𝐲𝐫𝐞,
-A𝖗𝖌𝖘,
+𝐕𝐥𝐤𝐲𝐫𝐞.A𝖗𝖌𝖘,
 "./𝐕𝐥𝐤𝐲𝐫𝐞👗𝕯𝖗𝖊𝖘𝖘/𝐕𝐥𝐤𝐲𝐫𝐞__Shop.png",
 `╔◇══════════◇╗
 ┊𝐕𝐥𝐤𝐲𝐫𝐞💵𝐁𝐚𝐧𝐤
@@ -230,7 +227,7 @@ Caught(ӄ𝖗𝖞ӄ𝖓𝖟, 𝐕𝐥𝐤𝐲𝐫𝐞, util.format(Èrrðr))
 return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 𝐕𝐥𝐤𝐲𝐫𝐞,
-A𝖗𝖌𝖘,
+𝐕𝐥𝐤𝐲𝐫𝐞.A𝖗𝖌𝖘,
 "./𝐕𝐥𝐤𝐲𝐫𝐞👗𝕯𝖗𝖊𝖘𝖘/𝐕𝐥𝐤𝐲𝐫𝐞__Shop.png",
 `╔◇══════════◇╗
 ┊𝐕𝐥𝐤𝐲𝐫𝐞💵𝐁𝐚𝐧𝐤
@@ -258,7 +255,7 @@ Caught(ӄ𝖗𝖞ӄ𝖓𝖟, 𝐕𝐥𝐤𝐲𝐫𝐞, util.format(Èrrðr))
 return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 𝐕𝐥𝐤𝐲𝐫𝐞,
-A𝖗𝖌𝖘,
+𝐕𝐥𝐤𝐲𝐫𝐞.A𝖗𝖌𝖘,
 "./𝐕𝐥𝐤𝐲𝐫𝐞👗𝕯𝖗𝖊𝖘𝖘/𝐕𝐥𝐤𝐲𝐫𝐞__Shop.png",
 `╔◇══════════◇╗
 ┊𝐕𝐥𝐤𝐲𝐫𝐞💵𝐁𝐚𝐧𝐤
@@ -286,7 +283,7 @@ Caught(ӄ𝖗𝖞ӄ𝖓𝖟, 𝐕𝐥𝐤𝐲𝐫𝐞, util.format(Èrrðr))
 return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 𝐕𝐥𝐤𝐲𝐫𝐞,
-A𝖗𝖌𝖘,
+𝐕𝐥𝐤𝐲𝐫𝐞.A𝖗𝖌𝖘,
 "./𝐕𝐥𝐤𝐲𝐫𝐞👗𝕯𝖗𝖊𝖘𝖘/𝐕𝐥𝐤𝐲𝐫𝐞__Shop.png",
 `╔◇══════════◇╗
 ┊𝐕𝐥𝐤𝐲𝐫𝐞💵𝐁𝐚𝐧𝐤
@@ -301,7 +298,7 @@ A𝖗𝖌𝖘,
 return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 𝐕𝐥𝐤𝐲𝐫𝐞,
-A𝖗𝖌𝖘,
+𝐕𝐥𝐤𝐲𝐫𝐞.A𝖗𝖌𝖘,
 "./𝐕𝐥𝐤𝐲𝐫𝐞👗𝕯𝖗𝖊𝖘𝖘/𝐕𝐥𝐤𝐲𝐫𝐞__Shop.png",
 `╔◇══════════◇╗
 ┊𝐕𝐥𝐤𝐲𝐫𝐞💵𝐁𝐚𝐧𝐤
@@ -317,7 +314,7 @@ A𝖗𝖌𝖘,
 }
 );
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
-} else if (BadCatelog.includes(A𝖗𝖌𝖘[0])) {
+} else if (BadCatelog.includes(𝐕𝐥𝐤𝐲𝐫𝐞.A𝖗𝖌𝖘[0])) {
 await Economy.findOne(
 {
 ID: 𝐕𝐥𝐤𝐲𝐫𝐞.sender,

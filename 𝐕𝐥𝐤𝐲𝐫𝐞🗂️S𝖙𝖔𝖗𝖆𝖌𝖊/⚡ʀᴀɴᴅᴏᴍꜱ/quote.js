@@ -38,14 +38,11 @@ let { Caught } = require("../../𝐕𝐥𝐤𝐲𝐫𝐞🌀B𝖚𝖙𝖙𝖔�
 exports.quote = async (
 ӄ𝖗𝖞ӄ𝖓𝖟,
 𝐕𝐥𝐤𝐲𝐫𝐞,
-A𝖗𝖌𝖘,
 pushName,
-fromMe,
 F𝖚𝖑𝖑_A𝖗𝖌𝖘,
 quoted,
 isMedia,
 isGroup,
-groupAdmins,
 isBotAdmin,
 isSenderAdmin,
 isSenderTUF,
@@ -60,7 +57,7 @@ quoo = await axios.get(`https://favqs.com/api/qotd`);
 return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 𝐕𝐥𝐤𝐲𝐫𝐞,
-A𝖗𝖌𝖘,
+𝐕𝐥𝐤𝐲𝐫𝐞.A𝖗𝖌𝖘,
 "./𝐕𝐥𝐤𝐲𝐫𝐞👗𝕯𝖗𝖊𝖘𝖘/𝐕𝐥𝐤𝐲𝐫𝐞.png",
 `📝 *Content:* ${quoo.data.quote.body}
 *✍️ Author:* ${quoo.data.quote.author}`

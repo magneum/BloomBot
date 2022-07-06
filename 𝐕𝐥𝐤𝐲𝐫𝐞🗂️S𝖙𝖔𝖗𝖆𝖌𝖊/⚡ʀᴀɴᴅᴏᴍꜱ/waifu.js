@@ -38,14 +38,11 @@ let { Caught } = require("../../𝐕𝐥𝐤𝐲𝐫𝐞🌀B𝖚𝖙𝖙𝖔�
 exports.waifu = async (
 ӄ𝖗𝖞ӄ𝖓𝖟,
 𝐕𝐥𝐤𝐲𝐫𝐞,
-A𝖗𝖌𝖘,
 pushName,
-fromMe,
 F𝖚𝖑𝖑_A𝖗𝖌𝖘,
 quoted,
 isMedia,
 isGroup,
-groupAdmins,
 isBotAdmin,
 isSenderAdmin,
 isSenderTUF,
@@ -59,7 +56,7 @@ let waifud = await axios.get(`https://waifu.pics/api/sfw/waifu`);
 return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 𝐕𝐥𝐤𝐲𝐫𝐞,
-A𝖗𝖌𝖘,
+𝐕𝐥𝐤𝐲𝐫𝐞.A𝖗𝖌𝖘,
 waifud.data.url,
 "⚡𝐈𝐧𝐟𝐨: Here you go"
 );

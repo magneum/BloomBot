@@ -40,14 +40,11 @@ let { Caught } = require("../../𝐕𝐥𝐤𝐲𝐫𝐞🌀B𝖚𝖙𝖙𝖔�
 exports.pokemon = async (
 ӄ𝖗𝖞ӄ𝖓𝖟,
 𝐕𝐥𝐤𝐲𝐫𝐞,
-A𝖗𝖌𝖘,
 pushName,
-fromMe,
 F𝖚𝖑𝖑_A𝖗𝖌𝖘,
 quoted,
 isMedia,
 isGroup,
-groupAdmins,
 isBotAdmin,
 isSenderAdmin,
 isSenderTUF,
@@ -82,7 +79,7 @@ return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 𝐕𝐥𝐤𝐲𝐫𝐞,
-A𝖗𝖌𝖘,
+𝐕𝐥𝐤𝐲𝐫𝐞.A𝖗𝖌𝖘,
 data.sprites.front_default,
 `💫 *Name: ${data.name}*
 〽️ *Pokedex ID: ${data.id}*

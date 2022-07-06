@@ -44,14 +44,11 @@ let { Caught } = require("../../𝐕𝐥𝐤𝐲𝐫𝐞🌀B𝖚𝖙𝖙𝖔�
 exports.lyrics = async (
 ӄ𝖗𝖞ӄ𝖓𝖟,
 𝐕𝐥𝐤𝐲𝐫𝐞,
-A𝖗𝖌𝖘,
 pushName,
-fromMe,
 F𝖚𝖑𝖑_A𝖗𝖌𝖘,
 quoted,
 isMedia,
 isGroup,
-groupAdmins,
 isBotAdmin,
 isSenderAdmin,
 isSenderTUF,
@@ -80,7 +77,7 @@ const Geniuslyrics = await GeniusSong.lyrics();
 return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 𝐕𝐥𝐤𝐲𝐫𝐞,
-A𝖗𝖌𝖘,
+𝐕𝐥𝐤𝐲𝐫𝐞.A𝖗𝖌𝖘,
 GeniusSong.raw.song_art_image_thumbnail_url,
 `📜 𝗟𝘆𝗿𝗶𝗰𝘀 𝗙𝗼𝘂𝗻𝗱 𝗙𝗼𝗿: _${F𝖚𝖑𝖑_A𝖗𝖌𝖘}_
 🎹 𝐓𝐢𝐭𝐥𝐞: ${GeniusSong.raw.title}
@@ -95,7 +92,7 @@ const lyricssong = await Second_Try_Lyrics(F𝖚𝖑𝖑_A𝖗𝖌𝖘);
 return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 𝐕𝐥𝐤𝐲𝐫𝐞,
-A𝖗𝖌𝖘,
+𝐕𝐥𝐤𝐲𝐫𝐞.A𝖗𝖌𝖘,
 "./𝐕𝐥𝐤𝐲𝐫𝐞👗𝕯𝖗𝖊𝖘𝖘/𝐕𝐥𝐤𝐲𝐫𝐞_FIsh.png",
 `📜 𝗟𝘆𝗿𝗶𝗰𝘀 𝗙𝗼𝘂𝗻𝗱 𝗙𝗼𝗿: _${F𝖚𝖑𝖑_A𝖗𝖌𝖘}_
 💡 𝗟𝘆𝗿𝗶𝗰𝘀 𝗦𝗼𝘂𝗿𝗰𝗲: ${lyricssong.source.name}

@@ -40,14 +40,11 @@ let { Caught } = require("../../𝐕𝐥𝐤𝐲𝐫𝐞🌀B𝖚𝖙𝖙𝖔�
 exports.carbon = async (
 ӄ𝖗𝖞ӄ𝖓𝖟,
 𝐕𝐥𝐤𝐲𝐫𝐞,
-A𝖗𝖌𝖘,
 pushName,
-fromMe,
 F𝖚𝖑𝖑_A𝖗𝖌𝖘,
 quoted,
 isMedia,
 isGroup,
-groupAdmins,
 isBotAdmin,
 isSenderAdmin,
 isSenderTUF,
@@ -86,7 +83,7 @@ let Themes = [
 `yeti`,
 `zenburn`,
 ];
-if (!Themes.includes(A𝖗𝖌𝖘[0])) {
+if (!Themes.includes(𝐕𝐥𝐤𝐲𝐫𝐞.A𝖗𝖌𝖘[0])) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 𝐕𝐥𝐤𝐲𝐫𝐞,
@@ -125,7 +122,7 @@ return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ╚════════════╝`
 );
 }
-let ThemeInput = A𝖗𝖌𝖘[0];
+let ThemeInput = 𝐕𝐥𝐤𝐲𝐫𝐞.A𝖗𝖌𝖘[0];
 let FinalText = body
 .replace(ThemeInput, "")
 .replace(body[0], "")
@@ -154,7 +151,7 @@ await fs.createWriteStream(ImgPath).write(output);
 await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 𝐕𝐥𝐤𝐲𝐫𝐞,
-A𝖗𝖌𝖘,
+𝐕𝐥𝐤𝐲𝐫𝐞.A𝖗𝖌𝖘,
 ImgPath,
 `🌈𝗧𝗵𝗲𝗺𝗲: _${ThemeInput}_
 ❗𝗘𝗺𝗼𝗷𝗶: _Will Remove All Emoji!_`

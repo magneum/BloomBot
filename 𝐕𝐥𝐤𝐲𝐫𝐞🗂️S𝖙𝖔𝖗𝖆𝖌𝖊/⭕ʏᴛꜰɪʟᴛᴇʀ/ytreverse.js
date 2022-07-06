@@ -45,14 +45,11 @@ let { Caught } = require("../../𝐕𝐥𝐤𝐲𝐫𝐞🌀B𝖚𝖙𝖙𝖔�
 exports.ytreverse = async (
 ӄ𝖗𝖞ӄ𝖓𝖟,
 𝐕𝐥𝐤𝐲𝐫𝐞,
-A𝖗𝖌𝖘,
 pushName,
-fromMe,
 F𝖚𝖑𝖑_A𝖗𝖌𝖘,
 quoted,
 isMedia,
 isGroup,
-groupAdmins,
 isBotAdmin,
 isSenderAdmin,
 isSenderTUF,
@@ -61,7 +58,7 @@ body,
 mentionByTag,
 mentionByReply
 ) => {
-if (A𝖗𝖌𝖘.length === 0) {
+if (𝐕𝐥𝐤𝐲𝐫𝐞.A𝖗𝖌𝖘.length === 0) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 𝐕𝐥𝐤𝐲𝐫𝐞,
@@ -71,8 +68,8 @@ return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 );
 }
 
-if (A𝖗𝖌𝖘.includes("yout")) {
-if (!YouTube_Regex.test(A𝖗𝖌𝖘[0])) {
+if (𝐕𝐥𝐤𝐲𝐫𝐞.A𝖗𝖌𝖘.includes("yout")) {
+if (!YouTube_Regex.test(𝐕𝐥𝐤𝐲𝐫𝐞.A𝖗𝖌𝖘[0])) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 𝐕𝐥𝐤𝐲𝐫𝐞,
@@ -84,8 +81,8 @@ return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 }
 
 let FinalGot;
-if (YouTube_Regex.test(A𝖗𝖌𝖘[0])) {
-FinalGot = A𝖗𝖌𝖘[0];
+if (YouTube_Regex.test(𝐕𝐥𝐤𝐲𝐫𝐞.A𝖗𝖌𝖘[0])) {
+FinalGot = 𝐕𝐥𝐤𝐲𝐫𝐞.A𝖗𝖌𝖘[0];
 } else {
 FinalGot = F𝖚𝖑𝖑_A𝖗𝖌𝖘;
 }
@@ -106,7 +103,7 @@ if (Found.seconds > 1800) {
 return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 𝐕𝐥𝐤𝐲𝐫𝐞,
-A𝖗𝖌𝖘,
+𝐕𝐥𝐤𝐲𝐫𝐞.A𝖗𝖌𝖘,
 Found.thumbnail,
 `❌𝗘𝗿𝗿𝗼𝗿: _Choose Smaller Audio less then 30mins!_
 
@@ -130,7 +127,7 @@ DirectFile = "Null";
 await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 𝐕𝐥𝐤𝐲𝐫𝐞,
-A𝖗𝖌𝖘,
+𝐕𝐥𝐤𝐲𝐫𝐞.A𝖗𝖌𝖘,
 Found.thumbnail,
 `𝐘𝐨𝐮𝐓𝐮𝐛𝐞⭕️𝐌𝐮𝐬𝐢𝐜
 🍻𝐓𝐢𝐭𝐥𝐞: ${Found.title}
