@@ -195,14 +195,14 @@ return [...text.matchAll(/@([0-9]{5,16}|0)/g)].map(
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
 exports.GIFBufferToVideoBuffer = async (image) => {
 let filename = `${Math.random().toString(36)}`;
-await fs.writeFileSync("./𝐕𝐥𝐤𝐲𝐫𝐞🎒𝕭𝖆𝖌/${filename}.gif", image);
+await fs.writeFileSync("./Vlkyre🎒Bag/${filename}.gif", image);
 child_process.exec(
-`ffmpeg -i ./𝐕𝐥𝐤𝐲𝐫𝐞🎒𝕭𝖆𝖌/${filename}.gif -movflags faststart -pix_fmt yuv420p -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" ./𝐕𝐥𝐤𝐲𝐫𝐞🎒𝕭𝖆𝖌/${filename}.mp4`
+`ffmpeg -i ./Vlkyre🎒Bag/${filename}.gif -movflags faststart -pix_fmt yuv420p -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" ./Vlkyre🎒Bag/${filename}.mp4`
 );
-var buffer5 = await fs.readFileSync("./𝐕𝐥𝐤𝐲𝐫𝐞🎒𝕭𝖆𝖌/${filename}.mp4");
+var buffer5 = await fs.readFileSync("./Vlkyre🎒Bag/${filename}.mp4");
 Promise.all([
-unlink("./𝐕𝐥𝐤𝐲𝐫𝐞🎒𝕭𝖆𝖌/${filename}.mp4"),
-unlink("./𝐕𝐥𝐤𝐲𝐫𝐞🎒𝕭𝖆𝖌/${filename}.gif"),
+unlink("./Vlkyre🎒Bag/${filename}.mp4"),
+unlink("./Vlkyre🎒Bag/${filename}.gif"),
 ]);
 return buffer5;
 };

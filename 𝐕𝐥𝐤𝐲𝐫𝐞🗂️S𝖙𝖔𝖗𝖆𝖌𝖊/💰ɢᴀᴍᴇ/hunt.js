@@ -197,7 +197,7 @@ await userHunt
 .catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, 𝐕𝐥𝐤𝐲𝐫𝐞, Èrrðr));
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
 require("child_process").exec(
-`ffmpeg -i "${PokemonData.sprites.animated}" -pix_fmt yuv420p -c:v libx264 -movflags +faststart -filter:v crop='floor(in_w/2)*2:floor(in_h/2)*2' "./𝐕𝐥𝐤𝐲𝐫𝐞🎒𝕭𝖆𝖌/${𝐕𝐥𝐤𝐲𝐫𝐞.key.id}.mp4"`,
+`ffmpeg -i "${PokemonData.sprites.animated}" -pix_fmt yuv420p -c:v libx264 -movflags +faststart -filter:v crop='floor(in_w/2)*2:floor(in_h/2)*2' "./Vlkyre🎒Bag/${𝐕𝐥𝐤𝐲𝐫𝐞.key.id}.mp4"`,
 async (Èrrðr) => {
 if (Èrrðr) {
 await Image_Button(
@@ -226,7 +226,7 @@ await Video_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 𝐕𝐥𝐤𝐲𝐫𝐞,
 𝐕𝐥𝐤𝐲𝐫𝐞.A𝖗𝖌𝖘,
-`./𝐕𝐥𝐤𝐲𝐫𝐞🎒𝕭𝖆𝖌/${𝐕𝐥𝐤𝐲𝐫𝐞.key.id}.mp4`,
+`./Vlkyre🎒Bag/${𝐕𝐥𝐤𝐲𝐫𝐞.key.id}.mp4`,
 `╔◇══════════◇╗
 ┊ 𝐏𝐨𝐤𝐞𝐦𝐨𝐧🦋𝐇𝐮𝐧𝐭𝐢𝐧𝐠
 ┊ 𝐌𝐢𝐧𝐞𝐜𝐫𝐚𝐟𝐭 🪵 𝐄𝐝𝐢𝐭𝐢𝐨𝐧
@@ -241,7 +241,7 @@ await Video_Button(
 💫 *Type:* _${prefix}pokemon ${PokemonData.name}_`
 );
 return await fs.unlinkSync(
-`./𝐕𝐥𝐤𝐲𝐫𝐞🎒𝕭𝖆𝖌/${𝐕𝐥𝐤𝐲𝐫𝐞.key.id}.mp4`
+`./Vlkyre🎒Bag/${𝐕𝐥𝐤𝐲𝐫𝐞.key.id}.mp4`
 );
 }
 );

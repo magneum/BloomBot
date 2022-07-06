@@ -36,7 +36,7 @@ const _0x25406c = [
 "promises",
 "221367ToyTfy",
 "ffmpeg",
-"../𝐕𝐥𝐤𝐲𝐫𝐞🎒𝕭𝖆𝖌",
+"../Vlkyre🎒Bag",
 "-c:a",
 "join",
 "unlink",

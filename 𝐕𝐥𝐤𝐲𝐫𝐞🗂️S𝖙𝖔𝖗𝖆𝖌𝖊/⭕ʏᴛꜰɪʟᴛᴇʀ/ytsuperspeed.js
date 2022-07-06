@@ -138,8 +138,8 @@ Found.thumbnail,
 📜𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${Found.description}`
 );
 
-let FFmpegFile = `./𝐕𝐥𝐤𝐲𝐫𝐞🎒𝕭𝖆𝖌/${Date.now()}${𝐕𝐥𝐤𝐲𝐫𝐞.key.id}.mp3`;
-let FilteredAudio = `./𝐕𝐥𝐤𝐲𝐫𝐞🎒𝕭𝖆𝖌/${Date.now()}-F-${
+let FFmpegFile = `./Vlkyre🎒Bag/${Date.now()}${𝐕𝐥𝐤𝐲𝐫𝐞.key.id}.mp3`;
+let FilteredAudio = `./Vlkyre🎒Bag/${Date.now()}-F-${
 𝐕𝐥𝐤𝐲𝐫𝐞.key.id
 }.mp3`;
 ffmpeg(dl_link)
