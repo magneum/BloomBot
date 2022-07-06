@@ -38,7 +38,7 @@ let ɴᴇᴡᴜꜱᴇʀᴄ = new usedUser({
 User: Vlkyre.sender,
 Total: Ѷ𝖎𝖔𝖓𝖒𝖔𝖓𝖌𝖔,
 LastTime: Date.now(),
-PermaTime: 15000,
+PermaTime: 10000,
 });
 return await ɴᴇᴡᴜꜱᴇʀᴄ
 .save()
