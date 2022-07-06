@@ -16,7 +16,8 @@
 "Vlkyre🧵Types": "Vlkyre🧵Types",
 "Vlkyre👗Skins": "Vlkyre👗Skins",
 "Vlkyre🎒Bag": "Vlkyre🎒Bag",
-"Vlkyre🖌️Json": "Vlkyre🖌️Json"
+"Vlkyre🖌️Json": "Vlkyre🖌️Json",
+"Vlkyre🀄Canvas": "Vlkyre🀄Canvas"
 },
 "scripts": {
 "sync": "node Vlkyre🎒Bag/🪔S𝖞𝖓𝖈.js",
