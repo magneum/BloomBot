@@ -1,6 +1,6 @@
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
 
-//▷                                              (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!                                           ◁
+//▷                                              (𝐜)Vlyre 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!                                           ◁
 
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
 require("../../Vlkyre🖋️Utilities/𝕷𝖆ყO𝖚𝖙");
@@ -40,7 +40,7 @@ let { Caught } = require("../../Vlkyre👒Hat/Caught");
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
 exports.buy = async (
 ӄ𝖗𝖞ӄ𝖓𝖟,
-𝐕𝐥𝐤𝐲𝐫𝐞,
+Vlyre,
 pushName,
 F𝖚𝖑𝖑_A𝖗𝖌𝖘,
 quoted,
@@ -65,40 +65,40 @@ const BadgeCatelog = [
 const BadCatelog = [`bronze`, `silver`, `gold`, `platinum`, `diamond`];
 const RobCatelog = ["sword", "laptop", "charm"];
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
-if (𝐕𝐥𝐤𝐲𝐫𝐞.A𝖗𝖌𝖘[0] === "bronze") {
+if (Vlyre.A𝖗𝖌𝖘[0] === "bronze") {
 Item = `🥉ʙʀᴏɴᴢᴇ-20ᴄᴏᴍᴍᴀɴᴅꜱ`;
 ItemPrice = 20000;
 NewLimit = 20;
 }
-if (𝐕𝐥𝐤𝐲𝐫𝐞.A𝖗𝖌𝖘[0] === "silver") {
+if (Vlyre.A𝖗𝖌𝖘[0] === "silver") {
 Item = `🥈ꜱɪʟᴠᴇʀ-40ᴄᴏᴍᴍᴀɴᴅꜱ`;
 ItemPrice = 40000;
 NewLimit = 40;
 }
-if (𝐕𝐥𝐤𝐲𝐫𝐞.A𝖗𝖌𝖘[0] === "gold") {
+if (Vlyre.A𝖗𝖌𝖘[0] === "gold") {
 Item = `🥇ɢᴏʟᴅ-60ᴄᴏᴍᴍᴀɴᴅꜱ`;
 ItemPrice = 60000;
 NewLimit = 60;
 }
-if (𝐕𝐥𝐤𝐲𝐫𝐞.A𝖗𝖌𝖘[0] === "platinum") {
+if (Vlyre.A𝖗𝖌𝖘[0] === "platinum") {
 Item = `💍ᴘʟᴀᴛɪɴᴜᴍ-80ᴄᴏᴍᴍᴀɴᴅꜱ`;
 ItemPrice = 80000;
 NewLimit = 80;
 }
-if (𝐕𝐥𝐤𝐲𝐫𝐞.A𝖗𝖌𝖘[0] === "diamond") {
+if (Vlyre.A𝖗𝖌𝖘[0] === "diamond") {
 Item = `💎ᴅɪᴀᴍᴏɴᴅ-100ᴄᴏᴍᴍᴀɴᴅꜱ`;
 ItemPrice = 100000;
 NewLimit = 100;
 }
-if (𝐕𝐥𝐤𝐲𝐫𝐞.A𝖗𝖌𝖘[0] === "charm") {
+if (Vlyre.A𝖗𝖌𝖘[0] === "charm") {
 Item = "charm";
 ItemPrice = 6000;
 }
-if (𝐕𝐥𝐤𝐲𝐫𝐞.A𝖗𝖌𝖘[0] === "sword") {
+if (Vlyre.A𝖗𝖌𝖘[0] === "sword") {
 Item = "sword";
 ItemPrice = 1000;
 }
-if (𝐕𝐥𝐤𝐲𝐫𝐞.A𝖗𝖌𝖘[0] === "laptop") {
+if (Vlyre.A𝖗𝖌𝖘[0] === "laptop") {
 Item = "laptop";
 ItemPrice = 4000;
 }
@@ -106,7 +106,7 @@ ItemPrice = 4000;
 if (!F𝖚𝖑𝖑_A𝖗𝖌𝖘) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-𝐕𝐥𝐤𝐲𝐫𝐞,
+Vlyre,
 `*❌ERROR:* No query provided!
 
 *⚡USAGE:* ${prefix}${Final_Name} <item name>
@@ -114,10 +114,10 @@ Get Item-List From ${prefix}shop!`
 );
 }
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
-if (𝐕𝐥𝐤𝐲𝐫𝐞.A𝖗𝖌𝖘.length === 0) {
+if (Vlyre.A𝖗𝖌𝖘.length === 0) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-𝐕𝐥𝐤𝐲𝐫𝐞,
+Vlyre,
 `*❌ERROR:* No query provided!
 
 *⚡USAGE:* ${prefix}${Final_Name} <item name>
@@ -125,16 +125,16 @@ Get Item-List From ${prefix}shop!`
 );
 }
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
-if (RobCatelog.includes(𝐕𝐥𝐤𝐲𝐫𝐞.A𝖗𝖌𝖘[0])) {
+if (RobCatelog.includes(Vlyre.A𝖗𝖌𝖘[0])) {
 Economy.findOne(
 {
-ID: 𝐕𝐥𝐤𝐲𝐫𝐞.sender,
+ID: Vlyre.sender,
 },
 async (Èrrðr, userEco) => {
-if (Èrrðr) return Caught(ӄ𝖗𝖞ӄ𝖓𝖟, 𝐕𝐥𝐤𝐲𝐫𝐞, util.format(Èrrðr));
+if (Èrrðr) return Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlyre, util.format(Èrrðr));
 if (!userEco) {
 let newUser = new Economy({
-ID: 𝐕𝐥𝐤𝐲𝐫𝐞.sender,
+ID: Vlyre.sender,
 money: 0,
 daily: 0,
 timeout: 86400000,
@@ -145,11 +145,11 @@ worktimeout: 900000,
 });
 await newUser
 .save()
-.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, 𝐕𝐥𝐤𝐲𝐫𝐞, util.format(Èrrðr)));
+.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlyre, util.format(Èrrðr)));
 return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-𝐕𝐥𝐤𝐲𝐫𝐞,
-𝐕𝐥𝐤𝐲𝐫𝐞.A𝖗𝖌𝖘,
+Vlyre,
+Vlyre.A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/𝐕𝐥𝐤𝐲𝐫𝐞_DB.png",
 `╔◇══════════◇╗
 ┊𝐕𝐥𝐤𝐲𝐫𝐞💵𝐁𝐚𝐧𝐤
@@ -161,13 +161,13 @@ return await Image_Button(
 }
 Robbery.findOne(
 {
-ID: 𝐕𝐥𝐤𝐲𝐫𝐞.sender,
+ID: Vlyre.sender,
 },
 async (Èrrðr, userRob) => {
-if (Èrrðr) return Caught(ӄ𝖗𝖞ӄ𝖓𝖟, 𝐕𝐥𝐤𝐲𝐫𝐞, util.format(Èrrðr));
+if (Èrrðr) return Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlyre, util.format(Èrrðr));
 if (!userRob) {
 let newUser = new Robbery({
-ID: 𝐕𝐥𝐤𝐲𝐫𝐞.sender,
+ID: Vlyre.sender,
 sword: 0,
 laptop: 0,
 charm: 0,
@@ -176,11 +176,11 @@ PermanentRobberyTime: 600000,
 });
 await newUser
 .save()
-.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, 𝐕𝐥𝐤𝐲𝐫𝐞, util.format(Èrrðr)));
+.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlyre, util.format(Èrrðr)));
 return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-𝐕𝐥𝐤𝐲𝐫𝐞,
-𝐕𝐥𝐤𝐲𝐫𝐞.A𝖗𝖌𝖘,
+Vlyre,
+Vlyre.A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/𝐕𝐥𝐤𝐲𝐫𝐞_DB.png",
 `╔◇══════════◇╗
 ┊𝐕𝐥𝐤𝐲𝐫𝐞💵𝐁𝐚𝐧𝐤
@@ -193,8 +193,8 @@ return await Image_Button(
 if (userEco.money < ItemPrice) {
 return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-𝐕𝐥𝐤𝐲𝐫𝐞,
-𝐕𝐥𝐤𝐲𝐫𝐞.A𝖗𝖌𝖘,
+Vlyre,
+Vlyre.A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/𝐕𝐥𝐤𝐲𝐫𝐞__Shop.png",
 `╔◇══════════◇╗
 ┊𝐕𝐥𝐤𝐲𝐫𝐞💵𝐁𝐚𝐧𝐤
@@ -215,17 +215,17 @@ userEco.money = userEco.money - ItemPrice;
 await userEco
 .save()
 .catch((Èrrðr) =>
-Caught(ӄ𝖗𝖞ӄ𝖓𝖟, 𝐕𝐥𝐤𝐲𝐫𝐞, util.format(Èrrðr))
+Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlyre, util.format(Èrrðr))
 );
 await userRob
 .save()
 .catch((Èrrðr) =>
-Caught(ӄ𝖗𝖞ӄ𝖓𝖟, 𝐕𝐥𝐤𝐲𝐫𝐞, util.format(Èrrðr))
+Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlyre, util.format(Èrrðr))
 );
 return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-𝐕𝐥𝐤𝐲𝐫𝐞,
-𝐕𝐥𝐤𝐲𝐫𝐞.A𝖗𝖌𝖘,
+Vlyre,
+Vlyre.A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/𝐕𝐥𝐤𝐲𝐫𝐞__Shop.png",
 `╔◇══════════◇╗
 ┊𝐕𝐥𝐤𝐲𝐫𝐞💵𝐁𝐚𝐧𝐤
@@ -243,17 +243,17 @@ userEco.money = userEco.money - ItemPrice;
 await userEco
 .save()
 .catch((Èrrðr) =>
-Caught(ӄ𝖗𝖞ӄ𝖓𝖟, 𝐕𝐥𝐤𝐲𝐫𝐞, util.format(Èrrðr))
+Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlyre, util.format(Èrrðr))
 );
 await userRob
 .save()
 .catch((Èrrðr) =>
-Caught(ӄ𝖗𝖞ӄ𝖓𝖟, 𝐕𝐥𝐤𝐲𝐫𝐞, util.format(Èrrðr))
+Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlyre, util.format(Èrrðr))
 );
 return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-𝐕𝐥𝐤𝐲𝐫𝐞,
-𝐕𝐥𝐤𝐲𝐫𝐞.A𝖗𝖌𝖘,
+Vlyre,
+Vlyre.A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/𝐕𝐥𝐤𝐲𝐫𝐞__Shop.png",
 `╔◇══════════◇╗
 ┊𝐕𝐥𝐤𝐲𝐫𝐞💵𝐁𝐚𝐧𝐤
@@ -271,17 +271,17 @@ userEco.money = userEco.money - ItemPrice;
 await userEco
 .save()
 .catch((Èrrðr) =>
-Caught(ӄ𝖗𝖞ӄ𝖓𝖟, 𝐕𝐥𝐤𝐲𝐫𝐞, util.format(Èrrðr))
+Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlyre, util.format(Èrrðr))
 );
 await userRob
 .save()
 .catch((Èrrðr) =>
-Caught(ӄ𝖗𝖞ӄ𝖓𝖟, 𝐕𝐥𝐤𝐲𝐫𝐞, util.format(Èrrðr))
+Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlyre, util.format(Èrrðr))
 );
 return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-𝐕𝐥𝐤𝐲𝐫𝐞,
-𝐕𝐥𝐤𝐲𝐫𝐞.A𝖗𝖌𝖘,
+Vlyre,
+Vlyre.A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/𝐕𝐥𝐤𝐲𝐫𝐞__Shop.png",
 `╔◇══════════◇╗
 ┊𝐕𝐥𝐤𝐲𝐫𝐞💵𝐁𝐚𝐧𝐤
@@ -295,8 +295,8 @@ return await Image_Button(
 }
 return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-𝐕𝐥𝐤𝐲𝐫𝐞,
-𝐕𝐥𝐤𝐲𝐫𝐞.A𝖗𝖌𝖘,
+Vlyre,
+Vlyre.A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/𝐕𝐥𝐤𝐲𝐫𝐞__Shop.png",
 `╔◇══════════◇╗
 ┊𝐕𝐥𝐤𝐲𝐫𝐞💵𝐁𝐚𝐧𝐤
@@ -312,22 +312,22 @@ return await Image_Button(
 }
 );
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
-} else if (BadCatelog.includes(𝐕𝐥𝐤𝐲𝐫𝐞.A𝖗𝖌𝖘[0])) {
+} else if (BadCatelog.includes(Vlyre.A𝖗𝖌𝖘[0])) {
 await Economy.findOne(
 {
-ID: 𝐕𝐥𝐤𝐲𝐫𝐞.sender,
+ID: Vlyre.sender,
 },
 async (Èrrðr, userEco) => {
-if (Èrrðr) return Caught(ӄ𝖗𝖞ӄ𝖓𝖟, 𝐕𝐥𝐤𝐲𝐫𝐞, util.format(Èrrðr));
+if (Èrrðr) return Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlyre, util.format(Èrrðr));
 await Bagde.findOne(
 {
-ID: 𝐕𝐥𝐤𝐲𝐫𝐞.sender,
+ID: Vlyre.sender,
 },
 async (Èrrðr, userBadge) => {
-if (Èrrðr) return Caught(ӄ𝖗𝖞ӄ𝖓𝖟, 𝐕𝐥𝐤𝐲𝐫𝐞, util.format(Èrrðr));
+if (Èrrðr) return Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlyre, util.format(Èrrðr));
 if (!userEco) {
 let newEcoUser = new Economy({
-ID: 𝐕𝐥𝐤𝐲𝐫𝐞.sender,
+ID: Vlyre.sender,
 money: 0,
 daily: 0,
 timeout: 86400000,
@@ -338,12 +338,12 @@ worktimeout: 900000,
 });
 newEcoUser
 .save()
-.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, 𝐕𝐥𝐤𝐲𝐫𝐞, util.format(Èrrðr)));
+.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlyre, util.format(Èrrðr)));
 return ᴠʟᴋʏʀᴇ_Buttons.MIB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 KryChat,
 ᴠʟᴋʏʀᴇ,
-`*₍ @${𝐕𝐥𝐤𝐲𝐫𝐞.sender.replace(/[^\d+]/g, "")} ₎*
+`*₍ @${Vlyre.sender.replace(/[^\d+]/g, "")} ₎*
 ╔◇══════════◇╗
 ┊𝐕𝐥𝐤𝐲𝐫𝐞💵𝐁𝐚𝐧𝐤
 ╚◇══════════◇╝
@@ -360,7 +360,7 @@ KryChat,
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
 if (!userBadge) {
 let newBagdeUser = new Bagde({
-ID: 𝐕𝐥𝐤𝐲𝐫𝐞.sender,
+ID: Vlyre.sender,
 Badge: `🧵ʙᴀꜱɪᴄ-10ᴄᴏᴍᴍᴀɴᴅꜱ`,
 value: `True`,
 Limits: 10,
@@ -369,12 +369,12 @@ PermanentLimitTime: 0,
 });
 newBagdeUser
 .save()
-.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, 𝐕𝐥𝐤𝐲𝐫𝐞, util.format(Èrrðr)));
+.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlyre, util.format(Èrrðr)));
 return ᴠʟᴋʏʀᴇ_Buttons.MIB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 KryChat,
 ᴠʟᴋʏʀᴇ,
-`*₍ @${𝐕𝐥𝐤𝐲𝐫𝐞.sender.replace(/[^\d+]/g, "")} ₎*
+`*₍ @${Vlyre.sender.replace(/[^\d+]/g, "")} ₎*
 ╔◇══════════◇╗
 ┊𝐕𝐥𝐤𝐲𝐫𝐞💵𝐁𝐚𝐧𝐤
 ╚◇══════════◇╝
@@ -394,7 +394,7 @@ return ᴠʟᴋʏʀᴇ_Buttons.MIB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 KryChat,
 ᴠʟᴋʏʀᴇ,
-`*₍ @${𝐕𝐥𝐤𝐲𝐫𝐞.sender.replace(/[^\d+]/g, "")} ₎*
+`*₍ @${Vlyre.sender.replace(/[^\d+]/g, "")} ₎*
 ╔◇══════════◇╗
 ┊𝐕𝐥𝐤𝐲𝐫𝐞💵𝐁𝐚𝐧𝐤
 ╚◇══════════◇╝
@@ -414,7 +414,7 @@ return ᴠʟᴋʏʀᴇ_Buttons.MIB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 KryChat,
 ᴠʟᴋʏʀᴇ,
-`*₍ @${𝐕𝐥𝐤𝐲𝐫𝐞.sender.replace(/[^\d+]/g, "")} ₎*
+`*₍ @${Vlyre.sender.replace(/[^\d+]/g, "")} ₎*
 ╔◇══════════◇╗
 ┊𝐕𝐥𝐤𝐲𝐫𝐞💵𝐁𝐚𝐧𝐤
 ╚◇══════════◇╝
@@ -436,15 +436,15 @@ userBadge.Limits = NewLimit;
 userBadge.Badge = Item;
 await userEco
 .save()
-.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, 𝐕𝐥𝐤𝐲𝐫𝐞, util.format(Èrrðr)));
+.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlyre, util.format(Èrrðr)));
 await userBadge
 .save()
-.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, 𝐕𝐥𝐤𝐲𝐫𝐞, util.format(Èrrðr)));
+.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlyre, util.format(Èrrðr)));
 return ᴠʟᴋʏʀᴇ_Buttons.MIB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 KryChat,
 ᴠʟᴋʏʀᴇ,
-`*₍ @${𝐕𝐥𝐤𝐲𝐫𝐞.sender.replace(/[^\d+]/g, "")} ₎*
+`*₍ @${Vlyre.sender.replace(/[^\d+]/g, "")} ₎*
 ╔◇══════════◇╗
 ┊𝐕𝐥𝐤𝐲𝐫𝐞💵𝐁𝐚𝐧𝐤
 ╚◇══════════◇╝
@@ -465,7 +465,7 @@ KryChat,
 } else {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
-𝐕𝐥𝐤𝐲𝐫𝐞,
+Vlyre,
 `*❌ERROR:* Wrong query provided!
 
 *⚡USAGE:* ${prefix}${Final_Name} <item name>
@@ -475,6 +475,6 @@ Get Item-List From ${prefix}shop!`
 };
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
 
-//▷                                              (𝐜)𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!                                           ◁
+//▷                                              (𝐜)Vlyre 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!                                           ◁
 
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
