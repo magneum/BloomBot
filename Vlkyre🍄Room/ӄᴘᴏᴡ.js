@@ -33,9 +33,9 @@ let { req } = require("pino-std-serializers");
 exports.ӄᴘᴏᴡ = async (Ѷ𝖎𝖔𝖓, ӄӄ, Vlkyre) => {
 if (Vlkyre.message) {
 const GitHub = simpleGit({ maxConcurrentProcesses: 10 });
-var newCommits = await GitHub.log(["🐍Ş𝖎𝖕𝖍𝖔𝖓®..origin/🐍Ş𝖎𝖕𝖍𝖔𝖓®"]);
-if (newCommits.total != 0) {
-console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgYellow("🐙𝐂𝐨𝐦𝐦𝐢𝐭𝐬: "), ӄօʟօʀ.bgMagenta(newCommits)));
+var ɴᴇᴡᴄᴏᴍᴍɪᴛꜱ = await GitHub.log(["🐍Ş𝖎𝖕𝖍𝖔𝖓®..origin/🐍Ş𝖎𝖕𝖍𝖔𝖓®"]);
+if (ɴᴇᴡᴄᴏᴍᴍɪᴛꜱ.total != 0) {
+console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgYellow("🐙𝐂𝐨𝐦𝐦𝐢𝐭𝐬: "), ӄօʟօʀ.bgMagenta(ɴᴇᴡᴄᴏᴍᴍɪᴛꜱ)));
 GitHub.pull(async (error, update) => {
 if (update && update.summary.changes) {
 console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgYellow("💡𝐈𝐧𝐟𝐨: "), ӄօʟօʀ.bgGreen("Starting pull....")));
