@@ -86,7 +86,7 @@ let ӄӄ = ᴋᴜɴᴋᴏɴɴᴇᴄᴛ({
 logger: pino({ level: `error` }),
 printQRInTerminal: true,
 defaultQueryTimeoutMs: undefined,
-browser: ["Vlkyre", "Chrome", "1.0.0"],
+browser: ["VLKYRE AI", "Chrome"],
 auth: state,
 // getMessage: async (key) => {
 // console.log(key);
