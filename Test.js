@@ -30,6 +30,7 @@ process.exitCode = 1;
 }});
 ʀᴇᴅ = require("child_process").exec("git reset --hard");
 ʀᴇᴅ.stderr.pipe(process.stderr);
+ʀᴇᴅ.stdout.pipe(process.stdout);
 ʀᴇᴅ.on("exit", function (code, signal) {
 if (code) console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("📟𝐄𝐂𝐨𝐝𝐞: "),ӄօʟօʀ.bgRed(code)));
 if (signal) {
@@ -38,6 +39,7 @@ process.exitCode = 1;
 }});
 ʀᴇᴅ = require("child_process").exec("git stash");
 ʀᴇᴅ.stderr.pipe(process.stderr);
+ʀᴇᴅ.stdout.pipe(process.stdout);
 ʀᴇᴅ.on("exit", function (code, signal) {
 if (code) console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("📟𝐄𝐂𝐨𝐝𝐞: "),ӄօʟօʀ.bgRed(code)));
 if (signal) {
@@ -46,6 +48,7 @@ process.exitCode = 1;
 }});
 ʀᴇᴅ = require("child_process").exec("git stash drop");
 ʀᴇᴅ.stderr.pipe(process.stderr);
+ʀᴇᴅ.stdout.pipe(process.stdout);
 ʀᴇᴅ.on("exit", function (code, signal) {
 if (code) console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("📟𝐄𝐂𝐨𝐝𝐞: "),ӄօʟօʀ.bgRed(code)));
 if (signal) {
@@ -54,6 +57,7 @@ process.exitCode = 1;
 }});
 ʀᴇᴅ = require("child_process").exec("git pull");
 ʀᴇᴅ.stderr.pipe(process.stderr);
+ʀᴇᴅ.stdout.pipe(process.stdout);
 ʀᴇᴅ.on("exit", function (code, signal) {
 if (code) console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("📟𝐄𝐂𝐨𝐝𝐞: "),ӄօʟօʀ.bgRed(code)));
 if (signal) {
@@ -62,6 +66,7 @@ process.exitCode = 1;
 }});
 ʀᴇᴅ = require("child_process").exec("npm restart");
 ʀᴇᴅ.stderr.pipe(process.stderr);
+ʀᴇᴅ.stdout.pipe(process.stdout);
 ʀᴇᴅ.on("exit", function (code, signal) {
 if (code) console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("📟𝐄𝐂𝐨𝐝𝐞: "),ӄօʟօʀ.bgRed(code)));
 if (signal) {
