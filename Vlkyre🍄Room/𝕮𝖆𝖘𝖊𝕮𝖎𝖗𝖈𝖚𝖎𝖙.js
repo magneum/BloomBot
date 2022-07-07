@@ -2823,7 +2823,7 @@ case "dev":
 case "devs":
 case "support":
 case "official":
-case "SUPPORT🦚":
+case "SUPPORT":
 await support(
 ӄӄ,
 Vlkyre,
@@ -2844,7 +2844,7 @@ break;
 case "rule":
 case "rules":
 case "rules":
-case "BOT⚡RULES":
+case "BOT_RULES":
 await rules(
 ӄӄ,
 Vlkyre,
@@ -2864,7 +2864,7 @@ break;
 case "h":
 case "how":
 case "help":
-case "HELP🦀":
+case "HELP":
 case "m":
 case "menu":
 case "allmenu":
@@ -2904,9 +2904,9 @@ caption: `❣️ *ɴᴀᴍᴇ:* ${Vlkyre.pushName || "No_Name"}
 footer: "*⦓ ⒸVlkyre ⦔*\nᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ",
 buttons: [
 {
-buttonId: prefix + "HELP🦀",
+buttonId: prefix + "HELP",
 buttonText: {
-displayText: prefix + "HELP🦀",
+displayText: prefix + "HELP",
 },
 type: 1,
 },

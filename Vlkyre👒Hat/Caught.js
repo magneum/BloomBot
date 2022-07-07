@@ -40,8 +40,8 @@ Please Try Again Later!`,
 footer: "*⦓ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⦔*\n▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ ◁",
 buttons: [
 {
-buttonId: prefix + "HELP🦀",
-buttonText: { displayText: prefix + "HELP🦀" },
+buttonId: prefix + "HELP",
+buttonText: { displayText: prefix + "HELP" },
 type: 1,
 },
 ],
