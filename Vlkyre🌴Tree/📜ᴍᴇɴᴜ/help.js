@@ -145,7 +145,7 @@ await ӄ𝖗𝖞ӄ𝖓𝖟
 Vlkyre.chatID,
 {
 contextInfo: { mentionedJid: [Vlkyre.sender] },
-video: { url: "./Vlkyre👗Skins/Vlkyre.mp4" },
+image: { url: "./Vlkyre👗Skins/Vlkyre.png" },
 caption: `❓𝐕𝐥𝐤𝐲𝐫𝐞: ɪꜱ ᴀ ᴡʜᴀᴛꜱᴀᴘᴘ ᴍᴜʟᴛɪᴘᴜʀᴘᴏꜱᴇ ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ ᴍᴏᴅᴇʀᴀᴛɪᴏɴ, ᴀᴜᴛᴏᴍᴀᴛɪᴏɴ ᴀɴᴅ 100+ ᴄᴏᴍᴍᴀɴᴅꜱ!
 ╔══『 𝐏𝐫𝐨𝐟𝐢𝐥𝐞𝐫® 』
 ║🕊️ *ɴᴀᴍᴇ:* ${Vlkyre.pushName || "ɴᴏ_ɴᴀᴍᴇ"}
@@ -452,7 +452,7 @@ buttonText: { displayText: prefix + "BOTSUPPORT" },
 type: 1,
 },
 ],
-headerType: 5,
+headerType: 4,
 },
 {
 quoted: Vlkyre,
