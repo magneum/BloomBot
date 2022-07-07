@@ -272,11 +272,6 @@ caption: `🕊️𝐕𝐥𝐤𝐲𝐫𝐞:🕊️ _is a whatsapp userbot with au
 ╚═══════╝
 
 ╔══『 👑𝐎𝐖𝐍𝐄𝐑_𝐒𝐔𝐃𝐎👑 』
-║☣️ ${prefix}sync
-║☣️ ${prefix}update
-║☣️ ${prefix}latest
-║☣️ ${prefix}efresh
-║☣️ ${prefix}gitsync
 ║☣️ ${prefix}ban
 ║☣️ ${prefix}unban
 ║☣️ ${prefix}reboot
