@@ -432,18 +432,18 @@ caption: `❓𝐕𝐥𝐤𝐲𝐫𝐞: ɪꜱ ᴀ ᴡʜᴀᴛꜱᴀᴘᴘ ᴍᴜ�
 footer: "*⦓ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⦔*\n▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ ◁",
 buttons: [
 {
-buttonId: prefix + "HELP🦀",
-buttonText: { displayText: prefix + "HELP🦀" },
+buttonId: prefix + "HELP",
+buttonText: { displayText: prefix + "HELP" },
 type: 1,
 },
 {
-buttonId: prefix + "BOT⚡RULES",
-buttonText: { displayText: prefix + "BOT⚡RULES" },
+buttonId: prefix + "BOT_RULES",
+buttonText: { displayText: prefix + "BOT_RULES" },
 type: 1,
 },
 {
-buttonId: prefix + "SUPPORT🦚",
-buttonText: { displayText: prefix + "SUPPORT🦚" },
+buttonId: prefix + "SUPPORT",
+buttonText: { displayText: prefix + "SUPPORT" },
 type: 1,
 },
 ],
