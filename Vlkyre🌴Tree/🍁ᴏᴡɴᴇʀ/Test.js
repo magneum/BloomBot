@@ -61,20 +61,20 @@ commandName,
 body,
 ) => {
 let ӄօʟօʀ = require("chalk");
-let Heroku = require("heroku-client");
-let Hoku = new Heroku({ token: HEROKU_API_KEY });
-let { simpleGit, CleanOptions } = require("simple-git");
-let ɢɪᴛᴄᴀʟʟ = simpleGit({ maxConcurrentProcesses: 10 });
 let ɢɪᴛ_ᴄ = require("simple-git")();
+let Heroku = require("heroku-client");
+let { simpleGit} = require("simple-git");
+let Hoku = new Heroku({ token: HEROKU_API_KEY });
+let ɢɪᴛᴄᴀʟʟ = simpleGit({ maxConcurrentProcesses: 10 });
 try {
 let ɴᴇᴡᴄᴏᴍᴍɪᴛꜱ = await ɢɪᴛ_ᴄ.log(["🐍Ş𝖎𝖕𝖍𝖔𝖓®..origin/🐍Ş𝖎𝖕𝖍𝖔𝖓®"]);
 ɢɪᴛᴄᴀʟʟ.addConfig("user.name", "KryKnz").addConfig("user.email", "krakinzkon@gmail.com");
 if (ɴᴇᴡᴄᴏᴍᴍɪᴛꜱ.total != 0) {
 console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("🐙𝐂𝐨𝐦𝐦𝐢𝐭𝐬: "),ӄօʟօʀ.bgMagenta(ɴᴇᴡᴄᴏᴍᴍɪᴛꜱ)));
 ɢɪᴛᴄᴀʟʟ.pull((error, update) => {
+console.log(update);
 if (error) console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐄𝐫𝐫𝐨𝐫: "), ӄօʟօʀ.bgRed(error)));
 if (update && update.summary.changes) {
-ɢɪᴛᴄᴀʟʟ.clean(CleanOptions.FORCE).catch((error) => console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐄𝐫𝐫𝐨𝐫: "), ӄօʟօʀ.bgRed(error))));
 console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("💡𝐈𝐧𝐟𝐨: "),ӄօʟօʀ.bgYellow("Starting Git-Pull")));
 console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("🕐𝐓𝐢𝐦𝐞: "),ӄօʟօʀ.bgGreen("".concat(new Date()))));
 let ʀᴇᴅ = require("child_process").exec("npm restart");
