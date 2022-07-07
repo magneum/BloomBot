@@ -17,7 +17,6 @@ let ӄօʟօʀ = require("chalk");
 let { Night } = require("./Night");
 let ɢɪᴛᴄᴀʟʟ = require("simple-git")();
 let Heroku = require("heroku-client");
-let { GitSync } = require("./GitSync");
 let { 𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙 } = require("./𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙");
 let Hoku = new Heroku({ token: HEROKU_API_KEY });
 let ProTon = require("../Vlkyre🌗Events/ProTon");
@@ -39,10 +38,59 @@ if (Vlkyre.message) {
 try {
 let ɴᴇᴡ = await ɢɪᴛᴄᴀʟʟ.log(["🐍Ş𝖎𝖕𝖍𝖔𝖓®..origin/🐍Ş𝖎𝖕𝖍𝖔𝖓®"]);
 if (ɴᴇᴡ.total != 0) {
-await GitSync(ӄօʟօʀ, ɢɪᴛᴄᴀʟʟ);
-} else {
-console.clear();
-}
+console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("⬡═════════════════════════|▷ 𝐆𝐢𝐭𝐇𝐮𝐛 𝐒𝐲𝐧𝐜 ◁|═════════════════════════⬡")));
+console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("💡𝐈𝐧𝐟𝐨: "),ӄօʟօʀ.bgYellow("Starting Git-Pull")));
+console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("🕐𝐓𝐢𝐦𝐞: "),ӄօʟօʀ.bgGreen("".concat(new Date()))));
+ʀᴇᴅ = require("child_process").exec("rm -f ./.git/index.lock");
+ʀᴇᴅ.stderr.pipe(process.stderr);
+ʀᴇᴅ.on("exit", function (code, signal) {
+if (code) console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("📟𝐄𝐂𝐨𝐝𝐞: "),ӄօʟօʀ.bgRed(code)));
+if (signal) {
+console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("📶𝐄𝐒𝐢𝐠𝐧𝐚𝐥: "),ӄօʟօʀ.bgBlue(signal)));
+process.exitCode = 1;
+}});
+ʀᴇᴅ = require("child_process").exec("git reset --hard");
+ʀᴇᴅ.stderr.pipe(process.stderr);
+ʀᴇᴅ.on("exit", function (code, signal) {
+if (code) console.log(chalk.black(chalk.bgWhite("📟𝐄𝐂𝐨𝐝𝐞: "),chalk.bgRed(code)));
+if (signal) {
+console.log(chalk.black(chalk.bgWhite("📶𝐄𝐒𝐢𝐠𝐧𝐚𝐥: "),chalk.bgBlue(signal)));
+process.exitCode = 1;
+}});
+ʀᴇᴅ = require("child_process").exec("git stash");
+ʀᴇᴅ.stderr.pipe(process.stderr);
+ʀᴇᴅ.on("exit", function (code, signal) {
+if (code) console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("📟𝐄𝐂𝐨𝐝𝐞: "),ӄօʟօʀ.bgRed(code)));
+if (signal) {
+console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("📶𝐄𝐒𝐢𝐠𝐧𝐚𝐥: "),ӄօʟօʀ.bgBlue(signal)));
+process.exitCode = 1;
+}});
+ʀᴇᴅ = require("child_process").exec("git stash drop");
+ʀᴇᴅ.stderr.pipe(process.stderr);
+ʀᴇᴅ.on("exit", function (code, signal) {
+if (code) console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("📟𝐄𝐂𝐨𝐝𝐞: "),ӄօʟօʀ.bgRed(code)));
+if (signal) {
+console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("📶𝐄𝐒𝐢𝐠𝐧𝐚𝐥: "),ӄօʟօʀ.bgBlue(signal)));
+process.exitCode = 1;
+}});
+ʀᴇᴅ = require("child_process").exec("git pull");
+ʀᴇᴅ.stderr.pipe(process.stderr);
+ʀᴇᴅ.on("exit", function (code, signal) {
+if (code) console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("📟𝐄𝐂𝐨𝐝𝐞: "),ӄօʟօʀ.bgRed(code)));
+if (signal) {
+console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("📶𝐄𝐒𝐢𝐠𝐧𝐚𝐥: "),ӄօʟօʀ.bgBlue(signal)));
+process.exitCode = 1;
+}});
+ʀᴇᴅ = require("child_process").exec("npm restart");
+ʀᴇᴅ.stderr.pipe(process.stderr);
+ʀᴇᴅ.on("exit", function (code, signal) {
+if (code) console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("📟𝐄𝐂𝐨𝐝𝐞: "),ӄօʟօʀ.bgRed(code)));
+if (signal) {
+console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("📶𝐄𝐒𝐢𝐠𝐧𝐚𝐥: "),ӄօʟօʀ.bgBlue(signal)));
+process.exitCode = 1;
+}});
+console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("💡𝐈𝐧𝐟𝐨: "),ӄօʟօʀ.bgGreen("Git-Pull Finished")));
+} 
 } catch (error) {
 console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐄𝐫𝐫𝐨𝐫: "), ӄօʟօʀ.bgRed(error)));
 console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("💡𝐈𝐧𝐟𝐨: "),ӄօʟօʀ.bgYellow("Falling Back To Legacy Method")));
