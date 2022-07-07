@@ -42,7 +42,13 @@ console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("⬡═════════�
 console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("🐙𝐂𝐨𝐦𝐦𝐢𝐭𝐬: "),ӄօʟօʀ.bgMagenta(ɴᴇᴡ)));
 console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("💡𝐈𝐧𝐟𝐨: "),ӄօʟօʀ.bgYellow("Starting Git-Pull")));
 console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("🕐𝐓𝐢𝐦𝐞: "),ӄօʟօʀ.bgGreen("".concat(new Date()))));
-require("child_process").exec("git reset --hard && git stash && git stash drop");
+let ᴇᴅ = require("child_process").exec("git reset --hard && git stash && git stash drop");
+ᴇᴅ.stderr.pipe(process.stderr);
+ᴇᴅ.on("exit", function (code, signal) {
+if (code) console.log(chalk.black(chalk.bgWhite("📟𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐂𝐨𝐝𝐞: "),chalk.bgRed(code)));
+if (signal) console.log(chalk.black(chalk.bgWhite("📶𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐒𝐢𝐠𝐧𝐚𝐥: "),chalk.bgBlue(signal)));
+process.exitCode = 1;
+});
 ɢɪᴛᴄᴀʟʟ.pull().catch((error) => console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐇𝐞𝐫𝐨𝐤𝐮 𝐄𝐫𝐫𝐨𝐫: "), ӄօʟօʀ.bgRed(error))));
 let ʀᴇᴅ = require("child_process").exec("npm restart");
 ʀᴇᴅ.stderr.pipe(process.stderr);
