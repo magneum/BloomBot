@@ -18,6 +18,7 @@ let { 𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙 } = require("./𝕮𝖆𝖘�
 let ProTon = require("../Vlkyre🌗Events/ProTon");
 let { Caught } = require("../Vlkyre👒Hat/Caught");
 let { ARanks } = require("../Vlkyre🧵Types/ARanks");
+let { ӄօʟօʀs } = require("../Vlkyre🌗Events/ӄօʟօʀs");
 let Bagde = require("../Vlkyre🌤️Cloud/🍃𝖒𝖔𝖓𝖌𝖔/badge");
 let { DenyLink } = require("../Vlkyre🧵Types/DenyLink");
 let Ranker = require("../Vlkyre🌤️Cloud/🍃𝖒𝖔𝖓𝖌𝖔/autorank");
