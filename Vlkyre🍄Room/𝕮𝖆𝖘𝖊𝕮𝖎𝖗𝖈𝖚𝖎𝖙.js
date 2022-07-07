@@ -2683,7 +2683,7 @@ case "dev":
 case "devs":
 case "support":
 case "official":
-case "SUPPORT":
+case "BOTSUPPORT":
 await support(
 ӄӄ,
 Vlkyre,
@@ -2703,7 +2703,7 @@ break;
 case "rule":
 case "rules":
 case "rules":
-case "RULES":
+case "BOTRULES":
 await rules(
 ӄӄ,
 Vlkyre,
