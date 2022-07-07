@@ -23,13 +23,16 @@ getRandom,
 let fs = require("fs");
 let util = require("util");
 let hxz = require("hxz-api");
-let chalk = require("chalk");
 let db = require("quick.db");
 let axios = require("axios");
+let chalk = require("chalk");
+let ɢɪᴛ = require("simple-git")();
 let canvacord = require("canvacord");
+let Heroku = require("heroku-client");
 let { Character } = require("mailist");
 let moment = require("moment-timezone");
 let Carbon = require("unofficial-carbon-now");
+let Hoku = new Heroku({ token: HEROKU_API_KEY });
 let PhoneNumber = require("awesome-phonenumber");
 let { exec, execSync } = require("child_process");
 let { jidDecode } = require("@adiwajshing/baileys");
@@ -60,33 +63,30 @@ isSenderTUF,
 commandName,
 body,
 ) => {
-let ӄօʟօʀ = require("chalk");
-let ɢɪᴛᴄᴀʟʟ = require("simple-git")();
-let Heroku = require("heroku-client");
-let Hoku = new Heroku({ token: HEROKU_API_KEY });
 try {
-let ɴᴇᴡᴄᴏᴍᴍɪᴛꜱ = await ɢɪᴛᴄᴀʟʟ.log(["🐍Ş𝖎𝖕𝖍𝖔𝖓®..origin/🐍Ş𝖎𝖕𝖍𝖔𝖓®"]);
-if (ɴᴇᴡᴄᴏᴍᴍɪᴛꜱ.total != 0) {
-await ɢɪᴛᴄᴀʟʟ.pull().catch((error) => console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐇𝐞𝐫𝐨𝐤𝐮 𝐄𝐫𝐫𝐨𝐫: "), ӄօʟօʀ.bgRed(error))));
-console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("🐙𝐂𝐨𝐦𝐦𝐢𝐭𝐬: "),ӄօʟօʀ.bgMagenta(ɴᴇᴡᴄᴏᴍᴍɪᴛꜱ)));
-console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("💡𝐈𝐧𝐟𝐨: "),ӄօʟօʀ.bgYellow("Starting Git-Pull")));
-console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("🕐𝐓𝐢𝐦𝐞: "),ӄօʟօʀ.bgGreen("".concat(new Date()))));
+let ɴᴇᴡ = ɢɪᴛ.log(["🐍Ş𝖎𝖕𝖍𝖔𝖓®..origin/🐍Ş𝖎𝖕𝖍𝖔𝖓®"]);
+if (ɴᴇᴡ.total != 0) {
+console.log(chalk.black(chalk.bgWhite("⬡═════════════════════════|▷ 𝐆𝐢𝐭𝐇𝐮𝐛 𝐒𝐲𝐧𝐜 ◁|═════════════════════════⬡")));
+console.log(chalk.black(chalk.bgWhite("🐙𝐂𝐨𝐦𝐦𝐢𝐭𝐬: "),chalk.bgMagenta(ɴᴇᴡ)));
+console.log(chalk.black(chalk.bgWhite("💡𝐈𝐧𝐟𝐨: "),chalk.bgYellow("Starting Git-Pull")));
+console.log(chalk.black(chalk.bgWhite("🕐𝐓𝐢𝐦𝐞: "),chalk.bgGreen("".concat(new Date()))));
+ɢɪᴛ.pull().catch((error) => console.log(chalk.black(chalk.bgWhite("❌𝐇𝐞𝐫𝐨𝐤𝐮 𝐄𝐫𝐫𝐨𝐫: "), chalk.bgRed(error))));
 let ʀᴇᴅ = require("child_process").exec("npm restart");
 ʀᴇᴅ.stderr.pipe(process.stderr);
 ʀᴇᴅ.on("exit", function (code, signal) {
-if (code) console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("📟𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐂𝐨𝐝𝐞: "),ӄօʟօʀ.bgRed(code)));
-if (signal) console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("📶𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐒𝐢𝐠𝐧𝐚𝐥: "),ӄօʟօʀ.bgBlue(signal)));
+if (code) console.log(chalk.black(chalk.bgWhite("📟𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐂𝐨𝐝𝐞: "),chalk.bgRed(code)));
+if (signal) console.log(chalk.black(chalk.bgWhite("📶𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐒𝐢𝐠𝐧𝐚𝐥: "),chalk.bgBlue(signal)));
 process.exitCode = 1;
 });
-console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("💡𝐈𝐧𝐟𝐨: "),ӄօʟօʀ.bgGreen("Git-Pull Finished")));
-return await Vlkyre.reply("💡𝐈𝐧𝐟𝐨: Logger Attached.\nGit-Pull Finished");
-} else {
+console.log(chalk.black(chalk.bgWhite("💡𝐈𝐧𝐟𝐨: "),chalk.bgGreen("Git-Pull Finished")));
+console.log(chalk.black(chalk.bgWhite("⬡═════════════════════════|▷ 𝐆𝐢𝐭𝐇𝐮𝐛 𝐒𝐲𝐧𝐜 ◁|═════════════════════════⬡")));
+}  else {
 return await Vlkyre.reply("💡𝐈𝐧𝐟𝐨: Logger Detached.\nFalling Back To Legacy Method");
 }
 } catch (error) {
-console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐄𝐫𝐫𝐨𝐫: "), ӄօʟօʀ.bgRed(error)));
-console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("💡𝐈𝐧𝐟𝐨: "),ӄօʟօʀ.bgYellow("Falling Back To Legacy Method")));
-await Hoku.delete("/apps/" + HEROKU_APP_NAME + "/dynos/" + "worker").catch((error) => console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐇𝐞𝐫𝐨𝐤𝐮 𝐄𝐫𝐫𝐨𝐫: "), ӄօʟօʀ.bgRed(error))));
+console.log(chalk.black(chalk.bgWhite("❌𝐄𝐫𝐫𝐨𝐫: "), chalk.bgRed(error)));
+console.log(chalk.black(chalk.bgWhite("💡𝐈𝐧𝐟𝐨: "),chalk.bgYellow("Falling Back To Legacy Method")));
+await Hoku.delete("/apps/" + HEROKU_APP_NAME + "/dynos/" + "worker").catch((error) => console.log(chalk.black(chalk.bgWhite("❌𝐇𝐞𝐫𝐨𝐤𝐮 𝐄𝐫𝐫𝐨𝐫: "), chalk.bgRed(error))));
 }
 };
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
