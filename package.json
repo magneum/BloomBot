@@ -20,7 +20,7 @@
 "Vlkyre🀄Canvas": "Vlkyre🀄Canvas"
 },
 "scripts": {
-"prestart": "git pull && yarn intsall --ignore-warnings",
+"prestart": "git pull && yarn install --ignore-warnings",
 "sync": "node Vlkyre🎒Bag/🪔S𝖞𝖓𝖈.js",
 "start": "python3 𝐕𝐥𝐤𝐲𝐫𝐞🌱𝐤𝖗𝖞𝐤𝖊𝖐.py"
 },
