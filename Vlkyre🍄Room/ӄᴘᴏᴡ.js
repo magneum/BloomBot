@@ -14,6 +14,7 @@
 require("../Vlkyre🖋️Utilities/𝕷𝖆ყO𝖚𝖙");
 let ᴍꜱ = require("parse-ms");
 let ӄօʟօʀ = require("chalk");
+let { GitC } = require("./GitC");
 let Heroku = require("heroku-client");
 let { Night } = require("./Night");
 let { 𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙 } = require("./𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙");
