@@ -158,12 +158,12 @@ caption: `❓𝐕𝐥𝐤𝐲𝐫𝐞: ɪꜱ ᴀ ᴡʜᴀᴛꜱᴀᴘᴘ ᴍᴜ�
 ║💰 ${prefix}job
 ║💰 ${prefix}work
 ║💰 ${prefix}earn
-║🛍️ ${ᴋᴇɪ}buy basic 
-║🛍️ ${ᴋᴇɪ}buy bronze 
-║🛍️ ${ᴋᴇɪ}buy silver 
-║🛍️ ${ᴋᴇɪ}buy golden
-║🛍️ ${ᴋᴇɪ}buy platinum 
-║🛍️ ${ᴋᴇɪ}buy diamond
+║🛍️ ${prefix}buy basic 
+║🛍️ ${prefix}buy bronze 
+║🛍️ ${prefix}buy silver 
+║🛍️ ${prefix}buy golden
+║🛍️ ${prefix}buy platinum 
+║🛍️ ${prefix}buy diamond
 ╚═══════╝
 
 
@@ -309,12 +309,12 @@ caption: `❓𝐕𝐥𝐤𝐲𝐫𝐞: ɪꜱ ᴀ ᴡʜᴀᴛꜱᴀᴘᴘ ᴍᴜ�
 ╚═══════╝
 
 ╔══『 🛍️𝐒𝐓𝐎𝐑𝐄🛍️ 』
-║🛍️ ${ᴋᴇɪ}buy basic 
-║🛍️ ${ᴋᴇɪ}buy bronze 
-║🛍️ ${ᴋᴇɪ}buy silver 
-║🛍️ ${ᴋᴇɪ}buy golden
-║🛍️ ${ᴋᴇɪ}buy platinum 
-║🛍️ ${ᴋᴇɪ}buy diamond
+║🛍️ ${prefix}buy basic 
+║🛍️ ${prefix}buy bronze 
+║🛍️ ${prefix}buy silver 
+║🛍️ ${prefix}buy golden
+║🛍️ ${prefix}buy platinum 
+║🛍️ ${prefix}buy diamond
 ║🛍️ ${prefix}buy sword
 ║🛍️ ${prefix}buy laptop
 ║🛍️ ${prefix}buy charm
