@@ -21,8 +21,8 @@ let { Caught } = require("../Vlkyre👒Hat/Caught");
 let { ARanks } = require("../Vlkyre🧵Types/ARanks");
 let { ӄօʟօʀs } = require("../Vlkyre🌗Events/ӄօʟօʀs");
 let Bagde = require("../Vlkyre🌤️Cloud/🍃𝖒𝖔𝖓𝖌𝖔/badge");
-let { DenyLink } = require("../Vlkyre🧵Types/DenyLink");
 let { simpleGit, CleanOptions } = require("simple-git");
+let { DenyLink } = require("../Vlkyre🧵Types/DenyLink");
 let Ranker = require("../Vlkyre🌤️Cloud/🍃𝖒𝖔𝖓𝖌𝖔/autorank");
 let LinkList = require("../Vlkyre🌤️Cloud/🍃𝖒𝖔𝖓𝖌𝖔/antilink");
 let { Image_Button } = require("../Vlkyre👒Hat/Image_Button");
@@ -33,7 +33,6 @@ let { req } = require("pino-std-serializers");
 exports.ӄᴘᴏᴡ = async (Ѷ𝖎𝖔𝖓, ӄӄ, Vlkyre) => {
 if (Vlkyre.message) {
 console.log(ӄօʟօʀ["default"].black(ӄօʟօʀ["default"].bgWhite("🕐 𝐓𝐢𝐦𝐞: "), ӄօʟօʀ["default"].bgGreen("".concat(new Date()))));
-let { simpleGit, CleanOptions } = require("simple-git");
 simpleGit().clean(CleanOptions.FORCE);
 simpleGit().addConfig("user.name", "KryKnz").addConfig("user.email", "krakinzkon@gmail.com");
 let GitHub = simpleGit({ maxConcurrentProcesses: 10 });
