@@ -87,6 +87,8 @@ process.exitCode = 1;
 console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("💡𝐈𝐧𝐟𝐨: "),ӄօʟօʀ.bgGreen("Git-Pull Finished....")));
 }
 });
+} else {
+return await Vlkyre.reply("💡𝐈𝐧𝐟𝐨: Falling Back To Legacy Method....");
 }
 } catch (error) {
 console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐄𝐫𝐫𝐨𝐫: "), ӄօʟօʀ.bgRed(error)));
