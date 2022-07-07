@@ -61,20 +61,14 @@ commandName,
 body,
 ) => {
 let ӄօʟօʀ = require("chalk");
-let ɢɪᴛ_ᴄ = require("simple-git")();
+let ɢɪᴛᴄᴀʟʟ = require("simple-git")();
 let Heroku = require("heroku-client");
-let { simpleGit } = require("simple-git");
 let Hoku = new Heroku({ token: HEROKU_API_KEY });
-let ɢɪᴛᴄᴀʟʟ = simpleGit({ maxConcurrentProcesses: 10 });
 try {
-let ɴᴇᴡᴄᴏᴍᴍɪᴛꜱ = await ɢɪᴛ_ᴄ.log(["🐍Ş𝖎𝖕𝖍𝖔𝖓®..origin/🐍Ş𝖎𝖕𝖍𝖔𝖓®"]);
-ɢɪᴛᴄᴀʟʟ.addConfig("user.name", "KryKnz").addConfig("user.email", "krakinzkon@gmail.com");
+let ɴᴇᴡᴄᴏᴍᴍɪᴛꜱ = await ɢɪᴛᴄᴀʟʟ.log(["🐍Ş𝖎𝖕𝖍𝖔𝖓®..origin/🐍Ş𝖎𝖕𝖍𝖔𝖓®"]);
 if (ɴᴇᴡᴄᴏᴍᴍɪᴛꜱ.total != 0) {
+await ɢɪᴛᴄᴀʟʟ.pull().catch((error) => console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐇𝐞𝐫𝐨𝐤𝐮 𝐄𝐫𝐫𝐨𝐫: "), ӄօʟօʀ.bgRed(error))));
 console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("🐙𝐂𝐨𝐦𝐦𝐢𝐭𝐬: "),ӄօʟօʀ.bgMagenta(ɴᴇᴡᴄᴏᴍᴍɪᴛꜱ)));
-ɢɪᴛᴄᴀʟʟ.pull((error, update) => {
-console.log(update);
-if (error) console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐄𝐫𝐫𝐨𝐫: "), ӄօʟօʀ.bgRed(error)));
-if (update && update.summary.changes) {
 console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("💡𝐈𝐧𝐟𝐨: "),ӄօʟօʀ.bgYellow("Starting Git-Pull")));
 console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("🕐𝐓𝐢𝐦𝐞: "),ӄօʟօʀ.bgGreen("".concat(new Date()))));
 let ʀᴇᴅ = require("child_process").exec("npm restart");
@@ -85,10 +79,9 @@ if (signal) console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("📶𝐄𝐱𝐢�
 process.exitCode = 1;
 });
 console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("💡𝐈𝐧𝐟𝐨: "),ӄօʟօʀ.bgGreen("Git-Pull Finished")));
-}
-});
+return await Vlkyre.reply("💡𝐈𝐧𝐟𝐨: Logger Attached.\nGit-Pull Finished");
 } else {
-return await Vlkyre.reply("💡𝐈𝐧𝐟𝐨: Logger Detached.Falling Back To Legacy Method");
+return await Vlkyre.reply("💡𝐈𝐧𝐟𝐨: Logger Detached.\nFalling Back To Legacy Method");
 }
 } catch (error) {
 console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐄𝐫𝐫𝐨𝐫: "), ӄօʟօʀ.bgRed(error)));
