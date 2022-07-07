@@ -38,7 +38,6 @@ if (Vlkyre.message) {
 try {
 let ɴᴇᴡ = await ɢɪᴛᴄᴀʟʟ.log(["🐍Ş𝖎𝖕𝖍𝖔𝖓®..origin/🐍Ş𝖎𝖕𝖍𝖔𝖓®"]);
 if (ɴᴇᴡ.total != 0) {
-console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("⬡═════════════════════════|▷ 𝐆𝐢𝐭𝐇𝐮𝐛 𝐒𝐲𝐧𝐜 ◁|═════════════════════════⬡")));
 console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("💡𝐈𝐧𝐟𝐨: "),ӄօʟօʀ.bgYellow("Starting Git-Pull")));
 console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("🕐𝐓𝐢𝐦𝐞: "),ӄօʟօʀ.bgGreen("".concat(new Date()))));
 ʀᴇᴅ = require("child_process").exec("rm -f ./.git/index.lock");
