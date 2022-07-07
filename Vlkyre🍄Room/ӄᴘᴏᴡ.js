@@ -21,6 +21,7 @@ let { ARanks } = require("../Vlkyre🧵Types/ARanks");
 let { ӄօʟօʀs } = require("../Vlkyre🌗Events/ӄօʟօʀs");
 let Bagde = require("../Vlkyre🌤️Cloud/🍃𝖒𝖔𝖓𝖌𝖔/badge");
 let { DenyLink } = require("../Vlkyre🧵Types/DenyLink");
+const { simpleGit, CleanOptions } = require("simple-git");
 let Ranker = require("../Vlkyre🌤️Cloud/🍃𝖒𝖔𝖓𝖌𝖔/autorank");
 let LinkList = require("../Vlkyre🌤️Cloud/🍃𝖒𝖔𝖓𝖌𝖔/antilink");
 let { Image_Button } = require("../Vlkyre👒Hat/Image_Button");
@@ -60,8 +61,6 @@ if (Vlkyre.message) {
 await git.fetch();
 let newCommits = await git.log(["🐍Ş𝖎𝖕𝖍𝖔𝖓®..origin/🐍Ş𝖎𝖕𝖍𝖔𝖓®"]);
 if (newCommits.total != 0) {
-const { simpleGit, CleanOptions } = require("simple-git");
-async function commit() {
 simpleGit().clean(simpleGit.CleanOptions.FORCE);
 simpleGit().clean(CleanOptions.FORCE);
 simpleGit().exec(() => console.log("Starting pull...")).pull((error, update) => {
@@ -71,7 +70,6 @@ require("child_process").exec("npm restart");
 }
 }).exec(() => console.log("pull done."));
 }
-commit();
 // let h𝖛𝖑𝖐𝖕 = require("child_process").exec(`heroku ps:restart worker -a ${HEROKU_APP_NAME}`);
 // h𝖛𝖑𝖐𝖕.stderr.pipe(process.stderr);
 // h𝖛𝖑𝖐𝖕.on("exit", function (code, signal) {
