@@ -146,7 +146,8 @@ Vlkyre.chatID,
 {
 contextInfo: { mentionedJid: [Vlkyre.sender] },
 image: { url: "./Vlkyre👗Skins/Vlkyre.png" },
-caption: `❓𝐕𝐥𝐤𝐲𝐫𝐞: ɪꜱ ᴀ ᴡʜᴀᴛꜱᴀᴘᴘ ᴍᴜʟᴛɪᴘᴜʀᴘᴏꜱᴇ ᴜꜱᴇʀʙᴏᴛ ᴡɪᴛʜ ᴍᴏᴅᴇʀᴀᴛɪᴏɴ, ᴀᴜᴛᴏᴍᴀᴛɪᴏɴ ᴀɴᴅ 100+ ᴄᴏᴍᴍᴀɴᴅꜱ!
+caption: `🕊️𝐕𝐥𝐤𝐲𝐫𝐞:🕊️ _is a whatsapp userbot with automation,moderation,music,games and 140+ commands!_
+
 ╔══『 𝐏𝐫𝐨𝐟𝐢𝐥𝐞𝐫® 』
 ║🕊️ *ɴᴀᴍᴇ:* ${Vlkyre.pushName || "ɴᴏ_ɴᴀᴍᴇ"}
 ║🎭 *ᴄʜᴀᴛɪᴅ:* ${Vlkyre.chatID.split("@")[0]}
