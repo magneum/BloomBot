@@ -71,7 +71,7 @@ let Allowed = [
 "tagall",
 "admins",
 ];
-if (Vlkyre.isCommand && !Allowed.includes(Vlkyre.commandName)) {
+if (!Allowed.includes(Vlkyre.commandName)) {
 await Bagde.findOne(
 {
 ID: Vlkyre.sender,
@@ -116,17 +116,15 @@ Vlkyre.A𝖗𝖌𝖘,
 ║💡𝐓𝐢𝐩: Buy Higher Badges Using ${prefix}shop
 ╚═══════╝`
 );
-}
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-if (Re > 0 && !userBg.Limits == 0) {
+} else if (Re > 0 && !userBg.Limits == 0) {
 userBg.Limits = userBg.Limits - 1;
 userBg.value = "True";
 await userBg.save();
 await ӄօʟօʀs(ӄӄ, Vlkyre);
 return await CC(Vlkyre, ӄӄ, ӄ_counter, Ѷ𝖎𝖔𝖓);
-}
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-if (Re < 0 && userBg.Limits == 0) {
+} else if (Re < 0 && userBg.Limits == 0) {
 if (userBg.Badge === "🧵Basic 10 Commands") userBg.Limits = 10;
 if (userBg.Badge === "🥉Bronze 20 Commands") userBg.Limits = 20;
 if (userBg.Badge === "🥈Silver 40 Commands") userBg.Limits = 40;
@@ -138,9 +136,8 @@ userBg.value = "True";
 await userBg.save();
 await ӄօʟօʀs(ӄӄ, Vlkyre);
 return await CC(Vlkyre, ӄӄ, ӄ_counter, Ѷ𝖎𝖔𝖓);
-}
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-if (userBg.value === "False") {
+} else if (userBg.value === "False") {
 return await Image_Button(
 ӄӄ,
 Vlkyre,
@@ -153,6 +150,9 @@ Vlkyre.A𝖗𝖌𝖘,
 ║💡𝐓𝐢𝐩: Buy Higher Badges Using ${prefix}shop
 ╚═══════╝`
 );
+} else {
+await ӄօʟօʀs(ӄӄ, Vlkyre);
+return await CC(Vlkyre, ӄӄ, ӄ_counter, Ѷ𝖎𝖔𝖓);
 }
 }
 }
