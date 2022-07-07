@@ -45,14 +45,15 @@ if (signal) {
 console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("📶𝐄𝐒𝐢𝐠𝐧𝐚𝐥: "),ӄօʟօʀ.bgBlue(signal)));
 process.exitCode = 1;
 }});
-ʀᴇᴅ = require("child_process").exec("npm restart");
-ʀᴇᴅ.stderr.pipe(process.stderr);
-ʀᴇᴅ.on("exit", function (code, signal) {
-if (code) console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("📟𝐄𝐂𝐨𝐝𝐞: "),ӄօʟօʀ.bgRed(code)));
-if (signal) {
-console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("📶𝐄𝐒𝐢𝐠𝐧𝐚𝐥: "),ӄօʟօʀ.bgBlue(signal)));
-process.exitCode = 1;
-}})}
+// ʀᴇᴅ = require("child_process").exec("npm restart");
+// ʀᴇᴅ.stderr.pipe(process.stderr);
+// ʀᴇᴅ.on("exit", function (code, signal) {
+// if (code) console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("📟𝐄𝐂𝐨𝐝𝐞: "),ӄօʟօʀ.bgRed(code)));
+// if (signal) {
+// console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("📶𝐄𝐒𝐢𝐠𝐧𝐚𝐥: "),ӄօʟօʀ.bgBlue(signal)));
+// process.exitCode = 1;
+// }});
+}
 })
 .exec(() => console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("💡𝐈𝐧𝐟𝐨: "),ӄօʟօʀ.bgGreen("Git-Pull Finished"))));
 }
