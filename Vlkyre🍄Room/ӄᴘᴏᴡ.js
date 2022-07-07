@@ -68,7 +68,7 @@ if (error.git) mergeSummary = error.git;
 simpleGit().pull((error, update) => {
 if (update && update.summary.changes) {
 console.log(update);
-require("child_process").exec("npm restart");
+require("child_process").exec("npm run start");
 }
 });
 }
