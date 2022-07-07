@@ -12,16 +12,19 @@
 // ╚════════════╝
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 (async () => {
-const { simpleGit, CleanOptions } = require("simple-git");
+let { simpleGit, CleanOptions } = require("simple-git");
+let GitHub = require("simple-git")();
 simpleGit().clean(CleanOptions.FORCE);
 simpleGit().addConfig("user.name", "KryKnz").addConfig("user.email", "krakinzkon@gmail.com");
-const GitHub = simpleGit({ maxConcurrentProcesses: 10 });
 var newCommits = await GitHub.log(["🐍Ş𝖎𝖕𝖍𝖔𝖓®..origin/🐍Ş𝖎𝖕𝖍𝖔𝖓®"]);
+// let GitHub = simpleGit({ maxConcurrentProcesses: 10 });
 if (newCommits.total != 0) {
 console.log("💡𝐈𝐧𝐟𝐨: Starting pull....");
 if ((await GitHub.pull())?.summary.changes)
 require("child_process").exec("npm restart");
 console.log("💡𝐈𝐧𝐟𝐨: Sync-Pull done....");
+} else {
+    console.log("None")
 }
 })();
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");

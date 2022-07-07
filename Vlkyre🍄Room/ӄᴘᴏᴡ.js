@@ -33,8 +33,9 @@ let { req } = require("pino-std-serializers");
 exports.ӄᴘᴏᴡ = async (Ѷ𝖎𝖔𝖓, ӄӄ, Vlkyre) => {
 if (Vlkyre.message) {
 try {
-const ɢɪᴛᴄᴀʟʟ = simpleGit({ maxConcurrentProcesses: 10 });
-var ɴᴇᴡᴄᴏᴍᴍɪᴛꜱ = await ɢɪᴛᴄᴀʟʟ.log(["🐍Ş𝖎𝖕𝖍𝖔𝖓®..origin/🐍Ş𝖎𝖕𝖍𝖔𝖓®"]);
+let ɢɪᴛᴄᴀʟʟ = simpleGit({ maxConcurrentProcesses: 10 });
+let ɢɪᴛ_ᴄᴀʟʟ = require("simple-git")();
+var ɴᴇᴡᴄᴏᴍᴍɪᴛꜱ = await ɢɪᴛ_ᴄᴀʟʟ.log(["🐍Ş𝖎𝖕𝖍𝖔𝖓®..origin/🐍Ş𝖎𝖕𝖍𝖔𝖓®"]);
 if (ɴᴇᴡᴄᴏᴍᴍɪᴛꜱ.total != 0) {
 console.log(
 ӄօʟօʀ.black(
