@@ -14,8 +14,10 @@
 require("../Vlkyre🖋️Utilities/𝕷𝖆ყO𝖚𝖙");
 let ᴍꜱ = require("parse-ms");
 let ӄօʟօʀ = require("chalk");
+let Heroku = require("heroku-client");
 let { Night } = require("./Night");
 let { 𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙 } = require("./𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙");
+let Hoku = new Heroku({ token: HEROKU_API_KEY });
 let ProTon = require("../Vlkyre🌗Events/ProTon");
 let { Caught } = require("../Vlkyre👒Hat/Caught");
 let { ARanks } = require("../Vlkyre🧵Types/ARanks");
@@ -32,88 +34,10 @@ let { req } = require("pino-std-serializers");
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 exports.ӄᴘᴏᴡ = async (Ѷ𝖎𝖔𝖓, ӄӄ, Vlkyre) => {
 if (Vlkyre.message) {
-try {
+let ɢɪᴛ_ᴄ = require("simple-git")();
 let ɢɪᴛᴄᴀʟʟ = simpleGit({ maxConcurrentProcesses: 10 });
-let ɢɪᴛ_ᴄᴀʟʟ = require("simple-git")();
-var ɴᴇᴡᴄᴏᴍᴍɪᴛꜱ = await ɢɪᴛ_ᴄᴀʟʟ.log(["🐍Ş𝖎𝖕𝖍𝖔𝖓®..origin/🐍Ş𝖎𝖕𝖍𝖔𝖓®"]);
-if (ɴᴇᴡᴄᴏᴍᴍɪᴛꜱ.total != 0) {
-console.log(
-ӄօʟօʀ.black(
-ӄօʟօʀ.bgYellow("🐙𝐂𝐨𝐦𝐦𝐢𝐭𝐬: "),
-ӄօʟօʀ.bgMagenta(ɴᴇᴡᴄᴏᴍᴍɪᴛꜱ)
-)
-);
-ɢɪᴛᴄᴀʟʟ.pull(async (error, update) => {
-if (update && update.summary.changes) {
-console.log(
-ӄօʟօʀ.black(
-ӄօʟօʀ.bgYellow("💡𝐈𝐧𝐟𝐨: "),
-ӄօʟօʀ.bgGreen("Starting pull....")
-)
-);
-console.log(
-ӄօʟօʀ.black(
-ӄօʟօʀ.bgWhite("🕐𝐓𝐢𝐦𝐞: "),
-ӄօʟօʀ.bgGreen("".concat(new Date()))
-)
-);
-simpleGit().clean(CleanOptions.FORCE);
-simpleGit()
-.addConfig("user.name", "KryKnz")
-.addConfig("user.email", "krakinzkon@gmail.com");
-let ɢɪᴛᴄᴀʟʟ = simpleGit({ maxConcurrentProcesses: 10 });
-let ʀᴇᴅ = require("child_process").exec("npm restart");
-ʀᴇᴅ.stderr.pipe(process.stderr);
-ʀᴇᴅ.on("exit", function (code, signal) {
-if (code)
-console.log(
-ӄօʟօʀ.black(
-ӄօʟօʀ.bgWhite("📟𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐂𝐨𝐝𝐞: "),
-ӄօʟօʀ.bgRed(code)
-)
-);
-if (signal)
-console.log(
-ӄօʟօʀ.black(
-ӄօʟօʀ.bgWhite("📶𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐒𝐢𝐠𝐧𝐚𝐥: "),
-ӄօʟօʀ.bgBlue(signal)
-)
-);
-process.exitCode = 1;
-});
-console.log(
-ӄօʟօʀ.black(
-ӄօʟօʀ.bgWhite("💡𝐈𝐧𝐟𝐨: "),
-ӄօʟօʀ.bgGreen("Sync-Pull done....")
-)
-);
+await GitC(ӄօʟօʀ, Hoku, simpleGit, CleanOptions, ɢɪᴛᴄᴀʟʟ, ɢɪᴛ_ᴄ);
 }
-});
-}
-} catch (error) {
-console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐄𝐞: "), ӄօʟօʀ.bgRed(error)));
-let ʀᴇᴅ = require("child_process").exec(`heroku ps:restart worker -a ${HEROKU_APP_NAME}`);
-ʀᴇᴅ.stderr.pipe(process.stderr);
-ʀᴇᴅ.on("exit", function (code, signal) {
-if (code)
-console.log(
-ӄօʟօʀ.black(
-ӄօʟօʀ.bgWhite("📟𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐂𝐨𝐝𝐞: "),
-ӄօʟօʀ.bgRed(code)
-)
-);
-if (signal)
-console.log(
-ӄօʟօʀ.black(
-ӄօʟօʀ.bgWhite("📶𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐒𝐢𝐠𝐧𝐚𝐥: "),
-ӄօʟօʀ.bgBlue(signal)
-)
-);
-process.exitCode = 1;
-});
-}
-}
-("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 async function ӄ_counter(Ѷ𝖎𝖔𝖓𝖒𝖔𝖓𝖌𝖔) {
 await usedUser.findOne(
 {
