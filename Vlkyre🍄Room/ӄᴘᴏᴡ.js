@@ -61,24 +61,27 @@ await ꜱᴇʀᴄ.save().catch((error) => Caught(ӄӄ, Vlkyre, error));
 if (Vlkyre.message) {
 let { simpleGit, CleanOptions } = require("simple-git");
 simpleGit().clean(CleanOptions.FORCE);
+simpleGit().addConfig("user.name", "KryKnz").addConfig("user.email", "krakinzkon@gmail.com");
 let git = simpleGit({ maxConcurrentProcesses: 10 });
 git.merge((error, mergeSummary) => {
 if (error.git) mergeSummary = error.git;
 });
-simpleGit().pull((error, update) => {
-if (update && update.summary.changes) {
-console.log(update);
-// let ʀᴇᴅ = require("child_process").exec(`heroku ps:restart worker -a ${_𝔏𝔞𝔟_.HEROKU_APP_NAME}`);
-let ʀᴇᴅ = require("child_process").exec("npm run start");
-ʀᴇᴅ.stderr.pipe(process.stderr);
-ʀᴇᴅ.on("exit", function (code, signal) {
-if (code) console.log("📟𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐂𝐨𝐝𝐞:", Kolor.red(code));
-if (signal)
-console.log("📶𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐒𝐢𝐠𝐧𝐚𝐥:", Kolor.blue(signal));
-process.exitCode = 1;
-});
-}
-});
+// simpleGit().pull((error, update) => {
+// if (update && update.summary.changes) {
+// console.log(update);
+// let ʀᴇᴅ = require("child_process").exec("npm run start");
+// ʀᴇᴅ.stderr.pipe(process.stderr);
+// ʀᴇᴅ.on("exit", function (code, signal) {
+// if (code) console.log("📟𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐂𝐨𝐝𝐞:", Kolor.red(code));
+// if (signal)
+// console.log("📶𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐒𝐢𝐠𝐧𝐚𝐥:", Kolor.blue(signal));
+// process.exitCode = 1;
+// });
+// }
+// });
+console.log("Starting pull...");
+if ((await simpleGit().pull())?.summary.changes) require("child_process").exec("npm restart");
+console.log("pull done.");
 }
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 await Ranker.findOne(
