@@ -63,7 +63,7 @@ body,
 let ӄօʟօʀ = require("chalk");
 let ɢɪᴛ_ᴄ = require("simple-git")();
 let Heroku = require("heroku-client");
-let { simpleGit} = require("simple-git");
+let { simpleGit } = require("simple-git");
 let Hoku = new Heroku({ token: HEROKU_API_KEY });
 let ɢɪᴛᴄᴀʟʟ = simpleGit({ maxConcurrentProcesses: 10 });
 try {
