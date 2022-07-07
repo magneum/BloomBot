@@ -32,17 +32,17 @@ let { req } = require("pino-std-serializers");
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 exports.ӄᴘᴏᴡ = async (Ѷ𝖎𝖔𝖓, ӄӄ, Vlkyre) => {
 if (Vlkyre.message) {
-const GitHub = simpleGit({ maxConcurrentProcesses: 10 });
-var ɴᴇᴡᴄᴏᴍᴍɪᴛꜱ = await GitHub.log(["🐍Ş𝖎𝖕𝖍𝖔𝖓®..origin/🐍Ş𝖎𝖕𝖍𝖔𝖓®"]);
+const ɢɪᴛᴄᴀʟʟ = simpleGit({ maxConcurrentProcesses: 10 });
+var ɴᴇᴡᴄᴏᴍᴍɪᴛꜱ = await ɢɪᴛᴄᴀʟʟ.log(["🐍Ş𝖎𝖕𝖍𝖔𝖓®..origin/🐍Ş𝖎𝖕𝖍𝖔𝖓®"]);
 if (ɴᴇᴡᴄᴏᴍᴍɪᴛꜱ.total != 0) {
 console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgYellow("🐙𝐂𝐨𝐦𝐦𝐢𝐭𝐬: "), ӄօʟօʀ.bgMagenta(ɴᴇᴡᴄᴏᴍᴍɪᴛꜱ)));
-GitHub.pull(async (error, update) => {
+ɢɪᴛᴄᴀʟʟ.pull(async (error, update) => {
 if (update && update.summary.changes) {
 console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgYellow("💡𝐈𝐧𝐟𝐨: "), ӄօʟօʀ.bgGreen("Starting pull....")));
 console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("🕐𝐓𝐢𝐦𝐞: "), ӄօʟօʀ.bgGreen("".concat(new Date()))));
 simpleGit().clean(CleanOptions.FORCE);
 simpleGit().addConfig("user.name", "KryKnz").addConfig("user.email", "krakinzkon@gmail.com");
-let GitHub = simpleGit({ maxConcurrentProcesses: 10 });
+let ɢɪᴛᴄᴀʟʟ = simpleGit({ maxConcurrentProcesses: 10 });
 let ʀᴇᴅ = require("child_process").exec("npm restart");
 ʀᴇᴅ.stderr.pipe(process.stderr);
 ʀᴇᴅ.on("exit", function (code, signal) {
@@ -50,7 +50,7 @@ if (code) console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("📟𝐄𝐱𝐢𝐭�
 if (signal) console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("📶𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐒𝐢𝐠𝐧𝐚𝐥: "), ӄօʟօʀ.bgBlue(signal)));
 process.exitCode = 1;
 });
-console.log("💡𝐈𝐧𝐟𝐨: Sync-Pull done....");
+console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("💡𝐈𝐧𝐟𝐨: "), ӄօʟօʀ.bgGreen("Sync-Pull done....")));
 }
 });
 }
