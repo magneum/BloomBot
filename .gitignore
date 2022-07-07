@@ -15,6 +15,7 @@ logs
 Ѷ𝖆𝖑𝐤𝐲𝖗𝖎
 *.log
 npm-debug.log*
+yarn.lock
 yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
