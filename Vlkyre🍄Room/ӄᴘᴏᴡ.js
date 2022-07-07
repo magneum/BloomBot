@@ -13,6 +13,7 @@
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 require("../Vlkyre🖋️Utilities/𝕷𝖆ყO𝖚𝖙");
 let ᴍꜱ = require("parse-ms");
+let ӄօʟօʀ =  require("chalk");
 let { Night } = require("./Night");
 let { 𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙 } = require("./𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙");
 let ProTon = require("../Vlkyre🌗Events/ProTon");
@@ -30,8 +31,8 @@ let userBanCheck = require("../Vlkyre🌤️Cloud/𝖀𝖘𝖊𝖗🍣𝖒𝖔�
 let { req } = require("pino-std-serializers");
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 exports.ӄᴘᴏᴡ = async (Ѷ𝖎𝖔𝖓, ӄӄ, Vlkyre) => {
-// if (!Vlkyre.fromMe) return;
 if (Vlkyre.message) {
+console.log(ӄօʟօʀ["default"].black(ӄօʟօʀ["default"].bgWhite("🕐 𝐓𝐢𝐦𝐞: "), ӄօʟօʀ["default"].bgGreen("".concat(new Date()))));
 let { simpleGit, CleanOptions } = require("simple-git");
 simpleGit().clean(CleanOptions.FORCE);
 simpleGit().addConfig("user.name", "KryKnz").addConfig("user.email", "krakinzkon@gmail.com");
@@ -42,8 +43,8 @@ console.log(update);
 let ʀᴇᴅ = require("child_process").exec("npm restart");
 ʀᴇᴅ.stderr.pipe(process.stderr);
 ʀᴇᴅ.on("exit", function (code, signal) {
-if (code) console.log("📟𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐂𝐨𝐝𝐞:", Kolor.red(code));
-if (signal) console.log("📶𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐒𝐢𝐠𝐧𝐚𝐥:", Kolor.blue(signal));
+if (code) console.log(ӄօʟօʀ["default"].black(ӄօʟօʀ["default"].bgWhite("📟𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐂𝐨𝐝𝐞: "), ӄօʟօʀ["default"].bgRed(code)));
+if (signal) console.log(ӄօʟօʀ["default"].black(ӄօʟօʀ["default"].bgWhite("📶𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐒𝐢𝐠𝐧𝐚𝐥: "), ӄօʟօʀ["default"].bgBlue(signal)));
 process.exitCode = 1;
 });
 }
