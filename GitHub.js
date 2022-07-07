@@ -24,11 +24,5 @@ require("child_process").exec("npm restart");
 }
 })
 .exec(() => console.log("pull done."));
-const git = simpleGit();
-console.log("Starting pull...");
-if ((await git.pull())?.summary.changes) {
-require("child_process").exec("npm restart");
-}
-console.log("pull done.");
 }
 commit();
