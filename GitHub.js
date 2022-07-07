@@ -1,8 +1,13 @@
-let simpleGit = require("simple-git")();
-let Raw = simpleGit.fetch();
-let newCommits = simpleGit.log(["🐍Ş𝖎𝖕𝖍𝖔𝖓®..origin/🐍Ş𝖎𝖕𝖍𝖔𝖓®"]);
-if (newCommits.total != 0) {
-  console.log(newCommits);
-} else {
-  console.log("Null");
-}
+(async () => {
+  const { simpleGit, CleanOptions } = require("simple-git");
+  simpleGit().clean(CleanOptions.FORCE);
+  const git = simpleGit({ maxConcurrentProcesses: 10 });
+  git.merge((err, mergeSummary) => {
+    if (err.git) mergeSummary = err.git;
+  });
+  simpleGit().pull((err, update) => {
+    if (update && update.summary.changes) {
+      require("child_process").exec("npm restart");
+    }
+  });
+})();
