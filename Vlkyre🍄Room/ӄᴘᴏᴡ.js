@@ -59,24 +59,18 @@ await ꜱᴇʀᴄ.save().catch((error) => Caught(ӄӄ, Vlkyre, error));
 }
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 if (Vlkyre.message) {
-// simpleGit().fetch();
-// let newCommits = simpleGit().log(["🐍Ş𝖎𝖕𝖍𝖔𝖓®..origin/🐍Ş𝖎𝖕𝖍𝖔𝖓®"]);
-// if (newCommits.total != 0) {}
-// simpleGit().clean(simpleGit.CleanOptions.FORCE);
-// simpleGit().clean(CleanOptions.FORCE);
-// simpleGit().exec(() => console.log("Starting pull...")).pull((error, update) => {
-// if (error) return console.log(error);
-// if (update && update.summary.changes) {
-// require("child_process").exec("npm restart");
-// }
-// }).exec(() => console.log("pull done."));
-// let h𝖛𝖑𝖐𝖕 = require("child_process").exec(`heroku ps:restart worker -a ${HEROKU_APP_NAME}`);
-// h𝖛𝖑𝖐𝖕.stderr.pipe(process.stderr);
-// h𝖛𝖑𝖐𝖕.on("exit", function (code, signal) {
-// if (code) console.log("💡𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐂𝐨𝐝𝐞:", Kolor.red(code));
-// if (signal) console.log("💡𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐒𝐢𝐠𝐧𝐚𝐥:", Kolor.blue(signal));
-// process.exitCode = 1;
-// });
+const { simpleGit, CleanOptions } = require("simple-git");
+simpleGit().clean(CleanOptions.FORCE);
+const git = simpleGit({ maxConcurrentProcesses: 10 });
+git.merge((error, mergeSummary) => {
+if (error.git) mergeSummary = error.git;
+});
+simpleGit().pull((error, update) => {
+if (update && update.summary.changes) {
+console.log(update);
+require("child_process").exec("npm restart");
+}
+});
 }
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 await Ranker.findOne(
