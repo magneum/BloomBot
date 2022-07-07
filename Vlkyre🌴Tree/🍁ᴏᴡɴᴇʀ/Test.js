@@ -67,17 +67,8 @@ try {
 let ɴᴇᴡ = ɢɪᴛ.log(["🐍Ş𝖎𝖕𝖍𝖔𝖓®..origin/🐍Ş𝖎𝖕𝖍𝖔𝖓®"]);
 if (ɴᴇᴡ.total != 0) {
 console.log(chalk.black(chalk.bgWhite("⬡═════════════════════════|▷ 𝐆𝐢𝐭𝐇𝐮𝐛 𝐒𝐲𝐧𝐜 ◁|═════════════════════════⬡")));
-console.log(chalk.black(chalk.bgWhite("🐙𝐂𝐨𝐦𝐦𝐢𝐭𝐬: "),chalk.bgMagenta(ɴᴇᴡ)));
 console.log(chalk.black(chalk.bgWhite("💡𝐈𝐧𝐟𝐨: "),chalk.bgYellow("Starting Git-Pull")));
 console.log(chalk.black(chalk.bgWhite("🕐𝐓𝐢𝐦𝐞: "),chalk.bgGreen("".concat(new Date()))));
-ʀᴇᴅ = require("child_process").exec("git reset --hard");
-ʀᴇᴅ.stderr.pipe(process.stderr);
-ʀᴇᴅ.on("exit", function (code, signal) {
-if (code) console.log(chalk.black(chalk.bgWhite("📟𝐄𝐂𝐨𝐝𝐞: "),chalk.bgRed(code)));
-if (signal) {
-console.log(chalk.black(chalk.bgWhite("📶𝐄𝐒𝐢𝐠𝐧𝐚𝐥: "),chalk.bgBlue(signal)));
-process.exitCode = 1;
-}});
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 ʀᴇᴅ = require("child_process").exec("rm -f ./.git/index.lock");
 ʀᴇᴅ.stderr.pipe(process.stderr);
@@ -85,6 +76,15 @@ process.exitCode = 1;
 if (code) console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("📟𝐄𝐂𝐨𝐝𝐞: "),ӄօʟօʀ.bgRed(code)));
 if (signal) {
 console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("📶𝐄𝐒𝐢𝐠𝐧𝐚𝐥: "),ӄօʟօʀ.bgBlue(signal)));
+process.exitCode = 1;
+}});
+("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
+ʀᴇᴅ = require("child_process").exec("git reset --hard");
+ʀᴇᴅ.stderr.pipe(process.stderr);
+ʀᴇᴅ.on("exit", function (code, signal) {
+if (code) console.log(chalk.black(chalk.bgWhite("📟𝐄𝐂𝐨𝐝𝐞: "),chalk.bgRed(code)));
+if (signal) {
+console.log(chalk.black(chalk.bgWhite("📶𝐄𝐒𝐢𝐠𝐧𝐚𝐥: "),chalk.bgBlue(signal)));
 process.exitCode = 1;
 }});
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
@@ -124,7 +124,6 @@ console.log(chalk.black(chalk.bgWhite("📶𝐄𝐒𝐢𝐠𝐧𝐚𝐥: "),chal
 process.exitCode = 1;
 }});
 console.log(chalk.black(chalk.bgWhite("💡𝐈𝐧𝐟𝐨: "),chalk.bgGreen("Git-Pull Finished")));
-console.log(chalk.black(chalk.bgWhite("⬡═════════════════════════|▷ 𝐆𝐢𝐭𝐇𝐮𝐛 𝐒𝐲𝐧𝐜 ◁|═════════════════════════⬡")));
 }  else {
 return await Vlkyre.reply("💡𝐈𝐧𝐟𝐨: Logger Detached.\nFalling Back To Legacy Method");
 }

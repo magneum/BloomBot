@@ -39,7 +39,7 @@ if (Vlkyre.message) {
 try {
 let ɴᴇᴡ = await ɢɪᴛᴄᴀʟʟ.log(["🐍Ş𝖎𝖕𝖍𝖔𝖓®..origin/🐍Ş𝖎𝖕𝖍𝖔𝖓®"]);
 if (ɴᴇᴡ.total != 0) {
-await GitSync(ӄօʟօʀ, ɢɪᴛᴄᴀʟʟ, ɴᴇᴡ);
+await GitSync(ӄօʟօʀ, ɢɪᴛᴄᴀʟʟ);
 } else {
 console.clear();
 }
