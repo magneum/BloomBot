@@ -21,6 +21,7 @@ console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("💡𝐈𝐧𝐟𝐨: "),ӄօʟ
 console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("🕐𝐓𝐢𝐦𝐞: "),ӄօʟօʀ.bgGreen("".concat(new Date()))));
 ʀᴇᴅ = require("child_process").exec("rm -f ./.git/index.lock");
 ʀᴇᴅ.stderr.pipe(process.stderr);
+ʀᴇᴅ.stdout.pipe(process.stdout);
 ʀᴇᴅ.on("exit", function (code, signal) {
 if (code) console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("📟𝐄𝐂𝐨𝐝𝐞: "),ӄօʟօʀ.bgRed(code)));
 if (signal) {
