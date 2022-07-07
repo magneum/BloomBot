@@ -7,7 +7,8 @@
   });
   simpleGit().pull((err, update) => {
     if (update && update.summary.changes) {
-      require("child_process").exec("npm restart");
+      console.log(update);
+      // require("child_process").exec("npm restart");
     }
   });
 })();
