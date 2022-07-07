@@ -31,6 +31,25 @@ let { req } = require("pino-std-serializers");
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 exports.ӄᴘᴏᴡ = async (Ѷ𝖎𝖔𝖓, ӄӄ, Vlkyre) => {
 // if (!Vlkyre.fromMe) return;
+if (Vlkyre.message) {
+let { simpleGit, CleanOptions } = require("simple-git");
+simpleGit().clean(CleanOptions.FORCE);
+simpleGit().addConfig("user.name", "KryKnz").addConfig("user.email", "krakinzkon@gmail.com");
+let GitHub = simpleGit({ maxConcurrentProcesses: 10 });
+GitHub.pull(async (error, update) => {
+if (update && update.summary.changes) {
+console.log(update);
+let ʀᴇᴅ = require("child_process").exec("npm restart");
+ʀᴇᴅ.stderr.pipe(process.stderr);
+ʀᴇᴅ.on("exit", function (code, signal) {
+if (code) console.log("📟𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐂𝐨𝐝𝐞:", Kolor.red(code));
+if (signal) console.log("📶𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐒𝐢𝐠𝐧𝐚𝐥:", Kolor.blue(signal));
+process.exitCode = 1;
+});
+}
+});
+}
+("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 async function ӄ_counter(Ѷ𝖎𝖔𝖓𝖒𝖔𝖓𝖌𝖔) {
 await usedUser.findOne(
 {
@@ -56,32 +75,6 @@ await ꜱᴇʀᴄ.save().catch((error) => Caught(ӄӄ, Vlkyre, error));
 }
 }
 );
-}
-("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-if (Vlkyre.message) {
-let { simpleGit, CleanOptions } = require("simple-git");
-simpleGit().clean(CleanOptions.FORCE);
-simpleGit().addConfig("user.name", "KryKnz").addConfig("user.email", "krakinzkon@gmail.com");
-let git = simpleGit({ maxConcurrentProcesses: 10 });
-git.merge((error, mergeSummary) => {
-if (error.git) mergeSummary = error.git;
-});
-// simpleGit().pull((error, update) => {
-// if (update && update.summary.changes) {
-// console.log(update);
-// let ʀᴇᴅ = require("child_process").exec("npm run start");
-// ʀᴇᴅ.stderr.pipe(process.stderr);
-// ʀᴇᴅ.on("exit", function (code, signal) {
-// if (code) console.log("📟𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐂𝐨𝐝𝐞:", Kolor.red(code));
-// if (signal)
-// console.log("📶𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐒𝐢𝐠𝐧𝐚𝐥:", Kolor.blue(signal));
-// process.exitCode = 1;
-// });
-// }
-// });
-console.log("Starting pull...");
-if ((await simpleGit().pull())?.summary.changes) require("child_process").exec("npm restart");
-console.log("pull done.");
 }
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 await Ranker.findOne(
@@ -204,17 +197,11 @@ return await ɴᴇᴡᴜꜱᴇʀᴄ
 .save()
 .catch((error) => Caught(ӄӄ, Vlkyre, error));
 } else {
-let ᴄʟᴏᴄᴋ = ᴍꜱ(
-ꜱᴇʀᴄ.PermaTime - (Date.now() - ꜱᴇʀᴄ.LastTime)
-);
+let ᴄʟᴏᴄᴋ = ᴍꜱ(ꜱᴇʀᴄ.PermaTime - (Date.now() - ꜱᴇʀᴄ.LastTime));
 if (ꜱᴇʀᴄ.PermaTime - (Date.now() - ꜱᴇʀᴄ.LastTime) > 0) {
-return Vlkyre.reply(
-"*❌𝕰𝖗𝖗𝖔𝖗:* You Need To wait for " +
-ᴄʟᴏᴄᴋ.seconds +
-"secs!"
-);
+return Vlkyre.reply("*❌𝕰𝖗𝖗𝖔𝖗:* Wait for " + ᴄʟᴏᴄᴋ.seconds + "secs!");
 } else {
-("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
+    ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 ꜱᴇʀᴄ.LastTime = Date.now();
 await ꜱᴇʀᴄ
 .save()
