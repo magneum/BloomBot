@@ -30,142 +30,142 @@ let userBanCheck = require("../Vlkyre🌤️Cloud/𝖀𝖘𝖊𝖗🍣𝖒𝖔�
 const { req } = require("pino-std-serializers");
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 exports.ӄᴘᴏᴡ = async (Ѷ𝖎𝖔𝖓, ӄӄ, Vlkyre) => {
-  // if (!Vlkyre.fromMe) return;
-  async function ӄ_counter(Ѷ𝖎𝖔𝖓𝖒𝖔𝖓𝖌𝖔) {
-    await usedUser.findOne(
-      {
-        User: Vlkyre.sender,
-      },
-      async (error, ꜱᴇʀᴄ) => {
-        if (error) return Caught(ӄӄ, Vlkyre, error);
-        if (!ꜱᴇʀᴄ) {
-          let ɴᴇᴡᴜꜱᴇʀᴄ = new usedUser({
-            User: Vlkyre.sender,
-            Total: Ѷ𝖎𝖔𝖓𝖒𝖔𝖓𝖌𝖔,
-            LastTime: Date.now(),
-            PermaTime: 10000,
-          });
-          return await ɴᴇᴡᴜꜱᴇʀᴄ
-            .save()
-            .catch((error) => Caught(ӄӄ, Vlkyre, error));
-        } else {
-          ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-          ꜱᴇʀᴄ.Total = ꜱᴇʀᴄ.Total + Ѷ𝖎𝖔𝖓𝖒𝖔𝖓𝖌𝖔;
-          ꜱᴇʀᴄ.LastTime = Date.now();
-          await ꜱᴇʀᴄ.save().catch((error) => Caught(ӄӄ, Vlkyre, error));
-        }
-      }
-    );
-  }
-  ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-  if (Vlkyre.message) {
-    const { simpleGit, CleanOptions } = require("simple-git");
-    simpleGit().clean(CleanOptions.FORCE);
-    const git = simpleGit({ maxConcurrentProcesses: 10 });
-    git.merge((error, mergeSummary) => {
-      if (error.git) mergeSummary = error.git;
-    });
-    simpleGit().pull((error, update) => {
-      if (update && update.summary.changes) {
-        console.log(update);
-        require("child_process").exec("npm restart");
-      }
-    });
-  }
-  ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-  await Ranker.findOne(
-    {
-      serverID: Vlkyre.chatID,
-    },
-    async (error, userRank) => {
-      if (error) return Caught(ӄӄ, Vlkyre, error);
-      if (!userRank) return;
-      await ARanks(Vlkyre, ӄӄ, Caught, Vlkyre.A𝖗𝖌𝖘);
-    }
-  );
-  ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-  await ProTon.Vprtn(ӄӄ, Vlkyre);
-  if (
-    Vlkyre.message &&
-    !Vlkyre.isSenderAdmin &&
-    Vlkyre.isBotAdmin &&
-    !Vlkyre.isSenderTUF
-  ) {
-    await DenyLink(
-      Vlkyre,
-      ӄӄ,
-      Caught,
-      Image_Button,
-      Vlkyre.A𝖗𝖌𝖘,
-      LinkList,
-      Vlkyre.Body
-    );
-  }
-  ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-  await userBanCheck.findOne(
-    {
-      ID: Vlkyre.sender,
-    },
-    async (error, userBCheck) => {
-      if (error) return console.log(error);
-      await userBanCheck.findOne(
-        {
-          ID: Vlkyre.chatID,
-        },
-        async (error, userGCheck) => {
-          if (error) return console.log(error);
-          if (userBCheck && !Vlkyre.fromMe && !Vlkyre.isSenderTUF) return;
-          if (userGCheck && !Vlkyre.fromMe && !Vlkyre.isSenderTUF) return;
-          ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-          if (Vlkyre.isCommand) {
-            let MeA = [];
-            let MeB = [];
-            let MeC = [];
-            let MeD = [];
-            let MeE = [];
-            let ʀᴇꜱᴘᴏɴꜱᴇ1 = await ӄӄ.groupInviteCode("120363020792949649@g.us");
-            let ʀᴇꜱᴘᴏɴꜱᴇ2 = await ӄӄ.groupInviteCode("120363039223842047@g.us");
-            let ʀᴇꜱᴘᴏɴꜱᴇ3 = await ӄӄ.groupInviteCode("120363024871653603@g.us");
-            let ʀᴇꜱᴘᴏɴꜱᴇ4 = await ӄӄ.groupInviteCode("120363042762307739@g.us");
-            let ʀᴇꜱᴘᴏɴꜱᴇ5 = await ӄӄ.groupInviteCode("120363022161584857@g.us");
-            let ʀᴇꜱᴘᴏɴꜱᴇA = await ӄӄ.groupMetadata("120363020792949649@g.us");
-            let ʀᴇꜱᴘᴏɴꜱᴇB = await ӄӄ.groupMetadata("120363039223842047@g.us");
-            let ʀᴇꜱᴘᴏɴꜱᴇC = await ӄӄ.groupMetadata("120363024871653603@g.us");
-            let ʀᴇꜱᴘᴏɴꜱᴇD = await ӄӄ.groupMetadata("120363042762307739@g.us");
-            let ʀᴇꜱᴘᴏɴꜱᴇE = await ӄӄ.groupMetadata("120363022161584857@g.us");
-            for (let i = 0; i < ʀᴇꜱᴘᴏɴꜱᴇA.participants.length; i++)
-              MeA[i] = ʀᴇꜱᴘᴏɴꜱᴇA.participants[i].id;
-            for (let i = 0; i < ʀᴇꜱᴘᴏɴꜱᴇB.participants.length; i++)
-              MeB[i] = ʀᴇꜱᴘᴏɴꜱᴇB.participants[i].id;
-            for (let i = 0; i < ʀᴇꜱᴘᴏɴꜱᴇC.participants.length; i++)
-              MeC[i] = ʀᴇꜱᴘᴏɴꜱᴇC.participants[i].id;
-            for (let i = 0; i < ʀᴇꜱᴘᴏɴꜱᴇD.participants.length; i++)
-              MeD[i] = ʀᴇꜱᴘᴏɴꜱᴇD.participants[i].id;
-            for (let i = 0; i < ʀᴇꜱᴘᴏɴꜱᴇE.participants.length; i++)
-              MeE[i] = ʀᴇꜱᴘᴏɴꜱᴇE.participants[i].id;
-            ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-            if (
-              !Vlkyre.fromMe &&
-              Vlkyre.isCommand &&
-              !Vlkyre.isSenderTUF &&
-              !Vlkyre.Body.includes("how") &&
-              !Vlkyre.Body.includes("help") &&
-              !Vlkyre.Body.includes("menu") &&
-              !Vlkyre.Body.includes("support") &&
-              !MeA.includes(Vlkyre.sender) &&
-              !MeB.includes(Vlkyre.sender) &&
-              !MeC.includes(Vlkyre.sender) &&
-              !MeD.includes(Vlkyre.sender) &&
-              !MeE.includes(Vlkyre.sender)
-            ) {
-              /*
-               *🕊️Grp A:* chat.whatsapp.com/${ʀᴇꜱᴘᴏɴꜱᴇ1}
-               *🕊️Grp B:* chat.whatsapp.com/${ʀᴇꜱᴘᴏɴꜱᴇ2}
-               *🕊️Grp C:* chat.whatsapp.com/${ʀᴇꜱᴘᴏɴꜱᴇ3}
-               *🕊️Grp D:* chat.whatsapp.com/${ʀᴇꜱᴘᴏɴꜱᴇ4}
-               *🕊️Grp E:* chat.whatsapp.com/${ʀᴇꜱᴘᴏɴꜱᴇ5}
-               */
-              return await Vlkyre.reply(`╔══『 𝐏𝐫𝐨𝐟𝐢𝐥𝐞𝐫® 』
+// if (!Vlkyre.fromMe) return;
+async function ӄ_counter(Ѷ𝖎𝖔𝖓𝖒𝖔𝖓𝖌𝖔) {
+await usedUser.findOne(
+{
+User: Vlkyre.sender,
+},
+async (error, ꜱᴇʀᴄ) => {
+if (error) return Caught(ӄӄ, Vlkyre, error);
+if (!ꜱᴇʀᴄ) {
+let ɴᴇᴡᴜꜱᴇʀᴄ = new usedUser({
+User: Vlkyre.sender,
+Total: Ѷ𝖎𝖔𝖓𝖒𝖔𝖓𝖌𝖔,
+LastTime: Date.now(),
+PermaTime: 10000,
+});
+return await ɴᴇᴡᴜꜱᴇʀᴄ
+.save()
+.catch((error) => Caught(ӄӄ, Vlkyre, error));
+} else {
+("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
+ꜱᴇʀᴄ.Total = ꜱᴇʀᴄ.Total + Ѷ𝖎𝖔𝖓𝖒𝖔𝖓𝖌𝖔;
+ꜱᴇʀᴄ.LastTime = Date.now();
+await ꜱᴇʀᴄ.save().catch((error) => Caught(ӄӄ, Vlkyre, error));
+}
+}
+);
+}
+("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
+if (Vlkyre.message) {
+const { simpleGit, CleanOptions } = require("simple-git");
+simpleGit().clean(CleanOptions.FORCE);
+const git = simpleGit({ maxConcurrentProcesses: 10 });
+git.merge((error, mergeSummary) => {
+if (error.git) mergeSummary = error.git;
+});
+simpleGit().pull((error, update) => {
+if (update && update.summary.changes) {
+console.log(update);
+require("child_process").exec("npm restart");
+}
+});
+}
+("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
+await Ranker.findOne(
+{
+serverID: Vlkyre.chatID,
+},
+async (error, userRank) => {
+if (error) return Caught(ӄӄ, Vlkyre, error);
+if (!userRank) return;
+await ARanks(Vlkyre, ӄӄ, Caught, Vlkyre.A𝖗𝖌𝖘);
+}
+);
+("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
+await ProTon.Vprtn(ӄӄ, Vlkyre);
+if (
+Vlkyre.message &&
+!Vlkyre.isSenderAdmin &&
+Vlkyre.isBotAdmin &&
+!Vlkyre.isSenderTUF
+) {
+await DenyLink(
+Vlkyre,
+ӄӄ,
+Caught,
+Image_Button,
+Vlkyre.A𝖗𝖌𝖘,
+LinkList,
+Vlkyre.Body
+);
+}
+("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
+await userBanCheck.findOne(
+{
+ID: Vlkyre.sender,
+},
+async (error, userBCheck) => {
+if (error) return console.log(error);
+await userBanCheck.findOne(
+{
+ID: Vlkyre.chatID,
+},
+async (error, userGCheck) => {
+if (error) return console.log(error);
+if (userBCheck && !Vlkyre.fromMe && !Vlkyre.isSenderTUF) return;
+if (userGCheck && !Vlkyre.fromMe && !Vlkyre.isSenderTUF) return;
+("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
+if (Vlkyre.isCommand) {
+let MeA = [];
+let MeB = [];
+let MeC = [];
+let MeD = [];
+let MeE = [];
+let ʀᴇꜱᴘᴏɴꜱᴇ1 = await ӄӄ.groupInviteCode("120363020792949649@g.us");
+let ʀᴇꜱᴘᴏɴꜱᴇ2 = await ӄӄ.groupInviteCode("120363039223842047@g.us");
+let ʀᴇꜱᴘᴏɴꜱᴇ3 = await ӄӄ.groupInviteCode("120363024871653603@g.us");
+let ʀᴇꜱᴘᴏɴꜱᴇ4 = await ӄӄ.groupInviteCode("120363042762307739@g.us");
+let ʀᴇꜱᴘᴏɴꜱᴇ5 = await ӄӄ.groupInviteCode("120363022161584857@g.us");
+let ʀᴇꜱᴘᴏɴꜱᴇA = await ӄӄ.groupMetadata("120363020792949649@g.us");
+let ʀᴇꜱᴘᴏɴꜱᴇB = await ӄӄ.groupMetadata("120363039223842047@g.us");
+let ʀᴇꜱᴘᴏɴꜱᴇC = await ӄӄ.groupMetadata("120363024871653603@g.us");
+let ʀᴇꜱᴘᴏɴꜱᴇD = await ӄӄ.groupMetadata("120363042762307739@g.us");
+let ʀᴇꜱᴘᴏɴꜱᴇE = await ӄӄ.groupMetadata("120363022161584857@g.us");
+for (let i = 0; i < ʀᴇꜱᴘᴏɴꜱᴇA.participants.length; i++)
+MeA[i] = ʀᴇꜱᴘᴏɴꜱᴇA.participants[i].id;
+for (let i = 0; i < ʀᴇꜱᴘᴏɴꜱᴇB.participants.length; i++)
+MeB[i] = ʀᴇꜱᴘᴏɴꜱᴇB.participants[i].id;
+for (let i = 0; i < ʀᴇꜱᴘᴏɴꜱᴇC.participants.length; i++)
+MeC[i] = ʀᴇꜱᴘᴏɴꜱᴇC.participants[i].id;
+for (let i = 0; i < ʀᴇꜱᴘᴏɴꜱᴇD.participants.length; i++)
+MeD[i] = ʀᴇꜱᴘᴏɴꜱᴇD.participants[i].id;
+for (let i = 0; i < ʀᴇꜱᴘᴏɴꜱᴇE.participants.length; i++)
+MeE[i] = ʀᴇꜱᴘᴏɴꜱᴇE.participants[i].id;
+("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
+if (
+!Vlkyre.fromMe &&
+Vlkyre.isCommand &&
+!Vlkyre.isSenderTUF &&
+!Vlkyre.Body.includes("how") &&
+!Vlkyre.Body.includes("help") &&
+!Vlkyre.Body.includes("menu") &&
+!Vlkyre.Body.includes("support") &&
+!MeA.includes(Vlkyre.sender) &&
+!MeB.includes(Vlkyre.sender) &&
+!MeC.includes(Vlkyre.sender) &&
+!MeD.includes(Vlkyre.sender) &&
+!MeE.includes(Vlkyre.sender)
+) {
+/*
+*🕊️Grp A:* chat.whatsapp.com/${ʀᴇꜱᴘᴏɴꜱᴇ1}
+*🕊️Grp B:* chat.whatsapp.com/${ʀᴇꜱᴘᴏɴꜱᴇ2}
+*🕊️Grp C:* chat.whatsapp.com/${ʀᴇꜱᴘᴏɴꜱᴇ3}
+*🕊️Grp D:* chat.whatsapp.com/${ʀᴇꜱᴘᴏɴꜱᴇ4}
+*🕊️Grp E:* chat.whatsapp.com/${ʀᴇꜱᴘᴏɴꜱᴇ5}
+*/
+return await Vlkyre.reply(`╔══『 𝐏𝐫𝐨𝐟𝐢𝐥𝐞𝐫® 』
 ║ *❣️ ɴᴀᴍᴇ:* ${Vlkyre.pushName || "No_Name"}
 ║ *⚡ ɪᴅ:* ${Vlkyre.chatID.split("@")[0]}
 ╚═══════╝
@@ -174,53 +174,53 @@ exports.ӄᴘᴏᴡ = async (Ѷ𝖎𝖔𝖓, ӄӄ, Vlkyre) => {
 ❗ 𝐕𝐄𝐑𝐓𝐈𝐅𝐈𝐂𝐀𝐓𝐈𝐎𝐍 ❗
 *Join Any Group Using Below Website and  get verified to use bot anywhere!*
 VlkyreAI.krakinzkon.repl.co`);
-            } else {
-              ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-              await usedUser.findOne(
-                {
-                  User: Vlkyre.sender,
-                },
-                async (error, ꜱᴇʀᴄ) => {
-                  if (error) return Caught(ӄӄ, Vlkyre, error);
-                  if (!ꜱᴇʀᴄ) {
-                    let ɴᴇᴡᴜꜱᴇʀᴄ = new usedUser({
-                      User: Vlkyre.sender,
-                      Total: 0,
-                      LastTime: 0,
-                      PermaTime: 15000,
-                    });
-                    return await ɴᴇᴡᴜꜱᴇʀᴄ
-                      .save()
-                      .catch((error) => Caught(ӄӄ, Vlkyre, error));
-                  } else {
-                    let ᴄʟᴏᴄᴋ = ᴍꜱ(
-                      ꜱᴇʀᴄ.PermaTime - (Date.now() - ꜱᴇʀᴄ.LastTime)
-                    );
-                    if (ꜱᴇʀᴄ.PermaTime - (Date.now() - ꜱᴇʀᴄ.LastTime) > 0) {
-                      return Vlkyre.reply(
-                        "*❌𝕰𝖗𝖗𝖔𝖗:* You Need To wait for " +
-                          ᴄʟᴏᴄᴋ.seconds +
-                          "secs!"
-                      );
-                    } else {
-                      ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-                      ꜱᴇʀᴄ.LastTime = Date.now();
-                      await ꜱᴇʀᴄ
-                        .save()
-                        .catch((error) => Caught(ӄӄ, Vlkyre, error));
-                      await ӄօʟօʀs(ӄӄ, Vlkyre);
-                      return await 𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙(Vlkyre, ӄӄ, ӄ_counter, Ѷ𝖎𝖔𝖓);
-                      // await Night(Vlkyre, ӄӄ, ӄ_counter, Ѷ𝖎𝖔𝖓, 𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙);
-                    }
-                  }
-                }
-              );
-            }
-          }
-        }
-      );
-    }
-  );
+} else {
+("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
+await usedUser.findOne(
+{
+User: Vlkyre.sender,
+},
+async (error, ꜱᴇʀᴄ) => {
+if (error) return Caught(ӄӄ, Vlkyre, error);
+if (!ꜱᴇʀᴄ) {
+let ɴᴇᴡᴜꜱᴇʀᴄ = new usedUser({
+User: Vlkyre.sender,
+Total: 0,
+LastTime: 0,
+PermaTime: 15000,
+});
+return await ɴᴇᴡᴜꜱᴇʀᴄ
+.save()
+.catch((error) => Caught(ӄӄ, Vlkyre, error));
+} else {
+let ᴄʟᴏᴄᴋ = ᴍꜱ(
+ꜱᴇʀᴄ.PermaTime - (Date.now() - ꜱᴇʀᴄ.LastTime)
+);
+if (ꜱᴇʀᴄ.PermaTime - (Date.now() - ꜱᴇʀᴄ.LastTime) > 0) {
+return Vlkyre.reply(
+"*❌𝕰𝖗𝖗𝖔𝖗:* You Need To wait for " +
+ᴄʟᴏᴄᴋ.seconds +
+"secs!"
+);
+} else {
+("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
+ꜱᴇʀᴄ.LastTime = Date.now();
+await ꜱᴇʀᴄ
+.save()
+.catch((error) => Caught(ӄӄ, Vlkyre, error));
+await ӄօʟօʀs(ӄӄ, Vlkyre);
+return await 𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙(Vlkyre, ӄӄ, ӄ_counter, Ѷ𝖎𝖔𝖓);
+// await Night(Vlkyre, ӄӄ, ӄ_counter, Ѷ𝖎𝖔𝖓, 𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙);
+}
+}
+}
+);
+}
+}
+}
+);
+}
+);
 };
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 // ╔⧉༻ [ Ѷ𝖑𝐤𝐲𝖗𝖊🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
