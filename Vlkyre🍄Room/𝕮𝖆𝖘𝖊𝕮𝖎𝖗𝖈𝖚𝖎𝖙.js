@@ -60,6 +60,7 @@ let { join } = require("../Vlkyre🌴Tree/🍁ᴏᴡɴᴇʀ/join");
 let { leave } = require("../Vlkyre🌴Tree/🍁ᴏᴡɴᴇʀ/leave");
 let { rules } = require("../Vlkyre🌴Tree/🍁ᴏᴡɴᴇʀ/rules");
 let { unban } = require("../Vlkyre🌴Tree/🍁ᴏᴡɴᴇʀ/unban");
+let { gitsync } = require("../Vlkyre🌴Tree/🍁ᴏᴡɴᴇʀ/gitsync");
 let { support } = require("../Vlkyre🌴Tree/🍁ᴏᴡɴᴇʀ/support");
 let { bcgroup } = require("../Vlkyre🌴Tree/🍁ᴏᴡɴᴇʀ/bcgroup");
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
@@ -637,6 +638,27 @@ await ӄ_counter(2);
 break;
 case "unban":
 await unban(
+ӄӄ,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "sync":
+case "update":
+case "latest":
+case "refresh":
+case "gitsync":
+await gitsync(
 ӄӄ,
 Vlkyre,
 Vlkyre.pushName,

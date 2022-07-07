@@ -271,6 +271,11 @@ caption: `❓𝐕𝐥𝐤𝐲𝐫𝐞: ɪꜱ ᴀ ᴡʜᴀᴛꜱᴀᴘᴘ ᴍᴜ�
 ╚═══════╝
 
 ╔══『 👑𝐎𝐖𝐍𝐄𝐑_𝐒𝐔𝐃𝐎👑 』
+║☣️ ${prefix}sync
+║☣️ ${prefix}update
+║☣️ ${prefix}latest
+║☣️ ${prefix}efresh
+║☣️ ${prefix}gitsync
 ║☣️ ${prefix}ban
 ║☣️ ${prefix}unban
 ║☣️ ${prefix}reboot
