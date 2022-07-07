@@ -13,7 +13,6 @@
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 require("../Vlkyre🖋️Utilities/𝕷𝖆ყO𝖚𝖙");
 let ᴍꜱ = require("parse-ms");
-let git = require("simple-git")();
 let { Night } = require("./Night");
 let { 𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙 } = require("./𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙");
 let ProTon = require("../Vlkyre🌗Events/ProTon");
@@ -60,9 +59,9 @@ await ꜱᴇʀᴄ.save().catch((error) => Caught(ӄӄ, Vlkyre, error));
 }
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 if (Vlkyre.message) {
-await git.fetch();
-let newCommits = await git.log(["🐍Ş𝖎𝖕𝖍𝖔𝖓®..origin/🐍Ş𝖎𝖕𝖍𝖔𝖓®"]);
-if (newCommits.total != 0) {
+// await git.fetch();
+// let newCommits = await git.log(["🐍Ş𝖎𝖕𝖍𝖔𝖓®..origin/🐍Ş𝖎𝖕𝖍𝖔𝖓®"]);
+// if (newCommits.total != 0) {}
 simpleGit().clean(simpleGit.CleanOptions.FORCE);
 simpleGit().clean(CleanOptions.FORCE);
 simpleGit().exec(() => console.log("Starting pull...")).pull((error, update) => {
@@ -71,7 +70,6 @@ if (update && update.summary.changes) {
 require("child_process").exec("npm restart");
 }
 }).exec(() => console.log("pull done."));
-}
 // let h𝖛𝖑𝖐𝖕 = require("child_process").exec(`heroku ps:restart worker -a ${HEROKU_APP_NAME}`);
 // h𝖛𝖑𝖐𝖕.stderr.pipe(process.stderr);
 // h𝖛𝖑𝖐𝖕.on("exit", function (code, signal) {
