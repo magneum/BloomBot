@@ -152,21 +152,6 @@ caption: `❓𝐕𝐥𝐤𝐲𝐫𝐞: ɪꜱ ᴀ ᴡʜᴀᴛꜱᴀᴘᴘ ᴍᴜ�
 ║🎭 *ᴄʜᴀᴛɪᴅ:* ${Vlkyre.chatID.split("@")[0]}
 ╚═══════╝
 
-
-╔══『 🤩𝐍𝐄𝐖 𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒🤩 』
-║🔰 ${prefix}warn
-║💰 ${prefix}job
-║💰 ${prefix}work
-║💰 ${prefix}earn
-║🛍️ ${prefix}buy basic 
-║🛍️ ${prefix}buy bronze 
-║🛍️ ${prefix}buy silver 
-║🛍️ ${prefix}buy golden
-║🛍️ ${prefix}buy platinum 
-║🛍️ ${prefix}buy diamond
-╚═══════╝
-
-
 ╔══『 🐾𝐀𝐍𝐈𝐌𝐄_𝐌𝐀𝐍𝐆𝐀🐾 』
 ║🐾 ${prefix}anime
 ║🐾 ${prefix}manga
