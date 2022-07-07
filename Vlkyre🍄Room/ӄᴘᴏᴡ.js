@@ -32,18 +32,18 @@ let { req } = require("pino-std-serializers");
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 exports.ӄᴘᴏᴡ = async (Ѷ𝖎𝖔𝖓, ӄӄ, Vlkyre) => {
 if (Vlkyre.message) {
-console.log(ӄօʟօʀ["default"].black(ӄօʟօʀ["default"].bgWhite("🕐 𝐓𝐢𝐦𝐞: "), ӄօʟօʀ["default"].bgGreen("".concat(new Date()))));
+console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("🕐 𝐓𝐢𝐦𝐞: "), ӄօʟօʀ.bgGreen("".concat(new Date()))));
 simpleGit().clean(CleanOptions.FORCE);
 simpleGit().addConfig("user.name", "KryKnz").addConfig("user.email", "krakinzkon@gmail.com");
 let GitHub = simpleGit({ maxConcurrentProcesses: 10 });
 GitHub.pull(async (error, update) => {
 if (update && update.summary.changes) {
-if (code) console.log(ӄօʟօʀ["default"].black(ӄօʟօʀ["default"].bgWhite("📡𝐔𝐩𝐝𝐚𝐭𝐞𝐬: "), ӄօʟօʀ["default"].bgGreen(update)));
+if (code) console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("📡𝐔𝐩𝐝𝐚𝐭𝐞𝐬: "), ӄօʟօʀ.bgGreen(update)));
 let ʀᴇᴅ = require("child_process").exec("npm restart");
 ʀᴇᴅ.stderr.pipe(process.stderr);
 ʀᴇᴅ.on("exit", function (code, signal) {
-if (code) console.log(ӄօʟօʀ["default"].black(ӄօʟօʀ["default"].bgWhite("📟𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐂𝐨𝐝𝐞: "), ӄօʟօʀ["default"].bgRed(code)));
-if (signal) console.log(ӄօʟօʀ["default"].black(ӄօʟօʀ["default"].bgWhite("📶𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐒𝐢𝐠𝐧𝐚𝐥: "), ӄօʟօʀ["default"].bgBlue(signal)));
+if (code) console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("📟𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐂𝐨𝐝𝐞: "), ӄօʟօʀ.bgRed(code)));
+if (signal) console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("📶𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐒𝐢𝐠𝐧𝐚𝐥: "), ӄօʟօʀ.bgBlue(signal)));
 process.exitCode = 1;
 });
 }
