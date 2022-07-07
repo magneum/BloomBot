@@ -4,7 +4,7 @@ let ɢɪᴛᴄᴀʟʟ = require("simple-git")();
 (async () =>{
 let ɴᴇᴡ = await ɢɪᴛᴄᴀʟʟ.log(["🐍Ş𝖎𝖕𝖍𝖔𝖓®..origin/🐍Ş𝖎𝖕𝖍𝖔𝖓®"]);
 console.log(ɴᴇᴡ);
-if (ɴᴇᴡ.total != 0) {
+if (ɴᴇᴡ.total != 0 && !ɴᴇᴡ.latest == null) {
 let ʀᴇᴠ_ɢɪᴛʜᴜʙ = ʀᴇᴠ_ɢɪᴛ();
 ʀᴇᴠ_ɢɪᴛʜᴜʙ.clean(ʀᴇᴠ_ɢɪᴛ.CleanOptions.FORCE);
 let Data = ʀᴇᴠ_ɢɪᴛʜᴜʙ.fetch();
