@@ -15,6 +15,7 @@ require("../Vlkyre🖋️Utilities/𝕷𝖆ყO𝖚𝖙");
 let ᴍꜱ = require("parse-ms");
 let ӄօʟօʀ = require("chalk");
 let { Night } = require("./Night");
+let ʀᴇᴠ_ɢɪᴛ = require("simple-git");
 let ɢɪᴛᴄᴀʟʟ = require("simple-git")();
 let Heroku = require("heroku-client");
 let { 𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙 } = require("./𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙");
@@ -37,9 +38,16 @@ exports.ӄᴘᴏᴡ = async (Ѷ𝖎𝖔𝖓, ӄӄ, Vlkyre) => {
 if (Vlkyre.message) {
 try {
 let ɴᴇᴡ = await ɢɪᴛᴄᴀʟʟ.log(["🐍Ş𝖎𝖕𝖍𝖔𝖓®..origin/🐍Ş𝖎𝖕𝖍𝖔𝖓®"]);
-if (ɴᴇᴡ.total != 0) {
-console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("💡𝐈𝐧𝐟𝐨: "),ӄօʟօʀ.bgYellow("Starting Git-Pull")));
-console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("🕐𝐓𝐢𝐦𝐞: "),ӄօʟօʀ.bgGreen("".concat(new Date()))));
+console.log(ɴᴇᴡ);
+if (ɴᴇᴡ.total != 0 && !ɴᴇᴡ.latest == null) {
+let ʀᴇᴠ_ɢɪᴛʜᴜʙ = ʀᴇᴠ_ɢɪᴛ();
+ʀᴇᴠ_ɢɪᴛʜᴜʙ.clean(ʀᴇᴠ_ɢɪᴛ.CleanOptions.FORCE);
+let Data = ʀᴇᴠ_ɢɪᴛʜᴜʙ.fetch();
+ʀᴇᴠ_ɢɪᴛʜᴜʙ.exec(() => console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("💡𝐈𝐧𝐟𝐨: "),ӄօʟօʀ.bgYellow("Starting Git-Pull"))))
+.pull((error, update) => {
+if (error) console.log(error);
+if (update) {
+console.log(update);
 ʀᴇᴅ = require("child_process").exec("rm -f ./.git/index.lock");
 ʀᴇᴅ.stderr.pipe(process.stderr);
 ʀᴇᴅ.on("exit", function (code, signal) {
@@ -72,14 +80,6 @@ if (signal) {
 console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("📶𝐄𝐒𝐢𝐠𝐧𝐚𝐥: "),ӄօʟօʀ.bgBlue(signal)));
 process.exitCode = 1;
 }});
-ʀᴇᴅ = require("child_process").exec("git pull");
-ʀᴇᴅ.stderr.pipe(process.stderr);
-ʀᴇᴅ.on("exit", function (code, signal) {
-if (code) console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("📟𝐄𝐂𝐨𝐝𝐞: "),ӄօʟօʀ.bgRed(code)));
-if (signal) {
-console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("📶𝐄𝐒𝐢𝐠𝐧𝐚𝐥: "),ӄօʟօʀ.bgBlue(signal)));
-process.exitCode = 1;
-}});
 ʀᴇᴅ = require("child_process").exec("npm restart");
 ʀᴇᴅ.stderr.pipe(process.stderr);
 ʀᴇᴅ.on("exit", function (code, signal) {
@@ -88,7 +88,10 @@ if (signal) {
 console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("📶𝐄𝐒𝐢𝐠𝐧𝐚𝐥: "),ӄօʟօʀ.bgBlue(signal)));
 process.exitCode = 1;
 }});
-console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("💡𝐈𝐧𝐟𝐨: "),ӄօʟօʀ.bgGreen("Git-Pull Finished")));
+}
+})
+.exec(() => console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("💡𝐈𝐧𝐟𝐨: "),ӄօʟօʀ.bgGreen("Git-Pull Finished"))));
+}
 } 
 } catch (error) {
 console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐄𝐫𝐫𝐨𝐫: "), ӄօʟօʀ.bgRed(error)));
