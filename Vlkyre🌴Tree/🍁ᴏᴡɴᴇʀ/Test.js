@@ -70,6 +70,7 @@ console.log(chalk.black(chalk.bgWhite("⬡════════════�
 console.log(chalk.black(chalk.bgWhite("🐙𝐂𝐨𝐦𝐦𝐢𝐭𝐬: "),chalk.bgMagenta(ɴᴇᴡ)));
 console.log(chalk.black(chalk.bgWhite("💡𝐈𝐧𝐟𝐨: "),chalk.bgYellow("Starting Git-Pull")));
 console.log(chalk.black(chalk.bgWhite("🕐𝐓𝐢𝐦𝐞: "),chalk.bgGreen("".concat(new Date()))));
+require("child_process").exec("git reset --hard && git stash && git stash drop");
 ɢɪᴛ.pull().catch((error) => console.log(chalk.black(chalk.bgWhite("❌𝐇𝐞𝐫𝐨𝐤𝐮 𝐄𝐫𝐫𝐨𝐫: "), chalk.bgRed(error))));
 let ʀᴇᴅ = require("child_process").exec("npm restart");
 ʀᴇᴅ.stderr.pipe(process.stderr);
