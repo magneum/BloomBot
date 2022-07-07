@@ -437,8 +437,8 @@ buttonText: { displayText: prefix + "HELP" },
 type: 1,
 },
 {
-buttonId: prefix + "BOT_RULES",
-buttonText: { displayText: prefix + "BOT_RULES" },
+buttonId: prefix + "RULES",
+buttonText: { displayText: prefix + "RULES" },
 type: 1,
 },
 {
