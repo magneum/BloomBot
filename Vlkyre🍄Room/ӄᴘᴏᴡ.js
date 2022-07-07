@@ -68,7 +68,15 @@ if (error.git) mergeSummary = error.git;
 simpleGit().pull((error, update) => {
 if (update && update.summary.changes) {
 console.log(update);
-require("child_process").exec("npm restart");
+// var ʀᴇᴅ = require("child_process").exec(`heroku ps:restart worker -a ${_𝔏𝔞𝔟_.HEROKU_APP_NAME}`);
+var ʀᴇᴅ = require("child_process").exec("npm run start");
+ʀᴇᴅ.stderr.pipe(process.stderr);
+ʀᴇᴅ.on("exit", function (code, signal) {
+if (code) console.log("📟𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐂𝐨𝐝𝐞:", Kolor.red(code));
+if (signal)
+console.log("📶𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐒𝐢𝐠𝐧𝐚𝐥:", Kolor.blue(signal));
+process.exitCode = 1;
+});
 }
 });
 }
