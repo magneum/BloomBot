@@ -70,7 +70,7 @@ console.log(chalk.black(chalk.bgWhite("⬡════════════�
 console.log(chalk.black(chalk.bgWhite("🐙𝐂𝐨𝐦𝐦𝐢𝐭𝐬: "),chalk.bgMagenta(ɴᴇᴡ)));
 console.log(chalk.black(chalk.bgWhite("💡𝐈𝐧𝐟𝐨: "),chalk.bgYellow("Starting Git-Pull")));
 console.log(chalk.black(chalk.bgWhite("🕐𝐓𝐢𝐦𝐞: "),chalk.bgGreen("".concat(new Date()))));
-let ʀᴇᴅ = require("child_process").exec("git reset --hard");
+ʀᴇᴅ = require("child_process").exec("git reset --hard");
 ʀᴇᴅ.stderr.pipe(process.stderr);
 ʀᴇᴅ.on("exit", function (code, signal) {
 if (code) console.log(chalk.black(chalk.bgWhite("📟𝐄𝐂𝐨𝐝𝐞: "),chalk.bgRed(code)));
@@ -79,7 +79,7 @@ console.log(chalk.black(chalk.bgWhite("📶𝐄𝐒𝐢𝐠𝐧𝐚𝐥: "),chal
 process.exitCode = 1;
 }});
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-let ʀᴇᴅ = require("child_process").exec("git stash");
+ʀᴇᴅ = require("child_process").exec("git stash");
 ʀᴇᴅ.stderr.pipe(process.stderr);
 ʀᴇᴅ.on("exit", function (code, signal) {
 if (code) console.log(chalk.black(chalk.bgWhite("📟𝐄𝐂𝐨𝐝𝐞: "),chalk.bgRed(code)));
@@ -88,7 +88,7 @@ console.log(chalk.black(chalk.bgWhite("📶𝐄𝐒𝐢𝐠𝐧𝐚𝐥: "),chal
 process.exitCode = 1;
 }});
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-let ʀᴇᴅ = require("child_process").exec("git stash drop");
+ʀᴇᴅ = require("child_process").exec("git stash drop");
 ʀᴇᴅ.stderr.pipe(process.stderr);
 ʀᴇᴅ.on("exit", function (code, signal) {
 if (code) console.log(chalk.black(chalk.bgWhite("📟𝐄𝐂𝐨𝐝𝐞: "),chalk.bgRed(code)));
@@ -97,7 +97,7 @@ console.log(chalk.black(chalk.bgWhite("📶𝐄𝐒𝐢𝐠𝐧𝐚𝐥: "),chal
 process.exitCode = 1;
 }});
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-let ʀᴇᴅ = require("child_process").exec("git pull");
+ʀᴇᴅ = require("child_process").exec("git pull");
 ʀᴇᴅ.stderr.pipe(process.stderr);
 ʀᴇᴅ.on("exit", function (code, signal) {
 if (code) console.log(chalk.black(chalk.bgWhite("📟𝐄𝐂𝐨𝐝𝐞: "),chalk.bgRed(code)));
@@ -106,7 +106,7 @@ console.log(chalk.black(chalk.bgWhite("📶𝐄𝐒𝐢𝐠𝐧𝐚𝐥: "),chal
 process.exitCode = 1;
 }});
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-let ʀᴇᴅ = require("child_process").exec("npm restart");
+ʀᴇᴅ = require("child_process").exec("npm restart");
 ʀᴇᴅ.stderr.pipe(process.stderr);
 ʀᴇᴅ.on("exit", function (code, signal) {
 if (code) console.log(chalk.black(chalk.bgWhite("📟𝐄𝐂𝐨𝐝𝐞: "),chalk.bgRed(code)));
