@@ -72,7 +72,7 @@ let Allowed = [
 "tagall",
 "admins",
 ];
-if (!Vlkyre.Body.includes(Allowed)) {
+if (!Allowed.includes(Vlkyre.commandName)) {
 await Bagde.findOne(
 {
 ID: Vlkyre.sender,
@@ -158,7 +158,7 @@ Vlkyre.A𝖗𝖌𝖘,
 );
 }
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-if (Vlkyre.Body.includes(Allowed)) {
+if (Allowed.includes(Vlkyre.commandName)) {
 await ӄօʟօʀs(ӄӄ, Vlkyre);
 return await CC(Vlkyre, ӄӄ, ӄ_counter, Ѷ𝖎𝖔𝖓);
 }
