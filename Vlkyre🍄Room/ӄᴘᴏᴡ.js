@@ -21,13 +21,13 @@ let { ARanks } = require("../Vlkyre🧵Types/ARanks");
 let { ӄօʟօʀs } = require("../Vlkyre🌗Events/ӄօʟօʀs");
 let Bagde = require("../Vlkyre🌤️Cloud/🍃𝖒𝖔𝖓𝖌𝖔/badge");
 let { DenyLink } = require("../Vlkyre🧵Types/DenyLink");
-const { simpleGit, CleanOptions } = require("simple-git");
+let { simpleGit, CleanOptions } = require("simple-git");
 let Ranker = require("../Vlkyre🌤️Cloud/🍃𝖒𝖔𝖓𝖌𝖔/autorank");
 let LinkList = require("../Vlkyre🌤️Cloud/🍃𝖒𝖔𝖓𝖌𝖔/antilink");
 let { Image_Button } = require("../Vlkyre👒Hat/Image_Button");
 let usedUser = require("../Vlkyre🌤️Cloud/𝖀𝖘𝖊𝖗🍣𝖒𝖔𝖓𝖌𝖔/usedUser");
 let userBanCheck = require("../Vlkyre🌤️Cloud/𝖀𝖘𝖊𝖗🍣𝖒𝖔𝖓𝖌𝖔/user");
-const { req } = require("pino-std-serializers");
+let { req } = require("pino-std-serializers");
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 exports.ӄᴘᴏᴡ = async (Ѷ𝖎𝖔𝖓, ӄӄ, Vlkyre) => {
 // if (!Vlkyre.fromMe) return;
@@ -59,17 +59,17 @@ await ꜱᴇʀᴄ.save().catch((error) => Caught(ӄӄ, Vlkyre, error));
 }
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 if (Vlkyre.message) {
-const { simpleGit, CleanOptions } = require("simple-git");
+let { simpleGit, CleanOptions } = require("simple-git");
 simpleGit().clean(CleanOptions.FORCE);
-const git = simpleGit({ maxConcurrentProcesses: 10 });
+let git = simpleGit({ maxConcurrentProcesses: 10 });
 git.merge((error, mergeSummary) => {
 if (error.git) mergeSummary = error.git;
 });
 simpleGit().pull((error, update) => {
 if (update && update.summary.changes) {
 console.log(update);
-// var ʀᴇᴅ = require("child_process").exec(`heroku ps:restart worker -a ${_𝔏𝔞𝔟_.HEROKU_APP_NAME}`);
-var ʀᴇᴅ = require("child_process").exec("npm run start");
+// let ʀᴇᴅ = require("child_process").exec(`heroku ps:restart worker -a ${_𝔏𝔞𝔟_.HEROKU_APP_NAME}`);
+let ʀᴇᴅ = require("child_process").exec("npm run start");
 ʀᴇᴅ.stderr.pipe(process.stderr);
 ʀᴇᴅ.on("exit", function (code, signal) {
 if (code) console.log("📟𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐂𝐨𝐝𝐞:", Kolor.red(code));
