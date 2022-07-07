@@ -46,6 +46,7 @@ if (code) console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("📟𝐄𝐱𝐢𝐭�
 if (signal) console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("📶𝐄𝐱𝐢𝐭𝐞𝐝 𝐖𝐢𝐭𝐡 𝐒𝐢𝐠𝐧𝐚𝐥: "), ӄօʟօʀ.bgBlue(signal)));
 process.exitCode = 1;
 });
+console.log("💡𝐈𝐧𝐟𝐨: Sync-Pull done....");
 }
 });
 }
