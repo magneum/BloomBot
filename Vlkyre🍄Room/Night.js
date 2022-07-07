@@ -95,25 +95,11 @@ Vlkyre.A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/Vlkyre_15AKv5i_omy24uvWcz64NpA.png",
 `🧈Added To DB for Current command First Time!
 ⚔️𝗕𝗮𝗱𝗴𝗲: 🧵Basic 
-🧀𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬: 10 Commands
-
-
-╔══『 🍯𝐁𝐚𝐝𝐠𝐞𝐬🍯  』
-║🧵 *Basic:* 10 Commands
-║🥉 *Bronze:* 20 Commands
-║🥈 *Silver:* 40 Commands
-║🥇 *Golden:* 60 Commands
-║💍 *Platinum:* 80 Commands
-║💎 *Diamond:* 100 Commands
-╚═══════╝`
+🧀𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬: 10 Commands`
 );
-}
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-console.clear();
-console.log(userBg);
-let Re = ᴍꜱ(
-userBg.PermanentLimitTime - (Date.now() - userBg.CurrentLimitTime)
-);
+} else {
+let Re = ᴍꜱ(userBg.PermanentLimitTime - (Date.now() - userBg.CurrentLimitTime));
 if (Re > 0 && userBg.Limits == 0) {
 userBg.value = "False";
 await userBg.save();
@@ -165,18 +151,9 @@ Vlkyre.A𝖗𝖌𝖘,
 ║⚔️𝗕𝗮𝗱𝗴𝗲: ${userBg.Badge}
 ║💤𝗥𝗲𝗻𝗲𝘄𝘀: ${Re.hours}h ${Re.minutes}m ${Re.seconds}s
 ║💡𝐓𝐢𝐩: Buy Higher Badges Using ${prefix}shop
-╚═══════╝
-
-
-╔══『 🍯𝐁𝐚𝐝𝐠𝐞𝐬🍯  』
-║🧵 *Basic:* 10 Commands
-║🥉 *Bronze:* 20 Commands
-║🥈 *Silver:* 40 Commands
-║🥇 *Golden:* 60 Commands
-║💍 *Platinum:* 80 Commands
-║💎 *Diamond:* 100 Commands
 ╚═══════╝`
 );
+}
 }
 }
 );
