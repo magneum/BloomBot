@@ -7,7 +7,7 @@
 // ║ It's your concern if you spam and gets your account banned.
 // ║ Also, Forks won't be entertained.
 // ║ If you fork this repo and edit plugins, it's your concern for further updates.
-// ║ Forking Repo is fine. But if you edit something we will not provide any help.
+// ║ Forking Timepo is fine. But if you edit something we will not provide any help.
 // ║ In short, Fork At Your Own Risk.
 // ╚════════════╝
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
@@ -94,19 +94,18 @@ return await Image_Button(
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/Vlkyre_15AKv5i_omy24uvWcz64NpA.png",
-`🧈Added To DB for Current command First Time!
+`*🧈Added To DB for Current command First Time!*
 ⚔️𝗕𝗮𝗱𝗴𝗲: 🧵Basic 
 🧀𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬: 10 Commands`
 );
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 } else {
-let Re = ᴍꜱ(
+let Time = ᴍꜱ(
 userBg.PermanentLimitTime - (Date.now() - userBg.CurrentLimitTime)
 );
-if (Re > 0 && userBg.Limits == 0) {
+if (Time > 0 && userBg.Limits == 0) {
 userBg.value = "False";
 await userBg.save();
-await ӄօʟօʀs(ӄӄ, Vlkyre);
 return await Image_Button(
 ӄӄ,
 Vlkyre,
@@ -115,21 +114,19 @@ Vlkyre.A𝖗𝖌𝖘,
 `
 ╔══『 ❗𝐈𝐦𝐩𝐨𝐫𝐭𝐚𝐧𝐭 』
 ║⚔️𝗕𝗮𝗱𝗴𝗲: ${userBg.Badge}
-║💤𝗥𝗲𝗻𝗲𝘄𝘀: ${Re.hours}h ${Re.minutes}m ${Re.seconds}s
+║💤𝗥𝗲𝗻𝗲𝘄𝘀: ${Time.hours}h ${Time.minutes}m ${Time.seconds}s
 ║💡𝐓𝐢𝐩: Buy Higher Badges Using ${prefix}shop
 ╚═══════╝`
 );
-}
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-if (Re > 0 && !userBg.Limits == 0) {
+} else if (Time > 0 && !userBg.Limits == 0) {
 userBg.Limits = userBg.Limits - 1;
 userBg.value = "True";
 await userBg.save();
 await ӄօʟօʀs(ӄӄ, Vlkyre);
 return await CC(Vlkyre, ӄӄ, ӄ_counter, Ѷ𝖎𝖔𝖓);
-}
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-if (Re < 0 && userBg.Limits == 0) {
+} else if (Time < 0 && userBg.Limits == 0) {
 if (userBg.Badge === "🧵Basic 10 Commands") userBg.Limits = 10;
 if (userBg.Badge === "🥉Bronze 20 Commands") userBg.Limits = 20;
 if (userBg.Badge === "🥈Silver 40 Commands") userBg.Limits = 40;
@@ -141,9 +138,8 @@ userBg.value = "True";
 await userBg.save();
 await ӄօʟօʀs(ӄӄ, Vlkyre);
 return await CC(Vlkyre, ӄӄ, ӄ_counter, Ѷ𝖎𝖔𝖓);
-}
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-if (userBg.value === "False") {
+} else if (userBg.value === "False") {
 return await Image_Button(
 ӄӄ,
 Vlkyre,
@@ -152,7 +148,7 @@ Vlkyre.A𝖗𝖌𝖘,
 `
 ╔══『 ❗𝐈𝐦𝐩𝐨𝐫𝐭𝐚𝐧𝐭 』
 ║⚔️𝗕𝗮𝗱𝗴𝗲: ${userBg.Badge}
-║💤𝗥𝗲𝗻𝗲𝘄𝘀: ${Re.hours}h ${Re.minutes}m ${Re.seconds}s
+║💤𝗥𝗲𝗻𝗲𝘄𝘀: ${Time.hours}h ${Time.minutes}m ${Time.seconds}s
 ║💡𝐓𝐢𝐩: Buy Higher Badges Using ${prefix}shop
 ╚═══════╝`
 );
@@ -160,8 +156,9 @@ Vlkyre.A𝖗𝖌𝖘,
 }
 }
 );
+}
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-} else {
+if (Vlkyre.Body.includes(Allowed)) {
 await ӄօʟօʀs(ӄӄ, Vlkyre);
 return await CC(Vlkyre, ӄӄ, ӄ_counter, Ѷ𝖎𝖔𝖓);
 }
@@ -175,7 +172,7 @@ return await CC(Vlkyre, ӄӄ, ӄ_counter, Ѷ𝖎𝖔𝖓);
 // ║ It's your concern if you spam and gets your account banned.
 // ║ Also, Forks won't be entertained.
 // ║ If you fork this repo and edit plugins, it's your concern for further updates.
-// ║ Forking Repo is fine. But if you edit something we will not provide any help.
+// ║ Forking Timepo is fine. But if you edit something we will not provide any help.
 // ║ In short, Fork At Your Own Risk.
 // ╚════════════╝
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
