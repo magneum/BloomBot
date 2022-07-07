@@ -1,9 +1,7 @@
 (async (done) => {
 let ӄօʟօʀ = require("chalk");
 let ɢɪᴛᴄᴀʟʟ = require("simple-git")();
-let Heroku = require("heroku-client");
-let Hoku = new Heroku({ token: HEROKU_API_KEY });
-const ᴘꜱᴇᴜɢɪᴛ = require('simple-git');
+const ᴘꜱᴇᴜɢɪᴛ = require("simple-git");
 ᴘꜱᴇᴜɢɪᴛ().clean(ᴘꜱᴇᴜɢɪᴛ.CleanOptions.FORCE);
 let ɢɪᴛ = ᴘꜱᴇᴜɢɪᴛ({ progress ({method, stage, progress}) { console.log(`git.${method} ${stage} stage ${progress}% complete`);}});
 ɢɪᴛ.checkout("https://github.com/KryKnz/Vlkyre.git");
@@ -22,13 +20,11 @@ if (signal) console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("📶𝐄𝐱𝐢�
 process.exitCode = 1;
 });
 console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("💡𝐈𝐧𝐟𝐨: "),ӄօʟօʀ.bgGreen("Git-Pull Finished")));
-return await Vlkyre.reply("💡𝐈𝐧𝐟𝐨: Logger Attached.\nGit-Pull Finished");
 } else {
-return await Vlkyre.reply("💡𝐈𝐧𝐟𝐨: Logger Detached.\nFalling Back To Legacy Method");
+console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("💡𝐈𝐧𝐟𝐨: "),ӄօʟօʀ.bgGreen("Logger Detached.")));
 }
 } catch (error) {
 console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐄𝐫𝐫𝐨𝐫: "), ӄօʟօʀ.bgRed(error)));
 console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("💡𝐈𝐧𝐟𝐨: "),ӄօʟօʀ.bgYellow("Falling Back To Legacy Method")));
-await Hoku.delete("/apps/" + HEROKU_APP_NAME + "/dynos/" + "worker").catch((error) => console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐇𝐞𝐫𝐨𝐤𝐮 𝐄𝐫𝐫𝐨𝐫: "), ӄօʟօʀ.bgRed(error))));
 }
-})()
+})();
