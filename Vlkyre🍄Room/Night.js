@@ -52,6 +52,7 @@ let Allowed = [
 "buy sword",
 "buy laptop",
 "buy charm",
+"buy",
 "warn",
 "nolink",
 "stoplink",
