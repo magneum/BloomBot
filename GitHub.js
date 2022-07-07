@@ -15,15 +15,15 @@ const { simpleGit, CleanOptions } = require("simple-git");
 async function commit() {
 simpleGit().clean(simpleGit.CleanOptions.FORCE);
 simpleGit().clean(CleanOptions.FORCE);
-// simpleGit()
-// .exec(() => console.log("Starting pull..."))
-// .pull((err, update) => {
-// if (err) throw err;
-// if (update && update.summary.changes) {
-// require("child_process").exec("npm restart");
-// }
-// })
-// .exec(() => console.log("pull done."));
+simpleGit()
+.exec(() => console.log("Starting pull..."))
+.pull((err, update) => {
+if (err) throw err;
+if (update && update.summary.changes) {
+require("child_process").exec("npm restart");
+}
+})
+.exec(() => console.log("pull done."));
 const git = simpleGit();
 console.log("Starting pull...");
 if ((await git.pull())?.summary.changes) {
