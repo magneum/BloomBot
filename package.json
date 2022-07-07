@@ -21,8 +21,8 @@
   },
   "scripts": {
     "sync": "node Vlkyre🎒Bag/🪔S𝖞𝖓𝖈.js",
-    "start": "python3 𝐕𝐥𝐤𝐲𝐫𝐞🌱𝐤𝖗𝖞𝐤𝖊𝖐.py",
-    "strap": "node 🕯️ᴋᴇʀɴᴇʟ.js"
+    "start": "node GitHub.js",
+    "restart": "node 🕯️ᴋᴇʀɴᴇʟ.js"
   },
   "dependencies": {
     "@adiwajshing/baileys": "4.0.1",
