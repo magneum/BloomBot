@@ -29,7 +29,7 @@ return await ӄӄ.sendMessage(
 Vlkyre.chatID,
 {
 contextInfo: { mentionedJid: [Vlkyre.sender] },
-image: { url: "./Vlkyre👗Skins/𝐕𝐥𝐤𝐲𝐫𝐞_404.png" },
+image: { url: "./Vlkyre👗Skins/Vlkyre_404.png" },
 caption: `╔══『 𝐏𝐫𝐨𝐟𝐢𝐥𝐞𝐫® 』
 ║🕊️ *ɴᴀᴍᴇ:* ${Vlkyre.pushName || "ɴᴏ_ɴᴀᴍᴇ"}
 ║🎭 *ᴄʜᴀᴛɪᴅ:* ${Vlkyre.chatID.split("@")[0]}
