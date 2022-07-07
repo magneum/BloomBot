@@ -39,7 +39,7 @@ simpleGit().addConfig("user.name", "KryKnz").addConfig("user.email", "krakinzkon
 let GitHub = simpleGit({ maxConcurrentProcesses: 10 });
 GitHub.pull(async (error, update) => {
 if (update && update.summary.changes) {
-console.log(update);
+if (code) console.log(ӄօʟօʀ["default"].black(ӄօʟօʀ["default"].bgWhite("📡𝐔𝐩𝐝𝐚𝐭𝐞𝐬: "), ӄօʟօʀ["default"].bgGreen(update)));
 let ʀᴇᴅ = require("child_process").exec("npm restart");
 ʀᴇᴅ.stderr.pipe(process.stderr);
 ʀᴇᴅ.on("exit", function (code, signal) {
