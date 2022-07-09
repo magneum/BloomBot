@@ -634,14 +634,15 @@ let ᴇᴏɴᴇz = DATABASE;
 let dbAuth = require(`../Vlkyre🌤️Cloud/🍂𝖘𝖖𝖑/Auth`);
 let useRemoteFileAuthState = require("../Vlkyre🌤️Cloud/🍂𝖘𝖖𝖑/dbAuth.js");
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
-let baileys = require("@adiwajshing/baileys");
-let Ѷ𝖎𝖔𝖓 = baileys.makeInMemoryStore({ logger: pino().child({ level: "silent", stream: "Ѷ𝖎𝖔𝖓" })});
-Ѷ𝖎𝖔𝖓 === null || Ѷ𝖎𝖔𝖓 === void 0? void 0: Ѷ𝖎𝖔𝖓.readFromFile("./🕊️𝐕𝐥𝐤𝐲𝐫𝐞🕊️/▷ᴇᴏɴᴇ®◁.json");
-setInterval(() => {
-Ѷ𝖎𝖔𝖓 === null || Ѷ𝖎𝖔𝖓 === void 0? void 0: Ѷ𝖎𝖔𝖓.writeToFile("./🕊️𝐕𝐥𝐤𝐲𝐫𝐞🕊️/▷ᴇᴏɴᴇ®◁.json");
-}, 10000);
-let msgRetryCounterMap = {};
 async function Ѷ𝖎𝖔𝖓ᴇᴏɴᴇ() {
+let msgRetryCounterMap = {};
+let Ѷ𝖎𝖔𝖓 = makeInMemoryStore({
+logger: pino().child({ level: "silent", stream: "Ѷ𝖎𝖔𝖓" }),
+});
+Ѷ𝖎𝖔𝖓?.readFromFile("./▷ᴇᴏɴᴇ®◁.json");
+setInterval(() => {
+Ѷ𝖎𝖔𝖓?.writeToFile("./▷ᴇᴏɴᴇ®◁.json");
+}, 10000);
 try {
 await goose.connect(MONGOOSE, {
 useNewUrlParser: true,
