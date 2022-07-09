@@ -164,6 +164,10 @@ Vlkyre.A𝖗𝖌𝖘,
 Ῠ #Riato
 Ῠ many more....
 
+『 📡𝐁𝐎𝐓 𝐀𝐏𝐈°📡 』
+Ῠ adiwajshing.github.io/Baileys
+Ῠ wwebjs.dev
+Ῠ www.whatsapp.com
 
 『 🍯𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐨𝐫𝐬°🍯 』
 Ῠ wa.me/918436686758
