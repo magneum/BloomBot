@@ -32,7 +32,7 @@ await ӄӄ
 .sendMessage(
 Vlkyre.chatID,
 {
-image: { url: "./Vlkyre👗Skins/Vlkyre_White.png" },
+image: { url: "./Vlkyre👗Skins/Vlkyre_LabGreen.png" },
 caption: `*⦓ ©Vlkyre ༒ 𝐖𝐞𝐥𝐜𝐨𝐦𝐞𝐫 ⦔* 
 👋🏻𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚, To Admins Of This Group, Some Of Your Members Requested Our Valkyrie HQ to Add Our Bot In This Group.
 Have Fun!
@@ -44,13 +44,18 @@ Have Fun!
 footer: "*⦓ ⒸVlkyre ⦔*\n_ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™_",
 buttons: [
 {
-buttonId: prefix + "help",
-buttonText: { displayText: prefix + "help" },
+buttonId: prefix + "HELP",
+buttonText: { displayText: prefix + "HELP" },
 type: 1,
 },
 {
-buttonId: prefix + "rules",
+buttonId: prefix + "BOTRULES",
 buttonText: { displayText: prefix + "rules" },
+type: 1,
+},
+{
+buttonId: prefix + "BOTSUPPORT",
+buttonText: { displayText: prefix + "BOTSUPPORT" },
 type: 1,
 },
 ],
