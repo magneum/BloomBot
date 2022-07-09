@@ -2681,8 +2681,14 @@ break;
 case "sp":
 case "dev":
 case "devs":
+case "mod":
+case "mods":
+case "moderator":
 case "support":
 case "official":
+case "repo":
+case "githubrepo":
+case "repository":
 case "BOTSUPPORT":
 await support(
 ӄӄ,

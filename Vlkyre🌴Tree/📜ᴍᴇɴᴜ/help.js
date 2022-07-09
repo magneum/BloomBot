@@ -290,6 +290,11 @@ caption: `🕊️𝐕𝐥𝐤𝐲𝐫𝐞:🕊️ _is a whatsapp userbot with au
 ║☣️ ${prefix}bcgroup
 ║☣️ ${prefix}bc
 ║☣️ ${prefix}sp
+║☣️ ${prefix}mod
+║☣️ ${prefix}mods
+║☣️ ${prefix}repo
+║☣️ ${prefix}githubrepo
+║☣️ ${prefix}repository
 ║☣️ ${prefix}dev
 ║☣️ ${prefix}devs
 ║☣️ ${prefix}support
