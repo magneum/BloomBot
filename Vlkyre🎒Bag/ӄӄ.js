@@ -1,7 +1,7 @@
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-// ╔⧉༻ [ Ѷ𝖑𝐤𝐲𝖗𝖊🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬! 
+// ╔⧉༻ [ Ѷ𝖑𝐤𝐲𝖗𝖊🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 // ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫𝐬 +918436686758,917430922909
-// ║ 
+// ║
 // ║ We won't be responsible for any kind of ban due to this bot.
 // ║ Vlkyre was made for fun purpose and to make group management easier.
 // ║ It's your concern if you spam and gets your account banned.
@@ -33,23 +33,27 @@ let chalk = require(`chalk`);
 let goose = require(`mongoose`);
 let FileType = require(`file-type`);
 let PhoneNumber = require(`awesome-phonenumber`);
-let { smsg, getBuffer, getSizeMedia } = require(`../Vlkyre🖋️Utilities/ɴᴇᴄᴛᴏʀ`);
+let {
+smsg,
+getBuffer,
+getSizeMedia,
+} = require(`../Vlkyre🖋️Utilities/ɴᴇᴄᴛᴏʀ`);
 let {
 imageToWebp,
 videoToWebp,
 writeExifImg,
 writeExifVid,
 } = require(`../Vlkyre🖋️Utilities/exif`);
-let sequelize = DATABASE;
+let ᴇᴏɴᴇz = DATABASE;
 let Ѷ𝖎𝖔𝖓 = makeInMemoryStore({
 logger: pino().child({ level: "error", stream: "Ѷ𝖎𝖔𝖓" }),
 });
-Ѷ𝖎𝖔𝖓?.readFromFile("./🕊️𝐕𝐥𝐤𝐲𝐫𝐞🕊️/ᴠʟᴋʏʀᴇᴏɴᴇ®.json");
+Ѷ𝖎𝖔𝖓?.readFromFile("./🕊️𝐕𝐥𝐤𝐲𝐫𝐞🕊️/▷ᴇᴏɴᴇ®◁.json");
 setInterval(async () => {
-Ѷ𝖎𝖔𝖓?.writeToFile("./🕊️𝐕𝐥𝐤𝐲𝐫𝐞🕊️/ᴠʟᴋʏʀᴇᴏɴᴇ®.json");
+Ѷ𝖎𝖔𝖓?.writeToFile("./🕊️𝐕𝐥𝐤𝐲𝐫𝐞🕊️/▷ᴇᴏɴᴇ®◁.json");
 }, 10_000);
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
-async function startᴋᴜɴᴀɪ() {
+async function Ѷ𝖎𝖔𝖓ᴇᴏɴᴇ() {
 try {
 await goose
 .connect(MONGOOSE, {
@@ -71,16 +75,16 @@ process.exit(0);
 console.log(chalk.green(`💡𝐈𝐧𝐟𝐨: Connected With 🍃𝖒𝖔𝖓𝖌𝖔 + 𝖀𝖘𝖊𝖗🍣𝖒𝖔𝖓𝖌𝖔.`));
 }
 try {
-await sequelize.authenticate();
+await ᴇᴏɴᴇz.authenticate();
 console.log(chalk.green(`💡𝐈𝐧𝐟𝐨: Connected with 🍂𝖘𝖖𝖑.`));
 } catch (error) {
 console.error(chalk.red(`❌𝐄𝐫𝐫𝐨𝐫: Unable to Connected with 🍂𝖘𝖖𝖑.`));
 console.log(error);
 process.exit(0);
 }
-await sequelize.sync();
-const { state, saveState } = useSingleFileAuthState(
-"./🕊️𝐕𝐥𝐤𝐲𝐫𝐞🕊️/ᴠʟᴋʏʀᴇᴏɴᴇ®.json"
+await ᴇᴏɴᴇz.sync();
+let { state, saveState } = useSingleFileAuthState(
+"./🕊️𝐕𝐥𝐤𝐲𝐫𝐞🕊️/▷ᴇᴏɴᴇ®◁.json"
 );
 let ӄӄ = ᴋᴜɴᴋᴏɴɴᴇᴄᴛ({
 logger: pino({ level: `error` }),
@@ -547,7 +551,7 @@ data,
 ӄӄ.ev.on(`connection.update`, async (𝖚𝖕𝖉𝖆𝖙𝖊) => {
 try {
 let connection_update = require(`../Vlkyre🌗Events/connection_update`);
-await connection_update.Vcnup(𝖚𝖕𝖉𝖆𝖙𝖊, startᴋᴜɴᴀɪ, ӄӄ);
+await connection_update.Vcnup(𝖚𝖕𝖉𝖆𝖙𝖊, Ѷ𝖎𝖔𝖓ᴇᴏɴᴇ, ӄӄ);
 } catch (𝕰𝖗𝖗𝖔𝖗) {
 return console.log(chalk.redBright(𝕰𝖗𝖗𝖔𝖗));
 }
@@ -581,11 +585,11 @@ return console.log(chalk.redBright(𝕰𝖗𝖗𝖔𝖗));
 });
 return ӄӄ;
 }
-startᴋᴜɴᴀɪ().catch((𝕰𝖗𝖗𝖔𝖗) => console.log(chalk.redBright(𝕰𝖗𝖗𝖔𝖗)));
+Ѷ𝖎𝖔𝖓ᴇᴏɴᴇ().catch((𝕰𝖗𝖗𝖔𝖗) => console.log(chalk.redBright(𝕰𝖗𝖗𝖔𝖗)));
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-// ╔⧉༻ [ Ѷ𝖑𝐤𝐲𝖗𝖊🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬! 
+// ╔⧉༻ [ Ѷ𝖑𝐤𝐲𝖗𝖊🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 // ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫𝐬 +918436686758,917430922909
-// ║ 
+// ║
 // ║ We won't be responsible for any kind of ban due to this bot.
 // ║ Vlkyre was made for fun purpose and to make group management easier.
 // ║ It's your concern if you spam and gets your account banned.
@@ -601,8 +605,10 @@ default: 𝖍𝖆𝖜ӄC,
 generateForwardMessageContent,
 generateWAMessageFromContent,
 downloadContentFromMessage,
+fetchLatestBaileysVersion,
 prepareWAMessageMedia,
 makeInMemoryStore,
+MessageRetryMap,
 jidDecode,
 proto,
 } = require(`@adiwajshing/baileys`);
@@ -613,60 +619,69 @@ let chalk = require(`chalk`);
 let goose = require("mongoose");
 let FileType = require(`file-type`);
 let PhoneNumber = require(`awesome-phonenumber`);
-let { smsg, getBuffer, getSizeMedia } = require(`../Vlkyre🖋️Utilities/ɴᴇᴄᴛᴏʀ`);
+let {
+smsg,
+getBuffer,
+getSizeMedia,
+} = require(`../Vlkyre🖋️Utilities/ɴᴇᴄᴛᴏʀ`);
 let {
 imageToWebp,
 videoToWebp,
 writeExifImg,
 writeExifVid,
 } = require(`../Vlkyre🖋️Utilities/exif`);
-let sequelize = DATABASE;
-let Ѷ𝖎𝖔𝖓 = makeInMemoryStore({
-logger: pino().child({ level: `silent`, stream: `Ѷ𝖎𝖔𝖓` }),
-});
+let ᴇᴏɴᴇz = DATABASE;
 let dbAuth = require(`../Vlkyre🌤️Cloud/🍂𝖘𝖖𝖑/Auth`);
+let useRemoteFileAuthState = require("../Vlkyre🌤️Cloud/🍂𝖘𝖖𝖑/dbAuth.js");
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
-async function startᴋᴜɴᴀɪ() {
+let baileys = require("@adiwajshing/baileys");
+let Ѷ𝖎𝖔𝖓 = baileys.makeInMemoryStore({ logger: pino().child({ level: "silent", stream: "Ѷ𝖎𝖔𝖓" })});
+Ѷ𝖎𝖔𝖓 === null || Ѷ𝖎𝖔𝖓 === void 0? void 0: Ѷ𝖎𝖔𝖓.readFromFile("./🕊️𝐕𝐥𝐤𝐲𝐫𝐞🕊️/▷ᴇᴏɴᴇ®◁.json");
+setInterval(() => {
+Ѷ𝖎𝖔𝖓 === null || Ѷ𝖎𝖔𝖓 === void 0? void 0: Ѷ𝖎𝖔𝖓.writeToFile("./🕊️𝐕𝐥𝐤𝐲𝐫𝐞🕊️/▷ᴇᴏɴᴇ®◁.json");
+}, 10000);
+let msgRetryCounterMap = {};
+async function Ѷ𝖎𝖔𝖓ᴇᴏɴᴇ() {
 try {
-await goose
-.connect(MONGOOSE, {
+await goose.connect(MONGOOSE, {
 useNewUrlParser: true,
 useUnifiedTopology: true,
 useCreateIndex: true,
 useFindAndModify: false,
-})
-.catch((error) => {
+});
+} catch (error) {
 console.error(
-chalk.red(
-`❌𝐄𝐫𝐫𝐨𝐫: Unable to Connected with 🍃𝖒𝖔𝖓𝖌𝖔 + 𝖀𝖘𝖊𝖗🍣𝖒𝖔𝖓𝖌𝖔.`
-)
+chalk.red(`❌𝐄𝐫𝐫𝐨𝐫: Unable to Connected with 🍃𝖒𝖔𝖓𝖌𝖔 + 𝖀𝖘𝖊𝖗🍣𝖒𝖔𝖓𝖌𝖔.`)
 );
 console.log(error);
 process.exit(0);
-});
-} finally {
-console.log(chalk.green("💡𝐈𝐧𝐟𝐨: Connected With 🍃𝖒𝖔𝖓𝖌𝖔 + 𝖀𝖘𝖊𝖗🍣𝖒𝖔𝖓𝖌𝖔."));
 }
+console.log(chalk.green("💡𝐈𝐧𝐟𝐨: Connected With 🍃𝖒𝖔𝖓𝖌𝖔 + 𝖀𝖘𝖊𝖗🍣𝖒𝖔𝖓𝖌𝖔."));
 try {
-await sequelize.authenticate();
+await ᴇᴏɴᴇz.authenticate();
 console.log(chalk.green(`💡𝐈𝐧𝐟𝐨: Connected with 🍂𝖘𝖖𝖑.`));
 } catch (error) {
 console.error(chalk.red(`❌𝐄𝐫𝐫𝐨𝐫: Unable to Connected with 🍂𝖘𝖖𝖑.`));
 console.log(error);
 process.exit(0);
 }
-await sequelize.sync();
-let { state, saveCreds } = await dbAuth();
+await ᴇᴏɴᴇz.sync();
+let { version, isLatest } = await fetchLatestBaileysVersion();
+let { state, saveCreds } = await useRemoteFileAuthState.default();
+// let { state, saveCreds } = await dbAuth();
 let ӄӄ = 𝖍𝖆𝖜ӄC({
-logger: pino({ level: "silent" }),
+version,
+auth: state,
+msgRetryCounterMap,
 printQRInTerminal: true,
 defaultQueryTimeoutMs: undefined,
-browser: ["Vlkyre", "Chrome", "1.0.0"],
-auth: state,
-// getMessage: async (key) => {
-// console.log(key);
-// return {};
-// },
+logger: pino({ level: "silent" }),
+browser: ["Vlkyre", "Chrome", "4.0.0"],
+getMessage: async (key) => {
+return {
+conversation: "-null-",
+};
+},
 });
 Ѷ𝖎𝖔𝖓.bind(ӄӄ.ev);
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
@@ -1122,7 +1137,7 @@ data,
 ӄӄ.ev.on("connection.update", async (𝖚𝖕𝖉𝖆𝖙𝖊) => {
 try {
 let connection_update = require("../Vlkyre🌗Events/connection_update");
-await connection_update.Vcnup(𝖚𝖕𝖉𝖆𝖙𝖊, startᴋᴜɴᴀɪ, ӄӄ);
+await connection_update.Vcnup(𝖚𝖕𝖉𝖆𝖙𝖊, Ѷ𝖎𝖔𝖓ᴇᴏɴᴇ, ӄӄ);
 } catch (𝕰𝖗𝖗𝖔𝖗) {
 return console.log(chalk.redBright(𝕰𝖗𝖗𝖔𝖗));
 }
@@ -1161,7 +1176,7 @@ return console.log(chalk.redBright(𝕰𝖗𝖗𝖔𝖗));
 });
 return ӄӄ;
 }
-startᴋᴜɴᴀɪ().catch((𝕰𝖗𝖗𝖔𝖗) => console.log(chalk.redBright(𝕰𝖗𝖗𝖔𝖗)));
+Ѷ𝖎𝖔𝖓ᴇᴏɴᴇ().catch((𝕰𝖗𝖗𝖔𝖗) => console.log(chalk.redBright(𝕰𝖗𝖗𝖔𝖗)));
 }
 ("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
 /*

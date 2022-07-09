@@ -13,12 +13,12 @@
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 let chalk = require("chalk");
 let { DisconnectReason } = require("@adiwajshing/baileys");
-let connection_update = async (update, startᴋᴜɴᴀɪ, ӄӄ) => {
+let connection_update = async (update, Ѷ𝖎𝖔𝖓ᴇᴏɴᴇ, ӄӄ) => {
 try {
 const { lastDisconnect, connection, qr } = update;
 if (connection === "close") {
 lastDisconnect.error?.output?.statusCode !== DisconnectReason.loggedOut
-? startᴋᴜɴᴀɪ()
+? Ѷ𝖎𝖔𝖓ᴇᴏɴᴇ()
 : console.log("❌𝐄𝐫𝐫𝐨𝐫꧂ Connection closed.");
 }
 if (qr) {
