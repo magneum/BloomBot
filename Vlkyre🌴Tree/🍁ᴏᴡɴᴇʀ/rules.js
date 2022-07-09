@@ -62,7 +62,7 @@ return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
-"./Vlkyre👗Skins/Vlkyre.png",
+"./Vlkyre👗Skins/KrakinzLab.png",
 `🏮 (𝐜)Vlkyre 𝐑𝐮𝐥𝐞𝐬 🏮
 
 ⚠️ Do not abuse/disrespect bot and its owner.

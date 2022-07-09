@@ -144,7 +144,7 @@ return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
-"./Vlkyre👗Skins/Vlkyre_White.png",
+"./Vlkyre👗Skins/KrakinzLab.png",
 `『 🕊️𝐕𝐥𝐤𝐲𝐫𝐞🕊️ 』
 ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™
 

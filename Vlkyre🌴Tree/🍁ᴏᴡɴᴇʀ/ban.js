@@ -94,7 +94,7 @@ return await ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(
 Vlkyre.chatID,
 {
 contextInfo: { mentionedJid: [Vlkyre.sender, repliedPerson] },
-image: { url: "./Vlkyre👗Skins/Vlkyre_Matte.png" },
+image: { url: "./Vlkyre👗Skins/KrakinzLab.png" },
 caption: `╔══『 𝐏𝐫𝐨𝐟𝐢𝐥𝐞𝐫® 』
 ║ *❣️ɴᴀᴍᴇ:* ${Vlkyre.pushName || "No_Name"}
 ║ *⚡ɪᴅ:* ${Vlkyre.chatID.split("@")[0]}
@@ -126,7 +126,7 @@ return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
-"./Vlkyre👗Skins/Vlkyre_Matte.png",
+"./Vlkyre👗Skins/KrakinzLab.png",
 `*❌𝗘𝗿𝗿𝗼𝗿:* That Person Is Already banned!`
 );
 }
@@ -148,7 +148,7 @@ await newUser.save();
 return await ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(
 Vlkyre.chatID,
 {
-image: { url: "./Vlkyre👗Skins/Vlkyre_Matte.png" },
+image: { url: "./Vlkyre👗Skins/KrakinzLab.png" },
 caption: `╔══『 𝐏𝐫𝐨𝐟𝐢𝐥𝐞𝐫® 』
 ║ *❣️ɴᴀᴍᴇ:* ${Vlkyre.pushName || "No_Name"}
 ║ *⚡ɪᴅ:* ${Vlkyre.chatID.split("@")[0]}
@@ -180,7 +180,7 @@ return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
-"./Vlkyre👗Skins/Vlkyre_Matte.png",
+"./Vlkyre👗Skins/KrakinzLab.png",
 `*❌𝗘𝗿𝗿𝗼𝗿:* ${Vlkyre.groupMetadata.subject} is Already Banned!`
 );
 }
