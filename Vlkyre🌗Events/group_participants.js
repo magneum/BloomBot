@@ -50,13 +50,13 @@ ${userWel.message}`,
 footer: "*⦓ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⦔*\n_ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™_",
 buttons: [
 {
-buttonId: prefix + "help",
-buttonText: { displayText: prefix + "help" },
+buttonId: prefix + "HELP",
+buttonText: { displayText: prefix + "HELP" },
 type: 1,
 },
 {
-buttonId: prefix + "rules",
-buttonText: { displayText: prefix + "rules" },
+buttonId: prefix + "VLKYRE",
+buttonText: { displayText: prefix + "VLKYRE" },
 type: 1,
 },
 ],

@@ -2689,6 +2689,10 @@ case "official":
 case "repo":
 case "githubrepo":
 case "repository":
+case "VLKYRE":
+case "KRAKINZLAB":
+case "vlkyre":
+case "krakinzlab":
 case "BOTSUPPORT":
 await support(
 ӄӄ,
@@ -2770,6 +2774,13 @@ buttons: [
 buttonId: prefix + "HELP",
 buttonText: {
 displayText: prefix + "HELP",
+},
+type: 1,
+},
+{
+buttonId: prefix + "VLKYRE",
+buttonText: {
+displayText: prefix + "VLKYRE",
 },
 type: 1,
 },

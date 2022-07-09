@@ -448,17 +448,23 @@ footer: "*⦓ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⦔*\n▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ �
 buttons: [
 {
 buttonId: prefix + "HELP",
-buttonText: { displayText: prefix + "HELP" },
+buttonText: {
+displayText: prefix + "HELP",
+},
+type: 1,
+},
+{
+buttonId: prefix + "VLKYRE",
+buttonText: {
+displayText: prefix + "VLKYRE",
+},
 type: 1,
 },
 {
 buttonId: prefix + "BOTRULES",
-buttonText: { displayText: prefix + "BOTRULES" },
-type: 1,
+buttonText: {
+displayText: prefix + "BOTRULES",
 },
-{
-buttonId: prefix + "BOTSUPPORT",
-buttonText: { displayText: prefix + "BOTSUPPORT" },
 type: 1,
 },
 ],
