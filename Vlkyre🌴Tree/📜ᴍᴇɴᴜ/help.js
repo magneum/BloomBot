@@ -148,6 +148,15 @@ contextInfo: { mentionedJid: [Vlkyre.sender] },
 image: { url: "./Vlkyre👗Skins/Vlkyre.png" },
 caption: `🕊️𝐕𝐥𝐤𝐲𝐫𝐞:🕊️ _is a whatsapp userbot with automation,moderation,music,games and 140+ commands!_
 
+『 🕊️𝐕𝐥𝐤𝐲𝐫𝐞🕊️ 』
+🍁 *ᴘʀᴇꜰɪx:* ${prefix}
+💰 *ɢᴘᴀʏ:* +918436686758
+❣️ *ᴜᴘɪ:* krakinzkon@oksbi
+🐞 *ɢɪᴛʜᴜʙ:* https://github.com/kryknz
+🍻 *ᴠʟᴋʏʀᴇ:* https://github.com/kryknz/vlkyre
+🛰️ *ᴡᴇʙꜱɪᴛᴇ:*  https://VlkyreAI.krakinzkon.repl.co
+
+
 ╔══『 𝐏𝐫𝐨𝐟𝐢𝐥𝐞𝐫® 』
 ║🕊️ *ɴᴀᴍᴇ:* ${Vlkyre.pushName || "ɴᴏ_ɴᴀᴍᴇ"}
 ║🎭 *ᴄʜᴀᴛɪᴅ:* ${Vlkyre.chatID.split("@")[0]}
