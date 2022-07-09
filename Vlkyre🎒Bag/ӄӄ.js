@@ -43,11 +43,13 @@ let ᴇᴏɴᴇz = DATABASE;
 let dbAuth = require(`../Vlkyre🌤️Cloud/🍂𝖘𝖖𝖑/Auth`);
 let useRemoteFileAuthState = require("../Vlkyre🌤️Cloud/🍂𝖘𝖖𝖑/dbAuth.js");
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
-async function Ѷ𝖎𝖔𝖓ᴇᴏɴᴇ() {
+let Ѷ𝖎𝖔𝖓 = makeInMemoryStore({ logger: pino().child({ level: "silent", stream: "Ѷ𝖎𝖔𝖓" }) });
+Ѷ𝖎𝖔𝖓.readFromFile("./🕊️𝐕𝐥𝐤𝐲𝐫𝐞🕊️/ᴇᴏɴᴇ®.json");
+setInterval(() => {
+Ѷ𝖎𝖔𝖓.writeToFile("./🕊️𝐕𝐥𝐤𝐲𝐫𝐞🕊️/ᴇᴏɴᴇ®.json");
+}, 10000);
 let msgRetryCounterMap = {};
-let Ѷ𝖎𝖔𝖓 = makeInMemoryStore({
-logger: pino().child({ level: "silent", stream: "Ѷ𝖎𝖔𝖓" }),
-});
+async function Ѷ𝖎𝖔𝖓ᴇᴏɴᴇ() {
 try {
 await goose.connect(MONGOOSE, {
 useNewUrlParser: true,
@@ -74,7 +76,6 @@ process.exit(0);
 await ᴇᴏɴᴇz.sync();
 let { version, isLatest } = await fetchLatestBaileysVersion();
 let { state, saveCreds } = await useRemoteFileAuthState.default();
-// let { state, saveCreds } = await dbAuth();
 let ӄӄ = 𝖍𝖆𝖜ӄC({
 version,
 auth: state,
