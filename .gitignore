@@ -16,6 +16,8 @@ logs
 🕊️𝐌𝐃𝐞𝐯
 *.log
 npm-debug.log*
+Vlkyre.db
+.db
 yarn.lock
 yarn-debug.log*
 yarn-error.log*
