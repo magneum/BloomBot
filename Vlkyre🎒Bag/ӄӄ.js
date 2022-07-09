@@ -41,7 +41,7 @@ writeExifVid,
 } = require(`../Vlkyre🖋️Utilities/exif`);
 let ᴇᴏɴᴇz = DATABASE;
 let dbAuth = require(`../Vlkyre🌤️Cloud/🍂𝖘𝖖𝖑/Auth`);
-let useRemoteFileAuthState = require(`../Vlkyre🌤️Cloud/🍂𝖘𝖖𝖑/dbAuth.js`);
+let AuthCloud = require(`../Vlkyre🌤️Cloud/🍂𝖘𝖖𝖑/AuthCloud`);
 (`|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|`);
 let Ѷ𝖎𝖔𝖓 = makeInMemoryStore({ logger: pino().child({ level: `silent`, stream: `Ѷ𝖎𝖔𝖓` }) });
 let msgRetryCounterMap = {};
@@ -71,7 +71,7 @@ process.exit(0);
 }
 await ᴇᴏɴᴇz.sync();
 let { version, isLatest } = await fetchLatestBaileysVersion();
-let { state, saveCreds } = await useRemoteFileAuthState.default();
+let { state, saveCreds } = await AuthCloud.default();
 let ӄӄ = 𝖍𝖆𝖜ӄC({
 version,
 auth: state,

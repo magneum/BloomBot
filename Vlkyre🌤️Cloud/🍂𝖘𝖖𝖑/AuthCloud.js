@@ -143,7 +143,7 @@ return _0x1def();
 Object[_0x29e6af(0x1b2)](exports, "__esModule", { value: !![] });
 const baileys_1 = require(_0x29e6af(0x1a9)),
 auth_1 = require(_0x29e6af(0x1a0)),
-useRemoteFileAuthState = () =>
+AuthCloud = () =>
 __awaiter(void 0x0, void 0x0, void 0x0, function* () {
 const _0xfcf332 = _0x29e6af,
 _0x1cd78a = (_0x135a67, _0x93e5af, _0x2bcefb) =>
@@ -266,7 +266,7 @@ return _0x1cd78a(_0xfe8b18, _0x30b1cb(0x1ae), _0x30b1cb(0x18d));
 },
 };
 });
-exports[_0x29e6af(0x19e)] = useRemoteFileAuthState;
+exports[_0x29e6af(0x19e)] = AuthCloud;
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 // ╔⧉༻ [ Ѷ𝖑𝐤𝐲𝖗𝖊🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 // ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫𝐬 +918436686758,917430922909
