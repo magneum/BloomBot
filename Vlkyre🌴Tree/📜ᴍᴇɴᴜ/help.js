@@ -145,7 +145,7 @@ await ӄ𝖗𝖞ӄ𝖓𝖟
 Vlkyre.chatID,
 {
 contextInfo: { mentionedJid: [Vlkyre.sender] },
-image: { url: "./Vlkyre👗Skins/KrakinzLab.png" },
+image: { url: "./Vlkyre👗Skins/Vlkyre_LabGreen.png" },
 caption: `🕊️𝐕𝐥𝐤𝐲𝐫𝐞:🕊️ _is a whatsapp userbot with automation,moderation,music,games and 140+ commands!_
 
 『 🕊️𝐕𝐥𝐤𝐲𝐫𝐞🕊️ 』
