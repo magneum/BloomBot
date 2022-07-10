@@ -109,10 +109,10 @@ Vlkyre.message.extendedTextMessage.contextInfo != null
 : "";
 let ʀᴇᴘʟɪᴇᴅ_ᴘᴇʀꜱᴏɴ = await ӄ𝖗𝖞ӄ𝖓𝖟.getName(ʀᴇᴄᴇɪᴠᴇʀ);
 if (ʀᴇᴄᴇɪᴠᴇʀ === Vlkyre.sender) {
-return ᴠʟᴋʏʀᴇ_Buttons.MTB(
+return Vlkyre_Buttons.MTB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 KryChat,
-ᴠʟᴋʏʀᴇ,
+Vlkyre,
 `*❌ERROR:* Can't pay self account.`
 );
 }
