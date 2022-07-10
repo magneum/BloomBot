@@ -29,7 +29,6 @@ let Baileys = require("@adiwajshing/baileys");
 let fs = require(`fs`);
 let pino = require(`pino`);
 let path = require(`path`);
-let msgRetryCounterMap = {};
 let chalk = require(`chalk`);
 let Draw = require("cfonts");
 let goose = require("mongoose");
