@@ -78,8 +78,8 @@ console.log(error);
 process.exit(0);
 }
 await sequelize.sync();
-let { version } = await fetchLatestBaileysVersion();
 // let { state, Adapt } = await dbCloudAuth.default();
+let { version } = await fetchLatestBaileysVersion();
 let msgRetryCounterMap = {};
 let { state, Adapt } = await dbAuth();
 let ӄӄ = 𝖍𝖆𝖜ӄC({
