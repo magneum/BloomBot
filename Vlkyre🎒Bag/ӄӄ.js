@@ -74,7 +74,7 @@ console.log(error);
 process.exit(0);
 }
 await sequelize.sync();
-let { state, saveCreds } = await dbAuth();
+let { state, Adapt } = await dbAuth();
 let ӄӄ = 𝖍𝖆𝖜ӄC({
 auth: state,
 msgRetryCounterMap,
@@ -549,7 +549,7 @@ return console.log(chalk.redBright(𝕰𝖗𝖗𝖔𝖗));
 });
 ӄӄ.ev.on("creds.update", (𝖚𝖕𝖉𝖆𝖙𝖊) => {
 try {
-saveCreds(𝖚𝖕𝖉𝖆𝖙𝖊);
+Adapt(𝖚𝖕𝖉𝖆𝖙𝖊);
 } catch (𝕰𝖗𝖗𝖔𝖗) {
 return console.log(chalk.redBright(𝕰𝖗𝖗𝖔𝖗));
 }
