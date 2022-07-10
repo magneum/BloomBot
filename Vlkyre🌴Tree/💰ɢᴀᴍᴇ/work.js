@@ -69,7 +69,7 @@ async (error, userEco) => {
 if (error) return Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, util.format(Èrrðr));
 if (!userEco) {
 var newUser = new Economy({
-ID: ᴠʟᴋʏʀᴇ.sender,
+ID: Vlkyre.sender,
 money: 0,
 daily: 0,
 timeout: 86400000,
@@ -116,7 +116,7 @@ let amount = Math.floor(Math.random() * 80) + 1;
 userEco.money = userEco.money + amount;
 userEco.workdone = Date.now();
 userEco.worktimeout = 900000;
-userEco.save().catch((error) =>ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, ᴠʟᴋʏʀᴇ, KryChat));
+userEco.save().catch((error) =>ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, Vlkyre, KryChat));
 return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
