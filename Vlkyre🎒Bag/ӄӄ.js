@@ -29,6 +29,7 @@ let pino = require(`pino`);
 let path = require(`path`);
 let msgRetryCounterMap = {};
 let chalk = require(`chalk`);
+let Draw = require("cfonts");
 let goose = require("mongoose");
 let FileType = require(`file-type`);
 let PhoneNumber = require(`awesome-phonenumber`);
@@ -92,6 +93,12 @@ return {
 conversation: `-null-`,
 };
 },
+});
+console.clear();
+Draw.say("Vlkyre\nBY\nKrakinzLab", {
+font: "block",
+align: "center",
+gradient: ["red", "yellow"],
 });
 Ѷ𝖎𝖔𝖓.bind(ӄӄ.ev);
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
@@ -363,7 +370,6 @@ buffer = Buffer.concat([buffer, chunk]);
 }
 let type = await FileType.fromBuffer(buffer);
 trueFileName = attachExtension ? filename + `.` + type.ext : filename;
-// save to file
 await fs.writeFileSync(trueFileName, buffer);
 return trueFileName;
 };
