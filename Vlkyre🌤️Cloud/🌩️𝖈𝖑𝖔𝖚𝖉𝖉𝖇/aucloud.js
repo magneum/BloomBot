@@ -13,7 +13,7 @@
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 require("../../Vlkyre🖋️Utilities/𝕷𝖆ყO𝖚𝖙");
 const cqulize = require("sequelize");
-let clquelize = DATABASE;
+let sequelize = DATABASE;
 class Auth extends cqulize.Model {}
 exports.Auth = Auth;
 Auth.init(
@@ -30,7 +30,7 @@ type: cqulize.DataTypes.STRING(1000000),
 },
 },
 {
-clquelize,
+sequelize,
 tableName: "Authentication",
 timestamps: false,
 }
