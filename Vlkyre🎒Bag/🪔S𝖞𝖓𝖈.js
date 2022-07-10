@@ -63,7 +63,7 @@ const _0x2c8085 = [
 "888660dMhqwL",
 "584564xzHtco",
 "schedule",
-"\x20🧆\x20𝐃𝐚𝐭𝐞:\x20",
+"\x20🕊️\x20𝐃𝐚𝐭𝐞:\x20",
 "error",
 "echo",
 "2xyXPbq",
