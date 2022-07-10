@@ -19,7 +19,9 @@ let connection_update = async (update, Ѷ𝖎𝖔𝖓ᴇᴏɴᴇ, ӄӄ) => {
     lastDisconnect.error?.output?.statusCode !== DisconnectReason.loggedOut
       ? Ѷ𝖎𝖔𝖓ᴇᴏɴᴇ()
       : console.log("❌𝐄𝐫𝐫𝐨𝐫꧂ Connection closed.");
-  if (qr) QR_GENERATE = qr;
+  if (qr) {
+    QR_GENERATE = qr;
+  }
   if (connection === "open")
     console.log(
       chalk.red(
