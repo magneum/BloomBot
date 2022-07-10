@@ -67,9 +67,9 @@ console.log(chalk.green("💡𝐈𝐧𝐟𝐨: Connected With 🍃𝖒𝖔𝖓�
 }
 try {
 await sequelize.authenticate();
-console.log(chalk.green(`💡𝐈𝐧𝐟𝐨: Connected with 🍂𝖘𝖖𝖑.`));
+console.log(chalk.green("💡𝐈𝐧𝐟𝐨: Connected with 🍂𝖘𝖖𝖑 + 🌩️𝖈𝖑𝖔𝖚𝖉𝖉𝖇."));
 } catch (error) {
-console.error(chalk.red(`❌𝐄𝐫𝐫𝐨𝐫: Unable to Connected with 🍂𝖘𝖖𝖑.`));
+console.error(chalk.red("❌𝐄𝐫𝐫𝐨𝐫: Unable to Connected with 🍂𝖘𝖖𝖑 + 🌩️𝖈𝖑𝖔𝖚𝖉𝖉𝖇."));
 console.log(error);
 process.exit(0);
 }

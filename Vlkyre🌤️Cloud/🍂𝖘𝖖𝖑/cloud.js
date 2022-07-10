@@ -76,7 +76,7 @@ return _0x11f42a;
 };
 return _0x236b();
 }
-let sequelize = DATABASE,
+let clquelize = DATABASE,
 SQ = require("sequelize");
 class Cred extends SQ[_0x80e119(0x179)] {}
 (exports[_0x80e119(0x16a)] = Cred),
@@ -85,7 +85,7 @@ Cred["init"](
 key: { type: SQ[_0x80e119(0x169)][_0x80e119(0x172)], allowNull: ![] },
 value: { type: SQ["DataTypes"][_0x80e119(0x175)] },
 },
-{ sequelize: sequelize, tableName: _0x80e119(0x16e), timestamps: ![] }
+{ clquelize: clquelize, tableName: _0x80e119(0x16e), timestamps: ![] }
 ),
 _0x80e119(0x177);
 class Key extends SQ["Model"] {}
@@ -99,7 +99,7 @@ allowNull: ![],
 value: { type: SQ[_0x80e119(0x169)][_0x80e119(0x172)](0xf4240) },
 type: { type: SQ[_0x80e119(0x169)][_0x80e119(0x172)](0xf4240) },
 },
-{ sequelize: sequelize, tableName: _0x80e119(0x174), timestamps: ![] }
+{ clquelize: clquelize, tableName: _0x80e119(0x174), timestamps: ![] }
 );
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 // ╔⧉༻ [ Ѷ𝖑𝐤𝐲𝖗𝖊🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬! 
