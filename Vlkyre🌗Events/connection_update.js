@@ -22,12 +22,13 @@ let connection_update = async (update, Ѷ𝖎𝖔𝖓ᴇᴏɴᴇ, ӄӄ) => {
   if (qr) {
     QR_GENERATE = qr;
   }
-  if (connection === "open")
+  if (connection === "open"){}
     console.log(
       chalk.red(
         "|⬡══════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════⬡"
       )
     );
+      }
 };
 module.exports = {
   Vcnup: connection_update,
