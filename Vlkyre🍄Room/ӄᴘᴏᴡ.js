@@ -167,15 +167,11 @@ Vlkyre.isCommand &&
 *🕊️Grp D:* chat.whatsapp.com/${ʀᴇꜱᴘᴏɴꜱᴇ4}
 *🕊️Grp E:* chat.whatsapp.com/${ʀᴇꜱᴘᴏɴꜱᴇ5}
 */
-return await Vlkyre.reply(`╔══『 𝐏𝐫𝐨𝐟𝐢𝐥𝐞𝐫® 』
-║ *❣️ ɴᴀᴍᴇ:* ${Vlkyre.pushName || "No_Name"}
-║ *⚡ ɪᴅ:* ${Vlkyre.chatID.split("@")[0]}
-╚═══════╝
-
+return await Vlkyre.reply(`*❣️ ɴᴀᴍᴇ:* ${Vlkyre.pushName || "No_Name"}
 
 ❗ 𝐕𝐄𝐑𝐓𝐈𝐅𝐈𝐂𝐀𝐓𝐈𝐎𝐍 ❗
-*Join Any Group Using Below Website and  get verified to use bot anywhere!*
-VlkyreAI.krakinzkon.repl.co`);
+Join Any Group Using Below Website and  get verified to use bot anywhere!
+https://kryknz.github.io/Vlkyre`);
 } else {
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 await usedUser.findOne(
