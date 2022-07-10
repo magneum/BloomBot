@@ -11,116 +11,110 @@
 // ║ In short, Fork At Your Own Risk.
 // ╚════════════╝
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-const _0xc129f8 = _0x3bc2;
-(function (_0x3ba365, _0x4239f1) {
-const _0x42781d = _0x3bc2,
-_0x1f73a5 = _0x3ba365();
-while (!![]) {
-try {
-const _0x2d9ec8 =
--parseInt(_0x42781d(0x1c5)) / 0x1 +
-(parseInt(_0x42781d(0x1c6)) / 0x2) *
-(parseInt(_0x42781d(0x1c8)) / 0x3) +
-(-parseInt(_0x42781d(0x1c3)) / 0x4) *
-(-parseInt(_0x42781d(0x1d4)) / 0x5) +
-(-parseInt(_0x42781d(0x1d5)) / 0x6) *
-(parseInt(_0x42781d(0x1d8)) / 0x7) +
-(-parseInt(_0x42781d(0x1cf)) / 0x8) *
-(-parseInt(_0x42781d(0x1ca)) / 0x9) +
-(-parseInt(_0x42781d(0x1d2)) / 0xa) *
-(parseInt(_0x42781d(0x1c1)) / 0xb) +
-parseInt(_0x42781d(0x1bb)) / 0xc;
-if (_0x2d9ec8 === _0x4239f1) break;
-else _0x1f73a5["push"](_0x1f73a5["shift"]());
-} catch (_0x29b304) {
-_0x1f73a5["push"](_0x1f73a5["shift"]());
-}
-}
-})(_0x3c25, 0xa46a6);
-let cron = require(_0xc129f8(0x1c7));
-cron["schedule"](_0xc129f8(0x1c2), () => {
-const _0x1facbe = _0xc129f8;
-let _0x61adb0 = require(_0x1facbe(0x1cd)),
-_0x18c299 = require("./package.json"),
-_0x5219d7 = new Date(),
-_0x403cc1 = ("0" + _0x5219d7[_0x1facbe(0x1c9)]())[_0x1facbe(0x1d1)](-0x2),
-_0x4d36f1 = ("0" + (_0x5219d7["getMonth"]() + 0x1))[_0x1facbe(0x1d1)](-0x2),
-_0xe405c6 = _0x5219d7[_0x1facbe(0x1cb)](),
-_0x10b1fc = _0x5219d7[_0x1facbe(0x1c0)](),
-_0x40f417 = _0x5219d7[_0x1facbe(0x1d3)](),
-_0x5fe397 = _0x5219d7[_0x1facbe(0x1d7)]();
-!_0x61adb0["which"]("git") &&
-(_0x61adb0[_0x1facbe(0x1bd)](_0x1facbe(0x1d9)),
-_0x61adb0[_0x1facbe(0x1d0)](0x1)),
-_0x61adb0[_0x1facbe(0x1ce)](
-"git\x20pull\x20&&\x20git\x20add\x20--all\x20&&\x20git\x20commit\x20-am\x20\x22「\x20🕊️\x20𝐕𝐥𝐤𝐲𝐫𝐞\x20🕊️\x20」\x20:\x20" +
-_0x18c299[_0x1facbe(0x1c4)] +
-_0x1facbe(0x1cc) +
-(_0xe405c6 +
-"-" +
-_0x4d36f1 +
-"-" +
-_0x403cc1 +
-"\x20" +
-_0x10b1fc +
-":" +
-_0x40f417 +
-":" +
-_0x5fe397) +
-_0x1facbe(0x1d6)
-)[_0x1facbe(0x1bf)] !== 0x0 &&
-(_0x61adb0[_0x1facbe(0x1bc)](), _0x61adb0["echo"](_0x1facbe(0x1be)));
-});
-function _0x3bc2(_0x222326, _0x488bd5) {
-const _0x3c25f2 = _0x3c25();
+function _0x464f(_0x50ba64, _0x9cab41) {
+const _0x49e5c5 = _0x49e5();
 return (
-(_0x3bc2 = function (_0x3bc2ed, _0x268795) {
-_0x3bc2ed = _0x3bc2ed - 0x1bb;
-let _0x19e38b = _0x3c25f2[_0x3bc2ed];
-return _0x19e38b;
+(_0x464f = function (_0x464fb9, _0x20b3f8) {
+_0x464fb9 = _0x464fb9 - 0x124;
+let _0x43f391 = _0x49e5c5[_0x464fb9];
+return _0x43f391;
 }),
-_0x3bc2(_0x222326, _0x488bd5)
+_0x464f(_0x50ba64, _0x9cab41)
 );
 }
-function _0x3c25() {
-const _0x3eb2dc = [
-"155095QTWPun",
-"292svcuKm",
-"node-cron",
-"12765jvlhxo",
-"getDate",
-"27WFSQjt",
-"getFullYear",
-"\x20📅𝐃𝐚𝐭𝐞:\x20",
-"shelljs",
-"exec",
-"1552136qUljww",
-"exit",
-"slice",
-"10ccwgtP",
+const _0x5424c8 = _0x464f;
+(function (_0x838b2d, _0x49a8ac) {
+const _0x125ca5 = _0x464f,
+_0x2f6702 = _0x838b2d();
+while (!![]) {
+try {
+const _0x3b27e0 =
+(-parseInt(_0x125ca5(0x126)) / 0x1) *
+(-parseInt(_0x125ca5(0x137)) / 0x2) +
+parseInt(_0x125ca5(0x12c)) / 0x3 +
+(parseInt(_0x125ca5(0x132)) / 0x4) *
+(parseInt(_0x125ca5(0x127)) / 0x5) +
+parseInt(_0x125ca5(0x131)) / 0x6 +
+(parseInt(_0x125ca5(0x138)) / 0x7) *
+(parseInt(_0x125ca5(0x12e)) / 0x8) +
+(-parseInt(_0x125ca5(0x12d)) / 0x9) *
+(-parseInt(_0x125ca5(0x128)) / 0xa) +
+(-parseInt(_0x125ca5(0x13a)) / 0xb) *
+(parseInt(_0x125ca5(0x13d)) / 0xc);
+if (_0x3b27e0 === _0x49a8ac) break;
+else _0x2f6702["push"](_0x2f6702["shift"]());
+} catch (_0x1a2977) {
+_0x2f6702["push"](_0x2f6702["shift"]());
+}
+}
+})(_0x49e5, 0x1ef8a);
+let cron = require("node-cron");
+function _0x49e5() {
+const _0x2c8085 = [
+"48100mZdqNh",
 "getMinutes",
-"3969065RAgozt",
-"6325962RwRThx",
-"\x20\x22\x20&&\x20git\x20push",
+"exec",
+"getMonth",
+"445905RfwmPt",
+"18xIBfGZ",
+"1950248mccgJd",
+"git",
 "getSeconds",
-"7oWQZqP",
-"Sorry,\x20this\x20script\x20requires\x20git",
-"5845044yvYKNF",
+"888660dMhqwL",
+"584564xzHtco",
+"schedule",
+"\x20🧆\x20𝐃𝐚𝐭𝐞:\x20",
 "error",
 "echo",
+"2xyXPbq",
+"7ezVQxa",
+"slice",
+"198zDyYqb",
+"git\x20pull\x20&&\x20git\x20add\x20--all\x20&&\x20git\x20commit\x20-am\x20\x22「\x20Ѷ𝖆𝖑𝐤𝐲𝖗𝖎𝖊\x20」\x20:\x20",
+"getFullYear",
+"530832iKREHY",
 "💡𝐈𝐧𝐟𝐨꧂\x20Exited\x20With\x20Code\x20!==0",
-"code",
-"getHours",
-"6614443fFDibW",
-"*/2\x20*\x20*\x20*\x20*\x20*",
-"4ALSCbk",
-"vers",
+"Sorry,\x20this\x20script\x20requires\x20git",
+"226819RbqRXu",
+"5xUozdG",
 ];
-_0x3c25 = function () {
-return _0x3eb2dc;
+_0x49e5 = function () {
+return _0x2c8085;
 };
-return _0x3c25();
+return _0x49e5();
 }
+cron[_0x5424c8(0x133)]("*/2\x20*\x20*\x20*\x20*\x20*", () => {
+const _0x2e1027 = _0x5424c8;
+let _0x31e4da = require("shelljs"),
+_0x485a50 = require("../package.json"),
+_0x244fdb = new Date(),
+_0x53fe47 = ("0" + _0x244fdb["getDate"]())[_0x2e1027(0x139)](-0x2),
+_0xe4a3c9 = ("0" + (_0x244fdb[_0x2e1027(0x12b)]() + 0x1))["slice"](-0x2),
+_0x22eadc = _0x244fdb[_0x2e1027(0x13c)](),
+_0x46d885 = _0x244fdb["getHours"](),
+_0x1df69b = _0x244fdb[_0x2e1027(0x129)](),
+_0x2c8b58 = _0x244fdb[_0x2e1027(0x130)]();
+!_0x31e4da["which"](_0x2e1027(0x12f)) &&
+(_0x31e4da[_0x2e1027(0x136)](_0x2e1027(0x125)), _0x31e4da["exit"](0x1)),
+_0x31e4da[_0x2e1027(0x12a)](
+_0x2e1027(0x13b) +
+_0x485a50["vers"] +
+_0x2e1027(0x134) +
+(_0x22eadc +
+"-" +
+_0xe4a3c9 +
+"-" +
+_0x53fe47 +
+"\x20" +
+_0x46d885 +
+":" +
+_0x1df69b +
+":" +
+_0x2c8b58) +
+"\x20\x22\x20&&\x20git\x20push"
+)["code"] !== 0x0 &&
+(_0x31e4da[_0x2e1027(0x135)](), _0x31e4da["echo"](_0x2e1027(0x124)));
+});
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 // ╔⧉༻ [ Ѷ𝖑𝐤𝐲𝖗𝖊🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬! 
 // ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫𝐬 +918436686758,917430922909
