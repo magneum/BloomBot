@@ -76,7 +76,6 @@ process.exit(0);
 await sequelize.sync();
 let { state, saveCreds } = await dbAuth();
 let ӄӄ = 𝖍𝖆𝖜ӄC({
-version,
 auth: state,
 msgRetryCounterMap,
 printQRInTerminal: true,
