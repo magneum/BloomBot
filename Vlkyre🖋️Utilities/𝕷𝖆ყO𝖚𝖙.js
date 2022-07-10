@@ -27,32 +27,16 @@ log = console.log;
 }
 return log;
 };
-process.env.DATABASE_URL =
-process.env.DATABASE_URL === undefined
-? "./🕊️𝐕𝐥𝐤𝐲𝐫𝐞🕊️/Vlkyre.db"
-: process.env.DATABASE_URL;
-let gg =
-process.env.MODS === undefined
-? "917430922909,918436686758"
-: process.env.MODS;
+process.env.DATABASE_URL =process.env.DATABASE_URL === undefined? "./🕊️𝐕𝐥𝐤𝐲𝐫𝐞🕊️/Vlkyre.db": process.env.DATABASE_URL;
+let gg = process.env.MODS === undefined? "917430922909,918436686758": process.env.MODS;
 global.VlkyreYT = process.env.VlkyreYT;
 global.HEROKU = process.env.HEROKU;
-global.HEROKU_API_KEY =
-process.env.HEROKU_API_KEY === undefined
-? "Null"
-: process.env.HEROKU_API_KEY;
-global.HEROKU_APP_NAME =
-process.env.HEROKU_APP_NAME === undefined
-? "Null"
-: process.env.HEROKU_APP_NAME;
+global.HEROKU_API_KEY =process.env.HEROKU_API_KEY === undefined? "Null": process.env.HEROKU_API_KEY;
+global.HEROKU_APP_NAME =process.env.HEROKU_APP_NAME === undefined? "Null": process.env.HEROKU_APP_NAME;
 global.owner = gg.split(",");
 global.MONGOOSE = process.env.MongoDb;
-global.DATABASE_URL =
-process.env.DATABASE_URL === undefined
-? "./🕊️𝐕𝐥𝐤𝐲𝐫𝐞🕊️/Vlkyre.db"
-: process.env.DATABASE_URL;
-global.DATABASE =
-process.env.DATABASE_URL === "./🕊️𝐕𝐥𝐤𝐲𝐫𝐞🕊️/Vlkyre.db"
+global.DATABASE_URL =process.env.DATABASE_URL === undefined? "./🕊️𝐕𝐥𝐤𝐲𝐫𝐞🕊️/Vlkyre.db": process.env.DATABASE_URL;
+global.DATABASE =process.env.DATABASE_URL === "./🕊️𝐕𝐥𝐤𝐲𝐫𝐞🕊️/Vlkyre.db"
 ? new sequelize.Sequelize({
 dialect: "sqlite",
 storage: process.env.DATABASE_URL,
