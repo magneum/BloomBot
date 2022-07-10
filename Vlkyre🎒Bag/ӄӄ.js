@@ -14,15 +14,15 @@
 require(`../Vlkyre🖋️Utilities/𝕷𝖆ყO𝖚𝖙`);
 require(`../Vlkyre🖋️Utilities/Ѷ𝖆𝖑.js`);
 let { default: 𝖍𝖆𝖜ӄC,
-// Baileys.generateForwardMessageContent,
-// Baileys.generateWAMessageFromContent,
-// Baileys.downloadContentFromMessage,
-// Baileys.fetchLatestBaileysVersion,
-// Baileys.prepareWAMessageMedia,
-// Baileys.makeInMemoryStore,
-// Baileys.MessageRetryMap,
-// Baileys.jidDecode,
-// Baileys.proto,
+generateForwardMessageContent,
+generateWAMessageFromContent,
+downloadContentFromMessage,
+fetchLatestBaileysVersion,
+prepareWAMessageMedia,
+makeInMemoryStore,
+MessageRetryMap,
+jidDecode,
+proto,
  } = require(`@adiwajshing/baileys`);
 let Baileys = require("@adiwajshing/baileys");
 let fs = require(`fs`);
