@@ -1,7 +1,7 @@
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-// ╔⧉༻ [ Ѷ𝖑𝐤𝐲𝖗𝖊🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
+// ╔⧉༻ [ Ѷ𝖑𝐤𝐲𝖗𝖊🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬! 
 // ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫𝐬 +918436686758,917430922909
-// ║
+// ║ 
 // ║ We won't be responsible for any kind of ban due to this bot.
 // ║ Vlkyre was made for fun purpose and to make group management easier.
 // ║ It's your concern if you spam and gets your account banned.
@@ -79,13 +79,10 @@ console.log(error);
 process.exit(0);
 }
 await sequelize.sync();
-// let { state, Adapt } = await dbCloudAuth.default();
-let { version } = await fetchLatestBaileysVersion();
-let msgRetryCounterMap = {};
-let { state, Adapt } = await dbAuth();
+// let { state, saveCreds } = await dbCloudAuth.default();
+let { state, saveCreds } = await dbAuth();
 let ӄӄ = 𝖍𝖆𝖜ӄC({
 auth: state,
-msgRetryCounterMap,
 printQRInTerminal: true,
 defaultQueryTimeoutMs: undefined,
 logger: pino({ level: `silent` }),
@@ -562,21 +559,23 @@ return console.log(chalk.redBright(𝕰𝖗𝖗𝖔𝖗));
 });
 ӄӄ.ev.on("creds.update", async (𝖚𝖕𝖉𝖆𝖙𝖊) => {
 try {
-await simpleGit
-.simpleGit()
-.add("./🕊️𝐕𝐥𝐤𝐲𝐫𝐞🕊️/Vlkyre.db")
-.push(["-u", "origin", "🐍Ş𝖎𝖕𝖍𝖔𝖓®"], function () {
-return console.log("Pushed DB!");
-})
-.catch((error) => console.log("error: " + error));
-await Adapt(𝖚𝖕𝖉𝖆𝖙𝖊);
-await simpleGit
-.simpleGit()
-.add("./🕊️𝐕𝐥𝐤𝐲𝐫𝐞🕊️/Vlkyre.db")
-.push(["-u", "origin", "🐍Ş𝖎𝖕𝖍𝖔𝖓®"], function () {
-return console.log("Pushed DB!");
-})
-.catch((error) => console.log("error: " + error));
+// await simpleGit.simpleGit()
+// .add("./🕊️𝐕𝐥𝐤𝐲𝐫𝐞🕊️/Vlkyre.db")
+// .addConfig('user.name', 'KryKnz')
+// .addConfig('user.email', 'krakinzkon@gmail.com')
+// .commit('committed by "autoDB"', "./🕊️𝐕𝐥𝐤𝐲𝐫𝐞🕊️/Vlkyre.db")
+// .push(["-u", "origin", "🐍Ş𝖎𝖕𝖍𝖔𝖓®"], function () {
+// return console.log("Pushed DB!");
+// }).catch((error) => console.log("error: " + error));
+await saveCreds(𝖚𝖕𝖉𝖆𝖙𝖊);
+// await simpleGit.simpleGit()
+// .add("./🕊️𝐕𝐥𝐤𝐲𝐫𝐞🕊️/Vlkyre.db")
+// .addConfig('user.name', 'KryKnz')
+// .addConfig('user.email', 'krakinzkon@gmail.com')
+// .commit('committed by "autoDB"', "./🕊️𝐕𝐥𝐤𝐲𝐫𝐞🕊️/Vlkyre.db")
+// .push(["-u", "origin", "🐍Ş𝖎𝖕𝖍𝖔𝖓®"], function () {
+// return console.log("Pushed DB!");
+// }).catch((error) => console.log("error: " + error));
 } catch (𝕰𝖗𝖗𝖔𝖗) {
 return console.log(chalk.redBright(𝕰𝖗𝖗𝖔𝖗));
 }
@@ -608,8 +607,16 @@ return console.log(chalk.redBright(𝕰𝖗𝖗𝖔𝖗));
 return ӄӄ;
 }
 Ѷ𝖎𝖔𝖓ᴇᴏɴᴇ().catch((𝕰𝖗𝖗𝖔𝖗) => console.log(chalk.redBright(𝕰𝖗𝖗𝖔𝖗)));
-("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
-/*
-* * * * * * * * * * |        (𝐜)Vlkyre 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!        * * * * * * * * * *
-*/
-("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
+("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
+// ╔⧉༻ [ Ѷ𝖑𝐤𝐲𝖗𝖊🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬! 
+// ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫𝐬 +918436686758,917430922909
+// ║ 
+// ║ We won't be responsible for any kind of ban due to this bot.
+// ║ Vlkyre was made for fun purpose and to make group management easier.
+// ║ It's your concern if you spam and gets your account banned.
+// ║ Also, Forks won't be entertained.
+// ║ If you fork this repo and edit plugins, it's your concern for further updates.
+// ║ Forking Repo is fine. But if you edit something we will not provide any help.
+// ║ In short, Fork At Your Own Risk.
+// ╚════════════╝
+("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");

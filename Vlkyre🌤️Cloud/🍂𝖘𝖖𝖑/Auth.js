@@ -228,7 +228,7 @@ await _0x5635b4(_0x26c082, _0x1dff97, _0x534241);
 },
 },
 },
-Adapt: _0x3897b5,
+saveCreds: _0x3897b5,
 };
 };
 function _0xb860() {
