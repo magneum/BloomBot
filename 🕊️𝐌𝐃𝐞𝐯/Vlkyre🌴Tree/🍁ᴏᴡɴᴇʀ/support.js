@@ -145,15 +145,17 @@ return await Image_Button(
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/KrakinzLab.png",
-`『 🕊️𝐕𝐥𝐤𝐲𝐫𝐞🕊️ 』
-ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™
+`Ῠ  *ɴᴀᴍᴇ:* ${Vlkyre.pushName || "ɴᴏ_ɴᴀᴍᴇ"}
 
-🍁 *ᴘʀᴇꜰɪx:* ${prefix}
-💰 *ɢᴘᴀʏ:* +918436686758
-❣️ *ᴜᴘɪ:* krakinzkon@oksbi
-🐞 *ɢɪᴛʜᴜʙ:* github.com/kryknz
-🍻 *ᴠʟᴋʏʀᴇ:* github.com/kryknz/vlkyre
-🛰️ *ᴡᴇʙꜱɪᴛᴇ:*  VlkyreAI.krakinzkon.repl.co
+🕊️𝐕𝐥𝐤𝐲𝐫𝐞: is a whatsapp userbot with automation,moderation,music,games and 140+ commands!
+╔══『 🕊️𝐕𝐥𝐤𝐲𝐫𝐞🕊️ 』
+║Ῠ *ᴘʀᴇꜰɪx:* ${prefix}
+║Ῠ *ɢᴘᴀʏ:* +918436686758
+║Ῠ *ᴜᴘɪ:* krakinzkon@oksbi
+║Ῠ *ɢɪᴛʜᴜʙ:* https://github.com/kryknz
+║Ῠ *ᴠʟᴋʏʀᴇ:* https://github.com/kryknz/vlkyre
+║Ῠ *ᴡᴇʙꜱɪᴛᴇ:*  https://kryknz.github.io/Vlkyre
+╚═══════╝
 
 
 『 🐙𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫𝐬°🐙 』

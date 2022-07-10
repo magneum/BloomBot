@@ -14,34 +14,10 @@
 let chalk = require("chalk");
 let { DisconnectReason } = require("@adiwajshing/baileys");
 let connection_update = async (update, Ѷ𝖎𝖔𝖓ᴇᴏɴᴇ, ӄӄ) => {
-try {
 const { lastDisconnect, connection, qr } = update;
-if (connection === "close") {
-lastDisconnect.error?.output?.statusCode !== DisconnectReason.loggedOut
-? Ѷ𝖎𝖔𝖓ᴇᴏɴᴇ()
-: console.log("❌𝐄𝐫𝐫𝐨𝐫꧂ Connection closed.");
-}
-if (qr) {
-QR_GENERATE = qr;
-}
-if (connection === "open") {
-console.log(
-chalk.red(
-"|⬡══════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════⬡"
-)
-);
-try {
-await ӄӄ.groupSettingUpdate(
-"120363020792949649@g.us",
-"not_announcement"
-);
-} catch (𝕰𝖗𝖗𝖔𝖗) {
-console.log(𝕰𝖗𝖗𝖔𝖗);
-}
-}
-} catch (𝕰𝖗𝖗𝖔𝖗) {
-console.log(𝕰𝖗𝖗𝖔𝖗);
-}
+if (connection === "close") lastDisconnect.error?.output?.statusCode !== DisconnectReason.loggedOut? Ѷ𝖎𝖔𝖓ᴇᴏɴᴇ(): console.log("❌𝐄𝐫𝐫𝐨𝐫꧂ Connection closed.");
+if (qr) QR_GENERATE = qr;
+if (connection === "open") console.log(chalk.red("|⬡══════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════⬡"));
 };
 module.exports = {
 Vcnup: connection_update,
