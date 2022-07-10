@@ -560,19 +560,19 @@ return console.log(chalk.redBright(𝕰𝖗𝖗𝖔𝖗));
 ӄӄ.ev.on("creds.update", async (𝖚𝖕𝖉𝖆𝖙𝖊) => {
 try {
 // await simpleGit.simpleGit()
-// .add("./🕊️𝐕𝐥𝐤𝐲𝐫𝐞🕊️/Vlkyre.db")
+// .add("./Valkyrie🕊️Adapt/Vlkyre.db")
 // .addConfig('user.name', 'KryKnz')
 // .addConfig('user.email', 'krakinzkon@gmail.com')
-// .commit('committed by "autoDB"', "./🕊️𝐕𝐥𝐤𝐲𝐫𝐞🕊️/Vlkyre.db")
+// .commit('committed by "autoDB"', "./Valkyrie🕊️Adapt/Vlkyre.db")
 // .push(["-u", "origin", "🐍Ş𝖎𝖕𝖍𝖔𝖓®"], function () {
 // return console.log("Pushed DB!");
 // }).catch((error) => console.log("error: " + error));
 await saveCreds(𝖚𝖕𝖉𝖆𝖙𝖊);
 // await simpleGit.simpleGit()
-// .add("./🕊️𝐕𝐥𝐤𝐲𝐫𝐞🕊️/Vlkyre.db")
+// .add("./Valkyrie🕊️Adapt/Vlkyre.db")
 // .addConfig('user.name', 'KryKnz')
 // .addConfig('user.email', 'krakinzkon@gmail.com')
-// .commit('committed by "autoDB"', "./🕊️𝐕𝐥𝐤𝐲𝐫𝐞🕊️/Vlkyre.db")
+// .commit('committed by "autoDB"', "./Valkyrie🕊️Adapt/Vlkyre.db")
 // .push(["-u", "origin", "🐍Ş𝖎𝖕𝖍𝖔𝖓®"], function () {
 // return console.log("Pushed DB!");
 // }).catch((error) => console.log("error: " + error));
