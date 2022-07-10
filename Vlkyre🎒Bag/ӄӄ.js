@@ -88,7 +88,7 @@ msgRetryCounterMap,
 printQRInTerminal: true,
 defaultQueryTimeoutMs: undefined,
 logger: pino({ level: `silent` }),
-browser: [`Vlkyre`, `Chrome`, `1.0.0`],
+browser: [`Vlkyre`, `Chrome`, `4.0.0`],
 getMessage: async (key) => {
 return {
 conversation: `-null-`,
