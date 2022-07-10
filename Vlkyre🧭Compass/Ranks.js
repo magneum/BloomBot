@@ -19,7 +19,7 @@ let canvacord = require("canvacord");
 let randomMC = require("random-material-color");
 let color = randomMC.getColor();
 Levels.setURL(MONGOOSE);
-exports.ARanks = async (Vlkyre, ӄӄ, Caught) => {
+exports.ARanks = async (Vlkyre, ӄ𝖗𝖞ӄ𝖓𝖟, Caught) => {
 let randomXp = Math.floor(Math.random() * 3) + 1;
 let user = await Levels.fetch(Vlkyre.sender, Vlkyre.chatID, true);
 if (!user) {
@@ -92,7 +92,7 @@ let expFile = `./Vlkyre🎒Bag/${Date.now()}r${Vlkyre.key.id}.png`;
 let աɦօֆɛ = Math.floor(1000 + Math.random() * 9000);
 let 𝕻𝕻𝖑𝖊𝖙𝖊𝖗;
 try {
-𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄӄ.profilePictureUrl(Vlkyre.chatID, `image`);
+𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄ𝖗𝖞ӄ𝖓𝖟.profilePictureUrl(Vlkyre.chatID, `image`);
 } catch {
 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = `./Vlkyre👗Skins/Vlkyre.png`;
 }
@@ -126,8 +126,8 @@ let rank = new canvacord.Rank()
 .setDiscriminator(աɦօֆɛ);
 return await rank.build().then(async (data) => {
 fs.writeFile(expFile, data, async (error) => {
-if (error) return Caught(ӄӄ, Vlkyre, error);
-await ӄӄ
+if (error) return Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, error);
+await ӄ𝖗𝖞ӄ𝖓𝖟
 .sendMessage(
 Vlkyre.chatID,
 {
@@ -160,7 +160,7 @@ headerType: 4,
 quoted: Vlkyre,
 }
 )
-.catch((e) => Caught(ӄӄ, Vlkyre, e));
+.catch((e) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, e));
 return fs.unlinkSync(expFile);
 });
 });

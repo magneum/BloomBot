@@ -169,13 +169,13 @@ let { waifu } = require("../Vlkyre🌴Tree/⚡ʀᴀɴᴅᴏᴍꜱ/waifu");
 let { advice } = require("../Vlkyre🌴Tree/⚡ʀᴀɴᴅᴏᴍꜱ/advice");
 let { reddit } = require("../Vlkyre🌴Tree/⚡ʀᴀɴᴅᴏᴍꜱ/reddit");
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-exports.𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙 = async (Vlkyre, ӄӄ, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
+exports.𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙 = async (Vlkyre, ӄ𝖗𝖞ӄ𝖓𝖟, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
 switch (Vlkyre.commandName) {
 case "":
 break;
 case "pokemon":
 await pokemon(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -192,7 +192,7 @@ await ӄ_counter(2);
 break;
 case "pokedex":
 await pokedex(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -209,7 +209,7 @@ await ӄ_counter(2);
 break;
 case "carbon":
 await carbon(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -228,7 +228,7 @@ case "getgif":
 case "gify":
 case "gif":
 await gify(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -248,7 +248,7 @@ case "sgif":
 case "sticker":
 case "stickergif":
 await sticker(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -265,7 +265,7 @@ await ӄ_counter(2);
 break;
 case "toimg":
 await toimg(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -283,7 +283,7 @@ break;
 case "pin":
 case "pinterest":
 await pinterest(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -300,7 +300,7 @@ await ӄ_counter(2);
 break;
 case "tourl":
 await tourl(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -316,10 +316,10 @@ Vlkyre.Body
 await ӄ_counter(2);
 break;
 case "remove":
-if (!Vlkyre.isBotAdmin) return await Bot_Not_Admin(ӄӄ, Vlkyre);
-if (!Vlkyre.isSenderAdmin) return await Sender_Not_Admin(ӄӄ, Vlkyre);
+if (!Vlkyre.isBotAdmin) return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+if (!Vlkyre.isSenderAdmin) return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
 await remove(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -335,10 +335,10 @@ Vlkyre.Body
 await ӄ_counter(2);
 break;
 case "promote":
-if (!Vlkyre.isBotAdmin) return await Bot_Not_Admin(ӄӄ, Vlkyre);
-if (!Vlkyre.isSenderAdmin) return await Sender_Not_Admin(ӄӄ, Vlkyre);
+if (!Vlkyre.isBotAdmin) return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+if (!Vlkyre.isSenderAdmin) return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
 await promote(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -356,11 +356,11 @@ break;
 case "admin":
 case "admins":
 if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-return await Sender_Not_Admin(ӄӄ, Vlkyre);
+return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
 if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-return await Bot_Not_Admin(ӄӄ, Vlkyre);
+return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
 await admins(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -376,10 +376,10 @@ Vlkyre.Body
 await ӄ_counter(2);
 break;
 case "demote":
-if (!Vlkyre.isBotAdmin) return await Bot_Not_Admin(ӄӄ, Vlkyre);
-if (!Vlkyre.isSenderAdmin) return await Sender_Not_Admin(ӄӄ, Vlkyre);
+if (!Vlkyre.isBotAdmin) return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+if (!Vlkyre.isSenderAdmin) return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
 await demote(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -395,10 +395,10 @@ Vlkyre.Body
 await ӄ_counter(2);
 break;
 case "setdesc":
-if (!Vlkyre.isBotAdmin) return await Bot_Not_Admin(ӄӄ, Vlkyre);
-if (!Vlkyre.isSenderAdmin) return await Sender_Not_Admin(ӄӄ, Vlkyre);
+if (!Vlkyre.isBotAdmin) return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+if (!Vlkyre.isSenderAdmin) return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
 await setdesc(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -416,10 +416,10 @@ break;
 case "seticon":
 case "setgpfp":
 case "setppgrup":
-if (!Vlkyre.isBotAdmin) return await Bot_Not_Admin(ӄӄ, Vlkyre);
-if (!Vlkyre.isSenderAdmin) return await Sender_Not_Admin(ӄӄ, Vlkyre);
+if (!Vlkyre.isBotAdmin) return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+if (!Vlkyre.isSenderAdmin) return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
 await setgpfp(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -436,11 +436,11 @@ await ӄ_counter(2);
 break;
 case "tagall":
 if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-return await Sender_Not_Admin(ӄӄ, Vlkyre);
+return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
 if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-return await Bot_Not_Admin(ӄӄ, Vlkyre);
+return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
 await tagall(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -456,10 +456,10 @@ Vlkyre.Body
 await ӄ_counter(2);
 break;
 case "group":
-if (!Vlkyre.isBotAdmin) return await Bot_Not_Admin(ӄӄ, Vlkyre);
-if (!Vlkyre.isSenderAdmin) return await Sender_Not_Admin(ӄӄ, Vlkyre);
+if (!Vlkyre.isBotAdmin) return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+if (!Vlkyre.isSenderAdmin) return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
 await group(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -475,10 +475,10 @@ Vlkyre.Body
 await ӄ_counter(2);
 break;
 case "warn":
-if (!Vlkyre.isBotAdmin) return await Bot_Not_Admin(ӄӄ, Vlkyre);
-if (!Vlkyre.isSenderAdmin) return await Sender_Not_Admin(ӄӄ, Vlkyre);
+if (!Vlkyre.isBotAdmin) return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+if (!Vlkyre.isSenderAdmin) return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
 await warn(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -495,10 +495,10 @@ await ӄ_counter(2);
 break;
 case "invite":
 case "grouplink":
-if (!Vlkyre.isBotAdmin) return await Bot_Not_Admin(ӄӄ, Vlkyre);
-if (!Vlkyre.isSenderAdmin) return await Sender_Not_Admin(ӄӄ, Vlkyre);
+if (!Vlkyre.isBotAdmin) return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+if (!Vlkyre.isSenderAdmin) return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
 await invite(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -516,11 +516,11 @@ break;
 case "del":
 case "delete":
 if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-return await Bot_Not_Admin(ӄӄ, Vlkyre);
+return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
 if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-return await Sender_Not_Admin(ӄӄ, Vlkyre);
+return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
 await del(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -538,10 +538,10 @@ break;
 case "antilink":
 case "stoplink":
 case "nolink":
-if (!Vlkyre.isBotAdmin) return await Bot_Not_Admin(ӄӄ, Vlkyre);
-if (!Vlkyre.isSenderAdmin) return await Sender_Not_Admin(ӄӄ, Vlkyre);
+if (!Vlkyre.isBotAdmin) return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+if (!Vlkyre.isSenderAdmin) return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
 await antilink(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -559,11 +559,11 @@ break;
 case "autorank":
 case "autorole":
 if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-return await Bot_Not_Admin(ӄӄ, Vlkyre);
+return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
 if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-return await Sender_Not_Admin(ӄӄ, Vlkyre);
+return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
 await autorank(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -582,11 +582,11 @@ case "welcome":
 case "welcomer":
 case "setwelcome":
 if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-return await Bot_Not_Admin(ӄӄ, Vlkyre);
+return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
 if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-return await Sender_Not_Admin(ӄӄ, Vlkyre);
+return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
 await setwelcome(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -604,7 +604,7 @@ break;
 case "test":
 await test(
 Ѷ𝖎𝖔𝖓,
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -621,7 +621,7 @@ await ӄ_counter(2);
 break;
 case "ban":
 await ban(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -638,7 +638,7 @@ await ӄ_counter(2);
 break;
 case "unban":
 await unban(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -661,7 +661,7 @@ case "randommusic":
 case "suggestaudio":
 case "suggestmusic":
 await radio(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -686,7 +686,7 @@ case "ytaudio":
 case "ytmusic":
 case "youtubemusic":
 await yta(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -708,7 +708,7 @@ case "ytmp4":
 case "ytvideo":
 case "youtubevideo":
 await ytv(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -729,7 +729,7 @@ case "ytscrape":
 case "youtubescrape":
 case "youtubesearch":
 await yts(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -748,7 +748,7 @@ case "sr":
 case "reddit":
 case "subreddit":
 await reddit(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -765,7 +765,7 @@ await ӄ_counter(2);
 break;
 case "rank":
 await rank(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -784,7 +784,7 @@ case "tts":
 case "gtts":
 case "text2speech":
 await tts(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -805,7 +805,7 @@ case "funny":
 case "laugh":
 case "dadjoke":
 await joke(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -822,7 +822,7 @@ await ӄ_counter(2);
 break;
 case "meme":
 await meme(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -839,7 +839,7 @@ await ӄ_counter(2);
 break;
 case "tinyurl":
 await tinyurl(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -856,7 +856,7 @@ await ӄ_counter(2);
 break;
 case "join":
 await join(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -873,7 +873,7 @@ await ӄ_counter(2);
 break;
 case "leave":
 await leave(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -890,7 +890,7 @@ await ӄ_counter(2);
 break;
 case "lyrics":
 await lyrics(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -908,7 +908,7 @@ break;
 case "gimage":
 case "image":
 await image(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -928,7 +928,7 @@ case "find":
 case "search":
 case "google":
 await google(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -946,7 +946,7 @@ break;
 case "take":
 case "steal":
 await steal(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -963,7 +963,7 @@ await ӄ_counter(2);
 break;
 case "iguser":
 await iguser(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -980,7 +980,7 @@ await ӄ_counter(2);
 break;
 case "ship":
 await ship(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -997,7 +997,7 @@ await ӄ_counter(2);
 break;
 case "quote":
 await quote(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -1014,7 +1014,7 @@ await ӄ_counter(2);
 break;
 case "fact":
 await fact(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -1031,7 +1031,7 @@ await ӄ_counter(2);
 break;
 case "advice":
 await advice(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -1048,7 +1048,7 @@ await ӄ_counter(2);
 break;
 case "pat":
 await pat(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -1065,7 +1065,7 @@ await ӄ_counter(2);
 break;
 case "hug":
 await hug(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -1082,7 +1082,7 @@ await ӄ_counter(2);
 break;
 case "kiss":
 await kiss(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -1099,7 +1099,7 @@ await ӄ_counter(2);
 break;
 case "cuddle":
 await cuddle(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -1116,7 +1116,7 @@ await ӄ_counter(2);
 break;
 case "kick":
 await kick(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -1133,7 +1133,7 @@ await ӄ_counter(2);
 break;
 case "bite":
 await bite(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -1150,7 +1150,7 @@ await ӄ_counter(2);
 break;
 case "blush":
 await blush(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -1167,7 +1167,7 @@ await ӄ_counter(2);
 break;
 case "bored":
 await bored(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -1184,7 +1184,7 @@ await ӄ_counter(2);
 break;
 case "confused":
 await confused(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -1201,7 +1201,7 @@ await ӄ_counter(2);
 break;
 case "cry":
 await cry(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -1218,7 +1218,7 @@ await ӄ_counter(2);
 break;
 case "goodnight":
 await goodnight(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -1235,7 +1235,7 @@ await ӄ_counter(2);
 break;
 case "happy":
 await happy(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -1252,7 +1252,7 @@ await ӄ_counter(2);
 break;
 case "poke":
 await poke(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -1269,7 +1269,7 @@ await ӄ_counter(2);
 break;
 case "sad":
 await sad(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -1286,7 +1286,7 @@ await ӄ_counter(2);
 break;
 case "slap":
 await slap(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -1303,7 +1303,7 @@ await ӄ_counter(2);
 break;
 case "smile":
 await smile(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -1320,7 +1320,7 @@ await ӄ_counter(2);
 break;
 case "wave":
 await wave(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -1337,7 +1337,7 @@ await ӄ_counter(2);
 break;
 case "wink":
 await wink(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -1354,7 +1354,7 @@ await ӄ_counter(2);
 break;
 case "dance":
 await dance(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -1371,7 +1371,7 @@ await ӄ_counter(2);
 break;
 case "baka":
 await baka(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -1388,7 +1388,7 @@ await ӄ_counter(2);
 break;
 case "bonk":
 await bonk(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -1406,7 +1406,7 @@ break;
 case "hi5":
 case "highfive":
 await highfive(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -1423,7 +1423,7 @@ await ӄ_counter(2);
 break;
 case "kill":
 await kill(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -1440,7 +1440,7 @@ await ӄ_counter(2);
 break;
 case "nervous":
 await nervous(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -1457,7 +1457,7 @@ await ӄ_counter(2);
 break;
 case "punch":
 await punch(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -1474,7 +1474,7 @@ await ӄ_counter(2);
 break;
 case "scream":
 await scream(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -1491,7 +1491,7 @@ await ӄ_counter(2);
 break;
 case "stare":
 await stare(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -1508,7 +1508,7 @@ await ӄ_counter(2);
 break;
 case "yeet":
 await yeet(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -1525,7 +1525,7 @@ await ӄ_counter(2);
 break;
 case "yes":
 await yes(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -1542,7 +1542,7 @@ await ӄ_counter(2);
 break;
 case "waifu":
 await waifu(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -1559,7 +1559,7 @@ await ӄ_counter(2);
 break;
 case "neko":
 await neko(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -1576,7 +1576,7 @@ await ӄ_counter(2);
 break;
 case "anime":
 await anime(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -1593,7 +1593,7 @@ await ӄ_counter(2);
 break;
 case "manga":
 await manga(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -1610,7 +1610,7 @@ await ӄ_counter(2);
 break;
 case "wallpaper":
 await wallpaper(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -1628,7 +1628,7 @@ break;
 case "bc":
 case "bcgroup":
 await bcgroup(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -1647,7 +1647,7 @@ case "reboot":
 case "restart":
 await ӄ_counter(2);
 await reboot(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -1663,7 +1663,7 @@ Vlkyre.Body
 break;
 case "yt8d":
 await yt8d(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -1680,7 +1680,7 @@ await ӄ_counter(2);
 break;
 case "ytbassboost":
 await ytbassboost(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -1697,7 +1697,7 @@ await ӄ_counter(2);
 break;
 case "ytecho":
 await ytecho(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -1714,7 +1714,7 @@ await ӄ_counter(2);
 break;
 case "ytflanger":
 await ytflanger(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -1731,7 +1731,7 @@ await ӄ_counter(2);
 break;
 case "ytnightcore":
 await ytnightcore(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -1748,7 +1748,7 @@ await ӄ_counter(2);
 break;
 case "ytphaser":
 await ytphaser(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -1765,7 +1765,7 @@ await ӄ_counter(2);
 break;
 case "ytreverse":
 await ytreverse(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -1782,7 +1782,7 @@ await ӄ_counter(2);
 break;
 case "ytslow":
 await ytslow(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -1799,7 +1799,7 @@ await ӄ_counter(2);
 break;
 case "ytspeed":
 await ytspeed(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -1816,7 +1816,7 @@ await ӄ_counter(2);
 break;
 case "ytsubboost":
 await ytsubboost(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -1833,7 +1833,7 @@ await ӄ_counter(2);
 break;
 case "ytsuperslow":
 await ytsuperspeed(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -1850,7 +1850,7 @@ await ӄ_counter(2);
 break;
 case "ytsuperslow":
 await ytsuperslow(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -1867,7 +1867,7 @@ await ӄ_counter(2);
 break;
 case "ytsurround":
 await ytsurround(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -1884,7 +1884,7 @@ await ӄ_counter(2);
 break;
 case "ytvaporwave":
 await ytvaporwave(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -1901,7 +1901,7 @@ await ӄ_counter(2);
 break;
 case "ytvibrato":
 await ytvibrato(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -1918,7 +1918,7 @@ await ӄ_counter(2);
 break;
 case "bassboost":
 await bassboost(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -1935,7 +1935,7 @@ await ӄ_counter(2);
 break;
 case "echo":
 await echo(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -1952,7 +1952,7 @@ await ӄ_counter(2);
 break;
 case "flanger":
 await flanger(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -1969,7 +1969,7 @@ await ӄ_counter(2);
 break;
 case "nightcore":
 await nightcore(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -1986,7 +1986,7 @@ await ӄ_counter(2);
 break;
 case "phaser":
 await phaser(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -2003,7 +2003,7 @@ await ӄ_counter(2);
 break;
 case "reverse":
 await reverse(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -2020,7 +2020,7 @@ await ӄ_counter(2);
 break;
 case "slow":
 await slow(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -2037,7 +2037,7 @@ await ӄ_counter(2);
 break;
 case "speed":
 await speed(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -2054,7 +2054,7 @@ await ӄ_counter(2);
 break;
 case "subboost":
 await subboost(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -2071,7 +2071,7 @@ await ӄ_counter(2);
 break;
 case "superspeed":
 await superspeed(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -2088,7 +2088,7 @@ await ӄ_counter(2);
 break;
 case "surround":
 await surround(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -2105,7 +2105,7 @@ await ӄ_counter(2);
 break;
 case "vaporwave":
 await vaporwave(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -2122,7 +2122,7 @@ await ӄ_counter(2);
 break;
 case "vibrato":
 await vibrato(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -2139,7 +2139,7 @@ await ӄ_counter(2);
 break;
 case "ass":
 await ass(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -2156,7 +2156,7 @@ await ӄ_counter(2);
 break;
 case "bdsm":
 await bdsm(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -2173,7 +2173,7 @@ await ӄ_counter(2);
 break;
 case "cum":
 await cum(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -2190,7 +2190,7 @@ await ӄ_counter(2);
 break;
 case "doujin":
 await doujin(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -2207,7 +2207,7 @@ await ӄ_counter(2);
 break;
 case "feet":
 await feet(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -2224,7 +2224,7 @@ await ӄ_counter(2);
 break;
 case "femdom":
 await femdom(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -2241,7 +2241,7 @@ await ӄ_counter(2);
 break;
 case "foxgirl":
 await foxgirl(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -2258,7 +2258,7 @@ await ӄ_counter(2);
 break;
 case "glasses":
 await glasses(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -2275,7 +2275,7 @@ await ӄ_counter(2);
 break;
 case "hentai":
 await hentai(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -2292,7 +2292,7 @@ await ӄ_counter(2);
 break;
 case "maid":
 await maid(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -2309,7 +2309,7 @@ await ӄ_counter(2);
 break;
 case "masturbation":
 await masturbation(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -2326,7 +2326,7 @@ await ӄ_counter(2);
 break;
 case "netorare":
 await netorare(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -2343,7 +2343,7 @@ await ӄ_counter(2);
 break;
 case "orgy":
 await orgy(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
 Vlkyre.pushName,
@@ -2367,7 +2367,7 @@ await ӄ_counter(2);
 break;
 case "panties":
 await panties(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -2384,7 +2384,7 @@ await ӄ_counter(2);
 break;
 case "school":
 await school(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -2401,7 +2401,7 @@ await ӄ_counter(2);
 break;
 case "tentacles":
 await tentacles(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -2418,7 +2418,7 @@ await ӄ_counter(2);
 break;
 case "thighs":
 await thighs(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -2435,7 +2435,7 @@ await ӄ_counter(2);
 break;
 case "uniform":
 await uniform(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -2452,7 +2452,7 @@ await ӄ_counter(2);
 break;
 case "yuri":
 await yuri(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -2470,7 +2470,7 @@ break;
 case "dly":
 case "daily":
 await daily(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -2489,7 +2489,7 @@ case "fish":
 case "pond":
 case "fishes":
 await fish(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -2509,7 +2509,7 @@ case "gamble":
 case "betting":
 case "roulette":
 await gamble(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -2528,7 +2528,7 @@ case "hunt":
 case "hunting":
 case "pokehunt":
 await hunt(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -2547,7 +2547,7 @@ case "zoo":
 case "forest":
 case "animals":
 await zoo(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -2567,7 +2567,7 @@ case "loan":
 case "borrow":
 case "payment":
 await pay(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -2586,7 +2586,7 @@ case "job":
 case "work":
 case "earn":
 await work(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -2606,7 +2606,7 @@ case "gold":
 case "money":
 case "balance":
 await balance(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -2623,7 +2623,7 @@ await ӄ_counter(2);
 break;
 case "buy":
 await buy(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -2643,7 +2643,7 @@ case "shop":
 case "store":
 case "shopping":
 await store(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -2662,7 +2662,7 @@ case "rob":
 case "thief":
 case "robbery":
 await rob(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -2682,7 +2682,7 @@ case "inv":
 case "loot":
 case "inventory":
 await bag(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -2714,7 +2714,7 @@ case "vlkyre":
 case "krakinzlab":
 case "BOTSUPPORT":
 await support(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -2734,7 +2734,7 @@ case "rules":
 case "rules":
 case "BOTRULES":
 await rules(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -2758,7 +2758,7 @@ case "allmenu":
 case "command":
 case "commands":
 await help(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
 Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -2775,7 +2775,7 @@ await ӄ_counter(2);
 break;
 default:
 await ӄ_counter(2);
-return await ӄӄ.sendMessage(
+return await ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(
 Vlkyre.chatID,
 {
 contextInfo: {

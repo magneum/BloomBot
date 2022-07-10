@@ -82,7 +82,7 @@ process.exit(0);
 await sequelize.sync();
 // let { state, saveCreds } = await dbCloudAuth.default();
 let { state, saveCreds } = await dbAuth();
-let ӄӄ = 𝖍𝖆𝖜ӄC({
+let ӄ𝖗𝖞ӄ𝖓𝖟 = 𝖍𝖆𝖜ӄC({
 auth: state,
 printQRInTerminal: true,
 defaultQueryTimeoutMs: undefined,
@@ -100,9 +100,9 @@ conversation: `-null-`,
 // align: "center",
 // gradient: ["red", "yellow"],
 // });
-Ѷ𝖎𝖔𝖓.bind(ӄӄ.ev);
+Ѷ𝖎𝖔𝖓.bind(ӄ𝖗𝖞ӄ𝖓𝖟.ev);
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-ӄӄ.decodeJid = (jid) => {
+ӄ𝖗𝖞ӄ𝖓𝖟.decodeJid = (jid) => {
 if (!jid) return jid;
 if (/:\d+@/gi.test(jid)) {
 let decode = jidDecode(jid) || {};
@@ -113,14 +113,14 @@ jid
 } else return jid;
 };
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-ӄӄ.getName = (jid, withoutContact = false) => {
-id = ӄӄ.decodeJid(jid);
-withoutContact = ӄӄ.withoutContact || withoutContact;
+ӄ𝖗𝖞ӄ𝖓𝖟.getName = (jid, withoutContact = false) => {
+id = ӄ𝖗𝖞ӄ𝖓𝖟.decodeJid(jid);
+withoutContact = ӄ𝖗𝖞ӄ𝖓𝖟.withoutContact || withoutContact;
 let v;
 if (id.endsWith(`@g.us`))
 return new Promise(async (resolve) => {
 v = Ѷ𝖎𝖔𝖓.contacts[id] || {};
-if (!(v.name || v.subject)) v = ӄӄ.groupMetadata(id) || {};
+if (!(v.name || v.subject)) v = ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata(id) || {};
 resolve(
 v.name ||
 v.subject ||
@@ -136,8 +136,8 @@ id === `0@s.whatsapp.net`
 id,
 name: `WhatsApp`,
 }
-: id === ӄӄ.decodeJid(ӄӄ.user.id)
-? ӄӄ.user
+: id === ӄ𝖗𝖞ӄ𝖓𝖟.decodeJid(ӄ𝖗𝖞ӄ𝖓𝖟.user.id)
+? ӄ𝖗𝖞ӄ𝖓𝖟.user
 : Ѷ𝖎𝖔𝖓.contacts[id] || {};
 return (
 (withoutContact ? `` : v.name) ||
@@ -149,15 +149,15 @@ PhoneNumber(`+` + jid.replace(`@s.whatsapp.net`, ``)).getNumber(
 );
 };
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-ӄӄ.sendContact = async (jid, kon, quoted = ``, opts = {}) => {
+ӄ𝖗𝖞ӄ𝖓𝖟.sendContact = async (jid, kon, quoted = ``, opts = {}) => {
 let list = [];
 for (let i of kon) {
 list.push({
-displayName: await ӄӄ.getName(i + `@s.whatsapp.net`),
+displayName: await ӄ𝖗𝖞ӄ𝖓𝖟.getName(i + `@s.whatsapp.net`),
 vcard: `BEGIN:VCARD
 VERSION:3.0
-N:${await ӄӄ.getName(i + `@s.whatsapp.net`)}
-FN:${await ӄӄ.getName(i + `@s.whatsapp.net`)}
+N:${await ӄ𝖗𝖞ӄ𝖓𝖟.getName(i + `@s.whatsapp.net`)}
+FN:${await ӄ𝖗𝖞ӄ𝖓𝖟.getName(i + `@s.whatsapp.net`)}
 item1.TEL;waid=${i}:${i}
 item1.X-ABLabel:Phone
 item2.EMAIL;type=INTERNET:ᴋᴜɴᴀɪbots@gmail.com
@@ -169,7 +169,7 @@ item4.X-ABLabel:Region
 END:VCARD`,
 });
 }
-ӄӄ.sendMessage(
+ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(
 jid,
 {
 contacts: { displayName: `${list.length} contact`, contacts: list },
@@ -179,9 +179,9 @@ contacts: { displayName: `${list.length} contact`, contacts: list },
 );
 };
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-ӄӄ.public = true;
-ӄӄ.serializeM = (Vlkyre) => smsg(ӄӄ, Vlkyre, Ѷ𝖎𝖔𝖓);
-ӄӄ.send5ButImg = async (
+ӄ𝖗𝖞ӄ𝖓𝖟.public = true;
+ӄ𝖗𝖞ӄ𝖓𝖟.serializeM = (Vlkyre) => smsg(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, Ѷ𝖎𝖔𝖓);
+ӄ𝖗𝖞ӄ𝖓𝖟.send5ButImg = async (
 jid,
 text = ``,
 footer = ``,
@@ -191,7 +191,7 @@ options = {}
 ) => {
 let message = await prepareWAMessageMedia(
 { image: img },
-{ upload: ӄӄ.waUploadToServer }
+{ upload: ӄ𝖗𝖞ӄ𝖓𝖟.waUploadToServer }
 );
 let template = generateWAMessageFromContent(
 Vlkyre.chatID,
@@ -207,12 +207,12 @@ hydratedButtons: but,
 }),
 options
 );
-ӄӄ.relayMessage(jid, template.message, {
+ӄ𝖗𝖞ӄ𝖓𝖟.relayMessage(jid, template.message, {
 messageId: template.key.id,
 });
 };
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-ӄӄ.sendButtonText = (
+ӄ𝖗𝖞ӄ𝖓𝖟.sendButtonText = (
 jid,
 buttons = [],
 text,
@@ -227,12 +227,12 @@ buttons,
 headerType: 2,
 ...options,
 };
-ӄӄ.sendMessage(jid, buttonMessage, { quoted, ...options });
+ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(jid, buttonMessage, { quoted, ...options });
 };
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-ӄӄ.sendText = (jid, text, quoted = ``, options) =>
-ӄӄ.sendMessage(jid, { text: text, ...options }, { quoted });
-ӄӄ.sendImage = async (jid, path, caption = ``, quoted = ``, options) => {
+ӄ𝖗𝖞ӄ𝖓𝖟.sendText = (jid, text, quoted = ``, options) =>
+ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(jid, { text: text, ...options }, { quoted });
+ӄ𝖗𝖞ӄ𝖓𝖟.sendImage = async (jid, path, caption = ``, quoted = ``, options) => {
 let buffer = Buffer.isBuffer(path)
 ? path
 : /^data:.*?\/.*?;base64,/i.test(path)
@@ -242,14 +242,14 @@ let buffer = Buffer.isBuffer(path)
 : fs.existsSync(path)
 ? fs.readFileSync(path)
 : Buffer.alloc(0);
-await ӄӄ.sendMessage(
+await ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(
 jid,
 { image: buffer, caption: caption, ...options },
 { quoted }
 );
 };
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-ӄӄ.sendVideo = async (
+ӄ𝖗𝖞ӄ𝖓𝖟.sendVideo = async (
 jid,
 path,
 caption = ``,
@@ -266,14 +266,14 @@ let buffer = Buffer.isBuffer(path)
 : fs.existsSync(path)
 ? fs.readFileSync(path)
 : Buffer.alloc(0);
-await ӄӄ.sendMessage(
+await ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(
 jid,
 { video: buffer, caption: caption, gifPlayback: gif, ...options },
 { quoted }
 );
 };
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-ӄӄ.sendAudio = async (jid, path, quoted = ``, ptt = false, options) => {
+ӄ𝖗𝖞ӄ𝖓𝖟.sendAudio = async (jid, path, quoted = ``, ptt = false, options) => {
 let buffer = Buffer.isBuffer(path)
 ? path
 : /^data:.*?\/.*?;base64,/i.test(path)
@@ -283,15 +283,15 @@ let buffer = Buffer.isBuffer(path)
 : fs.existsSync(path)
 ? fs.readFileSync(path)
 : Buffer.alloc(0);
-await ӄӄ.sendMessage(
+await ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(
 jid,
 { audio: buffer, ptt: ptt, ...options },
 { quoted }
 );
 };
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-ӄӄ.sendTextWithMentions = async (jid, text, quoted, options = {}) =>
-ӄӄ.sendMessage(
+ӄ𝖗𝖞ӄ𝖓𝖟.sendTextWithMentions = async (jid, text, quoted, options = {}) =>
+ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(
 jid,
 {
 text: text,
@@ -305,7 +305,7 @@ mentionedJid: [...text.matchAll(/@(\d{0,16})/g)].map(
 { quoted }
 );
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-ӄӄ.sendImageAsSticker = async (jid, path, quoted, options = {}) => {
+ӄ𝖗𝖞ӄ𝖓𝖟.sendImageAsSticker = async (jid, path, quoted, options = {}) => {
 let buff = Buffer.isBuffer(path)
 ? path
 : /^data:.*?\/.*?;base64,/i.test(path)
@@ -321,7 +321,7 @@ buffer = await writeExifImg(buff, options);
 } else {
 buffer = await imageToWebp(buff);
 }
-await ӄӄ.sendMessage(
+await ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(
 jid,
 { sticker: { url: buffer }, ...options },
 { quoted }
@@ -329,7 +329,7 @@ jid,
 return buffer;
 };
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-ӄӄ.sendVideoAsSticker = async (jid, path, quoted, options = {}) => {
+ӄ𝖗𝖞ӄ𝖓𝖟.sendVideoAsSticker = async (jid, path, quoted, options = {}) => {
 let buff = Buffer.isBuffer(path)
 ? path
 : /^data:.*?\/.*?;base64,/i.test(path)
@@ -345,7 +345,7 @@ buffer = await writeExifVid(buff, options);
 } else {
 buffer = await videoToWebp(buff);
 }
-await ӄӄ.sendMessage(
+await ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(
 jid,
 { sticker: { url: buffer }, ...options },
 { quoted }
@@ -353,7 +353,7 @@ jid,
 return buffer;
 };
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-ӄӄ.downloadAndSaveMediaMessage = async (
+ӄ𝖗𝖞ӄ𝖓𝖟.downloadAndSaveMediaMessage = async (
 message,
 filename,
 attachExtension = true
@@ -374,7 +374,7 @@ await fs.writeFileSync(trueFileName, buffer);
 return trueFileName;
 };
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-ӄӄ.downloadMediaMessage = async (message) => {
+ӄ𝖗𝖞ӄ𝖓𝖟.downloadMediaMessage = async (message) => {
 let mime = (message.msg || message).mimetype || ``;
 let messageType = message.mtype
 ? message.mtype.replace(/Message/gi, ``)
@@ -387,7 +387,7 @@ buffer = Buffer.concat([buffer, chunk]);
 return buffer;
 };
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-ӄӄ.sendMedia = async (
+ӄ𝖗𝖞ӄ𝖓𝖟.sendMedia = async (
 jid,
 path,
 fileName = ``,
@@ -395,7 +395,7 @@ caption = ``,
 quoted = ``,
 options = {}
 ) => {
-let types = await ӄӄ.getFile(path, true);
+let types = await ӄ𝖗𝖞ӄ𝖓𝖟.getFile(path, true);
 let { mime, ext, res, data, filename } = types;
 if ((res && res.status !== 200) || file.length <= 65536) {
 try {
@@ -423,7 +423,7 @@ mimetype = `image/webp`;
 else if (/video/.test(mime)) type = `video`;
 else if (/audio/.test(mime)) type = `audio`;
 else type = `document`;
-await ӄӄ.sendMessage(
+await ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(
 jid,
 { [type]: { url: pathFile }, caption, mimetype, fileName, ...options },
 { quoted, ...options }
@@ -431,7 +431,7 @@ jid,
 return fs.promises.unlink(pathFile);
 };
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-ӄӄ.copyNForward = async (
+ӄ𝖗𝖞ӄ𝖓𝖟.copyNForward = async (
 jid,
 message,
 forceForward = false,
@@ -481,13 +481,13 @@ contextInfo: {
 }
 : {}
 );
-await ӄӄ.relayMessage(jid, waMessage.message, {
+await ӄ𝖗𝖞ӄ𝖓𝖟.relayMessage(jid, waMessage.message, {
 messageId: waMessage.key.id,
 });
 return waMessage;
 };
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-ӄӄ.cMod = (jid, copy, text = ``, sender = ӄӄ.user.id, options = {}) => {
+ӄ𝖗𝖞ӄ𝖓𝖟.cMod = (jid, copy, text = ``, sender = ӄ𝖗𝖞ӄ𝖓𝖟.user.id, options = {}) => {
 let mtype = Object.keys(copy.message)[0];
 let isEphemeral = mtype === `ephemeralMessage`;
 if (isEphemeral) {
@@ -514,11 +514,11 @@ sender = sender || copy.key.remoteJid;
 else if (copy.key.remoteJid.includes(`@broadcast`))
 sender = sender || copy.key.remoteJid;
 copy.key.remoteJid = jid;
-copy.key.fromMe = sender === ӄӄ.user.id;
+copy.key.fromMe = sender === ӄ𝖗𝖞ӄ𝖓𝖟.user.id;
 return proto.WebMessageInfo.fromObject(copy);
 };
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-ӄӄ.getFile = async (PATH, save) => {
+ӄ𝖗𝖞ӄ𝖓𝖟.getFile = async (PATH, save) => {
 let res;
 let data = Buffer.isBuffer(PATH)
 ? PATH
@@ -550,15 +550,15 @@ data,
 };
 };
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-ӄӄ.ev.on("connection.update", async (𝖚𝖕𝖉𝖆𝖙𝖊) => {
+ӄ𝖗𝖞ӄ𝖓𝖟.ev.on("connection.update", async (𝖚𝖕𝖉𝖆𝖙𝖊) => {
 try {
 let connection_update = require("../Vlkyre🌗Events/connection_update");
-await connection_update.Vcnup(𝖚𝖕𝖉𝖆𝖙𝖊, Ѷ𝖎𝖔𝖓ᴇᴏɴᴇ, ӄӄ);
+await connection_update.Vcnup(𝖚𝖕𝖉𝖆𝖙𝖊, Ѷ𝖎𝖔𝖓ᴇᴏɴᴇ, ӄ𝖗𝖞ӄ𝖓𝖟);
 } catch (𝕰𝖗𝖗𝖔𝖗) {
 return console.log(chalk.redBright(𝕰𝖗𝖗𝖔𝖗));
 }
 });
-ӄӄ.ev.on("creds.update", async (𝖚𝖕𝖉𝖆𝖙𝖊) => {
+ӄ𝖗𝖞ӄ𝖓𝖟.ev.on("creds.update", async (𝖚𝖕𝖉𝖆𝖙𝖊) => {
 try {
 await saveCreds(𝖚𝖕𝖉𝖆𝖙𝖊);
 // await simpleGit.simpleGit()
@@ -573,31 +573,31 @@ await saveCreds(𝖚𝖕𝖉𝖆𝖙𝖊);
 return console.log(chalk.redBright(𝕰𝖗𝖗𝖔𝖗));
 }
 });
-ӄӄ.ev.on("messages.upsert", async (𝖚𝖕𝖉𝖆𝖙𝖊) => {
+ӄ𝖗𝖞ӄ𝖓𝖟.ev.on("messages.upsert", async (𝖚𝖕𝖉𝖆𝖙𝖊) => {
 try {
 let messages_upsert = require("../Vlkyre🌗Events/messages_upsert");
-await messages_upsert.Vmsgup(𝖚𝖕𝖉𝖆𝖙𝖊, Ѷ𝖎𝖔𝖓, ӄӄ);
+await messages_upsert.Vmsgup(𝖚𝖕𝖉𝖆𝖙𝖊, Ѷ𝖎𝖔𝖓, ӄ𝖗𝖞ӄ𝖓𝖟);
 } catch (𝕰𝖗𝖗𝖔𝖗) {
 return console.log(chalk.redBright(𝕰𝖗𝖗𝖔𝖗));
 }
 });
-ӄӄ.ev.on("group-participants.update", async (𝖚𝖕𝖉𝖆𝖙𝖊) => {
+ӄ𝖗𝖞ӄ𝖓𝖟.ev.on("group-participants.update", async (𝖚𝖕𝖉𝖆𝖙𝖊) => {
 try {
 let group_participants = require("../Vlkyre🌗Events/group_participants");
-await group_participants.Vgrpns(𝖚𝖕𝖉𝖆𝖙𝖊, ӄӄ);
+await group_participants.Vgrpns(𝖚𝖕𝖉𝖆𝖙𝖊, ӄ𝖗𝖞ӄ𝖓𝖟);
 } catch (𝕰𝖗𝖗𝖔𝖗) {
 return console.log(chalk.redBright(𝕰𝖗𝖗𝖔𝖗));
 }
 });
-ӄӄ.ws.on("CB:call", async (𝖚𝖕𝖉𝖆𝖙𝖊) => {
+ӄ𝖗𝖞ӄ𝖓𝖟.ws.on("CB:call", async (𝖚𝖕𝖉𝖆𝖙𝖊) => {
 try {
 let call_updates = require("../Vlkyre🌗Events/call_updates");
-await call_updates.Vclup(ӄӄ, 𝖚𝖕𝖉𝖆𝖙𝖊);
+await call_updates.Vclup(ӄ𝖗𝖞ӄ𝖓𝖟, 𝖚𝖕𝖉𝖆𝖙𝖊);
 } catch (𝕰𝖗𝖗𝖔𝖗) {
 return console.log(chalk.redBright(𝕰𝖗𝖗𝖔𝖗));
 }
 });
-return ӄӄ;
+return ӄ𝖗𝖞ӄ𝖓𝖟;
 }
 Ѷ𝖎𝖔𝖓ᴇᴏɴᴇ().catch((𝕰𝖗𝖗𝖔𝖗) => console.log(chalk.redBright(𝕰𝖗𝖗𝖔𝖗)));
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");

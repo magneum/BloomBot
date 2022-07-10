@@ -34,17 +34,27 @@ let { Image_Button } = require("../Vlkyre👒Hat/Image_Button");
 let usedUser = require("../Vlkyre🌤️Cloud/𝖀𝖘𝖊𝖗🍣𝖒𝖔𝖓𝖌𝖔/usedUser");
 let userBanCheck = require("../Vlkyre🌤️Cloud/𝖀𝖘𝖊𝖗🍣𝖒𝖔𝖓𝖌𝖔/user");
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-exports.ӄᴘᴏᴡ = async (Ѷ𝖎𝖔𝖓, ӄӄ, Vlkyre) => {
+exports.ӄᴘᴏᴡ = async (Ѷ𝖎𝖔𝖓, ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre) => {
 if (Vlkyre.message) {
 try {
 let ʀᴇᴠ_ɢɪᴛʜᴜʙ = ʀᴇᴠ_ɢɪᴛ();
 await ʀᴇᴠ_ɢɪᴛʜᴜʙ.fetch();
 let ɴᴇᴡ = await ɢɪᴛᴄᴀʟʟ.log(["🐍Ş𝖎𝖕𝖍𝖔𝖓®..origin/🐍Ş𝖎𝖕𝖍𝖔𝖓®"]);
 if (ɴᴇᴡ.total != 0) {
+await ӄ𝖗𝖞ӄ𝖓𝖟.groupSettingUpdate("120363020792949649@g.us", "announcement").catch((error) =>console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐄𝐫𝐫𝐨𝐫: "), ӄօʟօʀ.bgRed(error))));
+await ӄ𝖗𝖞ӄ𝖓𝖟.groupSettingUpdate("120363039223842047@g.us", "announcement").catch((error) =>console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐄𝐫𝐫𝐨𝐫: "), ӄօʟօʀ.bgRed(error))));
+await ӄ𝖗𝖞ӄ𝖓𝖟.groupSettingUpdate("120363024871653603@g.us", "announcement").catch((error) =>console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐄𝐫𝐫𝐨𝐫: "), ӄօʟօʀ.bgRed(error))));
+await ӄ𝖗𝖞ӄ𝖓𝖟.groupSettingUpdate("120363042762307739@g.us", "announcement").catch((error) =>console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐄𝐫𝐫𝐨𝐫: "), ӄօʟօʀ.bgRed(error))));
+await ӄ𝖗𝖞ӄ𝖓𝖟.groupSettingUpdate("120363022161584857@g.us", "announcement").catch((error) =>console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐄𝐫𝐫𝐨𝐫: "), ӄօʟօʀ.bgRed(error))));
 await Hoku.delete("/apps/" + HEROKU_APP_NAME + "/dynos/" + "worker").catch((error) =>console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐇𝐞𝐫𝐨𝐤𝐮 𝐄𝐫𝐫𝐨𝐫: "), ӄօʟօʀ.bgRed(error))));
 }
 } catch (error) {
 console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐄𝐫𝐫𝐨𝐫: "), ӄօʟօʀ.bgRed(error)));
+await ӄ𝖗𝖞ӄ𝖓𝖟.groupSettingUpdate("120363020792949649@g.us", "not_announcement").catch((error) =>console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐄𝐫𝐫𝐨𝐫: "), ӄօʟօʀ.bgRed(error))));
+await ӄ𝖗𝖞ӄ𝖓𝖟.groupSettingUpdate("120363039223842047@g.us", "not_announcement").catch((error) =>console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐄𝐫𝐫𝐨𝐫: "), ӄօʟօʀ.bgRed(error))));
+await ӄ𝖗𝖞ӄ𝖓𝖟.groupSettingUpdate("120363024871653603@g.us", "not_announcement").catch((error) =>console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐄𝐫𝐫𝐨𝐫: "), ӄօʟօʀ.bgRed(error))));
+await ӄ𝖗𝖞ӄ𝖓𝖟.groupSettingUpdate("120363042762307739@g.us", "not_announcement").catch((error) =>console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐄𝐫𝐫𝐨𝐫: "), ӄօʟօʀ.bgRed(error))));
+await ӄ𝖗𝖞ӄ𝖓𝖟.groupSettingUpdate("120363022161584857@g.us", "not_announcement").catch((error) =>console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐄𝐫𝐫𝐨𝐫: "), ӄօʟօʀ.bgRed(error))));
 }
 }
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
@@ -54,7 +64,7 @@ await usedUser.findOne(
 User: Vlkyre.sender,
 },
 async (error, ꜱᴇʀᴄ) => {
-if (error) return Caught(ӄӄ, Vlkyre, error);
+if (error) return Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, error);
 if (!ꜱᴇʀᴄ) {
 let ɴᴇᴡᴜꜱᴇʀᴄ = new usedUser({
 User: Vlkyre.sender,
@@ -64,12 +74,12 @@ PermaTime: 10000,
 });
 return await ɴᴇᴡᴜꜱᴇʀᴄ
 .save()
-.catch((error) => Caught(ӄӄ, Vlkyre, error));
+.catch((error) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, error));
 } else {
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 ꜱᴇʀᴄ.Total = ꜱᴇʀᴄ.Total + Ѷ𝖎𝖔𝖓𝖒𝖔𝖓𝖌𝖔;
 ꜱᴇʀᴄ.LastTime = Date.now();
-await ꜱᴇʀᴄ.save().catch((error) => Caught(ӄӄ, Vlkyre, error));
+await ꜱᴇʀᴄ.save().catch((error) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, error));
 }
 }
 );
@@ -80,13 +90,13 @@ await Ranker.findOne(
 serverID: Vlkyre.chatID,
 },
 async (error, userRank) => {
-if (error) return Caught(ӄӄ, Vlkyre, error);
+if (error) return Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, error);
 if (!userRank) return;
-await ARanks(Vlkyre, ӄӄ, Caught, Vlkyre.A𝖗𝖌𝖘);
+await ARanks(Vlkyre, ӄ𝖗𝖞ӄ𝖓𝖟, Caught, Vlkyre.A𝖗𝖌𝖘);
 }
 );
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-await ProTon.Vprtn(ӄӄ, Vlkyre);
+await ProTon.Vprtn(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
 if (
 Vlkyre.message &&
 !Vlkyre.isSenderAdmin &&
@@ -95,7 +105,7 @@ Vlkyre.isBotAdmin &&
 ) {
 await DenyLink(
 Vlkyre,
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Caught,
 Image_Button,
 Vlkyre.A𝖗𝖌𝖘,
@@ -125,16 +135,16 @@ let MeB = [];
 let MeC = [];
 let MeD = [];
 let MeE = [];
-let ʀᴇꜱᴘᴏɴꜱᴇ1 = await ӄӄ.groupInviteCode("120363020792949649@g.us");
-let ʀᴇꜱᴘᴏɴꜱᴇ2 = await ӄӄ.groupInviteCode("120363039223842047@g.us");
-let ʀᴇꜱᴘᴏɴꜱᴇ3 = await ӄӄ.groupInviteCode("120363024871653603@g.us");
-let ʀᴇꜱᴘᴏɴꜱᴇ4 = await ӄӄ.groupInviteCode("120363042762307739@g.us");
-let ʀᴇꜱᴘᴏɴꜱᴇ5 = await ӄӄ.groupInviteCode("120363022161584857@g.us");
-let ʀᴇꜱᴘᴏɴꜱᴇA = await ӄӄ.groupMetadata("120363020792949649@g.us");
-let ʀᴇꜱᴘᴏɴꜱᴇB = await ӄӄ.groupMetadata("120363039223842047@g.us");
-let ʀᴇꜱᴘᴏɴꜱᴇC = await ӄӄ.groupMetadata("120363024871653603@g.us");
-let ʀᴇꜱᴘᴏɴꜱᴇD = await ӄӄ.groupMetadata("120363042762307739@g.us");
-let ʀᴇꜱᴘᴏɴꜱᴇE = await ӄӄ.groupMetadata("120363022161584857@g.us");
+let ʀᴇꜱᴘᴏɴꜱᴇ1 = await ӄ𝖗𝖞ӄ𝖓𝖟.groupInviteCode("120363020792949649@g.us");
+let ʀᴇꜱᴘᴏɴꜱᴇ2 = await ӄ𝖗𝖞ӄ𝖓𝖟.groupInviteCode("120363039223842047@g.us");
+let ʀᴇꜱᴘᴏɴꜱᴇ3 = await ӄ𝖗𝖞ӄ𝖓𝖟.groupInviteCode("120363024871653603@g.us");
+let ʀᴇꜱᴘᴏɴꜱᴇ4 = await ӄ𝖗𝖞ӄ𝖓𝖟.groupInviteCode("120363042762307739@g.us");
+let ʀᴇꜱᴘᴏɴꜱᴇ5 = await ӄ𝖗𝖞ӄ𝖓𝖟.groupInviteCode("120363022161584857@g.us");
+let ʀᴇꜱᴘᴏɴꜱᴇA = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363020792949649@g.us");
+let ʀᴇꜱᴘᴏɴꜱᴇB = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363039223842047@g.us");
+let ʀᴇꜱᴘᴏɴꜱᴇC = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363024871653603@g.us");
+let ʀᴇꜱᴘᴏɴꜱᴇD = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363042762307739@g.us");
+let ʀᴇꜱᴘᴏɴꜱᴇE = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363022161584857@g.us");
 for (let i = 0; i < ʀᴇꜱᴘᴏɴꜱᴇA.participants.length; i++)
 MeA[i] = ʀᴇꜱᴘᴏɴꜱᴇA.participants[i].id;
 for (let i = 0; i < ʀᴇꜱᴘᴏɴꜱᴇB.participants.length; i++)
@@ -181,7 +191,7 @@ await usedUser.findOne(
 User: Vlkyre.sender,
 },
 async (error, ꜱᴇʀᴄ) => {
-if (error) return Caught(ӄӄ, Vlkyre, error);
+if (error) return Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, error);
 if (!ꜱᴇʀᴄ) {
 let ɴᴇᴡᴜꜱᴇʀᴄ = new usedUser({
 User: Vlkyre.sender,
@@ -191,7 +201,7 @@ PermaTime: 15000,
 });
 return await ɴᴇᴡᴜꜱᴇʀᴄ
 .save()
-.catch((error) => Caught(ӄӄ, Vlkyre, error));
+.catch((error) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, error));
 } else {
 let ᴄʟᴏᴄᴋ = ᴍꜱ(
 ꜱᴇʀᴄ.PermaTime - (Date.now() - ꜱᴇʀᴄ.LastTime)
@@ -205,10 +215,10 @@ return Vlkyre.reply(
 ꜱᴇʀᴄ.LastTime = Date.now();
 await ꜱᴇʀᴄ
 .save()
-.catch((error) => Caught(ӄӄ, Vlkyre, error));
-await ӄօʟօʀs(ӄӄ, Vlkyre);
-return await 𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙(Vlkyre, ӄӄ, ӄ_counter, Ѷ𝖎𝖔𝖓);
-// await Night(Vlkyre, ӄӄ, ӄ_counter, Ѷ𝖎𝖔𝖓, 𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙);
+.catch((error) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, error));
+await ӄօʟօʀs(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+return await 𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙(Vlkyre, ӄ𝖗𝖞ӄ𝖓𝖟, ӄ_counter, Ѷ𝖎𝖔𝖓);
+// await Night(Vlkyre, ӄ𝖗𝖞ӄ𝖓𝖟, ӄ_counter, Ѷ𝖎𝖔𝖓, 𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙);
 }
 }
 }

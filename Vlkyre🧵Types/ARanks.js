@@ -21,7 +21,7 @@ let Economy = require(`../Vlkyre🌤️Cloud/🍃𝖒𝖔𝖓𝖌𝖔/economy`);
 let { Image_Button } = require("../Vlkyre👒Hat/Image_Button");
 let color = randomMC.getColor();
 Levels.setURL(MONGOOSE);
-exports.ARanks = async (Vlkyre, ӄӄ, Caught, A𝖗𝖌𝖘) => {
+exports.ARanks = async (Vlkyre, ӄ𝖗𝖞ӄ𝖓𝖟, Caught, A𝖗𝖌𝖘) => {
 const randomXp = Math.floor(Math.random() * 3) + +10;
 const user = await Levels.fetch(Vlkyre.sender, Vlkyre.chatID, true);
 if (!user) {
@@ -117,7 +117,7 @@ let expFile = `./Vlkyre🎒Bag/${Date.now()}${Vlkyre.key.id}.png`;
 let աɦօֆɛ = Math.floor(1000 + Math.random() * 9000);
 let 𝕯𝖎𝖘𝖕𝖑𝖆𝖞;
 try {
-𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await ӄӄ.profilePictureUrl(Vlkyre.chatID, `image`);
+𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await ӄ𝖗𝖞ӄ𝖓𝖟.profilePictureUrl(Vlkyre.chatID, `image`);
 } catch {
 𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = `./Vlkyre👗Skins/Vlkyre.png`;
 }
@@ -151,7 +151,7 @@ let rank = new canvacord.Rank()
 .setDiscriminator(աɦօֆɛ);
 rank.build().then(async (data) => {
 fs.writeFile(expFile, data, async (Èrrðr) => {
-if (Èrrðr) return Caught(ӄӄ, Vlkyre, Èrrðr);
+if (Èrrðr) return Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, Èrrðr);
 await Economy.findOne(
 {
 ID: Vlkyre.sender,
@@ -171,7 +171,7 @@ worktimeout: 900000,
 });
 await newUser.save();
 await Image_Button(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 A𝖗𝖌𝖘,
 expFile,
@@ -196,7 +196,7 @@ return await fs.unlinkSync(expFile);
 userEco.money = userEco.money+Amnt;
 userEco.save();
 await Image_Button(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 A𝖗𝖌𝖘,
 expFile,

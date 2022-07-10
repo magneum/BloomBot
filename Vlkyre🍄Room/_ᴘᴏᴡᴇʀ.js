@@ -15,21 +15,21 @@ require("../Vlkyre🖋️Utilities/𝕷𝖆ყO𝖚𝖙")
 let { Caught } = require("../Vlkyre👒Hat/Caught");
 let { Image_Button } = require("../Vlkyre👒Hat/Image_Button");
 let UserPrivate = require(`../Vlkyre🌤️Cloud/🍃𝖒𝖔𝖓𝖌𝖔/private`);
-exports._ᴘᴏᴡᴇʀ = async (ӄӄ, Vlkyre) => {
+exports._ᴘᴏᴡᴇʀ = async (ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre) => {
 await UserPrivate.findOne(
 {
 ID: Vlkyre.sender,
 },
 async (error, user) => {
-if (error) return Caught(ӄӄ, Vlkyre, error);
+if (error) return Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, error);
 if (!user) {
 var newUser = new UserPrivate({
 ID: Vlkyre.sender,
 Amount: 1,
 });
-await newUser.save().catch((error) => Caught(ӄӄ, Vlkyre, error));
+await newUser.save().catch((error) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, error));
 return await Image_Button(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/Vlkyre_Red.png",
@@ -43,9 +43,9 @@ Vlkyre.A𝖗𝖌𝖘,
 );
 } else if (user.Amount < 4) {
 user.Amount = user.Amount + 1;
-await user.save().catch((error) => Caught(ӄӄ, Vlkyre, error));
+await user.save().catch((error) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, error));
 return await Image_Button(
-ӄӄ,
+ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/Vlkyre_Red.png",
@@ -58,8 +58,8 @@ Vlkyre.A𝖗𝖌𝖘,
 • You Will be Auto-Blocked After 4 warnings!`
 );
 } else {
-await user.delete().catch((error) => Caught(ӄӄ, Vlkyre, error));
-return await ӄӄ.updateBlockStatus(Vlkyre.sender, "block").catch((error) => Caught(ӄӄ, Vlkyre, error));
+await user.delete().catch((error) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, error));
+return await ӄ𝖗𝖞ӄ𝖓𝖟.updateBlockStatus(Vlkyre.sender, "block").catch((error) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, error));
 }
 }
 );
