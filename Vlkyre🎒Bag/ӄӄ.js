@@ -81,25 +81,24 @@ let { version } = await Baileys.fetchLatestBaileysVersion();
 // let { state, Adapt } = await dbCloudAuth.default();
 let { state, Adapt } = await dbAuth();
 let ӄӄ = 𝖍𝖆𝖜ӄC({
-version,
 auth: state,
 msgRetryCounterMap,
 printQRInTerminal: true,
 defaultQueryTimeoutMs: undefined,
 logger: pino({ level: `silent` }),
-browser: [`Vlkyre`, `Chrome`, `4.0.0`],
+browser: [`Vlkyre`, `Chrome`, `1.0.0`],
 getMessage: async (key) => {
 return {
 conversation: `-null-`,
 };
 },
 });
-console.clear();
-Draw.say("Vlkyre\nBY\nKrakinzLab", {
-font: "block",
-align: "center",
-gradient: ["red", "yellow"],
-});
+// console.clear();
+// Draw.say("Vlkyre\nBY\nKrakinzLab", {
+// font: "block",
+// align: "center",
+// gradient: ["red", "yellow"],
+// });
 Ѷ𝖎𝖔𝖓.bind(ӄӄ.ev);
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 ӄӄ.decodeJid = (jid) => {
