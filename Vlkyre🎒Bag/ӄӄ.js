@@ -13,7 +13,17 @@
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 require(`../Vlkyre🖋️Utilities/𝕷𝖆ყO𝖚𝖙`);
 require(`../Vlkyre🖋️Utilities/Ѷ𝖆𝖑.js`);
-let { default: 𝖍𝖆𝖜ӄC } = require(`@adiwajshing/baileys`);
+let { default: 𝖍𝖆𝖜ӄC,
+// Baileys.generateForwardMessageContent,
+// Baileys.generateWAMessageFromContent,
+// Baileys.downloadContentFromMessage,
+// Baileys.fetchLatestBaileysVersion,
+// Baileys.prepareWAMessageMedia,
+// Baileys.makeInMemoryStore,
+// Baileys.MessageRetryMap,
+// Baileys.jidDecode,
+// Baileys.proto,
+ } = require(`@adiwajshing/baileys`);
 let Baileys = require("@adiwajshing/baileys");
 let fs = require(`fs`);
 let pino = require(`pino`);
