@@ -153,9 +153,9 @@ caption: `Ῠ  *ɴᴀᴍᴇ:* ${Vlkyre.pushName || "ɴᴏ_ɴᴀᴍᴇ"}
 ║Ῠ *ᴘʀᴇꜰɪx:* ${prefix}
 ║Ῠ *ɢᴘᴀʏ:* +918436686758
 ║Ῠ *ᴜᴘɪ:* krakinzkon@oksbi
-║Ῠ *ɢɪᴛʜᴜʙ:* https://github.com/kryknz
-║Ῠ *ᴠʟᴋʏʀᴇ:* https://github.com/kryknz/vlkyre
-║Ῠ *ᴡᴇʙꜱɪᴛᴇ:*  https://kryknz.github.io/Vlkyre
+║Ῠ ɢɪᴛʜᴜʙ:* https://github.com/kryknz
+║Ῠ ᴠʟᴋʏʀᴇ:* https://github.com/kryknz/vlkyre
+║Ῠ ᴡᴇʙꜱɪᴛᴇ:*  https://kryknz.github.io/Vlkyre
 ╚═══════╝
 
 ╔══『 🐾𝐀𝐍𝐈𝐌𝐄_𝐌𝐀𝐍𝐆𝐀🐾 』
