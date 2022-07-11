@@ -60,12 +60,12 @@ commandName,
 body
 ) => {
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-await got("https://www.reddit.com/r/RealGirls/random.json").then(async (FF) => {
+await got("https://www.reddit.com/r/pussy/random.json").then(async (FF) => {
 let ꜰɪʟᴇ = JSON.parse(FF.body);
 let title = ꜰɪʟᴇ[0].data.children[0].data.title;
 let ꜰɪɴᴀʟʟɪɴᴋ = ꜰɪʟᴇ[0].data.children[0].data.url;
 if (!ꜰɪɴᴀʟʟɪɴᴋ.endsWith(".png") && !ꜰɪɴᴀʟʟɪɴᴋ.endsWith(".jpg") && !ꜰɪɴᴀʟʟɪɴᴋ.endsWith(".jpeg")) {
-let ꜰɪɴᴀʟʟɪɴᴋ = await got("https://www.reddit.com/r/RealGirls/random.json").then(async (FF) => {
+let ꜰɪɴᴀʟʟɪɴᴋ = await got("https://www.reddit.com/r/pussy/random.json").then(async (FF) => {
 let ꜰɪʟᴇ = JSON.parse(FF.body);
 let title = ꜰɪʟᴇ[0].data.children[0].data.title;
 let ꜰɪɴᴀʟʟɪɴᴋ = ꜰɪʟᴇ[0].data.children[0].data.url;
