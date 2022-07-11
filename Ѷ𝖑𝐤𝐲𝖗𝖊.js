@@ -445,37 +445,14 @@ let MeA = [];
 let MeB = [];
 let MeC = [];
 let MeD = [];
-let MeE = [];
-let ʀᴇꜱᴘᴏɴꜱᴇ1 = await ӄ𝖗𝖞ӄ𝖓𝖟.groupInviteCode(
-"120363020792949649@g.us"
-);
-let ʀᴇꜱᴘᴏɴꜱᴇ2 = await ӄ𝖗𝖞ӄ𝖓𝖟.groupInviteCode(
-"120363039223842047@g.us"
-);
-let ʀᴇꜱᴘᴏɴꜱᴇ3 = await ӄ𝖗𝖞ӄ𝖓𝖟.groupInviteCode(
-"120363024871653603@g.us"
-);
-let ʀᴇꜱᴘᴏɴꜱᴇ4 = await ӄ𝖗𝖞ӄ𝖓𝖟.groupInviteCode(
-"120363042762307739@g.us"
-);
-let ʀᴇꜱᴘᴏɴꜱᴇ5 = await ӄ𝖗𝖞ӄ𝖓𝖟.groupInviteCode(
-"120363022161584857@g.us"
-);
-let ʀᴇꜱᴘᴏɴꜱᴇA = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata(
-"120363020792949649@g.us"
-);
-let ʀᴇꜱᴘᴏɴꜱᴇB = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata(
-"120363039223842047@g.us"
-);
-let ʀᴇꜱᴘᴏɴꜱᴇC = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata(
-"120363024871653603@g.us"
-);
-let ʀᴇꜱᴘᴏɴꜱᴇD = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata(
-"120363042762307739@g.us"
-);
-let ʀᴇꜱᴘᴏɴꜱᴇE = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata(
-"120363022161584857@g.us"
-);
+let ʀᴇꜱᴘᴏɴꜱᴇ1 = await ӄ𝖗𝖞ӄ𝖓𝖟.groupInviteCode("120363020792949649@g.us");
+let ʀᴇꜱᴘᴏɴꜱᴇ2 = await ӄ𝖗𝖞ӄ𝖓𝖟.groupInviteCode("120363039223842047@g.us");
+let ʀᴇꜱᴘᴏɴꜱᴇ3 = await ӄ𝖗𝖞ӄ𝖓𝖟.groupInviteCode("120363024871653603@g.us");
+let ʀᴇꜱᴘᴏɴꜱᴇ4 = await ӄ𝖗𝖞ӄ𝖓𝖟.groupInviteCode("120363042762307739@g.us");
+let ʀᴇꜱᴘᴏɴꜱᴇA = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363020792949649@g.us");
+let ʀᴇꜱᴘᴏɴꜱᴇB = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363039223842047@g.us");
+let ʀᴇꜱᴘᴏɴꜱᴇC = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363024871653603@g.us");
+let ʀᴇꜱᴘᴏɴꜱᴇD = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363042762307739@g.us");
 for (let i = 0; i < ʀᴇꜱᴘᴏɴꜱᴇA.participants.length; i++)
 MeA[i] = ʀᴇꜱᴘᴏɴꜱᴇA.participants[i].id;
 for (let i = 0; i < ʀᴇꜱᴘᴏɴꜱᴇB.participants.length; i++)
@@ -484,8 +461,6 @@ for (let i = 0; i < ʀᴇꜱᴘᴏɴꜱᴇC.participants.length; i++)
 MeC[i] = ʀᴇꜱᴘᴏɴꜱᴇC.participants[i].id;
 for (let i = 0; i < ʀᴇꜱᴘᴏɴꜱᴇD.participants.length; i++)
 MeD[i] = ʀᴇꜱᴘᴏɴꜱᴇD.participants[i].id;
-for (let i = 0; i < ʀᴇꜱᴘᴏɴꜱᴇE.participants.length; i++)
-MeE[i] = ʀᴇꜱᴘᴏɴꜱᴇE.participants[i].id;
 ("|⬡═══════════════════════════════════════════════════════════════| Ѷ𝖑𝐤𝐲𝖗𝖊🕊️𝐌𝐮𝐥𝐭𝐢_𝐃𝐞𝐯𝐢𝐜𝐞🕊️𝐀𝐏𝐈 |═══════════════════════════════════════════════════════════════⬡|");
 if (
 !Vlkyre.fromMe &&
@@ -498,8 +473,7 @@ Vlkyre.isCommand &&
 !MeA.includes(Vlkyre.sender) &&
 !MeB.includes(Vlkyre.sender) &&
 !MeC.includes(Vlkyre.sender) &&
-!MeD.includes(Vlkyre.sender) &&
-!MeE.includes(Vlkyre.sender)
+!MeD.includes(Vlkyre.sender)
 ) {
 return await Vlkyre.reply(`*❣️ ɴᴀᴍᴇ:* ${
 Vlkyre.pushName || "No_Name"
