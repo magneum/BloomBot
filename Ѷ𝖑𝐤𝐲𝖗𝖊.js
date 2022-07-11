@@ -61,8 +61,7 @@ var newUser = new UserPrivate({
 ID: Vlkyre.sender,
 Amount: 1,
 });
-await newUser
-.save().catch((Err) =>generateWA("❌ᴇʀʀᴏʀ: ", "#ed7777", Err, "#ed7777"));
+await newUser.save();
 return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
@@ -77,8 +76,7 @@ Vlkyre.A𝖗𝖌𝖘,
 );
 } else if (user.Amount < 3) {
 user.Amount = user.Amount + 1;
-await user
-.save().catch((Err) =>generateWA("❌ᴇʀʀᴏʀ: ", "#ed7777", Err, "#ed7777"));
+await user.save();
 return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
@@ -108,9 +106,7 @@ let ɴᴇᴡ = await ɢɪᴛᴄᴀʟʟ.log(["🐍Ş𝖎𝖕𝖍𝖔𝖓®..origi
 if (ɴᴇᴡ.total != 0) {
 await Hoku.delete(
 "/apps/" + HEROKU_APP_NAME + "/dynos/" + "worker"
-).catch((Err) =>
-generateWA("❌ᴇʀʀᴏʀ: ", "#ed7777", Err, "#ed7777")
-);
+).catch((Err) => generateWA("❌ᴇʀʀᴏʀ: ", "#ed7777", Err, "#ed7777"));
 }
 } catch (Err) {
 generateWA("❌ᴇʀʀᴏʀ: ", "#ed7777", Err, "#ed7777");
@@ -122,12 +118,10 @@ await Valkyrie.findOne(async (Err, ꜱᴇʀᴄ) => {
 if (Err) return;
 if (!ꜱᴇʀᴄ) {
 let ɴᴇᴡᴜꜱᴇʀᴄ = new Valkyrie({ Used: Ѷ𝖎𝖔𝖓𝖒 });
-return await ɴᴇᴡᴜꜱᴇʀᴄ
-.save().catch((Err) =>generateWA("❌ᴇʀʀᴏʀ: ", "#ed7777", Err, "#ed7777"));
+return await ɴᴇᴡᴜꜱᴇʀᴄ.save();
 }
 ꜱᴇʀᴄ.Used = ꜱᴇʀᴄ.Used + Ѷ𝖎𝖔𝖓𝖒;
-await ꜱᴇʀᴄ
-.save().catch((Err) =>generateWA("❌ᴇʀʀᴏʀ: ", "#ed7777", Err, "#ed7777"));
+await ꜱᴇʀᴄ.save();
 });
 }
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
@@ -433,14 +427,30 @@ let MeA = [];
 let MeB = [];
 let MeC = [];
 let MeD = [];
-let ʀᴇꜱᴘᴏɴꜱᴇ1 = await ӄ𝖗𝖞ӄ𝖓𝖟.groupInviteCode("120363020792949649@g.us");
-let ʀᴇꜱᴘᴏɴꜱᴇ2 = await ӄ𝖗𝖞ӄ𝖓𝖟.groupInviteCode("120363039223842047@g.us");
-let ʀᴇꜱᴘᴏɴꜱᴇ3 = await ӄ𝖗𝖞ӄ𝖓𝖟.groupInviteCode("120363024871653603@g.us");
-let ʀᴇꜱᴘᴏɴꜱᴇ4 = await ӄ𝖗𝖞ӄ𝖓𝖟.groupInviteCode("120363042762307739@g.us");
-let ʀᴇꜱᴘᴏɴꜱᴇA = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363020792949649@g.us");
-let ʀᴇꜱᴘᴏɴꜱᴇB = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363039223842047@g.us");
-let ʀᴇꜱᴘᴏɴꜱᴇC = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363024871653603@g.us");
-let ʀᴇꜱᴘᴏɴꜱᴇD = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata("120363042762307739@g.us");
+let ʀᴇꜱᴘᴏɴꜱᴇ1 = await ӄ𝖗𝖞ӄ𝖓𝖟.groupInviteCode(
+"120363020792949649@g.us"
+);
+let ʀᴇꜱᴘᴏɴꜱᴇ2 = await ӄ𝖗𝖞ӄ𝖓𝖟.groupInviteCode(
+"120363039223842047@g.us"
+);
+let ʀᴇꜱᴘᴏɴꜱᴇ3 = await ӄ𝖗𝖞ӄ𝖓𝖟.groupInviteCode(
+"120363024871653603@g.us"
+);
+let ʀᴇꜱᴘᴏɴꜱᴇ4 = await ӄ𝖗𝖞ӄ𝖓𝖟.groupInviteCode(
+"120363042762307739@g.us"
+);
+let ʀᴇꜱᴘᴏɴꜱᴇA = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata(
+"120363020792949649@g.us"
+);
+let ʀᴇꜱᴘᴏɴꜱᴇB = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata(
+"120363039223842047@g.us"
+);
+let ʀᴇꜱᴘᴏɴꜱᴇC = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata(
+"120363024871653603@g.us"
+);
+let ʀᴇꜱᴘᴏɴꜱᴇD = await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata(
+"120363042762307739@g.us"
+);
 for (let i = 0; i < ʀᴇꜱᴘᴏɴꜱᴇA.participants.length; i++)
 MeA[i] = ʀᴇꜱᴘᴏɴꜱᴇA.participants[i].id;
 for (let i = 0; i < ʀᴇꜱᴘᴏɴꜱᴇB.participants.length; i++)
@@ -476,8 +486,7 @@ await usedUser.findOne(
 User: Vlkyre.sender,
 },
 async (Err, ꜱᴇʀᴄ) => {
-if (Err)
-generateWA("❌ᴇʀʀᴏʀ: ", "#ed7777", Err, "#ed7777");
+if (Err) generateWA("❌ᴇʀʀᴏʀ: ", "#ed7777", Err, "#ed7777");
 if (!ꜱᴇʀᴄ) {
 let ɴᴇᴡᴜꜱᴇʀᴄ = new usedUser({
 User: Vlkyre.sender,
@@ -485,8 +494,7 @@ Total: 0,
 LastTime: 0,
 PermaTime: 15000,
 });
-return await ɴᴇᴡᴜꜱᴇʀᴄ
-.save().catch((Err) =>generateWA("❌ᴇʀʀᴏʀ: ", "#ed7777", Err, "#ed7777"));
+return await ɴᴇᴡᴜꜱᴇʀᴄ.save();
 } else {
 let ᴄʟᴏᴄᴋ = ᴍꜱ(
 ꜱᴇʀᴄ.PermaTime - (Date.now() - ꜱᴇʀᴄ.LastTime)
@@ -498,9 +506,14 @@ return Vlkyre.reply(
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 } else {
 ꜱᴇʀᴄ.LastTime = Date.now();
-await ꜱᴇʀᴄ.save().catch((Err) =>generateWA("❌ᴇʀʀᴏʀ: ", "#ed7777", Err, "#ed7777"));
+await ꜱᴇʀᴄ.save();
 await ӄօʟօʀs(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
-return await 𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙(Vlkyre,ӄ𝖗𝖞ӄ𝖓𝖟,ӄ_counter,Ѷ𝖎𝖔𝖓);
+return await 𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙(
+Vlkyre,
+ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄ_counter,
+Ѷ𝖎𝖔𝖓
+);
 }
 }
 }
