@@ -563,7 +563,7 @@ align: "center",
 gradient: ["red", "yellow"],
 });
 let connection_update = require("../Vlkyre🌗Events/connection_update");
-await connection_update.Vcnup(update, Ѷ𝖎𝖔𝖓ᴇᴏɴᴇ, ӄ𝖗𝖞ӄ𝖓𝖟);
+await connection_update.Vcnup(update, Ѷ𝖎𝖔𝖓ᴇᴏɴᴇ, ӄӄ);
 } catch (error) {
 return generateWA("❌ᴇʀʀᴏʀ: ", "#ed7777", error, "#ed7777");
 }
