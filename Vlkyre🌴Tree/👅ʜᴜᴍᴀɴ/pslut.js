@@ -33,6 +33,7 @@ let moment = require("moment-timezone");
 let Carbon = require("unofficial-carbon-now");
 let { exec, execSync } = require("child_process");
 let { N𝖊𝖊𝖉__A𝖗𝖌𝖘 } = require("../../Vlkyre👒Hat/N𝖊𝖊𝖉__A𝖗𝖌𝖘");
+let { DownloaderHelper } = require("node-downloader-helper");
 let { Sticker, StickerTypes } = require("wa-sticker-formatter");
 let { Group_Only } = require("../../Vlkyre🧭Compass/Group_Only");
 let { Image_Button } = require("../../Vlkyre👒Hat/Image_Button");
@@ -44,7 +45,7 @@ let Script_Name = Present_Path.basename(__filename);
 let Final_Name = Script_Name.slice(0, -3).toLowerCase();
 let { Caught } = require("../../Vlkyre👒Hat/Caught");
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-exports.pslut = async (
+exports.p4k = async (
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 pushName,
@@ -60,31 +61,25 @@ body
 ) => {
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 await got("https://www.reddit.com/r/RealGirls/random.json").then(async (FF) => {
-var ꜰɪʟᴇ = JSON.parse(FF.body);
-var title = ꜰɪʟᴇ[0].data.children[0].data.title;
-var ꜰɪɴᴀʟʟɪɴᴋ = ꜰɪʟᴇ[0].data.children[0].data.url;
-if (
-!ꜰɪɴᴀʟʟɪɴᴋ.endsWith(".png") &&
-!ꜰɪɴᴀʟʟɪɴᴋ.endsWith(".jpg") &&
-!ꜰɪɴᴀʟʟɪɴᴋ.endsWith(".jpeg")
-) {
-var ꜰɪɴᴀʟʟɪɴᴋ = await got(
-"https://www.reddit.com/r/RealGirls/random.json"
-).then(async (FF) => {
-var ꜰɪʟᴇ = JSON.parse(FF.body);
-var title = ꜰɪʟᴇ[0].data.children[0].data.title;
-var ꜰɪɴᴀʟʟɪɴᴋ = ꜰɪʟᴇ[0].data.children[0].data.url;
+let ꜰɪʟᴇ = JSON.parse(FF.body);
+let title = ꜰɪʟᴇ[0].data.children[0].data.title;
+let ꜰɪɴᴀʟʟɪɴᴋ = ꜰɪʟᴇ[0].data.children[0].data.url;
+if (!ꜰɪɴᴀʟʟɪɴᴋ.endsWith(".png") && !ꜰɪɴᴀʟʟɪɴᴋ.endsWith(".jpg") && !ꜰɪɴᴀʟʟɪɴᴋ.endsWith(".jpeg")) {
+let ꜰɪɴᴀʟʟɪɴᴋ = await got("https://www.reddit.com/r/RealGirls/random.json").then(async (FF) => {
+let ꜰɪʟᴇ = JSON.parse(FF.body);
+let title = ꜰɪʟᴇ[0].data.children[0].data.title;
+let ꜰɪɴᴀʟʟɪɴᴋ = ꜰɪʟᴇ[0].data.children[0].data.url;
 return await Image_Button(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
 ꜰɪɴᴀʟʟɪɴᴋ,
-`👅 𝐓𝐨𝐩𝐢𝐜: ${title}`
+`☣️𝐅𝐫𝐨𝐦: www.reddit.com
+👅𝐓𝐨𝐩𝐢𝐜: ${title}`
 );
 });
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 } else if (ꜰɪɴᴀʟʟɪɴᴋ.endsWith(".gif")) {
-let { DownloaderHelper } = require("node-downloader-helper");
 let ɢᴏᴛꜰɪʟᴇ = `./Vlkyre🎒Bag/${Vlkyre.key.id}.gif`;
 let ɢɪᴠᴇꜰɪʟᴇ = `./Vlkyre🎒Bag/${Vlkyre.key.id}.mp4`;
 let ꜰɪʟᴇ𝐩𝐢= new DownloaderHelper(ꜰɪɴᴀʟʟɪɴᴋ, "./Vlkyre🎒Bag", {
@@ -98,27 +93,21 @@ ffmpeg(ɢᴏᴛꜰɪʟᴇ)
 "-c:v libx264",
 "-movflags +faststart",
 "-filter:v crop='floor(in_w/2)*2:floor(in_h/2)*2'",
-]).save(ɢɪᴠᴇꜰɪʟᴇ)
-.on("end", async () => {
-await ӄ𝖗𝖞ӄ𝖓𝖟
-.sendMessage(
+]).save(ɢɪᴠᴇꜰɪʟᴇ).on("end", async () => {
+await ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(
 Vlkyre.chatID,
 {
-video: fs.readFileSync(ɢɪᴠᴇꜰɪʟᴇ),
 gifPlayback: true,
+video: fs.readFileSync(ɢɪᴠᴇꜰɪʟᴇ),
 mentions: [Vlkyre.sender, ʀᴇᴘʟɪᴇᴅ],
 caption: `*⦓ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⦔*
 
-
-╔══「 Vlkyre 𝐏𝐫𝐨𝐭𝐨® 」
-║▷ ꜰʀᴏᴍ: @${Vlkyre.sender.split("@")[0] || ""}
-║👅 𝐓𝐨𝐩𝐢𝐜: ${title}
-╚═══════╝`,
+⚰️𝐅𝐨𝐫: @${Vlkyre.sender.split("@")[0] || ""}
+☣️𝐅𝐫𝐨𝐦: www.reddit.com
+👅𝐓𝐨𝐩𝐢𝐜: ${title}`,
 },
 { quoted: Vlkyre }
-)
-.then(fs.unlinkSync(ɢɪᴠᴇꜰɪʟᴇ, ɢᴏᴛꜰɪʟᴇ))
-.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, Èrrðr));
+).then(fs.unlinkSync(ɢɪᴠᴇꜰɪʟᴇ, ɢᴏᴛꜰɪʟᴇ)).catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, Èrrðr));
 });
 });
 await ꜰɪʟʟ𝐩𝐢.on("error", async (Èrrðr) => {
@@ -134,7 +123,8 @@ return await Image_Button(
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
 ꜰɪɴᴀʟʟɪɴᴋ,
-`👅 𝐓𝐨𝐩𝐢𝐜: ${title}`
+`☣️𝐅𝐫𝐨𝐦: www.reddit.com
+👅𝐓𝐨𝐩𝐢𝐜: ${title}`,
 );
 }
 }
