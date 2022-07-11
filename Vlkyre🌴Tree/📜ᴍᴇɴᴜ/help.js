@@ -433,12 +433,12 @@ caption: `Ῠ  *ɴᴀᴍᴇ:* ${Vlkyre.pushName || "ɴᴏ_ɴᴀᴍᴇ"}
 ╚═══════╝
 
 ┌『 🍑𝐍𝐒𝐅𝐖🍑 』
-╿Ῠ ${prefix}p4k
-║Ῠ ${prefix}pblowjob
-║Ῠ ${prefix}pmilf
-║Ῠ ${prefix}ppussy
-║Ῠ ${prefix}pslut
-║Ῠ ${prefix}tikporn
+╽Ῠ ${prefix}p4k
+╽Ῠ ${prefix}pblowjob
+╽Ῠ ${prefix}pmilf
+╽Ῠ ${prefix}ppussy
+╽Ῠ ${prefix}pslut
+╽Ῠ ${prefix}tikporn
 ╚═══════╝‍`,
 footer: "*⦓ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⦔*\n▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ ◁",
 buttons: [
