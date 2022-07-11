@@ -90,7 +90,7 @@ logger: pino({ level: `silent` }),
 browser: [`Vlkyre`, `Chrome`, `4.0.0`],
 getMessage: async (key) => {
 return {
-conversation: `-null-`,
+conversation: "",
 };
 },
 });
