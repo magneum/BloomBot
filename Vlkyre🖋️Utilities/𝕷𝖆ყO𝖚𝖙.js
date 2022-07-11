@@ -27,7 +27,7 @@ log = console.log;
 }
 return log;
 };
-process.env.DATABASE_URL =process.env.DATABASE_URL === undefined? "./Valkyrie🕊️Adapt/Vlkyre.db": process.env.DATABASE_URL;
+process.env.DATABASE_URL =process.env.DATABASE_URL === undefined? "./__vlkcache__/Vlkyre.db": process.env.DATABASE_URL;
 let gg = process.env.MODS === undefined? "917430922909,918436686758": process.env.MODS;
 global.VlkyreYT = process.env.VlkyreYT;
 global.HEROKU = process.env.HEROKU;
@@ -35,8 +35,8 @@ global.HEROKU_API_KEY =process.env.HEROKU_API_KEY === undefined? "Null": process
 global.HEROKU_APP_NAME =process.env.HEROKU_APP_NAME === undefined? "Null": process.env.HEROKU_APP_NAME;
 global.owner = gg.split(",");
 global.MONGOOSE = process.env.MongoDb;
-global.DATABASE_URL =process.env.DATABASE_URL === undefined? "./Valkyrie🕊️Adapt/Vlkyre.db": process.env.DATABASE_URL;
-global.DATABASE =process.env.DATABASE_URL === "./Valkyrie🕊️Adapt/Vlkyre.db"
+global.DATABASE_URL =process.env.DATABASE_URL === undefined? "./__vlkcache__/Vlkyre.db": process.env.DATABASE_URL;
+global.DATABASE =process.env.DATABASE_URL === "./__vlkcache__/Vlkyre.db"
 ? new sequelize.Sequelize({
 dialect: "sqlite",
 storage: process.env.DATABASE_URL,
