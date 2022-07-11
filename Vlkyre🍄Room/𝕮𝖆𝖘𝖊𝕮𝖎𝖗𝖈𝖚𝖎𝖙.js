@@ -97,6 +97,14 @@ let { netorare } = require("../Vlkyre🌴Tree/🍑ʜᴇɴᴛᴀɪ/netorare");
 let { tentacles } = require("../Vlkyre🌴Tree/🍑ʜᴇɴᴛᴀɪ/tentacles");
 let { masturbation } = require("../Vlkyre🌴Tree/🍑ʜᴇɴᴛᴀɪ/masturbation");
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
+let { p4k } = require("../Vlkyre🌴Tree/👅ʜᴜᴍᴀɴ/p4k");
+let { pmilf } = require("../Vlkyre🌴Tree/👅ʜᴜᴍᴀɴ/pmilf");
+let { pmilk } = require("../Vlkyre🌴Tree/👅ʜᴜᴍᴀɴ/pmilk");
+let { pslut } = require("../Vlkyre🌴Tree/👅ʜᴜᴍᴀɴ/pslut");
+let { ppussy } = require("../Vlkyre🌴Tree/👅ʜᴜᴍᴀɴ/ppussy");
+let { ptikporn } = require("../Vlkyre🌴Tree/👅ʜᴜᴍᴀɴ/tikporn");
+let { pblowjob } = require("../Vlkyre🌴Tree/👅ʜᴜᴍᴀɴ/pblowjob");
+("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 let { echo } = require("../Vlkyre🌴Tree/🥐ꜰɪʟᴛᴇʀꜱ/echo");
 let { slow } = require("../Vlkyre🌴Tree/🥐ꜰɪʟᴛᴇʀꜱ/slow");
 let { speed } = require("../Vlkyre🌴Tree/🥐ꜰɪʟᴛᴇʀꜱ/speed");
@@ -2773,6 +2781,127 @@ Vlkyre.Body
 );
 await ӄ_counter(2);
 break;
+
+case "p4k":
+await help(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "pblowjob":
+await help(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "pmilf":
+await help(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "pmilk":
+await help(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "ppussy":
+await help(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "pslut":
+await help(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "tikporn":
+await help(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+
 default:
 await ӄ_counter(2);
 return await ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(
