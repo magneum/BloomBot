@@ -46,7 +46,7 @@ writeExifVid,
 } = require(`../Vlkyre🖋️Utilities/exif`);
 let sequelize = DATABASE;
 let Ѷ𝖎𝖔𝖓 = makeInMemoryStore({
-logger: pino().child({ level: `silent`, stream: `Ѷ𝖎𝖔𝖓` }),
+logger: pino().child({ level: `fatal`, stream: `Ѷ𝖎𝖔𝖓` }),
 });
 function generateWA(Topic, TName, Text, Name) {
 let TPrint = Color.hex(TName).bold(Topic);
@@ -107,13 +107,8 @@ let ӄ𝖗𝖞ӄ𝖓𝖟 = 𝖍𝖆𝖜ӄC({
 auth: state,
 printQRInTerminal: true,
 defaultQueryTimeoutMs: undefined,
-logger: pino({ level: `silent` }),
+logger: pino({ level: `fatal` }),
 browser: [`Vlkyre`, `Chrome`, `4.0.0`],
-getMessage: async (key) => {
-return {
-conversation: "",
-};
-},
 });
 Ѷ𝖎𝖔𝖓.bind(ӄ𝖗𝖞ӄ𝖓𝖟.ev);
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
