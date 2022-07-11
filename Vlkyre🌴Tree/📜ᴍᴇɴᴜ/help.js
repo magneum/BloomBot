@@ -196,9 +196,9 @@ caption: `Ῠ  *ɴᴀᴍᴇ:* ${Vlkyre.pushName || "ɴᴏ_ɴᴀᴍᴇ"}
 ║Ῠ ${prefix}shop
 ║Ῠ ${prefix}mall
 ║Ῠ ${prefix}shopping
-╚═══════╝
+╚══╗
 ╗
-╔══『 🐾𝐀𝐍𝐈𝐌𝐄_𝐌𝐀𝐍𝐆𝐀🐾 』
+╝『 🐾𝐀𝐍𝐈𝐌𝐄_𝐌𝐀𝐍𝐆𝐀🐾 』
 ║Ῠ ${prefix}anime
 ║Ῠ ${prefix}manga
 ╚═══════╝
