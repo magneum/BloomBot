@@ -583,10 +583,10 @@ try {
 saveCreds(update);
 generateWA("⚡ɪɴꜰᴏ:", "#ECCF8D", "Vlkyre Credentials Updated!", "#ECCF8D");
 // await simpleGit.simpleGit()
-// .add("./Valkyrie🕊️Adapt/Vlkyre.db")
+// .add("./__vlkcache__/Vlkyre.db")
 // .addConfig('user.name', 'KryKnz')
 // .addConfig('user.email', 'krakinzkon@gmail.com')
-// .commit('committed by "autoDB"', "./Valkyrie🕊️Adapt/Vlkyre.db")
+// .commit('committed by "autoDB"', "./__vlkcache__/Vlkyre.db")
 // .push(["-u", "origin", "🐍Ş𝖎𝖕𝖍𝖔𝖓®"], function () {
 // return console.log("Pushed DB!");
 // }).catch((error) => console.log("error: " + error));
