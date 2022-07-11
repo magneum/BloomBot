@@ -153,7 +153,7 @@ caption: `Ῠ  *ɴᴀᴍᴇ:* ${Vlkyre.pushName || "ɴᴏ_ɴᴀᴍᴇ"}
 Ῠ ɢᴘᴀʏ: +918436686758
 Ῠ ᴜᴘɪ: krakinzkon@oksbi
 Ῠ ɢɪᴛʜᴜʙ: https://github.com/kryknz/vlkyre
-Ῠ ᴡᴇʙꜱɪᴛᴇ:  https://kryknz.github.io/Vlkyre
+Ῠ ᴡᴇʙꜱɪᴛᴇ: https://kryknz.github.io/Vlkyre
 
 
 ┌『 💰𝐄𝐂𝐎𝐍𝐎𝐌𝐘_𝐆𝐀𝐌𝐄💰 』
