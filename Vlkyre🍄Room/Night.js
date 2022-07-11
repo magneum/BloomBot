@@ -18,7 +18,7 @@ let { ӄօʟօʀs } = require("../Vlkyre🌗Events/ӄօʟօʀs");
 let Bagde = require("../Vlkyre🌤️Cloud/🍃𝖒𝖔𝖓𝖌𝖔/badge");
 let { Image_Button } = require("../Vlkyre👒Hat/Image_Button");
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-exports.Night = async (Vlkyre, ӄ𝖗𝖞ӄ𝖓𝖟, ӄ_counter, Ѷ𝖎𝖔𝖓, CC) => {
+exports.Night = async (Vlkyre, ӄӄ, ӄ_counter, Ѷ𝖎𝖔𝖓, CC) => {
 let Allowed = [
 "ban",
 "unban",
@@ -74,8 +74,8 @@ let Allowed = [
 ];
 if (Allowed.includes(Vlkyre.commandName) == true) {
 console.log(true);
-await ӄօʟօʀs(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
-return await CC(Vlkyre, ӄ𝖗𝖞ӄ𝖓𝖟, ӄ_counter, Ѷ𝖎𝖔𝖓);
+await ӄօʟօʀs(ӄӄ, Vlkyre);
+return await CC(Vlkyre, ӄӄ, ӄ_counter, Ѷ𝖎𝖔𝖓);
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 } else {
 console.log(false);
@@ -84,7 +84,7 @@ await Bagde.findOne(
 ID: Vlkyre.sender,
 },
 async (error, userBg) => {
-if (error) return Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, util.format(error));
+if (error) return Caught(ӄӄ, Vlkyre, util.format(error));
 if (!userBg) {
 let newUser = new Bagde({
 ID: Vlkyre.sender,
@@ -96,7 +96,7 @@ PermanentLimitTime: 43200000,
 });
 await newUser.save();
 return await Image_Button(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄӄ,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/Vlkyre_15AKv5i_omy24uvWcz64NpA.png",
@@ -113,7 +113,7 @@ if (Time > 0 && userBg.Limits == 0) {
 userBg.value = "False";
 await userBg.save();
 return await Image_Button(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄӄ,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/Vlkyre__Shop.png",
@@ -129,8 +129,8 @@ Vlkyre.A𝖗𝖌𝖘,
 userBg.Limits = userBg.Limits - 1;
 userBg.value = "True";
 await userBg.save();
-await ӄօʟօʀs(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
-return await CC(Vlkyre, ӄ𝖗𝖞ӄ𝖓𝖟, ӄ_counter, Ѷ𝖎𝖔𝖓);
+await ӄօʟօʀs(ӄӄ, Vlkyre);
+return await CC(Vlkyre, ӄӄ, ӄ_counter, Ѷ𝖎𝖔𝖓);
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 } else if (Time < 0 && userBg.Limits == 0) {
 if (userBg.Badge === "🧵Basic 10 Commands") userBg.Limits = 10;
@@ -142,12 +142,12 @@ if (userBg.Badge === "💎Diamond 100 Commands") userBg.Limits = 100;
 userBg.CurrentLimitTime = Date.now();
 userBg.value = "True";
 await userBg.save();
-await ӄօʟօʀs(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
-return await CC(Vlkyre, ӄ𝖗𝖞ӄ𝖓𝖟, ӄ_counter, Ѷ𝖎𝖔𝖓);
+await ӄօʟօʀs(ӄӄ, Vlkyre);
+return await CC(Vlkyre, ӄӄ, ӄ_counter, Ѷ𝖎𝖔𝖓);
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 } else if (userBg.value === "False") {
 return await Image_Button(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄӄ,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/Vlkyre__Shop.png",

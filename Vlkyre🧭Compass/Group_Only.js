@@ -12,9 +12,9 @@
 // ╚════════════╝
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 require("../Vlkyre🖋️Utilities/𝕷𝖆ყO𝖚𝖙");
-exports.Sender_Not_Admin = async (ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre) => {
-// await ӄ𝖗𝖞ӄ𝖓𝖟.sendPresenceUpdate("composing", Vlkyre.chatID);
-await ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(
+exports.Sender_Not_Admin = async (ӄӄ, Vlkyre) => {
+// await ӄӄ.sendPresenceUpdate("composing", Vlkyre.chatID);
+await ӄӄ.sendMessage(
 Vlkyre.chatID,
 {
 contextInfo: { mentionedJid: [Vlkyre.sender] },

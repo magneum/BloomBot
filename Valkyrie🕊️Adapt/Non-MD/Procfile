@@ -1,1 +1,0 @@
-worker: node ᴠʟᴋʏʀᴇ🕸️ʜᴏꜱᴛᴇʀ/⚡AutoLm

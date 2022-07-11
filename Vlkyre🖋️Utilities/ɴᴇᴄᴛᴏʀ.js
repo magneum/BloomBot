@@ -215,7 +215,7 @@ unlink("./Vlkyre🎒Bag/${filename}.gif"),
 return buffer5;
 };
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-exports.ɴᴇᴄᴛᴏʀ = async (ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, Ѷ𝖎𝖔𝖓) => {
+exports.ɴᴇᴄᴛᴏʀ = async (ӄӄ, Vlkyre, Ѷ𝖎𝖔𝖓) => {
 if (!Vlkyre) return Vlkyre;
 let M = proto.WebMessageInfo;
 if (Vlkyre.key) {
@@ -224,15 +224,15 @@ Vlkyre.isBaileys = Vlkyre.id.startsWith("BAE5") && Vlkyre.id.length === 16;
 Vlkyre.chatID = Vlkyre.key.remoteJid;
 Vlkyre.fromMe = Vlkyre.key.fromMe;
 Vlkyre.isGroup = Vlkyre.chatID.endsWith("@g.us");
-Vlkyre.sender = ӄ𝖗𝖞ӄ𝖓𝖟.decodeJid(
-(Vlkyre.fromMe && ӄ𝖗𝖞ӄ𝖓𝖟.user.id) ||
+Vlkyre.sender = ӄӄ.decodeJid(
+(Vlkyre.fromMe && ӄӄ.user.id) ||
 Vlkyre.participant ||
 Vlkyre.key.participant ||
 Vlkyre.chatID ||
 ""
 );
 if (Vlkyre.isGroup)
-Vlkyre.participant = ӄ𝖗𝖞ӄ𝖓𝖟.decodeJid(Vlkyre.key.participant) || "";
+Vlkyre.participant = ӄӄ.decodeJid(Vlkyre.key.participant) || "";
 }
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 if (Vlkyre.message) {
@@ -287,8 +287,8 @@ Vlkyre.quoted.chatID = Vlkyre.msg.contextInfo.remoteJid || Vlkyre.chatID;
 Vlkyre.quoted.isBaileys = Vlkyre.quoted.id
 ? Vlkyre.quoted.id.startsWith("BAE5") && Vlkyre.quoted.id.length === 16
 : false;
-Vlkyre.quoted.sender = ӄ𝖗𝖞ӄ𝖓𝖟.decodeJid(Vlkyre.msg.contextInfo.participant);
-Vlkyre.quoted.fromMe = Vlkyre.quoted.sender === (ӄ𝖗𝖞ӄ𝖓𝖟.user && ӄ𝖗𝖞ӄ𝖓𝖟.user.id);
+Vlkyre.quoted.sender = ӄӄ.decodeJid(Vlkyre.msg.contextInfo.participant);
+Vlkyre.quoted.fromMe = Vlkyre.quoted.sender === (ӄӄ.user && ӄӄ.user.id);
 Vlkyre.quoted.text =
 Vlkyre.quoted.text ||
 Vlkyre.quoted.caption ||
@@ -302,8 +302,8 @@ Vlkyre.quoted.mentionedJid = Vlkyre.msg.contextInfo
 : [];
 Vlkyre.getQuotedObj = Vlkyre.getQuotedMessage = async () => {
 if (!Vlkyre.quoted.id) return false;
-let q = await Ѷ𝖎𝖔𝖓.loadMessage(Vlkyre.chatID, Vlkyre.quoted.id, ӄ𝖗𝖞ӄ𝖓𝖟);
-return exports.ɴᴇᴄᴛᴏʀ(ӄ𝖗𝖞ӄ𝖓𝖟, q, Ѷ𝖎𝖔𝖓);
+let q = await Ѷ𝖎𝖔𝖓.loadMessage(Vlkyre.chatID, Vlkyre.quoted.id, ӄӄ);
+return exports.ɴᴇᴄᴛᴏʀ(ӄӄ, q, Ѷ𝖎𝖔𝖓);
 };
 let vM = (Vlkyre.quoted.fakeObj = M.fromObject({
 key: {
@@ -315,14 +315,14 @@ message: quoted,
 ...(Vlkyre.isGroup ? { participant: Vlkyre.quoted.sender } : {}),
 }));
 Vlkyre.quoted.delete = () =>
-ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(Vlkyre.quoted.chatID, { delete: vM.key });
+ӄӄ.sendMessage(Vlkyre.quoted.chatID, { delete: vM.key });
 Vlkyre.quoted.copyNForward = (jid, forceForward = false, options = {}) =>
-ӄ𝖗𝖞ӄ𝖓𝖟.copyNForward(jid, vM, forceForward, options);
-Vlkyre.quoted.download = () => ӄ𝖗𝖞ӄ𝖓𝖟.downloadMediaMessage(Vlkyre.quoted);
+ӄӄ.copyNForward(jid, vM, forceForward, options);
+Vlkyre.quoted.download = () => ӄӄ.downloadMediaMessage(Vlkyre.quoted);
 }
 }
 if (Vlkyre.msg.url)
-Vlkyre.download = () => ӄ𝖗𝖞ӄ𝖓𝖟.downloadMediaMessage(Vlkyre.msg);
+Vlkyre.download = () => ӄӄ.downloadMediaMessage(Vlkyre.msg);
 Vlkyre.text =
 Vlkyre.msg.text ||
 Vlkyre.msg.caption ||
@@ -334,14 +334,14 @@ Vlkyre.msg.title ||
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 Vlkyre.reply = (text, chatId = Vlkyre.chatID, options = {}) =>
 Buffer.isBuffer(text)
-? ӄ𝖗𝖞ӄ𝖓𝖟.sendMedia(chatId, text, "file", "", Vlkyre, { ...options })
-: ӄ𝖗𝖞ӄ𝖓𝖟.sendText(chatId, text, Vlkyre, { ...options });
-Vlkyre.copy = () => exports.ɴᴇᴄᴛᴏʀ(ӄ𝖗𝖞ӄ𝖓𝖟, M.fromObject(M.toObject(Vlkyre)));
+? ӄӄ.sendMedia(chatId, text, "file", "", Vlkyre, { ...options })
+: ӄӄ.sendText(chatId, text, Vlkyre, { ...options });
+Vlkyre.copy = () => exports.ɴᴇᴄᴛᴏʀ(ӄӄ, M.fromObject(M.toObject(Vlkyre)));
 Vlkyre.copyNForward = (
 jid = Vlkyre.chatID,
 forceForward = false,
 options = {}
-) => ӄ𝖗𝖞ӄ𝖓𝖟.copyNForward(jid, Vlkyre, forceForward, options);
+) => ӄӄ.copyNForward(jid, Vlkyre, forceForward, options);
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 Vlkyre.isCommand = Vlkyre.Body.startsWith(prefix);
 Vlkyre.isCmd =
@@ -352,7 +352,7 @@ Vlkyre.commandName = Vlkyre.isCmd
 : "";
 Vlkyre.A𝖗𝖌𝖘 = Vlkyre.Body.trim().split(/ +/).slice(1);
 Vlkyre.pushName = Vlkyre.pushName || "No Name";
-Vlkyre.botNumber = await ӄ𝖗𝖞ӄ𝖓𝖟.decodeJid(ӄ𝖗𝖞ӄ𝖓𝖟.user.id);
+Vlkyre.botNumber = await ӄӄ.decodeJid(ӄӄ.user.id);
 Vlkyre.isCreator = [Vlkyre.botNumber, ...global.owner]
 .map((v) => v.replace(/[^0-9]/g, "") + "@s.whatsapp.net")
 .includes(Vlkyre.sender);
@@ -362,7 +362,7 @@ Vlkyre.quoted = Vlkyre.quoted ? Vlkyre.quoted : Vlkyre;
 let mime = (Vlkyre.quoted.msg || Vlkyre.quoted).mimetype || "";
 Vlkyre.isMedia = /image|video|sticker|audio/.test(mime);
 Vlkyre.groupMetadata = Vlkyre.isGroup
-? await ӄ𝖗𝖞ӄ𝖓𝖟.groupMetadata(Vlkyre.chatID)
+? await ӄӄ.groupMetadata(Vlkyre.chatID)
 : "";
 Vlkyre.participants = Vlkyre.isGroup
 ? await Vlkyre.groupMetadata.participants

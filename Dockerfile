@@ -34,10 +34,10 @@ RUN npm install -g n yarn && n install 16.15.1 && hash -r
 RUN curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl && curl https://cli-assets.heroku.com/install.sh | sh && heroku plugins:install heroku-builds
 RUN chmod a+rx /usr/local/bin/youtube-dl && hash -r && git clone https://github.com/KryKnz/Vlkyre.git && cd Vlkyre
 WORKDIR /Vlkyre
-RUN pip install -r Valkyrie🕊️Adapt/⭕𝖈𝖆𝖗𝖆.txt && yarn global add --ignore-engine spotify-dl spdl-core typescript forever && yarn config set ignore-engines true && yarn install --ignore-engines
+RUN pip install -r Devars°/⭕𝖈𝖆𝖗𝖆.txt && yarn global add --ignore-engine spotify-dl spdl-core typescript forever && yarn config set ignore-engines true && yarn install --ignore-engines
 RUN git config --global user.name 'KryKnz' && git config --global user.email 'krakinzkon@gmail.com' && git config pull.rebase false
 RUN git init --initial-branch=🐍Ş𝖎𝖕𝖍𝖔𝖓® && git fetch origin 🐍Ş𝖎𝖕𝖍𝖔𝖓® && git reset --hard origin/🐍Ş𝖎𝖕𝖍𝖔𝖓® 
-CMD python3 🌱𝖆𝖕𝖗𝖎𝖑𝖑𝖆.py
+CMD python3 🌱𝖆𝖕𝖗𝖎𝖑𝖑𝖆.py.py
 # ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 # // ╔⧉༻ [ Ѷ𝖑𝐤𝐲𝖗𝖊🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬! 
 # // ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫𝐬 +918436686758,917430922909

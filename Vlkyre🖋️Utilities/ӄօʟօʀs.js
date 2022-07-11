@@ -15,7 +15,7 @@
 exports.__esModule = true;
 require("../Vlkyre🖋️Utilities/𝕷𝖆ყO𝖚𝖙");
 let ӄօʟօʀ = require("@heroku-cli/color");
-exports.ӄօʟօʀs = async (ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre) => {
+exports.ӄօʟօʀs = async (ӄӄ, Vlkyre) => {
 let chalk = require("chalk");
 let Gamboge = chalk.hex("#e49b0f");
 let Glaucous = chalk.hex("#6082B6");
@@ -24,7 +24,7 @@ let Burgundy = chalk.hex("#810020");
 let Vermilion = chalk.hex("#E34234");
 let Burlywood = chalk.hex("#deb887");
 let 𝕲𝖗𝖔𝖚𝖕𝖒𝖊𝖙𝖆 = await Vlkyre.groupMetadata;
-await ӄ𝖗𝖞ӄ𝖓𝖟.sendReadReceipt(Vlkyre.chatID, Vlkyre.sender, [Vlkyre.key.id]);
+await ӄӄ.sendReadReceipt(Vlkyre.chatID, Vlkyre.sender, [Vlkyre.key.id]);
 if (HEROKU_API_KEY === undefined) {
 console.log(Gamboge("▷═════════════════════|✠|═════════════════════◁"));
 console.log(ӄօʟօʀ["default"].black(ӄօʟօʀ["default"].bgWhite("🕐 𝐓𝐢𝐦𝐞: "), Feldgrau("".concat(new Date()))));

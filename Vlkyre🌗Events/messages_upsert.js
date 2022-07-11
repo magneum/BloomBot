@@ -12,8 +12,10 @@
 // ╚════════════╝
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 require("../Vlkyre🖋️Utilities/𝕷𝖆ყO𝖚𝖙");
+require("../Vlkyre🖋️Utilities/Ѷ𝖆𝖑.js");
 let { ɴᴇᴄᴛᴏʀ } = require("../Vlkyre🖋️Utilities/ɴᴇᴄᴛᴏʀ");
-let messages_upsert = async (chatUpdate, Ѷ𝖎𝖔𝖓, ӄ𝖗𝖞ӄ𝖓𝖟) => {
+let messages_upsert = async (chatUpdate, Ѷ𝖎𝖔𝖓, ӄӄ) => {
+try {
 𝖈𝖍𝖆𝖙 = chatUpdate.messages[0];
 if (!𝖈𝖍𝖆𝖙.message) return;
 𝖈𝖍𝖆𝖙.message =
@@ -21,11 +23,15 @@ Object.keys(𝖈𝖍𝖆𝖙.message)[0] === "ephemeralMessage"
 ? 𝖈𝖍𝖆𝖙.message.ephemeralMessage.message
 : 𝖈𝖍𝖆𝖙.message;
 if (𝖈𝖍𝖆𝖙.key && 𝖈𝖍𝖆𝖙.key.remoteJid === "status@broadcast") return;
-if (!ӄ𝖗𝖞ӄ𝖓𝖟.public && !𝖈𝖍𝖆𝖙.key.fromMe && chatUpdate.type === "notify")
-return;
+if (!ӄӄ.public && !𝖈𝖍𝖆𝖙.key.fromMe && chatUpdate.type === "notify") return;
 if (𝖈𝖍𝖆𝖙.key.id.startsWith("BAE5") && 𝖈𝖍𝖆𝖙.key.id.length === 16) return;
-Vlkyre = await ɴᴇᴄᴛᴏʀ(ӄ𝖗𝖞ӄ𝖓𝖟, 𝖈𝖍𝖆𝖙, Ѷ𝖎𝖔𝖓);
-require("../Ѷ𝖑𝐤𝐲𝖗𝖊")(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, chatUpdate, Ѷ𝖎𝖔𝖓);
+Vlkyre = await ɴᴇᴄᴛᴏʀ(ӄӄ, 𝖈𝖍𝖆𝖙, Ѷ𝖎𝖔𝖓);
+require("../Vlkyre🖋️Utilities/Ѷ𝖆𝖑.js")(ӄӄ, Vlkyre, chatUpdate, Ѷ𝖎𝖔𝖓).catch(
+(error) => console.log(error)
+);
+} catch (err) {
+console.log(err);
+}
 };
 module.exports = {
 Vmsgup: messages_upsert,

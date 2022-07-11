@@ -12,7 +12,7 @@
 // ╚════════════╝
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 require("../Vlkyre🖋️Utilities/𝕷𝖆ყO𝖚𝖙");
-exports.Image_Button = async (ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, A𝖗𝖌𝖘, M𝖊𝖉𝖎𝖆, 𝕮𝖔𝖓𝖙𝖊𝖓𝖙) => {
+exports.Image_Button = async (ӄӄ, Vlkyre, A𝖗𝖌𝖘, M𝖊𝖉𝖎𝖆, 𝕮𝖔𝖓𝖙𝖊𝖓𝖙) => {
 let usedUser = require(`../Vlkyre🌤️Cloud/𝖀𝖘𝖊𝖗🍣𝖒𝖔𝖓𝖌𝖔/usedUser`);
 let ᴍꜱᴇᴄ = require("parse-ms");
 let ʙᴏᴛ_ᴜꜱᴇᴅ;
@@ -22,7 +22,7 @@ await usedUser.findOne(
 User: Vlkyre.sender,
 },
 async (𝕰𝖗𝖗𝖔𝖗, ꜱᴇʀᴄ) => {
-if (𝕰𝖗𝖗𝖔𝖗) return Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, 𝕰𝖗𝖗𝖔𝖗);
+if (𝕰𝖗𝖗𝖔𝖗) return Caught(ӄӄ, Vlkyre, 𝕰𝖗𝖗𝖔𝖗);
 if (!ꜱᴇʀᴄ) {
 ʙᴏᴛ_ᴜꜱᴇᴅ = 0
 ʟᴀꜱᴛ_ᴜꜱᴇᴅ = 0
@@ -32,7 +32,7 @@ let ᴄʟᴏᴄᴋ = ᴍꜱᴇᴄ(ꜱᴇʀᴄ.PermaTime - (Date.now() - ꜱᴇʀ
 ʟᴀꜱᴛ_ᴜꜱᴇᴅ = ᴄʟᴏᴄᴋ.seconds
 }});
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
-await ӄ𝖗𝖞ӄ𝖓𝖟.sendPresenceUpdate("composing", Vlkyre.chatID);
+// await ӄӄ.sendPresenceUpdate("composing", Vlkyre.chatID);
 let ʀᴇᴀᴄᴛ;
 if (Vlkyre.isReply) {
 var Receiver =
@@ -40,16 +40,20 @@ Vlkyre.mtype == "extendedTextMessage" &&
 Vlkyre.message.extendedTextMessage.contextInfo != null
 ? Vlkyre.message.extendedTextMessage.contextInfo.participant || ""
 : "";
-ʀᴇᴀᴄᴛ = await ӄ𝖗𝖞ӄ𝖓𝖟
+ʀᴇᴀᴄᴛ = await ӄӄ
 .sendMessage(
 Vlkyre.chatID,
 {
 contextInfo: { mentionedJid: [Vlkyre.sender, Receiver] },
 image: { url: M𝖊𝖉𝖎𝖆 },
-caption: `🕊️Hey ${Vlkyre.pushName || "ɴᴏ_ɴᴀᴍᴇ"}
+caption: `╔══『 𝐏𝐫𝐨𝐟𝐢𝐥𝐞𝐫® 』
+║🕊️ *ɴᴀᴍᴇ:* ${Vlkyre.pushName || "ɴᴏ_ɴᴀᴍᴇ"}
+║🎭 *ᴄʜᴀᴛɪᴅ:* ${Vlkyre.chatID.split("@")[0]}
+║🤖 *ʙᴏᴛ_ᴜꜱᴇᴅ:* ${ʙᴏᴛ_ᴜꜱᴇᴅ || "ɴᴜʟʟ"}
+╚═══════╝
 
 ${𝕮𝖔𝖓𝖙𝖊𝖓𝖙}`,
-footer: "*⦓ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⦔*\nᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ",
+footer: "*⦓ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⦔*\n▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ ◁",
 buttons: [
 {
 buttonId: prefix + "HELP",
@@ -77,16 +81,20 @@ Vlkyre.mtype == "extendedTextMessage" &&
 Vlkyre.message.extendedTextMessage.contextInfo != null
 ? Vlkyre.message.extendedTextMessage.contextInfo.mentionedJid
 : [];
-ʀᴇᴀᴄᴛ = await ӄ𝖗𝖞ӄ𝖓𝖟
+ʀᴇᴀᴄᴛ = await ӄӄ
 .sendMessage(
 Vlkyre.chatID,
 {
 contextInfo: { mentionedJid: [Vlkyre.sender, Receiver] },
 image: { url: M𝖊𝖉𝖎𝖆 },
-caption: `🕊️Hey ${Vlkyre.pushName || "ɴᴏ_ɴᴀᴍᴇ"}
+caption: `╔══『 𝐏𝐫𝐨𝐟𝐢𝐥𝐞𝐫® 』
+║🕊️ *ɴᴀᴍᴇ:* ${Vlkyre.pushName || "ɴᴏ_ɴᴀᴍᴇ"}
+║🎭 *ᴄʜᴀᴛɪᴅ:* ${Vlkyre.chatID.split("@")[0]}
+║🤖 *ʙᴏᴛ_ᴜꜱᴇᴅ:* ${ʙᴏᴛ_ᴜꜱᴇᴅ || "ɴᴜʟʟ"}
+╚═══════╝
 
 ${𝕮𝖔𝖓𝖙𝖊𝖓𝖙}`,
-footer: "*⦓ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⦔*\nᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ",
+footer: "*⦓ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⦔*\n▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ ◁",
 buttons: [
 {
 buttonId: prefix + "HELP",
@@ -109,16 +117,20 @@ quoted: Vlkyre,
 .catch((e) => console.log(e));
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 } else {
-ʀᴇᴀᴄᴛ = await ӄ𝖗𝖞ӄ𝖓𝖟
+ʀᴇᴀᴄᴛ = await ӄӄ
 .sendMessage(
 Vlkyre.chatID,
 {
 contextInfo: { mentionedJid: [Vlkyre.sender] },
 image: { url: M𝖊𝖉𝖎𝖆 },
-caption: `🕊️Hey ${Vlkyre.pushName || "ɴᴏ_ɴᴀᴍᴇ"}
+caption: `╔══『 𝐏𝐫𝐨𝐟𝐢𝐥𝐞𝐫® 』
+║🕊️ *ɴᴀᴍᴇ:* ${Vlkyre.pushName || "ɴᴏ_ɴᴀᴍᴇ"}
+║🎭 *ᴄʜᴀᴛɪᴅ:* ${Vlkyre.chatID.split("@")[0]}
+║🤖 *ʙᴏᴛ_ᴜꜱᴇᴅ:* ${ʙᴏᴛ_ᴜꜱᴇᴅ || "ɴᴜʟʟ"}
+╚═══════╝
 
 ${𝕮𝖔𝖓𝖙𝖊𝖓𝖙}`,
-footer: "*⦓ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⦔*\nᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ",
+footer: "*⦓ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⦔*\n▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ ◁",
 buttons: [
 {
 buttonId: prefix + "HELP",
@@ -138,6 +150,18 @@ quoted: Vlkyre,
 }
 )
 .catch((e) => console.log(e));
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
+let ʀᴇᴀᴄᴛionMessage = {
+ʀᴇᴀᴄᴛ: {
+text: `⚡`,
+key: ʀᴇᴀᴄᴛ.key,
+},
+};
+console.log(ʀᴇᴀᴄᴛ);
+return await ӄӄ
+.sendMessage(Vlkyre.chatID, ʀᴇᴀᴄᴛionMessage)
+.catch((e) => console.log(e));
+}
 };
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 // ╔⧉༻ [ Ѷ𝖑𝐤𝐲𝖗𝖊🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬! 
