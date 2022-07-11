@@ -581,7 +581,12 @@ return generateWA("❌ᴇʀʀᴏʀ: ", "#ed7777", error, "#ed7777");
 ӄ𝖗𝖞ӄ𝖓𝖟.ev.on("creds.update", async (update) => {
 try {
 saveCreds(update);
-generateWA("⚡ɪɴꜰᴏ:", "#ECCF8D", "Vlkyre Credentials Updated!", "#ECCF8D");
+generateWA(
+"⚡ɪɴꜰᴏ:",
+"#ECCF8D",
+"Vlkyre Credentials Updated!",
+"#ECCF8D"
+);
 // await simpleGit.simpleGit()
 // .add("./__vlkcache__/Vlkyre.db")
 // .addConfig('user.name', 'KryKnz')
