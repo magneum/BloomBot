@@ -433,7 +433,7 @@ caption: `Ῠ  *ɴᴀᴍᴇ:* ${Vlkyre.pushName || "ɴᴏ_ɴᴀᴍᴇ"}
 ╚═══════╝
 
 ┌『 🍑𝐍𝐒𝐅𝐖🍑 』
-║Ῠ ${prefix}p4k
+╿Ῠ ${prefix}p4k
 ║Ῠ ${prefix}pblowjob
 ║Ῠ ${prefix}pmilf
 ║Ῠ ${prefix}ppussy
