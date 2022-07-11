@@ -42,20 +42,20 @@ let ʀᴇᴠ_ɢɪᴛʜᴜʙ = ʀᴇᴠ_ɢɪᴛ();
 await ʀᴇᴠ_ɢɪᴛʜᴜʙ.fetch();
 let ɴᴇᴡ = await ɢɪᴛᴄᴀʟʟ.log(["🐍Ş𝖎𝖕𝖍𝖔𝖓®..origin/🐍Ş𝖎𝖕𝖍𝖔𝖓®"]);
 if (ɴᴇᴡ.total != 0) {
-await ӄ𝖗𝖞ӄ𝖓𝖟.groupSettingUpdate("120363020792949649@g.us", "announcement").catch((error) =>console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐄𝐫𝐫𝐨𝐫: "), ӄօʟօʀ.bgRed(error))));
-await ӄ𝖗𝖞ӄ𝖓𝖟.groupSettingUpdate("120363039223842047@g.us", "announcement").catch((error) =>console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐄𝐫𝐫𝐨𝐫: "), ӄօʟօʀ.bgRed(error))));
-await ӄ𝖗𝖞ӄ𝖓𝖟.groupSettingUpdate("120363024871653603@g.us", "announcement").catch((error) =>console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐄𝐫𝐫𝐨𝐫: "), ӄօʟօʀ.bgRed(error))));
-await ӄ𝖗𝖞ӄ𝖓𝖟.groupSettingUpdate("120363042762307739@g.us", "announcement").catch((error) =>console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐄𝐫𝐫𝐨𝐫: "), ӄօʟօʀ.bgRed(error))));
-await ӄ𝖗𝖞ӄ𝖓𝖟.groupSettingUpdate("120363022161584857@g.us", "announcement").catch((error) =>console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐄𝐫𝐫𝐨𝐫: "), ӄօʟօʀ.bgRed(error))));
+// await ӄ𝖗𝖞ӄ𝖓𝖟.groupSettingUpdate("120363020792949649@g.us", "announcement").catch((error) =>console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐄𝐫𝐫𝐨𝐫: "), ӄօʟօʀ.bgRed(error))));
+// await ӄ𝖗𝖞ӄ𝖓𝖟.groupSettingUpdate("120363039223842047@g.us", "announcement").catch((error) =>console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐄𝐫𝐫𝐨𝐫: "), ӄօʟօʀ.bgRed(error))));
+// await ӄ𝖗𝖞ӄ𝖓𝖟.groupSettingUpdate("120363024871653603@g.us", "announcement").catch((error) =>console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐄𝐫𝐫𝐨𝐫: "), ӄօʟօʀ.bgRed(error))));
+// await ӄ𝖗𝖞ӄ𝖓𝖟.groupSettingUpdate("120363042762307739@g.us", "announcement").catch((error) =>console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐄𝐫𝐫𝐨𝐫: "), ӄօʟօʀ.bgRed(error))));
+// await ӄ𝖗𝖞ӄ𝖓𝖟.groupSettingUpdate("120363022161584857@g.us", "announcement").catch((error) =>console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐄𝐫𝐫𝐨𝐫: "), ӄօʟօʀ.bgRed(error))));
 await Hoku.delete("/apps/" + HEROKU_APP_NAME + "/dynos/" + "worker").catch((error) =>console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐇𝐞𝐫𝐨𝐤𝐮 𝐄𝐫𝐫𝐨𝐫: "), ӄօʟօʀ.bgRed(error))));
 }
 } catch (error) {
 console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐄𝐫𝐫𝐨𝐫: "), ӄօʟօʀ.bgRed(error)));
-await ӄ𝖗𝖞ӄ𝖓𝖟.groupSettingUpdate("120363020792949649@g.us", "not_announcement").catch((error) =>console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐄𝐫𝐫𝐨𝐫: "), ӄօʟօʀ.bgRed(error))));
-await ӄ𝖗𝖞ӄ𝖓𝖟.groupSettingUpdate("120363039223842047@g.us", "not_announcement").catch((error) =>console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐄𝐫𝐫𝐨𝐫: "), ӄօʟօʀ.bgRed(error))));
-await ӄ𝖗𝖞ӄ𝖓𝖟.groupSettingUpdate("120363024871653603@g.us", "not_announcement").catch((error) =>console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐄𝐫𝐫𝐨𝐫: "), ӄօʟօʀ.bgRed(error))));
-await ӄ𝖗𝖞ӄ𝖓𝖟.groupSettingUpdate("120363042762307739@g.us", "not_announcement").catch((error) =>console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐄𝐫𝐫𝐨𝐫: "), ӄօʟօʀ.bgRed(error))));
-await ӄ𝖗𝖞ӄ𝖓𝖟.groupSettingUpdate("120363022161584857@g.us", "not_announcement").catch((error) =>console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐄𝐫𝐫𝐨𝐫: "), ӄօʟօʀ.bgRed(error))));
+// await ӄ𝖗𝖞ӄ𝖓𝖟.groupSettingUpdate("120363020792949649@g.us", "not_announcement").catch((error) =>console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐄𝐫𝐫𝐨𝐫: "), ӄօʟօʀ.bgRed(error))));
+// await ӄ𝖗𝖞ӄ𝖓𝖟.groupSettingUpdate("120363039223842047@g.us", "not_announcement").catch((error) =>console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐄𝐫𝐫𝐨𝐫: "), ӄօʟօʀ.bgRed(error))));
+// await ӄ𝖗𝖞ӄ𝖓𝖟.groupSettingUpdate("120363024871653603@g.us", "not_announcement").catch((error) =>console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐄𝐫𝐫𝐨𝐫: "), ӄօʟօʀ.bgRed(error))));
+// await ӄ𝖗𝖞ӄ𝖓𝖟.groupSettingUpdate("120363042762307739@g.us", "not_announcement").catch((error) =>console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐄𝐫𝐫𝐨𝐫: "), ӄօʟօʀ.bgRed(error))));
+// await ӄ𝖗𝖞ӄ𝖓𝖟.groupSettingUpdate("120363022161584857@g.us", "not_announcement").catch((error) =>console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐄𝐫𝐫𝐨𝐫: "), ӄօʟօʀ.bgRed(error))));
 }
 }
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
