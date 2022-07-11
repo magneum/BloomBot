@@ -30,7 +30,7 @@ let Baileys = require("@adiwajshing/baileys");
 let fs = require(`fs`);
 let pino = require(`pino`);
 let path = require(`path`);
-let chalk = require(`chalk`);
+let Color = require(`chalk`);
 let Draw = require("cfonts");
 let goose = require("mongoose");
 let FileType = require(`file-type`);
@@ -49,6 +49,15 @@ let sequelize = DATABASE;
 let Ѷ𝖎𝖔𝖓 = makeInMemoryStore({
 logger: pino().child({ level: `silent`, stream: `Ѷ𝖎𝖔𝖓` }),
 });
+function generateWA(Topic, TName, Text, Name) {
+let TPrint = Color.hex(TName).bold(Topic);
+let Print = Color.hex(Name).italic.bold(Text);
+console.log(Color.black(Color.bgBlack(TPrint)), Color.black(Print));
+}
+console.log(
+Color.black(Color.bgBlack(Color.hex("#fad48b.").bold("📡DATABASE: "))),
+Color.whiteBright.italic(DATABASE_URL || DATABASE)
+);
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 async function Ѷ𝖎𝖔𝖓ᴇᴏɴᴇ() {
 try {
@@ -61,20 +70,33 @@ useFindAndModify: false,
 })
 .catch((error) => {
 console.error(
-chalk.red(`❌𝐄𝐫𝐫𝐨𝐫: Unable to Connected with 🍃𝖒𝖔𝖓𝖌𝖔 + 𝖀𝖘𝖊𝖗🍣𝖒𝖔𝖓𝖌𝖔.`)
+Color.red(`❌𝐄𝐫𝐫𝐨𝐫: Unable to Connected with 🍃𝖒𝖔𝖓𝖌𝖔 + 𝖀𝖘𝖊𝖗🍣𝖒𝖔𝖓𝖌𝖔.`)
 );
 console.log(error);
 process.exit(0);
 });
 } finally {
-console.log(chalk.green("💡𝐈𝐧𝐟𝐨: Connected With 🍃𝖒𝖔𝖓𝖌𝖔 + 𝖀𝖘𝖊𝖗🍣𝖒𝖔𝖓𝖌𝖔."));
+generateWA(
+"⚡ɪɴꜰᴏ:",
+"#849871",
+"Connected With 🍃𝖒𝖔𝖓𝖌𝖔 + 𝖀𝖘𝖊𝖗🍣𝖒𝖔𝖓𝖌𝖔.",
+"#849871"
+);
 }
 try {
 await sequelize.authenticate();
-console.log(chalk.green("💡𝐈𝐧𝐟𝐨: Connected with 🍂𝖘𝖖𝖑 + 🌩️𝖈𝖑𝖔𝖚𝖉𝖉𝖇."));
+generateWA(
+"⚡ɪɴꜰᴏ:",
+"#849871",
+"Connected with 🍂𝖘𝖖𝖑 + 🌩️𝖈𝖑𝖔𝖚𝖉𝖉𝖇.",
+"#849871"
+);
 } catch (error) {
-console.error(
-chalk.red("❌𝐄𝐫𝐫𝐨𝐫: Unable to Connected with 🍂𝖘𝖖𝖑 + 🌩️𝖈𝖑𝖔𝖚𝖉𝖉𝖇.")
+generateWA(
+"❌ᴇʀʀᴏʀ: ",
+"#ed7777",
+"Unable to Connected with 🍂𝖘𝖖𝖑 + 🌩️𝖈𝖑𝖔𝖚𝖉𝖉𝖇.",
+"#ed7777"
 );
 console.log(error);
 process.exit(0);
@@ -94,12 +116,6 @@ conversation: "",
 };
 },
 });
-// console.clear();
-// Draw.say("Vlkyre\nBY\nKrakinzLab", {
-// font: "block",
-// align: "center",
-// gradient: ["red", "yellow"],
-// });
 Ѷ𝖎𝖔𝖓.bind(ӄ𝖗𝖞ӄ𝖓𝖟.ev);
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 ӄ𝖗𝖞ӄ𝖓𝖟.decodeJid = (jid) => {
@@ -487,7 +503,13 @@ messageId: waMessage.key.id,
 return waMessage;
 };
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-ӄ𝖗𝖞ӄ𝖓𝖟.cMod = (jid, copy, text = ``, sender = ӄ𝖗𝖞ӄ𝖓𝖟.user.id, options = {}) => {
+ӄ𝖗𝖞ӄ𝖓𝖟.cMod = (
+jid,
+copy,
+text = ``,
+sender = ӄ𝖗𝖞ӄ𝖓𝖟.user.id,
+options = {}
+) => {
 let mtype = Object.keys(copy.message)[0];
 let isEphemeral = mtype === `ephemeralMessage`;
 if (isEphemeral) {
@@ -550,17 +572,23 @@ data,
 };
 };
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-ӄ𝖗𝖞ӄ𝖓𝖟.ev.on("connection.update", async (𝖚𝖕𝖉𝖆𝖙𝖊) => {
+ӄ𝖗𝖞ӄ𝖓𝖟.ev.on("connection.update", async (update) => {
 try {
+Draw.say("Vlkyre", {
+font: "slick",
+align: "center",
+gradient: ["red", "yellow"],
+});
 let connection_update = require("../Vlkyre🌗Events/connection_update");
-await connection_update.Vcnup(𝖚𝖕𝖉𝖆𝖙𝖊, Ѷ𝖎𝖔𝖓ᴇᴏɴᴇ, ӄ𝖗𝖞ӄ𝖓𝖟);
-} catch (𝕰𝖗𝖗𝖔𝖗) {
-return console.log(chalk.redBright(𝕰𝖗𝖗𝖔𝖗));
+await connection_update.Vcnup(update, Ѷ𝖎𝖔𝖓ᴇᴏɴᴇ, ӄ𝖗𝖞ӄ𝖓𝖟);
+} catch (error) {
+return generateWA("❌ᴇʀʀᴏʀ: ", "#ed7777", error, "#ed7777");
 }
 });
-ӄ𝖗𝖞ӄ𝖓𝖟.ev.on("creds.update", async (𝖚𝖕𝖉𝖆𝖙𝖊) => {
+ӄ𝖗𝖞ӄ𝖓𝖟.ev.on("creds.update", async (update) => {
 try {
-await saveCreds(𝖚𝖕𝖉𝖆𝖙𝖊);
+saveCreds(update);
+generateWA("⚡ɪɴꜰᴏ:", "#ECCF8D", "Vlkyre Credentials Updated!", "#ECCF8D");
 // await simpleGit.simpleGit()
 // .add("./Valkyrie🕊️Adapt/Vlkyre.db")
 // .addConfig('user.name', 'KryKnz')
@@ -569,37 +597,39 @@ await saveCreds(𝖚𝖕𝖉𝖆𝖙𝖊);
 // .push(["-u", "origin", "🐍Ş𝖎𝖕𝖍𝖔𝖓®"], function () {
 // return console.log("Pushed DB!");
 // }).catch((error) => console.log("error: " + error));
-} catch (𝕰𝖗𝖗𝖔𝖗) {
-return console.log(chalk.redBright(𝕰𝖗𝖗𝖔𝖗));
+} catch (error) {
+return generateWA("❌ᴇʀʀᴏʀ: ", "#ed7777", error, "#ed7777");
 }
 });
-ӄ𝖗𝖞ӄ𝖓𝖟.ev.on("messages.upsert", async (𝖚𝖕𝖉𝖆𝖙𝖊) => {
+ӄ𝖗𝖞ӄ𝖓𝖟.ev.on("messages.upsert", async (update) => {
 try {
 let messages_upsert = require("../Vlkyre🌗Events/messages_upsert");
-await messages_upsert.Vmsgup(𝖚𝖕𝖉𝖆𝖙𝖊, Ѷ𝖎𝖔𝖓, ӄ𝖗𝖞ӄ𝖓𝖟);
-} catch (𝕰𝖗𝖗𝖔𝖗) {
-return console.log(chalk.redBright(𝕰𝖗𝖗𝖔𝖗));
+await messages_upsert.Vmsgup(update, Ѷ𝖎𝖔𝖓, ӄ𝖗𝖞ӄ𝖓𝖟);
+} catch (error) {
+return generateWA("❌ᴇʀʀᴏʀ: ", "#ed7777", error, "#ed7777");
 }
 });
-ӄ𝖗𝖞ӄ𝖓𝖟.ev.on("group-participants.update", async (𝖚𝖕𝖉𝖆𝖙𝖊) => {
+ӄ𝖗𝖞ӄ𝖓𝖟.ev.on("group-participants.update", async (update) => {
 try {
 let group_participants = require("../Vlkyre🌗Events/group_participants");
-await group_participants.Vgrpns(𝖚𝖕𝖉𝖆𝖙𝖊, ӄ𝖗𝖞ӄ𝖓𝖟);
-} catch (𝕰𝖗𝖗𝖔𝖗) {
-return console.log(chalk.redBright(𝕰𝖗𝖗𝖔𝖗));
+await group_participants.Vgrpns(update, ӄ𝖗𝖞ӄ𝖓𝖟);
+} catch (error) {
+return generateWA("❌ᴇʀʀᴏʀ: ", "#ed7777", error, "#ed7777");
 }
 });
-ӄ𝖗𝖞ӄ𝖓𝖟.ws.on("CB:call", async (𝖚𝖕𝖉𝖆𝖙𝖊) => {
+ӄ𝖗𝖞ӄ𝖓𝖟.ws.on("CB:call", async (update) => {
 try {
 let call_updates = require("../Vlkyre🌗Events/call_updates");
-await call_updates.Vclup(ӄ𝖗𝖞ӄ𝖓𝖟, 𝖚𝖕𝖉𝖆𝖙𝖊);
-} catch (𝕰𝖗𝖗𝖔𝖗) {
-return console.log(chalk.redBright(𝕰𝖗𝖗𝖔𝖗));
+await call_updates.Vclup(ӄ𝖗𝖞ӄ𝖓𝖟, update);
+} catch (error) {
+return generateWA("❌ᴇʀʀᴏʀ: ", "#ed7777", error, "#ed7777");
 }
 });
 return ӄ𝖗𝖞ӄ𝖓𝖟;
 }
-Ѷ𝖎𝖔𝖓ᴇᴏɴᴇ().catch((𝕰𝖗𝖗𝖔𝖗) => console.log(chalk.redBright(𝕰𝖗𝖗𝖔𝖗)));
+Ѷ𝖎𝖔𝖓ᴇᴏɴᴇ().catch((error) =>
+generateWA("❌ᴇʀʀᴏʀ: ", "#ed7777", error, "#ed7777")
+);
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 // ╔⧉༻ [ Ѷ𝖑𝐤𝐲𝖗𝖊🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 // ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫𝐬 +918436686758,917430922909
