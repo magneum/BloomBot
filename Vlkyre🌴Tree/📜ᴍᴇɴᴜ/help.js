@@ -201,9 +201,9 @@ caption: `Ῠ  *ɴᴀᴍᴇ:* ${Vlkyre.pushName || "ɴᴏ_ɴᴀᴍᴇ"}
 ╔══╝ 🐾𝐀𝐍𝐈𝐌𝐄_𝐌𝐀𝐍𝐆𝐀🐾 』
 ║Ῠ ${prefix}anime
 ║Ῠ ${prefix}manga
-╚═══════╝
+╚══╗
 
-╔══『 🐝𝐀𝐍𝐈𝐌𝐀𝐓𝐈𝐎𝐍🐝 』
+╔══╝ 🐝𝐀𝐍𝐈𝐌𝐀𝐓𝐈𝐎𝐍🐝 』
 ║Ῠ ${prefix}baka
 ║Ῠ ${prefix}bite
 ║Ῠ ${prefix}blush
@@ -233,9 +233,9 @@ caption: `Ῠ  *ɴᴀᴍᴇ:* ${Vlkyre.pushName || "ɴᴏ_ɴᴀᴍᴇ"}
 ║Ῠ ${prefix}yeet
 ║Ῠ ${prefix}yes
 ║Ῠ ${prefix}zerotwo
-╚═══════╝
+╚══╗
 
-╔══『 🏳️‍🌈𝐑𝐀𝐍𝐃𝐎𝐌🏳️‍🌈 』
+╔══╝ 🏳️‍🌈𝐑𝐀𝐍𝐃𝐎𝐌🏳️‍🌈 』
 ║Ῠ ${prefix}advice
 ║Ῠ ${prefix}rank
 ║Ῠ ${prefix}fact
@@ -255,9 +255,9 @@ caption: `Ῠ  *ɴᴀᴍᴇ:* ${Vlkyre.pushName || "ɴᴏ_ɴᴀᴍᴇ"}
 ║Ῠ ${prefix}funny
 ║Ῠ ${prefix}laugh
 ║Ῠ ${prefix}dadjoke
-╚═══════╝
+╚══╗
 
-╔══『 ⭕𝐘𝐎𝐔𝐓𝐔𝐁𝐄_𝐅𝐈𝐋𝐓𝐄𝐑⭕ 』
+╔══╝ ⭕𝐘𝐎𝐔𝐓𝐔𝐁𝐄_𝐅𝐈𝐋𝐓𝐄𝐑⭕ 』
 ║Ῠ ${prefix}yt8d
 ║Ῠ ${prefix}ytbassboost
 ║Ῠ ${prefix}ytecho
@@ -273,9 +273,9 @@ caption: `Ῠ  *ɴᴀᴍᴇ:* ${Vlkyre.pushName || "ɴᴏ_ɴᴀᴍᴇ"}
 ║Ῠ ${prefix}ytsurround
 ║Ῠ ${prefix}ytvaporwave
 ║Ῠ ${prefix}ytvibrato
-╚═══════╝
+╚══╗
 
-╔══『 👑𝐎𝐖𝐍𝐄𝐑_𝐒𝐔𝐃𝐎👑 』
+╔══╝ 👑𝐎𝐖𝐍𝐄𝐑_𝐒𝐔𝐃𝐎👑 』
 ║Ῠ ${prefix}ban
 ║Ῠ ${prefix}unban
 ║Ῠ ${prefix}reboot
@@ -301,9 +301,9 @@ caption: `Ῠ  *ɴᴀᴍᴇ:* ${Vlkyre.pushName || "ɴᴏ_ɴᴀᴍᴇ"}
 ║Ῠ ${prefix}help
 ║Ῠ ${prefix}menu
 ║Ῠ ${prefix}allmenu
-╚═══════╝
+╚══╗
 
-╔══『 🛍️𝐒𝐓𝐎𝐑𝐄🛍️ 』
+╔══╝ 🛍️𝐒𝐓𝐎𝐑𝐄🛍️ 』
 ║Ῠ ${prefix}buy basic 
 ║Ῠ ${prefix}buy bronze 
 ║Ῠ ${prefix}buy silver 
@@ -313,9 +313,9 @@ caption: `Ῠ  *ɴᴀᴍᴇ:* ${Vlkyre.pushName || "ɴᴏ_ɴᴀᴍᴇ"}
 ║Ῠ ${prefix}buy sword
 ║Ῠ ${prefix}buy laptop
 ║Ῠ ${prefix}buy charm
-╚═══════╝
+╚══╗
 
-╔══『 📥𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐑📥 』
+╔══╝ 📥𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐑📥 』
 ║Ῠ ${prefix}yta
 ║Ῠ ${prefix}play
 ║Ῠ ${prefix}song
@@ -338,18 +338,18 @@ caption: `Ῠ  *ɴᴀᴍᴇ:* ${Vlkyre.pushName || "ɴᴏ_ɴᴀᴍᴇ"}
 ║Ῠ ${prefix}randommusic
 ║Ῠ ${prefix}suggestaudio
 ║Ῠ ${prefix}suggestmusic
-╚═══════╝
+╚══╗
 
-╔══『 🏝️𝐂𝐎𝐍𝐕𝐄𝐑𝐓𝐄𝐑🏝️ 』
+╔══╝ 🏝️𝐂𝐎𝐍𝐕𝐄𝐑𝐓𝐄𝐑🏝️ 』
 ║Ῠ ${prefix}carbon
 ║Ῠ ${prefix}steal
 ║Ῠ ${prefix}sticker
 ║Ῠ ${prefix}tinyurl
 ║Ῠ ${prefix}toimg
 ║Ῠ ${prefix}stourl
-╚═══════╝
+╚══╗
 
-╔══『 🌐𝐖𝐄𝐁_𝐒𝐄𝐀𝐑𝐂𝐇🌐 』
+╔══╝ 🌐𝐖𝐄𝐁_𝐒𝐄𝐀𝐑𝐂𝐇🌐 』
 ║Ῠ ${prefix}gify
 ║Ῠ ${prefix}gif
 ║Ῠ ${prefix}google
@@ -368,9 +368,9 @@ caption: `Ῠ  *ɴᴀᴍᴇ:* ${Vlkyre.pushName || "ɴᴏ_ɴᴀᴍᴇ"}
 ║Ῠ ${prefix}ytscrape
 ║Ῠ ${prefix}youtubescrape
 ║Ῠ ${prefix}youtubesearch
-╚═══════╝
+╚══╗
 
-╔══『 🔰𝐆𝐑𝐎𝐔𝐏_𝐌𝐎𝐃🔰 』
+╔══╝ 🔰𝐆𝐑𝐎𝐔𝐏_𝐌𝐎𝐃🔰 』
 ║Ῠ ${prefix}warn
 ║Ῠ ${prefix}nolink
 ║Ῠ ${prefix}stoplink
@@ -389,9 +389,9 @@ caption: `Ῠ  *ɴᴀᴍᴇ:* ${Vlkyre.pushName || "ɴᴏ_ɴᴀᴍᴇ"}
 ║Ῠ ${prefix}setgpfp
 ║Ῠ ${prefix}tagall
 ║Ῠ ${prefix}admins
-╚═══════╝
+╚══╗
 
-╔══『 👓𝐀𝐔𝐃𝐈𝐎_𝐅𝐈𝐋𝐓𝐄𝐑𝐒👓 』
+╔══╝ 👓𝐀𝐔𝐃𝐈𝐎_𝐅𝐈𝐋𝐓𝐄𝐑𝐒👓 』
 ║Ῠ ${prefix}bassboost
 ║Ῠ ${prefix}echo
 ║Ῠ ${prefix}fast
@@ -407,9 +407,9 @@ caption: `Ῠ  *ɴᴀᴍᴇ:* ${Vlkyre.pushName || "ɴᴏ_ɴᴀᴍᴇ"}
 ║Ῠ ${prefix}surround
 ║Ῠ ${prefix}vaporwave
 ║Ῠ ${prefix}vibrato
-╚═══════╝
+╚══╗
 
-╔══『 🍌𝐇𝐄𝐍𝐓𝐀𝐈🍌 』 
+╔══╝ 🍌𝐇𝐄𝐍𝐓𝐀𝐈🍌 』 
 ║Ῠ ${prefix}ass
 ║Ῠ ${prefix}bdsm
 ║Ῠ ${prefix}cum  
@@ -430,9 +430,9 @@ caption: `Ῠ  *ɴᴀᴍᴇ:* ${Vlkyre.pushName || "ɴᴏ_ɴᴀᴍᴇ"}
 ║Ῠ ${prefix}thighs
 ║Ῠ ${prefix}uniform
 ║Ῠ ${prefix}yuri
-╚═══════╝
+╚══╗
 
-╔══『 🍑𝐍𝐒𝐅𝐖🍑 』
+╔══╝ 🍑𝐍𝐒𝐅𝐖🍑 』
 ║Ῠ ${prefix}p4k
 ║Ῠ ${prefix}pblowjob
 ║Ῠ ${prefix}pmilf
