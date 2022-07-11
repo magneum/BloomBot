@@ -12,7 +12,6 @@
 // ╚════════════╝
 ("|⬡═══════════════════════════════════════════════════════════════| Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 require("./Vlkyre🖋️Utilities/𝕷𝖆ყO𝖚𝖙");
-Levels.setURL(MONGOOSE);
 let ᴍꜱ = require("parse-ms");
 let ӄօʟօʀ = require("chalk");
 let fetch = require("node-fetch");
@@ -42,6 +41,7 @@ let UserPrivate = require("./Vlkyre🌤️Cloud/🍃𝖒𝖔𝖓𝖌𝖔/private
 let usedUser = require("./Vlkyre🌤️Cloud/𝖀𝖘𝖊𝖗🍣𝖒𝖔𝖓𝖌𝖔/usedUser");
 let userBanCheck = require("./Vlkyre🌤️Cloud/𝖀𝖘𝖊𝖗🍣𝖒𝖔𝖓𝖌𝖔/user");
 let color = randomMC.getColor();
+Levels.setURL(MONGOOSE);
 function generateWA(Topic, TName, Text, Name) {
 let TPrint = ӄօʟօʀ.hex(TName).bold(Topic);
 let Print = ӄօʟօʀ.hex(Name).italic.bold(Text);
