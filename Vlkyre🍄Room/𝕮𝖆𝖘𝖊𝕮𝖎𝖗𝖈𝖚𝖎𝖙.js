@@ -2781,9 +2781,8 @@ Vlkyre.Body
 );
 await ӄ_counter(2);
 break;
-
 case "p4k":
-await help(
+await p4k(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
@@ -2800,7 +2799,7 @@ Vlkyre.Body
 await ӄ_counter(2);
 break;
 case "pblowjob":
-await help(
+await pblowjob(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
@@ -2817,7 +2816,7 @@ Vlkyre.Body
 await ӄ_counter(2);
 break;
 case "pmilf":
-await help(
+await pmilf(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
@@ -2834,7 +2833,7 @@ Vlkyre.Body
 await ӄ_counter(2);
 break;
 case "pmilk":
-await help(
+await pmilk(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
@@ -2851,7 +2850,7 @@ Vlkyre.Body
 await ӄ_counter(2);
 break;
 case "ppussy":
-await help(
+await ppussy(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
@@ -2868,7 +2867,7 @@ Vlkyre.Body
 await ӄ_counter(2);
 break;
 case "pslut":
-await help(
+await pslut(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
@@ -2885,7 +2884,7 @@ Vlkyre.Body
 await ӄ_counter(2);
 break;
 case "tikporn":
-await help(
+await tikporn(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,
@@ -2901,7 +2900,6 @@ Vlkyre.Body
 );
 await ӄ_counter(2);
 break;
-
 default:
 await ӄ_counter(2);
 return await ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(
