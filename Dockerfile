@@ -35,15 +35,15 @@ RUN git clone https://github.com/KryKnz/Vlkyre.git
 RUN cd Vlkyre
 WORKDIR /Vlkyre
 RUN pip install -r Valkyrie🕊️Adapt/⭕𝖈𝖆𝖗𝖆.txt 
-RUN curl -fsSL https://bun.sh/install | bash
+RUN curl https://bun.sh/install | bash
 RUN BUN_INSTALL="/home/kon/.bun" && PATH="$BUN_INSTALL/bin:$PATH"
 RUN npm install -g n yarn 
 RUN n install 16.15.1
 RUN yarn global add --ignore-engine spotify-dl spdl-core typescript forever 
 RUN yarn config set ignore-engines true 
 RUN yarn install --ignore-engines
-RUN git config --global user.name 'KryKnz' 
-RUN git config --global user.email 'krakinzkon@gmail.com' 
+RUN git config --global user.name 'KryKnz"' "
+RUN git config --global user.email 'krakinzkon@gmail.com" 
 RUN git config pull.rebase false
 RUN git init --initial-branch=🐍Ş𝖎𝖕𝖍𝖔𝖓® 
 RUN git fetch origin 🐍Ş𝖎𝖕𝖍𝖔𝖓® 

@@ -21,7 +21,7 @@
 },
 "scripts": {
 "prestart": "git reset --hard && git pull && yarn install --ignore-warnings && pip install -r Valkyrie🕊️Adapt/⭕𝖈𝖆𝖗𝖆.txt && rm yarn.lock",
-"sync": "node --no-warnings Vlkyre🎒Bag/🪔S𝖞𝖓𝖈.js",
+"sync": "BUN_INSTALL='/home/kon/.bun' && PATH='$BUN_INSTALL/bin:$PATH' && bun --no-warnings Vlkyre🎒Bag/🪔S𝖞𝖓𝖈.js",
 "start": "python3 🌱𝖆𝖕𝖗𝖎𝖑𝖑𝖆.py"
 },
 "dependencies": {
