@@ -39,10 +39,9 @@ WORKDIR /Vlkyre
 RUN curl -fsSL https://bun.sh/install | bash 
 RUN BUN_INSTALL="/home/kon/.bun" 
 RUN PATH="$BUN_INSTALL/bin:$PATH"
+RUN bun add spotify-dl spdl-core typescript forever
+RUN bun install
 RUN pip install -r Valkyrie🕊️Adapt/⭕𝖈𝖆𝖗𝖆.txt 
-RUN yarn global add --ignore-engine spotify-dl spdl-core typescript forever 
-RUN yarn config set ignore-engines true 
-RUN yarn install --ignore-engines
 RUN git config --global user.name "KryKnz" 
 RUN git config --global user.email "krakinzkon@gmail.com" 
 RUN git config pull.rebase false
