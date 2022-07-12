@@ -15,25 +15,22 @@ FROM python:latest
 ENV ᴋʀᴀᴋɪɴᴢ⌬ʟᴀʙ "/venv"
 RUN python -m venv $ᴋʀᴀᴋɪɴᴢ⌬ʟᴀʙ
 ENV PATH "$ᴋʀᴀᴋɪɴᴢ⌬ʟᴀʙ/bin:$PATH"
-RUN apt update 
-RUN apt upgrade -y 
+RUN apt update
+RUN apt upgrade -y
 RUN apt install aptitude -y
 RUN aptitude install jq -y
-RUN aptitude install git -y 
-RUN aptitude install curl -y 
-RUN aptitude install wget -y 
+RUN aptitude install git -y
+RUN aptitude install curl -y
+RUN aptitude install wget -y
 RUN aptitude install ffmpeg -y
 RUN aptitude install nodejs -y 
-RUN aptitude install npm -y 
-RUN aptitude install ruby-full -y
+RUN aptitude install npm -y
 RUN aptitude install bpm-tools -y 
 RUN aptitude install opus-tools -y 
 RUN aptitude install python3-pip -y 
 RUN aptitude install python-is-python3 -y 
-RUN curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl 
-RUN curl https://cli-assets.heroku.com/install.sh | sh 
-RUN heroku plugins:install heroku-builds
-RUN chmod a+rx /usr/local/bin/youtube-dl 
+RUN curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl && chmod a+rx /usr/local/bin/youtube-dl 
+RUN curl https://cli-assets.heroku.com/install.sh | sh && heroku plugins:install heroku-builds
 RUN git clone https://github.com/KryKnz/Vlkyre.git 
 RUN cd Vlkyre
 WORKDIR /Vlkyre
