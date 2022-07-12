@@ -45,7 +45,7 @@ writeExifVid,
 } = require(`../Vlkyre🖋️Utilities/exif`);
 let sequelize = DATABASE;
 let Ѷ𝖎𝖔𝖓 = makeInMemoryStore({
-logger: pino().child({ level: `silent`, stream: `Ѷ𝖎𝖔𝖓` }),
+logger: pino().child({ level: `fatal`, stream: `Ѷ𝖎𝖔𝖓` }),
 });
 function generateWA(Topic, TName, Text, Name) {
 let TPrint = chalk.hex(TName).bold(Topic);
@@ -67,18 +67,38 @@ useCreateIndex: true,
 useFindAndModify: false,
 })
 .catch((error) => {
-generateWA("❌ᴇʀʀᴏʀ: ","#ed7777","Unable to Connected with 🍃𝖒𝖔𝖓𝖌𝖔 + 𝖀𝖘𝖊𝖗🍣𝖒𝖔𝖓𝖌𝖔.","#ed7777");
+generateWA(
+"❌ᴇʀʀᴏʀ: ",
+"#ed7777",
+"Unable to Connected with 🍃𝖒𝖔𝖓𝖌𝖔 + 𝖀𝖘𝖊𝖗🍣𝖒𝖔𝖓𝖌𝖔.",
+"#ed7777"
+);
 console.log(error);
 process.exit(0);
 });
 } finally {
-generateWA("⚡ɪɴꜰᴏ: ","#849871","Connected With 🍃𝖒𝖔𝖓𝖌𝖔 + 𝖀𝖘𝖊𝖗🍣𝖒𝖔𝖓𝖌𝖔.","#849871");
+generateWA(
+"⚡ɪɴꜰᴏ: ",
+"#849871",
+"Connected With 🍃𝖒𝖔𝖓𝖌𝖔 + 𝖀𝖘𝖊𝖗🍣𝖒𝖔𝖓𝖌𝖔.",
+"#849871"
+);
 }
 try {
 await sequelize.authenticate();
-generateWA("⚡ɪɴꜰᴏ: ","#849871","💡𝐈𝐧𝐟𝐨: Connected with 🍂𝖘𝖖𝖑 + 🌩️𝖈𝖑𝖔𝖚𝖉𝖉𝖇.","#849871");
+generateWA(
+"⚡ɪɴꜰᴏ: ",
+"#849871",
+"💡𝐈𝐧𝐟𝐨: Connected with 🍂𝖘𝖖𝖑 + 🌩️𝖈𝖑𝖔𝖚𝖉𝖉𝖇.",
+"#849871"
+);
 } catch (error) {
-generateWA("❌ᴇʀʀᴏʀ: ","#ed7777","Unable to Connected with 🍂𝖘𝖖𝖑 + 🌩️𝖈𝖑𝖔𝖚𝖉𝖉𝖇.","#ed7777");
+generateWA(
+"❌ᴇʀʀᴏʀ: ",
+"#ed7777",
+"Unable to Connected with 🍂𝖘𝖖𝖑 + 🌩️𝖈𝖑𝖔𝖚𝖉𝖉𝖇.",
+"#ed7777"
+);
 console.log(error);
 process.exit(0);
 }
@@ -88,23 +108,17 @@ let msgRetryCounterMap = {};
 let { state, Adapt } = await dbAuth();
 let ӄӄ = 𝖍𝖆𝖜ӄC({
 auth: state,
-msgRetryCounterMap,
+// msgRetryCounterMap,
 printQRInTerminal: true,
 defaultQueryTimeoutMs: undefined,
-logger: pino({ level: `silent` }),
+logger: pino({ level: `fatal` }),
 browser: [`Vlkyre`, `Chrome`, `4.0.0`],
-getMessage: async (key) => {
-return {
-conversation: "",
-};
-},
+// getMessage: async (key) => {
+// return {
+// conversation: "",
+// };
+// },
 });
-// console.clear();
-// Draw.say("Vlkyre\nBY\nKrakinzLab", {
-// font: "block",
-// align: "center",
-// gradient: ["red", "yellow"],
-// });
 Ѷ𝖎𝖔𝖓.bind(ӄӄ.ev);
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 ӄӄ.decodeJid = (jid) => {
@@ -569,15 +583,7 @@ return generateWA("❌ᴇʀʀᴏʀ: ", "#ed7777", error, "#ed7777");
 }
 });
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
-ӄӄ.ev.on("creds.update", (update) => {
-try {
-Adapt(update);
-generateWA("⚡ɪɴꜰᴏ: ","#ECCF8D","Vlkyre Credentials Updated!","#ECCF8D");
-} catch (error) {
-generateWA("❌ᴇʀʀᴏʀ: ", "#ed7777", error, "#ed7777");
-}
-});
-("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
+ӄӄ.ev.on("creds.update", (update) => Adapt(update));
 ӄӄ.ev.on("messages.upsert", async (update) => {
 try {
 let messages_upsert = require("../Vlkyre🌗Events/messages_upsert");
