@@ -30,7 +30,6 @@ RUN aptitude install bpm-tools -y
 RUN aptitude install opus-tools -y 
 RUN aptitude install python3-pip -y 
 RUN aptitude install python-is-python3 -y 
-RUN curl -fsSL https://bun.sh/install | bash && hash -r && BUN_INSTALL="/home/kon/.bun" && PATH="$BUN_INSTALL/bin:$PATH"
 RUN npm install -g n yarn && n install 16.15.1 && hash -r
 RUN curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl && curl https://cli-assets.heroku.com/install.sh | sh && heroku plugins:install heroku-builds
 RUN chmod a+rx /usr/local/bin/youtube-dl && hash -r && git clone https://github.com/KryKnz/Vlkyre.git && cd Vlkyre
