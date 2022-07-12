@@ -37,11 +37,11 @@ RUN chmod a+rx /usr/local/bin/youtube-dl
 RUN git clone https://github.com/KryKnz/Vlkyre.git 
 RUN cd Vlkyre
 WORKDIR /Vlkyre
-RUN curl -fsSL https://bun.sh/install | bash
-RUN BUN_INSTALL="/home/kon/.bun"
-RUN PATH="$BUN_INSTALL/bin:$PATH"
-
 RUN pip install -r Valkyrie🕊️Adapt/⭕𝖈𝖆𝖗𝖆.txt 
+RUN curl -fsSL https://bun.sh/install | bash
+RUN BUN_INSTALL="/home/kon/.bun" && PATH="$BUN_INSTALL/bin:$PATH"
+RUN npm install -g n yarn 
+RUN n install 16.15.1
 RUN yarn global add --ignore-engine spotify-dl spdl-core typescript forever 
 RUN yarn config set ignore-engines true 
 RUN yarn install --ignore-engines

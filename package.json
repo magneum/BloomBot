@@ -4,10 +4,10 @@
 "verold": "𝐩𝐫𝐞-𝐀𝐥𝐩𝐡𝐚",
 "depecrated": false,
 "directories": {
+"Vlkyre🖋️Utilities": "Vlkyre🖋️Utilities",
 "Vlkyre🌤️Cloud": "Vlkyre🌤️Cloud",
 "Vlkyre🍄Room": "Vlkyre🍄Room",
 "Vlkyre🌴Tree": "Vlkyre🌴Tree",
-"Vlkyre🖋️Utilities": "Vlkyre🖋️Utilities",
 "Vlkyre👒Hat": "Vlkyre👒Hat",
 "Vlkyre🌗Events": "Vlkyre🌗Events",
 "Vlkyre🧭Compass": "Vlkyre🧭Compass",
@@ -21,7 +21,7 @@
 },
 "scripts": {
 "prestart": "git reset --hard && git pull && yarn install --ignore-warnings && pip install -r Valkyrie🕊️Adapt/⭕𝖈𝖆𝖗𝖆.txt && rm yarn.lock",
-"sync": "node Vlkyre🎒Bag/🪔S𝖞𝖓𝖈.js",
+"sync": "node --no-warnings Vlkyre🎒Bag/🪔S𝖞𝖓𝖈.js",
 "start": "python3 🌱𝖆𝖕𝖗𝖎𝖑𝖑𝖆.py"
 },
 "dependencies": {
