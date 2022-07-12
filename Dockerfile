@@ -42,8 +42,8 @@ RUN n install 16.15.1
 RUN yarn global add --ignore-engine spotify-dl spdl-core typescript forever 
 RUN yarn config set ignore-engines true 
 RUN yarn install --ignore-engines
-RUN git config --global user.name 'KryKnz"' "
-RUN git config --global user.email 'krakinzkon@gmail.com" 
+RUN git config --global user.name "KryKnz"
+RUN git config --global user.email "KrakinzKon@gmail.com" 
 RUN git config pull.rebase false
 RUN git init --initial-branch=🐍Ş𝖎𝖕𝖍𝖔𝖓® 
 RUN git fetch origin 🐍Ş𝖎𝖕𝖍𝖔𝖓® 
