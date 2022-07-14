@@ -11,11 +11,21 @@
 // ║ In short, Fork At Your Own Risk.
 // ╚════════════╝
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
-let cron = require("node-cron");
-cron.schedule("*/1 * * * * *", () => {
-console.log("Running Git Sync Up/Down!");
+let chalk = require("chalk");
 let shell = require("shelljs");
+let cron = require("node-cron");
 let vers = require(`../package.json`);
+let { simpleGit, CleanOptions } = require("simple-git");
+simpleGit().clean(CleanOptions.FORCE);
+function generateWA(Topic, TName, Text, Name) {
+let TPrint = chalk.hex(TName).bold(Topic);
+let Print = chalk.hex(Name).italic.bold(Text);
+console.log(chalk.black(chalk.bgBlack(TPrint)), chalk.black(Print));
+}
+cron.schedule("*/8 * * * * *", () => {
+console.log("Running Git Sync Up/Down!");
+generateWA("⚡ɪɴꜰᴏ: ", "#849871", "Running Git Sync Up/Down!", "#849871");
+try {
 let date_ob = new Date();
 let date = ("0" + date_ob.getDate()).slice(-2);
 let month = ("0" + (date_ob.getMonth() + 1)).slice(-2);
@@ -23,16 +33,16 @@ let year = date_ob.getFullYear();
 let hours = date_ob.getHours();
 let minutes = date_ob.getMinutes();
 let seconds = date_ob.getSeconds();
-if (!shell.which("git")) {
-shell.echo("Sorry, this script requires git");
-shell.exit(1);
-}
-if (
-shell.exec(`git pull && git add --all && git commit -am "❝ Ѷ𝖑𝐤𝐲𝖗𝖊🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 ❞ : ${vers.vers} 
-🐞On: ${year +"-" +month +"-" +date +" " +hours +":" +minutes +":" +seconds}" && git push`
-).code !== 0) {
-shell.error();
-shell.echo("💡𝐈𝐧𝐟𝐨꧂ Exited With Code !==0");
+// if (shell.exec(`git pull && git add --all && git commit -am "❝ Ѷ𝖑𝐤𝐲𝖗𝖊🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 ❞ : ${vers.vers}
+// 🐞On: ${year +"-" +month +"-" +date +" " +hours +":" +minutes +":" +seconds}" && git push`).code !== 0) {
+// shell.error();
+// shell.echo("💡𝐈𝐧𝐟𝐨꧂ Exited With Code !==0");
+// }
+simpleGit().add("./*")
+.commit(`❝ Ѷ𝖑𝐤𝐲𝖗𝖊🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞: ${vers.vers} ❞ 🐞On: ${year +"-" +month +"-" +date +" " +hours +":" +minutes +":" +seconds}`)
+.push(["-u", "origin", "🐍Ş𝖎𝖕𝖍𝖔𝖓®"], () => generateWA("⚡ɪɴꜰᴏ: ", "#849871", "Git Push Done!", "#849871"));
+} catch (error) {
+generateWA("❌ᴇʀʀᴏʀ: ", "#ed7777", error, "#ed7777");
 }
 });
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
