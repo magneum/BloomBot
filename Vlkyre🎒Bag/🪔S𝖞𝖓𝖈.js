@@ -14,13 +14,11 @@
 let chalk = require("chalk");
 let shell = require("shelljs");
 let cron = require("node-cron");
-let vers = require(`../package.json`);
+let vers = require("../package.json");
 function generateWA(Topic, TName, Text, Name) {
 let TPrint = chalk.hex(TName).bold(Topic);
 let Print = chalk.hex(Name).italic.bold(Text);
-console.log(
-chalk.bgWhite(chalk.black(chalk.bgBlack(TPrint)), chalk.black(Print))
-);
+console.log(chalk.black(chalk.bgBlack(TPrint)), chalk.black(Print));
 }
 cron.schedule("*/8 * * * * *", () => {
 generateWA("⚡ɪɴꜰᴏ: ", "#2D5A27", "Running Git Sync Up/Down!", "#849871");
@@ -41,11 +39,45 @@ generateWA(
 );
 shell.exit(1);
 }
-if (shell.exec(`git pull && git add --all && git commit -am "❝ 🕊️Ѷ𝖑𝐤𝐲𝖗𝖊: ${vers.vers} 🐞On: ${year + "-" + month + "-" + date + " " + hours + ":" + minutes + ":" + seconds} ❞" && git push`).code !== 0) {
+if (
+shell.exec(
+`git add --all && git commit -am "❝ 🕊️Ѷ𝖑𝐤𝐲𝖗𝖊: ${vers.vers} 🐞On: ${
+year +
+"-" +
+month +
+"-" +
+date +
+" " +
+hours +
+":" +
+minutes +
+":" +
+seconds
+} ❞" && git push`
+).code !== 0
+) {
 shell.error();
 generateWA("❌ᴇʀʀᴏʀ: ", "#ff6347", "Exited With Code !==0", "#ed7777");
 }
-generateWA("⚡ɪɴꜰᴏ: ", "#2D5A27", "Git Push Done!" + `🐞On: ${year + "-" + month + "-" + date + " " + hours + ":" + minutes + ":" + seconds}`, "#849871");
+generateWA(
+"⚡ɪɴꜰᴏ: ",
+"#2D5A27",
+"Git Push Done!" +
+`🐞On: ${
+year +
+"-" +
+month +
+"-" +
+date +
+" " +
+hours +
+":" +
+minutes +
+":" +
+seconds
+}`,
+"#849871"
+);
 } catch (error) {
 generateWA("❌ᴇʀʀᴏʀ: ", "#ff6347", error, "#ed7777");
 }
