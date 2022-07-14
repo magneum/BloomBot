@@ -62,7 +62,7 @@ generateWA("❌ᴇʀʀᴏʀ: ", "#ff6347", "Exited With Code !==0", "#ed7777");
 generateWA(
 "⚡ɪɴꜰᴏ: ",
 "#2D5A27",
-"Git Push Done!" +
+"Git Push Done " +
 `🐞On: ${
 year +
 "-" +
