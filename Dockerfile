@@ -37,8 +37,7 @@ WORKDIR /Vlkyre
 RUN pip install -r Valkyrie🕊️Adapt/⭕𝖈𝖆𝖗𝖆.txt 
 RUN curl https://bun.sh/install | bash -E
 RUN BUN_INSTALL="/root/.bun" && PATH="$BUN_INSTALL/bin:$PATH"
-RUN npm install -g n yarn
-RUN n install 16.15.1
+RUN npm install -g n pm2 yarn && n install 16 && hash -r
 RUN yarn global add --ignore-engine spotify-dl spdl-core typescript forever 
 RUN yarn config set ignore-engines true 
 RUN yarn install --ignore-engines
