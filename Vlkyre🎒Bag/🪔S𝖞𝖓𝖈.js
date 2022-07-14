@@ -41,7 +41,7 @@ shell.exit(1);
 }
 if (
 shell.exec(
-`git add --all && git commit -am "❝ 🕊️Ѷ𝖑𝐤𝐲𝖗𝖊: ${vers.vers} 🐞On: ${
+`git pull && git add --all && git commit -am "❝ 🕊️Ѷ𝖑𝐤𝐲𝖗𝖊: ${vers.vers} 🐞On: ${
 year +
 "-" +
 month +
