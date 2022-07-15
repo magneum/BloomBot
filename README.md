@@ -33,6 +33,34 @@ Is a whatsapp userbot with automation,moderation,music,games and 140+ commands!
 Ῠ          https://wa.me/2349041348008
 ```
 
+# 🤖𝐎𝐮𝐫 𝐀𝐈 𝐆𝐫𝐨𝐮𝐩 𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧
+```sh
+🐉🕊️ 𝐕𝐋𝐊𝐘𝐑𝐄 𝐎𝐅𝐅𝐈𝐂𝐈𝐀𝐋 🕊️ 🐉
+𝘽𝙮 𝙆𝙧𝙖𝙆𝙞𝙣𝙯𝙇𝙖𝙗
+
+===============
+🍻𝐑𝐮𝐥𝐞𝐬🍻
+⧪ Insult Bot or Mods and get banned and kicked.
+⧪ No Sending Links.
+⧪ No Porn No Hentai Here.
+⧪ Leave Group If you donot like to be tagged.
+
+===============
+✨𝐆𝐄𝐓 𝐕𝐋𝐊𝐘𝐑𝐄✨
+⧪ Send Link To https://wa.me/917430922909
+
+===============
+🎐𝐈𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧🎐
+✨𝙂𝙋𝘼𝙔: +918436686758
+🍤𝙐𝙋𝙄: krakinzkon@oksbi
+🛰️𝙒𝙚𝙗𝙨𝙞𝙩𝙚:  https://aigroups.krakinzkon.repl.co
+
+===============
+🍗𝐅𝐞𝐞𝐝𝐛𝐚𝐜𝐤/𝐑𝐞𝐩𝐨𝐫𝐭𝐬/𝐅𝐞𝐚𝐭𝐮𝐫𝐞𝐑𝐞𝐪
+#support
+#mod
+
+
 # 🎊𝐂𝐚𝐭𝐞𝐠𝐨𝐫𝐢𝐞𝐬
 ```sh
 🐝 #AnimationMenu
