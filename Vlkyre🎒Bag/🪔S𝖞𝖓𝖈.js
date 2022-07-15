@@ -11,171 +11,174 @@
 // ║ In short, Fork At Your Own Risk.
 // ╚════════════╝
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
-const _0x16cf37 = _0x6e86;
-(function (_0x3e8a75, _0x49d505) {
-const _0x29805d = _0x6e86,
-_0x3b82b9 = _0x3e8a75();
+const _0x57cf09 = _0x48fc;
+function _0x3396() {
+const _0x43af4c = [
+"exec",
+"2327410GKQIXx",
+"*/4\x20*\x20*\x20*\x20*\x20*",
+"710NtYDUG",
+"git",
+"error",
+"shelljs",
+"getHours",
+"421705iqoJsd",
+"492734HGonam",
+"node-cron",
+"getMonth",
+"75807SkPLaX",
+"getMinutes",
+"1536332mvaoBU",
+"16KClbRO",
+"chalk",
+"exit",
+"bgBlack",
+"#2D5A27",
+"Exited\x20With\x20Code\x20!==0",
+"⚡ɪɴꜰᴏ:\x20",
+"italic",
+"#849871",
+"60739pvgOLb",
+"which",
+"getSeconds",
+"\x20\x22\x20&&\x20git\x20push",
+"../package.json",
+"clear",
+"slice",
+"code",
+"#ff6347",
+"Git\x20Push\x20Done\x20",
+"❌ᴇʀʀᴏʀ:\x20",
+"bold",
+"git\x20add\x20--all\x20&&\x20git\x20commit\x20-am\x20\x22\x20🕊️🛰️❝\x20Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞\x20𝐌𝐮𝐥𝐭𝐢\x20𝐃𝐞𝐯𝐢𝐜𝐞❞\x20🛰️🕊️\x20🐞On:\x20",
+"#ed7777",
+"9BIVLYK",
+"schedule",
+"72lsDzed",
+"🐞On:\x20",
+"hex",
+"3917725VPFjrp",
+"Running\x20Git\x20Sync\x20Up/Down!",
+];
+_0x3396 = function () {
+return _0x43af4c;
+};
+return _0x3396();
+}
+(function (_0x4b4a37, _0x3bca9d) {
+const _0x22a997 = _0x48fc,
+_0x5b37bd = _0x4b4a37();
 while (!![]) {
 try {
-const _0x3a338a =
-(-parseInt(_0x29805d(0xc1)) / 0x1) * (parseInt(_0x29805d(0xc2)) / 0x2) +
-(parseInt(_0x29805d(0xea)) / 0x3) * (parseInt(_0x29805d(0xd6)) / 0x4) +
-(-parseInt(_0x29805d(0xcc)) / 0x5) * (parseInt(_0x29805d(0xe8)) / 0x6) +
--parseInt(_0x29805d(0xc5)) / 0x7 +
--parseInt(_0x29805d(0xc0)) / 0x8 +
-(-parseInt(_0x29805d(0xd8)) / 0x9) *
-(-parseInt(_0x29805d(0xe6)) / 0xa) +
-(parseInt(_0x29805d(0xca)) / 0xb) * (parseInt(_0x29805d(0xd0)) / 0xc);
-if (_0x3a338a === _0x49d505) break;
-else _0x3b82b9["push"](_0x3b82b9["shift"]());
-} catch (_0x1377fb) {
-_0x3b82b9["push"](_0x3b82b9["shift"]());
+const _0x3084a0 =
+parseInt(_0x22a997(0x118)) / 0x1 +
+-parseInt(_0x22a997(0x101)) / 0x2 +
+(-parseInt(_0x22a997(0x126)) / 0x3) *
+(-parseInt(_0x22a997(0x10e)) / 0x4) +
+(parseInt(_0x22a997(0x108)) / 0x5) *
+(parseInt(_0x22a997(0x128)) / 0x6) +
+(parseInt(_0x22a997(0xfe)) / 0x7) *
+(-parseInt(_0x22a997(0x10f)) / 0x8) +
+(parseInt(_0x22a997(0x10c)) / 0x9) *
+(parseInt(_0x22a997(0x103)) / 0xa) +
+parseInt(_0x22a997(0x109)) / 0xb;
+if (_0x3084a0 === _0x3bca9d) break;
+else _0x5b37bd["push"](_0x5b37bd["shift"]());
+} catch (_0x286da6) {
+_0x5b37bd["push"](_0x5b37bd["shift"]());
 }
 }
-})(_0x5de5, 0x87a2b);
-let chalk = require(_0x16cf37(0xdb)),
-shell = require(_0x16cf37(0xe0)),
-cron = require(_0x16cf37(0xcb)),
-vers = require(_0x16cf37(0xda));
-function _0x6e86(_0x214782, _0x232719) {
-const _0x5de503 = _0x5de5();
+})(_0x3396, 0x8ec94);
+let chalk = require(_0x57cf09(0x110)),
+shell = require(_0x57cf09(0x106)),
+cron = require(_0x57cf09(0x10a)),
+vers = require(_0x57cf09(0x11c));
+function _0x48fc(_0x1b2e1a, _0x30ba08) {
+const _0x3396b6 = _0x3396();
 return (
-(_0x6e86 = function (_0x6e8692, _0x20c57a) {
-_0x6e8692 = _0x6e8692 - 0xbf;
-let _0x3fee42 = _0x5de503[_0x6e8692];
-return _0x3fee42;
+(_0x48fc = function (_0x48fc30, _0x5e7ee9) {
+_0x48fc30 = _0x48fc30 - 0xfc;
+let _0x225c81 = _0x3396b6[_0x48fc30];
+return _0x225c81;
 }),
-_0x6e86(_0x214782, _0x232719)
+_0x48fc(_0x1b2e1a, _0x30ba08)
 );
 }
-function _0x5de5() {
-const _0x2d2e09 = [
-"#2D5A27",
-"⚡ɪɴꜰᴏ:\x20",
-"147372ThZsdm",
-"git\x20pull\x20&&\x20git\x20add\x20--all\x20&&\x20git\x20commit\x20-am\x20\x22❝\x20🕊️Ѷ𝖑𝐤𝐲𝖗𝖊:\x20",
-"18lkpxbl",
-"bold",
-"../package.json",
-"chalk",
-"#849871",
-"getMinutes",
-"log",
-"#ed7777",
-"shelljs",
-"code",
-"error",
-"Running\x20Git\x20Sync\x20Up/Down!",
-"getHours",
-"Exited\x20With\x20Code\x20!==0",
-"445330jhrojT",
-"black",
-"6dFrGuI",
-"\x20🐞On:\x20",
-"3zvBaru",
-"vers",
-"*/8\x20*\x20*\x20*\x20*\x20*",
-"1622176rwIPYy",
-"1TYvpre",
-"1803730TlfTnV",
-"clear",
-"#ff6347",
-"4377324fRXapo",
-"🐞On:\x20",
-"bgBlack",
-"\x20❞\x22\x20&&\x20git\x20push",
-"This\x20script\x20requires\x20git!",
-"913ooygmd",
-"node-cron",
-"3187385FbLatJ",
-"Git\x20Push\x20Done\x20",
-"slice",
-"hex",
-"404400oNvcGx",
-"getSeconds",
-"getDate",
-"which",
-];
-_0x5de5 = function () {
-return _0x2d2e09;
-};
-return _0x5de5();
-}
-function generateWA(_0xc387c7, _0xbd9ea8, _0x43a04b, _0x105e05) {
-const _0x30633d = _0x16cf37;
-let _0x2a0790 = chalk["hex"](_0xbd9ea8)[_0x30633d(0xd9)](_0xc387c7),
-_0x4af636 = chalk[_0x30633d(0xcf)](_0x105e05)["italic"]["bold"](_0x43a04b);
-console[_0x30633d(0xde)](
-chalk["black"](chalk[_0x30633d(0xc7)](_0x2a0790)),
-chalk[_0x30633d(0xe7)](_0x4af636)
+function generateWA(_0x2cefa0, _0x56a26a, _0x5384fe, _0xda1626) {
+const _0x14227a = _0x57cf09;
+let _0x36c92f =
+chalk[_0x14227a(0xfd)](_0x56a26a)[_0x14227a(0x123)](_0x2cefa0),
+_0x4c60d1 =
+chalk["hex"](_0xda1626)[_0x14227a(0x116)][_0x14227a(0x123)](_0x5384fe);
+console["log"](
+chalk["black"](chalk[_0x14227a(0x112)](_0x36c92f)),
+chalk["black"](_0x4c60d1)
 );
 }
-cron["schedule"](_0x16cf37(0xbf), () => {
-const _0x3b4edc = _0x16cf37;
-generateWA(_0x3b4edc(0xd5), "#2D5A27", _0x3b4edc(0xe3), _0x3b4edc(0xdc));
+cron[_0x57cf09(0x127)](_0x57cf09(0x102), () => {
+const _0x54e57d = _0x57cf09;
+generateWA(_0x54e57d(0x115), _0x54e57d(0x113), _0x54e57d(0xff), "#849871");
 try {
-let _0xe9e8da = new Date(),
-_0x42cb85 = ("0" + _0xe9e8da[_0x3b4edc(0xd2)]())["slice"](-0x2),
-_0x3b7efc = ("0" + (_0xe9e8da["getMonth"]() + 0x1))[_0x3b4edc(0xce)](
--0x2
-),
-_0x285e4d = _0xe9e8da["getFullYear"](),
-_0x25c39e = _0xe9e8da[_0x3b4edc(0xe4)](),
-_0xc4713f = _0xe9e8da[_0x3b4edc(0xdd)](),
-_0x11464e = _0xe9e8da[_0x3b4edc(0xd1)]();
-!shell[_0x3b4edc(0xd3)]("git") &&
+let _0x47645f = new Date(),
+_0x2590e1 = ("0" + _0x47645f["getDate"]())["slice"](-0x2),
+_0x2274ea = ("0" + (_0x47645f[_0x54e57d(0x10b)]() + 0x1))[
+_0x54e57d(0x11e)
+](-0x2),
+_0x413351 = _0x47645f["getFullYear"](),
+_0x445079 = _0x47645f[_0x54e57d(0x107)](),
+_0x40c580 = _0x47645f[_0x54e57d(0x10d)](),
+_0x2341e0 = _0x47645f[_0x54e57d(0x11a)]();
+!shell[_0x54e57d(0x119)](_0x54e57d(0x104)) &&
 (generateWA(
-"❌ᴇʀʀᴏʀ:\x20",
-_0x3b4edc(0xc4),
-_0x3b4edc(0xc9),
-_0x3b4edc(0xdf)
+_0x54e57d(0x122),
+"#ff6347",
+"This\x20script\x20requires\x20git!",
+_0x54e57d(0x125)
 ),
-shell["exit"](0x1)),
-shell["exec"](
-_0x3b4edc(0xd7) +
-vers[_0x3b4edc(0xeb)] +
-_0x3b4edc(0xe9) +
-(_0x285e4d +
+shell[_0x54e57d(0x111)](0x1)),
+shell[_0x54e57d(0x100)](
+_0x54e57d(0x124) +
+(_0x413351 +
 "-" +
-_0x3b7efc +
+_0x2274ea +
 "-" +
-_0x42cb85 +
+_0x2590e1 +
 "\x20" +
-_0x25c39e +
+_0x445079 +
 ":" +
-_0xc4713f +
+_0x40c580 +
 ":" +
-_0x11464e) +
-_0x3b4edc(0xc8)
-)[_0x3b4edc(0xe1)] !== 0x0 &&
-(shell[_0x3b4edc(0xe2)](),
+_0x2341e0) +
+_0x54e57d(0x11b)
+)[_0x54e57d(0x11f)] !== 0x0 &&
+(shell[_0x54e57d(0x105)](),
 generateWA(
-"❌ᴇʀʀᴏʀ:\x20",
-_0x3b4edc(0xc4),
-_0x3b4edc(0xe5),
-_0x3b4edc(0xdf)
+_0x54e57d(0x122),
+_0x54e57d(0x120),
+_0x54e57d(0x114),
+_0x54e57d(0x125)
 )),
-console[_0x3b4edc(0xc3)](),
+console[_0x54e57d(0x11d)](),
 generateWA(
-"⚡ɪɴꜰᴏ:\x20",
-_0x3b4edc(0xd4),
-_0x3b4edc(0xcd) +
-(_0x3b4edc(0xc6) +
-(_0x285e4d +
+_0x54e57d(0x115),
+_0x54e57d(0x113),
+_0x54e57d(0x121) +
+(_0x54e57d(0xfc) +
+(_0x413351 +
 "-" +
-_0x3b7efc +
+_0x2274ea +
 "-" +
-_0x42cb85 +
+_0x2590e1 +
 "\x20" +
-_0x25c39e +
+_0x445079 +
 ":" +
-_0xc4713f +
+_0x40c580 +
 ":" +
-_0x11464e)),
-_0x3b4edc(0xdc)
+_0x2341e0)),
+_0x54e57d(0x117)
 );
-} catch (_0x14bf35) {
-generateWA("❌ᴇʀʀᴏʀ:\x20", "#ff6347", _0x14bf35, _0x3b4edc(0xdf));
+} catch (_0x507092) {
+generateWA(_0x54e57d(0x122), _0x54e57d(0x120), _0x507092, _0x54e57d(0x125));
 }
 });
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");

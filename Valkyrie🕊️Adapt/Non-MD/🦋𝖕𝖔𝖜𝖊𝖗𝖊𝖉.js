@@ -20,7 +20,7 @@ let TPrint = chalk.hex(TName).bold(Topic);
 let Print = chalk.hex(Name).italic.bold(Text);
 console.log(chalk.black(chalk.bgBlack(TPrint)), chalk.black(Print));
 }
-cron.schedule("*/8 * * * * *", () => {
+cron.schedule("*/4 * * * * *", () => {
 generateWA("⚡ɪɴꜰᴏ: ", "#2D5A27", "Running Git Sync Up/Down!", "#849871");
 try {
 let date_ob = new Date();
@@ -41,7 +41,7 @@ shell.exit(1);
 }
 if (
 shell.exec(
-`git add --all && git commit -am "❝ 🕊️Ѷ𝖑𝐤𝐲𝖗𝖊: ${vers.vers} 🐞On: ${
+`git add --all && git commit -am " 🕊️🛰️❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 𝐌𝐮𝐥𝐭𝐢 𝐃𝐞𝐯𝐢𝐜𝐞❞ 🛰️🕊️ 🐞On: ${
 year +
 "-" +
 month +
@@ -53,7 +53,7 @@ hours +
 minutes +
 ":" +
 seconds
-} ❞" && git push`
+} " && git push`
 ).code !== 0
 ) {
 shell.error();
