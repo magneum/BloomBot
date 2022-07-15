@@ -65,8 +65,11 @@ return await Image_Button(
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/Vlkyre.png",
-`⊱ ᴠʟᴋʏʀᴇ: is a whatsapp userbot with automation,moderation,music,games and 140+ commands!
+`❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 𝐌𝐮𝐥𝐭𝐢 𝐃𝐞𝐯𝐢𝐜𝐞 ❞
+Is a whatsapp userbot with automation,moderation,music,games and 140+ commands!
+
 ⊱ ᴘʀᴇꜰɪx: ${prefix}
+⊱ ɴᴀᴍᴇ:${Vlkyre.pushName || "~ɴᴏ_ɴᴀᴍᴇ~"}
 ⊱ ɢᴘᴀʏ: +918436686758
 ⊱ ᴜᴘɪ: krakinzkon@oksbi
 ⊱ ɢɪᴛʜᴜʙ: https://github.com/kryknz/vlkyre
