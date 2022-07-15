@@ -153,6 +153,7 @@ caption: `Ῠ *ɴᴀᴍᴇ:* ${Vlkyre.pushName || "~ɴᴏ_ɴᴀᴍᴇ~"} Ῠ
 ⊱ ɢᴘᴀʏ: +918436686758
 ⊱ ᴜᴘɪ: krakinzkon@oksbi
 ⊱ ɢɪᴛʜᴜʙ: https://github.com/kryknz/vlkyre
+⊱ ɢʀᴏᴜᴘꜱ: https://aigroups.krakinzkon.repl.co
 
 
 ╔══『 💰𝐄𝐂𝐎𝐍𝐎𝐌𝐘_𝐆𝐀𝐌𝐄💰 』
@@ -438,7 +439,7 @@ caption: `Ῠ *ɴᴀᴍᴇ:* ${Vlkyre.pushName || "~ɴᴏ_ɴᴀᴍᴇ~"} Ῠ
 ║Ῠ ${prefix}pslut
 ║Ῠ ${prefix}tikporn
 ╚═══════╝`,
-footer: "*⦓ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⦔*\n▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ ◁",
+footer: "*⦓ ❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 𝐌𝐮𝐥𝐭𝐢 𝐃𝐞𝐯𝐢𝐜𝐞❞ ⦔\nʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ\n🍾https://aigroups.krakinzkon.repl.co",
 buttons: [
 {
 buttonId: prefix + "HELP",

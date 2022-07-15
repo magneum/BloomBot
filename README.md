@@ -9,12 +9,12 @@
 
 [![Generic badge](https://img.shields.io/badge/🚀HEROKU-purple.svg)](https://VlkyreAI.krakinzkon.repl.co/)
 [![Generic badge](https://img.shields.io/badge/🌐WEBSITE-white.svg)](https://VlkyreAI.krakinzkon.repl.co/)
-[![Generic badge](https://img.shields.io/badge/⛱️GROUPS-darkgreen.svg)](https://VlkyreAI.krakinzkon.repl.co/)
+[![Generic badge](https://img.shields.io/badge/⛱️GROUPS-darkgreen.svg)](https://aigroups.krakinzkon.repl.co/)
 
 
 
 # 👑𝐆𝐫𝐨𝐮𝐩 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐨𝐫𝐬👑
-
+[![Generic badge](https://img.shields.io/badge/🍾Vlkyre_AI_Groups-darkgreen.svg)](https://aigroups.krakinzkon.repl.co/)
 ```sh
 Ῠ KryKnz:  https://wa.me/918436686758
 Ῠ Xitrex:  https://wa.me/917430922909

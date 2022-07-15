@@ -159,19 +159,11 @@ Vlkyre.isCommand &&
 !MeC.includes(Vlkyre.sender) &&
 !MeD.includes(Vlkyre.sender)
 ) {
-/*
-https://kryknz.github.io/Vlkyre
-*/
 return await Vlkyre.reply(`*❣️ ɴᴀᴍᴇ:* ${Vlkyre.pushName || "No_Name"}
 
 ❗ 𝐕𝐄𝐑𝐓𝐈𝐅𝐈𝐂𝐀𝐓𝐈𝐎𝐍 ❗
-Join Any Group Using Below Website and  get verified to use bot anywhere!
-
-『 🎊𝐀𝐈 𝐆𝐑𝐎𝐔𝐏𝐒°🎊 』
-Ῠ *A:* chat.whatsapp.com/${ʀᴇꜱᴘᴏɴꜱᴇ1}
-Ῠ *B:* chat.whatsapp.com/${ʀᴇꜱᴘᴏɴꜱᴇ2}
-Ῠ *C:* chat.whatsapp.com/${ʀᴇꜱᴘᴏɴꜱᴇ3}
-Ῠ *D:* chat.whatsapp.com/${ʀᴇꜱᴘᴏɴꜱᴇ4}`);
+*Join Any Group Using Below Website and get verified to use bot anywhere!*
+https://aigroups.krakinzkon.repl.co`);
 } else {
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 await usedUser.findOne(

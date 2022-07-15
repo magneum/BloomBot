@@ -47,7 +47,7 @@ caption: `*⦓ ©𝐕𝐥𝐤𝐲𝐫𝐞 ༒ 𝐖𝐞𝐥𝐜𝐨𝐦𝐞𝐫 �
 
 *『 🍯𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐍𝐨𝐭𝐞🍯 』* 
 ${userWel.message}`,
-footer: "*⦓ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⦔*\n_ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™_",
+footer: "*⦓ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⦔\nʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ\n🍾https://aigroups.krakinzkon.repl.co,
 buttons: [
 {
 buttonId: prefix + "HELP",
