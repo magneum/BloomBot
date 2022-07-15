@@ -146,7 +146,8 @@ Vlkyre.chatID,
 {
 contextInfo: { mentionedJid: [Vlkyre.sender] },
 image: { url: "./Vlkyre👗Skins/Vlkyre_LabGreen.png" },
-caption: `❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 𝐌𝐮𝐥𝐭𝐢 𝐃𝐞𝐯𝐢𝐜𝐞❞ is a whatsapp userbot with automation,moderation,music,games and 140+ commands!
+caption: `❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 𝐌𝐮𝐥𝐭𝐢 𝐃𝐞𝐯𝐢𝐜𝐞 ❞
+Is a whatsapp userbot with automation,moderation,music,games and 140+ commands!
 
 ⊱ ᴘʀᴇꜰɪx: ${prefix}
 ⊱ ɴᴀᴍᴇ:${Vlkyre.pushName || "~ɴᴏ_ɴᴀᴍᴇ~"}
@@ -171,7 +172,7 @@ caption: `❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 𝐌𝐮𝐥𝐭𝐢 𝐃𝐞𝐯𝐢�
 🛍️${prefix}StoreMenu
 🌐${prefix}WebMenu
 ⭕${prefix}YTFilterMenu`,
-footer: "*⦓ ❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 𝐌𝐮𝐥𝐭𝐢 𝐃𝐞𝐯𝐢𝐜𝐞❞ ⦔\nʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ\n🍾https://aigroups.krakinzkon.repl.co",
+footer: "*⦓ ❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 𝐌𝐮𝐥𝐭𝐢 𝐃𝐞𝐯𝐢𝐜𝐞 ❞ ⦔\nʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ\n🍾https://aigroups.krakinzkon.repl.co",
 buttons: [
 {
 buttonId: prefix + "HELP",
