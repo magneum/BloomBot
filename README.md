@@ -10,8 +10,17 @@
 [![Generic badge](https://img.shields.io/badge/🚀HEROKU-purple.svg)](https://VlkyreAI.krakinzkon.repl.co/)
 [![Generic badge](https://img.shields.io/badge/🌐WEBSITE-white.svg)](https://VlkyreAI.krakinzkon.repl.co/)
 [![Generic badge](https://img.shields.io/badge/🍾GROUPS-darkgreen.svg)](https://aigroups.krakinzkon.repl.co/)
+```sh
+❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 𝐌𝐮𝐥𝐭𝐢 𝐃𝐞𝐯𝐢𝐜𝐞 ❞
+Is a whatsapp userbot with automation,moderation,music,games and 140+ commands!
 
-
+⊱ ᴘʀᴇꜰɪx: #
+⊱ ɴᴀᴍᴇ: ~ɴᴏ_ɴᴀᴍᴇ~
+⊱ ɢᴘᴀʏ: +918436686758
+⊱ ᴜᴘɪ: krakinzkon@oksbi
+⊱ ɢɪᴛʜᴜʙ: https://github.com/kryknz/vlkyre
+⊱ ɢʀᴏᴜᴘꜱ: https://aigroups.krakinzkon.repl.co
+```
 
 # 👑𝐆𝐫𝐨𝐮𝐩 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐨𝐫𝐬👑
 ```sh
@@ -47,16 +56,6 @@
 # 🌱𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒
 
 ```sh
-❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 𝐌𝐮𝐥𝐭𝐢 𝐃𝐞𝐯𝐢𝐜𝐞 ❞
-Is a whatsapp userbot with automation,moderation,music,games and 140+ commands!
-
-⊱ ᴘʀᴇꜰɪx: #
-⊱ ɴᴀᴍᴇ: ~ɴᴏ_ɴᴀᴍᴇ~
-⊱ ɢᴘᴀʏ: +918436686758
-⊱ ᴜᴘɪ: krakinzkon@oksbi
-⊱ ɢɪᴛʜᴜʙ: https://github.com/kryknz/vlkyre
-⊱ ɢʀᴏᴜᴘꜱ: https://aigroups.krakinzkon.repl.co
-
 ╔══『 💰𝐄𝐂𝐎𝐍𝐎𝐌𝐘_𝐆𝐀𝐌𝐄💰 』
 ║Ῠ #job
 ║Ῠ #work
