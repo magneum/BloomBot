@@ -47,16 +47,15 @@
 # 🌱𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒
 
 ```sh
-⦓ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⦔
-ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ
-⊱ ᴠʟᴋʏʀᴇ: is a whatsapp userbot with automation,moderation,music,games and 140+ commands!
+❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 𝐌𝐮𝐥𝐭𝐢 𝐃𝐞𝐯𝐢𝐜𝐞 ❞
+Is a whatsapp userbot with automation,moderation,music,games and 140+ commands!
 
-⊱ ɴᴀᴍᴇ: ~ɴᴏ_ɴᴀᴍᴇ~
 ⊱ ᴘʀᴇꜰɪx: #
+⊱ ɴᴀᴍᴇ: ~ɴᴏ_ɴᴀᴍᴇ~
 ⊱ ɢᴘᴀʏ: +918436686758
 ⊱ ᴜᴘɪ: krakinzkon@oksbi
 ⊱ ɢɪᴛʜᴜʙ: https://github.com/kryknz/vlkyre
-
+⊱ ɢʀᴏᴜᴘꜱ: https://aigroups.krakinzkon.repl.co
 
 ╔══『 💰𝐄𝐂𝐎𝐍𝐎𝐌𝐘_𝐆𝐀𝐌𝐄💰 』
 ║Ῠ #job
