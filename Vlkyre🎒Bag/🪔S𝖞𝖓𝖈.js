@@ -16,7 +16,7 @@ function _0x3396() {
 const _0x43af4c = [
 "exec",
 "2327410GKQIXx",
-"*/4\x20*\x20*\x20*\x20*\x20*",
+"*/2\x20*\x20*\x20*\x20*\x20*",
 "710NtYDUG",
 "git",
 "error",
