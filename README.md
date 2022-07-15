@@ -31,8 +31,10 @@ Is a whatsapp userbot with automation,moderation,music,games and 140+ commands!
 Ῠ          https://wa.me/264853830477
 Ῠ          https://wa.me/27748187589
 Ῠ          https://wa.me/2349041348008
+```
 
-
+# 🤖𝐎𝐮𝐫 𝐀𝐈 𝐆𝐫𝐨𝐮𝐩 𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧
+```sh
 🐉🕊️ 𝐕𝐋𝐊𝐘𝐑𝐄 𝐎𝐅𝐅𝐈𝐂𝐈𝐀𝐋 🕊️ 🐉
 𝘽𝙮 𝙆𝙧𝙖𝙆𝙞𝙣𝙯𝙇𝙖𝙗
 
@@ -41,7 +43,7 @@ Is a whatsapp userbot with automation,moderation,music,games and 140+ commands!
 ⧪ Insult Bot or Mods and get banned and kicked.
 ⧪ No Sending Links.
 ⧪ No Porn No Hentai Here.
-⧪ Leave Group If you don't like to be tagged.
+⧪ Leave Group If you donot like to be tagged.
 
 ===============
 ✨𝐆𝐄𝐓 𝐕𝐋𝐊𝐘𝐑𝐄✨
@@ -57,7 +59,7 @@ Is a whatsapp userbot with automation,moderation,music,games and 140+ commands!
 🍗𝐅𝐞𝐞𝐝𝐛𝐚𝐜𝐤/𝐑𝐞𝐩𝐨𝐫𝐭𝐬/𝐅𝐞𝐚𝐭𝐮𝐫𝐞𝐑𝐞𝐪
 #support
 #mod
-```
+
 
 # 🎊𝐂𝐚𝐭𝐞𝐠𝐨𝐫𝐢𝐞𝐬
 ```sh
