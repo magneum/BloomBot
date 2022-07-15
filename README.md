@@ -54,289 +54,289 @@ Is a whatsapp userbot with automation,moderation,music,games and 140+ commands!
 # 🌱𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒
 
 ```sh
-╔══『 💰𝐄𝐂𝐎𝐍𝐎𝐌𝐘_𝐆𝐀𝐌𝐄💰 』
-║Ῠ #job
-║Ῠ #work
-║Ῠ #earn
-║Ῠ #bag
-║Ῠ #inv
-║Ῠ #loot
-║Ῠ #inventory
-║Ῠ #dly
-║Ῠ #daily
-║Ῠ #pond
-║Ῠ #fish
-║Ῠ #fishesh
-║Ῠ #bet
-║Ῠ #gamble
-║Ῠ #betting
-║Ῠ #roulette
-║Ῠ #hunt
-║Ῠ #hunting
-║Ῠ #pokehunt
-║Ῠ #zoo
-║Ῠ #forest
-║Ῠ #animals
-║Ῠ #pay
-║Ῠ #loan
-║Ῠ #borrow
-║Ῠ #payment
-║Ῠ #rob
-║Ῠ #thief
-║Ῠ #robbery
-║Ῠ #bal
-║Ῠ #gold
-║Ῠ #money
-║Ῠ #balance
-║Ῠ #buy
-║Ῠ #store
-║Ῠ #shop
-║Ῠ #mall
-║Ῠ #shopping
-╚═══════╝
+『 💰𝐄𝐂𝐎𝐍𝐎𝐌𝐘_𝐆𝐀𝐌𝐄💰 』
+#job
+#work
+#earn
+#bag
+#inv
+#loot
+#inventory
+#dly
+#daily
+#pond
+#fish
+#fishesh
+#bet
+#gamble
+#betting
+#roulette
+#hunt
+#hunting
+#pokehunt
+#zoo
+#forest
+#animals
+#pay
+#loan
+#borrow
+#payment
+#rob
+#thief
+#robbery
+#bal
+#gold
+#money
+#balance
+#buy
+#store
+#shop
+#mall
+#shopping
 
-╔══『 🐾𝐀𝐍𝐈𝐌𝐄_𝐌𝐀𝐍𝐆𝐀🐾 』
-║Ῠ #anime
-║Ῠ #manga
-╚═══════╝
 
-╔══『 🐝𝐀𝐍𝐈𝐌𝐀𝐓𝐈𝐎𝐍🐝 』
-║Ῠ #baka
-║Ῠ #bite
-║Ῠ #blush
-║Ῠ #bonk
-║Ῠ #bored
-║Ῠ #confused
-║Ῠ #cry
-║Ῠ #cuddle
-║Ῠ #dance
-║Ῠ #goodnight
-║Ῠ #happy
-║Ῠ #hi5
-║Ῠ #highfive
-║Ῠ #hug
-║Ῠ #kick
-║Ῠ #kill
-║Ῠ #kiss
-║Ῠ #nervous
-║Ῠ #pat
-║Ῠ #poke
-║Ῠ #punch
-║Ῠ #sad
-║Ῠ #smile
-║Ῠ #stare
-║Ῠ #wave
-║Ῠ #wink
-║Ῠ #yeet
-║Ῠ #yes
-║Ῠ #zerotwo
-╚═══════╝
+『 🐾𝐀𝐍𝐈𝐌𝐄_𝐌𝐀𝐍𝐆𝐀🐾 』
+#anime
+#manga
 
-╔══『 🏳️‍🌈𝐑𝐀𝐍𝐃𝐎𝐌🏳️‍🌈 』
-║Ῠ #advice
-║Ῠ #rank
-║Ῠ #fact
-║Ῠ #meme
-║Ῠ #neko
-║Ῠ #quote
-║Ῠ #reddit
-║Ῠ #sr
-║Ῠ #subreddit
-║Ῠ #ship
-║Ῠ #waifu
-║Ῠ #tts
-║Ῠ #gtts
-║Ῠ #text2speech
-║Ῠ #fun
-║Ῠ #joke
-║Ῠ #funny
-║Ῠ #laugh
-║Ῠ #dadjoke
-╚═══════╝
 
-╔══『 ⭕𝐘𝐎𝐔𝐓𝐔𝐁𝐄_𝐅𝐈𝐋𝐓𝐄𝐑⭕ 』
-║Ῠ #yt8d
-║Ῠ #ytbassboost
-║Ῠ #ytecho
-║Ῠ #ytflanger
-║Ῠ #ytnightcore
-║Ῠ #ytphaser
-║Ῠ #ytreverse
-║Ῠ #ytslow
-║Ῠ #ytspeed
-║Ῠ #ytsubboost
-║Ῠ #ytsuperslow
-║Ῠ #ytsuperspeed
-║Ῠ #ytsurround
-║Ῠ #ytvaporwave
-║Ῠ #ytvibrato
-╚═══════╝
+『 🐝𝐀𝐍𝐈𝐌𝐀𝐓𝐈𝐎𝐍🐝 』
+#baka
+#bite
+#blush
+#bonk
+#bored
+#confused
+#cry
+#cuddle
+#dance
+#goodnight
+#happy
+#hi5
+#highfive
+#hug
+#kick
+#kill
+#kiss
+#nervous
+#pat
+#poke
+#punch
+#sad
+#smile
+#stare
+#wave
+#wink
+#yeet
+#yes
+#zerotwo
 
-╔══『 👑𝐎𝐖𝐍𝐄𝐑_𝐒𝐔𝐃𝐎👑 』
-║Ῠ #ban
-║Ῠ #unban
-║Ῠ #reboot
-║Ῠ #join
-║Ῠ #leave
-║Ῠ #support
-║Ῠ #bcgroup
-║Ῠ #bc
-║Ῠ #sp
-║Ῠ #mod
-║Ῠ #mods
-║Ῠ #repo
-║Ῠ #githubrepo
-║Ῠ #repository
-║Ῠ #dev
-║Ῠ #devs
-║Ῠ #support
-║Ῠ #official
-║Ῠ #rule
-║Ῠ #rules
-║Ῠ #h
-║Ῠ #how
-║Ῠ #help
-║Ῠ #menu
-║Ῠ #allmenu
-╚═══════╝
 
-╔══『 🛍️𝐒𝐓𝐎𝐑𝐄🛍️ 』
-║Ῠ #buy basic 
-║Ῠ #buy bronze 
-║Ῠ #buy silver 
-║Ῠ #buy golden
-║Ῠ #buy platinum 
-║Ῠ #buy diamond
-║Ῠ #buy sword
-║Ῠ #buy laptop
-║Ῠ #buy charm
-╚═══════╝
+『 🏳️‍🌈𝐑𝐀𝐍𝐃𝐎𝐌🏳️‍🌈 』
+#advice
+#rank
+#fact
+#meme
+#neko
+#quote
+#reddit
+#sr
+#subreddit
+#ship
+#waifu
+#tts
+#gtts
+#text2speech
+#fun
+#joke
+#funny
+#laugh
+#dadjoke
 
-╔══『 📥𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐑📥 』
-║Ῠ #yta
-║Ῠ #play
-║Ῠ #song
-║Ῠ #sing
-║Ῠ #ytmp3
-║Ῠ #ytplay
-║Ῠ #ytaudio
-║Ῠ #ytmusic
-║Ῠ #youtubemusic
-║Ῠ #ytv
-║Ῠ #watch
-║Ῠ #ytmp4
-║Ῠ #stream
-║Ῠ #ytvideo
-║Ῠ #youtubevideo
-║Ῠ #radio
-║Ῠ #randmusic
-║Ῠ #randaudio
-║Ῠ #randomaudio
-║Ῠ #randommusic
-║Ῠ #suggestaudio
-║Ῠ #suggestmusic
-╚═══════╝
 
-╔══『 🏝️𝐂𝐎𝐍𝐕𝐄𝐑𝐓𝐄𝐑🏝️ 』
-║Ῠ #carbon
-║Ῠ #steal
-║Ῠ #sticker
-║Ῠ #tinyurl
-║Ῠ #toimg
-║Ῠ #stourl
-╚═══════╝
+『 ⭕𝐘𝐎𝐔𝐓𝐔𝐁𝐄_𝐅𝐈𝐋𝐓𝐄𝐑⭕ 』
+#yt8d
+#ytbassboost
+#ytecho
+#ytflanger
+#ytnightcore
+#ytphaser
+#ytreverse
+#ytslow
+#ytspeed
+#ytsubboost
+#ytsuperslow
+#ytsuperspeed
+#ytsurround
+#ytvaporwave
+#ytvibrato
 
-╔══『 🌐𝐖𝐄𝐁_𝐒𝐄𝐀𝐑𝐂𝐇🌐 』
-║Ῠ #gify
-║Ῠ #gif
-║Ῠ #google
-║Ῠ #web
-║Ῠ #find
-║Ῠ #search
-║Ῠ #iguser 
-║Ῠ #image
-║Ῠ #lyrics
-║Ῠ #pinterest
-║Ῠ #pokemon
-║Ῠ #pokedex
-║Ῠ #wallpaper
-║Ῠ #yts
-║Ῠ #ytsearch
-║Ῠ #ytscrape
-║Ῠ #youtubescrape
-║Ῠ #youtubesearch
-╚═══════╝
 
-╔══『 🔰𝐆𝐑𝐎𝐔𝐏_𝐌𝐎𝐃🔰 』
-║Ῠ #warn
-║Ῠ #nolink
-║Ῠ #stoplink
-║Ῠ #antilink
-║Ῠ #welcome
-║Ῠ #welcomer
-║Ῠ #setwelcome
-║Ῠ #autorole
-║Ῠ #autorank
-║Ῠ #del
-║Ῠ #demote
-║Ῠ #promote
-║Ῠ #group
-║Ῠ #remove
-║Ῠ #setdesc
-║Ῠ #setgpfp
-║Ῠ #tagall
-║Ῠ #admins
-╚═══════╝
+『 👑𝐎𝐖𝐍𝐄𝐑_𝐒𝐔𝐃𝐎👑 』
+#ban
+#unban
+#reboot
+#join
+#leave
+#support
+#bcgroup
+#bc
+#sp
+#mod
+#mods
+#repo
+#githubrepo
+#repository
+#dev
+#devs
+#support
+#official
+#rule
+#rules
+#h
+#how
+#help
+#menu
+#allmenu
 
-╔══『 👓𝐀𝐔𝐃𝐈𝐎_𝐅𝐈𝐋𝐓𝐄𝐑𝐒👓 』
-║Ῠ #bassboost
-║Ῠ #echo
-║Ῠ #fast
-║Ῠ #flanger
-║Ῠ #nightcore
-║Ῠ #phaser
-║Ῠ #reverse
-║Ῠ #slow
-║Ῠ #speed
-║Ῠ #subboost
-║Ῠ #superslow
-║Ῠ #superspeed
-║Ῠ #surround
-║Ῠ #vaporwave
-║Ῠ #vibrato
-╚═══════╝
 
-╔══『 🍌𝐇𝐄𝐍𝐓𝐀𝐈🍌 』 
-║Ῠ #ass
-║Ῠ #bdsm
-║Ῠ #cum  
-║Ῠ #doujin
-║Ῠ #feet  
-║Ῠ #femdom  
-║Ῠ #foxgirl  
-║Ῠ #glasses  
-║Ῠ #hentai
-║Ῠ #maid 
-║Ῠ #masturbation
-║Ῠ #netorare  
-║Ῠ #orgy
-║Ῠ #panties
-║Ῠ #pussy
-║Ῠ #school
-║Ῠ #tentacles
-║Ῠ #thighs
-║Ῠ #uniform
-║Ῠ #yuri
-╚═══════╝
+『 🛍️𝐒𝐓𝐎𝐑𝐄🛍️ 』
+#buy basic 
+#buy bronze 
+#buy silver 
+#buy golden
+#buy platinum 
+#buy diamond
+#buy sword
+#buy laptop
+#buy charm
 
-╔══『 🍑𝐍𝐒𝐅𝐖🍑 』
-║Ῠ #p4k
-║Ῠ #pblowjob
-║Ῠ #pmilf
-║Ῠ #ppussy
-║Ῠ #pslut
-║Ῠ #tikporn
-╚═══════╝
+
+『 📥𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐑📥 』
+#yta
+#play
+#song
+#sing
+#ytmp3
+#ytplay
+#ytaudio
+#ytmusic
+#youtubemusic
+#ytv
+#watch
+#ytmp4
+#stream
+#ytvideo
+#youtubevideo
+#radio
+#randmusic
+#randaudio
+#randomaudio
+#randommusic
+#suggestaudio
+#suggestmusic
+
+
+『 🏝️𝐂𝐎𝐍𝐕𝐄𝐑𝐓𝐄𝐑🏝️ 』
+#carbon
+#steal
+#sticker
+#tinyurl
+#toimg
+#stourl
+
+
+『 🌐𝐖𝐄𝐁_𝐒𝐄𝐀𝐑𝐂𝐇🌐 』
+#gify
+#gif
+#google
+#web
+#find
+#search
+#iguser 
+#image
+#lyrics
+#pinterest
+#pokemon
+#pokedex
+#wallpaper
+#yts
+#ytsearch
+#ytscrape
+#youtubescrape
+#youtubesearch
+
+
+『 🔰𝐆𝐑𝐎𝐔𝐏_𝐌𝐎𝐃🔰 』
+#warn
+#nolink
+#stoplink
+#antilink
+#welcome
+#welcomer
+#setwelcome
+#autorole
+#autorank
+#del
+#demote
+#promote
+#group
+#remove
+#setdesc
+#setgpfp
+#tagall
+#admins
+
+
+『 👓𝐀𝐔𝐃𝐈𝐎_𝐅𝐈𝐋𝐓𝐄𝐑𝐒👓 』
+#bassboost
+#echo
+#fast
+#flanger
+#nightcore
+#phaser
+#reverse
+#slow
+#speed
+#subboost
+#superslow
+#superspeed
+#surround
+#vaporwave
+#vibrato
+
+
+『 🍌𝐇𝐄𝐍𝐓𝐀𝐈🍌 』 
+#ass
+#bdsm
+#cum  
+#doujin
+#feet  
+#femdom  
+#foxgirl  
+#glasses  
+#hentai
+#maid 
+#masturbation
+#netorare  
+#orgy
+#panties
+#pussy
+#school
+#tentacles
+#thighs
+#uniform
+#yuri
+
+
+『 🍑𝐍𝐒𝐅𝐖🍑 』
+#p4k
+#pblowjob
+#pmilf
+#ppussy
+#pslut
+#tikporn
+
 ```
 
 # 🍂𝐃𝐈𝐒𝐂𝐋𝐀𝐈𝐌𝐄𝐑
