@@ -146,10 +146,10 @@ Vlkyre.chatID,
 {
 contextInfo: { mentionedJid: [Vlkyre.sender] },
 image: { url: "./Vlkyre👗Skins/Vlkyre_LabGreen.png" },
-caption: `Ῠ *ɴᴀᴍᴇ:* ${Vlkyre.pushName || "~ɴᴏ_ɴᴀᴍᴇ~"} Ῠ
+caption: `❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 𝐌𝐮𝐥𝐭𝐢 𝐃𝐞𝐯𝐢𝐜𝐞❞ is a whatsapp userbot with automation,moderation,music,games and 140+ commands!
 
-⊱ ᴠʟᴋʏʀᴇ: is a whatsapp userbot with automation,moderation,music,games and 140+ commands!
 ⊱ ᴘʀᴇꜰɪx: ${prefix}
+⊱ ɴᴀᴍᴇ:${Vlkyre.pushName || "~ɴᴏ_ɴᴀᴍᴇ~"}
 ⊱ ɢᴘᴀʏ: +918436686758
 ⊱ ᴜᴘɪ: krakinzkon@oksbi
 ⊱ ɢɪᴛʜᴜʙ: https://github.com/kryknz/vlkyre
@@ -157,20 +157,20 @@ caption: `Ῠ *ɴᴀᴍᴇ:* ${Vlkyre.pushName || "~ɴᴏ_ɴᴀᴍᴇ~"} Ῠ
 
 
 『 𝐂𝐚𝐭𝐞𝐠𝐨𝐫𝐢𝐞𝐬 』
-Ῠ 🐝${prefix}AnimationMenu
-Ῠ 🐾${prefix}AnimeMenu
-Ῠ 👓${prefix}AudioFilterMenu
-Ῠ 🏝️${prefix}ConverterMenu
-Ῠ 📥${prefix}DownloaderMenu
-Ῠ 💰${prefix}GameMenu
-Ῠ 🔰${prefix}GroupMenu
-Ῠ 🍌${prefix}HentaiMenu
-Ῠ 🍑${prefix}NsfwMenu
-Ῠ 👑${prefix}OwnerMenu
-Ῠ 🏳️‍🌈${prefix}RandomMenu
-Ῠ ${prefix}StoreMenu
-Ῠ ${prefix}WebMenu
-Ῠ ${prefix}YTFilterMenu`,
+🐝${prefix}AnimationMenu
+🐾${prefix}AnimeMenu
+👓${prefix}AudioFilterMenu
+🏝️${prefix}ConverterMenu
+📥${prefix}DownloaderMenu
+💰${prefix}GameMenu
+🔰${prefix}GroupMenu
+🍌${prefix}HentaiMenu
+🍑${prefix}NsfwMenu
+👑${prefix}OwnerMenu
+🏳️‍🌈${prefix}RandomMenu
+🛍️${prefix}StoreMenu
+🌐${prefix}WebMenu
+⭕${prefix}YTFilterMenu`,
 footer: "*⦓ ❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 𝐌𝐮𝐥𝐭𝐢 𝐃𝐞𝐯𝐢𝐜𝐞❞ ⦔\nʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ\n🍾https://aigroups.krakinzkon.repl.co",
 buttons: [
 {
