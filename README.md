@@ -26,6 +26,25 @@
 Ῠ          https://wa.me/2349041348008
 ```
 
+『 𝐂𝐚𝐭𝐞𝐠𝐨𝐫𝐢𝐞𝐬 』
+# 🌱𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒
+```sh
+🐝 #AnimationMenu
+🐾 #AnimeMenu
+👓 #AudioFilterMenu
+🏝️ #ConverterMenu
+📥 #DownloaderMenu
+💰 #GameMenu
+🔰 #GroupMenu
+🍌 #HentaiMenu
+🍑 #NsfwMenu
+👑 #OwnerMenu
+🏳️‍🌈 #RandomMenu
+🛍️ #StoreMenu
+🌐 #WebMenu
+⭕ #YTFilterMenu
+```
+
 # 🌱𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒
 
 ```sh
