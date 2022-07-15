@@ -156,22 +156,21 @@ caption: `Ῠ *ɴᴀᴍᴇ:* ${Vlkyre.pushName || "~ɴᴏ_ɴᴀᴍᴇ~"} Ῠ
 ⊱ ɢʀᴏᴜᴘꜱ: https://aigroups.krakinzkon.repl.co
 
 
-╔══『  』
-║Ῠ ${prefix}AnimationMenu
-║Ῠ ${prefix}AnimeMenu
-║Ῠ ${prefix}AudioFilterMenu
-║Ῠ ${prefix}ConverterMenu
-║Ῠ ${prefix}DownloaderMenu
-║Ῠ ${prefix}GameMenu
-║Ῠ ${prefix}GroupMenu
-║Ῠ ${prefix}HentaiMenu
-║Ῠ ${prefix}NsfwMenu
-║Ῠ ${prefix}OwnerMenu
-║Ῠ ${prefix}RandomMenu
-║Ῠ ${prefix}StoreMenu
-║Ῠ ${prefix}WebMenu
-║Ῠ ${prefix}YTFilterMenu
-╚═══════╝`,
+『 𝐂𝐚𝐭𝐞𝐠𝐨𝐫𝐢𝐞𝐬 』
+Ῠ 🐝${prefix}AnimationMenu
+Ῠ 🐾${prefix}AnimeMenu
+Ῠ 👓${prefix}AudioFilterMenu
+Ῠ ${prefix}ConverterMenu
+Ῠ ${prefix}DownloaderMenu
+Ῠ ${prefix}GameMenu
+Ῠ ${prefix}GroupMenu
+Ῠ ${prefix}HentaiMenu
+Ῠ ${prefix}NsfwMenu
+Ῠ ${prefix}OwnerMenu
+Ῠ ${prefix}RandomMenu
+Ῠ ${prefix}StoreMenu
+Ῠ ${prefix}WebMenu
+Ῠ ${prefix}YTFilterMenu`,
 footer: "*⦓ ❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 𝐌𝐮𝐥𝐭𝐢 𝐃𝐞𝐯𝐢𝐜𝐞❞ ⦔\nʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ\n🍾https://aigroups.krakinzkon.repl.co",
 buttons: [
 {
