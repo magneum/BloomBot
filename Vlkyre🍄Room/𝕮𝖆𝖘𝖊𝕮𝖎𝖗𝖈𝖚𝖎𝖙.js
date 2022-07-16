@@ -2998,7 +2998,7 @@ break;
 case "rule":
 case "rules":
 case "rules":
-case "BOTRULE":
+case "RULES":
 await rules(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,

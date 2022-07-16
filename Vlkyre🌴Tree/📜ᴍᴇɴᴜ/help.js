@@ -184,9 +184,9 @@ displayText: prefix + "VLKYRE",
 type: 1,
 },
 {
-buttonId: prefix + "BOTRULES",
+buttonId: prefix + "RULES",
 buttonText: {
-displayText: prefix + "BOTRULES",
+displayText: prefix + "RULES",
 },
 type: 1,
 },
