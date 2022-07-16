@@ -1,13 +1,16 @@
+# 🕊️Vlkyre - Typescript/Javascript WhatsApp Userbot
 [![Open Source Love svg3](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)<img align="centre" src="https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg" alt="KryKnz"/><img align="centre" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"/>
+
 <p align="center">
-<img src="https://i.postimg.cc/8P7qPd3V/Vlkyre.png" height="400px"/>
+<img src="https://i.postimg.cc/JzrDp8SN/Vlkyre.png" width="400px" height="400px"/>
 </p>
 
-
 # 🛰️🕊️[❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 𝐌𝐮𝐥𝐭𝐢 𝐃𝐞𝐯𝐢𝐜𝐞❞](https://VlkyreAI.krakinzkon.repl.co/)🕊️🛰️
+
 [![Generic badge](https://img.shields.io/badge/🚀HEROKU-purple.svg)](https://VlkyreAI.krakinzkon.repl.co/)
 [![Generic badge](https://img.shields.io/badge/🌐WEBSITE-white.svg)](https://VlkyreAI.krakinzkon.repl.co/)
 [![Generic badge](https://img.shields.io/badge/🍾GROUPS-darkgreen.svg)](https://aigroups.krakinzkon.repl.co/)
+
 ```sh
 ❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 𝐌𝐮𝐥𝐭𝐢 𝐃𝐞𝐯𝐢𝐜𝐞 ❞
 Is a whatsapp userbot with automation,moderation,music,games and 140+ commands!
@@ -21,6 +24,7 @@ Is a whatsapp userbot with automation,moderation,music,games and 140+ commands!
 ```
 
 # 👑𝐆𝐫𝐨𝐮𝐩 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐨𝐫𝐬👑
+
 ```sh
 Ῠ KryKnz:  https://wa.me/918436686758
 Ῠ Xitrex:  https://wa.me/917430922909
@@ -34,6 +38,7 @@ Is a whatsapp userbot with automation,moderation,music,games and 140+ commands!
 ```
 
 # 🤖𝐎𝐮𝐫 𝐀𝐈 𝐆𝐫𝐨𝐮𝐩 𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧
+
 ```sh
 🐉🕊️ 𝐕𝐋𝐊𝐘𝐑𝐄 𝐎𝐅𝐅𝐈𝐂𝐈𝐀𝐋 🕊️ 🐉
 𝘽𝙮 𝙆𝙧𝙖𝙆𝙞𝙣𝙯𝙇𝙖𝙗
@@ -62,6 +67,7 @@ Is a whatsapp userbot with automation,moderation,music,games and 140+ commands!
 ```
 
 # 🎊𝐂𝐚𝐭𝐞𝐠𝐨𝐫𝐢𝐞𝐬
+
 ```sh
 🐝 #AnimationMenu
 🐾 #AnimeMenu
@@ -229,11 +235,11 @@ Is a whatsapp userbot with automation,moderation,music,games and 140+ commands!
 ╚═══════╝
 
 ╔══『 🛍️𝐒𝐓𝐎𝐑𝐄🛍️ 』
-║Ῠ #buy basic 
-║Ῠ #buy bronze 
-║Ῠ #buy silver 
+║Ῠ #buy basic
+║Ῠ #buy bronze
+║Ῠ #buy silver
 ║Ῠ #buy golden
-║Ῠ #buy platinum 
+║Ῠ #buy platinum
 ║Ῠ #buy diamond
 ║Ῠ #buy sword
 ║Ῠ #buy laptop
@@ -281,7 +287,7 @@ Is a whatsapp userbot with automation,moderation,music,games and 140+ commands!
 ║Ῠ #web
 ║Ῠ #find
 ║Ῠ #search
-║Ῠ #iguser 
+║Ῠ #iguser
 ║Ῠ #image
 ║Ῠ #lyrics
 ║Ῠ #pinterest
@@ -334,19 +340,19 @@ Is a whatsapp userbot with automation,moderation,music,games and 140+ commands!
 ║Ῠ #vibrato
 ╚═══════╝
 
-╔══『 🍌𝐇𝐄𝐍𝐓𝐀𝐈🍌 』 
+╔══『 🍌𝐇𝐄𝐍𝐓𝐀𝐈🍌 』
 ║Ῠ #ass
 ║Ῠ #bdsm
-║Ῠ #cum  
+║Ῠ #cum
 ║Ῠ #doujin
-║Ῠ #feet  
-║Ῠ #femdom  
-║Ῠ #foxgirl  
-║Ῠ #glasses  
+║Ῠ #feet
+║Ῠ #femdom
+║Ῠ #foxgirl
+║Ῠ #glasses
 ║Ῠ #hentai
-║Ῠ #maid 
+║Ῠ #maid
 ║Ῠ #masturbation
-║Ῠ #netorare  
+║Ῠ #netorare
 ║Ῠ #orgy
 ║Ῠ #panties
 ║Ῠ #pussy
@@ -373,7 +379,7 @@ Is a whatsapp userbot with automation,moderation,music,games and 140+ commands!
 ╔⧉༻ ❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 𝐌𝐮𝐥𝐭𝐢 𝐃𝐞𝐯𝐢𝐜𝐞 ❞
 ║ Is a whatsapp userbot with automation,moderation,music,games and 140+ commands!
 ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫𝐬: +918436686758, +917430922909
-║ 
+║
 ║ We won't be responsible for any kind of ban due to this bot.
 ║ Vlkyre was made for fun purpose and to make group management easier.
 ║ It's your concern if you spam and gets your account banned.

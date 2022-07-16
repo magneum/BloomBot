@@ -571,11 +571,14 @@ data,
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 ӄӄ.ev.on("connection.update", async (update) => {
 try {
+if (!HEROKU_APP_NAME) {
 Draw.say("Vlkyre", {
 font: "slick",
 align: "center",
 gradient: ["red", "yellow"],
 });
+}
+
 let connection_update = require("../Vlkyre🌗Events/connection_update");
 await connection_update.Vcnup(update, Ѷ𝖎𝖔𝖓ᴇᴏɴᴇ, ӄӄ);
 } catch (error) {
