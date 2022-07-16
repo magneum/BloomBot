@@ -64,7 +64,6 @@ return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 `*❌ERROR:* No query provided!
-
 *⚡USAGE:* ${prefix}${Final_Name} <text>
 ${prefix}${Final_Name} <text> | <language code>`
 );
@@ -86,7 +85,6 @@ return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 Vlkyre,
 `*❌ERROR:* Total characters should be less than 200.!
 Total characters for current input were {}.
-
 
 *⚡USAGE:* ${prefix}${Final_Name} <text>
 ${prefix}${Final_Name} <text> | <language code>`.format(text.length)
