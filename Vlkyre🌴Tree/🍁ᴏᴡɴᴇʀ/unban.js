@@ -63,7 +63,6 @@ return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 `*❌ERROR:* Owner & Mod only command!
-
 *⚡USAGE:* ${prefix}${Final_Name} _reply to person to ban_
 ${prefix}${Final_Name} _don't reply to anyone and group will be banned_`
 );

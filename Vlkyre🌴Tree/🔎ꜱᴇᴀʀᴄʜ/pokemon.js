@@ -65,7 +65,6 @@ return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 `*❌ERROR:* Which Pokemon Do You Want To Get information about?
-
 *⚡USAGE:* ${prefix}${Final_Name} <Pokemon>`
 );
 }
@@ -78,7 +77,6 @@ return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 `*❌ERROR:* No suck pokemon!
-
 *⚡USAGE:* ${prefix}${Final_Name} <Pokemon>`
 );
 }

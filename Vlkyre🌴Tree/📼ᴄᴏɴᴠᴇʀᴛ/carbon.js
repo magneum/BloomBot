@@ -94,7 +94,6 @@ return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 `*❌ERROR:*  Wrong Theme Name!
-
 *⚡USAGE:* ${prefix}${Final_Name} <theme name> <text>
 ╔════◇🌈 𝗧𝗵𝗲𝗺𝗲𝐬
 ║ 3024 night
@@ -142,7 +141,6 @@ return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 `*❌ERROR:*  maximum letters can be 20!
-
 *⚡USAGE:* ${prefix}${Final_Name} <theme name> <text>`
 );
 }

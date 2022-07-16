@@ -142,7 +142,6 @@ return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 `*❌ERROR:* No query provided!
-
 *⚡USAGE:* ${prefix}${Final_Name} <item name>
 Get Item-List From ${prefix}shop!`
 );
@@ -153,7 +152,6 @@ return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 `*❌ERROR:* No query provided!
-
 *⚡USAGE:* ${prefix}${Final_Name} <item name>
 Get Item-List From ${prefix}shop!`
 );
@@ -501,7 +499,6 @@ return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 `*❌ERROR:* Wrong query provided!
-
 *⚡USAGE:* ${prefix}${Final_Name} <item name>
 Get Item-List From ${prefix}shop!`
 );

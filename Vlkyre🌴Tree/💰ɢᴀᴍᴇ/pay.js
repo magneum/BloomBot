@@ -64,7 +64,6 @@ return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 `*❌ERROR:*  Argument Needed!
-
 *⚡USAGE:* Reply-Person: ${prefix}${Final_Name} _amount(number)_`
 );
 }
@@ -74,7 +73,6 @@ return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 `*❌ERROR:*  Argument Needed!
-
 *⚡USAGE:* Reply-Person: ${prefix}${Final_Name} _amount(number)_`
 );
 }
@@ -85,7 +83,6 @@ return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 `*❌ERROR:*  Argument Needed!
-
 *⚡USAGE:* Reply-Person: ${prefix}${Final_Name} _amount(number)_`
 );
 }
@@ -95,7 +92,6 @@ return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 `*❌ERROR:*  Argument Needed!
-
 *⚡USAGE:* Reply-Person: ${prefix}${Final_Name} _amount(number)_`
 );
 }
@@ -246,7 +242,6 @@ return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 `*❌ERROR:*  Argument Needed!
-
 *⚡USAGE:* Reply-Person: ${prefix}${Final_Name} _amount(number)_`
 );
 }

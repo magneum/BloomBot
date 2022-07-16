@@ -65,7 +65,6 @@ return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 `*❌ERROR:*  Could not find any sticker in context!
-
 *⚡USAGE:* ${prefix}${Final_Name} <Tag the sticker>`
 );
 }

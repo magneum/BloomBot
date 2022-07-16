@@ -65,7 +65,6 @@ return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 `*❌ERROR:* Please provide a valid instagram ID.!
-
 *⚡USAGE:* ${prefix}${Final_Name} <ID>`
 );
 }
@@ -95,7 +94,6 @@ return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 `*❌ERROR:* Please provide a valid instagram ID.!
-
 *⚡USAGE:* ${prefix}${Final_Name} <ID>`
 );
 }

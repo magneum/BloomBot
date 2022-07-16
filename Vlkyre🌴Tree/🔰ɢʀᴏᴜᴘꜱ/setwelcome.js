@@ -68,7 +68,6 @@ return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 `*❌ERROR:*  Argument Needed!
-
 *⚡USAGE:* ${prefix}${Final_Name} _message_
 ${prefix}${Final_Name} _off_`
 );
@@ -79,7 +78,6 @@ return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 `*❌ERROR:*  Argument Needed!
-
 *⚡USAGE:* ${prefix}${Final_Name} _message_
 ${prefix}${Final_Name} _off_`
 );
@@ -99,7 +97,6 @@ Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/Vlkyre_FIsh.png",
 `❌𝗘𝗿𝗿𝗼𝗿: Welcome message was not found in database.First set some message.
-
 *⚡USAGE:* ${prefix}${Final_Name} _message_
 ${prefix}${Final_Name} _off_`
 );
@@ -152,7 +149,6 @@ return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 `*❌ERROR:*  Argument Needed!
-
 *⚡USAGE:* ${prefix}${Final_Name} _message_
 ${prefix}${Final_Name} _off_`
 );

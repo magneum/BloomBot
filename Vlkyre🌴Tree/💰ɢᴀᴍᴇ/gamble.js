@@ -67,7 +67,6 @@ return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 `*❌ERROR:*  Argument Needed!
-
 *⚡USAGE:* ${prefix}${Final_Name} _color money_
 
 🌿𝐓𝐨𝐩𝐢𝐜: Gamble🤑AI
@@ -82,7 +81,6 @@ return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 `*❌ERROR:*  Argument Needed!
-
 *⚡USAGE:* ${prefix}${Final_Name} _color money_
 
 🌿𝐓𝐨𝐩𝐢𝐜: Gamble🤑AI
@@ -97,7 +95,6 @@ return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 `*❌ERROR:*  Argument Needed!
-
 *⚡USAGE:* ${prefix}${Final_Name} _color money_
 
 🌿𝐓𝐨𝐩𝐢𝐜: Gamble🤑AI
@@ -116,7 +113,6 @@ return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 `*❌ERROR:*  Argument Needed!
-
 *⚡USAGE:* ${prefix}${Final_Name} _color money_
 
 🌿𝐓𝐨𝐩𝐢𝐜: Gamble🤑AI
@@ -311,7 +307,6 @@ return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 `*❌ERROR:*  Argument Needed!
-
 *⚡USAGE:* ${prefix}${Final_Name} _color money_
 
 🌿𝐓𝐨𝐩𝐢𝐜: Gamble🤑AI
@@ -365,7 +360,6 @@ return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 `*❌ERROR:*  Argument Needed!
-
 *⚡USAGE:* ${prefix}${Final_Name} _color money_
 
 🌿𝐓𝐨𝐩𝐢𝐜: Gamble🤑AI

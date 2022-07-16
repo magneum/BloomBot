@@ -69,7 +69,6 @@ return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 `*❌ERROR:* No query provided!
-
 *⚡USAGE:* ${prefix}${Final_Name} <reply to audio file>`
 );
 }
@@ -79,7 +78,6 @@ return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 `*❌ERROR:* No query provided!
-
 *⚡USAGE:* ${prefix}${Final_Name} <reply to audio file>`
 );
 }
@@ -93,7 +91,6 @@ return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 `*❌ERROR:* Could not convert!
-
 *⚡USAGE:* ${prefix}${Final_Name} <Song name or Youtube link>`
 );
 }

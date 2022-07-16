@@ -70,7 +70,6 @@ return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 `*❌ERROR:* No query provided!
-
 *⚡USAGE:* ${prefix}${Final_Name} <Term>`
 );
 }
@@ -113,7 +112,6 @@ return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 `*❌ERROR:* No Such Song Lyrics Found!
-
 *⚡USAGE:* ${prefix}${Final_Name} <lyrics name>`
 );
 }

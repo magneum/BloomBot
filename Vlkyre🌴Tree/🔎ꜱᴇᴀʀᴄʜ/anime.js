@@ -64,7 +64,6 @@ return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 `*❌ERROR:* No query provided!
-
 *⚡USAGE:* ${prefix}${Final_Name} <anime name>`
 );
 }
@@ -77,7 +76,6 @@ return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 `*❌ERROR:* Couldn't find any results on the term *${F𝖚𝖑𝖑_A𝖗𝖌𝖘}*
-
 *⚡USAGE:* ${prefix}${Final_Name} <anime name>`
 );
 }

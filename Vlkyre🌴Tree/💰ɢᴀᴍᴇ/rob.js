@@ -494,7 +494,6 @@ return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 `*❌ERROR:* No query provided!
-
 *⚡USAGE:* Reply Person: ${prefix}${Final_Name}
 
 

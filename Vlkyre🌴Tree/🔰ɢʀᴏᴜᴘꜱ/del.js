@@ -64,7 +64,6 @@ return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 `*❌ERROR:* No query provided!
-
 *⚡USAGE:* ${prefix}${Final_Name} <Tag the massage you want to delete>`
 );
 }
@@ -75,7 +74,6 @@ return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 `*❌ERROR:* Can not delete massage from another userID except mine.
-
 *⚡USAGE:* ${prefix}${Final_Name} <Tag the massage you want to delete>`
 );
 }
