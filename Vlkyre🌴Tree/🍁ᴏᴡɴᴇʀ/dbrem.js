@@ -62,7 +62,11 @@ commandName,
 body
 ) => {
 if (Vlkyre.mentionByReply) {
-let ʀᴇᴘʟɪᴇᴅ = Vlkyre.mtype == "extendedTextMessage" && Vlkyre.message.extendedTextMessage.contextInfo != null ? Vlkyre.message.extendedTextMessage.contextInfo.participant || "": "";
+let ʀᴇᴘʟɪᴇᴅ =
+Vlkyre.mtype == "extendedTextMessage" &&
+Vlkyre.message.extendedTextMessage.contextInfo != null
+? Vlkyre.message.extendedTextMessage.contextInfo.participant || ""
+: "";
 if (Vlkyre.isCreator === ʀᴇᴘʟɪᴇᴅ) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄryӄnz,
@@ -122,7 +126,9 @@ text: "Pregress: 100%",
 contextInfo: { mentionedJid: [ʀᴇᴘʟɪᴇᴅ] },
 });
 await ӄryӄnz.sendMessage(Vlkyre.chatID, {
-text: `Money Of @${ʀᴇᴘʟɪᴇᴅ.split("@")[0]} has been successfully cleaned!`
+text: `Database Of @${
+ʀᴇᴘʟɪᴇᴅ.split("@")[0]
+} has been successfully cleaned!`,
 contextInfo: { mentionedJid: [ʀᴇᴘʟɪᴇᴅ] },
 });
 }
