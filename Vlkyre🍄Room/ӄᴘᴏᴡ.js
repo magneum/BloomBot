@@ -41,7 +41,13 @@ let ʀᴇᴠ_ɢɪᴛʜᴜʙ = ʀᴇᴠ_ɢɪᴛ();
 await ʀᴇᴠ_ɢɪᴛʜᴜʙ.fetch();
 let ɴᴇᴡ = await ɢɪᴛᴄᴀʟʟ.log(["🐍Ş𝖎𝖕𝖍𝖔𝖓®..origin/🐍Ş𝖎𝖕𝖍𝖔𝖓®"]);
 if (ɴᴇᴡ.total != 0) {
-await Hoku.delete("/apps/" + HEROKU_APP_NAME + "/dynos/" + "worker").catch((error) =>console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐇𝐞𝐫𝐨𝐤𝐮 𝐄𝐫𝐫𝐨𝐫: "), ӄօʟօʀ.bgRed(error))));
+await Hoku.delete(
+"/apps/" + HEROKU_APP_NAME + "/dynos/" + "worker"
+).catch((error) =>
+console.log(
+ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐇𝐞𝐫𝐨𝐤𝐮 𝐄𝐫𝐫𝐨𝐫: "), ӄօʟօʀ.bgRed(error))
+)
+);
 }
 } catch (error) {
 console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐄𝐫𝐫𝐨𝐫: "), ӄօʟօʀ.bgRed(error)));
@@ -159,13 +165,14 @@ Vlkyre.isCommand &&
 !MeC.includes(Vlkyre.sender) &&
 !MeD.includes(Vlkyre.sender)
 ) {
-return await Vlkyre.reply(`*❣️ ɴᴀᴍᴇ:* ${Vlkyre.pushName || "No_Name"}
+return await Vlkyre.reply(`*❣️ ɴᴀᴍᴇ:* ${
+Vlkyre.pushName || "No_Name"
+}
 
-❗ 𝐕𝐄𝐑𝐓𝐈𝐅𝐈𝐂𝐀𝐓𝐈𝐎𝐍 ❗
-*Join Any Group Using Below Website and get verified to use bot anywhere!*
-https://aigroups.krakinzkon.repl.co`);
-} else {
+❗𝐕𝐄𝐑𝐓𝐈𝐅𝐈𝐂𝐀𝐓𝐈𝐎𝐍❗
+*Check This Video:* https://youtu.be/phWbTtD45Js`);
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
+} else {
 await usedUser.findOne(
 {
 User: Vlkyre.sender,
