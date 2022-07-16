@@ -73,6 +73,7 @@ let { setwelcome } = require("../Vlkyre🌴Tree/🔰ɢʀᴏᴜᴘꜱ/setwelcome"
 let { ban } = require("../Vlkyre🌴Tree/🍁ᴏᴡɴᴇʀ/ban");
 let { test } = require("../Vlkyre🌴Tree/🍁ᴏᴡɴᴇʀ/Test");
 let { join } = require("../Vlkyre🌴Tree/🍁ᴏᴡɴᴇʀ/join");
+let { dbrem } = require("../Vlkyre🌴Tree/🍁ᴏᴡɴᴇʀ/dbrem");
 let { leave } = require("../Vlkyre🌴Tree/🍁ᴏᴡɴᴇʀ/leave");
 let { rules } = require("../Vlkyre🌴Tree/🍁ᴏᴡɴᴇʀ/rules");
 let { unban } = require("../Vlkyre🌴Tree/🍁ᴏᴡɴᴇʀ/unban");
@@ -628,6 +629,29 @@ break;
 case "test":
 await test(
 Ѷ𝖎𝖔𝖓,
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "dbrem":
+case "dataclean":
+case "purgedata":
+if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+await dbrem(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
 Vlkyre.pushName,

@@ -349,6 +349,9 @@ Is a whatsapp userbot with automation,moderation,music,games and 140+ commands!
 ║Ῠ ${prefix}ban
 ║Ῠ ${prefix}unban
 ║Ῠ ${prefix}reboot
+║Ῠ ${prefix}dbrem
+║Ῠ ${prefix}dataclean
+║Ῠ ${prefix}purgedata
 ║Ῠ ${prefix}join
 ║Ῠ ${prefix}leave
 ║Ῠ ${prefix}support

@@ -210,6 +210,9 @@ Is a whatsapp userbot with automation,moderation,music,games and 140+ commands!
 ║Ῠ #ban
 ║Ῠ #unban
 ║Ῠ #reboot
+║Ῠ #dbrem
+║Ῠ #dataclean
+║Ῠ #purgedata
 ║Ῠ #join
 ║Ῠ #leave
 ║Ῠ #support
