@@ -15,6 +15,22 @@ require("../Vlkyre🖋️Utilities/𝕷𝖆ყO𝖚𝖙");
 let { Bot_Not_Admin } = require("../Vlkyre🧭Compass/Bot_Not_Admin");
 let { Sender_Not_Admin } = require("../Vlkyre🧭Compass/Sender_Not_Admin");
 let { help } = require("../Vlkyre🌴Tree/📜ᴍᴇɴᴜ/help");
+let { menu } = require("../Vlkyre🌴Tree/📜ᴍᴇɴᴜ/menu");
+let { WebMenu } = require("../Vlkyre🌴Tree/📜ᴍᴇɴᴜ/WebMenu");
+let { GameMenu } = require("../Vlkyre🌴Tree/📜ᴍᴇɴᴜ/GameMenu");
+let { NsfwMenu } = require("../Vlkyre🌴Tree/📜ᴍᴇɴᴜ/NsfwMenu");
+let { AnimeMenu } = require("../Vlkyre🌴Tree/📜ᴍᴇɴᴜ/AnimeMenu");
+let { OwnerMenu } = require("../Vlkyre🌴Tree/📜ᴍᴇɴᴜ/OwnerMenu");
+let { StoreMenu } = require("../Vlkyre🌴Tree/📜ᴍᴇɴᴜ/StoreMenu");
+let { GroupMenu } = require("../Vlkyre🌴Tree/📜ᴍᴇɴᴜ/GroupMenu");
+let { RandomMenu } = require("../Vlkyre🌴Tree/📜ᴍᴇɴᴜ/RandomMenu");
+let { HentaiMenu } = require("../Vlkyre🌴Tree/📜ᴍᴇɴᴜ/HentaiMenu");
+let { YTFilterMenu } = require("../Vlkyre🌴Tree/📜ᴍᴇɴᴜ/YTFilterMenu");
+let { AnimationMenu } = require("../Vlkyre🌴Tree/📜ᴍᴇɴᴜ/AnimationMenu");
+let { ConverterMenu } = require("../Vlkyre🌴Tree/📜ᴍᴇɴᴜ/ConverterMenu");
+let { DownloaderMenu } = require("../Vlkyre🌴Tree/📜ᴍᴇɴᴜ/DownloaderMenu");
+let { AudioFilterMenu } = require("../Vlkyre🌴Tree/📜ᴍᴇɴᴜ/AudioFilterMenu");
+("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 let { yta } = require("../Vlkyre🌴Tree/📥ᴅᴏᴡɴʟᴏᴀᴅᴇʀꜱ/yta");
 let { ytv } = require("../Vlkyre🌴Tree/📥ᴅᴏᴡɴʟᴏᴀᴅᴇʀꜱ/ytv");
 let { radio } = require("../Vlkyre🌴Tree/📥ᴅᴏᴡɴʟᴏᴀᴅᴇʀꜱ/radio");
@@ -2760,11 +2776,6 @@ case "h":
 case "how":
 case "help":
 case "HELP":
-case "m":
-case "menu":
-case "allmenu":
-case "command":
-case "commands":
 await help(
 ӄ𝖗𝖞ӄ𝖓𝖟,
 Vlkyre,
@@ -2781,6 +2792,266 @@ Vlkyre.Body
 );
 await ӄ_counter(2);
 break;
+case "m":
+case "menu":
+case "allmenu":
+case "command":
+case "commands":
+await menu(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "AnimationMenu":
+await AnimationMenu(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "AnimeMenu":
+await AnimeMenu(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "AudioFilterMenu":
+await AudioFilterMenu(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "ConverterMenu":
+await ConverterMenu(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "DownloaderMenu":
+await DownloaderMenu(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "GameMenu":
+await GameMenu(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "GroupMenu":
+await GroupMenu(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "HentaiMenu":
+await HentaiMenu(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "NsfwMenu":
+await NsfwMenu(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "OwnerMenu":
+await OwnerMenu(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "RandomMenu":
+await RandomMenu(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "StoreMenu":
+await StoreMenu(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "WebMenu":
+await WebMenu(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "YTFilterMenu":
+await menu(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+
 case "p4k":
 await p4k(
 ӄ𝖗𝖞ӄ𝖓𝖟,
