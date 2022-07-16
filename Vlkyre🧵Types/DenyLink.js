@@ -39,7 +39,7 @@ let PresentGroupLink = new RegExp(
 );
 let isCurrentGroupLink = PresentGroupLink.test(Figure);
 if (isGroupLink && !isCurrentGroupLink) {
-await ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(Vlkyre.chatID, {
+await ӄryӄnz.sendMessage(Vlkyre.chatID, {
 text: `╔◇═══════════════◇╗
 ┊ 𝐊𝐫𝐲𝐙𝐞𝐧❌𝐀𝐧𝐭𝐢-𝐋𝐢𝐧𝐤
 ┊    𝐌𝐞𝐜𝐡𝐚𝐧𝐢𝐬𝐦
@@ -60,7 +60,7 @@ Figure.includes("/t.me/") &&
 Figure.includes("wa.me/") &&
 Figure.includes("www.")
 ) {
-await ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(Vlkyre.chatID, {
+await ӄryӄnz.sendMessage(Vlkyre.chatID, {
 text: `╔◇═══════════════◇╗
 ┊ 𝐊𝐫𝐲𝐙𝐞𝐧❌𝐀𝐧𝐭𝐢-𝐋𝐢𝐧𝐤
 ┊    𝐌𝐞𝐜𝐡𝐚𝐧𝐢𝐬𝐦
