@@ -45,7 +45,7 @@ let Final_Name = Script_Name.slice(0, -3).toLowerCase();
 let { Caught } = require("../../Vlkyre👒Hat/Caught");
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 exports.unban = async (
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 pushName,
 F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -60,7 +60,7 @@ body,
 ) => {
 if (!Vlkyre.fromMe && !isSenderTUF) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 `*❌ERROR:* Owner & Mod only command!
 *⚡USAGE:* ${prefix}${Final_Name} _reply to person to ban_
@@ -86,7 +86,7 @@ async (error, userBan) => {
 if (error) return console.log(error);
 if (!userBan) {
 return await Image_Button(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/KrakinzLab.png",
@@ -95,7 +95,7 @@ Vlkyre.A𝖗𝖌𝖘,
 } else {
 await userBan.delete();
 return await Image_Button(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/KrakinzLab.png",
@@ -114,7 +114,7 @@ async (error, userBan) => {
 if (error) return console.log(error);
 if (!userBan) {
 return await Image_Button(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/KrakinzLab.png",
@@ -123,7 +123,7 @@ Vlkyre.A𝖗𝖌𝖘,
 } else {
 await userBan.delete();
 return await Image_Button(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/KrakinzLab.png",
@@ -135,7 +135,7 @@ Vlkyre.A𝖗𝖌𝖘,
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 } else {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 `*⚡USAGE:* ${prefix}${Final_Name} _reply to person to ban_
 ${prefix}${Final_Name}* _don't reply to anyone and group will be banned_`

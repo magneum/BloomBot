@@ -46,7 +46,7 @@ let Final_Name = Script_Name.slice(0, -3).toLowerCase();
 let { Caught } = require("../../Vlkyre👒Hat/Caught");
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 exports.pay = async (
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 pushName,
 F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -61,7 +61,7 @@ body,
 ) => {
 if (!Vlkyre.mentionByReply) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 `*❌ERROR:*  Argument Needed!
 *⚡USAGE:* Reply-Person: ${prefix}${Final_Name} _amount(number)_`
@@ -70,7 +70,7 @@ Vlkyre,
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 if (Vlkyre.A𝖗𝖌𝖘.length === 0) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 `*❌ERROR:*  Argument Needed!
 *⚡USAGE:* Reply-Person: ${prefix}${Final_Name} _amount(number)_`
@@ -80,7 +80,7 @@ Vlkyre,
 let Format = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;
 if (Format.test(Vlkyre.A𝖗𝖌𝖘[0])) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 `*❌ERROR:*  Argument Needed!
 *⚡USAGE:* Reply-Person: ${prefix}${Final_Name} _amount(number)_`
@@ -89,7 +89,7 @@ Vlkyre,
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 if (Vlkyre.A𝖗𝖌𝖘[0].match(/[a-z]/i)) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 `*❌ERROR:*  Argument Needed!
 *⚡USAGE:* Reply-Person: ${prefix}${Final_Name} _amount(number)_`
@@ -103,7 +103,7 @@ Vlkyre.mtype == "extendedTextMessage" &&
 Vlkyre.message.extendedTextMessage.contextInfo != null
 ? Vlkyre.message.extendedTextMessage.contextInfo.participant || ""
 : "";
-let ʀᴇᴘʟɪᴇᴅ_ᴘᴇʀꜱᴏɴ = await ӄ𝖗𝖞ӄ𝖓𝖟.getName(ʀᴇᴄᴇɪᴠᴇʀ);
+let ʀᴇᴘʟɪᴇᴅ_ᴘᴇʀꜱᴏɴ = await ӄryӄnz.getName(ʀᴇᴄᴇɪᴠᴇʀ);
 if (ʀᴇᴄᴇɪᴠᴇʀ === Vlkyre.sender) {
 return Vlkyre_Buttons.MTB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
@@ -118,7 +118,7 @@ Economy.findOne(
 ID: Vlkyre.sender,
 },
 async (Èrrðr, ᴜꜱᴇʀᴘᴀʏ) => {
-if (Èrrðr) return Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, Èrrðr);
+if (Èrrðr) return Caught(ӄryӄnz, Vlkyre, Èrrðr);
 if (!ᴜꜱᴇʀᴘᴀʏ) {
 let ɴᴇᴡᴜꜱᴇʀᴘᴀʏ = new Economy({
 ID: Vlkyre.sender,
@@ -132,9 +132,9 @@ worktimeout: 900000,
 });
 await ɴᴇᴡᴜꜱᴇʀᴘᴀʏ
 .save()
-.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, Èrrðr));
+.catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
 return await Image_Button(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/Vlkyre.png",
@@ -149,7 +149,7 @@ Vlkyre.A𝖗𝖌𝖘,
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 if (ɢᴏʟᴅ > ᴜꜱᴇʀᴘᴀʏ.money) {
 return await Image_Button(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/Vlkyre.png",
@@ -167,7 +167,7 @@ Economy.findOne(
 ID: ʀᴇᴄᴇɪᴠᴇʀ,
 },
 async (Èrrðr, ᴜꜱᴇʀɢᴏᴛ) => {
-if (Èrrðr) return Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, Èrrðr);
+if (Èrrðr) return Caught(ӄryӄnz, Vlkyre, Èrrðr);
 if (!ᴜꜱᴇʀɢᴏᴛ) {
 let ɴᴇᴡᴜꜱᴇʀɢᴏᴛ = new Economy({
 ID: ʀᴇᴄᴇɪᴠᴇʀ,
@@ -181,13 +181,13 @@ worktimeout: 900000,
 });
 await ɴᴇᴡᴜꜱᴇʀɢᴏᴛ
 .save()
-.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, Èrrðr));
+.catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
 ᴜꜱᴇʀᴘᴀʏ.money = ᴜꜱᴇʀᴘᴀʏ.money - ɢᴏʟᴅ;
 await ᴜꜱᴇʀᴘᴀʏ
 .save()
-.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, Èrrðr));
+.catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
 return await Image_Button(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/Vlkyre.png",
@@ -210,12 +210,12 @@ Vlkyre.A𝖗𝖌𝖘,
 ᴜꜱᴇʀɢᴏᴛ.money = ᴜꜱᴇʀɢᴏᴛ.money + ɢᴏʟᴅ;
 await ᴜꜱᴇʀᴘᴀʏ
 .save()
-.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, Èrrðr));
+.catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
 await ᴜꜱᴇʀɢᴏᴛ
 .save()
-.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, Èrrðr));
+.catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
 return await Image_Button(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/Vlkyre.png",
@@ -239,7 +239,7 @@ Vlkyre.A𝖗𝖌𝖘,
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 } else {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 `*❌ERROR:*  Argument Needed!
 *⚡USAGE:* Reply-Person: ${prefix}${Final_Name} _amount(number)_`

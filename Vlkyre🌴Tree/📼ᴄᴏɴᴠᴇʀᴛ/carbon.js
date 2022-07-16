@@ -46,7 +46,7 @@ let Final_Name = Script_Name.slice(0, -3).toLowerCase();
 let { Caught } = require("../../Vlkyre👒Hat/Caught");
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 exports.carbon = async (
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 pushName,
 F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -91,7 +91,7 @@ let Themes = [
 ];
 if (!Themes.includes(Vlkyre.A𝖗𝖌𝖘[0])) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 `*❌ERROR:*  Wrong Theme Name!
 *⚡USAGE:* ${prefix}${Final_Name} <theme name> <text>
@@ -138,7 +138,7 @@ console.log(FinalText);
 
 if (FinalText.length > 20) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 `*❌ERROR:*  maximum letters can be 20!
 *⚡USAGE:* ${prefix}${Final_Name} <theme name> <text>`
@@ -153,7 +153,7 @@ let output = await Carbon.generateCarbon(carbon);
 let ImgPath = "./Vlkyre🎒Bag/" + Date.now().toString() + ".png";
 await fs.createWriteStream(ImgPath).write(output);
 await Image_Button(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
 ImgPath,

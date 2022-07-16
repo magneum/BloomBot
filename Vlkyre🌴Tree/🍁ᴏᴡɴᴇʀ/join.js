@@ -44,7 +44,7 @@ let Final_Name = Script_Name.slice(0, -3).toLowerCase();
 let { Caught } = require("../../Vlkyre👒Hat/Caught");
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 exports.join = async (
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 pushName,
 F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -59,7 +59,7 @@ body,
 ) => {
 if (!Vlkyre.fromMe && !isSenderTUF) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 `*❌ERROR:* Owner & Mod only command!
 *⚡USAGE:* ${prefix}${Final_Name} <Link>`
@@ -71,7 +71,7 @@ if (!isUrl(F𝖚𝖑𝖑_A𝖗𝖌𝖘) && !F𝖚𝖑𝖑_A𝖗𝖌𝖘.includes
 return Vlkyre.reply(`🔍 Please provide the group link`);
 Vlkyre.reply(`wait your request is under process`);
 let result = Vlkyre.A𝖗𝖌𝖘[0].split(`https://chatID.whatsapp.com/`)[1];
-await ӄ𝖗𝖞ӄ𝖓𝖟.groupAcceptInvite(result).then((res) => Vlkyre.reply(jsonformat(res))).catch((err) => Vlkyre.reply(`Invalid 📘 *URL: ${F𝖚𝖑𝖑_A𝖗𝖌𝖘}*`));
+await ӄryӄnz.groupAcceptInvite(result).then((res) => Vlkyre.reply(jsonformat(res))).catch((err) => Vlkyre.reply(`Invalid 📘 *URL: ${F𝖚𝖑𝖑_A𝖗𝖌𝖘}*`));
 };
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 // ╔⧉༻ [ Ѷ𝖑𝐤𝐲𝖗𝖊🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬! 

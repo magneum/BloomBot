@@ -46,7 +46,7 @@ let Final_Name = Script_Name.slice(0, -3).toLowerCase();
 let { Caught } = require("../../Vlkyre👒Hat/Caught");
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 exports.anime = async (
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 pushName,
 F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -61,7 +61,7 @@ body,
 ) => {
 if (!F𝖚𝖑𝖑_A𝖗𝖌𝖘) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 `*❌ERROR:* No query provided!
 *⚡USAGE:* ${prefix}${Final_Name} <anime name>`
@@ -73,7 +73,7 @@ let { data: jap } = await axios.get(
 );
 if (!jap.results[0].title) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 `*❌ERROR:* Couldn't find any results on the term *${F𝖚𝖑𝖑_A𝖗𝖌𝖘}*
 *⚡USAGE:* ${prefix}${Final_Name} <anime name>`
@@ -84,7 +84,7 @@ let { data } = (
 await axios.get(`https://api.jikan.moe/v4/anime?q=${jap.results[0].title}`)
 ).data;
 return await Image_Button(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
 data[0].images.jpg.image_url,

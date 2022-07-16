@@ -45,7 +45,7 @@ let Final_Name = Script_Name.slice(0, -3).toLowerCase();
 let { Caught } = require("../../Vlkyre👒Hat/Caught");
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 exports.ban = async (
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 pushName,
 F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -60,7 +60,7 @@ body,
 ) => {
 if (!Vlkyre.fromMe && !isSenderTUF) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 `*❌ERROR:* Owner & Mod only command!
 *⚡USAGE:* ${prefix}${Final_Name} _reply to person to ban_
@@ -89,7 +89,7 @@ let newUser = new userBanCheck({
 ID: repliedPerson,
 });
 await newUser.save();
-return await ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(
+return await ӄryӄnz.sendMessage(
 Vlkyre.chatID,
 {
 contextInfo: { mentionedJid: [Vlkyre.sender, repliedPerson] },
@@ -122,7 +122,7 @@ quoted: Vlkyre,
 );
 } else {
 return await Image_Button(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/KrakinzLab.png",
@@ -144,7 +144,7 @@ let newUser = new userBanCheck({
 ID: Vlkyre.chatID,
 });
 await newUser.save();
-return await ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(
+return await ӄryӄnz.sendMessage(
 Vlkyre.chatID,
 {
 image: { url: "./Vlkyre👗Skins/KrakinzLab.png" },
@@ -176,7 +176,7 @@ quoted: Vlkyre,
 );
 } else {
 return await Image_Button(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/KrakinzLab.png",
@@ -188,7 +188,7 @@ Vlkyre.A𝖗𝖌𝖘,
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 } else {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 `*⚡USAGE:* ${prefix}${Final_Name} _reply to person to ban_
 ${prefix}${Final_Name}* _don't reply to anyone and group will be banned_`

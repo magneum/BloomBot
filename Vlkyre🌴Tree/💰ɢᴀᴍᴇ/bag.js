@@ -47,7 +47,7 @@ let Final_Name = Script_Name.slice(0, -3).toLowerCase();
 let { Caught } = require("../../Vlkyre👒Hat/Caught");
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 exports.bag = async (
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 pushName,
 F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -65,7 +65,7 @@ await Robbery.findOne(
 ID: Vlkyre.sender,
 },
 async (Èrrðr, userRob) => {
-if (Èrrðr) return Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, util.format(Èrrðr));
+if (Èrrðr) return Caught(ӄryӄnz, Vlkyre, util.format(Èrrðr));
 if (!userRob) {
 var newUser = new Robbery({
 ID: Vlkyre.sender,
@@ -76,9 +76,9 @@ CurrentRobberyTime: 0,
 PermanentRobberyTime: 900000,
 });
 await newUser.save()
-.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, Èrrðr));
+.catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
 return await Image_Button(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/Vlkyre_DB.png",
@@ -91,7 +91,7 @@ Vlkyre.A𝖗𝖌𝖘,
 );
 } else {
 return await Image_Button(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/Vlkyre.png",

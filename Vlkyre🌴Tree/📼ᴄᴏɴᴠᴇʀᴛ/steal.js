@@ -46,7 +46,7 @@ let Final_Name = Script_Name.slice(0, -3).toLowerCase();
 let { Caught } = require("../../Vlkyre👒Hat/Caught");
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 exports.steal = async (
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 pushName,
 F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -62,7 +62,7 @@ body,
 let Mme = (Vlkyre.quoted.msg || Vlkyre.quoted).mimetype || "";
 if (!quoted) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 `*❌ERROR:*  Could not find any sticker in context!
 *⚡USAGE:* ${prefix}${Final_Name} <Tag the sticker>`
@@ -81,7 +81,7 @@ quality: 75,
 background: `transparent`,
 });
 let Buffer = await ticker.toBuffer();
-await ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(
+await ӄryӄnz.sendMessage(
 Vlkyre.chatID,
 { sticker: Buffer },
 { quoted: Vlkyre }

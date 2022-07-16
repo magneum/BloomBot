@@ -46,7 +46,7 @@ let Final_Name = Script_Name.slice(0, -3).toLowerCase();
 let { Caught } = require("../../Vlkyre👒Hat/Caught");
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
 exports.remove = async (
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 pushName,
 F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -69,16 +69,16 @@ Vlkyre.message.extendedTextMessage.contextInfo != null
 : "";
 if (Vlkyre.isCreator === ʀᴇᴘʟɪᴇᴅ) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 `*❌ERROR:*  You dumb! Cant't Kick Bot Owner.`
 );
 }
-await ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(Vlkyre.chatID, {
+await ӄryӄnz.sendMessage(Vlkyre.chatID, {
 text: `Kicked @${ʀᴇᴘʟɪᴇᴅ.split("@")[0]} successfuly `,
 contextInfo: { mentionedJid: [ʀᴇᴘʟɪᴇᴅ] },
 });
-return await ӄ𝖗𝖞ӄ𝖓𝖟.groupParticipantsUpdate(
+return await ӄryӄnz.groupParticipantsUpdate(
 Vlkyre.chatID,
 [ʀᴇᴘʟɪᴇᴅ],
 `remove`
@@ -86,7 +86,7 @@ Vlkyre.chatID,
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
 } else {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 `*❌ERROR:*  Argument Needed!
 *⚡USAGE:* ${prefix}${Final_Name} <reply to person>`

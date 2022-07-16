@@ -47,7 +47,7 @@ let Final_Name = Script_Name.slice(0, -3).toLowerCase();
 let { Caught } = require("../../Vlkyre👒Hat/Caught");
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 exports.rank = async (
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 pushName,
 F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -64,7 +64,7 @@ body,
 const user = await Levels.fetch(Vlkyre.sender, Vlkyre.chatID, true);
 if (!user) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 `*❌ERROR:* Seems like you have no rank XP for this chat.
 Try to talk more and check if autorank is turned on.`
@@ -126,7 +126,7 @@ var role = `Mythic Glory`;
 var աɦօֆɛ = Math.floor(1000 + Math.random() * 9000);
 let 𝕻𝕻𝖑𝖊𝖙𝖊𝖗;
 try {
-𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄ𝖗𝖞ӄ𝖓𝖟.profilePictureUrl(Vlkyre.chatID, `image`);
+𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = await ӄryӄnz.profilePictureUrl(Vlkyre.chatID, `image`);
 } catch {
 𝕻𝕻𝖑𝖊𝖙𝖊𝖗 = `./Vlkyre👗Skins/Vlkyre.png`;
 }
@@ -161,9 +161,9 @@ let rank = new canvacord.Rank()
 .setDiscriminator(աɦօֆɛ);
 return await rank.build().then(async (data) => {
 fs.writeFile(expFile, data, async (error) => {
-if (error) return Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, error);
-await ӄ𝖗𝖞ӄ𝖓𝖟.sendPresenceUpdate("composing", Vlkyre.chatID);
-await ӄ𝖗𝖞ӄ𝖓𝖟
+if (error) return Caught(ӄryӄnz, Vlkyre, error);
+await ӄryӄnz.sendPresenceUpdate("composing", Vlkyre.chatID);
+await ӄryӄnz
 .sendMessage(
 Vlkyre.chatID,
 {
@@ -194,7 +194,7 @@ headerType: 4,
 quoted: Vlkyre,
 }
 )
-.catch((e) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, e));
+.catch((e) => Caught(ӄryӄnz, Vlkyre, e));
 });
 });
 };

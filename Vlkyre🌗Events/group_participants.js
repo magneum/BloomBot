@@ -14,13 +14,13 @@
 require("../Vlkyre🖋️Utilities/𝕷𝖆ყO𝖚𝖙");
 let moment = require(`moment-timezone`);
 let Welcome = require(`../Vlkyre🌤️Cloud/🍃𝖒𝖔𝖓𝖌𝖔/setwelcome`);
-let group_participants = async (𝖚𝖕𝖉𝖆𝖙𝖊, ӄӄ) => {
+let group_participants = async (𝖚𝖕𝖉𝖆𝖙𝖊, ӄryӄnz) => {
 let 𝖕𝖋𝖕𝖀𝖘𝖊𝖗;
 let 𝕷𝖆𝖙𝖊𝖘𝖙 = 𝖚𝖕𝖉𝖆𝖙𝖊.participants[0];
-let 𝕲𝖗𝖔𝖚𝖕𝖒𝖊𝖙𝖆 = await ӄӄ.groupMetadata(𝖚𝖕𝖉𝖆𝖙𝖊.id);
-let 𝖚𝖘𝖊𝖗𝕹𝖆𝖒𝖊 = await ӄӄ.getName(𝖚𝖕𝖉𝖆𝖙𝖊.participants[0]);
+let 𝕲𝖗𝖔𝖚𝖕𝖒𝖊𝖙𝖆 = await ӄryӄnz.groupMetadata(𝖚𝖕𝖉𝖆𝖙𝖊.id);
+let 𝖚𝖘𝖊𝖗𝕹𝖆𝖒𝖊 = await ӄryӄnz.getName(𝖚𝖕𝖉𝖆𝖙𝖊.participants[0]);
 try {
-𝖕𝖋𝖕𝖀𝖘𝖊𝖗 = await ӄӄ.profilePictureUrl(𝖚𝖕𝖉𝖆𝖙𝖊.participants[0], "image");
+𝖕𝖋𝖕𝖀𝖘𝖊𝖗 = await ӄryӄnz.profilePictureUrl(𝖚𝖕𝖉𝖆𝖙𝖊.participants[0], "image");
 } catch {
 𝖕𝖋𝖕𝖀𝖘𝖊𝖗 = "./Vlkyre👗Skins/Vlkyre_LabGreen.png";
 }
@@ -33,8 +33,8 @@ ID: 𝖚𝖕𝖉𝖆𝖙𝖊.id,
 async (𝕰𝖗𝖗𝖔𝖗, userWel) => {
 if (𝕰𝖗𝖗𝖔𝖗) return console.log(𝕰𝖗𝖗𝖔𝖗);
 if (!userWel) return;
-if (𝖚𝖕𝖉𝖆𝖙𝖊.action == "add" && !𝕷𝖆𝖙𝖊𝖘𝖙.includes(ӄӄ.user.id)) {
-return await ӄӄ
+if (𝖚𝖕𝖉𝖆𝖙𝖊.action == "add" && !𝕷𝖆𝖙𝖊𝖘𝖙.includes(ӄryӄnz.user.id)) {
+return await ӄryӄnz
 .sendMessage(𝖚𝖕𝖉𝖆𝖙𝖊.id, {
 contextInfo: { mentionedJid: [𝖚𝖕𝖉𝖆𝖙𝖊.participants[0]] },
 image: { url: 𝖕𝖋𝖕𝖀𝖘𝖊𝖗 },

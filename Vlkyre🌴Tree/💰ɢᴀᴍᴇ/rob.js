@@ -49,7 +49,7 @@ let Final_Name = Script_Name.slice(0, -3).toLowerCase();
 let { Caught } = require("../../Vlkyre👒Hat/Caught");
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 exports.rob = async (
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 pushName,
 F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -73,10 +73,10 @@ Vlkyre.mtype == "extendedTextMessage" &&
 Vlkyre.message.extendedTextMessage.contextInfo != null
 ? Vlkyre.message.extendedTextMessage.contextInfo.participant || ""
 : "";
-let ʀᴇᴘʟɪᴇᴅ_ᴘᴇʀꜱᴏɴ = await ӄ𝖗𝖞ӄ𝖓𝖟.getName(ʀᴇᴄᴇɪᴠᴇʀ);
+let ʀᴇᴘʟɪᴇᴅ_ᴘᴇʀꜱᴏɴ = await ӄryӄnz.getName(ʀᴇᴄᴇɪᴠᴇʀ);
 if (ʀᴇᴄᴇɪᴠᴇʀ === Vlkyre.sender) {
 return await Image_Button(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/Vlkyre_Daily.png",
@@ -93,13 +93,13 @@ Economy.findOne(
 ID: Vlkyre.sender,
 },
 async (Èrrðr, ᴄᴇᴄᴏ) => {
-if (Èrrðr) return Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, Èrrðr);
+if (Èrrðr) return Caught(ӄryӄnz, Vlkyre, Èrrðr);
 Economy.findOne(
 {
 ID: ʀᴇᴄᴇɪᴠᴇʀ,
 },
 async (Èrrðr, ᴠᴇᴄᴏ) => {
-if (Èrrðr) return Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, Èrrðr);
+if (Èrrðr) return Caught(ӄryӄnz, Vlkyre, Èrrðr);
 if (!ᴠᴇᴄᴏ) {
 let newUser = new Economy({
 ID: ʀᴇᴄᴇɪᴠᴇʀ,
@@ -113,9 +113,9 @@ worktimeout: 900000,
 });
 await newUser
 .save()
-.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, Èrrðr));
+.catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
 return await Image_Button(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/Vlkyre_Daily.png",
@@ -142,9 +142,9 @@ worktimeout: 900000,
 });
 await newUser
 .save()
-.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, Èrrðr));
+.catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
 return await Image_Button(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/Vlkyre_Daily.png",
@@ -161,7 +161,7 @@ Vlkyre.A𝖗𝖌𝖘,
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 if (ᴄᴇᴄᴏ.money < 1000) {
 return await Image_Button(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/Vlkyre_Daily.png",
@@ -177,7 +177,7 @@ Vlkyre.A𝖗𝖌𝖘,
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 if (ᴠᴇᴄᴏ.money < 1000) {
 return await Image_Button(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/Vlkyre_Daily.png",
@@ -197,13 +197,13 @@ Robbery.findOne(
 ID: Vlkyre.sender,
 },
 async (Èrrðr, ᴄᴜʟᴘʀɪᴛ) => {
-if (Èrrðr) return Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, Èrrðr);
+if (Èrrðr) return Caught(ӄryӄnz, Vlkyre, Èrrðr);
 Robbery.findOne(
 {
 ID: ʀᴇᴄᴇɪᴠᴇʀ,
 },
 async (Èrrðr, ᴠɪᴄᴛɪᴍ) => {
-if (Èrrðr) return Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, Èrrðr);
+if (Èrrðr) return Caught(ӄryӄnz, Vlkyre, Èrrðr);
 if (!ᴠɪᴄᴛɪᴍ) {
 let newUser = new Robbery({
 ID: ʀᴇᴄᴇɪᴠᴇʀ,
@@ -215,13 +215,13 @@ PermanentRobberyTime: 900000,
 });
 await newUser
 .save()
-.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, Èrrðr));
+.catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
 ᴄᴇᴄᴏ.money = ᴄᴇᴄᴏ.money - ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ;
 await ᴄᴇᴄᴏ
 .save()
-.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, Èrrðr));
+.catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
 return await Image_Button(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/Vlkyre_Daily.png",
@@ -248,13 +248,13 @@ PermanentRobberyTime: 900000,
 });
 await newUser
 .save()
-.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, Èrrðr));
+.catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
 ᴄᴇᴄᴏ.money = ᴄᴇᴄᴏ.money - ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ;
 await ᴄᴇᴄᴏ
 .save()
-.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, Èrrðr));
+.catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
 return await Image_Button(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/Vlkyre_Daily.png",
@@ -279,7 +279,7 @@ let Time = ms(
   (Date.now() - ᴄᴜʟᴘʀɪᴛ.CurrentRobberyTime)
 );
 return await Image_Button(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/Vlkyre_Daily.png",
@@ -304,18 +304,18 @@ if (ᴄᴇᴄᴏ.money < 3000) {
 ᴄᴜʟᴘʀɪᴛ.CurrentRobberyTime = Date.now();
 await ᴠɪᴄᴛɪᴍ
 .save()
-.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, Èrrðr));
+.catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
 await ᴄᴜʟᴘʀɪᴛ
 .save()
-.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, Èrrðr));
+.catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
 await ᴠᴇᴄᴏ
 .save()
-.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, Èrrðr));
+.catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
 await ᴄᴇᴄᴏ
 .save()
-.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, Èrrðr));
+.catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
 return await Image_Button(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/Vlkyre_Daily.png",
@@ -344,18 +344,18 @@ if (ᴄᴇᴄᴏ.money < 4000) {
 ᴄᴜʟᴘʀɪᴛ.CurrentRobberyTime = Date.now();
 await ᴠɪᴄᴛɪᴍ
 .save()
-.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, Èrrðr));
+.catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
 await ᴄᴜʟᴘʀɪᴛ
 .save()
-.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, Èrrðr));
+.catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
 await ᴠᴇᴄᴏ
 .save()
-.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, Èrrðr));
+.catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
 await ᴄᴇᴄᴏ
 .save()
-.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, Èrrðr));
+.catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
 return await Image_Button(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/Vlkyre_Daily.png",
@@ -384,18 +384,18 @@ if (ᴄᴇᴄᴏ.money < 6000) {
 ᴄᴜʟᴘʀɪᴛ.CurrentRobberyTime = Date.now();
 await ᴠɪᴄᴛɪᴍ
 .save()
-.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, Èrrðr));
+.catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
 await ᴄᴜʟᴘʀɪᴛ
 .save()
-.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, Èrrðr));
+.catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
 await ᴠᴇᴄᴏ
 .save()
-.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, Èrrðr));
+.catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
 await ᴄᴇᴄᴏ
 .save()
-.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, Èrrðr));
+.catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
 return await Image_Button(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/Vlkyre_Daily.png",
@@ -419,12 +419,12 @@ if (ᴠᴇᴄᴏ.money < 1000) {
 ᴄᴜʟᴘʀɪᴛ.CurrentRobberyTime = Date.now();
 await ᴠᴇᴄᴏ
 .save()
-.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, Èrrðr));
+.catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
 await ᴄᴇᴄᴏ
 .save()
-.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, Èrrðr));
+.catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
 return await Image_Button(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/Vlkyre_Daily.png",
@@ -453,12 +453,12 @@ Vlkyre.A𝖗𝖌𝖘,
 ᴄᴜʟᴘʀɪᴛ.CurrentRobberyTime = Date.now();
 await ᴠᴇᴄᴏ
 .save()
-.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, Èrrðr));
+.catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
 await ᴄᴇᴄᴏ
 .save()
-.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, Èrrðr));
+.catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
 return await Image_Button(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/Vlkyre_Daily.png",
@@ -491,7 +491,7 @@ Vlkyre.A𝖗𝖌𝖘,
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 } else {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 `*❌ERROR:* No query provided!
 *⚡USAGE:* Reply Person: ${prefix}${Final_Name}

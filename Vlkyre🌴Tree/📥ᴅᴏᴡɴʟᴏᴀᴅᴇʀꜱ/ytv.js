@@ -51,7 +51,7 @@ let Final_Name = Script_Name.slice(0, -3).toLowerCase();
 let { Caught } = require("../../Vlkyre👒Hat/Caught");
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 exports.ytv = async (
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 pushName,
 F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -66,7 +66,7 @@ body,
 ) => {
 if (Vlkyre.A𝖗𝖌𝖘.length === 0) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 `*❌ERROR:* No query provided!
 *⚡USAGE:* ${prefix}${Final_Name} <song name or youtube link>`
@@ -75,7 +75,7 @@ Vlkyre,
 if (Vlkyre.A𝖗𝖌𝖘.includes("yout")) {
 if (!YouTube_Regex.test(Vlkyre.A𝖗𝖌𝖘[0])) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 `*❌ERROR:* No query provided!
 *⚡USAGE:* ${prefix}${Final_Name} <song name or youtube link>`
@@ -92,7 +92,7 @@ FinalGot = F𝖚𝖑𝖑_A𝖗𝖌𝖘;
 let LinkFound = await yts(FinalGot);
 if (!LinkFound) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 `*❌ERROR:* No Music Found!
 *⚡USAGE:* ${prefix}${Final_Name} <song name or youtube link>`
@@ -103,7 +103,7 @@ let TubeFile = LinkFound.videos.slice(0, 1);
 TubeFile.forEach(async function (Found) {
 if (Found.seconds > 1800) {
 return await Image_Button(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
 Found.thumbnail,
@@ -127,7 +127,7 @@ DirectFile = "Null";
 }
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 return await Video_Button(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
 DLoader,

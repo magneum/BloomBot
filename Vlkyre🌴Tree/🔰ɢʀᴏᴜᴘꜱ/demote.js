@@ -46,7 +46,7 @@ let Final_Name = Script_Name.slice(0, -3).toLowerCase();
 let { Caught } = require("../../Vlkyre👒Hat/Caught");
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
 exports.demote = async (
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 pushName,
 F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -61,7 +61,7 @@ body,
 ) => {
 if (!Vlkyre.mentionByReply) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 `*❌ERROR:* Please reply the user you want to demote!
 *⚡USAGE:* ${prefix}${Final_Name} <Tag the person>`
@@ -76,14 +76,14 @@ Vlkyre.message.extendedTextMessage.contextInfo != null
 let users = (await mention[0]) || Vlkyre.msg.contextInfo.participant;
 if (!users) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 `*❌ERROR:* Please reply the user you want to demote!
 *⚡USAGE:* ${prefix}${Final_Name} <Tag the person>`
 );
 }
-await ӄ𝖗𝖞ӄ𝖓𝖟.groupParticipantsUpdate(Vlkyre.chatID, [users], "demote");
-ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(Vlkyre.chatID, {
+await ӄryӄnz.groupParticipantsUpdate(Vlkyre.chatID, [users], "demote");
+ӄryӄnz.sendMessage(Vlkyre.chatID, {
 text: `Looks like @${Vlkyre.sender.split("@")[0]} demoted @${
 users.split("@")[0]
 }`,

@@ -46,7 +46,7 @@ let Final_Name = Script_Name.slice(0, -3).toLowerCase();
 let { Caught } = require("../../Vlkyre👒Hat/Caught");
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
 exports.invite = async (
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 pushName,
 F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -65,8 +65,8 @@ let Igroup = await group.findOne({ id: Vlkyre.chatID });
 let hh = Igroup.invite || `false`;
 if (hh == `false`)
 return Vlkyre.reply(`*❌ERROR:* *Invite* is not active in this group`);
-let response = await ӄ𝖗𝖞ӄ𝖓𝖟.groupInviteCode(Vlkyre.chatID);
-await ӄ𝖗𝖞ӄ𝖓𝖟.sendText(
+let response = await ӄryӄnz.groupInviteCode(Vlkyre.chatID);
+await ӄryӄnz.sendText(
 Vlkyre.chatID,
 `https://chatID.whatsapp.com/${response}
 

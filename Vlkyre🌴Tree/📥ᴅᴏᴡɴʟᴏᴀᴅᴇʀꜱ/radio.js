@@ -55,7 +55,7 @@ let Final_Name = Script_Name.slice(0, -3).toLowerCase();
 let { Caught } = require("../../Vlkyre👒Hat/Caught");
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 exports.radio = async (
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 pushName,
 F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -195,7 +195,7 @@ console.log(`𝐘𝐨𝐮𝐓𝐮𝐛𝐞⭕️𝐌𝐮𝐬𝐢𝐜
 📜𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${ᴛᴜʙᴇ.description}`);
 try {
 let { DLoader } = await yta_var(ᴛᴜʙᴇ.url, "en136");
-return await ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(
+return await ӄryӄnz.sendMessage(
 Vlkyre.chatID,
 {
 audio: { url: DLoader },
@@ -218,7 +218,7 @@ console.log(
 ᴋᴏʟᴏʀ.black(ᴋᴏʟᴏʀ.bgWhite("⚠️Èrrðr: "), ᴋᴏʟᴏʀ.bgRed(Èrrðr))
 );
 let ᴍᴇᴅɪᴀ = await yta(ᴛᴜʙᴇ.url, "128kbps");
-return await ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(
+return await ӄryӄnz.sendMessage(
 Vlkyre.chatID,
 {
 audio: { url: ᴍᴇᴅɪᴀ.DLoader },

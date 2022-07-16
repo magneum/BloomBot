@@ -47,7 +47,7 @@ let Final_Name = Script_Name.slice(0, -3).toLowerCase();
 let { Caught } = require("../../Vlkyre👒Hat/Caught");
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 exports.toimg = async (
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 pushName,
 F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -67,7 +67,7 @@ Vlkyre.message.extendedTextMessage.contextInfo.quotedMessage
 ) {
 if (!quoted) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 `*❌ERROR:*  Could not find any sticker in context!
 *⚡USAGE:* ${prefix}${Final_Name} <Tag the sticker>`
@@ -75,20 +75,20 @@ Vlkyre,
 }
 if (!/webp/.test(mime)) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 `*❌ERROR:*  Could not find any sticker in context!
 *⚡USAGE:* ${prefix}${Final_Name} <Tag the sticker>`
 );
 }
-let media = await ӄ𝖗𝖞ӄ𝖓𝖟.downloadAndSaveMediaMessage(quoted);
+let media = await ӄryӄnz.downloadAndSaveMediaMessage(quoted);
 let ran = await getRandom(`.png`);
 exec(`ffmpeg -i ${media} ${ran}`, async (Èrrðr) => {
 fs.unlinkSync(media);
 if (Èrrðr) Vlkyre.reply(Èrrðr);
 let buffer = fs.readFileSync(ran);
 await Image_Button(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
 buffer,
@@ -102,7 +102,7 @@ Vlkyre.message.extendedTextMessage.contextInfo.quotedMessage
 ) {
 if (!quoted) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 `*❌ERROR:*  Could not find any sticker in context!
 *⚡USAGE:* ${prefix}${Final_Name} <Tag the sticker>`
@@ -111,15 +111,15 @@ Vlkyre,
 
 if (!/webp/.test(mime)) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 `*❌ERROR:*  Could not find any sticker in context!
 *⚡USAGE:* ${prefix}${Final_Name} <Tag the sticker>`
 );
 }
-let media = await ӄ𝖗𝖞ӄ𝖓𝖟.downloadAndSaveMediaMessage(quoted);
+let media = await ӄryӄnz.downloadAndSaveMediaMessage(quoted);
 let webpToMp4 = await webp2mp4File(media);
-await ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(
+await ӄryӄnz.sendMessage(
 Vlkyre.chatID,
 {
 video: {

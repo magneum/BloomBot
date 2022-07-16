@@ -23,7 +23,7 @@ let { yta_var } = require("../Vlkyre🛎️Bell/letiableServers");
 // await ᴘᴏᴡ();
 // });
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
-exports.ᴋʀᴀᴋɪɴᴢʟᴀʙʀᴀᴅɪᴏ = async (Vlkyre, ӄӄ) => {
+exports.ᴋʀᴀᴋɪɴᴢʟᴀʙʀᴀᴅɪᴏ = async (Vlkyre, ӄryӄnz) => {
 console.log(
 ᴋᴏʟᴏʀ.black(ᴋᴏʟᴏʀ.bgWhite("🍯𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐀𝐭: "), ᴋᴏʟᴏʀ.bgYellow(new Date()))
 );
@@ -151,7 +151,7 @@ console.log(`𝐘𝐨𝐮𝐓𝐮𝐛𝐞⭕️𝐌𝐮𝐬𝐢𝐜
 📜𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${ᴛᴜʙᴇ.description}`);
 try {
 let { DLoader } = await yta_var(ᴛᴜʙᴇ.url, "en136");
-return await ӄӄ.sendMessage(
+return await ӄryӄnz.sendMessage(
 Vlkyre.chatID,
 {
 audio: { url: DLoader },
@@ -175,7 +175,7 @@ console.log(
 ᴋᴏʟᴏʀ.black(ᴋᴏʟᴏʀ.bgWhite("⚠️𝕰𝖗𝖗𝖔𝖗: "), ᴋᴏʟᴏʀ.bgRed(error))
 );
 let ᴍᴇᴅɪᴀ = await yta(ᴛᴜʙᴇ.url, "128kbps");
-return await ӄӄ.sendMessage(
+return await ӄryӄnz.sendMessage(
 Vlkyre.chatID,
 {
 audio: { url: ᴍᴇᴅɪᴀ.DLoader },

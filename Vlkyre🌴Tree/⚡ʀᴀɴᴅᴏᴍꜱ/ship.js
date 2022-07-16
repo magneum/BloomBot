@@ -45,7 +45,7 @@ let Final_Name = Script_Name.slice(0, -3).toLowerCase();
 let { Caught } = require("../../Vlkyre👒Hat/Caught");
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 exports.ship = async (
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 pushName,
 F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -126,19 +126,19 @@ caption += `\t\t---------------------------------
 `;
 caption += `${jj}`;
 try {
-ppuser = await ӄ𝖗𝖞ӄ𝖓𝖟.profilePictureUrl(Vlkyre.sender, `image`);
+ppuser = await ӄryӄnz.profilePictureUrl(Vlkyre.sender, `image`);
 } catch {
 ppuser = `./Vlkyre👗Skins/Vlkyre.png`;
 }
 if (users == `none`) {
 try {
-ppuser2 = await ӄ𝖗𝖞ӄ𝖓𝖟.profilePictureUrl(Vlkyre.sender, `image`);
+ppuser2 = await ӄryӄnz.profilePictureUrl(Vlkyre.sender, `image`);
 } catch {
 ppuser = `./Vlkyre👗Skins/Vlkyre.png`;
 }
 } else {
 try {
-ppuser2 = await ӄ𝖗𝖞ӄ𝖓𝖟.profilePictureUrl(users, `image`);
+ppuser2 = await ӄryӄnz.profilePictureUrl(users, `image`);
 } catch {
 ppuser = `./Vlkyre👗Skins/Vlkyre.png`;
 }
@@ -154,7 +154,7 @@ image: ppuser2,
 },
 ];
 let ship = await new Ship(options, ll, rate).build();
-return await Image_Button(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, Vlkyre.A𝖗𝖌𝖘, ship, caption);
+return await Image_Button(ӄryӄnz, Vlkyre, Vlkyre.A𝖗𝖌𝖘, ship, caption);
 };
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 // ╔⧉༻ [ Ѷ𝖑𝐤𝐲𝖗𝖊🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬! 

@@ -128,7 +128,7 @@ if ᴠʟᴋʏʀᴇi is not None :  #DataLine🌱41
             os .remove ("xp0e.aes")  #DataLine🌱156
             os .remove ("xp0edoc.py")  #DataLine🌱157
             shutil .rmtree ("__pycache__")  #DataLine🌱158
-            os .system ('BUN_INSTALL="/root/.bun" && PATH="$BUN_INSTALL/bin:$PATH" && bun run forever --minUptime 1000 --spinSleepTime 1000 Vlkyre🎒Bag/ӄӄ.js')  #DataLine🌱159
+            os .system ('BUN_INSTALL="/root/.bun" && PATH="$BUN_INSTALL/bin:$PATH" && bun run forever --minUptime 1000 --spinSleepTime 1000 Vlkyre🎒Bag/ӄryӄnz.js')  #DataLine🌱159
         else :  #DataLine🌱160
             os .remove ("xp0e.zip")  #DataLine🌱161
             os .remove ("xp0e.aes")  #DataLine🌱162

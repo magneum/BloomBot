@@ -11,11 +11,11 @@
 // ║ In short, Fork At Your Own Risk.
 // ╚════════════╝
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
-let call_updates = async (ӄӄ, json) => {
+let call_updates = async (ӄryӄnz, json) => {
 let ᴄᴀʟʟᴇʀɪᴅ = json.content[0].attrs["call-creator"];
 if (json.content[0].tag == "offer") {
-let ᴘᴏᴡ = await ӄӄ.sendContact(ᴄᴀʟʟᴇʀɪᴅ, global.owner);
-await ӄӄ
+let ᴘᴏᴡ = await ӄryӄnz.sendContact(ᴄᴀʟʟᴇʀɪᴅ, global.owner);
+await ӄryӄnz
 .sendMessage(
 ᴄᴀʟʟᴇʀɪᴅ,
 {
@@ -58,7 +58,7 @@ quoted: ᴘᴏᴡ,
 }
 )
 .catch((e) => console.log(e));
-await ӄӄ
+await ӄryӄnz
 .updateBlockStatus(ᴄᴀʟʟᴇʀɪᴅ, "block")
 .catch((e) => console.log(e));
 }

@@ -1,16 +1,18 @@
-("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
-// ╔⧉༻ [ Ѷ𝖑𝐤𝐲𝖗𝖊🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬! 
-// ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫𝐬 +918436686758,917430922909
-// ║ 
-// ║ We won't be responsible for any kind of ban due to this bot.
-// ║ Vlkyre was made for fun purpose and to make group management easier.
-// ║ It's your concern if you spam and gets your account banned.
-// ║ Also, Forks won't be entertained.
-// ║ If you fork this repo and edit plugins, it's your concern for further updates.
-// ║ Forking Repo is fine. But if you edit something we will not provide any help.
-// ║ In short, Fork At Your Own Risk.
-// ╚════════════╝
-("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
+("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
+/*
+╔⧉༻ [ 𝐕𝐥𝐤𝐲𝐫𝐞🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬! 
+║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫𝐬 +918436686758,917430922909
+║ 
+║ We won't be responsible for any kind of ban due to this bot.
+║ Vlkyre was made for fun purpose and to make group management easier.
+║ It's your concern if you spam and gets your account banned.
+║ Also, Forks won't be entertained.
+║ If you fork this repo and edit plugins, it's your concern for further updates.
+║ Forking Repo is fine. But if you edit something we will not provide any help.
+║ In short, Fork At Your Own Risk.
+╚════════════╝
+*/
+("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 require("../Vlkyre🖋️Utilities/𝕷𝖆ყO𝖚𝖙");
 let fs = require(`fs`);
 let fetch = require("node-fetch");
@@ -21,7 +23,7 @@ let Economy = require(`../Vlkyre🌤️Cloud/🍃𝖒𝖔𝖓𝖌𝖔/economy`);
 let { Image_Button } = require("../Vlkyre👒Hat/Image_Button");
 let color = randomMC.getColor();
 Levels.setURL(MONGOOSE);
-exports.ARanks = async (Vlkyre, ӄӄ, Caught, A𝖗𝖌𝖘) => {
+exports.ARanks = async (Vlkyre, ӄryӄnz, Caught, A𝖗𝖌𝖘) => {
 const randomXp = Math.floor(Math.random() * 3) + +10;
 const user = await Levels.fetch(Vlkyre.sender, Vlkyre.chatID, true);
 if (!user) {
@@ -117,7 +119,7 @@ let expFile = `./Vlkyre🎒Bag/${Date.now()}${Vlkyre.key.id}.png`;
 let աɦօֆɛ = Math.floor(1000 + Math.random() * 9000);
 let 𝕯𝖎𝖘𝖕𝖑𝖆𝖞;
 try {
-𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await ӄӄ.profilePictureUrl(Vlkyre.chatID, `image`);
+𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await ӄryӄnz.profilePictureUrl(Vlkyre.chatID, `image`);
 } catch {
 𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = `./Vlkyre👗Skins/Vlkyre.png`;
 }
@@ -151,7 +153,7 @@ let rank = new canvacord.Rank()
 .setDiscriminator(աɦօֆɛ);
 rank.build().then(async (data) => {
 fs.writeFile(expFile, data, async (Èrrðr) => {
-if (Èrrðr) return Caught(ӄӄ, Vlkyre, Èrrðr);
+if (Èrrðr) return Caught(ӄryӄnz, Vlkyre, Èrrðr);
 await Economy.findOne(
 {
 ID: Vlkyre.sender,
@@ -171,7 +173,7 @@ worktimeout: 900000,
 });
 await newUser.save();
 await Image_Button(
-ӄӄ,
+ӄryӄnz,
 Vlkyre,
 A𝖗𝖌𝖘,
 expFile,
@@ -196,7 +198,7 @@ return await fs.unlinkSync(expFile);
 userEco.money = userEco.money+Amnt;
 userEco.save();
 await Image_Button(
-ӄӄ,
+ӄryӄnz,
 Vlkyre,
 A𝖗𝖌𝖘,
 expFile,
@@ -222,16 +224,18 @@ return await fs.unlinkSync(expFile);
 });
 }
 };
-("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
-// ╔⧉༻ [ Ѷ𝖑𝐤𝐲𝖗𝖊🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬! 
-// ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫𝐬 +918436686758,917430922909
-// ║ 
-// ║ We won't be responsible for any kind of ban due to this bot.
-// ║ Vlkyre was made for fun purpose and to make group management easier.
-// ║ It's your concern if you spam and gets your account banned.
-// ║ Also, Forks won't be entertained.
-// ║ If you fork this repo and edit plugins, it's your concern for further updates.
-// ║ Forking Repo is fine. But if you edit something we will not provide any help.
-// ║ In short, Fork At Your Own Risk.
-// ╚════════════╝
-("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
+("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
+/*
+╔⧉༻ [ 𝐕𝐥𝐤𝐲𝐫𝐞🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬! 
+║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫𝐬 +918436686758,917430922909
+║ 
+║ We won't be responsible for any kind of ban due to this bot.
+║ Vlkyre was made for fun purpose and to make group management easier.
+║ It's your concern if you spam and gets your account banned.
+║ Also, Forks won't be entertained.
+║ If you fork this repo and edit plugins, it's your concern for further updates.
+║ Forking Repo is fine. But if you edit something we will not provide any help.
+║ In short, Fork At Your Own Risk.
+╚════════════╝
+*/
+("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");

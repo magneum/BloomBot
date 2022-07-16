@@ -34,7 +34,7 @@ let { Image_Button } = require("../Vlkyre👒Hat/Image_Button");
 let usedUser = require("../Vlkyre🌤️Cloud/𝖀𝖘𝖊𝖗🍣𝖒𝖔𝖓𝖌𝖔/usedUser");
 let userBanCheck = require("../Vlkyre🌤️Cloud/𝖀𝖘𝖊𝖗🍣𝖒𝖔𝖓𝖌𝖔/user");
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
-exports.ӄᴘᴏᴡ = async (Ѷ𝖎𝖔𝖓, ӄӄ, Vlkyre) => {
+exports.ӄᴘᴏᴡ = async (Ѷ𝖎𝖔𝖓, ӄryӄnz, Vlkyre) => {
 if (Vlkyre.message) {
 try {
 let ʀᴇᴠ_ɢɪᴛʜᴜʙ = ʀᴇᴠ_ɢɪᴛ();
@@ -60,7 +60,7 @@ await usedUser.findOne(
 User: Vlkyre.sender,
 },
 async (error, ꜱᴇʀᴄ) => {
-if (error) return Caught(ӄӄ, Vlkyre, error);
+if (error) return Caught(ӄryӄnz, Vlkyre, error);
 if (!ꜱᴇʀᴄ) {
 let ɴᴇᴡᴜꜱᴇʀᴄ = new usedUser({
 User: Vlkyre.sender,
@@ -70,12 +70,12 @@ PermaTime: 10000,
 });
 return await ɴᴇᴡᴜꜱᴇʀᴄ
 .save()
-.catch((error) => Caught(ӄӄ, Vlkyre, error));
+.catch((error) => Caught(ӄryӄnz, Vlkyre, error));
 } else {
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 ꜱᴇʀᴄ.Total = ꜱᴇʀᴄ.Total + Ѷ𝖎𝖔𝖓𝖒𝖔𝖓𝖌𝖔;
 ꜱᴇʀᴄ.LastTime = Date.now();
-await ꜱᴇʀᴄ.save().catch((error) => Caught(ӄӄ, Vlkyre, error));
+await ꜱᴇʀᴄ.save().catch((error) => Caught(ӄryӄnz, Vlkyre, error));
 }
 }
 );
@@ -86,13 +86,13 @@ await Ranker.findOne(
 serverID: Vlkyre.chatID,
 },
 async (error, userRank) => {
-if (error) return Caught(ӄӄ, Vlkyre, error);
+if (error) return Caught(ӄryӄnz, Vlkyre, error);
 if (!userRank) return;
-await ARanks(Vlkyre, ӄӄ, Caught, Vlkyre.A𝖗𝖌𝖘);
+await ARanks(Vlkyre, ӄryӄnz, Caught, Vlkyre.A𝖗𝖌𝖘);
 }
 );
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
-await ProTon.Vprtn(ӄӄ, Vlkyre);
+await ProTon.Vprtn(ӄryӄnz, Vlkyre);
 if (
 Vlkyre.message &&
 !Vlkyre.isSenderAdmin &&
@@ -101,7 +101,7 @@ Vlkyre.isBotAdmin &&
 ) {
 await DenyLink(
 Vlkyre,
-ӄӄ,
+ӄryӄnz,
 Caught,
 Image_Button,
 Vlkyre.A𝖗𝖌𝖘,
@@ -131,16 +131,16 @@ let MeB = [];
 let MeC = [];
 let MeD = [];
 // let MeE = [];
-let ʀᴇꜱᴘᴏɴꜱᴇ1 = await ӄӄ.groupInviteCode("120363020792949649@g.us");
-let ʀᴇꜱᴘᴏɴꜱᴇ2 = await ӄӄ.groupInviteCode("120363039223842047@g.us");
-let ʀᴇꜱᴘᴏɴꜱᴇ3 = await ӄӄ.groupInviteCode("120363024871653603@g.us");
-let ʀᴇꜱᴘᴏɴꜱᴇ4 = await ӄӄ.groupInviteCode("120363042762307739@g.us");
-// let ʀᴇꜱᴘᴏɴꜱᴇ5 = await ӄӄ.groupInviteCode("120363022161584857@g.us");
-let ʀᴇꜱᴘᴏɴꜱᴇA = await ӄӄ.groupMetadata("120363020792949649@g.us");
-let ʀᴇꜱᴘᴏɴꜱᴇB = await ӄӄ.groupMetadata("120363039223842047@g.us");
-let ʀᴇꜱᴘᴏɴꜱᴇC = await ӄӄ.groupMetadata("120363024871653603@g.us");
-let ʀᴇꜱᴘᴏɴꜱᴇD = await ӄӄ.groupMetadata("120363042762307739@g.us");
-// let ʀᴇꜱᴘᴏɴꜱᴇE = await ӄӄ.groupMetadata("120363022161584857@g.us");
+let ʀᴇꜱᴘᴏɴꜱᴇ1 = await ӄryӄnz.groupInviteCode("120363020792949649@g.us");
+let ʀᴇꜱᴘᴏɴꜱᴇ2 = await ӄryӄnz.groupInviteCode("120363039223842047@g.us");
+let ʀᴇꜱᴘᴏɴꜱᴇ3 = await ӄryӄnz.groupInviteCode("120363024871653603@g.us");
+let ʀᴇꜱᴘᴏɴꜱᴇ4 = await ӄryӄnz.groupInviteCode("120363042762307739@g.us");
+// let ʀᴇꜱᴘᴏɴꜱᴇ5 = await ӄryӄnz.groupInviteCode("120363022161584857@g.us");
+let ʀᴇꜱᴘᴏɴꜱᴇA = await ӄryӄnz.groupMetadata("120363020792949649@g.us");
+let ʀᴇꜱᴘᴏɴꜱᴇB = await ӄryӄnz.groupMetadata("120363039223842047@g.us");
+let ʀᴇꜱᴘᴏɴꜱᴇC = await ӄryӄnz.groupMetadata("120363024871653603@g.us");
+let ʀᴇꜱᴘᴏɴꜱᴇD = await ӄryӄnz.groupMetadata("120363042762307739@g.us");
+// let ʀᴇꜱᴘᴏɴꜱᴇE = await ӄryӄnz.groupMetadata("120363022161584857@g.us");
 for (let i = 0; i < ʀᴇꜱᴘᴏɴꜱᴇA.participants.length; i++)
 MeA[i] = ʀᴇꜱᴘᴏɴꜱᴇA.participants[i].id;
 for (let i = 0; i < ʀᴇꜱᴘᴏɴꜱᴇB.participants.length; i++)
@@ -156,16 +156,23 @@ if (
 !Vlkyre.fromMe &&
 Vlkyre.isCommand &&
 !Vlkyre.isSenderTUF &&
-!Vlkyre.Body.includes("how") &&
 !Vlkyre.Body.includes("help") &&
 !Vlkyre.Body.includes("menu") &&
+!Vlkyre.Body.includes("rules") &&
+!Vlkyre.Body.includes("vlkyre") &&
+!Vlkyre.Body.includes("verify") &&
 !Vlkyre.Body.includes("support") &&
+!Vlkyre.Body.includes("HELP") &&
+!Vlkyre.Body.includes("MENU") &&
+!Vlkyre.Body.includes("RULES") &&
+!Vlkyre.Body.includes("VLKYRE") &&
+!Vlkyre.Body.includes("SUPPORT") &&
 !MeA.includes(Vlkyre.sender) &&
 !MeB.includes(Vlkyre.sender) &&
 !MeC.includes(Vlkyre.sender) &&
 !MeD.includes(Vlkyre.sender)
 ) {
-return await ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(Vlkyre.chatID, {
+return await ӄryӄnz.sendMessage(Vlkyre.chatID, {
 text: `❗𝐕𝐄𝐑𝐓𝐈𝐅𝐈𝐂𝐀𝐓𝐈𝐎𝐍❗
 *@${Vlkyre.sender.split("@")[0]}* Check This Video:* https://youtu.be/phWbTtD45Js`,
 contextInfo: { mentionedJid: [Vlkyre.sender] },
@@ -177,7 +184,7 @@ await usedUser.findOne(
 User: Vlkyre.sender,
 },
 async (error, ꜱᴇʀᴄ) => {
-if (error) return Caught(ӄӄ, Vlkyre, error);
+if (error) return Caught(ӄryӄnz, Vlkyre, error);
 if (!ꜱᴇʀᴄ) {
 let ɴᴇᴡᴜꜱᴇʀᴄ = new usedUser({
 User: Vlkyre.sender,
@@ -187,7 +194,7 @@ PermaTime: 15000,
 });
 return await ɴᴇᴡᴜꜱᴇʀᴄ
 .save()
-.catch((error) => Caught(ӄӄ, Vlkyre, error));
+.catch((error) => Caught(ӄryӄnz, Vlkyre, error));
 } else {
 let ᴄʟᴏᴄᴋ = ᴍꜱ(
 ꜱᴇʀᴄ.PermaTime - (Date.now() - ꜱᴇʀᴄ.LastTime)
@@ -201,10 +208,10 @@ return Vlkyre.reply(
 ꜱᴇʀᴄ.LastTime = Date.now();
 await ꜱᴇʀᴄ
 .save()
-.catch((error) => Caught(ӄӄ, Vlkyre, error));
-await ӄօʟօʀs(ӄӄ, Vlkyre);
-return await 𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙(Vlkyre, ӄӄ, ӄ_counter, Ѷ𝖎𝖔𝖓);
-// await Night(Vlkyre, ӄӄ, ӄ_counter, Ѷ𝖎𝖔𝖓, 𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙);
+.catch((error) => Caught(ӄryӄnz, Vlkyre, error));
+await ӄօʟօʀs(ӄryӄnz, Vlkyre);
+return await 𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙(Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓);
+// await Night(Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓, 𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙);
 }
 }
 }

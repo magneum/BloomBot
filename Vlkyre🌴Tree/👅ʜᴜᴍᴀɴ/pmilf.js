@@ -46,7 +46,7 @@ let Final_Name = Script_Name.slice(0, -3).toLowerCase();
 let { Caught } = require("../../Vlkyre👒Hat/Caught");
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 exports.pmilf = async (
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 pushName,
 F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -70,7 +70,7 @@ let ꜰɪʟᴇ = JSON.parse(FF.body);
 let title = ꜰɪʟᴇ[0].data.children[0].data.title;
 let ꜰɪɴᴀʟʟɪɴᴋ = ꜰɪʟᴇ[0].data.children[0].data.url;
 return await Image_Button(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
 ꜰɪɴᴀʟʟɪɴᴋ,
@@ -94,7 +94,7 @@ ffmpeg(ɢᴏᴛꜰɪʟᴇ)
 "-movflags +faststart",
 "-filter:v crop='floor(in_w/2)*2:floor(in_h/2)*2'",
 ]).save(ɢɪᴠᴇꜰɪʟᴇ).on("end", async () => {
-await ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(
+await ӄryӄnz.sendMessage(
 Vlkyre.chatID,
 {
 gifPlayback: true,
@@ -107,19 +107,19 @@ caption: `*⦓ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⦔*
 👅𝐓𝐨𝐩𝐢𝐜: ${title}`,
 },
 { quoted: Vlkyre }
-).then(fs.unlinkSync(ɢɪᴠᴇꜰɪʟᴇ, ɢᴏᴛꜰɪʟᴇ)).catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, Èrrðr));
+).then(fs.unlinkSync(ɢɪᴠᴇꜰɪʟᴇ, ɢᴏᴛꜰɪʟᴇ)).catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
 });
 });
 await ꜰɪʟʟ𝐩𝐢.on("error", async (Èrrðr) => {
-return await Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, Èrrðr);
+return await Caught(ӄryӄnz, Vlkyre, Èrrðr);
 });
 await ꜰɪʟʟ𝐩𝐢.start().catch(async (Èrrðr) => {
-return await Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, Èrrðr);
+return await Caught(ӄryӄnz, Vlkyre, Èrrðr);
 });
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 } else {
 return await Image_Button(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
 ꜰɪɴᴀʟʟɪɴᴋ,

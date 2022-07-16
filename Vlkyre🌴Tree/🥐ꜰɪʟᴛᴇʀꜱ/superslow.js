@@ -51,7 +51,7 @@ let Final_Name = Script_Name.slice(0, -3).toLowerCase();
 let { Caught } = require("../../𝐕𝐥𝐤𝐲𝐫𝐞🌀B𝖚𝖙𝖙𝖔𝖓𝖘/Caught");
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 exports.superslow = async (
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 pushName,
 F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -66,7 +66,7 @@ body,
 ) => {
 if (!quoted) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 `*❌ERROR:* No query provided!
 *⚡USAGE:* ${prefix}${Final_Name} <reply to audio file>`
@@ -75,7 +75,7 @@ Vlkyre,
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 if (!/audio/.test(Mme)){
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 `*❌ERROR:* No query provided!
 *⚡USAGE:* ${prefix}${Final_Name} <reply to audio file>`
@@ -83,19 +83,19 @@ Vlkyre,
 }
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 let FFmpegFile = `./Vlkyre🎒Bag/${Date.now()}${Vlkyre.key.id}.mp3`;
-let RawFile = await ӄ𝖗𝖞ӄ𝖓𝖟.downloadAndSaveMediaMessage(quoted);
+let RawFile = await ӄryӄnz.downloadAndSaveMediaMessage(quoted);
 exec(`ffmpeg -i ${RawFile} -af "atempo=0.5" ${FFmpegFile}`, async (error) => {
 cleanRF.cleanRF(Convert_From);
 if (error) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 `*❌ERROR:* Could not convert!
 *⚡USAGE:* ${prefix}${Final_Name} <Song name or Youtube link>`
 );
 }
 
-return await ӄ𝖗𝖞ӄ𝖓𝖟
+return await ӄryӄnz
 .sendMessage(
 Vlkyre.chatID,
 {

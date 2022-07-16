@@ -47,7 +47,7 @@ let Final_Name = Script_Name.slice(0, -3).toLowerCase();
 let { Caught } = require("../../Vlkyre👒Hat/Caught");
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 exports.buy = async (
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 pushName,
 F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -139,7 +139,7 @@ NewLimit = 100;
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 if (!F𝖚𝖑𝖑_A𝖗𝖌𝖘) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 `*❌ERROR:* No query provided!
 *⚡USAGE:* ${prefix}${Final_Name} <item name>
@@ -149,7 +149,7 @@ Get Item-List From ${prefix}shop!`
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 if (Vlkyre.A𝖗𝖌𝖘.length === 0) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 `*❌ERROR:* No query provided!
 *⚡USAGE:* ${prefix}${Final_Name} <item name>
@@ -163,7 +163,7 @@ Economy.findOne(
 ID: Vlkyre.sender,
 },
 async (Èrrðr, userEco) => {
-if (Èrrðr) return Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, util.format(Èrrðr));
+if (Èrrðr) return Caught(ӄryӄnz, Vlkyre, util.format(Èrrðr));
 if (!userEco) {
 let newUser = new Economy({
 ID: Vlkyre.sender,
@@ -177,9 +177,9 @@ worktimeout: 900000,
 });
 await newUser
 .save()
-.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, util.format(Èrrðr)));
+.catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, util.format(Èrrðr)));
 return await Image_Button(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/Vlkyre_DB.png",
@@ -196,7 +196,7 @@ Robbery.findOne(
 ID: Vlkyre.sender,
 },
 async (Èrrðr, userRob) => {
-if (Èrrðr) return Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, util.format(Èrrðr));
+if (Èrrðr) return Caught(ӄryӄnz, Vlkyre, util.format(Èrrðr));
 if (!userRob) {
 let newUser = new Robbery({
 ID: Vlkyre.sender,
@@ -208,9 +208,9 @@ PermanentRobberyTime: 600000,
 });
 await newUser
 .save()
-.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, util.format(Èrrðr)));
+.catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, util.format(Èrrðr)));
 return await Image_Button(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/Vlkyre_DB.png",
@@ -224,7 +224,7 @@ Vlkyre.A𝖗𝖌𝖘,
 } else {
 if (userEco.money < ItemPrice) {
 return await Image_Button(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/Vlkyre__Shop.png",
@@ -247,15 +247,15 @@ userEco.money = userEco.money - ItemPrice;
 await userEco
 .save()
 .catch((Èrrðr) =>
-Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, util.format(Èrrðr))
+Caught(ӄryӄnz, Vlkyre, util.format(Èrrðr))
 );
 await userRob
 .save()
 .catch((Èrrðr) =>
-Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, util.format(Èrrðr))
+Caught(ӄryӄnz, Vlkyre, util.format(Èrrðr))
 );
 return await Image_Button(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/Vlkyre__Shop.png",
@@ -275,15 +275,15 @@ userEco.money = userEco.money - ItemPrice;
 await userEco
 .save()
 .catch((Èrrðr) =>
-Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, util.format(Èrrðr))
+Caught(ӄryӄnz, Vlkyre, util.format(Èrrðr))
 );
 await userRob
 .save()
 .catch((Èrrðr) =>
-Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, util.format(Èrrðr))
+Caught(ӄryӄnz, Vlkyre, util.format(Èrrðr))
 );
 return await Image_Button(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/Vlkyre__Shop.png",
@@ -303,15 +303,15 @@ userEco.money = userEco.money - ItemPrice;
 await userEco
 .save()
 .catch((Èrrðr) =>
-Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, util.format(Èrrðr))
+Caught(ӄryӄnz, Vlkyre, util.format(Èrrðr))
 );
 await userRob
 .save()
 .catch((Èrrðr) =>
-Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, util.format(Èrrðr))
+Caught(ӄryӄnz, Vlkyre, util.format(Èrrðr))
 );
 return await Image_Button(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/Vlkyre__Shop.png",
@@ -326,7 +326,7 @@ Vlkyre.A𝖗𝖌𝖘,
 );
 }
 return await Image_Button(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/Vlkyre__Shop.png",
@@ -350,13 +350,13 @@ await Economy.findOne(
 ID: Vlkyre.sender,
 },
 async (Èrrðr, userEco) => {
-if (Èrrðr) return Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, util.format(Èrrðr));
+if (Èrrðr) return Caught(ӄryӄnz, Vlkyre, util.format(Èrrðr));
 await Bagde.findOne(
 {
 ID: Vlkyre.sender,
 },
 async (Èrrðr, userBadge) => {
-if (Èrrðr) return Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, util.format(Èrrðr));
+if (Èrrðr) return Caught(ӄryӄnz, Vlkyre, util.format(Èrrðr));
 if (!userEco) {
 let newEcoUser = new Economy({
 ID: Vlkyre.sender,
@@ -370,7 +370,7 @@ worktimeout: 900000,
 });
 newEcoUser
 .save()
-.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, util.format(Èrrðr)));
+.catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, util.format(Èrrðr)));
 return Vlkyre_Buttons.MIB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 KryChat,
@@ -401,7 +401,7 @@ PermanentLimitTime: 0,
 });
 newBagdeUser
 .save()
-.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, util.format(Èrrðr)));
+.catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, util.format(Èrrðr)));
 return Vlkyre_Buttons.MIB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 KryChat,
@@ -468,10 +468,10 @@ userBadge.Limits = NewLimit;
 userBadge.Badge = Item;
 await userEco
 .save()
-.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, util.format(Èrrðr)));
+.catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, util.format(Èrrðr)));
 await userBadge
 .save()
-.catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, util.format(Èrrðr)));
+.catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, util.format(Èrrðr)));
 return Vlkyre_Buttons.MIB(
 ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇,
 KryChat,
@@ -496,7 +496,7 @@ Vlkyre,
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 } else {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 `*❌ERROR:* Wrong query provided!
 *⚡USAGE:* ${prefix}${Final_Name} <item name>

@@ -46,7 +46,7 @@ let Final_Name = Script_Name.slice(0, -3).toLowerCase();
 let { Caught } = require("../../Vlkyre👒Hat/Caught");
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 exports.dbrem = async (
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 pushName,
 F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -63,14 +63,14 @@ if (Vlkyre.mentionByReply) {
 let ʀᴇᴘʟɪᴇᴅ = Vlkyre.mtype == "extendedTextMessage" && Vlkyre.message.extendedTextMessage.contextInfo != null ? Vlkyre.message.extendedTextMessage.contextInfo.participant || "": "";
 if (Vlkyre.isCreator === ʀᴇᴘʟɪᴇᴅ) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 "*❌ERROR:*  You dumb! This Command Does't work on Owner and Mods!"
 );
 }
 if (Vlkyre.isSenderTUF === ʀᴇᴘʟɪᴇᴅ) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 "*❌ERROR:*  You dumb! This Command Does't work on Owner and Mods!"
 );
@@ -80,7 +80,7 @@ await Economy.findOne(
 ID: ʀᴇᴘʟɪᴇᴅ,
 },
 async (Èrrðr, userEco) => {
-if (Èrrðr) return Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, util.format(Èrrðr));
+if (Èrrðr) return Caught(ӄryӄnz, Vlkyre, util.format(Èrrðr));
 if (!userEco) {
 let newUser = new Economy({
 ID: ʀᴇᴘʟɪᴇᴅ,
@@ -92,9 +92,9 @@ fishtimeout: 1800000,
 workdone: 0,
 worktimeout: 900000,
 });
-await newUser.save().catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, Èrrðr));
+await newUser.save().catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
 return await Image_Button(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/Vlkyre_DB.png",
@@ -102,24 +102,24 @@ Vlkyre.A𝖗𝖌𝖘,
 );
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 } else {
-userEco.delete().catch((Èrrðr) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, Èrrðr));
-await ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(Vlkyre.chatID, {
+userEco.delete().catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
+await ӄryӄnz.sendMessage(Vlkyre.chatID, {
 text: "Pregress: 10%",
 contextInfo: { mentionedJid: [ʀᴇᴘʟɪᴇᴅ] },
 });
-await ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(Vlkyre.chatID, {
+await ӄryӄnz.sendMessage(Vlkyre.chatID, {
 text: "Pregress: 40%",
 contextInfo: { mentionedJid: [ʀᴇᴘʟɪᴇᴅ] },
 });
-await ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(Vlkyre.chatID, {
+await ӄryӄnz.sendMessage(Vlkyre.chatID, {
 text: "Pregress: 80%",
 contextInfo: { mentionedJid: [ʀᴇᴘʟɪᴇᴅ] },
 });
-await ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(Vlkyre.chatID, {
+await ӄryӄnz.sendMessage(Vlkyre.chatID, {
 text: "Pregress: 100%",
 contextInfo: { mentionedJid: [ʀᴇᴘʟɪᴇᴅ] },
 });
-await ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(Vlkyre.chatID, {
+await ӄryӄnz.sendMessage(Vlkyre.chatID, {
 text: `Money Of @${ʀᴇᴘʟɪᴇᴅ.split("@")[0]} has been successfully cleaned!`
 contextInfo: { mentionedJid: [ʀᴇᴘʟɪᴇᴅ] },
 });
@@ -129,7 +129,7 @@ contextInfo: { mentionedJid: [ʀᴇᴘʟɪᴇᴅ] },
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
 } else {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 `*❌ERROR:*  Argument Needed!
 *⚡USAGE:* ${prefix}${Final_Name} <reply to person>`

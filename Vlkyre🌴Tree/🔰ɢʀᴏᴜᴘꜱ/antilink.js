@@ -47,7 +47,7 @@ let Final_Name = Script_Name.slice(0, -3).toLowerCase();
 let { Caught } = require("../../Vlkyre👒Hat/Caught");
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
 exports.antilink = async (
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 pushName,
 F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -63,7 +63,7 @@ body,
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
 if (!F𝖚𝖑𝖑_A𝖗𝖌𝖘) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 `*❌ERROR:*  Argument Needed!
 *⚡USAGE:* ${prefix}${Final_Name} on/off`
@@ -75,7 +75,7 @@ return await LinkList.findOne(
 serverID: Vlkyre.chatID,
 },
 async (error, server) => {
-if (error) return Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, e);
+if (error) return Caught(ӄryӄnz, Vlkyre, e);
 if (!server) {
 let newServer = new LinkList({
 serverID: Vlkyre.chatID,
@@ -83,7 +83,7 @@ value: "ON",
 });
 await newServer.save();
 return await Image_Button(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/Vlkyre_Matte.png",
@@ -92,7 +92,7 @@ Vlkyre.A𝖗𝖌𝖘,
 );
 } else {
 return await Image_Button(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/Vlkyre_Matte.png",
@@ -109,10 +109,10 @@ return await LinkList.findOne(
 serverID: Vlkyre.chatID,
 },
 async (error, server) => {
-if (error) return Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, e);
+if (error) return Caught(ӄryӄnz, Vlkyre, e);
 if (!server) {
 return await Image_Button(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/Vlkyre_Matte.png",
@@ -122,7 +122,7 @@ Vlkyre.A𝖗𝖌𝖘,
 } else {
 await server.delete();
 return await Image_Button(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/Vlkyre_Matte.png",
@@ -135,7 +135,7 @@ Vlkyre.A𝖗𝖌𝖘,
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
 } else {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 `*❌ERROR:*  Argument Needed!
 *⚡USAGE:* ${prefix}${Final_Name} on/off`

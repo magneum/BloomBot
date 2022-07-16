@@ -46,7 +46,7 @@ let Final_Name = Script_Name.slice(0, -3).toLowerCase();
 let { Caught } = require("../../Vlkyre👒Hat/Caught");
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 exports.gify = async (
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 pushName,
 F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -61,7 +61,7 @@ body,
 ) => {
 if (!F𝖚𝖑𝖑_A𝖗𝖌𝖘) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 `*❌ERROR:* No query provided!
 *⚡USAGE:* ${prefix}${Final_Name} <Term>`
@@ -73,7 +73,7 @@ let { data: gi } = await axios.get(
 `https://g.tenor.com/v1/search?q=${F𝖚𝖑𝖑_A𝖗𝖌𝖘}&key=LIVDSRZULELA&limit=8`
 );
 
-await ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(
+await ӄryӄnz.sendMessage(
 Vlkyre.chatID,
 {
 video: {
@@ -87,7 +87,7 @@ gifPlayback: true,
 );
 } catch (Èrrðr) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 `*❌ERROR:* No gif found!
 *⚡USAGE:* ${prefix}${Final_Name} <Term>`

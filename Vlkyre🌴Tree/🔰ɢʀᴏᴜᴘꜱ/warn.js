@@ -47,7 +47,7 @@ let Final_Name = Script_Name.slice(0, -3).toLowerCase();
 let { Caught } = require("../../Vlkyre👒Hat/Caught");
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 exports.warn = async (
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 pushName,
 F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -70,14 +70,14 @@ Vlkyre.message.extendedTextMessage.contextInfo != null
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 if (Vlkyre.isCreator === ʀᴇᴘʟɪᴇᴅ) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 "*❌ERROR:*  You dumb! Cant't Kick Bot Owner and Mods!"
 );
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 } else if (Vlkyre.isSenderTUF === ʀᴇᴘʟɪᴇᴅ) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 "*❌ERROR:*  You dumb! Cant't Kick Bot Owner and Mods!"
 );
@@ -89,16 +89,16 @@ ID: ʀᴇᴘʟɪᴇᴅ,
 serverID: Vlkyre.chatID,
 },
 async (error, userWarn) => {
-if (error) return Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, util.format(error));
+if (error) return Caught(ӄryӄnz, Vlkyre, util.format(error));
 if (!userWarn) {
 var newUser = new Warning({
 ID: ʀᴇᴘʟɪᴇᴅ,
 serverID: Vlkyre.chatID,
 warns: 1,
 });
-await newUser.save().catch((error) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, error));
+await newUser.save().catch((error) => Caught(ӄryӄnz, Vlkyre, error));
 return await Image_Button(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/Vlkyre_Matte.png",
@@ -122,7 +122,7 @@ Vlkyre.isSenderTUF &&
 userWarn.warns === 3
 ) {
 await Image_Button(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/Vlkyre_Matte.png",
@@ -140,8 +140,8 @@ Vlkyre.A𝖗𝖌𝖘,
 );
 await userWarn
 .delete()
-.catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, KryChat));
-return await ӄ𝖗𝖞ӄ𝖓𝖟.groupParticipantsUpdate(
+.catch((error) => ꜰᴜᴄᴋ.catch(error, ӄryӄnz, Vlkyre, KryChat));
+return await ӄryӄnz.groupParticipantsUpdate(
 Vlkyre.chatID,
 [ʀᴇᴘʟɪᴇᴅ],
 "remove"
@@ -149,9 +149,9 @@ Vlkyre.chatID,
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 } else {
 userWarn.warns = userWarn.warns + 1;
-await userWarn.save().catch((error) => Caught(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre, error));
+await userWarn.save().catch((error) => Caught(ӄryӄnz, Vlkyre, error));
 await Image_Button(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/Vlkyre_Matte.png",
@@ -175,7 +175,7 @@ Vlkyre.A𝖗𝖌𝖘,
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 } else {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 `*❌ERROR:*  Argument Needed!
 *⚡USAGE:* ${prefix}${Final_Name} <reply to person>`

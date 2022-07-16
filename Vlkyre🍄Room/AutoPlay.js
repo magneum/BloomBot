@@ -22,20 +22,20 @@ let Radio = require("../Vlkyre🌤️Cloud/🍃𝖒𝖔𝖓𝖌𝖔/radio");
 let { getBuffer } = require("../Vlkyre🖋️Utilities/ɴᴇᴄᴛᴏʀ");
 let { yta_var } = require("../Vlkyre🛎️Bell/letiableServers");
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
-exports.AutoPlay = async (ӄӄ, Vlkyre) => {
+exports.AutoPlay = async (ӄryӄnz, Vlkyre) => {
 await Radio.findOne(
 {
 ID: Vlkyre.chatID,
 },
 async (error, userRad) => {
-if (error) return Caught(ӄӄ, Vlkyre, error);
+if (error) return Caught(ӄryӄnz, Vlkyre, error);
 if (!userRad) {
 let newRad = new Radio({
 ID: Vlkyre.chatID,
 goneRadio: 0,
 goneRadiotimeout: 0,
 });
-return await newRad.save().catch((error) => Caught(ӄӄ, Vlkyre, error));
+return await newRad.save().catch((error) => Caught(ӄryӄnz, Vlkyre, error));
 }
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 if (userRad.goneRadiotimeout - (Date.now() - userRad.goneRadio) > 0) {
@@ -43,7 +43,7 @@ return;
 } else {
 userRad.goneRadio = Date.now();
 userRad.goneRadiotimeout = 1800000;
-await userRad.save().catch((error) => Caught(ӄӄ, Vlkyre, error));
+await userRad.save().catch((error) => Caught(ӄryӄnz, Vlkyre, error));
 console.log(
 ᴋᴏʟᴏʀ.black(
 ᴋᴏʟᴏʀ.bgWhite("🍯𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐀𝐭: "),
@@ -166,7 +166,7 @@ console.log(
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 try {
 let { DLoader } = await yta_var(ᴛᴜʙᴇ.url, "en136");
-return await ӄӄ.sendMessage(Vlkyre.chatID, {
+return await ӄryӄnz.sendMessage(Vlkyre.chatID, {
 audio: { url: DLoader },
 contextInfo: {
 externalAdReply: {
@@ -186,7 +186,7 @@ console.log(
 ᴋᴏʟᴏʀ.black(ᴋᴏʟᴏʀ.bgWhite("⚠️𝕰𝖗𝖗𝖔𝖗: "), ᴋᴏʟᴏʀ.bgRed(error))
 );
 let ᴍᴇᴅɪᴀ = await ytaR(ᴛᴜʙᴇ.url, "128kbps");
-return await ӄӄ.sendMessage(Vlkyre.chatID, {
+return await ӄryӄnz.sendMessage(Vlkyre.chatID, {
 audio: { url: ᴍᴇᴅɪᴀ.DLoader },
 contextInfo: {
 externalAdReply: {

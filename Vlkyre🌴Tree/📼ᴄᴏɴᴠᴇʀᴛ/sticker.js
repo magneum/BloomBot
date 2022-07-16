@@ -46,7 +46,7 @@ let Final_Name = Script_Name.slice(0, -3).toLowerCase();
 let { Caught } = require("../../Vlkyre👒Hat/Caught");
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 exports.sticker = async (
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 pushName,
 F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -62,7 +62,7 @@ body,
 let Mme = (Vlkyre.quoted.msg || Vlkyre.quoted).mimetype || "";
 if (!quoted) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 `*❌ERROR:*  Could not find any Image/Video in context!
 *⚡USAGE:* ${prefix}${Final_Name} <Tag the sticker>`
@@ -81,7 +81,7 @@ quality: 75,
 background: `transparent`,
 });
 let Buffer = await ticker.toBuffer();
-return await ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(
+return await ӄryӄnz.sendMessage(
 Vlkyre.chatID,
 { sticker: Buffer },
 { quoted: Vlkyre }
@@ -102,7 +102,7 @@ quality: 75,
 background: `transparent`,
 });
 let Buffer = await ticker.toBuffer();
-return await ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(
+return await ӄryӄnz.sendMessage(
 Vlkyre.chatID,
 { sticker: Buffer },
 { quoted: Vlkyre }
@@ -110,7 +110,7 @@ Vlkyre.chatID,
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 } else {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 `*❌ERROR:*  Could not find any Image/Video in context!
 *⚡USAGE:* ${prefix}${Final_Name} <Tag the sticker>`

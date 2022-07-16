@@ -46,7 +46,7 @@ let Final_Name = Script_Name.slice(0, -3).toLowerCase();
 let { Caught } = require("../../Vlkyre👒Hat/Caught");
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
 exports.admins = async (
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 pushName,
 F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -62,7 +62,7 @@ body,
 let 𝕯𝖎𝖘𝖕𝖑𝖆𝖞;
 let 𝕮𝖔𝖓𝖙𝖊𝖓𝖙;
 try {
-𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await ӄ𝖗𝖞ӄ𝖓𝖟.profilePictureUrl(Vlkyre.chatID, "image");
+𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await ӄryӄnz.profilePictureUrl(Vlkyre.chatID, "image");
 } catch {
 𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = `./Vlkyre👗Skins/Vlkyre_LabGreen.png`;
 }
@@ -88,7 +88,7 @@ if (F𝖚𝖑𝖑_A𝖗𝖌𝖘) {
 *🕛Time:*  ${moment.tz("Asia/Kolkata").format("DD/MM HH:mm:ss")}
 *📌Message:* Attention Every Admin/Mods of This Group!`;
 }
-return await ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(
+return await ӄryӄnz.sendMessage(
 Vlkyre.chatID,
 {
 image: { url: 𝕯𝖎𝖘𝖕𝖑𝖆𝖞 },

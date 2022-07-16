@@ -50,7 +50,7 @@ let Final_Name = Script_Name.slice(0, -3).toLowerCase();
 let { Caught } = require("../../Vlkyre👒Hat/Caught");
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 exports.lyrics = async (
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 pushName,
 F𝖚𝖑𝖑_A𝖗𝖌𝖘,
@@ -67,7 +67,7 @@ let Genius = require(`genius-lyrics`);
 let Client = new Genius.Client();
 if (!F𝖚𝖑𝖑_A𝖗𝖌𝖘) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 `*❌ERROR:* No query provided!
 *⚡USAGE:* ${prefix}${Final_Name} <Term>`
@@ -80,7 +80,7 @@ const searches = await GeniusClient.songs.search(F𝖚𝖑𝖑_A𝖗𝖌𝖘);
 const GeniusSong = searches[0];
 const Geniuslyrics = await GeniusSong.lyrics();
 return await Image_Button(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
 GeniusSong.raw.song_art_image_thumbnail_url,
@@ -95,7 +95,7 @@ ${Geniuslyrics}`
 } catch (error) {
 const lyricssong = await Second_Try_Lyrics(F𝖚𝖑𝖑_A𝖗𝖌𝖘);
 return await Image_Button(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
 "./Vlkyre👗Skins/Vlkyre_Fish.png",
@@ -109,7 +109,7 @@ ${lyricssong.lyrics}`
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 } catch (error) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ӄ𝖗𝖞ӄ𝖓𝖟,
+ӄryӄnz,
 Vlkyre,
 `*❌ERROR:* No Such Song Lyrics Found!
 *⚡USAGE:* ${prefix}${Final_Name} <lyrics name>`
