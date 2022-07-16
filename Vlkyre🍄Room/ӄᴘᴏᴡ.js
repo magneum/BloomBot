@@ -165,12 +165,11 @@ Vlkyre.isCommand &&
 !MeC.includes(Vlkyre.sender) &&
 !MeD.includes(Vlkyre.sender)
 ) {
-return await Vlkyre.reply(`*❣️ ɴᴀᴍᴇ:* ${
-Vlkyre.pushName || "No_Name"
-}
-
-❗𝐕𝐄𝐑𝐓𝐈𝐅𝐈𝐂𝐀𝐓𝐈𝐎𝐍❗
-*Check This Video:* https://youtu.be/phWbTtD45Js`);
+return await ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(Vlkyre.chatID, {
+text: `❗𝐕𝐄𝐑𝐓𝐈𝐅𝐈𝐂𝐀𝐓𝐈𝐎𝐍❗
+*@${Vlkyre.sender.split("@")[0]}* Check This Video:* https://youtu.be/phWbTtD45Js`,
+contextInfo: { mentionedJid: [Vlkyre.sender] },
+});
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 } else {
 await usedUser.findOne(

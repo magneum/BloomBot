@@ -60,7 +60,7 @@ body
 ) => {
 return await ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(Vlkyre.chatID, {
 text: `❗𝐕𝐄𝐑𝐓𝐈𝐅𝐈𝐂𝐀𝐓𝐈𝐎𝐍❗
-* @${ʀᴇᴘʟɪᴇᴅ.split("@")[0]}  Check This Video:* https://youtu.be/phWbTtD45Js`,
+*@${Vlkyre.sender.split("@")[0]}*  Check This Video:* https://youtu.be/phWbTtD45Js`,
 contextInfo: { mentionedJid: [Vlkyre.sender] },
 });
 };
