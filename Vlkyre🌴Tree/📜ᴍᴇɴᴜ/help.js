@@ -172,7 +172,7 @@ Is a whatsapp userbot with automation,moderation,music,games and 140+ commands!
 🛍️${prefix}StoreMenu
 🌐${prefix}WebMenu
 ⭕${prefix}YTFilterMenu`,
-footer: "*⦓ ❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 𝐌𝐮𝐥𝐭𝐢 𝐃𝐞𝐯𝐢𝐜𝐞 ❞ ⦔\nʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ\n🍾https://aigroups.krakinzkon.repl.co",
+footer: "*❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 𝐌𝐮𝐥𝐭𝐢 𝐃𝐞𝐯𝐢𝐜𝐞 ❞ \nhttps://aigroups.krakinzkon.repl.co",
 buttons: [
 {
 buttonId: prefix + "MENU",
