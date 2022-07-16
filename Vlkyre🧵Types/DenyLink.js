@@ -37,19 +37,16 @@ let PresentGroupLink = new RegExp(
 );
 let isCurrentGroupLink = PresentGroupLink.test(Figure);
 if (isGroupLink && !isCurrentGroupLink) {
-await Image_Button(
-ӄӄ,
-Vlkyre,
-A𝖗𝖌𝖘,
-"./Vlkyre👗Skins/Vlkyre_Orange.png",
-`╔◇═══════════════◇╗
+await ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(Vlkyre.chatID, {
+text: `╔◇═══════════════◇╗
 ┊ 𝐊𝐫𝐲𝐙𝐞𝐧❌𝐀𝐧𝐭𝐢-𝐋𝐢𝐧𝐤
 ┊    𝐌𝐞𝐜𝐡𝐚𝐧𝐢𝐬𝐦
 ╚◇═══════════════◇╝
 
 🤖𝐕𝐥𝐤𝐲𝐫𝐞: Kicked! 🎊One Less MoFo🎊
-❗𝗥𝗲𝗮𝘀𝗼𝗻: Sent some type of Link in this Group!`
-);
+❗𝗥𝗲𝗮𝘀𝗼𝗻: Sent some type of Link in this Group!`,
+contextInfo: { mentionedJid: [Vlkyre.sender] },
+});
 return await ӄӄ
 .groupParticipantsUpdate(Vlkyre.chatID, [Vlkyre.sender], "remove")
 .catch((e) => Caught(ӄӄ, Vlkyre, e));
@@ -69,21 +66,8 @@ text: `╔◇═══════════════◇╗
 
 🤖𝐕𝐥𝐤𝐲𝐫𝐞: Kicked! 🎊One Less MoFo🎊
 ❗𝗥𝗲𝗮𝘀𝗼𝗻: Sent some type of Link in this Group!`,
-contextInfo: { mentionedJid: [ʀᴇᴘʟɪᴇᴅ] },
+contextInfo: { mentionedJid: [Vlkyre.sender] },
 });
-await Image_Button(
-ӄӄ,
-Vlkyre,
-A𝖗𝖌𝖘,
-"./Vlkyre👗Skins/Vlkyre_Orange.png",
-`╔◇═══════════════◇╗
-┊ 𝐊𝐫𝐲𝐙𝐞𝐧❌𝐀𝐧𝐭𝐢-𝐋𝐢𝐧𝐤
-┊    𝐌𝐞𝐜𝐡𝐚𝐧𝐢𝐬𝐦
-╚◇═══════════════◇╝
-
-🤖𝐕𝐥𝐤𝐲𝐫𝐞: Kicked! 🎊One Less MoFo🎊
-❗𝗥𝗲𝗮𝘀𝗼𝗻: Sent some type of Link in this Group!`
-);
 return await ӄӄ
 .groupParticipantsUpdate(Vlkyre.chatID, [Vlkyre.sender], "remove")
 .catch((e) => Caught(ӄӄ, Vlkyre, e));
