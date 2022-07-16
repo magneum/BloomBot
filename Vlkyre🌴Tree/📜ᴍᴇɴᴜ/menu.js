@@ -135,17 +135,12 @@ cpu.total
 .join(`\n\n`)}`
 : ``
 }`.trim();
-let ʀᴇꜱᴘᴏɴꜱᴇ1 = await ӄ𝖗𝖞ӄ𝖓𝖟.groupInviteCode("120363020792949649@g.us");
-let ʀᴇꜱᴘᴏɴꜱᴇ2 = await ӄ𝖗𝖞ӄ𝖓𝖟.groupInviteCode("120363020792949649@g.us");
-let ʀᴇꜱᴘᴏɴꜱᴇ3 = await ӄ𝖗𝖞ӄ𝖓𝖟.groupInviteCode("120363020792949649@g.us");
-let ʀᴇꜱᴘᴏɴꜱᴇ4 = await ӄ𝖗𝖞ӄ𝖓𝖟.groupInviteCode("120363020792949649@g.us");
-let ʀᴇꜱᴘᴏɴꜱᴇ5 = await ӄ𝖗𝖞ӄ𝖓𝖟.groupInviteCode("120363020792949649@g.us");
 await ӄ𝖗𝖞ӄ𝖓𝖟
 .sendMessage(
 Vlkyre.chatID,
 {
 contextInfo: { mentionedJid: [Vlkyre.sender] },
-image: { url: "./Vlkyre👗Skins/Vlkyre_LabGreen.png" },
+image: { url: "./Vlkyre👗Skins/Vlkyre.png" },
 caption: `❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 𝐌𝐮𝐥𝐭𝐢 𝐃𝐞𝐯𝐢𝐜𝐞 ❞
 Is a whatsapp userbot with automation,moderation,music,games and 140+ commands!
 
