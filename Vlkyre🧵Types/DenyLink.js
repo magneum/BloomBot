@@ -45,15 +45,7 @@ A𝖗𝖌𝖘,
 ╚◇═══════════════◇╝
 
 🤖𝐕𝐥𝐤𝐲𝐫𝐞: Kicked! 🎊One Less MoFo🎊
-❗𝗥𝗲𝗮𝘀𝗼𝗻: Sent some type of Link in this Group!
-⚠️𝗠𝗲𝘀𝘀𝗮𝗴𝗲: ${Figure}
-
-
-💀𝗧𝗿𝗶𝗴𝗴𝗲𝗿𝗲𝗱:
-🐾 WWW
-🐾 Discord Link
-🐾 Telegram Link
-🐾 Whatspp Invite Link`
+❗𝗥𝗲𝗮𝘀𝗼𝗻: Sent some type of Link in this Group!`
 );
 return await ӄӄ.groupParticipantsUpdate(Vlkyre.chatID, [Vlkyre.sender],"remove").catch((e) => Caught(ӄӄ, Vlkyre, e));
 } else if (
@@ -75,15 +67,7 @@ A𝖗𝖌𝖘,
 ╚◇═══════════════◇╝
 
 🤖𝐕𝐥𝐤𝐲𝐫𝐞: Kicked! 🎊One Less MoFo🎊
-❗𝗥𝗲𝗮𝘀𝗼𝗻: Sent some type of Link in this Group!
-⚠️𝗠𝗲𝘀𝘀𝗮𝗴𝗲: ${Figure}
-
-
-💀𝗧𝗿𝗶𝗴𝗴𝗲𝗿𝗲𝗱:
-🐾 WWW
-🐾 Discord Link
-🐾 Telegram Link
-🐾 Whatspp Invite Link`
+❗𝗥𝗲𝗮𝘀𝗼𝗻: Sent some type of Link in this Group!`
 );
 return await ӄӄ.groupParticipantsUpdate(Vlkyre.chatID, [Vlkyre.sender],"remove").catch((e) => Caught(ӄӄ, Vlkyre, e));
 } else {
