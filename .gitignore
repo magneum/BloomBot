@@ -20,6 +20,7 @@ yarn.lock
 yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
+Win.py
 package-lock.json
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 pids
