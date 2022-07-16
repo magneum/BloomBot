@@ -2249,6 +2249,10 @@ exports.𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙 = async (Vlkyre, ӄ𝖗𝖞
       await ӄ_counter(2);
       break;
     case "doujin":
+        if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+        return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+      if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+        return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
       await doujin(
         ӄ𝖗𝖞ӄ𝖓𝖟,
         Vlkyre,
@@ -2266,6 +2270,10 @@ exports.𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙 = async (Vlkyre, ӄ𝖗𝖞
       await ӄ_counter(2);
       break;
     case "feet":
+        if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+        return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+      if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+        return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
       await feet(
         ӄ𝖗𝖞ӄ𝖓𝖟,
         Vlkyre,
@@ -2283,6 +2291,10 @@ exports.𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙 = async (Vlkyre, ӄ𝖗𝖞
       await ӄ_counter(2);
       break;
     case "femdom":
+        if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+        return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+      if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+        return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
       await femdom(
         ӄ𝖗𝖞ӄ𝖓𝖟,
         Vlkyre,
@@ -2300,6 +2312,10 @@ exports.𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙 = async (Vlkyre, ӄ𝖗𝖞
       await ӄ_counter(2);
       break;
     case "foxgirl":
+        if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+        return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+      if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+        return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
       await foxgirl(
         ӄ𝖗𝖞ӄ𝖓𝖟,
         Vlkyre,
@@ -2317,6 +2333,10 @@ exports.𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙 = async (Vlkyre, ӄ𝖗𝖞
       await ӄ_counter(2);
       break;
     case "glasses":
+        if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+        return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+      if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+        return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
       await glasses(
         ӄ𝖗𝖞ӄ𝖓𝖟,
         Vlkyre,
@@ -2334,6 +2354,10 @@ exports.𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙 = async (Vlkyre, ӄ𝖗𝖞
       await ӄ_counter(2);
       break;
     case "hentai":
+        if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+        return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+      if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+        return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
       await hentai(
         ӄ𝖗𝖞ӄ𝖓𝖟,
         Vlkyre,
@@ -2351,6 +2375,10 @@ exports.𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙 = async (Vlkyre, ӄ𝖗𝖞
       await ӄ_counter(2);
       break;
     case "maid":
+        if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+        return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+      if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+        return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
       await maid(
         ӄ𝖗𝖞ӄ𝖓𝖟,
         Vlkyre,
@@ -2368,6 +2396,10 @@ exports.𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙 = async (Vlkyre, ӄ𝖗𝖞
       await ӄ_counter(2);
       break;
     case "masturbation":
+        if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+        return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+      if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+        return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
       await masturbation(
         ӄ𝖗𝖞ӄ𝖓𝖟,
         Vlkyre,
@@ -2385,6 +2417,10 @@ exports.𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙 = async (Vlkyre, ӄ𝖗𝖞
       await ӄ_counter(2);
       break;
     case "netorare":
+        if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+        return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+      if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+        return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
       await netorare(
         ӄ𝖗𝖞ӄ𝖓𝖟,
         Vlkyre,
@@ -2402,6 +2438,10 @@ exports.𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙 = async (Vlkyre, ӄ𝖗𝖞
       await ӄ_counter(2);
       break;
     case "orgy":
+        if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+        return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+      if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+        return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
       await orgy(
         ӄ𝖗𝖞ӄ𝖓𝖟,
         Vlkyre,
@@ -2426,6 +2466,10 @@ exports.𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙 = async (Vlkyre, ӄ𝖗𝖞
       await ӄ_counter(2);
       break;
     case "panties":
+        if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+        return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+      if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+        return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
       await panties(
         ӄ𝖗𝖞ӄ𝖓𝖟,
         Vlkyre,
@@ -2443,6 +2487,10 @@ exports.𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙 = async (Vlkyre, ӄ𝖗𝖞
       await ӄ_counter(2);
       break;
     case "school":
+        if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+        return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+      if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+        return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
       await school(
         ӄ𝖗𝖞ӄ𝖓𝖟,
         Vlkyre,
@@ -2460,6 +2508,10 @@ exports.𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙 = async (Vlkyre, ӄ𝖗𝖞
       await ӄ_counter(2);
       break;
     case "tentacles":
+        if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+        return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+      if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+        return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
       await tentacles(
         ӄ𝖗𝖞ӄ𝖓𝖟,
         Vlkyre,
@@ -2477,6 +2529,10 @@ exports.𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙 = async (Vlkyre, ӄ𝖗𝖞
       await ӄ_counter(2);
       break;
     case "thighs":
+        if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+        return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+      if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+        return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
       await thighs(
         ӄ𝖗𝖞ӄ𝖓𝖟,
         Vlkyre,
@@ -2494,6 +2550,10 @@ exports.𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙 = async (Vlkyre, ӄ𝖗𝖞
       await ӄ_counter(2);
       break;
     case "uniform":
+        if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+        return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+      if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+        return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
       await uniform(
         ӄ𝖗𝖞ӄ𝖓𝖟,
         Vlkyre,
@@ -2511,6 +2571,10 @@ exports.𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙 = async (Vlkyre, ӄ𝖗𝖞
       await ӄ_counter(2);
       break;
     case "yuri":
+        if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+        return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+      if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+        return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
       await yuri(
         ӄ𝖗𝖞ӄ𝖓𝖟,
         Vlkyre,
