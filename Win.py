@@ -1,2 +1,2 @@
 import os 
-os.system("node Vlkyre🎒Bag/ӄryӄnz.js")
+os.system("node --no-warnings Vlkyre🎒Bag/ӄryӄnz.js")

@@ -13,38 +13,10 @@
 ╚════════════╝
 */
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
-require(`../Vlkyre🖋️Utilities/𝕷𝖆ყO𝖚𝖙`);
-require(`../Vlkyre🖋️Utilities/Ѷ𝖆𝖑.js`);
-async function FsDex() {
-console.clear();
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
 require("events").EventEmitter.prototype._maxListeners = 0;
-const Fs = require("fs");
-const path = require("path");
-const Kolor = require("chalk");
-const assert = require("assert");
-const { spawn } = require("child_process");
-let folders = [".", ...Object.keys(require("../package.json").directories)];
-let files = [];
-for (let folder of folders)
-for (let file of Fs.readdirSync(folder).filter((v) => v.endsWith(`.js`)))
-files.push(path.resolve(path.join(folder, file)));
-for (let file of files) {
-let Fils = [file];
-if (file == path.join(__dirname, __filename)) continue;
-spawn("node", ["-c", file])
-.on("exit", () => {
-Fs.readFile(file, function (err, content) {
-if (err) throw err;
-console.log(Fils);
-if (content.indexOf("ᴀʙ™") > -1 === false) process.exit(0);
-if (content.indexOf("𝐲𝐫𝐞") > -1 === false) process.exit(0);
-});
-})
-.stderr.on("data", (chunk) => assert.fail(chunk.toString()));
-}
-}
-("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
+require(`../Vlkyre🖋️Utilities/𝕷𝖆ყO𝖚𝖙`);
+require(`../Vlkyre🖋️Utilities/Ѷ𝖆𝖑.js`);
 let {
 default: 𝖍𝖆𝖜ӄC,
 generateForwardMessageContent,
@@ -65,6 +37,9 @@ let chalk = require(`chalk`);
 let Draw = require("cfonts");
 let goose = require("mongoose");
 let FileType = require(`file-type`);
+let Fs = require("fs");
+let assert = require("assert");
+let { spawn } = require("child_process");
 let PhoneNumber = require(`awesome-phonenumber`);
 let dbAuth = require("../Vlkyre🌤️Cloud/🍂𝖘𝖖𝖑/Auth");
 let dbCloudAuth = require("../Vlkyre🌤️Cloud/🌩️𝖈𝖑𝖔𝖚𝖉𝖉𝖇/dbcloud");
@@ -653,8 +628,30 @@ generateWA("❌ᴇʀʀᴏʀ: ", "#ff6347", error, "#ed7777");
 });
 return ӄryӄnz;
 }
-FsDex().catch((error) =>generateWA("❌ᴇʀʀᴏʀ: ", "#ff6347", error, "#ed7777"));
-Ѷ𝖎𝖔𝖓ᴇᴏɴᴇ().catch((error) =>generateWA("❌ᴇʀʀᴏʀ: ", "#ff6347", error, "#ed7777"));
+async function FsDex() {
+let folders = [".", ...Object.keys(require("../package.json").directories)];
+let files = [];
+for (let folder of folders)
+for (let file of Fs.readdirSync(folder).filter((v) => v.endsWith(`.js`)))
+files.push(path.resolve(path.join(folder, file)));
+for (let file of files) {
+let Fils = [file];
+if (file == path.join(__dirname, __filename)) continue;
+spawn("node", ["-c", file])
+.on("exit", () => {
+Fs.readFile(file, function (err, content) {
+if (err) throw err;
+if (content.indexOf("ᴀʙ™") > -1 === false) process.exit(0);
+if (content.indexOf("𝐲𝐫𝐞") > -1 === false) process.exit(0);
+});
+})
+.stderr.on("data", (chunk) => assert.fail(chunk.toString()));
+}
+await Ѷ𝖎𝖔𝖓ᴇᴏɴᴇ().catch((error) =>
+generateWA("❌ᴇʀʀᴏʀ: ", "#ff6347", error, "#ed7777")
+);
+}
+FsDex().catch((error) => generateWA("❌ᴇʀʀᴏʀ: ", "#ff6347", error, "#ed7777"));
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 /*
 ╔⧉༻ [ 𝐕𝐥𝐤𝐲𝐫𝐞🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬! 
