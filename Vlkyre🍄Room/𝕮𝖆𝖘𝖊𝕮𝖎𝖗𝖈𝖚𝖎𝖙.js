@@ -195,3120 +195,3148 @@ let { advice } = require("../Vlkyre🌴Tree/⚡ʀᴀɴᴅᴏᴍꜱ/advice");
 let { reddit } = require("../Vlkyre🌴Tree/⚡ʀᴀɴᴅᴏᴍꜱ/reddit");
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 exports.𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙 = async (Vlkyre, ӄ𝖗𝖞ӄ𝖓𝖟, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
-  switch (Vlkyre.commandName) {
-    case "":
-      break;
-    case "pokemon":
-      await pokemon(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "pokedex":
-      await pokedex(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "carbon":
-      await carbon(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "getgif":
-    case "gify":
-    case "gif":
-      await gify(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "s":
-    case "sgif":
-    case "sticker":
-    case "stickergif":
-      await sticker(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "toimg":
-      await toimg(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "pin":
-    case "pinterest":
-      await pinterest(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "tourl":
-      await tourl(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "remove":
-      if (!Vlkyre.isBotAdmin) return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
-      if (!Vlkyre.isSenderAdmin) return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
-      await remove(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "promote":
-      if (!Vlkyre.isBotAdmin) return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
-      if (!Vlkyre.isSenderAdmin) return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
-      await promote(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "admin":
-    case "admins":
-      if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-        return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
-      if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-        return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
-      await admins(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "demote":
-      if (!Vlkyre.isBotAdmin) return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
-      if (!Vlkyre.isSenderAdmin) return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
-      await demote(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "setdesc":
-      if (!Vlkyre.isBotAdmin) return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
-      if (!Vlkyre.isSenderAdmin) return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
-      await setdesc(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "seticon":
-    case "setgpfp":
-    case "setppgrup":
-      if (!Vlkyre.isBotAdmin) return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
-      if (!Vlkyre.isSenderAdmin) return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
-      await setgpfp(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "tagall":
-      if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-        return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
-      if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-        return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
-      await tagall(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "group":
-      if (!Vlkyre.isBotAdmin) return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
-      if (!Vlkyre.isSenderAdmin) return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
-      await group(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "warn":
-      if (!Vlkyre.isBotAdmin) return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
-      if (!Vlkyre.isSenderAdmin) return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
-      await warn(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "invite":
-    case "grouplink":
-      if (!Vlkyre.isBotAdmin) return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
-      if (!Vlkyre.isSenderAdmin) return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
-      await invite(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "del":
-    case "delete":
-      if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-        return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
-      if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-        return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
-      await del(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "antilink":
-    case "stoplink":
-    case "nolink":
-      if (!Vlkyre.isBotAdmin) return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
-      if (!Vlkyre.isSenderAdmin) return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
-      await antilink(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "autorank":
-    case "autorole":
-      if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-        return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
-      if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-        return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
-      await autorank(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "welcome":
-    case "welcomer":
-    case "setwelcome":
-      if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-        return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
-      if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-        return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
-      await setwelcome(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "test":
-      await test(
-        Ѷ𝖎𝖔𝖓,
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "dbrem":
-    case "dataclean":
-    case "purgedata":
-      if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-        return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
-      if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-        return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
-      await dbrem(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "ban":
-      await ban(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "unban":
-      await unban(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "radio":
-    case "randmusic":
-    case "randaudio":
-    case "randomaudio":
-    case "randommusic":
-    case "suggestaudio":
-    case "suggestmusic":
-      await radio(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "yta":
-    case "play":
-    case "song":
-    case "sing":
-    case "ytmp3":
-    case "ytplay":
-    case "ytaudio":
-    case "ytmusic":
-    case "youtubemusic":
-      await yta(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "ytv":
-    case "watch":
-    case "stream":
-    case "ytmp4":
-    case "ytvideo":
-    case "youtubevideo":
-      await ytv(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "yts":
-    case "ytsearch":
-    case "ytscrape":
-    case "youtubescrape":
-    case "youtubesearch":
-      await yts(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "sr":
-    case "reddit":
-    case "subreddit":
-      await reddit(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "rank":
-      await rank(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "tts":
-    case "gtts":
-    case "text2speech":
-      await tts(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "fun":
-    case "joke":
-    case "funny":
-    case "laugh":
-    case "dadjoke":
-      await joke(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "meme":
-      await meme(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "tinyurl":
-      await tinyurl(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "join":
-      await join(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "leave":
-      await leave(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "lyrics":
-      await lyrics(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "gimage":
-    case "image":
-      await image(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "web":
-    case "find":
-    case "search":
-    case "google":
-      await google(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "take":
-    case "steal":
-      await steal(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "iguser":
-      await iguser(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "ship":
-      await ship(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "quote":
-      await quote(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "fact":
-      await fact(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "advice":
-      await advice(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "pat":
-      await pat(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "hug":
-      await hug(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "kiss":
-      await kiss(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "cuddle":
-      await cuddle(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "kick":
-      await kick(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "bite":
-      await bite(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "blush":
-      await blush(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "bored":
-      await bored(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "confused":
-      await confused(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "cry":
-      await cry(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "goodnight":
-      await goodnight(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "happy":
-      await happy(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "poke":
-      await poke(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "sad":
-      await sad(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "slap":
-      await slap(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "smile":
-      await smile(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "wave":
-      await wave(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "wink":
-      await wink(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "dance":
-      await dance(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "baka":
-      await baka(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "bonk":
-      await bonk(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "hi5":
-    case "highfive":
-      await highfive(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "kill":
-      await kill(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "nervous":
-      await nervous(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "punch":
-      await punch(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "scream":
-      await scream(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "stare":
-      await stare(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "yeet":
-      await yeet(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "yes":
-      await yes(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "waifu":
-      await waifu(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "neko":
-      await neko(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "anime":
-      await anime(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "manga":
-      await manga(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "wallpaper":
-      await wallpaper(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "bc":
-    case "bcgroup":
-      await bcgroup(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "reboot":
-    case "restart":
-      await ӄ_counter(2);
-      await reboot(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      break;
-    case "yt8d":
-      await yt8d(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "ytbassboost":
-      await ytbassboost(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "ytecho":
-      await ytecho(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "ytflanger":
-      await ytflanger(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "ytnightcore":
-      await ytnightcore(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "ytphaser":
-      await ytphaser(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "ytreverse":
-      await ytreverse(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "ytslow":
-      await ytslow(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "ytspeed":
-      await ytspeed(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "ytsubboost":
-      await ytsubboost(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "ytsuperslow":
-      await ytsuperspeed(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "ytsuperslow":
-      await ytsuperslow(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "ytsurround":
-      await ytsurround(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "ytvaporwave":
-      await ytvaporwave(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "ytvibrato":
-      await ytvibrato(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "bassboost":
-      await bassboost(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "echo":
-      await echo(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "flanger":
-      await flanger(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "nightcore":
-      await nightcore(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "phaser":
-      await phaser(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "reverse":
-      await reverse(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "slow":
-      await slow(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "speed":
-      await speed(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "subboost":
-      await subboost(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "superspeed":
-      await superspeed(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "surround":
-      await surround(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "vaporwave":
-      await vaporwave(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "vibrato":
-      await vibrato(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "ass":
-      if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-        return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
-      if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-        return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
-      await ass(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "bdsm":
-        if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-        return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
-      if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-        return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
-      await bdsm(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "cum":
-        if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-        return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
-      if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-        return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
-      await cum(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "doujin":
-        if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-        return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
-      if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-        return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
-      await doujin(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "feet":
-        if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-        return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
-      if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-        return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
-      await feet(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "femdom":
-        if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-        return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
-      if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-        return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
-      await femdom(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "foxgirl":
-        if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-        return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
-      if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-        return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
-      await foxgirl(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "glasses":
-        if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-        return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
-      if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-        return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
-      await glasses(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "hentai":
-        if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-        return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
-      if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-        return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
-      await hentai(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "maid":
-        if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-        return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
-      if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-        return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
-      await maid(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "masturbation":
-        if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-        return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
-      if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-        return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
-      await masturbation(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "netorare":
-        if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-        return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
-      if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-        return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
-      await netorare(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "orgy":
-        if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-        return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
-      if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-        return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
-      await orgy(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.A𝖗𝖌𝖘,
-        Vlkyre.pushName,
-        Vlkyre.fromMe,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.groupMetadata,
-        Vlkyre.participants,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.groupAdmins,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body,
-        Vlkyre.mentionByTag,
-        Vlkyre.mentionByReply
-      );
-      await ӄ_counter(2);
-      break;
-    case "panties":
-        if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-        return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
-      if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-        return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
-      await panties(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "school":
-        if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-        return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
-      if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-        return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
-      await school(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "tentacles":
-        if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-        return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
-      if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-        return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
-      await tentacles(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "thighs":
-        if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-        return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
-      if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-        return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
-      await thighs(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "uniform":
-        if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-        return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
-      if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-        return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
-      await uniform(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "yuri":
-        if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-        return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
-      if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-        return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
-      await yuri(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "dly":
-    case "daily":
-      await daily(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "fish":
-    case "pond":
-    case "fishes":
-      await fish(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "bet":
-    case "gamble":
-    case "betting":
-    case "roulette":
-      await gamble(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "hunt":
-    case "hunting":
-    case "pokehunt":
-      await hunt(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "zoo":
-    case "forest":
-    case "animals":
-      await zoo(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "pay":
-    case "loan":
-    case "borrow":
-    case "payment":
-      await pay(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "job":
-    case "work":
-    case "earn":
-      await work(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "bal":
-    case "gold":
-    case "money":
-    case "balance":
-      await balance(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "buy":
-      await buy(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "mall":
-    case "shop":
-    case "store":
-    case "shopping":
-      await store(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "rob":
-    case "thief":
-    case "robbery":
-      await rob(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "bag":
-    case "inv":
-    case "loot":
-    case "inventory":
-      await bag(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "sp":
-    case "dev":
-    case "devs":
-    case "mod":
-    case "mods":
-    case "moderator":
-    case "support":
-    case "official":
-    case "repo":
-    case "githubrepo":
-    case "repository":
-    case "VLKYRE":
-    case "KRAKINZLAB":
-    case "vlkyre":
-    case "krakinzlab":
-    case "BOTSUPPORT":
-      await support(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "rule":
-    case "rules":
-    case "rules":
-    case "BOTRULES":
-      await rules(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      break;
-    case "h":
-    case "how":
-    case "help":
-    case "HELP":
-      await help(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "m":
-    case "menu":
-    case "allmenu":
-    case "command":
-    case "commands":
-      await menu(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "AnimationMenu":
-      await AnimationMenu(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "AnimeMenu":
-      await AnimeMenu(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "AudioFilterMenu":
-      await AudioFilterMenu(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "ConverterMenu":
-      await ConverterMenu(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "DownloaderMenu":
-      await DownloaderMenu(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "GameMenu":
-      await GameMenu(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "GroupMenu":
-      await GroupMenu(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "HentaiMenu":
-      await HentaiMenu(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "NsfwMenu":
-      await NsfwMenu(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "OwnerMenu":
-      await OwnerMenu(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "RandomMenu":
-      await RandomMenu(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "StoreMenu":
-      await StoreMenu(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "WebMenu":
-      await WebMenu(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "YTFilterMenu":
-      await menu(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
+switch (Vlkyre.commandName) {
+case "":
+break;
+case "pokemon":
+await pokemon(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "pokedex":
+await pokedex(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "carbon":
+await carbon(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "getgif":
+case "gify":
+case "gif":
+await gify(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "s":
+case "sgif":
+case "sticker":
+case "stickergif":
+await sticker(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "toimg":
+await toimg(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "pin":
+case "pinterest":
+await pinterest(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "tourl":
+await tourl(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "remove":
+if (!Vlkyre.isBotAdmin) return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+if (!Vlkyre.isSenderAdmin) return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+await remove(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "promote":
+if (!Vlkyre.isBotAdmin) return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+if (!Vlkyre.isSenderAdmin) return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+await promote(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "admin":
+case "admins":
+if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+await admins(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "demote":
+if (!Vlkyre.isBotAdmin) return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+if (!Vlkyre.isSenderAdmin) return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+await demote(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "setdesc":
+if (!Vlkyre.isBotAdmin) return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+if (!Vlkyre.isSenderAdmin) return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+await setdesc(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "seticon":
+case "setgpfp":
+case "setppgrup":
+if (!Vlkyre.isBotAdmin) return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+if (!Vlkyre.isSenderAdmin) return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+await setgpfp(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "tagall":
+if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+await tagall(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "group":
+if (!Vlkyre.isBotAdmin) return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+if (!Vlkyre.isSenderAdmin) return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+await group(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "warn":
+if (!Vlkyre.isBotAdmin) return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+if (!Vlkyre.isSenderAdmin) return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+await warn(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "invite":
+case "grouplink":
+if (!Vlkyre.isBotAdmin) return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+if (!Vlkyre.isSenderAdmin) return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+await invite(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "del":
+case "delete":
+if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+await del(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "antilink":
+case "stoplink":
+case "nolink":
+if (!Vlkyre.isBotAdmin) return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+if (!Vlkyre.isSenderAdmin) return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+await antilink(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "autorank":
+case "autorole":
+if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+await autorank(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "welcome":
+case "welcomer":
+case "setwelcome":
+if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+await setwelcome(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "test":
+await test(
+Ѷ𝖎𝖔𝖓,
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "dbrem":
+case "dataclean":
+case "purgedata":
+if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+await dbrem(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "ban":
+await ban(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "unban":
+await unban(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "radio":
+case "randmusic":
+case "randaudio":
+case "randomaudio":
+case "randommusic":
+case "suggestaudio":
+case "suggestmusic":
+await radio(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "yta":
+case "play":
+case "song":
+case "sing":
+case "ytmp3":
+case "ytplay":
+case "ytaudio":
+case "ytmusic":
+case "youtubemusic":
+await yta(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "ytv":
+case "watch":
+case "stream":
+case "ytmp4":
+case "ytvideo":
+case "youtubevideo":
+await ytv(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "yts":
+case "ytsearch":
+case "ytscrape":
+case "youtubescrape":
+case "youtubesearch":
+await yts(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "sr":
+case "reddit":
+case "subreddit":
+await reddit(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "rank":
+await rank(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "tts":
+case "gtts":
+case "text2speech":
+await tts(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "fun":
+case "joke":
+case "funny":
+case "laugh":
+case "dadjoke":
+await joke(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "meme":
+await meme(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "tinyurl":
+await tinyurl(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "join":
+await join(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "leave":
+await leave(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "lyrics":
+await lyrics(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "gimage":
+case "image":
+await image(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "web":
+case "find":
+case "search":
+case "google":
+await google(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "take":
+case "steal":
+await steal(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "iguser":
+await iguser(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "ship":
+await ship(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "quote":
+await quote(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "fact":
+await fact(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "advice":
+await advice(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "pat":
+await pat(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "hug":
+await hug(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "kiss":
+await kiss(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "cuddle":
+await cuddle(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "kick":
+await kick(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "bite":
+await bite(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "blush":
+await blush(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "bored":
+await bored(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "confused":
+await confused(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "cry":
+await cry(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "goodnight":
+await goodnight(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "happy":
+await happy(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "poke":
+await poke(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "sad":
+await sad(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "slap":
+await slap(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "smile":
+await smile(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "wave":
+await wave(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "wink":
+await wink(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "dance":
+await dance(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "baka":
+await baka(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "bonk":
+await bonk(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "hi5":
+case "highfive":
+await highfive(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "kill":
+await kill(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "nervous":
+await nervous(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "punch":
+await punch(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "scream":
+await scream(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "stare":
+await stare(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "yeet":
+await yeet(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "yes":
+await yes(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "waifu":
+await waifu(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "neko":
+await neko(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "anime":
+await anime(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "manga":
+await manga(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "wallpaper":
+await wallpaper(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "bc":
+case "bcgroup":
+await bcgroup(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "reboot":
+case "restart":
+await ӄ_counter(2);
+await reboot(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+break;
+case "yt8d":
+await yt8d(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "ytbassboost":
+await ytbassboost(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "ytecho":
+await ytecho(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "ytflanger":
+await ytflanger(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "ytnightcore":
+await ytnightcore(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "ytphaser":
+await ytphaser(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "ytreverse":
+await ytreverse(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "ytslow":
+await ytslow(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "ytspeed":
+await ytspeed(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "ytsubboost":
+await ytsubboost(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "ytsuperslow":
+await ytsuperspeed(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "ytsuperslow":
+await ytsuperslow(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "ytsurround":
+await ytsurround(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "ytvaporwave":
+await ytvaporwave(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "ytvibrato":
+await ytvibrato(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "bassboost":
+await bassboost(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "echo":
+await echo(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "flanger":
+await flanger(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "nightcore":
+await nightcore(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "phaser":
+await phaser(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "reverse":
+await reverse(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "slow":
+await slow(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "speed":
+await speed(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "subboost":
+await subboost(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "superspeed":
+await superspeed(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "surround":
+await surround(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "vaporwave":
+await vaporwave(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "vibrato":
+await vibrato(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "ass":
+if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+await ass(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "bdsm":
+if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+await bdsm(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "cum":
+if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+await cum(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "doujin":
+if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+await doujin(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "feet":
+if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+await feet(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "femdom":
+if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+await femdom(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "foxgirl":
+if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+await foxgirl(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "glasses":
+if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+await glasses(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "hentai":
+if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+await hentai(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "maid":
+if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+await maid(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "masturbation":
+if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+await masturbation(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "netorare":
+if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+await netorare(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "orgy":
+if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+await orgy(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.A𝖗𝖌𝖘,
+Vlkyre.pushName,
+Vlkyre.fromMe,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.groupMetadata,
+Vlkyre.participants,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.groupAdmins,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body,
+Vlkyre.mentionByTag,
+Vlkyre.mentionByReply
+);
+await ӄ_counter(2);
+break;
+case "panties":
+if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+await panties(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "school":
+if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+await school(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "tentacles":
+if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+await tentacles(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "thighs":
+if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+await thighs(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "uniform":
+if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+await uniform(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "yuri":
+if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+await yuri(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "dly":
+case "daily":
+await daily(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "fish":
+case "pond":
+case "fishes":
+await fish(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "bet":
+case "gamble":
+case "betting":
+case "roulette":
+await gamble(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "hunt":
+case "hunting":
+case "pokehunt":
+await hunt(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "zoo":
+case "forest":
+case "animals":
+await zoo(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "pay":
+case "loan":
+case "borrow":
+case "payment":
+await pay(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "job":
+case "work":
+case "earn":
+await work(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "bal":
+case "gold":
+case "money":
+case "balance":
+await balance(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "buy":
+await buy(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "mall":
+case "shop":
+case "store":
+case "shopping":
+await store(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "rob":
+case "thief":
+case "robbery":
+await rob(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "bag":
+case "inv":
+case "loot":
+case "inventory":
+await bag(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "sp":
+case "dev":
+case "devs":
+case "mod":
+case "mods":
+case "moderator":
+case "support":
+case "official":
+case "repo":
+case "githubrepo":
+case "repository":
+case "VLKYRE":
+case "KRAKINZLAB":
+case "vlkyre":
+case "krakinzlab":
+case "BOTSUPPORT":
+await support(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "rule":
+case "rules":
+case "rules":
+case "BOTRULES":
+await rules(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+break;
+case "h":
+case "how":
+case "help":
+case "HELP":
+await help(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "m":
+case "menu":
+case "allmenu":
+case "command":
+case "commands":
+await menu(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "AnimationMenu":
+await AnimationMenu(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "AnimeMenu":
+await AnimeMenu(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "AudioFilterMenu":
+await AudioFilterMenu(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "ConverterMenu":
+await ConverterMenu(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "DownloaderMenu":
+await DownloaderMenu(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "GameMenu":
+await GameMenu(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "GroupMenu":
+await GroupMenu(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "HentaiMenu":
+await HentaiMenu(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "NsfwMenu":
+await NsfwMenu(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "OwnerMenu":
+await OwnerMenu(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "RandomMenu":
+await RandomMenu(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "StoreMenu":
+await StoreMenu(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "WebMenu":
+await WebMenu(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "YTFilterMenu":
+await menu(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
 
-    case "p4k":
-      await p4k(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "pblowjob":
-      await pblowjob(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "pmilf":
-      await pmilf(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "pmilk":
-      await pmilk(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "ppussy":
-      await ppussy(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "pslut":
-      await pslut(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    case "tikporn":
-      await tikporn(
-        ӄ𝖗𝖞ӄ𝖓𝖟,
-        Vlkyre,
-        Vlkyre.pushName,
-        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-        Vlkyre.quoted,
-        Vlkyre.isMedia,
-        Vlkyre.isGroup,
-        Vlkyre.isBotAdmin,
-        Vlkyre.isSenderAdmin,
-        Vlkyre.isSenderTUF,
-        Vlkyre.commandName,
-        Vlkyre.Body
-      );
-      await ӄ_counter(2);
-      break;
-    default:
-      await ӄ_counter(2);
-      return await ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(
-        Vlkyre.chatID,
-        {
-          contextInfo: {
-            mentionedJid: [Vlkyre.sender],
-          },
-          image: {
-            url: "./Vlkyre👗Skins/Vlkyre_404.png",
-          },
-          caption: `❣️ *ɴᴀᴍᴇ:* ${Vlkyre.pushName || "No_Name"}
+case "p4k":
+if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+await p4k(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "pblowjob":
+if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+await pblowjob(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "pmilf":
+if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+await pmilf(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "pmilk":
+if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+await pmilk(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "ppussy":
+if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+await ppussy(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "pslut":
+if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+await pslut(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+case "tikporn":
+if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+return await Bot_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+return await Sender_Not_Admin(ӄ𝖗𝖞ӄ𝖓𝖟, Vlkyre);
+await tikporn(
+ӄ𝖗𝖞ӄ𝖓𝖟,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+default:
+await ӄ_counter(2);
+return await ӄ𝖗𝖞ӄ𝖓𝖟.sendMessage(
+Vlkyre.chatID,
+{
+contextInfo: {
+mentionedJid: [Vlkyre.sender],
+},
+image: {
+url: "./Vlkyre👗Skins/Vlkyre_404.png",
+},
+caption: `❣️ *ɴᴀᴍᴇ:* ${Vlkyre.pushName || "No_Name"}
 
 *❌𝕰𝖗𝖗𝖔𝖗:* No Such Command.`,
-          footer: "*⦓ ⒸVlkyre ⦔*\nᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ",
-          buttons: [
-            {
-              buttonId: prefix + "HELP",
-              buttonText: {
-                displayText: prefix + "HELP",
-              },
-              type: 1,
-            },
-            {
-              buttonId: prefix + "VLKYRE",
-              buttonText: {
-                displayText: prefix + "VLKYRE",
-              },
-              type: 1,
-            },
-          ],
-          headerType: 4,
-        },
-        {
-          quoted: Vlkyre,
-        }
-      );
-  }
+footer: "*⦓ ⒸVlkyre ⦔*\nᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ",
+buttons: [
+{
+buttonId: prefix + "HELP",
+buttonText: {
+displayText: prefix + "HELP",
+},
+type: 1,
+},
+{
+buttonId: prefix + "VLKYRE",
+buttonText: {
+displayText: prefix + "VLKYRE",
+},
+type: 1,
+},
+],
+headerType: 4,
+},
+{
+quoted: Vlkyre,
+}
+);
+}
 };
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 // ╔⧉༻ [ Ѷ𝖑𝐤𝐲𝖗𝖊🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
