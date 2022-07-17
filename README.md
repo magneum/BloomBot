@@ -65,7 +65,7 @@ Is a whatsapp userbot with automation,moderation,music,games and 140+ commands!
 #mod
 ```
 
-<h1 align="center">🎊𝐂𝐚𝐭𝐞𝐠𝐨𝐫𝐢𝐞𝐬</h1>
+<h1 align="center">🎊𝐂𝐚𝐭𝐞𝐠𝐨𝐫𝐢𝐞𝐬🎊</h1>
 
 ```sh
 🐝 #AnimationMenu
