@@ -12,7 +12,7 @@
 [![Generic badge](https://img.shields.io/badge/🍾GROUPS-darkgreen.svg)](https://aigroups.krakinzkon.repl.co/)
 
 <div align="center">
-  <a href="https://www.youtube.com/watch?v=phWbTtD45Js"><img src="https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg" alt="IMAGE ALT TEXT"></a>
+  <a href="https://www.youtube.com/watch?v=phWbTtD45Js"><img src="https://img.youtube.com/vi/phWbTtD45Js/0.jpg" alt="IMAGE ALT TEXT"></a>
 </div>
 
 ```sh
