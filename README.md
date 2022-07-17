@@ -9,7 +9,7 @@
   <source src="movie.mp4" type="video/mp4">
   <source src="movie.ogg" type="video/ogg">
 Your browser does not support the video tag.
-</video> 
+</video>
 
 [![Generic badge](https://img.shields.io/badge/🚀HEROKU-purple.svg)](https://VlkyreAI.krakinzkon.repl.co/)
 [![Generic badge](https://img.shields.io/badge/🌐WEBSITE-white.svg)](https://VlkyreAI.krakinzkon.repl.co/)
