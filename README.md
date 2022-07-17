@@ -84,7 +84,7 @@ Is a whatsapp userbot with automation,moderation,music,games and 140+ commands!
 ⭕ #YTFilterMenu
 ```
 
-<h1 align="center">🌱𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒🌱</h1>
+<h1 align="center">🌱𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬🌱</h1>
 
 ```sh
 ╔══『 💰𝐄𝐂𝐎𝐍𝐎𝐌𝐘_𝐆𝐀𝐌𝐄💰 』
