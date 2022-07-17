@@ -54,13 +54,12 @@ Is a whatsapp userbot with automation,moderation,music,games and 140+ commands!
 🎐𝐈𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧🎐
 ✨𝙂𝙋𝘼𝙔: +918436686758
 🍤𝙐𝙋𝙄: krakinzkon@oksbi
-🛰️𝙒𝙚𝙗𝙨𝙞𝙩𝙚:  https://aigroups.krakinzkon.repl.co
+🛰️𝙒𝙚𝙗𝙨𝙞𝙩𝙚: https://aigroups.krakinzkon.repl.co
 
 ===============
 🍗𝐅𝐞𝐞𝐝𝐛𝐚𝐜𝐤/𝐑𝐞𝐩𝐨𝐫𝐭𝐬/𝐅𝐞𝐚𝐭𝐮𝐫𝐞𝐑𝐞𝐪
 #support
 #mod
-```
 
 # 🎊𝐂𝐚𝐭𝐞𝐠𝐨𝐫𝐢𝐞𝐬
 
