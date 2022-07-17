@@ -36,7 +36,7 @@ Is a whatsapp userbot with automation,moderation,music,games and 140+ commands!
 Ῠ          https://wa.me/2349041348008
 ```
 
-<h1 align="center">🤖𝐎𝐮𝐫 𝐀𝐈 𝐆𝐫𝐨𝐮𝐩 𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧</h1>
+<h1 align="center">🤖𝐎𝐮𝐫 𝐀𝐈 𝐆𝐫𝐨𝐮𝐩 𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧🤖</h1>
 
 ```sh
 🐉🕊️ 𝐕𝐋𝐊𝐘𝐑𝐄 𝐎𝐅𝐅𝐈𝐂𝐈𝐀𝐋 🕊️ 🐉
