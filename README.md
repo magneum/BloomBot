@@ -2,7 +2,7 @@
 [![Open Source Love svg3](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)<img align="centre" src="https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg" alt="KryKnz"/><img align="centre" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"/>
 
 <p align="center">
-<img src="https://i.postimg.cc/JzrDp8SN/Vlkyre.png" width="400px" height="400px"/>
+<img src="https://youtu.be/phWbTtD45Js" width="400px" height="400px"/>
 </p>
 
 # 🛰️🕊️[❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 𝐌𝐮𝐥𝐭𝐢 𝐃𝐞𝐯𝐢𝐜𝐞❞](https://VlkyreAI.krakinzkon.repl.co/)🕊️🛰️
