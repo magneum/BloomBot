@@ -375,8 +375,7 @@ Is a whatsapp userbot with automation,moderation,music,games and 140+ commands!
 ╚═══════╝
 ```
 
-<h1 align="center">🌱𝐃𝐢𝐬𝐜𝐥𝐚𝐢𝐦𝐞𝐫🌱</h1>
-# 🍂𝐃𝐈𝐒𝐂𝐋𝐀𝐈𝐌𝐄𝐑
+<h1 align="center">🍂𝐃𝐢𝐬𝐜𝐥𝐚𝐢𝐦𝐞𝐫🍂</h1>
 
 ```
 ╔⧉༻ ❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 𝐌𝐮𝐥𝐭𝐢 𝐃𝐞𝐯𝐢𝐜𝐞 ❞
