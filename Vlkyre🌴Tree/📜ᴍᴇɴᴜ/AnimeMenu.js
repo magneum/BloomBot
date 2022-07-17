@@ -75,7 +75,7 @@ Is a whatsapp userbot with automation,moderation,music,games and 140+ commands!
 Ῠ 𝐠𝐩𝐚𝐲: +918436686758
 Ῠ 𝐮𝐩𝐢: krakinzkon@oksbi
 Ῠ 𝐠𝐢𝐭: https://github.com/kryknz/vlkyre
-Ῠ 𝐠𝐫𝐨𝐮𝐩: https://aigroups.krakinzkon.repl.co
+Ῠ 𝐠𝐫𝐨𝐮𝐩: https://Vlkyre.krakinzkon.repl.co
 
 ╔══『 🐾𝐀𝐍𝐈𝐌𝐄_𝐌𝐀𝐍𝐆𝐀🐾 』
 ║Ῠ ${prefix}anime
