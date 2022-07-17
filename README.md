@@ -11,7 +11,9 @@
 [![Generic badge](https://img.shields.io/badge/🌐WEBSITE-white.svg)](https://VlkyreAI.krakinzkon.repl.co/)
 [![Generic badge](https://img.shields.io/badge/🍾GROUPS-darkgreen.svg)](https://aigroups.krakinzkon.repl.co/)
 
-[![Everything Is AWESOME](http://i.imgur.com/Ot5DWAW.png)](https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1 "Everything Is AWESOME")
+<div align="center">
+  <a href="https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE"><img src="https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg" alt="IMAGE ALT TEXT"></a>
+</div>
 
 ```sh
 ❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 𝐌𝐮𝐥𝐭𝐢 𝐃𝐞𝐯𝐢𝐜𝐞 ❞
