@@ -29,7 +29,7 @@ Vlkyre.chatID,
 {
 contextInfo: { mentionedJid: [Vlkyre.sender, Receiver] },
 image: { url: M𝖊𝖉𝖎𝖆 },
-caption: `🕊️ *ɴᴀᴍᴇ:* ${Vlkyre.pushName || "ɴᴏ_ɴᴀᴍᴇ"}
+caption: `🕊️𝐧𝐚𝐦𝐞: ${Vlkyre.pushName || "ɴᴏ_ɴᴀᴍᴇ"}
 
 ${𝕮𝖔𝖓𝖙𝖊𝖓𝖙}`,
 footer: "❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 𝐌𝐮𝐥𝐭𝐢 𝐃𝐞𝐯𝐢𝐜𝐞 ❞ \nhttps://aigroups.krakinzkon.repl.co",
@@ -66,7 +66,7 @@ Vlkyre.chatID,
 {
 contextInfo: { mentionedJid: [Vlkyre.sender, Receiver] },
 image: { url: M𝖊𝖉𝖎𝖆 },
-caption: `🕊️ *ɴᴀᴍᴇ:* ${Vlkyre.pushName || "ɴᴏ_ɴᴀᴍᴇ"}
+caption: `🕊️𝐧𝐚𝐦𝐞: ${Vlkyre.pushName || "ɴᴏ_ɴᴀᴍᴇ"}
 
 ${𝕮𝖔𝖓𝖙𝖊𝖓𝖙}`,
 footer: "❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 𝐌𝐮𝐥𝐭𝐢 𝐃𝐞𝐯𝐢𝐜𝐞 ❞ \nhttps://aigroups.krakinzkon.repl.co",
@@ -98,7 +98,7 @@ Vlkyre.chatID,
 {
 contextInfo: { mentionedJid: [Vlkyre.sender] },
 image: { url: M𝖊𝖉𝖎𝖆 },
-caption: `🕊️ *ɴᴀᴍᴇ:* ${Vlkyre.pushName || "ɴᴏ_ɴᴀᴍᴇ"}
+caption: `🕊️𝐧𝐚𝐦𝐞: ${Vlkyre.pushName || "ɴᴏ_ɴᴀᴍᴇ"}
 
 ${𝕮𝖔𝖓𝖙𝖊𝖓𝖙}`,
 footer: "❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 𝐌𝐮𝐥𝐭𝐢 𝐃𝐞𝐯𝐢𝐜𝐞 ❞ \nhttps://aigroups.krakinzkon.repl.co",

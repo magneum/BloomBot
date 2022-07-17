@@ -15,12 +15,12 @@
 ❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 𝐌𝐮𝐥𝐭𝐢 𝐃𝐞𝐯𝐢𝐜𝐞 ❞
 Is a whatsapp userbot with automation,moderation,music,games and 140+ commands!
 
-⊱ ᴘʀᴇꜰɪx: #
-⊱ ɴᴀᴍᴇ: ~ɴᴏ_ɴᴀᴍᴇ~
-⊱ ɢᴘᴀʏ: +918436686758
-⊱ ᴜᴘɪ: krakinzkon@oksbi
-⊱ ɢɪᴛʜᴜʙ: https://github.com/kryknz/vlkyre
-⊱ ɢʀᴏᴜᴘꜱ: https://aigroups.krakinzkon.repl.co
+Ῠ 𝐩𝐫𝐞𝐟𝐢𝐱: #
+Ῠ 𝐧𝐚𝐦𝐞:~ɴᴏ_ɴᴀᴍᴇ~
+Ῠ 𝐠𝐩𝐚𝐲: +918436686758
+Ῠ 𝐮𝐩𝐢: krakinzkon@oksbi
+Ῠ 𝐠𝐢𝐭: https://github.com/kryknz/vlkyre
+Ῠ 𝐠𝐫𝐨𝐮𝐩: https://aigroups.krakinzkon.repl.co
 ```
 
 # 👑𝐆𝐫𝐨𝐮𝐩 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐨𝐫𝐬👑

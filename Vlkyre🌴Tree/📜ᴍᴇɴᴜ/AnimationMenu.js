@@ -70,12 +70,12 @@ Vlkyre.A𝖗𝖌𝖘,
 `❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 𝐌𝐮𝐥𝐭𝐢 𝐃𝐞𝐯𝐢𝐜𝐞 ❞
 Is a whatsapp userbot with automation,moderation,music,games and 140+ commands!
 
-⊱ ᴘʀᴇꜰɪx: ${prefix}
-⊱ ɴᴀᴍᴇ:${Vlkyre.pushName || "~ɴᴏ_ɴᴀᴍᴇ~"}
-⊱ ɢᴘᴀʏ: +918436686758
-⊱ ᴜᴘɪ: krakinzkon@oksbi
-⊱ ɢɪᴛʜᴜʙ: https://github.com/kryknz/vlkyre
-⊱ ɢʀᴏᴜᴘꜱ: https://aigroups.krakinzkon.repl.co
+Ῠ 𝐩𝐫𝐞𝐟𝐢𝐱: ${prefix}
+Ῠ 𝐧𝐚𝐦𝐞:${Vlkyre.pushName || "~ɴᴏ_ɴᴀᴍᴇ~"}
+Ῠ 𝐠𝐩𝐚𝐲: +918436686758
+Ῠ 𝐮𝐩𝐢: krakinzkon@oksbi
+Ῠ 𝐠𝐢𝐭: https://github.com/kryknz/vlkyre
+Ῠ 𝐠𝐫𝐨𝐮𝐩: https://aigroups.krakinzkon.repl.co
 
 ╔══『 🐝𝐀𝐍𝐈𝐌𝐀𝐓𝐈𝐎𝐍🐝 』
 ║Ῠ ${prefix}baka
