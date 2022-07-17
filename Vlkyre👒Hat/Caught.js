@@ -24,7 +24,7 @@ caption: `🕊️𝐧𝐚𝐦𝐞: ${Vlkyre.pushName || "ɴᴏ_ɴᴀᴍᴇ"}
 
 ❗ Vlkyre 𝐀𝐏𝐈 𝐄𝐫𝐫𝐨𝐫 ❗
 Please Try Again Later!`,
-footer: "❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 𝐌𝐮𝐥𝐭𝐢 𝐃𝐞𝐯𝐢𝐜𝐞 ❞ \nhttps://aigroups.krakinzkon.repl.co",
+footer: "❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ❞\n⭕Https://youtu.be/phWbTtD45Js",
 buttons: [
 {
 buttonId: prefix + "HELP",

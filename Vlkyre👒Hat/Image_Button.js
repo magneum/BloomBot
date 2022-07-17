@@ -32,7 +32,7 @@ image: { url: M𝖊𝖉𝖎𝖆 },
 caption: `🕊️𝐧𝐚𝐦𝐞: ${Vlkyre.pushName || "ɴᴏ_ɴᴀᴍᴇ"}
 
 ${𝕮𝖔𝖓𝖙𝖊𝖓𝖙}`,
-footer: "❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 𝐌𝐮𝐥𝐭𝐢 𝐃𝐞𝐯𝐢𝐜𝐞 ❞ \nhttps://aigroups.krakinzkon.repl.co",
+footer: "❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ❞\n⭕Https://youtu.be/phWbTtD45Js",
 buttons: [
 {
 buttonId: prefix + "HELP",
@@ -69,7 +69,7 @@ image: { url: M𝖊𝖉𝖎𝖆 },
 caption: `🕊️𝐧𝐚𝐦𝐞: ${Vlkyre.pushName || "ɴᴏ_ɴᴀᴍᴇ"}
 
 ${𝕮𝖔𝖓𝖙𝖊𝖓𝖙}`,
-footer: "❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 𝐌𝐮𝐥𝐭𝐢 𝐃𝐞𝐯𝐢𝐜𝐞 ❞ \nhttps://aigroups.krakinzkon.repl.co",
+footer: "❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ❞\n⭕Https://youtu.be/phWbTtD45Js",
 buttons: [
 {
 buttonId: prefix + "HELP",
@@ -101,7 +101,7 @@ image: { url: M𝖊𝖉𝖎𝖆 },
 caption: `🕊️𝐧𝐚𝐦𝐞: ${Vlkyre.pushName || "ɴᴏ_ɴᴀᴍᴇ"}
 
 ${𝕮𝖔𝖓𝖙𝖊𝖓𝖙}`,
-footer: "❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 𝐌𝐮𝐥𝐭𝐢 𝐃𝐞𝐯𝐢𝐜𝐞 ❞ \nhttps://aigroups.krakinzkon.repl.co",
+footer: "❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ❞\n⭕Https://youtu.be/phWbTtD45Js",
 buttons: [
 {
 buttonId: prefix + "HELP",
