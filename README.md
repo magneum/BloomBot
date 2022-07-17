@@ -391,5 +391,3 @@ Is a whatsapp userbot with automation,moderation,music,games and 140+ commands!
 ║ In short, Fork At Your Own Risk.
 ╚════════════╝
 ```
-
-</p>
