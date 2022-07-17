@@ -375,7 +375,7 @@ Is a whatsapp userbot with automation,moderation,music,games and 140+ commands!
 ╚═══════╝
 ```
 
-<h1 align="center">🌱𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬🌱</h1>
+<h1 align="center">🌱𝐃𝐢𝐬𝐜𝐥𝐚𝐢𝐦𝐞𝐫🌱</h1>
 # 🍂𝐃𝐈𝐒𝐂𝐋𝐀𝐈𝐌𝐄𝐑
 
 ```
