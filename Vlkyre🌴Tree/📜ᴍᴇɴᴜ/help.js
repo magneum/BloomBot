@@ -151,7 +151,7 @@ Is a whatsapp userbot with automation,moderation,music,games and 140+ commands!
 Ῠ 𝐠𝐩𝐚𝐲: +918436686758
 Ῠ 𝐮𝐩𝐢: krakinzkon@oksbi
 Ῠ 𝐠𝐢𝐭: https://github.com/kryknz/vlkyre
-Ῠ 𝐠𝐫𝐨𝐮𝐩: https://aigroups.krakinzkon.repl.co
+Ῠ 𝐠𝐫𝐨𝐮𝐩: https://Vlkyre.krakinzkon.repl.co
 
 
 『 𝐂𝐚𝐭𝐞𝐠𝐨𝐫𝐢𝐞𝐬 』
@@ -169,7 +169,7 @@ Is a whatsapp userbot with automation,moderation,music,games and 140+ commands!
 🛍️${prefix}StoreMenu
 🌐${prefix}WebMenu
 ⭕${prefix}YTFilterMenu`,
-footer: "❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 𝐌𝐮𝐥𝐭𝐢 𝐃𝐞𝐯𝐢𝐜𝐞 ❞ \nhttps://aigroups.krakinzkon.repl.co",
+footer: "❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 𝐌𝐮𝐥𝐭𝐢 𝐃𝐞𝐯𝐢𝐜𝐞 ❞ \nhttps://Vlkyre.krakinzkon.repl.co",
 buttons: [
 {
 buttonId: prefix + "MENU",
