@@ -35,6 +35,25 @@ Is a whatsapp userbot with automation,moderation,music,games and 140+ commands!
 Ῠ          https://wa.me/2349041348008
 ```
 
+<h1 align="center">🎊𝐂𝐚𝐭𝐞𝐠𝐨𝐫𝐢𝐞𝐬🎊</h1>
+
+```sh
+🐝 #AnimationMenu
+🐾 #AnimeMenu
+👓 #AudioFilterMenu
+🏝️ #ConverterMenu
+📥 #DownloaderMenu
+💰 #GameMenu
+🔰 #GroupMenu
+🍌 #HentaiMenu
+🍑 #NsfwMenu
+👑 #OwnerMenu
+🏳️‍🌈 #RandomMenu
+🛍️ #StoreMenu
+🌐 #WebMenu
+⭕ #YTFilterMenu
+```
+
 <h1 align="center">🤖𝐎𝐮𝐫 𝐀𝐈 𝐆𝐫𝐨𝐮𝐩 𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧🤖</h1>
 
 ```sh
@@ -62,25 +81,6 @@ Is a whatsapp userbot with automation,moderation,music,games and 140+ commands!
 🍗𝐅𝐞𝐞𝐝𝐛𝐚𝐜𝐤/𝐑𝐞𝐩𝐨𝐫𝐭𝐬/𝐅𝐞𝐚𝐭𝐮𝐫𝐞𝐑𝐞𝐪
 #support
 #mod
-```
-
-<h1 align="center">🎊𝐂𝐚𝐭𝐞𝐠𝐨𝐫𝐢𝐞𝐬🎊</h1>
-
-```sh
-🐝 #AnimationMenu
-🐾 #AnimeMenu
-👓 #AudioFilterMenu
-🏝️ #ConverterMenu
-📥 #DownloaderMenu
-💰 #GameMenu
-🔰 #GroupMenu
-🍌 #HentaiMenu
-🍑 #NsfwMenu
-👑 #OwnerMenu
-🏳️‍🌈 #RandomMenu
-🛍️ #StoreMenu
-🌐 #WebMenu
-⭕ #YTFilterMenu
 ```
 
 <h1 align="center">🌱𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬🌱</h1>
