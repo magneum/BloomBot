@@ -99,7 +99,7 @@ function _0x58cd() {
     ".bin",
     "env",
     "messages.upsert",
-    "../Vlkyre🌤️Cloud/🍂𝖘𝖖𝖑/Auth",
+    "../🌤️Cloud/🍂𝖘𝖖𝖑/Auth",
     "#ed7777",
     "\x0aFN:",
     "imageMessage",
@@ -246,7 +246,7 @@ let {
   { spawn } = require("child_process"),
   PhoneNumber = require(_0x492b82(0x15f)),
   dbAuth = require(_0x492b82(0x17f)),
-  dbCloudAuth = require("../Vlkyre🌤️Cloud/🌩️𝖈𝖑𝖔𝖚𝖉𝖉𝖇/dbcloud"),
+  dbCloudAuth = require("../🌤️Cloud/🌩️𝖈𝖑𝖔𝖚𝖉𝖉𝖇/dbcloud"),
   { smsg, getBuffer, getSizeMedia } = require(_0x492b82(0x1b4)),
   { imageToWebp, videoToWebp, writeExifImg, writeExifVid } = require(_0x492b82(
     0x157
