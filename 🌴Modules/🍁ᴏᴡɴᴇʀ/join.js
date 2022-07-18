@@ -13,15 +13,15 @@
 ╚════════════╝
 */
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
-require("../../Vlkyre🖋️Utilities/𝕷𝖆ყO𝖚𝖙");
+require("../../🤖Utilities/𝕷𝖆ყO𝖚𝖙");
 let {
-isUrl,
-fetchJson,
-getBuffer,
-jsonformat,
-GIFBufferToVideoBuffer,
-getRandom,
-} = require(`../../Vlkyre🖋️Utilities/ɴᴇᴄᴛᴏʀ`);
+  isUrl,
+  fetchJson,
+  getBuffer,
+  jsonformat,
+  GIFBufferToVideoBuffer,
+  getRandom,
+} = require(`../../🤖Utilities/ɴᴇᴄᴛᴏʀ`);
 let fs = require(`fs`);
 let util = require(`util`);
 let hxz = require(`hxz-api`);
@@ -46,34 +46,37 @@ let Final_Name = Script_Name.slice(0, -3).toLowerCase();
 let { Caught } = require("../../👒Buttons/Caught");
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 exports.join = async (
-ӄryӄnz,
-Vlkyre,
-pushName,
-F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-quoted,
-isMedia,
-isGroup,
-isBotAdmin,
-isSenderAdmin,
-isSenderTUF,
-commandName,
-body,
+  ӄryӄnz,
+  Vlkyre,
+  pushName,
+  F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+  quoted,
+  isMedia,
+  isGroup,
+  isBotAdmin,
+  isSenderAdmin,
+  isSenderTUF,
+  commandName,
+  body
 ) => {
-if (!Vlkyre.fromMe && !isSenderTUF) {
-return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ӄryӄnz,
-Vlkyre,
-`*❌ERROR:* Owner & Mod only command!
+  if (!Vlkyre.fromMe && !isSenderTUF) {
+    return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
+      ӄryӄnz,
+      Vlkyre,
+      `*❌ERROR:* Owner & Mod only command!
 *⚡USAGE:* ${prefix}${Final_Name} <Link>`
-);
-}
-("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
-if (!F𝖚𝖑𝖑_A𝖗𝖌𝖘) return Vlkyre.reply(`🔍 Please provide the group link`);
-if (!isUrl(F𝖚𝖑𝖑_A𝖗𝖌𝖘) && !F𝖚𝖑𝖑_A𝖗𝖌𝖘.includes(`whatsapp.com`))
-return Vlkyre.reply(`🔍 Please provide the group link`);
-Vlkyre.reply(`wait your request is under process`);
-let result = Vlkyre.A𝖗𝖌𝖘[0].split(`https://chatID.whatsapp.com/`)[1];
-await ӄryӄnz.groupAcceptInvite(result).then((res) => Vlkyre.reply(jsonformat(res))).catch((err) => Vlkyre.reply(`Invalid 📘 *URL: ${F𝖚𝖑𝖑_A𝖗𝖌𝖘}*`));
+    );
+  }
+  ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
+  if (!F𝖚𝖑𝖑_A𝖗𝖌𝖘) return Vlkyre.reply(`🔍 Please provide the group link`);
+  if (!isUrl(F𝖚𝖑𝖑_A𝖗𝖌𝖘) && !F𝖚𝖑𝖑_A𝖗𝖌𝖘.includes(`whatsapp.com`))
+    return Vlkyre.reply(`🔍 Please provide the group link`);
+  Vlkyre.reply(`wait your request is under process`);
+  let result = Vlkyre.A𝖗𝖌𝖘[0].split(`https://chatID.whatsapp.com/`)[1];
+  await ӄryӄnz
+    .groupAcceptInvite(result)
+    .then((res) => Vlkyre.reply(jsonformat(res)))
+    .catch((err) => Vlkyre.reply(`Invalid 📘 *URL: ${F𝖚𝖑𝖑_A𝖗𝖌𝖘}*`));
 };
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 /*
