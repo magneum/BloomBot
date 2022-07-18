@@ -225,6 +225,7 @@ await ꜱᴇʀᴄ
 .save()
 .catch((error) => Caught(ӄryӄnz, Vlkyre, error));
 await ӄօʟօʀs(ӄryӄnz, Vlkyre);
+return await 𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙(Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓);
 let FArray = [
 "h",
 "how",
