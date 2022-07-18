@@ -13,15 +13,15 @@
 ╚════════════╝
 */
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
-require("../../Vlkyre🖋️Utilities/𝕷𝖆ყO𝖚𝖙");
+require("../../🤖Utilities/𝕷𝖆ყO𝖚𝖙");
 let {
-isUrl,
-fetchJson,
-getBuffer,
-jsonformat,
-GIFBufferToVideoBuffer,
-getRandom,
-} = require(`../../Vlkyre🖋️Utilities/ɴᴇᴄᴛᴏʀ`);
+  isUrl,
+  fetchJson,
+  getBuffer,
+  jsonformat,
+  GIFBufferToVideoBuffer,
+  getRandom,
+} = require(`../../🤖Utilities/ɴᴇᴄᴛᴏʀ`);
 let fs = require(`fs`);
 let util = require(`util`);
 let hxz = require(`hxz-api`);
@@ -48,101 +48,101 @@ let Final_Name = Script_Name.slice(0, -3).toLowerCase();
 let { Caught } = require("../../👒Buttons/Caught");
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 exports.dbrem = async (
-ӄryӄnz,
-Vlkyre,
-pushName,
-F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-quoted,
-isMedia,
-isGroup,
-isBotAdmin,
-isSenderAdmin,
-isSenderTUF,
-commandName,
-body
+  ӄryӄnz,
+  Vlkyre,
+  pushName,
+  F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+  quoted,
+  isMedia,
+  isGroup,
+  isBotAdmin,
+  isSenderAdmin,
+  isSenderTUF,
+  commandName,
+  body
 ) => {
-if (Vlkyre.mentionByReply) {
-let ʀᴇᴘʟɪᴇᴅ =
-Vlkyre.mtype == "extendedTextMessage" &&
-Vlkyre.message.extendedTextMessage.contextInfo != null
-? Vlkyre.message.extendedTextMessage.contextInfo.participant || ""
-: "";
-if (Vlkyre.isCreator === ʀᴇᴘʟɪᴇᴅ) {
-return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ӄryӄnz,
-Vlkyre,
-"*❌ERROR:*  You dumb! This Command Does't work on Owner and Mods!"
-);
-}
-if (Vlkyre.isSenderTUF === ʀᴇᴘʟɪᴇᴅ) {
-return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ӄryӄnz,
-Vlkyre,
-"*❌ERROR:*  You dumb! This Command Does't work on Owner and Mods!"
-);
-}
-await Economy.findOne(
-{
-ID: ʀᴇᴘʟɪᴇᴅ,
-},
-async (Èrrðr, userEco) => {
-if (Èrrðr) return Caught(ӄryӄnz, Vlkyre, util.format(Èrrðr));
-if (!userEco) {
-let newUser = new Economy({
-ID: ʀᴇᴘʟɪᴇᴅ,
-money: 0,
-daily: 0,
-timeout: 86400000,
-fishdone: 0,
-fishtimeout: 1800000,
-workdone: 0,
-worktimeout: 900000,
-});
-await newUser.save().catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
-return await Image_Button(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.A𝖗𝖌𝖘,
-"./👗Skins/Vlkyre_DB.png",
-`That User Has No Money!`
-);
-("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-} else {
-userEco.delete().catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
-await ӄryӄnz.sendMessage(Vlkyre.chatID, {
-text: "Pregress: 10%",
-contextInfo: { mentionedJid: [ʀᴇᴘʟɪᴇᴅ] },
-});
-await ӄryӄnz.sendMessage(Vlkyre.chatID, {
-text: "Pregress: 40%",
-contextInfo: { mentionedJid: [ʀᴇᴘʟɪᴇᴅ] },
-});
-await ӄryӄnz.sendMessage(Vlkyre.chatID, {
-text: "Pregress: 80%",
-contextInfo: { mentionedJid: [ʀᴇᴘʟɪᴇᴅ] },
-});
-await ӄryӄnz.sendMessage(Vlkyre.chatID, {
-text: "Pregress: 100%",
-contextInfo: { mentionedJid: [ʀᴇᴘʟɪᴇᴅ] },
-});
-await ӄryӄnz.sendMessage(Vlkyre.chatID, {
-text: `Database Of @${
-ʀᴇᴘʟɪᴇᴅ.split("@")[0]
-} has been successfully cleaned!`,
-contextInfo: { mentionedJid: [ʀᴇᴘʟɪᴇᴅ] },
-});
-}
-}
-);
-("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
-} else {
-return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ӄryӄnz,
-Vlkyre,
-`*❌ERROR:*  Argument Needed!
+  if (Vlkyre.mentionByReply) {
+    let ʀᴇᴘʟɪᴇᴅ =
+      Vlkyre.mtype == "extendedTextMessage" &&
+      Vlkyre.message.extendedTextMessage.contextInfo != null
+        ? Vlkyre.message.extendedTextMessage.contextInfo.participant || ""
+        : "";
+    if (Vlkyre.isCreator === ʀᴇᴘʟɪᴇᴅ) {
+      return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
+        ӄryӄnz,
+        Vlkyre,
+        "*❌ERROR:*  You dumb! This Command Does't work on Owner and Mods!"
+      );
+    }
+    if (Vlkyre.isSenderTUF === ʀᴇᴘʟɪᴇᴅ) {
+      return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
+        ӄryӄnz,
+        Vlkyre,
+        "*❌ERROR:*  You dumb! This Command Does't work on Owner and Mods!"
+      );
+    }
+    await Economy.findOne(
+      {
+        ID: ʀᴇᴘʟɪᴇᴅ,
+      },
+      async (Èrrðr, userEco) => {
+        if (Èrrðr) return Caught(ӄryӄnz, Vlkyre, util.format(Èrrðr));
+        if (!userEco) {
+          let newUser = new Economy({
+            ID: ʀᴇᴘʟɪᴇᴅ,
+            money: 0,
+            daily: 0,
+            timeout: 86400000,
+            fishdone: 0,
+            fishtimeout: 1800000,
+            workdone: 0,
+            worktimeout: 900000,
+          });
+          await newUser.save().catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
+          return await Image_Button(
+            ӄryӄnz,
+            Vlkyre,
+            Vlkyre.A𝖗𝖌𝖘,
+            "./👗Skins/Vlkyre_DB.png",
+            `That User Has No Money!`
+          );
+          ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
+        } else {
+          userEco.delete().catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
+          await ӄryӄnz.sendMessage(Vlkyre.chatID, {
+            text: "Pregress: 10%",
+            contextInfo: { mentionedJid: [ʀᴇᴘʟɪᴇᴅ] },
+          });
+          await ӄryӄnz.sendMessage(Vlkyre.chatID, {
+            text: "Pregress: 40%",
+            contextInfo: { mentionedJid: [ʀᴇᴘʟɪᴇᴅ] },
+          });
+          await ӄryӄnz.sendMessage(Vlkyre.chatID, {
+            text: "Pregress: 80%",
+            contextInfo: { mentionedJid: [ʀᴇᴘʟɪᴇᴅ] },
+          });
+          await ӄryӄnz.sendMessage(Vlkyre.chatID, {
+            text: "Pregress: 100%",
+            contextInfo: { mentionedJid: [ʀᴇᴘʟɪᴇᴅ] },
+          });
+          await ӄryӄnz.sendMessage(Vlkyre.chatID, {
+            text: `Database Of @${
+              ʀᴇᴘʟɪᴇᴅ.split("@")[0]
+            } has been successfully cleaned!`,
+            contextInfo: { mentionedJid: [ʀᴇᴘʟɪᴇᴅ] },
+          });
+        }
+      }
+    );
+    ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
+  } else {
+    return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
+      ӄryӄnz,
+      Vlkyre,
+      `*❌ERROR:*  Argument Needed!
 *⚡USAGE:* ${prefix}${Final_Name} <reply to person>`
-);
-}
+    );
+  }
 };
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 /*
