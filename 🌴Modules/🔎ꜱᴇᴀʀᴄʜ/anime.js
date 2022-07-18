@@ -13,15 +13,15 @@
 ╚════════════╝
 */
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
-require("../../Vlkyre🖋️Utilities/𝕷𝖆ყO𝖚𝖙");
+require("../../🤖Utilities/𝕷𝖆ყO𝖚𝖙");
 let {
-isUrl,
-fetchJson,
-getBuffer,
-jsonformat,
-GIFBufferToVideoBuffer,
-getRandom,
-} = require(`../../Vlkyre🖋️Utilities/ɴᴇᴄᴛᴏʀ`);
+  isUrl,
+  fetchJson,
+  getBuffer,
+  jsonformat,
+  GIFBufferToVideoBuffer,
+  getRandom,
+} = require(`../../🤖Utilities/ɴᴇᴄᴛᴏʀ`);
 let fs = require(`fs`);
 let util = require(`util`);
 let hxz = require(`hxz-api`);
@@ -41,74 +41,74 @@ let { Video_Button } = require("../../👒Buttons/Video_Button");
 let { Bot_Not_Admin } = require("../../Vlkyre🧭Compass/Bot_Not_Admin");
 let { Sender_Not_Admin } = require("../../Vlkyre🧭Compass/Sender_Not_Admin");
 let YouTube_Regex =
-/(?:http(?:s|):\/\/|)(?:(?:www\.|)youtube(?:\-nocookie|)\.com\/(?:watch\?.*(?:|\&)v=|embed\/|v\/)|youtu\.be\/)([-_0-9A-Za-z]{11})/;
+  /(?:http(?:s|):\/\/|)(?:(?:www\.|)youtube(?:\-nocookie|)\.com\/(?:watch\?.*(?:|\&)v=|embed\/|v\/)|youtu\.be\/)([-_0-9A-Za-z]{11})/;
 let Present_Path = require(`path`);
 let Script_Name = Present_Path.basename(__filename);
 let Final_Name = Script_Name.slice(0, -3).toLowerCase();
 let { Caught } = require("../../👒Buttons/Caught");
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 exports.anime = async (
-ӄryӄnz,
-Vlkyre,
-pushName,
-F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-quoted,
-isMedia,
-isGroup,
-isBotAdmin,
-isSenderAdmin,
-isSenderTUF,
-commandName,
-body,
+  ӄryӄnz,
+  Vlkyre,
+  pushName,
+  F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+  quoted,
+  isMedia,
+  isGroup,
+  isBotAdmin,
+  isSenderAdmin,
+  isSenderTUF,
+  commandName,
+  body
 ) => {
-if (!F𝖚𝖑𝖑_A𝖗𝖌𝖘) {
-return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ӄryӄnz,
-Vlkyre,
-`*❌ERROR:* No query provided!
+  if (!F𝖚𝖑𝖑_A𝖗𝖌𝖘) {
+    return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
+      ӄryӄnz,
+      Vlkyre,
+      `*❌ERROR:* No query provided!
 *⚡USAGE:* ${prefix}${Final_Name} <anime name>`
-);
-}
-("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
-let { data: jap } = await axios.get(
-`https://api.jikan.moe/v3/search/anime?q=${F𝖚𝖑𝖑_A𝖗𝖌𝖘}`
-);
-if (!jap.results[0].title) {
-return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ӄryӄnz,
-Vlkyre,
-`*❌ERROR:* Couldn't find any results on the term *${F𝖚𝖑𝖑_A𝖗𝖌𝖘}*
+    );
+  }
+  ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
+  let { data: jap } = await axios.get(
+    `https://api.jikan.moe/v3/search/anime?q=${F𝖚𝖑𝖑_A𝖗𝖌𝖘}`
+  );
+  if (!jap.results[0].title) {
+    return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
+      ӄryӄnz,
+      Vlkyre,
+      `*❌ERROR:* Couldn't find any results on the term *${F𝖚𝖑𝖑_A𝖗𝖌𝖘}*
 *⚡USAGE:* ${prefix}${Final_Name} <anime name>`
-);
-}
+    );
+  }
 
-let { data } = (
-await axios.get(`https://api.jikan.moe/v4/anime?q=${jap.results[0].title}`)
-).data;
-return await Image_Button(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.A𝖗𝖌𝖘,
-data[0].images.jpg.image_url,
-`*Result:* ${0 + 1} of ${data.length}
+  let { data } = (
+    await axios.get(`https://api.jikan.moe/v4/anime?q=${jap.results[0].title}`)
+  ).data;
+  return await Image_Button(
+    ӄryӄnz,
+    Vlkyre,
+    Vlkyre.A𝖗𝖌𝖘,
+    data[0].images.jpg.image_url,
+    `*Result:* ${0 + 1} of ${data.length}
 
 *📕Title:* ${data[0].title}/${data[0].title_english}/${data[0].title_japanese}
 *🔖Trailer:* ${data[0].trailer.url}
 ` +
-`*🔍MAL_ID:* ${data[0].mal_id}
+      `*🔍MAL_ID:* ${data[0].mal_id}
 *✴️Type:* ${data[0].type}
 *🎬Episode(s):* ${data[0].episodes}
 *📢Airing:* ${data[0].status}
 *🔔Date:* ${data[0].aired.string}
 ` +
-`*🔱Rating:* ${data[0].rating}
+      `*🔱Rating:* ${data[0].rating}
 *⚜️Duration:* ${data[0].duration}
 *♨️Score:* ${data[0].score}
 *📦Studio(s):* ${data[0].studios.map((val) => `${val.name}`).join(`, `)}
 ` +
-`*🎞️Genre(s):* ${data[0].genres.map((val) => `${val.name}`).join(`, `)}
+      `*🎞️Genre(s):* ${data[0].genres.map((val) => `${val.name}`).join(`, `)}
 *📚Synopsis:* ${data[0].synopsis}`
-);
+  );
 };
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 /*
