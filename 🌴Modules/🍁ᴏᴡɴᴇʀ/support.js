@@ -39,7 +39,6 @@ let Carbon = require(`unofficial-carbon-now`);
 let { exec, execSync } = require(`child_process`);
 let { N𝖊𝖊𝖉__A𝖗𝖌𝖘 } = require("../../👒Buttons/N𝖊𝖊𝖉__A𝖗𝖌𝖘");
 let { Sticker, StickerTypes } = require(`wa-sticker-formatter`);
-let { Group_Only } = require("../../Vlkyre🧭Compass/Group_Only");
 let { formatp, runtime } = require(`../../🤖Utilities/Human`);
 let { Image_Button } = require("../../👒Buttons/Image_Button");
 let { Video_Button } = require("../../👒Buttons/Video_Button");
