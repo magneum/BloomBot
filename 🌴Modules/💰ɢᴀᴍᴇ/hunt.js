@@ -13,15 +13,15 @@
 ╚════════════╝
 */
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
-require("../../Vlkyre🖋️Utilities/𝕷𝖆ყO𝖚𝖙");
+require("../../🤖Utilities/𝕷𝖆ყO𝖚𝖙");
 let {
-isUrl,
-fetchJson,
-getBuffer,
-jsonformat,
-GIFBufferToVideoBuffer,
-getRandom,
-} = require(`../../Vlkyre🖋️Utilities/ɴᴇᴄᴛᴏʀ`);
+  isUrl,
+  fetchJson,
+  getBuffer,
+  jsonformat,
+  GIFBufferToVideoBuffer,
+  getRandom,
+} = require(`../../🤖Utilities/ɴᴇᴄᴛᴏʀ`);
 let fs = require(`fs`);
 let util = require(`util`);
 let hxz = require(`hxz-api`);
@@ -53,191 +53,191 @@ let Final_Name = Script_Name.slice(0, -3).toLowerCase();
 let { Caught } = require("../../👒Buttons/Caught");
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 exports.hunt = async (
-ӄryӄnz,
-Vlkyre,
-pushName,
-F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-quoted,
-isMedia,
-isGroup,
-isBotAdmin,
-isSenderAdmin,
-isSenderTUF,
-commandName,
-body,
+  ӄryӄnz,
+  Vlkyre,
+  pushName,
+  F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+  quoted,
+  isMedia,
+  isGroup,
+  isBotAdmin,
+  isSenderAdmin,
+  isSenderTUF,
+  commandName,
+  body
 ) => {
-let BasePoke = PokeList[Math.floor(Math.random() * PokeList.length)];
-let Worth = Math.ceil(Math.random() * 500);
-Pokemon.findOne(
-{
-ID: Vlkyre.sender,
-},
-async (Èrrðr, userHunt) => {
-if (Èrrðr) return Caught(ӄryӄnz, Vlkyre, Èrrðr);
-if (!userHunt) {
-let newPokeUser = new Pokemon({
-ID: Vlkyre.sender,
-CurrentLimitTime: 0,
-PermanentLimitTime: 21600000,
-});
-await newPokeUser
-.save()
-.catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
-return await Image_Button(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.A𝖗𝖌𝖘,
-"./👗Skins/Vlkyre_DB.png",
-`╔◇══════════◇╗
+  let BasePoke = PokeList[Math.floor(Math.random() * PokeList.length)];
+  let Worth = Math.ceil(Math.random() * 500);
+  Pokemon.findOne(
+    {
+      ID: Vlkyre.sender,
+    },
+    async (Èrrðr, userHunt) => {
+      if (Èrrðr) return Caught(ӄryӄnz, Vlkyre, Èrrðr);
+      if (!userHunt) {
+        let newPokeUser = new Pokemon({
+          ID: Vlkyre.sender,
+          CurrentLimitTime: 0,
+          PermanentLimitTime: 21600000,
+        });
+        await newPokeUser
+          .save()
+          .catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
+        return await Image_Button(
+          ӄryӄnz,
+          Vlkyre,
+          Vlkyre.A𝖗𝖌𝖘,
+          "./👗Skins/Vlkyre_DB.png",
+          `╔◇══════════◇╗
 ┊ 𝐏𝐨𝐤𝐞𝐦𝐨𝐧🦋𝐇𝐮𝐧𝐭𝐢𝐧𝐠
 ┊ 𝐌𝐢𝐧𝐞𝐜𝐫𝐚𝐟𝐭 🪵 𝐄𝐝𝐢𝐭𝐢𝐨𝐧
 ╚◇══════════◇╝
 
 🧈Added To DB for Current command First Time!
 🦋Try ${prefix}${Final_Name} Again!`
-);
-}
-("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-Economy.findOne(
-{
-ID: Vlkyre.sender,
-},
-async (Èrrðr, userEco) => {
-if (Èrrðr) return Caught(ӄryӄnz, Vlkyre, Èrrðr);
-if (!userEco) {
-let newUser = new Economy({
-ID: Vlkyre.sender,
-money: 0,
-daily: 0,
-timeout: 86400000,
-fishdone: 0,
-fishtimeout: 1800000,
-workdone: 0,
-worktimeout: 900000,
-});
-await newUser
-.save()
-.catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
-return await Image_Button(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.A𝖗𝖌𝖘,
-"./👗Skins/Vlkyre_Forest.png",
-`╔◇══════════◇╗
+        );
+      }
+      ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
+      Economy.findOne(
+        {
+          ID: Vlkyre.sender,
+        },
+        async (Èrrðr, userEco) => {
+          if (Èrrðr) return Caught(ӄryӄnz, Vlkyre, Èrrðr);
+          if (!userEco) {
+            let newUser = new Economy({
+              ID: Vlkyre.sender,
+              money: 0,
+              daily: 0,
+              timeout: 86400000,
+              fishdone: 0,
+              fishtimeout: 1800000,
+              workdone: 0,
+              worktimeout: 900000,
+            });
+            await newUser
+              .save()
+              .catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
+            return await Image_Button(
+              ӄryӄnz,
+              Vlkyre,
+              Vlkyre.A𝖗𝖌𝖘,
+              "./👗Skins/Vlkyre_Forest.png",
+              `╔◇══════════◇╗
 ┊ 𝐏𝐨𝐤𝐞𝐦𝐨𝐧🦋𝐇𝐮𝐧𝐭𝐢𝐧𝐠
 ┊ 𝐌𝐢𝐧𝐞𝐜𝐫𝐚𝐟𝐭 🪵 𝐄𝐝𝐢𝐭𝐢𝐨𝐧
 ╚◇══════════◇╝
 
 ❌𝗘𝗿𝗿𝗼𝗿: _You Are Very New! Better Luck Next Time!_`
-);
-}
-("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-let PokemonData;
-try {
-let res = await fetch(
-API(`https://some-random-api.ml`, `/pokedex`, {
-pokemon: BasePoke.toLowerCase(),
-})
-).catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
-PokemonData = await res
-.json()
-.catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
-} catch (Èrrðr) {
-return Caught(ӄryӄnz, Vlkyre, Èrrðr);
-}
-("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-if (
-userHunt.PermanentLimitTime -
-(Date.now() - userHunt.CurrentLimitTime) >
-0
-) {
-let time = ms(
-userHunt.PermanentLimitTime -
-(Date.now() - userHunt.CurrentLimitTime)
-);
-return await Image_Button(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.A𝖗𝖌𝖘,
-"./👗Skins/Vlkyre_Forest.png",
-`╔◇══════════◇╗
+            );
+          }
+          ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
+          let PokemonData;
+          try {
+            let res = await fetch(
+              API(`https://some-random-api.ml`, `/pokedex`, {
+                pokemon: BasePoke.toLowerCase(),
+              })
+            ).catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
+            PokemonData = await res
+              .json()
+              .catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
+          } catch (Èrrðr) {
+            return Caught(ӄryӄnz, Vlkyre, Èrrðr);
+          }
+          ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
+          if (
+            userHunt.PermanentLimitTime -
+              (Date.now() - userHunt.CurrentLimitTime) >
+            0
+          ) {
+            let time = ms(
+              userHunt.PermanentLimitTime -
+                (Date.now() - userHunt.CurrentLimitTime)
+            );
+            return await Image_Button(
+              ӄryӄnz,
+              Vlkyre,
+              Vlkyre.A𝖗𝖌𝖘,
+              "./👗Skins/Vlkyre_Forest.png",
+              `╔◇══════════◇╗
 ┊ 𝐏𝐨𝐤𝐞𝐦𝐨𝐧🦋𝐇𝐮𝐧𝐭𝐢𝐧𝐠
 ┊ 𝐌𝐢𝐧𝐞𝐜𝐫𝐚𝐟𝐭 🪵 𝐄𝐝𝐢𝐭𝐢𝐨𝐧
 ╚◇══════════◇╝
 
 ❌𝗘𝗿𝗿𝗼𝗿: _You've recently went in a forest!_
 🪵𝗡𝗲𝘅𝘁 𝗛𝘂𝗻𝘁𝗶𝗻𝗴: _${time.hours}h ${time.minutes}m ${time.seconds}s_`
-);
-}
-("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-userHunt.CurrentLimitTime = Date.now();
-pokemon.configure({ apiKey: "123abc" });
-await pokemon.card
-.all({ q: `name:${BasePoke.toLowerCase()}` })
-.then(async (card) => {
-if (!card) {
-await Image_Button(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.A𝖗𝖌𝖘,
-"./👗Skins/Vlkyre_Forest.png",
-`╔◇══════════◇╗
+            );
+          }
+          ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
+          userHunt.CurrentLimitTime = Date.now();
+          pokemon.configure({ apiKey: "123abc" });
+          await pokemon.card
+            .all({ q: `name:${BasePoke.toLowerCase()}` })
+            .then(async (card) => {
+              if (!card) {
+                await Image_Button(
+                  ӄryӄnz,
+                  Vlkyre,
+                  Vlkyre.A𝖗𝖌𝖘,
+                  "./👗Skins/Vlkyre_Forest.png",
+                  `╔◇══════════◇╗
 ┊ 𝐏𝐨𝐤𝐞𝐦𝐨𝐧🦋𝐇𝐮𝐧𝐭𝐢𝐧𝐠
 ┊ 𝐌𝐢𝐧𝐞𝐜𝐫𝐚𝐟𝐭 🪵 𝐄𝐝𝐢𝐭𝐢𝐨𝐧
 ╚◇══════════◇╝
 
 💫 *Name:* _Caught Nothing!_
 🪙 *Worth:* _0gold_`
-);
-await userEco
-.save()
-.catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
-await userHunt
-.save()
-.catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
-return;
-}
-("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-userEco.money = userEco.money + Worth;
-await userEco
-.save()
-.catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
-await userHunt
-.save()
-.catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
-("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-require("child_process").exec(
-`ffmpeg -i "${PokemonData.sprites.animated}" -pix_fmt yuv420p -c:v libx264 -movflags +faststart -filter:v crop='floor(in_w/2)*2:floor(in_h/2)*2' "./Vlkyre🎒Bag/${Vlkyre.key.id}.mp4"`,
-async (Èrrðr) => {
-if (Èrrðr) {
-await Image_Button(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.A𝖗𝖌𝖘,
-"./👗Skins/Vlkyre_Forest.png",
-`╔◇══════════◇╗
+                );
+                await userEco
+                  .save()
+                  .catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
+                await userHunt
+                  .save()
+                  .catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
+                return;
+              }
+              ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
+              userEco.money = userEco.money + Worth;
+              await userEco
+                .save()
+                .catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
+              await userHunt
+                .save()
+                .catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
+              ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
+              require("child_process").exec(
+                `ffmpeg -i "${PokemonData.sprites.animated}" -pix_fmt yuv420p -c:v libx264 -movflags +faststart -filter:v crop='floor(in_w/2)*2:floor(in_h/2)*2' "./Vlkyre🎒Bag/${Vlkyre.key.id}.mp4"`,
+                async (Èrrðr) => {
+                  if (Èrrðr) {
+                    await Image_Button(
+                      ӄryӄnz,
+                      Vlkyre,
+                      Vlkyre.A𝖗𝖌𝖘,
+                      "./👗Skins/Vlkyre_Forest.png",
+                      `╔◇══════════◇╗
 ┊ 𝐏𝐨𝐤𝐞𝐦𝐨𝐧🦋𝐇𝐮𝐧𝐭𝐢𝐧𝐠
 ┊ 𝐌𝐢𝐧𝐞𝐜𝐫𝐚𝐟𝐭 🪵 𝐄𝐝𝐢𝐭𝐢𝐨𝐧
 ╚◇══════════◇╝
 
 💫 *Name:* _Caught Nothing!_
 🪙 *Worth:* _0gold_`
-);
-await userEco
-.save()
-.catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
-await userHunt
-.save()
-.catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
-return;
-}
-("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-await Video_Button(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.A𝖗𝖌𝖘,
-`./Vlkyre🎒Bag/${Vlkyre.key.id}.mp4`,
-`╔◇══════════◇╗
+                    );
+                    await userEco
+                      .save()
+                      .catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
+                    await userHunt
+                      .save()
+                      .catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
+                    return;
+                  }
+                  ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
+                  await Video_Button(
+                    ӄryӄnz,
+                    Vlkyre,
+                    Vlkyre.A𝖗𝖌𝖘,
+                    `./Vlkyre🎒Bag/${Vlkyre.key.id}.mp4`,
+                    `╔◇══════════◇╗
 ┊ 𝐏𝐨𝐤𝐞𝐦𝐨𝐧🦋𝐇𝐮𝐧𝐭𝐢𝐧𝐠
 ┊ 𝐌𝐢𝐧𝐞𝐜𝐫𝐚𝐟𝐭 🪵 𝐄𝐝𝐢𝐭𝐢𝐨𝐧
 ╚◇══════════◇╝
@@ -249,17 +249,17 @@ Vlkyre.A𝖗𝖌𝖘,
 𝐓𝐨 𝐋𝐞𝐚𝐫𝐧 𝐌𝐨𝐫𝐞👇🏻
 💫 *Type:* _${prefix}pokedex ${PokemonData.name}_
 💫 *Type:* _${prefix}pokemon ${PokemonData.name}_`
-);
-return await fs.unlinkSync(
-`./Vlkyre🎒Bag/${Vlkyre.key.id}.mp4`
-);
-}
-);
-});
-}
-);
-}
-);
+                  );
+                  return await fs.unlinkSync(
+                    `./Vlkyre🎒Bag/${Vlkyre.key.id}.mp4`
+                  );
+                }
+              );
+            });
+        }
+      );
+    }
+  );
 };
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 /*
