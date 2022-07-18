@@ -39,7 +39,6 @@ let { N𝖊𝖊𝖉__A𝖗𝖌𝖘 } = require("../../👒Buttons/N𝖊𝖊𝖉_
 let { Sticker, StickerTypes } = require(`wa-sticker-formatter`);
 let { Image_Button } = require("../../👒Buttons/Image_Button");
 let { Video_Button } = require("../../👒Buttons/Video_Button");
-let { Sender_Not_Admin } = require("../../Vlkyre🧭Compass/Sender_Not_Admin");
 var color = randomMC.getColor();
 let Present_Path = require(`path`);
 let Script_Name = Present_Path.basename(__filename);
