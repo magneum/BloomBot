@@ -232,6 +232,13 @@ let FArray = [
 "HELP",
 "m",
 "allmenu",
+"command",
+"commands",
+
+"WebMenu"
+"GameMenu"
+
+
 
 "menu",
 "admins",
