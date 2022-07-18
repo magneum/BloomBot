@@ -234,10 +234,16 @@ let FArray = [
 "allmenu",
 "command",
 "commands",
-
 "WebMenu"
 "GameMenu"
-
+"NsfwMenu"
+"AnimeMenu"
+"OwnerMenu"
+"StoreMenu"
+"GroupMenu"
+"RandomMenu"
+"HentaiMenu"
+"YTFilterMenu"
 
 
 "menu",
