@@ -13,15 +13,15 @@
 ╚════════════╝
 */
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
-require("../../Vlkyre🖋️Utilities/𝕷𝖆ყO𝖚𝖙");
+require("../../🤖Utilities/𝕷𝖆ყO𝖚𝖙");
 let {
-isUrl,
-fetchJson,
-getBuffer,
-jsonformat,
-GIFBufferToVideoBuffer,
-getRandom,
-} = require(`../../Vlkyre🖋️Utilities/ɴᴇᴄᴛᴏʀ`);
+  isUrl,
+  fetchJson,
+  getBuffer,
+  jsonformat,
+  GIFBufferToVideoBuffer,
+  getRandom,
+} = require(`../../🤖Utilities/ɴᴇᴄᴛᴏʀ`);
 let os = require(`os`);
 let fs = require(`fs`);
 let util = require(`util`);
@@ -40,113 +40,113 @@ let { exec, execSync } = require(`child_process`);
 let { N𝖊𝖊𝖉__A𝖗𝖌𝖘 } = require("../../👒Buttons/N𝖊𝖊𝖉__A𝖗𝖌𝖘");
 let { Sticker, StickerTypes } = require(`wa-sticker-formatter`);
 let { Group_Only } = require("../../Vlkyre🧭Compass/Group_Only");
-let { formatp, runtime } = require(`../../Vlkyre🖋️Utilities/Human`);
+let { formatp, runtime } = require(`../../🤖Utilities/Human`);
 let { Image_Button } = require("../../👒Buttons/Image_Button");
 let { Video_Button } = require("../../👒Buttons/Video_Button");
 let { Bot_Not_Admin } = require("../../Vlkyre🧭Compass/Bot_Not_Admin");
 let { Sender_Not_Admin } = require("../../Vlkyre🧭Compass/Sender_Not_Admin");
 let YouTube_Regex =
-/(?:http(?:s|):\/\/|)(?:(?:www\.|)youtube(?:\-nocookie|)\.com\/(?:watch\?.*(?:|\&)v=|embed\/|v\/)|youtu\.be\/)([-_0-9A-Za-z]{11})/;
+  /(?:http(?:s|):\/\/|)(?:(?:www\.|)youtube(?:\-nocookie|)\.com\/(?:watch\?.*(?:|\&)v=|embed\/|v\/)|youtu\.be\/)([-_0-9A-Za-z]{11})/;
 let Present_Path = require(`path`);
 let Script_Name = Present_Path.basename(__filename);
 let Final_Name = Script_Name.slice(0, -3).toLowerCase();
 let { Caught } = require("../../👒Buttons/Caught");
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 exports.support = async (
-ӄryӄnz,
-Vlkyre,
-pushName,
-F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-quoted,
-isMedia,
-isGroup,
-isBotAdmin,
-isSenderAdmin,
-isSenderTUF,
-commandName,
-body,
+  ӄryӄnz,
+  Vlkyre,
+  pushName,
+  F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+  quoted,
+  isMedia,
+  isGroup,
+  isBotAdmin,
+  isSenderAdmin,
+  isSenderTUF,
+  commandName,
+  body
 ) => {
-let used = process.memoryUsage();
-let cpus = os.cpus().map((cpu) => {
-cpu.total = Object.keys(cpu.times).reduce(
-(last, type) => last + cpu.times[type],
-0
-);
-return cpu;
-});
-let cpu = cpus.reduce(
-(last, cpu, _, { length }) => {
-last.total += cpu.total;
-last.speed += cpu.speed / length;
-last.times.user += cpu.times.user;
-last.times.nice += cpu.times.nice;
-last.times.sys += cpu.times.sys;
-last.times.idle += cpu.times.idle;
-last.times.irq += cpu.times.irq;
-return last;
-},
-{
-speed: 0,
-total: 0,
-times: {
-user: 0,
-nice: 0,
-sys: 0,
-idle: 0,
-irq: 0,
-},
-}
-);
-let timestamp = speed();
-let latensi = speed() - timestamp;
-let latest = `════════★ 𝐍𝐨𝐝𝐞𝐉𝐒 𝐌𝐞𝐦-𝐔𝐬𝐚𝐠𝐞:
+  let used = process.memoryUsage();
+  let cpus = os.cpus().map((cpu) => {
+    cpu.total = Object.keys(cpu.times).reduce(
+      (last, type) => last + cpu.times[type],
+      0
+    );
+    return cpu;
+  });
+  let cpu = cpus.reduce(
+    (last, cpu, _, { length }) => {
+      last.total += cpu.total;
+      last.speed += cpu.speed / length;
+      last.times.user += cpu.times.user;
+      last.times.nice += cpu.times.nice;
+      last.times.sys += cpu.times.sys;
+      last.times.idle += cpu.times.idle;
+      last.times.irq += cpu.times.irq;
+      return last;
+    },
+    {
+      speed: 0,
+      total: 0,
+      times: {
+        user: 0,
+        nice: 0,
+        sys: 0,
+        idle: 0,
+        irq: 0,
+      },
+    }
+  );
+  let timestamp = speed();
+  let latensi = speed() - timestamp;
+  let latest = `════════★ 𝐍𝐨𝐝𝐞𝐉𝐒 𝐌𝐞𝐦-𝐔𝐬𝐚𝐠𝐞:
 ${Object.keys(used)
-.map(
-(key, _, arr) =>
-`${key.padEnd(Math.max(...arr.map((v) => v.length)), ` `)}: ${formatp(
-used[key]
-)}`
-)
-.join(`\n`)}
+  .map(
+    (key, _, arr) =>
+      `${key.padEnd(Math.max(...arr.map((v) => v.length)), ` `)}: ${formatp(
+        used[key]
+      )}`
+  )
+  .join(`\n`)}
 ════════★ ${
-cpus[0]
-? `𝐓𝐨𝐭𝐚𝐥 𝐂𝐏𝐔 𝐔𝐬𝐚𝐠𝐞
+    cpus[0]
+      ? `𝐓𝐨𝐭𝐚𝐥 𝐂𝐏𝐔 𝐔𝐬𝐚𝐠𝐞
 ${cpus[0].model.trim()} (${cpu.speed} ᴍʜᴢ)${Object.keys(cpu.times)
-.map(
-(type) =>
-`- *${(type + `*`).padEnd(6)}: ${(
-(100 * cpu.times[type]) /
-cpu.total
-).toFixed(2)}%`
-)
-.join(`\n`)}
+          .map(
+            (type) =>
+              `- *${(type + `*`).padEnd(6)}: ${(
+                (100 * cpu.times[type]) /
+                cpu.total
+              ).toFixed(2)}%`
+          )
+          .join(`\n`)}
 ════════★ 𝐂𝐏𝐔 𝐂𝐨𝐫𝐞(𝐬) 𝐔𝐬𝐚𝐠𝐞 (_${cpus.length}_ 𝐂𝐨𝐫𝐞 𝐂𝐏𝐔)
 ${cpus
-.map(
-(cpu, i) =>
-`${i + 1}. ${cpu.model.trim()} (${cpu.speed} ᴍʜᴢ)${Object.keys(cpu.times)
-.map(
-(type) =>
-`- *${(type + `*`).padEnd(6)}: ${(
-(100 * cpu.times[type]) /
-cpu.total
-).toFixed(2)}%`
-)
-.join(`\n`)}`
-)
-.join(`\n\n`)}`
-: ``
-}`.trim();
-let ʀᴇꜱᴘᴏɴꜱᴇ1 = await ӄryӄnz.groupInviteCode("120363020792949649@g.us");
-let ʀᴇꜱᴘᴏɴꜱᴇ2 = await ӄryӄnz.groupInviteCode("120363039223842047@g.us");
-let ʀᴇꜱᴘᴏɴꜱᴇ3 = await ӄryӄnz.groupInviteCode("120363024871653603@g.us");
-let ʀᴇꜱᴘᴏɴꜱᴇ4 = await ӄryӄnz.groupInviteCode("120363042762307739@g.us");
-return await Image_Button(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.A𝖗𝖌𝖘,
-"./👗Skins/KrakinzLab.png",
-`Ῠ  *ɴᴀᴍᴇ:* ${Vlkyre.pushName || "ɴᴏ_ɴᴀᴍᴇ"}
+  .map(
+    (cpu, i) =>
+      `${i + 1}. ${cpu.model.trim()} (${cpu.speed} ᴍʜᴢ)${Object.keys(cpu.times)
+        .map(
+          (type) =>
+            `- *${(type + `*`).padEnd(6)}: ${(
+              (100 * cpu.times[type]) /
+              cpu.total
+            ).toFixed(2)}%`
+        )
+        .join(`\n`)}`
+  )
+  .join(`\n\n`)}`
+      : ``
+  }`.trim();
+  let ʀᴇꜱᴘᴏɴꜱᴇ1 = await ӄryӄnz.groupInviteCode("120363020792949649@g.us");
+  let ʀᴇꜱᴘᴏɴꜱᴇ2 = await ӄryӄnz.groupInviteCode("120363039223842047@g.us");
+  let ʀᴇꜱᴘᴏɴꜱᴇ3 = await ӄryӄnz.groupInviteCode("120363024871653603@g.us");
+  let ʀᴇꜱᴘᴏɴꜱᴇ4 = await ӄryӄnz.groupInviteCode("120363042762307739@g.us");
+  return await Image_Button(
+    ӄryӄnz,
+    Vlkyre,
+    Vlkyre.A𝖗𝖌𝖘,
+    "./👗Skins/KrakinzLab.png",
+    `Ῠ  *ɴᴀᴍᴇ:* ${Vlkyre.pushName || "ɴᴏ_ɴᴀᴍᴇ"}
 
 🕊️𝐕𝐥𝐤𝐲𝐫𝐞: is a whatsapp userbot with automation,moderation,music,games and 140+ commands!
 ╔══『 🕊️𝐕𝐥𝐤𝐲𝐫𝐞🕊️ 』
@@ -204,7 +204,7 @@ Vlkyre.A𝖗𝖌𝖘,
 Ῠ *B:* chat.whatsapp.com/${ʀᴇꜱᴘᴏɴꜱᴇ2}
 Ῠ *C:* chat.whatsapp.com/${ʀᴇꜱᴘᴏɴꜱᴇ3}
 Ῠ *D:* chat.whatsapp.com/${ʀᴇꜱᴘᴏɴꜱᴇ4}`
-);
+  );
 };
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 /*

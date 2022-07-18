@@ -13,15 +13,15 @@
 ╚════════════╝
 */
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
-require("../../Vlkyre🖋️Utilities/𝕷𝖆ყO𝖚𝖙");
+require("../../🤖Utilities/𝕷𝖆ყO𝖚𝖙");
 let {
-isUrl,
-fetchJson,
-getBuffer,
-jsonformat,
-GIFBufferToVideoBuffer,
-getRandom,
-} = require(`../../Vlkyre🖋️Utilities/ɴᴇᴄᴛᴏʀ`);
+  isUrl,
+  fetchJson,
+  getBuffer,
+  jsonformat,
+  GIFBufferToVideoBuffer,
+  getRandom,
+} = require(`../../🤖Utilities/ɴᴇᴄᴛᴏʀ`);
 let fs = require(`fs`);
 let util = require(`util`);
 let hxz = require(`hxz-api`);
@@ -47,32 +47,32 @@ let Final_Name = Script_Name.slice(0, -3).toLowerCase();
 let { Caught } = require("../../👒Buttons/Caught");
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 exports.rules = async (
-ӄryӄnz,
-Vlkyre,
-pushName,
-F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-quoted,
-isMedia,
-isGroup,
-isBotAdmin,
-isSenderAdmin,
-isSenderTUF,
-commandName,
-body,
+  ӄryӄnz,
+  Vlkyre,
+  pushName,
+  F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+  quoted,
+  isMedia,
+  isGroup,
+  isBotAdmin,
+  isSenderAdmin,
+  isSenderTUF,
+  commandName,
+  body
 ) => {
-return await Image_Button(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.A𝖗𝖌𝖘,
-"./👗Skins/KrakinzLab.png",
-`🏮 (𝐜)Vlkyre 𝐑𝐮𝐥𝐞𝐬 🏮
+  return await Image_Button(
+    ӄryӄnz,
+    Vlkyre,
+    Vlkyre.A𝖗𝖌𝖘,
+    "./👗Skins/KrakinzLab.png",
+    `🏮 (𝐜)Vlkyre 𝐑𝐮𝐥𝐞𝐬 🏮
 
 ⚠️ Do not abuse/disrespect bot and its owner.
 ⚠️ If you want this bot in your group then contact devs.
 ⚠️ Do not call bot, if you do then you'll get blocked by bot.
 ⚠️ If you see any bug/error in bot then report it to devs in the above group chats.
 ⚠️ Do not spam bot with commands, if bot is not responding then it means either bot is offline or there's internet issue at server end.`
-);
+  );
 };
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 /*
