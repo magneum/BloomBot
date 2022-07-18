@@ -19,7 +19,7 @@ let ɴᴏᴅᴇꜰᴇᴛᴄʜ = require("node-fetch");
 let ɢᴇᴛᴠɪᴅᴇᴏɪᴅ = require("get-video-id");
 let { yta } = require("../🤖Utilities/y2mate");
 let { getBuffer } = require(`../🤖Utilities/ɴᴇᴄᴛᴏʀ`);
-let { yta_var } = require("../Vlkyre🛎️Bell/letiableServers");
+let { yta_var } = require("../Valkyrie🕊️Adapt/Vlkyre🛎️Bell/letiableServers");
 // let ᴄʀᴏɴ = require("node-cron");
 // ᴄʀᴏɴ.schedule("*/30 * * * * *", async () => {
 // await ᴘᴏᴡ();
