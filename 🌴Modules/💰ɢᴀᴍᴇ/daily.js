@@ -13,15 +13,15 @@
 ╚════════════╝
 */
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
-require("../../Vlkyre🖋️Utilities/𝕷𝖆ყO𝖚𝖙");
+require("../../🤖Utilities/𝕷𝖆ყO𝖚𝖙");
 let {
-isUrl,
-fetchJson,
-getBuffer,
-jsonformat,
-GIFBufferToVideoBuffer,
-getRandom,
-} = require(`../../Vlkyre🖋️Utilities/ɴᴇᴄᴛᴏʀ`);
+  isUrl,
+  fetchJson,
+  getBuffer,
+  jsonformat,
+  GIFBufferToVideoBuffer,
+  getRandom,
+} = require(`../../🤖Utilities/ɴᴇᴄᴛᴏʀ`);
 let fs = require(`fs`);
 let util = require(`util`);
 let hxz = require(`hxz-api`);
@@ -48,45 +48,45 @@ let Final_Name = Script_Name.slice(0, -3).toLowerCase();
 let { Caught } = require("../../👒Buttons/Caught");
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 exports.daily = async (
-ӄryӄnz,
-Vlkyre,
-pushName,
-F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-quoted,
-isMedia,
-isGroup,
-isBotAdmin,
-isSenderAdmin,
-isSenderTUF,
-commandName,
-body,
+  ӄryӄnz,
+  Vlkyre,
+  pushName,
+  F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+  quoted,
+  isMedia,
+  isGroup,
+  isBotAdmin,
+  isSenderAdmin,
+  isSenderTUF,
+  commandName,
+  body
 ) => {
-Economy.findOne(
-{
-ID: Vlkyre.sender,
-},
-async (Èrrðr, userEco) => {
-if (Èrrðr) return Caught(ӄryӄnz, Vlkyre, util.format(Èrrðr));
-if (!userEco) {
-let newUser = new Economy({
-ID: Vlkyre.sender,
-money: 500,
-daily: Date.now(),
-timeout: 86400000,
-fishdone: 0,
-fishtimeout: 1800000,
-workdone: 0,
-worktimeout: 900000,
-});
-await newUser
-.save()
-.catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, util.format(Èrrðr)));
-return await Image_Button(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.A𝖗𝖌𝖘,
-"./👗Skins/Vlkyre_DB.png",
-`╔◇══════════◇╗
+  Economy.findOne(
+    {
+      ID: Vlkyre.sender,
+    },
+    async (Èrrðr, userEco) => {
+      if (Èrrðr) return Caught(ӄryӄnz, Vlkyre, util.format(Èrrðr));
+      if (!userEco) {
+        let newUser = new Economy({
+          ID: Vlkyre.sender,
+          money: 500,
+          daily: Date.now(),
+          timeout: 86400000,
+          fishdone: 0,
+          fishtimeout: 1800000,
+          workdone: 0,
+          worktimeout: 900000,
+        });
+        await newUser
+          .save()
+          .catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, util.format(Èrrðr)));
+        return await Image_Button(
+          ӄryӄnz,
+          Vlkyre,
+          Vlkyre.A𝖗𝖌𝖘,
+          "./👗Skins/Vlkyre_DB.png",
+          `╔◇══════════◇╗
 ┊𝐕𝐥𝐤𝐲𝐫𝐞💵𝐁𝐚𝐧𝐤
 ╚◇══════════◇╝
 
@@ -94,37 +94,37 @@ Vlkyre.A𝖗𝖌𝖘,
 ✅𝗗𝗮𝗶𝗹𝘆 𝗦𝘁𝗮𝘁𝘂𝘀: You've collected your daily reward!
 💵𝐃𝐚𝐢𝐥𝐲 𝐌𝐨𝐧𝐞𝐲:  500 
 💰𝗧𝗼𝘁𝗮𝗹 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: Just Opened Your Account!`
-);
-("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-} else {
-if (userEco.timeout - (Date.now() - userEco.daily) > 0) {
-let ᴄʟᴏᴄᴋ = ms(userEco.timeout - (Date.now() - userEco.daily));
-return await Image_Button(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.A𝖗𝖌𝖘,
-"./👗Skins/Vlkyre_Daily.png",
-`╔◇══════════◇╗
+        );
+        ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
+      } else {
+        if (userEco.timeout - (Date.now() - userEco.daily) > 0) {
+          let ᴄʟᴏᴄᴋ = ms(userEco.timeout - (Date.now() - userEco.daily));
+          return await Image_Button(
+            ӄryӄnz,
+            Vlkyre,
+            Vlkyre.A𝖗𝖌𝖘,
+            "./👗Skins/Vlkyre_Daily.png",
+            `╔◇══════════◇╗
 ┊𝐕𝐥𝐤𝐲𝐫𝐞💵𝐁𝐚𝐧𝐤
 ╚◇══════════◇╝
 
 
 ❌𝗘𝗿𝗿𝗼𝗿: You've already collected your daily reward!
 💵𝗡𝗲𝘅𝘁 𝗗𝗮𝗶𝗹𝘆: ${ᴄʟᴏᴄᴋ.hours}h ${ᴄʟᴏᴄᴋ.minutes}m ${ᴄʟᴏᴄᴋ.seconds}s`
-);
-}
-("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-userEco.daily = Date.now();
-userEco.money = userEco.money + 500;
-await userEco
-.save()
-.catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, util.format(Èrrðr)));
-return await Image_Button(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.A𝖗𝖌𝖘,
-"./👗Skins/Vlkyre_Daily.png",
-`╔◇══════════◇╗
+          );
+        }
+        ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
+        userEco.daily = Date.now();
+        userEco.money = userEco.money + 500;
+        await userEco
+          .save()
+          .catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, util.format(Èrrðr)));
+        return await Image_Button(
+          ӄryӄnz,
+          Vlkyre,
+          Vlkyre.A𝖗𝖌𝖘,
+          "./👗Skins/Vlkyre_Daily.png",
+          `╔◇══════════◇╗
 ┊𝐕𝐥𝐤𝐲𝐫𝐞💵𝐁𝐚𝐧𝐤
 ╚◇══════════◇╝
 
@@ -132,10 +132,10 @@ Vlkyre.A𝖗𝖌𝖘,
 ✅ 𝗗𝗮𝗶𝗹𝘆 𝗦𝘁𝗮𝘁𝘂𝘀: You've collected your daily reward!
 💵 𝐃𝐚𝐢𝐥𝐲 𝐌𝐨𝐧𝐞𝐲:  500 
 💰 𝗧𝗼𝘁𝗮𝗹 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: ${userEco.money}`
-);
-}
-}
-);
+        );
+      }
+    }
+  );
 };
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 /*
