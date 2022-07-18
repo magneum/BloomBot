@@ -26,13 +26,13 @@ let { 𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙 } = require("./𝕮𝖆𝖘�
 let { req } = require("pino-std-serializers");
 let Hoku = new Heroku({ token: HEROKU_API_KEY });
 let ProTon = require("../Vlkyre🌗Events/ProTon");
-let { Caught } = require("../Vlkyre👒Hat/Caught");
+let { Caught } = require("../👒Buttons/Caught");
 let { ӄօʟօʀs } = require("../Vlkyre🌗Events/ӄօʟօʀs");
 let Bagde = require("../Vlkyre🌤️Cloud/🍃𝖒𝖔𝖓𝖌𝖔/badge");
 let { simpleGit, CleanOptions } = require("simple-git");
 let Ranker = require("../Vlkyre🌤️Cloud/🍃𝖒𝖔𝖓𝖌𝖔/autorank");
 let LinkList = require("../Vlkyre🌤️Cloud/🍃𝖒𝖔𝖓𝖌𝖔/antilink");
-let { Image_Button } = require("../Vlkyre👒Hat/Image_Button");
+let { Image_Button } = require("../👒Buttons/Image_Button");
 let usedUser = require("../Vlkyre🌤️Cloud/𝖀𝖘𝖊𝖗🍣𝖒𝖔𝖓𝖌𝖔/usedUser");
 let userBanCheck = require("../Vlkyre🌤️Cloud/𝖀𝖘𝖊𝖗🍣𝖒𝖔𝖓𝖌𝖔/user");
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");

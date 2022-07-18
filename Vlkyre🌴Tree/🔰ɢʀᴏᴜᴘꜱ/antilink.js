@@ -33,12 +33,12 @@ let { Character } = require(`mailist`);
 let moment = require(`moment-timezone`);
 let Carbon = require(`unofficial-carbon-now`);
 let { exec, execSync } = require(`child_process`);
-let { N𝖊𝖊𝖉__A𝖗𝖌𝖘 } = require("../../Vlkyre👒Hat/N𝖊𝖊𝖉__A𝖗𝖌𝖘");
+let { N𝖊𝖊𝖉__A𝖗𝖌𝖘 } = require("../../👒Buttons/N𝖊𝖊𝖉__A𝖗𝖌𝖘");
 let { Sticker, StickerTypes } = require(`wa-sticker-formatter`);
 let { Group_Only } = require("../../Vlkyre🧭Compass/Group_Only");
 let LinkList = require(`../../Vlkyre🌤️Cloud/🍃𝖒𝖔𝖓𝖌𝖔/antilink`);
-let { Image_Button } = require("../../Vlkyre👒Hat/Image_Button");
-let { Video_Button } = require("../../Vlkyre👒Hat/Video_Button");
+let { Image_Button } = require("../../👒Buttons/Image_Button");
+let { Video_Button } = require("../../👒Buttons/Video_Button");
 let { Bot_Not_Admin } = require("../../Vlkyre🧭Compass/Bot_Not_Admin");
 let { Sender_Not_Admin } = require("../../Vlkyre🧭Compass/Sender_Not_Admin");
 let YouTube_Regex =
@@ -46,7 +46,7 @@ let YouTube_Regex =
 let Present_Path = require(`path`);
 let Script_Name = Present_Path.basename(__filename);
 let Final_Name = Script_Name.slice(0, -3).toLowerCase();
-let { Caught } = require("../../Vlkyre👒Hat/Caught");
+let { Caught } = require("../../👒Buttons/Caught");
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
 exports.antilink = async (
 ӄryӄnz,
@@ -88,7 +88,7 @@ return await Image_Button(
 ӄryӄnz,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
-"./Vlkyre👗Skins/Vlkyre_Matte.png",
+"./👗Skins/Vlkyre_Matte.png",
 `📜𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${Vlkyre.groupMetadata.subject || ""}
 🔗𝐀𝐧𝐭𝐢𝐥𝐢𝐧𝐤: ✅On`
 );
@@ -97,7 +97,7 @@ return await Image_Button(
 ӄryӄnz,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
-"./Vlkyre👗Skins/Vlkyre_Matte.png",
+"./👗Skins/Vlkyre_Matte.png",
 `📜𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${Vlkyre.groupMetadata.subject || ""}
 🔗𝐀𝐧𝐭𝐢𝐥𝐢𝐧𝐤: ✅On`
 );
@@ -117,7 +117,7 @@ return await Image_Button(
 ӄryӄnz,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
-"./Vlkyre👗Skins/Vlkyre_Matte.png",
+"./👗Skins/Vlkyre_Matte.png",
 `📜𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${Vlkyre.groupMetadata.subject || ""}
 🔗𝐀𝐧𝐭𝐢𝐥𝐢𝐧𝐤: ❌OFF`
 );
@@ -127,7 +127,7 @@ return await Image_Button(
 ӄryӄnz,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
-"./Vlkyre👗Skins/Vlkyre_Matte.png",
+"./👗Skins/Vlkyre_Matte.png",
 `📜𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: ${Vlkyre.groupMetadata.subject || ""}
 🔗𝐀𝐧𝐭𝐢𝐥𝐢𝐧𝐤: ❌OFF`
 );

@@ -34,20 +34,20 @@ let { Character } = require(`mailist`);
 let moment = require(`moment-timezone`);
 let Carbon = require(`unofficial-carbon-now`);
 let { exec, execSync } = require(`child_process`);
-let animals = require(`../../Vlkyre🖌️Json/animals.json`);
+let animals = require(`../../🖌️Json/animals.json`);
 let Zoology = require(`../../Vlkyre🌤️Cloud/🍃𝖒𝖔𝖓𝖌𝖔/zoo`);
-let { N𝖊𝖊𝖉__A𝖗𝖌𝖘 } = require("../../Vlkyre👒Hat/N𝖊𝖊𝖉__A𝖗𝖌𝖘");
+let { N𝖊𝖊𝖉__A𝖗𝖌𝖘 } = require("../../👒Buttons/N𝖊𝖊𝖉__A𝖗𝖌𝖘");
 let { Sticker, StickerTypes } = require(`wa-sticker-formatter`);
 let { Group_Only } = require("../../Vlkyre🧭Compass/Group_Only");
 let Economy = require(`../../Vlkyre🌤️Cloud/🍃𝖒𝖔𝖓𝖌𝖔/economy`);
-let { Image_Button } = require("../../Vlkyre👒Hat/Image_Button");
-let { Video_Button } = require("../../Vlkyre👒Hat/Video_Button");
+let { Image_Button } = require("../../👒Buttons/Image_Button");
+let { Video_Button } = require("../../👒Buttons/Video_Button");
 let { Bot_Not_Admin } = require("../../Vlkyre🧭Compass/Bot_Not_Admin");
 let { Sender_Not_Admin } = require("../../Vlkyre🧭Compass/Sender_Not_Admin");
 let Present_Path = require(`path`);
 let Script_Name = Present_Path.basename(__filename);
 let Final_Name = Script_Name.slice(0, -3).toLowerCase();
-let { Caught } = require("../../Vlkyre👒Hat/Caught");
+let { Caught } = require("../../👒Buttons/Caught");
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 exports.zoo = async (
 ӄryӄnz,
@@ -85,7 +85,7 @@ return await Image_Button(
 ӄryӄnz,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
-"./Vlkyre👗Skins/Vlkyre_DB.png",
+"./👗Skins/Vlkyre_DB.png",
 `╔◇══════════◇╗
 ┊ 𝐏𝐨𝐤𝐞𝐦𝐨𝐧🦋𝐇𝐮𝐧𝐭𝐢𝐧𝐠
 ┊ 𝐌𝐢𝐧𝐞𝐜𝐫𝐚𝐟𝐭 🪵 𝐄𝐝𝐢𝐭𝐢𝐨𝐧
@@ -115,7 +115,7 @@ return await Image_Button(
 ӄryӄnz,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
-"./Vlkyre👗Skins/Vlkyre_Forest.png",
+"./👗Skins/Vlkyre_Forest.png",
 `╔◇══════════◇╗
 ┊  𝐙𝐨𝐨🐆𝐎𝐰𝐧𝐞𝐫
 ╚◇══════════◇╝
@@ -133,7 +133,7 @@ return await Image_Button(
 ӄryӄnz,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
-"./Vlkyre👗Skins/Vlkyre_Forest.png",
+"./👗Skins/Vlkyre_Forest.png",
 `╔◇══════════◇╗
 ┊  𝐙𝐨𝐨🐆𝐎𝐰𝐧𝐞𝐫
 ╚◇══════════◇╝
@@ -164,7 +164,7 @@ return await Image_Button(
 ӄryӄnz,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
-"./Vlkyre👗Skins/Vlkyre_Forest.png",
+"./👗Skins/Vlkyre_Forest.png",
 `╔◇══════════◇╗
 ┊  𝐙𝐨𝐨🐆𝐎𝐰𝐧𝐞𝐫
 ╚◇══════════◇╝

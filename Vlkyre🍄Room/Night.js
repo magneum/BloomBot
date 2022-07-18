@@ -15,10 +15,10 @@
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 require("../Vlkyre🖋️Utilities/𝕷𝖆ყO𝖚𝖙");
 let ᴍꜱ = require("parse-ms");
-let { Caught } = require("../Vlkyre👒Hat/Caught");
+let { Caught } = require("../👒Buttons/Caught");
 let { ӄօʟօʀs } = require("../Vlkyre🌗Events/ӄօʟօʀs");
 let Bagde = require("../Vlkyre🌤️Cloud/🍃𝖒𝖔𝖓𝖌𝖔/badge");
-let { Image_Button } = require("../Vlkyre👒Hat/Image_Button");
+let { Image_Button } = require("../👒Buttons/Image_Button");
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 exports.Night = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓, CC) => {
 let Allowed = [
@@ -101,7 +101,7 @@ return await Image_Button(
 ӄryӄnz,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
-"./Vlkyre👗Skins/Vlkyre_15AKv5i_omy24uvWcz64NpA.png",
+"./👗Skins/Vlkyre_15AKv5i_omy24uvWcz64NpA.png",
 `*🧈Added To DB for Current command First Time!*
 ⚔️𝗕𝗮𝗱𝗴𝗲: 🧵Basic 
 🧀𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬: 10 Commands`
@@ -118,7 +118,7 @@ return await Image_Button(
 ӄryӄnz,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
-"./Vlkyre👗Skins/Vlkyre__Shop.png",
+"./👗Skins/Vlkyre__Shop.png",
 `
 ╔══『 ❗𝐈𝐦𝐩𝐨𝐫𝐭𝐚𝐧𝐭 』
 ║⚔️𝗕𝗮𝗱𝗴𝗲: ${userBg.Badge}
@@ -152,7 +152,7 @@ return await Image_Button(
 ӄryӄnz,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
-"./Vlkyre👗Skins/Vlkyre__Shop.png",
+"./👗Skins/Vlkyre__Shop.png",
 `
 ╔══『 ❗𝐈𝐦𝐩𝐨𝐫𝐭𝐚𝐧𝐭 』
 ║⚔️𝗕𝗮𝗱𝗴𝗲: ${userBg.Badge}

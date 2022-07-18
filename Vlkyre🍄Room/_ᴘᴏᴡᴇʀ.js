@@ -14,8 +14,8 @@
 */
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 require("../Vlkyre🖋️Utilities/𝕷𝖆ყO𝖚𝖙")
-let { Caught } = require("../Vlkyre👒Hat/Caught");
-let { Image_Button } = require("../Vlkyre👒Hat/Image_Button");
+let { Caught } = require("../👒Buttons/Caught");
+let { Image_Button } = require("../👒Buttons/Image_Button");
 let UserPrivate = require(`../Vlkyre🌤️Cloud/🍃𝖒𝖔𝖓𝖌𝖔/private`);
 exports._ᴘᴏᴡᴇʀ = async (ӄryӄnz, Vlkyre) => {
 await UserPrivate.findOne(
@@ -34,7 +34,7 @@ return await Image_Button(
 ӄryӄnz,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
-"./Vlkyre👗Skins/Vlkyre_Red.png",
+"./👗Skins/Vlkyre_Red.png",
 `✋🏽‍𝐖𝐚𝐢𝐭 𝐅𝐨𝐫 𝐌𝐲 𝐎𝐰𝐧𝐞𝐫 𝐓𝐨 𝐑𝐞𝐬𝐩𝐨𝐧𝐝!
 • Dear Random User, This Private Is Being Guarded By Vlkyre AI!
 • Do Not Spam The Chat Box!
@@ -50,7 +50,7 @@ return await Image_Button(
 ӄryӄnz,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
-"./Vlkyre👗Skins/Vlkyre_Red.png",
+"./👗Skins/Vlkyre_Red.png",
 `✋🏽‍𝐖𝐚𝐢𝐭 𝐅𝐨𝐫 𝐌𝐲 𝐎𝐰𝐧𝐞𝐫 𝐓𝐨 𝐑𝐞𝐬𝐩𝐨𝐧𝐝!
 • Dear Random User, This Private Is Being Guarded By Vlkyre AI!
 • Do Not Spam The Chat Box!

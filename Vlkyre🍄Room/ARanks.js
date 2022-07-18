@@ -20,7 +20,7 @@ let Levels = require("discord-xp");
 let canvacord = require("canvacord");
 let randomMC = require("random-material-color");
 let Economy = require(`../Vlkyre🌤️Cloud/🍃𝖒𝖔𝖓𝖌𝖔/economy`);
-let { Image_Button } = require("../Vlkyre👒Hat/Image_Button");
+let { Image_Button } = require("../👒Buttons/Image_Button");
 let color = randomMC.getColor();
 Levels.setURL(MONGOOSE);
 exports.ARanks = async (Vlkyre, ӄryӄnz, Caught, A𝖗𝖌𝖘) => {
@@ -121,7 +121,7 @@ let 𝕯𝖎𝖘𝖕𝖑𝖆𝖞;
 try {
 𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await ӄryӄnz.profilePictureUrl(Vlkyre.chatID, `image`);
 } catch {
-𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = `./Vlkyre👗Skins/Vlkyre.png`;
+𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = `./👗Skins/Vlkyre.png`;
 }
 ("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
 try {

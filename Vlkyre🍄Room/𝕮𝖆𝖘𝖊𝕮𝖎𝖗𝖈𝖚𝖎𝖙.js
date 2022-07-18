@@ -14,10 +14,10 @@
 */
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 require("../Vlkyre🖋️Utilities/𝕷𝖆ყO𝖚𝖙");
-let { Bot_Not_Admin } = require("../Vlkyre🧭Compass/Bot_Not_Admin");
-let { Sender_Not_Admin } = require("../Vlkyre🧭Compass/Sender_Not_Admin");
-let { help } = require("../Vlkyre🌴Tree/📜ᴍᴇɴᴜ/help");
+let { Bot_Not_Admin } = require("./bna");
+let { Sender_Not_Admin } = require("./sna");
 let { menu } = require("../Vlkyre🌴Tree/📜ᴍᴇɴᴜ/menu");
+let { help } = require("../Vlkyre🌴Tree/📜ᴍᴇɴᴜ/help");
 let { WebMenu } = require("../Vlkyre🌴Tree/📜ᴍᴇɴᴜ/WebMenu");
 let { GameMenu } = require("../Vlkyre🌴Tree/📜ᴍᴇɴᴜ/GameMenu");
 let { NsfwMenu } = require("../Vlkyre🌴Tree/📜ᴍᴇɴᴜ/NsfwMenu");
@@ -3475,7 +3475,7 @@ contextInfo: {
 mentionedJid: [Vlkyre.sender],
 },
 image: {
-url: "./Vlkyre👗Skins/Vlkyre_404.png",
+url: "./👗Skins/Vlkyre_404.png",
 },
 caption: `❣️ *ɴᴀᴍᴇ:* ${Vlkyre.pushName || "No_Name"}
 
