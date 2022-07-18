@@ -41,18 +41,11 @@ let Robbery = require(`../../Vlkyre🌤️Cloud/🍃𝖒𝖔𝖓𝖌𝖔/robbery
 let Economy = require(`../../Vlkyre🌤️Cloud/🍃𝖒𝖔𝖓𝖌𝖔/economy`);
 let { Image_Button } = require("../../👒Buttons/Image_Button");
 let { Video_Button } = require("../../👒Buttons/Video_Button");
-let { Bot_Not_Admin } = require("../../Vlkyre🧭Compass/Bot_Not_Admin");
-let { Sender_Not_Admin } = require("../../Vlkyre🧭Compass/Sender_Not_Admin");
 let Present_Path = require(`path`);
 let Script_Name = Present_Path.basename(__filename);
 let Final_Name = Script_Name.slice(0, -3).toLowerCase();
 let { Caught } = require("../../👒Buttons/Caught");
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-let { Group_Only } = require("../../Vlkyre🧭Compass/Group_Only");
-let { Image_Button } = require("../../👒Buttons/Image_Button");
-let { Video_Button } = require("../../👒Buttons/Video_Button");
-let { Bot_Not_Admin } = require("../../Vlkyre🧭Compass/Bot_Not_Admin");
-let { Sender_Not_Admin } = require("../../Vlkyre🧭Compass/Sender_Not_Admin");
 exports.bag = async (
   ӄryӄnz,
   Vlkyre,
