@@ -59,7 +59,7 @@ function _0x58cd() {
     "existsSync",
     "file-type",
     "groupMetadata",
-    "../Vlkyre🖋️Utilities/exif",
+    "../🤖Utilities/exif",
     "contacts",
     "bold",
     "from",
@@ -70,7 +70,7 @@ function _0x58cd() {
     "awesome-phonenumber",
     "../package.json",
     "📡DATABASE:\x20",
-    "../Vlkyre🖋️Utilities/𝕷𝖆ყO𝖚𝖙",
+    "../🤖Utilities/𝕷𝖆ყO𝖚𝖙",
     "red",
     "fromBuffer",
     "whiteBright",
@@ -152,7 +152,7 @@ function _0x58cd() {
     "readFile",
     "remoteJid",
     "group-participants.update",
-    "../Vlkyre🖋️Utilities/ɴᴇᴄᴛᴏʀ",
+    "../🤖Utilities/ɴᴇᴄᴛᴏʀ",
     "\x0aitem1.TEL;waid=",
     "4.0.0",
     "BEGIN:VCARD\x0aVERSION:3.0\x0aN:",
@@ -220,7 +220,7 @@ const _0x492b82 = _0x106e;
     _0x492b82(0x1bd)
   ] = 0x0),
   require(_0x492b82(0x162)),
-  require("../Vlkyre🖋️Utilities/Ѷ𝖆𝖑.js");
+  require("../🤖Utilities/Ѷ𝖆𝖑.js");
 let {
     default: 𝖍𝖆𝖜ӄC,
     generateForwardMessageContent,
@@ -732,7 +732,7 @@ async function Ѷ𝖎𝖔𝖓ᴇᴏɴᴇ() {
         _0x1d5492 = _0x16d736;
       if (_0x1a4d07["asDocument"]) _0x39d42a = _0x54776f(0x197);
       if (_0x1a4d07[_0x54776f(0x16c)] || /webp/[_0x54776f(0x1da)](_0xa7f295)) {
-        let { writeExif: _0x431fa0 } = require("../Vlkyre🖋️Utilities/exif"),
+        let { writeExif: _0x431fa0 } = require("../🤖Utilities/exif"),
           _0x44e35d = { mimetype: _0xa7f295, data: _0x4e74b1 };
         (_0x1d5492 = await _0x431fa0(_0x44e35d, {
           packname: _0x1a4d07[_0x54776f(0x1ac)]
