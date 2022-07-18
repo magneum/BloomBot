@@ -13,29 +13,29 @@
 ╚════════════╝
 */
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
-require("../../Vlkyre🖋️Utilities/𝕷𝖆ყO𝖚𝖙");
+require("../../🤖Utilities/𝕷𝖆ყO𝖚𝖙");
 const cqulize = require("sequelize");
 let sequelize = DATABASE;
 class Auth extends cqulize.Model {}
 exports.Auth = Auth;
 Auth.init(
-{
-key: {
-type: cqulize.DataTypes.STRING(1000000),
-allowNull: false,
-},
-value: {
-type: cqulize.DataTypes.STRING(1000000),
-},
-type: {
-type: cqulize.DataTypes.STRING(1000000),
-},
-},
-{
-sequelize,
-tableName: "Authentication",
-timestamps: false,
-}
+  {
+    key: {
+      type: cqulize.DataTypes.STRING(1000000),
+      allowNull: false,
+    },
+    value: {
+      type: cqulize.DataTypes.STRING(1000000),
+    },
+    type: {
+      type: cqulize.DataTypes.STRING(1000000),
+    },
+  },
+  {
+    sequelize,
+    tableName: "Authentication",
+    timestamps: false,
+  }
 );
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 /*
