@@ -15,44 +15,43 @@
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 require("../🤖Utilities/Settings");
 exports.N𝖊𝖊𝖉__A𝖗𝖌𝖘 = async (ӄryӄnz, Vlkyre, 𝖀𝖘𝖆𝖌𝖊) => {
-  await ӄryӄnz.sendPresenceUpdate("composing", Vlkyre.chatID);
-  await ӄryӄnz
-    .sendMessage(
-      Vlkyre.chatID,
-      {
-        contextInfo: { mentionedJid: [Vlkyre.sender] },
-        image: { url: "./👗Skins/Vlkyre.png" },
-        caption: `🕊️𝐧𝐚𝐦𝐞: ${Vlkyre.pushName || "ɴᴏ_ɴᴀᴍᴇ"}
+await ӄryӄnz
+.sendMessage(
+Vlkyre.chatID,
+{
+contextInfo: { mentionedJid: [Vlkyre.sender] },
+image: { url: "./👗Skins/Vlkyre.png" },
+caption: `🕊️𝐧𝐚𝐦𝐞: ${Vlkyre.pushName || "ɴᴏ_ɴᴀᴍᴇ"}
 ${𝖀𝖘𝖆𝖌𝖊}`,
-        footer: "❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ❞\n⭕www.youtube.com/channel/UC5_VwWIUIdmv96OvR5rFvaA",
-        buttons: [
-          {
-            buttonId: prefix + "HELP",
-            buttonText: { displayText: prefix + "HELP" },
-            type: 1,
-          },
-          {
-            buttonId: prefix + "VLKYRE",
-            buttonText: { displayText: prefix + "VLKYRE" },
-            type: 1,
-          },
-        ],
-        headerType: 4,
-      },
-      {
-        quoted: Vlkyre,
-      }
-    )
-    .catch((e) => console.log(e));
-  let ʀᴇᴀᴄᴛionMessage = {
-    ʀᴇᴀᴄᴛ: {
-      text: `⚡`,
-      key: Vlkyre.key,
-    },
-  };
-  return await ӄryӄnz
-    .sendMessage(Vlkyre.chatID, ʀᴇᴀᴄᴛionMessage)
-    .catch((e) => console.log(e));
+footer: "❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ❞\n⭕youtube.com/channel/UC5_VwWIUIdmv96OvR5rFvaA",
+buttons: [
+{
+buttonId: prefix + "HELP",
+buttonText: { displayText: prefix + "HELP" },
+type: 1,
+},
+{
+buttonId: prefix + "VLKYRE",
+buttonText: { displayText: prefix + "VLKYRE" },
+type: 1,
+},
+],
+headerType: 4,
+},
+{
+quoted: Vlkyre,
+}
+)
+.catch((e) => console.log(e));
+let ʀᴇᴀᴄᴛionMessage = {
+ʀᴇᴀᴄᴛ: {
+text: `⚡`,
+key: Vlkyre.key,
+},
+};
+return await ӄryӄnz
+.sendMessage(Vlkyre.chatID, ʀᴇᴀᴄᴛionMessage)
+.catch((e) => console.log(e));
 };
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 /*
@@ -145,7 +144,7 @@ ${𝖀𝖘𝖆𝖌𝖊}`,
 // caption: `🕊️ *ɴᴀᴍᴇ:* ${Vlkyre.pushName || "ɴᴏ_ɴᴀᴍᴇ"}
 
 // ${𝖀𝖘𝖆𝖌𝖊}`,
-// footer: "❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ❞\n⭕www.youtube.com/channel/UC5_VwWIUIdmv96OvR5rFvaA",
+// footer: "❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ❞\n⭕youtube.com/channel/UC5_VwWIUIdmv96OvR5rFvaA",
 // buttons: [
 // {
 // buttonId: prefix + "HELP",

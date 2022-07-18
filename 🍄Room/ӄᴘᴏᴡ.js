@@ -187,7 +187,7 @@ return await ӄryӄnz.sendMessage(Vlkyre.chatID, {
 text: `❗𝐕𝐄𝐑𝐓𝐈𝐅𝐈𝐂𝐀𝐓𝐈𝐎𝐍❗
 @${Vlkyre.sender.split("@")[0]}
 *Check The Verification Video:*
-www.youtube.com/channel/UC5_VwWIUIdmv96OvR5rFvaA`,
+youtube.com/channel/UC5_VwWIUIdmv96OvR5rFvaA`,
 contextInfo: { mentionedJid: [Vlkyre.sender] },
 });
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
@@ -218,8 +218,9 @@ return Vlkyre.reply(
 } else {
 ꜱᴇʀᴄ.LastTime = Date.now();
 await ꜱᴇʀᴄ.save().catch((error) => Caught(ӄryӄnz, Vlkyre, error));
-await ӄօʟօʀs(ӄryӄnz, Vlkyre);
-return await 𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙(Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓);
+await ӄryӄnz.sendPresenceUpdate("composing", Vlkyre.chatID);
+await 𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙(Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓);
+return await ӄօʟօʀs(ӄryӄnz, Vlkyre);
 }
 }
 }
