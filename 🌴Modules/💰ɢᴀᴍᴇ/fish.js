@@ -13,15 +13,15 @@
 ╚════════════╝
 */
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
-require("../../Vlkyre🖋️Utilities/𝕷𝖆ყO𝖚𝖙");
+require("../../🤖Utilities/𝕷𝖆ყO𝖚𝖙");
 let {
-isUrl,
-fetchJson,
-getBuffer,
-jsonformat,
-GIFBufferToVideoBuffer,
-getRandom,
-} = require(`../../Vlkyre🖋️Utilities/ɴᴇᴄᴛᴏʀ`);
+  isUrl,
+  fetchJson,
+  getBuffer,
+  jsonformat,
+  GIFBufferToVideoBuffer,
+  getRandom,
+} = require(`../../🤖Utilities/ɴᴇᴄᴛᴏʀ`);
 let fs = require(`fs`);
 let util = require(`util`);
 let hxz = require(`hxz-api`);
@@ -49,98 +49,98 @@ let Final_Name = Script_Name.slice(0, -3).toLowerCase();
 let { Caught } = require("../../👒Buttons/Caught");
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 exports.fish = async (
-ӄryӄnz,
-Vlkyre,
-pushName,
-F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-quoted,
-isMedia,
-isGroup,
-isBotAdmin,
-isSenderAdmin,
-isSenderTUF,
-commandName,
-body,
+  ӄryӄnz,
+  Vlkyre,
+  pushName,
+  F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+  quoted,
+  isMedia,
+  isGroup,
+  isBotAdmin,
+  isSenderAdmin,
+  isSenderTUF,
+  commandName,
+  body
 ) => {
-await Economy.findOne(
-{
-ID: Vlkyre.sender,
-},
-async (Èrrðr, userEco) => {
-if (Èrrðr) return Caught(ӄryӄnz, Vlkyre, Èrrðr);
-if (!userEco) {
-let newUser = new Economy({
-ID: Vlkyre.sender,
-money: 0,
-daily: 0,
-timeout: 0,
-fishdone: Date.now(),
-fishtimeout: 1800000,
-workdone: 0,
-worktimeout: 900000,
-});
-await newUser.save().catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
-return await Image_Button(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.A𝖗𝖌𝖘,
-"./👗Skins/Vlkyre_DB.png",
-`╔◇══════════◇╗
+  await Economy.findOne(
+    {
+      ID: Vlkyre.sender,
+    },
+    async (Èrrðr, userEco) => {
+      if (Èrrðr) return Caught(ӄryӄnz, Vlkyre, Èrrðr);
+      if (!userEco) {
+        let newUser = new Economy({
+          ID: Vlkyre.sender,
+          money: 0,
+          daily: 0,
+          timeout: 0,
+          fishdone: Date.now(),
+          fishtimeout: 1800000,
+          workdone: 0,
+          worktimeout: 900000,
+        });
+        await newUser.save().catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
+        return await Image_Button(
+          ӄryӄnz,
+          Vlkyre,
+          Vlkyre.A𝖗𝖌𝖘,
+          "./👗Skins/Vlkyre_DB.png",
+          `╔◇══════════◇╗
 ┊𝐕𝐥𝐤𝐲𝐫𝐞🐡𝐏𝐨𝐧𝐝
 ╚◇══════════◇╝
 
 🧈Added To DB for Current command First Time!
 💰𝗧𝗼𝘁𝗮𝗹 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: Just Opened Your Account!`
-);
-("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-} else {
-if (userEco.fishtimeout - (Date.now() - userEco.fishdone) > 0) {
-let time = ms(userEco.fishtimeout - (Date.now() - userEco.fishdone));
-return await Image_Button(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.A𝖗𝖌𝖘,
-"./👗Skins/Vlkyre_FIsh.png",
-`╔◇══════════◇╗
+        );
+        ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
+      } else {
+        if (userEco.fishtimeout - (Date.now() - userEco.fishdone) > 0) {
+          let time = ms(userEco.fishtimeout - (Date.now() - userEco.fishdone));
+          return await Image_Button(
+            ӄryӄnz,
+            Vlkyre,
+            Vlkyre.A𝖗𝖌𝖘,
+            "./👗Skins/Vlkyre_FIsh.png",
+            `╔◇══════════◇╗
 ┊𝐕𝐥𝐤𝐲𝐫𝐞🐡𝐏𝐨𝐧𝐝
 ╚◇══════════◇╝
 
 ❌𝗘𝗿𝗿𝗼𝗿: You've Recently Casted A Line. 
 🕐𝗙𝗶𝘀𝗵 𝗔𝗴𝗮𝗶𝗻: ${time.minutes}m ${time.seconds}s`
-);
-("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-} else {
-let fishID = Math.floor(Math.random() * 10) + 1;
-let rarity;
-if (fishID < 5) rarity = `junk`;
-else if (fishID < 8) rarity = `common`;
-else if (fishID < 9) rarity = `uncommon`;
-else if (fishID < 10) rarity = `rare`;
-else rarity = `legendary`;
-let fishh = Fishes[rarity];
-let worth =
-Math.floor(Math.random() * (fishh.max - fishh.min + 1)) + fishh.min;
-userEco.money = userEco.money + worth;
-userEco.fishdone = Date.now();
-userEco.fishtimeout = 1800000;
-userEco.save().catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
-return await Image_Button(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.A𝖗𝖌𝖘,
-"./👗Skins/Vlkyre_FIsh.png",
-`╔◇══════════◇╗
+          );
+          ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
+        } else {
+          let fishID = Math.floor(Math.random() * 10) + 1;
+          let rarity;
+          if (fishID < 5) rarity = `junk`;
+          else if (fishID < 8) rarity = `common`;
+          else if (fishID < 9) rarity = `uncommon`;
+          else if (fishID < 10) rarity = `rare`;
+          else rarity = `legendary`;
+          let fishh = Fishes[rarity];
+          let worth =
+            Math.floor(Math.random() * (fishh.max - fishh.min + 1)) + fishh.min;
+          userEco.money = userEco.money + worth;
+          userEco.fishdone = Date.now();
+          userEco.fishtimeout = 1800000;
+          userEco.save().catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
+          return await Image_Button(
+            ӄryӄnz,
+            Vlkyre,
+            Vlkyre.A𝖗𝖌𝖘,
+            "./👗Skins/Vlkyre_FIsh.png",
+            `╔◇══════════◇╗
 ┊𝐕𝐥𝐤𝐲𝐫𝐞🐡𝐏𝐨𝐧𝐝
 ╚◇══════════◇╝
 
 🎣𝗜𝘁𝗲𝗺_𝗙𝗼𝘂𝗻𝗱: You Cast Out Your Line And Caught A ${fishh.symbol}.
 💵𝗪𝗼𝗿𝘁𝗵: It'd Sell For Around *${worth}*!
 💍𝗜𝘁𝗲𝗺 𝗥𝗮𝗿𝗶𝘁𝘆: ${rarity}`
-);
-}
-}
-}
-);
+          );
+        }
+      }
+    }
+  );
 };
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 /*
