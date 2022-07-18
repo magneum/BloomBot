@@ -13,15 +13,15 @@
 ╚════════════╝
 */
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
-require("../../Vlkyre🖋️Utilities/𝕷𝖆ყO𝖚𝖙");
+require("../../🤖Utilities/𝕷𝖆ყO𝖚𝖙");
 let {
-isUrl,
-fetchJson,
-getBuffer,
-jsonformat,
-GIFBufferToVideoBuffer,
-getRandom,
-} = require(`../../Vlkyre🖋️Utilities/ɴᴇᴄᴛᴏʀ`);
+  isUrl,
+  fetchJson,
+  getBuffer,
+  jsonformat,
+  GIFBufferToVideoBuffer,
+  getRandom,
+} = require(`../../🤖Utilities/ɴᴇᴄᴛᴏʀ`);
 let fs = require(`fs`);
 let util = require(`util`);
 let hxz = require(`hxz-api`);
@@ -47,102 +47,102 @@ let Final_Name = Script_Name.slice(0, -3).toLowerCase();
 let { Caught } = require("../../👒Buttons/Caught");
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 exports.unban = async (
-ӄryӄnz,
-Vlkyre,
-pushName,
-F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-quoted,
-isMedia,
-isGroup,
-isBotAdmin,
-isSenderAdmin,
-isSenderTUF,
-commandName,
-body,
+  ӄryӄnz,
+  Vlkyre,
+  pushName,
+  F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+  quoted,
+  isMedia,
+  isGroup,
+  isBotAdmin,
+  isSenderAdmin,
+  isSenderTUF,
+  commandName,
+  body
 ) => {
-if (!Vlkyre.fromMe && !isSenderTUF) {
-return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ӄryӄnz,
-Vlkyre,
-`*❌ERROR:* Owner & Mod only command!
+  if (!Vlkyre.fromMe && !isSenderTUF) {
+    return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
+      ӄryӄnz,
+      Vlkyre,
+      `*❌ERROR:* Owner & Mod only command!
 *⚡USAGE:* ${prefix}${Final_Name} _reply to person to ban_
 ${prefix}${Final_Name} _don't reply to anyone and group will be banned_`
-);
-}
-("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
-if (Vlkyre.mentionByReply) {
-let repliedPerson =
-Vlkyre.mtype == "extendedTextMessage" &&
-Vlkyre.message.extendedTextMessage.contextInfo != null
-? Vlkyre.message.extendedTextMessage.contextInfo.participant || ""
-: "";
-let repliedPersonNum = repliedPerson.substring(
-0,
-repliedPerson.length - 15
-);
-await userBanCheck.findOne(
-{
-ID: repliedPerson,
-},
-async (error, userBan) => {
-if (error) return console.log(error);
-if (!userBan) {
-return await Image_Button(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.A𝖗𝖌𝖘,
-"./👗Skins/KrakinzLab.png",
-`*❌𝗘𝗿𝗿𝗼𝗿:* That Person Was Not Banned!`
-);
-} else {
-await userBan.delete();
-return await Image_Button(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.A𝖗𝖌𝖘,
-"./👗Skins/KrakinzLab.png",
-`*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* That Person Has Been Un-Banned!`
-);
-}
-}
-);
-("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
-} else if (!Vlkyre.mentionByReply) {
-await userBanCheck.findOne(
-{
-ID: Vlkyre.chatID,
-},
-async (error, userBan) => {
-if (error) return console.log(error);
-if (!userBan) {
-return await Image_Button(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.A𝖗𝖌𝖘,
-"./👗Skins/KrakinzLab.png",
-`*❌𝗘𝗿𝗿𝗼𝗿:* ${Vlkyre.groupMetadata.subject} Was Not Banned!`
-);
-} else {
-await userBan.delete();
-return await Image_Button(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.A𝖗𝖌𝖘,
-"./👗Skins/KrakinzLab.png",
-`*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* ${Vlkyre.groupMetadata.subject} Has Been Un-Banned!`
-);
-}
-}
-);
-("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
-} else {
-return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ӄryӄnz,
-Vlkyre,
-`*⚡USAGE:* ${prefix}${Final_Name} _reply to person to ban_
+    );
+  }
+  ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
+  if (Vlkyre.mentionByReply) {
+    let repliedPerson =
+      Vlkyre.mtype == "extendedTextMessage" &&
+      Vlkyre.message.extendedTextMessage.contextInfo != null
+        ? Vlkyre.message.extendedTextMessage.contextInfo.participant || ""
+        : "";
+    let repliedPersonNum = repliedPerson.substring(
+      0,
+      repliedPerson.length - 15
+    );
+    await userBanCheck.findOne(
+      {
+        ID: repliedPerson,
+      },
+      async (error, userBan) => {
+        if (error) return console.log(error);
+        if (!userBan) {
+          return await Image_Button(
+            ӄryӄnz,
+            Vlkyre,
+            Vlkyre.A𝖗𝖌𝖘,
+            "./👗Skins/KrakinzLab.png",
+            `*❌𝗘𝗿𝗿𝗼𝗿:* That Person Was Not Banned!`
+          );
+        } else {
+          await userBan.delete();
+          return await Image_Button(
+            ӄryӄnz,
+            Vlkyre,
+            Vlkyre.A𝖗𝖌𝖘,
+            "./👗Skins/KrakinzLab.png",
+            `*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* That Person Has Been Un-Banned!`
+          );
+        }
+      }
+    );
+    ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
+  } else if (!Vlkyre.mentionByReply) {
+    await userBanCheck.findOne(
+      {
+        ID: Vlkyre.chatID,
+      },
+      async (error, userBan) => {
+        if (error) return console.log(error);
+        if (!userBan) {
+          return await Image_Button(
+            ӄryӄnz,
+            Vlkyre,
+            Vlkyre.A𝖗𝖌𝖘,
+            "./👗Skins/KrakinzLab.png",
+            `*❌𝗘𝗿𝗿𝗼𝗿:* ${Vlkyre.groupMetadata.subject} Was Not Banned!`
+          );
+        } else {
+          await userBan.delete();
+          return await Image_Button(
+            ӄryӄnz,
+            Vlkyre,
+            Vlkyre.A𝖗𝖌𝖘,
+            "./👗Skins/KrakinzLab.png",
+            `*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* ${Vlkyre.groupMetadata.subject} Has Been Un-Banned!`
+          );
+        }
+      }
+    );
+    ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
+  } else {
+    return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
+      ӄryӄnz,
+      Vlkyre,
+      `*⚡USAGE:* ${prefix}${Final_Name} _reply to person to ban_
 ${prefix}${Final_Name}* _don't reply to anyone and group will be banned_`
-);
-}
+    );
+  }
 };
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
 
