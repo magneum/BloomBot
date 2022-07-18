@@ -85,7 +85,7 @@ function _0xeaa4() {
     "ɴᴇᴄᴛᴏʀ",
     "human-readable",
     "getBufferAsync",
-    "ffmpeg\x20-i\x20./Vlkyre🎒Bag/",
+    "ffmpeg\x20-i\x20./🎒Root/",
     "1206140JGuYcI",
     "918436686758,917430922909",
     "isDeepStrictEqual",
@@ -163,7 +163,7 @@ function _0xeaa4() {
     "text",
     "length",
     "${Math.floor(Math.random()\x20*\x2010000)}${ext}",
-    "./Vlkyre🎒Bag/${filename}.mp4",
+    "./🎒Root/${filename}.mp4",
     "message",
     "productMessage",
     "74790dMuJaA",
@@ -171,7 +171,7 @@ function _0xeaa4() {
     "fromMe",
     "random",
     "toObject",
-    "./Vlkyre🎒Bag/${filename}.gif",
+    "./🎒Root/${filename}.gif",
     ".mp4",
     "imageMessage",
     "138783QHNAgm",
@@ -191,7 +191,7 @@ function _0xeaa4() {
     "env",
     "isBuffer",
     "stanzaId",
-    ".gif\x20-movflags\x20faststart\x20-pix_fmt\x20yuv420p\x20-vf\x20\x22scale=trunc(iw/2)*2:trunc(ih/2)*2\x22\x20./Vlkyre🎒Bag/",
+    ".gif\x20-movflags\x20faststart\x20-pix_fmt\x20yuv420p\x20-vf\x20\x22scale=trunc(iw/2)*2:trunc(ih/2)*2\x22\x20./🎒Root/",
     "endsWith",
     "util",
     "mtype",
@@ -478,7 +478,7 @@ let unixTimestampSeconds = (_0x58b08a = new Date()) =>
       child_process[_0xd4e84(0xd2)](
         _0xd4e84(0xe7) + _0x5b7f3d + _0xd4e84(0xa4) + _0x5b7f3d + _0xd4e84(0x91)
       );
-    var _0x299530 = await fs["readFileSync"]("./Vlkyre🎒Bag/${filename}.mp4");
+    var _0x299530 = await fs["readFileSync"]("./🎒Root/${filename}.mp4");
     return (
       Promise[_0xd4e84(0x75)]([unlink(_0xd4e84(0x88)), unlink(_0xd4e84(0x90))]),
       _0x299530
