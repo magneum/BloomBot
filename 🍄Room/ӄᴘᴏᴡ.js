@@ -70,9 +70,7 @@ Total: Ѷ𝖎𝖔𝖓𝖒𝖔𝖓𝖌𝖔,
 LastTime: Date.now(),
 PermaTime: 10000,
 });
-return await ɴᴇᴡᴜꜱᴇʀᴄ
-.save()
-.catch((error) => Caught(ӄryӄnz, Vlkyre, error));
+return await ɴᴇᴡᴜꜱᴇʀᴄ.save().catch((error) => Caught(ӄryӄnz, Vlkyre, error));
 } else {
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 ꜱᴇʀᴄ.Total = ꜱᴇʀᴄ.Total + Ѷ𝖎𝖔𝖓𝖒𝖔𝖓𝖌𝖔;
@@ -132,7 +130,6 @@ let MeA = [];
 let MeB = [];
 let MeC = [];
 let MeD = [];
-// let MeE = [];
 let ʀᴇꜱᴘᴏɴꜱᴇ1 = await ӄryӄnz.groupInviteCode(
 "120363020792949649@g.us"
 );
@@ -145,7 +142,6 @@ let ʀᴇꜱᴘᴏɴꜱᴇ3 = await ӄryӄnz.groupInviteCode(
 let ʀᴇꜱᴘᴏɴꜱᴇ4 = await ӄryӄnz.groupInviteCode(
 "120363042762307739@g.us"
 );
-// let ʀᴇꜱᴘᴏɴꜱᴇ5 = await ӄryӄnz.groupInviteCode("120363022161584857@g.us");
 let ʀᴇꜱᴘᴏɴꜱᴇA = await ӄryӄnz.groupMetadata(
 "120363020792949649@g.us"
 );
@@ -158,7 +154,6 @@ let ʀᴇꜱᴘᴏɴꜱᴇC = await ӄryӄnz.groupMetadata(
 let ʀᴇꜱᴘᴏɴꜱᴇD = await ӄryӄnz.groupMetadata(
 "120363042762307739@g.us"
 );
-// let ʀᴇꜱᴘᴏɴꜱᴇE = await ӄryӄnz.groupMetadata("120363022161584857@g.us");
 for (let i = 0; i < ʀᴇꜱᴘᴏɴꜱᴇA.participants.length; i++)
 MeA[i] = ʀᴇꜱᴘᴏɴꜱᴇA.participants[i].id;
 for (let i = 0; i < ʀᴇꜱᴘᴏɴꜱᴇB.participants.length; i++)
@@ -167,8 +162,6 @@ for (let i = 0; i < ʀᴇꜱᴘᴏɴꜱᴇC.participants.length; i++)
 MeC[i] = ʀᴇꜱᴘᴏɴꜱᴇC.participants[i].id;
 for (let i = 0; i < ʀᴇꜱᴘᴏɴꜱᴇD.participants.length; i++)
 MeD[i] = ʀᴇꜱᴘᴏɴꜱᴇD.participants[i].id;
-// for (let i = 0; i < ʀᴇꜱᴘᴏɴꜱᴇE.participants.length; i++)
-// MeE[i] = ʀᴇꜱᴘᴏɴꜱᴇE.participants[i].id;
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 if (
 !Vlkyre.fromMe &&
@@ -212,9 +205,7 @@ Total: 0,
 LastTime: 0,
 PermaTime: 15000,
 });
-return await ɴᴇᴡᴜꜱᴇʀᴄ
-.save()
-.catch((error) => Caught(ӄryӄnz, Vlkyre, error));
+return await ɴᴇᴡᴜꜱᴇʀᴄ.save().catch((error) => Caught(ӄryӄnz, Vlkyre, error));
 } else {
 let ᴄʟᴏᴄᴋ = ᴍꜱ(
 ꜱᴇʀᴄ.PermaTime - (Date.now() - ꜱᴇʀᴄ.LastTime)
@@ -226,12 +217,138 @@ return Vlkyre.reply(
 } else {
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 ꜱᴇʀᴄ.LastTime = Date.now();
-await ꜱᴇʀᴄ
-.save()
-.catch((error) => Caught(ӄryӄnz, Vlkyre, error));
+await ꜱᴇʀᴄ.save().catch((error) => Caught(ӄryӄnz, Vlkyre, error));
+await ӄօʟօʀs(ӄryӄnz, Vlkyre);
+let FArray = [
+"menu",
+"admins",
+"antilink",
+"autorank",
+"del",
+"demote",
+"group",
+"invite",
+"promote",
+"remove",
+"setdesc",
+"setgpfp",
+"setwelcome",
+"tagall",
+"warn",
+"baka",
+"bite",
+"blush",
+"bonk",
+"bored",
+"confused",
+"cry",
+"cuddle",
+"dance",
+"goodnight",
+"happy",
+"highfive",
+"hug",
+"kick",
+"kill",
+"kiss",
+"nervous",
+"pat",
+"poke",
+"punch",
+"sad",
+"scream",
+"slap",
+"smile",
+"stare",
+"wave",
+"wink",
+"yeet",
+"yes",
+"Test",
+"ban",
+"bcgroup",
+"dbrem",
+"join",
+"leave",
+"reboot",
+"rules",
+"support",
+"unban",
+"verify"];
+await Bagde.findOne(
+{
+ID: Vlkyre.sender,
+},
+async (error, userBg) => {
+if (error) return Caught(ӄryӄnz, Vlkyre, error);
+if (!userBg && !FArray.includes(Vlkyre.commandName)) {
+let newUser = new Bagde({
+ID: Vlkyre.sender,
+Badge: "🧵Basic 10 Commands",
+value: "True",
+Limits: 10,
+CurrentLimitTime: Date.now(),
+PermanentLimitTime: 43200000,
+});
+await newUser.save();
+return await 𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙(Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓);
+("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
+} else {
+let Time = ᴍꜱ(userBg.PermanentLimitTime - (Date.now() - userBg.CurrentLimitTime));
+if (Time > 0 && userBg.Limits == 0 && !FArray.includes(Vlkyre.commandName)) {
+userBg.value = "False";
+await userBg.save();
+return await Image_Button(
+ӄryӄnz,
+Vlkyre,
+Vlkyre.A𝖗𝖌𝖘,
+"./👗Skins/Vlkyre__Shop.png",
+`
+╔══『 ❗𝐈𝐦𝐩𝐨𝐫𝐭𝐚𝐧𝐭 』
+║⚔️𝗕𝗮𝗱𝗴𝗲: ${userBg.Badge}
+║💤𝗥𝗲𝗻𝗲𝘄𝘀: ${Time.hours}h ${Time.minutes}m ${Time.seconds}s
+║💡𝐓𝐢𝐩: Buy Higher Badges Using ${prefix}shop
+╚═══════╝`
+);
+("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
+} else if (Time > 0 && !userBg.Limits == 0 && !FArray.includes(Vlkyre.commandName)) {
+userBg.Limits = userBg.Limits - 1;
+userBg.value = "True";
+await userBg.save();
 await ӄօʟօʀs(ӄryӄnz, Vlkyre);
 return await 𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙(Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓);
-// await Night(Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓, 𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙);
+("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
+} else if (Time < 0 && userBg.Limits == 0 && !FArray.includes(Vlkyre.commandName)) {
+if (userBg.Badge === "🧵Basic 10 Commands") userBg.Limits = 10;
+if (userBg.Badge === "🥉Bronze 20 Commands") userBg.Limits = 20;
+if (userBg.Badge === "🥈Silver 40 Commands") userBg.Limits = 40;
+if (userBg.Badge === "🥇Golden 60 Commands") userBg.Limits = 60;
+if (userBg.Badge === "💍Platinum 80 Commands") userBg.Limits = 80;
+if (userBg.Badge === "💎Diamond 100 Commands") userBg.Limits = 100;
+userBg.CurrentLimitTime = Date.now();
+userBg.value = "True";
+await userBg.save();
+await ӄօʟօʀs(ӄryӄnz, Vlkyre);
+return await 𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙(Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓);
+("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
+} else if (userBg.value === "False" && !FArray.includes(Vlkyre.commandName)) {
+return await Image_Button(
+ӄryӄnz,
+Vlkyre,
+Vlkyre.A𝖗𝖌𝖘,
+"./👗Skins/Vlkyre__Shop.png",
+`
+╔══『 ❗𝐈𝐦𝐩𝐨𝐫𝐭𝐚𝐧𝐭 』
+║⚔️𝗕𝗮𝗱𝗴𝗲: ${userBg.Badge}
+║💤𝗥𝗲𝗻𝗲𝘄𝘀: ${Time.hours}h ${Time.minutes}m ${Time.seconds}s
+║💡𝐓𝐢𝐩: Buy Higher Badges Using ${prefix}shop
+╚═══════╝`
+);
+}
+}
+}
+);
+("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 }
 }
 }
