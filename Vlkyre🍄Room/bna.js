@@ -15,38 +15,38 @@
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 require("../Vlkyre🖋️Utilities/𝕷𝖆ყO𝖚𝖙");
 exports.Bot_Not_Admin = async (ӄryӄnz, Vlkyre) => {
-// await ӄryӄnz.sendPresenceUpdate("composing", Vlkyre.chatID);
-await ӄryӄnz.sendMessage(
-Vlkyre.chatID,
-{
-contextInfo: { mentionedJid: [Vlkyre.sender] },
-image: { url: "./👗Skins/Vlkyre_Orange.png" },
-caption: `╔══『 𝐏𝐫𝐨𝐟𝐢𝐥𝐞𝐫® 』
+  // await ӄryӄnz.sendPresenceUpdate("composing", Vlkyre.chatID);
+  await ӄryӄnz.sendMessage(
+    Vlkyre.chatID,
+    {
+      contextInfo: { mentionedJid: [Vlkyre.sender] },
+      image: { url: "./👗Skins/Vlkyre_Orange.png" },
+      caption: `╔══『 𝐏𝐫𝐨𝐟𝐢𝐥𝐞𝐫® 』
 ║ *❣️ ɴᴀᴍᴇ:* ${Vlkyre.pushName || "No_Name"}
 ║ *⚡ ɪᴅ:* ${Vlkyre.chatID.split("@")[0]}
 ╚═══════╝
 
 
 *❌ERROR:* Make Bot Admin to use Admin-Only commands!`,
-footer: "*⦓ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⦔*",
-buttons: [
-{
-buttonId: prefix + "help",
-buttonText: { displayText: prefix + "help" },
-type: 1,
-},
-{
-buttonId: prefix + "support",
-buttonText: { displayText: prefix + "support" },
-type: 1,
-},
-],
-headerType: 4,
-},
-{
-quoted: Vlkyre,
-}
-);
+      footer: "*⦓ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⦔*",
+      buttons: [
+        {
+          buttonId: prefix + "help",
+          buttonText: { displayText: prefix + "help" },
+          type: 1,
+        },
+        {
+          buttonId: prefix + "support",
+          buttonText: { displayText: prefix + "support" },
+          type: 1,
+        },
+      ],
+      headerType: 4,
+    },
+    {
+      quoted: Vlkyre,
+    }
+  );
 };
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 /*

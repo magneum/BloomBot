@@ -15,34 +15,34 @@
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 require("../Vlkyre🖋️Utilities/𝕷𝖆ყO𝖚𝖙");
 exports.Caught = async (ӄryӄnz, Vlkyre, 𝕮𝖔𝖓𝖙𝖊𝖓𝖙) => {
-return await ӄryӄnz.sendMessage(
-Vlkyre.chatID,
-{
-contextInfo: { mentionedJid: [Vlkyre.sender] },
-image: { url: "./👗Skins/Vlkyre_404.png" },
-caption: `🕊️𝐧𝐚𝐦𝐞: ${Vlkyre.pushName || "ɴᴏ_ɴᴀᴍᴇ"}
+  return await ӄryӄnz.sendMessage(
+    Vlkyre.chatID,
+    {
+      contextInfo: { mentionedJid: [Vlkyre.sender] },
+      image: { url: "./👗Skins/Vlkyre_404.png" },
+      caption: `🕊️𝐧𝐚𝐦𝐞: ${Vlkyre.pushName || "ɴᴏ_ɴᴀᴍᴇ"}
 
 ❗ Vlkyre 𝐀𝐏𝐈 𝐄𝐫𝐫𝐨𝐫 ❗
 Please Try Again Later!`,
-footer: "❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ❞\n⭕Https://youtu.be/phWbTtD45Js",
-buttons: [
-{
-buttonId: prefix + "HELP",
-buttonText: { displayText: prefix + "HELP" },
-type: 1,
-},
-{
-buttonId: prefix + "VLKYRE",
-buttonText: { displayText: prefix + "VLKYRE" },
-type: 1,
-},
-],
-headerType: 4,
-},
-{
-quoted: Vlkyre,
-}
-);
+      footer: "❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ❞\n⭕Https://youtu.be/phWbTtD45Js",
+      buttons: [
+        {
+          buttonId: prefix + "HELP",
+          buttonText: { displayText: prefix + "HELP" },
+          type: 1,
+        },
+        {
+          buttonId: prefix + "VLKYRE",
+          buttonText: { displayText: prefix + "VLKYRE" },
+          type: 1,
+        },
+      ],
+      headerType: 4,
+    },
+    {
+      quoted: Vlkyre,
+    }
+  );
 };
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 /*

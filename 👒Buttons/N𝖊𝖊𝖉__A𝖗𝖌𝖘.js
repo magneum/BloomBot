@@ -15,44 +15,44 @@
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 require("../Vlkyre🖋️Utilities/𝕷𝖆ყO𝖚𝖙");
 exports.N𝖊𝖊𝖉__A𝖗𝖌𝖘 = async (ӄryӄnz, Vlkyre, 𝖀𝖘𝖆𝖌𝖊) => {
-await ӄryӄnz.sendPresenceUpdate("composing", Vlkyre.chatID);
-await ӄryӄnz
-.sendMessage(
-Vlkyre.chatID,
-{
-contextInfo: { mentionedJid: [Vlkyre.sender] },
-image: { url: "./👗Skins/Vlkyre.png" },
-caption: `🕊️𝐧𝐚𝐦𝐞: ${Vlkyre.pushName || "ɴᴏ_ɴᴀᴍᴇ"}
+  await ӄryӄnz.sendPresenceUpdate("composing", Vlkyre.chatID);
+  await ӄryӄnz
+    .sendMessage(
+      Vlkyre.chatID,
+      {
+        contextInfo: { mentionedJid: [Vlkyre.sender] },
+        image: { url: "./👗Skins/Vlkyre.png" },
+        caption: `🕊️𝐧𝐚𝐦𝐞: ${Vlkyre.pushName || "ɴᴏ_ɴᴀᴍᴇ"}
 ${𝖀𝖘𝖆𝖌𝖊}`,
-footer: "❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ❞\n⭕Https://youtu.be/phWbTtD45Js",
-buttons: [
-{
-buttonId: prefix + "HELP",
-buttonText: { displayText: prefix + "HELP" },
-type: 1,
-},
-{
-buttonId: prefix + "VLKYRE",
-buttonText: { displayText: prefix + "VLKYRE" },
-type: 1,
-},
-],
-headerType: 4,
-},
-{
-quoted: Vlkyre,
-}
-)
-.catch((e) => console.log(e));
-let ʀᴇᴀᴄᴛionMessage = {
-ʀᴇᴀᴄᴛ: {
-text: `⚡`,
-key: Vlkyre.key,
-},
-};
-return await ӄryӄnz
-.sendMessage(Vlkyre.chatID, ʀᴇᴀᴄᴛionMessage)
-.catch((e) => console.log(e));
+        footer: "❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ❞\n⭕Https://youtu.be/phWbTtD45Js",
+        buttons: [
+          {
+            buttonId: prefix + "HELP",
+            buttonText: { displayText: prefix + "HELP" },
+            type: 1,
+          },
+          {
+            buttonId: prefix + "VLKYRE",
+            buttonText: { displayText: prefix + "VLKYRE" },
+            type: 1,
+          },
+        ],
+        headerType: 4,
+      },
+      {
+        quoted: Vlkyre,
+      }
+    )
+    .catch((e) => console.log(e));
+  let ʀᴇᴀᴄᴛionMessage = {
+    ʀᴇᴀᴄᴛ: {
+      text: `⚡`,
+      key: Vlkyre.key,
+    },
+  };
+  return await ӄryӄnz
+    .sendMessage(Vlkyre.chatID, ʀᴇᴀᴄᴛionMessage)
+    .catch((e) => console.log(e));
 };
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 /*
@@ -68,7 +68,7 @@ return await ӄryӄnz
 ║ In short, Fork At Your Own Risk.
 ╚════════════╝
 */
-("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");// `|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|`;
+("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|"); // `|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|`;
 
 // // ════════════════════════|▷   (𝐜)Vlkyre 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!   ◁|════════════════════════
 

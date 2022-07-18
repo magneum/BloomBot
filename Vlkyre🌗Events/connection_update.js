@@ -16,25 +16,25 @@
 let chalk = require("chalk");
 let { DisconnectReason } = require("@adiwajshing/baileys");
 let connection_update = async (update, Ѷ𝖎𝖔𝖓ᴇᴏɴᴇ, ӄryӄnz) => {
-const { lastDisconnect, connection, qr } = update;
-if (connection === "close") {
-lastDisconnect.error?.output?.statusCode !== DisconnectReason.loggedOut
-? Ѷ𝖎𝖔𝖓ᴇᴏɴᴇ()
-: console.log("❌𝐄𝐫𝐫𝐨𝐫꧂ Connection closed.");
-}
-if (qr) {
-QR_GENERATE = qr;
-}
-if (connection === "open") {
-console.log(
-chalk.red(
-"|⬡══════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════⬡"
-)
-);
-}
+  const { lastDisconnect, connection, qr } = update;
+  if (connection === "close") {
+    lastDisconnect.error?.output?.statusCode !== DisconnectReason.loggedOut
+      ? Ѷ𝖎𝖔𝖓ᴇᴏɴᴇ()
+      : console.log("❌𝐄𝐫𝐫𝐨𝐫꧂ Connection closed.");
+  }
+  if (qr) {
+    QR_GENERATE = qr;
+  }
+  if (connection === "open") {
+    console.log(
+      chalk.red(
+        "|⬡══════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════⬡"
+      )
+    );
+  }
 };
 module.exports = {
-Vcnup: connection_update,
+  Vcnup: connection_update,
 };
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 /*
