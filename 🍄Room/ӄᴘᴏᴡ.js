@@ -275,13 +275,18 @@ let FArray = [
 "support",
 "unban",
 "verify"];
+if (FArray.includes(Vlkyre.commandName)) {
+    
+}
+
+
 await Bagde.findOne(
 {
 ID: Vlkyre.sender,
 },
 async (error, userBg) => {
 if (error) return Caught(ӄryӄnz, Vlkyre, error);
-if (!userBg && !FArray.includes(Vlkyre.commandName)) {
+if (!userBg) {
 let newUser = new Bagde({
 ID: Vlkyre.sender,
 Badge: "🧵Basic 10 Commands",
@@ -295,7 +300,7 @@ return await 𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙(Vlkyre, ӄryӄnz, ӄ_c
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 } else {
 let Time = ᴍꜱ(userBg.PermanentLimitTime - (Date.now() - userBg.CurrentLimitTime));
-if (Time > 0 && userBg.Limits == 0 && !FArray.includes(Vlkyre.commandName)) {
+if (Time > 0 && userBg.Limits == 0) {
 userBg.value = "False";
 await userBg.save();
 return await Image_Button(
@@ -311,14 +316,14 @@ Vlkyre.A𝖗𝖌𝖘,
 ╚═══════╝`
 );
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
-} else if (Time > 0 && !userBg.Limits == 0 && !FArray.includes(Vlkyre.commandName)) {
+} else if (Time > 0 && !userBg.Limits == 0) {
 userBg.Limits = userBg.Limits - 1;
 userBg.value = "True";
 await userBg.save();
 await ӄօʟօʀs(ӄryӄnz, Vlkyre);
 return await 𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙(Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓);
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
-} else if (Time < 0 && userBg.Limits == 0 && !FArray.includes(Vlkyre.commandName)) {
+} else if (Time < 0 && userBg.Limits == 0) {
 if (userBg.Badge === "🧵Basic 10 Commands") userBg.Limits = 10;
 if (userBg.Badge === "🥉Bronze 20 Commands") userBg.Limits = 20;
 if (userBg.Badge === "🥈Silver 40 Commands") userBg.Limits = 40;
@@ -331,7 +336,7 @@ await userBg.save();
 await ӄօʟօʀs(ӄryӄnz, Vlkyre);
 return await 𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙(Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓);
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
-} else if (userBg.value === "False" && !FArray.includes(Vlkyre.commandName)) {
+} else if (userBg.value === "False") {
 return await Image_Button(
 ӄryӄnz,
 Vlkyre,
