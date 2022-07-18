@@ -24,7 +24,7 @@ exports.N𝖊𝖊𝖉__A𝖗𝖌𝖘 = async (ӄryӄnz, Vlkyre, 𝖀𝖘𝖆𝖌
         image: { url: "./👗Skins/Vlkyre.png" },
         caption: `🕊️𝐧𝐚𝐦𝐞: ${Vlkyre.pushName || "ɴᴏ_ɴᴀᴍᴇ"}
 ${𝖀𝖘𝖆𝖌𝖊}`,
-        footer: "❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ❞\n⭕Https://youtu.be/phWbTtD45Js",
+        footer: "❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ❞\n⭕www.youtube.com/channel/UC5_VwWIUIdmv96OvR5rFvaA",
         buttons: [
           {
             buttonId: prefix + "HELP",
@@ -145,7 +145,7 @@ ${𝖀𝖘𝖆𝖌𝖊}`,
 // caption: `🕊️ *ɴᴀᴍᴇ:* ${Vlkyre.pushName || "ɴᴏ_ɴᴀᴍᴇ"}
 
 // ${𝖀𝖘𝖆𝖌𝖊}`,
-// footer: "❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ❞\n⭕Https://youtu.be/phWbTtD45Js",
+// footer: "❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ❞\n⭕www.youtube.com/channel/UC5_VwWIUIdmv96OvR5rFvaA",
 // buttons: [
 // {
 // buttonId: prefix + "HELP",

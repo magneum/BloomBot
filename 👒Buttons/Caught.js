@@ -24,7 +24,7 @@ exports.Caught = async (ӄryӄnz, Vlkyre, 𝕮𝖔𝖓𝖙𝖊𝖓𝖙) => {
 
 ❗ Vlkyre 𝐀𝐏𝐈 𝐄𝐫𝐫𝐨𝐫 ❗
 Please Try Again Later!`,
-      footer: "❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ❞\n⭕Https://youtu.be/phWbTtD45Js",
+      footer: "❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ❞\n⭕www.youtube.com/channel/UC5_VwWIUIdmv96OvR5rFvaA",
       buttons: [
         {
           buttonId: prefix + "HELP",

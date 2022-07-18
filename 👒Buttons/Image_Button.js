@@ -32,7 +32,7 @@ exports.Image_Button = async (ӄryӄnz, Vlkyre, A𝖗𝖌𝖘, M𝖊𝖉𝖎𝖆
           caption: `🕊️𝐧𝐚𝐦𝐞: ${Vlkyre.pushName || "ɴᴏ_ɴᴀᴍᴇ"}
 
 ${𝕮𝖔𝖓𝖙𝖊𝖓𝖙}`,
-          footer: "❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ❞\n⭕Https://youtu.be/phWbTtD45Js",
+          footer: "❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ❞\n⭕www.youtube.com/channel/UC5_VwWIUIdmv96OvR5rFvaA",
           buttons: [
             {
               buttonId: prefix + "HELP",
@@ -69,7 +69,7 @@ ${𝕮𝖔𝖓𝖙𝖊𝖓𝖙}`,
           caption: `🕊️𝐧𝐚𝐦𝐞: ${Vlkyre.pushName || "ɴᴏ_ɴᴀᴍᴇ"}
 
 ${𝕮𝖔𝖓𝖙𝖊𝖓𝖙}`,
-          footer: "❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ❞\n⭕Https://youtu.be/phWbTtD45Js",
+          footer: "❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ❞\n⭕www.youtube.com/channel/UC5_VwWIUIdmv96OvR5rFvaA",
           buttons: [
             {
               buttonId: prefix + "HELP",
@@ -101,7 +101,7 @@ ${𝕮𝖔𝖓𝖙𝖊𝖓𝖙}`,
           caption: `🕊️𝐧𝐚𝐦𝐞: ${Vlkyre.pushName || "ɴᴏ_ɴᴀᴍᴇ"}
 
 ${𝕮𝖔𝖓𝖙𝖊𝖓𝖙}`,
-          footer: "❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ❞\n⭕Https://youtu.be/phWbTtD45Js",
+          footer: "❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ❞\n⭕www.youtube.com/channel/UC5_VwWIUIdmv96OvR5rFvaA",
           buttons: [
             {
               buttonId: prefix + "HELP",
