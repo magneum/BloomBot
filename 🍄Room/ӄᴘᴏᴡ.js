@@ -226,6 +226,13 @@ await ꜱᴇʀᴄ
 .catch((error) => Caught(ӄryӄnz, Vlkyre, error));
 await ӄօʟօʀs(ӄryӄnz, Vlkyre);
 let FArray = [
+"h",
+"how",
+"help",
+"HELP",
+"m",
+"allmenu",
+
 "menu",
 "admins",
 "antilink",
@@ -260,7 +267,6 @@ let FArray = [
 "nervous",
 "pat",
 "poke",
-"h",
 "punch",
 "sad",
 "scream",
