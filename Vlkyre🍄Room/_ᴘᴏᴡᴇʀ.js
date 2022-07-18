@@ -16,7 +16,7 @@
 require("../🤖Utilities/𝕷𝖆ყO𝖚𝖙");
 let { Caught } = require("../👒Buttons/Caught");
 let { Image_Button } = require("../👒Buttons/Image_Button");
-let UserPrivate = require(`../Vlkyre🌤️Cloud/🍃𝖒𝖔𝖓𝖌𝖔/private`);
+let UserPrivate = require(`../🌤️Cloud/🍃𝖒𝖔𝖓𝖌𝖔/private`);
 exports._ᴘᴏᴡᴇʀ = async (ӄryӄnz, Vlkyre) => {
   await UserPrivate.findOne(
     {
