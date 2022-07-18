@@ -13,15 +13,15 @@
 ╚════════════╝
 */
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
-require("../../Vlkyre🖋️Utilities/𝕷𝖆ყO𝖚𝖙");
+require("../../🤖Utilities/𝕷𝖆ყO𝖚𝖙");
 let {
-isUrl,
-fetchJson,
-getBuffer,
-jsonformat,
-GIFBufferToVideoBuffer,
-getRandom,
-} = require(`../../Vlkyre🖋️Utilities/ɴᴇᴄᴛᴏʀ`);
+  isUrl,
+  fetchJson,
+  getBuffer,
+  jsonformat,
+  GIFBufferToVideoBuffer,
+  getRandom,
+} = require(`../../🤖Utilities/ɴᴇᴄᴛᴏʀ`);
 let fs = require(`fs`);
 let util = require(`util`);
 let hxz = require(`hxz-api`);
@@ -41,39 +41,39 @@ let { Video_Button } = require("../../👒Buttons/Video_Button");
 let { Bot_Not_Admin } = require("../../Vlkyre🧭Compass/Bot_Not_Admin");
 let { Sender_Not_Admin } = require("../../Vlkyre🧭Compass/Sender_Not_Admin");
 let YouTube_Regex =
-/(?:http(?:s|):\/\/|)(?:(?:www\.|)youtube(?:\-nocookie|)\.com\/(?:watch\?.*(?:|\&)v=|embed\/|v\/)|youtu\.be\/)([-_0-9A-Za-z]{11})/;
+  /(?:http(?:s|):\/\/|)(?:(?:www\.|)youtube(?:\-nocookie|)\.com\/(?:watch\?.*(?:|\&)v=|embed\/|v\/)|youtu\.be\/)([-_0-9A-Za-z]{11})/;
 let Present_Path = require(`path`);
 let Script_Name = Present_Path.basename(__filename);
 let Final_Name = Script_Name.slice(0, -3).toLowerCase();
 let { Caught } = require("../../👒Buttons/Caught");
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 exports.iguser = async (
-ӄryӄnz,
-Vlkyre,
-pushName,
-F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-quoted,
-isMedia,
-isGroup,
-isBotAdmin,
-isSenderAdmin,
-isSenderTUF,
-commandName,
-body,
+  ӄryӄnz,
+  Vlkyre,
+  pushName,
+  F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+  quoted,
+  isMedia,
+  isGroup,
+  isBotAdmin,
+  isSenderAdmin,
+  isSenderTUF,
+  commandName,
+  body
 ) => {
-try {
-if (!F𝖚𝖑𝖑_A𝖗𝖌𝖘) {
-return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ӄryӄnz,
-Vlkyre,
-`*❌ERROR:* Please provide a valid instagram ID.!
+  try {
+    if (!F𝖚𝖑𝖑_A𝖗𝖌𝖘) {
+      return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
+        ӄryӄnz,
+        Vlkyre,
+        `*❌ERROR:* Please provide a valid instagram ID.!
 *⚡USAGE:* ${prefix}${Final_Name} <ID>`
-);
-}
-fids = await axios.get(
-`https://api.popcat.xyz/instagram?user=${F𝖚𝖑𝖑_A𝖗𝖌𝖘}`
-);
-let reply = `
+      );
+    }
+    fids = await axios.get(
+      `https://api.popcat.xyz/instagram?user=${F𝖚𝖑𝖑_A𝖗𝖌𝖘}`
+    );
+    let reply = `
 *🀄 Username:* ${fids.data.username}
 *📃 Name:* ${fids.data.full_name}
 *🗣 Private:* ${fids.data.private}
@@ -84,21 +84,21 @@ let reply = `
 *🧑🏻‍🎤 reels:* ${fids.data.reels}
 *📖 Bio:* ${fids.data.biography}
 `;
-return await Image_Button(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.A𝖗𝖌𝖘,
-fids.data.profile_pic,
-reply
-);
-} catch (𝕰𝖗𝖗𝖔𝖗) {
-return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ӄryӄnz,
-Vlkyre,
-`*❌ERROR:* Please provide a valid instagram ID.!
+    return await Image_Button(
+      ӄryӄnz,
+      Vlkyre,
+      Vlkyre.A𝖗𝖌𝖘,
+      fids.data.profile_pic,
+      reply
+    );
+  } catch (𝕰𝖗𝖗𝖔𝖗) {
+    return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
+      ӄryӄnz,
+      Vlkyre,
+      `*❌ERROR:* Please provide a valid instagram ID.!
 *⚡USAGE:* ${prefix}${Final_Name} <ID>`
-);
-}
+    );
+  }
 };
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
 
