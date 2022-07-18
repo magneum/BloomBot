@@ -250,9 +250,7 @@ let FArray = [
 "AudioFilterMenu",
 "VLKYRE",
 "HELP",
-"RULES"
-
-
+"RULES",
 "menu",
 "admins",
 "antilink",
