@@ -15,17 +15,17 @@
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 let Tenors = require(`./Tenor`);
 module.exports = {
-TenorMaker(option) {
-let TenorGot;
-Object.keys(Tenors).filter((key) => {
-if (key === option) TenorGot = Tenors[key];
-});
-if (TenorGot) {
-return TenorGot[Math.floor(Math.random() * TenorGot.length)];
-} else {
-return `Invalid Request`;
-}
-},
+  TenorMaker(option) {
+    let TenorGot;
+    Object.keys(Tenors).filter((key) => {
+      if (key === option) TenorGot = Tenors[key];
+    });
+    if (TenorGot) {
+      return TenorGot[Math.floor(Math.random() * TenorGot.length)];
+    } else {
+      return `Invalid Request`;
+    }
+  },
 };
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 /*

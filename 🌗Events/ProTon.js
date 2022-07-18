@@ -14,9 +14,9 @@
 */
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 require("../🤖Utilities/𝕷𝖆ყO𝖚𝖙");
-let Ranker = require(`../Vlkyre🌤️Cloud/🍃𝖒𝖔𝖓𝖌𝖔/autorank`);
-let ServerDB = require(`../Vlkyre🌤️Cloud/🍃𝖒𝖔𝖓𝖌𝖔/ServerDB`);
-let Welcome = require(`../Vlkyre🌤️Cloud/🍃𝖒𝖔𝖓𝖌𝖔/setwelcome`);
+let Ranker = require(`../🌤️Cloud/🍃𝖒𝖔𝖓𝖌𝖔/autorank`);
+let ServerDB = require(`../🌤️Cloud/🍃𝖒𝖔𝖓𝖌𝖔/ServerDB`);
+let Welcome = require(`../🌤️Cloud/🍃𝖒𝖔𝖓𝖌𝖔/setwelcome`);
 let ProTon = async (ӄryӄnz, Vlkyre) => {
   await ServerDB.findOne(
     {

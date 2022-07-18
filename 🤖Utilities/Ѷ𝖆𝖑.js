@@ -28,12 +28,12 @@ const _0x512219 = _0x2aa6;
 function _0x58e9() {
   const _0x4b207f = [
     "273iVEFsY",
-    "../Vlkyre🌗Events/ProTon",
+    "../🌗Events/ProTon",
     "simple-git",
     "610hNHKHI",
     "243928xwpJZe",
     "../🌤️Cloud/𝖀𝖘𝖊𝖗🍣𝖒𝖔𝖓𝖌𝖔/user",
-    ".././Vlkyre🧵Types/ARanks",
+    "../🍄Room/ARanks",
     "../👒Buttons/Caught",
     "45632kPUIGK",
     "146736ySsdwm",
@@ -42,11 +42,11 @@ function _0x58e9() {
     "16826238TkievS",
     "301889lmmFmv",
     "../🌤️Cloud/🍃𝖒𝖔𝖓𝖌𝖔/private",
-    "../Vlkyre🌗Events/BeutyFly",
+    "../🌗Events/BeutyFly",
     "100aBoUcH",
     "./𝕷𝖆ყO𝖚𝖙",
     "10mmEqjy",
-    ".././Vlkyre🧵Types/DenyLink",
+    ".././🍄Room/DenyLink",
     "../🌤️Cloud/🍃𝖒𝖔𝖓𝖌𝖔/halt",
   ];
   _0x58e9 = function () {
@@ -85,7 +85,7 @@ let fs = require("fs"),
   ProTon = require(_0x512219(0x16a)),
   { Caught } = require(_0x512219(0x170)),
   { ARanks } = require(_0x512219(0x16f)),
-  { ᴘᴏᴡᴇʀᴇᴅ } = require("../Vlkyre🛎️Bell/ᴘᴏᴡᴇʀᴇᴅ"),
+  { ᴘᴏᴡᴇʀᴇᴅ } = require("../Valkyrie🕊️Adapt/Vlkyre🛎️Bell/ᴘᴏᴡᴇʀᴇᴅ"),
   Halt = require(_0x512219(0x168)),
   { BeutyFly } = require(_0x512219(0x178)),
   { DenyLink } = require(_0x512219(0x167)),
@@ -94,7 +94,9 @@ let fs = require("fs"),
   { Image_Button } = require("../👒Buttons/Image_Button"),
   UserPrivate = require(_0x512219(0x177)),
   userBanCheck = require(_0x512219(0x16e)),
-  { ᴋʀʏᴏᴛᴇɴᴏʀ } = require("../Vlkyre🛎️Bell/ᴋʀʏᴏᴛᴇɴᴏʀ/ᴋʀʏᴏᴛᴇɴᴏʀ");
+  {
+    ᴋʀʏᴏᴛᴇɴᴏʀ,
+  } = require("../Valkyrie🕊️Adapt/Vlkyre🛎️Bell/ᴋʀʏᴏᴛᴇɴᴏʀ/ᴋʀʏᴏᴛᴇɴᴏʀ");
 ("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
 module.exports = ӄryӄnz = async (ӄryӄnz, Vlkyre, chatUpdate, Ѷ𝖎𝖔𝖓) => {
   async function SlowDown(Present_Time) {
