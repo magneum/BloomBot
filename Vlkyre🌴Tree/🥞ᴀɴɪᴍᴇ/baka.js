@@ -37,11 +37,11 @@ let moment = require(`moment-timezone`);
 let Carbon = require(`unofficial-carbon-now`);
 let { exec, execSync } = require(`child_process`);
 let { DownloaderHelper } = require("node-downloader-helper");
-let { N𝖊𝖊𝖉__A𝖗𝖌𝖘 } = require("../../Vlkyre👒Hat/N𝖊𝖊𝖉__A𝖗𝖌𝖘");
+let { N𝖊𝖊𝖉__A𝖗𝖌𝖘 } = require("../../👒Buttons/N𝖊𝖊𝖉__A𝖗𝖌𝖘");
 let { Sticker, StickerTypes } = require(`wa-sticker-formatter`);
 let { Group_Only } = require("../../Vlkyre🧭Compass/Group_Only");
-let { Image_Button } = require("../../Vlkyre👒Hat/Image_Button");
-let { Video_Button } = require("../../Vlkyre👒Hat/Video_Button");
+let { Image_Button } = require("../../👒Buttons/Image_Button");
+let { Video_Button } = require("../../👒Buttons/Video_Button");
 let { Bot_Not_Admin } = require("../../Vlkyre🧭Compass/Bot_Not_Admin");
 let { Sender_Not_Admin } = require("../../Vlkyre🧭Compass/Sender_Not_Admin");
 let YouTube_Regex =
@@ -49,7 +49,7 @@ let YouTube_Regex =
 let Present_Path = require(`path`);
 let Script_Name = Present_Path.basename(__filename);
 let Final_Name = Script_Name.slice(0, -3).toLowerCase();
-let { Caught } = require("../../Vlkyre👒Hat/Caught");
+let { Caught } = require("../../👒Buttons/Caught");
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 exports.baka = async (
 ӄryӄnz,
