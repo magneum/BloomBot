@@ -14,7 +14,8 @@
     "👗Skins": "👗Skins",
     "🎒Root": "🎒Root",
     "🖌️Json": "🖌️Json",
-    "🀄Canvas": "🀄Canvas"
+    "🀄Canvas": "🀄Canvas",
+    "🛎️Bell": "🛎️Bell"
   },
   "scripts": {
     "prestart": "git reset --hard && git pull && yarn install --ignore-warnings && pip install -r Valkyrie🕊️Adapt/⭕𝖈𝖆𝖗𝖆.txt && rm yarn.lock",
