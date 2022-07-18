@@ -38,7 +38,6 @@ const Jwork = require(`../../🖌️Json/works.json`);
 let { N𝖊𝖊𝖉__A𝖗𝖌𝖘 } = require("../../👒Buttons/N𝖊𝖊𝖉__A𝖗𝖌𝖘");
 let Economy = require(`../../Vlkyre🌤️Cloud/🍃𝖒𝖔𝖓𝖌𝖔/economy`);
 let { Sticker, StickerTypes } = require(`wa-sticker-formatter`);
-let { Group_Only } = require("../../Vlkyre🧭Compass/Group_Only");
 const JworkR = Jwork[Math.floor(Math.random() * Jwork.length)];
 let { Image_Button } = require("../../👒Buttons/Image_Button");
 let { Video_Button } = require("../../👒Buttons/Video_Button");
