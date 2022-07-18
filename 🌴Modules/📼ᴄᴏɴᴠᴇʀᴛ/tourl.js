@@ -13,15 +13,15 @@
 ╚════════════╝
 */
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
-require("../../Vlkyre🖋️Utilities/𝕷𝖆ყO𝖚𝖙");
+require("../../🤖Utilities/𝕷𝖆ყO𝖚𝖙");
 let {
-isUrl,
-fetchJson,
-getBuffer,
-jsonformat,
-GIFBufferToVideoBuffer,
-getRandom,
-} = require(`../../Vlkyre🖋️Utilities/ɴᴇᴄᴛᴏʀ`);
+  isUrl,
+  fetchJson,
+  getBuffer,
+  jsonformat,
+  GIFBufferToVideoBuffer,
+  getRandom,
+} = require(`../../🤖Utilities/ɴᴇᴄᴛᴏʀ`);
 let fs = require(`fs`);
 let util = require(`util`);
 let hxz = require(`hxz-api`);
@@ -33,7 +33,7 @@ let { Character } = require(`mailist`);
 let moment = require(`moment-timezone`);
 let Carbon = require(`unofficial-carbon-now`);
 let { exec, execSync } = require(`child_process`);
-let { TelegraPh } = require(`../../Vlkyre🖋️Utilities/uploader`);
+let { TelegraPh } = require(`../../🤖Utilities/uploader`);
 let { N𝖊𝖊𝖉__A𝖗𝖌𝖘 } = require("../../👒Buttons/N𝖊𝖊𝖉__A𝖗𝖌𝖘");
 let { Sticker, StickerTypes } = require(`wa-sticker-formatter`);
 let { Group_Only } = require("../../Vlkyre🧭Compass/Group_Only");
@@ -42,57 +42,57 @@ let { Video_Button } = require("../../👒Buttons/Video_Button");
 let { Bot_Not_Admin } = require("../../Vlkyre🧭Compass/Bot_Not_Admin");
 let { Sender_Not_Admin } = require("../../Vlkyre🧭Compass/Sender_Not_Admin");
 let YouTube_Regex =
-/(?:http(?:s|):\/\/|)(?:(?:www\.|)youtube(?:\-nocookie|)\.com\/(?:watch\?.*(?:|\&)v=|embed\/|v\/)|youtu\.be\/)([-_0-9A-Za-z]{11})/;
+  /(?:http(?:s|):\/\/|)(?:(?:www\.|)youtube(?:\-nocookie|)\.com\/(?:watch\?.*(?:|\&)v=|embed\/|v\/)|youtu\.be\/)([-_0-9A-Za-z]{11})/;
 let Present_Path = require(`path`);
 let Script_Name = Present_Path.basename(__filename);
 let Final_Name = Script_Name.slice(0, -3).toLowerCase();
 let { Caught } = require("../../👒Buttons/Caught");
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 exports.tourl = async (
-ӄryӄnz,
-Vlkyre,
-pushName,
-F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-quoted,
-isMedia,
-isGroup,
-isBotAdmin,
-isSenderAdmin,
-isSenderTUF,
-commandName,
-body,
+  ӄryӄnz,
+  Vlkyre,
+  pushName,
+  F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+  quoted,
+  isMedia,
+  isGroup,
+  isBotAdmin,
+  isSenderAdmin,
+  isSenderTUF,
+  commandName,
+  body
 ) => {
-let mime = (Vlkyre.quoted.msg || Vlkyre.quoted).mimetype || "";
-if (!quoted) {
-return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ӄryӄnz,
-Vlkyre,
-`*❌ERROR:*  Could not find any Image/Video in context!
+  let mime = (Vlkyre.quoted.msg || Vlkyre.quoted).mimetype || "";
+  if (!quoted) {
+    return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
+      ӄryӄnz,
+      Vlkyre,
+      `*❌ERROR:*  Could not find any Image/Video in context!
 *⚡USAGE:* ${prefix}${Final_Name} <Tag the sticker>`
-);
-}
+    );
+  }
 
-let media = await ӄryӄnz.downloadAndSaveMediaMessage(quoted);
-if (/image/.test(mime)) {
-let anu = await TelegraPh(media);
-return await Image_Button(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.A𝖗𝖌𝖘,
-"./👗Skins/Vlkyre.png",
-util.format(anu)
-);
-} else if (!/image/.test(mime)) {
-let anu = await TelegraPh(media);
-return await Image_Button(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.A𝖗𝖌𝖘,
-"./👗Skins/Vlkyre.png",
-util.format(anu)
-);
-}
-fs.unlinkSync(media);
+  let media = await ӄryӄnz.downloadAndSaveMediaMessage(quoted);
+  if (/image/.test(mime)) {
+    let anu = await TelegraPh(media);
+    return await Image_Button(
+      ӄryӄnz,
+      Vlkyre,
+      Vlkyre.A𝖗𝖌𝖘,
+      "./👗Skins/Vlkyre.png",
+      util.format(anu)
+    );
+  } else if (!/image/.test(mime)) {
+    let anu = await TelegraPh(media);
+    return await Image_Button(
+      ӄryӄnz,
+      Vlkyre,
+      Vlkyre.A𝖗𝖌𝖘,
+      "./👗Skins/Vlkyre.png",
+      util.format(anu)
+    );
+  }
+  fs.unlinkSync(media);
 };
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 /*
