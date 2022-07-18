@@ -27,7 +27,7 @@ function _0x58cd() {
     "international",
     "events",
     "5kIxTjf",
-    "../Vlkyre🌗Events/call_updates",
+    "../🌗Events/call_updates",
     "concat",
     "name",
     "mtype",
@@ -79,7 +79,7 @@ function _0x58cd() {
     "image",
     "hex",
     "Ѷ𝖎𝖔𝖓",
-    "../Vlkyre🌗Events/group_participants",
+    "../🌗Events/group_participants",
     "asSticker",
     "user",
     "participant",
@@ -138,7 +138,7 @@ function _0x58cd() {
     "Unable\x20to\x20Connected\x20with\x20🍂𝖘𝖖𝖑\x20+\x20🌩️𝖈𝖑𝖔𝖚𝖉𝖉𝖇.",
     "#2D5A27",
     "384004yiUatF",
-    "../Vlkyre🌗Events/connection_update",
+    "../🌗Events/connection_update",
     "directories",
     "catch",
     "Unable\x20to\x20Connected\x20with\x20🍃𝖒𝖔𝖓𝖌𝖔\x20+\x20𝖀𝖘𝖊𝖗🍣𝖒𝖔𝖓𝖌𝖔.",
@@ -970,7 +970,7 @@ async function Ѷ𝖎𝖔𝖓ᴇᴏɴᴇ() {
     _0x568587["ev"]["on"](_0x2eb92a(0x17e), async (_0x370d9a) => {
       const _0x2db894 = _0x2eb92a;
       try {
-        let _0x384513 = require("../Vlkyre🌗Events/messages_upsert");
+        let _0x384513 = require("../🌗Events/messages_upsert");
         await _0x384513["Vmsgup"](_0x370d9a, Ѷ𝖎𝖔𝖓, _0x568587);
       } catch (_0x354c63) {
         generateWA(_0x2db894(0x176), "#ff6347", _0x354c63, _0x2db894(0x180));
