@@ -13,15 +13,15 @@
 ╚════════════╝
 */
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
-require("../../Vlkyre🖋️Utilities/𝕷𝖆ყO𝖚𝖙");
+require("../../🤖Utilities/𝕷𝖆ყO𝖚𝖙");
 let {
-isUrl,
-fetchJson,
-getBuffer,
-jsonformat,
-GIFBufferToVideoBuffer,
-getRandom,
-} = require(`../../Vlkyre🖋️Utilities/ɴᴇᴄᴛᴏʀ`);
+  isUrl,
+  fetchJson,
+  getBuffer,
+  jsonformat,
+  GIFBufferToVideoBuffer,
+  getRandom,
+} = require(`../../🤖Utilities/ɴᴇᴄᴛᴏʀ`);
 let fs = require(`fs`);
 let util = require(`util`);
 let hxz = require(`hxz-api`);
@@ -42,42 +42,42 @@ let { Video_Button } = require("../../👒Buttons/Video_Button");
 let { Bot_Not_Admin } = require("../../Vlkyre🧭Compass/Bot_Not_Admin");
 let { Sender_Not_Admin } = require("../../Vlkyre🧭Compass/Sender_Not_Admin");
 let YouTube_Regex =
-/(?:http(?:s|):\/\/|)(?:(?:www\.|)youtube(?:\-nocookie|)\.com\/(?:watch\?.*(?:|\&)v=|embed\/|v\/)|youtu\.be\/)([-_0-9A-Za-z]{11})/;
+  /(?:http(?:s|):\/\/|)(?:(?:www\.|)youtube(?:\-nocookie|)\.com\/(?:watch\?.*(?:|\&)v=|embed\/|v\/)|youtu\.be\/)([-_0-9A-Za-z]{11})/;
 let Present_Path = require(`path`);
 let Script_Name = Present_Path.basename(__filename);
 let Final_Name = Script_Name.slice(0, -3).toLowerCase();
 let { Caught } = require("../../👒Buttons/Caught");
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 exports.femdom = async (
-ӄryӄnz,
-Vlkyre,
-pushName,
-F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-quoted,
-isMedia,
-isGroup,
-isBotAdmin,
-isSenderAdmin,
-isSenderTUF,
-commandName,
-body,
+  ӄryӄnz,
+  Vlkyre,
+  pushName,
+  F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+  quoted,
+  isMedia,
+  isGroup,
+  isBotAdmin,
+  isSenderAdmin,
+  isSenderTUF,
+  commandName,
+  body
 ) => {
-if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF && !Vlkyre.fromMe) {
-return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-}
-if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF && !Vlkyre.fromMe) {
-return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-}
-("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
-let RawTai = await akaneko.nsfw.femdom();
-await Image_Button(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.A𝖗𝖌𝖘,
-RawTai,
-`👓𝐍𝐨𝐭 𝐒𝐚𝐟𝐞 𝐅𝐨𝐫 𝐖𝐨𝐫𝐤👓
+  if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF && !Vlkyre.fromMe) {
+    return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+  }
+  if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF && !Vlkyre.fromMe) {
+    return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
+  }
+  ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
+  let RawTai = await akaneko.nsfw.femdom();
+  await Image_Button(
+    ӄryӄnz,
+    Vlkyre,
+    Vlkyre.A𝖗𝖌𝖘,
+    RawTai,
+    `👓𝐍𝐨𝐭 𝐒𝐚𝐟𝐞 𝐅𝐨𝐫 𝐖𝐨𝐫𝐤👓
 𝐓𝐨𝐩𝐢𝐜: ${Final_Name}`
-);
+  );
 };
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 /*
