@@ -99,7 +99,7 @@ function _0xeaa4() {
     "child_process",
     "reply",
     "floor",
-    "./𝕷𝖆ყO𝖚𝖙",
+    "./Settings",
     "Bytes",
     "GET",
     "copyNForward",

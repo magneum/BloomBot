@@ -70,7 +70,7 @@ function _0x58cd() {
     "awesome-phonenumber",
     "../package.json",
     "📡DATABASE:\x20",
-    "../🤖Utilities/𝕷𝖆ყO𝖚𝖙",
+    "../🤖Utilities/Settings",
     "red",
     "fromBuffer",
     "whiteBright",

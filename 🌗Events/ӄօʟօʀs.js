@@ -64,7 +64,7 @@ function _0x1dab() {
     "❗\x20𝐒𝐞𝐧𝐝𝐞𝐫\x20𝐀𝐝𝐦𝐢𝐧:\x20",
     "4988088hLCWWs",
     "concat",
-    "../🤖Utilities/𝕷𝖆ყO𝖚𝖙",
+    "../🤖Utilities/Settings",
     "@heroku-cli/color",
     "subject",
     "Gamboge",

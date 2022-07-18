@@ -98,7 +98,7 @@ function _0x4b8f() {
     }
   }
 })(_0x4b8f, 0x3407b),
-  require("../🤖Utilities/𝕷𝖆ყO𝖚𝖙"),
+  require("../🤖Utilities/Settings"),
   (exports["BeutyFly"] = async (_0x3091c1, _0x2c6cf6, _0x1522bf) => {
     const _0x33d70 = _0x2a66;
     console[_0x33d70(0x1d8)](_0x1522bf["red"](_0x33d70(0x1d1))),

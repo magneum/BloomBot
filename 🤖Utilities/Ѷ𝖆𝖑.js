@@ -44,7 +44,7 @@ function _0x58e9() {
     "../🌤️Cloud/🍃𝖒𝖔𝖓𝖌𝖔/private",
     "../🌗Events/BeutyFly",
     "100aBoUcH",
-    "./𝕷𝖆ყO𝖚𝖙",
+    "./Settings",
     "10mmEqjy",
     ".././🍄Room/DenyLink",
     "../🌤️Cloud/🍃𝖒𝖔𝖓𝖌𝖔/halt",
