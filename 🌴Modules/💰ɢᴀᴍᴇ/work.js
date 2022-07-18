@@ -15,12 +15,12 @@
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 require("../../🤖Utilities/Settings");
 let {
-  isUrl,
-  fetchJson,
-  getBuffer,
-  jsonformat,
-  GIFBufferToVideoBuffer,
-  getRandom,
+isUrl,
+fetchJson,
+getBuffer,
+jsonformat,
+GIFBufferToVideoBuffer,
+getRandom,
 } = require(`../../🤖Utilities/ɴᴇᴄᴛᴏʀ`);
 let fs = require(`fs`);
 let util = require(`util`);
@@ -47,92 +47,92 @@ let Final_Name = Script_Name.slice(0, -3).toLowerCase();
 let { Caught } = require("../../👒Buttons/Caught");
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 exports.work = async (
-  ӄryӄnz,
-  Vlkyre,
-  pushName,
-  F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-  quoted,
-  isMedia,
-  isGroup,
-  isBotAdmin,
-  isSenderAdmin,
-  isSenderTUF,
-  commandName,
-  body
+ӄryӄnz,
+Vlkyre,
+pushName,
+F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+quoted,
+isMedia,
+isGroup,
+isBotAdmin,
+isSenderAdmin,
+isSenderTUF,
+commandName,
+body
 ) => {
-  Economy.findOne(
-    {
-      ID: Vlkyre.sender,
-    },
-    async (error, userEco) => {
-      if (error) return Caught(ӄryӄnz, Vlkyre, util.format(Èrrðr));
-      if (!userEco) {
-        var newUser = new Economy({
-          ID: Vlkyre.sender,
-          money: 0,
-          daily: 0,
-          timeout: 86400000,
-          fishdone: 0,
-          fishtimeout: 1800000,
-          workdone: Date.now(),
-          worktimeout: 900000,
-        });
-        await newUser.save().catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
-        return await Image_Button(
-          ӄryӄnz,
-          Vlkyre,
-          Vlkyre.A𝖗𝖌𝖘,
-          "./👗Skins/Vlkyre_DB.png",
-          `╔◇══════════◇╗
+Economy.findOne(
+{
+ID: Vlkyre.sender,
+},
+async (error, userEco) => {
+if (error) return Caught(ӄryӄnz, Vlkyre, util.format(Èrrðr));
+if (!userEco) {
+var newUser = new Economy({
+ID: Vlkyre.sender,
+money: 0,
+daily: 0,
+timeout: 86400000,
+fishdone: 0,
+fishtimeout: 1800000,
+workdone: Date.now(),
+worktimeout: 900000,
+});
+await newUser.save().catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
+return await Image_Button(
+ӄryӄnz,
+Vlkyre,
+Vlkyre.A𝖗𝖌𝖘,
+"./👗Skins/Vlkyre_DB.png",
+`╔◇══════════◇╗
 ┊𝐕𝐥𝐤𝐲𝐫𝐞💵𝐁𝐚𝐧𝐤
 ╚◇══════════◇╝
 
 🧈Added To DB for Current command First Time!
 💰𝗧𝗼𝘁𝗮𝗹 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: Just Opened Your Account!`
-        );
-        ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-      } else {
-        if (userEco.worktimeout - (Date.now() - userEco.workdone) > 0) {
-          let time = ms(userEco.worktimeout - (Date.now() - userEco.workdone));
-          return await Image_Button(
-            ӄryӄnz,
-            Vlkyre,
-            Vlkyre.A𝖗𝖌𝖘,
-            "./👗Skins/Vlkyre_Matte.png",
-            `╔◇══════════════◇╗
+);
+("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
+} else {
+if (userEco.worktimeout - (Date.now() - userEco.workdone) > 0) {
+let time = ms(userEco.worktimeout - (Date.now() - userEco.workdone));
+return await Image_Button(
+ӄryӄnz,
+Vlkyre,
+Vlkyre.A𝖗𝖌𝖘,
+"./👗Skins/Vlkyre_Job.png",
+`╔◇══════════════◇╗
 ┊  𝐕𝐥𝐤𝐲𝐫𝐞💵𝐁𝐚𝐧𝐤
 ╚◇══════════════◇╝
 
 
 ❌ 𝗘𝗿𝗿𝗼𝗿: _You have already worked recently._ 
 🕐 𝗪𝗼𝗿𝗸_𝗔𝗴𝗮𝗶𝗻: ${time.minutes}m ${time.seconds}s`
-          );
-          ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-        } else {
-          let amount = Math.floor(Math.random() * 80) + 1;
-          userEco.money = userEco.money + amount;
-          userEco.workdone = Date.now();
-          userEco.worktimeout = 900000;
-          userEco
-            .save()
-            .catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, Vlkyre, KryChat));
-          return await Image_Button(
-            ӄryӄnz,
-            Vlkyre,
-            Vlkyre.A𝖗𝖌𝖘,
-            "./👗Skins/Vlkyre_Matte.png",
-            `╔◇══════════════◇╗
+);
+("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
+} else {
+let amount = Math.floor(Math.random() * 80) + 1;
+userEco.money = userEco.money + amount;
+userEco.workdone = Date.now();
+userEco.worktimeout = 900000;
+userEco
+.save()
+.catch((error) => ꜰᴜᴄᴋ.catch(error, ӄ𝖗𝖆ӄ𝖎𝖓𝖟𝕷𝖆𝖇, Vlkyre, KryChat));
+return await Image_Button(
+ӄryӄnz,
+Vlkyre,
+Vlkyre.A𝖗𝖌𝖘,
+"./👗Skins/Vlkyre_Job.png",
+`╔◇══════════════◇╗
 ┊  𝐕𝐥𝐤𝐲𝐫𝐞💵𝐁𝐚𝐧𝐤
 ╚◇══════════════◇╝
 
 
 👔𝗪𝗼𝗿𝗸_𝗦𝘁𝗮𝘁𝘂𝘀: ${JworkR}.
 🪙𝗘𝗮𝗿𝗻𝗲𝗱: ${amount}`
-          );
-        }
-      }
-    }
-  );
+);
+}
+}
+}
+);
 };
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 /*
