@@ -38,7 +38,6 @@ let { exec, execSync } = require(`child_process`);
 let { yta } = require(`../../🤖Utilities/y2mate`);
 let { N𝖊𝖊𝖉__A𝖗𝖌𝖘 } = require("../../👒Buttons/N𝖊𝖊𝖉__A𝖗𝖌𝖘");
 let { Sticker, StickerTypes } = require(`wa-sticker-formatter`);
-let { Group_Only } = require("../../Vlkyre🧭Compass/Group_Only");
 let { yta_var } = require(`../../Vlkyre🛎️Bell/letiableServers`);
 let { ytv_var } = require(`../../Vlkyre🛎️Bell/letiableServers`);
 let { Image_Button } = require("../../👒Buttons/Image_Button");
