@@ -133,7 +133,7 @@ module.exports = ӄryӄnz = async (ӄryӄnz, Vlkyre, chatUpdate, Ѷ𝖎𝖔𝖓)
       const _0x5f55aa = [
         "40142JGXwBB",
         "23TsZCbt",
-        "../Vlkyre🍄Room/_ᴘᴏᴡᴇʀ",
+        "../🍄Room/_ᴘᴏᴡᴇʀ",
         "2192nLTiuU",
         "18zemAPU",
         "2930omlHKs",
@@ -242,7 +242,7 @@ module.exports = ӄryӄnz = async (ӄryӄnz, Vlkyre, chatUpdate, Ѷ𝖎𝖔𝖓)
       "4zXiSKK",
       "2748OGDihb",
       "8114821DYcVGc",
-      "../Vlkyre🍄Room/ӄᴘᴏᴡ",
+      "../🍄Room/ӄᴘᴏᴡ",
     ];
     _0xb1bf = function () {
       return _0x5c834b;
