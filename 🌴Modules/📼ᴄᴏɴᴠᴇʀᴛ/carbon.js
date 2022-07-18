@@ -13,15 +13,15 @@
 ╚════════════╝
 */
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
-require("../../Vlkyre🖋️Utilities/𝕷𝖆ყO𝖚𝖙");
+require("../../🤖Utilities/𝕷𝖆ყO𝖚𝖙");
 let {
-isUrl,
-fetchJson,
-getBuffer,
-jsonformat,
-GIFBufferToVideoBuffer,
-getRandom,
-} = require(`../../Vlkyre🖋️Utilities/ɴᴇᴄᴛᴏʀ`);
+  isUrl,
+  fetchJson,
+  getBuffer,
+  jsonformat,
+  GIFBufferToVideoBuffer,
+  getRandom,
+} = require(`../../🤖Utilities/ɴᴇᴄᴛᴏʀ`);
 let fs = require(`fs`);
 let util = require(`util`);
 let hxz = require(`hxz-api`);
@@ -41,61 +41,61 @@ let { Video_Button } = require("../../👒Buttons/Video_Button");
 let { Bot_Not_Admin } = require("../../Vlkyre🧭Compass/Bot_Not_Admin");
 let { Sender_Not_Admin } = require("../../Vlkyre🧭Compass/Sender_Not_Admin");
 let YouTube_Regex =
-/(?:http(?:s|):\/\/|)(?:(?:www\.|)youtube(?:\-nocookie|)\.com\/(?:watch\?.*(?:|\&)v=|embed\/|v\/)|youtu\.be\/)([-_0-9A-Za-z]{11})/;
+  /(?:http(?:s|):\/\/|)(?:(?:www\.|)youtube(?:\-nocookie|)\.com\/(?:watch\?.*(?:|\&)v=|embed\/|v\/)|youtu\.be\/)([-_0-9A-Za-z]{11})/;
 let Present_Path = require(`path`);
 let Script_Name = Present_Path.basename(__filename);
 let Final_Name = Script_Name.slice(0, -3).toLowerCase();
 let { Caught } = require("../../👒Buttons/Caught");
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 exports.carbon = async (
-ӄryӄnz,
-Vlkyre,
-pushName,
-F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-quoted,
-isMedia,
-isGroup,
-isBotAdmin,
-isSenderAdmin,
-isSenderTUF,
-commandName,
-body,
+  ӄryӄnz,
+  Vlkyre,
+  pushName,
+  F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+  quoted,
+  isMedia,
+  isGroup,
+  isBotAdmin,
+  isSenderAdmin,
+  isSenderTUF,
+  commandName,
+  body
 ) => {
-let Themes = [
-`3024 night`,
-`a11y dark`,
-`blackboard`,
-`base 16 (dark)`,
-`base 16 (light)`,
-`cobalt`,
-`duotone`,
-`hopscotch`,
-`lucario`,
-`material`,
-`monokai`,
-`night owl`,
-`nord`,
-`oceanic next`,
-`one light`,
-`one dark`,
-`panda`,
-`paraiso`,
-`seti`,
-`shades of purple`,
-`solarized (dark)`,
-`solarized (light)`,
-`synthwave '84`,
-`twilight`,
-`verminal`,
-`vscode`,
-`yeti`,
-`zenburn`,
-];
-if (!Themes.includes(Vlkyre.A𝖗𝖌𝖘[0])) {
-return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ӄryӄnz,
-Vlkyre,
-`*❌ERROR:*  Wrong Theme Name!
+  let Themes = [
+    `3024 night`,
+    `a11y dark`,
+    `blackboard`,
+    `base 16 (dark)`,
+    `base 16 (light)`,
+    `cobalt`,
+    `duotone`,
+    `hopscotch`,
+    `lucario`,
+    `material`,
+    `monokai`,
+    `night owl`,
+    `nord`,
+    `oceanic next`,
+    `one light`,
+    `one dark`,
+    `panda`,
+    `paraiso`,
+    `seti`,
+    `shades of purple`,
+    `solarized (dark)`,
+    `solarized (light)`,
+    `synthwave '84`,
+    `twilight`,
+    `verminal`,
+    `vscode`,
+    `yeti`,
+    `zenburn`,
+  ];
+  if (!Themes.includes(Vlkyre.A𝖗𝖌𝖘[0])) {
+    return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
+      ӄryӄnz,
+      Vlkyre,
+      `*❌ERROR:*  Wrong Theme Name!
 *⚡USAGE:* ${prefix}${Final_Name} <theme name> <text>
 ╔════◇🌈 𝗧𝗵𝗲𝗺𝗲𝐬
 ║ 3024 night
@@ -127,42 +127,42 @@ Vlkyre,
 ║ yeti
 ║ zenburn
 ╚════════════╝`
-);
-}
-let ThemeInput = Vlkyre.A𝖗𝖌𝖘[0];
-let FinalText = body
-.replace(ThemeInput, "")
-.replace(body[0], "")
-.replace(" ", "")
-.replace(commandName, "")
-.replace(/[^\p{L}\p{N}\p{P}\p{Z}^$\n]/gu, "");
-console.log(FinalText);
+    );
+  }
+  let ThemeInput = Vlkyre.A𝖗𝖌𝖘[0];
+  let FinalText = body
+    .replace(ThemeInput, "")
+    .replace(body[0], "")
+    .replace(" ", "")
+    .replace(commandName, "")
+    .replace(/[^\p{L}\p{N}\p{P}\p{Z}^$\n]/gu, "");
+  console.log(FinalText);
 
-if (FinalText.length > 20) {
-return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ӄryӄnz,
-Vlkyre,
-`*❌ERROR:*  maximum letters can be 20!
+  if (FinalText.length > 20) {
+    return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
+      ӄryӄnz,
+      Vlkyre,
+      `*❌ERROR:*  maximum letters can be 20!
 *⚡USAGE:* ${prefix}${Final_Name} <theme name> <text>`
-);
-}
+    );
+  }
 
-let carbon = new Carbon.createCarbon()
-.setCode(FinalText)
-.setPrettify(true)
-.setTheme(ThemeInput);
-let output = await Carbon.generateCarbon(carbon);
-let ImgPath = "./Vlkyre🎒Bag/" + Date.now().toString() + ".png";
-await fs.createWriteStream(ImgPath).write(output);
-await Image_Button(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.A𝖗𝖌𝖘,
-ImgPath,
-`🌈𝗧𝗵𝗲𝗺𝗲: _${ThemeInput}_
+  let carbon = new Carbon.createCarbon()
+    .setCode(FinalText)
+    .setPrettify(true)
+    .setTheme(ThemeInput);
+  let output = await Carbon.generateCarbon(carbon);
+  let ImgPath = "./Vlkyre🎒Bag/" + Date.now().toString() + ".png";
+  await fs.createWriteStream(ImgPath).write(output);
+  await Image_Button(
+    ӄryӄnz,
+    Vlkyre,
+    Vlkyre.A𝖗𝖌𝖘,
+    ImgPath,
+    `🌈𝗧𝗵𝗲𝗺𝗲: _${ThemeInput}_
 ❗𝗘𝗺𝗼𝗷𝗶: _Will Remove All Emoji!_`
-);
-return await fs.unlinkSync(ImgPath);
+  );
+  return await fs.unlinkSync(ImgPath);
 };
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 /*
