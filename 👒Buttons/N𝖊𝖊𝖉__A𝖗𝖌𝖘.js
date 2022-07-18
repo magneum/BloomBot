@@ -79,7 +79,7 @@ ${𝖀𝖘𝖆𝖌𝖊}`,
 // let ʀᴀɴᴅᴏᴍᴄ = require("random-material-color");
 // let ʀᴀɴᴅᴏᴍᴋ = ʀᴀɴᴅᴏᴍᴄ.getColor();
 // let { registerFont, createCanvas, loadImage } = require("canvas");
-// let usedUser = require(`../Vlkyre🌤️Cloud/𝖀𝖘𝖊𝖗🍣𝖒𝖔𝖓𝖌𝖔/usedUser`);
+// let usedUser = require(`../🌤️Cloud/𝖀𝖘𝖊𝖗🍣𝖒𝖔𝖓𝖌𝖔/usedUser`);
 // exports.N𝖊𝖊𝖉__A𝖗𝖌𝖘 = async (ӄryӄnz, Vlkyre, 𝖀𝖘𝖆𝖌𝖊) => {
 // registerFont("./𝐕𝐥𝐤𝐲𝐫𝐞🀄𝕮𝖆𝖓𝖛𝖆𝖘/Heart_Of_Everything/Heart_Of_Everything.ttf",{ family: "Heart_Of_Everything" });
 // registerFont("./𝐕𝐥𝐤𝐲𝐫𝐞🀄𝕮𝖆𝖓𝖛𝖆𝖘/Housttely_Signature/Housttely_Signature.ttf",{ family: "Housttely_Signature" });
