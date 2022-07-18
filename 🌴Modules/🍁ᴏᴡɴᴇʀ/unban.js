@@ -38,7 +38,6 @@ let { Sticker, StickerTypes } = require(`wa-sticker-formatter`);
 let { Image_Button } = require("../../👒Buttons/Image_Button");
 let { Video_Button } = require("../../👒Buttons/Video_Button");
 let userBanCheck = require("../../Vlkyre🌤️Cloud/𝖀𝖘𝖊𝖗🍣𝖒𝖔𝖓𝖌𝖔/user");
-let { Sender_Not_Admin } = require("../../Vlkyre🧭Compass/Sender_Not_Admin");
 let Present_Path = require(`path`);
 let Script_Name = Present_Path.basename(__filename);
 let Final_Name = Script_Name.slice(0, -3).toLowerCase();
