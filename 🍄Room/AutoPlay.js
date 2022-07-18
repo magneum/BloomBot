@@ -22,7 +22,7 @@ let { Caught } = require("../👒Buttons/Caught");
 let { ytaR } = require("../🤖Utilities/y2mate");
 let Radio = require("../🌤️Cloud/🍃𝖒𝖔𝖓𝖌𝖔/radio");
 let { getBuffer } = require("../🤖Utilities/ɴᴇᴄᴛᴏʀ");
-let { yta_var } = require("../Valkyrie🕊️Adapt/Vlkyre🛎️Bell/letiableServers");
+let { yta_var } = require("../🤖Utilities/letiableServers");
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 exports.AutoPlay = async (ӄryӄnz, Vlkyre) => {
   await Radio.findOne(
