@@ -13,13 +13,13 @@
     "Vlkyre🐍Syphon": "Vlkyre🐍Syphon",
     "Vlkyre🛎️Bell": "Vlkyre🛎️Bell",
     "👗Skins": "👗Skins",
-    "Vlkyre🎒Bag": "Vlkyre🎒Bag",
+    "🎒Root": "🎒Root",
     "🖌️Json": "🖌️Json",
     "🀄Canvas": "🀄Canvas"
   },
   "scripts": {
     "prestart": "git reset --hard && git pull && yarn install --ignore-warnings && pip install -r Valkyrie🕊️Adapt/⭕𝖈𝖆𝖗𝖆.txt && rm yarn.lock",
-    "sync": "node --no-warnings Vlkyre🎒Bag/🪔S𝖞𝖓𝖈.js",
+    "sync": "node --no-warnings 🎒Root/🪔S𝖞𝖓𝖈.js",
     "start": "python3 🌱𝖆𝖕𝖗𝖎𝖑𝖑𝖆.py"
   },
   "dependencies": {
