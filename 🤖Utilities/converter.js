@@ -46,7 +46,7 @@ function _0x53c8() {
     "promises",
     "221367ToyTfy",
     "ffmpeg",
-    "../Vlkyre🎒Bag",
+    "../🎒Root",
     "-c:a",
     "join",
     "unlink",
