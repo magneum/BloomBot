@@ -180,15 +180,15 @@ userBadge.CurrentLimitTime = Date.now();
 userBadge.Limits = 40;
 userBadge.value = "True";
 userBadge.CurrentLimitTime = Date.now();
-} else if (userBadge.Badge === "🥇Golden 60 Commands") {
+} else if (userBadge.Badge === "🥇Golden") {
 userBadge.Limits = 60;
 userBadge.value = "True";
 userBadge.CurrentLimitTime = Date.now();
-} else if (userBadge.Badge === "💍Platinum 80 Commands") {
+} else if (userBadge.Badge === "💍Platinum") {
 userBadge.Limits = 80;
 userBadge.value = "True";
 userBadge.CurrentLimitTime = Date.now();
-} else if (userBadge.Badge === "💎Diamond 100 Commands") {
+} else if (userBadge.Badge === "💎Diamond") {
 serBadge.Limits = 100;
 userBadge.value = "True";
 userBadge.CurrentLimitTime = Date.now();
