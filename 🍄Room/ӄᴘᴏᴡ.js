@@ -37,7 +37,7 @@ let userBanCheck = require("../🌤️Cloud/𝖀𝖘𝖊𝖗🍣𝖒𝖔𝖓𝖌
 let { Image_Button } = require("../👒Buttons/Image_Button");
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 async function badgeTimeout(Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) {
-await ӄryӄnz.sendPresenceUpdate("composing", Vlkyre.chatID);
+// await ӄryӄnz.sendPresenceUpdate("composing", Vlkyre.chatID);
 let FArray = [
 "m",
 "menu",
