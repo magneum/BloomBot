@@ -111,6 +111,7 @@ let FArray = [
 "admins",
 ];
 if (!FArray.includes(`${Vlkyre.commandName}`)) {
+console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐄𝐫𝐫𝐨𝐫: "), ӄօʟօʀ.bgRed("COMMAND NOT IN FARRAY!")));
 await Bagde.findOne(
 {
 ID: Vlkyre.sender,
