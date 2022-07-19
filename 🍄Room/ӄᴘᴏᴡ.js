@@ -112,12 +112,12 @@ let FArray = [
 ];
 if (!FArray.includes(`${Vlkyre.commandName}`)) {
 console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐄𝐫𝐫𝐨𝐫: "), ӄօʟօʀ.bgRed("COMMAND NOT IN ARRAY!")));
-console.log(userBadge || null);
 await Bagde.findOne(
 {
 ID: Vlkyre.sender,
 },
 async (error, userBadge) => {
+console.log(userBadge || null);
 if (error) return Caught(ӄryӄnz, Vlkyre, error);
 if (!userBadge) {
 let newuserBadge = new Bagde({
