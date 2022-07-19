@@ -185,20 +185,6 @@ await userBadge.save().catch((error) => Caught(ӄryӄnz, Vlkyre, error));
 await 𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙(Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓);
 return await ӄօʟօʀs(ӄryӄnz, Vlkyre);
 }
-if (Time < 0 && userBadge.Limits == 0) {
-return await Image_Button(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.A𝖗𝖌𝖘,
-"./👗Skins/Vlkyre__Shop.png",
-`
-╔══『 ❗𝐈𝐦𝐩𝐨𝐫𝐭𝐚𝐧𝐭 』
-║⚔️𝗕𝗮𝗱𝗴𝗲: ${userBadge.Badge}
-║💤𝗥𝗲𝗻𝗲𝘄𝘀: ${Time.hours}h ${Time.minutes}m ${Time.seconds}s
-║💡𝐓𝐢𝐩: Buy Higher Badges Using ${prefix}shop
-╚═══════╝`
-);
-}
 }
 );
 } else {
