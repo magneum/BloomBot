@@ -142,22 +142,13 @@ Vlkyre.A𝖗𝖌𝖘,
 }
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 let Time = ᴍꜱ(userBadge.PermanentLimitTime - (Date.now() - userBadge.CurrentLimitTime));
-if (Time < 0 && !userBadge.Limits === 0) {
-console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐄𝐫𝐫𝐨𝐫: "), ӄօʟօʀ.bgRed("Time > 0 && userBadge.Limits === 0")));
-userBadge.value = "False";
+if (Time > 0 && !userBadge.Limits === 0) {
+console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐄𝐫𝐫𝐨𝐫: "), ӄօʟօʀ.bgRed("Time > 0 && !userBadge.Limits === 0")));
+userBadge.value = "True";
+userBadge.Limits = userBadge.Limits - 1;
 await userBadge.save().catch((error) => Caught(ӄryӄnz, Vlkyre, error));
-return await Image_Button(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.A𝖗𝖌𝖘,
-"./👗Skins/Vlkyre__Shop.png",
-`
-╔══『 ❗𝐈𝐦𝐩𝐨𝐫𝐭𝐚𝐧𝐭 』
-║⚔️𝗕𝗮𝗱𝗴𝗲: ${userBadge.Badge}
-║💤𝗥𝗲𝗻𝗲𝘄𝘀: ${Time.hours}h ${Time.minutes}m ${Time.seconds}s
-║💡𝐓𝐢𝐩: Buy Higher Badges Using ${prefix}shop
-╚═══════╝`
-);
+await 𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙(Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓);
+return await ӄօʟօʀs(ӄryӄnz, Vlkyre);
 } 
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 if (Time > 0 && userBadge.Limits === 0) {
