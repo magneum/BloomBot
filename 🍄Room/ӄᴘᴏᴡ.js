@@ -111,7 +111,6 @@ let FArray = [
 "admins",
 ];
 if (!FArray.includes(`${Vlkyre.commandName}`)) {
-console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐄𝐫𝐫𝐨𝐫: "), ӄօʟօʀ.bgRed("COMMAND NOT IN ARRAY!")));
 await Bagde.findOne(
 {
 ID: Vlkyre.sender,
@@ -135,15 +134,15 @@ return await Image_Button(
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
 "./👗Skins/Vlkyre_15AKv5i_omy24uvWcz64NpA.png",
-`*🧈Added To DB for Current command First Time!*
-⚔️𝗕𝗮𝗱𝗴𝗲: 🧵Basic 
-🧀𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬: 10 Commands`
+`⚔️𝗕𝗮𝗱𝗴𝗲: 🧵Basic 
+🧀𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬: 10 Commands/day
+*🧈Added To DB for Current command First Time!*`
 );
 }
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 let Time = ᴍꜱ(userBadge.PermanentLimitTime - (Date.now() - userBadge.CurrentLimitTime));
-if (Time > 0 && !userBadge.Limits === 0) {
-console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐄𝐫𝐫𝐨𝐫: "), ӄօʟօʀ.bgRed("Time > 0 && !userBadge.Limits === 0")));
+if (Time < 0 && !userBadge.Limits === 0) {
+console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐄𝐫𝐫𝐨𝐫: "), ӄօʟօʀ.bgRed("Time < 0 && !userBadge.Limits === 0")));
 userBadge.value = "True";
 userBadge.Limits = userBadge.Limits - 1;
 await userBadge.save().catch((error) => Caught(ӄryӄnz, Vlkyre, error));
