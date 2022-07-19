@@ -111,7 +111,8 @@ let FArray = [
 "admins",
 ];
 if (!FArray.includes(`${Vlkyre.commandName}`)) {
-console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐄𝐫𝐫𝐨𝐫: "), ӄօʟօʀ.bgRed("COMMAND NOT IN FARRAY!")));
+console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐄𝐫𝐫𝐨𝐫: "), ӄօʟօʀ.bgRed("COMMAND NOT IN ARRAY!")));
+console.log(userBadge || null);
 await Bagde.findOne(
 {
 ID: Vlkyre.sender,
@@ -160,7 +161,7 @@ Vlkyre.A𝖗𝖌𝖘,
 } 
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 if (Time > 0 && !userBadge.Limits == 0) {
-console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐄𝐫𝐫𝐨𝐫: "), ӄօʟօʀ.bgRed("COMMAND 2!")));
+console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐄𝐫𝐫𝐨𝐫: "), ӄօʟօʀ.bgRed("Time > 0 && !userBadge.Limits == 0!")));
 userBadge.value = "True";
 userBadge.Limits = userBadge.Limits - 1;
 await userBadge.save().catch((error) => Caught(ӄryӄnz, Vlkyre, error));
