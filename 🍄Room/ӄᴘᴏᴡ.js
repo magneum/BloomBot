@@ -37,21 +37,21 @@ let userBanCheck = require("../🌤️Cloud/𝖀𝖘𝖊𝖗🍣𝖒𝖔𝖓𝖌
 let { Image_Button } = require("../👒Buttons/Image_Button");
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 async function badgeTimeout(Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) {
-// await ӄryӄnz.sendPresenceUpdate("composing", Vlkyre.chatID);
+await ӄryӄnz.sendPresenceUpdate("composing", Vlkyre.chatID);
 let FArray = [
 "m",
 "menu",
 "allmenu",
 "command",
 "commands",
-"h",
-"how",
+"h"
+"how"
 "help",
 "HELP",
 "r",
-"rule",
-"rules",
-"RULES",
+"rule"
+"rules"
+"RULES"
 "webmenu",
 "gamemenu",
 "nsfwmenu",
@@ -116,12 +116,12 @@ await Bagde.findOne(
 ID: Vlkyre.sender,
 },
 async (error, userBadge) => {
-console.log(userBadge || null);
 if (error) return Caught(ӄryӄnz, Vlkyre, error);
 if (!userBadge) {
 let newuserBadge = new Bagde({
 ID: Vlkyre.sender,
-Badge: "🧵Basic",
+Badge: "🧵Basic 10 Commands",
+value: "True",
 Limits: 10,
 CurrentLimitTime: Date.now(),
 PermanentLimitTime: 43200000,
@@ -133,14 +133,15 @@ return await Image_Button(
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
 "./👗Skins/Vlkyre_15AKv5i_omy24uvWcz64NpA.png",
-`⚔️𝗕𝗮𝗱𝗴𝗲: 🧵Basic 
-🧀𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬: 10 Commands/day
-*🧈Added To DB for Current command First Time!*`
+`*🧈Added To DB for Current command First Time!*
+⚔️𝗕𝗮𝗱𝗴𝗲: 🧵Basic 
+🧀𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬: 10 Commands`
 );
 }
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 let Time = ᴍꜱ(userBadge.PermanentLimitTime - (Date.now() - userBadge.CurrentLimitTime));
 if (Time > 0 && userBadge.Limits == 0) {
+userBadge.value = "False";
 await userBadge.save().catch((error) => Caught(ӄryӄnz, Vlkyre, error));
 return await Image_Button(
 ӄryӄnz,
@@ -154,53 +155,78 @@ Vlkyre.A𝖗𝖌𝖘,
 ║💡𝐓𝐢𝐩: Buy Higher Badges Using ${prefix}shop
 ╚═══════╝`
 );
-}
-if (Time > 0 && !userBadge.Limits == 0) {
+("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
+} else if (Time > 0 && !userBadge.Limits == 0) {
+userBadge.value = "True";
 userBadge.Limits = userBadge.Limits - 1;
 await userBadge.save().catch((error) => Caught(ӄryӄnz, Vlkyre, error));
 await 𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙(Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓);
 return await ӄօʟօʀs(ӄryӄnz, Vlkyre);
-}
-if (Time < 0 && userBadge.Limits == 0) {
-if (userBadge.Badge === "🧵Basic") {
+("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
+} else if (Time < 0 && userBadge.Limits == 0) {
+if (userBadge.Badge === "🧵Basic 10 Commands") {
 userBadge.Limits = 10;
+userBadge.value = "True";
 userBadge.CurrentLimitTime = Date.now();
-} else if (userBadge.Badge === "🥉Bronze") {
+} else if (userBadge.Badge === "🥉Bronze 20 Commands") {
 userBadge.Limits = 20;
+userBadge.value = "True";
 userBadge.CurrentLimitTime = Date.now();
-} else if (userBadge.Badge === "🥈Silver") {
+} else if (userBadge.Badge === "🥈Silver 40 Commands") {
 userBadge.Limits = 40;
+userBadge.value = "True";
 userBadge.CurrentLimitTime = Date.now();
-} else if (userBadge.Badge === "🥇Golden") {
+} else if (userBadge.Badge === "🥇Golden 60 Commands") {
 userBadge.Limits = 60;
+userBadge.value = "True";
 userBadge.CurrentLimitTime = Date.now();
-} else if (userBadge.Badge === "💍Platinum") {
+} else if (userBadge.Badge === "💍Platinum 80 Commands") {
 userBadge.Limits = 80;
+userBadge.value = "True";
 userBadge.CurrentLimitTime = Date.now();
-} else if (userBadge.Badge === "💎Diamond") {
+} else if (userBadge.Badge === "💎Diamond 100 Commands") {
 serBadge.Limits = 100;
+userBadge.value = "True";
 userBadge.CurrentLimitTime = Date.now();
 }
 await userBadge.save().catch((error) => Caught(ӄryӄnz, Vlkyre, error));
 await 𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙(Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓);
 return await ӄօʟօʀs(ӄryӄnz, Vlkyre);
-}
-}
+("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
+} else if (userBadge.value === "False") {
+return await Image_Button(
+ӄryӄnz,
+Vlkyre,
+Vlkyre.A𝖗𝖌𝖘,
+"./👗Skins/Vlkyre__Shop.png",
+`
+╔══『 ❗𝐈𝐦𝐩𝐨𝐫𝐭𝐚𝐧𝐭 』
+║⚔️𝗕𝗮𝗱𝗴𝗲: ${userBadge.Badge}
+║💤𝗥𝗲𝗻𝗲𝘄𝘀: ${Time.hours}h ${Time.minutes}m ${Time.seconds}s
+║💡𝐓𝐢𝐩: Buy Higher Badges Using ${prefix}shop
+╚═══════╝`
 );
 } else {
 await 𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙(Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓);
 return await ӄօʟօʀs(ӄryӄnz, Vlkyre);
 }
 }
+);
+("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
+} else {
+console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐄𝐫𝐫𝐨𝐫: "), ӄօʟօʀ.bgRed("Default Command Executed!")));
+await 𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙(Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓);
+return await ӄօʟօʀs(ӄryӄnz, Vlkyre);
+}
+}
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 exports.ӄᴘᴏᴡ = async (Ѷ𝖎𝖔𝖓, ӄryӄnz, Vlkyre) => {
-if (Vlkyre.isCommand && !Vlkyre.isSenderTUF) return;
 if (Vlkyre.message) {
 try {
 let ʀᴇᴠ_ɢɪᴛʜᴜʙ = ʀᴇᴠ_ɢɪᴛ();
 await ʀᴇᴠ_ɢɪᴛʜᴜʙ.fetch();
 let ɴᴇᴡ = await ɢɪᴛᴄᴀʟʟ.log(["🐍Ş𝖎𝖕𝖍𝖔𝖓®..origin/🐍Ş𝖎𝖕𝖍𝖔𝖓®"]);
-if (ɴᴇᴡ.total != 0)
+if (ɴᴇᴡ.total != 0) {
 await Hoku.delete(
 "/apps/" + HEROKU_APP_NAME + "/dynos/" + "worker"
 ).catch((error) =>
@@ -208,6 +234,7 @@ console.log(
 ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐇𝐞𝐫𝐨𝐤𝐮 𝐄𝐫𝐫𝐨𝐫: "), ӄօʟօʀ.bgRed(error))
 )
 );
+}
 } catch (error) {
 console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐄𝐫𝐫𝐨𝐫: "), ӄօʟօʀ.bgRed(error)));
 }
@@ -287,30 +314,14 @@ let MeA = [];
 let MeB = [];
 let MeC = [];
 let MeD = [];
-let ʀᴇꜱᴘᴏɴꜱᴇ1 = await ӄryӄnz.groupInviteCode(
-"120363020792949649@g.us"
-);
-let ʀᴇꜱᴘᴏɴꜱᴇ2 = await ӄryӄnz.groupInviteCode(
-"120363039223842047@g.us"
-);
-let ʀᴇꜱᴘᴏɴꜱᴇ3 = await ӄryӄnz.groupInviteCode(
-"120363024871653603@g.us"
-);
-let ʀᴇꜱᴘᴏɴꜱᴇ4 = await ӄryӄnz.groupInviteCode(
-"120363042762307739@g.us"
-);
-let ʀᴇꜱᴘᴏɴꜱᴇA = await ӄryӄnz.groupMetadata(
-"120363020792949649@g.us"
-);
-let ʀᴇꜱᴘᴏɴꜱᴇB = await ӄryӄnz.groupMetadata(
-"120363039223842047@g.us"
-);
-let ʀᴇꜱᴘᴏɴꜱᴇC = await ӄryӄnz.groupMetadata(
-"120363024871653603@g.us"
-);
-let ʀᴇꜱᴘᴏɴꜱᴇD = await ӄryӄnz.groupMetadata(
-"120363042762307739@g.us"
-);
+let ʀᴇꜱᴘᴏɴꜱᴇ1 = await ӄryӄnz.groupInviteCode("120363020792949649@g.us");
+let ʀᴇꜱᴘᴏɴꜱᴇ2 = await ӄryӄnz.groupInviteCode("120363039223842047@g.us");
+let ʀᴇꜱᴘᴏɴꜱᴇ3 = await ӄryӄnz.groupInviteCode("120363024871653603@g.us");
+let ʀᴇꜱᴘᴏɴꜱᴇ4 = await ӄryӄnz.groupInviteCode("120363042762307739@g.us");
+let ʀᴇꜱᴘᴏɴꜱᴇA = await ӄryӄnz.groupMetadata("120363020792949649@g.us");
+let ʀᴇꜱᴘᴏɴꜱᴇB = await ӄryӄnz.groupMetadata("120363039223842047@g.us");
+let ʀᴇꜱᴘᴏɴꜱᴇC = await ӄryӄnz.groupMetadata("120363024871653603@g.us");
+let ʀᴇꜱᴘᴏɴꜱᴇD = await ӄryӄnz.groupMetadata("120363042762307739@g.us");
 for (let i = 0; i < ʀᴇꜱᴘᴏɴꜱᴇA.participants.length; i++)
 MeA[i] = ʀᴇꜱᴘᴏɴꜱᴇA.participants[i].id;
 for (let i = 0; i < ʀᴇꜱᴘᴏɴꜱᴇB.participants.length; i++)
@@ -340,10 +351,13 @@ Vlkyre.isCommand &&
 !MeC.includes(Vlkyre.sender) &&
 !MeD.includes(Vlkyre.sender)
 ) {
-return Vlkyre.reply(`❗𝐕𝐄𝐑𝐓𝐈𝐅𝐈𝐂𝐀𝐓𝐈𝐎𝐍❗
+return await ӄryӄnz.sendMessage(Vlkyre.chatID, {
+text: `❗𝐕𝐄𝐑𝐓𝐈𝐅𝐈𝐂𝐀𝐓𝐈𝐎𝐍❗
 @${Vlkyre.sender.split("@")[0]}
 *Check The Verification Video:*
-youtube.com/channel/UC5_VwWIUIdmv96OvR5rFvaA`);
+youtube.com/channel/UC5_VwWIUIdmv96OvR5rFvaA`,
+contextInfo: { mentionedJid: [Vlkyre.sender] },
+});
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 } else {
 await usedUser.findOne(
@@ -363,7 +377,7 @@ await ɴᴇᴡᴜꜱᴇʀᴄ.save().catch((error) => Caught(ӄryӄnz, Vlkyre, er
 await ӄryӄnz.sendPresenceUpdate("composing", Vlkyre.chatID);
 await 𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙(Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓);
 return await ӄօʟօʀs(ӄryӄnz, Vlkyre);
-}
+} 
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 let ᴄʟᴏᴄᴋ = ᴍꜱ(ꜱᴇʀᴄ.PermaTime - (Date.now() - ꜱᴇʀᴄ.LastTime));
 if (ꜱᴇʀᴄ.PermaTime - (Date.now() - ꜱᴇʀᴄ.LastTime) > 0) {
