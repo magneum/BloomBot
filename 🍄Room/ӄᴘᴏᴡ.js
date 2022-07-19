@@ -213,10 +213,10 @@ return await ӄօʟօʀs(ӄryӄnz, Vlkyre);
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 exports.ӄᴘᴏᴡ = async (Ѷ𝖎𝖔𝖓, ӄryӄnz, Vlkyre) => {
 if (Vlkyre.isCommand && !Vlkyre.isSenderTUF) {
-return await ӄryӄnz.sendMessage(Vlkyre.chatID, {
-text: "❌𝐇𝐞𝐫𝐨𝐤𝐮: Sorry Bot Under Cooldown so wait!",
-contextInfo: { mentionedJid: [Vlkyre.sender] },
-});
+return Vlkyre.reply(`❗𝐕𝐄𝐑𝐓𝐈𝐅𝐈𝐂𝐀𝐓𝐈𝐎𝐍❗
+@${Vlkyre.sender.split("@")[0]}
+*Check The Verification Video:*
+youtube.com/channel/UC5_VwWIUIdmv96OvR5rFvaA`);
 }
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 if (Vlkyre.message) {
@@ -349,13 +349,10 @@ Vlkyre.isCommand &&
 !MeC.includes(Vlkyre.sender) &&
 !MeD.includes(Vlkyre.sender)
 ) {
-return await ӄryӄnz.sendMessage(Vlkyre.chatID, {
-text: `❗𝐕𝐄𝐑𝐓𝐈𝐅𝐈𝐂𝐀𝐓𝐈𝐎𝐍❗
+return Vlkyre.reply(`❗𝐕𝐄𝐑𝐓𝐈𝐅𝐈𝐂𝐀𝐓𝐈𝐎𝐍❗
 @${Vlkyre.sender.split("@")[0]}
 *Check The Verification Video:*
-youtube.com/channel/UC5_VwWIUIdmv96OvR5rFvaA`,
-contextInfo: { mentionedJid: [Vlkyre.sender] },
-});
+youtube.com/channel/UC5_VwWIUIdmv96OvR5rFvaA`);
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 } else {
 await usedUser.findOne(
