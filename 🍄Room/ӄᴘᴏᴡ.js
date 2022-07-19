@@ -226,7 +226,7 @@ return await ӄօʟօʀs(ӄryӄnz, Vlkyre);
 }
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 exports.ӄᴘᴏᴡ = async (Ѷ𝖎𝖔𝖓, ӄryӄnz, Vlkyre) => {
-if (!Vlkyre.isSenderTUF) {
+if (Vlkyre.isCommand && !Vlkyre.isSenderTUF) {
 return await ӄryӄnz.sendMessage(Vlkyre.chatID, {
 text: "❌𝐇𝐞𝐫𝐨𝐤𝐮: Sorry Bot Under Cooldown!",
 contextInfo: { mentionedJid: [Vlkyre.sender] },
