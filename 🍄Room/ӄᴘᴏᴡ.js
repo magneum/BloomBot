@@ -141,12 +141,6 @@ Vlkyre.A𝖗𝖌𝖘,
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 let Time = ᴍꜱ(userBadge.PermanentLimitTime - (Date.now() - userBadge.CurrentLimitTime));
 if (Time < 0 && !userBadge.Limits === 0) {
-console.log(
-ӄօʟօʀ.black(
-ӄօʟօʀ.bgWhite("❌𝐄𝐫𝐫𝐨𝐫: "),
-ӄօʟօʀ.bgRed("Time < 0 && !userBadge.Limits === 0")
-)
-);
 userBadge.Limits = userBadge.Limits - 1;
 await userBadge.save().catch((error) => Caught(ӄryӄnz, Vlkyre, error));
 await 𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙(Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓);
