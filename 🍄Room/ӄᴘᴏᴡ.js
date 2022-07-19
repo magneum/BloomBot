@@ -122,7 +122,6 @@ if (!userBadge) {
 let newuserBadge = new Bagde({
 ID: Vlkyre.sender,
 Badge: "🧵Basic",
-value: "True",
 Limits: 10,
 CurrentLimitTime: Date.now(),
 PermanentLimitTime: 43200000,
@@ -143,7 +142,6 @@ Vlkyre.A𝖗𝖌𝖘,
 let Time = ᴍꜱ(userBadge.PermanentLimitTime - (Date.now() - userBadge.CurrentLimitTime));
 if (Time < 0 && !userBadge.Limits === 0) {
 console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐄𝐫𝐫𝐨𝐫: "), ӄօʟօʀ.bgRed("Time < 0 && !userBadge.Limits === 0")));
-userBadge.value = "True";
 userBadge.Limits = userBadge.Limits - 1;
 await userBadge.save().catch((error) => Caught(ӄryӄnz, Vlkyre, error));
 await 𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙(Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓);
@@ -151,8 +149,6 @@ return await ӄօʟօʀs(ӄryӄnz, Vlkyre);
 } 
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 if (Time > 0 && userBadge.Limits === 0) {
-console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐄𝐫𝐫𝐨𝐫: "), ӄօʟօʀ.bgRed("Time > 0 && userBadge.Limits === 0")));
-userBadge.value = "False";
 await userBadge.save().catch((error) => Caught(ӄryӄnz, Vlkyre, error));
 return await Image_Button(
 ӄryӄnz,
@@ -169,30 +165,23 @@ Vlkyre.A𝖗𝖌𝖘,
 } 
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 if (Time < 0 && userBadge.Limits === 0) {
-console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐄𝐫𝐫𝐨𝐫: "), ӄօʟօʀ.bgRed("Time < 0 && userBadge.Limits === 0")));
 if (userBadge.Badge === "🧵Basic") {
 userBadge.Limits = 10;
-userBadge.value = "True";
 userBadge.CurrentLimitTime = Date.now();
 } else if (userBadge.Badge === "🥉Bronze") {
 userBadge.Limits = 20;
-userBadge.value = "True";
 userBadge.CurrentLimitTime = Date.now();
 } else if (userBadge.Badge === "🥈Silver") {
 userBadge.Limits = 40;
-userBadge.value = "True";
 userBadge.CurrentLimitTime = Date.now();
 } else if (userBadge.Badge === "🥇Golden") {
 userBadge.Limits = 60;
-userBadge.value = "True";
 userBadge.CurrentLimitTime = Date.now();
 } else if (userBadge.Badge === "💍Platinum") {
 userBadge.Limits = 80;
-userBadge.value = "True";
 userBadge.CurrentLimitTime = Date.now();
 } else if (userBadge.Badge === "💎Diamond") {
 serBadge.Limits = 100;
-userBadge.value = "True";
 userBadge.CurrentLimitTime = Date.now();
 }
 await userBadge.save().catch((error) => Caught(ӄryӄnz, Vlkyre, error));
@@ -200,8 +189,7 @@ await 𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙(Vlkyre, ӄryӄnz, ӄ_counter,
 return await ӄօʟօʀs(ӄryӄnz, Vlkyre);
 } 
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
-if (userBadge.Limits === 0 && userBadge.value === "False") {
-console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐄𝐫𝐫𝐨𝐫: "), ӄօʟօʀ.bgRed("userBadge.Limits === 0 && userBadge.value === False")));
+if (userBadge.Limits === 0) {
 return await Image_Button(
 ӄryӄnz,
 Vlkyre,
