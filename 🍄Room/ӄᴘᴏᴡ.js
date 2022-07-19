@@ -121,7 +121,7 @@ if (error) return Caught(ӄryӄnz, Vlkyre, error);
 if (!userBadge) {
 let newuserBadge = new Bagde({
 ID: Vlkyre.sender,
-Badge: "🧵Basic 10 Commands",
+Badge: "🧵Basic",
 value: "True",
 Limits: 10,
 CurrentLimitTime: Date.now(),
@@ -168,15 +168,15 @@ return await ӄօʟօʀs(ӄryӄnz, Vlkyre);
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 } else if (Time < 0 && userBadge.Limits == 0) {
 console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐄𝐫𝐫𝐨𝐫: "), ӄօʟօʀ.bgRed("COMMAND 3!")));
-if (userBadge.Badge === "🧵Basic 10 Commands") {
+if (userBadge.Badge === "🧵Basic") {
 userBadge.Limits = 10;
 userBadge.value = "True";
 userBadge.CurrentLimitTime = Date.now();
-} else if (userBadge.Badge === "🥉Bronze 20 Commands") {
+} else if (userBadge.Badge === "🥉Bronze") {
 userBadge.Limits = 20;
 userBadge.value = "True";
 userBadge.CurrentLimitTime = Date.now();
-} else if (userBadge.Badge === "🥈Silver 40 Commands") {
+} else if (userBadge.Badge === "🥈Silver") {
 userBadge.Limits = 40;
 userBadge.value = "True";
 userBadge.CurrentLimitTime = Date.now();
