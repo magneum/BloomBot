@@ -126,9 +126,7 @@ Limits: 10,
 CurrentLimitTime: Date.now(),
 PermanentLimitTime: 43200000,
 });
-await newuserBadge
-.save()
-.catch((error) => Caught(ӄryӄnz, Vlkyre, error));
+await newuserBadge.save().catch((error) => Caught(ӄryӄnz, Vlkyre, error));
 await ӄօʟօʀs(ӄryӄnz, Vlkyre);
 return await Image_Button(
 ӄryӄnz,
@@ -141,10 +139,7 @@ Vlkyre.A𝖗𝖌𝖘,
 );
 }
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
-let Time = ᴍꜱ(
-userBadge.PermanentLimitTime -
-(Date.now() - userBadge.CurrentLimitTime)
-);
+let Time = ᴍꜱ(userBadge.PermanentLimitTime - (Date.now() - userBadge.CurrentLimitTime));
 if (Time < 0 && !userBadge.Limits === 0) {
 console.log(
 ӄօʟօʀ.black(
@@ -153,16 +148,12 @@ console.log(
 )
 );
 userBadge.Limits = userBadge.Limits - 1;
-await userBadge
-.save()
-.catch((error) => Caught(ӄryӄnz, Vlkyre, error));
+await userBadge.save().catch((error) => Caught(ӄryӄnz, Vlkyre, error));
 await 𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙(Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓);
 return await ӄօʟօʀs(ӄryӄnz, Vlkyre);
 }
 if (Time > 0 && userBadge.Limits === 0) {
-await userBadge
-.save()
-.catch((error) => Caught(ӄryӄnz, Vlkyre, error));
+await userBadge.save().catch((error) => Caught(ӄryӄnz, Vlkyre, error));
 return await Image_Button(
 ӄryӄnz,
 Vlkyre,
@@ -196,9 +187,7 @@ userBadge.CurrentLimitTime = Date.now();
 serBadge.Limits = 100;
 userBadge.CurrentLimitTime = Date.now();
 }
-await userBadge
-.save()
-.catch((error) => Caught(ӄryӄnz, Vlkyre, error));
+await userBadge.save().catch((error) => Caught(ӄryӄnz, Vlkyre, error));
 await 𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙(Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓);
 return await ӄօʟօʀs(ӄryӄnz, Vlkyre);
 }
@@ -264,9 +253,7 @@ Total: Ѷ𝖎𝖔𝖓𝖒𝖔𝖓𝖌𝖔,
 LastTime: Date.now(),
 PermaTime: 10000,
 });
-return await ɴᴇᴡᴜꜱᴇʀᴄ
-.save()
-.catch((error) => Caught(ӄryӄnz, Vlkyre, error));
+return await ɴᴇᴡᴜꜱᴇʀᴄ.save().catch((error) => Caught(ӄryӄnz, Vlkyre, error));
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 } else {
 ꜱᴇʀᴄ.Total = ꜱᴇʀᴄ.Total + Ѷ𝖎𝖔𝖓𝖒𝖔𝖓𝖌𝖔;
@@ -398,9 +385,7 @@ Total: 0,
 LastTime: 0,
 PermaTime: 15000,
 });
-await ɴᴇᴡᴜꜱᴇʀᴄ
-.save()
-.catch((error) => Caught(ӄryӄnz, Vlkyre, error));
+await ɴᴇᴡᴜꜱᴇʀᴄ.save().catch((error) => Caught(ӄryӄnz, Vlkyre, error));
 await ӄryӄnz.sendPresenceUpdate("composing", Vlkyre.chatID);
 await 𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙(Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓);
 return await ӄօʟօʀs(ӄryӄnz, Vlkyre);
@@ -411,9 +396,7 @@ if (ꜱᴇʀᴄ.PermaTime - (Date.now() - ꜱᴇʀᴄ.LastTime) > 0) {
 return Vlkyre.reply("*❌Error:* Wait for 15secs!");
 }
 ꜱᴇʀᴄ.LastTime = Date.now();
-await ꜱᴇʀᴄ
-.save()
-.catch((error) => Caught(ӄryӄnz, Vlkyre, error));
+await ꜱᴇʀᴄ.save().catch((error) => Caught(ӄryӄnz, Vlkyre, error));
 return await badgeTimeout(Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓);
 }
 );
