@@ -18,11 +18,11 @@ let ᴍꜱ = require("parse-ms");
 let ӄօʟօʀ = require("chalk");
 let { Night } = require("./Night");
 let ʀᴇᴠ_ɢɪᴛ = require("simple-git");
+let { ShortC } = require("./ShortC");
 let { ARanks } = require("./ARanks");
 let ɢɪᴛᴄᴀʟʟ = require("simple-git")();
 let Heroku = require("heroku-client");
 let { DenyLink } = require("./DenyLink");
-let { 𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙 } = require("./𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙");
 let { req } = require("pino-std-serializers");
 let Hoku = new Heroku({ token: HEROKU_API_KEY });
 let ProTon = require("../🌗Events/ProTon");
@@ -219,7 +219,7 @@ return Vlkyre.reply(
 ꜱᴇʀᴄ.LastTime = Date.now();
 await ꜱᴇʀᴄ.save().catch((error) => Caught(ӄryӄnz, Vlkyre, error));
 await ӄryӄnz.sendPresenceUpdate("composing", Vlkyre.chatID);
-await 𝕮𝖆𝖘𝖊𝕮𝖎𝖗𝖈𝖚𝖎𝖙(Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓);
+await ShortC(Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓);
 return await ӄօʟօʀs(ӄryӄnz, Vlkyre);
 }
 }
