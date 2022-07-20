@@ -23,18 +23,18 @@ let { ARanks } = require("./ARanks");
 let ɢɪᴛᴄᴀʟʟ = require("simple-git")();
 let Heroku = require("heroku-client");
 let { DenyLink } = require("./DenyLink");
-let { req } = require("pino-std-serializers");
-let Hoku = new Heroku({ token: HEROKU_API_KEY });
 let ProTon = require("../🌗Events/ProTon");
-let { Caught } = require("../👒Buttons/Caught");
+let { req } = require("pino-std-serializers");
 let { ӄօʟօʀs } = require("../🌗Events/ӄօʟօʀs");
+let { Caught } = require("../👒Buttons/Caught");
+let Hoku = new Heroku({ token: HEROKU_API_KEY });
 let Bagde = require("../🌤️Cloud/🍃𝖒𝖔𝖓𝖌𝖔/badge");
-let { simpleGit, CleanOptions } = require("simple-git");
 let Ranker = require("../🌤️Cloud/🍃𝖒𝖔𝖓𝖌𝖔/autorank");
 let LinkList = require("../🌤️Cloud/🍃𝖒𝖔𝖓𝖌𝖔/antilink");
-let { Image_Button } = require("../👒Buttons/Image_Button");
+let { simpleGit, CleanOptions } = require("simple-git");
 let usedUser = require("../🌤️Cloud/𝖀𝖘𝖊𝖗🍣𝖒𝖔𝖓𝖌𝖔/usedUser");
 let userBanCheck = require("../🌤️Cloud/𝖀𝖘𝖊𝖗🍣𝖒𝖔𝖓𝖌𝖔/user");
+let { Image_Button } = require("../👒Buttons/Image_Button");
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 exports.ӄᴘᴏᴡ = async (Ѷ𝖎𝖔𝖓, ӄryӄnz, Vlkyre) => {
 if (Vlkyre.message) {
@@ -70,7 +70,9 @@ Total: Ѷ𝖎𝖔𝖓𝖒𝖔𝖓𝖌𝖔,
 LastTime: Date.now(),
 PermaTime: 10000,
 });
-return await ɴᴇᴡᴜꜱᴇʀᴄ.save().catch((error) => Caught(ӄryӄnz, Vlkyre, error));
+return await ɴᴇᴡᴜꜱᴇʀᴄ
+.save()
+.catch((error) => Caught(ӄryӄnz, Vlkyre, error));
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 } else {
 ꜱᴇʀᴄ.Total = ꜱᴇʀᴄ.Total + Ѷ𝖎𝖔𝖓𝖒𝖔𝖓𝖌𝖔;
@@ -205,7 +207,9 @@ Total: 0,
 LastTime: 0,
 PermaTime: 15000,
 });
-return await ɴᴇᴡᴜꜱᴇʀᴄ.save().catch((error) => Caught(ӄryӄnz, Vlkyre, error));
+return await ɴᴇᴡᴜꜱᴇʀᴄ
+.save()
+.catch((error) => Caught(ӄryӄnz, Vlkyre, error));
 } else {
 let ᴄʟᴏᴄᴋ = ᴍꜱ(
 ꜱᴇʀᴄ.PermaTime - (Date.now() - ꜱᴇʀᴄ.LastTime)
@@ -214,11 +218,15 @@ if (ꜱᴇʀᴄ.PermaTime - (Date.now() - ꜱᴇʀᴄ.LastTime) > 0) {
 return Vlkyre.reply(
 "*❌Error:* Wait for " + ᴄʟᴏᴄᴋ.seconds + "secs!"
 );
-("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 } else {
 ꜱᴇʀᴄ.LastTime = Date.now();
-await ꜱᴇʀᴄ.save().catch((error) => Caught(ӄryӄnz, Vlkyre, error));
-await ӄryӄnz.sendPresenceUpdate("composing", Vlkyre.chatID);
+await ꜱᴇʀᴄ
+.save()
+.catch((error) => Caught(ӄryӄnz, Vlkyre, error));
+await ӄryӄnz.sendPresenceUpdate(
+"composing",
+Vlkyre.chatID
+);
 await ShortC(Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓);
 return await ӄօʟօʀs(ӄryӄnz, Vlkyre);
 }

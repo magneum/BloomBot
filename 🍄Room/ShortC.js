@@ -672,10 +672,7 @@ break;
 case "dbrem":
 case "dataclean":
 case "purgedata":
-if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
+if (!Vlkyre.isSenderTUF) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
 await dbrem(
 ӄryӄnz,
 Vlkyre,

@@ -42,6 +42,7 @@
     "async": "^2.4.1",
     "awesome-phonenumber": "^2.64.0",
     "axios": "^0.24.0",
+    "bcrypt": "^5.0.1",
     "bing-image-search-api-scraper": "^1.0.0",
     "brainly-scraper": "^1.0.3",
     "browser-id3-writer": "^4.4.0",
