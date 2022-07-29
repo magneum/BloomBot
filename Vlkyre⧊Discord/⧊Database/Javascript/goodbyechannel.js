@@ -6,6 +6,6 @@ const goodbyeSchema = new mongoose.Schema({
   vlkyreֆɨɖ: String,
 });
 const MessageModel = (module.exports = mongoose.model(
-  "Djs.Goodbye",
+  "goodbye",
   goodbyeSchema
 ));

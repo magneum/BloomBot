@@ -6,6 +6,6 @@ const JoinMsgSchema = new mongoose.Schema({
   vlkyreֆɨɖ: String,
 });
 const MessageModel = (module.exports = mongoose.model(
-  "Djs.Joinmsg",
+  "joinmsg",
   JoinMsgSchema
 ));

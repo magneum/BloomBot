@@ -5,7 +5,4 @@ const LeaveMsgSchema = new mongoose.Schema({
   },
   vlkyreֆɨɖ: String,
 });
-const ByeModel = (module.exports = mongoose.model(
-  "Djs.Leavemsg",
-  LeaveMsgSchema
-));
+const ByeModel = (module.exports = mongoose.model("leavemsg", LeaveMsgSchema));

@@ -6,6 +6,6 @@ const welcomeSchema = new mongoose.Schema({
   vlkyreֆɨɖ: String,
 });
 const MessageModel = (module.exports = mongoose.model(
-  "Djs.Welcomer",
+  "welcomer",
   welcomeSchema
 ));

@@ -1,9 +1,9 @@
 const mongoose = require("mongoose");
 const channelSchema = new mongoose.Schema({
-  Channel_ID: String,
-  Guild_ID: String,
+Channel_ID: String,
+Guild_ID: String,
 });
 const channelModel = (module.exports = mongoose.model(
-  "Djs.channelupdates",
-  channelSchema
+"channelupdates",
+channelSchema
 ));

@@ -11,4 +11,4 @@ const roleSchema = new mongoose.Schema({
     required: true,
   },
 });
-const roleModel = (module.exports = mongoose.model("Djs.Autorole", roleSchema));
+const roleModel = (module.exports = mongoose.model("autorole", roleSchema));

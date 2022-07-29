@@ -9,4 +9,4 @@ var userSchema = new mongoose.Schema({
   warns: Number,
   avatarURL: String,
 });
-module.exports = mongoose.model("Djs.Users", userSchema);
+module.exports = mongoose.model("Users", userSchema);

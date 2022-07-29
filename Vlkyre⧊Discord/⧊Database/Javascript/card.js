@@ -3,4 +3,4 @@ var cardsSchema = new mongoose.Schema({
   did: String,
   link: String,
 });
-module.exports = mongoose.model("Djs.Cards", cardsSchema);
+module.exports = mongoose.model("Cards", cardsSchema);

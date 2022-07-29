@@ -63,7 +63,7 @@ true
 })
 .catch((error) =>
 message.reply(
-"**❌ᴇʀʀᴏʀ:** _Sorry There Was a problem with the command.\nPlease try again later!_"
+"**❌Error:** _Sorry There Was a problem with the command.\nPlease try again later!_"
 )
 );
 }
@@ -82,7 +82,7 @@ ARGUMENTS NEEDED\n\`\`\`**`)
 .addField(`**「 🧀ᴜꜱᴀɢᴇ 」**`, `${bot.prefix}${FinalName} <anime name>`, true),
 ] }).catch((error) => { 
 console.log(error.message);
-message.reply("**❌ᴇʀʀᴏʀ:** _Sorry There Was a problem with the command.\nPlease try again later!_")
+message.reply("**❌Error:** _Sorry There Was a problem with the command.\nPlease try again later!_")
 });
 
 return await message.reply({ embeds: [ 
@@ -99,7 +99,7 @@ ARGUMENTS NEEDED\n\`\`\`**`)
 .addField(`**「 🧀ᴜꜱᴀɢᴇ 」**`, `${bot.prefix}${FinalName} <anime name>`, true),
 ] }).catch((error) => { 
 console.log(error.message);
-message.reply("**❌ᴇʀʀᴏʀ:** _Sorry There Was a problem with the command.\nPlease try again later!_")
+message.reply("**❌Error:** _Sorry There Was a problem with the command.\nPlease try again later!_")
 });
 
 return await message.reply({ embeds: [ 
@@ -116,7 +116,7 @@ ARGUMENTS NEEDED\n\`\`\`**`)
 .addField(`**「 🧀ᴜꜱᴀɢᴇ 」**`, `${bot.prefix}${FinalName} <anime name>`, true),
 ] }).catch((error) => { 
 console.log(error.message);
-message.reply("**❌ᴇʀʀᴏʀ:** _Sorry There Was a problem with the command.\nPlease try again later!_")
+message.reply("**❌Error:** _Sorry There Was a problem with the command.\nPlease try again later!_")
 });
 
 

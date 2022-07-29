@@ -4,6 +4,6 @@ const messageSchema = new mongoose.Schema({
   vlkyreƈɦɨɖ: String,
 });
 const messageModel = (module.exports = mongoose.model(
-  "Djs.Messagelogs",
+  "messagelogs",
   messageSchema
 ));

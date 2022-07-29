@@ -4,6 +4,6 @@ const guildSchema = new mongoose.Schema({
   vlkyreƈɦɨɖ: String,
 });
 const guildModel = (module.exports = mongoose.model(
-  "Djs.Guildupdates",
+  "guildupdates",
   guildSchema
 ));

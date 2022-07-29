@@ -4,6 +4,6 @@ const memberSchema = new mongoose.Schema({
   vlkyreƈɦɨɖ: String,
 });
 const memberModel = (module.exports = mongoose.model(
-  "Djs.Memberupdates",
+  "memberupdates",
   memberSchema
 ));
