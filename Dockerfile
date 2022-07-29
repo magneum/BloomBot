@@ -22,7 +22,7 @@ RUN aptitude install -y jq git curl wget ffmpeg nodejs npm bpm-tools python3-pip
 RUN curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl && chmod a+rx /usr/local/bin/youtube-dl && curl https://cli-assets.heroku.com/install.sh | sh && heroku plugins:install heroku-builds && cd Vlkyre
 WORKDIR /Vlkyre
 RUN pip install -r 🕊️Adapt/⭕𝖈𝖆𝖗𝖆.txt && npm install -g n pm2 yarn && n install 16 && hash -r && yarn global add --ignore-engine spotify-dl spdl-core typescript forever && yarn config set ignore-engines true && yarn install --ignore-engines
-# RUN git config --global user.name "KryKnz" && git config --global user.email "KrakinzKon@gmail.com" && git config pull.rebase false && git init --initial-branch=🐍Ş𝖎𝖕𝖍𝖔𝖓® && git fetch origin 🐍Ş𝖎𝖕𝖍𝖔𝖓® && git reset --hard origin/🐍Ş𝖎𝖕𝖍𝖔𝖓® 
+# RUN git config --global user.name "KryKnz" && git config --global user.email "KrakinzKon@gmail.com" && git config pull.rebase false && git init --initial-branch=®𝐊𝐫𝐲𝐙𝐨𝐧𝐞 && git fetch origin ®𝐊𝐫𝐲𝐙𝐨𝐧𝐞 && git reset --hard origin/®𝐊𝐫𝐲𝐙𝐨𝐧𝐞 
 CMD python3 🌱𝖆𝖕𝖗𝖎𝖑𝖑𝖆.py
 # ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 # // ╔⧉༻ [ 𝐕𝐥𝐤𝐲𝐫𝐞🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬! 
