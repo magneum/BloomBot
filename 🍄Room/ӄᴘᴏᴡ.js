@@ -205,7 +205,7 @@ let ɴᴇᴡᴜꜱᴇʀᴄ = new usedUser({
 User: Vlkyre.sender,
 Total: 0,
 LastTime: 0,
-PermaTime: 4000,
+PermaTime: 20000,
 });
 return await ɴᴇᴡᴜꜱᴇʀᴄ
 .save()

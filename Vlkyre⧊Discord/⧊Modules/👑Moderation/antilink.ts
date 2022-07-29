@@ -27,10 +27,10 @@ import { Song } from "../../⧊Structure/Song";
 import { splitBar } from "string-progressbar";
 import { canModifyQueue } from "../../⧊Utils/queue";
 let FinalName = ScriptName.slice(0, -3).toLowerCase();
-const prefixModel = require("../../⧊Database/antilink");
 import { playlistPattern } from "../../⧊Utils/patterns";
 import { MusicQueue } from "../../⧊Structure/MusicQueue";
 import { Message, MessageEmbed, TextChannel } from "discord.js";
+const prefixModel = require("../../⧊Database/Javascript/antilink");
 export default {
 name: FinalName,
 category: "👑Moderation",

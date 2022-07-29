@@ -29,8 +29,8 @@ import { canModifyQueue } from "../../⧊Utils/queue";
 let FinalName = ScriptName.slice(0, -3).toLowerCase();
 import { playlistPattern } from "../../⧊Utils/patterns";
 import { MusicQueue } from "../../⧊Structure/MusicQueue";
-const channelData = require("../../⧊Database/channelupdate");
 import { Message, MessageEmbed, TextChannel } from "discord.js";
+const channelData = require("../../⧊Database/Javascript/channelupdate");
 export default {
 name: FinalName,
 category: "👑Moderation",

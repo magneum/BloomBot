@@ -20,11 +20,11 @@ import { readdirSync } from "fs";
 import { config } from "../⧊Utils/config";
 import { MusicQueue } from "./MusicQueue";
 import { Command } from "../⧊Interfaces/Command";
-const antilinkData = require("../⧊Database/antilink");
-const channelData = require("../⧊Database/channelupdate");
 import { Client, Collection, Snowflake } from "discord.js";
 import { checkPermissions } from "../⧊Utils/checkPermissions";
 import { Message, MessageEmbed, TextChannel } from "discord.js";
+const antilinkData = require("../⧊Database/Javascript/antilink");
+const channelData = require("../⧊Database/Javascript/channelupdate");
 const escapeRegex = (str: string) => str.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 import { MissingPermissionsException } from "../⧊Utils/MissingPermissionsException";
 function generateStyle(Topic: any, TName: any, Text: any, Name: any) {
