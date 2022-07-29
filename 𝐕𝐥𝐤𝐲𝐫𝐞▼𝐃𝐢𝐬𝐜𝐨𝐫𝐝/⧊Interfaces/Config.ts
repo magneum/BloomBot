@@ -1,9 +1,0 @@
-export interface Config {
-  TOKEN;
-  MAX_PLAYLIST_SIZE;
-  DEFAULT_VOLUME;
-  STAY_TIME;
-  PRUNING;
-  LOCALE;
-  PREFIX;
-}
