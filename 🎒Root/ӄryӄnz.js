@@ -592,7 +592,7 @@ gradient: ["red", "yellow"],
 });
 }
 
-let connection_update = require("../Vlkyre🌗Events/connection_update");
+let connection_update = require("../🌗Events/connection_update");
 await connection_update.Vcnup(update, Ѷ𝖎𝖔𝖓ᴇᴏɴᴇ, ӄryӄnz);
 } catch (error) {
 generateWA("❌ᴇʀʀᴏʀ: ", "#ff6347", error, "#ed7777");
@@ -602,7 +602,7 @@ generateWA("❌ᴇʀʀᴏʀ: ", "#ff6347", error, "#ed7777");
 ӄryӄnz.ev.on("creds.update", (update) => Adapt(update));
 ӄryӄnz.ev.on("messages.upsert", async (update) => {
 try {
-let messages_upsert = require("../Vlkyre🌗Events/messages_upsert");
+let messages_upsert = require("../🌗Events/messages_upsert");
 await messages_upsert.Vmsgup(update, Ѷ𝖎𝖔𝖓, ӄryӄnz);
 } catch (error) {
 generateWA("❌ᴇʀʀᴏʀ: ", "#ff6347", error, "#ed7777");
@@ -611,7 +611,7 @@ generateWA("❌ᴇʀʀᴏʀ: ", "#ff6347", error, "#ed7777");
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 ӄryӄnz.ev.on("group-participants.update", async (update) => {
 try {
-let group_participants = require("../Vlkyre🌗Events/group_participants");
+let group_participants = require("../🌗Events/group_participants");
 await group_participants.Vgrpns(update, ӄryӄnz);
 } catch (error) {
 generateWA("❌ᴇʀʀᴏʀ: ", "#ff6347", error, "#ed7777");
@@ -620,7 +620,7 @@ generateWA("❌ᴇʀʀᴏʀ: ", "#ff6347", error, "#ed7777");
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 ӄryӄnz.ws.on("CB:call", async (update) => {
 try {
-let call_updates = require("../Vlkyre🌗Events/call_updates");
+let call_updates = require("../🌗Events/call_updates");
 await call_updates.Vclup(ӄryӄnz, update);
 } catch (error) {
 generateWA("❌ᴇʀʀᴏʀ: ", "#ff6347", error, "#ed7777");
