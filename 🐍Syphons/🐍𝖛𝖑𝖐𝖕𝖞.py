@@ -61,9 +61,9 @@ try :#line:67
     subprocess .run (["git","config","--global","user.name","KryKnz"],check =True ,stdout =subprocess .PIPE ).stdout #line:68
     subprocess .run (["git","config","--global","user.email","krakinzkon@gmail.com"],check =True ,stdout =subprocess .PIPE ).stdout #line:69
     subprocess .run (["git","config","pull.rebase","false"],check =True ,stdout =subprocess .PIPE ).stdout #line:70
-    subprocess .run (["git","init","--initial-branch=®𝐊𝐫𝐲𝐙𝐨𝐧𝐞"],check =True ,stdout =subprocess .PIPE ).stdout #line:71
-    subprocess .run (["git","fetch","origin","®𝐊𝐫𝐲𝐙𝐨𝐧𝐞"],check =True ,stdout =subprocess .PIPE ).stdout #line:72
-    subprocess .run (["git","reset","--hard","origin/®𝐊𝐫𝐲𝐙𝐨𝐧𝐞"],check =True ,stdout =subprocess .PIPE ).stdout #line:73
+    subprocess .run (["git","init","--initial-branch=𝐕𝐥𝐤𝐲𝐫𝐞▲𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩"],check =True ,stdout =subprocess .PIPE ).stdout #line:71
+    subprocess .run (["git","fetch","origin","𝐕𝐥𝐤𝐲𝐫𝐞▲𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩"],check =True ,stdout =subprocess .PIPE ).stdout #line:72
+    subprocess .run (["git","reset","--hard","origin/𝐕𝐥𝐤𝐲𝐫𝐞▲𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩"],check =True ,stdout =subprocess .PIPE ).stdout #line:73
     subprocess .run (["git","pull"],check =True ,stdout =subprocess .PIPE ).stdout #line:74
     if ᴠʟᴋʏʀᴇ =="HEROKU":#line:75
         LOGS .info (str ("🐍𝐏𝐲: git sync done!"))#line:76
@@ -81,9 +81,9 @@ except Exception as Error :#line:79
         subprocess .run (["git","config","--global","user.name","KryKnz"],check =True ,stdout =subprocess .PIPE ).stdout #line:88
         subprocess .run (["git","config","--global","user.email","krakinzkon@gmail.com"],check =True ,stdout =subprocess .PIPE ).stdout #line:89
         subprocess .run (["git","config","pull.rebase","false"],check =True ,stdout =subprocess .PIPE ).stdout #line:90
-        subprocess .run (["git","init","--initial-branch=®𝐊𝐫𝐲𝐙𝐨𝐧𝐞"],check =True ,stdout =subprocess .PIPE ).stdout #line:91
-        subprocess .run (["git","fetch","origin","®𝐊𝐫𝐲𝐙𝐨𝐧𝐞"],check =True ,stdout =subprocess .PIPE ).stdout #line:92
-        subprocess .run (["git","reset","--hard","origin/®𝐊𝐫𝐲𝐙𝐨𝐧𝐞"],check =True ,stdout =subprocess .PIPE ).stdout #line:93
+        subprocess .run (["git","init","--initial-branch=𝐕𝐥𝐤𝐲𝐫𝐞▲𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩"],check =True ,stdout =subprocess .PIPE ).stdout #line:91
+        subprocess .run (["git","fetch","origin","𝐕𝐥𝐤𝐲𝐫𝐞▲𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩"],check =True ,stdout =subprocess .PIPE ).stdout #line:92
+        subprocess .run (["git","reset","--hard","origin/𝐕𝐥𝐤𝐲𝐫𝐞▲𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩"],check =True ,stdout =subprocess .PIPE ).stdout #line:93
         subprocess .run (["git","stash"],check =True ,stdout =subprocess .PIPE ).stdout #line:94
         subprocess .run (["git","stash","drop"],check =True ,stdout =subprocess .PIPE ).stdout #line:95
         subprocess .run (["git","pull"],check =True ,stdout =subprocess .PIPE ).stdout #line:96
