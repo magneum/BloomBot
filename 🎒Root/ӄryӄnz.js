@@ -628,30 +628,29 @@ generateWA("❌ᴇʀʀᴏʀ: ", "#ff6347", error, "#ed7777");
 });
 return ӄryӄnz;
 }
-async function FsDex() {
-if (!fs.existsSync("./𝐕𝐥𝐤𝐲𝐫𝐞.ts")) process.exit(0);
-let folders = [".", ...Object.keys(require("../package.json").directories)];
-let files = [];
-for (let folder of folders)
-for (let file of Fs.readdirSync(folder).filter((v) => v.endsWith(`.js`)))
-files.push(path.resolve(path.join(folder, file)));
-for (let file of files) {
-let Fils = [file];
-if (file == path.join(__dirname, __filename)) continue;
-spawn("node", ["-c", file])
-.on("exit", () => {
-Fs.readFile(file, function (err, content) {
-if (err) throw err;
-if (content.indexOf("ᴀʙ™") > -1 === false) process.exit(0);
-if (content.indexOf("𝐲𝐫𝐞") > -1 === false) process.exit(0);
-});
-}).stderr.on("data", (chunk) => assert.fail(chunk.toString()));
-}
-await Ѷ𝖎𝖔𝖓ᴇᴏɴᴇ().catch((error) =>
-generateWA("❌ᴇʀʀᴏʀ: ", "#ff6347", error, "#ed7777")
-);
-}
-FsDex().catch((error) => generateWA("❌ᴇʀʀᴏʀ: ", "#ff6347", error, "#ed7777"));
+// async function FsDex() {
+// if (!fs.existsSync("./𝐕𝐥𝐤𝐲𝐫𝐞.ts")) process.exit(0);
+// let folders = [".", ...Object.keys(require("../package.json").directories)];
+// let files = [];
+// for (let folder of folders)
+// for (let file of Fs.readdirSync(folder).filter((v) => v.endsWith(`.js`)))
+// files.push(path.resolve(path.join(folder, file)));
+// for (let file of files) {
+// let Fils = [file];
+// if (file == path.join(__dirname, __filename)) continue;
+// spawn("node", ["-c", file])
+// .on("exit", () => {
+// Fs.readFile(file, function (err, content) {
+// if (err) throw err;
+// if (content.indexOf("ᴀʙ™") > -1 === false) process.exit(0);
+// if (content.indexOf("𝐲𝐫𝐞") > -1 === false) process.exit(0);
+// });
+// })
+// .stderr.on("data", (chunk) => assert.fail(chunk.toString()));
+// }
+// }
+// FsDex().catch((error) => generateWA("❌ᴇʀʀᴏʀ: ", "#ff6347", error, "#ed7777"));
+Ѷ𝖎𝖔𝖓ᴇᴏɴᴇ().catch((error) => generateWA("❌ᴇʀʀᴏʀ: ", "#ff6347", error, "#ed7777"));
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 /*
 ╔⧉༻ [ 𝐕𝐥𝐤𝐲𝐫𝐞🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬! 
