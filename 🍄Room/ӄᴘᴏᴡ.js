@@ -23,19 +23,19 @@ let { ARanks } = require("./ARanks");
 let ɢɪᴛᴄᴀʟʟ = require("simple-git")();
 let Heroku = require("heroku-client");
 let { DenyLink } = require("./DenyLink");
-let ProTon = require("../🌗Events/ProTon");
 let { req } = require("pino-std-serializers");
-let { ӄօʟօʀs } = require("../🌗Events/ӄօʟօʀs");
-let { Caught } = require("../👒Buttons/Caught");
 let Hoku = new Heroku({ token: HEROKU_API_KEY });
+let ProTon = require("../🌗Events/ProTon");
+let { Caught } = require("../👒Buttons/Caught");
+let { ӄօʟօʀs } = require("../🌗Events/ӄօʟօʀs");
 let Bagde = require("../🌤️Cloud/🍃𝖒𝖔𝖓𝖌𝖔/badge");
+let { simpleGit, CleanOptions } = require("simple-git");
 let Ranker = require("../🌤️Cloud/🍃𝖒𝖔𝖓𝖌𝖔/autorank");
 let LinkList = require("../🌤️Cloud/🍃𝖒𝖔𝖓𝖌𝖔/antilink");
-let { simpleGit, CleanOptions } = require("simple-git");
+let { Image_Button } = require("../👒Buttons/Image_Button");
 let usedUser = require("../🌤️Cloud/𝖀𝖘𝖊𝖗🍣𝖒𝖔𝖓𝖌𝖔/usedUser");
 let userBanCheck = require("../🌤️Cloud/𝖀𝖘𝖊𝖗🍣𝖒𝖔𝖓𝖌𝖔/user");
-let { Image_Button } = require("../👒Buttons/Image_Button");
-let userExhaust = require("../🌤️Cloud/𝖀𝖘𝖊𝖗🍣𝖒𝖔𝖓𝖌𝖔/userExhaust"); 
+let userExhaust = require("../🌤️Cloud/𝖀𝖘𝖊𝖗🍣𝖒𝖔𝖓𝖌𝖔/userExhaust");
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 exports.ӄᴘᴏᴡ = async (Ѷ𝖎𝖔𝖓, ӄryӄnz, Vlkyre) => {
 if (Vlkyre.message) {
@@ -46,14 +46,14 @@ let ɴᴇᴡ = await ɢɪᴛᴄᴀʟʟ.log(["®𝐊𝐫𝐲𝐙𝐨𝐧𝐞..ori
 if (ɴᴇᴡ.total != 0) {
 await Hoku.delete(
 "/apps/" + HEROKU_APP_NAME + "/dynos/" + "worker"
-).catch((error) =>
+).catch((ᴇʀ) =>
 console.log(
-ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐇𝐞𝐫𝐨𝐤𝐮 𝐄𝐫𝐫𝐨𝐫: "), ӄօʟօʀ.bgRed(error))
+ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐇𝐞𝐫𝐨𝐤𝐮 𝐄𝐫𝐫𝐨𝐫: "), ӄօʟօʀ.bgRed(ᴇʀ))
 )
 );
 }
-} catch (error) {
-console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐄𝐫𝐫𝐨𝐫: "), ӄօʟօʀ.bgRed(error)));
+} catch (ᴇʀ) {
+console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐄𝐫𝐫𝐨𝐫: "), ӄօʟօʀ.bgRed(ᴇʀ)));
 }
 }
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
@@ -62,8 +62,8 @@ await usedUser.findOne(
 {
 User: Vlkyre.sender,
 },
-async (error, ꜱᴇʀᴄ) => {
-if (error) return Caught(ӄryӄnz, Vlkyre, error);
+async (ᴇʀ, ꜱᴇʀᴄ) => {
+if (ᴇʀ) return Caught(ӄryӄnz, Vlkyre, ᴇʀ);
 if (!ꜱᴇʀᴄ) {
 let ɴᴇᴡᴜꜱᴇʀᴄ = new usedUser({
 User: Vlkyre.sender,
@@ -71,12 +71,12 @@ Total: Ѷ𝖎𝖔𝖓𝖒𝖔𝖓𝖌𝖔,
 LastTime: Date.now(),
 PermaTime: 10000,
 });
-return await ɴᴇᴡᴜꜱᴇʀᴄ.save().catch((error) => Caught(ӄryӄnz, Vlkyre, error));
+return await ɴᴇᴡᴜꜱᴇʀᴄ.save().catch((ᴇʀ) => Caught(ӄryӄnz, Vlkyre, ᴇʀ));
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 } else {
 ꜱᴇʀᴄ.Total = ꜱᴇʀᴄ.Total + Ѷ𝖎𝖔𝖓𝖒𝖔𝖓𝖌𝖔;
 ꜱᴇʀᴄ.LastTime = Date.now();
-await ꜱᴇʀᴄ.save().catch((error) => Caught(ӄryӄnz, Vlkyre, error));
+await ꜱᴇʀᴄ.save().catch((ᴇʀ) => Caught(ӄryӄnz, Vlkyre, ᴇʀ));
 }
 }
 );
@@ -86,8 +86,8 @@ await Ranker.findOne(
 {
 serverID: Vlkyre.chatID,
 },
-async (error, userRank) => {
-if (error) return Caught(ӄryӄnz, Vlkyre, error);
+async (ᴇʀ, userRank) => {
+if (ᴇʀ) return Caught(ӄryӄnz, Vlkyre, ᴇʀ);
 if (!userRank) return;
 await ARanks(Vlkyre, ӄryӄnz, Caught, Vlkyre.A𝖗𝖌𝖘);
 }
@@ -115,14 +115,14 @@ await userBanCheck.findOne(
 {
 ID: Vlkyre.sender,
 },
-async (error, userBCheck) => {
-if (error) return console.log(error);
+async (ᴇʀ, userBCheck) => {
+if (ᴇʀ) return console.log(ᴇʀ);
 await userBanCheck.findOne(
 {
 ID: Vlkyre.chatID,
 },
-async (error, userGCheck) => {
-if (error) return console.log(error);
+async (ᴇʀ, userGCheck) => {
+if (ᴇʀ) return console.log(ᴇʀ);
 if (userBCheck && !Vlkyre.fromMe && !Vlkyre.isSenderTUF) return;
 if (userGCheck && !Vlkyre.fromMe && !Vlkyre.isSenderTUF) return;
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
@@ -197,8 +197,8 @@ await usedUser.findOne(
 {
 User: Vlkyre.sender,
 },
-async (error, ꜱᴇʀᴄ) => {
-if (error) return Caught(ӄryӄnz, Vlkyre, error);
+async (ᴇʀ, ꜱᴇʀᴄ) => {
+if (ᴇʀ) return Caught(ӄryӄnz, Vlkyre, ᴇʀ);
 if (!ꜱᴇʀᴄ) {
 let ɴᴇᴡᴜꜱᴇʀᴄ = new usedUser({
 User: Vlkyre.sender,
@@ -206,7 +206,7 @@ Total: 0,
 LastTime: 0,
 PermaTime: 20000,
 });
-return await ɴᴇᴡᴜꜱᴇʀᴄ.save().catch((error) => Caught(ӄryӄnz, Vlkyre, error));
+return await ɴᴇᴡᴜꜱᴇʀᴄ.save().catch((ᴇʀ) => Caught(ӄryӄnz, Vlkyre, ᴇʀ));
 } else {
 let ᴄʟᴏᴄᴋ = ᴍꜱ(
 ꜱᴇʀᴄ.PermaTime - (Date.now() - ꜱᴇʀᴄ.LastTime)
@@ -216,46 +216,50 @@ return;
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 } else {
 ꜱᴇʀᴄ.LastTime = Date.now();
-await ꜱᴇʀᴄ.save().catch((error) => Caught(ӄryӄnz, Vlkyre, error));
+await ꜱᴇʀᴄ.save().catch((ᴇʀ) => Caught(ӄryӄnz, Vlkyre, ᴇʀ));
 await userExhaust.findOne(
 {
-User: Vlkyre.sender,
+ExhaustUser: Vlkyre.sender,
 },
-async (error, Exhaustꜱᴇʀᴄ) => {
-if (error) return Caught(ӄryӄnz, Vlkyre, error);
-if (!Exhaustꜱᴇʀᴄ) {
+async (ᴇʀ, ᴇx) => {
+if (ᴇʀ) return console.log(ᴇʀ.message);
+if (!ᴇx) {
 new userExhaust({
 ExhaustUser: Vlkyre.sender,
 ExhaustTotal: 20,
 ExhaustLastTime: Date.now(),
 ExhaustPermTime: 86400000,
-}).save().catch((error) => Caught(ӄryӄnz, Vlkyre, error));
+})
+.save()
+.catch((ᴇʀ) => console.log(ᴇʀ.message));
+console.log("❣️NEW Continue!");
 await ӄryӄnz.sendPresenceUpdate("composing", Vlkyre.chatID);
 await ShortC(Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓);
-return await ӄօʟօʀs(ӄryӄnz, Vlkyre);
-}
-("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
-if (ExhaustTotal == 0 && !Vlkyre.fromMe) {
-if (Exhaustꜱᴇʀᴄ.ExhaustPermTime - (Date.now() - Exhaustꜱᴇʀᴄ.ExhaustLastTime) > 0 ) {
-let ᴄʟᴏᴄᴋ = ms(Exhaustꜱᴇʀᴄ.ExhaustPermTime - (Date.now() - Exhaustꜱᴇʀᴄ.ExhaustLastTime));
-return await Image_Button(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.A𝖗𝖌𝖘,
-"./👗Skins/Vlkyre_DB.png",
-`❌𝐄𝐫𝐫𝐨𝐫: Dear User You Have Exhausted Your Daily Free Usage _(20 commands)_ of the bot in WhatsApp! 
-
-To Continue using bot head over to our Discord Server and Use Bot Free Unlimited or wait for ${ᴄʟᴏᴄᴋ.hours}h ${ᴄʟᴏᴄᴋ.minutes}m ${ᴄʟᴏᴄᴋ.seconds}s
-❗𝐃𝐈𝐬𝐜𝐨𝐫𝐝: https://discord.gg/W5cE5UE3VH`
-);
-} 
-("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
+await ӄօʟօʀs(ӄryӄnz, Vlkyre);
+return console.log(ᴇx);
 } else {
-Exhaustꜱᴇʀᴄ.ExhaustTotal = ExhaustTotal - 1;
-await Exhaustꜱᴇʀᴄ.save().catch((error) => Caught(ӄryӄnz, Vlkyre, error));
+let Time = ms(ᴇx.ExhaustPermTime - (Date.now() - ᴇx.ExhaustLastTime));
+if (Time.hours >= 0 && ᴇx.ExhaustTotal <= 0) {
+console.log("❌NOT 24hrs But Limit Exhausted!");
+return console.log(ᴇx);
+} else if (Time.hours <= 0) {
+ᴇx.ExhaustTotal = 20;
+ᴇx.ExhaustLastTime = Date.now();
+await ᴇx.save().catch((ᴇʀ) => console.log(ᴇʀ.message));
+console.log("⏰YES 24hrs && Limit Exhausted So Reset!");
 await ӄryӄnz.sendPresenceUpdate("composing", Vlkyre.chatID);
 await ShortC(Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓);
-return await ӄօʟօʀs(ӄryӄnz, Vlkyre);
+await ӄօʟօʀs(ӄryӄnz, Vlkyre);
+return console.log(ᴇx);
+} else {
+console.log("💚YES Continue But Limit -1!");
+ᴇx.ExhaustTotal = ᴇx.ExhaustTotal - 1;
+await ᴇx.save().catch((ᴇʀ) => console.log(ᴇʀ.message));
+await ӄryӄnz.sendPresenceUpdate("composing", Vlkyre.chatID);
+await ShortC(Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓);
+await ӄօʟօʀs(ӄryӄnz, Vlkyre);
+return console.log(ᴇx);
+}
 }
 }
 );
