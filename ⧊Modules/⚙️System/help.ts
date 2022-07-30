@@ -149,6 +149,14 @@ new MessageEmbed()
 .addField(`**\`● ${bot.prefix}snake\`**`, "_Snake Game in discord!_", true)
 .addField(`**\`● ${bot.prefix}tictactoe\`**`, "_Tic Tac Toe in discord!_", true)
 .addField(`**\`● ${bot.prefix}gunfight\`**`, "_First one to shoot wins!_", true)
+
+.addField(`**\`● ${bot.prefix}connect4\`**`, "_Connect4 in Discord!_", true)
+.addField(`**\`● ${bot.prefix}fasttype\`**`, "_Type as fast as you can!_", true)
+.addField(`**\`● ${bot.prefix}football\`**`, "_Foodball in Discord!_", true)
+.addField(`**\`● ${bot.prefix}guessthenumber\`**`, "_Guess The Number!_", true)
+.addField(`**\`● ${bot.prefix}rps\`**`, "_Rock paper scissors in discord!_", true)
+
+
 .setFooter( `❣️Requested by ${message.author.username}`, message.author.avatarURL({ dynamic: true })),
 ],
 }).catch((error) => {

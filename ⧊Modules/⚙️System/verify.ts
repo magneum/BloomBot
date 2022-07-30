@@ -40,8 +40,6 @@ name: FinalName,
 category: "🔎ᴡᴇʙꜱᴇᴀʀᴄʜ",
 description: "Get info about an anime",
 async execute(kryknz: any, message: Message, args: string[]) {
-console.log(message.author);
-return;
 await vUser.findOne(
 {
 ID: message.author,
@@ -54,21 +52,21 @@ return message.reply(
 }
 ("⬡════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞⚡ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |════════════════════════════════════════════════⬡");
 if (!vPs) {
-let textWord = generator.generate({
+let passWORD = generator.generate({
 length: 10,
 numbers: true,
 });
-vCrypt.hash(textWord, 10, async function (Error, phraseWord) {
+vCrypt.hash(passWORD, 10, async function (Error, phraseWORD) {
 if (Error) {
 return message.reply(
 "**❌Error:** _Sorry There Was a problem with the command.\nPlease try again later!_"
 );
 }
 ("⬡════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞⚡ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |════════════════════════════════════════════════⬡");
-new vUser({
+await new vUser({
 ID: message.author,
-Verity: phraseWord,
-passWord: textWord,
+Verity: phraseWORD,
+passWORD: passWORD,
 })
 .save()
 .catch((Error) => {
@@ -78,8 +76,9 @@ message.reply(
 );
 });
 });
-("⬡════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞⚡ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |════════════════════════════════════════════════⬡");
-message.reply("**⚡Vlkyre:** _Please check the message in your DM_");
+await message.reply(
+"**⚡Vlkyre:** _Please check the message in your DM_"
+);
 return await message.author
 .send({
 embeds: [
@@ -97,13 +96,9 @@ new MessageEmbed()
 `❣️Requested by ${message.author.username}`,
 message.author.avatarURL({ dynamic: true })
 )
-.addField(`**🆔ID**`, `${vPs.message.author}`, true)
-.addField(`**🔔PassWord**`, `${vPs.textWord}`, true)
-.addField(
-`**🔑Verification Key**`,
-`${vPs.phraseWord}`,
-true
-),
+.addField(`**🆔ID**`, `${message.author}`, true)
+.addField(`**🔔PassWord**`, `${passWORD}`, true)
+.addField(`**🔑Verification Key**`, `${phraseWORD}`, true),
 ],
 })
 .catch((Error) => {
@@ -114,7 +109,9 @@ message.reply(
 });
 ("⬡════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞⚡ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |════════════════════════════════════════════════⬡");
 } else {
-message.reply("**⚡Vlkyre:** _Please check the message in your DM_");
+await message.reply(
+"**⚡Vlkyre:** _Please check the message in your DM_"
+);
 return await message.author
 .send({
 embeds: [
@@ -133,7 +130,7 @@ new MessageEmbed()
 message.author.avatarURL({ dynamic: true })
 )
 .addField(`**🆔ID**`, `${vPs.ID}`, true)
-.addField(`**🔔PassWord**`, `${vPs.passWord}`, true)
+.addField(`**🔔PassWord**`, `${vPs.passWORD}`, true)
 .addField(`**🔑Verification Key**`, `${vPs.Verity}`, true),
 ],
 })
