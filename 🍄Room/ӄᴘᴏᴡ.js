@@ -19,6 +19,7 @@ let ӄօʟօʀ = require("chalk");
 let { Night } = require("./Night");
 let ʀᴇᴠ_ɢɪᴛ = require("simple-git");
 let { ShortC } = require("./ShortC");
+let { ArtDrw } = require("./ArtDrw");
 let { ARanks } = require("./ARanks");
 let ɢɪᴛᴄᴀʟʟ = require("simple-git")();
 let Heroku = require("heroku-client");
@@ -242,7 +243,6 @@ ExhaustPermTime: 86400000,
 })
 .save()
 .catch((ᴇʀ) => console.log(ᴇʀ.message));
-console.log("❣️NEW Continue!");
 await Image_Button(
 ӄryӄnz,
 Vlkyre,
@@ -254,8 +254,8 @@ After you exhaust all 20 free commands either Join Discord to be able to use bot
 ❣️𝐃𝐢𝐬𝐜𝐨𝐫𝐝: https://discord.gg/W5cE5UE3VH
 `);
 await ӄryӄnz.sendPresenceUpdate("composing", Vlkyre.chatID);
+await ArtDrw(ӄryӄnz, Vlkyre, "20", "❣️NEW Continue!");
 await ShortC(Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓);
-await ӄօʟօʀs(ӄryӄnz, Vlkyre);
 return console.log(ᴇx);
 } else {
 let Time = ᴍꜱ(ᴇx.ExhaustPermTime - (Date.now() - ᴇx.ExhaustLastTime));
@@ -278,18 +278,16 @@ return console.log(ᴇx);
 ᴇx.ExhaustTotal = 20;
 ᴇx.ExhaustLastTime = Date.now();
 await ᴇx.save().catch((ᴇʀ) => console.log(ᴇʀ.message));
-console.log("⏰YES 24hrs && Limit Exhausted So Reset!");
 await ӄryӄnz.sendPresenceUpdate("composing", Vlkyre.chatID);
+await ArtDrw(ӄryӄnz, Vlkyre, ᴇx.ExhaustTotal, "⏰YES 24hrs && Limit Exhausted So Reset!");
 await ShortC(Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓);
-await ӄօʟօʀs(ӄryӄnz, Vlkyre);
 return console.log(ᴇx);
 } else {
-console.log("💚YES Continue But Limit -1!");
 ᴇx.ExhaustTotal = ᴇx.ExhaustTotal - 1;
 await ᴇx.save().catch((ᴇʀ) => console.log(ᴇʀ.message));
 await ӄryӄnz.sendPresenceUpdate("composing", Vlkyre.chatID);
+await ArtDrw(ӄryӄnz, Vlkyre, ᴇx.ExhaustTotal, "💚YES Continue But Limit -1!");
 await ShortC(Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓);
-await ӄօʟօʀs(ӄryӄnz, Vlkyre);
 return console.log(ᴇx);
 }
 }
