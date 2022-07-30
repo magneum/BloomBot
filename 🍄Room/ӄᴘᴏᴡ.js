@@ -243,6 +243,16 @@ ExhaustPermTime: 86400000,
 .save()
 .catch((ᴇʀ) => console.log(ᴇʀ.message));
 console.log("❣️NEW Continue!");
+await Image_Button(
+ӄryӄnz,
+Vlkyre,
+Vlkyre.A𝖗𝖌𝖘,
+"./👗Skins/KrakinzLab.png",
+`💡𝐋𝐢𝐦𝐢𝐭: 20/20commands Left per 24hrs.
+ 
+After you exhaust all 20 free commands either Join Discord to be able to use bot infinitely or wait for 24hrs.
+❣️𝐃𝐢𝐬𝐜𝐨𝐫𝐝: https://discord.gg/W5cE5UE3VH
+`);
 await ӄryӄnz.sendPresenceUpdate("composing", Vlkyre.chatID);
 await ShortC(Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓);
 await ӄօʟօʀs(ӄryӄnz, Vlkyre);
@@ -251,6 +261,18 @@ return console.log(ᴇx);
 let Time = ᴍꜱ(ᴇx.ExhaustPermTime - (Date.now() - ᴇx.ExhaustLastTime));
 if (Time.hours >= 0 && ᴇx.ExhaustTotal <= 0) {
 console.log("❌NOT 24hrs But Limit Exhausted!");
+await Image_Button(
+ӄryӄnz,
+Vlkyre,
+Vlkyre.A𝖗𝖌𝖘,
+"./👗Skins/KrakinzLab.png",
+`❌𝐄𝐱𝐡𝐚𝐮𝐬𝐭𝐞𝐝: You've Exhausted Free Daily _20commands_ Limit.
+Join Discord to be able to use bot infinitely or wait for
+💡𝐖𝐚𝐢𝐭: ${ᴄʟᴏᴄᴋ.hours}h ${ᴄʟᴏᴄᴋ.minutes}m ${ᴄʟᴏᴄᴋ.seconds}s.
+ 
+
+❣️𝐃𝐢𝐬𝐜𝐨𝐫𝐝: https://discord.gg/W5cE5UE3VH
+`);
 return console.log(ᴇx);
 } else if (Time.hours <= 0) {
 ᴇx.ExhaustTotal = 20;
