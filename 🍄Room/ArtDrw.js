@@ -16,12 +16,12 @@
 let chalk = require("chalk");
 exports.ArtDrw = async (ӄryӄnz, Vlkyre, ᴇx, ᴇx𝐋𝐨𝐠) => {
 console.log("▷═════════════════════|✠|═════════════════════◁");
-console.log(chalk.black(chalk.bgBlack(chalk.hex("#B1DCEC").bold("🕐𝐓𝐢𝐦𝐞:"))),chalk.black(chalk.hex("#2e3440").italic.bold(new Date() || ""))).catch((ᴇʀ) => console.log(ᴇʀ.message));
-console.log(chalk.black(chalk.bgBlack(chalk.hex("#e0dbd1").bold("💤𝐂𝐨𝐦𝐦𝐚𝐧𝐝::"))),chalk.black(chalk.hex("#3b4252").italic.bold(Vlkyre.commandName || ""))).catch((ᴇʀ) => console.log(ᴇʀ.message));
+console.log(chalk.black(chalk.bgBlack(chalk.hex("#B1DCEC").bold("🕐𝐓𝐢𝐦𝐞:"))),chalk.black(chalk.hex("#2e3440").italic.bold(new Date() || "")));
+console.log(chalk.black(chalk.bgBlack(chalk.hex("#e0dbd1").bold("💤𝐂𝐨𝐦𝐦𝐚𝐧𝐝::"))),chalk.black(chalk.hex("#3b4252").italic.bold(Vlkyre.commandName || "")));
 console.log(chalk.black(chalk.bgBlack(chalk.hex("#ff8c00").bold("🧛🏽‍♂️𝐒𝐞𝐧𝐝𝐞𝐫:"))),chalk.black(chalk.hex("#434c5e").italic.bold(Vlkyre.sender || "" + " | " + Vlkyre.pushName || "")));
-console.log(chalk.black(chalk.bgBlack(chalk.hex("#8f7da5").bold("🧀𝐆𝐫𝐨𝐮𝐩:"))),chalk.black(chalk.hex("#4c566a").italic.bold(Vlkyre.groupMetadata.subject || ""))).catch((ᴇʀ) => console.log(ᴇʀ.message));
-console.log(chalk.black(chalk.bgBlack(chalk.hex("#849871").bold("📜ᴇx𝐋𝐨𝐠:"))),chalk.black(chalk.hex("#4c564a").italic.bold(ᴇx𝐋𝐨𝐠 || ""))).catch((ᴇʀ) => console.log(ᴇʀ.message));
-console.log(chalk.black(chalk.bgBlack(chalk.hex("#8B0000").bold("💡𝐋𝐢𝐦𝐢𝐭:"))),chalk.black(chalk.hex("#4c563a").italic.bold(ᴇx || ""))).catch((ᴇʀ) => console.log(ᴇʀ.message));
+console.log(chalk.black(chalk.bgBlack(chalk.hex("#8f7da5").bold("🧀𝐆𝐫𝐨𝐮𝐩:"))),chalk.black(chalk.hex("#4c566a").italic.bold(Vlkyre.groupMetadata.subject || "")));
+console.log(chalk.black(chalk.bgBlack(chalk.hex("#849871").bold("📜ᴇx𝐋𝐨𝐠:"))),chalk.black(chalk.hex("#4c564a").italic.bold(ᴇx𝐋𝐨𝐠 || "")));
+console.log(chalk.black(chalk.bgBlack(chalk.hex("#8B0000").bold("💡𝐋𝐢𝐦𝐢𝐭:"))),chalk.black(chalk.hex("#4c563a").italic.bold(ᴇx || "")));
 console.log("▷═════════════════════|✠|═════════════════════◁\n\n");
 };
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
