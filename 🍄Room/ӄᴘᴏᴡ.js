@@ -215,8 +215,18 @@ if (ꜱᴇʀᴄ.PermaTime - (Date.now() - ꜱᴇʀᴄ.LastTime) > 0) {
 return;
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 } else {
+let ArrayAllowed = ["warn","nolink","stoplink","antilink","welcome","welcomer","setwelcome","autorole","autorank","del","demote","promote",
+"group","remove","setdesc","setgpfp","tagall","admins","ban","unban","reboot","dbrem","dataclean","purgedata","join","leave","support","bcgroup",
+"bc","sp","mod","mods","repo","githubrepo","repository","dev","devs","support","official","rule","rules","h","how","help","menu","allmenu","command",
+"commands","BOTSUPPORT","krakinzlab","vlkyre","KRAKINZLAB","VLKYRE","HELP","RULES"];
 ꜱᴇʀᴄ.LastTime = Date.now();
 await ꜱᴇʀᴄ.save().catch((ᴇʀ) => Caught(ӄryӄnz, Vlkyre, ᴇʀ));
+if (ArrayAllowed.includes(Vlkyre.commandName)) {
+console.log("🕊️Default Continue!");
+await ӄryӄnz.sendPresenceUpdate("composing", Vlkyre.chatID);
+await ShortC(Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓);
+await ӄօʟօʀs(ӄryӄnz, Vlkyre);
+} else {
 await userExhaust.findOne(
 {
 ExhaustUser: Vlkyre.sender,
@@ -263,6 +273,7 @@ return console.log(ᴇx);
 }
 }
 );
+}
 }
 }
 }

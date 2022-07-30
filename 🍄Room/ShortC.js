@@ -3012,7 +3012,7 @@ Vlkyre.isSenderTUF,
 Vlkyre.commandName,
 Vlkyre.Body
 );
-break;
+break;RULE
 case "h":
 case "how":
 case "help":
