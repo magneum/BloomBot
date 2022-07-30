@@ -248,7 +248,7 @@ await ShortC(Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓);
 await ӄօʟօʀs(ӄryӄnz, Vlkyre);
 return console.log(ᴇx);
 } else {
-let Time = ms(ᴇx.ExhaustPermTime - (Date.now() - ᴇx.ExhaustLastTime));
+let Time = ᴍꜱ(ᴇx.ExhaustPermTime - (Date.now() - ᴇx.ExhaustLastTime));
 if (Time.hours >= 0 && ᴇx.ExhaustTotal <= 0) {
 console.log("❌NOT 24hrs But Limit Exhausted!");
 return console.log(ᴇx);
