@@ -209,25 +209,89 @@ PermaTime: 20000,
 });
 return await ɴᴇᴡᴜꜱᴇʀᴄ.save().catch((ᴇʀ) => Caught(ӄryӄnz, Vlkyre, ᴇʀ));
 } else {
-let ᴄʟᴏᴄᴋ = ᴍꜱ(
-ꜱᴇʀᴄ.PermaTime - (Date.now() - ꜱᴇʀᴄ.LastTime)
-);
+let ᴄʟᴏᴄᴋ = ᴍꜱ(ꜱᴇʀᴄ.PermaTime - (Date.now() - ꜱᴇʀᴄ.LastTime));
 if (ꜱᴇʀᴄ.PermaTime - (Date.now() - ꜱᴇʀᴄ.LastTime) > 0) {
 return;
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 } else {
-let ArrayAllowed = ["warn","nolink","stoplink","antilink","welcome","welcomer","setwelcome","autorole","autorank","del","demote","promote",
-"group","remove","setdesc","setgpfp","tagall","admins","ban","unban","reboot","dbrem","dataclean","purgedata","join","leave","support","bcgroup",
-"bc","sp","mod","mods","repo","githubrepo","repository","dev","devs","support","official","rule","rules","h","how","help","menu","allmenu","command",
-"commands","BOTSUPPORT","krakinzlab","vlkyre","KRAKINZLAB","VLKYRE","HELP","RULES","animationmenu","animemenu","audioFiltermenu","convertermenu","downloadermenu",
-"Gamemenu","Groupmenu","Hentaimenu","nsfwmenu","ownermenu","randommenu","storemenu","webmenu","ytfiltermenu"];
+let ArrayAllowed = [
+"warn",
+"nolink",
+"stoplink",
+"antilink",
+"welcome",
+"welcomer",
+"setwelcome",
+"autorole",
+"autorank",
+"del",
+"demote",
+"promote",
+"group",
+"remove",
+"setdesc",
+"setgpfp",
+"tagall",
+"admins",
+"ban",
+"unban",
+"reboot",
+"dbrem",
+"dataclean",
+"purgedata",
+"join",
+"leave",
+"support",
+"bcgroup",
+"bc",
+"sp",
+"mod",
+"mods",
+"repo",
+"githubrepo",
+"repository",
+"dev",
+"devs",
+"support",
+"official",
+"rule",
+"rules",
+"h",
+"how",
+"help",
+"menu",
+"allmenu",
+"command",
+"commands",
+"BOTSUPPORT",
+"krakinzlab",
+"vlkyre",
+"KRAKINZLAB",
+"VLKYRE",
+"HELP",
+"RULES",
+"animationmenu",
+"animemenu",
+"audioFiltermenu",
+"convertermenu",
+"downloadermenu",
+"Gamemenu",
+"Groupmenu",
+"Hentaimenu",
+"nsfwmenu",
+"ownermenu",
+"randommenu",
+"storemenu",
+"webmenu",
+"ytfiltermenu",
+];
 ꜱᴇʀᴄ.LastTime = Date.now();
 await ꜱᴇʀᴄ.save().catch((ᴇʀ) => Caught(ӄryӄnz, Vlkyre, ᴇʀ));
 if (ArrayAllowed.includes(Vlkyre.commandName)) {
 console.log("🕊️Default Continue!");
-await ӄryӄnz.sendPresenceUpdate("composing", Vlkyre.chatID);
-await ShortC(Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓);
-await ӄօʟօʀs(ӄryӄnz, Vlkyre);
+await ӄryӄnz.sendPresenceUpdate("composing",Vlkyre.chatID);
+return await ShortC(Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓);
+("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 } else {
 await userExhaust.findOne(
 {
@@ -241,26 +305,31 @@ ExhaustUser: Vlkyre.sender,
 ExhaustTotal: 20,
 ExhaustLastTime: Date.now(),
 ExhaustPermTime: 86400000,
-})
-.save()
-.catch((ᴇʀ) => console.log(ᴇʀ.message));
+}).save().catch((ᴇʀ) => console.log(ᴇʀ.message));
 await Image_Button(
 ӄryӄnz,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
 "./👗Skins/KrakinzLab.png",
 `💡𝐋𝐢𝐦𝐢𝐭: 20/20commands Left per 24hrs.
- 
+
 After you exhaust all 20 free commands either Join Discord to be able to use bot infinitely or wait for 24hrs.
 ❣️𝐃𝐢𝐬𝐜𝐨𝐫𝐝: https://discord.gg/W5cE5UE3VH
-`);
-await ӄryӄnz.sendPresenceUpdate("composing", Vlkyre.chatID);
-await ArtDrw(ӄryӄnz, Vlkyre, "20", "❣️NEW Continue!");
+`
+);
+await ӄryӄnz.sendPresenceUpdate("composing",Vlkyre.chatID);
+await ArtDrw(
+ӄryӄnz,
+Vlkyre,
+"20",
+"❣️NEW Continue!"
+);
 await ShortC(Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓);
 return console.log(ᴇx);
+("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 } else {
-let Time = ᴍꜱ(ᴇx.ExhaustPermTime - (Date.now() - ᴇx.ExhaustLastTime));
-if (Time.hours >= 0 && ᴇx.ExhaustTotal <= 0) {
+let Time = ᴍꜱ(ᴇx.ExhaustPermTime -(Date.now() - ᴇx.ExhaustLastTime));
+if (Time.hours > 0 && ᴇx.ExhaustTotal == 0) {
 console.log("❌NOT 24hrs But Limit Exhausted!");
 await Image_Button(
 ӄryӄnz,
@@ -270,24 +339,37 @@ Vlkyre.A𝖗𝖌𝖘,
 `❌𝐄𝐱𝐡𝐚𝐮𝐬𝐭𝐞𝐝: You've Exhausted Free Daily _20commands_ Limit.
 Join Discord to be able to use bot infinitely or wait for
 💡𝐖𝐚𝐢𝐭: ${ᴄʟᴏᴄᴋ.hours}h ${ᴄʟᴏᴄᴋ.minutes}m ${ᴄʟᴏᴄᴋ.seconds}s.
- 
+
 
 ❣️𝐃𝐢𝐬𝐜𝐨𝐫𝐝: https://discord.gg/W5cE5UE3VH
-`);
+`
+);
 return console.log(ᴇx);
-} else if (Time.hours <= 0) {
+("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
+} else if (Time.hours == 0) {
 ᴇx.ExhaustTotal = 20;
 ᴇx.ExhaustLastTime = Date.now();
 await ᴇx.save().catch((ᴇʀ) => console.log(ᴇʀ.message));
-await ӄryӄnz.sendPresenceUpdate("composing", Vlkyre.chatID);
-await ArtDrw(ӄryӄnz, Vlkyre, ᴇx.ExhaustTotal, "⏰YES 24hrs && Limit Exhausted So Reset!");
+await ӄryӄnz.sendPresenceUpdate("composing",Vlkyre.chatID);
+await ArtDrw(
+ӄryӄnz,
+Vlkyre,
+ᴇx.ExhaustTotal,
+"⏰YES 24hrs && Limit Exhausted So Reset!"
+);
 await ShortC(Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓);
 return console.log(ᴇx);
+("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 } else {
 ᴇx.ExhaustTotal = ᴇx.ExhaustTotal - 1;
 await ᴇx.save().catch((ᴇʀ) => console.log(ᴇʀ.message));
-await ӄryӄnz.sendPresenceUpdate("composing", Vlkyre.chatID);
-await ArtDrw(ӄryӄnz, Vlkyre, ᴇx.ExhaustTotal, "💚YES Continue But Limit -1!");
+await ӄryӄnz.sendPresenceUpdate("composing",Vlkyre.chatID);
+await ArtDrw(
+ӄryӄnz,
+Vlkyre,
+ᴇx.ExhaustTotal,
+"💚YES Continue But Limit -1!"
+);
 await ShortC(Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓);
 return console.log(ᴇx);
 }
