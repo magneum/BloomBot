@@ -176,7 +176,7 @@ Vlkyre.isCommand &&
 !Vlkyre.Body.includes("verify") &&
 !Vlkyre.Body.includes("support") &&
 !Vlkyre.Body.includes("HELP") &&
-!Vlkyre.Body.includes("MENU") &&
+!Vlkyre.Body.includes("menu") &&
 !Vlkyre.Body.includes("RULES") &&
 !Vlkyre.Body.includes("VLKYRE") &&
 !Vlkyre.Body.includes("SUPPORT") &&
@@ -219,7 +219,8 @@ return;
 let ArrayAllowed = ["warn","nolink","stoplink","antilink","welcome","welcomer","setwelcome","autorole","autorank","del","demote","promote",
 "group","remove","setdesc","setgpfp","tagall","admins","ban","unban","reboot","dbrem","dataclean","purgedata","join","leave","support","bcgroup",
 "bc","sp","mod","mods","repo","githubrepo","repository","dev","devs","support","official","rule","rules","h","how","help","menu","allmenu","command",
-"commands","BOTSUPPORT","krakinzlab","vlkyre","KRAKINZLAB","VLKYRE","HELP","RULES"];
+"commands","BOTSUPPORT","krakinzlab","vlkyre","KRAKINZLAB","VLKYRE","HELP","RULES","animationmenu","animemenu","audioFiltermenu","convertermenu","downloadermenu",
+"Gamemenu","Groupmenu","Hentaimenu","nsfwmenu","ownermenu","randommenu","storemenu","webmenu","ytfiltermenu"];
 ꜱᴇʀᴄ.LastTime = Date.now();
 await ꜱᴇʀᴄ.save().catch((ᴇʀ) => Caught(ӄryӄnz, Vlkyre, ᴇʀ));
 if (ArrayAllowed.includes(Vlkyre.commandName)) {
