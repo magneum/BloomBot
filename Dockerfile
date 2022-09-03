@@ -21,7 +21,7 @@ RUN apt install aptitude -y
 RUN aptitude install -y jq git curl wget ffmpeg nodejs npm bpm-tools python3-pip opus-tools python-is-python3 && git clone https://github.com/KryKnz/Vlkyre.git
 RUN curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl && chmod a+rx /usr/local/bin/youtube-dl && curl https://cli-assets.heroku.com/install.sh | sh && heroku plugins:install heroku-builds && cd Vlkyre
 WORKDIR /Vlkyre
-RUN pip install -r 🕊️Adapt/⭕𝖈𝖆𝖗𝖆.txt && npm install -g n pm2 yarn && n install 16 && hash -r && npm install -g spotify-dl spdl-core typescript forever 
+RUN pip install -r 🕊️Adapt/⭕𝖈𝖆𝖗𝖆.txt && npm install -g n pm2 yarn && n install 16 && hash -r && npm install -g spotify-dl spdl-core typescript forever --force
 # RUN yarn config set ignore-engines true && yarn install --ignore-engines
 # RUN git config --global user.name "KryKnz" && git config --global user.email "KrakinzKon@gmail.com" && git config pull.rebase false && git init --initial-branch=𝐕𝐥𝐤𝐲𝐫𝐞▲𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩 && git fetch origin 𝐕𝐥𝐤𝐲𝐫𝐞▲𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩 && git reset --hard origin/𝐕𝐥𝐤𝐲𝐫𝐞▲𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩 
 CMD python3 🌱𝖆𝖕𝖗𝖎𝖑𝖑𝖆.py
