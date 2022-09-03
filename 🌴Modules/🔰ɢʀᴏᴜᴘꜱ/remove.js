@@ -15,12 +15,12 @@
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 require("../../🤖Utilities/Settings");
 let {
-  isUrl,
-  fetchJson,
-  getBuffer,
-  jsonformat,
-  GIFBufferToVideoBuffer,
-  getRandom,
+isUrl,
+fetchJson,
+getBuffer,
+jsonformat,
+GIFBufferToVideoBuffer,
+getRandom,
 } = require(`../../🤖Utilities/ɴᴇᴄᴛᴏʀ`);
 let fs = require(`fs`);
 let util = require(`util`);
@@ -38,58 +38,58 @@ let { Sticker, StickerTypes } = require(`wa-sticker-formatter`);
 let { Image_Button } = require("../../👒Buttons/Image_Button");
 let { Video_Button } = require("../../👒Buttons/Video_Button");
 let YouTube_Regex =
-  /(?:http(?:s|):\/\/|)(?:(?:www\.|)youtube(?:\-nocookie|)\.com\/(?:watch\?.*(?:|\&)v=|embed\/|v\/)|youtu\.be\/)([-_0-9A-Za-z]{11})/;
+/(?:http(?:s|):\/\/|)(?:(?:www\.|)youtube(?:\-nocookie|)\.com\/(?:watch\?.*(?:|\&)v=|embed\/|v\/)|youtu\.be\/)([-_0-9A-Za-z]{11})/;
 let Present_Path = require(`path`);
 let Script_Name = Present_Path.basename(__filename);
 let Final_Name = Script_Name.slice(0, -3).toLowerCase();
 let { Caught } = require("../../👒Buttons/Caught");
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
 exports.remove = async (
-  ӄryӄnz,
-  Vlkyre,
-  pushName,
-  F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-  quoted,
-  isMedia,
-  isGroup,
-  isBotAdmin,
-  isSenderAdmin,
-  isSenderTUF,
-  commandName,
-  body
+ӄryӄnz,
+Vlkyre,
+pushName,
+F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+quoted,
+isMedia,
+isGroup,
+isBotAdmin,
+isSenderAdmin,
+isSenderTUF,
+commandName,
+body
 ) => {
-  ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
-  if (Vlkyre.mentionByReply) {
-    let ʀᴇᴘʟɪᴇᴅ =
-      Vlkyre.mtype == "extendedTextMessage" &&
-      Vlkyre.message.extendedTextMessage.contextInfo != null
-        ? Vlkyre.message.extendedTextMessage.contextInfo.participant || ""
-        : "";
-    if (Vlkyre.isCreator === ʀᴇᴘʟɪᴇᴅ) {
-      return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-        ӄryӄnz,
-        Vlkyre,
-        `*❌ERROR:*  You dumb! Cant't Kick Bot Owner.`
-      );
-    }
-    await ӄryӄnz.sendMessage(Vlkyre.chatID, {
-      text: `Kicked @${ʀᴇᴘʟɪᴇᴅ.split("@")[0]} successfuly `,
-      contextInfo: { mentionedJid: [ʀᴇᴘʟɪᴇᴅ] },
-    });
-    return await ӄryӄnz.groupParticipantsUpdate(
-      Vlkyre.chatID,
-      [ʀᴇᴘʟɪᴇᴅ],
-      `remove`
-    );
-    ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
-  } else {
-    return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-      ӄryӄnz,
-      Vlkyre,
-      `*❌ERROR:*  Argument Needed!
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
+if (Vlkyre.mentionByReply) {
+let ʀᴇᴘʟɪᴇᴅ =
+Vlkyre.mtype == "extendedTextMessage" &&
+Vlkyre.message.extendedTextMessage.contextInfo != null
+? Vlkyre.message.extendedTextMessage.contextInfo.participant || ""
+: "";
+if (Vlkyre.isCreator === ʀᴇᴘʟɪᴇᴅ) {
+return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
+ӄryӄnz,
+Vlkyre,
+`*❌ERROR:*  You dumb! Cant't Kick Bot Owner.`
+);
+}
+await ӄryӄnz.sendMessage(Vlkyre.chatID, {
+text: `Kicked @${ʀᴇᴘʟɪᴇᴅ.split("@")[0]} successfuly `,
+contextInfo: { mentionedJid: [ʀᴇᴘʟɪᴇᴅ] },
+});
+return await ӄryӄnz.groupParticipantsUpdate(
+Vlkyre.chatID,
+[ʀᴇᴘʟɪᴇᴅ],
+`remove`
+);
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
+} else {
+return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
+ӄryӄnz,
+Vlkyre,
+`*❌ERROR:*  Argument Needed!
 *⚡USAGE:* ${prefix}${Final_Name} <reply to person>`
-    );
-  }
+);
+}
 };
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 /*

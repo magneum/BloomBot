@@ -15,12 +15,12 @@
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 require("../../🤖Utilities/Settings");
 let {
-  isUrl,
-  fetchJson,
-  getBuffer,
-  jsonformat,
-  GIFBufferToVideoBuffer,
-  getRandom,
+isUrl,
+fetchJson,
+getBuffer,
+jsonformat,
+GIFBufferToVideoBuffer,
+getRandom,
 } = require(`../../🤖Utilities/ɴᴇᴄᴛᴏʀ`);
 let fs = require(`fs`);
 let util = require(`util`);
@@ -38,57 +38,57 @@ let { Sticker, StickerTypes } = require(`wa-sticker-formatter`);
 let { Image_Button } = require("../../👒Buttons/Image_Button");
 let { Video_Button } = require("../../👒Buttons/Video_Button");
 let YouTube_Regex =
-  /(?:http(?:s|):\/\/|)(?:(?:www\.|)youtube(?:\-nocookie|)\.com\/(?:watch\?.*(?:|\&)v=|embed\/|v\/)|youtu\.be\/)([-_0-9A-Za-z]{11})/;
+/(?:http(?:s|):\/\/|)(?:(?:www\.|)youtube(?:\-nocookie|)\.com\/(?:watch\?.*(?:|\&)v=|embed\/|v\/)|youtu\.be\/)([-_0-9A-Za-z]{11})/;
 let Present_Path = require(`path`);
 let Script_Name = Present_Path.basename(__filename);
 let Final_Name = Script_Name.slice(0, -3).toLowerCase();
 let { Caught } = require("../../👒Buttons/Caught");
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
 exports.promote = async (
-  ӄryӄnz,
-  Vlkyre,
-  pushName,
-  F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-  quoted,
-  isMedia,
-  isGroup,
-  isBotAdmin,
-  isSenderAdmin,
-  isSenderTUF,
-  commandName,
-  body
+ӄryӄnz,
+Vlkyre,
+pushName,
+F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+quoted,
+isMedia,
+isGroup,
+isBotAdmin,
+isSenderAdmin,
+isSenderTUF,
+commandName,
+body
 ) => {
-  if (!Vlkyre.mentionByReply) {
-    return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-      ӄryӄnz,
-      Vlkyre,
-      `*❌ERROR:* Please reply the user you want to promote!
+if (!Vlkyre.mentionByReply) {
+return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
+ӄryӄnz,
+Vlkyre,
+`*❌ERROR:* Please reply the user you want to promote!
 *⚡USAGE:* ${prefix}${Final_Name} <Tag the person>`
-    );
-    ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
-  } else {
-    let mention =
-      Vlkyre.mtype == "extendedTextMessage" &&
-      Vlkyre.message.extendedTextMessage.contextInfo != null
-        ? Vlkyre.message.extendedTextMessage.contextInfo.participant || ""
-        : "";
-    let users = (await mention[0]) || Vlkyre.msg.contextInfo.participant;
-    if (!users) {
-      return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-        ӄryӄnz,
-        Vlkyre,
-        `*❌ERROR:* Please reply the user you want to promote!
+);
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═════════════════════════════════════════════════════════════════════⬡|");
+} else {
+let mention =
+Vlkyre.mtype == "extendedTextMessage" &&
+Vlkyre.message.extendedTextMessage.contextInfo != null
+? Vlkyre.message.extendedTextMessage.contextInfo.participant || ""
+: "";
+let users = (await mention[0]) || Vlkyre.msg.contextInfo.participant;
+if (!users) {
+return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
+ӄryӄnz,
+Vlkyre,
+`*❌ERROR:* Please reply the user you want to promote!
 *⚡USAGE:* ${prefix}${Final_Name} <Tag the person>`
-      );
-    }
-    await ӄryӄnz.groupParticipantsUpdate(Vlkyre.chatID, [users], "promote");
-    ӄryӄnz.sendMessage(Vlkyre.chatID, {
-      text: `Looks like @${Vlkyre.sender.split("@")[0]} promoted @${
-        users.split("@")[0]
-      }`,
-      contextInfo: { mentionedJid: [users, Vlkyre.sender] },
-    });
-  }
+);
+}
+await ӄryӄnz.groupParticipantsUpdate(Vlkyre.chatID, [users], "promote");
+ӄryӄnz.sendMessage(Vlkyre.chatID, {
+text: `Looks like @${Vlkyre.sender.split("@")[0]} promoted @${
+users.split("@")[0]
+}`,
+contextInfo: { mentionedJid: [users, Vlkyre.sender] },
+});
+}
 };
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 /*
