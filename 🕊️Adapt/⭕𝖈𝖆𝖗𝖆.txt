@@ -1,5 +1,4 @@
 cprint
-rimraf
 loguru
 psutil
 heroku3
