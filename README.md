@@ -5,8 +5,8 @@
 <h1 align="center">👇🏽Press Below To Check Vlkyre in YouTube👇🏽</h1>
 
 <div align="center">
-  <a href="https://www.youtube.com/watch?v=C6h0HvxeqFc ">
-  <img src="https://img.youtube.com/vi/C6h0HvxeqFc/0.jpg" alt="https://www.youtube.com/watch?v=C6h0HvxeqFc "></a>
+<a href="https://www.youtube.com/watch?v=C6h0HvxeqFc ">
+<img src="https://img.youtube.com/vi/C6h0HvxeqFc/0.jpg" alt="https://www.youtube.com/watch?v=C6h0HvxeqFc "></a>
 </div>
 
 ```sh
@@ -14,7 +14,7 @@
 
 ┌╔══『 🎐𝐈𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧🎐 』
 │║Ῠ 𝐩𝐫𝐞𝐟𝐢𝐱:  !
-│║Ῠ 𝐧𝐚𝐦𝐞:${Vlkyre.pushName || "~ɴᴏ_ɴᴀᴍᴇ~"}
+│║Ῠ 𝐧𝐚𝐦𝐞: VlkyreAI
 │║Ῠ 𝐠𝐩𝐚𝐲: +918436686758
 │║Ῠ 𝐮𝐩𝐢: krakinzkon@oksbi
 │║Ῠ 𝐠𝐢𝐭: github.com/kryknz/vlkyre
@@ -22,24 +22,22 @@
 └╚═══════⋑
 ```
 
-<h1 align="center">👑𝐆𝐫𝐨𝐮𝐩 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐨𝐫𝐬👑</h1>
+<h1 align="center">👑𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐨𝐫𝐬👑</h1>
 
 ```sh
-Ῠ KryKnz:  https://wa.me/918436686758
-Ῠ Xitrex:  https://wa.me/917430922909
-Ῠ Imele:   https://wa.me/2348108178797
-Ῠ Taizen:  https://wa.me/27611100446
-Ῠ          https://wa.me/2349015407879
-Ῠ          https://wa.me/260760393025
-Ῠ          https://wa.me/264853830477
-Ῠ          https://wa.me/27748187589
-Ῠ          https://wa.me/2349041348008
+┌╔═👑 KryKnz:  https://wa.me/918436686758
+│║Ῠ Xitrex:  https://wa.me/917430922909
+│║Ῠ Chimtuba_Aibaki:  https://wa.me/260760393025
+│║Ῠ Imele:   https://wa.me/2348108178797
+│║Ῠ Note: https://wa.me/2349015407879
+│║Ῠ War_Ready: 264 85 383 0477
+└╚═══════⋑
 ```
 
 <h1 align="center">🎊𝐂𝐚𝐭𝐞𝐠𝐨𝐫𝐢𝐞𝐬🎊</h1>
 
 ```sh
-┌『 𝐂𝐚𝐭𝐞𝐠𝐨𝐫𝐢𝐞𝐬 』
+┌╔══『 𝐂𝐚𝐭𝐞𝐠𝐨𝐫𝐢𝐞𝐬 』
 │║Ῠ 🐝 !AnimationMenu
 │║Ῠ 🐾 !AnimeMenu
 │║Ῠ 👓 !AudioFilterMenu
@@ -57,11 +55,9 @@
 └╚═══════⋑
 ```
 
-<h1 align="center">🤖𝐎𝐮𝐫 𝐀𝐈 𝐆𝐫𝐨𝐮𝐩 𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧🤖</h1>
+<h1 align="center">🏮 𝐕𝐋𝐊𝐘𝐑𝐄 𝐑𝐮𝐥𝐞𝐬 🏮</h1>
 
 ```sh
-🏮 𝐕𝐋𝐊𝐘𝐑𝐄 𝐑𝐮𝐥𝐞𝐬 🏮
-
 ⚠️ Do not abuse/disrespect bot and its owner.
 ⚠️ If you want this bot in your group then contact devs.
 ⚠️ Do not call bot, if you do then you'll get blocked by bot.
