@@ -33,16 +33,16 @@
 │║Ῠ War_Ready: 264 85 383 0477
 └╚═══════⋑
 
-❥.ᨘ۫.ꪶⒸ𝐕𝐥𝐤𝐲𝐫𝐞™ 1 ⦔
+❥.ᨘ۫.𝐕𝐥𝐤𝐲𝐫𝐞™ 𝐎𝐟𝐟𝐢𝐜𝐢𝐚𝐥 1 ⦔
 https://chat.whatsapp.com/DU224C0c1ZO68yEXIAtvTi
 
-❥.ᨘ۫.ꪶⒸ𝐕𝐥𝐤𝐲𝐫𝐞™ 2 ⦔
+❥.ᨘ۫.𝐕𝐥𝐤𝐲𝐫𝐞™ 𝐎𝐟𝐟𝐢𝐜𝐢𝐚𝐥 2 ⦔
 https://chat.whatsapp.com/EH3NaiZm4mYG5TRNYx4N9J
 
-❥.ᨘ۫.ꪶⒸ𝐕𝐥𝐤𝐲𝐫𝐞™ 3 ⦔
+❥.ᨘ۫.𝐕𝐥𝐤𝐲𝐫𝐞™ 𝐎𝐟𝐟𝐢𝐜𝐢𝐚𝐥 3 ⦔
 https://chat.whatsapp.com/FT7W5d7FSfi60rimF87L3N
 
-❥.ᨘ۫.ꪶⒸ𝐕𝐥𝐤𝐲𝐫𝐞™ 𝐺𝑖𝑣𝑒𝑎𝑤𝑎𝑦🎉⦔
+❥.ᨘ۫.𝐕𝐥𝐤𝐲𝐫𝐞™ 𝐎𝐟𝐟𝐢𝐜𝐢𝐚𝐥 𝐕𝐥𝐤𝐲𝐫𝐞 𝐎𝐟𝐟𝐢𝐜𝐢𝐚𝐥 𝐆𝐢𝐯𝐞𝐚𝐰𝐚𝐲𝐬🎉⦔
 https://chat.whatsapp.com/BCMya84xpj0Cjk0IIvbkxN
 ```
 
