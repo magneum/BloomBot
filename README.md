@@ -32,6 +32,18 @@
 │║Ῠ Note: https://wa.me/2349015407879
 │║Ῠ War_Ready: 264 85 383 0477
 └╚═══════⋑
+
+❥.ᨘ۫.ꪶⒸ𝐕𝐥𝐤𝐲𝐫𝐞™ 1 ⦔
+https://chat.whatsapp.com/DU224C0c1ZO68yEXIAtvTi
+
+❥.ᨘ۫.ꪶⒸ𝐕𝐥𝐤𝐲𝐫𝐞™ 2 ⦔
+https://chat.whatsapp.com/EH3NaiZm4mYG5TRNYx4N9J
+
+❥.ᨘ۫.ꪶⒸ𝐕𝐥𝐤𝐲𝐫𝐞™ 3 ⦔
+https://chat.whatsapp.com/FT7W5d7FSfi60rimF87L3N
+
+❥.ᨘ۫.ꪶⒸ𝐕𝐥𝐤𝐲𝐫𝐞™ 𝐺𝑖𝑣𝑒𝑎𝑤𝑎𝑦🎉⦔
+https://chat.whatsapp.com/BCMya84xpj0Cjk0IIvbkxN
 ```
 
 <h1 align="center">🎊𝐂𝐚𝐭𝐞𝐠𝐨𝐫𝐢𝐞𝐬🎊</h1>
