@@ -15,12 +15,12 @@
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 require("../../🤖Utilities/Settings");
 let {
-  isUrl,
-  fetchJson,
-  getBuffer,
-  jsonformat,
-  GIFBufferToVideoBuffer,
-  getRandom,
+isUrl,
+fetchJson,
+getBuffer,
+jsonformat,
+GIFBufferToVideoBuffer,
+getRandom,
 } = require(`../../🤖Utilities/ɴᴇᴄᴛᴏʀ`);
 let fs = require(`fs`);
 let util = require(`util`);
@@ -44,32 +44,43 @@ let Final_Name = Script_Name.slice(0, -3).toLowerCase();
 let { Caught } = require("../../👒Buttons/Caught");
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 exports.rules = async (
-  ӄryӄnz,
-  Vlkyre,
-  pushName,
-  F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-  quoted,
-  isMedia,
-  isGroup,
-  isBotAdmin,
-  isSenderAdmin,
-  isSenderTUF,
-  commandName,
-  body
+ӄryӄnz,
+Vlkyre,
+pushName,
+F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+quoted,
+isMedia,
+isGroup,
+isBotAdmin,
+isSenderAdmin,
+isSenderTUF,
+commandName,
+body
 ) => {
-  return await Image_Button(
-    ӄryӄnz,
-    Vlkyre,
-    Vlkyre.A𝖗𝖌𝖘,
-    "./👗Skins/KrakinzLab.png",
-    `🏮 (𝐜)Vlkyre 𝐑𝐮𝐥𝐞𝐬 🏮
+return await Image_Button(
+ӄryӄnz,
+Vlkyre,
+Vlkyre.A𝖗𝖌𝖘,
+"./👗Skins/KrakinzLab.png",
+`Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: is a whatsapp userbot with automation,moderation,music,games and 140+ commands!
 
+┌╔══『 🎐𝐈𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧🎐 』
+│║Ῠ 𝐩𝐫𝐞𝐟𝐢𝐱: ${prefix}
+│║Ῠ 𝐧𝐚𝐦𝐞:${Vlkyre.pushName || "~ɴᴏ_ɴᴀᴍᴇ~"}
+│║Ῠ 𝐠𝐩𝐚𝐲: +918436686758
+│║Ῠ 𝐮𝐩𝐢: krakinzkon@oksbi
+│║Ῠ 𝐠𝐢𝐭: github.com/kryknz/vlkyre
+│║Ῠ 𝐠𝐫𝐨𝐮𝐩: Vlkyre.krakinzkon.repl.co
+└╚═══════⋑
+
+
+🏮 (𝐜)Vlkyre 𝐑𝐮𝐥𝐞𝐬 🏮
 ⚠️ Do not abuse/disrespect bot and its owner.
 ⚠️ If you want this bot in your group then contact devs.
 ⚠️ Do not call bot, if you do then you'll get blocked by bot.
 ⚠️ If you see any bug/error in bot then report it to devs in the above group chats.
 ⚠️ Do not spam bot with commands, if bot is not responding then it means either bot is offline or there's internet issue at server end.`
-  );
+);
 };
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 /*

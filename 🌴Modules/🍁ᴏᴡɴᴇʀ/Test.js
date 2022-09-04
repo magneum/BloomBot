@@ -15,12 +15,12 @@
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 require("../../🤖Utilities/Settings");
 let {
-  isUrl,
-  fetchJson,
-  getBuffer,
-  jsonformat,
-  GIFBufferToVideoBuffer,
-  getRandom,
+isUrl,
+fetchJson,
+getBuffer,
+jsonformat,
+GIFBufferToVideoBuffer,
+getRandom,
 } = require("../../🤖Utilities/ɴᴇᴄᴛᴏʀ");
 let fs = require("fs");
 let util = require("util");
@@ -48,161 +48,161 @@ let Final_Name = Script_Name.slice(0, -3).toLowerCase();
 let { Caught } = require("../../👒Buttons/Caught");
 ("|⬡════════════════════════════════════════════════════════════════════「  Vlkyre 𝐀𝐩𝐢®  」═══════════════════════════════════════════════════════════════════⬡|");
 exports.test = async (
-  Ѷ𝖎𝖔𝖓,
-  ӄryӄnz,
-  Vlkyre,
-  pushName,
-  F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-  quoted,
-  isMedia,
-  isGroup,
-  isBotAdmin,
-  isSenderAdmin,
-  isSenderTUF,
-  commandName,
-  body
+Ѷ𝖎𝖔𝖓,
+ӄryӄnz,
+Vlkyre,
+pushName,
+F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+quoted,
+isMedia,
+isGroup,
+isBotAdmin,
+isSenderAdmin,
+isSenderTUF,
+commandName,
+body
 ) => {
-  try {
-    let ɴᴇᴡ = ɢɪᴛ.log(["🐍Ş𝖎𝖕𝖍𝖔𝖓®..origin/🐍Ş𝖎𝖕𝖍𝖔𝖓®"]);
-    if (ɴᴇᴡ.total != 0) {
-      console.log(
-        chalk.black(
-          chalk.bgWhite(
-            "⬡═════════════════════════|▷ 𝐆𝐢𝐭𝐇𝐮𝐛 𝐒𝐲𝐧𝐜 ◁|═════════════════════════⬡"
-          )
-        )
-      );
-      console.log(
-        chalk.black(chalk.bgWhite("🐙𝐂𝐨𝐦𝐦𝐢𝐭𝐬: "), chalk.bgMagenta(ɴᴇᴡ))
-      );
-      console.log(
-        chalk.black(
-          chalk.bgWhite("💡𝐈𝐧𝐟𝐨: "),
-          chalk.bgYellow("Starting Git-Pull")
-        )
-      );
-      console.log(
-        chalk.black(
-          chalk.bgWhite("🕐𝐓𝐢𝐦𝐞: "),
-          chalk.bgGreen("".concat(new Date()))
-        )
-      );
-      ʀᴇᴅ = require("child_process").exec("rm -f ./.git/index.lock");
-      ʀᴇᴅ.stderr.pipe(process.stderr);
-      ʀᴇᴅ.stdout.pipe(process.stdout);
-      ʀᴇᴅ.on("exit", function (code, signal) {
-        if (code)
-          console.log(
-            chalk.black(chalk.bgWhite("📟𝐄𝐂𝐨𝐝𝐞: "), chalk.bgRed(code))
-          );
-        if (signal) {
-          console.log(
-            chalk.black(chalk.bgWhite("📶𝐄𝐒𝐢𝐠𝐧𝐚𝐥: "), chalk.bgBlue(signal))
-          );
-          process.exitCode = 1;
-        }
-      });
-      ʀᴇᴅ = require("child_process").exec("git reset --hard");
-      ʀᴇᴅ.stderr.pipe(process.stderr);
-      ʀᴇᴅ.stdout.pipe(process.stdout);
-      ʀᴇᴅ.on("exit", function (code, signal) {
-        if (code)
-          console.log(
-            chalk.black(chalk.bgWhite("📟𝐄𝐂𝐨𝐝𝐞: "), chalk.bgRed(code))
-          );
-        if (signal) {
-          console.log(
-            chalk.black(chalk.bgWhite("📶𝐄𝐒𝐢𝐠𝐧𝐚𝐥: "), chalk.bgBlue(signal))
-          );
-          process.exitCode = 1;
-        }
-      });
-      ʀᴇᴅ = require("child_process").exec("git stash");
-      ʀᴇᴅ.stderr.pipe(process.stderr);
-      ʀᴇᴅ.stdout.pipe(process.stdout);
-      ʀᴇᴅ.on("exit", function (code, signal) {
-        if (code)
-          console.log(
-            chalk.black(chalk.bgWhite("📟𝐄𝐂𝐨𝐝𝐞: "), chalk.bgRed(code))
-          );
-        if (signal) {
-          console.log(
-            chalk.black(chalk.bgWhite("📶𝐄𝐒𝐢𝐠𝐧𝐚𝐥: "), chalk.bgBlue(signal))
-          );
-          process.exitCode = 1;
-        }
-      });
-      ʀᴇᴅ = require("child_process").exec("git stash drop");
-      ʀᴇᴅ.stderr.pipe(process.stderr);
-      ʀᴇᴅ.stdout.pipe(process.stdout);
-      ʀᴇᴅ.on("exit", function (code, signal) {
-        if (code)
-          console.log(
-            chalk.black(chalk.bgWhite("📟𝐄𝐂𝐨𝐝𝐞: "), chalk.bgRed(code))
-          );
-        if (signal) {
-          console.log(
-            chalk.black(chalk.bgWhite("📶𝐄𝐒𝐢𝐠𝐧𝐚𝐥: "), chalk.bgBlue(signal))
-          );
-          process.exitCode = 1;
-        }
-      });
-      ʀᴇᴅ = require("child_process").exec("git pull");
-      ʀᴇᴅ.stderr.pipe(process.stderr);
-      ʀᴇᴅ.stdout.pipe(process.stdout);
-      ʀᴇᴅ.on("exit", function (code, signal) {
-        if (code)
-          console.log(
-            chalk.black(chalk.bgWhite("📟𝐄𝐂𝐨𝐝𝐞: "), chalk.bgRed(code))
-          );
-        if (signal) {
-          console.log(
-            chalk.black(chalk.bgWhite("📶𝐄𝐒𝐢𝐠𝐧𝐚𝐥: "), chalk.bgBlue(signal))
-          );
-          process.exitCode = 1;
-        }
-      });
-      ʀᴇᴅ = require("child_process").exec("npm restart");
-      ʀᴇᴅ.stderr.pipe(process.stderr);
-      ʀᴇᴅ.stdout.pipe(process.stdout);
-      ʀᴇᴅ.on("exit", function (code, signal) {
-        if (code)
-          console.log(
-            chalk.black(chalk.bgWhite("📟𝐄𝐂𝐨𝐝𝐞: "), chalk.bgRed(code))
-          );
-        if (signal) {
-          console.log(
-            chalk.black(chalk.bgWhite("📶𝐄𝐒𝐢𝐠𝐧𝐚𝐥: "), chalk.bgBlue(signal))
-          );
-          process.exitCode = 1;
-        }
-      });
-      console.log(
-        chalk.black(
-          chalk.bgWhite("💡𝐈𝐧𝐟𝐨: "),
-          chalk.bgGreen("Git-Pull Finished")
-        )
-      );
-    } else {
-      return await Vlkyre.reply(
-        "💡𝐈𝐧𝐟𝐨: Logger Detached.\nFalling Back To Legacy Method"
-      );
-    }
-  } catch (error) {
-    console.log(chalk.black(chalk.bgWhite("❌𝐄𝐫𝐫𝐨𝐫: "), chalk.bgRed(error)));
-    console.log(
-      chalk.black(
-        chalk.bgWhite("💡𝐈𝐧𝐟𝐨: "),
-        chalk.bgYellow("Falling Back To Legacy Method")
-      )
-    );
-    await Hoku.delete("/apps/" + HEROKU_APP_NAME + "/dynos/" + "worker").catch(
-      (error) =>
-        console.log(
-          chalk.black(chalk.bgWhite("❌𝐇𝐞𝐫𝐨𝐤𝐮 𝐄𝐫𝐫𝐨𝐫: "), chalk.bgRed(error))
-        )
-    );
-  }
+try {
+let ɴᴇᴡ = ɢɪᴛ.log(["🐍Ş𝖎𝖕𝖍𝖔𝖓®..origin/🐍Ş𝖎𝖕𝖍𝖔𝖓®"]);
+if (ɴᴇᴡ.total != 0) {
+console.log(
+chalk.black(
+chalk.bgWhite(
+"⬡═════════════════════════|▷ 𝐆𝐢𝐭𝐇𝐮𝐛 𝐒𝐲𝐧𝐜 ◁|═════════════════════════⬡"
+)
+)
+);
+console.log(
+chalk.black(chalk.bgWhite("🐙𝐂𝐨𝐦𝐦𝐢𝐭𝐬: "), chalk.bgMagenta(ɴᴇᴡ))
+);
+console.log(
+chalk.black(
+chalk.bgWhite("💡𝐈𝐧𝐟𝐨: "),
+chalk.bgYellow("Starting Git-Pull")
+)
+);
+console.log(
+chalk.black(
+chalk.bgWhite("🕐𝐓𝐢𝐦𝐞: "),
+chalk.bgGreen("".concat(new Date()))
+)
+);
+ʀᴇᴅ = require("child_process").exec("rm -f ./.git/index.lock");
+ʀᴇᴅ.stderr.pipe(process.stderr);
+ʀᴇᴅ.stdout.pipe(process.stdout);
+ʀᴇᴅ.on("exit", function (code, signal) {
+if (code)
+console.log(
+chalk.black(chalk.bgWhite("📟𝐄𝐂𝐨𝐝𝐞: "), chalk.bgRed(code))
+);
+if (signal) {
+console.log(
+chalk.black(chalk.bgWhite("📶𝐄𝐒𝐢𝐠𝐧𝐚𝐥: "), chalk.bgBlue(signal))
+);
+process.exitCode = 1;
+}
+});
+ʀᴇᴅ = require("child_process").exec("git reset --hard");
+ʀᴇᴅ.stderr.pipe(process.stderr);
+ʀᴇᴅ.stdout.pipe(process.stdout);
+ʀᴇᴅ.on("exit", function (code, signal) {
+if (code)
+console.log(
+chalk.black(chalk.bgWhite("📟𝐄𝐂𝐨𝐝𝐞: "), chalk.bgRed(code))
+);
+if (signal) {
+console.log(
+chalk.black(chalk.bgWhite("📶𝐄𝐒𝐢𝐠𝐧𝐚𝐥: "), chalk.bgBlue(signal))
+);
+process.exitCode = 1;
+}
+});
+ʀᴇᴅ = require("child_process").exec("git stash");
+ʀᴇᴅ.stderr.pipe(process.stderr);
+ʀᴇᴅ.stdout.pipe(process.stdout);
+ʀᴇᴅ.on("exit", function (code, signal) {
+if (code)
+console.log(
+chalk.black(chalk.bgWhite("📟𝐄𝐂𝐨𝐝𝐞: "), chalk.bgRed(code))
+);
+if (signal) {
+console.log(
+chalk.black(chalk.bgWhite("📶𝐄𝐒𝐢𝐠𝐧𝐚𝐥: "), chalk.bgBlue(signal))
+);
+process.exitCode = 1;
+}
+});
+ʀᴇᴅ = require("child_process").exec("git stash drop");
+ʀᴇᴅ.stderr.pipe(process.stderr);
+ʀᴇᴅ.stdout.pipe(process.stdout);
+ʀᴇᴅ.on("exit", function (code, signal) {
+if (code)
+console.log(
+chalk.black(chalk.bgWhite("📟𝐄𝐂𝐨𝐝𝐞: "), chalk.bgRed(code))
+);
+if (signal) {
+console.log(
+chalk.black(chalk.bgWhite("📶𝐄𝐒𝐢𝐠𝐧𝐚𝐥: "), chalk.bgBlue(signal))
+);
+process.exitCode = 1;
+}
+});
+ʀᴇᴅ = require("child_process").exec("git pull");
+ʀᴇᴅ.stderr.pipe(process.stderr);
+ʀᴇᴅ.stdout.pipe(process.stdout);
+ʀᴇᴅ.on("exit", function (code, signal) {
+if (code)
+console.log(
+chalk.black(chalk.bgWhite("📟𝐄𝐂𝐨𝐝𝐞: "), chalk.bgRed(code))
+);
+if (signal) {
+console.log(
+chalk.black(chalk.bgWhite("📶𝐄𝐒𝐢𝐠𝐧𝐚𝐥: "), chalk.bgBlue(signal))
+);
+process.exitCode = 1;
+}
+});
+ʀᴇᴅ = require("child_process").exec("npm restart");
+ʀᴇᴅ.stderr.pipe(process.stderr);
+ʀᴇᴅ.stdout.pipe(process.stdout);
+ʀᴇᴅ.on("exit", function (code, signal) {
+if (code)
+console.log(
+chalk.black(chalk.bgWhite("📟𝐄𝐂𝐨𝐝𝐞: "), chalk.bgRed(code))
+);
+if (signal) {
+console.log(
+chalk.black(chalk.bgWhite("📶𝐄𝐒𝐢𝐠𝐧𝐚𝐥: "), chalk.bgBlue(signal))
+);
+process.exitCode = 1;
+}
+});
+console.log(
+chalk.black(
+chalk.bgWhite("💡𝐈𝐧𝐟𝐨: "),
+chalk.bgGreen("Git-Pull Finished")
+)
+);
+} else {
+return await Vlkyre.reply(
+"💡𝐈𝐧𝐟𝐨: Logger Detached.\nFalling Back To Legacy Method"
+);
+}
+} catch (error) {
+console.log(chalk.black(chalk.bgWhite("❌𝐄𝐫𝐫𝐨𝐫: "), chalk.bgRed(error)));
+console.log(
+chalk.black(
+chalk.bgWhite("💡𝐈𝐧𝐟𝐨: "),
+chalk.bgYellow("Falling Back To Legacy Method")
+)
+);
+await Hoku.delete("/apps/" + HEROKU_APP_NAME + "/dynos/" + "worker").catch(
+(error) =>
+console.log(
+chalk.black(chalk.bgWhite("❌𝐇𝐞𝐫𝐨𝐤𝐮 𝐄𝐫𝐫𝐨𝐫: "), chalk.bgRed(error))
+)
+);
+}
 };
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 /*

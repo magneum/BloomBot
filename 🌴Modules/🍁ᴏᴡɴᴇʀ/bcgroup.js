@@ -15,12 +15,12 @@
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 require("../../🤖Utilities/Settings");
 let {
-  isUrl,
-  fetchJson,
-  getBuffer,
-  jsonformat,
-  GIFBufferToVideoBuffer,
-  getRandom,
+isUrl,
+fetchJson,
+getBuffer,
+jsonformat,
+GIFBufferToVideoBuffer,
+getRandom,
 } = require(`../../🤖Utilities/ɴᴇᴄᴛᴏʀ`);
 let fs = require(`fs`);
 let util = require(`util`);
@@ -43,59 +43,59 @@ let Final_Name = Script_Name.slice(0, -3).toLowerCase();
 let { Caught } = require("../../👒Buttons/Caught");
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 exports.bcgroup = async (
-  ӄryӄnz,
-  Vlkyre,
-  pushName,
-  F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-  quoted,
-  isMedia,
-  isGroup,
-  isBotAdmin,
-  isSenderAdmin,
-  isSenderTUF,
-  commandName,
-  body
+ӄryӄnz,
+Vlkyre,
+pushName,
+F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+quoted,
+isMedia,
+isGroup,
+isBotAdmin,
+isSenderAdmin,
+isSenderTUF,
+commandName,
+body
 ) => {
-  if (!Vlkyre.fromMe && !isSenderTUF) {
-    return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-      ӄryӄnz,
-      Vlkyre,
-      `*❌ERROR:* Owner & Mod only command!
+if (!Vlkyre.fromMe && !isSenderTUF) {
+return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
+ӄryӄnz,
+Vlkyre,
+`*❌ERROR:* Owner & Mod only command!
 *⚡USAGE:* ${prefix}${Final_Name} <Link>`
-    );
-  }
-  ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
-  if (!F𝖚𝖑𝖑_A𝖗𝖌𝖘) {
-    return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-      ӄryӄnz,
-      Vlkyre,
-      `*❌ERROR:* No query provided!
+);
+}
+("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
+if (!F𝖚𝖑𝖑_A𝖗𝖌𝖘) {
+return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
+ӄryӄnz,
+Vlkyre,
+`*❌ERROR:* No query provided!
 *⚡USAGE:* ${prefix}${Final_Name} <text>`
-    );
-  }
-  ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
-  let bct = F𝖚𝖑𝖑_A𝖗𝖌𝖘;
-  let getGroups = await ӄryӄnz.groupFetchAllParticipating();
-  let groups = Object.entries(getGroups)
-    .slice(0)
-    .map((entry) => entry[1]);
-  let anu = groups.map((v) => v.id);
-  Vlkyre.reply(
-    ` Broadcasting in ${anu.length} Group Chat, in ${anu.length * 1.5} seconds`
-  );
-  for (let i of anu) {
-    let txt = `🍀 *Author:* ${pushName}
+);
+}
+("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
+let bct = F𝖚𝖑𝖑_A𝖗𝖌𝖘;
+let getGroups = await ӄryӄnz.groupFetchAllParticipating();
+let groups = Object.entries(getGroups)
+.slice(0)
+.map((entry) => entry[1]);
+let anu = groups.map((v) => v.id);
+Vlkyre.reply(
+` Broadcasting in ${anu.length} Group Chat, in ${anu.length * 1.5} seconds`
+);
+for (let i of anu) {
+let txt = `🍀 *Author:* ${pushName}
 🔖 *Message:* ${bct}`;
-    await ӄryӄnz.sendMessage(i, {
-      video: {
-        url: `https://telegra.ph/file/3c3f94c8463e7f9c29d73.mp4`,
-      },
-      mimetype: `video/mp4`,
-      fileName: `bc.mp4`,
-      caption: `${txt}`,
-    });
-  }
-  Vlkyre.reply(`Successfuly Broadcasted in ${anu.length} Groups`);
+await ӄryӄnz.sendMessage(i, {
+video: {
+url: `https://telegra.ph/file/3c3f94c8463e7f9c29d73.mp4`,
+},
+mimetype: `video/mp4`,
+fileName: `bc.mp4`,
+caption: `${txt}`,
+});
+}
+Vlkyre.reply(`Successfuly Broadcasted in ${anu.length} Groups`);
 };
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 /*

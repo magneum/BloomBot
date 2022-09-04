@@ -15,12 +15,12 @@
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 require("../../🤖Utilities/Settings");
 let {
-  isUrl,
-  fetchJson,
-  getBuffer,
-  jsonformat,
-  GIFBufferToVideoBuffer,
-  getRandom,
+isUrl,
+fetchJson,
+getBuffer,
+jsonformat,
+GIFBufferToVideoBuffer,
+getRandom,
 } = require(`../../🤖Utilities/ɴᴇᴄᴛᴏʀ`);
 let fs = require(`fs`);
 let util = require(`util`);
@@ -44,30 +44,30 @@ let Final_Name = Script_Name.slice(0, -3).toLowerCase();
 let { Caught } = require("../../👒Buttons/Caught");
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 exports.reboot = async (
-  ӄryӄnz,
-  Vlkyre,
-  pushName,
-  F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-  quoted,
-  isMedia,
-  isGroup,
-  isBotAdmin,
-  isSenderAdmin,
-  isSenderTUF,
-  commandName,
-  body
+ӄryӄnz,
+Vlkyre,
+pushName,
+F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+quoted,
+isMedia,
+isGroup,
+isBotAdmin,
+isSenderAdmin,
+isSenderTUF,
+commandName,
+body
 ) => {
-  try {
-    let Hoku = new Heroku({ token: HEROKU_API_KEY });
-    await Vlkyre.reply(
-      `💡𝐈𝐧𝐟𝐨: Ѷ𝖑𝐤𝐲𝖗𝖊🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 Now Rebooting\n\n🕐𝐓𝐢𝐦𝐞: ${"".concat(
-        new Date()
-      )}`
-    );
-    await Hoku.delete("/apps/" + HEROKU_APP_NAME + "/dynos/" + "worker");
-  } catch (error) {
-    return await Caught(ӄӄ, Vlkyre, error);
-  }
+try {
+let Hoku = new Heroku({ token: HEROKU_API_KEY });
+await Vlkyre.reply(
+`💡𝐈𝐧𝐟𝐨: Ѷ𝖑𝐤𝐲𝖗𝖊🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 Now Rebooting\n\n🕐𝐓𝐢𝐦𝐞: ${"".concat(
+new Date()
+)}`
+);
+await Hoku.delete("/apps/" + HEROKU_APP_NAME + "/dynos/" + "worker");
+} catch (error) {
+return await Caught(ӄӄ, Vlkyre, error);
+}
 };
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 /*

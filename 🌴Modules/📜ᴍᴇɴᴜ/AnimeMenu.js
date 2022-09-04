@@ -66,7 +66,8 @@ Vlkyre.A𝖗𝖌𝖘,
 "./👗Skins/Vlkyre.png",
 `Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: is a whatsapp userbot with automation,moderation,music,games and 140+ commands!
 
-┌╔══Ῠ 𝐩𝐫𝐞𝐟𝐢𝐱: ${prefix}
+┌╔══『 🎐𝐈𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧🎐 』
+│║Ῠ 𝐩𝐫𝐞𝐟𝐢𝐱: ${prefix}
 │║Ῠ 𝐧𝐚𝐦𝐞:${Vlkyre.pushName || "~ɴᴏ_ɴᴀᴍᴇ~"}
 │║Ῠ 𝐠𝐩𝐚𝐲: +918436686758
 │║Ῠ 𝐮𝐩𝐢: krakinzkon@oksbi
