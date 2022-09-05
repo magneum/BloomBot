@@ -16,22 +16,22 @@
 let googleTTS = require(`google-tts-api`);
 let { DownloaderHelper } = require("node-downloader-helper");
 (async () => {
-  const Media = googleTTS.getAudioUrl("Love", {
-    lang: "en",
-    slow: false,
-    host: `https://translate.google.com`,
-  });
-  let dl𝐀𝐩𝐢 = new DownloaderHelper(Media, "./Vlkyre🎒Bag", {
-    fileName: `${Date.now()}.mp3`,
-    retry: true,
-  });
-  await dl𝐀𝐩𝐢.on("end", async () => {});
-  await dl𝐀𝐩𝐢.on("error", async (𝕰𝖗𝖗𝖔𝖗) => {
-    return console.log(𝕰𝖗𝖗𝖔𝖗);
-  });
-  await dl𝐀𝐩𝐢.start().catch(async (𝕰𝖗𝖗𝖔𝖗) => {
-    return console.log(𝕰𝖗𝖗𝖔𝖗);
-  });
+const Media = googleTTS.getAudioUrl("Love", {
+lang: "en",
+slow: false,
+host: `https://translate.google.com`,
+});
+let dl𝐀𝐩𝐢 = new DownloaderHelper(Media, "./Vlkyre🎒Bag", {
+fileName: `${Date.now()}.mp3`,
+retry: true,
+});
+await dl𝐀𝐩𝐢.on("end", async () => {});
+await dl𝐀𝐩𝐢.on("error", async (𝕰𝖗𝖗𝖔𝖗) => {
+return console.log(𝕰𝖗𝖗𝖔𝖗);
+});
+await dl𝐀𝐩𝐢.start().catch(async (𝕰𝖗𝖗𝖔𝖗) => {
+return console.log(𝕰𝖗𝖗𝖔𝖗);
+});
 })();
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 /*

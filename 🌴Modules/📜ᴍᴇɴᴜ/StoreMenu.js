@@ -67,25 +67,25 @@ Vlkyre.A𝖗𝖌𝖘,
 `Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: is a whatsapp userbot with automation,moderation,music,games and 140+ commands!
 
 ┌╔══『 🎐𝐈𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧🎐 』
-│║Ῠ 𝐩𝐫𝐞𝐟𝐢𝐱: ${prefix}
-│║Ῠ 𝐧𝐚𝐦𝐞:${Vlkyre.pushName || "~ɴᴏ_ɴᴀᴍᴇ~"}
-│║Ῠ 𝐠𝐩𝐚𝐲: +918436686758
-│║Ῠ 𝐮𝐩𝐢: krakinzkon@oksbi
-│║Ῠ 𝐠𝐢𝐭: github.com/kryknz/vlkyre
-│║Ῠ 𝐠𝐫𝐨𝐮𝐩: Vlkyre.krakinzkon.repl.co
+│║⦁ 𝐩𝐫𝐞𝐟𝐢𝐱: ${prefix}
+│║⦁ 𝐧𝐚𝐦𝐞:${Vlkyre.pushName || "~ɴᴏ_ɴᴀᴍᴇ~"}
+│║⦁ 𝐠𝐩𝐚𝐲: +918436686758
+│║⦁ 𝐮𝐩𝐢: krakinzkon@oksbi
+│║⦁ 𝐠𝐢𝐭: github.com/kryknz/vlkyre
+│║⦁ 𝐠𝐫𝐨𝐮𝐩: Vlkyre.krakinzkon.repl.co
 └╚═══════⋑
 
-╔══『 🛍️𝐒𝐓𝐎𝐑𝐄🛍️ 』
-║Ῠ ${prefix}buy basic 
-║Ῠ ${prefix}buy bronze 
-║Ῠ ${prefix}buy silver 
-║Ῠ ${prefix}buy golden
-║Ῠ ${prefix}buy platinum 
-║Ῠ ${prefix}buy diamond
-║Ῠ ${prefix}buy sword
-║Ῠ ${prefix}buy laptop
-║Ῠ ${prefix}buy charm
-╚═══════╝`
+┌╔══『 🛍️𝐒𝐓𝐎𝐑𝐄🛍️ 』
+│║⦁ ${prefix}buy basic 
+│║⦁ ${prefix}buy bronze 
+│║⦁ ${prefix}buy silver 
+│║⦁ ${prefix}buy golden
+│║⦁ ${prefix}buy platinum 
+│║⦁ ${prefix}buy diamond
+│║⦁ ${prefix}buy sword
+│║⦁ ${prefix}buy laptop
+│║⦁ ${prefix}buy charm
+└╚═══════⋑`
 );
 };
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");

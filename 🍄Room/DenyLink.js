@@ -15,68 +15,68 @@
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 require("../🤖Utilities/Settings");
 exports.DenyLink = async (
-  Vlkyre,
-  ӄryӄnz,
-  Caught,
-  Image_Button,
-  A𝖗𝖌𝖘,
-  LinkList,
-  Figure
+Vlkyre,
+ӄryӄnz,
+Caught,
+Image_Button,
+A𝖗𝖌𝖘,
+LinkList,
+Figure
 ) => {
-  await LinkList.findOne(
-    {
-      serverID: Vlkyre.chatID,
-    },
-    async (error, server) => {
-      if (error) return Caught(ӄryӄnz, Vlkyre, e);
-      if (!server) return;
-      let FetchCurrentGroupLink = await ӄryӄnz.groupInviteCode(Vlkyre.chatID);
-      let GroupLinkRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i;
-      let isGroupLink = GroupLinkRegex.exec(Figure);
-      let PresentGroupLink = new RegExp(
-        `https://chat.whatsapp.com/${FetchCurrentGroupLink}`,
-        "i"
-      );
-      let isCurrentGroupLink = PresentGroupLink.test(Figure);
-      if (isGroupLink && !isCurrentGroupLink) {
-        await ӄryӄnz.sendMessage(Vlkyre.chatID, {
-          text: `╔◇═══════════════◇╗
+await LinkList.findOne(
+{
+serverID: Vlkyre.chatID,
+},
+async (error, server) => {
+if (error) return Caught(ӄryӄnz, Vlkyre, e);
+if (!server) return;
+let FetchCurrentGroupLink = await ӄryӄnz.groupInviteCode(Vlkyre.chatID);
+let GroupLinkRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i;
+let isGroupLink = GroupLinkRegex.exec(Figure);
+let PresentGroupLink = new RegExp(
+`https://chat.whatsapp.com/${FetchCurrentGroupLink}`,
+"i"
+);
+let isCurrentGroupLink = PresentGroupLink.test(Figure);
+if (isGroupLink && !isCurrentGroupLink) {
+await ӄryӄnz.sendMessage(Vlkyre.chatID, {
+text: `╔◇═══════════════◇╗
 ┊ 𝐊𝐫𝐲𝐙𝐞𝐧❌𝐀𝐧𝐭𝐢-𝐋𝐢𝐧𝐤
 ┊    𝐌𝐞𝐜𝐡𝐚𝐧𝐢𝐬𝐦
 ╚◇═══════════════◇╝
 
 🤖𝐕𝐥𝐤𝐲𝐫𝐞: Kicked! 🎊One Less MoFo🎊
 ❗𝗥𝗲𝗮𝘀𝗼𝗻: Sent some type of Link in this Group!`,
-          contextInfo: { mentionedJid: [Vlkyre.sender] },
-        });
-        return await ӄryӄnz
-          .groupParticipantsUpdate(Vlkyre.chatID, [Vlkyre.sender], "remove")
-          .catch((e) => Caught(ӄryӄnz, Vlkyre, e));
-      } else if (
-        Figure.includes("https://t.me/") &&
-        Figure.includes("discord.gg") &&
-        Figure.includes("discord.com") &&
-        Figure.includes("/t.me/") &&
-        Figure.includes("wa.me/") &&
-        Figure.includes("www.")
-      ) {
-        await ӄryӄnz.sendMessage(Vlkyre.chatID, {
-          text: `╔◇═══════════════◇╗
+contextInfo: { mentionedJid: [Vlkyre.sender] },
+});
+return await ӄryӄnz
+.groupParticipantsUpdate(Vlkyre.chatID, [Vlkyre.sender], "remove")
+.catch((e) => Caught(ӄryӄnz, Vlkyre, e));
+} else if (
+Figure.includes("https://t.me/") &&
+Figure.includes("discord.gg") &&
+Figure.includes("discord.com") &&
+Figure.includes("/t.me/") &&
+Figure.includes("wa.me/") &&
+Figure.includes("www.")
+) {
+await ӄryӄnz.sendMessage(Vlkyre.chatID, {
+text: `╔◇═══════════════◇╗
 ┊ 𝐊𝐫𝐲𝐙𝐞𝐧❌𝐀𝐧𝐭𝐢-𝐋𝐢𝐧𝐤
 ┊    𝐌𝐞𝐜𝐡𝐚𝐧𝐢𝐬𝐦
 ╚◇═══════════════◇╝
 
 🤖𝐕𝐥𝐤𝐲𝐫𝐞: Kicked! 🎊One Less MoFo🎊
 ❗𝗥𝗲𝗮𝘀𝗼𝗻: Sent some type of Link in this Group!`,
-          contextInfo: { mentionedJid: [Vlkyre.sender] },
-        });
-        return await ӄryӄnz
-          .groupParticipantsUpdate(Vlkyre.chatID, [Vlkyre.sender], "remove")
-          .catch((e) => Caught(ӄryӄnz, Vlkyre, e));
-      } else {
-      }
-    }
-  );
+contextInfo: { mentionedJid: [Vlkyre.sender] },
+});
+return await ӄryӄnz
+.groupParticipantsUpdate(Vlkyre.chatID, [Vlkyre.sender], "remove")
+.catch((e) => Caught(ӄryӄnz, Vlkyre, e));
+} else {
+}
+}
+);
 };
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 /*

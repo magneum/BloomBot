@@ -67,38 +67,38 @@ Vlkyre.A𝖗𝖌𝖘,
 `Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: is a whatsapp userbot with automation,moderation,music,games and 140+ commands!
 
 ┌╔══『 🎐𝐈𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧🎐 』
-│║Ῠ 𝐩𝐫𝐞𝐟𝐢𝐱: ${prefix}
-│║Ῠ 𝐧𝐚𝐦𝐞:${Vlkyre.pushName || "~ɴᴏ_ɴᴀᴍᴇ~"}
-│║Ῠ 𝐠𝐩𝐚𝐲: +918436686758
-│║Ῠ 𝐮𝐩𝐢: krakinzkon@oksbi
-│║Ῠ 𝐠𝐢𝐭: github.com/kryknz/vlkyre
-│║Ῠ 𝐠𝐫𝐨𝐮𝐩: Vlkyre.krakinzkon.repl.co
+│║⦁ 𝐩𝐫𝐞𝐟𝐢𝐱: ${prefix}
+│║⦁ 𝐧𝐚𝐦𝐞:${Vlkyre.pushName || "~ɴᴏ_ɴᴀᴍᴇ~"}
+│║⦁ 𝐠𝐩𝐚𝐲: +918436686758
+│║⦁ 𝐮𝐩𝐢: krakinzkon@oksbi
+│║⦁ 𝐠𝐢𝐭: github.com/kryknz/vlkyre
+│║⦁ 𝐠𝐫𝐨𝐮𝐩: Vlkyre.krakinzkon.repl.co
 └╚═══════⋑
 
-╔══『 📥𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐑📥 』
-║Ῠ ${prefix}yta
-║Ῠ ${prefix}play
-║Ῠ ${prefix}song
-║Ῠ ${prefix}sing
-║Ῠ ${prefix}ytmp3
-║Ῠ ${prefix}ytplay
-║Ῠ ${prefix}ytaudio
-║Ῠ ${prefix}ytmusic
-║Ῠ ${prefix}youtubemusic
-║Ῠ ${prefix}ytv
-║Ῠ ${prefix}watch
-║Ῠ ${prefix}ytmp4
-║Ῠ ${prefix}stream
-║Ῠ ${prefix}ytvideo
-║Ῠ ${prefix}youtubevideo
-║Ῠ ${prefix}radio
-║Ῠ ${prefix}randmusic
-║Ῠ ${prefix}randaudio
-║Ῠ ${prefix}randomaudio
-║Ῠ ${prefix}randommusic
-║Ῠ ${prefix}suggestaudio
-║Ῠ ${prefix}suggestmusic
-╚═══════╝`
+┌╔══『 📥𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐑📥 』
+│║⦁ ${prefix}yta
+│║⦁ ${prefix}play
+│║⦁ ${prefix}song
+│║⦁ ${prefix}sing
+│║⦁ ${prefix}ytmp3
+│║⦁ ${prefix}ytplay
+│║⦁ ${prefix}ytaudio
+│║⦁ ${prefix}ytmusic
+│║⦁ ${prefix}youtubemusic
+│║⦁ ${prefix}ytv
+│║⦁ ${prefix}watch
+│║⦁ ${prefix}ytmp4
+│║⦁ ${prefix}stream
+│║⦁ ${prefix}ytvideo
+│║⦁ ${prefix}youtubevideo
+│║⦁ ${prefix}radio
+│║⦁ ${prefix}randmusic
+│║⦁ ${prefix}randaudio
+│║⦁ ${prefix}randomaudio
+│║⦁ ${prefix}randommusic
+│║⦁ ${prefix}suggestaudio
+│║⦁ ${prefix}suggestmusic
+└╚═══════⋑`
 );
 };
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");

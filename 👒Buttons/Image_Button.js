@@ -29,8 +29,8 @@ Vlkyre.chatID,
 contextInfo: { mentionedJid: [Vlkyre.sender, Receiver] },
 image: { url: M𝖊𝖉𝖎𝖆 },
 caption: `┌╔══『 𝐏𝐫𝐨𝐟𝐢𝐥𝐞𝐫® 』
-│║Ῠ 🕊️𝐍𝐚𝐦𝐞: ${Vlkyre.pushName || "ɴᴏ_ɴᴀᴍᴇ"}
-│║Ῠ 🎭𝐂𝐡𝐚𝐭𝐈𝐃: ${Vlkyre.chatID.split("@")[0]}
+│║⦁ 🕊️𝐍𝐚𝐦𝐞: ${Vlkyre.pushName || "ɴᴏ_ɴᴀᴍᴇ"}
+│║⦁ 🎭𝐂𝐡𝐚𝐭𝐈𝐃: ${Vlkyre.chatID.split("@")[0]}
 └╚═══════⋑
 
 ${𝕮𝖔𝖓𝖙𝖊𝖓𝖙}`,
@@ -69,8 +69,8 @@ Vlkyre.chatID,
 contextInfo: { mentionedJid: [Vlkyre.sender, Receiver] },
 image: { url: M𝖊𝖉𝖎𝖆 },
 caption: `┌╔══『 𝐏𝐫𝐨𝐟𝐢𝐥𝐞𝐫® 』
-│║Ῠ 🕊️𝐍𝐚𝐦𝐞: ${Vlkyre.pushName || "ɴᴏ_ɴᴀᴍᴇ"}
-│║Ῠ 🎭𝐂𝐡𝐚𝐭𝐈𝐃: ${Vlkyre.chatID.split("@")[0]}
+│║⦁ 🕊️𝐍𝐚𝐦𝐞: ${Vlkyre.pushName || "ɴᴏ_ɴᴀᴍᴇ"}
+│║⦁ 🎭𝐂𝐡𝐚𝐭𝐈𝐃: ${Vlkyre.chatID.split("@")[0]}
 └╚═══════⋑
 
 ${𝕮𝖔𝖓𝖙𝖊𝖓𝖙}`,
@@ -104,8 +104,8 @@ Vlkyre.chatID,
 contextInfo: { mentionedJid: [Vlkyre.sender] },
 image: { url: M𝖊𝖉𝖎𝖆 },
 caption: `┌╔══『 𝐏𝐫𝐨𝐟𝐢𝐥𝐞𝐫® 』
-│║Ῠ 🕊️𝐍𝐚𝐦𝐞: ${Vlkyre.pushName || "ɴᴏ_ɴᴀᴍᴇ"}
-│║Ῠ 🎭𝐂𝐡𝐚𝐭𝐈𝐃: ${Vlkyre.chatID.split("@")[0]}
+│║⦁ 🕊️𝐍𝐚𝐦𝐞: ${Vlkyre.pushName || "ɴᴏ_ɴᴀᴍᴇ"}
+│║⦁ 🎭𝐂𝐡𝐚𝐭𝐈𝐃: ${Vlkyre.chatID.split("@")[0]}
 └╚═══════⋑
 
 ${𝕮𝖔𝖓𝖙𝖊𝖓𝖙}`,

@@ -14,16 +14,16 @@
 */
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 let call_updates = async (ӄryӄnz, json) => {
-  let ᴄᴀʟʟᴇʀɪᴅ = json.content[0].attrs["call-creator"];
-  if (json.content[0].tag == "offer") {
-    let ᴘᴏᴡ = await ӄryӄnz.sendContact(ᴄᴀʟʟᴇʀɪᴅ, global.owner);
-    await ӄryӄnz
-      .sendMessage(
-        ᴄᴀʟʟᴇʀɪᴅ,
-        {
-          contextInfo: { mentionedJid: [ᴄᴀʟʟᴇʀɪᴅ] },
-          image: { url: "./👗Skins/Vlkyre_Orange.png" },
-          caption: `╔══『 𝐏𝐫𝐨𝐟𝐢𝐥𝐞𝐫® 』
+let ᴄᴀʟʟᴇʀɪᴅ = json.content[0].attrs["call-creator"];
+if (json.content[0].tag == "offer") {
+let ᴘᴏᴡ = await ӄryӄnz.sendContact(ᴄᴀʟʟᴇʀɪᴅ, global.owner);
+await ӄryӄnz
+.sendMessage(
+ᴄᴀʟʟᴇʀɪᴅ,
+{
+contextInfo: { mentionedJid: [ᴄᴀʟʟᴇʀɪᴅ] },
+image: { url: "./👗Skins/Vlkyre_Orange.png" },
+caption: `╔══『 𝐏𝐫𝐨𝐟𝐢𝐥𝐞𝐫® 』
 ║ *❣️ ɴᴀᴍᴇ:* ${Vlkyre.pushName || "No_Name"}
 ║ *⚡ ɪᴅ:* ${Vlkyre.chatID.split("@")[0]}
 ╚═══════╝
@@ -39,34 +39,34 @@ let call_updates = async (ӄryӄnz, json) => {
 ⚠️ Do not call bot, if you do then you'll get blocked by bot.
 ⚠️ If you see any bug/error in bot then report it to devs in the above group chats.
 ⚠️ Do not spam bot with commands, if bot is not responding then it means either bot is offline or there's internet issue at server end.`,
-          footer: "*⦓ ⒸVlkyre ⦔*\nᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ",
-          buttons: [
-            {
-              buttonId: prefix + "help",
-              buttonText: { displayText: prefix + "help" },
-              type: 1,
-            },
-            {
-              buttonId: prefix + "support",
-              buttonText: { displayText: prefix + "support" },
-              type: 1,
-            },
-          ],
-          headerType: 4,
-        },
-        {
-          contextInfo: { mentionedJid: [ᴄᴀʟʟᴇʀɪᴅ] },
-          quoted: ᴘᴏᴡ,
-        }
-      )
-      .catch((e) => console.log(e));
-    await ӄryӄnz
-      .updateBlockStatus(ᴄᴀʟʟᴇʀɪᴅ, "block")
-      .catch((e) => console.log(e));
-  }
+footer: "*⦓ ⒸVlkyre ⦔*\nᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ",
+buttons: [
+{
+buttonId: prefix + "help",
+buttonText: { displayText: prefix + "help" },
+type: 1,
+},
+{
+buttonId: prefix + "support",
+buttonText: { displayText: prefix + "support" },
+type: 1,
+},
+],
+headerType: 4,
+},
+{
+contextInfo: { mentionedJid: [ᴄᴀʟʟᴇʀɪᴅ] },
+quoted: ᴘᴏᴡ,
+}
+)
+.catch((e) => console.log(e));
+await ӄryӄnz
+.updateBlockStatus(ᴄᴀʟʟᴇʀɪᴅ, "block")
+.catch((e) => console.log(e));
+}
 };
 module.exports = {
-  Vclup: call_updates,
+Vclup: call_updates,
 };
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 /*

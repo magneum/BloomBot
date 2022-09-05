@@ -67,44 +67,44 @@ Vlkyre.A𝖗𝖌𝖘,
 `Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: is a whatsapp userbot with automation,moderation,music,games and 140+ commands!
 
 ┌╔══『 🎐𝐈𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧🎐 』
-│║Ῠ 𝐩𝐫𝐞𝐟𝐢𝐱: ${prefix}
-│║Ῠ 𝐧𝐚𝐦𝐞:${Vlkyre.pushName || "~ɴᴏ_ɴᴀᴍᴇ~"}
-│║Ῠ 𝐠𝐩𝐚𝐲: +918436686758
-│║Ῠ 𝐮𝐩𝐢: krakinzkon@oksbi
-│║Ῠ 𝐠𝐢𝐭: github.com/kryknz/vlkyre
-│║Ῠ 𝐠𝐫𝐨𝐮𝐩: Vlkyre.krakinzkon.repl.co
+│║⦁ 𝐩𝐫𝐞𝐟𝐢𝐱: ${prefix}
+│║⦁ 𝐧𝐚𝐦𝐞:${Vlkyre.pushName || "~ɴᴏ_ɴᴀᴍᴇ~"}
+│║⦁ 𝐠𝐩𝐚𝐲: +918436686758
+│║⦁ 𝐮𝐩𝐢: krakinzkon@oksbi
+│║⦁ 𝐠𝐢𝐭: github.com/kryknz/vlkyre
+│║⦁ 𝐠𝐫𝐨𝐮𝐩: Vlkyre.krakinzkon.repl.co
 └╚═══════⋑
 
-╔══『 👑𝐎𝐖𝐍𝐄𝐑_𝐒𝐔𝐃𝐎👑 』
-║Ῠ ${prefix}ban
-║Ῠ ${prefix}unban
-║Ῠ ${prefix}reboot
-║Ῠ ${prefix}dbrem
-║Ῠ ${prefix}dataclean
-║Ῠ ${prefix}purgedata
-║Ῠ ${prefix}join
-║Ῠ ${prefix}leave
-║Ῠ ${prefix}support
-║Ῠ ${prefix}bcgroup
-║Ῠ ${prefix}bc
-║Ῠ ${prefix}sp
-║Ῠ ${prefix}mod
-║Ῠ ${prefix}mods
-║Ῠ ${prefix}repo
-║Ῠ ${prefix}githubrepo
-║Ῠ ${prefix}repository
-║Ῠ ${prefix}dev
-║Ῠ ${prefix}devs
-║Ῠ ${prefix}support
-║Ῠ ${prefix}official
-║Ῠ ${prefix}rule
-║Ῠ ${prefix}rules
-║Ῠ ${prefix}h
-║Ῠ ${prefix}how
-║Ῠ ${prefix}help
-║Ῠ ${prefix}menu
-║Ῠ ${prefix}allmenu
-╚═══════╝`
+┌╔══『 👑𝐎𝐖𝐍𝐄𝐑_𝐒𝐔𝐃𝐎👑 』
+│║⦁ ${prefix}ban
+│║⦁ ${prefix}unban
+│║⦁ ${prefix}reboot
+│║⦁ ${prefix}dbrem
+│║⦁ ${prefix}dataclean
+│║⦁ ${prefix}purgedata
+│║⦁ ${prefix}join
+│║⦁ ${prefix}leave
+│║⦁ ${prefix}support
+│║⦁ ${prefix}bcgroup
+│║⦁ ${prefix}bc
+│║⦁ ${prefix}sp
+│║⦁ ${prefix}mod
+│║⦁ ${prefix}mods
+│║⦁ ${prefix}repo
+│║⦁ ${prefix}githubrepo
+│║⦁ ${prefix}repository
+│║⦁ ${prefix}dev
+│║⦁ ${prefix}devs
+│║⦁ ${prefix}support
+│║⦁ ${prefix}official
+│║⦁ ${prefix}rule
+│║⦁ ${prefix}rules
+│║⦁ ${prefix}h
+│║⦁ ${prefix}how
+│║⦁ ${prefix}help
+│║⦁ ${prefix}menu
+│║⦁ ${prefix}allmenu
+└╚═══════⋑`
 );
 };
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");

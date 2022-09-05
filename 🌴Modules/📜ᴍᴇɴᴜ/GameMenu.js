@@ -67,54 +67,54 @@ Vlkyre.A𝖗𝖌𝖘,
 `Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: is a whatsapp userbot with automation,moderation,music,games and 140+ commands!
 
 ┌╔══『 🎐𝐈𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧🎐 』
-│║Ῠ 𝐩𝐫𝐞𝐟𝐢𝐱: ${prefix}
-│║Ῠ 𝐧𝐚𝐦𝐞:${Vlkyre.pushName || "~ɴᴏ_ɴᴀᴍᴇ~"}
-│║Ῠ 𝐠𝐩𝐚𝐲: +918436686758
-│║Ῠ 𝐮𝐩𝐢: krakinzkon@oksbi
-│║Ῠ 𝐠𝐢𝐭: github.com/kryknz/vlkyre
-│║Ῠ 𝐠𝐫𝐨𝐮𝐩: Vlkyre.krakinzkon.repl.co
+│║⦁ 𝐩𝐫𝐞𝐟𝐢𝐱: ${prefix}
+│║⦁ 𝐧𝐚𝐦𝐞:${Vlkyre.pushName || "~ɴᴏ_ɴᴀᴍᴇ~"}
+│║⦁ 𝐠𝐩𝐚𝐲: +918436686758
+│║⦁ 𝐮𝐩𝐢: krakinzkon@oksbi
+│║⦁ 𝐠𝐢𝐭: github.com/kryknz/vlkyre
+│║⦁ 𝐠𝐫𝐨𝐮𝐩: Vlkyre.krakinzkon.repl.co
 └╚═══════⋑
 
-╔══『 💰𝐄𝐂𝐎𝐍𝐎𝐌𝐘_𝐆𝐀𝐌𝐄💰 』
-║Ῠ ${prefix}job
-║Ῠ ${prefix}work
-║Ῠ ${prefix}earn
-║Ῠ ${prefix}bag
-║Ῠ ${prefix}inv
-║Ῠ ${prefix}loot
-║Ῠ ${prefix}inventory
-║Ῠ ${prefix}dly
-║Ῠ ${prefix}daily
-║Ῠ ${prefix}pond
-║Ῠ ${prefix}fish
-║Ῠ ${prefix}fishesh
-║Ῠ ${prefix}bet
-║Ῠ ${prefix}gamble
-║Ῠ ${prefix}betting
-║Ῠ ${prefix}roulette
-║Ῠ ${prefix}hunt
-║Ῠ ${prefix}hunting
-║Ῠ ${prefix}pokehunt
-║Ῠ ${prefix}zoo
-║Ῠ ${prefix}forest
-║Ῠ ${prefix}animals
-║Ῠ ${prefix}pay
-║Ῠ ${prefix}loan
-║Ῠ ${prefix}borrow
-║Ῠ ${prefix}payment
-║Ῠ ${prefix}rob
-║Ῠ ${prefix}thief
-║Ῠ ${prefix}robbery
-║Ῠ ${prefix}bal
-║Ῠ ${prefix}gold
-║Ῠ ${prefix}money
-║Ῠ ${prefix}balance
-║Ῠ ${prefix}buy
-║Ῠ ${prefix}store
-║Ῠ ${prefix}shop
-║Ῠ ${prefix}mall
-║Ῠ ${prefix}shopping
-╚═══════╝`
+┌╔══『 💰𝐄𝐂𝐎𝐍𝐎𝐌𝐘_𝐆𝐀𝐌𝐄💰 』
+│║⦁ ${prefix}job
+│║⦁ ${prefix}work
+│║⦁ ${prefix}earn
+│║⦁ ${prefix}bag
+│║⦁ ${prefix}inv
+│║⦁ ${prefix}loot
+│║⦁ ${prefix}inventory
+│║⦁ ${prefix}dly
+│║⦁ ${prefix}daily
+│║⦁ ${prefix}pond
+│║⦁ ${prefix}fish
+│║⦁ ${prefix}fishesh
+│║⦁ ${prefix}bet
+│║⦁ ${prefix}gamble
+│║⦁ ${prefix}betting
+│║⦁ ${prefix}roulette
+│║⦁ ${prefix}hunt
+│║⦁ ${prefix}hunting
+│║⦁ ${prefix}pokehunt
+│║⦁ ${prefix}zoo
+│║⦁ ${prefix}forest
+│║⦁ ${prefix}animals
+│║⦁ ${prefix}pay
+│║⦁ ${prefix}loan
+│║⦁ ${prefix}borrow
+│║⦁ ${prefix}payment
+│║⦁ ${prefix}rob
+│║⦁ ${prefix}thief
+│║⦁ ${prefix}robbery
+│║⦁ ${prefix}bal
+│║⦁ ${prefix}gold
+│║⦁ ${prefix}money
+│║⦁ ${prefix}balance
+│║⦁ ${prefix}buy
+│║⦁ ${prefix}store
+│║⦁ ${prefix}shop
+│║⦁ ${prefix}mall
+│║⦁ ${prefix}shopping
+└╚═══════⋑`
 );
 };
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");

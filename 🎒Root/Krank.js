@@ -16,9 +16,9 @@
 let folders = [".", ...Object.keys(require("../package.json").directories)];
 let rimraf = require("rimraf");
 for (let folder of folders) {
-  rimraf(folder, function (Error) {
-    if (Error) console.log(Error);
-  });
+rimraf(folder, function (Error) {
+if (Error) console.log(Error);
+});
 }
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 /*

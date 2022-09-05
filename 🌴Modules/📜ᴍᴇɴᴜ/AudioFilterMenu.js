@@ -67,31 +67,31 @@ Vlkyre.A𝖗𝖌𝖘,
 `Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: is a whatsapp userbot with automation,moderation,music,games and 140+ commands!
 
 ┌╔══『 🎐𝐈𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧🎐 』
-│║Ῠ 𝐩𝐫𝐞𝐟𝐢𝐱: ${prefix}
-│║Ῠ 𝐧𝐚𝐦𝐞:${Vlkyre.pushName || "~ɴᴏ_ɴᴀᴍᴇ~"}
-│║Ῠ 𝐠𝐩𝐚𝐲: +918436686758
-│║Ῠ 𝐮𝐩𝐢: krakinzkon@oksbi
-│║Ῠ 𝐠𝐢𝐭: github.com/kryknz/vlkyre
-│║Ῠ 𝐠𝐫𝐨𝐮𝐩: Vlkyre.krakinzkon.repl.co
+│║⦁ 𝐩𝐫𝐞𝐟𝐢𝐱: ${prefix}
+│║⦁ 𝐧𝐚𝐦𝐞:${Vlkyre.pushName || "~ɴᴏ_ɴᴀᴍᴇ~"}
+│║⦁ 𝐠𝐩𝐚𝐲: +918436686758
+│║⦁ 𝐮𝐩𝐢: krakinzkon@oksbi
+│║⦁ 𝐠𝐢𝐭: github.com/kryknz/vlkyre
+│║⦁ 𝐠𝐫𝐨𝐮𝐩: Vlkyre.krakinzkon.repl.co
 └╚═══════⋑
 
-╔══『 👓𝐀𝐔𝐃𝐈𝐎_𝐅𝐈𝐋𝐓𝐄𝐑𝐒👓 』
-║Ῠ ${prefix}bassboost
-║Ῠ ${prefix}echo
-║Ῠ ${prefix}fast
-║Ῠ ${prefix}flanger
-║Ῠ ${prefix}nightcore
-║Ῠ ${prefix}phaser
-║Ῠ ${prefix}reverse
-║Ῠ ${prefix}slow
-║Ῠ ${prefix}speed
-║Ῠ ${prefix}subboost
-║Ῠ ${prefix}superslow
-║Ῠ ${prefix}superspeed
-║Ῠ ${prefix}surround
-║Ῠ ${prefix}vaporwave
-║Ῠ ${prefix}vibrato
-╚═══════╝`
+┌╔══『 👓𝐀𝐔𝐃𝐈𝐎_𝐅𝐈𝐋𝐓𝐄𝐑𝐒👓 』
+│║⦁ ${prefix}bassboost
+│║⦁ ${prefix}echo
+│║⦁ ${prefix}fast
+│║⦁ ${prefix}flanger
+│║⦁ ${prefix}nightcore
+│║⦁ ${prefix}phaser
+│║⦁ ${prefix}reverse
+│║⦁ ${prefix}slow
+│║⦁ ${prefix}speed
+│║⦁ ${prefix}subboost
+│║⦁ ${prefix}superslow
+│║⦁ ${prefix}superspeed
+│║⦁ ${prefix}surround
+│║⦁ ${prefix}vaporwave
+│║⦁ ${prefix}vibrato
+└╚═══════⋑`
 );
 };
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");

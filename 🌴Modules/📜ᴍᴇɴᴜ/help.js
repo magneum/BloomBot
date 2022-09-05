@@ -143,30 +143,30 @@ image: { url: "./👗Skins/Vlkyre.png" },
 caption: `Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: is a whatsapp userbot with automation,moderation,music,games and 140+ commands!
 
 ┌╔══『 🎐𝐈𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧🎐 』
-│║Ῠ 𝐩𝐫𝐞𝐟𝐢𝐱: ${prefix}
-│║Ῠ 𝐧𝐚𝐦𝐞:${Vlkyre.pushName || "~ɴᴏ_ɴᴀᴍᴇ~"}
-│║Ῠ 𝐠𝐩𝐚𝐲: +918436686758
-│║Ῠ 𝐮𝐩𝐢: krakinzkon@oksbi
-│║Ῠ 𝐠𝐢𝐭: github.com/kryknz/vlkyre
-│║Ῠ 𝐠𝐫𝐨𝐮𝐩: Vlkyre.krakinzkon.repl.co
+│║⦁ 𝐩𝐫𝐞𝐟𝐢𝐱: ${prefix}
+│║⦁ 𝐧𝐚𝐦𝐞:${Vlkyre.pushName || "~ɴᴏ_ɴᴀᴍᴇ~"}
+│║⦁ 𝐠𝐩𝐚𝐲: +918436686758
+│║⦁ 𝐮𝐩𝐢: krakinzkon@oksbi
+│║⦁ 𝐠𝐢𝐭: github.com/kryknz/vlkyre
+│║⦁ 𝐠𝐫𝐨𝐮𝐩: Vlkyre.krakinzkon.repl.co
 └╚═══════⋑
 
 
-┌『 𝐂𝐚𝐭𝐞𝐠𝐨𝐫𝐢𝐞𝐬 』
-│║Ῠ 🐝${prefix}AnimationMenu
-│║Ῠ 🐾${prefix}AnimeMenu
-│║Ῠ 👓${prefix}AudioFilterMenu
-│║Ῠ 🏝️${prefix}ConverterMenu
-│║Ῠ 📥${prefix}DownloaderMenu
-│║Ῠ 💰${prefix}GameMenu
-│║Ῠ 🔰${prefix}GroupMenu
-│║Ῠ 🍌${prefix}HentaiMenu
-│║Ῠ 🍑${prefix}NsfwMenu
-│║Ῠ 👑${prefix}OwnerMenu
-│║Ῠ 🏳️‍🌈${prefix}RandomMenu
-│║Ῠ 🛍️${prefix}StoreMenu
-│║Ῠ 🌐${prefix}WebMenu
-│║Ῠ ⭕${prefix}YTFilterMenu
+┌╔══『 𝐂𝐚𝐭𝐞𝐠𝐨𝐫𝐢𝐞𝐬 』
+│║⦁ 🐝${prefix}AnimationMenu
+│║⦁ 🐾${prefix}AnimeMenu
+│║⦁ 👓${prefix}AudioFilterMenu
+│║⦁ 🏝️${prefix}ConverterMenu
+│║⦁ 📥${prefix}DownloaderMenu
+│║⦁ 💰${prefix}GameMenu
+│║⦁ 🔰${prefix}GroupMenu
+│║⦁ 🍌${prefix}HentaiMenu
+│║⦁ 🍑${prefix}NsfwMenu
+│║⦁ 👑${prefix}OwnerMenu
+│║⦁ 🏳️‍🌈${prefix}RandomMenu
+│║⦁ 🛍️${prefix}StoreMenu
+│║⦁ 🌐${prefix}WebMenu
+│║⦁ ⭕${prefix}YTFilterMenu
 └╚═══════⋑`,
 footer: "❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ❞\n⭕youtube.com/channel/UC5_VwWIUIdmv96OvR5rFvaA",
 buttons: [

@@ -67,34 +67,34 @@ Vlkyre.A𝖗𝖌𝖘,
 `Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: is a whatsapp userbot with automation,moderation,music,games and 140+ commands!
 
 ┌╔══『 🎐𝐈𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧🎐 』
-│║Ῠ 𝐩𝐫𝐞𝐟𝐢𝐱: ${prefix}
-│║Ῠ 𝐧𝐚𝐦𝐞:${Vlkyre.pushName || "~ɴᴏ_ɴᴀᴍᴇ~"}
-│║Ῠ 𝐠𝐩𝐚𝐲: +918436686758
-│║Ῠ 𝐮𝐩𝐢: krakinzkon@oksbi
-│║Ῠ 𝐠𝐢𝐭: github.com/kryknz/vlkyre
-│║Ῠ 𝐠𝐫𝐨𝐮𝐩: Vlkyre.krakinzkon.repl.co
+│║⦁ 𝐩𝐫𝐞𝐟𝐢𝐱: ${prefix}
+│║⦁ 𝐧𝐚𝐦𝐞:${Vlkyre.pushName || "~ɴᴏ_ɴᴀᴍᴇ~"}
+│║⦁ 𝐠𝐩𝐚𝐲: +918436686758
+│║⦁ 𝐮𝐩𝐢: krakinzkon@oksbi
+│║⦁ 𝐠𝐢𝐭: github.com/kryknz/vlkyre
+│║⦁ 𝐠𝐫𝐨𝐮𝐩: Vlkyre.krakinzkon.repl.co
 └╚═══════⋑
 
-╔══『 🔰𝐆𝐑𝐎𝐔𝐏_𝐌𝐎𝐃🔰 』
-║Ῠ ${prefix}warn
-║Ῠ ${prefix}nolink
-║Ῠ ${prefix}stoplink
-║Ῠ ${prefix}antilink
-║Ῠ ${prefix}welcome
-║Ῠ ${prefix}welcomer
-║Ῠ ${prefix}setwelcome
-║Ῠ ${prefix}autorole
-║Ῠ ${prefix}autorank
-║Ῠ ${prefix}del
-║Ῠ ${prefix}demote
-║Ῠ ${prefix}promote
-║Ῠ ${prefix}group
-║Ῠ ${prefix}remove
-║Ῠ ${prefix}setdesc
-║Ῠ ${prefix}setgpfp
-║Ῠ ${prefix}tagall
-║Ῠ ${prefix}admins
-╚═══════╝`
+┌╔══『 🔰𝐆𝐑𝐎𝐔𝐏_𝐌𝐎𝐃🔰 』
+│║⦁ ${prefix}warn
+│║⦁ ${prefix}nolink
+│║⦁ ${prefix}stoplink
+│║⦁ ${prefix}antilink
+│║⦁ ${prefix}welcome
+│║⦁ ${prefix}welcomer
+│║⦁ ${prefix}setwelcome
+│║⦁ ${prefix}autorole
+│║⦁ ${prefix}autorank
+│║⦁ ${prefix}del
+│║⦁ ${prefix}demote
+│║⦁ ${prefix}promote
+│║⦁ ${prefix}group
+│║⦁ ${prefix}remove
+│║⦁ ${prefix}setdesc
+│║⦁ ${prefix}setgpfp
+│║⦁ ${prefix}tagall
+│║⦁ ${prefix}admins
+└╚═══════⋑`
 );
 };
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");

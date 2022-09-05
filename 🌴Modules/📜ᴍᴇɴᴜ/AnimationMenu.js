@@ -67,45 +67,45 @@ Vlkyre.A𝖗𝖌𝖘,
 `Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: is a whatsapp userbot with automation,moderation,music,games and 140+ commands!
 
 ┌╔══『 🎐𝐈𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧🎐 』
-│║Ῠ 𝐩𝐫𝐞𝐟𝐢𝐱: ${prefix}
-│║Ῠ 𝐧𝐚𝐦𝐞:${Vlkyre.pushName || "~ɴᴏ_ɴᴀᴍᴇ~"}
-│║Ῠ 𝐠𝐩𝐚𝐲: +918436686758
-│║Ῠ 𝐮𝐩𝐢: krakinzkon@oksbi
-│║Ῠ 𝐠𝐢𝐭: github.com/kryknz/vlkyre
-│║Ῠ 𝐠𝐫𝐨𝐮𝐩: Vlkyre.krakinzkon.repl.co
+│║⦁ 𝐩𝐫𝐞𝐟𝐢𝐱: ${prefix}
+│║⦁ 𝐧𝐚𝐦𝐞:${Vlkyre.pushName || "~ɴᴏ_ɴᴀᴍᴇ~"}
+│║⦁ 𝐠𝐩𝐚𝐲: +918436686758
+│║⦁ 𝐮𝐩𝐢: krakinzkon@oksbi
+│║⦁ 𝐠𝐢𝐭: github.com/kryknz/vlkyre
+│║⦁ 𝐠𝐫𝐨𝐮𝐩: Vlkyre.krakinzkon.repl.co
 └╚═══════⋑
 
-╔══『 🐝𝐀𝐍𝐈𝐌𝐀𝐓𝐈𝐎𝐍🐝 』
-║Ῠ ${prefix}baka
-║Ῠ ${prefix}bite
-║Ῠ ${prefix}blush
-║Ῠ ${prefix}bonk
-║Ῠ ${prefix}bored
-║Ῠ ${prefix}confused
-║Ῠ ${prefix}cry
-║Ῠ ${prefix}cuddle
-║Ῠ ${prefix}dance
-║Ῠ ${prefix}goodnight
-║Ῠ ${prefix}happy
-║Ῠ ${prefix}hi5
-║Ῠ ${prefix}highfive
-║Ῠ ${prefix}hug
-║Ῠ ${prefix}kick
-║Ῠ ${prefix}kill
-║Ῠ ${prefix}kiss
-║Ῠ ${prefix}nervous
-║Ῠ ${prefix}pat
-║Ῠ ${prefix}poke
-║Ῠ ${prefix}punch
-║Ῠ ${prefix}sad
-║Ῠ ${prefix}smile
-║Ῠ ${prefix}stare
-║Ῠ ${prefix}wave
-║Ῠ ${prefix}wink
-║Ῠ ${prefix}yeet
-║Ῠ ${prefix}yes
-║Ῠ ${prefix}zerotwo
-╚═══════╝`
+┌╔══『 🐝𝐀𝐍𝐈𝐌𝐀𝐓𝐈𝐎𝐍🐝 』
+│║⦁ ${prefix}baka
+│║⦁ ${prefix}bite
+│║⦁ ${prefix}blush
+│║⦁ ${prefix}bonk
+│║⦁ ${prefix}bored
+│║⦁ ${prefix}confused
+│║⦁ ${prefix}cry
+│║⦁ ${prefix}cuddle
+│║⦁ ${prefix}dance
+│║⦁ ${prefix}goodnight
+│║⦁ ${prefix}happy
+│║⦁ ${prefix}hi5
+│║⦁ ${prefix}highfive
+│║⦁ ${prefix}hug
+│║⦁ ${prefix}kick
+│║⦁ ${prefix}kill
+│║⦁ ${prefix}kiss
+│║⦁ ${prefix}nervous
+│║⦁ ${prefix}pat
+│║⦁ ${prefix}poke
+│║⦁ ${prefix}punch
+│║⦁ ${prefix}sad
+│║⦁ ${prefix}smile
+│║⦁ ${prefix}stare
+│║⦁ ${prefix}wave
+│║⦁ ${prefix}wink
+│║⦁ ${prefix}yeet
+│║⦁ ${prefix}yes
+│║⦁ ${prefix}zerotwo
+└╚═══════⋑`
 );
 };
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");

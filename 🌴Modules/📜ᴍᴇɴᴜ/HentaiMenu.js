@@ -67,36 +67,36 @@ Vlkyre.A𝖗𝖌𝖘,
 `Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: is a whatsapp userbot with automation,moderation,music,games and 140+ commands!
 
 ┌╔══『 🎐𝐈𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧🎐 』
-│║Ῠ 𝐩𝐫𝐞𝐟𝐢𝐱: ${prefix}
-│║Ῠ 𝐧𝐚𝐦𝐞:${Vlkyre.pushName || "~ɴᴏ_ɴᴀᴍᴇ~"}
-│║Ῠ 𝐠𝐩𝐚𝐲: +918436686758
-│║Ῠ 𝐮𝐩𝐢: krakinzkon@oksbi
-│║Ῠ 𝐠𝐢𝐭: github.com/kryknz/vlkyre
-│║Ῠ 𝐠𝐫𝐨𝐮𝐩: Vlkyre.krakinzkon.repl.co
+│║⦁ 𝐩𝐫𝐞𝐟𝐢𝐱: ${prefix}
+│║⦁ 𝐧𝐚𝐦𝐞:${Vlkyre.pushName || "~ɴᴏ_ɴᴀᴍᴇ~"}
+│║⦁ 𝐠𝐩𝐚𝐲: +918436686758
+│║⦁ 𝐮𝐩𝐢: krakinzkon@oksbi
+│║⦁ 𝐠𝐢𝐭: github.com/kryknz/vlkyre
+│║⦁ 𝐠𝐫𝐨𝐮𝐩: Vlkyre.krakinzkon.repl.co
 └╚═══════⋑
 
-╔══『 🍌𝐇𝐄𝐍𝐓𝐀𝐈🍌 』 
-║Ῠ ${prefix}ass
-║Ῠ ${prefix}bdsm
-║Ῠ ${prefix}cum  
-║Ῠ ${prefix}doujin
-║Ῠ ${prefix}feet  
-║Ῠ ${prefix}femdom  
-║Ῠ ${prefix}foxgirl  
-║Ῠ ${prefix}glasses  
-║Ῠ ${prefix}hentai
-║Ῠ ${prefix}maid 
-║Ῠ ${prefix}masturbation
-║Ῠ ${prefix}netorare  
-║Ῠ ${prefix}orgy
-║Ῠ ${prefix}panties
-║Ῠ ${prefix}pussy
-║Ῠ ${prefix}school
-║Ῠ ${prefix}tentacles
-║Ῠ ${prefix}thighs
-║Ῠ ${prefix}uniform
-║Ῠ ${prefix}yuri
-╚═══════╝`
+┌╔══『 🍌𝐇𝐄𝐍𝐓𝐀𝐈🍌 』 
+│║⦁ ${prefix}ass
+│║⦁ ${prefix}bdsm
+│║⦁ ${prefix}cum  
+│║⦁ ${prefix}doujin
+│║⦁ ${prefix}feet  
+│║⦁ ${prefix}femdom  
+│║⦁ ${prefix}foxgirl  
+│║⦁ ${prefix}glasses  
+│║⦁ ${prefix}hentai
+│║⦁ ${prefix}maid 
+│║⦁ ${prefix}masturbation
+│║⦁ ${prefix}netorare  
+│║⦁ ${prefix}orgy
+│║⦁ ${prefix}panties
+│║⦁ ${prefix}pussy
+│║⦁ ${prefix}school
+│║⦁ ${prefix}tentacles
+│║⦁ ${prefix}thighs
+│║⦁ ${prefix}uniform
+│║⦁ ${prefix}yuri
+└╚═══════⋑`
 );
 };
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");

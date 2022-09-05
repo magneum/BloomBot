@@ -67,35 +67,35 @@ Vlkyre.A𝖗𝖌𝖘,
 `Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: is a whatsapp userbot with automation,moderation,music,games and 140+ commands!
 
 ┌╔══『 🎐𝐈𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧🎐 』
-│║Ῠ 𝐩𝐫𝐞𝐟𝐢𝐱: ${prefix}
-│║Ῠ 𝐧𝐚𝐦𝐞:${Vlkyre.pushName || "~ɴᴏ_ɴᴀᴍᴇ~"}
-│║Ῠ 𝐠𝐩𝐚𝐲: +918436686758
-│║Ῠ 𝐮𝐩𝐢: krakinzkon@oksbi
-│║Ῠ 𝐠𝐢𝐭: github.com/kryknz/vlkyre
-│║Ῠ 𝐠𝐫𝐨𝐮𝐩: Vlkyre.krakinzkon.repl.co
+│║⦁ 𝐩𝐫𝐞𝐟𝐢𝐱: ${prefix}
+│║⦁ 𝐧𝐚𝐦𝐞:${Vlkyre.pushName || "~ɴᴏ_ɴᴀᴍᴇ~"}
+│║⦁ 𝐠𝐩𝐚𝐲: +918436686758
+│║⦁ 𝐮𝐩𝐢: krakinzkon@oksbi
+│║⦁ 𝐠𝐢𝐭: github.com/kryknz/vlkyre
+│║⦁ 𝐠𝐫𝐨𝐮𝐩: Vlkyre.krakinzkon.repl.co
 └╚═══════⋑
 
-╔══『 🏳️‍🌈𝐑𝐀𝐍𝐃𝐎𝐌🏳️‍🌈 』
-║Ῠ ${prefix}advice
-║Ῠ ${prefix}rank
-║Ῠ ${prefix}fact
-║Ῠ ${prefix}meme
-║Ῠ ${prefix}neko
-║Ῠ ${prefix}quote
-║Ῠ ${prefix}reddit
-║Ῠ ${prefix}sr
-║Ῠ ${prefix}subreddit
-║Ῠ ${prefix}ship
-║Ῠ ${prefix}waifu
-║Ῠ ${prefix}tts
-║Ῠ ${prefix}gtts
-║Ῠ ${prefix}text2speech
-║Ῠ ${prefix}fun
-║Ῠ ${prefix}joke
-║Ῠ ${prefix}funny
-║Ῠ ${prefix}laugh
-║Ῠ ${prefix}dadjoke
-╚═══════╝`
+┌╔══『 🏳️‍🌈𝐑𝐀𝐍𝐃𝐎𝐌🏳️‍🌈 』
+│║⦁ ${prefix}advice
+│║⦁ ${prefix}rank
+│║⦁ ${prefix}fact
+│║⦁ ${prefix}meme
+│║⦁ ${prefix}neko
+│║⦁ ${prefix}quote
+│║⦁ ${prefix}reddit
+│║⦁ ${prefix}sr
+│║⦁ ${prefix}subreddit
+│║⦁ ${prefix}ship
+│║⦁ ${prefix}waifu
+│║⦁ ${prefix}tts
+│║⦁ ${prefix}gtts
+│║⦁ ${prefix}text2speech
+│║⦁ ${prefix}fun
+│║⦁ ${prefix}joke
+│║⦁ ${prefix}funny
+│║⦁ ${prefix}laugh
+│║⦁ ${prefix}dadjoke
+└╚═══════⋑`
 );
 };
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
