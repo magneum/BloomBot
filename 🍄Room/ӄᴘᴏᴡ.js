@@ -167,34 +167,36 @@ MeC[i] = ʀᴇꜱᴘᴏɴꜱᴇC.participants[i].id;
 for (let i = 0; i < ʀᴇꜱᴘᴏɴꜱᴇD.participants.length; i++)
 MeD[i] = ʀᴇꜱᴘᴏɴꜱᴇD.participants[i].id;
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
-// if (
-// !Vlkyre.fromMe &&
-// Vlkyre.isCommand &&
-// !Vlkyre.isSenderTUF &&
-// !Vlkyre.Body.includes("help") &&
-// !Vlkyre.Body.includes("menu") &&
-// !Vlkyre.Body.includes("rules") &&
-// !Vlkyre.Body.includes("vlkyre") &&
-// !Vlkyre.Body.includes("verify") &&
-// !Vlkyre.Body.includes("support") &&
-// !Vlkyre.Body.includes("HELP") &&
-// !Vlkyre.Body.includes("menu") &&
-// !Vlkyre.Body.includes("RULES") &&
-// !Vlkyre.Body.includes("VLKYRE") &&
-// !Vlkyre.Body.includes("SUPPORT") &&
-// !MeA.includes(Vlkyre.sender) &&
-// !MeB.includes(Vlkyre.sender) &&
-// !MeC.includes(Vlkyre.sender) &&
-// !MeD.includes(Vlkyre.sender)
-// ) {
-// return await ӄryӄnz.sendMessage(Vlkyre.chatID, {
-// text: `❗𝐕𝐄𝐑𝐓𝐈𝐅𝐈𝐂𝐀𝐓𝐈𝐎𝐍❗
-// @${Vlkyre.sender.split("@")[0]}
-// *Check The Verification Video:*
-// youtube.com/channel/UC5_VwWIUIdmv96OvR5rFvaA`,
-// contextInfo: { mentionedJid: [Vlkyre.sender] },
-// });
-// }
+if (
+!Vlkyre.fromMe &&
+Vlkyre.isCommand &&
+!Vlkyre.isSenderTUF &&
+!Vlkyre.Body.includes("h") &&
+!Vlkyre.Body.includes("m") &&
+!Vlkyre.Body.includes("help") &&
+!Vlkyre.Body.includes("menu") &&
+!Vlkyre.Body.includes("rules") &&
+!Vlkyre.Body.includes("vlkyre") &&
+!Vlkyre.Body.includes("verify") &&
+!Vlkyre.Body.includes("support") &&
+!Vlkyre.Body.includes("HELP") &&
+!Vlkyre.Body.includes("MENU") &&
+!Vlkyre.Body.includes("RULES") &&
+!Vlkyre.Body.includes("VLKYRE") &&
+!Vlkyre.Body.includes("SUPPORT") &&
+!MeA.includes(Vlkyre.sender) &&
+!MeB.includes(Vlkyre.sender) &&
+!MeC.includes(Vlkyre.sender) &&
+!MeD.includes(Vlkyre.sender)
+) {
+return await ӄryӄnz.sendMessage(Vlkyre.chatID, {
+text: `❗𝐕𝐄𝐑𝐓𝐈𝐅𝐈𝐂𝐀𝐓𝐈𝐎𝐍❗
+@${Vlkyre.sender.split("@")[0]}
+*Check The Verification Video:*
+youtube.com/channel/UC5_VwWIUIdmv96OvR5rFvaA`,
+contextInfo: { mentionedJid: [Vlkyre.sender] },
+});
+}
 // ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 // await usedUser.findOne(
 // {
