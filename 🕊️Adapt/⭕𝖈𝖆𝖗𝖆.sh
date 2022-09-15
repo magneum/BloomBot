@@ -1,0 +1,10 @@
+pip install cprint
+pip install loguru
+pip install psutil
+pip install heroku3
+pip install autopep8
+pip install requests
+pip install pyAesCrypt
+pip install GitPython
+pip install termcolor
+pip install python-dotenv
