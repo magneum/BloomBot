@@ -22,6 +22,7 @@
 "prestart": "git reset --hard && git pull && yarn install --ignore-warnings && pip install -r 🕊️Adapt/⭕𝖈𝖆𝖗𝖆.txt && rm yarn.lock",
 "sync": "node --no-warnings 🎒Root/🪔S𝖞𝖓𝖈.js",
 "start": "python3 🌱𝖆𝖕𝖗𝖎𝖑𝖑𝖆.py",
+"setup": "pip install -r 🕊️Adapt/⭕𝖈𝖆𝖗𝖆.txt
 "commit": "cz"
 },
 "dependencies": {
