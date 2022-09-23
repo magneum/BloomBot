@@ -37,6 +37,7 @@ let gg =
 process.env.MODS === undefined
 ? "917430922909,918436686758"
 : process.env.MODS;
+global.KryCode = process.env.KryCode;
 global.VlkyreYT = process.env.VlkyreYT;
 global.HEROKU = process.env.HEROKU;
 global.HEROKU_API_KEY =
