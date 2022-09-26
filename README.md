@@ -398,5 +398,5 @@ https://chat.whatsapp.com/BCMya84xpj0Cjk0IIvbkxN
 ╚════════════╝
 ```
 # 💠 DΣPLӨY  
-
-- [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=git@github.com:Kryknz/Vlkyre.git/tree/𝐕𝐥𝐤𝐲𝐫𝐞▼𝐃𝐢𝐬𝐜𝐨𝐫𝐝) 𝘌𝘯𝘢𝘣𝘭𝘦 𝘵𝘩𝘦 𝘥𝘺𝘯𝘰!
+- [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com:Kryknz/Vlkyre.git/tree/𝐕𝐥𝐤𝐲𝐫𝐞▲𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩)
+- [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com:Kryknz/Vlkyre.git)
