@@ -1,7 +1,12 @@
 {
   "name": "Vlkyre Whatsapp Bot",
   "description": "A Node.js Bot.",
-  "stack": "container",
   "repository": "https://github.com/KryKnz/Vlkyre.git",
-  "logo": "https://node-js-sample.herokuapp.com/node.png"
+  "logo": "https://node-js-sample.herokuapp.com/node.png",
+  "stack": "container",
+  "formation": {
+    "worker": {
+      "quantity": 1
+    }
+  }
 }
