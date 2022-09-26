@@ -1,0 +1,13 @@
+{
+  "logo": "https://img.youtube.com/vi/C6h0HvxeqFc/0.jpg",
+  "name": "—••÷[ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ]÷••—",
+  "repository": "https://github.com/KryKnz/Vlkyre.git",
+  "stack": "container",
+  "website": "https://aigroups.krakinzkon.repl.co",
+  "env": {
+    "CODE": {
+      "description": "ENTER THE NORDED KEY BY @KrakinzBot .....",
+      "required": true
+    }
+  }
+}
