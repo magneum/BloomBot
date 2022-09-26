@@ -6,7 +6,47 @@
   "website": "https://aigroups.krakinzkon.repl.co",
   "env": {
     "CODE": {
-      "description": "ENTER THE NORDED KEY BY @KrakinzBot .....",
+      "description": "Enter The Required Key from @KrakinzBot...",
+      "required": true
+    },
+    "CCD": {
+      "description": "Enter The Required Key from @KrakinzBot...",
+      "required": true
+    },
+    "IMDB": {
+      "description": "Enter The Required Key from @KrakinzBot...",
+      "required": true
+    },
+    "Ten": {
+      "description": "Enter The Required Key from @KrakinzBot...",
+      "required": true
+    },
+    "OCR": {
+      "description": "Enter The Required Key from @KrakinzBot...",
+      "required": true
+    },
+    "Weather": {
+      "description": "Enter The Required Key from @KrakinzBot...",
+      "required": true
+    },
+    "Spotify_Id": {
+      "description": "Enter The Required Key from @KrakinzBot...",
+      "required": true
+    },
+    "Pantry": {
+      "description": "Enter The Required Key from @KrakinzBot...",
+      "required": true
+    },
+    "VlkyreYT": {
+      "description": "Enter The Required Key from @KrakinzBot...",
+      "required": true
+    },
+    "Spotify_Client_Id": {
+      "description": "Enter The Required Key from @KrakinzBot...",
+      "required": true
+    },
+    "MongoDb": {
+      "description": "Enter The Required Key from @KrakinzBot...",
       "required": true
     }
   }
