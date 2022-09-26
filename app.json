@@ -1,53 +1,20 @@
 {
-  "logo": "https://img.youtube.com/vi/C6h0HvxeqFc/0.jpg",
-  "name": "—••÷[ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ]÷••—",
-  "repository": "https://github.com/KryKnz/Vlkyre.git",
-  "stack": "container",
-  "website": "https://aigroups.krakinzkon.repl.co",
-  "env": {
-    "CODE": {
-      "description": "Enter The Required Key from @KrakinzBot...",
-      "required": true
-    },
-    "CCD": {
-      "description": "Enter The Required Key from @KrakinzBot...",
-      "required": true
-    },
-    "IMDB": {
-      "description": "Enter The Required Key from @KrakinzBot...",
-      "required": true
-    },
-    "Ten": {
-      "description": "Enter The Required Key from @KrakinzBot...",
-      "required": true
-    },
-    "OCR": {
-      "description": "Enter The Required Key from @KrakinzBot...",
-      "required": true
-    },
-    "Weather": {
-      "description": "Enter The Required Key from @KrakinzBot...",
-      "required": true
-    },
-    "Spotify_Id": {
-      "description": "Enter The Required Key from @KrakinzBot...",
-      "required": true
-    },
-    "Pantry": {
-      "description": "Enter The Required Key from @KrakinzBot...",
-      "required": true
-    },
-    "VlkyreYT": {
-      "description": "Enter The Required Key from @KrakinzBot...",
-      "required": true
-    },
-    "Spotify_Client_Id": {
-      "description": "Enter The Required Key from @KrakinzBot...",
-      "required": true
-    },
-    "MongoDb": {
-      "description": "Enter The Required Key from @KrakinzBot...",
-      "required": true
-    }
-  }
+"logo": "https://img.youtube.com/vi/C6h0HvxeqFc/0.jpg",
+"repository": "https://github.com/KryKnz/Vlkyre.git",
+"website": "https://aigroups.krakinzkon.repl.co",
+"name": "—••÷[ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ]÷••—",
+"stack": "container",
+"env": {  
+  "CCD": {  "description": "Enter The Required Key from @KrakinzBot...",  "required": true },
+  "Ten": {  "description": "Enter The Required Key from @KrakinzBot...",  "required": true },
+  "OCR": {  "description": "Enter The Required Key from @KrakinzBot...",  "required": true },
+  "CODE": {  "description": "Enter The Required Key from @KrakinzBot...",  "required": true },
+  "IMDB": {  "description": "Enter The Required Key from @KrakinzBot...",  "required": true },
+  "Pantry": {  "description": "Enter The Required Key from @KrakinzBot...",  "required": true },
+  "Weather": {  "description": "Enter The Required Key from @KrakinzBot...",  "required": true },
+  "VlkyreYT": {  "description": "Enter The Required Key from @KrakinzBot...",  "required": true },
+  "MongoDb": {  "description": "Enter The Required Key from @KrakinzBot...",  "required": true  },
+  "Spotify_Id": {  "description": "Enter The Required Key from @KrakinzBot...",  "required": true },
+  "Spotify_Client_Id": {  "description": "Enter The Required Key from @KrakinzBot...",  "required": true }
+}
 }
