@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia" />
+<style>
+hr.new1 {
+border-top: 1px solid rgb(167, 18, 18);
+}
+
+hr.new2 {
+border-top: 1px dashed rgb(146, 18, 18);
+}
+
+hr.new3 {
+border-top: 1px dotted #641010;
+}
+
+hr.new4 {
+border: 1px solid rgb(77, 12, 12);
+}
+
+hr.new5 {
+border: 10px solid rgb(9, 53, 9);
+border-radius: 5px;
+}
+
+p {
+font-size: 14px;
+color: #a5a5a5;
+}
+
+mark.red {
+color: #c5c5c5;
+background: rgb(92, 20, 20);
+border-radius: 2px;
+font-weight: bold;
+}
+
+mark.gry {
+color: #bbbbbb;
+background: rgb(90, 90, 90);
+border-radius: 4px;
+}
+
+hr {
+display: block;
+margin-top: 0.5em;
+margin-bottom: 0.5em;
+margin-left: auto;
+margin-right: auto;
+border-style: inset;
+border-width: 1px;
+border-color: red;
+}
+</style>
+
+<head>
+<title>Vlkyre Whatsapp Bot</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<!-- <img src="https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=rgb(63, 13, 13)"
+alt="KryKnz" />
+<img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=red"
+alt="KryKnz" /> -->
+
+<body style="background-color: #1a1a1a">
+<header class="text-white body-font">
+<div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+<nav class="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto"></nav>
+<a
+class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-white lg:items-center lg:justify-center mb-4 md:mb-0">
+<span class="ml-3 text-xl xl:block lg:hidden" size="20px">🕊️ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 𝐁𝐨𝐭🕊️</span>
+</a>
+<div class="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
+
+
+<button onclick="window.location.href='https://github.com/KryKnz'"
+class="inline-flex items-center bg-red-900 text-white border-0 py-1 px-3 focus:outline-none hover:bg-gray-800 rounded text-base mt-4 md:mt-0">
+💡GitHub
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+stroke-width="5" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+<path d="M5 12h14M12 5l7 7-7 7"></path>
+</svg>
+</button>
+
+<button onclick="window.location.href='https://github.com/Kryknz/Vlkyre'"
+class="inline-flex items-center bg-white text-red-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-800 rounded text-base mt-4 md:mt-0">
+🦋Repo
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+stroke-width="5" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+<path d="M5 12h14M12 5l7 7-7 7"></path>
+</svg>
+</button>
+</div>
+</div>
+</header>
+<section class="text-white body-font">
+<div class="container px-5 py-24 mx-auto">
+<div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
+<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+class="inline-block w-8 h-8 text-gray-200 mb-8" viewBox="0 0 975.036 975.036">
+<path
+d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
+</path>
+</svg>
+<p class="leading-relaxed text-lg">
+⧪ 𝐕𝐥𝐤𝐲𝐫𝐞 𝐢𝐬 𝐚𝐧 𝐀𝐝𝐯𝐚𝐧𝐜𝐞 𝐖𝐡𝐚𝐭𝐬 𝐚𝐩𝐩 𝐔𝐬𝐞𝐫-𝐁𝐨𝐭 𝐖𝐢𝐭𝐡 𝐎𝐯𝐞𝐫 𝟏𝟒𝟎+ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬 𝐈𝐧𝐜𝐥𝐮𝐝𝐢𝐧𝐠 𝐆𝐫𝐨𝐮𝐩 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐒𝐨𝐜𝐢𝐚𝐥, 𝐅𝐞𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝐦𝐨𝐫𝐞.<br>
+⧪ 𝐓𝐨 𝐂𝐡𝐞𝐜𝐤 𝐖𝐡𝐚𝐭 𝐕𝐥𝐤𝐲𝐫𝐞 𝐎𝐟𝐟𝐞𝐫𝐬 𝐉𝐮𝐬𝐭 𝐉𝐨𝐢𝐧 𝐀𝐧𝐲 𝐁𝐞𝐥𝐨𝐰 𝐆𝐫𝐨𝐮𝐩𝐬 𝐚𝐧𝐝 𝐓𝐲𝐩𝐞 #𝐡𝐞𝐥𝐩.<br>
+⧪ 𝐓𝐨 𝐕𝐞𝐫𝐢𝐟𝐲 𝐘𝐨𝐮𝐫𝐬𝐞𝐥𝐟 𝐉𝐮𝐬𝐭 𝐆𝐨 𝐁𝐞𝐥𝐨𝐰 𝐚𝐧𝐝 𝐂𝐡𝐞𝐜𝐤 𝐅𝐫𝐞𝐪𝐮𝐞𝐧𝐭𝐥𝐲 𝐀𝐬𝐤𝐞𝐝 𝐒𝐞𝐜𝐭𝐢𝐨𝐧.<br>
+<!-- ⧪ Vlkyre is an Advance Whatsapp User-Bot With Over 100+ Commands Including Group Moderation, Social, Federation and more.<br>
+⧪ To Check What Vlkyre Offers Just Join Any Below Groups and Type #help.<br>
+⧪ To Verify Youself Just Go Below and Check Frequently Asked Section.</p> -->
+<hr style="height:1px;border-top:1px solid rgb(160, 25, 25)" />
+<span class="inline-block h-1 w-10 rounded bg-red-800 mt-8 mb-6"></span>
+<h2 class="text-red-500 font-medium title-font tracking-wider text-sm">
+By KrakinzLab™ Using Krygne:V3
+</h2>
+<p class="text-gray-200"><i>All Rights Reserved</i></p>
+</div>
+</div>
+</section>
+
+
+
+
+<section class="text-gray-200 body-font">
+<div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+<div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 md:mb-0 mb-10">
+<img class="object-cover object-center rounded" src="https://i.postimg.cc/0jKPwFPn/Vlkyre.png">
+</div>
+<div
+class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+<h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">⦿ 𝐂𝐚𝐭𝐞𝐠𝐨𝐫𝐢𝐞𝐬
+𝐄𝐱𝐩𝐥𝐚𝐢𝐧𝐞𝐝 ⦿</h1>
+<p class="mb-8 leading-relaxed">
+<br>⦿════════════════════⦿</br></h2>
+<b>🧀 NO RESTRICTION / FOR EVERYONE 🧀</b>
+</h2><br>⦿════════════════════⦿</br>
+<br><mark class="red"><b></b>🐝 #AnimationMenu 🐝</b></mark> </br><I>⦿ This category of commands
+have the power to scrape the entire web and produce any gif.</I>
+<br><mark class="red"><b></b>🐾 #AnimeMenu 🐾</b></mark> </br><I>⦿ This category of commands can be
+used to search any manga and or anime.</I>
+<br><mark class="red"><b></b>👓 #AudioFilterMenu 👓</b></mark> </br><I>⦿ This category of commands
+will take any replied music and add different types of audio filters as per user needs.</I>
+<br><mark class="red"><b></b>🏝️ #ConverterMenu 🏝️</b></mark> </br><I>⦿ This category of commands
+can convert any image,video, to stickers,gif,etc.</I>
+<br><mark class="red"><b></b>📥 #DownloaderMenu 📥</b></mark> </br><I>⦿ This category of commands
+can download any youtube music,video and spotify,soundcloud too.</I>
+<br><mark class="red"><b></b>💰 #GameMenu 💰</b></mark> </br><I>⦿ This category of commands includes
+a huge number of economy games.</I>
+<br><mark class="red"><b></b>🏳️‍🌈 #RandomMenu 🏳️‍🌈</b></mark> </br><I>⦿ This category of
+commands are for fun.</I>
+<br><mark class="red"><b></b>🛍️ #StoreMenu 🛍️</b></mark> </br><I>⦿ This category of commands
+includes members only store.</I>
+<br><mark class="red"><b></b>🌐 #WebMenu 🌐</b></mark> </br><I>⦿ This category of commands can be
+used to search web like google,wikipedia,weather,etc.</I>
+<br><mark class="red"><b></b>⭕ #YTFilterMenu ⭕</b></mark> </br><I>⦿ This category of commands will
+take any asked youtube music and add different types of audio filters as per user needs.</I>
+<br></br>
+<br></br>
+<br>⦿════════════════════⦿</br></h2>
+<b>⚜️ADMIN / OWNER / DEVELOPERS ONLY ⚜️</b>
+</h2><br>⦿════════════════════⦿</br>
+<br><mark class="red"><b></b>👑 #OwnerMenu 👑</b></mark> </br><I>⦿ This category of commandsthat can
+be used only by ownersand devs.</I>
+<br><mark class="red"><b></b>🔰 #GroupMenu 🔰</b></mark> </br><I>⦿ This category of commandsfor
+group moderation.</I>
+<br><mark class="red"><b></b>🍌 #HentaiMenu 🍌</b></mark> </br><I>⦿ This category of commands are
+not safe for work hentai stuffs.</I>
+<br><mark class="red"><b></b>🍑 #NsfwMenu 🍑</b></mark> </br><I>⦿ This category of commands are not
+safe for work adult stuffs.</I>
+</p>
+<div class="flex justify-center">
+
+<button
+onclick="window.location.href='https://heroku.com/deploy?template=https://github.com/KryKnz/Vlkyre.git/tree/🛰️KryTek'"
+class="inline-flex text-gray-900 bg-gray-200 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+🛰️ʜᴇʀᴏᴋᴜ
+</button>
+
+<button onclick="window.location.href='https://github.com/KryKnz'"
+class="ml-4 inline-flex text-gray-900 bg-gray-200 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
+🤖ᴠʟᴋʏʀᴇ
+</button>
+</div>
+</div>
+</div>
+</section>
+
+
+<hr style="height:1px;border-top:1px solid rgb(160, 25, 25)" />
+<section class="text-gray-200 body-font">
+<div class="container px-5 py-24 mx-auto">
+<h1 class="text-3xl font-medium title-font text-white mb-12 text-center">⦿ 𝐎𝐟𝐟𝐢𝐜𝐢𝐚𝐥 𝐆𝐫𝐨𝐮𝐩𝐬 ⦿
+</h1>
+<p class="mb-8 leading-relaxed">
+<div class="flex flex-wrap -m-4">
+<div class="p-4 md:w-1/2 w-full">
+<div class="h-full bg-red-800 bg-opacity-40 p-8 rounded">
+<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+class="block w-5 h-5 text-gray-200 mb-4" viewBox="0 0 975.036 975.036">
+<path
+d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
+</path>
+</svg>
+<p class="leading-relaxed mb-6">
+⧪Join group to get auto verified and use vlkyre premium commands!<br>
+</p>
+<a class="inline-flex items-center">
+<img alt="testimonial" src="https://i.postimg.cc/T1MPcc26/Vlkyre.png"
+class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
+<span class="flex-grow flex flex-col pl-4">
+<span class="title-font font-medium text-white">💖𝐆𝐫𝐨𝐮𝐩 𝐍𝐨.</span>
+<span class="text-gray-200 text-sm">▸ ♔𝐎𝐟𝐟𝐢𝐜𝐢𝐚𝐥</span>
+</span>
+<button onclick="window.location.href='https://chat.whatsapp.com/Gg4ctxbT6oN3K5h9OaGbug'"
+class="ml-4 inline-flex text-gray-900 bg-gray-200 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
+1☕𝐕𝐥𝐤𝐲𝐫𝐞
+</button>
+</a>
+</div>
+</div>
+<div class="p-4 md:w-1/2 w-full">
+<div class="h-full bg-red-800 bg-opacity-40 p-8 rounded">
+<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+class="block w-5 h-5 text-gray-200 mb-4" viewBox="0 0 975.036 975.036">
+<path
+d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
+</path>
+</svg>
+<p class="leading-relaxed mb-6">
+⧪Join group to get auto verified and use vlkyre premium commands!<br>
+</p>
+<a class="inline-flex items-center">
+<img alt="testimonial" src="https://i.postimg.cc/T1MPcc26/Vlkyre.png"
+class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
+<span class="flex-grow flex flex-col pl-4">
+<span class="title-font font-medium text-white">💖𝐆𝐫𝐨𝐮𝐩 𝐍𝐨.</span>
+<span class="text-gray-200 text-sm">▸ ♔𝐎𝐟𝐟𝐢𝐜𝐢𝐚𝐥</span>
+</span>
+<button onclick="window.location.href='https://chat.whatsapp.com/EgkBVJ7os0mClAJbk1X77Z'"
+class="ml-4 inline-flex text-gray-900 bg-gray-200 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
+2☕𝐕𝐥𝐤𝐲𝐫𝐞
+</button>
+</a>
+</div>
+</div>
+<div class="p-4 md:w-1/2 w-full">
+<div class="h-full bg-red-800 bg-opacity-40 p-8 rounded">
+<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+class="block w-5 h-5 text-gray-200 mb-4" viewBox="0 0 975.036 975.036">
+<path
+d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
+</path>
+</svg>
+<p class="leading-relaxed mb-6">
+⧪Join group to get auto verified and use vlkyre premium commands!<br>
+</p>
+<a class="inline-flex items-center">
+<img alt="testimonial" src="https://i.postimg.cc/T1MPcc26/Vlkyre.png"
+class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
+<span class="flex-grow flex flex-col pl-4">
+<span class="title-font font-medium text-white">💖𝐆𝐫𝐨𝐮𝐩 𝐍𝐨.</span>
+<span class="text-gray-200 text-sm">▸ ♔𝐎𝐟𝐟𝐢𝐜𝐢𝐚𝐥</span>
+</span>
+<button onclick="window.location.href='https://chat.whatsapp.com/EAD8YAP10bg8Q8WIkH1RgY'"
+class="ml-4 inline-flex text-gray-900 bg-gray-200 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
+3☕𝐕𝐥𝐤𝐲𝐫𝐞
+</button>
+</a>
+</div>
+</div>
+<div class="p-4 md:w-1/2 w-full">
+<div class="h-full bg-red-800 bg-opacity-40 p-8 rounded">
+<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+class="block w-5 h-5 text-gray-200 mb-4" viewBox="0 0 975.036 975.036">
+<path
+d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
+</path>
+</svg>
+
+<p class="leading-relaxed mb-6">
+⧪Join group to get auto verified and use vlkyre premium commands!<br>
+</p>
+<a class="inline-flex items-center">
+<img alt="testimonial" src="https://i.postimg.cc/T1MPcc26/Vlkyre.png"
+class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
+<span class="flex-grow flex flex-col pl-4">
+<span class="title-font font-medium text-white">💖𝐆𝐫𝐨𝐮𝐩 𝐍𝐨.</span>
+<span class="text-gray-200 text-sm">▸ ♔𝐎𝐟𝐟𝐢𝐜𝐢𝐚𝐥</span>
+</span>
+<button onclick="window.location.href='https://chat.whatsapp.com/DAQfIEW8x7A01LwdjIB1EL'"
+class="ml-4 inline-flex text-gray-900 bg-gray-200 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
+4☕𝐕𝐥𝐤𝐲𝐫𝐞
+</button>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<hr style="height:1px;border-top:1px solid rgb(160, 25, 25)" />
+<section class="text-gray-200 body-font">
+<div class="container px-5 py-24 mx-auto flex flex-wrap">
+<h1 class="text-3xl font-medium title-font text-white mb-12 text-center">⦿👑 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐨𝐫𝐬 👑⦿
+</h1>
+<div class="flex flex-wrap w-full">
+<div class="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6">
+<div class="flex relative pb-12">
+<div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+<div class="h-full w-1 bg-gray-800 pointer-events-none"></div>
+</div>
+<div
+class="flex-shrink-0 w-10 h-10 rounded-full bg-red-800 inline-flex items-center justify-center text-white relative z-10">
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+</svg>
+</div>
+<div class="flex-grow pl-4">
+<h2 class="font-medium title-font text-sm text-red-400 mb-1 tracking-wider"><b>KryKnz
+(Dev)</b></h2>
+<p class="leading-relaxed"><I> <a href="https://wa.me/918436686758">📞Press To Contact or
+</br>❗Number: +918436686758</a></I></p>
+
+</div>
+</div>
+
+<div class="flex relative pb-12">
+<div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+<div class="h-full w-1 bg-gray-800 pointer-events-none"></div>
+</div>
+<div
+class="flex-shrink-0 w-10 h-10 rounded-full bg-red-800 inline-flex items-center justify-center text-white relative z-10">
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+</svg>
+</div>
+<div class="flex-grow pl-4">
+<h2 class="font-medium title-font text-sm text-red-400 mb-1 tracking-wider"><b>Xitrex
+(Dev)</b></h2>
+<p class="leading-relaxed"><I> <a href="https://wa.me/917430922909">📞Press To Contact or
+</br>❗Number: +917430922909</a></I></p>
+</div>
+</div>
+
+<div class="flex relative pb-12">
+<div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+<div class="h-full w-1 bg-gray-800 pointer-events-none"></div>
+</div>
+<div
+class="flex-shrink-0 w-10 h-10 rounded-full bg-red-800 inline-flex items-center justify-center text-white relative z-10">
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+<path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+<circle cx="12" cy="7" r="4"></circle>
+</svg>
+</div>
+<div class="flex-grow pl-4">
+<h2 class="font-medium title-font text-sm text-red-400  mb-1 tracking-wider"><b>Imele
+(Sudo)</b><br></h2>
+<p class="leading-relaxed"><I> <a href="https://wa.me/2348108178797">📞Press To Contact or
+</br>❗Number: +2348108178797</a></I></p>
+</div>
+</div>
+
+<div class="flex relative pb-12">
+<div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+<div class="h-full w-1 bg-gray-800 pointer-events-none"></div>
+</div>
+<div
+class="flex-shrink-0 w-10 h-10 rounded-full bg-red-800 inline-flex items-center justify-center text-white relative z-10">
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+<path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+<circle cx="12" cy="7" r="4"></circle>
+</svg>
+</div>
+<div class="flex-grow pl-4">
+<h2 class="font-medium title-font text-sm text-red-400  mb-1 tracking-wider"><b>Taizen
+(Sudo)</b><br></h2>
+<p class="leading-relaxed"><I> <a href="https://wa.me/27611100446">📞Press To Contact or
+</br>❗Number: +27611100446</a></I></p>
+</div>
+</div>
+
+
+<div class="flex relative pb-12">
+<div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+<div class="h-full w-1 bg-gray-800 pointer-events-none"></div>
+</div>
+<div
+class="flex-shrink-0 w-10 h-10 rounded-full bg-red-800 inline-flex items-center justify-center text-white relative z-10">
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+<path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+<circle cx="12" cy="7" r="4"></circle>
+</svg>
+</div>
+<div class="flex-grow pl-4">
+<h2 class="font-medium title-font text-sm text-red-400  mb-1 tracking-wider"><b>Tester
+1</b><br></h2>
+<p class="leading-relaxed"><I> <a href="https://wa.me/2349015407879">📞Press To Contact or
+</br>❗Number: +2349015407879</a></I></p>
+</div>
+</div>
+
+
+<div class="flex relative pb-12">
+<div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+<div class="h-full w-1 bg-gray-800 pointer-events-none"></div>
+</div>
+<div
+class="flex-shrink-0 w-10 h-10 rounded-full bg-red-800 inline-flex items-center justify-center text-white relative z-10">
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+<path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+<circle cx="12" cy="7" r="4"></circle>
+</svg>
+</div>
+<div class="flex-grow pl-4">
+<h2 class="font-medium title-font text-sm text-red-400  mb-1 tracking-wider"><b>Tester
+2</b><br></h2>
+<p class="leading-relaxed"><I> <a href="https://wa.me/260760393025">📞Press To Contact or
+</br>❗Number: +260760393025</a></I></p>
+</div>
+</div>
+
+
+<div class="flex relative pb-12">
+<div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+<div class="h-full w-1 bg-gray-800 pointer-events-none"></div>
+</div>
+<div
+class="flex-shrink-0 w-10 h-10 rounded-full bg-red-800 inline-flex items-center justify-center text-white relative z-10">
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+<path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+<circle cx="12" cy="7" r="4"></circle>
+</svg>
+</div>
+<div class="flex-grow pl-4">
+<h2 class="font-medium title-font text-sm text-red-400  mb-1 tracking-wider"><b>Tester
+3</b><br></h2>
+<p class="leading-relaxed"><I> <a href="https://wa.me/264853830477">📞Press To Contact or
+</br>❗Number: +264853830477</a></I></p>
+</div>
+</div>
+
+<div class="flex relative pb-12">
+<div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+<div class="h-full w-1 bg-gray-800 pointer-events-none"></div>
+</div>
+<div
+class="flex-shrink-0 w-10 h-10 rounded-full bg-red-800 inline-flex items-center justify-center text-white relative z-10">
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+<path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+<circle cx="12" cy="7" r="4"></circle>
+</svg>
+</div>
+<div class="flex-grow pl-4">
+<h2 class="font-medium title-font text-sm text-red-400  mb-1 tracking-wider"><b>Tester
+4</b><br></h2>
+<p class="leading-relaxed"><I> <a href="https://wa.me/27748187589">📞Press To Contact or
+</br>❗Number: +27748187589</a></I></p>
+</div>
+</div>
+
+<div class="flex relative pb-12">
+<div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+<div class="h-full w-1 bg-gray-800 pointer-events-none"></div>
+</div>
+<div
+class="flex-shrink-0 w-10 h-10 rounded-full bg-red-800 inline-flex items-center justify-center text-white relative z-10">
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+<path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+<circle cx="12" cy="7" r="4"></circle>
+</svg>
+</div>
+<div class="flex-grow pl-4">
+<h2 class="font-medium title-font text-sm text-red-400  mb-1 tracking-wider"><b>Tester
+4</b><br></h2>
+<p class="leading-relaxed"><I> <a href="https://wa.me/2349041348008">📞Press To Contact or
+</br>❗Number: +2349041348008</a></I></p>
+</div>
+</div>
+
+
+</div>
+<img class="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12"
+src="https://files.realpython.com/media/Things-You-Need-to-Know-If-You-Manage-Users-in-Django-Admin_Watermarked.c7617b02ec94.jpg"
+alt="step">
+<!-- <img class="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12"
+src="https://files.realpython.com/media/Things-You-Need-to-Know-If-You-Manage-Users-in-Django-Admin_Watermarked.c7617b02ec94.jpg"
+alt="step"> -->
+</div>
+</div>
+</section>
+
+
+
+
+<hr style="height:1px;border-top:1px solid rgb(160, 25, 25)" />
+<section class="text-gray-200 body-font">
+<div class="container px-5 py-24 mx-auto flex flex-wrap">
+<h1 class="text-3xl font-medium title-font text-white mb-12 text-center">⦿❓𝐅𝐫𝐞𝐪𝐮𝐞𝐧𝐭𝐥𝐲 𝐀𝐬𝐤𝐞𝐝❓⦿
+</h1>
+<div class="flex flex-wrap w-full">
+<div class="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6">
+<div class="flex relative pb-12">
+<div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+<div class="h-full w-1 bg-gray-800 pointer-events-none"></div>
+</div>
+<div
+class="flex-shrink-0 w-10 h-10 rounded-full bg-red-800 inline-flex items-center justify-center text-white relative z-10">
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+</svg>
+</div>
+<div class="flex-grow pl-4">
+<h2 class="font-medium title-font text-sm text-red-400 mb-1 tracking-wider"><b>∘ What is the
+reason/topic
+of
+Vlkyre?</b></h2>
+<p class="leading-relaxed"><I>: Vlkyre is an Advance Whatsapp
+User-Bot. You
+Can Use The Bot in your respective groups that will help you with
+many
+Advance Work Within Whatsapp
+</I></p>
+</div>
+</div>
+<div class="flex relative pb-12">
+<div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+<div class="h-full w-1 bg-gray-800 pointer-events-none"></div>
+</div>
+<div
+class="flex-shrink-0 w-10 h-10 rounded-full bg-red-800 inline-flex items-center justify-center text-white relative z-10">
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+<path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+</svg>
+</div>
+<div class="flex-grow pl-4">
+<h2 class="font-medium title-font text-sm text-red-400  mb-1 tracking-wider"><b>∘ How Can I
+Add Vlkyre To
+My
+Own Groups?</b></h2>
+<p class="leading-relaxed"><I>: Send Your Group Chat Links To Any Admins of Vlkyre Official
+and ask
+them to add Vlkyre In Your Group.
+</I></p>
+</div>
+</div>
+<div class="flex relative pb-12">
+<div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+<div class="h-full w-1 bg-gray-800 pointer-events-none"></div>
+</div>
+<div
+class="flex-shrink-0 w-10 h-10 rounded-full bg-red-800 inline-flex items-center justify-center text-white relative z-10">
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+<circle cx="12" cy="5" r="3"></circle>
+<path d="M12 22V8M5 12H2a10 10 0 0020 0h-3"></path>
+</svg>
+</div>
+<div class="flex-grow pl-4">
+<h2 class="font-medium title-font text-sm text-red-400  mb-1 tracking-wider"><b>∘ How Can I
+Get Verified
+To
+Use Vlkyre?</b></h2>
+<p class="leading-relaxed"><I>: Just Join Any Above Official Group and Type #verify.
+</I></p>
+</div>
+</div>
+<div class="flex relative pb-12">
+<div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+<div class="h-full w-1 bg-gray-800 pointer-events-none"></div>
+</div>
+<div
+class="flex-shrink-0 w-10 h-10 rounded-full bg-red-800 inline-flex items-center justify-center text-white relative z-10">
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+<path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+<circle cx="12" cy="7" r="4"></circle>
+</svg>
+</div>
+<div class="flex-grow pl-4">
+<h2 class="font-medium title-font text-sm text-red-400  mb-1 tracking-wider"><b>∘ I have
+forked the repo
+but
+bot doesn't want to run.Help Me!</b>
+<br>
+</h2>
+<p class="leading-relaxed"><I>: Read GitHub Repo and Forget Any Help From Our Side.
+</I></p>
+</div>
+</div>
+<div class="flex relative">
+<div
+class="flex-shrink-0 w-10 h-10 rounded-full bg-red-800 inline-flex items-center justify-center text-white relative z-10">
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+<path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+<path d="M22 4L12 14.01l-3-3"></path>
+</svg>
+</div>
+<div class="flex-grow pl-4">
+<h2 class="font-medium title-font text-sm text-red-400  mb-1 tracking-wider"><b>∘ How Do I
+Deploy or Get
+My
+Own Vlkyre userbot?</b></h2>
+<p class="leading-relaxed"><I>: For Now Our Code Doesn't Allow Any User To Self host.
+You May Try Yourself but no support from ourside!
+</I></p>
+</div>
+</div>
+</div>
+<img class="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12"
+src="https://i.postimg.cc/hjXBjsJg/Univ-B.png" alt="step">
+</div>
+</div>
+</section>
+
+
+<hr style="height:1px;border-top:1px solid rgb(160, 25, 25)" />
+<section class="text-gray-200 body-font">
+<div class="container px-5 py-24 mx-auto">
+<div class="flex flex-col text-center w-full mb-20">
+<h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">⦿🔥 𝐇𝐞𝐥𝐩 𝐌𝐨𝐝𝐮𝐥𝐞 🔥⦿</h1>
+<p class="lg:w-2/3 mx-auto leading-relaxed text-base">
+Below You Will Find Every Command Of Vlkyre!
+</p>
+</div>
+<div class="flex flex-wrap">
+<div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+<h2 class="text-lg sm:text-xl text-red-600 font-medium title-font mb-2">💰 #GAMEMENU 💰</h2>
+<p class="leading-relaxed text-base mb-4">
+<I>#shop</I>
+<I>#zoo</I>
+<I>#inv</I>
+<I>#buy</I>
+<I>#pay</I>
+<I>#hunt</I>
+<I>#gamble</I>
+<I>#fish</I>
+<I>#daily</I>
+<I>#work</I>
+<I>#balance</I>
+<I>#rob</I>
+<I>#truthdare</I>
+</p>
+</div>
+<div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+<h2 class="text-lg sm:text-xl text-red-600 font-medium title-font mb-2">🔎 #SEARCHMENU 🔎
+</h2>
+<p class="leading-relaxed text-base mb-4">
+<I>#ytsearch</I>
+<I>#lyrics</I>
+<I>#github</I>
+<I>#pinterest</I>
+<I>#weather</I>
+<I>#google</I>
+<I>#wikipedia</I>
+<I>#ud</I>
+<I>#tenor</I>
+<I>#gif</I>
+<I>#wallpaper</I>
+</p>
+</div>
+
+
+<div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+<h2 class="text-lg sm:text-xl text-red-600 font-medium title-font mb-2">📥 #DOWNLOADMENU 📥
+</h2>
+<p class="leading-relaxed text-base mb-4">
+<I>#play</I>
+<I>#watch</I>
+<I>#soundcloud</I>
+<I>#spotify</I>
+</p>
+</div>
+
+<div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+<h2 class="text-lg sm:text-xl text-red-600 font-medium title-font mb-2">🗂️ #FFMPEGMENU 🗂️
+</h2>
+<p class="leading-relaxed text-base mb-4">
+<I>#tomp3</I>
+<I>#img2url</I>
+<I>#ocr</I>
+<I>#sticker</I>
+<I>#carbon</I>
+<I>#tinyurl</I>
+</p>
+</div>
+
+
+<div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+<h2 class="text-lg sm:text-xl text-red-600 font-medium title-font mb-2">⭕ #YTFILTERMENU ⭕
+</h2>
+<p class="leading-relaxed text-base mb-4">
+<I>#yt8d</I>
+<I>#ytbassboost</I>
+<I>#ytecho</I>
+<I>#ytflanger</I>
+<I>#ytnightcore</I>
+<I>#ytphaser</I>
+<I>#ytreverse</I>
+<I>#ytslow</I>
+<I>#ytspeed</I>
+<I>#ytsubboost</I>
+<I>#ytsuperslow</I>
+<I>#ytsuperspeed</I>
+<I>#ytsurround</I>
+<I>#ytvaporwave</I>
+<I>#ytvibrato</I>
+</p>
+</div>
+
+<div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+<h2 class="text-lg sm:text-xl text-red-600 font-medium title-font mb-2">🍰 #FILTERMENU 🍰
+</h2>
+<p class="leading-relaxed text-base mb-4">
+<I>#8d</I>
+<I>#bassboost</I>
+<I>#echo</I>
+<I>#fast</I>
+<I>#flanger</I>
+<I>#nightcore</I>
+<I>#phaser</I>
+<I>#reverse</I>
+<I>#slow</I>
+<I>#speed</I>
+<I>#subboost</I>
+<I>#superslow</I>
+<I>#superspeed</I>
+<I>#surround</I>
+<I>#vaporwave</I>
+<I>#vibrato</I>
+</p>
+</div>
+
+<div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+<h2 class="text-lg sm:text-xl text-red-600 font-medium title-font mb-2">👑 #OWNERMENU 👑
+</h2>
+<p class="leading-relaxed text-base mb-4">
+<I>#join</I>
+<I>#dyno</I>
+<I>#ban</I>
+<I>#unban</I>
+<I>#broadcast</I>
+<I>#bugreport</I>
+<I>#help</I>
+<I>#reboot</I>
+<I>#broadcast</I>
+<I>#leave</I>
+<I>#spam</I>
+</p>
+</div>
+
+<div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+<h2 class="text-lg sm:text-xl text-red-600 font-medium title-font mb-2">🍙 #ANIMEMENU 🍙
+</h2>
+<p class="leading-relaxed text-base mb-4">
+<I>#anime</I>
+<I>#ranimewall</I>
+<I>#smile</I>
+<I>#yes</I>
+<I>#bite</I>
+<I>#blush</I>
+<I>#bored</I>
+<I>#confused</I>
+<I>#cry</I>
+<I>#goodnight</I>
+<I>#happy</I>
+<I>#hi5</I>
+<I>#poke</I>
+<I>#sad</I>
+<I>#thinking</I>
+<I>#cuddle</I>
+<I>#hug</I>
+<I>#pat</I>
+<I>#slap</I>
+<I>#wink</I>
+<I>#angry</I>
+<I>#baka</I>
+<I>#bonk</I>
+<I>#bully</I>
+<I>#bye</I>
+<I>#chase</I>
+<I>#cheer</I>
+<I>#cringe</I>
+<I>#dab</I>
+<I>#dance</I>
+<I>#die</I>
+<I>#facepalm</I>
+<I>#feed</I>
+<I>#glomp</I>
+<I>#hold</I>
+<I>#hate</I>
+<I>#hi</I>
+<I>#kill</I>
+<I>#lick</I>
+<I>#love</I>
+<I>#lurk</I>
+<I>#nervous</I>
+<I>#nope</I>
+<I>#nom</I>
+<I>#nuzzle</I>
+<I>#panic</I>
+<I>#peck</I>
+<I>#pout</I>
+<I>#run</I>
+<I>#sip</I>
+<I>#shoot</I>
+<I>#shrug</I>
+<I>#sleep</I>
+<I>#smug</I>
+<I>#stab</I>
+<I>#stare</I>
+<I>#tease</I>
+<I>#tickle</I>
+<I>#thumbsup</I>
+<I>#wag</I>
+</p>
+</div>
+
+<div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+<h2 class="text-lg sm:text-xl text-red-600 font-medium title-font mb-2">🔰 #GROUPMENU 🔰
+</h2>
+<p class="leading-relaxed text-base mb-4">
+<I>#antilink</I>
+<I>#autorank</I>
+<I>#setwelcome</I>
+<I>#delete</I>
+<I>#promote</I>
+<I>#demote</I>
+<I>#warn</I>
+<I>#unwarn</I>
+<I>#invite</I>
+<I>#lock</I>
+<I>#unlock</I>
+<I>#admins</I>
+<I>#groupdp</I>
+<I>#kick</I>
+<I>#getdesc</I>
+<I>#getdp</I>
+<I>#tagall</I>
+</p>
+</div>
+
+<div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+<h2 class="text-lg sm:text-xl text-red-600 font-medium title-font mb-2">🦄 #RANDOMMENU 🦄
+</h2>
+<p class="leading-relaxed text-base mb-4">
+<I>#rank</I>
+<I>#leaderboard</I>
+<I>#joke</I>
+<I>#meme</I>
+<I>#trivia</I>
+<I>#fact</I>
+<I>#tr</I>
+<I>#tts</I>
+<I>#pokedex</I>
+<I>#triggered</I>
+</p>
+</div>
+
+<div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+<h2 class="text-lg sm:text-xl text-red-600 font-medium title-font mb-2">🎨 #CHECKMENU 🎨
+</h2>
+<p class="leading-relaxed text-base mb-4">
+<I>#gaycheck</I>
+<I>#lesbocheck</I>
+<I>#beautycheck</I>
+<I>#dumbcheck</I>
+<I>#gay</I>
+<I>#lesbo</I>
+<I>#beauty</I>
+<I>#dumb</I>
+</p>
+</div>
+
+<div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+<h2 class="text-lg sm:text-xl text-red-600 font-medium title-font mb-2">🥃 #HUMANMENU 🥃
+</h2>
+<p class="leading-relaxed text-base mb-4">
+<I>#4k</I>
+<I>#blowjob</I>
+<I>#milf</I>
+<I>#milk</I>
+<I>#pussy</I>
+<I>#slut</I>
+<I>#tikporn</I>
+</p>
+</div>
+
+<div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+<h2 class="text-lg sm:text-xl text-red-600 font-medium title-font mb-2">🍑 #HENTAIMENU 🍑
+</h2>
+<p class="leading-relaxed text-base mb-4">
+<I>#ass</I>
+<I>#bdsm</I>
+<I>#cum</I>
+<I>#doujin</I>
+<I>#feet</I>
+<I>#femdom</I>
+<I>#foxgirl</I>
+<I>#glasses</I>
+<I>#hentai</I>
+<I>#maid</I>
+<I>#masturbation</I>
+<I>#netorare</I>
+<I>#orgy</I>
+<I>#panties</I>
+<I>#pussy</I>
+<I>#school</I>
+<I>#tentacles</I>
+<I>#thighs</I>
+<I>#uniform</I>
+<I>#yuri</I>
+</p>
+</div>
+</div>
+<button onclick="window.location.href='https://github.com/KryKnz'"
+class="flex mx-auto mt-16 text-white bg-red-900 border-0 py-2 px-8 focus:outline-none hover:bg-gray-800 rounded text-lg">💡GitHub
+</button>
+</div>
+</section>
+
+
+
+<hr style="height:1px;border-top:1px solid rgb(160, 25, 25)" />
+<footer class="text-gray-200 body-font">
+<div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+<a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-200">
+<span class="ml-3 text-xl">❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐁𝐲 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ ❞</span>
+</a>
+<p class="text-sm text-red-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4">
+<b>Since 2021: </b>
+<a href="https://github.com/Kryknz/Vlkyre/blob/KryTek/LICENSE" class="text-gray-200 ml-1"
+target="_blank" rel="noopener noreferrer"><I>Licensed Under Apache License Version
+2.0</I></a>
+</p>
+<span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+<a class="text-gray-200">
+<svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+class="w-5 h-5" viewBox="0 0 24 24">
+<path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+</svg>
+</a>
+<a class="ml-3 text-gray-200">
+<svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+class="w-5 h-5" viewBox="0 0 24 24">
+<path
+d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+</path>
+</svg>
+</a>
+<a class="ml-3 text-gray-200">
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+<rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+<path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+</svg>
+</a>
+<a class="ml-3 text-gray-200">
+<svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+<path stroke="none"
+d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+</path>
+<circle cx="4" cy="4" r="2" stroke="none"></circle>
+</svg>
+</a>
+</span>
+</div>
+</footer>
+</body>
+</div>
+
+</html>
