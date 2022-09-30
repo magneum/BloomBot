@@ -33,7 +33,7 @@ const _0x4b207f = [
 "610hNHKHI",
 "243928xwpJZe",
 "../└𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞𝐬┘/𝖀𝖘𝖊𝖗🍣𝖒𝖔𝖓𝖌𝖔/user",
-"../└𝐋𝐢𝐛𝐫𝐚𝐫𝐲┘/ARanks",
+"../└𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/ARanks",
 "../└𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/Caught",
 "45632kPUIGK",
 "146736ySsdwm",
@@ -46,7 +46,7 @@ const _0x4b207f = [
 "100aBoUcH",
 "./Settings",
 "10mmEqjy",
-".././└𝐋𝐢𝐛𝐫𝐚𝐫𝐲┘/DenyLink",
+".././└𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/DenyLink",
 "../└𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞𝐬┘/🍃𝖒𝖔𝖓𝖌𝖔/halt",
 ];
 _0x58e9 = function () {
@@ -85,7 +85,7 @@ git = require(_0x512219(0x16b))(),
 ProTon = require(_0x512219(0x16a)),
 { Caught } = require(_0x512219(0x170)),
 { ARanks } = require(_0x512219(0x16f)),
-{ ᴘᴏᴡᴇʀᴇᴅ } = require("../└𝐄𝐱𝐭𝐫┘/ᴘᴏᴡᴇʀᴇᴅ"),
+{ ᴘᴏᴡᴇʀᴇᴅ } = require("../└𝐈𝐧𝐭𝐱」/ᴘᴏᴡᴇʀᴇᴅ"),
 Halt = require(_0x512219(0x168)),
 { BeutyFly } = require(_0x512219(0x178)),
 { DenyLink } = require(_0x512219(0x167)),
@@ -96,7 +96,7 @@ UserPrivate = require(_0x512219(0x177)),
 userBanCheck = require(_0x512219(0x16e)),
 {
 ᴋʀʏᴏᴛᴇɴᴏʀ,
-} = require("../└𝐄𝐱𝐭𝐫┘/ᴋʀʏᴏᴛᴇɴᴏʀ/ᴋʀʏᴏᴛᴇɴᴏʀ");
+} = require("../└𝐈𝐧𝐭𝐱」/ᴋʀʏᴏᴛᴇɴᴏʀ/ᴋʀʏᴏᴛᴇɴᴏʀ");
 ("|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|");
 module.exports = ӄryӄnz = async (ӄryӄnz, Vlkyre, chatUpdate, Ѷ𝖎𝖔𝖓) => {
 async function SlowDown(Present_Time) {
@@ -135,7 +135,7 @@ function _0x153f() {
 const _0x5f55aa = [
 "40142JGXwBB",
 "23TsZCbt",
-"../└𝐋𝐢𝐛𝐫𝐚𝐫𝐲┘/_ᴘᴏᴡᴇʀ",
+"../└𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/_ᴘᴏᴡᴇʀ",
 "2192nLTiuU",
 "18zemAPU",
 "2930omlHKs",
@@ -244,7 +244,7 @@ const _0x5c834b = [
 "4zXiSKK",
 "2748OGDihb",
 "8114821DYcVGc",
-"../└𝐋𝐢𝐛𝐫𝐚𝐫𝐲┘/ӄᴘᴏᴡ",
+"../└𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/ӄᴘᴏᴡ",
 ];
 _0xb1bf = function () {
 return _0x5c834b;
