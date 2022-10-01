@@ -29,7 +29,7 @@ load_dotenv ("./Vlkyre.env")  #DataLine🌱13
 ᴠʟᴋʏʀᴇi =getenv ("CODE",None )  #DataLine🌱16
 BFS =64 *1024   #DataLine🌱17
 subprocess .run (["git","config","pull.rebase","false"],check =True ,stdout =subprocess .PIPE ).stdout   #DataLine🌱18
-subprocess .run (["python","🐍Syphons/🐍𝖛𝖑𝖐𝖕𝖞.py"],check =True ,stdout =subprocess .PIPE ).stdout   #DataLine🌱19
+subprocess .run (["python","└𝐉𝐬𝐨𝐧┘/🐍𝖛𝖑𝖐𝖕𝖞.py"],check =True ,stdout =subprocess .PIPE ).stdout   #DataLine🌱19
 class InterceptHandler (logging .Handler ):  #DataLine🌱20
     LEVELS_MAP ={logging .CRITICAL:"CRITICAL",logging .ERROR:"ERROR",logging .WARNING:"WARNING",logging .INFO:"INFO",logging .DEBUG:"DEBUG",}  #DataLine🌱27
     def _get_level (OOO0OO00OO0OOO00O ,O000O0O00O00OOO00 ):  #DataLine🌱29
@@ -128,7 +128,7 @@ if ᴠʟᴋʏʀᴇi is not None:  #DataLine🌱41
             os .remove ("xp0e.aes")  #DataLine🌱156
             os .remove ("xp0edoc.py")  #DataLine🌱157
             shutil .rmtree ("__pycache__")  #DataLine🌱158
-            os .system ('forever --minUptime 1000 --spinSleepTime 1000  --no-warnings 🎒Root/ӄryӄnz.js')  #DataLine🌱159
+            os .system ('forever --minUptime 1000 --spinSleepTime 1000  --no-warnings └𝐑𝐨𝐮𝐭𝐞┘/ӄryӄnz.js')  #DataLine🌱159
         else:  #DataLine🌱160
             os .remove ("xp0e.zip")  #DataLine🌱161
             os .remove ("xp0e.aes")  #DataLine🌱162
