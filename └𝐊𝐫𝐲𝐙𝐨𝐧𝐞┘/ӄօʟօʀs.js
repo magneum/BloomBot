@@ -26,7 +26,6 @@ let Burgundy = chalk.hex("#810020");
 let Vermilion = chalk.hex("#E34234");
 let Burlywood = chalk.hex("#deb887");
 let 𝕲𝖗𝖔𝖚𝖕𝖒𝖊𝖙𝖆 = await Vlkyre.groupMetadata;
-await ӄryӄnz.sendReadReceipt(Vlkyre.chatID, Vlkyre.sender, [Vlkyre.key.id]);
 if (HEROKU_API_KEY === undefined) {
 console.log(Gamboge("▷═════════════════════|✠|═════════════════════◁"));
 console.log(
