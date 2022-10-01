@@ -62,7 +62,7 @@ const _0x509bb4 = [
 "❗\x20𝐒𝐞𝐧𝐝𝐞𝐫\x20𝐀𝐝𝐦𝐢𝐧:\x20",
 "4988088hLCWWs",
 "concat",
-"../Vlkyre🖋️Utilities/𝕷𝖆ყO𝖚𝖙",
+"../└𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/Settings",
 "@heroku-cli/color",
 "subject",
 "Gamboge",
