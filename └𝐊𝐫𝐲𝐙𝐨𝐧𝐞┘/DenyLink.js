@@ -70,6 +70,14 @@ text: `╔◇═══════════════◇╗
 ❗𝗥𝗲𝗮𝘀𝗼𝗻: Sent some type of Link in this Group!`,
 contextInfo: { mentionedJid: [Vlkyre.sender] },
 });
+await ӄryӄnz.sendMessage(Vlkyre.chatID, {
+delete: {
+remoteJid: Vlkyre.chatID,
+fromMe: false,
+id: Vlkyre.quoted.id,
+participant: Vlkyre.quoted.sender,
+},
+});
 return await ӄryӄnz
 .groupParticipantsUpdate(Vlkyre.chatID, [Vlkyre.sender], "remove")
 .catch((e) => Caught(ӄryӄnz, Vlkyre, e));
