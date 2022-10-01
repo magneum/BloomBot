@@ -196,32 +196,11 @@ text: `❗𝐕𝐄𝐑𝐓𝐈𝐅𝐈𝐂𝐀𝐓𝐈𝐎𝐍❗
 youtube.com/channel/UC5_VwWIUIdmv96OvR5rFvaA`,
 contextInfo: { mentionedJid: [Vlkyre.sender] },
 });
-}
-// ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
-// await usedUser.findOne(
-// {
-// User: Vlkyre.sender,
-// },
-// async (ᴇʀ, ꜱᴇʀᴄ) => {
-// if (ᴇʀ) return Caught(ӄryӄnz, Vlkyre, ᴇʀ);
-// if (!ꜱᴇʀᴄ) {
-// let ɴᴇᴡᴜꜱᴇʀᴄ = new usedUser({
-// User: Vlkyre.sender,
-// Total: 0,
-// LastTime: 0,
-// PermaTime: 20000,
-// });
-// return await ɴᴇᴡᴜꜱᴇʀᴄ
-// .save()
-// .catch((ᴇʀ) => Caught(ӄryӄnz, Vlkyre, ᴇʀ));
-// } else {
-// await ӄryӄnz.sendPresenceUpdate("composing", Vlkyre.chatID);
-// return await ShortC(Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓);
-// }
-// }
-// );
+} else {
 await ӄryӄnz.sendPresenceUpdate("composing", Vlkyre.chatID);
-return await ShortC(Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓);
+await ShortC(Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓);
+return await ӄօʟօʀs(ӄryӄnz, Vlkyre);
+}
 }
 }
 );
