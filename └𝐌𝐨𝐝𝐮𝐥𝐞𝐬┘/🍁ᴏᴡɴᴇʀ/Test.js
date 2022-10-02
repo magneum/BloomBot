@@ -42,10 +42,18 @@ let { N𝖊𝖊𝖉__A𝖗𝖌𝖘 } = require("../../└𝐁𝐮𝐭𝐭𝐨�
 let { Sticker, StickerTypes } = require("wa-sticker-formatter");
 let { Image_Button } = require("../../└𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/Image_Button");
 let { Video_Button } = require("../../└𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/Video_Button");
+let ClaimSchem = require("../../└𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞𝐬┘/🍃𝖒𝖔𝖓𝖌𝖔/Claim");
 let Present_Path = require("path");
 let Script_Name = Present_Path.basename(__filename);
 let Final_Name = Script_Name.slice(0, -3).toLowerCase();
 let { Caught } = require("../../└𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/Caught");
+let { PokeList } = require("../└𝐌𝐨𝐝𝐮𝐥𝐞𝐬┘/pokelist");
+let pokemon = require("pokemontcgsdk");
+let CronJob = require("cron").CronJob;
+let Fetch = require("node-fetch");
+let cron = require("node-cron");
+let Https = require("https");
+let Fs = require("fs");
 ("|⬡════════════════════════════════════════════════════════════════════└  Vlkyre 𝐀𝐩𝐢®  ┘═══════════════════════════════════════════════════════════════════⬡|");
 exports.test = async (
 Ѷ𝖎𝖔𝖓,
@@ -63,145 +71,74 @@ commandName,
 body
 ) => {
 try {
-let ɴᴇᴡ = ɢɪᴛ.log(["🐍Ş𝖎𝖕𝖍𝖔𝖓®..origin/🐍Ş𝖎𝖕𝖍𝖔𝖓®"]);
-if (ɴᴇᴡ.total != 0) {
+cron.schedule("*/60 * * * * *", async function () {
+console.log("running a task every 60 second");
 console.log(
-chalk.black(
-chalk.bgWhite(
-"⬡═════════════════════════|▷ 𝐆𝐢𝐭𝐇𝐮𝐛 𝐒𝐲𝐧𝐜 ◁|═════════════════════════⬡"
-)
-)
+"|⬡═══════════════════════|▷ Fetch Any Random Pokemon from Pokedex"
 );
-console.log(
-chalk.black(chalk.bgWhite("🐙𝐂𝐨𝐦𝐦𝐢𝐭𝐬: "), chalk.bgMagenta(ɴᴇᴡ))
+let PokemonData;
+let BasePoke = PokeList[Math.floor(Math.random() * PokeList.length)];
+try {
+let res = await fetch(
+API("https://some-random-api.ml", "/pokedex", {
+pokemon: BasePoke.toLowerCase(),
+})
+).catch((Èrrðr) => console.log(Èrrðr));
+PokemonData = await res.json().catch((Èrrðr) => console.log(Èrrðr));
+pokemon.configure({ apiKey: "123abc" });
+// Get The Card Of The Found Pokemon
+await pokemon.card
+.all({ q: `name:${PokemonData.name}` })
+.then(async (card) => {
+// Check All Needed Data Inside Mongodb if Category Not Found
+await ClaimSchema.findOne(
+{ Active: "N" || null },
+async (Èrrðr, msTdb) => {
+if (Èrrðr) return console.log(Èrrðr);
+if (!msTdb) {
+let getGroups = await ӄryӄnz.groupFetchAllParticipating();
+let newUser = await new ClaimSchema({
+Active: "Y",
+GroupIDs: getGroups,
+UserNumber: undefined,
+})
+.save()
+.catch((Èrrðr) => console.log(Èrrðr));
+// Fetch all Groups and Store it in an object
+let groups = Object.entries(getGroups)
+.slice(0)
+.map((entry) => entry[1]);
+let sendGroups = groups.map((v) => v.id);
+// Send The Created Pokedex Card
+for (let G of sendGroups) {
+await ӄryӄnz.sendMessage(G, {
+image: {
+url: card[0].images.large,
+},
+mimetype: "image/png",
+fileName: "Pokedex.png",
+caption: ` 
+𝐓𝐇𝐈𝐒 𝐈𝐒 𝐀 𝐓𝐄𝐒𝐓 𝐏𝐎𝐊𝐄𝐌𝐎𝐍 𝐂𝐀𝐑𝐃 𝐆𝐀𝐌𝐄!
+𝐖𝐀𝐈𝐓 𝐅𝐎𝐑 _!𝐂𝐋𝐀𝐈𝐌_ 𝐂𝐎𝐌𝐌𝐀𝐍𝐃.....
+
+
+💫 *Name:* ${PokemonData.name}
+〽️ *Pokedex ID:* ${PokemonData.id}
+🎀 *Type:* ${PokemonData.type}
+🐞 *Species*: ${PokemonData.species}`.trim(),
+});
+}
+return;
+}
+}
 );
-console.log(
-chalk.black(
-chalk.bgWhite("💡𝐈𝐧𝐟𝐨: "),
-chalk.bgYellow("Starting Git-Pull")
-)
-);
-console.log(
-chalk.black(
-chalk.bgWhite("🕐𝐓𝐢𝐦𝐞: "),
-chalk.bgGreen("".concat(new Date()))
-)
-);
-ʀᴇᴅ = require("child_process").exec("rm -f ./.git/index.lock");
-ʀᴇᴅ.stderr.pipe(process.stderr);
-ʀᴇᴅ.stdout.pipe(process.stdout);
-ʀᴇᴅ.on("exit", function (code, signal) {
-if (code)
-console.log(
-chalk.black(chalk.bgWhite("📟𝐄𝐂𝐨𝐝𝐞: "), chalk.bgRed(code))
-);
-if (signal) {
-console.log(
-chalk.black(chalk.bgWhite("📶𝐄𝐒𝐢𝐠𝐧𝐚𝐥: "), chalk.bgBlue(signal))
-);
-process.exitCode = 1;
+});
+} catch (Èrrðr) {
+return console.log(Èrrðr);
 }
 });
-ʀᴇᴅ = require("child_process").exec("git reset --hard");
-ʀᴇᴅ.stderr.pipe(process.stderr);
-ʀᴇᴅ.stdout.pipe(process.stdout);
-ʀᴇᴅ.on("exit", function (code, signal) {
-if (code)
-console.log(
-chalk.black(chalk.bgWhite("📟𝐄𝐂𝐨𝐝𝐞: "), chalk.bgRed(code))
-);
-if (signal) {
-console.log(
-chalk.black(chalk.bgWhite("📶𝐄𝐒𝐢𝐠𝐧𝐚𝐥: "), chalk.bgBlue(signal))
-);
-process.exitCode = 1;
-}
-});
-ʀᴇᴅ = require("child_process").exec("git stash");
-ʀᴇᴅ.stderr.pipe(process.stderr);
-ʀᴇᴅ.stdout.pipe(process.stdout);
-ʀᴇᴅ.on("exit", function (code, signal) {
-if (code)
-console.log(
-chalk.black(chalk.bgWhite("📟𝐄𝐂𝐨𝐝𝐞: "), chalk.bgRed(code))
-);
-if (signal) {
-console.log(
-chalk.black(chalk.bgWhite("📶𝐄𝐒𝐢𝐠𝐧𝐚𝐥: "), chalk.bgBlue(signal))
-);
-process.exitCode = 1;
-}
-});
-ʀᴇᴅ = require("child_process").exec("git stash drop");
-ʀᴇᴅ.stderr.pipe(process.stderr);
-ʀᴇᴅ.stdout.pipe(process.stdout);
-ʀᴇᴅ.on("exit", function (code, signal) {
-if (code)
-console.log(
-chalk.black(chalk.bgWhite("📟𝐄𝐂𝐨𝐝𝐞: "), chalk.bgRed(code))
-);
-if (signal) {
-console.log(
-chalk.black(chalk.bgWhite("📶𝐄𝐒𝐢𝐠𝐧𝐚𝐥: "), chalk.bgBlue(signal))
-);
-process.exitCode = 1;
-}
-});
-ʀᴇᴅ = require("child_process").exec("git pull");
-ʀᴇᴅ.stderr.pipe(process.stderr);
-ʀᴇᴅ.stdout.pipe(process.stdout);
-ʀᴇᴅ.on("exit", function (code, signal) {
-if (code)
-console.log(
-chalk.black(chalk.bgWhite("📟𝐄𝐂𝐨𝐝𝐞: "), chalk.bgRed(code))
-);
-if (signal) {
-console.log(
-chalk.black(chalk.bgWhite("📶𝐄𝐒𝐢𝐠𝐧𝐚𝐥: "), chalk.bgBlue(signal))
-);
-process.exitCode = 1;
-}
-});
-ʀᴇᴅ = require("child_process").exec("npm restart");
-ʀᴇᴅ.stderr.pipe(process.stderr);
-ʀᴇᴅ.stdout.pipe(process.stdout);
-ʀᴇᴅ.on("exit", function (code, signal) {
-if (code)
-console.log(
-chalk.black(chalk.bgWhite("📟𝐄𝐂𝐨𝐝𝐞: "), chalk.bgRed(code))
-);
-if (signal) {
-console.log(
-chalk.black(chalk.bgWhite("📶𝐄𝐒𝐢𝐠𝐧𝐚𝐥: "), chalk.bgBlue(signal))
-);
-process.exitCode = 1;
-}
-});
-console.log(
-chalk.black(
-chalk.bgWhite("💡𝐈𝐧𝐟𝐨: "),
-chalk.bgGreen("Git-Pull Finished")
-)
-);
-} else {
-return await Vlkyre.reply(
-"💡𝐈𝐧𝐟𝐨: Logger Detached.\nFalling Back To Legacy Method"
-);
-}
 } catch (error) {
 console.log(chalk.black(chalk.bgWhite("❌𝐄𝐫𝐫𝐨𝐫: "), chalk.bgRed(error)));
-console.log(
-chalk.black(
-chalk.bgWhite("💡𝐈𝐧𝐟𝐨: "),
-chalk.bgYellow("Falling Back To Legacy Method")
-)
-);
-await Hoku.delete("/apps/" + HEROKU_APP_NAME + "/dynos/" + "worker").catch(
-(error) =>
-console.log(
-chalk.black(chalk.bgWhite("❌𝐇𝐞𝐫𝐨𝐤𝐮 𝐄𝐫𝐫𝐨𝐫: "), chalk.bgRed(error))
-)
-);
 }
 };
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
